@@ -1,0 +1,61 @@
+import { NextResponse } from "next/server";
+import { db } from "@/lib/db";
+import type { ExhibitDTO, SourceDTO, ExhibitCategory, EvidenceStatus, SourceType } from "@/lib/types";
+
+export const dynamic = "force-dynamic";
+
+/**
+ * GET /api/exhibits — cela digitalna zbirka z viri.
+ * ?category=kolpa  — filtriranje po tematskem sklopu (opcijsko)
+ */
+export async function GET(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const category = searchParams.get("category");
+
+    const exhibits = await db.exhibit.findMany({
+      where: category ? { category } : undefined,
+      include: { sources: { orderBy: { sortOrder: "asc" } } },
+      orderBy: { sortOrder: "asc" },
+    });
+
+    const payload: ExhibitDTO[] = exhibits.map((ex) => ({
+      id: ex.id,
+      slug: ex.slug,
+      category: ex.category as ExhibitCategory,
+      titleSi: ex.titleSi,
+      titleEn: ex.titleEn,
+      periodSi: ex.periodSi,
+      periodEn: ex.periodEn,
+      summarySi: ex.summarySi,
+      summaryEn: ex.summaryEn,
+      storySi: ex.storySi,
+      storyEn: ex.storyEn,
+      evidenceStatus: ex.evidenceStatus as EvidenceStatus,
+      image: ex.image,
+      lat: ex.lat,
+      lng: ex.lng,
+      coordsApprox: ex.coordsApprox,
+      featured: ex.featured,
+      sortOrder: ex.sortOrder,
+      sources: ex.sources.map<SourceDTO>((s) => ({
+        id: s.id,
+        nameSi: s.nameSi,
+        nameEn: s.nameEn,
+        sourceType: s.sourceType as SourceType,
+        license: s.license,
+        url: s.url,
+        noteSi: s.noteSi,
+        noteEn: s.noteEn,
+      })),
+    }));
+
+    return NextResponse.json(
+      { count: payload.length, exhibits: payload },
+      { headers: { "Cache-Control": "public, max-age=60" } }
+    );
+  } catch (error) {
+    console.error("API /api/exhibits error:", error);
+    return NextResponse.json({ error: "Napaka pri branju zbirke" }, { status: 500 });
+  }
+}
