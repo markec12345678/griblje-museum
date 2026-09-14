@@ -7,9 +7,9 @@ import { useLang, type Lang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-export type MuseumView = "domov" | "zbirka" | "zgodbe" | "casovnica" | "karta" | "dogodki" | "oMuzeju";
+export type MuseumView = "domov" | "zbirka" | "zgodbe" | "casovnica" | "karta" | "dogodki" | "oMuzeju" | "mojMuzej";
 
-export const VIEW_ORDER: MuseumView[] = ["domov", "zbirka", "zgodbe", "casovnica", "karta", "dogodki", "oMuzeju"];
+export const VIEW_ORDER: MuseumView[] = ["domov", "zbirka", "zgodbe", "casovnica", "karta", "dogodki", "oMuzeju", "mojMuzej"];
 
 export function Header({
   view,

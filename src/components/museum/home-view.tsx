@@ -9,6 +9,8 @@ import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
 import { MuseumQuiz } from "@/components/museum/museum-quiz";
 import { WalksSection } from "@/components/museum/walks-section";
+import { ObjectOfDay } from "@/components/museum/object-of-day";
+import { PlanVisit } from "@/components/museum/plan-visit";
 import type { ExhibitDTO, MuseumEventDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
 import { Button } from "@/components/ui/button";
@@ -127,6 +129,9 @@ export function HomeView({
           ))}
         </div>
       </section>
+
+      {/* DANES V MUZEJU — dnevni zapis (vzorec: object of the day) */}
+      <ObjectOfDay exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />
 
       {/* IZPOSTAVLJENO */}
       <section className="paper-grain mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -252,6 +257,9 @@ export function HomeView({
 
       {/* MUZEJSKI SPREHODI */}
       <WalksSection exhibits={exhibits} onStartWalk={onStartWalk} />
+
+      {/* NAČRT OBISKA — vzorec velikih muzejev (Louvre/Met) */}
+      <PlanVisit onNavigate={onNavigate} onStartWalk={onStartWalk} />
 
       {/* TEASER DOGODKOV */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
