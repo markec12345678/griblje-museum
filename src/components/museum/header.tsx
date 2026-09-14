@@ -2,10 +2,14 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { Moon, Search, Sun, Menu, Landmark } from "lucide-react";
+import { Accessibility, Moon, Search, Sun, Menu, Landmark, RotateCcw } from "lucide-react";
 import { useLang, type Lang } from "@/lib/i18n";
+import { useA11y } from "@/lib/a11y";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Separator } from "@/components/ui/separator";
+import { A11ySettingsList } from "@/components/museum/a11y-toggles";
 
 export type MuseumView =
   | "domov"
@@ -59,6 +63,7 @@ export function Header({
   onOpenSearch: () => void;
 }) {
   const { t, lang, setLang } = useLang();
+  const { customized, reset } = useA11y();
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -171,6 +176,54 @@ export function Header({
             ))}
           </div>
 
+          {/* Dostopnostna plošča — lastna, brez zunanjih prekrivnih
+              gradnikov (priporočilo AAM; vzorec: muzeji za vsakega) */}
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button
+                variant="outline"
+                size="icon"
+                className="hidden size-11 md:inline-flex"
+                aria-label={t.a11y.openPanel}
+              >
+                <Accessibility className="h-4.5 w-4.5" aria-hidden="true" />
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent align="end" className="w-80">
+              <div className="flex items-start justify-between gap-2">
+                <div>
+                  <p className="font-display text-base font-semibold">
+                    {t.a11yPanel.title}
+                  </p>
+                  <p className="mt-0.5 text-xs text-muted-foreground">
+                    {t.a11yPanel.subtitle}
+                  </p>
+                </div>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
+                  <Accessibility className="h-4 w-4" aria-hidden="true" />
+                </span>
+              </div>
+              <Separator className="my-3" />
+              <A11ySettingsList />
+              <Separator className="my-3" />
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-xs text-muted-foreground">
+                  {customized ? t.a11yPanel.savedNote : t.a11yPanel.systemNote}
+                </p>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="min-h-9 gap-1"
+                  onClick={reset}
+                  aria-label={t.a11yPanel.resetLabel}
+                >
+                  <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                  {t.a11yPanel.reset}
+                </Button>
+              </div>
+            </PopoverContent>
+          </Popover>
+
           {/* Tema */}
           <Button
             variant="outline"
@@ -232,6 +285,27 @@ export function Header({
               </li>
             ))}
           </ul>
+
+          {/* Dostopnost — stikala neposredno v mobilnem meniju */}
+          <div className="mt-3 rounded-lg border border-border/70 bg-muted/40 p-3">
+            <div className="flex items-center justify-between gap-2">
+              <p className="flex items-center gap-2 text-sm font-semibold">
+                <Accessibility className="h-4 w-4 text-primary" aria-hidden="true" />
+                {t.a11yPanel.title}
+              </p>
+              <button
+                type="button"
+                onClick={reset}
+                className="inline-flex min-h-11 items-center gap-1 rounded-md px-2 text-xs font-medium text-muted-foreground hover:text-foreground"
+              >
+                <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                {t.a11yPanel.reset}
+              </button>
+            </div>
+            <div className="mt-2">
+              <A11ySettingsList compact />
+            </div>
+          </div>
         </nav>
       )}
     </header>
