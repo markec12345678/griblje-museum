@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
@@ -34,6 +35,18 @@ export function HomeView({
   const { t, lang } = useLang();
   const reduceMotion = useReducedMotion();
   const es = useExhibitStrings();
+
+  // Otroška pot usmerja na domačo stran in na ugačn (Mali raziskovalci).
+  React.useEffect(() => {
+    const onScrollToQuiz = () => {
+      document
+        .getElementById("muzejska-uganka")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    window.addEventListener("museum:scroll-to-quiz", onScrollToQuiz);
+    return () =>
+      window.removeEventListener("museum:scroll-to-quiz", onScrollToQuiz);
+  }, []);
 
   const featured = exhibits.filter((ex) => ex.featured).slice(0, 4);
   const nextEvents = events.slice(0, 3);
@@ -242,7 +255,7 @@ export function HomeView({
       </section>
 
       {/* ZBIRALEC + MUZEJSKA UGANKA */}
-      <section className="paper-grain mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <section id="muzejska-uganka" className="paper-grain mx-auto max-w-7xl px-4 py-16 scroll-mt-20 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <h2 className="font-display text-3xl font-semibold sm:text-4xl">
             {t.quiz.sectionTitle}
