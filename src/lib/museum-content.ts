@@ -39,6 +39,8 @@ type SeedExhibit = {
   evidenceStatus: EvidenceStatus;
   image?: string;
   imageCredit?: string;
+  yearFrom?: number;
+  yearTo?: number;
   lat?: number;
   lng?: number;
   coordsApprox?: boolean;
@@ -67,6 +69,7 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/griblje-vas.jpg",
     imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
+    yearFrom: 1526,
     lat: 45.57246,
     lng: 15.29257,
     featured: true,
@@ -216,6 +219,8 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/evakuacija.jpg",
     imageCredit: "Foto: Franjo Veselko, marec 1945 · Wikimedia Commons · javna last",
+    yearFrom: 1945,
+    yearTo: 1945,
     featured: true,
     sources: [
       {
@@ -272,6 +277,7 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/meja.jpg",
     imageCredit: "Foto: Hythlodot · Wikimedia Commons · CC BY-SA 4.0",
+    yearFrom: 1991,
     lat: 45.5675,
     lng: 15.2995,
     coordsApprox: true,
@@ -342,6 +348,8 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "TRADITION",
     image: "/images/authentic/stara-hisa.jpg",
     imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
+    yearFrom: 1800,
+    yearTo: 1899,
     featured: false,
     sources: [
       
@@ -388,6 +396,7 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/ravnace.jpg",
     imageCredit: "Foto: Andrejj · Wikimedia Commons · CC BY-SA 4.0 · Ravnace pri Metliki",
+    yearFrom: 1800,
     featured: false,
     sources: [
       
@@ -526,6 +535,8 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "TRADITION",
     image: "/images/authentic/predenje.jpg",
     imageCredit: "Foto: Fran Vesel, 1920 · Wikimedia Commons · javna last",
+    yearFrom: 1800,
+    yearTo: 1950,
     featured: false,
     sources: [
       

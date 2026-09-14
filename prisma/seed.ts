@@ -30,6 +30,8 @@ async function main() {
         evidenceStatus: ex.evidenceStatus,
         image: ex.image ?? null,
         imageCredit: ex.imageCredit ?? null,
+        yearFrom: ex.yearFrom ?? null,
+        yearTo: ex.yearTo ?? null,
         lat: ex.lat ?? null,
         lng: ex.lng ?? null,
         coordsApprox: ex.coordsApprox ?? false,

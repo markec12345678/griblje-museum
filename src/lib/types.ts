@@ -41,6 +41,8 @@ export type ExhibitDTO = {
   evidenceStatus: EvidenceStatus;
   image: string | null;
   imageCredit: string | null;
+  yearFrom: number | null;
+  yearTo: number | null;
   lat: number | null;
   lng: number | null;
   coordsApprox: boolean;

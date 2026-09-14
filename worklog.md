@@ -153,3 +153,26 @@ Stage Summary:
 - Vseh 14 zapisov in hero zdaj nosijo avtentične, pripisane fotografije (predhodno AI-ilustracije)
 - Preverjeno v brskalniku: hero (prava dolina Kolpe + kredit), zbirka (VLM: prave fotografije + krediti spodaj desno, brez napak), dialog cerkve (prava rumena baročna cerkev + kredit + avdio vodnik deluje), karta 6 oznak, mobilni prikaz 375 px brez prekoračitve, noga na dnu (5495=5495)
 - Lint 0 napak; dev.log brez napak; baza: 14 zapisov, 25 virov, 14 kreditov
+
+---
+Task ID: 6
+Agent: Main agent (Z.ai Code)
+Task: Raziskava po norveškem muzejskem standardu, analiza vrzeli in implementacija manjkajočih praks (časovnica, enotno iskanje, sitemap/robots)
+
+Work Log:
+- Preverila stanje: commit 59f87ab (avtentične fotografije) že pushan na GitHub; dev strežnik in vsi API-ji delujejo
+- Web-search (5 poizvedb): Norsk Folkemuseum (dokumentacijski center), DigitaltMuseum (skupna norveško-švedska baza — jedro je enotno iskanje), norveška zakonodaja universell utforming (WCAG 2.1 A/AA obvezno za javne strani), Nasjonalmuseet (brezplačni prenosi slik), muzejska praksa časovnic (Hobbs & Pigott: časovnice kot orodje pripovedi)
+- Analiza vrzeli: časovnica ❌, enotno iskanje ❌, strukturirana datacija objektov ❌, sitemap/robots ⚠️ (samo statičen robots.txt) — WCAG ✓, odprti podatki ✓, zgodbe ✓
+- Shema: novi stolpci Exhibit.yearFrom/yearTo (Int?, po vzoru DigitaltMuseum fdate/tdate); db push + ponoven seed; restart dev strežnika (zastarel Prisma klient)
+- Datacija samo iz dokumentiranih virov: griblje-vas 1526, belokranjska-hisa/vino 1800–1899 (konvencija stoletja, prikazana kot »19. stol.«, nikoli kot leto), tkalstvo 1800–1950, evakuacija 1945–1945, meja 1991; preverila tudi omembo 1990 pri jurjevanju (nanaša se na festival v Črnomlju → zapis ostane nedatiran)
+- NOVO src/components/museum/timeline-view.tsx: navpična časovnica z dobnimi glavami (16. stoletje/19. stoletje/20. stoletje/1991→danes, ikone ScrollText/Home/Plane/Flag), izmenične kartice na md+, pika na črti, letnice izpeljane iz kuriranega niza obdobja (regex na štirimestna leta; sicer »19. stol.« — poštena datacija), EvidenceBadge + kredit na karticah, »Neprekinjeni tokovi« za 8 nedatiranih zapisov s pošteno opombo, howTo razlaga branja datumov
+- Navigacija: MuseumView + VIEW_ORDER + footer dopolnjeni s »casovnica«; i18n nav + razdelek timeline v obeh jezikih; popavek glave (ožje blazinjenje na md, ime muzeja od lg), ker je 7 členov presegalo 768 px
+- NOVO src/app/api/search/route.ts: GET /api/search?q= — enotno iskanje po razstavah/zgodbah/dogodkih, NFD normalizacija diakritik (»crnomelj« najde »Črnomelj«), matchedIn polja, 400 pri <2 znakih, CORS *, dodano v /api/opendata endpoints + README
+- NOVO src/app/sitemap.ts + robots.ts (nasprotni konflikt s starim public/robots.txt rešen z izbrisom statične datoteke)
+- Popravila med E2E: mobilna prekoračitev (ml-12 + w-full → w-[calc(100%-3rem)]), ničelna višina slik na sm (manjkajoči sm:flex-row), dodana povabnica »Odpri zapis« na kartice mejnikov
+
+Stage Summary:
+- Preverjeno z agent-browser: časovnica SLO+EN (4 dobe, 6 mejnikov, 8 tokov), klik na kartico odpre dialog, izmenična postavitev na 1440 px (VLM 9/10), mobilni 375 px brez prekoračitve (VLM 9/10), sm 700 px slike v redu, 768/820/1024/1280 px brez prekoračitve, mobilni meni vsebuje Časovnico, noga pravilno potisnjena (2887 ≥ 800), konzola 0 opozoril/0 napak po čistem ponovnem nalaganju
+- Iskalni API: q=crnomelj → 3 zadetki, q=Kolpa → 7, q=1945 → razstava+zgodba+dogodek, q=x → 400; sitemap.xml 200, robots.txt 200
+- bun run lint: 0 napak; dev.log brez napak
+- Muzej zdaj pokriva vse razsežnosti norveškega benchmarka: dvojezičnost, WCAG, odprti podatki (JSON-LD + IIIF + search), dogodki, poštena provenienca, skupnostne zgodbe — in zdaj še kronološko pripoved (časovnica) ter enotno iskanje (DigitaltMuseum vzor)

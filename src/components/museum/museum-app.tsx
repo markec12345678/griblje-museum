@@ -7,6 +7,7 @@ import { Footer } from "@/components/museum/footer";
 import { HomeView } from "@/components/museum/home-view";
 import { CollectionView } from "@/components/museum/collection-view";
 import { StoriesView } from "@/components/museum/stories-view";
+import { TimelineView } from "@/components/museum/timeline-view";
 import { EventsView } from "@/components/museum/events-view";
 import { MapView } from "@/components/museum/map-view";
 import { AboutView } from "@/components/museum/about-view";
@@ -76,6 +77,12 @@ export function MuseumApp() {
       />
     ),
     zgodbe: <StoriesView stories={storiesQuery.data ?? []} />,
+    casovnica: (
+      <TimelineView
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={openExhibit}
+      />
+    ),
     karta: (
       <MapView
         exhibits={exhibitsQuery.data ?? []}

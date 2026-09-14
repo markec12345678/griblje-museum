@@ -65,6 +65,7 @@ export async function GET() {
         exhibits: "/api/exhibits",
         events: "/api/events",
         stories: "/api/stories",
+        search: "/api/search?q=<poizvedba>",
         opendata: "/api/opendata",
         iiif: "/api/iiif",
       },

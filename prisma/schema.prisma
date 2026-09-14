@@ -25,6 +25,8 @@ model Exhibit {
   evidenceStatus String // DOCUMENTED | CORROBORATED | TESTIMONY | TRADITION | UNVERIFIED | TO_COLLECT
   image         String?
   imageCredit   String? // navedba fotografije: avtor, Wikimedia Commons, licenca
+  yearFrom      Int?     // strukturirana datacija (po vzoru DigitaltMuseum fdate): začetno leto; null = nedatiran tok
+  yearTo        Int?     // končno leto; null = teče do danes
   lat           Float?
   lng           Float?
   coordsApprox  Boolean  @default(false)

@@ -34,6 +34,8 @@ export async function GET(request: Request) {
       evidenceStatus: ex.evidenceStatus as EvidenceStatus,
       image: ex.image,
       imageCredit: ex.imageCredit,
+      yearFrom: ex.yearFrom,
+      yearTo: ex.yearTo,
       lat: ex.lat,
       lng: ex.lng,
       coordsApprox: ex.coordsApprox,

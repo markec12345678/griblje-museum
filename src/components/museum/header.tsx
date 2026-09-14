@@ -7,9 +7,9 @@ import { useLang, type Lang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-export type MuseumView = "domov" | "zbirka" | "zgodbe" | "karta" | "dogodki" | "oMuzeju";
+export type MuseumView = "domov" | "zbirka" | "zgodbe" | "casovnica" | "karta" | "dogodki" | "oMuzeju";
 
-const VIEW_ORDER: MuseumView[] = ["domov", "zbirka", "zgodbe", "karta", "dogodki", "oMuzeju"];
+const VIEW_ORDER: MuseumView[] = ["domov", "zbirka", "zgodbe", "casovnica", "karta", "dogodki", "oMuzeju"];
 
 export function Header({
   view,
@@ -55,7 +55,7 @@ export function Header({
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
             <Landmark className="h-5 w-5" aria-hidden="true" />
           </span>
-          <span className="hidden flex-col leading-none sm:flex">
+          <span className="hidden flex-col leading-none lg:flex">
             <span className="font-display text-lg font-semibold tracking-tight">
               {t.museumName}
             </span>
@@ -76,7 +76,7 @@ export function Header({
               onClick={() => onNavigate(key)}
               aria-current={view === key ? "page" : undefined}
               className={cn(
-                "relative rounded-md px-3.5 py-2 text-sm font-medium transition-colors",
+                "relative rounded-md px-2.5 py-2 text-sm font-medium transition-colors md:px-2.5 lg:px-3.5",
                 "min-h-11",
                 view === key
                   ? "text-primary"
