@@ -15,12 +15,16 @@ import {
   MapPin,
   Mic,
   Quote,
+  Route,
+  Scale,
   X,
   ZoomIn,
 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { useFavorites } from "@/lib/favorite-tracker";
+import { useCompareSelection } from "@/lib/compare-tracker";
+import { useMyWalk } from "@/lib/my-walk-tracker";
 import type { ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -68,6 +72,8 @@ export function ExhibitDialog({
   const es = useExhibitStrings();
   const open = exhibit !== null;
   const { isFavorite, toggleFavorite } = useFavorites();
+  const { isSelected, toggleCompare } = useCompareSelection();
+  const { isOnWalk, add, remove } = useMyWalk();
 
   // Približevalni ogled slike (deep zoom) — se preklopi nazaj ob naslednjem zapisu.
   const [zoomOpen, setZoomOpen] = React.useState(false);
@@ -205,7 +211,75 @@ export function ExhibitDialog({
                   <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                     {es.period(exhibit)}
                   </span>
-                  <span className="ml-auto">
+                  <span className="ml-auto flex flex-wrap gap-2">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9 gap-1.5"
+                      aria-pressed={exhibit ? isSelected(exhibit.slug) : false}
+                      aria-label={
+                        exhibit && isSelected(exhibit.slug)
+                          ? t.compare.removeDialog
+                          : t.compare.addDialog
+                      }
+                      title={
+                        exhibit && isSelected(exhibit.slug)
+                          ? t.compare.removeDialog
+                          : t.compare.addDialog
+                      }
+                      onClick={() => exhibit && toggleCompare(exhibit.slug)}
+                    >
+                      <Scale
+                        className={
+                          exhibit && isSelected(exhibit.slug)
+                            ? "h-4 w-4 text-primary"
+                            : "h-4 w-4"
+                        }
+                        aria-hidden="true"
+                      />
+                      <span className="hidden sm:inline">
+                        {exhibit && isSelected(exhibit.slug)
+                          ? t.compare.added
+                          : t.compare.add}
+                      </span>
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9 gap-1.5"
+                      aria-pressed={exhibit ? isOnWalk(exhibit.slug) : false}
+                      aria-label={
+                        exhibit && isOnWalk(exhibit.slug)
+                          ? t.myWalk.removeDialog
+                          : t.myWalk.addDialog
+                      }
+                      title={
+                        exhibit && isOnWalk(exhibit.slug)
+                          ? t.myWalk.removeDialog
+                          : t.myWalk.addDialog
+                      }
+                      onClick={() => {
+                        if (!exhibit) return;
+                        if (isOnWalk(exhibit.slug)) remove(exhibit.slug);
+                        else add(exhibit.slug);
+                      }}
+                    >
+                      <Route
+                        className={
+                          exhibit && isOnWalk(exhibit.slug)
+                            ? "h-4 w-4 text-primary"
+                            : "h-4 w-4"
+                        }
+                        aria-hidden="true"
+                      />
+                      <span className="hidden sm:inline">
+                        {exhibit && isOnWalk(exhibit.slug)
+                          ? t.myWalk.added
+                          : t.myWalk.addTo}
+                      </span>
+                    </Button>
                     <Button
                       type="button"
                       variant="outline"
