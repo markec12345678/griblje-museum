@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { normalize } from "@/lib/normalize";
 
 export const dynamic = "force-dynamic";
 
@@ -9,18 +10,10 @@ export const dynamic = "force-dynamic";
  * skupne norveško-švedske muzejske baze, katere jedro je prav enotno iskanje.
  *
  * Iskanje je neobčutljivo na velike/male črke in diakritike (č→c, ž→z …),
- * tako da "crnomelj" najde tudi "Črnomelj". Odgovor vrača zadetke po tipih
- * s polji v obeh jezikih; pravilen je `Access-Control-Allow-Origin: *`.
+ * tako da "crnomelj" najde tudi "Črnomelj" (glej src/lib/normalize.ts, ki
+ * si pravilo deli s filtrom v pogledu zbirke). Odgovor vrača zadetke po
+ * tipih s polji v obeh jezikih; pravilen je `Access-Control-Allow-Origin: *`.
  */
-
-/** Normalizacija niza: NFD razstavi diakritike, odstranimo jih in lowercasamo. */
-function normalize(value: string): string {
-  return value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .trim();
-}
 
 type Indexed = { haystack: string; fields: string[] };
 

@@ -4,7 +4,7 @@ import type { StoryDTO } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-/** GET /api/stories — zgodbe: dokumentirane, načela, razpisi. */
+/** GET /api/stories — zgodbe: dokumentirane, načela, razpisi. CORS: `*`. */
 export async function GET() {
   try {
     const stories = await db.storyItem.findMany({
@@ -26,7 +26,12 @@ export async function GET() {
 
     return NextResponse.json(
       { count: payload.length, stories: payload },
-      { headers: { "Cache-Control": "public, max-age=60" } }
+      {
+        headers: {
+          "Cache-Control": "public, max-age=60",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
     );
   } catch (error) {
     console.error("API /api/stories error:", error);

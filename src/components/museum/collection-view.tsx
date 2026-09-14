@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { CheckCircle2, Search, SlidersHorizontal, X } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
+import { normalize } from "@/lib/normalize";
 import { useVisited } from "@/lib/visit-tracker";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
@@ -56,21 +57,23 @@ export function CollectionView({
   const [evidence, setEvidence] = React.useState<EvidenceStatus | "vse">("vse");
 
   const filtered = React.useMemo(() => {
-    const normalized = query.trim().toLowerCase();
+    // Enaka normalizacija kot strežniško iskanje (src/lib/normalize.ts):
+    // filter je neobčutljiv na diakritike, da "crnomelj" najde "Črnomelj".
+    const needle = normalize(query);
     return exhibits.filter((ex) => {
       const matchesCategory = category === "vse" || ex.category === category;
       const matchesEvidence = evidence === "vse" || ex.evidenceStatus === evidence;
-      const haystack = [
-        ex.titleSi,
-        ex.titleEn,
-        ex.summarySi,
-        ex.summaryEn,
-        ex.storySi,
-        ex.storyEn,
-      ]
-        .join(" ")
-        .toLowerCase();
-      const matchesQuery = !normalized || haystack.includes(normalized);
+      const haystack = normalize(
+        [
+          ex.titleSi,
+          ex.titleEn,
+          ex.summarySi,
+          ex.summaryEn,
+          ex.storySi,
+          ex.storyEn,
+        ].join(" ")
+      );
+      const matchesQuery = !needle || haystack.includes(needle);
       return matchesCategory && matchesEvidence && matchesQuery;
     });
   }, [exhibits, query, category, evidence]);

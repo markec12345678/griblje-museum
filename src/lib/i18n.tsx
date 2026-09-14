@@ -750,6 +750,21 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.lang = lang === "sl" ? "sl" : "en";
   }, [lang]);
 
+  // Izbira jezika se sinhronizira med zavihki istega brskalnika
+  // (dogodek `storage` — enak mehanizem kot pri obiskih in sprehodih).
+  React.useEffect(() => {
+    const onStorage = (event: StorageEvent) => {
+      if (
+        event.key === "mvg-lang" &&
+        (event.newValue === "sl" || event.newValue === "en")
+      ) {
+        setLangState(event.newValue);
+      }
+    };
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
+  }, []);
+
   const setLang = React.useCallback((next: Lang) => {
     setLangState(next);
     window.localStorage.setItem("mvg-lang", next);

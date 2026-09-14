@@ -4,7 +4,7 @@ import type { MuseumEventDTO } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-/** GET /api/events — program muzeja (kronološko). */
+/** GET /api/events — program muzeja (kronološko). CORS: `*` (enoten odprt API). */
 export async function GET() {
   try {
     const events = await db.museumEvent.findMany({
@@ -27,7 +27,12 @@ export async function GET() {
 
     return NextResponse.json(
       { count: payload.length, events: payload },
-      { headers: { "Cache-Control": "public, max-age=60" } }
+      {
+        headers: {
+          "Cache-Control": "public, max-age=60",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
     );
   } catch (error) {
     console.error("API /api/events error:", error);

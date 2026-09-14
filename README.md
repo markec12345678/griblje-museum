@@ -64,11 +64,14 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
+bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 56 virov, 4 zgodbe, 5 dogodkov)
 bun run dev            # razvojna storitev na :3000
 ```
 
-Seed (20 razstav, 56 virov, 4 zgodbe, 5 dogodkov) se zažene samodejno ob prvem
-zagonu (`prisma/seed.ts`, idempotentno).
+V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
+brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi
+oz. na sveži bazi (`prisma/seed.ts` je idempotenten — vsak zagon zbirko
+čisto prepiše iz istih virov).
 
 ### API
 

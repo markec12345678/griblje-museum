@@ -382,6 +382,6 @@ fetch("/api/exhibits")
   );
 }
 
-function Separator() {
-  return <hr className="border-t border-border/70" aria-hidden="true" />;
+function Separator({ className = "" }: { className?: string }) {
+  return <hr className={`border-t border-border/70 ${className}`} aria-hidden="true" />;
 }
