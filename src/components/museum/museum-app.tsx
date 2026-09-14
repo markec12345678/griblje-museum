@@ -13,6 +13,9 @@ import { MapView } from "@/components/museum/map-view";
 import { AboutView } from "@/components/museum/about-view";
 import { MyMuseumView } from "@/components/museum/my-museum-view";
 import { KidsView } from "@/components/museum/kids-view";
+import { ThemeHubView } from "@/components/museum/theme-hub-view";
+import { MoodGuideView } from "@/components/museum/mood-guide-view";
+import { ConnectDialog } from "@/components/museum/connect-dialog";
 import { CompareTray } from "@/components/museum/compare-tray";
 import { CompareDialog } from "@/components/museum/compare-dialog";
 import { SearchDialog } from "@/components/museum/search-dialog";
@@ -30,7 +33,7 @@ import { addToCompare, useCompareSelection } from "@/lib/compare-tracker";
 import type { WalkContext } from "@/components/museum/walk-ui";
 import { useExhibits, useEvents, useStories } from "@/hooks/use-museum";
 import { ExhibitDialog } from "@/components/museum/exhibit-dialog";
-import type { ExhibitDTO } from "@/lib/types";
+import type { ExhibitCategory, ExhibitDTO } from "@/lib/types";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { RotateCcw } from "lucide-react";
@@ -64,6 +67,16 @@ export function MuseumApp() {
   // Globoka povezava ?compare=<slug>,<slug> — čaka na zbirko s strežnika.
   const [pendingCompare, setPendingCompare] = React.useState<string[] | null>(null);
 
+  // Aktivna tema (pogled #tema) + globoka povezava ?tema=<kategorija>.
+  const [activeTheme, setActiveTheme] = React.useState<ExhibitCategory | null>(null);
+
+  // Vodnik po razpoloženju: odgovori iz globoke povezave ?mood=<chip>,<chip>,<chip>.
+  const [presetMoodAnswers, setPresetMoodAnswers] = React.useState<Record<string, string> | null>(null);
+
+  // Poveži zbirko: ?path=<slugA>,<slugB> odpre orodje za iskanje poti.
+  const [connectOpen, setConnectOpen] = React.useState(false);
+  const [connectPair, setConnectPair] = React.useState<[string, string] | null>(null);
+
   const exhibitsQuery = useExhibits();
   const eventsQuery = useEvents();
   const storiesQuery = useStories();
@@ -91,6 +104,29 @@ export function MuseumApp() {
         .filter(Boolean)
         .slice(0, 3);
       if (slugs.length > 0) setPendingCompare(slugs);
+    }
+    const moodParam = new URLSearchParams(window.location.search).get("mood");
+    if (moodParam) {
+      const chipIds = moodParam.split(",").map((s) => s.trim()).filter(Boolean);
+      setPresetMoodAnswers({
+        razpolozenje: chipIds[0] ?? "",
+        cas: chipIds[1] ?? "",
+        jakost: chipIds[2] ?? "",
+      });
+      setView("razpolozenje");
+    }
+    const pathParam = new URLSearchParams(window.location.search).get("path");
+    if (pathParam) {
+      const slugs = pathParam.split(",").map((s) => s.trim()).filter(Boolean);
+      if (slugs.length >= 2) {
+        setConnectPair([slugs[0], slugs[1]]);
+        setConnectOpen(true);
+      }
+    }
+    const temaParam = new URLSearchParams(window.location.search).get("tema");
+    if (temaParam) {
+      setActiveTheme(temaParam as ExhibitCategory);
+      setView("tema");
     }
     const hash = window.location.hash.replace(/^#/, "");
     if ((VIEW_ORDER as string[]).includes(hash) && hash !== "domov") {
@@ -157,6 +193,21 @@ export function MuseumApp() {
     window.history.replaceState(window.history.state, "", url);
   }, [compareOpen, compareSelection]);
 
+  // URL v korak s temo (?tema=<kategorija>) in orodjem Poveži (?path=…).
+  const themeUrlSynced = React.useRef(false);
+  React.useEffect(() => {
+    if (!themeUrlSynced.current) {
+      themeUrlSynced.current = true;
+      return;
+    }
+    const url = new URL(window.location.href);
+    if (view === "tema" && activeTheme) url.searchParams.set("tema", activeTheme);
+    else url.searchParams.delete("tema");
+    if (connectOpen && connectPair) url.searchParams.set("path", connectPair.join(","));
+    else url.searchParams.delete("path");
+    window.history.replaceState(window.history.state, "", url);
+  }, [view, activeTheme, connectOpen, connectPair]);
+
   // Zaostali globoki povezavi primerjave ustreže, ko zbirka prispe.
   React.useEffect(() => {
     if (!pendingCompare || !exhibitsQuery.data) return;
@@ -193,8 +244,20 @@ export function MuseumApp() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const navigate = React.useCallback((next: MuseumView) => {
-    setView(next);
+  const navigate = React.useCallback(
+    (next: MuseumView) => {
+      setView(next);
+      if (next !== "tema") setActiveTheme(null);
+      if (next !== "razpolozenje") setPresetMoodAnswers(null);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    []
+  );
+
+  // Odpri tematsko središče (pogled #tema + aktivna kategorija).
+  const openTheme = React.useCallback((category: ExhibitCategory | null) => {
+    setActiveTheme(category);
+    setView("tema");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
@@ -309,6 +372,32 @@ export function MuseumApp() {
       <CollectionView
         exhibits={exhibitsQuery.data ?? []}
         onOpenExhibit={openExhibit}
+        onOpenTheme={openTheme}
+        onOpenConnect={(pair) => {
+          setConnectPair(pair);
+          setConnectOpen(true);
+        }}
+      />
+    ),
+    tema: (
+      <ThemeHubView
+        category={activeTheme}
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+        onOpenTheme={openTheme}
+        onNavigate={navigate}
+        onStartWalk={(walkId, stopIndex) =>
+          startWalk(walkId, stopIndex, exhibitsQuery.data ?? [])
+        }
+      />
+    ),
+    razpolozenje: (
+      <MoodGuideView
+        exhibits={exhibitsQuery.data ?? []}
+        initialAnswers={presetMoodAnswers ?? undefined}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+        onNavigate={navigate}
+        onStartWalk={(walkId) => startWalk(walkId, 0, exhibitsQuery.data ?? [])}
       />
     ),
     zgodbe: <StoriesView stories={storiesQuery.data ?? []} />,
@@ -406,8 +495,11 @@ export function MuseumApp() {
 
       <ExhibitDialog
         exhibit={selectedExhibit}
+        allExhibits={exhibitsQuery.data ?? []}
         onClose={closeExhibit}
         onShowOnMap={showOnMap}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+        onOpenTheme={openTheme}
         walkContext={walkContext}
       />
 
@@ -430,6 +522,15 @@ export function MuseumApp() {
         open={compareOpen}
         exhibits={exhibitsQuery.data ?? []}
         onClose={() => setCompareOpen(false)}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+      />
+
+      {/* Poveži zbirko — pot med dvema zapisoma (x Degrees of Separation) */}
+      <ConnectDialog
+        open={connectOpen}
+        exhibits={exhibitsQuery.data ?? []}
+        initialPair={connectPair}
+        onClose={() => setConnectOpen(false)}
         onOpenExhibit={(ex) => openExhibit(ex)}
       />
     </div>

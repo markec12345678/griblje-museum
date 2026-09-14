@@ -3,12 +3,13 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { CheckCircle2, Search, SlidersHorizontal, X } from "lucide-react";
+import { CheckCircle2, Network, Search, SlidersHorizontal, X } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { normalize } from "@/lib/normalize";
 import { useVisited } from "@/lib/visit-tracker";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
+import { THEME_HUBS } from "@/lib/theme-hubs";
 import type { ExhibitCategory, ExhibitDTO, EvidenceStatus } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -43,9 +44,13 @@ const EVIDENCE_ORDER: EvidenceStatus[] = [
 export function CollectionView({
   exhibits,
   onOpenExhibit,
+  onOpenTheme,
+  onOpenConnect,
 }: {
   exhibits: ExhibitDTO[];
   onOpenExhibit: (exhibit: ExhibitDTO, focusView?: "karta") => void;
+  onOpenTheme: (category: ExhibitCategory | null) => void;
+  onOpenConnect: (pair: [string, string] | null) => void;
 }) {
   const { t, lang } = useLang();
   const es = useExhibitStrings();
@@ -92,6 +97,62 @@ export function CollectionView({
         <h1 className="font-display text-4xl font-semibold sm:text-5xl">{t.collection.title}</h1>
         <p className="mt-3 text-muted-foreground">{t.collection.subtitle}</p>
       </div>
+
+      {/* Tematska središča — vstopne točke po vzoru Rijksmuseumovih node strani */}
+      <section aria-labelledby="tematska-sredisca" className="mt-8">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2
+            id="tematska-sredisca"
+            className="font-display inline-flex items-center gap-2 text-xl font-semibold"
+          >
+            {t.themes.explore}
+          </h2>
+          <Button
+            variant="outline"
+            size="sm"
+            className="min-h-11"
+            onClick={() => onOpenConnect(null)}
+          >
+            <Network className="mr-1.5 h-4 w-4" aria-hidden="true" />
+            {t.connect.openTool}
+          </Button>
+        </div>
+        <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {THEME_HUBS.map((hub) => {
+            const cover = exhibits.find((ex) => ex.category === hub.category);
+            const count = exhibits.filter((ex) => ex.category === hub.category).length;
+            return (
+              <li key={hub.category}>
+                <button
+                  type="button"
+                  onClick={() => onOpenTheme(hub.category)}
+                  className="group relative block aspect-[4/3] w-full overflow-hidden rounded-lg border border-border/70 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+                >
+                  <Image
+                    src={cover?.image ?? "/images/authentic/hero-griblje.jpg"}
+                    alt={t.categories[hub.category]}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"
+                  />
+                  <span className="absolute inset-x-2.5 bottom-2 flex flex-col items-start leading-tight">
+                    <span className="text-sm font-semibold text-foreground drop-shadow-sm">
+                      {t.categories[hub.category]}
+                    </span>
+                    <span className="text-[11px] text-muted-foreground">
+                      {t.themes.countLabel(count)}
+                    </span>
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
       {/* Zbiralec zapisov — napredek obiska */}
       <div className="mt-8">

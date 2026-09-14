@@ -47,6 +47,29 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   licenca **CC BY-SA 4.0**, CORS glava — po vzoru odprtega API Nasjonalmuseeta (2018)
 - 🏛️ **Muzejska iskrenost** — vsak zapis nosi stopnjo zanesljivosti, fotografije so
   avtentične in pripisane; kadar posnetek ni z Gribelj samega, je to izrecno navedeno
+- ❤️ **Moja zbirka** — shranjevanje zapisov brez računa (localStorage), vzorec
+  Rijksstudio (Rijksmuseum)
+- 🔍 **Približevalni ogled** — deep zoom nad fotografijami (OpenSeadragon), po vzoru
+  gigapikselnih posnetkov Rijksmuseuma in Google Arts & Culture
+- 🌅 **Danes v muzeju** — deterministični dnevni zapis (object of the day, vzorec
+  British Museum / Met); načrt obiska po vzoru Louvra in Met
+- ⚖️ **Primerjalnik** — do tri zapise drug ob drugem na eni strani (vzorec Comparator,
+  Rijksmuseum 2024), deljiva povezava `/?compare=<slug>,<slug>`
+- 🧭 **Moj sprehod** — osebna pot skozi muzej z razvrščanjem postaj (vzorec obiskovalnih
+  poti Louvra), `/?walk=moj-sprehod`
+- 🧒 **Mali raziskovalci** — družinski sprehod z uganko za 6–12 let (vzorec družinskega
+  vodnika Van Goghovega muzeja in Petite Galerie Louvra)
+- 📴 **Muzej v žepu** — PWA: namestitev na telefon in ogled brez povezave (service
+  worker predpomnilnik; vzorec offline vodnika Van Goghovega muzeja)
+- 🚪 **Tematska središča** — šest kuriranih vstopnih točk v zbirko (vzorec tematskih
+  strani nove zbirke Rijksmuseuma), deljiva povezava `/?tema=<kategorija>`
+- ✨ **Vodnik po razpoloženju** — tri vprašanja, deterministični osebni izbor z
+  razlogi (vzorec Art Explorer, Rijksmuseum 2024), deljiva povezava `/?mood=<odg>`
+- 🕸️ **Poveži zbirko** — povezani zapisi v vsakem zapisu + pot med dvema zapisoma z
+  utemeljenimi skoki (vzorec x Degrees of Separation, Google Arts & Culture),
+  `/?path=<slugA>,<slugB>`
+- ⏱️ **Muzej v minuti** — enominutne zgodbe za vseh 20 zapisov s TTS in prepisom
+  (vzorec One Minute Wonders, Brighton & Hove Museums); dnevni izbor treh zgodb
 
 ## Tehnologija / Tech stack
 

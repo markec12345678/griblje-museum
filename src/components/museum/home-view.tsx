@@ -4,13 +4,14 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, BookOpen, Database, FileSearch, Map as MapIcon, CalendarDays } from "lucide-react";
+import { ArrowRight, BookOpen, Database, FileSearch, Map as MapIcon, CalendarDays, Sparkles } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
 import { MuseumQuiz } from "@/components/museum/museum-quiz";
 import { WalksSection } from "@/components/museum/walks-section";
 import { ObjectOfDay } from "@/components/museum/object-of-day";
+import { MinuteStories } from "@/components/museum/minute-stories";
 import { PlanVisit } from "@/components/museum/plan-visit";
 import type { ExhibitDTO, MuseumEventDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
@@ -117,6 +118,15 @@ export function HomeView({
                 <MapIcon className="mr-2 h-4.5 w-4.5" aria-hidden="true" />
                 {t.hero.ctaMap}
               </Button>
+              <Button
+                size="lg"
+                variant="ghost"
+                className="min-h-12 border-primary/40 bg-background/70 px-6 text-foreground backdrop-blur-sm hover:bg-background/90"
+                onClick={() => onNavigate("razpolozenje")}
+              >
+                <Sparkles className="mr-2 h-4.5 w-4.5" aria-hidden="true" />
+                {t.mood.cta}
+              </Button>
             </div>
           </motion.div>
         </div>
@@ -145,6 +155,9 @@ export function HomeView({
 
       {/* DANES V MUZEJU — dnevni zapis (vzorec: object of the day) */}
       <ObjectOfDay exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />
+
+      {/* MUZEJ V MINUTI — enominutne zgodbe (vzorec: One Minute Wonders) */}
+      <MinuteStories exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />
 
       {/* IZPOSTAVLJENO */}
       <section className="paper-grain mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

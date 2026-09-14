@@ -28,7 +28,7 @@ export function Footer({ onNavigate }: { onNavigate: (view: MuseumView) => void 
               {t.footer.nav}
             </h2>
             <ul className="space-y-1.5">
-              {(["domov", "zbirka", "zgodbe", "casovnica", "karta", "zaOtroke"] as MuseumView[]).map((key) => (
+              {(["domov", "zbirka", "tema", "zgodbe", "casovnica", "karta", "zaOtroke"] as MuseumView[]).map((key) => (
                 <li key={key}>
                   <button
                     type="button"

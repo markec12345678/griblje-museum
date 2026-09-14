@@ -4,6 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import {
   Archive,
+  ArrowRight,
   BookOpen,
   Check,
   ExternalLink,
@@ -14,18 +15,21 @@ import {
   Map as MapIcon,
   MapPin,
   Mic,
+  Network,
   Quote,
   Route,
   Scale,
   X,
   ZoomIn,
 } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { useFavorites } from "@/lib/favorite-tracker";
 import { useCompareSelection } from "@/lib/compare-tracker";
 import { useMyWalk } from "@/lib/my-walk-tracker";
-import type { ExhibitDTO, SourceType } from "@/lib/types";
+import { relatedExhibits } from "@/lib/connections";
+import { hasMinuteStory } from "@/components/museum/minute-stories";
+import type { ExhibitCategory, ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -58,13 +62,20 @@ const SOURCE_ICON: Record<SourceType, React.ElementType> = {
 
 export function ExhibitDialog({
   exhibit,
+  allExhibits = [],
   onClose,
   onShowOnMap,
+  onOpenExhibit,
+  onOpenTheme,
   walkContext = null,
 }: {
   exhibit: ExhibitDTO | null;
+  /** Cela zbirka — za povezane zapise v tem zapisu. */
+  allExhibits?: ExhibitDTO[];
   onClose: () => void;
   onShowOnMap: (exhibit: ExhibitDTO) => void;
+  onOpenExhibit: (exhibit: ExhibitDTO) => void;
+  onOpenTheme?: (category: ExhibitCategory) => void;
   /** Aktivni muzejski sprehod — če je zapis odprt kot postaja sprehoda. */
   walkContext?: WalkContext | null;
 }) {
@@ -78,6 +89,16 @@ export function ExhibitDialog({
   // Približevalni ogled slike (deep zoom) — se preklopi nazaj ob naslednjem zapisu.
   const [zoomOpen, setZoomOpen] = React.useState(false);
 
+  // Avdio: cel vodnik ali enominutna zgodba (če obstaja).
+  const minuteAvailable = exhibit ? hasMinuteStory(exhibit.slug) : false;
+  const [audioVariant, setAudioVariant] = React.useState<"full" | "minute">("full");
+
+  // Povezani zapisi — ista tema / obdobje / vir / bližina (x Degrees lite).
+  const related = React.useMemo(
+    () => (exhibit ? relatedExhibits(exhibit, allExhibits, 3) : []),
+    [exhibit, allExhibits]
+  );
+
   // Kopiranje deljive povezave in citata zapisa (globoka povezava ?exhibit=<slug>).
   const [copyState, setCopyState] = React.useState<"idle" | "ok" | "fail">("idle");
   const [citationState, setCitationState] = React.useState<"idle" | "ok" | "fail">("idle");
@@ -85,6 +106,7 @@ export function ExhibitDialog({
     setCopyState("idle");
     setCitationState("idle");
     setZoomOpen(false);
+    setAudioVariant("full");
   }, [exhibit?.slug]);
 
   const copyText = async (text: string): Promise<boolean> => {
@@ -327,9 +349,36 @@ export function ExhibitDialog({
               {/* Kuratorska opomba postaje sprehoda */}
               {walkContext && <WalkStopNote ctx={walkContext} />}
 
-              {/* Avdio vodnik */}
+              {/* Avdio vodnik — cel ali v eni minuti (One Minute Wonders) */}
               <div className="mt-5 rounded-lg border border-border/70 bg-muted/40 p-4">
-                <AudioGuide exhibit={exhibit} />
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <AudioGuide exhibit={exhibit} variant={audioVariant} />
+                  {minuteAvailable && (
+                    <div
+                      role="group"
+                      aria-label={t.minute.variantLabel}
+                      className="flex items-center rounded-md border border-border bg-card p-0.5"
+                    >
+                      {(["full", "minute"] as const).map((variant) => (
+                        <button
+                          key={variant}
+                          type="button"
+                          onClick={() => setAudioVariant(variant)}
+                          aria-pressed={audioVariant === variant}
+                          className="min-h-9 rounded-sm px-2.5 py-1 text-xs font-medium transition-colors"
+                          style={{
+                            color:
+                              audioVariant === variant
+                                ? "var(--primary)"
+                                : "var(--muted-foreground)",
+                          }}
+                        >
+                          {variant === "full" ? t.minute.fullGuide : t.minute.minuteGuide}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Zgodba */}
@@ -364,6 +413,72 @@ export function ExhibitDialog({
                     {t.collection.showOnMap}
                   </Button>
                 </div>
+              )}
+
+              {/* Povezani zapisi — sorodnost z razlogom (vzorec: related objects + x Degrees) */}
+              {related.length > 0 && (
+                <section aria-labelledby="povezani-zapisi" className="mt-6">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h3
+                      id="povezani-zapisi"
+                      className="font-display inline-flex items-center gap-2 text-lg font-semibold"
+                    >
+                      <Network className="h-4.5 w-4.5 text-primary" aria-hidden="true" />
+                      {t.connect.relatedTitle}
+                    </h3>
+                    {onOpenTheme && (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="min-h-11"
+                        onClick={() => {
+                          onOpenTheme(exhibit.category);
+                          onClose();
+                        }}
+                      >
+                        {t.themes.viewTheme}
+                        <ArrowRight className="ml-1.5 h-4 w-4" aria-hidden="true" />
+                      </Button>
+                    )}
+                  </div>
+                  <ul className="museum-scroll mt-3 flex gap-4 overflow-x-auto pb-2">
+                    {related.map((rel) => (
+                      <li key={rel.exhibit.slug} className="w-44 shrink-0">
+                        <button
+                          type="button"
+                          onClick={() => onOpenExhibit(rel.exhibit)}
+                          className="group flex w-full flex-col overflow-hidden rounded-lg border border-border/70 bg-card text-left shadow-sm transition-colors hover:border-primary/40"
+                        >
+                          <span className="relative block aspect-[4/3]">
+                            <Image
+                              src={rel.exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
+                              alt={es.title(rel.exhibit)}
+                              fill
+                              sizes="176px"
+                              className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                            />
+                          </span>
+                          <span className="flex flex-1 flex-col gap-1.5 p-3">
+                            <span className="line-clamp-2 text-sm font-semibold leading-snug">
+                              {es.title(rel.exhibit)}
+                            </span>
+                            <span className="flex flex-wrap gap-1">
+                              {rel.connections.slice(0, 2).map((conn) => (
+                                <Badge
+                                  key={conn.kind}
+                                  variant="secondary"
+                                  className="px-1.5 text-[10px] font-normal"
+                                >
+                                  {pick(lang, conn.labelSi, conn.labelEn)}
+                                </Badge>
+                              ))}
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               )}
 
               <Separator className="my-6" />
