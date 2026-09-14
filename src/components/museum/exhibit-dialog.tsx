@@ -31,6 +31,12 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EvidenceBadge } from "@/components/museum/evidence-badge";
 import { AudioGuide } from "@/components/museum/audio-guide";
+import {
+  WalkNav,
+  WalkStopNote,
+  WalkTopBar,
+  type WalkContext,
+} from "@/components/museum/walk-ui";
 
 const SOURCE_ICON: Record<SourceType, React.ElementType> = {
   arhiv: Archive,
@@ -45,29 +51,34 @@ export function ExhibitDialog({
   exhibit,
   onClose,
   onShowOnMap,
+  walkContext = null,
 }: {
   exhibit: ExhibitDTO | null;
   onClose: () => void;
   onShowOnMap: (exhibit: ExhibitDTO) => void;
+  /** Aktivni muzejski sprehod — če je zapis odprt kot postaja sprehoda. */
+  walkContext?: WalkContext | null;
 }) {
   const { t, lang } = useLang();
   const es = useExhibitStrings();
   const open = exhibit !== null;
 
-  // Kopiranje deljive povezave do zapisa (globoka povezava ?exhibit=<slug>).
+  // Kopiranje deljive povezave in citata zapisa (globoka povezava ?exhibit=<slug>).
   const [copyState, setCopyState] = React.useState<"idle" | "ok" | "fail">("idle");
-  React.useEffect(() => setCopyState("idle"), [exhibit?.slug]);
+  const [citationState, setCitationState] = React.useState<"idle" | "ok" | "fail">("idle");
+  React.useEffect(() => {
+    setCopyState("idle");
+    setCitationState("idle");
+  }, [exhibit?.slug]);
 
-  const copyLink = async () => {
-    if (!exhibit) return;
-    const url = `${window.location.origin}/?exhibit=${exhibit.slug}`;
+  const copyText = async (text: string): Promise<boolean> => {
     try {
       if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(url);
+        await navigator.clipboard.writeText(text);
       } else {
         // Zasnova za starejše brskalnike brez Async Clipboard API-ja.
         const area = document.createElement("textarea");
-        area.value = url;
+        area.value = text;
         area.style.position = "fixed";
         area.style.opacity = "0";
         document.body.appendChild(area);
@@ -75,11 +86,39 @@ export function ExhibitDialog({
         document.execCommand("copy");
         document.body.removeChild(area);
       }
-      setCopyState("ok");
+      return true;
     } catch {
-      setCopyState("fail");
+      return false;
     }
+  };
+
+  const copyLink = async () => {
+    if (!exhibit) return;
+    const url = `${window.location.origin}/?exhibit=${exhibit.slug}`;
+    const ok = await copyText(url);
+    setCopyState(ok ? "ok" : "fail");
     window.setTimeout(() => setCopyState("idle"), 2600);
+  };
+
+  const copyCitation = async () => {
+    if (!exhibit) return;
+    const ok = await copyText(buildCitation(exhibit));
+    setCitationState(ok ? "ok" : "fail");
+    window.setTimeout(() => setCitationState("idle"), 2600);
+  };
+
+  /** DigitaltMuseum-vzorc: oblikovan citat zapisa z datumom dostopa. */
+  const buildCitation = (ex: ExhibitDTO): string => {
+    const accessDate = new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    }).format(new Date());
+    const url = `${window.location.origin}/?exhibit=${ex.slug}`;
+    if (lang === "sl") {
+      return `Muzej vasi Griblje (2026). »${es.title(ex)}«. Zapis ${ex.slug}. Dostopno na: ${url} (${t.share.accessed}: ${accessDate}). Licenca CC BY-SA 4.0.`;
+    }
+    return `Griblje Village Museum (2026). “${es.title(ex)}”. Record ${ex.slug}. Available at: ${url} (${t.share.accessed}: ${accessDate}). Licence CC BY-SA 4.0.`;
   };
 
   const storyParagraphs = exhibit ? es.story(exhibit).split("\n\n").filter(Boolean) : [];
@@ -89,6 +128,9 @@ export function ExhibitDialog({
       <DialogContent className="max-h-[92vh] gap-0 overflow-hidden p-0 sm:max-w-3xl">
         {exhibit && (
           <ScrollArea className="museum-scroll max-h-[92vh]">
+            {/* Vrstica sprehoda — le ko je zapis odprt kot postaja sprehoda */}
+            {walkContext && <WalkTopBar ctx={walkContext} />}
+
             {/* Slika zapisa */}
             <div className="relative aspect-[16/9] w-full sm:aspect-[2/1]">
               <Image
@@ -130,6 +172,9 @@ export function ExhibitDialog({
                 {t.evidence.label}: {t.evidence[exhibit.evidenceStatus]} —{" "}
                 {t.evidence.desc[exhibit.evidenceStatus]}
               </p>
+
+              {/* Kuratorska opomba postaje sprehoda */}
+              {walkContext && <WalkStopNote ctx={walkContext} />}
 
               {/* Avdio vodnik */}
               <div className="mt-5 rounded-lg border border-border/70 bg-muted/40 p-4">
@@ -231,31 +276,52 @@ export function ExhibitDialog({
                   <h3 id="navedba-zapisa" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                     {t.collection.citation}
                   </h3>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="min-h-9"
-                    aria-live="polite"
-                    onClick={copyLink}
-                  >
-                    {copyState === "ok" ? (
-                      <Check className="mr-1.5 h-4 w-4 text-primary" aria-hidden="true" />
-                    ) : (
-                      <Link2 className="mr-1.5 h-4 w-4" aria-hidden="true" />
-                    )}
-                    {copyState === "ok"
-                      ? t.share.copied
-                      : copyState === "fail"
-                        ? t.share.copyFailed
-                        : t.share.copyLink}
-                  </Button>
+                  <div className="flex flex-wrap gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9"
+                      onClick={copyCitation}
+                      aria-live="polite"
+                    >
+                      {citationState === "ok" ? (
+                        <Check className="mr-1.5 h-4 w-4 text-primary" aria-hidden="true" />
+                      ) : (
+                        <Quote className="mr-1.5 h-4 w-4" aria-hidden="true" />
+                      )}
+                      {citationState === "ok"
+                        ? t.share.citationCopied
+                        : citationState === "fail"
+                          ? t.share.copyFailed
+                          : t.share.copyCitation}
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9"
+                      onClick={copyLink}
+                      aria-live="polite"
+                    >
+                      {copyState === "ok" ? (
+                        <Check className="mr-1.5 h-4 w-4 text-primary" aria-hidden="true" />
+                      ) : (
+                        <Link2 className="mr-1.5 h-4 w-4" aria-hidden="true" />
+                      )}
+                      {copyState === "ok"
+                        ? t.share.copied
+                        : copyState === "fail"
+                          ? t.share.copyFailed
+                          : t.share.copyLink}
+                    </Button>
+                  </div>
                 </div>
                 <p className="museum-scroll mt-2 overflow-x-auto font-mono text-xs leading-relaxed text-foreground/85">
-                  Muzej vasi Griblje (2026). »{es.title(exhibit)}«. Zapis{" "}
-                  <span className="text-primary">{exhibit.slug}</span>. CC BY-SA 4.0.{" "}
-                  https://muzej-griblje/api/exhibits
+                  {buildCitation(exhibit)}
                 </p>
               </section>
+
+              {/* Navigacija sprehoda — le ko je zapis odprt kot postaja sprehoda */}
+              {walkContext && <WalkNav ctx={walkContext} />}
             </div>
           </ScrollArea>
         )}

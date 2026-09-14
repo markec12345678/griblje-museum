@@ -216,6 +216,15 @@ export const ui = {
       openDataText:
         "Celotna zbirka (zapisi, viri, dogodki, zgodbe) je javno dostopna prek JSON vmesnika z licenco CC BY-SA 4.0. Enako načelo odprtosti, ki ga izvajajo vodilni svetovni muzeji.",
       openDataHow: "Primer uporabe",
+      numbersTitle: "Muzej v številkah",
+      numbers: {
+        sources: "dokumentiranih virov",
+        mapPoints: "točk na karti",
+        walks: "muzejskih sprehodov",
+        quizQuestions: "vprašanj v uganki",
+        languages: "jezikov vsebine",
+        endpoints: "odprtih API-jev",
+      },
       sourcesTitle: "Register virov",
       sourcesText: "Seznam virov, na katere se sklicuje zbirka, z licencami.",
       colophonTitle: "Kolofon",
@@ -269,6 +278,83 @@ export const ui = {
       copyLink: "Kopiraj povezavo do zapisa",
       copied: "Povezava kopirana",
       copyFailed: "Kopiranje ni uspelo",
+      copyCitation: "Kopiraj citat",
+      citationCopied: "Citat kopiran",
+      accessed: "dostop",
+    },
+    walks: {
+      sectionTitle: "Muzejski sprehodi",
+      sectionSub:
+        "Štirje kurirani sprehodi skozi zbirko — po vzoru vodenih ogledov Norsk Folkemuseum. Vsaka postaja odpre zapis s kuratorsko opombo; sprehod lahko kadarkoli zapustite.",
+      stops: (n: number) =>
+        n === 1 ? "1 postaja" : n >= 2 && n <= 4 ? `${n} postaje` : `${n} postaj`,
+      minutes: (n: number) => `≈ ${n} min`,
+      start: "Začni sprehod",
+      coverNote: "Sprehodi skupaj pokrivajo vseh 20 zapisov zbirke.",
+      completed: "Zaključen",
+      completedProgress: (done: number, total: number) =>
+        `Zaključeni sprehodi: ${done} od ${total}`,
+      stopOf: (i: number, n: number) => `Postaja ${i} od ${n}`,
+      progressA11y: (i: number, n: number) =>
+        `Napredek sprehoda: postaja ${i} od ${n}.`,
+      next: "Naslednja postaja",
+      prev: "Prejšnja postaja",
+      finish: "Zaključi sprehod",
+      curatorNote: "Kuratorska opomba",
+      stopsList: "Postaje",
+      openStop: (n: number) => `Odpri postajo ${n}`,
+    },
+    school: {
+      title: "Za šole in učitelje",
+      kicker: "Muzej kot učni vir",
+      intro:
+        "Muzej je brezplačen, dvojezičen in deluje v vsakem brskalniku — na šolskem računalniku, tablici ali projektorju. Vsa vsebina je dokumentirana, zato je primerna tudi za učenje dela z viri.",
+      audienceTitle: "Za koga je namenjen",
+      audienceText:
+        "Za učence od 6. do 9. razreda osnovne šole in dijake srednjih šol. Veze s kurikulumom: zgodovina (Vojna krajina, druga svetovna vojna, samostojnost 1991), geografija (Bela krajina, meja, reka), slovenščina (narečje, ustna zgodovina), državljanska vzgoja (preverjanje trditev v virih) in etnologija (hiša, prazniki, tkalstvo).",
+      activitiesTitle: "Tri pripravljene dejavnosti",
+      activities: [
+        {
+          title: "1 · Muzejska uganka",
+          text: "Deset vprašanj, povezanih z zapisi zbirke (približno 15 minut). Vsak odgovor je mogoče preveriti v samem zapisu — učenci se navadijo, da trditev pogledajo v vir.",
+        },
+        {
+          title: "2 · Voden sprehod",
+          text: "Učenci izberejo enega od štirih sprehodov in ga prehodijo do konca. Ob vsaki postaji poslušajo avdio vodnik in zapišejo eno dejstvo v delovni list.",
+        },
+        {
+          title: "3 · Delo z viri",
+          text: "Pogovor o lestvici zanesljivosti: zakaj ima nekaj oznako »preverjeno«, drugo »izročilo«? Učenci poiščejo po en primer vsake oznake v zbirki.",
+        },
+      ],
+      worksheetTitle: "Delovni list (za tisk)",
+      worksheetText:
+        "Natisnjiv delovni list z nalogami, ki učence vodijo skozi zbirko, karto in register virov. Oblikovan za A4 in eno šolsko uro.",
+      worksheetButton: "Natisni delovni list",
+      honestNote:
+        "Ta muzej je digitalen — fizičnih vodenih ogledov ne ponuja. Za srečanje z izvirniki priporočamo Dolenjski muzej Novo mesto, Slovenski etnografski muzej in Belokranjski muzej Metlika.",
+      worksheet: {
+        docTitle: "Delovni list — Muzej vasi Griblje",
+        nameField: "Ime in priimek",
+        classField: "Razred",
+        dateField: "Datum",
+        intro:
+          "Odprite Muzej vasi Griblje in rešite naloge. Pri vsaki nalogi poiščite ustrezen zapis v zbirki.",
+        tasksTitle: "Naloge",
+        tasks: [
+          "V katerem letu je vas Griblje prvič omenjena v pisnih virih? V katerem stoletju je bilo to?",
+          "Kako se imenuje reka ob vasi? Kako se imenuje mlinarski jez, ki so ga mlinarji zgradili čez njo?",
+          "Kdo je bil Niko Županič in iz katere vasi je bil?",
+          "Kaj se je zgodilo nad Gribljami marca 1945? Kdo je odšel z letali?",
+          "Poiščite zemljevid muzeja. Vpišite tri kraje s karte, ki so najbližje vasi.",
+          "Poiščite po en zapis z oznako »preverjeno« in z oznako »izročilo«. V čem je razlika med njima?",
+        ],
+        openTitle: "Za razmislek",
+        openQuestion:
+          "Kateri zapis v muzeju se ti zdi najbolj zanimiv? Zakaj? Napiši tri stavke.",
+        thanks: "Hvala za obisk muzeja.",
+        footer: "Muzej vasi Griblje · vsebina pod licenco CC BY-SA 4.0",
+      },
     },
     loading: "Nalagam zbirko …",
     error: "Zbirke trenutno ni mogoče naložiti. Poskusite osvežiti stran.",
@@ -488,6 +574,15 @@ export const ui = {
       openDataText:
         "The entire collection (records, sources, events, stories) is publicly available through a JSON interface under CC BY-SA 4.0 — the same openness principle practised by leading world museums.",
       openDataHow: "Usage example",
+      numbersTitle: "The museum in numbers",
+      numbers: {
+        sources: "documented sources",
+        mapPoints: "map points",
+        walks: "museum walks",
+        quizQuestions: "quiz questions",
+        languages: "content languages",
+        endpoints: "open API endpoints",
+      },
       sourcesTitle: "Source register",
       sourcesText: "The sources referenced by the collection, with licences.",
       colophonTitle: "Colophon",
@@ -540,6 +635,82 @@ export const ui = {
       copyLink: "Copy a link to this record",
       copied: "Link copied",
       copyFailed: "Copy failed",
+      copyCitation: "Copy citation",
+      citationCopied: "Citation copied",
+      accessed: "accessed",
+    },
+    walks: {
+      sectionTitle: "Museum walks",
+      sectionSub:
+        "Four curated walks through the collection — modelled on the guided tours of the Norwegian Museum of Cultural History. Each stop opens a record with a curator's note; leave a walk at any time.",
+      stops: (n: number) => (n === 1 ? "1 stop" : `${n} stops`),
+      minutes: (n: number) => `≈ ${n} min`,
+      start: "Start the walk",
+      coverNote: "Together the walks cover all 20 records of the collection.",
+      completed: "Completed",
+      completedProgress: (done: number, total: number) =>
+        `Completed walks: ${done} of ${total}`,
+      stopOf: (i: number, n: number) => `Stop ${i} of ${n}`,
+      progressA11y: (i: number, n: number) =>
+        `Walk progress: stop ${i} of ${n}.`,
+      next: "Next stop",
+      prev: "Previous stop",
+      finish: "Finish the walk",
+      curatorNote: "Curator's note",
+      stopsList: "Stops",
+      openStop: (n: number) => `Open stop ${n}`,
+    },
+    school: {
+      title: "For schools and teachers",
+      kicker: "The museum as a teaching resource",
+      intro:
+        "The museum is free, bilingual and works in any browser — on a school computer, tablet or projector. Everything is documented, which makes it suitable for teaching source literacy.",
+      audienceTitle: "Who it is for",
+      audienceText:
+        "For pupils in grades 6–9 of primary school and secondary-school students. Curriculum links: history (the Military Frontier, the Second World War, independence in 1991), geography (Bela krajina, the border, the river), Slovene (dialect, oral history), civic education (checking claims against sources) and ethnology (the house, festivals, weaving).",
+      activitiesTitle: "Three ready-made activities",
+      activities: [
+        {
+          title: "1 · The museum quiz",
+          text: "Ten questions tied to records in the collection (about 15 minutes). Every answer can be verified in the record itself — pupils practise checking claims against sources.",
+        },
+        {
+          title: "2 · A guided walk",
+          text: "Pupils choose one of the four walks and follow it to the end. At each stop they listen to the audio guide and write one fact into the worksheet.",
+        },
+        {
+          title: "3 · Working with sources",
+          text: "A discussion about the reliability scale: why is one thing marked “documented” and another “tradition”? Pupils find one example of each mark in the collection.",
+        },
+      ],
+      worksheetTitle: "Worksheet (printable)",
+      worksheetText:
+        "A printable worksheet with tasks that lead pupils through the collection, the map and the source register. Designed for A4 and one school lesson.",
+      worksheetButton: "Print the worksheet",
+      honestNote:
+        "This museum is digital — it does not offer physical guided tours. To meet the originals, we recommend the Dolenjski Museum Novo mesto, the Slovene Ethnographic Museum and the Bela krajina Museum Metlika.",
+      worksheet: {
+        docTitle: "Worksheet — Griblje Village Museum",
+        nameField: "Name",
+        classField: "Class",
+        dateField: "Date",
+        intro:
+          "Open the Griblje Village Museum and complete the tasks. For each task, find the matching record in the collection.",
+        tasksTitle: "Tasks",
+        tasks: [
+          "In which year is Griblje first mentioned in written sources? In which century was that?",
+          "What is the river by the village called? What is the millers' weir built across it called?",
+          "Who was Niko Županič and which village was he from?",
+          "What happened above Griblje in March 1945? Who left on the aircraft?",
+          "Find the museum map. Write down three places on the map closest to the village.",
+          "Find one record marked “documented” and one marked “tradition”. What is the difference between them?",
+        ],
+        openTitle: "To think about",
+        openQuestion:
+          "Which record in the museum do you find most interesting? Why? Write three sentences.",
+        thanks: "Thank you for visiting the museum.",
+        footer: "Griblje Village Museum · content under CC BY-SA 4.0",
+      },
     },
     loading: "Loading the collection …",
     error: "The collection cannot be loaded right now. Try refreshing the page.",

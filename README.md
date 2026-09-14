@@ -23,6 +23,15 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
 
 - 🖼️ **Zbirka** — 20 razstav z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
+- 🚶 **Muzejski sprehodi** — štirje kurirani tematski sprehodi skozi celotno zbirko
+  (po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
+  opombo, napredkom in navigacijo; zaključeni sprehodi se shranijo lokalno; deljiva
+  globoka povezava `/?walk=<id>&stop=<n>`
+- 🎓 **Za šole in učitelje** — šolska ponudba po norveškem modelu *skoletjeneste*:
+  tri pripravljene dejavnosti (uganka, voden sprehod, delo z viri) in natisljiv
+  delovni list za A4
+- 🧾 **Citiranje** — oblikovan citat zapisa z datumom dostopa in gumbom
+  »Kopiraj citat« (vzorec DigitaltMuseum *Siter dette objektet*)
 - 🗺️ **Zemljevid** — Leaflet + OSM, 11 točk (preverjene koordinate + približne, ločene
   vizualno in z oznako »približno«)
 - 📖 **Zgodbe** — pripovedi z iskrenim pozivom za pričevanja skupnosti

@@ -9,16 +9,21 @@ import {
   ExternalLink,
   FileText,
   Globe,
+  GraduationCap,
   HeartHandshake,
   Map as MapIcon,
   Mic,
+  Printer,
   Quote,
   Target,
 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
+import { WALKS } from "@/lib/walks";
+import { printWorksheet } from "@/lib/worksheet";
 import type { ExhibitDTO, SourceType } from "@/lib/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { EvidenceBadge } from "@/components/museum/evidence-badge";
 
 const SOURCE_ICON: Record<SourceType, React.ElementType> = {
@@ -38,6 +43,11 @@ const EVIDENCE_ORDER = [
   "UNVERIFIED",
   "TO_COLLECT",
 ] as const;
+
+// Število vprašanj v muzejski uganki (museum-quiz.tsx) in število odprtih
+// API-jev muzeja — vpisani tukaj, ker sta produkta drugega sklada kode.
+const QUIZ_QUESTION_COUNT = 10;
+const API_ENDPOINT_COUNT = 7;
 
 export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
   const { t, lang } = useLang();
@@ -92,6 +102,38 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
         </div>
       </section>
 
+      {/* MUZEJ V ŠTEVILKAH */}
+      <section aria-labelledby="o-stevila" className="mt-14">
+        <h2 id="o-stevila" className="font-display text-2xl font-semibold sm:text-3xl">
+          {t.about.numbersTitle}
+        </h2>
+        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          {[
+            { value: allSources.length, label: t.about.numbers.sources },
+            {
+              value: exhibits.filter((ex) => ex.lat != null && ex.lng != null).length,
+              label: t.about.numbers.mapPoints,
+            },
+            { value: WALKS.length, label: t.about.numbers.walks },
+            { value: QUIZ_QUESTION_COUNT, label: t.about.numbers.quizQuestions },
+            { value: 2, label: t.about.numbers.languages },
+            { value: API_ENDPOINT_COUNT, label: t.about.numbers.endpoints },
+          ].map((item) => (
+            <div
+              key={item.label}
+              className="rounded-xl border border-border/70 bg-card p-4 text-center"
+            >
+              <p className="font-display text-3xl font-semibold text-primary">
+                {item.value}
+              </p>
+              <p className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                {item.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* LESTVICA ZANESLJIVOSTI */}
       <section aria-labelledby="o-lestvica" className="mt-14">
         <h2 id="o-lestvica" className="font-display text-2xl font-semibold sm:text-3xl">
@@ -111,6 +153,83 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* ZA ŠOLE IN UČITELJE */}
+      <section aria-labelledby="o-solo" className="mt-14">
+        <div className="rounded-xl border border-primary/25 bg-primary/5 p-6 sm:p-8">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <GraduationCap className="h-6 w-6" aria-hidden="true" />
+            </span>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+                {t.school.kicker}
+              </p>
+              <h2
+                id="o-solo"
+                className="font-display text-2xl font-semibold sm:text-3xl"
+              >
+                {t.school.title}
+              </h2>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-foreground/85">
+            {t.school.intro}
+          </p>
+
+          <div className="mt-6 grid gap-5 lg:grid-cols-2">
+            <div>
+              <h3 className="font-display text-lg font-semibold">
+                {t.school.audienceTitle}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/85">
+                {t.school.audienceText}
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-lg font-semibold">
+                {t.school.worksheetTitle}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/85">
+                {t.school.worksheetText}
+              </p>
+              <Button
+                className="mt-4 min-h-11"
+                onClick={() => printWorksheet(t, lang)}
+              >
+                <Printer className="mr-2 h-4 w-4" aria-hidden="true" />
+                {t.school.worksheetButton}
+              </Button>
+            </div>
+          </div>
+
+          <div className="mt-6">
+            <h3 className="font-display text-lg font-semibold">
+              {t.school.activitiesTitle}
+            </h3>
+            <ul className="mt-3 grid gap-4 md:grid-cols-3">
+              {t.school.activities.map((activity) => (
+                <li
+                  key={activity.title}
+                  className="flex flex-col gap-2 rounded-xl border border-border/70 bg-card p-5"
+                >
+                  <p className="font-display text-base font-semibold text-primary">
+                    {activity.title}
+                  </p>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {activity.text}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <p className="mt-6 border-t border-primary/20 pt-4 text-sm italic text-muted-foreground">
+            {t.school.honestNote}
+          </p>
+        </div>
       </section>
 
       {/* DOSTOPNOST */}

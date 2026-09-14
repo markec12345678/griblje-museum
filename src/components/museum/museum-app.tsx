@@ -14,6 +14,9 @@ import { AboutView } from "@/components/museum/about-view";
 import { SearchDialog } from "@/components/museum/search-dialog";
 import { useLang } from "@/lib/i18n";
 import { markVisited } from "@/lib/visit-tracker";
+import { markWalkCompleted } from "@/lib/walk-tracker";
+import { getWalk, resolveWalkStops, type Walk } from "@/lib/walks";
+import type { WalkContext } from "@/components/museum/walk-ui";
 import { useExhibits, useEvents, useStories } from "@/hooks/use-museum";
 import { ExhibitDialog } from "@/components/museum/exhibit-dialog";
 import type { ExhibitDTO } from "@/lib/types";
@@ -22,11 +25,29 @@ import { Button } from "@/components/ui/button";
 import { RotateCcw } from "lucide-react";
 
 export function MuseumApp() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [view, setView] = React.useState<MuseumView>("domov");
   const [selectedExhibit, setSelectedExhibit] = React.useState<ExhibitDTO | null>(null);
   const [searchOpen, setSearchOpen] = React.useState(false);
   const reduceMotion = useReducedMotion();
+
+  // --- Muzejski sprehodi -----------------------------------------------
+  // Aktivni sprehod: kurirane postaje (razrešene na zapise iz zbirke)
+  // + trenutni indeks. Sprehod živi toliko časa, kolikor je odprt dialog
+  // postaje; ob zaprtju se konča, napredek zbiralca pa ostane (vsaka
+  // odprta postaja se šteje kot obisk).
+  type ResolvedStop = { exhibit: ExhibitDTO; noteSi: string; noteEn: string };
+  const [activeWalk, setActiveWalk] = React.useState<{
+    walk: Walk;
+    stops: ResolvedStop[];
+    stopIndex: number;
+  } | null>(null);
+
+  // Globoka povezava ?walk=<id>&stop=<n> — čaka na zbirko s strežnika.
+  const [pendingWalk, setPendingWalk] = React.useState<{
+    walkId: string;
+    stopIndex: number;
+  } | null>(null);
 
   const exhibitsQuery = useExhibits();
   const eventsQuery = useEvents();
@@ -42,6 +63,11 @@ export function MuseumApp() {
 
   React.useEffect(() => {
     initialDeepLink.current = new URLSearchParams(window.location.search).get("exhibit");
+    const walkId = new URLSearchParams(window.location.search).get("walk");
+    if (walkId) {
+      const stop = Number(new URLSearchParams(window.location.search).get("stop") ?? "1");
+      setPendingWalk({ walkId, stopIndex: Math.max(0, stop - 1) });
+    }
     const hash = window.location.hash.replace(/^#/, "");
     if ((VIEW_ORDER as string[]).includes(hash) && hash !== "domov") {
       setView(hash as MuseumView);
@@ -130,6 +156,7 @@ export function MuseumApp() {
 
   const showOnMap = React.useCallback((exhibit: ExhibitDTO) => {
     setSelectedExhibit(null);
+    setActiveWalk(null);
     setView("karta");
     window.scrollTo({ top: 0, behavior: "smooth" });
     window.setTimeout(() => {
@@ -138,6 +165,72 @@ export function MuseumApp() {
       );
     }, 150);
   }, []);
+
+  // --- Sprehodi: start, navigacija, zaključek -------------------------
+  const startWalk = React.useCallback(
+    (walkId: string, stopIndex: number, exhibits: ExhibitDTO[]) => {
+      const walk = getWalk(walkId);
+      if (!walk) return;
+      const stops = resolveWalkStops(walk, exhibits);
+      if (stops.length === 0) return;
+      const index = Math.min(Math.max(stopIndex, 0), stops.length - 1);
+      setActiveWalk({ walk, stops, stopIndex: index });
+      setSelectedExhibit(stops[index].exhibit);
+      markVisited(stops[index].exhibit.slug);
+    },
+    []
+  );
+
+  const goToWalkStop = React.useCallback(
+    (stopIndex: number) => {
+      if (!activeWalk) return;
+      if (stopIndex < 0 || stopIndex >= activeWalk.stops.length) return;
+      const stop = activeWalk.stops[stopIndex];
+      setActiveWalk({ ...activeWalk, stopIndex });
+      setSelectedExhibit(stop.exhibit);
+      markVisited(stop.exhibit.slug);
+    },
+    [activeWalk]
+  );
+
+  // Zaostali globoki povezavi sprehoda ustreže, ko zbirka prispe.
+  React.useEffect(() => {
+    if (!pendingWalk || !exhibitsQuery.data) return;
+    const target = pendingWalk;
+    setPendingWalk(null);
+    startWalk(target.walkId, target.stopIndex, exhibitsQuery.data);
+  }, [pendingWalk, exhibitsQuery.data, startWalk]);
+
+  const finishWalk = React.useCallback(() => {
+    if (!activeWalk) return;
+    // Stranski učinek (localStorage) mora teči zunaj state updaterja,
+    // da updater ostane čist (React ga lahko pokliče dvakrat v StrictMode).
+    markWalkCompleted(activeWalk.walk.id);
+    setActiveWalk(null);
+    setSelectedExhibit(null);
+  }, [activeWalk]);
+
+  const closeExhibit = React.useCallback(() => {
+    setSelectedExhibit(null);
+    setActiveWalk(null);
+  }, []);
+
+  // Kontekst sprehoda za dialog (null, ko ni aktivnega sprehoda
+  // ali ko odprt zapis ni njegova trenutna postaja).
+  const walkContext: WalkContext | null = (() => {
+    if (!activeWalk || !selectedExhibit) return null;
+    const stop = activeWalk.stops[activeWalk.stopIndex];
+    if (!stop || stop.exhibit.slug !== selectedExhibit.slug) return null;
+    return {
+      walk: activeWalk.walk,
+      stopIndex: activeWalk.stopIndex,
+      totalStops: activeWalk.stops.length,
+      stopNote: lang === "sl" ? stop.noteSi : stop.noteEn,
+      onPrevStop: () => goToWalkStop(activeWalk.stopIndex - 1),
+      onNextStop: () => goToWalkStop(activeWalk.stopIndex + 1),
+      onFinish: finishWalk,
+    };
+  })();
 
   const loading =
     exhibitsQuery.isLoading || eventsQuery.isLoading || storiesQuery.isLoading;
@@ -151,6 +244,9 @@ export function MuseumApp() {
         events={eventsQuery.data ?? []}
         onNavigate={navigate}
         onOpenExhibit={openExhibit}
+        onStartWalk={(walkId, stopIndex) =>
+          startWalk(walkId, stopIndex, exhibitsQuery.data ?? [])
+        }
       />
     ),
     zbirka: (
@@ -237,8 +333,9 @@ export function MuseumApp() {
 
       <ExhibitDialog
         exhibit={selectedExhibit}
-        onClose={() => setSelectedExhibit(null)}
+        onClose={closeExhibit}
         onShowOnMap={showOnMap}
+        walkContext={walkContext}
       />
 
       <SearchDialog

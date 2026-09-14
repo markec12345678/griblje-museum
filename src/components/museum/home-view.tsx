@@ -8,6 +8,7 @@ import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
 import { MuseumQuiz } from "@/components/museum/museum-quiz";
+import { WalksSection } from "@/components/museum/walks-section";
 import type { ExhibitDTO, MuseumEventDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
 import { Button } from "@/components/ui/button";
@@ -20,11 +21,13 @@ export function HomeView({
   events,
   onNavigate,
   onOpenExhibit,
+  onStartWalk,
 }: {
   exhibits: ExhibitDTO[];
   events: MuseumEventDTO[];
   onNavigate: (view: MuseumView) => void;
   onOpenExhibit: (exhibit: ExhibitDTO, focusView?: MuseumView) => void;
+  onStartWalk: (walkId: string, stopIndex: number) => void;
 }) {
   const { t, lang } = useLang();
   const reduceMotion = useReducedMotion();
@@ -246,6 +249,9 @@ export function HomeView({
           <CollectorProgress total={exhibits.length} />
         </div>
       </section>
+
+      {/* MUZEJSKI SPREHODI */}
+      <WalksSection exhibits={exhibits} onStartWalk={onStartWalk} />
 
       {/* TEASER DOGODKOV */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

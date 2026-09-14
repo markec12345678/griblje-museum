@@ -237,3 +237,28 @@ Stage Summary:
 - Zbirka: 14 → 20 zapisov, 25 → 56 virov; vse nove vsebine iz preverjenih spletnih virov (Wikipedija, RTV SLO, Delo, SEM, slovenska-biografija, kp-kolpa.si …), slike izključno avtentične z Commons (javna last / CC)
 - E2E (agent-browser + VLM): domov z novim izpostavljenim Županičem 9/10; zbirka vseh 6 novih kartic s krediti; dialog Županič (Vavpotičev portret + kredit + viri + avdio) brez napak; karta po popravku geografsko razpršena (gruča Griblje + Črnomelj W, Otok NE, Žuniči S, Bojanci SW) 9/10; časovnica novi mejniki 1876/1944; kviz 10/10 (vsa 4 nova vprašanja); zbiralec 5/20; avdio vodnik SLO+EN 200; mobilna 375 px brez prekoračitve, noga pravilno potisnjena; konzola 0 napak
 - bun run lint: 0 napak; dev.log brez napak; IIIF collection 20 manifestov; iskanje (županič → 3, uskoki → 1) deluje
+
+---
+Task ID: 10
+Agent: Main agent (Z.ai Code)
+Task: Nadgradnja po najboljšem norveškem muzeju — muzejski sprehodi (Norsk Folkemuseum vzorec), šolska ponudba (skoletjeneste), citiranje (DigitaltMuseum) + push na GitHub
+
+Work Log:
+- Pushal zaostali commit 3e9dae4 na GitHub (explicit token URL, žeton ni ostal v .git/config)
+- Analiza vrzeli po benchmarku (Nasjonalmuseet 2025 / Norsk Folkemuseum / DigitaltMuseum): manjkali so vodeni ogledi, šolska ponudba in izvoz citatov
+- NOVO src/lib/walks.ts: 4 kurirani sprehodi (Voda je življenje · Vojna in svoboda · Kruh, platno in vino · Vas in njeni ljudje) — vsak z dvojezično kuratorsko opombo na postaji; skupaj pokrijejo VSEH 20 zapisov zbirke, vsak natanko enkrat
+- NOVO src/lib/walk-tracker.ts: zaključeni sprehodi v localStorage (mvg-walks) + dogodek museum:walks-changed + hook useCompletedWalks (vzorec visit-tracker)
+- NOVO src/components/museum/walk-ui.tsx: WalkTopBar (zelena vrstica: stopinje, naslov, Postaja i od n, tanka črta napredka, aria-live), WalkStopNote (kuratorska opomba s kompasom, akcentna barva), WalkNav (Prejšnja/Naslednja/Zaključi s kljukico)
+- NOVO src/components/museum/walks-section.tsx: odsek na domači strani — 4 kartice z naslovnico prve postaje, številom postaj, oceno trajanja, gumbi posameznih postaj (za učitelje), napredkom Zaključeni sprehodi X/4 (Progress)
+- exhibit-dialog.tsx: nov prop walkContext (vrstica zgoraj + opomba + navigacija spodaj, le v načinu sprehoda); CITAT POPOVLJEN — pravi URL (?exhibit=<slug>), datum dostopa, gumb »Kopiraj citat« poleg »Kopiraj povezavo« (vzorec Siter dette objektet)
+- museum-app.tsx: stanje activeWalk {walk, stops, stopIndex} + pendingWalk; startWalk/goToWalkStop/finishWalk/closeExhibit; globoka povezava ?walk=<id>&stop=<n> čaka na zbirko; URL ?exhibit= se osvežuje tudi med sprehodom
+- home-view.tsx: WalksSection med kvizom in dogodki; about-view.tsx: MUZEJ V ŠTEVILKAH (56 virov, 11 točk, 4 sprehodi, 10 vprašanj, 2 jezika, 7 API-jev) + ŠOLSKI ODSEK (občinstvo, 3 dejavnosti, poštena opomba o digitalnem muzeju)
+- NOVO src/lib/worksheet.ts: tisk delovnega lista prek skritega iframe-a (A4, serif, črtice za odgovore, polja Ime/Razred/Datum, 6 nalog + Za razmislek, noga z licenco) — brez globalnih CSS sprememb
+- i18n: nova slovarja walks + school (+ delovni list) v SLO in EN, share razširjen s citatom, about z numbers
+- README: nove funkcije (sprehodi, šole, citiranje)
+- POPRAVEK med E2E: finishWalk je po prestrukturiranju activeWalk bral neobstoječi current.walkId → localStorage [null]; prestrukturiral na markWalkCompleted(activeWalk.walk.id) izven state updaterja (čistost) + obramba v walk-tracker; react-hooks/immutability in react-hooks/refs pravili izpravljena (brez ref pisalnih v efekter, brez ref branj med renderom)
+
+Stage Summary:
+- E2E (agent-browser + VLM): odsek sprehodov 8/10 (estetika muzejska, kartice s slikami/postajami/časom); dialog v načinu sprehoda — vrstica Postaja 1 od 4 + napredek + kuratorska opomba; navigacija 1→2→4, Prejšnja onemogočena na prvi, Zaključi s kljukico na zadnji; zaključek → mvg-walks ["voda-je-zivljenje"] + značka Zaključen + Zaključeni sprehodi: 1 od 4; globoka povezava /?walk=vojna-in-svoboda&stop=3 10/10 (Postaja 3 od 5, letališče Otok); citat s pravim URL-jem in datumom dostopa + povratna informacija Citat kopiran; Muzej v številkah 6 pravilnih kartic; šolski odsek popoln; delovni list 9/10 (6 nalog, 3 polja, noga, A4); EN brez neprevedenih nizov; mobilna 375 px brez prekoračitve, dialog 9/10, noga 720=720; temni način brez kontrastnih težav; navadni dialog brez vrstice sprehoda (regresija ok)
+- bun run lint: 0 napak; konzola po svežem nalaganju: 0 napak/0 opozoril; dev.log čist (samo prehodna Fast Refresh opozorila med razvojem)
+- Muzej zdaj pokriva še tri dimenzije norveškega standarda: vodene oglede (digitalni dvojnik Norsk Folkemuseum), izobraževalno misijo (skoletjeneste z natisljivim delovnim listom) in akademsko citabilnost (DigitaltMuseum citat)
