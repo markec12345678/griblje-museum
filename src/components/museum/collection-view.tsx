@@ -203,7 +203,7 @@ export function CollectionView({
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={exhibit.image ?? "/images/authentic/hero-kolpa.jpg"}
+                  src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
                   alt={es.title(exhibit)}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

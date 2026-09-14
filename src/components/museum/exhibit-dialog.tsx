@@ -62,7 +62,7 @@ export function ExhibitDialog({
             {/* Slika zapisa */}
             <div className="relative aspect-[16/9] w-full sm:aspect-[2/1]">
               <Image
-                src={exhibit.image ?? "/images/authentic/hero-kolpa.jpg"}
+                src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
                 alt={es.title(exhibit)}
                 fill
                 sizes="(max-width: 768px) 100vw, 768px"

@@ -21,7 +21,7 @@ const RIGHTS = "http://creativecommons.org/licenses/by-sa/4.0/";
 
 /** Dejanske dimenzije avtentičnih fotografij v /public/images/authentic. */
 const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
-  "/images/authentic/hero-kolpa.jpg": { width: 1600, height: 800 },
+  "/images/authentic/hero-griblje.jpg": { width: 1600, height: 800 },
   "/images/authentic/griblje-vas.jpg": { width: 1600, height: 1071 },
   "/images/authentic/sveti-vid.jpg": { width: 1048, height: 1600 },
   "/images/authentic/kolpa.jpg": { width: 1600, height: 1200 },
@@ -117,7 +117,7 @@ function buildMetadata(exhibit: ExhibitRow) {
 
 /** Manifest v zbirki (skrajšani vnos v Collection.items). */
 function buildManifestReference(origin: string, exhibit: ExhibitRow) {
-  const image = exhibit.image ?? "/images/authentic/hero-kolpa.jpg";
+  const image = exhibit.image ?? "/images/authentic/hero-griblje.jpg";
   return {
     id: `${origin}/api/iiif?manifest=${exhibit.slug}`,
     type: "Manifest",
@@ -140,7 +140,7 @@ function buildManifestReference(origin: string, exhibit: ExhibitRow) {
 /** Polni Manifest z vsaj enim Canvasom (IIIF Presentation 3.0). */
 function buildFullManifest(origin: string, exhibit: ExhibitRow) {
   const manifestId = `${origin}/api/iiif?manifest=${exhibit.slug}`;
-  const image = exhibit.image ?? "/images/authentic/hero-kolpa.jpg";
+  const image = exhibit.image ?? "/images/authentic/hero-griblje.jpg";
   const { width, height } = imageDimensions(image);
   const canvasId = `${manifestId}&canvas=0`;
   const pageId = `${manifestId}&page=0`;

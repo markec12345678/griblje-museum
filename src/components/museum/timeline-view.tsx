@@ -149,7 +149,7 @@ export function TimelineView({
                         >
                           <div className="relative h-40 w-full shrink-0 overflow-hidden sm:h-auto sm:w-44 sm:self-stretch lg:w-48">
                             <Image
-                              src={exhibit.image ?? "/images/authentic/hero-kolpa.jpg"}
+                              src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
                               alt={es.title(exhibit)}
                               fill
                               sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 300px"
@@ -223,7 +223,7 @@ export function TimelineView({
             >
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
-                  src={exhibit.image ?? "/images/authentic/hero-kolpa.jpg"}
+                  src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
                   alt={es.title(exhibit)}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

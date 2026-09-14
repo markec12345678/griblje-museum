@@ -176,3 +176,23 @@ Stage Summary:
 - Iskalni API: q=crnomelj → 3 zadetki, q=Kolpa → 7, q=1945 → razstava+zgodba+dogodek, q=x → 400; sitemap.xml 200, robots.txt 200
 - bun run lint: 0 napak; dev.log brez napak
 - Muzej zdaj pokriva vse razsežnosti norveškega benchmarka: dvojezičnost, WCAG, odprti podatki (JSON-LD + IIIF + search), dogodki, poštena provenienca, skupnostne zgodbe — in zdaj še kronološko pripoved (časovnica) ter enotno iskanje (DigitaltMuseum vzor)
+
+---
+Task ID: 7
+Agent: Main agent (Z.ai Code)
+Task: Zamenjava heroja — uporabnik je ugotovil, da naslovna fotografija (dolina Kolpe s Sodevske stene) ni Griblje; zamenjava s pravo fotografijo vasi
+
+Work Log:
+- Preveril stanje: hero je bil hero-kolpa.jpg (Kolpa dolina, Uroš Novina, pogled s Sodevske stene — ni Griblje)
+- Commons raziskava (API, 14 zadetkov za »Griblje«): kandidata za hero — Griblje, Črnomelj.jpg (Eleassar, 3872×2592, CC BY-SA 3.0) in Pond Griblje.jpg (Alanorlic, 18104×6820, CC BY-SA 4.0)
+- Prenesel oba izvirnika; VLM primerjava: fotografija vasi zmaga — zvonik sv. Vida + rdeče strehe nedvoumno identificirajo Griblje; panorama ribnika je »lahko kjer koli po Sloveniji«
+- Obdelava iz visoke ločljivosti: trije kandidati 2:1 obreza (zgornji/sredinski/spodnji), VLM izbral sredinskega (zvonik z zračnim zamikom, horizont po pravilu tretjin, mirna livada levo za besedilo); nežni popravek (autocontrast 1 %, saturacija 1.07, kontrast 1.04), 1600×800, 224 KB → public/images/authentic/hero-griblje.jpg
+- VLM kontrola končnega heroja: zvonik viden z zamikom, ostro, naravne barve, brez artefaktov — sprejemljivo
+- Zamenjal vse reference (9 mest): home-view.tsx (src + alt »Vas Griblje ob Kolpi s cerkvijo sv. Vida« + kredit »Griblje · foto: Eleassar, Wikimedia Commons, CC BY-SA 3.0« + fallback), exhibit-dialog.tsx, collection-view.tsx, timeline-view.tsx (×2), iiif/route.ts (dims + 2 fallbacka)
+- Vir v registru: opomba Commons vira griblje-vas dopolnjena (»… in naslotna fotografija muzeja«), ponoven seed
+- Izbrisal hero-kolpa.jpg (ni več referenciran; ni bil v registru virov)
+
+Stage Summary:
+- Hero zdaj prikazuje PRavi Griblje: vas z rdečimi strehami in zvonikom sv. Vida (foto Eleassar, CC BY-SA 3.0), kredit viden v spodnjem desnem kotu
+- E2E (agent-browser + VLM): naslovna 9/10 (vas jasno prepoznavna, besedilo berljivo, kredit točen), dialog zapisa (fotka vasi + kredit + viri), mobilna 375 px brez prekoračitve (5545 px višina), IIIF collection 14 + manifest 200, /api/exhibits 200, ni napak v konzoli; »N« v levem spodnjem kotu je Next.js dev indikator, ne napaka
+- bun run lint: 0 napak; dev.log brez napak; baza: 14 zapisov, 25 virov, 5 dogodkov, 4 zgodbe

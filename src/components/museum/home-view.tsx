@@ -47,11 +47,11 @@ export function HomeView({
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/authentic/hero-kolpa.jpg"
+            src="/images/authentic/hero-griblje.jpg"
             alt={pick(
               lang,
-              "Dolina Kolpe v Beli krajini, pogled s Sodevske stene (fotografija)",
-              "The Kolpa valley in Bela krajina, view from Sodevska stena (photograph)"
+              "Vas Griblje ob Kolpi s cerkvijo sv. Vida (fotografija)",
+              "The village of Griblje on the Kolpa with the church of St. Vitus (photograph)"
             )}
             fill
             priority
@@ -63,8 +63,8 @@ export function HomeView({
         <p className="absolute bottom-3 right-4 z-10 max-w-[70%] text-right text-[11px] leading-snug text-foreground/60">
           {pick(
             lang,
-            "Dolina Kolpe · foto: Uroš Novina, Wikimedia Commons, CC BY 2.0",
-            "Kolpa valley · photo: Uroš Novina, Wikimedia Commons, CC BY 2.0"
+            "Griblje · foto: Eleassar, Wikimedia Commons, CC BY-SA 3.0",
+            "Griblje · photo: Eleassar, Wikimedia Commons, CC BY-SA 3.0"
           )}
         </p>
 
@@ -154,7 +154,7 @@ export function HomeView({
             >
               <div className="relative aspect-[16/10]">
                 <Image
-                  src={exhibit.image ?? "/images/authentic/hero-kolpa.jpg"}
+                  src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
                   alt={es.title(exhibit)}
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
