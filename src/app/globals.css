@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -209,6 +210,92 @@ select:focus-visible {
   }
 }
 
+/* ============================================================
+   Dostopnostna plošča (vzorec vodilnih muzejev — lastna, brez
+   zunanjih prekrivnih gradnikov). Razrede nastavlja A11yProvider
+   na <html> ročno izbrane možnosti obiskovalca.
+   ============================================================ */
+
+/* Večja osnovna pisava — rem lestvica rahlo zraste celo stran. */
+html.a11y-large {
+  font-size: 112.5%;
+}
+
+/* Močnejši kontrast — prepis barvnih spremenljivk (WCAG AA+). */
+html.a11y-contrast {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.19 0.02 68);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.19 0.02 68);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.19 0.02 68);
+  --primary: oklch(0.34 0.09 155);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.94 0.01 92);
+  --secondary-foreground: oklch(0.24 0.025 75);
+  --muted: oklch(0.95 0.008 92);
+  --muted-foreground: oklch(0.34 0.02 78);
+  --accent: oklch(0.5 0.14 50);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.46 0.18 27);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.55 0.02 85);
+  --input: oklch(0.55 0.02 85);
+  --ring: oklch(0.34 0.09 155);
+}
+
+html.dark.a11y-contrast {
+  --background: oklch(0.14 0.01 150);
+  --foreground: oklch(0.96 0.008 90);
+  --card: oklch(0.17 0.012 150);
+  --card-foreground: oklch(0.96 0.008 90);
+  --popover: oklch(0.17 0.012 150);
+  --popover-foreground: oklch(0.96 0.008 90);
+  --primary: oklch(0.82 0.1 152);
+  --primary-foreground: oklch(0.15 0.02 150);
+  --secondary: oklch(0.24 0.015 150);
+  --secondary-foreground: oklch(0.96 0.008 90);
+  --muted: oklch(0.23 0.015 150);
+  --muted-foreground: oklch(0.82 0.015 92);
+  --accent: oklch(0.74 0.13 50);
+  --accent-foreground: oklch(0.14 0.01 150);
+  --destructive: oklch(0.7 0.17 25);
+  --destructive-foreground: oklch(0.13 0.01 150);
+  --border: oklch(0.52 0.02 145);
+  --input: oklch(0.52 0.02 145);
+  --ring: oklch(0.82 0.1 152);
+}
+
+/* Pisava za ljudi z disleksijo — Atkinson Hyperlegible (Braille
+   Institute, odprta licenca) + večji razmiki med črkami in besedami. */
+html.a11y-dyslexic body {
+  font-family: "Atkinson Hyperlegible", var(--font-geist-sans), system-ui,
+    sans-serif;
+  letter-spacing: 0.015em;
+  word-spacing: 0.14em;
+}
+html.a11y-dyslexic p,
+html.a11y-dyslexic li {
+  line-height: 1.8;
+}
+
+/* Mirni gibi — enak učinek kot prefers-reduced-motion, a ročno. */
+html.a11y-calm *,
+html.a11y-calm *::before,
+html.a11y-calm *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Vedno podčrtane povezave. */
+html.a11y-links a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
 /* Leafet zemljevid — prilagoditev barv */
 .leaflet-container {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
@@ -227,6 +314,42 @@ select:focus-visible {
 @keyframes eq {
   0%, 100% { height: 4px; opacity: 0.55; }
   50% { height: 14px; opacity: 1; }
+}
+
+/* Počasno gledanje — zelo počasno približevanje slike (60 s cikel) */
+@keyframes slow-zoom {
+  from { transform: scale(1) translateX(0); }
+  to { transform: scale(1.09) translateX(1.5%); }
+}
+.slow-zoom {
+  animation: slow-zoom 60s ease-in-out infinite alternate;
+}
+
+/* Razglednica — obrat s čistim CSS-3D (izkušnja 4. sklopa: framer-motion
+   ne aplicira rotateY na elementih s preserve-3d) */
+.postcard-3d { perspective: 1400px; }
+.postcard-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.postcard-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.postcard-back { transform: rotateY(180deg); }
+
+/* Tisk razglednice — prečni A5, prepolovljen in zložen */
+.postcard-print-root { display: none; }
+.postcard-print-sheet { display: flex; gap: 6mm; }
+.postcard-print-half { position: relative; flex: 1 1 0; aspect-ratio: 3 / 2; }
+@media print {
+  body > *:not(.postcard-print-root) { display: none !important; }
+  .postcard-print-root {
+    display: block !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }
 
 /* Približevalni ogled (OpenSeadragon) — kazalnik premikanja */

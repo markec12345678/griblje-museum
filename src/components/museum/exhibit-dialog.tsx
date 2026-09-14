@@ -12,13 +12,16 @@ import {
   Globe,
   Heart,
   Link2,
+  Mail,
   Map as MapIcon,
   MapPin,
   Mic,
   Network,
+  Puzzle,
   Quote,
   Route,
   Scale,
+  Wind,
   X,
   ZoomIn,
 } from "lucide-react";
@@ -68,6 +71,9 @@ export function ExhibitDialog({
   onShowOnMap,
   onOpenExhibit,
   onOpenTheme,
+  onSlowLooking,
+  onPuzzle,
+  onPostcard,
   walkContext = null,
 }: {
   exhibit: ExhibitDTO | null;
@@ -77,6 +83,12 @@ export function ExhibitDialog({
   onShowOnMap: (exhibit: ExhibitDTO) => void;
   onOpenExhibit: (exhibit: ExhibitDTO) => void;
   onOpenTheme?: (category: ExhibitCategory) => void;
+  /** Počasno gledanje — vodeno razglabljanje tega zapisa. */
+  onSlowLooking?: (exhibit: ExhibitDTO) => void;
+  /** Sestavi sliko — sestavljanka s sliko tega zapisa. */
+  onPuzzle?: (exhibit: ExhibitDTO) => void;
+  /** Pošlji razglednico — e-razglednica s sliko tega zapisa. */
+  onPostcard?: (exhibit: ExhibitDTO) => void;
   /** Aktivni muzejski sprehod — če je zapis odprt kot postaja sprehoda. */
   walkContext?: WalkContext | null;
 }) {
@@ -349,6 +361,45 @@ export function ExhibitDialog({
 
               {/* Kuratorska opomba postaje sprehoda */}
               {walkContext && <WalkStopNote ctx={walkContext} />}
+
+              {/* Izkušnje zapisa — počasno gledanje, sestavljanka, razglednica */}
+              {(onSlowLooking || onPuzzle || onPostcard) && (
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {onSlowLooking && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9 gap-1.5"
+                      onClick={() => onSlowLooking(exhibit)}
+                    >
+                      <Wind className="h-4 w-4" aria-hidden="true" />
+                      <span className="hidden sm:inline">{t.slow.open}</span>
+                    </Button>
+                  )}
+                  {onPuzzle && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9 gap-1.5"
+                      onClick={() => onPuzzle(exhibit)}
+                    >
+                      <Puzzle className="h-4 w-4" aria-hidden="true" />
+                      <span className="hidden sm:inline">{t.puzzle.open}</span>
+                    </Button>
+                  )}
+                  {onPostcard && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9 gap-1.5"
+                      onClick={() => onPostcard(exhibit)}
+                    >
+                      <Mail className="h-4 w-4" aria-hidden="true" />
+                      <span className="hidden sm:inline">{t.postcard.open}</span>
+                    </Button>
+                  )}
+                </div>
+              )}
 
               {/* Avdio vodnik — cel ali v eni minuti (One Minute Wonders) */}
               <div className="mt-5 rounded-lg border border-border/70 bg-muted/40 p-4">
