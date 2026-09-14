@@ -73,6 +73,23 @@ brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi
 oz. na sveži bazi (`prisma/seed.ts` je idempotenten — vsak zagon zbirko
 čisto prepiše iz istih virov).
 
+### Namestitev na Vercel / Deploying to Vercel
+
+Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
+
+- **`DATABASE_URL` ni potrebno nastavljati** — `src/lib/db.ts` sam poišče
+  `db/custom.db` (pre-seedana baza je del skladišča; v paket strežniške
+  funkcije jo vključuje `outputFileTracingIncludes` v `next.config.ts);
+  Prisma odjemalec se zgenerira v `postinstall`.
+- **Avdio vodnik (TTS)**: na Vercelu nastavite env spremenljivko `ZAI_CONFIG`
+  z JSON vsebino `{"baseUrl": "...", "apiKey": "..."}` (enako kot datoteka
+  `.z-ai-config` v razvoju; ključ nikoli ne zaide v skladišče). Brez nje
+  ostali del muzeja deluje normalno, avdio vodnik vrne napako 500.
+- **Deployment protection**: ekipa na Vercelu ima privzeto SSO zaščito
+  *vseh* deploymentov (`all_except_custom_domains`) — produkcijski naslov
+  brez custom domene potem preusmerja na prijavo. V nastavitvah projekta
+  (Protection) izberite *Preview only*, da je produkcija javna.
+
 ### API
 
 | Pot | Opis |
