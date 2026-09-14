@@ -38,6 +38,7 @@ model Exhibit {
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
   sources       Source[]
+  memories      ObjectMemory[]
 
   @@index([category])
   @@index([evidenceStatus])
@@ -86,4 +87,37 @@ model MuseumEvent {
   eventType     String // PRIREDITEV | DELAVNICA | VODENJE
   isExternal    Boolean  @default(false)
   externalUrl   String?
+}
+
+// --- Sodelovanje skupnosti (vzorec: DigitaltMuseum, Tenement Museum) ---
+// Prispevki obiskovalcev. Status:
+//   published — viden vsem (samodejno objavljen čisti besedili brez povezav)
+//   held      — čaka na kurotorski pregled (vsebuje povezavo/e-pošto/oznake)
+// Honeypot polje `website` se ne shranjuje — tiho zavrženo (spam past).
+
+model GuestbookEntry {
+  id        String   @id @default(uuid())
+  name      String // ime ali vzdevek obiskovalca
+  place     String? // kraj, odkod obiskovalec piše
+  message   String // besedilo v spominski knjigi
+  lang      String   @default("sl") // jezik, v katerem obiskovalec piše
+  status    String   @default("published")
+  createdAt DateTime @default(now())
+
+  @@index([status, createdAt])
+}
+
+model ObjectMemory {
+  id        String   @id @default(uuid())
+  exhibitId String
+  exhibit   Exhibit  @relation(fields: [exhibitId], references: [id], onDelete: Cascade)
+  author    String // ime ali vzdevek pripovedovalca
+  place     String? // kraj, odkod piše (npr. Črnomelj, Cleveland, Sydney)
+  memory    String // osebni spomin, povezan s predmetom
+  lang      String   @default("sl")
+  status    String   @default("published")
+  createdAt DateTime @default(now())
+
+  @@index([exhibitId, status])
+  @@index([status, createdAt])
 }

@@ -22,7 +22,9 @@ export type MuseumView =
   | "dogodki"
   | "oMuzeju"
   | "mojMuzej"
-  | "zaOtroke";
+  | "zaOtroke"
+  | "knjiga"
+  | "zaKuliso";
 
 export const VIEW_ORDER: MuseumView[] = [
   "domov",
@@ -36,18 +38,23 @@ export const VIEW_ORDER: MuseumView[] = [
   "oMuzeju",
   "mojMuzej",
   "zaOtroke",
+  "knjiga",
+  "zaKuliso",
 ];
 
 /**
  * Pogledi v namizni navigaciji. »Za otroke« je namenoma izpuščen —
  * kot pri Van Goghovem muzeju in Louvru (Petite Galerie) je otroška
  * pot izpostavljena na domači strani, v nogi in v mobilnem meniju,
- * ne pa stisnjena med glavne rubrike. Tematska središča in vodnik po
- * razpoloženju (vzorec Rijksmuseuma) so dosegljivi iz zbirke in
- * domače strani — namizna vrstica ostane pregledna.
+ * ne pa stisnjena med glavne rubrike. Tematska središča, vodnik po
+ * razpoloženju (vzorec Rijksmuseuma) in »za kuliso« so dosegljivi iz
+ * zbirke in domače strani — namizna vrstica ostane pregledna.
+ * Spominska knjiga (sodelovanje skupnosti) pa je namenoma VIDNA —
+ * je čustveno središče vaškega muzeja.
  */
 const DESKTOP_NAV_VIEWS = VIEW_ORDER.filter(
-  (view) => view !== "zaOtroke" && view !== "tema" && view !== "razpolozenje"
+  (view) =>
+    view !== "zaOtroke" && view !== "tema" && view !== "razpolozenje" && view !== "zaKuliso"
 );
 
 /** Mobilni spustni meni — vključi vse razen vodnika po razpoloženju. */

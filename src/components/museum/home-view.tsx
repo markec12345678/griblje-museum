@@ -4,8 +4,9 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, BookOpen, Database, FileSearch, Map as MapIcon, CalendarDays, Sparkles } from "lucide-react";
+import { ArrowRight, BookHeart, BookOpen, Clapperboard, Database, FileSearch, Map as MapIcon, CalendarDays, Sparkles } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
+import { useGuestbook } from "@/hooks/use-museum";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
 import { MuseumQuiz } from "@/components/museum/museum-quiz";
@@ -307,6 +308,9 @@ export function HomeView({
       {/* MUZEJSKI SPREHODI */}
       <WalksSection exhibits={exhibits} onStartWalk={onStartWalk} />
 
+      {/* GLASOVI VASI — sodelovanje skupnosti (DigitaltMuseum/Tenement) */}
+      <CommunitySection onNavigate={onNavigate} />
+
       {/* NAČRT OBISKA — vzorec velikih muzejev (Louvre/Met) */}
       <PlanVisit onNavigate={onNavigate} onStartWalk={onStartWalk} />
 
@@ -349,5 +353,99 @@ export function HomeView({
         </ul>
       </section>
     </div>
+  );
+}
+
+/**
+ * Glasovi vasi — zadnji vpisi iz spominske knjige + vabila k sodelovanju
+ * in za kuliso. Podatki prihajajo iz /api/guestbook (skupni predpomnilnik
+ * TanStack Query). Prazna knjiga pokaže vabilo namesto praznine.
+ */
+function CommunitySection({
+  onNavigate,
+}: {
+  onNavigate: (view: MuseumView) => void;
+}) {
+  const { t } = useLang();
+  const reduceMotion = useReducedMotion();
+  const guestbook = useGuestbook();
+  const latest = (guestbook.data?.entries ?? []).slice(0, 3);
+
+  return (
+    <section aria-labelledby="gl-bov-vasi" className="border-y border-border bg-card">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="max-w-2xl">
+          <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+            {t.home.communityKicker}
+          </p>
+          <h2 id="gl-bov-vasi" className="font-display mt-1 text-3xl font-semibold sm:text-4xl">
+            {t.home.communityTitle}
+          </h2>
+          <p className="mt-2 text-muted-foreground">{t.home.communitySub}</p>
+        </div>
+
+        <div className="mt-8 grid gap-6 lg:grid-cols-[3fr_2fr] lg:items-start">
+          {/* Zadnji vpisi */}
+          {latest.length > 0 && (
+            <ul className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              {latest.map((entry, index) => (
+                <motion.li
+                  key={entry.id}
+                  initial={reduceMotion ? false : { opacity: 0, y: 14 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-30px" }}
+                  transition={{ duration: 0.4, delay: index * 0.07 }}
+                  className="paper-grain rounded-xl border border-border/70 bg-background p-5"
+                >
+                  <blockquote>
+                    <p className="line-clamp-4 text-sm leading-relaxed text-foreground/85">
+                      {entry.message}
+                    </p>
+                    <footer className="mt-3 text-xs text-muted-foreground">
+                      <span className="font-semibold text-foreground/80">{entry.name}</span>
+                      {entry.place && <span> · {entry.place}</span>}
+                    </footer>
+                  </blockquote>
+                </motion.li>
+              ))}
+            </ul>
+          )}
+
+          {/* Vabila */}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            <button
+              type="button"
+              onClick={() => onNavigate("knjiga")}
+              className="group flex min-h-11 flex-col items-start gap-2.5 rounded-xl border border-primary/25 bg-primary/5 p-5 text-left transition-colors hover:border-primary/50"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <BookHeart className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <span className="font-display text-lg font-semibold">
+                {t.home.communityCta}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {guestbook.data
+                  ? t.guestbook.statEntries + ": " + guestbook.data.count
+                  : t.guestbook.title}
+              </span>
+            </button>
+            <button
+              type="button"
+              onClick={() => onNavigate("zaKuliso")}
+              className="group flex min-h-11 flex-col items-start gap-2.5 rounded-xl border border-border/70 bg-background p-5 text-left transition-colors hover:border-primary/40"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/15 text-accent-foreground">
+                <Clapperboard className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <span className="font-display text-lg font-semibold">{t.home.behindTitle}</span>
+              <span className="line-clamp-2 text-sm text-muted-foreground">
+                {t.home.behindText}
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

@@ -33,6 +33,7 @@ import { useMyWalk } from "@/lib/my-walk-tracker";
 import { relatedExhibits } from "@/lib/connections";
 import { hasMinuteStory } from "@/components/museum/minute-stories";
 import { ObjectBiography } from "@/components/museum/object-biography";
+import { ObjectMemories } from "@/components/museum/object-memories";
 import type { ExhibitCategory, ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -444,6 +445,9 @@ export function ExhibitDialog({
 
               {/* Življenje predmeta — provenance časovnica (vzorec: Art Tracks) */}
               <ObjectBiography exhibit={exhibit} />
+
+              {/* Spomini ob predmetu — skupnostna znanja (DigitaltMuseum/Tenement) */}
+              <ObjectMemories exhibit={exhibit} />
 
               {/* Lega */}
               {exhibit.lat != null && exhibit.lng != null && (
