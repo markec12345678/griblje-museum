@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { getMinuteStory } from "@/lib/minute-stories";
 
 export const dynamic = "force-dynamic";
 // Sinteza TTS lahko traja več kot privzetih 10 s (hladen klic ~20 s) —
@@ -80,8 +81,8 @@ let cachedBytes = 0;
 /* Sinteze, ki trenutno tečejo: "slug|lang|chunk" → obljuba. */
 const inflight = new Map<string, Promise<Buffer>>();
 
-function cacheKey(slug: string, lang: Lang) {
-  return `${slug}|${lang}`;
+function cacheKey(slug: string, lang: Lang, minute: boolean) {
+  return `${slug}|${lang}${minute ? "|minute" : ""}`;
 }
 
 function evictIfNeeded(excludeKey?: string) {
@@ -205,6 +206,8 @@ export async function GET(req: NextRequest) {
     const slug = searchParams.get("slug");
     const langParam = searchParams.get("lang");
     const chunkParam = Number(searchParams.get("chunk") ?? "0");
+    // minute=1 — enominutna zgodba (Muzej v minuti) namesto celotnega vodnika.
+    const minute = searchParams.get("minute") === "1";
 
     if (!slug) {
       return NextResponse.json({ error: "Missing slug" }, { status: 400 });
@@ -219,11 +222,24 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: "Exhibit not found" }, { status: 404 });
     }
 
-    const key = cacheKey(slug, lang);
+    const key = cacheKey(slug, lang, minute);
     let entry = audioCache.get(key);
     if (!entry) {
+      const narration = minute
+        ? (() => {
+            const story = getMinuteStory(slug);
+            const text = story
+              ? lang === "sl"
+                ? story.textSi
+                : story.textEn
+              : lang === "sl"
+                ? exhibit.summarySi
+                : exhibit.summaryEn;
+            return prepareForTts(text);
+          })()
+        : buildNarration(exhibit, lang);
       entry = {
-        chunks: splitIntoChunks(buildNarration(exhibit, lang)),
+        chunks: splitIntoChunks(narration),
         audio: [],
       };
       audioCache.set(key, entry);
