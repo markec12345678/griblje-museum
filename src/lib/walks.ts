@@ -212,9 +212,99 @@ export const WALKS: Walk[] = [
   },
 ];
 
-/** Poišče sprehod po identifikatorju. */
+/**
+ * Družinski sprehod — kurirana pot za obiskovalce od 6 do 12 let.
+ * Vzorec: družinski vodnik Van Goghovega muzeja (6–12 let) in
+ * Petite Galerie Louvra: postaje so poštevne, kratke in vsaka nosi
+ * eno vprašanje, na katerega odgovarja slika ali zapis. Naslanja se
+ * na družinam najbolj dostopne zapise zbirke (lahko se prekriva
+ * s tematskimi sprehodi, ki ostanejo brez sprememb).
+ */
+export const FAMILY_WALK: Walk = {
+  id: "druzinski-sprehod",
+  titleSi: "Družinski sprehod",
+  titleEn: "Family walk",
+  descriptionSi:
+    "Šest postaj za mlade raziskovalce: vas, cerkev, reka, ribnik, štorklje in bele breze. Vsaka postaja postavi eno vprašanje — odgovor se skriva v sliki ali zapisu.",
+  descriptionEn:
+    "Six stops for young explorers: the village, the church, the river, the pond, the storks and the white birches. Every stop asks one question — the answer hides in the picture or the record.",
+  stops: [
+    {
+      exhibitSlug: "griblje-vas",
+      noteSi:
+        "Vsaka raziskava se začne pri začetku. To je Griblje — razpotegnjena vas ob reki Kolpi. Poišči na sliki cerkev na hribu!",
+      noteEn:
+        "Every expedition begins at the beginning. This is Griblje — a long village on the Kolpa river. Can you find the church on the hill in the picture?",
+    },
+    {
+      exhibitSlug: "sveti-vid",
+      noteSi:
+        "Rumena cerkev svetega Vida stoji na hribu nad vasjo in jo prepoznajo vsi, ki so kdaj šli skozi. Zakaj ima cerkev zvon? Pomisli, za kaj so ga nekoč uporabljali.",
+      noteEn:
+        "The yellow church of St. Vitus stands on the hill above the village — everyone who ever passed through recognises it. Why does a church have a bell? Think about what it was once used for.",
+    },
+    {
+      exhibitSlug: "kolpa-reka",
+      noteSi:
+        "Kolpa je najtoplejša reka v Sloveniji — poleti se v njej kopajo cele družine, nekoč pa je gnala tudi mline. Preštej, koliko čolnov ali mostov vidiš na sliki!",
+      noteEn:
+        "The Kolpa is the warmest river in Slovenia — in summer whole families swim in it, and it once powered the mills. Count how many boats or bridges you can spot in the picture!",
+    },
+    {
+      exhibitSlug: "ribnik",
+      noteSi:
+        "Vaški ribnik je pojilišče in počivališče v enem. Katere živali misliš, da pridejo sem piti? Nekatere so majhne kot žuželke, nekatere večje od psa.",
+      noteEn:
+        "The village pond is a watering place and a resting place in one. Which animals do you think come here to drink? Some are as small as insects, others bigger than a dog.",
+    },
+    {
+      exhibitSlug: "storklje",
+      noteSi:
+        "Štorklje vsako pomlad priletijo iz tovrnih dežel in se naselijo na strehah vasi — vedno v isto gnezdo. Zakaj misliš, da se vračajo prav tja?",
+      noteEn:
+        "Every spring the storks fly back from warm countries and settle on the rooftops — always in the same nest. Why do you think they return to that exact one?",
+    },
+    {
+      exhibitSlug: "bele-breze",
+      noteSi:
+        "Bela breza je drevo, ki je dalo ime celi pokrajini: Beli krajini. Lubje je res belo in se lušči kot papir. Kaj še vidiš na sliki, kar je belo?",
+      noteEn:
+        "The white birch is the tree that named the whole region: Bela krajina — White Carniola. Its bark really is white and peels like paper. What else can you see in the picture that is white?",
+    },
+  ],
+};
+
+/** Vsi kurirani sprehodi muzeja (tematski + družinski). */
+export const ALL_WALKS: Walk[] = [...WALKS, FAMILY_WALK];
+
+/**
+ * Zgradi osebni sprehod obiskovalca iz shranjenih slugov postaj
+ * (mvg-my-walk). Vzorec: obiskovalne poti Louvra in »Collections«
+ * Rijksmuseuma — pot, ki si jo obiskovalec sestavi sam, se zažene
+ * kot vsak drug vodeni ogled. Opombe postaj so namerno splošne:
+ * izbira je kuratorsko mnenje obiskovalca, ne muzeja.
+ */
+export function buildMyWalk(slugs: string[]): Walk | null {
+  if (slugs.length === 0) return null;
+  return {
+    id: "moj-sprehod",
+    titleSi: "Moj sprehod",
+    titleEn: "My walk",
+    descriptionSi:
+      "Pot skozi zbirko, ki ste si jo sestavili sami — po vzoru obiskovalnih poti Louvra.",
+    descriptionEn:
+      "A route through the collection you assembled yourself — after the Louvre's visitor trails.",
+    stops: slugs.map((slug) => ({
+      exhibitSlug: slug,
+      noteSi: "Postaja, ki ste jo izbrali za svojo pot skozi vas.",
+      noteEn: "A stop you chose for your own route through the village.",
+    })),
+  };
+}
+
+/** Poišče sprehod po identifikatorju (tematski, družinski). */
 export function getWalk(id: string): Walk | undefined {
-  return WALKS.find((walk) => walk.id === id);
+  return ALL_WALKS.find((walk) => walk.id === id);
 }
 
 /**

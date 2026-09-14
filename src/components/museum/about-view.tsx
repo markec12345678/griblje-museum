@@ -18,7 +18,7 @@ import {
   Target,
 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
-import { WALKS } from "@/lib/walks";
+import { ALL_WALKS } from "@/lib/walks";
 import { printWorksheet } from "@/lib/worksheet";
 import type { ExhibitDTO, SourceType } from "@/lib/types";
 import { Card, CardContent } from "@/components/ui/card";
@@ -114,7 +114,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
               value: exhibits.filter((ex) => ex.lat != null && ex.lng != null).length,
               label: t.about.numbers.mapPoints,
             },
-            { value: WALKS.length, label: t.about.numbers.walks },
+            { value: ALL_WALKS.length, label: t.about.numbers.walks },
             { value: QUIZ_QUESTION_COUNT, label: t.about.numbers.quizQuestions },
             { value: 2, label: t.about.numbers.languages },
             { value: API_ENDPOINT_COUNT, label: t.about.numbers.endpoints },

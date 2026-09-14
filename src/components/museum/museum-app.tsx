@@ -12,11 +12,21 @@ import { EventsView } from "@/components/museum/events-view";
 import { MapView } from "@/components/museum/map-view";
 import { AboutView } from "@/components/museum/about-view";
 import { MyMuseumView } from "@/components/museum/my-museum-view";
+import { KidsView } from "@/components/museum/kids-view";
+import { CompareTray } from "@/components/museum/compare-tray";
+import { CompareDialog } from "@/components/museum/compare-dialog";
 import { SearchDialog } from "@/components/museum/search-dialog";
 import { useLang } from "@/lib/i18n";
 import { markVisited } from "@/lib/visit-tracker";
 import { markWalkCompleted } from "@/lib/walk-tracker";
-import { getWalk, resolveWalkStops, type Walk } from "@/lib/walks";
+import {
+  buildMyWalk,
+  getWalk,
+  resolveWalkStops,
+  type Walk,
+} from "@/lib/walks";
+import { getMyWalkSlugs } from "@/lib/my-walk-tracker";
+import { addToCompare, useCompareSelection } from "@/lib/compare-tracker";
 import type { WalkContext } from "@/components/museum/walk-ui";
 import { useExhibits, useEvents, useStories } from "@/hooks/use-museum";
 import { ExhibitDialog } from "@/components/museum/exhibit-dialog";
@@ -30,6 +40,7 @@ export function MuseumApp() {
   const [view, setView] = React.useState<MuseumView>("domov");
   const [selectedExhibit, setSelectedExhibit] = React.useState<ExhibitDTO | null>(null);
   const [searchOpen, setSearchOpen] = React.useState(false);
+  const [compareOpen, setCompareOpen] = React.useState(false);
   const reduceMotion = useReducedMotion();
 
   // --- Muzejski sprehodi -----------------------------------------------
@@ -50,6 +61,9 @@ export function MuseumApp() {
     stopIndex: number;
   } | null>(null);
 
+  // Globoka povezava ?compare=<slug>,<slug> — čaka na zbirko s strežnika.
+  const [pendingCompare, setPendingCompare] = React.useState<string[] | null>(null);
+
   const exhibitsQuery = useExhibits();
   const eventsQuery = useEvents();
   const storiesQuery = useStories();
@@ -68,6 +82,15 @@ export function MuseumApp() {
     if (walkId) {
       const stop = Number(new URLSearchParams(window.location.search).get("stop") ?? "1");
       setPendingWalk({ walkId, stopIndex: Math.max(0, stop - 1) });
+    }
+    const compareParam = new URLSearchParams(window.location.search).get("compare");
+    if (compareParam) {
+      const slugs = compareParam
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean)
+        .slice(0, 3);
+      if (slugs.length > 0) setPendingCompare(slugs);
     }
     const hash = window.location.hash.replace(/^#/, "");
     if ((VIEW_ORDER as string[]).includes(hash) && hash !== "domov") {
@@ -116,6 +139,36 @@ export function MuseumApp() {
     url.hash = view === "domov" ? "" : view;
     window.history.replaceState(window.history.state, "", url);
   }, [view]);
+
+  // URL v korak s primerjalnikom (?compare=<slug>,<slug> …).
+  const compareSelection = useCompareSelection().selection;
+  const compareUrlSynced = React.useRef(false);
+  React.useEffect(() => {
+    if (!compareUrlSynced.current) {
+      compareUrlSynced.current = true;
+      return;
+    }
+    const url = new URL(window.location.href);
+    if (compareOpen && compareSelection.length > 0) {
+      url.searchParams.set("compare", compareSelection.join(","));
+    } else {
+      url.searchParams.delete("compare");
+    }
+    window.history.replaceState(window.history.state, "", url);
+  }, [compareOpen, compareSelection]);
+
+  // Zaostali globoki povezavi primerjave ustreže, ko zbirka prispe.
+  React.useEffect(() => {
+    if (!pendingCompare || !exhibitsQuery.data) return;
+    const target = pendingCompare;
+    setPendingCompare(null);
+    const valid = target.filter((slug) =>
+      exhibitsQuery.data.some((ex) => ex.slug === slug)
+    );
+    if (valid.length === 0) return;
+    valid.forEach((slug) => addToCompare(slug));
+    setCompareOpen(true);
+  }, [pendingCompare, exhibitsQuery.data]);
 
   // --- Bližnjice za iskanje (Ctrl/Cmd+K ali /) --------------------------
   React.useEffect(() => {
@@ -170,7 +223,9 @@ export function MuseumApp() {
   // --- Sprehodi: start, navigacija, zaključek -------------------------
   const startWalk = React.useCallback(
     (walkId: string, stopIndex: number, exhibits: ExhibitDTO[]) => {
-      const walk = getWalk(walkId);
+      // Osebni sprehod ni kuriran — zgradi se iz shranjenih postaj obiskovalca.
+      const walk =
+        getWalk(walkId) ?? (walkId === "moj-sprehod" ? buildMyWalk(getMyWalkSlugs()) : undefined);
       if (!walk) return;
       const stops = resolveWalkStops(walk, exhibits);
       if (stops.length === 0) return;
@@ -276,6 +331,16 @@ export function MuseumApp() {
         exhibits={exhibitsQuery.data ?? []}
         onOpenExhibit={(ex) => openExhibit(ex)}
         onNavigate={(next) => navigate(next === "zbirka" ? "zbirka" : next)}
+        onStartMyWalk={() => startWalk("moj-sprehod", 0, exhibitsQuery.data ?? [])}
+      />
+    ),
+    zaOtroke: (
+      <KidsView
+        exhibits={exhibitsQuery.data ?? []}
+        onNavigate={navigate}
+        onStartWalk={(walkId, stopIndex) =>
+          startWalk(walkId, stopIndex, exhibitsQuery.data ?? [])
+        }
       />
     ),
   };
@@ -352,6 +417,20 @@ export function MuseumApp() {
         exhibits={exhibitsQuery.data ?? []}
         onOpenExhibit={(ex) => openExhibit(ex)}
         onNavigate={navigate}
+      />
+
+      {/* Primerjalnik: pladenj izbire + primerjava na eni strani */}
+      {!compareOpen && (
+        <CompareTray
+          exhibits={exhibitsQuery.data ?? []}
+          onOpenCompare={() => setCompareOpen(true)}
+        />
+      )}
+      <CompareDialog
+        open={compareOpen}
+        exhibits={exhibitsQuery.data ?? []}
+        onClose={() => setCompareOpen(false)}
+        onOpenExhibit={(ex) => openExhibit(ex)}
       />
     </div>
   );
