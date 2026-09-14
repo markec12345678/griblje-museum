@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { Accessibility, Moon, Search, Sun, Menu, Landmark, RotateCcw } from "lucide-react";
+import { Accessibility, Moon, Search, Sun, Menu, Landmark, MessageCircleQuestion, RotateCcw } from "lucide-react";
 import { useLang, type Lang } from "@/lib/i18n";
 import { useA11y } from "@/lib/a11y";
 import { cn } from "@/lib/utils";
@@ -64,10 +64,12 @@ export function Header({
   view,
   onNavigate,
   onOpenSearch,
+  onOpenGuide,
 }: {
   view: MuseumView;
   onNavigate: (view: MuseumView) => void;
   onOpenSearch: () => void;
+  onOpenGuide: () => void;
 }) {
   const { t, lang, setLang } = useLang();
   const { customized, reset } = useA11y();
@@ -147,6 +149,19 @@ export function Header({
         </nav>
 
         <div className="ml-auto flex items-center gap-2 md:ml-0">
+          {/* Pogovor z zbirko (AI vodnik) — na majhnih zaslonih skrit,
+              dosegljiv prek junaka domače strani in mobilnega menija */}
+          <Button
+            variant="outline"
+            size="icon"
+            className="hidden size-11 sm:inline-flex"
+            onClick={onOpenGuide}
+            aria-label={t.guide.openLabel}
+            aria-keyshortcuts="Control+G"
+          >
+            <MessageCircleQuestion className="h-4.5 w-4.5" aria-hidden="true" />
+          </Button>
+
           {/* Enotno iskanje */}
           <Button
             variant="outline"
@@ -291,6 +306,19 @@ export function Header({
                 </button>
               </li>
             ))}
+            <li>
+              <button
+                type="button"
+                onClick={() => {
+                  setMenuOpen(false);
+                  onOpenGuide();
+                }}
+                className="flex min-h-11 w-full items-center gap-2.5 rounded-md px-3 text-left text-base font-medium text-primary transition-colors hover:bg-primary/10"
+              >
+                <MessageCircleQuestion className="h-4.5 w-4.5" aria-hidden="true" />
+                {t.guide.title}
+              </button>
+            </li>
           </ul>
 
           {/* Dostopnost — stikala neposredno v mobilnem meniju */}

@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
     "/api/opendata": ["./db/custom.db"],
     "/api/iiif": ["./db/custom.db"],
     "/api/audio-guide": ["./db/custom.db"],
+    "/api/guide": ["./db/custom.db"],
     "/api/guestbook": ["./db/custom.db"],
     "/api/memories": ["./db/custom.db"],
   },

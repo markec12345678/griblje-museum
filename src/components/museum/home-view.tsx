@@ -4,13 +4,14 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, BookHeart, BookOpen, Clapperboard, Database, FileSearch, Map as MapIcon, CalendarDays, Sparkles } from "lucide-react";
+import { ArrowRight, BookHeart, BookOpen, Clapperboard, Database, FileSearch, Map as MapIcon, CalendarDays, MessageCircleQuestion, Sparkles } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useGuestbook } from "@/hooks/use-museum";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
 import { MuseumQuiz } from "@/components/museum/museum-quiz";
 import { WalksSection } from "@/components/museum/walks-section";
+import { GuideTeaser } from "@/components/museum/guide-dialog";
 import { ObjectOfDay } from "@/components/museum/object-of-day";
 import { MinuteStories } from "@/components/museum/minute-stories";
 import { PlanVisit } from "@/components/museum/plan-visit";
@@ -30,6 +31,7 @@ export function HomeView({
   onNavigate,
   onOpenExhibit,
   onStartWalk,
+  onOpenGuide,
   adventHighlight,
 }: {
   exhibits: ExhibitDTO[];
@@ -37,6 +39,7 @@ export function HomeView({
   onNavigate: (view: MuseumView) => void;
   onOpenExhibit: (exhibit: ExhibitDTO, focusView?: MuseumView) => void;
   onStartWalk: (walkId: string, stopIndex: number) => void;
+  onOpenGuide: () => void;
   adventHighlight?: number | null;
 }) {
   const { t, lang } = useLang();
@@ -138,6 +141,15 @@ export function HomeView({
               >
                 <Sparkles className="mr-2 h-4.5 w-4.5" aria-hidden="true" />
                 {t.mood.cta}
+              </Button>
+              <Button
+                size="lg"
+                variant="ghost"
+                className="min-h-12 px-6 text-foreground backdrop-blur-sm hover:bg-primary/10"
+                onClick={onOpenGuide}
+              >
+                <MessageCircleQuestion className="mr-2 h-4.5 w-4.5" aria-hidden="true" />
+                {t.hero.ctaGuide}
               </Button>
             </div>
           </motion.div>
@@ -307,6 +319,11 @@ export function HomeView({
 
       {/* MUZEJSKI SPREHODI */}
       <WalksSection exhibits={exhibits} onStartWalk={onStartWalk} />
+
+      {/* POGOVOR Z ZBIRKO — vabilo k AI vodniku */}
+      <section aria-label={t.guide.title} className="mx-auto max-w-7xl px-4 pb-4 pt-2 sm:px-6 lg:px-8">
+        <GuideTeaser onOpen={onOpenGuide} />
+      </section>
 
       {/* GLASOVI VASI — sodelovanje skupnosti (DigitaltMuseum/Tenement) */}
       <CommunitySection onNavigate={onNavigate} />
