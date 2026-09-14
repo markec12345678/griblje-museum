@@ -28,6 +28,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EvidenceBadge } from "@/components/museum/evidence-badge";
+import { AudioGuide } from "@/components/museum/audio-guide";
 
 const SOURCE_ICON: Record<SourceType, React.ElementType> = {
   arhiv: Archive,
@@ -99,6 +100,11 @@ export function ExhibitDialog({
                 {t.evidence.label}: {t.evidence[exhibit.evidenceStatus]} —{" "}
                 {t.evidence.desc[exhibit.evidenceStatus]}
               </p>
+
+              {/* Avdio vodnik */}
+              <div className="mt-5 rounded-lg border border-border/70 bg-muted/40 p-4">
+                <AudioGuide exhibit={exhibit} />
+              </div>
 
               {/* Zgodba */}
               <div className="mt-6 space-y-4">

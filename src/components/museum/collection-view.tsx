@@ -3,9 +3,11 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import { CheckCircle2, Search, SlidersHorizontal, X } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
+import { useVisited } from "@/lib/visit-tracker";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
+import { CollectorProgress } from "@/components/museum/collector-progress";
 import type { ExhibitCategory, ExhibitDTO, EvidenceStatus } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -47,6 +49,7 @@ export function CollectionView({
   const { t, lang } = useLang();
   const es = useExhibitStrings();
   const reduceMotion = useReducedMotion();
+  const { visited } = useVisited();
 
   const [query, setQuery] = React.useState("");
   const [category, setCategory] = React.useState<ExhibitCategory | "vse">("vse");
@@ -85,6 +88,11 @@ export function CollectionView({
       <div className="max-w-2xl">
         <h1 className="font-display text-4xl font-semibold sm:text-5xl">{t.collection.title}</h1>
         <p className="mt-3 text-muted-foreground">{t.collection.subtitle}</p>
+      </div>
+
+      {/* Zbiralec zapisov — napredek obiska */}
+      <div className="mt-8">
+        <CollectorProgress total={exhibits.length} />
       </div>
 
       {/* Nadzorna vrstica */}
@@ -206,6 +214,14 @@ export function CollectionView({
                     {t.categories[exhibit.category]}
                   </Badge>
                 </span>
+                {visited.has(exhibit.slug) && (
+                  <span className="absolute right-3 top-3">
+                    <Badge className="gap-1 border-primary/30 bg-background/85 text-primary backdrop-blur-sm">
+                      <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+                      <span className="sr-only">{t.collector.visitedSr}</span>
+                    </Badge>
+                  </span>
+                )}
               </div>
               <div className="flex flex-1 flex-col gap-2.5 p-5">
                 <div className="flex flex-wrap items-center justify-between gap-2">

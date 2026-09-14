@@ -6,6 +6,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, BookOpen, Database, FileSearch, Map as MapIcon, CalendarDays } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
+import { CollectorProgress } from "@/components/museum/collector-progress";
+import { MuseumQuiz } from "@/components/museum/museum-quiz";
 import type { ExhibitDTO, MuseumEventDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
 import { Button } from "@/components/ui/button";
@@ -221,6 +223,20 @@ export function HomeView({
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ZBIRALEC + MUZEJSKA UGANKA */}
+      <section className="paper-grain mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+            {t.quiz.sectionTitle}
+          </h2>
+          <p className="mt-2 text-muted-foreground">{t.quiz.sectionSub}</p>
+        </div>
+        <div className="mt-8 grid gap-6 lg:grid-cols-[3fr_2fr] lg:items-start">
+          <MuseumQuiz exhibits={exhibits} onOpenExhibit={onOpenExhibit} />
+          <CollectorProgress total={exhibits.length} />
         </div>
       </section>
 

@@ -66,6 +66,7 @@ export async function GET() {
         events: "/api/events",
         stories: "/api/stories",
         opendata: "/api/opendata",
+        iiif: "/api/iiif",
       },
       evidenceScale: [
         { code: "DOCUMENTED", labelSi: "dokumentirano", labelEn: "documented" },

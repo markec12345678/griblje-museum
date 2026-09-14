@@ -65,6 +65,7 @@ zagonu (`prisma/seed.ts`, idempotentno).
 | `GET /api/events` | program dogodkov |
 | `GET /api/stories` | zgodbe |
 | `GET /api/opendata` | manifest + full dump + JSON-LD (CC BY-SA 4.0, CORS) |
+| `GET /api/iiif` | IIIF Presentation 3.0 manifest zbirke |
 
 ## Licence / Licenses
 

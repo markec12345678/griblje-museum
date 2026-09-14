@@ -11,6 +11,7 @@ import { EventsView } from "@/components/museum/events-view";
 import { MapView } from "@/components/museum/map-view";
 import { AboutView } from "@/components/museum/about-view";
 import { useLang } from "@/lib/i18n";
+import { markVisited } from "@/lib/visit-tracker";
 import { useExhibits, useEvents, useStories } from "@/hooks/use-museum";
 import { ExhibitDialog } from "@/components/museum/exhibit-dialog";
 import type { ExhibitDTO } from "@/lib/types";
@@ -37,6 +38,8 @@ export function MuseumApp() {
     (exhibit: ExhibitDTO, focusView?: MuseumView) => {
       if (focusView && focusView !== view) setView(focusView);
       setSelectedExhibit(exhibit);
+      // Zbiralec: vsak odprt zapis se zabeleži v obisk (lokalno, brez strežnika).
+      markVisited(exhibit.slug);
     },
     [view]
   );
