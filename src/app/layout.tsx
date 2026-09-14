@@ -3,6 +3,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/museum/providers";
 
+/** Javni naslov muzeja (env na Vercelu; privzeto produkcijska domena). */
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://griblje-museum-robertpezdirc12-designs-projects.vercel.app";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin", "latin-ext"],
@@ -14,7 +19,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muzej vasi Griblje — digitalni muzej vasi ob Kolpi",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Muzej vasi Griblje — digitalni muzej vasi ob Kolpi",
+    template: "%s — Muzej vasi Griblje",
+  },
   description:
     "Muzej vasi Griblje je dvojezični digitalni muzej resnične vasi v Beli krajini: 20 zapisov, dokazljivi viri, lestvica zanesljivosti, odprti podatki in zemljevid. / A bilingual digital museum of a real village in Bela krajina, Slovenia.",
   keywords: [
@@ -30,11 +39,28 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Muzej vasi Griblje" }],
   openGraph: {
-    title: "Muzej vasi Griblje",
+    title: "Muzej vasi Griblje — Griblje Village Museum",
     description:
-      "Digitalni muzej resnične vasi ob Kolpi — zbirka, zgodbe, zemljevid, odprti podatki.",
+      "Digitalni muzej resnične vasi ob Kolpi — zbirka, zgodbe, zemljevid, odprti podatki. / A digital museum of a real village on the Kolpa.",
     siteName: "Muzej vasi Griblje",
     type: "website",
+    locale: "sl",
+    alternateLocale: ["en"],
+    images: [
+      {
+        url: "/images/authentic/hero-griblje.jpg",
+        width: 1600,
+        height: 800,
+        alt: "Vas Griblje ob Kolpi s cerkvijo sv. Vida / The village of Griblje on the Kolpa with the church of St. Vitus",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Muzej vasi Griblje — Griblje Village Museum",
+    description:
+      "Digitalni muzej resnične vasi ob Kolpi — zbirka, zgodbe, zemljevid, odprti podatki.",
+    images: ["/images/authentic/hero-griblje.jpg"],
   },
 };
 

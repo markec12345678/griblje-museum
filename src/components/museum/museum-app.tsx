@@ -11,6 +11,7 @@ import { TimelineView } from "@/components/museum/timeline-view";
 import { EventsView } from "@/components/museum/events-view";
 import { MapView } from "@/components/museum/map-view";
 import { AboutView } from "@/components/museum/about-view";
+import { MyMuseumView } from "@/components/museum/my-museum-view";
 import { SearchDialog } from "@/components/museum/search-dialog";
 import { useLang } from "@/lib/i18n";
 import { markVisited } from "@/lib/visit-tracker";
@@ -270,6 +271,13 @@ export function MuseumApp() {
     ),
     dogodki: <EventsView events={eventsQuery.data ?? []} />,
     oMuzeju: <AboutView exhibits={exhibitsQuery.data ?? []} />,
+    mojMuzej: (
+      <MyMuseumView
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+        onNavigate={(next) => navigate(next === "zbirka" ? "zbirka" : next)}
+      />
+    ),
   };
 
   return (

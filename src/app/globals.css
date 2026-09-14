@@ -228,3 +228,7 @@ select:focus-visible {
   0%, 100% { height: 4px; opacity: 0.55; }
   50% { height: 14px; opacity: 1; }
 }
+
+/* Približevalni ogled (OpenSeadragon) — kazalnik premikanja */
+.museum-deep-zoom { cursor: grab; overflow: hidden; }
+.museum-deep-zoom:active { cursor: grabbing; }
