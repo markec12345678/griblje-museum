@@ -62,7 +62,7 @@ export function ExhibitDialog({
             {/* Slika zapisa */}
             <div className="relative aspect-[16/9] w-full sm:aspect-[2/1]">
               <Image
-                src={exhibit.image ?? "/images/hero.png"}
+                src={exhibit.image ?? "/images/authentic/hero-kolpa.jpg"}
                 alt={es.title(exhibit)}
                 fill
                 sizes="(max-width: 768px) 100vw, 768px"
@@ -73,7 +73,7 @@ export function ExhibitDialog({
                 aria-hidden="true"
               />
               <p className="absolute bottom-3 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
-                {t.collection.aiNote}
+                {exhibit.imageCredit ?? t.collection.aiNote}
               </p>
             </div>
 

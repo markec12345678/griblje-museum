@@ -32,8 +32,8 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   tipkovna navigacija, `prefers-reduced-motion`, semantični HTML
 - 🔓 **Odprti podatki** — `/api/opendata`: manifest, celoten dump, schema.org JSON-LD,
   licenca **CC BY-SA 4.0**, CORS glava — po vzoru odprtega API Nasjonalmuseeta (2018)
-- 🏛️ **Objektopen angažma** — oglaševanje/zgodbe so označene, AI-generirane ilustracije
-  so izrecno ločene od avtentičnega arhivskega gradiva
+- 🏛️ **Muzejska iskrenost** — vsak zapis nosi stopnjo zanesljivosti, fotografije so
+  avtentične in pripisane; kadar posnetek ni z Gribelj samega, je to izrecno navedeno
 
 ## Tehnologija / Tech stack
 
@@ -71,9 +71,9 @@ zagonu (`prisma/seed.ts`, idempotentno).
 
 - **Koda**: MIT (glej `LICENSE`)
 - **Vsebina zbirke (opisi, zgodbe, metapodatki)**: CC BY-SA 4.0
-- **Slike**: AI-generirane muzejske postavitve — *niso* avtentični dokumentarni viri;
-  avtentično arhivsko gradivo (npr. fotografije Franja Veselka iz marca 1945) je
-  registrirano v virih z javnodomenskimi/licenčnimi oznakami
+- **Slike**: avtentične fotografije z Wikimedie Commons in javnodomenski arhivski
+  posnetki (Franjo Veselko marec 1945, procesija 1908, Fran Vesel 1920, Slovenski
+  etnografski muzej) — vsaka z navedbo avtorja in licence na zapisu in v registru virov
 
 ## Struktura / Structure
 
@@ -84,7 +84,7 @@ src/app/page.tsx          # enostranska aplikacija muzeja
 src/components/museum/    # pogleji: Domov, Zbirka, Zgodbe, Karta, Dogodki, O muzeju
 src/lib/i18n.tsx          # SLO/EN slovar
 src/app/api/              # REST + odprti podatki
-public/images/            # AI-generirane muzejske ilustracije (13)
+public/images/authentic/  # avtentične fotografije (Wikimedia Commons / javna last)
 ```
 
 ## Izjava o standardu / Standard statement

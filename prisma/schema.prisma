@@ -24,6 +24,7 @@ model Exhibit {
   storyEn       String
   evidenceStatus String // DOCUMENTED | CORROBORATED | TESTIMONY | TRADITION | UNVERIFIED | TO_COLLECT
   image         String?
+  imageCredit   String? // navedba fotografije: avtor, Wikimedia Commons, licenca
   lat           Float?
   lng           Float?
   coordsApprox  Boolean  @default(false)

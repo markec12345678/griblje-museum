@@ -19,16 +19,26 @@ export const dynamic = "force-dynamic";
 const IIIF_CONTEXT = ["https://iiif.io/api/presentation/3/context.json"];
 const RIGHTS = "http://creativecommons.org/licenses/by-sa/4.0/";
 
-/** Dejanske dimenzije slik v /public/images ( ostale 1344 × 768. */
+/** Dejanske dimenzije avtentičnih fotografij v /public/images/authentic. */
 const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
-  "/images/hero.png": { width: 1440, height: 720 },
-  "/images/storklje.png": { width: 1024, height: 1024 },
-  "/images/kruh.png": { width: 1024, height: 1024 },
-  "/images/tkalstvo.png": { width: 1024, height: 1024 },
-  "/images/breza.png": { width: 1024, height: 1024 },
+  "/images/authentic/hero-kolpa.jpg": { width: 1600, height: 800 },
+  "/images/authentic/griblje-vas.jpg": { width: 1600, height: 1071 },
+  "/images/authentic/sveti-vid.jpg": { width: 1048, height: 1600 },
+  "/images/authentic/kolpa.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/malenca.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/evakuacija.jpg": { width: 1600, height: 1072 },
+  "/images/authentic/meja.jpg": { width: 1600, height: 1063 },
+  "/images/authentic/ribnik.jpg": { width: 1600, height: 1067 },
+  "/images/authentic/stara-hisa.jpg": { width: 1600, height: 1520 },
+  "/images/authentic/ravnace.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/jurjevanje.jpg": { width: 1236, height: 903 },
+  "/images/authentic/pogaca.jpg": { width: 1600, height: 1063 },
+  "/images/authentic/predenje.jpg": { width: 682, height: 1070 },
+  "/images/authentic/storklja.jpg": { width: 1600, height: 1067 },
+  "/images/authentic/breze.jpg": { width: 1600, height: 997 },
 };
 
-const FALLBACK_DIMENSIONS = { width: 1344, height: 768 };
+const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };
 
 const EVIDENCE_LABELS: Record<string, { sl: string; en: string }> = {
   DOCUMENTED: { sl: "dokumentirano", en: "documented" },
@@ -107,7 +117,7 @@ function buildMetadata(exhibit: ExhibitRow) {
 
 /** Manifest v zbirki (skrajšani vnos v Collection.items). */
 function buildManifestReference(origin: string, exhibit: ExhibitRow) {
-  const image = exhibit.image ?? "/images/hero.png";
+  const image = exhibit.image ?? "/images/authentic/hero-kolpa.jpg";
   return {
     id: `${origin}/api/iiif?manifest=${exhibit.slug}`,
     type: "Manifest",
@@ -130,7 +140,7 @@ function buildManifestReference(origin: string, exhibit: ExhibitRow) {
 /** Polni Manifest z vsaj enim Canvasom (IIIF Presentation 3.0). */
 function buildFullManifest(origin: string, exhibit: ExhibitRow) {
   const manifestId = `${origin}/api/iiif?manifest=${exhibit.slug}`;
-  const image = exhibit.image ?? "/images/hero.png";
+  const image = exhibit.image ?? "/images/authentic/hero-kolpa.jpg";
   const { width, height } = imageDimensions(image);
   const canvasId = `${manifestId}&canvas=0`;
   const pageId = `${manifestId}&page=0`;

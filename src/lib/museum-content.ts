@@ -38,6 +38,7 @@ type SeedExhibit = {
   storyEn: string;
   evidenceStatus: EvidenceStatus;
   image?: string;
+  imageCredit?: string;
   lat?: number;
   lng?: number;
   coordsApprox?: boolean;
@@ -64,7 +65,8 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "Griblje lies in the Griblje local community of the Municipality of Črnomelj, on the northern edge of the Kolpa valley, which is today the national border with Croatia. The settlement is first recorded in written sources in 1526 — at a time when Bela krajina had for centuries been a meeting point of three worlds: the Habsburg lands, Hungarian Croatia and the dangerous Ottoman frontier.\n\nThe village economy was carried for centuries by farming, livestock and viticulture on nearby slopes, while the Kolpa was at once a fishing, milling and border river. After 1991 the course of the river became the outer border of independent Slovenia — yet the village stayed on an edge that kept turning into opportunity: today Griblje is a quiet starting point for cycling along the Kolpa and walks among the white birches, the symbol of Bela krajina.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/hero.png",
+    image: "/images/authentic/griblje-vas.jpg",
+    imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
     lat: 45.57246,
     lng: 15.29257,
     featured: true,
@@ -82,10 +84,10 @@ export const seedExhibits: SeedExhibit[] = [
         nameSi: "Wikimedia Commons: Griblje, Črnomelj (panorama)",
         nameEn: "Wikimedia Commons: Griblje, Črnomelj (panorama)",
         sourceType: "fotografija",
-        license: "glej stran datoteke / see file page",
+        license: "CC BY-SA 3.0 (avtor: Eleassar)",
         url: WM("Griblje,_%C4%8Crnomelj.jpg"),
-        noteSi: "Avtentična fotografija vasi; ilustracija na zapisu je postavitev muzeja.",
-        noteEn: "Authentic photograph of the village; the illustration on the record is museum staging.",
+        noteSi: "Avtentična fotografija vasi — glavna slika zapisa.",
+        noteEn: "Authentic photograph of the village — the record's main image.",
       },
     ],
   },
@@ -105,7 +107,8 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "In the centre of the settlement stands the church of St. Vitus, dedicated to the patron whom the folk calendar remembers with the saying \"from St. Vitus onward the sun rises higher.\" The building is the religious heart of the local community and the village's most striking silhouette — its appearance is documented in Wikimedia Commons photographs.\n\nThe museum explicitly separates the documented from the undocumented: the construction history of the church (its dating, earlier phases) still awaits an archival source. When one is found, the record will be amended and marked as documented; until then, the \"corroborated\" mark refers strictly to the building's existence and position.",
     evidenceStatus: "CORROBORATED",
-    image: "/images/cerkev.png",
+    image: "/images/authentic/sveti-vid.jpg",
+    imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
     lat: 45.5728,
     lng: 15.2922,
     coordsApprox: true,
@@ -137,7 +140,8 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The Kolpa (Croatian: Kupa) rises in Gorski Kotar and, after 297 kilometres, mostly as the Slovenian–Croatian border, reaches the Sava at Sisak. At Griblje the river is calm, shallow and warm in summer — which makes it one of the country's favourite bathing rivers; water quality on the Dragoši–Griblje section is regularly monitored by the state bathing-water programme (measurement point K05010).\n\nThe river gave the village fish, a mill and a sawmill and, with churches on both banks, also a story of contact and separation. A cycling route runs along it today, and in summer both banks again carry the sounds of a shared language and laughter.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/kolpa.png",
+    image: "/images/authentic/kolpa.jpg",
+    imageCredit: "Foto: Savinjc · Wikimedia Commons · CC BY-SA 3.0",
     lat: 45.5688,
     lng: 15.2988,
     featured: true,
@@ -152,11 +156,13 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "commons-kolpa",
-        nameSi: "Wikimedia Commons: Kolpa griblje (fotografija)",
-        nameEn: "Wikimedia Commons: Kolpa griblje (photograph)",
+        nameSi: "Wikimedia Commons: Kolpa griblje (fotografija, avtor: Savinjc)",
+        nameEn: "Wikimedia Commons: Kolpa griblje (photograph, author: Savinjc)",
         sourceType: "fotografija",
-        license: "glej stran datoteke / see file page",
+        license: "CC BY-SA 3.0 (avtor: Savinjc)",
         url: WM("Kolpa_griblje.jpg"),
+        noteSi: "Avtentična fotografija reke pri Gribljah — glavna slika zapisa.",
+        noteEn: "Authentic photograph of the river at Griblje — the record's main image.",
       },
     ],
   },
@@ -176,7 +182,8 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The word malenca denotes a small weir or dam with a drop that millers built across the river to capture the force of the water. On the Kolpa at Griblje such a example survives — a waterfall and weir — photographed by the author švabo and publicly documented in Wikimedia Commons.\n\nThe museum publishes what it has: a verified photograph and the general typology. The precise position of this particular malenca is not confirmed by a reliable source, so the map deliberately does not draw this point — a coordinate that would be a mere approximation would be a museum untruth.",
     evidenceStatus: "CORROBORATED",
-    image: "/images/kolpa.png",
+    image: "/images/authentic/malenca.jpg",
+    imageCredit: "Foto: švabo · Wikimedia Commons · CC BY 3.0",
     featured: false,
     sources: [
       {
@@ -207,7 +214,8 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "During the Second World War Bela krajina was one of the freest territories of occupied Europe — Partisan hospitals, schools and print shops operated here. At the end of March 1945 something extraordinary happened above it: from the improvised Krasinec airfield Allied aircraft evacuated the wounded and gravely ill over two days, flying them to the Allied base at Bari; on the operation's eightieth anniversary RTV Slovenija described it as one of the largest wartime evacuations in this part of Europe.\n\nTwo photographs from that time were taken precisely at Griblje: wounded Partisans watching the aircraft land, and an English pilot in conversation with Partisans. The author of the first is Franjo Veselko (1905–1977); both images are in the public domain. The museum publishes the photographs as documents — any additional detail (named persons, the exact day of take-off) will be added only with an archival source.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/partizani.png",
+    image: "/images/authentic/evakuacija.jpg",
+    imageCredit: "Foto: Franjo Veselko, marec 1945 · Wikimedia Commons · javna last",
     featured: true,
     sources: [
       {
@@ -229,7 +237,7 @@ export const seedExhibits: SeedExhibit[] = [
         nameEn:
           "Wikimedia Commons: An English pilot in conversation with Partisans, Griblje near Črnomelj, March 1945",
         sourceType: "fotografija",
-        license: "glej stran datoteke / see file page",
+        license: "Public domain (domnevno isti avtor)",
         url: WM(
           "Pogovor_angle%C5%A1kega_pilota_s_partizani%2C_Griblje_pri_%C4%8Crnomlju%2C_marec_1945.jpg"
         ),
@@ -262,7 +270,8 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "When Slovenia became an independent state in 1991, the Kolpa turned from a river between two republics into an external border of Europe. During the refugee crisis of 2015 a temporary security fence was erected along the river at Griblje — its appearance documented by the photographer Hythlodot (Wikimedia Commons, CC BY-SA 4.0).\n\nWith Croatia's entry into the Schengen area (2023) the physical meaning of the border weakened again. The river that spent a century and a half as a delimiter returned to an older role: shared beaches, shared fishing, a shared story.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/meja.png",
+    image: "/images/authentic/meja.jpg",
+    imageCredit: "Foto: Hythlodot · Wikimedia Commons · CC BY-SA 4.0",
     lat: 45.5675,
     lng: 15.2995,
     coordsApprox: true,
@@ -294,7 +303,8 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "In the traditional village the pond was a water reservoir for livestock, a refuge for birds and fish, and the local \"mirror\" in which the village saw itself. The pond at Griblje still stands today and is documented in Wikimedia Commons photographs; in summer it is visited by dragonflies and ducks, in winter by the sleigh-run of memory.\n\nThe museum invites the locals: every memory of the pond — ice skating, watering livestock, carp fishing — will be recorded as a testimony carrying the witness's name.",
     evidenceStatus: "CORROBORATED",
-    image: "/images/ribnik.png",
+    image: "/images/authentic/ribnik.jpg",
+    imageCredit: "Foto: Uroš Novina · Wikimedia Commons · CC BY 2.0",
     lat: 45.5735,
     lng: 15.294,
     coordsApprox: true,
@@ -302,11 +312,15 @@ export const seedExhibits: SeedExhibit[] = [
     sources: [
       {
         key: "commons-ribnik",
-        nameSi: "Wikimedia Commons: Pond Griblje (fotografija)",
-        nameEn: "Wikimedia Commons: Pond Griblje (photograph)",
+        nameSi:
+          "Wikimedia Commons: Pond at Griblje — ribnik za vasjo (fotografija, avtor: Uroš Novina)",
+        nameEn:
+          "Wikimedia Commons: Pond at Griblje — the pond behind the village (photograph, author: Uroš Novina)",
         sourceType: "fotografija",
-        license: "glej stran datoteke / see file page",
-        url: WM("Pond_Griblje.jpg"),
+        license: "CC BY 2.0 (avtor: Uroš Novina)",
+        url: WM("Pond_at_Griblje_(44612474114).jpg"),
+        noteSi: "Avtentična fotografija gribeljskega ribnika — glavna slika zapisa.",
+        noteEn: "Authentic photograph of the Griblje pond — the record's main image.",
       },
     ],
   },
@@ -326,9 +340,25 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The typical Bela krajina house of the 19th century was a low one- or two-room building with lime-whitewashed walls and a roof of rye straw. For the poorest there was also the polkoplje — a dwelling half dug into the ground, part timber, whose earth protected against winter and heat alike.\n\nThe house was governed by bread: an open hearth with a black kitchen, smoke that preserved the straw and timber, and a shed where livestock stood in bad weather. This building type is attested for all of Bela krajina in Slovene ethnography — examples in Griblje itself await village photographs and testimonies, which is why the record is marked as tradition rather than a documented village case.",
     evidenceStatus: "TRADITION",
-    image: "/images/hisa.png",
+    image: "/images/authentic/stara-hisa.jpg",
+    imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
     featured: false,
     sources: [
+      
+      {
+        key: "commons-stara-hisa",
+        nameSi:
+          "Wikimedia Commons: Črnomelj — stara hiša (fotografija, avtor: Eleassar)",
+        nameEn:
+          "Wikimedia Commons: Črnomelj — an old house (photograph, author: Eleassar)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 3.0 (avtor: Eleassar)",
+        url: WM("%C4%8Crnomelj_-_stara_hi%C5%A1a.jpg"),
+        noteSi:
+          "Avtentična fotografija stavbe v Črnomlju (občina Gribelj) — glavna slika zapisa; prikazuje tipično lokalno arhitekturo, ne gribeljske domačije.",
+        noteEn:
+          "Authentic photograph of a building in Črnomelj (Griblje's municipality) — the record's main image; it shows typical local architecture, not a specific Griblje farmstead.",
+      },
       {
         key: "etnografija",
         nameSi: "Slovenska etnografska literatura o kmečki hiši Bele krajine (tipologija)",
@@ -356,9 +386,25 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The wine route of Bela krajina runs from Metlika towards Semič, Vinica and Dragatuš; Griblje stands at its southern edge. Blaufränkisch and Blaufränkisch crossings, Welschriesling, gamay and the varieties that yield cviček — the light Bela krajina table wine — thrive here on red soil over limestone.\n\nThe crown of the region is metliška črnina PTP, a protected traditional denomination: a darker wine made from the metliška pomace blend and white varieties, with a history reaching into the 19th century. When the winegrowers carried their grapes into the zidnice — the stone village cellars — in autumn, the village filled with work, laughter and the smell of must. The museum will add the names of Griblje's wine farms when the locals themselves enter them.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/vinograd.png",
+    image: "/images/authentic/ravnace.jpg",
+    imageCredit: "Foto: Andrejj · Wikimedia Commons · CC BY-SA 4.0 · Ravnace pri Metliki",
     featured: false,
     sources: [
+      
+      {
+        key: "commons-ravnace",
+        nameSi:
+          "Wikimedia Commons: Ravnace pri Metliki — vas in vinogradi (fotografija, avtor: Andrejj)",
+        nameEn:
+          "Wikimedia Commons: Ravnace near Metlika — village and vineyards (photograph, author: Andrejj)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 4.0 (avtor: Andrejj)",
+        url: WM("Ravnace.jpg"),
+        noteSi:
+          "Avtentična fotografija vinske pokrajine Bele krajine — glavna slika zapisa; vinogradi Ravnac so 10 km zahodno od Gribelj.",
+        noteEn:
+          "Authentic photograph of the wine landscape of Bela krajina — the record's main image; the Ravnace vineyards lie 10 km west of Griblje.",
+      },
       {
         key: "mkgp",
         nameSi:
@@ -387,9 +433,27 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "On St. George's Day, 24 April, when the earth \"opens\", the jurji walk through Bela krajina — figures dressed in the greenery of birch and other trees, with red-and-white scarves and bells, drumming winter away. Alongside them carnival figures like the lame and race — horned fur masks that ethnographers read as remnants of pre-Christian calendar symbolism.\n\nToday jurjevanje is a living gallery example of intangible heritage: since the 1990s the town of Črnomelj has hosted the Jurjevanje v Beli krajini festival, the largest showcase of Slovene folk creativity. In Griblje the jurji walked from house to house — when exactly, and who was the last jurij, the museum does not yet know: write it down for us.",
     evidenceStatus: "TRADITION",
-    image: "/images/jurjevanje.png",
+    image: "/images/authentic/jurjevanje.jpg",
+    imageCredit: "Foto: Wikimedia Commons (1908) · javna last",
     featured: true,
     sources: [
+      
+      {
+        key: "commons-jurij-1908",
+        nameSi:
+          "Wikimedia Commons: Iz jubilejskega sprevoda 1908 — zeleni Jurij in belokranjska svatba",
+        nameEn:
+          "Wikimedia Commons: From the 1908 jubilee procession — Zeleni Jurij and the Bela krajina wedding group",
+        sourceType: "fotografija",
+        license: "Public domain (1908)",
+        url: WM(
+          "Iz_jubilejskega_sprevoda_-_Kranjska_skupina_-_fanfaristi%2C_banderij%2C_zeleni_Jurij%2C_belokranjska_svatba_1908.jpg"
+        ),
+        noteSi:
+          "Avtentični dokumentarni posnetek iz leta 1908 — glavna slika zapisa; ne prikazuje Gribelj samih.",
+        noteEn:
+          "Authentic documentary photograph from 1908 — the record's main image; it does not depict Griblje itself.",
+      },
       {
         key: "crnomelj-jurjevanje",
         nameSi: "Občina Črnomelj — festival Jurjevanje v Beli krajini",
@@ -416,9 +480,23 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "Bela krajina cuisine is a cuisine of bread and grain: the Bela krajina pogača — a round flatbread with a caraway crust — has become the region's trademark, while Monday's matevž of brown beans carried the working week. At carnival the households baked salenjaki — on leaves or in the oven — and Easter eggs were dyed with the natural colours of dried plants, as the region knows them.\n\nThe sweet of the holidays was medlica — a cooling drink of honey and water — and potica, layered with walnuts from one's own garden. The museum's kitchen collection will be built from village recipes: the first is already entered among the stories, the rest are awaited.",
     evidenceStatus: "TRADITION",
-    image: "/images/kruh.png",
+    image: "/images/authentic/pogaca.jpg",
+    imageCredit: "Foto: Rude · Wikimedia Commons · CC BY-SA 3.0",
     featured: false,
     sources: [
+      
+      {
+        key: "commons-pogaca",
+        nameSi:
+          "Wikimedia Commons: Belokranjska pogača (fotografija, avtor: Rude)",
+        nameEn:
+          "Wikimedia Commons: Belokranjska pogača (photograph, author: Rude)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 3.0 (avtor: Rude)",
+        url: WM("Belokranjska_pogaca.jpg"),
+        noteSi: "Avtentična fotografija jedi — glavna slika zapisa.",
+        noteEn: "Authentic photograph of the dish — the record's main image.",
+      },
       {
         key: "kuhinja-etno",
         nameSi: "Slovenska etnografska in kulinarična literatura o jedeh Bele krajine",
@@ -446,9 +524,25 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "Every autumn the villages of Bela krajina pulled flax and hemp; they spun through the winter and wove in spring. The wooden loom stood in the \"house\" — the weaver wove the yarn into linen with each movement of her hand, and the shuttle passed between the threads like a rhythm. From the linen came sheets, shirts and chemises; the whole village was clothed in it.\n\nWhen homespun gave way to factory cloth, the weavers' hands found work in the sewing shops of Bela krajina — the story of linen continued as a story of ready-made clothing. The museum is looking for the looms that stood in Griblje: a photograph of a village loom will be the first object of this collection.",
     evidenceStatus: "TRADITION",
-    image: "/images/tkalstvo.png",
+    image: "/images/authentic/predenje.jpg",
+    imageCredit: "Foto: Fran Vesel, 1920 · Wikimedia Commons · javna last",
     featured: false,
     sources: [
+      
+      {
+        key: "commons-predenje",
+        nameSi:
+          "Wikimedia Commons: Predenje v Beli krajini, 1920 (fotograf: Fran Vesel)",
+        nameEn:
+          "Wikimedia Commons: Spinning in Bela krajina, 1920 (photographer: Fran Vesel)",
+        sourceType: "fotografija",
+        license: "Public domain (Fran Vesel, 1920)",
+        url: WM("Predenje_v_Beli_krajini.jpg"),
+        noteSi:
+          "Avtentična etnografska fotografija predenja v Beli krajini — glavna slika zapisa; predenje je predstopnja tkalstva.",
+        noteEn:
+          "Authentic ethnographic photograph of spinning in Bela krajina — the record's main image; spinning precedes weaving.",
+      },
       {
         key: "tkalstvo-etno",
         nameSi: "Slovenska etnografska literatura o predenju in tkalstvu na Dolenjskem in v Beli krajini",
@@ -474,9 +568,25 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The white stork returns from Africa at the end of March and in April — precisely when the jurji announce spring. In Bela krajina it nests on chimneys and poles, feeds by the river and wetlands of the Kolpa, and in August and September departs with its young across the Balkans towards Africa.\n\nThe village identity of the stork is explicit: a nest on one's chimney is an honour, so the households protect and repair the nests. The museum will follow the nests of Griblje with village photographers: one photograph a year, every photograph a source. Thus the collection grows like the bird's own life cycle.",
     evidenceStatus: "CORROBORATED",
-    image: "/images/storklje.png",
+    image: "/images/authentic/storklja.jpg",
+    imageCredit: "Foto: fveronesi1 · Wikimedia Commons · CC BY-SA 4.0",
     featured: false,
     sources: [
+      
+      {
+        key: "commons-storklja",
+        nameSi:
+          "Wikimedia Commons: White Stork — Slovenia (fotograf: fveronesi1)",
+        nameEn:
+          "Wikimedia Commons: White Stork — Slovenia (photographer: fveronesi1)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 4.0 (fotograf: fveronesi1)",
+        url: WM("White_Stork_-_Slovenia_5P5A9266.jpg"),
+        noteSi:
+          "Avtentična fotografija štorklje v Sloveniji — glavna slika zapisa; gnezdo ni nujno v Gribljah.",
+        noteEn:
+          "Authentic photograph of a stork in Slovenia — the record's main image; the nest is not necessarily in Griblje.",
+      },
       {
         key: "kp-kolpa",
         nameSi: "Krajinski park Kolpa — naravne vrednote in ptice selivke",
@@ -503,9 +613,25 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The silver birch (Betula pendula) is a pioneer tree that colonises bright forest edges and abandoned meadows — in Bela krajina it became an identity: the region's \"white\" reveals itself not only in the lime-whitened house walls and the white bread, but in the birch's white bark.\n\nThe jurji dressed in its greenery, its wood gave horns and troughs, and its bark yielded work and remedies. The museum takes the birch as one of its central motifs: visitors are invited to photograph a single birch in Griblje on every visit — one day, an annual gallery of the village will grow out of a thousand frames.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/breza.png",
+    image: "/images/authentic/breze.jpg",
+    imageCredit: "Foto: Fran Vesel · Slovenski etnografski muzej · javna last",
     featured: false,
     sources: [
+      
+      {
+        key: "commons-breze",
+        nameSi:
+          "Wikimedia Commons: Hiša med brezami (fotograf: Fran Vesel, Slovenski etnografski muzej)",
+        nameEn:
+          "Wikimedia Commons: A house among birches (photographer: Fran Vesel, Slovenian Ethnographic Museum)",
+        sourceType: "fotografija",
+        license: "Public domain (Fran Vesel)",
+        url: WM("Hi%C5%A1a_med_brezami.jpg"),
+        noteSi:
+          "Avtentična etnografska fotografija bele breze v Sloveniji — glavna slika zapisa.",
+        noteEn:
+          "Authentic ethnographic photograph of white birches in Slovenia — the record's main image.",
+      },
       {
         key: "kp-kolpa-2",
         nameSi: "Krajinski park Kolpa — bele breze kot simbol Bele krajine",

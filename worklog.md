@@ -134,3 +134,22 @@ Work Log:
 Stage Summary:
 - Muzej ima zdaj: avdio vodnik (TTS, pošteno označen), gamifikacijo (zbiralec + kviz na dokumentiranih dejstvih) in IIIF 3.0 manifest — tri prakse vodilnih evropskih muzejev iz raziskave
 - Vse spremembe commitane in pushane na github.com/markec12345678/griblje-museum
+
+---
+Task ID: 5
+Agent: Main agent (Z.ai Code)
+Task: Zamenjava AI-ilustracij z avtentičnimi fotografijami ( Commons / javni domeni) po uporabnikovi zahtevi
+
+Work Log:
+- Raziskava prek Commons API: v kategoriji/iskanju "Griblje" odkrite prave fotografije vasi, cerkve sv. Vida, Kolpe pri Gribljah, malence s slapom, ribnika, mejne žice ter dve fotografiji Franja Veselka iz evakuacije marca 1945 (javna last)
+- Prenesenih in VLM-preverjenih 20 kandidatov; izbranih 15 avtentičnih (Wikimedia Commons: Eleassar, Savinjc, švabo, Hythlodot, Uroš Novina, Andrejj, Rude, fveronesi1; javna last: Franjo Veselko 1945, procesija z Zelenim Jurijem 1908, Fran Vesel 1920 — predenje v Beli krajini, hiša med brezami iz Slovenskega etnografskega muzeja)
+- Obdelava: EXIF transponiranje, pomanjšanje na ≤1600 px, hero 2:1 crop iz doline Kolpe (pogled s Sodevske stene), rahel kontrastni popravek Ravnac; shranjeno v public/images/authentic/ (15 JPG, 5,3 MB)
+- Shema: nov stolpec Exhibit.imageCredit (navedba avtorja/licence); prisma db push + ponoven seed
+- Vsebina: vseh 14 zapisov dobi avtentično fotografijo + imageCredit; 4 obstoječi viri dopolnjeni s konkretnimi licencami, 7 novih virov fotografij dodanih (skupno 25 virov); poštenje: viri z zapisom, kadar posnetek ni z Gribelj (npr. Ravnace 10 km zahodno, jurjevanje 1908 ni Griblje, štorklja splošno Slovenija)
+- Frontend: kredit na karticah zbirke in v dialogu (imageCredit ?? aiNote opomba), kredit v hero, posodobljen alt; IIIF dimenzije posodobljene na nove JPG; kolofon in README posodobljeni; stare AI PNG slike izbrisane
+- Restart dev strežnika (zastarel Prisma client po spremembi sheme)
+
+Stage Summary:
+- Vseh 14 zapisov in hero zdaj nosijo avtentične, pripisane fotografije (predhodno AI-ilustracije)
+- Preverjeno v brskalniku: hero (prava dolina Kolpe + kredit), zbirka (VLM: prave fotografije + krediti spodaj desno, brez napak), dialog cerkve (prava rumena baročna cerkev + kredit + avdio vodnik deluje), karta 6 oznak, mobilni prikaz 375 px brez prekoračitve, noga na dnu (5495=5495)
+- Lint 0 napak; dev.log brez napak; baza: 14 zapisov, 25 virov, 14 kreditov

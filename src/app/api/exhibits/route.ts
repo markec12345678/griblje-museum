@@ -33,6 +33,7 @@ export async function GET(request: Request) {
       storyEn: ex.storyEn,
       evidenceStatus: ex.evidenceStatus as EvidenceStatus,
       image: ex.image,
+      imageCredit: ex.imageCredit,
       lat: ex.lat,
       lng: ex.lng,
       coordsApprox: ex.coordsApprox,

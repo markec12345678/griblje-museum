@@ -203,7 +203,7 @@ export function CollectionView({
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={exhibit.image ?? "/images/hero.png"}
+                  src={exhibit.image ?? "/images/authentic/hero-kolpa.jpg"}
                   alt={es.title(exhibit)}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -221,6 +221,11 @@ export function CollectionView({
                       <span className="sr-only">{t.collector.visitedSr}</span>
                     </Badge>
                   </span>
+                )}
+                {exhibit.imageCredit && (
+                  <p className="absolute bottom-2 right-3 max-w-[75%] truncate text-right text-[10px] leading-tight text-white/80 drop-shadow-sm">
+                    {exhibit.imageCredit}
+                  </p>
                 )}
               </div>
               <div className="flex flex-1 flex-col gap-2.5 p-5">

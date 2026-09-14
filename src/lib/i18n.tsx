@@ -203,7 +203,7 @@ export const ui = {
       colophonTitle: "Kolofon",
       colophonText: [
         "Postavitev: Next.js 16 · React 19 · Tailwind CSS 4 · Prisma (SQLite) · Leaflet/OpenStreetMap · shadcn/ui.",
-        "Ilustracije zapisov so umetniške postavitvene podobe, izdelane za ta muzej leta 2026; avtentične arhivske fotografije so vezane v registru virov.",
+        "Fotografije zapisov so avtentični posnetki z Wikimedie Commons (oz. Slovenskega etnografskega muzeja) z navedbo avtorja in licence; v izjemnih primerih, ko fotografija ni na voljo, je zapis označen kot muzejska postavitev.",
         "Besedila in podatkovni model: Muzej vasi Griblje, 2026. Licenca vsebine: CC BY-SA 4.0.",
       ],
       inspireTitle: "Zakaj tako?",
@@ -434,7 +434,7 @@ export const ui = {
       colophonTitle: "Colophon",
       colophonText: [
         "Staging: Next.js 16 · React 19 · Tailwind CSS 4 · Prisma (SQLite) · Leaflet/OpenStreetMap · shadcn/ui.",
-        "Record illustrations are artistic staging images made for this museum in 2026; authentic archival photographs are bound in the source register.",
+        "Record photographs are authentic images from Wikimedia Commons (or the Slovenian Ethnographic Museum) with stated author and licence; in the rare case no photograph exists, the record is marked as museum staging.",
         "Texts and data model: Griblje Village Museum, 2026. Content licence: CC BY-SA 4.0.",
       ],
       inspireTitle: "Why this way?",
