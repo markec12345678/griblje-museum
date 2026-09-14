@@ -7,6 +7,8 @@ export const dynamic = "force-dynamic";
 /**
  * GET /api/exhibits — cela digitalna zbirka z viri.
  * ?category=kolpa  — filtriranje po tematskem sklopu (opcijsko)
+ *
+ * CORS: `*` — enako kot search/opendata/iiif (enoten odprt muzejski API).
  */
 export async function GET(request: Request) {
   try {
@@ -55,7 +57,12 @@ export async function GET(request: Request) {
 
     return NextResponse.json(
       { count: payload.length, exhibits: payload },
-      { headers: { "Cache-Control": "public, max-age=60" } }
+      {
+        headers: {
+          "Cache-Control": "public, max-age=60",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
     );
   } catch (error) {
     console.error("API /api/exhibits error:", error);
