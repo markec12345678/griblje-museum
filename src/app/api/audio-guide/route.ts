@@ -10,39 +10,69 @@ export const dynamic = "force-dynamic";
  * aplikacij (British Museum, Art Institute of Chicago). Vsak posnetek je
  * izrecno označen kot sintetiziran — nikoli kot avtentično pričevanje.
  *
- * Omejitve TTS: največ 1024 znakov na zahtevo → besedilo delimo na odseke.
+ * Omejitve TTS: sinteza je omejena po dolžini besedila na zahtevo →
+ * besedilo delimo na odseke (MAX_CHARS, z varnostno rezervo).
  */
 
 type Lang = "sl" | "en";
 
 const VOICE: Record<Lang, string> = { sl: "tongtong", en: "jam" };
 const SPEED: Record<Lang, number> = { sl: 0.9, en: 0.95 };
-const MAX_CHARS = 950;
+const MAX_CHARS = 950; // varnostna rezerva pod omejitvijo TTS (1024 znakov)
 
-/* ZAI SDK — enojstven primerek, samo strežniška stran. */
-let zaiPromise: Promise<import("z-ai-web-dev-sdk").default> | null = null;
-async function getZAI() {
+/* ZAI SDK — en odjemalec, ustvarjen enkrat, samo strežniška stran. */
+type ZAIClient = Awaited<
+  ReturnType<(typeof import("z-ai-web-dev-sdk"))["default"]["create"]>
+>;
+let zaiPromise: Promise<ZAIClient> | null = null;
+async function getZAI(): Promise<ZAIClient> {
   if (!zaiPromise) {
-    zaiPromise = import("z-ai-web-dev-sdk").then((m) => m.default);
+    zaiPromise = import("z-ai-web-dev-sdk").then((m) => m.default.create());
   }
-  const ZAI = await zaiPromise;
-  return ZAI.create();
+  return zaiPromise;
 }
 
-/* Pomnilniški predpomnilnik: slug|lang → odseki besedila + WAV posnetki. */
+/* Pomnilniški predpomnilnik: slug|lang → odseki besedila + WAV posnetki.
+ * WAV posnetki so veliki, zato meja velja po SKUPNIH BAJTIH (in ne le po
+ * številu vnosov); ob presegu izločamo najstarejše vnose (vrstni red
+ * vložitve). Sintezo v teku si hkratne enake zahteve delijo (in-flight
+ * dedup) — hladen posnetek se sintetizira samo enkrat. */
 type CacheEntry = { chunks: string[]; audio: (Buffer | undefined)[] };
 const audioCache = new Map<string, CacheEntry>();
-const CACHE_LIMIT = 40;
+const CACHE_MAX_BYTES = 64 * 1024 * 1024; // 64 MB skupaj
+const CACHE_MAX_ENTRIES = 40;
+let cachedBytes = 0;
+
+/* Sinteze, ki trenutno tečejo: "slug|lang|chunk" → obljuba. */
+const inflight = new Map<string, Promise<Buffer>>();
 
 function cacheKey(slug: string, lang: Lang) {
   return `${slug}|${lang}`;
 }
 
-function evictIfNeeded() {
-  while (audioCache.size >= CACHE_LIMIT) {
+function evictIfNeeded(excludeKey?: string) {
+  while (
+    (cachedBytes > CACHE_MAX_BYTES || audioCache.size > CACHE_MAX_ENTRIES) &&
+    audioCache.size > 1
+  ) {
     const oldest = audioCache.keys().next().value;
-    if (oldest === undefined) break;
+    if (oldest === undefined || oldest === excludeKey) break;
+    const entry = audioCache.get(oldest);
+    if (entry) {
+      for (const buf of entry.audio) cachedBytes -= buf?.length ?? 0;
+    }
     audioCache.delete(oldest);
+  }
+}
+
+function storeAudio(key: string, entry: CacheEntry, chunk: number, audio: Buffer) {
+  if (entry.audio[chunk]) return;
+  entry.audio[chunk] = audio;
+  // Štejemo samo bajte, ki so res v predpomnilniku (vnos je medtem
+  // lahko bil izločen).
+  if (audioCache.get(key) === entry) {
+    cachedBytes += audio.length;
+    evictIfNeeded(key);
   }
 }
 
@@ -140,7 +170,7 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const slug = searchParams.get("slug");
     const langParam = searchParams.get("lang");
-    const chunkParam = Number(searchParams.get("chunk") ?? "0", 10);
+    const chunkParam = Number(searchParams.get("chunk") ?? "0");
 
     if (!slug) {
       return NextResponse.json({ error: "Missing slug" }, { status: 400 });
@@ -158,12 +188,12 @@ export async function GET(req: NextRequest) {
     const key = cacheKey(slug, lang);
     let entry = audioCache.get(key);
     if (!entry) {
-      evictIfNeeded();
       entry = {
         chunks: splitIntoChunks(buildNarration(exhibit, lang)),
         audio: [],
       };
       audioCache.set(key, entry);
+      evictIfNeeded(key);
     }
 
     const chunk =
@@ -173,8 +203,21 @@ export async function GET(req: NextRequest) {
 
     let audio = entry.audio[chunk];
     if (!audio) {
-      audio = await synthesize(entry.chunks[chunk], lang);
-      entry.audio[chunk] = audio;
+      // Hkratne enake zahteve delijo obljubo — brez dvojne sinteze.
+      const inflightKey = `${key}|${chunk}`;
+      let pending = inflight.get(inflightKey);
+      if (!pending) {
+        pending = synthesize(entry.chunks[chunk], lang)
+          .then((buffer) => {
+            storeAudio(key, entry, chunk, buffer);
+            return buffer;
+          })
+          .finally(() => {
+            inflight.delete(inflightKey);
+          });
+        inflight.set(inflightKey, pending);
+      }
+      audio = await pending;
     }
 
     return new NextResponse(new Uint8Array(audio), {
