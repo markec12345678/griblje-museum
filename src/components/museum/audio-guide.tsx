@@ -10,11 +10,20 @@ import { Button } from "@/components/ui/button";
  * Avdio vodnik — sintetizirana pripoved (TTS) po zgledu vodilnih muzejskih
  * aplikacij. Posnetek je vedno označen kot sintetiziran: muzejska iskrenost
  * prepoveduje zamenjavo z avtentičnim pričevanjem.
+ *
+ * variant="minute" predvaja enominutno zgodbo (Muzej v minuti, vzorec
+ * One Minute Wonders) namesto celotnega vodnika.
  */
 
 type Status = "idle" | "loading" | "buffering" | "playing" | "error";
 
-export function AudioGuide({ exhibit }: { exhibit: ExhibitDTO }) {
+export function AudioGuide({
+  exhibit,
+  variant = "full",
+}: {
+  exhibit: ExhibitDTO;
+  variant?: "full" | "minute";
+}) {
   const { t, lang } = useLang();
   const [status, setStatus] = React.useState<Status>("idle");
   const [progress, setProgress] = React.useState({ chunk: 0, total: 1 });
@@ -50,7 +59,7 @@ export function AudioGuide({ exhibit }: { exhibit: ExhibitDTO }) {
   React.useEffect(() => stop, [stop]);
   React.useEffect(() => {
     stop();
-  }, [stop, exhibit.slug, lang]);
+  }, [stop, exhibit.slug, lang, variant]);
 
   const fetchChunk = React.useCallback(
     async (chunk: number): Promise<Blob | null> => {
@@ -58,7 +67,7 @@ export function AudioGuide({ exhibit }: { exhibit: ExhibitDTO }) {
         const res = await fetch(
           `/api/audio-guide?slug=${encodeURIComponent(
             exhibit.slug
-          )}&lang=${lang}&chunk=${chunk}`
+          )}&lang=${lang}${variant === "minute" ? "&minute=1" : ""}&chunk=${chunk}`
         );
         if (!res.ok) return null;
         const total = Number(res.headers.get("X-Total-Chunks") ?? "1");
@@ -68,7 +77,7 @@ export function AudioGuide({ exhibit }: { exhibit: ExhibitDTO }) {
         return null;
       }
     },
-    [exhibit.slug, lang]
+    [exhibit.slug, lang, variant]
   );
 
   const playBlob = React.useCallback(
@@ -170,7 +179,11 @@ export function AudioGuide({ exhibit }: { exhibit: ExhibitDTO }) {
           className="min-h-11"
           aria-pressed={playing}
           aria-label={
-            playing ? t.audio.stop : `${t.audio.play} — ${t.audio.noteShort}`
+            playing
+              ? t.audio.stop
+              : variant === "minute"
+                ? `${t.minute.play} — ${t.audio.noteShort}`
+                : `${t.audio.play} — ${t.audio.noteShort}`
           }
           onClick={() => {
             if (playing) stop();
@@ -184,7 +197,7 @@ export function AudioGuide({ exhibit }: { exhibit: ExhibitDTO }) {
           ) : (
             <Headphones className="mr-2 h-4 w-4" aria-hidden="true" />
           )}
-          {playing ? t.audio.stop : t.audio.play}
+          {playing ? t.audio.stop : variant === "minute" ? t.minute.play : t.audio.play}
         </Button>
 
         {status === "playing" && progress.total > 1 && (

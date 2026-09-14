@@ -16,6 +16,8 @@ export const ui = {
     nav: {
       domov: "Domov",
       zbirka: "Zbirka",
+      tema: "Teme",
+      razpolozenje: "Po razpoloženju",
       zgodbe: "Zgodbe",
       casovnica: "Časovnica",
       karta: "Karta",
@@ -496,6 +498,84 @@ export const ui = {
     offline: {
       banner: "Brez povezave — muzej je na voljo iz predpomnilnika.",
     },
+    themes: {
+      kicker: "Razišči po temah",
+      title: "Šest vrat v zbirko",
+      subtitle:
+        "Vsaka tema je majhna, kurirana vstopna točka — po vzoru tematskih strani nove zbirke Rijksmuseuma. Uvod, zapisi, sprehodi in sorodne teme na enem mestu.",
+      explore: "Razišči temo",
+      countLabel: (n: number) => (n === 1 ? "1 zapis" : n === 2 ? "2 zapisa" : n <= 4 ? `${n} zapisi` : `${n} zapisov`),
+      backToThemes: "Vse teme",
+      share: "Kopiraj povezavo teme",
+      shared: "Povezava kopirana",
+      allInTheme: "Zapisi teme",
+      walksAbout: "Sprehodi, ki se dotaknejo teme",
+      walkStops: (n: number) => (n === 1 ? "1 postaja te teme" : n === 2 ? "2 postaji te teme" : n <= 4 ? `${n} postaje te teme` : `${n} postaj te teme`),
+      discoverMore: "Odkrij več",
+      relatedTheme: "Sorodna tema",
+      viewTheme: "Poglej temo",
+    },
+    mood: {
+      nav: "Po razpoloženju",
+      kicker: "Vodnik po razpoloženju",
+      title: "Kaj vas danes zanima?",
+      subtitle:
+        "Tri vprašanja — in muzej sestavi vaš osebni izbor. Vzorec: Art Explorer iz nove zbirke Rijksmuseuma; odgovorite, pustite, da vas preseneti, shranite ali delite.",
+      subtitleShort:
+        "Ne veste, kje začeti? Tri vprašanja — in zbirka se sama odpre pred vami.",
+      cta: "Ne vem, kje začeti",
+      progress: "Napredek vodnika",
+      questionOf: (i: number, n: number) => `Vprašanje ${i} od ${n}`,
+      chosen: "izbrano",
+      back: "Nazaj",
+      replay: "Ponovi zadnji izbor",
+      restart: "Začni znova",
+      resultsTitle: "Vaš današnji muzej",
+      resultsSub: (n: number) =>
+        n === 1
+          ? "Vodnik je izbral en zapis za vas."
+          : `Vodnik je izbral ${n === 2 ? "2 zapisa" : n <= 4 ? `${n} zapise` : `${n} zapisov`} za vas.`,
+      why: "Zato, ker",
+      share: "Deli izbor",
+      shared: "Povezava kopirana",
+      timeShortTitle: "Dve minuti? Poslušajte.",
+      timeShortText:
+        "Vsak zapis ima enominutno zgodbo — odprite ga in izberite »V eni minuti«.",
+      timeLongTitle: "Časa je dovolj za sprehod.",
+      timeLongText:
+        "Vodeni sprehod po vodi vodi skozi štiri postaje — kjer se začne vsak obisk Gribelj.",
+      ctaMinute: "Muzej v minuti",
+      ctaWalk: "Začni sprehod",
+    },
+    connect: {
+      openTool: "Poveži dva zapisa",
+      relatedTitle: "Povezani zapisi",
+      toolTitle: "Poveži zbirko",
+      toolSub:
+        "Kakor »x Degrees of Separation« Googlove Arts & Culture: izberita dva zapisa in muzej najde pot med njima — vsak skok ima svoj razlog.",
+      pickA: "Prvi zapis",
+      pickB: "Drugi zapis",
+      pickPlaceholder: "Izberite zapis …",
+      samePick: "Izberite dva različna zapisa.",
+      directTitle: "Neposredna povezava",
+      pathTitle: (n: number) =>
+        n === 1 ? "Pot prek enega zapisa" : `Pot prek ${n} zapisov`,
+      share: "Kopiraj povezavo poti",
+      shared: "Povezava kopirana",
+      pathNote: "Vsak skok nosi razlog: ista tema, prekrivajoče obdobje, isti vir, bližina na karti ali kuratorska vez tem.",
+      noPath: "Med tema zapisoma ni povezave — izberita drug par.",
+    },
+    minute: {
+      kicker: "Muzej v minuti",
+      title: "Ena minuta, ena zgodba",
+      subtitle:
+        "Najkrajša oblika obiska — po vzoru One Minute Wonders muzejev Brighton & Hove. Vsak dan tri zgodbe; poslušajte ali preberite prepis.",
+      play: "Poslušaj · 1 min",
+      transcript: "Prepis",
+      variantLabel: "Dolžina posnetka",
+      fullGuide: "Cel vodnik",
+      minuteGuide: "V eni minuti",
+    },
   },
   en: {
     museumName: "Griblje Village Museum",
@@ -503,6 +583,8 @@ export const ui = {
     nav: {
       domov: "Home",
       zbirka: "Collection",
+      tema: "Themes",
+      razpolozenje: "By mood",
       zgodbe: "Stories",
       casovnica: "Timeline",
       karta: "Map",
@@ -979,6 +1061,84 @@ export const ui = {
     },
     offline: {
       banner: "You are offline — the museum is served from the cache.",
+    },
+    themes: {
+      kicker: "Explore by theme",
+      title: "Six doors into the collection",
+      subtitle:
+        "Each theme is a small, curated entry point — in the spirit of the theme pages of the Rijksmuseum's new collection. An intro, records, walks and related themes in one place.",
+      explore: "Explore the theme",
+      countLabel: (n: number) => (n === 1 ? "1 record" : `${n} records`),
+      backToThemes: "All themes",
+      share: "Copy theme link",
+      shared: "Link copied",
+      allInTheme: "Records in this theme",
+      walksAbout: "Walks that touch this theme",
+      walkStops: (n: number) => (n === 1 ? "1 stop in this theme" : `${n} stops in this theme`),
+      discoverMore: "Discover more",
+      relatedTheme: "Related theme",
+      viewTheme: "View theme",
+    },
+    mood: {
+      nav: "By mood",
+      kicker: "Mood guide",
+      title: "What are you curious about today?",
+      subtitle:
+        "Three questions — and the museum composes your personal selection. Modelled on the Art Explorer of the Rijksmuseum's new collection: answer, let it surprise you, save or share.",
+      subtitleShort:
+        "Not sure where to start? Three questions — and the collection opens itself to you.",
+      cta: "Not sure where to start",
+      progress: "Guide progress",
+      questionOf: (i: number, n: number) => `Question ${i} of ${n}`,
+      chosen: "chosen",
+      back: "Back",
+      replay: "Replay last selection",
+      restart: "Start over",
+      resultsTitle: "Your museum today",
+      resultsSub: (n: number) =>
+        n === 1
+          ? "The guide picked one record for you."
+          : `The guide picked ${n} records for you.`,
+      why: "Because it",
+      share: "Share selection",
+      shared: "Link copied",
+      timeShortTitle: "Two minutes? Listen.",
+      timeShortText:
+        "Every record has a one-minute story — open one and choose “In one minute”.",
+      timeLongTitle: "There is time for a walk.",
+      timeLongText:
+        "The water walk leads through four stops — where every visit to Griblje begins.",
+      ctaMinute: "The museum in a minute",
+      ctaWalk: "Start a walk",
+    },
+    connect: {
+      openTool: "Connect two records",
+      relatedTitle: "Related records",
+      toolTitle: "Connect the collection",
+      toolSub:
+        "Like Google Arts & Culture's “x Degrees of Separation”: pick two records and the museum finds a path between them — every hop carries its reason.",
+      pickA: "First record",
+      pickB: "Second record",
+      pickPlaceholder: "Pick a record …",
+      samePick: "Pick two different records.",
+      directTitle: "Direct connection",
+      pathTitle: (n: number) =>
+        n === 1 ? "A path through one record" : `A path through ${n} records`,
+      share: "Copy path link",
+      shared: "Link copied",
+      pathNote: "Every hop carries a reason: same theme, overlapping period, same source, closeness on the map, or a curatorial link of themes.",
+      noPath: "There is no connection between these two records — pick another pair.",
+    },
+    minute: {
+      kicker: "The museum in a minute",
+      title: "One minute, one story",
+      subtitle:
+        "The shortest form of a visit — after the One Minute Wonders of Brighton & Hove Museums. Three stories a day; listen or read the transcript.",
+      play: "Listen · 1 min",
+      transcript: "Transcript",
+      variantLabel: "Recording length",
+      fullGuide: "Full guide",
+      minuteGuide: "In one minute",
     },
   },
 } as const;
