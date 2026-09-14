@@ -6,7 +6,7 @@ import type { MuseumView } from "@/components/museum/header";
 
 export function Footer({ onNavigate }: { onNavigate: (view: MuseumView) => void }) {
   const { t } = useLang();
-  const year = 2026;
+  const year = new Date().getFullYear();
 
   return (
     <footer className="mt-auto border-t border-border bg-card">
