@@ -29,6 +29,7 @@ import { useCompareSelection } from "@/lib/compare-tracker";
 import { useMyWalk } from "@/lib/my-walk-tracker";
 import { relatedExhibits } from "@/lib/connections";
 import { hasMinuteStory } from "@/components/museum/minute-stories";
+import { ObjectBiography } from "@/components/museum/object-biography";
 import type { ExhibitCategory, ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -389,6 +390,9 @@ export function ExhibitDialog({
                   </p>
                 ))}
               </div>
+
+              {/* Življenje predmeta — provenance časovnica (vzorec: Art Tracks) */}
+              <ObjectBiography exhibit={exhibit} />
 
               {/* Lega */}
               {exhibit.lat != null && exhibit.lng != null && (
