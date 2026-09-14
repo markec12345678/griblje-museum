@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 export type MuseumView =
   | "domov"
   | "zbirka"
+  | "tema"
+  | "razpolozenje"
   | "zgodbe"
   | "casovnica"
   | "karta"
@@ -21,6 +23,8 @@ export type MuseumView =
 export const VIEW_ORDER: MuseumView[] = [
   "domov",
   "zbirka",
+  "tema",
+  "razpolozenje",
   "zgodbe",
   "casovnica",
   "karta",
@@ -34,9 +38,16 @@ export const VIEW_ORDER: MuseumView[] = [
  * Pogledi v namizni navigaciji. »Za otroke« je namenoma izpuščen —
  * kot pri Van Goghovem muzeju in Louvru (Petite Galerie) je otroška
  * pot izpostavljena na domači strani, v nogi in v mobilnem meniju,
- * ne pa stisnjena med glavne rubrike.
+ * ne pa stisnjena med glavne rubrike. Tematska središča in vodnik po
+ * razpoloženju (vzorec Rijksmuseuma) so dosegljivi iz zbirke in
+ * domače strani — namizna vrstica ostane pregledna.
  */
-const DESKTOP_NAV_VIEWS = VIEW_ORDER.filter((view) => view !== "zaOtroke");
+const DESKTOP_NAV_VIEWS = VIEW_ORDER.filter(
+  (view) => view !== "zaOtroke" && view !== "tema" && view !== "razpolozenje"
+);
+
+/** Mobilni spustni meni — vključi vse razen vodnika po razpoloženju. */
+const MOBILE_NAV_VIEWS = VIEW_ORDER.filter((view) => view !== "razpolozenje");
 
 export function Header({
   view,
@@ -200,7 +211,7 @@ export function Header({
           className="border-t border-border bg-background px-4 pb-4 pt-2 md:hidden"
         >
           <ul className="grid gap-1">
-            {VIEW_ORDER.map((key) => (
+            {MOBILE_NAV_VIEWS.map((key) => (
               <li key={key}>
                 <button
                   type="button"
