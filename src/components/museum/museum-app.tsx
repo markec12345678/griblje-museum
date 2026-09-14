@@ -28,6 +28,7 @@ import { parsePostcardParams, type PostcardData } from "@/lib/postcard";
 import type { PuzzleSize } from "@/lib/puzzle";
 import { getAdventIndex, isDoorUnlocked } from "@/lib/seasonal-shelf";
 import { SearchDialog } from "@/components/museum/search-dialog";
+import { GuideDialog } from "@/components/museum/guide-dialog";
 import { useLang } from "@/lib/i18n";
 import { markVisited } from "@/lib/visit-tracker";
 import { markWalkCompleted } from "@/lib/walk-tracker";
@@ -53,6 +54,7 @@ export function MuseumApp() {
   const [selectedExhibit, setSelectedExhibit] = React.useState<ExhibitDTO | null>(null);
   const [searchOpen, setSearchOpen] = React.useState(false);
   const [compareOpen, setCompareOpen] = React.useState(false);
+  const [guideOpen, setGuideOpen] = React.useState(false);
   const reduceMotion = useReducedMotion();
 
   // --- Muzejski sprehodi -----------------------------------------------
@@ -125,6 +127,10 @@ export function MuseumApp() {
 
   React.useEffect(() => {
     initialDeepLink.current = new URLSearchParams(window.location.search).get("exhibit");
+    // Globoka povezava ?govor=1 — odpre pogovor z zbirko (AI vodnik).
+    if (new URLSearchParams(window.location.search).get("govor") === "1") {
+      setGuideOpen(true);
+    }
     const walkId = new URLSearchParams(window.location.search).get("walk");
     if (walkId) {
       const stop = Number(new URLSearchParams(window.location.search).get("stop") ?? "1");
@@ -423,12 +429,17 @@ export function MuseumApp() {
     window.history.replaceState(window.history.state, "", url);
   }, [slowExhibit, puzzleExhibit, puzzleSize, postcardExhibit, postcardInitial]);
 
-  // --- Bližnjice za iskanje (Ctrl/Cmd+K ali /) --------------------------
+  // --- Bližnjice za iskanje (Ctrl/Cmd+K ali /) in vodnika (Ctrl/Cmd+G) ----
   React.useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
         event.preventDefault();
         setSearchOpen(true);
+        return;
+      }
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "g") {
+        event.preventDefault();
+        setGuideOpen(true);
         return;
       }
       if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
@@ -568,6 +579,7 @@ export function MuseumApp() {
         onStartWalk={(walkId, stopIndex) =>
           startWalk(walkId, stopIndex, exhibitsQuery.data ?? [])
         }
+        onOpenGuide={() => setGuideOpen(true)}
         adventHighlight={adventHighlight}
       />
     ),
@@ -653,7 +665,7 @@ export function MuseumApp() {
         {t.a11y.skipToContent}
       </a>
 
-      <Header view={view} onNavigate={navigate} onOpenSearch={() => setSearchOpen(true)} />
+      <Header view={view} onNavigate={navigate} onOpenSearch={() => setSearchOpen(true)} onOpenGuide={() => setGuideOpen(true)} />
 
       <main id="vsebina" className="flex-1">
         {loading ? (
@@ -733,6 +745,14 @@ export function MuseumApp() {
         exhibits={exhibitsQuery.data ?? []}
         onOpenExhibit={(ex) => openExhibit(ex)}
         onNavigate={navigate}
+      />
+
+      {/* Pogovor z zbirko — uzidani AI vodnik (z-ai-web-dev-sdk, strežniško) */}
+      <GuideDialog
+        open={guideOpen}
+        onOpenChange={setGuideOpen}
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={openExhibit}
       />
 
       {/* Primerjalnik: pladenj izbire + primerjava na eni strani */}
