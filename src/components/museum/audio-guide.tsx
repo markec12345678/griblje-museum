@@ -61,7 +61,7 @@ export function AudioGuide({ exhibit }: { exhibit: ExhibitDTO }) {
           )}&lang=${lang}&chunk=${chunk}`
         );
         if (!res.ok) return null;
-        const total = Number(res.headers.get("X-Total-Chunks") ?? "1", 10);
+        const total = Number(res.headers.get("X-Total-Chunks") ?? "1");
         if (Number.isFinite(total) && total > 0) totalRef.current = total;
         return await res.blob();
       } catch {
