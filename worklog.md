@@ -196,3 +196,23 @@ Stage Summary:
 - Hero zdaj prikazuje PRavi Griblje: vas z rdečimi strehami in zvonikom sv. Vida (foto Eleassar, CC BY-SA 3.0), kredit viden v spodnjem desnem kotu
 - E2E (agent-browser + VLM): naslovna 9/10 (vas jasno prepoznavna, besedilo berljivo, kredit točen), dialog zapisa (fotka vasi + kredit + viri), mobilna 375 px brez prekoračitve (5545 px višina), IIIF collection 14 + manifest 200, /api/exhibits 200, ni napak v konzoli; »N« v levem spodnjem kotu je Next.js dev indikator, ne napaka
 - bun run lint: 0 napak; dev.log brez napak; baza: 14 zapisov, 25 virov, 5 dogodkov, 4 zgodbe
+
+---
+Task ID: 8
+Agent: Main agent (Z.ai Code)
+Task: Raziskava vrzeli po norveškem/DigitaltMuseum standardu → enotno iskanje z UI, globoke povezave, deljene povezave zapisov
+
+Work Log:
+- Analiza vrzeli: iskalni API (/api/search) obstaja brez UI-ja; IIIF manifesti in iskalni API objavljajo naslove /?exhibit=<slug> in /#<pogled>, ki jih aplikacija ni prebrala — obe obljubi sta bili neizpolnjeni
+- NOVO src/components/museum/search-dialog.tsx: paletno okno na cmdk (shouldFilter=false — filtrira strežnik), odboj 280 ms + AbortController, stanje z aria-live (Iščem/N zadetkov/ni zadetkov), skupine Zapisi/Zgodbe/Dogodki, sličice zapisov, tipkovna navigacija (puščice/Enter), vrstice 48 px, i18n v obeh jezikih
+- Header: iskalni gumb (aria-keyshortcuts Ctrl+K) + izvožen VIEW_ORDER
+- MuseumApp: globoke povezave — ob prihodu prebere ?exhibit= in #pogled, zapis odpre, ko pride zbirka; dvosmerna sinhronizacija (replaceState) — odprt zapis piše ?exhibit=<slug>, zaprt pobriše; pogled piše #<pogled>; bližnjice Ctrl/Cmd+K in / (z zaščito pred vnosnimi polji)
+- ExhibitDialog: gumb »Kopiraj povezavo do zapisa« v oddelku Navedba (Async Clipboard + execCommand padec; povratna informacija Povezava kopirana / Kopiranje ni uspelo, aria-live)
+- README: nove vrstici funkcij (enotno iskanje po vzoru DigitaltMuseum, globoke povezave)
+- Popravki med E2V: uvoz "lib"→"@/lib/i18n" (prehodna napaka prevajanja), dotikalne tarče 44→48 px po VLM priporočilu
+
+Stage Summary:
+- E2E preverjeno: /?exhibit=sveti-vid samodejno odpre dialog; Escape počisti URL; Ctrl+K odpre iskanje s fokusom; kolpa→7 zadetkov (Zapisi+Zgodbe), crnomelj→3 (diakritike), 1945→3 (vse tri skupine), cerkev→1; Enter odpre zapis + URL ?exhibit=evakuacija-1945; #zbirka odpre zbirko; kopiranje: pravi klik→»Povezava kopirana«, brez user-activation→»Kopiranje ni uspelo«
+- Mobilna 375 px: glava brez prekoračitve, iskanje deluje, vrstice 68 px; VLM: iskanje 9/10 (namizno), 8/10 (mobilno, pred povečanjem vrstic)
+- bun run lint: 0 napak; konzola po svežem nalaganju 0 napak/0 opozoril; dev.log zdrav (iskanje 10 ms)
+- Muzej zdaj izpolnjuje obe prej odprti obljubi odprtih podatkov (IIIF homepage + iskalni URL-i) in ima polno iskalno izkušnjo po vzoru DigitaltMuseum

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Header, type MuseumView } from "@/components/museum/header";
+import { Header, VIEW_ORDER, type MuseumView } from "@/components/museum/header";
 import { Footer } from "@/components/museum/footer";
 import { HomeView } from "@/components/museum/home-view";
 import { CollectionView } from "@/components/museum/collection-view";
@@ -11,6 +11,7 @@ import { TimelineView } from "@/components/museum/timeline-view";
 import { EventsView } from "@/components/museum/events-view";
 import { MapView } from "@/components/museum/map-view";
 import { AboutView } from "@/components/museum/about-view";
+import { SearchDialog } from "@/components/museum/search-dialog";
 import { useLang } from "@/lib/i18n";
 import { markVisited } from "@/lib/visit-tracker";
 import { useExhibits, useEvents, useStories } from "@/hooks/use-museum";
@@ -24,11 +25,93 @@ export function MuseumApp() {
   const { t } = useLang();
   const [view, setView] = React.useState<MuseumView>("domov");
   const [selectedExhibit, setSelectedExhibit] = React.useState<ExhibitDTO | null>(null);
+  const [searchOpen, setSearchOpen] = React.useState(false);
   const reduceMotion = useReducedMotion();
 
   const exhibitsQuery = useExhibits();
   const eventsQuery = useEvents();
   const storiesQuery = useStories();
+
+  // --- Globoke povezave -------------------------------------------------
+  // IIIF manifesti in iskalni API objavljajo naslove strani oblike
+  // /?exhibit=<slug> in /#<pogled>; ob prihodu na tak URL muzej zapis
+  // odpre sam. Ob vsaki spremembi se URL tiho posodobi (replaceState),
+  // tako da je vsak zapis deljiv s kopiranjem naslovne vrstice.
+  const initialDeepLink = React.useRef<string | null>(null);
+  const deepLinkHandled = React.useRef(false);
+
+  React.useEffect(() => {
+    initialDeepLink.current = new URLSearchParams(window.location.search).get("exhibit");
+    const hash = window.location.hash.replace(/^#/, "");
+    if ((VIEW_ORDER as string[]).includes(hash) && hash !== "domov") {
+      setView(hash as MuseumView);
+    }
+  }, []);
+
+  // Odpri globoko povezan zapis, ko pride zbirka s strežnika.
+  React.useEffect(() => {
+    if (deepLinkHandled.current) return;
+    if (initialDeepLink.current === null && exhibitsQuery.data) {
+      deepLinkHandled.current = true;
+      return;
+    }
+    const slug = initialDeepLink.current;
+    if (!slug || !exhibitsQuery.data) return;
+    deepLinkHandled.current = true;
+    const ex = exhibitsQuery.data.find((e) => e.slug === slug);
+    if (ex) {
+      setSelectedExhibit(ex);
+      markVisited(ex.slug);
+    }
+  }, [exhibitsQuery.data]);
+
+  // URL v korak z odprtim zapisom (?exhibit=<slug>).
+  const urlSynced = React.useRef(false);
+  React.useEffect(() => {
+    if (!urlSynced.current) {
+      urlSynced.current = true;
+      return;
+    }
+    const url = new URL(window.location.href);
+    if (selectedExhibit) url.searchParams.set("exhibit", selectedExhibit.slug);
+    else url.searchParams.delete("exhibit");
+    window.history.replaceState(window.history.state, "", url);
+  }, [selectedExhibit]);
+
+  // URL v korak s pogledom (#zbirka, #zgodbe …).
+  const viewSynced = React.useRef(false);
+  React.useEffect(() => {
+    if (!viewSynced.current) {
+      viewSynced.current = true;
+      return;
+    }
+    const url = new URL(window.location.href);
+    url.hash = view === "domov" ? "" : view;
+    window.history.replaceState(window.history.state, "", url);
+  }, [view]);
+
+  // --- Bližnjice za iskanje (Ctrl/Cmd+K ali /) --------------------------
+  React.useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        setSearchOpen(true);
+        return;
+      }
+      if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
+        const target = event.target as HTMLElement | null;
+        const typing = target?.closest(
+          "input, textarea, select, [contenteditable='true']"
+        );
+        if (!typing) {
+          event.preventDefault();
+          setSearchOpen(true);
+        }
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const navigate = React.useCallback((next: MuseumView) => {
     setView(next);
@@ -102,7 +185,7 @@ export function MuseumApp() {
         {t.a11y.skipToContent}
       </a>
 
-      <Header view={view} onNavigate={navigate} />
+      <Header view={view} onNavigate={navigate} onOpenSearch={() => setSearchOpen(true)} />
 
       <main id="vsebina" className="flex-1">
         {loading ? (
@@ -156,6 +239,14 @@ export function MuseumApp() {
         exhibit={selectedExhibit}
         onClose={() => setSelectedExhibit(null)}
         onShowOnMap={showOnMap}
+      />
+
+      <SearchDialog
+        open={searchOpen}
+        onOpenChange={setSearchOpen}
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+        onNavigate={navigate}
       />
     </div>
   );

@@ -2,21 +2,23 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { Moon, Sun, Menu, Landmark } from "lucide-react";
+import { Moon, Search, Sun, Menu, Landmark } from "lucide-react";
 import { useLang, type Lang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export type MuseumView = "domov" | "zbirka" | "zgodbe" | "casovnica" | "karta" | "dogodki" | "oMuzeju";
 
-const VIEW_ORDER: MuseumView[] = ["domov", "zbirka", "zgodbe", "casovnica", "karta", "dogodki", "oMuzeju"];
+export const VIEW_ORDER: MuseumView[] = ["domov", "zbirka", "zgodbe", "casovnica", "karta", "dogodki", "oMuzeju"];
 
 export function Header({
   view,
   onNavigate,
+  onOpenSearch,
 }: {
   view: MuseumView;
   onNavigate: (view: MuseumView) => void;
+  onOpenSearch: () => void;
 }) {
   const { t, lang, setLang } = useLang();
   const { resolvedTheme, setTheme } = useTheme();
@@ -95,6 +97,18 @@ export function Header({
         </nav>
 
         <div className="ml-auto flex items-center gap-2 md:ml-0">
+          {/* Enotno iskanje */}
+          <Button
+            variant="outline"
+            size="icon"
+            className="size-11"
+            onClick={onOpenSearch}
+            aria-label={t.search.openLabel}
+            aria-keyshortcuts="Control+K"
+          >
+            <Search className="h-4.5 w-4.5" aria-hidden="true" />
+          </Button>
+
           {/* Jezikovna stikala SLO/EN */}
           <div
             role="group"

@@ -27,6 +27,10 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   vizualno in z oznako »približno«)
 - 📖 **Zgodbe** — pripovedi z iskrenim pozivom za pričevanja skupnosti
 - 📅 **Dogodki** — program z notranjimi in zunanjimi dogodki
+- 🔎 **Enotno iskanje** — paletno okno (Ctrl+K ali `/`) po zapisih, zgodbah in
+  dogodkih, neobčutljivo na diakritike — po vzoru DigitaltMuseum
+- 🔗 **Globoke povezave** — vsak zapis ima deljiv URL `/?exhibit=<slug>`, pogledi
+  `#zbirka`, `#zgodbe` … (isti format, ki ga objavljata IIIF in iskalni API)
 - 🌍 **SLO/EN** — popolna dvojezičnost z vztrajnostjo izbire
 - ♿ **Dostopnost** — izjava o dostopnosti po vzoru norveških muzejev (*universell utforming*),
   tipkovna navigacija, `prefers-reduced-motion`, semantični HTML

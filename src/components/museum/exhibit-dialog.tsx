@@ -5,9 +5,11 @@ import Image from "next/image";
 import {
   Archive,
   BookOpen,
+  Check,
   ExternalLink,
   FileText,
   Globe,
+  Link2,
   Map as MapIcon,
   MapPin,
   Mic,
@@ -51,6 +53,34 @@ export function ExhibitDialog({
   const { t, lang } = useLang();
   const es = useExhibitStrings();
   const open = exhibit !== null;
+
+  // Kopiranje deljive povezave do zapisa (globoka povezava ?exhibit=<slug>).
+  const [copyState, setCopyState] = React.useState<"idle" | "ok" | "fail">("idle");
+  React.useEffect(() => setCopyState("idle"), [exhibit?.slug]);
+
+  const copyLink = async () => {
+    if (!exhibit) return;
+    const url = `${window.location.origin}/?exhibit=${exhibit.slug}`;
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        // Zasnova za starejše brskalnike brez Async Clipboard API-ja.
+        const area = document.createElement("textarea");
+        area.value = url;
+        area.style.position = "fixed";
+        area.style.opacity = "0";
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        document.body.removeChild(area);
+      }
+      setCopyState("ok");
+    } catch {
+      setCopyState("fail");
+    }
+    window.setTimeout(() => setCopyState("idle"), 2600);
+  };
 
   const storyParagraphs = exhibit ? es.story(exhibit).split("\n\n").filter(Boolean) : [];
 
@@ -197,9 +227,29 @@ export function ExhibitDialog({
 
               {/* Navedba */}
               <section aria-labelledby="navedba-zapisa" className="rounded-lg bg-muted p-4">
-                <h3 id="navedba-zapisa" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  {t.collection.citation}
-                </h3>
+                <div className="flex flex-wrap items-start justify-between gap-3">
+                  <h3 id="navedba-zapisa" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    {t.collection.citation}
+                  </h3>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="min-h-9"
+                    aria-live="polite"
+                    onClick={copyLink}
+                  >
+                    {copyState === "ok" ? (
+                      <Check className="mr-1.5 h-4 w-4 text-primary" aria-hidden="true" />
+                    ) : (
+                      <Link2 className="mr-1.5 h-4 w-4" aria-hidden="true" />
+                    )}
+                    {copyState === "ok"
+                      ? t.share.copied
+                      : copyState === "fail"
+                        ? t.share.copyFailed
+                        : t.share.copyLink}
+                  </Button>
+                </div>
                 <p className="museum-scroll mt-2 overflow-x-auto font-mono text-xs leading-relaxed text-foreground/85">
                   Muzej vasi Griblje (2026). »{es.title(exhibit)}«. Zapis{" "}
                   <span className="text-primary">{exhibit.slug}</span>. CC BY-SA 4.0.{" "}
