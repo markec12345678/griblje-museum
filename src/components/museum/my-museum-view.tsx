@@ -7,6 +7,7 @@ import { Check, Heart, Link2, Trash2 } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { useFavorites } from "@/lib/favorite-tracker";
+import { MyWalkSection } from "@/components/museum/my-walk-section";
 import type { ExhibitDTO } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -25,10 +26,12 @@ export function MyMuseumView({
   exhibits,
   onOpenExhibit,
   onNavigate,
+  onStartMyWalk,
 }: {
   exhibits: ExhibitDTO[];
   onOpenExhibit: (exhibit: ExhibitDTO) => void;
   onNavigate: (view: "zbirka") => void;
+  onStartMyWalk: () => void;
 }) {
   const { t, lang } = useLang();
   const es = useExhibitStrings();
@@ -107,6 +110,14 @@ export function MyMuseumView({
           aria-label={`${percent}% ${t.myMuseum.progressLabel}`}
         />
       </div>
+
+      {/* Moj sprehod — osebna, urejena pot skozi zbirko */}
+      <MyWalkSection
+        exhibits={exhibits}
+        onOpenExhibit={onOpenExhibit}
+        onNavigate={onNavigate}
+        onStartWalk={onStartMyWalk}
+      />
 
       {saved.length === 0 ? (
         <div className="mt-12 mx-auto max-w-lg rounded-xl border border-dashed border-border bg-card/50 p-10 text-center">

@@ -7,9 +7,36 @@ import { useLang, type Lang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-export type MuseumView = "domov" | "zbirka" | "zgodbe" | "casovnica" | "karta" | "dogodki" | "oMuzeju" | "mojMuzej";
+export type MuseumView =
+  | "domov"
+  | "zbirka"
+  | "zgodbe"
+  | "casovnica"
+  | "karta"
+  | "dogodki"
+  | "oMuzeju"
+  | "mojMuzej"
+  | "zaOtroke";
 
-export const VIEW_ORDER: MuseumView[] = ["domov", "zbirka", "zgodbe", "casovnica", "karta", "dogodki", "oMuzeju", "mojMuzej"];
+export const VIEW_ORDER: MuseumView[] = [
+  "domov",
+  "zbirka",
+  "zgodbe",
+  "casovnica",
+  "karta",
+  "dogodki",
+  "oMuzeju",
+  "mojMuzej",
+  "zaOtroke",
+];
+
+/**
+ * Pogledi v namizni navigaciji. »Za otroke« je namenoma izpuščen —
+ * kot pri Van Goghovem muzeju in Louvru (Petite Galerie) je otroška
+ * pot izpostavljena na domači strani, v nogi in v mobilnem meniju,
+ * ne pa stisnjena med glavne rubrike.
+ */
+const DESKTOP_NAV_VIEWS = VIEW_ORDER.filter((view) => view !== "zaOtroke");
 
 export function Header({
   view,
@@ -71,7 +98,7 @@ export function Header({
           aria-label={t.a11y.mainNav}
           className="mx-auto hidden items-center gap-1 md:flex"
         >
-          {VIEW_ORDER.map((key) => (
+          {DESKTOP_NAV_VIEWS.map((key) => (
             <button
               key={key}
               type="button"
