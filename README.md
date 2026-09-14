@@ -70,6 +70,20 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   `/?path=<slugA>,<slugB>`
 - ⏱️ **Muzej v minuti** — enominutne zgodbe za vseh 20 zapisov s TTS in prepisom
   (vzorec One Minute Wonders, Brighton & Hove Museums); dnevni izbor treh zgodb
+- 🍂 **Sezonska polica** — kurirani izbor zbirke po letnem času, samodejna rotacija
+  glede na datum obiskovalca (vzorec »object of the month«, Saffron Walden Museum)
+- 🎄 **Adventni koledar** — od 1. do 24. decembra se vsak dan odklene ena vrata
+  zbirke po lokalnem datumu (vzorec Glencairn Museum, Ashmolean #AshmoleanAdvent),
+  deljiva povezava `/?advent=<dan>`
+- ⏳ **Življenje predmeta** — provenance časovnica za vsak zapis: faze, viri in
+  stopnje zanesljivosti, vrzeli izrecno prikazane (vzorec Art Tracks, Carnegie
+  Museum of Art)
+- 🖼️ **Moja galerija časti** — CSS-3D soba shranjenih zapisov brez WebGL (vzorec
+  My Gallery of Honour, Rijksmuseum 2024 + Codrops 3D galerija), vlečenje,
+  puščice in mirni način za občutljivost na gibanje
+- 🎬 **Filmski ogled zbirke** — samodejni ogled osebne zbirke z učinkom Ken Burns
+  in neobvezno TTS pripovedjo (vzorec samodejnih video ogledov zbirk Rijksmuseuma);
+  soba in film delita deljivo povezavo `/?gallery=<slug>,<slug>`
 
 ## Tehnologija / Tech stack
 

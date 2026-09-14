@@ -13,6 +13,9 @@ import { WalksSection } from "@/components/museum/walks-section";
 import { ObjectOfDay } from "@/components/museum/object-of-day";
 import { MinuteStories } from "@/components/museum/minute-stories";
 import { PlanVisit } from "@/components/museum/plan-visit";
+import { SeasonalShelf } from "@/components/museum/seasonal-shelf";
+import { AdventCalendar } from "@/components/museum/advent-calendar";
+import { isAdventTime } from "@/lib/seasonal-shelf";
 import type { ExhibitDTO, MuseumEventDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
 import { Button } from "@/components/ui/button";
@@ -26,16 +29,24 @@ export function HomeView({
   onNavigate,
   onOpenExhibit,
   onStartWalk,
+  adventHighlight,
 }: {
   exhibits: ExhibitDTO[];
   events: MuseumEventDTO[];
   onNavigate: (view: MuseumView) => void;
   onOpenExhibit: (exhibit: ExhibitDTO, focusView?: MuseumView) => void;
   onStartWalk: (walkId: string, stopIndex: number) => void;
+  adventHighlight?: number | null;
 }) {
   const { t, lang } = useLang();
   const reduceMotion = useReducedMotion();
   const es = useExhibitStrings();
+
+  // Adventni koledar se prikaže samo v decembru (lokalni datum).
+  const [adventTime, setAdventTime] = React.useState(false);
+  React.useEffect(() => {
+    setAdventTime(isAdventTime(new Date()));
+  }, []);
 
   // Otroška pot usmerja na domačo stran in na ugačn (Mali raziskovalci).
   React.useEffect(() => {
@@ -155,6 +166,18 @@ export function HomeView({
 
       {/* DANES V MUZEJU — dnevni zapis (vzorec: object of the day) */}
       <ObjectOfDay exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />
+
+      {/* ADVENTNI KOLENDAR (1.–24. december) — pred sezonsko polico */}
+      {adventTime && (
+        <AdventCalendar
+          exhibits={exhibits}
+          onOpenExhibit={(ex) => onOpenExhibit(ex)}
+          highlightDay={adventHighlight ?? null}
+        />
+      )}
+
+      {/* SEZONSKA POLICA — kurirani izbor po letnem času */}
+      <SeasonalShelf exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />
 
       {/* MUZEJ V MINUTI — enominutne zgodbe (vzorec: One Minute Wonders) */}
       <MinuteStories exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />

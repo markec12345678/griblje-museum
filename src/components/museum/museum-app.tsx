@@ -18,6 +18,8 @@ import { MoodGuideView } from "@/components/museum/mood-guide-view";
 import { ConnectDialog } from "@/components/museum/connect-dialog";
 import { CompareTray } from "@/components/museum/compare-tray";
 import { CompareDialog } from "@/components/museum/compare-dialog";
+import { PersonalGallery } from "@/components/museum/personal-gallery";
+import { getAdventIndex, isDoorUnlocked } from "@/lib/seasonal-shelf";
 import { SearchDialog } from "@/components/museum/search-dialog";
 import { useLang } from "@/lib/i18n";
 import { markVisited } from "@/lib/visit-tracker";
@@ -77,6 +79,17 @@ export function MuseumApp() {
   const [connectOpen, setConnectOpen] = React.useState(false);
   const [connectPair, setConnectPair] = React.useState<[string, string] | null>(null);
 
+  // Moja galerija časti: ?gallery=<slug>,<slug> odpre deljeno galerijo,
+  // sicer galerija bere osebno zbirko (mvg-favorites).
+  const [galleryOpen, setGalleryOpen] = React.useState(false);
+  const [gallerySlugs, setGallerySlugs] = React.useState<string[] | null>(null);
+  const [galleryMode, setGalleryMode] = React.useState<"soba" | "film">("soba");
+  const [pendingGallery, setPendingGallery] = React.useState<string[] | null>(null);
+
+  // Adventni koledar: ?advent=<dan> odpre (ali poudari) določena vrata.
+  const [adventHighlight, setAdventHighlight] = React.useState<number | null>(null);
+  const [pendingAdvent, setPendingAdvent] = React.useState<number | null>(null);
+
   const exhibitsQuery = useExhibits();
   const eventsQuery = useEvents();
   const storiesQuery = useStories();
@@ -127,6 +140,16 @@ export function MuseumApp() {
     if (temaParam) {
       setActiveTheme(temaParam as ExhibitCategory);
       setView("tema");
+    }
+    const galleryParam = new URLSearchParams(window.location.search).get("gallery");
+    if (galleryParam) {
+      const slugs = galleryParam.split(",").map((s) => s.trim()).filter(Boolean);
+      if (slugs.length > 0) setPendingGallery(slugs.slice(0, 24));
+    }
+    const adventParam = new URLSearchParams(window.location.search).get("advent");
+    if (adventParam) {
+      const day = Number(adventParam);
+      if (Number.isInteger(day) && day >= 1 && day <= 24) setPendingAdvent(day);
     }
     const hash = window.location.hash.replace(/^#/, "");
     if ((VIEW_ORDER as string[]).includes(hash) && hash !== "domov") {
@@ -208,6 +231,22 @@ export function MuseumApp() {
     window.history.replaceState(window.history.state, "", url);
   }, [view, activeTheme, connectOpen, connectPair]);
 
+  // URL v korak z galerijo časti (?gallery=<slug>,<slug> …).
+  const galleryUrlSynced = React.useRef(false);
+  React.useEffect(() => {
+    if (!galleryUrlSynced.current) {
+      galleryUrlSynced.current = true;
+      return;
+    }
+    const url = new URL(window.location.href);
+    if (galleryOpen && gallerySlugs && gallerySlugs.length > 0) {
+      url.searchParams.set("gallery", gallerySlugs.join(","));
+    } else {
+      url.searchParams.delete("gallery");
+    }
+    window.history.replaceState(window.history.state, "", url);
+  }, [galleryOpen, gallerySlugs]);
+
   // Zaostali globoki povezavi primerjave ustreže, ko zbirka prispe.
   React.useEffect(() => {
     if (!pendingCompare || !exhibitsQuery.data) return;
@@ -220,6 +259,51 @@ export function MuseumApp() {
     valid.forEach((slug) => addToCompare(slug));
     setCompareOpen(true);
   }, [pendingCompare, exhibitsQuery.data]);
+
+  // Zaostala globoka povezava galerije ustreže, ko zbirka prispe.
+  React.useEffect(() => {
+    if (!pendingGallery || !exhibitsQuery.data) return;
+    const target = pendingGallery;
+    setPendingGallery(null);
+    const valid = target.filter((slug) =>
+      exhibitsQuery.data.some((ex) => ex.slug === slug)
+    );
+    if (valid.length === 0) return;
+    setGallerySlugs(valid);
+    setGalleryMode("soba");
+    setGalleryOpen(true);
+  }, [pendingGallery, exhibitsQuery.data]);
+
+  // Zaostala globoka povezava adventnih vrat ustreže, ko zbirka prispe.
+  React.useEffect(() => {
+    if (pendingAdvent === null || !exhibitsQuery.data) return;
+    const day = pendingAdvent;
+    setPendingAdvent(null);
+    const now = new Date();
+    setAdventHighlight(day);
+    const unlocked = isDoorUnlocked(day, now);
+    if (unlocked) {
+      const index = getAdventIndex(day, now, exhibitsQuery.data.length);
+      const exhibit = exhibitsQuery.data[index];
+      if (exhibit) {
+        // Enako openExhibit, vendar brez focusView (efekt je nad deklaracijo).
+        setSelectedExhibit(exhibit);
+        markVisited(exhibit.slug);
+      }
+    } else {
+      // Prihodnja vrata: odpri domačo stran in poudari zaklenjena vrata.
+      setView("domov");
+      window.setTimeout(() => {
+        document.getElementById("advent")?.scrollIntoView({ behavior: "smooth" });
+      }, 400);
+    }
+    // Povezava je izpolnjena — parameter počistimo iz naslova.
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("advent")) {
+      url.searchParams.delete("advent");
+      window.history.replaceState(window.history.state, "", url);
+    }
+  }, [pendingAdvent, exhibitsQuery.data]);
 
   // --- Bližnjice za iskanje (Ctrl/Cmd+K ali /) --------------------------
   React.useEffect(() => {
@@ -366,6 +450,7 @@ export function MuseumApp() {
         onStartWalk={(walkId, stopIndex) =>
           startWalk(walkId, stopIndex, exhibitsQuery.data ?? [])
         }
+        adventHighlight={adventHighlight}
       />
     ),
     zbirka: (
@@ -419,8 +504,13 @@ export function MuseumApp() {
       <MyMuseumView
         exhibits={exhibitsQuery.data ?? []}
         onOpenExhibit={(ex) => openExhibit(ex)}
-        onNavigate={(next) => navigate(next === "zbirka" ? "zbirka" : next)}
+        onNavigate={navigate}
         onStartMyWalk={() => startWalk("moj-sprehod", 0, exhibitsQuery.data ?? [])}
+        onOpenGallery={(mode) => {
+          setGallerySlugs(null);
+          setGalleryMode(mode);
+          setGalleryOpen(true);
+        }}
       />
     ),
     zaOtroke: (
@@ -532,6 +622,17 @@ export function MuseumApp() {
         initialPair={connectPair}
         onClose={() => setConnectOpen(false)}
         onOpenExhibit={(ex) => openExhibit(ex)}
+      />
+
+      {/* Moja galerija časti — soba (CSS-3D) in filmski ogled (Ken Burns) */}
+      <PersonalGallery
+        open={galleryOpen}
+        exhibits={exhibitsQuery.data ?? []}
+        sharedSlugs={gallerySlugs}
+        initialMode={galleryMode}
+        onClose={() => setGalleryOpen(false)}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+        onNavigate={navigate}
       />
     </div>
   );
