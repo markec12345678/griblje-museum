@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { Check, Heart, Link2, Trash2 } from "lucide-react";
+import { Check, Clapperboard, Frame, Heart, Link2, Trash2 } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { useFavorites } from "@/lib/favorite-tracker";
@@ -27,11 +27,13 @@ export function MyMuseumView({
   onOpenExhibit,
   onNavigate,
   onStartMyWalk,
+  onOpenGallery,
 }: {
   exhibits: ExhibitDTO[];
   onOpenExhibit: (exhibit: ExhibitDTO) => void;
   onNavigate: (view: "zbirka") => void;
   onStartMyWalk: () => void;
+  onOpenGallery: (mode: "soba" | "film") => void;
 }) {
   const { t, lang } = useLang();
   const es = useExhibitStrings();
@@ -136,6 +138,21 @@ export function MyMuseumView({
         <>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button
+              className="min-h-11"
+              onClick={() => onOpenGallery("soba")}
+            >
+              <Frame className="mr-2 h-4 w-4" aria-hidden="true" />
+              {t.gallery.title}
+            </Button>
+            <Button
+              variant="outline"
+              className="min-h-11"
+              onClick={() => onOpenGallery("film")}
+            >
+              <Clapperboard className="mr-2 h-4 w-4" aria-hidden="true" />
+              {t.gallery.filmMode}
+            </Button>
+            <Button
               variant="outline"
               className="min-h-11"
               onClick={copyCollection}
@@ -152,10 +169,10 @@ export function MyMuseumView({
                   ? t.share.copyFailed
                   : t.myMuseum.share}
             </Button>
-            <p aria-live="polite" className="text-sm text-muted-foreground">
-              {t.myMuseum.shareHint}
-            </p>
           </div>
+          <p aria-live="polite" className="mt-3 text-sm text-muted-foreground">
+            {t.myMuseum.shareHint}
+          </p>
 
           <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {saved.map((exhibit, index) => (
