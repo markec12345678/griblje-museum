@@ -10,8 +10,8 @@ import type {
  * SEME ZBIRKE — Muzej vasi Griblje.
  *
  * Vsa vsebina je dvojezična (SLO/EN). Vsak zapis nosi evidence status in
- * register virov. Ilustrativne fotografije (AI-postavitev 2026) so ločene od
- * arhivskih virov, ki se navajajo v registru.
+ * register virov. Vse fotografije so avtentični posnetki ali upodobitve z
+ * Wikimedia Commons z navedbo avtorja in licence.
  */
 
 type SeedSource = {
@@ -63,9 +63,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "A linear village in the Municipality of Črnomelj in southern Bela krajina, first recorded in 1526. The river, the vineyards and the border have shaped its everyday life for centuries.",
     storySi:
-      "Griblje ležijo na območju krajevne skupnosti Griblje v občini Črnomelj, na severnem robu doline Kolpe, ki je danes državna meja s Hrvaško. Naselje je v pisnih virih prvič izpričano leta 1526 — v času, ko je bila Bela krajina stoletje že stičišče dveh svetov: habsburške dežele in nevarne osmanske vojne krajine.\n\nGospodarstvo vasi so stoletja nosili poljedelstvo, živinoreja in vinogradništvo ob bližnjih legah; Kolpa pa je bila hkrati ribolovna, mlinarska in mejna reka. Po letu 1991 je postal tok ob reki zunanja meja samostojne Slovenije — vas pa je ostala na robu, ki je vedno znova postal tudi priložnost: danes so Griblje mirno izhodišče za kolesarjenje ob Kolpi in sprehode med belimi brezami, simbolom Bele krajine.",
+      "Griblje ležijo na območju krajevne skupnosti Griblje v občini Črnomelj, na severnem robu doline Kolpe, ki je danes državna meja s Hrvaško. Naselje je v pisnih virih prvič izpričano leta 1526 — v času, ko je bila Bela krajina stoletje že stičišče dveh svetov: habsburške dežele in nevarne osmanske vojne krajine.\n\nGospodarstvo vasi so stoletja nosili poljedelstvo, živinoreja in vinogradništvo ob bližnjih legah; Kolpa pa je bila hkrati ribolovna, mlinarska in mejna reka. Po letu 1991 je postal tok ob reki zunanja meja samostojne Slovenije — vas pa je ostala na robu, ki je vedno znova postal tudi priložnost: danes so Griblje mirno izhodišče za kolesarjenje ob Kolpi in sprehode med belimi brezami, simbolom Bele krajine.\n\nVas ni enoten skupek hiš, ampak veriga zaselkov — Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje. Ime izhaja iz staroslovanske besede gribljati (brazdati, orati); v urbarjih in na najstarejšem zemljevidu se vas zapiše kot Grüble, ne Groble. Griblje z okolico so celo najbolj suh kot Bele krajine, z najmanj padavin na kvadratni meter na leto. Iz vasi izhajata tudi etnolog Niko Županič (1876–1961), ustanovitelj Slovenskega etnografskega muzeja, ki ima v zbirki svoj zapis, in Anton Filak, osmkratni udeleženec svetovnih prvenstev v oranju.",
     storyEn:
-      "Griblje lies in the Griblje local community of the Municipality of Črnomelj, on the northern edge of the Kolpa valley, which is today the national border with Croatia. The settlement is first recorded in written sources in 1526 — at a time when Bela krajina had for centuries been a meeting point of three worlds: the Habsburg lands, Hungarian Croatia and the dangerous Ottoman frontier.\n\nThe village economy was carried for centuries by farming, livestock and viticulture on nearby slopes, while the Kolpa was at once a fishing, milling and border river. After 1991 the course of the river became the outer border of independent Slovenia — yet the village stayed on an edge that kept turning into opportunity: today Griblje is a quiet starting point for cycling along the Kolpa and walks among the white birches, the symbol of Bela krajina.",
+      "Griblje lies in the Griblje local community of the Municipality of Črnomelj, on the northern edge of the Kolpa valley, which is today the national border with Croatia. The settlement is first recorded in written sources in 1526 — at a time when Bela krajina had for centuries been a meeting point of two worlds: the Habsburg lands and the dangerous Ottoman frontier.\n\nThe village economy was carried for centuries by farming, livestock and viticulture on nearby slopes, while the Kolpa was at once a fishing, milling and border river. After 1991 the course of the river became the outer border of independent Slovenia — yet the village stayed on an edge that kept turning into opportunity: today Griblje is a quiet starting point for cycling along the Kolpa and walks among the white birches, the symbol of Bela krajina.\n\nThe village is not a single cluster of houses but a chain of hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje. The name descends from the Old Slavic word gribljati (to furrow, to plough); in the urbars and on the oldest map the village is written Grüble, not Groble. Griblje and its surroundings are in fact the driest corner of Bela krajina, with the least precipitation per square metre a year. The village also produced the ethnologist Niko Županič (1876–1961), founder of the Slovene Ethnographic Museum, who has his own record in this collection, and Anton Filak, an eight-time participant in the world ploughing championships.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/griblje-vas.jpg",
     imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
@@ -91,6 +91,15 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Griblje,_%C4%8Crnomelj.jpg"),
         noteSi: "Avtentična fotografija vasi — glavna slika zapisa in naslovna fotografija muzeja.",
         noteEn: "Authentic photograph of the village — the record's main image and the museum's banner photograph.",
+      },
+      {
+        key: "simec-ime",
+        nameSi: "Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        nameEn: "Jože Šimec: The origin of the name of Griblje, Dolenjski list, 11 January 2001",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        noteSi: "Razlaga imena iz staroslovanske besede gribljati in oblika Grüble v urbarjih.",
+        noteEn: "The explanation of the name from the Old Slavic gribljati and the form Grüble in the urbars.",
       },
     ],
   },
@@ -128,6 +137,123 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "uskoki-in-vojna-krajina",
+    category: "kraj",
+    titleSi: "Uskoki in Vojna krajina",
+    titleEn: "The Uskoks and the Military Frontier",
+    periodSi: "16. stoletje → 1881",
+    periodEn: "16th century → 1881",
+    summarySi:
+      "Sredi 16. stoletja je meja ob Kolpi postala Vojna krajina — zatočišče Uskokov, beguncev pred Osmani, katerih potomci v Bojancih in Marindolu živijo še danes.",
+    summaryEn:
+      "In the mid-16th century the border along the Kolpa became the Military Frontier — a refuge of the Uskoks, refugees from the Ottomans, whose descendants still live in Bojanci and Marindol today.",
+    storySi:
+      "Vojna krajina (1460–1881) je bila obrambni pas ob najbolj izpostavljenem odseku avstrijsko-osmanske meje. V 16. stoletju so jo poselili Uskoki — begunci srbskega, hrvaškega in vlaškega porekla, ki so bežali pred turškimi vpadi; ob Kolpi jim je vladal senjski knez Nikola Frankopan.\n\nUskoški potomci so se naselili v vaseh ob reki — Bojanci, Marindol, Paunoviči — in ohranili pravoslavno vero ter svoje običaje do danes. Iz tega srečanja svetov je zrasel del belokranjske identitete: belokranjsko pogačo radi imenujejo »darilo Uskokov slovenskemu narodu«, spomin na vojnokrajiške čase pa nosi utrjena domačija Šokčev dvor v Žuničih. Leta 1881 je Vojna krajina prešla pod civilno upravo — meja ob Kolpi pa je ostala.",
+    storyEn:
+      "The Military Frontier (1460–1881) was a defensive belt along the most exposed section of the Austro-Ottoman border. In the 16th century it was settled by the Uskoks — refugees of Serbian, Croatian and Vlach origin fleeing the Turkish incursions; along the Kolpa they were ruled by the prince of Senj, Nikola Frankopan.\n\nThe Uskok descendants settled in villages along the river — Bojanci, Marindol, Paunoviči — and have kept their Orthodox faith and customs to this day. From this meeting of worlds grew part of the Bela krajina identity: the Bela krajina pogača is gladly called a \"gift of the Uskoks to the Slovene nation\", and the fortified Šokac homestead in Žuniči carries the memory of the frontier era. In 1881 the Military Frontier passed to civil administration — but the border along the Kolpa remained.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/bojanci-1908.jpg",
+    imageCredit: "Foto: neznani avtor, 1908 · Wikimedia Commons · javna last",
+    lat: 45.5018,
+    lng: 15.2439,
+    featured: false,
+    sources: [
+      {
+        key: "wiki-vojna-krajina",
+        nameSi: "Wikipedija: Vojna krajina (1460–1881)",
+        nameEn: "Wikipedia: Vojna krajina (Military Frontier, 1460–1881)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Vojna_krajina",
+      },
+      {
+        key: "wiki-bela-krajina",
+        nameSi: "Wikipedija: Bela krajina (Uskoki, Vojna krajina, Šokčev dvor)",
+        nameEn: "Wikipedia: Bela krajina (Uskoks, Military Frontier, Šokac homestead)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Bela_krajina",
+      },
+      {
+        key: "delo-uskoki",
+        nameSi: "Delo (2017): Potomci Uskokov ohranjajo vero in običaje",
+        nameEn: "Delo (2017): The Uskok descendants keep their faith and customs",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.delo.si/",
+      },
+      {
+        key: "commons-bojanci-1908",
+        nameSi: "Wikimedia Commons: Bojanci in Bojanke, 1908",
+        nameEn: "Wikimedia Commons: The people of Bojanci, 1908",
+        sourceType: "fotografija",
+        license: "Public domain (1908)",
+        url: WM("Bojanci_in_Bojanke_1908.jpg"),
+        noteSi: "Avtentični dokumentarni posnetek prebivalcev Bojancev v tradicionalni noši — glavna slika zapisa; Bojanci so približno 9 km jugozahodno od Gribelj.",
+        noteEn: "Authentic documentary photograph of the people of Bojanci in traditional dress — the record's main image; Bojanci lies some 9 km south-west of Griblje.",
+      },
+      {
+        key: "superhrana-pogaca",
+        nameSi: "Naša superhrana: Belokranjska pogača — darilo Uskokov slovenskemu narodu",
+        nameEn: "Naša superhrana: Bela krajina pogača — the Uskoks' gift to the Slovene nation",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.nasasuperhrana.si/",
+      },
+    ],
+  },
+  {
+    slug: "sokcev-dvor",
+    category: "kraj",
+    titleSi: "Šokčev dvor v Žuničih",
+    titleEn: "The Šokac homestead in Žuniči",
+    periodSi: "stavbna dediščina ob Kolpi",
+    periodEn: "built heritage along the Kolpa",
+    summarySi:
+      "Štiristranična zaprta kmečka domačija pri Adlešičih — danes muzej na prostem in kulturni spomenik lokalnega pomena ob reki Kolpi.",
+    summaryEn:
+      "A four-sided enclosed farmstead near Adlešiči — today an open-air museum and a cultural monument of local importance on the river Kolpa.",
+    storySi:
+      "Šokčev dvor v Žuničih je eden najznačilnejših in najbolje ohranjenih primerov ljudske stavbne dediščine ob Kolpi: štiristranična, zaprta kmečka domačija s kamnitim podom in leseno galerijo, kjer še danes visi koruza in ležijo drva ob steni.\n\nNjena zaprta, skoraj utrjena oblika je spomin na čase Vojne krajine, ko je bila vsaka domačija ob mejni reki tudi zatočišče. Danes je Šokčev dvor muzej na prostem v okviru Krajinskega parka Kolpa — obiskovalci si ga ogledajo ob predhodni najavi, sprejmejo pa jih v tradicionalnih belokranjskih nošah. Vas Žuniči pri Adlešičih je od Gribelj oddaljena približno 12 kilometrov.",
+    storyEn:
+      "The Šokac homestead in Žuniči is one of the most characteristic and best-preserved examples of the folk architecture along the Kolpa: a four-sided, enclosed farmstead with a stone ground floor and a wooden gallery, where maize still hangs and firewood rests against the wall.\n\nIts closed, almost fortified form is a memory of the Military Frontier era, when every farmstead on the border river was also a refuge. Today the Šokac homestead is an open-air museum within the Kolpa Landscape Park — visitors view it by prior appointment and are received in traditional Bela krajina dress. The village of Žuniči near Adlešiči lies roughly 12 kilometres from Griblje.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/sokcev-dvor.jpg",
+    imageCredit: "Foto: Sl-Ziga · Wikimedia Commons · javna last",
+    lat: 45.482,
+    lng: 15.3607,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "kp-kolpa-sokcev",
+        nameSi: "Krajinski park Kolpa — Šokčev dvor, Žuniči",
+        nameEn: "Kolpa Landscape Park — the Šokac homestead, Žuniči",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.kp-kolpa.si/",
+      },
+      {
+        key: "belokranjski-izdelki-sokcev",
+        nameSi: "Belokranjski-izdelki.si — Šokčev dvor Žuniči, muzej na prostem",
+        nameEn: "Belokranjski-izdelki.si — the Šokac homestead Žuniči, open-air museum",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://belokranjski-izdelki.si/",
+      },
+      {
+        key: "commons-sokcev-dvor",
+        nameSi: "Wikimedia Commons: Šokčev dvor, Žuniči",
+        nameEn: "Wikimedia Commons: The Šokac homestead, Žuniči",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("SokcevDvor-Zunici.JPG"),
+        noteSi: "Avtentična fotografija domačije — glavna slika zapisa.",
+        noteEn: "Authentic photograph of the homestead — the record's main image.",
+      },
+    ],
+  },
+  {
     slug: "kolpa-reka",
     category: "kolpa",
     titleSi: "Kolpa — življenje ob reki",
@@ -139,9 +265,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The river Griblje lies on: a national border, a bathing place, a millstream and a memory. The Kolpa is held to be one of the warmest rivers in Slovenia.",
     storySi:
-      "Kolpa (hrvaško Kupa) izvira v Gorskem kotarju in po 297 kilometrih doseže Savo pri Sisku; večji del toka je slovensko-hrvaška meja. Ob Gribljah je reka mirna, plitva in poleti topla — zato velja za eno najbolj priljubljenih kopalnih rek v državi; kakovost vode na odseku Dragoši–Griblje redno spremlja državni monitoring kopalnih voda (merilno mesto K05010).\n\nReka je vasi dajala ribe, mlin in žago, s cerkvami na obeh bregovih pa tudi zgodbo o stiku in ločitvi. Danes ob njej vodi kolesarska pot, poleti pa se ob bregovih znova slišita skupni jezik in smeh.",
+      "Kolpa (hrvaško Kupa) izvira v Gorskem kotarju in po 297 kilometrih doseže Savo pri Sisku; večji del toka je slovensko-hrvaška meja. Ob Gribljah je reka mirna, plitva in poleti topla — poleti se voda pogosto segreje nad 25 °C, zato jo imajo za najtoplejšo slovensko reko in eno najbolj priljubljenih kopalnih rek v državi; kakovost vode na odseku Dragoši–Griblje redno spremlja državni monitoring kopalnih voda (merilno mesto K05010).\n\nV tisočletjih poplavljanja je reka ob bregovih ustvarila rodovitne travnike, ki se jim v Beli krajini reče loka; njena voda tu ponekod ponika v kraško podzemlje in se vrača v studencih ob obeh bregovih.\n\nReka je vasi dajala ribe, mlin in žago, s cerkvami na obeh bregovih pa tudi zgodbo o stiku in ločitvi. Danes ob njej vodi kolesarska pot, poleti pa se ob bregovih znova slišita skupni jezik in smeh.",
     storyEn:
-      "The Kolpa (Croatian: Kupa) rises in Gorski Kotar and, after 297 kilometres, mostly as the Slovenian–Croatian border, reaches the Sava at Sisak. At Griblje the river is calm, shallow and warm in summer — which makes it one of the country's favourite bathing rivers; water quality on the Dragoši–Griblje section is regularly monitored by the state bathing-water programme (measurement point K05010).\n\nThe river gave the village fish, a mill and a sawmill and, with churches on both banks, also a story of contact and separation. A cycling route runs along it today, and in summer both banks again carry the sounds of a shared language and laughter.",
+      "The Kolpa (Croatian: Kupa) rises in Gorski Kotar and, after 297 kilometres, mostly as the Slovenian–Croatian border, reaches the Sava at Sisak. At Griblje the river is calm, shallow and warm in summer — in summer the water often climbs above 25 °C, which makes it Slovenia's warmest river and one of the country's favourite bathing rivers; water quality on the Dragoši–Griblje section is regularly monitored by the state bathing-water programme (measurement point K05010).\n\nOver millennia of flooding the river created fertile meadows along its banks, called loka in Bela krajina; its water here in places sinks into the karst underground and returns in the springs along both banks.\n\nThe river gave the village fish, a mill and a sawmill and, with churches on both banks, also a story of contact and separation. A cycling route runs along it today, and in summer both banks again carry the sounds of a shared language and laughter.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/kolpa.jpg",
     imageCredit: "Foto: Savinjc · Wikimedia Commons · CC BY-SA 3.0",
@@ -166,6 +292,16 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Kolpa_griblje.jpg"),
         noteSi: "Avtentična fotografija reke pri Gribljah — glavna slika zapisa.",
         noteEn: "Authentic photograph of the river at Griblje — the record's main image.",
+      },
+      {
+        key: "belakrajina-kopanje",
+        nameSi: "Bela krajina — kopanje na Kolpi (temperature vode po mesecih)",
+        nameEn: "Bela krajina — swimming in the Kolpa (water temperatures by month)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.belakrajina.eu/",
+        noteSi: "Podatki o temperaturi kopalne vode: junij 18–22 °C, julij 22–26 °C, avgust 21–25 °C.",
+        noteEn: "Bathing-water temperature data: June 18–22 °C, July 22–26 °C, August 21–25 °C.",
       },
     ],
   },
@@ -198,6 +334,271 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Slap_in_malenca_na_Kolpi_pri_Gribljah.jpg"),
         noteSi: "Avtor in licenca preverjena na strani datoteke.",
         noteEn: "Author and licence verified on the file page.",
+      },
+    ],
+  },
+  {
+    slug: "mlini-na-kolpi",
+    category: "kolpa",
+    titleSi: "Mlini ob Kolpi",
+    titleEn: "Mills along the Kolpa",
+    periodSi: "mlinarska dediščina ob reki",
+    periodEn: "milling heritage on the river",
+    summarySi:
+      "Vodni mlini ob Kolpi — v Dolu, Radencih, Pobrežju in Krasincu — so stoletja mleli žito bližnjih vasi; danes so med zadnjimi pričami mlinarskega vsakdana.",
+    summaryEn:
+      "Water mills along the Kolpa — at Dol, Radenci, Pobrežje and Krasinec — ground the grain of nearby villages for centuries; today they are among the last witnesses of the millers' everyday life.",
+    storySi:
+      "Ob Kolpi in njenih pritokih so stoletja stale mline: ohranjeni urbarji jih navajajo v Dolu, Radencih, Pobrežju in Krasincu. Mlinar je bil vaški mojster — njegov jez, toča in kamnita korita so žito spremenila v moko, po kateri je vsaka hiša spekla svoj kruh.\n\nSledi mlinarstva segajo globoko v srednji vek: arheološke raziskave v strugi Lahinje pri Flekovem mlinu v Črnomlju so odkrile ostanke mlina iz 14. stoletja. Mlin s kamnito zajezitvijo v Bregu pri Sinjem vrhu so večkrat obnavljali prav zaradi njegovega pomena za mletje žita okolišnjih vasi. Ob Kolpi pri Gribljah mlinarsko dediščino zapira malenca — mali jez, ki ima v tej zbirki svoj zapis.",
+    storyEn:
+      "Along the Kolpa and its tributaries mills stood for centuries: the surviving urbars list them at Dol, Radenci, Pobrežje and Krasinec. The miller was the village craftsman — his weir, the drop and the stone troughs turned grain into the flour from which every household baked its bread.\n\nThe traces of milling reach deep into the Middle Ages: archaeological research in the bed of the Lahinja at Flekov mlin in Črnomelj uncovered the remains of a 14th-century mill. The mill with its stone weir at Breg pri Sinjem Vrhu was repeatedly restored precisely because of its importance for grinding the grain of the surrounding villages. On the Kolpa at Griblje the milling heritage is closed by the malenca — the small weir that has its own record in this collection.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/mlin-pobrezje.jpg",
+    imageCredit: "Foto: švabo · Wikimedia Commons · CC BY-SA 3.0",
+    lat: 45.5315,
+    lng: 15.3119,
+    featured: false,
+    sources: [
+      {
+        key: "radio-odeon-mlini",
+        nameSi: "Radio Odeon (2022): Mlini v Beli krajini po ohranjenih urbarjih",
+        nameEn: "Radio Odeon (2022): Mills in Bela krajina according to the surviving urbars",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://radio-odeon.com/",
+      },
+      {
+        key: "researchgate-flekov-mlin",
+        nameSi: "Arheološke raziskave v strugi Lahinje pri Flekovem mlinu (pozni srednji vek, 14. stoletje)",
+        nameEn: "Archaeological research in the Lahinja riverbed at Flekov mlin (Late Middle Ages, 14th century)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.researchgate.net/",
+      },
+      {
+        key: "kp-kolpa-breg",
+        nameSi: "Krajinski park Kolpa — Mlin v Bregu pri Sinjem vrhu (kamnita pregrada)",
+        nameEn: "Kolpa Landscape Park — the mill at Breg pri Sinjem Vrhu (stone weir)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.kp-kolpa.si/",
+      },
+      {
+        key: "commons-mlin-pobrezje",
+        nameSi: "Wikimedia Commons: Mlin Pobrežje — vodni mlin ob Kolpi (avtor: švabo)",
+        nameEn: "Wikimedia Commons: Mlin Pobrežje — a water mill on the Kolpa (author: švabo)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 3.0 (avtor: švabo)",
+        url: WM("Mlin_Pobre%C5%BEje.jpg"),
+        noteSi: "Avtentična fotografija mlina v Pobrežju ob Kolpi — glavna slika zapisa; Pobrežje je približno 5 km vzhodno od Gribelj.",
+        noteEn: "Authentic photograph of the mill at Pobrežje on the Kolpa — the record's main image; Pobrežje lies some 5 km east of Griblje.",
+      },
+    ],
+  },
+  {
+    slug: "niko-zupanic",
+    category: "kraj",
+    titleSi: "Niko Županič — kozmopolit iz Gribelj",
+    titleEn: "Niko Županič — a cosmopolitan from Griblje",
+    periodSi: "1876–1961",
+    periodEn: "1876–1961",
+    summarySi:
+      "V Gribljah se je 1. decembra 1876 rodil Niko Županič — etnolog, antropolog, zgodovinar in politik, ustanovitelj današnjega Slovenskega etnografskega muzeja.",
+    summaryEn:
+      "Niko Županič — ethnologist, anthropologist, historian and politician, founder of today's Slovene Ethnographic Museum — was born in Griblje on 1 December 1876.",
+    storySi:
+      "Iz kmečke hiše v Gribljah na svetovna odra: ljudsko šolo je Niko Županič obiskoval v Podzemlju (1884–1887), gimnazijo v Novem mestu, leta 1903 pa doktoriral na dunajski univerzi iz zgodovine, prazgodovinske arheologije, etnologije in antropologije. Služboval je v Beogradu, med prvo svetovno vojno deloval v jugoslovanskem odboru, v Združenih državah navduševal izseljence za združitev Slovanov, na mirovni konferenci v Parizu leta 1919 pa skupaj z izumiteljem Mihajlom Pupinom dosegel, da Bled z okolico ni pripadel Italiji.\n\nLeta 1921 je v Ljubljani ustanovil Etnografski inštitut — današnji Slovenski etnografski muzej — in postal njegov prvi upravnik; leta 1927 je pričel izdajati Etnolog, prvo slovensko etnološko glasilo, leta 1940 pa zasedel novo ustanovljeno stolico za etnologijo na ljubljanski univerzi. Pred nemško zasedbo Ljubljane se je leta 1943 umaknil v rodno Belo krajino. Objavil je čez 200 razprav, knjig in člankov; umrl je leta 1961 v Ljubljani. Njegov portret je naslikal Ivan Vavpotič, spominsko ploščo pa ima v rojstni vasi — Slovenski etnografski muzej ga je ob 140. obletnici rojstva poimenoval »kozmopolit iz Gribelj«.",
+    storyEn:
+      "From a farmhouse in Griblje onto the world's stages: Niko Županič attended primary school in Podzemelj (1884–1887) and grammar school in Novo mesto, and in 1903 took his doctorate at the University of Vienna in history, prehistoric archaeology, ethnology and anthropology. He worked in Belgrade, served the Yugoslav Committee during the First World War, kindled the emigrants in the United States for the union of the South Slavs, and at the 1919 Paris Peace Conference, together with the inventor Mihajlo Pupin, helped secure that Bled and its surroundings did not pass to Italy.\n\nIn 1921 he founded the Ethnographic Institute in Ljubljana — today's Slovene Ethnographic Museum — and became its first director; in 1927 he launched Etnolog, the first Slovene ethnological journal, and in 1940 took the newly established chair of ethnology at the University of Ljubljana. Before the German occupation of Ljubljana he withdrew to his native Bela krajina in 1943. He published more than 200 studies, books and articles; he died in Ljubljana in 1961. His portrait was painted by Ivan Vavpotič, and a memorial plaque stands in his birth village — on his 140th birthday the Slovene Ethnographic Museum called him a \"cosmopolitan from Griblje\".",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/niko-zupanic.jpg",
+    imageCredit: "Portret: Ivan Vavpotič, 1924 · Wikimedia Commons · javna last",
+    yearFrom: 1876,
+    yearTo: 1961,
+    lat: 45.57246,
+    lng: 15.29257,
+    coordsApprox: true,
+    featured: true,
+    sources: [
+      {
+        key: "wiki-zupanic",
+        nameSi: "Wikipedija: Niko Županič (1876–1961)",
+        nameEn: "Wikipedia: Niko Županič (1876–1961)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Niko_%C5%BDupani%C4%8D",
+      },
+      {
+        key: "sem-kozmopolit",
+        nameSi: "Slovenski etnografski muzej: Niko Županič — kozmopolit iz Gribelj (razstava ob 140. obletnici rojstva)",
+        nameEn: "Slovene Ethnographic Museum: Niko Županič — a cosmopolitan from Griblje (exhibition on his 140th birthday)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.etno-muzej.si/",
+      },
+      {
+        key: "sbl-zupanic",
+        nameSi: "Novak, Vilko: Županič Niko — Slovenski biografski leksikon (ZRC SAZU)",
+        nameEn: "Novak, Vilko: Županič Niko — Slovene Biographical Lexicon (ZRC SAZU)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.slovenska-biografija.si/",
+      },
+      {
+        key: "kamra-plosca",
+        nameSi: "Kamra: Spominska plošča univ. profesorju dr. Niku Županiču v Gribljah (2018)",
+        nameEn: "Kamra: The memorial plaque to Prof. Niko Županič in Griblje (2018)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.kamra.si/",
+      },
+      {
+        key: "commons-vavpotic-portret",
+        nameSi: "Wikimedia Commons: Ivan Vavpotič — Niko Županič (oljni portret, 1924)",
+        nameEn: "Wikimedia Commons: Ivan Vavpotič — Niko Županič (oil portrait, 1924)",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("Ivan_Vavpoti%C4%8D_-_Niko_%C5%BDupani%C4%8D.jpg"),
+        noteSi: "Avtentična upodobitev — oljni portret, ki ga je leta 1924 naslikal Ivan Vavpotič; glavna slika zapisa.",
+        noteEn: "An authentic likeness — the oil portrait painted by Ivan Vavpotič in 1924; the record's main image.",
+      },
+    ],
+  },
+  {
+    slug: "snos-crnomelj-1944",
+    category: "vojna",
+    titleSi: "SNOS v Črnomlju — prvi slovenski parlament",
+    titleEn: "SNOS in Črnomelj — the first Slovene parliament",
+    periodSi: "19.–20. februar 1944",
+    periodEn: "19–20 February 1944",
+    summarySi:
+      "V sokolskem domu v Črnomlju je februarja 1944 zasedal Slovenski narodnoosvobodilni svet — zasedanje, ki ga štejejo za temelj slovenske državnosti.",
+    summaryEn:
+      "In February 1944 the Slovene National Liberation Council met in the Sokol hall in Črnomelj — a session counted among the foundations of Slovene statehood.",
+    storySi:
+      "Po kapitulaciji Italije septembra 1943 je Bela krajina postala svobodno partizansko ozemlje — s šolami, tiskarnami in bolnišnicami. V tem prostoru je 19. in 20. februarja 1944 v Črnomlju zasedal Slovenski narodnoosvobodilni odbor, ki se je preimenoval v Slovenski narodnoosvobodilni svet (SNOS) in ustanovil svoj zakonodajni odbor.\n\nZasedanje imenujejo za »prvi slovenski parlament«: med vojno je SNOS deloval kot najvišji predstavniški organ slovenskega narodnoosvobodilnega gibanja in temelj kasnejše državnosti. Stavba sokolskega doma, v kateri je zasedal, je danes Kulturni dom Črnomelj; ob osemdesetletnici leta 2024 je mesto dogodek obeležilo z razstavo in spominsko slovesnostjo. Iz svobodne Bele krajine so spomladi istega leta vzletala tudi zavezniška letala s partizanskega letališča Otok — ta zgodba ima v zbirki svoj zapis.",
+    storyEn:
+      "After the Italian capitulation in September 1943, Bela krajina became free Partisan territory — with schools, print shops and hospitals. Within this free space, on 19 and 20 February 1944, the Slovene National Liberation Committee met in Črnomelj, renaming itself the Slovene National Liberation Council (SNOS) and establishing its legislative committee.\n\nThe session is called the \"first Slovene parliament\": during the war the SNOS acted as the highest representative body of the Slovene liberation movement and a foundation of later statehood. The Sokol hall in which it met is today the Črnomelj Culture House; on the eightieth anniversary in 2024 the town marked the event with an exhibition and a memorial ceremony. In the spring of the same year Allied aircraft also took off from the Otok partisan airfield in free Bela krajina — that story has its own record in this collection.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/snos-crnomelj.jpg",
+    imageCredit: "Foto: Bb63lj · Wikimedia Commons · CC BY 4.0",
+    yearFrom: 1944,
+    yearTo: 1944,
+    lat: 45.5738,
+    lng: 15.1942,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "wiki-snos",
+        nameSi: "Wikipedija: Slovenski narodnoosvobodilni svet (zasedanje v Črnomlju 1944)",
+        nameEn: "Wikipedia: Slovene National Liberation Council (the 1944 Črnomelj session)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Slovenski_narodnoosvobodilni_svet",
+      },
+      {
+        key: "rtvslo-snos",
+        nameSi: "RTV Slovenija (2024): 80 let pozneje — kako je bil tedaj videti Črnomelj",
+        nameEn: "RTV Slovenia (2024): 80 years on — what Črnomelj looked like then",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.rtvslo.si/",
+      },
+      {
+        key: "delo-snos",
+        nameSi: "Delo: Prvi slovenski parlament je zasedal v Črnomlju",
+        nameEn: "Delo: The first Slovene parliament met in Črnomelj",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.delo.si/",
+      },
+      {
+        key: "zgodovina-si",
+        nameSi: "Zgodovinski portal zgodovina.si: V Črnomlju so gradili državnost (2024)",
+        nameEn: "History portal zgodovina.si: Building statehood in Črnomelj (2024)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://zgodovina.si/",
+      },
+      {
+        key: "commons-kulturni-dom",
+        nameSi: "Wikimedia Commons: Kulturni dom Črnomelj (avtor: Bb63lj)",
+        nameEn: "Wikimedia Commons: Črnomelj Culture House (author: Bb63lj)",
+        sourceType: "fotografija",
+        license: "CC BY 4.0 (avtor: Bb63lj)",
+        url: WM("Kulturni_dom_%C4%8Crnomelj.jpg"),
+        noteSi: "Avtentična fotografija stavbe, v kateri je zasedal SNOS — glavna slika zapisa.",
+        noteEn: "Authentic photograph of the building in which the SNOS met — the record's main image.",
+      },
+    ],
+  },
+  {
+    slug: "letalisce-otok-1944",
+    category: "vojna",
+    titleSi: "Partizansko letališče Otok",
+    titleEn: "The Otok partisan airfield",
+    periodSi: "1944 → 1945",
+    periodEn: "1944 → 1945",
+    summarySi:
+      "Spomladi 1944 so partizani pri Otoku uredili letališče, s katerega so zavezniki v južno Italijo prepeljali 1473 ranjencev.",
+    summaryEn:
+      "In the spring of 1944 the Partisans laid out an airfield near Otok, from which the Allies flew 1,473 wounded to southern Italy.",
+    storySi:
+      "Na travniku ob vasi Otok pri Metliki so partizani spomladi 1944 uredili letališče za zavezniška letala. Zavezniki so tam prvič pristali 17. septembra 1944 — s petimi letali. Do konca vojne so s prostora ob Kolpi v zavezniške bolnišnice v južni Italiji prepeljali 1473 ranjencev; odpeljali so tudi zavezniške vojne ujetnike, med katerimi je bilo 87 britanskih letalcev, večinoma sestreljenih pilotov.\n\nDanes dogodek varuje spominski letalski Douglas C-47 Dakota, ki stoji pri Otoku na čast belokranjskima partizanskima letališčema. Konec marca 1945 so z bližnjega letališča Krasinec vzletala zadnja evakuacijska letala z ranjenci, posneti tudi pri Gribljah — ohranjena fotografija vkrcavanja ranjencev na letališču Otok je v javni domeni in je glavna slika tega zapisa.",
+    storyEn:
+      "On a meadow by the village of Otok near Metlika the Partisans laid out an airfield for Allied aircraft in the spring of 1944. The Allies first landed there on 17 September 1944 — with five aircraft. By the end of the war 1,473 wounded were flown from the ground by the Kolpa to Allied hospitals in southern Italy; Allied prisoners of war were also taken out, among them 87 British airmen, mostly downed pilots.\n\nToday the event is guarded by the memorial Douglas C-47 Dakota, which stands at Otok in honour of the Bela krajina partisan airfields. At the end of March 1945 the last evacuation aircraft with the wounded took off from the nearby Krasinec airfield, photographed also at Griblje — the surviving photograph of the wounded boarding at the Otok airfield is in the public domain and is this record's main image.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/otok-letalisce.jpg",
+    imageCredit: "Foto: neznani avtor, 1944 · Wikimedia Commons · javna last",
+    yearFrom: 1944,
+    yearTo: 1945,
+    lat: 45.665,
+    lng: 15.323,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "rtvslo-otok",
+        nameSi: "RTV Slovenija: V Otoku pri Metliki slovesnost v spomin medvojnega letališča",
+        nameEn: "RTV Slovenia: A ceremony at Otok near Metlika in memory of the wartime airfield",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.rtvslo.si/",
+      },
+      {
+        key: "wiki-otok-metlika",
+        nameSi: "Wikipedija: Otok, Metlika (partizansko letališče 1944)",
+        nameEn: "Wikipedia: Otok, Metlika (the 1944 partisan airfield)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Otok,_Metlika",
+      },
+      {
+        key: "obk-dakota",
+        nameSi: "Odkrijte Belo krajino: Douglas C-47 Dakota — spomenik partizanskima letališčema (1473 ranjencev)",
+        nameEn: "Discover Bela krajina: Douglas C-47 Dakota — a monument to the partisan airfields (1,473 wounded)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.odkrijtebelokrajino.com/",
+      },
+      {
+        key: "odeon-vranov-let",
+        nameSi: "Radio Odeon: Spominska slovesnost Vranov let — partizansko letališče pri vasi Otok",
+        nameEn: "Radio Odeon: The Vranov let memorial ceremony — the partisan airfield by the village of Otok",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://radio-odeon.com/",
+      },
+      {
+        key: "commons-otok-letalo",
+        nameSi: "Wikimedia Commons: Zavezniško letalo med vkrcavanjem ranjencev na letališču Otok (1944)",
+        nameEn: "Wikimedia Commons: An Allied aircraft loading the wounded at the Otok airfield (1944)",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("Zavezni%C5%A1ko_letalo_na_letali%C5%A1%C4%8Du_Otok.jpg"),
+        noteSi: "Avtentična dokumentarna fotografija iz vojnega časa — glavna slika zapisa.",
+        noteEn: "An authentic documentary photograph from the war years — the record's main image.",
       },
     ],
   },
@@ -390,7 +791,7 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Vineyards on the limestone slopes of Bela krajina yield cviček and metliška črnina — a wine with a protected traditional denomination.",
     storySi:
-      "Vinska ruta Bele krajine vodi od Metlike proti Semiču, Vinici in Dragatušu; Griblje stoji ob njenem južnem robu. Beline in modra frankinja, laški rizling in gamay — sorte, ki dajejo cviček — lahkotno belokranjsko namizno vino — tukaj uspevajo na rdeči prsti preko apnenca.\n\nKrona regije je metliška črnina PTP, zajamčena tradicionalna oznaka: temnejše vino iz rdečih sort z belimi, katerih zgodovina sega v 19. stoletje. Kadar so vinogradniki jeseni nosili grozdje v zidnice — kamnite vaške kleti — se je v vasi zvrstelo delo, smeh in vonj mošta. Muzej bo to zgodbo dopolnil z imeni gribeljskih domačij-vinogradov, ko jih bodo domačini sami vpisali.",
+      "Vinska ruta Bele krajine vodi od Metlike proti Semiču, Vinici in Dragatušu; Griblje stoji ob njenem južnem robu. Beline in modra frankinja, laški rizling in gamay — sorte, ki dajejo cviček — lahkotno belokranjsko namizno vino — tukaj uspevajo na rdeči prsti preko apnenca.\n\nKrona regije je metliška črnina PTP, zajamčena tradicionalna oznaka: temnejše vino iz rdečih sort z belimi, katerih zgodovina sega v 19. stoletje. Prva ustekleničena metliška črnina je leta 1968 prišla iz metliške kleti — od takrat slovi kot vino, ki Belo krajino predstavlja po vsej državi. Kadar so vinogradniki jeseni nosili grozdje v zidnice — kamnite vaške kleti — se je v vasi zvrstelo delo, smeh in vonj mošta. Muzej bo to zgodbo dopolnil z imeni gribeljskih domačij-vinogradov, ko jih bodo domačini sami vpisali.",
     storyEn:
       "The wine route of Bela krajina runs from Metlika towards Semič, Vinica and Dragatuš; Griblje stands at its southern edge. Blaufränkisch and Blaufränkisch crossings, Welschriesling, gamay and the varieties that yield cviček — the light Bela krajina table wine — thrive here on red soil over limestone.\n\nThe crown of the region is metliška črnina PTP, a protected traditional denomination: a darker wine made from the metliška pomace blend and white varieties, with a history reaching into the 19th century. When the winegrowers carried their grapes into the zidnice — the stone village cellars — in autumn, the village filled with work, laughter and the smell of must. The museum will add the names of Griblje's wine farms when the locals themselves enter them.",
     evidenceStatus: "DOCUMENTED",
@@ -424,6 +825,16 @@ export const seedExhibits: SeedExhibit[] = [
         license: "javna informacija / public information",
         url: "https://www.gov.si/",
       },
+      {
+        key: "ovinu-crnina",
+        nameSi: "Vinska klet Metlika — metliška črnina PTP (prva ustekleničena leta 1968)",
+        nameEn: "Metlika Wine Cellar — metliška črnina PTP (first bottled in 1968)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.ovinu.si/",
+        noteSi: "Izredni pomen za razvoj belokranjskega vinogradništva ima leta 1968 ustekleničena prva metliška črnina.",
+        noteEn: "The first bottled metliška črnina of 1968 was of extraordinary importance for the development of Bela krajina viticulture.",
+      },
     ],
   },
   {
@@ -438,13 +849,13 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The green youth of the \"jurji\" is carried through the villages of Bela krajina; masks, bells and birch twigs announce the spring.",
     storySi:
-      "Na jurjevo, 24. aprila, ko se »zemlja odpre«, po Beli krajini hodijo jurji — odrasli v zelenju brez in drugih dreves, z rdeče-belimi rutami in zvončki, ki z bučenjem pregnajo zimo. Ob njih pustujejo tudi lame in race, kožuhaste maske z rogovi, ki so v razlagah etnografov ostanki predkrščanske koledarske simbolike.\n\nJurjevanje je danes živ primer nematerialne dediščine: od 1990-ih v Črnomlju poteka festival Jurjevanje v Beli krajini, največji prikaz slovenskega ljudskega ustvarjanja. V Gribljah so jurji hodili iz hiše v hišo — kdaj točno in kdo je bil zadnji jurij, muzej še ne ve: zapišite nam ga.",
+      "Na jurjevo, 24. aprila, ko se »zemlja odpre«, po Beli krajini hodijo jurji — odrasli v zelenju brez in drugih dreves, z rdeče-belimi rutami in zvončki, ki z bučenjem pregnajo zimo. Ob njih pustujejo tudi lame in race, kožuhaste maske z rogovi, ki so v razlagah etnografov ostanki predkrščanske koledarske simbolike.\n\nJurjevanje je danes živ primer nematerialne dediščine: od 1990-ih v Črnomlju poteka festival Jurjevanje v Beli krajini, najstarejši folklorni festival v Sloveniji in največji prikaz slovenskega ljudskega ustvarjanja. V Gribljah so jurji hodili iz hiše v hišo — kdaj točno in kdo je bil zadnji jurij, muzej še ne ve: zapišite nam ga.",
     storyEn:
-      "On St. George's Day, 24 April, when the earth \"opens\", the jurji walk through Bela krajina — figures dressed in the greenery of birch and other trees, with red-and-white scarves and bells, drumming winter away. Alongside them carnival figures like the lame and race — horned fur masks that ethnographers read as remnants of pre-Christian calendar symbolism.\n\nToday jurjevanje is a living gallery example of intangible heritage: since the 1990s the town of Črnomelj has hosted the Jurjevanje v Beli krajini festival, the largest showcase of Slovene folk creativity. In Griblje the jurji walked from house to house — when exactly, and who was the last jurij, the museum does not yet know: write it down for us.",
+      "On St. George's Day, 24 April, when the earth \"opens\", the jurji walk through Bela krajina — figures dressed in the greenery of birch and other trees, with red-and-white scarves and bells, drumming winter away. Alongside them carnival figures like the lame and race — horned fur masks that ethnographers read as remnants of pre-Christian calendar symbolism.\n\nToday jurjevanje is a living example of intangible heritage: since the 1990s the town of Črnomelj has hosted the Jurjevanje v Beli krajini festival, the oldest folklore festival in Slovenia and the largest showcase of Slovene folk creativity. In Griblje the jurji walked from house to house — when exactly, and who was the last jurij, the museum does not yet know: write it down for us.",
     evidenceStatus: "TRADITION",
     image: "/images/authentic/jurjevanje.jpg",
     imageCredit: "Foto: Wikimedia Commons (1908) · javna last",
-    featured: true,
+    featured: false,
     sources: [
       
       {
@@ -485,9 +896,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Caraway-sprinkled flatbread, bean matevž, carnival salenjaki and honey medlica: a poverty that became a culture of taste.",
     storySi:
-      "Belokranjska kuhinja je kuhinja kruha in žit: belokranjska pogača — okrogel kruh s kuminovim posipom — je postala zaščitni znak regije, ponedeljkov matevž iz rjavega fižola pa je nosil delovni teden. Ob pustu so doma kuhali salenjake — v listju ali v ponvi —, velikonočna jajca pa barvali z naravnimi barvami suhih rastlin, kot jih pozna pokrajina.\n\nPijača praznikov je bila medlica — hladilna pijača iz medu in vode — ter potica, nadevana z orehmi z lastnega vrta. Muzejska zbirka kuhinje se bo gradila iz receptov vaških gospodinj: prvi je že vpisan v zgodbah, ostale čakajo.",
+      "Belokranjska kuhinja je kuhinja kruha in žit: belokranjska pogača — okrogel kruh s kuminovim posipom — je postala zaščitni znak regije: kot jed dobrodošlice, ki se lomi z rokami in ne reže, je bila leta 2011 vpisana med evropske zajamčene tradicionalne posebnosti. Ponedeljkov matevž iz rjavega fižola pa je nosil delovni teden. Ob pustu so doma kuhali salenjake — v listju ali v ponvi —, velikonočna jajca pa barvali z naravnimi barvami suhih rastlin, kot jih pozna pokrajina.\n\nPijača praznikov je bila medlica — hladilna pijača iz medu in vode — ter potica, nadevana z orehmi z lastnega vrta. Muzejska zbirka kuhinje se bo gradila iz receptov vaških gospodinj: prvi je že vpisan v zgodbah, ostale čakajo.",
     storyEn:
-      "Bela krajina cuisine is a cuisine of bread and grain: the Bela krajina pogača — a round flatbread with a caraway crust — has become the region's trademark, while Monday's matevž of brown beans carried the working week. At carnival the households baked salenjaki — on leaves or in the oven — and Easter eggs were dyed with the natural colours of dried plants, as the region knows them.\n\nThe sweet of the holidays was medlica — a cooling drink of honey and water — and potica, layered with walnuts from one's own garden. The museum's kitchen collection will be built from village recipes: the first is already entered among the stories, the rest are awaited.",
+      "Bela krajina cuisine is a cuisine of bread and grain: the Bela krajina pogača — a round flatbread with a caraway crust — has become the region's trademark: as a welcome dish that is broken by hand and never cut, it was entered among the European guaranteed traditional specialities in 2011. Monday's matevž of brown beans carried the working week. At carnival the households baked salenjaki — on leaves or in the oven — and Easter eggs were dyed with the natural colours of dried plants, as the region knows them.\n\nThe sweet of the holidays was medlica — a cooling drink of honey and water — and potica, layered with walnuts from one's own garden. The museum's kitchen collection will be built from village recipes: the first is already entered among the stories, the rest are awaited.",
     evidenceStatus: "TRADITION",
     image: "/images/authentic/pogaca.jpg",
     imageCredit: "Foto: Rude · Wikimedia Commons · CC BY-SA 3.0",
@@ -505,6 +916,16 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Belokranjska_pogaca.jpg"),
         noteSi: "Avtentična fotografija jedi — glavna slika zapisa.",
         noteEn: "Authentic photograph of the dish — the record's main image.",
+      },
+      {
+        key: "eu-ztp-pogaca",
+        nameSi: "Registracija belokranjske pogače kot zajamčene tradicionalne posebnosti v EU (2011)",
+        nameEn: "The registration of the Bela krajina pogača as a European guaranteed traditional speciality (2011)",
+        sourceType: "objava",
+        license: "javna informacija / public information",
+        url: "https://www.nasasuperhrana.si/",
+        noteSi: "Evropska komisija je konec leta 2011 v Uradnem listu EU objavila uredbo o registraciji — skupaj z idrijskimi žlikrofi in prekmursko gibanico.",
+        noteEn: "At the end of 2011 the European Commission published the registration regulation in the Official Journal of the EU — alongside the Idrija žlikrofi and the Prekmurje gibanica.",
       },
       {
         key: "kuhinja-etno",

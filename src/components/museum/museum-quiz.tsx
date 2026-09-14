@@ -20,9 +20,10 @@ type QuizQuestion = {
 };
 
 /**
- * Muzejska uganka — 6 vprašanj, vsako vezano na dejstvo iz sejane zbirke
+ * Muzejska uganka — 10 vprašanj, vsako vezano na dejstvo iz sejane zbirke
  * (prva omemba 1526, Kolpa, cerkev sv. Vida, letališče Krasinec 1945,
- * malenca kot mlinarski jez, meja 1991). Preverjeno proti prisma/seed.ts.
+ * malenca kot mlinarski jez, meja 1991, Niko Županič, letališče Otok,
+ * SNOS v Črnomlju 1944, Uskoki). Preverjeno proti prisma/seed.ts.
  */
 const QUIZ_QUESTIONS: QuizQuestion[] = [
   {
@@ -106,6 +107,54 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
     explanationEn:
       "In 1991 Slovenia became an independent state, and the Kolpa turned from a river between two republics into an external border of Europe.",
     exhibitSlug: "meja-1991",
+  },
+  {
+    questionSi: "Kateri etnolog, ustanovitelj Slovenskega etnografskega muzeja, se je rodil v Gribljah leta 1876?",
+    questionEn: "Which ethnologist, founder of the Slovene Ethnographic Museum, was born in Griblje in 1876?",
+    answersSi: ["Jože Plečnik", "Niko Županič", "France Prešeren", "Janez Vajkard Valvasor"],
+    answersEn: ["Jože Plečnik", "Niko Županič", "France Prešeren", "Janez Vajkard Valvasor"],
+    correctIndex: 1,
+    explanationSi:
+      "Niko Županič (1876–1961), rojen v Gribljah, je bil etnolog, antropolog, zgodovinar in politik — leta 1921 je v Ljubljani ustanovil Etnografski inštitut, današnji Slovenski etnografski muzej.",
+    explanationEn:
+      "Niko Županič (1876–1961), born in Griblje, was an ethnologist, anthropologist, historian and politician — in 1921 he founded the Ethnographic Institute in Ljubljana, today's Slovene Ethnographic Museum.",
+    exhibitSlug: "niko-zupanic",
+  },
+  {
+    questionSi: "Koliko ranjencev so zavezniki s partizanskega letališča Otok prepeljali v južno Italijo?",
+    questionEn: "How many wounded did the Allies fly from the Otok partisan airfield to southern Italy?",
+    answersSi: ["137", "473", "1.473", "14.730"],
+    answersEn: ["137", "473", "1,473", "14,730"],
+    correctIndex: 2,
+    explanationSi:
+      "Z letališča Otok pri Metliki, kjer so zavezniki prvič pristali 17. septembra 1944, je v zavezniške bolnišnice v južni Italiji odpotovalo 1473 ranjencev; med rešenimi je bilo tudi 87 britanskih letalcev.",
+    explanationEn:
+      "From the Otok airfield near Metlika, where the Allies first landed on 17 September 1944, 1,473 wounded flew to Allied hospitals in southern Italy; among the rescued were 87 British airmen.",
+    exhibitSlug: "letalisce-otok-1944",
+  },
+  {
+    questionSi: "Kje je februarja 1944 zasedal SNOS, imenovan tudi prvi slovenski parlament?",
+    questionEn: "Where did the SNOS, also called the first Slovene parliament, meet in February 1944?",
+    answersSi: ["v Ljubljani", "v Črnomlju", "v Metliki", "v Novem mestu"],
+    answersEn: ["in Ljubljana", "in Črnomelj", "in Metlika", "in Novo mesto"],
+    correctIndex: 1,
+    explanationSi:
+      "19. in 20. februarja 1944 je v Črnomlju zasedal Slovenski narodnoosvobodilni svet (SNOS) — zasedanje, ki ga štejejo za temelj slovenske državnosti.",
+    explanationEn:
+      "On 19 and 20 February 1944 the Slovene National Liberation Council (SNOS) met in Črnomelj — a session counted among the foundations of Slovene statehood.",
+    exhibitSlug: "snos-crnomelj-1944",
+  },
+  {
+    questionSi: "Kako so se imenovali begunci pred Osmani, ki so v 16. stoletju poselili Vojno krajino ob Kolpi?",
+    questionEn: "What were the Ottoman-era refugees who settled the Military Frontier along the Kolpa in the 16th century called?",
+    answersSi: ["Uskoki", "Kranjci", "Pamiri", "švedski najemniki"],
+    answersEn: ["the Uskoks", "the Kranjci", "the Pamiri", "Swedish mercenaries"],
+    correctIndex: 0,
+    explanationSi:
+      "Uskoki — begunci srbskega, hrvaškega in vlaškega porekla — so v 16. stoletju poselili Vojno krajino ob Kolpi; njihovi potomci danes živijo v Bojancih in Marindolu.",
+    explanationEn:
+      "The Uskoks — refugees of Serbian, Croatian and Vlach origin — settled the Military Frontier along the Kolpa in the 16th century; their descendants live today in Bojanci and Marindol.",
+    exhibitSlug: "uskoki-in-vojna-krajina",
   },
 ];
 

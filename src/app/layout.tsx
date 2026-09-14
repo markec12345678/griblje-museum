@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Muzej vasi Griblje — digitalni muzej vasi ob Kolpi",
   description:
-    "Muzej vasi Griblje je dvojezični digitalni muzej resnične vasi v Beli krajini: 14 zapisov, dokazljivi viri, lestvica zanesljivosti, odprti podatki in zemljevid. / A bilingual digital museum of a real village in Bela krajina, Slovenia.",
+    "Muzej vasi Griblje je dvojezični digitalni muzej resnične vasi v Beli krajini: 20 zapisov, dokazljivi viri, lestvica zanesljivosti, odprti podatki in zemljevid. / A bilingual digital museum of a real village in Bela krajina, Slovenia.",
   keywords: [
     "Griblje",
     "Bela krajina",

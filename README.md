@@ -21,9 +21,9 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 14 razstav z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 20 razstav z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
-- 🗺️ **Zemljevid** — Leaflet + OSM, 6 točk (preverjene koordinate + približne, ločene
+- 🗺️ **Zemljevid** — Leaflet + OSM, 11 točk (preverjene koordinate + približne, ločene
   vizualno in z oznako »približno«)
 - 📖 **Zgodbe** — pripovedi z iskrenim pozivom za pričevanja skupnosti
 - 📅 **Dogodki** — program z notranjimi in zunanjimi dogodki
@@ -58,7 +58,7 @@ bun run db:push        # ustvari SQLite shemo
 bun run dev            # razvojna storitev na :3000
 ```
 
-Seed (14 razstav, 18 virov, 4 zgodbe, 5 dogodkov) se zažene samodejno ob prvem
+Seed (20 razstav, 56 virov, 4 zgodbe, 5 dogodkov) se zažene samodejno ob prvem
 zagonu (`prisma/seed.ts`, idempotentno).
 
 ### API

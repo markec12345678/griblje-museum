@@ -50,7 +50,19 @@ function FocusController({
 
   React.useEffect(() => {
     if (!focusSlug) {
-      map.setView(VILLAGE_CENTER, 14);
+      // Prilagodi izrez vsem točkam zbirke (vas + okolica),
+      // da so oddaljeni zapisi (Črnomelj, Otok, Žuniči …) vidni takoj.
+      const points = exhibits
+        .filter((ex) => ex.lat != null && ex.lng != null)
+        .map((ex) => [ex.lat as number, ex.lng as number] as [number, number]);
+      if (points.length > 1) {
+        map.fitBounds(L.latLngBounds(points).pad(0.25), {
+          maxZoom: 14,
+          animate: false,
+        });
+      } else {
+        map.setView(VILLAGE_CENTER, 14);
+      }
       return;
     }
     const target = exhibits.find((ex) => ex.slug === focusSlug);

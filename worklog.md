@@ -216,3 +216,24 @@ Stage Summary:
 - Mobilna 375 px: glava brez prekoračitve, iskanje deluje, vrstice 68 px; VLM: iskanje 9/10 (namizno), 8/10 (mobilno, pred povečanjem vrstic)
 - bun run lint: 0 napak; konzola po svežem nalaganju 0 napak/0 opozoril; dev.log zdrav (iskanje 10 ms)
 - Muzej zdaj izpolnjuje obe prej odprti obljubi odprtih podatkov (IIIF homepage + iskalni URL-i) in ima polno iskalno izkušnjo po vzoru DigitaltMuseum
+
+---
+Task ID: 9
+Agent: Main agent (Z.ai Code)
+Task: Spletna raziskava realnih podatkov o Gribljah in Beli krajini → 6 novih razstav z avtentičnimi viri in slikami
+
+Work Log:
+- Spletna raziskava (12 poizvedb + 4 WB članki): Wikipedija Griblje (izvor imena gribljati/Grüble, zaselki, Goranja lokva, Rudna peč, najbolj suh kot Bele krajine, Niko Županič, Anton Filak), Bela krajina (Vojna krajina 1460–1881, lončarstvo, železnica 1914, prvi partizanski pevski zbor), Niko Županič (celotna biografija: Dunaj 1903, jugoslovanski odbor, Pupin + Bled 1919, ustanovitev Etnografskega inštituta 1921, Etnolog 1927, stolica 1940, umik v Belo krajino 1943), partizansko letališče Otok (prvi pristanek 17. 9. 1944, 1473 ranjencev, 87 britanskih letalcev, spomenik Dakota), SNOS Črnomelj (19.–20. 2. 1944, sokolski dom, »prvi slovenski parlament«), Šokčev dvor Žuniči, mlini ob Kolpi (urbarji Dol/Radenci/Pobrežje/Krasinec, Flekov mlin 14. stol.), Uskoki, pogača EU ZTP 2011, metliška črnina 1968, Kolpa najtoplejša reka (25–28 °C)
+- Commons raziskava (6 API iskanj): Vavpotičev portret Županiča 1924 (javna last), Zavezniško letalo na letališču Otok 1944 (javna last), Bojanci in Bojanke 1908 (javna last), Šokčev dvor (Sl-Ziga, javna last), Mlin Pobrežje (švabo, CC BY-SA 3.0), Kulturni dom Črnomelj (Bb63lj, CC BY 4.0)
+- Prenos + obdelava (≤1600 px) + VLM preverjanje vseh 6 slik (Bojanjska cerkev zavržena — VLM: zunanje ne prepoznavno pravoslavna; namesto nje ljudje 1908)
+- 6 NOVIH razstav v museum-content.ts: uskoki-in-vojna-krajina (16. stol.→1881, 5 virov), sokcev-dvor (3 viri), mlini-na-kolpi (4 viri), niko-zupanic (1876–1961, izpostavljen, 5 virov), snos-crnomelj-1944 (19.–20. 2. 1944, 5 virov), letalisce-otok-1944 (1944–1945, 5 viri) — vse dvojezične, DOCUMENTED, s koordinatami in poštenimi opombami o lokaciji
+- Obogatitve obstoječih: griblje-vas (zaselki, izvor imena, suhost, Županič, Filak + vir Šimec 2001), kolpa-reka (najtoplejša reka, loke, stunci + vir temperatur), vino-in-crnina (prva ustekleničena 1968 + vir), belokranjska-kuhinja (EU ZTP 2011 + vir), jurjevanje (najstarejši folklorni festival; featured → niko-zupanic)
+- Kviz: 4 nova vprašanja (Županič, 1473 ranjencev, SNOS Črnomelj, Uskoki) — skupaj 10
+- IIIF: dimenzije 6 novih slik; layout.tsx meta 14→20 zapisov; README 20 razstav/56 virov/11 točk
+- POPRAVEK karte: fitBounds vsem točkam namesto fiksni zoom na vas (nove oddaljene točke Otok/Žuniči/Bojanci/Črnomelj so bile izven vidnega polja)
+- Ponoven seed (20 razstav, 56 virov)
+
+Stage Summary:
+- Zbirka: 14 → 20 zapisov, 25 → 56 virov; vse nove vsebine iz preverjenih spletnih virov (Wikipedija, RTV SLO, Delo, SEM, slovenska-biografija, kp-kolpa.si …), slike izključno avtentične z Commons (javna last / CC)
+- E2E (agent-browser + VLM): domov z novim izpostavljenim Županičem 9/10; zbirka vseh 6 novih kartic s krediti; dialog Županič (Vavpotičev portret + kredit + viri + avdio) brez napak; karta po popravku geografsko razpršena (gruča Griblje + Črnomelj W, Otok NE, Žuniči S, Bojanci SW) 9/10; časovnica novi mejniki 1876/1944; kviz 10/10 (vsa 4 nova vprašanja); zbiralec 5/20; avdio vodnik SLO+EN 200; mobilna 375 px brez prekoračitve, noga pravilno potisnjena; konzola 0 napak
+- bun run lint: 0 napak; dev.log brez napak; IIIF collection 20 manifestov; iskanje (županič → 3, uskoki → 1) deluje
