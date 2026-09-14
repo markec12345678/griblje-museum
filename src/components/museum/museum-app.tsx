@@ -603,7 +603,7 @@ export function MuseumApp() {
         onStartWalk={(walkId) => startWalk(walkId, 0, exhibitsQuery.data ?? [])}
       />
     ),
-    zgodbe: <StoriesView stories={storiesQuery.data ?? []} />,
+    zgodbe: <StoriesView stories={storiesQuery.data ?? []} onNavigate={navigate} />,
     casovnica: (
       <TimelineView
         exhibits={exhibitsQuery.data ?? []}

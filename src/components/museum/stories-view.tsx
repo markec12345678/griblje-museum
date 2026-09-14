@@ -1,9 +1,10 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { BookOpen, Feather, Megaphone, ScrollText } from "lucide-react";
+import { BookOpen, Feather, Megaphone, NotebookPen, ScrollText } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
+import type { MuseumView } from "@/components/museum/header";
 import type { StoryDTO, StoryKind } from "@/lib/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,7 +17,13 @@ const KIND_ICON: Record<StoryKind, React.ElementType> = {
   RAZPIS: Megaphone,
 };
 
-export function StoriesView({ stories }: { stories: StoryDTO[] }) {
+type StoriesViewProps = {
+  stories: StoryDTO[];
+  /** Navigacija na pogled spominske knjige — delujoči kanal za pričevanja (issue #2). */
+  onNavigate: (view: MuseumView) => void;
+};
+
+export function StoriesView({ stories, onNavigate }: StoriesViewProps) {
   const { t } = useLang();
   const es = useExhibitStrings();
   const reduceMotion = useReducedMotion();
@@ -145,10 +152,15 @@ export function StoriesView({ stories }: { stories: StoryDTO[] }) {
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <EvidenceBadge status={story.evidenceStatus} />
-                <Button className="min-h-11" onClick={() => (window.location.href = "mailto:pričevanja@muzej-griblje?subject=" + encodeURIComponent("Pričevanje — Griblje"))}>
+                <Button
+                  className="min-h-11"
+                  onClick={() => onNavigate("knjiga")}
+                >
+                  <NotebookPen className="mr-1.5 h-4 w-4" aria-hidden="true" />
                   {t.stories.callCta}
                 </Button>
               </div>
+              <p className="mt-3 text-sm text-muted-foreground">{t.stories.callVia}</p>
             </div>
           ))}
         </div>
