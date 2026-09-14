@@ -15,6 +15,8 @@ import { MyMuseumView } from "@/components/museum/my-museum-view";
 import { KidsView } from "@/components/museum/kids-view";
 import { ThemeHubView } from "@/components/museum/theme-hub-view";
 import { MoodGuideView } from "@/components/museum/mood-guide-view";
+import { GuestbookView } from "@/components/museum/guestbook-view";
+import { BehindScenesView } from "@/components/museum/behind-scenes-view";
 import { ConnectDialog } from "@/components/museum/connect-dialog";
 import { CompareTray } from "@/components/museum/compare-tray";
 import { CompareDialog } from "@/components/museum/compare-dialog";
@@ -638,6 +640,8 @@ export function MuseumApp() {
         }
       />
     ),
+    knjiga: <GuestbookView />,
+    zaKuliso: <BehindScenesView />,
   };
 
   return (

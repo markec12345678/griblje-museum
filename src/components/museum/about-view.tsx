@@ -20,6 +20,7 @@ import {
 import { useLang } from "@/lib/i18n";
 import { ALL_WALKS } from "@/lib/walks";
 import { printWorksheet } from "@/lib/worksheet";
+import { CollectionStats } from "@/components/museum/collection-stats";
 import type { ExhibitDTO, SourceType } from "@/lib/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -44,10 +45,9 @@ const EVIDENCE_ORDER = [
   "TO_COLLECT",
 ] as const;
 
-// Število vprašanj v muzejski uganki (museum-quiz.tsx) in število odprtih
-// API-jev muzeja — vpisani tukaj, ker sta produkta drugega sklada kode.
+// Število vprašanj v muzejski uganki (museum-quiz.tsx) — vpisano tukaj,
+// ker je produkt drugega sklada kode.
 const QUIZ_QUESTION_COUNT = 10;
-const API_ENDPOINT_COUNT = 7;
 
 export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
   const { t, lang } = useLang();
@@ -102,13 +102,15 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
         </div>
       </section>
 
-      {/* MUZEJ V ŠTEVILKAH */}
+      {/* ZBIRKA V ŠTEVILKAH — razširjena statistika (vzorec: Met/Tate) */}
       <section aria-labelledby="o-stevila" className="mt-14">
         <h2 id="o-stevila" className="font-display text-2xl font-semibold sm:text-3xl">
-          {t.about.numbersTitle}
+          {t.collectionStats.title}
         </h2>
+        <p className="mt-2 max-w-2xl text-muted-foreground">{t.collectionStats.subtitle}</p>
         <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {[
+            { value: exhibits.length, label: t.about.numbers.exhibits },
             { value: allSources.length, label: t.about.numbers.sources },
             {
               value: exhibits.filter((ex) => ex.lat != null && ex.lng != null).length,
@@ -117,7 +119,6 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             { value: ALL_WALKS.length, label: t.about.numbers.walks },
             { value: QUIZ_QUESTION_COUNT, label: t.about.numbers.quizQuestions },
             { value: 2, label: t.about.numbers.languages },
-            { value: API_ENDPOINT_COUNT, label: t.about.numbers.endpoints },
           ].map((item) => (
             <div
               key={item.label}
@@ -132,6 +133,9 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             </div>
           ))}
         </div>
+
+        {/* Razčlenitev po sklopih, obdobjih in zanesljivosti */}
+        <CollectionStats exhibits={exhibits} />
       </section>
 
       {/* LESTVICA ZANESLJIVOSTI */}

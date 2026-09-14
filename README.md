@@ -100,6 +100,23 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   odpre kartico prek povezave, natisne pa se lahko kot zložena A5 razglednica (vzorec
   Useum e-Cards, SFMOMA *Send Me*), deljiva povezava
   `/?postcard=<slug>&msg=…&od=…&pz=<pozdrav>`
+- 📖 **Spominska knjiga** — digitalna dvojnica vaške spominske knjige: vpisi z
+  imenom, krajom in sporočilom, števci vpisov in krajev, moderacija brez računov
+  (honeypot, omejitev hitrosti, hevristika povezav → čaka na pregled) (vzorec
+  DigitaltMuseum, Tenement Museum *Your Story, Our Story*), globoka povezava
+  `#knjiga`
+- 💬 **Spomini ob predmetu** — skupnostna znanja pod uradnim besedilom vsakega
+  zapisa: obiskovalci (domačini, izseljenci, potomci) delijo osebne spomine,
+  kurotorjev pregled pa je vgrajen v eno hevristiko (vzorec skupnostnih pripomb
+  DigitaltMuseum); POST `/api/memories`
+- 🎬 **Za kuliso** — kanal o muzejskem delu za prizoriščem: tura po depoju,
+  restavriranje predilnega kolesa, snemanje pričevanj, postavitev adventne
+  police — vodene pripovedi po korakih (vzorec Rijksmuseum *Operation Night
+  Watch*, SMK), globoka povezava `#zaKuliso`
+- 📊 **Zbirka v številkah** — razčlenitev zbirke po tematskih sklopih, obdobjih in
+  zanesljivosti virov z animiranimi vrsticami in zanimivostmi (najstarejši zapis,
+  % fotografinanih, % na karti) (vzorec vizualizacij zbirk Met/Tate) — v rubriki
+  *O muzeju*
 
 ## Tehnologija / Tech stack
 
@@ -117,7 +134,7 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 56 virov, 4 zgodbe, 5 dogodkov)
+bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 56 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -153,6 +170,19 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
 | `GET /api/opendata` | manifest + full dump + JSON-LD (CC BY-SA 4.0, CORS) |
 | `GET /api/iiif` | IIIF Presentation 3.0 manifest zbirke |
 | `GET /api/search?q=` | enotno iskanje po razstavah, zgodbah in dogodkih (neobčutljivo na diakritike) |
+| `GET /api/guestbook` | objavljeni vpisi spominske knjige + števci (CORS `*`) |
+| `POST /api/guestbook` | nov vpis — honeypot, hitrostna omejitev, samodejna moderacija |
+| `GET /api/memories?exhibit=` | spomini skupnosti ob enem zapisu (CORS `*`) |
+| `POST /api/memories` | nov spomin ob zapisu — enaka moderacija |
+
+### Trajnost skupnostnih prispevkov / Durability of community contributions
+
+Vpisi in spomini se pišejo v SQLite bazo. Na samostojni namestitvi (`bun run
+start`) so trajni. Na strežniških platformah (Vercel) je datotečni sistem
+ Funkcije minljiv — za trajno objavo pregledane prispevke kurosor prenese v
+ `src/lib/community-content.ts` + `bun run db:seed` (vzorec *git kot CMS*);
+ hevristika moderacije (povezave/e-pošta → status `held`) je opisana v
+ `src/lib/contributions.ts`.
 
 ## Licence / Licenses
 
@@ -165,11 +195,14 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
 ## Struktura / Structure
 
 ```
-prisma/schema.prisma      # Exhibit, Source, StoryItem, MuseumEvent
+prisma/schema.prisma      # Exhibit, Source, StoryItem, MuseumEvent, GuestbookEntry, ObjectMemory
 prisma/seed.ts            # idempotentni seed z dejstvi iz javnih virov
 src/app/page.tsx          # enostranska aplikacija muzeja
-src/components/museum/    # pogleji: Domov, Zbirka, Zgodbe, Karta, Dogodki, O muzeju
+src/components/museum/    # pogleji: Domov, Zbirka, Zgodbe, Karta, Dogodki, O muzeju, Knjiga, Za kuliso
 src/lib/i18n.tsx          # SLO/EN slovar
+src/lib/contributions.ts  # moderacija prispevkov (honeypot, hitrost, hevristika)
+src/lib/community-content.ts  # seme vpisov in spominov (git kot CMS)
+src/lib/behind-scenes.ts  # zapisi Za kuliso
 src/app/api/              # REST + odprti podatki
 public/images/authentic/  # avtentične fotografije (Wikimedia Commons / javna last)
 ```
