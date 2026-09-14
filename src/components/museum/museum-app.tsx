@@ -19,6 +19,11 @@ import { ConnectDialog } from "@/components/museum/connect-dialog";
 import { CompareTray } from "@/components/museum/compare-tray";
 import { CompareDialog } from "@/components/museum/compare-dialog";
 import { PersonalGallery } from "@/components/museum/personal-gallery";
+import { SlowLooking } from "@/components/museum/slow-looking";
+import { PuzzleDialog } from "@/components/museum/puzzle-dialog";
+import { PostcardDialog } from "@/components/museum/postcard-dialog";
+import { parsePostcardParams, type PostcardData } from "@/lib/postcard";
+import type { PuzzleSize } from "@/lib/puzzle";
 import { getAdventIndex, isDoorUnlocked } from "@/lib/seasonal-shelf";
 import { SearchDialog } from "@/components/museum/search-dialog";
 import { useLang } from "@/lib/i18n";
@@ -90,6 +95,20 @@ export function MuseumApp() {
   const [adventHighlight, setAdventHighlight] = React.useState<number | null>(null);
   const [pendingAdvent, setPendingAdvent] = React.useState<number | null>(null);
 
+  // Počasno gledanje: ?slow=<slug> odpre celozaslonsko vodeno razglabljanje.
+  const [slowExhibit, setSlowExhibit] = React.useState<ExhibitDTO | null>(null);
+  const [pendingSlow, setPendingSlow] = React.useState<string | null>(null);
+
+  // Sestavljanka: ?puzzle=<slug>&kocke=<3|4|5> odpre igro s sliko zapisa.
+  const [puzzleExhibit, setPuzzleExhibit] = React.useState<ExhibitDTO | null>(null);
+  const [puzzleSize, setPuzzleSize] = React.useState<PuzzleSize>(3);
+  const [pendingPuzzle, setPendingPuzzle] = React.useState<{ slug: string; size: PuzzleSize } | null>(null);
+
+  // Razglednica: ?postcard=<slug>&msg=…&od=…&pz=… odpre prejeto kartico.
+  const [postcardExhibit, setPostcardExhibit] = React.useState<ExhibitDTO | null>(null);
+  const [postcardInitial, setPostcardInitial] = React.useState<PostcardData | null>(null);
+  const [pendingPostcard, setPendingPostcard] = React.useState<PostcardData | null>(null);
+
   const exhibitsQuery = useExhibits();
   const eventsQuery = useEvents();
   const storiesQuery = useStories();
@@ -151,6 +170,16 @@ export function MuseumApp() {
       const day = Number(adventParam);
       if (Number.isInteger(day) && day >= 1 && day <= 24) setPendingAdvent(day);
     }
+    const slowParam = new URLSearchParams(window.location.search).get("slow");
+    if (slowParam) setPendingSlow(slowParam);
+    const puzzleParam = new URLSearchParams(window.location.search).get("puzzle");
+    if (puzzleParam) {
+      const kocke = Number(new URLSearchParams(window.location.search).get("kocke"));
+      const size: PuzzleSize = kocke === 4 || kocke === 5 ? kocke : 3;
+      setPendingPuzzle({ slug: puzzleParam, size });
+    }
+    const postcardParam = parsePostcardParams(new URLSearchParams(window.location.search));
+    if (postcardParam) setPendingPostcard(postcardParam);
     const hash = window.location.hash.replace(/^#/, "");
     if ((VIEW_ORDER as string[]).includes(hash) && hash !== "domov") {
       setView(hash as MuseumView);
@@ -304,6 +333,93 @@ export function MuseumApp() {
       window.history.replaceState(window.history.state, "", url);
     }
   }, [pendingAdvent, exhibitsQuery.data]);
+
+  // Zaostala globoka povezava počasnega gledanja ustreže, ko zbirka prispe.
+  React.useEffect(() => {
+    if (!pendingSlow || !exhibitsQuery.data) return;
+    const target = pendingSlow;
+    setPendingSlow(null);
+    const ex = exhibitsQuery.data.find((e) => e.slug === target);
+    if (ex) {
+      setSlowExhibit(ex);
+      markVisited(ex.slug);
+    }
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("slow")) {
+      url.searchParams.delete("slow");
+      window.history.replaceState(window.history.state, "", url);
+    }
+  }, [pendingSlow, exhibitsQuery.data]);
+
+  // Zaostala globoka povezava sestavljanke ustreže, ko zbirka prispe.
+  React.useEffect(() => {
+    if (!pendingPuzzle || !exhibitsQuery.data) return;
+    const target = pendingPuzzle;
+    setPendingPuzzle(null);
+    const ex = exhibitsQuery.data.find((e) => e.slug === target.slug);
+    if (ex) {
+      setPuzzleSize(target.size);
+      setPuzzleExhibit(ex);
+      markVisited(ex.slug);
+    }
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("puzzle")) {
+      url.searchParams.delete("puzzle");
+      url.searchParams.delete("kocke");
+      window.history.replaceState(window.history.state, "", url);
+    }
+  }, [pendingPuzzle, exhibitsQuery.data]);
+
+  // Zaostala globoka povezava razglednice ustreže, ko zbirka prispe.
+  React.useEffect(() => {
+    if (!pendingPostcard || !exhibitsQuery.data) return;
+    const target = pendingPostcard;
+    setPendingPostcard(null);
+    const ex = exhibitsQuery.data.find((e) => e.slug === target.slug);
+    if (ex) {
+      setPostcardInitial(target);
+      setPostcardExhibit(ex);
+    }
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("postcard")) {
+      url.searchParams.delete("postcard");
+      url.searchParams.delete("msg");
+      url.searchParams.delete("od");
+      url.searchParams.delete("pz");
+      window.history.replaceState(window.history.state, "", url);
+    }
+  }, [pendingPostcard, exhibitsQuery.data]);
+
+  // URL v korak z izkušnjami zapisa (?slow=, ?puzzle=, ?postcard=).
+  const experiencesUrlSynced = React.useRef(false);
+  React.useEffect(() => {
+    if (!experiencesUrlSynced.current) {
+      experiencesUrlSynced.current = true;
+      return;
+    }
+    const url = new URL(window.location.href);
+    if (slowExhibit) url.searchParams.set("slow", slowExhibit.slug);
+    else url.searchParams.delete("slow");
+    if (puzzleExhibit) {
+      url.searchParams.set("puzzle", puzzleExhibit.slug);
+      url.searchParams.set("kocke", String(puzzleSize));
+    } else {
+      url.searchParams.delete("puzzle");
+      url.searchParams.delete("kocke");
+    }
+    if (postcardExhibit && postcardInitial) {
+      url.searchParams.set("postcard", postcardInitial.slug);
+      if (postcardInitial.message.trim()) url.searchParams.set("msg", postcardInitial.message.trim());
+      if (postcardInitial.sender.trim()) url.searchParams.set("od", postcardInitial.sender.trim());
+      if (postcardInitial.greeting !== "pozdrav") url.searchParams.set("pz", postcardInitial.greeting);
+    } else {
+      url.searchParams.delete("postcard");
+      url.searchParams.delete("msg");
+      url.searchParams.delete("od");
+      url.searchParams.delete("pz");
+    }
+    window.history.replaceState(window.history.state, "", url);
+  }, [slowExhibit, puzzleExhibit, puzzleSize, postcardExhibit, postcardInitial]);
 
   // --- Bližnjice za iskanje (Ctrl/Cmd+K ali /) --------------------------
   React.useEffect(() => {
@@ -590,6 +706,20 @@ export function MuseumApp() {
         onShowOnMap={showOnMap}
         onOpenExhibit={(ex) => openExhibit(ex)}
         onOpenTheme={openTheme}
+        onSlowLooking={(ex) => {
+          setSelectedExhibit(null);
+          setSlowExhibit(ex);
+        }}
+        onPuzzle={(ex) => {
+          setSelectedExhibit(null);
+          setPuzzleSize(3);
+          setPuzzleExhibit(ex);
+        }}
+        onPostcard={(ex) => {
+          setSelectedExhibit(null);
+          setPostcardInitial(null);
+          setPostcardExhibit(ex);
+        }}
         walkContext={walkContext}
       />
 
@@ -633,6 +763,29 @@ export function MuseumApp() {
         onClose={() => setGalleryOpen(false)}
         onOpenExhibit={(ex) => openExhibit(ex)}
         onNavigate={navigate}
+      />
+
+      {/* Počasno gledanje — vodeno razglabljanje enega zapisa */}
+      <SlowLooking
+        exhibit={slowExhibit}
+        onClose={() => setSlowExhibit(null)}
+      />
+
+      {/* Sestavi sliko — muzejska sestavljanka */}
+      <PuzzleDialog
+        exhibit={puzzleExhibit}
+        initialSize={puzzleSize}
+        onClose={() => setPuzzleExhibit(null)}
+      />
+
+      {/* Pošlji razglednico — deljiva muzejska e-razglednica */}
+      <PostcardDialog
+        exhibit={postcardExhibit}
+        initial={postcardInitial}
+        onClose={() => {
+          setPostcardExhibit(null);
+          setPostcardInitial(null);
+        }}
       />
     </div>
   );

@@ -42,7 +42,10 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   `#zbirka`, `#zgodbe` … (isti format, ki ga objavljata IIIF in iskalni API)
 - 🌍 **SLO/EN** — popolna dvojezičnost z vztrajnostjo izbire
 - ♿ **Dostopnost** — izjava o dostopnosti po vzoru norveških muzejev (*universell utforming*),
-  tipkovna navigacija, `prefers-reduced-motion`, semantični HTML
+  tipkovna navigacija, `prefers-reduced-motion`, semantični HTML; lastna **dostopnostna
+  plošča** v glavi (večja pisava, močnejši kontrast, pisava za disleksijo Atkinson
+  Hyperlegible, mirni gibi, podčrtane povezave) — brez zunanjih prekrivnih gradnikov,
+  po priporočilu AAM; nastavitve se shranijo v brskalnik in se sinhronizirajo med zavihki
 - 🔓 **Odprti podatki** — `/api/opendata`: manifest, celoten dump, schema.org JSON-LD,
   licenca **CC BY-SA 4.0**, CORS glava — po vzoru odprtega API Nasjonalmuseeta (2018)
 - 🏛️ **Muzejska iskrenost** — vsak zapis nosi stopnjo zanesljivosti, fotografije so
@@ -84,6 +87,19 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
 - 🎬 **Filmski ogled zbirke** — samodejni ogled osebne zbirke z učinkom Ken Burns
   in neobvezno TTS pripovedjo (vzorec samodejnih video ogledov zbirk Rijksmuseuma);
   soba in film delita deljivo povezavo `/?gallery=<slug>,<slug>`
+- 🫁 **Počasno gledanje** — celozaslonsko vodeno razglabljanje enega zapisa v štirih
+  mirnih fazah (dih, podrobnosti, čuti, osebni spomin) s pavzo, podaljševanjem in
+  preskokom faze (WCAG 2.2.1); zasebni zapisek se shrani samo v brskalnik (vzorec
+  MoMA Slow Looking, Tate, Slow Art Day), deljivo povabilo `/?slow=<slug>`
+- 🧩 **Sestavi sliko** — muzejska sestavljanka iz slike vsakega zapisa (3×3, 4×4, 5×5);
+  ploščice se izmenjujejo s klikom, dotikom ali tipkovnico, vsaka igra je rešljiva;
+  števec potez, ura in najboljši časi se hranijo lokalno (vzorec ZMA Puzzler),
+  deljiv izziv `/?puzzle=<slug>&kocke=<3|4|5>`
+- 💌 **Pošlji razglednico** — muzejska e-razglednica: izbira zapisa, pozdrava in
+  sporočila, obrat kartice s čistim CSS-3D ter žigom in znamko muzeja; sprejemnik
+  odpre kartico prek povezave, natisne pa se lahko kot zložena A5 razglednica (vzorec
+  Useum e-Cards, SFMOMA *Send Me*), deljiva povezava
+  `/?postcard=<slug>&msg=…&od=…&pz=<pozdrav>`
 
 ## Tehnologija / Tech stack
 
