@@ -117,6 +117,13 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   zanesljivosti virov z animiranimi vrsticami in zanimivostmi (najstarejši zapis,
   % fotografinanih, % na karti) (vzorec vizualizacij zbirk Met/Tate) — v rubriki
   *O muzeju*
+- 🤖 **Pogovor z zbirko** — uzidani AI vodnik: obiskovalec zastavlja vprašanja,
+  model pa odgovarja IZKLJUČNO iz 20 kuriranih zapisov (dosje iz iste baze);
+  vsak odgovor se konča z navedki, ki so gumbi na prave zapise; odkrito
+  »tega ni v zbirki« namesto izmišljevanja; predlagana vprašanja, bližnjica
+  Ctrl/Cmd+G, deljiva povabilo `/?govor=1`; pogovor se ne shranjuje
+  (vzorec Met Assistant, DMA Angelica, museum-GPT); POST `/api/guide`
+  (z-ai-web-dev-sdk, strežniško; na Vercelu zahteva env `ZAI_CONFIG`)
 
 ## Tehnologija / Tech stack
 
@@ -174,6 +181,7 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
 | `POST /api/guestbook` | nov vpis — honeypot, hitrostna omejitev, samodejna moderacija |
 | `GET /api/memories?exhibit=` | spomini skupnosti ob enem zapisu (CORS `*`) |
 | `POST /api/memories` | nov spomin ob zapisu — enaka moderacija |
+| `POST /api/guide` | pogovor z zbirko — uzidani AI vodnik (z-ai-web-dev-sdk; `ZAI_CONFIG` na Vercelu) |
 
 ### Trajnost skupnostnih prispevkov / Durability of community contributions
 
