@@ -109,7 +109,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
           {t.collectionStats.title}
         </h2>
         <p className="mt-2 max-w-2xl text-muted-foreground">{t.collectionStats.subtitle}</p>
-        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-7">
           {[
             { value: exhibits.length, label: t.about.numbers.exhibits },
             { value: allSources.length, label: t.about.numbers.sources },
@@ -120,6 +120,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             { value: ALL_WALKS.length, label: t.about.numbers.walks },
             { value: QUIZ_QUESTION_COUNT, label: t.about.numbers.quizQuestions },
             { value: 2, label: t.about.numbers.languages },
+            { value: 10, label: t.about.numbers.endpoints },
           ].map((item) => (
             <div
               key={item.label}
