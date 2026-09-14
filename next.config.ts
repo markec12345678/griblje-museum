@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
     "/api/opendata": ["./db/custom.db"],
     "/api/iiif": ["./db/custom.db"],
     "/api/audio-guide": ["./db/custom.db"],
+    "/api/guestbook": ["./db/custom.db"],
+    "/api/memories": ["./db/custom.db"],
   },
   // Tipovne napake se ne smejo tiho pretakati v produkcijo
   // (`bunx tsc --noEmit` je čist; ob novih napakah build odpove).

@@ -4,11 +4,14 @@
  */
 import { db } from "../src/lib/db";
 import { seedExhibits, seedStories, seedEvents } from "../src/lib/museum-content";
+import { seedGuestbook, seedMemories } from "../src/lib/community-content";
 
 async function main() {
   console.log("🌱 Sejanje muzejske zbirke …");
 
   // Počisti obstoječe zapise (idempotentni seed)
+  await db.objectMemory.deleteMany();
+  await db.guestbookEntry.deleteMany();
   await db.source.deleteMany();
   await db.exhibit.deleteMany();
   await db.storyItem.deleteMany();
@@ -63,6 +66,48 @@ async function main() {
     await db.museumEvent.create({ data: { ...ev, startsAt: new Date(ev.startsAt) } });
   }
   console.log(`  ✓ dogodki: ${seedEvents.length}`);
+
+  // Slovar slug → id, za vezavo spominov na predmete.
+  const exhibits = await db.exhibit.findMany({ select: { id: true, slug: true } });
+  const idBySlug = new Map(exhibits.map((e) => [e.slug, e.id]));
+
+  // Sodelovanje skupnosti — ilustrativni vpisi (glej community-content.ts).
+  const DAY = 24 * 60 * 60 * 1000;
+  for (const entry of seedGuestbook) {
+    await db.guestbookEntry.create({
+      data: {
+        name: entry.name,
+        place: entry.place,
+        message: entry.message,
+        lang: entry.lang,
+        status: "published",
+        createdAt: new Date(Date.now() - entry.daysAgo * DAY),
+      },
+    });
+  }
+  console.log(`  ✓ spominska knjiga: ${seedGuestbook.length}`);
+
+  let seededMemories = 0;
+  for (const mem of seedMemories) {
+    const exhibitId = idBySlug.get(mem.exhibitSlug);
+    if (!exhibitId) {
+      console.warn(`  ! neznan slug za spomin: ${mem.exhibitSlug}`);
+      continue;
+    }
+    await db.objectMemory.create({
+      data: {
+        exhibitId,
+        author: mem.author,
+        place: mem.place,
+        memory: mem.memory,
+        lang: mem.lang,
+        status: "published",
+        createdAt: new Date(Date.now() - mem.daysAgo * DAY),
+      },
+    });
+    seededMemories += 1;
+  }
+  console.log(`  ✓ spomini ob predmetih: ${seededMemories}/${seedMemories.length}`);
 
   console.log("🌱 Končano.");
 }

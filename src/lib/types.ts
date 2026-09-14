@@ -96,3 +96,39 @@ export type MuseumSnapshot = {
   events: MuseumEventDTO[];
   stories: StoryDTO[];
 };
+
+// --- Sodelovanje skupnosti (spominska knjiga, spomini ob predmetu) ---
+
+export type GuestbookEntryDTO = {
+  id: string;
+  name: string;
+  place: string | null;
+  message: string;
+  lang: string;
+  createdAt: string;
+};
+
+export type GuestbookDTO = {
+  count: number;
+  places: number;
+  entries: GuestbookEntryDTO[];
+};
+
+export type ObjectMemoryDTO = {
+  id: string;
+  author: string;
+  place: string | null;
+  memory: string;
+  lang: string;
+  createdAt: string;
+};
+
+export type ObjectMemoriesDTO = {
+  count: number;
+  memories: ObjectMemoryDTO[];
+};
+
+export type ContributionResult = {
+  ok: boolean;
+  status: "published" | "held";
+};
