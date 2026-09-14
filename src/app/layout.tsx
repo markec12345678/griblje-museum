@@ -3,11 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/museum/providers";
 import { PwaRegister } from "@/components/museum/pwa-register";
-
-/** Javni naslov muzeja (env na Vercelu; privzeto produkcijska domena). */
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://griblje-museum-robertpezdirc12-designs-projects.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
