@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { isReadOnlyDatabase, readOnlyResponse } from "@/lib/readonly-db";
 import {
   cleanText,
   clientIp,
@@ -193,6 +194,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, status }, { status: 201 });
   } catch (error) {
     console.error("API /api/memories POST error:", error);
+    // Strežniške funkcije z bralnim datotečnim sistemom (npr. Vercel) —
+    // bazo lahko beremo, ne pa tudi zapisujemo. Povemo pošteno.
+    if (isReadOnlyDatabase(error)) {
+      const ro = readOnlyResponse();
+      return NextResponse.json(ro.body, { status: ro.status });
+    }
     return NextResponse.json({ error: "Napaka pri shranjevanju spomina" }, { status: 500 });
   }
 }
