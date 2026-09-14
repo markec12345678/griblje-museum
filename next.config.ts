@@ -2,11 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "standalone",
-  /* config options here */
+  // Tipovne napake se ne smejo tiho pretakati v produkcijo
+  // (`bunx tsc --noEmit` je čist; ob novih napakah build odpove).
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
-  reactStrictMode: false,
+  // Strogi način razkriva neželene učinke (dvojni klici učinkov) —
+  // koda mu je pisana naklonjeno (čisti updaterji, varovanja runId).
+  reactStrictMode: true,
 };
 
 export default nextConfig;
