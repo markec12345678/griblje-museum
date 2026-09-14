@@ -9,14 +9,18 @@ import {
   ExternalLink,
   FileText,
   Globe,
+  Heart,
   Link2,
   Map as MapIcon,
   MapPin,
   Mic,
   Quote,
+  X,
+  ZoomIn,
 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
+import { useFavorites } from "@/lib/favorite-tracker";
 import type { ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -31,6 +35,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EvidenceBadge } from "@/components/museum/evidence-badge";
 import { AudioGuide } from "@/components/museum/audio-guide";
+import { DeepZoom } from "@/components/museum/deep-zoom";
 import {
   WalkNav,
   WalkStopNote,
@@ -62,6 +67,10 @@ export function ExhibitDialog({
   const { t, lang } = useLang();
   const es = useExhibitStrings();
   const open = exhibit !== null;
+  const { isFavorite, toggleFavorite } = useFavorites();
+
+  // Približevalni ogled slike (deep zoom) — se preklopi nazaj ob naslednjem zapisu.
+  const [zoomOpen, setZoomOpen] = React.useState(false);
 
   // Kopiranje deljive povezave in citata zapisa (globoka povezava ?exhibit=<slug>).
   const [copyState, setCopyState] = React.useState<"idle" | "ok" | "fail">("idle");
@@ -69,6 +78,7 @@ export function ExhibitDialog({
   React.useEffect(() => {
     setCopyState("idle");
     setCitationState("idle");
+    setZoomOpen(false);
   }, [exhibit?.slug]);
 
   const copyText = async (text: string): Promise<boolean> => {
@@ -131,23 +141,61 @@ export function ExhibitDialog({
             {/* Vrstica sprehoda — le ko je zapis odprt kot postaja sprehoda */}
             {walkContext && <WalkTopBar ctx={walkContext} />}
 
-            {/* Slika zapisa */}
+            {/* Slika zapisa ali približevalni ogled (deep zoom) */}
             <div className="relative aspect-[16/9] w-full sm:aspect-[2/1]">
-              <Image
-                src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
-                alt={es.title(exhibit)}
-                fill
-                sizes="(max-width: 768px) 100vw, 768px"
-                className="object-cover"
-              />
-              <div
-                className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"
-                aria-hidden="true"
-              />
-              <p className="absolute bottom-3 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
-                {exhibit.imageCredit ?? t.collection.aiNote}
-              </p>
+              {zoomOpen && exhibit ? (
+                <>
+                  <DeepZoom
+                    src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
+                    alt={es.title(exhibit)}
+                  />
+                  <Button
+                    type="button"
+                    variant="secondary"
+                    size="icon"
+                    className="absolute right-3 top-3 size-11 bg-background/85 backdrop-blur-sm"
+                    aria-label={t.zoom.close}
+                    title={t.zoom.close}
+                    onClick={() => setZoomOpen(false)}
+                  >
+                    <X className="h-5 w-5" aria-hidden="true" />
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Image
+                    src={exhibit?.image ?? "/images/authentic/hero-griblje.jpg"}
+                    alt={exhibit ? es.title(exhibit) : ""}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    className="object-cover"
+                  />
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"
+                    aria-hidden="true"
+                  />
+                  <Button
+                    type="button"
+                    variant="secondary"
+                    size="icon"
+                    className="absolute right-3 top-3 size-11 bg-background/70 backdrop-blur-sm"
+                    aria-label={t.zoom.open}
+                    title={t.zoom.open}
+                    onClick={() => setZoomOpen(true)}
+                  >
+                    <ZoomIn className="h-5 w-5" aria-hidden="true" />
+                  </Button>
+                  <p className="absolute bottom-3 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
+                    {exhibit?.imageCredit ?? t.collection.aiNote}
+                  </p>
+                </>
+              )}
             </div>
+            {zoomOpen && exhibit?.imageCredit && (
+              <p className="bg-black/5 px-4 py-2 text-right text-[11px] leading-snug text-muted-foreground">
+                {exhibit.imageCredit}
+              </p>
+            )}
 
             <div className="px-6 pb-8 pt-5 sm:px-8">
               <DialogHeader className="items-start space-y-2 text-left">
@@ -156,6 +204,35 @@ export function ExhibitDialog({
                   <EvidenceBadge status={exhibit.evidenceStatus} />
                   <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                     {es.period(exhibit)}
+                  </span>
+                  <span className="ml-auto">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9 gap-1.5"
+                      aria-pressed={isFavorite(exhibit.slug)}
+                      aria-label={
+                        isFavorite(exhibit.slug)
+                          ? t.myMuseum.removeDialog
+                          : t.myMuseum.saveDialog
+                      }
+                      onClick={() => toggleFavorite(exhibit.slug)}
+                    >
+                      <Heart
+                        className={
+                          isFavorite(exhibit.slug)
+                            ? "h-4 w-4 fill-primary text-primary"
+                            : "h-4 w-4"
+                        }
+                        aria-hidden="true"
+                      />
+                      <span className="hidden sm:inline">
+                        {isFavorite(exhibit.slug)
+                          ? t.myMuseum.saved
+                          : t.myMuseum.save}
+                      </span>
+                    </Button>
                   </span>
                 </div>
                 <DialogTitle asChild>
