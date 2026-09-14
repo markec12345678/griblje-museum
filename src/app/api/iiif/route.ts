@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
  * oblika odprtih podatkov po evropskem standardu IIIF, ki ga uporabljajo
  * Europeana, DigitaltMuseum in vodilni muzeji.
  *
- *   GET /api/iiif                  → Collection (celotna zbirka, 14 manifestov)
+ *   GET /api/iiif                  → Collection (celotna zbirka, 20 manifestov)
  *   GET /api/iiif?manifest=<slug>  → posamezen Manifest s Canvasom in sliko
  *
  * Licenca vsebine: CC BY-SA 4.0 (enako kot /api/opendata).
@@ -129,7 +129,7 @@ function buildManifestReference(origin: string, exhibit: ExhibitRow) {
     type: "Manifest",
     label: langMap(exhibit.titleSi, exhibit.titleEn),
     summary: langMap(exhibit.summarySi, exhibit.summaryEn),
-    thumbnail: [{ id: `${origin}${image}`, type: "Image", format: "image/png" }],
+    thumbnail: [{ id: `${origin}${image}`, type: "Image", format: "image/jpeg" }],
     homepage: [
       {
         id: `${origin}/?exhibit=${exhibit.slug}`,
@@ -160,7 +160,7 @@ function buildFullManifest(origin: string, exhibit: ExhibitRow) {
     requiredStatement,
     rights: RIGHTS,
     provider,
-    thumbnail: [{ id: `${origin}${image}`, type: "Image", format: "image/png" }],
+    thumbnail: [{ id: `${origin}${image}`, type: "Image", format: "image/jpeg" }],
     homepage: [
       {
         id: `${origin}/?exhibit=${exhibit.slug}`,
@@ -178,29 +178,27 @@ function buildFullManifest(origin: string, exhibit: ExhibitRow) {
         label: langMap(exhibit.titleSi, exhibit.titleEn),
         height,
         width,
-        // Canvas.items je v IIIF 3.0 POLJE POLJ AnnotationPage.
+        // Canvas.items je v IIIF 3.0 POLJE AnnotationPage (ne polje polj).
         items: [
-          [
-            {
-              id: pageId,
-              type: "AnnotationPage",
-              items: [
-                {
-                  id: `${pageId}&anno=0`,
-                  type: "Annotation",
-                  motivation: "painting",
-                  body: {
-                    id: `${origin}${image}`,
-                    type: "Image",
-                    format: "image/png",
-                    width,
-                    height,
-                  },
-                  target: canvasId,
+          {
+            id: pageId,
+            type: "AnnotationPage",
+            items: [
+              {
+                id: `${pageId}&anno=0`,
+                type: "Annotation",
+                motivation: "painting",
+                body: {
+                  id: `${origin}${image}`,
+                  type: "Image",
+                  format: "image/jpeg",
+                  width,
+                  height,
                 },
-              ],
-            },
-          ],
+                target: canvasId,
+              },
+            ],
+          },
         ],
       },
     ],
