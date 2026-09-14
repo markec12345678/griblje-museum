@@ -20,6 +20,7 @@ import {
 import { useLang } from "@/lib/i18n";
 import { ALL_WALKS } from "@/lib/walks";
 import { printWorksheet } from "@/lib/worksheet";
+import { SITE_URL } from "@/lib/site";
 import { CollectionStats } from "@/components/museum/collection-stats";
 import type { ExhibitDTO, SourceType } from "@/lib/types";
 import { Card, CardContent } from "@/components/ui/card";
@@ -302,7 +303,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             </a>
           </div>
           <pre className="museum-scroll overflow-x-auto px-5 py-4 font-mono text-xs leading-relaxed text-foreground/85">
-{`curl -s https://muzej-griblje/api/opendata \\
+{`curl -s ${SITE_URL}/api/opendata \\
   | jq '.counts'
 
 # { "exhibits": ${exhibits.length},

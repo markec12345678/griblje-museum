@@ -1,20 +1,19 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
 
 /**
  * Sitemap — osnovna odprtost spletišča za iskalnike.
  * Muzej je enostranska aplikacija, zato je objavljen koren "/"
  * skupaj z odprtimi podatkovnimi končnimi točkami.
  *
- * Domena: env NEXT_PUBLIC_SITE_URL (Vercel) z dnanesnjo produkcijsko
- * domeno kot privzetom; ob nakupu prave domene jo nastavite v okolju.
+ * Domena: en izvor resnice `src/lib/site.ts` (env NEXT_PUBLIC_SITE_URL
+ * z današnjo produkcijsko domeno kot privzeto; ob nakupu prave domene
+ * jo nastavite v okolju).
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base =
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://griblje-museum-robertpezdirc12-designs-projects.vercel.app";
   return [
     {
-      url: base + "/",
+      url: SITE_URL + "/",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,

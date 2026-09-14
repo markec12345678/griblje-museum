@@ -238,6 +238,8 @@ export const ui = {
       callTitle: "Zbirka pričevanj je prazna — namenoma.",
       callText:
         "Ne izmišljujemo si niti ene izjave domačinov. Če vaši sorodniki poznajo Griblje prej 1960, vas vabimo: sodelujte pri zbiranju ustne zgodovine. Vsako pričevanje bomo zapisali z imenom, letom in soglasjem.",
+      callVia:
+        "Sporočilo najlažje pustite v spominski knjigi muzeja — kurator jo redno prebere. Za daljša pričevanja (družinske fotografije, dokumenti) pišite na naslov, ki ga objavimo po ureditvi poštne nabiralnice; do tedaj si izmišljenih naslovov ne objavljamo.",
       callCta: "Prijavi pričevanje",
       read: "Preberi zgodbo",
       basedOn: "Po javnih virih",
@@ -1078,6 +1080,8 @@ export const ui = {
       callTitle: "The testimony collection is empty — on purpose.",
       callText:
         "We do not invent a single quote from villagers. If your relatives knew Griblje before 1960, you are invited: take part in collecting oral history. Every testimony will be recorded with a name, a year and consent.",
+      callVia:
+        "The easiest way to leave a message is the museum's memory book — the curator reads it regularly. For longer testimonies (family photographs, documents) an address will be published once a mailbox is set up; until then we do not publish made-up addresses.",
       callCta: "Submit a testimony",
       read: "Read the story",
       basedOn: "From public sources",
