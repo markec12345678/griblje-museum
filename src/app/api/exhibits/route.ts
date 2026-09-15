@@ -36,6 +36,8 @@ export async function GET(request: Request) {
       evidenceStatus: ex.evidenceStatus as EvidenceStatus,
       image: ex.image,
       imageCredit: ex.imageCredit,
+      model3dUrl: ex.model3dUrl,
+      model3dCredit: ex.model3dCredit,
       yearFrom: ex.yearFrom,
       yearTo: ex.yearTo,
       lat: ex.lat,

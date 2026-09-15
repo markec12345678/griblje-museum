@@ -39,6 +39,8 @@ type SeedExhibit = {
   evidenceStatus: EvidenceStatus;
   image?: string;
   imageCredit?: string;
+  model3dUrl?: string;
+  model3dCredit?: string;
   yearFrom?: number;
   yearTo?: number;
   lat?: number;
@@ -160,6 +162,11 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/sveti-vid.jpg",
     imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
+    // Interpretativni 3D-model muzeja (low-poly maketa, barvna gradnja iz
+    // opisa stavbe: baročna podoba 18. st., zvonik nad pročeljem). Fotogrametrija
+    // ostaja cilj prihodnje digitalizacije po razpisih (MGTŠ 3.2).
+    model3dUrl: "/models/cerkev-sv-vida.glb",
+    model3dCredit: "Interpretativni model: Muzej vasi Griblje (postavitev 2026) · CC BY-SA 4.0",
     lat: 45.5728,
     lng: 15.2922,
     coordsApprox: true,

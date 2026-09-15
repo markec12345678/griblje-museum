@@ -30,7 +30,7 @@ import {
   guideCacheSize,
 } from "@/lib/guide-cache";
 
-export type GuideLang = "sl" | "en";
+export type GuideLang = "sl" | "en" | "hr";
 
 export type GuideMessage = { role: "user" | "assistant"; content: string };
 
@@ -107,7 +107,9 @@ function truncate(text: string, max: number): string {
 }
 
 function formatDossier(lang: GuideLang, exhibits: DossierExhibit[]): string {
-  const sl = lang === "sl";
+  // Hrvaški vodnik odgovarja hrvaško, a iz slovenskih plasti dosjeja —
+  // vsebina zbirk ostaja v izvirniku (medsebojna razumljivost ob Kolpi).
+  const sl = lang !== "en";
   return exhibits
     .map((e) => {
       const bio = getBiography(e.slug);
@@ -204,7 +206,19 @@ async function getDossier(lang: GuideLang) {
 
 function systemPrompt(lang: GuideLang, dossier: string): string {
   const rules =
-    lang === "sl"
+    lang === "hr"
+      ? `Si ljubazan digitalni vodič Muzeja sela Griblje (Bela krajina, Slovenija). Odgovaraš HRVATSKI.
+
+NADZORUJEŠ ISKLJUČIVO DOSJE U NIŽE — to je cijelo znanje muzeja (sadržaj je na slovenskom, što je uz Kolpu međusobno razumljivo):
+1. Odgovaraj samo iz dosjea. Ako odgovora nema u dosjeu, otvoreno priznaj: »To (još) nije u zbirci muzeja.« i predloži najbliži zapis po temi.
+2. NIKAD ne izmišljaj datume, imena, brojeve ni navode mještana.
+3. Poštuj stupanj pouzdanosti zapisa (DOCUMENTED = dokumentirano, TRADITION = predaja, UNVERIFIED = neprovjereno …) i spomeni ga kad je odlučan za odgovor.
+4. Kad god spomeneš određeni zapis, na kraju odgovora pozovi se na njega u obliku [[slug]] (samo pravi slugovi iz dosjea, 1–3 poziva, svaki u svojim dvostrukim uglatim zagradama). Ako spominješ više zapisa, nabroji sve. Ako se ne pozivaš ni na jedan, ne dodavaj ništa.
+5. Odgovori su kratki i topli (do ~120 riječi), poput vodiča koji stoji uz sliku — bez naslova, bez markdown ukrasa, bez popisa, osim ako pitanje izričito traži popis.
+6. Za svjedočanstva i sjećanja mještana upućuj posjetitelja u knjigu sjećanja (#knjiga) — muzej namjerno ne izmišlja izjave.
+7. Razgovor se ne pohranjuje; ne ispituj o osobnim podacima.
+8. Piši živim, prirodnim hrvatskim — kao čovjek kojem je ovo selo doista dom. Nikad se ne prebacuj u drugi jezik (osim vlastitih imena) i nikad ne zvuči kao strojni prijevod.`
+      : lang === "sl"
       ? `Si vljuden digitalni vodnik Muzeja vasi Griblje (Bela krajina, Slovenija). Odgovarjaš SLOVENSKO.
 
 NADZOROVA IZKLJUČNO DOSJE SPODAJ — to je celotno znanje muzeja:
@@ -228,11 +242,21 @@ YOU ARE GROUNDED STRICTLY IN THE DOSSIER BELOW — it is the museum's entire kno
 7. The conversation is not stored; never ask for personal data.
 8. Write in living, natural English — a human voice of someone whose home village this is, never machine-like and never drifting into another language.`;
 
+  // Zaključni spomin na jezik: modeli najmočneje upoštevajo zadnje vrstice
+  // (recency bias) — dosje je slovenski, zato jezik izrecno ponovimo na koncu.
+  const closing =
+    lang === "hr"
+      ? "PONOVITEV PRAVIL: dosje je na slovenskom, ali tvoj odgovor mora biti napisan HRVATSKI (povijest, ne zgodovina; selo, ne vas; riječi hrvatski, ne slovenske)."
+      : lang === "sl"
+        ? "PONOVITEV PRAVIL: odgovori nujno v živi slovenščini."
+        : "RULE REMINDER: answer in living English only.";
+
   return `${rules}
 
 --- DOSJE ZBIRKE (edini vir resnice) ---
 ${dossier}
---- KONEC DOSJEJA ---`;
+--- KONEC DOSJEJA ---
+${closing}`;
 }
 
 /* --- Razčlenjevanje navedkov ------------------------------------------ */

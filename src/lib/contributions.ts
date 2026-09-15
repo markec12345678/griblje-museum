@@ -92,7 +92,7 @@ const placeSchema = z
   .max(LIMITS.place)
   .optional()
   .transform((v) => (v && v.trim() ? cleanText(v, LIMITS.place) : null));
-const langSchema = z.enum(["sl", "en"]).default("sl");
+const langSchema = z.enum(["sl", "en", "hr"]).default("sl");
 /** Honeypot — neprazna vrednost pomeni robota; shema sprejme vse, odloči pot. */
 const honeypotSchema = z.string().optional().default("");
 

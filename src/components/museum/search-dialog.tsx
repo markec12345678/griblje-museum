@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { Calendar, Landmark, ScrollText } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, type Lang } from "@/lib/i18n";
 import type { ExhibitDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
 import {
@@ -74,10 +74,12 @@ type SearchResponse = {
 
 type Status = "idle" | "loading" | "done" | "error";
 
-function storyKindLabel(kind: StoryHit["kind"], lang: "sl" | "en"): string {
-  if (kind === "ZGODBA") return lang === "sl" ? "zgodba" : "story";
-  if (kind === "NACELO") return lang === "sl" ? "kuratorsko načelo" : "curatorial principle";
-  return lang === "sl" ? "razpis za pričevanja" : "call for testimonies";
+function storyKindLabel(kind: StoryHit["kind"], lang: Lang): string {
+  if (kind === "ZGODBA")
+    return lang === "sl" ? "zgodba" : lang === "hr" ? "priča" : "story";
+  if (kind === "NACELO")
+    return lang === "sl" ? "kuratorsko načelo" : lang === "hr" ? "kuratorsko načelo" : "curatorial principle";
+  return lang === "sl" ? "razpis za pričevanja" : lang === "hr" ? "natječaj za svjedočanstva" : "call for testimonies";
 }
 
 export function SearchDialog({
@@ -243,7 +245,7 @@ export function SearchDialog({
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-medium">
-                            {hit.title[lang]}
+                            {hit.title[lang === "en" ? "en" : "sl"]}
                           </span>
                           <span className="mt-0.5 block truncate text-xs text-muted-foreground">
                             {hit.period[lang]}
@@ -268,7 +270,7 @@ export function SearchDialog({
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-medium">
-                            {hit.title[lang]}
+                            {hit.title[lang === "en" ? "en" : "sl"]}
                           </span>
                           <span className="mt-0.5 block truncate text-xs text-muted-foreground">
                             {storyKindLabel(hit.kind, lang)}
@@ -293,7 +295,7 @@ export function SearchDialog({
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-medium">
-                            {hit.title[lang]}
+                            {hit.title[lang === "en" ? "en" : "sl"]}
                           </span>
                           <span className="mt-0.5 block truncate text-xs text-muted-foreground">
                             {dateFmt.format(new Date(hit.startsAt))} · {hit.location[lang]}

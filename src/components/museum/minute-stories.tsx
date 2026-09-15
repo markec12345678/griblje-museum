@@ -88,9 +88,9 @@ function MinutePlayer({
       }
       const story = getMinuteStory(slug);
       const text = story
-        ? lang === "sl"
-          ? story.textSi
-          : story.textEn
+        ? lang === "en"
+          ? story.textEn
+          : story.textSi
         : "";
       if (!text) {
         setStatus("error");
@@ -99,7 +99,8 @@ function MinutePlayer({
       setStatus("playing");
       setDeviceVoice(true);
       speechRef.current?.cancel();
-      void speakBrowser(text, lang, {
+      // Hrvaški uporabnik posluša slovensko vsebino (razumljivost ob Kolpi).
+      void speakBrowser(text, lang === "en" ? "en" : "sl", {
         onEnd: () => {
           if (runId !== runIdRef.current) return;
           stop();
@@ -128,7 +129,9 @@ function MinutePlayer({
       setStatus("loading");
       try {
         const res = await fetch(
-          `/api/audio-guide?slug=${encodeURIComponent(slug)}&lang=${lang}&minute=1`
+          `/api/audio-guide?slug=${encodeURIComponent(slug)}&lang=${
+            lang === "en" ? "en" : "sl"
+          }&minute=1`
         );
         if (!res.ok) throw new Error("minute audio failed");
         const blob = await res.blob();

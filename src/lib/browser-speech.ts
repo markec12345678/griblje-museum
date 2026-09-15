@@ -14,7 +14,7 @@
  *    kratke odseke po stavkih (≤ 200 znakov) in jih predvajamo zaporedno.
  */
 
-export type SpeechLang = "sl" | "en";
+export type SpeechLang = "sl" | "en" | "hr";
 
 /** Ali ta brskalnik sploh podpira sintezo govora. */
 export function browserSpeechSupported(): boolean {
@@ -49,15 +49,22 @@ export function pickVoice(
   voices: SpeechSynthesisVoice[],
   lang: SpeechLang
 ): SpeechSynthesisVoice | null {
-  const prefix = lang === "sl" ? "sl" : "en";
+  const prefix = lang === "sl" ? "sl" : lang === "hr" ? "hr" : "en";
   const exact = voices.filter((v) =>
     v.lang.toLowerCase().replace("_", "-").startsWith(prefix)
   );
-  if (exact.length === 0) return null;
+  if (exact.length === 0) {
+    // Hrvaški glas pogosto manjka — slovenski jezik je za slovensko vsebino
+    // (ki jo hrvaški uporabnik bere) prava izbira; padec nazaj na sl.
+    if (lang === "hr") return pickVoice(voices, "sl");
+    return null;
+  }
   const nice =
     lang === "sl"
       ? /vesna|lado|[cč]eda|google|sloven/i
-      : /samantha|daniel|google|natural|aria|libby/i;
+      : lang === "hr"
+        ? /google|natural|hrvatsk/i
+        : /samantha|daniel|google|natural|aria|libby/i;
   return (
     exact.find((v) => nice.test(v.name) && v.localService) ??
     exact.find((v) => v.localService) ??

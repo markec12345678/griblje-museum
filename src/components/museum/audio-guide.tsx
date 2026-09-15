@@ -2,7 +2,8 @@
 
 import * as React from "react";
 import { Headphones, Loader2, Square } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, type Lang } from "@/lib/i18n";
+import { trackStat } from "@/lib/stats-client";
 import type { ExhibitDTO } from "@/lib/types";
 import { getMinuteStory } from "@/lib/minute-stories";
 import { browserSpeechSupported, speakBrowser } from "@/lib/browser-speech";
@@ -21,7 +22,11 @@ type Status = "idle" | "loading" | "buffering" | "playing" | "error";
 
 type SpeechHandle = { cancel: () => void };
 
+/** Vsebina pripovedi: hrvaški uporabnik sliši slovensko vsebino (medsebojna
+ * razumljivost ob Kolpi) — zato tu "sl" pomeni "slovenska vsebina". */
 type AudioLang = "sl" | "en";
+
+const audioLangOf = (lang: Lang): AudioLang => (lang === "en" ? "en" : "sl");
 
 /** Pripoved vodnika, zgrajena na odjemalcu (enaka sestava kot na strežniku) —
  * nujna za rezervo z glasom naprave, ko strežniška sinteza odpove. */
@@ -115,7 +120,7 @@ export function AudioGuide({
         const res = await fetch(
           `/api/audio-guide?slug=${encodeURIComponent(
             exhibit.slug
-          )}&lang=${lang}${variant === "minute" ? "&minute=1" : ""}&chunk=${chunk}`
+          )}&lang=${audioLangOf(lang)}${variant === "minute" ? "&minute=1" : ""}&chunk=${chunk}`
         );
         if (!res.ok) return null;
         const total = Number(res.headers.get("X-Total-Chunks") ?? "1");
@@ -174,7 +179,7 @@ export function AudioGuide({
         setStatus("error");
         return;
       }
-      const text = narrationText(exhibit, lang, variant);
+      const text = narrationText(exhibit, audioLangOf(lang), variant);
       if (!text) {
         setStatus("error");
         return;
@@ -183,7 +188,7 @@ export function AudioGuide({
       setDeviceVoice(true);
       setProgress({ chunk: 0, total: 1 });
       speechRef.current?.cancel();
-      void speakBrowser(text, lang, {
+      void speakBrowser(text, audioLangOf(lang), {
         onEnd: () => {
           if (runId === runIdRef.current) stop();
         },
@@ -238,6 +243,8 @@ export function AudioGuide({
   }, [advance]);
 
   const start = React.useCallback(() => {
+    // Predvajanje avdio vodnika se šteje v statistiko obiska.
+    trackStat("audio", exhibit.slug, lang);
     void (async () => {
       const runId = ++runIdRef.current;
       setStatus("loading");
@@ -249,7 +256,7 @@ export function AudioGuide({
       }
       playBlob(blob, 0, runId);
     })();
-  }, [fetchChunk, playBlob, fallbackToDeviceSpeech]);
+  }, [fetchChunk, playBlob, fallbackToDeviceSpeech, exhibit.slug, lang]);
 
   const busy = status === "loading" || status === "buffering";
   const playing = status === "playing" || busy;
