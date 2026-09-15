@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 22/22 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 22/22 (povprečno 276) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 22/22 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 90 skupaj (povprečno 4,1) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 22/22 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 23/23 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 23/23 (povprečno 278) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 23/23 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 95 skupaj (povprečno 4,1) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 23/23 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -40,11 +40,14 @@ nova zapisa manjkajočih tem — Anton Filak, prvak v oranju, in izseljenstvo �
 z avtentičnima slikama iz Wikimedije Commons; PR #21: pripovedi v človeških
 glasih — dve obstoječi zgodbi prepisani na ~300 besed, dve novi pripovedi
 (*Mlinščina — vaška borza in telefon*, *Žensko leto — od lana do platna*),
-razdekel Zgodbe pa tako na 6 zapisov na standardu globine).
+razdekel Zgodbe pa tako na 6 zapisov na standardu globine; PR #22:
+nov zapis manjkajoče teme šolstva — **Vaška šola — iz tablic v svet** z avtentično
+fotografijo stavbe partizanske gimnazije v Črnomlju in žanrsko sliko Vaška šola
+(19. st., Narodni muzej Slovenije) med viri — zbirka 23 zapisov / 95 virov).
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 22 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 23 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — štirje kurirani tematski sprehodi skozi celotno zbirko
   (po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -97,7 +100,7 @@ načela in odprti razpis za pričevanja skupnosti
 - 🕸️ **Poveži zbirko** — povezani zapisi v vsakem zapisu + pot med dvema zapisoma z
   utemeljenimi skoki (vzorec x Degrees of Separation, Google Arts & Culture),
   `/?path=<slugA>,<slugB>`
-- ⏱️ **Muzej v minuti** — enominutne zgodbe za vseh 20 zapisov s TTS in prepisom
+- ⏱️ **Muzej v minuti** — enominutne zgodbe za vseh 23 zapisov s TTS in prepisom
   (vzorec One Minute Wonders, Brighton & Hove Museums); dnevni izbor treh zgodb
 - 🍂 **Sezonska polica** — kurirani izbor zbirke po letnem času, samodejna rotacija
   glede na datum obiskovalca (vzorec »object of the month«, Saffron Walden Museum)
@@ -169,7 +172,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 22 zapisov, 90 virov, 6 zgodb, 5 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 23 zapisov, 95 virov, 6 zgodb, 5 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -225,8 +228,10 @@ start`) so trajni. Na strežniških platformah (Vercel) je datotečni sistem
 - **Koda**: MIT (glej `LICENSE`)
 - **Vsebina zbirke (opisi, zgodbe, metapodatki)**: CC BY-SA 4.0
 - **Slike**: avtentične fotografije z Wikimedie Commons in javnodomenski arhivski
-  posnetki (Franjo Veselko marec 1945, procesija 1908, Fran Vesel 1920, Slovenski
-  etnografski muzej) — vsaka z navedbo avtorja in licence na zapisu in v registru virov
+  posnetki (Franjo Veselko marec 1945, procesija 1908, Fran Vesel 1920, Eugeen Van
+  Mieghem 1899, Slovenski etnografski muzej, Narodni muzej Slovenije) ter sodobne
+  fotografije pod CC BY 4.0 (Bb63lj, Hythlodot, švabo) — vsaka z navedbo avtorja in
+  licence na zapisu in v registru virov
 
 ## Struktura / Structure
 
