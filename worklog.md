@@ -400,3 +400,27 @@ Stage Summary:
 - Razdekel Zgodbe na standard globine: 4 pripovedi × 256–383 besed (SLO+EN) namesto 2 × ~90; ženska zgodovina Bele krajine sedaj ima svojo pripoved
 - Higiena skladišča: /skills/ trajno ignoriran, nesrečen commit odstranjen pred pushem
 - Ostalo programa: (1) živi preizkus vodnika po okni z-ai kvote, (2) morebitni novi zapisi (šola) po novih virih, (3) production deploy PR #21
+
+---
+Task ID: 20
+Agent: Main agent (Z.ai Code)
+Task: 5. sklop poglabljanja — nov zapis „Vaška šola" (manjkajoča tema šolstva)
+
+Work Log:
+- Nadaljevanje po PR #21: zadnja manjkajoča tema iz analize naloge 16 je šolstvo; kvota z-ai ob preveritvi še vedno 429 (živi preizkus vodnika še odložen)
+- Iskanje slike po Wikimediji Commons (API): več poizkusov (šola Bela krajina, vaška šola, ljudska šola, razred) → dva kandidata: žanrska slika „Vaška šola (19. st.)" (Narodni muzej Slovenije, javna last, 274×375 px — premajhna za glavno sliko) in fotografija stavbe partizanske gimnazije v Črnomlju (4608×3456, CC BY 4.0, avtor Bb63lj, 2024 — danes glasbena šola)
+- Odločitev: glavna slika = stavba v Črnomlju (krajevno avtentična priča partizanske gimnazije; opomba na zapisu izrecno povede, da stavba ni v Gribljah), žanrska slika NMS pa kot primerjalni vir
+- Prenos slike: prvi poskus zavrnjen (robot policy — zahteva opisljiv User-Agent); prenos z UA „GribljeMuseum/1.0 (URL; contact)" uspešen (7,7 MB) → pomanjšanje na 1600×1200, 385 KB (PIL)
+- Vsi novi viri preverjeni z HTTP HEAD (200): de.wikipedia Reichsvolksschulgesetz, sl.wikipedia Črnomelj, nms.si, obe datoteki Commons; sl.wikipedia „Zgodovina šolstva na Slovenskem" (404) in en.wikipedia „Education in Austria-Hungary" (404) zavržena
+- Nov zapis vaska-sola (kraj, TRADITION, 5 virov): 1869 Reichsvolksschulgesetz (obvezno šolstvo 6–14), vsakdan vaške šole (tablica/kreda/abecednik, prazne klopi ob žetvi), branje kot vaška pošta (mandati iz Amerike), poti iz šole (Županič, Filak — povezave na obstoječe zapise), partizanska gimnazija v Črnomlju po italijanski kapitulaciji 1943, iskren poziv za razredne fotografije; zgodba 300 besed SLO / 343 EN
+- Biografija 5 faz (do 1869 TRADITION → 1869 zakon DOCUMENTED → 1870–1914 vsakdan s sliko NMS DOCUMENTED → 1943–1945 gimnazija DOCUMENTED → po 1945 TO_COLLECT) + enominutna zgodba
+- Popravek zastarelega hero besedila v i18n: „Dvajset zapisov" → „Triindvajset zapisi" / „Twenty records" → „Twenty-three records" ( odkrito pri verifikaciji; hero je zaostal za dvema sklopoma)
+- Reseed: 23 zapisov, 95 virov (90 + 5)
+- Verifikacija: tsc 0; eslint 0; /api/exhibits 23/95; IIIF 23 canvasov; iskanje „tablica" → vaska-sola (matchedIn storySi); slika 200 (385 KB); agent-browser: dialog ?exhibit=vaska-sola izriše naslov, zakon, gimnazijo, Filaka, Županiča, biografijo, NMS med viri, sliko (768×576), odkrite vrzeli („še išče"); EN preklop (izveden pred odprtjem dialoga — stikalo v glavi med odprtim dialogom ni dosegljivo, obstoječe vedenje): title/gimnazija/Filak/slate ✓; mobilna 375 px brez prekoračitve; 0 napak strani/konzole
+- README: tabela globine 23/23 + 95 virov + povprečno 278 besed, PR #22 v programu, Zbirka 23 zapisov, Muzej v minuti 23, db:seed 23/95, razdelek licenc dopolnjen (Van Mieghem, NMS, CC BY 4.0 avtorji Bb63lj/Hythlodot/švabo)
+
+Stage Summary:
+- Zbirka: 23 zapisov / 95 virov; vseh 6 tematskih sklopov pokritih, manjkajoča tema šolstva zaprta s častnimi vrzeli namesto domnev
+- Odkritje: hero števci so ročni v i18n — ob vsakem novem zapisu jih je treba uskladiti (prihodnje serije: preveri „Dvajset/Twenty" vzorce)
+- Odkritje: upload.wikimedia.org zavrže splošne bota podobne UA — vedno opisni UA z kontaktom
+- Ostalo programa: (1) živi preizkus vodnika po okni z-ai kvote, (2) PR #22 + produkcija, (3) morebitni novi zapisi (vsakdan 20. stol.) po novih virih

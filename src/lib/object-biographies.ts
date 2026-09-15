@@ -1186,6 +1186,69 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "vaska-sola",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "do 1869",
+        yearLabelEn: "before 1869",
+        sortYear: 1869,
+        textSi:
+          "Vas živi iz ustnega izročila: brati znata tu in tam župnik ali učitelj; otroci se črk in števk naučijo ob opravilih.",
+        textEn:
+          "The village lives from oral tradition: reading is known here and there to a priest or a teacher; children learn letters and figures alongside their chores.",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "1869",
+        yearLabelEn: "1869",
+        sortYear: 1869,
+        textSi:
+          "Reichsvolksschulgesetz naredi šolanje za dolžnost od šestega do štirinajstega leta; po deželah cesarstva zrasle vaške šole z enim učiteljem in vsemi razredi v eni učilnici.",
+        textEn:
+          "The Reichsvolksschulgesetz makes schooling compulsory from six to fourteen; village schools with a single teacher and all grades in one classroom grow up across the Empire's lands.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1870 → 1914",
+        yearLabelEn: "1870 → 1914",
+        sortYear: 1870,
+        textSi:
+          "Vsakdan vaške šole: tablica, kreda, abecednik; klopi prazne ob žetvi in senaši. Žanrska slika Vaška šola (19. st.) iz zbirke Narodnega muzeja Slovenije prikazuje učilnico tistega časa.",
+        textEn:
+          "The village school's everyday: slate, chalk, primer; benches empty at harvest and haying. The genre painting Village School (19th c.) from the National Museum of Slovenia's collection shows a classroom of that time.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1943 → 1945",
+        yearLabelEn: "1943 → 1945",
+        sortYear: 1943,
+        textSi:
+          "Po italijanski kapitulaciji v svobodni Beli krajini delujejo šole, tiskarne in bolnišnice; v Črnomlju tudi partizanska gimnazija — stavba na fotografiji zapisa.",
+        textEn:
+          "After the Italian capitulation, schools, print shops and hospitals operate in free Bela krajina; in Črnomelj also a Partisan gymnasium — the building in this record's photograph.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "po 1945 → danes",
+        yearLabelEn: "after 1945 → today",
+        sortYear: 1945,
+        textSi:
+          "Otroci ob Kolpi hodijo v krajske šole; kdaj je utihnila vaška šola v Gribljah sama — razredne fotografije, imena učiteljev in učne knjige še čakajo, da jih kdo prinese v muzej.",
+        textEn:
+          "The children by the Kolpa attend the district schools; when the village school of Griblje itself fell silent — class photographs, teachers' names and schoolbooks still wait for someone to bring them to the museum.",
+        evidenceStatus: "TO_COLLECT",
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {
