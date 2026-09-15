@@ -626,3 +626,19 @@ Stage Summary:
 - Popravljeni jezikiovni/časovni nedoslednosti (EN 1468, ime vira, obdobje jubileja)
 - Vodnik dokazano odgovarja o novi vsebini z navedki; kvota OpenRouter deluje (vsaj delno) že med sejo
 - Ostalo programa: produkcijska namestitev + preverba; morebitni nakup 10 USD kredita za 1000 zahtev/dan ostaja priporočilo
+
+---
+Task ID: 29-dopolnitev
+Agent: Main agent (Z.ai Code)
+Task: Objava in produkcijska preverba naloge 29
+
+Work Log:
+- Git: objava na main (4c98e0d) + Vercel namestitev dpl_4Noxzx3w9eAonSdoAzzwFR2hGwPY → READY (~40 s); repoId 1369300114 (gitSource ga zahteva)
+- Produkcija https://griblje-museum.vercel.app: domača 200 (0,8 s); /api/exhibits = 28 zapisov, addedAt na obeh novih, petstoletnica ima 5 virov
+- Brskalnik na produkciji: zbirka kaže obe novi kartici z znakom „Novo", čip „Novo v zbirki" deluje → filtriranje pokaže „2 zapisa" + Počisti filtre; 0 napak v konzoli
+- Avdio vodnik na produkciji: petstoletnica-2026 → 1,25 MB MP3 v 15 s (hladna sinteza, ElevenLabs)
+- Vodnik na produkciji: veriga se izvede (x-guide-providers: openrouter,zai), a danes je dnevna kvota free modelov znova izčrpana (moji testni klici) → iskreno kvotno sporočilo; LOKALNO je v istem dnevu vodnik že odgovoril na vprašanje o letu 2026 s popolnim slovenskim odgovorom in navedkoma [[petstoletnica-2026]] + [[niko-zupanic]] — nova vsebina dokazano vstopi v dosje vodnika
+
+Stage Summary:
+- Jubilejno leto 2026 je ŽIVO na produkciji: 28 zapisov / 128 virov, znak in filter »novo v zbirki«, avdio vodnik govori novi zapis, vodnik pozna novo vsebino (ko kvota dovoljuje)
+- Kvota OpenRouter free (50/dan) se ponastavi ob 00:00 UTC; priporočilo uporabniku ostaja: enkratni nakup 10 USD kredita → 1000 zahtev/dan
