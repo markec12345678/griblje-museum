@@ -4,6 +4,8 @@ import * as React from "react";
 import { Headphones, Loader2, Square } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import type { ExhibitDTO } from "@/lib/types";
+import { getMinuteStory } from "@/lib/minute-stories";
+import { browserSpeechSupported, speakBrowser } from "@/lib/browser-speech";
 import { Button } from "@/components/ui/button";
 
 /**
@@ -17,6 +19,45 @@ import { Button } from "@/components/ui/button";
 
 type Status = "idle" | "loading" | "buffering" | "playing" | "error";
 
+type SpeechHandle = { cancel: () => void };
+
+type AudioLang = "sl" | "en";
+
+/** Pripoved vodnika, zgrajena na odjemalcu (enaka sestava kot na strežniku) —
+ * nujna za rezervo z glasom naprave, ko strežniška sinteza odpove. */
+function narrationText(exhibit: ExhibitDTO, lang: AudioLang, variant: "full" | "minute"): string {
+  const clean = (text: string) =>
+    text
+      .replace(/\r/g, " ")
+      .replace(/[—–]/g, ", ")
+      .replace(/[«»„“”"]/g, "")
+      .replace(/\s*\n\s*/g, " ")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+
+  if (variant === "minute") {
+    const story = getMinuteStory(exhibit.slug);
+    const text = story
+      ? lang === "sl"
+        ? story.textSi
+        : story.textEn
+      : lang === "sl"
+        ? exhibit.summarySi
+        : exhibit.summaryEn;
+    return clean(text);
+  }
+
+  const title = lang === "sl" ? exhibit.titleSi : exhibit.titleEn;
+  const period = lang === "sl" ? exhibit.periodSi : exhibit.periodEn;
+  const summary = lang === "sl" ? exhibit.summarySi : exhibit.summaryEn;
+  const story = lang === "sl" ? exhibit.storySi : exhibit.storyEn;
+  const intro =
+    lang === "sl"
+      ? `Muzej vasi Griblje. Avdio vodnik, zapis ${exhibit.slug}.`
+      : `Griblje Village Museum. Audio guide, record ${exhibit.slug}.`;
+  return clean(`${intro} ${title}. ${period}. ${summary} ${story}`);
+}
+
 export function AudioGuide({
   exhibit,
   variant = "full",
@@ -27,10 +68,12 @@ export function AudioGuide({
   const { t, lang } = useLang();
   const [status, setStatus] = React.useState<Status>("idle");
   const [progress, setProgress] = React.useState({ chunk: 0, total: 1 });
+  const [deviceVoice, setDeviceVoice] = React.useState(false);
 
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
   const objectUrlRef = React.useRef<string | null>(null);
   const prefetchRef = React.useRef<Promise<Blob | null> | null>(null);
+  const speechRef = React.useRef<SpeechHandle | null>(null);
   const runIdRef = React.useRef(0);
   const totalRef = React.useRef(1);
   const advanceRef = React.useRef<(chunk: number, runId: number) => void>(
@@ -49,9 +92,14 @@ export function AudioGuide({
       URL.revokeObjectURL(objectUrlRef.current);
       objectUrlRef.current = null;
     }
+    if (speechRef.current) {
+      speechRef.current.cancel();
+      speechRef.current = null;
+    }
     prefetchRef.current = null;
     totalRef.current = 1;
     setProgress({ chunk: 0, total: 1 });
+    setDeviceVoice(false);
     setStatus("idle");
   }, []);
 
@@ -119,6 +167,43 @@ export function AudioGuide({
     [fetchChunk, stop]
   );
 
+  /** Strežniška sinteza je padla — zapis vseeno preberi z glasom naprave. */
+  const fallbackToDeviceSpeech = React.useCallback(
+    (runId: number) => {
+      if (!browserSpeechSupported()) {
+        setStatus("error");
+        return;
+      }
+      const text = narrationText(exhibit, lang, variant);
+      if (!text) {
+        setStatus("error");
+        return;
+      }
+      setStatus("playing");
+      setDeviceVoice(true);
+      setProgress({ chunk: 0, total: 1 });
+      speechRef.current?.cancel();
+      void speakBrowser(text, lang, {
+        onEnd: () => {
+          if (runId === runIdRef.current) stop();
+        },
+        onError: () => {
+          if (runId !== runIdRef.current) return;
+          speechRef.current = null;
+          setDeviceVoice(false);
+          setStatus("error");
+        },
+      }).then((handle) => {
+        if (runId !== runIdRef.current) {
+          handle.cancel();
+          return;
+        }
+        speechRef.current = handle;
+      });
+    },
+    [exhibit, lang, variant, stop]
+  );
+
   const advance = React.useCallback(
     (chunk: number, runId: number) => {
       void (async () => {
@@ -139,13 +224,13 @@ export function AudioGuide({
         if (runId !== runIdRef.current) return;
 
         if (!blob) {
-          setStatus("error");
+          fallbackToDeviceSpeech(runId);
           return;
         }
         playBlob(blob, chunk, runId);
       })();
     },
-    [fetchChunk, playBlob]
+    [fetchChunk, playBlob, fallbackToDeviceSpeech]
   );
 
   React.useEffect(() => {
@@ -159,12 +244,12 @@ export function AudioGuide({
       const blob = await fetchChunk(0);
       if (runId !== runIdRef.current) return;
       if (!blob) {
-        setStatus("error");
+        fallbackToDeviceSpeech(runId);
         return;
       }
       playBlob(blob, 0, runId);
     })();
-  }, [fetchChunk, playBlob]);
+  }, [fetchChunk, playBlob, fallbackToDeviceSpeech]);
 
   const busy = status === "loading" || status === "buffering";
   const playing = status === "playing" || busy;
@@ -219,7 +304,11 @@ export function AudioGuide({
       </div>
 
       <p className="mt-2 text-xs italic text-muted-foreground">
-        {status === "error" ? t.audio.error : t.audio.note}
+        {deviceVoice
+          ? t.audio.deviceVoice
+          : status === "error"
+            ? t.audio.error
+            : t.audio.note}
       </p>
 
       <span className="sr-only" role="status" aria-live="polite">

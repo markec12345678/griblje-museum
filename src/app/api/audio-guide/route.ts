@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { getMinuteStory } from "@/lib/minute-stories";
-import { getZAI } from "@/lib/zai";
+import { synthesizeSpeech, type SynthResult } from "@/lib/tts";
 
 export const dynamic = "force-dynamic";
 // Sinteza TTS lahko traja več kot privzetih 10 s (hladen klic ~20 s) —
@@ -21,28 +21,24 @@ export const maxDuration = 60;
 
 type Lang = "sl" | "en";
 
-const VOICE: Record<Lang, string> = { sl: "tongtong", en: "jam" };
-const SPEED: Record<Lang, number> = { sl: 0.9, en: 0.95 };
 const MAX_CHARS = 950; // varnostna rezerva pod omejitvijo TTS (1024 znakov)
 
-/* ZAI SDK — skupni odjemalec (src/lib/zai.ts), samo strežniška stran.
- * Konfiguracija: privzeto SDK bere datoteko .z-ai-config (cwd/domov/ETC);
- * na strežniških platformah (Vercel), kjer datoteke ni, podpira env
- * spremenljivko ZAI_CONFIG — JSON oblike {"baseUrl": "...", "apiKey": "..."}. */
+/* Ponudniki govora: veriga ElevenLabs → z-ai (src/lib/tts.ts), samo
+ * strežniška stran. Ključi živijo v env (ELEVENLABS_API_KEY, ZAI_CONFIG). */
 
-/* Pomnilniški predpomnilnik: slug|lang → odseki besedila + WAV posnetki.
- * WAV posnetki so veliki, zato meja velja po SKUPNIH BAJTIH (in ne le po
+/* Pomnilniški predpomnilnik: slug|lang → odseki besedila + posnetki.
+ * Posnetki so veliki, zato meja velja po SKUPNIH BAJTIH (in ne le po
  * številu vnosov); ob presegu izločamo najstarejše vnose (vrstni red
  * vložitve). Sintezo v teku si hkratne enake zahteve delijo (in-flight
  * dedup) — hladen posnetek se sintetizira samo enkrat. */
-type CacheEntry = { chunks: string[]; audio: (Buffer | undefined)[] };
+type CacheEntry = { chunks: string[]; audio: (SynthResult | undefined)[] };
 const audioCache = new Map<string, CacheEntry>();
 const CACHE_MAX_BYTES = 64 * 1024 * 1024; // 64 MB skupaj
 const CACHE_MAX_ENTRIES = 40;
 let cachedBytes = 0;
 
 /* Sinteze, ki trenutno tečejo: "slug|lang|chunk" → obljuba. */
-const inflight = new Map<string, Promise<Buffer>>();
+const inflight = new Map<string, Promise<SynthResult>>();
 
 function cacheKey(slug: string, lang: Lang, minute: boolean) {
   return `${slug}|${lang}${minute ? "|minute" : ""}`;
@@ -57,19 +53,24 @@ function evictIfNeeded(excludeKey?: string) {
     if (oldest === undefined || oldest === excludeKey) break;
     const entry = audioCache.get(oldest);
     if (entry) {
-      for (const buf of entry.audio) cachedBytes -= buf?.length ?? 0;
+      for (const buf of entry.audio) cachedBytes -= buf?.buffer.length ?? 0;
     }
     audioCache.delete(oldest);
   }
 }
 
-function storeAudio(key: string, entry: CacheEntry, chunk: number, audio: Buffer) {
+function storeAudio(
+  key: string,
+  entry: CacheEntry,
+  chunk: number,
+  audio: SynthResult
+) {
   if (entry.audio[chunk]) return;
   entry.audio[chunk] = audio;
   // Štejemo samo bajte, ki so res v predpomnilniku (vnos je medtem
   // lahko bil izločen).
   if (audioCache.get(key) === entry) {
-    cachedBytes += audio.length;
+    cachedBytes += audio.buffer.length;
     evictIfNeeded(key);
   }
 }
@@ -146,21 +147,34 @@ function buildNarration(
   return prepareForTts(`${intro} ${title}. ${period}. ${summary} ${story}`);
 }
 
-async function synthesize(text: string, lang: Lang): Promise<Buffer> {
-  const zai = await getZAI();
-  const response = await zai.audio.tts.create({
-    input: text,
-    voice: VOICE[lang],
-    speed: SPEED[lang],
-    response_format: "wav",
-    stream: false,
-  });
-  const arrayBuffer = await response.arrayBuffer();
-  const buffer = Buffer.from(new Uint8Array(arrayBuffer));
-  if (buffer.length === 0) {
-    throw new Error("TTS returned an empty buffer");
+async function synthesize(text: string, lang: Lang): Promise<SynthResult> {
+  return synthesizeSpeech(text, lang);
+}
+
+/* --- Omejitev hitrosti SINTEZE (samo hladni klici) -------------------- */
+
+/* Varčevanje z mesečnim kreditom ElevenLabs: omejimo število dejanskih
+ * sintez na IP (predvajanje iz predpomnilnika ni omejeno — ogreto
+ * posnetko lahko posluša neomejeno obiskovalcev). */
+const TTS_RATE = { count: 30, windowMs: 5 * 60 * 1000 } as const;
+const ttsBuckets = new Map<string, number[]>();
+
+function synthRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const hits = (ttsBuckets.get(ip) ?? []).filter((t) => now - t < TTS_RATE.windowMs);
+  if (hits.length >= TTS_RATE.count) {
+    ttsBuckets.set(ip, hits);
+    return true;
   }
-  return buffer;
+  hits.push(now);
+  ttsBuckets.set(ip, hits);
+  return false;
+}
+
+function clientIp(req: NextRequest): string {
+  const fwd = req.headers.get("x-forwarded-for");
+  if (fwd) return fwd.split(",")[0]!.trim();
+  return req.headers.get("x-real-ip") ?? "local";
 }
 
 export async function GET(req: NextRequest) {
@@ -216,6 +230,11 @@ export async function GET(req: NextRequest) {
 
     let audio = entry.audio[chunk];
     if (!audio) {
+      // Varčevanje s kreditom TTS: omejimo samo DEJANSKE sinteze na IP
+      // (ogret posnetek iz predpomnilnika ni omejen).
+      if (synthRateLimited(clientIp(req))) {
+        return NextResponse.json({ error: "rate-limited" }, { status: 429 });
+      }
       // Hkratne enake zahteve delijo obljubo — brez dvojne sinteze.
       const inflightKey = `${key}|${chunk}`;
       let pending = inflight.get(inflightKey);
@@ -233,11 +252,11 @@ export async function GET(req: NextRequest) {
       audio = await pending;
     }
 
-    return new NextResponse(new Uint8Array(audio), {
+    return new NextResponse(new Uint8Array(audio.buffer), {
       status: 200,
       headers: {
-        "Content-Type": "audio/wav",
-        "Content-Length": String(audio.length),
+        "Content-Type": audio.contentType,
+        "Content-Length": String(audio.buffer.length),
         "X-Total-Chunks": String(entry.chunks.length),
         "X-Chunk": String(chunk),
         "Cache-Control": "public, max-age=86400",
@@ -245,9 +264,8 @@ export async function GET(req: NextRequest) {
     });
   } catch (error) {
     console.error("Audio guide error:", error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : "TTS failed" },
-      { status: 500 }
-    );
+    // Oba ponudnika sta padla (kvota/ključ) — vodnik odkrito pove, da
+    // posnetka ni, odjemalec pa lahko uporabi glas naprave.
+    return NextResponse.json({ error: "tts-unavailable" }, { status: 503 });
   }
 }

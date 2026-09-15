@@ -24,6 +24,8 @@ import { useLang } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { addFavorite, useFavorites } from "@/lib/favorite-tracker";
 import { hasMinuteStory } from "@/components/museum/minute-stories";
+import { getMinuteStory } from "@/lib/minute-stories";
+import { browserSpeechSupported, speakBrowser } from "@/lib/browser-speech";
 import type { ExhibitDTO } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -651,6 +653,7 @@ function FilmView({
 
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
   const objectUrlRef = React.useRef<string | null>(null);
+  const speechRef = React.useRef<{ cancel: () => void; pause: () => void; resume: () => void } | null>(null);
   const totalChunksRef = React.useRef(1);
   const runIdRef = React.useRef(0);
   const advanceRef = React.useRef<() => void>(() => {});
@@ -666,6 +669,10 @@ function FilmView({
       audioRef.current.onended = null;
       audioRef.current.onerror = null;
       audioRef.current = null;
+    }
+    if (speechRef.current) {
+      speechRef.current.cancel();
+      speechRef.current = null;
     }
     if (objectUrlRef.current) {
       URL.revokeObjectURL(objectUrlRef.current);
@@ -685,6 +692,43 @@ function FilmView({
   React.useEffect(() => {
     advanceRef.current = advance;
   }, [advance]);
+
+  /** Strežniška sinteza je padla — zgodbo sličice preberi z glasom naprave. */
+  const fallbackToDeviceSpeech = React.useCallback(
+    (runId: number, slug: string) => {
+      const story = getMinuteStory(slug);
+      const text = story
+        ? lang === "sl"
+          ? story.textSi
+          : story.textEn
+        : "";
+      if (!browserSpeechSupported() || !text) {
+        setNarration("error");
+        return;
+      }
+      setNarration("playing");
+      speechRef.current?.cancel();
+      void speakBrowser(text, lang, {
+        onEnd: () => {
+          if (runId !== runIdRef.current) return;
+          speechRef.current = null;
+          advanceRef.current();
+        },
+        onError: () => {
+          if (runId !== runIdRef.current) return;
+          speechRef.current = null;
+          setNarration("error");
+        },
+      }).then((handle) => {
+        if (runId !== runIdRef.current) {
+          handle.cancel();
+          return;
+        }
+        speechRef.current = handle;
+      });
+    },
+    [lang]
+  );
 
   const playChunk = React.useCallback(
     (runId: number, chunk: number) => {
@@ -722,11 +766,11 @@ function FilmView({
             await audio.play();
           }
         } catch {
-          if (runId === runIdRef.current) setNarration("error");
+          if (runId === runIdRef.current) fallbackToDeviceSpeech(runId, slug);
         }
       })();
     },
-    [items, index, lang]
+    [items, index, lang, fallbackToDeviceSpeech]
   );
 
   // Predvajalna ura: brez zvoka časovnik; s pripovedjo vodi avdio (onended).
@@ -754,14 +798,16 @@ function FilmView({
     if (narration === "off") stopAudio();
   }, [narration, stopAudio]);
 
-  // Pavza/nadaljevanje velja tudi za pripoved.
+  // Pavza/nadaljevanje velja tudi za pripoved (posnetek ali glas naprave).
   React.useEffect(() => {
     const audio = audioRef.current;
-    if (!audio) return;
+    const speech = speechRef.current;
     if (playing && !finished && narration !== "off") {
-      void audio.play().catch(() => undefined);
+      if (audio) void audio.play().catch(() => undefined);
+      speech?.resume();
     } else {
-      audio.pause();
+      if (audio) audio.pause();
+      speech?.pause();
     }
   }, [playing, finished, narration]);
 
