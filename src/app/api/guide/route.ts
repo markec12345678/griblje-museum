@@ -71,16 +71,15 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error("API /api/guide error:", error);
     const message = error instanceof Error ? error.message : String(error);
-    // ZAČASNA DIAGNOSTIKA (odstraniti po razrešitvi): zadnja napaka verige
-    // v glavi odgovora, da je vidna točno tam, kjer se pokaže.
-    const debugHeader = {
-      "X-Guide-Debug": (providerErrorTrail.join(" || ") + " || končna: " + message).slice(0, 500),
-    };
+    // ZAČASNA DIAGNOSTIKA (odstraniti po razrešitvi): sled napak ponudnikov
+    // v TELENU odgovora (glave HTTP ne prenašajo č/š/ž — ByteString).
+    const debugTrail = (providerErrorTrail.join(" || ") + " || final: " + message).slice(0, 500);
+    console.error("API /api/guide provider trail:", debugTrail);
     // Prehodna omejitev zgornjega API-ja — javimo kot 429 (počasi).
     if (/429|rate|too many/i.test(message)) {
       return NextResponse.json(
-        { error: "rate-limited" },
-        { status: 429, headers: debugHeader }
+        { error: "rate-limited", debug: debugTrail },
+        { status: 429 }
       );
     }
     // Ustrezna oblika za manjkajočo konfiguracijo ZAI_CONFIG na strežniški
@@ -90,13 +89,13 @@ export async function POST(req: NextRequest) {
       message === "Model je vrnil prazen odgovor";
     if (unavailable) {
       return NextResponse.json(
-        { error: "guide-unavailable" },
-        { status: 503, headers: debugHeader }
+        { error: "guide-unavailable", debug: debugTrail },
+        { status: 503 }
       );
     }
     return NextResponse.json(
-      { error: "guide-failed" },
-      { status: 500, headers: debugHeader }
+      { error: "guide-failed", debug: debugTrail },
+      { status: 500 }
     );
   }
 }
