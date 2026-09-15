@@ -15,6 +15,7 @@ import { getZAI } from "@/lib/zai";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
 import { getBiography } from "@/lib/object-biographies";
 import { getMinuteStory } from "@/lib/minute-stories";
+import { hfChatComplete, isHfChatConfigured } from "@/lib/hf-llm";
 
 export type GuideLang = "sl" | "en";
 
@@ -192,7 +193,8 @@ NADZOROVA IZKLJUČNO DOSJE SPODAJ — to je celotno znanje muzeja:
 4. Kadar koli omenjaš določen zapis, se na koncu odgovora sklici nanj v obliki [[slug]] (samo pravi slug-i iz dosjeja, 1–3 sklice, vsak v svoji dvojni oglati oklepaji). Če se sklicuješ na več zapisov, našteji vse. Če se ne sklicuješ na nobenega, ne dodaj ničesar.
 5. Odgovori so kratki in topli (do ~120 besed), kot vodnik, ki stoji ob sliki — brez naslovov, brez markdown okrasjev, brez seznamov, razen če vprašanje izrecno prosi za seznam.
 6. Za pričevanja in spomine domačinov usmerjaj obiskovalca v spominsko knjigo (#knjiga) — muzej namenoma ne izmišljuje izjav.
-7. Pogovor se ne shranjuje; ne sprašuj po osebnih podatkih.`
+7. Pogovor se ne shranjuje; ne sprašuj po osebnih podatkih.
+8. Piši v živi, domači slovenščini — kot človek, ki mu je ta vas resnično doma. Nikoli se ne preklopi v angleščino (niti posameznih besed, razen lastnih imen krajev in oseb) in nikoli ne zveni kot surov računalniški prevod: brez okornih uradniških fraz, brez robotskih uvodov kot „Kot umetna inteligenca …“.`
       : `You are a courteous digital guide of the Griblje Village Museum (Bela krajina, Slovenia). Answer in ENGLISH.
 
 YOU ARE GROUNDED STRICTLY IN THE DOSSIER BELOW — it is the museum's entire knowledge:
@@ -202,7 +204,8 @@ YOU ARE GROUNDED STRICTLY IN THE DOSSIER BELOW — it is the museum's entire kno
 4. Whenever you mention a specific record, cite it at the end of your answer as [[slug]] (only real slugs from the dossier, 1–3 citations, each in double square brackets). If several records are mentioned, list them all. If none, add nothing.
 5. Answers are short and warm (up to ~120 words), like a guide standing beside the picture — no headings, no markdown ornaments, no lists unless explicitly asked.
 6. For testimonies and villagers' memories, direct visitors to the memory book (#knjiga) — the museum deliberately invents no quotes.
-7. The conversation is not stored; never ask for personal data.`;
+7. The conversation is not stored; never ask for personal data.
+8. Write in living, natural English — a human voice of someone whose home village this is, never machine-like and never drifting into another language.`;
 
   return `${rules}
 
@@ -248,9 +251,30 @@ export async function askGuide(
   // Zgodovino skrajšamo na zadnjih GUIDE_LIMITS.history sporočil —
   // starejša vprašanja ne nosijo več konteksta, dosje pa vedno ostane.
   const trimmed = history.slice(-GUIDE_LIMITS.history);
+  const system = systemPrompt(lang, text);
+
+  // Ponudniška veriga: HuggingFace (če je nastavljen žeton) → z-ai SDK.
+  // HuggingFace router uporablja standardne OpenAI vloge („system“),
+  // z-ai pa sprejema sistemski poziv kot prvo sporočilo vloge „assistant“.
+  if (isHfChatConfigured()) {
+    try {
+      const raw = await hfChatComplete([
+        { role: "system", content: system },
+        ...trimmed,
+      ]);
+      return parseCites(raw, exhibits);
+    } catch (error) {
+      // HF kredit lahko občasno zmanjka ali je žeton napačen — takrat
+      // pademo na obstoječi z-ai kanal in razlog zabeležimo v dnevnik.
+      console.warn(
+        "Vodnik: HuggingFace ni uspel, preklop na z-ai:",
+        error instanceof Error ? error.message : String(error),
+      );
+    }
+  }
 
   const messages: { role: "assistant" | "user"; content: string }[] = [
-    { role: "assistant", content: systemPrompt(lang, text) },
+    { role: "assistant", content: system },
     ...trimmed.map((m) => ({ role: m.role, content: m.content })),
   ];
 
