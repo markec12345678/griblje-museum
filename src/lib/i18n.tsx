@@ -351,6 +351,8 @@ export const ui = {
       note: "Sintetiziran glas (TTS) — ni posnetek priče niti domačina.",
       noteShort: "sintetiziran glas",
       part: "odsek",
+      deviceVoice:
+        "Strežniški posnetek trenutno ni na voljo — predvajam z glasom vaše naprave.",
     },
     search: {
       openLabel: "Iskanje po muzeju (Ctrl+K)",
@@ -1220,6 +1222,8 @@ export const ui = {
       note: "Synthesized voice (TTS) — not a recording of a witness or villager.",
       noteShort: "synthesized voice",
       part: "part",
+      deviceVoice:
+        "Server recording unavailable right now — playing with your device's voice.",
     },
     search: {
       openLabel: "Search the museum (Ctrl+K)",

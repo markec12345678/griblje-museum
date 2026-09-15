@@ -187,12 +187,23 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
 
 - **`DATABASE_URL` ni potrebno nastavljati** — `src/lib/db.ts` sam poišče
   `db/custom.db` (pre-seedana baza je del skladišča; v paket strežniške
-  funkcije jo vključuje `outputFileTracingIncludes` v `next.config.ts);
+  funkcije jo vključuje `outputFileTracingIncludes` v `next.config.ts`);
   Prisma odjemalec se zgenerira v `postinstall`.
-- **Avdio vodnik (TTS)**: na Vercelu nastavite env spremenljivko `ZAI_CONFIG`
-  z JSON vsebino `{"baseUrl": "...", "apiKey": "..."}` (enako kot datoteka
-  `.z-ai-config` v razvoju; ključ nikoli ne zaide v skladišče). Brez nje
-  ostali del muzeja deluje normalno, avdio vodnik vrne napako 500.
+- **Umetna inteligenca (pogovor + govor)** — veriga ponudnikov, muzej ne
+  umre, ko ena služba odpove:
+  - `HF_API_KEY` (HuggingFace Inference Providers, brezplačni račun):
+    pogovor z zbirko prek odprtih modelov (Llama 3.3 70B → Qwen 2.5 72B →
+    Mistral NeMo → Llama 3.1 8B) z nadomestnimi modeli ob zasedenosti;
+  - `ELEVENLABS_API_KEY` (brezplačni načrt zadostuje): avdio vodnik z
+    modelom `eleven_multilingual_v2`, ki slovenščino izgovarja dokumentarno
+    (glasa po jeziku se nastavita z `ELEVENLABS_VOICE_SL/EN`);
+  - `ZAI_CONFIG` (JSON `{"baseUrl": "...", "apiKey": "..."}`) — rezerva
+    obeh storitev, kadar zgornja ključa manjkata ali so njihove kvote
+    izčrpane;
+  - ko odpadejo vsi strežniški ponudniki, predvajalniki samodejno
+    preklopijo na **glas naprave obiskovalca** (Web Speech API — Windows
+    Vesna/Lado, macOS Čeda, Android Googlov slovenski glas): avdio vodnik
+    deluje tudi popolnoma brez ključev.
 - **Deployment protection**: ekipa na Vercelu ima privzeto SSO zaščito
   *vseh* deploymentov (`all_except_custom_domains`) — produkcijski naslov
   brez custom domene potem preusmerja na prijavo. V nastavitvah projekta

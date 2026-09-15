@@ -7,6 +7,7 @@ import { ChevronDown, Headphones, Loader2, Play, Square } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { MINUTE_STORIES, getMinuteStory } from "@/lib/minute-stories";
+import { browserSpeechSupported, speakBrowser } from "@/lib/browser-speech";
 import type { ExhibitDTO } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -48,8 +49,10 @@ function MinutePlayer({
 }) {
   const { t, lang } = useLang();
   const [status, setStatus] = React.useState<PlayerStatus>("idle");
+  const [deviceVoice, setDeviceVoice] = React.useState(false);
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
   const objectUrlRef = React.useRef<string | null>(null);
+  const speechRef = React.useRef<{ cancel: () => void } | null>(null);
   const runIdRef = React.useRef(0);
 
   const stop = React.useCallback(() => {
@@ -63,6 +66,11 @@ function MinutePlayer({
       URL.revokeObjectURL(objectUrlRef.current);
       objectUrlRef.current = null;
     }
+    if (speechRef.current) {
+      speechRef.current.cancel();
+      speechRef.current = null;
+    }
+    setDeviceVoice(false);
     setStatus("idle");
   }, []);
 
@@ -70,6 +78,49 @@ function MinutePlayer({
   React.useEffect(() => {
     stop();
   }, [stop, slug, lang]);
+
+  /** Strežniška sinteza je padla — zgodbo preberi z glasom naprave. */
+  const fallbackToDeviceSpeech = React.useCallback(
+    (runId: number) => {
+      if (!browserSpeechSupported()) {
+        setStatus("error");
+        return;
+      }
+      const story = getMinuteStory(slug);
+      const text = story
+        ? lang === "sl"
+          ? story.textSi
+          : story.textEn
+        : "";
+      if (!text) {
+        setStatus("error");
+        return;
+      }
+      setStatus("playing");
+      setDeviceVoice(true);
+      speechRef.current?.cancel();
+      void speakBrowser(text, lang, {
+        onEnd: () => {
+          if (runId !== runIdRef.current) return;
+          stop();
+          onEnded?.();
+        },
+        onError: () => {
+          if (runId !== runIdRef.current) return;
+          speechRef.current = null;
+          setDeviceVoice(false);
+          setStatus("error");
+        },
+      }).then((handle) => {
+        if (runId !== runIdRef.current) {
+          handle.cancel();
+          return;
+        }
+        speechRef.current = handle;
+      });
+    },
+    [slug, lang, stop, onEnded]
+  );
 
   const start = React.useCallback(() => {
     void (async () => {
@@ -100,10 +151,10 @@ function MinutePlayer({
           if (runId === runIdRef.current) setStatus("error");
         });
       } catch {
-        if (runId === runIdRef.current) setStatus("error");
+        if (runId === runIdRef.current) fallbackToDeviceSpeech(runId);
       }
     })();
-  }, [slug, lang, stop, onEnded]);
+  }, [slug, lang, stop, onEnded, fallbackToDeviceSpeech]);
 
   const playing = status === "playing" || status === "loading";
 
@@ -128,6 +179,11 @@ function MinutePlayer({
       </Button>
       {status === "error" && (
         <p className="mt-2 text-xs text-muted-foreground">{t.audio.error}</p>
+      )}
+      {deviceVoice && (
+        <p className="mt-2 text-xs text-muted-foreground">
+          {t.audio.deviceVoice}
+        </p>
       )}
       <span className="sr-only" role="status" aria-live="polite">
         {status === "loading"

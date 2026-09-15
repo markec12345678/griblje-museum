@@ -444,3 +444,24 @@ Stage Summary:
 - Ključ varno vložen: strežnik-only env (HF_API_KEY ali HUGGINGFACE_API_KEY), brskalnik nikoli ne vidi žetona
 - Slovenščina podvojeno zagotovljena: veriga najmočnejših večjezikovnih odprtih modelov + novo pravilo 8 o naravnem, ne-robotskem, izključno slovenskem glasu
 - Ostalo programa: PR #22 + produkcija, issue #3 (neuporabljene odvisnosti), vstavljanje žetona po prispetju
+
+---
+Task ID: 22
+Agent: Main agent (Z.ai Code)
+Task: Govor (TTS) po vzoru pogovora — veriga ponudnikov ElevenLabs → z-ai → glas naprave; odgovor na uporabnikovo vprašanje „kaj predlagaš za govor" + novi GitHub žeton
+
+Work Log:
+- Uporabnik priskrbel NOVI GitHub žeton (ghp_c7Q…, prejšnji zamenjan) — preverjen: GET /user = markec12345678, dostop do repa 200; HF žeton za pogovor še vedno čaka (razložena razlika: GitHub ≠ HuggingFace)
+- Nov modul src/lib/tts.ts: sinteza govora z verigo ElevenLabs (ELEVENLABS_API_KEY, model eleven_multilingual_v2, privzeti glas Antoni, mp3_44100_128, timeout 40 s) → z-ai (obstoječa pot tongtong/jam wav); neuspeh ElevenLabs se zabeleži in padne na z-ai
+- Pot /api/audio-guide: uporabi synthesizeSpeech; Content-Type dinamičen (mp3/wav); nova omejitev SAMO hladnih sintez na IP (30/5 min — predvajanje iz predpomnilnika neomejeno, varčevanje z mesečnim kreditom); ob padcu obeh ponudnikov odkrit 503 {error:"tts-unavailable"} namesto globoke 500
+- Nov modul src/lib/browser-speech.ts: brskalniška rezerva (Web Speech API) — čakanje na asinhrono nalaganje glasov (voiceschanged, timeout 1,5 s), izbor najboljšega slovenskega/angleškega glava (prednost krajevnih: Vesna/Lado/Čeda/Google), deljenje besedila na odseke ≤ 200 znakov (obrada znanega Chrome poreza ~15 s), ročica {cancel, pause, resume}
+- Vsi trije predvajalniki dobili rezervo: AudioGuide (celoten vodnik + minute), MinutePlayer (Muzej v minuti), FilmView (Moja galerija — vključno s pavzo/nadaljevanjem govora); ob napaki strežnika samodejno prebere pripoved z glasom naprave in iskreno obvesti (nov i18n ključ t.audio.deviceVoice SL+EN)
+- .env.local razširjen z ELEVENLABS_API_KEY + ELEVENLABS_VOICE_SL/EN navodili (gitignore .env* preverjen — ključi nikoli v skladišče)
+- README: razdelek „Namestitev na Vercel" preoblikovan v „Umetna inteligenca (pogovor + govor)" — celotna veriga HF → ElevenLabs → ZAI → glas naprave dokumentirana
+- Verifikacija: tsc 0 napak; eslint 0 napak; GET /api/audio-guide (z-ai 429) → 503 tts-unavailable v 252 ms; agent-browser: klik „Poslušaj · 1 min" → 503 → rezerva se sproži → brezglavi brskalnik nima glasov (voices: 0) → poštena napaka brez sesutja; enako v dialogu zapisa („Poslušaj avdio vodnik"); 0 napak konzole/strani
+- Priporočilo uporabniku za govor: (1) takoj — glas naprave (že vgrajen, neomejen, 0 €), (2) najboljša kakovost — ElevenLabs brezplačni račun (~10 min/mes, brez kartice), (3) ob veliki rabi — Google Cloud TTS (1 M znakov/mes) ali Azure (0,5 M), a zahtevata kartico
+
+Stage Summary:
+- Avdio vodnik ima trojno varnost: ElevenLabs (dokumentarna slovenščina) → z-ai (kvota) → glas naprave obiskovalca (Web Speech API) — muzej govori tudi z izčrpanimi vsemi kvotami in brez ključev
+- Kvota ElevenLabs se varčuje trojno: pomnilniški predpomnilnik + brskalniški predpomnilnik (max-age=86400) + omejitev hladnih sintez na IP
+- Ostalo programa: PR (HF + govor) + produkcija, živi preizkus vodnika po vstavitvi ključev, issue #3 (neuporabljene odvisnosti)
