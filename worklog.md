@@ -464,4 +464,5 @@ Work Log:
 Stage Summary:
 - Avdio vodnik ima trojno varnost: ElevenLabs (dokumentarna slovenščina) → z-ai (kvota) → glas naprave obiskovalca (Web Speech API) — muzej govori tudi z izčrpanimi vsemi kvotami in brez ključev
 - Kvota ElevenLabs se varčuje trojno: pomnilniški predpomnilnik + brskalniški predpomnilnik (max-age=86400) + omejitev hladnih sintez na IP
-- Ostalo programa: PR (HF + govor) + produkcija, živi preizkus vodnika po vstavitvi ključev, issue #3 (neuporabljene odvisnosti)
+- Objavljeno: PR #23 squash merged → main = a7c27e7 (HF pogovor + veriga govora + README); žeton v git remote zamenjan na novi; Vercel produkcija READY: domača 200, 23 zapisov/95 virov, /api/audio-guide odkrit 503, agent-browser preizkus rezerve na produkciji brez sesutij
+- Ostalo programa: vstavitev HF_API_KEY + ELEVENLABS_API_KEY (uporabnik) → živi preizkus pogovora in govora, issue #3 (neuporabljene odvisnosti)
