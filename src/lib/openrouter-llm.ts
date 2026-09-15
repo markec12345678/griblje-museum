@@ -139,6 +139,14 @@ export async function openRouterChatComplete(
             `OpenRouter: ključ zavrnjen (HTTP ${res.status}) — preveri veljavnost ključa`,
           );
         }
+        // Računovska (ne modelska) omejitev: dnevna/minutna kvota celotnega
+        // brezplačnega računa — vsi :free modeli bodo enako zavrnjeni,
+        // prestopanje po verigi je jalovo. Takoj končaj ponudnika.
+        if (res.status === 429 && /free-models-per-(day|minute)/i.test(body)) {
+          throw new Error(
+            `OpenRouter: brezplačna dnevna kvota presežena (napaka 429) — dodaš 10 USD kredita za 1000 zahtev/dan ali počakaj ponastavitev`,
+          );
+        }
         // 402/429/5xx … → preizkusi naslednji model v verigi.
         lastError = new Error(`OpenRouter ${model}: HTTP ${res.status} ${brief}`);
         if (res.status === 429) {
