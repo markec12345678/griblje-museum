@@ -1,5 +1,6 @@
 "use client";
 
+import type { Lang } from "@/lib/i18n";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import type {
   ContributionResult,
@@ -97,7 +98,7 @@ export type GuestbookForm = {
   name: string;
   place?: string;
   message: string;
-  lang: "sl" | "en";
+  lang: Lang;
   website?: string;
 };
 
@@ -117,7 +118,7 @@ export type MemoryForm = {
   author: string;
   place?: string;
   memory: string;
-  lang: "sl" | "en";
+  lang: Lang;
   website?: string;
 };
 

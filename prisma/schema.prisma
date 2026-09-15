@@ -28,6 +28,10 @@ model Exhibit {
   evidenceStatus String // DOCUMENTED | CORROBORATED | TESTIMONY | TRADITION | UNVERIFIED | TO_COLLECT
   image         String?
   imageCredit   String? // navedba fotografije: avtor, Wikimedia Commons, licenca
+  /** 3D-model zapisa (GLB; prim. tudi .usdz za AR na iOS) — digitalizacija
+   *  enot kulturne dediščine po merilih razpisov (MGTŠ/Interreg). */
+  model3dUrl     String?
+  model3dCredit  String? // avtorstvo/kontekst 3D-modela (npr. interpretativni model muzeja)
   yearFrom      Int?     // strukturirana datacija (po vzoru DigitaltMuseum fdate): začetno leto; null = nedatiran tok
   yearTo        Int?     // končno leto; null = teče do danes
   lat           Float?
@@ -122,4 +126,23 @@ model ObjectMemory {
 
   @@index([exhibitId, status])
   @@index([status, createdAt])
+}
+
+// --- Statistika obiska (priprava na razpisna poročila: spremljanje in
+// vrednotenje doseganja ciljev — zahteva 1.18 razpisne dokumentacije MGTŠ) ---
+// Zasebno-primerljivi zbirni števci: brez piškotkov, brez IP-jev, brez
+// identifikatorjev naprav — štejejo se samo (dan, vrsta, jezik, ključ)
+// in kumulativno število. Dan je strežniški lokalni datum (Europe/Ljubljana).
+model StatDay {
+  id        String   @id @default(uuid())
+  day       String // YYYY-MM-DD
+  kind      String // visit | open | walk | guide | audio | ar
+  lang      String // sl | en | hr
+  key       String   @default("") // slug zapisa / id sprehoda / "" za splošno
+  count     Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  @@unique([day, kind, lang, key])
+  @@index([day, kind])
+  @@index([kind, key])
 }

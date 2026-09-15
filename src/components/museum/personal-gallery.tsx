@@ -20,7 +20,7 @@ import {
   SkipBack,
   SkipForward,
 } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, type Lang } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { addFavorite, useFavorites } from "@/lib/favorite-tracker";
 import { hasMinuteStory } from "@/components/museum/minute-stories";
@@ -638,7 +638,7 @@ function FilmView({
   onCalmToggle,
 }: {
   items: ExhibitDTO[];
-  lang: "sl" | "en";
+  lang: Lang;
   reduceMotion: boolean;
   onOpenExhibit: (exhibit: ExhibitDTO) => void;
   onCalmToggle: () => void;
@@ -698,9 +698,9 @@ function FilmView({
     (runId: number, slug: string) => {
       const story = getMinuteStory(slug);
       const text = story
-        ? lang === "sl"
-          ? story.textSi
-          : story.textEn
+        ? lang === "en"
+          ? story.textEn
+          : story.textSi
         : "";
       if (!browserSpeechSupported() || !text) {
         setNarration("error");
@@ -708,7 +708,8 @@ function FilmView({
       }
       setNarration("playing");
       speechRef.current?.cancel();
-      void speakBrowser(text, lang, {
+      // Hrvaški uporabnik posluša slovensko vsebino (razumljivost ob Kolpi).
+      void speakBrowser(text, lang === "en" ? "en" : "sl", {
         onEnd: () => {
           if (runId !== runIdRef.current) return;
           speechRef.current = null;
@@ -737,7 +738,9 @@ function FilmView({
       void (async () => {
         try {
           const res = await fetch(
-            `/api/audio-guide?slug=${encodeURIComponent(slug)}&lang=${lang}&minute=1&chunk=${chunk}`
+            `/api/audio-guide?slug=${encodeURIComponent(slug)}&lang=${
+              lang === "en" ? "en" : "sl"
+            }&minute=1&chunk=${chunk}`
           );
           if (!res.ok) throw new Error("audio");
           if (runId !== runIdRef.current) return;

@@ -189,10 +189,12 @@ export async function GET(req: NextRequest) {
     if (!slug) {
       return NextResponse.json({ error: "Missing slug" }, { status: 400 });
     }
-    if (langParam !== "sl" && langParam !== "en") {
+    // Hrvaščina (Interreg SI-HR): sprejmemo jo kot jezik vmesnika, vendar
+    // vsebina in glas ostaneata slovenska — medsebojna razumljivost ob Kolpi.
+    if (langParam !== "sl" && langParam !== "en" && langParam !== "hr") {
       return NextResponse.json({ error: "Invalid lang" }, { status: 400 });
     }
-    const lang: Lang = langParam;
+    const lang: Lang = langParam === "hr" ? "sl" : langParam;
 
     const exhibit = await db.exhibit.findUnique({ where: { slug } });
     if (!exhibit) {

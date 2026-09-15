@@ -34,6 +34,8 @@ import { relatedExhibits } from "@/lib/connections";
 import { hasMinuteStory } from "@/components/museum/minute-stories";
 import { ObjectBiography } from "@/components/museum/object-biography";
 import { ObjectMemories } from "@/components/museum/object-memories";
+import { Model3DView, Model3DToggle } from "@/components/museum/model-3d-view";
+import { trackStat } from "@/lib/stats-client";
 import type { ExhibitCategory, ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -103,6 +105,9 @@ export function ExhibitDialog({
   // Približevalni ogled slike (deep zoom) — se preklopi nazaj ob naslednjem zapisu.
   const [zoomOpen, setZoomOpen] = React.useState(false);
 
+  // 3D-ogled zapisa (model-viewer z AR) — samo za zapise z model3dUrl.
+  const [modelOpen, setModelOpen] = React.useState(false);
+
   // Avdio: cel vodnik ali enominutna zgodba (če obstaja).
   const minuteAvailable = exhibit ? hasMinuteStory(exhibit.slug) : false;
   const [audioVariant, setAudioVariant] = React.useState<"full" | "minute">("full");
@@ -120,8 +125,16 @@ export function ExhibitDialog({
     setCopyState("idle");
     setCitationState("idle");
     setZoomOpen(false);
+    setModelOpen(false);
     setAudioVariant("full");
   }, [exhibit?.slug]);
+
+  // Statistika odprtja zapisa (zbirni anonimni števec — razpisno poročanje,
+  // zahteva 1.18 RD MGTŠ; brez piškotkov, glej src/lib/stats-client.ts).
+  const openSlug = exhibit?.slug;
+  React.useEffect(() => {
+    if (openSlug) trackStat("open", openSlug, lang);
+  }, [openSlug, lang]);
 
   const copyText = async (text: string): Promise<boolean> => {
     try {
@@ -183,9 +196,21 @@ export function ExhibitDialog({
             {/* Vrstica sprehoda — le ko je zapis odprt kot postaja sprehoda */}
             {walkContext && <WalkTopBar ctx={walkContext} />}
 
-            {/* Slika zapisa ali približevalni ogled (deep zoom) */}
+            {/* Slika zapisa, približevalni ogled (deep zoom) ali 3D-ogled */}
             <div className="relative aspect-[16/9] w-full sm:aspect-[2/1]">
-              {zoomOpen && exhibit ? (
+              {modelOpen && exhibit?.model3dUrl ? (
+                <>
+                  <Model3DView exhibit={exhibit} />
+                  <div className="absolute left-3 top-3 flex items-center gap-1 rounded-md border border-border/60 bg-background/85 p-0.5 backdrop-blur-sm">
+                    <Model3DToggle active onToggle={() => setModelOpen(false)} />
+                  </div>
+                  {exhibit.model3dCredit && (
+                    <p className="pointer-events-none absolute bottom-9 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
+                      {exhibit.model3dCredit}
+                    </p>
+                  )}
+                </>
+              ) : zoomOpen && exhibit ? (
                 <>
                   <DeepZoom
                     src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
@@ -227,6 +252,11 @@ export function ExhibitDialog({
                   >
                     <ZoomIn className="h-5 w-5" aria-hidden="true" />
                   </Button>
+                  {exhibit.model3dUrl && (
+                    <div className="absolute left-3 top-3 rounded-md border border-border/60 bg-background/70 p-0.5 backdrop-blur-sm">
+                      <Model3DToggle active={false} onToggle={() => { setZoomOpen(false); setModelOpen(true); }} />
+                    </div>
+                  )}
                   <p className="absolute bottom-3 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
                     {exhibit?.imageCredit ?? t.collection.aiNote}
                   </p>

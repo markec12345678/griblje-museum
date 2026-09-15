@@ -41,6 +41,9 @@ export type ExhibitDTO = {
   evidenceStatus: EvidenceStatus;
   image: string | null;
   imageCredit: string | null;
+  /** 3D-model zapisa (GLB) — digitalizacija KD po razpisnih merilih. */
+  model3dUrl: string | null;
+  model3dCredit: string | null;
   yearFrom: number | null;
   yearTo: number | null;
   lat: number | null;

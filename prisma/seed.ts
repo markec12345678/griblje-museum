@@ -33,6 +33,8 @@ async function main() {
         evidenceStatus: ex.evidenceStatus,
         image: ex.image ?? null,
         imageCredit: ex.imageCredit ?? null,
+        model3dUrl: ex.model3dUrl ?? null,
+        model3dCredit: ex.model3dCredit ?? null,
         yearFrom: ex.yearFrom ?? null,
         yearTo: ex.yearTo ?? null,
         lat: ex.lat ?? null,

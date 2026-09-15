@@ -174,13 +174,14 @@ export function Header({
             <Search className="h-4.5 w-4.5" aria-hidden="true" />
           </Button>
 
-          {/* Jezikovna stikala SLO/EN */}
+          {/* Jezikovna stikala SLO/HRV/EN (hrvaščina — čezmejna razumljivost
+              ob Kolpi; priprava na program Interreg SI-HR) */}
           <div
             role="group"
             aria-label={t.a11y.switchLang}
             className="flex items-center rounded-md border border-border bg-card p-0.5"
           >
-            {(["sl", "en"] as Lang[]).map((code) => (
+            {(["sl", "hr", "en"] as Lang[]).map((code) => (
               <button
                 key={code}
                 type="button"
@@ -193,7 +194,7 @@ export function Header({
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >
-                {code === "sl" ? "SLO" : "EN"}
+                {code === "sl" ? "SLO" : code === "hr" ? "HRV" : "EN"}
               </button>
             ))}
           </div>

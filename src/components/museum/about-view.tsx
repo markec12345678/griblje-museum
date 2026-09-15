@@ -18,6 +18,7 @@ import {
   Target,
 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
+import { useQuery } from "@tanstack/react-query";
 import { ALL_WALKS } from "@/lib/walks";
 import { printWorksheet } from "@/lib/worksheet";
 import { SITE_URL } from "@/lib/site";
@@ -50,8 +51,31 @@ const EVIDENCE_ORDER = [
 // ker je produkt drugega sklada kode.
 const QUIZ_QUESTION_COUNT = 10;
 
+/** Javni povzetek statistike obiska (GET /api/stats). */
+type StatsSummary = {
+  visits: { total: number; today: number; month: number };
+  byLang: Record<string, number>;
+  guideAsks: number;
+  audioPlays: number;
+  arOpens: number;
+  topExhibits: { slug: string; opens: number }[];
+  collectedSince: string | null;
+};
+
 export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
   const { t, lang } = useLang();
+
+  // Statistika obiska — javni anonimni števci (razpisna priprava 1.18 RD MGTŠ).
+  const statsQuery = useQuery({
+    queryKey: ["museum", "stats"],
+    queryFn: async (): Promise<StatsSummary> => {
+      const res = await fetch("/api/stats");
+      if (!res.ok) throw new Error("stats failed");
+      return res.json();
+    },
+    staleTime: 5 * 60 * 1000,
+  });
+  const stats = statsQuery.data;
 
   // Unikatni viri cele zbirke
   const allSources = React.useMemo(
@@ -119,8 +143,8 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             },
             { value: ALL_WALKS.length, label: t.about.numbers.walks },
             { value: QUIZ_QUESTION_COUNT, label: t.about.numbers.quizQuestions },
-            { value: 2, label: t.about.numbers.languages },
-            { value: 10, label: t.about.numbers.endpoints },
+            { value: 3, label: t.about.numbers.languages },
+            { value: 11, label: t.about.numbers.endpoints },
           ].map((item) => (
             <div
               key={item.label}
@@ -139,6 +163,64 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
         {/* Razčlenitev po sklopih, obdobjih in zanesljivosti */}
         <CollectionStats exhibits={exhibits} />
       </section>
+
+      {/* OBISKI MUZEJA — javni anonimni števci (razpisna priprava:
+          spremljanje in vrednotenje kazalnikov, zahteva 1.18 RD MGTŠ) */}
+      {stats && (
+        <section aria-labelledby="o-obiski" className="mt-14">
+          <h2 id="o-obiski" className="font-display text-2xl font-semibold sm:text-3xl">
+            {t.statsView.title}
+          </h2>
+          <p className="mt-2 max-w-2xl text-muted-foreground">{t.statsView.subtitle}</p>
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {[
+              { value: stats.visits.total, label: t.statsView.visitsTotal },
+              { value: stats.visits.month, label: t.statsView.visitsMonth },
+              { value: stats.visits.today, label: t.statsView.visitsToday },
+              { value: stats.guideAsks, label: t.statsView.guideAsks },
+              { value: stats.audioPlays, label: t.statsView.audioPlays },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="rounded-xl border border-border/70 bg-card p-4 text-center"
+              >
+                <p className="font-display text-3xl font-semibold text-primary">
+                  {item.value.toLocaleString(lang === "sl" ? "sl-SI" : lang === "hr" ? "hr-HR" : "en-GB")}
+                </p>
+                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
+          {stats.topExhibits.length > 0 && (
+            <div className="mt-6">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                {t.statsView.topTitle}
+              </h3>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {stats.topExhibits.map((top) => {
+                  const ex = exhibits.find((e) => e.slug === top.slug);
+                  return (
+                    <li
+                      key={top.slug}
+                      className="flex items-center gap-2 rounded-full border border-border/70 bg-card px-3 py-1.5 text-sm"
+                    >
+                      <span className="font-medium">{ex ? (lang === "en" ? ex.titleEn : ex.titleSi) : top.slug}</span>
+                      <span className="text-muted-foreground">· {top.opens}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+          <p className="mt-4 text-xs text-muted-foreground">
+            {t.statsView.note}
+            {stats.collectedSince &&
+              ` · ${t.statsView.since} ${stats.collectedSince}.`}
+          </p>
+        </section>
+      )}
 
       {/* LESTVICA ZANESLJIVOSTI */}
       <section aria-labelledby="o-lestvica" className="mt-14">
@@ -250,6 +332,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
               <Badge className="border-primary/30 bg-primary/10 text-primary">
                 {t.about.accessStatus}
               </Badge>
+              <p className="text-xs text-muted-foreground">{t.about.accessDate}</p>
               <h3 className="font-display text-lg font-semibold">
                 {t.about.accessPointsTitle}
               </h3>

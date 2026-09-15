@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { trackStat, trackVisitOnce } from "@/lib/stats-client";
 import { Header, VIEW_ORDER, type MuseumView } from "@/components/museum/header";
 import { Footer } from "@/components/museum/footer";
 import { HomeView } from "@/components/museum/home-view";
@@ -124,6 +125,22 @@ export function MuseumApp() {
   // tako da je vsak zapis deljiv s kopiranjem naslovne vrstice.
   const initialDeepLink = React.useRef<string | null>(null);
   const deepLinkHandled = React.useRef(false);
+
+  // Obisk se zabeleži enkrat na sejo brskalnika (anonimni sejni števec —
+  // razpisno poročanje 1.18 RD MGTŠ; brez piškotkov, src/lib/stats-client.ts).
+  const visitTracked = React.useRef(false);
+  React.useEffect(() => {
+    if (visitTracked.current) return;
+    visitTracked.current = true;
+    trackVisitOnce(lang);
+  }, [lang]);
+
+  // Trenutni jezik v ref — za sledilne klice iz povratnih klicov,
+  // ki se namenoma ne postavljajo znova (prazne odvisnosti).
+  const langRef = React.useRef(lang);
+  React.useEffect(() => {
+    langRef.current = lang;
+  }, [lang]);
 
   React.useEffect(() => {
     initialDeepLink.current = new URLSearchParams(window.location.search).get("exhibit");
@@ -509,6 +526,8 @@ export function MuseumApp() {
       setActiveWalk({ walk, stops, stopIndex: index });
       setSelectedExhibit(stops[index].exhibit);
       markVisited(stops[index].exhibit.slug);
+      // Začetek vodenega sprehoda se šteje v statistiko obiska.
+      trackStat("walk", walkId, langRef.current);
     },
     []
   );

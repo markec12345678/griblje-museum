@@ -9,7 +9,8 @@ import {
   SendHorizontal,
   Sparkles,
 } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, type Lang } from "@/lib/i18n";
+import { trackStat } from "@/lib/stats-client";
 import type { ExhibitDTO } from "@/lib/types";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -44,12 +45,13 @@ const SENDING_MAX_MS = 60_000;
  * ponudnik ni povedal ali je niz neveljaven. */
 function formatResetTime(
   resetAt: string,
-  lang: "sl" | "en",
+  lang: Lang,
 ): string | null {
   const date = new Date(resetAt);
   if (Number.isNaN(date.getTime())) return null;
   try {
-    return new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+    const locale = lang === "sl" ? "sl-SI" : lang === "hr" ? "hr-HR" : "en-GB";
+    return new Intl.DateTimeFormat(locale, {
       hour: "2-digit",
       minute: "2-digit",
     }).format(date);
@@ -160,6 +162,8 @@ export function GuideDialog({
           ...history,
           { role: "assistant", content: data.answer, cites: data.cites },
         ]);
+        // Odgovorjeni pogovor se šteje v statistiko (kazalnik AI vodnika).
+        trackStat("guide", undefined, lang);
       } catch (err) {
         if ((err as Error)?.name === "AbortError") {
           setError("failed");
