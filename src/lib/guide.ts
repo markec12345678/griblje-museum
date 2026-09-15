@@ -23,6 +23,9 @@ import {
 
 export type GuideLang = "sl" | "en";
 
+/* ZAČASNA DIAGNOSTIKA (odstraniti po razrešitvi) — sled napak ponudnikov. */
+export const providerErrorTrail: string[] = [];
+
 export type GuideMessage = { role: "user" | "assistant"; content: string };
 
 export type GuideCite = { slug: string; titleSi: string; titleEn: string };
@@ -262,6 +265,7 @@ export async function askGuide(
   // OpenAI-kompatibilni ponudniki (OpenRouter, HF) uporabljajo standardne
   // vloge („system“), z-ai pa sprejema sistemski poziv kot prvo sporočilo
   // vloge „assistant“.
+  providerErrorTrail.length = 0;
   if (isOpenRouterChatConfigured()) {
     try {
       const raw = await openRouterChatComplete(
@@ -277,6 +281,9 @@ export async function askGuide(
     } catch (error) {
       // Dnevna meja brezplačne veje (~50 zahtev) ali zaseden ponudnik —
       // pademo na naslednjo postajo verige in razlog zabeležimo.
+      providerErrorTrail.push(
+        "OpenRouter: " + (error instanceof Error ? error.message : String(error)),
+      );
       console.warn(
         "Vodnik: OpenRouter ni uspel, nadaljevanje po verigi:",
         error instanceof Error ? error.message : String(error),
