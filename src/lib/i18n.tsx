@@ -396,9 +396,11 @@ export const ui = {
       rateLimited: "Prehitro sprašujete — poskusite čez minuto.",
       quotaExhausted:
         "Današnja meja brezplačnega vodnika je že dosežena — prosim, poskusite jutri.",
+      quotaReset: "Prosti pogovor se obnovi ob {time}.",
       failed: "Odgovor ni uspel. Poskusite znova.",
       clear: "Počisti pogovor",
-      privacy: "Pogovor ostane v vašem brskalniku — ne shranjujemo ga.",
+      privacy:
+        "Pogovor ostane v vašem brskalniku — ne shranjujemo ga. (Najpogostejša vprašanja se za en dan anonimno predpomnijo, da vodnik ostane dosegljiv.)",
       cites: "Zapisi v odgovoru",
       you: "Vi",
       guideName: "Vodnik",
@@ -1271,9 +1273,11 @@ export const ui = {
       rateLimited: "You are asking too quickly — try again in a minute.",
       quotaExhausted:
         "Today's limit for the free guide has been reached — please try again tomorrow.",
+      quotaReset: "Free conversation resumes at {time}.",
       failed: "The answer failed. Please try again.",
       clear: "Clear conversation",
-      privacy: "The conversation stays in your browser — we do not store it.",
+      privacy:
+        "The conversation stays in your browser — we do not store it. (The most common questions are kept anonymously for a day so the guide stays reachable.)",
       cites: "Records in this answer",
       you: "You",
       guideName: "Guide",

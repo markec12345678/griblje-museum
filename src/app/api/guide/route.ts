@@ -8,6 +8,7 @@ import {
   type GuideMessage,
 } from "@/lib/guide";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
+import { openRouterQuotaOf } from "@/lib/openrouter-llm";
 
 export const dynamic = "force-dynamic";
 // Odgovor modela lahko traja več kot privzetih 10 s — enako kot TTS.
@@ -57,7 +58,7 @@ export async function POST(req: NextRequest) {
     }
 
     const history: GuideMessage[] = messages;
-    const { answer, cites } = await askGuide(lang, history);
+    const { answer, cites, cached } = await askGuide(lang, history);
 
     return NextResponse.json(
       { answer, cites },
@@ -66,6 +67,8 @@ export async function POST(req: NextRequest) {
           "Cache-Control": "no-store",
           "Access-Control-Allow-Origin": "*",
           "X-Guide-Providers": guideProviderTrail(),
+          // Operativni vpogled: je odgovor prišel iz predpomnilnika?
+          "X-Guide-Cache": cached ? "hit" : "miss",
         },
       }
     );
@@ -76,10 +79,12 @@ export async function POST(req: NextRequest) {
     // se poskusili, preden je pogovor padel.
     const providerHeader = { "X-Guide-Providers": guideProviderTrail() };
     // Dnevna kvota brezplačnega pogovora — iskreno „poskusite jutri",
-    // ne zavajajoče „strežnik ni nastavljen".
+    // ne zavajajoče „strežnik ni nastavljen". Priložimo tudi točno uro
+    // ponastavitve, če jo je ponudnik povedal (X-RateLimit-Reset).
     if (/dnevna kvota presežena/.test(message)) {
+      const quota = openRouterQuotaOf(error);
       return NextResponse.json(
-        { error: "quota-exhausted" },
+        { error: "quota-exhausted", resetAt: quota?.resetAt ?? null },
         { status: 429, headers: providerHeader }
       );
     }

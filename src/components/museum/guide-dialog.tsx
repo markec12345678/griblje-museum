@@ -40,6 +40,24 @@ type ApiError =
 
 const SENDING_MAX_MS = 60_000;
 
+/** Ura ponastavitve kvote v brskalnikovi časovni coni in jeziku; null, če je
+ * ponudnik ni povedal ali je niz neveljaven. */
+function formatResetTime(
+  resetAt: string,
+  lang: "sl" | "en",
+): string | null {
+  const date = new Date(resetAt);
+  if (Number.isNaN(date.getTime())) return null;
+  try {
+    return new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(date);
+  } catch {
+    return null;
+  }
+}
+
 export function GuideDialog({
   open,
   onOpenChange,
@@ -58,6 +76,7 @@ export function GuideDialog({
   const [input, setInput] = React.useState("");
   const [busy, setBusy] = React.useState(false);
   const [error, setError] = React.useState<ApiError>(null);
+  const [quotaResetAt, setQuotaResetAt] = React.useState<string | null>(null);
   const transcriptRef = React.useRef<HTMLDivElement>(null);
   const abortRef = React.useRef<AbortController | null>(null);
 
@@ -71,7 +90,10 @@ export function GuideDialog({
   // počisti zastarelo napako (pogovor sam ostane).
   React.useEffect(() => {
     if (!open) abortRef.current?.abort();
-    else setError(null);
+    else {
+      setError(null);
+      setQuotaResetAt(null);
+    }
   }, [open]);
 
   const send = React.useCallback(
@@ -80,6 +102,7 @@ export function GuideDialog({
       if (!text || busy) return;
 
       setError(null);
+      setQuotaResetAt(null);
       setInput("");
 
       const history: ChatMessage[] = [
@@ -110,11 +133,20 @@ export function GuideDialog({
         if (!res.ok) {
           if (res.status === 503) setError("unavailable");
           else if (res.status === 429) {
-            // Razlikuj dnevno kvoto od kratkoročne hitrostne meje.
+            // Razlikuj dnevno kvoto od kratkoročne hitrostne meje;
+            // pri dnevni priložimo turo ponastavitve, če jo strežnik ve.
             const body = (await res.json().catch(() => null)) as {
               error?: string;
+              resetAt?: string | null;
             } | null;
-            setError(body?.error === "quota-exhausted" ? "quota-exhausted" : "rate-limited");
+            if (body?.error === "quota-exhausted") {
+              setError("quota-exhausted");
+              if (typeof body.resetAt === "string" && body.resetAt) {
+                setQuotaResetAt(body.resetAt);
+              }
+            } else {
+              setError("rate-limited");
+            }
           } else setError("failed");
           setMessages(history); // uporabnikovo vprašanje ostane, lahko ponovi
           return;
@@ -148,6 +180,7 @@ export function GuideDialog({
     abortRef.current?.abort();
     setMessages([]);
     setError(null);
+    setQuotaResetAt(null);
     setInput("");
   }, []);
 
@@ -161,6 +194,15 @@ export function GuideDialog({
           : error
             ? t.guide.failed
           : null;
+
+  // Točna ura ponastavitve kvote (v coni obiskovalca), če jo strežnik povedal.
+  const quotaResetText =
+    error === "quota-exhausted" && quotaResetAt
+      ? (() => {
+          const time = formatResetTime(quotaResetAt, lang);
+          return time ? t.guide.quotaReset.replace("{time}", time) : null;
+        })()
+      : null;
 
   const exhibitBySlug = React.useMemo(() => {
     const map = new Map<string, ExhibitDTO>();
@@ -320,6 +362,9 @@ export function GuideDialog({
                 className="rounded-lg border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive"
               >
                 {errorText}
+                {quotaResetText && (
+                  <span className="block">{quotaResetText}</span>
+                )}
               </p>
             )}
           </div>

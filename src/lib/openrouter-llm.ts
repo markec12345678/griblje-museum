@@ -47,6 +47,39 @@ const PER_MODEL_TIMEOUT_MS = 40_000;
 
 let stickyModel: string | null = null;
 
+/* --- Kvota brezplačne veje: kdaj se obnovi ----------------------------- */
+
+const quotaMeta = new WeakMap<Error, { resetAt: string | null }>();
+
+/**
+ * Če je napaka dnevna kvota OpenRouter, vrne čas njene ponastavitve
+ * (ISO niz) ali null, če ga ponudnik ni povedal. Vrata poti /api/guide
+ * s tem obiskovalcu pokažejo točno uro namesto suhega »poskusite jutri«.
+ */
+export function openRouterQuotaOf(
+  error: unknown,
+): { resetAt: string | null } | null {
+  return error instanceof Error ? (quotaMeta.get(error) ?? null) : null;
+}
+
+/** Iz telesa napake 429 prebere X-RateLimit-Reset (epoch ms), če je prisoten. */
+function parseDailyResetMs(body: string): number | null {
+  try {
+    const headers = (
+      JSON.parse(body) as {
+        error?: { metadata?: { headers?: Record<string, string> } };
+        metadata?: { headers?: Record<string, string> };
+      } | null
+    )?.error?.metadata?.headers;
+    const raw =
+      headers?.["X-RateLimit-Reset"] ?? headers?.["x-ratelimit-reset"];
+    const ms = raw ? Number(raw) : NaN;
+    return Number.isFinite(ms) && ms > 0 ? ms : null;
+  } catch {
+    return null;
+  }
+}
+
 function openRouterKey(): string | null {
   const raw = process.env.OPENROUTER_API_KEY ?? process.env.OPENROUTER_KEY;
   return raw && raw.trim() ? raw.trim() : null;
@@ -84,7 +117,9 @@ type OrOptions = {
  *             drugih modelov z istim ključem nima smisla),
  *   402     — model zahteva kredit (pri :free modelih ne pride v poštev,
  *             a varnostno prestopimo na naslednjega),
- *   429     — dnevna/minutna meja ali zaseden ponudnik: naslednji model,
+ *   429/day — DNEVNA kvota brezplačnega računa: usodna, takoj navzgor
+ *             (priložen čas ponastavitve — glej openRouterQuotaOf),
+ *   429/ostalo — minutna meja ali zaseden ponudnik: naslednji model,
  *   5xx     — napaka ponudnika gorivo navzgor: naslednji model.
  */
 export async function openRouterChatComplete(
@@ -139,15 +174,25 @@ export async function openRouterChatComplete(
             `OpenRouter: ključ zavrnjen (HTTP ${res.status}) — preveri veljavnost ključa`,
           );
         }
-        // Računovska (ne modelska) omejitev: dnevna/minutna kvota celotnega
-        // brezplačnega računa — vsi :free modeli bodo enako zavrnjeni,
-        // prestopanje po verigi je jalovo. Takoj končaj ponudnika.
-        if (res.status === 429 && /free-models-per-(day|minute)/i.test(body)) {
-          throw new Error(
-            `OpenRouter: brezplačna dnevna kvota presežena (napaka 429) — dodaš 10 USD kredita za 1000 zahtev/dan ali počakaj ponastavitev`,
+        // Računovodstvo (ne model): DNEVNA kvota brezplačne veje — vsi
+        // :free modeli bodo enako zavrnjeni, prestopanje po verigi je
+        // jalovo. Takoj končaj ponudnika; s seboj nesemo čas ponastavitve,
+        // da lahko vmesnik pove, kdaj se pogovor spet odpre.
+        if (res.status === 429 && /free-models-per-day/i.test(body)) {
+          const resetMs = parseDailyResetMs(body);
+          const error = new Error(
+            `OpenRouter: brezplačna dnevna kvota presežena (napaka 429)${
+              resetMs ? ` — obnovitev ob ${new Date(resetMs).toISOString()}` : ""
+            } — dodaš 10 USD kredita za 1000 zahtev/dan ali počakaj ponastavitev`,
           );
+          quotaMeta.set(error, {
+            resetAt: resetMs ? new Date(resetMs).toISOString() : null,
+          });
+          throw error;
         }
-        // 402/429/5xx … → preizkusi naslednji model v verigi.
+        // MINUTNA meja (~20/min) ali zaseden model — PREHODNO: kratek premor
+        // in naslednji model v verigi. (Po telesu napake je videti kot
+        // dnevna — napačna razlaga bi obiskovalcu odvzela pogovor za ves dan.)
         lastError = new Error(`OpenRouter ${model}: HTTP ${res.status} ${brief}`);
         if (res.status === 429) {
           await new Promise((r) => setTimeout(r, 1_200));
