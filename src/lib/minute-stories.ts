@@ -173,6 +173,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "The white birch is the tree that named the region: Bela krajina, the white march. Its whiteness — lime in the bark — shines even at dusk, which is why birch groves stay light. It also named the white day kept in the folk calendar, and the vineyard once known as the vineyard of white birches. Around Griblje the birch stands by roads and streams. This is a tree you never need to search for: look for any village, and there will be its white face.",
   },
+  {
+    slug: "vaska-sola",
+    textSi:
+      "Leta 1869 je dunajski zakon naredil šolo za dolžnost vsakega otroka. V vasi je to pomenilo eno učilnico in enega učitelja: tablica, kreda, abecednik — in klopi, ki so ob žetvi stale prazne. Kdor je znal brati, je vaščanom prebral pisma in mandate iz Amerike. Bela krajina pa je šoli dodala svoje poglavje: med vojno, na svobodnem ozemlju, je v Črnomlju delovala partizanska gimnazija — stavba na sliki. Muzej išče razredne fotografije in imena učiteljev. Morda jih imate ravno vi doma.",
+    textEn:
+      "In 1869 a Viennese law made school the duty of every child. In the village that meant one classroom and one teacher: slate, chalk, primer — and benches that stood empty at harvest. Whoever could read the letters and money orders from America aloud for the neighbours. Bela krajina added its own chapter to the school: during the war, on free territory, a Partisan gymnasium worked in Črnomelj — the building in the picture. The museum is looking for class photographs and teachers' names. Perhaps you have them at home.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {
