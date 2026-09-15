@@ -375,7 +375,7 @@ export const ui = {
     guide: {
       openLabel: "Pogovor z zbirko (Ctrl+G)",
       title: "Pogovor z zbirko",
-      subtitle: "Vprašajte muzejskega vodnika — odgovori so uzidani v 20 kuriranih zapisov.",
+      subtitle: "Vprašajte muzejskega vodnika — odgovori so uzidani v 26 kuriranih zapisov.",
       aiBadge: "AI vodnik",
       disclaimer: "Umetna inteligenca sestavlja odgovore samo iz zapisov zbirke; navedeni zapisi so vedno pravi. Muzej ne izmišljuje zgodovine.",
       startersTitle: "S čim začnemo?",
@@ -1245,7 +1245,7 @@ export const ui = {
     guide: {
       openLabel: "Talk to the collection (Ctrl+G)",
       title: "Talk to the collection",
-      subtitle: "Ask the museum guide — answers are grounded in 20 curated records.",
+      subtitle: "Ask the museum guide — answers are grounded in 26 curated records.",
       aiBadge: "AI guide",
       disclaimer: "Artificial intelligence builds answers only from the collection records; cited records are always real. The museum invents no history.",
       startersTitle: "Where shall we start?",
