@@ -70,9 +70,15 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error("API /api/guide error:", error);
     const message = error instanceof Error ? error.message : String(error);
+    // ZAČASNA DIAGNOSTIKA (odstraniti po razrešitvi): zadnja napaka verige
+    // v glavi odgovora, da je vidna točno tam, kjer se pokaže.
+    const debugHeader = { "X-Guide-Debug": message.slice(0, 180) };
     // Prehodna omejitev zgornjega API-ja — javimo kot 429 (počasi).
     if (/429|rate|too many/i.test(message)) {
-      return NextResponse.json({ error: "rate-limited" }, { status: 429 });
+      return NextResponse.json(
+        { error: "rate-limited" },
+        { status: 429, headers: debugHeader }
+      );
     }
     // Ustrezna oblika za manjkajočo konfiguracijo ZAI_CONFIG na strežniški
     // platformi (Vercel) — muzej je odkrit, ne tiho pokvarjen (vzorec 503).
@@ -82,10 +88,13 @@ export async function POST(req: NextRequest) {
     if (unavailable) {
       return NextResponse.json(
         { error: "guide-unavailable" },
-        { status: 503 }
+        { status: 503, headers: debugHeader }
       );
     }
-    return NextResponse.json({ error: "guide-failed" }, { status: 500 });
+    return NextResponse.json(
+      { error: "guide-failed" },
+      { status: 500, headers: debugHeader }
+    );
   }
 }
 
