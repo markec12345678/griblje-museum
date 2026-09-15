@@ -23,12 +23,17 @@ import {
 
 export type GuideLang = "sl" | "en";
 
-/* ZAČASNA DIAGNOSTIKA (odstraniti po razrešitvi) — sled napak ponudnikov. */
-export const providerErrorTrail: string[] = [];
-
 export type GuideMessage = { role: "user" | "assistant"; content: string };
 
 export type GuideCite = { slug: string; titleSi: string; titleEn: string };
+
+/* Kateri ponudniki so se POSKUSILI v tej zahtevi (ASCII žetoni —
+ * odgovoru se prilepijo v glavi X-Guide-Providers za operativni vpogled,
+ * obiskovalcu nevidno). */
+const providerTrail: string[] = [];
+export function guideProviderTrail(): string {
+  return providerTrail.join(",");
+}
 
 /* --- Omejitve (v samostojnem modulu guide-limits.ts, da jih lahko
  * uvozi tudi odjemalec brez strežniških odvisnosti.) ------------------ */
@@ -253,7 +258,7 @@ export async function askGuide(
   history: GuideMessage[]
 ): Promise<{ answer: string; cites: GuideCite[] }> {
   const { text, exhibits } = await getDossier(lang);
-  const zai = await getZAI();
+  providerTrail.length = 0;
 
   // Zgodovino skrajšamo na zadnjih GUIDE_LIMITS.history sporočil —
   // starejša vprašanja ne nosijo več konteksta, dosje pa vedno ostane.
@@ -265,11 +270,11 @@ export async function askGuide(
   // OpenAI-kompatibilni ponudniki (OpenRouter, HF) uporabljajo standardne
   // vloge („system“), z-ai pa sprejema sistemski poziv kot prvo sporočilo
   // vloge „assistant“.
-  providerErrorTrail.length = 0;
-  providerErrorTrail.push(
-    "env(" + Object.keys(process.env).filter((k) => /ROUTER|ELEVEN|HUGGING|^HF_|ZAI/i.test(k)).join(",") + ")",
-  );
+  // OPOMBA: z-ai odjemalec se inicializira LENOBNO (globoko v rezervni
+  // veji) — zgolj na Vercelu .z-ai-config ne obstaja, njegova napaka pa
+  // ne sme ovirati zgornjih postaj verige.
   if (isOpenRouterChatConfigured()) {
+    providerTrail.push("openrouter");
     try {
       const raw = await openRouterChatComplete(
         [
@@ -284,9 +289,6 @@ export async function askGuide(
     } catch (error) {
       // Dnevna meja brezplačne veje (~50 zahtev) ali zaseden ponudnik —
       // pademo na naslednjo postajo verige in razlog zabeležimo.
-      providerErrorTrail.push(
-        "OpenRouter: " + (error instanceof Error ? error.message : String(error)),
-      );
       console.warn(
         "Vodnik: OpenRouter ni uspel, nadaljevanje po verigi:",
         error instanceof Error ? error.message : String(error),
@@ -295,6 +297,7 @@ export async function askGuide(
   }
 
   if (isHfChatConfigured()) {
+    providerTrail.push("hf");
     try {
       const raw = await hfChatComplete([
         { role: "system", content: system },
@@ -315,6 +318,12 @@ export async function askGuide(
     { role: "assistant", content: system },
     ...trimmed.map((m) => ({ role: m.role, content: m.content })),
   ];
+
+  // z-ai odjemalec se ustvari šele TU (lenobno): na strežniških platformah
+  // brez .z-ai-config njegova konstrukcija vrže napako — zgornji ponudniki
+  // (OpenRouter/HF) je ne smejo čutiti.
+  providerTrail.push("zai");
+  const zai = await getZAI();
 
   // Ena ponovitev za prehodno omejitev zgornjega API-ja (429) —
   // kratka pavza, da val zahtev na isti račun mine.

@@ -3,8 +3,8 @@ import { z } from "zod";
 import {
   askGuide,
   guideClientIp,
+  guideProviderTrail,
   guideRateLimited,
-  providerErrorTrail,
   type GuideMessage,
 } from "@/lib/guide";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
@@ -65,21 +65,21 @@ export async function POST(req: NextRequest) {
         headers: {
           "Cache-Control": "no-store",
           "Access-Control-Allow-Origin": "*",
+          "X-Guide-Providers": guideProviderTrail(),
         },
       }
     );
   } catch (error) {
     console.error("API /api/guide error:", error);
     const message = error instanceof Error ? error.message : String(error);
-    // ZAČASNA DIAGNOSTIKA (odstraniti po razrešitvi): sled napak ponudnikov
-    // v TELENU odgovora (glave HTTP ne prenašajo č/š/ž — ByteString).
-    const debugTrail = (providerErrorTrail.join(" || ") + " || final: " + message).slice(0, 500);
-    console.error("API /api/guide provider trail:", debugTrail);
+    // Operativni vpogled (ASCII, obiskovalcu neviden): kateri ponudniki so
+    // se poskusili, preden je pogovor padel.
+    const providerHeader = { "X-Guide-Providers": guideProviderTrail() };
     // Prehodna omejitev zgornjega API-ja — javimo kot 429 (počasi).
     if (/429|rate|too many/i.test(message)) {
       return NextResponse.json(
-        { error: "rate-limited", debug: debugTrail },
-        { status: 429 }
+        { error: "rate-limited" },
+        { status: 429, headers: providerHeader }
       );
     }
     // Ustrezna oblika za manjkajočo konfiguracijo ZAI_CONFIG na strežniški
@@ -89,13 +89,13 @@ export async function POST(req: NextRequest) {
       message === "Model je vrnil prazen odgovor";
     if (unavailable) {
       return NextResponse.json(
-        { error: "guide-unavailable", debug: debugTrail },
-        { status: 503 }
+        { error: "guide-unavailable" },
+        { status: 503, headers: providerHeader }
       );
     }
     return NextResponse.json(
-      { error: "guide-failed", debug: debugTrail },
-      { status: 500 }
+      { error: "guide-failed" },
+      { status: 500, headers: providerHeader }
     );
   }
 }
