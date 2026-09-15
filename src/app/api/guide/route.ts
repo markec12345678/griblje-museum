@@ -75,6 +75,14 @@ export async function POST(req: NextRequest) {
     // Operativni vpogled (ASCII, obiskovalcu neviden): kateri ponudniki so
     // se poskusili, preden je pogovor padel.
     const providerHeader = { "X-Guide-Providers": guideProviderTrail() };
+    // Dnevna kvota brezplačnega pogovora — iskreno „poskusite jutri",
+    // ne zavajajoče „strežnik ni nastavljen".
+    if (/dnevna kvota presežena/.test(message)) {
+      return NextResponse.json(
+        { error: "quota-exhausted" },
+        { status: 429, headers: providerHeader }
+      );
+    }
     // Prehodna omejitev zgornjega API-ja — javimo kot 429 (počasi).
     if (/429|rate|too many/i.test(message)) {
       return NextResponse.json(

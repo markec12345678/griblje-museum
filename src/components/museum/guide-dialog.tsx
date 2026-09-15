@@ -31,7 +31,12 @@ type ChatMessage = {
   cites?: { slug: string; titleSi: string; titleEn: string }[];
 };
 
-type ApiError = "unavailable" | "rate-limited" | "failed" | null;
+type ApiError =
+  | "unavailable"
+  | "rate-limited"
+  | "quota-exhausted"
+  | "failed"
+  | null;
 
 const SENDING_MAX_MS = 60_000;
 
@@ -104,8 +109,13 @@ export function GuideDialog({
 
         if (!res.ok) {
           if (res.status === 503) setError("unavailable");
-          else if (res.status === 429) setError("rate-limited");
-          else setError("failed");
+          else if (res.status === 429) {
+            // Razlikuj dnevno kvoto od kratkoročne hitrostne meje.
+            const body = (await res.json().catch(() => null)) as {
+              error?: string;
+            } | null;
+            setError(body?.error === "quota-exhausted" ? "quota-exhausted" : "rate-limited");
+          } else setError("failed");
           setMessages(history); // uporabnikovo vprašanje ostane, lahko ponovi
           return;
         }
@@ -146,8 +156,10 @@ export function GuideDialog({
       ? t.guide.unavailable
       : error === "rate-limited"
         ? t.guide.rateLimited
-        : error
-          ? t.guide.failed
+        : error === "quota-exhausted"
+          ? t.guide.quotaExhausted
+          : error
+            ? t.guide.failed
           : null;
 
   const exhibitBySlug = React.useMemo(() => {
