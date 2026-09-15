@@ -77,7 +77,7 @@ export const ui = {
       timeText:
         "Muzej se prilagodi vašemu času: od kvartalnega ogleda dnevnega zapisa do celodneža s sprehodi in avdio vodnikom.",
       timeShort: "Današnji zapis in muzejska uganka na tej strani.",
-      timeMedium: "En vodeni muzejski sprehod skozi štiri postaje.",
+      timeMedium: "En vodeni muzejski sprehod skozi pet postaj.",
       timeLong: "Cela zbirka z avdio vodnikom in zemljevidom.",
       ctaWalk: "Začni vodeni sprehod",
       ctaCollection: "Odpri zbirko",
@@ -378,7 +378,7 @@ export const ui = {
     guide: {
       openLabel: "Pogovor z zbirko (Ctrl+G)",
       title: "Pogovor z zbirko",
-      subtitle: "Vprašajte muzejskega vodnika — odgovori so uzidani v 29 kuriranih zapisov.",
+      subtitle: "Vprašajte muzejskega vodnika — odgovori so uzidani v 30 kuriranih zapisov.",
       aiBadge: "AI vodnik",
       disclaimer: "Umetna inteligenca sestavlja odgovore samo iz zapisov zbirke; navedeni zapisi so vedno pravi. Muzej ne izmišljuje zgodovine.",
       startersTitle: "S čim začnemo?",
@@ -416,12 +416,12 @@ export const ui = {
     walks: {
       sectionTitle: "Muzejski sprehodi",
       sectionSub:
-        "Štirje kurirani sprehodi skozi zbirko — po vzoru vodenih ogledov Norsk Folkemuseum. Vsaka postaja odpre zapis s kuratorsko opombo; sprehod lahko kadarkoli zapustite.",
+        "Pet kuriranih sprehodov skozi zbirko — po vzoru vodenih ogledov Norsk Folkemuseum. Vsaka postaja odpre zapis s kuratorsko opombo; sprehod lahko kadarkoli zapustite.",
       stops: (n: number) =>
         n === 1 ? "1 postaja" : n >= 2 && n <= 4 ? `${n} postaje` : `${n} postaj`,
       minutes: (n: number) => `≈ ${n} min`,
       start: "Začni sprehod",
-      coverNote: "Sprehodi skupaj pokrivajo vseh 20 zapisov zbirke.",
+      coverNote: "Sprehodi skupaj pokrivajo vseh 30 zapisov zbirke.",
       completed: "Zaključen",
       completedProgress: (done: number, total: number) =>
         `Zaključeni sprehodi: ${done} od ${total}`,
@@ -451,7 +451,7 @@ export const ui = {
         },
         {
           title: "2 · Voden sprehod",
-          text: "Učenci izberejo enega od štirih sprehodov in ga prehodijo do konca. Ob vsaki postaji poslušajo avdio vodnik in zapišejo eno dejstvo v delovni list.",
+          text: "Učenci izberejo enega od petih sprehodov in ga prehodijo do konca. Ob vsaki postaji poslušajo avdio vodnik in zapišejo eno dejstvo v delovni list.",
         },
         {
           title: "3 · Delo z viri",
@@ -613,7 +613,7 @@ export const ui = {
         "Vsak zapis ima enominutno zgodbo — odprite ga in izberite »V eni minuti«.",
       timeLongTitle: "Časa je dovolj za sprehod.",
       timeLongText:
-        "Vodeni sprehod po vodi vodi skozi štiri postaje — kjer se začne vsak obisk Gribelj.",
+        "Vodeni sprehod po vodi vodi skozi pet postaj — kjer se začne vsak obisk Gribelj.",
       ctaMinute: "Muzej v minuti",
       ctaWalk: "Začni sprehod",
     },
@@ -955,7 +955,7 @@ export const ui = {
       timeText:
         "The museum adapts to your time: from a quick look at today's record to a full visit with walks and the audio guide.",
       timeShort: "Today's record and the museum quiz on this page.",
-      timeMedium: "One guided museum walk through four stops.",
+      timeMedium: "One guided museum walk through five stops.",
       timeLong: "The whole collection with the audio guide and the map.",
       ctaWalk: "Start a guided walk",
       ctaCollection: "Open the collection",
@@ -1255,7 +1255,7 @@ export const ui = {
     guide: {
       openLabel: "Talk to the collection (Ctrl+G)",
       title: "Talk to the collection",
-      subtitle: "Ask the museum guide — answers are grounded in 29 curated records.",
+      subtitle: "Ask the museum guide — answers are grounded in 30 curated records.",
       aiBadge: "AI guide",
       disclaimer: "Artificial intelligence builds answers only from the collection records; cited records are always real. The museum invents no history.",
       startersTitle: "Where shall we start?",
@@ -1293,11 +1293,11 @@ export const ui = {
     walks: {
       sectionTitle: "Museum walks",
       sectionSub:
-        "Four curated walks through the collection — modelled on the guided tours of the Norwegian Museum of Cultural History. Each stop opens a record with a curator's note; leave a walk at any time.",
+        "Five curated walks through the collection — modelled on the guided tours of the Norwegian Museum of Cultural History. Each stop opens a record with a curator's note; leave a walk at any time.",
       stops: (n: number) => (n === 1 ? "1 stop" : `${n} stops`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Start the walk",
-      coverNote: "Together the walks cover all 20 records of the collection.",
+      coverNote: "Together the walks cover all 30 records of the collection.",
       completed: "Completed",
       completedProgress: (done: number, total: number) =>
         `Completed walks: ${done} of ${total}`,
@@ -1327,7 +1327,7 @@ export const ui = {
         },
         {
           title: "2 · A guided walk",
-          text: "Pupils choose one of the four walks and follow it to the end. At each stop they listen to the audio guide and write one fact into the worksheet.",
+          text: "Pupils choose one of the five walks and follow it to the end. At each stop they listen to the audio guide and write one fact into the worksheet.",
         },
         {
           title: "3 · Working with sources",
@@ -1488,7 +1488,7 @@ export const ui = {
         "Every record has a one-minute story — open one and choose “In one minute”.",
       timeLongTitle: "There is time for a walk.",
       timeLongText:
-        "The water walk leads through four stops — where every visit to Griblje begins.",
+        "The water walk leads through five stops — where every visit to Griblje begins.",
       ctaMinute: "The museum in a minute",
       ctaWalk: "Start a walk",
     },

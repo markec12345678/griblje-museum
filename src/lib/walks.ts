@@ -6,8 +6,8 @@ import type { ExhibitDTO } from "@/lib/types";
  * preneseni v digitalni prostor: vsaka postaja je zapis iz zbirke,
  * obogaten s kuratorsko opombo, ki povezuje postave v pripoved.
  *
- * Pogoj celovitosti: vsi štirje sprehodi skupaj pokrijejo VSE zapise
- * zbirke (2026: 20 zapisov), vsak zapis natanko enkrat.
+ * Pogoj celovitosti: vseh pet sprehodov skupaj pokrije VSE zapise
+ * zbirke (2026: 30 zapisov), vsak zapis natanko enkrat.
  */
 
 export type WalkStop = {
@@ -59,9 +59,16 @@ export const WALKS: Walk[] = [
       {
         exhibitSlug: "ribnik",
         noteSi:
-          "Zadnja postaja vodnega sprehoda je vode, ki so jo prinesli domov — ribnik ob vasi, pojilišče in počivališče v enem.",
+          "Voda, ki so jo prinesli domov — ribnik ob vasi, pojilišče in počivališče v enem.",
         noteEn:
-          "The last stop of the water walk is water brought home — the pond by the village, a watering place and a resting place in one.",
+          "Water brought home — the pond by the village, a watering place and a resting place in one.",
+      },
+      {
+        exhibitSlug: "crni-moceril",
+        noteSi:
+          "Zadnja voda je tista, ki je ne vidimo: pod suhim kotom nad vasjo teče kraški svet, v njem pa črni močeril, ki ga je znanost srečala šele leta 1986. Kar ponikne na eni strani, se izvira na drugi.",
+        noteEn:
+          "The last water is the water we cannot see: beneath the dry corner above the village runs a karst world, and in it the black olm, which science met only in 1986. What sinks on one side rises on the other.",
       },
     ],
   },
@@ -80,6 +87,13 @@ export const WALKS: Walk[] = [
           "Ta tla nikoli niso bila mirna. Vojna krajina — vojaška obramba pred Osmanskim cesarstvom — je za stoletja oblikovala, kdo tu živi in kako.",
         noteEn:
           "This ground was never quiet. The Military Frontier — the defensive border against the Ottoman Empire — shaped for centuries who lived here and how.",
+      },
+      {
+        exhibitSlug: "zaseda-1941",
+        noteSi:
+          "Prva kri te vojne prihaja zgodaj: 6. septembra 1941, prva oborožena akcija belokranjskih partizanov — prav na cesti Črnomelj–Griblje, na vašem pragu.",
+        noteEn:
+          "This war's first blood comes early: on 6 September 1941, the first armed action of the Bela krajina partisans — right on the Črnomelj–Griblje road, on the village's doorstep.",
       },
       {
         exhibitSlug: "snos-crnomelj-1944",
@@ -101,6 +115,13 @@ export const WALKS: Walk[] = [
           "Marec 1945 — nebo nad Gribljami. Zavezniška letala evakuirajo ranjence in vojake; nebesa nad vasjo so tri dni letališče.",
         noteEn:
           "March 1945 — the sky above Griblje. Allied aircraft evacuate the wounded and soldiers; for days the heavens over the village were an airfield.",
+      },
+      {
+        exhibitSlug: "spomenik-padlim",
+        noteSi:
+          "Koliko je ta vojna vzela tej vasi? Trinajst imen, vklesanih v kamen pred šolo. Vsako ime je bilo nekdo, ki je nosil priimek, ki še danes zveni po Gribljah.",
+        noteEn:
+          "How much did this war take from this village? Thirteen names carved into the stone before the school. Each name was someone who bore a surname that still sounds through Griblje today.",
       },
       {
         exhibitSlug: "meja-1991",
@@ -158,6 +179,59 @@ export const WALKS: Walk[] = [
     ],
   },
   {
+    id: "iz-gribelj-v-svet",
+    titleSi: "Iz Gribelj v svet",
+    titleEn: "From Griblje into the world",
+    descriptionSi:
+      "Od šolske tablice do svetovnih prvenstev in čezoceanskih plovb: kako se je vas šolala, branila, proslavila in raztezala čez svet — ter na koncu preštela sebe.",
+    descriptionEn:
+      "From the school slate to world championships and ocean crossings: how the village educated, defended, distinguished and stretched itself across the world — and in the end counted itself.",
+    stops: [
+      {
+        exhibitSlug: "vaska-sola",
+        noteSi:
+          "Vse se začne pri tablici: cesarjev šolski zakon je vasi podaril branje in računanje — in šola v Gribljah ni utihnila niti pod okupacijo.",
+        noteEn:
+          "It all begins at the slate: the imperial school law gifted the village reading and arithmetic — and the school of Griblje did not fall silent even under occupation.",
+      },
+      {
+        exhibitSlug: "pgd-griblje-1927",
+        noteSi:
+          "Ko zagori, ni časa za pomoč od daleč: leta 1927 si je vas ustvarila lastno brambo, danes najstarejšo še delujočo organizacijo v Gribljah. Gasilski dom je zrasel v drugo dvorano vasi.",
+        noteEn:
+          "When fire breaks out there is no time for help from afar: in 1927 the village created its own defence, today the oldest organization still working in Griblje. The fire hall grew into the village's second hall.",
+      },
+      {
+        exhibitSlug: "anton-filak",
+        noteSi:
+          "Vadnica je bila njiva za hišo: Anton Filak je vaški vsakdan — brazdo — odnesel na svetovna prvenstva v oranju in Griblje zastopal kar osmkrat. Kmečko znanje kot svetovni šport.",
+        noteEn:
+          "His training field was the plot behind the house: Anton Filak carried the village's everyday — the furrow — to the world ploughing championships, representing Griblje eight times. Farming skill as world sport.",
+      },
+      {
+        exhibitSlug: "izseljenstvo",
+        noteSi:
+          "A niso vsi ostali: vali odhoda v Ameriko, Argentino in Avstralijo so vas raznesli po svetu. Denar, poslan domov, je gradil hiše, ki v Gribljah še stojijo.",
+        noteEn:
+          "But not everyone stayed: waves of departure for America, Argentina and Australia scattered the village across the world. The money sent home built houses that still stand in Griblje.",
+      },
+      {
+        exhibitSlug: "kolesa-torpedo",
+        noteSi:
+          "Tretja pot med odhodom in ostankom: starodobna kolesa, ki vozijo v svet in se vedno vrnejo domov. Petnajst let sekcije Torpedo — in 94-letni Janez Totar, ki še vedno vrti pedala.",
+        noteEn:
+          "A third way between leaving and staying: vintage bicycles that ride out into the world and always come back home. Fifteen years of the Torpedo section — and 94-year-old Janez Totar, still turning the pedals.",
+      },
+      {
+        exhibitSlug: "griblje-v-stevilkah",
+        noteSi:
+          "Zadnja postaja je sam popis: Griblach 1468, Briglach 1490, 329 prebivalcev danes. Vsaka številka v tem zapisu je kdo ali kaj — sprehod zaključimo tako, da preštejemo vas.",
+        noteEn:
+          "The last stop is the census itself: Griblach 1468, Briglach 1490, 329 inhabitants today. Every number in this record is a someone or a something — we close the walk by counting the village.",
+      },
+    ],
+  },
+  {
     id: "vas-in-njeni-ljudje",
     titleSi: "Vas in njeni ljudje",
     titleEn: "The village and its people",
@@ -179,6 +253,13 @@ export const WALKS: Walk[] = [
           "Rumena baročna cerkev na hribu je znamenitost, ki jo prepoznajo vsi, ki so kdaj šli skozi. Sveti Vid — zavetnik vasi.",
         noteEn:
           "The yellow Baroque church on the hill is the landmark everyone who ever passed through recognises. St. Vitus — patron of the village.",
+      },
+      {
+        exhibitSlug: "petstoletnica-2026",
+        noteSi:
+          "Ista cerkev letos praznuje pol tisočletja: prvo pisno omembo so spomnili z obnovo stavbe, dvema publikacijama in novo ureditvijo okolice. Petsto let — ves čas en zvonik nad vasjo.",
+        noteEn:
+          "The same church marks half a millennium this year: its first written mention was remembered with the building's renewal, two publications and a newly arranged setting. Five hundred years — one steeple above the village all that time.",
       },
       {
         exhibitSlug: "niko-zupanic",
@@ -218,7 +299,7 @@ export const WALKS: Walk[] = [
  * Petite Galerie Louvra: postaje so poštevne, kratke in vsaka nosi
  * eno vprašanje, na katerega odgovarja slika ali zapis. Naslanja se
  * na družinam najbolj dostopne zapise zbirke (lahko se prekriva
- * s tematskimi sprehodi, ki ostanejo brez sprememb).
+ * s tematskimi sprehodi).
  */
 export const FAMILY_WALK: Walk = {
   id: "druzinski-sprehod",
