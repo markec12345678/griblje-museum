@@ -743,3 +743,26 @@ Stage Summary:
 - Ugotovitev št. 2: veliki razpisi (MGTŠ 205–250k) so dosegljivi samo v konzorciju (občina/RIC kot prijavitelj, TD kot partner) — med 28 prejemniki ni bilo nobenega društva
 - Ugotovitev št. 3: muzej tehnično že izpolnjuje večino standardov (IIIF, opendata, CC, i18n) — manjka 3D, statistika, OAI-PMH/EDM in fizična komponenta
 - Ključni dokumenti za nadaljnje delo: research-grants/*.json (s01–s39, p-*.json), sihr-*.html
+
+---
+Task ID: 34
+Agent: Main agent (Z.ai Code)
+Task: Poglobitev raziskave — KAJ NATANČNO ZAHTEVAJO razpisi (uporabnik: „odlično nadaljuj v tej smeri kaj zahtevajo")
+
+Work Log:
+- Prenesel in pretvoril CELOTNE uradne razpisne dokumente (ne le povzetkov strani): docs/RD_mgts.txt (236k znakov — razpisna dokumentacija MGTŠ), QA_mgts.txt (vprašanja+odgovori, 50k), Rezultati_mgts.txt (28 izbranih), JPR_NKD_2026.txt (MK nesnovna dediščina), JSKD_pr_2026.txt (84k), sihr-prirocnik.txt (Interreg mali projekti, 3.4k vrstic)
+- MGTŠ TOČKOVNIK (nov odkrit): 100 točk + prag 60 + regionalni +5; 1. KAKOVOST 35 (zgodba 10, podpora 3–5 ponudnikov 10, razpoložljivost 2+ doživetij celo leto 15); 2. STRATEGIJA SST 20 (8 poudarkov 10, Slovenia Green 5); 3. POSLOVNO OKOLJE 25 (prodajni plan 10, digitalizacija 15 = 3D iz registra 5 + AR/VR/hologrami/aplikacije 5 + video s 3D 5); 4. REALNOST 20 (stroškovnik 5, skupina turizem+kultura 5, prejšnji MK razpis 10); 5. REGIONALNI 5 — Črnomelj potrjeno na seznamu obmejnih problemskih območij (Uradni list 2024) = +5
+- MGTŠ UPRAVIČENI STROŠKI (nov odkrit): poleg 3D/XR/AR/VR/hologramov/videomappinga/touchscreenov izrecno „stroški priprave in obdelave podatkov za uporabo v jezikovnih modelih" IN „implementacija naprednih AI orodij na osnovi velikih jezikovnih modelov ... ki gostujejo na strežnikih v Sloveniji" → naš AI vodnik je kanonično upravičen strošek, če gostuje v SLO
+- MGTŠ Q&A #39 (odločilno): ministrstvo dobesedno — „Za te zadeve niso pristojna turistična društva, v katerih delujejo prostovoljci, niti podjetja." → TD nikoli prijavitelj na velikem razpisu; pot = konzorcij (občina/RIC prijavitelj, TD partner)
+- MGTŠ posebni pogoji: dediščina vpisana v register IN v lasti občine/države (cerkev sv. Vida = last Župnije → raje občinska dediščina ali dogovor), zaposlena oseba za razvoj/trženje, 5-letna življenjska doba produkta, 9+ mesecev/leto, I Feel Slovenia, EU vidnost, DNSH, horizontalna načela (invalidi/spoli)
+- Ocena točk hipotetičnega projekta Griblje: 55–80 od 100 (nad pragom 60 samo z izpolnitvijo 3.1 prodajni plan + 3.2 3D digitalizacija); 4.3 (10 t.) dosegljivo le če občina pridobi predhodni MK razpis (naknadni razpis MK trajnostna obnova — spremljati)
+- Interreg SI-HR mali projekti (ODPRT, neprekinjeno): vse pravne osebe razen političnih strank, NVO/društva izrecno spodbujena; 1 partner SI + 1 HR (max 4); ≤12 mesecev (do 30. 11. 2028); Tip 1 ≤16.000 EUR, Tip 2 people-to-people ≤24.800 EUR; 80 % ESRR + 20 % lastno; namen ZAUPANJE ne turizem → zgodba Kolpa/čezmejna dediščina; uradna jeziki SL+HR+EN
+- JSKD: društva DA (1 leto delovanja, dostopnost javnosti, max 2 vlogi/področje); področja umetniška — folklorna (belokranjske šege!) in likovna (razstave ≥7 dni) najbližji; +5 t. status NVO javni interes kultura
+- MK NKD: vpis v Register nesnovne dediščine obvezen; 85:15 (15 % lahko prostovoljno del!); točkovnik 100+40+15+9; prag 50
+- KKP kroženje: gostitelji = javni zavodi + NVO s 4-letnim programom IN projekt moral biti MK-sofinanciran 2020–2026 → za TD trenutno nedosegljivo
+
+Stage Summary:
+- Celoten točkovnik + vsi pogoji + upravičeni stroški glavnega razpisa zdaj dokumentirani iz primarnih virov (RD/antiword), ne časopisnih povzetkov
+- Dve poti za TD: (1) Interreg SI-HR mali projekti — zdaj odprti, TD kot vodilni partner z HR partnerjem; (2) naslednji cikel MGTŠ (dec 2026/2027) — TD kot partner občine/RIC, muzej pripraviti na 3.1+3.2 točki
+- Preslikava zahtev → muzej: manjka 3D (ključno za 15 t.), prodajni plan (10 t.), statistika, HR jezik, WCAG izjava, AI hosting v SLO; zgodba/celoletnost/strategija/dostopnost already ✓
+- Poročilo uporabniku predstavljeno v klepetu (zahteve po razpisih, točkovna simulacija, prioritetni ukrepi)
