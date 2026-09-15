@@ -540,3 +540,25 @@ Stage Summary:
 - ElevenLabs: ključ veljaven a brez text_to_speech dovoljenja — uporabnik mora ustvariti nov ključ z TTS pravico (navodila dostavljena); do takrat veljajo obstoječe rezerve (z-ai → glas naprave), preverjene lokalno in pripravljene na produkciji
 - Glas/model po priporočilu: eleven_multilingual_v2 + Antoni (že v kodi, zamenjava brez kode prek env)
 - Ostalo programa: zamenjava ElevenLabs ključa (uporabnik) → živi preizkus govora na produkciji; HF_API_KEY še čaka
+
+---
+Task ID: 27
+Agent: Main agent (Z.ai Code)
+Task: Novi ElevenLabs žeton — preverba pravic, zagon govora lokalno + na produkciji (uporabnik: „preveri ce ima sedaj vse pravice kaj potrebujes in nadaljuj")
+
+Work Log:
+- Uporabnik priskrbel NOVI ELEVENLABS_API_KEY (sk_8945…): preverba pravic — text_to_speech ✅ (kritično), voices_read ✅ (21 prednastavljenih glasov), user_read ✗ (ni potreben — samo za branje naročnine/kvote)
+- Zanimivost: Antoni (ErXwobaYiN019PkySvjV) NI na seznamu /v1/voices (novejši skupini prednastavljenih), a njegov ID deluje nespremenjeno — test sinteze slovenščine: HTTP 200, 115 KB MP3 v 1,9 s
+- .env.local posodobljen z novim ključem (star sk_3c7a… zamenjan)
+- Lokalni preizkusi skozi /api/audio-guide: minute SL 561 KB (4,3 s) / cel vodnik 1 MB v 2 odseka (7,3 s) / minute EN 554 KB (4,0 s); glave pravilne (audio/mpeg, x-total-chunks, cache-control 24 h)
+- agent-browser lokalno: dialog zapisa → „Poslušaj avdio vodnik" → gumb „Ustavi predvajanje" (predvajanje teče), oba odseka 200, 0 napak v konzoli
+- Vercel: obstoječa env spremenljivka ELEVENLABS_API_KEY (id odKwBtBppYZXKTHL) PATCH-ana z novo vrednostjo (production/preview/development, encrypted) + nova produkcijska namestitev dpl_9Y8nt… → READY
+- Produkcijski preizkusi: domača 200; audio-guide minute SL 546 KB MP3 (7,2 s, hladna sinteza); minute EN 595 KB; drug zapis (zaseda-1941) 662 KB — VSI 200 z veljavnim MP3
+- agent-browser NA PRODUKCIJI: dialog zapisa Griblje — vas ob Kolpi → predvajanje avdio vodnika → gumb „Ustavi predvajanje", chunk 0+1 200, 0 napak strani
+- Rezultat: MUZEV GOVORI z glasom Antoni (eleven_multilingual_v2) — veriga ElevenLabs → z-ai → glas naprave je popolnoma oborožena; z-ai rezerva ostaja nevidna v ozadju
+
+Stage Summary:
+- Avdio vodnik deluje končno v vsem obsegu: lokalno + produkcija, SL + EN, minute + cel vodnik, več zapisov — sinteza 4–8 s (hladna), predvajanje iz predpomnilnika trenutek
+- Ključ: text_to_speech + voices_read zadostujeta; user_read ni potreben; glas/model po priporočilu ostajata Antoni + eleven_multilingual_v2 (zamenjava brez kode prek env)
+- Varčevanje s kreditom aktivno trojno: strežniški predpomnilnik 64 MB + brskalniški 24 h + omejitev hladnih sintez 30/5 min na IP
+- Ostalo programa: HF_API_KEY za POGOVOR vodnika še čaka (z-ai 429) — edina še odprta AI zmožnost
