@@ -35,6 +35,8 @@ model Exhibit {
   coordsApprox  Boolean  @default(false)
   featured      Boolean  @default(false)
   sortOrder     Int      @default(0)
+  /** Kurirani datum vključitve zapisa v zbirko (po vzoru DigitaltMuseum „registrert“). */
+  addedAt       DateTime?
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
   sources       Source[]

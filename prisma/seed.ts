@@ -40,6 +40,7 @@ async function main() {
         coordsApprox: ex.coordsApprox ?? false,
         featured: ex.featured ?? false,
         sortOrder: index,
+        addedAt: ex.addedAt ? new Date(ex.addedAt) : null,
         sources: {
           create: ex.sources.map((s, sIndex) => ({
             nameSi: s.nameSi,

@@ -48,6 +48,8 @@ export type ExhibitDTO = {
   coordsApprox: boolean;
   featured: boolean;
   sortOrder: number;
+  /** Kurirani datum vključitve v zbirko (ISO) — poganja znak »novo v zbirki«. */
+  addedAt: string | null;
   sources: SourceDTO[];
 };
 
