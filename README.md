@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 23/23 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 23/23 (povprečno 278) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 23/23 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 95 skupaj (povprečno 4,1) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 23/23 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 26/26 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 26/26 (povprečno 286) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 26/26 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 113 skupaj (povprečno 4,3) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 26/26 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -43,11 +43,11 @@ glasih — dve obstoječi zgodbi prepisani na ~300 besed, dve novi pripovedi
 razdekel Zgodbe pa tako na 6 zapisov na standardu globine; PR #22:
 nov zapis manjkajoče teme šolstva — **Vaška šola — iz tablic v svet** z avtentično
 fotografijo stavbe partizanske gimnazije v Črnomlju in žanrsko sliko Vaška šola
-(19. st., Narodni muzej Slovenije) med viri — zbirka 23 zapisov / 95 virov).
+(19. st., Narodni muzej Slovenije) med viri; PR #24: sklop **Pričevalci v kamnu** — zapisa o registrirani spominski dediščini vasi (spomenik padlim vaščanom, EŠD 19326, in zaseda 6. 9. 1941 na cesti Črnomelj–Griblje, EŠD 19324 — vojna zgodovina vasi pomaknjena tri leta nazaj), nov zapis **Griblje v številkah** (demografija: Griblach 1468 → 329 prebivalcev po SURS in Wikidata), dopolnitve griblje-vas (prva omemba 1468, Snojeva etimologija), sveti-vid (župnija Podzemelj, 18. stoletje, EŠD 2122, zvon 2008) in vaška šola (spomenik pred OŠ Loka) — zbirka 26 zapisov / 113 virov).
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 23 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 26 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — štirje kurirani tematski sprehodi skozi celotno zbirko
   (po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -58,7 +58,7 @@ fotografijo stavbe partizanske gimnazije v Črnomlju in žanrsko sliko Vaška š
   delovni list za A4
 - 🧾 **Citiranje** — oblikovan citat zapisa z datumom dostopa in gumbom
   »Kopiraj citat« (vzorec DigitaltMuseum *Siter dette objektet*)
-- 🗺️ **Zemljevid** — Leaflet + OSM, 11 točk (preverjene koordinate + približne, ločene
+- 🗺️ **Zemljevid** — Leaflet + OSM, 14 točk (preverjene koordinate + približne, ločene
   vizualno in z oznako »približno«)
 - 📖 **Zgodbe** — štiri pripovedi v človeških glasih (~300 besed, SLO+EN:
 zračni most marca 1945, reka meja, mlinščina kot vaška borza, žensko leto
@@ -76,7 +76,9 @@ načela in odprti razpis za pričevanja skupnosti
   Hyperlegible, mirni gibi, podčrtane povezave) — brez zunanjih prekrivnih gradnikov,
   po priporočilu AAM; nastavitve se shranijo v brskalnik in se sinhronizirajo med zavihki
 - 🔓 **Odprti podatki** — `/api/opendata`: manifest, celoten dump, schema.org JSON-LD,
-  licenca **CC BY-SA 4.0**, CORS glava — po vzoru odprtega API Nasjonalmuseeta (2018)
+  licenca **CC BY-SA 4.0**, CORS glava — po vzoru odprtega API Nasjonalmuseeta (2018);
+  trajne povezave **sameAs na Wikidata** (Q2531566 naselje, Q18515927 cerkev sv. Vida,
+  Q211046 Kolpa) po vzoru trajnih identifikatorjev DigitaltMuseum
 - 🏛️ **Muzejska iskrenost** — vsak zapis nosi stopnjo zanesljivosti, fotografije so
   avtentične in pripisane; kadar posnetek ni z Gribelj samega, je to izrecno navedeno
 - ❤️ **Moja zbirka** — shranjevanje zapisov brez računa (localStorage), vzorec
@@ -100,7 +102,7 @@ načela in odprti razpis za pričevanja skupnosti
 - 🕸️ **Poveži zbirko** — povezani zapisi v vsakem zapisu + pot med dvema zapisoma z
   utemeljenimi skoki (vzorec x Degrees of Separation, Google Arts & Culture),
   `/?path=<slugA>,<slugB>`
-- ⏱️ **Muzej v minuti** — enominutne zgodbe za vseh 23 zapisov s TTS in prepisom
+- ⏱️ **Muzej v minuti** — enominutne zgodbe za vseh 26 zapisov s TTS in prepisom
   (vzorec One Minute Wonders, Brighton & Hove Museums); dnevni izbor treh zgodb
 - 🍂 **Sezonska polica** — kurirani izbor zbirke po letnem času, samodejna rotacija
   glede na datum obiskovalca (vzorec »object of the month«, Saffron Walden Museum)
@@ -172,7 +174,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 23 zapisov, 95 virov, 6 zgodb, 5 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 26 zapisov, 113 virov, 6 zgodb, 5 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 

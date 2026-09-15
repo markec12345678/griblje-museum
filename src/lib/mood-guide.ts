@@ -51,7 +51,7 @@ export const MOOD_QUESTIONS: MoodQuestion[] = [
         labelSi: "Zgodovina na dotik",
         labelEn: "History within reach",
         categories: ["vojna", "kraj"],
-        keywords: ["vojna", "meja", "letališče", "parlament", "uskoki", "1944", "1945", "1991", "1526", "zgodov"],
+        keywords: ["vojna", "meja", "letališče", "parlament", "uskoki", "1944", "1945", "1991", "1468", "1526", "zgodov"],
       },
       {
         id: "delo",

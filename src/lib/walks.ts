@@ -162,16 +162,16 @@ export const WALKS: Walk[] = [
     titleSi: "Vas in njeni ljudje",
     titleEn: "The village and its people",
     descriptionSi:
-      "Od prve omembe 1526 do belih brez: kraj, njegov zvonik, njen najbolj znan sin in ptice, ki se vračajo.",
+      "Od prve omembe 1468 do belih brez: kraj, njegov zvonik, njen najbolj znan sin in ptice, ki se vračajo.",
     descriptionEn:
-      "From the first mention in 1526 to the white birches: the place, its steeple, its most famous son and the birds that return.",
+      "From the first mention in 1468 to the white birches: the place, its steeple, its most famous son and the birds that return.",
     stops: [
       {
         exhibitSlug: "griblje-vas",
         noteSi:
-          "Začenjamo, kjer se je pisna zgodba začela: 1526. Osrednja vas in zaselki — Goranja lokva, Rudna peč — ena skupnost ob Kolpi.",
+          "Začenjamo, kjer se je pisna zgodba začela: 1468. Osrednja vas in zaselki — Goranja lokva, Rudna peč — ena skupnost ob Kolpi.",
         noteEn:
-          "We begin where the written story began: 1526. The main village and its hamlets — Goranja lokva, Rudna peč — one community on the Kolpa.",
+          "We begin where the written story began: 1468. The main village and its hamlets — Goranja lokva, Rudna peč — one community on the Kolpa.",
       },
       {
         exhibitSlug: "sveti-vid",

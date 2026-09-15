@@ -36,9 +36,9 @@ export const MINUTE_STORIES: MinuteStory[] = [
   {
     slug: "griblje-vas",
     textSi:
-      "Leto je tisoč petsto šestindvajset. Na papirju, ki ga hrani deželni arhiv, se prvič pojavi ime Griblje. Razpotegnjena vas ob Kolpi, na samem jugu Bele krajine. Petsto let pozneje šteje okrog dvesto prebivalcev — cerkev, vaški ribnik, vinogradi in meja, ki je nikoli ni bila daleč. Če vas danes pelje cesta iz Črnomlja, vozite skozi pokrajino belih brez. In prav ta bela dežela je dala vasi ime in usodo. Griblje: vas, ki je muzej sama po sebi.",
+      "Leto je tisoč štiristo oseminšestdeset. Na listini, ki jo hrani arhiv, se prvič pojavi ime vasi: Griblach. Kasneje Briglach, Griblah, v urbarjih Grüble — ime, starejše od vsega, kar danes stoji v vasi. Petsto petdeset let pozneje šteje Griblje 329 prebivalcev — cerkev, ribnik, vinogradi in meja, ki nikoli ni bila daleč. Če vas danes pelje cesta iz Črnomlja, vozite skozi deželo belih brez. Griblje: vas, ki je muzej sama po sebi.",
     textEn:
-      "The year is 1526. On a page kept in the regional archive, the name Griblje appears for the very first time. A stretched-out village on the Kolpa, in the far south of Bela krajina. Five hundred years later it counts some two hundred souls — a church, a village pond, vineyards, and a border that was never far away. If you drive from Črnomelj today, you pass through a land of white birches — and that white land gave the village both its name and its fate. Griblje: a village that is a museum in itself.",
+      "The year is 1468. In a deed kept in the archive, the village's name appears for the very first time: Griblach. Later Briglach, Griblah, Grüble in the urbars — a name older than everything that stands in the village today. Five hundred and fifty years later Griblje counts 329 souls — a church, a pond, vineyards, and a border that was never far away. If you drive from Črnomelj today, you pass through a land of white birches. Griblje: a village that is a museum in itself.",
   },
   {
     slug: "sveti-vid",
@@ -176,9 +176,30 @@ export const MINUTE_STORIES: MinuteStory[] = [
   {
     slug: "vaska-sola",
     textSi:
-      "Leta 1869 je dunajski zakon naredil šolo za dolžnost vsakega otroka. V vasi je to pomenilo eno učilnico in enega učitelja: tablica, kreda, abecednik — in klopi, ki so ob žetvi stale prazne. Kdor je znal brati, je vaščanom prebral pisma in mandate iz Amerike. Bela krajina pa je šoli dodala svoje poglavje: med vojno, na svobodnem ozemlju, je v Črnomlju delovala partizanska gimnazija — stavba na sliki. Muzej išče razredne fotografije in imena učiteljev. Morda jih imate ravno vi doma.",
+      "Leta 1869 je dunajski zakon naredil šolo za dolžnost vsakega otroka. V vasi je to pomenilo eno učilnico in enega učitelja: tablica, kreda, abecednik — in klopi, ki so ob žetvi stale prazne. Kdor je znal brati, je vaščanom prebral pisma in mandate iz Amerike. Bela krajina pa je šoli dodala svoje poglavje: med vojno, na svobodnem ozemlju, je v Črnomlju delovala partizanska gimnazija — stavba na sliki. Pred vaško šolo OŠ Loka danes stoji spomenik trinajstim padlim. Muzej išče razredne fotografije in imena učiteljev. Morda jih imate ravno vi doma.",
     textEn:
-      "In 1869 a Viennese law made school the duty of every child. In the village that meant one classroom and one teacher: slate, chalk, primer — and benches that stood empty at harvest. Whoever could read the letters and money orders from America aloud for the neighbours. Bela krajina added its own chapter to the school: during the war, on free territory, a Partisan gymnasium worked in Črnomelj — the building in the picture. The museum is looking for class photographs and teachers' names. Perhaps you have them at home.",
+      "In 1869 a Viennese law made school the duty of every child. In the village that meant one classroom and one teacher: slate, chalk, primer — and benches that stood empty at harvest. Whoever could read the letters and money orders from America aloud for the neighbours. Bela krajina added its own chapter to the school: during the war, on free territory, a Partisan gymnasium worked in Črnomelj — the building in the picture. Before the village's school of OŠ Loka stands the memorial to the thirteen fallen today. The museum is looking for class photographs and teachers' names. Perhaps you have them at home.",
+  },
+  {
+    slug: "zaseda-1941",
+    textSi:
+      "6. september 1941, poleti, sredi dneva, cesta Črnomelj–Griblje. Štirje partizani iz taborišča na Židovcu napadejo iz zasede patruljo italijanske mejne policije, ki pelje hrano in strelivo za postojanko v Gribljah. Dva mrtva, trije ranjeni — eden pozneje umre. Vojna je v vas prišla s prvim strelom, tri leta pred zavezniškimi letali nad poljem. Leta 1960 so na kraju postavili kamen kiparja Jakoba Savinška; danes ga varuje register dediščine pod številko EŠD 19324. Imena borcev še iščemo — morda jih pomnite ravno vi.",
+    textEn:
+      "6 September 1941, in summer, in broad daylight, on the Črnomelj–Griblje road. Four Partisans from the camp at Židovec ambush a patrol of the Italian border police carrying food and ammunition for the post at Griblje. Two dead, three wounded — one dies later. The war came to the village with the first shot, three years before the Allied aircraft over the field. In 1960 a stone by the sculptor Jakob Savinšek was raised on the spot; today the heritage register keeps it under EŠD 19324. The fighters' names are still being sought — perhaps you remember them.",
+  },
+  {
+    slug: "spomenik-padlim",
+    textSi:
+      "Pred šolo v Gribljah stoji kamen s trinajstimi imeni. Enajst vaščanov je padlo kot partizani, dva sta umrla kot žrtvi fašističnega nasilja. Spomenik so odkrili vaščani — odbor Zveze borcev — 10. septembra 1961, šestnajst let po vojni, ko imena še niso bila vprašanje. Register dediščine ga vodi kot EŠD 19326. To je najkrajši seznam, ki ga ta muzej lahko objavi. Prepis imen s kamna in prvo domačo fotografijo še čakava — morda prav od vas.",
+    textEn:
+      "Before the school at Griblje stands a stone with thirteen names. Eleven villagers fell as Partisans, two died as victims of Fascist violence. The memorial was unveiled by the villagers themselves — the Veterans' Association board — on 10 September 1961, sixteen years after the war, when names were not yet a question. The heritage register keeps it as EŠD 19326. This is the shortest list this museum can ever publish. The transcription of the names and the first home photograph still wait — perhaps for you.",
+  },
+  {
+    slug: "griblje-v-stevilkah",
+    textSi:
+      "1468: Griblach. 1490: Briglach. 1593: Griblah. V urbarjih Grüble. Danes: 329 prebivalcev, tri celo pol kvadratnega kilometra, 153 metrov nad morjem, poštna številka 8332 Gradac. Popis 2020: 334 duš — 172 moških in 162 žensk. Ime? Jezikoslovci še razpravljajo: goba, gruda, brazda ali travnata strmina. Vas pa računa naprej — od prve črke v listini do zadnje številke statističnega urada. Aerofotografija tega zapisa drži vse to v enem edinem kadru.",
+    textEn:
+      "1468: Griblach. 1490: Briglach. 1593: Griblah. Grüble in the urbars. Today: 329 inhabitants, three and a half square kilometres, 153 metres above the sea, postal code 8332 Gradac. The 2020 census: 334 souls — 172 men and 162 women. The name? Linguists still debate: a mushroom, a clod, a furrow or a grassy slope. The village keeps counting — from the first letter of the deed to the statistical office's latest figure. This record's aerial photograph holds all of it in a single frame.",
   },
 ];
 

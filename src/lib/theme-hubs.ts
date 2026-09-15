@@ -31,9 +31,9 @@ export const THEME_HUBS: ThemeHub[] = [
     category: "kraj",
     startSlug: "griblje-vas",
     introSi:
-      "Griblje so razpotegnjena vas v občini Črnomelj, prvič izpričana leta 1526. Vsaka stavba, pot in priimek tu nosi sled stoletij — od cerkvenega hriba, ki drži vas skupaj, do domačij, ki so dale ime pokrajini.",
+      "Griblje so razpotegnjena vas v občini Črnomelj, prvič izpričana leta 1468. Vsaka stavba, pot in priimek tu nosi sled stoletij — od cerkvenega hriba, ki drži vas skupaj, do domačij, ki so dale ime pokrajini.",
     introEn:
-      "Griblje is a stretched-out village in the Črnomelj municipality, first recorded in 1526. Every building, path and family name carries a trace of centuries — from the church hill that holds the village together to the farmsteads that gave the region its name.",
+      "Griblje is a stretched-out village in the Črnomelj municipality, first recorded in 1468. Every building, path and family name carries a trace of centuries — from the church hill that holds the village together to the farmsteads that gave the region its name.",
     related: [
       {
         category: "kolpa",

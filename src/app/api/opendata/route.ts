@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { WIKIDATA_SAMEAS, wikidataUrlFor } from "@/lib/wikidata";
 
 export const dynamic = "force-dynamic";
 
@@ -41,6 +42,10 @@ export async function GET() {
       },
       geo: { "@type": "GeoCoordinates", latitude: 45.57246, longitude: 15.29257 },
       identifier: "mvg-2026",
+      sameAs: [
+        "https://www.wikidata.org/wiki/Q2531566",
+        "https://commons.wikimedia.org/wiki/Category:Griblje",
+      ],
     };
 
     const manifest = {
@@ -77,10 +82,19 @@ export async function GET() {
         { code: "UNVERIFIED", labelSi: "nepreverjeno", labelEn: "unverified" },
         { code: "TO_COLLECT", labelSi: "v zbiranju", labelEn: "to collect" },
       ],
+      linkedOpenData: {
+        noteSi:
+          "Trajne povezave (sameAs) na Wikidate — vzorec trajnih identifikatorjev, kakršne uporabljajo vodilni odprti muzeji (DigitaltMuseum).",
+        noteEn:
+          "Persistent links (sameAs) to Wikidata — the pattern of persistent identifiers used by leading open museums (DigitaltMuseum).",
+        providers: ["https://www.wikidata.org"],
+        exhibitsLinked: Object.keys(WIKIDATA_SAMEAS).length,
+      },
       jsonld,
       data: {
         exhibits: exhibits.map((ex) => ({
           slug: ex.slug,
+          sameAs: wikidataUrlFor(ex.slug),
           category: ex.category,
           title: { sl: ex.titleSi, en: ex.titleEn },
           period: { sl: ex.periodSi, en: ex.periodEn },

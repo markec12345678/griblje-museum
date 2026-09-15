@@ -21,7 +21,7 @@ type QuizQuestion = {
 
 /**
  * Muzejska uganka — 10 vprašanj, vsako vezano na dejstvo iz sejane zbirke
- * (prva omemba 1526, Kolpa, cerkev sv. Vida, letališče Krasinec 1945,
+ * (prva omemba 1468, Kolpa, cerkev sv. Vida, letališče Krasinec 1945,
  * malenca kot mlinarski jez, meja 1991, Niko Županič, letališče Otok,
  * SNOS v Črnomlju 1944, Uskoki). Preverjeno proti prisma/seed.ts.
  */
@@ -29,13 +29,13 @@ const QUIZ_QUESTIONS: QuizQuestion[] = [
   {
     questionSi: "V katerem letu so Griblje prvič izpričane v pisnih virih?",
     questionEn: "In which year was Griblje first recorded in written sources?",
-    answersSi: ["1426", "1526", "1626", "1726"],
-    answersEn: ["1426", "1526", "1626", "1726"],
+    answersSi: ["1428", "1468", "1526", "1568"],
+    answersEn: ["1428", "1468", "1526", "1568"],
     correctIndex: 1,
     explanationSi:
-      "Griblje so v pisnih virih prvič izpričane leta 1526 — v času, ko je bila Bela krajina stičišče habsburške dežele in osmanske vojne krajine.",
+      "Griblje so v pisnih virih prvič izpričane leta 1468 — kot Griblach; navedba 1526 se nanaša na prvo omembo cerkve sv. Vida. Takrat je bila Bela krajina stičišče habsburške dežele in osmanske vojne krajine.",
     explanationEn:
-      "Griblje is first recorded in written sources in 1526 — a time when Bela krajina was a meeting point of the Habsburg lands and the Ottoman military frontier.",
+      "Griblje is first recorded in written sources in 1468 — as Griblach; the 1526 date refers to the first mention of the church of St. Vitus. At that time Bela krajina was a meeting point of the Habsburg lands and the Ottoman military frontier.",
     exhibitSlug: "griblje-vas",
   },
   {
