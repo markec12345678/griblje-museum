@@ -71,9 +71,9 @@ type DossierExhibit = {
   sources: { nameSi: string; nameEn: string; sourceType: string; license: string }[];
 };
 
-/** Zgodbo v dosje vodniku damo do 2000 znakov — vodnik sme vedeti več
+/** Zgodbo v dosje vodniku damo do 3000 znakov — vodnik sme vedeti več
  *  kot etiketa, a manj kot celotno monografijo (varčevanje z žetoni). */
-const STORY_MAX_CHARS = 2000;
+const STORY_MAX_CHARS = 3000;
 const BIO_MAX_CHARS = 900;
 const MINUTE_MAX_CHARS = 700;
 
