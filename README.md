@@ -37,7 +37,10 @@ kraj → ljudje → dogodki → predmeti):
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
 nova zapisa manjkajočih tem — Anton Filak, prvak v oranju, in izseljenstvo —
-z avtentičnima slikama iz Wikimedije Commons).
+z avtentičnima slikama iz Wikimedije Commons; PR #21: pripovedi v človeških
+glasih — dve obstoječi zgodbi prepisani na ~300 besed, dve novi pripovedi
+(*Mlinščina — vaška borza in telefon*, *Žensko leto — od lana do platna*),
+razdekel Zgodbe pa tako na 6 zapisov na standardu globine).
 
 ## Funkcije / Features
 
@@ -54,7 +57,10 @@ z avtentičnima slikama iz Wikimedije Commons).
   »Kopiraj citat« (vzorec DigitaltMuseum *Siter dette objektet*)
 - 🗺️ **Zemljevid** — Leaflet + OSM, 11 točk (preverjene koordinate + približne, ločene
   vizualno in z oznako »približno«)
-- 📖 **Zgodbe** — pripovedi z iskrenim pozivom za pričevanja skupnosti
+- 📖 **Zgodbe** — štiri pripovedi v človeških glasih (~300 besed, SLO+EN:
+zračni most marca 1945, reka meja, mlinščina kot vaška borza, žensko leto
+od lana do platna) s plastmi odkritih vrzeli namesto izmišljenih oseb, kuratorska
+načela in odprti razpis za pričevanja skupnosti
 - 📅 **Dogodki** — program z notranjimi in zunanjimi dogodki
 - 🔎 **Enotno iskanje** — paletno okno (Ctrl+K ali `/`) po zapisih, zgodbah in
   dogodkih, neobčutljivo na diakritike — po vzoru DigitaltMuseum
@@ -163,7 +169,7 @@ z avtentičnima slikama iz Wikimedije Commons).
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 22 zapisov, 90 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 22 zapisov, 90 virov, 6 zgodb, 5 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
