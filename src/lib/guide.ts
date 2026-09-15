@@ -266,6 +266,9 @@ export async function askGuide(
   // vloge („system“), z-ai pa sprejema sistemski poziv kot prvo sporočilo
   // vloge „assistant“.
   providerErrorTrail.length = 0;
+  providerErrorTrail.push(
+    "env(" + Object.keys(process.env).filter((k) => /ROUTER|ELEVEN|HUGGING|^HF_|ZAI/i.test(k)).join(",") + ")",
+  );
   if (isOpenRouterChatConfigured()) {
     try {
       const raw = await openRouterChatComplete(
