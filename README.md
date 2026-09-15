@@ -193,9 +193,17 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
   Prisma odjemalec se zgenerira v `postinstall`.
 - **Umetna inteligenca (pogovor + govor)** — veriga ponudnikov, muzej ne
   umre, ko ena služba odpove:
+  - `OPENROUTER_API_KEY` (openrouter.ai, brezplačna veja `:free` — brez
+    kartice): pogovor z zbirko prek preizkušene verige brezplačnih modelov
+    (ling-3.0-flash-vl → ling-3.0-flash-sante → laguna-s-2.1 →
+    dots-3-note) z lepljivim modelom, izklopljenim notranjim razmišljanjem
+    (predreže odgovore) in prestopanjem ob napaki ponudnika; meje brezplačne
+    veje: ~20 zahtev/min, ~50/dan — nadaljnje preklopi poženejo spodnje
+    postaje verige;
   - `HF_API_KEY` (HuggingFace Inference Providers, brezplačni račun):
-    pogovor z zbirko prek odprtih modelov (Llama 3.3 70B → Qwen 2.5 72B →
-    Mistral NeMo → Llama 3.1 8B) z nadomestnimi modeli ob zasedenosti;
+    druga postaja pogovora prek odprtih modelov (Llama 3.3 70B →
+    Qwen 2.5 72B → Mistral NeMo → Llama 3.1 8B) z nadomestnimi modeli ob
+    zasedenosti;
   - `ELEVENLABS_API_KEY` (brezplačni načrt zadostuje): avdio vodnik z
     modelom `eleven_multilingual_v2`, ki slovenščino izgovarja dokumentarno
     (glasa po jeziku se nastavita z `ELEVENLABS_VOICE_SL/EN`);
@@ -225,7 +233,7 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
 | `POST /api/guestbook` | nov vpis — honeypot, hitrostna omejitev, samodejna moderacija |
 | `GET /api/memories?exhibit=` | spomini skupnosti ob enem zapisu (CORS `*`) |
 | `POST /api/memories` | nov spomin ob zapisu — enaka moderacija |
-| `POST /api/guide` | pogovor z zbirko — uzidani AI vodnik (z-ai-web-dev-sdk; `ZAI_CONFIG` na Vercelu) |
+| `POST /api/guide` | pogovor z zbirko — uzidani AI vodnik (veriga OpenRouter → HuggingFace → z-ai) |
 
 ### Trajnost skupnostnih prispevkov / Durability of community contributions
 
