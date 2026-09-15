@@ -4,6 +4,7 @@ import {
   askGuide,
   guideClientIp,
   guideRateLimited,
+  providerErrorTrail,
   type GuideMessage,
 } from "@/lib/guide";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
@@ -72,7 +73,9 @@ export async function POST(req: NextRequest) {
     const message = error instanceof Error ? error.message : String(error);
     // ZAČASNA DIAGNOSTIKA (odstraniti po razrešitvi): zadnja napaka verige
     // v glavi odgovora, da je vidna točno tam, kjer se pokaže.
-    const debugHeader = { "X-Guide-Debug": message.slice(0, 180) };
+    const debugHeader = {
+      "X-Guide-Debug": (providerErrorTrail.join(" || ") + " || končna: " + message).slice(0, 500),
+    };
     // Prehodna omejitev zgornjega API-ja — javimo kot 429 (počasi).
     if (/429|rate|too many/i.test(message)) {
       return NextResponse.json(
