@@ -1586,6 +1586,58 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "crni-moceril",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "do 1986",
+        yearLabelEn: "before 1986",
+        sortYear: 1986,
+        textSi:
+          "V kraškem podzemlju okolice Črnomlja že živi temna žival — znanost je še ne pozna, izviri pa občasno presenetijo z »ribico, ki ni bela«.",
+        textEn:
+          "In the karst underground around Črnomelj a dark animal already lives — science does not yet know it, and the springs now and then surprise with \"a fish that is not white\".",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "18. oktober 1986",
+        yearLabelEn: "18 October 1986",
+        sortYear: 1986.8,
+        textSi:
+          "Odkritje: raziskovalci Inštituta za raziskovanje krasa ob črpalnem preizkusu izvira Dobličice izvlečejo do takrat neznano temno človeško ribico.",
+        textEn:
+          "The discovery: researchers of the Karst Research Institute, at a pumping test on the Dobličica spring, draw out a dark olm unknown until then.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 4,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1986 → 1990",
+        yearLabelEn: "1986 → 1990",
+        sortYear: 1990,
+        textSi:
+          "Zoolog Boris Sket znanstveno opiše podvrsto Proteus anguinus parkelj: črnosiva koža, krajša in širša glava, normalno razvite oči.",
+        textEn:
+          "The zoologist Boris Sket scientifically describes the subspecies Proteus anguinus parkelj: black-grey skin, a shorter and broader head, normally developed eyes.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Izvir Jelševniščice v Jelševniku je edino najdišče na svetu z možnostjo opazovanja v naravi; podvrsta spada med najbolj ogrožene pri nas — njena usoda je čistost kraških vod.",
+        textEn:
+          "The Jelševniščica spring at Jelševnik is the only site in the world where it can be watched in nature; the subspecies ranks among our most endangered — its fate is the purity of the karst waters.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {
