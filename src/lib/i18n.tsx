@@ -114,11 +114,11 @@ export const ui = {
       announced: "Dostopnostne nastavitve so posodobljene.",
     },
     hero: {
-      kicker: "Bela krajina · občina Črnomelj · od 1526",
+      kicker: "Bela krajina · občina Črnomelj · od 1468",
       title1: "Vas kot",
       titleAccent: "muzej.",
       subtitle:
-        "Triindvajset zapisi, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
+        "Šestindvajset zapisi, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
       ctaCollection: "Razišči zbirko",
       ctaMap: "Odpri zemljevid",
       ctaGuide: "Vprašaj vodnika",
@@ -248,10 +248,10 @@ export const ui = {
     },
     timeline: {
       title: "Časovnica",
-      subtitle: "Pet stoletij vasi na eni poti — od prve omembe leta 1526 do danes.",
+      subtitle: "Pet in pol stoletja vasi na eni poti — od prve omembe leta 1468 do danes.",
       howTo: "Kako beremo datume: na časovnico rišemo samo leta, ki so zapisana v virih. Kjer vir poda le stoletje, zapis uvrstimo v obdobje, ne na posamično leto.",
       eras: {
-        s16: "16. stoletje — prva omemba",
+        s16: "15.–17. stoletje — prva omemba",
         s19: "19. stoletje — vaški vsakdan",
         s20: "20. stoletje — vojna nad vasjo",
         s21: "1991 → danes — meja in samostojnost",
@@ -985,11 +985,11 @@ export const ui = {
       announced: "Accessibility settings updated.",
     },
     hero: {
-      kicker: "Bela krajina · Municipality of Črnomelj · since 1526",
+      kicker: "Bela krajina · Municipality of Črnomelj · since 1468",
       title1: "A village as",
       titleAccent: "a museum.",
       subtitle:
-        "Twenty-three records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
+        "Twenty-six records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
       ctaCollection: "Explore the collection",
       ctaMap: "Open the map",
       ctaGuide: "Ask the guide",
@@ -1119,10 +1119,10 @@ export const ui = {
     },
     timeline: {
       title: "Timeline",
-      subtitle: "Five centuries of the village on a single path — from the first written record in 1526 to today.",
+      subtitle: "Five and a half centuries of the village on a single path — from the first written record in 1468 to today.",
       howTo: "How we read dates: only years attested in sources are drawn on the timeline. Where a source gives only a century, the record is placed in an era — never onto an invented year.",
       eras: {
-        s16: "16th century — first record",
+        s16: "15th–17th centuries — first records",
         s19: "19th century — village everyday life",
         s20: "20th century — war over the village",
         s21: "1991 → present — border and independence",

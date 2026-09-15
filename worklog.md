@@ -493,3 +493,26 @@ Stage Summary:
 - Analiza: po norveškem DigitaltMuseum standardu muzeju manjka 8 vrzeli — 3 vsebinske (1941–43, dediščina EŠD, demografija), 2 strukturni (Wikidata sameAs, zemljevid zbirke), 2 vsebinsko-dokumentacijski (etimologija, župnija/arhiv rodbin), 1 vizualna (zgodovinske fotografije)
 - Predlog naslednjega sklopa: „Pričevalci v kamnu" (novi zapisi spomenik-padlim + napad-1941, dopolnitve griblje-vas/sveti-vid/vaska-sola, nov zapis prebivalstvo, sliki Cabin under the Sun + Pond Griblje) + tehnični (Wikidata sameAs v JSON-LD, zemljevid zbirke brez API ključa)
 - Ostalo programa: ključa HF + ElevenLabs (uporabnik), issue #3, živi preizkus vodnika
+
+---
+Task ID: 25
+Agent: Main agent (Z.ai Code)
+Task: 6. sklop poglabljanja „Pričevalci v kamnu" — izvedba po analizi naloge 24 (uporabnik: „odlicno nadaljjuj")
+
+Work Log:
+- Slike (Commons, opisni UA): Parada karabinjerov v Ljubljani 1941 (javna last, 2145×1389 → 1600 px) za zaseda-1941; partizansko obeležje Trebenče (Doremo, CC BY-SA 3.0, → 1400 px) za spomenik-padlim; aerofotografija Pond Griblje (Alanorlic, CC BY-SA 4.0, 18104×6820 → 2000 px) za griblje-v-stevilkah — vse z izrecnimi opombami o ilustrativni naravi, kjer posnetek ni z Gribelj
+- 3 novi zapisi v museum-content.ts: (1) zaseda-1941 (vojna, DOCUMENTED, 289 besed) — april 1941 priključitev Ljubljanski pokrajini, postojanka mejne policije v vasi, zaseda 6. 9. 1941 (štirje borci z Židovca, 2+1 mrtvi patrulje), spominski kamen Jakoba Savinška 24. 7. 1960, EŠD 19324; (2) spomenik-padlim (vojna, DOCUMENTED, 259 besed) — 13 žrtev (11 padlih + 2 žrtvi fašizma), odkritje 10. 9. 1961, pred šolo OŠ Loka, EŠD 19326; (3) griblje-v-stevilkah (kraj, DOCUMENTED, 314 besed) — Griblach 1468 → 329 prebivalcev, Snoj, 3,45 km², popis 2020 (334; 172 M + 162 Ž)
+- Dopolnitve obstoječih: griblje-vas (perioda 1468 → danes, prvi odstavek preuranjen: Griblach 1468/Briglach 1490/Griblah 1593/Grüble, Snojeve štiri poti etimologije, studenci/loki/Goranja lokva/Rudna peč/brezov gozd 1848, demografska omemba; +2 vira); sveti-vid (nazadnje gradbeni podatki dokumentirani: 1526 listina, 18. stoletje, župnija Podzemelj z matičnimi knjigami, EŠD 2122, zvon 2008; status CORROBORATED → DOCUMENTED; +2 vira); vaska-sola (spomenik pred OŠ Loka + povezava; +1 vir)
+- Biografije (4/4/5 faz) + enominutne zgodbe za vseh 3 nove zapise; griblje-vas enominutna zgodba preuranjena (1468, 329)
+- Uskladitev števcev in datumov po kodi: hero „Šestindvajset zapisi"/„Twenty-six records"; kicker in timeline „od 1468"/„since 1468"; časovnica era s16 → „15.–17. stoletje"; subtitle „Pet in pol stoletja"; worksheet, theme-hubs, walks (3 mesta), mood-guide ključne besede +1468; muzejska uganka: pravilen odgovor 1468 z razlago razlike 1526 (cerkev)
+- Norveški standard — trajni identifikatorji: nov src/lib/wikidata.ts (Q2531566 naselje → griblje-vas + griblje-v-stevilkah, Q18515927 cerkev sv. Vida → sveti-vid, Q211046 Kolpa/Kupa → kolpa-reka); /api/opendata: sameAs po zapisu v dumpu, sameAs muzeja v JSON-LD, razdelek linkedOpenData
+- Zemljevid: ugotovitev, da Leaflet/OSM karta (pogled „karta") ŽE OBSTOJA (naloga 24 to ni vedela) — novi zapisi z koordinatami jo samo obogatijo: 11 → 14 točk (+ središče vasi)
+- Reseed (bun run prisma/seed.ts) — poanta iz prejšnjih sklopov: po reseedu OBAVEZNO ponovni zagon dev strežnika, sicer strežnik na stalem datotečnem ročaju streže stare podatke (tokrat: baza 26, API 23 → restart → 26)
+- Verifikacija: tsc 0 napak; eslint 0 napak; API 26 zapisov/113 virov/14 geolociranih; IIIF 26 canvasov; opendata sameAs (3 zapisi) + linkedOpenData.exhibitsLinked=4; agent-browser: dialog zaseda-1941 (naslov, zgodba, EŠD 19324, viri Kamra/Commons/Ljubljanska pokrajina, citat CC BY-SA), spomenik-padlim (trinajst imen, Trebenče opomba, odkrita vrzel), griblje-v-stevilkah SL+EN (Snoj, Boletus, 334/172/162, 3,45 km²); hero „Šestindvajset zapisi … od 1468"; zemljevid 15 markerjev; slike 200; mobilna 375 px brez prekoračitve; 0 novih napak (hidratacijska opozorila so znana, obstoječa)
+- README: tabela globine 26/26 + 113 virov + povprečno 286 besed; PR #24 v program poglabljanja; Zbirka 26; Muzej v minuti 26; db:seed 26/113; zemljevid 14 točk; odprti podatki + sameAs Wikidata
+
+Stage Summary:
+- Zbirka: 26 zapisov / 113 virov / povprečno 286 besed; vojna zgodovina vasi se začenja 1941 (ne več 1944); registrirana dediščina EŠD 2122/19324/19326 je v zbirki; demografija + etimologija + župnija dokumentirani; trajni Wikidata sameAs po norveškem vzoru
+- Odkritje: Leaflet karta je obstajala že prej (vrzel #4 iz analize 24 je bila napačna) — analize je treba preveriti proti kodi, ne samo proti spominu
+- Odkritje: po reseedu DEV strežnik potrebuje restart (stale SQLite ročaj) — dodano v proces
+- Ostalo programa: PR #24 + produkcija, ključa HF + ElevenLabs (uporabnik), issue #3, živi preizkus vodnika po okni kvote

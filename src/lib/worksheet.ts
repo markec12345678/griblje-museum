@@ -98,7 +98,7 @@ function buildWorksheetHtml(school: UiDict["school"], lang: Lang): string {
 <body>
 <header>
   <h1>${escapeHtml(ws.docTitle)}</h1>
-  <p>${escapeHtml(lang === "sl" ? "Bela krajina · občina Črnomelj · od 1526" : "Bela krajina · Municipality of Črnomelj · since 1526")}</p>
+  <p>${escapeHtml(lang === "sl" ? "Bela krajina · občina Črnomelj · od 1468" : "Bela krajina · Municipality of Črnomelj · since 1468")}</p>
 </header>
 ${fields}
 <p class="intro">${escapeHtml(ws.intro)}</p>
