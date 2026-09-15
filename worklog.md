@@ -717,3 +717,29 @@ Stage Summary:
 - Črni močeril: prva fotografija v zbirki (Arne Hodalič, CC BY-SA 3.0) — opomba o manjkajoči sliki pošteno prepisana v zgodbo o najdbi
 - Šola: prvi zapis z imeni trenutnih učiteljev in živim šolskim letom 2026/27
 - Ostalo programa: fotografija sekcije Torpedo (Commons nima — vabljen kot priča); ekokmetija Griblje 11a (sled je bila napačna — camping je v Škriljah)
+
+---
+Task ID: 33
+Agent: Main agent (Z.ai Code)
+Task: Raziskava razpisov za digitalne muzeje (Slovenija + EU) — analiza pripravljenosti TD Griblje in načrt za prijavo 2027 (uporabnik: „išči na spletu razpise za Slovenijo EU ministrstva za digitalne muzeje... analiziraj kaj imamo in kaj mora bit")
+
+Work Log:
+- Raziskava izvedena z z-ai CLI (web_search + page_reader; ~39 iskanj, ~15 prebranih strani) + agent-browser (gov.si iskanje, uradni-list, CNVOS, JSKD, si-hr.eu prek curl zaradi cert blokade); rezultati v /research-grants/*.json
+- KLJUČNI RAZPIS: MGTŠ „Vlaganja v razvoj celovitih turističnih produktov v obliki avtentičnih turističnih doživetij v/ob objektih kulturne dediščine v kohezijski regiji Vzhodna Slovenija" — objava 19. 12. 2025, rok 12. 2. 2026 (ZAKLJUČEN); ESRR 85:15, sofinanciranje do 100 %, 205.000–250.000 €/operacija; upravičenci: zavodi, občine, LTO, RRA in druge neprofitne organizacije z odgovornostjo razvoja turizma v ustanovnem aktu; 62 vlog, 28 izbranih = 6.774.521,90 €; izvede do 31. 1. 2028
+- Analiziran CEL seznam 28 izbranih (vir: gov.si novica 2. 9. 2026):med njimi 9 izrazito digitalnih projektov (Jelšingrad, Galič 360° Lendava, DIGI Castle Podsreda, grad Borl, Radegunda, DOMINIK Ptuj, Langerjeva vila Maribor, V tišino Laško, Digitalna gozdna dediščina) — NOBENO turistično društvo med prejemniki (občine/javni zavodi/RRA/knjižnica)
+- BELA KRAJINA: RIC Bela krajina dobil 249.781,31 € za „Župančičevo hišo doživetij" (Vinica); občini Črnomelj presedan: Interreg kulTura 2018 (1,316 M€) + prenova gradu Črnomelj (1,21 M€)
+- MK razpisi 2026 (letni cikel, pričakovani 2027 roki): JPR-NKD-2026 nesnovna dediščina 185.000 € (objava 27. 3., rok 30. 4.; pogoj: vpis v Register nesnovne dediščine); JCP-KKP-2026 kroženje kulturnih projektov 250.000 € (A 170k/B 80k; gostitelji: javni zavodi + NVO z ≥4-letnim javnim kulturnim programom; dediščina je upravičeno področje); JPR-PROG-2026-2029 štiriletni programi; zeleni prehod v kulturi 2026–2028 (do 150k/50k)
+- JSKD: PR-2026 projekti ljubiteljskih kulturnih dejavnosti 509.000 € (objava 20. 1., rok 23. 2.) + PROSTORI/OPREMA-2026 400.000 € (investicije v prostore/opremo ljubiteljske nevladne kulture) + Črnomelj-PrR (občinski programski razpis prek JSKD)
+- STO: Poziv „Edinstvena doživetja Slovenije 2026" (letni, marec–maj; doživetje ≥1 leto na trgu; zbirka 36 doživetij; prijava prek unique.slovenia.info) + razpis promocija/digitalizacija destinacij (samo vodilne destinacije — Črnomelj ne)
+- INTERREG VI-A SI-HR: projekti manjšega obsega — ODPRT javni razpis (neprekinjeno, sprememba 27. 7. 2026 — aktiven!); standardni projekti — klici za PN1/2/3 zaprti, november 2025 nova objava, stanje preveriti pri Skupnem sekretariatu (si-hr.mkrr@gov.si); kontakt za Griblje čezmejno (Kolpa/Žumberak)
+- EU: Ustvarjalna Evropa sodelovanja (letni, max 1 M€/70 %, rok ~maj 2027); EEA/Norway Grants — nov MoU s Slovenijo maj 2026, 50 M€ 2021–2028 (razpisi še pridejo); Common European Data Space for Cultural Heritage (DEP); projekt e-Kultura (MK, NOO, ~3,5 M€) zaključen avg. 2026 — portal eKultura.si + Culture.si + eJKI kot nova nacionalna infrastruktura
+- Standardi/primeri: Europeana — slovenski nacionalni agregator = NUK (DLib); EDM metapodatki, rightsstatements.org; Goriški muzej — DOORS digitalni inkubator (EU) + Arctur 3D, aplikacija „Obujamo spomine — puščamo sledi" (2023, trojezična); Mrežni muzej MG+MSUM (AV dediščina); NMS analiza digitalizacije muzejev (dec. 2024); TMS digitalne zbirke
+- ANALIZA SEDANJEGA MUZEJA: 30 zapisov, 5 sprehodov, ~120 virov z licencami, evidence-statusi, IIIF Presentation API 3.0 (!), /api/opendata (schema.org JSON-LD + CC BY-SA 4.0 + Wikidata sameAs), i18n SL/EN, AI vodnik, TTS avdio vodnik, dostopnostne nastavitve, PWA, sitemap/robots — tehnično raven A po večini evropskih meril
+- VRZELI ugotovljene: (pravne) ustanovni akt TD z opredelitvijo razvoja turizma, status/eJR/SI-PASS, finance za 15 % sofinanciranja in predfinanciranje; (vsebinske) 3D/AR vsebine (vsi nagrajeni projekti!), fizična zbirka/lokacija, sodelovanje občine/RIC/HR partnerja; (tehnične) statistika obiska za poročila, OAI-PMH/EDM izvoz za Europeana, hrvaščina za čezmejnost, načrt dolgoročne hrambe; (organizacijske) CNVOS svetovanje, izdelava doživetja ≥1 leto za STO zbirko
+- Poročilo uporabniku predstavljeno v klepetu (6 poglavij: razpisi, benchmark, kaj imamo, vrzeli, kako mora biti narejen, koledar sept. 2026→2027)
+
+Stage Summary:
+- Ugotovitev št. 1: letos (2026) so vsi relevantni razpisi res mimo; najbližja živa priložnost = Interreg SI-HR projekti manjšega obsega (odprto) + priprave na letni cikel jan–maj 2027
+- Ugotovitev št. 2: veliki razpisi (MGTŠ 205–250k) so dosegljivi samo v konzorciju (občina/RIC kot prijavitelj, TD kot partner) — med 28 prejemniki ni bilo nobenega društva
+- Ugotovitev št. 3: muzej tehnično že izpolnjuje večino standardov (IIIF, opendata, CC, i18n) — manjka 3D, statistika, OAI-PMH/EDM in fizična komponenta
+- Ključni dokumenti za nadaljnje delo: research-grants/*.json (s01–s39, p-*.json), sihr-*.html

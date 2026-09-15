@@ -1,0 +1,29 @@
+{
+  "code": 200,
+  "data": {
+    "description": "",
+    "external": {},
+    "html": "<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /razpisi/projektni-razpis/ was not found on this server.</p>\n\n</body></html>",
+    "httpStatus": 404,
+    "httpStatusText": "Not Found",
+    "metadata": {},
+    "title": "404 Not Found",
+    "url": "https://www.jskd.si/razpisi/projektni-razpis/",
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 57,
+      "tokens": 57
+    },
+    "warning": "Target URL returned error 404: Not Found"
+  },
+  "meta": {
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 57,
+      "tokens": 57
+    }
+  },
+  "status": 20000
+}
