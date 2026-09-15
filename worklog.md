@@ -642,3 +642,27 @@ Work Log:
 Stage Summary:
 - Jubilejno leto 2026 je ŽIVO na produkciji: 28 zapisov / 128 virov, znak in filter »novo v zbirki«, avdio vodnik govori novi zapis, vodnik pozna novo vsebino (ko kvota dovoljuje)
 - Kvota OpenRouter free (50/dan) se ponastavi ob 00:00 UTC; priporočilo uporabniku ostaja: enkratni nakup 10 USD kredita → 1000 zahtev/dan
+
+---
+Task ID: 30
+Agent: Main agent (Z.ai Code)
+Task: Vodnik pod pritiskom kvote: predpomnilnik odgovorov, ločevanje dnevnih/minutnih 429, točna ura obnove + razrešitev vprašanja o modelih mimo-2.5/bick-picle (uporabnik: „odlično nadaljuj")
+
+Work Log:
+- PREIZKUS KLJUČA OPENROUTER (uporabnikovo vprašanje iz te seje): ključ veljaven (free tier, brez limita kredita); dnevna kvota :free modelov (50/dan) je bila OB 17:43 UTC ŽE izčrpana (X-RateLimit-Remaining: 0, reset 00:00 UTC = 02:00 po ljubljanskem) — porabil nekdo drug (produkcija/lastnik), moji klici zavrnjeni; /key kaže usage_daily 0, ker ta šteje KREDIT, ne število brezplačnih zahtev
+- ODGOVOR NA „mimo 2.5": xiaomi/mimo-v2.5 in mimo-v2.5-pro OBSTAJATA na OpenRouterju, a sta PLAČLIVA ($0,14/$0,28 oz. $0,435/$0,87 na M žetonov). Preizkus na brezplačnem računu: z izklopljenim reasoningom odgovori v dobri slovenščini (vendar brez dosjeja izmišlja: PGD „1928" namesto 1927), račun pa ima le ~0,0001 USD startnega kredita (429/402 „can only afford N tokens") → NEPrimno za brezplačno vejo; primerljivo bi postalo šele z nakupom 10 USD (~4500 vodnikovih odgovorov)
+- ODGOVOR NA „bick picle": v celotnem katalogu (ID-ji in imena, ~400 modelov) NI zadetka za mimo-»pickle«/»bick« — najverjetneje zmotno zapomnjeno ime; obstoječa veriga ling-3.0 ostaja
+- RAZREŠITEV SKRITI ZA 429: stara koda je napako „free-models-per-MINUTE" (20/min, prehodna) enačila z DNEVNO izčrpanostjo → popravljeno: samo „free-models-per-day" je usodna; minutna meja gre po verigi naprej (prej bi lažno ubila pogovor za ves dan)
+- NOVA MODUL guide-cache.ts: LRU predpomnilnik za PRAVA vprašanja pogovora (brez zgodovine) — normalizacija (male črke, brez diakritike č→c, ločila v presledke), ključ jezik:normalizirano, 24 h TTL, max 120 vnosov; večturni pogovori se NE predpomnijo (odvisni od poteka)
+- guide.ts: askGuide preurejena (hitra pot pred dosjejem — zadetek ne dotakne niti baze), ponudniška veriga izvlečena v askProviders(), odgovor se shrani za naslednjega obiskovalca; glava modula pošteno opisuje izjemo o predpomnjenju
+- POT /api/guide: nova glava X-Guide-Cache (hit|miss) + resetAt (ISO) v odgovoru quota-exhausted; openrouter-llm.ts: WeakMap priloži resetAt napaki (X-RateLimit-Reset iz telesa — PODSTATEN HROŠČ: metadata je pod error.metadata.headers, ne na korenu; popravljeno po živem testu)
+- UI guide-dialog.tsx + i18n (SL+EN): quotaReset „Prosti pogovor se obnovi ob {time}." (ura v coni in jeziku brskalnika), zasebnostna opomba pošteno povedana o anonimnem dnevno-dolgem predpomnilniku najpogostejših vprašanj
+- ZAHAJRITI z-ai na produkcijo: .z-ai-config ne obstaja kot datoteka (SDK deluje le znotraj peskovnika), žetona ni mogoče prenesti → produkcija ostaja OpenRouter(+HF)+predpomnilnik; Vercel žeton iz seje je neveljaven (invalidToken) → namestitev prek git push (samodejno)
+- VERIFIKACIJA: tsc 0 napak, eslint 0; restart dev po pravilu; curl zaporedje: 1. vprašanje miss (openrouter 429 → zai odgovori 3,3 s, dnevnik kaže „obnovitev ob 2026-09-16T00:00:00.000Z") → isto vprašanje HIT v 22 ms (providers=cache) → „kje ležijo Griblje" (velike/male, diakritika) HIT (isti ključ) → „kje lezi griblje" (druga beseda!) pravilno miss → večturni pogovor pravilno mimo predpomnilnika; neposreden preizkus modula: openRouterQuotaOf vrne resetAt, Ljubljana 02:00
+- Brskalnik (agent-browser): dialog odprt prek Ctrl+G gumba, klik starterja „Kako je vas živela ob Kolpi?" → živ slovenski odgovor o mlinih/malenci/Kolpi z 2 navedkoma (gumba odpreta zapisa), zasebnostna opomba z besedilom o predpomnilniku, 0 napak v konzoli
+
+Stage Summary:
+- Zmogljivost vodnika na dan izčrpane kvote: prva vprašanja si delijo odgovore (22 ms namesto 3 s in 0 porabljenih zahtev) — učinek raste s številom obiskovalcev, predpomnilnik pa streže TUDI ko je kvota pri 0
+- Minutna 429 ne ubija več pogovora za ves dan; dnevna pa obiskovalcu pove točno uro obnove (v njegovi coni)
+- mimo-2.5: plačljiv, neustrezen brez kredita; „bick picle" ne obstaja — obstoječa izbira modelov ostaja
+- Priporočilo uporabniku ostaja: enkratni nakup 10 USD na OpenRouter → 1000 brezplačnih zahtev/dan (≈20× več)

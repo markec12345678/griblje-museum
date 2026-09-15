@@ -6,8 +6,11 @@
  * (»dosje«), ki ga strežnik sestavi iz iste baze, ki živi za ostalim muzejem.
  * Kar ni v dosjeju, vodnik odkrito prizna — muzej ne izmišljuje zgodovine.
  *
- * Verige odgovorov se NE shranjujejo: zgodovino pošlje brskalnik z vsako
- * zahtevo nazaj, strežnik pa ne hrani ničesar razen omejitvenih števcev.
+ * Zasebnost: pogovorov NE shranjujemo — zgodovino pošlje brskalnik z vsako
+ * zahtevo nazaj. IZJEMA je prvo vprašanje pogovora (brez zgodovine, brez
+ * naslova IP): njegov odgovor se anonimno predpomni do 24 ur (glej
+ * guide-cache.ts), ker so si vprašanja obiskovalcev presenetljivo podobna
+ * in ker je dnevna kvota brezplačnega modela majhna (~50 zahtev).
  */
 
 import { db } from "@/lib/db";
@@ -20,6 +23,12 @@ import {
   openRouterChatComplete,
   isOpenRouterChatConfigured,
 } from "@/lib/openrouter-llm";
+import {
+  guideCacheGet,
+  guideCacheKey,
+  guideCacheSet,
+  guideCacheSize,
+} from "@/lib/guide-cache";
 
 export type GuideLang = "sl" | "en";
 
@@ -253,40 +262,75 @@ export function parseCites(
 
 /* --- Klic modela ------------------------------------------------------- */
 
+export type GuideAnswer = {
+  answer: string;
+  cites: GuideCite[];
+  /** true, če je odgovor prišel iz predpomnilnika (ni šel h modelu). */
+  cached: boolean;
+};
+
 export async function askGuide(
   lang: GuideLang,
   history: GuideMessage[]
-): Promise<{ answer: string; cites: GuideCite[] }> {
-  const { text, exhibits } = await getDossier(lang);
+): Promise<GuideAnswer> {
   providerTrail.length = 0;
+
+  // Hitra pot: prvo vprašanje pogovora (brez zgodovine) ima morda že
+  // predpomnjen odgovor — ne meče sredstev niti na bazo niti na kvoto.
+  const firstQuestion =
+    history.length === 1 && history[0].role === "user"
+      ? history[0].content
+      : null;
+  const cacheKey = firstQuestion ? guideCacheKey(lang, firstQuestion) : null;
+  if (cacheKey) {
+    const cached = guideCacheGet(cacheKey);
+    if (cached) {
+      providerTrail.push("cache");
+      return { answer: cached.answer, cites: cached.cites, cached: true };
+    }
+  }
+
+  const { text, exhibits } = await getDossier(lang);
 
   // Zgodovino skrajšamo na zadnjih GUIDE_LIMITS.history sporočil —
   // starejša vprašanja ne nosijo več konteksta, dosje pa vedno ostane.
   const trimmed = history.slice(-GUIDE_LIMITS.history);
   const system = systemPrompt(lang, text);
 
-  // Ponudniška veriga (prvi z veljavnim ključem zmore): OpenRouter
-  // (brezplačni katalog, ključ sk-or-v1-…) → HuggingFace (hf_…) → z-ai SDK.
-  // OpenAI-kompatibilni ponudniki (OpenRouter, HF) uporabljajo standardne
-  // vloge („system“), z-ai pa sprejema sistemski poziv kot prvo sporočilo
-  // vloge „assistant“.
-  // OPOMBA: z-ai odjemalec se inicializira LENOBNO (globoko v rezervni
-  // veji) — zgolj na Vercelu .z-ai-config ne obstaja, njegova napaka pa
-  // ne sme ovirati zgornjih postaj verige.
+  const raw = await askProviders(system, trimmed);
+  const parsed = parseCites(raw, exhibits);
+  // Prvo vprašanje in njegov odgovor shranimo za naslednjega obiskovalca.
+  if (cacheKey) guideCacheSet(cacheKey, parsed.answer, parsed.cites);
+  return { ...parsed, cached: false };
+}
+
+/**
+ * Ponudniška veriga (prvi z veljavnim ključem zmore): OpenRouter
+ * (brezplačni katalog, ključ sk-or-v1-…) → HuggingFace (hf_…) → z-ai SDK.
+ * OpenAI-kompatibilni ponudniki (OpenRouter, HF) uporabljajo standardne
+ * vloge („system“), z-ai pa sprejema sistemski poziv kot prvo sporočilo
+ * vloge „assistant“.
+ * OPOMBA: z-ai odjemalec se inicializira LENOBNO (globoko v rezervni
+ * veji) — zgolj na Vercelu .z-ai-config ne obstaja, njegova napaka pa
+ * ne sme ovirati zgornjih postaj verige.
+ */
+async function askProviders(
+  system: string,
+  trimmed: GuideMessage[]
+): Promise<string> {
   let openRouterQuotaError: Error | null = null;
   if (isOpenRouterChatConfigured()) {
     providerTrail.push("openrouter");
     try {
-      const raw = await openRouterChatComplete(
+      // 800 žetonov: odgovor ~120 besed + navedki [[slug]] na koncu —
+      // pri 500 se je zgodbno bogati odgovor rezal sredi stavka.
+      return await openRouterChatComplete(
         [
           { role: "system", content: system },
           ...trimmed,
         ],
-        // 800 žetonov: odgovor ~120 besed + navedki [[slug]] na koncu —
-        // pri 500 se je zgodbno bogati odgovor rezal sredi stavka.
         { maxTokens: 800 },
       );
-      return parseCites(raw, exhibits);
     } catch (error) {
       // Dnevna meja brezplačne veje (~50 zahtev) ali zaseden ponudnik —
       // pademo na naslednjo postajo verige in razlog zabeležimo.
@@ -304,11 +348,10 @@ export async function askGuide(
   if (isHfChatConfigured()) {
     providerTrail.push("hf");
     try {
-      const raw = await hfChatComplete([
+      return await hfChatComplete([
         { role: "system", content: system },
         ...trimmed,
       ]);
-      return parseCites(raw, exhibits);
     } catch (error) {
       // HF kredit lahko občasno zmanjka ali je žeton napačen — takrat
       // pademo na obstoječi z-ai kanal in razlog zabeležimo v dnevnik.
@@ -349,7 +392,7 @@ export async function askGuide(
           throw new Error("Model je vrnil prazen odgovor");
         }
 
-        return parseCites(raw, exhibits);
+        return raw;
       } catch (error) {
         lastError = error;
         const msg = error instanceof Error ? error.message : String(error);
