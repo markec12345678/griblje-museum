@@ -15,6 +15,7 @@ export const WIKIDATA_SAMEAS: Record<string, string> = {
   "griblje-vas": "Q2531566",
   "griblje-v-stevilkah": "Q2531566",
   "sveti-vid": "Q18515927",
+  "petstoletnica-2026": "Q18515927",
   "kolpa-reka": "Q211046",
 };
 

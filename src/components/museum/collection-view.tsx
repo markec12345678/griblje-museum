@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { CheckCircle2, Network, Search, SlidersHorizontal, X } from "lucide-react";
+import { CheckCircle2, Network, Search, SlidersHorizontal, Sparkles, X } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { normalize } from "@/lib/normalize";
 import { useVisited } from "@/lib/visit-tracker";
@@ -41,6 +41,16 @@ const EVIDENCE_ORDER: EvidenceStatus[] = [
   "TO_COLLECT",
 ];
 
+/** Okno oznake »novo v zbirki«: 60 dni od kuriranega datuma vključitve
+ *  (po vzoru DigitaltMuseum „New content: 7/30 days“ — prilagojeno ritmu
+ *  vaškega muzeja, kjer zapisi prihajajo po raziskovalnih akcijah). */
+const NEW_WINDOW_MS = 60 * 24 * 60 * 60 * 1000;
+
+function isRecentAddition(exhibit: ExhibitDTO): boolean {
+  if (!exhibit.addedAt) return false;
+  return Date.now() - new Date(exhibit.addedAt).getTime() < NEW_WINDOW_MS;
+}
+
 export function CollectionView({
   exhibits,
   onOpenExhibit,
@@ -60,6 +70,12 @@ export function CollectionView({
   const [query, setQuery] = React.useState("");
   const [category, setCategory] = React.useState<ExhibitCategory | "vse">("vse");
   const [evidence, setEvidence] = React.useState<EvidenceStatus | "vse">("vse");
+  const [newOnly, setNewOnly] = React.useState(false);
+
+  const hasNewRecords = React.useMemo(
+    () => exhibits.some(isRecentAddition),
+    [exhibits]
+  );
 
   const filtered = React.useMemo(() => {
     // Enaka normalizacija kot strežniško iskanje (src/lib/normalize.ts):
@@ -68,6 +84,7 @@ export function CollectionView({
     return exhibits.filter((ex) => {
       const matchesCategory = category === "vse" || ex.category === category;
       const matchesEvidence = evidence === "vse" || ex.evidenceStatus === evidence;
+      const matchesNew = !newOnly || isRecentAddition(ex);
       const haystack = normalize(
         [
           ex.titleSi,
@@ -79,16 +96,18 @@ export function CollectionView({
         ].join(" ")
       );
       const matchesQuery = !needle || haystack.includes(needle);
-      return matchesCategory && matchesEvidence && matchesQuery;
+      return matchesCategory && matchesEvidence && matchesNew && matchesQuery;
     });
-  }, [exhibits, query, category, evidence]);
+  }, [exhibits, query, category, evidence, newOnly]);
 
-  const hasFilters = query !== "" || category !== "vse" || evidence !== "vse";
+  const hasFilters =
+    query !== "" || category !== "vse" || evidence !== "vse" || newOnly;
 
   const reset = () => {
     setQuery("");
     setCategory("vse");
     setEvidence("vse");
+    setNewOnly(false);
   };
 
   return (
@@ -232,6 +251,21 @@ export function CollectionView({
             {t.categories[key]}
           </button>
         ))}
+        {hasNewRecords && (
+          <button
+            type="button"
+            onClick={() => setNewOnly((value) => !value)}
+            aria-pressed={newOnly}
+            className={`inline-flex min-h-11 items-center rounded-full border px-4 text-sm font-medium transition-colors ${
+              newOnly
+                ? "border-primary bg-primary text-primary-foreground"
+                : "border-primary/40 bg-primary/5 text-primary hover:border-primary/60"
+            }`}
+          >
+            <Sparkles className="mr-1.5 h-4 w-4" aria-hidden="true" />
+            {t.collection.newOnly}
+          </button>
+        )}
       </div>
 
       {/* Števec + počišči */}
@@ -278,14 +312,21 @@ export function CollectionView({
                     {t.categories[exhibit.category]}
                   </Badge>
                 </span>
-                {visited.has(exhibit.slug) && (
-                  <span className="absolute right-3 top-3">
+                <span className="absolute right-3 top-3 flex items-center gap-1.5">
+                  {isRecentAddition(exhibit) && (
+                    <Badge className="gap-1 border-primary/30 bg-primary text-primary-foreground shadow-sm">
+                      <Sparkles className="h-4 w-4" aria-hidden="true" />
+                      <span className="sr-only">{t.collection.newBadgeSr}</span>
+                      {t.collection.newBadge}
+                    </Badge>
+                  )}
+                  {visited.has(exhibit.slug) && (
                     <Badge className="gap-1 border-primary/30 bg-background/85 text-primary backdrop-blur-sm">
                       <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
                       <span className="sr-only">{t.collector.visitedSr}</span>
                     </Badge>
-                  </span>
-                )}
+                  )}
+                </span>
                 {exhibit.imageCredit && (
                   <p className="absolute bottom-2 right-3 max-w-[75%] truncate text-right text-[10px] leading-tight text-white/80 drop-shadow-sm">
                     {exhibit.imageCredit}

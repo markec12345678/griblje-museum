@@ -590,3 +590,39 @@ Stage Summary:
 - Odprt in popravljen skriti produkcijski hrošč: nedejavna lenobna inicializacija z-ai je od 1. dne preprečevala VSEM ponudnikom (tudi staremu HF), da bi se na Vercelu sploh poskusili — vodnik zdaj tam res deluje
 - Dnevna meja 50/dan je practical omejitev: enkratni 10 USD nakup kredita na openrouter.ai (enkrat za vselej) dvigne na 1000/dan — priporočilo uporabniku; kvota se sicer ponastavi vsako polnoč UTC
 - Ostalo programa: HF_API_KEY (uporabnik, neobvezno — OpenRouter pokriva), morebitni kredit na OpenRouter, živi produkcijski preizkus pogovora po ponastavitvi kvote
+
+---
+Task ID: 29
+Agent: Main agent (Z.ai Code)
+Task: Raziskava novih virov o Gribljah + razvoj: jubilejno leto 2026 v zbirki, funkcija »novo v zbirki« (uporabnik: „odlicno nadaljuj raziskuj razvijaj")
+
+Work Log:
+- Stanje: dev :3000 teče, main = 50f63cf (dnevnik 28); OpenRouter kvota ob preverbi izčrpana (0/50, reset 00:00 UTC) — a pozneje v seji se je kljub temu odzval (vodnik odgovoril!) → kvota očitno razpoložljiva vsaj deloma; živi test na produkciji po namestitvi uspešen
+- SPLETNA RAZISKAVA (web_search + page_reader + Wikipedijin/Commons API, ~18 poizvedb):
+  - Odkritje #1: LETO 2026 = JUBILEJNO LETO GRIBELJ — 500 let od prve pisne omembe cerkve sv. Vida (1526); slovesnost 21. 6. 2026 ob Vidovskem žegnjanju (maša msgr. Andrej Glavan, somaševal župnik Peter Miroslavič, zbor Podzemelj, učenci šole)
+  - Odkritje #2: dve publikaciji ob jubileju — knjižica „Cerkev sv. Vida v Gribljah – Memento ob 500 letnici prve omembe v pisnih virih" (pobuda Romana Husič, strokovno delo dr. Janeza Weiss, oblikovanje Mojca Črnič mlajša, čtivo Alojzija Štruclja) + soizdajatelja PGD Griblje 1927 in Mestna muzejska zbirka Črnomelj
+  - Odkritje #3: obnova cerkve zaključena in blagoslovljena (avgust 2026, gradbeni odbor pod predsedstvom Antona Filaka!); novo parkirišče + mrliška vežica (občina 600 m² ~18.000 EUR + donacija rojaka dr. Franca Brinca)
+  - Odkritje #4: ZVON 1998 — zaobljuba Antona Filaka ob rojstvu sina → akcija z donacijami vaščanov in izseljencev iz Avstralije/Amerike → 700-kilogramski zvon Feralit + obnova fasade/strehe/stopnišča/elektrifikacije, blagoslov nadškofa Alojzija Šuštarja (»cela vas je dihala kot ena duša")
+  - Odkritje #5: mežnarska družina Šimec (Jože + Ivana, 1978–1998, ročno zvonjenje 3× dnevno, lipe okoli cerkve; danes mežnarica Ana Križan); predsednik PGD Darjot Piškurič pomagal organizirati jubilej
+  - Odkritje #6: PGD Griblje ustanovljeno 1927 (uradna FB stran + poslovni imenik; naslov doma Griblje 35B) — 100-letnica 2027!
+  - Odkritje #7: 150-letnica rojstva Nika Županiča 1. 12. 2026 (drugi jubilej istega leta); Županič po SL Wikipediji ohranil najstarejše slike vasi (Vavpotič + Maksim Gaspari)
+  - Odkritje #8: sosednji Butoraj praznoval isto leto svojo cerkev sv. Marka (prva omemba prav tako 1526, popis cerkvenih dragocenosti župnika Ivana Helda)
+  - Odkritje #9: kopališče Griblje ob Kolpi z živim merilnikom temperature (reka-kolpa.si); razrešitev protislovja prve omembe vasi: 1468 Griblach (jezikoslovna literatura/EN Wiki) ≠ 1526 (napaka v SL Wiki članku o cerkvi) — naša EN različica je imela napačnih 1526, popravljeno
+  - Viri s polnimi URL: crnomelj.si novice (23. 6. 2026), moja-dolenjska.si (26. 6. 2026 — ugibana povezava zadela!, najboljši prerez slovesnosti), slovenskenovice.delo.si (13. 8. 2026 — obnova + zvon 1998 + Šimeci), sl.wikipedia Cerkev sv. Vida, Q18515927, instagram objava občine, reka-kolpa.si
+- ANALIZA VRZELI DigitaltMuseum: časovnico, karto, AI-vodnik, i18n že imamo; relevantna preostala vrzel = izpostavljanje novih pridobitev (»New content 7/30 dni«) → izvedeno kot kurirani addedAt + znak + filter
+- RAZVOJ — VSEBINA: NOV zapis petstoletnica-2026 (kraj, DOCUMENTED, featured, slika cerkve, 5 virov, lat/lng, dodan za sveti-vid) + NOV zapis pgd-griblje-1927 (kraj, CORROBORATED, brez svobodne fotografije → hero-povratna + iskren zapis o vrzeli, 4 viri, dodan za vaško šolo) = 28 zapisov
+- Posodobitve zapisov: sveti-vid (zgodba zvona 1998 + jubilej 2026; +2 vira), niko-zupanic (Gaspari + 150-letnica; +2 vira), anton-filak (zaobljuba 1998 + gradbeni odbor; +1 vir), griblje-vas (EN popravek 1468; ime vira), kolpa-reka (kopališče Griblje; +1 vir)
+- Biografije predmetov: sveti-vid prenovljena (1526 → 18. stol. → 1914–18 → 1998 → 2008 → 2026) + novi petstoletnica-2026 (5 faz) + pgd-griblje-1927 (4 faze) = 28; nov dogodek: 150 let od rojstva Županiča (1. 12. 2026, muzej odpira spominski zapis)
+- RAZVOJ — FUNKCIJA: Prisma addedAt DateTime? + seed + ExhibitDTO + /api/exhibits (kurirano, preživi reseede — DB default ne bi); collection-view: znak „Novo" na karticah (60-dnevno okno, Sparkles, flex z obiskanim znakom) + čip filter „Novo v zbirki" (aria-pressed, samo če obstajajo novi) + reset; i18n: newOnly/newBadge/newBadgeSr SL+EN, vodnik 26→28 zapisov; Wikidata sameAs: petstoletnica-2026 → Q18515927
+- Nauk: dev strežnik po spremembi API kode streže staro pot (route modul) — po vsaki spremembe serializacije + resedu RESTART (pravilo iz naloge 26 potrjeno)
+- VERIFIKACIJA: tsc 0, eslint 0; agent-browser: zbirka (2 novi kartici z znakom Novo + čip), filter „Novo v zbirki" → samo 2 zapisa + Počisti, dialog petstoletnica (Glavan/Memento/Weiss/Brinc/Piškuri v besedilu, 5 virov), časovnica (mejnik 2026 po popravku oznake obdobja; PGD v 20. stol.), dogodki (150 let Županič), EN vmesnik (1468 Griblach popravljen, „New to the collection"), mobilni 390px vse deluje, 0 napak
+- AVDIO: /api/audio-guide?slug=petstoletnica-2026 → 1,23 MB MP3 v 8,8 s (hladna sinteza, ElevenLabs)
+- VODNIK: /api/guide na vprašanje o letu 2026 → popoln slovenski odgovor O NOVEM ZAPISU z navedkoma [[petstoletnica-2026]] + [[niko-zupanic]] (x-guide-providers: openrouter,zai) — nova vsebina samodejno vstopila v dosje
+- Git: veja + squash PR → main; Vercel namestitev + produkcijska preverba (spodaj)
+
+Stage Summary:
+- Zbirka: 28 zapisov / 128 virov (+2 zapisa, +15 virov) — jubilejno leto 2026 dokumentirano v vsem obsegu (slovesnost, publikacije, obnova, donator, zvoni, mežnarji, gasilci, Županič 150)
+- Nova funkcija po vzoru DigitaltMuseum: kurirani »novo v zbirki« (znak + filter, 60 dni, preživi reseede)
+- Popravljeni jezikiovni/časovni nedoslednosti (EN 1468, ime vira, obdobje jubileja)
+- Vodnik dokazano odgovarja o novi vsebini z navedki; kvota OpenRouter deluje (vsaj delno) že med sejo
+- Ostalo programa: produkcijska namestitev + preverba; morebitni nakup 10 USD kredita za 1000 zahtev/dan ostaja priporočilo

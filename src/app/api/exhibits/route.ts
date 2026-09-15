@@ -43,6 +43,7 @@ export async function GET(request: Request) {
       coordsApprox: ex.coordsApprox,
       featured: ex.featured,
       sortOrder: ex.sortOrder,
+      addedAt: ex.addedAt ? ex.addedAt.toISOString() : null,
       sources: ex.sources.map<SourceDTO>((s) => ({
         id: s.id,
         nameSi: s.nameSi,

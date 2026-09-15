@@ -222,13 +222,27 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
     phases: [
       {
         stage: "nastanek",
-        yearLabelSi: "neznano",
-        yearLabelEn: "unknown",
+        yearLabelSi: "1526",
+        yearLabelEn: "1526",
+        sortYear: 1526,
         textSi:
-          "Kdaj in kako je cerkev sv. Vida zrasla na hribu nad vasjo, arhiv za zdaj ne pokaže — gradbeno zgodovino še iščemo.",
+          "Predhodnica cerkve se prvič zapiše v pisne vire — leto, ki ga danes nosi vaški jubilej.",
         textEn:
-          "When and how the church of St. Vitus grew on the hill above the village, the archive does not yet show — its construction history is still being sought.",
-        evidenceStatus: "TO_COLLECT",
+          "The church's predecessor enters the written record for the first time — the year the village jubilee now carries.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 4,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "18. stoletje",
+        yearLabelEn: "18th century",
+        sortYear: 1750,
+        textSi:
+          "Sedanja stavba dobi baročno podobo — silhueta, ki jo pozna vsaka generacija Gribeljčanov.",
+        textEn:
+          "The present building takes its Baroque shape — the silhouette every generation of Griblje has known.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 4,
       },
       {
         stage: "zivljenje",
@@ -241,26 +255,179 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         evidenceStatus: "TRADITION",
       },
       {
-        stage: "digitalizacija",
-        yearLabelSi: "2010-ta",
-        yearLabelEn: "2010s",
-        sortYear: 2010,
+        stage: "prica",
+        yearLabelSi: "1914 → 1918",
+        yearLabelEn: "1914 → 1918",
+        sortYear: 1914,
         textSi:
-          "Fotografija cerkve (avtor: Eleassar) na Wikimedia Commons izpriča obstoj in lego stavbe.",
+          "Glavni zvon izgine v prvi svetovni vojni — vojna si prisvoji tudi glas vasi.",
         textEn:
-          "A photograph of the church (author: Eleassar) on Wikimedia Commons attests the building's existence and position.",
+          "The main bell disappears into the First World War — the war takes even the village's voice.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 5,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1998",
+        yearLabelEn: "1998",
+        sortYear: 1998,
+        textSi:
+          "Zaobljuba Antona Filaka ob rojstvu sina sproži akcijo: 700-kilogramski zvon livarne Feralit, obnova fasade, strehe in stopnišča, blagoslov nadškofa Šuštarja.",
+        textEn:
+          "Anton Filak's vow at the birth of his son launches the action: a 700-kilogram bell from the Feralit foundry, the renewal of facade, roof and staircase, the blessing of Archbishop Šuštar.",
         evidenceStatus: "DOCUMENTED",
-        sourceIndex: 0,
+        sourceIndex: 5,
+      },
+      {
+        stage: "digitalizacija",
+        yearLabelSi: "2008",
+        yearLabelEn: "2008",
+        sortYear: 2008,
+        textSi:
+          "Vaška spominska knjiga zabeleži blagoslovitev in posvetitev zvona; isto desetletje cerkev izpriča še fotografija na Wikimedia Commons (avtor: Eleassar).",
+        textEn:
+          "The village memorial book records the blessing and consecration of the bell; the same decade a photograph on Wikimedia Commons (author: Eleassar) attests the church anew.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Petsto let prve omembe: maša msgr. Glavana ob Vidovskem žegnjanju, obnova stavbe, knjižica Memento in novo parkirišče ob mrliški vežici.",
+        textEn:
+          "Five hundred years of the first mention: msgr. Glavan's mass at the Vidovo žegnjanje, the building's renovation, the Memento booklet and the new parking place by the funeral chapel.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 5,
       },
       {
         stage: "danes",
         yearLabelSi: "danes",
         yearLabelEn: "today",
         textSi:
-          "Zapis nosi oznako »preverjeno« izključno za obstoj in lego; ko bo arhivski vir najden, se bo časovnica dopolnila.",
+          "Cerkev je registrirana dediščina (EŠD 2122); notranja oprema in vizitacijski zapisi še čakajo na arhiv — časovnica se bo dopolnila.",
         textEn:
-          "The record carries the »corroborated« mark strictly for existence and position; when an archival source is found, this timeline will be amended.",
+          "The church is registered heritage (EŠD 2122); the interior furnishings and visitation records still await the archive — this timeline will be amended.",
         evidenceStatus: "CORROBORATED",
+      },
+    ],
+  },
+  {
+    slug: "petstoletnica-2026",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1526",
+        yearLabelEn: "1526",
+        sortYear: 1526,
+        textSi:
+          "Izvor jubileja: cerkev sv. Vida se prvič zapiše v listine.",
+        textEn:
+          "The origin of the jubilee: the church of St. Vitus enters the documents for the first time.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "21. junij 2026",
+        yearLabelEn: "21 June 2026",
+        sortYear: 2026.5,
+        textSi:
+          "Vidovsko žegnjanje: maša msgr. Andreja Glavana in župnika Petra Miroslaviča, zbor Podzemelj, učenci šole, predaja novega parkirišča.",
+        textEn:
+          "The Vidovo žegnjanje: mass by msgr. Andrej Glavan and parish priest Peter Miroslavič, the Podzemelj choir, the schoolchildren, the handing-over of the new parking place.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Knjižica Memento: pobuda Romane Husič, zgodovinsko delo dr. Janeza Weissa, oblikovanje Mojce Črnič mlajše, čtivo Alojzija Štruclja.",
+        textEn:
+          "The Memento booklet: initiated by Romana Husič, historical work by dr. Janez Weiss, design by Mojca Črnič mlajša, a companion text by Alojzij Štrucelj.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "avgust 2026",
+        yearLabelEn: "August 2026",
+        sortYear: 2026.7,
+        textSi:
+          "Blagoslov obnovljene cerkve: zaključek del, ki ga je vodil gradbeni odbor pod predsedstvom Antona Filaka; isto poletje praznuje tudi Butoraj svojo cerkev sv. Marka.",
+        textEn:
+          "The blessing of the renovated church: the completion of works led by the construction committee under Anton Filak; the same summer Butoraj celebrates its church of St. Mark too.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "1. december 2026",
+        yearLabelEn: "1 December 2026",
+        sortYear: 2026.92,
+        textSi:
+          "Pred vrati: 150 let od rojstva Nika Županiča — drugi gribeljski jubilej istega leta; leto pozneje še stoletnica PGD Griblje.",
+        textEn:
+          "At the door: 150 years since the birth of Niko Županič — the second Griblje jubilee of the same year; a year later, the centenary of the Griblje fire brigade.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "pgd-griblje-1927",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1927",
+        yearLabelEn: "1927",
+        sortYear: 1927,
+        textSi:
+          "Ustanovitev prostovoljnega gasilskega društva — po samoizjavi društva; ustanovni zapis še čaka na arhiv.",
+        textEn:
+          "The founding of the volunteer fire brigade — by the society's own account; the founding record still awaits an archive.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "20. stoletje",
+        yearLabelEn: "20th century",
+        sortYear: 1950,
+        textSi:
+          "Gasilski dom kot druga dvorana vasi: vaje, dražbe, veselice in humanitarni zagon ob vsaki sili.",
+        textEn:
+          "The fire station as the village's second hall: drills, auctions, festivities and a humanitarian surge at every emergency.",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Predsednik Darjot Piškurič pomaga organizirati petstoletnico cerkve; ob izdaji knjižice Memento se zapiše ime PGD Griblje 1927.",
+        textEn:
+          "President Darjot Piškurič helps organise the church's 500th anniversary; with the publication of the Memento booklet the name PGD Griblje 1927 is written in.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2027",
+        yearLabelEn: "2027",
+        sortYear: 2027,
+        textSi:
+          "Pred stoletnico: muzej išče fotografije doma, imena načelnikov in ustanovitvene zapise.",
+        textEn:
+          "Before the centenary: the museum is looking for photographs of the hall, the commanders' names and the founding records.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 1,
       },
     ],
   },
