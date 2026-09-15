@@ -375,3 +375,28 @@ Stage Summary:
 - Produkcija: https://griblje-museum.vercel.app na f391de8; PR #16–#19 vsi spojeni
 - Ključna odločitev: novi zapisi samo z avtentičnimi, licenčno preverjenimi slikami (Commons API) in s plastmi TO_COLLECT namesto domnev — muzejska iskrenost
 - Ostalo od programa poglabljanja: (1) prepis 4 pripovedi v človeške glase, (2) živi preizkus vodnika po okni z-ai kvote, (3) morebitni novi zapisi (šola, ženske) po novih virih
+
+---
+Task ID: 19
+Agent: Main agent (Z.ai Code)
+Task: 4. sklop poglabljanja — pripovedi v človeških glasih + higiena skladišča
+
+Work Log:
+- Stanje ob nadaljevanju: PR #16–#20 spojeni (main 0898247; 22 zapisov, 90 virov, povprečno 276 besed); odkrit in odstranjen nesrečen lokalni commit 83a6b03 (1075 datotek predloge skills/ s UUID-sporočilom — NE bil potisnjen; git reset na origin/main, delovno kopija ohranjena)
+- Higiena: /skills/ dodan v .gitignore (vrstica /skills/.zscripts/dev.pid je bila neveljavna vzorca — tako je git add . lahko ujel celotno predlogo)
+- Kvota z-ai ob preveritvi ŠE VEDNO 429 (klepet prek SDK takoj zavrnjen) — živi preizkus vodnika ostaja odložen
+- 4. sklop programa poglabljanja (razdelek Zgodbe, prej 2 pripovedi × ~90 besed):
+  1. „Zadnji poleti marca 1945" prepisana v človeški glas (319 besed SLO / 383 EN): prizor poljane, zračni most od Otoka septembra 1944 (1.473 ranjencev, 87 letalcev), zadnji vzleti s Krasinca, dve fotografiji posneti prav pri Gribljah (prva: Franjo Veselko 1905–1977, javna last), Dakota + Vranov let danes; iskren poziv za imena
+  2. „Reka, ki ločuje in spaja" prepisana (256/305): skupni mlin/malenca/poroke čez reko, 1991 spremenila se teža črte, 2015 ograja (Hythlodot), 2023 schengen; „najstarejša meja tu ni kamen. Je voda."
+  3. NOVA „Mlinščina — vaška borza in telefon" (296/351, DOCUMENTED): vrsta vozov kot kronika leta, žimaln, mirovník/tekač, mlinščina kot plačilo + zaupanje, urbarji (Dol, Radenci, Pobrežje, Krasinec), arheologija Lahinje 14. stol., malenca kot zaključek
+  4. NOVA „Žensko leto — od lana do platna" (300/352, TRADITION): dva koledarja vasi, lan od setve do predenja, platno kot denar/dota, prehod v šiviljstvo; fotografija Frana Vesela 1920 kot dokument; poziv za statve in imena gazdaric
+- Vsa dejstva pripovedi izvirajo iz že dokumentiranih zapisov zbirke (letališče, meja, mlini, tkalstvo) — brez izmišljenih imen; NACELO in RAZPIS ostajata institucionalna
+- Reseed (db/custom.db): 6 zgodb v bazi (4 ZGODBA + NACELO + RAZPIS), vse pripovedi 256–383 besed
+- Okoljske težave in rešitve: zastareli SQLite ročaj po reseedu → restart dev; API cache max-age=60; peskovnik ubija strežnik med dolgimi spanji/med klici → zagon z (setsid nohup bun run dev >> dev.log 2>&1 < /dev/null &) vztraja čez klice; „exec: next: not found" v čistem bash kontekstu (next ni na PATH)
+- Verifikacija: tsc 0; eslint 0; /api/stories = 6 zapisov; agent-browser: Zgodbe izrišejo vseh 6 naslovov, kartica Mlinščine s polnim besedilom + oznako „dokumentirano", EN preklop pravilen (exchange and telephone), mobilna 375 px brez prekoračitve, 0 napak strani, konzola čista (samo DevTools info + HMR)
+- README: razdelek Zgodbe prepisan (štiri pripovedi v človeških glasih), program poglabljanja + PR #21, db:seed 6 zgodb
+
+Stage Summary:
+- Razdekel Zgodbe na standard globine: 4 pripovedi × 256–383 besed (SLO+EN) namesto 2 × ~90; ženska zgodovina Bele krajine sedaj ima svojo pripoved
+- Higiena skladišča: /skills/ trajno ignoriran, nesrečen commit odstranjen pred pushem
+- Ostalo programa: (1) živi preizkus vodnika po okni z-ai kvote, (2) morebitni novi zapisi (šola) po novih virih, (3) production deploy PR #21

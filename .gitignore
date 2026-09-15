@@ -50,7 +50,8 @@ test
 prompt
 
 server.log
-# Skills directory
-/skills/.zscripts/dev.pid
+# Skills directory (sandbox template — never part of the museum repo)
+/skills/
+.zscripts/dev.pid
 tool-results/
 .zscripts/dev.pid
