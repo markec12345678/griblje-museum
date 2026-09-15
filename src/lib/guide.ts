@@ -273,6 +273,7 @@ export async function askGuide(
   // OPOMBA: z-ai odjemalec se inicializira LENOBNO (globoko v rezervni
   // veji) — zgolj na Vercelu .z-ai-config ne obstaja, njegova napaka pa
   // ne sme ovirati zgornjih postaj verige.
+  let openRouterQuotaError: Error | null = null;
   if (isOpenRouterChatConfigured()) {
     providerTrail.push("openrouter");
     try {
@@ -289,9 +290,13 @@ export async function askGuide(
     } catch (error) {
       // Dnevna meja brezplačne veje (~50 zahtev) ali zaseden ponudnik —
       // pademo na naslednjo postajo verige in razlog zabeležimo.
+      const msg = error instanceof Error ? error.message : String(error);
+      if (/dnevna kvota presežena/.test(msg)) {
+        openRouterQuotaError = error instanceof Error ? error : new Error(msg);
+      }
       console.warn(
         "Vodnik: OpenRouter ni uspel, nadaljevanje po verigi:",
-        error instanceof Error ? error.message : String(error),
+        msg,
       );
     }
   }
@@ -323,33 +328,41 @@ export async function askGuide(
   // brez .z-ai-config njegova konstrukcija vrže napako — zgornji ponudniki
   // (OpenRouter/HF) je ne smejo čutiti.
   providerTrail.push("zai");
-  const zai = await getZAI();
+  try {
+    const zai = await getZAI();
 
-  // Ena ponovitev za prehodno omejitev zgornjega API-ja (429) —
-  // kratka pavza, da val zahtev na isti račun mine.
-  let lastError: unknown = null;
-  for (let attempt = 0; attempt < 2; attempt++) {
-    if (attempt > 0) {
-      await new Promise((resolve) => setTimeout(resolve, 3000));
-    }
-    try {
-      const completion = await zai.chat.completions.create({
-        messages,
-        thinking: { type: "disabled" },
-      });
-
-      const raw = completion.choices[0]?.message?.content;
-      if (!raw || !raw.trim()) {
-        throw new Error("Model je vrnil prazen odgovor");
+    // Ena ponovitev za prehodno omejitev zgornjega API-ja (429) —
+    // kratka pavza, da val zahtev na isti račun mine.
+    let lastError: unknown = null;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      if (attempt > 0) {
+        await new Promise((resolve) => setTimeout(resolve, 3000));
       }
+      try {
+        const completion = await zai.chat.completions.create({
+          messages,
+          thinking: { type: "disabled" },
+        });
 
-      return parseCites(raw, exhibits);
-    } catch (error) {
-      lastError = error;
-      const msg = error instanceof Error ? error.message : String(error);
-      // Prehodna omejitev — poskusi še enkrat; vse ostalo takoj navzgor.
-      if (!/429|rate|too many/i.test(msg)) throw error;
+        const raw = completion.choices[0]?.message?.content;
+        if (!raw || !raw.trim()) {
+          throw new Error("Model je vrnil prazen odgovor");
+        }
+
+        return parseCites(raw, exhibits);
+      } catch (error) {
+        lastError = error;
+        const msg = error instanceof Error ? error.message : String(error);
+        // Prehodna omejitev — poskusi še enkrat; vse ostalo takoj navzgor.
+        if (!/429|rate|too many/i.test(msg)) throw error;
+      }
     }
+    throw lastError;
+  } catch (error) {
+    // Če je OpenRouter padel na dnevni kvoti in tudi z-ai ne zmore,
+    // je za obiskovalca pomembnejše sporočilo o KVI (poskusite jutri)
+    // kot tehnična napaka zadnje postaje.
+    if (openRouterQuotaError) throw openRouterQuotaError;
+    throw error;
   }
-  throw lastError;
 }
