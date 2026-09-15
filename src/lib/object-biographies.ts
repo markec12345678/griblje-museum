@@ -1249,6 +1249,176 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "zaseda-1941",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "6. 9. 1941",
+        yearLabelEn: "6 September 1941",
+        sortYear: 1941,
+        textSi:
+          "Na cesti Črnomelj–Griblje štirje borci belokranjske partizanske skupine z Židovca iz zasede napadejo patruljo italijanske mejne policije na poti za postojanko v Gribljah.",
+        textEn:
+          "On the Črnomelj–Griblje road four fighters of the Bela krajina Partisan group from Židovec ambush a patrol of the Italian border police on its way to the post at Griblje.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1941–1943",
+        yearLabelEn: "1941–1943",
+        sortYear: 1942,
+        textSi:
+          "V vasi deluje italijanska postojanka mejne policije; Bela krajina je del priključene Ljubljanske pokrajine. Imena štirih borcev in podrobnosti dneva čakajo na arhiv in spomin domačinov.",
+        textEn:
+          "An Italian border-police post operates in the village; Bela krajina belongs to the annexed Province of Ljubljana. The names of the four fighters and the day's details await the archive and the villagers' memory.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "24. 7. 1960",
+        yearLabelEn: "24 July 1960",
+        sortYear: 1960,
+        textSi:
+          "Na kraju spopada postavijo spominski kamen po načrtu kiparja Jakoba Savinška.",
+        textEn:
+          "A memorial stone, designed by the sculptor Jakob Savinšek, is raised on the site of the fighting.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes (EŠD 19324)",
+        yearLabelEn: "today (EŠD 19324)",
+        sortYear: 2026,
+        textSi:
+          "Zavod za varstvo kulturne dediščine Slovenije vodi obeležje v registru nepremične kulturne dediščine; muzej išče imena borcev in pričevanja o postojanki.",
+        textEn:
+          "The Institute for the Protection of Cultural Heritage keeps the monument in the register of immovable heritage; the museum seeks the fighters' names and testimonies about the post.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "spomenik-padlim",
+    phases: [
+      {
+        stage: "prica",
+        yearLabelSi: "1941–1945",
+        yearLabelEn: "1941–1945",
+        sortYear: 1945,
+        textSi:
+          "Vojna iz vasi vzame trinajst ljudi: enajst padlih borcev in dve žrtvi fašističnega nasilja.",
+        textEn:
+          "The war takes thirteen people from the village: eleven fallen fighters and two victims of Fascist violence.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "10. 9. 1961",
+        yearLabelEn: "10 September 1961",
+        sortYear: 1961,
+        textSi:
+          "Krajevni odbor Zveze borcev Griblje odkrije spomenik pred podružnično šolo OŠ Loka v Gribljah.",
+        textEn:
+          "The Griblje local board of the Veterans' Association unveils the memorial before the branch school of OŠ Loka at Griblje.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "EŠD 19326",
+        yearLabelEn: "EŠD 19326",
+        sortYear: 2018,
+        textSi:
+          "Popis Knjižnice Črnomelj in register ZVKDS zabeležita spomenik kot nepremično kulturno dediščino.",
+        textEn:
+          "The Črnomelj Library survey and the ZVKDS register record the memorial as immovable cultural heritage.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Muzej čaka domačinsko fotografijo kamna in prepis trinajstih imen — najtežji seznam, ki ga bo kdaj objavil.",
+        textEn:
+          "The museum awaits a home photograph of the stone and the transcription of the thirteen names — the heaviest list it will ever publish.",
+        evidenceStatus: "TO_COLLECT",
+      },
+    ],
+  },
+  {
+    slug: "griblje-v-stevilkah",
+    phases: [
+      {
+        stage: "prica",
+        yearLabelSi: "1468",
+        yearLabelEn: "1468",
+        sortYear: 1468,
+        textSi:
+          "Prva pisna omemba: listina zapiše vas kot Griblach.",
+        textEn:
+          "The first written mention: a deed writes the village as Griblach.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1490 / 1593",
+        yearLabelEn: "1490 / 1593",
+        sortYear: 1490,
+        textSi:
+          "Kasnejše oblike Briglach in Griblah; v urbarjih in na najstarejšem zemljevidu Grüble.",
+        textEn:
+          "The later forms Briglach and Griblah; Grüble in the urbars and on the oldest map.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2009",
+        yearLabelEn: "2009",
+        sortYear: 2009,
+        textSi:
+          "Snojev etimološki slovar zapiše izvor imena kot odprto vprašanje s štirimi možnostmi (grib, griba, griblja, griva).",
+        textEn:
+          "Snoj's etymological dictionary records the origin of the name as an open question with four possibilities (grib, griba, griblja, griva).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2020",
+        yearLabelEn: "2020",
+        sortYear: 2020,
+        textSi:
+          "Popis: 334 prebivalcev — 172 moških in 162 žensk.",
+        textEn:
+          "Census: 334 inhabitants — 172 men and 162 women.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Letna statistika: 329 prebivalcev; vas meri 3,45 km² na 153,4 m nad morjem. Zapis se bo osvežil z vsakim novim popisom.",
+        textEn:
+          "Annual statistics: 329 inhabitants; the village measures 3.45 km² at 153.4 m above the sea. The record will be refreshed with every new census.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {
