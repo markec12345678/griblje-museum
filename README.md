@@ -19,6 +19,24 @@ Ta projekt dokazuje, da lahko majhna vas digitalno doseže muzejski standard:
 dvojezična vsebina, dostopnost, javna izjava o dostopnosti, odprti podatki,
 raziskovalna disciplína z izrecnimi statusi dokazilosti.
 
+## Vsebina z globino / Content depth
+
+Zbirka sledi referenčnemu standardu globine, izpeljanemu po praksah Rijksmuseuma
+(Collection Online), London Transport Museum (baza znanja AI vodnika iz kuratorskih
+virov), Smithsoniana (rudarjenje metapodatkov) in DigitaltMuseum (gostota povezav
+kraj → ljudje → dogodki → predmeti):
+
+| Plast zapisa | Standard | Stanje |
+|---|---|---|
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 20/20 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 20/20 (povprečno 274) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 20/20 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 81 skupaj (povprečno 4,1) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 20/20 |
+
+Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
+PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis).
+
 ## Funkcije / Features
 
 - 🖼️ **Zbirka** — 20 razstav z dokazilnimi statusi (preverjeno / avtentično gradivo /
@@ -119,7 +137,7 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   *O muzeju*
 - 🤖 **Pogovor z zbirko** — uzidani AI vodnik: obiskovalec zastavlja vprašanja,
   model pa odgovarja IZKLJUČNO iz kuriranih zapisov (dosje iz iste baze — po
-  jeziku, z zgodbami do 2000 znakov, življenjepisi predmetov in enominutnimi
+  jeziku, z zgodbami do 3000 znakov, življenjepisi predmetov in enominutnimi
   zgodbami);
   vsak odgovor se konča z navedki, ki so gumbi na prave zapise; odkrito
   »tega ni v zbirki« namesto izmišljevanja; predlagana vprašanja, bližnjica
@@ -143,7 +161,7 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 68 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 81 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
