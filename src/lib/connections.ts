@@ -11,7 +11,7 @@ import { THEME_HUBS } from "@/lib/theme-hubs";
  * kar pri velikih muzejih ostaja skrito v modelu.
  *
  * Sorodni vzorec: »related objects« v zbirkah British Museuma in
- * Rijksmuseuma; pri 20 zapisih namesto modela uporabimo pravila.
+ * Rijksmuseuma; pri 30 zapisih namesto modela uporabimo pravila.
  */
 
 export type ConnectionKind = "category" | "period" | "source" | "place" | "curated";

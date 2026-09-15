@@ -6,7 +6,7 @@ import type { ExhibitCategory } from "@/lib/types";
  * (uvod, najbolj obiskani zapisi, zgodbe, sorodne teme).
  *
  * Za razliko od Rijksmuseuma, ki jih generira iz linked-open-data grafa
- * z milijoni predmetov, so tukaj ročno kurirane — pri 20 zapisih je
+ * z milijoni predmetov, so tukaj ročno kurirane — pri 30 zapisih je
  * pozornost dragocena dobrina.
  */
 
