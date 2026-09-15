@@ -115,9 +115,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The most recognisable building in the centre of Griblje: the church of St. Vitus, the village's religious and local anchor.",
     storySi:
-      "V središču naselja stoji cerkev sv. Vida, posvečena zavetniku, ki ga ljudski koledar pomni s pregovorom »od sv. Vida naprej sonce više vzhaja«. Stavba je versko središče krajevne skupnosti in najizrazitejša silhueta vasi — njena podoba je dokumentirana na fotografijah Wikimedia Commons.\n\nMuzej izrecno ločuje dokumentirano od nedokumentiranega: gradbena zgodovina cerkve (datacija, starejše faz) zaenkrat še čaka na arhivski vir. Ko bo najden, bo zapis dopolnjen in označen kot dokumentiran; do takrat je zapis oznake »preverjeno« vezan izključno na obstoj in lego stavbe.",
+      "V središču naselja stoji cerkev sv. Vida, posvečena zavetniku, ki ga ljudski koledar pomni s pregovorom »od sv. Vida naprej sonce više vzhaja«. Stavba je versko središče krajevne skupnosti in najizrazitejša silhueta vasi — njena podoba je dokumentirana na fotografijah Wikimedia Commons.\n\nSveti Vid je zgodnjekrščanski mučenik iz časa Dioklecijanovih preganov; cerkev ga šteje med štirinajst svetih pomočnikov, ki naj bi pomagali v telesni stiski — posebej pri epilepsiji, ki so jo nekdaj imenovali »svetovidov ples«. Njegov praznik pada na 15. junij, takrat, ko je sonce visoko in ko se je v teh krajih začenjala žetev žit. Zavetnika sonca in poletja na hribu nad njivami kmečka vas ni izbrala naključno.\n\nVaška cerkev je bila stoletja tudi ura vasi: zvonjenje je klicalo k maši, opozarjalo na nevihto, slavilo praznike in pospremljalo pogrebe. Vsak zvon je imel svoj glas in svoj pomen; vaščani so jih znali razlikovati že po prvem udarcu. Kdor je znal poslušati, je vedel, kaj se vasi dogaja.\n\nCerkev sv. Vida v Gribljah je tudi zemljevid rodbin: okoli nje je pokopališče, kjer so generacije zapisale svoja imena v kamen. Za krajevni muzej so nagrobniki arhiv brez police — datumi, priimki, velike družine in prezgodaj odšli: cela demografija vasi na tisočih korakov.\n\nMuzej izrecno ločuje dokumentirano od nedokumentiranega: gradbena zgodovina cerkve (datacija, starejše faze, notranja oprema) zaenkrat še čaka na arhivski vir — morda v listinah ali vizitacijskih zapisih. Ko bo najden, bo zapis dopolnjen in označen kot dokumentiran; do takrat je zapis oznake »preverjeno« vezan izključno na obstoj in lego stavbe. Taka iskrenost je znamenje tega muzeja: raje priznamo vrzel, kot da bi jo zapolnili z domnevo.",
     storyEn:
-      "In the centre of the settlement stands the church of St. Vitus, dedicated to the patron whom the folk calendar remembers with the saying \"from St. Vitus onward the sun rises higher.\" The building is the religious heart of the local community and the village's most striking silhouette — its appearance is documented in Wikimedia Commons photographs.\n\nThe museum explicitly separates the documented from the undocumented: the construction history of the church (its dating, earlier phases) still awaits an archival source. When one is found, the record will be amended and marked as documented; until then, the \"corroborated\" mark refers strictly to the building's existence and position.",
+      "In the centre of the settlement stands the church of St. Vitus, dedicated to the patron whom the folk calendar remembers with the saying \"from St. Vitus onward the sun rises higher.\" The building is the religious heart of the local community and the village's most striking silhouette — its appearance is documented in Wikimedia Commons photographs.\n\nSaint Vitus is an early Christian martyr of the Diocletian persecution; the Church counts him among the Fourteen Holy Helpers invoked in bodily distress — above all against epilepsy, once called \"St. Vitus' dance.\" His feast falls on 15 June, when the sun stands high and the grain harvest began in these parts. A patron of sun and summer, on a hill above the fields — a farming village did not choose him by accident.\n\nFor centuries the village church was also the village's clock: its bells called to mass, warned of storms, celebrated feasts and accompanied funerals. Every bell had its own voice and its own meaning; villagers could tell them apart by the first stroke. Whoever knew how to listen knew what was happening to the village.\n\nThe church of St. Vitus at Griblje is also a map of the families: around it lies the churchyard where generations wrote their names into stone. For a local museum the gravestones are an archive without shelving — dates, surnames, large families and those taken too soon: the whole demography of the village within a thousand steps.\n\nThe museum explicitly separates the documented from the undocumented: the construction history of the church (its dating, earlier phases, interior furnishings) still awaits an archival source — perhaps in deeds or visitation records. When one is found, the record will be amended and marked as documented; until then, the \"corroborated\" mark refers strictly to the building's existence and position. Such honesty is the mark of this museum: we would rather admit a gap than fill it with a guess.",
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/sveti-vid.jpg",
     imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
@@ -133,6 +133,24 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "fotografija",
         license: "CC BY-SA 3.0",
         url: WM("Griblje%2C_%C4%8Crnomelj_-_cerkev_sv._Vida.jpg"),
+      },
+      {
+        key: "wiki-sveti-vid",
+        nameSi: "Wikipedija: sveti Vid (mučenik, štirinajst svetih pomočnikov, zavetništvo)",
+        nameEn: "Wikipedia: Saint Vitus (martyr, Fourteen Holy Helpers, patronage)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Sveti_Vid",
+        noteSi: "Življenje in zavetništvo sv. Vida — podlaga za razlago izbire zavetnika.",
+        noteEn: "The life and patronage of St. Vitus — the basis for explaining the choice of patron.",
+      },
+      {
+        key: "commons-griblje",
+        nameSi: "Wikimedia Commons: kategorija Griblje (razgledi vasi, cerkev, ribnik)",
+        nameEn: "Wikimedia Commons: the Griblje category (village views, church, pond)",
+        sourceType: "fotografija",
+        license: "različne licence / various licenses (navedene pri posameznih datotekah)",
+        url: "https://commons.wikimedia.org/wiki/Category:Griblje",
       },
     ],
   },
@@ -317,9 +335,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "A mill weir with a drop on the Kolpa at Griblje: a witness to the water engineering that once powered mills and saws along the river.",
     storySi:
-      "Beseda malenca označuje mali jez oziroma zaporo z brusom, ki so jo mlinarji zgradili čez reko, da bi zajeli vodno silo. Na Kolpi pri Gribljah je ohranjen tak primer — slap in malenca — ki ga je fotografiral avtor švabo in je javno dokumentiran v Wikimedia Commons.\n\nMuzej objavlja to, kar ima: preverjeno fotografijo in splošno tipologijo. Natančna lega konkretne malence zaenkrat ni potrjena z zanesljivim virom, zato zemljevid zavestno ne riše te točke — koordinata, ki bi bila zgolj približek, ne bi bila resnična.",
+      "Beseda malenca označuje mali jez oziroma zaporo z brusom, ki so jo mlinarji zgradili čez reko, da bi zajeli vodno silo. Na Kolpi pri Gribljah je ohranjen tak primer — slap in malenca — ki ga je fotografiral avtor švabo in je javno dokumentiran v Wikimedia Commons.\n\nMalenca je bila premišljena vodna gradnja: jez je dvignil vodostaj toliko, da je vodo lahko odvedel v mlinski rokav, brus — prag, po katerem se voda spusti — pa je silo usmeril tja, kjer jo je bilo treba. Gradili so jo iz kamna in lesa; obnavljali pa po vsaki zimi, saj Kolpa zna priti čez bregove in vsako leto znova preizkusiti mlinarsko delo. Jez je bil zato živ spomenik: nikoli končan, vedno znova popravljen z rokami, ki so od reke živele.\n\nVodna sila ob Kolpi je poganjala mline in žage v Dolu, Radencih, Pobrežju in Krasincu — o njih govori sosednji zapis o mlinih. Malenca pri Gribljah je zadnji kos te zapuščine na našem odseku reke: majhna, a razumljiva stavba, ki pove, kako se iz toka vode naredi kruh.\n\nZa vas je imela malenca še en dar: mirna voda za zajezitvijo je postala kopališče. Kolpa velja za najtoplejšo slovensko reko, poletja ob njej pa za eno od belokranjskih ugodnosti; globoka voda za malenco, kjer se tok umiri, je za otroke pomenila prvo plavanje, za odrasle pa senco ob kosilu na travi. Ena in ista stavba je bila zjutraj gospodarska, opoldne pa brezskrbna.\n\nMuzej objavlja to, kar ima: preverjeno fotografijo in splošno tipologijo. Natančna lega konkretne malence zaenkrat ni potrjena z zanesljivim virom, zato zemljevid zavestno ne riše te točke — koordinata, ki bi bila zgolj približek, ne bi bila resnična. Ko bo lega zapisana, bo tudi pika na karti; do takrat ostajata le slika in beseda.",
     storyEn:
-      "The word malenca denotes a small weir or dam with a drop that millers built across the river to capture the force of the water. On the Kolpa at Griblje such a example survives — a waterfall and weir — photographed by the author švabo and publicly documented in Wikimedia Commons.\n\nThe museum publishes what it has: a verified photograph and the general typology. The precise position of this particular malenca is not confirmed by a reliable source, so the map deliberately does not draw this point — a coordinate that would be a mere approximation would be a museum untruth.",
+      "The word malenca denotes a small weir or dam with a drop that millers built across the river to capture the force of the water. On the Kolpa at Griblje such an example survives — a waterfall and weir — photographed by the author švabo and publicly documented in Wikimedia Commons.\n\nThe malenca was a considered piece of water engineering: the weir raised the water level just enough to divert it into the millrace, while the drop — the sill over which the water spills — directed the force where it was needed. It was built of stone and timber, and repaired after every winter, for the Kolpa knows how to rise over its banks and test the miller's work anew each year. The weir was therefore a living monument: never finished, always mended again by the hands that lived from the river.\n\nThe water power of the Kolpa drove the mills and saws at Dol, Radenci, Pobrežje and Krasinec — the subject of the neighbouring record on the mills. The malenca at Griblje is the last piece of that heritage on our stretch of the river: a small but legible structure that tells how bread is made out of a current.\n\nFor the village the malenca had one more gift: the still water behind the weir became a bathing place. The Kolpa counts among Slovenia's warmest rivers, and summers along it among Bela krajina's kindnesses; the deep water below the malenca, where the current settles, meant a first swim for the children and lunchtime shade for the grown-ups. One and the same structure was economic in the morning and carefree by noon.\n\nThe museum publishes what it has: a verified photograph and the general typology. The precise position of this particular malenca is not confirmed by a reliable source, so the map deliberately does not draw this point — a coordinate that would be a mere approximation would be a museum untruth. When the position is recorded, the dot will appear on the map; until then, the picture and the word remain.",
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/malenca.jpg",
     imageCredit: "Foto: švabo · Wikimedia Commons · CC BY 3.0",
@@ -334,6 +352,24 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Slap_in_malenca_na_Kolpi_pri_Gribljah.jpg"),
         noteSi: "Avtor in licenca preverjena na strani datoteke.",
         noteEn: "Author and licence verified on the file page.",
+      },
+      {
+        key: "radio-odeon-mlini-malenca",
+        nameSi: "Radio Odeon (2022): mlini in jezi na Kolpi po ohranjenih urbarjih",
+        nameEn: "Radio Odeon (2022): mills and weirs on the Kolpa in the surviving urbars",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://radio-odeon.com/",
+        noteSi: "Mlinarska dediščina Bele krajine — kontekst malenc in mlinskih rokavov.",
+        noteEn: "The milling heritage of Bela krajina — the context of weirs and millraces.",
+      },
+      {
+        key: "wiki-kolpa",
+        nameSi: "Wikipedija: Kolpa (reka — hidrologija, poplave, ribiščina)",
+        nameEn: "Wikipedia: Kolpa (river — hydrology, floods, fisheries)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Kolpa",
       },
     ],
   },
@@ -672,9 +708,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "A river as a national border: from the new border stones of 1991, past the wire fence of the refugee crisis, to a shared Schengen Kolpa.",
     storySi:
-      "Ko je Slovenija leta 1991 postala samostojna država, je Kolpa iz reke med dvema republikama postala zunanja meja Evropi. Ob begunski (migrantski) krizi leta 2015 je bila ob reki pri Gribljah postavljena začasna varnostna ograja — njen videz je dokumentiral fotograf Hythlodot (Wikimedia Commons, CC BY-SA 4.0).\n\nZ vstopom Hrvaške v schengenski prostor (2023) je fizični pomen meje znova oslabel. Reka, ki je bila stoletje in pol meja, se je vrnila k starejši vlogi: skupna kopališča, skupni ribolov, skupna zgodba.",
+      "Ko je Slovenija junija 1991 postala samostojna država, je Kolpa iz reke med dvema republikama postala zunanja meja nove države — in čez noč tudi meja Evropi. Ob begunski (migrantski) krizi leta 2015 je bila ob reki pri Gribljah postavljena začasna varnostna ograja — njen videz je dokumentiral fotograf Hythlodot (Wikimedia Commons, CC BY-SA 4.0).\n\nA meja ob Kolpi ni rojena leta 1991. Stoletja je reka ločevala deželo Kranjsko od hrvaških dežel; po propadu Avstro-Ogrske leta 1918 je postala notranja upravna meja v Kraljevini SHS, po letu 1945 pa republiška meja med Slovenijo in Hrvaško. Kar se je leta 1991 spremenilo, ni bila črta na zemljevidu — bila je njena teža: mejni kamni so dobili državni pomen, ob reki so zrasli mejni prehodi, vsakdan pa je prepredla carina in dokumenti.\n\nNovo poglavje sta zapisali leti 2015 in 2016, ko je begunski tok po balkanski poti prinesel žičnato ograjo — da bi pretok ljudi usmerila v urejene prehode. Za vas ob reki je bila ograja tuja novost: Kolpa je bila vse življenje skupna — skupni mlini in malence, skupna kopališča, poroke čez reko in sorodstvo na obeh bregovih.\n\nZ vstopom Hrvaške v schengenski prostor 1. januarja 2023 je fizični pomen meje znova oslabel: prehodi so se zaprli, luči nad njimi ugasnile. Reka, ki je bila stoletja črta, se je vrnila k starejši vlogi: skupna kopališča, skupni ribolov, skupna zgodba.\n\nMeja ob Kolpi je zato muzej v muzeju: isti tok vode je bil deželna, upravna, republiška in državna meja — in je vseeno ostajal kraj, kjer so se na obeh bregovih srečevali isti ljudje. Obiskovalca vabimo, da zgodovino te črte prebere naravnost iz reke: najstarejša meja tu ni kamen, ampak voda.",
     storyEn:
-      "When Slovenia became an independent state in 1991, the Kolpa turned from a river between two republics into an external border of Europe. During the refugee crisis of 2015 a temporary security fence was erected along the river at Griblje — its appearance documented by the photographer Hythlodot (Wikimedia Commons, CC BY-SA 4.0).\n\nWith Croatia's entry into the Schengen area (2023) the physical meaning of the border weakened again. The river that spent a century and a half as a delimiter returned to an older role: shared beaches, shared fishing, a shared story.",
+      "When Slovenia became an independent state in June 1991, the Kolpa turned from a river between two republics into the external border of a new state — and overnight, a border of Europe. During the refugee crisis of 2015 a temporary security fence was erected along the river at Griblje — its appearance documented by the photographer Hythlodot (Wikimedia Commons, CC BY-SA 4.0).\n\nBut the border on the Kolpa was not born in 1991. For centuries the river separated the land of Carniola from the Croatian lands; after the collapse of Austria-Hungary in 1918 it became an internal administrative line in the Kingdom of Serbs, Croats and Slovenes, and after 1945 the republican border between Slovenia and Croatia. What changed in 1991 was not the line on the map — it was its weight: the boundary stones took on the meaning of statehood, border crossings grew along the river, and everyday life was threaded through with customs and documents.\n\nA new chapter came in 2015 and 2016, when the refugee flow along the Balkan route brought the wire fence — built to steer the movement of people into orderly crossings. For the village on the river the fence was an alien novelty: the Kolpa had always been shared — shared mills and weirs, shared beaches, marriages across the river and kin on both banks.\n\nWith Croatia's entry into the Schengen area on 1 January 2023 the physical meaning of the border weakened again: the crossings closed, the lights above them went dark. The river that had spent centuries as a line returned to an older role: shared beaches, shared fishing, a shared story.\n\nThe border on the Kolpa is thus a museum within the museum: the same current of water has been a provincial, an administrative, a republican and a national border — and remained, throughout, a place where the same people met on both banks. We invite the visitor to read the history of this line straight from the river: the oldest border here is not a stone, but water.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/meja.jpg",
     imageCredit: "Foto: Hythlodot · Wikimedia Commons · CC BY-SA 4.0",
@@ -692,6 +728,24 @@ export const seedExhibits: SeedExhibit[] = [
         license: "CC BY-SA 4.0",
         url: WM("Slovenian_border_fence_in_Griblje.JPG"),
       },
+      {
+        key: "wiki-meja-sl-hr",
+        nameSi: "Wikipedija (EN): Slovenia–Croatia border (potek in zgodovina meje)",
+        nameEn: "Wikipedia (EN): Slovenia–Croatia border (course and history of the border)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://en.wikipedia.org/wiki/Slovenia%E2%80%93Croatia_border",
+        noteSi: "Zgodovinske plasti meje ob Kolpi — od deželne meje do schengenske.",
+        noteEn: "The historical layers of the Kolpa border — from a provincial line to Schengen.",
+      },
+      {
+        key: "ec-schengen",
+        nameSi: "Evropska komisija: območje Schengen (vstop Hrvaške 1. 1. 2023)",
+        nameEn: "European Commission: the Schengen area (Croatia's entry on 1 January 2023)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area_en",
+      },
     ],
   },
   {
@@ -706,9 +760,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "A calm aquatic ecosystem in the village: a pond with meadows, mirroring both the sky and the memories of the locals.",
     storySi:
-      "Vaški ribnik je bil v tradicionalni vasi vodni rezervoar za živino, zatočišče ptic in rib ter krajevno »ogledalo«, v katerem se je vas videla sama. V Gribljah ribnik stoji še danes in je dokumentiran na posnetkih Wikimedia Commons; poleti ga obiskujejo kačji pastirji in race, pozimi pa se nanj naselita tišina in spomin.\n\nMuzej vabi domačine: vsak spomin na ribnik — drsanje, napajanje živine, ribolov krapov — bo zapisan kot pričevanje z imenom priče.",
+      "Vaški ribnik je bil v tradicionalni vasi vodni rezervoar za živino, zatočišče ptic in rib ter krajevno »ogledalo«, v katerem se je vas videla sama. V Gribljah ribnik stoji še danes in je dokumentiran na posnetkih Wikimedia Commons; poleti ga obiskujejo kačji pastirji in race, pozimi pa se nanj naselita tišina in spomin.\n\nV Beli krajini voda ni samoumevna: pokrajina je kraška, padavin je v Gribljah in okolici celo najmanj v Sloveniji, potoki pa izginjajo v apnenčasto podlogo. Vsak kos stoječe vode je bil zato dragocen. Ribnike so kopali z več nameni naenkrat: napajališče za živino, vodna rezerva ob požaru — gasilska brizgalna je v stari vasi težila do vode — in gojenje rib za mizo.\n\nKrap, ki je v ribniku odraščal, je pogosto čakal na božič: živ krap, shranjen do konca v kopeli, je bil del slovenskega božičnega vsakdana vse do srede dvajsetega stoletja. Ribnik je bil zato tudi shramba — hladilnik vasi, preden je elektrika prinesla pravega.\n\nV njem je živelo tudi življenje, ki ga je bilo v kmečkem svetu sicer malo: pomladanski koncert žab, kačji pastirji nad gladino, race z mladiči v trsti ob bregu. Za otroke je bil ribnik prvi ocean: drsanje pozimi, lovljenje kruhakov poleti, spomladansko opazovanje zaroda v plitvini.\n\nPozimi, ko se je voda spremenila v led, je ribnik postal drsališče celega zaselka: sneg so očistili, debelino ledu preverili, prvi koraki pa so bili vedno slovesno previdni. Drsanje je bilo med redkimi zimskimi razvedrili, ki jih kmečka vas ni mogla kupiti — čakati ga je bilo treba.\n\nMuzej vabi domačine: vsak spomin na ribnik — drsanje, napajanje živine, ribolov krapov, močenje lana ob bregu — bo zapisan kot pričevanje z imenom priče. Vsako pričevanje je nov vir; viri pa so v tem muzeju edina valuta.",
     storyEn:
-      "In the traditional village the pond was a water reservoir for livestock, a refuge for birds and fish, and the local \"mirror\" in which the village saw itself. The pond at Griblje still stands today and is documented in Wikimedia Commons photographs; in summer it is visited by dragonflies and ducks, in winter by the sleigh-run of memory.\n\nThe museum invites the locals: every memory of the pond — ice skating, watering livestock, carp fishing — will be recorded as a testimony carrying the witness's name.",
+      "In the traditional village the pond was a water reservoir for livestock, a refuge for birds and fish, and the local \"mirror\" in which the village saw itself. The pond at Griblje still stands today and is documented in Wikimedia Commons photographs; in summer it is visited by dragonflies and ducks, in winter by silence and memory.\n\nIn Bela krajina water is never taken for granted: the landscape is karstic, the area around Griblje has the lowest precipitation in Slovenia, and streams vanish into the limestone bedrock. Every patch of standing water was therefore precious. Ponds were dug with several purposes at once: a watering place for livestock, a water reserve against fire — the old village fire engine reached for water — and the raising of fish for the table.\n\nThe carp that grew up in the pond often waited for Christmas: a live carp, kept in the bathtub until the end, was part of the Slovene Christmas everyday until the mid-twentieth century. The pond was thus also a larder — the village's refrigerator, before electricity brought a real one.\n\nIt also held life that the farming world had little of: the springtime concert of frogs, dragonflies above the surface, ducks with ducklings in the reeds by the bank. For children the pond was a first ocean: skating in winter, catching tadpoles in summer, watching the spawn in the shallows in spring.\n\nIn winter, when the water turned to ice, the pond became the skating rink of an entire hamlet: the snow was cleared, the thickness of the ice tested, and the first steps were always ceremonially careful. Skating was among the few winter diversions a farming village could not buy — it had to be waited for.\n\nThe museum invites the locals: every memory of the pond — the skating, the watering of livestock, the carp fishing, the retting of flax by the bank — will be recorded as a testimony carrying the witness's name. Every testimony is a new source; and sources are this museum's only currency.",
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/ribnik.jpg",
     imageCredit: "Foto: Uroš Novina · Wikimedia Commons · CC BY 2.0",
@@ -728,6 +782,24 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Pond_at_Griblje_(44612474114).jpg"),
         noteSi: "Avtentična fotografija gribeljskega ribnika — glavna slika zapisa.",
         noteEn: "Authentic photograph of the Griblje pond — the record's main image.",
+      },
+      {
+        key: "wiki-bela-krajina-geografija",
+        nameSi: "Wikipedija: Bela krajina (kraška pokrajina, podnebje, padavine)",
+        nameEn: "Wikipedia: Bela krajina (karst landscape, climate, precipitation)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Bela_krajina",
+        noteSi: "Razlaga kraške sušnosti Bele krajine — zakaj je bila vsaka stoječa voda dragocena.",
+        noteEn: "Explains the karstic dryness of Bela krajina — why every patch of standing water was precious.",
+      },
+      {
+        key: "kpkolpa-voda",
+        nameSi: "Krajinski park Kolpa: vodna in mokriščna dediščina doline",
+        nameEn: "Kolpa Landscape Park: the water and wetland heritage of the valley",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.kp-kolpa.si/",
       },
     ],
   },
@@ -950,9 +1022,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Flax, hemp and the wooden loom: how the linen that clothed a village came into being and grew into a sewing industry.",
     storySi:
-      "Vsako jesen so vasi Bele krajine potegnile lan in konopljo, pozimi predle, spomladi tkale. Lesena statva je stala v hiši — tkalja je predivo vpletala v platno s slehernim gibom roke, čolniček pa je prehajal med nitmi kot ritem. Iz platna so nastale rjuhe, srajce in nedrčke; oblečena je bila cela vas.\n\nKo se je domače platno umaknilo tovarniškemu, so roke tkalj našle delo v belokranjskih šiviljah — zgodba o platnu se je nadaljevala v zgodbo o konfekciji. Muzej išče statve, ki so stale v Gribljah: fotografija vaške statve bo prvi predmet te zbirke.",
+      "Vsako pomlad so vasi Bele krajine sejale lan in konopljo, sredi poletja stebla potegnile z roko iz zemlje, nato pa se je začel pravi almanah: iz rastline narediti platno. Stebla so namočili v stoječi vodi — v ribniku, mlinščici ali lokvi — da je lubje zmehčalo; po suši so jih lomili, tlkli in česali, dokler ni ostal le sijoč vlaknati jed. To delo je bilo moško; zima pa je takoj zatem gospodovala ženskam.\n\nOb večerni luči, s preslico v roki, so ženske predle vso zimo — predenje je bilo hkrati delo in druženje; ob njem so se spletali pogovori, pesmi in zaroke. Spomladi je nastopila statva: lesen tkalski stroj v hiši ali v kamri. Tkalja je predivo vpletala v platno s slehernim gibom roke, čolniček pa je prehajal med nitmi kot ritem. Iz platna so nastale rjuhe, srajce in nedrčki; iz konoplje vreče in vrvi. Oblečena in opremljena je bila cela vas.\n\nVsak dom je bil hkrati delavnica. Koliko platna je imela hiša v skrinjah, je bilo merilo gospodarnosti njene gazdarice; platno je bilo tudi denar — šlo je v doto, v dar in v plačilo dolgov. Prav zato sta predenje in tkalstvo del ženske zgodovine Bele krajine: gospodarstvo, ki ga je nosila roka, ne zemlja.\n\nKo se je domače platno umaknilo tovarniškemu, so roke tkalj našle delo v belokranjskih šiviljah — zgodba o platnu se je nadaljevala v zgodbo o konfekciji. V dvajsetem stoletju je bilo šiviljstvo ena od opor krašnega gospodarstva: majhne delavnice so šile za oddaljene trge, ženske plače pa so nosile cele hiše.\n\nMuzej išče statve, ki so stale v Gribljah: fotografija vaške statve bo prvi predmet te zbirke. Predenje — predstopnja tkalstva — je na fotografiji Franca Vesela iz leta 1920: pravi dokument časa, ne predstava.",
     storyEn:
-      "Every autumn the villages of Bela krajina pulled flax and hemp; they spun through the winter and wove in spring. The wooden loom stood in the \"house\" — the weaver wove the yarn into linen with each movement of her hand, and the shuttle passed between the threads like a rhythm. From the linen came sheets, shirts and chemises; the whole village was clothed in it.\n\nWhen homespun gave way to factory cloth, the weavers' hands found work in the sewing shops of Bela krajina — the story of linen continued as a story of ready-made clothing. The museum is looking for the looms that stood in Griblje: a photograph of a village loom will be the first object of this collection.",
+      "Every spring the villages of Bela krajina sowed flax and hemp; in midsummer they pulled the stalks from the ground by hand, and then the true almanac began: making cloth out of a plant. The stalks were retted in standing water — in a pond, a millrace or a karst pool — until the bark softened; after drying they were broken, scutched and hackled until only the silky fibrous core remained. That work was men's; the winter that followed belonged to the women.\n\nBy the evening lamp, distaff in hand, the women spun all winter — spinning was work and company at once; around it wove conversations, songs and engagements. In spring the loom took its turn: a wooden loom in the house or the chamber. With each movement of her hand the weaver interlaced the yarn into linen, and the shuttle passed between the threads like a rhythm. From the linen came sheets, shirts and chemises; from the hemp, sacks and ropes. The whole village was clothed and equipped by it.\n\nEvery household was at once a workshop. How much linen a house kept in its chests was the measure of its mistress's thrift; linen was also money — it went into dowries, into gifts and against debts. Precisely for that reason, spinning and weaving are part of the women's history of Bela krajina: an economy carried by the hand, not the land.\n\nWhen homespun gave way to factory cloth, the weavers' hands found work in the sewing shops of Bela krajina — the story of linen continued as a story of ready-made clothing. In the twentieth century the garment trade was one of the props of the karst economy: small workshops sewed for distant markets, and women's wages carried entire households.\n\nThe museum is looking for the looms that stood in Griblje: a photograph of a village loom will be the first object of this collection. Spinning — the step before weaving — survives on Fran Vesel's photograph from 1920: a true document of its time, not a reconstruction.",
     evidenceStatus: "TRADITION",
     image: "/images/authentic/predenje.jpg",
     imageCredit: "Foto: Fran Vesel, 1920 · Wikimedia Commons · javna last",
@@ -982,6 +1054,26 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "objava",
         license: "navedi vir / cite the source",
       },
+      {
+        key: "sem-tekstil",
+        nameSi: "Slovenski etnografski muzej: zbirke tekstila, predenja in tkanja",
+        nameEn: "Slovene Ethnographic Museum: collections of textiles, spinning and weaving",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.etno-muzej.si/",
+        noteSi: "Muzej, ki hrani statve in predilne pripomočke — primerjalni kontekst vaškega tkalstva.",
+        noteEn: "The museum holding looms and spinning implements — the comparative context of village weaving.",
+      },
+      {
+        key: "wiki-lan",
+        nameSi: "Wikipedija: lan (pridelava, namakanje, predenje)",
+        nameEn: "Wikipedia: flax (cultivation, retting, spinning)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Lan",
+        noteSi: "Letni krog lana od setve do platna — časovni okvir tkalskega koledarja.",
+        noteEn: "The annual cycle of flax from sowing to cloth — the timetable of the weaver's calendar.",
+      },
     ],
   },
   {
@@ -996,9 +1088,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Bela krajina is one of the Slovene lands of the white stork: nests on chimneys mark a village that left room for nature.",
     storySi:
-      "Bela štorklja se vrne iz Afrike konec marca in aprila — prav v čas, ko jurji naznanjajo pomlad. V Beli krajini gnezdi na dimnikih in drogovih, ob reki in mokriščih Kolpe išče hrano, avgusta in septembra pa se z mladiči odpravi na pot čez Balkan proti Afriki.\n\nVaška identiteta štorklje je izrecna: gnezdo na dimniku je čast, zato gnezda domačini varujejo in popravljajo. Muzej bo spremljal gnezda v Gribljah z vaškimi fotografi: vsako leto en posnetek, vsak posnetek en vir. Tako zbirka raste kot sam življenjski krog ptice.",
+      "Bela štorklja se vrne iz Afrike konec marca in aprila — prav v čas, ko jurji naznanjajo pomlad. V Beli krajini gnezdi na dimnikih in drogovih, ob reki in mokriščih Kolpe išče hrano, avgusta in septembra pa se z mladiči odpravi na pot čez Balkan proti Afriki.\n\nPot je daljša, kot se zdi. Štorklje iz Slovenije letijo prek Balkana do Bosporske ožine ob Črnem morju, naprej čez Bližnji vzhod in dol po Nilu do podsaharske Afrike; ne letijo ponoči in ne čez odprta morja, ampak se dvigajo v toplotnih stolpih nad kopnim. Dnevno preletijo stotine kilometrov, na leto pa več kot deset tisoč v vsako smer. Vrnitev v isto gnezdo je zato majhen čudež navigacije brez kompasa.\n\nGnezdo je naselje, ne samo stavba: pari se vračajo k istemu dimniku, gnezdo vsako leto dograjujejo, tehta lahko več sto kilogramov, v njem pa se izmenjujejo generacije. Domačini gnezda varujejo in popravljajo — tudi s prihrano hrano, če pomladi zmanjka. Dolina Kolpe je zavarovano območje Natura 2000 prav tudi zaradi ptic ob reki: mrtvice, travniki in plitvine so štorklji jedilnik.\n\nSlovenija šteje nekaj sto parov bele štorklje; popise vodi Društvo za opazovanje in preučevanje ptic Slovenije (DOPPS), najgosteje pa vrsta gnezdi v pomurski ravnini. Bela krajina je zahodni krak te zgodbe: tu gnezda niso gosta, a je zato vsako posebej znano.\n\nVaška identiteta štorklje je izrecna: gnezdo na dimniku je čast, zato gnezda domačini varujejo in popravljajo. Muzej bo spremljal gnezda v Gribljah z vaškimi fotografi: vsako leto en posnetek, vsak posnetek en vir. Tako zbirka raste kot sam življenjski krog ptice.",
     storyEn:
-      "The white stork returns from Africa at the end of March and in April — precisely when the jurji announce spring. In Bela krajina it nests on chimneys and poles, feeds by the river and wetlands of the Kolpa, and in August and September departs with its young across the Balkans towards Africa.\n\nThe village identity of the stork is explicit: a nest on one's chimney is an honour, so the households protect and repair the nests. The museum will follow the nests of Griblje with village photographers: one photograph a year, every photograph a source. Thus the collection grows like the bird's own life cycle.",
+      "The white stork returns from Africa at the end of March and in April — precisely when the jurji announce spring. In Bela krajina it nests on chimneys and poles, feeds by the river and wetlands of the Kolpa, and in August and September departs with its young across the Balkans towards Africa.\n\nThe journey is longer than it seems. Storks from Slovenia fly across the Balkans to the Bosphorus at the Black Sea, on over the Middle East and down the Nile to Sub-Saharan Africa; they do not fly at night, nor over open seas, but climb the thermal towers above the land. They cover hundreds of kilometres a day, and more than ten thousand in each direction every year. The return to the same nest is a small miracle of navigation without a compass.\n\nThe nest is a settlement, not merely a structure: pairs return to the same chimney, rebuild the nest each year, until it can weigh several hundred kilograms, and generations succeed one another within it. The households protect and mend the nests — even with spare food when a spring runs hungry. The Kolpa valley is a protected Natura 2000 site precisely because of its riverside birds: backwaters, meadows and shallows are the stork's menu.\n\nSlovenia counts a few hundred pairs of white storks; the censuses are led by the Bird Watching and Study Association of Slovenia (DOPPS), and the densest colonies stand in the Pomurje plain. Bela krajina is the western arm of the story: the nests here are not many, and each one is therefore known by name.\n\nThe village identity of the stork is explicit: a nest on one's chimney is an honour, so the households protect and repair the nests. The museum will follow the nests of Griblje with village photographers: one photograph a year, every photograph a source. Thus the collection grows like the bird's own life cycle.",
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/storklja.jpg",
     imageCredit: "Foto: fveronesi1 · Wikimedia Commons · CC BY-SA 4.0",
@@ -1026,6 +1118,24 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "spletni-vir",
         license: "javna informacija / public information",
         url: "https://www.kp-kolpa.si/",
+      },
+      {
+        key: "dopps-storklja",
+        nameSi: "DOPPS — Ptice Slovenije: bela štorklja (popisi, varstvo, selitve)",
+        nameEn: "DOPPS — Birds of Slovenia: the white stork (censuses, protection, migration)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.ptice.si/",
+        noteSi: "Društvo, ki v Sloveniji šteje gnezda bele štorklje — podlaga za podatke o gnezdih.",
+        noteEn: "The association that counts Slovenia's white stork nests — the basis for the nesting data.",
+      },
+      {
+        key: "wiki-storklja",
+        nameSi: "Wikipedija: bela štorklja (biologija, selitvene poti, gnezdenje)",
+        nameEn: "Wikipedia: white stork (biology, migration routes, nesting)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Bela_%C5%A1torklja",
       },
     ],
   },

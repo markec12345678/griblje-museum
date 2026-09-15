@@ -118,7 +118,9 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
   % fotografinanih, % na karti) (vzorec vizualizacij zbirk Met/Tate) — v rubriki
   *O muzeju*
 - 🤖 **Pogovor z zbirko** — uzidani AI vodnik: obiskovalec zastavlja vprašanja,
-  model pa odgovarja IZKLJUČNO iz 20 kuriranih zapisov (dosje iz iste baze);
+  model pa odgovarja IZKLJUČNO iz kuriranih zapisov (dosje iz iste baze — po
+  jeziku, z zgodbami do 2000 znakov, življenjepisi predmetov in enominutnimi
+  zgodbami);
   vsak odgovor se konča z navedki, ki so gumbi na prave zapise; odkrito
   »tega ni v zbirki« namesto izmišljevanja; predlagana vprašanja, bližnjica
   Ctrl/Cmd+G, deljiva povabilo `/?govor=1`; pogovor se ne shranjuje
@@ -141,7 +143,7 @@ raziskovalna disciplína z izrecnimi statusi dokazilosti.
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 56 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 68 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
