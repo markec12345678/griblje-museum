@@ -13,6 +13,8 @@
 import { db } from "@/lib/db";
 import { getZAI } from "@/lib/zai";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
+import { getBiography } from "@/lib/object-biographies";
+import { getMinuteStory } from "@/lib/minute-stories";
 
 export type GuideLang = "sl" | "en";
 
@@ -66,10 +68,14 @@ type DossierExhibit = {
   storyEn: string;
   yearFrom: number | null;
   yearTo: number | null;
-  sources: { nameSi: string; sourceType: string; license: string }[];
+  sources: { nameSi: string; nameEn: string; sourceType: string; license: string }[];
 };
 
-const STORY_MAX_CHARS = 700;
+/** Zgodbo v dosje vodniku damo do 2000 znakov — vodnik sme vedeti več
+ *  kot etiketa, a manj kot celotno monografijo (varčevanje z žetoni). */
+const STORY_MAX_CHARS = 2000;
+const BIO_MAX_CHARS = 900;
+const MINUTE_MAX_CHARS = 700;
 
 function truncate(text: string, max: number): string {
   if (text.length <= max) return text;
@@ -78,39 +84,66 @@ function truncate(text: string, max: number): string {
   return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trim() + " …";
 }
 
-function formatDossier(exhibits: DossierExhibit[]): string {
+function formatDossier(lang: GuideLang, exhibits: DossierExhibit[]): string {
+  const sl = lang === "sl";
   return exhibits
     .map((e) => {
+      const bio = getBiography(e.slug);
+      const minute = getMinuteStory(e.slug);
       const sources = e.sources
-        .map((s) => `${s.nameSi} [${s.sourceType}, ${s.license}]`)
+        .map((s) => `${sl ? s.nameSi : s.nameEn} [${s.sourceType}, ${s.license}]`)
         .join("; ");
       const years =
         e.yearFrom !== null
           ? `leta: ${e.yearFrom}${e.yearTo !== null ? "–" + e.yearTo : " →"}\n`
           : "";
+      const bioLine = bio
+        ? bio.phases
+            .map(
+              (p) =>
+                `${p[sl ? "yearLabelSi" : "yearLabelEn"]}: ${truncate(
+                  p[sl ? "textSi" : "textEn"],
+                  220,
+                )}`,
+            )
+            .join(" → ")
+        : null;
       return [
         `### ${e.slug}`,
         `kategorija: ${e.category} | zanesljivost: ${e.evidenceStatus}`,
         years +
-          `Naslov (SL): ${e.titleSi} | Naslov (EN): ${e.titleEn}`,
-        `Obdobje (SL): ${e.periodSi} | Obdobje (EN): ${e.periodEn}`,
-        `Povzetek (SL): ${e.summarySi}`,
-        `Povzetek (EN): ${e.summaryEn}`,
-        `Zgodba (SL): ${truncate(e.storySi, STORY_MAX_CHARS)}`,
-        `Zgodba (EN): ${truncate(e.storyEn, STORY_MAX_CHARS)}`,
+          `Naslov (${sl ? "SL" : "EN"}): ${sl ? e.titleSi : e.titleEn}`,
+        `Obdobje (${sl ? "SL" : "EN"}): ${sl ? e.periodSi : e.periodEn}`,
+        `Povzetek (${sl ? "SL" : "EN"}): ${sl ? e.summarySi : e.summaryEn}`,
+        `Zgodba (${sl ? "SL" : "EN"}): ${truncate(
+          sl ? e.storySi : e.storyEn,
+          STORY_MAX_CHARS,
+        )}`,
+        bioLine ? `Življenjepis predmeta: ${truncate(bioLine, BIO_MAX_CHARS)}` : "",
+        minute
+          ? `Enominutna zgodba (${sl ? "SL" : "EN"}): ${truncate(
+              sl ? minute.textSi : minute.textEn,
+              MINUTE_MAX_CHARS,
+            )}`
+          : "",
         `Viri: ${sources || "—"}`,
-      ].join("\n");
+      ]
+        .filter(Boolean)
+        .join("\n");
     })
     .join("\n\n");
 }
 
-let dossierPromise: Promise<{ text: string; exhibits: DossierExhibit[] }> | null =
-  null;
+const dossierPromises: Partial<
+  Record<GuideLang, Promise<{ text: string; exhibits: DossierExhibit[] }>>
+> = {};
 
-/** Dosje sestavi enkrat na primerek strežnika (zbirka je v read-only bazi). */
-async function getDossier() {
-  if (!dossierPromise) {
-    dossierPromise = (async () => {
+/** Dosje sestavimo enkrat na jezik na primerek strežnika (zbirka je v
+ *  read-only bazi): vodnik odgovarja v enem jeziku, torej dobi samo slovenske
+ *  ali samo angleške plasti — globina brez dvojne porabe žetonov. */
+async function getDossier(lang: GuideLang) {
+  if (!dossierPromises[lang]) {
+    dossierPromises[lang] = (async () => {
       const rows = await db.exhibit.findMany({
         orderBy: { sortOrder: "asc" },
         select: {
@@ -128,16 +161,21 @@ async function getDossier() {
           yearFrom: true,
           yearTo: true,
           sources: {
-            select: { nameSi: true, sourceType: true, license: true },
+            select: {
+              nameSi: true,
+              nameEn: true,
+              sourceType: true,
+              license: true,
+            },
             orderBy: { sortOrder: "asc" },
           },
         },
       });
       const exhibits = rows as DossierExhibit[];
-      return { text: formatDossier(exhibits), exhibits };
+      return { text: formatDossier(lang, exhibits), exhibits };
     })();
   }
-  return dossierPromise;
+  return dossierPromises[lang]!;
 }
 
 /* --- Sistemsko sporočilo ----------------------------------------------- */
@@ -204,7 +242,7 @@ export async function askGuide(
   lang: GuideLang,
   history: GuideMessage[]
 ): Promise<{ answer: string; cites: GuideCite[] }> {
-  const { text, exhibits } = await getDossier();
+  const { text, exhibits } = await getDossier(lang);
   const zai = await getZAI();
 
   // Zgodovino skrajšamo na zadnjih GUIDE_LIMITS.history sporočil —
