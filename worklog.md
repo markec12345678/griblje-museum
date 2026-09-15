@@ -766,3 +766,19 @@ Stage Summary:
 - Dve poti za TD: (1) Interreg SI-HR mali projekti — zdaj odprti, TD kot vodilni partner z HR partnerjem; (2) naslednji cikel MGTŠ (dec 2026/2027) — TD kot partner občine/RIC, muzej pripraviti na 3.1+3.2 točki
 - Preslikava zahtev → muzej: manjka 3D (ključno za 15 t.), prodajni plan (10 t.), statistika, HR jezik, WCAG izjava, AI hosting v SLO; zgodba/celoletnost/strategija/dostopnost already ✓
 - Poročilo uporabniku predstavljeno v klepetu (zahteve po razpisih, točkovna simulacija, prioritetni ukrepi)
+
+---
+Task ID: 35
+Agent: Main agent (Z.ai Code)
+Task: Odločitvena analiza — ali se TD Griblje splača prijaviti z muzejem (uporabnik: član TD, „če je smiselno delat po pogojih razpisa se prijavimo ... ali se ne splaca")
+
+Work Log:
+- Dodatni preverbi iz primarnih virov: (1) Priročnik Interreg 2.1.1 — ODSOTNOST PREDFINANCIRANJA („lahko ... povzroči težave z likvidnostjo") — ESRR povračilo šele po kontroli izdatkov v JEMS; (2) čezmejna merila: skupni razvoj + skupno izvajanje + skupno financiranje VSA TRI obvezna → HR partner mora resnično delati in nositi stroške; (3) revizijska sled (pogodba o sofinanciranju, sporazum o partnerstvu, JEMS poročila, dokazila učinkov) — administrativna obremenitev ~150–250 h prostovoljnega dela; (4) državna pomoč/de minimis poglavje — za ljudi-do-ljudi projekt tipično brez DP, a preveriti pri sekretariatu
+- Register nesnovne dediščine (nesnovnadediscina.si): iskanje po „Bela krajina/belokranjsk/Črnomelj/Metlika/Kolpa" = 0 zadetkov → ni registriranih enot iz Bele krajine → JPR-NKD pot zahteva NAJPREJ vpis pobude (eDediščina, kvalificirano digitalno potrdilo, postopek prek koordinatorja, ciklično) = 1–2 leti odložena možnost, ne 2027
+- Odločitvena analiza pripravljena: MGTŠ (TD ne more prijaviti — prvenstveno ministrstvo) → edino kot partner konzorcija občina/RIC; Interreg Tip 2 = edina direktna pot (24.800 € ESRR + 6.200 € lastnih, brez predfinanciranja = likvidnostna past za majhno društvo); JSKD = za žive dogodke ne muzej; 3D/prodajni plan/pisma = skupni imenovalec vseh scenarijev in koristni neodvisno od razpisa
+- Priporočilo: DVEKOLESNA strategija — (1) priprava muzeja na razpisne pogoje (vrednost ne glede na razpis), (2) Interreg SAMO če izpolnjeni 4 pogoji Go/No-Go (HR partner, 20 % gotovina, premoščanje ≥ 10k, vodja projekta iz vrst TD)
+
+Stage Summary:
+- Iskren zaključek: velika sredstva (205–250k) za TD kot prijavitelja niso dosegljiva (uraden zapis ministrstva); direktna pot (Interreg ~25k) je resna, a nosi likvidnostno tveganje (brez predfinanciranja) in ~200 h administracije — smiselna le ob 4 izpolnjenih pogojih
+- Muzej samo po sebi ni razlog za prijavo — razlog je, če želi TD (a) čezmejno povezovanje ob Kolpi (Interreg) ali (b) vlogo vsebinskega partnerja pri občini/RIC (MGTŠ 2027); izboljšave muzeja po razpisnih standardih so vredne neodvisno
+- Register nesnovne dediščine: 0 enot iz Bele krajine → NKD dolgoročno (najprej vpis pobude)
