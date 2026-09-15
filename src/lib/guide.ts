@@ -16,6 +16,10 @@ import { GUIDE_LIMITS } from "@/lib/guide-limits";
 import { getBiography } from "@/lib/object-biographies";
 import { getMinuteStory } from "@/lib/minute-stories";
 import { hfChatComplete, isHfChatConfigured } from "@/lib/hf-llm";
+import {
+  openRouterChatComplete,
+  isOpenRouterChatConfigured,
+} from "@/lib/openrouter-llm";
 
 export type GuideLang = "sl" | "en";
 
@@ -253,9 +257,33 @@ export async function askGuide(
   const trimmed = history.slice(-GUIDE_LIMITS.history);
   const system = systemPrompt(lang, text);
 
-  // Ponudniška veriga: HuggingFace (če je nastavljen žeton) → z-ai SDK.
-  // HuggingFace router uporablja standardne OpenAI vloge („system“),
-  // z-ai pa sprejema sistemski poziv kot prvo sporočilo vloge „assistant“.
+  // Ponudniška veriga (prvi z veljavnim ključem zmore): OpenRouter
+  // (brezplačni katalog, ključ sk-or-v1-…) → HuggingFace (hf_…) → z-ai SDK.
+  // OpenAI-kompatibilni ponudniki (OpenRouter, HF) uporabljajo standardne
+  // vloge („system“), z-ai pa sprejema sistemski poziv kot prvo sporočilo
+  // vloge „assistant“.
+  if (isOpenRouterChatConfigured()) {
+    try {
+      const raw = await openRouterChatComplete(
+        [
+          { role: "system", content: system },
+          ...trimmed,
+        ],
+        // 800 žetonov: odgovor ~120 besed + navedki [[slug]] na koncu —
+        // pri 500 se je zgodbno bogati odgovor rezal sredi stavka.
+        { maxTokens: 800 },
+      );
+      return parseCites(raw, exhibits);
+    } catch (error) {
+      // Dnevna meja brezplačne veje (~50 zahtev) ali zaseden ponudnik —
+      // pademo na naslednjo postajo verige in razlog zabeležimo.
+      console.warn(
+        "Vodnik: OpenRouter ni uspel, nadaljevanje po verigi:",
+        error instanceof Error ? error.message : String(error),
+      );
+    }
+  }
+
   if (isHfChatConfigured()) {
     try {
       const raw = await hfChatComplete([
