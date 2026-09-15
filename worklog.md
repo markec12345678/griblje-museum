@@ -351,3 +351,27 @@ Stage Summary:
 - Prvi sklop programa poglabljanja: 6 zapisov na standard, dosje vodnika 3× globlejši (po jeziku), viri 56 → 68
 - Standard zapisa (iz raziskave): etiketa → zgodba 250–400 besed → življenjepis → 4–6 virov; uresničeno pri 6 najtanjših
 - Naslednji koraki poglabljanja: (1) preostalih 14 zapisov na standard, (2) novi zapisi manjkajočih sklopov (šola, izseljenstvo, oranje/Filak, ženske, vsakdan 20. stol.), (3) prepis pripovedi iz meta-uradnih v človeške, (4) živi preizkus vodnika po okni kvote
+
+---
+Task ID: 18
+Agent: Main agent (Z.ai Code)
+Task: Sinhronizacija README + 3. sklop poglabljanja — manjkajoči ljudje (Filak, izseljenstvo)
+
+Work Log:
+- GitHub/README sinhronizacija po PR #17: README PR #18 (squash 55b5c40) — nov razdelek »Vsebina z globino« s tabelo standarda, db:seed 81 virov, dosje 3000 znakov; Vercel READY
+- 3. sklop po mnenju iz naloge 16 (manjkajoči sklopi: ljudje, izseljenstvo): novi zapisi anton-filak in izseljenstvo
+- Sliki poiskani prek Wikimedia Commons API (neodvisno od z-ai kvote): Oranje s konjsko vprego (Fran Vesel, javna last) + Emigranten in de Montevideostraat (Eugeen Van Mieghem, 1899, javna last — izseljenci pred pisarnami Red Star Line v Antwerpnu, prav ta pot slovenskega izseljstva); licenci in avtorja preverjena v extmetadata, preneseni v public/images/authentic/
+- Vsi novi viri preverjeni s HTTP HEAD (200): sl Wikipedija Griblje/Ameriški Slovenci, en Wikipedija Slovene diaspora/Red Star Line, worldploughing.org (redstarline.org ne obstaja → zamenjan za Wikipedijo)
+- anton-filak (gospodarstvo, CORROBORATED, 4 viri): oranje kot vrhunec kmečkega znanja (jerina, brazda kot ugled), svetovna prvenstva od 1953 (klasično/reverzibilno, točkovanje), 8 Filakovih udeležb po javnem viru, leta/uvrstitve = odkrita vrzel TO_COLLECT; zgodba 302 besede SLO / 318 EN
+- izseljenstvo (kraj, TRADITION, 5 virov): vali 1880→danes (ZDA prek Trsta/Antwerpna, Argentina, Avstralija, zimski delavci), mandati in hiše, Županič kot most; imena rodov TO_COLLECT; zgodba 281 besed SLO / 302 EN
+- Biografiji (4 + 5 faz s TO_COLLECT zaključki) + enominutni zgodbi vstavljeni v object-biographies.ts / minute-stories.ts
+- Vstavljanje prek skriptov (insert-exhibits.ts/insert-bio-minute.ts) — napaka: podpičje namesto vejice v objektnem literalu; slovenski popravki (zorjugo→orjejo po zorjah, roken→rok, posnetka→fotografija)
+- Reseed + verifikacija: tsc 0, eslint 0; API 22 zapisov / 90 virov; IIIF 22 canvasov; iskanje najde oba; dialogi: zgodba, 4/5 virov, biografija 4 postaje; sliki se naložita; mobilni 375 px brez prekoračitve; produkcija READY (f391de8): 22/90, obe sliki 200, izseljenstvo dialog na produkciji (Red Star Line, mandati, 5 virov)
+- Živi preizkus vodnika: z-ai še vedno 429 (računska kvota, >4 h) — lokalni /api/guide pravilno vrne 429 rate-limited
+- PR #19 spojen (squash f391de8); README tabela globine 22/22, 90 virov, PR #19 dodan v program
+
+Stage Summary:
+- Zbirka: 22 zapisov (odprt 3. sklop »manjkajoči ljudje«), 90 virov (povprečno 4,1), povprečna zgodba 276 besed
+- Produkcija: https://griblje-museum.vercel.app na f391de8; PR #16–#19 vsi spojeni
+- Ključna odločitev: novi zapisi samo z avtentičnimi, licenčno preverjenimi slikami (Commons API) in s plastmi TO_COLLECT namesto domnev — muzejska iskrenost
+- Ostalo od programa poglabljanja: (1) prepis 4 pripovedi v človeške glase, (2) živi preizkus vodnika po okni z-ai kvote, (3) morebitni novi zapisi (šola, ženske) po novih virih
