@@ -562,3 +562,31 @@ Stage Summary:
 - Ključ: text_to_speech + voices_read zadostujeta; user_read ni potreben; glas/model po priporočilu ostajata Antoni + eleven_multilingual_v2 (zamenjava brez kode prek env)
 - Varčevanje s kreditom aktivno trojno: strežniški predpomnilnik 64 MB + brskalniški 24 h + omejitev hladnih sintez 30/5 min na IP
 - Ostalo programa: HF_API_KEY za POGOVOR vodnika še čaka (z-ai 429) — edina še odprta AI zmožnost
+
+---
+Task ID: 28
+Agent: Main agent (Z.ai Code)
+Task: OpenRouter žeton — preverba brezplačne veje, izbira modela, vgradnja pogovora vodnika + odprava produkcijske blokade (uporabnik: „openrouter bick picle ali mimo 2.5 delujeta free testiraj ce ti to odgovarja")
+
+Work Log:
+- Preverba ključa (sk-or-v1-…): veljaven, free tier, 446 modelov, 23 brezplačnih (:free)
+- Ugotovitev o uporabnikovih modelih: xiaomi/mimo-v2.5 in mimo-v2.5-pro OBSTAJATA a sta PLAČANA ($0.14–0.87/1M žetonov) — brez kredita na free tieru neuporabljiva; imena „bick picle" med 446 modeli ni (verjetno govorna zatrditev)
+- Test slovenščine 12+ brezplačnih modelov: ZMAGOVALEC inclusionai/ling-3.0-flash-vl:free (živa slovenščina, pravilni podatki, 1,7 s); rezerve ling-sante, laguna-s-2.1; izločeni nex-n2.5 (pušča razmišljanje poangleško + napačna občina), nemotron-3.5 (pušča „thinking process"), glm-5.2/gemma-4/nemotron-super (429/400/502), dots-3-note (napačna občina — le zadnja rezerva), lfm-2.5 (prazno)
+- Globoji preizkus z dosjeom: naravni vodniški odgovor + navedek [[griblje-vas]] + 4,2 s
+- Nov modul src/lib/openrouter-llm.ts (zgled hf-llm.ts): veriga 4 free modelov, lepljivi model, klasifikacija napak (401/403 navzgor; 402/429/5xx naslednji), HTTP-Referer + X-Title atribucija
+- NAJDEBA iz testov: ling-3.0 prek ponudnika Novita je RAZMIŠLJAJÓČ model — brez izklopa notranje razmišljanje poangleško poje celoten proračun žetonov: ~50 % odgovorov REZANIH sredi stavka, nekateri content: null (finish: length). Rešitev: reasoning: {enabled: false} → 5/5 zaključenih odgovorov + navedki, ~3× hitreje; obramba v globino: finish_reason=length = prestop na naslednji model
+- guide.ts: veriga sedaj OpenRouter → HuggingFace → z-ai; max_tokens 800 (pri 500 se odgovor rezal pred navedki); zastareli števec „20 kuriranih zapisov" → 26 (SL+EN, i18n)
+- PR #26 (squash) → main = 7519067; lokalna verifikacija: tsc/eslint 0; 5/5 zaključenih odgovorov (1065–1517 znakov, 4–5 navedkov, 6,5–10 s); agent-browser: pogovor o Županiču — živa slovenščina, čip navedka odpre zapis
+- PRODUKCIJSKA BLOKADA (vodnik je vračal 503 guide-unavailable v 1 s): tri diagnostične namestitve so razkrile KOREN — askGuide() je z-ai odjemalec ustvaril ŽE NA ZAČETKU; na Vercelu .z-ai-config ni → konstrukcija vrgla napako ŠE PRED OpenRouter postajo (lokalno konfig obstaja → vse delovalo). Popravek: getZAI() lenobno, globoko v rezervni veji (ea53c53)
+- Nauk o diagnostiki: HTTP glave ne prenašajo č/š/ž (ByteString) — glava s slovensko sledjo napak je povzročila prazen 500; sled v telo/dnevnik
+- Nauk o namestitvah: Vercel build log (v2/events) potrjuje kloniranje pravega SHA; ref=SHA namesto veje odpravlja vejitveno negotovost; „sourceless: true" povezava pomeni, da moraš preverjati, ne zaupati
+- Izkoristek kvote: intenzivni testi so porabili DNEVNO mejo free modelov (50/dan, x-ratelimit-remaining: 0, ponastavitev 1789516800000 = polnoč UTC); računovska 429 „free-models-per-day" se zdaj obravnava takoj navzgor (jalovo prestopanje po :free verigi bi žrlo čas)
+- Iskrena kvotna UX (0b1e0d7): kvota + padel tudi z-ai → obiskovalec vidi „Današnja meja brezplačnega vodnika je že dosežena — prosim, poskusite jutri." (429 quota-exhausted, SL+EN), ne zavajajočega „strežnik ni nastavljen"; trajna operativna glava X-Guide-Providers (ASCII) — dokaz, kdo se je poskusil
+- Vercel: OPENROUTER_API_KEY ustvarjen (production/preview/development, encrypted); 6 namestitev danes; PRODUKCIJA PREVERJENA: x-guide-providers: openrouter,zai (pot izvedena!), 429 quota-exhausted, UI izpiše kvotno sporočilo; ob ponastavitvi (polnoč UTC) ali nakupu 10 USD kredita (→ 1000 zahtev/dan) vodnik samodejno zaživi
+- README: meje free veje + pot nadgradnje (10 USD → 1000/dan)
+
+Stage Summary:
+- Pogovor vodnika ima novo prvo postajo: OpenRouter free (ling-3.0-flash-vl — najboljša živa slovenščina med 23 preizkušenimi), ki dela ZDAJ (lokalno dokazano), HF pa ostaja druga postaja za prihodnji žeton
+- Odprt in popravljen skriti produkcijski hrošč: nedejavna lenobna inicializacija z-ai je od 1. dne preprečevala VSEM ponudnikom (tudi staremu HF), da bi se na Vercelu sploh poskusili — vodnik zdaj tam res deluje
+- Dnevna meja 50/dan je practical omejitev: enkratni 10 USD nakup kredita na openrouter.ai (enkrat za vselej) dvigne na 1000/dan — priporočilo uporabniku; kvota se sicer ponastavi vsako polnoč UTC
+- Ostalo programa: HF_API_KEY (uporabnik, neobvezno — OpenRouter pokriva), morebitni kredit na OpenRouter, živi produkcijski preizkus pogovora po ponastavitvi kvote

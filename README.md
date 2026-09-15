@@ -198,8 +198,9 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
     (ling-3.0-flash-vl → ling-3.0-flash-sante → laguna-s-2.1 →
     dots-3-note) z lepljivim modelom, izklopljenim notranjim razmišljanjem
     (predreže odgovore) in prestopanjem ob napaki ponudnika; meje brezplačne
-    veje: ~20 zahtev/min, ~50/dan — nadaljnje preklopi poženejo spodnje
-    postaje verige;
+    veje: ~20 zahtev/min, ~50/dan (ponastavitev ob polnoči UTC; enkratni
+    nakup 10 USD kredita na računu odpre 1000 zahtev/dan) — nadaljnje
+    preklopi poženejo spodnje postaje verige;
   - `HF_API_KEY` (HuggingFace Inference Providers, brezplačni račun):
     druga postaja pogovora prek odprtih modelov (Llama 3.3 70B →
     Qwen 2.5 72B → Mistral NeMo → Llama 3.1 8B) z nadomestnimi modeli ob
