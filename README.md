@@ -28,18 +28,20 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 20/20 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 20/20 (povprečno 274) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 20/20 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 81 skupaj (povprečno 4,1) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 20/20 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 22/22 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 22/22 (povprečno 276) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 22/22 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 90 skupaj (povprečno 4,1) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 22/22 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
-PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis).
+PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
+nova zapisa manjkajočih tem — Anton Filak, prvak v oranju, in izseljenstvo —
+z avtentičnima slikama iz Wikimedije Commons).
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 20 razstav z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 22 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — štirje kurirani tematski sprehodi skozi celotno zbirko
   (po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -161,7 +163,7 @@ PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis).
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 20 razstav, 81 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 22 zapisov, 90 virov, 4 zgodbe, 5 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
