@@ -19,6 +19,21 @@ export type MinuteStory = {
 
 export const MINUTE_STORIES: MinuteStory[] = [
   {
+    slug: "izseljenstvo",
+    textSi:
+      "Vsaka vas v tej zbirki ima svojo čezoceansko različico: ljudje, ki so odšli. Konec devetnajstega stoletja so se Slovenci vkrcali v Trstu in Antwerpnu — na pastelu, ki je glavna slika tega zapisa, stojijo izseljenci pred pisarnami Red Star Line, družbe, ki jih je peljala v Ameriko. Iz Gribelj so šli v Združene države, pozneje v Argentino, Avstralijo, na nemška gradbišča. Iz Amerike so prihajali mandati — in iz njih hiše. Rodovniki se iščejo še danes; morda jih boste dopolnili ravno vi.",
+    textEn:
+      "Every village in this collection has its trans-oceanic counterpart: the people who left. At the end of the nineteenth century Slovenes boarded ships in Trieste and Antwerp — in the pastel that is this record's main image, emigrants stand before the offices of the Red Star Line, the company that carried them to America. From Griblje they went to the United States, later to Argentina, Australia, the German building sites. From America the money orders came — and out of them, houses. The family trees are still being traced today; perhaps you will be the one to add a branch.",
+  },
+  {
+    slug: "anton-filak",
+    textSi:
+      "V vasi so kmeta poznali po brazdi. Kdo orje plitvo in poševno, kdo prav in do tal — to se je videlo od pota. In potem je ena od teh rok odkorakala na svetovni oder: Anton Filak iz Gribelj, osemkrat udeleženec svetovnih prvenstev v oranju. Sodniki so merili, kar je vas merila s pogledom: globino, ravnost in čistost brazde. Poglejte fotografijo Franca Vesela — konj, plug, mož. To ni športna fotografija. To je korenina športa.",
+    textEn:
+      "In the village a farmer was known by his furrow. Who ploughs shallow and slanting, who straight and true — you could see it from the path. And then one of those hands marched onto the world stage: Anton Filak of Griblje, an eight-time participant in the world ploughing championships. The judges measured what the village measured with a glance: depth, straightness, the cleanness of the furrow. Look at Fran Vesel's photograph — the horse, the plough, the man. It is not a sports shot. It is the root of the sport.",
+  },
+
+  {
     slug: "griblje-vas",
     textSi:
       "Leto je tisoč petsto šestindvajset. Na papirju, ki ga hrani deželni arhiv, se prvič pojavi ime Griblje. Razpotegnjena vas ob Kolpi, na samem jugu Bele krajine. Petsto let pozneje šteje okrog dvesto prebivalcev — cerkev, vaški ribnik, vinogradi in meja, ki je nikoli ni bila daleč. Če vas danes pelje cesta iz Črnomlja, vozite skozi pokrajino belih brez. In prav ta bela dežela je dala vasi ime in usodo. Griblje: vas, ki je muzej sama po sebi.",

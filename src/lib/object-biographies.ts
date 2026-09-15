@@ -42,6 +42,121 @@ export type ObjectBiography = {
 
 export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
   {
+    slug: "izseljenstvo",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "do 1880",
+        yearLabelEn: "before 1880",
+        sortYear: 1880,
+        textSi:
+          "Vas živi od zemlje ob Kolpi; odhodi so redki in bližnji — v mesto, v Črnomelj, na železnico.",
+        textEn:
+          "The village lives from the land by the Kolpa; departures are rare and near — to the town, to Črnomelj, to the railway.",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "1880 → 1914",
+        yearLabelEn: "1880 → 1914",
+        sortYear: 1880,
+        textSi:
+          "Gospodarski val izseljenstva: pot v Združene države vodi prek Trsta in Antwerpna, kjer čez Atlantik pelje Red Star Line. Van Mieghemov pastel iz leta 1899 dokumentira izseljence pred njenimi pisarnami.",
+        textEn:
+          "The economic wave of emigration: the road to the United States runs via Trieste and Antwerp, where the Red Star Line crosses the Atlantic. Van Mieghem's pastel of 1899 documents emigrants before its offices.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1917 → 1919",
+        yearLabelEn: "1917 → 1919",
+        sortYear: 1917,
+        textSi:
+          "Gribeljski Niko Županič med izseljenci v Združenih državah navdušuje za združitev Slovanov — most med vasjo in diasporo.",
+        textEn:
+          "Niko Županič of Griblje kindles the emigrants in the United States for the union of the South Slavs — a bridge between the village and the diaspora.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 4,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1945 → 1991",
+        yearLabelEn: "1945 → 1991",
+        sortYear: 1945,
+        textSi:
+          "Povojni valovi: Argentina, Avstralija in Kanada sprejmejo politične emigrante; šestdeseta in sedemdeseta prinesejo zimske delavce na gradbišča Nemčije, Švice in Avstrije.",
+        textEn:
+          "The post-war waves: Argentina, Australia and Canada take in political emigrants; the 1960s and 1970s bring winter workers to the building sites of Germany, Switzerland and Austria.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Muzej išče imena gribeljskih izseljenskih rodov: vsak dopis, fotografija ali mandat iz Amerike, Avstralije, Argentine ali Nemčije bo nov vir.",
+        textEn:
+          "The museum is looking for the names of Griblje's emigrant families: every letter, photograph or money order from America, Australia, Argentina or Germany will be a new source.",
+        evidenceStatus: "TO_COLLECT",
+      },
+    ],
+  },
+  {
+    slug: "anton-filak",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "kmečki vsakdan",
+        yearLabelEn: "the farming everyday",
+        sortYear: 1900,
+        textSi:
+          "Oranje s konjsko vprego je vrhunec kmečkega znanja v vasi: branje prsti, pravčasnost, mirna žival in roka, ki zna plugu zaupati.",
+        textEn:
+          "Ploughing with a horse team is the summit of the village's farming knowledge: reading the soil, timing, a calm animal and a hand that knows how to trust the plough.",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "20. stoletje",
+        yearLabelEn: "20th century",
+        sortYear: 1953,
+        textSi:
+          "Anton Filak iz Gribelj osemkrat nastopi na svetovnih prvenstvih v oranju — gribeljska brazda gre na svetovni oder.",
+        textEn:
+          "Anton Filak of Griblje takes part eight times in the world ploughing championships — a Griblje furrow reaches the world stage.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "digitalizacija",
+        yearLabelSi: "začetek 20. stoletja → Commons",
+        yearLabelEn: "early 20th century → Commons",
+        sortYear: 1920,
+        textSi:
+          "Fran Vesel dokumentira oranje s konjsko vprego; fotografija danes stoji v Wikimedijini zbirki in je glavna slika zapisa.",
+        textEn:
+          "Fran Vesel documents ploughing with a horse team; the photograph now stands in the Wikimedia collection and is the record's main image.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Muzej odpira zapis in išče arhiv: leta Filakovih nastopov, uvrstitve in sestava reprezentance še čakajo na vire.",
+        textEn:
+          "The museum opens the record and searches the archive: the years of Filak's appearances, the placings and the make-up of the team still await sources.",
+        evidenceStatus: "TO_COLLECT",
+      },
+    ],
+  },
+
+  {
     slug: "griblje-vas",
     phases: [
       {
