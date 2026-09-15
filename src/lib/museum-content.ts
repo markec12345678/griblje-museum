@@ -321,9 +321,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "In the mid-16th century the border along the Kolpa became the Military Frontier — a refuge of the Uskoks, refugees from the Ottomans, whose descendants still live in Bojanci and Marindol today.",
     storySi:
-      "Vojna krajina (1460–1881) je bila obrambni pas ob najbolj izpostavljenem odseku avstrijsko-osmanske meje — zemlja, ki ni pripadala fevdalnim gospodom, ampak vojski. V 16. stoletju so jo poselili Uskoki — begunci srbskega, hrvaškega in vlaškega porekla, ki so bežali pred turškimi vpadi; ob Kolpi jim je vladal senjski knez Nikola Frankopan. Vpadi so Belo krajino večkrat opustošili: obramba tu ni bila abstrakcija, ampak vsakdan ob isti reki.\n\nPogodba z vojaško upravo je bila jasna: prosta zemlja in oprostitev fevdalnih dajatev v zameno za večno orožje. Gospodarska hrbtenica uskoških vasi je bila zadruga — več hišnih družin, ki je obdelovala skupno zemljo in skupaj nosila vojaško dolžnost; pozimi so orali in sejali, spomladi pa hodili na straže ob reki. Njihovo ime — po razlagi »tisti, ki je skočil prek« — je spomin na begunce, ki so preskočili mejo in našli novo domovino.\n\nUskoški potomci so se naselili v vaseh ob reki — Bojanci, Marindol, Paunoviči — in ohranili pravoslavno vero ter svoje običaje do danes; pravoslavna cerkev in pokopališče v Bojancih skupnost še danes držita skupaj. Iz tega srečanja svetov je zrasel del belokranjske identitete: belokranjsko pogačo radi imenujejo »darilo Uskokov slovenskemu narodu«, spomin na vojnokrajiške čase pa nosi utrjena domačija Šokčev dvor v Žuničih — v tej zbirki ima svoj zapis.\n\nLeta 1881 je Vojna krajina prešla pod civilno upravo — tri stoletja oboroženega vsakdana so se končala, meja ob Kolpi pa je ostala. Dediščina teh stoletij je dvojna: pripoved o sožitju dveh ver in jezikov ob isti reki ter vasi, ki so se naučile živeti z mejno negotovostjo — v času, ko je bila vsaka domačija ob Kolpi tudi zatočišče. Muzej bo uskoške zgodbe dopolnjeval s pričevanji potomcev: zlasti z drobci vsakdana, ki se v urbarjih ne zapišejo.",
+      "Prvi turški vpad na ozemlje današnje Slovenije se je zgodil prav v Beli krajini: 9. oktobra 1408 so roparske čete iz Bosne oplazile belokranjska tla in izropale okolico Metlike — o njem je po starem izročilu poročal šele Valvasor (1689). Vojna krajina (1460–1881) je bila obrambni pas ob najbolj izpostavljenem odseku avstrijsko-osmanske meje — zemlja, ki ni pripadala fevdalnim gospodom, ampak vojski. V 16. stoletju so jo poselili Uskoki — begunci srbskega, hrvaškega in vlaškega porekla, ki so bežali pred turškimi vpadi; ob Kolpi jim je vladal senjski knez Nikola Frankopan. Vpadi so Belo krajino večkrat opustošili: obramba tu ni bila abstrakcija, ampak vsakdan ob isti reki.\n\nPogodba z vojaško upravo je bila jasna: prosta zemlja in oprostitev fevdalnih dajatev v zameno za večno orožje. Gospodarska hrbtenica uskoških vasi je bila zadruga — več hišnih družin, ki je obdelovala skupno zemljo in skupaj nosila vojaško dolžnost; pozimi so orali in sejali, spomladi pa hodili na straže ob reki. Njihovo ime — po razlagi »tisti, ki je skočil prek« — je spomin na begunce, ki so preskočili mejo in našli novo domovino.\n\nUskoški potomci so se naselili v vaseh ob reki — Bojanci, Marindol, Paunoviči — in ohranili pravoslavno vero ter svoje običaje do danes; pravoslavna cerkev in pokopališče v Bojancih skupnost še danes držita skupaj. Iz tega srečanja svetov je zrasel del belokranjske identitete: belokranjsko pogačo radi imenujejo »darilo Uskokov slovenskemu narodu«, spomin na vojnokrajiške čase pa nosi utrjena domačija Šokčev dvor v Žuničih — v tej zbirki ima svoj zapis.\n\nLeta 1881 je Vojna krajina prešla pod civilno upravo — tri stoletja oboroženega vsakdana so se končala, meja ob Kolpi pa je ostala. Dediščina teh stoletij je dvojna: pripoved o sožitju dveh ver in jezikov ob isti reki ter vasi, ki so se naučile živeti z mejno negotovostjo — v času, ko je bila vsaka domačija ob Kolpi tudi zatočišče. Muzej bo uskoške zgodbe dopolnjeval s pričevanji potomcev: zlasti z drobci vsakdana, ki se v urbarjih ne zapišejo.",
     storyEn:
-      "The Military Frontier (1460–1881) was a defensive belt along the most exposed section of the Austro-Ottoman border — land that belonged not to feudal lords but to the army. In the 16th century it was settled by the Uskoks — refugees of Serbian, Croatian and Vlach origin fleeing the Turkish incursions; along the Kolpa they were ruled by the prince of Senj, Nikola Frankopan. The incursions ravaged Bela krajina more than once: defence here was not an abstraction but an everyday life on the same river.\n\nThe bargain with the military administration was clear: free land and exemption from feudal dues in exchange for perpetual arms. The backbone of the Uskok villages was the zadruga — several house communities working common land and bearing the military duty together; in winter they ploughed and sowed, in spring they walked the river guard. Their very name — explained as \"the one who jumped across\" — remembers refugees who leapt the border and found a new homeland.\n\nThe Uskok descendants settled in villages along the river — Bojanci, Marindol, Paunoviči — and have kept their Orthodox faith and customs to this day; the Orthodox church and churchyard at Bojanci still hold the community together. From this meeting of worlds grew part of the Bela krajina identity: the Bela krajina pogača is gladly called a \"gift of the Uskoks to the Slovene nation\", and the fortified Šokčev dvor homestead in Žuniči — which has its own record in this collection — carries the memory of the frontier era.\n\nIn 1881 the Military Frontier passed to civil administration — three centuries of armed everyday life ended, but the border along the Kolpa remained. The legacy of those centuries is twofold: a story of two faiths and two languages living on the same river, and villages that learned to live with border uncertainty — at a time when every farmstead on the Kolpa was also a refuge. The museum will enrich the Uskok stories with the descendants' testimonies: above all with the fragments of everyday life that urbars never record.",
+      "The first Ottoman incursion into the territory of present-day Slovenia happened precisely in Bela krajina: on 9 October 1408 raiding parties from Bosnia swept across the Bela krajina soil and plundered the surroundings of Metlika — of it, only Valvasor reported, following old tradition (1689). The Military Frontier (1460–1881) was a defensive belt along the most exposed section of the Austro-Ottoman border — land that belonged not to feudal lords but to the army. In the 16th century it was settled by the Uskoks — refugees of Serbian, Croatian and Vlach origin fleeing the Turkish incursions; along the Kolpa they were ruled by the prince of Senj, Nikola Frankopan. The incursions ravaged Bela krajina more than once: defence here was not an abstraction but an everyday life on the same river.\n\nThe bargain with the military administration was clear: free land and exemption from feudal dues in exchange for perpetual arms. The backbone of the Uskok villages was the zadruga — several house communities working common land and bearing the military duty together; in winter they ploughed and sowed, in spring they walked the river guard. Their very name — explained as \"the one who jumped across\" — remembers refugees who leapt the border and found a new homeland.\n\nThe Uskok descendants settled in villages along the river — Bojanci, Marindol, Paunoviči — and have kept their Orthodox faith and customs to this day; the Orthodox church and churchyard at Bojanci still hold the community together. From this meeting of worlds grew part of the Bela krajina identity: the Bela krajina pogača is gladly called a \"gift of the Uskoks to the Slovene nation\", and the fortified Šokčev dvor homestead in Žuniči — which has its own record in this collection — carries the memory of the frontier era.\n\nIn 1881 the Military Frontier passed to civil administration — three centuries of armed everyday life ended, but the border along the Kolpa remained. The legacy of those centuries is twofold: a story of two faiths and two languages living on the same river, and villages that learned to live with border uncertainty — at a time when every farmstead on the Kolpa was also a refuge. The museum will enrich the Uskok stories with the descendants' testimonies: above all with the fragments of everyday life that urbars never record.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/bojanci-1908.jpg",
     imageCredit: "Foto: neznani avtor, 1908 · Wikimedia Commons · javna last",
@@ -338,6 +338,18 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "spletni-vir",
         license: "CC BY-SA 4.0",
         url: "https://sl.wikipedia.org/wiki/Vojna_krajina",
+      },
+      {
+        key: "wiki-turski-vpadi",
+        nameSi: "Wikipedija: turški vpadi (prvi vpad na slovensko ozemlje — 9. oktober 1408, Bela krajina)",
+        nameEn: "Wikipedia: Ottoman incursions (the first incursion into Slovene territory — 9 October 1408, Bela krajina)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Tur%C5%A1ki_vpadi",
+        noteSi:
+          "Prvi vpad na ozemlje današnje Slovenije 9. 10. 1408: iz Bosne skozi Belo krajino, ropanje okolice Metlike; poroča Janez Vajkard Valvasor (1689).",
+        noteEn:
+          "The first incursion into the territory of present-day Slovenia on 9 October 1408: from Bosnia through Bela krajina, plundering the surroundings of Metlika; reported by Janez Vajkard Valvasor (1689).",
       },
       {
         key: "wiki-bela-krajina",
@@ -713,6 +725,17 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://radio-odeon.com/",
         noteSi: "Regionalni radio je junija 2026 napovedal obeležitev obeh jubilejev.",
         noteEn: "The regional radio announced the marking of both jubilees in June 2026.",
+      },
+      {
+        key: "zupanic-sopek",
+        nameSi: "Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        nameEn: "Katarina Zupanič: A Bouquet of Field Flowers from Griblje in Bela Krajina, the Županič Memorial Volume, Ljubljana 1939",
+        sourceType: "objava",
+        license: "pisni vir / print source",
+        noteSi:
+          "Prispevek o poljskem cvetju Gribelj v Županičevem zborniku (1939) — pisna priča o botaničnem pogledu na vas; navedba po seznamu virov članka Griblje na Wikipediji.",
+        noteEn:
+          "A contribution on the field flowers of Griblje in the Županič memorial volume (1939) — a written witness of the botanical gaze on the village; cited after the source list of the Wikipedia article on Griblje.",
       },
     ],
   },
@@ -1491,9 +1514,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Bela krajina is one of the Slovene lands of the white stork: nests on chimneys mark a village that left room for nature.",
     storySi:
-      "Bela štorklja se vrne iz Afrike konec marca in aprila — prav v čas, ko jurji naznanjajo pomlad. V Beli krajini gnezdi na dimnikih in drogovih, ob reki in mokriščih Kolpe išče hrano, avgusta in septembra pa se z mladiči odpravi na pot čez Balkan proti Afriki.\n\nPot je daljša, kot se zdi. Štorklje iz Slovenije letijo prek Balkana do Bosporske ožine ob Črnem morju, naprej čez Bližnji vzhod in dol po Nilu do podsaharske Afrike; ne letijo ponoči in ne čez odprta morja, ampak se dvigajo v toplotnih stolpih nad kopnim. Dnevno preletijo stotine kilometrov, na leto pa več kot deset tisoč v vsako smer. Vrnitev v isto gnezdo je zato majhen čudež navigacije brez kompasa.\n\nGnezdo je naselje, ne samo stavba: pari se vračajo k istemu dimniku, gnezdo vsako leto dograjujejo, tehta lahko več sto kilogramov, v njem pa se izmenjujejo generacije. Domačini gnezda varujejo in popravljajo — tudi s prihrano hrano, če pomladi zmanjka. Dolina Kolpe je zavarovano območje Natura 2000 prav tudi zaradi ptic ob reki: mrtvice, travniki in plitvine so štorklji jedilnik.\n\nSlovenija šteje nekaj sto parov bele štorklje; popise vodi Društvo za opazovanje in preučevanje ptic Slovenije (DOPPS), najgosteje pa vrsta gnezdi v pomurski ravnini. Bela krajina je zahodni krak te zgodbe: tu gnezda niso gosta, a je zato vsako posebej znano.\n\nVaška identiteta štorklje je izrecna: gnezdo na dimniku je čast, zato gnezda domačini varujejo in popravljajo. Muzej bo spremljal gnezda v Gribljah z vaškimi fotografi: vsako leto en posnetek, vsak posnetek en vir. Tako zbirka raste kot sam življenjski krog ptice.",
+      "Bela štorklja se vrne iz Afrike konec marca in aprila — prav v čas, ko jurji naznanjajo pomlad. V Beli krajini gnezdi na dimnikih in drogovih, ob reki in mokriščih Kolpe išče hrano, avgusta in septembra pa se z mladiči odpravi na pot čez Balkan proti Afriki.\n\nPot je daljša, kot se zdi. Štorklje iz Slovenije letijo prek Balkana do Bosporske ožine ob Črnem morju, naprej čez Bližnji vzhod in dol po Nilu do podsaharske Afrike; ne letijo ponoči in ne čez odprta morja, ampak se dvigajo v toplotnih stolpih nad kopnim. Dnevno preletijo stotine kilometrov, na leto pa več kot deset tisoč v vsako smer. Vrnitev v isto gnezdo je zato majhen čudež navigacije brez kompasa.\n\nGnezdo je naselje, ne samo stavba: pari se vračajo k istemu dimniku, gnezdo vsako leto dograjujejo, tehta lahko več sto kilogramov, v njem pa se izmenjujejo generacije. Domačini gnezda varujejo in popravljajo — tudi s prihrano hrano, če pomladi zmanjka. Dolina Kolpe je zavarovano območje Natura 2000 prav tudi zaradi ptic ob reki: mrtvice, travniki in plitvine so štorklji jedilnik.\n\nSlovenija šteje nekaj sto parov bele štorklje; popise vodi Društvo za opazovanje in preučevanje ptic Slovenije (DOPPS), najgosteje pa vrsta gnezdi v pomurski ravnini. Bela krajina je zahodni krak te zgodbe — in presenetljivo mlad: prve bele štorklje so se tu naselile šele leta 1993, verjetno kot posledica vojne na Hrvaškem, ki je ptice pregnala z gnezd na drugem bregu Kolpe. Danes tu gnezdi okoli enajst parov, ob reki pri Zemeljah, Krasincu, Otku, Borštu, Cerkvišču in Proložju ter ob Lahinji v okolici Dragatuša — gnezda niso gosta, a je zato vsako posebej znano.\n\nVaška identiteta štorklje je izrecna: gnezdo na dimniku je čast, zato gnezda domačini varujejo in popravljajo. Muzej bo spremljal gnezda v Gribljah z vaškimi fotografi: vsako leto en posnetek, vsak posnetek en vir. Tako zbirka raste kot sam življenjski krog ptice.",
     storyEn:
-      "The white stork returns from Africa at the end of March and in April — precisely when the jurji announce spring. In Bela krajina it nests on chimneys and poles, feeds by the river and wetlands of the Kolpa, and in August and September departs with its young across the Balkans towards Africa.\n\nThe journey is longer than it seems. Storks from Slovenia fly across the Balkans to the Bosphorus at the Black Sea, on over the Middle East and down the Nile to Sub-Saharan Africa; they do not fly at night, nor over open seas, but climb the thermal towers above the land. They cover hundreds of kilometres a day, and more than ten thousand in each direction every year. The return to the same nest is a small miracle of navigation without a compass.\n\nThe nest is a settlement, not merely a structure: pairs return to the same chimney, rebuild the nest each year, until it can weigh several hundred kilograms, and generations succeed one another within it. The households protect and mend the nests — even with spare food when a spring runs hungry. The Kolpa valley is a protected Natura 2000 site precisely because of its riverside birds: backwaters, meadows and shallows are the stork's menu.\n\nSlovenia counts a few hundred pairs of white storks; the censuses are led by the Bird Watching and Study Association of Slovenia (DOPPS), and the densest colonies stand in the Pomurje plain. Bela krajina is the western arm of the story: the nests here are not many, and each one is therefore known by name.\n\nThe village identity of the stork is explicit: a nest on one's chimney is an honour, so the households protect and repair the nests. The museum will follow the nests of Griblje with village photographers: one photograph a year, every photograph a source. Thus the collection grows like the bird's own life cycle.",
+      "The white stork returns from Africa at the end of March and in April — precisely when the jurji announce spring. In Bela krajina it nests on chimneys and poles, feeds by the river and wetlands of the Kolpa, and in August and September departs with its young across the Balkans towards Africa.\n\nThe journey is longer than it seems. Storks from Slovenia fly across the Balkans to the Bosphorus at the Black Sea, on over the Middle East and down the Nile to Sub-Saharan Africa; they do not fly at night, nor over open seas, but climb the thermal towers above the land. They cover hundreds of kilometres a day, and more than ten thousand in each direction every year. The return to the same nest is a small miracle of navigation without a compass.\n\nThe nest is a settlement, not merely a structure: pairs return to the same chimney, rebuild the nest each year, until it can weigh several hundred kilograms, and generations succeed one another within it. The households protect and mend the nests — even with spare food when a spring runs hungry. The Kolpa valley is a protected Natura 2000 site precisely because of its riverside birds: backwaters, meadows and shallows are the stork's menu.\n\nSlovenia counts a few hundred pairs of white storks; the censuses are led by the Bird Watching and Study Association of Slovenia (DOPPS), and the densest colonies stand in the Pomurje plain. Bela krajina is the western arm of the story — and a surprisingly young one: the first white storks settled here only in 1993, probably as a consequence of the war in Croatia, which drove the birds from their nests on the far bank of the Kolpa. Today around eleven pairs breed here, along the river at Zemelj, Krasinec, Otok, Boršt, Cerkvišče and Prolozje and along the Lahinja near Dragatuš — the nests are not many, and each one is therefore known by name.\n\nThe village identity of the stork is explicit: a nest on one's chimney is an honour, so the households protect and repair the nests. The museum will follow the nests of Griblje with village photographers: one photograph a year, every photograph a source. Thus the collection grows like the bird's own life cycle.",
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/storklja.jpg",
     imageCredit: "Foto: fveronesi1 · Wikimedia Commons · CC BY-SA 4.0",
@@ -1540,6 +1563,18 @@ export const seedExhibits: SeedExhibit[] = [
         license: "CC BY-SA 4.0",
         url: "https://sl.wikipedia.org/wiki/Bela_%C5%A1torklja",
       },
+      {
+        key: "wiki-bk-storklje",
+        nameSi: "Wikipedija: Bela krajina (odstavek o belih štorkljah — naselitev 1993)",
+        nameEn: "Wikipedia: Bela krajina (the passage on the white storks — the 1993 settlement)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Bela_krajina",
+        noteSi:
+          "Naselitev prvih belih štorkelj leta 1993, verjetno kot posledica vojne na Hrvaškem; okoli 11 gnezdečih parov ob Kolpi in Lahinji s seznamom vasi.",
+        noteEn:
+          "The settlement of the first white storks in 1993, probably as a consequence of the war in Croatia; around 11 breeding pairs along the Kolpa and the Lahinja with the list of villages.",
+      },
     ],
   },
   {
@@ -1554,9 +1589,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The white birch grows across all of Bela krajina; the region and its bright identity are named after it, and by it the meadows are told from the woods.",
     storySi:
-      "Belina breza (Betula pendula) je pionirska drevesna vrsta, ki osvaja svetle gozdne robe in opuščene travnike — po zadnji ledeni dobi je bila med prvimi drevesi, ki so se vrnila v odprto Evropo. V Beli krajini je postala identiteta: »bela« pokrajine se razkriva ne le po apneno beljenih stenah hiš in belem kruhu, ampak tudi po beli skorji brez.\n\nPo beli skorji so črne črtice — ljudje so v njih videli pisanje, ki ga ni nihče naučil brati. Iz lesa so nastajali rogovi in korita, iz lubja obroči in zdravilni obkladki, iz vej metle, ki so pometale dvorišča, iz brstov pa čaj; spomladi so iz ranjenega debla natačili sok — hladno, bistro pijačo, ki so jo imeli za prvo pomladansko zdravilo. V slovenski pripovedi je breza drevo začetkov: prva se zaseli opuščeno zemljo, prva ozeleni rob gozda, kjer je prej pihal samo veter.\n\nJurji so se oblekli v njeno zelenje — v zapisu o jurjevanju ta šega stoji skupaj z razlagami o pomladi. Breza je pokrajini dala tudi obraz: kdor hodi ob Kolpi, jo vidi na vsakem koraku — ob bregovih, na robu vinogradov, za vaškimi hlevi. Bela krajina brez breze ne bi bila bela; ime dežele se zdi njen osebni dar.\n\nMuzej ima brezo za enega od osrednjih motivov: obiskovalca vabimo, da fotografira eno samo brezo v Gribljah ob vsakem obisku — iz tisočih posnetkov bo nekoč nastala letna galerija vasi. Breza je letni čas v drevesu: spomladi svetla, jeseni zlata, pozimi samo še bela črta na hribu — enaka vasi, ki jo piše.",
+      "Belina breza (Betula pendula) je pionirska drevesna vrsta, ki osvaja svetle gozdne robe in opuščene travnike — po zadnji ledeni dobi je bila med prvimi drevesi, ki so se vrnila v odprto Evropo. V Beli krajini je postala identiteta: »bela« pokrajine se razkriva ne le po apneno beljenih stenah hiš in belem kruhu, ampak tudi po beli skorji brez.\n\nPo beli skorji so črne črtice — ljudje so v njih videli pisanje, ki ga ni nihče naučil brati. Iz lesa so nastajali rogovi in korita, iz lubja obroči in zdravilni obkladki, iz vej metle, ki so pometale dvorišča, iz brstov pa čaj; spomladi so iz ranjenega debla natačili sok — hladno, bistro pijačo, ki so jo imeli za prvo pomladansko zdravilo. V slovenski pripovedi je breza drevo začetkov: prva se zaseli opuščeno zemljo, prva ozeleni rob gozda, kjer je prej pihal samo veter.\n\nJurji so se oblekli v njeno zelenje — v zapisu o jurjevanju ta šega stoji skupaj z razlagami o pomladi. Breza je pokrajini dala tudi obraz: kdor hodi ob Kolpi, jo vidi na vsakem koraku — ob bregovih, na robu vinogradov, za vaškimi hlevi. Bela krajina brez breze ne bi bila bela; ime dežele se zdi njen osebni dar. Tudi varstvo ji je sledilo: Krajinski park Kolpa, ki varuje obrežni svet ob reki — dolino, ki se odpira tudi pod Gribljami —, ureja Uredba o Krajinskem parku Kolpa (Uradni list RS, št. 85/06, s poznejšimi spremembami): breza je zavarovana skupaj z deželo, ki jo je poimenovala.\n\nMuzej ima brezo za enega od osrednjih motivov: obiskovalca vabimo, da fotografira eno samo brezo v Gribljah ob vsakem obisku — iz tisočih posnetkov bo nekoč nastala letna galerija vasi. Breza je letni čas v drevesu: spomladi svetla, jeseni zlata, pozimi samo še bela črta na hribu — enaka vasi, ki jo piše.",
     storyEn:
-      "The silver birch (Betula pendula) is a pioneer tree that colonises bright forest edges and abandoned meadows — after the last ice age it was among the first trees to return to open Europe. In Bela krajina it became an identity: the region's \"white\" reveals itself not only in the lime-whitewashed house walls and the white bread, but in the birch's white bark.\n\nAcross the white bark run black marks — people saw in them a writing no one had taught them to read. Its wood gave horns and troughs, its bark hoops and healing poultices, its twigs the besoms that swept the yards, its buds a tea; in spring the sap was tapped from the wounded trunk — a cold, clear drink held to be the first medicine of spring. In Slovene tale the birch is the tree of beginnings: the first to settle abandoned ground, the first to green the edge of a wood where only wind blew before.\n\nThe jurji dressed in its greenery — in the record on jurjevanje that custom stands together with the readings of spring. The birch gave the landscape its face as well: whoever walks along the Kolpa sees it at every step — by the banks, on the edge of the vineyards, behind the village byres. Bela krajina would not be white without the birch; the region's name seems its personal gift.\n\nThe museum takes the birch as one of its central motifs: visitors are invited to photograph a single birch in Griblje on every visit — one day, an annual gallery of the village will grow out of a thousand frames. The birch is a season in a tree: bright in spring, golden in autumn, in winter only a white line on the hill — like the village it writes.",
+      "The silver birch (Betula pendula) is a pioneer tree that colonises bright forest edges and abandoned meadows — after the last ice age it was among the first trees to return to open Europe. In Bela krajina it became an identity: the region's \"white\" reveals itself not only in the lime-whitewashed house walls and the white bread, but in the birch's white bark.\n\nAcross the white bark run black marks — people saw in them a writing no one had taught them to read. Its wood gave horns and troughs, its bark hoops and healing poultices, its twigs the besoms that swept the yards, its buds a tea; in spring the sap was tapped from the wounded trunk — a cold, clear drink held to be the first medicine of spring. In Slovene tale the birch is the tree of beginnings: the first to settle abandoned ground, the first to green the edge of a wood where only wind blew before.\n\nThe jurji dressed in its greenery — in the record on jurjevanje that custom stands together with the readings of spring. The birch gave the landscape its face as well: whoever walks along the Kolpa sees it at every step — by the banks, on the edge of the vineyards, behind the village byres. Bela krajina would not be white without the birch; the region's name seems its personal gift. Protection has followed it too: the Kolpa Landscape Park, which guards the riverside world along the river — the valley that opens below Griblje as well — is governed by the Decree on the Kolpa Landscape Park (Official Gazette of the Republic of Slovenia, no. 85/06, with later amendments): the birch is protected together with the land it named.\n\nThe museum takes the birch as one of its central motifs: visitors are invited to photograph a single birch in Griblje on every visit — one day, an annual gallery of the village will grow out of a thousand frames. The birch is a season in a tree: bright in spring, golden in autumn, in winter only a white line on the hill — like the village it writes.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/breze.jpg",
     imageCredit: "Foto: Fran Vesel · Slovenski etnografski muzej · javna last",
@@ -1586,12 +1621,118 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://www.kp-kolpa.si/",
       },
       {
+        key: "kp-kolpa-uredba",
+        nameSi: "Krajinski park Kolpa — osebna izkaznica: Uredba o Krajinskem parku Kolpa (Uradni list RS, št. 85/06)",
+        nameEn: "Kolpa Landscape Park — identity card: the Decree on the Kolpa Landscape Park (Official Gazette of the RS, no. 85/06)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://kp-kolpa.si/o-nas/osebna-izkaznica/",
+        noteSi:
+          "Pravna podlaga parka, ki varuje obrežni svet ob Kolpi: steljnike, brezove gozdove in kraške pojave.",
+        noteEn:
+          "The legal basis of the park that guards the riverside world of the Kolpa: the steljniki, birch woods and karst features.",
+      },
+      {
         key: "wiki-breza",
         nameSi: "Wikipedija: navadna breza (Betula pendula — biologija, razširjenost)",
         nameEn: "Wikipedia: silver birch (Betula pendula — biology, distribution)",
         sourceType: "spletni-vir",
         license: "CC BY-SA 4.0",
         url: "https://sl.wikipedia.org/wiki/Navadna_breza",
+      },
+    ],
+  },
+  {
+    slug: "crni-moceril",
+    category: "narava",
+    titleSi: "Črni močeril — črna človeška ribica Bele krajine",
+    titleEn: "The black olm — Bela krajina's dark proteus",
+    periodSi: "odkrit 18. oktobra 1986",
+    periodEn: "discovered on 18 October 1986",
+    summarySi:
+      "Podzemna dvoživka, ki živi le v kraških vodah okolice Črnomlja: temna sestrica znane bele človeške ribice — in za razliko od nje vidi.",
+    summaryEn:
+      "An underground amphibian living only in the karst waters around Črnomelj: the dark sister of the famous white olm — and unlike her, it can see.",
+    storySi:
+      "Griblje so najbolj suh kot Bele krajine — nad vasjo je svetlo in vode je malo. Toda pod istim kraškim svetom teče druga dežela: voda, ki ponika in se vrača v studencih ob Kolpi. V njej živi žival, ki je znanost srečala šele leta 1986: črni močeril, podvrsta človeške ribice — temno pigmentirana in z normalno razvitimi očmi, medtem ko je njena slavna bela sorodnica iz Postojnske jame brez pigmenta in slepa.\n\nOdkritje se je zgodilo 18. oktobra 1986, ko so raziskovalci Inštituta za raziskovanje krasa ob črpalnem preizkusu vode na izviru Dobličice pri Črnomlju izvlekli do takrat neznano temno žival. Podvrsto je znanstveno opisal slovenski zoolog Boris Sket in ji dal ime parkelj — »hudiček«: skoraj črno telo z živo rdečimi škrgami je namreč spominjalo na miklavževske parklje, črne vragove z rdečim jezikom. Po do sedaj znanih podatkih črni močeril živi le v ožji okolici Črnomlja, na površini manjši od sto kvadratnih kilometrov. Izvir Jelševniščice v Jelševniku je edino najdišče na svetu, kjer ga je mogoče videti v naravnem okolju.\n\nBelokranjska črna človeška ribica — tako jo radi imenujejo — spada med najbolj ogrožene živalske podvrste pri nas: njena usoda je napisana v čistosti ponikalnic in izvirov, ki jih napaja isti kraški sistem, pod katerim stojijo tudi Griblje. Suhi svet nad vasjo in črna žival pod njim sta dve plasti iste zgodbe, ki ju drži voda — kar ponikne na enem koncu dežele, se izvira na drugem.\n\nMuzej zapis dodaja zbirki narave ob Kolpi z eno opombo, ki velja za vse: svobodna fotografija črnega močerila še ni v arhivu — zato zapis stoji brez nje, po isti poštenosti, ki prepoveduje izmišljevanje. Kdor bo ob izviru Jelševniščice kdaj posnel to žival, je vabljen kot priča.",
+    storyEn:
+      "Griblje is the driest corner of Bela krajina — above the village the world is bright and water is scarce. Yet beneath the same karst world runs another land: water that sinks away and returns in the springs along the Kolpa. In it lives an animal science met only in 1986: the black olm, a subspecies of the olm — darkly pigmented and with normally developed eyes, while its famous white relative of Postojna Cave is pigmentless and blind.\n\nThe discovery came on 18 October 1986, when researchers of the Karst Research Institute, during a pumping test at the Dobličica spring near Črnomelj, drew out a dark animal unknown until then. The subspecies was scientifically described by the Slovene zoologist Boris Sket, who gave it the name parkelj — the \"little devil\": its almost black body with vividly red gills recalled the St. Nicholas devils, black imps with red tongues. According to present knowledge the black olm lives only in the narrow surroundings of Črnomelj, over an area smaller than a hundred square kilometres. The Jelševniščica spring at Jelševnik is the only site in the world where it can be seen in its natural environment.\n\nBela krajina's black olm — as it is gladly called — ranks among the most endangered animal subspecies of our land: its fate is written in the purity of the sinking streams and springs fed by the same karst system beneath which Griblje stands. The dry world above the village and the black animal below it are two layers of one story held together by water — what sinks at one end of the land rises at the other.\n\nThe museum adds this record to the nature of the Kolpa with one note that holds for everything: no free photograph of the black olm is yet in the archive — the record therefore stands without one, under the same honesty that forbids invention. Whoever one day photographs this animal at the Jelševniščica spring is invited as a witness.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: 1986,
+    featured: false,
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "wiki-moceril",
+        nameSi: "Wikipedija: črni močeril (Proteus anguinus parkelj)",
+        nameEn: "Wikipedia: the black olm (Proteus anguinus parkelj)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/%C4%8Crni_mo%C4%8Deril",
+        noteSi:
+          "Temeljni zapis: odkritje 1986 ob preučevanju vode iz izvira Dobličice, znanstveni opis Borisa Sketa, življenje v ožji okolici Črnomlja.",
+        noteEn:
+          "The base record: the 1986 discovery while studying the water of the Dobličica spring, Boris Sket's description, life in the narrow surroundings of Črnomelj.",
+      },
+      {
+        key: "wiki-bk-moceril",
+        nameSi: "Wikipedija: Bela krajina (odstavek o črnem močerilu — odkritje ob izviru Jelševniščice)",
+        nameEn: "Wikipedia: Bela krajina (the passage on the black olm — the discovery by the Jelševniščica spring)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Bela_krajina",
+        noteSi:
+          "Krajevna umestitev odkritja: izvir Jelševniščice v naselju Jelševnik.",
+        noteEn:
+          "The local setting of the discovery: the Jelševniščica spring in the village of Jelševnik.",
+      },
+      {
+        key: "zrsvn-moceril",
+        nameSi: "Zavod RS za varstvo narave: črna človeška ribica",
+        nameEn: "Institute of the Republic of Slovenia for Nature Conservation: the black olm",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.zrsvn-varstvonarave.si/",
+        noteSi:
+          "Državna naravovarstvena ustanova o ogroženi podvrsti; poziv k zaščiti izvirov Bele krajine.",
+        noteEn:
+          "The state nature-conservation institution on the endangered subspecies; the call to protect Bela krajina's springs.",
+      },
+      {
+        key: "rtv-moceril",
+        nameSi: "RTV Slovenija (junij 2020): poziv k zaščiti črne človeške ribice v Beli krajini",
+        nameEn: "RTV Slovenija (June 2020): a call to protect the black olm of Bela krajina",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.rtvslo.si/",
+        noteSi:
+          "Primerjava z belo podvrsto: temno obarvana koža in dokaj normalno razvite oči; ogroženost.",
+        noteEn:
+          "The comparison with the white subspecies: darkly coloured skin and fairly normally developed eyes; the endangerment.",
+      },
+      {
+        key: "odeon-moceril",
+        nameSi: "Radio Odeon (11. december 2016): črna človeška ribica",
+        nameEn: "Radio Odeon (11 December 2016): the black olm",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/",
+        noteSi:
+          "Natančen datum odkritja: 18. oktober 1986, črpalni preizkus izvira Dobličice.",
+        noteEn:
+          "The exact date of the discovery: 18 October 1986, a pumping test at the Dobličica spring.",
+      },
+      {
+        key: "ckff-moceril",
+        nameSi: "CKFF: človeška ribica (Proteus anguinus Laurenti, 1768)",
+        nameEn: "CKFF: the olm (Proteus anguinus Laurenti, 1768)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.ckff.si/",
+        noteSi:
+          "Morfološka primerjava podvrst: črnosiva barva, krajša in širša glava, normalno razvite oči.",
+        noteEn:
+          "The morphological comparison of the subspecies: black-grey colour, a shorter and broader head, normally developed eyes.",
       },
     ],
   },
@@ -2126,5 +2267,19 @@ export const seedEvents: Omit<MuseumEventDTO, "id">[] = [
     eventType: "PRIREDITEV",
     isExternal: true,
     externalUrl: "https://www.crnomelj.si/",
+  },
+  {
+    titleSi: "40 let odkritja črnega močerila — naravoslovna ura ob izviru",
+    titleEn: "40 years since the black olm's discovery — a nature hour at the spring",
+    descriptionSi:
+      "Ob 40. obletnici odkritja črne človeške ribice (18. oktobra 1986) se sprehodimo do izvira Jelševniščice v Jelševniku — edinega kraja na svetu, kjer črnega močerila lahko opazujemo v naravi. Vodena ura o podzemlju, ki ga deli z Gribljami.",
+    descriptionEn:
+      "Marking forty years since the discovery of the black olm (18 October 1986), we walk to the Jelševniščica spring at Jelševnik — the only place on Earth where the black olm can be observed in nature. A guided hour on the underground it shares with Griblje.",
+    startsAt: eventDate("2026-10-25"),
+    locationSi: "Jelševnik — izvir Jelševniščice",
+    locationEn: "Jelševnik — the Jelševniščica spring",
+    eventType: "VODENJE",
+    isExternal: false,
+    externalUrl: null,
   },
 ];

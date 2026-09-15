@@ -17,6 +17,7 @@ export const WIKIDATA_SAMEAS: Record<string, string> = {
   "sveti-vid": "Q18515927",
   "petstoletnica-2026": "Q18515927",
   "kolpa-reka": "Q211046",
+  "crni-moceril": "Q12807022",
 };
 
 /** Celotni sameAs URL za zapis (null, če preslikka ne obstaja). */

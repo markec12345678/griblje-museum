@@ -666,3 +666,30 @@ Stage Summary:
 - Minutna 429 ne ubija več pogovora za ves dan; dnevna pa obiskovalcu pove točno uro obnove (v njegovi coni)
 - mimo-2.5: plačljiv, neustrezen brez kredita; „bick picle" ne obstaja — obstoječa izbira modelov ostaja
 - Priporočilo uporabniku ostaja: enkratni nakup 10 USD na OpenRouter → 1000 brezplačnih zahtev/dan (≈20× več)
+
+---
+Task ID: 31
+Agent: Main agent (Z.ai Code)
+Task: Temeljita raziskava vsega o Gribljah (uporabnik: „odlično raziskuj se o gribljah vse kaj najdes temeljito")
+
+Work Log:
+- RAZISKAVA (~20 spletnih iskanj + Wikipedijini API-ji REST/query + preizkus branj strani): Wikipedija Griblje (cel članek — večina že vgrajena v griblje-vas iz naloge 27/29), Wikipedija Bela krajina (celoten izvleček), Wikipedija Črni močeril (REST summary), Wikipedija Turški vpadi (potrjitev 1408 prek iskanj), zaveza.si (memoar o 2. sv. v.), td-damelj.si (404), majaarchitect (turški vpadi), KP Kolpa (osebna izkaznica, uredba 85/06)
+- KLJUČNO ODKRITJE #1 — LOGLINE VRZEL: Zagonsko vprašanje vodnika je vprašalo po LONČARSTVU Bele krajine, zbirka pa ga nima — in upravičeno! Preverjeno: lončarstvo/suha roba je Ribnica/Kočevsko, Bela krajina pa je znana po LANENEM PLATNU (Wikipedija Bela krajina) in čebelarstvu. Vprašanje je vsebovalo napačno predpostavko → popravljeno na „lanenem platnu in vinu" (SL+EN), ker imamo tkalstvo + vino-in-crnina; vodnik zdaj odgovori z navedki [[tkalstvo]] (preizkušeno!)
+- KLJUČNO ODKRITJE #2 — ČRNI MOČERIL (Proteus anguinus parkelj): podvrsta človeške ribice, ki živi SAMO v kraških vodah okolice Črnomlja (<100 km²); temno pigmentirana in Z NORMALNO RAZVITIMI OČMI (7 virov: Wikipedija, RTV, 24ur, belakrajina.si, ckff.si, pms-lj.si, vzajemnost) — nasprotje slepi beli sorodnici iz Postojne; odkrita 18. oktobra 1986 ob črpalnem preizkusu izvira Dobličice (raziskovalci Inštituta za raziskovanje krasa; Radio Odeon 2016), opisana: zoolog Boris Sket, vzdevek parkelj = hudiček (črno telo + živo rdeče škrge ≈ miklavževski parklji); izvir Jelševniščice v Jelševniku = edino vidno najdišče na svetu; ogrožena (RTV 2020)
+- KLJUČNO ODKRITJE #3 — PRVI TURŠKI VPAD NA SLOVENSKO OZEMLJE: 9. oktober 1408, prav v Beli krajini (iz Bosne, ropanje okolice Metlike); edini poročevalec Valvasor 1689 — potrjeno z Wikipedijo Turški vpadi + 3 dodatnimi viri → vstavljeno kot prolog zapisa uskoki-in-vojna-krajina (SL+EN) + nov vir
+- KLJUČNO ODKRITJE #4 — ŠTORKLJE 1993: prve bele štorklje so se v Beli krajini naselile šele leta 1993, VERJETNO KOT POSLEDICA VOJNE NA HRVAŠKEM; ~11 gnezdečih parov ob Kolpi (Zemelj, Krasinec, Otok, Boršt, Cerkvišče, Prolozje) in Lahinji (Dragatuš) → obogatitev zapisa storklje (SL+EN) + nov vir
+- KLJUČNO ODKRITJE #5 — KRAJINSKI PARK KOLPA: pravna podlaga = Uredba o Krajinskem parku Kolpa (Uradni list RS, št. 85/06, s spremembami; kp-kolpa.si osebna izkaznica) → obogatitev zapisa bele-breze (SL+EN) + nov vir; Natura 2000, steljniki
+- ODKRITJE #6 — ŽUPANIČEV ZBORNIK 1939: Katarina Zupanič, „Šopek poljskih cvetlic iz Gribelj v Beli Krajini" (Ljubljana 1939; seznam virov Wikipedije Griblje) → nov vir v zapisu niko-zupanic (objava, brez URL — poštena navedba tiska)
+- ZAVRŽENE SLEDI (razlog): mimo-2.5/bick-picle (naloga 30), lončarstvo za BK (neustrezno), grad Gradac (regionalen, ne gribeljski), zaveza.si kot vir (politiziran memoarski vir brez novih overjenih dejstev o sami vasi), čebelarstvo (samo regionalna trditev, brez gribeljskega vira)
+- NOV ZAPIS crni-moceril (narava, DOCUMENTED, yearFrom 1986, addedAt 2026-09-16 → znak „Novo"): naslov SL+EN, celotna zgodba v muzejskem glasu (suhi svet nad vasjo + črna žival pod njim = isti kraški sistem; Sket/parkelj/miklavževski parklji; Jelševnik; poštena opomba o manjkajoči svobodni fotografiji), 6 virov (Wikipedija ×2, ZRSVN, RTV, Radio Odeon, CKFF), sameAs Wikidata Q12807022; življenjepis predmeta 4 faze (do 1986 TRADITION → 18. 10. 1986 odkritje → 1986→1990 opis → danes ogroženost); NOV dogodek: „40 let odkritja črnega močerila — naravoslovna ura ob izviru" (25. 10. 2026, Jelševnik, VODENJE)
+- Posodobitve števcev: i18n vodnikov podnaslov 28→29 zapisov (SL+EN)
+- Nauk: python heredoc požre ubežne narekovaje (\" → ") — biografija je lomila TS, dokler nisem popravil ročno; MultiEdit NI atomski — neuspešen poskus lahko pusti delno aplicirane ureditve (preveriti stanje po vsaki napaki!)
+- Slika močerila: Wikimedia Commons ostal rate-limited (403) celo sejo — zapis stoji pošteno brez fotografije (isti vzorec kot pgd-griblje-1927); priložnost za naslednjo sejo
+- VERIFIKACIJA: tsc 0, eslint 0 (po popravku), reseed + restart dev (pravilo naloge 26); /api/exhibits = 29 zapisov (crni-moceril z addedAt + 6 viri), /api/events = 7 dogodkov (novi: 40 let odkritja); agent-browser: kartica z znakom „Novo" + „Nedavno dodano", filter „Novo v zbirki" → „3 zapisi", dialog (celotna zgodba, 6 virov, harmonika „Življenje predmeta — 4 postaje" z vsemi fazami), časovnica 18 mejnikov z 1986, dogodki (#dogodki: naslov + lokacija Jelševnik), vodnik: podnaslov 29, nov starter, odgovor o močerilu s pravimi dejstvi + [[crni-moceril]], odgovor o lanenem platnu + [[tkalstvo]] (z-ai, ker je OpenRouter kvota še izčrpana — reset 00:00 UTC), EN vmesnik („The black olm", „New to the collection"), mobilni 390 px, noga statična, 0 napak v konzoli
+
+Stage Summary:
+- Zbirka: 29 zapisov / 135 virov (+1 zapis, +7 virov) — črni močeril kot prvi naravoslovni endemit zbirke; 3 zapisi trenutno nosijo znak „novo"
+- Popravljen semantični hrošč: zagonsko vprašanje vodnika ni več vodilo v slepo ulico (lončarstvo ne obstaja v zbirki/regiji → laneno platno, ki ga zbirka ima)
+- Novo kronološko dejstvo: 9. 10. 1408 kot prvi turški vpad na slovensko ozemlju — Bela krajina kot prizorišče „prvega dne" 500-letne vojne z Osmani
+- Štorklje: kolonizacija 1993 kot posledica vojne čez Kolpe — most med naravo in sodobno zgodovino regije
+- Ostalo programa: produkcija (push + Vercel + preverba); fotografija močerila, ko Commons sprosti omejitev
