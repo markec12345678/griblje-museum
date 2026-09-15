@@ -516,3 +516,27 @@ Stage Summary:
 - Odkritje: Leaflet karta je obstajala že prej (vrzel #4 iz analize 24 je bila napačna) — analize je treba preveriti proti kodi, ne samo proti spominu
 - Odkritje: po reseedu DEV strežnik potrebuje restart (stale SQLite ročaj) — dodano v proces
 - Ostalo programa: PR #24 + produkcija, ključa HF + ElevenLabs (uporabnik), issue #3, živi preizkus vodnika po okni kvote
+
+---
+Task ID: 26
+Agent: Main agent (Z.ai Code)
+Task: ElevenLabs žeton (nastavitev + preverba + priporočilo glasu) in issue #3 (čiščenje odvisnosti) po ponastavitvi peskovnika
+
+Work Log:
+- Peskovnik PONASTAVLJEN (samo Initial commit brez remote): projekt obnovljen iz GitHub — remote z žetonom ghp_c7Q…, fetch main, reset --hard; main = e8457d6 (PR #24, 26 zapisov / 113 virov), bun install 464 paketov, .env rekreiran (DATABASE_URL), dev strežnik :3000
+- Uporabnik priskrbel ELEVENLABS_API_KEY (sk_3c7a…): API preverba — ključ je VELJAVEN (prepoznan), a BREZ dovoljenj: user_read ✗, voices_read ✗, text_to_speech ✗ (401 missing_permissions) → ključ je bil ustvarjen brez TTS pravic, obstoječemu ključu pravic ni mogoče dodati — potreben NOV ključ (navodila uporabniku: Profile → API Keys → Create Key → označiti vsaj „Text to Speech“)
+- Kljuv ključ vseeno vpisan v .env.local (dokumentacija + preizkus verige): veriga deluje po zasnovi — ElevenLabs 401 (opozorilo v dnevniku) → z-ai 429 → odkrit 503 tts-unavailable v 0,6 s, brez sesutij
+- Priporočilo glasu (uporabnik: „najdražjega ali najboljšega brezplačnega“): model eleven_multilingual_v2 (najvišja kakovost, nativna slovenščina; flash v2_5 cenejši a slabši) + glas Antoni (ErXwobaYiN019PkySvjV, topli dokumentarni moški glas) — OBA ŽE v kodi; zamenjava glasu možna brez kode prek env ELEVENLABS_VOICE_SL/EN
+- Issue #3 revizija: večina (~20 paketov + ~37 shadcn komponent) že odstranjena v prejšnjih PR-jih; vseh 15 preostalih komponent v uporabi; vsi preostali paketi imajo živ uvoz (openseadragon prek dinamičnega uvoza v deep-zoom, sharp za next/image, 9× radix prek komponent)
+- Izvedeno čiščenje zadnjega ostanka: tailwind.config.ts (predloga TW3 — v TW4 brez @config direktive se NE naloži; vse preslikave že pokriva @theme inline) + tailwindcss-animate (njegov edini uvoz); animacije ostajajo iz tw-animate-css (dokazano v dist CSS: animate-in/out, fade, zoom, slide)
+- Nauk iz poskusa `bun update`: povzročil neskladje react 19.2.3 vs react-dom 19.3.0 → Turbopack panic „Internal Server Error“; popravljeno z obnovo bun.lock iz git (različice usklajene: react=react-dom=19.3.0, next 16.3.5) — posodabljanje prek celotnega lockfila je preveč agresivno, ciljane spremembe so varnejše
+- Preostale ranljivosti bun audit (27: 20 high) so IZKLJUČNO v razvojnih verigah (eslint, prisma CLI, minimatch/picomatch) — nikoli v produkcijskem standalone paketu
+- Verifikacija čiščenja: tsc 0; eslint 0; agent-browser: domača stran, iskalni dialog Ctrl+K (komande + sugestije), dialog zapisa Griblje — vas ob Kolpi (naslov, avdio vodnik, viri, povezani zapisi) — vse deluje; 0 novih napak
+- Zaplet z git (strop je pristal na main namesto na vejo): veja premaknjena z git branch -f, main povrnjen, sila potisk veje; PR #25 ustvarjen in squash združen → main = ede92a3
+- Vercel: env ELEVENLABS_API_KEY ustvarjen (production/preview/development, encrypted) + nova produkcijska namestitev sprožena (dpl_3nYfno…) — veriga je oborožena, ob zamenjavi ključa samo zamenjava vrednosti
+
+Stage Summary:
+- Issue #3 ZAPRT (PR #25): −1 paket, −295 vrstic, mrtva TW3 konfiguracija odstranjena; produkcijska površina čistejša
+- ElevenLabs: ključ veljaven a brez text_to_speech dovoljenja — uporabnik mora ustvariti nov ključ z TTS pravico (navodila dostavljena); do takrat veljajo obstoječe rezerve (z-ai → glas naprave), preverjene lokalno in pripravljene na produkciji
+- Glas/model po priporočilu: eleven_multilingual_v2 + Antoni (že v kodi, zamenjava brez kode prek env)
+- Ostalo programa: zamenjava ElevenLabs ključa (uporabnik) → živi preizkus govora na produkciji; HF_API_KEY še čaka
