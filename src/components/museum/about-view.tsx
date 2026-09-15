@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { useQuery } from "@tanstack/react-query";
+import { isStatsReadOnly } from "@/lib/stats-client";
 import { ALL_WALKS } from "@/lib/walks";
 import { printWorksheet } from "@/lib/worksheet";
 import { SITE_URL } from "@/lib/site";
@@ -76,6 +77,15 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
     staleTime: 5 * 60 * 1000,
   });
   const stats = statsQuery.data;
+
+  // Bralna namestitev (npr. Vercel): števci se ne zbirajo — poštena opomba
+  // namesto ničel brez razlage. Zastavica nastavi trackStat ob prvem pošiljanju.
+  const [statsReadOnly, setStatsReadOnly] = React.useState(false);
+  React.useEffect(() => {
+    setStatsReadOnly(isStatsReadOnly());
+    const t = window.setTimeout(() => setStatsReadOnly(isStatsReadOnly()), 1500);
+    return () => window.clearTimeout(t);
+  }, []);
 
   // Unikatni viri cele zbirke
   const allSources = React.useMemo(
@@ -215,8 +225,10 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             </div>
           )}
           <p className="mt-4 text-xs text-muted-foreground">
-            {t.statsView.note}
-            {stats.collectedSince &&
+            {statsReadOnly
+              ? t.statsView.readOnlyNote
+              : t.statsView.note}
+            {!statsReadOnly && stats.collectedSince &&
               ` · ${t.statsView.since} ${stats.collectedSince}.`}
           </p>
         </section>
