@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { db } from "@/lib/db";
+import { isReadOnlyDatabase } from "@/lib/readonly-db";
 
 export const dynamic = "force-dynamic";
 
@@ -54,9 +55,14 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (error) {
+    // Bralna namestitev (Vercel/Lambda): števci se tu ne zbirajo — odgovorimo
+    // pošteno, da odjemalec lahko pokaže opombo (enak vzorec kot guestbook).
+    if (isReadOnlyDatabase(error)) {
+      return NextResponse.json({ ok: false, readOnly: true });
+    }
     console.error("API /api/stats POST error:", error);
     // Statistika nikoli ne sme pokvariti obiska — tiho neuspeh.
-    return NextResponse.json({ ok: false }, { status: 200 });
+    return NextResponse.json({ ok: false });
   }
 }
 

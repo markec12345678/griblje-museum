@@ -80,6 +80,7 @@ export const ui = {
       topTitle: "Najbolj odprti zapisi",
       since: "števci tečejo od",
       note: "Zasebnost: brez piškotkov, brez IP-naslovov — samo anonimne seje brskalnika.",
+      readOnlyNote: "Ta namestitev muzej prikazuje samo za ogled — števci obiskov se tu ne zbirajo. Zbirajo se na lastni namestitvi muzeja.",
     },
     daily: {
       kicker: "Danes v muzeju",
@@ -981,6 +982,7 @@ export const ui = {
       topTitle: "Most opened records",
       since: "counters run since",
       note: "Privacy: no cookies, no IP addresses — only anonymous browser sessions.",
+      readOnlyNote: "This deployment is read-only — visit counters are not collected here. They run on the museum's own hosting.",
     },
     daily: {
       kicker: "Today in the museum",
@@ -1877,6 +1879,7 @@ export const ui = {
       topTitle: "Najviše otvarani zapisi",
       since: "brojači rade od",
       note: "Privatnost: bez kolačića, bez IP-adresa — samo anonimne sesije preglednika.",
+      readOnlyNote: "Ova je instalacija muzeja samo za pregled — brojači posjeta se ovdje ne prikupljaju. Prikupljaju se na vlastitoj instalaciji muzeja.",
     },
     daily: {
       kicker: "Danas u muzeju",
