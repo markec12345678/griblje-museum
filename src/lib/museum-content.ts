@@ -1418,6 +1418,85 @@ export const seedExhibits: SeedExhibit[] = [
       },
     ],
   },
+  {
+    slug: "vaska-sola",
+    category: "kraj",
+    titleSi: "Vaška šola — iz tablic v svet",
+    titleEn: "The village school — from slates into the world",
+    periodSi: "1869 → danes",
+    periodEn: "1869 → present",
+    summarySi:
+      "Cesarjev šolski zakon je vsaki vasi podaril branje in računanje; v Beli krajini je šola delovala celo pod okupacijo — v Črnomlju kot partizanska gimnazija.",
+    summaryEn:
+      "The Emperor's school law gave every village reading and arithmetic; in Bela krajina the school worked even under occupation — in Črnomelj as a Partisan gymnasium.",
+    storySi:
+      "Leta 1869 je Dunaj izdal Reichsvolksschulgesetz — državni zakon, ki je šolanje naredil za dolžnost vsakega otroka od šestega do štirinajstega leta. Po deželah cesarstva so zrasle vaške šole: ena učilnica, en učitelj, vsi razredi hkrati. Kdaj je takšna šola prišla v Griblje, v kateri hiši je stala in kdo je v njej učil — te podatke zbirka še išče; zapis gradi na dokumentiranem svetu, ki je obdajal vsako vaško šolo tistega časa.\n\nVaška šola je imela svoj vrstni red: tablica namesto zvezka, kreda namesto peresa, ustno štetje do sto in abecednik pod blazino. Vrstni red je prestavljal tudi kmetijsko leto — ob žetvi in senašbi so klopi stale prazne, saj so otroške roke na kmetiji štele toliko kot odrasle. Vsak izpeljan šolski dan je bila zato majhna zmaga.\n\nKdor je znal brati, je v vas zanesel svet: časopis, ki so si ga podajali od hiše do hiše, in pisma iz Amerike, ki so jih družine poslušale pri petrolijevi luči. Branje je bilo oblika vaške pošte, šola pa njen urad. Iz nje so zrasle poti, ki jih ta zbirka že pozna: Niko Županič, deček iz Gribelj, je postal univerzitetni profesor; Anton Filak, roka od pluga, svetovni prvak v oranju.\n\nBela krajina je šoli dodala še eno poglavje: med drugo svetovno vojno je bila eno najbolj svobodnih ozemelj okupirane Evrope — s šolami, tiskarnami in bolnišnicami. Po italijanski kapitulaciji septembra 1943 je v Črnomlju delovala partizanska gimnazija; stavba na fotografiji tega zapisa je ravno ona — danes glasbena šola. V letu, ko je bil pouk po Evropi prepovedan ali razseljen, je dežela ob Kolpi zmogla celo gimnazijo.\n\nMuzej išče razredne fotografije, imena učiteljev in učne knjige z imeni gribeljskih otrok. Vaška šola je zapustila največ arhiva in najmanj spomina: kdo pa si danes še zapomni, kaj je bilo napisano na tablici?",
+    storyEn:
+      "In 1869 Vienna issued the Reichsvolksschulgesetz — an imperial law that made schooling the duty of every child from six to fourteen. Across the lands of the Empire village schools grew up: one classroom, one teacher, all the grades at once. When such a school came to Griblje, in which house it stood and who taught in it — these details the collection is still seeking; this record builds on the documented world that surrounded every village school of that time.\n\nThe village school kept its own order: a slate instead of an exercise book, chalk instead of a pen, counting aloud to a hundred and a primer under the pillow. The order shifted with the farming year as well — at harvest and haying the benches stood empty, for on a farm children's hands counted as much as grown ones. Every completed school day was therefore a small victory.\n\nWhoever could read carried the world into the village: the newspaper passed from house to house, and the letters from America that families listened to by the petroleum lamp. Reading was a form of the village post, and the school was its office. Out of it grew the roads this collection already knows: Niko Županič, the boy from Griblje, became a university professor; Anton Filak, a hand from the plough, a world champion of ploughing.\n\nBela krajina added another chapter to the school: during the Second World War it was one of the freest territories of occupied Europe — with schools, print shops and hospitals. After the Italian capitulation in September 1943 a Partisan gymnasium operated in Črnomelj; the building in this record's photograph is precisely that one — today a music school. In a year when lessons across Europe were forbidden or scattered, the land by the Kolpa sustained even a grammar school.\n\nThe museum is looking for class photographs, teachers' names and schoolbooks bearing the names of Griblje's children. The village school left behind the greatest archive and the least memory: who today still remembers what was written on the slate?",
+    evidenceStatus: "TRADITION",
+    image: "/images/authentic/sola-crnomelj.jpg",
+    imageCredit: "Foto: Bb63lj · Wikimedia Commons · CC BY 4.0",
+    yearFrom: 1869,
+    featured: false,
+    sources: [
+      {
+        key: "wiki-rvsg",
+        nameSi: "Wikipedija (DE): Reichsvolksschulgesetz 1869 (obvezno šolstvo 6–14 v cesarstvu)",
+        nameEn: "Wikipedia (DE): Reichsvolksschulgesetz 1869 (compulsory schooling 6–14 in the Empire)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        noteSi:
+          "Cesarjev zakon, iz katerega so zrasle vaške šole slovenskih dežel.",
+        noteEn:
+          "The imperial law out of which the village schools of the Slovene lands grew.",
+      },
+      {
+        key: "commons-sola-crnomelj",
+        nameSi:
+          "Wikimedia Commons: stavba partizanske gimnazije v Črnomlju, danes glasbena šola (avtor: Bb63lj)",
+        nameEn:
+          "Wikimedia Commons: the building of the Partisan gymnasium in Črnomelj, today a music school (author: Bb63lj)",
+        sourceType: "fotografija",
+        license: "CC BY 4.0 (avtor: Bb63lj)",
+        url: "https://commons.wikimedia.org/wiki/File:Glasbena_%C5%A1ol_%C4%8Crnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        noteSi:
+          "Glavna slika zapisa: stavba v Črnomlju, ne v Gribljah — priča partizanske gimnazije in edini fotografirani kos te zgodbe.",
+        noteEn:
+          "The record's main image: a building in Črnomelj, not in Griblje — a witness of the Partisan gymnasium and the only photographed piece of that story.",
+      },
+      {
+        key: "commons-vaska-sola",
+        nameSi:
+          "Wikimedia Commons: Vaška šola (19. st.) — žanrska slika neznanega slikarja, Narodni muzej Slovenije",
+        nameEn:
+          "Wikimedia Commons: Village School (19th c.) — a genre painting by an unknown painter, National Museum of Slovenia",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: "https://commons.wikimedia.org/wiki/File:Va%C5%A1ka_%C5%A1ola_(19._st.).jpg",
+        noteSi:
+          "Časovna upodobitev vaške učilnice 19. stoletja iz muzejske zbirke — primerjalni kontekst šole, kakršna je delovala po slovenskih vaseh.",
+        noteEn:
+          "A period depiction of a 19th-century village classroom from a museum collection — the comparative context of a school as it worked across Slovene villages.",
+      },
+      {
+        key: "nms-slike",
+        nameSi: "Narodni muzej Slovenije: zbirka slik (žanrske upodobitve vsakdanjega življenja)",
+        nameEn: "National Museum of Slovenia: the painting collection (genre depictions of everyday life)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.nms.si/",
+      },
+      {
+        key: "wiki-crnomelj",
+        nameSi: "Wikipedija: Črnomelj (mesto, v katerem je delovala partizanska gimnazija)",
+        nameEn: "Wikipedia: Črnomelj (the town in which the Partisan gymnasium operated)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/%C4%8Crnomelj",
+      },
+    ],
+  },
 ];
 
 export const seedStories: Omit<StoryDTO, "id">[] = [
