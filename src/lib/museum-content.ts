@@ -1654,10 +1654,12 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "An underground amphibian living only in the karst waters around Črnomelj: the dark sister of the famous white olm — and unlike her, it can see.",
     storySi:
-      "Griblje so najbolj suh kot Bele krajine — nad vasjo je svetlo in vode je malo. Toda pod istim kraškim svetom teče druga dežela: voda, ki ponika in se vrača v studencih ob Kolpi. V njej živi žival, ki je znanost srečala šele leta 1986: črni močeril, podvrsta človeške ribice — temno pigmentirana in z normalno razvitimi očmi, medtem ko je njena slavna bela sorodnica iz Postojnske jame brez pigmenta in slepa.\n\nOdkritje se je zgodilo 18. oktobra 1986, ko so raziskovalci Inštituta za raziskovanje krasa ob črpalnem preizkusu vode na izviru Dobličice pri Črnomlju izvlekli do takrat neznano temno žival. Podvrsto je znanstveno opisal slovenski zoolog Boris Sket in ji dal ime parkelj — »hudiček«: skoraj črno telo z živo rdečimi škrgami je namreč spominjalo na miklavževske parklje, črne vragove z rdečim jezikom. Po do sedaj znanih podatkih črni močeril živi le v ožji okolici Črnomlja, na površini manjši od sto kvadratnih kilometrov. Izvir Jelševniščice v Jelševniku je edino najdišče na svetu, kjer ga je mogoče videti v naravnem okolju.\n\nBelokranjska črna človeška ribica — tako jo radi imenujejo — spada med najbolj ogrožene živalske podvrste pri nas: njena usoda je napisana v čistosti ponikalnic in izvirov, ki jih napaja isti kraški sistem, pod katerim stojijo tudi Griblje. Suhi svet nad vasjo in črna žival pod njim sta dve plasti iste zgodbe, ki ju drži voda — kar ponikne na enem koncu dežele, se izvira na drugem.\n\nMuzej zapis dodaja zbirki narave ob Kolpi z eno opombo, ki velja za vse: svobodna fotografija črnega močerila še ni v arhivu — zato zapis stoji brez nje, po isti poštenosti, ki prepoveduje izmišljevanje. Kdor bo ob izviru Jelševniščice kdaj posnel to žival, je vabljen kot priča.",
+      "Griblje so najbolj suh kot Bele krajine — nad vasjo je svetlo in vode je malo. Toda pod istim kraškim svetom teče druga dežela: voda, ki ponika in se vrača v studencih ob Kolpi. V njej živi žival, ki je znanost srečala šele leta 1986: črni močeril, podvrsta človeške ribice — temno pigmentirana in z normalno razvitimi očmi, medtem ko je njena slavna bela sorodnica iz Postojnske jame brez pigmenta in slepa.\n\nOdkritje se je zgodilo 18. oktobra 1986, ko so raziskovalci Inštituta za raziskovanje krasa ob črpalnem preizkusu vode na izviru Dobličice pri Črnomlju izvlekli do takrat neznano temno žival. Podvrsto je znanstveno opisal slovenski zoolog Boris Sket in ji dal ime parkelj — »hudiček«: skoraj črno telo z živo rdečimi škrgami je namreč spominjalo na miklavževske parklje, črne vragove z rdečim jezikom. Po do sedaj znanih podatkih črni močeril živi le v ožji okolici Črnomlja, na površini manjši od sto kvadratnih kilometrov. Izvir Jelševniščice v Jelševniku je edino najdišče na svetu, kjer ga je mogoče videti v naravnem okolju.\n\nBelokranjska črna človeška ribica — tako jo radi imenujejo — spada med najbolj ogrožene živalske podvrste pri nas: njena usoda je napisana v čistosti ponikalnic in izvirov, ki jih napaja isti kraški sistem, pod katerim stojijo tudi Griblje. Suhi svet nad vasjo in črna žival pod njim sta dve plasti iste zgodbe, ki ju drži voda — kar ponikne na enem koncu dežele, se izvira na drugem.\n\nMuzej zapis dolgo ni imel fotografije: svobodnega posnetka živali ni bilo v arhivu, in zapis je stal brez nje, po poštenosti, ki prepoveduje izmišljevanje. Danes nosi Hodaličevo fotografijo glave črnega močerila iz odprtega arhiva Wikimedia Commons — obraz živali, ki jo je v živo videlo le peščica ljudi na svetu. Njen dom pa ostaja izvir Jelševniščice: kdor tja pride s potrpljenjem, je še vedno vabljen kot priča.",
     storyEn:
-      "Griblje is the driest corner of Bela krajina — above the village the world is bright and water is scarce. Yet beneath the same karst world runs another land: water that sinks away and returns in the springs along the Kolpa. In it lives an animal science met only in 1986: the black olm, a subspecies of the olm — darkly pigmented and with normally developed eyes, while its famous white relative of Postojna Cave is pigmentless and blind.\n\nThe discovery came on 18 October 1986, when researchers of the Karst Research Institute, during a pumping test at the Dobličica spring near Črnomelj, drew out a dark animal unknown until then. The subspecies was scientifically described by the Slovene zoologist Boris Sket, who gave it the name parkelj — the \"little devil\": its almost black body with vividly red gills recalled the St. Nicholas devils, black imps with red tongues. According to present knowledge the black olm lives only in the narrow surroundings of Črnomelj, over an area smaller than a hundred square kilometres. The Jelševniščica spring at Jelševnik is the only site in the world where it can be seen in its natural environment.\n\nBela krajina's black olm — as it is gladly called — ranks among the most endangered animal subspecies of our land: its fate is written in the purity of the sinking streams and springs fed by the same karst system beneath which Griblje stands. The dry world above the village and the black animal below it are two layers of one story held together by water — what sinks at one end of the land rises at the other.\n\nThe museum adds this record to the nature of the Kolpa with one note that holds for everything: no free photograph of the black olm is yet in the archive — the record therefore stands without one, under the same honesty that forbids invention. Whoever one day photographs this animal at the Jelševniščica spring is invited as a witness.",
+      "Griblje is the driest corner of Bela krajina — above the village the world is bright and water is scarce. Yet beneath the same karst world runs another land: water that sinks away and returns in the springs along the Kolpa. In it lives an animal science met only in 1986: the black olm, a subspecies of the olm — darkly pigmented and with normally developed eyes, while its famous white relative of Postojna Cave is pigmentless and blind.\n\nThe discovery came on 18 October 1986, when researchers of the Karst Research Institute, during a pumping test at the Dobličica spring near Črnomelj, drew out a dark animal unknown until then. The subspecies was scientifically described by the Slovene zoologist Boris Sket, who gave it the name parkelj — the \"little devil\": its almost black body with vividly red gills recalled the St. Nicholas devils, black imps with red tongues. According to present knowledge the black olm lives only in the narrow surroundings of Črnomelj, over an area smaller than a hundred square kilometres. The Jelševniščica spring at Jelševnik is the only site in the world where it can be seen in its natural environment.\n\nBela krajina's black olm — as it is gladly called — ranks among the most endangered animal subspecies of our land: its fate is written in the purity of the sinking streams and springs fed by the same karst system beneath which Griblje stands. The dry world above the village and the black animal below it are two layers of one story held together by water — what sinks at one end of the land rises at the other.\n\nThe museum kept this record without a photograph for a long time: no free image of the animal existed in the archive, and the record stood without one, under the honesty that forbids invention. Today it carries Hodalič's photograph of the black olm's head from the open Wikimedia Commons archive — the face of an animal that only a handful of people on earth have seen alive. Its home remains the Jelševniščica spring: whoever comes there with patience is still invited as a witness.",
     evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/crni-moceril.jpg",
+    imageCredit: "Foto: Arne Hodalič · Wikimedia Commons · CC BY-SA 3.0",
     yearFrom: 1986,
     featured: false,
     addedAt: "2026-09-16",
@@ -1734,6 +1736,18 @@ export const seedExhibits: SeedExhibit[] = [
         noteEn:
           "The morphological comparison of the subspecies: black-grey colour, a shorter and broader head, normally developed eyes.",
       },
+      {
+        key: "commons-moceril-foto",
+        nameSi: "Wikimedia Commons: fotografija glave črnega močerila (Arne Hodalič)",
+        nameEn: "Wikimedia Commons: photograph of the black olm's head (Arne Hodalič)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 3.0",
+        url: "https://commons.wikimedia.org/wiki/File:P_anguinus_parkelj-head.jpg",
+        noteSi:
+          "Slika zapisa: avtentična fotografija glave podvrste iz odprtega arhiva; dolgo je bila edina prosto dostopna.",
+        noteEn:
+          "The record's image: an authentic photograph of the subspecies' head from the open archive; for long the only freely available one.",
+      },
     ],
   },
   {
@@ -1748,9 +1762,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The Emperor's school law gave every village reading and arithmetic; in Bela krajina the school worked even under occupation — in Črnomelj as a Partisan gymnasium.",
     storySi:
-      "Leta 1869 je Dunaj izdal Reichsvolksschulgesetz — državni zakon, ki je šolanje naredil za dolžnost vsakega otroka od šestega do štirinajstega leta. Po deželah cesarstva so zrasle vaške šole: ena učilnica, en učitelj, vsi razredi hkrati. Kdaj je takšna šola prišla v Griblje, v kateri hiši je stala in kdo je v njej učil — te podatke zbirka še išče; zapis gradi na dokumentiranem svetu, ki je obdajal vsako vaško šolo tistega časa.\n\nVaška šola je imela svoj vrstni red: tablica namesto zvezka, kreda namesto peresa, ustno štetje do sto in abecednik pod blazino. Vrstni red je prestavljal tudi kmetijsko leto — ob žetvi in senašbi so klopi stale prazne, saj so otroške roke na kmetiji štele toliko kot odrasle. Vsak izpeljan šolski dan je bila zato majhna zmaga.\n\nKdor je znal brati, je v vas zanesel svet: časopis, ki so si ga podajali od hiše do hiše, in pisma iz Amerike, ki so jih družine poslušale pri petrolijevi luči. Branje je bilo oblika vaške pošte, šola pa njen urad. Iz nje so zrasle poti, ki jih ta zbirka že pozna: Niko Županič, deček iz Gribelj, je postal univerzitetni profesor; Anton Filak, roka od pluga, svetovni prvak v oranju.\n\nBela krajina je šoli dodala še eno poglavje: med drugo svetovno vojno je bila eno najbolj svobodnih ozemelj okupirane Evrope — s šolami, tiskarnami in bolnišnicami. Po italijanski kapitulaciji septembra 1943 je v Črnomlju delovala partizanska gimnazija; stavba na fotografiji tega zapisa je ravno ona — danes glasbena šola. V letu, ko je bil pouk po Evropi prepovedan ali razseljen, je dežela ob Kolpi zmogla celo gimnazijo.\n\nPred podružnično šolo OŠ Loka v Gribljah danes stoji spomenik trinajstim padlim vaščanom — šola in spomin na istem pragu (zapis spomenik-padlim). Muzej išče razredne fotografije, imena učiteljev in učne knjige z imeni gribeljskih otrok. Vaška šola je zapustila največ arhiva in najmanj spomina: kdo pa si danes še zapomni, kaj je bilo napisano na tablici?",
+      "Leta 1869 je Dunaj izdal Reichsvolksschulgesetz — državni zakon, ki je šolanje naredil za dolžnost vsakega otroka od šestega do štirinajstega leta. Po deželah cesarstva so zrasle vaške šole: ena učilnica, en učitelj, vsi razredi hkrati. Kdaj je takšna šola prišla v Griblje, v kateri hiši je stala in kdo je v njej učil — te podatke zbirka še išče; zapis gradi na dokumentiranem svetu, ki je obdajal vsako vaško šolo tistega časa.\n\nVaška šola je imela svoj vrstni red: tablica namesto zvezka, kreda namesto peresa, ustno štetje do sto in abecednik pod blazino. Vrstni red je prestavljal tudi kmetijsko leto — ob žetvi in senašbi so klopi stale prazne, saj so otroške roke na kmetiji štele toliko kot odrasle. Vsak izpeljan šolski dan je bila zato majhna zmaga.\n\nKdor je znal brati, je v vas zanesel svet: časopis, ki so si ga podajali od hiše do hiše, in pisma iz Amerike, ki so jih družine poslušale pri petrolijevi luči. Branje je bilo oblika vaške pošte, šola pa njen urad. Iz nje so zrasle poti, ki jih ta zbirka že pozna: Niko Županič, deček iz Gribelj, je postal univerzitetni profesor; Anton Filak, roka od pluga, svetovni prvak v oranju.\n\nBela krajina je šoli dodala še eno poglavje: med drugo svetovno vojno je bila eno najbolj svobodnih ozemelj okupirane Evrope — s šolami, tiskarnami in bolnišnicami. Po italijanski kapitulaciji septembra 1943 je v Črnomlju delovala partizanska gimnazija; stavba na fotografiji tega zapisa je ravno ona — danes glasbena šola. V letu, ko je bil pouk po Evropi prepovedan ali razseljen, je dežela ob Kolpi zmogla celo gimnazijo.\n\nPred podružnično šolo OŠ Loka v Gribljah danes stoji spomenik trinajstim padlim vaščanom — šola in spomin na istem pragu (zapis spomenik-padlim).\n\nZapis se je dolgo vprašal, kdaj je šola prišla v Griblje; o njeni sedanjosti pa ve natanko. Podružnična šola Griblje, del OŠ Loka Črnomelj, je v šolskem letu 2023/2024 štela enaindvajset učencev v dveh kombiniranih oddelkih: prvo- in drugošolce sta poučevala Branka Weiss in Ana Kočevar, tretje-, četrt- in petošolce Jana Štajdohar, angleščino pa David Štefanič; za malico in urejenost šole skrbi Nežka Filak. Septembra 2026 so prag prestopili štirje prvošolci — starejši učenci so jih pozdravili s pesmijo, besedo in torto. Iz tablic v svet, in spet nazaj.\n\nMuzej išče razredne fotografije, imena učiteljev in učne knjige z imeni gribeljskih otrok. Vaška šola je zapustila največ arhiva in najmanj spomina: kdo pa si danes še zapomni, kaj je bilo napisano na tablici?",
     storyEn:
-      "In 1869 Vienna issued the Reichsvolksschulgesetz — an imperial law that made schooling the duty of every child from six to fourteen. Across the lands of the Empire village schools grew up: one classroom, one teacher, all the grades at once. When such a school came to Griblje, in which house it stood and who taught in it — these details the collection is still seeking; this record builds on the documented world that surrounded every village school of that time.\n\nThe village school kept its own order: a slate instead of an exercise book, chalk instead of a pen, counting aloud to a hundred and a primer under the pillow. The order shifted with the farming year as well — at harvest and haying the benches stood empty, for on a farm children's hands counted as much as grown ones. Every completed school day was therefore a small victory.\n\nWhoever could read carried the world into the village: the newspaper passed from house to house, and the letters from America that families listened to by the petroleum lamp. Reading was a form of the village post, and the school was its office. Out of it grew the roads this collection already knows: Niko Županič, the boy from Griblje, became a university professor; Anton Filak, a hand from the plough, a world champion of ploughing.\n\nBela krajina added another chapter to the school: during the Second World War it was one of the freest territories of occupied Europe — with schools, print shops and hospitals. After the Italian capitulation in September 1943 a Partisan gymnasium operated in Črnomelj; the building in this record's photograph is precisely that one — today a music school. In a year when lessons across Europe were forbidden or scattered, the land by the Kolpa sustained even a grammar school.\n\nBefore the branch school of OŠ Loka at Griblje stands the memorial to the thirteen fallen villagers — school and memory on the same threshold (see the record of the memorial). The museum is looking for class photographs, teachers' names and schoolbooks bearing the names of Griblje's children. The village school left behind the greatest archive and the least memory: who today still remembers what was written on the slate?",
+      "In 1869 Vienna issued the Reichsvolksschulgesetz — an imperial law that made schooling the duty of every child from six to fourteen. Across the lands of the Empire village schools grew up: one classroom, one teacher, all the grades at once. When such a school came to Griblje, in which house it stood and who taught in it — these details the collection is still seeking; this record builds on the documented world that surrounded every village school of that time.\n\nThe village school kept its own order: a slate instead of an exercise book, chalk instead of a pen, counting aloud to a hundred and a primer under the pillow. The order shifted with the farming year as well — at harvest and haying the benches stood empty, for on a farm children's hands counted as much as grown ones. Every completed school day was therefore a small victory.\n\nWhoever could read carried the world into the village: the newspaper passed from house to house, and the letters from America that families listened to by the petroleum lamp. Reading was a form of the village post, and the school was its office. Out of it grew the roads this collection already knows: Niko Županič, the boy from Griblje, became a university professor; Anton Filak, a hand from the plough, a world champion of ploughing.\n\nBela krajina added another chapter to the school: during the Second World War it was one of the freest territories of occupied Europe — with schools, print shops and hospitals. After the Italian capitulation in September 1943 a Partisan gymnasium operated in Črnomelj; the building in this record's photograph is precisely that one — today a music school. In a year when lessons across Europe were forbidden or scattered, the land by the Kolpa sustained even a grammar school.\n\nBefore the branch school of OŠ Loka at Griblje stands the memorial to the thirteen fallen villagers — school and memory on the same threshold (see the record of the memorial).\n\nThe record long asked when the school came to Griblje; about its present it knows precisely. The branch school of Griblje, part of OŠ Loka Črnomelj, counted twenty-one pupils in two combined departments in the school year 2023/2024: the first and second grades were taught by Branka Weiss and Ana Kočevar, the third, fourth and fifth by Jana Štajdohar, English by David Štefanič; Nežka Filak cares for the morning snack and the school's order. In September 2026 four first-graders crossed the threshold — the older pupils welcomed them with a song, a word and a cake. From slates into the world, and back again.\n\nThe museum is looking for class photographs, teachers' names and schoolbooks bearing the names of Griblje's children. The village school left behind the greatest archive and the least memory: who today still remembers what was written on the slate?",
     evidenceStatus: "TRADITION",
     image: "/images/authentic/sola-crnomelj.jpg",
     imageCredit: "Foto: Bb63lj · Wikimedia Commons · CC BY 4.0",
@@ -1768,6 +1782,30 @@ export const seedExhibits: SeedExhibit[] = [
           "Cesarjev zakon, iz katerega so zrasle vaške šole slovenskih dežel.",
         noteEn:
           "The imperial law out of which the village schools of the Slovene lands grew.",
+      },
+      {
+        key: "os-loka-griblje-danes",
+        nameSi: "OŠ Loka Črnomelj — Podružnica Griblje: 21 učencev v dveh kombiniranih oddelkih (šolsko leto 2023/2024)",
+        nameEn: "OŠ Loka Črnomelj — the Griblje branch school: 21 pupils in two combined departments (school year 2023/2024)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "http://osloka.splet.arnes.si/podruznica-griblje-naslovna/",
+        noteSi:
+          "Sedanjost šole: imena učiteljev (Weissova, Kočevarjeva, Štajdoharjeva, Štefanič, Filakova) in kombinirani oddelki — šola z 1. po 5. razred.",
+        noteEn:
+          "The school's present: the teachers' names (Weiss, Kočevar, Štajdohar, Štefanič, Filak) and the combined departments — a school of grades 1 to 5.",
+      },
+      {
+        key: "os-loka-prvi-dan-2026",
+        nameSi: "OŠ Loka Črnomelj (3. september 2026): Prvi šolski dan na Podružnični šoli Griblje — štirje prvošolci",
+        nameEn: "OŠ Loka Črnomelj (3 September 2026): The first school day at the Griblje branch school — four first-graders",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje/",
+        noteSi:
+          "Doživetje septembra 2026: dobrodošlica starejših učencev s pesmijo in besedo, zaključek s torto.",
+        noteEn:
+          "The September 2026 moment: the older pupils' welcome with a song and a word, closed with a cake.",
       },
       {
         key: "commons-sola-crnomelj",
@@ -2095,6 +2133,116 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Pond_Griblje.jpg"),
         noteSi: "Glavna slika zapisa: celotna vas v enem kadru — zaselki, ribnik in dolina Kolpe.",
         noteEn: "The record's main image: the whole village in a single frame — the hamlets, the pond and the Kolpa valley.",
+      },
+    ],
+  },
+  {
+    slug: "kolesa-torpedo",
+    addedAt: "2026-09-16",
+    category: "kraj",
+    titleSi: "Kolesarska sekcija Torpedo — starodobna kolesa Gribelj",
+    titleEn: "The Torpedo cycling section — Griblje's vintage bicycles",
+    periodSi: "≈ 2011 → danes",
+    periodEn: "≈ 2011 → present",
+    summarySi:
+      "V turističnem društvu Griblje že petnajst let deluje sekcija starodobnih koles: trideset kolesarjev, kolesa brez prestav in rally, ki vas vsako leto spravi v prejšnje stoletje.",
+    summaryEn:
+      "For fifteen years the Tourist Society of Griblje has run a vintage-bicycle section: thirty riders, gearless bicycles and a rally that turns the village back a century every year.",
+    storySi:
+      "V Gribljah obstaja časovni stroj, ki ne potrebuje goriva — le pedal. Kolesarska sekcija Torpedo, ki deluje v okviru turističnega društva Griblje, že petnajst let združuje lastnike starodobnih koles: stroje, stare sedemdeset in osemdeset let, brez prestav, z okvirji, ki so preživeli vsako vreme. Ime nosijo po znamki Torpedo — kolesu, ki je oglase nosilo že leta 1908 in ga je nekoč imela vsaka delovna hiša; v Gribljah ta znamka ni v muzejski vitrini, ampak še vedno vozi.\n\nVsako leto julija se v vasi zavrti Rally Griblje. Letos se je zbralo okoli šestdeset kolesarjev iz osmih društev iz Slovenije in Hrvaške, mnogi v starinskih oblačilih; vročina je nagnila pot skozi vse gribeljske poti in stranpoti. Nato se kolesa naložijo na prikolice in povorka odpotuje v svet: Beltinci — kjer so sekciji celo podarili kolo —, Juršinci, Šentjur pri Celju, Maribor, Škofja Loka, Stara Gora na Gorenjskem, na hrvaški strani pa Varaždin in Koprivnica. Enega povabila pa ne zamudijo nikoli: vsako leto prikolesarijo na Semiško ohcet, na blagoslov motoristov in kolesarjev.\n\nEkipa šteje trideset članov. Najstarejši med njimi, 94-letni Janez Totar, se še vedno rad usede na svoje starodobno kolo in sotrpine žene, da mu sledijo. Predsednik kluba je Jože Pezdirc - Makc, turistično društvo pa vodi Mateja Pezdirc. Rally se zaključi na gribeljskem kopališču ob Kolpi — z družabnimi igrami in »norim« plesom domačih kavbojk, plesne zasedbe Country Roses. »Tradicija, sodelovanje in dobra volja povezujejo ljudi ter ohranjajo bogato kulturno dediščino za prihodnje rodove,« je zatrdila predsednica.\n\nMuzej zapis dodaja zbirki kot dokaz, da dediščina v Gribljah ni le v arhivu: tu jo vsako leto znova usedejo in vozijo. Vas, ki je danes mirno izhodišče kolesarjenja ob Kolpi, ima svojo lastno kolesarsko zgodovino — in nekaj, česar nima vsaka vas: štiriindevetdesetletnega kolesarja, ki še vedno vzame svoje starodobno kolo in pelje ekipo, kot da bi bilo vreme ustavljivo. Fotografija zapisa prikazuje kolo znamke Torpedo iz odprtega arhiva Wikimedia Commons — takega, kakršna vozijo tudi gribeljski kolesarji; fotografija sekcije same še čaka v prosti arhiv, kdor jo bo posnel, je vabljen kot priča.",
+    storyEn:
+      "Griblje keeps a time machine that needs no fuel — only pedals. The Torpedo cycling section, running within the Tourist Society of Griblje, has for fifteen years united the owners of vintage bicycles: machines seventy and eighty years old, without gears, on frames that have survived every weather. They take their name from the Torpedo brand — a bicycle advertised as early as 1908, once owned by every working household; in Griblje the brand is not behind museum glass but still on the road.\n\nEvery July the village hosts the Rally Griblje. This year about sixty cyclists gathered from eight societies of Slovenia and Croatia, many in period clothing; the heat bent the route through every road and byroad of Griblje. Then the bicycles are loaded on trailers and the column travels the world: Beltinci — where they were once even donated a bicycle —, Juršinci, Šentjur pri Celju, Maribor, Škofja Loka, Stara Gora in Gorenjska, and on the Croatian side Varaždin and Koprivnica. One invitation they never miss: every year they ride to the Semiška ohcet, to the blessing of motorcyclists and cyclists.\n\nThe team counts thirty members. The oldest among them, 94-year-old Janez Totar, still gladly sits on his vintage bicycle and drives his teammates to follow. The club's president is Jože Pezdirc - Makc, and the Tourist Society is led by Mateja Pezdirc. The rally ends at the Griblje bathing ground on the Kolpa — with games and the \"crazy\" dance of the local cowgirls, the Country Roses ensemble. \"Tradition, cooperation and good will unite people and preserve a rich cultural heritage for the generations to come,\" the president stated.\n\nThe museum adds this record as proof that in Griblje heritage is not kept only in the archive: every year it is sat upon and ridden. A village that today serves as a quiet starting point for cycling along the Kolpa has a cycling history of its own — and something not every village has: a ninety-four-year-old rider who still takes his vintage bicycle and leads the team as if weather itself could be stopped. The record's photograph shows a Torpedo-brand bicycle from the open Wikimedia Commons archive — of the kind Griblje's riders also use; a photograph of the section itself still awaits a free archive, and whoever takes it is invited as a witness.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/kolesa-torpedo.jpg",
+    imageCredit: "Foto: Brbbl · Wikimedia Commons · CC BY-SA 4.0",
+    yearFrom: 2011,
+    lat: 45.57246,
+    lng: 15.29257,
+    featured: false,
+    sources: [
+      {
+        key: "svet24-rally",
+        nameSi: "Svet24 (9. julij 2026): Rally Griblje — Pedala vrteli po starem, ne na elektriko, na žgance",
+        nameEn: "Svet24 (9 July 2026): Rally Griblje — pedalling the old way, not on electricity but on žgance",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://svet24.si/lokalno/dolenjska/novice/kolesarski-rally-griblje-pedala-vrteli-po-starem-1911575",
+        noteSi:
+          "Temeljni vir: 15 let sekcije v TD Griblje, okoli 60 kolesarjev iz osmih društev Slovenije in Hrvaške, predsednik Jože Pezdirc - Makc, 94-letni Janez Totar, kolesa brez prestav, potovanja, kopališče ob Kolpi, Country Roses, izjava predsednice Mateje Pezdirc.",
+        noteEn:
+          "The base source: 15 years of the section within TD Griblje, about 60 cyclists from eight societies of Slovenia and Croatia, president Jože Pezdirc - Makc, 94-year-old Janez Totar, gearless bicycles, the journeys, the Kolpa bathing ground, Country Roses, and president Mateja Pezdirc's statement.",
+      },
+      {
+        key: "odeon-rally-2025",
+        nameSi: "Radio Odeon (8. julij 2025): V Gribljah kolesarili kot nekoč",
+        nameEn: "Radio Odeon (8 July 2025): Cycling the old way in Griblje",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/",
+        noteSi:
+          "Prejšnja izvedba rallyja: približno 65 kolesarjev iz sedmih društev; globlja povezava ni dosegljiva (dostop 403), navedba po naslovu članka.",
+        noteEn:
+          "The previous edition of the rally: about 65 cyclists from seven societies; the deep link is unreachable (403), cited by the article title.",
+      },
+      {
+        key: "vaskanal-kolesa-2017",
+        nameSi: "Arhiv Vaš kanal (11. julij 2017): srečanje ljubiteljev starodobnih koles na kopališču v Gribljah",
+        nameEn: "The Vaš kanal archive (11 July 2017): a gathering of vintage-bicycle lovers at the Griblje bathing ground",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.arhiv.vaskanal.com/",
+        noteSi:
+          "Najzgodnejša najdena omemba prireditve: rally na gribeljskem kopališču je dokumentiran vsaj od leta 2017.",
+        noteEn:
+          "The earliest found mention of the event: the rally at the Griblje bathing ground is documented at least since 2017.",
+      },
+      {
+        key: "zgodovinska-mesta-ohcet",
+        nameSi: "Zgodovinska mesta Slovenije: program Semiške ohceti 2026 (blagoslov motoristov in kolesarjev ob sodelovanju Torpeda Griblje)",
+        nameEn: "Historic Towns of Slovenia: the 2026 Semiška ohcet programme (the blessing of motorcyclists and cyclists with the participation of Torpedo Griblje)",
+        sourceType: "spletni-vir",
+        license: "javna informacija / public information",
+        url: "https://www.zgodovinska-mesta.si/en/booking-event-directory/semiska-ohcet",
+        noteSi:
+          "Letna udeležba sekcije na Semiški ohceti — potrditev stavka predsednika, da povabilo iz Semiča nikoli ne zamudijo.",
+        noteEn:
+          "The section's yearly presence at the Semiška ohcet — confirming the president's words that the invitation from Semič is never missed.",
+      },
+      {
+        key: "facebook-torpedo",
+        nameSi: "Facebook: Sekcija Torpedo Griblje — javna stran ljubiteljev starodobnih koles",
+        nameEn: "Facebook: Sekcija Torpedo Griblje — the public page of the vintage-bicycle lovers",
+        sourceType: "spletni-vir",
+        license: "stran društva / the society's page",
+        url: "https://www.facebook.com/",
+        noteSi:
+          "Samoizjava sekcije: srečanja z drugimi zbiralci (npr. v Škofji Loki); globja povezava strani ni zajeta, navedba po imenu.",
+        noteEn:
+          "The section's own voice: meetings with fellow collectors (e.g. in Škofja Loka); the page's deep link not captured, cited by name.",
+      },
+      {
+        key: "commons-torpedo-foto",
+        nameSi: "Wikimedia Commons: Torpedo bicycle (fotografija kolesa znamke Torpedo, avtor: Brbbl)",
+        nameEn: "Wikimedia Commons: Torpedo bicycle (a photograph of a Torpedo-brand bicycle, author: Brbbl)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 4.0 (avtor: Brbbl)",
+        url: WM("Torpedo_bicycle.JPG"),
+        noteSi:
+          "Slika zapisa: kolo znamke Torpedo iz odprtega arhiva — enake znamke, kakršna vozijo gribeljski kolesarji.",
+        noteEn:
+          "The record's image: a Torpedo-brand bicycle from the open archive — the same brand Griblje's riders use.",
+      },
+      {
+        key: "commons-torpedo-1908",
+        nameSi: "Wikimedia Commons: Torpedo-Fahrraeder — oglas za kolesa Torpedo (Weil & Co, Frankfurt ob Majni, 1908)",
+        nameEn: "Wikimedia Commons: Torpedo-Fahrraeder — an advertisement for Torpedo bicycles (Weil & Co, Frankfurt am Main, 1908)",
+        sourceType: "fotografija",
+        license: "javna last / public domain",
+        url: WM("Torpedo-Fahrraeder.jpg"),
+        noteSi:
+          "Znamka Torpedo je bila v tisku oglaševana že leta 1908 — stoletje in pol pred gribeljskim rallyjem.",
+        noteEn:
+          "The Torpedo brand was already being advertised in print in 1908 — a century and a half before the Griblje rally.",
       },
     ],
   },
