@@ -172,3 +172,54 @@
 3. **Namig z občinstvom pri dogodkih** (MoMA vzorec: »za družine«, »za vse«) — majhna sprememnba koledarja.
 4. **Večje slike / nova digitalizacija** — za enakovreden zoom velikih.
 5. **Gigapikseli/VR** — presega trenutni proračun; spremljamo.
+
+---
+
+## 3. KROG (16. 9. 2026): muzeji IZVEN spleta — fizična muzejska praksa
+
+Po pogledu na spletne velikane (1. krog: Rijksmuseum, Louvre, Google Arts & Culture; 2. krog: Tate, National Gallery London, Met API) smo se tokrat vprašali, kar je za vaški muzej bolj merodajno: **kako delujejo fizični muzeji — predvsem v lastni pokrajini.**
+
+### Mestni muzej Črnomelj (RIC Bela krajina) — referenčni primer
+
+Avgusta 2026 je Mestna muzejska zbirka Črnomelj (odprta 4. 7. 2013 v prenovljeni rojstni hiši Mirana Jarca, 1844; projekt 2011–2013, 1,2 mio EUR, večinoma EU) uradno postala **Mestni muzej Črnomelj**. Njihova praksa (vir: Radio Odeon, 7. 8. 2026):
+
+- **Stalna razstava »Črnomelj na prepihu tisočletij«** govori skozi arheološki material in arhivske vire — zgodovina mesta IN NJEGOVIH LJUDI (belakrajina.si). To je natanko naša metoda: ljudje kot nosilci zapisa.
+- **Cikel predavanj »Neobičajna védenja«** — odlično obiskan; muzej kot kraj živega znanja, ne samo vitrine. → Naš ekvivalent: **minutne zgodbe + za kuliso**.
+- **Redne knjižne objave** (7 razprav od 2013; vrhunec: zbornik Temelj našemu narodu) — muzej ustvarja novo znanje. → Naš ekvivalent: **research-griblje/ mapa + register virov** (308 virov).
+- **Zunanje razstave po mestu + spominski napisi** (Kvasica, Loke, Vranoviči, Grič). → Naš ekvivalent: **zemljevid zapisov + fizične lokacije v vasi**.
+- **Pomoč državljanom in društvom pri njihovih raziskavah.** → Naš ekvivalent: **spomini skupnosti + spominska knjiga**.
+- Postavitev razstave (odprte hiše Slovenije): **enostavno, brez posegov v stavbo, odmaknjeno od sten** — spoštovanje nosilca (stavbe) je muzejska vrline. → Digitalni prevod: spoštujemo bralnik obiskovalca (brez vsiljivih animacij, spoštovanje zmanjšanega gibanja, WCAG).
+
+### Sistem RIC Bela krajina — fizični sorodniki našega muzeja
+
+| Ustanova | Leto | Vsebina |
+|---|---|---|
+| Mestni muzej Črnomelj (rojstna hiša M. Jarca) | 2013/2026 | zgodovina mesta in ljudi |
+| Zakladnica pod črnomaljskim gradom | 2021 | arheologija |
+| Muzej rudnika rjavega premoga Kanižarica | 2022 | 140 let premogovništva, Perkmandeljc |
+| Spominska hiša Otona Župančiča | 2022 | literarna zapuščina |
+| Grad Črnomelj — Branilci krone in meja | 2025 | plemiška rodbina von Tschernembel |
+
+**Sklep:** fizični muzeji regije pokrivajo mesto in rudnik; **nogepredstavlja vas** — naša niša je vpisana v samem sistemu: digitalni muzej vasi dopolnjuje fizične muzeje mesta. Belokranjski muzej Metlika (pokrajinski) hrani etnografijo pokrajine (razstava o noši 2020).
+
+### Fizična muzejska načela (Exhibitor, STQRY, Visitor Studies) → digitalni prevodi
+
+1. **»Identify a clear story«** (Exhibitor tenet 1) — razstava pripoveduje eno jasno zgodbo o ljudeh, krajih, stvareh. → Naše shodbe in življenjepisi predmetov.
+2. **Layered content** — globina po meri obiskovalca. → Naša dialog zapisov: povzetek → zgodba → viri → spomini.
+3. **Visitor flow** (Quinn Evans) — oblikovanje za uporabnika, ne prostor. → Mobile-first, razpoloženjski vodnik, časovni načrt obiska.
+4. **Zaščita predmeta ob angažiranosti** — muzej bilancira. → Mi nimamo krhkosti; namesto tega **lestvica zanesljivosti** kot varnost besedila.
+
+### Kaj smo naredili po 3. krogu (danes)
+
+- **Izrazoslovje** (nova rubrika, vzorec Tate »Art terms«): 18 pojmov (peča, Perkmandeljc, urbar, uskoki, Vindijska krajina, zračni most …), abecedno kazalo, iskanje, povezave na zapise — SL/EN/HR.
+- **Obišči na kraju samem** (nova sekcija O muzeju): trije fizični muzeji regije z živimi povezavami (muzej-crnomelj.si, ric-belakrajina.si, belokranjski-muzej.si) + opomba o celotnem sistemu RIC — most med digitalnim in fizičnim.
+- **13. vsebinski sklop (»Šport in svila«)**: ŠD Griblje (tek v svet), belokranjska noša (peča — Vurnik 1928, javna last), rudnik Kanižarica (1857–1997, povezava na fizični muzej) — 72 zapisov / 308 virov.
+- Kanižarica kot zapis **dopolnjuje fizični muzej rudnika** — digitalni most v praksi.
+
+### Prioritete po 3. krogu
+
+1. ~~Izrazoslovje~~ ✅ (danes)
+2. ~~Povezava na fizične muzeje regije~~ ✅ (danes)
+3. DE/IT jeziki (čezmejno: hrvaščina že pokriva Pokolpje)
+4. Večje slike / gigapikseli (IIIF profili)
+5. Mesečni zapis »Zapis meseca« (NG »Picture of the month«) — premalo vsebine za mesečni ritem, čaka na več zapisov

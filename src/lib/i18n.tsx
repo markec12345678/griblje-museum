@@ -19,6 +19,7 @@ export const ui = {
       tema: "Teme",
       razpolozenje: "Po razpoloženju",
       zgodbe: "Zgodbe",
+      izrazoslovje: "Izrazoslovje",
       casovnica: "Časovnica",
       karta: "Karta",
       dogodki: "Dogodki",
@@ -141,7 +142,7 @@ export const ui = {
       title1: "Vas kot",
       titleAccent: "muzej.",
       subtitle:
-        "Zbirka 69 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
+        "Zbirka 72 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
       ctaCollection: "Razišči zbirko",
       ctaMap: "Odpri zemljevid",
       ctaGuide: "Vprašaj vodnika",
@@ -335,6 +336,31 @@ export const ui = {
       accessLimitText:
         "Interaktivni zemljevid (Leaflet/OpenStreetMap) zaenkrat nima popolne alternativne besedilne predstavitve. Za vse točke zemljevida so koordinate in opisi na voljo tudi v odprtih podatkih prek /api/opendata.",
       accessFeedback: "Povratne informacije o dostopnosti sprejemamo prek kontakta v kolofonu.",
+      visitTitle: "Obišči na kraju samem",
+      visitText:
+        "Digitalni muzej vasi ima v Beli krajini fizične sorodnike — muzeje, ki jih lahko obiščete in v katerih stojijo pravi predmeti. Ta muzej je njihov digitalni most: povezuje vasi zbirko s pokrajinskimi spomini.",
+      visitMuseums: [
+        {
+          name: "Mestni muzej Črnomelj",
+          text: "Rojstna hiša Mirana Jarca s stalno razstavo Črnomelj na prepihu tisočletij — od avgusta 2026 pod novim imenom Mestni muzej. Upravlja ga RIC Bela krajina.",
+          url: "https://www.muzej-crnomelj.si",
+          link: "muzej-crnomelj.si",
+        },
+        {
+          name: "Muzej rudnika rjavega premoga Kanižarica",
+          text: "Sto štirideset let premogovništva (1857–1997): prenovljeni izvozni stolp, tehnologija rudarjenja in umetni rov s Perkmandeljcem. Del sistema RIC Bela krajina.",
+          url: "https://www.ric-belakrajina.si",
+          link: "ric-belakrajina.si",
+        },
+        {
+          name: "Belokranjski muzej Metlika",
+          text: "Pokrajinski muzej z bogatimi etnografskimi zbirkami — med njimi tudi likovne upodobitve belokranjske noše. Grad Metlika, Metliška črna vijoličnost in druge razstave.",
+          url: "https://belokranjski-muzej.si",
+          link: "belokranjski-muzej.si",
+        },
+      ],
+      visitNote:
+        "V sistemu RIC Bela krajina sta še Zakladnica pod črnomaljskim gradom (2021) in Spominska hiša Otona Župančiča (2022), na gradu Črnomelj pa zbirka Branilci krone in meja (2025).",
       openDataTitle: "Odprti podatki",
       openDataText:
         "Celotna zbirka (zapisi, viri, dogodki, zgodbe) je javno dostopna prek JSON vmesnika z licenco CC BY-SA 4.0. Enako načelo odprtosti, ki ga izvajajo vodilni svetovni muzeji.",
@@ -403,7 +429,7 @@ export const ui = {
     guide: {
       openLabel: "Pogovor z zbirko (Ctrl+G)",
       title: "Pogovor z zbirko",
-      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 69 kuriranih zapisih.",
+      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 72 kuriranih zapisih.",
       aiBadge: "AI vodnik",
       disclaimer: "Umetna inteligenca sestavlja odgovore samo iz zapisov zbirke; navedeni zapisi so vedno pravi. Muzej ne izmišljuje zgodovine.",
       startersTitle: "S čim začnemo?",
@@ -477,7 +503,7 @@ export const ui = {
         n === 1 ? "1 postaja" : n >= 2 && n <= 4 ? `${n} postaje` : `${n} postaj`,
       minutes: (n: number) => `≈ ${n} min`,
       start: "Začni sprehod",
-      coverNote: "Sprehodi skupaj pokrivajo vseh 69 zapisov zbirke.",
+      coverNote: "Sprehodi skupaj pokrivajo vseh 72 zapisov zbirke.",
       completed: "Zaključen",
       completedProgress: (done: number, total: number) =>
         `Zaključeni sprehodi: ${done} od ${total}`,
@@ -733,7 +759,7 @@ export const ui = {
     visual: {
       title: "Podobne slike",
       subtitle:
-        "Po zgradbi in barvah slike — majhna različica vzorca »Search visually« Rijksmuseuma, ki pri 69 zapisih ne potrebuje umetne inteligence.",
+        "Po zgradbi in barvah slike — majhna različica vzorca »Search visually« Rijksmuseuma, ki pri 72 zapisih ne potrebuje umetne inteligence.",
       openExhibit: "Odpri podoben zapis",
       why: "Zakaj se sliki podobni?",
       whyText:
@@ -758,7 +784,7 @@ export const ui = {
       title: "Adventni koledar muzeja",
       subtitle:
         "Od 1. do 24. decembra se vsak dan odpre ena vrata zbirke — po vzoru adventnih koledarjev Glencairn Museuma in Ashmoleana. Določenega dne odpre vsak obiskovalec isti zapis.",
-      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 69.",
+      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 72.",
       openDoor: "Odpri vrata",
       doorLocked: "Vrata so še zaprta",
       opensIn: "Odpre se čez {n} dni",
@@ -969,6 +995,18 @@ export const ui = {
       patternNote:
         "Objave za kuliso so najcenejša vsebina muzeja: surovina je delo, ki ga prostovoljci že opravijo.",
     },
+    glossary: {
+      kicker: "Slovar pojmov",
+      title: "Izrazoslovje",
+      subtitle:
+        "Besede, v katerih živi zbirka — od peče do Perkmandeljca. Vsak pojem je vezan na zapise, iz katerih je povzet. Vzorec: slovar »Art terms« londonske galerije Tate.",
+      searchPlaceholder: "Poišči pojem …",
+      searchLabel: "Iskanje po izrazoslovju",
+      count: (n: number) => (n === 1 ? "1 pojem" : `${n} pojmov`),
+      indexLabel: "Abecedno kazalo",
+      related: "Povezani zapisi",
+      empty: "Med pojmi ni zadetka. Poskusite drugo besedo — ali pa jo predlagajte muzeju.",
+    },
     collectionStats: {
       title: "Zbirka v številkah",
       subtitle: "Kaj hrani ta muzej — po sklopih, obdobjih in zanesljivosti virov.",
@@ -1001,6 +1039,7 @@ export const ui = {
       tema: "Themes",
       razpolozenje: "By mood",
       zgodbe: "Stories",
+      izrazoslovje: "Glossary",
       casovnica: "Timeline",
       karta: "Map",
       dogodki: "Events",
@@ -1123,7 +1162,7 @@ export const ui = {
       title1: "A village as",
       titleAccent: "a museum.",
       subtitle:
-        "Sixty-nine records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
+        "Seventy-two records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
       ctaCollection: "Explore the collection",
       ctaMap: "Open the map",
       ctaGuide: "Ask the guide",
@@ -1317,6 +1356,31 @@ export const ui = {
       accessLimitText:
         "The interactive map (Leaflet/OpenStreetMap) does not yet have a full alternative text representation. Coordinates and descriptions of all map points are also available in the open data via /api/opendata.",
       accessFeedback: "We welcome accessibility feedback through the contact in the colophon.",
+      visitTitle: "Visit in person",
+      visitText:
+        "The digital village museum has physical relatives in Bela krajina — museums you can walk into and where the real objects stand. This museum is their digital bridge: it joins the village's collection to the region's memories.",
+      visitMuseums: [
+        {
+          name: "Črnomelj Town Museum",
+          text: "The birth house of Miran Jarc with the permanent exhibition Črnomelj in the draft of millennia — since August 2026 under its new name, the Town Museum. Run by RIC Bela krajina.",
+          url: "https://www.muzej-crnomelj.si",
+          link: "muzej-crnomelj.si",
+        },
+        {
+          name: "Kanižarica Brown-Coal Mine Museum",
+          text: "One hundred and forty years of coal mining (1857–1997): the renewed exit tower, the technology of mining and an artificial tunnel with the Perkmandelc. Part of the RIC Bela krajina system.",
+          url: "https://www.ric-belakrajina.si",
+          link: "ric-belakrajina.si",
+        },
+        {
+          name: "Bela krajina Museum, Metlika",
+          text: "The regional museum with rich ethnographic collections — among them pictorial renderings of the Bela krajina costume. Metlika Castle, the Metlika black violet and other exhibitions.",
+          url: "https://belokranjski-muzej.si",
+          link: "belokranjski-muzej.si",
+        },
+      ],
+      visitNote:
+        "The RIC Bela krajina system also holds the Treasury below the Črnomelj castle (2021) and the Memorial House of Oton Župančič (2022); on Črnomelj Castle the collection Defenders of the Crown and Borders opened in 2025.",
       openDataTitle: "Open data",
       openDataText:
         "The entire collection (records, sources, events, stories) is publicly available through a JSON interface under CC BY-SA 4.0 — the same openness principle practised by leading world museums.",
@@ -1384,7 +1448,7 @@ export const ui = {
     guide: {
       openLabel: "Talk to the collection (Ctrl+G)",
       title: "Talk to the collection",
-      subtitle: "Ask the museum guide — answers are grounded in 69 curated records.",
+      subtitle: "Ask the museum guide — answers are grounded in 72 curated records.",
       aiBadge: "AI guide",
       disclaimer: "Artificial intelligence builds answers only from the collection records; cited records are always real. The museum invents no history.",
       startersTitle: "Where shall we start?",
@@ -1456,7 +1520,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stop" : `${n} stops`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Start the walk",
-      coverNote: "Together the walks cover all 69 records of the collection.",
+      coverNote: "Together the walks cover all 72 records of the collection.",
       completed: "Completed",
       completedProgress: (done: number, total: number) =>
         `Completed walks: ${done} of ${total}`,
@@ -1736,7 +1800,7 @@ export const ui = {
       title: "The museum's advent calendar",
       subtitle:
         "From 1 to 24 December one door of the collection opens each day — after the advent calendars of Glencairn Museum and the Ashmolean. On a given day every visitor opens the same record.",
-      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 69 pieces.",
+      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 72 pieces.",
       openDoor: "Open door",
       doorLocked: "Door still closed",
       opensIn: "Opens in {n} days",
@@ -1945,6 +2009,18 @@ export const ui = {
       patternNote:
         "Behind-the-scenes posts are a museum's cheapest content: the raw material is work volunteers already do.",
     },
+    glossary: {
+      kicker: "A dictionary of terms",
+      title: "Glossary",
+      subtitle:
+        "The words the collection lives in — from the peča to the Perkmandelc. Every term is bound to the records it was drawn from. Pattern: the Art terms dictionary of Tate, London.",
+      searchPlaceholder: "Search for a term …",
+      searchLabel: "Glossary search",
+      count: (n: number) => (n === 1 ? "1 term" : `${n} terms`),
+      indexLabel: "Alphabetical index",
+      related: "Related records",
+      empty: "No term matches. Try another word — or propose one to the museum.",
+    },
     collectionStats: {
       title: "The collection in numbers",
       subtitle: "What this museum holds — by theme, era and reliability of sources.",
@@ -1977,6 +2053,7 @@ export const ui = {
       tema: "Teme",
       razpolozenje: "Prema raspoloženju",
       zgodbe: "Priče",
+      izrazoslovje: "Pojmovnik",
       casovnica: "Kronologija",
       karta: "Karta",
       dogodki: "Događaji",
@@ -2099,7 +2176,7 @@ export const ui = {
       title1: "Selo kao",
       titleAccent: "muzej.",
       subtitle:
-        "Šezdeset i devet zapisa, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
+        "Sedamdeset i dva zapisa, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
       ctaCollection: "Istraži zbirku",
       ctaMap: "Otvori zemljovid",
       ctaGuide: "Pitaj vodiča",
@@ -2293,6 +2370,31 @@ export const ui = {
       accessLimitText:
         "Interaktivni zemljovid (Leaflet/OpenStreetMap) zasad nema potpunu alternativnu tekstualnu predodžbu. Za sve točke zemljovida koordinate i opisi dostupni su i u otvorenim podacima putem /api/opendata.",
       accessFeedback: "Povratne informacije o pristupačnosti primamo putem kontakta u kolofonu.",
+      visitTitle: "Posjetite nas na licu mjesta",
+      visitText:
+        "Digitalni muzej sela u Beloj krajini ima fizičke rođake — muzeje u koje možete ući i u kojima stoje pravi predmeti. Ovaj muzej je njihov digitalni most: spaja zbirku sela sa sjećanjima pokrajine.",
+      visitMuseums: [
+        {
+          name: "Gradski muzej Črnomelj",
+          text: "Rodna kuća Mirana Jarca sa stalnom izložbom Črnomelj na propuhu tisućljeća — od kolovoza 2026 pod novim imenom, Gradski muzej. Vodi ga RIC Bela krajina.",
+          url: "https://www.muzej-crnomelj.si",
+          link: "muzej-crnomelj.si",
+        },
+        {
+          name: "Muzej rudnika mrkog ugljena Kanižarica",
+          text: "Sto četrdeset godina rudarstva (1857–1997): obnovljeni izvozni toranj, tehnologija rudarenja i umjetna jama s Perkmandeljcem. Dio sustava RIC Bela krajina.",
+          url: "https://www.ric-belakrajina.si",
+          link: "ric-belakrajina.si",
+        },
+        {
+          name: "Muzej Bele krajine, Metlika",
+          text: "Pokrajinski muzej s bogatim etnografskim zbirkama — među njima i likovne upodobitbe bele krajinske nošnje. Dvorac Metlika i druge izložbe.",
+          url: "https://belokranjski-muzej.si",
+          link: "belokranjski-muzej.si",
+        },
+      ],
+      visitNote:
+        "U sustavu RIC Bela krajina su još Riznica pod crnomaljskim dvorcem (2021) i Spominska kuća Otona Župančiča (2022); na dvorcu Črnomelj zbirka Branitelji krune i granica (2025).",
       openDataTitle: "Otvoreni podaci",
       openDataText:
         "Cijela zbirka (zapisi, izvori, događaji, priče) javno je dostupna putem JSON sučelja s licencijom CC BY-SA 4.0. Isto načelo otvorenosti koje provode vodeći svjetski muzeji.",
@@ -2360,7 +2462,7 @@ export const ui = {
     guide: {
       openLabel: "Razgovor sa zbirkom (Ctrl+G)",
       title: "Razgovor sa zbirkom",
-      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 69 kuriranih zapisa.",
+      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 72 kuriranih zapisa.",
       aiBadge: "AI vodič",
       disclaimer: "Umjetna inteligencija sastavlja odgovore samo iz zapisa zbirke; navedeni zapisi uvijek su pravi. Muzej ne izmišlja povijest.",
       startersTitle: "Čime počinjemo?",
@@ -2432,7 +2534,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stanica" : n <= 4 ? `${n} stanice` : `${n} stanica`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Započni šetnju",
-      coverNote: "Šetnje zajedno pokrivaju svih 69 zapisa zbirke.",
+      coverNote: "Šetnje zajedno pokrivaju svih 72 zapisa zbirke.",
       completed: "Završeno",
       completedProgress: (done: number, total: number) =>
         `Završene šetnje: ${done} od ${total}`,
@@ -2687,7 +2789,7 @@ export const ui = {
     visual: {
       title: "Slične slike",
       subtitle:
-        "Po strukturi i bojama — mala muzejska inačica uzorka »Search visually« Rijksmuseuma, koja pri 69 zapisa ne treba umjetnu inteligenciju.",
+        "Po strukturi i bojama — mala muzejska inačica uzorka »Search visually« Rijksmuseuma, koja pri 72 zapisa ne treba umjetnu inteligenciju.",
       openExhibit: "Otvori sličan zapis",
       why: "Zašto su slike slične?",
       whyText:
@@ -2712,7 +2814,7 @@ export const ui = {
       title: "Adventski kalendar muzeja",
       subtitle:
         "Od 1. do 24. prosinca svaki se dan otvaraju jedna vrata zbirke — po uzoru na adventske kalendare Glencairn muzeja i Ashmoleana. Određenoga dana svaki posjetitelj otvara isti zapis.",
-      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 69.",
+      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 72.",
       openDoor: "Otvori vrata",
       doorLocked: "Vrata su još zatvorena",
       opensIn: "Otvaraju se za {n} dana",
@@ -2921,6 +3023,18 @@ export const ui = {
       stepsLabel: (n: number) => (n === 1 ? "1 korak" : `${n} koraka`),
       patternNote:
         "Objave iza kulisa najjeftiniji su sadržaj muzeja: sirovina je rad koji volonteri već obavljaju.",
+    },
+    glossary: {
+      kicker: "Rječnik pojmova",
+      title: "Pojmovnik",
+      subtitle:
+        "Riječi u kojima živi zbirka — od peče do Perkmandeljca. Svaki je pojam vezan na zapise iz kojih je preuzet. Uzorak: rječnik »Art terms« londonske galerije Tate.",
+      searchPlaceholder: "Pronađi pojam …",
+      searchLabel: "Pretraga pojmovnika",
+      count: (n: number) => (n === 1 ? "1 pojam" : `${n} pojmova`),
+      indexLabel: "Abecedni kazalo",
+      related: "Povezani zapisi",
+      empty: "Među pojmovima nema pogodaka. Pokušajte drugu riječ — ili je predložite muzeju.",
     },
     collectionStats: {
       title: "Zbirka u brojkama",

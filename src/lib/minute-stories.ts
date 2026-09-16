@@ -502,6 +502,27 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "The year 1468: on a document the name Griblach appears for the first time. Briglach and Griblah follow; in the urbaria and on the oldest map, Grüble. Every entry was an act of power: what was written down was taxed and defended. In this record's image stands the map of 1714 — the Duchy of Carniola with Bela krajina on a single sheet, the work of the Nuremberg cartographer Homann after Valvasor's material. From urbarium to orbit runs one idea: a place that is not written down is not represented.",
   },
+  {
+    slug: "sd-griblje-sport",
+    textSi:
+      "Vas, ki je dala maratonca, je tek vzela za svojega. Na ljubljanskem maratonu leta 2022 jih je teklo sedem — maratonsko razdaljo Ciril Totter. Leta 2024 se je Peter Križan pomeril na svetovnem prvenstvu v triatlonu v Španiji: 27. mesto med šestinsedemdesetimi. Na sliki je štartna množica pod lokom — jesensko prizorišče, kamor vsako leto privihajo tudi gribeljski čevlji.",
+    textEn:
+      "A village that gave a marathon man took running for its own. Seven ran the Ljubljana marathon of 2022 — Ciril Totter over the full distance. In 2024 Peter Križan raced the triathlon world championship in Spain: 27th among seventy-six. In the image stands the start crowd under the arch — the autumn scene to which Griblje's shoes travel every year.",
+  },
+  {
+    slug: "belokranjska-nosa",
+    textSi:
+      "Ko se je belokranjska žena oblekla praznično, se je pokrajina ogledala v njej: rokavci, nagubano krilo, volnen pas — in nad vsem peča, bela ruta, ki se praznično veže z rožo na čelu. Risba na sliki je iz prve znanstvene študije o peči, ki jo je leta 1928 napisal etnograf Stanko Vurnik. Danes noša stopa iz omare na Jurjevanju — leta 2025 je bila Bela krajina osrednja gostja dnevov narodnih noš v Kamniku.",
+    textEn:
+      "When a Bela krajina woman dressed for a feast, the region saw itself in her: sleeves, pleated skirt, a wool belt — and above all the peča, the white cloth tied festively with a flower on the forehead. The drawing in the image comes from the first scholarly study of the peča, written by the ethnographer Stanko Vurnik in 1928. Today the costume steps from the wardrobe at Jurjevanje — in 2025 Bela krajina was the central guest of the days of national costume in Kamnik.",
+  },
+  {
+    slug: "kanizarica",
+    textSi:
+      "Najbližja industrijska revolucija te vasi je gorela sedem kilometrov stran: rudnik rjavega premoga Kanižarica, odprt 1857, zaprt 1997. Tja so vozili moški z vse Bele krajine; v jami jih je čakal premog, prah in Perkmandeljc, škrat, ki kazuje nevarnost. Danes na istem mestu stoji muzej z umetnim rovom — in ta zapis povezuje digitalni spomin vasi s fizičnim spominom pokrajine.",
+    textEn:
+      "This village's nearest industrial revolution burned seven kilometres away: the Kanižarica brown-coal mine, opened 1857, closed 1997. Men drove there from all over Bela krajina; in the pit coal, dust and the Perkmandelc awaited — the dwarf who points out danger. Today a museum with an artificial tunnel stands on the same ground — and this record joins the village's digital memory to the region's physical one.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {

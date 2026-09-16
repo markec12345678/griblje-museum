@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 69/69 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 69/69 (povprečno ~291) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 69/69 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 72/72 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 72/72 (povprečno ~291) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 72/72 |
 | Viri | 4–6 preverljivih virov na zapis | ✅ 296 skupaj (povprečno 4,3) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 69/69 |
+| Zanesljivost | izrecni status dokazilosti | ✅ 72/72 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -94,7 +94,7 @@ pesem pozemeljske fare po Matičkovem zapisu; živo le še v Adlešiški fari), 
 travniki, ponikanje Kolpe — najbolj suh kraj Bele krajine ob najbolj darežljivi reki)
 in **etimologija gribljati** (ime vasi = brazda; urbarji Grüble, Šimec 2001) — zbirka
 60 zapisov / 260 virov.
-Enajsti sklop **Vas, ki se spominja same sebe** (60 → 67 zapisov / 283 virov):
+Enajsti sklop **Vas, ki se spominja same sebe** (60 → 67 zapisov / 308 virov):
 **Turistično društvo Griblje** (držitelj vaškega koledarja — Pasuljada, Kavbojski žur,
 rally starodobnih koles — in nosilec tega muzeja), **Gribeljci po svetu 2019** (srečanje
 izseljenske vasi ob 130-letnici šole), **Ko se ptički ženijo** (obujeno gregorjevo 2026 s
@@ -112,9 +112,17 @@ sosednja vas ob Kolpi; sušilnica kot standardni del vaškega prostora Bele kraj
 Podrebra) — ob obnovljenih virih: 90. rojstni dan dr. Brinca (2025), vaja evakuacije PGD
 Griblje na podružnici (2024), stavbna dediščina podeželja (2021) in kruh kot spomin (2026).
 
+Trinajsti sklop **Šport in svila** (69 → 72 zapisov / 308 virov): **ŠD Griblje** (40+ let
+tradicije; sedmerica na ljubljanskem maratonu 2022 in 2024, maraton Cirila Totterja, triatlon
+svetovnega prvenstva Petra Križana — Torremolinos 2024, 27. mesto; šolski pohodi na Markovo
+glavo), **Belokranjska noša** (peča — prva znanstvena študija Stanka Vurnika 1928, javna last;
+RTV 2025: dvodelna ženska obleka, roža na čelu; Kamra/Album Slovenije: Jurjevanje 1966) in
+**Rudnik Kanižarica** (1857–1997; Perkmandeljc, prenovljeni izvozni stolp, muzej pri RIC od
+2022 — digitalni most do fizičnega muzeja rudnika).
+
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 69 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 72 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -193,8 +201,14 @@ načela in odprti razpis za pričevanja skupnosti
 - 🔎 **Podobne slike** — vizualna podobnost v vsakem zapisu: muzej primerja vzorec
   svetlega/temnega (povprečni hash 8×8) in barve (3×3 polja) ter predlaga tri
   vizualno najbližje slike — iskrena majhnomuzejska različica vzorca Search visually
-  (Rijksmuseum) brez ML modela; prstni odtisi vseh 69 slik v 14 kB JSON, primerjava
+  (Rijksmuseum) brez ML modela; prstni odtisi vseh 72 slik v 15 kB JSON, primerjava
   v brskalniku (60 % zgradba + 40 % barve, prag 0,62)
+- 📖 **Izrazoslovje** — slovar pojmov zbirke (vzorec »Art terms« galerije Tate): 18
+  pojmov od peče do Perkmandeljca, abecedno kazalo, iskanje po definicijah in
+  povezave na zapise, iz katerih so povzeti; SLO/EN/HR
+- 🏛️ **Obišči na kraju samem** — most med digitalnim in fizičnimi muzeji regije:
+  Mestni muzej Črnomelj, Muzej rudnika Kanižarica in Belokranjski muzej Metlika z
+  živimi povezavami (razdelek O muzeju)
 - 🕹️ **Igre muzeja** — hub vseh igralnih dejanj na enem mestu (vzorec Play / The Lab,
   Google Arts & Culture): uganka kar v hubu, sestavljanke, počasno gledanje,
   razglednice, izrez detajla in poveži zbirko s skupnim izbirnikom zapisa z iskanjem;
@@ -265,7 +279,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 69 zapisov, 296 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 72 zapisov, 308 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -274,7 +288,7 @@ in Met API analizirani novi vzorci (You might like, License this image, Art term
 provenienca/audio opis, odprti podatki CC0) — poročilo `design-research/UI-PRIMERJAVA-2026-10.md`.
 Izpeljana dva nova vzorca: **Podobne slike** (Search visually lite) in **Igre muzeja** (hub).
 Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletnica 2027,
-140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 69 zapisov / 296 virov.
+140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 72 zapisov / 308 virov.
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
 brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi

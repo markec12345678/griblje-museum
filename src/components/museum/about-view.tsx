@@ -5,6 +5,7 @@ import {
   Accessibility,
   Archive,
   BookOpen,
+  Building,
   Database,
   ExternalLink,
   FileText,
@@ -135,6 +136,47 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             {t.about.inspireText}
           </p>
         </div>
+      </section>
+
+      {/* OBIŠČI NA KRAJU SAMEM — most med digitalnim in fizičnimi muzeji
+          regije (vzorec: Mestni muzej Črnomelj — predstavitev vsebin
+          različnim obiskovalcem + povezovanje z društvi in domačini) */}
+      <section aria-labelledby="o-kraju" className="mt-14">
+        <h2
+          id="o-kraju"
+          className="font-display flex items-center gap-3 text-2xl font-semibold sm:text-3xl"
+        >
+          <Building className="h-6.5 w-6.5 text-primary" aria-hidden="true" />
+          {t.about.visitTitle}
+        </h2>
+        <p className="mt-2 max-w-2xl text-muted-foreground">{t.about.visitText}</p>
+        <ul className="mt-6 grid gap-5 md:grid-cols-3">
+          {t.about.visitMuseums.map((museum) => (
+            <li
+              key={museum.name}
+              className="flex flex-col rounded-xl border border-border/70 bg-card p-5"
+            >
+              <p className="font-display text-base font-semibold text-primary">
+                {museum.name}
+              </p>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                {museum.text}
+              </p>
+              <a
+                href={museum.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+              >
+                {museum.link}
+                <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 text-xs italic text-muted-foreground">
+          {t.about.visitNote}
+        </p>
       </section>
 
       {/* ZBIRKA V ŠTEVILKAH — razširjena statistika (vzorec: Met/Tate) */}
