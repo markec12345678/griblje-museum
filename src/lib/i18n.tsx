@@ -436,6 +436,9 @@ export const ui = {
       copyCitation: "Kopiraj citat",
       citationCopied: "Citat kopiran",
       accessed: "dostop",
+      downloadImage: "Prenesi sliko",
+      downloadImageTitle:
+        "Slika zapisa je prosta za rabo (Creative Commons ali javna last) — prenos vključuje navedbo avtorja. Vzorec: Rijksmuseum, odprti dostop.",
     },
     walks: {
       sectionTitle: "Muzejski sprehodi",
@@ -1337,6 +1340,9 @@ export const ui = {
       copyCitation: "Copy citation",
       citationCopied: "Citation copied",
       accessed: "accessed",
+      downloadImage: "Download image",
+      downloadImageTitle:
+        "This record's image is free to use (Creative Commons or public domain) — keep the credit with it. Pattern: Rijksmuseum open access.",
     },
     walks: {
       sectionTitle: "Museum walks",
@@ -2234,6 +2240,9 @@ export const ui = {
       copyCitation: "Kopiraj citat",
       citationCopied: "Citat kopiran",
       accessed: "pristup",
+      downloadImage: "Preuzmi sliku",
+      downloadImageTitle:
+        "Slika zapisa slobodna je za uporabu (Creative Commons ili javna last) — preuzimanje uključuje navod autora. Uzor: Rijksmuseum, otvoreni pristup.",
     },
     walks: {
       sectionTitle: "Muzejske šetnje",

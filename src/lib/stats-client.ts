@@ -13,7 +13,14 @@
  * lahki vmesnik pokaže pošteno opombo namesto ničel brez razlage.
  */
 
-export type StatKind = "visit" | "open" | "walk" | "guide" | "audio" | "ar";
+export type StatKind =
+  | "visit"
+  | "open"
+  | "walk"
+  | "guide"
+  | "audio"
+  | "ar"
+  | "download";
 
 const VISIT_GUARD = "mvg-stats-visit";
 const READONLY_FLAG = "mvg-stats-readonly";

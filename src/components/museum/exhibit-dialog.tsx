@@ -7,6 +7,7 @@ import {
   ArrowRight,
   BookOpen,
   Check,
+  Download,
   ExternalLink,
   FileText,
   Globe,
@@ -699,6 +700,26 @@ export function ExhibitDialog({
                           ? t.share.copyFailed
                           : t.share.copyLink}
                     </Button>
+                    {exhibit.image && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="min-h-9"
+                        title={t.share.downloadImageTitle}
+                        onClick={() => {
+                          trackStat("download", exhibit.slug);
+                          const a = window.document.createElement("a");
+                          a.href = exhibit.image as string;
+                          a.download = `${exhibit.slug}.jpg`;
+                          window.document.body.appendChild(a);
+                          a.click();
+                          a.remove();
+                        }}
+                      >
+                        <Download className="mr-1.5 h-4 w-4" aria-hidden="true" />
+                        {t.share.downloadImage}
+                      </Button>
+                    )}
                   </div>
                 </div>
                 <p className="museum-scroll mt-2 overflow-x-auto font-mono text-xs leading-relaxed text-foreground/85">
