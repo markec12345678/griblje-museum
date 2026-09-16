@@ -24,6 +24,7 @@ export const ui = {
       dogodki: "Dogodki",
       oMuzeju: "O muzeju",
       mojMuzej: "Moja zbirka",
+      igre: "Igre",
       zaOtroke: "Za otroke",
       knjiga: "Spomini",
       zaKuliso: "Za kuliso",
@@ -690,6 +691,54 @@ export const ui = {
       pathNote: "Vsak skok nosi razlog: ista tema, prekrivajoče obdobje, isti vir, bližina na karti ali kuratorska vez tem.",
       noPath: "Med tema zapisoma ni povezave — izberita drug par.",
     },
+    games: {
+      kicker: "Igraj z zbirko",
+      title: "Igre muzeja",
+      subtitle:
+        "Vsa igralna dejanja muzeja na enem mestu — po vzoru rubrike Play / The Lab (Google Arts & Culture). Brez računa, brez točk: muzej, ki se ga lahko tudi zaigra.",
+      introTitle: "Zakaj ima vaški muzej igre?",
+      introText:
+        "Ker je to najkrajša pot do pozornosti. Ko sestavljate sliko, si jo zapomnite; ko rešujete uganko, brskate po virih; ko iščete pot med dvema zapisoma, spoznate povezave, ki jih kurator sicer pove z besedami. Vse igre slonijo na isti dokumentirani zbirki — ničesar si ne izmišljamo.",
+      otherTitle: "Ostale igre",
+      otherSub:
+        "Vsaka igra se zažene s sliko pravega zapisa — izberete jo iz cele zbirke.",
+      quizTitle: "Muzejska uganka",
+      quizText: "Preverite, koliko vas že poznate. Vsako vprašanje sloni na dokumentirani zbirki.",
+      puzzleTitle: "Sestavljanke",
+      puzzleText:
+        "Sestavite sliko katerega koli zapisa — 3×3 za prve poizkuse, 5×5 za potrpežljive. Čas in število potez se štejeta, najboljši rezultat pa ostane v vašem brskalniku.",
+      connectTitle: "Poveži zbirko",
+      connectText:
+        "Izberita dva zapisa in muzej najde pot med njima — vsak skok ima svoj razlog: ista tema, obdobje, vir ali bližina.",
+      slowTitle: "Počasno gledanje",
+      slowText:
+        "Vodeno razglabljanje ene slike — nekaj minut miru z enim zapisom, po vzoru počasnega gledanja v galerijah.",
+      postcardTitle: "Razglednice",
+      postcardText:
+        "Pošljite e-razglednico s sliko zapisa in svojim pozdravom — naslovnik jo odpre kar v brskalniku.",
+      detailTitle: "Izreži detajl",
+      detailText:
+        "Izrežite svoj najljubši kos slike v Mojo zbirko — po vzoru Rijksstudia nizozemskega Rijksmuseuma.",
+      perExhibitNote:
+        "Vsa dejanja so dosegljiva tudi neposredno v vsakem zapisu zbirke — ta vhod je le drug, bolj igroviden.",
+      play: "Igraj",
+      allLink: "Vse igre muzeja",
+      pickTitle: "Izberite zapis",
+      pickSub: "Iskanje po naslovu ali obdobju — izbor se nanaša na izbrano igro.",
+      pickPlaceholder: "Iščite po zbirki …",
+      pickCount: (n: number) =>
+        n === 1 ? "1 zapis" : n === 2 ? "2 zapisa" : n === 3 || n === 4 ? `${n} zapisi` : `${n} zapisov`,
+      pickEmpty: "Ni zadetkov — poskusite drugo besedo.",
+    },
+    visual: {
+      title: "Podobne slike",
+      subtitle:
+        "Po zgradbi in barvah slike — majhna različica vzorca »Search visually« Rijksmuseuma, ki pri 69 zapisih ne potrebuje umetne inteligence.",
+      openExhibit: "Odpri podoben zapis",
+      why: "Zakaj se sliki podobni?",
+      whyText:
+        "Muzej primerja vzorec svetlega in temnega ter povprečne barve devetih polj slike — dve črno-beli dokumentarni fotografiji ali dve pokrajini ob reki sta si tako blizu. To je vizualna, ne vsebinska sorodnost: povezane zapise najdete zgoraj.",
+    },
     minute: {
       kicker: "Muzej v minuti",
       title: "Ena minuta, ena zgodba",
@@ -957,6 +1006,7 @@ export const ui = {
       dogodki: "Events",
       oMuzeju: "About",
       mojMuzej: "My collection",
+      igre: "Games",
       zaOtroke: "For kids",
       knjiga: "Guestbook",
       zaKuliso: "Behind the scenes",
@@ -1619,6 +1669,54 @@ export const ui = {
       pathNote: "Every hop carries a reason: same theme, overlapping period, same source, closeness on the map, or a curatorial link of themes.",
       noPath: "There is no connection between these two records — pick another pair.",
     },
+    games: {
+      kicker: "Play with the collection",
+      title: "Museum games",
+      subtitle:
+        "Every playful act of the museum in one place — after the Play / The Lab section of Google Arts & Culture. No accounts, no points: a museum you can also play.",
+      introTitle: "Why does a village museum have games?",
+      introText:
+        "Because it is the shortest path to attention. Assemble a picture and you remember it; answer a quiz and you browse the sources; search for a path between two records and you meet connections a curator would otherwise spell out. Every game stands on the same documented collection — nothing is invented.",
+      otherTitle: "Other games",
+      otherSub:
+        "Each game starts with the image of a real record — pick one from the whole collection.",
+      quizTitle: "Museum quiz",
+      quizText: "Test how well you already know us. Every question stands on the documented collection.",
+      puzzleTitle: "Jigsaw puzzles",
+      puzzleText:
+        "Assemble the image of any record — 3×3 for first attempts, 5×5 for the patient. Time and moves are counted; your best result stays in your browser.",
+      connectTitle: "Connect the collection",
+      connectText:
+        "Pick two records and the museum finds a path between them — every hop carries its reason: same theme, period, source, or closeness.",
+      slowTitle: "Slow looking",
+      slowText:
+        "Guided contemplation of a single image — a few quiet minutes with one record, after slow looking in galleries.",
+      postcardTitle: "Postcards",
+      postcardText:
+        "Send an e-postcard with a record's image and your greeting — the recipient opens it right in their browser.",
+      detailTitle: "Collect a detail",
+      detailText:
+        "Crop your favourite corner of an image into My collection — after the Rijksmuseum's Rijksstudio.",
+      perExhibitNote:
+        "Every action is also available inside each record of the collection — this hub is just another, more playful entrance.",
+      play: "Play",
+      allLink: "All museum games",
+      pickTitle: "Pick a record",
+      pickSub: "Search by title or period — the pick feeds the chosen game.",
+      pickPlaceholder: "Search the collection …",
+      pickCount: (n: number) =>
+        n === 1 ? "1 record" : `${n} records`,
+      pickEmpty: "No matches — try another word.",
+    },
+    visual: {
+      title: "Similar images",
+      subtitle:
+        "By structure and colour — a small-museum take on the Rijksmuseum's 'Search visually' that needs no artificial intelligence at sixty-nine records.",
+      openExhibit: "Open a similar record",
+      why: "Why do these look alike?",
+      whyText:
+        "The museum compares each image's pattern of light and dark and the average colours of a three-by-three grid — two black-and-white documentary photographs or two river landscapes end up close. This is visual, not thematic kinship: for connected records, see above.",
+    },
     minute: {
       kicker: "The museum in a minute",
       title: "One minute, one story",
@@ -1884,6 +1982,7 @@ export const ui = {
       dogodki: "Događaji",
       oMuzeju: "O muzeju",
       mojMuzej: "Moja zbirka",
+      igre: "Igre",
       zaOtroke: "Za djecu",
       knjiga: "Sjećanja",
       zaKuliso: "Iza kulisa",
@@ -2545,6 +2644,54 @@ export const ui = {
       shared: "Poveznica kopirana",
       pathNote: "Svaki skok nosi razlog: ista tema, preklapajuće razdoblje, isti izvor, blizina na karti ili kuratorska veza tema.",
       noPath: "Među ta dva zapisa nema veze — izaberite drugi par.",
+    },
+    games: {
+      kicker: "Igraj s zbirkom",
+      title: "Igre muzeja",
+      subtitle:
+        "Sve igračke radnje muzeja na jednom mjestu — po uzoru na rubriku Play / The Lab (Google Arts & Culture). Bez računa, bez bodova: muzej koji se može i zaigrati.",
+      introTitle: "Zašto seljački muzej ima igre?",
+      introText:
+        "Jer je to najkraći put do pozornosti. Kad slažete sliku, zapamtite je; kad rješavate kviz, listate izvore; kad tražite put između dva zapisa, upoznajete veze koje kurator drugačije ispisuje riječima. Sve igre stoje na istoj dokumentiranoj zbirci — ništa ne izmišljamo.",
+      otherTitle: "Ostale igre",
+      otherSub:
+        "Svaka igra počinje slikom pravog zapisa — izaberete je iz cijele zbirke.",
+      quizTitle: "Muzejski kviz",
+      quizText: "Provjerite koliko nas već poznajete. Svako pitanje stoji na dokumentiranoj zbirci.",
+      puzzleTitle: "Sastavljanke",
+      puzzleText:
+        "Složite sliku bilo kojeg zapisa — 3×3 za prve pokušaje, 5×5 za strpljive. Vrijeme i broj poteza se broje, najbolji rezultat ostaje u vašem pregledniku.",
+      connectTitle: "Poveži zbirku",
+      connectText:
+        "Izaberite dva zapisa i muzej će naći put među njima — svaki skok nosi svoj razlog: ista tema, razdoblje, izvor ili blizina.",
+      slowTitle: "Sporo gledanje",
+      slowText:
+        "Vođeno razmatranje jedne slike — nekoliko minuta mira s jednim zapisom, po uzoru na sporo gledanje u galerijama.",
+      postcardTitle: "Razglednice",
+      postcardText:
+        "Pošaljite e-razglednicu sa slikom zapisa i svojim pozdravom — primatelj je otvara već u pregledniku.",
+      detailTitle: "Izreži detalj",
+      detailText:
+        "Izrežite svoj najdraži dio slike u Moju zbirku — po uzoru na Rijksstudio nizozemskog Rijksmuseuma.",
+      perExhibitNote:
+        "Sve radnje dostupne su i izravno u svakom zapisu zbirke — ovaj ulaz je samo drugi, igrovitiji.",
+      play: "Igraj",
+      allLink: "Sve igre muzeja",
+      pickTitle: "Izaberite zapis",
+      pickSub: "Pretraga po naslovu ili razdoblju — izbor se odnosi na odabranu igru.",
+      pickPlaceholder: "Tražite po zbirci …",
+      pickCount: (n: number) =>
+        n === 1 ? "1 zapis" : `${n} zapisa`,
+      pickEmpty: "Nema pogodaka — pokušajte drugu riječ.",
+    },
+    visual: {
+      title: "Slične slike",
+      subtitle:
+        "Po strukturi i bojama — mala muzejska inačica uzorka »Search visually« Rijksmuseuma, koja pri 69 zapisa ne treba umjetnu inteligenciju.",
+      openExhibit: "Otvori sličan zapis",
+      why: "Zašto su slike slične?",
+      whyText:
+        "Muzej uspoređuje uzorak svijetlog i tamnog te prosječne boje devet polja slike — dvije crno-bijele dokumentarne fotografije ili dvije riječne krajine tako završe blizu. To je vizualna, ne tematska srodnost: povezane zapise nađete gore.",
     },
     minute: {
       kicker: "Muzej u minuti",

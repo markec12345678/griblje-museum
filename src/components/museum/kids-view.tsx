@@ -8,6 +8,7 @@ import {
   Gamepad2,
   GraduationCap,
   Printer,
+  Puzzle,
   Sparkles,
 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
@@ -159,8 +160,8 @@ export function KidsView({
         </div>
       </section>
 
-      {/* Uganka, delovni list, zbiralec */}
-      <div className="mt-6 grid gap-6 md:grid-cols-3">
+      {/* Uganka, delovni list, igre, zbiralec */}
+      <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col rounded-xl border border-border/70 bg-card p-5">
           <h2 className="font-display flex items-center gap-2 text-lg font-semibold">
             <Gamepad2 className="h-5 w-5 text-primary" aria-hidden="true" />
@@ -171,6 +172,24 @@ export function KidsView({
           </p>
           <Button variant="outline" className="mt-4 min-h-11" onClick={goQuiz}>
             {t.kids.quizCta}
+          </Button>
+        </div>
+
+        <div className="flex flex-col rounded-xl border border-border/70 bg-card p-5">
+          <h2 className="font-display flex items-center gap-2 text-lg font-semibold">
+            <Puzzle className="h-5 w-5 text-primary" aria-hidden="true" />
+            {t.games.puzzleTitle}
+          </h2>
+          <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+            {t.games.puzzleText}
+          </p>
+          <Button
+            variant="outline"
+            className="mt-4 min-h-11"
+            onClick={() => onNavigate("igre")}
+          >
+            <Gamepad2 className="mr-2 h-4 w-4" aria-hidden="true" />
+            {t.games.play}
           </Button>
         </div>
 
