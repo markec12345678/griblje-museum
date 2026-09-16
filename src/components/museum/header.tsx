@@ -17,6 +17,7 @@ export type MuseumView =
   | "tema"
   | "razpolozenje"
   | "zgodbe"
+  | "izrazoslovje"
   | "casovnica"
   | "karta"
   | "dogodki"
@@ -33,6 +34,7 @@ export const VIEW_ORDER: MuseumView[] = [
   "tema",
   "razpolozenje",
   "zgodbe",
+  "izrazoslovje",
   "casovnica",
   "karta",
   "dogodki",

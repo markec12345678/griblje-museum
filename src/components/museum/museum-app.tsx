@@ -19,6 +19,7 @@ import { ThemeHubView } from "@/components/museum/theme-hub-view";
 import { MoodGuideView } from "@/components/museum/mood-guide-view";
 import { GuestbookView } from "@/components/museum/guestbook-view";
 import { BehindScenesView } from "@/components/museum/behind-scenes-view";
+import { GlossaryView } from "@/components/museum/glossary-view";
 import { ConnectDialog } from "@/components/museum/connect-dialog";
 import { CompareTray } from "@/components/museum/compare-tray";
 import { CompareDialog } from "@/components/museum/compare-dialog";
@@ -641,6 +642,12 @@ export function MuseumApp() {
       />
     ),
     zgodbe: <StoriesView stories={storiesQuery.data ?? []} onNavigate={navigate} />,
+    izrazoslovje: (
+      <GlossaryView
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+      />
+    ),
     casovnica: (
       <TimelineView
         exhibits={exhibitsQuery.data ?? []}

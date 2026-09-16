@@ -285,6 +285,13 @@ export const WALKS: Walk[] = [
           "From the wine cellar one more drop: in autumn the still went from farm to farm — pear and apple brandy, medicine, gift and coin in one.",
       },
       {
+        exhibitSlug: "kanizarica",
+        noteSi:
+          "In kaj, ko kmetija ni znesla vse? Sedem kilometrov stran je rjavi premog: rudnik Kanižarica (1857–1997) je plačeval zime marsikateri obkolpski družini — danes pa tam stoji muzej.",
+        noteEn:
+          "And what when the farm could not carry it all? Seven kilometres away lay the brown coal: the Kanižarica mine (1857–1997) paid the winters of many a Kolpa family — today a museum stands there.",
+      },
+      {
         exhibitSlug: "etimologija-gribljati",
         noteSi:
           "In preden zapremo shrambo: ime vasi je brazda. Gribljati — orati, brazdati: ta zbirka stoji na dejanju, ki se je prvič zgodilo pred šestimi stoletji in se zgodi vsako pomlad znova.",
@@ -400,6 +407,13 @@ export const WALKS: Walk[] = [
           "Zadnja postaja je sedanji čas: na Jandrečetovi zemlji ekološko kmetuje maratonc Ciril Totter. Veja, ki se je vrnila k plugu — in dodala tekaške čevlje.",
         noteEn:
           "The last stop is the present day: on Jandreči land the marathon runner Ciril Totter farms ecologically. The branch that came back to the plough — and added running shoes.",
+      },
+      {
+        exhibitSlug: "sd-griblje-sport",
+        noteSi:
+          "In tek je ostal v vasi: ŠD Griblje vsako jesen pošlje sedmerico na ljubljanski maraton, Peter Križan pa je tekel svetovno prvenstvo v triatlonu. Kar Ciril nosi v nogah, društvo nosi v imenu vasi.",
+        noteEn:
+          "And running stayed in the village: every autumn ŠD Griblje sends a seven to the Ljubljana marathon, and Peter Križan has raced the triathlon world championship. What Ciril carries in his legs, the society carries in the village's name.",
       },
       {
         exhibitSlug: "matija-totter",
@@ -567,6 +581,13 @@ export const WALKS: Walk[] = [
           "Poletje zaključimo z ognjem: kres na večer pred sv. Janezom, s pesmijo, ki jo je rešil gribeljski Matiček. Šega, ki ne pusti predmeta — ostane pesem in spomin.",
         noteEn:
           "We close summer with fire: the bonfire on St. John's eve, with the song Griblje's Matiček saved. A custom that leaves no object — a song and a memory remain.",
+      },
+      {
+        exhibitSlug: "belokranjska-nosa",
+        noteSi:
+          "In ko se leto zavrti do praznika, se obleče bela ruta: belokranjska noša s pečo, pokrivalom, ki se veže z rožo na čelu. V njej so hodile te šege — in v nji še hodijo.",
+        noteEn:
+          "And when the year turns to a feast, the white cloth dresses: the Bela krajina costume with the peča, the head covering tied with a flower on the forehead. These customs walked in it — and still do.",
       },
     ],
   },

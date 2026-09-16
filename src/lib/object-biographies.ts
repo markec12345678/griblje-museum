@@ -3579,6 +3579,129 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "sd-griblje-sport",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "od 1980ih",
+        yearLabelEn: "from the 1980s",
+        sortYear: 1985,
+        textSi:
+          "Športno društvo Griblje nosi šport skozi vas: julijsko športno srečanje, mali nogomet, teki — več kot štiridesetletna tradicija.",
+        textEn:
+          "The Sports Society Griblje carries sport through the village: the July sports meeting, five-a-side football, runs — a tradition of more than forty years.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2022",
+        yearLabelEn: "2022",
+        sortYear: 2022,
+        textSi:
+          "Na 26. ljubljanskem maratonu teče sedem tekačev ŠD Griblje; maratonsko razdaljo preteče Ciril Totter.",
+        textEn:
+          "At the 26th Ljubljana marathon seven ŠD Griblje runners race; Ciril Totter runs the full marathon distance.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2024",
+        yearLabelEn: "2024",
+        sortYear: 2024,
+        textSi:
+          "Peter Križan nastopi na svetovnem prvenstvu v triatlonu v Torremolinosu (27. mesto); na 28. maratonu spet sedmerica iz Gribelj.",
+        textEn:
+          "Peter Križan races at the triathlon world championship finals in Torremolinos (27th place); a seven from Griblje runs the 28th marathon again.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+    ],
+  },
+  {
+    slug: "belokranjska-nosa",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "19. stoletje",
+        yearLabelEn: "19th century",
+        sortYear: 1850,
+        textSi:
+          "Belokranjska noša je vsakdan in praznik v enem: dvodelna ženska obleka, moška platnena preprostost — oblačila, ki jih je šila domača roka.",
+        textEn:
+          "The Bela krajina costume is workday and feast in one: the two-part women's dress, the men's linen simplicity — clothes sewn by hands at home.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1928",
+        yearLabelEn: "1928",
+        sortYear: 1928,
+        textSi:
+          "Etnograf Stanko Vurnik izda študijo Peča — prvo znanstveno delo o belokranjski pokrivali; risbe kažejo vezavo.",
+        textEn:
+          "The ethnographer Stanko Vurnik publishes the study Peča — the first scholarly work on the Bela krajina head covering; its drawings show the binding.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Noša živi na Jurjevanju in dnevih narodnih noš; leta 2025 je Bela krajina osrednja gostja v Kamniku. Muzej išče gribeljsko družino v noši.",
+        textEn:
+          "The costume lives at Jurjevanje and the days of national costume; in 2025 Bela krajina was the central guest in Kamnik. The museum seeks a Griblje family in the dress.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "kanizarica",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1857",
+        yearLabelEn: "1857",
+        sortYear: 1857,
+        textSi:
+          "V Kanižarici pri Črnomlju odprejo rudnik rjavega premoga — industrijsko srce, ki bo utripalo sto štirideset let.",
+        textEn:
+          "At Kanižarica near Črnomelj a brown-coal mine opens — the industrial heart that will beat for one hundred and forty years.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1857–1997",
+        yearLabelEn: "1857–1997",
+        sortYear: 1900,
+        textSi:
+          "Moški z vse Bele krajine se vsak dan spustijo pod zemljo; ob jami zraste kolonija rudarskih hiš, Perkmandeljc pa straži rov.",
+        textEn:
+          "Men from all over Bela krajina go underground every day; a colony of miners' houses grows by the pit, and the Perkmandelc guards the tunnel.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2022",
+        yearLabelEn: "2022",
+        sortYear: 2022,
+        textSi:
+          "Občina Črnomelj muzejsko zbirko prenese na RIC Bela krajina: prenovljeni stolp, umetni rov — in iskanje gribeljskih rudarjev se nadaljuje.",
+        textEn:
+          "The municipality of Črnomelj hands the museum collection to RIC Bela krajina: the renewed tower, the artificial tunnel — and the search for Griblje miners goes on.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {

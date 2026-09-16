@@ -75,6 +75,10 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   // 12. sklop: stari zemljevidi (Homann 1714) + pečnica za sušenje sadja (Vesel 1928)
   "/images/authentic/stari-zemljevid.jpg": { width: 2000, height: 1671 },
   "/images/authentic/pecnica-susenje.jpg": { width: 960, height: 583 },
+  // 13. sklop: šport (štart maratona 2012), noša (Vurnikova risba 1928), rudnik Kanižarica
+  "/images/authentic/maraton-start.jpg": { width: 1280, height: 662 },
+  "/images/authentic/peca-1928.jpg": { width: 1100, height: 1697 },
+  "/images/authentic/kanizarica.jpg": { width: 900, height: 599 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };
