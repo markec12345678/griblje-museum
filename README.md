@@ -94,7 +94,7 @@ pesem pozemeljske fare po Matičkovem zapisu; živo le še v Adlešiški fari), 
 travniki, ponikanje Kolpe — najbolj suh kraj Bele krajine ob najbolj darežljivi reki)
 in **etimologija gribljati** (ime vasi = brazda; urbarji Grüble, Šimec 2001) — zbirka
 60 zapisov / 260 virov.
-Enajsti sklop **Vas, ki se spominja same sebe** (60 → 67 zapisov / 278 virov):
+Enajsti sklop **Vas, ki se spominja same sebe** (60 → 67 zapisov / 283 virov):
 **Turistično društvo Griblje** (držitelj vaškega koledarja — Pasuljada, Kavbojski žur,
 rally starodobnih koles — in nosilec tega muzeja), **Gribeljci po svetu 2019** (srečanje
 izseljenske vasi ob 130-letnici šole), **Ko se ptički ženijo** (obujeno gregorjevo 2026 s
@@ -102,7 +102,7 @@ priznanji za najboljši kruh vaških pekaric), **Ciril Totter** (ekološka kmeti
 domačiji; maratonc), **praznik KS 2024** (prvi po desetletjih; nagovor 89-letnega dr. Brinca,
 odprtje spominske sobe), **Ljudje ob Kolpi** (radijska rubrika Borisa Grabrijana kot današnji
 zapisovalec vasi — primarni vir polovice zbirke) in **Valvasor 1689** (Slava vojvodine
-Kranjske — prva tiskana knjiga, ki pozna Črnomelj z okolico) — zbirka 67 zapisov / 278 virov.
+Kranjske — prva tiskana knjiga, ki pozna Črnomelj z okolico) — zbirka 67 zapisov / 283 virov.
 
 ## Funkcije / Features
 
@@ -115,8 +115,10 @@ Kranjske — prva tiskana knjiga, ki pozna Črnomelj z okolico) — zbirka 67 za
 - 🎓 **Za šole in učitelje** — šolska ponudba po norveškem modelu *skoletjeneste*:
   tri pripravljene dejavnosti (uganka, voden sprehod, delo z viri) in natisljiv
   delovni list za A4
-- 🧾 **Citiranje** — oblikovan citat zapisa z datumom dostopa in gumbom
-  »Kopiraj citat« (vzorec DigitaltMuseum *Siter dette objektet*)
+- 🧾 **Citiranje in odprti dostop** — oblikovan citat zapisa z datumom dostopa, gumboma
+  »Kopiraj citat« (vzorec DigitaltMuseum *Siter dette objektet*) in **prenosom slike
+  z navedbo licence** (vzorec Rijksmuseum Open Access: vse fotografije zbirke so CC
+  ali javna last)
 - 🗺️ **Zemljevid** — Leaflet + OSM, 19 točk (preverjene koordinate + približne, ločene
   vizualno in z oznako »približno«)
 - 📖 **Zgodbe** — šest pripovedi v človeških glasih (~300 besed, SLO+EN:
@@ -241,7 +243,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 67 zapisov, 278 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 67 zapisov, 283 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
