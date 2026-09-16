@@ -120,14 +120,14 @@ export function HomeView({
               {t.hero.subtitle}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button size="lg" className="min-h-12 px-6" onClick={() => onNavigate("zbirka")}>
+              <Button size="lg" className="min-h-12 rounded-full px-7" onClick={() => onNavigate("zbirka")}>
                 {t.hero.ctaCollection}
                 <ArrowRight className="ml-2 h-4.5 w-4.5" aria-hidden="true" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="min-h-12 border-primary/40 bg-background/70 px-6 backdrop-blur-sm hover:bg-background/90"
+                className="min-h-12 rounded-full border-primary/40 bg-background/70 px-7 backdrop-blur-sm hover:bg-background/90"
                 onClick={() => onNavigate("karta")}
               >
                 <MapIcon className="mr-2 h-4.5 w-4.5" aria-hidden="true" />
@@ -136,7 +136,7 @@ export function HomeView({
               <Button
                 size="lg"
                 variant="ghost"
-                className="min-h-12 border-primary/40 bg-background/70 px-6 text-foreground backdrop-blur-sm hover:bg-background/90"
+                className="min-h-12 rounded-full border-primary/40 bg-background/70 px-7 text-foreground backdrop-blur-sm hover:bg-background/90"
                 onClick={() => onNavigate("razpolozenje")}
               >
                 <Sparkles className="mr-2 h-4.5 w-4.5" aria-hidden="true" />
@@ -145,7 +145,7 @@ export function HomeView({
               <Button
                 size="lg"
                 variant="ghost"
-                className="min-h-12 px-6 text-foreground backdrop-blur-sm hover:bg-primary/10"
+                className="min-h-12 rounded-full px-7 text-foreground backdrop-blur-sm hover:bg-primary/10"
                 onClick={onOpenGuide}
               >
                 <MessageCircleQuestion className="mr-2 h-4.5 w-4.5" aria-hidden="true" />

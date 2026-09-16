@@ -74,10 +74,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sl" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground min-h-screen`}
-      >
+    <html
+      lang="sl"
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable}`}
+    >
+      <body className="antialiased bg-background text-foreground min-h-screen">
         <Providers>{children}</Providers>
         <PwaRegister />
       </body>
