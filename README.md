@@ -165,6 +165,15 @@ načela in odprti razpis za pričevanja skupnosti
   gigapikselnih posnetkov Rijksmuseuma in Google Arts & Culture
 - 🌅 **Danes v muzeju** — deterministični dnevni zapis (object of the day, vzorec
   British Museum / Met); načrt obiska po vzoru Louvra in Met
+- 🗓️ **Zapis meseca** — uredniška rubrika enega zapisa na mesec s kustosovo
+  utemeljitvijo »zakaj ta zapis ta mesec« (vzorec Picture of the month, National
+  Gallery London): 12 mesečnih naborov po koledarju vasi (SNOS februar, zračni
+  most marec, zeleni Jurij april, sv. Vid junij, trgatev september, črni močeril
+  oktober, spomin november, Kambičev božič december …), izbor determinističen po
+  (leto, mesec) — vsi obiskovalci istega meseca vidijo isti zapis; SLO/EN/HR
+- 🏷️ **Oznake občinstva** — na kartah zbirke in v zapisu približen čas branja
+  (izštet iz besed zgodbe pri 150 besed/min) in žeton »za otroke« za postaje
+  družinskega sprehoda (vzorec oznak občinstva in trajanj MoMA); SLO/EN/HR
 - ⚖️ **Primerjalnik** — do tri zapise drug ob drugem na eni strani (vzorec Comparator,
   Rijksmuseum 2024), deljiva povezava `/?compare=<slug>,<slug>`
 - 🧭 **Moj sprehod** — osebna pot skozi muzej z razvrščanjem postaj (vzorec obiskovalnih
