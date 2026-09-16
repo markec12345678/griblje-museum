@@ -1638,6 +1638,447 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "audrey-totter",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "konec 1890-ih",
+        yearLabelEn: "late 1890s",
+        sortYear: 1895,
+        textSi:
+          "Izselitev: trije bratje Jandreč (Tottrovi) zapustijo Gornje Griblje — dva odideta v Teksas, Janez se ustali v Jolietu v Illinoisu, mestu močne slovenske skupnosti.",
+        textEn:
+          "The emigration: three Jandreč (Totter) brothers leave Gornje Griblje — two continue to Texas, Janez settles in Joliet, Illinois, a city of a strong Slovene community.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "20. december 1917",
+        yearLabelEn: "20 December 1917",
+        sortYear: 1917,
+        textSi:
+          "V Jolietu se Janezu in Idi Mae rodi hčerka Audrey Mary Totter — dekle z gribeljsko kri po očetovi strani.",
+        textEn:
+          "In Joliet a daughter, Audrey Mary Totter, is born to Janez and Ida Mae — a girl with Griblje blood on her father's side.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1940-ta",
+        yearLabelEn: "1940s",
+        sortYear: 1944,
+        textSi:
+          "Radijske igre v Chicagu in New Yorku, nato pogodba s studiem Metro-Goldwyn-Mayer — sedem let, ki določijo njen zaščitni znak: dekleta filma noir.",
+        textEn:
+          "Radio dramas in Chicago and New York, then a contract with Metro-Goldwyn-Mayer — seven years that define her trademark: the girls of film noir.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1946–1947",
+        yearLabelEn: "1946–1947",
+        sortYear: 1947,
+        textSi:
+          "Vrh kariere: The Postman Always Rings Twice ob Lani Turner, uspešnica z Clarkom Gableom (po njegovi prošnji) in zrcalni prizor Lady in the Lake — njen najbolj znan filmski noir.",
+        textEn:
+          "The peak: The Postman Always Rings Twice beside Lana Turner, a hit with Clark Gable (at his request) and the mirror scene of Lady in the Lake — her best-known film noir.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1950-ta → 1987",
+        yearLabelEn: "1950s → 1987",
+        sortYear: 1960,
+        textSi:
+          "Columbia, 20th Century Fox, Warner Bros; epizoda Alfred Hitchcock Presents; zadnja vloga v seriji Murder, She Wrote (1987), nato upokojitev.",
+        textEn:
+          "Columbia, 20th Century Fox, Warner Bros; an episode of Alfred Hitchcock Presents; the last role in Murder, She Wrote (1987), then retirement.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "12. december 2013 → danes",
+        yearLabelEn: "12 December 2013 → today",
+        sortYear: 2013,
+        textSi:
+          "Umre v Woodland Hillsu v Kaliforniji. Zapuščina živi: stric Matiček je v vasi popisoval izročilo, bratranec dr. John R. Totter je sodeloval z IJS, pravnukinja Lorene je rodovnik raziskala do genotipizacije — v Gribljah danes gospodari Ciril Totter.",
+        textEn:
+          "She dies in Woodland Hills, California. The legacy lives: uncle Matiček recorded heritage in the village, cousin Dr. John R. Totter worked with the Jožef Stefan Institute, great-granddaughter Lorene traced the line as far as genotyping — in Griblje, Ciril Totter farms today.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "nikolaj-dragos",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "27. avgust 1907",
+        yearLabelEn: "27 August 1907",
+        sortYear: 1907,
+        textSi:
+          "Rojstvo na domačiji Hajdeč grunt (ime po ajdi), deveti od dvanajstih otrok; botrujeta Matija Štrucelj in Ana Požek, oče Ivan je župan in cerkveni ključar.",
+        textEn:
+          "Born at the Hajdeč farm (named after buckwheat), ninth of twelve children; godparents Matija Štrucelj and Ana Požek, father Ivan the village mayor and keeper of the church keys.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1920-ta → 1941",
+        yearLabelEn: "1920s → 1941",
+        sortYear: 1928,
+        textSi:
+          "V uk pri ključavničarju, pobeg v Ljubljano (bugarija pri tamburaših Danice), gorski topničar v Mostarju, profesionalni graničar na srbsko-bolgarski meji — prvi, ki se nauči smučati (smuči iz Logatca).",
+        textEn:
+          "Apprenticed to a locksmith, escape to Ljubljana (bugarija with the Danica tamburitza band), mountain gunner at Mostar, professional border guard on the Serbo-Bulgarian frontier — the first of them to learn to ski (skis from Logatec).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1941–1945",
+        yearLabelEn: "1941–1945",
+        sortYear: 1943,
+        textSi:
+          "Vojni ujetnik: kmetijska dela v Sudetih in Zgornji Avstriji; po vojni služba v Ljudski milici.",
+        textEn:
+          "A prisoner of war: farm labour in the Sudetenland and Upper Austria; after the war, service in the People's Militia.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2007",
+        yearLabelEn: "2007",
+        sortYear: 2007,
+        textSi:
+          "Ob stotem rojstnem dnevu napiše knjigo spominov Mojih sto let; ob 108. in 110. rojstnem dnevu ga obišče predsednik republike Borut Pahor.",
+        textEn:
+          "For his hundredth birthday he writes his book of memories, My Hundred Years; on his 108th and 110th birthdays the President of the Republic, Borut Pahor, visits him.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "31. marec 2018",
+        yearLabelEn: "31 March 2018",
+        sortYear: 2018,
+        textSi:
+          "Umre v Ljubljani, star 110 let in 216 dni (v naslovih medijev zaokroženo 111) — najdalj živeči moški, ki ga je Slovenija kdaj zapisala; med nekdanje učence podružnične šole Griblje ga zapisuje tudi šolska kronika.",
+        textEn:
+          "He dies in Ljubljana, aged 110 years and 216 days (rounded to 111 in media headlines) — the longest-lived man Slovenia has ever recorded; the school chronicle lists him among the former pupils of the Griblje branch school.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+    ],
+  },
+  {
+    slug: "peter-kambic",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "24. maj 1869",
+        yearLabelEn: "24 May 1869",
+        sortYear: 1869,
+        textSi: "Rojstvo v Krasincu, zaselku ob Kolpi nedaleč od Gribelj.",
+        textEn: "Born at Krasinec, a hamlet by the Kolpa not far from Griblje.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1. januar 1889",
+        yearLabelEn: "1 January 1889",
+        sortYear: 1889,
+        textSi:
+          "V Dolenjskih novicah pod psevdonimom Pirc Krasinski objavi zapis »Božič pri Belokranjcih« — med najstarejše objavljene vpoglede v praznični vsakdan Bele krajine.",
+        textEn:
+          "In the Dolenjske novice, under the pen name Pirc Krasinski, he publishes »Christmas among the Bela krajina people« — among the oldest published glimpses of Bela krajina's festive life.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "november 1889",
+        yearLabelEn: "November 1889",
+        sortYear: 1889,
+        textSi:
+          "Blagoslov novega šolskega poslopja v Gribljah: učitelj pripravnik Kambič postane prvi učitelj — in prvi stanovalec — gribeljske šole.",
+        textEn:
+          "The blessing of the new school building in Griblje: the trainee teacher Kambič becomes the school's first teacher — and its first resident.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "25. januar 1890",
+        yearLabelEn: "25 January 1890",
+        sortYear: 1890,
+        textSi:
+          "Umre v Gribljah, komaj dvajsetleten — v kraju, kjer je komaj začel.",
+        textEn:
+          "He dies in Griblje, barely twenty — in the place he had only just begun.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Šola, ki jo je zagnal, danes uči kot podružnica OŠ Loka Črnomelj; njegov božični zapis ostaja citiran vir o šegah Bele krajine.",
+        textEn:
+          "The school he set going today teaches as a branch of the OŠ Loka Črnomelj school; his Christmas account remains a cited source on the customs of Bela krajina.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+    ],
+  },
+  {
+    slug: "alburnus-sava",
+    phases: [
+      {
+        stage: "raziskava",
+        yearLabelSi: "zbiranje materiala",
+        yearLabelEn: "collecting the material",
+        sortYear: 2010,
+        textSi:
+          "Ihtiologi zbirajo primerke plevk v reki Kolpi v okviru raziskav savskega sistema — med njimi tudi živali, ki se ne pustijo prištevati k znanim vrstam.",
+        textEn:
+          "Ichthyologists collect bleak specimens in the Kolpa river within the surveys of the Sava system — among them animals that refuse to fit the known species.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "8. avgust 2017",
+        yearLabelEn: "8 August 2017",
+        sortYear: 2017,
+        textSi:
+          "Bogutskaya, Zupančič, Jelić, Diripasko in Naseka v ZooKeys 688: 81–110 formalno opišejo vrsto Alburnus sava — novo za znanost, poimenovano po Savi.",
+        textEn:
+          "Bogutskaya, Zupančič, Jelić, Diripasko and Naseka in ZooKeys 688: 81–110 formally describe Alburnus sava — new to science, named after the Sava.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "holotip",
+        yearLabelEn: "the holotype",
+        sortYear: 2017,
+        textSi:
+          "Tipični primerek — samec, 173,6 mm SL — je deponiran v Narodnem prirodoslovnem muzeju v Madridu (MNCN 291345); njegova fotografija pred konzerviranjem je glavna slika zapisa.",
+        textEn:
+          "The type specimen — a male, 173.6 mm SL — is deposited in the National Museum of Natural Sciences in Madrid (MNCN 291345); its pre-preservation photograph is this record's main image.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Vrsta živi v Kolpi — reki, ki se nad Gribljami razširi v ravnino in se poleti pregreje čez dvajset pet stopinj; skupaj s črnim močerilom (1986) sodi med življenja, ki jih je znanost ob vasi spoznala šele na našo stran tisočletja.",
+        textEn:
+          "The species lives in the Kolpa — the river that widens into a plain above Griblje and warms past twenty-five degrees in summer; together with the black olm (1986) it counts among the lives science met by the village only on our side of the millennium.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+    ],
+  },
+  {
+    slug: "matice-podzemelj",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1669",
+        yearLabelEn: "1669",
+        sortYear: 1669,
+        textSi:
+          "Prvi vpisi v matične knjige župnije Podzemelj — nedaleč od konca tridesetletne vojne se v Beli krajini uredi župnijska uprava.",
+        textEn:
+          "The first entries in the Podzemelj parish registers — not long after the Thirty Years' War, parish administration settles in Bela krajina.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1669 → 1947",
+        yearLabelEn: "1669 → 1947",
+        sortYear: 1800,
+        textSi:
+          "Krstne, poročne in mrliške knjige neprekinjeno beležijo rojstva, poroke in smrti Gribeljcev (sv. Vid je podružnica) in Cerkviščanov; botri rišejo družbeno mrežo vasi.",
+        textEn:
+          "The books of baptisms, marriages and burials uninterruptedly record the births, weddings and deaths of Griblje people (St. Vitus is a filial) and of Cerkvišče; the godparents draw the village's social web.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1947",
+        yearLabelEn: "1947",
+        sortYear: 1947,
+        textSi:
+          "Zadnji vpisi: državni registri prevzamejo vodenje matičnih knjig — župnijske knjige se zaprejo kot zgodovinski vir.",
+        textEn:
+          "The last entries: state registries take over the keeping of vital records — the parish books close as a historical source.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "digitalizacija",
+        yearLabelSi: "digitalizacija",
+        yearLabelEn: "digitisation",
+        sortYear: 2015,
+        textSi:
+          "Nadškofijski arhiv Ljubljana digitalizira 22 zvezkov in jih objavi v prostem dostopu na Matricula Online.",
+        textEn:
+          "The Archdiocesan Archives of Ljubljana digitise 22 volumes and publish them in free access on Matricula Online.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Rodoslovna vrata za Gribeljce po svetu — muzej zapis postavlja kot vabilo k raziskovanju korenin (Totter, Županič, Štrucelj, Piškurič …), ne kot kopijo arhiva.",
+        textEn:
+          "A genealogical gate for Griblje families across the world — the museum keeps this record as an invitation to trace roots (Totter, Županič, Štrucelj, Piškurič …), not as a copy of the archive.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "cerkvisce",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "pred ~1408",
+        yearLabelEn: "before ~1408",
+        sortYear: 1380,
+        textSi:
+          "V naselju ob Kolpi stojijo tri cerkvice — naselbina kasneje po njih dobi ime Cerkvišče.",
+        textEn:
+          "Three churches stand in the settlement by the Kolpa — the place later takes its name, Cerkvišče, from them.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "~1408 → 15. stoletje",
+        yearLabelEn: "~1408 → 15th century",
+        sortYear: 1408,
+        textSi:
+          "Turški vpadi: vse tri cerkvice so porušene in požgane; lega dveh ostane v domnevah vaščanov, lega tretje izgubi vsak sled.",
+        textEn:
+          "The Ottoman incursions: all three churches are pulled down and burned; the site of two survives as villagers' conjecture, the site of the third loses every trace.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1500-ta → 1989",
+        yearLabelEn: "1500s → 1989",
+        sortYear: 1700,
+        textSi:
+          "Vas živi kot del župnije Podzemelj: v gozdu se skrivata Jelenja in Vodena jama, deluje zbiralnica mleka; Cerkvišče postane drugi naseljni del krajevne skupnosti Griblje.",
+        textEn:
+          "The village lives within the Podzemelj parish: the Deer and Water caves hide in its woods, a milk collection point works; Cerkvišče becomes the second settlement of the Griblje local community.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1994",
+        yearLabelEn: "1994",
+        sortYear: 1994,
+        textSi:
+          "Postavitev kapelice v spomin treh porušenih cerkvic — pričevanje, da je spomin živel naprej tudi brez kamna.",
+        textEn:
+          "The raising of a chapel in memory of the three ruined churches — a testimony that memory lived on even without stone.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Vas leži 2 km od Kolpe pri Gribljah in 2 km od kopališča Krasinec — nedaleč od polja partizanskega letališča iz marca 1945; svet KS (izvoljen 2025) sodeluje v razvoju obeh naselij.",
+        textEn:
+          "The village lies 2 km from the Kolpa at Griblje and 2 km from the Krasinec bathing place — not far from the field of the partisan airfield of March 1945; the local community's 2025 council serves both settlements.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+    ],
+  },
+  {
+    slug: "pasuljada",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "~2004",
+        yearLabelEn: "~2004",
+        sortYear: 2004,
+        textSi:
+          "Turistično društvo Griblje z Društvom kmečkih žena in kopališčem priredi prvo tekmovanje v kuhanju pasulja — iz vaške šale rodi koledarska šega.",
+        textEn:
+          "The Griblje Tourist Society with the Farm Women's Society and the bathing place holds the first bean-stew cooking contest — a village joke grows into a calendar custom.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "6. avgust 2019",
+        yearLabelEn: "6 August 2019",
+        sortYear: 2019,
+        textSi:
+          "Šestnajsta izvedba: 14 ekip po dva člana, komisija (Cotič, Fornezzi Tof, Drakulič Veselič); zmagata Dragica Piškurič in Toni Kapušin.",
+        textEn:
+          "The sixteenth edition: 14 teams of two, the jury (Cotič, Fornezzi Tof, Drakulič Veselič); Dragica Piškurič and Toni Kapušin take the honours.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "2020-ta",
+        yearLabelEn: "2020s",
+        sortYear: 2024,
+        textSi:
+          "Pasuljada se v spleti s praznikom krajevne skupnosti, Kavbojskim žurom in rallyjem starodobnih koles v letni praznični koledar TD Griblje.",
+        textEn:
+          "The Pasuljada weaves itself, with the local community's feast, the Cowboy Party and the vintage-bicycle rally, into the Tourist Society's yearly festive calendar.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Dogodek pričakujejo z obeh bregov Kolpe; muzej ga hrani kot primer procesa, v katerem nastaja nova tradicija — nekoč bo o njej pisal kakor danes o božiču pri Belokranjcih.",
+        textEn:
+          "The event is awaited from both banks of the Kolpa; the museum keeps it as an example of the process in which a new tradition is born — one day it will be written about the way we today write about Christmas among the Bela krajina people.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {
