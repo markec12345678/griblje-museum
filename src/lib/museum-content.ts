@@ -72,7 +72,8 @@ export const seedExhibits: SeedExhibit[] = [
       "Griblje lies in the Griblje local community of the Municipality of Črnomelj, on the northern edge of the Kolpa valley, which is today the national border with Croatia. The settlement is first recorded in written sources in 1468, as Griblach; Briglach (1490) and Griblah (1593) follow, while the urbars and the oldest map write Grüble. The name is thus older than almost everything that stands in the village today. When the church of St. Vitus first entered the documents in 1526, the village by the Kolpa had already grown its history — and Bela krajina had for a century already been a meeting point of two worlds: the Habsburg lands and the dangerous Ottoman frontier.\n\nThe village economy was carried for centuries by farming, livestock and viticulture on nearby slopes, while the Kolpa was at once a fishing, milling and border river. The farming year dictated the geography too: fields in the valley by the river, vineyards on the limestone slopes above the village, woods on the hills, and water in the pond behind the houses — and in the springs along the Kolpa, where the underground water returns to daylight. The river's flooding also created the loki, the fertile flood meadows; above the village, after 1848, farmers cleared the birch woods with draft animals, dug clay for bricks at Goranja lokva, and struck iron-rich earth at Rudna peč. After 1991 the course of the river became the external border of independent Slovenia — yet the village stayed on an edge that kept turning into opportunity: today Griblje is a quiet starting point for cycling along the Kolpa and walks among the white birches, the symbol of Bela krajina.\n\nThe village is not a single cluster of houses but a chain of hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje. The origin of the name remains an open question among linguists: Marko Snoj lists grib (a mushroom, a Boletus), griba (a clod of soil), a word related to Croatian griblja (a furrow), and griva (a grassy slope); the local explanation — gribljati, to furrow, to plough — is one of those paths, not the only one. In the urbars and on the oldest map the village is written Grüble, not Groble. Griblje and its surroundings are in fact the driest corner of Bela krajina, with the least precipitation per square metre a year — and demographically alive: the 2020 census counted 334 inhabitants, and in 2026 the statistical office records 329 (see the record Griblje in numbers).\n\nThe Second World War placed the village inside free Bela krajina: in March 1945 Allied aircraft landed on the field by Griblje and carried the wounded to Italy — an event with its own record in this collection. The village also produced the ethnologist Niko Županič (1876–1961), founder of the Slovene Ethnographic Museum, who likewise has his own record here, and Anton Filak, an eight-time participant in the world ploughing championships. Today's village is home to winegrowers, visitors of the river and everyone returning to their family houses — with them, the museum writes the continuation.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/griblje-vas.jpg",
-    imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
+    imageCredit:
+      "Foto: Andrejj · Wikimedia Commons · CC BY-SA 3.0 — vas Griblje ob Kolpi, zadaj Gorjanci",
     yearFrom: 1468,
     lat: 45.57246,
     lng: 15.29257,
@@ -87,14 +88,30 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://sl.wikipedia.org/wiki/Griblje",
       },
       {
+        key: "commons-vas-kolpa",
+        nameSi:
+          "Wikimedia Commons: Bela krajina Kolpa — vas Griblje ob Kolpi, zadaj Gorjanci (fotograf: Andrejj)",
+        nameEn:
+          "Wikimedia Commons: Bela krajina Kolpa — the village of Griblje by the Kolpa, the Gorjanci hills behind (photographer: Andrejj)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 3.0 (fotograf: Andrejj)",
+        url: WM("Bela_krajina_Kolpa.jpg"),
+        noteSi:
+          "Glavna slika zapisa: vas Griblje ob Kolpi z Gorjanci v ozadju — fotografija, s katero se vas predstavlja tudi na Wikipediji.",
+        noteEn:
+          "The record's main image: Griblje by the Kolpa with the Gorjanci behind — the photograph by which the village also introduces itself on Wikipedia.",
+      },
+      {
         key: "commons-panorama",
         nameSi: "Wikimedia Commons: Griblje, Črnomelj (panorama)",
         nameEn: "Wikimedia Commons: Griblje, Črnomelj (panorama)",
         sourceType: "fotografija",
         license: "CC BY-SA 3.0 (avtor: Eleassar)",
         url: WM("Griblje,_%C4%8Crnomelj.jpg"),
-        noteSi: "Avtentična fotografija vasi — glavna slika zapisa in naslovna fotografija muzeja.",
-        noteEn: "Authentic photograph of the village — the record's main image and the museum's banner photograph.",
+        noteSi:
+          "Panorama vasi z verigo domačij — naslovna fotografija muzeja (izrez na pas zaselkov) in glavna slika zapisa o zaselkih.",
+        noteEn:
+          "The village panorama with its chain of homesteads — the museum's banner photograph (cropped to the hamlet line) and the main image of the record on the hamlets.",
       },
       {
         key: "simec-ime",
@@ -1198,19 +1215,18 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/vino-presa.jpg",
     imageCredit:
-      "Foto: Fran Vesel, 23. 8. 1920 · Wikimedia Commons · javna last — belokranjski vinogradnik pri preši v keli",
+      "Foto: Fran Vesel, 23. 8. 1920 · Wikimedia Commons · javna last — belokranjski vinogradnik pri preši v kleti",
     yearFrom: 1800,
     featured: false,
     sources: [
-      
       {
         key: "commons-vino-presa",
-        nameSi: "Wikimedia Commons: Belokranjski vinogradnik pri preši v keli (Fran Vesel, 1920)",
+        nameSi: "Wikimedia Commons: Belokranjski vinogradnik pri preši v kleti (Fran Vesel, 1920)",
         nameEn: "Wikimedia Commons: A Bela krajina winemaker at the press in his cellar (Fran Vesel, 1920)",
         sourceType: "fotografija",
         license: "Public domain",
-        url: WM("Belokranjski_vinogradnik_pri_pre%C5%A1i_v_keli.jpg"),
-        noteSi: "Glavna slika zapisa: belokranjski vinogradnik pri preši v keli — avtentična etnografska fotografija vinskega vsakdana te dežele.",
+        url: WM("Belokranjski_vinogradnik_pri_pre%C5%A1i_v_kleti.jpg"),
+        noteSi: "Glavna slika zapisa: belokranjski vinogradnik pri preši v kleti — avtentična etnografska fotografija vinskega vsakdana te dežele.",
         noteEn: "The record's main image: a Bela krajina winemaker at his press — an authentic ethnographic photograph of the region's wine everyday.",
       },
       {
@@ -2084,13 +2100,13 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Griblach 1468, Briglach 1490, Grüble — and 329 inhabitants today: the record that counts the village from its first mention to the latest census.",
     storySi:
-      "Najstarejši pisni obris vasi je črka iz leta 1468: listina, v kateri se vas zapiše kot Griblach. Sledita Briglach (1490) in Griblah (1593); v urbarjih in na najstarejšem zemljevidu je oblika Grüble. Petsto petdeset let pozneje isto ime stoji na cestnih tabelah in v podatkovnih bazah — ime, starejše od skoraj vsega, kar danes v vasi stoji.\n\nKaj ime pomeni, je med jezikoslovci še danes odprto vprašanje. Marko Snoj v Etimološkem slovarju slovenskih zemljepisnih imen navaja štiri poti: narečni grib (goba, jurček), griba (gruda, kep zemlje), besedo sorodno hrvaškemu griblja (brazda) in griva (travnata strmina). Domača razlaga — gribljati, brazdati, orati — je ena od teh poti, ne edina: tudi etimologija je iskrenost, ne izročilo.\n\nIn potem so tu številke, ki jih znajo samo uradi: Griblje merijo 3,45 kvadratnega kilometra na 153,4 metra nad morjem; poštna številka je 8332 Gradac. Na popisu leta 2020 je vas štela 334 prebivalcev — 172 moških in 162 žensk; leta 2026 jih letna statistika beleži 329. Številke se premikajo kot reka: počasi, a stalno. Njihovi odtisi so večji: val izseljenstva, ki ima v tej zbirki svoj zapis, je nekoč odnesel več ljudi, kot jih danes živi v vasi.\n\nV zaselkih — Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje — se številke razraščajo v hiše: rodovinske hiše ob cesti, ki jih obiskovalec šteje s prsti, muzej pa po imenih. Aerofotografija tega zapisa drži celotno vas v enem kadru — veriga zaselkov, ribnik za hišami, dolina Kolpe na robu — in številkam doda še eno, ki je ni v nobenem popisu: razsežnost, ki jo vidi samo ptič.\n\nStatistika je za muzej čudovito orodje: ne pripoveduje, ampak preračunava zgodbo. Koliko let ima vas, koliko ljudi jo danes nosi, koliko jih je nosila nekoč — vse to se da zložiti v eno samo jutro ob ribniku. Ta zapis bo muzej osveževal z vsakim novim popisom: zgodovina, ki znova šteje sebe.",
+      "Najstarejši pisni obris vasi je črka iz leta 1468: listina, v kateri se vas zapiše kot Griblach. Sledita Briglach (1490) in Griblah (1593); v urbarjih in na najstarejšem zemljevidu je oblika Grüble. Petsto petdeset let pozneje isto ime stoji na cestnih tabelah in v podatkovnih bazah — ime, starejše od skoraj vsega, kar danes v vasi stoji.\n\nKaj ime pomeni, je med jezikoslovci še danes odprto vprašanje. Marko Snoj v Etimološkem slovarju slovenskih zemljepisnih imen navaja štiri poti: narečni grib (goba, jurček), griba (gruda, kep zemlje), besedo sorodno hrvaškemu griblja (brazda) in griva (travnata strmina). Domača razlaga — gribljati, brazdati, orati — je ena od teh poti, ne edina: tudi etimologija je iskrenost, ne izročilo.\n\nIn potem so tu številke, ki jih znajo samo uradi: Griblje merijo 3,45 kvadratnega kilometra na 153,4 metra nad morjem; poštna številka je 8332 Gradac. Na popisu leta 2020 je vas štela 334 prebivalcev — 172 moških in 162 žensk; leta 2026 jih letna statistika beleži 329. Številke se premikajo kot reka: počasi, a stalno. Njihovi odtisi so večji: val izseljenstva, ki ima v tej zbirki svoj zapis, je nekoč odnesel več ljudi, kot jih danes živi v vasi.\n\nV zaselkih — Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje — se številke razraščajo v hiše: rodovinske hiše ob cesti, ki jih obiskovalec šteje s prsti, muzej pa po imenih. Slika tega zapisa prihaja z Mednarodne vesoljske postaje: Zemlja nad Belo krajino, središče posnetka nad vaškim okoljem. Od štiristo kilometrov je vas pika — in številkam doda še eno, ki je ni v nobenem popisu: razsežnost, ki jo vidi samo astronaut.\n\nStatistika je za muzej čudovito orodje: ne pripoveduje, ampak preračunava zgodbo. Koliko let ima vas, koliko ljudi jo danes nosi, koliko jih je nosila nekoč — vse to se da zložiti v eno samo jutro ob ribniku. Ta zapis bo muzej osveževal z vsakim novim popisom: zgodovina, ki znova šteje sebe.",
     storyEn:
-      "The oldest written outline of the village is a letter from 1468: a document in which the village is written Griblach. Briglach (1490) and Griblah (1593) follow; in the urbars and on the oldest map the form is Grüble. Five hundred and fifty years later the same name stands on the road signs and in the databases — a name older than almost everything that stands in the village today.\n\nWhat the name means remains, among linguists, an open question to this day. In his Etymological Dictionary of Slovene Place Names Marko Snoj lists four paths: the dialect grib (a mushroom, a Boletus), griba (a clod of soil), a word related to Croatian griblja (a furrow), and griva (a grassy slope). The local explanation — gribljati, to furrow, to plough — is one of those paths, not the only one: etymology too is honesty, not folklore.\n\nAnd then there are the numbers only offices know: Griblje measure 3.45 square kilometres at 153.4 metres above the sea; the postal code is 8332 Gradac. At the 2020 census the village counted 334 inhabitants — 172 men and 162 women; in 2026 the annual statistics record 329. Numbers move like the river: slowly, but constantly. Their impressions are larger: the wave of emigration, which has its own record in this collection, once carried away more people than live in the village today.\n\nIn the hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje — the numbers branch into houses: family houses along the road that a visitor counts on fingers, and the museum by names. The aerial photograph of this record holds the whole village in a single frame — the chain of hamlets, the pond behind the houses, the Kolpa valley at the edge — and adds one more number that appears in no census: a dimension only a bird can see.\n\nStatistics are a wonderful tool for a museum: it does not narrate, it recalculates the story. How old the village is, how many people carry it today, how many carried it once — all of it can be folded into a single morning by the pond. This record the museum will refresh with every new census: a history that counts itself anew.",
+      "The oldest written outline of the village is a letter from 1468: a document in which the village is written Griblach. Briglach (1490) and Griblah (1593) follow; in the urbars and on the oldest map the form is Grüble. Five hundred and fifty years later the same name stands on the road signs and in the databases — a name older than almost everything that stands in the village today.\n\nWhat the name means remains, among linguists, an open question to this day. In his Etymological Dictionary of Slovene Place Names Marko Snoj lists four paths: the dialect grib (a mushroom, a Boletus), griba (a clod of soil), a word related to Croatian griblja (a furrow), and griva (a grassy slope). The local explanation — gribljati, to furrow, to plough — is one of those paths, not the only one: etymology too is honesty, not folklore.\n\nAnd then there are the numbers only offices know: Griblje measure 3.45 square kilometres at 153.4 metres above the sea; the postal code is 8332 Gradac. At the 2020 census the village counted 334 inhabitants — 172 men and 162 women; in 2026 the annual statistics record 329. Numbers move like the river: slowly, but constantly. Their impressions are larger: the wave of emigration, which has its own record in this collection, once carried away more people than live in the village today.\n\nIn the hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje — the numbers branch into houses: family houses along the road that a visitor counts on fingers, and the museum by names. The image of this record comes from the International Space Station: Earth above Bela krajina, the frame centred on the village's own countryside. From four hundred kilometres the village is a point — and the numbers gain one more that appears in no census: a dimension only an astronaut can see.\n\nStatistics are a wonderful tool for a museum: it does not narrate, it recalculates the story. How old the village is, how many people carry it today, how many carried it once — all of it can be folded into a single morning by the pond. This record the museum will refresh with every new census: a history that counts itself anew.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/griblje-aerofoto.jpg",
+    image: "/images/authentic/griblje-iz-orbite.jpg",
     imageCredit:
-      "Foto: Alanorlic · Wikimedia Commons · CC BY-SA 4.0 — aerofotografija Gribelj (2018)",
+      "Foto: NASA/JSC, ISS Expedition 67 (2022) · Wikimedia Commons · javna last — Zemlja nad Belo krajino",
     yearFrom: 1468,
     lat: 45.5754,
     lng: 15.2928,
@@ -2137,14 +2153,18 @@ export const seedExhibits: SeedExhibit[] = [
         noteEn: "The origin of the name Griblje as an open linguistic question (grib, griba, griblja, griva).",
       },
       {
-        key: "commons-aerofoto",
-        nameSi: "Wikimedia Commons: Pond Griblje — aerofotografija vasi in ribnika (avtor: Alanorlic, 2018)",
-        nameEn: "Wikimedia Commons: Pond Griblje — an aerial photograph of the village and pond (author: Alanorlic, 2018)",
+        key: "commons-iz-orbite",
+        nameSi:
+          "Wikimedia Commons: ISS067-E-80408 — posnetek Zemlje nad Belo krajino z Mednarodne vesoljske postaje (NASA/JSC)",
+        nameEn:
+          "Wikimedia Commons: ISS067-E-80408 — a view of Earth above Bela krajina from the International Space Station (NASA/JSC)",
         sourceType: "fotografija",
-        license: "CC BY-SA 4.0 (avtor: Alanorlic)",
-        url: WM("Pond_Griblje.jpg"),
-        noteSi: "Glavna slika zapisa: celotna vas v enem kadru — zaselki, ribnik in dolina Kolpe.",
-        noteEn: "The record's main image: the whole village in a single frame — the hamlets, the pond and the Kolpa valley.",
+        license: "javna last / public domain (NASA/JSC)",
+        url: WM("ISS067-E-80408_-_View_of_Earth.jpg"),
+        noteSi:
+          "Glavna slika zapisa: Zemlja nad Belo krajino z odprave 67 — od 400 kilometrov je vas pika; te zbirke številke ji dajejo težo.",
+        noteEn:
+          "The record's main image: Earth above Bela krajina from Expedition 67 — from 400 kilometres the village is a point; this record's numbers give it weight.",
       },
     ],
   },
@@ -3314,7 +3334,7 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/zaselki-griblje.jpg",
     imageCredit:
-      "Foto: Uroš Novina · Wikimedia Commons · CC BY 2.0 — domačija v Gribljah (»Cabin under the Sun«)",
+      "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0 — vas Griblje: veriga zaselkov v dolini",
     yearFrom: 1526,
     lat: 45.5754,
     lng: 15.2928,
@@ -3323,13 +3343,15 @@ export const seedExhibits: SeedExhibit[] = [
     sources: [
       {
         key: "commons-zaselki",
-        nameSi: "Wikimedia Commons: Cabin under the Sun — domačija v Gribljah (fotograf: Uroš Novina)",
-        nameEn: "Wikimedia Commons: Cabin under the Sun — a homestead in Griblje (photographer: Uroš Novina)",
+        nameSi: "Wikimedia Commons: Griblje, Črnomelj — panorama vasi (fotograf: Eleassar)",
+        nameEn: "Wikimedia Commons: Griblje, Črnomelj — a panorama of the village (photographer: Eleassar)",
         sourceType: "fotografija",
-        license: "CC BY 2.0 (fotograf: Uroš Novina)",
-        url: WM("Cabin_under_the_Sun_(46105681335).jpg"),
-        noteSi: "Glavna slika zapisa: domačija v Gribljah — ena od hiš, iz katerih se sestavlja razložena vas.",
-        noteEn: "The record's main image: a homestead in Griblje — one of the houses of which the scattered village is made.",
+        license: "CC BY-SA 3.0 (fotograf: Eleassar)",
+        url: WM("Griblje,_%C4%8Crnomelj.jpg"),
+        noteSi:
+          "Glavna slika zapisa: vas v svoji dolini — loka ob reki, njive na terasah, gozd nad njimi: pokrajina, v katero je razpeta veriga štirih zaselkov.",
+        noteEn:
+          "The record's main image: the village in its valley — meadows by the river, fields on the terraces, forest above: the landscape into which the chain of four hamlets is stretched.",
       },
       {
         key: "wiki-griblje-zaselki",
@@ -3372,19 +3394,21 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/goranja-lokva.jpg",
     imageCredit:
-      "Foto: Alanorlic · Wikimedia Commons · CC BY-SA 4.0 — lokev pri Gribljah",
+      "Foto: Alan Orlič Belšak (Alanorlic) · Wikimedia Commons · CC BY-SA 4.0 — aerofotografija ribnika na zgornjem koncu Gribelj",
     yearFrom: 1848,
     featured: false,
     sources: [
       {
         key: "commons-lokva",
-        nameSi: "Wikimedia Commons: Pond Griblje — lokev pri Gribljah (fotograf: Alanorlic)",
-        nameEn: "Wikimedia Commons: Pond Griblje — a pond by Griblje (photographer: Alanorlic)",
+        nameSi: "Wikimedia Commons: Pond Griblje — aerofotografija ribnika zahodno od Gribelj (fotograf: Alanorlic)",
+        nameEn: "Wikimedia Commons: Pond Griblje — an aerial photograph of the pond west of Griblje (photographer: Alanorlic)",
         sourceType: "fotografija",
         license: "CC BY-SA 4.0 (fotograf: Alanorlic)",
         url: WM("Pond_Griblje.jpg"),
-        noteSi: "Glavna slika zapisa: lokev pri Gribljah — voda, kakršna nastane iz kopanja gline.",
-        noteEn: "The record's main image: a pond by Griblje — water of the kind digging clay leaves behind.",
+        noteSi:
+          "Glavna slika zapisa: ribnik na zgornjem koncu vasi, posnet od zgoraj — voda, kakršna za sabo pusti kopanje gline. Ali je na posnetku prava Goranja lokva, bodo prepoznali domačini.",
+        noteEn:
+          "The record's main image: the pond at the upper end of the village, seen from above — water of the kind clay-digging leaves behind. Whether the frame shows the old Goranja lokva itself, the villagers will recognise.",
       },
       {
         key: "wiki-griblje-lokva",
@@ -3563,7 +3587,7 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/dakota.jpg",
     imageCredit:
-      "Foto: USAAF, ~1943 · Wikimedia Commons · javna last — Douglas C-47 v letu (letalo istega tipa)",
+      "Foto: Ajznponar · Wikimedia Commons · CC0 — Douglas C-47 Dakota, razstavljen pri Otoku",
     yearFrom: 1944,
     featured: false,
     sources: [
@@ -3579,13 +3603,17 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "commons-dakota",
-        nameSi: "Wikimedia Commons: Douglas C-47 v letu, ~1943 (USAAF)",
-        nameEn: "Wikimedia Commons: A Douglas C-47 in flight, c. 1943 (USAAF)",
+        nameSi:
+          "Wikimedia Commons: Otok, Douglas DC-3 Dakota C-47 Skytrain — letalo, razstavljeno pri Otoku (fotograf: Ajznponar)",
+        nameEn:
+          "Wikimedia Commons: Otok, Douglas DC-3 Dakota C-47 Skytrain — the aircraft displayed by Otok (photographer: Ajznponar)",
         sourceType: "fotografija",
-        license: "Public domain",
-        url: WM("C-47_in_flight_ca._1943.jpg"),
-        noteSi: "Glavna slika zapisa: C-47 v vojnem letu — letalo istega tipa, kakršno stoji pri Otoku.",
-        noteEn: "The record's main image: a C-47 in wartime flight — an aircraft of the same type as the one standing at Otok.",
+        license: "CC0 (fotograf: Ajznponar)",
+        url: WM("Otok,_Douglas_DC-3_Dakota_C-47_Skytrain_airplane_01.jpg"),
+        noteSi:
+          "Glavna slika zapisa: edini ohranjeni C-47 v Sloveniji, fotografiran na kraju samem — letalo, ki je ostalo.",
+        noteEn:
+          "The record's main image: the only preserved C-47 in Slovenia, photographed on the spot — the aircraft that stayed.",
       },
       {
         key: "odeon-vranov-let",
@@ -4188,7 +4216,7 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/td-kopališka-hisica.jpg",
     imageCredit:
-      "Foto: Uroš Novina · Wikimedia Commons · CC BY 2.0 — hišica ob Kolpi pri Gribljah: prizorišče poletnega življenja, ki ga društvo drži z življenjsko dobo prireditev",
+      "Foto: Uroš Novina · Wikimedia Commons · CC BY 2.0 — hišica ob ribniku v Gribljah (zimski posnetek)",
     yearFrom: 2000,
     featured: false,
     sources: [
@@ -4224,13 +4252,15 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "commons-hisica",
-        nameSi: "Wikimedia Commons: hišica ob Kolpi pri Gribljah (fotograf: Uroš Novina)",
-        nameEn: "Wikimedia Commons: a cabin by the Kolpa at Griblje (photographer: Uroš Novina)",
+        nameSi: "Wikimedia Commons: Cabin under the Sun — hišica ob ribniku v Gribljah (fotograf: Uroš Novina)",
+        nameEn: "Wikimedia Commons: Cabin under the Sun — a cabin by the pond at Griblje (photographer: Uroš Novina)",
         sourceType: "fotografija",
         license: "CC BY 2.0 (fotograf: Uroš Novina)",
         url: WM("Cabin_under_the_Sun_(46105681335).jpg"),
-        noteSi: "Glavna slika zapisa: hišica ob Kolpi — prizorišče poletja, ki ga društveni koledar nosi.",
-        noteEn: "The record's main image: a cabin by the Kolpa — the stage of the summer the society's calendar carries.",
+        noteSi:
+          "Glavna slika zapisa: hišica ob ribniku v zimskem miru — vas, ki jo društveni koledar vsako leto znova oživi.",
+        noteEn:
+          "The record's main image: a cabin by the pond in the winter quiet — the village that the society's calendar wakes again every year.",
       },
     ],
   },

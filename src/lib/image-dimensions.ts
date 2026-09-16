@@ -9,8 +9,12 @@
  * Vir: IIIF revizija 2026-09 (slika mora ustrezati napisu pod njo).
  */
 export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
-  "/images/authentic/hero-griblje.jpg": { width: 1600, height: 800 },
-  "/images/authentic/griblje-vas.jpg": { width: 1600, height: 1071 },
+  // revizija 2026-09 (2. krog): hero = izrez panorame na pas vasi; glavna slika vasi = Andrejj
+  "/images/authentic/hero-griblje.jpg": { width: 2000, height: 573 },
+  "/images/authentic/griblje-vas.jpg": { width: 800, height: 574 },
+  "/images/authentic/zaselki-griblje.jpg": { width: 1920, height: 1286 },
+  "/images/authentic/dakota.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/griblje-iz-orbite.jpg": { width: 1600, height: 1067 },
   "/images/authentic/sveti-vid.jpg": { width: 1048, height: 1600 },
   "/images/authentic/bojanci-1908.jpg": { width: 729, height: 426 },
   "/images/authentic/sokcev-dvor.jpg": { width: 1600, height: 1200 },
