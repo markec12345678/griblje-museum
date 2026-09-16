@@ -72,6 +72,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/valvasor.jpg": { width: 1100, height: 1287 },
   "/images/authentic/radio-kosmaj.jpg": { width: 1600, height: 1032 },
   "/images/authentic/noša-1942.jpg": { width: 470, height: 668 },
+  // 12. sklop: stari zemljevidi (Homann 1714) + pečnica za sušenje sadja (Vesel 1928)
+  "/images/authentic/stari-zemljevid.jpg": { width: 2000, height: 1671 },
+  "/images/authentic/pecnica-susenje.jpg": { width: 960, height: 583 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };

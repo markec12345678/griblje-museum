@@ -3485,6 +3485,100 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "pecnica-susenje-sadja",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "19. stoletje → 1950ta",
+        yearLabelEn: "19th century → 1950s",
+        sortYear: 1850,
+        textSi:
+          "Pečnica za sušenje sadja stoji na skoraj vsaki domačiji Bele krajine: jeseni suši slive in jabolka v zimske pečene slive.",
+        textEn:
+          "A fruit-drying oven stands at nearly every Bela krajina farmstead: in autumn it dries plums and apples into the winter's baked plums.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1928",
+        yearLabelEn: "1928",
+        sortYear: 1928,
+        textSi:
+          "Fran Vesel fotografira pečnico v Adlešičih: cela družina pri delu — ženske, moški, otroci ob lestvah.",
+        textEn:
+          "Fran Vesel photographs the oven at Adlešiči: a whole family at work — women, men, children by the ladders.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Muzej išče gribeljski primer: zadnjo pečnico v vasi, ime zadnje sušilke sliv in recept, pisan z dimom.",
+        textEn:
+          "The museum seeks the Griblje case: the village's last oven, the name of its last plum-drier, and a recipe written in smoke.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "stari-zemljevidi",
+    phases: [
+      {
+        stage: "prica",
+        yearLabelSi: "1468",
+        yearLabelEn: "1468",
+        sortYear: 1468,
+        textSi:
+          "Prvi zapis imena: Griblach na listini v arhivu; sledita Briglach (1490) in Griblah (1593).",
+        textEn:
+          "The name first written: Griblach on a document in the archive; Briglach (1490) and Griblah (1593) follow.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "1714",
+        yearLabelEn: "1714",
+        sortYear: 1714,
+        textSi:
+          "Nugiški kartograf Johann Baptist Homann po Valvasorjevem gradivu izdela Tabula Ducatus Carnioliae — vojvodina z Belo krajino na enem listu.",
+        textEn:
+          "The Nuremberg cartographer Johann Baptist Homann, from Valvasor's material, prepares the Tabula Ducatus Carnioliae — the duchy with Bela krajina on one sheet.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1843",
+        yearLabelEn: "1843",
+        sortYear: 1843,
+        textSi:
+          "Henrik Freyer izda Special-Karto vojvodine Kranjske — kartografski podvig, na katerem vsaka vas nosi svoje ime.",
+        textEn:
+          "Henrik Freyer publishes the Special-Karte of the Duchy of Carniola — a cartographic feat on which every village carries its name.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Isti pogled se nadaljuje z orbite: posnetek ISS v zapisu o številkah vasi. Muzej išče izvleček Special-Karte z berljivim imenom vasi.",
+        textEn:
+          "The same gaze continues from orbit: the ISS photograph in the record of the village in numbers. The museum seeks a Special-Karte excerpt with the village name legible.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 2,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {

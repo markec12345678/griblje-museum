@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 67/67 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 67/67 (povprečno ~291) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 67/67 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 278 skupaj (povprečno 4,2) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 67/67 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 69/69 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 69/69 (povprečno ~291) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 69/69 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 295 skupaj (povprečno 4,3) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 69/69 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -104,9 +104,17 @@ odprtje spominske sobe), **Ljudje ob Kolpi** (radijska rubrika Borisa Grabrijana
 zapisovalec vasi — primarni vir polovice zbirke) in **Valvasor 1689** (Slava vojvodine
 Kranjske — prva tiskana knjiga, ki pozna Črnomelj z okolico) — zbirka 67 zapisov / 283 virov.
 
+Dvanajsti sklop **Papir in dim** (67 → 69 zapisov / 295 virov): **Stari zemljevidi**
+(Griblach 1468 → Grüble v urbarjih in na najstarejšem zemljevidu; Homannova karta vojvodine
+1714 po Valvasorjevem gradivu s Belo krajino — Vindorum Marchia; Freyerjeva Special-Karte
+1843, ki je narisala vsako vas) in **Pečnica za sušenje sadja** (Fran Vesel 1928, Adlešiči —
+sosednja vas ob Kolpi; sušilnica kot standardni del vaškega prostora Bele krajine po pričevanju
+Podrebra) — ob obnovljenih virih: 90. rojstni dan dr. Brinca (2025), vaja evakuacije PGD
+Griblje na podružnici (2024), stavbna dediščina podeželja (2021) in kruh kot spomin (2026).
+
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 67 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 69 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -177,6 +185,11 @@ načela in odprti razpis za pričevanja skupnosti
 - 🖼️ **Moja galerija časti** — CSS-3D soba shranjenih zapisov brez WebGL (vzorec
   My Gallery of Honour, Rijksmuseum 2024 + Codrops 3D galerija), vlečenje,
   puščice in mirni način za občutljivost na gibanje
+- ✂️ **Izreži detajl** — obiskovalec sam izbere del slike zapisa in ga shrani v
+  Mojo zbirko; izrez se prikaže v razdelku Moji detajli (vzorec Collect a detail,
+  Rijksstudio Rijksmuseuma): vlečenje po sliki, premikanje in raztegovanje vogalov,
+  popolna tipkovniška nadzora (puščice, +/−, Delete) in sledenje kazalcem (pointer
+  events) na dotik in miški; shranjeno v brskalniku (mvg-details), brez računa
 - 🎬 **Filmski ogled zbirke** — samodejni ogled osebne zbirke z učinkom Ken Burns
   in neobvezno TTS pripovedjo (vzorec samodejnih video ogledov zbirk Rijksmuseuma);
   soba in film delita deljivo povezavo `/?gallery=<slug>,<slug>`
@@ -243,7 +256,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 67 zapisov, 283 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 69 zapisov, 295 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 

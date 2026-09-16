@@ -3,10 +3,12 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { Check, Clapperboard, Frame, Heart, Link2, Trash2 } from "lucide-react";
+import { Check, Clapperboard, Crop, Frame, Heart, Link2, Scissors, Trash2 } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { useFavorites } from "@/lib/favorite-tracker";
+import { detailCropStyle, useDetails } from "@/lib/detail-tracker";
+import { imageDimensions } from "@/lib/image-dimensions";
 import { MyWalkSection } from "@/components/museum/my-walk-section";
 import type { ExhibitDTO } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
@@ -38,7 +40,20 @@ export function MyMuseumView({
   const { t, lang } = useLang();
   const es = useExhibitStrings();
   const { favorites, favoritesCount } = useFavorites();
+  const { details, removeDetail } = useDetails();
   const reduceMotion = useReducedMotion();
+
+  const bySlug = React.useMemo(() => {
+    const map = new Map<string, ExhibitDTO>();
+    for (const ex of exhibits) map.set(ex.slug, ex);
+    return map;
+  }, [exhibits]);
+
+  // Samo detajli, katerih zapis še obstaja v zbirki.
+  const validDetails = React.useMemo(
+    () => details.filter((d) => bySlug.has(d.slug)),
+    [details, bySlug]
+  );
 
   const saved = React.useMemo(
     () => exhibits.filter((ex) => favorites.has(ex.slug)),
@@ -120,6 +135,107 @@ export function MyMuseumView({
         onNavigate={onNavigate}
         onStartWalk={onStartMyWalk}
       />
+
+      {/* Moji detajli — izrezi slik, ki si jih obiskovalec izbral sam (Rijksstudio) */}
+      <section aria-labelledby="moji-detajli" className="mt-12">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2
+            id="moji-detajli"
+            className="font-display inline-flex items-center gap-2 text-2xl font-semibold"
+          >
+            <Scissors className="h-5 w-5 text-primary" aria-hidden="true" />
+            {t.detail.myTitle}
+            {validDetails.length > 0 && (
+              <Badge variant="secondary" className="ml-1">
+                {t.detail.count(validDetails.length)}
+              </Badge>
+            )}
+          </h2>
+        </div>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          {t.detail.mySub}
+        </p>
+
+        {validDetails.length === 0 ? (
+          <div className="mt-6 max-w-lg rounded-xl border border-dashed border-border bg-card/50 p-8 text-center">
+            <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <Crop className="h-6 w-6" aria-hidden="true" />
+            </span>
+            <h3 className="font-display mt-3 text-lg font-semibold">{t.detail.emptyTitle}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {t.detail.emptyText}
+            </p>
+          </div>
+        ) : (
+          <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {validDetails.map((detail, index) => {
+              const exhibit = bySlug.get(detail.slug)!;
+              const src = exhibit.image ?? "/images/authentic/hero-griblje.jpg";
+              const { width, height } = imageDimensions(src);
+              const { frameStyle, paneStyle } = detailCropStyle(detail, width, height);
+              return (
+                <motion.li
+                  key={detail.id}
+                  initial={reduceMotion ? false : { opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.4, delay: Math.min(index * 0.05, 0.4) }}
+                  layout
+                >
+                  <article className="group h-full overflow-hidden rounded-xl border border-border/70 bg-card shadow-sm transition-shadow hover:shadow-lg">
+                    <button
+                      type="button"
+                      onClick={() => onOpenExhibit(exhibit)}
+                      className="block w-full text-left"
+                      aria-label={`${t.detail.openExhibit}: ${es.title(exhibit)}`}
+                    >
+                      <span className="relative block w-full overflow-hidden bg-muted" style={frameStyle}>
+                        <span
+                          className="absolute inset-0 block transition-transform duration-500 group-hover:scale-[1.03]"
+                          style={{ ...paneStyle, backgroundImage: `url(${src})` }}
+                          role="img"
+                          aria-label={`${t.detail.myTitle} — ${es.title(exhibit)}`}
+                        />
+                      </span>
+                    </button>
+                    <div className="p-4">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge variant="secondary">{t.categories[exhibit.category]}</Badge>
+                        <EvidenceBadge status={exhibit.evidenceStatus} />
+                      </div>
+                      <h3 className="font-display mt-2 text-base font-semibold leading-snug">
+                        {es.title(exhibit)}
+                      </h3>
+                      <p className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                        {es.period(exhibit)}
+                      </p>
+                      <div className="mt-3 flex items-center justify-between gap-2">
+                        <Button
+                          size="sm"
+                          className="min-h-11"
+                          onClick={() => onOpenExhibit(exhibit)}
+                        >
+                          {t.detail.openExhibit}
+                        </Button>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="min-h-11 px-3 text-muted-foreground hover:text-foreground"
+                          aria-label={`${t.detail.remove} — ${es.title(exhibit)}`}
+                          title={t.detail.remove}
+                          onClick={() => removeDetail(detail.id)}
+                        >
+                          <Trash2 className="h-4 w-4" aria-hidden="true" />
+                        </Button>
+                      </div>
+                    </div>
+                  </article>
+                </motion.li>
+              );
+            })}
+          </ul>
+        )}
+      </section>
 
       {saved.length === 0 ? (
         <div className="mt-12 mx-auto max-w-lg rounded-xl border border-dashed border-border bg-card/50 p-10 text-center">

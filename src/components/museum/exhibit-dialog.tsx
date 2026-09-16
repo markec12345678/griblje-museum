@@ -7,6 +7,7 @@ import {
   ArrowRight,
   BookOpen,
   Check,
+  Crop,
   Download,
   ExternalLink,
   FileText,
@@ -114,6 +115,7 @@ export function ExhibitDialog({
   onSlowLooking,
   onPuzzle,
   onPostcard,
+  onDetail,
   walkContext = null,
 }: {
   exhibit: ExhibitDTO | null;
@@ -129,6 +131,8 @@ export function ExhibitDialog({
   onPuzzle?: (exhibit: ExhibitDTO) => void;
   /** Pošlji razglednico — e-razglednica s sliko tega zapisa. */
   onPostcard?: (exhibit: ExhibitDTO) => void;
+  /** Izreži detajl — izrez slike zapisa v Mojo zbirko (Rijksstudio). */
+  onDetail?: (exhibit: ExhibitDTO) => void;
   /** Aktivni muzejski sprehod — če je zapis odprt kot postaja sprehoda. */
   walkContext?: WalkContext | null;
 }) {
@@ -425,8 +429,8 @@ export function ExhibitDialog({
               {/* Kuratorska opomba postaje sprehoda */}
               {walkContext && <WalkStopNote ctx={walkContext} />}
 
-              {/* Izkušnje zapisa — počasno gledanje, sestavljanka, razglednica */}
-              {(onSlowLooking || onPuzzle || onPostcard) && (
+              {/* Izkušnje zapisa — počasno gledanje, sestavljanka, razglednica, detajl */}
+              {(onSlowLooking || onPuzzle || onPostcard || onDetail) && (
                 <div className="mt-5 flex flex-wrap gap-2">
                   {onSlowLooking && (
                     <Button
@@ -459,6 +463,17 @@ export function ExhibitDialog({
                     >
                       <Mail className="h-4 w-4" aria-hidden="true" />
                       <span className="hidden sm:inline">{t.postcard.open}</span>
+                    </Button>
+                  )}
+                  {onDetail && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="min-h-9 gap-1.5"
+                      onClick={() => onDetail(exhibit)}
+                    >
+                      <Crop className="h-4 w-4" aria-hidden="true" />
+                      <span className="hidden sm:inline">{t.detail.open}</span>
                     </Button>
                   )}
                 </div>
