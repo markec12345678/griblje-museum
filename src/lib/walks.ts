@@ -7,7 +7,7 @@ import type { ExhibitDTO } from "@/lib/types";
  * obogaten s kuratorsko opombo, ki povezuje postave v pripoved.
  *
  * Pogoj celovitosti: vseh pet sprehodov skupaj pokrije VSE zapise
- * zbirke (2026: 52 zapisov), vsak zapis natanko enkrat.
+ * zbirke (2026: 60 zapisov), vsak zapis natanko enkrat.
  */
 
 export type WalkStop = {
@@ -187,6 +187,13 @@ export const WALKS: Walk[] = [
         noteEn:
           "The walk ends at the aircraft that stayed: the Dakota at Otok is the only preserved example in Slovenia — a piece of sky you can touch.",
       },
+      {
+        exhibitSlug: "loke-in-studenci",
+        noteSi:
+          "Zadnja voda je pokrajina sama: Kolpa je s poplavljanjem naredila loke, velik dela pa ponika pod tlemi in se vrne kot studenci. Vas ob najbolj darežljivi reki — med najbolj suhimi kraji Bele krajine.",
+        noteEn:
+          "The last water is the landscape itself: the Kolpa's flooding made the loke meadows, and much of it sinks underground to return as springs. A village beside the most generous river — among the driest places in Bela krajina.",
+      },
     ],
   },
   {
@@ -263,6 +270,20 @@ export const WALKS: Walk[] = [
         noteEn:
           "»With a song the work flowed easier, sometimes until dusk, but always together.« The farm that grew from hand mowing into ninety hectares — the village's backbone.",
       },
+      {
+        exhibitSlug: "kuhanje-zganja",
+        noteSi:
+          "Iz klete ob vinu še kapljica: jeseni je kuharija hodila od domačije do domačije — hruškovec in jabolkovec, zdravilo, darilo in denar v enem.",
+        noteEn:
+          "From the wine cellar one more drop: in autumn the still went from farm to farm — pear and apple brandy, medicine, gift and coin in one.",
+      },
+      {
+        exhibitSlug: "etimologija-gribljati",
+        noteSi:
+          "In preden zapremo shrambo: ime vasi je brazda. Gribljati — orati, brazdati: ta zbirka stoji na dejanju, ki se je prvič zgodilo pred šestimi stoletji in se zgodi vsako pomlad znova.",
+        noteEn:
+          "And before we close the pantry: the village's name is a furrow. Gribljati — to plough, to furrow: this collection stands on an act that first happened six centuries ago and happens again every spring.",
+      },
     ],
   },
   {
@@ -337,6 +358,13 @@ export const WALKS: Walk[] = [
           "Zadnja postaja je sam popis: Griblach 1468, Briglach 1490, 329 prebivalcev danes. Vsaka številka v tem zapisu je kdo ali kaj — sprehod zaključimo tako, da preštejemo vas.",
         noteEn:
           "The last stop is the census itself: Griblach 1468, Briglach 1490, 329 inhabitants today. Every number in this record is a someone or a something — we close the walk by counting the village.",
+      },
+      {
+        exhibitSlug: "matija-totter",
+        noteSi:
+          "In nazadnje najdaljša pot: Jandreč Matiček, ki je zapisoval šege in končal v Teksasu. Kar je zapustil, ni bogastvo — so zapisi, po katerih belokranjske običaje poznamo.",
+        noteEn:
+          "And finally the longest road: Jandreč Matiček, who wrote down the customs and ended in Texas. What he left was no fortune — it was the notes by which Bela krajina's customs are known.",
       },
     ],
   },
@@ -448,6 +476,34 @@ export const WALKS: Walk[] = [
           "Kje se je začelo stoletje? Pri bugariji. Mladi Dragoš je v Ljubljani igral v tamburaški skupini Danica — glasba je bila njegova prva pot v svet.",
         noteEn:
           "Where did the century begin? At the bugarija. Young Dragoš played in Ljubljana's Danica tambura group — music was his first road into the world.",
+      },
+      {
+        exhibitSlug: "janko-barle",
+        noteSi:
+          "Za planko teh ljudi stoji zapisovalec: Janko Barle, učiteljev sin iz Podzemlja, je vzel vaške šege v svet — iz njegovih zapiskov je zrasla polovica tega, kar o belokranjskih običajih vemo.",
+        noteEn:
+          "Behind the bench of these people stands a recorder: Janko Barle, a teacher's son from Podzemelj, took the village customs into the world — from his notes grew half of what we know about Bela krajina's customs.",
+      },
+      {
+        exhibitSlug: "joze-dular",
+        noteSi:
+          "In mož, ki je spomin dodel v hišo: Jože Dular, trideset let Belokranjskega muzeja. Njegova knjižica o Županičevi plošči v Gribljah je dokument, da se je vas spomnila pravično.",
+        noteEn:
+          "And the man who gave memory a house: Jože Dular, thirty years of the Bela krajina museum. His booklet on Županič's plaque in Griblje is the document that the village remembered rightly.",
+      },
+      {
+        exhibitSlug: "pisanice",
+        noteSi:
+          "Pomlad se v tej vasi riše na lupini: pisanice, batik, ki ga je leta 1893 znanstveno popisal Barle, leta 2012 pa ga je država vpisala v register žive dediščine.",
+        noteEn:
+          "Spring in this village is drawn on a shell: the pisanice, a batik that Barle recorded scholarly in 1893 and the state entered in the living heritage register in 2012.",
+      },
+      {
+        exhibitSlug: "kresovanje",
+        noteSi:
+          "Poletje zaključimo z ognjem: kres na večer pred sv. Janezom, s pesmijo, ki jo je rešil gribeljski Matiček. Šega, ki ne pusti predmeta — ostane pesem in spomin.",
+        noteEn:
+          "We close summer with fire: the bonfire on St. John's eve, with the song Griblje's Matiček saved. A custom that leaves no object — a song and a memory remain.",
       },
     ],
   },

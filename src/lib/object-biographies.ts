@@ -2779,6 +2779,438 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "matija-totter",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1873",
+        yearLabelEn: "1873",
+        sortYear: 1873,
+        textSi:
+          "Rojen kot peti od osmih otrok pri Jandrečih v Gribljah; mama Marjeta Štrucelj, oče Andrej Totter.",
+        textEn:
+          "Born the fifth of eight children at the Jandreči in Griblje; mother Marjeta Štrucelj, father Andrej Totter.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1880-ta → 1890-ta",
+        yearLabelEn: "1880s → 1890s",
+        sortYear: 1890,
+        textSi:
+          "Fant pod tepko: namesto gostilne in plesov bere in zapisuje pregovore, šege in običaje; za Barleta in Zupaniča popiše ženitovanjske običaje, pastirski križevo in kresovanje s pesmijo.",
+        textEn:
+          "The boy under the bench: instead of inn and dances he reads and writes down proverbs and customs; for Barle and Županič he records the wedding customs, the shepherds' križevo and the bonfire rite with its song.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1889",
+        yearLabelEn: "1889",
+        sortYear: 1889,
+        textSi:
+          "Star šestnajst let gre peš v Novo mesto k vpisu v nižjo gimnazijo; opat Florentin Hrovat ga zavrne kot prestarega in svetuje hlapčevanje.",
+        textEn:
+          "At sixteen he walks to Novo mesto to enrol in the lower gymnasium; abbot Florentin Hrovat refuses him as too old and advises farm service.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1890-ta → 1950",
+        yearLabelEn: "1890s → 1950",
+        sortYear: 1900,
+        textSi:
+          "Emigracija: brat Jakob v St. Paulu (Minnesota), nato Teksas — bombažna farma in trgovina v Saragosi; žena Agnes, osem otrok; najmlajši sin dr. John Randolph Totter svetovno znani biokemik. V Slovenijo se ne vrne nikoli več.",
+        textEn:
+          "Emigration: brother Jakob in St. Paul (Minnesota), then Texas — a cotton farm and a store in Saragosa; wife Agnes, eight children; the youngest son dr. John Randolph Totter a world-famous biochemist. He never returns to Slovenia.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "1950 → danes",
+        yearLabelEn: "1950 → present",
+        sortYear: 2024,
+        textSi:
+          "Umre 17. marca 1950 v Balmorhei; dopisovanje z Zupaničem in Barletom traja do konca. Na Jandrečetovi domačiji danes ekološko kmetuje maratonc Ciril Totter. Muzej išče Matičkove zapiske in pisma.",
+        textEn:
+          "He dies on 17 March 1950 in Balmorhea; the correspondence with Županič and Barle lasts to the end. Today the marathon runner Ciril Totter farms ecologically at the Jandreči homestead. The museum seeks Matiček's notebooks and letters.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "janko-barle",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1869",
+        yearLabelEn: "1869",
+        sortYear: 1869,
+        textSi:
+          "Rojen v Budanjah na Vipavskem; oče Ivan, učitelj in organist, ki bo dvakrat služboval v Podzemlju.",
+        textEn:
+          "Born in Budanje in the Vipava valley; father Ivan, a teacher and organist who would serve twice at Podzemelj.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1872 → 1887",
+        yearLabelEn: "1872 → 1887",
+        sortYear: 1872,
+        textSi:
+          "Otroštvo v Podzemlju ob Kolpi (»Srečna, lepa leta«); gimnazija v Novem mestu, Karlovcu in Zagrebu.",
+        textEn:
+          "Childhood at Podzemelj by the Kolpa ('Happy, beautiful years'); gymnasium in Novo mesto, Karlovac and Zagreb.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1892 → 1921",
+        yearLabelEn: "1892 → 1921",
+        sortYear: 1892,
+        textSi:
+          "Posvečen 1892; v Zagrebu nadškofov tajnik, vodja pisarne in kanonik; 1921 dopisni član JAZU; reformator hrvaške cerkvene glasbe.",
+        textEn:
+          "Ordained 1892; in Zagreb the archbishop's secretary, head of office and canon; 1921 corresponding member of the Yugoslav Academy; reformer of Croatian church music.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1889 → 1937",
+        yearLabelEn: "1889 → 1937",
+        sortYear: 1889,
+        textSi:
+          "Etnologija Bele krajine: Ženitovanjski običaji (1889), Pisanice iz Bele Krajine (1893), pesmi za Štrekeljevo zbirko; vrhunec Prinosi slovenskim nazivom bilja I–II (1936–37) s 3.000 rastlinskimi imeni.",
+        textEn:
+          "The ethnology of Bela krajina: Wedding Customs (1889), Pisanice of Bela krajina (1893), songs for Štrekelj's collection; the peak in Contributions to Slovene Plant Names I–II (1936–37) with 3,000 plant names.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "1941 → danes",
+        yearLabelEn: "1941 → present",
+        sortYear: 2026,
+        textSi:
+          "Umre 18. februarja 1941 v Zagrebu. Njegove študije so še danes temelj belokranjske etnologije; muzej išče pisma Matičku iz Gribelj.",
+        textEn:
+          "He dies on 18 February 1941 in Zagreb. His studies remain the foundation of Bela krajina ethnology; the museum seeks his letters to Griblje's Matiček.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "joze-dular",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1915",
+        yearLabelEn: "1915",
+        sortYear: 1915,
+        textSi: "Rojen v Vavti vasi; študij slavistike, romanistike in primerjalne književnosti, diploma 1941.",
+        textEn: "Born in Vavta vas; studies of Slavistics, Romance studies and comparative literature, degree 1941.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1951 → 1981",
+        yearLabelEn: "1951 → 1981",
+        sortYear: 1951,
+        textSi:
+          "Trideset let direktor Belokranjskega muzeja v Metliki; pesnik nove romantike in pripovednik (Ljudje ob Krki, Jandre).",
+        textEn:
+          "Thirty years director of the Bela krajina museum in Metlika; poet of the new romanticism and storyteller (People by the Krka, Jandre).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1973",
+        yearLabelEn: "1973",
+        sortYear: 1973,
+        textSi:
+          "Belokranjsko muzejsko društvo — Dular kot ustanovni član in predsednik — postavi Županičevi spominsko ploščo v Gribljah; Dular o njej napiše knjižico.",
+        textEn:
+          "The Bela krajina museum society — Dular its founding member and president — raises Županič's memorial plaque in Griblje; Dular writes a booklet about it.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2000 → danes",
+        yearLabelEn: "2000 → present",
+        sortYear: 2001,
+        textSi:
+          "Umre 31. januarja 2000; 2001 mu Belokranjsko muzejsko društvo postavi ploščo na hiši v Metliki, kjer je živel 53 let. Muzej išče njegovo knjižico o Županičevi plošči.",
+        textEn:
+          "He dies on 31 January 2000; in 2001 the museum society raises a plaque on his Metlika house, where he lived 53 years. The museum seeks his booklet on Županič's plaque.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "pisanice",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "od nekdaj",
+        yearLabelEn: "time immemorial",
+        sortYear: 1800,
+        textSi:
+          "Vsako pomlad risba z voskom in barvilom na lupini jajca — vzorci, ki se niso pisali, ampak pokazali.",
+        textEn:
+          "Every spring, drawing with wax and dye on the eggshell — patterns that were shown, not written.",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1893",
+        yearLabelEn: "1893",
+        sortYear: 1893,
+        textSi:
+          "Janko Barle objavi študijo Pisanice iz Bele Krajine v Izvestjih Muzejskega društva za Kranjsko — prva znanstvena obdelava šege.",
+        textEn:
+          "Janko Barle publishes the study Pisanice of Bela krajina in the Proceedings of the Museum Society for Carniola — the first scholarly treatment of the custom.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2012",
+        yearLabelEn: "2012",
+        sortYear: 2012,
+        textSi:
+          "Belokranjske pisanice so vpisane v Register nesnovne kulturne dediščine Slovenije — od države priznano znanje, ki se prenaša iz roda v rod.",
+        textEn:
+          "The pisanice of Bela krajina are entered in the Register of the Intangible Cultural Heritage of Slovenia — knowledge recognised by the state as passed down through generations.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Nosilke, med njimi Vesna Veselič iz Adlešičev, veščino ohranjajo živo; muzej vasi Griblje išče lastne vaze ornamentov in vaške pisarje pisanic.",
+        textEn:
+          "Bearers, among them Vesna Veselič of Adlešiči, keep the craft alive; the museum of Griblje seeks its own ornamental vases and the village painters of pisanice.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "kresovanje",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "do 19. stoletja",
+        yearLabelEn: "before the 19th century",
+        sortYear: 1800,
+        textSi:
+          "Na večer pred sv. Janezom Krstnikom goreli kresi po gričih; ob ognju so se pele kresne pesmi — vsaka vas svojo.",
+        textEn:
+          "On St. John's eve bonfires burned on the hills; bonfire songs were sung at the flames — each village its own.",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "konec 19. stoletja",
+        yearLabelEn: "late 19th century",
+        sortYear: 1895,
+        textSi:
+          "Matija Totter — Jandreč Matiček — za Janka Barleta popiše običaj kresovanja in besedilo kresne pesmi pozemeljske fare.",
+        textEn:
+          "Matija Totter — Jandreč Matiček — records for Janko Barle the bonfire custom and the text of the Podzemelj parish's bonfire song.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "20. stoletje",
+        yearLabelEn: "20th century",
+        sortYear: 1950,
+        textSi:
+          "V pozemeljski fari običaji ugasnejo; kot živa šega se kresovanje s pesmijo ohrani le še v Adlešiški fari.",
+        textEn:
+          "In the Podzemelj parish the customs go out; as a living rite the bonfire with its song survives only in the Adlešiči parish.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Adlešiški kres gori naprej; muzej vasi Griblje išče spomin na gribeljski kres — grič, kopico in kitico, če je bila.",
+        textEn:
+          "The Adlešiči fire burns on; the museum of Griblje seeks the memory of a Griblje bonfire — the hill, the pile and the verse, if there was one.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "kuhanje-zganja",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "konec poletja",
+        yearLabelEn: "late summer",
+        sortYear: 1900,
+        textSi:
+          "Ko sadje dozori, kuharija — štil s kotlom, čelado in cevjo — hodi od domačije do domačije; kuhar vlada ognju in toku.",
+        textEn:
+          "When the fruit ripens, the still — the štil with kettle, helm and pipe — goes from farm to farm; the distiller rules the fire and the flow.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1949",
+        yearLabelEn: "1949",
+        sortYear: 1949,
+        textSi:
+          "Milko Matičetov fotografira kuhanje žganja v Ospu — etnografski posnetek, ki je danes javna last in dokument šege.",
+        textEn:
+          "Milko Matičetov photographs brandy distilling at Osp — an ethnographic image now public domain and a document of the custom.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Kuhanje poteka z dovoljenji po merilih; vonj po kuhani hruški ostaja. Muzej išče zadnjo gribeljsko kuharijo in njene merice.",
+        textEn:
+          "Distilling runs under licences and standards; the smell of cooked pear remains. The museum seeks the last Griblje still and its measures.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 1,
+      },
+    ],
+  },
+  {
+    slug: "loke-in-studenci",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "tisočletja",
+        yearLabelEn: "millennia",
+        sortYear: -8000,
+        textSi:
+          "Kolpa s poplavljanjem odlaga rodovitno ilovico in oblikuje loke; del vode ponika v apnenec in se vrača kot studenci.",
+        textEn:
+          "The Kolpa's floods lay down fertile clay and shape the loke; part of the water sinks into the limestone and returns as springs.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "kmečka leta",
+        yearLabelEn: "the farming centuries",
+        sortYear: 1800,
+        textSi:
+          "Loke so senožeti — zimska hrana živine; studenci napajališča in pralnice, kjer se vas srečuje z vodo, ki ne zmanjka.",
+        textEn:
+          "The loke are hayfields — winter feed; the springs watering places and wash-houses, where the village meets water that never fails.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "zadnja stoletja",
+        yearLabelEn: "the last centuries",
+        sortYear: 1900,
+        textSi:
+          "Jezovi na Kolpi spremenijo erozijo bregov, selitve rib in rastlinstvo — reka in njeni jezovi si preoblikujeta zgodbo.",
+        textEn:
+          "Weirs on the Kolpa change the erosion of banks, the migration of fish and plants — the river and its weirs reshape each other's story.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Loke so zatočišče biotske pestrosti in pašnik ekološkega kmetijstva; muzej zbira imena gribeljskih studencev.",
+        textEn:
+          "The loke are a refuge of biodiversity and the pasture of ecological farming; the museum collects the names of Griblje's springs.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "etimologija-gribljati",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1468",
+        yearLabelEn: "1468",
+        sortYear: 1468,
+        textSi:
+          "Prva pisana omemba vasi; ime iz staroslovanskega gribljati — brazdati, orati: spomin na prvi plug skozi gozd.",
+        textEn:
+          "The first written mention of the village; the name from the Old Slavic gribljati — to furrow, to plough: the memory of the first plough through the forest.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "urbarji",
+        yearLabelEn: "the urbaria",
+        sortYear: 1500,
+        textSi:
+          "V urbarjih in na najstarejšem zemljevidu Grüble — mala brazda; razlaga iz »groblje« (prod) se ne potrdi.",
+        textEn:
+          "In the urbaria and on the oldest map Grüble — the little furrow; the 'groblja' (gravel) explanation fails.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2001",
+        yearLabelEn: "2001",
+        sortYear: 2001,
+        textSi:
+          "Jože Šimec v Dolenjskem listu znanstveno obdela izvor imena vasi Griblje; članek navaja tudi Wikipedijina literatura.",
+        textEn:
+          "Jože Šimec treats scholarly the origin of the name of Griblje in Dolenjski list; the article is cited in Wikipedia's literature.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "vsako pomlad",
+        yearLabelEn: "every spring",
+        sortYear: 2026,
+        textSi:
+          "Vsak njivski brazdotični čas ime znova napiše; muzej išče posnetke urbarjev, kjer Grüble stoji.",
+        textEn:
+          "Every ploughing season writes the name anew; the museum seeks photographs of the urbaria where Grüble stands.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {

@@ -383,6 +383,62 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "The Griblje cycling section bears the name of the Torpedo brand — the bicycles a generation grew up on. Every July the vintage-bicycle rally brings to the village machines older than most of the spectators. The collection's record carries a photograph of a Torpedo bicycle from the open archive — the same brand Griblje's riders ride.",
   },
+  {
+    slug: "matija-totter",
+    textSi:
+      "Med fanti, ki so v nedeljo zahajali v gostilno, je eden sedel doma pod tepko in zapisoval pregovore. Vaščani so ga imeli za čudaka; zgodovina ga ima za rešitelja. Matija Totter — Jandreč Matiček — je za prijatelja Janka Barleta zapisal ženitovanjske običaje, pastirski križevo in kresno pesem pozemeljske fare; zahvalil se mu je tudi etnolog Županič. Pri šestnajstih je peš odšel v Novo mesto prosit za šolanje; opat ga je zavrgel. Odšel je v Ameriko, kupil bombažno farmo v Teksasu in ni nikoli več videl Kolpe. Najmlajši sin je raziskoval posledice atomskih bomb. Fant pod tepko je zmagal — samo ne tam, kjer je sanjal.",
+    textEn:
+      "Among the boys who went to the inn on Sundays, one sat at home under the bench writing down proverbs. The villagers took him for an oddity; history takes him for a saviour. Matija Totter — Jandreč Matiček — wrote down for his friend Janko Barle the wedding customs, the shepherds' križevo and the bonfire song of the Podzemelj parish; the ethnologist Županič thanked him too. At sixteen he walked to Novo mesto to beg for schooling; the abbot refused him. He left for America, bought a cotton farm in Texas and never saw the Kolpa again. His youngest son researched the aftermath of the atomic bombs. The boy under the bench won — just not where he had dreamed.",
+  },
+  {
+    slug: "janko-barle",
+    textSi:
+      "Njegovo otroštvo je dišalo po Kolpi: »Srečna, lepa leta,« je zapisal po desetletjih v Zagrebu, kjer je bil kanonik, tajnik nadškofa in reformator hrvaške cerkvene glasbe. A Janko Barle, učiteljev sin iz Podzemlja, je vzel Belo krajino s seboj: objavil je ženitovanjske običaje in prvo študijo o pisanicah, pesmi je posredoval Štrekelju v zbirko Slovenskih narodnih pesmi. In ko je čez Evropo zibel noben računalnik, je iz starih zdravilskih knjig sestavil 3.000 slovenskih imen rastlin — tam, kjer sta končala Valvasor in Žois. Etnolog, botanik, glasbenik. Vse naenkrat, vse iz enega otroštva ob reki.",
+    textEn:
+      "His childhood smelled of the Kolpa: 'Happy, beautiful years,' he wrote decades later from Zagreb, where he was a canon, the archbishop's secretary and the reformer of Croatian church music. But Janko Barle, a teacher's son from Podzemelj, took Bela krajina with him: he published the wedding customs and the first study of the Easter eggs, and passed songs on to Štrekelj's collection of Slovene Folk Songs. And when no computer stirred in Europe, he compiled 3,000 Slovene plant names from old healing books — where Valvasor and Zois had stopped. Ethnologist, botanist, musician. All at once, all from one childhood by the river.",
+  },
+  {
+    slug: "joze-dular",
+    textSi:
+      "Trideset let je vodil Belokranjski muzej v Metliki — in petdeset let živel v isti hiši, na kateri mu je po smrti ploščo postavilo društvo, ki ga je imelo za predsednika. Jože Dular je bil pesnik nove romantike in pripovednik, a njegov najgloblji pečat je zgodovina: Metlika skozi stoletja, Semič, Adlešiči, gasilstvo, godba. Za Griblje je najpomembnejša tanka knjižica o Županičevi spominski plošči — dokument o dnevu, ko se je vas spomnila svojega največjega sina. Vsak muzej vasi, tudi ta digitalni, stoji na plečih takih mož. Dular jih je nosil trideset let.",
+    textEn:
+      "For thirty years he led the Bela krajina museum in Metlika — and for fifty he lived in the same house, on which the society that had him for president raised his plaque after his death. Jože Dular was a poet of the new romanticism and a storyteller, but his deepest mark is history: Metlika through the Centuries, Semič, Adlešiči, the fire brigade, the town band. For Griblje the most precious thing is the slim booklet on Županič's memorial plaque — the document of the day the village remembered its greatest son. Every village museum, this digital one too, stands on the shoulders of such men. Dular carried them for thirty years.",
+  },
+  {
+    slug: "pisanice",
+    textSi:
+      "Vosek, ki se nanese na lupino, barvi ne pusti, da bi se spraskala v risbo. Ko jajce pride iz kopalne barvila, ostane pod voskom svetel vzorec: rastlinje, krogi, zvezde. Belokranjske pisanice so to risbo nosile stoletja; leta 1893 jih je znanstveno obdelal Janko Barle, leta 2012 pa jih je država vpisala v register žive nesnovne dediščine. Vsako pomlav so roke — danes med njimi Vesna Veselič iz Adlešičev — znova vzeli jajce in paličico. Najkrhkejši predmet na svetu: umre, ko se lupina razbije. Zato je vsaka pisanica, ki jo vidite, hkrati muzej.",
+    textEn:
+      "The wax laid on the shell does not let the dye scratch its way into the drawing. When the egg comes out of the colour bath, a bright pattern stays beneath the wax: plants, circles, stars. The pisanice of Bela krajina have carried this drawing for centuries; in 1893 Janko Barle treated them scholarly, and in 2012 the state entered them in the register of living intangible heritage. Every spring hands — today among them Vesna Veselič of Adlešiči — took up egg and stylus again. The most fragile object in the world: it dies when the shell breaks. That is why every pisanica you see is a museum at once.",
+  },
+  {
+    slug: "kresovanje",
+    textSi:
+      "Ena noč na leto: pred sv. Janezom so griči zagoreli, okrog ognja pa so pele kresne pesmi — vsaka vas svojo, z lastno kitico. Za pozemeljsko faro jih je zapisal gribeljski Matiček in je niso pozabili: v Adlešiški fari kres z besedilo gori še danes. Kres je šega, ki ne pusti predmeta: ostanejo pepel, pesem in spomin. Zato je ta zapis vabilo — ne razstava. Kje je gorel gribeljski kres, kdaj je ugasnil, kdo je pel zadnjo pesem? Če veste, ste vi njegov arhiv.",
+    textEn:
+      "One night a year: before St. John's day the hills caught fire, and around the flames the bonfire songs were sung — each village its own, with its own verse. For the Podzemelj parish Griblje's Matiček wrote them down, and they were not forgotten: in the Adlešiči parish the bonfire with its words still burns today. A bonfire is a custom that leaves no object behind: ash, a song and a memory remain. That is why this record is an invitation — not an exhibit. Where did the Griblje bonfire burn, when did it go out, who sang the last song? If you know, you are its archive.",
+  },
+  {
+    slug: "kuhanje-zganja",
+    textSi:
+      "Jeseni je po vasi dišalo po kuhani hruški. Kuharija — kotel, čelada, cev — je šla od domačije do domačije, kuhar pa je znal, kaj proč: prvi tok in zadnjega. Ostalo je bilo srce, po katerem so sodili domačijo. Ob kuhariji se je zbrala ulica; otroci so dobili sladko prenape, zgodbe so tekle kakor kapljica po cevi. Žganje je potem živelo v kleti: zdravilo za gripo, zob in strah, darilo za župnika in svatbo, denar za pomoč pri žetvi. Fotografija v tem zapisu je iz leta 1949 — ista ročna veščina, ki je ne moremo dokumentirati po vonju.",
+    textEn:
+      "In autumn the village smelled of cooked pear. The still — kettle, helm, pipe — went from farm to farm, and the distiller knew what to pour away: the first run and the last. What remained was the heart, by which a farm was judged. The lane gathered round the still; children got the sweet slops, and stories ran like the drop down the pipe. The brandy then lived in the cellar: medicine for flu, toothache and fright, a gift for the priest and for weddings, coin for help at harvest. The photograph in this record is from 1949 — the same hand-craft, which we cannot document by smell.",
+  },
+  {
+    slug: "loke-in-studenci",
+    textSi:
+      "Spomladi se po obkolpski ravnini zgodita dve reki: ena vidi, ki teče po koritu, in ena nevidna, ki ponika pod tlemi. Velik del vode uide v apnenec in se vrne kot studenci — izviri, ki bruhajo kakor dih. Zato je paradoks resničen: vas ob najbolj darežljivi reki spada med najbolj suhe kraje Bele krajine. Loke, ki jih je Kolpa naredila s poplavljanjem, so bile senožeti; studenci napajališča. Vsak izvor je ime nosil. Muzej jih išče — preden ostanejo samo v ustih najstarejših.",
+    textEn:
+      "In spring two rivers move through the Kolpa plain: one visible, running in its bed, and one unseen, sinking beneath the ground. Much of the water escapes into the limestone and returns as studenci — springs that burst like breath. So the paradox is real: a village beside the most generous river belongs among the driest places in Bela krajina. The loke meadows the Kolpa made by flooding were hayfields; the springs watering places. Every spring bore a name. The museum seeks them — before they remain only in the mouths of the oldest.",
+  },
+  {
+    slug: "etimologija-gribljati",
+    textSi:
+      "Kako stara je beseda, ki jo rečete vsak dan? Griblje izhaja iz staroslovanskega gribljati — brazdati, orati. Vas se ne imenuje po svetniku, gospodu ali reki: ime je dejanje, s katerim je človek odprl gozd in vrgel seme. V urbarjih piše Grüble — mala brazda; razlaga, da bi šlo za »grobljo«, prod, ne drži. Torej: vsakokrat, kdor izgovori ime vasi, ponovi prvi plug. To je najstarejši zapis v tej zbirki — starejši od vsakega papirja, ker je zapisan v imenu.",
+    textEn:
+      "How old is the word you say every day? Griblje comes from the Old Slavic gribljati — to furrow, to plough. The village is not named after a saint, a lord or a river: the name is the act by which a man opened the forest and cast seed. In the urbaria it is written Grüble — the little furrow; the explanation that it was a 'groblja', a gravel bank, does not hold. So: whoever pronounces the village's name repeats the first plough. That is the oldest record in this collection — older than any paper, because it is written into the name.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {
