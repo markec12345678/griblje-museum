@@ -927,3 +927,28 @@ Stage Summary:
 - Produkcija: https://griblje-museum.vercel.app — 60 zapisov v živo
 - z-ai kvota (web_search/image-search/VLM) izčrpana tudi danes; RKD, PGD medalje, stari zemljevidi ostajajo za prihodnjo sejo; Commons API (curl) zanesljivo deluje kot nadomestna pot
 - Preostali predlogi za 11. sklop: Gribeljci po svetu 2019 (130-letnica šole), loke/studenci imena, pečnica za sušenje sadja Adlešiči, pobiranje lanu, velesejem 1921, Ciril Totter maratonc, dr. John Randolph Totter (biokemik), Matičkovi zapiski (iskanje pri potomcih)
+
+---
+Task ID: 42
+Agent: Main agent (Z.ai Code)
+Task: Nadaljevanje po načrtu (uporabnik: "odlicno nadaljuj") — 11. vsebinski sklop iz preostalih predlogov + poskus ponovitve iskanj
+
+Work Log:
+- KVOTA: z-ai web_search še vedno 429; RKD nedosegljiv (SSL) → RKD register, PGD medalje, stari zemljevidi znova odloženi; Wikimedia Commons API prek curl deluje — vsa gradiva pridobljena po njem
+- RAZISKAVA: surove datoteke Radio Odeon (curl-ro-jubilej-gribeljske-sole: 130-letnica + srečanje Gribeljcev po svetu 19. 6. 2019, kronologija šole 1889–2019; curl-ro-ko-se-pticki-zenijo: obujeno gregorjevo 15. 3. 2026 — učenci, učitelj Andraž Banovec, skeč KTŠD Stari trg, Country Roses, priznanja za najboljši kruh vaških pekaric; curl-ro-podruznici-…-liboje) + raziskovalni dokument 02 (TD Griblje: Pasuljada 16. izvedba 2019, Kavbojski žur, rally 2026 ~50 kolesarjev iz 8 društev + učna ura Bistre buče; praznik KS 15. 9. 2024 prvi po desetletjih — spomin 1941, nagovor 89-letnega Brinca, odprtje spominske sobe; odeon-totter.txt za Cirila Totterja)
+- ODKLOP: bleda lastovka (belokranjski simbol) ni verifikabilna na Wikipediji (članka ni, v članku Bela krajina ni omembe) → zapis NI ustvarjen — muzejska integriteta nad številom
+- 7 NOVIH ZAPISOV (11. sklop "Vas, ki se spominja same sebe", 60 → 67 zapisov / 278 virov): td-griblje (CORROBORATED; TD kot držitelj koledarja — Pasuljada/Kavbojski žur/rally — sooborganizator srečanj 2019+2024 in nosilec tega muzeja; "hišnik se predstavi na vratih"), gribeljci-po-svetu-2019 (DOCUMENTED; srečanje vseh Gribeljcev po svetu ob 130-letnici šole; kronologija: blagoslov 1889, pouk v gasilskem domu 1941–45, Brinčeva hiša, podružnica 1963/64, grožnja zaprtja 2004, 14 učencev 2018/19), ko-se-pticki-zenijo (DOCUMENTED; obujeno gregorjevo 15. 3. 2026 v gasilskem domu — petje, recitacije, folklora, skeč Avto, Country Roses, priznanja za najboljši kruh), ciril-totter (CORROBORATED; tretje dejanje Jandrečev: ekološka kmetija, predelava na domu, maratoni — "iz pluga v certifikat, iz hoje v maraton"), praznik-ks-2024 (DOCUMENTED; prvi praznik KS po desetletjih — spomin na napad septembra 1941, nagovor 89-letnega dr. Brinca, odprtje spominske sobe), ljudje-ob-kolpi (DOCUMENTED; radijska rubrika Borisa Grabrijana kot današnji zapisovalec vasi — primarni vir polovice zbirke; "zapis o metodi"), valvasor-1689 (DOCUMENTED; Slava vojvodine Kranjske 1689 — 4 zvezki, 3532 strani, 528 bakrorezov; prva tiskana knjiga, ki pozna Črnomelj z okolico; Valvasorjeva usoda — Bogenšperk prodan, umrl revno; "Valvasor je začel; muzej nadaljuje")
+- SLIKE (7 novih z Commons, licence preverjene, sharp optimizacija): td-kopališka-hisica.jpg (Uroš Novina CC BY 2.0 — hišica ob Kolpi pri Gribljah, 7850→2000 px), gribeljci-2019.jpg (Fran Vesel javna last — kongres narodnih noš, skupina Bela krajina, ilustrativno), lastovka.jpg (Partonez CC BY-SA 4.0 — kmečka lastovka na žici), maraton.jpg (Jeremy Segrott CC BY 2.0 — Ljubljanski maraton, ilustrativno), valvasor.jpg (Jurij Šubic javna last — portret), radio-kosmaj.jpg (Rasevic CC BY-SA 3.0 — jugoslovanski sprejemnik Nikola Tesla Kosmaj 49), noša-1942.jpg (Tujskoprometna zveza javna last — belokranjska noša 1942); image-dimensions.ts +7
+- JEZIKOVNI POPRAVKI osnutka pred vstavitvijo (10 popravkov: odporništva, ganljiv, dvainštirideset, po imenu, išče, pomemben, koreninami, metodi, počne, informativne table)
+- CELINOST: object-biographies.ts 60→67 (7 novih po 2–3 faze), minute-stories.ts 60→67, walks.ts 67/67 (td+gribeljci+ciril → iz-gribelj-v-svet; pticki+praznik+ljudje → vas-in-njeni-ljudje; valvasor → kruh-platno-vino; brez podvajanj), i18n.tsx 12 nizov 60→67 v SL/EN/HR ("Šezdeset i sedem zapisa"), layout.tsx meta
+- README: tabela 67/67 + 278 virov, nov odstavek o 11. sklopu, funkcije 67, db:seed 67/278
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2302 znanih opozoril); reseed 67/278; API 67 zapisov, 7 novih prisotnih; 7 slik 200; agent-browser: hero "Zbirka 67 zapisov", statistika 67 | 278 | 6, iskanje "Valvasor" najde zapis, dialog valvasor-1689 (slika OK, Bogenšperk, 3532, viri), iskanje "gregorjevo" → dialog ko-se-pticki-zenijo (slika OK, Banovec, Country Roses, kruh), mobilni 390 px brez preliva z nogo, 0 napak konzole; 3 zaslonke
+- GIT/VERCEL: commit c3923a4 (19 datotek, +767) pushan; produkcija: API 67, 7 novih zapisov, vseh 7 slik 200
+
+Stage Summary:
+- Zbirka: 67 zapisov / 278 virov / 67 minutnih zgodb / 67 življenjepisov / 9 dogodkov / 6 sprehodov (pokritost 67/67)
+- 11. sklop povezuje sedanji čas vasi (TD, praznik, gregorjevo, ekološka kmetija) z njenimi zapisovalci (rubrika Ljudje ob Kolpi) in z samim začetkom zapisovanja (Valvasor 1689) — muzej zrcali sebe v lastni zbirki
+- Ključna samoopomba: td-griblje je "hišnik, ki se predstavi na vratih" — muzej prizna svojega nosilca
+- Produkcija: https://griblje-museum.vercel.app — 67 zapisov v živo
+- z-ai kvota ostaja 429; RKD, PGD medalje, stari zemljevidi čakajo; bleda lastovka odklonjena (ni vira)
+- Ostanki za 12. sklop: Gribeljci po svetu — seznam udeležencev, recept zmagovalnega kruha 2026, Valvasorjev citat o Črnomlju, Matičkovi zapiski, pečnica za sušenje sadja (brez vira), velesejem 1921 (brez vira — potrebna iskanja ko se kvota sprosti)
