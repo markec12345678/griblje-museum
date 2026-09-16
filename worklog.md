@@ -803,3 +803,32 @@ Stage Summary:
 - Muzej zdaj izpolnjuje 4 od 5 manjkajočih razpisnih zahtev: 3D-model enote KD iz registra (sveti-vid, EŠD 2122) z AR ✔, hrvaščina (Interreg) ✔, statistika obiska za poročila (1.18) ✔, formalna WCAG izjava z datumom ✔ — manjka samo prodajni načrt (dokument za konzorcij, ni kode) in prodaja/pisma (organizacijsko)
 - Statistika: zbirni anonimni števci brez piškotkov/IP (seje brskalnika); na Vercelu bralna s pošteno opombo, na zapisljivi namestitvi polno delujoča — mehanizem pripravljen za selitev na SLO strežnik (razpisni pogoj za AI gostovanje!)
 - Znane meje: OpenRouter dnevna kvota na produkciji znova izčrpana (reset 02:00 LJ); hr vodnik na produkciji torej ni bil živ preverjen (lokalno DA)
+---
+Task ID: 36 + 37 (a, b, c)
+Agent: Main agent (Z.ai Code) + nevidni prispevek propadlega podagenta 36-c
+Task: Spletna raziskava vsebin o Gribljah — dokumenti, slike, vsi spletni viri (nadaljevanje naročila: "isci se podatke kaj najdes na spletu dokumente slike gribelj vse kaj najdes")
+
+Work Log:
+- Podagenti (36-a/b/c) so bili poskusno zagnani vzporedno; vsi trije klici so padli na infrastrukturi (context deadline exceeded). Eno od njih (36-c) je vseeno tiho delal ~30 min in pustil obsežen surovi gradivi v research-griblje/raw/ (Svet24, Radio Odeon, RTV, Commons, matricula, PDF-ji) pred izgubo komunikacije — to je porabilo dnevno kvoto iskanj (429 Too many requests na web_search/page_reader/image-search do konca seje)
+- Raziskavo sem nadaljeval direktno (curl + z-ai CLI kjer je delovalo + Commons/Wikipedia API):
+  - Wikipedija SL/EN: Griblje (prva omemba 1526, zaselki, etimologija Grüble, Goranja lokva, loke, suh kraj), Cerkvišče (3 cerkvice ~1408, jame), Podzemelj (Kučar), Kolpa (294 km, pri Gribljah razširitev doline, mlini v nadstropju), Niko Županič (celoten članek)
+  - Wikidata Q2531566: 334 preb. 2020 (162 M/172 Ž), Grüble/Grüblach
+  - Slovenska biografija (sbi915246): celoten SBL zapis o Županiču (mama Katarina Pezdirc pri Grizinu, "Šopek poljskih cvetlic iz Gribelj", psevdonim Dr. Nikša Gribljanovič, triralica 1915)
+  - Kamra/Knjižnica Črnomelj: spomenik napadu na italijanske mejne policiste (6. 9. 1941, Savinšek 1960, EŠD 19324), spomenik padlim (13 žrtev, 1961, EŠD 19326), spominska plošča Županiču (Belokranjsko muzejsko društvo 1973) — vse s fotografijami CC BY-NC (prenesene v slike/)
+  - Wikimedia Commons API: kategorija Griblje — 11 slik z licencami, vključno z dvema PUBLIC DOMAIN fotografijama zavezniških letal pri Gribljah marec 1945 (Franjo Veselko, vir: Vončina, PNZ 50/3 2010, PDF uspešno prenešen in prebran)
+  - RTV SLO (27. 4. 2025): evakuacija 2041 ljudi z letališča Krasinec 25.–26. 3. 1945 (knjiga Ilinke Todorovski, Alma Karlin med evakuiranci)
+  - Radio Odeon (iz podagentovih surovih datotek): 500-letnica cerkve sv. Vida 21. 6. 2026 (škof Glavan, knjižica dr. Janeza Weissa), PGD pred stoletnico (140 članov, Štrucelj, Brinc 30.000 €), šola 1889 (Kambič, muzejska učilnica 2022, 140-letnica 2029), spominska plošča Brincu 10. 4. 2026 (skupaj 200.000 € donacij, spominska soba v gasilskem domu), KS praznik 2024, Pasuljada (16+ let), Kavbojski žur, Rally starodobnih koles (Sekcija Torpedo), serija "Ljudje ob Kolpi": Nikolaj Dragoš (111 let, najstarejši Slovenec), Audrey Totter (Hollywood iz Gornjih Gribelj!), Peter Kambič, Toni Gašperič, Matija Totter, Jože Dular, Janko Barle, Alojz Štrucelj (kmetija 90 ha)
+  - Matricula Online: cerkev sv. Vida = podružnica župnije Podzemelj; matrice 1669–1947 prosto dostopne
+  - ZooKeys PDF: Alburnus sava — nova ribja vrsta za znanost, opisana iz Kolpe (2017)
+  - Splet24: PŠ Griblje (17 učencev, Marjetka Žunič, edina vas s podružnico), PGD pred stoletnico, muzejska učilnica (Branka Weiss, Slovenski šolski muzej)
+  - Občina Črnomelj: stran KS Griblje (naselji Griblje + Cerkvišče, svet KS 2025: Husič, Brinc, Jakofčič, Piškurič, Brodarič)
+- Napisal 4 sintezne dokumente v research-griblje/: 00-KAZALO.md, 01-vas-griblje-zgodovina.md, 02-cerkev-pgd-drustva.md, 03-kolpa-dediscina-fotografije.md
+- Omejitve seje: web_search/page_reader/image-search od ~05:00 naprej stalno 429 (kvota porabljena); rkd.situla.org, belakrajina.si, nart.si, dlib.si, gasilske zveze — nedosegljivi/zaščiteni
+
+Stage Summary:
+- 4 dokumenti raziskave: research-griblje/{00-KAZALO, 01-vas-griblje-zgodovina, 02-cerkev-pgd-drustva, 03-kolpa-dediscina-fotografije}.md
+- ~45 predlogov novih muzejskih zapisov (cilj 100+ zapisov za zbirko: dosegljiv)
+- 14 uporabnih fotografij z licencami (11 Commons CC/PD + 3 Kamra CC BY-NC); commons-slike.json s podatki
+- Ključne odkritja: Audrey Totter iz Gornjih Gribelj; Niko Županič (rešil Bled, ustanovil SEM); Dragoš 111 let; dr. Brinc 200.000 € + spominska soba; PD fotografiji zavezniških letal 1945; matrice 1669–1947; Alburnus sava; knjižica Memento (dr. Weiss) ob 500-letnici
+- Ključne letnice: 2026 (500 let cerkve — že obeležena), 2027 (100 let PGD), 2029 (140 let šole)
+- Nezaključeno (kvota): RKD register statusa cerkve, PGD medalje, TD kontakti, stari zemljevidi — priporočena ponovitev
