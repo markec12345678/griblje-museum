@@ -28,10 +28,10 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 44/44 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 44/44 (povprečno ~298) |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 52/52 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 52/52 (povprečno ~290) |
 | Življenje predmeta | 4–6 faz časovnice | ✅ 44/44 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 200 skupaj (povprečno 4,5) |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 235 skupaj (povprečno 4,5) |
 | Zanesljivost | izrecni status dokazilosti | ✅ 44/44 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
@@ -60,7 +60,7 @@ moški, ki ga je Slovenija kdaj zapisala), **Peter Kambič** (prvi učitelj šol
 Kolpe 2017, ZooKeys — slika holotipa CC BY 4.0), **matične knjige 1669–1947**
 (župnija Podzemelj, Matricula Online — arhiv rodbin), **Cerkvišče** (sosednja
 vas KS s tremi porušenimi cerkvicami) in **Pasuljada** (živa šega TD Griblje) —
-zbirka 44 zapisov / 200 virov.
+zbirka 52 zapisov / 235 virov.
 Zatem je nastala še **obsežna spletna raziskava vsebin o Gribljah**
 (`research-griblje/`: 4 sintezni dokumenti z navedbo virov — vas in zgodovina,
 cerkev/PGD/šola/društva, Kolpa/nesnovna dediščina/fotografije) z **~45 predlogi
@@ -69,7 +69,7 @@ novih muzejskih zapisov** (cilj: zbirka 100+), 14 licenciranimi fotografijami
 Audrey Totter (hollywoodska igralka z gribeljskimi koreninami), Nikolaj Dragoš
 (najstarejši Slovenec, 111 let), matične knjige 1669–1947 (župnija Podzemelj),
 riba *Alburnus sava* (vrsta, opisana iz Kolpe 2017).
-Osmi sklop **Dobre duše vasi** (37 → 44 zapisov / 200 virov): **dr. Franc Brinc**
+Osmi sklop **Dobre duše vasi** (37 → 44 zapisov / 200 virov) in deveti sklop **Tla in nebo vasi** (44 → 52 zapisov / 235 virov): zaselki, Goranja lokva, kmetija Štrucelj, tamburaši Danica, kopališče, dakota pri Otoku, fotograf Veselko, zračni most s Krasinca — med njimi **dr. Franc Brinc**
 (pravnik in dobrotnik — ~200.000 € darov: gasilski dom, šola, cerkvena okolica;
 spominska soba 2024, plošča 2026), **Katarina Zupanič** (Šopek poljskih cvetlic iz
 Gribelj — izročilo, ki ga je 1894/95 zapisala materina roka, objavljeno v Etnologu
@@ -84,7 +84,7 @@ Katarininim zapisom (1894/95) — isti desetletji, ne stoletje.
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 44 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 52 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -219,7 +219,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 44 zapisov, 200 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 52 zapisov, 235 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
