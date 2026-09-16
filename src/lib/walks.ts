@@ -7,7 +7,7 @@ import type { ExhibitDTO } from "@/lib/types";
  * obogaten s kuratorsko opombo, ki povezuje postave v pripoved.
  *
  * Pogoj celovitosti: vseh pet sprehodov skupaj pokrije VSE zapise
- * zbirke (2026: 60 zapisov), vsak zapis natanko enkrat.
+ * zbirke (2026: 67 zapisov), vsak zapis natanko enkrat.
  */
 
 export type WalkStop = {
@@ -284,6 +284,13 @@ export const WALKS: Walk[] = [
         noteEn:
           "And before we close the pantry: the village's name is a furrow. Gribljati — to plough, to furrow: this collection stands on an act that first happened six centuries ago and happens again every spring.",
       },
+      {
+        exhibitSlug: "valvasor-1689",
+        noteSi:
+          "Zadnja postaja je začetek vsega: Valvasorjeva Slava vojvodine Kranjske (1689), prva tiskana knjiga, ki pozna ta konec. Sprehod, ki se konča pri prvi strani — to je muzejska disciplina.",
+        noteEn:
+          "The last stop is the beginning of everything: Valvasor's Glory of the Duchy of Carniola (1689), the first printed book that knows this corner. A walk that ends at the first page — that is museum discipline.",
+      },
     ],
   },
   {
@@ -358,6 +365,27 @@ export const WALKS: Walk[] = [
           "Zadnja postaja je sam popis: Griblach 1468, Briglach 1490, 329 prebivalcev danes. Vsaka številka v tem zapisu je kdo ali kaj — sprehod zaključimo tako, da preštejemo vas.",
         noteEn:
           "The last stop is the census itself: Griblach 1468, Briglach 1490, 329 inhabitants today. Every number in this record is a someone or a something — we close the walk by counting the village.",
+      },
+      {
+        exhibitSlug: "td-griblje",
+        noteSi:
+          "In pred zadnjim postankom hišnik: Turistično društvo Griblje, ki drži koledar vasi — Pasuljado, žur, rally — in nosi ta muzej. Vas, ki se spominja sama, potrebuje nekoga, ki prinese koledar.",
+        noteEn:
+          "And before the last stop, the caretaker: the Griblje Tourist Society, which holds the village calendar — the Pasuljada, the party, the rally — and carries this museum. A village that remembers itself needs someone to bring the calendar.",
+      },
+      {
+        exhibitSlug: "gribeljci-po-svetu-2019",
+        noteSi:
+          "Vse poti te vasi se stekajo nazaj: 2019 so se ob 130-letnici šole vrnili Gribeljci po svetu. Vsak, ki je odšel, je nosil s sabo isto učilnico.",
+        noteEn:
+          "All this village's roads flow back: in 2019, at the school's 130th anniversary, the world's Griblje people returned. Everyone who left carried the same classroom with them.",
+      },
+      {
+        exhibitSlug: "ciril-totter",
+        noteSi:
+          "Zadnja postaja je sedanji čas: na Jandrečetovi zemlji ekološko kmetuje maratonc Ciril Totter. Veja, ki se je vrnila k plugu — in dodala tekaške čevlje.",
+        noteEn:
+          "The last stop is the present day: on Jandreči land the marathon runner Ciril Totter farms ecologically. The branch that came back to the plough — and added running shoes.",
       },
       {
         exhibitSlug: "matija-totter",
@@ -476,6 +504,27 @@ export const WALKS: Walk[] = [
           "Kje se je začelo stoletje? Pri bugariji. Mladi Dragoš je v Ljubljani igral v tamburaški skupini Danica — glasba je bila njegova prva pot v svet.",
         noteEn:
           "Where did the century begin? At the bugarija. Young Dragoš played in Ljubljana's Danica tambura group — music was his first road into the world.",
+      },
+      {
+        exhibitSlug: "ko-se-pticki-zenijo",
+        noteSi:
+          "In pomlad ima svoj praznik: gregorjevo, ki so ga leta 2026 obudili šola in krajevna skupnost — s kruhom vaških pekaric v glavni vlogi.",
+        noteEn:
+          "And spring has its feast: the Gregorjevo revived in 2026 by the school and the local community — with the village bakers' bread in the leading role.",
+      },
+      {
+        exhibitSlug: "praznik-ks-2024",
+        noteSi:
+          "In pred zaključkom še dan, ko se je vas spomnila, da zna praznovati: prvi praznik KS po desetletjih — iz spomina na 1941 zrasel praznik dobrote.",
+        noteEn:
+          "And before the close, the day the village remembered it knows how to celebrate: the local community's first festival in decades — a feast of generosity grown from the memory of 1941.",
+      },
+      {
+        exhibitSlug: "ljudje-ob-kolpi",
+        noteSi:
+          "Kdor je vse te zgodbe prvi povedal na glas? Radijska rubrika Ljudje ob Kolpi — današnji zapisovalec vasi. Muzej ji lahko le vrne posojeno.",
+        noteEn:
+          "Who first told all these stories aloud? The radio column People by the Kolpa — today's recorder of the village. The museum can only return what it borrowed.",
       },
       {
         exhibitSlug: "janko-barle",

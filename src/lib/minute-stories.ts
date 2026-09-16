@@ -439,6 +439,55 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "How old is the word you say every day? Griblje comes from the Old Slavic gribljati — to furrow, to plough. The village is not named after a saint, a lord or a river: the name is the act by which a man opened the forest and cast seed. In the urbaria it is written Grüble — the little furrow; the explanation that it was a 'groblja', a gravel bank, does not hold. So: whoever pronounces the village's name repeats the first plough. That is the oldest record in this collection — older than any paper, because it is written into the name.",
   },
+  {
+    slug: "td-griblje",
+    textSi:
+      "Vsaka vas ima koledar, a ne vsaka ima tistega, ki ga drži. V Gribljah ga drži Turistično društvo: poleti Pasuljada s kmečkimi ženami, junija Kavbojski žur, julija rally starodobnih koles s sekcijo Torpedo — z ustavitvijo v cerkvi in učno uro v stari šoli. In ko se je rodila zamisel o digitalnem muzeju vasi, je bilo naravno, da ga nosi prav TD. Ta zapis je hišnik, ki se predstavi na vratih: muzej, ki ga bereš, je projekt istega društva, ki kuha pasulj.",
+    textEn:
+      "Every village has a calendar, but not every village has the one who holds it. In Griblje the Tourist Society holds it: the Pasuljada with the farm women in summer, the Cowboy Party in June, the vintage-bicycle rally with the Torpedo section in July — with a stop at the church and a lesson in the old school. And when the idea of a digital village museum was born, it was natural that the TD should carry it. This record is the caretaker introducing himself at the door: the museum you are reading is a project of the same society that cooks the beans.",
+  },
+  {
+    slug: "gribeljci-po-svetu-2019",
+    textSi:
+      "Devetnajstega junija 2019 so se v Gribljah zbrali tudi tisti, ki jih na volitvenem imeniku ni več: Gribeljci, ki so svoj drugi dom našli izven rojstne vasi. Ob 130-letnici šole sta KS in TD pripravili srečanje — sedanji in nekdanji učenci so pokazali, kako je bilo v klopeh nekoč in kako danes. Šola je bila pravi okvir: edina ustanova, ki jo je delil vsak, ki je odšel, in vsak, ki je ostal. Za izseljensko vas je tak dan več kot slavje — preverjanje, ali jezik, razpet po svetu, še najde sklanjatev.",
+    textEn:
+      "On 19 June 2019 those no longer on the village register gathered in Griblje too: the Griblje people who found a second home away from the birth village. At the school's 130th anniversary the local community and the TD prepared a reunion — present and former pupils showed how the benches once were and how they are today. The school was the right frame: the one institution shared by everyone who left and everyone who stayed. For an emigrant village such a day is more than a feast — a test whether a tongue stretched across the world still finds its declension.",
+  },
+  {
+    slug: "ko-se-pticki-zenijo",
+    textSi:
+      "Dvanajstega marca pravijo v Beli krajini, da se ptički ženijo — in po vodi spustijo čolne, da gregorječek odplavi na jug ter odpre pot pomladi. Leta 2026 so ta običaj v Gribljah obudili v gasilskem domu: učenci podružnične šole so peli in recitirali, učitelj Banovec igral harmoniko, dramska skupina iz Starega trga nasmejala občinstvo, Country Roses plesale. In potem so podelili priznanja za najboljši kruh — pekle so ga vaške pekarice. Običaj, ki bi se izgubil, je živel eno soboto znova. Recept zmagovalnega kruha išče muzej.",
+    textEn:
+      "On the twelfth of March they say in Bela krajina that the birds marry — and boats are launched on the water, so that little Gregory sails south and opens the road for spring. In 2026 Griblje revived the custom in the fire station hall: the branch school's pupils sang and recited, teacher Banovec played the accordion, the Stari trg drama group made the audience laugh, Country Roses danced. And then came the awards for the best bread — baked by the village's bakers. A custom that would have been lost lived one Saturday again. The winning loaf's recipe is what the museum seeks.",
+  },
+  {
+    slug: "ciril-totter",
+    textSi:
+      "Zgodba Jandrečev ima tri dejanja: fantje, ki jim plug ne diši, gredo v svet; ena veja da celo holivoodske zvezde; potem pa se veja vrne. Danes na Jandrečetovi domačiji ekološko kmetuje Ciril Totter — brez kemije, po merilih, ki bi jih stari prepoznali kot svoja. Predeluje na domu, opravlja storitve. In teče maratone — dvainštirideset kilometrov po cestah, po katerih so njegovi pekli kruh. Kmečka linija obkolpske vasi se ni prekinila: se je preoblikovala. Iz pluga v certifikat, iz hoje v Maribor — v maraton.",
+    textEn:
+      "The story of the Jandreči has three acts: sons for whom the plough holds no charm go into the world; one branch even gives Hollywood a star; then a branch returns. Today the Jandreči homestead is farmed ecologically by Ciril Totter — no chemistry, by standards the old ones would recognise as their own. Processing at home, services on the side. And he runs marathons — forty-two kilometres over roads on which his people baked their bread. The farming line of a Kolpa village did not break: it reshaped itself. From the plough into a certificate, from the walk to Novo mesto — into the marathon.",
+  },
+  {
+    slug: "praznik-ks-2024",
+    textSi:
+      "Petnajstega septembra 2024 se je vas zbrala na prazniku krajevne skupnosti — prvem po desetletjih. Spominjali so se septembra 1941, napada na italijanske mejne policiste; nagovoril jih je 89-letni dr. Franc Brinc, šolar te vasi, ki je znanost odnesel po svetu in denar prinesel domov. Ob prazniku so odprli tudi njegovo spominsko sobo v gasilskem domu. Praznik, rojen iz spomina na vojno, je zaživel kot praznik dobrote. In dokaz, da si vas svoj praznik zna znova izmisliti.",
+    textEn:
+      "On 15 September 2024 the village gathered for the local community's festival — the first in decades. They remembered September 1941, the attack on the Italian border police; they were addressed by the 89-year-old dr. Franc Brinc, this village's schoolboy who took scholarship round the world and brought the money home. His memorial room in the fire station hall opened that day too. A festival born of the memory of war came alive as a festival of generosity. And as proof that a village knows how to invent its own feast again.",
+  },
+  {
+    slug: "ljudje-ob-kolpi",
+    textSi:
+      "Devetnajsto stoletje so vas zapisovali semeniščniki, dvajseto muzeji. Enaindvajseto jo zapisuje radijska rubrika: Ljudje ob Kolpi na Radiu Odeon, piše jo Boris Grabrijan — ob obletnicah rojstev in smrti objavlja življenjepise obkolpskega sveta. Brez nje bi bila polovica te zbirke prazna: Dragoš, Totterji, Barle, Dular, Kambič — vsi nastali prav tam. Zgodovina male vasi danes nastaja v redakciji lokalnega radia, ob šestih in štirideset pet zjutraj. Radijski val ne pusti lista — zato je njeno shranjevanje muzejsko dejanje.",
+    textEn:
+      "The nineteenth century had seminarians to write the village down, the twentieth had museums. The twenty-first has a radio column: People by the Kolpa on Radio Odeon, written by Boris Grabrijan — on birth and death anniversaries it publishes the biographies of the Kolpa world. Without it half this collection would be empty: Dragoš, the Totters, Barle, Dular, Kambič — all of them took shape right there. The history of a small village is made today in a local radio newsroom, at six forty-five in the morning. A radio wave leaves no leaf — which is why keeping it is a museum act.",
+  },
+  {
+    slug: "valvasor-1689",
+    textSi:
+      "Pred njim so bile listine; po njem je bila knjiga. Leta 1689 je Janez Vajkard Valvasor izdal Slavo vojvodine Kranjske — štiri zvezke, tri tisoč petsto dvaintrideset strani, petsto osemindvajset bakrorezov: dežela, zapisana po lastnem hojenju in merjenju. Med njenimi stranmi je prvič po imenu tudi Črnomelj z okolico. Cena? Vsa: Valvasor je moral prodati Bogenšperk in umrl revno, komaj petdesetleten. Vsak, ki vas zapisuje, je njegov dedič — ta muzej z drugimi orodji: strežnik namesto tiskarne v Nürnbergu.",
+    textEn:
+      "Before him there were documents; after him, a book. In 1689 Janez Vajkard Valvasor published The Glory of the Duchy of Carniola — four volumes, three thousand five hundred thirty-two pages, five hundred twenty-eight copperplates: a land written down by his own walking and measuring. Among its pages, for the first time by name, Črnomelj and its surroundings too. The price? Everything: Valvasor had to sell Bogenšperk and died poor, barely fifty. Everyone who writes a village down is his heir — this museum with other tools: a server instead of a Nuremberg press.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {

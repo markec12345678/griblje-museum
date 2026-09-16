@@ -60,6 +60,14 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/oranje-voli.jpg": { width: 861, height: 645 },
   "/images/authentic/balmorhea.jpg": { width: 1400, height: 859 },
   "/images/authentic/orgle.jpg": { width: 1100, height: 1650 },
+  // 11. sklop: Vasi, ki se spominja same sebe (2026-09-16)
+  "/images/authentic/td-kopališka-hisica.jpg": { width: 2000, height: 1149 },
+  "/images/authentic/gribeljci-2019.jpg": { width: 1078, height: 691 },
+  "/images/authentic/lastovka.jpg": { width: 1600, height: 1188 },
+  "/images/authentic/maraton.jpg": { width: 2000, height: 1333 },
+  "/images/authentic/valvasor.jpg": { width: 1100, height: 1287 },
+  "/images/authentic/radio-kosmaj.jpg": { width: 1600, height: 1032 },
+  "/images/authentic/noša-1942.jpg": { width: 470, height: 668 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };
