@@ -19,7 +19,7 @@ export const dynamic = "force-dynamic";
  * GET  /api/stats  → javni povzetek (obiski, odprtja zapisov, jeziki)
  */
 
-const KINDS = ["visit", "open", "walk", "guide", "audio", "ar"] as const;
+const KINDS = ["visit", "open", "walk", "guide", "audio", "ar", "download"] as const;
 
 const statSchema = z.object({
   kind: z.enum(KINDS),
@@ -81,6 +81,7 @@ export async function GET() {
     let guideTotal = 0;
     let audioTotal = 0;
     let arTotal = 0;
+    let downloadTotal = 0;
 
     for (const r of rows) {
       const n = r.count;
@@ -103,6 +104,9 @@ export async function GET() {
         case "ar":
           arTotal += n;
           break;
+        case "download":
+          downloadTotal += n;
+          break;
       }
     }
 
@@ -118,6 +122,7 @@ export async function GET() {
         guideAsks: guideTotal,
         audioPlays: audioTotal,
         arOpens: arTotal,
+        imageDownloads: downloadTotal,
         topExhibits,
         collectedSince: rows.length > 0 ? rows.map((r) => r.day).sort()[0] : null,
         note: "Zbirni anonimni števci (seje brskalnika, brez piškotkov in IP-jev).",

@@ -331,6 +331,20 @@ export const seedExhibits: SeedExhibit[] = [
         noteSi: "Uradna objava občine o praznovanju in knjižici.",
         noteEn: "The municipality's official post on the celebration and the booklet.",
       },
+      {
+        key: "odeon-petstoletnica-slovesnost",
+        nameSi:
+          "Radio Odeon (23. 6. 2026): V Gribljah slovesno obeležili 500-letnico prve omembe cerkve sv. Vida",
+        nameEn:
+          "Radio Odeon (23 Jun 2026): Griblje solemnly marked the 500th anniversary of the first mention of the church of St Vitus",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida/",
+        noteSi:
+          "Svečana sveta maša ob praznovanju 500-letnice prve pisne omembe cerkve — regionalni zapis o slovesnosti.",
+        noteEn:
+          "The solemn holy mass at the celebration of the 500th anniversary of the church's first written mention — the regional account of the ceremony.",
+      },
     ],
   },
   {
@@ -580,13 +594,15 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "radio-odeon-mlini-malenca",
-        nameSi: "Radio Odeon (2022): mlini in jezi na Kolpi po ohranjenih urbarjih",
-        nameEn: "Radio Odeon (2022): mills and weirs on the Kolpa in the surviving urbars",
+        nameSi:
+          "Radio Odeon (19. 3. 2022): Mlini v Beli krajini po ohranjenih urbarjih",
+        nameEn:
+          "Radio Odeon (19 Mar 2022): Mills in Bela krajina according to the surviving urbars",
         sourceType: "objava",
         license: "navedi vir / cite the source",
-        url: "https://radio-odeon.com/",
-        noteSi: "Mlinarska dediščina Bele krajine — kontekst malenc in mlinskih rokavov.",
-        noteEn: "The milling heritage of Bela krajina — the context of weirs and millraces.",
+        url: "https://radio-odeon.com/novice/mlini-v-beli-krajini/",
+        noteSi: "Mlinarska dediščina Bele krajine — kontekst malenc in mlinskih rokavov; Madroničev mlin okoli leta 1990 (arhiv Petre in Petra Madroniča).",
+        noteEn: "The milling heritage of Bela krajina — the context of weirs and millraces; the Madronič mill around 1990 (from the archive of Petra and Peter Madronič).",
       },
       {
         key: "wiki-kolpa",
@@ -622,11 +638,13 @@ export const seedExhibits: SeedExhibit[] = [
     sources: [
       {
         key: "radio-odeon-mlini",
-        nameSi: "Radio Odeon (2022): Mlini v Beli krajini po ohranjenih urbarjih",
-        nameEn: "Radio Odeon (2022): Mills in Bela krajina according to the surviving urbars",
+        nameSi:
+          "Radio Odeon (19. 3. 2022): Mlini v Beli krajini po ohranjenih urbarjih",
+        nameEn:
+          "Radio Odeon (19 Mar 2022): Mills in Bela krajina according to the surviving urbars",
         sourceType: "objava",
         license: "navedi vir / cite the source",
-        url: "https://radio-odeon.com/",
+        url: "https://radio-odeon.com/novice/mlini-v-beli-krajini/",
       },
       {
         key: "researchgate-flekov-mlin",
@@ -742,13 +760,17 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-zupanic-150",
-        nameSi: "Radio Odeon (junij 2026): leto dveh gribeljskih jubilejev — 500 let cerkve in 150 let od rojstva rojaka",
-        nameEn: "Radio Odeon (June 2026): the year of two Griblje jubilees — 500 years of the church and 150 years since the birth of its famous son",
+        nameSi:
+          "Radio Odeon (11. 6. 2026): V Gribljah ob jubilejnem letu z novo pridobitvijo — 500 let cerkve sv. Vida in 150 letnica rojstva dr. Nika Županiča",
+        nameEn:
+          "Radio Odeon (11 Jun 2026): Griblje in its jubilee year with a new acquisition — 500 years of the church of St Vitus and the 150th anniversary of dr. Niko Županič's birth",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://radio-odeon.com/",
-        noteSi: "Regionalni radio je junija 2026 napovedal obeležitev obeh jubilejev.",
-        noteEn: "The regional radio announced the marking of both jubilees in June 2026.",
+        url: "https://radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo/",
+        noteSi:
+          "Novo parkirišče pri cerkvi, obnovljena tutenkamra in poslovilna vežica (donator dr. Franc Brinc in Občina Črnomelj) v letu dveh jubilejev.",
+        noteEn:
+          "The new church car park and the renovated tutenkamra and funeral vestry (donor dr. Franc Brinc and the Municipality of Črnomelj) in the year of two jubilees.",
       },
       {
         key: "zupanic-sopek",
@@ -868,11 +890,13 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "rtvslo-snos",
-        nameSi: "RTV Slovenija (2024): 80 let pozneje — kako je bil tedaj videti Črnomelj",
-        nameEn: "RTV Slovenia (2024): 80 years on — what Črnomelj looked like then",
+        nameSi:
+          "RTV Slovenija (21. 2. 2024): Slovenski narodnoosvobodilni svet — 80 let pozneje in kako je bil tedaj videti Črnomelj",
+        nameEn:
+          "RTV Slovenia (21 Feb 2024): The Slovenian National Liberation Council — 80 years on and what Črnomelj looked like then",
         sourceType: "objava",
         license: "navedi vir / cite the source",
-        url: "https://www.rtvslo.si/",
+        url: "https://www.rtvslo.si/kultura/drugo/slovenski-narodnoosvobodilni-svet-80-let-pozneje-in-kako-je-bil-tedaj-videti-crnomelj/699117",
       },
       {
         key: "delo-snos",
@@ -937,11 +961,13 @@ export const seedExhibits: SeedExhibit[] = [
     sources: [
       {
         key: "rtvslo-otok",
-        nameSi: "RTV Slovenija: V Otoku pri Metliki slovesnost v spomin medvojnega letališča",
-        nameEn: "RTV Slovenia: A ceremony at Otok near Metlika in memory of the wartime airfield",
+        nameSi:
+          "RTV Slovenija (24. 9. 2022): V Otoku pri Metliki slovesnost v spomin medvojnega reševanja zavezniških letalcev",
+        nameEn:
+          "RTV Slovenia (24 Sep 2022): A ceremony at Otok near Metlika in memory of the wartime rescue of Allied airmen",
         sourceType: "objava",
         license: "navedi vir / cite the source",
-        url: "https://www.rtvslo.si/",
+        url: "https://www.rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
       },
       {
         key: "wiki-otok-metlika",
@@ -960,12 +986,18 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://www.odkrijtebelokrajino.com/",
       },
       {
-        key: "odeon-vranov-let",
-        nameSi: "Radio Odeon: Spominska slovesnost Vranov let — partizansko letališče pri vasi Otok",
-        nameEn: "Radio Odeon: The Vranov let memorial ceremony — the partisan airfield by the village of Otok",
+        key: "odeon-vranov-let-pot",
+        nameSi:
+          "Radio Odeon (1. 9. 2024): Vojaki po poti Vranovega leta od Ožbolta do Otoka — Mednarodna spominska pot zavezništva",
+        nameEn:
+          "Radio Odeon (1 Sep 2024): Soldiers on the Vranov let route from Ožbalt to Otok — the International Memorial Trail of the Alliance",
         sourceType: "objava",
         license: "navedi vir / cite the source",
-        url: "https://radio-odeon.com/",
+        url: "https://radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki/",
+        noteSi:
+          "Pripadniki Slovenske vojske vsako leto prehodijo pot osvobojenih ujetnikov: Ožbalt → Geoss → Otok (spominska pot zavezništva Vranov let).",
+        noteEn:
+          "Slovenian Armed Forces members walk the freed prisoners' route each year: Ožbalt → Geoss → Otok (the Vranov let Alliance memorial trail).",
       },
       {
         key: "commons-otok-letalo",
@@ -1720,11 +1752,13 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "rtv-moceril",
-        nameSi: "RTV Slovenija (junij 2020): poziv k zaščiti črne človeške ribice v Beli krajini",
-        nameEn: "RTV Slovenija (June 2020): a call to protect the black olm of Bela krajina",
+        nameSi:
+          "RTV Slovenija (17. 6. 2020): Za ogroženo belokranjsko črno človeško ribico je največja nevarnost človek",
+        nameEn:
+          "RTV Slovenija (17 Jun 2020): For the endangered black olm of Bela krajina, the greatest danger is man",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://www.rtvslo.si/",
+        url: "https://www.rtvslo.si/okolje/za-ogrozeno-belokranjsko-crno-clovesko-ribico-je-najvecja-nevarnost-clovek/527397",
         noteSi:
           "Primerjava z belo podvrsto: temno obarvana koža in dokaj normalno razvite oči; ogroženost.",
         noteEn:
@@ -1732,11 +1766,13 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-moceril",
-        nameSi: "Radio Odeon (11. december 2016): črna človeška ribica",
-        nameEn: "Radio Odeon (11 December 2016): the black olm",
+        nameSi:
+          "Radio Odeon (18. 10. 2022): 36 let od odkritja črne človeške ribice — Jamski laboratorij Tular",
+        nameEn:
+          "Radio Odeon (18 Oct 2022): 36 years since the black olm's discovery — the Tular Cave Laboratory",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://www.radio-odeon.com/",
+        url: "https://radio-odeon.com/novice/36-let-od-odkritja-crne-cloveske-ribice/",
         noteSi:
           "Natančen datum odkritja: 18. oktober 1986, črpalni preizkus izvira Dobličice.",
         noteEn:
@@ -1765,6 +1801,34 @@ export const seedExhibits: SeedExhibit[] = [
           "Slika zapisa: avtentična fotografija glave podvrste iz odprtega arhiva; dolgo je bila edina prosto dostopna.",
         noteEn:
           "The record's image: an authentic photograph of the subspecies' head from the open archive; for long the only freely available one.",
+      },
+      {
+        key: "odeon-moceril-40-let",
+        nameSi:
+          "Radio Odeon (5. 2. 2026): Črni močeril v Beli krajini po 40 letih od odkritja k čistejšemu habitatu",
+        nameEn:
+          "Radio Odeon (5 Feb 2026): The black olm of Bela krajina, 40 years after its discovery, towards a cleaner habitat",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://radio-odeon.com/novice/crni-moceril-v-beli-krajini-po-40-letih-od-odkritja-k-cistejsemu-habitatu/",
+        noteSi:
+          "Predstavitev Grehi preteklosti v Dobličah: na območju treh belokranjskih občin več kot 200 onesnaženih jam z več kot 1200 m³ odpadkov; habitat podvrste ≈ 3 km² na stiku Črnomaljskega ravnika in Poljanske gore.",
+        noteEn:
+          "The Sins of the Past presentation in Dobliče: more than 200 polluted caves with over 1,200 m³ of waste across the three Bela krajina municipalities; the subspecies' habitat ≈ 3 km² at the meeting of the Črnomelj karst plain and Poljanska gora.",
+      },
+      {
+        key: "odeon-protectus",
+        nameSi:
+          "Radio Odeon (29. 10. 2025): Podpora za zaščito črnega močerila in najpomembnejšega vira pitne vode Bele krajine",
+        nameEn:
+          "Radio Odeon (29 Oct 2025): Support for protecting the black olm and Bela krajina's most important drinking-water source",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://radio-odeon.com/novice/podpora-za-zascito-crnega-mocerila-in-najpomembnejsega-vira-pitne-vode-bele-krajine/",
+        noteSi:
+          "Projekt PROTEctUS Jamarskega kluba Novo mesto je na razpisu Obet za planeta (Gen-I) prejel 40.000 € za čiščenje in varovanje jamskih habitatov črnega močerila.",
+        noteEn:
+          "The PROTEctUS project of the Novo mesto Caving Club received €40,000 from the Obet za planet call (Gen-I) for cleaning and protecting the black olm's cave habitats.",
       },
     ],
   },
@@ -2206,15 +2270,15 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-rally-2025",
-        nameSi: "Radio Odeon (8. julij 2025): V Gribljah kolesarili kot nekoč",
-        nameEn: "Radio Odeon (8 July 2025): Cycling the old way in Griblje",
+        nameSi: "Radio Odeon (8. 7. 2025): V Gribljah kolesarili kot nekoč",
+        nameEn: "Radio Odeon (8 Jul 2025): Cycling the old way in Griblje",
         sourceType: "objava",
         license: "navedi vir / cite the source",
-        url: "https://www.radio-odeon.com/",
+        url: "https://radio-odeon.com/novice/v-gribljah-kolesarili-kot-nekoc/",
         noteSi:
-          "Prejšnja izvedba rallyja: približno 65 kolesarjev iz sedmih društev; globlja povezava ni dosegljiva (dostop 403), navedba po naslovu članka.",
+          "Tradicionalni rally starodobnih kolesarjev: TD Griblje v sodelovanju s Sekcijo Torpedo; kolesarjenje »kot nekoč« po vaških cestah.",
         noteEn:
-          "The previous edition of the rally: about 65 cyclists from seven societies; the deep link is unreachable (403), cited by the article title.",
+          "The traditional rally of vintage cyclists: TD Griblje together with the Torpedo Section; cycling »the old way« along the village roads.",
       },
       {
         key: "vaskanal-kolesa-2017",
@@ -2336,11 +2400,11 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-ljudje-serija",
-        nameSi: "Radio Odeon — arhiv rubrike Ljudje ob Kolpi",
-        nameEn: "Radio Odeon — the archive of the People by the Kolpa series",
+        nameSi: "Radio Odeon — arhiv rubrike Ljudje ob Kolpi (iskalni arhiv serije)",
+        nameEn: "Radio Odeon — the archive of the People by the Kolpa series (the series' search archive)",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://www.radio-odeon.com/",
+        url: "https://radio-odeon.com/iskanje/?q=Ljudje%20ob%20Kolpi",
         noteSi:
           "Redna rubrika z življenjepisi ljudi z obeh bregov Kolpe — vir, ki mu muzej dolguje serijo portretov.",
         noteEn:
@@ -2416,11 +2480,11 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-ljudje-serija-dragos",
-        nameSi: "Radio Odeon — arhiv rubrike Ljudje ob Kolpi",
-        nameEn: "Radio Odeon — the archive of the People by the Kolpa series",
+        nameSi: "Radio Odeon — arhiv rubrike Ljudje ob Kolpi (iskalni arhiv serije)",
+        nameEn: "Radio Odeon — the archive of the People by the Kolpa series (the series' search archive)",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://www.radio-odeon.com/",
+        url: "https://radio-odeon.com/iskanje/?q=Ljudje%20ob%20Kolpi",
         noteSi: "Rubrika, v kateri je Dragošev portret nastal — serija portretov obkolpskih ljudi.",
         noteEn: "The column in which Dragoš's portrait appeared — the series of portraits of people by the Kolpa.",
       },
@@ -3016,11 +3080,11 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-ljudje-serija-gasperic",
-        nameSi: "Radio Odeon — arhiv rubrike Ljudje ob Kolpi",
-        nameEn: "Radio Odeon — the archive of the People by the Kolpa series",
+        nameSi: "Radio Odeon — arhiv rubrike Ljudje ob Kolpi (iskalni arhiv serije)",
+        nameEn: "Radio Odeon — the archive of the People by the Kolpa series (the series' search archive)",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://www.radio-odeon.com/",
+        url: "https://radio-odeon.com/iskanje/?q=Ljudje%20ob%20Kolpi",
         noteSi: "Serija portretov, iz katere izhaja tudi ta zapis.",
         noteEn: "The series of portraits from which this record also derives.",
       },
@@ -3548,11 +3612,12 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-pasuljada-kopalisce",
-        nameSi: "Radio Odeon — Pasuljada v Gribljah (TD Griblje, Društvo kmečkih žena in kopališče Griblje)",
-        nameEn: "Radio Odeon — The Pasuljada at Griblje (the Tourist Society, the Farm Women's Society and the Griblje bathing place)",
+        nameSi:
+          "Radio Odeon (26. 8. 2024): Tradicionalna Pasuljada v Gribljah — 11 ekip, tekmovanje TD Griblje v kuhanju pasulja",
+        nameEn: "Radio Odeon (26. 8. 2024): The traditional Pasuljada at Griblje — 11 teams, the Tourist Society Griblje's bean-cooking contest",
         sourceType: "objava",
         license: "avtorsko delo / copyrighted (navedba)",
-        url: "https://www.radio-odeon.com/",
+        url: "https://radio-odeon.com/novice/tradicionalna-pasuljada-v-gribljah/",
         noteSi: "Kopališče kot soorganizator poletnih prireditev vasi.",
         noteEn: "The bathing place as co-organiser of the village's summer events.",
       },
@@ -3617,13 +3682,31 @@ export const seedExhibits: SeedExhibit[] = [
       },
       {
         key: "odeon-vranov-let",
-        nameSi: "Radio Odeon — spominska slovesnost Vranov let (vsakoletni spominski povratek k letališčem ob Kolpi)",
-        nameEn: "Radio Odeon — the Vranov let memorial ceremony (the annual return to the airfields by the Kolpa)",
+        nameSi:
+          "Radio Odeon (27. 9. 2025): Premier Golob na spominski slovesnosti Vranov let — 81. obletnica osvoboditve 87 zavezniških vojnih ujetnikov",
+        nameEn:
+          "Radio Odeon (27 Sep 2025): PM Golob at the Vranov let memorial ceremony — the 81st anniversary of the liberation of 87 Allied POWs",
         sourceType: "spletni-vir",
         license: "avtorsko delo / copyrighted (navedba)",
-        url: "https://www.radio-odeon.com/",
-        noteSi: "Letna slovesnost ob ohranitvi spomina na zračni most.",
-        noteEn: "The annual ceremony keeping the airlift's memory.",
+        url: "https://radio-odeon.com/novice/premier-golob-na-spominski-slovesnosti-vranov-let/",
+        noteSi:
+          "Letna slovesnost na letališču Otok; Golob: majhen narod v Evropi napiše veliko zgodbo.",
+        noteEn:
+          "The annual ceremony at the Otok airfield; Golob: a small nation can write a great story in Europe.",
+      },
+      {
+        key: "odeon-letalo-sredi-polj",
+        nameSi:
+          "Radio Odeon (14. 6. 2026): Letalo sredi polj — Dakota stoji v čast partizanskima letališčema Picadilly Hope in Picadilly Hope A",
+        nameEn:
+          "Radio Odeon (14 Jun 2026): An aircraft amid the fields — the Dakota stands in honour of the Picadilly Hope and Picadilly Hope A partisan airfields",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://radio-odeon.com/novice/letalo-sredi-polj/",
+        noteSi:
+          "Prek 800 zavezniških pilotov, več kot 2000 žensk, otrok in starejših, 1473 ranjenih partizanov; osvobojeni ujetniki iz Ožbolta so 273 km peš hodili do letališča Otok (odlet 17. 9. 1944).",
+        noteEn:
+          "Over 800 Allied pilots, more than 2,000 women, children and elderly, 1,473 wounded partisans; the freed Ožbalt prisoners walked 273 km on foot to the Otok airfield (flown out 17 Sep 1944).",
       },
     ],
   },
@@ -3719,11 +3802,13 @@ export const seedExhibits: SeedExhibit[] = [
     sources: [
       {
         key: "rtv-zracni-most",
-        nameSi: "RTV SLO (27. 4. 2025): ob 80. obletnici — evakuacija 2041 ljudi z letališča Krasinec v 48 urah; knjiga Ilinke Todorovski Zračni most (2025); Alma Karlin med evakuiranci",
-        nameEn: "RTV SLO (27 Apr 2025): at the 80th anniversary — the evacuation of 2041 people from the Krasinec airfield in 48 hours; Ilinka Todorovski's book Zračni most (2025); Alma Karlin among the evacuees",
+        nameSi:
+          "RTV SLO (27. 4. 2025): Nenavadna zgodba evakuiranih iz Bele krajine pred koncem vojne — z zavezniškimi letali v Dalmacijo; 2041 ljudi iz Krasinca v 48 urah; knjiga Ilinke Todorovski Zračni most (2025); Alma Karlin med evakuiranci",
+        nameEn:
+          "RTV SLO (27 Apr 2025): The unusual story of those evacuated from Bela krajina before the war's end — by Allied aircraft to Dalmatia; 2041 people from Krasinec in 48 hours; Ilinka Todorovski's book Zračni most (2025); Alma Karlin among the evacuees",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://www.rtvslo.si/",
+        url: "https://www.rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
         noteSi: "Število evakuirancev, časovni okvir, tipi letal in usoda Alme Karlin.",
         noteEn: "The number of evacuees, the time frame, the aircraft types and Alma Karlin's fate.",
       },
@@ -4480,11 +4565,11 @@ export const seedExhibits: SeedExhibit[] = [
     sources: [
       {
         key: "odeon-rubrika",
-        nameSi: "Radio Odeon — rubrika Ljudje ob Kolpi (serija življenjepisov, avtor Boris Grabrijan)",
-        nameEn: "Radio Odeon — the column People by the Kolpa (a series of biographies, author Boris Grabrijan)",
+        nameSi: "Radio Odeon — rubrika Ljudje ob Kolpi (serija življenjepisov, avtor Boris Grabrijan; iskalni arhiv)",
+        nameEn: "Radio Odeon — the column People by the Kolpa (a series of biographies, author Boris Grabrijan; search archive)",
         sourceType: "spletni-vir",
         license: "avtorsko delo / copyrighted (navedba)",
-        url: "https://www.radio-odeon.com/",
+        url: "https://radio-odeon.com/iskanje/?q=Ljudje%20ob%20Kolpi",
         noteSi: "Redna rubrika z življenjepisi osebnosti obkolpskega sveta; primarni vir številnih zapisov te zbirke.",
         noteEn: "A regular column of biographies of Kolpa-world figures; the primary source of many records in this collection.",
       },
