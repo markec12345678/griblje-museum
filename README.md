@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 60/60 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 60/60 (povprečno ~292) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 60/60 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 260 skupaj (povprečno 4,3) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 60/60 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 67/67 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 67/67 (povprečno ~291) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 67/67 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 278 skupaj (povprečno 4,2) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 67/67 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -94,10 +94,19 @@ pesem pozemeljske fare po Matičkovem zapisu; živo le še v Adlešiški fari), 
 travniki, ponikanje Kolpe — najbolj suh kraj Bele krajine ob najbolj darežljivi reki)
 in **etimologija gribljati** (ime vasi = brazda; urbarji Grüble, Šimec 2001) — zbirka
 60 zapisov / 260 virov.
+Enajsti sklop **Vas, ki se spominja same sebe** (60 → 67 zapisov / 278 virov):
+**Turistično društvo Griblje** (držitelj vaškega koledarja — Pasuljada, Kavbojski žur,
+rally starodobnih koles — in nosilec tega muzeja), **Gribeljci po svetu 2019** (srečanje
+izseljenske vasi ob 130-letnici šole), **Ko se ptički ženijo** (obujeno gregorjevo 2026 s
+priznanji za najboljši kruh vaških pekaric), **Ciril Totter** (ekološka kmetija na Jandrečetovi
+domačiji; maratonc), **praznik KS 2024** (prvi po desetletjih; nagovor 89-letnega dr. Brinca,
+odprtje spominske sobe), **Ljudje ob Kolpi** (radijska rubrika Borisa Grabrijana kot današnji
+zapisovalec vasi — primarni vir polovice zbirke) in **Valvasor 1689** (Slava vojvodine
+Kranjske — prva tiskana knjiga, ki pozna Črnomelj z okolico) — zbirka 67 zapisov / 278 virov.
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 60 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 67 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -232,7 +241,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 60 zapisov, 260 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 67 zapisov, 278 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 

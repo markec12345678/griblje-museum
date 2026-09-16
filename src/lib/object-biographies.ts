@@ -3211,6 +3211,280 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "td-griblje",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "21. stoletje",
+        yearLabelEn: "21st century",
+        sortYear: 2004,
+        textSi:
+          "Turistično društvo Griblje zrase ob koledarju vasi — Pasuljada sega vsaj v leto 2004 (16. izvedba 2019).",
+        textEn:
+          "The Griblje Tourist Society grows with the village calendar — the Pasuljada reaches back at least to 2004 (16th edition in 2019).",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "19. junij 2019",
+        yearLabelEn: "19 June 2019",
+        sortYear: 2019,
+        textSi:
+          "TD skupaj s krajevno skupnostjo pripravi srečanje vseh Gribeljcev po svetu ob 130-letnici šole.",
+        textEn:
+          "The TD, with the local community, prepares the reunion of Griblje people worldwide at the school's 130th anniversary.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Društvo drži poletni koledar (Pasuljada, Kavbojski žur, rally starodobnih koles z ustavljanjem v cerkvi in stari šoli) in nosi digitalni muzej vasi.",
+        textEn:
+          "The society holds the summer calendar (Pasuljada, Cowboy Party, vintage-bicycle rally with stops at the church and the old school) and carries the village's digital museum.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+    ],
+  },
+  {
+    slug: "gribeljci-po-svetu-2019",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1889 → 2019",
+        yearLabelEn: "1889 → 2019",
+        sortYear: 1889,
+        textSi:
+          "Šolo blagoslovijo novembra 1889; skozi njene klopi gre vse, kar ima vas — tudi tisti, ki bodo odšli po svet.",
+        textEn:
+          "The school is blessed in November 1889; through its benches passes everything the village has — including those who will go out into the world.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "19. junij 2019",
+        yearLabelEn: "19 June 2019",
+        sortYear: 2019,
+        textSi:
+          "Ob 130-letnici se vrneta vsi Gribeljci po svetu; sedanji in nekdanji učenci pokažejo, kako je bilo v klopeh nekoč in kako danes.",
+        textEn:
+          "At the 130th anniversary all the world's Griblje people return; present and former pupils show how the benches once were and how they are today.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Šola šteje 17 učencev in je edina slovenska vas s lastno podružnico; muzej išče seznam udeležencev srečanja 2019.",
+        textEn:
+          "The school counts 17 pupils and is the only Slovene village with its own branch school; the museum seeks the 2019 reunion's attendance list.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+    ],
+  },
+  {
+    slug: "ko-se-pticki-zenijo",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "od nekdaj",
+        yearLabelEn: "time immemorial",
+        sortYear: 1900,
+        textSi:
+          "Gregorjevo 12. marca: po vodi spustijo čolne in mline — gregorječek odplavi na jug in odpre pomladi pot.",
+        textEn:
+          "Gregorjevo on 12 March: boats and little mills are launched on the water — little Gregory sails south and opens the road for spring.",
+        evidenceStatus: "TRADITION",
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "15. marec 2026",
+        yearLabelEn: "15 March 2026",
+        sortYear: 2026,
+        textSi:
+          "PŠ Griblje in KS obudita običaj v gasilskem domu: učenci, skeč KTŠD Stari trg, Country Roses — in priznanja za najboljši kruh vaških pekaric.",
+        textEn:
+          "The Griblje school and local community revive the custom in the fire station hall: pupils, a sketch by the Stari trg drama group, Country Roses — and awards for the village bakers' best bread.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "naslednja leta",
+        yearLabelEn: "the years ahead",
+        sortYear: 2027,
+        textSi:
+          "Koledar, ki se je enkrat oglasil, upajo, da bo štel naprej; muzej išče recept zmagovalnega kruha 2026.",
+        textEn:
+          "A calendar that has spoken once, they hope, will keep counting; the museum seeks the recipe of the winning loaf of 2026.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "ciril-totter",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "19. stoletje → danes",
+        yearLabelEn: "19th century → today",
+        sortYear: 1873,
+        textSi:
+          "Domačija Jandrečih v Gribljah: osmih otrok, ki jih je plug spravil v svet — Matija v Teksas, Jakob v Minnesoto.",
+        textEn:
+          "The Jandreči homestead in Griblje: eight children whom the plough sent into the world — Matija to Texas, Jakob to Minnesota.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Ciril Totter z družino ekološko kmetuje na stari domačiji, predeluje na domu, opravlja storitve — in teče maratone.",
+        textEn:
+          "Ciril Totter and his family farm ecologically on the old homestead, process at home, run services — and run marathons.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "praznik-ks-2024",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1941 → 2024",
+        yearLabelEn: "1941 → 2024",
+        sortYear: 1941,
+        textSi:
+          "September 1941: napad na italijanske mejne policiste shrani vas v vihar okupacije; spomin se prenaša tiho, desetletja.",
+        textEn:
+          "September 1941: the attack on the Italian border police plunges the village into the storm of occupation; the memory is carried quietly, for decades.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "15. september 2024",
+        yearLabelEn: "15 September 2024",
+        sortYear: 2024,
+        textSi:
+          "Prvi praznik KS po desetletjih: spomin na 1941, nagovor 89-letnega dr. Brinca z življenjskimi spomini, odprtje spominske sobe.",
+        textEn:
+          "The local community's first festival in decades: the memory of 1941, an address by the 89-year-old dr. Brinc with his life memories, the opening of the memorial room.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Spominska soba dr. Brinca v gasilskem domu hrani zgodbo dobrote (~200.000 € darov); muzej išče njen popis.",
+        textEn:
+          "The dr. Brinc memorial room in the fire station hall keeps the story of generosity (~€200,000 in gifts); the museum seeks its inventory.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "ljudje-ob-kolpi",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "2020-ta",
+        yearLabelEn: "2020s",
+        sortYear: 2020,
+        textSi:
+          "Radio Odeon iz Črnomlja prične objavljati rubriko Ljudje ob Kolpi — življenjepisi obkolpskih osebnosti ob obletnicah.",
+        textEn:
+          "Radio Odeon of Črnomelj begins publishing the column People by the Kolpa — biographies of Kolpa-world figures on anniversaries.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Rubrika postane primarni vir te zbirke: Dragoš, Totterji, Barle, Dular, Gašperič, Kambič — vsak zapis citira svojo objavo.",
+        textEn:
+          "The column becomes this collection's primary source: Dragoš, the Totters, Barle, Dular, Gašperič, Kambič — each record cites its publication.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Muzej zbira arhiv rubrike: naslove, datume, predvajanja — radijski val ne pusti lista, zato je shranjevanje muzejsko dejanje.",
+        textEn:
+          "The museum collects the column's archive: titles, dates, airings — a radio wave leaves no leaf, so keeping it is a museum act.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "valvasor-1689",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1689",
+        yearLabelEn: "1689",
+        sortYear: 1689,
+        textSi:
+          "V Nürnbergu izide Die Ehre des Herzogthums Crain — štirje zvezki, 3532 strani, 528 bakrorezov; med njimi Črnomelj z okolico.",
+        textEn:
+          "Die Ehre des Herzogthums Crain appears in Nuremberg — four volumes, 3,532 pages, 528 copperplates; among them Črnomelj and surroundings.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "po 1689",
+        yearLabelEn: "after 1689",
+        sortYear: 1690,
+        textSi:
+          "Valvasor za knjigo zapravi premoženje — Bogenšperk proda, umre revno; dežela ostane zapisana, mož plačan.",
+        textEn:
+          "Valvasor spends his fortune on the book — sells Bogenšperk, dies poor; the land remains written down, the man paid for it.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Digitalizirani izvodi so prosti; muzej išče natančen citat o Črnomlju z okolico in ga bo dodal tej zbirki.",
+        textEn:
+          "Digitised copies are free; the museum seeks the exact passage on Črnomelj and surroundings and will add it to this collection.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {
