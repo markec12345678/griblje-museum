@@ -51,6 +51,15 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/zvon.jpg": { width: 1400, height: 1400 },
   "/images/authentic/brinc-krovska.jpg": { width: 684, height: 1083 },
   "/images/authentic/kavboji-oprava.jpg": { width: 900, height: 759 },
+  // 10. sklop: Zapisovalci vasi in njeno leto (2026-09-16)
+  "/images/authentic/pisanice.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/kres.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/zganje.jpg": { width: 751, height: 744 },
+  "/images/authentic/kolpa-dolina.jpg": { width: 2000, height: 1075 },
+  "/images/authentic/dular-muzej.jpg": { width: 456, height: 813 },
+  "/images/authentic/oranje-voli.jpg": { width: 861, height: 645 },
+  "/images/authentic/balmorhea.jpg": { width: 1400, height: 859 },
+  "/images/authentic/orgle.jpg": { width: 1100, height: 1650 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };

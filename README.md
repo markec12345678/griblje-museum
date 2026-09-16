@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 52/52 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 52/52 (povprečno ~290) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 44/44 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 235 skupaj (povprečno 4,5) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 44/44 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 60/60 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 60/60 (povprečno ~292) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 60/60 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 260 skupaj (povprečno 4,3) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 60/60 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -81,10 +81,23 @@ digitalnega muzeja — Slovenski šolski muzej, zapisi šolskega leta 1949/50),
 (spominska knjiga SV. VID GRIBLJE) — ter novi dogodek **Sto let PGD Griblje
 (1927–2027)**; popravljen pa je bil napačen razmik med Kambičem (1889) in
 Katarininim zapisom (1894/95) — isti desetletji, ne stoletje.
+Deseti sklop **Zapisovalci vasi in njeno leto** (52 → 60 zapisov / 260 virov):
+**Matija Totter — Jandreč Matiček** (kmet-ljubiteljski etnolog, ki je za Barleta in
+Županiča zapisal ženitovanjske običaje, križevo in kresno pesem — pot ga je vodila
+od zavrnitve v Novem mestu do bombažne farme v Teksasu; sin biokemik AEC),
+**Janko Barle** (duhovnik, etnolog, botanik in glasbenik z otroštvom v Podzemlju —
+prva študija pisanic 1893 in 3.000 slovenskih imen rastlin), **Jože Dular** (trideset
+let Belokranjskega muzeja; knjižica o Županičevi plošči v Gribljah), **belokranjske
+pisanice** (batik, register žive nesnovne dediščine 2012), **kresovanje** (kresna
+pesem pozemeljske fare po Matičkovem zapisu; živo le še v Adlešiški fari), **kuhanje
+žganja** (Matičetov etnografski posnetek 1949), **loke in studenci** (poplavni
+travniki, ponikanje Kolpe — najbolj suh kraj Bele krajine ob najbolj darežljivi reki)
+in **etimologija gribljati** (ime vasi = brazda; urbarji Grüble, Šimec 2001) — zbirka
+60 zapisov / 260 virov.
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 52 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 60 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -219,7 +232,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 52 zapisov, 235 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 60 zapisov, 260 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
