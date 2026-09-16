@@ -25,6 +25,7 @@ import { PersonalGallery } from "@/components/museum/personal-gallery";
 import { SlowLooking } from "@/components/museum/slow-looking";
 import { PuzzleDialog } from "@/components/museum/puzzle-dialog";
 import { PostcardDialog } from "@/components/museum/postcard-dialog";
+import { DetailCropper } from "@/components/museum/detail-cropper";
 import { parsePostcardParams, type PostcardData } from "@/lib/postcard";
 import type { PuzzleSize } from "@/lib/puzzle";
 import { getAdventIndex, isDoorUnlocked } from "@/lib/seasonal-shelf";
@@ -113,6 +114,10 @@ export function MuseumApp() {
   const [postcardExhibit, setPostcardExhibit] = React.useState<ExhibitDTO | null>(null);
   const [postcardInitial, setPostcardInitial] = React.useState<PostcardData | null>(null);
   const [pendingPostcard, setPendingPostcard] = React.useState<PostcardData | null>(null);
+
+  // Izreži detajl (Rijksstudio »Collect a detail«): izrez slike zapisa
+  // v Mojo zbirko — brez globe povezave, dejanje je vezano na obiskovalca.
+  const [detailExhibit, setDetailExhibit] = React.useState<ExhibitDTO | null>(null);
 
   const exhibitsQuery = useExhibits();
   const eventsQuery = useEvents();
@@ -755,6 +760,10 @@ export function MuseumApp() {
           setPostcardInitial(null);
           setPostcardExhibit(ex);
         }}
+        onDetail={(ex) => {
+          setSelectedExhibit(null);
+          setDetailExhibit(ex);
+        }}
         walkContext={walkContext}
       />
 
@@ -829,6 +838,12 @@ export function MuseumApp() {
           setPostcardExhibit(null);
           setPostcardInitial(null);
         }}
+      />
+
+      {/* Izreži detajl — izrez slike zapisa v Mojo zbirko (Rijksstudio) */}
+      <DetailCropper
+        exhibit={detailExhibit}
+        onClose={() => setDetailExhibit(null)}
       />
     </div>
   );

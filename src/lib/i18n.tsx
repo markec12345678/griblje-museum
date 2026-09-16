@@ -140,7 +140,7 @@ export const ui = {
       title1: "Vas kot",
       titleAccent: "muzej.",
       subtitle:
-        "Zbirka 67 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
+        "Zbirka 69 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
       ctaCollection: "Razišči zbirko",
       ctaMap: "Odpri zemljevid",
       ctaGuide: "Vprašaj vodnika",
@@ -402,7 +402,7 @@ export const ui = {
     guide: {
       openLabel: "Pogovor z zbirko (Ctrl+G)",
       title: "Pogovor z zbirko",
-      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 67 kuriranih zapisih.",
+      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 69 kuriranih zapisih.",
       aiBadge: "AI vodnik",
       disclaimer: "Umetna inteligenca sestavlja odgovore samo iz zapisov zbirke; navedeni zapisi so vedno pravi. Muzej ne izmišljuje zgodovine.",
       startersTitle: "S čim začnemo?",
@@ -440,6 +440,34 @@ export const ui = {
       downloadImageTitle:
         "Slika zapisa je prosta za rabo (Creative Commons ali javna last) — prenos vključuje navedbo avtorja. Vzorec: Rijksmuseum, odprti dostop.",
     },
+    detail: {
+      open: "Izreži detajl",
+      title: "Izrežite detajl slike",
+      desc: "Izberite del slike, ki vam je najbolj všeč — shranili ga boste v svojo zbirko.",
+      canvasLabel: "Platno za izbiro detajla",
+      hint: "Potegnite po sliki za novo izbiro; izbiro premikajte z vlečenjem, vogale razširjajte.",
+      keyboard:
+        "Tipkovnica: puščice premikajo izbiro, tipki plus in minus jo povečata oz. pomanjšata, Delete jo odstrani.",
+      startHint: "Potegnite po sliki, da izberete detajl.",
+      selected: "Izbrano",
+      save: "Shrani detajl",
+      saved: "Detajl je shranjen v Mojo zbirko",
+      reset: "Počisti izbiro",
+      nwHandle: "Ročaj zgornjega levega kota",
+      neHandle: "Ročaj zgornjega desnega kota",
+      swHandle: "Ročaj spodnjega levega kota",
+      seHandle: "Ročaj spodnjega desnega kota",
+      myTitle: "Moji detajli",
+      mySub:
+        "Izrezi slik, ki ste jih sami izbrali — vsak vsebuje povezavo nazaj na zapis (vzorec: Rijksstudio).",
+      count: (n: number) =>
+        n === 1 ? "1 detajl" : n === 2 ? "2 detajla" : n >= 3 && n <= 4 ? `${n} detajli` : `${n} detajlov`,
+      emptyTitle: "Še ni izreza, ki bi bil samo vaš",
+      emptyText:
+        "Odprite kateri koli zapis in izberite »Izreži detajl« — del slike, ki vam je najbolj všeč, se bo shranil tukaj.",
+      remove: "Odstrani detajl",
+      openExhibit: "Odpri zapis detajla",
+    },
     walks: {
       sectionTitle: "Muzejski sprehodi",
       sectionSub:
@@ -448,7 +476,7 @@ export const ui = {
         n === 1 ? "1 postaja" : n >= 2 && n <= 4 ? `${n} postaje` : `${n} postaj`,
       minutes: (n: number) => `≈ ${n} min`,
       start: "Začni sprehod",
-      coverNote: "Sprehodi skupaj pokrivajo vseh 67 zapisov zbirke.",
+      coverNote: "Sprehodi skupaj pokrivajo vseh 69 zapisov zbirke.",
       completed: "Zaključen",
       completedProgress: (done: number, total: number) =>
         `Zaključeni sprehodi: ${done} od ${total}`,
@@ -681,7 +709,7 @@ export const ui = {
       title: "Adventni koledar muzeja",
       subtitle:
         "Od 1. do 24. decembra se vsak dan odpre ena vrata zbirke — po vzoru adventnih koledarjev Glencairn Museuma in Ashmoleana. Določenega dne odpre vsak obiskovalec isti zapis.",
-      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 67.",
+      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 69.",
       openDoor: "Odpri vrata",
       doorLocked: "Vrata so še zaprta",
       opensIn: "Odpre se čez {n} dni",
@@ -1045,7 +1073,7 @@ export const ui = {
       title1: "A village as",
       titleAccent: "a museum.",
       subtitle:
-        "Sixty-seven records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
+        "Sixty-nine records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
       ctaCollection: "Explore the collection",
       ctaMap: "Open the map",
       ctaGuide: "Ask the guide",
@@ -1306,7 +1334,7 @@ export const ui = {
     guide: {
       openLabel: "Talk to the collection (Ctrl+G)",
       title: "Talk to the collection",
-      subtitle: "Ask the museum guide — answers are grounded in 67 curated records.",
+      subtitle: "Ask the museum guide — answers are grounded in 69 curated records.",
       aiBadge: "AI guide",
       disclaimer: "Artificial intelligence builds answers only from the collection records; cited records are always real. The museum invents no history.",
       startersTitle: "Where shall we start?",
@@ -1344,6 +1372,33 @@ export const ui = {
       downloadImageTitle:
         "This record's image is free to use (Creative Commons or public domain) — keep the credit with it. Pattern: Rijksmuseum open access.",
     },
+    detail: {
+      open: "Collect a detail",
+      title: "Crop a detail of the image",
+      desc: "Choose the part of the image you like best — it will be saved to your collection.",
+      canvasLabel: "Detail selection canvas",
+      hint: "Drag across the image for a new selection; drag inside it to move, drag the corner handles to resize.",
+      keyboard:
+        "Keyboard: arrow keys move the selection, plus and minus grow or shrink it, Delete removes it.",
+      startHint: "Drag across the image to select a detail.",
+      selected: "Selected",
+      save: "Save detail",
+      saved: "Detail saved to My collection",
+      reset: "Clear selection",
+      nwHandle: "Top-left corner handle",
+      neHandle: "Top-right corner handle",
+      swHandle: "Bottom-left corner handle",
+      seHandle: "Bottom-right corner handle",
+      myTitle: "My details",
+      mySub:
+        "Crops of images you chose yourself — each links back to its record (Rijksstudio pattern).",
+      count: (n: number) => (n === 1 ? "1 detail" : `${n} details`),
+      emptyTitle: "No detail that is only yours yet",
+      emptyText:
+        "Open any record and choose “Collect a detail” — the part of the image you like best will be saved here.",
+      remove: "Remove detail",
+      openExhibit: "Open the detail's record",
+    },
     walks: {
       sectionTitle: "Museum walks",
       sectionSub:
@@ -1351,7 +1406,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stop" : `${n} stops`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Start the walk",
-      coverNote: "Together the walks cover all 67 records of the collection.",
+      coverNote: "Together the walks cover all 69 records of the collection.",
       completed: "Completed",
       completedProgress: (done: number, total: number) =>
         `Completed walks: ${done} of ${total}`,
@@ -1583,7 +1638,7 @@ export const ui = {
       title: "The museum's advent calendar",
       subtitle:
         "From 1 to 24 December one door of the collection opens each day — after the advent calendars of Glencairn Museum and the Ashmolean. On a given day every visitor opens the same record.",
-      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 67 pieces.",
+      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 69 pieces.",
       openDoor: "Open door",
       doorLocked: "Door still closed",
       opensIn: "Opens in {n} days",
@@ -1945,7 +2000,7 @@ export const ui = {
       title1: "Selo kao",
       titleAccent: "muzej.",
       subtitle:
-        "Šezdeset i sedam zapisa, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
+        "Šezdeset i devet zapisa, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
       ctaCollection: "Istraži zbirku",
       ctaMap: "Otvori zemljovid",
       ctaGuide: "Pitaj vodiča",
@@ -2206,7 +2261,7 @@ export const ui = {
     guide: {
       openLabel: "Razgovor sa zbirkom (Ctrl+G)",
       title: "Razgovor sa zbirkom",
-      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 67 kuriranih zapisa.",
+      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 69 kuriranih zapisa.",
       aiBadge: "AI vodič",
       disclaimer: "Umjetna inteligencija sastavlja odgovore samo iz zapisa zbirke; navedeni zapisi uvijek su pravi. Muzej ne izmišlja povijest.",
       startersTitle: "Čime počinjemo?",
@@ -2244,6 +2299,33 @@ export const ui = {
       downloadImageTitle:
         "Slika zapisa slobodna je za uporabu (Creative Commons ili javna last) — preuzimanje uključuje navod autora. Uzor: Rijksmuseum, otvoreni pristup.",
     },
+    detail: {
+      open: "Izreži detalj",
+      title: "Izrežite detalj slike",
+      desc: "Odaberite dio slike koji vam se najviše sviđa — bit će spremljen u vašu zbirku.",
+      canvasLabel: "Platno za odabir detalja",
+      hint: "Povucite po slici za novi odabir; odabir premještajte povlačenjem, kutove proširujte.",
+      keyboard:
+        "Tipkovnica: strelice premještaju odabir, tipke plus i minus povećavaju ga ili smanjuju, Delete ga uklanja.",
+      startHint: "Povucite po slici da odaberete detalj.",
+      selected: "Odabrano",
+      save: "Spremi detalj",
+      saved: "Detalj je spremljen u Moju zbirku",
+      reset: "Očisti odabir",
+      nwHandle: "Ručica gornjeg lijevog kuta",
+      neHandle: "Ručica gornjeg desnog kuta",
+      swHandle: "Ručica donjeg lijevog kuta",
+      seHandle: "Ručica donjeg desnog kuta",
+      myTitle: "Moji detalji",
+      mySub:
+        "Izrezi slika koje ste sami odabrali — svaki sadrži poveznicu natrag na zapis (uzor: Rijksstudio).",
+      count: (n: number) => (n === 1 ? "1 detalj" : n <= 4 ? `${n} detalja` : `${n} detalja`),
+      emptyTitle: "Još nema izreza koji je samo vaš",
+      emptyText:
+        "Otvorite bilo koji zapis i odaberite »Izreži detalj« — dio slike koji vam se najviše sviđa bit će ovdje spremljen.",
+      remove: "Ukloni detalj",
+      openExhibit: "Otvori zapis detalja",
+    },
     walks: {
       sectionTitle: "Muzejske šetnje",
       sectionSub:
@@ -2251,7 +2333,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stanica" : n <= 4 ? `${n} stanice` : `${n} stanica`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Započni šetnju",
-      coverNote: "Šetnje zajedno pokrivaju svih 67 zapisa zbirke.",
+      coverNote: "Šetnje zajedno pokrivaju svih 69 zapisa zbirke.",
       completed: "Završeno",
       completedProgress: (done: number, total: number) =>
         `Završene šetnje: ${done} od ${total}`,
@@ -2483,7 +2565,7 @@ export const ui = {
       title: "Adventski kalendar muzeja",
       subtitle:
         "Od 1. do 24. prosinca svaki se dan otvaraju jedna vrata zbirke — po uzoru na adventske kalendare Glencairn muzeja i Ashmoleana. Određenoga dana svaki posjetitelj otvara isti zapis.",
-      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 67.",
+      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 69.",
       openDoor: "Otvori vrata",
       doorLocked: "Vrata su još zatvorena",
       opensIn: "Otvaraju se za {n} dana",

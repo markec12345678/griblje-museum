@@ -20,7 +20,8 @@ export type StatKind =
   | "guide"
   | "audio"
   | "ar"
-  | "download";
+  | "download"
+  | "detail";
 
 const VISIT_GUARD = "mvg-stats-visit";
 const READONLY_FLAG = "mvg-stats-readonly";

@@ -1227,6 +1227,16 @@ export const seedExhibits: SeedExhibit[] = [
         license: "javna informacija / public information",
         url: "https://www.etno-muzej.si/",
       },
+      {
+        key: "odeon-stavbna-dediscina",
+        nameSi: "Radio Odeon: Stavbna dediščina podeželja (16. 1. 2021)",
+        nameEn: "Radio Odeon: The building heritage of the countryside (16 January 2021)",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/stavbna-dediscina-podezelja/",
+        noteSi: "Domačije Bele krajine, Pokolpja in Žumberka: hiša, hlev s podom, kašča in vodnjak iz krajevnih materialov — “skladno sobivanje človeka z naravo”.",
+        noteEn: "The farmsteads of Bela krajina, Pokolpje and Žumberak: house, byre with a hallway, granary and well from local materials — “the harmonious coexistence of man and nature”.",
+      }
     ],
   },
   {
@@ -1414,6 +1424,16 @@ export const seedExhibits: SeedExhibit[] = [
         license: "CC BY-SA 4.0",
         url: "https://sl.wikipedia.org/wiki/Belokranjska_poga%C4%8Da",
       },
+      {
+        key: "odeon-kruh-spomin",
+        nameSi: "Radio Odeon: Kruha nikoli ne peče slabe volje (27. 5. 2026)",
+        nameEn: "Radio Odeon: Bread is never baked in a bad mood (27 May 2026)",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/kruha-nikoli-ne-pece-slabe-volje/",
+        noteSi: "Belokranjska kulinarična dediščina kot živo izročilo: Bernarda Kump iz Črnomlja obuja peko in zgodbe — hrana, ki je spomin, občutek in stik z domačostjo.",
+        noteEn: "Bela krajina's culinary heritage as a living tradition: Bernarda Kump of Črnomelj revives baking and stories — food as memory, feeling and the touch of home.",
+      }
     ],
   },
   {
@@ -1938,6 +1958,16 @@ export const seedExhibits: SeedExhibit[] = [
         license: "CC BY-NC (Kamra)",
         url: "https://www.kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju/",
       },
+      {
+        key: "odeon-vaja-evakuacija",
+        nameSi: "Radio Odeon: Vaja evakuacije na podružnici Griblje (22. 11. 2024)",
+        nameEn: "Radio Odeon: An evacuation drill at the Griblje school branch (22 November 2024)",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje/",
+        noteSi: "Podružnica v praksi: vodja Marjetka Žunič, zvonec, zbirno mesto, gasilci PGD Griblje in PGD Adlešiči — šola, ki se varnosti uči z vajo.",
+        noteEn: "The branch school in practice: head Marjetka Žunič, the bell, the assembly point, the firefighters of PGD Griblje and PGD Adlešiči — a school that teaches safety by rehearsing it.",
+      }
     ],
   },
   {
@@ -2016,6 +2046,16 @@ export const seedExhibits: SeedExhibit[] = [
         noteSi: "Društvo kot izdajatelj/soizdajatelj jubilejne knjižice.",
         noteEn: "The brigade as publisher/co-publisher of the jubilee booklet.",
       },
+      {
+        key: "odeon-pgd-vaja-2024",
+        nameSi: "Radio Odeon: Vaja evakuacije na podružnici Griblje (22. 11. 2024)",
+        nameEn: "Radio Odeon: An evacuation drill at the Griblje school branch (22 November 2024)",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje/",
+        noteSi: "Današnja praksa prostovoljnih gasilcev: PGD Griblje in PGD Adlešiči skupaj z Vinčevo vajo evakuacije šole (20. 11. 2024) — reševanje, gašenje, oskrba poškodovanca.",
+        noteEn: "Today's practice of the volunteer firefighters: PGD Griblje and PGD Adlešiči together in a school evacuation drill (20 November 2024) — rescue, firefighting, first aid.",
+      }
     ],
   },
   {
@@ -2944,6 +2984,16 @@ export const seedExhibits: SeedExhibit[] = [
         noteEn:
           "The newly arranged parking place by the church and the funeral vestibule — the Municipality of Črnomelj and the donor dr. Franc Brinc.",
       },
+      {
+        key: "odeon-brinc-90",
+        nameSi: "Radio Odeon: V Gribljah praznovali visok jubilej cenjenega rojaka — 90. rojstni dan dr. Franca Brinca (17. 4. 2025)",
+        nameEn: "Radio Odeon: A high jubilee of a respected fellow celebrated in Griblje — dr. Franc Brinc's 90th birthday (17 April 2025)",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka/",
+        noteSi: "Praznovanje 12. aprila 2025: svet KS Griblje, upravni odbor PGD Griblje in ŠD Griblje, župan Andrej Kavšek — zahvala za donacije, ki so nosile razvoj vasi.",
+        noteEn: "The celebration of 12 April 2025: the KS Griblje council, the boards of PGD Griblje and ŠD Griblje, mayor Andrej Kavšek — thanks for the donations that carried the village's development.",
+      }
     ],
   },
   {
@@ -3505,7 +3555,7 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/strucelj-kosec.jpg",
     imageCredit:
-      "Foto: Fran Vesel · Wikimedia Commons · javna last — kosec pri delu",
+      "Foto: Fran Vesel · Wikimedia Commons · javna last — kosec pri ročni košnji (ilustrativna fotografija dela iz Štrucljevega spomina; kmetija Štrucelj čaka na svojo)",
     yearFrom: 1950,
     featured: false,
     sources: [
@@ -3515,7 +3565,7 @@ export const seedExhibits: SeedExhibit[] = [
         nameEn: "Radio Odeon — People by the Kolpa: Alojz Štrucelj (30 August 2026)",
         sourceType: "objava",
         license: "avtorsko delo / copyrighted (navedba)",
-        url: "https://www.radio-odeon.com/novice/s-pesmijo-je-delo-lazje-steklo/",
+        url: "https://www.radio-odeon.com/novice/s-pesmijo-je-delo-lazje-steklo-vcasih-do-mraka-a-vedno-skupaj/",
         noteSi: "Družinska kmetija ~90 ha s prirejo mleka; citat o ročni košnji in molži.",
         noteEn: "The family farm of ~90 ha with milk production; the quotation on hand mowing and milking.",
       },
@@ -4638,6 +4688,127 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Jurij_Šubic_-_Janez_Vajkard_Valvasor.jpg"),
         noteSi: "Glavna slika zapisa: Valvasor — mož, ki je deželo zapisal v celoto in plačal z vsem.",
         noteEn: "The record's main image: Valvasor — the man who wrote the land down whole and paid for it with everything.",
+      },
+    ],
+  },
+  {
+    slug: "pecnica-susenje-sadja",
+    addedAt: "2026-09-16",
+    category: "gospodarstvo",
+    titleSi: "Pečnica za sušenje sadja — tovarna jesenskega dima",
+    titleEn: "The fruit-drying oven — the factory of autumn smoke",
+    periodSi: "tradicija 19.–20. stoletje · fotografija 1928",
+    periodEn: "a tradition of the 19th–20th centuries · photographed 1928",
+    summarySi:
+      "Jeseni so ob Kolpi dišali dim in pečene slive: pečnica za sušenje sadja je kmetiji delala shrambo za zimo. Na fotografiji Franca Vesela iz Adlešičev (1928) dela cela družina.",
+    summaryEn:
+      "In autumn the Kolpa valley smelled of smoke and baked plums: the fruit-drying oven turned the farm's harvest into a winter larder. In Fran Vesel's photograph from Adlešiči (1928) a whole family works.",
+    storySi:
+      "Jesen je ob Kolpi imela svojo tovarno: pečnico za sušenje sadja. Iz sadjarjevih vrtov so v njej sušili slive in jabolka — počasi, ob nizkem ognju, dneve in dneve — dokler ni iz košare sadja nastala polica suhih prstov, ki so jih imenovali pečene slive. Suho sadje je bilo zimska valuta: otroški prigrizek, priloga koruzi in fižolu, darilo, ki se je delilo po hlevih in po svatbah.\n\nFotografija, ki drži ta zapis, je dokument Franca Vesela iz leta 1928, posneta v Adlešičih — sosednji vasi ob Kolpi, šest kilometrov od Gribelj. Na njej dela cela družina: ženske pri razdeljevanju sadja, moški pri pečnici, otroci ob ladjah. Enako pečnico je nosila skoraj vsaka vaška domačija Bele krajine — tudi podrebrska sušilnica za sadje ob slavni lipi v Semiški občini je zapisana v isti spomin.\n\nZapis je označen kot tradicija, ne kot dokumentiran gribeljski primer: muzej iskreno priznava, da fotografija iz Gribelj samih še ni našel. Iščemo: zadnjo pečnico za sušenje sadja na Gribljah, ime zadnje sušilke sliv in recept za zimo, ki se je pisal z dimom. Vsak odgovor bo ta zapis pripeljal domov — kakor je ves ta muzej nastajal: en spomin naenkrat.",
+    storyEn:
+      "Autumn in the Kolpa valley had its own factory: the fruit-drying oven. From the orchards it dried plums and apples — slowly, over a low fire, day after day — until a basket of fruit became a shelf of dried 'fingers' the village called pečene slive, baked plums. Dried fruit was the winter currency: a child's treat, a companion to maize and beans, a gift shared at weddings and around the yards.\n\nThe photograph that holds this record is Fran Vesel's document from 1928, taken in Adlešiči — a neighbouring village on the Kolpa, six kilometres from Griblje. A whole family works in it: women sorting fruit, men at the oven, children by the ladders. Nearly every Bela krajina farmstead kept such an oven — the fruit-drying house by the famous linden at Podreber in the Semič municipality is remembered in the same breath.\n\nThe record is marked as tradition, not as a documented Griblje case: the museum honestly admits that a photograph from Griblje itself has not yet been found. We seek: the last fruit-drying oven at Griblje, the name of the last woman who dried plums, and the recipe for a winter that was written in smoke. Every answer will bring this record home — the way this whole museum has grown: one memory at a time.",
+    evidenceStatus: "TRADITION",
+    image: "/images/authentic/pecnica-susenje.jpg",
+    imageCredit:
+      "Foto: Fran Vesel, 1928 · Wikimedia Commons / Slovenski etnografski muzej · javna last — pečnica za sušenje sadja v Adlešičih (Bela krajina)",
+    yearFrom: 1928,
+    yearTo: 1928,
+    featured: false,
+    sources: [
+      {
+        key: "commons-pecnica",
+        nameSi: "Wikimedia Commons: pečnica za sušenje sadja v Adlešičih (fotograf: Fran Vesel, 1928)",
+        nameEn: "Wikimedia Commons: the fruit-drying oven at Adlešiči (photographer: Fran Vesel, 1928)",
+        sourceType: "fotografija",
+        license: "javna last / public domain (fotograf: Fran Vesel)",
+        url: WM("Pečnica_za_sušenje_sadja_v_Adlešičih.jpg"),
+        noteSi: "Glavna slika zapisa: avtentična fotografija sušenja sadja v sosednji vasi ob Kolpi — šest kilometrov od Gribelj.",
+        noteEn: "The record's main image: an authentic photograph of fruit drying in a neighbouring village on the Kolpa — six kilometres from Griblje.",
+      },
+      {
+        key: "ro-podreber-susilnica",
+        nameSi: "Radio Odeon: Semič v starih cajtih — podrebrska lipa in sušilnica za sadje (9. 7. 2026)",
+        nameEn: "Radio Odeon: Semič in the old times — the Podreber linden and the fruit-drying house (9 July 2026)",
+        sourceType: "objava",
+        license: "navedba vira",
+        url: "https://www.radio-odeon.com/novice/semic-v-starih-cajtih-574/",
+        noteSi: "Sušilnica za sadje kot sestavni del vaškega prostora Bele krajine: »Pod lipo je stala sušilnica za sadje.«",
+        noteEn: "The fruit-drying house as a standard part of the Bela krajina village space: “Under the linden stood the fruit-drying house.”",
+      },
+      {
+        key: "ro-stavbna-dediscina",
+        nameSi: "Radio Odeon: Stavbna dediščina podeželja (16. 1. 2021)",
+        nameEn: "Radio Odeon: The building heritage of the countryside (16 January 2021)",
+        sourceType: "objava",
+        license: "navedba vira",
+        url: "https://www.radio-odeon.com/novice/stavbna-dediscina-podezelja/",
+        noteSi: "Domačije Bele krajine, Pokolpja in Žumberka: poslopja, ki so rasla iz kraškega sveta in njemu prilagojenega kmetovanja.",
+        noteEn: "The farmsteads of Bela krajina, Pokolpje and Žumberak: buildings that grew out of the karst world and the farming shaped by it.",
+      },
+    ],
+  },
+  {
+    slug: "stari-zemljevidi",
+    addedAt: "2026-09-16",
+    category: "kraj",
+    titleSi: "Stari zemljevidi — kako je vas prišla na papir",
+    titleEn: "Old maps — how the village reached the paper",
+    periodSi: "1468–1843",
+    periodEn: "1468–1843",
+    summarySi:
+      "Griblach 1468, Grüble v urbarjih in na najstarejšem zemljevidu, karta vojvodine iz Valvasorjevega gradiva (1714) in Freyerjeva Special-Karte, ki je narisala vsako vas: pet stoletij, v katerih se je Griblje pisalo v svet.",
+    summaryEn:
+      "Griblach in 1468, Grüble in the urbaria and on the oldest map, a duchy map from Valvasor's material (1714) and Freyer's Special-Karte that drew every village: five centuries in which Griblje wrote itself into the world.",
+    storySi:
+      "Preden je vas obstajala na papirju, je obstajala v hoji. Leto 1468: na listini, ki jo hrani arhiv, se prvič pojavi ime Griblach; sledita Briglach (1490) in Griblah (1593). V urbarjih — seznamih davkov in dolžnosti — in na najstarejšem zemljevidu se ime piše Grüble. Vsak zapis je bil dejanje oblasti: kar je bilo zapisano, je bilo obdavčeno, obranjeno, branjeno.\n\nSlika, ki drži ta zapis, je iz zlatega obdobja te pismenosti: Tabula Ducatus Carnioliae, Vindorum Marchiae et Histriae — karta vojvodine Kranjske z Belo krajino (Vindorum Marchia, »Dežela vindijska«) in Istro, ki jo je leta 1714 izdelal slavni nugiški kartograf Johann Baptist Homann po gradivu Janeza Vajkarda Valvasorja. Eno list, na katerem je cela dežela: mokrača Cerkniškega jezera, gorovja, mesta — in na jugovzhodu, ob meji, ki jo riše Kolpa, dežela, v kateri leži tudi ta vas.\n\nZemljevidi so se nato drobili vedno globlje: leta 1843 je Henrik Freyer izdal Special-Karto vojvodine Kranjske — kartografski podvig, na katerem je vsaka vas dobila svoje ime in svoj prostor. Danes se isti pogled nadaljuje s satelita: zapis o številkah vasi nosi posnetek z Mednarodne vesoljske postaje. Od urbarja do orbite je isti domislej: kraj, ki ni zapisan, ni zastopan.\n\nMuzej išče: izvleček Special-Karte 1843 z imenom vasi v berljivi velikosti in digitaliziran urbar, v katerem stoji Grüble. Oba bosta pripeljala ta zapis korak bližje papirju, na katerem se je vse začelo.",
+    storyEn:
+      "Before the village existed on paper, it existed in walking. In 1468 a document kept in the archive first carries the name Griblach; Briglach (1490) and Griblah (1593) follow. In the urbaria — the registers of dues and duties — and on the oldest map the name is written Grüble. Every entry was an act of power: what was written down was taxed, tilled, defended.\n\nThe image that holds this record comes from the golden age of that literacy: the Tabula Ducatus Carnioliae, Vindorum Marchiae et Histriae — a map of the Duchy of Carniola with Bela krajina (the Windic March) and Istria, prepared in 1714 by the famous Nuremberg cartographer Johann Baptist Homann from the material of Janez Vajkard Valvasor. One sheet holding a whole country: the waters of Lake Cerknica, the mountains, the towns — and in the south-east, along the border drawn by the Kolpa, the land in which this village lies.\n\nThe maps then kept sharpening: in 1843 Henrik Freyer published his Special-Karte of the Duchy of Carniola — a cartographic feat on which every village received its name and its place. Today the same gaze continues from orbit: the record about the village in numbers carries a photograph from the International Space Station. From urbarium to orbit runs one idea: a place that is not written down is not represented.\n\nThe museum seeks: an excerpt of the 1843 Special-Karte with the village name in legible size, and a digitised urbarium carrying Grüble. Both will bring this record a step closer to the paper on which it all began.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/stari-zemljevid.jpg",
+    imageCredit:
+      "Bakrorez: Johann Baptist Homann (1663–1724) po gradivu Janeza Vajkarda Valvasorja · Wikimedia Commons · javna last — Tabula Ducatus Carnioliae, Vindorum Marchiae et Histriae (1714): Kranjska z Belo krajino (Vindorum Marchia) in Istro",
+    yearFrom: 1468,
+    yearTo: 1843,
+    featured: false,
+    sources: [
+      {
+        key: "wiki-griblje-ime",
+        nameSi: "Wikipedija: Griblje (ime vasi: Griblach 1468, urbarji in najstarejši zemljevid Grüble)",
+        nameEn: "Wikipedia: Griblje (the village name: Griblach 1468, the urbaria and the oldest map Grüble)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Griblje",
+        noteSi: "Zgodovina imena vasi: prvi zapis 1468 kot Griblach, v urbarjih in na najstarejšem zemljevidu Grüble.",
+        noteEn: "The history of the village name: first recorded in 1468 as Griblach, in the urbaria and on the oldest map as Grüble.",
+      },
+      {
+        key: "commons-homann",
+        nameSi: "Wikimedia Commons: Tabula Ducatus Carnioliae, Vindorum Marchiae et Histriae (Homann, 1714)",
+        nameEn: "Wikimedia Commons: Tabula Ducatus Carnioliae, Vindorum Marchiae et Histriae (Homann, 1714)",
+        sourceType: "zemljevid",
+        license: "javna last / public domain (kartograf: Johann Baptist Homann)",
+        url: WM("Tabula_Ducatus_Carnioliae,_Vindorum_Marchiae_et_Histriae.jpg"),
+        noteSi: "Glavna slika zapisa: karta vojvodine z Belo krajino (Vindorum Marchia), izdelana po Valvasorjevem gradivu.",
+        noteEn: "The record's main image: the duchy map with Bela krajina (the Windic March), drawn from Valvasor's material.",
+      },
+      {
+        key: "commons-freyer",
+        nameSi: "Wikimedia Commons: Special-Karte des Herzogthums Krain 1843 (Henrik Freyer; Digitalna knjižnica Slovenije)",
+        nameEn: "Wikimedia Commons: Special-Karte des Herzogthums Krain 1843 (Henrik Freyer; Digital Library of Slovenia)",
+        sourceType: "zemljevid",
+        license: "javna last / public domain (kartograf: Henrik Freyer)",
+        url: WM("Special-Karte_des_Herzogthums_Krain_1843.jpg"),
+        noteSi: "Special-Karta 1843: prva kartografska upodobitev Kranjske, na kateri ima vsaka vas svoje ime.",
+        noteEn: "The 1843 Special-Karte: the first cartographic rendering of Carniola on which every village carries its name.",
+      },
+      {
+        key: "simec-ime",
+        nameSi: "Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. 1. 2001",
+        nameEn: "Jože Šimec: The origin of the village name Griblje, Dolenjski list, 11 January 2001",
+        sourceType: "objava",
+        license: "navedba vira",
+        noteSi: "Članek o izvoru imena vasi (gribljati — brazdati, orati), naveden v virih Wikipedije.",
+        noteEn: "The article on the origin of the village name (gribljati — to furrow, to plough), cited in Wikipedia's sources.",
       },
     ],
   },

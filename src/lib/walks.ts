@@ -271,6 +271,13 @@ export const WALKS: Walk[] = [
           "»With a song the work flowed easier, sometimes until dusk, but always together.« The farm that grew from hand mowing into ninety hectares — the village's backbone.",
       },
       {
+        exhibitSlug: "pecnica-susenje-sadja",
+        noteSi:
+          "Iz kmetije v shrambo: pečnica za sušenje sadja je jeseni delala zimo — dim in pečene slive, valuta, ki je držala do pomladi.",
+        noteEn:
+          "From the farm into the larder: the fruit-drying oven worked the winter — smoke and baked plums, the currency that lasted until spring.",
+      },
+      {
         exhibitSlug: "kuhanje-zganja",
         noteSi:
           "Iz klete ob vinu še kapljica: jeseni je kuharija hodila od domačije do domačije — hruškovec in jabolkovec, zdravilo, darilo in denar v enem.",
@@ -290,6 +297,13 @@ export const WALKS: Walk[] = [
           "Zadnja postaja je začetek vsega: Valvasorjeva Slava vojvodine Kranjske (1689), prva tiskana knjiga, ki pozna ta konec. Sprehod, ki se konča pri prvi strani — to je muzejska disciplina.",
         noteEn:
           "The last stop is the beginning of everything: Valvasor's Glory of the Duchy of Carniola (1689), the first printed book that knows this corner. A walk that ends at the first page — that is museum discipline.",
+      },
+      {
+        exhibitSlug: "stari-zemljevidi",
+        noteSi:
+          "In pravzaprav še ena, ki se dotika vsega: od Griblacha 1468 do Freyerjeve karte 1843 — pet stoletij, v katerih se je vas pisala na papir. Kar ni zapisano, ni zastopano.",
+        noteEn:
+          "And in truth one more, touching all the rest: from Griblach in 1468 to Freyer's map of 1843 — five centuries in which the village wrote itself onto paper. What is not written down is not represented.",
       },
     ],
   },

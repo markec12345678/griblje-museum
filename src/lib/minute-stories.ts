@@ -488,6 +488,20 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "Before him there were documents; after him, a book. In 1689 Janez Vajkard Valvasor published The Glory of the Duchy of Carniola — four volumes, three thousand five hundred thirty-two pages, five hundred twenty-eight copperplates: a land written down by his own walking and measuring. Among its pages, for the first time by name, Črnomelj and its surroundings too. The price? Everything: Valvasor had to sell Bogenšperk and died poor, barely fifty. Everyone who writes a village down is his heir — this museum with other tools: a server instead of a Nuremberg press.",
   },
+  {
+    slug: "pecnica-susenje-sadja",
+    textSi:
+      "Jesen je imela ob Kolpi svojo tovarno: pečnico za sušenje sadja. Košare sliv so postopoma postajale police suhih prstov — pečenih sliv, ki so držale zimo: otrokom v šolo, svatbam na mizo, kmetiji v shrambo. Na fotografiji Franca Vesela iz leta 1928, posneti v sosednjih Adlešičih, dela cela družina: ženske, moški, otroci. Poglejte dim nad pečnico — to je zvok te slike: vonj jeseni, ki se je prenesel čez celo stoletje.",
+    textEn:
+      "Autumn had its factory on the Kolpa: the fruit-drying oven. Baskets of plums slowly became shelves of dried fingers — baked plums that carried the winter: to school for the children, to the table for the weddings, to the larder for the farm. In Fran Vesel's photograph from 1928, taken in neighbouring Adlešiči, a whole family works: women, men, children. Look at the smoke above the oven — that is the sound of this picture: the smell of an autumn carried across a whole century.",
+  },
+  {
+    slug: "stari-zemljevidi",
+    textSi:
+      "Leto tisoč štiristo oseminšestdeset: na listini se prvič pojavi Griblach. Sledijo Briglach, Griblah, v urbarjih in na najstarejšem zemljevidu Grüble. Vsak zapis je bil dejanje oblasti: kar je bilo zapisano, je bilo obdavčeno in branjeno. Na sliki tega zapisa je karta iz leta 1714 — vojvodina Kranjska z Belo krajino na enem listu, delo nugiškega kartografa Homanna po Valvasorjevem gradivu. Od urbarja do orbite vodi isti domislej: kraj, ki ni zapisan, ni zastopan.",
+    textEn:
+      "The year 1468: on a document the name Griblach appears for the first time. Briglach and Griblah follow; in the urbaria and on the oldest map, Grüble. Every entry was an act of power: what was written down was taxed and defended. In this record's image stands the map of 1714 — the Duchy of Carniola with Bela krajina on a single sheet, the work of the Nuremberg cartographer Homann after Valvasor's material. From urbarium to orbit runs one idea: a place that is not written down is not represented.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {
