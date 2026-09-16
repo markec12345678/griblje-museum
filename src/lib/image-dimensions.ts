@@ -1,0 +1,66 @@
+/**
+ * Dejanske dimenzije avtentičnih fotografij v /public/images/authentic.
+ *
+ * Uporabljajo jih IIIF manifesti (točne Canvas dimenzije) in pogovorno
+ * okno zapisa (naravno razmerje slike namesto obreznega okvira), da se
+ * pokončne fotografije — npr. spomenik s trinajstimi imeni — pokažejo
+ * v celoti, kakor to počnejo predstavitve predmetov vodilnih muzejev.
+ *
+ * Vir: IIIF revizija 2026-09 (slika mora ustrezati napisu pod njo).
+ */
+export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
+  "/images/authentic/hero-griblje.jpg": { width: 1600, height: 800 },
+  "/images/authentic/griblje-vas.jpg": { width: 1600, height: 1071 },
+  "/images/authentic/sveti-vid.jpg": { width: 1048, height: 1600 },
+  "/images/authentic/bojanci-1908.jpg": { width: 729, height: 426 },
+  "/images/authentic/sokcev-dvor.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/kolpa.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/malenca.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/mlin-pobrezje.jpg": { width: 1600, height: 1075 },
+  "/images/authentic/niko-zupanic.jpg": { width: 426, height: 612 },
+  "/images/authentic/snos-crnomelj.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/otok-letalisce.jpg": { width: 1600, height: 1054 },
+  "/images/authentic/evakuacija.jpg": { width: 1600, height: 1072 },
+  "/images/authentic/meja.jpg": { width: 1600, height: 1063 },
+  "/images/authentic/ribnik.jpg": { width: 1600, height: 1067 },
+  "/images/authentic/stara-hisa.jpg": { width: 1600, height: 1520 },
+  "/images/authentic/ravnace.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/jurjevanje.jpg": { width: 1236, height: 903 },
+  "/images/authentic/pogaca.jpg": { width: 1600, height: 1063 },
+  "/images/authentic/predenje.jpg": { width: 682, height: 1070 },
+  "/images/authentic/storklja.jpg": { width: 1600, height: 1067 },
+  "/images/authentic/breze.jpg": { width: 1600, height: 997 },
+  // zamenjane slikovne poti (revizija 2026-09: slike morajo ustrezati napisom)
+  "/images/authentic/zaseda-spomenik.jpg": { width: 342, height: 332 },
+  "/images/authentic/spomenik-griblje.jpg": { width: 221, height: 540 },
+  "/images/authentic/sola-abecednik.jpg": { width: 404, height: 700 },
+  "/images/authentic/izseljenci-ladja.jpg": { width: 1509, height: 964 },
+  "/images/authentic/vino-presa.jpg": { width: 618, height: 1010 },
+  "/images/authentic/hisa-adlesici.jpg": { width: 1000, height: 619 },
+  // nove slike zapisov, ki so prej padle na hero-fallback
+  "/images/authentic/pgd-crpalka-1924.jpg": { width: 1200, height: 1600 },
+  "/images/authentic/dragos-kolpa-1920.jpg": { width: 1076, height: 681 },
+  "/images/authentic/kambic-bozic.jpg": { width: 620, height: 1032 },
+  "/images/authentic/matice-knjiga.jpg": { width: 1275, height: 954 },
+  "/images/authentic/cerkvisce-kapelica.jpg": { width: 1400, height: 1875 },
+  "/images/authentic/pasuljada.jpg": { width: 1600, height: 1200 },
+  "/images/authentic/katarina-herbarij.jpg": { width: 2069, height: 2920 },
+  "/images/authentic/gasperic-kolpa.jpg": { width: 1600, height: 1067 },
+  "/images/authentic/madronicev-mlin.jpg": { width: 962, height: 617 },
+  "/images/authentic/ucilnica-muzej.jpg": { width: 1600, height: 1067 },
+  "/images/authentic/zvon.jpg": { width: 1400, height: 1400 },
+  "/images/authentic/brinc-krovska.jpg": { width: 684, height: 1083 },
+  "/images/authentic/kavboji-oprava.jpg": { width: 900, height: 759 },
+};
+
+export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };
+
+export function imageDimensions(image: string) {
+  return IMAGE_DIMENSIONS[image] ?? FALLBACK_DIMENSIONS;
+}
+
+/** Ali je slika pokončna (razmerje < 0.9) — takšne v dialogu pokažemo v celoti. */
+export function isPortraitImage(image: string) {
+  const { width, height } = imageDimensions(image);
+  return height / width >= 0.9;
+}

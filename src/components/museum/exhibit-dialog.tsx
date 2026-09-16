@@ -36,6 +36,7 @@ import { ObjectBiography } from "@/components/museum/object-biography";
 import { ObjectMemories } from "@/components/museum/object-memories";
 import { Model3DView, Model3DToggle } from "@/components/museum/model-3d-view";
 import { trackStat } from "@/lib/stats-client";
+import { isPortraitImage, imageDimensions } from "@/lib/image-dimensions";
 import type { ExhibitCategory, ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -66,6 +67,41 @@ const SOURCE_ICON: Record<SourceType, React.ElementType> = {
   pricevanje: Mic,
   zemljevid: MapIcon,
 };
+
+/**
+ * Oder slike z naravnim razmerjem — kakor predstavitve predmetov
+ * vodilnih muzejev (Rijksmuseum, Louvre): pokončne fotografije
+ * (spomenik, portret, stran knjige) se pokažejo v celoti,
+ * ležeče pa zasedejo širino brez izgube gradiva.
+ */
+function ExhibitImageStage({ exhibit, alt }: { exhibit: ExhibitDTO; alt: string }) {
+  const src = exhibit.image ?? "/images/authentic/hero-griblje.jpg";
+  const { width, height } = imageDimensions(src);
+  const portrait = isPortraitImage(src);
+  return (
+    <div
+      className={`relative w-full bg-muted${portrait ? " mx-auto" : ""}`}
+      style={
+        portrait
+          ? {
+              aspectRatio: `${width} / ${height}`,
+              maxWidth: `min(calc(62vh * ${(width / height).toFixed(4)}), 420px)`,
+            }
+          : {
+              aspectRatio: `${width} / ${height}`,
+            }
+      }
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 768px"
+        className="object-contain"
+      />
+    </div>
+  );
+}
 
 export function ExhibitDialog({
   exhibit,
@@ -197,72 +233,67 @@ export function ExhibitDialog({
             {walkContext && <WalkTopBar ctx={walkContext} />}
 
             {/* Slika zapisa, približevalni ogled (deep zoom) ali 3D-ogled */}
-            <div className="relative aspect-[16/9] w-full sm:aspect-[2/1]">
-              {modelOpen && exhibit?.model3dUrl ? (
-                <>
-                  <Model3DView exhibit={exhibit} />
-                  <div className="absolute left-3 top-3 flex items-center gap-1 rounded-md border border-border/60 bg-background/85 p-0.5 backdrop-blur-sm">
-                    <Model3DToggle active onToggle={() => setModelOpen(false)} />
-                  </div>
-                  {exhibit.model3dCredit && (
-                    <p className="pointer-events-none absolute bottom-9 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
-                      {exhibit.model3dCredit}
-                    </p>
-                  )}
-                </>
-              ) : zoomOpen && exhibit ? (
-                <>
-                  <DeepZoom
-                    src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
-                    alt={es.title(exhibit)}
-                  />
-                  <Button
-                    type="button"
-                    variant="secondary"
-                    size="icon"
-                    className="absolute right-3 top-3 size-11 bg-background/85 backdrop-blur-sm"
-                    aria-label={t.zoom.close}
-                    title={t.zoom.close}
-                    onClick={() => setZoomOpen(false)}
-                  >
-                    <X className="h-5 w-5" aria-hidden="true" />
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <Image
-                    src={exhibit?.image ?? "/images/authentic/hero-griblje.jpg"}
-                    alt={exhibit ? es.title(exhibit) : ""}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 768px"
-                    className="object-cover"
-                  />
-                  <div
-                    className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"
-                    aria-hidden="true"
-                  />
-                  <Button
-                    type="button"
-                    variant="secondary"
-                    size="icon"
-                    className="absolute right-3 top-3 size-11 bg-background/70 backdrop-blur-sm"
-                    aria-label={t.zoom.open}
-                    title={t.zoom.open}
-                    onClick={() => setZoomOpen(true)}
-                  >
-                    <ZoomIn className="h-5 w-5" aria-hidden="true" />
-                  </Button>
-                  {exhibit.model3dUrl && (
-                    <div className="absolute left-3 top-3 rounded-md border border-border/60 bg-background/70 p-0.5 backdrop-blur-sm">
-                      <Model3DToggle active={false} onToggle={() => { setZoomOpen(false); setModelOpen(true); }} />
-                    </div>
-                  )}
-                  <p className="absolute bottom-3 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
-                    {exhibit?.imageCredit ?? t.collection.aiNote}
+            {modelOpen && exhibit?.model3dUrl ? (
+              <div className="relative aspect-[16/10] w-full">
+                <Model3DView exhibit={exhibit} />
+                <div className="absolute left-3 top-3 flex items-center gap-1 rounded-md border border-border/60 bg-background/85 p-0.5 backdrop-blur-sm">
+                  <Model3DToggle active onToggle={() => setModelOpen(false)} />
+                </div>
+                {exhibit.model3dCredit && (
+                  <p className="pointer-events-none absolute bottom-9 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
+                    {exhibit.model3dCredit}
                   </p>
-                </>
-              )}
-            </div>
+                )}
+              </div>
+            ) : zoomOpen && exhibit ? (
+              <div className="relative aspect-[16/10] w-full">
+                <DeepZoom
+                  src={exhibit.image ?? "/images/authentic/hero-griblje.jpg"}
+                  alt={es.title(exhibit)}
+                />
+                <Button
+                  type="button"
+                  variant="secondary"
+                  size="icon"
+                  className="absolute right-3 top-3 size-11 bg-background/85 backdrop-blur-sm"
+                  aria-label={t.zoom.close}
+                  title={t.zoom.close}
+                  onClick={() => setZoomOpen(false)}
+                >
+                  <X className="h-5 w-5" aria-hidden="true" />
+                </Button>
+              </div>
+            ) : (
+              <div className="relative w-full">
+                <ExhibitImageStage
+                  exhibit={exhibit}
+                  alt={exhibit ? es.title(exhibit) : ""}
+                />
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"
+                  aria-hidden="true"
+                />
+                <Button
+                  type="button"
+                  variant="secondary"
+                  size="icon"
+                  className="absolute right-3 top-3 size-11 bg-background/70 backdrop-blur-sm"
+                  aria-label={t.zoom.open}
+                  title={t.zoom.open}
+                  onClick={() => setZoomOpen(true)}
+                >
+                  <ZoomIn className="h-5 w-5" aria-hidden="true" />
+                </Button>
+                {exhibit?.model3dUrl && (
+                  <div className="absolute left-3 top-3 rounded-md border border-border/60 bg-background/70 p-0.5 backdrop-blur-sm">
+                    <Model3DToggle active={false} onToggle={() => { setZoomOpen(false); setModelOpen(true); }} />
+                  </div>
+                )}
+                <p className="absolute bottom-3 right-4 max-w-[80%] text-right text-[11px] leading-snug text-foreground/70">
+                  {exhibit?.imageCredit ?? t.collection.aiNote}
+                </p>
+              </div>
+            )}
             {zoomOpen && exhibit?.imageCredit && (
               <p className="bg-black/5 px-4 py-2 text-right text-[11px] leading-snug text-muted-foreground">
                 {exhibit.imageCredit}
@@ -467,7 +498,7 @@ export function ExhibitDialog({
               {/* Zgodba */}
               <div className="mt-6 space-y-4">
                 {storyParagraphs.map((paragraph, index) => (
-                  <p key={index} className="text-[15px] leading-relaxed text-foreground/90">
+                  <p key={index} className="text-[16px] leading-[1.75] text-foreground/90 sm:text-[17px]">
                     {paragraph}
                   </p>
                 ))}
