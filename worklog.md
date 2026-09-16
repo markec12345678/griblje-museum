@@ -879,3 +879,28 @@ Stage Summary:
 - Git: commit 53cb63f (#28) na main, Vercel deploy potrjen s 44 zapisi
 - Ključni novi zgodbibi: dobrotnik dr. Brinc (edini, ki je svet vrnil v Griblje), prva ženska-zapisovalka Katarina Zupanič, fizična sestra muzeja (muzejska učilnica), najmlajša šega (Kavbojski žur, zapisana ob rojstvu)
 - Iskalna kvota (z-ai + Wikimedia API po IP) še vedno izčrpana — neizpolnjene teme ostajajo za naslednji sklop: RKD register cerkve, PGD medalje/tekmovanja, TD kontakti/Facebook, stari zemljevidi, pohodne poti, preostalih ~31 predlogov raziskave (Štrucelj kmetija, Gašperičeva bibliografija v COBISS, zaselki, Goranja lokva ...)
+
+---
+Task ID: 40
+Agent: Main agent (Z.ai Code)
+Task: Revizija slik (napis ↔ slika), sinhronizacija GitHub/Vercel, UI benchmark najboljših muzejev sveta + temeljiti popravki, 9. vsebinski sklop (uporabnik: "slike morajo bit kaj pise ne nekaj kaj ni, pushaj, najdi najboljse muzeje, primerjaj uredi profesionalno, nadaljuj 9. sklop")
+
+Work Log:
+- DIAGNOZA SLIK: 13 zapisov brez fotografije je padlo na hero-krajino vasi (vsaka druga karta = ista pokrajina!); 6 zapisov je imelo ilustrativne slike, ki niso kazale predmeta (zaseda = parada v Ljubljani, spomenik = Trebenče, šola = stavba v Črnomlju, izseljenstvo = antwerpenski pastel, vino = Ravnace, hiša = Črnomelj)
+- REŠITEV BREZ AI (z-ai kvota 429 cel dan — tudi VLM): Wikimedia Commons API (curl z UA) — sistematično iskanje po 20+ poizvedbah, vključno s celotnim katalogom 500 fotografij Fran Vesla (bela krajina 1910–20!)
+- 19 PRENESENIH SLIK (vse CC/PD, avtorji navedeni): prava spominska kamna zasede in padlim iz Kamre (lokalno, CC BY-NC), črpalka 1924 iz Gasilskega muzeja Metlika, krstna knjiga Mošnje 1610–1730, izseljenci na palubi SS Friedrich der Grosse (~1907), herbarij Flysser 1696, Trubarjev Abecednik 1550, vinogradnik pri preši (Vesel 1920), hiša v Adlešičih (Vesel 1920), pogled na Kolpo 1920, Kuzmin mlin z žago, pasulj, kapelica, zvon, zahod sonca nad Kolpo, Šolski muzej, božično drevo, krovska obrt, kavbojska oprava + 8 novih za 9. sklop
+- 6 ZAMENJAV + 13 NOVIH: vsak zapis ima zdaj sliko, ki ustreza napisu; zgodbe usklajene (spomenik: odstranjena opomba o manjkajoči fotografiji; izseljenstvo: paluba namesto pastla); IIIF dimenzije v novi skupni knjižnici src/lib/image-dimensions.ts
+- UI BENCHMARK (agent-browser na živih straneh): Rijksmuseum, Louvre, Van Gogh, MoMA, Nasjonalmuseet, Google Arts & Culture (BM/Met/DigitaltMuseum/Smithsonian za boti); analiza DOM + računanega CSS + zajemi; poročilo v design-research/UI-BENCHMARK-2026-09.md
+- NAJDBE BENCHMARKA: (1) KRITIČNA NAPAKA — spremenljivki Geist na <body>, Tailwind pa bereta iz <html> → VSA besedila so se izrisala v system-ui (vsak vrhunski muzej ima prepoznavno tekstovno pisavo); (2) dialog je obrezoval slike na 16:9 — pokončni spomenik bi bil obrezan na vodoravni rez (Rijks/Louvre kažejo predmet v celoti); (3) zgodba 15 px; (4) hero CTA ne-pilasti
+- IZVEDENI POPRAVKI: Geist na <html> (par Fraunces+Geist kot LouvreSerif+Roboto); nova komponenta ExhibitImageStage — naravno razmerje slike (pokončne centrirane, maxWidth 62vh×razmerje, max 420px; ležeče čez širino), zoom/3D ohranjata 16:10; zgodba 16/17 px leading 1.75; 4 hero CTA pilasti (rounded-full, px-7, vzporedno Louvru)
+- 9. SKLOP "Tla in nebo vasi" (44→52 zapisov/235 virov): zaselki-griblje (Dolnje/Srednje/Gornje + Brinsko selo), goranja-lokva (glina za opeko, Rudna peč), strucelj-kmetija (~90 ha, »S pesmijo je delo lažje steklo«), tamburasi-danica (bugarija mladega Dragoša), kopalisce-griblje (kopalna Kolpa >25 °C), dakota-otok (edini C-47 v Sloveniji), veselko-fotograf (~2000 posnetkov, avtor naših PD-fotografij), zracni-most-krasinec (2041 ljudi/48 ur, Alma Karlin)
+- Celovitost: minutne zgodbe 48→52 (dopolnjene tudi 4 stare vrzeli), življenjepisi 52/52, sprehodi 52/52 (vsak zapis natanko enkrat), i18n števci 44→52 v SL/HR/EN (12 nizov), layout meta, README (52/52, 235 virov, ~290 besed)
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2302 znanih opozoril); reseed 52/235; agent-browser: 18 pogovornih oken preverjenih (vsi img ok:true), hero "52 zapisov", statistika 52/235/6, HR jezik, zbirka 58 kart z lenim nalaganjem, današnji zapis = zaselki-griblje, mobilni 390 px brez preliva, 0 napak konzole
+- GIT/VERCEL: 3 commiti pushani — 3248b4f (revizija slik 44/44), 9871ba9 (UI po benchmarku), b683fa8 (9. sklop 52); produkcija verificirana po vsakem: 200, API 52, nove slike 200, hero 52
+
+Stage Summary:
+- Zbirka: 52 zapisov / 235 virov / 52 minutnih zgodb / 52 življenjepisov / 9 dogodkov / 5+1 sprehodov (pokritost 52/52) / 21 geo točk / VSAK zapis ima sliko, ki ustresea napisu
+- UI: tipografska identiteta (Geist dejavno), predstavitve predmetov v naravnem razmerju (standard Rijksmuseuma/Louvra), pilasti CTA, editorialna globina zgodbe — dokumentirano v design-research/UI-BENCHMARK-2026-09.md s zajemi
+- Produkcija: https://griblje-museum.vercel.app — 52 zapisov, vse spremembe v živo
+- z-ai kvota (web_search/VLM/image-gen) ostaja 429 cel dan — RKD register cerkve, PGD medalje, stari zemljevidi ŠE VEDNO ČAKAJO na naslednjo sejo; tudi Claude/ChatGPT preverjanja ne
+- Ostali predlogi za naslednje sklope: Janko Barle, Jože Dular, Matija Totter (serija Ljudje ob Kolpi), pisanice (Barvanje pisanic v Beli Krajini, Fran Vesel PD!), kuhanje žganja (Vesel), pečnica za sušenje sadja v Adlešičih, pobiranje lanu, predstavitev Bele krajine na velesejmu 1921, Gribeljci po svetu 2019, loke in studenci, etimologija gribljati
