@@ -1078,3 +1078,23 @@ Stage Summary:
 - Raziskava 3. kroga zaključena: fizična muzejska praksa (Mestni muzej Črnomelj: Neobičajna védenja, publikacije, zunanje razstave) prevedena v digitalne vzorce
 - Produkcija: čaka push (commit naslednji korak)
 - Naslednji koraki: DE/IT jeziki, večje slike/IIIF profili, "Zapis meseca" (ko bo več vsebine), velesejem 1921 (brez vira), recept kruha 2026 (globja povezava)
+
+---
+Task ID: 48
+Agent: Main agent (Z.ai Code)
+Task: Nadaljevanje (uporabnik: "nadaljuj kjer si ostal") — Zapis meseca + oznake občinstva + revizija slik
+
+Work Log:
+- PREGLED STANJA: Task 47 povsem zaključen in pushan (produkcija verificirana); VRZELI-2026-09.md podagentovega poročila ni na disku — vrzeli zgodovine pa so bile v Task 47 pokrite s strani glavnega agenta (13. sklop: ŠD Griblje, noša, Kanižarica)
+- REVIZIJA TREH ZGODNJŠIH PRIPOMB O SLIKAH: griblje-vas = prava fotografija vasi (Andrejj, CC BY-SA 3.0); strucelj-kmetija = kosec z izrecno zaslugo "ilustrativna fotografija … kmetija Štrucelj čaka na svojo"; dakota-otok = "razstavljen pri Otoku" (dejansko ohranjeno letalo) — vse pošteno rešeno, brez popravkov
+- IZVEDBA 1 — ZAPIS MESECA (vzorec Picture of the month, National Gallery London): src/lib/record-of-month.ts — MONTHLY_POOLS 12 mesecev × 3–4 kandidate = 37 vnosov, vsak z uredniško utemeljitvijo SL/EN, vezano na javne datume zapisov (SNOS 19.–20. 2. 1944; zračni most 25.–26. 3. 1945; gregorjevo 15. 3. 2026; pisanice od 1893; sv. Vid 15. 6. + petstoletnica 2026; kres pred sv. Janezom; vrnitev 19. 6. 2019; praznik KS 15. 9. 2024; močeril 18. 10. 1986; Kambičev božič; martinovo november …); resolveRecordOfMonth: hash32(leto*100+mesec) → kandidat, padec na naslednjega, če sluga ni; src/components/museum/record-of-month.tsx — invertirani uredniški pas (bg-foreground text-background, svetli/temni način se obrneta), kustosov blockquote z oznako "Zakaj ta zapis ta mesec", mesec/leto po Intl (sl-SI/hr-HR/en-GB), poštena podpis "izbor vodi koledar vasi · menjava vsakega 1. v mesecu"; vstavljen na domačo stran med statistiko in Danes v muzeju; slika loading="eager" (LCP na mobilnem)
+- IZVEDBA 2 — OZNAKE OBČINSTVA (vzorec MoMA): src/lib/audience.ts — readingMinutes = štetje besed storySi / 150 besed/min (muzejsko informativno besedilo, porazdelitev cez zbirko: 9×1 min, 58×2 min, 5×3 min — zgodbe so res kratke in enakomerne, mediana 272 besed); isForKids = postaje FAMILY_WALK (en vir resnice s kurirstvom otroške poti, 6 zapisov); čipi na kartah zbirke (Clock3 + "≈ N min" s sr-only predpono, Footprints + "za otroke" z nasvetom orodjarke) in v pogovornem oknu zapisa ob vrstici z obdobjem
+- i18n: monthly.* + audience.* v SL/EN/HR (kicker, open, whyLabel, rotationNote, curatorSig; minutesSr, forKids, forKidsTitle); HR uredniške opombe padejo v EN — isti dokumentirani vzorec kot sezonska polica
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak; agent-browser LOKALNO: september 2026 izbere Muzejsko učilnico (šolsko leto se je pravkar začelo — smiselna kura!) z utemeljitvijo "Novo šolsko leto se začne tudi v muzejski učilnici — fizični sestri tega muzeja, ki je zrasla iz istih šolskih klopi"; CTA in slika odpreta dialog z "≈ 2 min"; zbirka: 144 ≈min (72×2 zaradi sr-only) + 6× "za otroke" (Griblje vas → "≈ 3 min + za otroke" na najdaljši zgodbi 432 besed); EN "RECORD OF THE MONTH · September 2026 / WHY THIS RECORD THIS MONTH / for kids"; HR "ZAPIS MJESECA · rujan 2026"; temni način VLM preverjen (obe zaslonki: kontrast dober, nič se ne zlije, postavitev urejena); mobilni 390 px brez preliva (390=390); 0 napak konzole (samo dev LCP namigi, isti kot ObjectOfDay od nekdaj); 4 zaslonke
+- GIT/VERCEL: commit 209ebbd pushan na main
+
+Stage Summary:
+- Dve novi muzejski funkciji po vzorcih velikih: Zapis meseca (NG London — 12 mesečnih kurirskih naborov, 37 utemeljitev) in oznake občinstva (MoMA — čas branja izmerjen iz besed + za otroke iz družinske poti)
+- Zbirka ostaja 72 zapisov / 308 virov (novi funkciji sta razpredilni, ne vsebinski)
+- Produkcija: https://griblje-museum.vercel.app (deploy iz 209ebbd)
+- Naslednji koraki: DE/IT jeziki (3. točka prioritet), večje slike/IIIF, velesejem 1921 (brez vira), recept kruha 2026, HR prevodi uredniških opomb (ko bo več vsebine)
