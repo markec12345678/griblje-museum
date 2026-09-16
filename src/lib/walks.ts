@@ -43,6 +43,13 @@ export const WALKS: Walk[] = [
           "Every story of this village begins at the river. The Kolpa is its lifeline — warm as a southern sea in summer, and always a route, a border and a keeper of memories.",
       },
       {
+        exhibitSlug: "arheolosko-najdigsce-ob-kolpi",
+        noteSi:
+          "Preden so bili mlini, pred cerkvijo, pred pismenostjo: ob tej reki so ljudje živeli pet tisoč let. Pod obkolpskimi njivami ležijo naselbine od neolitika do Rimljanov — registrirana dediščina, ki jo obdeluje plug.",
+        noteEn:
+          "Before the mills, before the church, before writing: people lived by this river for five thousand years. Beneath the fields by the Kolpa lie settlements from the Neolithic to the Romans — registered heritage, tilled by the plough.",
+      },
+      {
         exhibitSlug: "mlini-na-kolpi",
         noteSi:
           "Kjer je reka dajala moč, so stali mlini. Urbarji jih omenjajo že v srednjem veku — moko je pridelovala voda, ne roka.",
@@ -257,6 +264,13 @@ export const WALKS: Walk[] = [
           "Before the looms stood a writer: in 1894/95 Katarina Zupanič captured the village tradition with a pen — the Bouquet of Meadow Flowers, among this land's first women's records.",
       },
       {
+        exhibitSlug: "gribeljski-zbul",
+        noteSi:
+          "Pred vinom je bila čebula: gribeljski žbul je bil glavni denarni pridelek vasi — prodajali so ga onstran Gorjancev in na Hrvaškem, Gribljčanom pa še danes pravijo žbularji.",
+        noteEn:
+          "Before the wine there was the onion: the Griblje žbul was the village's main cash crop — sold beyond the Gorjanci and in Croatia, and the people of Griblje are still called žbularji.",
+      },
+      {
         exhibitSlug: "vino-in-crnina",
         noteSi:
           "Zadnja postaja diši po kletarski: metliška črnina, prvič ustekleničena 1968, danes zaščitena geografska označba.",
@@ -311,6 +325,13 @@ export const WALKS: Walk[] = [
           "In pravzaprav še ena, ki se dotika vsega: od Griblacha 1468 do Freyerjeve karte 1843 — pet stoletij, v katerih se je vas pisala na papir. Kar ni zapisano, ni zastopano.",
         noteEn:
           "And in truth one more, touching all the rest: from Griblach in 1468 to Freyer's map of 1843 — five centuries in which the village wrote itself onto paper. What is not written down is not represented.",
+      },
+      {
+        exhibitSlug: "sturm-1891",
+        noteSi:
+          "In ker je bila vas končno zapisana, je bila tudi narisana: leta 1891 je dunajski slikar Josef Sturm za cesarsko enciklopedijo upodobil gribeljsko kmetijo — najstarejša znana slika vasi, z bakrorezom in opisom v istem zvezku.",
+        noteEn:
+          "And once the village was written down, it was drawn too: in 1891 the Viennese painter Josef Sturm depicted a Griblje farmstead for the imperial encyclopedia — the oldest known picture of the village, with an engraving and a description in the same volume.",
       },
     ],
   },
@@ -504,6 +525,13 @@ export const WALKS: Walk[] = [
           "Pomlad prihaja z Zelenim Jurijem. Jurjevanje v Beli krajini je najstarejši folklorni festival v pokrajini — izročilo, ki še diha.",
         noteEn:
           "Spring arrives with Green George. Jurjevanje in Bela krajina is the oldest folklore festival in the region — a tradition still breathing.",
+      },
+      {
+        exhibitSlug: "jurjevo-v-gribljah",
+        noteSi:
+          "Preden je festival zrasel v Črnomlju, je jurjevo hodilo od vrat do vrat: v Gribljah šola še danes spleta koš iz brezja in pošlje Zelenega Jurija po vasi — s pesmijo, ki se je ohranila v narečju.",
+        noteEn:
+          "Before the festival grew up in Črnomelj, jurjevo walked from door to door: in Griblje the school still weaves a basket of birch and sends Green George through the village — with a song preserved in the dialect.",
       },
       {
         exhibitSlug: "storklje",

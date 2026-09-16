@@ -127,6 +127,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
         "The Green George at the end of April opens the spring — the custom that also gave Bela krajina its best-known festival. The most April-like page of the collection.",
     },
     {
+      slug: "jurjevo-v-gribljah",
+      noteSi:
+        "24. april: v Gribljah Zeleni Jurij v košu iz brezja obide vas od hiše do hiše — s pesmijo, ki se je ohranila v narečju. Šega, ki jo živi šola.",
+      noteEn:
+        "24 April: in Griblje Green George in his birch basket walks the village door to door — with a song preserved in the dialect. A custom kept alive by the school.",
+    },
+    {
       slug: "pisanice",
       noteSi:
         "Velika noč prinese pisanice: pomlad, ki jo Belokranjci narišemo sami. Šega je v zbirki dokumentirana od leta 1893.",
