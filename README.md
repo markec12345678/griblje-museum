@@ -12,7 +12,7 @@ map, events and open data. Built to the standard of award-winning Norwegian muse
 
 ## Zakaj / Why
 
-Vas Griblje (prva omemba **1526**, ~3,45 km², občina Črnomelj) ima bogato neprenosceno
+Vas Griblje (prva omemba **1468** (Griblach), ~3,45 km², občina Črnomelj) ima bogato neprenosceno
 dediščino — od jurjevanja in vinarstva ob Kolpi do partizanske zgodovine in evakuacije
 z letališča Krasinec (marec 1945, največja vojna evakuacija na tem delu Evrope).
 Ta projekt dokazuje, da lahko majhna vas digitalno doseže muzejski standard:
@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 26/26 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 26/26 (povprečno 286) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 26/26 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 113 skupaj (povprečno 4,3) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 26/26 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 30/30 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 30/30 (povprečno 307) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 30/30 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 148 skupaj (povprečno 4,9) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 30/30 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -43,14 +43,31 @@ glasih — dve obstoječi zgodbi prepisani na ~300 besed, dve novi pripovedi
 razdekel Zgodbe pa tako na 6 zapisov na standardu globine; PR #22:
 nov zapis manjkajoče teme šolstva — **Vaška šola — iz tablic v svet** z avtentično
 fotografijo stavbe partizanske gimnazije v Črnomlju in žanrsko sliko Vaška šola
-(19. st., Narodni muzej Slovenije) med viri; PR #24: sklop **Pričevalci v kamnu** — zapisa o registrirani spominski dediščini vasi (spomenik padlim vaščanom, EŠD 19326, in zaseda 6. 9. 1941 na cesti Črnomelj–Griblje, EŠD 19324 — vojna zgodovina vasi pomaknjena tri leta nazaj), nov zapis **Griblje v številkah** (demografija: Griblach 1468 → 329 prebivalcev po SURS in Wikidata), dopolnitve griblje-vas (prva omemba 1468, Snojeva etimologija), sveti-vid (župnija Podzemelj, 18. stoletje, EŠD 2122, zvon 2008) in vaška šola (spomenik pred OŠ Loka) — zbirka 26 zapisov / 113 virov).
+(19. st., Narodni muzej Slovenije) med viri; PR #24: sklop **Pričevalci v kamnu** — zapisa o registrirani spominski dediščini vasi (spomenik padlim vaščanom, EŠD 19326, in zaseda 6. 9. 1941 na cesti Črnomelj–Griblje, EŠD 19324 — vojna zgodovina vasi pomaknjena tri leta nazaj), nov zapis **Griblje v številkah** (demografija: Griblach 1468 → 329 prebivalcev po SURS in Wikidata), dopolnitve griblje-vas (prva omemba 1468, Snojeva etimologija), sveti-vid (župnija Podzemelj, 18. stoletje, EŠD 2122, zvon 2008) in vaška šola (spomenik pred OŠ Loka).
+Za tem so sledili septembrski sklopi: čiščenje odvisnosti (issue #3); živi govor
+(ElevenLabs); **OpenRouter** kot brezplačna prva postaja AI vodnika; sklop
+**Jubilejno leto 2026** — zapisa petstoletnica cerkve (500 let, 2026) in
+**PGD Griblje 1927** (stoletnica 2027), zapis **črni močeril** (Arne Hodalič,
+CC BY-SA 3.0) in **kolesa-torpedo** (vaška kolesarska sekcija); ter sklop po
+razpisnih pogojih: **3D-model cerkve sv. Vida z AR** (GLB+USDZ), **hrvaščina**
+(SLO/HRV/EN), **statistika obiska** (`/api/stats`, anonimno) in formalna
+**WCAG izjava** — zbirka 30 zapisov / 148 virov.
+Zatem je nastala še **obsežna spletna raziskava vsebin o Gribljah**
+(`research-griblje/`: 4 sintezni dokumenti z navedbo virov — vas in zgodovina,
+cerkev/PGD/šola/društva, Kolpa/nesnovna dediščina/fotografije) z **~45 predlogi
+novih muzejskih zapisov** (cilj: zbirka 100+), 14 licenciranimi fotografijami
+(11 Wikimedia Commons + 3 Kamra/Knjižnica Črnomelj) in ključnimi odkritji:
+Audrey Totter (hollywoodska igralka z gribeljskimi koreninami), Nikolaj Dragoš
+(najstarejši Slovenec, 111 let), matične knjige 1669–1947 (župnija Podzemelj),
+riba *Alburnus sava* (vrsta, opisana iz Kolpe 2017) — gradivo za naslednje
+sklope poglabljanja.
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 26 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 30 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
-- 🚶 **Muzejski sprehodi** — štirje kurirani tematski sprehodi skozi celotno zbirko
-  (po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
+- 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
+  (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
   opombo, napredkom in navigacijo; zaključeni sprehodi se shranijo lokalno; deljiva
   globoka povezava `/?walk=<id>&stop=<n>`
 - 🎓 **Za šole in učitelje** — šolska ponudba po norveškem modelu *skoletjeneste*:
@@ -58,9 +75,9 @@ fotografijo stavbe partizanske gimnazije v Črnomlju in žanrsko sliko Vaška š
   delovni list za A4
 - 🧾 **Citiranje** — oblikovan citat zapisa z datumom dostopa in gumbom
   »Kopiraj citat« (vzorec DigitaltMuseum *Siter dette objektet*)
-- 🗺️ **Zemljevid** — Leaflet + OSM, 14 točk (preverjene koordinate + približne, ločene
+- 🗺️ **Zemljevid** — Leaflet + OSM, 17 točk (preverjene koordinate + približne, ločene
   vizualno in z oznako »približno«)
-- 📖 **Zgodbe** — štiri pripovedi v človeških glasih (~300 besed, SLO+EN:
+- 📖 **Zgodbe** — šest pripovedi v človeških glasih (~300 besed, SLO+EN:
 zračni most marca 1945, reka meja, mlinščina kot vaška borza, žensko leto
 od lana do platna) s plastmi odkritih vrzeli namesto izmišljenih oseb, kuratorska
 načela in odprti razpis za pričevanja skupnosti
@@ -69,7 +86,8 @@ načela in odprti razpis za pričevanja skupnosti
   dogodkih, neobčutljivo na diakritike — po vzoru DigitaltMuseum
 - 🔗 **Globoke povezave** — vsak zapis ima deljiv URL `/?exhibit=<slug>`, pogledi
   `#zbirka`, `#zgodbe` … (isti format, ki ga objavljata IIIF in iskalni API)
-- 🌍 **SLO/EN** — popolna dvojezičnost z vztrajnostjo izbire
+- 🌍 **SLO/HRV/EN** — popolna trojezičnost z vztrajnostjo izbire (hrvaščina za
+  obiskovalce čez mejo, po vzoru Interreg sodelovanj)
 - ♿ **Dostopnost** — izjava o dostopnosti po vzoru norveških muzejev (*universell utforming*),
   tipkovna navigacija, `prefers-reduced-motion`, semantični HTML; lastna **dostopnostna
   plošča** v glavi (večja pisava, močnejši kontrast, pisava za disleksijo Atkinson
@@ -102,7 +120,7 @@ načela in odprti razpis za pričevanja skupnosti
 - 🕸️ **Poveži zbirko** — povezani zapisi v vsakem zapisu + pot med dvema zapisoma z
   utemeljenimi skoki (vzorec x Degrees of Separation, Google Arts & Culture),
   `/?path=<slugA>,<slugB>`
-- ⏱️ **Muzej v minuti** — enominutne zgodbe za vseh 26 zapisov s TTS in prepisom
+- ⏱️ **Muzej v minuti** — 27 enominutnih zgodb s TTS in prepisom
   (vzorec One Minute Wonders, Brighton & Hove Museums); dnevni izbor treh zgodb
 - 🍂 **Sezonska polica** — kurirani izbor zbirke po letnem času, samodejna rotacija
   glede na datum obiskovalca (vzorec »object of the month«, Saffron Walden Museum)
@@ -156,7 +174,14 @@ načela in odprti razpis za pričevanja skupnosti
   »tega ni v zbirki« namesto izmišljevanja; predlagana vprašanja, bližnjica
   Ctrl/Cmd+G, deljiva povabilo `/?govor=1`; pogovor se ne shranjuje
   (vzorec Met Assistant, DMA Angelica, museum-GPT); POST `/api/guide`
-  (z-ai-web-dev-sdk, strežniško; na Vercelu zahteva env `ZAI_CONFIG`)
+  (veriga OpenRouter → HuggingFace → z-ai; strežniško)
+- 🧊 **3D in razširjena resničnost** — interpretativni 3D-model cerkve sv. Vida
+  (GLB + USDZ; `@google/model-viewer` se naloži samo po potrebi): zasuk,
+  približanje in AR ogled na mobilniku (WebXR / Scene Viewer / Quick Look),
+  zapis kot tipkovnični nadomestek (razpisna zahteva digitalizacije enot KD)
+- 📈 **Statistika obiska** — anonimni zbirni števci brez piškotkov in IP-naslovov
+  (obiski, ogledi zapisov, vprašanja vodnika, avdio, AR), prikaz v rubriki
+  *O muzeju*; na bralnih namestitvah (Vercel) poštena opomba namesto tihih ničel
 
 ## Tehnologija / Tech stack
 
@@ -174,7 +199,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 26 zapisov, 113 virov, 6 zgodb, 5 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 30 zapisov, 148 virov, 6 zgodb, 7 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -235,6 +260,7 @@ Projekt deluje na Vercelu brez dodatnih nastavitev okolja:
 | `GET /api/memories?exhibit=` | spomini skupnosti ob enem zapisu (CORS `*`) |
 | `POST /api/memories` | nov spomin ob zapisu — enaka moderacija |
 | `POST /api/guide` | pogovor z zbirko — uzidani AI vodnik (veriga OpenRouter → HuggingFace → z-ai) |
+| `POST`/`GET /api/stats` | anonimna statistika obiska — zbirni števci brez piškotkov/IP |
 
 ### Trajnost skupnostnih prispevkov / Durability of community contributions
 
@@ -252,8 +278,10 @@ start`) so trajni. Na strežniških platformah (Vercel) je datotečni sistem
 - **Slike**: avtentične fotografije z Wikimedie Commons in javnodomenski arhivski
   posnetki (Franjo Veselko marec 1945, procesija 1908, Fran Vesel 1920, Eugeen Van
   Mieghem 1899, Slovenski etnografski muzej, Narodni muzej Slovenije) ter sodobne
-  fotografije pod CC BY 4.0 (Bb63lj, Hythlodot, švabo) — vsaka z navedbo avtorja in
-  licence na zapisu in v registru virov
+  fotografije pod CC BY 4.0 (Bb63lj, Hythlodot, švabo) in CC BY-SA 3.0 (Arne
+  Hodalič — črni močeril) — vsaka z navedbo avtorja in licence na zapisu in v
+  registru virov; interpretativni 3D-model cerkve sv. Vida je delo muzeja
+  (CC BY-SA 4.0) — fotogrametrija ostaja cilj razpisne digitalizacije
 
 ## Struktura / Structure
 
@@ -262,17 +290,19 @@ prisma/schema.prisma      # Exhibit, Source, StoryItem, MuseumEvent, GuestbookEn
 prisma/seed.ts            # idempotentni seed z dejstvi iz javnih virov
 src/app/page.tsx          # enostranska aplikacija muzeja
 src/components/museum/    # pogleji: Domov, Zbirka, Zgodbe, Karta, Dogodki, O muzeju, Knjiga, Za kuliso
-src/lib/i18n.tsx          # SLO/EN slovar
+src/lib/i18n.tsx          # SLO/HRV/EN slovar
 src/lib/contributions.ts  # moderacija prispevkov (honeypot, hitrost, hevristika)
 src/lib/community-content.ts  # seme vpisov in spominov (git kot CMS)
 src/lib/behind-scenes.ts  # zapisi Za kuliso
 src/app/api/              # REST + odprti podatki
+public/models/            # 3D-modeli (GLB/USDZ, model-viewer + AR)
+research-griblje/         # raziskava vsebin o Gribljah: 4 sintezni dokumenti (raw/ lokalno)
 public/images/authentic/  # avtentične fotografije (Wikimedia Commons / javna last)
 ```
 
 ## Izjava o standardu / Standard statement
 
 Projekt implementira dimenzije, ki jih meri norveška nagrada *Årets museum*:
-dvojezična vsebina, univerzalna zasnova dostopnosti, javna izjava o dostopnosti,
+trojezična vsebina (SLO/HRV/EN), univerzalna zasnova dostopnosti, javna izjava o dostopnosti,
 odprti podatki in API, program dogodkov, povezanost s skupnostjo, iskrena
 dokumentacija provenience ter ločevanje avtentičnega gradiva od interpretacij.
