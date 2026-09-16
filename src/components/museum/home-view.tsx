@@ -13,6 +13,7 @@ import { MuseumQuiz } from "@/components/museum/museum-quiz";
 import { WalksSection } from "@/components/museum/walks-section";
 import { GuideTeaser } from "@/components/museum/guide-dialog";
 import { ObjectOfDay } from "@/components/museum/object-of-day";
+import { RecordOfMonth } from "@/components/museum/record-of-month";
 import { MinuteStories } from "@/components/museum/minute-stories";
 import { PlanVisit } from "@/components/museum/plan-visit";
 import { SeasonalShelf } from "@/components/museum/seasonal-shelf";
@@ -176,6 +177,9 @@ export function HomeView({
           ))}
         </div>
       </section>
+
+      {/* ZAPIS MESECA — uredniška rubrika (vzorec: Picture of the month, NG London) */}
+      <RecordOfMonth exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />
 
       {/* DANES V MUZEJU — dnevni zapis (vzorec: object of the day) */}
       <ObjectOfDay exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />

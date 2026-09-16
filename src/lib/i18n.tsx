@@ -88,6 +88,18 @@ export const ui = {
       kicker: "Danes v muzeju",
       open: "Odpri današnji zapis",
     },
+    monthly: {
+      kicker: "Zapis meseca",
+      open: "Odpri mesečni zapis",
+      whyLabel: "Zakaj ta zapis ta mesec",
+      rotationNote: "menjava vsakega 1. v mesecu",
+      curatorSig: "izbor vodi koledar vasi",
+    },
+    audience: {
+      minutesSr: "Dolžina branja zapisa",
+      forKids: "za otroke",
+      forKidsTitle: "Postaja družinskega sprehoda — Mali raziskovalci",
+    },
     plan: {
       title: "Načrt obiska",
       sub: "Kako obiskati muzej — digitalni je odprt vedno, vas pa je najlepša od pomladi do jeseni.",
@@ -1108,6 +1120,18 @@ export const ui = {
       kicker: "Today in the museum",
       open: "Open today's record",
     },
+    monthly: {
+      kicker: "Record of the month",
+      open: "Open the monthly record",
+      whyLabel: "Why this record this month",
+      rotationNote: "changes on the 1st of each month",
+      curatorSig: "selection guided by the village calendar",
+    },
+    audience: {
+      minutesSr: "Reading time of the record",
+      forKids: "for kids",
+      forKidsTitle: "A stop on the family walk — Young explorers",
+    },
     plan: {
       title: "Plan your visit",
       sub: "How to visit the museum — the digital one is always open, and the village is at its best from spring to autumn.",
@@ -2121,6 +2145,18 @@ export const ui = {
     daily: {
       kicker: "Danas u muzeju",
       open: "Otvori današnji zapis",
+    },
+    monthly: {
+      kicker: "Zapis mjeseca",
+      open: "Otvori mjesečni zapis",
+      whyLabel: "Zašto ovaj zapis ovog mjeseca",
+      rotationNote: "promjena svakog 1. u mjesecu",
+      curatorSig: "izbor vodi kalendar sela",
+    },
+    audience: {
+      minutesSr: "Duljina čitanja zapisa",
+      forKids: "za djecu",
+      forKidsTitle: "Postaja obiteljske šetnje — Mali istraživači",
     },
     plan: {
       title: "Plan posjeta",

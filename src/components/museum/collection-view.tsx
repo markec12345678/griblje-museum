@@ -3,10 +3,11 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { CheckCircle2, Network, Search, SlidersHorizontal, Sparkles, X } from "lucide-react";
+import { CheckCircle2, Clock3, Footprints, Network, Search, SlidersHorizontal, Sparkles, X } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { normalize } from "@/lib/normalize";
 import { useVisited } from "@/lib/visit-tracker";
+import { isForKids, readingMinutes } from "@/lib/audience";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
 import { THEME_HUBS } from "@/lib/theme-hubs";
@@ -346,6 +347,26 @@ export function CollectionView({
                 <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground">
                   {es.summary(exhibit)}
                 </p>
+                {/* Oznake občinstva (vzorec MoMA: komu in koliko časa je zapis namenjen) */}
+                <div className="flex flex-wrap items-center gap-2.5 text-xs text-muted-foreground">
+                  <span
+                    className="inline-flex items-center gap-1"
+                    title={t.audience.minutesSr}
+                  >
+                    <Clock3 className="h-3.5 w-3.5" aria-hidden="true" />
+                    <span className="sr-only">{t.audience.minutesSr}: </span>
+                    <span aria-hidden="true">≈ {readingMinutes(exhibit)} min</span>
+                  </span>
+                  {isForKids(exhibit.slug) && (
+                    <span
+                      title={t.audience.forKidsTitle}
+                      className="inline-flex items-center gap-1 rounded-full border border-accent/35 bg-accent/10 px-2 py-0.5 font-medium text-accent"
+                    >
+                      <Footprints className="h-3 w-3" aria-hidden="true" />
+                      {t.audience.forKids}
+                    </span>
+                  )}
+                </div>
                 <span className="mt-auto inline-flex items-center gap-1.5 pt-2 text-sm font-medium text-primary">
                   {t.collection.openRecord}
                   <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">

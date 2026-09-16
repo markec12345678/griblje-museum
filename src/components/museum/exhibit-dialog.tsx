@@ -7,6 +7,7 @@ import {
   ArrowRight,
   BookOpen,
   Check,
+  Clock3,
   Crop,
   Download,
   ExternalLink,
@@ -40,6 +41,7 @@ import { ObjectBiography } from "@/components/museum/object-biography";
 import { ObjectMemories } from "@/components/museum/object-memories";
 import { Model3DView, Model3DToggle } from "@/components/museum/model-3d-view";
 import { trackStat } from "@/lib/stats-client";
+import { readingMinutes } from "@/lib/audience";
 import { isPortraitImage, imageDimensions } from "@/lib/image-dimensions";
 import type { ExhibitCategory, ExhibitDTO, SourceType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
@@ -321,6 +323,14 @@ export function ExhibitDialog({
                   <EvidenceBadge status={exhibit.evidenceStatus} />
                   <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                     {es.period(exhibit)}
+                  </span>
+                  <span
+                    className="inline-flex items-center gap-1 text-xs text-muted-foreground"
+                    title={t.audience.minutesSr}
+                  >
+                    <Clock3 className="h-3.5 w-3.5" aria-hidden="true" />
+                    <span className="sr-only">{t.audience.minutesSr}: </span>
+                    <span aria-hidden="true">≈ {readingMinutes(exhibit)} min</span>
                   </span>
                   <span className="ml-auto flex flex-wrap gap-2">
                     <Button
