@@ -758,12 +758,13 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The waves of departure for America, Argentina and Australia scattered Griblje around the world in the 20th century; money orders from America built houses, and the family trees are still being traced today.",
     storySi:
-      "Vsak zapis te zbirke ima svojo čezoceansko različico: ljudje, ki so vas zapustili. Slovensko izseljenstvo je ena največjih premikajočih sil 19. in 20. stoletja — odhodi so doleteli vsako vas, Griblje ne izjema.\n\nPrvi in največji val je bil gospodarski: od osemdesetih let 19. stoletja do prve svetovne vojne se je na pot v Združene države podalo na stotine tisočev Slovencev; potovali so prek Trsta in Antwerpna, kjer je čez Atlantik peljala linija Red Star Line. Pastel Eugeena Van Mieghema iz leta 1899 kaže izseljence na antwerpenski ulici pred pisarnami te družbe — ne Gribljcev samih, a natanko ceste, po kateri so hodili. Med vojnami se je pot stekla v Argentino in Kanado, po letu 1945 pa v Argentino, Avstralijo in Kanado znova — tokrat politično. Šestdeseta in sedemdeseta leta so prinesla zimske delavce: moški so odhajali na gradbišča Nemčije, Švice in Avstrije, poleti pa se vračali k žetvi. Po letu 1991 se je kolo obrnilo še enkrat.\n\nIzseljenstvo ni samo odhod — je tudi denar in pisma. Mandati, denarni nakazi iz Amerike, so v domačih vaseh gradili hiše in odkupovali zemljo; na stenah so stale fotografije iz Clevelanda in Pittsburga, v omarah pa obleke, ki so jih nosili »tam«. V Gribljah je v isti hiši odraščal tudi Niko Županič, ki je med prvo svetovno vojno v Združenih državah navduševal izseljence za združitev Slovanov — njegov zapis stoji v tej zbirki.\n\nMuzej iskreno priznava: imena gribeljskih izseljenskih rodov še niso zapisana. Rodovi v Združenih državah, Avstraliji, Argentini in Nemčiji — vsak dopis, fotografija ali mandat bo nov vir. Vas, ki jo je zgodovina raztresla po svetu, se lahko v muzeju spet zbere: hiše na obeh straneh oceana namreč pripadajo istim rodbinam.",
+      "Vsak zapis te zbirke ima svojo čezoceansko različico: ljudje, ki so vas zapustili. Slovensko izseljenstvo je ena največjih premikajočih sil 19. in 20. stoletja — odhodi so doleteli vsako vas, Griblje ne izjema.\n\nPrvi in največji val je bil gospodarski: od osemdesetih let 19. stoletja do prve svetovne vojne se je na pot v Združene države podalo na stotine tisočev Slovencev; potovali so prek Trsta in Antwerpna, kjer je čez Atlantik peljala linija Red Star Line. Fotografija z začetka 20. stoletja kaže izseljence na palubi čezoceanske ladje — ne Gribljcev samih, a natanko pot čez ocean, ki so jo pluli. Med vojnami se je pot stekla v Argentino in Kanado, po letu 1945 pa v Argentino, Avstralijo in Kanado znova — tokrat politično. Šestdeseta in sedemdeseta leta so prinesla zimske delavce: moški so odhajali na gradbišča Nemčije, Švice in Avstrije, poleti pa se vračali k žetvi. Po letu 1991 se je kolo obrnilo še enkrat.\n\nIzseljenstvo ni samo odhod — je tudi denar in pisma. Mandati, denarni nakazi iz Amerike, so v domačih vaseh gradili hiše in odkupovali zemljo; na stenah so stale fotografije iz Clevelanda in Pittsburga, v omarah pa obleke, ki so jih nosili »tam«. V Gribljah je v isti hiši odraščal tudi Niko Županič, ki je med prvo svetovno vojno v Združenih državah navduševal izseljence za združitev Slovanov — njegov zapis stoji v tej zbirki.\n\nMuzej iskreno priznava: imena gribeljskih izseljenskih rodov še niso zapisana. Rodovi v Združenih državah, Avstraliji, Argentini in Nemčiji — vsak dopis, fotografija ali mandat bo nov vir. Vas, ki jo je zgodovina raztresla po svetu, se lahko v muzeju spet zbere: hiše na obeh straneh oceana namreč pripadajo istim rodbinam.",
     storyEn:
-      "Every record in this collection has its trans-oceanic counterpart: the people who left the village. Slovene emigration is one of the greatest moving forces of the 19th and 20th centuries — the departures reached every village, Griblje no exception.\n\nThe first and largest wave was economic: from the 1880s to the First World War hundreds of thousands of Slovenes set out for the United States; they travelled via Trieste and Antwerp, where the Red Star Line carried them across the Atlantic. Eugeen Van Mieghem's pastel of 1899 shows emigrants on an Antwerp street before the company's offices — not Griblje people themselves, but precisely the road they walked. Between the wars the road ran to Argentina and Canada; after 1945 to Argentina, Australia and Canada again — this time political. The 1960s and 1970s brought the winter workers: men left for the building sites of Germany, Switzerland and Austria and returned for the harvest. After 1991 the wheel turned once more.\n\nEmigration is not only departure — it is money and letters. The money orders from America built houses and bought land in the home villages; photographs of Cleveland and Pittsburgh stood on walls, and wardrobes held the clothes worn \"over there\". In Griblje the same house also reared Niko Županič, who during the First World War kindled the emigrants of the United States for the union of the South Slavs — his record stands in this collection.\n\nThe museum honestly admits: the names of Griblje's emigrant families are not yet written down. The families in the United States, Australia, Argentina and Germany — every letter, photograph or money order will be a new source. A village scattered across the world by history can gather again in a museum: the houses on both sides of the ocean belong to the same families.",
+      "Every record in this collection has its trans-oceanic counterpart: the people who left the village. Slovene emigration is one of the greatest moving forces of the 19th and 20th centuries — the departures reached every village, Griblje no exception.\n\nThe first and largest wave was economic: from the 1880s to the First World War hundreds of thousands of Slovenes set out for the United States; they travelled via Trieste and Antwerp, where the Red Star Line carried them across the Atlantic. A photograph from the early 20th century shows emigrants on the deck of a transatlantic liner — not Griblje people themselves, but precisely the ocean road they sailed. Between the wars the road ran to Argentina and Canada; after 1945 to Argentina, Australia and Canada again — this time political. The 1960s and 1970s brought the winter workers: men left for the building sites of Germany, Switzerland and Austria and returned for the harvest. After 1991 the wheel turned once more.\n\nEmigration is not only departure — it is money and letters. The money orders from America built houses and bought land in the home villages; photographs of Cleveland and Pittsburgh stood on walls, and wardrobes held the clothes worn \"over there\". In Griblje the same house also reared Niko Županič, who during the First World War kindled the emigrants of the United States for the union of the South Slavs — his record stands in this collection.\n\nThe museum honestly admits: the names of Griblje's emigrant families are not yet written down. The families in the United States, Australia, Argentina and Germany — every letter, photograph or money order will be a new source. A village scattered across the world by history can gather again in a museum: the houses on both sides of the ocean belong to the same families.",
     evidenceStatus: "TRADITION",
-    image: "/images/authentic/izseljenci.jpg",
-    imageCredit: "Eugeen Van Mieghem, 1899 · Wikimedia Commons · javna last",
+    image: "/images/authentic/izseljenci-ladja.jpg",
+    imageCredit:
+      "Foto: zbirka George Grantham Bain (~1907) · Wikimedia Commons · javna last — izseljenci na palubi čezoceanske ladje",
     yearFrom: 1880,
     featured: false,
     sources: [
@@ -794,14 +795,14 @@ export const seedExhibits: SeedExhibit[] = [
         noteEn: "The road of much of the Slovene emigration to the USA ran through Antwerp and this company.",
       },
       {
-        key: "commons-emigranti",
-        nameSi: "Wikimedia Commons: Emigranten in de Montevideostraat (Eugeen Van Mieghem, 1899)",
-        nameEn: "Wikimedia Commons: Emigrants in Montevideo Street (Eugeen Van Mieghem, 1899)",
+        key: "commons-izseljenci-ladja",
+        nameSi: "Wikimedia Commons: Izseljenci na palubi ladje SS Friedrich der Grosse (~1907, zbirka George Grantham Bain)",
+        nameEn: "Wikimedia Commons: Emigrants on the deck of SS Friedrich der Grosse (~1907, George Grantham Bain Collection)",
         sourceType: "fotografija",
-        license: "Public domain (Eugeen Van Mieghem, 1899)",
-        url: "https://commons.wikimedia.org/wiki/File:Emigranten_in_de_Montevideostraat,_Eugeen_Van_Mieghem,_1899.jpg",
-        noteSi: "Avtentična upodobitev izseljencev pred pisarnami Red Star Line v Antwerpnu — glavna slika zapisa; ne prikazuje Gribljcev, ampak njihovo pot.",
-        noteEn: "An authentic depiction of emigrants before the Red Star Line offices in Antwerp — the record's main image; it does not show Griblje people, but their road.",
+        license: "Public domain",
+        url: WM("Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg"),
+        noteSi: "Glavna slika zapisa: izseljenci na palubi med prečkanjem Atlantika — ne Gribljcev, a natanko njihova čezoceanska pot.",
+        noteEn: "The record's main image: emigrants on deck crossing the Atlantic — not Griblje people, but precisely their trans-ocean road.",
       },
       {
         key: "wiki-zupanic-emigracija",
@@ -1142,26 +1143,23 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The typical Bela krajina house of the 19th century was a low one- or two-room building with lime-whitewashed walls and a roof of rye straw. For the poorest there was also the polkoplje — a dwelling half dug into the ground, part timber, whose earth protected against winter and heat alike. It was built from what lay nearest: stone from the field, clay from the yard, timber from the wood — transport cost more than material.\n\nThe entrance led through the pod — a vaulted passage with tools and the cart. The heart of the home was the black kitchen: an open hearth, the bread oven, and smoke that preserved in the chimney everything made of wood and straw — the hams and bacons hanging there until spring. Behind the kitchen slept the kamra; the byre under the same roof gave the livestock shelter and the house a warmth that passed through the shared wall. In winters on the edge of survival people and livestock breathed the same air — a closeness hard to imagine today, but one that meant life then.\n\nEvery spring, before Easter, the house was whitewashed with lime — a rite of cleanliness that renewed the whole village in a day; after every winter the thatched roof was mended with new sheaves of rye. Lime-white and straw-gold were the two colours by which the landscape still knows itself: the house built by poverty became its most lasting sign.\n\nThis building type is attested for all of Bela krajina in Slovene ethnography — but examples in Griblje itself still await village photographs and testimonies, which is why the record is marked as tradition rather than a documented village case. The museum is looking for: a photograph of the last thatched roof in the village, the name of the last mistress who limed the walls at Easter, and a memory of a house someone still remembers. Every answer will bring the record closer to Griblje.",
     evidenceStatus: "TRADITION",
-    image: "/images/authentic/stara-hisa.jpg",
-    imageCredit: "Foto: Eleassar · Wikimedia Commons · CC BY-SA 3.0",
+    image: "/images/authentic/hisa-adlesici.jpg",
+    imageCredit:
+      "Foto: Fran Vesel, 24. 8. 1920 · Wikimedia Commons · javna last — hiša v Adlešičih (pogorela med 2. svetovno vojno)",
     yearFrom: 1800,
     yearTo: 1899,
     featured: false,
     sources: [
       
       {
-        key: "commons-stara-hisa",
-        nameSi:
-          "Wikimedia Commons: Črnomelj — stara hiša (fotografija, avtor: Eleassar)",
-        nameEn:
-          "Wikimedia Commons: Črnomelj — an old house (photograph, author: Eleassar)",
+        key: "commons-hisa-adlesici",
+        nameSi: "Wikimedia Commons: Hiša v Adlešičih (Fran Vesel, 1920) — belokranjska domačija, pogorela med drugo svetovno vojno",
+        nameEn: "Wikimedia Commons: A house in Adlešiči (Fran Vesel, 1920) — a Bela krajina farmstead that burned in the Second World War",
         sourceType: "fotografija",
-        license: "CC BY-SA 3.0 (avtor: Eleassar)",
-        url: WM("%C4%8Crnomelj_-_stara_hi%C5%A1a.jpg"),
-        noteSi:
-          "Avtentična fotografija stavbe v Črnomlju (občina Gribelj) — glavna slika zapisa; prikazuje tipično lokalno arhitekturo, ne gribeljske domačije.",
-        noteEn:
-          "Authentic photograph of a building in Črnomelj (Griblje's municipality) — the record's main image; it shows typical local architecture, not a specific Griblje farmstead.",
+        license: "Public domain",
+        url: WM("Hi%C5%A1a_v_Adle%C5%A1i%C4%8Dih.jpg"),
+        noteSi: "Glavna slika zapisa: avtentična belokranjska domačija iz leta 1920 — Adlešiči so sosednja vas ob Kolpi; gribeljski primeri še čakajo na vaške fotografije.",
+        noteEn: "The record's main image: an authentic Bela krajina farmstead of 1920 — Adlešiči is a neighbouring village on the Kolpa; Griblje examples still await village photographs.",
       },
       {
         key: "etnografija",
@@ -1198,25 +1196,22 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "The wine route of Bela krajina runs from Metlika towards Semič, Vinica and Dragatuš; Griblje stands at its southern edge. Wine in Bela krajina has ruled on limestone and sun: the hills by the Kolpa gave it a warm foot, the river a cool head. Belina and modra frankinja, Welschriesling and gamay — the varieties that yield cviček, the light Bela krajina table wine — thrive here on the red soil over limestone, known in the region as jerina. On the table cviček stood every day — a light wine drunk like water; črnina came for the holidays. That gradation between weekday and feast belonged to the whole farming kitchen: the everyday was poor, but the feast knew how to celebrate.\n\nAbove the vineyards stood the zidnice — stone cellars in which everyone kept a cool corner: the must fermented quietly in them, and the wine matured in casks until it reached the table. At harvest whole families gathered in the zidnice: the children carried the grapes, the women the white varieties, the men the red. Autumn was the village's wine room: harvest carts, laughter and the smell of must rising from the cellar doors from morning to night — and the first week of November, when every house was a little winemaker's.\n\nThe crown of the region is metliška črnina PTP, a protected traditional denomination: a darker, fuller wine from the red varieties of Bela krajina, whose renown reaches into the 19th century. The first bottled metliška črnina left the Metlika cellar in 1968 — since then it has been famed as the wine that represents Bela krajina across the country.\n\nThe museum will add the names of Griblje's wine farms as the locals enter them — until then the record holds the region's wine, not yet the village's. Every registered vineyard will draw a new triangle between house, hill and cellar: a wine map of Griblje that no one has drawn yet.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/ravnace.jpg",
-    imageCredit: "Foto: Andrejj · Wikimedia Commons · CC BY-SA 4.0 · Ravnace pri Metliki",
+    image: "/images/authentic/vino-presa.jpg",
+    imageCredit:
+      "Foto: Fran Vesel, 23. 8. 1920 · Wikimedia Commons · javna last — belokranjski vinogradnik pri preši v keli",
     yearFrom: 1800,
     featured: false,
     sources: [
       
       {
-        key: "commons-ravnace",
-        nameSi:
-          "Wikimedia Commons: Ravnace pri Metliki — vas in vinogradi (fotografija, avtor: Andrejj)",
-        nameEn:
-          "Wikimedia Commons: Ravnace near Metlika — village and vineyards (photograph, author: Andrejj)",
+        key: "commons-vino-presa",
+        nameSi: "Wikimedia Commons: Belokranjski vinogradnik pri preši v keli (Fran Vesel, 1920)",
+        nameEn: "Wikimedia Commons: A Bela krajina winemaker at the press in his cellar (Fran Vesel, 1920)",
         sourceType: "fotografija",
-        license: "CC BY-SA 4.0 (avtor: Andrejj)",
-        url: WM("Ravnace.jpg"),
-        noteSi:
-          "Avtentična fotografija vinske pokrajine Bele krajine — glavna slika zapisa; vinogradi Ravnac so 10 km zahodno od Gribelj.",
-        noteEn:
-          "Authentic photograph of the wine landscape of Bela krajina — the record's main image; the Ravnace vineyards lie 10 km west of Griblje.",
+        license: "Public domain",
+        url: WM("Belokranjski_vinogradnik_pri_pre%C5%A1i_v_keli.jpg"),
+        noteSi: "Glavna slika zapisa: belokranjski vinogradnik pri preši v keli — avtentična etnografska fotografija vinskega vsakdana te dežele.",
+        noteEn: "The record's main image: a Bela krajina winemaker at his press — an authentic ethnographic photograph of the region's wine everyday.",
       },
       {
         key: "mkgp",
@@ -1773,8 +1768,9 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "In 1869 Vienna issued the Reichsvolksschulgesetz — an imperial law that made schooling the duty of every child from six to fourteen. Across the lands of the Empire village schools grew up: one classroom, one teacher, all the grades at once. When such a school came to Griblje, in which house it stood and who taught in it — these details the collection is still seeking; this record builds on the documented world that surrounded every village school of that time.\n\nThe village school kept its own order: a slate instead of an exercise book, chalk instead of a pen, counting aloud to a hundred and a primer under the pillow. The order shifted with the farming year as well — at harvest and haying the benches stood empty, for on a farm children's hands counted as much as grown ones. Every completed school day was therefore a small victory.\n\nWhoever could read carried the world into the village: the newspaper passed from house to house, and the letters from America that families listened to by the petroleum lamp. Reading was a form of the village post, and the school was its office. Out of it grew the roads this collection already knows: Niko Županič, the boy from Griblje, became a university professor; Anton Filak, a hand from the plough, a world champion of ploughing.\n\nBela krajina added another chapter to the school: during the Second World War it was one of the freest territories of occupied Europe — with schools, print shops and hospitals. After the Italian capitulation in September 1943 a Partisan gymnasium operated in Črnomelj; the building in this record's photograph is precisely that one — today a music school. In a year when lessons across Europe were forbidden or scattered, the land by the Kolpa sustained even a grammar school.\n\nBefore the branch school of OŠ Loka at Griblje stands the memorial to the thirteen fallen villagers — school and memory on the same threshold (see the record of the memorial).\n\nThe record long asked when the school came to Griblje; about its present it knows precisely. The branch school of Griblje, part of OŠ Loka Črnomelj, counted twenty-one pupils in two combined departments in the school year 2023/2024: the first and second grades were taught by Branka Weiss and Ana Kočevar, the third, fourth and fifth by Jana Štajdohar, English by David Štefanič; Nežka Filak cares for the morning snack and the school's order. In September 2026 four first-graders crossed the threshold — the older pupils welcomed them with a song, a word and a cake. From slates into the world, and back again.\n\nThe museum is looking for class photographs, teachers' names and schoolbooks bearing the names of Griblje's children. The village school left behind the greatest archive and the least memory: who today still remembers what was written on the slate?",
     evidenceStatus: "TRADITION",
-    image: "/images/authentic/sola-crnomelj.jpg",
-    imageCredit: "Foto: Bb63lj · Wikimedia Commons · CC BY 4.0",
+    image: "/images/authentic/sola-abecednik.jpg",
+    imageCredit:
+      "Primož Trubar: Abecedarium (1550) · Wikimedia Commons · javna last — prvi slovenski abecednik, začetek poti »iz tablic v svet«",
     yearFrom: 1869,
     featured: false,
     sources: [
@@ -1815,18 +1811,14 @@ export const seedExhibits: SeedExhibit[] = [
           "The September 2026 moment: the older pupils' welcome with a song and a word, closed with a cake.",
       },
       {
-        key: "commons-sola-crnomelj",
-        nameSi:
-          "Wikimedia Commons: stavba partizanske gimnazije v Črnomlju, danes glasbena šola (avtor: Bb63lj)",
-        nameEn:
-          "Wikimedia Commons: the building of the Partisan gymnasium in Črnomelj, today a music school (author: Bb63lj)",
+        key: "commons-abecednik",
+        nameSi: "Wikimedia Commons: Primož Trubar — Abecednik (1550), prvi slovenski tiskani priročnik za branje",
+        nameEn: "Wikimedia Commons: Primož Trubar — Abecedarium (1550), the first Slovene printed reading book",
         sourceType: "fotografija",
-        license: "CC BY 4.0 (avtor: Bb63lj)",
-        url: "https://commons.wikimedia.org/wiki/File:Glasbena_%C5%A1ol_%C4%8Crnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
-        noteSi:
-          "Glavna slika zapisa: stavba v Črnomlju, ne v Gribljah — priča partizanske gimnazije in edini fotografirani kos te zgodbe.",
-        noteEn:
-          "The record's main image: a building in Črnomelj, not in Griblje — a witness of the Partisan gymnasium and the only photographed piece of that story.",
+        license: "Public domain",
+        url: WM("Primo%C5%BE_Trubar_-_Abecednik.jpg"),
+        noteSi: "Glavna slika zapisa: Trubarjev abecednik iz leta 1550 — simbol poti »iz tablic v svet«, ki se je v Gribljah začela z blagoslovom šolskega poslopja leta 1889.",
+        noteEn: "The record's main image: Trubar's primer of 1550 — the symbol of the road \"from slates into the world\" that began at Griblje with the blessing of the school building in 1889.",
       },
       {
         key: "commons-vaska-sola",
@@ -1885,12 +1877,25 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "Every Slovene village lives under three roofs together: the church, the school and the fire station. Griblje has all three — and the fire station at Griblje 35B is the youngest and at the same time the most everyday of them: the hall in which drills, meetings and celebrations take their turns, and the roof beneath which the whole Griblje 20th century has passed.\n\nThe Volunteer Fire Brigade of Griblje was founded in 1927 — in the decade when firefighting became the new order of the Slovene village: whoever had hands, had a duty. Who the first commander was, which was the first hand-operated pump, and where exactly the founding assembly of 1927 wrote down its names — those records still await an archive; what is written in public is the year in the name, and a living society with a hall of its own.\n\nThe firemen carried two roles at once. The first is defence: fire in the straw, in the granary, in the bread oven was for centuries the village's worst misfortune — much of Slovene firefighting grew precisely out of that fear. The second is the body of the village: the hall where harvests and haymaking were auctioned, plays were staged, engagements concluded and countless evenings spent — and the place from which, at every emergency, the humanitarian impulse grew that fire brigades know better than any other organisation.\n\nIn the jubilee year 2026 the brigade stood at the centre again: its president Darjot Piškurič helped organise the five-hundredth anniversary of the church of St. Vitus, and with the publication of the memorial booklet Memento the name PGD Griblje 1927 was written beside it — together with the Črnomelj town museum collection. A year later, in 2027, the brigade will mark its centenary: a hundred years hand in hand is an age that only a handful of village organisations ever reach.\n\nThe museum is looking for what the hall still holds: photographs of the station and the drills of the 20th century, the names of the commanders, the founding records and the old hand pumps. The fire station keeps the village's longest living memory — this record should give it a shelf.",
     evidenceStatus: "CORROBORATED",
-    yearFrom: 1927,
+    yearFrom: 1927,    image: "/images/authentic/pgd-crpalka-1924.jpg",
+    imageCredit:
+      "Foto: Janez Novak, Gasilski muzej Slovenije (Metlika) · Wikimedia Commons · CC BY 2.5 — gasilska ročna črpalka iz leta 1924",
+
     lat: 45.5754,
     lng: 15.2928,
     coordsApprox: true,
     featured: false,
     sources: [
+      {
+        key: "commons-pgd-crpalka",
+        nameSi: "Wikimedia Commons: Gasilska črpalka iz leta 1924 (fotograf: Janez Novak, Gasilski muzej Slovenije, Metlika)",
+        nameEn: "Wikimedia Commons: A fire hand pump from 1924 (photographer: Janez Novak, Fire Museum of Slovenia, Metlika)",
+        sourceType: "fotografija",
+        license: "CC BY 2.5 (fotograf: Janez Novak)",
+        url: WM("Gasilska_crpalka_1924.JPG"),
+        noteSi: "Glavna slika zapisa: ročna brizgalna iz leta 1924 — takšna oprema je bila vsakdan gasilskih društev v času ustanovitve PGD Griblje (1927); posneto v Gasilskem muzeju Slovenije v Metliki.",
+        noteEn: "The record's main image: a hand pump from 1924 — the everyday equipment of village fire brigades when PGD Griblje was founded (1927); photographed at the Fire Museum of Slovenia in Metlika.",
+      },
       {
         key: "pgd-facebook",
         nameSi: "PGD Griblje — uradna stran na Facebooku (»ustanovljeno leta 1927«)",
@@ -1949,9 +1954,9 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "April 1941 brought the war to the Kolpa: the Yugoslav state collapsed, and Bela krajina fell under Italian authority, annexed to the Province of Ljubljana — territory Fascist Italy had measured out for itself. Posts grew up along the river and the roads; one of them stood at Griblje, where the Italian border police controlled crossings, traffic and the border. The occupation was not silent: raids, prohibitions, the requisition of grain and livestock — and a fear that never wrote itself into the archives.\n\nOn 6 September 1941, in summer and in broad daylight, something happened on the road between Črnomelj and Griblje that places Bela krajina among the earliest resistance in Slovenia. Four fighters of the Bela krajina Partisan group, gathered in the camp at Židovec, ambushed a patrol of Italian border police carrying food and ammunition from Črnomelj to the post at Griblje. Two of the patrol died on the spot, three were wounded; one of the wounded died later. For the village on the Kolpa, the Second World War began that day — not with a distant front, but with shooting on its own road.\n\nThis record moves Griblje's war history three years back: until now the collection began with 1944 and the Allied aircraft over the field. The names of the four fighters, the fate of the post and the details of the day still await the archive and the villagers' memory — the museum openly admits these gaps rather than filling them with conjecture.\n\nThe site of the fighting is not forgotten. On 24 July 1960 a memorial stone, designed by the sculptor Jakob Savinšek, was raised on the Črnomelj–Griblje road; the Institute for the Protection of Cultural Heritage of Slovenia keeps it in the register of immovable cultural heritage under EŠD 19324. Together with the memorial to the thirteen fallen villagers before the school (EŠD 19326) it builds the same memory: the war at Griblje did not last from 1944 — it lasted from that first September day of 1941.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/zaseda-1941.jpg",
+    image: "/images/authentic/zaseda-spomenik.jpg",
     imageCredit:
-      "Foto: neznani avtor, 1941 · Wikimedia Commons · javna last — parada karabinjerjev v Ljubljani (ilustrativna fotografija okupacijske sile)",
+      "Foto: digitalna zbirka Spominska obeležja (Knjižnica Črnomelj) · Kamra · CC BY-NC — spominski kamen zasede na cesti Črnomelj–Griblje",
     yearFrom: 1941,
     lat: 45.5706,
     lng: 15.2848,
@@ -1989,14 +1994,14 @@ export const seedExhibits: SeedExhibit[] = [
         noteEn: "The occupation framework: the annexation of Bela krajina to the Province of Ljubljana.",
       },
       {
-        key: "commons-karabinjerji",
-        nameSi: "Wikimedia Commons: Parada karabinjerov v Ljubljani (1941, neznani avtor)",
-        nameEn: "Wikimedia Commons: Parade of carabinieri in Ljubljana (1941, unknown author)",
+        key: "kamra-foto-zaseda",
+        nameSi: "Kamra (Knjižnica Črnomelj): fotografija spominskega kamna zasede na cesti Črnomelj–Griblje",
+        nameEn: "Kamra (Črnomelj Library): a photograph of the ambush memorial stone on the Črnomelj–Griblje road",
         sourceType: "fotografija",
-        license: "Public domain",
-        url: WM("Parada_karabinjerov_v_Ljubljani.jpg"),
-        noteSi: "Glavna slika zapisa: parada v Ljubljani, ne dogodek v Gribljah — ilustrativna fotografija okupacijske sile, katere postojanka je stala v vasi.",
-        noteEn: "The record's main image: a parade in Ljubljana, not the event at Griblje — an illustrative photograph of the occupying force whose post stood in the village.",
+        license: "CC BY-NC (Kamra)",
+        url: "https://www.kamra.si/mm-elementi/spomenik-napadu-na-italijanske-mejne-policiste/",
+        noteSi: "Glavna slika zapisa: pravi spominski kamen zasede iz leta 1960 (EŠD 19324), iz digitalne zbirke Spominska obeležja v občini Črnomelj.",
+        noteEn: "The record's main image: the actual memorial stone of the ambush raised in 1960 (EŠD 19324), from the digital collection Memorials of the Municipality of Črnomelj.",
       },
     ],
   },
@@ -2012,13 +2017,13 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Before the branch school at Griblje stands the stone memorial to the thirteen villagers taken by the Second World War; it was unveiled on 10 September 1961.",
     storySi:
-      "Druga svetovna vojna je iz Gribelj vzela trinajst imen. Enajst vaščanov je padlo v boju kot partizani, dva pa sta umrla kot žrtvi fašističnega nasilja. Za vsako od teh številk je stal nekdo, ki je nosil ime, hišo in sosedstvo: sin, brat, sosed. Zgodovina, ki jo nosi en sam kamen.\n\nSpomenik sta postavila in odkrila vaščana sama — Krajevni odbor Zveze borcev Griblje — 10. septembra 1961, šestnajst let po koncu vojne, ko so bili spomini še živi in imena še niso bila vprašanje. Stoji pred podružnično šolo Osnovne šole Loka v Gribljah: na pragu, kjer se vsak dan zbira otroški vrstni red, ki se ga je vojna dotaknila najbolj nepravično. Zavod za varstvo kulturne dediščine Slovenije vodi spomenik v registru nepremične kulturne dediščine pod številko EŠD 19326.\n\nKamen ima v tej zbirki soseda: kmalu proti Črnomlju, na isti cesti, stoji spominski kamen zasede iz septembra 1941 (zapis zaseda-1941) — prve oborožene akcije partizanov v okolici. Skupaj pričata, da vojna ni prišla v Griblje z zavezniškimi letali leta 1944, ampak tri leta prej: z okupacijo, postojanko in prvim strelom. Trinajst imen na spomeniku je najkrajši in najtežji seznam, ki ga ta muzej lahko objavi.\n\nTa zapis je odkrito nepopoln: fotografija gribljanskega spomenika še ni v zbirki — slika tega zapisa je partizansko spominsko obeležje v Trebenčah, podobnega kamna in istega spomina, da zgodba ne stoji brez obraza. Pravi posnetek kamna z imeni bo muzej najraje prejel od domačina. Enako velja za prepis trinajstih imen s spomenika: ta seznam bo dopolnil spominsko knjigo muzeja — in rodovine, ki jih nosijo.",
+      "Druga svetovna vojna je iz Gribelj vzela trinajst imen. Enajst vaščanov je padlo v boju kot partizani, dva pa sta umrla kot žrtvi fašističnega nasilja. Za vsako od teh številk je stal nekdo, ki je nosil ime, hišo in sosedstvo: sin, brat, sosed. Zgodovina, ki jo nosi en sam kamen.\n\nSpomenik sta postavila in odkrila vaščana sama — Krajevni odbor Zveze borcev Griblje — 10. septembra 1961, šestnajst let po koncu vojne, ko so bili spomini še živi in imena še niso bila vprašanje. Stoji pred podružnično šolo Osnovne šole Loka v Gribljah: na pragu, kjer se vsak dan zbira otroški vrstni red, ki se ga je vojna dotaknila najbolj nepravično. Zavod za varstvo kulturne dediščine Slovenije vodi spomenik v registru nepremične kulturne dediščine pod številko EŠD 19326.\n\nKamen ima v tej zbirki soseda: kmalu proti Črnomlju, na isti cesti, stoji spominski kamen zasede iz septembra 1941 (zapis zaseda-1941) — prve oborožene akcije partizanov v okolici. Skupaj pričata, da vojna ni prišla v Griblje z zavezniškimi letali leta 1944, ampak tri leta prej: z okupacijo, postojanko in prvim strelom. Trinajst imen na spomeniku je najkrajši in najtežji seznam, ki ga ta muzej lahko objavi.\n\nFotografija tega zapisa je prava: spomenik pred gribeljsko šolo, posnet iz digitalne zbirke Spominska obeležja v občini Črnomelj (Knjižnica Črnomelj). Prepis trinajstih imen s kamna še čaka na obisk pred spomenikom: ta seznam bo dopolnil spominsko knjigo muzeja — in rodovine, ki jih nosijo.",
     storyEn:
-      "The Second World War took thirteen names from Griblje. Eleven villagers fell in battle as Partisans; two died as victims of Fascist violence. Behind each of those numbers stood someone who carried a name, a house and a neighbourhood: a son, a brother, a neighbour. A history carried by a single stone.\n\nThe memorial was raised and unveiled by the villagers themselves — the Griblje local board of the Veterans' Association — on 10 September 1961, sixteen years after the war's end, when memories were still living and names were not yet a question. It stands before the branch school of Osnovna šola Loka at Griblje: on the threshold where the children's daily order gathers — the order the war touched most unjustly. The Institute for the Protection of Cultural Heritage of Slovenia keeps the memorial in the register of immovable cultural heritage under EŠD 19326.\n\nThe stone has a neighbour in this collection: a little way towards Črnomelj, on the same road, stands the memorial stone of the September 1941 ambush (see the record of the ambush) — the first armed action of the Partisans in the area. Together they testify that the war did not come to Griblje with the Allied aircraft of 1944, but three years earlier: with the occupation, a garrison post and the first shot. The thirteen names on the memorial are the shortest and heaviest list this museum can ever publish.\n\nThis record is openly incomplete: a photograph of the Griblje memorial is not yet in the collection — the image of this record is a Partisan memorial at Trebenče, of similar stone and the same remembrance, so that the story does not stand without a face. A true photograph of the stone with its names the museum would most gladly receive from a villager. The same holds for the transcription of the thirteen names: that list will complete the museum's memorial book — and the families that carry them.",
+      "The Second World War took thirteen names from Griblje. Eleven villagers fell in battle as Partisans; two died as victims of Fascist violence. Behind each of those numbers stood someone who carried a name, a house and a neighbourhood: a son, a brother, a neighbour. A history carried by a single stone.\n\nThe memorial was raised and unveiled by the villagers themselves — the Griblje local board of the Veterans' Association — on 10 September 1961, sixteen years after the war's end, when memories were still living and names were not yet a question. It stands before the branch school of Osnovna šola Loka at Griblje: on the threshold where the children's daily order gathers — the order the war touched most unjustly. The Institute for the Protection of Cultural Heritage of Slovenia keeps the memorial in the register of immovable cultural heritage under EŠD 19326.\n\nThe stone has a neighbour in this collection: a little way towards Črnomelj, on the same road, stands the memorial stone of the September 1941 ambush (see the record of the ambush) — the first armed action of the Partisans in the area. Together they testify that the war did not come to Griblje with the Allied aircraft of 1944, but three years earlier: with the occupation, a garrison post and the first shot. The thirteen names on the memorial are the shortest and heaviest list this museum can ever publish.\n\nThe record's photograph is the real one: the memorial before the Griblje school, taken from the digital collection Memorials of the Municipality of Črnomelj (Črnomelj Library). The transcription of the thirteen names from the stone still awaits a visit to the memorial: that list will complete the museum's memorial book — and the families that carry them.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/spomenik-padlim.jpg",
+    image: "/images/authentic/spomenik-griblje.jpg",
     imageCredit:
-      "Foto: Doremo · Wikimedia Commons · CC BY-SA 3.0 — partizansko obeležje v Trebenčah (ilustrativna fotografija podobnega spomenika)",
+      "Foto: digitalna zbirka Spominska obeležja (Knjižnica Črnomelj) · Kamra · CC BY-NC — spomenik padlim vaščanom v Gribljah",
     yearFrom: 1961,
     lat: 45.5754,
     lng: 15.2928,
@@ -2056,14 +2061,14 @@ export const seedExhibits: SeedExhibit[] = [
         noteEn: "The leading source of the EŠD numbers for the memorial (19326) and both monuments on the Črnomelj–Griblje road.",
       },
       {
-        key: "commons-trebence",
-        nameSi: "Wikimedia Commons: Trebenče, Slovenija — partizansko spominsko obeležje (avtor: Doremo)",
-        nameEn: "Wikimedia Commons: Trebenče, Slovenia — a Partisan memorial (author: Doremo)",
+        key: "kamra-foto-spomenik",
+        nameSi: "Kamra (Knjižnica Črnomelj): fotografija spomenika padlim partizanom in žrtvam v Gribljah",
+        nameEn: "Kamra (Črnomelj Library): a photograph of the memorial to Griblje's fallen Partisans and victims",
         sourceType: "fotografija",
-        license: "CC BY-SA 3.0 (avtor: Doremo)",
-        url: WM("Treben%C4%8De_Slovenia_-_Partisan_memorial.JPG"),
-        noteSi: "Glavna slika zapisa: obeležje v Trebenčah — ilustrativna fotografija podobnega spomenika; fotografija gribljanskega kamna je še neobdelana (TO_COLLECT).",
-        noteEn: "The record's main image: the memorial at Trebenče — an illustrative photograph of a similar monument; a photograph of the Griblje stone is still to be collected (TO_COLLECT).",
+        license: "CC BY-NC (Kamra)",
+        url: "https://www.kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju/",
+        noteSi: "Glavna slika zapisa: pravi gribeljski spomenik s trinajstimi imeni, iz digitalne zbirke Spominska obeležja v občini Črnomelj.",
+        noteEn: "The record's main image: the actual Griblje memorial with its thirteen names, from the digital collection Memorials of the Municipality of Črnomelj.",
       },
     ],
   },
@@ -2340,9 +2345,22 @@ export const seedExhibits: SeedExhibit[] = [
       "On 27 August 1907, at the Hajdeč farm in Griblje — named after the buckwheat, hajda, once grown here in quantity — a ninth of twelve children was born. His godparents were Matija Štrucelj and Ana Požek; his father Ivan was the village mayor and keeper of the church keys: a family rooted deep in the village. Nobody could have guessed that this boy would live to an old age Slovenia had not yet seen.\n\nLife threw him about the world as it then threw country boys. He was apprenticed to a locksmith — but ran off to Ljubljana, where he played the bugarija in the tamburitza band of the Danica society. The army sent him to the mountain artillery at Mostar; he then became a professional border guard on the Serbo-Bulgarian frontier. There he did something possibly unique: he was the first border guard to learn to ski. He ordered the skis from Logatec, became a skiing instructor himself — and stayed faithful to the skill all his life. The Second World War, as a prisoner, took him to farm labour in the Sudetenland and Upper Austria; after it he served in the People's Militia.\n\nWhen life quieted, it flowed slowly and with a view: on his 108th and 110th birthdays he was visited by Borut Pahor, President of the Republic. At one hundred he did what few centenarians do — wrote a book, My Hundred Years. He played the guitar and the zither; among his school memories are the benches of the branch school in Griblje, the same benches from which Županič had grown up before him. He died on 31 March 2018 in Ljubljana, aged 110 years and 216 days — the longest-lived man Slovenia has ever recorded.\n\nHis story is not just a number but a century in miniature: from draft animals on the Hajdeč fields to the digital register of the museum that keeps it. Every village has its long-lived elder; Griblje has one the whole country had.",
     evidenceStatus: "DOCUMENTED",
     yearFrom: 1907,
-    yearTo: 2018,
+    yearTo: 2018,    image: "/images/authentic/dragos-kolpa-1920.jpg",
+    imageCredit:
+      "Foto: Fran Vesel, 27. 8. 1920 · Wikimedia Commons · javna last — pogled na Kolpo in Adlešiče: svet Dragoševega otroštva",
+
     addedAt: "2026-09-16",
     sources: [
+      {
+        key: "commons-dragos-kolpa",
+        nameSi: "Wikimedia Commons: Pogled na Kolpo in Adlešiče (Fran Vesel, 1920)",
+        nameEn: "Wikimedia Commons: A view of the Kolpa and Adlešiči (Fran Vesel, 1920)",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("Pogled_na_Kolpo_in_Adle%C5%A1i%C4%8De_1920.jpg"),
+        noteSi: "Glavna slika zapisa: Kolpa in obkolpska pokrajina leta 1920 — svet, v katerega se je stoletnik rodil in ob katerem je živel tri stoletja.",
+        noteEn: "The record's main image: the Kolpa and its landscape in 1920 — the world into which the centenarian was born and beside which he lived for three centuries.",
+      },
       {
         key: "odeon-dragos",
         nameSi: "Radio Odeon — Ljudje ob Kolpi: Nikolaj »Hajdeč Miko« Dragoš (27. avgust 2026)",
@@ -2405,9 +2423,22 @@ export const seedExhibits: SeedExhibit[] = [
       "On 24 May 1869, at Krasinec, a hamlet by the Kolpa not far from Griblje, a boy named Peter Kambič was born. Fate allotted him a short but dense road: when the new school building in Griblje was blessed in November 1889, the young trainee teacher Kambič took his place in its first classroom — with lodgings in the same building, as village teachers then customarily had.\n\nHe was two things at once: a teacher and an ethnographer. In the spare hours a village teacher does not have many of, he collected and recorded the folk wealth of Bela krajina — customs, songs, work, feasts. Under the pen name Pirc Krasinski, on 1 January 1889, the Dolenjske novice published his account »Christmas among the Bela krajina people«: a detailed look at the festive season of this land, written with a teacher's precision and a native's love. Today it stands among the oldest published testimonies of how this corner of Slovenia kept the winter feast, before electricity was ever heard of.\n\nHis death is one history does not console: on 25 January 1890, barely twenty, he died in Griblje — in the place he had only just begun. The school he helped set going grew into one of the liveliest village classrooms in Slovenia (today a branch of the OŠ Loka Črnomelj school); and his side-work became his monument: what he wrote about Christmas outlives him.\n\nThe museum sets Kambič beside the »Bouquet of meadow flowers from Griblje« recorded by Katarina Zupanič: two hands of the same decade, that wrote down the same land out of love for it. His story is a reminder that age is no measure of weight — twenty years sufficed for this land.",
     evidenceStatus: "DOCUMENTED",
     yearFrom: 1869,
-    yearTo: 1890,
+    yearTo: 1890,    image: "/images/authentic/kambic-bozic.jpg",
+    imageCredit:
+      "Foto: Fran Vesel · Wikimedia Commons · javna last — božično drevo (obdobje med obema vojnama)",
+
     addedAt: "2026-09-16",
     sources: [
+      {
+        key: "commons-kambic-bozic",
+        nameSi: "Wikimedia Commons: Božično drevo (Fran Vesel, med obema vojnama)",
+        nameEn: "Wikimedia Commons: A Christmas tree (Fran Vesel, interwar period)",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("Bo%C5%BEi%C4%8Dno_drevo.jpg"),
+        noteSi: "Glavna slika zapisa: božično drevo iz obdobja Kambičevega zapisa »Božič pri Belokranjcih« (1889) — ilustracija praznika, ki ga je prvi popisal.",
+        noteEn: "The record's main image: a Christmas tree from the era of Kambič's record \"Christmas among the people of Bela krajina\" (1889) — an illustration of the feast he was the first to describe.",
+      },
       {
         key: "odeon-kambic",
         nameSi: "Radio Odeon — Ljudje ob Kolpi: Peter Kambič (24. maj 2026)",
@@ -2536,9 +2567,22 @@ export const seedExhibits: SeedExhibit[] = [
       "Every village keeps two memories: the living one carried by people, and the paper one carried by the parish. For Griblje the paper memory is held by the hill of St. Vitus and the parish office at Podzemelj: the church in Griblje has always been a filial (Filialkirche) of the Podzemelj parish, whose patron is St. Martin — and whatever was born, married or died in the village was written into the Podzemelj registers.\n\nThese books are among the oldest continuous records of this land: they reach to the year 1669, when the world was only just settling after the Thirty Years' War, and they close in 1947, when state registries took over the task. Twenty-two books — of baptisms, marriages and burials — have been digitised, and the Archdiocesan Archives of Ljubljana publish them in free access on the Matricula Online portal. For Griblje people in Cleveland, Buenos Aires or the United States this means something no century could offer: the family tree of the home house can be leafed through without a journey.\n\nParish registers are more than names and dates. The godparents entered at every baptism are a map of the village's social web: who stood by whom at the font, at the wedding, at the bedside. From the entries one can glean when a family moved in or emigrated, when misfortune mowed, when the years were plentiful. Historians read in such books the demography of a whole region; for local people they are the place where a grandmother becomes a girl once more.\n\nThe museum keeps this record as an invitation: whoever traces Griblje roots — the Totters, the Županičes, the Štruceljs, the Piškuričes — begins here. And as a note of honesty: the pages of the registers themselves are in the archives and the museum has not copied them; this record is a gate, not a copy.",
     evidenceStatus: "DOCUMENTED",
     yearFrom: 1669,
-    yearTo: 1947,
+    yearTo: 1947,    image: "/images/authentic/matice-knjiga.jpg",
+    imageCredit:
+      "Krstna knjiga župnije Mošnje (1610–1730) · Wikimedia Commons · javna last — stran krstne knjige iz istega stoletja kot podzemeljske matice",
+
     addedAt: "2026-09-16",
     sources: [
+      {
+        key: "commons-matice-knjiga",
+        nameSi: "Wikimedia Commons: Krstna knjiga župnije Mošnje 1610–1730 — stran z zapisom iz leta 1689",
+        nameEn: "Wikimedia Commons: The baptismal register of the parish of Mošnje 1610–1730 — a page with an entry of 1689",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("Krstna_knjiga_%C5%BEupnije_Mo%C5%A1nje_1610-1730.jpg"),
+        noteSi: "Glavna slika zapisa: stran slovenske krstne knjige iz istega stoletja, v katerem začenjajo tudi podzemeljske matice (1669) — ilustrativni primer rokopisne matične knjige.",
+        noteEn: "The record's main image: a page of a Slovene baptismal register from the same century in which the Podzemelj registers also begin (1669) — an illustrative example of a manuscript parish book.",
+      },
       {
         key: "matricula-podzemelj",
         nameSi: "Matricula Online — Nadškofijski arhiv Ljubljana: župnija Podzemelj (matične knjige 1669–1947)",
@@ -2599,12 +2643,25 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "This village's name is an archaeology in itself: Cerkvišče is a place where churches stood — and stand no more. Before the Ottoman incursions, already in the years around 1408, when Ottoman troops first crossed the Sava, three churches stood here. When the Turks broke into Bela krajina, they pulled all three down and burned them. Three hundred years of the Military Frontier did the rest: for two of them the villagers still believe they know the sites; of the third, no one knows. Such is the dynamics of memory — first the roof burns, a century later the place itself.\n\nIn 1994 the place recalled itself: a chapel was raised in memory of the three ruined churches. It is not a reconstruction — what could be reconstructed, when even the third site is unknown — but a testimony that memory lived on here even without stone. The village belongs to the same parish as Griblje (Podzemelj) and to the same local community; its school path leads to Črnomelj, its post number is Gradac.\n\nCerkvišče keeps two hidden things more: the Jelenja jama (Deer Cave) and the Vodena jama (Water Cave), hidden in the woods — names that raise questions the ground answers only by discovery. A milk collection point once worked in the village, a quiet knot of the farm economy, now silent. The village lies two kilometres from the Kolpa at Griblje and two kilometres from the bathing place at Krasinec — not far from the field from which the Allied aircraft took off in March 1945.\n\nThe museum sets this record beside the record of the Uskok Military Frontier: together they describe the same century, in which this land learned to build in stone — and to lose it again. The chapel of 1994 stands for all three that are no more; their names are in the ground.",
     evidenceStatus: "DOCUMENTED",
-    yearFrom: 1408,
+    yearFrom: 1408,    image: "/images/authentic/cerkvisce-kapelica.jpg",
+    imageCredit:
+      "Foto: Scary Boots · Wikimedia Commons · CC BY-SA 2.0 — kamnita kapelica na slovenskem podeželju (ilustrativno)",
+
     lat: 45.5759667,
     lng: 15.2643167,
     coordsApprox: true,
     addedAt: "2026-09-16",
     sources: [
+      {
+        key: "commons-cerkvisce-kapelica",
+        nameSi: "Wikimedia Commons: Kamnita kapelica na slovenskem podeželju (fotograf: Scary Boots)",
+        nameEn: "Wikimedia Commons: A stone roadside shrine in the Slovene countryside (photographer: Scary Boots)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 2.0 (fotograf: Scary Boots)",
+        url: WM("Roadside_shrine_in_Slovenia_(20066631714).jpg"),
+        noteSi: "Glavna slika zapisa: kapelica, kakršna so po slovenskih vaseh stavili v spomin izgubljenih cerkva — ilustrativa spominske kapelice, ki so jo v Cerkvišču postavili leta 1994.",
+        noteEn: "The record's main image: a roadside shrine of the kind Slovene villages raised in memory of lost churches — an illustration of the memorial chapel built at Cerkvišče in 1994.",
+      },
       {
         key: "wiki-cerkvisce",
         nameSi: "Wikipedija: Cerkvišče (tri porušene cerkvice, kapelica 1994, jame)",
@@ -2665,7 +2722,20 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "CORROBORATED",
     yearFrom: 2004,
     addedAt: "2026-09-16",
+    image: "/images/authentic/pasuljada.jpg",
+    imageCredit:
+      "Foto: Ivana Sokolović · Wikimedia Commons · CC BY 2.0 — lonec pasulja",
     sources: [
+      {
+        key: "commons-pasulj",
+        nameSi: "Wikimedia Commons: Pasulj (fotografija: Ivana Sokolović)",
+        nameEn: "Wikimedia Commons: Pasulj — bean stew (photograph: Ivana Sokolović)",
+        sourceType: "fotografija",
+        license: "CC BY 2.0 (fotograf: Ivana Sokolović)",
+        url: WM("Pasulj_(10291319804).jpg"),
+        noteSi: "Glavna slika zapisa: lonec pasulja — jed, ob kateri tekmovanje stoji; gribeljski zmagovalni lonec še čaka na fotografijo.",
+        noteEn: "The record's main image: a pot of pasulj — the dish the competition stands on; a photograph of Griblje's winning pot still awaits.",
+      },
       {
         key: "odeon-pasuljada",
         nameSi: "Radio Odeon — V Gribljah že 16. Pasuljada (6. avgust 2019)",
@@ -2728,7 +2798,20 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     yearFrom: 1941,
     addedAt: "2026-09-16",
+    image: "/images/authentic/brinc-krovska.jpg",
+    imageCredit:
+      "Foto: Fran Vesel · Wikimedia Commons · javna last — krovska obrt v Preloki (Bela krajina, ~1920)",
     sources: [
+      {
+        key: "commons-brinc-krovska",
+        nameSi: "Wikimedia Commons: Krovska obrt v Preloki, Bela krajina (Fran Vesel)",
+        nameEn: "Wikimedia Commons: Roofing craft at Preloka, Bela krajina (Fran Vesel)",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("Krovska_obrt_v_Beli_krajini.jpg"),
+        noteSi: "Glavna slika zapisa: krovska obrt v Beli krajini — nad streho gasilskega doma, ki jo je prebudilo Brinčevo darilo, je ves čas obrt s te fotografije; prava fotografija dobrotnika še čaka družino.",
+        noteEn: "The record's main image: roofing craft in Bela krajina — above the fire-station roof awakened by Brinc's gift worked the craft of this photograph; a true photograph of the benefactor still awaits the family.",
+      },
       {
         key: "odeon-brinc-plosca",
         nameSi: "Radio Odeon — V Gribljah odkrili spominsko ploščo Francu Brincu (15. april 2026)",
@@ -2796,9 +2879,22 @@ export const seedExhibits: SeedExhibit[] = [
       "In the second half of the nineteenth century a Griblje farm wife who could read and write was rare enough to be worth mentioning. Katarina, born Pezdirc in 1855 at the homestead called pri Grizinu, could. She married the farmer and trader Nikolaj (Miko) Zupanič; on 1 December 1876 they brought a son, Niko, into the world — a boy who left Griblje for Novo mesto, Vienna and Belgrade, and became the founder of Slovene ethnology.\n\nThe son knew what he had at home. In 1894/95 he asked his mother to gather and write down the folk tradition of Griblje — and Katarina did what no hand of this village had done before her: with a pen she captured the year, the customs, the songs and the beliefs as she lived them. Her record bears a title poetry itself could not have chosen better: A Bouquet of Meadow Flowers from Griblje in Bela krajina.\n\nThe record waited longer for print than Katarina waited for grandchildren. She died on 23 July 1923; in 1937 — in the ninth volume of Etnolog, the journal her son had founded in 1927 — the Bouquet finally appeared. Today it stands among the oldest more extensive records of folk tradition written down in Griblje itself; only Kambič's Christmas among the Bela krajina people (1889) is older — two hands of the same decade, both out of love for the same land.\n\nIn a collection full of recorders with older and newer diplomas, Katarina is the first woman. Her record is a bridge between two museums: between the village tradition she carried in her head and the science her son set on its feet. Every record in this collection that quotes the folk tradition of Griblje walks her path — from the Grizin homestead to the printed page.",
     evidenceStatus: "DOCUMENTED",
     yearFrom: 1894,
-    yearTo: 1937,
+    yearTo: 1937,    image: "/images/authentic/katarina-herbarij.jpg",
+    imageCredit:
+      "Foto: Eleassar, Prirodoslovni muzej Slovenije · Wikimedia Commons · CC BY-SA 4.0 — herbarij Janeza Krstnika Flysserja (1696), najstarejši s slovenskega tal",
+
     addedAt: "2026-09-16",
     sources: [
+      {
+        key: "commons-katarina-herbarij",
+        nameSi: "Wikimedia Commons: Herbarij Janeza Krstnika Flysserja (1696) — najstarejši herbarij s slovenskega tal (fotograf: Eleassar)",
+        nameEn: "Wikimedia Commons: The herbarium of Janez Krstnik Flysser (1696) — the oldest herbarium from Slovene soil (photographer: Eleassar)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 4.0 (fotograf: Eleassar)",
+        url: WM("Herbarij_-_Flysser_1696_-_PMS.jpg"),
+        noteSi: "Glavna slika zapisa: herbarij — umetnost zbiranja in zapisovanja cvetja, ki ji je Katarina Zupanič leta 1894/95 dodala gribeljski Šopek poljskih cvetlic.",
+        noteEn: "The record's main image: a herbarium — the art of collecting and recording flowers to which Katarina Zupanič added Griblje's \"bouquet of field flowers\" in 1894/95.",
+      },
       {
         key: "sbl-zupanic-katarina",
         nameSi: "Slovenska biografija — Zupanič Niko (SBL, avtor Vilko Novak)",
@@ -2861,7 +2957,20 @@ export const seedExhibits: SeedExhibit[] = [
       "In Griblje by the river stood a house that knew no locked door: Toni Gašperič and his wife Jana kept it open to friends and strangers alike. Gašperič's trade was the rarest of trades — laughter. Humorist, writer, poet and presenter: the shows Veseli tobogan, Prizma optimizma and Vi izbirate – jaz izberem carried his voice through the radio and television air.\n\nHis written work is a catalogue of Bela krajina cheer: the humoresque collections Ljudje z zaščitenimi hrbti, Vsi smo na ražnju and Moja teta Mara, and the memoirs Povej jim (2007) and Življenje je eno samo porivanje (2009). The titles alone are a small school of this land's humour: self-irony that is not surrender but armour.\n\nHe belonged to the stages as well: he founded the Metlika acting group Osip Šest and initiated the Night on the Kolpa — a summer cultural night on the riverbank where the village gathered around words and song. His house in Griblje was in truth a museum of kindness: entry free, exit full.\n\nThe Bela krajina humour he carried was no escape from reality but its description: a land at the meeting of three worlds — Habsburg, Ottoman and later Yugoslav — learned for centuries to survive by rite and by joke. Whoever laughs is not defeated; whoever makes others laugh has armed them. Gašperič knew this in his bones: his humoresques look into the little man's pocket and heart at once — and find there not an enemy but a neighbour.\n\nAmong the intangible heritage this museum records, laughter counts too. A village that can laugh at itself survives everything — including what it may not say aloud. Gašperič's portrait in the People by the Kolpa series (May 2026) is this record's main source; the museum is looking for posters of the Night on the Kolpa and the covers of his books for its display shelf.",
     evidenceStatus: "DOCUMENTED",
     addedAt: "2026-09-16",
+    image: "/images/authentic/gasperic-kolpa.jpg",
+    imageCredit:
+      "Foto: Hrvoje Bađinec · Wikimedia Commons · CC BY-SA 4.0 — zahod sonca nad Kolpo",
     sources: [
+      {
+        key: "commons-gasperic-kolpa",
+        nameSi: "Wikimedia Commons: Zahod sonca nad Kolpo (fotograf: Hrvoje Bađinec)",
+        nameEn: "Wikimedia Commons: Sunset over the Kolpa river (photographer: Hrvoje Bađinec)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 4.0 (fotograf: Hrvoje Bađinec)",
+        url: WM("Sunset_over_Kupa_River.jpg"),
+        noteSi: "Glavna slika zapisa: zahod sonca nad Kolpo — reka Gašperičevega življenja in naslov njegove iznajdbe, Noč na Kolpi.",
+        noteEn: "The record's main image: sunset over the Kolpa — the river of Gašperič's life and the title of his invention, A Night on the Kolpa.",
+      },
       {
         key: "odeon-gasperic",
         nameSi: "Radio Odeon — Ljudje ob Kolpi: Toni Gašperič (5. maj 2026)",
@@ -2915,7 +3024,20 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     yearFrom: 1937,
     addedAt: "2026-09-16",
+    image: "/images/authentic/madronicev-mlin.jpg",
+    imageCredit:
+      "Foto: Fran Vesel, 24. 8. 1920 · Wikimedia Commons · javna last — Kuzmin mlin z žago v Pobrežju (Bela krajina)",
     sources: [
+      {
+        key: "commons-madronicev-mlin",
+        nameSi: "Wikimedia Commons: Kuzmin mlin z žago v Pobrežju, Bela krajina (Fran Vesel, 1920)",
+        nameEn: "Wikimedia Commons: The Kuzmin mill with its saw at Pobrežje, Bela krajina (Fran Vesel, 1920)",
+        sourceType: "fotografija",
+        license: "Public domain",
+        url: WM("Mlin%2C_Bela_krajina.jpg"),
+        noteSi: "Glavna slika zapisa: mlin z žago v Pobrežju iz leta 1920 — usoda sodobnika Madroničevega mlina v Prelesju (1937); fotografija pravega gribeljskega mlina še čaka na družino.",
+        noteEn: "The record's main image: a mill with a saw at Pobrežje in 1920 — the fate of a contemporary of the Madronič mill at Prelesje (1937); a photograph of the actual Griblje-area mill still awaits the family.",
+      },
       {
         key: "odeon-madronicev-mlin",
         nameSi: "Radio Odeon — Madroničev mlin v Prelesju ob Kolpi (Božidar Flajšman, 23. avgust 2019)",
@@ -2971,7 +3093,20 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "DOCUMENTED",
     yearFrom: 2022,
     addedAt: "2026-09-16",
+    image: "/images/authentic/ucilnica-muzej.jpg",
+    imageCredit:
+      "Foto: TravelingOtter · Wikimedia Commons · CC BY 2.0 — Slovenski šolski muzej v Ljubljani",
     sources: [
+      {
+        key: "commons-solski-muzej",
+        nameSi: "Wikimedia Commons: Slovenski šolski muzej v Ljubljani (fotograf: TravelingOtter)",
+        nameEn: "Wikimedia Commons: The Slovenian School Museum in Ljubljana (photographer: TravelingOtter)",
+        sourceType: "fotografija",
+        license: "CC BY 2.0 (fotograf: TravelingOtter)",
+        url: WM("Slovenian_School_Museum_-_Ljubljana,_Slovenia_(7451262652).jpg"),
+        noteSi: "Glavna slika zapisa: Slovenski šolski muzej v Ljubljani — ustanova, katere predstavnica je bila na otvoritvi gribeljske muzejske učilnice; fotografija učilnice v Gribljah še čaka.",
+        noteEn: "The record's main image: the Slovenian School Museum in Ljubljana — the institution whose representative attended the opening of the Griblje museum classroom; a photograph of the classroom itself still awaits.",
+      },
       {
         key: "s24-muzejska-ucilnica",
         nameSi: "Svet24 — V šoli so spravljene mnoge skrivnosti: odprtje muzejske učilnice na PŠ Griblje (26. junij 2022)",
@@ -3026,7 +3161,20 @@ export const seedExhibits: SeedExhibit[] = [
     evidenceStatus: "CORROBORATED",
     yearFrom: 2024,
     addedAt: "2026-09-16",
+    image: "/images/authentic/kavboji-oprava.jpg",
+    imageCredit:
+      "Foto: MaurieF · Wikimedia Commons · CC BY-SA 3.0 — kavbojski škornji in klobuk",
     sources: [
+      {
+        key: "commons-kavboji",
+        nameSi: "Wikimedia Commons: Kavbojski škornji in klobuk (fotograf: MaurieF)",
+        nameEn: "Wikimedia Commons: Cowboy boots and hat (photographer: MaurieF)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 3.0 (fotograf: MaurieF)",
+        url: WM("Cowboy-Boots-And-Hat.png"),
+        noteSi: "Glavna slika zapisa: kavbojska oprava — klobuki in škornji, ki se eno poletno popoldne vsako leto znova obledejo v Gribljah.",
+        noteEn: "The record's main image: the western outfit — the hats and boots that every summer afternoon dress Griblje anew.",
+      },
       {
         key: "odeon-kavbojski-zur",
         nameSi: "Radio Odeon — Kavbojski žur v Gribljah znova navdušil (junij 2025)",
@@ -3082,9 +3230,22 @@ export const seedExhibits: SeedExhibit[] = [
       "A church lives by its voice: for decades the bell was the villagers' only radio — to mass, to a funeral, at a storm, at war. Its word was agreed upon before literacy: three strokes, a peal, a celebration; before the village could read, it could listen. The church of St. Vitus, first written down in 1526, changed its bells across the centuries as all churches do: to an army a bell was always only bronze. The fate of the Griblje predecessors — requisitions, cracks, replacement — is today lost; the museum declares this gap openly and searches.\n\nWhat is documented is this: in 2008 a new bell was blessed and consecrated in Griblje. A memorial book arose from the event — »SV. VID GRIBLJE, the Blessing and Consecration of the Bell, Griblje 2008« — a modest booklet that the Wikipedia article on the village lists among its literature, and one of the rare printed sources created in the village itself. Bells always have godparents; their names are customarily written in such books.\n\nIn June 2026 this voice rang out at the 500th anniversary of the church's first mention: the solemn mass was celebrated by the retired Bishop of Novo mesto, msgr. Andrej Glavan, and by the church the newly arranged parking place and funeral vestibule were blessed. The church has today its sexton (Ana Križan) and its keykeeper (Alojzij Štruclj) — and its voice, which still measures out the village day: from the morning ring to the evening quiet.\n\nThis record is an invitation to completion: the museum is looking for photographs of the 2008 blessing, the names of the bell's godparents and the foundry that cast it — every bell carries a mark, and every mark a story. When they are found, the gap in this record will close. That is how a museum works: not with conjectures, with sources.",
     evidenceStatus: "CORROBORATED",
     yearFrom: 2008,
-    yearTo: 2008,
+    yearTo: 2008,    image: "/images/authentic/zvon.jpg",
+    imageCredit:
+      "Foto: George Chernilevsky · Wikimedia Commons · CC BY 4.0 — bronasti cerkveni zvon (ilustrativno)",
+
     addedAt: "2026-09-16",
     sources: [
+      {
+        key: "commons-zvon",
+        nameSi: "Wikimedia Commons: Bronasti cerkveni zvon (fotograf: George Chernilevsky)",
+        nameEn: "Wikimedia Commons: A bronze church bell (photographer: George Chernilevsky)",
+        sourceType: "fotografija",
+        license: "CC BY 4.0 (fotograf: George Chernilevsky)",
+        url: WM("Church_bell_2017_G1.jpg"),
+        noteSi: "Glavna slika zapisa: bronasti cerkveni zvon — kakršen je bil blagoslovljen v Gribljah leta 2008; fotografija pravega gribeljskega zvona še čaka na domačina.",
+        noteEn: "The record's main image: a bronze church bell — of the kind blessed at Griblje in 2008; a photograph of the actual Griblje bell still awaits a villager.",
+      },
       {
         key: "spominska-knjiga-zvon",
         nameSi: "SV. VID GRIBLJE — Blagoslovitev in posvetitev zvona, Griblje 2008 (spominska knjiga)",
