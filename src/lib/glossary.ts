@@ -217,6 +217,39 @@ export const glossaryTerms: GlossaryTerm[] = [
       "The Allies' operation of 1944: from partisan airfields in Bela krajina — the most important at Otok near Vinica — downed Allied airmen and the wounded were evacuated. Over 800 aircraft took off from the Picadilly Hope airfield at Otok; it was named after the first plane to leave the field.",
     related: ["zracni-most-krasinec", "letalisce-otok-1944"],
   },
+  {
+    slug: "vuzem",
+    sortKey: "vuzem",
+    termSi: "vuzem",
+    termEn: "vuzem (Easter)",
+    definitionSi:
+      "Belokranjska narečna beseda za veliko noč — ohranjena v gribeljski jurjevski pesmi (»Prošel je prošel pisani vuzem, došel je došel zeleni Jure«): pisana velikonočna nedelja je minila, zeleni Jurij je prišel. Beseda živi tudi v hrvaškem voskrs in belokranjskih pobarvanih pisanicah.",
+    definitionEn:
+      "The Bela krajina dialect word for Easter — preserved in the Griblje jurjevo song ('Prošel je prošel pisani vuzem, došel je došel zeleni Jure'): the painted Easter Sunday has passed, Green George has come. The word lives on in the Croatian voskrs and in the painted pisanice of Bela krajina.",
+    related: ["jurjevo-v-gribljah", "pisanice"],
+  },
+  {
+    slug: "zbul",
+    sortKey: "žbul",
+    termSi: "žbul",
+    termEn: "žbul (the Griblje onion)",
+    definitionSi:
+      "Narečno ime za čebulo — in za avtohtono belokranjsko sorto, ki so jo v Gribljah pridelovali kot glavni denarni pridelek: rodovitna obkolpska polja so žbul nosila na sejme onstran Gorjancev in na Hrvaško. Danes ga učenci sadijo na gredici pred podružnično šolo; knjižico o njem je leta 2012 izdalo pet Gribeljčank.",
+    definitionEn:
+      "The dialect name for the onion — and for the autochthonous Bela krajina variety grown in Griblje as the village's main cash crop: the fertile fields by the Kolpa carried the žbul to fairs beyond the Gorjanci and into Croatia. Today the pupils plant it on the bed before the branch school; a booklet about it was published by five women of Griblje in 2012.",
+    related: ["gribeljski-zbul", "jurjevo-v-gribljah"],
+  },
+  {
+    slug: "zbularji",
+    sortKey: "žbularji",
+    termSi: "žbularji",
+    termEn: "the žbularji (onion men)",
+    definitionSi:
+      "Vzdevek, ki so ga sosednje vasi nadeli Gribljčanom po njihovem glavnem pridelku — čebuli, žbulu. Belokranjci jih tako imenujejo še danes: redko katera vas v pokrajini nosi ime po zelenjavi, ki jo je gojila.",
+    definitionEn:
+      "The nickname the neighbouring villages gave the people of Griblje after their main crop — the onion, the žbul. The people of Bela krajina still call them that today: few villages in the region carry the name of the vegetable they grew.",
+    related: ["gribeljski-zbul"],
+  },
 ];
 
 /** Slovenska abecedna razvrstitev (Č, Š, Ž za ustreznimi črkami). */

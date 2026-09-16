@@ -523,6 +523,34 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "This village's nearest industrial revolution burned seven kilometres away: the Kanižarica brown-coal mine, opened 1857, closed 1997. Men drove there from all over Bela krajina; in the pit coal, dust and the Perkmandelc awaited — the dwarf who points out danger. Today a museum with an artificial tunnel stands on the same ground — and this record joins the village's digital memory to the region's physical one.",
   },
+  {
+    slug: "sturm-1891",
+    textSi:
+      "Leto 1891: na Dunaju izšel osmi zvezek cesarske enciklopedije, med spomeniki Kranjske pa tudi kmetija v Gribljah. Slikal jo je dunajski Slovenec Josef Sturm; tekst ob sliki opisuje zid z obokanim vhodom, s kamnitimi ploščami tlakovan dvorišče in nizko ognjišče v veži. Najstarejša znana slika vasi — 135 let stara.",
+    textEn:
+      "The year 1891: in Vienna the eighth volume of the imperial encyclopedia appeared, and among the monuments of Carniola stood a farmstead in Griblje. It was painted by the Viennese Slovene Josef Sturm; the text beside it describes the wall with its arched gateway, the yard paved with stone slabs, the low hearth in the hall. The oldest known picture of the village — 135 years old.",
+  },
+  {
+    slug: "gribeljski-zbul",
+    textSi:
+      "Pred vinom, pred žitom — čebula. Rodovitna obkolpska polja so nekoč Gribljam dajala glavni denarni pridelek: žbul, kot čebuli rečejo v vasi. Prodajali so ga onstran Gorjancev in na Hrvaškem; Belokranjci Gribljčanom še danes pravijo žbularji. Leta 2012 je pet Gribeljčank izdalo knjižico Gribeljski žbul, na šolskem vrtu pa se sadi še danes.",
+    textEn:
+      "Before the wine, before the grain — the onion. The fertile fields by the Kolpa once gave Griblje its main cash crop: the žbul, as the onion is called in the village. It was sold beyond the Gorjanci and in Croatia; the people of Bela krajina still call the people of Griblje žbularji. In 2012 five women of Griblje published the booklet Gribeljski žbul, and in the school garden it is still planted today.",
+  },
+  {
+    slug: "arheolosko-najdigsce-ob-kolpi",
+    textSi:
+      "Pod obkolpskimi njivami pri Gribljah leži pet tisoč let zgodovine: v registru dediščine je ravnina vpisana kot arheološko najdišče z neolitskimi in bronastodobnimi naselbinami, grobiščem Požekov vrt, železnodobno gomilo in rimskimi naselbinami. Vas ne stoji na prazni zemlji — na pet tisočletjih hiš.",
+    textEn:
+      "Beneath the fields by the Kolpa at Griblje lie five thousand years of history: in the heritage register the plain is entered as an archaeological site with Neolithic and Bronze Age settlements, the cemetery of Požekov vrt, an Iron Age burial mound and Roman settlements. The village does not stand on empty ground — on five millennia of houses.",
+  },
+  {
+    slug: "jurjevo-v-gribljah",
+    textSi:
+      "Dan pred jurjevim gribeljska šola posadi žbul in splete koš iz brezovih vej; 24. aprila Zeleni Jurij — deček v košu — obide vas od hiše do hiše in zapoje: »Prošel je prošel pisani vuzem, došel je došel zeleni Jure … Dajte mu groš, da vam dojde još!« Šega pastirjev, ki jo nosi šola.",
+    textEn:
+      "On the eve of the feast the Griblje school plants the žbul and weaves a basket of birch; on 24 April Green George — a boy inside the basket — goes house to house and sings: 'Prošel je prošel pisani vuzem, došel je došel zeleni Jure … Dajte mu groš, da vam dojde još!' A shepherds' custom carried by the school.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {

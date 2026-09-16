@@ -79,6 +79,10 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/maraton-start.jpg": { width: 1280, height: 662 },
   "/images/authentic/peca-1928.jpg": { width: 1100, height: 1697 },
   "/images/authentic/kanizarica.jpg": { width: 900, height: 599 },
+  "/images/authentic/sturm-1891.jpg": { width: 1680, height: 1291 },
+  "/images/authentic/zbul-cebula.jpg": { width: 1280, height: 960 },
+  "/images/authentic/griblje-ravnina.jpg": { width: 1280, height: 857 },
+  "/images/authentic/zeleni-jurij-1908.jpg": { width: 1280, height: 620 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };

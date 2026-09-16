@@ -3702,6 +3702,170 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "sturm-1891",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1890",
+        yearLabelEn: "1890",
+        sortYear: 1890,
+        textSi:
+          "Dunajski Slovenec Josef Sturm naslika gribeljsko kmetijo in jo razstavi v Künstlerhausu — med desetimi spomeniki Kranjske za cesarsko enciklopedijo.",
+        textEn:
+          "The Viennese Slovene Josef Sturm paints the Griblje farmstead and exhibits it at the Künstlerhaus — among ten monuments of Carniola for the imperial encyclopedia.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1891",
+        yearLabelEn: "1891",
+        sortYear: 1891,
+        textSi:
+          "Bakrorez z napisom »Ein Einzelhof in Grible« izide v osmem zvezku Kronprinzenwerka z opisom: zid z obokanim vhodom, kamnito tlakovan dvorišče, nizko ognjišče v veži.",
+        textEn:
+          "The engraving 'Ein Einzelhof in Grible' appears in the eighth volume of the Crown Prince's work, with the description: the wall with its arched gateway, the stone-paved yard, the low hearth in the hall.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Digitalni muzej najde ploščo v ONB digitalizatu in jo postavi za najstarejši predmet zbirke — ter išče hišo s slike, če še stoji.",
+        textEn:
+          "The digital museum finds the plate in the ONB digitisation and sets it as the collection's oldest object — and seeks the house in the picture, if it still stands.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "gribeljski-zbul",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "19. stoletje",
+        yearLabelEn: "the 19th century",
+        sortYear: 1850,
+        textSi:
+          "Obkolpska polja postanejo znana po čebuli: žbul postane glavni denarni pridelek vasi, Gribljčanom pa se prilepi vzdevek žbularji.",
+        textEn:
+          "The fields by the Kolpa become known for the onion: the žbul becomes the village's main cash crop, and the nickname žbularji sticks to its people.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "2012",
+        yearLabelEn: "2012",
+        sortYear: 2012,
+        textSi:
+          "Pet Gribeljčank izda knjižico Gribeljski žbul — pridelovanje, spomini, recepti; študijski krožek nosi Društvo kmečkih žena Griblje.",
+        textEn:
+          "Five women of Griblje publish the booklet Gribeljski žbul — cultivation, memories, recipes; the study circle is carried by the Society of Farm Women of Griblje.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "vsako pomlad",
+        yearLabelEn: "every spring",
+        sortYear: 2026,
+        textSi:
+          "Učenci podružnične šole posadijo avtohtono čebulo na šolski gredici in jo avgusta poberejo — semenarna žbula je sredina vasi.",
+        textEn:
+          "The pupils of the branch school plant the autochthonous onion on the school bed and lift it in August — the seedbed of the žbul is the middle of the village.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "arheolosko-najdigsce-ob-kolpi",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "pribl. 4500 pr. n. št.",
+        yearLabelEn: "c. 4500 BC",
+        sortYear: -4500,
+        textSi:
+          "Prvi kmetje se naselijo na obkolpski ravnini: neolitske naselbine so začetek pet tisočletij življenja na istem tleh.",
+        textEn:
+          "The first farmers settle on the Kolpa floodplain: the Neolithic settlements begin five millennia of life on the same ground.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "od 2010",
+        yearLabelEn: "from 2010",
+        sortYear: 2010,
+        textSi:
+          "Izkopavanja v Varstvu spomenikov 46 in raziskave ARHAT (2011, 2021) ravnino potrdijo kot registrirano najdišče EŠD 10094.",
+        textEn:
+          "The excavations in Varstvo spomenikov 46 and the ARHAT research (2011, 2021) confirm the plain as the registered site EŠD 10094.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Njive obdelujejo plug, pod njimi pa ležijo naselbine, grobišče Požekov vrt, gomila in rimske naselbine — muzej išče črepinje in zgodbe o najdbah.",
+        textEn:
+          "The plough works the fields, and beneath them lie the settlements, the cemetery of Požekov vrt, the burial mound and the Roman settlements — the museum seeks sherds and stories of finds.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "jurjevo-v-gribljah",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1908",
+        yearLabelEn: "1908",
+        sortYear: 1908,
+        textSi:
+          "Objavljena fotografija sprevoda Zelenega Jurija — dokument, da je šega v pokrajini živela v vsej svoji podobi.",
+        textEn:
+          "A photograph of a Green George procession is published — a document that the custom lived in the region in its full figure.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "od nekdaj",
+        yearLabelEn: "from old",
+        sortYear: 1900,
+        textSi:
+          "Sprevod ob 24. aprili hodi od hiše do hiše: pesem v narečju, brezova vejica na vratih, jajca in sladkarije za sprevod.",
+        textEn:
+          "The procession of 24 April walks house to house: the song in dialect, the birch twig on the doors, eggs and sweets for the walkers.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Podružnična šola splete koš iz brezja, posadi žbul in pošlje Zelenega Jurija po vasi — pesem se je ohranila z vsemi besedami.",
+        textEn:
+          "The branch school weaves the birch basket, plants the žbul and sends Green George through the village — the song has survived with all its words.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {

@@ -120,9 +120,23 @@ RTV 2025: dvodelna ženska obleka, roža na čelu; Kamra/Album Slovenije: Jurjev
 **Rudnik Kanižarica** (1857–1997; Perkmandeljc, prenovljeni izvozni stolp, muzej pri RIC od
 2022 — digitalni most do fizičnega muzeja rudnika).
 
+Štirinajsti sklop **Temeljita raziskava samo Griblje** (72 → 76 zapisov / 324 virov): **Einzelhof
+v Gribljah 1891** (najstarejša znana slika vasi — Josef Sturm, cesarska enciklopedija Kronprinzenwerk,
+zv. 8 Kärnten und Krain, str. 401; popoln nemški opis gribeljske kmetije; digitalizat Austria-Forum/ONB,
+javna last), **Gribeljski žbul in žbularji** (avtohtona belokranjska čebula kot glavni denarni pridelek
+vasi; vzdevek žbularji živ še danes; knjižica Gribeljski žbul 2012 — pet Gribeljčank; Društvo kmečkih
+žena Griblje 1996; zbornik DUPŠ 2021, 2× video Vaš Kanal, WorldCat, Svet24 2014), **Arheološko
+najdišče ob Kolpi** (EŠD 10094, registrirana dediščina: neolitske/bronastodobne naselbine, plano
+grobišče Požekov vrt, železnodobna gomila, 2 rimski naselbini in 3 rimska grobišča — pet tisoč let
+pod njivami; Varstvo spomenikov 46/2010, ARHAT 2011/2021) in **Jurjevo v Gribljah** (šolska šega:
+Zeleni Jurij v košu iz brezovih vej, sprevod po vasi, cela jurjevska pesem v gribeljskem narečju —
+»Prošel je prošel pisani vuzem … Dajte mu groš, da vam dojde još!«; zbornik DUPŠ 2021; fotografija
+Zelenega Jurija 1908, javna last) — ob obogatitvah: janko-barle (+ brat Konrad Barle, čebelar in
+soustanovitelj Belokranjskega muzeja), Izrazoslovje +3 pojmi (žbul, žbularji, vuzem — skupaj 21).
+
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 72 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 76 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -288,7 +302,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 72 zapisov, 308 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 76 zapisov, 324 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -297,7 +311,7 @@ in Met API analizirani novi vzorci (You might like, License this image, Art term
 provenienca/audio opis, odprti podatki CC0) — poročilo `design-research/UI-PRIMERJAVA-2026-10.md`.
 Izpeljana dva nova vzorca: **Podobne slike** (Search visually lite) in **Igre muzeja** (hub).
 Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletnica 2027,
-140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 72 zapisov / 308 virov.
+140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 76 zapisov / 324 virov.
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
 brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi
