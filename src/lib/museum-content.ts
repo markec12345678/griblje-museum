@@ -3597,7 +3597,7 @@ export const seedExhibits: SeedExhibit[] = [
         nameEn: "RTV SLO — the preserved C-47 Dakota displayed by the village of Otok in Bela krajina (the only example in Slovenia)",
         sourceType: "spletni-vir",
         license: "navedi vir / cite the source",
-        url: "https://www.rtvslo.si/",
+        url: "https://www.rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
         noteSi: "Dakota pri Otoku kot edini ohranjeni primerek v Sloveniji in varuh spomina na partizanski letališči.",
         noteEn: "The Dakota at Otok as the only preserved example in Slovenia and keeper of the memory of the partisan airfields.",
       },
