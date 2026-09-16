@@ -22,6 +22,7 @@ export type MuseumView =
   | "dogodki"
   | "oMuzeju"
   | "mojMuzej"
+  | "igre"
   | "zaOtroke"
   | "knjiga"
   | "zaKuliso";
@@ -37,6 +38,7 @@ export const VIEW_ORDER: MuseumView[] = [
   "dogodki",
   "oMuzeju",
   "mojMuzej",
+  "igre",
   "zaOtroke",
   "knjiga",
   "zaKuliso",

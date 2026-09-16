@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, BookHeart, BookOpen, Clapperboard, Database, FileSearch, Map as MapIcon, CalendarDays, MessageCircleQuestion, Sparkles } from "lucide-react";
+import { ArrowRight, BookHeart, BookOpen, Clapperboard, Database, FileSearch, Gamepad2, Map as MapIcon, CalendarDays, MessageCircleQuestion, Sparkles } from "lucide-react";
 import { useLang, pick } from "@/lib/i18n";
 import { useGuestbook } from "@/hooks/use-museum";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
@@ -305,11 +305,21 @@ export function HomeView({
 
       {/* ZBIRALEC + MUZEJSKA UGANKA */}
       <section id="muzejska-uganka" className="paper-grain mx-auto max-w-7xl px-4 py-16 scroll-mt-20 sm:px-6 lg:px-8">
-        <div className="max-w-2xl">
-          <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-            {t.quiz.sectionTitle}
-          </h2>
-          <p className="mt-2 text-muted-foreground">{t.quiz.sectionSub}</p>
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+              {t.quiz.sectionTitle}
+            </h2>
+            <p className="mt-2 text-muted-foreground">{t.quiz.sectionSub}</p>
+          </div>
+          <Button
+            variant="outline"
+            className="min-h-11"
+            onClick={() => onNavigate("igre")}
+          >
+            <Gamepad2 className="mr-2 h-4 w-4" aria-hidden="true" />
+            {t.games.allLink}
+          </Button>
         </div>
         <div className="mt-8 grid gap-6 lg:grid-cols-[3fr_2fr] lg:items-start">
           <MuseumQuiz exhibits={exhibits} onOpenExhibit={onOpenExhibit} />

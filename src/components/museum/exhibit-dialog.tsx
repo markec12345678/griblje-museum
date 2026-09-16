@@ -23,6 +23,7 @@ import {
   Quote,
   Route,
   Scale,
+  ScanSearch,
   Wind,
   X,
   ZoomIn,
@@ -33,6 +34,7 @@ import { useFavorites } from "@/lib/favorite-tracker";
 import { useCompareSelection } from "@/lib/compare-tracker";
 import { useMyWalk } from "@/lib/my-walk-tracker";
 import { relatedExhibits } from "@/lib/connections";
+import { visuallySimilarExhibits } from "@/lib/visual-similarity";
 import { hasMinuteStory } from "@/components/museum/minute-stories";
 import { ObjectBiography } from "@/components/museum/object-biography";
 import { ObjectMemories } from "@/components/museum/object-memories";
@@ -156,6 +158,13 @@ export function ExhibitDialog({
   // Povezani zapisi — ista tema / obdobje / vir / bližina (x Degrees lite).
   const related = React.useMemo(
     () => (exhibit ? relatedExhibits(exhibit, allExhibits, 3) : []),
+    [exhibit, allExhibits]
+  );
+
+  // Vizualno podobni zapisi — zgradba in barve slike (Search visually lite,
+  // vzorec Rijksmuseuma; iskreno razloženo, brez ML modela).
+  const visualMatches = React.useMemo(
+    () => (exhibit ? visuallySimilarExhibits(exhibit, allExhibits, 3) : []),
     [exhibit, allExhibits]
   );
 
@@ -614,6 +623,53 @@ export function ExhibitDialog({
                       </li>
                     ))}
                   </ul>
+                </section>
+              )}
+
+              {/* Podobne slike — vizualna podobnost (Search visually lite, vzorec Rijksmuseuma) */}
+              {visualMatches.length > 0 && (
+                <section aria-labelledby="podobne-slike" className="mt-6">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h3
+                      id="podobne-slike"
+                      className="font-display inline-flex items-center gap-2 text-lg font-semibold"
+                    >
+                      <ScanSearch className="h-4.5 w-4.5 text-primary" aria-hidden="true" />
+                      {t.visual.title}
+                    </h3>
+                    <span className="text-xs text-muted-foreground">{t.visual.subtitle}</span>
+                  </div>
+                  <ul className="mt-3 grid gap-3 sm:grid-cols-3">
+                    {visualMatches.map((match) => (
+                      <li key={match.exhibit.slug}>
+                        <button
+                          type="button"
+                          onClick={() => onOpenExhibit(match.exhibit)}
+                          className="group flex w-full flex-col overflow-hidden rounded-lg border border-border/70 bg-card text-left shadow-sm transition-colors hover:border-primary/40"
+                          aria-label={`${t.visual.openExhibit}: ${es.title(match.exhibit)}`}
+                        >
+                          <span className="relative block aspect-[4/3]">
+                            <Image
+                              src={
+                                match.exhibit.image ?? "/images/authentic/hero-griblje.jpg"
+                              }
+                              alt={es.title(match.exhibit)}
+                              fill
+                              sizes="(min-width: 640px) 200px, 100vw"
+                              className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                            />
+                          </span>
+                          <span className="line-clamp-2 p-2.5 text-sm font-semibold leading-snug">
+                            {es.title(match.exhibit)}
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-2.5 text-xs leading-relaxed text-muted-foreground">
+                    <span className="font-medium text-foreground/80">{t.visual.why}</span>{" "}
+                    {t.visual.whyText}
+                  </p>
                 </section>
               )}
 

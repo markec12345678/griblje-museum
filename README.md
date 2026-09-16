@@ -31,7 +31,7 @@ kraj → ljudje → dogodki → predmeti):
 | Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 69/69 |
 | Zgodba | 250–400 besed, SLO+EN | ✅ 69/69 (povprečno ~291) |
 | Življenje predmeta | 4–6 faz časovnice | ✅ 69/69 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 295 skupaj (povprečno 4,3) |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 296 skupaj (povprečno 4,3) |
 | Zanesljivost | izrecni status dokazilosti | ✅ 69/69 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
@@ -190,6 +190,15 @@ načela in odprti razpis za pričevanja skupnosti
   Rijksstudio Rijksmuseuma): vlečenje po sliki, premikanje in raztegovanje vogalov,
   popolna tipkovniška nadzora (puščice, +/−, Delete) in sledenje kazalcem (pointer
   events) na dotik in miški; shranjeno v brskalniku (mvg-details), brez računa
+- 🔎 **Podobne slike** — vizualna podobnost v vsakem zapisu: muzej primerja vzorec
+  svetlega/temnega (povprečni hash 8×8) in barve (3×3 polja) ter predlaga tri
+  vizualno najbližje slike — iskrena majhnomuzejska različica vzorca Search visually
+  (Rijksmuseum) brez ML modela; prstni odtisi vseh 69 slik v 14 kB JSON, primerjava
+  v brskalniku (60 % zgradba + 40 % barve, prag 0,62)
+- 🕹️ **Igre muzeja** — hub vseh igralnih dejanj na enem mestu (vzorec Play / The Lab,
+  Google Arts & Culture): uganka kar v hubu, sestavljanke, počasno gledanje,
+  razglednice, izrez detajla in poveži zbirko s skupnim izbirnikom zapisa z iskanjem;
+  vhod iz navigacije, domače strani (ob uganki), Za otroke in noge; SLO/EN/HR
 - 🎬 **Filmski ogled zbirke** — samodejni ogled osebne zbirke z učinkom Ken Burns
   in neobvezno TTS pripovedjo (vzorec samodejnih video ogledov zbirk Rijksmuseuma);
   soba in film delita deljivo povezavo `/?gallery=<slug>,<slug>`
@@ -256,9 +265,16 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 69 zapisov, 295 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 69 zapisov, 296 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
+
+**Raziskava 2. krog (17. 9. 2026):** po ponovni dostopnosti Tate, National Gallery London
+in Met API analizirani novi vzorci (You might like, License this image, Art terms slovar,
+provenienca/audio opis, odprti podatki CC0) — poročilo `design-research/UI-PRIMERJAVA-2026-10.md`.
+Izpeljana dva nova vzorca: **Podobne slike** (Search visually lite) in **Igre muzeja** (hub).
+Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletnica 2027,
+140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 69 zapisov / 296 virov.
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
 brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi

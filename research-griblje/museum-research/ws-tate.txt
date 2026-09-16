@@ -1,0 +1,41 @@
+🚀 Initializing Z-AI SDK...
+🚀 Invoking function: web_search...
+[
+  {
+    "url": "https://github.com",
+    "name": "Including Image URLs as part of the dataset? #2",
+    "snippet": "Feb 15, 2021 — I'm hesitant to include image URLs in API responses (and the data dumps) because these image URL patterns are the same for all artworks . Once ... Read more",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "Feb 15, 2021",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.tate.org.uk",
+    "name": "Archives & Access project: Open data brings beauty and insight",
+    "snippet": "Project Lead Developer and Web Architect, discusses open data in relation to Tate's Archives & Access project.",
+    "host_name": "www.tate.org.uk",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://vincentarelbundock.github.io",
+    "name": "R: Tate Gallery modern artwork metadata",
+    "snippet": "Metadata such as artist, title, and year created for recent artworks owned by the Tate Gallery. Only artworks created during or after 1990 are included, and the ... Read more",
+    "host_name": "vincentarelbundock.github.io",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://rhea.art",
+    "name": "Exploring the Tate Collection Metadata",
+    "snippet": "Nov 6, 2013 — The Tate have released their collection metadata in an exemplary way here: https:// github .com/ tategallery /collection. Read more",
+    "host_name": "rhea.art",
+    "rank": 3,
+    "date": "Nov 6, 2013",
+    "favicon": ""
+  }
+]
+🎉 Function invocation completed!

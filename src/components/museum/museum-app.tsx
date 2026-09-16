@@ -13,6 +13,7 @@ import { EventsView } from "@/components/museum/events-view";
 import { MapView } from "@/components/museum/map-view";
 import { AboutView } from "@/components/museum/about-view";
 import { MyMuseumView } from "@/components/museum/my-museum-view";
+import { GamesView } from "@/components/museum/games-view";
 import { KidsView } from "@/components/museum/kids-view";
 import { ThemeHubView } from "@/components/museum/theme-hub-view";
 import { MoodGuideView } from "@/components/museum/mood-guide-view";
@@ -674,6 +675,26 @@ export function MuseumApp() {
         onStartWalk={(walkId, stopIndex) =>
           startWalk(walkId, stopIndex, exhibitsQuery.data ?? [])
         }
+      />
+    ),
+    igre: (
+      <GamesView
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={(ex) => openExhibit(ex)}
+        onConnect={() => {
+          setConnectPair(null);
+          setConnectOpen(true);
+        }}
+        onPuzzle={(ex) => {
+          setPuzzleSize(3);
+          setPuzzleExhibit(ex);
+        }}
+        onSlow={(ex) => setSlowExhibit(ex)}
+        onPostcard={(ex) => {
+          setPostcardInitial(null);
+          setPostcardExhibit(ex);
+        }}
+        onDetail={(ex) => setDetailExhibit(ex)}
       />
     ),
     knjiga: <GuestbookView />,
