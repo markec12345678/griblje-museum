@@ -299,6 +299,90 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "For decades the bell was the village's only radio: to mass, to a funeral, at a storm. In 2008 a new bell of the church of St. Vitus was blessed and consecrated in Griblje; a memorial book, SV. VID GRIBLJE, arose from the event — among the rare printed sources created in the village itself. In June 2026 that voice rang out at the church's 500th anniversary, at Bishop Glavan's mass. The museum seeks photographs of the blessing, the godparents' names and the foundry — every bell carries a mark, every mark a story.",
   },
+  {
+    slug: "zaselki-griblje",
+    textSi:
+      "Griblje niso ena vas, ampak štiri: Dolnje ob reki, Srednje ob cesti, Gornje pod hribi in Brinsko selo zase. Razložena vas, kakršne znajo narediti samo reke: hiše tam, kjer je bila zemlja. Šola, cerkev in gasilski dom so skupni — razlike so ostale v ležah. Kdor razmejuje zna, je vabljen kot kartograf.",
+    textEn:
+      "Griblje is not one village but four: Dolnje by the river, Srednje by the road, Gornje beneath the hills, and Brinsko selo apart. A scattered village only rivers know how to build: houses where the land was. School, church and fire station are shared — the differences stayed in the lie of the land. Whoever can draw the lines is invited as a cartographer.",
+  },
+  {
+    slug: "goranja-lokva",
+    textSi:
+      "Po letu 1848 so kmetje izkrčili brezov gozd in v njem napravili lokvo, kjer so kopali glino za opeko — Goranja lokva. V bližini Rudna peč skriva železovo prst v plasteh. Vsaka stara hiša v vasi nosi v zidu kraj, kjer je ta glina gorela: Bela krajina je gradila iz svoje zemlje, dobesedno.",
+    textEn:
+      "After 1848 the farmers cleared the birch forest and made a pond in it where clay was dug for brick — Goranja lokva. Nearby, Rudna peč hides iron earth in layers. Every old house in the village carries in its wall a place where this clay was fired: Bela krajina built from its own earth, literally.",
+  },
+  {
+    slug: "strucelj-kmetija",
+    textSi:
+      "»S pesmijo je delo lažje steklo, včasih do mraka, a vedno skupaj,« pravi Alojz Štrucelj — kmet prirejevalec mleka na kmetiji z okoli devetdesetimi hektari. Pesem pri delu ni bila zabava, ampak tehnologija: ritem, ki je držal koso v enakomerjem loku. Sodobna mlekarska kmetija je podedovala obseg, ne pa več ritma.",
+    textEn:
+      "»With a song the work flowed easier, sometimes until dusk, but always together,« says Alojz Štrucelj — a milk-producing farmer on a farm of some ninety hectares. Song at work was not entertainment but technology: a rhythm that kept the scythe in an even sweep. The modern dairy farm inherited the scale, but no longer the rhythm.",
+  },
+  {
+    slug: "tamburasi-danica",
+    textSi:
+      "Ko je pobegnil iz uka, ga je v Ljubljani čakala glasba: v tamburaški skupini društva Danica je mladi Niko Dragoš igral bugarijo — bas, ki v orkestru drži tla. Bugarija je bila njegova prva javna vloga; zadnja bo najstarejši Slovenec. Med njimi: sto zim in eno stoletje.",
+    textEn:
+      "When he ran away from his apprenticeship, music awaited him in Ljubljana: in the Danica society's tambura group young Niko Dragoš played the bugarija — the bass that holds the floor in an orchestra. The bugarija was his first public role; the last will be the oldest Slovene. Between them: a hundred winters and one century.",
+  },
+  {
+    slug: "kopalisce-griblje",
+    textSi:
+      "Slovenija ima eno kopalno reko in ta teče mimo Gribelj: poleti čez petindvajset stopinj. Ob vasi je toplota dobila institucijo — kopališče, ki drži poletni koledar: julija kolesarski rally, avgusta Pasuljada. Kjer se čez dan kopa, se zvečer kuha in pleše.",
+    textEn:
+      "Slovenia has one bathing river, and it flows past Griblje: over twenty-five degrees in summer. By the village the warmth acquired an institution — the bathing place that keeps the summer calendar: the bicycle rally in July, the Pasuljada in August. Where people swim by day, bean stew cooks and dances by night.",
+  },
+  {
+    slug: "dakota-otok",
+    textSi:
+      "Ko so luči na travniku ugasnile, ni odletelo vse: pri Otoku je ostala dakota C-47 — edini ohranjeni primerek v Sloveniji. Letalo, ki je nosilo ranjence v italijanske bolnišnice, zdaj stoji kot spomenik, ki se ga lahko dotakneš. Vsako pomlad se ob njem obnavlja spomin Vranov let.",
+    textEn:
+      "When the lights on the meadow went out, not everything flew away: a C-47 Dakota remained at Otok — the only preserved example in Slovenia. The aircraft that carried the wounded to the hospitals of Italy now stands as a monument you can touch. Every spring the memory of the Raven's Flight renews beside it.",
+  },
+  {
+    slug: "veselko-fotograf",
+    textSi:
+      "Nekatere zgodbe je mogoče pripovedovati samo zato, ker jih je nekdo posnel. Franjo Veselko, profesor in partizanski fotograf, je marca 1945 stal ob polju pri Gribljah, ko so ranjenci čakali na letalo. Njegovih približno dva tisoč posnetkov je med temeljnimi viri za svobodno Belo krajino — dva sta glavni sliki te zbirke.",
+    textEn:
+      "Some stories can be told only because someone photographed them. Franjo Veselko, teacher and partisan photographer, stood by the field at Griblje in March 1945 as the wounded waited for an aircraft. His roughly two thousand photographs are among the foundational sources for free Bela krajina — two of them are main images of this collection.",
+  },
+  {
+    slug: "zracni-most-krasinec",
+    textSi:
+      "25. in 26. marca 1945: 48 ur, 2041 ljudi, dakote in spitfiri s partizanskega letališča Krasinec. Med evakuiranci je bila tudi pisateljica Alma Karlin — ženska, ki je obkrožila svet, je zadnjo veliko pot opravila s travnika ob Kolpi. Največje reševanje zrakom na slovenskih tleh.",
+    textEn:
+      "25 and 26 March 1945: 48 hours, 2041 people, Dakotas and Spitfires from the partisan airfield of Krasinec. Among the evacuees was the writer Alma Karlin — the woman who had circled the world made her last great journey from a meadow by the Kolpa. The greatest airborne rescue on Slovene soil.",
+  },
+  {
+    slug: "petstoletnica-2026",
+    textSi:
+      "Junija 2026 je cerkev sv. Vida praznovala petsto let prve pisne omembe: mašo je vodil škof glavnega mesta, izšla je knjižica Memento, vas pa se je zbrala kot ena duša. Petstoletnica je bila tudi rojstni dan tega muzeja — zbirka je odprta veveričje leto zgodovine vasi.",
+    textEn:
+      "In June 2026 the church of St. Vitus marked five hundred years of its first written mention: the mass was led by a bishop of the capital, the booklet Memento was published, and the village gathered as one soul. The quincentenary was also this museum's birthday — a collection opened as an anniversary year of the village's history.",
+  },
+  {
+    slug: "crni-moceril",
+    textSi:
+      "Pod Jelševnikom pri Gribljah živi črni močeril — podvrsta človeške ribice, ki je nikjer drugje ni: vse črno, oči pod kožo, sto let starosti možne. Odkrita 1986, dolgo brez fotografije — danes jo v zbirki nosi posnetek Arneja Hodaliča. Življenje pod travnikom, ki ga kopalci ne vidijo.",
+    textEn:
+      "Beneath Jelševnik by Griblje lives the black olm — a subspecies of the proteus found nowhere else: all black, eyes beneath the skin, a hundred-year lifespan possible. Discovered in 1986, long without a photograph — today the collection carries Arne Hodalič's shot of it. Life beneath the meadow the bathers never see.",
+  },
+  {
+    slug: "pgd-griblje-1927",
+    textSi:
+      "Vsaka slovenska vas ima tri strehe: cerkev, šolo in gasilski dom. PGD Griblje je bilo ustanovljeno leta 1927 — stoletnico bo praznovalo leta 2027 s 140 člani. Dom pri Gribljah 35B je dvorana, v kateri se dražijo žetve, igrajo igre in presedijo večeri: najdaljši živi spomin vasi.",
+    textEn:
+      "Every Slovene village has three roofs: the church, the school and the fire station. The Griblje volunteer fire brigade was founded in 1927 — it will mark its centenary in 2027 with 140 members. The hall at Griblje 35B is where harvests are auctioned, plays staged and evenings spent: the village's longest living memory.",
+  },
+  {
+    slug: "kolesa-torpedo",
+    textSi:
+      "Gribljska kolesarska sekcija nosi ime po znamki Torpedo — kolesih, na katerih je rasla generacija. Julija vsako leto rally starodobnih koles pripelje v vas kolesa, starejša od večine gledalcev. Zapis v zbirki nosi fotografijo kola znamke Torpedo iz odprtega arhiva — enake znamke, kakršna vozijo gribeljski kolesarji.",
+    textEn:
+      "The Griblje cycling section bears the name of the Torpedo brand — the bicycles a generation grew up on. Every July the vintage-bicycle rally brings to the village machines older than most of the spectators. The collection's record carries a photograph of a Torpedo bicycle from the open archive — the same brand Griblje's riders ride.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {

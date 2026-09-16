@@ -7,7 +7,7 @@ import type { ExhibitDTO } from "@/lib/types";
  * obogaten s kuratorsko opombo, ki povezuje postave v pripoved.
  *
  * Pogoj celovitosti: vseh pet sprehodov skupaj pokrije VSE zapise
- * zbirke (2026: 44 zapisov), vsak zapis natanko enkrat.
+ * zbirke (2026: 52 zapisov), vsak zapis natanko enkrat.
  */
 
 export type WalkStop = {
@@ -85,6 +85,20 @@ export const WALKS: Walk[] = [
         noteEn:
           "And the river lives on the surface too: in 2017 ichthyologists described from the Kolpa a species new to science — the bleak Alburnus sava, named after the Sava. Two unknown lives by the same banks within one century.",
       },
+      {
+        exhibitSlug: "kopalisce-griblje",
+        noteSi:
+          "Reka, ki se poleti segreje čez petindvajset stopinj, je vasi dala institucijo poletja: kopališče, kjer se zbira vse, kar ima počitnice.",
+        noteEn:
+          "The river that warms past twenty-five degrees in summer gave the village an institution of summer: the bathing place, where everything on holiday gathers.",
+      },
+      {
+        exhibitSlug: "goranja-lokva",
+        noteSi:
+          "Voda, ki ni iz neba padla: Goranja lokva je nastala iz kopanja gline za opeko — pokrajina, ki si je sama izdolbla svoj spomin.",
+        noteEn:
+          "Water that did not fall from the sky: Goranja lokva was born of digging clay for brick — a landscape that carved out its own memory.",
+      },
     ],
   },
   {
@@ -151,6 +165,27 @@ export const WALKS: Walk[] = [
           "Konec sprehoda je hkrati konec ene zgodbe: žica, ki je dolga ločevala, je leta 1991 postala meja svobodne države.",
         noteEn:
           "The end of the walk is also the end of one story: the fence that long divided became, in 1991, the border of a free country.",
+      },
+      {
+        exhibitSlug: "veselko-fotograf",
+        noteSi:
+          "Vojna, ki jo je videlo oko: profesor Veselko je marca 1945 fotografiral prav tu — njegovi posnetki so danes glavne slike dveh zapisov te poti.",
+        noteEn:
+          "The war as an eye saw it: Professor Veselko photographed right here in March 1945 — his shots are today the main images of two records of this walk.",
+      },
+      {
+        exhibitSlug: "zracni-most-krasinec",
+        noteSi:
+          "Vrh vsega: 48 ur, 2041 ljudi, dakote in spitfiri. Zračni most s Krasinca je največje reševanje zrakom na slovenskih tleh — med evacuiranci je bila tudi Alma Karlin.",
+        noteEn:
+          "The summit of it all: 48 hours, 2041 people, Dakotas and Spitfires. The Krasinec airlift was the greatest airborne rescue on Slovene soil — Alma Karlin among the evacuees.",
+      },
+      {
+        exhibitSlug: "dakota-otok",
+        noteSi:
+          "Konec poti pri letalu, ki je ostalo: dakota pri Otoku je edini ohranjeni primerek v Sloveniji — kos neba, ki se ga lahko dotakneš.",
+        noteEn:
+          "The walk ends at the aircraft that stayed: the Dakota at Otok is the only preserved example in Slovenia — a piece of sky you can touch.",
       },
     ],
   },
@@ -220,6 +255,13 @@ export const WALKS: Walk[] = [
           "Zadnja postaja diši po kletarski: metliška črnina, prvič ustekleničena 1968, danes zaščitena geografska označba.",
         noteEn:
           "The last stop smells of the cellar: metliška črnina, first bottled in 1968, today a protected geographical indication.",
+      },
+      {
+        exhibitSlug: "strucelj-kmetija",
+        noteSi:
+          "»S pesmijo je delo lažje steklo, včasih do mraka, a vedno skupaj.« Kmetija, ki je iz ročne košnje zrasla v devetdeset hektarov — hrbtenica vasi.",
+        noteEn:
+          "»With a song the work flowed easier, sometimes until dusk, but always together.« The farm that grew from hand mowing into ninety hectares — the village's backbone.",
       },
     ],
   },
@@ -392,6 +434,20 @@ export const WALKS: Walk[] = [
           "Zadnja postaja je drevo, ki je pokrajini dalo ime: bela breza. Bela krajina — dežela brez in borovcev, svetlobe in peščenih tal.",
         noteEn:
           "The last stop is the tree that named the region: the white birch. Bela krajina — a land of birches and pines, light and sandy soil.",
+      },
+      {
+        exhibitSlug: "zaselki-griblje",
+        noteSi:
+          "Vas, ki se razprostne: Dolnje, Srednje, Gornje in Brinsko selo. Preden spoznaš ljudje, spoznaj hiše — vsak zasek ima svoj odnos do reke.",
+        noteEn:
+          "The village that spreads out: Dolnje, Srednje, Gornje and Brinsko selo. Before you meet the people, meet the houses — each hamlet has its own relation to the river.",
+      },
+      {
+        exhibitSlug: "tamburasi-danica",
+        noteSi:
+          "Kje se je začelo stoletje? Pri bugariji. Mladi Dragoš je v Ljubljani igral v tamburaški skupini Danica — glasba je bila njegova prva pot v svet.",
+        noteEn:
+          "Where did the century begin? At the bugarija. Young Dragoš played in Ljubljana's Danica tambura group — music was his first road into the world.",
       },
     ],
   },
