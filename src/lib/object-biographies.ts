@@ -2079,6 +2079,401 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "franc-brinc",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1941–1945",
+        yearLabelEn: "1941–1945",
+        sortYear: 1941,
+        textSi:
+          "Otroštvo v vojni: gribeljsko šolo obiskoval med italijansko zasedbo poslopja — pouk takrat beži v gasilski dom.",
+        textEn:
+          "A wartime childhood: he attends the Griblje school under the Italian occupation of the building — lessons then flee to the fire station.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "20. stoletje",
+        yearLabelEn: "20th century",
+        sortYear: 1970,
+        textSi:
+          "Iz vasi v pravo: izredni profesor, penolog in kriminolog — znanosti o kazni in o tem, zakaj ljudje padajo.",
+        textEn:
+          "From the village into law: associate professor, penologist and criminologist — the sciences of punishment and of why people fall.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "15. september 2024",
+        yearLabelEn: "15 September 2024",
+        sortYear: 2024,
+        textSi:
+          "Na prazniku krajevne skupnosti 89-letni Brinc nagovori domačine z življenjskimi spomini; istega večera v gasilskem domu odprejo spominsko sobo dr. Franca Brinca.",
+        textEn:
+          "At the local community's feast the 89-year-old Brinc addresses his neighbours with the memories of a lifetime; the same evening the memorial room of dr. Franc Brinc opens in the fire station.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2021–2026",
+        yearLabelEn: "2021–2026",
+        sortYear: 2025,
+        textSi:
+          "Darovanja: 30.000 € PGD v štirih letih (operativna soba, streha, izolacija), 30.000 € šoli (digitalna oprema, igrala, ekovrt, Planica); skupaj z občino in cerkvijo okoli 200.000 €.",
+        textEn:
+          "The gifts: 30,000 € to the fire brigade over four years (operational room, roof, insulation), 30,000 € to the school (digital equipment, play equipment, school garden, Planica); with the municipality and the church around 200,000 € in all.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "10. april → junij 2026",
+        yearLabelEn: "10 April → June 2026",
+        sortYear: 2026,
+        textSi:
+          "Na pročelju šole odkrijejo spominsko ploščo dr. Brincu; ob 500-letnici cerkve njegova podpora z občino omogoči ureditev parkirišča in poslovilne vežice.",
+        textEn:
+          "A memorial plaque to dr. Brinc is unveiled on the school facade; at the church's 500th anniversary his support with the municipality makes possible the parking place and the funeral vestibule.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+    ],
+  },
+  {
+    slug: "katarina-zupanic",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1855",
+        yearLabelEn: "1855",
+        sortYear: 1855,
+        textSi:
+          "Rojena Katarina Pezdirc na gribeljski domačiji pri Grizinu — ženska, ki bo znala brati in pisati, kar je za vaško kmetico tega časa redkost.",
+        textEn:
+          "Born Katarina Pezdirc at the pri Grizinu homestead in Griblje — a woman who will be able to read and write, a rarity for a village farm wife of her time.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1894–1895",
+        yearLabelEn: "1894–1895",
+        sortYear: 1894,
+        textSi:
+          "Na željo sina Nika — prihodnjega ustanovitelja slovenske etnologije — zbere in zapiše ljudsko izročilo Gribelj: leto, šege, pesmi in vere, kakor jih živi.",
+        textEn:
+          "At the wish of her son Niko — the future founder of Slovene ethnology — she gathers and writes down the folk tradition of Griblje: the year, the customs, the songs and the beliefs as she lives them.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "23. julij 1923",
+        yearLabelEn: "23 July 1923",
+        sortYear: 1923,
+        textSi:
+          "Umre; njen zapis čaka na objavo v predalu — usoda večine vaških rokopisov.",
+        textEn:
+          "She dies; her record waits in a drawer for print — the fate of most village manuscripts.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "digitalizacija",
+        yearLabelSi: "1937",
+        yearLabelEn: "1937",
+        sortYear: 1937,
+        textSi:
+          "Šopek poljskih cvetlic iz Gribelj v Beli Krajini izide v devetem zvezku Etnologa — v reviji, ki jo je leta 1927 ustanovil njen sin.",
+        textEn:
+          "A Bouquet of Meadow Flowers from Griblje in Bela krajina appears in the ninth volume of Etnolog — the journal her son founded in 1927.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Med najstarejšimi obsežnejšimi zapisi izročila, zapisanimi v Gribljah samih; prva ženska med zapisovalci te zbirke in most med vaškim izročilom in znanostjo.",
+        textEn:
+          "Among the oldest more extensive records of tradition written down in Griblje itself; the first woman among this collection's recorders, and a bridge between village tradition and science.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "toni-gasperic",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "20.–21. stoletje",
+        yearLabelEn: "20th–21st century",
+        sortYear: 1980,
+        textSi:
+          "V Gribljah ob Kolpi živi z ženo Jano — hiša odprta za prijatelje in neznance; humor postane njegova obrt.",
+        textEn:
+          "He lives in Griblje on the Kolpa with his wife Jana — a house open to friends and strangers; humour becomes his trade.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2007–2009",
+        yearLabelEn: "2007–2009",
+        sortYear: 2007,
+        textSi:
+          "Izidejo spominski knjigi Povej jim in Življenje je eno samo porivanje — ob zbirkah humoresk Ljudje z zaščitenimi hrbti, Vsi smo na ražnju, Moja teta Mara.",
+        textEn:
+          "The memoirs Povej jim and Življenje je eno samo porivanje appear — beside the humoresque collections Ljudje z zaščitenimi hrbti, Vsi smo na ražnju, Moja teta Mara.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "oddaje in odri",
+        yearLabelEn: "shows and stages",
+        sortYear: 2010,
+        textSi:
+          "Voditelj oddaj Veseli tobogan, Prizma optimizma, Vi izbirate – jaz izberem; ustanovitelj metliške igralske skupine Osip Šest in pobudnik Noči na Kolpi.",
+        textEn:
+          "Presenter of the shows Veseli tobogan, Prizma optimizma, Vi izbirate – jaz izberem; founder of the Metlika acting group Osip Šest and initiator of the Night on the Kolpa.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "5. maj 2026 → danes",
+        yearLabelEn: "5 May 2026 → today",
+        sortYear: 2026,
+        textSi:
+          "Portret v rubriki Ljudje ob Kolpi; muzej med nesnovno dediščino vasi zapisuje tudi smeh in išče plakate Noči na Kolpi.",
+        textEn:
+          "His portrait in the People by the Kolpa series; among the village's intangible heritage the museum records laughter too, and seeks posters of the Night on the Kolpa.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "madronicev-mlin",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1937",
+        yearLabelEn: "1937",
+        sortYear: 1937,
+        textSi:
+          "Tesarska družina Madronič kupi požgano domačijo z mlinom in žago v Prelesju ob Kolpi — mlin v nadstropju, kakor zahtevajo kolpške poplave.",
+        textEn:
+          "The Madronič carpentry family buys a burnt-down homestead with a mill and a sawmill at Prelesje on the Kolpa — the mill in an upper storey, as the Kolpa's floods demand.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1.–4. oktober 1943",
+        yearLabelEn: "1–4 October 1943",
+        sortYear: 1943,
+        textSi:
+          "Stari Peter Madronič med odposlanci na Zboru odposlancev v Kočevju; hčerka Katica zunaj čuva konja — »partizanskega taksista«.",
+        textEn:
+          "Old Peter Madronič among the delegates at the Assembly of Delegates at Kočevje; daughter Katica guards the horse outside — the »Partisan taxi«.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1945–1978",
+        yearLabelEn: "1945–1978",
+        sortYear: 1960,
+        textSi:
+          "Mlin in žaga delujeta za okolico; leta 1978 domačija gosti likovno kolonijo študentov.",
+        textEn:
+          "The mill and the saw work for the neighbourhood; in 1978 the homestead hosts an art colony of students.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Mlin ne deluje več; obnovljen je sto metrov dolg poševni jez. Družina je izdelala tri makete mlina in žage (ena z vodnim pogonom) in pripravlja knjigo z arhivskim gradivom.",
+        textEn:
+          "The mill works no more; the hundred-metre diagonal weir has been restored. The family has built three models of the mill and the saw (one with water power) and is preparing a book of archival material.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "muzejska-ucilnica",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "november 1889",
+        yearLabelEn: "November 1889",
+        sortYear: 1889,
+        textSi:
+          "Blagoslov šolskega poslopja: ena učilnica in stanovanje učitelja pripravnika Petra Kambiča.",
+        textEn:
+          "The school building is blessed: one classroom and the flat of the trainee teacher Peter Kambič.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1941–2004",
+        yearLabelEn: "1941–2004",
+        sortYear: 1950,
+        textSi:
+          "Vojna zasede poslopje (pouk v gasilskem domu), povojne množice razširijo (učilo se je tudi v Brinčevi hiši); 2002–2004 kdaj le 4–6 učencev — vas in občina šolo obdržita.",
+        textEn:
+          "The war occupies the building (lessons in the fire station), the postwar crowds widen it (teaching also in the Brinc house); 2002–2004 at times only 4–6 pupils — the village and the municipality keep the school.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "26. junij 2022",
+        yearLabelEn: "26 June 2022",
+        sortYear: 2022,
+        textSi:
+          "Odprtje muzejske učilnice v več kot 130 let stari šoli — prisotna predstavnica Slovenskega šolskega muzeja; brani se zapisi šolskega leta 1949/50 (pečke, zelišča, Gumb za AFŽ).",
+        textEn:
+          "The museum classroom opens in the more than 130-year-old school — a representative of the Slovene School Museum present; records of the school year 1949/50 are read (apple seeds, herbs, Gumb za AFŽ).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026 → 2029",
+        yearLabelEn: "2026 → 2029",
+        sortYear: 2026,
+        textSi:
+          "17 učencev v petih kombiniranih oddelkih, vodja Marjetka Žunič (od 1992) — edina slovenska vas s svojo podružnico; leta 2029 140-letnica.",
+        textEn:
+          "17 pupils in five combined departments, head Marjetka Žunič (since 1992) — the only Slovene village with its own branch school; the 140th anniversary in 2029.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+    ],
+  },
+  {
+    slug: "kavbojski-zur",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "2024",
+        yearLabelEn: "2024",
+        sortYear: 2024,
+        textSi:
+          "Prvi Kavbojski žur: »Bilo je kot na Divjem zahodu« — vas se za en dan preoblikuje v divji zahod.",
+        textEn:
+          "The first Cowboy Party: »It was like in the Wild West« — the village turns into the Wild West for a day.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "junij 2025",
+        yearLabelEn: "June 2025",
+        sortYear: 2025,
+        textSi:
+          "Druga izvedba »znova navduši«: plesalke Country Roses (domačinke), učenci OŠ, Country Vrtičkarji iz Semiča in Wild West iz Ljubljane.",
+        textEn:
+          "The second edition »delights again«: the Country Roses dancers (local women), primary-school pupils, the Country Vrtičkarji of Semič and Wild West of Ljubljana.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "julij 2026",
+        yearLabelEn: "July 2026",
+        sortYear: 2026,
+        textSi:
+          "Country Roses nastopijo tudi na rallyju starodobnih koles — šega se prepleta s poletnim koledarjem vasi.",
+        textEn:
+          "The Country Roses also perform at the vintage-bicycle rally — the custom interweaves with the village's summer calendar.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2027,
+        textSi:
+          "Najmlajša šega v zbirki (CORROBORATED, ne TRADITION): zapisana ob rojstvu, da nekoč ne bo manjkal dokument o prvem dnevu — kakor danes manjka večini starih šeg.",
+        textEn:
+          "The collection's youngest custom (CORROBORATED, not TRADITION): recorded at its birth, so that one day the document of the first day will not be missing — as it is missing for most old customs.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "zvon-2008",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1526 → 2008",
+        yearLabelEn: "1526 → 2008",
+        sortYear: 1526,
+        textSi:
+          "Cerkev sv. Vida prvič zapisana v listinah; usoda njenih predhodnih zvonov (rekvizicije, razpoke, menjava) je danes izgubljena — vrzel, ki jo muzej odkrito išče.",
+        textEn:
+          "The church of St. Vitus first enters the documents; the fate of its earlier bells (requisitions, cracks, replacement) is lost today — a gap the museum openly seeks to fill.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2008",
+        yearLabelEn: "2008",
+        sortYear: 2008,
+        textSi:
+          "Blagoslov in posvetitev novega zvona; o dogodku nastane spominska knjiga »SV. VID GRIBLJE« — med redkimi tiskanimi viri, nastalimi v sami vasi.",
+        textEn:
+          "The blessing and consecration of the new bell; a memorial book »SV. VID GRIBLJE« arises from the event — among the rare printed sources created in the village itself.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "21. junij 2026",
+        yearLabelEn: "21 June 2026",
+        sortYear: 2026,
+        textSi:
+          "Zvon pozvoni ob 500-letnici prve omembe cerkve — slovesno mašo daruje škof Glavan; ob cerkvi blagoslovijo novo parkirišče in poslovilno vežico.",
+        textEn:
+          "The bell rings at the 500th anniversary of the church's first mention — the solemn mass celebrated by Bishop Glavan; by the church the new parking place and funeral vestibule are blessed.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "→ danes",
+        yearLabelEn: "→ today",
+        sortYear: 2027,
+        textSi:
+          "Muzej išče fotografije blagoslova 2008, imena botrov zvona in ime livarne — vsak zvon nosi žig, vsak žig zgodbo. Ko se najdejo, se vrzel zapre.",
+        textEn:
+          "The museum seeks photographs of the 2008 blessing, the names of the bell's godparents and the foundry's name — every bell carries a mark, every mark a story. When they are found, the gap closes.",
+        evidenceStatus: "TO_COLLECT",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {
