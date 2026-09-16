@@ -853,3 +853,29 @@ Stage Summary:
 - Git: main sinhroniziran z oddaljenim repozitorijem; raziskava objavljena (#26); 7. sklop (#27) commitan in pushan; Vercel samodejni deploy
 - Ključne nove vsebine: Hollywood iz Gornjih Gribelj, najstarejši Slovenec, ribja vrsta iz Kolpe z znanstveno sliko, arhiv rodbin 1669–1947, sosednja vas s tremi izgubljenimi cerkvicami, živa šega Pasuljada
 - Ostalo programa: naslednji sklopi iz preostalih ~38 predlogov raziskave (Brinc, Gašperič, Dular, Madroničev mlin, Veselko-fotograf, Kavbojski žur …), kontakti (dr. Weiss, Knjižnica Črnomelj, Radio Odeon), ponovitev iskanj ko se kvota sprosti
+
+---
+Task ID: 39
+Agent: Main agent (Z.ai Code)
+Task: 8. vsebinski sklop "Dobre duše vasi" — 7 novih zapisov iz raziskave (uporabnik: "odlicno nadaljuj po nacrtu")
+
+Work Log:
+- Stanje ob začetku: main sinhroniziran z origin (37 zapisov/176 virov, README posodobljen v #26/#27); db/custom.db samo šum statistike → checkout
+- Iskanja (web_search/image-search) še vedno 429 (dnevna kvota); Wikimedia API (curl) pravito 429 po IP → novih slik ni bilo mogoče prenesti; 7 novih zapisov brez fotografij (dosledno z 6 obstoječimi: pgd-griblje-1927, nikolaj-dragos, peter-kambic, matice-podzemelj, cerkvisce, pasuljada — nadomestna ilustracija postavitve)
+- 7 NOVIH ZAPISOV (museum-content.ts, vsak: etiketa ~30-40 besed + zgodba 251-308 besed SL/EN + 3-4 viri z notami + status dokazilosti + addedAt 2026-09-16): franc-brinc (DOCUMENTED; 1941-45 šola, penolog/kriminolog, 30.000 € PGD + 30.000 € šoli + ~200.000 € skupaj, spominska soba 2024, plošča 10. 4. 2026, parkirišče ob cerkvi 2026; 4 viri), katarina-zupanic (DOCUMENTED; Šopek poljskih cvetlic 1894/95 → Etnolog 1937/9, prva ženska med zapisovalci; 4 viri), toni-gasperic (DOCUMENTED; humorist, Veseli tobogan/Prizma optimizma, Osip Šest, Noč na Kolpi; 3 viri), madronicev-mlin (kolpa, DOCUMENTED; Prelesje 1937, Zbor odposlancev 1943 s Katico in »partizanskim taksistom«, kolonija 1978, tri makete, knjiga v pripravi; 3 viri), muzejska-ucilnica (DOCUMENTED; 26. 6. 2022, Slovenski šolski muzej, zapisi 1949/50 — pečke/zelišča/Gumb za AFŽ, »Podružnice niso drage, so pa dragocene«, 17 učencev, edina vas s podružnico; 3 viri), kavbojski-zur (sege, CORROBORATED; 2024+2025, Country Roses/Vrtičkarji/Wild West, zapisan takoj ob rojstvu — etnološka iskrenost; 3 viri), zvon-2008 (CORROBORATED; spominska knjiga SV. VID GRIBLJE 2008 prek Wikipedijine literature, 500-letnica 2026, mežnarica Križan + ključar Štruclj; 4 viri)
+- POPRAVEK VSEBINSKE NAPAKE: peter-kambic je trdil, da sta Kambič (1889) in Katarinin Šopek (1894/95) »dve roki, stoletje narazen« — pravilno: isto desetletje (SL+EN popravljeno)
+- object-biographies.ts: 7 novih življenjepisov po 4-5 faz (nastanek/zivljenje/prica/raziskava/digitalizacija/danes; zvon-2008 zaključna faza TO_COLLECT — iskanje botrov in livarne)
+- minute-stories.ts: 34 → 41 (7 novih enominutnih zgodb SL/EN)
+- walks.ts: +7 postaj, pokritost 44/44 vsak zapis natanko enkrat (voda+madronicev-mlin, kruh+kavbojski-zur+katarina-zupanic, svet+toni-gasperic, ljudje+zvon-2008+muzejska-ucilnica+franc-brinc); komentar 30→44
+- museum-content.ts events: +Sto let PGD Griblje (1927–2027), 19. 6. 2027, gasilski dom (točen datum bo potrdilo društvo) → 9 dogodkov
+- i18n.tsx: hero podnaslov, vodnikov podnaslov, coverNote, advent note — vseh 12 nizov v SL/HR/EN (slovnično varne oblike za 44: »Zbirka 44 zapisov«, »slonijo na 44 kuriranih zapisih«, »v zbirki jih je 44«, »Četrdeset i četiri zapisa«, »44 kurirana zapisa«); layout.tsx meta opis 37→44
+- Tehnične težave rešene: (1) MultiEdit z dinamično generiranimi nizi je podvajal vstavke v walks.ts (zastareli vstavljalni proces je deloval pred skriptom) → skript scripts/dedupe-walk-stops.ts odstranil 4 duplikate, oba skripta samodejno izbrisana; (2) dev server je po reseedu držal zastarel prikaz baze (37 namesto 44) → restart strežnika rešil
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2302 znanih opozoril — nespremenjeno); reseed 44/200/9; API: exhibits=44, events=9, IIIF=44, search najde kavbojski-zur, opendata manifest OK; agent-browser LOKALNO: hero »Zbirka 44 zapisov«, statistika 44/200/6, današnji zapis = Madroničev mlin, dialog franc-brinc (zgodba, citat Štruclj, 4 viri, življenjepis 4 faze, citat gumb), HR jezik (»Selo kao muzej.«, »Četrdeset i četiri zapisa«), dogodki s PGD stoletnico, sprehodi »svih 44 zapisa«, mobilni 390 px z nogo, 0 napak konzole
+- PRODUKCIJA: commit 53cb63f pushan na main; Vercel samodejni deploy: home 200, API 44, IIIF 44, hero »Zbirka 44 zapisov«, statistika 44 muzejskih zapisov / 200 dokumentiranih virov / 6 tematskih sklopov, Brinc vsebina prisotna; testni števci statistike izbrisani pred pushom (4 vrstice)
+- README: tabela globine 44/44 + 200 virov (povp. ~298 besed), 8. sklop opisan, funkcije 44 zapisov, 41 minutnih zgodb, db:seed 44/200/9
+
+Stage Summary:
+- Zbirka: 44 zapisov / 200 virov / 41 minutnih zgodb / 9 dogodkov / 6 sprehodov (pokritost 44/44) / 19 točk na zemljevidu (novi zapisi brez preverjenih koordinat — Madroničev mlin v Prelesju namenoma brez pike)
+- Git: commit 53cb63f (#28) na main, Vercel deploy potrjen s 44 zapisi
+- Ključni novi zgodbibi: dobrotnik dr. Brinc (edini, ki je svet vrnil v Griblje), prva ženska-zapisovalka Katarina Zupanič, fizična sestra muzeja (muzejska učilnica), najmlajša šega (Kavbojski žur, zapisana ob rojstvu)
+- Iskalna kvota (z-ai + Wikimedia API po IP) še vedno izčrpana — neizpolnjene teme ostajajo za naslednji sklop: RKD register cerkve, PGD medalje/tekmovanja, TD kontakti/Facebook, stari zemljevidi, pohodne poti, preostalih ~31 predlogov raziskave (Štrucelj kmetija, Gašperičeva bibliografija v COBISS, zaselki, Goranja lokva ...)
