@@ -250,6 +250,55 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "August by the Kolpa, pots on the fire: the Pasuljada. A bean-stew cooking competition run by the Griblje Tourist Society with the Farm Women's Society and the bathing place — by 2019 already the sixteenth time, so since about 2004. Fourteen teams of two, a jury with spoon and nose, the winning pot and recipe. Ethnologists say a custom younger than a hundred years is not yet a custom — but in a living place tradition is not only inherited; it is created. One day it will be written about the way we today write about Christmas.",
   },
+  {
+    slug: "franc-brinc",
+    textSi:
+      "Med vojno je obiskoval gribeljsko šolo; kasneje je postal izredni profesor prava, penolog in kriminolog. Potem se je zgodilo nekaj, kar vasi ni bilo usojeno pričakovati: vrnil se je z darovi. Gasilcem 30.000 evrov v štirih letih — operativna soba, streha, izolacija. Šoli prav toliko — digitalna oprema, igrala, ekovrt in izlet v Planico. Skupaj z občino in cerkvijo okoli 200.000 evrov. Poveljnik gasilcev je rekel: dal nam je zagon in prebudil društvo. V gasilskem domu ima danes svojo spominsko sobo, na šoli pa ploščo.",
+    textEn:
+      "He attended the Griblje school during the war; later he became an associate professor of law, a penologist and a criminologist. Then came something the village had not been promised: he returned with gifts. Thirty thousand euros to the fire brigade over four years — the operational room, the roof, the insulation. Just as much to the school — digital equipment, play equipment, a school garden and a trip to Planica. With the municipality and the church, around two hundred thousand euros in all. The fire commander said: he gave us momentum and woke the society. Today he has his memorial room in the fire station, and a plaque on the school.",
+  },
+  {
+    slug: "katarina-zupanic",
+    textSi:
+      "Leto 1894: etnolog Niko Županič prosi mater, naj zapiše ljudsko izročilo svoje vasi. Katarina, rojena Pezdirc pri Grizinu, vzame pero in naredi, česar pred nijo nobena roka Gribelj: zajame leto, šege, pesmi in vere, kakor jih živi. Naslov bo Šopek poljskih cvetlic iz Gribelj. Objavljena bo šele leta 1937, v Etnologu — reviji, ki jo je ustanovil njen sin. Med zapisovalci te dežele je prva ženska; njen zapis je pot od vaške izročilke do tiskane strani.",
+    textEn:
+      "The year 1894: the ethnologist Niko Županič asks his mother to write down the folk tradition of her village. Katarina, born Pezdirc at the Grizin homestead, takes up the pen and does what no hand of Griblje had done before her: she captures the year, the customs, the songs and the beliefs as she lives them. The title will be A Bouquet of Meadow Flowers from Griblje. It will be published only in 1937, in Etnolog — the journal her son founded. Among this land's recorders she is the first woman; her record is the road from a village tradition-keeper to the printed page.",
+  },
+  {
+    slug: "toni-gasperic",
+    textSi:
+      "Hiša ob Kolpi, vedno odprta: Toni Gašperič in žena Jana. Njegova obrt je bil smeh — humorist, pisatelj, voditelj Veselga tobogana in Prizme optimizma. Knjige z naslovi, ki so sami malo belokranjsko učno gradivo: Ljudje z zaščitenimi hrbti, Vsi smo na ražnju, Življenje je eno samo porivanje. Ustanovil je igralsko skupino Osip Šest in pobudil Noč na Kolpi. Med nesnovno dediščino vasi spada tudi smeh: vas, ki zna sama sebe spraviti v smeh, preživi vse.",
+    textEn:
+      "A house by the Kolpa, always open: Toni Gašperič and his wife Jana. His trade was laughter — humorist, writer, presenter of the Veseli tobogan and the Prizma optimizma. Books whose titles are themselves a little Bela krajina primer: Ljudje z zaščitenimi hrbti, Vsi smo na ražnju, Življenje je eno samo porivanje. He founded the Osip Šest acting group and initiated the Night on the Kolpa. Laughter belongs to a village's intangible heritage too: a village that can laugh at itself survives everything.",
+  },
+  {
+    slug: "madronicev-mlin",
+    textSi:
+      "Prelesje ob Kolpi, dva in pol kilometra od Gribelj: leta 1937 družina Madronič kupi požgano domačijo z mlinom in žago. Mlin v nadstropju — Kolpa ob poplavah dvigne vodo za več metrov. Stari Peter Madronič je bil leta 1943 med odposlanci v Kočevju, hčerka Katica je čuvala konja, »partizanskega taksista«. Danes mlin ne melje več, a živi: tri makete, ena z vodnim pogonom, obnovljen sto metrov dolg jez — in knjiga, ki jo družina pripravlja.",
+    textEn:
+      "Prelesje on the Kolpa, two and a half kilometres from Griblje: in 1937 the Madronič family buys a burnt-down homestead with a mill and a sawmill. The mill in an upper storey — at flood the Kolpa raises the water by several metres. Old Peter Madronič was among the delegates at Kočevje in 1943; his daughter Katica guarded the horse, the »Partisan taxi«. Today the mill grinds no more, but it lives: three models, one with water power, a restored hundred-metre weir — and a book the family is preparing.",
+  },
+  {
+    slug: "muzejska-ucilnica",
+    textSi:
+      "26. junij 2022: v sto trideset let stari gribeljski šoli odprejo muzejsko učilnico. Brani se zapisi šolskega leta 1949/50 — pionirji so zbrali četrt kilograma jabolčnih pečk in 215 kilogramov zelišč. Branka Weiss, dolgoletna vodja: »Podružnice niso drage, so pa dragocene.« Danes jo obiskuje 17 učencev, Marjetka Žunič poučuje od 1992 — in to je edina slovenska vas s svojo podružnico. Ta digitalni muzej ima torej v vasi fizično sestro: dve učilnici, ena naloga.",
+    textEn:
+      "26 June 2022: a museum classroom opens in the hundred-and-thirty-year-old Griblje school. Records of the school year 1949/50 are read — the pioneers collected a quarter of a kilogram of apple seeds and 215 kilograms of herbs. Branka Weiss, the longtime head: »Branch schools are not expensive; they are precious.« Today 17 pupils attend it, Marjetka Žunič has taught since 1992 — and this is the only Slovene village with its own branch school. So this digital museum has a physical sister in the village: two classrooms, one task.",
+  },
+  {
+    slug: "kavbojski-zur",
+    textSi:
+      "Junij ob Kolpi, klobuki na glavah: Kavbojski žur. Prvič 2024 (»Bilo je kot na Divjem zahodu«), drugič 2025 — in znova je navdušil. Plesalke Country Roses so domačinke; nastopili so učenci šole, semiški Country Vrtičkarji in Wild West iz Ljubljane. Etnološka iskrenost: šega, mlajša od sto let, še ni šega — zato je ta zapisan takoj ob rojstvu. Večini šeg ni zapisan prvi dan; tej ne bo manjkal.",
+    textEn:
+      "June by the Kolpa, hats on heads: the Cowboy Party. First in 2024 (»It was like in the Wild West«), again in 2025 — and it delighted again. The Country Roses dancers are local women; the school pupils performed, as did the Country Vrtičkarji of Semič and Wild West of Ljubljana. Ethnological honesty: a custom younger than a hundred years is not yet a custom — which is why this one is recorded at its birth. Most customs never get their first day written down; this one will not lack it.",
+  },
+  {
+    slug: "zvon-2008",
+    textSi:
+      "Zvon je bil desetletja edini radio vasi: k maši, k pogrebu, ob nevihti. Leta 2008 so v Gribljah blagoslovili in posvetili nov zvon cerkve sv. Vida; o dogodku je nastala spominska knjiga SV. VID GRIBLJE — med redkimi tiskanimi viri, nastalimi v sami vasi. Junija 2026 je ta glas pozvonil ob 500-letnici cerkve, ob maši škofa Glavana. Muzej išče fotografije blagoslova, imena botrov in livarno — vsak zvon nosi žig, vsak žig zgodbo.",
+    textEn:
+      "For decades the bell was the village's only radio: to mass, to a funeral, at a storm. In 2008 a new bell of the church of St. Vitus was blessed and consecrated in Griblje; a memorial book, SV. VID GRIBLJE, arose from the event — among the rare printed sources created in the village itself. In June 2026 that voice rang out at the church's 500th anniversary, at Bishop Glavan's mass. The museum seeks photographs of the blessing, the godparents' names and the foundry — every bell carries a mark, every mark a story.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {

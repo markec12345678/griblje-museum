@@ -2400,9 +2400,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The first teacher of the newly founded school in Griblje (1889), born at Krasinec. In his spare time he recorded the folk wealth of Bela krajina — his account »Christmas among the Bela krajina people« is today among the oldest published glimpses of the region's festive life. He died at twenty.",
     storySi:
-      "24. maja 1869 se je v Krasincu, zaselku ob Kolpi nedaleč od Gribelj, rodil fant po imenu Peter Kambič. Usoda mu je namenila kratko, a goste pot: ko so novembra 1889 v Gribljah blagoslovili novo šolsko poslopje, je mladi učitelj pripravnik Kambič dobil mesto v njegovi prvi učilnici — s stanovanjem v istem poslopju, kakor je takrat veljalo za vaške učitelje.\n\nBil je dvoje hkrati: učitelj in etnograf. V prostih urah, ki jih vaški učitelj ni imel veliko, je zbiral in popisoval belokranjsko ljudsko bogastvo — šege, pesmi, opravila, praznike. Pod psevdonimom Pirc Krasinski je 1. januarja 1889 v Dolenjskih novicah objavil zapis »Božič pri Belokranjcih«: podroben vpogled v božični čas te dežele, napisan z učiteljevo natančnostjo in domačinovo ljubeznijo. Danes je med najstarejšimi objavljenimi pričami o tem, kako je ta kotiček Slovenije praznoval zimski praznik, ko še elektrika ni bila zaslišana.\n\nNjegova smrt je ena od tistih, ki jih zgodovina ne utolaži: 25. januarja 1890, komaj dvajsetleten, je umrl v Gribljah — v kraju, kjer je komaj začel. Šola, ki jo je pomagal zagnati, je zrasla v eno najbolj živih vaških učilnic v Sloveniji (danes podružnica OŠ Loka Črnomelj); njegov poklic pa je postal tudi njegov spomenik: kar je zapisal o božiču, živi dlje od njega.\n\nMuzej postavlja Kambiča ob Šopek poljskih cvetlic iz Gribelj, ki ga je zapisala Katarina Zupanič: dve roki, stoletje narazen, ki sta isto deželo zapisali iz ljubezni do nje. Njegova zgodba opominja, da starost ni merilo pomena — dvajset let je za to deželo zadostovalo.",
+      "24. maja 1869 se je v Krasincu, zaselku ob Kolpi nedaleč od Gribelj, rodil fant po imenu Peter Kambič. Usoda mu je namenila kratko, a goste pot: ko so novembra 1889 v Gribljah blagoslovili novo šolsko poslopje, je mladi učitelj pripravnik Kambič dobil mesto v njegovi prvi učilnici — s stanovanjem v istem poslopju, kakor je takrat veljalo za vaške učitelje.\n\nBil je dvoje hkrati: učitelj in etnograf. V prostih urah, ki jih vaški učitelj ni imel veliko, je zbiral in popisoval belokranjsko ljudsko bogastvo — šege, pesmi, opravila, praznike. Pod psevdonimom Pirc Krasinski je 1. januarja 1889 v Dolenjskih novicah objavil zapis »Božič pri Belokranjcih«: podroben vpogled v božični čas te dežele, napisan z učiteljevo natančnostjo in domačinovo ljubeznijo. Danes je med najstarejšimi objavljenimi pričami o tem, kako je ta kotiček Slovenije praznoval zimski praznik, ko še elektrika ni bila zaslišana.\n\nNjegova smrt je ena od tistih, ki jih zgodovina ne utolaži: 25. januarja 1890, komaj dvajsetleten, je umrl v Gribljah — v kraju, kjer je komaj začel. Šola, ki jo je pomagal zagnati, je zrasla v eno najbolj živih vaških učilnic v Sloveniji (danes podružnica OŠ Loka Črnomelj); njegov poklic pa je postal tudi njegov spomenik: kar je zapisal o božiču, živi dlje od njega.\n\nMuzej postavlja Kambiča ob Šopek poljskih cvetlic iz Gribelj, ki ga je zapisala Katarina Zupanič: dve roki istega desetletja, ki sta isto deželo zapisali iz ljubezni do nje. Njegova zgodba opominja, da starost ni merilo pomena — dvajset let je za to deželo zadostovalo.",
     storyEn:
-      "On 24 May 1869, at Krasinec, a hamlet by the Kolpa not far from Griblje, a boy named Peter Kambič was born. Fate allotted him a short but dense road: when the new school building in Griblje was blessed in November 1889, the young trainee teacher Kambič took his place in its first classroom — with lodgings in the same building, as village teachers then customarily had.\n\nHe was two things at once: a teacher and an ethnographer. In the spare hours a village teacher does not have many of, he collected and recorded the folk wealth of Bela krajina — customs, songs, work, feasts. Under the pen name Pirc Krasinski, on 1 January 1889, the Dolenjske novice published his account »Christmas among the Bela krajina people«: a detailed look at the festive season of this land, written with a teacher's precision and a native's love. Today it stands among the oldest published testimonies of how this corner of Slovenia kept the winter feast, before electricity was ever heard of.\n\nHis death is one history does not console: on 25 January 1890, barely twenty, he died in Griblje — in the place he had only just begun. The school he helped set going grew into one of the liveliest village classrooms in Slovenia (today a branch of the OŠ Loka Črnomelj school); and his side-work became his monument: what he wrote about Christmas outlives him.\n\nThe museum sets Kambič beside the » Bouquet of meadow flowers from Griblje« recorded by Katarina Zupanič: two hands, a century apart, that wrote down the same land out of love for it. His story is a reminder that age is no measure of weight — twenty years sufficed for this land.",
+      "On 24 May 1869, at Krasinec, a hamlet by the Kolpa not far from Griblje, a boy named Peter Kambič was born. Fate allotted him a short but dense road: when the new school building in Griblje was blessed in November 1889, the young trainee teacher Kambič took his place in its first classroom — with lodgings in the same building, as village teachers then customarily had.\n\nHe was two things at once: a teacher and an ethnographer. In the spare hours a village teacher does not have many of, he collected and recorded the folk wealth of Bela krajina — customs, songs, work, feasts. Under the pen name Pirc Krasinski, on 1 January 1889, the Dolenjske novice published his account »Christmas among the Bela krajina people«: a detailed look at the festive season of this land, written with a teacher's precision and a native's love. Today it stands among the oldest published testimonies of how this corner of Slovenia kept the winter feast, before electricity was ever heard of.\n\nHis death is one history does not console: on 25 January 1890, barely twenty, he died in Griblje — in the place he had only just begun. The school he helped set going grew into one of the liveliest village classrooms in Slovenia (today a branch of the OŠ Loka Črnomelj school); and his side-work became his monument: what he wrote about Christmas outlives him.\n\nThe museum sets Kambič beside the »Bouquet of meadow flowers from Griblje« recorded by Katarina Zupanič: two hands of the same decade, that wrote down the same land out of love for it. His story is a reminder that age is no measure of weight — twenty years sufficed for this land.",
     evidenceStatus: "DOCUMENTED",
     yearFrom: 1869,
     yearTo: 1890,
@@ -2710,6 +2710,430 @@ export const seedExhibits: SeedExhibit[] = [
       },
     ],
   },
+  {
+    slug: "franc-brinc",
+    category: "kraj",
+    titleSi: "dr. Franc Brinc — pravnik, ki vrača domov",
+    titleEn: "dr. Franc Brinc — the lawyer who gives back to home",
+    periodSi: "1941 → danes · učenec in dobrotnik vasi",
+    periodEn: "1941 → present · the village's pupil and benefactor",
+    summarySi:
+      "Izredni profesor prava, penolog in kriminolog, ki je gribeljsko šolo obiskoval 1941–1945. V zadnjih letih je vasi namenil okoli 200.000 evrov darov — in z njimi prebudil gasilski dom, šolo in okolico cerkve.",
+    summaryEn:
+      "An associate professor of law, penologist and criminologist who attended the Griblje school in 1941–1945. In recent years he has given the village around 200,000 euros — and with it reawakened the fire station, the school and the churchyard.",
+    storySi:
+      "Dr. Franc Brinc je gribeljsko šolo obiskoval med letoma 1941 in 1945 — vojna mu je otroštvo postavila v tuj prostor, saj so italijanski vojaki zasedli šolsko poslopje in je pouk bežal v gasilski dom. Iz vasi ga je pot odnesla v pravo: postal je izredni profesor, njegovi področji pa penologija in kriminologija — znanosti o kazni in o tem, zakaj ljudje padajo. Vrnil se je z nenavadnim orodjem pravnika: z darilom.\n\nZadnja leta so njegova darovanja postala gospodarska zgodba vasi. Prostovoljnemu gasilskemu društvu je v štirih letih namenil 30.000 evrov: uredili so operativno sobo, v celoti zamenjali streho in izolacijo gasilskega doma, ki ga je pred leti poškodovala toča. Poveljnik Matija Štrucelj je zapisal: »Brez tega ne bi zmogli. Dal nam je zagon in s tem prebudil društvo, ki je bilo v nekem trenutku v rahlem zatonu.« Podružnični šoli je namenil prav toliko — digitalna oprema, igrala, ekovrt in izleti, na katerih so gribeljski otroci prvič videli smučarske skoke v Planici. Skupaj z darovi občini in cerkvi se vsota ustavi pri okoli 200.000 evrih.\n\nVas mu je vrnila s spominom, ne z denarjem. Ob prazniku krajevne skupnosti 15. septembra 2024 je 89-letni Brinc domačine nagovoril z življenjskimi spomini — in isti večer so v gasilskem domu odprli spominsko sobo dr. Franca Brinca. Desetega aprila 2026 so na pročelju šole odkrili spominsko ploščo z njegovim imenom. Ob 500-letnici cerkve sv. Vida junija 2026 pa je njegova podpora skupaj z občino Črnomelj omogočila ureditev novega parkirišča ob cerkvi in poslovilne vežice.\n\nMuzej zapis postavlja v vrsto z Županičem, Dragošem in Totterjevo: vsi so odnesli gribeljsko kri v svet — Brinc pa je prinesel svet nazaj v Griblje, v evrih, ki so postali streha, učilnica in spomin. Dobra duša vasi ni tista, ki največ ima, ampak tista, ki največ vrne. Ta zapis je muzejev način, da se tudi sam zahvali.",
+    storyEn:
+      "Dr. Franc Brinc attended the Griblje school between 1941 and 1945 — a wartime childhood in borrowed rooms, for Italian soldiers occupied the schoolhouse and lessons fled to the fire station. From the village the road carried him into law: he became an associate professor, his fields penology and criminology — the sciences of punishment and of why people fall. He returned with a lawyer's unusual instrument: a gift.\n\nIn recent years his donations have become the village's economic story. To the volunteer fire brigade he gave 30,000 euros over four years: the operational room was fitted out, the roof and insulation of the fire station — hail-damaged years before — wholly replaced. Commander Matija Štrucelj wrote: »Without this we could not have managed. He gave us momentum, and with it woke a society that was at one moment in a slight decline.« To the branch school he gave just as much — digital equipment, play equipment, a school garden and the excursions on which the Griblje children first saw the ski jumps at Planica. Together with the gifts to the municipality and the church, the sum stops at around 200,000 euros.\n\nThe village repaid him with memory, not money. At the local community's celebration on 15 September 2024 the 89-year-old Brinc addressed his neighbours with the memories of a lifetime — and the same evening the memorial room of dr. Franc Brinc opened in the fire station. On 10 April 2026 a plaque bearing his name was unveiled on the school's facade. At the 500th anniversary of the church of St. Vitus in June 2026, his support together with the Municipality of Črnomelj made possible the new parking place by the church and the funeral vestibule.\n\nThe museum sets this record beside Županič, Dragoš and Totter: all carried Griblje blood out into the world — Brinc brought the world back to Griblje, in euros that became a roof, a classroom and a memory. A village's good soul is not the one who has the most, but the one who returns the most. This record is the museum's own way of saying thank you.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: 1941,
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "odeon-brinc-plosca",
+        nameSi: "Radio Odeon — V Gribljah odkrili spominsko ploščo Francu Brincu (15. april 2026)",
+        nameEn: "Radio Odeon — A memorial plaque to Franc Brinc unveiled in Griblje (15 April 2026)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu/",
+        noteSi:
+          "Plošča na pročelju šole, darovi šoli (30.000 €), šolska leta 1941–1945, evakuacijska vaja gasilcev z učenci.",
+        noteEn:
+          "The plaque on the school facade, the gifts to the school (30,000 €), the school years 1941–1945, the fire brigade's evacuation drill with the pupils.",
+      },
+      {
+        key: "odeon-brinc-ks",
+        nameSi: "Radio Odeon — Krajevna skupnost Griblje je praznovala (17. september 2024)",
+        nameEn: "Radio Odeon — The Griblje local community celebrated (17 September 2024)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala/",
+        noteSi:
+          "89-letni dr. Brinc z nagovorom o življenjskih spominih; otvoritev spominske sobe v gasilskem domu.",
+        noteEn:
+          "The 89-year-old dr. Brinc addressing the gathering; the opening of the memorial room in the fire station.",
+      },
+      {
+        key: "s24-brinc-pgd",
+        nameSi: "Svet24 — PGD Griblje pred stoletnico, rojak Franc Brinc (13. maj 2026)",
+        nameEn: "Svet24 — The Griblje fire brigade before its centenary, their countryman Franc Brinc (13 May 2026)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        noteSi:
+          "30.000 € PGD v štirih letih (operativna soba, streha, izolacija); Štrucljev citat o zagonu društva.",
+        noteEn:
+          "30,000 € to the fire brigade over four years (operational room, roof, insulation); Štrucelj's words on the society's new momentum.",
+      },
+      {
+        key: "odeon-brinc-cerkev",
+        nameSi: "Radio Odeon — V Gribljah slovesno obeležili 500-letnico prve omembe cerkve sv. Vida (junij 2026)",
+        nameEn: "Radio Odeon — Griblje solemnly marked the 500th anniversary of the church of St. Vitus's first mention (June 2026)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida/",
+        noteSi:
+          "Novo urejeno parkirišče ob cerkvi in poslovilni vežici — občina Črnomelj in donator dr. Franc Brinc.",
+        noteEn:
+          "The newly arranged parking place by the church and the funeral vestibule — the Municipality of Črnomelj and the donor dr. Franc Brinc.",
+      },
+    ],
+  },
+  {
+    slug: "katarina-zupanic",
+    category: "sege",
+    titleSi: "Katarina Zupanič — Šopek poljskih cvetlic iz Gribelj",
+    titleEn: "Katarina Zupanič — A bouquet of meadow flowers from Griblje",
+    periodSi: "1894–1895 · zapis, objavljen 1937",
+    periodEn: "1894–1895 · a record published in 1937",
+    summarySi:
+      "Leta 1894/95 je vaščanka Katarina Zupanič (r. Pezdirc, 1855–1923) na željo svojega sina — etnologa Nika Županiča — zbrala in zapisala ljudsko izročilo Gribelj. Zapis je leta 1937 izšel v Etnologu kot Šopek poljskih cvetlic iz Gribelj.",
+    summaryEn:
+      "In 1894/95 the village woman Katarina Zupanič (née Pezdirc, 1855–1923), at her son's wish — the ethnologist Niko Županič — gathered and wrote down the folk tradition of Griblje. The record appeared in Etnolog in 1937 as A Bouquet of Meadow Flowers from Griblje.",
+    storySi:
+      "V drugi polovici devetnajstega stoletja je znala gribeljska kmetica brati in pisati redko dovolj, da bi bilo to vredno omembe. Katarina, rojena Pezdirc leta 1855 na domačiji pri Grizinu, je znala. Poročila se je s kmetom in trgovcem Nikolajem (Mikom) Zupaničem; 1. decembra 1876 sta na svet dobila sina Nika, ki je iz Gribelj odšel v Novo mesto, na Dunaj in v Beograd — in postal ustanovitelj slovenske etnologije.\n\nSin je vedel, kaj ima doma. Leta 1894/95 je prosil mater, naj zbere in zapiše ljudsko izročilo Gribelj — in Katarina je naredila nekaj, kar pred nijo ni naredila nobena roka te vasi: s peresom je zajela leto, šege, pesmi in vere, kakor jih je živela. Njen zapis nosi naslov, ki bi ga lepšega ni mogla izbrati niti poezija: Šopek poljskih cvetlic iz Gribelj v Beli Krajini.\n\nZapis je čakal na objavo dlje, kot je Katarina čakala na vnuke. Umrla je 23. julija 1923; leta 1937 — v devetem zvezku Etnologa, revije, ki jo je njen sin ustanovil leta 1927 — je Šopek končno izšel. Danes je med najstarejšimi obsežnejšimi zapisi ljudskega izročila, zapisanimi v Gribljah samih; starejši je le Kambičev Božič pri Belokranjcih (1889) — dve roki istega desetletja, obe iz ljubezni do iste dežele.\n\nV zbirki, polni zapisovalcev s starejšimi ali novejšimi diplomi, je Katarina prva ženska. Njen zapis je most med dvema muzejema: med vaškim izročilom, ki ga je nosila v glavi, in znanostjo, ki jo je njen sin postavil na noge. Vsak zapis v tej zbirki, ki citira ljudsko izročilo Gribelj, hodi po njeni stezi — od grizinske domačije do tiskane strani.",
+    storyEn:
+      "In the second half of the nineteenth century a Griblje farm wife who could read and write was rare enough to be worth mentioning. Katarina, born Pezdirc in 1855 at the homestead called pri Grizinu, could. She married the farmer and trader Nikolaj (Miko) Zupanič; on 1 December 1876 they brought a son, Niko, into the world — a boy who left Griblje for Novo mesto, Vienna and Belgrade, and became the founder of Slovene ethnology.\n\nThe son knew what he had at home. In 1894/95 he asked his mother to gather and write down the folk tradition of Griblje — and Katarina did what no hand of this village had done before her: with a pen she captured the year, the customs, the songs and the beliefs as she lived them. Her record bears a title poetry itself could not have chosen better: A Bouquet of Meadow Flowers from Griblje in Bela krajina.\n\nThe record waited longer for print than Katarina waited for grandchildren. She died on 23 July 1923; in 1937 — in the ninth volume of Etnolog, the journal her son had founded in 1927 — the Bouquet finally appeared. Today it stands among the oldest more extensive records of folk tradition written down in Griblje itself; only Kambič's Christmas among the Bela krajina people (1889) is older — two hands of the same decade, both out of love for the same land.\n\nIn a collection full of recorders with older and newer diplomas, Katarina is the first woman. Her record is a bridge between two museums: between the village tradition she carried in her head and the science her son set on its feet. Every record in this collection that quotes the folk tradition of Griblje walks her path — from the Grizin homestead to the printed page.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: 1894,
+    yearTo: 1937,
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "sbl-zupanic-katarina",
+        nameSi: "Slovenska biografija — Zupanič Niko (SBL, avtor Vilko Novak)",
+        nameEn: "Slovenska biografija — Zupanič Niko (SBL, by Vilko Novak)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.slovenska-biografija.si/oseba/sbi915246/",
+        noteSi:
+          "Mati Katarina r. Pezdirc (1855 Griblje – 1923), domačija pri Grizinu; njen zapis izročila 1894/95, objavljen v Etnologu 1937/9.",
+        noteEn:
+          "Mother Katarina née Pezdirc (1855 Griblje – 1923), the pri Grizinu homestead; her record of tradition 1894/95, published in Etnolog 1937/9.",
+      },
+      {
+        key: "etnolog-sopek",
+        nameSi: "Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        nameEn: "Etnolog — A Bouquet of Meadow Flowers from Griblje in Bela krajina (recorded by Katarina Zupanič, 1937/9)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        noteSi:
+          "Primarni objavljeni vir; muzej išče izvod zvezka za natančne navedbe strani.",
+        noteEn:
+          "The primary published source; the museum seeks a copy of the volume for exact page references.",
+      },
+      {
+        key: "wiki-zupanic-katarina",
+        nameSi: "Wikipedija — Niko Županič",
+        nameEn: "Wikipedia — Niko Županič",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Niko_%C5%BDupani%C4%8D",
+        noteSi: "Družina: mati Katarina, njena smrt 23. 7. 1923; sinovo delo in ustanovitev Etnologa.",
+        noteEn: "The family: mother Katarina, her death on 23 July 1923; the son's work and the founding of Etnolog.",
+      },
+      {
+        key: "iglic-zupanic-clanek",
+        nameSi: "Zupanič-Kralj idr. — Niko Županič in njegov boj za identiteto Slovencev (Rast, 2007)",
+        nameEn: "Zupanič-Kralj et al. — Niko Županič and his fight for the identity of the Slovenes (Rast, 2007)",
+        sourceType: "objava",
+        license: "prosti dostop / open access",
+        url: "http://physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        noteSi: "Družinska zgodba in kontekst Županičevega dela; brezplačni PDF.",
+        noteEn: "The family story and the context of Županič's work; a free PDF.",
+      },
+    ],
+  },
+  {
+    slug: "toni-gasperic",
+    category: "kraj",
+    titleSi: "Toni Gašperič — humor z bregov Kolpe",
+    titleEn: "Toni Gašperič — humour from the banks of the Kolpa",
+    periodSi: "20.–21. stoletje · humorist, pisatelj, voditelj",
+    periodEn: "20th–21st century · humorist, writer, presenter",
+    summarySi:
+      "Humorist, pisatelj, pesnik ter radijski in televizijski voditelj, ki je z ženo Jano živel v Gribljah ob Kolpi — s hišo, odprto za prijatelje in neznance. Tisoče humoresk, vrsta knjig in ena iznajdba: Noč na Kolpi.",
+    summaryEn:
+      "A humorist, writer, poet and radio and television presenter who lived with his wife Jana in Griblje on the Kolpa — in a house open to friends and strangers alike. Thousands of humoresques, a shelf of books, and one invention: the Night on the Kolpa.",
+    storySi:
+      "V Gribljah ob reki je stala hiša, ki ni poznala zaklenjenih vrat: Toni Gašperič in žena Jana sta jo držala odprto za prijatelje in neznance. Gašperičeva obrt je bila najredkejša med obrtmi — smeh. Humorist, pisatelj, pesnik in voditelj: oddaje Veseli tobogan, Prizma optimizma in Vi izbirate – jaz izberem so njegov glas nosile po radijskih in televizijskih etereh.\n\nNjegov pisni opus je katalog belokranjske vedrine: zbirke humoresk Ljudje z zaščitenimi hrbti, Vsi smo na ražnju in Moja teta Mara ter spominski knjigi Povej jim (2007) in Življenje je eno samo porivanje (2009). Že naslovi sami so mala šola humorja te dežele: samironija, ki ni predala, ampak oklep.\n\nPripadal je tudi odrom: ustanovil je metliško igralsko skupino Osip Šest in pobudil Noč na Kolpi — poletno kulturno noč na bregu reke, kjer se je vas zbrala ob besedi in pesmi. Njegova hiša v Gribljah je bila pravzaprav muzej prijaznosti: vstop je bil prost, izhod nasičen.\n\nBelokranjski humor, ki ga je nosil, ni bil beg pred stvarnostjo, ampak njen opis: dežela na meji treh svetov — habsburške, osmanske in nato jugoslovanske — se je stoletja učila preživeti z obredom in z šalo. Kdor se smeji, ni premagan; kdor smeji druge, jim je dal orožje. Gašperič je to vedel s seboj: njegove humoreske gledajo majhnemu človeku v žep in v srce hkrati — in ne najdejo tam sovražnika, ampak soseda.\n\nMed nesnovno dediščino, ki jo ta muzej zapisuje, šteje tudi smeh. Vas, ki zna sama sebe spraviti v smeh, preživi vse — tudi tisto, česar ni sme povedati na glas. Gašperičev portret v rubriki Ljudje ob Kolpi (maj 2026) je glavni vir tega zapisa; muzej pa išče plakate Noči na Kolpi in naslovnice njegovih knjig za razstavno polico.",
+    storyEn:
+      "In Griblje by the river stood a house that knew no locked door: Toni Gašperič and his wife Jana kept it open to friends and strangers alike. Gašperič's trade was the rarest of trades — laughter. Humorist, writer, poet and presenter: the shows Veseli tobogan, Prizma optimizma and Vi izbirate – jaz izberem carried his voice through the radio and television air.\n\nHis written work is a catalogue of Bela krajina cheer: the humoresque collections Ljudje z zaščitenimi hrbti, Vsi smo na ražnju and Moja teta Mara, and the memoirs Povej jim (2007) and Življenje je eno samo porivanje (2009). The titles alone are a small school of this land's humour: self-irony that is not surrender but armour.\n\nHe belonged to the stages as well: he founded the Metlika acting group Osip Šest and initiated the Night on the Kolpa — a summer cultural night on the riverbank where the village gathered around words and song. His house in Griblje was in truth a museum of kindness: entry free, exit full.\n\nThe Bela krajina humour he carried was no escape from reality but its description: a land at the meeting of three worlds — Habsburg, Ottoman and later Yugoslav — learned for centuries to survive by rite and by joke. Whoever laughs is not defeated; whoever makes others laugh has armed them. Gašperič knew this in his bones: his humoresques look into the little man's pocket and heart at once — and find there not an enemy but a neighbour.\n\nAmong the intangible heritage this museum records, laughter counts too. A village that can laugh at itself survives everything — including what it may not say aloud. Gašperič's portrait in the People by the Kolpa series (May 2026) is this record's main source; the museum is looking for posters of the Night on the Kolpa and the covers of his books for its display shelf.",
+    evidenceStatus: "DOCUMENTED",
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "odeon-gasperic",
+        nameSi: "Radio Odeon — Ljudje ob Kolpi: Toni Gašperič (5. maj 2026)",
+        nameEn: "Radio Odeon — People by the Kolpa: Toni Gašperič (5 May 2026)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/ljudje-ob-kolpi-toni-gasperic/",
+        noteSi:
+          "Življenjepis: hiša ob Kolpi odprta za prijatelje in neznance, oddaje, knjige, Osip Šest, Noč na Kolpi.",
+        noteEn:
+          "The biography: the house on the Kolpa open to friends and strangers, the shows, the books, Osip Šest, the Night on the Kolpa.",
+      },
+      {
+        key: "gasperic-knjige",
+        nameSi: "Bibliografija Tonija Gašperiča — zbirke humoresk in spomini (2007–2009)",
+        nameEn: "The bibliography of Toni Gašperič — humoresque collections and memoirs (2007–2009)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        noteSi:
+          "Knjižni opus naveden po predstavitvi v rubriki Ljudje ob Kolpi; izvodi so preverljivi v knjižničnem katalogu.",
+        noteEn:
+          "The written works as listed in the People by the Kolpa presentation; copies verifiable in the library catalogue.",
+      },
+      {
+        key: "odeon-ljudje-serija-gasperic",
+        nameSi: "Radio Odeon — arhiv rubrike Ljudje ob Kolpi",
+        nameEn: "Radio Odeon — the archive of the People by the Kolpa series",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/",
+        noteSi: "Serija portretov, iz katere izhaja tudi ta zapis.",
+        noteEn: "The series of portraits from which this record also derives.",
+      },
+    ],
+  },
+  {
+    slug: "madronicev-mlin",
+    category: "kolpa",
+    titleSi: "Madroničev mlin — mlin in žaga ob Kolpi",
+    titleEn: "The Madronič mill — a mill and sawmill on the Kolpa",
+    periodSi: "1937 → danes · Prelesje ob Kolpi",
+    periodEn: "1937 → present · Prelesje on the Kolpa",
+    summarySi:
+      "Dva in pol kilometra po kolpški ravnini od Gribelj: leta 1937 je tesarska družina Madronič kupila požgano domačijo z mlinom in žago. Mlin ne melje več — živi v maketah, arhivu in knjigi, ki jo družina pripravlja.",
+    summaryEn:
+      "Two and a half kilometres across the Kolpa plain from Griblje: in 1937 the Madronič carpentry family bought a burnt-down homestead with a mill and a sawmill. The mill no longer grinds — it lives on in models, an archive and a book the family is preparing.",
+    storySi:
+      "Kolpa je mlinom postavljala pogoj, ki ga ni nobena druga slovenska reka: mlini so morali stati v nadstropju, ker se vodostaj ob poplavah dvigne za več metrov. V Prelesju, dva in pol kilometra po ravnini od Gribelj, je leta 1937 tesarska družina Madronič kupila požgano domačijo z mlinom in žago, jo postavila na noge in z njo menjavala kruh za celotno okolico.\n\nVojna je tudi tu pisala svoj koledar. Stari Peter Madronič, rojen 1901 v Dalnjih Njivah, je bil med odposlanci na Zboru odposlancev slovenskega naroda v Kočevju oktobra 1943 — s hčerko Katico, ki je zunaj čuvala konja, v okolici znanega kot »partizanski taksist«. Svobodna Bela krajina je bila tedaj edini košček slovenske zemlje, kjer se je narod mogel javno zbrati; mlin ob Kolpi pa je v tistem času še vedno mlel.\n\nPo vojni sta mlin in žaga delovala še desetletja za zaselke po ravnini — Prelesje, Dalnje Njive, obkolpske domačije do Gribelj samih; pred mlinom je veljalo isto pravilo kakor povsod ob Kolpi: vrsta vozov je bila borza novic, mlinar pa je bral vodo, kakor zdravnik utrip. Leta 1978 je domačija gostila likovno kolonijo študentov — mlin je postal atelje. Danes ne deluje več, obnovljen pa je sto metrov dolg poševni jez — znanje, ki je v njem, pa ni izgubljeno: družina je izdelala tri makete mlina in žage, ena celo z vodnim pogonom.\n\nZadnje poglavje te zgodbe nastaja prav zdaj: pravnukinja in vnuk Petra Madroniča pripravljata knjigo z bogatim arhivskim in slikovnim gradivom. Muzej ta zapis razume kot vabilo — ko knjiga izide, se bo dopolnil. Kolpa pri Gribljah je namreč le najbolj znana točka mlinarske dežele; njena mlinarska zgodba je širša od enega vaškega katastra.",
+    storyEn:
+      "The Kolpa set its mills a condition no other Slovene river did: the mills had to stand in an upper storey, for at flood the water rises by several metres. At Prelesje, two and a half kilometres across the plain from Griblje, the Madronič carpentry family bought a burnt-down homestead with a mill and a sawmill in 1937, set it on its feet, and traded with it the bread of the whole neighbourhood.\n\nThe war kept its calendar here too. Old Peter Madronič, born 1901 at Dalnje Njive, was among the delegates at the Assembly of Delegates of the Slovene Nation at Kočevje in October 1943 — with his daughter Katica, who guarded the horse outside, known in the parts as the »Partisan taxi«. Free Bela krajina was then the only corner of Slovene soil where the nation could gather openly; and the mill on the Kolpa went on grinding through it all.\n\nAfter the war the mill and the saw worked for further decades for the hamlets across the plain — Prelesje, Dalnje Njive, the homesteads by the Kolpa up to Griblje itself; before the mill the same rule held as everywhere on the river: the queue of carts was an exchange of news, and the miller read the water the way a doctor reads a pulse. In 1978 the homestead hosted an art colony of students — the mill became a studio. Today it works no more, but the hundred-metre diagonal weir has been restored — and the knowledge in it is not lost: the family has built three models of the mill and the saw, one even with water power.\n\nThe last chapter of this story is being written right now: a granddaughter and a grandson of Peter Madronič are preparing a book with rich archival and pictorial material. The museum reads this record as an invitation — when the book appears, the record will grow. The Kolpa at Griblje is, after all, only the best-known point of a milling country; its milling story is wider than one village's cadastral map.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: 1937,
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "odeon-madronicev-mlin",
+        nameSi: "Radio Odeon — Madroničev mlin v Prelesju ob Kolpi (Božidar Flajšman, 23. avgust 2019)",
+        nameEn: "Radio Odeon — The Madronič mill at Prelesje on the Kolpa (Božidar Flajšman, 23 August 2019)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/madronicev-mlin-v-prelesju-ob-kolpi-v-beli-krajini/",
+        noteSi:
+          "Celotna zgodba: nakup 1937, Zbor odposlancev 1943 s hčerko Katico, kolonija 1978, tri makete, knjiga v pripravi.",
+        noteEn:
+          "The whole story: the 1937 purchase, the 1943 Assembly of Delegates with daughter Katica, the 1978 colony, the three models, the book in preparation.",
+      },
+      {
+        key: "wiki-kolpa-mlini-nadstropje",
+        nameSi: "Wikipedija — Kolpa (mlini v nadstropju zaradi poplav; razširitev doline pri Gribljah)",
+        nameEn: "Wikipedia — Kolpa (mills built in upper storeys against floods; the valley's widening at Griblje)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Kolpa",
+        noteSi: "Hidrološki kontekst mlinarske stroke ob reki.",
+        noteEn: "The hydrological context of the milling trade on the river.",
+      },
+      {
+        key: "commons-malenca-madronic",
+        nameSi: "Wikimedia Commons — Slap in malenca na Kolpi pri Gribljah (švabo, 2008, CC BY 3.0)",
+        nameEn: "Wikimedia Commons — Waterfall and malenca on the Kolpa at Griblje (švabo, 2008, CC BY 3.0)",
+        sourceType: "fotografija",
+        license: "CC BY 3.0 / GFDL",
+        url: WM("Slap_in_malenca_na_Kolpi_pri_Gribljah.jpg"),
+        noteSi:
+          "Sorodna mlinarska dediščina istega rečnega odseka — fotografija malence pri Gribljah, sestrskega zapisa v tej zbirki.",
+        noteEn:
+          "Kindred milling heritage of the same stretch of the river — the photograph of the malenca at Griblje, a sister record in this collection.",
+      },
+    ],
+  },
+  {
+    slug: "muzejska-ucilnica",
+    category: "kraj",
+    titleSi: "Muzejska učilnica — fizična sestra digitalnega muzeja",
+    titleEn: "The museum classroom — the digital museum's physical sister",
+    periodSi: "1889 → 2022 → danes",
+    periodEn: "1889 → 2022 → today",
+    summarySi:
+      "26. junija 2022 so v več kot 130 let stari gribeljski šoli odprli muzejsko učilnico; otvoritve se je udeležil Slovenski šolski muzej. Ta digitalni muzej ima v vasi svojo fizično sestro: dve učilnici, ena naloga.",
+    summaryEn:
+      "On 26 June 2022 a museum classroom opened in the more than 130-year-old Griblje school; the Slovene School Museum attended the opening. This digital museum has its physical sister in the village: two classrooms, one task.",
+    storySi:
+      "Šolsko poslopje v Gribljah so blagoslovili novembra 1889: ena učilnica in stanovanje učitelja pripravnika. Vojna ga je zasedla — pouk je bežal v gasilski dom —, povojne množice razširile — učilo se je tudi v Brinčevi hiši —, šestdeseta prinesla podružnični status: od 1963/64 podružnica OŠ Mirana Jarca, od 1989 OŠ Loka Črnomelj. Leta 2002 so v šoli šteli kdaj le štiri do šest učencev; vas in občina sta jo kljub vsemu obdržali. Stavbi s takšno biografijo je bilo treba narediti muzej.\n\nTo so naredili 26. junija 2022: v šoli so odprli muzejsko učilnico. Otvoritve se je udeležila predstavnica Slovenskega šolskega muzeja, sledila pa je literarna prireditev z zapisi šolskega leta 1949/50: pionirji so takrat zbrali četrt kilograma jabolčnih pečk in 215 kilogramov zdravilnih zelišč, igrali igro Gumb za AFŽ in peli Prišla je miška iz mišnice. Šolski arhiv, ki zna dišati po jabolkih.\n\n»Podružnice niso drage, so pa dragocene,« je ob otvoritvi povedala dolgoletna vodja podružnice Branka Weiss — stavek, ki bi moral stati nad vsako slovensko podružnico. Danes šolo obiskuje 17 učencev v petih kombiniranih oddelkih z razširjenim programom; vodja podružnice Marjetka Žunič v Gribljah poučuje od leta 1992 — in to je edina slovenska vas, ki ima svojo podružnico.\n\nTa digitalni muzej in tista fizična učilnica sta sestri: ena hrani spomin v bitih, druga v zraku. Ko bo šola leta 2029 praznovala 140 let, bosta praznovali obe — in ta zapis se bo dopolnil s fotografijami. Vsak učenec, ki danes sedi med klopmi, piše prihodnjo različico tega zapisa.",
+    storyEn:
+      "The school building in Griblje was blessed in November 1889: one classroom and a trainee teacher's flat. The war occupied it — lessons fled to the fire station —; the postwar crowds widened it — teaching went on in the Brinc house too —; the sixties brought it branch status: from 1963/64 a branch of the OŠ Miran Jarca school, from 1989 of OŠ Loka Črnomelj. In 2002 the school at times counted only four to six pupils; the village and the municipality kept it all the same. A building with such a biography had to be made a museum.\n\nThat was done on 26 June 2022: a museum classroom opened in the school. A representative of the Slovene School Museum attended the opening, followed by a literary event with records of the school year 1949/50: the pioneers then collected a quarter of a kilogram of apple seeds and 215 kilograms of medicinal herbs, played the play Gumb za AFŽ and sang Prišla je miška iz mišnice. A school archive that can smell of apples.\n\n" +
+      "»Branch schools are not expensive; they are precious,« the longtime head of the branch school Branka Weiss said at the opening — a sentence that should stand above every Slovene branch school. Today 17 pupils attend the school in five combined departments with an extended programme; the head Marjetka Žunič has taught in Griblje since 1992 — and this is the only Slovene village that has its own branch school.\n\nThis digital museum and that physical classroom are sisters: one keeps memory in bits, the other in the air. When the school celebrates 140 years in 2029, both will celebrate — and this record will grow with photographs. Every pupil sitting at the desks today is writing a future version of it.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: 2022,
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "s24-muzejska-ucilnica",
+        nameSi: "Svet24 — V šoli so spravljene mnoge skrivnosti: odprtje muzejske učilnice na PŠ Griblje (26. junij 2022)",
+        nameEn: "Svet24 — Many secrets are kept in the school: the opening of the museum classroom at the Griblje branch school (26 June 2022)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://svet24.si/novice/kultura/v-soli-so-spravljene-mnoge-skrivnosti-odprtje-muzejske-ucilnice-na-ps-griblje-263268-1783688",
+        noteSi:
+          "Otvoritev 26. 6. 2022, Slovenski šolski muzej (mag. Marjetka Balkovec Debevc), zapisi šolskega leta 1949/50, citat Branke Weiss.",
+        noteEn:
+          "The opening on 26 June 2022, the Slovene School Museum (mag. Marjetka Balkovec Debevc), the records of the school year 1949/50, Branka Weiss's sentence.",
+      },
+      {
+        key: "odeon-jubilej-ucilnica",
+        nameSi: "Radio Odeon — Jubilej gribeljske šole (junij 2019)",
+        nameEn: "Radio Odeon — The jubilee of the Griblje school (June 2019)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/jubilej-gribeljske-sole/",
+        noteSi: "Zgodovina poslopja: 1889, italijanska zasedba, pouk v Brinčevi hiši, leta 2002–2004.",
+        noteEn: "The building's history: 1889, the Italian occupation, lessons in the Brinc house, the years 2002–2004.",
+      },
+      {
+        key: "s24-sola-danes-ucilnica",
+        nameSi: "Svet24 — Podružnična šola Griblje: vas, ki ima svojo šolo (4. januar 2026)",
+        nameEn: "Svet24 — The Griblje branch school: a village that has its own school (4 January 2026)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        noteSi:
+          "17 učencev, pet oddelkov, Marjetka Žunič (od 1992), edina vas s podružnico, 140-letnica 2029.",
+        noteEn:
+          "17 pupils, five departments, Marjetka Žunič (since 1992), the only village with a branch school, the 140th anniversary in 2029.",
+      },
+    ],
+  },
+  {
+    slug: "kavbojski-zur",
+    category: "sege",
+    titleSi: "Kavbojski žur — divji zahod ob Kolpi",
+    titleEn: "The Cowboy Party — the Wild West on the Kolpa",
+    periodSi: "2024 → danes · najmlajša šega v zbirki",
+    periodEn: "2024 → present · the collection's youngest custom",
+    summarySi:
+      "Poletni dan, ko se Griblje za eno popoldne preobrazijo v divji zahod: country glasba, plesalke Country Roses — domačinke — in klobuki na vaških glavah. Druga izvedba leta 2025 je »znova navdušila«.",
+    summaryEn:
+      "A summer day when Griblje turns into the Wild West for an afternoon: country music, the Country Roses dancers — local women — and hats on village heads. The second edition, in 2025, »delighted again«.",
+    storySi:
+      "»Griblje so se v začetku poletja ponovno za en dan preobrazile v divji zahod,« je zapisal Radio Odeon junija 2025. Kavbojski žur je najmlajši praznik v koledarju vasi: country glasba, ples in zahodnjaška oprava ob Kolpi, na prizorišču, ki ga vasi nikoli ne zmanjka — med hišami in ob vodi, kjer poleti živi njeno družabno življenje. Prvič se je zgodil leta 2024 (»Bilo je kot na Divjem zahodu«), drugič leta 2025 — in drugič je znova navdušil.\n\nKdor pomisli, da je divji zahod tu slučajnost, se moti: ljudje so tisti, ki šego naredijo. Plesalke Country Roses so domačinke — v country opravi, ki se v tej vasi ni nosila nikoli prej; nastopili so učenci osnovne šole, Country Vrtičkarji — semiški upokojenci — in skupina Wild West iz Ljubljane. Vse generacije vasi na enem odru, ob glasbi, ki je prišla čez ocean in se ustavila ob reki.\n\nEtnološka iskrenost zahteva povedati: šega, mlajša od sto let, še ni šega — tudi Pasuljada (od ~2004) je v tej zbirki zapisana kot potrjena, ne kot tradicija. Kavbojski žur je torej zapisan takoj ob rojstvu, kar je redkost: večini šeg ni zapisan prvi dan. Nekoč bo ta zapis med najstarejšimi dokumenti o njem.\n\nTuristično društvo Griblje ga postavlja ob Pasuljado (avgust) in rally starodobnih koles (julij): poletni trikotnik vasi, ki ga nosi isti prostovoljni strojek. Muzej odkrito navaja vrzeli: kje se je ideja rodila, kdo je prvi speljal glasbo — to so vprašanja, na katera bodo nekoč želeli odgovor prav ti zapisi. Šege namreč ne nastanejo iz tradicije; tradicija nastane iz šeg.",
+    storyEn:
+      "»At the start of summer Griblje once again turned into the Wild West for a day,« Radio Odeon wrote in June 2025. The Cowboy Party is the youngest feast on the village calendar: country music, dance and western dress by the Kolpa, on the stage the village never lacks — among the houses and by the water where its social life spends the summer. It first happened in 2024 (»It was like in the Wild West«), again in 2025 — and the second time it delighted again.\n\nWhoever thinks the Wild West here is an accident is mistaken: people are what make a custom. The Country Roses dancers are local women — in country dress never before worn in this village; the pupils of the primary school performed, as did the Country Vrtičkarji — retirees from Semič — and the Wild West group from Ljubljana. Every generation of the village on one stage, to music that crossed an ocean and stopped at the river.\n\nEthnological honesty requires saying it plainly: a custom younger than a hundred years is not yet a custom — the Pasuljada too (since ~2004) is recorded in this collection as corroborated, not as tradition. The Cowboy Party is therefore written down at its birth, which is a rarity: most customs never get their first day recorded. One day this will be among the oldest documents about it.\n\nThe Griblje Tourist Society sets it beside the Pasuljada (August) and the vintage-bicycle rally (July): the village's summer triangle, carried by the same volunteer crew. The museum states its gaps openly: where the idea was born, who first brought the music — questions these records will one day be asked to answer. Customs do not grow out of tradition; tradition grows out of customs.",
+    evidenceStatus: "CORROBORATED",
+    yearFrom: 2024,
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "odeon-kavbojski-zur",
+        nameSi: "Radio Odeon — Kavbojski žur v Gribljah znova navdušil (junij 2025)",
+        nameEn: "Radio Odeon — The Cowboy Party in Griblje delighted again (June 2025)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/kavbojski-zur-v-gribljah-znova-navdusil/",
+        noteSi:
+          "Druga izvedba (2025): Country Roses, učenci OŠ, Country Vrtičkarji, Wild West iz Ljubljane; omemba prve izvedbe 2024.",
+        noteEn:
+          "The second edition (2025): Country Roses, primary-school pupils, the Country Vrtičkarji, Wild West of Ljubljana; mention of the first edition of 2024.",
+      },
+      {
+        key: "odeon-rally-kavbojski",
+        nameSi: "Radio Odeon — Po Gribljah s starodobnimi kolesi (julij 2026)",
+        nameEn: "Radio Odeon — Through Griblje on vintage bicycles (July 2026)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/po-gribljah-s-starodobnimi-kolesi/",
+        noteSi:
+          "Country Roses nastopijo tudi na rallyju — šega se prepleta z vaškim poletnim koledarjem; TD kot skupni organizator.",
+        noteEn:
+          "The Country Roses also perform at the rally — the custom interweaves with the village's summer calendar; the Tourist Society as the common organiser.",
+      },
+      {
+        key: "odeon-pasuljada-kontekst",
+        nameSi: "Radio Odeon — V Gribljah že 16. Pasuljada (avgust 2019)",
+        nameEn: "Radio Odeon — The 16th Pasuljada already in Griblje (August 2019)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/v-gribljah-ze-16-pasuljada/",
+        noteSi:
+          "Kontekst prazničnega koledarja TD Griblje: Pasuljada od ~2004, žur od 2024 — vzorec nastajanja novih šeg.",
+        noteEn:
+          "The context of the Tourist Society's festive calendar: the Pasuljada since ~2004, the party since 2024 — the pattern of new customs being born.",
+      },
+    ],
+  },
+  {
+    slug: "zvon-2008",
+    category: "kraj",
+    titleSi: "Zvon 2008 — glas, ki se je vrnil v cerkev",
+    titleEn: "The bell of 2008 — the voice that returned to the church",
+    periodSi: "2008 · blagoslov in posvetitev",
+    periodEn: "2008 · blessing and consecration",
+    summarySi:
+      "Leta 2008 so v Gribljah blagoslovili in posvetili nov zvon cerkve sv. Vida. O dogodku priča spominska knjiga SV. VID GRIBLJE — med redkimi tiskanimi viri, ki so nastali v sami vasi.",
+    summaryEn:
+      "In 2008 a new bell of the church of St. Vitus was blessed and consecrated in Griblje. A memorial book, SV. VID GRIBLJE, bears witness to the event — among the rare printed sources created in the village itself.",
+    storySi:
+      "Cerkev živi z glasom: zvon je bil desetletja edini radio vaščanov — k maši, k pogrebu, ob nevihti, ob vojni. Njegova beseda je bila dogovorjena pred pismenostjo: trije udarci, zamah, slavje; preden je vas znala brati, je znala poslušati. Cerkev sv. Vida, prvič zapisana leta 1526, je stoletja menjavala zvonove, kakor jih menjujejo vse cerkve: zvon je bil vojski vedno le baker. Usoda gribeljskih predhodnikov — rekvizicije, razpoke, menjava — pa je danes izgubljena; to vrzel muzej odkrito razglasi in išče.\n\nKar je dokumentirano, je tole: leta 2008 so v Gribljah blagoslovili in posvetili nov zvon. O dogodku je nastala spominska knjiga »SV. VID GRIBLJE, Blagoslovitev in posvetitev zvona, Griblje 2008« — skromna brošura, ki jo Wikipedijin članek o vasi navaja med literaturo, in eden redkih tiskanih virov, ki so nastali v sami vasi. Zvonovi imajo vedno botre; njihova imena so v takšnih knjigah navadno zapisana.\n\nJunija 2026 je ta glas pozvonil ob 500-letnici prve omembe cerkve: slovesno mašo je daroval upokojeni novomeški škof msgr. Andrej Glavan, ob cerkvi pa so blagoslovili novo urejeno parkirišče in poslovilno vežico. Cerkev ima danes svojo mežnarico (Ana Križan) in ključarja (Alojzij Štruclj) — in svoj glas, ki še vedno meri vaški dan: od jutranjega pozvona do večernega miru.\n\nTa zapis je vabilo k dopolnitvi: muzej išče fotografije blagoslova 2008, imena botrov zvona in ime livarne, ki ga je ulila — vsak zvon nosi žig, vsak žig pa zgodbo. Ko se bodo našli, se bo vrzel v tem zapisu zaprla. Tako deluje muzej: ne z domnevami, z viri.",
+    storyEn:
+      "A church lives by its voice: for decades the bell was the villagers' only radio — to mass, to a funeral, at a storm, at war. Its word was agreed upon before literacy: three strokes, a peal, a celebration; before the village could read, it could listen. The church of St. Vitus, first written down in 1526, changed its bells across the centuries as all churches do: to an army a bell was always only bronze. The fate of the Griblje predecessors — requisitions, cracks, replacement — is today lost; the museum declares this gap openly and searches.\n\nWhat is documented is this: in 2008 a new bell was blessed and consecrated in Griblje. A memorial book arose from the event — »SV. VID GRIBLJE, the Blessing and Consecration of the Bell, Griblje 2008« — a modest booklet that the Wikipedia article on the village lists among its literature, and one of the rare printed sources created in the village itself. Bells always have godparents; their names are customarily written in such books.\n\nIn June 2026 this voice rang out at the 500th anniversary of the church's first mention: the solemn mass was celebrated by the retired Bishop of Novo mesto, msgr. Andrej Glavan, and by the church the newly arranged parking place and funeral vestibule were blessed. The church has today its sexton (Ana Križan) and its keykeeper (Alojzij Štruclj) — and its voice, which still measures out the village day: from the morning ring to the evening quiet.\n\nThis record is an invitation to completion: the museum is looking for photographs of the 2008 blessing, the names of the bell's godparents and the foundry that cast it — every bell carries a mark, and every mark a story. When they are found, the gap in this record will close. That is how a museum works: not with conjectures, with sources.",
+    evidenceStatus: "CORROBORATED",
+    yearFrom: 2008,
+    yearTo: 2008,
+    addedAt: "2026-09-16",
+    sources: [
+      {
+        key: "spominska-knjiga-zvon",
+        nameSi: "SV. VID GRIBLJE — Blagoslovitev in posvetitev zvona, Griblje 2008 (spominska knjiga)",
+        nameEn: "SV. VID GRIBLJE — the Blessing and Consecration of the Bell, Griblje 2008 (a memorial book)",
+        sourceType: "arhiv",
+        license: "navedi vir / cite the source",
+        noteSi:
+          "Primarni tiskani vir o blagoslovu in posvetitvi zvona; naveden v literaturi Wikipedijinega članka o Gribljah. Muzej išče izvod.",
+        noteEn:
+          "The primary printed source on the blessing and consecration of the bell; listed in the literature of the Wikipedia article on Griblje. The museum seeks a copy.",
+      },
+      {
+        key: "wiki-griblje-zvon",
+        nameSi: "Wikipedija — Griblje (literatura: spominska knjiga 2008)",
+        nameEn: "Wikipedia — Griblje (literature: the 2008 memorial book)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Griblje",
+        noteSi:
+          "Navedba spominske knjige o zvonu med literaturo; cerkev in pokopališče sta bili nekoč tik ob gozdu.",
+        noteEn:
+          "The memorial book on the bell listed among the literature; the church and graveyard once stood right by the wood.",
+      },
+      {
+        key: "odeon-500-zvon",
+        nameSi: "Radio Odeon — V Gribljah slovesno obeležili 500-letnico prve omembe cerkve sv. Vida (junij 2026)",
+        nameEn: "Radio Odeon — Griblje solemnly marked the 500th anniversary of the church of St. Vitus's first mention (June 2026)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida/",
+        noteSi:
+          "Jubilejna maša škofa Glavana; mežnarica Ana Križan in ključar Alojzij Štruclj; novo parkirišče in poslovilna vežica.",
+        noteEn:
+          "The jubilee mass of Bishop Glavan; the sexton Ana Križan and keykeeper Alojzij Štruclj; the new parking place and funeral vestibule.",
+      },
+      {
+        key: "commons-cerkev-zvon",
+        nameSi: "Wikimedia Commons — Griblje, Črnomelj: cerkev sv. Vida (Eleassar, 2012, CC BY-SA 3.0)",
+        nameEn: "Wikimedia Commons — Griblje, Črnomelj: the church of St. Vitus (Eleassar, 2012, CC BY-SA 3.0)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 3.0",
+        url: WM("Griblje%2C_%C4%8Crnomelj_-_cerkev_sv._Vida.jpg"),
+        noteSi:
+          "Zvonik cerkve na fotografiji iz leta 2012 — stanje štiri leta po blagoslovu zvona.",
+        noteEn:
+          "The church's bell tower in a 2012 photograph — its state four years after the bell's blessing.",
+      },
+    ],
+  },
 ];
 
 export const seedStories: Omit<StoryDTO, "id">[] = [
@@ -2904,6 +3328,20 @@ export const seedEvents: Omit<MuseumEventDTO, "id">[] = [
     startsAt: eventDate("2027-08-07"),
     locationSi: "Griblje — ob Kolpi",
     locationEn: "Griblje — by the Kolpa",
+    eventType: "PRIREDITEV",
+    isExternal: false,
+    externalUrl: null,
+  },
+  {
+    titleSi: "Sto let PGD Griblje (1927–2027)",
+    titleEn: "One hundred years of the Griblje fire brigade (1927–2027)",
+    descriptionSi:
+      "Prostovoljno gasilsko društvo Griblje, ustanovljeno 1927, praznuje stoletnico: 140 članov, od tega 18 operativnih gasilcev, gasilski dom s spominsko sobo dr. Franca Brinca in stoletje pomoči vasi. Muzej ob jubileju dopolnjuje zapis o društvu — točen datum bo potrdilo društvo samo.",
+    descriptionEn:
+      "The Griblje volunteer fire brigade, founded in 1927, celebrates its centenary: 140 members, 18 of them operational firefighters, a fire station with the memorial room of dr. Franc Brinc, and a century of service to the village. For the jubilee the museum is expanding its record of the brigade — the exact date to be confirmed by the society itself.",
+    startsAt: eventDate("2027-06-19"),
+    locationSi: "Griblje — gasilski dom",
+    locationEn: "Griblje — the fire station",
     eventType: "PRIREDITEV",
     isExternal: false,
     externalUrl: null,

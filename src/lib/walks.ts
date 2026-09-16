@@ -7,7 +7,7 @@ import type { ExhibitDTO } from "@/lib/types";
  * obogaten s kuratorsko opombo, ki povezuje postave v pripoved.
  *
  * Pogoj celovitosti: vseh pet sprehodov skupaj pokrije VSE zapise
- * zbirke (2026: 30 zapisov), vsak zapis natanko enkrat.
+ * zbirke (2026: 44 zapisov), vsak zapis natanko enkrat.
  */
 
 export type WalkStop = {
@@ -55,6 +55,14 @@ export const WALKS: Walk[] = [
           "Mlinarska vedrina: malenca je bil majhen jez s padcem, ki je zajel vodno moč in jo usmeril v kolo. Beseda, ki jo pozna samo ta konec.",
         noteEn:
           "The millers' ingenuity: the malenca was a small weir with a drop that captured the water's power and fed it to the wheel. A word only this corner of the country knows.",
+      },
+
+      {
+        exhibitSlug: "madronicev-mlin",
+        noteSi:
+          "Mlinarska zgodba se nadaljuje v ravnini: Madroničev mlin v Prelesju — nakup 1937, Zbor odposlancev 1943 in makete, ki danes nosijo znanje naprej.",
+        noteEn:
+          "The milling story continues across the plain: the Madronič mill at Prelesje — bought in 1937, marked by the 1943 Assembly of Delegates, and carried on today by models.",
       },
       {
         exhibitSlug: "ribnik",
@@ -183,12 +191,28 @@ export const WALKS: Walk[] = [
         noteEn:
           "And the menu does not end with the past: every August Griblje cooks bean stew for a contest — a new custom that became a calendar date.",
       },
+
+      {
+        exhibitSlug: "kavbojski-zur",
+        noteSi:
+          "Po Pasuljadi pride žur: vsako poletje se vas za en dan preobrne v divji zahod — najmlajša šega v zbirki, zapisana takoj ob rojstvu.",
+        noteEn:
+          "After the Pasuljada comes the party: every summer the village turns into the Wild West for a day — the collection's youngest custom, recorded at its birth.",
+      },
       {
         exhibitSlug: "tkalstvo",
         noteSi:
           "Ko polje počiva, začnejo stati statve. Platno je bilo denar: iz lanu so nastajale rute, prti in doto.",
         noteEn:
           "When the fields rested, the looms began. Linen was money: from flax came headscarves, tablecloths and dowries.",
+      },
+
+      {
+        exhibitSlug: "katarina-zupanic",
+        noteSi:
+          "Pred statvami je stala pisalka: Katarina Zupanič je leta 1894/95 z peresom zajela vaško izročilo — Šopek poljskih cvetlic, med prvimi ženskimi zapisi te dežele.",
+        noteEn:
+          "Before the looms stood a writer: in 1894/95 Katarina Zupanič captured the village tradition with a pen — the Bouquet of Meadow Flowers, among this land's first women's records.",
       },
       {
         exhibitSlug: "vino-in-crnina",
@@ -243,6 +267,14 @@ export const WALKS: Walk[] = [
         noteEn:
           "From the emigrant ships to the red carpet: the Jandreč brothers left Gornje Griblje at the end of the nineteenth century — a granddaughter of the line became a film noir star at MGM.",
       },
+
+      {
+        exhibitSlug: "toni-gasperic",
+        noteSi:
+          "Nekateri odidejo v svet in se vrnejo z darovi; Gašperič se je vrnil z besedo. Humor z bregov Kolpe — oddaje, knjige in Noč na Kolpi.",
+        noteEn:
+          "Some leave for the world and return with gifts; Gašperič returned with words. Humour from the banks of the Kolpa — shows, books and the Night on the Kolpa.",
+      },
       {
         exhibitSlug: "matice-podzemelj",
         noteSi:
@@ -296,6 +328,14 @@ export const WALKS: Walk[] = [
         noteEn:
           "The same church marks half a millennium this year: its first written mention was remembered with the building's renewal, two publications and a newly arranged setting. Five hundred years — one steeple above the village all that time.",
       },
+
+      {
+        exhibitSlug: "zvon-2008",
+        noteSi:
+          "Zvonik živi z glasom: leta 2008 so blagoslovili nov zvon, o dogodku pa je nastala spominska knjiga — eden redkih tiskanih virov, nastalih v sami vasi.",
+        noteEn:
+          "A steeple lives by its voice: in 2008 a new bell was blessed, and a memorial book arose from the event — one of the rare printed sources created in the village itself.",
+      },
       {
         exhibitSlug: "niko-zupanic",
         noteSi:
@@ -316,6 +356,21 @@ export const WALKS: Walk[] = [
           "Prvi učitelj gribeljske šole je bil tudi etnograf: njegov zapis o božiču pri Belokranjcih (1889) živi dlje od njegovih dvajsetih let.",
         noteEn:
           "The first teacher of the Griblje school was an ethnographer too: his account of Christmas among the Bela krajina people (1889) has outlived his twenty years.",
+      },
+
+      {
+        exhibitSlug: "muzejska-ucilnica",
+        noteSi:
+          "Ista šola, v kateri je poučeval Kambič, ima danes muzejsko učilnico (2022) — fizično sestro tega digitalnega muzeja. Dve učilnici, ena naloga.",
+        noteEn:
+          "The same school where Kambič taught holds a museum classroom today (2022) — the physical sister of this digital museum. Two classrooms, one task.",
+      },
+      {
+        exhibitSlug: "franc-brinc",
+        noteSi:
+          "In šola ima svojega dobrotnika: dr. Franc Brinc, učenec iz vojnih let, se je vrnil z darovi — gasilski dom, šola in cerkvena okolica so danes njegov spomenik.",
+        noteEn:
+          "And the school has its benefactor: dr. Franc Brinc, a pupil of the war years, returned with gifts — the fire station, the school and the churchyard are his monument today.",
       },
       {
         exhibitSlug: "jurjevanje",

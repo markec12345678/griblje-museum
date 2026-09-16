@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s — Muzej vasi Griblje",
   },
   description:
-    "Muzej vasi Griblje je trojezični digitalni muzej resnične vasi v Beli krajini: 37 zapisov, dokazljivi viri, lestvica zanesljivosti, odprti podatki in zemljevid. / A multilingual digital museum of a real village in Bela krajina, Slovenia.",
+    "Muzej vasi Griblje je trojezični digitalni muzej resnične vasi v Beli krajini: 44 zapisov, dokazljivi viri, lestvica zanesljivosti, odprti podatki in zemljevid. / A multilingual digital museum of a real village in Bela krajina, Slovenia.",
   keywords: [
     "Griblje",
     "Bela krajina",
