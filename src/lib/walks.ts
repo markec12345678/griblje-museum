@@ -70,6 +70,13 @@ export const WALKS: Walk[] = [
         noteEn:
           "The last water is the water we cannot see: beneath the dry corner above the village runs a karst world, and in it the black olm, which science met only in 1986. What sinks on one side rises on the other.",
       },
+      {
+        exhibitSlug: "alburnus-sava",
+        noteSi:
+          "In reka živi tudi na površju: leta 2017 so ihtiologi iz Kolpe opisali novo vrsto za znanost — plevko Alburnus sava, poimenovano po Savi. Dve neznani življenji ob istih bregovih v enem stoletju.",
+        noteEn:
+          "And the river lives on the surface too: in 2017 ichthyologists described from the Kolpa a species new to science — the bleak Alburnus sava, named after the Sava. Two unknown lives by the same banks within one century.",
+      },
     ],
   },
   {
@@ -87,6 +94,13 @@ export const WALKS: Walk[] = [
           "Ta tla nikoli niso bila mirna. Vojna krajina — vojaška obramba pred Osmanskim cesarstvom — je za stoletja oblikovala, kdo tu živi in kako.",
         noteEn:
           "This ground was never quiet. The Military Frontier — the defensive border against the Ottoman Empire — shaped for centuries who lived here and how.",
+      },
+      {
+        exhibitSlug: "cerkvisce",
+        noteSi:
+          "Pred vrsto so bile Cerkvišču tri cerkvice; Turki so jih porušili in zažgali — danes jih spominja kapelica iz leta 1994. Vojska ni odnesla samo meja, odnesla je tudi kamne.",
+        noteEn:
+          "Before the frontier three churches stood at Cerkvišče; the Turks pulled them down and burned them — today a chapel of 1994 keeps their memory. War took not only borders but stones.",
       },
       {
         exhibitSlug: "zaseda-1941",
@@ -163,6 +177,13 @@ export const WALKS: Walk[] = [
           "From the hearth came meals that had to last the year. The Bela krajina pogača even holds European recognition today.",
       },
       {
+        exhibitSlug: "pasuljada",
+        noteSi:
+          "In jedilnik se ne konča s preteklostjo: vsak avgust v Gribljah kuhajo pasulj na tekmovanje — nova šega, ki je postala koledarska.",
+        noteEn:
+          "And the menu does not end with the past: every August Griblje cooks bean stew for a contest — a new custom that became a calendar date.",
+      },
+      {
         exhibitSlug: "tkalstvo",
         noteSi:
           "Ko polje počiva, začnejo stati statve. Platno je bilo denar: iz lanu so nastajale rute, prti in doto.",
@@ -216,6 +237,20 @@ export const WALKS: Walk[] = [
           "But not everyone stayed: waves of departure for America, Argentina and Australia scattered the village across the world. The money sent home built houses that still stand in Griblje.",
       },
       {
+        exhibitSlug: "audrey-totter",
+        noteSi:
+          "Od izseljenskih ladij do rdeče preproge: bratje Jandreč iz Gornjih Gribelj so zapustili vas konec 19. stoletja — vnukinja veje je postala zvezdnica filma noir pri MGM.",
+        noteEn:
+          "From the emigrant ships to the red carpet: the Jandreč brothers left Gornje Griblje at the end of the nineteenth century — a granddaughter of the line became a film noir star at MGM.",
+      },
+      {
+        exhibitSlug: "matice-podzemelj",
+        noteSi:
+          "In korenine so zapisane: matične knjige župnije Podzemelj (1669–1947) so digitalizirane in proste — vsak Gribeljec po svetu lahko dane prebere, kje se je njegova zgodba začela.",
+        noteEn:
+          "And the roots are written down: the Podzemelj parish registers (1669–1947) are digitised and free — any Griblje family in the world can today read where their story began.",
+      },
+      {
         exhibitSlug: "kolesa-torpedo",
         noteSi:
           "Tretja pot med odhodom in ostankom: starodobna kolesa, ki vozijo v svet in se vedno vrnejo domov. Petnajst let sekcije Torpedo — in 94-letni Janez Totar, ki še vedno vrti pedala.",
@@ -267,6 +302,20 @@ export const WALKS: Walk[] = [
           "Iz te vasi na Dunaj in nazaj: etnograf, ki je soustanovil Etnografski muzej v Beogradu, in diplomata, ki je pomiral meje.",
         noteEn:
           "From this village to Vienna and back: the ethnographer who co-founded the Ethnographic Museum in Belgrade, and the diplomat who calmed borders.",
+      },
+      {
+        exhibitSlug: "nikolaj-dragos",
+        noteSi:
+          "Najdalj živeči moški, ki ga je Slovenija kdaj zapisala, je odraščal na Hajdeč gruntovi njivi — 110 let in 216 dni od gribeljske ajde do Pahorjevega obiska.",
+        noteEn:
+          "The longest-lived man Slovenia has ever recorded grew up on the Hajdeč farm's fields — 110 years and 216 days from Griblje buckwheat to a presidential visit.",
+      },
+      {
+        exhibitSlug: "peter-kambic",
+        noteSi:
+          "Prvi učitelj gribeljske šole je bil tudi etnograf: njegov zapis o božiču pri Belokranjcih (1889) živi dlje od njegovih dvajsetih let.",
+        noteEn:
+          "The first teacher of the Griblje school was an ethnographer too: his account of Christmas among the Bela krajina people (1889) has outlived his twenty years.",
       },
       {
         exhibitSlug: "jurjevanje",

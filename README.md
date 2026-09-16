@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 30/30 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 30/30 (povprečno 307) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 30/30 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 148 skupaj (povprečno 4,9) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 30/30 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 37/37 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 37/37 (povprečno 303) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 37/37 |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 176 skupaj (povprečno 4,8) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 37/37 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -52,6 +52,15 @@ CC BY-SA 3.0) in **kolesa-torpedo** (vaška kolesarska sekcija); ter sklop po
 razpisnih pogojih: **3D-model cerkve sv. Vida z AR** (GLB+USDZ), **hrvaščina**
 (SLO/HRV/EN), **statistika obiska** (`/api/stats`, anonimno) in formalna
 **WCAG izjava** — zbirka 30 zapisov / 148 virov.
+Prvi plod raziskave je sklop **Glasovi raziskave** (#26): sedem novih zapisov —
+**Audrey Totter** (hollywoodska zvezdnica filma noir z gribeljskimi koreninami,
+portret v javni lasti), **Nikolaj Dragoš** (110 let in 216 dni — najdalj živeči
+moški, ki ga je Slovenija kdaj zapisala), **Peter Kambič** (prvi učitelj šole 1889, etnograf zapisa
+»Božič pri Belokranjcih«), **Alburnus sava** (riba, opisana kot nova vrsta iz
+Kolpe 2017, ZooKeys — slika holotipa CC BY 4.0), **matične knjige 1669–1947**
+(župnija Podzemelj, Matricula Online — arhiv rodbin), **Cerkvišče** (sosednja
+vas KS s tremi porušenimi cerkvicami) in **Pasuljada** (živa šega TD Griblje) —
+zbirka 37 zapisov / 176 virov.
 Zatem je nastala še **obsežna spletna raziskava vsebin o Gribljah**
 (`research-griblje/`: 4 sintezni dokumenti z navedbo virov — vas in zgodovina,
 cerkev/PGD/šola/društva, Kolpa/nesnovna dediščina/fotografije) z **~45 predlogi
@@ -64,7 +73,7 @@ sklope poglabljanja.
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 30 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 37 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -75,7 +84,7 @@ sklope poglabljanja.
   delovni list za A4
 - 🧾 **Citiranje** — oblikovan citat zapisa z datumom dostopa in gumbom
   »Kopiraj citat« (vzorec DigitaltMuseum *Siter dette objektet*)
-- 🗺️ **Zemljevid** — Leaflet + OSM, 17 točk (preverjene koordinate + približne, ločene
+- 🗺️ **Zemljevid** — Leaflet + OSM, 19 točk (preverjene koordinate + približne, ločene
   vizualno in z oznako »približno«)
 - 📖 **Zgodbe** — šest pripovedi v človeških glasih (~300 besed, SLO+EN:
 zračni most marca 1945, reka meja, mlinščina kot vaška borza, žensko leto
@@ -120,7 +129,7 @@ načela in odprti razpis za pričevanja skupnosti
 - 🕸️ **Poveži zbirko** — povezani zapisi v vsakem zapisu + pot med dvema zapisoma z
   utemeljenimi skoki (vzorec x Degrees of Separation, Google Arts & Culture),
   `/?path=<slugA>,<slugB>`
-- ⏱️ **Muzej v minuti** — 27 enominutnih zgodb s TTS in prepisom
+- ⏱️ **Muzej v minuti** — 34 enominutne zgodbe s TTS in prepisom
   (vzorec One Minute Wonders, Brighton & Hove Museums); dnevni izbor treh zgodb
 - 🍂 **Sezonska polica** — kurirani izbor zbirke po letnem času, samodejna rotacija
   glede na datum obiskovalca (vzorec »object of the month«, Saffron Walden Museum)
@@ -199,7 +208,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 30 zapisov, 148 virov, 6 zgodb, 7 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 37 zapisov, 176 virov, 6 zgodb, 8 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 

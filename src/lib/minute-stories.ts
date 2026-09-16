@@ -201,6 +201,55 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "1468: Griblach. 1490: Briglach. 1593: Griblah. Grüble in the urbars. Today: 329 inhabitants, three and a half square kilometres, 153 metres above the sea, postal code 8332 Gradac. The 2020 census: 334 souls — 172 men and 162 women. The name? Linguists still debate: a mushroom, a clod, a furrow or a grassy slope. The village keeps counting — from the first letter of the deed to the statistical office's latest figure. This record's aerial photograph holds all of it in a single frame.",
   },
+  {
+    slug: "audrey-totter",
+    textSi:
+      "Konec devetnajstega stoletja so trije bratje Jandreč iz Gornjih Gribelj odšli v Ameriko. Janez je ostal v Jolietu, Illinois — in leta 1917 se mu je rodila hčerka Audrey Mary Totter. Radijske igre, potem Hollywood: sedem let pri MGM, ostra dekleta filma noir, zrcalni prizor iz Lady in the Lake, uspešnica z Clarkom Gableom. Stric Matija »Matiček« je med tem v Gribljah popisoval ljudsko izročilo — Županič je zapisal: Jandrečim sta tuja plug in motika, rajše knjiga in gosli. Fotografija tega zapisa je javna last; zgodba pa gribeljska do zadnje črke.",
+    textEn:
+      "At the end of the nineteenth century three Jandreč brothers left Gornje Griblje for America. Janez stayed in Joliet, Illinois — and in 1917 his daughter Audrey Mary Totter was born. Radio dramas, then Hollywood: seven years at MGM, the sharp girls of film noir, the mirror scene of Lady in the Lake, a hit beside Clark Gable. Meanwhile uncle Matija »Matiček« was recording folk heritage back in Griblje — Županič wrote: the Jandrečs care little for plough and hoe; give them the book and the fiddle. This record's photograph is public domain; the story is Griblje's to the last letter.",
+  },
+  {
+    slug: "nikolaj-dragos",
+    textSi:
+      "Hajdeč grunt, 1907: deveti od dvanajstih otrok. Uk pri ključavničarju, pobeg v Ljubljano, bugarija pri tamburaših društva Danica. Topničar v Mostarju, nato graničar na srbsko-bolgarski meji — prvi, ki se je naučil smučati. Vojni ujetnik, po vojni milicist. Ob stotem rojstnem dnevu je napisal knjigo Mojih sto let; ob 108. in 110. ga je obiskal predsednik Pahor. Umrl je 2018, star 110 let in 216 dni — najdalj živeči moški, ki ga je Slovenija kdaj zapisala. Stoletje v malem, z začetkom na gribeljski njivi.",
+    textEn:
+      "The Hajdeč farm, 1907: ninth of twelve children. Apprenticed to a locksmith, ran off to Ljubljana, played the bugarija with the Danica tamburitza band. Gunner at Mostar, then a border guard on the Serbo-Bulgarian frontier — the first of them to learn to ski. A prisoner of war, after it a militiaman. At one hundred he wrote his book My Hundred Years; at 108 and 110 President Pahor came to visit. He died in 2018, aged 110 years and 216 days — the longest-lived man Slovenia has ever recorded. A century in miniature, begun on a Griblje field.",
+  },
+  {
+    slug: "peter-kambic",
+    textSi:
+      "Novembra 1889 so v Gribljah blagoslovili novo šolsko poslopje — prvi učitelj v njem je bil pripravnik Peter Kambič, rojen v Krasincu. Učitelj in etnograf: pod psevdonimom Pirc Krasinski je za Dolenjske novice zapisal »Božič pri Belokranjcih«, med najstarejše objavljene vpoglede v praznični vsakdan te dežele. Umrl je januarja 1890, komaj dvajsetleten. Šola, ki jo je zagnal, uči še danes; kar je zapisal o božiču, živi dlje od njega.",
+    textEn:
+      "In November 1889 the new school building in Griblje was blessed — its first teacher was the trainee Peter Kambič, born at Krasinec. Teacher and ethnographer: under the pen name Pirc Krasinski he wrote »Christmas among the Bela krajina people« for the Dolenjske novice, among the oldest published glimpses of this land's festive life. He died in January 1890, barely twenty. The school he set going teaches to this day; what he wrote about Christmas outlives him.",
+  },
+  {
+    slug: "alburnus-sava",
+    textSi:
+      "Leto 2017: v odprti reviji ZooKeys ihtiologi Bogutskaya, Zupančič, Jelić, Diripasko in Naseka opišejo novo vrsto za znanost — Alburnus sava, plevko iz Kolpe, poimenovano po Savi. Holotip, samec dolg 173,6 milimetra, hranijo v Madridu; njegova fotografija je slika tega zapisa. V istem stoletju je znanost ob bregovih Gribelj srečala dve neznani življenji: črnega močerila pod kraškim svetom in plevko v sami reki. Kdor se kopa pri Gribljah, plava v vodi, ki nosi ime v znanstveni literaturi.",
+    textEn:
+      "The year 2017: in the open journal ZooKeys the ichthyologists Bogutskaya, Zupančič, Jelić, Diripasko and Naseka describe a species new to science — Alburnus sava, a bleak from the Kolpa, named after the Sava. The holotype, a male 173.6 millimetres long, is kept in Madrid; its photograph is this record's image. In the same century science met two unknown lives by the banks of Griblje: the black olm beneath the karst world and the bleak in the river itself. Whoever bathes at Griblje swims in water that carries a name in the scientific literature.",
+  },
+  {
+    slug: "matice-podzemelj",
+    textSi:
+      "Kjer se v Gribljah krsti, poroči ali pokoplje, se v Podzemlju zapiše. Župnija sv. Martina vodi matične knjige od leta 1669 do 1947 — dvaindvajset zvezkov krstnih, poročnih in mrliških, digitaliziranih in prostih na Matricula Online. Botri ob vsakem krstu so karta vaške mreže: kdo je komu stal ob krstu, pri poroki, ob postelji. Za Gribeljce od Clevelanda do Buenos Airesa so ta vrata danes odprta brez potovanja. Ta zapis je vrata, ne kopija — listajte izvirnik.",
+    textEn:
+      "Wherever Griblje baptises, marries or buries, Podzemelj writes it down. The parish of St. Martin keeps its registers from 1669 to 1947 — twenty-two volumes of baptisms, marriages and burials, digitised and free on Matricula Online. The godparents at every baptism are a map of the village web: who stood by whom at the font, at the wedding, at the bedside. For Griblje families from Cleveland to Buenos Aires the gate now stands open without a journey. This record is a gate, not a copy — leaf through the original.",
+  },
+  {
+    slug: "cerkvisce",
+    textSi:
+      "Ime te vasi je arheologija: Cerkvišče — kraj, kjer so bile cerkve. Pred turškimi vpadi okrog leta 1408 so tu stale tri; Turki so jih porušili in zažgali. Za dve vaščani domnevno vejo, kje sta stali, za tretjo ne ve nihče. Leta 1994 so postavili kapelico v spomin — ni rekonstrukcija, ampak pričevanje. Vas pripada isti župniji in isti krajevni skupnosti kot Griblje; v gozdu skrivata Jelenja in Vodena jama. Njihova imena so v tleh.",
+    textEn:
+      "This village's name is an archaeology: Cerkvišče — a place where churches stood. Before the Ottoman incursions around 1408 three stood here; the Turks pulled them down and burned them. For two the villagers believe they know the sites; of the third, no one knows. In 1994 a chapel was raised in their memory — not a reconstruction but a testimony. The village belongs to the same parish and the same local community as Griblje; in its woods hide the Deer Cave and the Water Cave. Their names are in the ground.",
+  },
+  {
+    slug: "pasuljada",
+    textSi:
+      "Avgust ob Kolpi, lonci na ognju: Pasuljada. Tekmovanje v kuhanju pasulja, ki ga Turistično društvo Griblje prireja z Društvom kmečkih žena in kopališčem — leta 2019 že šestnajstič, torej od približno leta 2004. Štirinajst ekip po dva, komisija z žlico in nosom, zmagovalna lonec in recept. Etnologi pravijo, da šega mlajša od sto let še ni šega — a v živem kraju tradicija ne deduje samo, nastaja. Nekoč bo o njej kdo pisal, kakor danes pišemo o božiču.",
+    textEn:
+      "August by the Kolpa, pots on the fire: the Pasuljada. A bean-stew cooking competition run by the Griblje Tourist Society with the Farm Women's Society and the bathing place — by 2019 already the sixteenth time, so since about 2004. Fourteen teams of two, a jury with spoon and nose, the winning pot and recipe. Ethnologists say a custom younger than a hundred years is not yet a custom — but in a living place tradition is not only inherited; it is created. One day it will be written about the way we today write about Christmas.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {

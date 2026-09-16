@@ -832,3 +832,24 @@ Stage Summary:
 - Ključne odkritja: Audrey Totter iz Gornjih Gribelj; Niko Županič (rešil Bled, ustanovil SEM); Dragoš 111 let; dr. Brinc 200.000 € + spominska soba; PD fotografiji zavezniških letal 1945; matrice 1669–1947; Alburnus sava; knjižica Memento (dr. Weiss) ob 500-letnici
 - Ključne letnice: 2026 (500 let cerkve — že obeležena), 2027 (100 let PGD), 2029 (140 let šole)
 - Nezaključeno (kvota): RKD register statusa cerkve, PGD medalje, TD kontakti, stari zemljevidi — priporočena ponovitev
+
+---
+Task ID: 38
+Agent: Main agent (Z.ai Code)
+Task: Sinhronizacija z oddaljenim repozitorijem + README uskladitev s kodo + 7. sklop vsebin iz raziskave (uporabnik: "odlicno nadaljuj pushaj na github sinhroniziraj kode readme vercel in nadaljuj")
+
+Work Log:
+- ODKRITO: lokalni klon je bil ZASTAREL (main = e8457d6/#24, 26 zapisov), oddaljeni repozitorij pa 24+ commitov naprej (naloge 26–36: ElevenLabs žeton, OpenRouter vodnik, jubilejno leto 2026, črni močeril, kolesa-torpedo, 30 zapisov, 3D/AR sveti-vid, hrvaščina, statistika /api/stats, WCAG, razpisna priprava)
+- Sinhronizacija: rezervna veja backup-research za lokalni raziskovalni commit f14bbd0 → git reset --hard origin/main (440f8bd) → ročna aplikacija samo raziskovalnih datotek (research-griblje/ MD + slike + commons-slike.json) + worklog sekcija 36+37 → .gitignore pravilo research-griblje/raw/ (49 MB surovih kopij tujih strani ostaja lokalno)
+- Popravek okolja po resetu: bun install je razuskladil react 19.2.3 vs react-dom 19.3.0 (ista past kot naloga 26) → obnova bun.lock iz git + --frozen-lockfile + restart dev; API spet 200
+- README sinhronizacija s kodo (commit 63fff61, push na GitHub): 26→30 zapisov, 113→148 virov, povprečno 307 besed, 14→17 točk, 4→6 pripovedi, 27 minutnih zgodb, štirje→šest sprehodov, dvojezičnost→trojezičnost SLO/HRV/EN, novi razdelki 3D/AR + statistika, /api/stats v tabeli API, licenca Hodalič + 3D model, struktura (public/models, research-griblje), prva omemba 1526→1468; Vercel deploy sprožen samodejno (produkcija 200, 30 zapisov)
+- 7. SKLOP "Glasovi raziskave" (30→37 zapisov): audrey-totter (MGM film noir, dokumentiran, javna-last portret s Commons), nikolaj-dragos (110 let 216 dni, dokumentiran; poštena opomba o medijih, ki zaokrožajo na 111), peter-kambic (prvi učitelj 1889, Božič pri Belokranjcih), alburnus-sava (ZooKeys 2017, holotip 173,6 mm; slika Figure 1 CC BY 4.0 prenesena s Pensofta), matice-podzemelj (1669–1947, Matricula Online — zapolnjena vrzel "arhiv rodbin" iz analize 24), cerkvisce (~1408, tri porušene cerkvice, kapelica 1994; geo 45,576/15,264 iz Wikipedije), pasuljada (CORROBORATED — ~2004 izpeljava iz 16. izvedbe 2019)
+- Vsak zapis: etiketa + zgodba 280–380 besed SL/EN + 4–4 viri s notami + status dokazilosti; biografije 4–6 faz (object-biographies.ts); minutne zgodbe (27→34); sprehodi +7 postaj (pokritost vseh 37 zapisov ohranjena: voda+alburnus, vojna+cerkvisce, kruh+pasuljada, svet+audrey+matice, ljudje+dragos+kambic); dogodki 7→8 (Pasuljada 2027)
+- Števci: i18n hero/vodnik/sprehodi/advent v 3 jezikih 30→37 (odkrit tudi pozabljen HR advent "20 dijelova"→37); layout.tsx meta opis "dvojezični, 30 zapisov"→"trojezični, 37 zapisov"
+- Reseed + restart dev; verifikacija: tsc 0 napak, eslint 0 napak (2302 znanih opozoril), API 37 zapisov/176 virov/19 geo/8 dogodkov, sliki 200 (audrey-totter.jpg 972×1200 javna last; alburnus-sava.jpg 1400×599 CC BY 4.0), agent-browser: dialog audrey-totter (naslov, 4-odstavek zgodba, viri z notami, citat CC BY-SA), dialog cerkvisce, HR jezik ("Muzej sela Griblje", "Trideset sedam zapisa"), 0 napak konzole
+
+Stage Summary:
+- Zbirka: 37 zapisov / 176 virov / 34 minutnih zgodb / 19 točk / 8 dogodkov / 6 sprehodov (pokritost 37/37)
+- Git: main sinhroniziran z oddaljenim repozitorijem; raziskava objavljena (#26); 7. sklop (#27) commitan in pushan; Vercel samodejni deploy
+- Ključne nove vsebine: Hollywood iz Gornjih Gribelj, najstarejši Slovenec, ribja vrsta iz Kolpe z znanstveno sliko, arhiv rodbin 1669–1947, sosednja vas s tremi izgubljenimi cerkvicami, živa šega Pasuljada
+- Ostalo programa: naslednji sklopi iz preostalih ~38 predlogov raziskave (Brinc, Gašperič, Dular, Madroničev mlin, Veselko-fotograf, Kavbojski žur …), kontakti (dr. Weiss, Knjižnica Črnomelj, Radio Odeon), ponovitev iskanj ko se kvota sprosti

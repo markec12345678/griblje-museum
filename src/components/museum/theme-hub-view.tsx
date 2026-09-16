@@ -25,7 +25,7 @@ import { EvidenceBadge } from "@/components/museum/evidence-badge";
  * Tematska središča — vstopne »node« strani zbirke po vzoru nove
  * zbirke Rijksmuseuma (2024): uvod, zapisi teme, sprehodi, ki se je
  * dotaknejo, in sorodne teme. Rijksmuseum jih gradi iz linked data;
- * pri 30 zapisih jih kuriramo ročno.
+ * pri 37 zapisih jih kuriramo ročno.
  */
 export function ThemeHubView({
   category,
