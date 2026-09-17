@@ -244,6 +244,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
       "The year 1669: a new Podzemelj priest opens an empty book — and does not begin with baptisms, but with weddings. The parish's oldest book is a marriage register: after a century of wars, the most urgent entry was the joining of two households. A marriage entry is the strongest point in a family tree, because it joins two families into one. The page the priest leafed through, any Griblje family can leaf through today — on Matricula Online, under the shelfmark 04795.",
   },
   {
+    slug: "spanska-gripa-1918",
+    textSi:
+      "Jesen 1918: vojna se končuje, a v podzemeljsko mrliško knjigo pisar ob pljučnici piše »(španka)«. Pet tednov in pol — petinpetdeset pogrebov, petkrat več, kot jih je župnija vajena. Griblje izgubijo Ano Vegino, petindvajsetletnico, in Alojzija Orehekta, sedemindvajsetletnika. Knjiga, ki se je začela s svatbami leta 1669, piše smrt. Signatura 04894 — preberite jo sami.",
+    textEn:
+      "The autumn of 1918: the war is ending, but in the Podzemelj death register the writer adds »(Spanish)« beside pneumonia. Five and a half weeks — fifty-five funerals, five times the parish's usual. Griblje loses Ana Vegina, twenty-five, and Alojzij Orehek, twenty-seven. The archive that began with weddings in 1669 writes death. Shelfmark 04894 — read it yourself.",
+  },
+  {
     slug: "cerkvisce",
     textSi:
       "Ime te vasi je arheologija: Cerkvišče — kraj, kjer so bile cerkve. Pred turškimi vpadi okrog leta 1408 so tu stale tri; Turki so jih porušili in zažgali. Za dve vaščani domnevno vejo, kje sta stali, za tretjo ne ve nihče. Leta 1994 so postavili kapelico v spomin — ni rekonstrukcija, ampak pričevanje. Vas pripada isti župniji in isti krajevni skupnosti kot Griblje; v gozdu skrivata Jelenja in Vodena jama. Njihova imena so v tleh.",

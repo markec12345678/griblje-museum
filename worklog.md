@@ -1360,3 +1360,24 @@ Stage Summary:
 - Kontaktni osnutki za Vaš Kanal / Flajšman / DKŽ pripravljeni (muzejska pošta čaka pošiljanje)
 - Španska gripa 1918: 19 strani mrliške knjige zajetih, datumi čakajo na VLM kvoto (vrata v ozadju)
 - Odprto: VLM 429 (izrez Freyer + datume + vizualni audit); z-ai web_search 429 (poplave/kataster raziskava odložena)
+
+---
+Task ID: 59
+Agent: Main agent (Z.ai Code)
+Task: 20. sklop — španska gripa 1918 iz mrliške knjige Podzemelj 04894 (VLM kvota se je sprostila)
+
+Work Log:
+- KVOTA SPROŠČENA: ugotovitev — za slike je treba klicati zai.chat.completions.createVision (navaden create zavrača image_url z 400 »取值范围 ['text']«); obe stari zanki (Freyer + datumi) ustavljeni — Freyer zanka je padla na 400 (slika 14 MB prevelika), ne več na 429
+- SIDRA STRANI (VLM branja, polna ločljivost): p170=1916 (27.7–17.8, stran za 3 tedne), p188=avg–sep 1918, p189=vpisi 32–37 (~6.9–20.10, Griblje!), p190=6.9–18.10, p191=vpisi 44–49 (22.–29.10.1918), p192=vpisi 50–55 (29.10–1.11, Griblje), p193/194=1.–4.11 (p194 = vpisi 62–67, VSI s pljučnico (španka)), p195=5.–8.11, p196–198=7.–18.11, p199=upravni dokument (Sprejemnica za mrliča — Helena Pavlaković iz Gribelj, 27.6.1921, prenos v Preloko!), p201/202=21.11–30.12; ugotovitev: strani 198 in 200 sta DUPLIKATNI fotografiji istega razprostrta (vpisi 86–91) — knjiga vsebuje podvojene posnetke
+- VZROKI SMRTI (preverjena branja): p191 — 4 od 6 »pljučnica (španaska)« (Vranoviči 24, Krasinc 49, Krasinc 5, Gradac 33) + Grilje 84 let starost; p192 — 5 od 6 »pljučnica (španoka)« (Žemelj 12, Krasinc 16, Grm 47, Boršt 8); p194 — 6 od 6 »pljučnica (španka)«; p196 — 4 od 5 (španoška); pisar je čez tedne pisal španaska/španoka/španoška
+- GRIBELJSKI MRLIČI OKT–DEC 1918 (preverjeno po straneh): 84-letni/letna (starost, p191); Marko Hlobučar 50 let (starost, 29.10, p192); ANA VEGINA 25 let (pljučnica španka, 3.11, p194); Katarina Brinc 1 leto (božjast, 9.11, p196); ALOJZIJ OREHEK 27 let (pljučnica španoška, 18.11, p198) — mrežno (nizkoločljivo) VLM branje je haluciniralo »12 gribeljskih otrok«; vsak podatek preverjen v polni ločljivosti z imeni
+- STATISTIKA ZAPISA: vpisi 44–97 (22.10–28.11.1918) = 55 pogrebov v 5,5 tedna ≈ 10/teden ≈ 5× običajno (1916: stran = 3 tedne); ~85–90 % vzrokov »pljučnica (špan…)«; W-oblika smrtnosti (16, 21, 24, 25, 27, 29 let + 5, 8 let)
+- NOVI ZAPIS spanska-gripa-1918 (86 → 87 zapisov / 377 → 380 virov): kategorija kraj, DOCUMENTED, 1918; slika = stran 194 (vpisi 1.–4.11.1918, 6 pogrebov v 4 dneh, med njimi Ana Vegina; 2659×2000, 748 kB); zgodba SL+EN (5 odstavkov: sovražnik brez fronte / knjiga pove več kot besede / gribeljska imena / muzej šteje pošteno — signatura 04894 strani 189–202 / slika zapisa); 3 viri (Matricula 04894, Wikipedia SL španska gripa, Wikipedia EN second wave October 1918)
+- INTEGRACIJE: minute-stories +1 (Jesen 1918); object-biographies +1 (3 faze: 1886→1917 življenje / oktober–december 1918 priča / danes); record-of-month OKTOBER na prvem mestu; walks +1 postaja (Iz Griblje v svet, za poročno 1669 — »ista knjiga piše tudi konec«); image-dimensions +1; visual-fingerprints regenerirani (87, 18,1 kB); i18n števci 86→87 × 22 mest × 5 jezikov + layout.tsx meta; README 20. sklop
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (vseh 9 spremenjenih datotek); reseed 87 zapisov; API: 87 zapisov, 3 viri, Ana Vegina/Orehek/Hlobučar/Brinc v zgodbi, slika 200 (766 kB); agent-browser: domov 87 zapisov (86 ni nikjer več), iskanje »gripa« najde zapis, dialog vsebuje naslov/vsa imena/vire/sliko/biografijo (faza 1886)/stikalo »V eni minuti«/povezane zapise; mobilno 390 px: preliv 0, noga na dnu (20934 → 22192 = docH); 3 zaslonke (dialog, mobilno, glava-1024-hamburger iz prejšnjega sklopa)
+
+Stage Summary:
+- Zbirka: 87 zapisov / 380 virov; 20. sklop = prva uporaba VLM za branje rokopisov matične knjige stran za stranjo (vsak podatek preverjen v polni ločljivosti; nizkoločljiva branja zavrnjena kot halucinacija)
+- Ključna najdba: podzemeljski pisar je oktobra 1918 ob pljučnici pisal »(španka)« v treh različnih zapisih; 55 pogrebov v 5,5 tedna; Griblje izgubili Ano Vegino (25) in Alojzija Orehekta (27) — prvi imenovani žrtvi pandemije v vasi
+- Tehnična metoda: createVision (ne create) za slike; zajem posnetkov Matricula (navigacija → takojšen fetch s svežimi žetoni); zaznani duplikatni posnetki strani v knjigi
+- Odprto: izrez Gribelj s Freyerjeve karte (slika 14 MB treba zmanjšati za createVision) + polni vizualni audit 87 slik — naslednji korak; web_search za poplave/kataster (kvota bi morala biti zdaj prosta)

@@ -23,6 +23,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/ilirske-province-1812.jpg": { width: 1920, height: 1946 },
   "/images/authentic/lesniki.jpg": { width: 1280, height: 960 },
 
+  // 20. sklop: španska gripa 1918 — mrliška knjiga Podzemelj 04894 (stran z vpisi 1.–4. 11. 1918)
+  "/images/authentic/spanska-gripa-1918.jpg": { width: 2659, height: 2000 },
+
   "/images/authentic/griblje-vas.jpg": { width: 800, height: 574 },
   "/images/authentic/zaselki-griblje.jpg": { width: 1920, height: 1286 },
   "/images/authentic/dakota.jpg": { width: 1600, height: 1200 },

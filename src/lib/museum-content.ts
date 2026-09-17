@@ -3006,6 +3006,65 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "spanska-gripa-1918",
+    category: "kraj",
+    titleSi: "Španska gripa 1918 — pljučnica (španka) v podzemeljski matici",
+    titleEn: "The Spanish flu of 1918 — pneumonia (Spanish) in the Podzemelj register",
+    periodSi: "oktober–december 1918 · mrliška knjiga 04894",
+    periodEn: "October–December 1918 · the death register 04894",
+    summarySi:
+      "Oktobra 1918 se je vojna bližala koncu, pandemija pa vrhuncu: podzemeljski župnik je v vzrok smrti pisal »pljučnica (španka)«. V petih jesenskih tednih je župnija pokopala petinpetdeset ljudi — Griblje so izgubile Ano Vegino (25) in Alojzija Orehekta (27).",
+    summaryEn:
+      "In October 1918 the war was nearing its end while the pandemic neared its peak: the Podzemelj priest wrote »pneumonia (Spanish)« as the cause of death. In five autumn weeks the parish buried fifty-five people — Griblje lost Ana Vegina (25) and Alojzij Orehek (27).",
+    storySi:
+      "Ko se je jeseni 1918 svet utrujal od štirih let vojne, je prišel sovražnik, ki ga ni bilo na nobeni fronti. Španska gripa se je po svetu razmahnila v treh valovih, drugi — od avgusta 1918 — pa je bil najhujši; oktober 1918 je bil mesec z najvišjo smrtnostjo celega obdobja pandemije. Prav ta jesen je v podzemeljsko mrliško knjigo 04894 pisar pisal besedo, ki je v gribeljski zgodovini drugače ne obstaja: ob pljučnici je v oklepaj dodal »(španka)«.\n\nKnjiga pove več kot besede. Leta 1916 je župnik eno stran pisal tri tedne; oktobra 1918 je stran zadoščala za štiri dni. Od 22. oktobra do 28. novembra — pet tednov in pol — je župnija Podzemelj zapisala vpise številka 44 do 97: petinpetdeset pogrebov, približno deset na teden, kar je petkrat več, kot je bilo običajno. Na straneh, ki jih je muzej prebral, je vzrok pri devetih od desetih mrličev enak: pljučnica (španka) — pisar je čez tedne pisal španaska, španoka, španoška, kot se je pisala roka, ki se je utrujala. Umirali so vseh starosti: enaindvajsetletnice, štiriindvajsetletniki, petindvajsetletnice — triintridesetletniki; in petletni, osemletni otroci. Gripa leta 1918 je imela podpis, ki ga običajna gripa nima: ubijala je mlade odrasle, ne le starčke.\n\nGriblje so v teh tednih zapisale štirje pogrebi. Ana Vegina, petindvajsetletna gribeljska žena, je umrla 3. novembra za pljučnico (španko); Alojzij Orehek, sedemindvajsetletni Gribeljc, pa 18. novembra. Ob njiju je ista knjiga zapisala oseminosemdesetletnika in petdesetletnega Marka Hlobučarja, ki sta umrla od starosti, ter enoletno Katarino Brinc, ki je umrla od božjasta — kar koli je bilo ime bolezni, vas je v istih tednih pokopavala vse starosti naenkrat: zibelko, odraslost in poto. Takšna jesen se v rodoslovju vidi kot vrsta letnic, ki se končajo v istem mesecu.\n\nMuzej šteje pošteno: številke v tem zapisu niso iz knjige o zgodovini, ampak iz same knjige — prebrane strani po strani, vpis za vpisom, s pomočjo digitaliziranih posnetkov, ki jih Nadškofijski arhiv Ljubljana objavlja prosti dostop na portalu Matricula Online. Kdor želi prešteti znova, lahko: signatura 04894, strani 189–202. Štetje mrličev ni kopiranje tuje knjige — je branje lastne.\n\nSlika zapisa je stran teh dni: 1.–4. novembra 1918, šest pogrebov v štirih dneh, vsak z vzrokom pljučnica (španka) — med njimi Ana Vegina iz Gribelj. Ta stran je hkrati zadnja plat vasi, ki se je branila pred tisočletjem vojn s poročno knjigo: ko je vojna konec, piše smrt.",
+    storyEn:
+      "As the world tired of four years of war in the autumn of 1918, an enemy arrived that stood on no front. The Spanish flu broke across the world in three waves, the second — from August 1918 — the cruellest; October 1918 was the month of the whole pandemic's highest mortality. In that very autumn the writer of the Podzemelj death register 04894 wrote a word that exists nowhere else in Griblje's history: beside pneumonia he added in brackets »(Spanish)«.\n\nThe book says more than words. In 1916 the priest took three weeks to fill a page; in October 1918 a page lasted four days. From 22 October to 28 November — five and a half weeks — the Podzemelj parish wrote entries number 44 to 97: fifty-five funerals, about ten a week, five times the usual. On the pages the museum read, nine of every ten deceased carry the same cause: pneumonia (Spanish) — across the weeks the writer spelled it španaska, španoka, španoška, as the hand that wrote it grew weary. They died at every age: twenty-one-year-olds, twenty-four-year-olds, twenty-five-year-olds, thirty-three-year-olds; and five-year-old, eight-year-old children. The flu of 1918 bore a signature ordinary flu does not: it killed young adults, not only the old.\n\nGriblje wrote four funerals into those weeks. Ana Vegina, a twenty-five-year-old woman of Griblje, died of pneumonia (Spanish) on 3 November; Alojzij Orehek, twenty-seven, of Griblje, on 18 November. Beside them the same book entered an eighty-four-year-old and the fifty-year-old Marko Hlobučar, who died of old age, and the one-year-old Katarina Brinc, who died of whooping cough — whatever the illness was called, in the same weeks the village buried every age at once: the cradle, adulthood and the path. Such an autumn shows in a family tree as a row of dates that end in the same month.\n\nThe museum counts honestly: the figures in this record come not from a book about history but from the book itself — read page by page, entry by entry, on the digitised scans the Archdiocesan Archives of Ljubljana publish in free access on the Matricula Online portal. Whoever wishes to count again may: shelfmark 04894, pages 189–202. Counting the dead is not copying another's book — it is reading one's own.\n\nThe record's image is a page of those days: 1–4 November 1918, six funerals in four days, each with the cause pneumonia (Spanish) — among them Ana Vegina of Griblje. This page is at the same time the last leaf of the village that had defended itself against a millennium of wars with a marriage register: when the war ends, it writes death.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: 1918,
+    yearTo: 1918,
+    image: "/images/authentic/spanska-gripa-1918.jpg",
+    imageCredit:
+      "Mrliška knjiga župnije Podzemelj 1886–1924 (signatura 04894), vpisi 1.–4. novembra 1918 · Nadškofijski arhiv Ljubljana · Matricula Online — šest pogrebov v štirih dneh, med njimi Ana Vegina iz Gribelj",
+    addedAt: "2026-09-17",
+    sources: [
+      {
+        key: "matricula-04894-gripa",
+        nameSi: "Matricula Online — mrliška knjiga župnije Podzemelj 1886–1924 (signatura 04894; vir glavne slike)",
+        nameEn: "Matricula Online — the death register of the Podzemelj parish 1886–1924 (shelfmark 04894; the main image's source)",
+        sourceType: "fotografija",
+        license: "Nadškofijski arhiv Ljubljana · prosti dostop",
+        url: "https://data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894/",
+        noteSi:
+          "Primarni vir: vpisi 44–97 (22. 10.–28. 11. 1918) na straneh 189–202; vzrok »pljučnica (španaska/španoka/španoška)«; gribeljski mrliči: Ana Vegina 25 let (3. 11.), Alojzij Orehek 27 let (18. 11.), Marko Hlobučar 50 let (29. 10.), Katarina Brinc 1 leto (9. 11.).",
+        noteEn:
+          "The primary source: entries 44–97 (22 October–28 November 1918) on pages 189–202; cause »pneumonia (Spanish)«; the deceased of Griblje: Ana Vegina aged 25 (3 Nov.), Alojzij Orehek aged 27 (18 Nov.), Marko Hlobučar aged 50 (29 Oct.), Katarina Brinc aged 1 (9 Nov.).",
+      },
+      {
+        key: "wiki-sanska-gripa",
+        nameSi: "Wikipedija: Španska gripa (pandemija 1918–1920)",
+        nameEn: "Wikipedia: Spanish flu (the 1918–1920 pandemic)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/%C5%A0panska_gripa",
+        noteSi: "Splošni okvir pandemije: 50–100 milijonov mrtvih po svetu v približno letu dni.",
+        noteEn: "The pandemic's general frame: 50–100 million dead worldwide in roughly a year.",
+      },
+      {
+        key: "wiki-en-spanish-flu",
+        nameSi: "Wikipedia EN: Spanish flu (drugi val, oktobar 1918)",
+        nameEn: "Wikipedia EN: Spanish flu (the second wave, October 1918)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://en.wikipedia.org/wiki/Spanish_flu",
+        noteSi:
+          "Oktober 1918 je bil mesec z najvišjo smrtnostjo celega obdobja pandemije; drugi val se je začel v drugi polovici avgusta 1918; osrednje sile so bile prizadete prej in hujše.",
+        noteEn:
+          "October 1918 was the month with the whole pandemic's highest fatality rate; the second wave began in the second half of August 1918; the Central Powers were hit earlier and harder.",
+      },
+    ],
+  },
+  {
     slug: "cerkvisce",
     category: "kraj",
     titleSi: "Cerkvišče — tri cerkvice, ki jih ni več",
