@@ -334,6 +334,13 @@ export const WALKS: Walk[] = [
           "The last stop is the beginning of everything: Valvasor's Glory of the Duchy of Carniola (1689), the first printed book that knows this corner. A walk that ends at the first page — that is museum discipline.",
       },
       {
+        exhibitSlug: "ilirska-carina-1809",
+        noteSi:
+          "Kmalu po Valvasorju so se tu sprehodili še Francozi: med Ilirskimi provincami (1809–1813) je bila Griblje carinarnica ob Kolpi. Tudi Napoleonovi imperiji so potrebovali isti prehod.",
+        noteEn:
+          "Soon after Valvasor the French walked here too: in the Illyrian Provinces (1809–1813) Griblje was a customs post on the Kolpa. Even Napoleon's empires needed the same crossing.",
+      },
+      {
         exhibitSlug: "stari-zemljevidi",
         noteSi:
           "In pravzaprav še ena, ki se dotika vsega: od Griblacha 1468 do Freyerjeve karte 1843 — pet stoletij, v katerih se je vas pisala na papir. Kar ni zapisano, ni zastopano.",
@@ -541,6 +548,13 @@ export const WALKS: Walk[] = [
           "The same school where Kambič taught holds a museum classroom today (2022) — the physical sister of this digital museum. Two classrooms, one task.",
       },
       {
+        exhibitSlug: "novo-zivljenje-1914",
+        noteSi:
+          "In šola, ki je postala knjiga: leta 1914 je pri Mohorjevi družbi izšla povest Novo življenje, dogajajoča se v Gribljah med gradnjo šole. Vas, ki se je dala prebrati.",
+        noteEn:
+          "And the school that became a book: in 1914 the St. Hermagoras Society published the tale Novo življenje, set in Griblje during the building of the school. A village that could be read.",
+      },
+      {
         exhibitSlug: "franc-brinc",
         noteSi:
           "In šola ima svojega dobrotnika: dr. Franc Brinc, učenec iz vojnih let, se je vrnil z darovi — gasilski dom, šola in cerkvena okolica so danes njegov spomenik.",
@@ -616,6 +630,13 @@ export const WALKS: Walk[] = [
           "In pred zaključkom še dan, ko se je vas spomnila, da zna praznovati: prvi praznik KS po desetletjih — iz spomina na 1941 zrasel praznik dobrote.",
         noteEn:
           "And before the close, the day the village remembered it knows how to celebrate: the local community's first festival in decades — a feast of generosity grown from the memory of 1941.",
+      },
+      {
+        exhibitSlug: "tone-kralj-98",
+        noteSi:
+          "In ves ta krog je še živ: Tone Kralj, 98 let, še lušči lešnike in karta s pravnuki. Vas, ki se ne samo spominja — še živi.",
+        noteEn:
+          "And this whole circle is still alive: Tone Kralj, 98, still shells hazelnuts and plays cards with his great-grandchildren. A village that does not only remember — it still lives.",
       },
       {
         exhibitSlug: "ljudje-ob-kolpi",

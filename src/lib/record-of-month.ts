@@ -68,6 +68,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
       noteEn:
         "January keeps to the house: by the stove, under the open hearth where smoke drew its own maps across the ceiling.",
     },
+    {
+      slug: "tone-kralj-98",
+      noteSi:
+        "Januarja 2026 je Tone Kralj praznoval 98. rojstni dan — z lešniki, peteršiljem in kartami s pravnuki. Mesec rojstnodnevnih miz.",
+      noteEn:
+        "In January 2026 Tone Kralj celebrated his 98th birthday — with hazelnuts, parsley and cards with the great-grandchildren. The month of birthday tables.",
+    },
   ],
   /* ------------------------------ FEBRUAR ----------------------------- */
   [
@@ -333,6 +340,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
       noteEn:
         "The fruit-drying oven is a factory of autumn smoke — October smells of the pears that once carried a village through to spring.",
     },
+    {
+      slug: "ilirska-carina-1809",
+      noteSi:
+        "Oktobra 1809 je Dunajski mir dežele predal Francozom — in Griblje so dobile carinarnico ob Kolpi. Kratek imperij na jesen dežele.",
+      noteEn:
+        "In October 1809 the Peace of Schönbrunn handed these lands to the French — and Griblje received a customs post on the Kolpa. A short empire in the autumn of the land.",
+    },
   ],
   /* ----------------------------- NOVEMBER ----------------------------- */
   [
@@ -363,6 +377,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
         "Ob dnevu mrtvih vas začnejo zanimati imena s kamnov: matične knjige 1669–1947 so arhiv, kjer se vsako ime še enkrat zapiše.",
       noteEn:
         "Around the day of the dead, the names on the stones start asking questions: the parish registers of 1669–1947 are the archive where every name is written one more time.",
+    },
+    {
+      slug: "novo-zivljenje-1914",
+      noteSi:
+        "5. novembra 1889 so blagoslovili gribeljsko šolo — predmet, okoli katerega je leta 1914 zrasla edina znana povest, ki se dogaja v vasi. November je mesec šolskih obletnic.",
+      noteEn:
+        "On 5 November 1889 the Griblje school was blessed — the subject around which, in 1914, grew the only known tale set in the village. November is the month of school anniversaries.",
     },
   ],
   /* ----------------------------- DECEMBER ----------------------------- */

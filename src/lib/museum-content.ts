@@ -1530,13 +1530,13 @@ export const seedExhibits: SeedExhibit[] = [
     periodSi: "kmečko znanje na svetovnem odru",
     periodEn: "farming skill on the world stage",
     summarySi:
-      "Kmet iz Gribelj, ki je osmkrat nastopil na svetovnih prvenstvih v oranju: brazda, ki je v vasi vsakdan, je na svetu postala šport.",
+      "Kmet iz Griblje, ki je osmkrat nastopil na svetovnih prvenstvih v oranju in večkrat postal državni prvak — zadnjič 2024: brazda, ki je v vasi vsakdan, je na svetu postala šport.",
     summaryEn:
-      "A farmer from Griblje who eight times took part in the world ploughing championships: the furrow that is a village everyday became a sport on the world stage.",
+      "A farmer from Griblje who eight times took part in the world ploughing championships and more than once became national champion — most recently in 2024: the furrow that is a village everyday became a sport on the world stage.",
     storySi:
-      "Griblje so kmetijstvu dale tudi poslanca: Anton Filak, osmkratni udeleženec svetovnih prvenstev v oranju. Njegova disciplina je najstarejša veščina človeka ob zemlji — vrtanje brazde —, dvignjena v merilni šport.\n\nOranje je vrhunec kmečkega znanja. Pravična brazda zahteva vse: branje prsti (jerina čez apnenec se obnaša drugače kot mokra ilovica v dolini), pravčasnost (prezgodaj — brazda se razsuje; prepozno — izgubi vlago), mirno žival in roko, ki zna plugu zaupati. V vasi se je kmet poznal po brazdi: kdo orje plitvo in poševno, kdo prav in do tal. Kdor je oral lepo, je sijal pred sosedovi očmi kot gospodar, ki zna voditi hišo.\n\nSvetovna prvenstva v oranju potekajo od leta 1953: državne ekipe tekmujejo v klasičnem in reverzibilnem oranju, sodniki pa točkujejo globino, ravnost brazde, pokritost žetvenih ostankov in čistost preloma. Oranje s konjsko vprego — korenik tega športa — je dokumentirano na fotografijah Franca Vesela iz začetka 20. stoletja; ena od njih je glavna slika tega zapisa. Tekmovanje je iz kmečke nuje naredilo disciplino: enaka roka, enak plug, le merilni trak namesto sosedovega pogleda.\n\nNajlepše pa je, da ta šport ni nikoli zapustil kmečke hiše: prvaki so ostali kmetje, ki orjejo prav tako po obmrzlih aprilskih zorjah kakor po gladki tekmovalni njivi. Oranje je bilo v Gribljah družinska znanost — oče je plug predal sinu, sin živali svojemu sinu — in prav ta veriga je nesla znanje vse do svetovnega odra.\n\nRoka, ki zna rezati brazdo, pa znala več. Leta 1998 je Filak ob rojstvu sina izrekel zaobljubo in na zboru krajanov predlagal nakup glavnega zvona za cerkev sv. Vida, odvzetega v prvi svetovni vojni; z donacijami domačinov in izseljencev iz Avstralije ter Amerike so zbrali sredstva za 700-kilogramski zvon livarne Feralit in celovito obnovo fasade, strehe, stopnišča ter elektrifikacijo, vrhunec praznovanja pa je blagoslovil nadškof dr. Alojzij Šuštar. »Celotna vas je takrat dihala kot ena duša,« je o akciji povedal Filak, ki je ob jubileju 2026 kot predsednik gradbenega odbora vodil še obnovo cerkvene stavbe.\n\nLeta 2019 se je tekmovanje vrnilo domov: na Tomažinovi kmetiji v Gribljah je Klub oračev pripravil regijsko prvenstvo Bele krajine — devet oračev, osem s plugi krajiki. Zmaga je ostala v vasi: prvi je bil Anton Filak, drugi Gašper Filak, tretji Janez Ivanič; ob cesti se je tekmovalje gledalo vseh generacij, najmlajši pa so popoldne srečali še kopanje v Kolpi.\n\nMuzej objavlja, kar ima: Filakova udeležba na osmih svetovnih prvenstvih je zapisana po javnem viru; leta nastopov, uvrstitve in sestava reprezentance še čakajo na arhiv. Ko se najdejo, se bodo dodala z virom — do takrat zapis stoji na svoji najtanejši, a trdni plasti: gribeljska brazda je šla na svet. Vsak domačin, ki si zapomni Filakovo vprego, plug ali njivo, je vabljen kot priča: ta zapis je šele začetek zgodbe.",
+      "Griblje so kmetijstvu dale tudi poslanca: Anton Filak, osmkratni udeleženec svetovnih prvenstev v oranju. Njegova disciplina je najstarejša veščina človeka ob zemlji — vrtanje brazde —, dvignjena v merilni šport.\n\nOranje je vrhunec kmečkega znanja. Pravična brazda zahteva vse: branje prsti (jerina čez apnenec se obnaša drugače kot mokra ilovica v dolini), pravčasnost (prezgodaj — brazda se razsuje; prepozno — izgubi vlago), mirno žival in roko, ki zna plugu zaupati. V vasi se je kmet poznal po brazdi: kdo orje plitvo in poševno, kdo prav in do tal. Kdor je oral lepo, je sijal pred sosedovi očmi kot gospodar, ki zna voditi hišo.\n\nSvetovna prvenstva v oranju potekajo od leta 1953: državne ekipe tekmujejo v klasičnem in reverzibilnem oranju, sodniki pa točkujejo globino, ravnost brazde, pokritost žetvenih ostankov in čistost preloma. Oranje s konjsko vprego — korenik tega športa — je dokumentirano na fotografijah Franca Vesela iz začetka 20. stoletja; ena od njih je glavna slika tega zapisa. Tekmovanje je iz kmečke nuje naredilo disciplino: enaka roka, enak plug, le merilni trak namesto sosedovega pogleda.\n\nNajlepše pa je, da ta šport ni nikoli zapustil kmečke hiše: prvaki so ostali kmetje, ki orjejo prav tako po obmrzlih aprilskih zorjah kakor po gladki tekmovalni njivi. Oranje je bilo v Gribljah družinska znanost — oče je plug predal sinu, sin živali svojemu sinu — in prav ta veriga je nesla znanje vse do svetovnega odra.\n\nRoka, ki zna rezati brazdo, pa znala več. Leta 1998 je Filak ob rojstvu sina izrekel zaobljubo in na zboru krajanov predlagal nakup glavnega zvona za cerkev sv. Vida, odvzetega v prvi svetovni vojni; z donacijami domačinov in izseljencev iz Avstralije ter Amerike so zbrali sredstva za 700-kilogramski zvon livarne Feralit in celovito obnovo fasade, strehe, stopnišča ter elektrifikacijo, vrhunec praznovanja pa je blagoslovil nadškof dr. Alojzij Šuštar. »Celotna vas je takrat dihala kot ena duša,« je o akciji povedal Filak, ki je ob jubileju 2026 kot predsednik gradbenega odbora vodil še obnovo cerkvene stavbe.\n\nLeta 2019 se je tekmovanje vrnilo domov: na Tomažinovi kmetiji v Gribljah je Klub oračev pripravil regijsko prvenstvo Bele krajine — devet oračev, osem s plugi krajiki. Zmaga je ostala v vasi: prvi je bil Anton Filak, drugi Gašper Filak, tretji Janez Ivanič; ob cesti se je tekmovalje gledalo vseh generacij, najmlajši pa so popoldne srečali še kopanje v Kolpi.\n\nIn državna kronika je sčasoma postala gribeljska: že leta 2010 je bil Filak (»spet«, piše naslov — torej tudi prej!) državni prvak v oranju s plugom krajnikom, 2019 še enkrat; leta 2022 je zmagal na 65. državnem tekmovanju v Jabljah, 2024 pa postal prvak še z obračalnimi plugi. Leto 2025 je prineslo drugo mesto na Rakičanu — in ekipa Bele krajine, ki sta jo zastopala Anton Filak in Anton Simonič, je bila tretja. Istega septembra je na 70. svetovnem prvenstvu pri Pragi med 46 orači iz 26 držav zasedel štirinajsto mesto: svetova brazda se meri po centimetrih, gribeljska roka pa je med njimi.\n\nMuzej objavlja, kar ima: Filakova udeležba na svetovnih prvenstvih je zapisana po javnih virih, zadnjič leta 2025 na Češkem; preostala leta nastopov in uvrstitve še čakajo na arhiv. Ko se najdejo, se bodo dodala z virom — do takrat zapis stoji na svoji najtanejši, a trdni plasti: gribeljska brazda je šla na svet. Vsak domačin, ki si zapomni Filakovo vprego, plug ali njivo, je vabljen kot priča: ta zapis je šele začetek zgodbe.",
     storyEn:
-      "Griblje gave farming an ambassador too: Anton Filak, an eight-time participant in the world ploughing championships. His discipline is the oldest skill of the human hand at the soil — cutting the furrow — raised into a measured sport.\n\nPloughing is the summit of farming knowledge. A just furrow asks everything: reading the soil (jerina over limestone behaves differently from the wet clay of the valley), timing (too early — the furrow crumbles; too late — it loses its moisture), a calm animal and a hand that knows how to trust the plough. In the village a farmer was known by his furrow: who ploughs shallow and slanting, who straight and to the depth. Whoever ploughed well shone in the neighbours' eyes as a master fit to run a house.\n\nThe world ploughing championships have been held since 1953: national teams compete in conventional and reversible ploughing, and judges score depth, straightness of the furrow, coverage of stubble and cleanliness of the split. Ploughing with a horse team — the root of this sport — is documented in Fran Vesel's photographs from the early 20th century; one of them is this record's main image. The championship turned a farming necessity into a discipline: the same hand, the same plough, only a measuring tape instead of the neighbour's eye.\n\nMost beautifully of all, the sport never left the farmhouse: the champions remained farmers, ploughing the frozen April mornings of home exactly as they ploughed the smooth competitive field. In Griblje ploughing was a family science — a father handed the plough to his son, the son the team to his own — and it was precisely that chain that carried the skill all the way to the world stage.\n\nYet the hand that can cut a furrow could do more. In 1998 Filak, upon the birth of his son, made a vow and at the villagers' assembly proposed the purchase of the main bell for the church of St. Vitus, taken away in the First World War; with the donations of locals and of emigrants from Australia and America they raised enough for a 700-kilogram bell from the Feralit foundry and a complete renewal of the facade, roof, staircase and electrification, and the culmination of the celebration was blessed by Archbishop dr. Alojzij Šuštar. \"The whole village then breathed as one soul,\" Filak said of the action — the same man who, at the 2026 jubilee, as president of the construction committee, led the renovation of the church building as well.\n\nIn 2019 the competition came home: at the Tomažin farm in Griblje the Ploughmen's Club staged the regional championship of Bela krajina — nine ploughmen, eight of them with krajiki ploughs. The victory stayed in the village: first was Anton Filak, second Gašper Filak, third Janez Ivanič; the roadside held watchers of every generation, and the youngest met the afternoon with a swim in the Kolpa.\n\nThe museum publishes what it holds: Filak's participation in eight world championships is recorded from a public source; the years, placings and the make-up of the team still await the archive. When they are found they will be added with their source — until then the record stands on its thinnest but firmest layer: a Griblje furrow went out into the world. Every local who remembers Filak's team, plough or field is invited as a witness: this record is only the beginning of the story.",
+      "Griblje gave farming an ambassador too: Anton Filak, an eight-time participant in the world ploughing championships. His discipline is the oldest skill of the human hand at the soil — cutting the furrow — raised into a measured sport.\n\nPloughing is the summit of farming knowledge. A just furrow asks everything: reading the soil (jerina over limestone behaves differently from the wet clay of the valley), timing (too early — the furrow crumbles; too late — it loses its moisture), a calm animal and a hand that knows how to trust the plough. In the village a farmer was known by his furrow: who ploughs shallow and slanting, who straight and to the depth. Whoever ploughed well shone in the neighbours' eyes as a master fit to run a house.\n\nThe world ploughing championships have been held since 1953: national teams compete in conventional and reversible ploughing, and judges score depth, straightness of the furrow, coverage of stubble and cleanliness of the split. Ploughing with a horse team — the root of this sport — is documented in Fran Vesel's photographs from the early 20th century; one of them is this record's main image. The championship turned a farming necessity into a discipline: the same hand, the same plough, only a measuring tape instead of the neighbour's eye.\n\nMost beautifully of all, the sport never left the farmhouse: the champions remained farmers, ploughing the frozen April mornings of home exactly as they ploughed the smooth competitive field. In Griblje ploughing was a family science — a father handed the plough to his son, the son the team to his own — and it was precisely that chain that carried the skill all the way to the world stage.\n\nYet the hand that can cut a furrow could do more. In 1998 Filak, upon the birth of his son, made a vow and at the villagers' assembly proposed the purchase of the main bell for the church of St. Vitus, taken away in the First World War; with the donations of locals and of emigrants from Australia and America they raised enough for a 700-kilogram bell from the Feralit foundry and a complete renewal of the facade, roof, staircase and electrification, and the culmination of the celebration was blessed by Archbishop dr. Alojzij Šuštar. \"The whole village then breathed as one soul,\" Filak said of the action — the same man who, at the 2026 jubilee, as president of the construction committee, led the renovation of the church building as well.\n\nIn 2019 the competition came home: at the Tomažin farm in Griblje the Ploughmen's Club staged the regional championship of Bela krajina — nine ploughmen, eight of them with krajiki ploughs. The victory stayed in the village: first was Anton Filak, second Gašper Filak, third Janez Ivanič; the roadside held watchers of every generation, and the youngest met the afternoon with a swim in the Kolpa.\n\nThe national chronicle has become Griblje's as well: already in 2010 Filak was (\"again\", says the headline — so earlier, too!) national champion with the krajiki plough, and again in 2019; in 2022 he won the 65th national championship at Jablje, and in 2024 he took the title with reversible ploughs as well. 2025 brought second place at Rakičan — and the Bela krajina team, represented by Anton Filak and Anton Simonič, placed third. That same September, at the 70th world championship near Prague, among 46 ploughmen from 26 countries, he finished fourteenth: the world's furrow is measured in centimetres, and the Griblje hand is among them.\n\nThe museum publishes what it holds: Filak's participation in the world championships is recorded from public sources — most recently in 2025 in Czechia — while the remaining years and placings still await the archive. When they are found they will be added with their source — until then the record stands on its thinnest but firmest layer: a Griblje furrow went out into the world. Every local who remembers Filak's team, plough or field is invited as a witness: this record is only the beginning of the story.",
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/oranje.jpg",
     imageCredit: "Foto: Fran Vesel · Wikimedia Commons · javna last",
@@ -1550,8 +1550,8 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "spletni-vir",
         license: "CC BY-SA 4.0",
         url: "https://sl.wikipedia.org/wiki/Griblje",
-        noteSi: "Edini za zdaj javni vir o Filakovi udeležbi; leta in uvrstitve še čakajo na arhiv.",
-        noteEn: "The sole public source of Filak's participation so far; the years and placings still await the archive.",
+        noteSi: "Prvi javni vir o Filakovi udeležbi na svetovnih prvenstvih.",
+        noteEn: "The first public source of Filak's participation in the world championships.",
       },
       {
         key: "world-ploughing",
@@ -1560,6 +1560,65 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "spletni-vir",
         license: "javna informacija / public information",
         url: "https://worldploughing.org/",
+      },
+      {
+        key: "svet24-filak-2010",
+        nameSi: "Svet24 (15. 9. 2010): Filak spet državni prvak v oranju",
+        nameEn: "Svet24 (15 Sep 2010): Filak again national ploughing champion",
+        sourceType: "spletni-vir",
+        license: "novičarski članek",
+        url: "https://svet24.si/sport/filak-spet-drzavni-prvak-v-oranju-pate-prvi-z-obracalnimi-plugi-32794-1693225",
+        noteSi: "Naslov »spet« priča, da je bil prvak tudi prej; 1. mesto s plugom krajnikom.",
+        noteEn: "The headline's \"again\" attests an earlier title as well; 1st place with the krajiki plough.",
+      },
+      {
+        key: "svet24-filak-2019",
+        nameSi: "Svet24 (18. 9. 2019): Državna prvaka v oranju postala Pate in Filak",
+        nameEn: "Svet24 (18 Sep 2019): Pate and Filak become national ploughing champions",
+        sourceType: "spletni-vir",
+        license: "novičarski članek",
+        url: "https://svet24.si/sport/drzavna-prvaka-v-oranju-postala-igor-pate-in-anton-filak-730417",
+        noteSi: "Državni prvak v kategoriji plugi krajiki.",
+        noteEn: "National champion in the krajiki ploughs category.",
+      },
+      {
+        key: "kmeckiglas-filak-2022",
+        nameSi: "Kmečki glas: Stara nova zmagovalca državnega tekmovanja (65. tekmovanje 2022)",
+        nameEn: "Kmečki glas: The old new winners of the national championship (65th championship 2022)",
+        sourceType: "spletni-vir",
+        license: "novičarski članek",
+        noteSi: "1. Anton Filak – Bela krajina, 2. Sinic, 3. Tibaut; poteka tudi navedba občine Črnomelj (5. 9. 2022).",
+        noteEn: "1st Anton Filak – Bela krajina, 2nd Sinic, 3rd Tibaut; the Municipality of Črnomelj report (5 Sep 2022) confirms the win.",
+      },
+      {
+        key: "svet24-filak-2024",
+        nameSi: "Svet24 (9. 9. 2024): Anton Filak državni prvak v oranju",
+        nameEn: "Svet24 (9 Sep 2024): Anton Filak national ploughing champion",
+        sourceType: "spletni-vir",
+        license: "novičarski članek",
+        url: "https://svet24.si/sport/anton-filak-drzavni-prvak-v-oranju-292991-1718823",
+        noteSi: "Prvak v kategoriji obračalni plugi; rezultate potrjuje tudi ZOTKS.",
+        noteEn: "Champion in the reversible ploughs category; the results are confirmed by ZOTKS as well.",
+      },
+      {
+        key: "zotks-filak-2024",
+        nameSi: "ZOTKS (8. 9. 2024): rezultati 67. državnega tekmovanja oračev Slovenije",
+        nameEn: "ZOTKS (8 Sep 2024): results of the 67th Slovenian national ploughing championship",
+        sourceType: "spletni-vir",
+        license: "javni rezultati",
+        url: "https://zotks.si/",
+        noteSi: "1. Anton Filak – Bela Krajina, 2. Vogrinčič, 3. Geder.",
+        noteEn: "1st Anton Filak – Bela Krajina, 2nd Vogrinčič, 3rd Geder.",
+      },
+      {
+        key: "odeon-filak-2025",
+        nameSi: "Radio Odeon (14. 9. 2025): Filak in Simonič uspešna na državnem tekmovanju v oranju",
+        nameEn: "Radio Odeon (14 Sep 2025): Filak and Simonič successful at the national ploughing championship",
+        sourceType: "spletni-vir",
+        license: "novičarski članek",
+        url: "https://radio-odeon.com/novice/filak-in-simonic-uspesna-na-drzavnem-tekmovanju-v-oranju/",
+        noteSi: "68. tekmovanje (Rakičan): Filak 2. z obračalnimi plugi; ekipa BK (Filak, Simonič) 3.; 70. svetovno prvenstvo pri Pragi: Filak 14. med 46 orači iz 26 držav.",
+        noteEn: "68th championship (Rakičan): Filak 2nd with reversible ploughs; the BK team (Filak, Simonič) 3rd; 70th world championship near Prague: Filak 14th among 46 ploughmen from 26 countries.",
       },
       {
         key: "commons-oranje",
@@ -2254,9 +2313,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Griblach 1468, Briglach 1490, Grüble — and 329 inhabitants today: the record that counts the village from its first mention to the latest census.",
     storySi:
-      "Najstarejši pisni obris vasi je črka iz leta 1468: listina, v kateri se vas zapiše kot Griblach. Sledita Briglach (1490) in Griblah (1593); v urbarjih in na najstarejšem zemljevidu je oblika Grüble. Petsto petdeset let pozneje isto ime stoji na cestnih tabelah in v podatkovnih bazah — ime, starejše od skoraj vsega, kar danes v vasi stoji.\n\nKaj ime pomeni, je med jezikoslovci še danes odprto vprašanje. Marko Snoj v Etimološkem slovarju slovenskih zemljepisnih imen navaja štiri poti: narečni grib (goba, jurček), griba (gruda, kep zemlje), besedo sorodno hrvaškemu griblja (brazda) in griva (travnata strmina). Domača razlaga — gribljati, brazdati, orati — je ena od teh poti, ne edina: tudi etimologija je iskrenost, ne izročilo.\n\nIn potem so tu številke, ki jih znajo samo uradi: Griblje merijo 3,45 kvadratnega kilometra na 153,4 metra nad morjem; poštna številka je 8332 Gradac. Na popisu leta 2020 je vas štela 334 prebivalcev — 172 moških in 162 žensk; leta 2026 jih letna statistika beleži 329. Številke se premikajo kot reka: počasi, a stalno. Njihovi odtisi so večji: val izseljenstva, ki ima v tej zbirki svoj zapis, je nekoč odnesel več ljudi, kot jih danes živi v vasi.\n\nV zaselkih — Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje — se številke razraščajo v hiše: rodovinske hiše ob cesti, ki jih obiskovalec šteje s prsti, muzej pa po imenih. Slika tega zapisa prihaja z Mednarodne vesoljske postaje: Zemlja nad Belo krajino, središče posnetka nad vaškim okoljem. Od štiristo kilometrov je vas pika — in številkam doda še eno, ki je ni v nobenem popisu: razsežnost, ki jo vidi samo astronaut.\n\nStatistika je za muzej čudovito orodje: ne pripoveduje, ampak preračunava zgodbo. Koliko let ima vas, koliko ljudi jo danes nosi, koliko jih je nosila nekoč — vse to se da zložiti v eno samo jutro ob ribniku. Ta zapis bo muzej osveževal z vsakim novim popisom: zgodovina, ki znova šteje sebe.",
+      "Najstarejši pisni obris vasi je črka iz leta 1468: listina, v kateri se vas zapiše kot Griblach. Sledita Briglach (1490) in Griblah (1593); v urbarjih in na najstarejšem zemljevidu je oblika Grüble. Petsto petdeset let pozneje isto ime stoji na cestnih tabelah in v podatkovnih bazah — ime, starejše od skoraj vsega, kar danes v vasi stoji.\n\nKaj ime pomeni, je med jezikoslovci še danes odprto vprašanje. Marko Snoj v Etimološkem slovarju slovenskih zemljepisnih imen navaja štiri poti: narečni grib (goba, jurček), griba (gruda, kep zemlje), besedo sorodno hrvaškemu griblja (brazda) in griva (travnata strmina). Domača razlaga — gribljati, brazdati, orati — je ena od teh poti, ne edina: tudi etimologija je iskrenost, ne izročilo.\n\nIn potem so tu številke, ki jih znajo samo uradi: Griblje merijo 3,45 kvadratnega kilometra na 153,4 metra nad morjem; poštna številka je 8332 Gradac. Uradne zgodovine pa so tudi oblike: leta 1854 je okraj Črnomelj med svoje občine štel tudi občino Griblje — vas, ki je bila stoletje in pol svoj lasten administrativni svet, preden je postala krajevna skupnost. Na popisu leta 2020 je vas štela 334 prebivalcev — 172 moških in 162 žensk; leta 2026 jih letna statistika beleži 329. Številke se premikajo kot reka: počasi, a stalno. Njihovi odtisi so večji: val izseljenstva, ki ima v tej zbirki svoj zapis, je nekoč odnesel več ljudi, kot jih danes živi v vasi.\n\nV zaselkih — Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje — se številke razraščajo v hiše: rodovinske hiše ob cesti, ki jih obiskovalec šteje s prsti, muzej pa po imenih. Slika tega zapisa prihaja z Mednarodne vesoljske postaje: Zemlja nad Belo krajino, središče posnetka nad vaškim okoljem. Od štiristo kilometrov je vas pika — in številkam doda še eno, ki je ni v nobenem popisu: razsežnost, ki jo vidi samo astronaut.\n\nStatistika je za muzej čudovito orodje: ne pripoveduje, ampak preračunava zgodbo. Koliko let ima vas, koliko ljudi jo danes nosi, koliko jih je nosila nekoč — vse to se da zložiti v eno samo jutro ob ribniku. Ta zapis bo muzej osveževal z vsakim novim popisom: zgodovina, ki znova šteje sebe.",
     storyEn:
-      "The oldest written outline of the village is a letter from 1468: a document in which the village is written Griblach. Briglach (1490) and Griblah (1593) follow; in the urbars and on the oldest map the form is Grüble. Five hundred and fifty years later the same name stands on the road signs and in the databases — a name older than almost everything that stands in the village today.\n\nWhat the name means remains, among linguists, an open question to this day. In his Etymological Dictionary of Slovene Place Names Marko Snoj lists four paths: the dialect grib (a mushroom, a Boletus), griba (a clod of soil), a word related to Croatian griblja (a furrow), and griva (a grassy slope). The local explanation — gribljati, to furrow, to plough — is one of those paths, not the only one: etymology too is honesty, not folklore.\n\nAnd then there are the numbers only offices know: Griblje measure 3.45 square kilometres at 153.4 metres above the sea; the postal code is 8332 Gradac. At the 2020 census the village counted 334 inhabitants — 172 men and 162 women; in 2026 the annual statistics record 329. Numbers move like the river: slowly, but constantly. Their impressions are larger: the wave of emigration, which has its own record in this collection, once carried away more people than live in the village today.\n\nIn the hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje — the numbers branch into houses: family houses along the road that a visitor counts on fingers, and the museum by names. The image of this record comes from the International Space Station: Earth above Bela krajina, the frame centred on the village's own countryside. From four hundred kilometres the village is a point — and the numbers gain one more that appears in no census: a dimension only an astronaut can see.\n\nStatistics are a wonderful tool for a museum: it does not narrate, it recalculates the story. How old the village is, how many people carry it today, how many carried it once — all of it can be folded into a single morning by the pond. This record the museum will refresh with every new census: a history that counts itself anew.",
+      "The oldest written outline of the village is a letter from 1468: a document in which the village is written Griblach. Briglach (1490) and Griblah (1593) follow; in the urbars and on the oldest map the form is Grüble. Five hundred and fifty years later the same name stands on the road signs and in the databases — a name older than almost everything that stands in the village today.\n\nWhat the name means remains, among linguists, an open question to this day. In his Etymological Dictionary of Slovene Place Names Marko Snoj lists four paths: the dialect grib (a mushroom, a Boletus), griba (a clod of soil), a word related to Croatian griblja (a furrow), and griva (a grassy slope). The local explanation — gribljati, to furrow, to plough — is one of those paths, not the only one: etymology too is honesty, not folklore.\n\nAnd then there are the numbers only offices know: Griblje measure 3.45 square kilometres at 153.4 metres above the sea; the postal code is 8332 Gradac. Official histories have shapes too: in 1854 the district of Črnomelj counted the municipality of Griblje among its municipalities — a village that was its own small administrative world for a century and a half before becoming a local community. At the 2020 census the village counted 334 inhabitants — 172 men and 162 women; in 2026 the annual statistics record 329. Numbers move like the river: slowly, but constantly. Their impressions are larger: the wave of emigration, which has its own record in this collection, once carried away more people than live in the village today.\n\nIn the hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje — the numbers branch into houses: family houses along the road that a visitor counts on fingers, and the museum by names. The image of this record comes from the International Space Station: Earth above Bela krajina, the frame centred on the village's own countryside. From four hundred kilometres the village is a point — and the numbers gain one more that appears in no census: a dimension only an astronaut can see.\n\nStatistics are a wonderful tool for a museum: it does not narrate, it recalculates the story. How old the village is, how many people carry it today, how many carried it once — all of it can be folded into a single morning by the pond. This record the museum will refresh with every new census: a history that counts itself anew.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/griblje-iz-orbite.jpg",
     imageCredit:
@@ -2267,6 +2326,16 @@ export const seedExhibits: SeedExhibit[] = [
     coordsApprox: true,
     featured: false,
     sources: [
+      {
+        key: "crnomelj-zgodovina-1854",
+        nameSi: "Občina Črnomelj — Zgodovina: okraj Črnomelj 1854 (med občinami tudi Griblje)",
+        nameEn: "Municipality of Črnomelj — History: the Črnomelj district of 1854 (Griblje among the municipalities)",
+        sourceType: "spletni-vir",
+        license: "občinska spletna stran",
+        url: "https://www.crnomelj.si/",
+        noteSi: "Upravna zgodovina 19. stoletja: Griblje kot lastna občina znotraj okraja.",
+        noteEn: "The administrative history of the 19th century: Griblje as a municipality of its own within the district.",
+      },
       {
         key: "wikidata-griblje",
         nameSi: "Wikidata: Griblje (Q2531566) — popis 2020: 334 prebivalcev (172 M, 162 Ž), površina, nadmorska višina",
@@ -3300,10 +3369,10 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "On 26 June 2022 a museum classroom opened in the more than 130-year-old Griblje school; the Slovene School Museum attended the opening. This digital museum has its physical sister in the village: two classrooms, one task.",
     storySi:
-      "Šolsko poslopje v Gribljah so blagoslovili novembra 1889: ena učilnica in stanovanje učitelja pripravnika. Vojna ga je zasedla — pouk je bežal v gasilski dom —, povojne množice razširile — učilo se je tudi v Brinčevi hiši —, šestdeseta prinesla podružnični status: od 1963/64 podružnica OŠ Mirana Jarca, od 1989 OŠ Loka Črnomelj. Leta 2002 so v šoli šteli kdaj le štiri do šest učencev; vas in občina sta jo kljub vsemu obdržali. Stavbi s takšno biografijo je bilo treba narediti muzej.\n\nTo so naredili 26. junija 2022: v šoli so odprli muzejsko učilnico. Otvoritve se je udeležila predstavnica Slovenskega šolskega muzeja, sledila pa je literarna prireditev z zapisi šolskega leta 1949/50: pionirji so takrat zbrali četrt kilograma jabolčnih pečk in 215 kilogramov zdravilnih zelišč, igrali igro Gumb za AFŽ in peli Prišla je miška iz mišnice. Šolski arhiv, ki zna dišati po jabolkih.\n\n»Podružnice niso drage, so pa dragocene,« je ob otvoritvi povedala dolgoletna vodja podružnice Branka Weiss — stavek, ki bi moral stati nad vsako slovensko podružnico. Danes šolo obiskuje 17 učencev v petih kombiniranih oddelkih z razširjenim programom; vodja podružnice Marjetka Žunič v Gribljah poučuje od leta 1992 — in to je edina slovenska vas, ki ima svojo podružnico.\n\nTa digitalni muzej in tista fizična učilnica sta sestri: ena hrani spomin v bitih, druga v zraku. Ko bo šola leta 2029 praznovala 140 let, bosta praznovali obe — in ta zapis se bo dopolnil s fotografijami. Vsak učenec, ki danes sedi med klopmi, piše prihodnjo različico tega zapisa.",
+      "Šolsko poslopje v Gribljah so blagoslovili novembra 1889: ena učilnica in stanovanje učitelja pripravnika. Vojna ga je zasedla — pouk je bežal v gasilski dom —, povojne množice razširile — učilo se je tudi v Brinčevi hiši —, šestdeseta prinesla podružnični status: od 1963/64 podružnica OŠ Mirana Jarca, od 1989 OŠ Loka Črnomelj. Leta 2002 so v šoli šteli kdaj le štiri do šest učencev; vas in občina sta jo kljub vsemu obdržali. Stavbi s takšno biografijo je bilo treba narediti muzej.\n\nTo so naredili 26. junija 2022: v šoli so odprli muzejsko učilnico. Otvoritve se je udeležila predstavnica Slovenskega šolskega muzeja, sledila pa je literarna prireditev z zapisi šolskega leta 1949/50: pionirji so takrat zbrali četrt kilograma jabolčnih pečk in 215 kilogramov zdravilnih zelišč, igrali igro Gumb za AFŽ in peli Prišla je miška iz mišnice. Šolski arhiv, ki zna dišati po jabolkih.\n\n»Podružnice niso drage, so pa dragocene,« je ob otvoritvi povedala dolgoletna vodja podružnice Branka Weiss — stavek, ki bi moral stati nad vsako slovensko podružnico. Danes šolo obiskuje 17 učencev v petih kombiniranih oddelkih z razširjenim programom; vodja podružnice Marjetka Žunič v Gribljah poučuje od leta 1992 — in to je edina slovenska vas, ki ima svojo podružnico.\n\nTa digitalni muzej in tista fizična učilnica sta sestri: ena hrani spomin v bitih, druga v zraku. Septembra 2026 so med prvošolčne klope stopili štirje novi učenci — starejši so jih sprejeli s pesmijo, besedo in torto —, kar je ta zapis zapisal kot dokaz, da zgodba ni muzejska vitrina, ampak živ spomin. Ko bo šola leta 2029 praznovala 140 let, bosta praznovali obe — in ta zapis se bo dopolnil s fotografijami. Vsak učenec, ki danes sedi med klopmi, piše prihodnjo različico tega zapisa.",
     storyEn:
       "The school building in Griblje was blessed in November 1889: one classroom and a trainee teacher's flat. The war occupied it — lessons fled to the fire station —; the postwar crowds widened it — teaching went on in the Brinc house too —; the sixties brought it branch status: from 1963/64 a branch of the OŠ Miran Jarca school, from 1989 of OŠ Loka Črnomelj. In 2002 the school at times counted only four to six pupils; the village and the municipality kept it all the same. A building with such a biography had to be made a museum.\n\nThat was done on 26 June 2022: a museum classroom opened in the school. A representative of the Slovene School Museum attended the opening, followed by a literary event with records of the school year 1949/50: the pioneers then collected a quarter of a kilogram of apple seeds and 215 kilograms of medicinal herbs, played the play Gumb za AFŽ and sang Prišla je miška iz mišnice. A school archive that can smell of apples.\n\n" +
-      "»Branch schools are not expensive; they are precious,« the longtime head of the branch school Branka Weiss said at the opening — a sentence that should stand above every Slovene branch school. Today 17 pupils attend the school in five combined departments with an extended programme; the head Marjetka Žunič has taught in Griblje since 1992 — and this is the only Slovene village that has its own branch school.\n\nThis digital museum and that physical classroom are sisters: one keeps memory in bits, the other in the air. When the school celebrates 140 years in 2029, both will celebrate — and this record will grow with photographs. Every pupil sitting at the desks today is writing a future version of it.",
+      "»Branch schools are not expensive; they are precious,« the longtime head of the branch school Branka Weiss said at the opening — a sentence that should stand above every Slovene branch school. Today 17 pupils attend the school in five combined departments with an extended programme; the head Marjetka Žunič has taught in Griblje since 1992 — and this is the only Slovene village that has its own branch school.\n\nThis digital museum and that physical classroom are sisters: one keeps memory in bits, the other in the air. In September 2026 four new first-graders stepped to the first-form desks — the older pupils welcomed them with a song, a word and a cake —, which this record notes as proof that the story is not a museum showcase but a living memory. When the school celebrates 140 years in 2029, both will celebrate — and this record will grow with photographs. Every pupil sitting at the desks today is writing a future version of it.",
     evidenceStatus: "DOCUMENTED",
     yearFrom: 2022,
     addedAt: "2026-09-16",
@@ -3320,6 +3389,16 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Slovenian_School_Museum_-_Ljubljana,_Slovenia_(7451262652).jpg"),
         noteSi: "Glavna slika zapisa: Slovenski šolski muzej v Ljubljani — ustanova, katere predstavnica je bila na otvoritvi gribeljske muzejske učilnice; fotografija učilnice v Gribljah še čaka.",
         noteEn: "The record's main image: the Slovenian School Museum in Ljubljana — the institution whose representative attended the opening of the Griblje museum classroom; a photograph of the classroom itself still awaits.",
+      },
+      {
+        key: "os-loka-prvi-dan-2026",
+        nameSi: "OŠ Loka Črnomelj (3. 9. 2026): Prvi šolski dan na Podružnični šoli Griblje",
+        nameEn: "OŠ Loka Črnomelj (3 Sep 2026): The first school day at the Griblje Branch School",
+        sourceType: "spletni-vir",
+        license: "šolska novica",
+        url: "https://www.os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje/",
+        noteSi: "Štirje prvošolci, dobrodošlica starejših učencev s pesmijo in torta.",
+        noteEn: "Four first-graders, the older pupils' welcome with a song, and a cake.",
       },
       {
         key: "s24-muzejska-ucilnica",
@@ -4465,9 +4544,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The society that holds the village calendar: the Pasuljada, the Cowboy Party, the vintage-bicycle rally, the reunions of Griblje people worldwide — and this digital museum.",
     storySi:
-      "Vsaka vas ima svoj koledar, a ne vsaka ima tistega, ki ga drži. V Gribljah to vlogo nosi Turistično društvo Griblje: društvo, ki ni postavilo informativne table, ampak prireditve, na katerih se vas sestane s sabo.\n\nPoletje drži Pasuljada — tekmovanje v kuhanju pasulja, ki ga TD prireja z Društvom kmečkih žena in gribeljskim kopališčem: štirinajst ekip, komisija, zmagovalke in zmagovalci, vonj, ki se razleže po obkolpski ravnini. Junija Kavbojski žur — vaški Divji zahod s plesalkami Country Roses, semiškimi Vrtičkarji in skupino Wild West iz Ljubljane. Julija rally starodobnih koles s Sekcijo Torpedo: kolesarji iz slovenskih in hrvaških društev se peljejo po Gribljah, obiščejo cerkev sv. Vida in staro šolo — z učno uro iz stare čitanke, kjer »Bistre buče« dobijo drugo življenje.\n\nTD je tudi sooborganizator trenutkov, ko se vas spomni same sebe: srečanja vseh Gribeljcev, ki so svoj drugi dom našli izven rojstne vasi (2019, ob 130-letnici šole), in praznika krajevne skupnosti po desetletjih (2024). In ko je zasvetila zamisel o digitalnem muzeju vasi, je bilo naravno, da ga nosi prav TD: muzej, ki bi ga lahko imela vsaka vas, a ima le tista, ki ima koga, koledar in voljo.\n\nTa zapis je hkrati poštena samoopomba muzeja: hišnik se predstavi na vratih. Muzej vasi Griblje je projekt Turističnega društva Griblje — nastal iz istega nagona, iz katerega rastejo Pasuljada in rally: iz prepričanja, da je vas vredna zapisa. Muzej išče ustanovni zapis društva, imena pobudnikov in fotografije prvih let — vsak koledar ima svoj prvi list.",
+      "Vsaka vas ima svoj koledar, a ne vsaka ima tistega, ki ga drži. V Gribljah to vlogo nosi Turistično društvo Griblje: društvo, ki ni postavilo informativne table, ampak prireditve, na katerih se vas sestane s sabo.\n\nPoletje drži Pasuljada — tekmovanje v kuhanju pasulja, ki ga TD prireja z Društvom kmečkih žena in gribeljskim kopališčem: štirinajst ekip, komisija, zmagovalke in zmagovalci, vonj, ki se razleže po obkolpski ravnini. Junija Kavbojski žur — vaški Divji zahod s plesalkami Country Roses, semiškimi Vrtičkarji in skupino Wild West iz Ljubljane. Julija rally starodobnih koles s Sekcijo Torpedo: kolesarji iz slovenskih in hrvaških društev se peljejo po Gribljah, obiščejo cerkev sv. Vida in staro šolo — z učno uro iz stare čitanke, kjer »Bistre buče« dobijo drugo življenje. Nad vsemi temi koledarji pa leži še najkrajši zapis društvene zgodovine: pojmerno je bil julija 2008 nad obkolpsko ravnino plaval tudi balonarski piknik »Griblje Kolpa« — ohranil se je le v seznamu slovenskih balonarskih srečanj, a je dokaz, da je društvena domišljija znala dvigniti vas tudi dobesedno v zrak.\n\nTD je tudi sooborganizator trenutkov, ko se vas spomni same sebe: srečanja vseh Gribeljcev, ki so svoj drugi dom našli izven rojstne vasi (2019, ob 130-letnici šole), in praznika krajevne skupnosti po desetletjih (2024). In ko je zasvetila zamisel o digitalnem muzeju vasi, je bilo naravno, da ga nosi prav TD: muzej, ki bi ga lahko imela vsaka vas, a ima le tista, ki ima koga, koledar in voljo.\n\nTa zapis je hkrati poštena samoopomba muzeja: hišnik se predstavi na vratih. Muzej vasi Griblje je projekt Turističnega društva Griblje — nastal iz istega nagona, iz katerega rastejo Pasuljada in rally: iz prepričanja, da je vas vredna zapisa. Muzej išče ustanovni zapis društva, imena pobudnikov in fotografije prvih let — vsak koledar ima svoj prvi list.",
     storyEn:
-      "Every village has a calendar, but not every village has the one who holds it. In Griblje that role belongs to the Griblje Tourist Society: an association that put up no signpost but raised the events at which the village meets itself.\n\nSummer is held by the Pasuljada — the bean-stew contest the TD runs with the Farm Women's Society and the Griblje bathing place: fourteen teams, a jury, winners, and a smell that spreads over the Kolpa plain. In June the Cowboy Party — the village's Wild West with the Country Roses dancers, the Vrtičkarji of Semič and the Wild West band from Ljubljana. In July the vintage-bicycle rally with the Torpedo section: cyclists from Slovene and Croatian societies ride through Griblje, visit the church of St. Vitus and the old school — with a lesson from an old reader, where 'Bistre buče' (Clever Squashes) get a second life.\n\nThe TD is co-organiser too of the moments when the village remembers itself: the reunion of all Griblje people who found a second home away from the birth village (2019, at the school's 130th anniversary), and the local community's festival after decades (2024). And when the idea of a digital village museum lit up, it was natural that the TD should carry it: a museum any village could have, but only the one with people, a calendar and the will actually does.\n\nThis record is also the museum's honest self-note: the caretaker introduces himself at the door. The Griblje Village Museum is a project of the Griblje Tourist Society — born of the same instinct from which the Pasuljada and the rally grow: the conviction that the village is worth writing down. The museum seeks the society's founding record, the names of its initiators and photographs of its first years — every calendar has its first leaf.",
+      "Every village has a calendar, but not every village has the one who holds it. In Griblje that role belongs to the Griblje Tourist Society: an association that put up no signpost but raised the events at which the village meets itself.\n\nSummer is held by the Pasuljada — the bean-stew contest the TD runs with the Farm Women's Society and the Griblje bathing place: fourteen teams, a jury, winners, and a smell that spreads over the Kolpa plain. In June the Cowboy Party — the village's Wild West with the Country Roses dancers, the Vrtičkarji of Semič and the Wild West band from Ljubljana. In July the vintage-bicycle rally with the Torpedo section: cyclists from Slovene and Croatian societies ride through Griblje, visit the church of St. Vitus and the old school — with a lesson from an old reader, where 'Bistre buče' (Clever Squashes) get a second life. Above all these calendars lies the shortest entry in the society's history: one summer, in July 2008, a balloonists' picnic called \"Griblje Kolpa\" floated over the Kolpa plain as well — it survives only in the list of Slovene balloon meetings, yet it proves that the society's imagination once lifted the village into the air, literally.\n\nThe TD is co-organiser too of the moments when the village remembers itself: the reunion of all Griblje people who found a second home away from the birth village (2019, at the school's 130th anniversary), and the local community's festival after decades (2024). And when the idea of a digital village museum lit up, it was natural that the TD should carry it: a museum any village could have, but only the one with people, a calendar and the will actually does.\n\nThis record is also the museum's honest self-note: the caretaker introduces himself at the door. The Griblje Village Museum is a project of the Griblje Tourist Society — born of the same instinct from which the Pasuljada and the rally grow: the conviction that the village is worth writing down. The museum seeks the society's founding record, the names of its initiators and photographs of its first years — every calendar has its first leaf.",
     evidenceStatus: "CORROBORATED",
     image: "/images/authentic/td-kopališka-hisica.jpg",
     imageCredit:
@@ -4475,6 +4554,16 @@ export const seedExhibits: SeedExhibit[] = [
     yearFrom: 2000,
     featured: false,
     sources: [
+      {
+        key: "wiki-balonarski-piknik-2008",
+        nameSi: "Wikipedija: Seznam balonarskih festivalov v Sloveniji (2008: Griblje Kolpa)",
+        nameEn: "Wikipedia: List of balloon festivals in Slovenia (2008: Griblje Kolpa)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Seznam_balonarskih_festivalov_v_Sloveniji",
+        noteSi: "Enovrstična omemba: balonarski piknik »Griblje Kolpa« med srečanji leta 2008.",
+        noteEn: "A one-line mention: the \"Griblje Kolpa\" balloon picnic among the meetings of 2008.",
+      },
       {
         key: "odeon-pasuljada-td",
         nameSi: "Radio Odeon — V Gribljah že 16. Pasuljada (6. 8. 2019; organizacija TD Griblje + Društvo kmečkih žena + kopališče)",
@@ -4678,9 +4767,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "After decades Griblje had its festival again: the memory of the attack on the Italian border police of September 1941, an address by the 89-year-old dr. Brinc, and the opening of the memorial room.",
     storySi:
-      "Petnajstega septembra 2024 se je v gasilskem domu zbrala vas — na praznik krajevne skupnosti Griblje, prvem po desetletjih. Prisotni so bili predstavniki občine Črnomelj in Gasilske zveze Črnomelj, predsednik KS Darjo Piškurič pa je v nagovoru spomnil na dogodke, ki so tem datumu dali težo: na napad na italijanske mejne policiste septembra 1941, ko se je vas znašla v vrtincu okupacije in odporništva.\n\nNajbolj ganljiv trenutek večera je bil nagovor dr. Franca Brinca — 89-letnega nekdanjega šolarja gribeljske šole, pravnika, penologa in dobrotnika vasi, ki je občinstvu pripovedoval življenjske spomine. Kdor je poslušal moža, ki se je kot otrok igral po dvoriščih te vasi in kot znanstvenik razmišljal o kaznovanju po svetu, je slišal stoletje v enem glasu.\n\nOb prazniku je bila tudi slovesno odprta spominska soba dr. Franca Brinca v gasilskem domu — prostor, ki hrani zgodbo moža, ki je vasi namenil okoli 200.000 evrov darov: operativno sobo in streho gasilcev, digitalno opremo in igrala šoli, parkirišče ob cerkvi sv. Vida ob 500-letnici. Praznik, ki se je rodil iz spomina na vojno, je tako zaživel tudi kot praznik dobrote.\n\nZa muzej je ta zapis pomemben dvojno: kot dokaz, da si vas svojega praznika zna znova izmisliti, in kot zapis trenutka, ko se je rodila tradicija, ki se bo — upajmo — štela naprej. Muzej išče fotografije s praznika 2024 in popis vsebine spominske sobe: vsak predmet v njej je zapis, ki čaka.",
+      "Petnajstega septembra 2024 se je v gasilskem domu zbrala vas — na praznik krajevne skupnosti Griblje, prvem po desetletjih. Prisotni so bili predstavniki občine Črnomelj in Gasilske zveze Črnomelj, predsednik KS Darjo Piškurič pa je v nagovoru spomnil na dogodke, ki so tem datumu dali težo: na napad na italijanske mejne policiste septembra 1941, ko se je vas znašla v vrtincu okupacije in odporništva.\n\nNajbolj ganljiv trenutek večera je bil nagovor dr. Franca Brinca — 89-letnega nekdanjega šolarja gribeljske šole, pravnika, penologa in dobrotnika vasi, ki je občinstvu pripovedoval življenjske spomine. Kdor je poslušal moža, ki se je kot otrok igral po dvoriščih te vasi in kot znanstvenik razmišljal o kaznovanju po svetu, je slišal stoletje v enem glasu.\n\nOb prazniku je bila tudi slovesno odprta spominska soba dr. Franca Brinca v gasilskem domu — prostor, ki hrani zgodbo moža, ki je vasi namenil okoli 200.000 evrov darov: operativno sobo in streho gasilcev, digitalno opremo in igrala šoli, parkirišče ob cerkvi sv. Vida ob 500-letnici. Praznik, ki se je rodil iz spomina na vojno, je tako zaživel tudi kot praznik dobrote.\n\nZa muzej je ta zapis pomemben dvojno: kot dokaz, da si vas svojega praznika zna znova izmisliti, in kot zapis trenutka, ko se je rodila tradicija, ki se bo — upajmo — štela naprej. Štela se je: septembra 2025 je praznik KS doživel drugo izdajo, ob kateri so krajevne skupnostnice in skupnostniki predstavili tudi bilanco — v obdobju 2024/2025 so v sanacije cest na šestih lokacijah vlagali 39.000 evrov. Muzej išče fotografije s praznikov 2024 in 2025 ter popis vsebine spominske sobe: vsak predmet v njej je zapis, ki čaka.",
     storyEn:
-      "On the fifteenth of September 2024 the village gathered in the fire station hall — for the festival of the Griblje local community, the first in decades. Present were representatives of the Črnomelj municipality and the Črnomelj fire brigade association, and the chairman of the local community Darjo Piškurič recalled in his address the events that give the date its weight: the attack on the Italian border police of September 1941, when the village found itself in the whirl of occupation and resistance.\n\nThe most disarming moment of the evening was the address of dr. Franc Brinc — the 89-year-old former pupil of the Griblje school, lawyer, penologist and benefactor of the village, who told the audience his life memories. Whoever listened to a man who had played as a child in this village's yards and pondered punishment as a scholar across the world, heard a century in one voice.\n\nThe festival also saw the ceremonial opening of the dr. Franc Brinc memorial room in the fire station hall — a space that keeps the story of the man who gave the village some 200,000 euros in gifts: the fire brigade's operations room and roof, the school's digital equipment and playground, the car park by the church of St. Vitus at the 500th anniversary. A festival born of the memory of war thus came alive as a festival of generosity too.\n\nFor the museum this record matters doubly: as proof that a village knows how to invent its festival again, and as a record of the moment a tradition was born that will — we hope — keep counting. The museum seeks photographs of the 2024 festival and an inventory of the memorial room: every object in it is a record waiting.",
+      "On the fifteenth of September 2024 the village gathered in the fire station hall — for the festival of the Griblje local community, the first in decades. Present were representatives of the Črnomelj municipality and the Črnomelj fire brigade association, and the chairman of the local community Darjo Piškurič recalled in his address the events that give the date its weight: the attack on the Italian border police of September 1941, when the village found itself in the whirl of occupation and resistance.\n\nThe most disarming moment of the evening was the address of dr. Franc Brinc — the 89-year-old former pupil of the Griblje school, lawyer, penologist and benefactor of the village, who told the audience his life memories. Whoever listened to a man who had played as a child in this village's yards and pondered punishment as a scholar across the world, heard a century in one voice.\n\nThe festival also saw the ceremonial opening of the dr. Franc Brinc memorial room in the fire station hall — a space that keeps the story of the man who gave the village some 200,000 euros in gifts: the fire brigade's operations room and roof, the school's digital equipment and playground, the car park by the church of St. Vitus at the 500th anniversary. A festival born of the memory of war thus came alive as a festival of generosity too.\n\nFor the museum this record matters doubly: as proof that a village knows how to invent its festival again, and as a record of the moment a tradition was born that will — we hope — keep counting. And count it did: in September 2025 the KS festival saw its second edition, at which the local community also presented its balance sheet — in 2024/2025 it invested €39,000 in the thorough repair of roads at six locations. The museum seeks photographs of the 2024 and 2025 festivals and an inventory of the memorial room: every object in it is a record waiting.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/noša-1942.jpg",
     imageCredit:
@@ -4688,6 +4777,16 @@ export const seedExhibits: SeedExhibit[] = [
     yearFrom: 2024,
     featured: false,
     sources: [
+      {
+        key: "odeon-ks-praznik-2025",
+        nameSi: "Radio Odeon — Praznik KS Griblje (koledar dogodkov, 14. 9. 2025)",
+        nameEn: "Radio Odeon — The Griblje KS festival (events calendar, 14 Sep 2025)",
+        sourceType: "spletni-vir",
+        license: "objavljeni koledar",
+        url: "https://radio-odeon.com/koledar-dogodkov/praznik-ks-griblje",
+        noteSi: "Druga izdaja praznika; občilo KS: 39.000 € za sanacije cest na šestih lokacijah v obdobju 2024/2025.",
+        noteEn: "The festival's second edition; the KS announcement: €39,000 for road repairs at six locations in 2024/2025.",
+      },
       {
         key: "odeon-ks-praznik",
         nameSi: "Radio Odeon — Krajevna skupnost Griblje je praznovala (17. 9. 2024; prvi praznik po desetletjih)",
@@ -5687,6 +5786,187 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("Mera_Peak_Photowalk_08.jpg"),
         noteSi: "Glavna slika zapisa: gora, ne človek — Brodaričeva fotografija z vrhu čaka v zasebnem arhivu.",
         noteEn: "The record's main image: the mountain, not the man — Brodarič's summit photograph waits in a private archive.",
+      },
+    ],
+  },
+  {
+    slug: "novo-zivljenje-1914",
+    addedAt: "2026-09-17",
+    category: "kraj",
+    titleSi: "Novo življenje (1914) — povest, ki se dogaja v Gribljah",
+    titleEn: "Novo življenje (1914) — a tale that takes place in Griblje",
+    featured: true,
+    periodSi: "1914 · Celovec: Družba sv. Mohorja · Slovenske večernice, 68. zvezek",
+    periodEn: "1914 · Celovec: St. Hermagoras Society · Slovene Večernice, vol. 68",
+    summarySi:
+      "Edina doslej znana književna dogodivščina, postavljena v Griblje: povest Josipa Kostanjevca o gradnji vaške šole, oderuhu Lokvarju, modremu Jekovcu in učitelju Tratarju. Izšla je leta 1914 pri Družbi sv. Mohorja; celotno besedilo je danes prosto dostopno.",
+    summaryEn:
+      "The only known work of fiction set in Griblje: Josip Kostanjevec's tale of the building of the village school, the usurer Lokvar, the wise Jekovec and the teacher Tratar. Published in 1914 by the St. Hermagoras Society; the full text is freely available today.",
+    storySi:
+      "Med vsemi predmeti te zbirke je najbolj nenavadna tanka knjiga iz Celovca: oseminšestdeseti zvezek Slovenskih večernic, ki ga je leta 1914 izdala Družba sv. Mohorja. Njen naslov je Novo življenje, avtor učitelj in pisatelj Josip Kostanjevec (1864, Vipava – 1934, Maribor) — in njena prva stvarnost je zapisana z enim stavkom: »Na malem griču je čepela vas Griblje.«\n\nKostanjevec, vrstnik realizma, ki se je zgledoval pri Janku Kersniku, je zgodbo napel po žilah kmečke povesti: ob gradnji nove šole kmeta Antona Damjana zadene kap; sin Jakob pod pritiskom oderuha Lokvarja zapade v lenobo in skoraj izgubi dom; reši ga skupnost — modri starček Jekovec, čigar geslo je »Človek se mora učiti, dokler živi!«, in novi učitelj Ivan Tratar, ki Gribljanom v šoli nedeljskimi popoldnevi razlaga o kmetijskih strojih. Vaščani v šolskem poslopju ustanovijo okrajno posojilnico (predsednik Jekovec, tajnik Tratar), si priskrbijo mlatilnico in čistilnico za žito — oderuh pa umre od šoka, ko ugotovi, da mu je dolg poplačan. Povest se konča z Jakobovo poroko: novo življenje.\n\nZanj je zbirka citatov, ki bi lahko stali nad vsakim vaškim muzejem. Otroci so pred šolo hodili »v uro hoda oddaljeni Dol, po slabih stezah, čez trhle, nevarno se zibajoče brvi«. O šoli pa popotnik zasluti: »Ali ste to lepo poslopje napravili sami Gribljani?« — »Sami Gribljani, s svojimi žulji, s svojim znojem in po lastni pameti!« Vas je v povesti »komaj dvajset hiš, a ima šolo kakor palačo«.\n\nKje se končuje pisateljeva domišljija in kje se začenja Griblje? Zemljepis je resničen: šola, sodišče v Dolu, opeka iz bližnje opekarne (glina iz Goranje lokve!), zimski mraz ob mejni reki. Ustvarjene so osebe in strnjena je zgodovina — prava šola je stala že četrt stoletja, ko je knjiga izšla, in pravih Gribelj je bilo prek dvajsetih hiš. Kostanjevec v Beli krajini nikoli ni učil; od kod mu vas, ki jo je poimenoval po njenem pravem imenu, muzej ne ve. Zapis zato stoji na meji, ki jo zna natančno popisati: knjiga je dokumentirana, dogajališče je resnično, ljudje so literarni.\n\nSlovenske večernice so bile knjižna vrsta zase: poceni zvezki »za pouk in kratek čas«, ki so gribeljsko zgodbo nosili v slovenske hiše od Trsta do Prekmurja. Da je med njimi tudi Griblje, je bilo skoraj pozabljeno — dokler se besedilo ni vrnilo v javno last. Danes ga je mogoče prebrati v celoti; ta zapis pa prinaša njegovo naslovno stran, natisnjeno v Celovcu leta 1914.",
+    storyEn:
+      "Among all the objects of this collection, the most unusual is a slim book from Celovec (Klagenfurt): the sixty-eighth volume of the Slovene Večernice, issued in 1914 by the St. Hermagoras Society. Its title is Novo življenje (A New Life), its author the teacher-writer Josip Kostanjevec (1864, Vipava – 1934, Maribor) — and its first act of reality is a single sentence: \"On a small hill sat the village of Griblje.\"\n\nKostanjevec, a realist who took Janko Kersnik as his model, threaded his story along the veins of the peasant tale: as the new school is being built, the peasant Anton Damjan is struck by a stroke; his son Jakob, squeezed by the usurer Lokvar, sinks into idleness and nearly loses the homestead; he is saved by community — the wise old Jekovec, whose motto is \"A man must learn as long as he lives!\", and the new teacher Ivan Tratar, who explains farm machinery to the Griblje people in the school on Sunday afternoons. In the school building the villagers found a district savings-and-loan (Jekovec president, Tratar secretary), buy a threshing machine and a grain cleaner — and the usurer dies of shock when he learns the debt has been repaid. The tale ends with Jakob's wedding: a new life.\n\nIt is a book of quotations that could stand over any village museum. Before the school, children walked \"an hour's walk to Dol, along poor paths, across frail, dangerously swaying footbridges\". Of the school a traveller asks: \"Did you Griblje folk build this fine building yourselves?\" — \"Ourselves, the Griblje people, with our blisters, with our sweat and by our own wits!\" The village in the tale has \"scarcely twenty houses, but a school like a palace\".\n\nWhere does the writer's imagination end and Griblje begin? The geography is real: the school, the court at Dol, brick from the nearby kiln (clay from Goranja lokva!), the winter cold by the border river. The people are invented, and history is compressed — the real school had stood for a quarter of a century when the book appeared, and the real Griblje counted far more than twenty houses. Kostanjevec never taught in Bela krajina; where he found the village he called by its true name, this museum does not know. The record therefore stands on a border it can map precisely: the book is documented, the setting is real, the people are literary.\n\nThe Slovene Večernice were a genre of their own: cheap volumes \"for instruction and a short while\", which carried the Griblje story into Slovene houses from Trieste to Prekmurje. That Griblje was among them had been almost forgotten — until the text returned to the public domain. Today it can be read in full; this record carries its title page, printed in Celovec in 1914.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/novo-zivljenje-1914.jpg",
+    imageCredit:
+      "Naslovna stran · Wikimedia Commons (sken izvoda) · javna last — Josip Kostanjevec: Novo življenje, Celovec 1914",
+    yearFrom: 1914,
+    lat: 45.5728,
+    lng: 15.2926,
+    coordsApprox: true,
+    sources: [
+      {
+        key: "wiki-novo-zivljenje",
+        nameSi: "Wikipedija: Novo življenje (Kostanjevec) — vsebina povesti",
+        nameEn: "Wikipedia: Novo življenje (Kostanjevec) — the plot of the tale",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Novo_%C5%BEivljenje_(Kostanjevec)",
+        noteSi: "Povzetek vsebine, zbirka in zvezek 68; prvi vir, ki je povezal povest z Gribljami.",
+        noteEn: "Plot summary, series and volume 68; the first source to link the tale to Griblje.",
+      },
+      {
+        key: "wikisource-novo-zivljenje",
+        nameSi: "Wikivir: Novo življenje — celotno besedilo",
+        nameEn: "Wikisource: Novo življenje — the complete text",
+        sourceType: "objava",
+        license: "javna last",
+        url: "https://sl.wikisource.org/wiki/Novo_%C5%BEivljenje_(Josip_Kostanjevec)",
+        noteSi: "Vsi citati zapisa (»Na malem griču…«, »Sami Gribljani…«, »komaj dvajset hiš…«) so preverjeni po besedilu.",
+        noteEn: "All the record's quotations (\"On a small hill…\", \"Ourselves, the Griblje people…\", \"scarcely twenty houses…\") are verified against the text.",
+      },
+      {
+        key: "commons-novo-zivljenje-pdf",
+        nameSi: "Wikimedia Commons: izvirni sken knjige (PDF)",
+        nameEn: "Wikimedia Commons: original scan of the book (PDF)",
+        sourceType: "arhiv",
+        license: "javna last",
+        url: WM("Josip_Kostanjevec_-_Novo_%C5%BEivljenje.pdf"),
+        noteSi: "Digitaliziran izvod; naslovna stran zapisa je izrez iz tega skena.",
+        noteEn: "A digitised copy; the record's title page is a crop from this scan.",
+      },
+      {
+        key: "wiki-kostanjevec",
+        nameSi: "Wikipedija: Josip Kostanjevec — življenjepis avtorja",
+        nameEn: "Wikipedia: Josip Kostanjevec — the author's biography",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Josip_Kostanjevec",
+        noteSi: "Učiteljišče Koper; služboval na Primorskem, v Litiji in Ljubljani; zgled Janko Kersnik.",
+        noteEn: "Teacher-training college in Koper; served in the Littoral, Litija and Ljubljana; modelled on Janko Kersnik.",
+      },
+    ],
+  },
+  {
+    slug: "ilirska-carina-1809",
+    addedAt: "2026-09-17",
+    category: "kraj",
+    titleSi: "Napoleonova carinarnica — Griblje v Ilirskih provincah (1809–1813)",
+    titleEn: "Napoleon's customs post — Griblje in the Illyrian Provinces (1809–1813)",
+    periodSi: "1809–1813 · francoska uprava · carinski urad inšpektorata Sisek",
+    periodEn: "1809–1813 · French administration · customs office of the Sisak inspectorate",
+    summarySi:
+      "V letih Ilirskih provinc so Francozi ob Kolpi postavili verigo carinarnic — med njimi tudi v Gribljah: urad inšpektorata Sisek med Metliko, Vinico in Brodom ob Kolpi. Kratek, a resničen pridelek Napoleonovega imperija na robu vasi.",
+    summaryEn:
+      "In the years of the Illyrian Provinces the French placed a chain of customs posts along the Kolpa — among them one at Griblje: an office of the Sisak inspectorate between Metlika, Vinica and Brod ob Kolpi. A short but true crop of Napoleon's empire at the edge of the village.",
+    storySi:
+      "Med Valvasorjevim zapisom iz leta 1689 in šolsko dobo iz leta 1885 je v tej zbirki stoletja, ki se zdijo tiha. Eno od njih je zdaj dobilo glas: med letoma 1809 in 1813, ko so po Dunajskem miru dežele od Zgornje Kranjske do Dalmacije sestavljale francoske Ilirske province, je bil konec napoleonske uprave tudi v Gribljah — in sicer v obliki, ki jo ta vas pozna najbolje: kot mejna postaja.\n\nSeznam carinskih uradov Ilirije, ki ga navaja članek o Ilirskih provincah (po literaturi, med drugim po razpravah Jelke Pivec Stele iz leta 1930), našteva za inšpektorat Sisek vrsto mest ob meji s Turškim cesarstvom: Sisek, Krško, Karlovec, Metlika, most pri Metliki — in naprej ob Kolpi: Griblje, Pobrežje, Vinica, Poljane, Brod ob Kolpi, Osilnica, Lož. Med njimi je Griblje manjše od vseh — a na seznamu stoji z enakim pomenom: kraj, kjer se preverja blago, prehode in ljudi.\n\nZa vas ob Kolpi to ni prva in ne zadnja mejna služba. Uskoška vojna krajina je tu vpregla zemljo v obrambo stoletja prej; habsburška Meja je pozneje nosila svojo žandarmerijo in železnico, ki je vasi srečno obšla; po letu 1991 je Kolpa postala zunanja meja samostojne Slovenije, po Schengnu pa se je spet odprla. Napoleonova carinarnica je najkrajše poglavje te zgodbe — komaj štiri leta — a ravno dolžina jo dela muzejsko: dokaz, da so imperiji, ki so si delili Evropo, vsakič znova potrebovali isti prehod: prečkanje Kolpe pri Gribljah.\n\nIlirske province so zapustile tudi zemljevid: leta 1812 so francoski geometri zarisali njihove meje na karti, ki jo je ZRC SAZU obnovil v knjigi Zemljevid Ilirskih provinc iz leta 1812. Na njej Griblje samodejno ne piše — bile so prevelike črte za tako majhno vas; ta zapis pa jo prvič postavlja na lastno karto.",
+    storyEn:
+      "Between Valvasor's entry of 1689 and the school era of 1885, this collection holds centuries that seem silent. One of them has now found a voice: between 1809 and 1813, when the lands from Upper Carniola to Dalmatia formed the French Illyrian Provinces after the Peace of Schönbrunn, the reach of Napoleonic administration touched Griblje too — and in the form this village knows best: as a border station.\n\nThe list of Illyrian customs offices, given in the article on the Illyrian Provinces (following the literature, among them Pivec Stele's 1930 studies), enumerates for the Sisak inspectorate a series of places along the border with the Ottoman Empire: Sisak, Krško, Karlovac, Metlika, the bridge at Metlika — and on along the Kolpa: Griblje, Pobrežje, Vinica, Poljane, Brod ob Kolpi, Osilnica, Lož. Among them Griblje is smaller than all — but it stands on the list with the same meaning: a place where goods, crossings and people are checked.\n\nFor a village on the Kolpa this is neither the first nor the last border duty. The Uskok Military Frontier had harnessed this land to defence centuries earlier; the Habsburg Border later carried its gendarmerie and the railway that happily bypassed the village; after 1991 the Kolpa became the external border of independent Slovenia, and after Schengen it opened again. Napoleon's customs post is the shortest chapter of that story — barely four years — and precisely its length makes it museum material: proof that the empires that divided Europe needed, again and again, the same crossing on the Kolpa at Griblje.\n\nThe Illyrian Provinces also left a map: in 1812 French surveyors drew their borders on a chart that ZRC SAZU restored in the book The Map of the Illyrian Provinces of 1812. On it Griblje does not appear — the lines were too large for so small a village; this record places it on a map of its own for the first time.",
+    evidenceStatus: "CORROBORATED",
+    image: "/images/authentic/ilirske-province-1812.jpg",
+    imageCredit:
+      "Zemljevid: TRAJAN 117 · Wikimedia Commons · CC BY-SA 3.0 — Ilirske province leta 1812 (glede na izvirnik iz 1812)",
+    yearFrom: 1809,
+    yearTo: 1813,
+    lat: 45.5688,
+    lng: 15.2988,
+    coordsApprox: true,
+    sources: [
+      {
+        key: "wiki-ilirske-province",
+        nameSi: "Wikipedija: Ilirske province — seznam carinskih uradov",
+        nameEn: "Wikipedia: Illyrian Provinces — the list of customs offices",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Ilirske_province",
+        noteSi: "Inšpektorat Sisek: »Metlika, most Metlika, Griblje, Pobrežje, Vinica, Poljane, Brod ob Kolpi, Osilnica, Lož«.",
+        noteEn: "Sisak inspectorate: \"Metlika, the Metlika bridge, Griblje, Pobrežje, Vinica, Poljane, Brod ob Kolpi, Osilnica, Lož\".",
+      },
+      {
+        key: "pivec-stele-1930",
+        nameSi: "Pivec Stele, J. (1930) — študiji o gospodarstvu Ilirskih provinc",
+        nameEn: "Pivec Stele, J. (1930) — studies on the economy of the Illyrian Provinces",
+        sourceType: "objava",
+        license: "citirano po Wikipediji",
+        noteSi: "Vir, na katerega se članek sklicuje za organizacijo carin Ilirije.",
+        noteEn: "The source the article cites for the organisation of the Illyrian customs.",
+      },
+      {
+        key: "zrc-zemljevid-1812",
+        nameSi: "Gašperič, P., Orožen Adamič, M., Šumrada, J. (2012): Zemljevid Ilirskih provinc iz leta 1812, ZRC SAZU",
+        nameEn: "Gašperič, P., Orožen Adamič, M., Šumrada, J. (2012): The Map of the Illyrian Provinces of 1812, ZRC SAZU",
+        sourceType: "zemljevid",
+        license: "knjižna izdaja",
+        noteSi: "Faksimile francoskega zemljevida 1812; digitalizirano na dlib.si (URN:NBN:SI:doc-F4NO0ZFV).",
+        noteEn: "A facsimile of the French map of 1812; digitised at dlib.si (URN:NBN:SI:doc-F4NO0ZFV).",
+      },
+      {
+        key: "commons-ilirska-karta",
+        nameSi: "Wikimedia Commons: TRAJAN 117 — Ilirske province (1812), rekonstrukcija karte",
+        nameEn: "Wikimedia Commons: TRAJAN 117 — Illyrian Provinces (1812), map reconstruction",
+        sourceType: "zemljevid",
+        license: "CC BY-SA 3.0",
+        url: WM("Illyrian_Provinces_(1812).svg"),
+        noteSi: "Glavna slika zapisa: meje Ilirskih provinc 1809–1813 po stanju leta 1812.",
+        noteEn: "The record's main image: the borders of the Illyrian Provinces 1809–1813 as of 1812.",
+      },
+    ],
+  },
+  {
+    slug: "tone-kralj-98",
+    addedAt: "2026-09-17",
+    category: "sege",
+    titleSi: "Tone Kralj — devetinosemdeset pomladi",
+    titleEn: "Tone Kralj — ninety-nine springs and counting",
+    periodSi: "rojen ~1928 · Griblje · januar 2026: 98. rojstni dan",
+    periodEn: "born c. 1928 · Griblje · January 2026: 98th birthday",
+    summarySi:
+      "Januarja 2026 je Tone Kralj iz Gribelj praznoval 98. rojstni dan: še pobira in lušči lešnike, suši peteršilj, rešuje križanke in karta s pravnuki. Obiskali so ga Rdeči križ, borci za vrednote NOB in upokojenci Črnomlja.",
+    summaryEn:
+      "In January 2026 Tone Kralj of Griblje celebrated his 98th birthday: he still gathers and shells hazelnuts, dries parsley, solves crosswords and plays cards with his great-grandchildren. The Red Cross, the veterans of NOB values and the Črnomelj pensioners came to visit.",
+    storySi:
+      "Ta zapis je najmlajši v zbirki — nastal je januarja 2026, ko je Tone Kralj iz Gribelj praznoval devetinosemdeseti rojstni dan. Povabilo so sprejeli predstavniki Območnega združenja Rdečega križa Črnomelj, Združenja borcev za vrednote NOB Bele krajine in Društva upokojencev Črnomelj; slavljenca in njegovo družino so, kot piše vir, »lepo sprejeli ob polni mizi dobrot«.\n\nKaj pa ta zapis dela v muzeju, ki sicer hrani pet tisoč let stare črepinje? Njegovo gradivo je namreč iz najredkejše zbirke: vsakdan, ki ga običajno nihče ne dokumentira. Pri devetinosemdesetih letih Tone še pomaga pri pobiranju in luščenju lešnikov ter pri sušenju in shranjevanju peteršilja; v prostem času rešuje križanke, bere časopis in karta s pravnuki. Vsak od teh gibov je majhna zmaga nad časom — in vsak je hkrati droben arheološki dokument gribeljskega letnega kroga: lešnik ob robu gozda, zelišče z vrta, karte pri mizi.\n\nGriblje imajo s stoletniki svojo zgodovino: Nikolaj Dragoš, rojen v vasi leta 1907, je bil najstarejši Slovenec svojega časa in je sto let dočakal med tamburami. Tone Kralj tej stopnici počasi stopa naproti. Muzej zato ta zapis razume kot začetek: če ga bo januarja 2028 lahko dopolnil s stoletnico, bo zapis zrasel iz novice v praznovanje. Do takrat pa naj ostane, kar je: dokaz, da se v Gribljah leta ne samo štejejo — se tudi živijo.",
+    storyEn:
+      "This is the youngest record in the collection — it was made in January 2026, when Tone Kralj of Griblje celebrated his ninety-eighth birthday. The invitation was accepted by representatives of the Črnomelj Red Cross, the Association of Fighters for the Values of the National Liberation Struggle of Bela krajina, and the Črnomelj Pensioners' Society; the celebrant and his family, as the source says, \"kindly received them at a full table of delicacies\".\n\nAnd what is such a record doing in a museum that otherwise keeps five-thousand-year-old potsherds? Its material comes from the rarest collection of all: the everyday that no one usually documents. At ninety-eight, Tone still helps with gathering and shelling hazelnuts and with drying and storing parsley; in his free time he solves crosswords, reads the paper and plays cards with his great-grandchildren. Each of these movements is a small victory over time — and each is also a tiny archaeological document of the Griblje farming year: the hazel at the forest edge, the herb from the garden, the cards at the table.\n\nGriblje has a history with centenarians: Nikolaj Dragoš, born in the village in 1907, was the oldest Slovene of his time and reached a hundred years among the tamburas. Tone Kralj is quietly preparing to follow his staircase. The museum therefore reads this record as a beginning: if in January 2028 it can be enlarged with a hundredth birthday, the record will grow from news into celebration. Until then, let it remain what it is: proof that in Griblje years are not only counted — they are lived.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/lesniki.jpg",
+    imageCredit:
+      "Foto: Dellex · Wikimedia Commons · CC BY-SA 4.0 — lešniki na veji (ilustrativna slika; gribeljski lešniki čakajo na svojo)",
+    yearFrom: 2026,
+    lat: 45.5728,
+    lng: 15.2926,
+    coordsApprox: true,
+    sources: [
+      {
+        key: "odeon-tone-kralj",
+        nameSi: "Radio Odeon (18. 1. 2026): Tone Kralj se bliža stotici",
+        nameEn: "Radio Odeon (18 Jan 2026): Tone Kralj approaches the century",
+        sourceType: "spletni-vir",
+        license: "s povabila Rdečega križa Črnomelj",
+        url: "https://radio-odeon.com/novice/tone-kralj-se-bliza-stotici/",
+        noteSi: "98. rojstni dan; obiski RK Črnomelj, Združenja borcev za vrednote NOB BK in Društva upokojencev Črnomelj; lešniki, peteršilj, križanke, karte s pravnuki.",
+        noteEn: "98th birthday; visits from the Črnomelj Red Cross, the NOB values association of Bela krajina and the Črnomelj pensioners; hazelnuts, parsley, crosswords, cards with great-grandchildren.",
+      },
+      {
+        key: "commons-lesniki",
+        nameSi: "Wikimedia Commons: Dellex — lešniki na veji",
+        nameEn: "Wikimedia Commons: Dellex — hazelnuts on the branch",
+        sourceType: "fotografija",
+        license: "CC BY-SA 4.0",
+        url: WM("F%C3%BCnf_Haseln%C3%BCsse.JPG"),
+        noteSi: "Ilustrativna slika zapisa: dejavnost, ne oseba — Kraljeva fotografija ostaja v zasebnem arhivu.",
+        noteEn: "The record's illustrative image: the activity, not the person — Kralj's photograph remains in a private archive.",
       },
     ],
   },

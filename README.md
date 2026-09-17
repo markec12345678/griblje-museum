@@ -157,9 +157,25 @@ tekmovanje na Tomažinovi kmetiji 2019), **matija-totter** (mati Marjeta = vašk
 **kolesa-torpedo** (54 kolesarjev, 20 km do Metlike) in **kavbojski-zur** (Country Roses, pobudnici
 Lavrič + Husičeva).
 
+Šestnajsti sklop **Leposlovje, Ilirske province in živi muzej** (82 → 85 zapisov / 369 virov):
+**Novo življenje (1914)** (edina znana književna dogodivščina v Gribljah! povest Josipa Kostanjevca,
+Slovenske večernice 68. zvezek, Celovec: Družba sv. Mohorja 1914; gradnja šole, oderuh Lokvar,
+modri Jekovec — »Človek se mora učiti, dokler živi!«, učitelj Tratar, okrajna posojilnica v šoli;
+citat »Sami Gribljani, s svojimi žulji, s svojim znojem in po lastni pameti!«; celo besedilo javna
+last — Wikivir + Commons PDF; naslovna stran kot slika zapisa), **Napoleonova carinarnica** (Ilirske
+province 1809–1813: Griblje med carinskimi uradi inšpektorata Sisek ob meji s Turškim cesarstvom —
+Wikipedija po Pivec Stele 1930; zemljevid 1812 ZRC SAZU; zapolni vrzel 1689→1885 v časovnici) in
+**Tone Kralj — devetinosemdeset pomladi** (98. rojstni dan januarja 2026; lešniki, peteršilj,
+križanke, karte s pravnuki; obiski RK Črnomelj — Radio Odeon 18. 1. 2026). Obogatitve: **anton-filak**
+(VELIKA: naslovi državnega prvaka 2010/2019/2022/2024 + 2. mesto 2025 + 14. mesto na 70. svetovnem
+prvenstvu pri Pragi — 6 novih virov: svet24 3×, kmeckiglas, zotks, RO 2025), **muzejska-ucilnica**
+(4 prvošolci septembra 2026 — šola še živi; OŠ Loka), **praznik-ks-2024** (2. izdaja 2025; 39.000 €
+za ceste na šestih lokacijah), **td-griblje** (balonarski piknik »Griblje Kolpa« 2008 — Wikipedia
+seznam) in **griblje-v-stevilkah** (občina Griblje 1854 v okraju Črnomelj — crnomelj.si).
+
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 82 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 85 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -325,7 +341,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 82 zapisov, 349 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 85 zapisov, 369 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -335,6 +351,7 @@ provenienca/audio opis, odprti podatki CC0) — poročilo `design-research/UI-PR
 Izpeljana dva nova vzorca: **Podobne slike** (Search visually lite) in **Igre muzeja** (hub).
 Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletnica 2027,
 140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 82 zapisov / 349 virov (15. sklop: RTV Dragoš 2013, paginacija Radio Odeon strani 13–29, razglednica 1903, tobačna leta).
+- **16. sklop (2026-09-17):** Novo življenje 1914 — povest, ki se dogaja v Gribljah (Mohorjeve večernice, javna last!); Napoleonova carinarnica 1809–1813 (inšpektorat Sisek); Tone Kralj — 98 let; Filakovi naslovi državnega prvaka 2010/2019/2022/2024 — 85 zapisov / 369 virov.
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
 brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi

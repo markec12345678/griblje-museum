@@ -593,6 +593,27 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "Anton Brodarič went from Griblje on a three-week expedition to Asia and stood on the summit of Mera Peak: 6,467 metres, the highest point ever reached by a man of this village on the Kolpa. At home they met him in the Dom krajanov — seventy people in a room for eighteen. The municipality gave him its recognition; a tea evening at the Kovačnica sreče carried the story through the winter. A plain that sends a man to the Himalaya.",
   },
+  {
+    slug: "novo-zivljenje-1914",
+    textSi:
+      "Leta 1914 je pri Družbi sv. Mohorja izšla povest Novo življenje, katere prvi stavek glasi: »Na malem griču je čepela vas Griblje.« Piše jo učitelj Josip Kostanjevec, dogaja pa se med gradnjo šole: oderuh, modri Jekovec in učitelj Tratar. Ko popotnik vpraša, ali so lepo poslopje napravili sami, gre odgovor v zgodovino: »Sami Gribljani, s svojimi žulji, s svojim znojem in po lastni pameti!«",
+    textEn:
+      "In 1914 the St. Hermagoras Society published a tale called Novo življenje whose first sentence reads: \"On a small hill sat the village of Griblje.\" It was written by the teacher Josip Kostanjevec and set during the building of the school: a usurer, the wise Jekovec and the teacher Tratar. When a traveller asks whether the fine building was raised by the villagers themselves, the answer goes into history: \"Ourselves, the Griblje people, with our blisters, with our sweat and by our own wits!\"",
+  },
+  {
+    slug: "ilirska-carina-1809",
+    textSi:
+      "Med letoma 1809 in 1813 so bile te dežele francoske Ilirske province — in Griblje je v uradnih seznamih carinskih uradov inšpektorata Sisek stalo med Metliko in Vinico: postaja ob meji s Turškim cesarstvom. Štiri leta je Napoleonova carinarnica pregledovala blago na Kolpi. Imperiji so prihajali in odhajali; prehod ob reki je ostal.",
+    textEn:
+      "Between 1809 and 1813 these lands were the French Illyrian Provinces — and in the official lists of customs offices of the Sisak inspectorate, Griblje stood between Metlika and Vinica: a station on the border with the Ottoman Empire. For four years Napoleon's customs post inspected goods on the Kolpa. Empires came and went; the crossing by the river remained.",
+  },
+  {
+    slug: "tone-kralj-98",
+    textSi:
+      "Januarja 2026 je Tone Kralj iz Gribelj praznoval 98. rojstni dan. Ob polni mizi dobrot so ga obiskali Rdeči križ, borci za vrednote NOB in upokojenci Črnomlja — slavljenec pa je povedal, da še pomaga pri luščenju lešnikov in sušenju peteršilja, rešuje križanke in karta s pravnuki. V vasi, ki je dala najstarejšega Slovenca, se leta ne štejejo — živijo se.",
+    textEn:
+      "In January 2026 Tone Kralj of Griblje celebrated his 98th birthday. At a full table of delicacies he was visited by the Red Cross, the fighters for NOB values and the Črnomelj pensioners — while the celebrant reported that he still helps with shelling hazelnuts and drying parsley, solves crosswords and plays cards with his great-grandchildren. In a village that gave Slovenia its oldest man, years are not counted — they are lived.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {
