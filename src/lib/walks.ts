@@ -423,6 +423,13 @@ export const WALKS: Walk[] = [
           "And the roots are written down: the Podzemelj parish registers (1669–1947) are digitised and free — any Griblje family in the world can today read where their story began.",
       },
       {
+        exhibitSlug: "porocna-1669",
+        noteSi:
+          "Najgloblja korenina sprehoda: najstarejša knjiga župnije je poročna iz leta 1669 — arhiv se je pričel s svatbami, ne s krsti. Stran, po kateri je listal podzemeljski župnik, je danes prost dostop.",
+        noteEn:
+          "The walk's deepest root: the parish's oldest book is the marriage register of 1669 — the archive began with weddings, not baptisms. The page the Podzemelj priest leafed through is today in free access.",
+      },
+      {
         exhibitSlug: "kolesa-torpedo",
         noteSi:
           "Tretja pot med odhodom in ostankom: starodobna kolesa, ki vozijo v svet in se vedno vrnejo domov. Petnajst let sekcije Torpedo — in 94-letni Janez Totar, ki še vedno vrti pedala.",

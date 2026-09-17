@@ -2931,6 +2931,61 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "porocna-1669",
+    category: "kraj",
+    titleSi: "Poročna knjiga 1669 — prva stran podzemeljskega arhiva",
+    titleEn: "The marriage register of 1669 — the first page of the Podzemelj archive",
+    periodSi: "1669–1679 · župnija Podzemelj",
+    periodEn: "1669–1679 · the Podzemelj parish",
+    summarySi:
+      "Najstarejša od dvaindvajsetih knjig župnije Podzemelj ni krstna, ampak poročna: svatbe so začeli zapisovati leta 1669, ko se je dežela komaj privzdigovala iz stoletja vojn. Prva stran te knjige — naslov in začetek vpisov — je danes prost dostop na Matricula Online.",
+    summaryEn:
+      "The oldest of the twenty-two books of the Podzemelj parish is not a baptismal one but a marriage register: weddings began to be written down in 1669, as the land was barely rising out of a century of wars. The book's opening page — its title and the first entries — is today in free access on Matricula Online.",
+    storySi:
+      "Ko leta 1669 nov župnik na Podzemlju odpre prazen zvezek, ne začne s krsti in ne z mrliči — začne s svatbami. Po stoletju, v katerem so deželo prečkale osmanske čete in se je Bela krajina branila z vojno krajino, je bilo najnujnejše pisano dejanje sklenitev: dve hiši, ki skupaj preneseleta leto, poročita sina in hči, in iz tega zveze vstane naslednja generacija vasi. Prvi zvezek, ki ga župnija šteje med svoje knjige, je tako poročni — desetletje svatbenih zapisov, v katere so se zapisovale tudi Griblje.\n\nPoročni zapis je v rodoslovju najmočnejša točka, ker spoji dve družini v eno: ob imenu neveste in ženina stojijo priče, ki so pogosto sorodniki obeh strani, in iz njih je mogoče brati, katere hiše so bile v sorodu — in katere so si čez Kolpo izposojale ženo ali ženina. Zgodovinarjem tak zvezek pove, kdaj se je prebivalstvo spet zgoščevalo; domačinom pa, kje se rodovnik dveh hiš stakne v enega.\n\nTa knjiga je hkrati najstarejša stran zapisa o matičnih knjigah: vse, kar župnija danes hrani od leta 1669 do 1947, se je pričelo s tem zvezkom. Nadškofijski arhiv Ljubljana ga hrani pod signaturo 04795 in ga je objavil v prostem dostopu — vsakdo, ki išče gribeljske prednike iz časov, ko se je svet še pisal s peresom, lahko lista po isti strani, po kateri je listal podzemeljski župnik.\n\nSlika zapisa je začetna stran knjige: velik naslov in prvi vpisi, tako kot so se pojavili pred očmi pisarja. Muzej jo postavlja ob stran krstne knjige: dve strani istega arhiva, ena o začetkih, druga o rojstvih — skupaj papirnata dokazila, da je vas obstajala, še preden jo je kdo preštel.",
+    storyEn:
+      "When a new priest at Podzemelj opens an empty book in 1669, he does not begin with baptisms, nor with burials — he begins with weddings. After a century in which Ottoman armies crossed this land and Bela krajina defended itself with a military frontier, the most urgent written act was the joining: two households that survive a year together marry a son and a daughter, and from that bond rises the village's next generation. The first volume the parish counts among its books is therefore a marriage register — a decade of wedding entries into which Griblje was written too.\n\nA marriage entry is the strongest point in a family tree, because it joins two families into one: beside the bride's and groom's names stand witnesses, often kin of both sides, and from them one can read which houses were related — and which borrowed a wife or a husband across the Kolpa. To historians such a volume says when the population thickened again; to local people it says where the lineages of two houses meet in one.\n\nThis book is at the same time the oldest page of the parish registers record: everything the parish keeps from 1669 to 1947 began with this volume. The Archdiocesan Archives of Ljubljana hold it under the shelfmark 04795 and publish it in free access — anyone tracing Griblje ancestors from the times when the world was still written with a quill can leaf through the same page the Podzemelj priest leafed through.\n\nThe record's image is the book's opening page: the large title and the first entries, as they appeared before the writer's eyes. The museum sets it beside the baptismal register's page: two pages of the same archive, one about beginnings, the other about births — together a paper proof that the village existed before anyone counted it.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: 1669,
+    yearTo: 1679,
+    image: "/images/authentic/porocna-1669-zacekni-vpisi.jpg",
+    imageCredit:
+      "Poročna knjiga župnije Podzemelj 1669–1679 (začetna stran z naslovom in vpisi) · Nadškofijski arhiv Ljubljana · Matricula Online",
+    addedAt: "2026-09-17",
+    sources: [
+      {
+        key: "matricula-porocna-04795",
+        nameSi: "Matricula Online — poročna knjiga župnije Podzemelj 1669–1679 (signatura 04795; vir glavne slike)",
+        nameEn: "Matricula Online — the marriage register of the Podzemelj parish 1669–1679 (shelfmark 04795; the main image's source)",
+        sourceType: "fotografija",
+        license: "Nadškofijski arhiv Ljubljana · prosti dostop",
+        url: "https://data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04795/",
+        noteSi: "Najstarejša knjiga župnije: posnetek začetne strani z naslovom in prvimi vpisi porok, v katere so se zapisovale tudi Griblje.",
+        noteEn: "The parish's oldest book: a scan of the opening page with the title and the first marriage entries, into which Griblje was written too.",
+      },
+      {
+        key: "matricula-podzemelj-seznam",
+        nameSi: "Matricula Online — župnija Podzemelj (seznam 22 knjig 1669–1947)",
+        nameEn: "Matricula Online — the Podzemelj parish (the list of 22 books, 1669–1947)",
+        sourceType: "spletni-vir",
+        license: "prosti dostop za raziskavo / free access for research",
+        url: "https://data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/",
+        noteSi: "Seznam potrjuje, da je poročna knjiga 04795 (1669–1679) najzgodnejša med knjigami župnije; sv. Vid v Gribljah je navedena kot podružnica.",
+        noteEn: "The list confirms the marriage register 04795 (1669–1679) as the earliest among the parish's books; St. Vitus at Griblje is listed as a filial church.",
+      },
+      {
+        key: "wiki-griblje-porocna",
+        nameSi: "Wikipedija: Griblje (pripadnost župniji Podzemelj)",
+        nameEn: "Wikipedia: Griblje (the affiliation to the Podzemelj parish)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Griblje",
+        noteSi: "Župnijska pripadnost vasi, zaradi katere so se gribeljske svatbe zapisovale v podzemeljske knjige.",
+        noteEn: "The village's parish affiliation, because of which Griblje weddings were written into the Podzemelj books.",
+      },
+    ],
+  },
+  {
     slug: "cerkvisce",
     category: "kraj",
     titleSi: "Cerkvišče — tri cerkvice, ki jih ni več",

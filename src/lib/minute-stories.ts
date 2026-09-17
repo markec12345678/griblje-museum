@@ -237,6 +237,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
       "Wherever Griblje baptises, marries or buries, Podzemelj writes it down. The parish of St. Martin keeps its registers from 1669 to 1947 — twenty-two volumes of baptisms, marriages and burials, digitised and free on Matricula Online. The godparents at every baptism are a map of the village web: who stood by whom at the font, at the wedding, at the bedside. For Griblje families from Cleveland to Buenos Aires the gate now stands open without a journey. This record is a gate, not a copy — leaf through the original.",
   },
   {
+    slug: "porocna-1669",
+    textSi:
+      "Leto 1669: nov podzemeljski župnik odpre prazen zvezek — in ne začne s krsti, ampak s svatbami. Najstarejša knjiga župnije Podzemelj je poročna: po stoletju vojn je bil najnujnejši zapis sklenitev dveh hiš. Poročni vpis je v rodoslovju najmočnejša točka, ker spoji dve družini v eno. Stran, po kateri je listal župnik, lahko danes lista vsak Gribeljec — na Matricula Online, pod signaturo 04795.",
+    textEn:
+      "The year 1669: a new Podzemelj priest opens an empty book — and does not begin with baptisms, but with weddings. The parish's oldest book is a marriage register: after a century of wars, the most urgent entry was the joining of two households. A marriage entry is the strongest point in a family tree, because it joins two families into one. The page the priest leafed through, any Griblje family can leaf through today — on Matricula Online, under the shelfmark 04795.",
+  },
+  {
     slug: "cerkvisce",
     textSi:
       "Ime te vasi je arheologija: Cerkvišče — kraj, kjer so bile cerkve. Pred turškimi vpadi okrog leta 1408 so tu stale tri; Turki so jih porušili in zažgali. Za dve vaščani domnevno vejo, kje sta stali, za tretjo ne ve nihče. Leta 1994 so postavili kapelico v spomin — ni rekonstrukcija, ampak pričevanje. Vas pripada isti župniji in isti krajevni skupnosti kot Griblje; v gozdu skrivata Jelenja in Vodena jama. Njihova imena so v tleh.",
