@@ -1336,3 +1336,27 @@ Stage Summary:
 
 Nadaljevanje taska 57 (isti commit dan):
 - GLOBOKE POVEZAVE Z JEZIKOM: LanguageProvider prebere ?lang= (validacija proti LANG_CODES, prednost pred shranjeno izbiro, persist v localStorage); neveljaven parameter (?lang=xx) se tiho prezre; preizkušeno z ?lang=it (preklop + persist) in ?lang=xx (ignoriranje); README dopolnjen; commit 3267080 pushan
+
+---
+Task ID: 58
+Agent: Main agent (Z.ai Code)
+Task: Nadaljevanje (direktiva: »odlično nadaljuj«) — 20. sklop I: RO stran 1, obogatitve, popravek glave, kontakti, priprava španske gripe
+
+Work Log:
+- VLM stanje: zanka /tmp/freyer-tiles/vlm-retry-loop.js še vedno 429 (poskusi 1–30+); nova čakalna vrsta /tmp/mat-dates-vlm-loop.js (čaka Freyer uspeh → bere datume mrliške knjige iz /tmp/mat-dates-composite.png)
+- Z-AI WEB SEARCH prav tako 429 → raziskava prek delujočih virov: Wikipedia/Commons API (neposredno), Radio Odeon (curl), Matricula Online (agent-browser)
+- RO PAGINACIJA DOPOLNJENA: pridobljena stran 1 iskanj q=Griblje in q=Gribljah (edini manjkajoči strani; 2–29 oz. 2–13 že pokrite); 4 novi članki preneseti: Ljudje ob Kolpi: Nikolaj Dragoš (27. 8. 2026), S pesmijo je delo lažje (30. 8. 2026), Prvi šolski dan PŠ Griblje (3. 9. 2026), Dan, ko je ob Kolpi zadišalo po pasulju (23. 8. 2026) + Kolpa pod drobnogledom (1. 7. 2026); revizija: Dragoš/Štrucelj/šolski dan ŽE pokriti v obstoječih zapisih
+- OBOGATITEV pasuljada: nov odstavek o izvedbi 2026 (13 ekip, zmagovalci Torpedovci pred Jo&Jo in Folex, Pasuljčice 4. – pol točke do odra, komisija Vlašič/Štefanič/Grdešič, vodil Povše, sponzorji Status/Kapušin/Krone Kolpa Heaven, vabilo 2027) + nov vir odeon-pasuljada-2026
+- OBOGATITEV kopalisce-griblje: nov odstavek o državnem monitoringu kopalnih voda — merilno mesto »Kolpa, Dragoši – Griblje, rečni odbijač«, sezona 15. 6.–31. 8., vzorčenje na 14 dni (ARSO + NLZOH), kazalnika E. coli in intestinalni enterokoki, samoočiščevanje, odsvetovanje po dežju + nov vir odeon-kolpa-monitoring
+- POPRAVEK GLAVE (resna regresija, odkrita z agent-browser): med lg in 1366 px je namizna vrstica prelivela (1024 px: 297 px, 1280 px: 41 px prek zaslona; ≥1536 še 41 px čez zabojnik) — vzrok: 11 navigacijskih gumbov (885 px) + znamka (108 px) + 5 desnih gumbov (268 px) > prostora; POPRAVEK: stopnjevana navigacija NAV_TIER (md: 5 jedrnih rubrik, lg: + Moja zbirka/Igre, xl: + Izrazoslovje/Časovnica/Spomini, 2xl: + O muzeju), hamburger viden do xl, vodnikov gumb od lg, oblazinjenje px-2.5/xl:px-3; preverjeno 390/768/834/1024/1100/1200/1280/1366/1440/1536/1920 — preliv 0 povsod, gumbi znotraj zabojnika; hamburger pri 1024 odpre vse rubrike
+- OSNUTKI KONTAKTOV: research-griblje/08-kontakti-osnutki-2026-09.md — trije dopisi (Vaš Kanal: vgradnja videov + tamburaši; Flajšman: fotografija vasi ~1925, Madroničev mlin, listine; DKŽ: Pozdrav pomladi, kruh, Viniške cür, Pasuljčice) z navodili za pošiljanje in hrambo soglasij
+- ŠPANSA GRIPA 1918 (priprava): mrliška knjiga Podzemelj 04894 (1886–1924) odkrita na novem portalu data.matricula-online.eu; razvit zanesljiv zajem (navigacija ?pg=N → fetch s svežimi žetoni → base64 izvoz); zajetih 19 strani (205–223, ~1917–1919) v polni ločljivosti (2635×2000); OCR ne zmore rokopisa → sestavljena slika datumskih stolpcev /tmp/mat-dates-composite.png + VLM vrata v ozadju; kontekst: Wikipedia EN (oktober 1918 = smrtonosnejši mesec pandemije, drugi val od avgusta 1918, centralne sile težje prizadete)
+- MRTVE POTI: mapire/arcanum nedosegljiv; DDG html (bot-stran); RTV iskalnik (JS rezultati); Commons brez novih gribeljskih slik (kategorija Griblje v celoti že uporabljena); z-ai function web_search 429
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak; reseed 86 zapisov; API potrdi 6 virov pasuljade + Torpedovce/Pasuljčice/2027 v zgodbi, 4 vire kopališča + rečni odbijač/ARSO; agent-browser: dialogi pasuljade (vsi detajli 2026 + nov vir) in kopališča (odbijač/ARSO/drobnogledom); mobilno 390 px preliv 0; noga na dnu dokumenta (desktop: main 65→11325, noga 11325→12047 = docH); 4 zaslonke (pasuljada-2026, kopalisce-monitoring, glava-1024-hamburger, …)
+
+Stage Summary:
+- Zbirka: 86 zapisov / 379 virov (+2 vira: pasuljada 2026, kolpa monitoring); dve vsebinski obogatitvi
+- Popravek glave: stopnjevana navigacija po širinah (md/lg/xl/2xl) — preliv 0 pri VSAKI širini 390–1920 (prej do 297 px preliva med lg in 1366)
+- Kontaktni osnutki za Vaš Kanal / Flajšman / DKŽ pripravljeni (muzejska pošta čaka pošiljanje)
+- Španska gripa 1918: 19 strani mrliške knjige zajetih, datumi čakajo na VLM kvoto (vrata v ozadju)
+- Odprto: VLM 429 (izrez Freyer + datume + vizualni audit); z-ai web_search 429 (poplave/kataster raziskava odložena)

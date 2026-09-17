@@ -61,6 +61,35 @@ const DESKTOP_NAV_VIEWS = VIEW_ORDER.filter(
     view !== "zaOtroke" && view !== "tema" && view !== "razpolozenje" && view !== "zaKuliso"
 );
 
+/**
+ * Stopnje vidnosti namizne navigacije — glava mora biti brez vodoravnega
+ * preliva pri VSAKI širini (izmerjene širine: navigacija 885 px, znamka 108 px,
+ * desni gumbi 268 px). Jedro (md+) nosi pet rubrik, lg doda osebni muzej in
+ * igre, xl pa izrazoslovje, časovnico in spominsko knjigo; »O muzeju« je v
+ * vrstici šele od 2xl (v nogi je vedno). Do ostalih pogledov služi
+ * hamburger-menij do xl.
+ */
+const NAV_TIER: Partial<Record<MuseumView, "core" | "lg" | "xl" | "2xl">> = {
+  domov: "core",
+  zbirka: "core",
+  zgodbe: "core",
+  karta: "core",
+  dogodki: "core",
+  mojMuzej: "lg",
+  igre: "lg",
+  izrazoslovje: "xl",
+  casovnica: "xl",
+  knjiga: "xl",
+  oMuzeju: "2xl",
+};
+
+const TIER_CLASS: Record<string, string> = {
+  core: "",
+  lg: "hidden lg:flex",
+  xl: "hidden xl:flex",
+  "2xl": "hidden 2xl:flex",
+};
+
 /** Mobilni spustni meni — vključi vse razen vodnika po razpoloženju. */
 const MOBILE_NAV_VIEWS = VIEW_ORDER.filter((view) => view !== "razpolozenje");
 
@@ -134,8 +163,9 @@ export function Header({
               onClick={() => onNavigate(key)}
               aria-current={view === key ? "page" : undefined}
               className={cn(
-                "relative rounded-md px-2.5 py-2 text-sm font-medium transition-colors md:px-2.5 lg:px-3.5",
+                "relative rounded-md px-2.5 py-2 text-sm font-medium transition-colors xl:px-3",
                 "min-h-11",
+                TIER_CLASS[NAV_TIER[key] ?? "core"],
                 view === key
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
@@ -154,11 +184,11 @@ export function Header({
 
         <div className="ml-auto flex items-center gap-2 md:ml-0">
           {/* Pogovor z zbirko (AI vodnik) — na majhnih zaslonih skrit,
-              dosegljiv prek junaka domače strani in mobilnega menija */}
+              dosegljiv prek junaka domače strani in hamburger-menija */}
           <Button
             variant="outline"
             size="icon"
-            className="hidden size-11 sm:inline-flex"
+            className="hidden size-11 lg:inline-flex"
             onClick={onOpenGuide}
             aria-label={t.guide.openLabel}
             aria-keyshortcuts="Control+G"
@@ -291,11 +321,12 @@ export function Header({
             )}
           </Button>
 
-          {/* Mobilni meni */}
+          {/* Mobilni/hamburger meni — viden do xl, ker namizna vrstica
+              stopnjuje število rubrik po širini (glava brez preliva) */}
           <Button
             variant="outline"
             size="icon"
-            className="size-11 md:hidden"
+            className="size-11 xl:hidden"
             aria-expanded={menuOpen}
             aria-label={menuOpen ? t.a11y.closeMenu : t.a11y.openMenu}
             onClick={() => setMenuOpen((open) => !open)}
@@ -305,11 +336,11 @@ export function Header({
         </div>
       </div>
 
-      {/* Mobilni spustni meni */}
+      {/* Spustni meni (hamburger) — odprt do xl */}
       {menuOpen && (
         <nav
           aria-label={t.a11y.mainNav}
-          className="border-t border-border bg-background px-4 pb-4 pt-2 md:hidden"
+          className="border-t border-border bg-background px-4 pb-4 pt-2 xl:hidden"
         >
           <ul className="grid gap-1">
             {MOBILE_NAV_VIEWS.map((key) => (
