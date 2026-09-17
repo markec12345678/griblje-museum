@@ -81,10 +81,11 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/kres.jpg": { width: 1600, height: 1200 },
   "/images/authentic/zganje.jpg": { width: 751, height: 744 },
   "/images/authentic/kolpa-dolina.jpg": { width: 2000, height: 1075 },
-  "/images/authentic/dular-muzej.jpg": { width: 456, height: 813 },
+  // revizija 2026-10: portreta zapisovalcev (Barle 1932, Dular) namesto ilustrativnih podob (orgle, lapidarij)
+  "/images/authentic/janko-barle-1932.jpg": { width: 500, height: 721 },
+  "/images/authentic/joze-dular-portret.jpg": { width: 500, height: 607 },
   "/images/authentic/oranje-voli.jpg": { width: 861, height: 645 },
   "/images/authentic/balmorhea.jpg": { width: 1400, height: 859 },
-  "/images/authentic/orgle.jpg": { width: 1100, height: 1650 },
   // 11. sklop: Vasi, ki se spominja same sebe (2026-09-16)
   "/images/authentic/td-kopališka-hisica.jpg": { width: 2000, height: 1149 },
   "/images/authentic/gribeljci-2019.jpg": { width: 1078, height: 691 },
