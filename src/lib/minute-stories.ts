@@ -197,9 +197,9 @@ export const MINUTE_STORIES: MinuteStory[] = [
   {
     slug: "griblje-v-stevilkah",
     textSi:
-      "1468: Griblach. 1490: Briglach. 1593: Griblah. V urbarjih Grüble. Danes: 329 prebivalcev, tri celo pol kvadratnega kilometra, 153 metrov nad morjem, poštna številka 8332 Gradac. Popis 2020: 334 duš — 172 moških in 162 žensk. Ime? Jezikoslovci še razpravljajo: goba, gruda, brazda ali travnata strmina. Vas pa računa naprej — od prve črke v listini do zadnje številke statističnega urada. Na sliki tega zapisa jih drži skupaj Freyerjeva karta iz leta 1843: Griblje, zapisano kurzivno, ob Kolpi.",
+      "1468: Griblach. 1490: Briglach. 1593: Griblah. V urbarjih Grüble. Danes: 329 prebivalcev, tri celo pol kvadratnega kilometra, 153 metrov nad morjem, poštna številka 8332 Gradac. Popis 2020: 334 duš — 172 moških in 162 žensk. Ime? Jezikoslovci še razpravljajo: goba, gruda, brazda ali travnata strmina. Vas pa računa naprej — od prve črke v listini do zadnje številke statističnega urada. Na sliki tega zapisa jih drži skupaj Freyerjeva karta iz leta 1843: Griblje, kurzivno po slovensko, pod njim še (Grüble) — obe imeni vasi na enem listu.",
     textEn:
-      "1468: Griblach. 1490: Briglach. 1593: Griblah. Grüble in the urbars. Today: 329 inhabitants, three and a half square kilometres, 153 metres above the sea, postal code 8332 Gradac. The 2020 census: 334 souls — 172 men and 162 women. The name? Linguists still debate: a mushroom, a clod, a furrow or a grassy slope. The village keeps counting — from the first letter of the deed to the statistical office's latest figure. On this record's image, Freyer's map of 1843 holds it all together: Griblje, written in italic, by the Kolpa.",
+      "1468: Griblach. 1490: Briglach. 1593: Griblah. Grüble in the urbars. Today: 329 inhabitants, three and a half square kilometres, 153 metres above the sea, postal code 8332 Gradac. The 2020 census: 334 souls — 172 men and 162 women. The name? Linguists still debate: a mushroom, a clod, a furrow or a grassy slope. The village keeps counting — from the first letter of the deed to the statistical office's latest figure. On this record's image, Freyer's map of 1843 holds it all together: Griblje in italic Slovene, with (Grüble) beneath — the village's two names on one sheet.",
   },
   {
     slug: "audrey-totter",
@@ -249,6 +249,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
       "Jesen 1918: vojna se končuje, a v podzemeljsko mrliško knjigo pisar ob pljučnici piše »(španka)«. Pet tednov in pol — petinpetdeset pogrebov, petkrat več, kot jih je župnija vajena. Griblje izgubijo Ano Vegino, petindvajsetletnico, in Alojzija Orehekta, sedemindvajsetletnika. Knjiga, ki se je začela s svatbami leta 1669, piše smrt. Signatura 04894 — preberite jo sami.",
     textEn:
       "The autumn of 1918: the war is ending, but in the Podzemelj death register the writer adds »(Spanish)« beside pneumonia. Five and a half weeks — fifty-five funerals, five times the parish's usual. Griblje loses Ana Vegina, twenty-five, and Alojzij Orehek, twenty-seven. The archive that began with weddings in 1669 writes death. Shelfmark 04894 — read it yourself.",
+  },
+  {
+    slug: "kolpa-extremi",
+    textSi:
+      "Eno leto, dva ekstrema: julija 2022 Kolpa pri Metliki komaj teče — 7,8 kubičnega metra na sekundo, najsušeši julij od 1961. Septembra istega leta ista postaja izmeri 1.009 kubičnih metrov na sekundo — največ odkar se meri. Skoraj stotridesetkrat več vode v dveh mesecih. Reka ekstremov ima v zbirki svoj zapis.",
+    textEn:
+      "One year, two extremes: in July 2022 the Kolpa at Metlika barely runs — 7.8 cubic metres a second, the driest July since 1961. That September the same station measures 1,009 cubic metres a second — the most ever measured there. Nearly a hundred and thirty times more water within two months. The river of extremes has its record in the collection.",
   },
   {
     slug: "cerkvisce",
