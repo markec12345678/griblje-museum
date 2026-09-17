@@ -72,6 +72,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   /* ------------------------------ FEBRUAR ----------------------------- */
   [
     {
+      slug: "anton-brodaric",
+      noteSi:
+        "Februarja 2025 je Kovačnica sreče dišala po čaju in Himalaji: Anton Brodarič je vasi pripovedoval o Mera Peaku. Mesec zimskih zgodb — in gora, ki jo je plezal gribeljski sin.",
+      noteEn:
+        "In February 2025 the Kovačnica sreče smelled of tea and the Himalaya: Anton Brodarič told the village of Mera Peak. A month of winter tales — and a mountain climbed by a son of Griblje.",
+    },
+    {
       slug: "snos-crnomelj-1944",
       noteSi:
         "19. in 20. februarja 1944 se je v Črnomlju, devet kilometrov od Gribelj, sestal prvi slovenski parlament. Februar je njegov mesec.",
@@ -96,6 +103,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   /* ------------------------------- MAREC ------------------------------ */
   [
     {
+      slug: "dkz-griblje",
+      noteSi:
+        "Pozdrav pomladi, ki ga konec marca pripravijo šola, skupnost in kmečke žene, je najlepši dokaz, da pomlad ne pride sama — jo speče. Mesec društva, ki drži drugi koledar vasi.",
+      noteEn:
+        "The Spring Greeting, prepared at the end of March by the school, the community and the farm women, is the finest proof that spring does not come on its own — it is baked. The month of the society that holds the village's second calendar.",
+    },
+    {
       slug: "ko-se-pticki-zenijo",
       noteSi:
         "Ob gregorjevem se ptički ženijo — in leta 2026 so to šego v Gribljah znova oživili v gasilskem domu. Marec se v vasi ni mogel začeti bolj pesniško.",
@@ -119,6 +133,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   ],
   /* ------------------------------- APRIL ------------------------------ */
   [
+    {
+      slug: "razglednica-1903",
+      noteSi:
+        "Dvaindvajsetega aprila 1903 je iz Metlike potovala v Griblje razglednica — dan, ki ga ta zapis praznuje vsako leto. April je mesec pošte, ki je vedno našla vas.",
+      noteEn:
+        "On 22 April 1903 a postcard travelled from Metlika to Griblje — a day this record keeps every year. April is the month of a post that always found the village.",
+    },
     {
       slug: "jurjevanje",
       noteSi:
@@ -150,6 +171,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   ],
   /* -------------------------------- MAJ ------------------------------- */
   [
+    {
+      slug: "krizevo-pastirski-dan",
+      noteSi:
+        "Štirideset dni po veliki noči, pogosto ravno v maju, pastirji praznujejo križevo. Letos je sprehod mimo kopališča, kjer so igre spet žive — mesec, ki odpira poletje.",
+      noteEn:
+        "Forty days after Easter — most often in May — the shepherds keep križevo. This year the walk passes the pool where the games live again — the month that opens the summer.",
+    },
     {
       slug: "storklje",
       noteSi:
@@ -198,6 +226,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   ],
   /* ------------------------------- JULIJ ------------------------------ */
   [
+    {
+      slug: "tobacka-leta",
+      noteSi:
+        "Julij je bil nekdaj mesec tobaka: trgatve z roko, sušenje na palicah, vonj nad njivami. Tega praznika koledar ne piše več — muzej pa ga hrani.",
+      noteEn:
+        "July was once the month of tobacco: hand-picking, curing on sticks, the smell over the fields. No calendar writes this feast any more — the museum keeps it.",
+    },
     {
       slug: "kopalisce-griblje",
       noteSi:
@@ -301,6 +336,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   ],
   /* ----------------------------- NOVEMBER ----------------------------- */
   [
+    {
+      slug: "mate-zupanic-svarski",
+      noteSi:
+        "Novembra 1885 se je v Gribljah rodil Mate Zupanič-Švarski; novembra 2025 mu je Radio Odeon vrnil ime. Mesec mrtvih je ravno pravi za prostovoljca, ki se ni vrnil.",
+      noteEn:
+        "In November 1885 Mate Zupanič-Švarski was born in Griblje; in November 2025 Radio Odeon gave him back his name. The month of the dead suits a volunteer who did not come home.",
+    },
     {
       slug: "spomenik-padlim",
       noteSi:

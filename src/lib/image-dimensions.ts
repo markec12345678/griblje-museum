@@ -11,6 +11,13 @@
 export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
   // revizija 2026-09 (2. krog): hero = izrez panorame na pas vasi; glavna slika vasi = Andrejj
   "/images/authentic/hero-griblje.jpg": { width: 2000, height: 573 },
+  "/images/authentic/solunska-fronta.jpg": { width: 800, height: 541 },
+  "/images/authentic/tobak-burley.jpg": { width: 946, height: 645 },
+  "/images/authentic/pastirji-ovce.jpg": { width: 1920, height: 1280 },
+  "/images/authentic/mera-peak.jpg": { width: 1920, height: 897 },
+  "/images/authentic/razglednica-metlika.jpg": { width: 1093, height: 671 },
+  "/images/authentic/kmecke-zene-testo.jpg": { width: 1920, height: 1283 },
+
   "/images/authentic/griblje-vas.jpg": { width: 800, height: 574 },
   "/images/authentic/zaselki-griblje.jpg": { width: 1920, height: 1286 },
   "/images/authentic/dakota.jpg": { width: 1600, height: 1200 },

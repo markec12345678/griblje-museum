@@ -3866,6 +3866,283 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "mate-zupanic-svarski",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1885",
+        yearLabelEn: "1885",
+        sortYear: 1885,
+        textSi:
+          "Rojen v Gribljah v hiši vinskega trgovca Mikota Zupaniča-Švarskega; brat Niko je kasneje zapisal, da je hiša propadla z vinogradi.",
+        textEn:
+          "Born in Griblje in the house of the wine merchant Miko Zupanič-Švarski; his brother Niko later recorded that the house fell with the vineyards.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1903–1913",
+        yearLabelEn: "1903–1913",
+        sortYear: 1908,
+        textSi:
+          "Davčna uprava, beograjska Jugoslovanska korespondenca, trgovska akademija v Pragi in ravnateljstvo srbskih železnic — pot, ki jo je vodila jugoslovanska ideja.",
+        textEn:
+          "The tax administration, the Yugoslav Correspondence of Belgrade, the trade academy of Prague and the directorate of the Serbian railways — a road led by the Yugoslav idea.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1914–1917",
+        yearLabelEn: "1914–1917",
+        sortYear: 1914,
+        textSi:
+          "Prostovoljec pri Tankosiću, umik skozi Albanijo, Valona in Vido, Krf, Solunska fronta — in smrt v Nîmesu 27. aprila 1917.",
+        textEn:
+          "A volunteer with Tankosić, the retreat through Albania, Vlorë and Vido, Corfu, the Salonika front — and death at Nîmes on 27 April 1917.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1917/1928",
+        yearLabelEn: "1917/1928",
+        sortYear: 1917,
+        textSi:
+          "Lavrinovi Balkanski soneti s ciklom Čas izidejo v Clevelandu; 1928 prenesijo ostanke na jugoslovansko pokopališče pri Parizu.",
+        textEn:
+          "Lavrin's Balkan Sonnets with the cycle Čas appear in Cleveland; in 1928 the remains are transferred to the Yugoslav cemetery near Paris.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2025",
+        yearLabelEn: "2025",
+        sortYear: 2025,
+        textSi:
+          "Radio Odeon v rubriki Ljudje ob Kolpi znova objavi celoten življenjepis — in zapis vstopi v zbirko.",
+        textEn:
+          "Radio Odeon's People by the Kolpa column republishes the full biography — and the record enters the collection.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "tobacka-leta",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "po 1945",
+        yearLabelEn: "after 1945",
+        sortYear: 1945,
+        textSi:
+          "Povojni strokovnjaki ugotovijo, da podnebje Bele krajine ustreza tobaku; sadike prinese ljubljanska Tobačna tovarna.",
+        textEn:
+          "Post-war experts find Bela krajina's climate suited to tobacco; the seedlings arrive from Ljubljana's Tobacco Factory.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1950–1980",
+        yearLabelEn: "1950–1980",
+        sortYear: 1960,
+        textSi:
+          "Burley zraste v vodilno poljščino v vaseh, kot so Griblje: rastline čez dva metra, trgatve z roko, sušenje na palicah.",
+        textEn:
+          "Burley grows into a leading crop in villages such as Griblje: plants past two metres, hand-picking, curing on sticks.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1980-ta",
+        yearLabelEn: "the 1980s",
+        sortYear: 1980,
+        textSi:
+          "Vrh proizvodnje: 70 belokranjskih kmetov goji tobak; v avtoričinem poročilu RTV je Bela krajina središče slovenske pridelave.",
+        textEn:
+          "The peak: seventy Bela krajina farmers grow tobacco; in RTV's reporter's account Bela krajina is the centre of Slovene production.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "po 1990",
+        yearLabelEn: "after 1990",
+        sortYear: 1990,
+        textSi:
+          "Cenejši tobak, upad kadilcev in zaprta tovarna umaknejo poljščino z njiv; fotografija gribeljskega polja še čaka.",
+        textEn:
+          "Cheaper tobacco, the decline of smokers and the closed factory withdraw the crop from the fields; a photograph of a Griblje field still waits.",
+        evidenceStatus: "TO_COLLECT",
+      },
+    ],
+  },
+  {
+    slug: "krizevo-pastirski-dan",
+    phases: [
+      {
+        stage: "prica",
+        yearLabelSi: "1890-ta",
+        yearLabelEn: "the 1890s",
+        sortYear: 1895,
+        textSi:
+          "Matija Totter-Jandreč zapiše pastirske navade ob križevem za Barleta in Županiča — običaj, ki je v fari kmalu zatem ugasnil.",
+        textEn:
+          "Matija Totter-Jandreč records the shepherds' ways of križevo for Barle and Županič — a custom that soon died out in the parish.",
+        evidenceStatus: "DOCUMENTED",
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "~2020",
+        yearLabelEn: "~2020",
+        sortYear: 2020,
+        textSi:
+          "TD Griblje in kmečke žene obudijo pastirske igre na vaškem kopališču ob vnebohodu — posnel jih je Vaš Kanal.",
+        textEn:
+          "TD Griblje and the farm women revive the shepherds' games at the village pool at the Ascension — filmed by Vaš Kanal.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Pastirski dan ob Kolpi priredita sekcia Torpedo in Dragica Piškurič: pečena jajca, igre, vse generacije — Radio Odeon zapiše nov poglavje.",
+        textEn:
+          "A shepherds' day by the Kolpa is held by the Torpedo section and Dragica Piškurič: painted eggs, games, every generation — Radio Odeon writes the new chapter.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "razglednica-1903",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "22. 4. 1903",
+        yearLabelEn: "22 Apr 1903",
+        sortYear: 1903,
+        textSi:
+          "Fani Mežnaršič v Metliki napiše razglednico in jo pošlje gribeljski učiteljici — z zavrtkom o železnici, ki je vasi obšla.",
+        textEn:
+          "Fani Mežnaršič in Metlika writes a postcard and sends it to the Griblje schoolmistress — with a twist about the railway that bypassed the village.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1914",
+        yearLabelEn: "1914",
+        sortYear: 1914,
+        textSi:
+          "Železnica doseže Gradac, šest kilometrov od vasi — Griblje ostanejo cestna vas, njihovi vlaki hodijo peš.",
+        textEn:
+          "The railway reaches Gradac, six kilometres from the village — Griblje remains a road village, its trains going on foot.",
+        evidenceStatus: "DOCUMENTED",
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2014/2023",
+        yearLabelEn: "2014/2023",
+        sortYear: 2014,
+        textSi:
+          "Zbiratelj Božidar Flajšman kartico objavi v knjigi o belokranjski progi (2014) in v rubriki Stara Metlika (2023).",
+        textEn:
+          "The collector Božidar Flajšman publishes the card in his book on the Bela krajina line (2014) and in the Old Metlika column (2023).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Muzej razglednico vzame za najstarejši naslovljeni predmet, ki je vas dosegel po pošti; gribeljska razglednica še čaka v predalu.",
+        textEn:
+          "The museum takes the card as the oldest addressed item to reach the village by post; a Griblje postcard still waits in a drawer.",
+        evidenceStatus: "DOCUMENTED",
+      },
+    ],
+  },
+  {
+    slug: "dkz-griblje",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1996",
+        yearLabelEn: "1996",
+        sortYear: 1996,
+        textSi:
+          "Društvo kmečkih žena Griblje soizda knjižico o gribeljskem žbulu — pet avtoric zapiše zgodovino čebule, po kateri je vas slovela.",
+        textEn:
+          "The Griblje Farm Women's Society co-publishes the booklet on the Griblje žbul — five authors write the history of the onion that made the village famous.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "2012",
+        yearLabelEn: "2012",
+        sortYear: 2012,
+        textSi:
+          "Študijski krožek o žbulu izroči novo knjižico; znanje se preseli na gredico pred podružnično šolo.",
+        textEn:
+          "A study circle on the žbul hands over a new booklet; the knowledge moves to the bed before the branch school.",
+        evidenceStatus: "DOCUMENTED",
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2020–2026",
+        yearLabelEn: "2020–2026",
+        sortYear: 2025,
+        textSi:
+          "Obudilke pastirskih iger na kopališču, Pozdrav pomladi s tekmovalno peko kruha in Viniškimi cür — drugi koledar vasi deluje.",
+        textEn:
+          "The revivers of the shepherds' games at the pool, the Spring Greeting with its competitive bread baking and the Viniške cür — the village's second calendar works.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "anton-brodaric",
+    phases: [
+      {
+        stage: "prica",
+        yearLabelSi: "2024",
+        yearLabelEn: "2024",
+        sortYear: 2024,
+        textSi:
+          "Anton Brodarič stopi na vrh Mera Peaka, 6.467 metrov — najvišja točka, ki jo je dosegel človek iz Gribelj.",
+        textEn:
+          "Anton Brodarič stands on the summit of Mera Peak, 6,467 metres — the highest point reached by a man of Griblje.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2025",
+        yearLabelEn: "2025",
+        sortYear: 2025,
+        textSi:
+          "Sprejem v Domu krajanov s sedemdesetimi obiskovalci, občinsko priznanje in čajanka v Kovačnici sreče — vas povedala svojo Himalajo.",
+        textEn:
+          "A reception at the Dom krajanov with seventy visitors, the municipal recognition and a tea evening at the Kovačnica sreče — the village told its Himalaya.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {

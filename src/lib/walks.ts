@@ -132,6 +132,13 @@ export const WALKS: Walk[] = [
           "Before the frontier three churches stood at Cerkvišče; the Turks pulled them down and burned them — today a chapel of 1994 keeps their memory. War took not only borders but stones.",
       },
       {
+        exhibitSlug: "mate-zupanic-svarski",
+        noteSi:
+          "Med obema vojnama sprehoda stoti še prva: gribeljski sin, ki je leta 1914 prostovoljno šel braniti Srbijo in se z vojsko umaknil skozi Albanijo. Mate Zupanič-Švarski je umrl v Nîmesu; njegovi sopotniki so bili trije bratje Dragoše — vojna prve svetovne je v te hiše prišla prej kot september 1941.",
+        noteEn:
+          "Between the two wars of this walk stands a third: the Griblje son who went to defend Serbia as a volunteer in 1914 and retreated with the army through Albania. Mate Zupanič-Švarski died at Nîmes; his fellow travellers were the three Dragoš brothers — the First World War reached these houses before September 1941.",
+      },
+      {
         exhibitSlug: "zaseda-1941",
         noteSi:
           "Prva kri te vojne prihaja zgodaj: 6. septembra 1941, prva oborožena akcija belokranjskih partizanov — prav na cesti Črnomelj–Griblje, na vašem pragu.",
@@ -271,6 +278,13 @@ export const WALKS: Walk[] = [
           "Before the wine there was the onion: the Griblje žbul was the village's main cash crop — sold beyond the Gorjanci and in Croatia, and the people of Griblje are still called žbularji.",
       },
       {
+        exhibitSlug: "tobacka-leta",
+        noteSi:
+          "Za čebulo je prišel tobak: povojni strokovnjaki so na obkolpski ravnini našli podnebje zanj, burley pa je do osemdesetih držal družine od poletja do jeseni. Polje, ki je dišalo po sušenju — in potihnelo, ko je tobačna doba minila.",
+        noteEn:
+          "After the onion came tobacco: post-war experts found the climate for it on the Kolpa plain, and burley held the families from summer into autumn until the 1980s. A field that smelled of curing — and fell quiet when the tobacco age passed.",
+      },
+      {
         exhibitSlug: "vino-in-crnina",
         noteSi:
           "Zadnja postaja diši po kletarski: metliška črnina, prvič ustekleničena 1968, danes zaščitena geografska označba.",
@@ -325,6 +339,13 @@ export const WALKS: Walk[] = [
           "In pravzaprav še ena, ki se dotika vsega: od Griblacha 1468 do Freyerjeve karte 1843 — pet stoletij, v katerih se je vas pisala na papir. Kar ni zapisano, ni zastopano.",
         noteEn:
           "And in truth one more, touching all the rest: from Griblach in 1468 to Freyer's map of 1843 — five centuries in which the village wrote itself onto paper. What is not written down is not represented.",
+      },
+      {
+        exhibitSlug: "razglednica-1903",
+        noteSi:
+          "Kjer se zemljevidi končajo, začnejo razglednice: leta 1903 je iz Metlike v Griblje potovala kartica, naslovljena učiteljici — z zavrtkom o vlaku, ki je vasi obšel za šest kilometrov. Papir je dosegel, česar proga ni.",
+        noteEn:
+          "Where the maps end, the postcards begin: in 1903 a card travelled from Metlika to Griblje, addressed to the schoolmistress — with a twist about the train that missed the village by six kilometres. The paper reached what the rail did not.",
       },
       {
         exhibitSlug: "sturm-1891",
@@ -428,6 +449,13 @@ export const WALKS: Walk[] = [
           "Zadnja postaja je sedanji čas: na Jandrečetovi zemlji ekološko kmetuje maratonc Ciril Totter. Veja, ki se je vrnila k plugu — in dodala tekaške čevlje.",
         noteEn:
           "The last stop is the present day: on Jandreči land the marathon runner Ciril Totter farms ecologically. The branch that came back to the plough — and added running shoes.",
+      },
+      {
+        exhibitSlug: "anton-brodaric",
+        noteSi:
+          "Iz ravnine, ki nima niti hriba, v najvišjo točko, ki jo je kdaj dosegel vaščan: Anton Brodarič je stopil na Mera Peak, 6.467 metrov. Dvorana ob vrnitvi — sedemdeset ljudi — pove vse o tem, kam vas pošlje in kaj ji pomeni.",
+        noteEn:
+          "From a plain without a hill to the highest point a villager has ever reached: Anton Brodarič stood on Mera Peak, 6,467 metres. The hall on his return — seventy people — says everything about where a village sends you, and what you mean to it.",
       },
       {
         exhibitSlug: "sd-griblje-sport",
@@ -534,6 +562,13 @@ export const WALKS: Walk[] = [
           "Before the festival grew up in Črnomelj, jurjevo walked from door to door: in Griblje the school still weaves a basket of birch and sends Green George through the village — with a song preserved in the dialect.",
       },
       {
+        exhibitSlug: "krizevo-pastirski-dan",
+        noteSi:
+          "Štirideset dni po veliki noči pastirji praznujejo svoj: križevo, dan, ko je pošlo poletje in pašniki. V Gribljah so ga obudili z igrami ob Kolpi — koledar vasi se zdaj bere od jurjeva do kresa brez manjkajočega lista.",
+        noteEn:
+          "Forty days after Easter the shepherds keep their feast: križevo, the day that opened the summer and the pastures. In Griblje it has been revived with games by the Kolpa — the village calendar now reads from jurjevo to kres without a missing page.",
+      },
+      {
         exhibitSlug: "storklje",
         noteSi:
           "Nad strehami se vsako pomlad prikažejo štorklje. Vračajo se istim gnezdom — tako kot ljudje, ki se vračajo v vas.",
@@ -560,6 +595,13 @@ export const WALKS: Walk[] = [
           "Kje se je začelo stoletje? Pri bugariji. Mladi Dragoš je v Ljubljani igral v tamburaški skupini Danica — glasba je bila njegova prva pot v svet.",
         noteEn:
           "Where did the century begin? At the bugarija. Young Dragoš played in Ljubljana's Danica tambura group — music was his first road into the world.",
+      },
+      {
+        exhibitSlug: "dkz-griblje",
+        noteSi:
+          "Za tamburaši so v gasilskem domu za klavirjem sedežale ženske: Društvo kmečkih žena, ki speče kruh, naučijo pesem in obudijo pastirske igre. Drugi koledar vasi — tisti, ki ga ne pišejo žigi.",
+        noteEn:
+          "Behind the tambura players, at the piano of the fire station, sat the women: the Farm Women's Society, who bake the bread, teach the song and revive the shepherds' games. The village's second calendar — the one no stamp writes.",
       },
       {
         exhibitSlug: "ko-se-pticki-zenijo",

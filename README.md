@@ -134,9 +134,32 @@ Zeleni Jurij v košu iz brezovih vej, sprevod po vasi, cela jurjevska pesem v gr
 Zelenega Jurija 1908, javna last) — ob obogatitvah: janko-barle (+ brat Konrad Barle, čebelar in
 soustanovitelj Belokranjskega muzeja), Izrazoslovje +3 pojmi (žbul, žbularji, vuzem — skupaj 21).
 
+Petnajsti sklop **RTV Razglednice preteklosti + paginacija Radio Odeon** (76 → 82 zapisov / 349 virov):
+**Mate Zupanič-Švarski** (brat etnologa; vinski trgovec oče Miko in propad vinogradov; prostovoljec
+pri Tankosiću 1914, umik skozi Albanijo, Valona, Vido, Krf, Solunska fronta, malarija, smrt v Nîmesu
+27. 4. 1917; prenos na pokopališče pri Parizu 1928; Lavrinovi Balkanski soneti, Cleveland 1917 —
+Radio Odeon 17. 11. 2025), **Tobačna leta** (povojni burley: Griblje med vodilnimi tobačnimi vasmi,
+rastline čez 2 m, 70 kmetov BK v 1980-ih, sadike Tobačne tovarne Ljubljana — RTV Slovenia Revealed
+2018), **Križevo — pastirski dan** (Matičkovi zapisi 1890-tih → obudilke na kopališču ~2020 →
+pastirski dan Torpedo + Piškuričeva 2026; Vaš Kanal, Radio Odeon), **Razglednica 1903** (22. 4. 1903
+Metlika → gribeljska učiteljica, Fani Mežnaršič; vlak, ki je vasi obšel za 6 km; Flajšman 2014),
+**Društvo kmečkih žena Griblje** (knjižica žbul 1996/2012, Pozdrav pomladi s tekmovalno peko kruha
+in Viniškimi cür 2025) in **Anton Brodarič** (Mera Peak 6.467 m, sprejem s 70 obiskovalci v Domu
+krajanov, občinsko priznanje 2024). Obogatitve: **tamburasi-danica** (korekcija: gribeljsko — ne
+ljubljansko — društvo Danica; učiteljica Amalija Uršič, begunka s Kobaridskega; gostilni Štraus in
+Jureta Županiča; fotografije v arhivu Dragoš/NUK), **nikolaj-dragos** (K.G. 72403, Granična trupa,
+Vidovičeva gimnazija Sarajevo, vrnitev čez Rosalnice–Otok–Primostek–Krasinec, vaška babica Marjeta
+Totter), **vaska-sola** (zaprta vrzel: cesar Franc Jožef 1885, blagoslov 5. 11. 1889, učitelji Kambič/
+Kalan/Šušteršič/Uršičeva, Mohorjevi naročniki 1916), **niko-zupanic** (minister 1922–25, dvoboja,
+častni občan Adlešič 1931, evakuacija v Dalmacijo), **franc-brinc** (prvi dar 1988 — zvonovi
+18.900 €), **kolpa-reka** (32 vadbenih bomb + WWII strelivo iz reke 2021), **anton-filak** (regijsko
+tekmovanje na Tomažinovi kmetiji 2019), **matija-totter** (mati Marjeta = vaška babica),
+**kolesa-torpedo** (54 kolesarjev, 20 km do Metlike) in **kavbojski-zur** (Country Roses, pobudnici
+Lavrič + Husičeva).
+
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 76 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 82 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -302,7 +325,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 76 zapisov, 324 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 82 zapisov, 349 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -311,7 +334,7 @@ in Met API analizirani novi vzorci (You might like, License this image, Art term
 provenienca/audio opis, odprti podatki CC0) — poročilo `design-research/UI-PRIMERJAVA-2026-10.md`.
 Izpeljana dva nova vzorca: **Podobne slike** (Search visually lite) in **Igre muzeja** (hub).
 Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletnica 2027,
-140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 76 zapisov / 324 virov.
+140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 82 zapisov / 349 virov (15. sklop: RTV Dragoš 2013, paginacija Radio Odeon strani 13–29, razglednica 1903, tobačna leta).
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
 brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi

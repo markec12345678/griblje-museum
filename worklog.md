@@ -1174,3 +1174,45 @@ Stage Summary:
 - Najdišča nove vsebine: Kronprinzenwerk zv. 8 str. 401 (OCR »Grible«!), zbornik DUPŠ 2021, eid.gov.si EŠD 10094, WorldCat OCLC 821110335, YouTube/Vaš Kanal
 - Produkcija: čaka push (naslednji korak)
 - Naslednji koraki: kontakt peter tomc (film 1967), Vaš Kanal (video arhiv), DKŽ Griblje (knjižica žbul); DE/IT jeziki; velesejem 1921
+---
+Task ID: 51
+Agent: Main agent (Z.ai Code)
+Task: Nadaljevanje temeljite raziskave SAMO Griblje (direktiva 19) — RTV + RO paginacija + biografski viri
+
+Work Log:
+- Podagenta (51-b/c) nista uspela (context deadline) → raziskava neposredno
+- RADIO ODEON PAGINACIJA: prenesene strani 13–29 q=Griblje in 2–13 q=Gribljah (29 strani, sleep 7–12 s, ena retry za error 1015); izluščenih 249 gribeljskih zadetkov (šola 61, infra 69, ostalo 119); prebranih v celoti: Audrey Totter, Mate Zupanič, 32 bomb v Kolpi, Kavbojski žur (2.), ribnik, Dobro jutro, pustni sprehod, starodobna kolesa, plug/Tomažinova kmetija, mavrica/Šola zdravja, Brinc plošča + 90 let, panelna ograja, Stara Metlika 365 (Griblje 1969, Kanada) + 366, Županič minister
+- RTV SLOVENIJA: iskalnik deluje; ZLATO = »106-letni Niko in mladostna leta ob tamburicah« (Razglednice preteklosti, 1. 12. 2013, Andrej Mrak, 286 kB) — cel življenjepis Dragoša na podlagi knjige Mojih sto let + arhivi (NUK, Šolski muzej, nadškofijski arhiv, Arhiv RS, arhiv Flajšman); prebrano v celoti (4 dela)
+- WIKIPEDIA SL članek Griblje: Goranja lokva (glina za opeko!), Rudna peč (železova prst), najbolj suh kraj Bela krajine, viri (Šimec 2001, K. Zupanič 1939, Iglič 2006)
+- WIKIDATA: Q2531566; rojeni/umrli samo Županič + Dragoš; cerkev Q18515927 (EŠD 2122 že pokrito); SPARQL povezave brez novosti
+- SBL: samo Županič. Kamra: iskanje ne deluje prek curl
+- YOUTUBE: film Griblje 1967 = K-XvoQJUfKY (peter tomc/@zajeckiri, 18:41, naložen 15. 12. 2020, 960 ogledov) — KOMENTIRANJE IZKLOPLJENO, opisa ni; kanal brez drugih gribeljskih videov
+- TOBAK: RTV Slovenia Revealed (23. 11. 2018) — Griblje med vodilnimi tobačnimi vasmi! (burley, 70 kmetov BK v 1980-ih, Tobačna tovarna Ljubljana)
+- Poročilo: research-griblje/05-rtv-paginacija-2026-09.md
+
+Stage Summary:
+- TRIJE VELIKI ZAKLADI: (1) AUDREY TOTTER — hollywoodska igralka, oče Janez Totter iz Gornjih Gribelj (Joliet IL); film noir filmografija; Lorene Totter Barfuss genotipizacija → izvor Totterjev v Spodnji Avstriji; (2) MATE ZUPANIČ-ŠVARSKI — brat etnologa, prostovoljec pri Tankosiću, umik skozi Albanijo, Solunska fronta, umrl Nîmes 1917, Lavrinovi soneti; oče Miko vinski trgovec (bankrot!); brat Jure — trgovina + gostilna v vasi; (3) RTV Dragoš 2013 — popolna biografija + AMALIJA URŠIČ (tamburaška voditeljica, begunka s Kobaridskega, Celovec) + KOREKCIJA: Danica je bilo GRIBELJSKO društvo (ne ljubljansko), bugarija = ritmično glasbilo (ne bas), fotografije tamburašev OBSTAJO
+- 8 NOVIH ZAPISOV pripravljenih: audrey-totter, mate-zupanic-svarski, kavbojski-zur (Country Roses, Lavrič+Husič), tobacka-leta, krizevo-pastirski-dan, anton-brodaric (Mera Peak 6467 m), razglednica-1903 (železnica, ki je obšla Griblje), dkz-griblje
+- 12+ OBOGATITEV: tamburasi-danica (korekcija+Uršičeva), nikolaj-dragos (K.G. 72403, Granična trupa, Rosalnice-vrnitev, 12 otrok, Ajdečarji Griblje 12), vaska-sola (cesar 1885, učitelji Kambič/Kalan/Šušteršič/Uršičeva, Mohor 1916), franc-brinc (1988 zvonovi 18.900 €, skupaj 145.000 €, plošča 10. 4. 2025, tekel Črnomelj–Griblje), niko-zupanic (minister 1922–25, dvoboja, častni občan Adlešič 1931), gribeljci-po-svetu (Joliet + Kanada 1969), matija-totter (mati Marjeta = vaška babica), anton-filak (2019 zmaga doma, Tomažinova kmetija), kolpa (panelna ograja, 32 bomb 2021), td-griblje (Torpedo, starodobna kolesa), sd-griblje-sport (Šola zdravja), gribeljski-zbul (Žbulčkova tržnica)
+- Narava: ribnik Krasinec–Griblje s štorkljami; Goranja lokva; Rudna peč; najbolj suha vas BK
+- Naslednji korak: implementacija (Task 52) — 84 zapisov
+
+---
+Task ID: 52
+Agent: Main agent (Z.ai Code)
+Task: Implementacija 15. sklopa (rezultati Taska 51) — 82 zapisov / 349 virov
+
+Work Log:
+- 6 NOVIH ZAPISOV (76 → 82 / 324 → 349 virov): mate-zupanic-svarski (vojna; solunska fronta, Lavrinovi soneti, zemljevid fronte PD), tobacka-leta (gospodarstvo; burley, RTV Slovenia Revealed 2018, Wolcott FSA PD), krizevo-pastirski-dan (sege; Matiček 1890-ti → Torpedo + Piškuričeva 2026), razglednica-1903 (kraj; 22. 4. 1903 Metlika → učiteljica, Flajšman 2014, razglednica Metlike SEM PD), dkz-griblje (sege; knjižica žbul 1996/2012, Pozdrav pomladi 2025, Viniške cür), anton-brodaric (kraj; Mera Peak 6.467 m, sprejem 70 ljudi)
+- 6 SLIK z Commons (vse VLM-preverjene): solunska-fronta.jpg (PD), tobak-burley.jpg (PD FSA), pastirji-ovce.jpg (CC BY-SA 4.0 Zcebeci), mera-peak.jpg (CC BY-SA 4.0 Sapkota), razglednica-metlika.jpg (PD, SEM zbirka), kmecke-zene-testo.jpg (CC BY-SA 4.0)
+- KOREKCIJA tamburasi-danica: gribeljsko (ne ljubljansko!) društvo Danica; Amalija Uršič (begunka s Kobaridskega, Celovec); bugarija = ritmično glasbilo; gostilni Štraus + Jureta Županiča; fotografije obstajajo (Dragoš/NUK); epilog 1981 srečanje pevskih zborov
+- OBOGATITVE (12): nikolaj-dragos (K.G. 72403, Pirot, nemška kmetija, vrnitev Rosalnice–Otok–Primostek–Krasinec, žena iz Krasinca, Vižmarje, babica Marjeta Totter), vaska-sola (ZAPRTA VRZEL: cesar Franc Jožef 1885, podrl zid, blagoslov 5. 11. 1889, učitelji Kambič/Kalan/Šušteršič/Uršičeva, Mohor 1916), niko-zupanic (minister 1922–25, dvoboj s Pekmezijem + z avstrijskim častnikom, častni občan Adlešič 1931 z Gasparijem in Vurnikom, Dalmacija), franc-brinc (prvi dar 1988 zvonovi 18.900 €, tekel Črnomelj–Griblje, odklanja priznanja, 90. rojstni dan 12. 4. 2025), anton-filak (2019 zmaga doma na Tomažinovi kmetiji, 2. Gašper Filak), kolpa-reka (32 vadbenih bomb Galeb + WWII strelivo, NUS 2021), kolesa-torpedo (54 kolesarjev, 20 km Metlika), kavbojski-zur (Country Roses/Vrtičkarji/Wild West, DJ Sheriff, pobudnici Lavrič + Husičeva), matija-totter (mati = vaška babica), gribeljski-zbul (Žbulčkova tržnica)
+- INTEGRACIJA: walks +6 postaj (pokritost 82/82, vsak zapis natanko enkrat; vojna-in-svoboda +1, kruh-platno-vino +2, vas-in-njeni-ljudje +2, iz-griblje-v-svet +1), minute-stories +6 (82), object-biographies +6 (82), image-dimensions +6, visual-fingerprints regenerirani (82, 16,9 kB), record-of-month +6 kandidatov (nov: februar Brodarič, marec DKŽ, april razglednica, maj križevo, julij tobak, november Mate Zupanič), i18n števci 76→82 vseh 12 mest × 3 jeziki, layout.tsx meta, README 15. sklop + števci
+- POPRAVKI NAPAK: cirilični »метom«, »muibile«, »Ista roke«→»Iste roke«, manjkajoča vejica v virih, duplikat ključa odeon-brinc-90 → odeon-brinc-snovice, podvojen začetek odstavka v EN Dragoš, pomotoma odstranjena hero dimenzija obnovljena
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2302 znanih opozoril); reseed db/custom.db 82/349; API 82 zapisov, vsi 6 novi prisotni, 349 virov; agent-browser: naslovnica 82 zapis + Mate Zupanič/Križevo/žene/Brodarič; Tobačna leta (burley, sedemdeset, Wolcott, RTV vir, slika, postaja 9/19); mate-zupanic (Nîmes, Tankosić, Lavrin, solunska slika); tamburasi (Uršičeva, Štraus, Jure Županič, »ljubljanskega« IZGINILO); vaska-sola (Franc Jožef, vrzel »še išče« izginila); Dragoš (72403, Rosalnice); križevo (Piškurič, Torpedo); razglednica mobilno 390 px: overflow 0, Mežnaršičeva, slika, footer; EN jezik (Farm Women, competitive baking, 82 counters); biografija predmeta + minutna zgodba delujeta; konzola brez novih napak (24 prehodnih HMR getBiography napak med urejanjem, več se ne ponavljajo); 4 zaslonki
+
+Stage Summary:
+- Zbirka: 82 zapisov / 349 virov; 15. sklop dodan (Solunska fronta, tobačna leta, križevo, razglednica 1903, DKŽ, Himalaja)
+- Najpomembnejša korekcija doslej: tamburaši Danice so bili GRIBELJSKI (ne ljubljanski), vodila jih je učiteljica Amalija Uršič; vaska-sola vrzel »kdo je učil« zaprta s štirimi poimenovanimi učitelji
+- Produkcija: čaka git push (naslednji korak)
+- Naslednji koraki: DE/IT jeziki, večje slike/IIIF, kontakt Vaš Kanal/peter tomc (film 1967), DKŽ (fotografije), Flajšman (arhiv)
