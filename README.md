@@ -175,7 +175,7 @@ seznam) in **griblje-v-stevilkah** (občina Griblje 1854 v okraju Črnomelj — 
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 85 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 87 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -343,7 +343,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 85 zapisov, 369 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 87 zapisov, 379 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
@@ -356,6 +356,7 @@ Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletni
 - **16. sklop (2026-09-17):** Novo življenje 1914 — povest, ki se dogaja v Gribljah (Mohorjeve večernice, javna last!); Napoleonova carinarnica 1809–1813 (inšpektorat Sisek); Tone Kralj — 98 let; Filakovi naslovi državnega prvaka 2010/2019/2022/2024 — 85 zapisov / 369 virov.
 - **18. sklop (2026-09-17):** Poročna knjiga župnije Podzemelj 1669–1679 (signatura 04795) — najstarejša knjiga župnije, začetna stran z naslovom in prvimi vpisi; prvič vrnjena na Matricula Online prek novih URL-jev portala (data.matricula-online.eu, žetonski zajem prek brskalnika) — 86 zapisov / 375 virov. Popravek zgodbe: najstarejša knjiga ni krstna, ampak poročna.
 - **19. sklop — petjezičnost DE/IT (2026-10):** nemščina in italijanščina za obiskovalce Bela krajine — celoten vmesnik preveden (783 ključev × 5 jezikov, struktura avtomatsko preverjena s `scripts/verify-i18n.ts`); vsebina zbirk pri DE/IT ostaja angleška (lingua franca, enako kot HR→SLO), AI vodnik pa odgovarja v jeziku uporabnika (nemški in italijanski sistemski poziv, dosje iz angleške plasti); jezikovno stikalo v glavi preoblikovano v spustni meni z ikono globusa in domačimi imeni jezikov (vzorec Rijksmuseum/Louvre); **večjezično iskanje** — razširitev poizvedbe DE/IT → EN (vzorec Europeana, ~160 pojmov: »chiesa« najde 23 zapisov, »Krieg« 44); barvne police, datumi (Intl), delovni list, predlagana iskanja in govorne rezerve prilagojeni petim jezikom; avdio vodnik pri DE/IT govori angleško; **globoke povezave z jezikom** — `/?lang=de` ali `/?exhibit=<slug>&lang=it` odpre muzej neposredno v izbranem jeziku (neveljavni parameter se prezre).
+- **20. sklop — španska gripa 1918 (2026-09-17):** mrliška knjiga župnije Podzemelj 04894 (1886–1924) pripoveduje najžalostnejšo jesen: oktobra 1918 je pisar ob pljučnici pisal »(španka)« — španaska, španoka, španoška; petinpetdeset pogrebov v petih tednih in pol (vpisi 44–97), petkrat več kot običajno; Griblje izgubijo Ano Vegino (25) in Alojzija Orehekta (27) — 87 zapisov / 379 virov. Zajem posnetkov prek žetonskega portala Matricula (navigacija → takojšen fetch), branje rokopisov z VLM stran za stranjo (vsako branje preverjeno v polni ločljivosti); hkrati obogatitvi: Pasuljada 2026 (Torpedovci pred Jo&Jo in Folex, Pasuljčice pol točke do odra) in kopališče Griblje na državnem monitoringu kopalnih voda (merilno mesto »Kolpa, Dragoši – Griblje, rečni odbijač«). Popravek glave: stopnjevana navigacija (md/lg/xl/2xl) — preliv 0 pri vsaki širini 390–1920 (prej do 297 px preliva med lg in 1366).
 - **17. sklop — benchmark UI/UX (2026-10):** analiza vrhunskih muzejev (Google Arts & Culture, Rijksmuseum, Louvre, Van Gogh, Tate, NHM, Kamra — poročilo `research-griblje/07-museum-ux-benchmark-2026-10.md`) in sedem izpeljanih vzorcev: **hitri vstop »Kako želite raziskovati?«** na domači strani (GA&C »What do you want to explore?«), **nadaljujte z raziskovanjem** (zadnje odkriti zapisi), **srček na karticah zbirke** (Rijksstudio — enoklik shranjevanje), **barvna polica vasi** (GA&C barvno brskanje: 8 polic — nebo/zelenje/zemlja/sonce/vino/sneg/črno-belo/noč — dodelitev po HSL iz prstnih odtisov), **zadnja in predlagana iskanja** (Tate »Try searching for«), **mobilna spodnja vrstica** (5 poti z enim tapom, safe-area) in **nazaj na vrh** (Louvre/Tate).
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi

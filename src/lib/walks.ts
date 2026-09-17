@@ -430,6 +430,13 @@ export const WALKS: Walk[] = [
           "The walk's deepest root: the parish's oldest book is the marriage register of 1669 — the archive began with weddings, not baptisms. The page the Podzemelj priest leafed through is today in free access.",
       },
       {
+        exhibitSlug: "spanska-gripa-1918",
+        noteSi:
+          "In ista knjiga piše tudi konec: jeseni 1918 je župnija v petih tednih pokopala petinpetdeset ljudi, pisar pa ob pljučnici pisal »(španka)«. Med gribeljskimi imeni sta Ana Vegina in Alojzij Orehek — arhiv, ki se je začel s svatbami, je zapisal tudi najžalostnejšo jesen.",
+        noteEn:
+          "And the same archive writes the end too: in the autumn of 1918 the parish buried fifty-five people in five weeks, the writer adding »(Spanish)« beside pneumonia. Among the names of Griblje stand Ana Vegina and Alojzij Orehek — the archive that began with weddings wrote its saddest autumn as well.",
+      },
+      {
         exhibitSlug: "kolesa-torpedo",
         noteSi:
           "Tretja pot med odhodom in ostankom: starodobna kolesa, ki vozijo v svet in se vedno vrnejo domov. Petnajst let sekcije Torpedo — in 94-letni Janez Totar, ki še vedno vrti pedala.",

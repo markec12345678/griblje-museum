@@ -327,6 +327,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   /* ------------------------------ OKTOBER ----------------------------- */
   [
     {
+      slug: "spanska-gripa-1918",
+      noteSi:
+        "Oktobra 1918 je bil mesec z najvišjo smrtnostjo cele pandemije — podzemeljska mrliška knjiga je pisala »pljučnica (španka)«. Oktobra se muzej spominja jeseni, ko je strani zmanjkalo.",
+      noteEn:
+        "October 1918 was the whole pandemic's deadliest month — the Podzemelj death register wrote »pneumonia (Spanish)«. In October the museum remembers the autumn the pages ran out.",
+    },
+    {
       slug: "crni-moceril",
       noteSi:
         "18. oktobra 1986 je znanost v podzemlju Bele krajije spoznala črnega močerila. Oktobra ima zbirka rojstni dan.",

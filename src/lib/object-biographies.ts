@@ -2027,6 +2027,47 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
     ],
   },
   {
+    slug: "spanska-gripa-1918",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1886 → 1917",
+        yearLabelEn: "1886 → 1917",
+        sortYear: 1886,
+        textSi:
+          "Mrliška knjiga Podzemelj 04894 nemirno piše trideset let: stran v treh tednih, vpis za vpisom, župnija v svojem letu po navadi pokopa svojih štirideset do šestdeset ljudi.",
+        textEn:
+          "The Podzemelj death register 04894 writes its thirty restless years: a page every three weeks, entry after entry, the parish burying its usual forty to sixty people a year.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "oktober–december 1918",
+        yearLabelEn: "October–December 1918",
+        sortYear: 1918,
+        textSi:
+          "Drugi val španske gripe: pisar ob pljučnici piše »(španka)« — španaska, španoka, španoška. Stran zadošča za štiri dni; vpisi 44–97 v petih tednih in pol; med gribeljskimi mrliči Ana Vegina (25) in Alojzij Orehek (27).",
+        textEn:
+          "The flu's second wave: the writer adds »(Spanish)« beside pneumonia — spelled three ways as the weeks went on. A page lasts four days; entries 44–97 in five and a half weeks; among the dead of Griblje Ana Vegina (25) and Alojzij Orehek (27).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Digitalizirana knjiga je v prostem dostopu na Matricula Online — stran z vpisi 1.–4. novembra 1918, z Aninim vpisom, je slika tega zapisa. Kdor želi, prešteje znova.",
+        textEn:
+          "The digitised book is in free access on Matricula Online — the page of 1–4 November 1918, Ana's entry among them, is this record's image. Whoever wishes may count again.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
     slug: "cerkvisce",
     phases: [
       {
