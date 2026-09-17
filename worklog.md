@@ -1242,3 +1242,28 @@ Stage Summary:
 - Ključne najdbe: Novo življenje (1914) celotno besedilo javna last; Griblje kot carinarnica Ilirskih provinc 1809–1813; Filak 4× državni prvak (2010/19/22/24); 4 prvošolci 2026; balonarski piknik 2008; občina Griblje 1854
 - Mrtve poti: RO/dlib/SIstory Cloudflare (obdeno z web_search); Wikisource Bridke izkušnje = Lipovje ne Griblje; Cerkvišče/etimologija/ribnik že pokriti
 - Naslednji koraki: DE/IT jeziki; kontakt DKŽ/Flajšman/Vaš Kanal (fotografije tamburašev, arhiv); zemljevid Ilirskih provinc 1812 v višji ločljivosti z dlib (ko se odblokira); Ilirske province v HR/Wikipediji EN za dodatne vire
+
+---
+Task ID: 54
+Agent: Main agent (Z.ai Code)
+Task: Analiza najboljših spletnih muzejev (UI/UX benchmark) + primerjava + izboljšave
+
+Work Log:
+- RAZISKAVA (podagenta 2-a/2-b podrla na context deadline; z-ai API 429 večino dneva → curl direktno): prenesene in analizirane domače strani Google Arts & Culture, Rijksmuseum, Louvre, Van Gogh Museum, Tate, NHM, Kamra.si (Met/MoMA/BM/Smithsonian/Europeana/DEDI blokirani — Cloudflare/Vercel checkpoint; ocenjeni po dokumentiranim vzorcem); izluščene naslovne strukture, navigacije, CTA-ji, rubrike; Kamra a11y plošča; GA&C "What do you want to explore? / Today's fun / Artwork of the day / Pocket Galleries / barvno brskanje"; Rijks Rijksstudio + Visitor stories; Louvre "Louvre+" + Studio GET DRAWING; Tate "Try searching for" + Tate Kids + Explore online; NHM čustvena obljuba + Don't miss
+- SINTEZA: research-griblje/07-museum-ux-benchmark-2026-10.md — muzej-po-muzeju analiza, primerjalna tabela z našim muzejem (17 vzorcev), 7 identificiranih vrzeli v vstopnih točkah in mikro-priročnosti
+- P1 HITRI VSTOP: nova komponenta home-entry.tsx (ExploreStart) — "Kako želite raziskovati?" 6 kartic (razpoloženje/tema/čas/zemljevid/otroci/ena minuta) pod statistiko na domači strani (vzorec GA&C)
+- P2 NADALJEVANJE: ContinueExploring — zadnjih 4 odkritih zapisov iz visit-trackerja (vrstni red odkritja), samodejno skrito, ko ni obiskov
+- P3 SRČEK NA KARTICAH: CollectionView prestrukturiran (motion.div + glavni gumb + srček-pobratim, veljaven HTML brez gnezdženja gumbov) — enoklik shranjevanje v Mojo zbirko (vzorec Rijksstudio); aria-pressed + polno polnjenje
+- P4 BARVNA POLICA VASI: 8 polic (nebo 11/zelenje 4/zemlja 15/sonce 6/vino 3/sneg 2/črno-belo 29/noč 15) — dodelitev po HSL (svetlost za sneg/noč, nasičenost s<0,04 za čb, najbližji odtenek za kromatične) iz visual-fingerprints.json; razvrščanje znotraj police po RGB razdalji; števci na gumbih; počišči izbor; prva iteracija (RGB prag 160) zavrnjena — vse je bilo 73 zadetkov, kalibracija s simulacijo v node (85/85 zapisov dodeljenih, police smiselne: ribnik/dakota→nebo, B/W arhiv→čb, vino-in-crnina→noč, pisanice→vino)
+- P5 ISKANJE: search-dialog — zadnja iskanja (mvg-recent-searches, max 6, gumb počisti) + predlagana iskanja (Tate "Try searching for"; kurirani pojmi SL/EN/HR)
+- P6 MOBILNA VRSTICA: quick-nav.tsx MobileTabBar (domov/zbirka/karta/iskanje/moja zbirka, fixed bottom, md:hidden, safe-area, aria-current) + BackToTop (po 700 px drsanja, nad vrstico na mobilnem, desno spodaj na namizju); footer pb prilagojen (calc 4.5rem+safe-area, md:pb-10), compare-tray dvignjen nad vrstico
+- i18n: +34 ključev × 3 jeziki (explore*, continue*, color*, saveQuickSr, recent/suggested/clearRecent, backToTop, tabNav)
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2302 znanih opozoril; 1 napaka v raziskovalnem junk datotekah podagentov → izbrisani museum-research/ + ux-search-results/); agent-browser: hitri vstop 6 kartic 3×395px + navigacija (razpoloženje→#razpolozenje "Kaj vas danes vabi?", U jednoj minuti→sidro #muzej-v-minuti top=0), nadaljevanje prikaže zadnje odkritje, barvna polica števci točno po simulaciji, nebo-filter 11 zapisov razvrščenih, srček → "Ko se ptički ženijo" v Moji zbirki, iskanje tobak → Tobačna leta + zadnja iskanja s čipom, EN "How would you like to explore? / By mood", HR "Kako želite istraživati?", mobilno 390px: 390=390 brez preliva, tab bar navTop=785/lastContentBottom=772 (13px rezerve), back-to-top viden, footer na dnu docH=22708=footerBottom, 0 napak konzole
+- ZASLONKE: design-research/screenshots/{new-home-quickstart,new-collection-color,mobile-home,mobile-bottom}.png
+- README: 17. sklop — benchmark UI/UX z sedmimi vzorci
+
+Stage Summary:
+- Benchmark: 8 muzejev analiziranih (6 neposredno), poročilo 07-museum-ux-benchmark-2026-10.md; sklep: vsebinsko smo že na ravni velikih hiš, vrzeli so bile v vstopnih točkah
+- 7 novih UX vzorcev: hitri vstop, nadaljevanje ogleda, srček na karticah, barvna polica (edinstvena: HSL dodelitev iz lastnih prstnih odtisov, 8 polic z vaškimi imeni), zadnja+predlagana iskanja, mobilna spodnja vrstica, nazaj na vrh
+- Produkcija: čaka push (naslednji korak)
+- Naslednji koraki: DE/IT jeziki; VLM vizualna kontrola (ko se kvota sprosti); A/B barvnih pragov po uporabi

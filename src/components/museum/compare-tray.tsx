@@ -40,7 +40,7 @@ export function CompareTray({
         animate={{ opacity: 1, y: 0 }}
         exit={reduceMotion ? undefined : { opacity: 0, y: 24 }}
         transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-        className="pointer-events-none fixed inset-x-0 bottom-4 z-40 flex justify-center px-4"
+        className="pointer-events-none fixed inset-x-0 bottom-[calc(4.25rem+env(safe-area-inset-bottom))] z-40 flex justify-center px-4 md:bottom-4"
       >
         <div
           role="group"

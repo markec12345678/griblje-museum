@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { Calendar, Landmark, ScrollText } from "lucide-react";
+import { Calendar, Clock3, Landmark, ScrollText, X } from "lucide-react";
 import { useLang, type Lang } from "@/lib/i18n";
 import type { ExhibitDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
@@ -74,6 +74,44 @@ type SearchResponse = {
 
 type Status = "idle" | "loading" | "done" | "error";
 
+/** Zadnja iskanja — zgodovina v localStorage (vzorec: Rijksmuseum,
+ *  ki na strani zbirke ponudi nazadnje iskane pojme; Tate: »Try
+ *  searching for …« za predloge). Brez računa, samo v tem brskalniku. */
+const RECENT_KEY = "mvg-recent-searches";
+const RECENT_MAX = 6;
+
+function readRecent(): string[] {
+  try {
+    const raw = window.localStorage.getItem(RECENT_KEY);
+    if (!raw) return [];
+    const parsed: unknown = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter((s): s is string => typeof s === "string").slice(0, RECENT_MAX);
+  } catch {
+    return [];
+  }
+}
+
+function pushRecent(term: string): void {
+  try {
+    const q = term.trim();
+    if (q.length < 2) return;
+    const next = [q, ...readRecent().filter((s) => s !== q)].slice(0, RECENT_MAX);
+    window.localStorage.setItem(RECENT_KEY, JSON.stringify(next));
+  } catch {
+    // localStorage ni na voljo — zgodovina preprosto ni shranjena
+  }
+}
+
+/** Predlagana iskanja — kurirani pojmi zbirke (Tate: »Try searching for«). */
+function suggestedTerms(lang: Lang): string[] {
+  if (lang === "en")
+    return ["Kolpa", "school", "war", "jurjevo", "tobacco", "postcard", "church", "bell"];
+  if (lang === "hr")
+    return ["Kolpa", "škola", "rat", "jurjevo", "duhan", "razglednica", "crkva", "žbul"];
+  return ["Kolpa", "šola", "vojna", "jurjevo", "tobak", "razglednica", "cerkev", "žbul"];
+}
+
 function storyKindLabel(kind: StoryHit["kind"], lang: Lang): string {
   if (kind === "ZGODBA")
     return lang === "sl" ? "zgodba" : lang === "hr" ? "priča" : "story";
@@ -99,6 +137,12 @@ export function SearchDialog({
   const [query, setQuery] = React.useState("");
   const [results, setResults] = React.useState<SearchResponse | null>(null);
   const [status, setStatus] = React.useState<Status>("idle");
+  const [recent, setRecent] = React.useState<string[]>([]);
+
+  // Zgodovina iskanja naložena ob vsakem odprtju dialoga.
+  React.useEffect(() => {
+    if (open) setRecent(readRecent());
+  }, [open]);
 
   const dateFmt = React.useMemo(
     () =>
@@ -128,6 +172,8 @@ export function SearchDialog({
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         setResults((await res.json()) as SearchResponse);
         setStatus("done");
+        pushRecent(q);
+        setRecent(readRecent());
       } catch (error) {
         if ((error as Error).name !== "AbortError") setStatus("error");
       }
@@ -199,9 +245,69 @@ export function SearchDialog({
 
           <CommandList className="museum-scroll max-h-[min(60vh,26rem)]">
             {status === "idle" && (
-              <p className="px-4 py-8 text-center text-sm text-muted-foreground">
-                {query.trim().length === 1 ? t.search.minChars : t.search.hint}
-              </p>
+              <div className="px-4 py-4">
+                <p className="text-center text-sm text-muted-foreground">
+                  {query.trim().length === 1 ? t.search.minChars : t.search.hint}
+                </p>
+
+                {/* Zadnja iskanja (vzorec: Rijksmuseum) */}
+                {recent.length > 0 && (
+                  <div className="mt-4">
+                    <div className="flex items-center justify-between gap-2">
+                      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                        {t.search.recent}
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          try {
+                            window.localStorage.removeItem(RECENT_KEY);
+                          } catch {
+                            // brez localStorage zgodovina itak ni shranjena
+                          }
+                          setRecent([]);
+                        }}
+                        className="inline-flex min-h-9 items-center gap-1 rounded-md px-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        <X className="h-3.5 w-3.5" aria-hidden="true" />
+                        {t.search.clearRecent}
+                      </button>
+                    </div>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {recent.map((term) => (
+                        <button
+                          key={term}
+                          type="button"
+                          onClick={() => setQuery(term)}
+                          className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-border bg-card px-3.5 text-sm text-foreground/85 transition-colors hover:border-primary/40 hover:text-primary"
+                        >
+                          <Clock3 className="h-3.5 w-3.5 text-muted-foreground" aria-hidden="true" />
+                          {term}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Predlagana iskanja (vzorec: Tate »Try searching for …«) */}
+                <div className="mt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    {t.search.suggested}
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {suggestedTerms(lang).map((term) => (
+                      <button
+                        key={term}
+                        type="button"
+                        onClick={() => setQuery(term)}
+                        className="inline-flex min-h-9 items-center rounded-full border border-primary/25 bg-primary/5 px-3.5 text-sm text-primary transition-colors hover:border-primary/50"
+                      >
+                        {term}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
             )}
 
             {status === "error" && (

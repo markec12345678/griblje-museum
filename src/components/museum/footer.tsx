@@ -10,7 +10,8 @@ export function Footer({ onNavigate }: { onNavigate: (view: MuseumView) => void 
 
   return (
     <footer className="mt-auto border-t border-border bg-card">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      {/* Spodnji odmik na mobilniku pošisti spodnjo vrstico za hitro navigacijo. */}
+      <div className="mx-auto max-w-7xl px-4 pb-[calc(4.5rem+env(safe-area-inset-bottom))] pt-10 sm:px-6 md:pb-10 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-3">
             <div className="flex items-center gap-2.5">
