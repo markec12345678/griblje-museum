@@ -199,8 +199,10 @@ načela in odprti razpis za pričevanja skupnosti
   dogodkih, neobčutljivo na diakritike — po vzoru DigitaltMuseum
 - 🔗 **Globoke povezave** — vsak zapis ima deljiv URL `/?exhibit=<slug>`, pogledi
   `#zbirka`, `#zgodbe` … (isti format, ki ga objavljata IIIF in iskalni API)
-- 🌍 **SLO/HRV/EN** — popolna trojezičnost z vztrajnostjo izbire (hrvaščina za
-  obiskovalce čez mejo, po vzoru Interreg sodelovanj)
+- 🌍 **SLO/HRV/DEU/ITA/EN** — popolna petjezičnost vmesnika z vztrajnostjo izbire
+  (hrvaščina za obiskovalce čez mejo po vzoru Interreg; nemščina in italijanščina za
+  obiskovalce Bela krajine — vsebina zbirk ostaja v slovenščini in angleščini) in
+  **večjezično iskanje** (razširitev poizvedbe DE/IT → EN, vzorec Europeana)
 - ♿ **Dostopnost** — izjava o dostopnosti po vzoru norveških muzejev (*universell utforming*),
   tipkovna navigacija, `prefers-reduced-motion`, semantični HTML; lastna **dostopnostna
   plošča** v glavi (večja pisava, močnejši kontrast, pisava za disleksijo Atkinson
@@ -353,6 +355,7 @@ Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletni
 140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 82 zapisov / 349 virov (15. sklop: RTV Dragoš 2013, paginacija Radio Odeon strani 13–29, razglednica 1903, tobačna leta).
 - **16. sklop (2026-09-17):** Novo življenje 1914 — povest, ki se dogaja v Gribljah (Mohorjeve večernice, javna last!); Napoleonova carinarnica 1809–1813 (inšpektorat Sisek); Tone Kralj — 98 let; Filakovi naslovi državnega prvaka 2010/2019/2022/2024 — 85 zapisov / 369 virov.
 - **18. sklop (2026-09-17):** Poročna knjiga župnije Podzemelj 1669–1679 (signatura 04795) — najstarejša knjiga župnije, začetna stran z naslovom in prvimi vpisi; prvič vrnjena na Matricula Online prek novih URL-jev portala (data.matricula-online.eu, žetonski zajem prek brskalnika) — 86 zapisov / 375 virov. Popravek zgodbe: najstarejša knjiga ni krstna, ampak poročna.
+- **19. sklop — petjezičnost DE/IT (2026-10):** nemščina in italijanščina za obiskovalce Bela krajine — celoten vmesnik preveden (783 ključev × 5 jezikov, struktura avtomatsko preverjena s `scripts/verify-i18n.ts`); vsebina zbirk pri DE/IT ostaja angleška (lingua franca, enako kot HR→SLO), AI vodnik pa odgovarja v jeziku uporabnika (nemški in italijanski sistemski poziv, dosje iz angleške plasti); jezikovno stikalo v glavi preoblikovano v spustni meni z ikono globusa in domačimi imeni jezikov (vzorec Rijksmuseum/Louvre); **večjezično iskanje** — razširitev poizvedbe DE/IT → EN (vzorec Europeana, ~160 pojmov: »chiesa« najde 23 zapisov, »Krieg« 44); barvne police, datumi (Intl), delovni list, predlagana iskanja in govorne rezerve prilagojeni petim jezikom; avdio vodnik pri DE/IT govori angleško.
 - **17. sklop — benchmark UI/UX (2026-10):** analiza vrhunskih muzejev (Google Arts & Culture, Rijksmuseum, Louvre, Van Gogh, Tate, NHM, Kamra — poročilo `research-griblje/07-museum-ux-benchmark-2026-10.md`) in sedem izpeljanih vzorcev: **hitri vstop »Kako želite raziskovati?«** na domači strani (GA&C »What do you want to explore?«), **nadaljujte z raziskovanjem** (zadnje odkriti zapisi), **srček na karticah zbirke** (Rijksstudio — enoklik shranjevanje), **barvna polica vasi** (GA&C barvno brskanje: 8 polic — nebo/zelenje/zemlja/sonce/vino/sneg/črno-belo/noč — dodelitev po HSL iz prstnih odtisov), **zadnja in predlagana iskanja** (Tate »Try searching for«), **mobilna spodnja vrstica** (5 poti z enim tapom, safe-area) in **nazaj na vrh** (Louvre/Tate).
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
@@ -442,7 +445,7 @@ prisma/schema.prisma      # Exhibit, Source, StoryItem, MuseumEvent, GuestbookEn
 prisma/seed.ts            # idempotentni seed z dejstvi iz javnih virov
 src/app/page.tsx          # enostranska aplikacija muzeja
 src/components/museum/    # pogleji: Domov, Zbirka, Zgodbe, Karta, Dogodki, O muzeju, Knjiga, Za kuliso
-src/lib/i18n.tsx          # SLO/HRV/EN slovar
+src/lib/i18n.tsx          # SLO/HRV/DEU/ITA/EN slovar (783 ključev × 5 jezikov)
 src/lib/contributions.ts  # moderacija prispevkov (honeypot, hitrost, hevristika)
 src/lib/community-content.ts  # seme vpisov in spominov (git kot CMS)
 src/lib/behind-scenes.ts  # zapisi Za kuliso
@@ -455,6 +458,6 @@ public/images/authentic/  # avtentične fotografije (Wikimedia Commons / javna l
 ## Izjava o standardu / Standard statement
 
 Projekt implementira dimenzije, ki jih meri norveška nagrada *Årets museum*:
-trojezična vsebina (SLO/HRV/EN), univerzalna zasnova dostopnosti, javna izjava o dostopnosti,
+petjezični vmesnik (SLO/HRV/DEU/ITA/EN), univerzalna zasnova dostopnosti, javna izjava o dostopnosti,
 odprti podatki in API, program dogodkov, povezanost s skupnostjo, iskrena
 dokumentacija provenience ter ločevanje avtentičnega gradiva od interpretacij.

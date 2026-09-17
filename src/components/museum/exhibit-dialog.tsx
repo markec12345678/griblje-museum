@@ -29,7 +29,7 @@ import {
   X,
   ZoomIn,
 } from "lucide-react";
-import { useLang, pick } from "@/lib/i18n";
+import { useLang, pick, localeOf } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { useFavorites } from "@/lib/favorite-tracker";
 import { useCompareSelection } from "@/lib/compare-tracker";
@@ -226,7 +226,7 @@ export function ExhibitDialog({
 
   /** DigitaltMuseum-vzorc: oblikovan citat zapisa z datumom dostopa. */
   const buildCitation = (ex: ExhibitDTO): string => {
-    const accessDate = new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+    const accessDate = new Intl.DateTimeFormat(localeOf(lang), {
       day: "numeric",
       month: "long",
       year: "numeric",
@@ -718,7 +718,7 @@ export function ExhibitDialog({
                                   rel="noopener noreferrer"
                                   className="inline-flex items-center gap-0.5 font-medium text-primary underline-offset-2 hover:underline"
                                 >
-                                  {lang === "sl" ? "odpri vir" : "open source"}
+                                  {lang === "sl" ? "odpri vir" : lang === "hr" ? "otvori izvor" : lang === "de" ? "Quelle öffnen" : lang === "it" ? "apri la fonte" : "open source"}
                                   <ExternalLink className="h-3 w-3" aria-hidden="true" />
                                 </a>
                               )}

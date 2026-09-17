@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowLeft, CalendarDays, Clapperboard, Sparkles } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, localeOf } from "@/lib/i18n";
 import { BEHIND_SCENES_POSTS } from "@/lib/behind-scenes";
 import { Button } from "@/components/ui/button";
 
@@ -23,7 +23,7 @@ export function BehindScenesView() {
 
   const dateFmt = React.useMemo(
     () =>
-      new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+      new Intl.DateTimeFormat(localeOf(lang), {
         day: "numeric",
         month: "long",
         year: "numeric",

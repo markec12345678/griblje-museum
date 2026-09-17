@@ -1,5 +1,5 @@
 "use client";
-import type { Lang } from "@/lib/i18n";
+import { localeOf, type Lang } from "@/lib/i18n";
 
 /**
  * Muzejska razglednica (vzorec: Useum e-Cards, SFMOMA Send Me,
@@ -64,7 +64,7 @@ export function parsePostcardParams(
 /** Kratek citat kraja in datuma za žig na hrbtni strani. */
 export function postmarkDate(lang: Lang): string {
   const now = new Date();
-  const locale = lang === "sl" ? "sl-SI" : lang === "hr" ? "hr-HR" : "en-GB";
+  const locale = localeOf(lang);
   return new Intl.DateTimeFormat(locale, {
     day: "numeric",
     month: "long",

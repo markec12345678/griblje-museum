@@ -17,7 +17,7 @@ function escapeHtml(text: string): string {
     .replace(/"/g, "&quot;");
 }
 
-function buildWorksheetHtml(school: UiDict["school"], lang: Lang): string {
+function buildWorksheetHtml(school: UiDict["school"], lang: Lang, kicker: string): string {
   const ws = school.worksheet;
   const taskItems = ws.tasks
     .map(
@@ -37,7 +37,7 @@ function buildWorksheetHtml(school: UiDict["school"], lang: Lang): string {
     </div>`;
 
   return `<!DOCTYPE html>
-<html lang="${lang === "sl" ? "sl" : "en"}">
+<html lang="${lang}">
 <head>
 <meta charset="utf-8">
 <title>${escapeHtml(ws.docTitle)}</title>
@@ -98,7 +98,7 @@ function buildWorksheetHtml(school: UiDict["school"], lang: Lang): string {
 <body>
 <header>
   <h1>${escapeHtml(ws.docTitle)}</h1>
-  <p>${escapeHtml(lang === "sl" ? "Bela krajina · občina Črnomelj · od 1468" : "Bela krajina · Municipality of Črnomelj · since 1468")}</p>
+  <p>${escapeHtml(kicker)}</p>
 </header>
 ${fields}
 <p class="intro">${escapeHtml(ws.intro)}</p>
@@ -119,7 +119,7 @@ ${fields}
 
 /** Natisne delovni list v trenutnem jeziku. */
 export function printWorksheet(t: UiDict, lang: Lang): void {
-  const html = buildWorksheetHtml(t.school, lang);
+  const html = buildWorksheetHtml(t.school, lang, t.hero.kicker);
 
   const frame = document.createElement("iframe");
   frame.setAttribute("aria-hidden", "true");

@@ -3,7 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { Calendar, Clock3, Landmark, ScrollText, X } from "lucide-react";
-import { useLang, type Lang } from "@/lib/i18n";
+import { useLang, localeOf, type Lang } from "@/lib/i18n";
 import type { ExhibitDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
 import {
@@ -109,15 +109,43 @@ function suggestedTerms(lang: Lang): string[] {
     return ["Kolpa", "school", "war", "jurjevo", "tobacco", "postcard", "church", "bell"];
   if (lang === "hr")
     return ["Kolpa", "škola", "rat", "jurjevo", "duhan", "razglednica", "crkva", "žbul"];
+  if (lang === "de")
+    return ["Kolpa", "Schule", "Krieg", "Jurjevo", "Tabak", "Postkarte", "Kirche", "Žbul"];
+  if (lang === "it")
+    return ["Kolpa", "scuola", "guerra", "Jurjevo", "tabacco", "cartolina", "chiesa", "Žbul"];
   return ["Kolpa", "šola", "vojna", "jurjevo", "tobak", "razglednica", "cerkev", "žbul"];
 }
 
 function storyKindLabel(kind: StoryHit["kind"], lang: Lang): string {
   if (kind === "ZGODBA")
-    return lang === "sl" ? "zgodba" : lang === "hr" ? "priča" : "story";
+    return lang === "sl"
+      ? "zgodba"
+      : lang === "hr"
+        ? "priča"
+        : lang === "de"
+          ? "Geschichte"
+          : lang === "it"
+            ? "racconto"
+            : "story";
   if (kind === "NACELO")
-    return lang === "sl" ? "kuratorsko načelo" : lang === "hr" ? "kuratorsko načelo" : "curatorial principle";
-  return lang === "sl" ? "razpis za pričevanja" : lang === "hr" ? "natječaj za svjedočanstva" : "call for testimonies";
+    return lang === "sl"
+      ? "kuratorsko načelo"
+      : lang === "hr"
+        ? "kuratorsko načelo"
+        : lang === "de"
+          ? "kuratorisches Prinzip"
+          : lang === "it"
+            ? "principio curatoriale"
+            : "curatorial principle";
+  return lang === "sl"
+    ? "razpis za pričevanja"
+    : lang === "hr"
+      ? "natječaj za svjedočanstva"
+      : lang === "de"
+        ? "Aufruf für Zeugnisse"
+        : lang === "it"
+          ? "appello alle testimonianze"
+          : "call for testimonies";
 }
 
 export function SearchDialog({
@@ -146,7 +174,7 @@ export function SearchDialog({
 
   const dateFmt = React.useMemo(
     () =>
-      new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+      new Intl.DateTimeFormat(localeOf(lang), {
         day: "numeric",
         month: "long",
         year: "numeric",
@@ -351,7 +379,7 @@ export function SearchDialog({
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-medium">
-                            {hit.title[lang === "en" ? "en" : "sl"]}
+                            {hit.title[lang === "sl" || lang === "hr" ? "sl" : "en"]}
                           </span>
                           <span className="mt-0.5 block truncate text-xs text-muted-foreground">
                             {hit.period[lang]}
@@ -376,7 +404,7 @@ export function SearchDialog({
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-medium">
-                            {hit.title[lang === "en" ? "en" : "sl"]}
+                            {hit.title[lang === "sl" || lang === "hr" ? "sl" : "en"]}
                           </span>
                           <span className="mt-0.5 block truncate text-xs text-muted-foreground">
                             {storyKindLabel(hit.kind, lang)}
@@ -401,7 +429,7 @@ export function SearchDialog({
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-medium">
-                            {hit.title[lang === "en" ? "en" : "sl"]}
+                            {hit.title[lang === "sl" || lang === "hr" ? "sl" : "en"]}
                           </span>
                           <span className="mt-0.5 block truncate text-xs text-muted-foreground">
                             {dateFmt.format(new Date(hit.startsAt))} · {hit.location[lang]}

@@ -3,7 +3,7 @@
 import * as React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Clock3, MapPin, MessageCircleHeart, Send, Users } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, localeOf } from "@/lib/i18n";
 import { useMemorySubmit, useObjectMemories } from "@/hooks/use-museum";
 import { CONTRIBUTION_LIMITS } from "@/lib/contribution-limits";
 import type { ExhibitDTO } from "@/lib/types";
@@ -36,7 +36,7 @@ export function ObjectMemories({ exhibit }: { exhibit: ExhibitDTO }) {
 
   const dateFmt = React.useMemo(
     () =>
-      new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+      new Intl.DateTimeFormat(localeOf(lang), {
         day: "numeric",
         month: "long",
         year: "numeric",

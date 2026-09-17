@@ -191,10 +191,18 @@ export async function GET(req: NextRequest) {
     }
     // Hrvaščina (Interreg SI-HR): sprejmemo jo kot jezik vmesnika, vendar
     // vsebina in glas ostaneata slovenska — medsebojna razumljivost ob Kolpi.
-    if (langParam !== "sl" && langParam !== "en" && langParam !== "hr") {
+    // Nemščina in italijanščina: vsebina in glas sta angleška (lingua franca).
+    if (
+      langParam !== "sl" &&
+      langParam !== "en" &&
+      langParam !== "hr" &&
+      langParam !== "de" &&
+      langParam !== "it"
+    ) {
       return NextResponse.json({ error: "Invalid lang" }, { status: 400 });
     }
-    const lang: Lang = langParam === "hr" ? "sl" : langParam;
+    const lang: Lang =
+      langParam === "hr" ? "sl" : langParam === "de" || langParam === "it" ? "en" : langParam;
 
     const exhibit = await db.exhibit.findUnique({ where: { slug } });
     if (!exhibit) {

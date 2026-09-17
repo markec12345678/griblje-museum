@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { normalize } from "@/lib/normalize";
+import { expandQuery } from "@/lib/search-expand";
 
 export const dynamic = "force-dynamic";
 
@@ -11,8 +12,11 @@ export const dynamic = "force-dynamic";
  *
  * Iskanje je neobčutljivo na velike/male črke in diakritike (č→c, ž→z …),
  * tako da "crnomelj" najde tudi "Črnomelj" (glej src/lib/normalize.ts, ki
- * si pravilo deli s filtrom v pogledu zbirke). Odgovor vrača zadetke po
- * tipih s polji v obeh jezikih; pravilen je `Access-Control-Allow-Origin: *`.
+ * si pravilo deli s filtrom v pogledu zbirke). Nemške in italijanske besede
+ * iz pogostega muzejskega besednjaka se razširijo na angleški ekvivalent
+ * (vzorec Europeana) — vsebina zbirk je v slovenščini in angleščini.
+ * Odgovor vrača zadetke po tipih s polji v obeh jezikih; pravilen je
+ * `Access-Control-Allow-Origin: *`.
  */
 
 type Indexed = { haystack: string; fields: string[] };
@@ -37,6 +41,8 @@ export async function GET(request: Request) {
     }
 
     const needle = normalize(raw);
+    // Večjezična razširitev: izvirnik + angleški ekvivalenti (DE/IT).
+    const needles = expandQuery(needle);
 
     const [exhibits, stories, events] = await Promise.all([
       db.exhibit.findMany({ orderBy: { sortOrder: "asc" } }),
@@ -59,7 +65,7 @@ export async function GET(request: Request) {
           ["slug", ex.slug],
         ]);
         const matchedIn = index
-          .filter((entry) => entry.haystack.includes(needle))
+          .filter((entry) => needles.some((n) => entry.haystack.includes(n)))
           .flatMap((entry) => entry.fields);
         return { exhibit: ex, matchedIn };
       })
@@ -90,7 +96,7 @@ export async function GET(request: Request) {
           ["attributionEn", st.attributionEn ?? ""],
         ]);
         const matchedIn = index
-          .filter((entry) => entry.haystack.includes(needle))
+          .filter((entry) => needles.some((n) => entry.haystack.includes(n)))
           .flatMap((entry) => entry.fields);
         return { story: st, matchedIn };
       })
@@ -116,7 +122,7 @@ export async function GET(request: Request) {
           ["locationEn", ev.locationEn],
         ]);
         const matchedIn = index
-          .filter((entry) => entry.haystack.includes(needle))
+          .filter((entry) => needles.some((n) => entry.haystack.includes(n)))
           .flatMap((entry) => entry.fields);
         return { event: ev, matchedIn };
       })
@@ -136,6 +142,7 @@ export async function GET(request: Request) {
       {
         query: raw,
         normalized: needle,
+        expandedTo: needles.length > 1 ? needles.slice(1) : undefined,
         counts: {
           exhibits: exhibitHits.length,
           stories: storyHits.length,

@@ -71,20 +71,22 @@ type ColorShelf = {
   labelSi: string;
   labelEn: string;
   labelHr: string;
+  labelDe: string;
+  labelIt: string;
   rgb: [number, number, number];
   /** Odtenek (0–360°) za kromatične police. */
   hue?: number;
 };
 
 const COLOR_SHELVES: ColorShelf[] = [
-  { id: "nebo", labelSi: "Nebo", labelEn: "Sky", labelHr: "Nebo", rgb: [135, 185, 225], hue: 207 },
-  { id: "zelenje", labelSi: "Zelenje", labelEn: "Greenery", labelHr: "Zelenilo", rgb: [95, 130, 70], hue: 95 },
-  { id: "zemlja", labelSi: "Zemlja", labelEn: "Earth", labelHr: "Zemlja", rgb: [130, 100, 70], hue: 30 },
-  { id: "sonce", labelSi: "Sonce", labelEn: "Sun", labelHr: "Sunce", rgb: [215, 185, 110], hue: 45 },
-  { id: "vino", labelSi: "Vino", labelEn: "Wine", labelHr: "Vino", rgb: [120, 45, 55], hue: 352 },
-  { id: "sneg", labelSi: "Sneg", labelEn: "Snow", labelHr: "Snijeg", rgb: [225, 224, 220] },
-  { id: "cb", labelSi: "Črno-belo", labelEn: "Black & white", labelHr: "Crno-bijelo", rgb: [128, 128, 128] },
-  { id: "noc", labelSi: "Noč", labelEn: "Night", labelHr: "Noć", rgb: [48, 46, 44] },
+  { id: "nebo", labelSi: "Nebo", labelEn: "Sky", labelHr: "Nebo", labelDe: "Himmel", labelIt: "Cielo", rgb: [135, 185, 225], hue: 207 },
+  { id: "zelenje", labelSi: "Zelenje", labelEn: "Greenery", labelHr: "Zelenilo", labelDe: "Grün", labelIt: "Verde", rgb: [95, 130, 70], hue: 95 },
+  { id: "zemlja", labelSi: "Zemlja", labelEn: "Earth", labelHr: "Zemlja", labelDe: "Erde", labelIt: "Terra", rgb: [130, 100, 70], hue: 30 },
+  { id: "sonce", labelSi: "Sonce", labelEn: "Sun", labelHr: "Sunce", labelDe: "Sonne", labelIt: "Sole", rgb: [215, 185, 110], hue: 45 },
+  { id: "vino", labelSi: "Vino", labelEn: "Wine", labelHr: "Vino", labelDe: "Wein", labelIt: "Vino", rgb: [120, 45, 55], hue: 352 },
+  { id: "sneg", labelSi: "Sneg", labelEn: "Snow", labelHr: "Snijeg", labelDe: "Schnee", labelIt: "Neve", rgb: [225, 224, 220] },
+  { id: "cb", labelSi: "Črno-belo", labelEn: "Black & white", labelHr: "Crno-bijelo", labelDe: "Schwarz-weiß", labelIt: "Bianco e nero", rgb: [128, 128, 128] },
+  { id: "noc", labelSi: "Noč", labelEn: "Night", labelHr: "Noć", labelDe: "Nacht", labelIt: "Notte", rgb: [48, 46, 44] },
 ];
 
 const CHROMATIC_SHELVES = COLOR_SHELVES.filter((s) => typeof s.hue === "number");
@@ -168,7 +170,11 @@ function shelfOf(rgb: [number, number, number]): string | null {
 }
 
 function shelfLabel(shelf: ColorShelf, lang: string): string {
-  return lang === "en" ? shelf.labelEn : lang === "hr" ? shelf.labelHr : shelf.labelSi;
+  if (lang === "sl") return shelf.labelSi;
+  if (lang === "hr") return shelf.labelHr;
+  if (lang === "de") return shelf.labelDe;
+  if (lang === "it") return shelf.labelIt;
+  return shelf.labelEn;
 }
 
 export function CollectionView({
