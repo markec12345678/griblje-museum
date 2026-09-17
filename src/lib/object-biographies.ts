@@ -1534,7 +1534,7 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         textEn:
           "The first written mention: a deed writes the village as Griblach.",
         evidenceStatus: "DOCUMENTED",
-        sourceIndex: 2,
+        sourceIndex: 3,
       },
       {
         stage: "prica",
@@ -1546,7 +1546,19 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         textEn:
           "The later forms Briglach and Griblah; Grüble in the urbars and on the oldest map.",
         evidenceStatus: "DOCUMENTED",
-        sourceIndex: 2,
+        sourceIndex: 3,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1843",
+        yearLabelEn: "1843",
+        sortYear: 1843,
+        textSi:
+          "Henrik Freyer: Special-Karta vojvodine Kranjske — ime vasi prvič na kakovostni karti dežele, zapisano kurzivno, slovensko: Griblje, ob Kolpi.",
+        textEn:
+          "Henrik Freyer: the Special-Karte of the Duchy of Carniola — the village's name on a quality map of the land for the first time, written in italic Slovene: Griblje, by the Kolpa.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 5,
       },
       {
         stage: "raziskava",
@@ -1558,7 +1570,7 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         textEn:
           "Snoj's etymological dictionary records the origin of the name as an open question with four possibilities (grib, griba, griblja, griva).",
         evidenceStatus: "DOCUMENTED",
-        sourceIndex: 3,
+        sourceIndex: 4,
       },
       {
         stage: "prica",
@@ -1570,7 +1582,7 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         textEn:
           "Census: 334 inhabitants — 172 men and 162 women.",
         evidenceStatus: "DOCUMENTED",
-        sourceIndex: 0,
+        sourceIndex: 1,
       },
       {
         stage: "danes",
@@ -1582,7 +1594,7 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         textEn:
           "Annual statistics: 329 inhabitants; the village measures 3.45 km² at 153.4 m above the sea. The record will be refreshed with every new census.",
         evidenceStatus: "DOCUMENTED",
-        sourceIndex: 1,
+        sourceIndex: 2,
       },
     ],
   },
@@ -3677,9 +3689,9 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         yearLabelEn: "today",
         sortYear: 2026,
         textSi:
-          "Isti pogled se nadaljuje z orbite: posnetek ISS v zapisu o številkah vasi. Muzej išče izvleček Special-Karte z berljivim imenom vasi.",
+          "Izrez Freyerjeve Special-Karte z berljivim imenom vasi je našel pot v zbirko — kot glavna slika zapisa Griblje v številkah. Isti pogled se nadaljuje z orbite: posnetek ISS ostaja v virih tega zapisa.",
         textEn:
-          "The same gaze continues from orbit: the ISS photograph in the record of the village in numbers. The museum seeks a Special-Karte excerpt with the village name legible.",
+          "An excerpt of Freyer's Special-Karte with the village name legible has found its way into the collection — as the main image of the record Griblje in numbers. The same gaze continues from orbit: the ISS photograph remains among that record's sources.",
         evidenceStatus: "CORROBORATED",
         sourceIndex: 2,
       },

@@ -1381,3 +1381,28 @@ Stage Summary:
 - Ključna najdba: podzemeljski pisar je oktobra 1918 ob pljučnici pisal »(španka)« v treh različnih zapisih; 55 pogrebov v 5,5 tedna; Griblje izgubili Ano Vegino (25) in Alojzija Orehekta (27) — prvi imenovani žrtvi pandemije v vasi
 - Tehnična metoda: createVision (ne create) za slike; zajem posnetkov Matricula (navigacija → takojšen fetch s svežimi žetoni); zaznani duplikatni posnetki strani v knjigi
 - Odprto: izrez Gribelj s Freyerjeve karte (slika 14 MB treba zmanjšati za createVision) + polni vizualni audit 87 slik — naslednji korak; web_search za poplave/kataster (kvota bi morala biti zdaj prosta)
+
+---
+Task ID: 60
+Agent: Main agent (Z.ai Code)
+Task: Nadaljevanje (direktiva: »nadaljuj kjer si ostal«) — revizija slik: popravek izreza Freyerjeve karte (Griblje v številkah) + polni vizualni audit 87 slik + portreta Barle/Dular
+
+Work Log:
+- USTANOVITEV BUGA: prejšnji izrez freyer-griblje-izrez.jpg je prikazoval NAPAČEN del karte — sešiti »JV kvadrant« ploščic GA&C je Kočevsko (Gottschee: Stari Log/Altlag, Stari Breg/Altbacher, Pogorelec, Laze/Reuther — potrjeno z Wikidata koordinatami in seznamom vasi Gottschee na Wikipediji), ne Bela krajina; »Grünbühel« oznaka med Stari/Novi Breg je gotska vas Grünbühel, ne Griblje
+- GA&C GLEDALNIK (agent-browser): zajete nove ploščice vzhodnega roba (2 pogleda, 16 ploščic z4, canvas 6871×5364): najdena oznaka GRIBLJE (G-r-i-b-l-j-e, kurziva) pri canvas (6250, 4566→6314, 4849) z dolgo vrsto hiš (razpotegnjena vas), cerkvijo, Kolpo z mlinom in Mali Lipovecem nad vasjo — identiteta potrjena s tremi neodvisnimi metodami: (1) geometrija (Mali Lipovec 4 km N, reka 1,2 km S, px/km≈55–70), (2) primerjalno branje z Commons izdajo (isti besedi, različni rokopis — Commons = nemška izdaja/dLib, GA&C = NUK), (3) nevtralni forenzični prebrati
+- COMMONS ZMENJAVA: na Commons 3840 px različici (že v projektu) Griblje potrjena 4× pri (3047, 2525) — 8,8 km J od Metlike (3090, 2325), točno po geografiji; z4 izrez bi bil premajhen, zato izrez iz GA&C ploščic (480×460 px domače ločljivosti)
+- NOV IZREZ: canvas (6010–6490, 4530–4990) — Griblje s cerkvijo ob vzhodnem koncu, dolga vrsta hiš, Kolpa z mlinom (rdeči napis), Mali Lipovec nad vasjo; preverjen z VLM (oznaka berljiva, kompozicija dobra) in v brskalniku (VLM je na zaslonu prebral »Griblje«)
+- ZGODBA POPRAVLJENA (SL+EN): odstranjena napačna trditev »Grüble, piše gotska pisava — ob Kolpi, ki vijuga po levi strani« → resnica: »Griblje, piše kurziva, po slovensko« + opis dejanske slike; »Grüble v urbarjih in na najstarejšem zemljevidu« (Wikipedija, necitirano) ostaja kot trditev o urbarju/najstarejši karti (NE o Freyerjevi)
+- VIRI: nov vir gac-freyer-izrez (GA&C/NUK posnetek, URL asset _gEvY_zLVRQmkQ); commons-freyer-stevilke popravljen (prejšnja opomba je trdila »izrez s čitljivim Grüble + posnetek GA&C« — napačno); 380 → 384 virov
+- VIZUALNI AUDIT 87/87 (VLM createVision, nevtralni opisi; 6 zamujenih zapisov z image v isti vrstici dodani drugič): odkriti in popravljenci — janko-barle (orgle stolne cerkve v Splitu → pravi portret 1932, Commons) in joze-dular (renesančni nagrobnik → pravi portret, foto Miran Vesel); ohranjeni kot pošteni (ilustrativno označeni): franc-brinc (krovska obrt), matija-totter (Balmorhea — Teksas, a pošteno navedeno v kreditu), praznik-ks-2024 (noša 1942, ilustrativno), gribeljci-2019 (kongres noš, ilustrativno), tone-kralj-98 (lešniki — pravilno!), kolpa-dolina (smaragdna kraška reka — pravilno), zganje (destilacija — pravilno), ilirska-province (pravilno)
+- MINUTNA ZGODBA griblje-v-stevilkah: »Aerofotografija tega zapisa…« → »Na sliki tega zapisa jih drži skupaj Freyerjeva karta iz leta 1843: Griblje, zapisano kurzivno, ob Kolpi« (SL+EN)
+- BIOGRAFIJE: griblje-v-stevilkah — nova faza 1843 (Freyerjeva karta, ime kurzivno slovensko; sourceIndex 5 = GA&C vir) + popravljeni sourceIndex [3,3,4,1,2] (bili so off-by-one: vir crnomelj-zgodovina-1854 je bil dodan na začetek seznama); stari-zemljevidi — popravljen vir kazalnikov (0,1,2,2) + faza »danes« (izrez je našel pot v zbirko — v zapisu Griblje v številkah)
+- image-dimensions: freyer-griblje-izrez 1800×1100 → 480×460; janko-barle-1932 (500×721), joze-dular-portret (500×607); odvečni datoteki orgle.jpg in dular-muzej.jpg izbrisani; visual-fingerprints regenerirani (87)
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2302 znanih opozoril); reseed 87/384; invariante biografij 87/87/87 (brez duplikatov); agent-browser: dialog griblje-v-stevilkah (naslov, nov kredit z NUK/GA&C, zgodba s kurzivo, 8 virov, slika naložena — VLM prebere »Griblje« na sliki), biografija z novo fazo 1843, mobilno 390 px preliv 0; dev.log brez napak
+- ODPRTA Vrata: master posnetek Commons (25952×20000) zaradi 429 ni dosegljiv — izrez GA&C je v domači ločljivosti z4; morebitna nadgradnja, ko se omejitev sprosti
+
+Stage Summary:
+- Zbirka: 87 zapisov / 384 viri (+4: GA&C posnetek Freyerjeve karte; Barle/Dular portreti)
+- Ključni popravek uporabnikovega poročila »slike niso prave«: Griblje v številkah zdaj kaže PRAVI izrez Freyerjeve karte z berljivim imenom Griblje (kurziva, slovensko), vasjo, cerkvijo, Kolpo in mlinom
+- Metoda: identifikacija pravega položaja prek Wikidata koordinat + treh neodvisnih prebratov + primerjalne analize dveh izdaj karte; GA&C ploščice zajete z agent-browser (žetoni so enkratni — canvas toDataURL iz DOM)
+- Naslednji koraki: kontakti DKŽ/Flajšman/Vaš Kanal (osnutki pripravljeni); morebitna nadgradnja izreza iz master posnetka Commons, ko 429 preteče
