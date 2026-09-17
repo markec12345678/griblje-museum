@@ -352,6 +352,7 @@ Izpeljana dva nova vzorca: **Podobne slike** (Search visually lite) in **Igre mu
 Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletnica 2027,
 140 članov, poveljnik Matija Štrucelj, Brincovi donacije 30.000 € — 82 zapisov / 349 virov (15. sklop: RTV Dragoš 2013, paginacija Radio Odeon strani 13–29, razglednica 1903, tobačna leta).
 - **16. sklop (2026-09-17):** Novo življenje 1914 — povest, ki se dogaja v Gribljah (Mohorjeve večernice, javna last!); Napoleonova carinarnica 1809–1813 (inšpektorat Sisek); Tone Kralj — 98 let; Filakovi naslovi državnega prvaka 2010/2019/2022/2024 — 85 zapisov / 369 virov.
+- **17. sklop — benchmark UI/UX (2026-10):** analiza vrhunskih muzejev (Google Arts & Culture, Rijksmuseum, Louvre, Van Gogh, Tate, NHM, Kamra — poročilo `research-griblje/07-museum-ux-benchmark-2026-10.md`) in sedem izpeljanih vzorcev: **hitri vstop »Kako želite raziskovati?«** na domači strani (GA&C »What do you want to explore?«), **nadaljujte z raziskovanjem** (zadnje odkriti zapisi), **srček na karticah zbirke** (Rijksstudio — enoklik shranjevanje), **barvna polica vasi** (GA&C barvno brskanje: 8 polic — nebo/zelenje/zemlja/sonce/vino/sneg/črno-belo/noč — dodelitev po HSL iz prstnih odtisov), **zadnja in predlagana iskanja** (Tate »Try searching for«), **mobilna spodnja vrstica** (5 poti z enim tapom, safe-area) in **nazaj na vrh** (Louvre/Tate).
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi
 brez zgornjih korakov; `db:push` + `db:seed` sta potrebna le po ponastavitvi

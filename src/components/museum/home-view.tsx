@@ -9,6 +9,7 @@ import { useLang, pick } from "@/lib/i18n";
 import { useGuestbook } from "@/hooks/use-museum";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
+import { ContinueExploring, ExploreStart } from "@/components/museum/home-entry";
 import { MuseumQuiz } from "@/components/museum/museum-quiz";
 import { WalksSection } from "@/components/museum/walks-section";
 import { GuideTeaser } from "@/components/museum/guide-dialog";
@@ -177,6 +178,12 @@ export function HomeView({
           ))}
         </div>
       </section>
+
+      {/* HITRI VSTOP — »Kako želite raziskovati?« (vzorec: Google Arts & Culture) */}
+      <ExploreStart onNavigate={onNavigate} />
+
+      {/* NADALJUJTE Z RAZISKOVANJEM — zadnje odkriti zapisi */}
+      <ContinueExploring exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />
 
       {/* ZAPIS MESECA — uredniška rubrika (vzorec: Picture of the month, NG London) */}
       <RecordOfMonth exhibits={exhibits} onOpenExhibit={(ex) => onOpenExhibit(ex)} />

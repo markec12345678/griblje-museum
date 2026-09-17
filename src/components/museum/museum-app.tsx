@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { trackStat, trackVisitOnce } from "@/lib/stats-client";
 import { Header, VIEW_ORDER, type MuseumView } from "@/components/museum/header";
 import { Footer } from "@/components/museum/footer";
+import { BackToTop, MobileTabBar } from "@/components/museum/quick-nav";
 import { HomeView } from "@/components/museum/home-view";
 import { CollectionView } from "@/components/museum/collection-view";
 import { StoriesView } from "@/components/museum/stories-view";
@@ -766,6 +767,10 @@ export function MuseumApp() {
       </main>
 
       <Footer onNavigate={navigate} />
+
+      {/* Mobilna spodnja vrstica (vzorec: muzejske aplikacije) + nazaj na vrh (Louvre/Tate) */}
+      <MobileTabBar view={view} onNavigate={navigate} onOpenSearch={() => setSearchOpen(true)} />
+      <BackToTop />
 
       <ExhibitDialog
         exhibit={selectedExhibit}
