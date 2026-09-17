@@ -551,6 +551,48 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "On the eve of the feast the Griblje school plants the žbul and weaves a basket of birch; on 24 April Green George — a boy inside the basket — goes house to house and sings: 'Prošel je prošel pisani vuzem, došel je došel zeleni Jure … Dajte mu groš, da vam dojde još!' A shepherds' custom carried by the school.",
   },
+  {
+    slug: "mate-zupanic-svarski",
+    textSi:
+      "Ko je leta 1914 Avstrija napadla Srbijo, se je gribeljski davčni uradnik javil kot prostovoljec. Mate Zupanič-Švarski, brat etnologa Nika, se je z vojsko umaknil skozi Albanijo, obležal v Valoni in na Vidu, se na Krfu spet javil — in odšel na Solunsko fronto. Malarija ga je prepeljala v Francijo, v Toulouse in Nîmes, kjer je 27. aprila 1917 umrl. Pesnik Janko Lavrin mu je posvetil sonete; Griblje so v isti vojni izgubile še tri brate Dragoše. Poslušajte minuto o sinu, ki se ni vrnil.",
+    textEn:
+      "When Austria attacked Serbia in 1914, a tax clerk of Griblje volunteered. Mate Zupanič-Švarski, brother of the ethnologist Niko, retreated with the army through Albania, lay in hospital at Vlorë and on Vido, volunteered again on Corfu — and went to the Salonika front. Malaria carried him to France, to Toulouse and Nîmes, where he died on 27 April 1917. The poet Janko Lavrin dedicated sonnets to him; in the same war Griblje lost also the three Dragoš brothers. A minute on the son who did not come home.",
+  },
+  {
+    slug: "tobacka-leta",
+    textSi:
+      "Po vojni so strokovnjaki presenetili obkolpske kmete: podnebje Bele krajine je primerno za tobak. V Gribljah je burley zrasel v vodilno poljščino — rastline čez dva metra, vsak list z roko, sušenje na palicah, vonj nad vasjo celo poletje. Do osemdesetih ga je gojilo sedemdeset belokranjskih kmetov; potem so prišli cenejši tobak, upad kadilcev in konec ljubljanske tovarne. Polja so se vrnila koruzi — spomin pa še diši.",
+    textEn:
+      "After the war the experts surprised the farmers by the Kolpa: Bela krajina's climate suits tobacco. In Griblje burley grew into a leading crop — plants past two metres, every leaf by hand, curing on sticks, the smell over the village all summer. By the 1980s seventy Bela krajina farmers grew it; then came cheaper tobacco, the decline of smokers, the end of the Ljubljana factory. The fields went back to maize — the memory still smells.",
+  },
+  {
+    slug: "krizevo-pastirski-dan",
+    textSi:
+      "Štirideset dni po veliki noči so belokranjski pastirji praznovali križevo: živina je šla na pašnike na vse leto, pastirji pa so imeli ta dan svoj praznik. Matija Totter je njihove navade zapisal za Barleta in Županiča; sto let pozneje so kmečke žene in turistično društvo igre obudile na kopališču. Leta 2026 sta pastirski dan ob Kolpi priredili kolesarska sekcia Torpedo in Dragica Piškurič — s pečenimi jajci in vsemi generacijami.",
+    textEn:
+      "Forty days after Easter the shepherds of Bela krajina kept križevo: the stock went to pasture for the whole year, and the shepherds had their own feast. Matija Totter wrote their ways down for Barle and Županič; a hundred years later the farm women and the tourist society revived the games at the pool. In 2026 the Torpedo cycling section and Dragica Piškurič held a shepherds' day by the Kolpa — with painted eggs and every generation.",
+  },
+  {
+    slug: "razglednica-1903",
+    textSi:
+      "Dvaindvajsetega aprila 1903 je Fani Mežnaršič iz Metlike napisala razglednico in jo naslovila gribeljski učiteljici. Besedilo je bilo šala o železnici, ki se je gradila pol stoletja — in Gribljam obšla za šest kilometrov. Kartica je prispela; vlak v vas ni nikoli. Najstarejši znani naslovljeni predmet, ki je Griblje doseže po pošti, danes drži spomin na čas, ko je bila pismenost stanovala v šoli.",
+    textEn:
+      "On 22 April 1903 Fani Mežnaršič of Metlika wrote a postcard and addressed it to the Griblje schoolmistress. The text joked about the railway that had been building itself for half a century — and missed Griblje by six kilometres. The card arrived; the train never did. The oldest known addressed item to reach Griblje by post now holds the memory of a time when literacy lived at the school.",
+  },
+  {
+    slug: "dkz-griblje",
+    textSi:
+      "V Gribljah sta dva koledarja: tisti z žigi pišejo župani, tisti s kruhom pa kmečke žene. Društvo je leta 1996 soizdalo knjižico o gribeljskem žbulu, obudilo pastirske igre na kopališču in vsako pomlad naredilo Pozdrav pomladi — s folklorom, Viniškimi cür in tekmovalno peko kruha. Roke, ki držijo vas, ne prosijo za plakat: prosijo za moko.",
+    textEn:
+      "Griblje has two calendars: the stamped one is written by mayors, the bread one by the farm women. The society co-published the booklet on the Griblje žbul in 1996, revived the shepherds' games at the pool, and every spring makes the Spring Greeting — with folklore, the Viniške cür and a competitive bread baking. The hands that hold the village do not ask for a poster: they ask for flour.",
+  },
+  {
+    slug: "anton-brodaric",
+    textSi:
+      "Anton Brodarič je z Gribelj odšel na tritedensko ekspedicijo v Azijo in stopil na vrh Mera Peaka: 6.467 metrov, najvišja točka, ki jo je kdaj dosegel človek iz te vasi ob Kolpi. Doma so ga pričakali v Domu krajanov — sedemdeset ljudi v prostoru za osemnajst. Občina mu je podelila priznanje; čajanka v Kovačnici sreče pa je zgodbo nosila čez zimo. Ravnina, ki pošlje človeka na Himalajo.",
+    textEn:
+      "Anton Brodarič went from Griblje on a three-week expedition to Asia and stood on the summit of Mera Peak: 6,467 metres, the highest point ever reached by a man of this village on the Kolpa. At home they met him in the Dom krajanov — seventy people in a room for eighteen. The municipality gave him its recognition; a tea evening at the Kovačnica sreče carried the story through the winter. A plain that sends a man to the Himalaya.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {
