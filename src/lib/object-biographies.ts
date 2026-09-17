@@ -1925,6 +1925,18 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
       {
         stage: "prica",
+        yearLabelSi: "1728",
+        yearLabelEn: "1728",
+        sortYear: 1728,
+        textSi:
+          "Župnija začne voditi vzporedni mrliški zvezek z oznako Nemškega viteškega reda (1728–1803) — red, ki je leta 1268 prejel župnijo Črnomelj z podružnicami, piše svoje ime še globoko v 18. stoletje.",
+        textEn:
+          "The parish begins a parallel burial volume labelled with the Teutonic Order (1728–1803) — the order that received the parish of Črnomelj with its filials in 1268 writes its name deep into the eighteenth century.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
         yearLabelSi: "1947",
         yearLabelEn: "1947",
         sortYear: 1947,
