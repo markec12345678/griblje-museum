@@ -1267,3 +1267,23 @@ Stage Summary:
 - 7 novih UX vzorcev: hitri vstop, nadaljevanje ogleda, srček na karticah, barvna polica (edinstvena: HSL dodelitev iz lastnih prstnih odtisov, 8 polic z vaškimi imeni), zadnja+predlagana iskanja, mobilna spodnja vrstica, nazaj na vrh
 - Produkcija: čaka push (naslednji korak)
 - Naslednji koraki: DE/IT jeziki; VLM vizualna kontrola (ko se kvota sprosti); A/B barvnih pragov po uporabi
+---
+Task ID: 55
+Agent: Main agent (Z.ai Code)
+Task: Popravek neustreznih slik (direktiva uporabnika: »slike niso prave … tukaj je atmosfera zemlje … ne odraža, kaj piše … in takih je še par napak«)
+
+Work Log:
+- AUDIT: izvožen seznam vseh 85 zapisov + slik + kreditov; z-ai VLM cel dan 429 (tudi CLI; vzporedno z včerajšnjim vzorcem) → izveden kreditno-vsebinski audit + preverjanje skladnosti zgodba↔slika pri vseh zapisih z omembo slik
+- NAJDBA #1 (potrjena od uporabnika): griblje-v-stevilkah — glavna slika je bil posnetek Zemljine atmosfere z ISS (NASA, odprava 67); vsebina zapisa so pisni zapisi imena (Griblach 1468 …) in popisi → ZAMENJANO s Freyerjevo Special-Karto vojvodine Kranjske 1843 (Wikimedia Commons, izvirnik 3840 px, javna last; posnetek GA&C); karta je »prva, na kateri je vsaka vas dobila ime« (že dokumentirano v virih starih zemljevidov); odstavek zgodbe o vesoljski postaji preoblikovan v »sredino poti« med listino 1468 in popisom 2026; muzej naprej išče izvleček v berljivi velikosti; vir ISS ohranjen kot prejšnja slika; usklajena tudi zgodba starih zemljevidov (navzkrižna omemba ISS odstranjena, sedaj »To karto v celoti nosi zapis o številkah vasi«)
+- NAJDBA #2: matice-podzemelj — glavna slika je bila krstna knjiga župnije MOŠNJE (napačna župnija, Gorenjska) → dekodirani Matricula Online slikovni žetoni (base64 proxy → hosted-images.matricula-online.eu), prenesenih prvih 5 strani prave podzemeljske krstne knjige 1669–1703 (knjiga 01723); izbrana prva razprostrta stran (analiza pokritosti s črnilom; JPEG popravljen: odvečna bajta pred markerjem 0db, ponovno kodiranje); kredit: Nadškofijski arhiv Ljubljana · Matricula Online; zadnji stavek zgodbe (»muzej ni prenesel strani«) nadomeščen z novim (»matice niso več le vrata, ampak tudi pogled«); Mošnje ohranjena kot prejšnja ilustrativna slika
+- NAJDBA #3: vaska-sola — NOTRANJA NASPROTNOST: zgodba je trdila »stavba na fotografiji tega zapisa je ravno ona — danes glasbena šola« (partizanska gimnazija Črnomelj 1943), a slika je bil Trubarjev Abecednik 1550 → na Commons najdena točno ta stavba (Glasbena šola Črnomelj, med drugo svetovno vojno partizanska gimnazija; Bb63lj, CC BY 4.0, lastno delo 2024), prenesena 1920 px, slika zamenjana; Abecednik ohranjen kot prejšnja slika; zgodba sedaj spet drži
+- SISTEMATSKA IZBOLJŠAVA: 18 kreditov brez opisa vsebine dopolnjenih (sveti-vid, bojanci-1908, sokcev-dvor, kolpa, malenca, mlin-pobrezje, snos-crnomelj, audrey-totter, kolesa-torpedo, storklja, breze, crni-moceril, predenje, oranje, jurjevanje [dodan tudi označnik ilustrativno], meja, evakuacija, otok-letalisce) — vsak kredit sedaj pove, kaj slika prikazuje
+- OBVOZNE POTI: RO (prej Cloudflare) sedaj dosegljiv — članek o Madroničevem mlinu ima 9 fotografij PRAVEGA mlina (arhiv Petre in Petra Madroniča / Božidar Flajšman), a avtorske pravice niso odprte → Kuzmin mlin (Pobrežje, javna last) zadržan, razkritje v viru ostaja; VLM prober v ozadju (40 poskusov / 150 s) — brez uspeha
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2302 znanih opozoril); prstni odtisi regenerirani (85/85, 17,6 kB; polici samodejno: Zemlja 15→16 za Freyerjevo karto, Sneg 2→1 za odhod Abecednika); reseed db/custom.db 85 zapisov; API vrača nove poti slik; slike 200 (matica 611 kB, freyer 4,1 MB, glasbena 629 kB); agent-browser: dialogi vseh treh popravkov (naslovi, krediti, novi odstavki zgodb, viri z »prejšnja slika«), barvne police s števci, mobilno 390 px brez preliva, noga na dnu, 0 novih napak v konzoli (getBiography = znane prehodne HMR); 4 zaslonke (stevilke-freyer, matice-podzemelj-nova, vaska-sola-stavba, mobilna-domov-revizija)
+- PRODUKCIJA: commit 9364c21 pushan na origin/main
+
+Stage Summary:
+- Trije popravki skladnosti slika↔vsebina: ISS→Freyer 1843 (številke), Mošnje→prava podzemeljska matica 1669 (matice), Abecednik→stavba partizanske gimnazije (vaška šola — popravljena notranja nasprotost zgodje)
+- 18 kreditov sedaj opisuje vsebino slike; vsaka zamenjava ima ohranjen vir »prejšnja slika« (muzejska iskrenost)
+- Matricula Online dostop dela (base64 žetoni) — vir novih posnetkov matic za prihodnje
+- Odprto: VLM cel dan 429 → izrez Freyerjeve karte z berljivim imenom vasi + polni vizualni audit 85 slik čakata na kvoto; RO fotografije Madroničevega mlina čakajo na dovoljenje družine
