@@ -49,7 +49,7 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   // zamenjane slikovne poti (revizija 2026-09: slike morajo ustrezati napisom)
   "/images/authentic/zaseda-spomenik.jpg": { width: 342, height: 332 },
   "/images/authentic/spomenik-griblje.jpg": { width: 221, height: 540 },
-  "/images/authentic/sola-abecednik.jpg": { width: 404, height: 700 },
+  "/images/authentic/glasbena-crnomelj.jpg": { width: 1920, height: 1440 },
   "/images/authentic/izseljenci-ladja.jpg": { width: 1509, height: 964 },
   "/images/authentic/vino-presa.jpg": { width: 618, height: 1010 },
   "/images/authentic/hisa-adlesici.jpg": { width: 1000, height: 619 },
@@ -57,7 +57,8 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/pgd-crpalka-1924.jpg": { width: 1200, height: 1600 },
   "/images/authentic/dragos-kolpa-1920.jpg": { width: 1076, height: 681 },
   "/images/authentic/kambic-bozic.jpg": { width: 620, height: 1032 },
-  "/images/authentic/matice-knjiga.jpg": { width: 1275, height: 954 },
+  "/images/authentic/matica-podzemelj-1669.jpg": { width: 2548, height: 1652 },
+  "/images/authentic/freyer-special-karta-1843.jpg": { width: 3840, height: 2959 },
   "/images/authentic/cerkvisce-kapelica.jpg": { width: 1400, height: 1875 },
   "/images/authentic/pasuljada.jpg": { width: 1600, height: 1200 },
   "/images/authentic/katarina-herbarij.jpg": { width: 2069, height: 2920 },
