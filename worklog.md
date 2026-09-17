@@ -1333,3 +1333,6 @@ Stage Summary:
 - Edinstveno: večjezična razširitev poizvedbe (Europeana) — nemški/italijanski obiskovalec išče v svojem jeziku in najde angleško dokumentirano vsebino
 - Odprto: VLM še vedno 429 (zanka čaka — izrez Griblj s Freyerjeve karte + vizualni audit 86 slik); odgovor AI vodnika v DE/IT bo preizkušen, ko se kvota sprosti (sistemski pozivi strukturno preverjeni); TTS za DE/IT govori angleško (enako kot danes za EN)
 - Naslednji koraki: VLM (ko se kvota sprosti); kontakti DKŽ/Flajšman/Vaš Kanal; po uporabi morda A/B jezikovnega menija
+
+Nadaljevanje taska 57 (isti commit dan):
+- GLOBOKE POVEZAVE Z JEZIKOM: LanguageProvider prebere ?lang= (validacija proti LANG_CODES, prednost pred shranjeno izbiro, persist v localStorage); neveljaven parameter (?lang=xx) se tiho prezre; preizkušeno z ?lang=it (preklop + persist) in ?lang=xx (ignoriranje); README dopolnjen; commit 3267080 pushan
