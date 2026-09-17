@@ -18,6 +18,11 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/razglednica-metlika.jpg": { width: 1093, height: 671 },
   "/images/authentic/kmecke-zene-testo.jpg": { width: 1920, height: 1283 },
 
+  // revizija 2026-09 (3. krog): 16. sklop — povest 1914, Ilirske province, Tone Kralj
+  "/images/authentic/novo-zivljenje-1914.jpg": { width: 960, height: 1594 },
+  "/images/authentic/ilirske-province-1812.jpg": { width: 1920, height: 1946 },
+  "/images/authentic/lesniki.jpg": { width: 1280, height: 960 },
+
   "/images/authentic/griblje-vas.jpg": { width: 800, height: 574 },
   "/images/authentic/zaselki-griblje.jpg": { width: 1920, height: 1286 },
   "/images/authentic/dakota.jpg": { width: 1600, height: 1200 },

@@ -4143,6 +4143,129 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "novo-zivljenje-1914",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1914",
+        yearLabelEn: "1914",
+        sortYear: 1914,
+        textSi:
+          "Družba sv. Mohorja v Celovcu izda 68. zvezek Slovenskih večernic: povest Novo življenje, spisal Josip Kostanjevec — z dnem, ki se začne na malem griču, kjer čepi vas Griblje.",
+        textEn:
+          "The St. Hermagoras Society in Celovec issues the 68th volume of the Slovene Večernice: the tale Novo življenje, written by Josip Kostanjevec — with a day that begins on the small hill where the village of Griblje sits.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1914 → bralci",
+        yearLabelEn: "1914 → its readers",
+        sortYear: 1915,
+        textSi:
+          "Večernice, »za pouk in kratek čas«, nosijo gribeljsko zgodbo o šoli, oderuhu in posojilnici v slovenske hiše od Trsta do Prekmurja.",
+        textEn:
+          "The Večernice, \"for instruction and a short while\", carry the Griblje story of the school, the usurer and the savings-and-loan into Slovene houses from Trieste to Prekmurje.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Povest je v javni lasti: celotno besedilo stoji na Wikiviru, izvirni sken na Wikimedii — muzej pa je dobil svojo edino knjižno dogodivščino.",
+        textEn:
+          "The tale is in the public domain: the full text stands on Wikisource, the original scan on Wikimedia — and the museum has gained its only bookish adventure.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+    ],
+  },
+  {
+    slug: "ilirska-carina-1809",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1809",
+        yearLabelEn: "1809",
+        sortYear: 1809,
+        textSi:
+          "Po Dunajskem miru dežele od Kranjske do Dalmacije sestavijo francoske Ilirske province; ob Kolpi zariše carinsko verigo inšpektorata Sisek — z Gribljami med postajami.",
+        textEn:
+          "After the Peace of Schönbrunn the lands from Carniola to Dalmatia form the French Illyrian Provinces; along the Kolpa it draws a customs chain of the Sisak inspectorate — with Griblje among the stations.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1812",
+        yearLabelEn: "1812",
+        sortYear: 1812,
+        textSi:
+          "Francoski geometri zarišejo meje provinc na zemljevid; Griblje na njem seveda ni — prevelike črte za tako majhno vas.",
+        textEn:
+          "French surveyors draw the provinces' borders on a map; Griblje, of course, is not on it — lines too large for so small a village.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "1813 → danes",
+        yearLabelEn: "1813 → today",
+        sortYear: 1813,
+        textSi:
+          "Province razpadejo, carinarnica izgine — a prehod ob Kolpi ostane: danes zunanja meja in hkrati schengenska odprtost. Imperiji so zunanja plast; reka je notranja.",
+        textEn:
+          "The provinces collapse, the customs post vanishes — yet the crossing on the Kolpa remains: today an external border and at the same time a Schengen openness. Empires are the outer layer; the river is the inner one.",
+        evidenceStatus: "CORROBORATED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "tone-kralj-98",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "~1928",
+        yearLabelEn: "c. 1928",
+        sortYear: 1928,
+        textSi:
+          "V Gribljah se rodi Tone Kralj — generacija, ki je kot otrok še gledala prvo polovico 20. stoletja z vasi.",
+        textEn:
+          "Tone Kralj is born in Griblje — a generation that, as children, still watched the first half of the 20th century from the village.",
+        evidenceStatus: "TESTIMONY",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "2026",
+        yearLabelEn: "2026",
+        sortYear: 2026,
+        textSi:
+          "Za 98. rojstni dan ga obiščejo Rdeči križ, borci za vrednote NOB in upokojenci Črnomlja; slavljenec še lušči lešnike, suši peteršilj in karta s pravnuki.",
+        textEn:
+          "For his 98th birthday he is visited by the Red Cross, the fighters for NOB values and the Črnomelj pensioners; the celebrant still shells hazelnuts, dries parsley and plays cards with his great-grandchildren.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2028?",
+        yearLabelEn: "2028?",
+        sortYear: 2028,
+        textSi:
+          "Pred vrati je stoletnica — v vasi, ki je dala najstarejšega Slovenca. Muzej čaka januar 2028, da bi zapis dopolnil s praznovanjem.",
+        textEn:
+          "At the door stands the century — in a village that gave Slovenia its oldest man. The museum awaits January 2028 to enlarge the record with a celebration.",
+        evidenceStatus: "TRADITION",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {
