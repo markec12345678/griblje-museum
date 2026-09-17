@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, BookHeart, BookOpen, Clapperboard, Database, FileSearch, Gamepad2, Map as MapIcon, CalendarDays, MessageCircleQuestion, Sparkles } from "lucide-react";
-import { useLang, pick } from "@/lib/i18n";
+import { useLang, pick, localeOf } from "@/lib/i18n";
 import { useGuestbook } from "@/hooks/use-museum";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { CollectorProgress } from "@/components/museum/collector-progress";
@@ -71,7 +71,7 @@ export function HomeView({
   const sourceCount = exhibits.reduce((total, ex) => total + ex.sources.length, 0);
   const categoryCount = new Set(exhibits.map((ex) => ex.category)).size;
 
-  const dateFmt = new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+  const dateFmt = new Intl.DateTimeFormat(localeOf(lang), {
     day: "numeric",
     month: "long",
     year: "numeric",

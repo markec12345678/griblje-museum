@@ -32,7 +32,7 @@ const messageSchema = z.object({
 });
 
 const bodySchema = z.object({
-  lang: z.enum(["sl", "en", "hr"]),
+  lang: z.enum(["sl", "en", "hr", "de", "it"]),
   messages: z.array(messageSchema).min(1).max(GUIDE_LIMITS.history),
 });
 

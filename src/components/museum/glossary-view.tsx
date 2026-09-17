@@ -33,7 +33,7 @@ export function GlossaryView({
   const reduceMotion = useReducedMotion();
   const [query, setQuery] = React.useState("");
 
-  const isEnglish = lang === "en";
+  const isEnglish = lang !== "sl" && lang !== "hr";
 
   const matches = React.useCallback(
     (term: GlossaryTerm) => {

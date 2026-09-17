@@ -698,9 +698,9 @@ function FilmView({
     (runId: number, slug: string) => {
       const story = getMinuteStory(slug);
       const text = story
-        ? lang === "en"
-          ? story.textEn
-          : story.textSi
+        ? lang === "sl" || lang === "hr"
+          ? story.textSi
+          : story.textEn
         : "";
       if (!browserSpeechSupported() || !text) {
         setNarration("error");
@@ -709,7 +709,7 @@ function FilmView({
       setNarration("playing");
       speechRef.current?.cancel();
       // Hrvaški uporabnik posluša slovensko vsebino (razumljivost ob Kolpi).
-      void speakBrowser(text, lang === "en" ? "en" : "sl", {
+      void speakBrowser(text, lang === "sl" || lang === "hr" ? "sl" : "en", {
         onEnd: () => {
           if (runId !== runIdRef.current) return;
           speechRef.current = null;
@@ -739,7 +739,7 @@ function FilmView({
         try {
           const res = await fetch(
             `/api/audio-guide?slug=${encodeURIComponent(slug)}&lang=${
-              lang === "en" ? "en" : "sl"
+              lang === "sl" || lang === "hr" ? "sl" : "en"
             }&minute=1&chunk=${chunk}`
           );
           if (!res.ok) throw new Error("audio");

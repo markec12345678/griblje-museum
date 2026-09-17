@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { CalendarDays } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, localeOf } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import { resolveRecordOfMonth } from "@/lib/record-of-month";
 import type { ExhibitDTO } from "@/lib/types";
@@ -48,7 +48,7 @@ export function RecordOfMonth({
   const { exhibit, entry } = pick;
 
   const monthFmt = new Intl.DateTimeFormat(
-    lang === "sl" ? "sl-SI" : lang === "hr" ? "hr-HR" : "en-GB",
+    localeOf(lang),
     { month: "long", year: "numeric" }
   );
 

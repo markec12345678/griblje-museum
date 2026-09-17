@@ -2,8 +2,8 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { Accessibility, Moon, Search, Sun, Menu, Landmark, MessageCircleQuestion, RotateCcw } from "lucide-react";
-import { useLang, type Lang } from "@/lib/i18n";
+import { Accessibility, Moon, Search, Sun, Menu, Landmark, MessageCircleQuestion, RotateCcw, Globe, Check } from "lucide-react";
+import { useLang, LANG_CODES, LANG_NAMES, type Lang } from "@/lib/i18n";
 import { useA11y } from "@/lib/a11y";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -178,30 +178,51 @@ export function Header({
             <Search className="h-4.5 w-4.5" aria-hidden="true" />
           </Button>
 
-          {/* Jezikovna stikala SLO/HRV/EN (hrvaščina — čezmejna razumljivost
-              ob Kolpi; priprava na program Interreg SI-HR) */}
-          <div
-            role="group"
-            aria-label={t.a11y.switchLang}
-            className="flex items-center rounded-md border border-border bg-card p-0.5"
-          >
-            {(["sl", "hr", "en"] as Lang[]).map((code) => (
-              <button
-                key={code}
-                type="button"
-                onClick={() => switchLang(code)}
-                aria-pressed={lang === code}
-                className={cn(
-                  "rounded-sm px-2.5 py-1.5 text-xs font-semibold tracking-wide uppercase transition-colors",
-                  lang === code
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
+          {/* Jezikovni meni — 5 jezikov (SLO/HRV/EN/DEU/ITA), spustni vzorec
+              vodilnih muzejev (Rijksmuseum, Louvre): ikona globusa in domača
+              imena jezikov; hrvaščina kot čezmejna razumljivost ob Kolpi,
+              nemščina in italijanščina za obiskovalce Bela krajine */}
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-11 gap-1.5 px-3"
+                aria-label={t.a11y.switchLang}
+                aria-haspopup="listbox"
               >
-                {code === "sl" ? "SLO" : code === "hr" ? "HRV" : "EN"}
-              </button>
-            ))}
-          </div>
+                <Globe className="h-4 w-4" aria-hidden="true" />
+                <span className="text-xs font-semibold tracking-wide uppercase">
+                  {lang}
+                </span>
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent align="end" className="w-52 p-1.5">
+              <ul role="listbox" aria-label={t.a11y.switchLang}>
+                {LANG_CODES.map((code) => (
+                  <li key={code}>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected={lang === code}
+                      onClick={() => switchLang(code)}
+                      className={cn(
+                        "flex min-h-11 w-full items-center justify-between gap-2 rounded-md px-3 text-left text-sm transition-colors",
+                        lang === code
+                          ? "bg-primary/10 font-semibold text-primary"
+                          : "font-medium text-foreground hover:bg-muted"
+                      )}
+                    >
+                      <span lang={code}>{LANG_NAMES[code]}</span>
+                      {lang === code && (
+                        <Check className="h-4 w-4 shrink-0" aria-hidden="true" />
+                      )}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </PopoverContent>
+          </Popover>
 
           {/* Dostopnostna plošča — lastna, brez zunanjih prekrivnih
               gradnikov (priporočilo AAM; vzorec: muzeji za vsakega) */}

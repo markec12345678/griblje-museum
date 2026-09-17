@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { CalendarDays, ExternalLink, MapPin, Sparkles } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, localeOf } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import type { MuseumEventDTO } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
@@ -13,12 +13,12 @@ export function EventsView({ events }: { events: MuseumEventDTO[] }) {
   const es = useExhibitStrings();
   const reduceMotion = useReducedMotion();
 
-  const dateFmt = new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+  const dateFmt = new Intl.DateTimeFormat(localeOf(lang), {
     day: "numeric",
     month: "long",
     year: "numeric",
   });
-  const weekdayFmt = new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+  const weekdayFmt = new Intl.DateTimeFormat(localeOf(lang), {
     weekday: "long",
   });
 
@@ -96,7 +96,7 @@ export function EventsView({ events }: { events: MuseumEventDTO[] }) {
                         className="inline-flex items-center gap-1.5"
                       >
                         <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                        {lang === "sl" ? "Spletna stran dogodka" : "Event website"}
+                        {lang === "sl" ? "Spletna stran dogodka" : lang === "hr" ? "Web-stranica događaja" : lang === "de" ? "Veranstaltungs-Website" : lang === "it" ? "Sito web dell'evento" : "Event website"}
                       </a>
                     </Button>
                   )}

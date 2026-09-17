@@ -3,7 +3,7 @@
 import * as React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { BookHeart, CheckCircle2, Clock3, Feather, Globe2, MapPin, PenLine } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, localeOf } from "@/lib/i18n";
 import { useGuestbook, useGuestbookSubmit } from "@/hooks/use-museum";
 import { CONTRIBUTION_LIMITS as LIMITS } from "@/lib/contribution-limits";
 import { Button } from "@/components/ui/button";
@@ -33,7 +33,7 @@ export function GuestbookView() {
 
   const dateFmt = React.useMemo(
     () =>
-      new Intl.DateTimeFormat(lang === "sl" ? "sl-SI" : "en-GB", {
+      new Intl.DateTimeFormat(localeOf(lang), {
         day: "numeric",
         month: "long",
         year: "numeric",

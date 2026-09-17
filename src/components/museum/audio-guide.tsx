@@ -26,7 +26,7 @@ type SpeechHandle = { cancel: () => void };
  * razumljivost ob Kolpi) — zato tu "sl" pomeni "slovenska vsebina". */
 type AudioLang = "sl" | "en";
 
-const audioLangOf = (lang: Lang): AudioLang => (lang === "en" ? "en" : "sl");
+const audioLangOf = (lang: Lang): AudioLang => (lang === "sl" || lang === "hr" ? "sl" : "en");
 
 /** Pripoved vodnika, zgrajena na odjemalcu (enaka sestava kot na strežniku) —
  * nujna za rezervo z glasom naprave, ko strežniška sinteza odpove. */

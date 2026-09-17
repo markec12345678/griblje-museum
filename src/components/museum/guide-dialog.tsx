@@ -9,7 +9,7 @@ import {
   SendHorizontal,
   Sparkles,
 } from "lucide-react";
-import { useLang, type Lang } from "@/lib/i18n";
+import { useLang, localeOf, type Lang } from "@/lib/i18n";
 import { trackStat } from "@/lib/stats-client";
 import type { ExhibitDTO } from "@/lib/types";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
@@ -50,7 +50,7 @@ function formatResetTime(
   const date = new Date(resetAt);
   if (Number.isNaN(date.getTime())) return null;
   try {
-    const locale = lang === "sl" ? "sl-SI" : lang === "hr" ? "hr-HR" : "en-GB";
+    const locale = localeOf(lang);
     return new Intl.DateTimeFormat(locale, {
       hour: "2-digit",
       minute: "2-digit",

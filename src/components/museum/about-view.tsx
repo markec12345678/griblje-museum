@@ -18,7 +18,7 @@ import {
   Quote,
   Target,
 } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, localeOf } from "@/lib/i18n";
 import { useQuery } from "@tanstack/react-query";
 import { isStatsReadOnly } from "@/lib/stats-client";
 import { ALL_WALKS } from "@/lib/walks";
@@ -195,7 +195,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             },
             { value: ALL_WALKS.length, label: t.about.numbers.walks },
             { value: QUIZ_QUESTION_COUNT, label: t.about.numbers.quizQuestions },
-            { value: 3, label: t.about.numbers.languages },
+            { value: 5, label: t.about.numbers.languages },
             { value: 11, label: t.about.numbers.endpoints },
           ].map((item) => (
             <div
@@ -237,7 +237,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
                 className="rounded-xl border border-border/70 bg-card p-4 text-center"
               >
                 <p className="font-display text-3xl font-semibold text-primary">
-                  {item.value.toLocaleString(lang === "sl" ? "sl-SI" : lang === "hr" ? "hr-HR" : "en-GB")}
+                  {item.value.toLocaleString(localeOf(lang))}
                 </p>
                 <p className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   {item.label}
@@ -258,7 +258,7 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
                       key={top.slug}
                       className="flex items-center gap-2 rounded-full border border-border/70 bg-card px-3 py-1.5 text-sm"
                     >
-                      <span className="font-medium">{ex ? (lang === "en" ? ex.titleEn : ex.titleSi) : top.slug}</span>
+                      <span className="font-medium">{ex ? (lang === "sl" || lang === "hr" ? ex.titleSi : ex.titleEn) : top.slug}</span>
                       <span className="text-muted-foreground">· {top.opens}</span>
                     </li>
                   );
