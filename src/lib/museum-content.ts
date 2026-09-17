@@ -626,6 +626,120 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "kolpa-extremi",
+    category: "kolpa",
+    titleSi: "Reka ekstremov — suša in poplave",
+    titleEn: "A river of extremes — drought and floods",
+    periodSi: "hidrološka kronika 1952 → danes",
+    periodEn: "a hydrological chronicle 1952 → present",
+    summarySi:
+      "Kolpa nikoli ni bila krotka: na postaji Metlika so v istem koritu izmerili 4,6 in 1.116 kubičnih metrov vode na sekundo. Leto 2022 je zapisalo oba ekstrema v enem koledarju.",
+    summaryEn:
+      "The Kolpa was never tame: at the Metlika station the same riverbed has carried 4.6 and 1,116 cubic metres of water per second. The year 2022 wrote both extremes into one calendar.",
+    storySi:
+      "Kolpa nikoli ni bila krotka. Da zna priti čez bregove, je vsaka rodbina ob njej vedela že stoletja: mline so zato gradili v nadstropje, malence po vsaki zimi znova popravljali, poplavne travnike — loke — pa jemali kot letno darilo razlivanja, ne kot škodo. Vzponi in upadi reke so bili del kmečkega računa enako kot žetev in suša.\n\nVodomerna postaja Metlika meri Kolpo od leta 1952 — najdaljše neprekinjeno pričevanje o reki, ki teče kakih dvanajst kilometrov dolvodno od vasi. V teh desetletjih je izmerila najmanjši pretok 4,6 kubičnega metra na sekundo (1. avgusta 1983) in največjega 1.116 (konec septembra 1979). Med dnem in viškom istega korita je razmerje dobrih dvesto dvainštirideset proti ena: reka, ki pozimi in poleti ni ista.\n\nNato je prišlo leto 2022 in prelomilo tabelo na sredini. Julija je bil skupni kazalnik vodnatosti slovenskih rek 0,38 — najnižji julij odkar se računa (od 1961); Kolpa je pri Metliki 10. avgusta tekla s komaj 7,8 kubičnega metra na sekundo. Dva meseca pozneje, med 15. in 18. septembrom, je ista postaja izmerila 1.009 kubičnih metrov na sekundo — največjo kdaj hidrometrično izmerjeno vrednost odkar se na tem mestu meri. Voda je stopila v kampe od Vinice do Metlike in v hiše ob bregovih, gasilci so polnili protipoplavne vreče, Lahinja v Gradcu pa je presegla celo tretjo visokovodno raven. In leto se še ni končalo: konec septembra je Kolpa znova narasla — med največje pretoke zadnjih sedemdesetih let — decembra pa je poplavljala še tretjič.\n\nSeptembra 2025 je reka dodala nov podatek: hitrost. Na postaji Petrina se je vodostaj v dobrih treh urah dvignil za tri metre; ob Kolpi so zaprli ceste med Dolom in Prelesjem. »V sredo ob štirih je bila Kolpa še za kopat,« je naslednji dan povedal Peter Madronič iz Prelesja — pravnuk mlinarske rodbine, katere mlin ima v tej zbirki svoj zapis. Voda je tisto noč na njegovem dvorišču naraščala s skoraj dvema metroma na uro: hitreje, kot je bilo kdaj zapisano, odkar se vodostaji merijo.\n\nO Kolpi se danes odloča tudi čez mejo: projekt Striver (Interreg Slovenija–Hrvaška) jo obravnava kot povezan rečni sistem pod pritiskom podnebnih sprememb, pred katerim zastavlja tri vprašanja — presežek vode, pomanjkanje vode in kakovost vode. Za vas ob reki to ni zborniška abstrakcija: ista voda je kopališče, mlinarica, meja in spomin. Zato muzej zapiše tudi vašo merilno palico: kdaj je voda nazadnje stala na vašem dvorišču, kako suho je bilo leto, ko je reka ostala brez dežja. Vsak spomin bo nov vir — reka piše svojo kroniko naprej, zapisuje pa se le, kar kdo pove.",
+    storyEn:
+      "The Kolpa was never tame. That it knows how to come over its banks, every family along it has known for centuries: mills were therefore built with the machinery on an upper floor, the malenca weirs were mended after every winter, and the flood meadows — the loke — were taken as the flood's yearly gift, not as damage. The river's rises and falls were part of the farm's arithmetic exactly like the harvest and the drought.\n\nThe Metlika gauging station has measured the Kolpa since 1952 — the longest unbroken testimony of a river that runs some twelve kilometres downstream of the village. Across those decades it has measured the least discharge at 4.6 cubic metres per second (1 August 1983) and the greatest at 1,116 (end of September 1979). Between the bed's low and its high lies a ratio of a good two hundred and forty-two to one: a river that is not the same in winter and in summer.\n\nThen came 2022 and broke the table in half. In July the common runoff index of Slovenia's rivers stood at 0.38 — the lowest July since the count began (1961); on 10 August the Kolpa at Metlika ran at barely 7.8 cubic metres per second. Two months later, between 15 and 18 September, the same station measured 1,009 cubic metres per second — the greatest hydrometrically measured value since measurements began there. The water stepped into the camps from Vinica to Metlika and into the houses along the banks, firemen filled flood sacks, and the Lahinja at Gradac even crossed its third flood threshold. And the year was not finished: at the end of September the Kolpa rose again — among the largest discharges of the past seventy years — and in December it flooded a third time.\n\nIn September 2025 the river added a new datum: speed. At the Petrina station the water level rose three metres in a good three hours; along the Kolpa the roads between Dol and Prelesje were closed. »On Wednesday at four the Kolpa was still fit for swimming,« Peter Madronič of Prelesje said the next day — a great-grandson of the milling family whose mill has its own record in this collection. That night the water on his yard climbed at almost two metres an hour: faster than anything recorded since water levels have been measured.\n\nDecisions about the Kolpa are today made across the border as well: the Striver project (Interreg Slovenia–Croatia) treats it as a connected river system under the pressure of climate change, before which it sets three questions — too much water, too little water, and water quality. For a village on the river this is no conference abstraction: the same water is the bathing place, the millstream, the border and the memory. So the museum will record your measuring stick too: when the water last stood on your yard, how dry the year was when the river went without rain. Every memory will be a new source — the river writes its chronicle onward, but only what someone tells gets written down.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/kolpa-poplava-metlika-2022.jpg",
+    imageCredit:
+      "Arhiv ARSO · iz poročila »Visoke vode in poplave med 15. in 18. septembrom 2022« — Kolpa pri vodomerni postaji Metlika, 17. 9. 2022",
+    yearFrom: 1952,
+    featured: false,
+    sources: [
+      {
+        key: "arso-poplave-2022",
+        nameSi:
+          "ARSO — Poročilo o poplavah: Visoke vode in poplave med 15. in 18. septembrom 2022 (PDF)",
+        nameEn:
+          "ARSO — Flood report: High water and floods between 15 and 18 September 2022 (PDF)",
+        sourceType: "objava",
+        license: "javna informacija / public information",
+        url: "https://www.arso.gov.si/vode/poro%C4%8Dila%20in%20publikacije/Porocilo_visoke_vode_in_poplave_sept2022a.pdf",
+        noteSi: "Glavni vir zapisa: 1.009 m³/s na VP Metlika (17. 9. 2022 ob 13.30) — največja hidrometrično izmerjena vrednost od 1952; povratna doba 10–20 let; presežena 3. visokovodna raven v Sodevcih, 2. na Petrini in Metliki, Lahinja Gradac 3. raven; fotografija zapisa je iz tega poročila (Slika 11).",
+        noteEn: "The record's main source: 1,009 m³/s at the Metlika station (17 Sep 2022 at 13:30) — the largest measured discharge since 1952; return period 10–20 years; the third flood level crossed at Sodevci, the second at Petrina and Metlika, the Lahinja at Gradac at the third; the record's image comes from this report (Figure 11).",
+      },
+      {
+        key: "ujma-poplave-2022",
+        nameSi: "UJMA (ZRC SAZU) — Visoke vode in poplave leta 2022",
+        nameEn: "UJMA (ZRC SAZU) — High water and floods in 2022",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://ojs-gr.zrc-sazu.si/ujma/article/view/9384",
+        noteSi: "Tri visokovodne epizode leta 2022 (september, konec septembra, december); hidrometrična meritev na VP Metlika 17. 9. 2022.",
+        noteEn: "The three high-water episodes of 2022 (September, late September, December); the hydrometric measurement at Metlika on 17 Sep 2022.",
+      },
+      {
+        key: "odeon-julij-2022",
+        nameSi:
+          "Radio Odeon (10. 8. 2022): Julij še nikoli tako malo vodnat",
+        nameEn:
+          "Radio Odeon (10 Aug 2022): July never carried so little water",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://radio-odeon.com/novice/julij-se-nikoli-tako-malo-vodnat/",
+        noteSi: "Sušni julij 2022: kazalnik vodnatosti 0,38 (najnižji julij od 1961); Kolpa pri Metliki 7,8 m³/s (10. 8.); ekstrema postaje: minimum 4,6 m³/s (1. 8. 1983), maksimum 1.116 m³/s (konec septembra 1979).",
+        noteEn: "The drought of July 2022: runoff index 0.38 (the lowest July since 1961); the Kolpa at Metlika at 7.8 m³/s (10 Aug); the station's extremes: a minimum of 4.6 m³/s (1 Aug 1983), a maximum of 1,116 m³/s (end of September 1979).",
+      },
+      {
+        key: "svet24-kampi-2022",
+        nameSi: "Svet24 (17. 9. 2022): Kampi ob Kolpi pod vodo",
+        nameEn: "Svet24 (17 Sep 2022): The Kolpa camps under water",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://svet24.si/novice/slovenija/video-kampi-ob-kolpi-pod-vodo-voda-zaliva-mobilne-hiske-994742",
+        noteSi: "Video poročilo o poplavljenih kampih med Vinico in Metliko.",
+        noteEn: "Video report on the flooded camps between Vinica and Metlika.",
+      },
+      {
+        key: "vaskanal-poplave-2022",
+        nameSi: "Vaš kanal — Poplave v Beli krajini (19. 9. 2022)",
+        nameEn: "Vaš kanal — Floods in Bela krajina (19 Sep 2022)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://vaskanal.com/poplave-v-beli-krajini",
+        noteSi: "Lokalna televizija: reka Kolpa s pritoki prestopi bregove in ponekod doseže stanovanjske objekte.",
+        noteEn: "The local television: the Kolpa with its tributaries overflows and in places reaches dwellings.",
+      },
+      {
+        key: "odeon-kolpa-2025",
+        nameSi:
+          "Radio Odeon (11. 9. 2025): Kolpa močno narasla, težave tudi v prometu",
+        nameEn:
+          "Radio Odeon (11 Sep 2025): The Kolpa rises sharply, trouble on the roads too",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://radio-odeon.com/novice/kolpa-mocno-narasla-tezave-tudi-v-prometu/",
+        noteSi: "Na VP Petrina +3 m v dobrih treh urah; zaprti cestni odseki Fara–Grgelj–Dol, Dol–Prelesje, Kot–Sodevci, Kot–Radenci.",
+        noteEn: "At Petrina +3 m in a good three hours; closed road sections Fara–Grgelj–Dol, Dol–Prelesje, Kot–Sodevci, Kot–Radenci.",
+      },
+      {
+        key: "utrip-madronic-2025",
+        nameSi:
+          "E-utrip (12. 9. 2025): Kolpa poplavila priljubljeni gostinski objekt — Peter Madronič",
+        nameEn:
+          "E-utrip (12 Sep 2025): The Kolpa floods a popular inn — Peter Madronič",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://e-utrip.si/kolpa-poplavila-priljubljeni-gostinski-objekt-voda-je-prihajala-z-neverjetno-hitrostjo-mi-pa-smo-skusali-resiti-kar-smo-lahko/",
+        noteSi: "Hitrost naraslanja 1,90 m na uro — več od dosedanjega rekorda 1,48; »V sredo ob štirih je bila Kolpa še za kopat.«",
+        noteEn: "The rate of rise at 1.90 m an hour — beyond the previous record of 1.48; »On Wednesday at four the Kolpa was still fit for swimming.«",
+      },
+      {
+        key: "odeon-striver-2026",
+        nameSi:
+          "Radio Odeon (31. 7. 2026): Kolpa pod pritiskom podnebnih sprememb — čas za usklajeno ukrepanje",
+        nameEn:
+          "Radio Odeon (31 Jul 2026): The Kolpa under the pressure of climate change — time for coordinated action",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://radio-odeon.com/novice/kolpa-pod-pritiskom-podnebnih-sprememb-cas-za-usklajeno-ukrepanje/",
+        noteSi: "Projekt Striver (Interreg Slovenija–Hrvaška, RC Novo mesto): Kolpa kot povezan rečni sistem; trije izzivi — pomanjkanje vode, presežek vode, kakovost vode.",
+        noteEn: "The Striver project (Interreg Slovenia–Croatia, RC Novo mesto): the Kolpa as a connected river system; three challenges — water scarcity, water excess, water quality.",
+      },
+    ],
+  },
+  {
     slug: "mlini-na-kolpi",
     category: "kolpa",
     titleSi: "Mlini ob Kolpi",
@@ -2329,13 +2443,13 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "Griblach 1468, Briglach 1490, Grüble — and 329 inhabitants today: the record that counts the village from its first mention to the latest census.",
     storySi:
-      "Najstarejši pisni obris vasi je črka iz leta 1468: listina, v kateri se vas zapiše kot Griblach. Sledita Briglach (1490) in Griblah (1593); v urbarjih in na najstarejšem zemljevidu je oblika Grüble. Petsto petdeset let pozneje isto ime stoji na cestnih tabelah in v podatkovnih bazah — ime, starejše od skoraj vsega, kar danes v vasi stoji.\n\nKaj ime pomeni, je med jezikoslovci še danes odprto vprašanje. Marko Snoj v Etimološkem slovarju slovenskih zemljepisnih imen navaja štiri poti: narečni grib (goba, jurček), griba (gruda, kep zemlje), besedo sorodno hrvaškemu griblja (brazda) in griva (travnata strmina). Domača razlaga — gribljati, brazdati, orati — je ena od teh poti, ne edina: tudi etimologija je iskrenost, ne izročilo.\n\nIn potem so tu številke, ki jih znajo samo uradi: Griblje merijo 3,45 kvadratnega kilometra na 153,4 metra nad morjem; poštna številka je 8332 Gradac. Uradne zgodovine pa so tudi oblike: leta 1854 je okraj Črnomelj med svoje občine štel tudi občino Griblje — vas, ki je bila stoletje in pol svoj lasten administrativni svet, preden je postala krajevna skupnost. Na popisu leta 2020 je vas štela 334 prebivalcev — 172 moških in 162 žensk; leta 2026 jih letna statistika beleži 329. Številke se premikajo kot reka: počasi, a stalno. Njihovi odtisi so večji: val izseljenstva, ki ima v tej zbirki svoj zapis, je nekoč odnesel več ljudi, kot jih danes živi v vasi.\n\nV zaselkih — Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje — se številke razraščajo v hiše: rodovinske hiše ob cesti, ki jih obiskovalec šteje s prsti, muzej pa po imenih. Karta, ki drži ta zapis, je Henrik Freyer: Special-Karta vojvodine Kranjske (1843) — kartografski podvig, na katerem je vsaka vas dežele dobila svoje ime in svoj prostor; petsto petdeset let po prvi omembi je tudi Griblje na njej pisano s polnim imenom. Med listino iz leta 1468 in popisom iz leta 2026 stoji ta karta kot sredina poti: dokaz, da je ime vasi znala nositi vsaka doba — od pergamenta do bakroreza, od bakroreza do podatkovne baze. In izvleček, ki ga je zapis obljubil, je tu: na sredini slike stoji Griblje — Griblje, piše kurziva, po slovensko — dolga vrsta hiš ob cesti, ravno takšna razpotegnjena vas, kakršno pozna tudi zapis o zaselkih; ob vzhodnem koncu cerkev, pod vasjo pa Kolpa z mlinom ob bregu. Nad Gribljami karta bere še Mali Lipovec, sosedovo ime na poti proti Metliki. Ime vasi, pisano s polnim imenom — in prav v slovenščini —, je od blizu: na prvi karti, ki je vsako vas dežele pošteno poimenovala, ni bilo treba čakati na prevod.\n\nStatistika je za muzej čudovito orodje: ne pripoveduje, ampak preračunava zgodbo. Koliko let ima vas, koliko ljudi jo danes nosi, koliko jih je nosila nekoč — vse to se da zložiti v eno samo jutro ob ribniku. Ta zapis bo muzej osveževal z vsakim novim popisom: zgodovina, ki znova šteje sebe.",
+      "Najstarejši pisni obris vasi je črka iz leta 1468: listina, v kateri se vas zapiše kot Griblach. Sledita Briglach (1490) in Griblah (1593); v urbarjih in na najstarejšem zemljevidu je oblika Grüble. Petsto petdeset let pozneje isto ime stoji na cestnih tabelah in v podatkovnih bazah — ime, starejše od skoraj vsega, kar danes v vasi stoji.\n\nKaj ime pomeni, je med jezikoslovci še danes odprto vprašanje. Marko Snoj v Etimološkem slovarju slovenskih zemljepisnih imen navaja štiri poti: narečni grib (goba, jurček), griba (gruda, kep zemlje), besedo sorodno hrvaškemu griblja (brazda) in griva (travnata strmina). Domača razlaga — gribljati, brazdati, orati — je ena od teh poti, ne edina: tudi etimologija je iskrenost, ne izročilo.\n\nIn potem so tu številke, ki jih znajo samo uradi: Griblje merijo 3,45 kvadratnega kilometra na 153,4 metra nad morjem; poštna številka je 8332 Gradac. Uradne zgodovine pa so tudi oblike: leta 1854 je okraj Črnomelj med svoje občine štel tudi občino Griblje — vas, ki je bila stoletje in pol svoj lasten administrativni svet, preden je postala krajevna skupnost. Na popisu leta 2020 je vas štela 334 prebivalcev — 172 moških in 162 žensk; leta 2026 jih letna statistika beleži 329. Številke se premikajo kot reka: počasi, a stalno. Njihovi odtisi so večji: val izseljenstva, ki ima v tej zbirki svoj zapis, je nekoč odnesel več ljudi, kot jih danes živi v vasi.\n\nV zaselkih — Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje — se številke razraščajo v hiše: rodovinske hiše ob cesti, ki jih obiskovalec šteje s prsti, muzej pa po imenih. Karta, ki drži ta zapis, je Henrik Freyer: Special-Karta vojvodine Kranjske (1843) — kartografski podvig, na katerem je vsaka vas dežele dobila svoje ime in svoj prostor; petsto petdeset let po prvi omembi je tudi Griblje na njej pisano s polnim imenom. Med listino iz leta 1468 in popisom iz leta 2026 stoji ta karta kot sredina poti: dokaz, da je ime vasi znala nositi vsaka doba — od pergamenta do bakroreza, od bakroreza do podatkovne baze. In izvleček, ki ga je zapis obljubil, je tu — in debelejši, kot smo si upali upati: na sredini slike stoji vas z obema imenoma. Kurziva, po slovensko, piše Griblje; pod njim, v oklepaju, še nemško (Grüble); nad imenom pa okrajšava Vnt. — Unter, Dolnje Griblje, zahodni konec razpotegnjene vasi, kakršno pozna tudi zapis o zaselkih. Obe imeni na enem listu: slovensko in nemško, drugo poleg drugega — točno to, kar pripovedujejo urbarji, tu stoji pred očmi. Sledi dolga vrsta hiš ob cesti, ob vzhodnem koncu cerkev, pod vasjo pa Kolpa z mlinom ob bregu. Nad Gribljami karta bere še Mali Lipovec, sosedovo ime na poti proti Metliki. Ime vasi, pisano s polnim imenom — in prav v slovenščini —, je od blizu: na prvi karti, ki je vsako vas dežele pošteno poimenovala, ni bilo treba čakati na prevod.\n\nStatistika je za muzej čudovito orodje: ne pripoveduje, ampak preračunava zgodbo. Koliko let ima vas, koliko ljudi jo danes nosi, koliko jih je nosila nekoč — vse to se da zložiti v eno samo jutro ob ribniku. Ta zapis bo muzej osveževal z vsakim novim popisom: zgodovina, ki znova šteje sebe.",
     storyEn:
-      "The oldest written outline of the village is a letter from 1468: a document in which the village is written Griblach. Briglach (1490) and Griblah (1593) follow; in the urbars and on the oldest map the form is Grüble. Five hundred and fifty years later the same name stands on the road signs and in the databases — a name older than almost everything that stands in the village today.\n\nWhat the name means remains, among linguists, an open question to this day. In his Etymological Dictionary of Slovene Place Names Marko Snoj lists four paths: the dialect grib (a mushroom, a Boletus), griba (a clod of soil), a word related to Croatian griblja (a furrow), and griva (a grassy slope). The local explanation — gribljati, to furrow, to plough — is one of those paths, not the only one: etymology too is honesty, not folklore.\n\nAnd then there are the numbers only offices know: Griblje measure 3.45 square kilometres at 153.4 metres above the sea; the postal code is 8332 Gradac. Official histories have shapes too: in 1854 the district of Črnomelj counted the municipality of Griblje among its municipalities — a village that was its own small administrative world for a century and a half before becoming a local community. At the 2020 census the village counted 334 inhabitants — 172 men and 162 women; in 2026 the annual statistics record 329. Numbers move like the river: slowly, but constantly. Their impressions are larger: the wave of emigration, which has its own record in this collection, once carried away more people than live in the village today.\n\nIn the hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje — the numbers branch into houses: family houses along the road that a visitor counts on fingers, and the museum by names. The map that holds this record is Henrik Freyer's Special-Karte of the Duchy of Carniola (1843) — the cartographic feat on which every village of the land received its name and its place; five hundred and fifty years after the first mention, Griblje too stands on it written with its full name. Between the charter of 1468 and the census of 2026 this map stands as the middle of the road: proof that every age knew how to carry the village's name — from parchment to copperplate, from copperplate to database. And the excerpt this record promised is here: at the image's centre stands Griblje — Griblje, the italic script writes, in Slovene — a long row of houses along the road, exactly the drawn-out village that the record of the hamlets knows; a church at the eastern end, and below the village the Kolpa with a mill on its bank. Above Griblje the map reads Mali Lipovec too, a neighbour's name on the road towards Metlika. The village's name, written with its full name — and in Slovene at that — is there from up close: on the first map that named every village of the land honestly, no translation was needed.\n\nStatistics are a wonderful tool for a museum: it does not narrate, it recalculates the story. How old the village is, how many people carry it today, how many carried it once — all of it can be folded into a single morning by the pond. This record the museum will refresh with every new census: a history that counts itself anew.",
+      "The oldest written outline of the village is a letter from 1468: a document in which the village is written Griblach. Briglach (1490) and Griblah (1593) follow; in the urbars and on the oldest map the form is Grüble. Five hundred and fifty years later the same name stands on the road signs and in the databases — a name older than almost everything that stands in the village today.\n\nWhat the name means remains, among linguists, an open question to this day. In his Etymological Dictionary of Slovene Place Names Marko Snoj lists four paths: the dialect grib (a mushroom, a Boletus), griba (a clod of soil), a word related to Croatian griblja (a furrow), and griva (a grassy slope). The local explanation — gribljati, to furrow, to plough — is one of those paths, not the only one: etymology too is honesty, not folklore.\n\nAnd then there are the numbers only offices know: Griblje measure 3.45 square kilometres at 153.4 metres above the sea; the postal code is 8332 Gradac. Official histories have shapes too: in 1854 the district of Črnomelj counted the municipality of Griblje among its municipalities — a village that was its own small administrative world for a century and a half before becoming a local community. At the 2020 census the village counted 334 inhabitants — 172 men and 162 women; in 2026 the annual statistics record 329. Numbers move like the river: slowly, but constantly. Their impressions are larger: the wave of emigration, which has its own record in this collection, once carried away more people than live in the village today.\n\nIn the hamlets — Dolnje Griblje, Brinsko selo, Srednje Griblje and Gornje Griblje — the numbers branch into houses: family houses along the road that a visitor counts on fingers, and the museum by names. The map that holds this record is Henrik Freyer's Special-Karte of the Duchy of Carniola (1843) — the cartographic feat on which every village of the land received its name and its place; five hundred and fifty years after the first mention, Griblje too stands on it written with its full name. Between the charter of 1468 and the census of 2026 this map stands as the middle of the road: proof that every age knew how to carry the village's name — from parchment to copperplate, from copperplate to database. And the excerpt this record promised is here — and richer than we dared hope: at the image's centre stands the village with both its names. The italic script, in Slovene, writes Griblje; beneath it, in parentheses, the German (Grüble); and above the name the abbreviation Vnt. — Unter, Lower Griblje, the western end of the drawn-out village that the record of the hamlets knows. Both names on one sheet: Slovene and German, side by side — exactly what the urbars tell, here standing before the eyes. A long row of houses follows along the road, a church at the eastern end, and below the village the Kolpa with a mill on its bank. Above Griblje the map reads Mali Lipovec too, a neighbour's name on the road towards Metlika. The village's name, written with its full name — and in Slovene at that — is there from up close: on the first map that named every village of the land honestly, no translation was needed.\n\nStatistics are a wonderful tool for a museum: it does not narrate, it recalculates the story. How old the village is, how many people carry it today, how many carried it once — all of it can be folded into a single morning by the pond. This record the museum will refresh with every new census: a history that counts itself anew.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/freyer-griblje-izrez.jpg",
     imageCredit:
-      "Henrik Freyer: Zemljevid vojvodine Kranjske / Special-Karta des Herzogthums Krain (1843), izrez · posnetek: Narodna in univerzitetna knjižnica prek Google Arts & Culture · javna last — Griblje s cerkvijo ob vzhodnem koncu vasi, dolga vrsta hiš, Kolpa z mlinom spodaj, Mali Lipovec nad vasjo",
+      "Henrik Freyer: Zemljevid vojvodine Kranjske / Special-Karta des Herzogthums Krain (1843), izrez · posnetek: dLib prek Wikimedie Commons (polni posnetek 25.952 × 20.000 točk) · javna last — Griblje z obema imenoma: kurzivno, po slovensko Griblje, pod njim v oklepaju nemško (Grüble), nad njim pa okrajšava Vnt. (Unter — Dolnje Griblje); dolga vrsta hiš ob cesti, cerkev, Kolpa z mlinom, Mali Lipovec nad vasjo",
     yearFrom: 1468,
     lat: 45.5754,
     lng: 15.2928,
@@ -2398,8 +2512,8 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "spletni-vir",
         license: "javna last / public domain",
         url: "https://artsandculture.google.com/asset/_gEvY_zLVRQmkQ",
-        noteSi: "Glavna slika zapisa je izrez tega posnetka: Griblje s cerkvijo in dolgo vrsto hiš ob cesti, Kolpa z mlinom ob bregu, nad vasjo pa Mali Lipovec. Ime vasi je na karti zapisano kurzivno, slovensko — Griblje — in je na povečavi dobro berljivo.",
-        noteEn: "The record's main image is an excerpt of this scan: Griblje with its church and the long row of houses by the road, the Kolpa with a mill on its bank, and Mali Lipovec above the village. The name is written on the map in italic Slovene — Griblje — and is clearly legible when zoomed.",
+        noteSi: "Posnetek NUK, prek katerega je muzej prvič natančno lociral in prebral vas na Freyerjevi karti: Griblje s cerkvijo in dolgo vrsto hiš ob cesti, Kolpa z mlinom ob bregu, nad vasjo pa Mali Lipovec. Današnja glavna slika zapisa je izrez višje ločljivega posnetka istega lista na Wikimedii Commons (vir spodaj).",
+        noteEn: "The NUK scan through which the museum first located and read the village precisely on Freyer's map: Griblje with its church and the long row of houses by the road, the Kolpa with a mill on its bank, and Mali Lipovec above the village. The record's present main image is an excerpt of the higher-resolution scan of the same sheet on Wikimedia Commons (the source below).",
       },
       {
         key: "commons-freyer-stevilke",
@@ -2409,9 +2523,9 @@ export const seedExhibits: SeedExhibit[] = [
         license: "javna last / public domain",
         url: WM("Special-Karte_des_Herzogthums_Krain_1843.jpg"),
         noteSi:
-          "Prva karta, na kateri je vsaka vas dežele dobila svoje ime; med njimi Griblje, zapisano slovensko. Na tem posnetku se ime vasi nahaja približno 80 % širine in 85 % višine lista — jugovzhodno od Metlike, ob reki, ki nosi mejo.",
+          "Glavna slika zapisa je izrez tega posnetka v polni ločljivosti (25.952 × 20.000 točk; list z Gribljami je v sestavljenem posnetku zavrtjen — izrez je usklajen s severom gor). Oznaka vasi nosi obe imeni: kurzivno, po slovensko Griblje, pod njim v oklepaju nemško (Grüble), nad njim pa okrajšavo Vnt. (Unter — Dolnje Griblje). Ime leži pri približno 80 % širine in 85 % višine lista.",
         noteEn:
-          "The first map on which every village of the land received its name; Griblje among them, written in Slovene. On this scan the name lies at roughly 80% of the sheet's width and 85% of its height — south-east of Metlika, by the river that carries the border.",
+          "The record's main image is an excerpt of this scan at full resolution (25,952 × 20,000 pixels; the sheet holding Griblje is rotated within the composite — the excerpt is aligned north-up). The village's label carries both names: the italic Slovene Griblje, the German (Grüble) in parentheses beneath, and the abbreviation Vnt. (Unter — Lower Griblje) above. The name lies at roughly 80% of the sheet's width and 85% of its height.",
       },
       {
         key: "commons-iz-orbite",

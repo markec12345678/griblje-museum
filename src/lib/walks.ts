@@ -100,6 +100,13 @@ export const WALKS: Walk[] = [
           "The river that warms past twenty-five degrees in summer gave the village an institution of summer: the bathing place, where everything on holiday gathers.",
       },
       {
+        exhibitSlug: "kolpa-extremi",
+        noteSi:
+          "Ista reka, ki poleti kliče na kopanje, zna tudi naraščati s skoraj dvema metroma na uro. Na postaji Metlika so v istem koritu izmerili 4,6 in 1.116 kubičnih metrov na sekundo — voda je življenje, a tudi merilo, ki ga vas pozna že stoletja.",
+        noteEn:
+          "The same river that calls for swimming in summer can also climb at almost two metres an hour. At the Metlika station the same riverbed has carried 4.6 and 1,116 cubic metres a second — water is life, but also a measure the village has known for centuries.",
+      },
+      {
         exhibitSlug: "goranja-lokva",
         noteSi:
           "Voda, ki ni iz neba padla: Goranja lokva je nastala iz kopanja gline za opeko — pokrajina, ki si je sama izdolbla svoj spomin.",

@@ -26,9 +26,13 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   // 20. sklop: španska gripa 1918 — mrliška knjiga Podzemelj 04894 (stran z vpisi 1.–4. 11. 1918)
   "/images/authentic/spanska-gripa-1918.jpg": { width: 2659, height: 2000 },
 
+  // 21. sklop: reka ekstremov — Kolpa pri vodomerni postaji Metlika, 17. 9. 2022 (iz poročila ARSO)
+  "/images/authentic/kolpa-poplava-metlika-2022.jpg": { width: 686, height: 515 },
+
   // 20. sklop, revizija 2026-10: izrez Freyerjeve karte z Gribljami — pravi položaj vasi ob Kolpi
   // (posnetek NUK prek GA&C; prejšnji izrez je prikazoval napačen del lista)
-  "/images/authentic/freyer-griblje-izrez.jpg": { width: 480, height: 460 },
+  // 22. sklop: nadgradnja iz master posnetka Wikimedia Commons (dLib, 25.952 × 20.000) — obe imeni: Griblje + (Grüble)
+  "/images/authentic/freyer-griblje-izrez.jpg": { width: 1400, height: 1345 },
 
   "/images/authentic/griblje-vas.jpg": { width: 800, height: 574 },
   "/images/authentic/zaselki-griblje.jpg": { width: 1920, height: 1286 },

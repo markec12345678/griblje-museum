@@ -296,6 +296,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
   /* ----------------------------- SEPTEMBER ---------------------------- */
   [
     {
+      slug: "kolpa-extremi",
+      noteSi:
+        "September je mesec velike vode: 17. septembra 2022 je Kolpa pri Metliki dosegla 1.009 m³/s — največ odkar se meri. Septembra 2025 je dodala še rekordno hitrost naraslanja.",
+      noteEn:
+        "September is the month of high water: on 17 September 2022 the Kolpa at Metlika reached 1,009 m³/s — the most ever measured. In September 2025 it added a record rate of rise.",
+    },
+    {
       slug: "praznik-ks-2024",
       noteSi:
         "15. septembra 2024 se je v gasilskem domu po desetletjih znova zasvetil praznik krajevne skupnosti — september je njegov mesec.",

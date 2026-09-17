@@ -1554,11 +1554,11 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         yearLabelEn: "1843",
         sortYear: 1843,
         textSi:
-          "Henrik Freyer: Special-Karta vojvodine Kranjske — ime vasi prvič na kakovostni karti dežele, zapisano kurzivno, slovensko: Griblje, ob Kolpi.",
+          "Henrik Freyer: Special-Karta vojvodine Kranjske — ime vasi prvič na kakovostni karti dežele, in to z obema imenoma: kurzivno, slovensko Griblje, pod njim v oklepaju nemško (Grüble), nad njim pa Vnt. — Unter, Dolnje Griblje.",
         textEn:
-          "Henrik Freyer: the Special-Karte of the Duchy of Carniola — the village's name on a quality map of the land for the first time, written in italic Slovene: Griblje, by the Kolpa.",
+          "Henrik Freyer: the Special-Karte of the Duchy of Carniola — the village's name on a quality map of the land for the first time, and with both its names: the italic Slovene Griblje, the German (Grüble) in parentheses beneath, and Vnt. — Unter, Lower Griblje — above.",
         evidenceStatus: "DOCUMENTED",
-        sourceIndex: 5,
+        sourceIndex: 6,
       },
       {
         stage: "raziskava",
@@ -2076,6 +2076,59 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
           "The digitised book is in free access on Matricula Online — the page of 1–4 November 1918, Ana's entry among them, is this record's image. Whoever wishes may count again.",
         evidenceStatus: "DOCUMENTED",
         sourceIndex: 0,
+      },
+    ],
+  },
+  {
+    slug: "kolpa-extremi",
+    phases: [
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1952 → 1978",
+        yearLabelEn: "1952 → 1978",
+        sortYear: 1952,
+        textSi:
+          "Vodomerna postaja Metlika začne meriti Kolpo — reka, ki teče dvanajst kilometrov dolvodno od Gribelj, dobi svojo neprekinjeno kroniko: vsak dan, vsak vodostaj, vsak pretok.",
+        textEn:
+          "The Metlika gauging station begins measuring the Kolpa — the river that runs twelve kilometres downstream of Griblje receives its unbroken chronicle: every day, every level, every discharge.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1979 in 1983 — oba ekstrema",
+        yearLabelEn: "1979 and 1983 — both extremes",
+        sortYear: 1979,
+        textSi:
+          "Konec septembra 1979 postaja izmeri največji pretok vseh časov — 1.116 kubičnih metrov na sekundo. Štiri leta pozneje, 1. avgusta 1983, najmanjšega: 4,6. Med dnem in viškom istega korita je razmerje 242 proti ena.",
+        textEn:
+          "At the end of September 1979 the station measures the greatest discharge of all — 1,116 cubic metres per second. Four years later, on 1 August 1983, the least: 4.6. Between the bed's low and its high lies a ratio of 242 to one.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "2022 — leto obeh",
+        yearLabelEn: "2022 — the year of both",
+        sortYear: 2022,
+        textSi:
+          "Julija 7,8 kubičnega metra na sekundo (najsušeši julij od 1961); 17. septembra ob 13.30 pa 1.009 — največja kdaj hidrometrično izmerjena vrednost. Slika zapisa je posneta tisti dan s postaje Metlika.",
+        textEn:
+          "In July 7.8 cubic metres a second (the driest July since 1961); on 17 September at 13:30, 1,009 — the greatest hydrometrically measured value ever. The record's image was taken that day at the Metlika station.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2025 → merjenje gre naprej",
+        yearLabelEn: "2025 → the measuring goes on",
+        sortYear: 2025,
+        textSi:
+          "Septembra 2025 vodostaj na Petrini v treh urah poskoči za tri metre; hitrost naraslanja na Madroničevem dvorišču — 1,90 metra na uro — preseže dosedanji zapis. Projekt Striver pa Kolpo razglaša za povezan rečni sistem pred podnebnimi spremembami: merjenje gre naprej.",
+        textEn:
+          "In September 2025 the level at Petrina jumps three metres in three hours; the rate of rise at the Madronič yard — 1.90 metres an hour — beats the standing record. And the Striver project proclaims the Kolpa a connected river system before climate change: the measuring goes on.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 6,
       },
     ],
   },
