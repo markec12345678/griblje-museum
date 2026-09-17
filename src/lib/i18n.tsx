@@ -5306,6 +5306,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = React.useState<Lang>("sl");
 
   React.useEffect(() => {
+    // Globoka povezava z jezikom: /?lang=de ali /?exhibit=…&lang=it —
+    // nemški ali italijanski portal tako poveže neposredno v svoj jezik
+    // (prednost pred shranjeno izbiro, enako kot pri razstavnih povezavah).
+    const urlLang = new URLSearchParams(window.location.search).get("lang") as Lang | null;
+    if (urlLang && LANG_CODES.includes(urlLang)) {
+      setLangState(urlLang);
+      window.localStorage.setItem("mvg-lang", urlLang);
+      return;
+    }
     const stored = window.localStorage.getItem("mvg-lang") as Lang | null;
     if (stored && LANG_CODES.includes(stored)) setLangState(stored);
   }, []);

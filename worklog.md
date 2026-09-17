@@ -1308,3 +1308,28 @@ Stage Summary:
 - Tehnične metode: žetonski zajem ploščic GA&C (canvas izvoz iz DOM) in Matricula (fetch s sejnimi žetoni takoj po navigaciji) — oba portala strežeta enkratne žetone
 - Odprto: VLM 429 cel dan (zanka v ozadju čaka; odgovor bo omogočil izrez Gribelj s Freyerjeve karte + polni vizualni audit 86 slik); dlib.si nedosegljiv; Bing/DDG bot-noise
 - Naslednji koraki: VLM (ko se kvota sprosti) → izrez karte + vizualni audit; DE/IT jeziki; kontakti DKŽ/Flajšman/Vaš Kanal
+---
+Task ID: 57
+Agent: Main agent (Z.ai Code)
+Task: Nadaljevanje (direktiva: »nadaljuj kjer si ostal«) — 19. sklop: DE/IT jezika + večjezično iskanje
+
+Work Log:
+- ZAI API (VLM + LLM) cel dan še vedno 429 → zanka /tmp/freyer-tiles/vlm-retry-loop.js čaka naprej (izrez Freyerjeve karte + vizualni audit 86 slik ostajata odprta); besedilni prevodi DE/IT izvedeni ročno (muzejski standard, Sie-forma / forma di cortesia)
+- I18N (3.244 → 5.371 vrstic): nova `de:` in `it:` sekcija slovarja (~1.060 vrstic vsaka), `Lang` tip razširjen na "sl"|"en"|"hr"|"de"|"it", localStorage/storage-event validacija prek LANG_CODES, `pick()` popravljen (DE/IT → angleška vsebina zbirk — enaka logika kot HR→SLO), novi izvozi LANG_CODES / LANG_NAMES (domača imena: Slovenščina, Hrvatski, English, Deutsch, Italiano) / INTL_LOCALES + localeOf()
+- STRUKTURNA VERIFIKACIJA: scripts/verify-i18n.ts — drevo ključev + tipi vrednosti (fn(n), arr[n]) primerjani med vsemi jeziki: 783 ključev × 5 jezikov identično
+- AI VODNIK: GuideLang + "de"|"it"; nemški in italijanski sistemski poziv (8 pravil, uzidani dosje, [[slug]] navedki, »living German/Italian«); dosje po jezikovnih PLASTEH (sl/hr → slovenska, de/it/en → angleška; skupni predpomnilnik plasti); API enum razširjen; zaključni jezikovni spomini (REGEL-ERINNERUNG / PROMEMORIA DELLE REGOLE)
+- VEČJEZIČNO ISKANJE (vzorec Europeana): src/lib/search-expand.ts — ~160 pojmov DE/IT → EN (chiesa→church, Krieg→war, Schule→school …); iskalni API išče izvirnik + razširitve (union), odgovor podaja expandedTo; preizkus: chiesa 23 zadetkov, Kirche 23, scuola 36, Krieg 44; regresija SL/EN čista (cerkev 9, crnomelj 30)
+- GLAVA: jezikovno stikalo SLO|HRV|EN preoblikovano v spustni meni (Globe ikona + koda trenutnega jezika, Popover + listbox z domačimi imeni, Check ob trenutnem) — vzorec Rijksmuseum/Louvre; deluje na namizju in mobilnem (5 jezikov ne bi šlo v vrstico)
+- KOMPONENTE: audioLangOf (DE/IT → angleški glas), minute-stories/personal-gallery (vsebina + govor), search-dialog (predlagana iskanja DE/IT + oznake vrst zgodb + naslovi zadetkov), collection-view barvne police +labelDe/labelIt (Himmel, Cielo …), glossary isEnglish, about-view (titleEn izbor + števec jezikov 3→5), datumi Intl prek localeOf (de-DE/it-IT) v 12 datotekah, worksheet (html lang + napis glave iz t.hero.kicker — delovni list se natisne v nemščini/italijanščini), audio-guide API (lang de/it → en, validacija), events-view/exhibit-dialog/about-view inline nizi lokalizirani
+- ZASTARELE OMEMBE: stats.langs, footer.langNote, about.accessPoints[4] in school.intro posodobljeni na pet jezikov v SL/EN/HR (dvojezičen→petjezičen, Trilingual→Five languages, Trojezičnost→Pet jezikov)
+- README: 19. sklop + posodobljene omembe petjezičnosti (features, struktura, izjava o standardu)
+- VERIFIKACIJA: tsc 0 napak; eslint 0 napak (2.302 znanih opozoril); agent-browser: preklop SL→DE→IT→SL (document.lang, navigacija, hero, statistika, noga z jezikovno opombo, mobilni meni), zbirka v DE (vmesnik nemški: »Grad der Verlässlichkeit: dokumentiert«, »Lesezeit des Eintrags« — vsebina angleška: »Griblje in numbers: Griblach 1468«), iskanje chiesa 23 zadetkov v IT vmesniku, jezikovni meni na 390 px (scrollWidth 390 = brez preliva), vodnikov dialog IT (predlogi vprašanj + lokalizirano sporočilo o omejitvi), delovni list DE; 5 zaslonk (domov-DE, domov-DE-celotna, domov-IT, jezikovni-meni-mobilni, mobilni-IT)
+- NAPAKE V DNEVNIKU: vso je kvota z-ai ponudnika (429 — TTS + vodnik; enako kot VLM) — okoljske, ne regresija; lokalna omejitev vodnika deluje (429 s sporočilom v jeziku uporabnika)
+- PRODUKCIJA: commit 7821edb pushan na origin/main
+
+Stage Summary:
+- Zbirka: 86 zapisov / 377 virov (nezadostno ni bilo treba spreminjati); vmesnik zdaj v 5 jezikih (783 ključev × 5)
+- Vzorec: HR→SLO (razumljivost ob Kolpi) ↔ DE/IT→EN (lingua franca) — vsebina vedno v izvirniku, vodnik pa odgovarja v jeziku uporabnika
+- Edinstveno: večjezična razširitev poizvedbe (Europeana) — nemški/italijanski obiskovalec išče v svojem jeziku in najde angleško dokumentirano vsebino
+- Odprto: VLM še vedno 429 (zanka čaka — izrez Griblj s Freyerjeve karte + vizualni audit 86 slik); odgovor AI vodnika v DE/IT bo preizkušen, ko se kvota sprosti (sistemski pozivi strukturno preverjeni); TTS za DE/IT govori angleško (enako kot danes za EN)
+- Naslednji koraki: VLM (ko se kvota sprosti); kontakti DKŽ/Flajšman/Vaš Kanal; po uporabi morda A/B jezikovnega menija
