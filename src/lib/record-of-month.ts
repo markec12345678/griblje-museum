@@ -230,6 +230,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
       noteEn:
         "On 19 June 2019, Griblje people from around the world came home for the school's 130th anniversary. June is the month of returns.",
     },
+    {
+      slug: "porocna-1669",
+      noteSi:
+        "Junij je mesec svatb — in najstarejša knjiga župnije Podzemelj je prav poročna: začela se je leta 1669 s svatbenimi vpisi. Ženin, nevesta in priče: začetek vseh gribeljskih rodovnikov.",
+      noteEn:
+        "June is the month of weddings — and the Podzemelj parish's oldest book is precisely a marriage register: it began in 1669 with wedding entries. Groom, bride and witnesses: the beginning of every Griblje family tree.",
+    },
   ],
   /* ------------------------------- JULIJ ------------------------------ */
   [

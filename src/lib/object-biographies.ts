@@ -1962,6 +1962,59 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
     ],
   },
   {
+    slug: "porocna-1669",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1669",
+        yearLabelEn: "1669",
+        sortYear: 1669,
+        textSi:
+          "Župnija Podzemelj odpre svojo najstarejšo knjigo — poročno: po stoletju osmanskih vpadov se beleženje prične s svatbami.",
+        textEn:
+          "The Podzemelj parish opens its oldest book — a marriage register: after a century of Ottoman incursions, record-keeping begins with weddings.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1669 → 1679",
+        yearLabelEn: "1669 → 1679",
+        sortYear: 1670,
+        textSi:
+          "Desetletje svatbenih zapisov: ob imenih ženinov in nevest priče rišejo sorodstvene vezi med hišami — tudi gribeljskimi.",
+        textEn:
+          "A decade of wedding entries: beside the grooms' and brides' names, the witnesses draw the kinship between houses — Griblje ones among them.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1679",
+        yearLabelEn: "1679",
+        sortYear: 1679,
+        textSi:
+          "Zvezek se zaključi; župnija nadaljuje s krstnimi, poročnimi in mrliškimi knjigami vse do leta 1947 — skupaj dvaindvajset zvezkov.",
+        textEn:
+          "The volume closes; the parish continues with baptismal, marriage and burial books all the way to 1947 — twenty-two volumes in all.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "today",
+        sortYear: 2026,
+        textSi:
+          "Nadškofijski arhiv Ljubljana hrani knjigo pod signaturo 04795 in jo objavlja v prostem dostopu — začetna stran je slika tega zapisa.",
+        textEn:
+          "The Archdiocesan Archives of Ljubljana keep the book under the shelfmark 04795 and publish it in free access — its opening page is this record's image.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
     slug: "cerkvisce",
     phases: [
       {

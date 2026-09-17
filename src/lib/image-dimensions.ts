@@ -58,6 +58,8 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/dragos-kolpa-1920.jpg": { width: 1076, height: 681 },
   "/images/authentic/kambic-bozic.jpg": { width: 620, height: 1032 },
   "/images/authentic/matica-podzemelj-1669.jpg": { width: 2548, height: 1652 },
+  "/images/authentic/porocna-1669-zacekni-vpisi.jpg": { width: 1130, height: 1540 },
+  "/images/authentic/porocna-1669-razprostrt.jpg": { width: 2502, height: 1654 },
   "/images/authentic/freyer-special-karta-1843.jpg": { width: 3840, height: 2959 },
   "/images/authentic/cerkvisce-kapelica.jpg": { width: 1400, height: 1875 },
   "/images/authentic/pasuljada.jpg": { width: 1600, height: 1200 },
