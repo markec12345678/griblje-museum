@@ -1615,3 +1615,22 @@ Stage Summary:
 - Zbirka: 93 zapisov / 412 virov; čebelarska nit zbirke je zaprta v trikotniku konrad-barle → kranjska-sivka → panjska-koncnica (+ pisanice kot sestra umetnosti); JULIJ in MAJ imata po 5 vnosov
 - Tehnična izkušnja: Wikimedia upload CDN blokada IP traja ~1 h — pravi recept je ozadna zanka ponovnih poskusov; API končne točke (action API) imajo ločeno, milejšo kvoto; SEM digitalna zbirka panji je dostopna, a nepopolna (naš predmet ni med objavljenimi)
 - Odprto: VLM kvota (44–97/98 španka — zanka PID 19077 teče naprej, brez odčitkov); czs.si (bot-zaščita); župani občine; 1. svetovna vojna; Muzej išče: končnico z belokranjskega čebelnjaka
+
+---
+Task ID: 32
+Agent: Main agent (Z.ai Code)
+Task: 28. sklop — revizija števil, datumov in logike, 2. krog (»odlično, nadaljuj raziskuj« — uporabnikova najava »še par napak«)
+
+Work Log:
+- Git sinhroniziran (0b630bf, čisto delovno drevo); revizijske skripte: audit.ts (period/yf/naslovne številke), audit2.ts → scripts/audit-semantics.ts (rojstva-starosti-obletnice, SL↔EN letnice), audit3.ts (izpis vseh zapisov s številkami za ročno preverbo — 1126 vrstic prebranih v celoti)
+- Ročna preverba vseh 93 zapisov s številskimi trditvami + vsak sum preverjen proti PRIMARNIM virom (z-ai funkcije 429 → curl: Radio Odeon članki, Svet24, Slovenske novice, Matricula Online data portal, OŠ Loka spletišče, sl.wikipedia action API)
+- Potrjena dejstva iz virov: ptički 15. 3. 2026 (nedelja — članek 19. 3. 2026); šola 14 učencev 2019, pouk kombinirano 1.–3. + 4.–5. (2 oddelka); Brinc 1988 »18.900 evrov« (Slovenske novice dobesedno); maša petstoletnice »v nedeljo« (članek 23. 6. 2026); Matricula katalog: 22 knjig, najstarejša POROČNA 1669–1679 (04795), krstna 01723 = 1675–1703; Audrey članek (Janez ostal v Jolietu) vs. Matija članek (Janez v Saragosi TX) — navzkrižje virov; Vojna krajina 1460–1881 (sl.wiki dobesedno); zvon 1998 (akcija Filak, Feralit, Šuštar — Slovenske novice 8/2026)
+- 12 zapisov popravljenih (32 mest SL+EN): griblje-v-stevilkah (550→558 in 550→375 let), razglednica-1903 (19.→20. stoletje), pasuljada (20→22 let), anton-brodaric (135→153 m; kredit 6.471→6.467 m), muzejska-ucilnica (5→2 oddelka), ko-se-pticki-zenijo (sobota→nedelja), matice-podzemelj (krstna 1669→1675–1703 na 5 mestih), audrey-totter (vnučinja→hči; ostal→ustalil), matija-totter (most Janez→Joliet 1917), petstoletnica-2026 (žegnjanje PO prazniku; slovnica), zvon-2008 (dodana dokumentirana vrsta 1998 pred 2008), jezikovne popravke (nikolaj-dragos, panjska-koncnica, kanizarica ×2)
+- Bun run lint ✓; bun run db:seed ✓ (93 zapisov); preverba baze z bun:sqlite — vsi novi nizi prisotni; dev server teče na :3000, API 200
+- README: nov vnos 28. sklop (12 točk popravkov + preverjene legitimne sume + potrditev slike Griblje v številkah); skripta preimenovana v scripts/audit-semantics.ts
+
+Stage Summary:
+- Uporabnikovo opozorilo »in takih je se par napak« sistematično izčrpano: 12 novih popravkov razreda številka/datum/logika, vsak utemeljen s primarnim virom; najpomembnejša odkritja: Matricula katalog (krstna 1675–1703, ne 1669–1703) in razrešitev zapisa o zvonu (1998 Filakova akcija → 2008 posvetitev)
+- Navzkrižje virov Radio Odeon (Audrey 12/2025 vs. Matija 2/2026 o Janezovi poti) razrešeno z mostom: Saragosa → Joliet (1917 Audrey)
+- Zbirka ostaja 93 zapisov / 412 virov (samo popravki, brez novih vnosov)
+- Odprto: Etnolog letnik 9/1937 (ni primarnega vira; zapis sledi navedenemu viru), kolpa-extremi vršni 1,9 m/h vs povprečje 1 m/h (fizično združljivo, pustljeno), Mera Peak 6.467 m (po viru Radio Odeon)
