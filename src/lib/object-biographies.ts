@@ -3158,6 +3158,95 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
     ],
   },
   {
+    slug: "kucar-podzemelj",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "halštatska doba",
+        yearLabelEn: "Hallstatt age",
+        sortYear: -800,
+        textSi:
+          "Na Kučarju zraste eno največjih železnodobnih selišč širšega južnoalpskega prostora: topilnica rude, kovačnica, hiše; mrtvi v gomile pri Grmu, Zemljah in Škriljah.",
+        textEn:
+          "On Kučar one of the largest Iron Age settlements of the wider south-Alpine world grows: an ore smeltery, a forge, houses; the dead in barrows near Grm, Zemelj and Škrilje.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "3. st. pr. n. št.",
+        yearLabelEn: "3rd c. BC",
+        sortYear: -270,
+        textSi:
+          "Na Pezdirčevi njivi je zakopan bronast pas z zlatnikom: keltska imitacija staterja Aleksandra Velikega z Niko in Ateno — skovana v prvi polovici 3. stoletja pr. n. št.",
+        textEn:
+          "At Pezdirčeva njiva a bronze belt with a gold coin lies buried: a Celtic imitation of a stater of Alexander the Great with Nike and Athena — struck in the first half of the 3rd century BC.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "5.–6. stoletje",
+        yearLabelEn: "5th–6th centuries",
+        sortYear: 500,
+        textSi:
+          "Na vrhu poznoantični stavbni kompleks: dve cerkvi, krstilnica in stanovanjske zgradbe znotraj obzidja — zgodnjekrščanski svet nad faro, ki še ni obstajala.",
+        textEn:
+          "On the top a late-antique building complex: two churches, a baptistery and dwelling houses within a wall — an early Christian world above a parish that did not yet exist.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "nastanek",
+        yearLabelSi: "1228 → 1279",
+        yearLabelEn: "1228 → 1279",
+        sortYear: 1279,
+        textSi:
+          "Cerkev sv. Martina stoji pred letom 1228, kraj se imenuje Sv. Martin; Podzemelj prvič na papirju 1279 — sto devetinosemdeset let pred Gribljami (1468).",
+        textEn:
+          "The church of St. Martin stands before 1228, the place is called Sv. Martin; Podzemelj first on paper in 1279 — a hundred and eighty-nine years before Griblje (1468).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1669 → 1947",
+        yearLabelEn: "1669 → 1947",
+        sortYear: 1669,
+        textSi:
+          "Fara sv. Martina zapisuje Griblje: matične knjige 1669–1947; v letih 1872–1893 tam učiteljuje Ivan Barle, pred gribeljsko šolo (1889).",
+        textEn:
+          "The parish of St. Martin writes Griblje down: the registers 1669–1947; between 1872 and 1893 Ivan Barle teaches there, before the Griblje school (1889).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "pred 1914 → 1995",
+        yearLabelEn: "before 1914 → 1995",
+        sortYear: 1914,
+        textSi:
+          "Gomile izkopane pred prvo svetovno vojno (Dunaj, Ljubljana); Dularjev katalog Podzemelj 1978; monografija Kučar (Dular, Ciglenečki, Dular) 1995.",
+        textEn:
+          "The barrows excavated before the First World War (Vienna, Ljubljana); Dular's catalogue Podzemelj 1978; the monograph Kučar (Dular, Ciglenečki, Dular) 1995.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "present",
+        sortYear: 2026,
+        textSi:
+          "Hrib je spomeniško zaščiten, pobočja nosijo vinograde z zidanicami; Podzemelj ima 169 prebivalcev. Glavna slika zapisa: Uroš Novina, september 2024.",
+        textEn:
+          "The hill is a protected monument, its slopes carry vineyards with cellar houses; Podzemelj counts 169 inhabitants. The record's main image: Uroš Novina, September 2024.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     phases: [
       {

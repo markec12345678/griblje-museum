@@ -688,6 +688,13 @@ export const WALKS: Walk[] = [
           "Janko's younger brother Konrad stayed on the ground: he taught in Metlika and brought the AŽ hive to Bela krajina — bees that changed the villages. And when the Bela krajina Museum Society was founded in 1949, he stood among the founding members.",
       },
       {
+        exhibitSlug: "kucar-podzemelj",
+        noteSi:
+          "In vse, kar je ta učiteljska hiša pisala, je nastalo pod Kučarjem: hrib nad Podzemljem, pod katerim so se zapisovale Griblje — od keltskega zlata na Pezdirčevi njivi do matičnih knjig in prve abecede gribeljskih otrok.",
+        noteEn:
+          "And everything that teaching house wrote was written beneath Kučar: the hill above Podzemelj, under which Griblje was written down — from the Celtic gold of Pezdirčeva njiva to the parish registers and the village children's first alphabet.",
+      },
+      {
         exhibitSlug: "joze-dular",
         noteSi:
           "In mož, ki je spomin dodel v hišo: Jože Dular, trideset let Belokranjskega muzeja. Njegova knjižica o Županičevi plošči v Gribljah je dokument, da se je vas spomnila pravično.",

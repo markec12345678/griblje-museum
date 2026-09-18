@@ -4659,6 +4659,81 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "kucar-podzemelj",
+    addedAt: "2026-09-18",
+    category: "kraj",
+    titleSi: "Kučar nad Podzemljem — hrib, pod katerim so se pisale Griblje",
+    titleEn: "Kučar above Podzemelj — the hill beneath which Griblje was written",
+    periodSi: "železna doba → danes · Podzemelj 1279 · fara Gribelj 1669–1947",
+    periodEn: "Iron Age → present · Podzemelj 1279 · the parish of Griblje 1669–1947",
+    summarySi:
+      "Hrib nad župnijskim sedežem Gribelj: Podzemelj na papirju od 1279, fara sv. Martina z matičnimi knjigami 1669–1947 — in na vrhu železnodobno selišče s poznoantičnima cerkvama ter keltskim zlatnikom s Pezdirčeve njive.",
+    summaryEn:
+      "The hill above Griblje's parish seat: Podzemelj on paper since 1279, the parish of St. Martin with its registers 1669–1947 — and on top an Iron Age settlement with two late-antique churches and a Celtic gold coin from Pezdirčeva njiva.",
+    storySi:
+      "Vse, kar je o Gribljah pred letom 1889 nastalo na papirju, je nastalo pod Kučarjem. Hrib (222 metrov) stoji nad Podzemljem, kraju, ki je prvič na papirju leta 1279 — sto devetinosemdeset let pred prvo omembo Gribelj. Cerkev sv. Martina je tam stala že pred letom 1228, kraj se je po njej imenoval Sv. Martin, Valvasor pa jo je opisal v Slavi vojvodine Kranjske. Gribljska cerkev sv. Vida je bila njena podružnica — in vsak krst, poroka in pogreb z Gribelj je prišel pod ta hrib, da se je zapisal v podzemeljske matične knjige (zapis matice-podzemelj).\n\nPod hribom je stal tudi šolski pult: preden so leta 1889 blagoslovili gribeljsko podružnično šolo, so gribeljski otroci hodili k pouku v Podzemelj — v letih 1872–1893 k učitelju Ivanu Barletu (zapis konrad-barle). Novo podzemeljsko šolsko poslopje, odprto 1888, je julija 2002 zgorelo; nadomestili so jo leta 2003. Vas je leta 1523 štela osem kmetij pod gradaškim gospostvom; danes ima 169 prebivalcev in poštno številko Gradac.\n\nSam hrib pa je od vsega tega starejši za tisočletja. Na Kučarju je bilo v halštatski dobi eno največjih železnodobnih selišč širšega južnoalpskega prostora: na pobočjih topilnica železove rude in kovačnica, na severnem delu hiše; svoje mrtve so takratni prebivalci pokopavali v gomile pri Grmu, Zemljah in Škriljah — nekatera grobišča so štela čez trideset gomil. Izkopanine, odnešene pred prvo svetovno vojno, danes hranita Naravoslovni muzej na Dunaju in Narodni muzej Slovenije.\n\nNajlepša najdba pa prihaja z njive, ne z gomile: na Pezdirčevi njivi so odkrili bronast pas z zlatnikom — keltsko imitacijo staterja Aleksandra Velikega, skovano v prvi polovici 3. stoletja pred našim štetjem, z boginjama Niko in Ateno. Takih kovancev je na svetu zelo malo. In priimek njive je gribeljski: Pezdirc — enak priimku Katarine Pezdirc s Grizina, matere etnologa Županiča, katere zapis izročila iz let 1894/95 hrani ta zbirka (zapis katarina-zupanic). Njiva pod Kučarjem, ki nosi ime gribeljske rodbine, je čuvala keltsko zlato.\n\nNa vrhu Kučarja stojijo še ostanki poznoantičnega stavbnega kompleksa iz 5. in 6. stoletja: dve cerkvi, krstilnica in stanovanjske zgradbe, obdane z obzidjem — zgodnjekrščanska arhitektura, starejša od vseh cerkva v tej zbirki. Hrib je spomeniško zaščiten, pobočja pa danes nosijo vinograde z belokranjskimi zidanicami. Znanstvena hrbtna kost najdb sta monografija Kučar (Janez Dular, Slavko Ciglenečki in Anja Dular; Opera Instituti archaeologici Sloveniae 1, 1995) in Dularjev katalog Podzemelj (1978). Muzej išče: fotografijo izkopavanj gomil pred prvo svetovno vojno in pogled na Kučar z gribeljske strani Kolpe.",
+    storyEn:
+      "Everything about Griblje that was put on paper before 1889 was written beneath Kučar. The hill (222 metres) stands above Podzemelj, a place first on paper in 1279 — a hundred and eighty-nine years before Griblje's first mention. The church of St. Martin stood there before 1228, the place was named Sv. Martin after it, and Valvasor described it in the Glory of the Duchy of Carniola. Griblje's church of St. Vitus was its dependent chapel — and every baptism, wedding and funeral from Griblje came under this hill to be written into the Podzemelj parish registers (the record matice-podzemelj).\n\nThe school desk stood beneath the hill as well: before the Griblje branch school was blessed in 1889, the village's children walked to their lessons in Podzemelj — between 1872 and 1893 to the teacher Ivan Barle (the record konrad-barle). The new Podzemelj school building, opened in 1888, burned down in July 2002; it was replaced in 2003. In 1523 the village counted eight farms under the Gradac lordship; today it has 169 inhabitants and the post code of Gradac.\n\nThe hill itself is older than all of this by millennia. In the Hallstatt age Kučar carried one of the largest Iron Age settlements of the wider south-Alpine world: an iron-ore smeltery and a forge on the slopes, houses on the northern part; its people buried their dead in barrows near Grm, Zemelj and Škrilje — some cemeteries counted over thirty mounds. The finds, carried off before the First World War, are kept today by the Natural History Museum in Vienna and the National Museum of Slovenia.\n\nThe loveliest find comes from a field, not a mound: at Pezdirčeva njiva (Pezdirc's field) a bronze belt was uncovered with a gold coin — a Celtic imitation of a stater of Alexander the Great, struck in the first half of the third century BC, bearing the goddesses Nike and Athena. Such coins are very few in the world. And the field's surname is a Griblje one: Pezdirc — the same surname as Katarina Pezdirc of the Grizin homestead, the mother of the ethnologist Županič, whose record of tradition of 1894/95 this collection keeps (the record katarina-zupanic). A field beneath Kučar bearing a Griblje family's name was guarding Celtic gold.\n\nOn the top of Kučar stand the remains of a late-antique building complex of the fifth and sixth centuries: two churches, a baptistery and dwelling houses, enclosed by a wall — early Christian architecture older than every church in this collection. The hill is a protected monument, and its slopes today carry vineyards with the zidanice, the cellar houses, of Bela krajina. The scientific backbone of the finds is the monograph Kučar (Janez Dular, Slavko Ciglenečki and Anja Dular; Opera Instituti archaeologici Sloveniae 1, 1995) and Dular's catalogue Podzemelj (1978). The museum seeks: a photograph of the mound excavations before the First World War, and a view of Kučar from the Griblje side of the Kolpa.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/kucar-podzemelj.jpg",
+    imageCredit:
+      "Foto: Uroš Novina · Wikimedia Commons · CC BY 2.0 — Kučar (222 m) nad Podzemljem: železnodobno naselje in zgodnjekrščanski stavbni kompleks, september 2024",
+    yearFrom: -800,
+    yearTo: 2026,
+    lat: 45.6105,
+    lng: 15.2735,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "wiki-podzemelj",
+        nameSi: "Wikipedija: Podzemelj (zgodovina, Kučar, Pezdirčeva njiva)",
+        nameEn: "Wikipedia: Podzemelj (history, Kučar, Pezdirčeva njiva)",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Podzemelj",
+        noteSi:
+          "Prva omemba 1279; cerkev sv. Martina pred 1228; halštatsko selišče, gomile pri Grmu, Zemljah in Škriljah; keltski stater s Pezdirčeve njive; požar šole 2002.",
+        noteEn:
+          "First mention 1279; the church of St. Martin before 1228; the Hallstatt settlement, barrows at Grm, Zemelj and Škrilje; the Celtic stater from Pezdirčeva njiva; the school fire of 2002.",
+      },
+      {
+        key: "dular-kucar-1995",
+        nameSi: "Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        nameEn: "Bibliography: Janez Dular, Slavko Ciglenečki, Anja Dular, 'Kučar: the Iron Age settlement and early Christian building complex on Kučar near Podzemelj', Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        sourceType: "objava",
+        license: "bibliografski citat",
+        noteSi:
+          "Temeljna monografija o najdišču: železnodobno naselje in poznoantični kompleks z dvema cerkvama in krstilnico.",
+        noteEn:
+          "The fundamental monograph of the site: the Iron Age settlement and the late-antique complex with two churches and a baptistery.",
+      },
+      {
+        key: "dular-podzemelj-1978",
+        nameSi: "Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        nameEn: "Bibliography: Janez Dular, 'Podzemelj', Katalogi in monografije 16, 1978",
+        sourceType: "objava",
+        license: "bibliografski citat",
+        noteSi:
+          "Katalog najdb (gomile, halštatska topilnica, rimske najdbe) — drugi znanstveni vir, naveden v članku Wikipedije.",
+        noteEn:
+          "The catalogue of finds (barrows, the Hallstatt smeltery, Roman finds) — the second scholarly source cited in the Wikipedia article.",
+      },
+      {
+        key: "commons-kucar",
+        nameSi: "Wikimedia Commons: Kučar pri Podzemlju (fotograf: Uroš Novina)",
+        nameEn: "Wikimedia Commons: Kučar near Podzemelj (photographer: Uroš Novina)",
+        sourceType: "fotografija",
+        license: "CC BY 2.0 (fotograf: Uroš Novina)",
+        url: WM("Ku%C4%8Dar_pri_Podzemlju_(54131009570).jpg"),
+        noteSi:
+          "Glavna slika zapisa: hrib s slovenskim opisom »železnodobno naselje in zgodnjekrščanski stavbni kompleks — eno najpomembnejših arheoloških najdišč« (posneto 4. 9. 2024).",
+        noteEn:
+          "The record's main image: the hill, described by its photographer as 'an Iron Age settlement and early Christian building complex — one of the most important archaeological sites' (taken 4 September 2024).",
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     addedAt: "2026-09-16",
     category: "kraj",

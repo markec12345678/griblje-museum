@@ -426,6 +426,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
       "As the first beekeeper of Bela krajina he took up the AŽ hive — and opened the region's beekeeping to a new age. Konrad Barle, born at Podzemelj during his father's teaching years, taught in Metlika for thirty-five years: he expanded the school to eight grades, and in 1912 founded the beekeeping branch (centenary 2012). And when he helped found the Bela krajina Museum Society in 1949, he assembled the Bela krajina museum's first collection with Božo Račič and Jože Dular. Every museum in this land stands on the apiary of such a house: the comb the Barles began building is still being drawn.",
   },
   {
+    slug: "kucar-podzemelj",
+    textSi:
+      "Hrib, pod katerim so se pisale Griblje. Podzemelj je na papirju od leta 1279 — sto devetinosemdeset let pred Gribljami — in njegova fara sv. Martina je zapisala vsak gribeljski krst, poroko in pogreb. Na vrhu Kučarja pa stari čas sega veliko globje: halštatsko selišče, gomile s čez tridesetimi nasipi, poznoantični kompleks z dvema cerkvama in krstilnico. In na Pezdirčevi njivi — polju z gribeljskim priimkom — keltsko zlato: imitacija staterja Aleksandra Velikega. Pogled na ta hrib je pogled na tri tisoč let, med katerimi je vas dobila ime, abecedo in spomin.",
+    textEn:
+      "The hill beneath which Griblje was written. Podzemelj has been on paper since 1279 — a hundred and eighty-nine years before Griblje — and its parish of St. Martin recorded every Griblje baptism, wedding and funeral. On the top of Kučar the old time reaches far deeper: a Hallstatt settlement, barrow fields of over thirty mounds, a late-antique complex with two churches and a baptistery. And on Pezdirčeva njiva — a field with a Griblje surname — Celtic gold: an imitation of a stater of Alexander the Great. A look at this hill is a look at three thousand years, in which the village received its name, its alphabet and its memory.",
+  },
+  {
     slug: "joze-dular",
     textSi:
       "Trideset let je vodil Belokranjski muzej v Metliki — in petdeset let živel v isti hiši, na kateri mu je po smrti ploščo postavilo društvo, ki ga je imelo za predsednika. Jože Dular je bil pesnik nove romantike in pripovednik, a njegov najgloblji pečat je zgodovina: Metlika skozi stoletja, Semič, Adlešiči, gasilstvo, godba. Za Griblje je najpomembnejša tanka knjižica o Županičevi spominski plošči — dokument o dnevu, ko se je vas spomnila svojega največjega sina. Vsak muzej vasi, tudi ta digitalni, stoji na plečih takih mož. Dular jih je nosil trideset let.",
