@@ -24,6 +24,7 @@ export async function GET(request: Request) {
     const payload: ExhibitDTO[] = exhibits.map((ex) => ({
       id: ex.id,
       slug: ex.slug,
+      museumNo: ex.museumNo,
       category: ex.category as ExhibitCategory,
       titleSi: ex.titleSi,
       titleEn: ex.titleEn,

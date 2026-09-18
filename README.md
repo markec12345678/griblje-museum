@@ -200,6 +200,19 @@ načela in odprti razpis za pričevanja skupnosti
   dogodkih, neobčutljivo na diakritike — po vzoru DigitaltMuseum
 - 🔗 **Globoke povezave** — vsak zapis ima deljiv URL `/?exhibit=<slug>`, pogledi
   `#zbirka`, `#zgodbe` … (isti format, ki ga objavljata IIIF in iskalni API)
+- 🏷️ **Trajne muzejske številke** — vsak zapis nosi inventarno številko **MVG-001 … MVG-093**
+  (vzorec objektnih številk Rijksmuseuma / UPI DigitaltMuseum): enkrat dodeljena, se ne
+  spreminja; izpostavljena v API-jih, IIIF metapodatkih, citatih in na straneh zapisov
+- 📄 **Muzejski zapis kot stran** — vsak predmet ima strežniško renderirano, indeksabilno
+  stran `/exponat/[slug]` (SL primarno, EN prek `?lang=en`) s kanoničnim naslovom,
+  hreflang izpisi, OG/Twitter metapodatki, JSON-LD (Article + BreadcrumbList znotraj
+  grafa Museum/CollectionPage), sitemap vpisom in dokazno strukturo
+  **KAJ VEMO → KAKO VEMO → VIRI → STATUS DOKAZA**; gumb »Odpri v muzeju« vodi v
+  interaktivni zapis (vzorec objektnih strani Rijksmuseum Collection Online, DigitaltMuseum)
+- 📱 **QR oznake za fizični muzej** — kurotorsko orodje v rubriki *Za kuliso*: izbira zapisa,
+  predogled in tisk A6 oznake s kodo QR na trajni naslov `/exponat/[slug]` (ime, številka,
+  obdobje, status dokaza, URL); most fizični predmet → digitalni zapis (vzorec
+  Valdresmusea in muzejev na prostem)
 - 🌍 **SLO/HRV/DEU/ITA/EN** — popolna petjezičnost vmesnika z vztrajnostjo izbire
   (hrvaščina za obiskovalce čez mejo po vzoru Interreg; nemščina in italijanščina za
   obiskovalce Bela krajine — vsebina zbirk ostaja v slovenščini in angleščini) in
@@ -211,7 +224,8 @@ načela in odprti razpis za pričevanja skupnosti
   po priporočilu AAM; nastavitve se shranijo v brskalnik in se sinhronizirajo med zavihki
 - 🔓 **Odprti podatki** — `/api/opendata`: manifest, celoten dump, schema.org JSON-LD,
   licenca **CC BY-SA 4.0**, CORS glava — po vzoru odprtega API Nasjonalmuseeta (2018);
-  trajne povezave **sameAs na Wikidata** (Q2531566 naselje, Q18515927 cerkev sv. Vida,
+  vsak zapis s trajno številko `museumNo` in `canonicalUrl`; trajne povezave
+  **sameAs na Wikidata** (Q2531566 naselje, Q18515927 cerkev sv. Vida,
   Q211046 Kolpa) po vzoru trajnih identifikatorjev DigitaltMuseum
 - 🏛️ **Muzejska iskrenost** — vsak zapis nosi stopnjo zanesljivosti, fotografije so
   avtentične in pripisane; kadar posnetek ni z Gribelj samega, je to izrecno navedeno
@@ -379,6 +393,7 @@ Obstoječemu zapisu PGD Griblje dodan vir Dolenjski list (13. 5. 2026): stoletni
   11. **zvon-2008:** »Kar je dokumentirano, je tole: leta 2008 …« dopolnjeno z dokumentirano vrsto 1998 (akcija Antona Filaka — 700-kilogramski zvon Feralit, blagoslov nadškofa Šuštarja; Slovenske novice 8/2026) pred 2008 — usklajeno z zapisoma sveti-vid in anton-filak;
   12. jezikovne popravke: **nikolaj-dragos** »priredili devetega od dvanajstih otrok« → »privedli na svet«; **panjska-koncnica** »v poznih najstnajstih letih« → »najstniških«; **kanizarica** »predstavljalo« → »predstavljal« + »delčniški« → »delniški«.
   Preverjeno dosledno pri ostalih sumih: Brinc 1988 »18.900 evrov« (vir Slovenske novice 4/2025 dobesedno), Vojna krajina 1460–1881 (Wikipedija dobesedno), Etnolog 1937/9 (naveden vir), 70. svetovno prvenstvo 2025 + »od 1953« (prekinitve COVID), Tone Kralj 99 pomladi/98. rojstni dan/100-letnica 2028 ✓, Dragoš 110 let 216 dni ✓, Ljubljanski maraton 26./28. izvedba ✓, Freyerjev izrez s popravljenim virom ✓. Ob tem potrjjen odprti zaostanek »Griblje v številkah« — slika Freyerjevega izreza (1400×1345, Griblje z obema imenoma) je vse od 22. sklopa pravilna.
+- **29. sklop — muzejska arhitektura: trajne identitete, objektne strani, QR most (2026-09-18):** profesionalni audit celotnega sistema po 14 področjih (ID-ji, URL-ji, SEO, JSON-LD, IIIF, odprti podatki, provenienca, povezani podatki, AI provenienca, dostopnost, večjezičnost, digitalna hramba, fizični muzej) proti praksam Rijksmuseuma, DigitaltMuseum, Europeane in IIIF → **tri arhitekturne spremembe** (ne novi »featureji«, temveč muzejski sistem): 1) **trajne muzejske številke** — vsak zapis nosi inventarno številko `MVG-001 … MVG-093` (enojni skript vpiše v `museum-content.ts` kot dobesedne vrednosti; shema `museumNo String? @unique`; izpostavljeno v `/api/exhibits`, `/api/opendata` (museumNo + canonicalUrl), IIIF metapodatkih, citatih zapisa in na straneh zapisov); 2) **muzejski zapis kot stran** — nova strežniško renderirana pot `/exponat/[slug]` (93 strani; SL primarno, EN prek `?lang=en`) s kanoničnim naslovom, hreflang (sl/en/x-default), OG/Twitter metapodatki, JSON-LD grafom (Museum + CollectionPage + Article z identifier PropertyValue + BreadcrumbList; enaki @id-ji kot graf domače strani), vpisom v sitemap (93 zapisov × jezikovni alternativi) in dokazno strukturo KAJ VEMO → KAKO VEMO → VIRI (7 pri svetem Vidu) → STATUS DOKAZA; domača stran pa nosi graf z ItemList vseh 93 zapisov; IIIF homepage manifestov od sedaj kaže na kanonično stran zapisa (druga domača stran ostaja interaktivni ogled); 3) **QR oznake za fizični muzej** — kurotorsko orodje v rubriki *Za kuliso* (petjezično, 802 ključev × 5): izbira zapisa s poljem iskanja, predogled in tisk A6 oznake (knjižnica `qrcode`, SVG; portal na `<body>` po vzorcu tiska razglednice — preizkušeno: PDF tisk = točno 1 stran), koda QR vodi na `/exponat/<slug>`; stran zapisa obiskovalca z gumbom »Odpri v muzeju« vrne v živi muzej. Navigacija `/?exhibit=` in vsi obstoječi URL-ji nespremenjeni (backward-compatible); objektna stran se natisne kot celota (prepis razgledničnega skrivanja za `.exponat-print-page`). Verifikacija: tsc 0, eslint 0, i18n struktura 5×802 identična, sitemap 93 vpisov, brskalnik (agent-browser): /, /exponat/sveti-vid (SL+EN), dialog zapisa s citatom MVG-046, QR orodje (SL+EN), PDF tisk oznake 1 stran, 0 napak.
 - **17. sklop — benchmark UI/UX (2026-10):** analiza vrhunskih muzejev (Google Arts & Culture, Rijksmuseum, Louvre, Van Gogh, Tate, NHM, Kamra — poročilo `research-griblje/07-museum-ux-benchmark-2026-10.md`) in sedem izpeljanih vzorcev: **hitri vstop »Kako želite raziskovati?«** na domači strani (GA&C »What do you want to explore?«), **nadaljujte z raziskovanjem** (zadnje odkriti zapisi), **srček na karticah zbirke** (Rijksstudio — enoklik shranjevanje), **barvna polica vasi** (GA&C barvno brskanje: 8 polic — nebo/zelenje/zemlja/sonce/vino/sneg/črno-belo/noč — dodelitev po HSL iz prstnih odtisov), **zadnja in predlagana iskanja** (Tate »Try searching for«), **mobilna spodnja vrstica** (5 poti z enim tapom, safe-area) in **nazaj na vrh** (Louvre/Tate).
 
 V skladišču je že pre-seedana baza `db/custom.db`, zato aplikacija deluje tudi

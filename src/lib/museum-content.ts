@@ -27,6 +27,8 @@ type SeedSource = {
 
 type SeedExhibit = {
   slug: string;
+  /** Trajna muzejska številka (inventarna) — enkrat dodeljena, se ne spreminja. */
+  museumNo?: string;
   category: ExhibitCategory;
   titleSi: string;
   titleEn: string;
@@ -57,6 +59,7 @@ const WM = (file: string) => `https://commons.wikimedia.org/wiki/File:${file}`;
 export const seedExhibits: SeedExhibit[] = [
   {
     slug: "griblje-vas",
+    museumNo: "MVG-001",
     category: "kraj",
     titleSi: "Griblje — vas ob Kolpi",
     titleEn: "Griblje — a village on the Kolpa",
@@ -163,6 +166,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "sveti-vid",
+    museumNo: "MVG-002",
     category: "kraj",
     titleSi: "Cerkev sv. Vida",
     titleEn: "Church of St. Vitus",
@@ -258,6 +262,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "petstoletnica-2026",
+    museumNo: "MVG-003",
     addedAt: "2026-09-15",
     category: "kraj",
     titleSi: "Petsto let cerkve sv. Vida (2026)",
@@ -349,6 +354,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "uskoki-in-vojna-krajina",
+    museumNo: "MVG-004",
     category: "kraj",
     titleSi: "Uskoki in Vojna krajina",
     titleEn: "The Uskoks and the Military Frontier",
@@ -436,6 +442,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "sokcev-dvor",
+    museumNo: "MVG-005",
     category: "kraj",
     titleSi: "Šokčev dvor v Žuničih",
     titleEn: "The Šokac homestead in Žuniči",
@@ -495,6 +502,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kolpa-reka",
+    museumNo: "MVG-006",
     category: "kolpa",
     titleSi: "Kolpa — življenje ob reki",
     titleEn: "The Kolpa — life on the river",
@@ -575,6 +583,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "malenca",
+    museumNo: "MVG-007",
     category: "kolpa",
     titleSi: "Malenca na Kolpi",
     titleEn: "The malenca on the Kolpa",
@@ -627,6 +636,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kolpa-extremi",
+    museumNo: "MVG-008",
     category: "kolpa",
     titleSi: "Reka ekstremov — suša in poplave",
     titleEn: "A river of extremes — drought and floods",
@@ -741,6 +751,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "mlini-na-kolpi",
+    museumNo: "MVG-009",
     category: "kolpa",
     titleSi: "Mlini ob Kolpi",
     titleEn: "Mills along the Kolpa",
@@ -808,6 +819,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "niko-zupanic",
+    museumNo: "MVG-010",
     category: "kraj",
     titleSi: "Niko Županič — kozmopolit iz Gribelj",
     titleEn: "Niko Županič — a cosmopolitan from Griblje",
@@ -922,6 +934,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "izseljenstvo",
+    museumNo: "MVG-011",
     category: "kraj",
     titleSi: "Izseljenstvo — vas čez ocean",
     titleEn: "Emigration — the village across the ocean",
@@ -992,6 +1005,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "snos-crnomelj-1944",
+    museumNo: "MVG-012",
     category: "vojna",
     titleSi: "SNOS v Črnomlju — prvi slovenski parlament",
     titleEn: "SNOS in Črnomelj — the first Slovene parliament",
@@ -1072,6 +1086,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "letalisce-otok-1944",
+    museumNo: "MVG-013",
     category: "vojna",
     titleSi: "Partizansko letališče Otok",
     titleEn: "The Otok partisan airfield",
@@ -1150,6 +1165,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "evakuacija-1945",
+    museumNo: "MVG-014",
     category: "vojna",
     titleSi: "Marec 1945: zavezniška letala nad Gribljami",
     titleEn: "March 1945: Allied aircraft over Griblje",
@@ -1209,6 +1225,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "meja-1991",
+    museumNo: "MVG-015",
     category: "vojna",
     titleSi: "Meja ob Kolpi",
     titleEn: "The border on the Kolpa",
@@ -1262,6 +1279,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "ribnik",
+    museumNo: "MVG-016",
     category: "narava",
     titleSi: "Vaški ribnik",
     titleEn: "The village pond",
@@ -1317,6 +1335,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "belokranjska-hisa",
+    museumNo: "MVG-017",
     category: "gospodarstvo",
     titleSi: "Belokranjska hiša",
     titleEn: "The Bela krajina house",
@@ -1380,6 +1399,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "vino-in-crnina",
+    museumNo: "MVG-018",
     category: "gospodarstvo",
     titleSi: "Vinogradništvo in metliška črnina",
     titleEn: "Viticulture and metliška črnina",
@@ -1450,6 +1470,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "jurjevanje",
+    museumNo: "MVG-019",
     category: "sege",
     titleSi: "Jurjevanje in pustovanje",
     titleEn: "Jurjevanje and carnival customs",
@@ -1506,6 +1527,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "belokranjska-kuhinja",
+    museumNo: "MVG-020",
     category: "sege",
     titleSi: "Belokranjska kuhinja",
     titleEn: "Bela krajina cuisine",
@@ -1578,6 +1600,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "tkalstvo",
+    museumNo: "MVG-021",
     category: "gospodarstvo",
     titleSi: "Tkalstvo — platno na vaških statvah",
     titleEn: "Weaving — linen on village looms",
@@ -1644,6 +1667,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "anton-filak",
+    museumNo: "MVG-022",
     category: "gospodarstvo",
     titleSi: "Anton Filak — prvak v oranju",
     titleEn: "Anton Filak — a ploughing champion",
@@ -1783,6 +1807,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "storklje",
+    museumNo: "MVG-023",
     category: "narava",
     titleSi: "Štorklje nad vasmi",
     titleEn: "Storks above the villages",
@@ -1858,6 +1883,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "bele-breze",
+    museumNo: "MVG-024",
     category: "narava",
     titleSi: "Bele breze — drevo, ki je dalo ime pokrajini",
     titleEn: "White birches — the tree that named a region",
@@ -1923,6 +1949,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "crni-moceril",
+    museumNo: "MVG-025",
     category: "narava",
     titleSi: "Črni močeril — črna človeška ribica Bele krajine",
     titleEn: "The black olm — Bela krajina's dark proteus",
@@ -2063,6 +2090,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "vaska-sola",
+    museumNo: "MVG-026",
     category: "kraj",
     titleSi: "Vaška šola — iz tablic v svet",
     titleEn: "The village school — from slates into the world",
@@ -2201,6 +2229,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "pgd-griblje-1927",
+    museumNo: "MVG-027",
     addedAt: "2026-09-15",
     category: "kraj",
     titleSi: "PGD Griblje (od 1927)",
@@ -2299,6 +2328,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "zaseda-1941",
+    museumNo: "MVG-028",
     category: "vojna",
     titleSi: "Zaseda na cesti Črnomelj–Griblje — 6. september 1941",
     titleEn: "The ambush on the Črnomelj–Griblje road — 6 September 1941",
@@ -2366,6 +2396,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "spomenik-padlim",
+    museumNo: "MVG-029",
     category: "vojna",
     titleSi: "Spomenik padlim vaščanom — trinajst imen",
     titleEn: "The memorial to the fallen villagers — thirteen names",
@@ -2433,6 +2464,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "griblje-v-stevilkah",
+    museumNo: "MVG-030",
     category: "kraj",
     titleSi: "Griblje v številkah",
     titleEn: "Griblje in numbers",
@@ -2545,6 +2577,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "obcina-griblje",
+    museumNo: "MVG-031",
     addedAt: "2026-09-18",
     category: "kraj",
     titleSi: "Občina Griblje — vas, ki je bila občina",
@@ -2603,6 +2636,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kolesa-torpedo",
+    museumNo: "MVG-032",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Kolesarska sekcija Torpedo — starodobna kolesa Gribelj",
@@ -2723,6 +2757,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "audrey-totter",
+    museumNo: "MVG-033",
     category: "kraj",
     titleSi: "Audrey Totter — zvezda filma noir iz Gornjih Gribelj",
     titleEn: "Audrey Totter — a film noir star from Gornje Griblje",
@@ -2794,6 +2829,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "nikolaj-dragos",
+    museumNo: "MVG-034",
     category: "kraj",
     titleSi: "Nikolaj Dragoš — sto deset let od Hajdeč grunta",
     titleEn: "Nikolaj Dragoš — a hundred and ten years from the Hajdeč farm",
@@ -2882,6 +2918,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "peter-kambic",
+    museumNo: "MVG-035",
     category: "kraj",
     titleSi: "Peter Kambič — učitelj, ki je zapisal božič Belokranjcev",
     titleEn: "Peter Kambič — the teacher who wrote down the Bela krajina Christmas",
@@ -2960,6 +2997,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "alburnus-sava",
+    museumNo: "MVG-036",
     category: "narava",
     titleSi: "Alburnus sava — plevka, ki jo je znanost spoznala v Kolpi",
     titleEn: "Alburnus sava — the bleak that science met in the Kolpa",
@@ -3026,6 +3064,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "matice-podzemelj",
+    museumNo: "MVG-037",
     category: "kraj",
     titleSi: "Matične knjige 1669–1947 — arhiv rodbin z Gribelj",
     titleEn: "The parish registers 1669–1947 — the archive of Griblje families",
@@ -3134,6 +3173,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "porocna-1669",
+    museumNo: "MVG-038",
     category: "kraj",
     titleSi: "Poročna knjiga 1669 — prva stran podzemeljskega arhiva",
     titleEn: "The marriage register of 1669 — the first page of the Podzemelj archive",
@@ -3189,6 +3229,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "spanska-gripa-1918",
+    museumNo: "MVG-039",
     category: "kraj",
     titleSi: "Španska gripa 1918 — pljučnica (španka) v podzemeljski matici",
     titleEn: "The Spanish flu of 1918 — pneumonia (Spanish) in the Podzemelj register",
@@ -3248,6 +3289,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "cerkvisce",
+    museumNo: "MVG-040",
     category: "kraj",
     titleSi: "Cerkvišče — tri cerkvice, ki jih ni več",
     titleEn: "Cerkvišče — the three churches that are no more",
@@ -3325,6 +3367,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "pasuljada",
+    museumNo: "MVG-041",
     category: "sege",
     titleSi: "Pasuljada — dan, ko ob Kolpi zadiši po pasulju",
     titleEn: "The Pasuljada — the day the Kolpa smells of bean stew",
@@ -3413,6 +3456,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "franc-brinc",
+    museumNo: "MVG-042",
     category: "kraj",
     titleSi: "dr. Franc Brinc — pravnik, ki vrača domov",
     titleEn: "dr. Franc Brinc — the lawyer who gives back to home",
@@ -3515,6 +3559,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "katarina-zupanic",
+    museumNo: "MVG-043",
     category: "sege",
     titleSi: "Katarina Zupanič — Šopek poljskih cvetlic iz Gribelj",
     titleEn: "Katarina Zupanič — A bouquet of meadow flowers from Griblje",
@@ -3593,6 +3638,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "toni-gasperic",
+    museumNo: "MVG-044",
     category: "kraj",
     titleSi: "Toni Gašperič — humor z bregov Kolpe",
     titleEn: "Toni Gašperič — humour from the banks of the Kolpa",
@@ -3659,6 +3705,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "madronicev-mlin",
+    museumNo: "MVG-045",
     category: "kolpa",
     titleSi: "Madroničev mlin — mlin in žaga ob Kolpi",
     titleEn: "The Madronič mill — a mill and sawmill on the Kolpa",
@@ -3727,6 +3774,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "muzejska-ucilnica",
+    museumNo: "MVG-046",
     category: "kraj",
     titleSi: "Muzejska učilnica — fizična sestra digitalnega muzeja",
     titleEn: "The museum classroom — the digital museum's physical sister",
@@ -3806,6 +3854,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kavbojski-zur",
+    museumNo: "MVG-047",
     category: "sege",
     titleSi: "Kavbojski žur — divji zahod ob Kolpi",
     titleEn: "The Cowboy Party — the Wild West on the Kolpa",
@@ -3886,6 +3935,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "zvon-2008",
+    museumNo: "MVG-048",
     category: "kraj",
     titleSi: "Zvon 2008 — glas, ki se je vrnil v cerkev",
     titleEn: "The bell of 2008 — the voice that returned to the church",
@@ -3968,6 +4018,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "zaselki-griblje",
+    museumNo: "MVG-049",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Zaselki: Dolnje, Srednje in Gornje Griblje ter Brinsko selo",
@@ -4028,6 +4079,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "goranja-lokva",
+    museumNo: "MVG-050",
     addedAt: "2026-09-16",
     category: "narava",
     titleSi: "Goranja lokva in Rudna peč — zemlja, ki je dala opeko",
@@ -4075,6 +4127,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "strucelj-kmetija",
+    museumNo: "MVG-051",
     addedAt: "2026-09-16",
     category: "gospodarstvo",
     titleSi: "Kmetija Štrucelj — s pesmijo do mraka",
@@ -4120,6 +4173,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "tamburasi-danica",
+    museumNo: "MVG-052",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Tamburaši društva Danica — bugarija mladega Dragoša",
@@ -4176,6 +4230,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kopalisce-griblje",
+    museumNo: "MVG-053",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Kopališče Griblje — poletje, ki ima svoj naslov",
@@ -4244,6 +4299,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "dakota-otok",
+    museumNo: "MVG-054",
     addedAt: "2026-09-16",
     category: "vojna",
     titleSi: "Dakota pri Otoku — letalo, ki je ostalo",
@@ -4321,6 +4377,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "veselko-fotograf",
+    museumNo: "MVG-055",
     addedAt: "2026-09-16",
     category: "vojna",
     titleSi: "Franjo Veselko — oko, ki je videlo reševanje",
@@ -4387,6 +4444,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "zracni-most-krasinec",
+    museumNo: "MVG-056",
     addedAt: "2026-09-16",
     category: "vojna",
     titleSi: "Zračni most Krasinec — 2041 ljudi v 48 urah",
@@ -4445,6 +4503,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "matija-totter",
+    museumNo: "MVG-057",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Jandreč Matiček — kmet, ki je zapisoval vas",
@@ -4511,6 +4570,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "janko-barle",
+    museumNo: "MVG-058",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Janko Barle — zapisovalec Bele krajine",
@@ -4576,6 +4636,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "konrad-barle",
+    museumNo: "MVG-059",
     addedAt: "2026-09-18",
     category: "kraj",
     titleSi: "Konrad Barle — učitelj, ki je prinesel AŽ-panj v Belo krajino",
@@ -4660,6 +4721,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kucar-podzemelj",
+    museumNo: "MVG-060",
     addedAt: "2026-09-18",
     category: "kraj",
     titleSi: "Kučar nad Podzemljem — hrib, pod katerim so se pisale Griblje",
@@ -4735,6 +4797,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kranjska-sivka",
+    museumNo: "MVG-061",
     addedAt: "2026-09-18",
     category: "narava",
     titleSi: "Kranjska sivka — siva gospodarica gribeljskih panjev",
@@ -4824,6 +4887,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "panjska-koncnica",
+    museumNo: "MVG-062",
     addedAt: "2026-09-18",
     category: "sege",
     titleSi: "Panjska končnica — galerija pod streho čebelnjaka",
@@ -4889,6 +4953,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "joze-dular",
+    museumNo: "MVG-063",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Jože Dular — trideset let Belokranjskega muzeja",
@@ -4954,6 +5019,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "pisanice",
+    museumNo: "MVG-064",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Belokranjske pisanice — pomlad, ki jo narišemo",
@@ -5018,6 +5084,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kresovanje",
+    museumNo: "MVG-065",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Kresovanje — ogenj in pesem pred sv. Janezom",
@@ -5073,6 +5140,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kuhanje-zganja",
+    museumNo: "MVG-066",
     addedAt: "2026-09-16",
     category: "gospodarstvo",
     titleSi: "Kuhanje žganja — jesenska kapljica vasi",
@@ -5128,6 +5196,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "loke-in-studenci",
+    museumNo: "MVG-067",
     addedAt: "2026-09-16",
     category: "narava",
     titleSi: "Loke in studenci — reka, ki diha pod tlemi",
@@ -5182,6 +5251,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "etimologija-gribljati",
+    museumNo: "MVG-068",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Gribljati — ime vasi je brazda",
@@ -5236,6 +5306,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "td-griblje",
+    museumNo: "MVG-069",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Turistično društvo Griblje — vasi, ki se sama spominja",
@@ -5313,6 +5384,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "gribeljci-po-svetu-2019",
+    museumNo: "MVG-070",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Gribeljci po svetu — vrnitev ob 130-letnici šole",
@@ -5369,6 +5441,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "ko-se-pticki-zenijo",
+    museumNo: "MVG-071",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Ko se ptički ženijo — gregorjevo, ki se je vrnilo",
@@ -5414,6 +5487,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "ciril-totter",
+    museumNo: "MVG-072",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Ciril Totter — maratonc na Jandrečetovi zemlji",
@@ -5459,6 +5533,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "praznik-ks-2024",
+    museumNo: "MVG-073",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Praznik krajevne skupnosti 2024 — prvi po desetletjih",
@@ -5514,6 +5589,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "ljudje-ob-kolpi",
+    museumNo: "MVG-074",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Ljudje ob Kolpi — rubrika, ki piše zgodovino vasi",
@@ -5559,6 +5635,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "valvasor-1689",
+    museumNo: "MVG-075",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Valvasor 1689 — prva tiskana knjiga, ki pozna ta konec",
@@ -5615,6 +5692,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "pecnica-susenje-sadja",
+    museumNo: "MVG-076",
     addedAt: "2026-09-16",
     category: "gospodarstvo",
     titleSi: "Pečnica za sušenje sadja — tovarna jesenskega dima",
@@ -5671,6 +5749,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "stari-zemljevidi",
+    museumNo: "MVG-077",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Stari zemljevidi — kako je vas prišla na papir",
@@ -5736,6 +5815,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "sd-griblje-sport",
+    museumNo: "MVG-078",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "ŠD Griblje — tekaški korak vasi",
@@ -5802,6 +5882,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "belokranjska-nosa",
+    museumNo: "MVG-079",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Belokranjska noša — bela ruta, ki nosi pokrajino",
@@ -5868,6 +5949,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "kanizarica",
+    museumNo: "MVG-080",
     addedAt: "2026-09-16",
     category: "gospodarstvo",
     titleSi: "Rudnik Kanižarica — industrijsko srce vasi, sedem kilometrov stran",
@@ -5934,6 +6016,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "sturm-1891",
+    museumNo: "MVG-081",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Einzelhof v Gribljah — najstarejša znana slika vasi (1891)",
@@ -5990,6 +6073,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "gribeljski-zbul",
+    museumNo: "MVG-082",
     addedAt: "2026-09-16",
     category: "gospodarstvo",
     titleSi: "Gribeljski žbul — čebula, ki je nosila vas",
@@ -6076,6 +6160,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "arheolosko-najdigsce-ob-kolpi",
+    museumNo: "MVG-083",
     addedAt: "2026-09-16",
     category: "kraj",
     titleSi: "Arheološko najdišče ob Kolpi — pet tisoč let pod njivami",
@@ -6142,6 +6227,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "jurjevo-v-gribljah",
+    museumNo: "MVG-084",
     addedAt: "2026-09-16",
     category: "sege",
     titleSi: "Jurjevo v Gribljah — Zeleni Jurij v košu iz brezja",
@@ -6198,6 +6284,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "mate-zupanic-svarski",
+    museumNo: "MVG-085",
     addedAt: "2026-09-17",
     category: "vojna",
     titleSi: "Mate Zupanič-Švarski — prostovoljec, ki se ni vrnil",
@@ -6244,6 +6331,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "tobacka-leta",
+    museumNo: "MVG-086",
     addedAt: "2026-09-17",
     category: "gospodarstvo",
     titleSi: "Tobačna leta — burley med gribeljskimi njivami",
@@ -6290,6 +6378,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "krizevo-pastirski-dan",
+    museumNo: "MVG-087",
     addedAt: "2026-09-17",
     category: "sege",
     titleSi: "Križevo — pastirski dan ob Kolpi",
@@ -6346,6 +6435,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "razglednica-1903",
+    museumNo: "MVG-088",
     addedAt: "2026-09-17",
     category: "kraj",
     titleSi: "Razglednica iz leta 1903 — vlak, ki je Gribljam obšel",
@@ -6392,6 +6482,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "dkz-griblje",
+    museumNo: "MVG-089",
     addedAt: "2026-09-17",
     category: "sege",
     titleSi: "Društvo kmečkih žena Griblje — roke, ki držijo vas",
@@ -6438,6 +6529,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "anton-brodaric",
+    museumNo: "MVG-090",
     addedAt: "2026-09-17",
     category: "kraj",
     titleSi: "Anton Brodarič — z Gribelj na Himalajo",
@@ -6494,6 +6586,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "novo-zivljenje-1914",
+    museumNo: "MVG-091",
     addedAt: "2026-09-17",
     category: "kraj",
     titleSi: "Novo življenje (1914) — povest, ki se dogaja v Gribljah",
@@ -6562,6 +6655,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "ilirska-carina-1809",
+    museumNo: "MVG-092",
     addedAt: "2026-09-17",
     category: "kraj",
     titleSi: "Napoleonova carinarnica — Griblje v Ilirskih provincah (1809–1813)",
@@ -6628,6 +6722,7 @@ export const seedExhibits: SeedExhibit[] = [
   },
   {
     slug: "tone-kralj-98",
+    museumNo: "MVG-093",
     addedAt: "2026-09-17",
     category: "sege",
     titleSi: "Tone Kralj — devetindevetdeset pomladi",

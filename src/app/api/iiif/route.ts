@@ -71,7 +71,11 @@ const provider = [
 /** Metapodatki eksponata kot IIIF metadata pari (label/value → language map). */
 function buildMetadata(exhibit: ExhibitRow) {
   const evidence = EVIDENCE_LABELS[exhibit.evidenceStatus];
-  return [
+  const pairs: { label: LangMap; value: LangMap }[] = [
+    {
+      label: { sl: ["Muzejska številka"], en: ["Museum number"] } satisfies LangMap,
+      value: langMap(exhibit.museumNo ?? "—", exhibit.museumNo ?? "—"),
+    },
     {
       label: { sl: ["Kategorija"], en: ["Category"] } satisfies LangMap,
       value: langMap(exhibit.category, exhibit.category),
@@ -91,6 +95,30 @@ function buildMetadata(exhibit: ExhibitRow) {
       value: langMap(exhibit.slug, exhibit.slug),
     },
   ];
+  return pairs;
+}
+
+/** Domače strani zapisa: kanonična muzejska stran + interaktivni ogled. */
+function buildHomepage(origin: string, exhibit: ExhibitRow): {
+  id: string;
+  type: "Text";
+  format: string;
+  label: LangMap;
+}[] {
+  return [
+    {
+      id: `${origin}/exponat/${exhibit.slug}`,
+      type: "Text",
+      format: "text/html",
+      label: langMap("Muzejski zapis o predmetu", "Museum record page"),
+    },
+    {
+      id: `${origin}/?exhibit=${exhibit.slug}`,
+      type: "Text",
+      format: "text/html",
+      label: langMap("Ogled eksponata v muzeju", "View the exhibit in the museum"),
+    },
+  ];
 }
 
 /** Manifest v zbirki (skrajšani vnos v Collection.items). */
@@ -102,15 +130,10 @@ function buildManifestReference(origin: string, exhibit: ExhibitRow) {
     label: langMap(exhibit.titleSi, exhibit.titleEn),
     summary: langMap(exhibit.summarySi, exhibit.summaryEn),
     thumbnail: [{ id: `${origin}${image}`, type: "Image", format: "image/jpeg" }],
-    homepage: [
-      {
-        id: `${origin}/?exhibit=${exhibit.slug}`,
-        type: "Text",
-        format: "text/html",
-        label: langMap("Ogled eksponata v muzeju", "View the exhibit in the museum"),
-      },
+    homepage: buildHomepage(origin, exhibit),
+    seeAlso: [
+      { id: `${origin}/api/exhibits`, type: "Dataset", format: "application/json" },
     ],
-    seeAlso: [{ id: `${origin}/api/exhibits`, type: "Dataset", format: "application/json" }],
     metadata: buildMetadata(exhibit),
   };
 }
@@ -133,15 +156,10 @@ function buildFullManifest(origin: string, exhibit: ExhibitRow) {
     rights: RIGHTS,
     provider,
     thumbnail: [{ id: `${origin}${image}`, type: "Image", format: "image/jpeg" }],
-    homepage: [
-      {
-        id: `${origin}/?exhibit=${exhibit.slug}`,
-        type: "Text",
-        format: "text/html",
-        label: langMap("Ogled eksponata v muzeju", "View the exhibit in the museum"),
-      },
+    homepage: buildHomepage(origin, exhibit),
+    seeAlso: [
+      { id: `${origin}/api/exhibits`, type: "Dataset", format: "application/json" },
     ],
-    seeAlso: [{ id: `${origin}/api/exhibits`, type: "Dataset", format: "application/json" }],
     metadata: buildMetadata(exhibit),
     items: [
       {

@@ -16,6 +16,10 @@ datasource db {
 model Exhibit {
   id            String   @id @default(uuid())
   slug          String   @unique
+  /** Trajna muzejska številka (inventarna, npr. MVG-001) — vzorec
+   * objektnih številk Rijksmuseuma / UPI DigitaltMuseum. Enkrat dodeljena
+   * se ne spreminja; novi zapisi prejmejo naslednjo številko v vrsti. */
+  museumNo      String?  @unique
   category      String // kraj | kolpa | vojna | narava | gospodarstvo | sege
   titleSi       String
   titleEn       String
@@ -48,6 +52,7 @@ model Exhibit {
 
   @@index([category])
   @@index([evidenceStatus])
+  @@index([museumNo])
 }
 
 model Source {
