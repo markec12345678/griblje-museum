@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { sourceKeyOf } from "@/lib/source-registry";
 import type { ExhibitDTO, SourceDTO, ExhibitCategory, EvidenceStatus, SourceType } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -49,6 +50,9 @@ export async function GET(request: Request) {
       addedAt: ex.addedAt ? ex.addedAt.toISOString() : null,
       sources: ex.sources.map<SourceDTO>((s) => ({
         id: s.id,
+        // Deterministična identiteta vira čez zapise (isti dokument = isti
+        // ključ); UUID vrstice ostaja nestabilen med ponovnimi setvami.
+        sourceKey: sourceKeyOf(s.nameSi, s.url),
         nameSi: s.nameSi,
         nameEn: s.nameEn,
         sourceType: s.sourceType as SourceType,

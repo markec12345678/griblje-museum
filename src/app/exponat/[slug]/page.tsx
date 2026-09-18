@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 
 import { seedExhibits } from "@/lib/museum-content";
+import { sourceKeyOf, usedByOthers } from "@/lib/source-registry";
 import { getBiography, type BiographyStage } from "@/lib/object-biographies";
 import { relatedExhibits } from "@/lib/connections";
 import { walkStopOf } from "@/lib/walks";
@@ -72,6 +73,7 @@ const COLLECTION_DTO: ExhibitDTO[] = seedExhibits.map((ex, index) => ({
   addedAt: ex.addedAt ?? null,
   sources: ex.sources.map((s) => ({
     id: `${ex.slug}:${s.key}`,
+    sourceKey: sourceKeyOf(s.nameSi, s.url ?? null),
     nameSi: s.nameSi,
     nameEn: s.nameEn,
     sourceType: s.sourceType,
@@ -136,6 +138,7 @@ const SL = {
   languageSwitchLang: "en",
   recordOf: "Zapis",
   viewSource: "oglej si vir",
+  alsoCitedBy: "Naveden tudi v zapisih",
   availableAt: "Dostopno na",
   licence: "Licenca",
   relatedTitle: "Sorodni zapisi",
@@ -220,6 +223,7 @@ const EN = {
   languageSwitchLang: "sl",
   recordOf: "Record",
   viewSource: "view source",
+  alsoCitedBy: "Also cited by",
   availableAt: "Available at",
   licence: "Licence",
   relatedTitle: "Related records",
@@ -790,39 +794,65 @@ export default async function ExhibitRecordPage({ params, searchParams }: PagePr
               {s.sources} ({ex.sources.length})
             </h2>
             <ol className="mt-4 space-y-3">
-              {ex.sources.map((source, i) => (
-                <li key={source.key} className="rounded-lg border bg-card p-4 text-sm">
-                  <p className="flex flex-wrap items-center gap-2">
-                    <span className="font-semibold text-foreground">
-                      {i + 1}. {isEn ? source.nameEn : source.nameSi}
-                    </span>
-                    <span className="rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground">
-                      {s.sourceTypes[source.sourceType]}
-                    </span>
-                  </p>
-                  <p className="mt-1.5 text-xs text-muted-foreground">
-                    {source.license}
-                    {source.url && (
-                      <>
-                        {" · "}
-                        <a
-                          href={source.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-medium text-primary underline underline-offset-2"
-                        >
-                          {s.viewSource}
-                        </a>
-                      </>
-                    )}
-                  </p>
-                  {(isEn ? source.noteEn : source.noteSi) && (
-                    <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-                      {isEn ? source.noteEn : source.noteSi}
+              {ex.sources.map((source, i) => {
+                /* SOURCE → EXHIBITS: drugi zapisi, ki citirajo ISTI vir (isti
+                 * dokument po registru virov) — referenčna povezava, ne graf. */
+                const alsoCitedBy = usedByOthers(ex.slug, source.nameSi, source.url ?? null);
+                return (
+                  <li key={source.key} className="rounded-lg border bg-card p-4 text-sm">
+                    <p className="flex flex-wrap items-center gap-2">
+                      <span className="font-semibold text-foreground">
+                        {i + 1}. {isEn ? source.nameEn : source.nameSi}
+                      </span>
+                      <span className="rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground">
+                        {s.sourceTypes[source.sourceType]}
+                      </span>
                     </p>
-                  )}
-                </li>
-              ))}
+                    <p className="mt-1.5 text-xs text-muted-foreground">
+                      {source.license}
+                      {source.url && (
+                        <>
+                          {" · "}
+                          <a
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium text-primary underline underline-offset-2"
+                          >
+                            {s.viewSource}
+                          </a>
+                        </>
+                      )}
+                    </p>
+                    {alsoCitedBy.length > 0 && (
+                      <p className="mt-1.5 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-muted-foreground">
+                        <span className="inline-flex items-center gap-1">
+                          <BookOpen className="h-3 w-3" aria-hidden="true" />
+                          {s.alsoCitedBy}:
+                        </span>
+                        {alsoCitedBy.map((o, j) => (
+                          <span key={o.slug} className="inline-flex items-center gap-1.5">
+                            {j > 0 && <span aria-hidden="true">·</span>}
+                            <a
+                              href={`/exponat/${o.slug}`}
+                              className="font-mono font-medium text-primary underline underline-offset-2"
+                              title={isEn ? o.titleEn : o.titleSi}
+                              aria-label={`${o.museumNo} — ${isEn ? o.titleEn : o.titleSi}`}
+                            >
+                              {o.museumNo}
+                            </a>
+                          </span>
+                        ))}
+                      </p>
+                    )}
+                    {(isEn ? source.noteEn : source.noteSi) && (
+                      <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+                        {isEn ? source.noteEn : source.noteSi}
+                      </p>
+                    )}
+                  </li>
+                );
+              })}
             </ol>
           </section>
 

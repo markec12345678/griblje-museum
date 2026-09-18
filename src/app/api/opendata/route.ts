@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { SITE_URL } from "@/lib/site";
 import { WIKIDATA_SAMEAS, wikidataUrlFor } from "@/lib/wikidata";
+import { sourceKeyOf } from "@/lib/source-registry";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +26,20 @@ export async function GET() {
     const sourceCount = await db.source.count();
 
     const now = new Date().toISOString();
+
+    /* Registracija virov (SOURCE AUTHORITY): identiteta vsake vrstice vira
+     * (isti dokument = isti sourceKey) + seznam zapisov, ki vir citirajo
+     * (usedBy) — SOURCE → EXHIBITS referenčna povezava v odprtih podatkih.
+     * Izpeljano iz vrstic, ki jih izvozi taendpoint — brez sprememb podatkov. */
+    const sourceUsage = new Map<string, string[]>();
+    for (const ex of exhibits) {
+      for (const s of ex.sources) {
+        const key = sourceKeyOf(s.nameSi, s.url);
+        const arr = sourceUsage.get(key) ?? [];
+        if (!arr.includes(ex.museumNo ?? ex.slug)) arr.push(ex.museumNo ?? ex.slug);
+        sourceUsage.set(key, arr);
+      }
+    }
 
     const jsonld = {
       "@context": "https://schema.org",
@@ -110,10 +125,14 @@ export async function GET() {
               ? { latitude: ex.lat, longitude: ex.lng, note: "verified" }
               : null,
           sources: ex.sources.map((s) => ({
+            sourceKey: sourceKeyOf(s.nameSi, s.url),
             name: { sl: s.nameSi, en: s.nameEn },
             type: s.sourceType,
             license: s.license,
             url: s.url,
+            usedBy: sourceUsage.get(sourceKeyOf(s.nameSi, s.url)) ?? [
+              ex.museumNo ?? ex.slug,
+            ],
           })),
         })),
         stories: stories.map((st) => ({
