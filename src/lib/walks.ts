@@ -836,6 +836,23 @@ export function getWalk(id: string): Walk | undefined {
 }
 
 /**
+ * Postaja kuriranega TEMATSKEGA sprehoda, ki nosi dani zapis.
+ * Vseh 93 zapisov je pokritih s 5 tematskimi sprehodi točno enkrat
+ * (družinski sprehod je podmnožica — zato iščemo samo po WALKS).
+ * Vrača null, če zapis ni (več) na nobenem sprehodu.
+ */
+export function walkStopOf(slug: string): {
+  walk: Walk;
+  index: number;
+} | null {
+  for (const walk of WALKS) {
+    const index = walk.stops.findIndex((s) => s.exhibitSlug === slug);
+    if (index >= 0) return { walk, index };
+  }
+  return null;
+}
+
+/**
  * Vrne postaje sprehoda, povezane z dejanskimi zapisi iz zbirke.
  * Zapisi, ki ne obstajajo več (preimenovan slug), se tiho izpustijo —
  * sprehod ostane berljiv tudi ob spremembah zbirke.

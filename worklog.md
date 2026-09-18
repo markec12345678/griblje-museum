@@ -1656,3 +1656,31 @@ Stage Summary:
 - Uveljavljene 3 arhitekturne spremembe, vse backward-compatible (/?exhibit=, #pogledi, IIIF manifest id-ji nespremenjeni; obstoječi ID-ji (uuid, slug) ohranjeni)
 - Zdaj dokazljivo: trajna identiteta vsakega zapisa (MVG-###), kanonični indeksabilni naslov (/exponat/[slug]), strojno berljiva izpostavljenost (JSON-LD, sitemap, IIIF, opendata) in minimalni most fizični→digitalni muzej (QR → stran zapisa → živi muzej)
 - Odprto (naslednji koraki, NIČ od tega ni simulirano kot obstoječe): Person/Place/Event entitete (utemeljeno odloženo — pravilni grafski vzorecconnections.ts že pokriva), IIIF Image API (zmanjkalo smisla brez tile strežnika), checksums/master register za digitalno hrambo, hreflang za hr/de/it vsebinsko (vsebina obstaja le SL/EN)
+
+---
+Task ID: 33
+Agent: Main agent (Z.ai Code)
+Task: FAZA 2 — professional museum experience / content / discovery audit (read-only) + max 3 sprememb po naročilu uporabnika
+
+Work Log:
+- Read-only audit (ničesar ni bilo spremenjeno pred poročilom): 4 vzporedni Explore agenti (discovery/UX komponente, VillageMap, AI vodnik, SEO/objektne strani) z dokazi datoteka:vrstica
+- Prebranih VSEH 93 zgodb v celoti (~258k znakov; /tmp/zg-01..12) — vsebinska presoja vsakega zapisa (identiteta/kaj-kdo-kdaj-kje-zakaj/viri/dokaz/povezave); programska ekstrakcija scripts/audit-faza2.ts (93/93 vseh polj; povp. 4,4 vira; 71 DOCUMENTED/14 CORROBORATED/8 TRADITION; 93/93 minutke+biografije+sprehodi+povezave)
+- Benchmark: uporabljene obstoječe raziskave (research-griblje/07, design-research/UI-BENCHMARK, UI-PRIMERJAVA — 3 krogi živih opažanj Rijksmuseum/Tate/NG/GA&C/Louvre/Met) — izkušnja, ne funkcije
+- Živi scenariji A–D (agent-browser): A vstop 30 s ✅; B dialog: povezani/podobni/tema/viri ✅, NI prej/naslednji+MVG+postaja ❌; C QR → /exponat ✅ (MVG vidi, viri, sosednja zapisa); D iskanje ✅ (zupanic/Barle), MVG-046 NI iskalno ❌
+- AI vodnik kustos-test v živo: 429 (kvota OpenRouter) → kustos nem; sporočilo "prehitro sprašujete" ob 429 rate-limited
+- Mobilni testi: preliv ?tema= 418 px na 360/390 (vzrok: 3× w-28 sličice brez preloma, theme-hub-view.tsx:332–347); ostali pogledi čisti
+- SEO živo: curl / → 0 HTML povezav na /exponat (vse kartice = onClick gumbi); sitemap 94 URL
+- Poročilo: research-griblje/13-faza2-audit-2026-10.md (TOP 10 vrzeli + 3 spremembe z CHANGE/WHY/EVIDENCE/BENCHMARK/SCOPE/RISK/ACCEPTANCE + zavrnitve)
+- SPREMEMBA 1: museum-register.tsx (strežniško upodobljen katalog 93 × <a href="/exponat/…"> iz seedExhibits, MVG+naslov+kategorija) vstavljen v museum-app na domačem pogledu (viden v SSR tudi med nalaganjem); i18n register ×5
+- SPREMEMBA 2: exhibit-dialog — MVG značka (MVG-### · n. od 93) v glavi, čip postaje kuriranega sprehoda (walkStopOf nov helper v walks.ts), navigacija prejšnji/naslednji zapis po vrstnem redu (skrita med aktivnim sprehodom — WalkNav); i18n recordNav ×5
+- SPREMEMBA 3: leaflet-map — skupine po unikatni koordinati (popup našteje vse zapise + gumb vsak; vasišče 5 zapisov dosegljivo), title/alt + aria-label na pikah, aria-label na vsebniku, gumb popupa h-11, atribucija OSM contributors, MVG v legendi (map-view); podnaslov iskren ×5 (znana lega, približne črtkane — odstranjena obljuba "samo preverjene koordinate")
+- POPRAVEK HROŠČA: theme-hub sličice flex-wrap + odzivne mere → 390/360 čisto
+- Verifikacija: tsc 0 (samo znana obstoječa napaka scripts/audit-semantics.ts), eslint 0, verify-i18n 811 × 5 identično, curl / = 93 /exponat povezav, agent-browser: register klik MVG-001 → /exponat/griblje-vas; dialog MVG-010 → naslednji MVG-011 brez zapiranja (URL ?exhibit=izseljenstvo); Postaja 8/30 · Vas in njeni ljudje pri muzejska-ucilnica; karta 18 poimenovanih pik, skupinski popup 5 zapisov, gumb odpere MVG-001; robova MVG-001 (brez prejšnjega) in MVG-093 (brez naslednjega) pravilna; mobilno 390+360 brez preliva (vsi pogledi + teme); 0 napak v konzoli; dev.log brez novih napak (samo znani 429 vodnika)
+- README: 30. sklop v dnevniku razvoja + 2 novi vrstici funkcij (register, raziskovanje zapis→zapis)
+
+Stage Summary:
+- Ugotovitev audita: vsebina (93/93) je najmočnejši del muzeja; vrzeli so v prehodih med zapisi, plezalnih povezavah, poštenosti zemljevida — vse tri sedaj zaprte
+- Domača stran je postala plezalna pot do vseh 93 objektnih strani (93 HTML povezav v izhodnem HTML)
+- Primarna izkušnja zapisa ni več slepa ulica: MVG identiteta + postaja sprehoda + prej/naslednji v enem kliku
+- Zemljevid: iskren podnaslov, skupinske pike dosegljive, poimenovane za bralnike zaslona
+- Odprto (dokumentirano, NE reševano brez odločitve lastnika): AI vodnik odvisen od brezplačne kvote OpenRouter (rešitev: kredit), iskanje po MVG v api/search, hreflang ?lang=en kanonični konflikt, SITE_URL fallback vercel.app
