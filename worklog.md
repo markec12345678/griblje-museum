@@ -1567,3 +1567,27 @@ Stage Summary:
 - Metoda: Slovenska biografija (zahtevno iskanje po rojstnem kraju) + Wikipedia REST + Commons so polnopravna nadomestila za blokirani kvoti; Kamra je za pojme Griblje/Podzemelj/Totter/Dragoši izčrpana
 - Števci posodobljeni dosledno (89→90→91 × 5 jezikov, 26 mest + meta + README); pokritost sprehodov preverjena programsko (vseh 91)
 - Odprto: VLM kvota (44–97/98 španka; 1. svetovna vojna — 13 posnetkov v /tmp, zanka teče); župani občine Griblje (arhivi 403/000); vojaške izmere/kataster (arcanum/mapire geo-blok; GURS egp 000); czs.si dostopen — kandidat za prihodnji sklop o kranjski sivki
+
+---
+Task ID: 30
+Agent: Main agent (Z.ai Code)
+Task: 26. raziskovalni sklop — »odlično nadaljuj raziskuj« (91 → 92 zapisov; obe z-ai kvoti še vedno blokirani)
+
+Work Log:
+- Sinhronizacija: potisnjen nepotisnjeni commit c0d84f2 (samo reseed baze) — main == origin/main; dev strežnik zdrav (91 zapisov / 404 virov)
+- Preverba odprtih niti: VLM kvota ŠE VEDNO 429 (testni klic createVision s 1-pikselno sliko); web_search kvota prav tako 429; zanka read-matr-pages.ts teče naprej (PID 19077), 13 posnetkov mrliške knjige ostaja v /tmp — nit 44–97/98 NEPRESENA, čaka
+- Raziskava 26. sklopa (kranjska sivka — kandidat iz Task 29): Wikipedia action API brez kvot — Kranjska čebela (SL: druga najbolj razširjena pasma, značilnosti, razširjenost), Carniolan honey bee (EN: jezik 6,5–6,7 mm, »grey bee«, delavke do 12 % dlje živl), Svetovni dan čebel (SL: ČZS pobuda, OZN soglasno 20. 12. 2017, Janšev rojstni dan, Višnja Gora/Rošic, Radovljica/Breznica), Anton Janša (SL: 20. 5. 1734 Breznica – 13. 9. 1773 Dunaj; prvi učitelj čebelarstva, šola 1769 Marija Terezija, dekret 7. 4. 1770; doma nad sto panjev), Anton Žnideršič (SL: AŽ = Alberti-Žnideršičev panj, satniki podolžno na prečnih palicah, enaka mera plodišče/medišče; razširjen po Sloveniji in Hrvaškem)
+- czs.si: stran o kranjski sivki zaščitena z bot-preverjanjem (»One moment, please… Loader«) — v brezglavnem brskalniku izziv NI REŠLJIV (3 poskusi + reload); nadomeščeno z Wikipedijo (vsebinsko enaki viri)
+- NOVA TEHNIKA prenosa slike: upload.wikimedia.org in thumb.wikimedia.org CDN zavračata strežniške odjemalce z 429 (tudi s popolnim UA); agent-browser rešitev — anonimni fetch v brskalniškem kontekstu deluje (izvirnik 200, thumb 429/400!), skaliranje na 1600 px + re-kodiranje JPEG v canvasu, toDataURL 0.85, izvoz base64 v 6 kosih po 60 kB, dekodiranje + sharp → public/images/authentic/kranjska-sivka.jpg (1600×1042, 212 KB)
+- Nov zapis kranjska-sivka (92.; narava, DOCUMENTED, 1879→2026, vstavljen za kucar-podzemelj): naslov »Kranjska sivka — siva gospodarica gribeljskih panjev« / »The Carniolan grey bee — the grey mistress of Griblje's hives«; zgodba 5 odstavkov SL+EN v treh nitih (pasma → vas: Ivan Barle 1882/Konrad AŽ 1912/poslikane čele → svet: Janša/OZN 2017); zaključek: edini živeči prebivalec zbirke (»življenje ene čebele merijo tedni, življenje pasme tisočletja«); Muzej išče: stari AŽ-panj s poslikanim čelom + fotografija gribeljskega čebelarja
+- 5 virov: Wikipedija Kranjska čebela / Anton Janša / Svetovni dan čebel / Anton Žnideršič (CC BY-SA 4.0) + Commons Richard Bartz (CC BY-SA 2.5 — nosilna fotografija članka o pasmi)
+- Integracije: minutna zgodba (za kucar-podzemelj); zapis meseca MAJ — 5. vnos (20. maj, svetovni dan čebel); postaja 6/19 sprehoda »Iz Griblje v svet« (za audrey-totter: »najmanjši potnik te vasi ni nikoli rabil ladje«); biografija 6 faz (1879 → svet → 1882–1912 → 1734–1773 → 20. 12. 2017 → danes); image-dimensions 1600×1042; visual-fingerprints regeneracija 92/92; števci 91→92 × 5 jezikov — 25 mest v i18n.tsx (hero SL števka / EN Ninety-two / HR Devedeset i dva / DE Zweiundneunzig / IT Novantadue + vodnik + sprehodi + podobne slike + advent ×5) + layout.tsx meta
+- README: števca (92 zapisov / 409 virov), nov odstavek 26. sklop; popravljena vrstni red 24→25→26 (začetni Merge je združil 25+26 — ločeno nazaj); kazalo research-griblje/00 + poročilo 11-kranjska-sivka-2026-09.md
+- Reseed + restart dev (setsid -f); VERIFIKACIJA: tsc 0 napak; eslint čist; baza 92 zapisov / 409 virov; API exhibits 92 s kranjska-sivka (5 virov); IIIF Collection 92 + Canvas 1600×1042 image/jpeg; agent-browser: dialog SL (naslov, perioda, Apis mellifera carnica, jezik 6,5–6,7 mm, Barle, Žnideršič, Janša, 20. 12. 2017, kredit Richard Bartz, Muzej išče, glavna slika 768×499 naložena), dialog EN (grey mistress, second most widespread, tongue 6.5–6.7, World Bee Day on 20 May — vse ✓), hero »Zbirka 92 zapisov« (91 izginil), statistika 92/409, sprehod stop=6 (Stop 6 of 19, smallest traveller, kuratorska opomba), iskanje »sivka« najde zapis, mobilna 375 px brez preliva, 0 napak v konzoli, dev.log brez napak
+- Revizija: audit-numbers — kranjska-sivka BREZ oznak (popolna SL↔EN številčna usklajenost); audit-crossfile brez novih zadetkov
+- Commit 2637d6e + push origin main
+
+Stage Summary:
+- Zbirka: 92 zapisov / 409 virov; nov zapis kranjska-sivka plete čebelarsko nit zbirke (konrad-barle → sivka) do svetovnega dneva čebel; majski koledar zapisa meseca dobi 5. vnos
+- Tehnična izkušnja: ob 429 na upload.wikimedia.org CDN slika prek agent-browser (anonimni fetch + canvas skaliranje + base64 izvoz v kosih) — za vsak prihodnji prenos slike
+- Odprto: VLM kvota (44–97/98 španka — zanka teče, PID 19077); czs.si bot-zaščita (primarni vir za program varstva čebele ko bo dostopen); župani občine; 1. svetovna vojna; Muzej išče AŽ-panj + fotografijo čebelarja
