@@ -1843,3 +1843,38 @@ Stage Summary:
 - Dve dokazani vrzeli odpravljeni z najmanjšo spremembo (2 datoteki, +35 vrstic): /api/opendata note { sl, en } + IIIF source metadata (ime/licenca/URL) v polnih manifestih — obe iz ISTIH podatkov iste baze, brez novega modela, brez spremembe semantike, brez druge interpretacije
 - NE SPREMINJANO (dokumentirano): kuratorski graf, licence (17 konfliktov čaka kustodija), B/C/D skupine, strukturirana polja virov (razen PREDLOGA za 4 signature Matricula — CURATORIAL DATA NEEDED), primarnost, besednjak licenc
 - Naslednji korak (priporočilo): kuratorske odločitve po delovni listi (bun scripts/audit-sources.ts) — 17 licenčnih konfliktov, 3 B-skupine, D-citati, nato eventuale pretvorbe v kontrolirani besednjak; šele po tem PERSON/PLACE/EVENT/TIME po arhitekturi §21
+
+---
+Task ID: 40
+Agent: Main agent (Z.ai Code)
+Task: TASK 38 — KURATORSKA VALIDACIJA SOURCE AUTHORITY: read-only preverjanje spletnih virov (brez ugibanja), ločitev licenčnih konfliktov od atribucijskih razlik, B-skupine/umbrella/26 brez URL/Matricula/besednjak, KURATORSKA VRSTA P0–P4 + ena deterministična sprememba (WorldCat normalizacija)
+
+Work Log:
+- Izhodišče 79c5024 (35. sklop); delovno drevo čisto; dev strežnik teče; zagnan obstoječi audit-sources.ts (17 konfliktov, 3 B-skupine, 5 D-citatov, 26 brez URL, 89 literalov — vse skladno z naročilom)
+- §0 PREVERJANJE IZ SPLETNIH VIROV (18. 9. 2026; curl + Commons API + sl.wikipedia API; WorldCat za Cloudflareom — 403 tudi prek agent-browser/bralnika, Wayback nedosegljiv):
+  - Commons extmetadata: Griblje, Črnomelj.jpg → CC BY-SA 3.0, avtor Eleassar; Pogovor angleškega pilota → Public domain, avtor Franjo Veselko (»domnevno isti avtor« MVG-014 POTRDIJO metapodatki vira); Special-Karte 1843 → Public domain, kartograf Heinrich Freyer (vsebina = ZEMLJEVID)
+  - Radio Odeon: noga »© Artist d.o.o. 2026, Vse pravice pridržane.«; impresum (izdajatelj Artist d.o.o., urednik Riznič); NOBENA licenca za ponovno uporabo; avtorstvo pri posameznih prispevkih (KS Griblje/foto Pavlin; Grabrijan; Konda/Vir Misterion; Vukmanič) — »navedi vir« = uredniška navedba muzeja → UNKNOWN / CURATORIAL REVIEW
+  - Svet24: © Media partner agencija d.o.o., vse pravice pridržane; OŠ Loka: PDF pogoji (informativno, a zaščiteno avtorsko delo, brez pisnega dovoljenja nedovoljeno); etno-muzej.si: brez pogojev (404) — ni preverljivo; crnomelj.si: le meta Copyright Arctur (izdelovalec strani) — razlaga kuratorska
+  - Matricula/ICARUS Nutzungsbedingungen (celoten preveden smisel): samo zasebna/znanstvena uporaba; objava/razmnoževanje zahteva soglasje arhiva; pri spletnih objavah navedba povezave + obvestilo — »prosti dostop« je opis DOSTOPA, ne licenca; vsi 4 signature URL živi (naslovi: mrliška/k rstna/poročna/mrliška — skladno)
+  - Wikipedia Griblje (živ wikitext): literatura vsebuje TOČNO en Šimec vpis (»…11. januar 2001, stran 17«) in EN Sv. Vid 2008 vpis — zunanj dokaz za obe odprti B-skupini
+  - WorldCat: iskanje po »Gribeljski žbul« in »821110335« → EN zapis na search.worldcat.org s 5 avtoricami (Babič Ivaniš, Črnič, Pezdirc, Totter, Weiss) — ista številka OCLC v obeh muzejskih URL-jih = isti katalogski zapis
+- §2 LOČITEV: 17 konfliktov → A (dejanski) 11 = 10 × Radio Odeon + 1 × Svet24 (avtorsko delo proti navedi vir); B (isti status, različna atribucija/opis) 6 = isti žeton ×3 (Eleassar avtor/fotograf; PD domnevno; Freyer kartograf) + obe-opisni ×3 (crnomelj.si; etno-muzej.si; os-loka); po WorldCat združitvi se pokaže 18. (B: knjižnični|kataložni zapis — opisni par, ne pravice)
+- §4 B-SKUPINE: Šimec (identična jedra ×3 + Wikipedia stran 17) in Sv. Vid (en Wikipedia vpis za obe obliki) — dokaz predstavljen, odločitev ostane kustosu; WorldCat REŠENO → IMPLEMENTIRANA normalizacija URL MVG-089 na trenutno obliko (edina deterministična sprememba, §12; 316 → 315 identitet, 50 → 51 deljenih)
+- §5 UMBRELLA ×5: KONKRETNO DELO NI ZNANO → CURATORIAL DATA NEEDED
+- §6 26 BREZ URL: popravek štetja TASK 37 (ne 23+5 ampak 21+5); razvrstitev A 13 / B 6 / C 6 (5 umbrella + Gašperičeva bibliografija kot opusni sklic) / D 1 (Pivec Stele)
+- §7 MATRICULA: 4 signature izpričane v imenu + URL poti; MVG-039 opomba = obstoječa kuratorska izjava »Primarni vir«; dodatne obstoječe izjave o primarnosti v 5 opombah (MVG-031/034/035/043/048/074) — NIČ označeno samodejno
+- §8 TIPI: 6 konfliktov (ne očitne napake) + 2 anomaliji kandidata (Special-Karte kot fotografija — dokaz Commons, da je zemljevid; Kmečki glas spletni-vir brez URL) — seznam za kustosa, NIČ spremenjeno
+- §9 BESEDNJAK: 89 literalov s SAFE TO AUTO-MAP — varnih 59 literalov/242 vrstic (CC-BY-SA 24/105, CC-BY 10/16, CC-BY-NC 1/7, CC0 2/2, javna last/PD 20/54, avtorsko delo 1/56 — zapis trditve, ne preverba; različne-licence 1/2 → UNKNOWN); NE 30 literalov/170 vrstic (navedi vir NIKOLI → ATTRIBUTION_REQUIRED; dvojna licenca CC BY 3.0 / GFDL prav tako NE)
+- §10 NOV B-KANDIDAT (ročno odkrit): MVG-010 ↔ MVG-043 (Zupaničeva 1939: enak naslov + avtorica; Županičev zbornik | Etnolog) — Jaccard 0.50 pod pragom skripte, zato zapisan izrecno
+- IMPLEMENTACIJA: museum-content.ts (WorldCat URL + komentar z dokazom); audit-sources.ts prenovljen (11 razdelkov): licTokenOf + A/B klasifikacija računsko iz žetonov, VERIFIED_FACTS z datumom/metodo, Matricula + obstoječe primarnostne izjave, razvrstitev 26, SAFE TO AUTO-MAP, KURATORSKA VRSTA 35 vrstic P0-01…P0-20, P1-1…3, P2-1…6, P3-1…2, P4-1…4 (vsaka: ID/MVG/VIR/VPRAŠANJE/DOKAZ/ODLOČITEV)
+- Operativa: db:seed (URL v bazi preverjen z bun:sqlite); dev strežnik je imel ustaljeno Prisma povezavo → čist ponovni zagon (setsid --fork)
+- VERIFIKACIJA (§13/§14): 93/93 strani vseh 8 preverk; 70/93 z »Naveden tudi v zapisih«; MVG-082 ↔ MVG-089 navzkrižni povezavi (klik v browserju v obe smeri); IIIF 93/93 manifestov z viri (worldcat-nova=2, legacy=0); /api/opendata sourceKey 412/412, usedBy=[MVG-082, MVG-089]; QR tok ?exhibit=zvon-2008 dialog; EN različica (Also cited by); mobilno 390 px scrollWidth=viewport; sitemap 94; verify-i18n 811 × 5; tsc 0 (razen znane audit-semantics), eslint 0; konzola 0 napak; dev.log brez novih napak; invarianti: 93/93, 412, 397, 315 (316 − 1 dokumentirana združitev), 51 deljenih, 0 zdrobljenih sourceIndex, 372 faz, 0 brez evidenceStatus
+- README: 36. sklop v dnevnik razvoja + posodobljena vrstica funkcije Source authority (315/51/70 + kuratorska vrsta)
+
+Stage Summary:
+- Načelo TASK 38 (§16) izvedeno: nič ugibanja — kar gre preveriti na viru, je PREVERJENO (z datumom/metodo), kar ne, ostaja UNKNOWN / CURATORIAL REVIEW; vprašanja so pripravljena tako, da jih kustos reši v 30 sekundah
+- Ena deterministična sprememba podatkov: WorldCat OCLC 821110335 (isti OCLC v obeh URL-jih + en zapis s 5 avtoricami) — normalizacija MVG-089 na trenutno obliko; identitete 316 → 315, deljeni viri 50 → 51 (dokumentirano v audit skripti in README)
+- KURATORSKA VRSTA: 35 rešljivih vprašanj P0–P4 v `bun scripts/audit-sources.ts` — vključno z novim B-kandidatom MVG-010 ↔ MVG-043 (Zupaničeva 1939)
+- NE SPREMINJANO (dokumentirano): licence (11 A-konfliktov čaka kustosa — za Radio Odeon/Svet24 preverjeno, da viri sami izjavljajo © vse pravice, a NIČ izbrano), 6 B-konfliktov, Šimec/Sv. Vid (zunanj dokaz predstavljen, odločitev kustosu), tipi (2 anomaliji samo kandidata), primarnost (obstoječe izjave dokumentirane, polja ni), besednjak (59 varnih čaka sprejem, 30 opisnih/dvojičnih čaka odločitev)
+- Spremenjene datoteke: src/lib/museum-content.ts, scripts/audit-sources.ts, README.md, worklog.md (ta vnos)
+- Naslednja faza (priporočilo, J): po kuratorjevih odločitvah P0 (licence) in P1 (Šimec, Sv. Vid, Zupaničeva) je plast virov stabilna → TASK 39 (PERSON/PLACE/EVENT) po načrtu; brez odločitev kustosa se ne odpira nova entiteta nad nestabilnimi viri
