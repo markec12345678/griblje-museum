@@ -19,7 +19,9 @@ export type MuseumView =
   | "zgodbe"
   | "izrazoslovje"
   | "casovnica"
+  | "kronika"
   | "karta"
+  | "spomin"
   | "dogodki"
   | "oMuzeju"
   | "mojMuzej"
@@ -36,7 +38,9 @@ export const VIEW_ORDER: MuseumView[] = [
   "zgodbe",
   "izrazoslovje",
   "casovnica",
+  "kronika",
   "karta",
+  "spomin",
   "dogodki",
   "oMuzeju",
   "mojMuzej",
@@ -64,21 +68,23 @@ const DESKTOP_NAV_VIEWS = VIEW_ORDER.filter(
 /**
  * Stopnje vidnosti namizne navigacije — glava mora biti brez vodoravnega
  * preliva pri VSAKI širini (izmerjene širine: navigacija 885 px, znamka 108 px,
- * desni gumbi 268 px). Jedro (md+) nosi pet rubrik, lg doda osebni muzej in
- * igre, xl pa izrazoslovje, časovnico in spominsko knjigo; »O muzeju« je v
- * vrstici šele od 2xl (v nogi je vedno). Do ostalih pogledov služi
- * hamburger-menij do xl.
+ * desni gumbi 268 px). Jedro (md+) nosi pet rubrik, lg doda zemljevid spomina,
+ * osebni muzej in igre, xl pa izrazoslovje, časovnico, kroniko in spominsko
+ * knjigo; »O muzeju« je v vrstici šele od 2xl (v nogi je vedno). Do ostalih
+ * pogledov služi hamburger-menij do xl.
  */
 const NAV_TIER: Partial<Record<MuseumView, "core" | "lg" | "xl" | "2xl">> = {
   domov: "core",
   zbirka: "core",
   zgodbe: "core",
   karta: "core",
+  spomin: "lg",
   dogodki: "core",
   mojMuzej: "lg",
   igre: "lg",
   izrazoslovje: "xl",
   casovnica: "xl",
+  kronika: "xl",
   knjiga: "xl",
   oMuzeju: "2xl",
 };
