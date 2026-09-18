@@ -1430,3 +1430,24 @@ Stage Summary:
 - Freyerjev izrez: 1400 × 1345 iz master posnetka Commons — zgoraj Mali Lipovec, sredinsko Griblje z OBEIMA imenoma (kurziva Griblje + oklepaj (Grüble) + Vnt.), spodaj Kolpa z mlinom; ~3× ostreje
 - Ključna odkritja: oznaka na najstarejši karti nosi slovensko in nemško ime drugo poleg drugega (točno kot trdijo urbarji); list v dLib sestavljenem posnetku je zavrtjen 90°; 2022 = leto obeh ekstremov (julij 7,8 m³/s, september 1.009 m³/s — največ odkar se meri)
 - Odprto: kontakti DKŽ/Flajšman/Vaš Kanal (osnutki pripravljeni, čakajo pošiljanje); kataster (Franciškanski kataster na podatki.gov.si — vir odkrit, gradivo še ne raziskano)
+
+---
+Task ID: 25
+Agent: Main agent (Z.ai Code)
+Task: Popravek logične napake v zapisu tone-kralj-98 (uporabniška prijava: »ce je praznoval 98 nemore bit 89«)
+
+Work Log:
+- Ugotovil, da vsebine ni v lokalni veji: lokalni main je bil za origin/main zaostal za ~24 commitov (produkcija 88 zapisov, lokalno 26) — sinhroniziral z git pull (core.fileMode false, ker je bilo 166 datotek spremenjenih le v načinu 644→755)
+- V origin/main našel zapis tone-kralj-98 (museum-content.ts ~vrstica 6258): titleSi »devetinosemdeset pomladi« (89!) in storySi »devetinosemdeseti rojstni dan« / »pri devetinosemdesetih letih« — medtem ko so bili titleEn (»ninety-nine springs«), summarySi (»98. rojstni dan«), vir Radio Odeon, walks.ts, record-of-month.ts, minute-stories.ts, object-biographies.ts (~1928) in raziskovalne note VSI pravilni pri 98
+- Logika zapisa: rojen ~januarja 1928 (zgodba sama napove stoletnico januarja 2028) → januar 2026 = 98. rojstni dan; ob njem stopi v 99. pomlad (pomladi 1928–2026 = 99)
+- Popravki (3 datoteke): museum-content.ts — titleSi → »devetindevetdeset pomladi«, storySi → »praznoval osemindevetdeseti rojstni dan in stopil v devetindevetdeseto pomlad« (dodana idiomatska razjasnitev 98↔99, da naslov in rojstni dan nedvoumeno sovpadata) in »pri osemindevetdesetih letih«; README.md (vrstica 168) isto + pojasnilo; db/custom.db reseed
+- Reseed: najprej padel na Unknown argument model3dUrl — vzrok: zastarel Prisma klient po pullu → bunx prisma generate → bun run db:seed uspešen (88 zapisov)
+- Manjkal je tudi paket @google/model-viewer (nova koda s pulla) → bun install (124 paketov, tudi tailwind-merge, zod)
+- Restart dev strežnika (obvezen po reseedu — stale SQLite ročaj; tudi iz dev.log odstranjeno opozorilo module-not-found)
+- Verifikacija: tsc 0 napak; eslint čist (le Babel opomba o 500 KB datoteki); API /api/exhibits → »Tone Kralj — devetindevetdeset pomladi« + »98. rojstni dan«; agent-browser: iskanje → opcija s popravljenim naslovom, dialog prikaže naslov 99 pomladi, periodo »rojen ~1928 · januar 2026: 98. rojstni dan«, zgodbo z »osemindevetdeseti rojstni dan in stopil v devetindevetdeseto pomlad« ter »pri osemindevetdesetih letih«, vir Radio Odeon in citat z novim naslovom; screenshot /tmp/tone-kralj-fixed.png; 0 stranskih napak; dev.log: vsi klici 200 (search, stats, memories)
+- Commit 3c0f428 + push na origin main (77a60c0..3c0f428)
+
+Stage Summary:
+- Logična napaka 89 ↔ 98 odpravljena v slovenščini; naslov zdaj »Tone Kralj — devetindevetdeset pomladi« (99 pomladi = pomlad 2026 bo njegova 99.; usklajeno z angleškim naslovom), besedilo pa eksplicitno povezuje oboje z diplomatsko formulo »ob 98. rojstnem dnevu stopil v 99. pomlad«
+- Postopek: po vsakem git pull (nova shema/novi paketi) obvezno bunx prisma generate + bun install, nato reseed + restart dev — dodano kot izkušnja
+- Lokalno okolje je bilo za produkcijo zaostalo za 24 commitov — vzrok, zakaj uporabnikove prijave o napakah lokalno niso bile reproducibilne; vedno najprej primerjati main..origin/main
