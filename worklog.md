@@ -1591,3 +1591,27 @@ Stage Summary:
 - Zbirka: 92 zapisov / 409 virov; nov zapis kranjska-sivka plete čebelarsko nit zbirke (konrad-barle → sivka) do svetovnega dneva čebel; majski koledar zapisa meseca dobi 5. vnos
 - Tehnična izkušnja: ob 429 na upload.wikimedia.org CDN slika prek agent-browser (anonimni fetch + canvas skaliranje + base64 izvoz v kosih) — za vsak prihodnji prenos slike
 - Odprto: VLM kvota (44–97/98 španka — zanka teče, PID 19077); czs.si bot-zaščita (primarni vir za program varstva čebele ko bo dostopen); župani občine; 1. svetovna vojna; Muzej išče AŽ-panj + fotografijo čebelarja
+
+---
+Task ID: 31
+Agent: Main agent (Z.ai Code)
+Task: 27. raziskovalni sklop — »odlično nadaljuj raziskuj« (92 → 93 zapisov; panjska končnica)
+
+Work Log:
+- Nadaljevanje čebelarske niti po direktivi: po kranjski sivki (92.) naravni »predmetni« dvojnik — panjska končnica, poslikana deščica kranjiča; veže konrad-barle + kranjska-sivka + pisanice
+- Raziskava (Wikipedia action API, brez kvot): SL Panjska končnica (več kot 600 motivov, polovica nabožnih; več kot 50.000 platov v ~150 letih; sredina 18. st. → konec po 1. sv. vojni; zlata doba 1820–1880; register nesnovne dediščine 2018 — zvrst uprizoritve in predstavitve, podzvrst likovni izrazi; znani motivi: mož iz gostilne, lisica brije lovca, babji mlin, kmečka tožba, lovčev pogreb …) + EN Micka Pavlič (1821–1891 Selca; oče Andrej Pavlič 1790–1873; delavnica v poznih najstnajstih; šablone + prahaste barve; katalog vsaj 141 motivov — 71 nabožnih, 70 posvetnih; učila Petra Žmitka; sama z dvema kozama; umrla 12. 9. 1891 — V LETU NAŠE SLIKE; dela hranita SEM in Loški muzej)
+- Slika: Commons »Lovčev pogreb, poslikana panjska končnica, les, 1891« (3286×1609, javna last PD-Art; slikarka Micka Pavlič — Commons kategorija; SEM inv. panjske-koncnice/630lju0017086; izbrana slika slovenske Wikipedije)
+- CDN KRIZA: upload.wikimedia.org in thumb.wikimedia.org sta blokirala strojni IP z 429 (~50+ min; API končne točke normalne); preizkušene poti: browser anonimni fetch (prej deloval za kranjsko sivko — zdaj 429), thumb/original poti (pozor: prava pot 0/02, ne e/e5!), SEM spletišče (digitalna zbirka /sl/digitalne-zbirke/panji obstaja, ~280 predmetov prvih 8 strani, predmeta 17086 NI med njimi), archive.org/web.archive.org (nez dosegljiv iz peskovnika) → REŠITEV: ozadna zanka /tmp/fetch-panel.sh (curl vsakih 3 min) — uspeh ob 11:12 (1920×940) → sharp 1600×783 / 257 KB
+- Nov zapis panjska-koncnica (93.; šege, DOCUMENTED, yearFrom 1750): naslov »Panjska končnica — galerija pod streho čebelnjaka«; zgodba 5 odstavkov SL+EN (kranjič → namen: ločevanje panjev pred pismenostjo + svetniki varujejo čebele → zlata doba in humor → Micka Pavlič → Bela krajina/Barle + register 2018 + sestra pisanic 2012:2018); Muzej išče: panjsko končnico z belokranjskega čebelnjaka
+- KURATORSKA STROGOST (razred napak, ki jih prijavlja uporabnik): med pisanjem odkrita in odstranjena dva nevira trditvi — etimologija kranjiča »po Kranjski« (ni v virih; preformulirano v »stari slovenski čebelji panj«) in sv. Florijan kot primer svetniškega motiva (ni v virih; zamenjan z Jezusovim krstom — dokumentiran motiv iz naslovov Commons)
+- 3 viri: Wikipedija SL Panjska končnica / Wikipedija EN Micka Pavlič (biografija obstaja samo v EN!) / Commons Lovčev pogreb (PD-Art)
+- Integracije: minutna zgodba (za kranjska-sivka); zapis meseca JULIJ — 5. vnos (obiranje roja — med znanimi motivi); postaja 28 sprehoda »Vas in njeni ljudje« (za pisanicami — sestri umetnosti: »ista roka riše na les«); biografija 6 faz (sredina 18. st. → 1820–1880 → 1821–1891 → 1891 → po 1918 → 2018→danes); image-dimensions 1600×783; visual-fingerprints 93/93; števci 92→93 × 5 jezikov (25 mest + meta layout)
+- Revizija: audit-numbers — vse oznake znani razred beseda↔števka (šeststo/six hundred, petdeset tisoč/fifty thousand, sto enainštirideset/a hundred and forty-one, enainsedemdeset/seventy-one, sedemdeset/seventy), ročno preverjena popolna SL↔EN usklajenost; audit-crossfile brez zadetkov; pokritost sprehodov 93/93 preverjena programsko
+- Reseed + restart dev; VERIFIKACIJA: tsc 0 napak; eslint čist; baza 93 zapisov / 412 virov; API 93; IIIF Collection 93 + Canvas 1600×783 image/jpeg; agent-browser: dialog SL (naslov, perioda, kranjič, petdeset tisoč, humor, Micka, Žmitek, 12. 9. 1891, register 2018, pisanice, konrad-barle, Muzej išče, slika 768×375), dialog EN (title, Micka, 141 motifs, humor, Baptism of Jesus, heritage register, seeks — vse ✓), hero »Zbirka 93 zapisov« + statistika 93/412, sprehod stop=28 (kuratorska opomba, 2018), mobilna 375 px brez preliva, 0 napak v konzoli, dev.log brez napak
+- README: števca (93/412) + odstavek 27. sklop (vrstni red 25→26→27 popravljen dvakrat — Merge je vedno vstavljal pred 26); kazalo + poročilo research-griblje/12-panjska-koncnica-2026-09.md
+- Commit d42ec47 + push origin main
+
+Stage Summary:
+- Zbirka: 93 zapisov / 412 virov; čebelarska nit zbirke je zaprta v trikotniku konrad-barle → kranjska-sivka → panjska-koncnica (+ pisanice kot sestra umetnosti); JULIJ in MAJ imata po 5 vnosov
+- Tehnična izkušnja: Wikimedia upload CDN blokada IP traja ~1 h — pravi recept je ozadna zanka ponovnih poskusov; API končne točke (action API) imajo ločeno, milejšo kvoto; SEM digitalna zbirka panji je dostopna, a nepopolna (naš predmet ni med objavljenimi)
+- Odprto: VLM kvota (44–97/98 španka — zanka PID 19077 teče naprej, brez odčitkov); czs.si (bot-zaščita); župani občine; 1. svetovna vojna; Muzej išče: končnico z belokranjskega čebelnjaka
