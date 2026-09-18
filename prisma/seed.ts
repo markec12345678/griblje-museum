@@ -21,6 +21,7 @@ async function main() {
     await db.exhibit.create({
       data: {
         slug: ex.slug,
+        museumNo: ex.museumNo ?? null,
         category: ex.category,
         titleSi: ex.titleSi,
         titleEn: ex.titleEn,

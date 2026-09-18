@@ -3,9 +3,10 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowLeft, CalendarDays, Clapperboard, Sparkles } from "lucide-react";
+import { ArrowLeft, CalendarDays, Clapperboard, QrCode, Sparkles } from "lucide-react";
 import { useLang, localeOf } from "@/lib/i18n";
 import { BEHIND_SCENES_POSTS } from "@/lib/behind-scenes";
+import { QrLabelTool } from "@/components/museum/qr-label-tool";
 import { Button } from "@/components/ui/button";
 
 /**
@@ -20,6 +21,7 @@ export function BehindScenesView() {
   const { t, lang } = useLang();
   const reduceMotion = useReducedMotion();
   const [openId, setOpenId] = React.useState<string | null>(null);
+  const [qrOpen, setQrOpen] = React.useState(false);
 
   const dateFmt = React.useMemo(
     () =>
@@ -198,6 +200,41 @@ export function BehindScenesView() {
             </motion.article>
           ))}
         </div>
+      </section>
+
+      {/* Fizični muzej — QR oznake (kurotorsko orodje; 29. sklop) */}
+      <section
+        aria-labelledby="zk-qr"
+        className="mt-12 rounded-xl border border-border/70 bg-card p-6 shadow-sm sm:p-8"
+      >
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div className="max-w-2xl">
+            <p className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
+              <QrCode className="h-3.5 w-3.5" aria-hidden="true" />
+              {t.qrLabels.sectionKicker}
+            </p>
+            <h2 id="zk-qr" className="font-display mt-2 text-2xl font-semibold leading-tight">
+              {t.qrLabels.sectionTitle}
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {t.qrLabels.sectionText}
+            </p>
+          </div>
+          <Button
+            type="button"
+            variant={qrOpen ? "outline" : "default"}
+            onClick={() => setQrOpen((v) => !v)}
+            aria-expanded={qrOpen}
+          >
+            <QrCode className="mr-2 h-4 w-4" aria-hidden="true" />
+            {qrOpen ? t.qrLabels.close : t.qrLabels.open}
+          </Button>
+        </div>
+        {qrOpen && (
+          <div className="mt-6 border-t pt-6">
+            <QrLabelTool />
+          </div>
+        )}
       </section>
     </div>
   );

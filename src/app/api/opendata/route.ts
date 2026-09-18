@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { SITE_URL } from "@/lib/site";
 import { WIKIDATA_SAMEAS, wikidataUrlFor } from "@/lib/wikidata";
 
 export const dynamic = "force-dynamic";
@@ -94,6 +95,8 @@ export async function GET() {
       data: {
         exhibits: exhibits.map((ex) => ({
           slug: ex.slug,
+          museumNo: ex.museumNo,
+          canonicalUrl: `${SITE_URL}/exponat/${ex.slug}`,
           sameAs: wikidataUrlFor(ex.slug),
           category: ex.category,
           title: { sl: ex.titleSi, en: ex.titleEn },

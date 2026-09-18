@@ -29,6 +29,8 @@ export type SourceType =
 export type ExhibitDTO = {
   id: string;
   slug: string;
+  /** Trajna muzejska številka (MVG-###) — inventarna identiteta zapisa. */
+  museumNo: string | null;
   category: ExhibitCategory;
   titleSi: string;
   titleEn: string;

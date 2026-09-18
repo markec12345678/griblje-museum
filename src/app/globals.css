@@ -331,3 +331,30 @@ html.a11y-links a {
 /* Približevalni ogled (OpenSeadragon) — kazalnik premikanja */
 .museum-deep-zoom { cursor: grab; overflow: hidden; }
 .museum-deep-zoom:active { cursor: grabbing; }
+
+/* QR oznake za fizični muzej — tisk iz orodja v pogledu Za kuliso.
+ * Tiskalna kopija oznake živi v portalu na <body> (.qr-print-root) —
+ * enak vzorec kot tisk razglednice: display (ne visibility), zato
+ * tisk zasede točno eno stran. Sožitje z razgledničnim režimom
+ * (body > *:not(.postcard-print-root)) razrešuje višja specifičnost
+ * nad razredom .qr-printing na <body>, ki orodje postavi med delovanjem. */
+.qr-print-root { display: none; }
+@media print {
+  body.qr-printing > *:not(.qr-print-root) { display: none !important; }
+  body.qr-printing .qr-print-root {
+    display: block !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body.qr-printing .qr-print-root > div {
+    width: 130mm; /* A6 širina minus robovi strani */
+    margin: 0 auto;
+  }
+}
+
+/* Objektna stran zapisa /exponat/[slug] se natisne kot celota —
+ * prepiše razglednično skrivanje body-otrok (velja samo za stran zapisa;
+ * enaka specifičnost, kasnejši vrstni red v datoteki zmaga). */
+@media print {
+  body > .exponat-print-page { display: block !important; }
+}

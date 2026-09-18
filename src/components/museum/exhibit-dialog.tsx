@@ -224,18 +224,22 @@ export function ExhibitDialog({
     window.setTimeout(() => setCitationState("idle"), 2600);
   };
 
-  /** DigitaltMuseum-vzorc: oblikovan citat zapisa z datumom dostopa. */
+  /** DigitaltMuseum-vzorc: oblikovan citat zapisa z datumom dostopa
+   *  in trajno muzejsko številko (MVG-###). */
   const buildCitation = (ex: ExhibitDTO): string => {
     const accessDate = new Intl.DateTimeFormat(localeOf(lang), {
       day: "numeric",
       month: "long",
       year: "numeric",
     }).format(new Date());
-    const url = `${window.location.origin}/?exhibit=${ex.slug}`;
+    const url = `${window.location.origin}/exponat/${ex.slug}`;
+    // Trajna identiteta: inventarna številka + znak (slug) — vzorec
+    // citatov z objektno številko (Rijksmuseum / DigitaltMuseum).
+    const recordId = ex.museumNo ? `${ex.museumNo} · ${ex.slug}` : ex.slug;
     if (lang === "sl") {
-      return `Muzej vasi Griblje (2026). »${es.title(ex)}«. Zapis ${ex.slug}. Dostopno na: ${url} (${t.share.accessed}: ${accessDate}). Licenca CC BY-SA 4.0.`;
+      return `Muzej vasi Griblje (2026). »${es.title(ex)}«. Zapis ${recordId}. Dostopno na: ${url} (${t.share.accessed}: ${accessDate}). Licenca CC BY-SA 4.0.`;
     }
-    return `Griblje Village Museum (2026). “${es.title(ex)}”. Record ${ex.slug}. Available at: ${url} (${t.share.accessed}: ${accessDate}). Licence CC BY-SA 4.0.`;
+    return `Griblje Village Museum (2026). “${es.title(ex)}”. Record ${recordId}. Available at: ${url} (${t.share.accessed}: ${accessDate}). Licence CC BY-SA 4.0.`;
   };
 
   const storyParagraphs = exhibit ? es.story(exhibit).split("\n\n").filter(Boolean) : [];
