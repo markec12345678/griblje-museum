@@ -253,9 +253,9 @@ export const MINUTE_STORIES: MinuteStory[] = [
   {
     slug: "kolpa-extremi",
     textSi:
-      "Eno leto, dva ekstrema: julija 2022 Kolpa pri Metliki komaj teče — 7,8 kubičnega metra na sekundo, najsušeši julij od 1961. Septembra istega leta ista postaja izmeri 1.009 kubičnih metrov na sekundo — največ odkar se meri. Skoraj stotridesetkrat več vode v dveh mesecih. Reka ekstremov ima v zbirki svoj zapis.",
+      "Eno leto, dva ekstrema: julija 2022 Kolpa pri Metliki komaj teče — 7,8 kubičnega metra na sekundo, najsušeši julij od 1961. Septembra istega leta ista postaja izmeri 1.009 kubičnih metrov na sekundo — največjo neposredno meritev vseh časov. Skoraj stotridesetkrat več vode v dveh mesecih. Reka ekstremov ima v zbirki svoj zapis.",
     textEn:
-      "One year, two extremes: in July 2022 the Kolpa at Metlika barely runs — 7.8 cubic metres a second, the driest July since 1961. That September the same station measures 1,009 cubic metres a second — the most ever measured there. Nearly a hundred and thirty times more water within two months. The river of extremes has its record in the collection.",
+      "One year, two extremes: in July 2022 the Kolpa at Metlika barely runs — 7.8 cubic metres a second, the driest July since 1961. That September the same station measures 1,009 cubic metres a second — the largest direct measurement ever made there. Nearly a hundred and thirty times more water within two months. The river of extremes has its record in the collection.",
   },
   {
     slug: "cerkvisce",

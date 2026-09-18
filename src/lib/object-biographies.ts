@@ -2100,9 +2100,9 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         yearLabelEn: "1979 and 1983 — both extremes",
         sortYear: 1979,
         textSi:
-          "Konec septembra 1979 postaja izmeri največji pretok vseh časov — 1.116 kubičnih metrov na sekundo. Štiri leta pozneje, 1. avgusta 1983, najmanjšega: 4,6. Med dnem in viškom istega korita je razmerje 242 proti ena.",
+          "Konec septembra 1979 postaja zabeleži največji pretok vseh časov — 1.116 kubičnih metrov na sekundo, izračunan iz vodostaja. Štiri leta pozneje, 1. avgusta 1983, pa neposredno izmeri najmanjšega: 4,6. Med dnem in viškom istega korita je razmerje 242 proti ena.",
         textEn:
-          "At the end of September 1979 the station measures the greatest discharge of all — 1,116 cubic metres per second. Four years later, on 1 August 1983, the least: 4.6. Between the bed's low and its high lies a ratio of 242 to one.",
+          "At the end of September 1979 the station records the greatest discharge of all — 1,116 cubic metres per second, computed from the water level. Four years later, on 1 August 1983, it directly gauges the least: 4.6. Between the bed's low and its high lies a ratio of 242 to one.",
         evidenceStatus: "DOCUMENTED",
         sourceIndex: 2,
       },
