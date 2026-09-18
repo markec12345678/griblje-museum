@@ -2,20 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
+  Archive,
   ArrowLeft,
   ArrowRight,
   BookOpen,
+  Camera,
+  ChevronDown,
+  ExternalLink,
   Hourglass,
   Landmark,
   MapPin,
+  MessageSquareQuote,
   Network,
   Route,
   ShieldCheck,
   ShieldQuestion,
   Sparkles,
+  Sprout,
+  Users,
 } from "lucide-react";
 
 import { seedExhibits } from "@/lib/museum-content";
+import { getBiography, type BiographyStage } from "@/lib/object-biographies";
 import { relatedExhibits } from "@/lib/connections";
 import { walkStopOf } from "@/lib/walks";
 import { SITE_URL } from "@/lib/site";
@@ -83,9 +91,11 @@ const COLLECTION_DTO: ExhibitDTO[] = seedExhibits.map((ex, index) => ({
  * Collection Online, DigitaltMuseum): vsebina zapisa, struktura dokazov
  * in povezava nazaj v živi muzej.
  *
- * Struktura sledi muzejski poštenosti projekta:
- *   KAJ VEMO (povzetek) → KAKO VEMO (zgodba) → VIR (register virov)
- *   → STATUS DOKAZA (stopnja zanesljivosti).
+ * Struktura sledi muzejski poštenosti projekta (progresivno razkrivanje
+ * dokaza: obiskovalec → zainteresirani → raziskovalec):
+ *   STATUS DOKAZA (stopnja zanesljivosti) → KAJ VEMO (povzetek)
+ *   → KAKO VEMO (zgodba) → ŽIVLJENJE PREDMETA (trditvena plast: vsaka
+ *   faza nosi status dokaza in vezani vir) → VIR (register virov).
  *
  * Vsebina živi v src/lib/museum-content.ts (isti vir resnice kot seme
  * baze); jezik strani je slovenščina (primarni), angleščina pa prek
@@ -138,6 +148,18 @@ const SL = {
   nextStop: "Naslednja postaja",
   takeWalk: "Zaženi sprehod v muzeju",
   takeWalkHint: "Voden ogled: vsaka postaja je zapis z avdiom in sledenjem napredka.",
+  biographyTitle: "Življenje predmeta",
+  biographyIntro:
+    "Pot zapisa skozi čas — po vzoru Art Tracks (Carnegie Museum of Art): vsaka točka nosi vir in stopnjo zanesljivosti. Vrzeli so del zgodbe, ne sramota.",
+  biographySourceLabel: "vir",
+  biographyStages: {
+    nastanek: "nastanek",
+    zivljenje: "življenje",
+    prica: "pričevanje",
+    raziskava: "raziskava",
+    digitalizacija: "digitalizacija",
+    danes: "danes",
+  },
   categories: {
     kraj: "Kraji",
     kolpa: "Kolpa",
@@ -210,6 +232,18 @@ const EN = {
   nextStop: "Next stop",
   takeWalk: "Take this walk in the museum",
   takeWalkHint: "A guided tour: every stop is a record, with audio and progress tracking.",
+  biographyTitle: "The life of an object",
+  biographyIntro:
+    "The record's path through time — after Art Tracks (Carnegie Museum of Art): every station carries a source and an evidence level. Gaps are part of the story, not a shame.",
+  biographySourceLabel: "source",
+  biographyStages: {
+    nastanek: "origin",
+    zivljenje: "life",
+    prica: "witness",
+    raziskava: "research",
+    digitalizacija: "digitisation",
+    danes: "today",
+  },
   categories: {
     kraj: "Places",
     kolpa: "The Kolpa",
@@ -267,6 +301,37 @@ const EVIDENCE_ICON: Record<EvidenceStatus, React.ComponentType<{ className?: st
   UNVERIFIED: ShieldQuestion,
   TO_COLLECT: Hourglass,
 };
+
+/* --- Življenje predmeta (trditvena plast) ---------------------------------
+ * Isti vir podatkov in isti vzorec ikon kot komponenta v živem muzeju
+ * (object-biography.tsx): stopnje življenja, črtkana povezava za faze
+ * z nižjo zanesljivostjo (vidna negotovost, ne skrita). */
+
+const STAGE_ICONS: Record<BiographyStage, React.ComponentType<{ className?: string }>> = {
+  nastanek: Sprout,
+  zivljenje: Users,
+  prica: MessageSquareQuote,
+  raziskava: Archive,
+  digitalizacija: Camera,
+  danes: Landmark,
+};
+
+/** Faze z nižjo stopnjo zanesljivosti dobijo črtkano povezavo (vidna negotovost). */
+const UNCERTAIN = new Set<EvidenceStatus>(["TESTIMONY", "TRADITION", "UNVERIFIED", "TO_COLLECT"]);
+
+/** Število faz s slovenščino dvojino/pomanjševalniki (kot v aplikaciji). */
+function phaseCountLabel(n: number, s: Strings): string {
+  if (isSl(s)) {
+    return n === 1
+      ? "1 postaja življenja"
+      : n === 2
+        ? "2 postaji življenja"
+        : n <= 4
+          ? `${n} postaje življenja`
+          : `${n} postaj življenja`;
+  }
+  return n === 1 ? "1 station of its life" : n === 2 ? "2 stations of its life" : `${n} stations of its life`;
+}
 
 /** Datum vključitve v zbirbo (kuratorski podatek, po vzoru registrert). */
 function registeredLabel(ex: (typeof seedExhibits)[number], s: Strings) {
@@ -448,6 +513,13 @@ export default async function ExhibitRecordPage({ params, searchParams }: PagePr
    * test »one object → five more« pa mora zadoščiti iz same strani. */
   const dto = COLLECTION_DTO[index]!;
   const related = relatedExhibits(dto, COLLECTION_DTO, 5);
+
+  /* Trditvena plast (§7 raziskovalcev nivo): Življenje predmeta — isti
+   * vir podatkov kot dialog (object-biographies.ts). sourceIndex kaže
+   * v register virov TEGA zapisa (ex.sources, enak vrstni red kot
+   * sekcija VIRI zgoraj). Strežniško upodobljeno v <details>: vsebina
+   * je v HTMLju (indeksabilna, dostopna brez JS), odprta na klik. */
+  const bio = getBiography(slug);
   const walkInfo = walkStopOf(slug);
   const walkStop = walkInfo ? walkInfo.walk.stops[walkInfo.index]! : null;
   const prevStopEx =
@@ -615,6 +687,102 @@ export default async function ExhibitRecordPage({ params, searchParams }: PagePr
               ))}
             </div>
           </section>
+
+          {/* ŽIVLJENJE PREDMETA — trditvena plast: pot zapisa skozi čas,
+              vsaka faza nosi status dokaza in vezani vir. Raziskovalcev
+              nivo progresivnega razkrivanja (native <details>: tipkovnica,
+              brez JS, vsebina v strežniškem HTMLju). */}
+          {bio && (
+            <details className="group mt-10 rounded-lg border border-border/70 bg-card">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 p-4 [&::-webkit-details-marker]:hidden">
+                <span>
+                  <h2 id="zivljenje" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    {s.biographyTitle}
+                  </h2>
+                  <span className="mt-1 block text-sm text-foreground/80">
+                    {phaseCountLabel(bio.phases.length, s)}
+                  </span>
+                </span>
+                <ChevronDown
+                  className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-300 group-open:rotate-180"
+                  aria-hidden="true"
+                />
+              </summary>
+              <div className="border-t border-border/60 p-4">
+                <p className="mb-5 text-xs italic leading-relaxed text-muted-foreground">
+                  {s.biographyIntro}
+                </p>
+                <ol className="relative space-y-6 before:absolute before:bottom-2 before:left-[15px] before:top-2 before:w-px before:bg-border">
+                  {bio.phases.map((phase, i) => {
+                    const StageIcon = STAGE_ICONS[phase.stage];
+                    const source =
+                      phase.sourceIndex != null ? ex.sources[phase.sourceIndex] : undefined;
+                    const uncertain = UNCERTAIN.has(phase.evidenceStatus);
+                    const PhaseEvidenceIcon = EVIDENCE_ICON[phase.evidenceStatus];
+                    return (
+                      <li key={`${phase.stage}-${i}`} className="relative pl-11">
+                        {/* Vozel na črti */}
+                        <span
+                          className={`absolute left-0 top-0.5 flex size-8 items-center justify-center rounded-full border bg-background ${
+                            uncertain
+                              ? "border-dashed border-muted-foreground/50 text-muted-foreground"
+                              : "border-primary/40 text-primary"
+                          }`}
+                          aria-hidden="true"
+                        >
+                          <StageIcon className="h-4 w-4" />
+                        </span>
+
+                        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                          <span className="font-display text-sm font-semibold">
+                            {isEn ? phase.yearLabelEn : phase.yearLabelSi}
+                          </span>
+                          <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+                            {s.biographyStages[phase.stage]}
+                          </span>
+                        </div>
+
+                        <p className="mt-1.5 text-sm leading-relaxed text-foreground/90">
+                          {isEn ? phase.textEn : phase.textSi}
+                        </p>
+
+                        <div className="mt-2 flex flex-wrap items-center gap-2">
+                          <span
+                            className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-medium ${EVIDENCE_STYLE[phase.evidenceStatus]}`}
+                          >
+                            <PhaseEvidenceIcon className="h-3.5 w-3.5" aria-hidden="true" />
+                            {s.evidence[phase.evidenceStatus]}
+                          </span>
+                          {source && (
+                            <span className="inline-flex max-w-full items-center gap-1.5 text-xs text-muted-foreground">
+                              <span aria-hidden="true">—</span>
+                              {source.url ? (
+                                <a
+                                  href={source.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 underline decoration-border underline-offset-2 hover:text-foreground"
+                                >
+                                  <span className="sr-only">{s.biographySourceLabel}: </span>
+                                  {isEn ? source.nameEn : source.nameSi}
+                                  <ExternalLink className="h-3 w-3 shrink-0" aria-hidden="true" />
+                                </a>
+                              ) : (
+                                <span className="italic">
+                                  <span className="sr-only">{s.biographySourceLabel}: </span>
+                                  {isEn ? source.nameEn : source.nameSi}
+                                </span>
+                              )}
+                            </span>
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            </details>
+          )}
 
           {/* VIR — register virov zapisa */}
           <section aria-labelledby="viri" className="mt-10">
