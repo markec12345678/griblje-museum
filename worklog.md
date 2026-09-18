@@ -1451,3 +1451,28 @@ Stage Summary:
 - Logična napaka 89 ↔ 98 odpravljena v slovenščini; naslov zdaj »Tone Kralj — devetindevetdeset pomladi« (99 pomladi = pomlad 2026 bo njegova 99.; usklajeno z angleškim naslovom), besedilo pa eksplicitno povezuje oboje z diplomatsko formulo »ob 98. rojstnem dnevu stopil v 99. pomlad«
 - Postopek: po vsakem git pull (nova shema/novi paketi) obvezno bunx prisma generate + bun install, nato reseed + restart dev — dodano kot izkušnja
 - Lokalno okolje je bilo za produkcijo zaostalo za 24 commitov — vzrok, zakaj uporabnikove prijave o napakah lokalno niso bile reproducibilne; vedno najprej primerjati main..origin/main
+
+---
+Task ID: 26
+Agent: Main agent (Z.ai Code)
+Task: 23. raziskovalni sklop — »odlično nadaljuj raziskuj« (samo Griblje, brez podvajanj)
+
+Work Log:
+- Pregled stanja: 88 zapisov / 392 virov; kazalo research-griblje/00-KAZALO.md (nedokončane naloge: PGD medalje, RKD, zemljevidi mapire, dlib — kvota) + analiza vrzeli po seznamu slugov
+- Kvote z-ai (web_search + vision) bile cel čas blokirane (429) — raziskava po stranski poti: Wikipedia API in Commons API neposredno s curljem (brez kvote)
+- Wikipedia »Občina Črnomelj« (zgodovinski razdelek): 1854 okraj Črnomelj 24 občin (Griblje med njimi; Kranjska 501); 1921 popis: občina Griblje 435 prebivalcev; 1929 Savska → 1931 srez Črnomelj v Dravski; SNOS 15. 5. 1944 (4 okrožja, 139 krajevnih enot); 1945/1952/1955 reforme; 1974 KS
+- NAJDBA SKLOPA ⭐: Commons datoteka »Občine dravske banovine v letih 1933–1937.pdf« (Županska zveza Ljubljana 1937, javna last, 76 strani, INZ sken) — prenos 18 MB (upload.wikimedia.org, brez 429); ABBYY besedilna plast → rg »Griblje« → stran 11, tabela Okraj Črnomelj: komasacija 11. 9. 1933 (o. Griblje → n. o. Adlešiči z Tribuči in Zuniči) in 21. 9. 1936 (Sl. l. 78/36: kraja Dragoši in Griblje izločena iz Adlešičev → priključena o. Gradac); abecedno kazalo »Griblje 5—5« = stran 5, občina št. 5 = Gradac (križno potrjeno s tabelo: Dol 5—10 = o. Stari trg)
+- Slika zapisa: pdftoppm stran 11 @200 dpi (1473×2149) → sharp izrez zgornjega dela 1473×1050 (glava + vrstici Adlešiči in Gradac z obema omembama Gribelj) → public/images/authentic/obcina-griblje-1937.jpg (javna last)
+- Nov zapis obcina-griblje (kraj, DOCUMENTED, 1854–1933, 3 viri: Wikipedia Občina Črnomelj CC BY-SA / priročnik 1937 s Commons javna last — primarni / crnomelj.si — obstoječi ključ); zgodba 5 odstavkov (~340 besed SL + EN), perioda »1854–1933 občina · 1936 k občini Gradac · danes krajevna skupnost«
+- Integracije: minute-stories (»Papirji se menjujejo; vas ostane«), object-biographies (5 faz: 1854 nastanek / 1921 zivljenje / 11. 9. 1933 prica / 21. 9. 1936 zivljenje / 1955→danes), record-of-month SEPTEMBER (mesec komasacije — 6. vnos), walks »Iz Gribelj v svet« (nova postaja 12/18 za griblje-v-stevilkah), image-dimensions (1473×1050), visual-fingerprints regeneracija (89/89, obcina-griblje 1473×1050)
+- Števci 88→89: i18n.tsx 20 mest × 5 jezikov (SL/EN/HR/DE/IT: hero, guide subtitle, walks coverNote, visual subtitle) + layout.tsx meta + README (2 mesti) + nov odstavek 23. sklop
+- Napaka med delom: stage »preobrat« ni veljaven BiographyStage (dovoljeni: nastanek/zivljenje/prica/raziskava/digitalizacija/danes) → preimenovano v »prica«
+- Reseed + restart dev (obvezen vrstni red po izkušnjah); baza: 89 zapisov / 395 virov
+- Verifikacija: tsc 0 napak; eslint čist; agent-browser: globoka povezava ?exhibit=obcina-griblje (naslov, perioda, 5 odstavkov, kredit, 3 viri s popolnimi opombami, povezani zapisi: Griblje v številkah + PGD Griblje), hero »Zbirka 89 zapisov« + progressbar »Odkrito 1 od 89«, biografija »5 postaj življenja«, sprehod ?walk=iz-gribelj-v-svet&stop=12 (kuratorska opomba »Števke se menjujejo; ime ostane«), iskanje »obcina« → 6 zadetkov z normalizacijo diakritikov, IIIF manifest (Canvas 1473×1050, image/jpeg) + Collection 89; glavna slika se naloži (complete, 768px opt.); mobilna 375px brez prekoračitve; 0 napak v konzoli in dev.log
+- Commit 524f86a + push origin main (3c0f428..524f86a)
+- Raziskovalno poročilo: research-griblje/09-obcina-griblje-2026-09.md (z odkritji B1–B3: demografski padec okraja 1869–1910 kot kontekst izseljenstva; neizkoriščeni Commons fotografiji Kolpa griblje 2002 + Cabin under the Sun 2019/zamrznjena voda)
+
+Stage Summary:
+- Zbirka: 89 zapisov / 395 virov; upravna zgodovina vasi zdaj nepretrgana (1468 ime → 1854 občina → 1933 komasacija → 1936 Gradac → 1955 Črnomelj → 1974 KS → praznik KS 2024)
+- Metoda: ob blokirani kvoti z-ai se raziskava lahko opravi neposredno prek Wikipedia/Commons API + lokalne obdelave PDF (pdftotext/pdftoppm/sharp) — primarni vir 1937 je bil celoten dosegljiv brez enega klica z-ai
+- Odprto: župani občine Griblje 1854–1933 (seznam, pečat, volilni imenik) — klic vaščanom v zapisu; neizkoriščeni Commons: Kolpa griblje (2002, Savinjc) in Cabin under the Sun (2019, zamrznjena voda) — kandidata za prihodnje sklope; 1. svetovna vojna gribeljsko-specifično brez zadetkov (možna pot: mrliška knjiga Podzemelj kot pri španki 1918)
