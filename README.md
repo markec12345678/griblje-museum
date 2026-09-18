@@ -165,7 +165,8 @@ citat »Sami Gribljani, s svojimi žulji, s svojim znojem in po lastni pameti!«
 last — Wikivir + Commons PDF; naslovna stran kot slika zapisa), **Napoleonova carinarnica** (Ilirske
 province 1809–1813: Griblje med carinskimi uradi inšpektorata Sisek ob meji s Turškim cesarstvom —
 Wikipedija po Pivec Stele 1930; zemljevid 1812 ZRC SAZU; zapolni vrzel 1689→1885 v časovnici) in
-**Tone Kralj — devetinosemdeset pomladi** (98. rojstni dan januarja 2026; lešniki, peteršilj,
+**Tone Kralj — devetindevetdeset pomladi** (98. rojstni dan januarja 2026, ob katerem je stopil
+v 99. pomlad; lešniki, peteršilj,
 križanke, karte s pravnuki; obiski RK Črnomelj — Radio Odeon 18. 1. 2026). Obogatitve: **anton-filak**
 (VELIKA: naslovi državnega prvaka 2010/2019/2022/2024 + 2. mesto 2025 + 14. mesto na 70. svetovnem
 prvenstvu pri Pragi — 6 novih virov: svet24 3×, kmeckiglas, zotks, RO 2025), **muzejska-ucilnica**
