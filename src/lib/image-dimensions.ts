@@ -29,6 +29,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   // 21. sklop: reka ekstremov — Kolpa pri vodomerni postaji Metlika, 17. 9. 2022 (iz poročila ARSO)
   "/images/authentic/kolpa-poplava-metlika-2022.jpg": { width: 686, height: 515 },
 
+  // 23. sklop: občina Griblje — izrez tabele Okraj Črnomelj iz priročnika Županske zveze (1937, javna last)
+  "/images/authentic/obcina-griblje-1937.jpg": { width: 1473, height: 1050 },
+
   // 20. sklop, revizija 2026-10: izrez Freyerjeve karte z Gribljami — pravi položaj vasi ob Kolpi
   // (posnetek NUK prek GA&C; prejšnji izrez je prikazoval napačen del lista)
   // 22. sklop: nadgradnja iz master posnetka Wikimedia Commons (dLib, 25.952 × 20.000) — obe imeni: Griblje + (Grüble)
