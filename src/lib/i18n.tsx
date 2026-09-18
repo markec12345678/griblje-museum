@@ -158,7 +158,7 @@ export const ui = {
       title1: "Vas kot",
       titleAccent: "muzej.",
       subtitle:
-        "Zbirka 88 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
+        "Zbirka 89 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
       ctaCollection: "Razišči zbirko",
       ctaMap: "Odpri zemljevid",
       ctaGuide: "Vprašaj vodnika",
@@ -470,7 +470,7 @@ export const ui = {
     guide: {
       openLabel: "Pogovor z zbirko (Ctrl+G)",
       title: "Pogovor z zbirko",
-      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 88 kuriranih zapisih.",
+      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 89 kuriranih zapisih.",
       aiBadge: "AI vodnik",
       disclaimer: "Umetna inteligenca sestavlja odgovore samo iz zapisov zbirke; navedeni zapisi so vedno pravi. Muzej ne izmišljuje zgodovine.",
       startersTitle: "S čim začnemo?",
@@ -544,7 +544,7 @@ export const ui = {
         n === 1 ? "1 postaja" : n >= 2 && n <= 4 ? `${n} postaje` : `${n} postaj`,
       minutes: (n: number) => `≈ ${n} min`,
       start: "Začni sprehod",
-      coverNote: "Sprehodi skupaj pokrivajo vseh 88 zapisov zbirke.",
+      coverNote: "Sprehodi skupaj pokrivajo vseh 89 zapisov zbirke.",
       completed: "Zaključen",
       completedProgress: (done: number, total: number) =>
         `Zaključeni sprehodi: ${done} od ${total}`,
@@ -800,7 +800,7 @@ export const ui = {
     visual: {
       title: "Podobne slike",
       subtitle:
-        "Po zgradbi in barvah slike — majhna različica vzorca »Search visually« Rijksmuseuma, ki pri 88 zapisih ne potrebuje umetne inteligence.",
+        "Po zgradbi in barvah slike — majhna različica vzorca »Search visually« Rijksmuseuma, ki pri 89 zapisih ne potrebuje umetne inteligence.",
       openExhibit: "Odpri podoben zapis",
       why: "Zakaj se sliki podobni?",
       whyText:
@@ -1217,7 +1217,7 @@ export const ui = {
       title1: "A village as",
       titleAccent: "a museum.",
       subtitle:
-        "Eighty-eight records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
+        "Eighty-nine records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
       ctaCollection: "Explore the collection",
       ctaMap: "Open the map",
       ctaGuide: "Ask the guide",
@@ -1528,7 +1528,7 @@ export const ui = {
     guide: {
       openLabel: "Talk to the collection (Ctrl+G)",
       title: "Talk to the collection",
-      subtitle: "Ask the museum guide — answers are grounded in 88 curated records.",
+      subtitle: "Ask the museum guide — answers are grounded in 89 curated records.",
       aiBadge: "AI guide",
       disclaimer: "Artificial intelligence builds answers only from the collection records; cited records are always real. The museum invents no history.",
       startersTitle: "Where shall we start?",
@@ -1600,7 +1600,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stop" : `${n} stops`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Start the walk",
-      coverNote: "Together the walks cover all 88 records of the collection.",
+      coverNote: "Together the walks cover all 89 records of the collection.",
       completed: "Completed",
       completedProgress: (done: number, total: number) =>
         `Completed walks: ${done} of ${total}`,
@@ -1855,7 +1855,7 @@ export const ui = {
     visual: {
       title: "Similar images",
       subtitle:
-        "By structure and colour — a small-museum take on the Rijksmuseum's 'Search visually' that needs no artificial intelligence at eighty-eight records.",
+        "By structure and colour — a small-museum take on the Rijksmuseum's 'Search visually' that needs no artificial intelligence at eighty-nine records.",
       openExhibit: "Open a similar record",
       why: "Why do these look alike?",
       whyText:
@@ -2270,7 +2270,7 @@ export const ui = {
       title1: "Selo kao",
       titleAccent: "muzej.",
       subtitle:
-        "Osamdeset i osam zapisa, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
+        "Osamdeset i devet zapisa, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
       ctaCollection: "Istraži zbirku",
       ctaMap: "Otvori zemljovid",
       ctaGuide: "Pitaj vodiča",
@@ -2581,7 +2581,7 @@ export const ui = {
     guide: {
       openLabel: "Razgovor sa zbirkom (Ctrl+G)",
       title: "Razgovor sa zbirkom",
-      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 88 kuriranih zapisa.",
+      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 89 kuriranih zapisa.",
       aiBadge: "AI vodič",
       disclaimer: "Umjetna inteligencija sastavlja odgovore samo iz zapisa zbirke; navedeni zapisi uvijek su pravi. Muzej ne izmišlja povijest.",
       startersTitle: "Čime počinjemo?",
@@ -2653,7 +2653,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stanica" : n <= 4 ? `${n} stanice` : `${n} stanica`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Započni šetnju",
-      coverNote: "Šetnje zajedno pokrivaju svih 88 zapisa zbirke.",
+      coverNote: "Šetnje zajedno pokrivaju svih 89 zapisa zbirke.",
       completed: "Završeno",
       completedProgress: (done: number, total: number) =>
         `Završene šetnje: ${done} od ${total}`,
@@ -2908,7 +2908,7 @@ export const ui = {
     visual: {
       title: "Slične slike",
       subtitle:
-        "Po strukturi i bojama — mala muzejska inačica uzorka »Search visually« Rijksmuseuma, koja pri 88 zapisa ne treba umjetnu inteligenciju.",
+        "Po strukturi i bojama — mala muzejska inačica uzorka »Search visually« Rijksmuseuma, koja pri 89 zapisa ne treba umjetnu inteligenciju.",
       openExhibit: "Otvori sličan zapis",
       why: "Zašto su slike slične?",
       whyText:
@@ -3324,7 +3324,7 @@ export const ui = {
       title1: "Ein Dorf als",
       titleAccent: "Museum.",
       subtitle:
-        "Achtundachtzig Einträge, ein Fluss, eine Grenze und hundert Erinnerungen. Entdecken Sie Griblje — ein Dorf an der Kolpa, dessen jeder Ort ein Eingang in eine Geschichte ist.",
+        "Neunundachtzig Einträge, ein Fluss, eine Grenze und hundert Erinnerungen. Entdecken Sie Griblje — ein Dorf an der Kolpa, dessen jeder Ort ein Eingang in eine Geschichte ist.",
       ctaCollection: "Sammlung entdecken",
       ctaMap: "Karte öffnen",
       ctaGuide: "Guide fragen",
@@ -3635,7 +3635,7 @@ export const ui = {
     guide: {
       openLabel: "Gespräch mit der Sammlung (Strg+G)",
       title: "Gespräch mit der Sammlung",
-      subtitle: "Fragen Sie den Museumsguide — die Antworten ruhen auf 88 kuratierten Einträgen.",
+      subtitle: "Fragen Sie den Museumsguide — die Antworten ruhen auf 89 kuratierten Einträgen.",
       aiBadge: "KI-Guide",
       disclaimer: "Künstliche Intelligenz setzt Antworten nur aus den Einträgen der Sammlung zusammen; die genannten Einträge sind immer echt. Das Museum erfindet keine Geschichte.",
       startersTitle: "Womit beginnen wir?",
@@ -3707,7 +3707,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 Station" : `${n} Stationen`),
       minutes: (n: number) => `≈ ${n} Min`,
       start: "Rundgang beginnen",
-      coverNote: "Die Rundgänge decken gemeinsam alle 88 Einträge der Sammlung ab.",
+      coverNote: "Die Rundgänge decken gemeinsam alle 89 Einträge der Sammlung ab.",
       completed: "Abgeschlossen",
       completedProgress: (done: number, total: number) =>
         `Abgeschlossene Rundgänge: ${done} von ${total}`,
@@ -3962,7 +3962,7 @@ export const ui = {
     visual: {
       title: "Ähnliche Bilder",
       subtitle:
-        "Nach Struktur und Farben des Bildes — eine kleine Version des Musters „Search visually“ des Rijksmuseums, das bei 88 Einträgen keine künstliche Intelligenz braucht.",
+        "Nach Struktur und Farben des Bildes — eine kleine Version des Musters „Search visually“ des Rijksmuseums, das bei 89 Einträgen keine künstliche Intelligenz braucht.",
       openExhibit: "Ähnlichen Eintrag öffnen",
       why: "Warum sind die Bilder ähnlich?",
       whyText:
@@ -4379,7 +4379,7 @@ export const ui = {
       title1: "Un villaggio come",
       titleAccent: "museo.",
       subtitle:
-        "Ottantotto schede, un fiume, un confine e cento ricordi. Esplorate Griblje — un villaggio sulla Kolpa dove ogni luogo è un ingresso in una storia.",
+        "Ottantanove schede, un fiume, un confine e cento ricordi. Esplorate Griblje — un villaggio sulla Kolpa dove ogni luogo è un ingresso in una storia.",
       ctaCollection: "Esplora la collezione",
       ctaMap: "Apri la mappa",
       ctaGuide: "Chiedi alla guida",
@@ -4690,7 +4690,7 @@ export const ui = {
     guide: {
       openLabel: "Dialogo con la collezione (Ctrl+G)",
       title: "Dialogo con la collezione",
-      subtitle: "Chiedete alla guida del museo — le risposte poggiano su 88 schede curate.",
+      subtitle: "Chiedete alla guida del museo — le risposte poggiano su 89 schede curate.",
       aiBadge: "Guida IA",
       disclaimer: "L'intelligenza artificiale compone le risposte solo dalle schede della collezione; le schede citate sono sempre vere. Il museo non inventa la storia.",
       startersTitle: "Da dove cominciamo?",
@@ -4762,7 +4762,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 fermata" : `${n} fermate`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Inizia il percorso",
-      coverNote: "I percorsi insieme coprono tutte le 88 schede della collezione.",
+      coverNote: "I percorsi insieme coprono tutte le 89 schede della collezione.",
       completed: "Completato",
       completedProgress: (done: number, total: number) =>
         `Percorsi completati: ${done} di ${total}`,
@@ -5017,7 +5017,7 @@ export const ui = {
     visual: {
       title: "Immagini simili",
       subtitle:
-        "Per struttura e colori dell'immagine — una piccola versione del modello «Search visually» del Rijksmuseum, che con 88 schede non ha bisogno di intelligenza artificiale.",
+        "Per struttura e colori dell'immagine — una piccola versione del modello «Search visually» del Rijksmuseum, che con 89 schede non ha bisogno di intelligenza artificiale.",
       openExhibit: "Apri una scheda simile",
       why: "Perché le immagini si somigliano?",
       whyText:

@@ -635,6 +635,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
     textEn:
       "In January 2026 Tone Kralj of Griblje celebrated his 98th birthday. At a full table of delicacies he was visited by the Red Cross, the fighters for NOB values and the Črnomelj pensioners — while the celebrant reported that he still helps with shelling hazelnuts and drying parsley, solves crosswords and plays cards with his great-grandchildren. In a village that gave Slovenia its oldest man, years are not counted — they are lived.",
   },
+  {
+    slug: "obcina-griblje",
+    textSi:
+      "Griblje so bile osemdeset let tudi občina: leta 1854 ena od štiriindvajsetih občin okraja Črnomelj, leta 1921 štiristo petintrideset prebivalcev s svojim županom. Potem jih je komasacija 1933 ukinila — in leta 1936 poslala z Dragoši pod občino Gradac ob Lahinji. Danes je vas spet na svojem: krajevna skupnost Griblje. Papirji se menjujejo; vas ostane.",
+    textEn:
+      "For eighty years Griblje was also a municipality: in 1854 one of the twenty-four municipalities of the Črnomelj district, in 1921 four hundred and thirty-five inhabitants with a mayor of their own. Then the 1933 amalgamation abolished it — and in 1936 sent it, together with Dragoši, under the Gradac municipality on the Lahinja. Today the village is on its own again: the Local Community of Griblje. Papers change; the village remains.",
+  },
 ];
 
 export function getMinuteStory(slug: string): MinuteStory | undefined {

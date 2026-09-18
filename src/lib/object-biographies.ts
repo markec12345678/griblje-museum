@@ -4437,6 +4437,71 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "obcina-griblje",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1854",
+        yearLabelEn: "1854",
+        sortYear: 1854,
+        textSi:
+          "Po reformi iz leta 1848 dežela Kranjska šteje 501 občin; v okraju Črnomelj jih je 24 — med njimi Griblje, z županom, odborom in pečatom.",
+        textEn:
+          "After the reform of 1848 the land of Carniola counts 501 municipalities; the Črnomelj district holds 24 — among them Griblje, with a mayor, a board and a seal.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1921",
+        yearLabelEn: "1921",
+        sortYear: 1921,
+        textSi:
+          "Ob popisu prebivalstva občina Griblje dobi svojo številko: 435 prebivalcev. Ureditev zdrži vse do prve svetovne vojne in še čez njo.",
+        textEn:
+          "At the census the Municipality of Griblje receives its number: 435 inhabitants. The arrangement endures until the First World War — and beyond it.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "11. 9. 1933",
+        yearLabelEn: "11 Sept. 1933",
+        sortYear: 1933,
+        textSi:
+          "Komasacija: iz 1069 dravskih občin nastane 377. Občina Griblje je razpuščena in priključena novi občini Adlešiči — skupaj s Tribuči in Zuniči.",
+        textEn:
+          "The amalgamation: from 1,069 Drava Banovina municipalities, 377 emerge. The Municipality of Griblje is dissolved and joined to the new Municipality of Adlešiči — together with Tribuče and Zuniči.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "21. 9. 1936",
+        yearLabelEn: "21 Sept. 1936",
+        sortYear: 1936,
+        textSi:
+          "Kraljevi ukaz (Sl. l. 78/36) iz občine Adlešiči izloči kraja Dragoši in Griblje ter ju priključi občini Gradac ob Lahinji — pod čigro streho vas ostane do vojne.",
+        textEn:
+          "A royal decree (Official Gazette 78/36) separates Dragoši and Griblje from the Adlešiči municipality and joins them to the Gradac municipality on the Lahinja — under whose roof the village stays until the war.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "1955 → danes",
+        yearLabelEn: "1955 → today",
+        sortYear: 1955,
+        textSi:
+          "Zrasla občina Črnomelj prevzame vas; ustava 1974 ji vrne del samostojnosti kot krajevno skupnost — danes sanira ceste in praznuje svoj praznik.",
+        textEn:
+          "The grown Municipality of Črnomelj takes over the village; the 1974 constitution returns part of its selfhood as a local community — today it repairs roads and celebrates its festival.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {

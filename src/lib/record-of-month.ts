@@ -330,6 +330,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
       noteEn:
         "A new school year begins in the museum classroom, too — the physical sister of this museum, grown from the same school benches.",
     },
+    {
+      slug: "obcina-griblje",
+      noteSi:
+        "September je mesec papirjev, ki so prenesli vas: 11. 9. 1933 komasacija razpusti občino Griblje, 21. 9. 1936 pa jo s Dragoši pošlje h Gradcu. Stoletje županovanja — mesec uprave.",
+      noteEn:
+        "September is the month of the papers that carried the village: on 11 Sept. 1933 the amalgamation dissolves the Municipality of Griblje; on 21 Sept. 1936 it sends it, with Dragoši, to Gradac. A century of self-rule — the month of administration.",
+    },
   ],
   /* ------------------------------ OKTOBER ----------------------------- */
   [

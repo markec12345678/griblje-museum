@@ -458,6 +458,13 @@ export const WALKS: Walk[] = [
           "The last stop is the census itself: Griblach 1468, Briglach 1490, 329 inhabitants today. Every number in this record is a someone or a something — we close the walk by counting the village.",
       },
       {
+        exhibitSlug: "obcina-griblje",
+        noteSi:
+          "In preden se poslovimo, še en papir z vaškim imenom: osemdeset let je bila ta vas občina — z županom in 435 dušami — preden so jo leta 1933 ukinili in leta 1936 poslali h Gradcu. Števke se menjujejo; ime ostane.",
+        noteEn:
+          "And before we part, one more paper bearing the village's name: for eighty years this village was a municipality — with a mayor and 435 souls — before it was abolished in 1933 and sent to Gradac in 1936. The numbers change; the name remains.",
+      },
+      {
         exhibitSlug: "td-griblje",
         noteSi:
           "In pred zadnjim postankom hišnik: Turistično društvo Griblje, ki drži koledar vasi — Pasuljado, žur, rally — in nosi ta muzej. Vas, ki se spominja sama, potrebuje nekoga, ki prinese koledar.",
