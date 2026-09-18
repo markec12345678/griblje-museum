@@ -106,6 +106,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
       noteEn:
         "The long evenings of February are genealogy season: the parish registers of Podzemelj, 1669–1947, are the archive where every Griblje name can be found.",
     },
+    {
+      slug: "konrad-barle",
+      noteSi:
+        "19. februarja 1875 se je v Podzemlju rodil Konrad Barle — čebelar, ki je Beli krajini prinesel AŽ-panj, in mož, ki je postavil prve temelje Belokranjskega muzeja. Februarska obletnica učiteljske hiše, iz katere je zrasel tudi ta muzej.",
+      noteEn:
+        "On 19 February 1875 Konrad Barle was born at Podzemelj — the beekeeper who brought the AŽ hive to Bela krajina, and the man who laid the first foundations of the Bela krajina museum. A February anniversary of the teaching house from which this museum too grew.",
+    },
   ],
   /* ------------------------------- MAREC ------------------------------ */
   [

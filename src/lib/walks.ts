@@ -681,6 +681,13 @@ export const WALKS: Walk[] = [
           "Behind the bench of these people stands a recorder: Janko Barle, a teacher's son from Podzemelj, took the village customs into the world — from his notes grew half of what we know about Bela krajina's customs.",
       },
       {
+        exhibitSlug: "konrad-barle",
+        noteSi:
+          "Jankov mlajši brat Konrad je ostal na tleh: učil je v Metliki in Beli krajini prinesel AŽ-panj — čebele, ki so spremenile vasi. In ko so leta 1949 ustanavljali Belokranjsko muzejsko društvo, je med ustanovnimi člani.",
+        noteEn:
+          "Janko's younger brother Konrad stayed on the ground: he taught in Metlika and brought the AŽ hive to Bela krajina — bees that changed the villages. And when the Bela krajina Museum Society was founded in 1949, he stood among the founding members.",
+      },
+      {
         exhibitSlug: "joze-dular",
         noteSi:
           "In mož, ki je spomin dodel v hišo: Jože Dular, trideset let Belokranjskega muzeja. Njegova knjižica o Županičevi plošči v Gribljah je dokument, da se je vas spomnila pravično.",

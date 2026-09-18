@@ -419,6 +419,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
       "His childhood smelled of the Kolpa: 'Happy, beautiful years,' he wrote decades later from Zagreb, where he was a canon, the archbishop's secretary and the reformer of Croatian church music. But Janko Barle, a teacher's son from Podzemelj, took Bela krajina with him: he published the wedding customs and the first study of the Easter eggs, and passed songs on to Štrekelj's collection of Slovene Folk Songs. And when no computer stirred in Europe, he compiled 3,000 Slovene plant names from old healing books — where Valvasor and Zois had stopped. Ethnologist, botanist, musician. All at once, all from one childhood by the river.",
   },
   {
+    slug: "konrad-barle",
+    textSi:
+      "Kot prvi belokranjski čebelar se je oprijel AŽ-panja — in Beli krajini odprl čebelarstvo nove dobe. Konrad Barle, rojen v Podzemlju med očetovim učiteljevanjem, je petintrideset let učil v Metliki: razširil je šolo na osem razredov, 1912 ustanovil čebelarsko podružnico (stoletnica 2012). In ko je leta 1949 pomagal ustanoviti Belokranjsko muzejsko društvo, je z Božom Račičem in Jožetom Dularjem sestavil prvo zbirko Belokranjskega muzeja. Vsak muzej v tej deželi stoji na čebelnjaku take hiše: sat, ki so ga začeli graditi Barleti, se še vedno piše.",
+    textEn:
+      "As the first beekeeper of Bela krajina he took up the AŽ hive — and opened the region's beekeeping to a new age. Konrad Barle, born at Podzemelj during his father's teaching years, taught in Metlika for thirty-five years: he expanded the school to eight grades, and in 1912 founded the beekeeping branch (centenary 2012). And when he helped found the Bela krajina Museum Society in 1949, he assembled the Bela krajina museum's first collection with Božo Račič and Jože Dular. Every museum in this land stands on the apiary of such a house: the comb the Barles began building is still being drawn.",
+  },
+  {
     slug: "joze-dular",
     textSi:
       "Trideset let je vodil Belokranjski muzej v Metliki — in petdeset let živel v isti hiši, na kateri mu je po smrti ploščo postavilo društvo, ki ga je imelo za predsednika. Jože Dular je bil pesnik nove romantike in pripovednik, a njegov najgloblji pečat je zgodovina: Metlika skozi stoletja, Semič, Adlešiči, gasilstvo, godba. Za Griblje je najpomembnejša tanka knjižica o Županičevi spominski plošči — dokument o dnevu, ko se je vas spomnila svojega največjega sina. Vsak muzej vasi, tudi ta digitalni, stoji na plečih takih mož. Dular jih je nosil trideset let.",

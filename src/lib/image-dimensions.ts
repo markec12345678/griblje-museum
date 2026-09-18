@@ -113,6 +113,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/zbul-cebula.jpg": { width: 1280, height: 960 },
   "/images/authentic/griblje-ravnina.jpg": { width: 1280, height: 857 },
   "/images/authentic/zeleni-jurij-1908.jpg": { width: 1280, height: 620 },
+
+  // 25. sklop: Konrad Barle — čebelnjak na Vrhu pri Komatarju (Boris Orel, SEM, 1952, javna last)
+  "/images/authentic/cebnjak-orel-1952.jpg": { width: 1033, height: 1054 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };

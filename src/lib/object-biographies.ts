@@ -3081,6 +3081,83 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
     ],
   },
   {
+    slug: "konrad-barle",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1875",
+        yearLabelEn: "1875",
+        sortYear: 1875,
+        textSi:
+          "Rojen 19. februarja v Podzemlju, med očetovim drugim učiteljevanjem; brat Janko je takrat star šest let.",
+        textEn:
+          "Born on 19 February at Podzemelj, during his father's second teaching term there; brother Janko was then six.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1880 → 1899",
+        yearLabelEn: "1880 → 1899",
+        sortYear: 1880,
+        textSi:
+          "Očetova šola kot vzor: vrt (1880) in čebelnjak (1882) ob podzemeljski šoli; učiteljišče v Ljubljani (1891–95), prva služba na Robu pri Velikih Laščah.",
+        textEn:
+          "The father's school as a model: the garden (1880) and apiary (1882) beside the Podzemelj school; the teachers' college in Ljubljana (1891–95), first post at Rob pri Velikih Laščah.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1899 → 1934",
+        yearLabelEn: "1899 → 1934",
+        sortYear: 1899,
+        textSi:
+          "Metlika: petintrideset let pouka; od 1920 upravitelj, od 1931 šolski nadzornik; štirirazrednica postane osemrazrednica (1919–21), oder na šoli 1925.",
+        textEn:
+          "Metlika: thirty-five years of teaching; head from 1920, school supervisor from 1931; the four-grade school becomes an eight-grade one (1919–21), the school stage of 1925.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1898 → 1940-ta",
+        yearLabelEn: "1898 → 1940s",
+        sortYear: 1898,
+        textSi:
+          "Čebele: prvi belokranjski čebelar z AŽ-panjem; opazovalna postaja Metlika (1908, ena od šestih na Kranjskem), podružnica 1912, Črnomelj 1919, poročila v Slovenskem čebelarju.",
+        textEn:
+          "The bees: the first AŽ-hive beekeeper of Bela krajina; the Metlika observation station (1908, one of six in Carniola), the branch of 1912, Črnomelj 1919, reports in the Slovenski čebelar.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "1933 → 2012",
+        yearLabelEn: "1933 → 2012",
+        sortYear: 1933,
+        textSi:
+          "Muzej: Muzejski odsek pri Tujsko prometnem društvu (1933), ustanovni član Belokranjskega muzejskega društva (1949); metliška podružnica praznuje stoletnico (1912–2012, spominski članek Zvonka Rusa).",
+        textEn:
+          "The museum: the Museum Section at the Touring Club (1933), founding member of the Bela krajina Museum Society (1949); the Metlika branch keeps its centenary (1912–2012, Zvonko Rus's memorial article).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "1951 → danes",
+        yearLabelEn: "1951 → present",
+        sortYear: 2026,
+        textSi:
+          "Umre 15. julija 1951, v letu odprtja Belokranjskega muzeja; pokopan v Rosalnicah pri Treh farah. Etnografska fotografija SEM (1952) dokumentira čebelnjake njegove dobe — glavna slika zapisa.",
+        textEn:
+          "He dies on 15 July 1951, in the year the Bela krajina museum opened; buried at Rosalnice by the Three Churches. The SEM ethnographic photograph (1952) documents the apiaries of his age — the record's main image.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 4,
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     phases: [
       {
