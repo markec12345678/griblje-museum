@@ -18,6 +18,7 @@ export type StatKind =
   | "open"
   | "walk"
   | "guide"
+  | "curator"
   | "audio"
   | "ar"
   | "download"

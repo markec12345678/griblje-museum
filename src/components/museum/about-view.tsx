@@ -58,6 +58,7 @@ type StatsSummary = {
   visits: { total: number; today: number; month: number };
   byLang: Record<string, number>;
   guideAsks: number;
+  curatorAsks: number;
   audioPlays: number;
   arOpens: number;
   topExhibits: { slug: string; opens: number }[];
@@ -224,12 +225,13 @@ export function AboutView({ exhibits }: { exhibits: ExhibitDTO[] }) {
             {t.statsView.title}
           </h2>
           <p className="mt-2 max-w-2xl text-muted-foreground">{t.statsView.subtitle}</p>
-          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {[
               { value: stats.visits.total, label: t.statsView.visitsTotal },
               { value: stats.visits.month, label: t.statsView.visitsMonth },
               { value: stats.visits.today, label: t.statsView.visitsToday },
               { value: stats.guideAsks, label: t.statsView.guideAsks },
+              { value: stats.curatorAsks, label: t.statsView.curatorAsks },
               { value: stats.audioPlays, label: t.statsView.audioPlays },
             ].map((item) => (
               <div

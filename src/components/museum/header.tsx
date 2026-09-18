@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { Accessibility, Moon, Search, Sun, Menu, Landmark, MessageCircleQuestion, RotateCcw, Globe, Check } from "lucide-react";
+import { Accessibility, Moon, Search, Sun, Menu, Landmark, MessageCircleQuestion, RotateCcw, Globe, Check, Scale } from "lucide-react";
 import { useLang, LANG_CODES, LANG_NAMES, type Lang } from "@/lib/i18n";
 import { useA11y } from "@/lib/a11y";
 import { cn } from "@/lib/utils";
@@ -104,11 +104,13 @@ export function Header({
   onNavigate,
   onOpenSearch,
   onOpenGuide,
+  onOpenCurator,
 }: {
   view: MuseumView;
   onNavigate: (view: MuseumView) => void;
   onOpenSearch: () => void;
   onOpenGuide: () => void;
+  onOpenCurator: () => void;
 }) {
   const { t, lang, setLang } = useLang();
   const { customized, reset } = useA11y();
@@ -200,6 +202,19 @@ export function Header({
             aria-keyshortcuts="Control+G"
           >
             <MessageCircleQuestion className="h-4.5 w-4.5" aria-hidden="true" />
+          </Button>
+
+          {/* AI kustos — dokazni odgovori (Ctrl+J); na majhnih zaslonih
+              dosegljiv prek hamburger-menija */}
+          <Button
+            variant="outline"
+            size="icon"
+            className="hidden size-11 lg:inline-flex"
+            onClick={onOpenCurator}
+            aria-label={t.curator.openLabel}
+            aria-keyshortcuts="Control+J"
+          >
+            <Scale className="h-4.5 w-4.5" aria-hidden="true" />
           </Button>
 
           {/* Enotno iskanje */}
@@ -380,6 +395,17 @@ export function Header({
               >
                 <MessageCircleQuestion className="h-4.5 w-4.5" aria-hidden="true" />
                 {t.guide.title}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setMenuOpen(false);
+                  onOpenCurator();
+                }}
+                className="flex min-h-11 w-full items-center gap-2.5 rounded-md px-3 text-left text-base font-medium text-primary transition-colors hover:bg-primary/10"
+              >
+                <Scale className="h-4.5 w-4.5" aria-hidden="true" />
+                {t.curator.title}
               </button>
             </li>
           </ul>

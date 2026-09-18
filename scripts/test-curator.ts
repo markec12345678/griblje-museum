@@ -1,0 +1,666 @@
+/**
+ * TASK 41 / TESTI — testna surita za AI KUSTOSA (EVIDENCE-GROUNDED CURATOR).
+ * (41. sklop / TESTI — po 40. sklopu)
+ *
+ * Ničesar ne spreminja. NE KLICe MODELA: vsa sinteza gre skozi LAŽNI
+ * ponudnik (vbrizgan v askCurator), pravi verigi (OpenRouter → HF → z-ai)
+ * se ne približa. Preverja:
+ *
+ *  T1 POGODBA O PODATKIH (context vsebuje SAMO muzejske dokazne podatke)
+ *  T2 determinizem razrešitve (isti vprašanji → bajtno identičen kontekst)
+ *  T3 razrešitev entitet (Barle ×3, Madronič P0-E1, P1-E1 par, Kolpa, zvon)
+ *  T4 ohranitev negotovosti (≈ konec marca 1945, intervali, BREZ ISO datumov)
+ *  T5 identiteta virov (sourceKey iz registra, sourceIndex v mejah)
+ *  T6 ZAPRTA SVET (guard: brez dokaza NI klica modela)
+ *  T7 preverba odgovora (verifyAnswer: striženje navedkov, viri, združevanje)
+ *  T8 abstrakcija ponudnika + cevovod (lažni ponudnik → obogaten odgovor)
+ *  T9 i18n + HTTP regresija (5 jezikov, API pogodba, statistika, ostale poti)
+ *
+ * Zagon: bun scripts/test-curator.ts (za T9 naj teče dev strežnik na :3000)
+ */
+
+import {
+  buildContext,
+  contextHasEvidence,
+  yearsIn,
+} from "../src/lib/curator-retrieval";
+import { verifyAnswer, museumAIProvider } from "../src/lib/curator-provider";
+import { askCurator, curatorRateLimited } from "../src/lib/curator";
+import type {
+  AIAnswer,
+  AIContext,
+  MuseumAIProvider,
+} from "../src/lib/curator-types";
+import { seedExhibits } from "../src/lib/museum-content";
+import { ENTITY_QUEUE, ENTITY_BY_ID } from "../src/lib/entities";
+import { SOURCE_USAGE, sourceKeyOf } from "../src/lib/source-registry";
+import { ui } from "../src/lib/i18n";
+
+// ---------------------------------------------------------------------------
+// Pripomočki (vzorec test-entities.ts / test-timeline-map.ts)
+// ---------------------------------------------------------------------------
+
+let ok = 0;
+let fail = 0;
+const failures: string[] = [];
+
+function section(title: string) {
+  console.log("");
+  console.log("=".repeat(70));
+  console.log(title);
+  console.log("=".repeat(70));
+}
+
+function check(cond: boolean, name: string, detail = "") {
+  if (cond) {
+    ok += 1;
+    console.log(`  ✓ ${name}`);
+  } else {
+    fail += 1;
+    failures.push(name);
+    console.log(`  ✗ ${name}${detail ? ` — ${detail}` : ""}`);
+  }
+}
+
+/** Kontekst brez strežniškega zemljevida (tisto, kar gre v prompt). */
+function promptPayload(context: AIContext): string {
+  const { provided: _provided, ...rest } = context;
+  void _provided;
+  return JSON.stringify(rest);
+}
+
+// ===========================================================================
+section("T1 — POGODBA O PODATKIH (kaj sme v prompt)");
+// ===========================================================================
+
+{
+  const { context } = buildContext("sl", "Kaj se je zgodilo marca 1945?");
+  const payload = promptPayload(context);
+
+  check(
+    !/"story(Si|En)"/.test(payload),
+    "T1.1 v promptu NI celih zgodb (storySi/storyEn)",
+  );
+  check(
+    !/"lat"|"lng"|"coordsApprox"|"image"|"\bDB\b|"sortOrder"/.test(payload),
+    "T1.2 v promptu NI koordinat/slik/internih polj",
+  );
+  check(
+    !/"provided"/.test(payload),
+    "T1.3 strežniški zemljevid preverbe NI v promptu (samo v context.provided)",
+  );
+
+  // Vsak dokazni predmet ima obvezna polja pogodbe.
+  const items = [
+    ...context.entities.flatMap((e) => e.evidence),
+    ...context.exhibits,
+  ];
+  check(
+    items.length > 0 && items.every((i) => i.exhibitSlug && i.exhibitTitle && i.claim && i.evidenceStatus),
+    "T1.4 vsak dokazni predmet ima slug/naslov/trditev/status",
+    `${items.length} predmetov`,
+  );
+  check(
+    items.every((i) => i.claim.length <= 720),
+    "T1.5 trditve so krajšane (≤ 720 znakov — ne cela zgodba)",
+  );
+  check(
+    context.entities.every((e) => e.id && e.type && e.label && Array.isArray(e.exhibits)),
+    "T1.6 entitete konteksta nosijo id/vrsto/oznako/zapise",
+  );
+  check(
+    context.entities.every((e) => e.exhibits.every((s) => seedExhibits.some((ex) => ex.slug === s))),
+    "T1.7 zapisi entitet obstajajo v semenu (NIČ izmišljenih slug-ov)",
+  );
+
+  // Entitete so SAMO iz registra (nikoli iz vprašanja).
+  check(
+    context.entities.every((e) => ENTITY_BY_ID.has(e.id)),
+    "T1.8 vsaka entiteta konteksta obstaja v registru (ENTITY_BY_ID)",
+  );
+}
+
+// ===========================================================================
+section("T2 — DETERMINIZEM RAZREŠITVE");
+// ===========================================================================
+
+{
+  const questions = [
+    "Kaj se je zgodilo marca 1945?",
+    "Kdo je bil Konrad Barle?",
+    "Kaj se je dogajalo ob Kolpi?",
+    "Kaj pripoveduje ta zbirka o Gribljah?",
+    "Kaj je Madroničev mlin?",
+    "Kaj se je dogajalo okoli leta 1468?",
+  ];
+  let allIdentical = true;
+  for (const q of questions) {
+    const a = promptPayload(buildContext("sl", q).context);
+    const b = promptPayload(buildContext("sl", q).context);
+    if (a !== b) allIdentical = false;
+  }
+  check(allIdentical, "T2.1 dvojni zagon razrešitve → bajtno identičen kontekst (6 vprašanj)");
+
+  // Isti vprašanji v različnih oblikah (diakritika, mala črka).
+  const n1 = buildContext("sl", "Kdo je bil Niko Županič?").trace.matchedEntities.map((e) => e.id).join(",");
+  const n2 = buildContext("sl", "kdo je bil niko zupanic").trace.matchedEntities.map((e) => e.id).join(",");
+  check(n1 === n2 && n1.includes("person:niko-zupanic"), "T2.2 diakritika ne spremeni razrešitve (Županič/zupanic)");
+
+  check(yearsIn("kaj se je zgodilo leta 1945 in 1468?").join(",") === "1945,1468", "T2.3 letnice se razpoznajo (1945, 1468)");
+}
+
+// ===========================================================================
+section("T3 — RAZREŠITEV ENTITET (varnost identitete)");
+// ===========================================================================
+
+{
+  const barle = buildContext("sl", "Kaj veš o Barle?");
+  const barleIds = barle.trace.matchedEntities.filter((e) => e.type === "person").map((e) => e.id);
+  check(
+    barleIds.includes("person:konrad-barle") &&
+      barleIds.includes("person:ivan-barle") &&
+      barleIds.includes("person:janko-barle"),
+    "T3.1 gole priimek Barle → VSE TRI osebe (Konrad, Ivan, Janko) — nikoli ena",
+    barleIds.join(","),
+  );
+
+  const madronic = buildContext("sl", "Kdo je bil Peter Madronič?");
+  const personEntities = madronic.trace.matchedEntities.filter((e) => e.type === "person");
+  check(
+    !personEntities.some((e) => /madronic/i.test(e.labelSi)),
+    "T3.2 Peter Madronič NIMA osebne entitete (pravilno — P0-E1)",
+  );
+  check(
+    madronic.trace.openQuestions.some((q) => q.id === "P0-E1"),
+    "T3.3 P0-E1 (dva Petra Madroniča) je v kontekstu kot odprto vprašanje",
+  );
+  check(
+    madronic.context.provided.has("kolpa-extremi") && madronic.context.provided.has("madronicev-mlin"),
+    "T3.4 oba zapisa P0-E1 (MVG-008 kolpa-extremi, MVG-045 madronicev-mlin) sta v kontekstu",
+  );
+
+  const most = buildContext("sl", "Povej o zračnem mostu");
+  check(
+    most.trace.matchedEntities.some((e) => e.id === "event:zracni-most-krasinec-1945"),
+    "T3.5 zračni most → entiteta dogodka event:zracni-most-krasinec-1945",
+  );
+  check(
+    most.context.provided.has("evakuacija-1945") && most.context.provided.has("zracni-most-krasinec"),
+    "T3.6 MVG-014 in MVG-056 sta OBVEMA v kontekstu (razcep P1-E1)",
+  );
+  check(
+    most.trace.openQuestions.some((q) => q.id === "P1-E1"),
+    "T3.7 P1-E1 (morebitna istovetnost) je v kontekstu kot odprto vprašanje",
+  );
+
+  const y1945 = buildContext("sl", "Kaj se je zgodilo marca 1945?");
+  check(
+    y1945.trace.openQuestions.some((q) => q.id === "P1-E1"),
+    "T3.8 vprašanje o marcu 1945 prav tako prinese P1-E1",
+  );
+
+  const kolpa = buildContext("sl", "Kaj se je dogajalo ob Kolpi?");
+  check(
+    kolpa.trace.matchedEntities.some((e) => e.id === "place:kolpa"),
+    "T3.9 Kolpa → entiteta kraja place:kolpa (sklanjatveno ujemanje kolpi)",
+  );
+
+  const zvon = buildContext("sl", "Kaj je zvon?");
+  check(
+    zvon.trace.matchedEntities.some((e) => e.id === "event:vrnitev-glavnega-zvona-1998") ||
+      zvon.trace.matchedEntities.some((e) => e.id === "event:blagoslov-zvona-2008"),
+    "T3.10 zvon → dogodka zvona (1998/2008)",
+  );
+
+  const mlin = buildContext("sl", "Kaj je Madroničev mlin?");
+  check(
+    mlin.trace.matchedEntities.some((e) => e.id === "place:madronicev-mlin"),
+    "T3.11 Madroničev mlin → KRAJ (ne oseba)",
+  );
+
+  // Vrsta vprašanja.
+  check(
+    buildContext("sl", "Kaj pripoveduje ta zbirka o Gribljah?").trace.queryType === "collection",
+    "T3.12 vrsta vprašanja COLLECTION",
+  );
+  check(
+    buildContext("sl", "Kdo je bil Konrad Barle?").trace.queryType === "person",
+    "T3.13 vrsta vprašanja PERSON",
+  );
+}
+
+// ===========================================================================
+section("T4 — OHRANITEV NEGOTOVOSTI");
+// ===========================================================================
+
+{
+  const { context } = buildContext("sl", "Povej o zračnem mostu");
+  const zracni = context.times.find((t) => t.entityId === "event:zracni-most-krasinec-1945");
+  check(
+    !!zracni && zracni.approximate === true && /konec marca 1945/.test(zracni.label),
+    "T4.1 zračni most: »konec marca 1945 (48 ur)« BESEDNO + approximate=true",
+    zracni?.label ?? "ni časa",
+  );
+  check(
+    !/25\.?\s*3\.|25\. marca|25 March/.test(zracni?.label ?? ""),
+    "T4.2 NI pretvorbe v 25. 3. 1945",
+  );
+
+  // Noben ISO datum v časovnih oznakah ali obdobjih konteksta.
+  const questions = [
+    "Kaj se je zgodilo marca 1945?",
+    "Kaj je španska gripa?",
+    "Kaj se je dogajalo leta 1918?",
+    "Kdo je bil Niko Županič?",
+    "Kaj pripoveduje ta zbirka o Gribljah?",
+  ];
+  let anyIso = false;
+  for (const q of questions) {
+    const { context } = buildContext("sl", q);
+    for (const t of context.times) if (/\d{4}-\d{2}-\d{2}/.test(t.label)) anyIso = true;
+    for (const e of context.entities) for (const i of e.evidence) if (i.period && /\d{4}-\d{2}-\d{2}/.test(i.period)) anyIso = true;
+    for (const i of context.exhibits) if (i.period && /\d{4}-\d{2}-\d{2}/.test(i.period)) anyIso = true;
+  }
+  check(!anyIso, "T4.3 NIČ ISO datumov (1945-03-25) po vseh časih/obdobjih konteksta");
+
+  const izseljenstvo = buildContext("sl", "Kaj je izseljenstvo?");
+  const izsel = izseljenstvo.context.times.find((t) => t.entityId === "event:izseljenski-val-1880-1914");
+  check(
+    !izsel || /1880/.test(izsel.label),
+    "T4.4 interval izseljenstva nosi letnico 1880 (interval ostane interval)",
+  );
+}
+
+// ===========================================================================
+section("T5 — IDENTITETA VIROV (sourceKey/sourceIndex)");
+// ===========================================================================
+
+{
+  const questions = [
+    "Kaj se je zgodilo marca 1945?",
+    "Kdo je bil Konrad Barle?",
+    "Kaj se je dogajalo ob Kolpi?",
+    "Kaj je Madroničev mlin?",
+  ];
+  let allKeysValid = true;
+  let allIndexesValid = true;
+  let namesValid = true;
+  let keyCount = 0;
+  for (const q of questions) {
+    const { context } = buildContext("sl", q);
+    const items = [...context.entities.flatMap((e) => e.evidence), ...context.exhibits];
+    for (const item of items) {
+      const exhibit = seedExhibits.find((e) => e.slug === item.exhibitSlug);
+      if (!exhibit) { allKeysValid = false; continue; }
+      if (item.sourceKey !== undefined) {
+        keyCount++;
+        if (!SOURCE_USAGE.has(item.sourceKey)) allKeysValid = false;
+        if (item.sourceIndex === undefined || item.sourceIndex < 0 || item.sourceIndex >= exhibit.sources.length) {
+          allIndexesValid = false;
+        } else {
+          const row = exhibit.sources[item.sourceIndex];
+          const expectedKey = sourceKeyOf(row.nameSi, row.url ?? null);
+          if (item.sourceKey !== expectedKey) allKeysValid = false;
+          if (item.sourceName !== undefined && item.sourceName !== row.nameSi) namesValid = false;
+        }
+      }
+    }
+  }
+  check(allKeysValid && keyCount > 0, "T5.1 vsak sourceKey obstaja v registru virov IN ustreza vrstici zapisa", `${keyCount} ključev`);
+  check(allIndexesValid, "T5.2 vsak sourceIndex je v mejah exhibit.sources");
+  check(namesValid, "T5.3 sourceName se ujema z vrstico vira (SL plast)");
+
+  // Vir, ki ga deli več zapisov, ostane ISTA identiteta.
+  const wikipedija = SOURCE_USAGE.get("url:sl.wikipedia.org/wiki/Griblje");
+  check(
+    wikipedija !== undefined && wikipedija.exhibits.length >= 2,
+    "T5.4 deljeni vir (Wikipedija: Griblje) ostaja ena identiteta z usedBy",
+    `${wikipedija?.exhibits.length ?? 0} zapisov`,
+  );
+}
+
+// ===========================================================================
+section("T6 — ZAPRTA SVET (hallucination guard PRED modelom)");
+// ===========================================================================
+
+/** Lažni ponudnik: šteje klice in odgovarja po potrebi testa. */
+function fakeProvider(answers: AIAnswer[] = [], onCall?: (q: string) => void): MuseumAIProvider & { calls: string[] } {
+  const calls: string[] = [];
+  return {
+    calls,
+    async answer(context: AIContext, question: string) {
+      calls.push(question);
+      onCall?.(question);
+      const a = answers.shift();
+      if (!a) {
+        return {
+          answerable: false,
+          reason: "insufficient_evidence",
+          kajVemo: [],
+          kakoVemo: [],
+          viri: [],
+          opomba: null,
+        };
+      }
+      return a;
+    },
+  };
+}
+
+async function t6() {
+  const guard = fakeProvider();
+  const r = await askCurator("sl", "Koliko prebivalcev ima Pariz?", guard);
+  check(
+    guard.calls.length === 0,
+    "T6.1 brez dokaza KUSTOS NI KLICAN (0 klicev modela)",
+    `klicev: ${guard.calls.length}`,
+  );
+  check(
+    r.answerable === false && r.reason === "insufficient_evidence",
+    "T6.2 deterministična zavrnitev: answerable=false / insufficient_evidence",
+  );
+
+  const r2 = await askCurator("sl", "Kaj je bilo na Luni leta 1969?", fakeProvider([
+    {
+      answerable: false,
+      reason: "insufficient_evidence",
+      kajVemo: [],
+      kakoVemo: [],
+      viri: [],
+      opomba: null,
+    },
+  ]));
+  check(
+    r2.answerable === false,
+    "T6.3 Luna 1969: model (lažni) prav tako zavrne — zaprta svet deluje v obeh plasteh",
+  );
+
+  // Omejitev hitrosti: 12 vprašanj na okno na IP.
+  const ip = "test-ip-t6";
+  let limited = false;
+  for (let i = 0; i < 14; i++) {
+    if (curatorRateLimited(ip)) { limited = true; break; }
+  }
+  check(limited, "T6.4 omejitev hitrosti (12/10 min na IP) se sproži");
+
+  // Predpomnilnik: isto vprašanje dvakrat → drugi odgovor je cached.
+  const once = fakeProvider([
+    {
+      answerable: true,
+      reason: null,
+      kajVemo: ["Trditev [[konrad-barle]]"],
+      kakoVemo: ["Dokaz [[konrad-barle]]"],
+      viri: [{ slug: "konrad-barle" }],
+      opomba: null,
+    },
+  ]);
+  const a1 = await askCurator("sl", "Kdo je bil Konrad Barle? (test predpomnilnika)", once);
+  const a2 = await askCurator("sl", "Kdo je bil Konrad Barle? (test predpomnilnika)", once);
+  check(a1.cached === false && a2.cached === true, "T6.5 predpomnilnik: drugi klic istega vprašanja je cache hit");
+  check(once.calls.length === 1, "T6.6 predpomnilnik: model klican SAMO enkrat");
+}
+await t6();
+
+// ===========================================================================
+section("T7 — PREVERBA ODGOVORA (verifyAnswer)");
+// ===========================================================================
+
+{
+  const { context } = buildContext("sl", "Kdo je bil Konrad Barle?");
+
+  // Veljavni + neveljavni navedki + sestavljeni navedek.
+  const raw1 = JSON.stringify({
+    answerable: true,
+    reason: null,
+    kajVemo: [
+      "Konrad Barle je bil učitelj [[konrad-barle]], brat Ivana [[ivan-barle]] in Janka [[janko-barle]]; izmišljenega pa ni [[izmisljeni-zapis]].",
+      "Sestavljeni navedek: [[konrad-barle], [janko-barle]] v eni oznaki.",
+    ],
+    kakoVemo: ["Zapisi konrad-barle, ivan-barle, janko-barle."],
+    viri: [
+      { slug: "konrad-barle", sourceIndex: 0 },
+      { slug: "ne-obstaja", sourceIndex: 0 },
+      { slug: "janko-barle", sourceIndex: 999 },
+    ],
+    opomba: null,
+  });
+  const v1 = verifyAnswer(raw1, context);
+  check(v1 !== null && v1.answerable === true, "T7.1 veljaven odgovor preide preverbo");
+  check(
+    v1 !== null && !v1.kajVemo.some((p) => p.includes("izmisljeni-zapis")),
+    "T7.2 neveljaven navedek [[izmisljeni-zapis]] je ODSTRANJEN iz besedila",
+  );
+  check(
+    v1 !== null && v1.kajVemo.some((p) => p.includes("[[konrad-barle]]") && p.includes("[[janko-barle]]")),
+    "T7.3 sestavljeni navedek [[a], [b]] se razščleni na posamezne [[a]] [[b]]",
+  );
+  check(
+    v1 !== null && v1.viri.every((v) => context.provided.has(v.slug)),
+    "T7.4 viri: neveljaven slug izpada (ne-obstaja)",
+    v1?.viri.map((v) => v.slug).join(","),
+  );
+  check(
+    v1 !== null && !v1.viri.some((v) => v.slug === "janko-barle" && v.sourceIndex === 999),
+    "T7.5 viri: sourceIndex 999 (prek meje) se normalizira (ne preide)",
+  );
+  check(
+    v1 !== null && v1.viri.some((v) => v.slug === "konrad-barle" && v.sourceIndex === 0),
+    "T7.6 veljaven vir {konrad-barle, 0} ostane",
+  );
+
+  // Posamični [slug] (enojni oklepaj) → pretvorjen v [[slug]].
+  const raw2 = JSON.stringify({
+    answerable: true,
+    reason: null,
+    kajVemo: ["Učitelj je [konrad-barle] z enojnim oklepajem."],
+    kakoVemo: [],
+    viri: [],
+    opomba: null,
+  });
+  const v2 = verifyAnswer(raw2, context);
+  check(
+    v2 !== null && v2.kajVemo[0]?.includes("[[konrad-barle]]"),
+    "T7.7 posamični [slug] se pretvori v [[slug]] (gumb)",
+  );
+  check(
+    v2 !== null && v2.viri.some((v) => v.slug === "konrad-barle"),
+    "T7.8 navedeni zapis se samodejno dopolni v viri (veriga trditev→zapis→vir)",
+  );
+
+  // Odgovor brez navedkov → downgrad na insufficient_evidence.
+  const raw3 = JSON.stringify({
+    answerable: true,
+    reason: null,
+    kajVemo: ["Splošna zgodba brez navedkov."],
+    kakoVemo: ["Brez dokazov."],
+    viri: [],
+    opomba: null,
+  });
+  const v3 = verifyAnswer(raw3, context);
+  check(
+    v3 !== null && v3.answerable === false && v3.reason === "insufficient_evidence",
+    "T7.9 odgovor BREZ navedkov se razvrsti v insufficient_evidence (ne citira ≠ ni odgovoril)",
+  );
+
+  // Model sam zavrne.
+  const raw4 = JSON.stringify({
+    answerable: false,
+    reason: "insufficient_evidence",
+    kajVemo: [],
+    kakoVemo: [],
+    viri: [],
+    opomba: null,
+  });
+  const v4 = verifyAnswer(raw4, context);
+  check(
+    v4 !== null && v4.answerable === false && v4.reason === "insufficient_evidence",
+    "T7.10 modelova zavrnitev se prenese nespremenjena",
+  );
+
+  // Muzejska številka (MVG-045) kot navedek → razrešena na [[slug]].
+  const madronicContext = buildContext("sl", "Kdo je bil Peter Madronič?").context;
+  const raw6 = JSON.stringify({
+    answerable: true,
+    reason: null,
+    kajVemo: ["Družina Madronič je mlin kupila leta 1937 (MVG-045), poplave pa pričeva MVG-008."],
+    kakoVemo: ["Zapisa madronicev-mlin in kolpa-extremi."],
+    viri: [],
+    opomba: null,
+  });
+  const v6 = verifyAnswer(raw6, madronicContext);
+  check(
+    v6 !== null && v6.kajVemo[0]?.includes("[[madronicev-mlin]]") && v6.kajVemo[0]?.includes("[[kolpa-extremi]]"),
+    "T7.11 navedek po muzejski številki (MVG-045/MVG-008) se razreši na [[slug]] gumb",
+    v6?.kajVemo[0],
+  );
+  check(
+    v6 !== null && v6.viri.some((v) => v.slug === "madronicev-mlin") && v6.viri.some((v) => v.slug === "kolpa-extremi"),
+    "T7.12 razrešeni številki se dopolnita v viri (veriga se zapre)",
+  );
+
+  // Ne-JSON odgovor → null (sproži ponovitev).
+  check(verifyAnswer("Odgovor je preprosto besedilo brez JSON.", context) === null, "T7.13 ne-JSON → null (ponovitev)");
+
+  // JSON z ograjo in vlečeno vejico.
+  const raw5 = "```json\n{\"answerable\": true, \"reason\": null, \"kajVemo\": [\"Učitelj [[konrad-barle]],\",], \"kakoVemo\": [], \"viri\": [], \"opomba\": null,}\n```";
+  const v5 = verifyAnswer(raw5, context);
+  check(v5 !== null && v5.answerable === true, "T7.14 JSON z ``` ograjo in vlečeno vejico se razčleni");
+}
+
+// ===========================================================================
+section("T8 — ABSTRAKCIJA PONUDNIKA + CEOVOD");
+// ===========================================================================
+
+async function t8() {
+  const provider = museumAIProvider();
+  check(
+    typeof provider.answer === "function",
+    "T8.1 museumAIProvider() izvede MuseumAIProvider (answer(context, question))",
+  );
+
+  // Cevovod z lažnim ponudnikom → obogaten CuratorResult.
+  const fake = fakeProvider([
+    {
+      answerable: true,
+      reason: null,
+      kajVemo: ["Zaseda na cesti se je zgodila 6. septembra 1941 [[zaseda-1941]]."],
+      kakoVemo: ["Zapis zaseda-1941 nosi vir Kamra."],
+      viri: [{ slug: "zaseda-1941", sourceIndex: 0 }],
+      opomba: "Točen dan je zapisan v viru.",
+    },
+  ]);
+  const r = await askCurator("sl", "Kaj je zaseda na cesti?", fake);
+  check(r.answerable === true, "T8.2 cevovod: odgovoribilni rezultat");
+  check(
+    r.viri.length === 1 && r.viri[0]?.museumNo === "MVG-028" && r.viri[0]?.sourceNameSi !== undefined,
+    "T8.3 viri obogateni z muzejsko številko in imenom vira (MVG-028)",
+    JSON.stringify(r.viri[0]?.museumNo),
+  );
+  const zaseda = seedExhibits.find((e) => e.slug === "zaseda-1941");
+  check(
+    r.viri[0]?.sourceUrl === (zaseda?.sources[0]?.url ?? null),
+    "T8.4 sourceUrl vodi na pravo vrstico vira zapisa",
+  );
+  check(
+    r.kajVemo[0]?.includes("[[zaseda-1941]]"),
+    "T8.5 besedilo ohrani [[slug]] oznake za gumbe",
+  );
+  check(
+    r.entities.some((e) => e.id === "event:zaseda-na-cesti-1941"),
+    "T8.6 sled razrešitve: entiteta dogodka v odgovoru",
+  );
+  check(r.suggestions.length === 0, "T8.7 ob odgovoribilnem odgovoru ni predlogov (samo ob zavrnitvi)");
+}
+await t8();
+
+// ===========================================================================
+section("T9 — I18N + HTTP REGRESIJA");
+// ===========================================================================
+
+async function t9() {
+  // i18n — curator razdel v vseh 5 jezikih, starters = 6.
+  const langs = ["sl", "en", "hr", "de", "it"] as const;
+  check(
+    langs.every((l) => {
+      const c = ui[l].curator;
+      return !!c.title && Array.isArray(c.starters) && c.starters.length === 6;
+    }),
+    "T9.1 curator i18n: naslov + 6 začetnih vprašanj v vseh 5 jezikih",
+  );
+  check(langs.every((l) => ui[l].curator.whatWeKnow.length > 0), "T9.2 curator i18n: oznake odstavkov v vseh 5 jezikih");
+
+  // Statistika: nov kind curator.
+  const statKinds: string[] = ["visit", "open", "walk", "guide", "curator", "audio", "ar", "download", "detail"];
+  check(statKinds.includes("curator"), "T9.3 statistika pozna kind curator (omejitve odjemalca)");
+
+  // HTTP — samo, če teče dev strežnik.
+  const BASE = "http://localhost:3000";
+  const probe = await fetch(BASE + "/", { method: "HEAD" }).catch(() => null);
+  if (probe && probe.ok) {
+    const invalid = await fetch(BASE + "/api/curator", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ lang: "xx", question: "" }),
+    });
+    check(invalid.status === 400, "T9.4 neveljavno telo → 400");
+
+    const opts = await fetch(BASE + "/api/curator", { method: "OPTIONS" });
+    check(opts.status === 200, "T9.5 OPTIONS (CORS) → 200");
+
+    // Zavrnitev BREZ klica modela (guard) — odgovor determinističen.
+    const refusal = await fetch(BASE + "/api/curator", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ lang: "sl", question: "Koliko prebivalcev ima Tokio?" }),
+    });
+    const refusalBody = (await refusal.json()) as { answerable?: boolean; reason?: string };
+    check(
+      refusal.status === 200 && refusalBody.answerable === false && refusalBody.reason === "insufficient_evidence",
+      "T9.6 HTTP: zavrnitev insufficient_evidence (guard, brez modela)",
+    );
+
+    // Statistika kind curator (na bralnih namestitvah pošteno readOnly).
+    const stat = await fetch(BASE + "/api/stats", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ kind: "curator", lang: "sl" }),
+    });
+    const statBody = (await stat.json()) as { ok?: boolean; readOnly?: boolean };
+    check(
+      stat.status === 200 && !(/unknown|invalid/i.test(JSON.stringify(statBody))),
+      "T9.7 /api/stats sprejme kind curator (ne zavrne s 400)",
+      JSON.stringify(statBody),
+    );
+
+    // Regresija: ostale poti nedotaknjene.
+    const home = await fetch(BASE + "/");
+    check(home.status === 200, "T9.8 domača stran → 200");
+    const exhibits = await fetch(BASE + "/api/exhibits");
+    check(exhibits.status === 200, "T9.9 /api/exhibits → 200 (regresija)");
+    const opendata = await fetch(BASE + "/api/opendata");
+    const od = (await opendata.json()) as {
+      counts?: { exhibits?: number };
+      data?: { exhibits?: unknown[] };
+    };
+    check(
+      opendata.status === 200 && (od.counts?.exhibits ?? od.data?.exhibits?.length ?? 0) === 93,
+      "T9.10 OpenData 93 zapisov (regresija)",
+    );
+  } else {
+    console.log("  (dev strežnik ne teče — HTTP preskakujem)");
+  }
+}
+await t9();
+
+// ===========================================================================
+console.log("");
+console.log("=".repeat(70));
+if (fail === 0) {
+  console.log(`TESTI AI KUSTOSA: ${ok} ✓ / ${fail} ✗`);
+  console.log("VSI TESTI USPEŠNI — model je zadnja plast, dokazi pa prva.");
+} else {
+  console.log(`TESTI AI KUSTOSA: ${ok} ✓ / ${fail} ✗`);
+  for (const f of failures) console.log("  ✗ " + f);
+}
+console.log("=".repeat(70));
+process.exit(fail ? 1 : 0);

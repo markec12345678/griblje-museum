@@ -19,7 +19,7 @@ export const dynamic = "force-dynamic";
  * GET  /api/stats  → javni povzetek (obiski, odprtja zapisov, jeziki)
  */
 
-const KINDS = ["visit", "open", "walk", "guide", "audio", "ar", "download", "detail"] as const;
+const KINDS = ["visit", "open", "walk", "guide", "curator", "audio", "ar", "download", "detail"] as const;
 
 const statSchema = z.object({
   kind: z.enum(KINDS),
@@ -79,6 +79,7 @@ export async function GET() {
     const langTotals: Record<string, number> = {};
     const openTotals: Record<string, number> = {};
     let guideTotal = 0;
+    let curatorTotal = 0;
     let audioTotal = 0;
     let arTotal = 0;
     let downloadTotal = 0;
@@ -98,6 +99,9 @@ export async function GET() {
           break;
         case "guide":
           guideTotal += n;
+          break;
+        case "curator":
+          curatorTotal += n;
           break;
         case "audio":
           audioTotal += n;
@@ -124,6 +128,7 @@ export async function GET() {
         visits: { total: visitsTotal, today: visitsToday, month: visitsMonth },
         byLang: langTotals,
         guideAsks: guideTotal,
+        curatorAsks: curatorTotal,
         audioPlays: audioTotal,
         arOpens: arTotal,
         imageDownloads: downloadTotal,
