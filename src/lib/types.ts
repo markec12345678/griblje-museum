@@ -59,7 +59,13 @@ export type ExhibitDTO = {
 };
 
 export type SourceDTO = {
+  /** Identiteta vrstice vira znotraj zapisa (slug:key na statični strani;
+   *  UUID vrstice v API-jih, ki berejo iz baze). */
   id: string;
+  /** Deterministična identiteta VIRA čez zabeležbe (source-registry.ts):
+   *  isti dokument (isti normaliziran URL) ali isti citat tiska → isti
+   *  ključ, neodvisno od zapisa, ki ga citira. */
+  sourceKey?: string;
   nameSi: string;
   nameEn: string;
   sourceType: SourceType;
