@@ -88,6 +88,28 @@ IIIF manifest Canvas 1033×1054 + Collection 90; iskanje »konrad« najde zapis 
 »Jankov mlajši brat …«); hero »Zbirka 90 zapisov«; statistika 90/400; mobilna 375 px brez preliva;
 0 napak v konzoli; dev.log brez napak.
 
+## Dodatek sklopa — Kučar nad Podzemljem (91. zapis)
+Iz istega sklopa (zadetek: Wikipedijin članek Podzemelj, dostopen prek REST API) je zrasel še
+**kucar-podzemelj — hrib, pod katerim so se pisale Griblje**:
+- Podzemelj prvič na papirju **1279** — sto devetinosemdeset let pred Gribljami (1468 − 1279 = 189)
+- fara sv. Martina: cerkev pred 1228 (kraj se je imenoval Sv. Martin; Valvasor jo opisal);
+  matične knjige 1669–1947 = ves papirnati spomin Gribelj pred 1889; Ivan Barle 1872–1893
+- Kučar (222 m): halštatsko selišče — eno največjih železnodobnih v širšem južnoalpskem prostoru
+  (topilnica železove rude, kovačnica, hiše); gomile pri Grmu, Zemljah, Škriljah (čez 30 nasipov),
+  izkopane pred 1. sv. vojno (Naravoslovni muzej Dunaj + Narodni muzej Slovenije)
+- **Pezdirčeva njiva**: bronast pas z zlatnikom — keltska imitacija staterja Aleksandra Velikega,
+  1. polovica 3. st. pr. n. št., Nike in Atena, »izredno redki« — polje z enakim priimkom kot
+  gribeljska Katarina Pezdirc s Grizina (mati Nikota Županiča; katarina-zupanic)
+- poznoantični kompleks 5.–6. st.: dve cerkvi, krstilnica, stanovanjske zgradbe, obzidje
+- 1523: 8 kmetij pod gradaškim gospostvom; danes 169 prebivalcev; šola 1888 zgorela julija 2002,
+  nova 2003
+- vira: monografija Kučar (Dular, Ciglenečki, Dular; Opera Instituti archaeologici Sloveniae 1,
+  1995) + Dularjev katalog Podzemelj (Katalogi in monografije 16, 1978)
+- slika: Uroš Novina, Kučar pri Podzemelju, 4. 9. 2024 (CC BY 2.0, 4032×3024 → optimizirano
+  1600×1200); isti fotograf kot Pond at Griblje in Cabin under the Sun (td-griblje)
+- integracije: minutna zgodba, postaja 25/29 sprehoda Vas in njeni ljudje (za konrad-barle;
+  pokritost vseh 91 zapisov s sprehodi preverjena skriptom), biografija 7 faz, števci 90→91
+
 ## Odprto za naslednje sklope
 1. **VLM kvota** (429 od 25.+ bloka): zanka read-matr-pages.ts še teče — meje vpisov 44–97/98
    mrliške knjige za španko 1918; po sprostitvi tudi branje strani 191–202 za 1. svetovno vojno

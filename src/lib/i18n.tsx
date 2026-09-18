@@ -158,7 +158,7 @@ export const ui = {
       title1: "Vas kot",
       titleAccent: "muzej.",
       subtitle:
-        "Zbirka 90 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
+        "Zbirka 91 zapisov, ena reka, ena meja in sto spominov. Raziščite Griblje — vas ob Kolpi, katere vsak prostor je vstopna točka v zgodbo.",
       ctaCollection: "Razišči zbirko",
       ctaMap: "Odpri zemljevid",
       ctaGuide: "Vprašaj vodnika",
@@ -470,7 +470,7 @@ export const ui = {
     guide: {
       openLabel: "Pogovor z zbirko (Ctrl+G)",
       title: "Pogovor z zbirko",
-      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 90 kuriranih zapisih.",
+      subtitle: "Vprašajte muzejskega vodnika — odgovori slonijo na 91 kuriranih zapisih.",
       aiBadge: "AI vodnik",
       disclaimer: "Umetna inteligenca sestavlja odgovore samo iz zapisov zbirke; navedeni zapisi so vedno pravi. Muzej ne izmišljuje zgodovine.",
       startersTitle: "S čim začnemo?",
@@ -544,7 +544,7 @@ export const ui = {
         n === 1 ? "1 postaja" : n >= 2 && n <= 4 ? `${n} postaje` : `${n} postaj`,
       minutes: (n: number) => `≈ ${n} min`,
       start: "Začni sprehod",
-      coverNote: "Sprehodi skupaj pokrivajo vseh 90 zapisov zbirke.",
+      coverNote: "Sprehodi skupaj pokrivajo vseh 91 zapisov zbirke.",
       completed: "Zaključen",
       completedProgress: (done: number, total: number) =>
         `Zaključeni sprehodi: ${done} od ${total}`,
@@ -800,7 +800,7 @@ export const ui = {
     visual: {
       title: "Podobne slike",
       subtitle:
-        "Po zgradbi in barvah slike — majhna različica vzorca »Search visually« Rijksmuseuma, ki pri 90 zapisih ne potrebuje umetne inteligence.",
+        "Po zgradbi in barvah slike — majhna različica vzorca »Search visually« Rijksmuseuma, ki pri 91 zapisih ne potrebuje umetne inteligence.",
       openExhibit: "Odpri podoben zapis",
       why: "Zakaj se sliki podobni?",
       whyText:
@@ -825,7 +825,7 @@ export const ui = {
       title: "Adventni koledar muzeja",
       subtitle:
         "Od 1. do 24. decembra se vsak dan odpre ena vrata zbirke — po vzoru adventnih koledarjev Glencairn Museuma in Ashmoleana. Določenega dne odpre vsak obiskovalec isti zapis.",
-      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 90.",
+      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 91.",
       openDoor: "Odpri vrata",
       doorLocked: "Vrata so še zaprta",
       opensIn: "Odpre se čez {n} dni",
@@ -1217,7 +1217,7 @@ export const ui = {
       title1: "A village as",
       titleAccent: "a museum.",
       subtitle:
-        "Ninety records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
+        "Ninety-one records, one river, one border and a hundred memories. Explore Griblje — a village on the Kolpa where every place is an entrance into a story.",
       ctaCollection: "Explore the collection",
       ctaMap: "Open the map",
       ctaGuide: "Ask the guide",
@@ -1528,7 +1528,7 @@ export const ui = {
     guide: {
       openLabel: "Talk to the collection (Ctrl+G)",
       title: "Talk to the collection",
-      subtitle: "Ask the museum guide — answers are grounded in 90 curated records.",
+      subtitle: "Ask the museum guide — answers are grounded in 91 curated records.",
       aiBadge: "AI guide",
       disclaimer: "Artificial intelligence builds answers only from the collection records; cited records are always real. The museum invents no history.",
       startersTitle: "Where shall we start?",
@@ -1600,7 +1600,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stop" : `${n} stops`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Start the walk",
-      coverNote: "Together the walks cover all 90 records of the collection.",
+      coverNote: "Together the walks cover all 91 records of the collection.",
       completed: "Completed",
       completedProgress: (done: number, total: number) =>
         `Completed walks: ${done} of ${total}`,
@@ -1855,7 +1855,7 @@ export const ui = {
     visual: {
       title: "Similar images",
       subtitle:
-        "By structure and colour — a small-museum take on the Rijksmuseum's 'Search visually' that needs no artificial intelligence at ninety records.",
+        "By structure and colour — a small-museum take on the Rijksmuseum's 'Search visually' that needs no artificial intelligence at ninety-one records.",
       openExhibit: "Open a similar record",
       why: "Why do these look alike?",
       whyText:
@@ -1880,7 +1880,7 @@ export const ui = {
       title: "The museum's advent calendar",
       subtitle:
         "From 1 to 24 December one door of the collection opens each day — after the advent calendars of Glencairn Museum and the Ashmolean. On a given day every visitor opens the same record.",
-      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 90 pieces.",
+      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 91 pieces.",
       openDoor: "Open door",
       doorLocked: "Door still closed",
       opensIn: "Opens in {n} days",
@@ -2270,7 +2270,7 @@ export const ui = {
       title1: "Selo kao",
       titleAccent: "muzej.",
       subtitle:
-        "Devedeset zapisa, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
+        "Devedeset i jedan zapis, jedna rijeka, jedna granica i sto sjećanja. Istražite Griblje — selo uz Kolpu čiji je svaki kut ulazna točka u priču.",
       ctaCollection: "Istraži zbirku",
       ctaMap: "Otvori zemljovid",
       ctaGuide: "Pitaj vodiča",
@@ -2581,7 +2581,7 @@ export const ui = {
     guide: {
       openLabel: "Razgovor sa zbirkom (Ctrl+G)",
       title: "Razgovor sa zbirkom",
-      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 90 kuriranih zapisa.",
+      subtitle: "Pitajte muzejskog vodiča — odgovori se temelje na 91 kuriranih zapisa.",
       aiBadge: "AI vodič",
       disclaimer: "Umjetna inteligencija sastavlja odgovore samo iz zapisa zbirke; navedeni zapisi uvijek su pravi. Muzej ne izmišlja povijest.",
       startersTitle: "Čime počinjemo?",
@@ -2653,7 +2653,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 stanica" : n <= 4 ? `${n} stanice` : `${n} stanica`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Započni šetnju",
-      coverNote: "Šetnje zajedno pokrivaju svih 90 zapisa zbirke.",
+      coverNote: "Šetnje zajedno pokrivaju svih 91 zapisa zbirke.",
       completed: "Završeno",
       completedProgress: (done: number, total: number) =>
         `Završene šetnje: ${done} od ${total}`,
@@ -2908,7 +2908,7 @@ export const ui = {
     visual: {
       title: "Slične slike",
       subtitle:
-        "Po strukturi i bojama — mala muzejska inačica uzorka »Search visually« Rijksmuseuma, koja pri 90 zapisa ne treba umjetnu inteligenciju.",
+        "Po strukturi i bojama — mala muzejska inačica uzorka »Search visually« Rijksmuseuma, koja pri 91 zapisa ne treba umjetnu inteligenciju.",
       openExhibit: "Otvori sličan zapis",
       why: "Zašto su slike slične?",
       whyText:
@@ -2933,7 +2933,7 @@ export const ui = {
       title: "Adventski kalendar muzeja",
       subtitle:
         "Od 1. do 24. prosinca svaki se dan otvaraju jedna vrata zbirke — po uzoru na adventske kalendare Glencairn muzeja i Ashmoleana. Određenoga dana svaki posjetitelj otvara isti zapis.",
-      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 90.",
+      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 91.",
       openDoor: "Otvori vrata",
       doorLocked: "Vrata su još zatvorena",
       opensIn: "Otvaraju se za {n} dana",
@@ -3324,7 +3324,7 @@ export const ui = {
       title1: "Ein Dorf als",
       titleAccent: "Museum.",
       subtitle:
-        "Neunzig Einträge, ein Fluss, eine Grenze und hundert Erinnerungen. Entdecken Sie Griblje — ein Dorf an der Kolpa, dessen jeder Ort ein Eingang in eine Geschichte ist.",
+        "Einundneunzig Einträge, ein Fluss, eine Grenze und hundert Erinnerungen. Entdecken Sie Griblje — ein Dorf an der Kolpa, dessen jeder Ort ein Eingang in eine Geschichte ist.",
       ctaCollection: "Sammlung entdecken",
       ctaMap: "Karte öffnen",
       ctaGuide: "Guide fragen",
@@ -3635,7 +3635,7 @@ export const ui = {
     guide: {
       openLabel: "Gespräch mit der Sammlung (Strg+G)",
       title: "Gespräch mit der Sammlung",
-      subtitle: "Fragen Sie den Museumsguide — die Antworten ruhen auf 90 kuratierten Einträgen.",
+      subtitle: "Fragen Sie den Museumsguide — die Antworten ruhen auf 91 kuratierten Einträgen.",
       aiBadge: "KI-Guide",
       disclaimer: "Künstliche Intelligenz setzt Antworten nur aus den Einträgen der Sammlung zusammen; die genannten Einträge sind immer echt. Das Museum erfindet keine Geschichte.",
       startersTitle: "Womit beginnen wir?",
@@ -3707,7 +3707,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 Station" : `${n} Stationen`),
       minutes: (n: number) => `≈ ${n} Min`,
       start: "Rundgang beginnen",
-      coverNote: "Die Rundgänge decken gemeinsam alle 90 Einträge der Sammlung ab.",
+      coverNote: "Die Rundgänge decken gemeinsam alle 91 Einträge der Sammlung ab.",
       completed: "Abgeschlossen",
       completedProgress: (done: number, total: number) =>
         `Abgeschlossene Rundgänge: ${done} von ${total}`,
@@ -3962,7 +3962,7 @@ export const ui = {
     visual: {
       title: "Ähnliche Bilder",
       subtitle:
-        "Nach Struktur und Farben des Bildes — eine kleine Version des Musters „Search visually“ des Rijksmuseums, das bei 90 Einträgen keine künstliche Intelligenz braucht.",
+        "Nach Struktur und Farben des Bildes — eine kleine Version des Musters „Search visually“ des Rijksmuseums, das bei 91 Einträgen keine künstliche Intelligenz braucht.",
       openExhibit: "Ähnlichen Eintrag öffnen",
       why: "Warum sind die Bilder ähnlich?",
       whyText:
@@ -3987,7 +3987,7 @@ export const ui = {
       title: "Adventskalender des Museums",
       subtitle:
         "Vom 1. bis 24. Dezember öffnet sich jeden Tag ein Türchen der Sammlung — nach dem Vorbild der Adventskalender des Glencairn Museum und des Ashmolean. An einem bestimmten Tag öffnet jeder Besucher denselben Eintrag.",
-      note: "Die Türchen öffnen sich um lokale Mitternacht; künftige bleiben geschlossen. Einträge können sich im Kalender wiederholen — es gibt 90 in der Sammlung.",
+      note: "Die Türchen öffnen sich um lokale Mitternacht; künftige bleiben geschlossen. Einträge können sich im Kalender wiederholen — es gibt 91 in der Sammlung.",
       openDoor: "Türchen öffnen",
       doorLocked: "Das Türchen ist noch geschlossen",
       opensIn: "Öffnet in {n} Tagen",
@@ -4379,7 +4379,7 @@ export const ui = {
       title1: "Un villaggio come",
       titleAccent: "museo.",
       subtitle:
-        "Novanta schede, un fiume, un confine e cento ricordi. Esplorate Griblje — un villaggio sulla Kolpa dove ogni luogo è un ingresso in una storia.",
+        "Novantuna schede, un fiume, un confine e cento ricordi. Esplorate Griblje — un villaggio sulla Kolpa dove ogni luogo è un ingresso in una storia.",
       ctaCollection: "Esplora la collezione",
       ctaMap: "Apri la mappa",
       ctaGuide: "Chiedi alla guida",
@@ -4690,7 +4690,7 @@ export const ui = {
     guide: {
       openLabel: "Dialogo con la collezione (Ctrl+G)",
       title: "Dialogo con la collezione",
-      subtitle: "Chiedete alla guida del museo — le risposte poggiano su 90 schede curate.",
+      subtitle: "Chiedete alla guida del museo — le risposte poggiano su 91 schede curate.",
       aiBadge: "Guida IA",
       disclaimer: "L'intelligenza artificiale compone le risposte solo dalle schede della collezione; le schede citate sono sempre vere. Il museo non inventa la storia.",
       startersTitle: "Da dove cominciamo?",
@@ -4762,7 +4762,7 @@ export const ui = {
       stops: (n: number) => (n === 1 ? "1 fermata" : `${n} fermate`),
       minutes: (n: number) => `≈ ${n} min`,
       start: "Inizia il percorso",
-      coverNote: "I percorsi insieme coprono tutte le 90 schede della collezione.",
+      coverNote: "I percorsi insieme coprono tutte le 91 schede della collezione.",
       completed: "Completato",
       completedProgress: (done: number, total: number) =>
         `Percorsi completati: ${done} di ${total}`,
@@ -5017,7 +5017,7 @@ export const ui = {
     visual: {
       title: "Immagini simili",
       subtitle:
-        "Per struttura e colori dell'immagine — una piccola versione del modello «Search visually» del Rijksmuseum, che con 90 schede non ha bisogno di intelligenza artificiale.",
+        "Per struttura e colori dell'immagine — una piccola versione del modello «Search visually» del Rijksmuseum, che con 91 schede non ha bisogno di intelligenza artificiale.",
       openExhibit: "Apri una scheda simile",
       why: "Perché le immagini si somigliano?",
       whyText:
@@ -5042,7 +5042,7 @@ export const ui = {
       title: "Calendario dell'Avvento del museo",
       subtitle:
         "Dal 1° al 24 dicembre ogni giorno si apre uno sportellino della collezione — sul modello dei calendari dell'Avvento del Glencairn Museum e dell'Ashmolean. In un giorno preciso ogni visitatore apre la stessa scheda.",
-      note: "Gli sportellini si aprono a mezzanotte locale; i futuri restano chiusi. Le schede possono ripetersi nel calendario — nella collezione ce ne sono 90.",
+      note: "Gli sportellini si aprono a mezzanotte locale; i futuri restano chiusi. Le schede possono ripetersi nel calendario — nella collezione ce ne sono 91.",
       openDoor: "Apri lo sportellino",
       doorLocked: "Lo sportellino è ancora chiuso",
       opensIn: "Si apre tra {n} giorni",
