@@ -78,6 +78,7 @@ export function guideClientIp(request: Request): string {
 
 type DossierExhibit = {
   slug: string;
+  museumNo: string | null;
   category: string;
   evidenceStatus: string;
   titleSi: string;
@@ -135,7 +136,7 @@ function formatDossier(lang: GuideLang, exhibits: DossierExhibit[]): string {
         : null;
       return [
         `### ${e.slug}`,
-        `kategorija: ${e.category} | zanesljivost: ${e.evidenceStatus}`,
+        `muzejska št.: ${e.museumNo ?? "—"} | kategorija: ${e.category} | zanesljivost: ${e.evidenceStatus}`,
         years +
           `Naslov (${sl ? "SL" : "EN"}): ${sl ? e.titleSi : e.titleEn}`,
         `Obdobje (${sl ? "SL" : "EN"}): ${sl ? e.periodSi : e.periodEn}`,
@@ -178,6 +179,7 @@ async function getDossier(lang: GuideLang) {
         orderBy: { sortOrder: "asc" },
         select: {
           slug: true,
+          museumNo: true,
           category: true,
           evidenceStatus: true,
           titleSi: true,

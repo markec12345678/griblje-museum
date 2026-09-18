@@ -1684,3 +1684,24 @@ Stage Summary:
 - Primarna izkušnja zapisa ni več slepa ulica: MVG identiteta + postaja sprehoda + prej/naslednji v enem kliku
 - Zemljevid: iskren podnaslov, skupinske pike dosegljive, poimenovane za bralnike zaslona
 - Odprto (dokumentirano, NE reševano brez odločitve lastnika): AI vodnik odvisen od brezplačne kvote OpenRouter (rešitev: kredit), iskanje po MVG v api/search, hreflang ?lang=en kanonični konflikt, SITE_URL fallback vercel.app
+
+---
+Task ID: 32
+Agent: Z.ai Code (glavni agent)
+Task: MUZEJ GRIBLJE — FAZA 3: Curatorial storytelling & collection discovery — read-only audit (sekcije 1–11) + implementacija obvezne popravke iskanja (sekcija 12: MVG-001 mora najti pravi objekt)
+
+Work Log:
+- Read-only audit repozitorija na stanju 8ad0461: connections.ts (5 vrst razložljivih povezav, relatedExhibits limit 3), walks.ts (5 sprehodov, 93/93 pokritih, kuratorske opombe vseh postaj), theme-hubs.ts (6 tem: kraj 42, sege 18, vojna 10, gospodarstvo 10, narava 8, kolpa 5)
+- Prebrano: museum-content.ts struktura 93 zapisov (93/93 MVG, 93/93 viri, 80/93 letnica, 28/93 koordinate), exponat/[slug]/page.tsx (statična stran: KAJ VEMO → KAKO VEMO → VIRI → citat; navigacija SAMO prev/next po MVG zaporedju), exhibit-dialog.tsx (interaktivni zapis: 3 sorodni + 3 vizualno + tema + sprehod + biografija + minute story)
+- Prebrano: search route (indeks BREZ museumNo), search-dialog.tsx, qr-label-tool.tsx (QR → /exponat/[slug]), guide.ts (dosje BREZ museumNo), home-view.tsx (15+ vstopnih točk), museum-register.tsx, walk-ui.tsx, theme-hub-view.tsx, map-view.tsx, timeline-view, object-biographies.ts (93/93), minute-stories.ts (93/93)
+- Test "one object → five more" na 10 reprezentativnih predmetih: interaktivni zapis USPEŠNO (8+ poti); statična stran/QR NEUSPEŠNO (samo 2 povezavi prev/next)
+- EVIDENCA vrzela sekcije 12: curl /api/search?q=MVG-001 → 0 zadetkov; q=mvg001 → 0; q=001 → 2 napačna zadetka (brez griblje-vas); museumNo ni v iskalnem indeksu (route.ts) niti v guide dosjeju (guide.ts formatDossier)
+- IMPLEMENTACIJA (obvezna popravka): search route — museumNo v indeksu (raw + compact oblika), needle compact varianta (MVG–001/MVG 001 → mvg001), museumNo v odgovoru; search-dialog — MVG mono znak v zadetkih, predlog "MVG-001" v vseh 5 jezikih; guide.ts — museumNo v dosjeju (muzejska št. v glavi zapisa)
+- Testi API: MVG-001/mvg001/MVG 001/MVG–001/MVG-093/MVG-042 → pravi objekt (1 zadetek); regresija Kolpa 57, Audrey Totter 4, šola 20, 001 → 3 (MVG-001 prvi); MVG → 93
+- Browser preverba (agent-browser): iskanje MVG-001 → zadetek z MVG znakom → klik odpre dialog »Griblje — vas ob Kolpi« s Povezanimi zapisi; predlog MVG-001 v idle stanju; konzola brez napak
+- bun run lint: čisto (0 napak)
+
+Stage Summary:
+- FAZA 3 audit ugotovitve (podrobno v končnem poročilu): (1) kategorija "kraj" je catch-all 42/93 (~17 življenjepisov oseb skrito v njej — najmočnejša naravna skupina brez lastne teme); (2) statična objektna stran (QR cilj) nima sorodnih zapisov niti konteksta sprehoda — vrzel v "five more" testu za Google/QR obiskovalce; (3) iskanje po MVG številki POPRAVLJENO in preverjeno; (4) sprehodi so prave kurirane zgodbe (93/93, močni zaključki); (5) 93/93 biografije + minute stories; (6) časovna zgodba obstaja (timeline + biografije)
+- Commit pripravljen: search MVG vrzel (edina obvezna implementacija FAZA 3); ostale ugotovitve čakajo kot predlogi na potrditev uporabnika
+- Guide MVG test pri ponudniku (zai) začasno onemogočen zaradi upstream rate-limit kvote — kodna sprememba preverjena z lintom in vzorcem obstoječih polj; e2e test sledi ob okvirju kvote

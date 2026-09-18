@@ -15,6 +15,9 @@ export const dynamic = "force-dynamic";
  * si pravilo deli s filtrom v pogledu zbirke). Nemške in italijanske besede
  * iz pogostega muzejskega besednjaka se razširijo na angleški ekvivalent
  * (vzorec Europeana) — vsebina zbirk je v slovenščini in angleščini.
+ * Trajna muzejska številka (MVG-###) je iskiva v vseh oblikah pisanja
+ * (MVG-001, mvg001, MVG 001 …) — vzorec vodilnih zbirk, kjer inventarna
+ * številka pelje do točno določenega predmeta (Rijksmuseum, DigitaltMuseum).
  * Odgovor vrača zadetke po tipih s polji v obeh jezikih; pravilen je
  * `Access-Control-Allow-Origin: *`.
  */
@@ -42,7 +45,15 @@ export async function GET(request: Request) {
 
     const needle = normalize(raw);
     // Večjezična razširitev: izvirnik + angleški ekvivalenti (DE/IT).
-    const needles = expandQuery(needle);
+    const expanded = expandQuery(needle);
+    // Zapis brez ločil (MVG–001 / MVG 001 → mvg001) — muzejska številka je
+    // iskiva neodvisno od načina pisanja (presledki, pomišljaji, pomišljaj-
+    // črtica). Doda se le, če se od izvirnika razlikuje.
+    const compact = needle.replace(/[\s\-\u2013\u2014]/g, "");
+    const needles =
+      compact && compact !== needle && !expanded.includes(compact)
+        ? [...expanded, compact]
+        : expanded;
 
     const [exhibits, stories, events] = await Promise.all([
       db.exhibit.findMany({ orderBy: { sortOrder: "asc" } }),
@@ -50,10 +61,16 @@ export async function GET(request: Request) {
       db.museumEvent.findMany({ orderBy: { startsAt: "asc" } }),
     ]);
 
-    // --- Razstave: naslov, obdobje, povzetek, zgodba, slug ---
+    // --- Razstave: muzejska številka, naslov, obdobje, povzetek, zgodba, slug ---
     const exhibitHits = exhibits
       .map((ex) => {
+        // MVG-### v obeh oblikah: s pomišljajem in brez (mvg-001 mvg001) —
+        // pokrijeta vse načine vnosa obiskovalca s QR-oznake ali registra.
+        const museumNoHay = ex.museumNo
+          ? `${ex.museumNo} ${ex.museumNo.replace(/[\s\u2013\u2014-]/g, "")}`
+          : "";
         const index = buildIndex([
+          ["museumNo", museumNoHay],
           ["titleSi", ex.titleSi],
           ["titleEn", ex.titleEn],
           ["periodSi", ex.periodSi],
@@ -73,6 +90,7 @@ export async function GET(request: Request) {
       .map(({ exhibit: ex, matchedIn }) => ({
         type: "exhibit",
         slug: ex.slug,
+        museumNo: ex.museumNo,
         title: { sl: ex.titleSi, en: ex.titleEn },
         period: { sl: ex.periodSi, en: ex.periodEn },
         summary: { sl: ex.summarySi, en: ex.summaryEn },

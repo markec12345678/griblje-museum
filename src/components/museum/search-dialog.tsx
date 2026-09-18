@@ -35,6 +35,7 @@ type Localized = { sl: string; en: string };
 type ExhibitHit = {
   type: "exhibit";
   slug: string;
+  museumNo: string | null;
   title: Localized;
   period: Localized;
   summary: Localized;
@@ -103,17 +104,19 @@ function pushRecent(term: string): void {
   }
 }
 
-/** Predlagana iskanja — kurirani pojmi zbirke (Tate: »Try searching for«). */
+/** Predlagana iskanja — kurirani pojmi zbirke (Tate: »Try searching for«).
+ * MVG-001 je izrecno med njimi: trajna muzejska številka je iskiva in je
+ * hkrati najkrajša pot od QR-oznake ali registra do zapisa. */
 function suggestedTerms(lang: Lang): string[] {
   if (lang === "en")
-    return ["Kolpa", "school", "war", "jurjevo", "tobacco", "postcard", "church", "bell"];
+    return ["Kolpa", "school", "war", "jurjevo", "tobacco", "postcard", "church", "bell", "MVG-001"];
   if (lang === "hr")
-    return ["Kolpa", "škola", "rat", "jurjevo", "duhan", "razglednica", "crkva", "žbul"];
+    return ["Kolpa", "škola", "rat", "jurjevo", "duhan", "razglednica", "crkva", "žbul", "MVG-001"];
   if (lang === "de")
-    return ["Kolpa", "Schule", "Krieg", "Jurjevo", "Tabak", "Postkarte", "Kirche", "Žbul"];
+    return ["Kolpa", "Schule", "Krieg", "Jurjevo", "Tabak", "Postkarte", "Kirche", "Žbul", "MVG-001"];
   if (lang === "it")
-    return ["Kolpa", "scuola", "guerra", "Jurjevo", "tabacco", "cartolina", "chiesa", "Žbul"];
-  return ["Kolpa", "šola", "vojna", "jurjevo", "tobak", "razglednica", "cerkev", "žbul"];
+    return ["Kolpa", "scuola", "guerra", "Jurjevo", "tabacco", "cartolina", "chiesa", "Žbul", "MVG-001"];
+  return ["Kolpa", "šola", "vojna", "jurjevo", "tobak", "razglednica", "cerkev", "žbul", "MVG-001"];
 }
 
 function storyKindLabel(kind: StoryHit["kind"], lang: Lang): string {
@@ -379,6 +382,11 @@ export function SearchDialog({
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-sm font-medium">
+                            {hit.museumNo && (
+                              <span className="mr-1.5 font-mono text-[10px] font-semibold tracking-wide text-primary/80">
+                                {hit.museumNo}
+                              </span>
+                            )}
                             {hit.title[lang === "sl" || lang === "hr" ? "sl" : "en"]}
                           </span>
                           <span className="mt-0.5 block truncate text-xs text-muted-foreground">
