@@ -37,6 +37,7 @@ import type { PuzzleSize } from "@/lib/puzzle";
 import { getAdventIndex, isDoorUnlocked } from "@/lib/seasonal-shelf";
 import { SearchDialog } from "@/components/museum/search-dialog";
 import { GuideDialog } from "@/components/museum/guide-dialog";
+import { CuratorDialog } from "@/components/museum/curator-dialog";
 import { useLang } from "@/lib/i18n";
 import { markVisited } from "@/lib/visit-tracker";
 import { markWalkCompleted } from "@/lib/walk-tracker";
@@ -63,6 +64,7 @@ export function MuseumApp() {
   const [searchOpen, setSearchOpen] = React.useState(false);
   const [compareOpen, setCompareOpen] = React.useState(false);
   const [guideOpen, setGuideOpen] = React.useState(false);
+  const [curatorOpen, setCuratorOpen] = React.useState(false);
   const reduceMotion = useReducedMotion();
 
   // --- Muzejski sprehodi -----------------------------------------------
@@ -470,6 +472,11 @@ export function MuseumApp() {
         setGuideOpen(true);
         return;
       }
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "j") {
+        event.preventDefault();
+        setCuratorOpen(true);
+        return;
+      }
       if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
         const target = event.target as HTMLElement | null;
         const typing = target?.closest(
@@ -735,7 +742,7 @@ export function MuseumApp() {
         {t.a11y.skipToContent}
       </a>
 
-      <Header view={view} onNavigate={navigate} onOpenSearch={() => setSearchOpen(true)} onOpenGuide={() => setGuideOpen(true)} />
+      <Header view={view} onNavigate={navigate} onOpenSearch={() => setSearchOpen(true)} onOpenGuide={() => setGuideOpen(true)} onOpenCurator={() => setCuratorOpen(true)} />
 
       <main id="vsebina" className="flex-1">
         {loading ? (
@@ -835,6 +842,14 @@ export function MuseumApp() {
       <GuideDialog
         open={guideOpen}
         onOpenChange={setGuideOpen}
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={openExhibit}
+      />
+
+      {/* AI kustos — dokazni odgovori (zaprta dokazna svet, strežniško) */}
+      <CuratorDialog
+        open={curatorOpen}
+        onOpenChange={setCuratorOpen}
         exhibits={exhibitsQuery.data ?? []}
         onOpenExhibit={openExhibit}
       />

@@ -57,7 +57,7 @@ export type EventPrecision =
   | "approximate" // izrecna približnost v samem zapisu (»konec marca«)
   | "year"; // samo leto (npr. 1854)
 
-const EVENT_PRECISION: Readonly<Record<string, EventPrecision>> = {
+export const EVENT_PRECISION: Readonly<Record<string, EventPrecision>> = {
   // — z dnem —
   "event:zaseda-na-cesti-1941": "exact-date", // 6. september 1941
   "event:snos-zasedanje-1944": "exact-date", // 19.–20. februar 1944

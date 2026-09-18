@@ -141,7 +141,7 @@ model ObjectMemory {
 model StatDay {
   id        String   @id @default(uuid())
   day       String // YYYY-MM-DD
-  kind      String // visit | open | walk | guide | audio | ar | download
+  kind      String // visit | open | walk | guide | curator | audio | ar | download
   lang      String // sl | en | hr
   key       String   @default("") // slug zapisa / id sprehoda / "" za splošno
   count     Int      @default(0)

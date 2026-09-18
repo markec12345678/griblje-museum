@@ -25,7 +25,7 @@ type SeedSource = {
   noteEn?: string;
 };
 
-type SeedExhibit = {
+export type SeedExhibit = {
   slug: string;
   /** Trajna muzejska številka (inventarna) — enkrat dodeljena, se ne spreminja. */
   museumNo?: string;
