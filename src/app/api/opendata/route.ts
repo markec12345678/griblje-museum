@@ -130,6 +130,10 @@ export async function GET() {
             type: s.sourceType,
             license: s.license,
             url: s.url,
+            /* Opomba vira v istem dvojezičnem paru kot na muzejski strani
+             * (SL → noteSi, EN → noteEn) — odprti podatki ne smejo
+             * predstavljati druge interpretacije istega vira. */
+            note: { sl: s.noteSi, en: s.noteEn },
             usedBy: sourceUsage.get(sourceKeyOf(s.nameSi, s.url)) ?? [
               ex.museumNo ?? ex.slug,
             ],

@@ -32,6 +32,10 @@ const EVIDENCE_LABELS: Record<string, { sl: string; en: string }> = {
 
 type LangMap = Record<string, string[]>;
 type ExhibitRow = Awaited<ReturnType<typeof db.exhibit.findMany>>[number];
+/** Vrstica vira, kot jo vrača Prisma (isti podatkovni model kot /api/exhibits
+ *  in /api/opendata — brez novega modela, brez spremembe semantike). */
+type SourceRow = Awaited<ReturnType<typeof db.source.findMany>>[number];
+type ExhibitWithSources = ExhibitRow & { sources: SourceRow[] };
 
 /** IIIF language map — vrednosti so vedno POLJA nizov. */
 function langMap(sl?: string | null, en?: string | null): LangMap {
@@ -138,8 +142,25 @@ function buildManifestReference(origin: string, exhibit: ExhibitRow) {
   };
 }
 
+/** Viri zapisa kot IIIF metadata pari — ime, licenca, URL (§12 TASK 37).
+ *  Vrstni red je enak registermu VIRI na muzejski strani zapisa, zato
+ *  manifest predstavlja ISTI vir kot muzejska stran in odprti podatki. */
+function buildSourceMetadata(exhibit: ExhibitWithSources) {
+  return exhibit.sources.map((s, i) => {
+    const line = (name: string) =>
+      `${name} — ${s.license}${s.url ? ` — ${s.url}` : ""}`;
+    return {
+      label: {
+        sl: [`Vir ${i + 1}`],
+        en: [`Source ${i + 1}`],
+      } satisfies LangMap,
+      value: langMap(line(s.nameSi), line(s.nameEn)),
+    };
+  });
+}
+
 /** Polni Manifest z vsaj enim Canvasom (IIIF Presentation 3.0). */
-function buildFullManifest(origin: string, exhibit: ExhibitRow) {
+function buildFullManifest(origin: string, exhibit: ExhibitWithSources) {
   const manifestId = `${origin}/api/iiif?manifest=${exhibit.slug}`;
   const image = exhibit.image ?? "/images/authentic/hero-griblje.jpg";
   const { width, height } = imageDimensions(image);
@@ -159,8 +180,9 @@ function buildFullManifest(origin: string, exhibit: ExhibitRow) {
     homepage: buildHomepage(origin, exhibit),
     seeAlso: [
       { id: `${origin}/api/exhibits`, type: "Dataset", format: "application/json" },
+      { id: `${origin}/api/opendata`, type: "Dataset", format: "application/json" },
     ],
-    metadata: buildMetadata(exhibit),
+    metadata: [...buildMetadata(exhibit), ...buildSourceMetadata(exhibit)],
     items: [
       {
         id: canvasId,
@@ -200,10 +222,11 @@ export async function GET(request: Request) {
     const { origin, searchParams } = new URL(request.url);
     const slug = searchParams.get("manifest");
 
-    // Posamezen manifest (ni ovit v Collection).
+    // Posamezen manifest (ni ovit v Collection) — z viri v metapodatkih.
     if (slug !== null) {
-      const exhibit: ExhibitRow | null = await db.exhibit.findUnique({
+      const exhibit: ExhibitWithSources | null = await db.exhibit.findUnique({
         where: { slug },
+        include: { sources: { orderBy: { sortOrder: "asc" } } },
       });
       if (!exhibit) {
         return jsonResponse(
