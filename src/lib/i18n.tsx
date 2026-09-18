@@ -825,7 +825,7 @@ export const ui = {
       title: "Adventni koledar muzeja",
       subtitle:
         "Od 1. do 24. decembra se vsak dan odpre ena vrata zbirke — po vzoru adventnih koledarjev Glencairn Museuma in Ashmoleana. Določenega dne odpre vsak obiskovalec isti zapis.",
-      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 88.",
+      note: "Vrata se odklenejo ob lokalni polnoči; prihodnja ostanejo zaprta. Zapisi se v koledarju lahko ponovijo — v zbirki jih je 89.",
       openDoor: "Odpri vrata",
       doorLocked: "Vrata so še zaprta",
       opensIn: "Odpre se čez {n} dni",
@@ -1880,7 +1880,7 @@ export const ui = {
       title: "The museum's advent calendar",
       subtitle:
         "From 1 to 24 December one door of the collection opens each day — after the advent calendars of Glencairn Museum and the Ashmolean. On a given day every visitor opens the same record.",
-      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 88 pieces.",
+      note: "Doors unlock at your local midnight; future ones stay closed. Records may repeat across the calendar — the collection has 89 pieces.",
       openDoor: "Open door",
       doorLocked: "Door still closed",
       opensIn: "Opens in {n} days",
@@ -2933,7 +2933,7 @@ export const ui = {
       title: "Adventski kalendar muzeja",
       subtitle:
         "Od 1. do 24. prosinca svaki se dan otvaraju jedna vrata zbirke — po uzoru na adventske kalendare Glencairn muzeja i Ashmoleana. Određenoga dana svaki posjetitelj otvara isti zapis.",
-      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 88.",
+      note: "Vrata se otključavaju u lokalnu ponoć; buduća ostaju zatvorena. Zapisi se u kalendaru mogu ponoviti — u zbirci ih je 89.",
       openDoor: "Otvori vrata",
       doorLocked: "Vrata su još zatvorena",
       opensIn: "Otvaraju se za {n} dana",
@@ -3987,7 +3987,7 @@ export const ui = {
       title: "Adventskalender des Museums",
       subtitle:
         "Vom 1. bis 24. Dezember öffnet sich jeden Tag ein Türchen der Sammlung — nach dem Vorbild der Adventskalender des Glencairn Museum und des Ashmolean. An einem bestimmten Tag öffnet jeder Besucher denselben Eintrag.",
-      note: "Die Türchen öffnen sich um lokale Mitternacht; künftige bleiben geschlossen. Einträge können sich im Kalender wiederholen — es gibt 88 in der Sammlung.",
+      note: "Die Türchen öffnen sich um lokale Mitternacht; künftige bleiben geschlossen. Einträge können sich im Kalender wiederholen — es gibt 89 in der Sammlung.",
       openDoor: "Türchen öffnen",
       doorLocked: "Das Türchen ist noch geschlossen",
       opensIn: "Öffnet in {n} Tagen",
@@ -5042,7 +5042,7 @@ export const ui = {
       title: "Calendario dell'Avvento del museo",
       subtitle:
         "Dal 1° al 24 dicembre ogni giorno si apre uno sportellino della collezione — sul modello dei calendari dell'Avvento del Glencairn Museum e dell'Ashmolean. In un giorno preciso ogni visitatore apre la stessa scheda.",
-      note: "Gli sportellini si aprono a mezzanotte locale; i futuri restano chiusi. Le schede possono ripetersi nel calendario — nella collezione ce ne sono 88.",
+      note: "Gli sportellini si aprono a mezzanotte locale; i futuri restano chiusi. Le schede possono ripetersi nel calendario — nella collezione ce ne sono 89.",
       openDoor: "Apri lo sportellino",
       doorLocked: "Lo sportellino è ancora chiuso",
       opensIn: "Si apre tra {n} giorni",

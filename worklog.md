@@ -1516,3 +1516,24 @@ Work Log:
 Stage Summary:
 - Produkcija: zgodba o španki ne vsebuje več aritmetično napačne enačbe; natančen obseg vpisov se vrne po VLM preverbi (najverjetneje »44 do 98«)
 - Postopek za naslednjo sejo: preveriti /tmp/matr-readings.json (zanka bere strani 189–202); ob potrditvi meje popraviti zgodbo + README 20./24. sklop + pripis v viru Matricula; ob trajno blokirani kvoti lahko meje določi tudi ročno branje posnetkov (13 × ~2660×2000 v /tmp/matr-p*.jpg)
+
+---
+Task ID: 28
+Agent: Main agent (Z.ai Code)
+Task: Nadaljevanje po direktivi »nadaljuj kjer si ostal« — cross-file revizija števil + števci po jezikih (VLM kvota še vedno blokirana)
+
+Work Log:
+- Stanje ob nadaljevanju: zanka read-matr-pages.ts čaka na VLM kvoto (429, poskus 12+), dev strežnik zdrav, main == origin/main (f2e48147/f2e6525)
+- Poskus alternativnega branja mrliške knjige brez VLM: tesseract 5.5.0 na levem stolpcu p201/p202 (izrez + povečava + grayscale + linear + sharpen; tudi psm 11/6 + whitelist števk) — kurzivni rokopis neberljiv za OCR; VLM ostaja edini zanesljivi bralnik
+- PREVERBA ŠTEVCEV PO JEZIKIH (verify-i18n.ts: 783 ključev × 5 jezikov OK, a vsebinsko): grep po i18n.tsx je našel 5× zastarelo »88« — adventni koledar (opomba »v zbirki jih je 88 / the collection has 88 pieces / u zbirci ih je 88 / es gibt 88 in der Sammlung / nella collezione ce ne sono 88«) → vseh 5 jezikov popravljenih na 89 (isti razred skritega števca kot lanski hero-naslovi EN/HR/DE/IT, ki so ostali na 86)
+- NOV SKRIPT scripts/audit-crossfile.ts: številke v MINUTE_STORIES (textSi), MONTHLY_POOLS (noteSi) in ALL_WALKS (noteSi po postajah) preverjene proti starševskim zapisom (title+period+summary+story SL+EN, števke + besedne številke SI/EN) — 19 oznak; ročna analiza: večina legitimnih satelitskih dodatkov ali lažni pozitivi (besedno zapisane sestavljene številke: štiristo petintrideset = 425 → parser vidi le 35 ipd.)
+- NAJDBA — anton-brodaric: EN »A village a hundred and sixty metres above the sea« in SL »Vas na stoterinšestdesetih metrih nadmorske višine« (160 m) NASPROTNO zapisu griblje-v-stevilkah »153,4 metra nad morjem« — čez-zapisni nesklad za isto vas; preverba z zunanjim virom: Wikipedija SL, članek Griblje, infobox »nadmorska=153,4« (vir SURS, Prebivalci po spolu, občine in naselja) → popravek obeh jezikov na stopetintridesetih / hundred and fifty-three (153)
+- Ostale oznake audit-crossfile preverjene kot legitimne: record-of-month anton-brodaric »Februarja 2025« (čajanka v Kovačnici sreče 6. 2. 2025 — raziskovalna nota); novo-zivljenje-1914 »5. novembra 1889« (blagoslov šole — križ-referenca na vaska-sola); kolpa-extremi »17. septembra« (datum v opombi vira ARSO, zgodba ima zdaj obseg 15.–18. 9.); minute obcina-griblje 435 (štiristo petintrideset, besedno); meja-1991 1991 (tisoč devetsto enaindevetdeset, besedno); griblje-vas 1468/550 (besedno); kolpa-reka 22-23 °C (samo v minutni zgodbi — »najtoplejša reka Slovenije«, brez nasprotja v staršu)
+- Po popravkih: tsc 0 napak; eslint čist; reseed + restart dev (setsid -f, pkill z ne-zadeto-seboj vzorcem); baza: anton-brodaric stopetintridesetih/hundred and fifty-three ✓, 160 izginil v obeh jezikih
+- VERIFIKACIJA v brskalniku: dialog anton-brodaric SL (stopetintridesetih ✓, stoterinšestdesetih izginil) in EN (hundred and fifty-three ✓, hundred and sixty izginil); 0 napak v konzoli
+- README: 24. sklop dopolnjen z dodatkoma cross-file revizije (popravek tipke 21/21 v isti vrstici)
+
+Stage Summary:
+- 2 novi popravki: brodaric 160→153 m (zunanja preverba: Wikipedija/SURS 153,4), adventni koledar 88→89 ×5 jezikov; revizijsko orodje razširjeno na satelitske datoteke (audit-crossfile.ts)
+- VLM/web_search kvoti še vedno 429 — zanka za mrliško knjigo teče naprej (13 posnetkov pripravljenih v /tmp); OCR tesseract kurzive ne prebere
+- Odprto: meje vpisov 44–97/98 (čaka VLM); župani občine (ni na spletu); kataster Franciškanski na podatki.gov.si (neraziskan)
