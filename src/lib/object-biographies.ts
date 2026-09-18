@@ -3247,6 +3247,83 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
     ],
   },
   {
+    slug: "kranjska-sivka",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "1879",
+        yearLabelEn: "1879",
+        sortYear: 1879,
+        textSi:
+          "Znanost opiše Apis mellifera carnica in pasmo imenuje po Kranjski; vitko telo, temno rjavi obročki in srebrnosive zadkove dlačice ji dajo ljudsko ime sivka.",
+        textEn:
+          "Science describes Apis mellifera carnica and names the breed after Carniola; the slender body, dark brown rings and silvery-grey abdominal hairs give her the folk name sivka, the grey one.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "svet",
+        yearLabelEn: "the world",
+        sortYear: 1900,
+        textSi:
+          "Druga najbolj razširjena medonosna pasma na svetu (za italijansko): Koroška in Štajerska, Madžarska, Romunija, Hrvaška, Bosna in Hercegovina, Srbija — umetno naseljena tudi v Nemčiji in drugod.",
+        textEn:
+          "The second most widespread honey bee breed in the world (after the Italian): Carinthia and Styria, Hungary, Romania, Croatia, Bosnia and Herzegovina, Serbia — settled by man in Germany and beyond.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1882 → 1912",
+        yearLabelEn: "1882 → 1912",
+        sortYear: 1882,
+        textSi:
+          "Vas in čebela: Ivan Barle postavi šolski čebelnjak v Podzemlju (1882); Anton Žnideršič oblikuje AŽ-panj, Konrad Barle pa ga prinese v Belo krajino — metliška podružnica 1912.",
+        textEn:
+          "Village and bee: Ivan Barle sets a school apiary at Podzemelj (1882); Anton Žnideršič shapes the AŽ hive, and Konrad Barle carries it into Bela krajina — the Metlika branch of 1912.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 3,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1734 → 1773",
+        yearLabelEn: "1734 → 1773",
+        sortYear: 1734,
+        textSi:
+          "Anton Janša, rojen 20. maja 1734 v Breznici na Gorenjskem, postane prvi učitelj čebelarstva na dunajski cesarski šoli (odredba Marije Terezije 1769); umre na Dunaju 1773.",
+        textEn:
+          "Anton Janša, born on 20 May 1734 at Breznica in Gorenjska, becomes the first teacher of beekeeping at the imperial school in Vienna (Maria Theresa's order of 1769); he dies in Vienna in 1773.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "20. 12. 2017",
+        yearLabelEn: "20 December 2017",
+        sortYear: 2017,
+        textSi:
+          "Generalna skupščina OZN soglasno potrdi slovenski predlog (pobuda Čebelarske zveze Slovenije): svetovni dan čebel vsako leto 20. maja — na Janšev rojstni dan.",
+        textEn:
+          "The UN General Assembly unanimously confirms Slovenia's proposal (the initiative of the Beekeeping Association of Slovenia): World Bee Day every 20 May — on Janša's birthday.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "danes",
+        yearLabelEn: "present",
+        sortYear: 2026,
+        textSi:
+          "Vsako pomlad znova leta nad istimi gribeljskimi vrtovi — edini živeči prebivalec zbirke. Glavna slika zapisa: delavka na begu pred panjem (Richard Bartz).",
+        textEn:
+          "Every spring she flies above the same Griblje gardens again — the collection's only living inhabitant. The record's main image: a worker at the hive entrance (Richard Bartz).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 4,
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     phases: [
       {

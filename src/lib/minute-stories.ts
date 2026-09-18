@@ -433,6 +433,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
       "The hill beneath which Griblje was written. Podzemelj has been on paper since 1279 — a hundred and eighty-nine years before Griblje — and its parish of St. Martin recorded every Griblje baptism, wedding and funeral. On the top of Kučar the old time reaches far deeper: a Hallstatt settlement, barrow fields of over thirty mounds, a late-antique complex with two churches and a baptistery. And on Pezdirčeva njiva — a field with a Griblje surname — Celtic gold: an imitation of a stater of Alexander the Great. A look at this hill is a look at three thousand years, in which the village received its name, its alphabet and its memory.",
   },
   {
+    slug: "kranjska-sivka",
+    textSi:
+      "Nad vrtovi vasi vsako pomlad zamahuje krila najmanjši zapis te zbirke: kranjska sivka, siva čebela, druga najbolj razširjena pasma na svetu. Ivan Barle jo je gojil ob podzemeljski šoli, sin Konrad je z AŽ-panjem osvojil Belo krajino, svet pa ji je za praznik dal rojstni dan Antona Janše: svetovni dan čebel, 20. maj, slovensko darilo OZN. Življenje ene čebele merijo tedni; življenje pasme tisočletja.",
+    textEn:
+      "Above the village gardens a wing beats every spring — the smallest record of this collection: the Carniolan grey bee, the second most widespread breed in the world. Ivan Barle kept her beside the Podzemelj school, his son Konrad took the AŽ hive across Bela krajina, and the world gave her feast the birthday of Anton Janša: World Bee Day, 20 May, Slovenia's gift to the UN. The life of one bee is measured in weeks; the life of a breed in millennia.",
+  },
+  {
     slug: "joze-dular",
     textSi:
       "Trideset let je vodil Belokranjski muzej v Metliki — in petdeset let živel v isti hiši, na kateri mu je po smrti ploščo postavilo društvo, ki ga je imelo za predsednika. Jože Dular je bil pesnik nove romantike in pripovednik, a njegov najgloblji pečat je zgodovina: Metlika skozi stoletja, Semič, Adlešiči, gasilstvo, godba. Za Griblje je najpomembnejša tanka knjižica o Županičevi spominski plošči — dokument o dnevu, ko se je vas spomnila svojega največjega sina. Vsak muzej vasi, tudi ta digitalni, stoji na plečih takih mož. Dular jih je nosil trideset let.",

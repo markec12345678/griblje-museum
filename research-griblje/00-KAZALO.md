@@ -6,6 +6,8 @@
 2. **[02-cerkev-pgd-drustva.md](./02-cerkev-pgd-drustva.md)** — cerkev sv. Vida (1526–2026), PGD Griblje (1927), podružnična šola (1889), muzejska učilnica (2022), TD Griblje in prireditve
 3. **[03-kolpa-dediscina-fotografije.md](./03-kolpa-dediscina-fotografije.md)** — Kolpa, mlini/malenci, 2. svetovna vojna (zaseda 1941, zavezniška letala 1945), izseljenstvo, nesnovna dediščina, fotografije z licencami
 
+11. **[11-kranjska-sivka-2026-09.md](./11-kranjska-sivka-2026-09.md)** — 26. sklop: kranjska sivka (Apis mellifera carnica, 1879), AŽ-panj (Žnideršič), svetovni dan čebel (OZN 2017) — zapis 92
+
 ## Gradiva
 - `commons-slike.json` — metapodatki 11 slik Wikimedia Commons (URL, licenca, avtor)
 - `slike/` — 3 prenesene fotografije spomenikov (Kamra/Knjižnica Črnomelj, CC BY-NC)

@@ -414,6 +414,13 @@ export const WALKS: Walk[] = [
         noteEn:
           "From the emigrant ships to the red carpet: the Jandreč brothers left Gornje Griblje at the end of the nineteenth century — a granddaughter of the line became a film noir star at MGM.",
       },
+      {
+        exhibitSlug: "kranjska-sivka",
+        noteSi:
+          "Najmanjši potnik te vasi ni nikoli rabil ladje: kranjska sivka je zrasla v tej deželi in postala druga najbolj razširjena čebelja pasma sveta — svet pa ji je na slovensko pobudo odprl lastni praznik, svetovni dan čebel 20. maja.",
+        noteEn:
+          "This village's smallest traveller never needed a ship: the Carniolan grey bee grew in this land and became the world's second most widespread bee breed — and on Slovenia's initiative the world gave her a feast of her own, World Bee Day on 20 May.",
+      },
 
       {
         exhibitSlug: "toni-gasperic",
