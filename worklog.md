@@ -1901,3 +1901,32 @@ Stage Summary:
 - NE SPREMINJANO (dokumentirano): kuratorski graf OBJECT ↔ OBJECT (connections/walks — git diff prazen), vsi obstoječi podatki (museum-content, object-biographies, source-registry), UI in API-ji (nič uvoza entitet v aplikacijo — plast je priprava za TASK 40/41), licence in viri (TASK 38 vrsta nedotaknjena), 372 biografskih faz (nič avtomatskih dogodkov), organizacije/šege/vrste/svetniki (niso entitete tega sloja — P4)
 - Spremenjene datoteke: src/lib/entities.ts (nova, 92 entitet + model + poizvedbe + vrsta), scripts/audit-entities.ts (nova, validacija/inventura/invarianti/vrsta), README.md (funkcija + 37. sklop), worklog.md (ta vnos)
 - Naslednja faza (priporočilo, J): kuratorske odločitve vrste (P0 Madronič, P1 potrditve aliasov in istega dogodka MVG-014↔MVG-056, P3 manjkajoči atributi) → šele nato TASK 40 (Timeline + Map of Memory) čez ENTITY_BY_ID/entitiesForExhibit in TASK 41 (AI kustos) z dokazno vezjo; odločitve kustosa so pogoj za odpiranje entitet v UI/API
+
+---
+Task ID: 42
+Agent: Main agent (Z.ai Code)
+Task: TASK 39 / TESTI — testna surita entitetne plasti (100 trditev, 9 razdelkov) + polna regresija osnovne linije (93/93 strani, 93/93 IIIF, OpenData, QR, walks, related, sourceIndex, sourceKey, usedBy, i18n, sitemap, mobilno, tsc, eslint) + posebni testi MVG-010 ↔ MVG-043 in Konrad ↔ Ivan Barle proti napačni avtomatski združitvi
+
+Work Log:
+- Izhodišče bc7cab1 (37. sklop); delovno drevo čisto; dev strežnik teče; prepovedana lista spoštovana (nič grafske baze/embedding/chatbota/UI/CMS/samodejnih združitev)
+- Predpriprava: preverba testnih podatkov — vir »Šopek poljskih cvetlic« (MVG-010 Županičev zbornik / MVG-043 Etnolog) = 2 vrstici z 2 LOČENIMA sourceKey (B-kandidat TASK 38 ostaja kustosu); WorldCat 821110335 = 2 vrstici → 1 sourceKey (normalizacija ostaja); Wikipedija Griblje = 1 ključ × 13 zapisov; min relatedExhibits (limit 5) = 5 (MVG-001); walkStopOf pokriva vseh 93
+- NOVA skripta scripts/test-entities.ts — 100 trditev v 9 razdelkih (nič ne spreminja):
+  - T1 deterministični ID-ji (7): oblika vrsta:potrjena-identiteta, predpona = vrsta, čisti ASCII, osebe/kraji brez številčnih repov (prepoved person-001), števke v dogodkih samo semantične letnice 1400–2100, časovni ID-ji = letnica/obdobje, determinizem z dvojnim zagonom
+  - T2 podvajanja (9): enolični ID-ji/oznake/evidence/aliasi + kolizije alias ↔ tuja kanonična labela
+  - T3 unresolved (12): 14 znanih oseb IZVEN registra (Madronič ×2, Grabrijan, Janez Dular, Katarina Brinc, sodobni akterji, svetniki, Pupin, Pahor), šege niso dogodki, 372 faz ≠ dogodki (27), organizacije niso entitete, vrsta P0–P4 pokriva primere (28)
+  - T4 evidence vezi (6): vsak slug obstaja, sourceIndex v mejah, 13 TOČKOVNIH vsebinskih preverb (vir na mestu resnično nosi osebo: Veselko, Snoj, Šimec, Ivan Barle, Vidmar, Janša, Žnideršič, Freyer, Karlin), biografije 372/0
+  - T5 ločitev OSEB (23): MVG-010 ↔ MVG-043 — Niko/Katarina/Mate Zupanič TRIJE vnosi, skupen zapis MVG-043 (mater + sin) NE združi (dve entiteti, letnici 1876/1855), deljen vir Šopek = 2 vrstici/2 sourceKey; Konrad ↔ Ivan ↔ Janko Barle TRIJE vnosi (ID-ji, letnice 1875–1951/1841–1930/1869–1941, vlogi, skupna omemba MVG-060 ne združi); Totter ×6; Matiček/Franci Brinc/Županič-Švarski = dokumentirani aliasi + P1; Jože ≠ Janez Dular; Madronič ×2 NOBENA entiteta (MVG-008/045 brez osebnih entitet); Fran Vesel ≠ Franjo Veselko; Tone Kralj brez izračunanega leta
+  - T6 ločitev KRAJEV (8): vas + 4 zaselki = 5; Dragoši (kraj) ≠ Nikolaj Dragoš (oseba); Otok ≠ Krasinec; Podzemelj ≠ Kučar; Šokčev dvor ≠ Žuniči; sosednje vasi/izseljenska geografija izven; ASCII ID
+  - T7 ločitev DOGODKOV (11): 1941 ≠ 1944 ≠ 1945; MVG-014 ↔ MVG-056 isti dogodek vezan na OBA zapisa + P1-E1 (zapisa ostajata ločena, 93/93); zvon 1998 ≠ 2008; ustanovitev 1854 ≠ ukinitev 1933; 6 ustanovitev = 6 dogodkov; specifične izvedbe DA/šega NE; letališče = KRAJ, zračni most = DOGODEK; vsak dogodek ima SoftTime
+  - T8 obstoječe relacije (12): 93/93 + MVG ×93, walkStopOf vse, relatedExhibits ≥ 5 (min 5 @ MVG-001), connectionsBetween deluje (category/place/source), 315 identitet/51 deljenih, WorldCat 2 vrstici → 1 sourceKey + usedBy 2, Wikipedija 1 × 13, 412 vrstic, 93 biografij/372 faz
+  - T9 HTTP regresija (8): 93/93 strani 200, 93/93 IIIF manifestov vsak z ≥1 virom, OpenData 93/412 + sourceKey 412/412, QR /?exhibit=zvon-2008 200 + parameter v strežniškem HTML, globoka povezava sprehoda 200, sitemap 94
+- Popravek med testiranjem: trditev T5.11 napačno postavljena (»Niko NE sme biti vezan na MVG-043«) — registr PRAVILEN (MVG-043 legitimno omeni mater in sina); test preoblikovan v MOČNEJŠEGA: skupen zapis ne sme pomeniti združitve (dve entiteti, dve letnici) — 99/100 → 100/100
+- Tipizacijski popravki skripte za tsc: personOf/placeOf/eventOf (zožitev EntityRef unije), toDTO adapter (seme → ExhibitDTO za connections/relatedExhibits — ista polja, ki jih pravila berejo), odstranjena neuporabljena helperja
+- VERIFIKACIJA: 100 ✓ / 0 ✗ (dvojni zagon: bajtno identičen izhod — diff prazen → determinizem); tsc 0 (razen znane scripts/audit-semantics.ts), eslint 0; verify-i18n 811 × 5; agent-browser: QR globoka povezava odpre dialog MVG-048 (zvon-2008, kredit Chernilevsky), mobilno 390 px brez preliva (scrollWidth = viewport), 0 napak v konzoli; dev.log brez novih napak
+- README: dopolnjena vrstica funkcije (testna surita) + 38. sklop v dnevniku razvoja
+
+Stage Summary:
+- Osnovna linija TASK 38 NEDOTAKNJENA in DOKAZANA s testi: source authority (315/51), WorldCat normalizacija (2 vrstici → 1 sourceKey, usedBy 2), 93/93 objektov, nobena obstoječa povezava ni izgubljena (walks/related/sourceIndex/sourceKey/usedBy/IIIF/OpenData/QR/sitemap/i18n)
+- Posebej naročeni identitetni tveganji PREVERJENI: MVG-010 ↔ MVG-043 (3 entitete Zupanič; skupen zapis ne združi; deljen vir = 2 sourceKey) in Konrad ↔ Ivan Barle (3 entitete; skupna omemba MVG-060 ne združi) — NIč napačne avtomatske združitve
+- Spremenjene datoteke: scripts/test-entities.ts (nova, 100 trditev), README.md (funkcija + 38. sklop), worklog.md (ta vnos); src/lib/entities.ts NESPREMENJEN od bc7cab1
+- Naslednji korak (priporočilo, J): repozitorij je TEHNIČNO pripravljen za TASK 40 (Timeline); pred njim kuratorsko rešiti vsaj P1-E1 (potrditev istega dogodka MVG-014 ↔ MVG-056, sicer časovnica kaže dvojni vnos 1945) in P1-E2/E3/E5 (potrditve aliasov); P0-E1 (Madronič) je dokumentirana ovira, ne blokada; P3 vrzeli (rojstna leta Kralj/Filak/Ciril Totter) bodo časovnico pokazale kot vrzeli — po načrtu
