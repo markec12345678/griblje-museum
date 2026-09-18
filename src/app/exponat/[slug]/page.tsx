@@ -8,12 +8,16 @@ import {
   Hourglass,
   Landmark,
   MapPin,
+  Network,
+  Route,
   ShieldCheck,
   ShieldQuestion,
   Sparkles,
 } from "lucide-react";
 
 import { seedExhibits } from "@/lib/museum-content";
+import { relatedExhibits } from "@/lib/connections";
+import { walkStopOf } from "@/lib/walks";
 import { SITE_URL } from "@/lib/site";
 import { WIKIDATA_SAMEAS } from "@/lib/wikidata";
 import { IMAGE_DIMENSIONS } from "@/lib/image-dimensions";
@@ -23,9 +27,52 @@ import {
   MUSEUM_ID,
   COLLECTION_ID,
 } from "@/lib/site-jsonld";
-import type { EvidenceStatus, ExhibitCategory, SourceType } from "@/lib/types";
+import type { EvidenceStatus, ExhibitCategory, ExhibitDTO, SourceType } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
+
+/* --- Zbirka v obliki ExhibitDTO ------------------------------------------
+ * Pravila sorodnosti (connections.ts) in članstvo v sprehodih (walks.ts)
+ * berejo DTO obliko zapisa — isto pravilno gonilnik, kot ga živi muzej
+ * (dialog zapisa). Seme je statično, zato pretvorba steče enkrat.
+ * sort-order = vrstni red semena (MVG), kot povsod drugje. */
+const COLLECTION_DTO: ExhibitDTO[] = seedExhibits.map((ex, index) => ({
+  id: ex.slug,
+  slug: ex.slug,
+  museumNo: ex.museumNo ?? null,
+  category: ex.category,
+  titleSi: ex.titleSi,
+  titleEn: ex.titleEn,
+  periodSi: ex.periodSi,
+  periodEn: ex.periodEn,
+  summarySi: ex.summarySi,
+  summaryEn: ex.summaryEn,
+  storySi: ex.storySi,
+  storyEn: ex.storyEn,
+  evidenceStatus: ex.evidenceStatus,
+  image: ex.image ?? null,
+  imageCredit: ex.imageCredit ?? null,
+  model3dUrl: ex.model3dUrl ?? null,
+  model3dCredit: ex.model3dCredit ?? null,
+  yearFrom: ex.yearFrom ?? null,
+  yearTo: ex.yearTo ?? null,
+  lat: ex.lat ?? null,
+  lng: ex.lng ?? null,
+  coordsApprox: ex.coordsApprox ?? false,
+  featured: ex.featured ?? false,
+  sortOrder: index,
+  addedAt: ex.addedAt ?? null,
+  sources: ex.sources.map((s) => ({
+    id: `${ex.slug}:${s.key}`,
+    nameSi: s.nameSi,
+    nameEn: s.nameEn,
+    sourceType: s.sourceType,
+    license: s.license,
+    url: s.url ?? null,
+    noteSi: s.noteSi ?? null,
+    noteEn: s.noteEn ?? null,
+  })),
+}));
 
 /**
  * Muzejski zapis predmeta — /exponat/[slug].
@@ -81,6 +128,16 @@ const SL = {
   viewSource: "oglej si vir",
   availableAt: "Dostopno na",
   licence: "Licenca",
+  relatedTitle: "Sorodni zapisi",
+  relatedHint: "Povezave, ki jih nosijo skupna dejstva — isti vir, isto obdobje, bližina.",
+  walkSectionTitle: "Zapis na sprehodu",
+  stopOf: "Postaja",
+  onTheWalk: "na sprehodu",
+  walkNoteLabel: "Kuratorska opomba postaje",
+  prevStop: "Prejšnja postaja",
+  nextStop: "Naslednja postaja",
+  takeWalk: "Zaženi sprehod v muzeju",
+  takeWalkHint: "Voden ogled: vsaka postaja je zapis z avdiom in sledenjem napredka.",
   categories: {
     kraj: "Kraji",
     kolpa: "Kolpa",
@@ -143,6 +200,16 @@ const EN = {
   viewSource: "view source",
   availableAt: "Available at",
   licence: "Licence",
+  relatedTitle: "Related records",
+  relatedHint: "Connections carried by shared facts — same source, same period, proximity.",
+  walkSectionTitle: "Record on a guided walk",
+  stopOf: "Stop",
+  onTheWalk: "on the walk",
+  walkNoteLabel: "Curatorial note for this stop",
+  prevStop: "Previous stop",
+  nextStop: "Next stop",
+  takeWalk: "Take this walk in the museum",
+  takeWalkHint: "A guided tour: every stop is a record, with audio and progress tracking.",
   categories: {
     kraj: "Places",
     kolpa: "The Kolpa",
@@ -232,7 +299,11 @@ export async function generateMetadata({ params, searchParams }: PageProps): Pro
     title,
     description,
     alternates: {
-      canonical: `/exponat/${slug}`,
+      // Samo-referenčni kanonični naslov TISTE jezikovne različice, ki je
+      // odprta: slovenska stran je kanon zapisa, angleška (?lang=en) pa
+      // kanon svoje različice — sicer bi hreflang cilj na ne-kanonični URL
+      // iskalnik tiho ignoriral (odprta točka Faze 2, §13B).
+      canonical: isEn ? `/exponat/${slug}?lang=en` : `/exponat/${slug}`,
       languages: {
         sl: `/exponat/${slug}`,
         en: `/exponat/${slug}?lang=en`,
@@ -368,6 +439,25 @@ export default async function ExhibitRecordPage({ params, searchParams }: PagePr
 
   const prev = index > 0 ? seedExhibits[index - 1] : null;
   const next = index < seedExhibits.length - 1 ? seedExhibits[index + 1] : null;
+
+  /* Raziskovanje z zapisa v zapis — enaka pravila kot živi muzej:
+   * sorodnost (povezave z razlogom) + članstvo v kuriranem sprehodu.
+   * Tudi obiskovalec s kodo QR ali iz iskalnika ima pot naprej —
+   * ne samo prejšnji/naslednji po inventarni številki.
+   * Limit 5 (ne 3 kot v dialogu): stran nima menijev niti iskanja,
+   * test »one object → five more« pa mora zadoščiti iz same strani. */
+  const dto = COLLECTION_DTO[index]!;
+  const related = relatedExhibits(dto, COLLECTION_DTO, 5);
+  const walkInfo = walkStopOf(slug);
+  const walkStop = walkInfo ? walkInfo.walk.stops[walkInfo.index]! : null;
+  const prevStopEx =
+    walkInfo && walkInfo.index > 0
+      ? seedExhibits.find((e) => e.slug === walkInfo.walk.stops[walkInfo.index - 1]!.exhibitSlug) ?? null
+      : null;
+  const nextStopEx =
+    walkInfo && walkInfo.index < walkInfo.walk.stops.length - 1
+      ? seedExhibits.find((e) => e.slug === walkInfo.walk.stops[walkInfo.index + 1]!.exhibitSlug) ?? null
+      : null;
 
   const jsonLd = buildJsonLd(slug, isEn);
 
@@ -594,6 +684,132 @@ export default async function ExhibitRecordPage({ params, searchParams }: PagePr
             </a>
             <p className="mt-2 text-xs text-muted-foreground">{s.openInMuseumHint}</p>
           </section>
+
+          {/* ZAPIS NA SPREHODU — kuratorska zgodba, ki nosi ta zapis.
+              Vsak zapis je postaja natanko enega od 5 tematskih sprehodov;
+              opomba postaje je dodatna plast zgodbe, sosedi po sprehodu
+              pa kuratorski vrstni red (ne inventarni). */}
+          {walkInfo && walkStop && (
+            <section aria-labelledby="sprehod" className="mt-10 print:hidden">
+              <h2
+                id="sprehod"
+                className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+              >
+                {s.walkSectionTitle}
+              </h2>
+              <div className="mt-4 rounded-lg border bg-card p-4">
+                <p className="flex flex-wrap items-center gap-2">
+                  <Route className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                  <span className="text-sm font-semibold">
+                    {isEn ? walkInfo.walk.titleEn : walkInfo.walk.titleSi}
+                  </span>
+                  <span className="rounded-full bg-muted px-2.5 py-0.5 text-xs text-muted-foreground">
+                    {s.stopOf} {walkInfo.index + 1}/{walkInfo.walk.stops.length} · {s.onTheWalk}
+                  </span>
+                </p>
+                <p className="mt-3 border-l-4 border-primary/40 pl-3 text-sm leading-relaxed text-muted-foreground">
+                  <span className="sr-only">{s.walkNoteLabel}: </span>
+                  {isEn ? walkStop.noteEn : walkStop.noteSi}
+                </p>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  {prevStopEx ? (
+                    <a
+                      href={`/exponat/${prevStopEx.slug}`}
+                      className="group inline-flex min-h-11 items-start gap-3 rounded-lg border p-3 transition-colors hover:border-primary/40"
+                    >
+                      <ArrowLeft
+                        className="mt-1 h-4 w-4 shrink-0 text-muted-foreground group-hover:text-primary"
+                        aria-hidden="true"
+                      />
+                      <span className="min-w-0">
+                        <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                          {s.prevStop}
+                        </span>
+                        <span className="mt-1 block text-sm font-medium">
+                          {prevStopEx.museumNo ? `${prevStopEx.museumNo} · ` : ""}
+                          {isEn ? prevStopEx.titleEn : prevStopEx.titleSi}
+                        </span>
+                      </span>
+                    </a>
+                  ) : (
+                    <span aria-hidden="true" />
+                  )}
+                  {nextStopEx && (
+                    <a
+                      href={`/exponat/${nextStopEx.slug}`}
+                      className="group inline-flex min-h-11 items-start justify-end gap-3 rounded-lg border p-3 text-right transition-colors hover:border-primary/40 sm:col-start-2"
+                    >
+                      <span className="min-w-0">
+                        <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                          {s.nextStop}
+                        </span>
+                        <span className="mt-1 block text-sm font-medium">
+                          {nextStopEx.museumNo ? `${nextStopEx.museumNo} · ` : ""}
+                          {isEn ? nextStopEx.titleEn : nextStopEx.titleSi}
+                        </span>
+                      </span>
+                      <ArrowRight
+                        className="mt-1 h-4 w-4 shrink-0 text-muted-foreground group-hover:text-primary"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  )}
+                </div>
+                <a
+                  href={`/?walk=${walkInfo.walk.id}&stop=${walkInfo.index + 1}`}
+                  className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-primary underline underline-offset-4 hover:text-primary/80"
+                >
+                  {s.takeWalk}
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </a>
+                <p className="mt-1.5 text-xs text-muted-foreground">{s.takeWalkHint}</p>
+              </div>
+            </section>
+          )}
+
+          {/* SORODNI ZAPISI — povezave, ki jih nosijo skupna dejstva
+              ( isti vir, isto obdobje, bližina, tema, kuratorska vez).
+              Enaka pravila sorodnosti kot v živem muzeju (connections.ts). */}
+          {related.length > 0 && (
+            <section aria-labelledby="sorodni" className="mt-10 print:hidden">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h2
+                  id="sorodni"
+                  className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                >
+                  {s.relatedTitle}
+                </h2>
+                <span className="text-xs text-muted-foreground">{s.relatedHint}</span>
+              </div>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+                {related.map((rel) => (
+                  <li key={rel.exhibit.slug}>
+                    <a
+                      href={`/exponat/${rel.exhibit.slug}`}
+                      className="group flex h-full min-h-11 flex-col gap-2 rounded-lg border p-4 transition-colors hover:border-primary/40"
+                    >
+                      <span className="text-xs font-semibold text-primary">
+                        {rel.exhibit.museumNo}
+                      </span>
+                      <span className="text-sm font-semibold leading-snug">
+                        {isEn ? rel.exhibit.titleEn : rel.exhibit.titleSi}
+                      </span>
+                      <span className="mt-auto flex flex-wrap gap-1">
+                        {rel.connections.slice(0, 2).map((conn) => (
+                          <span
+                            key={conn.kind}
+                            className="rounded-full bg-muted px-2 py-0.5 text-[10px] text-muted-foreground"
+                          >
+                            {isEn ? conn.labelEn : conn.labelSi}
+                          </span>
+                        ))}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {/* Sosednja zapisa — usmerjanje naprej (tudi fizičnemu obiskovalcu) */}
           <nav
