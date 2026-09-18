@@ -119,6 +119,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
 
   // 25. sklop: Kučar nad Podzemljem (Uroš Novina, CC BY 2.0, 2024; optimizirano 1600×1200)
   "/images/authentic/kucar-podzemelj.jpg": { width: 1600, height: 1200 },
+
+  // 26. sklop: kranjska sivka — delavka pred panjem (Richard Bartz, CC BY-SA 2.5; optimizirano 1600×1042)
+  "/images/authentic/kranjska-sivka.jpg": { width: 1600, height: 1042 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };

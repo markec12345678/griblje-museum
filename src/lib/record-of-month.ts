@@ -213,6 +213,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
       noteEn:
         "As the water warms, the village moves back to the riverbank — a good month for the record of the river that drew the village's shape.",
     },
+    {
+      slug: "kranjska-sivka",
+      noteSi:
+        "20. maja svet praznuje svetovni dan čebel — po slovenski pobudi, na rojstni dan Antona Janše. Mesec sive gospodarice gribeljskih panjev.",
+      noteEn:
+        "On 20 May the world keeps World Bee Day — by Slovenia's initiative, on the birthday of Anton Janša. The month of the grey mistress of Griblje's hives.",
+    },
   ],
   /* ------------------------------- JUNIJ ------------------------------ */
   [

@@ -4734,6 +4734,95 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "kranjska-sivka",
+    addedAt: "2026-09-18",
+    category: "narava",
+    titleSi: "Kranjska sivka — siva gospodarica gribeljskih panjev",
+    titleEn: "The Carniolan grey bee — the grey mistress of Griblje's hives",
+    periodSi: "1879 → danes · Apis mellifera carnica · svetovni dan čebel 20. maja",
+    periodEn: "1879 → present · Apis mellifera carnica · World Bee Day 20 May",
+    summarySi:
+      "Siva čebela, ki je zrasla v tej deželi in osvojila svet: druga najbolj razširjena pasma na svetu, miroljubna in zgodnjepomladanska — in razlog, da svet 20. maja praznuje svetovni dan čebel po slovenski pobudi.",
+    summaryEn:
+      "The grey bee that grew in this land and conquered the world: the second most widespread bee breed on earth, gentle and early-spring — and the reason the world keeps World Bee Day on 20 May by Slovenia's initiative.",
+    storySi:
+      "Nad gribeljskimi vrtovi vsako pomlad zamahuje krila majhen sivi delavec: kranjska čebela (Apis mellifera carnica), ki ji domačini pravijo kar sivka ali kranjica. Znanost jo je opisala leta 1879 in poimenovala po deželi, iz katere je zrasla — po Kranjski. Danes je za italijansko čebelo druga najbolj razširjena medonosna pasma na svetu: najdeš jo od Koroške in Štajerske prek Madžarske in Romunije do Balkana, umetno pa so jo naselili še v Nemčiji ter drugod. Njeno telo je vitko, obročki zadka temno rjavi, dlačice na zadku srebrno sive — po njih nosi ime. Slovenija ima za njeno domovino Gorenjsko; a krajinski vrt, travnik ob Kolpi in gozd nad njim so njen dom točno tako kot gorenjski.\n\nČebelarji jo imajo radi iz dobrih razlogov: do čebelarja je miroljubna, zatorej panji mirno stojijo tik za hišo; dolg jezik (6,5 do 6,7 milimetra) jo nosi prav do deteljnega nektarja; z malo hrane prezimi in v majhnem zimskem krogu; pomlad se razvije bliskovito — prav takrat, ko belokranjski sad in travniki zamahujejo s cvetjem; usmerjena je v gozdno pašo, kot bi bila rojena za dinarske soteke; ko pa paša pojenja, zalego hitro skrči, da nič ne zapravlja. Njene slabosti so prav tako znane — rada se roji, voska izdeluje manj — a v pokrajini, kjer je bil med stoletja edina sladkost, ki je ni bilo treba kupiti, so bile te lastnosti dogovor, ne napaka.\n\nV tej zbirki čebele niso naključje. Ob podzemeljski šoli jih je učitelj Ivan Barle gojil že leta 1882 v šolskem čebelnjaku; njegov sin Konrad (zapis konrad-barle) pa je Beli krajini prinesel AŽ-panj — Alberti-Žnideršičev panj, ki ga je po zgledu italijanskega čebelarja Albertija oblikoval Anton Žnideršič (1874–1947): premični satniki stojijo podolžno na prečnih palicah, enake mere v plodišču in medišču, panj pa se ga da prevažati na pašo. Žnideršičevec se je uveljavil po vsej Sloveniji in na Hrvaškem; Konrad pa ga je od ustanovitve metliške podružnice 1912 učil postavljati ob šolah. Poslikane čele belokranjskih čebelnjakov, ki jih danes fotografira vsak kolesar ob Kolpi, so vnukinje tega gibanja.\n\nKakor so gribeljski otroci nekoč odhajali v svet, je odšla tudi čebela — a nikoli ni prenehala biti slovenska. Ko je Čebelarska zveza Slovenije predlagala svetovni dan čebel in pobudo ponesla v Organizacijo združenih narodov, si je za datum izbrala rojstni dan Antona Janše: 20. maja 1734 se je v Breznici na Gorenjskem rodil kmečki sin, ki je postal prvi učitelj čebelarstva na dunajski cesarski šoli (ustanovila jo je leta 1769 Marija Terezija). Generalna skupščina je predlog soglasno potrdila 20. decembra 2017; od takrat svet 20. maja praznuje svetovni dan čebel. Čebele in drugi opraševalci, pravijo pri tem prazniku, nosijo varnost prehranske preskrbe, njihova prisotnost pa je merilo stanja lokalnega okolja: kdor v Gribljah vidi zdrave čebele, vidi tudi zdravo vas.\n\nZakaj je ta zapis v muzeju vasi? Ker je edini prebivalec zbirke, ki živi še vedno: kranjska sivka je starejša od vsake listine tu — letela je nad Kolpo že pred Griblachom 1468 — in mlajša od vseh: vsako pomlad znova zamahuje nad istimi vrtovi. Ivan Barle jo je učil ob šoli, Konrad jo je nosil po Beli krajini, svet pa ji je odprl vrata po Janševi poti. Življenje ene čebele merijo tedni, življenje pasme tisočletja — ta muzej hrani čas v obojem. Muzej išče: stari AŽ-panj iz gribeljskega čebelnjaka s poslikanim čelom in fotografijo gribeljskega čebelarja pri delu.",
+    storyEn:
+      "Above the gardens of Griblje a small grey worker beats her wings every spring: the Carniolan bee (Apis mellifera carnica), whom the locals call simply sivka, the grey one, or kranjica, the Carniolan. Science described her in 1879 and named her after the land she grew from — Carniola. Today she is the second most widespread honey bee breed in the world after the Italian: found from Carinthia and Styria through Hungary and Romania to the Balkans, and settled by man in Germany and beyond. Her body is slender, the rings of her abdomen dark brown, the hairs of her abdomen silvery grey — it is from them that she carries her name. Slovenia holds Gorenjska to be her homeland; but a village garden, a meadow by the Kolpa and the forest above it are her home quite as much.\n\nBeekeepers love her for good reasons: she is gentle toward the beekeeper, so that hives stand quietly right behind the house; a long tongue (6.5 to 6.7 millimetres) carries her right to the clover nectar; she overwinters on little food and in a small winter cluster; in spring she builds up at lightning speed — just when Bela krajina's orchards and meadows wave with blossom; she is geared to the forest flow, as if born for the Dinaric woods; and when the flow ebbs, she cuts the brood quickly, wasting nothing. Her weaknesses are known as well — she swarms readily and draws less wax — but in a country where honey was for centuries the only sweetness that did not have to be bought, these traits were an agreement, not a fault.\n\nIn this collection the bees are no accident. Beside the Podzemelj school the teacher Ivan Barle kept them as early as 1882, in a school apiary; his son Konrad (the record konrad-barle) brought Bela krajina the AŽ hive — the Alberti-Žnideršič hive, shaped after the Italian beekeeper Alberti by Anton Žnideršič (1874–1947): movable frames standing lengthwise on cross bars, of equal measure in the brood box and the honey box, a hive that can be carried to the flow. The žnideršič spread across all Slovenia and into Croatia; and from the founding of the Metlika branch in 1912 Konrad taught to set it beside schools. The painted fronts of Bela krajina's apiaries, which every cyclist by the Kolpa photographs today, are granddaughters of that movement.\n\nAs Griblje's children once left for the world, the bee left too — but she never ceased to be Slovene. When the Beekeeping Association of Slovenia proposed a World Bee Day and carried the initiative into the United Nations, the date chosen was the birthday of Anton Janša: on 20 May 1734 a farmer's son was born at Breznica in Gorenjska who became the first teacher of beekeeping at the imperial school in Vienna (founded in 1769 by Maria Theresa). The General Assembly confirmed the proposal unanimously on 20 December 2017; since then the world has kept World Bee Day on 20 May. Bees and other pollinators, the feast's own words say, carry the security of food supply, and their presence is a measure of the state of the local environment: who sees healthy bees in Griblje sees a healthy village.\n\nWhy does this record stand in the museum of the village? Because it is the collection's only inhabitant still alive: the Carniolan grey bee is older than every document here — she flew above the Kolpa before the Griblach entry of 1468 — and younger than all of them: every spring she beats her wings above the same gardens again. Ivan Barle taught her beside the school, Konrad carried her about Bela krajina, and the world opened its doors to her along Janša's road. The life of one bee is measured in weeks, the life of a breed in millennia — this museum keeps time in both. The museum seeks: an old AŽ hive from a Griblje apiary with its painted front, and a photograph of a Griblje beekeeper at work.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/kranjska-sivka.jpg",
+    imageCredit:
+      "Foto: Richard Bartz · Wikimedia Commons · CC BY-SA 2.5 — delavka kranjske sivke (Apis mellifera carnica) na letu pred panjem",
+    yearFrom: 1879,
+    yearTo: 2026,
+    lat: 45.57246,
+    lng: 15.29257,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "wiki-kranjska-cebela",
+        nameSi: "Wikipedija: Kranjska čebela (Apis mellifera carnica) — značilnosti in razširjenost pasme",
+        nameEn: "Wikipedia: Carniolan bee (Apis mellifera carnica) — traits and distribution of the breed",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Kranjska_%C4%8Debela",
+        noteSi:
+          "Druga najbolj razširjena pasma na svetu; vitko telo, temno rjavi obročki, sive dlačice; dolg jezik, hitra pomladanska rast, usmerjenost v gozdno pašo, majhna poraba zimske hrane.",
+        noteEn:
+          "The second most widespread breed in the world; slender body, dark brown rings, grey hairs; long tongue, fast spring buildup, forest-flow specialisation, low winter food consumption.",
+      },
+      {
+        key: "wiki-jansa",
+        nameSi: "Wikipedija: Anton Janša (1734–1773) — prvi učitelj čebelarstva na cesarski dunajski šoli",
+        nameEn: "Wikipedia: Anton Janša (1734–1773) — first teacher of beekeeping at the imperial school in Vienna",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Anton_Jan%C5%A1a",
+        noteSi:
+          "Rojen 20. maja 1734 v Breznici na Gorenjskem; šolo za čebelarstvo je 1769 odredila Marija Terezija, Janša je postal njen prvi učitelj; doma so imeli nad sto panjev.",
+        noteEn:
+          "Born on 20 May 1734 at Breznica in Gorenjska; the beekeeping school was ordered by Maria Theresa in 1769, Janša became its first teacher; his family kept over a hundred hives.",
+      },
+      {
+        key: "wiki-svetovni-dan-cebel",
+        nameSi: "Wikipedija: Svetovni dan čebel (20. maj) — slovenska pobuda in resolucija OZN",
+        nameEn: "Wikipedia: World Bee Day (20 May) — the Slovenian initiative and the UN resolution",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Svetovni_dan_%C4%8Debel",
+        noteSi:
+          "Praznik je v okviru OZN predlagala Slovenija na pobudo Čebelarske zveze Slovenije; potrjen soglasno 20. decembra 2017; opraševalci kot varnost prehranske preskrbe in merilo stanja okolja.",
+        noteEn:
+          "The feast was proposed within the UN by Slovenia on the initiative of the Beekeeping Association of Slovenia; confirmed unanimously on 20 December 2017; pollinators as food security and a measure of the environment's state.",
+      },
+      {
+        key: "wiki-znidersic",
+        nameSi: "Wikipedija: Anton Žnideršič (1874–1947) — oblikovalec AŽ-panja",
+        nameEn: "Wikipedia: Anton Žnideršič (1874–1947) — the designer of the AŽ hive",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Anton_%C5%Bdnider%C5%A1i%C4%8D",
+        noteSi:
+          "Alberti-Žnideršičev panj (žnideršičevec): satniki podolžno na prečnih palicah, enaka mera v plodišču in medišču; uveljavil se je po vsej Sloveniji in na Hrvaškem.",
+        noteEn:
+          "The Alberti-Žnideršič hive: frames lengthwise on cross bars, equal measure in brood box and honey box; established across all Slovenia and in Croatia.",
+      },
+      {
+        key: "commons-carnica",
+        nameSi: "Wikimedia Commons: Apis mellifera carnica worker hive entrance (fotografa: Richard Bartz, Hubert Seibring)",
+        nameEn: "Wikimedia Commons: Apis mellifera carnica worker hive entrance (photographers: Richard Bartz, Hubert Seibring)",
+        sourceType: "fotografija",
+        license: "CC BY-SA 2.5 (fotografa: Richard Bartz, Hubert Seibring)",
+        url: WM("Apis_mellifera_carnica_worker_hive_entrance_3.jpg"),
+        noteSi:
+          "Glavna slika zapisa: delavka kranjske sivke na begu pred panjem — ista fotografija, ki nosi članek Wikipedije o pasmi.",
+        noteEn:
+          "The record's main image: a Carniolan worker at the hive entrance — the same photograph that carries the Wikipedia article on the breed.",
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     addedAt: "2026-09-16",
     category: "kraj",
