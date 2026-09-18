@@ -60,6 +60,8 @@ export function MapView({
           labels={{
             openRecord: t.map.openRecord,
             villageCenter: t.map.villageCenter,
+            mapAria: t.map.mapAria,
+            recordsHere: t.map.recordsHere,
             categories: t.categories,
             period: (ex: ExhibitDTO) => es.period(ex),
           }}
@@ -83,6 +85,7 @@ export function MapView({
                 <span>
                   <span className="font-medium">{es.title(exhibit)}</span>
                   <span className="mt-0.5 block text-xs text-muted-foreground">
+                    {exhibit.museumNo ? `${exhibit.museumNo} · ` : ""}
                     {exhibit.lat?.toFixed(4)}, {exhibit.lng?.toFixed(4)}
                     {exhibit.coordsApprox ? ` · ${t.map.approx} · ` : " · "}
                     {t.categories[exhibit.category]}

@@ -330,11 +330,11 @@ export function ThemeHubView({
                 <p className="mt-1 text-sm text-muted-foreground">
                   {pick(lang, related.reasonSi, related.reasonEn)}
                 </p>
-                <div className="mt-4 flex gap-3">
+                <div className="mt-4 flex flex-wrap gap-2 sm:gap-3">
                   {relatedExhibits.map((ex) => (
                     <span
                       key={ex.slug}
-                      className="relative block h-20 w-28 overflow-hidden rounded-lg border border-border/60"
+                      className="relative block h-16 w-24 overflow-hidden rounded-lg border border-border/60 sm:h-20 sm:w-28"
                     >
                       <Image
                         src={ex.image ?? "/images/authentic/hero-griblje.jpg"}

@@ -64,6 +64,7 @@ import {
   WalkTopBar,
   type WalkContext,
 } from "@/components/museum/walk-ui";
+import { walkStopOf } from "@/lib/walks";
 
 const SOURCE_ICON: Record<SourceType, React.ElementType> = {
   arhiv: Archive,
@@ -168,6 +169,26 @@ export function ExhibitDialog({
   const visualMatches = React.useMemo(
     () => (exhibit ? visuallySimilarExhibits(exhibit, allExhibits, 3) : []),
     [exhibit, allExhibits]
+  );
+
+  // Trajna muzejska identiteta + sosednja zapisa po kuratorskem vrstnem redu
+  // (isti vzorec kot kanonične strani /exponat/[slug]: MVG-### + prejšnji/
+  // naslednji zapis; DigitaltMuzeum/Rijksmuseum objektna številka je vedno
+  // vidna ob predmetu). Zapisi so v allExhibits urejeni po sortOrder.
+  const recordIndex = exhibit
+    ? allExhibits.findIndex((ex) => ex.slug === exhibit.slug)
+    : -1;
+  const prevRecord = recordIndex > 0 ? allExhibits[recordIndex - 1] : null;
+  const nextRecord =
+    recordIndex >= 0 && recordIndex < allExhibits.length - 1
+      ? allExhibits[recordIndex + 1]
+      : null;
+
+  // Članstvo v kuriranem tematskem sprehodu — vsak zapis je postaja enega
+  // od 5 sprehodov (93/93); med aktivnim sprehodom to pove WalkTopBar.
+  const walkMembership = React.useMemo(
+    () => (exhibit ? walkStopOf(exhibit.slug) : null),
+    [exhibit]
   );
 
   // Kopiranje deljive povezave in citata zapisa (globoka povezava ?exhibit=<slug>).
@@ -323,6 +344,20 @@ export function ExhibitDialog({
             <div className="px-6 pb-8 pt-5 sm:px-8">
               <DialogHeader className="items-start space-y-2 text-left">
                 <div className="flex flex-wrap items-center gap-2">
+                  {exhibit.museumNo && (
+                    <Badge
+                      variant="outline"
+                      className="font-mono font-semibold tracking-wide"
+                      title={t.recordNav.ofCollection}
+                    >
+                      {exhibit.museumNo}
+                      {recordIndex >= 0 && (
+                        <span className="ml-1 font-normal text-muted-foreground">
+                          · {recordIndex + 1}. {t.recordNav.ofCollection} {allExhibits.length}
+                        </span>
+                      )}
+                    </Badge>
+                  )}
                   <Badge variant="secondary">{t.categories[exhibit.category]}</Badge>
                   <EvidenceBadge status={exhibit.evidenceStatus} />
                   <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
@@ -814,6 +849,76 @@ export function ExhibitDialog({
 
               {/* Navigacija sprehoda — le ko je zapis odprt kot postaja sprehoda */}
               {walkContext && <WalkNav ctx={walkContext} />}
+
+              {/* Članstvo v kuriranem sprehodu — sicer nevidna kuratorska pot
+                  (vsak zapis je postaja enega od 5 tematskih sprehodov). */}
+              {!walkContext && walkMembership && (
+                <p className="mt-4 flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+                  <Route className="h-3.5 w-3.5 shrink-0 text-primary" aria-hidden="true" />
+                  <span>
+                    <span className="font-medium text-foreground/80">
+                      {t.recordNav.stopOf} {walkMembership.index + 1}/{walkMembership.walk.stops.length}
+                    </span>{" "}
+                    {t.recordNav.walkStation} ·{" "}
+                    {pick(lang, walkMembership.walk.titleSi, walkMembership.walk.titleEn)}
+                  </span>
+                </p>
+              )}
+
+              {/* Sosednja zapisa po kuratorskem vrstnem redu — naravno
+                  raziskovanje iz zapisa v zapis (vzorec /exponat strani;
+                  med sprehodom pelje naprej WalkNav, zato se tu skrije). */}
+              {!walkContext && (prevRecord || nextRecord) && (
+                <nav
+                  aria-label={t.recordNav.previous}
+                  className="mt-6 grid gap-3 border-t pt-6 sm:grid-cols-2"
+                >
+                  {prevRecord ? (
+                    <button
+                      type="button"
+                      onClick={() => onOpenExhibit(prevRecord)}
+                      className="group inline-flex min-h-11 items-start gap-3 rounded-lg border p-4 text-left transition-colors hover:border-primary/40"
+                    >
+                      <ArrowRight
+                        className="mt-1 h-4 w-4 shrink-0 rotate-180 text-muted-foreground group-hover:text-primary"
+                        aria-hidden="true"
+                      />
+                      <span className="min-w-0">
+                        <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                          {t.recordNav.previous}
+                        </span>
+                        <span className="mt-1 block truncate text-sm font-medium">
+                          {prevRecord.museumNo ? `${prevRecord.museumNo} · ` : ""}
+                          {es.title(prevRecord)}
+                        </span>
+                      </span>
+                    </button>
+                  ) : (
+                    <span aria-hidden="true" />
+                  )}
+                  {nextRecord && (
+                    <button
+                      type="button"
+                      onClick={() => onOpenExhibit(nextRecord)}
+                      className="group inline-flex min-h-11 items-start justify-end gap-3 rounded-lg border p-4 text-right transition-colors hover:border-primary/40 sm:col-start-2"
+                    >
+                      <span className="min-w-0">
+                        <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                          {t.recordNav.next}
+                        </span>
+                        <span className="mt-1 block truncate text-sm font-medium">
+                          {nextRecord.museumNo ? `${nextRecord.museumNo} · ` : ""}
+                          {es.title(nextRecord)}
+                        </span>
+                      </span>
+                      <ArrowRight
+                        className="mt-1 h-4 w-4 shrink-0 text-muted-foreground group-hover:text-primary"
+                        aria-hidden="true"
+                      />
+                    </button>
+                  )}
+                </nav>
+              )}
             </div>
           </ScrollArea>
         )}

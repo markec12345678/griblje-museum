@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { trackStat, trackVisitOnce } from "@/lib/stats-client";
 import { Header, VIEW_ORDER, type MuseumView } from "@/components/museum/header";
 import { Footer } from "@/components/museum/footer";
+import { MuseumRegister } from "@/components/museum/museum-register";
 import { BackToTop, MobileTabBar } from "@/components/museum/quick-nav";
 import { HomeView } from "@/components/museum/home-view";
 import { CollectionView } from "@/components/museum/collection-view";
@@ -764,6 +765,12 @@ export function MuseumApp() {
             </motion.div>
           </AnimatePresence>
         )}
+
+        {/* Muzejski register — strežniško upodobljen katalog vseh zapisov na
+            domači strani (plezalne <a> povezave na /exponat/[slug] za iskalnike
+            in obiskovalce brez JavaScripta; vzorec katalogov Rijksmuseum/
+            DigitaltMuseum). Statični podatki — viden tudi med nalaganjem API-ja. */}
+        {view === "domov" && <MuseumRegister />}
       </main>
 
       <Footer onNavigate={navigate} />
