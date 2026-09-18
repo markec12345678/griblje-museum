@@ -20,7 +20,8 @@ type Labels = {
   period: (ex: ExhibitDTO) => string;
 };
 
-function markerIcon(color: string, glyph?: string, dashed = false, name?: string) {
+/** Oblika muzejske pike (skupna z Zemljevidom spomina — enaka ikonika). */
+export function markerIcon(color: string, glyph?: string, dashed = false, name?: string) {
   // Dostopno ime pike (title + aria-label): bralnik zaslona piko objavi
   // po imenu zapisa, ne kot anonimni klik (WCAG — zemljevid ima nadomestno
   // besedilno legendo, a pike same morajo nositi ime).

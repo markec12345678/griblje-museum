@@ -11,8 +11,10 @@ import { HomeView } from "@/components/museum/home-view";
 import { CollectionView } from "@/components/museum/collection-view";
 import { StoriesView } from "@/components/museum/stories-view";
 import { TimelineView } from "@/components/museum/timeline-view";
+import { ChronicleView } from "@/components/museum/chronicle-view";
 import { EventsView } from "@/components/museum/events-view";
 import { MapView } from "@/components/museum/map-view";
+import { MemoryMapView } from "@/components/museum/memory-map-view";
 import { AboutView } from "@/components/museum/about-view";
 import { MyMuseumView } from "@/components/museum/my-museum-view";
 import { GamesView } from "@/components/museum/games-view";
@@ -656,10 +658,24 @@ export function MuseumApp() {
         onOpenExhibit={openExhibit}
       />
     ),
+    kronika: (
+      <ChronicleView
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={openExhibit}
+        onNavigate={navigate}
+      />
+    ),
     karta: (
       <MapView
         exhibits={exhibitsQuery.data ?? []}
         onOpenExhibit={openExhibit}
+      />
+    ),
+    spomin: (
+      <MemoryMapView
+        exhibits={exhibitsQuery.data ?? []}
+        onOpenExhibit={openExhibit}
+        onNavigate={navigate}
       />
     ),
     dogodki: <EventsView events={eventsQuery.data ?? []} />,
