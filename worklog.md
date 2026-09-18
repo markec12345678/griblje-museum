@@ -1500,3 +1500,19 @@ Stage Summary:
 - Revizijska metoda ponovljiva: audit-numbers.ts + number-contexts.ts + preverba proti primarnim virom (ARSO PDF, Odeon, raziskovalne note)
 - Odprto: zaporedje vpisov 44–97/98 mrliške knjige (54 ali 55 pogrebov) — 13 posnetkov že zajetih v /tmp, VLM zanka teče (read-matr-pages.ts); hipoteza: zadnji vpis okna = 98; po rešitvi sledi popravek »44 do 98« (ali »44 do 97« s pojasnilom) + README 20. sklop
 - Odprto (iz 23. sklopa): župani občine Griblje 1854–1933; Commons kandidata Kolpa griblje 2002 + Cabin under the Sun 2019; 1. svetovna vojna (pot: mrliška knjiga kot pri španki)
+
+---
+Task ID: 27 (dodatek)
+Agent: Main agent (Z.ai Code)
+Task: Zasnova 44–97/98 — umik aritmetično sporne enačbe pred preverbo
+
+Work Log:
+- VLM kvota ostaja blokirana (429, >10 zaporednih poskusov); zanka read-matr-pages.ts teče naprej v ozadju (poskus vsakih 150 s, brala bo vse zajete strani takoj, ko se kvota sprosti)
+- Ugotovitev iz sidrnih strani (6 vpisov na stran): p191=44–49 … p198=86–91, p201≈92–97, p202=98+ (21.11–30.12) → hipoteza: zadnji vpis v oknu (22.10–28.11) je št. 98 (44–98 vključno = 55 ✓) ali prvotni št. 43 (43–97 = 55 ✓)
+- Odločitev: enačba »vpisi številka 44 do 97: petinpetdeset pogrebov« je bralcu aritmetično sporna (44–97 vključno = 54) — točno vrsta napake, ki jo uporabnik prijavlja — zato je obseg vpisov umaknjen iz zgodbe SL+EN, dokler VLM ne potrdi pravih meja; število pokopanih (55), izpeljanke (~10/teden, 5× običajno) in vabilo na preštevanje (signatura 04894, strani 189–202) ostajajo
+- README: 20. sklop brez »(vpisi 44–97)«; 24. sklop dopolnjen z razlogom umika
+- Reseed + restart dev (pkill pozor: vzorec ne sme zadeti lastne ukazne vrstice — uporabiti f-[z]vezde trik); VERIFIKACIJA: API 89 zapisov, zgodba SL brez obsega, »petinpetdeset ljudi« prisotno; agent-browser dialog: rangeGone/petLjudi/petPogrebov/starost84 vsi true; tsc/lint čista (preverjeno pred spremembo; sprememba je čista vsebinska zamenjava)
+
+Stage Summary:
+- Produkcija: zgodba o španki ne vsebuje več aritmetično napačne enačbe; natančen obseg vpisov se vrne po VLM preverbi (najverjetneje »44 do 98«)
+- Postopek za naslednjo sejo: preveriti /tmp/matr-readings.json (zanka bere strani 189–202); ob potrditvi meje popraviti zgodbo + README 20./24. sklop + pripis v viru Matricula; ob trajno blokirani kvoti lahko meje določi tudi ročno branje posnetkov (13 × ~2660×2000 v /tmp/matr-p*.jpg)
