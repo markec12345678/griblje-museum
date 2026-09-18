@@ -282,6 +282,13 @@ export const MONTHLY_POOLS: MonthlyEntry[][] = [
       noteEn:
         "Summer walks along the river lead past the mills: a record of the millers who were at home on the Kolpa when the water still ground.",
     },
+    {
+      slug: "panjska-koncnica",
+      noteSi:
+        "Julij je mesec paše — in obiranja roja, med najbolj znanimi motivi panjskih končnic. Čebelar je poleti pogledal na panj in videl sliko; danes ta galerija poleti znova živi.",
+      noteEn:
+        "July is the month of the honey flow — and of catching a swarm, among the best-known motifs of the painted hive panels. In summer the beekeeper looked at his hive and saw a picture; today that gallery lives again.",
+    },
   ],
   /* ------------------------------ AVGUST ------------------------------ */
   [
