@@ -15,7 +15,7 @@ import { useLang } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
 import type { ExhibitDTO } from "@/lib/types";
 import type { MuseumView } from "@/components/museum/header";
-import type { PlaceMemoryItem } from "@/lib/timeline-map";
+import type { PlaceLocationStatus, PlaceMemoryItem } from "@/lib/timeline-map";
 import { objectLayer, placeMemory } from "@/lib/timeline-map";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -51,6 +51,14 @@ const MemoryLeafletMap = dynamic(() => import("@/components/museum/memory-leafle
  */
 
 const STATUS_ORDER = ["resolved", "within-village", "region", "unresolved"] as const;
+
+/** Prevod kuratorskega statusa (vsebuje pomišljaj) → ključ i18n. */
+const STATUS_I18N_KEY: Record<PlaceLocationStatus, "resolved" | "withinVillage" | "region" | "unresolved"> = {
+  resolved: "resolved",
+  "within-village": "withinVillage",
+  region: "region",
+  unresolved: "unresolved",
+};
 
 export function MemoryMapView({
   exhibits,
@@ -204,7 +212,7 @@ export function MemoryMapView({
                     ) : (
                       <MapPin className="h-3 w-3" aria-hidden="true" />
                     )}
-                    {t.memory.status[place.status]}
+                    {t.memory.status[STATUS_I18N_KEY[place.status]]}
                   </span>
                   <span>{t.memory.recordsCount(place.exhibits.length)}</span>
                 </span>
@@ -281,7 +289,7 @@ function MemoryPanel({
               {t.memory.placeKinds[item.place.placeKind]}
             </Badge>
             <Badge variant="outline" className="text-xs">
-              {t.memory.status[item.status]}
+              {t.memory.status[STATUS_I18N_KEY[item.status]]}
             </Badge>
           </div>
         </div>
