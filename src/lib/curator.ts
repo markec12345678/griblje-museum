@@ -17,6 +17,7 @@ import { museumAIProvider } from "@/lib/curator-provider";
 import {
   buildContext,
   contextHasEvidence,
+  detectQuestionLang,
   normalizeQuestion,
   type RetrievalTrace,
 } from "@/lib/curator-retrieval";
@@ -146,13 +147,19 @@ export async function askCurator(
   question: string,
   provider: MuseumAIProvider = museumAIProvider(),
 ): Promise<CuratorResult> {
-  const key = cacheKey(lang, question);
+  // JEZIK VPRAŠANJA (navodilo TASK 41: odgovarjaj v jeziku vprašanja):
+  // deterministično zaznavanje BEZ modela; negotovno → jezik vmesnika.
+  // Zasebnost: zaznavanje deluje samo na besedilu vprašanja.
+  const questionLang = detectQuestionLang(question);
+  const effectiveLang: CuratorLang = questionLang ?? lang;
+
+  const key = cacheKey(effectiveLang, question);
   if (key) {
     const cached = cacheGet(key);
     if (cached) return { ...cached, cached: true };
   }
 
-  const { context, trace } = buildContext(lang, question);
+  const { context, trace } = buildContext(effectiveLang, question);
 
   // HALLUCINATION GUARD, pred klicem modela: brez dokaza ni sinteze.
   if (!contextHasEvidence(context)) {
