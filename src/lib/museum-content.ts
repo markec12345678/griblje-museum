@@ -4575,6 +4575,90 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "konrad-barle",
+    addedAt: "2026-09-18",
+    category: "kraj",
+    titleSi: "Konrad Barle — učitelj, ki je prinesel AŽ-panj v Belo krajino",
+    titleEn: "Konrad Barle — the teacher who brought the AŽ hive to Bela krajina",
+    periodSi: "1875–1951 · Podzemelj — Metlika",
+    periodEn: "1875–1951 · Podzemelj — Metlika",
+    summarySi:
+      "Sin podzemeljskega učitelja, ki je v Metliki poučeval petintrideset let in razširil šolo na osem razredov — ter Beli krajini prinesel AŽ-panj. Ustanovitelj čebelarske podružnice 1912 in Belokranjskega muzeja.",
+    summaryEn:
+      "A Podzemelj teacher's son who taught in Metlika for thirty-five years and expanded the school to eight grades — and brought the AŽ hive to Bela krajina. A founder of the 1912 beekeeping branch and of the Bela krajina museum.",
+    storySi:
+      "Preden so Griblje dobile lastno šolo (1889), so gribeljski otroci hodili k pouku v Podzemelj — kjer je od 1872 do 1893 učiteljeval Ivan Barle (1841–1930), učitelj, organist in sadjar. Ob podzemeljski šoli je uredil šolski vrt (1880) in šolski čebelnjak (1882), odraslim predaval o kmetijstvu in higieni, za sadjarstvo pa ga je odlikovala Kranjska kmetijska družba. Za novo šolsko poslopje v Podzemlju se je boril leta — odprli so ga 1888, leto pred gribeljskim blagoslovom — občina Podzemelj pa ga je 1927 imenovala za častnega občana. Iz te učiteljske hiše sta odraščala dva zapisovalca Bele krajine: Janko, ki je popisal njene šege, in Konrad, ki ji je prinesel čebele nove dobe.\n\nKonrad Barle, rojen 19. februarja 1875 v Podzemlju, je po učiteljišču v Ljubljani (1891–1895) učil na Robu pri Velikih Laščah, od 1899 pa v Metliki — petintrideset let, do upokojitve 1934. Od 1920 je bil upravitelj šole, od 1931 šolski nadzornik za okraj Metlika; med 1919 in 1921 je metliško štirirazrednico razširil v popolno osemrazrednico, 1925 pa na šoli postavil oder za prireditve. Predsedoval je Belokranjskemu učiteljskemu društvu (1919–1926; častni član 1927) in igral violino v metliškem godalnem orkestru. Starejšemu bratu je sledil tudi v navdih: kar je Janko popisal po vaseh, je Konrad ohranjal med živimi.\n\nNajglobljo sled pa je pustil pri čebelah. Kot prvi belokranjski čebelar se je oprijel AŽ-panja — panja z premakljivim satjem — in njegovo rabo razširil po Beli krajini. Že od ustanovitve 1898 je bil član Slovenskega čebelarskega društva; od 1908 je vodil metliško opazovalno postajo, ob ustanovitvi eno od šestih delujočih na Kranjskem. Leta 1912 je ustanovil čebelarsko podružnico v Metliki — stoletnico je obhajala leta 2012 —, leta 1919 pa sprožil ustanovitev podružnice v Črnomlju. V Slovenskem čebelarju je objavljal vse do štiridesetih let: belokranjski čebelarji so po njegovem zgledu prevzemali AŽ-panje in skrbeli za lepšo, poslikano podobo čebelnjakov.\n\nPri njem so čebele vedno stale ob šoli. Prizadeval si je, da bi vsaka šola v okolju dobila svoj čebelnjak; na metliškem šolskem vrtu ga je tudi sam skrbel. Širil je tudi sadjarstvo in vinogradništvo: 1923 je v metliški šoli organiziral sadjarsko razstavo, 1932 pa je bil med ustanovitelji Belokranjske vinske kleti v Ljubljani, ki je belokranjskim vinom odprla pot na širši trg. Kmetijsko znanje je poučeval ne le učence, temveč cele domačije — kot oče v Podzemlju pred njim.\n\nZadnje poglavje njegove poti je najbližje temu muzeju. Leta 1933 je prevzel Muzejski odsek pri metliškem Tujsko prometnem društvu; 1949 je bil med ustanovnimi člani Belokranjskega muzejskega društva, ki je sprožilo ustanovitev Belokranjskega muzeja — skupaj z Božom Račičem in Jožetom Dularjem je uredil njegovo prvo zbirko. Umrl je 15. julija 1951, v letu, ko se je muzej odprl; pokopan je v Rosalnicah pri Treh farah. Digitalni muzej vasi Griblje je vnuk njegovega dela: muzejska hiša, ki so jo začeli graditi Barleti, Račič in Dular, je dobila še eno krilo — to, v katerem sedaj berete. Muzej išče: Konradov portret in prvo poročilo metliške čebelarske podružnice (1912).",
+    storyEn:
+      "Before Griblje received a school of its own (1889), the village's children walked to their lessons in Podzemelj — where from 1872 to 1893 taught Ivan Barle (1841–1930), a teacher, organist and fruit-grower. Around the Podzemelj school he laid out a school garden (1880) and a school apiary (1882), lectured adults on farming and hygiene, and was decorated by the Carniolan Agricultural Society for fruit-growing. He fought for years for a new school building in Podzemelj — it opened in 1888, a year before the Griblje blessing — and in 1927 the Municipality of Podzemelj named him an honorary citizen. From that teaching house grew two recorders of Bela krajina: Janko, who wrote down its customs, and Konrad, who brought its bees into a new age.\n\nKonrad Barle, born on 19 February 1875 in Podzemelj, trained at the Ljubljana teachers' college (1891–1895), taught at Rob pri Velikih Laščah, and from 1899 in Metlika — thirty-five years, until his retirement in 1934. From 1920 he was the school's head, from 1931 the school supervisor for the Metlika district; between 1919 and 1921 he expanded the Metlika four-grade school into a full eight-grade one, and in 1925 raised a stage at the school for celebrations. He presided over the Bela krajina Teachers' Society (1919–1926; honorary member 1927) and played the violin in Metlika's string orchestra. He followed his elder brother's inspiration too: what Janko recorded in the villages, Konrad kept alive among the living.\n\nHis deepest mark, however, he left among the bees. As the first beekeeper of Bela krajina he took up the AŽ hive — the hive with movable frames — and spread its use across the region. He had been a member of the Slovene Beekeeping Society from its founding in 1898; from 1908 he ran the observation station at Metlika, at its establishment one of six working in Carniola. In 1912 he founded the beekeeping branch at Metlika — it kept its centenary in 2012 — and in 1919 he set the founding of the Črnomelj branch in motion. He published in the Slovenski čebelar into the 1940s: on his example Bela krajina's beekeepers took up AŽ hives and cared for the prettier, painted face of their apiaries.\n\nWith him the bees always stood beside the school. He strove for every school in his area to have its own apiary; on the Metlika school garden he tended one himself. He spread fruit-growing and viticulture as well: in 1923 he organised a fruit-growing exhibition at the Metlika school, and in 1932 he was among the founders of the Bela krajina Wine Cellar in Ljubljana, which opened the wider market to Bela krajina's wines. Farming knowledge he taught not only to pupils but to whole households — as his father had done in Podzemelj before him.\n\nThe last chapter of his road runs closest to this museum. In 1933 he took over the Museum Section at Metlika's Tujsko prometno društvo; in 1949 he was among the founding members of the Bela krajina Museum Society, which set the founding of the Bela krajina Museum in motion — with Božo Račič and Jože Dular he arranged its first collection. He died on 15 July 1951, in the year the museum opened; he lies buried in Rosalnice by the Three Churches. The digital museum of the village of Griblje is a grandchild of his work: the museum house the Barles, Račič and Dular began building has gained one more wing — the one in which you are now reading. The museum seeks: Konrad's portrait and the first report of the Metlika beekeeping branch (1912).",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/cebnjak-orel-1952.jpg",
+    imageCredit:
+      "Foto: Boris Orel · Slovenski etnografski muzej · Wikimedia Commons · javna last — »Čebnjak« (čebelnjak) na Vrhu pri Komatarju, posneto avgusta–septembra 1952, leto po Konradovi smrti",
+    yearFrom: 1875,
+    yearTo: 1951,
+    lat: 45.6473,
+    lng: 15.3176,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "nsb-konrad-barle",
+        nameSi: "Slovenska biografija — Barle, Konrad (1875–1951) (Novi slovenski biografski leksikon, 2. zv.; avtorica gesla: Marjetka Balkovec Debevec)",
+        nameEn: "Slovenska biografija — Barle, Konrad (1875–1951) (New Slovene Biographical Lexicon, vol. 2; entry by Marjetka Balkovec Debevec)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.slovenska-biografija.si/oseba/sbi1017070/",
+        noteSi:
+          "Polno geslo: Metlika 1899–1934, AŽ-panj, opazovalna postaja 1908, podružnica 1912, Muzejski odsek 1933, Belokranjsko muzejsko društvo 1949.",
+        noteEn:
+          "Full entry: Metlika 1899–1934, the AŽ hive, the observation station 1908, the branch 1912, the Museum Section 1933, the Museum Society 1949.",
+      },
+      {
+        key: "nsb-ivan-barle",
+        nameSi: "Slovenska biografija — Barle, Ivan (1841–1930) (Novi slovenski biografski leksikon, 2. zv.; avtorica gesla: Marjetka Balkovec Debevec)",
+        nameEn: "Slovenska biografija — Barle, Ivan (1841–1930) (New Slovene Biographical Lexicon, vol. 2; entry by Marjetka Balkovec Debevec)",
+        sourceType: "spletni-vir",
+        license: "navedi vir / cite the source",
+        url: "https://www.slovenska-biografija.si/oseba/sbi1017060/",
+        noteSi:
+          "Očetovo geslo: Podzemelj 1872–1893, šolski vrt 1880, čebelnjak 1882, novo poslopje 1888, častni občan Podzemlja 1927.",
+        noteEn:
+          "The father's entry: Podzemelj 1872–1893, school garden 1880, apiary 1882, new building 1888, honorary citizen of Podzemelj 1927.",
+      },
+      {
+        key: "ro-konrad-barle-2026",
+        nameSi: "Radio Odeon — Ljudje ob Kolpi: Konrad Barle, učitelj in čebelar (19. 2. 2026)",
+        nameEn: "Radio Odeon — People by the Kolpa: Konrad Barle, teacher and beekeeper (19 February 2026)",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1/",
+        noteSi: "Jankov brat Konrad (1875–1951): rojen v Podzemlju, učitelj in upravitelj šole v Metliki, poročevalec Slovenskega čebelarja, soustanovitelj Belokranjskega muzeja.",
+        noteEn: "Janko's brother Konrad (1875–1951): born at Podzemelj, teacher and head of the Metlika school, correspondent of the Slovenski čebelar, co-founder of the Bela krajina Museum.",
+      },
+      {
+        key: "rus-konrad-2012",
+        nameSi: "Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        nameEn: "Bibliography: Zvonko Rus, 'Konrad Barle 1875–1951', in: The dr. Jožef Starc Beekeeping Society (Metlika): 100 Years 1912–2012, Metlika 2012, pp. 30–33",
+        sourceType: "objava",
+        license: "bibliografski citat",
+        noteSi: "Spominski članek ob stoletnici podružnice, ki jo je Konrad ustanovil 1912 — naveden med viri gesla v Slovenski biografiji.",
+        noteEn: "The memorial article at the branch's centenary, founded by Konrad in 1912 — cited among the sources of the Slovenska biografija entry.",
+      },
+      {
+        key: "commons-cebnjak-orel",
+        nameSi: "Wikimedia Commons: »Čebnjak« (čebelnjak), Vrh 2, pri Komatarju 1952 (fotograf: Boris Orel; Slovenski etnografski muzej)",
+        nameEn: "Wikimedia Commons: 'Čebnjak' (bee house), Vrh 2, near Komatar 1952 (photographer: Boris Orel; Slovene Ethnographic Museum)",
+        sourceType: "fotografija",
+        license: "javna last / public domain (fotograf: Boris Orel; SEM)",
+        url: WM("%22%C4%8Cebnjak%22_%28%C4%8Debelnjak%29%2C_Vrh_2%2C_pri_Komatarju_1952_%282%29.jpg"),
+        noteSi:
+          "Glavna slika zapisa: slovenski čebelnjak, kakršnega je Konrad Barle učil postavljati ob šolah — posnet leto po njegovi smrti (etnografska dokumentacija SEM).",
+        noteEn:
+          "The record's main image: a Slovene bee house of the kind Barle taught to set beside schools — photographed a year after his death (SEM ethnographic documentation).",
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     addedAt: "2026-09-16",
     category: "kraj",
