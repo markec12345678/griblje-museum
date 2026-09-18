@@ -4823,6 +4823,71 @@ export const seedExhibits: SeedExhibit[] = [
     ],
   },
   {
+    slug: "panjska-koncnica",
+    addedAt: "2026-09-18",
+    category: "sege",
+    titleSi: "Panjska končnica — galerija pod streho čebelnjaka",
+    titleEn: "The panjska končnica — the gallery under the apiary roof",
+    periodSi: "sredina 18. st. → danes · zlata doba 1820–1880 · nesnovna dediščina 2018",
+    periodEn: "mid-18th century → present · golden age 1820–1880 · intangible heritage 2018",
+    summarySi:
+      "Poslikana deščica, ki je zapirala kranjič: več kot 600 motivov — polovica nabožnih — in več kot 50.000 platov v 150 letih, največja ljudska galerija ene same dežele. Od 2018 v registru nesnovne dediščine.",
+    summaryEn:
+      "The painted board that closed the kranjič: over 600 motifs — half of them religious — and more than 50,000 fronts in 150 years, the largest folk gallery of a single land. In the intangible heritage register since 2018.",
+    storySi:
+      "Stari slovenski čebelji panj, kranjič, je imel prednjo stran iz deščice — in to deščico so slovenski čebelarji sto petdeset let poslikali. Nastala je panjska končnica, ljudska umetnost, kakršne nima nobena druga dežela: najstarejše segajo v sredino osemnajstega stoletja, slikanje se je začelo na Gorenjskem in slovenskem Koroškem, od tam pa se je razširilo po vsej Sloveniji. Znanih je več kot šeststo različnih motivov — približno polovica nabožnih — in v približno sto petdesetih letih je nastalo več kot petdeset tisoč končnic. V deželi, ki galerij še ni poznala, je bila galerija tam, kjer je bilo medu.\n\nZakaj so jih slikali? Iz potrebe, ki je danes težko predstavljiva: pred hišnimi številkami in splošno pismenostjo je moral vsak čebelar svoje panje ločiti od sosedovih. Kdor ni znal brati, je svojega prepoznal po Jezusovem krstu, sosedovega po lovčevem pogrebu; nabožni motiv pa ni bil le znamenje — svetnik na prednji strani panja je varoval čebele. In preden se nasmehne kdor vidi moža, ki nosi ženo na križu: nasmejal se je tudi prvi gledalec. Končnica je bila vaška risanka, obešena na najbolj obiskano steno, ki jo je vas imela — čebelnjak.\n\nZlata doba je trajala od 1820 do 1880. Nabožnim prizorom so se pridružili posvetni: zgodovinski in vojni dogodki, kmečki vsakdan in praznovanja, živali in obrt — in humor, ki ni prizanašal nikomur. Mož se vrača pijan iz gostilne in žena ga vleče nazaj; lisica brije lovca; hudič babi brusi jezik; v babjem mlinu hudič vzame staro in grdo babo, ven pa da mlado in lepo; v kmečki tožbi se dva kmeta prepirata za kravo, odvetnik pa jo molze. Slikali so jih preprosti, večinoma samouki slikarji — kmečke roke, ki so znale več, kot so znale povedati.\n\nNajboljša med njimi je bila ženska. Micka Pavlič (1821–1891), hčerka selškega ljudskega slikarja Andreja Pavliča, je že v poznih najstnajstih letih prekosila očeta in odprla lastno delavnico: končnice, slike na steklo, rezbarije. Barve je nanašala po šablonah, prepuncanih z drobnimi luknjicami, da so ostre in žive ostale desetletja. Njen katalog šteje vsaj sto enainštirideset motivov — enainsedemdeset nabožnih, sedemdeset posvetnih: od prizorov Svetega pisma do kmetov, ki se prepirajo za živino. Nikoli se ni poročila in otrok ni imela; učila je vnuka svoje sestre Petra Žmitka, ki je postal znan slikar. Umrla je 12. septembra 1891 — v letu, ki ga nosi končnica na tej strani: Lovčev pogreb, slavni motiv, naslikan na les, ki ga hrani Slovenski etnografski muzej. Z dvema kozama na dvorišču in sto enainštiridesetimi motivi v katalogu je dokazala, da ljudska umetnost ne pozna meja, ki jih pozna akademska.\n\nNa Belo krajino je poslikano čelo prišlo s čebelarji: Konrad Barle (zapis konrad-barle) je poleg AŽ-panja razširjal tudi lepšo, poslikano podobo čebelnjakov — in kjer danes kolesar ob Kolpi fotografira poslikano čelo panja, gleda pravnukinjo deščice iz zlate dobe. Slikanje starih končnic se je v veliki meri končalo po prvi svetovni vojni, dediščina pa ni: od leta 2018 je poslikavanje panjskih končnic vpisano v Register nesnovne kulturne dediščine, reprodukcije motivov pa so eno najbolj prepoznavnih slovenskih daril. Za ta muzej je končnica sestra pisanic (zapis pisanice): ista roka, ki je na veliko noč barvala lupino, je poleti barvala panj — register je pisanice vpisal leta 2012, poslikavanje končnic pa leta 2018. Muzej išče: panjsko končnico z belokranjskega čebelnjaka.",
+    storyEn:
+      "The old Slovene hive, the kranjič, had a wooden board for its face — and for a hundred and fifty years Slovene beekeepers painted that board. Thus arose the panjska končnica, a folk art no other land possesses: the oldest reach to the mid-eighteenth century, the painting began in Gorenjska and Slovene Carinthia, and from there it spread across all Slovenia. More than six hundred distinct motifs are known — roughly half of them religious — and in some hundred and fifty years more than fifty thousand panels were made. In a land that knew no galleries yet, the gallery stood where the honey was.\n\nWhy did they paint them? Of a need hard to imagine today: before house numbers and general literacy, every beekeeper had to tell his hives from his neighbour's. A man who could not read knew his own by the Baptism of Jesus, his neighbour's by the hunter's funeral; and the saintly image was more than a mark — the saint on the front of the hive guarded the bees. And before anyone smiles at the man who carries his wife on a cross: the first viewer smiled too. The končnica was a village cartoon, hung on the most visited wall the village had — the apiary.\n\nThe golden age lasted from 1820 to 1880. Religious scenes were joined by secular ones: historical and war events, the farm's workday and its feasts, animals and craft — and a humour that spared no one. The man comes home drunk from the inn and the wife drags him back; the fox shaves the hunter; the devil grinds granny's tongue; in the devil's mill the devil takes an old and ugly woman in and gives a young and pretty one out; in the farm lawsuit two peasants quarrel over a cow while the lawyer milks it. They were painted by simple, mostly self-taught painters — farm hands whose hands could do more than their tongues could say.\n\nThe best of them was a woman. Micka Pavlič (1821–1891), daughter of the Selca folk painter Andrej Pavlič, had outdone her father by her late teens and opened a workshop of her own: hive panels, glass paintings, carvings. She laid her colours through stencils punched with tiny holes, so that they stayed sharp and vivid for decades. Her catalogue counts at least a hundred and forty-one motifs — seventy-one religious, seventy secular: from Bible scenes to peasants quarrelling over livestock. She never married and had no children; she taught her sister's grandson Peter Žmitek, who became a noted painter. She died on 12 September 1891 — in the very year carried by the panel on this page: the Hunter's Funeral, a famed motif painted on wood, kept by the Slovene Ethnographic Museum. With two goats in the yard and a hundred and forty-one motifs in the catalogue she proved that folk art knows no borders the academy knows.\n\nTo Bela krajina the painted front came with the beekeepers: Konrad Barle (the record konrad-barle) spread the AŽ hive and with it the prettier, painted face of the apiaries — and where a cyclist by the Kolpa photographs a painted hive front today, he is looking at a great-granddaughter of a board from the golden age. The painting of the old panels largely ended after the First World War, but the heritage did not: since 2018 the painting of hive panels has been entered in the Register of Intangible Cultural Heritage, and reproductions of the motifs are among the most recognisable of Slovene gifts. For this museum the končnica is a sister of the pisanice (the record pisanice): the same hand that dyed a shell at Easter could paint a hive in summer — the register entered the pisanice in 2012, the painting of the panels in 2018. The museum seeks: a hive panel from a Bela krajina apiary.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/panjska-koncnica.jpg",
+    imageCredit:
+      "Micka Pavlič · Slovenski etnografski muzej · Wikimedia Commons · javna last (PD-Art) — »Lovčev pogreb«, poslikana panjska končnica, les, 1891; inv. panjske-koncnice/630lju0017086",
+    yearFrom: 1750,
+    yearTo: 2026,
+    lat: 45.57246,
+    lng: 15.29257,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "wiki-panjska-koncnica",
+        nameSi: "Wikipedija: Panjska končnica — ljudska umetnost poslikanih panjev",
+        nameEn: "Wikipedia: Panjska končnica — the folk art of painted hives",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Panjska_kon%C4%8Dnica",
+        noteSi:
+          "Najstarejše iz srede 18. stoletja (Gorenjska, slovenska Koroška); več kot 600 motivov, polovica nabožnih; več kot 50.000 končnic v ~150 letih; zlata doba 1820–1880; konec po 1. svetovni vojni; register nesnovne dediščine 2018.",
+        noteEn:
+          "The oldest from the mid-18th century (Gorenjska, Slovene Carinthia); over 600 motifs, half religious; over 50,000 panels in ~150 years; golden age 1820–1880; end after the First World War; intangible heritage register 2018.",
+      },
+      {
+        key: "wiki-micka-pavlic",
+        nameSi: "Wikipedija (angl.): Micka Pavlič (1821–1891) — ljudska slikarka iz Selc",
+        nameEn: "Wikipedia: Micka Pavlič (1821–1891) — folk painter of Selca",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://en.wikipedia.org/wiki/Micka_Pavli%C4%8D",
+        noteSi:
+          "Hči slikarja Andreja Pavliča; delavnica v Selcah; šablone in prahaste barve; katalog vsaj 141 motivov (71 nabožnih, 70 posvetnih); učiteljica Petra Žmitka; umrla 12. 9. 1891; dela hranita SEM in Loški muzej.",
+        noteEn:
+          "Daughter of the painter Andrej Pavlič; a workshop at Selca; stencils and powdered pigment; a catalogue of at least 141 motifs (71 religious, 70 secular); teacher of Peter Žmitek; died 12 September 1891; her work is kept by SEM and the Loški muzej.",
+      },
+      {
+        key: "commons-lovcev-pogreb",
+        nameSi: "Wikimedia Commons: Lovčev pogreb, poslikana panjska končnica, les, 1891 (slikarka: Micka Pavlič; Slovenski etnografski muzej)",
+        nameEn: "Wikimedia Commons: the Hunter's Funeral, painted hive panel, wood, 1891 (painter: Micka Pavlič; Slovene Ethnographic Museum)",
+        sourceType: "fotografija",
+        license: "javna last / public domain (PD-Art)",
+        url: WM("Lov%C4%8Dev_pogreb,_poslikana_panjska_kon%C4%8Dnica,_les,_1891.jpg"),
+        noteSi:
+          "Glavna slika zapisa: ena najbolj znanih končnic — izbrana slika slovenske Wikipedije; objavljena s spletišča SEM pod inventarno številko panjske-koncnice/630lju0017086.",
+        noteEn:
+          "The record's main image: one of the best-known panels — a featured picture on Slovene Wikipedia; published from the SEM website under the accession number panjske-koncnice/630lju0017086.",
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     addedAt: "2026-09-16",
     category: "kraj",

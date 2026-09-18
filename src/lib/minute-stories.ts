@@ -440,6 +440,13 @@ export const MINUTE_STORIES: MinuteStory[] = [
       "Above the village gardens a wing beats every spring — the smallest record of this collection: the Carniolan grey bee, the second most widespread breed in the world. Ivan Barle kept her beside the Podzemelj school, his son Konrad took the AŽ hive across Bela krajina, and the world gave her feast the birthday of Anton Janša: World Bee Day, 20 May, Slovenia's gift to the UN. The life of one bee is measured in weeks; the life of a breed in millennia.",
   },
   {
+    slug: "panjska-koncnica",
+    textSi:
+      "V deželi, ki galerij še ni poznala, je bila galerija tam, kjer je bilo medu: na prednji deščici kranjiča so slovenski čebelarji sto petdeset let slikali — več kot šeststo motivov, polovica nabožnih, petdeset tisoč platov. Svetniki so varovali čebele, humor pa ni prizanašal nikomur: mož iz gostilne, lisica, ki brije lovca, kmečka tožba. Najboljša med slikarji je bila ženska, Micka Pavlič (1821–1891), s katalogom sto enainštiridesetih motivov. Ista roka, ki je barvala pisanice, je barvala panj.",
+    textEn:
+      "In a land that knew no galleries yet, the gallery stood where the honey was: on the front board of the kranjič Slovene beekeepers painted for a hundred and fifty years — over six hundred motifs, half of them religious, fifty thousand fronts. The saints guarded the bees, and the humour spared no one: the man from the inn, the fox shaving the hunter, the farm lawsuit. The best of the painters was a woman, Micka Pavlič (1821–1891), with a catalogue of a hundred and forty-one motifs. The same hand that dyed the pisanice painted the hive.",
+  },
+  {
     slug: "joze-dular",
     textSi:
       "Trideset let je vodil Belokranjski muzej v Metliki — in petdeset let živel v isti hiši, na kateri mu je po smrti ploščo postavilo društvo, ki ga je imelo za predsednika. Jože Dular je bil pesnik nove romantike in pripovednik, a njegov najgloblji pečat je zgodovina: Metlika skozi stoletja, Semič, Adlešiči, gasilstvo, godba. Za Griblje je najpomembnejša tanka knjižica o Županičevi spominski plošči — dokument o dnevu, ko se je vas spomnila svojega največjega sina. Vsak muzej vasi, tudi ta digitalni, stoji na plečih takih mož. Dular jih je nosil trideset let.",

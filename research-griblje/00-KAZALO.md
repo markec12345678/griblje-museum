@@ -8,6 +8,8 @@
 
 11. **[11-kranjska-sivka-2026-09.md](./11-kranjska-sivka-2026-09.md)** — 26. sklop: kranjska sivka (Apis mellifera carnica, 1879), AŽ-panj (Žnideršič), svetovni dan čebel (OZN 2017) — zapis 92
 
+12. **[12-panjska-koncnica-2026-09.md](./12-panjska-koncnica-2026-09.md)** — 27. sklop: panjska končnica (kranjič, zlata doba 1820–1880, Micka Pavlič 141 motivov, register 2018) — zapis 93
+
 ## Gradiva
 - `commons-slike.json` — metapodatki 11 slik Wikimedia Commons (URL, licenca, avtor)
 - `slike/` — 3 prenesene fotografije spomenikov (Kamra/Knjižnica Črnomelj, CC BY-NC)

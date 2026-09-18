@@ -716,6 +716,13 @@ export const WALKS: Walk[] = [
           "Spring in this village is drawn on a shell: the pisanice, a batik that Barle recorded scholarly in 1893 and the state entered in the living heritage register in 2012.",
       },
       {
+        exhibitSlug: "panjska-koncnica",
+        noteSi:
+          "Poleti pa ista roka riše na les: panjska končnica, vaška galerija pod streho čebelnjaka — mož iz gostilne, lisica, ki brije lovca, lovčev pogreb. Šeststo motivov, petdeset tisoč platov, register pa jih je vpisal leta 2018, šest let za pisanicami.",
+        noteEn:
+          "In summer the same hand draws on wood: the panjska končnica, the village gallery under the apiary roof — the man from the inn, the fox shaving the hunter, the hunter's funeral. Six hundred motifs, fifty thousand fronts; the register entered them in 2018, six years after the pisanice.",
+      },
+      {
         exhibitSlug: "kresovanje",
         noteSi:
           "Poletje zaključimo z ognjem: kres na večer pred sv. Janezom, s pesmijo, ki jo je rešil gribeljski Matiček. Šega, ki ne pusti predmeta — ostane pesem in spomin.",

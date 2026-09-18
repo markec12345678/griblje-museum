@@ -122,6 +122,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
 
   // 26. sklop: kranjska sivka — delavka pred panjem (Richard Bartz, CC BY-SA 2.5; optimizirano 1600×1042)
   "/images/authentic/kranjska-sivka.jpg": { width: 1600, height: 1042 },
+
+  // 27. sklop: Lovčev pogreb — panjska končnica, Micka Pavlič 1891 (SEM, javna last; optimizirano 1600×783)
+  "/images/authentic/panjska-koncnica.jpg": { width: 1600, height: 783 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };

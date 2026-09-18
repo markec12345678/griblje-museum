@@ -3324,6 +3324,83 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
     ],
   },
   {
+    slug: "panjska-koncnica",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "sredina 18. st.",
+        yearLabelEn: "mid-18th century",
+        sortYear: 1750,
+        textSi:
+          "Najstarejše končnice na Gorenjskem in slovenskem Koroškem: deščica, ki zapira kranjič, postane platno — čebelar loči svoje panje od sosedovih, svetniki varujejo čebele.",
+        textEn:
+          "The oldest panels in Gorenjska and Slovene Carinthia: the board that closes the kranjič becomes a canvas — the beekeeper tells his hives from his neighbour's, the saints guard the bees.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1820 → 1880",
+        yearLabelEn: "1820 → 1880",
+        sortYear: 1820,
+        textSi:
+          "Zlata doba: k nabožnim prizorom se pridružijo posvetni — zgodovina, vojna, kmečki vsakdan, humor (mož iz gostilne, lisica brije lovca, kmečka tožba). Več kot 50.000 končnic.",
+        textEn:
+          "The golden age: religious scenes are joined by secular ones — history, war, farm life, humour (the man from the inn, the fox shaving the hunter, the farm lawsuit). More than 50,000 panels.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "1821 → 1891",
+        yearLabelEn: "1821 → 1891",
+        sortYear: 1821,
+        textSi:
+          "Micka Pavlič iz Selc: delavnica, šablone s prašastimi barvami, katalog vsaj 141 motivov (71 nabožnih, 70 posvetnih); uči Petra Žmitka, umre 12. 9. 1891.",
+        textEn:
+          "Micka Pavlič of Selca: a workshop, stencils with powdered colour, a catalogue of at least 141 motifs (71 religious, 70 secular); she teaches Peter Žmitek and dies on 12 September 1891.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "prica",
+        yearLabelSi: "1891",
+        yearLabelEn: "1891",
+        sortYear: 1891,
+        textSi:
+          "Lovčev pogreb, naslikan na les v Mickinem smrtnem letu — glavna slika tega zapisa; hrani jo Slovenski etnografski muzej (inv. panjske-koncnice/630lju0017086).",
+        textEn:
+          "The Hunter's Funeral, painted on wood in the year of Micka's death — this record's main image; kept by the Slovene Ethnographic Museum (acc. panjske-koncnice/630lju0017086).",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 2,
+      },
+      {
+        stage: "raziskava",
+        yearLabelSi: "po 1918",
+        yearLabelEn: "after 1918",
+        sortYear: 1918,
+        textSi:
+          "Slikanje starih končnic se v veliki meri konča po prvi svetovni vojni; kranjič umika lažjim panjem, končnice postanejo muzejski in zbirateljski predmet.",
+        textEn:
+          "The painting of the old panels largely ends after the First World War; the kranjič gives way to lighter hives, and the panels become museum and collectors' objects.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2018 → danes",
+        yearLabelEn: "2018 → present",
+        sortYear: 2018,
+        textSi:
+          "Poslikavanje panjskih končnic vpisano v Register nesnovne kulturne dediščine; reprodukcije med najbolj prepoznavnimi slovenskimi darili, poslikana čela pa še danes krasijo čebelnjake ob Kolpi.",
+        textEn:
+          "The painting of hive panels entered in the Register of Intangible Cultural Heritage; reproductions are among the most recognisable Slovene gifts, and painted fronts still adorn the apiaries by the Kolpa.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
+  {
     slug: "joze-dular",
     phases: [
       {
