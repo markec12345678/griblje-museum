@@ -6521,7 +6521,11 @@ export const seedExhibits: SeedExhibit[] = [
         nameEn: "WorldCat: Gribeljski žbul (ZIK Črnomelj and the Griblje Farm Women's Society, 1996/2012)",
         sourceType: "spletni-vir",
         license: "kataložni zapis (WorldCat/OCLC)",
-        url: "https://www.worldcat.org/title/821110335",
+        // Normalizirano (36. sklop / TASK 38): prej zapuščena oblika
+        // www.worldcat.org/title/821110335 — isti katalogski zapis OCLC 821110335
+        // kot v MVG-082 (dokaz: ista številka OCLC v obeh URL-jih; en zapis
+        // »Gribeljski žbul« s petimi avtoricami na search.worldcat.org).
+        url: "https://search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
         noteSi: "Knjižica o gribeljskem žbulu — pet avtoric iz Gribelj; društvo kot soizdajateljica.",
         noteEn: "The booklet on the Griblje žbul — five authors from Griblje; the society as co-publisher.",
       },
