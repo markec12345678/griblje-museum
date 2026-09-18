@@ -49,6 +49,85 @@ import type {
 } from "@/lib/curator-types";
 
 /* ---------------------------------------------------------------------------
+ * JEZIK VPRAŠANJA — deterministično razpoznavanje (brez modela).
+ * Kustos odgovarja v jeziku VPRAŠANJA (navodilo TASK 41: »Če uporabnik
+ * vpraša slovensko → slovensko. Če vpraša angleško → angleško.«).
+ * Zaznavanje po označevalnih besedah (vprašalniki, členi, pomožniki);
+ * negotovno (0 zadetkov ali izenačeno) → null → jezik vmesnika.
+ * Zasebnost: deluje samo na besedilu vprašanja, nič drugega.
+ * ------------------------------------------------------------------------- */
+
+/** Besede, ki so skupne več jezikom, NE razločujejo (izpuščene). */
+const LANG_SHARED = new Set([
+  "kako", "je", "se", "na", "ni", "bi", "koliko", "hvala", "iz", "do",
+  "ta", "to", "te", "ti", "kustos", "bila", "bili", "museo", "muzej",
+]);
+
+/** Značilne (razločevalne) besede vsakega jezika — vprašalniki, členi,
+ *  pomožniki. Zadetek šteje samo, če beseda NI v skupnem naboru. */
+const LANG_MARKERS: Record<CuratorLang, Set<string>> = {
+  sl: new Set([
+    "kaj", "kdo", "kje", "kdaj", "zakaj", "kateri", "katera", "katere",
+    "vemo", "ves", "povej", "povejte", "prosim", "ampak", "vendar",
+    "ker", "tukaj", "tam", "ze", "spet", "znova", "bil", "sem",
+    "vam", "nam", "pri", "ob",
+  ]),
+  hr: new Set([
+    "sto", "tko", "gdje", "kada", "zasto", "koji", "koja", "koje",
+    "su", "nisu", "bio", "nesto", "netko", "ovaj", "ovdje", "tamo",
+    "jos", "opet", "znamo", "znas", "reci", "molim", "vec", "ali",
+  ]),
+  en: new Set([
+    "what", "who", "where", "when", "why", "which", "whose",
+    "the", "and", "were", "is", "are", "did", "does", "done", "doing",
+    "tell", "about", "know", "known", "don", "doesn", "didn",
+    "please", "thanks", "but", "because", "there", "here", "this",
+    "that", "these", "those", "curator", "was",
+  ]),
+  de: new Set([
+    "was", "wer", "wo", "wann", "warum", "welche", "welcher", "wessen",
+    "der", "die", "das", "und", "ist", "sind", "war", "waren", "hat",
+    "habe", "haben", "erzahl", "erzahle", "bitte", "danke", "aber",
+    "denn", "dort", "hier", "diese", "dieser", "kurator",
+  ]),
+  it: new Set([
+    "cosa", "chi", "dove", "quando", "perche", "quale", "quali",
+    "di", "il", "lo", "la", "le", "gli", "un", "una", "sono", "stato",
+    "stata", "racconta", "raccontami", "per", "favore", "grazie", "ma",
+    "li", "qui", "questa", "questo", "curatore",
+  ]),
+};
+
+/** Preprost poskus: vrni jezik vprašanja, če je enolično zaznan; sicer null.
+ *  Prva beseda vprašanja (vprašalnik) nosi dvojno težo — razrešuje
+ *  prekrivanja, npr. »Was geschah …« (DE) proti »Who was …« (EN). */
+export function detectQuestionLang(question: string): CuratorLang | null {
+  const words = normalizeQuestion(question).split(" ").filter(Boolean);
+  const scores: Record<CuratorLang, number> = { sl: 0, en: 0, hr: 0, de: 0, it: 0 };
+  for (let i = 0; i < words.length; i++) {
+    const w = words[i]!;
+    if (LANG_SHARED.has(w)) continue;
+    const weight = i === 0 ? 2 : 1;
+    for (const [lang, markers] of Object.entries(LANG_MARKERS)) {
+      if (markers.has(w)) scores[lang as CuratorLang] += weight;
+    }
+  }
+  let best: CuratorLang | null = null;
+  let bestScore = 0;
+  let tie = false;
+  for (const [lang, score] of Object.entries(scores)) {
+    if (score > bestScore) {
+      best = lang as CuratorLang;
+      bestScore = score;
+      tie = false;
+    } else if (score === bestScore && score > 0) {
+      tie = true;
+    }
+  }
+  return bestScore >= 1 && !tie ? best : null;
+}
+
+/* ---------------------------------------------------------------------------
  * Normalizacija vprašanja (ista logika kot predpomnilnik vodnika)
  * ------------------------------------------------------------------------- */
 
@@ -241,7 +320,27 @@ const COLLECTION_WORDS = new Set([
   "overall", "erzahlt", "racconta", "kolekcija", "prica", "zbirki",
 ]);
 
-function intentOf(normalizedQuestion: string): "collection" | "source" | "relation" | null {
+/** Vzorci »KAJ ŠE NE VEMO« — po frazah; pozorno ozki, da NE ujamejo
+ *  navadnih vprašanj (»Kaj se je zgodilo 1945?« ni vrzel). */
+const GAP_PHRASES = [
+  // slovenščina
+  "ne vemo", "ne vem", "ni dokumentirano", "dovolj dokumentirano", "ni znan",
+  "neznano", "manjka", "manjkajo", "ni razreseno", "odprta vprasanja",
+  "niso dokumentirani", "ni dokumentiran", "se ne ve", "ne ve",
+  // angleščina
+  "we don t know", "don t know", "not documented", "undocumented", "unknown",
+  "is missing", "are missing", "what we don t", "yet documented", "we lack",
+  // nemščina
+  "nicht wissen", "wir nicht", "nicht dokumentiert", "unbekannt",
+  "was fehlt", "noch nicht", "wir nicht wissen",
+  // italijanščina
+  "non sappiamo", "non documentato", "sconosciuto", "cosa non",
+  // hrvaščina
+  "ne znamo", "nije dokumentirano", "nepoznato", "sto ne znamo",
+];
+
+function intentOf(normalizedQuestion: string): "collection" | "source" | "relation" | "gaps" | null {
+  if (GAP_PHRASES.some((p) => normalizedQuestion.includes(p))) return "gaps";
   const words = new Set(normalizedQuestion.split(" "));
   if ([...SOURCE_WORDS].some((w) => words.has(w))) return "source";
   if ([...RELATION_WORDS].some((w) => words.has(w))) return "relation";
@@ -316,6 +415,8 @@ const MAX_ENTITIES = 6;
 const MAX_ENTITY_EVIDENCE = 5;
 const MAX_STANDALONE_EXHIBITS = 6;
 const MAX_OPEN_QUESTIONS = 4;
+/** Za vprašanja »KAJ ŠE NE VEMO«: cela kuratorska vrsta je vsebina. */
+const MAX_OPEN_QUESTIONS_GAPS = 12;
 
 /* ---------------------------------------------------------------------------
  * GLAVNA FUNKCIJA: vprašanje → AIContext (+ sled za prikaz in zavrnitev)
@@ -352,16 +453,21 @@ export function buildContext(
   const exhibitHits = matchExhibits(questionTokens, years, layer, entitySlugs);
 
   // --- 3. odprta kuratorska vprašanja --------------------------------------
-  //    Vsa, katerih zapisi so v kontekstu; posebej P0-E1 (Peter Madronič),
-  //    če se ime pojavi v vprašanju, entiteta pa (pravilno) ne obstaja.
+  //    (a) vprašanje KAJ ŠE NE VEMO: kuratorska vrsta P0–P4 JE odgovor —
+  //        muzejsko razumljiva besedila ENTITY_QUEUE gredo v kontekst;
+  //    (b) sicer: vsa, katerih zapisi so v kontekstu; posebej P0-E1
+  //        (Peter Madronič), če se ime pojavi v vprašanju, entiteta pa
+  //        (pravilno) ne obstaja.
+  const isGaps = intent === "gaps";
   const contextSlugs = new Set<string>(entitySlugs);
   for (const hit of exhibitHits.slice(0, MAX_STANDALONE_EXHIBITS)) {
     contextSlugs.add(hit.exhibit.slug);
   }
   const openQuestions: AIQuestionNote[] = [];
   const queuedIds = new Set<string>();
+  const queueLimit = isGaps ? MAX_OPEN_QUESTIONS_GAPS : MAX_OPEN_QUESTIONS;
   const queueFor = (item: EntityQueueItem) => {
-    if (queuedIds.has(item.id) || openQuestions.length >= MAX_OPEN_QUESTIONS) return;
+    if (queuedIds.has(item.id) || openQuestions.length >= queueLimit) return;
     queuedIds.add(item.id);
     openQuestions.push({
       id: item.id,
@@ -370,8 +476,12 @@ export function buildContext(
       slugs: item.slugs,
     });
   };
-  for (const item of ENTITY_QUEUE) {
-    if (item.slugs.some((s) => contextSlugs.has(s))) queueFor(item);
+  if (isGaps) {
+    for (const item of ENTITY_QUEUE) queueFor(item);
+  } else {
+    for (const item of ENTITY_QUEUE) {
+      if (item.slugs.some((s) => contextSlugs.has(s))) queueFor(item);
+    }
   }
   const p0madronic = ENTITY_QUEUE.find((q) => q.id === "P0-E1");
   if (
@@ -387,7 +497,8 @@ export function buildContext(
   const selectedEntities = entityHits.slice(0, MAX_ENTITIES).map((h) => h.entity);
   const kinds = new Set<EntityKind>(selectedEntities.map((e) => e.type));
   let queryType: CuratorQueryType;
-  if (intent === "collection") queryType = "collection";
+  if (isGaps) queryType = "collection"; // kaj še ne vemo = vprašanje o ZBIRKI
+  else if (intent === "collection") queryType = "collection";
   else if (intent === "relation" && selectedEntities.length >= 2) queryType = "relation";
   else if (intent === "source") queryType = "source";
   else if (kinds.has("person") && !kinds.has("place") && !kinds.has("event")) queryType = "person";
@@ -469,7 +580,7 @@ export function buildContext(
     exhibits,
     openQuestions,
     collection:
-      queryType === "collection" ||
+      queryType === "collection" || isGaps ||
       (queryType === "source" && entities.length === 0 && exhibits.length === 0)
         ? buildCollectionContext(layer)
         : undefined,

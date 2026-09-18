@@ -2,9 +2,9 @@
  * TASK 41 / TESTI — testna surita za AI KUSTOSA (EVIDENCE-GROUNDED CURATOR).
  * (41. sklop / TESTI — po 40. sklopu)
  *
- * Ničesar ne spreminja. NE KLICe MODELA: vsa sinteza gre skozi LAŽNI
+ * Ničesar ne spreminja. NE KLICa MODELA: vsa sinteza gre skozi LAŽNI
  * ponudnik (vbrizgan v askCurator), pravi verigi (OpenRouter → HF → z-ai)
- * se ne približa. Preverja:
+ * se ne približa. Preslikava naročilovih testov T1–T16:
  *
  *  T1 POGODBA O PODATKIH (context vsebuje SAMO muzejske dokazne podatke)
  *  T2 determinizem razrešitve (isti vprašanji → bajtno identičen kontekst)
@@ -15,16 +15,22 @@
  *  T7 preverba odgovora (verifyAnswer: striženje navedkov, viri, združevanje)
  *  T8 abstrakcija ponudnika + cevovod (lažni ponudnik → obogaten odgovor)
  *  T9 i18n + HTTP regresija (5 jezikov, API pogodba, statistika, ostale poti)
+ *  T10 JEZIK VPRAŠANJA (naročilov T14: SL/EN/DE/IT/HR — odgovor v jeziku
+ *     vprašanja, ne vmesnika; zaznavanje deterministično, brez modela)
+ *  T11 KAJ ŠE NE VEMO (WHAT WE DON'T KNOW: kuratorska vrsta P0–P4 pride v
+ *     kontekst kot muzejsko razumljive vrzeli; navadna vprašanja ostanejo
+ *     navadna; poziv prepoveduje interne kode)
  *
- * Zagon: bun scripts/test-curator.ts (za T9 naj teče dev strežnik na :3000)
+ * Zagon: bun scripts/test-ai-curator.ts (za T9 naj teče dev strežnik na :3000)
  */
 
 import {
   buildContext,
   contextHasEvidence,
+  detectQuestionLang,
   yearsIn,
 } from "../src/lib/curator-retrieval";
-import { verifyAnswer, museumAIProvider } from "../src/lib/curator-provider";
+import { verifyAnswer, museumAIProvider, systemPrompt } from "../src/lib/curator-provider";
 import { askCurator, curatorRateLimited } from "../src/lib/curator";
 import type {
   AIAnswer,
@@ -578,14 +584,14 @@ section("T9 — I18N + HTTP REGRESIJA");
 // ===========================================================================
 
 async function t9() {
-  // i18n — curator razdel v vseh 5 jezikih, starters = 6.
+  // i18n — curator razdel v vseh 5 jezikih, starters = 7 (6 vsebinskih + vrzel).
   const langs = ["sl", "en", "hr", "de", "it"] as const;
   check(
     langs.every((l) => {
       const c = ui[l].curator;
-      return !!c.title && Array.isArray(c.starters) && c.starters.length === 6;
+      return !!c.title && Array.isArray(c.starters) && c.starters.length === 7;
     }),
-    "T9.1 curator i18n: naslov + 6 začetnih vprašanj v vseh 5 jezikih",
+    "T9.1 curator i18n: naslov + 7 začetnih vprašanj (zadnje = kaj še ni dokumentirano) v vseh 5 jezikih",
   );
   check(langs.every((l) => ui[l].curator.whatWeKnow.length > 0), "T9.2 curator i18n: oznake odstavkov v vseh 5 jezikih");
 
@@ -651,6 +657,146 @@ async function t9() {
   }
 }
 await t9();
+
+// ===========================================================================
+section("T10 — JEZIK VPRAŠANJA (naročilov T14: SL / EN / DE / IT / HR)");
+// ===========================================================================
+
+async function t10() {
+  // Zaznavanje jezika — deterministično, brez modela.
+  check(detectQuestionLang("Kdo je bil Konrad Barle?") === "sl", "T10.1 slovensko vprašanje → sl");
+  check(detectQuestionLang("Who was Konrad Barle?") === "en", "T10.2 angleško vprašanje → en");
+  check(detectQuestionLang("Wer war Konrad Barle?") === "de", "T10.3 nemško vprašanje → de");
+  check(detectQuestionLang("Chi era Konrad Barle?") === "it", "T10.4 italijansko vprašanje → it");
+  check(detectQuestionLang("Tko je bio Konrad Barle?") === "hr", "T10.5 hrvaško vprašanje → hr");
+  check(detectQuestionLang("Konrad Barle?") === null, "T10.6 brez jezikovnih oznak → null (jezik vmesnika)");
+  check(detectQuestionLang("Was ist die Kolpa?") === "de", "T10.7 »Was ist …« → de (ne en)");
+  check(detectQuestionLang("What is the Kolpa?") === "en", "T10.8 »What is the …« → en (ne de)");
+
+  // askCurator z lažnim ponudnikom: jezik VPRAŠANJA zamenja jezik vmesnika.
+  const seen: AIContext[] = [];
+  const spy: MuseumAIProvider = {
+    async answer(context) {
+      seen.push(context);
+      return {
+        answerable: false,
+        reason: "insufficient_evidence",
+        kajVemo: [],
+        kakoVemo: [],
+        viri: [],
+        opomba: null,
+      };
+    },
+  };
+  await askCurator("sl", "Who was Konrad Barle? (jezikovni test)", spy);
+  await askCurator("en", "Kdo je bil Konrad Barle? (jezikovni test)", spy);
+  await askCurator("sl", "Tko je bio Konrad Barle? (jezikovni test)", spy);
+  await askCurator("de", "Chi era Konrad Barle? (jezikovni test)", spy);
+  check(
+    seen[0]?.lang === "en" && seen[0]?.layer === "en",
+    "T10.9 EN vprašanje pri SL vmesniku → kontekst EN (odgovor v angleščini)",
+  );
+  check(
+    seen[1]?.lang === "sl" && seen[1]?.layer === "sl",
+    "T10.10 SL vprašanje pri EN vmesniku → kontekst SL",
+  );
+  check(
+    seen[2]?.lang === "hr" && seen[2]?.layer === "sl",
+    "T10.11 HR vprašanje → jezik hr + slovenska VSEBINSKA plast (zapisi so SL)",
+  );
+  check(
+    seen[3]?.lang === "it" && seen[3]?.layer === "en",
+    "T10.12 IT vprašanje → jezik it + angleška vsebinska plast",
+  );
+
+  // Sistemski poziv nosi jezik odgovoda.
+  check(systemPrompt(seen[1]!).includes("slovenščini"), "T10.13 poziv SL: odgovarjaj v slovenščini");
+  check(systemPrompt(seen[2]!).includes("hrvaščini"), "T10.14 poziv HR: odgovarjaj v hrvaščini (ne slovenščini)");
+  check(systemPrompt(seen[0]!).includes("English"), "T10.15 poziv EN: answer in English");
+  check(systemPrompt(seen[3]!).includes("Italian"), "T10.16 poziv IT: answer in Italian");
+  check(
+    systemPrompt(buildContext("de", "Wer war Konrad Barle?").context).includes("German"),
+    "T10.17 poziv DE: answer in German",
+  );
+  check(
+    detectQuestionLang("Koliko prebivalcev ima Pariz?") === null,
+    "T10.18 SL zavrnitveno vprašanje brez oznak → null (ostane jezik vmesnika SL)",
+  );
+}
+await t10();
+
+// ===========================================================================
+section("T11 — KAJ ŠE NE VEMO (WHAT WE DON'T KNOW — kuratorska vrsta)");
+// ===========================================================================
+
+async function t11() {
+  const { context } = buildContext("sl", "Kaj o zbirki še ni dovolj dokumentirano?");
+  check(context.queryType === "collection", "T11.1 vrzel → vrsta vprašanja COLLECTION");
+  check(
+    context.openQuestions.length >= 8,
+    "T11.2 kuratorska vrsta P0–P4 pride v kontekst (≥8 odprtih vprašanj)",
+    `${context.openQuestions.length}`,
+  );
+  check(context.openQuestions.some((q) => q.id === "P0-E1"), "T11.3 P0-E1 (dva Petra Madroniča) je med vrzeli");
+  check(context.openQuestions.some((q) => q.id === "P1-E1"), "T11.4 P1-E1 (MVG-014 ↔ MVG-056) je med vrzeli");
+  check(context.collection !== undefined, "T11.5 pregled zbirke (števci, dobe) je v kontekstu");
+  check(contextHasEvidence(context), "T11.6 vrzel je dokazljiva — guard NE zavrne (0 klicov ni potrebno)");
+  check(
+    context.openQuestions.every((q) => q.text.length > 10 && !/\bP[0-4]-E\d/.test(q.text)),
+    "T11.7 besedila vrzeli so muzejsko razumljiva (brez internih kod v besedilu)",
+  );
+  const p1e1 = context.openQuestions.find((q) => q.id === "P1-E1");
+  check(
+    !!p1e1 && p1e1.slugs.every((s) => context.provided.has(s)),
+    "T11.8 zapisi vrzeli so v zemljevidu preverbe — model lahko citira MVG-014/MVG-056",
+  );
+  check(
+    context.openQuestions.map((q) => q.id).join(",") ===
+      ENTITY_QUEUE.slice(0, context.openQuestions.length).map((q) => q.id).join(","),
+    "T11.9 vrstni red vrzeli = kuratorska vrsta (deterministično)",
+  );
+
+  // Večjezične vrzeli.
+  const { context: enCtx } = buildContext("en", "What is not yet documented about the collection?");
+  check(
+    enCtx.queryType === "collection" && enCtx.openQuestions.length >= 8,
+    "T11.10 EN vrzel: isto (collection + ≥8), besedila v EN plasti",
+  );
+  const { context: g2 } = buildContext("sl", "Kaj o Gribljah še ne vemo?");
+  check(
+    g2.queryType === "collection" && g2.openQuestions.length >= 8,
+    "T11.11 »Kaj o Gribljah še ne vemo?« (naročilov primer) je vrzel",
+  );
+
+  // Navadno vprašanje NE sproži vrzeli (preozki vzorci).
+  const { context: normal } = buildContext("sl", "Kaj se je zgodilo marca 1945?");
+  check(
+    normal.queryType === "event" && normal.openQuestions.length <= 4,
+    "T11.12 navadno vprašanje ostane navadno (dogodek, ≤4 odprta vprašanja)",
+  );
+  const { context: kolpa } = buildContext("sl", "Kaj se je dogajalo ob Kolpi?");
+  check(
+    kolpa.queryType !== "collection" || kolpa.openQuestions.length <= 4,
+    "T11.13 vprašanje o Kolpi ni vrzel",
+  );
+
+  // Poziv: interne kode so prepovedane, vrzeli se pošteno naštejejo.
+  const prompt = systemPrompt(context);
+  check(prompt.includes("internih kod"), "T11.14 poziv: NE uporabljaj internih kod (P0/P1/…)");
+  check(
+    prompt.includes("še ni dovolj dokumentirano") && prompt.includes("naštej odprta vprašanja"),
+    "T11.15 poziv: na vprašanje o vrzeli pošteno naštej odprta vprašanja",
+  );
+  check(
+    prompt.includes("NE IZBEREŠ odgovora"),
+    "T11.16 poziv: na kuratorsko odprto vprašanje se NE izbere odgovora",
+  );
+  check(
+    prompt.includes("NE prevajaj") || prompt.includes("ne prevajaj"),
+    "T11.17 poziv: imena virov se ne prevajajo, kadar bi se spremenila identiteta",
+  );
+}
+await t11();
 
 // ===========================================================================
 console.log("");
