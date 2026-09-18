@@ -1728,3 +1728,28 @@ Stage Summary:
 - Test "one object → five more" zdaj uspešen na VSEH treh površinah: interaktivni dialog (8+), statična stran (5–9), QR tok (zapis → sprehod → sosednje postaje)
 - QR tok fizični → digitalni → fizični je zaprt: fizični predmet → QR → /exponat (zapis + zgodba + viri) → sorodni/sprehod → Zaženi sprehod → živi muzej na pravi postaji
 - Odprto (dokumentirano, NE reševano): upstream kvota z-ai za vodnika (operativno — kredit), kuratorska odločitev o kategoriji kraj/osebe, hreflang za hr/de/it vsebinsko (vsebina obstaja le SL/EN)
+
+---
+Task ID: 35
+Agent: Main agent (Z.ai Code)
+Task: TASK 35 — STATIC OBJECT PAGE → FULL COLLECTION DISCOVERY: read-only audit, prenos obstoječe logike (relatedExhibits, walkStopOf) na statično stran, five-more 10/10, QR tok, SEO/a11y/mobile/i18n verifikacija, max 1 feature
+
+Work Log:
+- Read-only audit (§1): exponat/[slug]/page.tsx (866 vrstic) — UGOTOVLJENO: sekciji ZAPIS NA SPREHODU (walkStopOf: naslov + Postaja X/N + kuratorska opomba + sosedi po sprehodu z MVG + Zaženi sprehod /?walk=&stop=) in SORODNI ZAPISI (relatedExhibits limit 5: MVG + naslov + vzroki povezav) ŽE OBSTAJATA — implementirane v prejšnji seji kot »32. sklop — FAZA 3 (2/3)«, commit bc32265 (uporabnikov lastni baseline)
+- Viri logike identični dialogu: exhibit-dialog.tsx:163 relatedExhibits(…, 3) + :190 walkStopOf(…) — statična stran isti vir povezav (connections.ts: 5 vrst razložljivih povezav z labelSi/labelEn) in isti vir sprehodov (walks.ts: walkStopOf išče samo WALKS — vsak od 93 zapisov natanko en tematski sprehod; družinski sprehod podmnožica, isto pravilo kot v dialogu) → EN MODEL → ENO PRAVILO → VEČ PRIKAZOV ✓
+- Presoja po §13: »Če ugotoviš, da je problem že rešen v trenutni kodi, ne spreminjaj ničesar« → NO CODE CHANGES; samo celovita sveža verifikacija
+- FIVE-MORE test (strežniški HTML, brez JS): 10/10 — griblje-vas 5, sveti-vid 5, kolpa-reka 7, muzejska-ucilnica 8, audrey-totter 8, panjska-koncnica 9, tone-kralj-98 8, uskoki-in-vojna-krajina 6, mlini-na-kolpi 7, zvon-2008 9; robova MVG-001 (5) in MVG-093 (8)
+- CELA ZBIRKA: skripta /tmp/test-all-93.ts — 93/93 strani gre vseh 7 preverk (HTTP 200 + Zapis na sprehodu + Sorodni zapisi + ≥5 unikatnih /exponat/ povezav + canonical + JSON-LD Article + MVG); minimum povezav v zbirki: 5 (MVG-001)
+- QR tok v živo (agent-browser): /exponat/zvon-2008 (MVG-048) → klik sorodne kartice MVG-042 → /exponat/franc-brinc → Zaženi sprehod v muzeju → /?walk=vas-in-njeni-ljudje&stop=10&exhibit=franc-brinc → dialog zapisa + WalkNav »Stop 10 of 30« + Previous/Next stop; konzola 0 napak
+- SEO (curl): canonical SL self, EN self ?lang=en; hreflang sl/en/x-default na obeh; JSON-LD 4 entitete (Museum, CollectionPage, Article, BreadcrumbList) + PropertyValue MVG-048; sitemap 94 URL; /exponat/ni-zapis → 404
+- Mobile: 390 = 390/390, 360 = 360/360 (SL panjska-koncnica — najdaljši naslov), EN 360 = 360/360 (muzejska-ucilnica); brez preliva; najmanjša dotik-tarča 86 px (zahteva 44)
+- A11y: skip-link prvi v Tab vrsti; zaporedje logično (skip → muzej → jezik → drobtine → viri …); h1/h2 semantični z aria-labelledby; 0 podvojenih dostopnih imen (9 povezav); namen povezav razumljiv brez vizualnega konteksta (MVG + naslov + vzrok)
+- i18n: verify-i18n 811 × 5 jezikov identično; statična stran SL/EN (obstoječi sistem — vsebina obstaja le SL/EN); verify-i18n nespremenjen ✓
+- tsc: 0 napak aplikacije (samo znana obstoječa scripts/audit-semantics.ts); eslint: čisto; dev.log: brez novih napak; qr-label-tool.tsx cilja /exponat/[slug] (backward compat /?exhibit= potrjen v QR toku)
+- Delovno drevo: runtime drift db/custom.db (števci obiskov od testnega prometa) vrnjen z git checkout — končno stanje čisto; bc32265 lokalno == origin/main (že sinhronizirano)
+
+Stage Summary:
+- PRESODBA: problem TASK 35 (statična stran brez sorodnih zapisov in konteksta sprehoda, five-more 0/10) je ŽE REŠEN v commitu bc32265 — implementacija, ki jo naloga zahteva, obstaja v celoti in je tokrat dokazana z neodvisno svežo verifikacijo (93/93 strani, five-more 10/10, QR tok end-to-end, SEO/a11y/mobile/i18n/tsc/eslint)
+- NI spreminjanih datotek, NI novih podatkov, NI novega algoritma — isto seme (museum-content.ts), isti pravili (connections.ts, walks.ts), drugačna le predstavitev (limit 5 na strani brez menijev, dokumentirano v kodi)
+- §12 PREDLOGA 3 ni dotaknjena (kategorija kraj nespremenjena, 0 premaknjenih zapisov)
+- Commit/push: brez novih commitov (ni sprememb); baseline bc32265 že na origin/main
