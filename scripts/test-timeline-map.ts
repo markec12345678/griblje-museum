@@ -443,8 +443,8 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 93 && new Set(seedExhibits.map((e) => e.museumNo)).size === 93, "T7.1 93 zapisov, 93 MVG številk");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 415, "T7.2 415 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 317, "T7.3 317 identitet virov (WorldCat OCLC 821110335 združen po dokazu; eheritage.si identiteta združuje MVG-060 + MVG-083)", `=${SOURCE_USAGE.size}`);
+  check(rows === 423, "T7.2 423 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 325, "T7.3 325 identitet virov (WorldCat OCLC 821110335 združen po dokazu; eheritage.si identiteta združuje MVG-060 + MVG-083; 47. sklop: +8 muzejskih najdb SEM/BM/SSM/Andrič/Dular)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 52, "T7.4 52 deljenih virov (≥2 zapisa)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -503,7 +503,7 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 // ===========================================================================
 section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
 {
-  const BASE = "http://localhost:3000";
+  const BASE = process.env.BASE_URL ?? "http://localhost:3000";
   let serverUp = true;
   try {
     const probe = await fetch(BASE + "/", { method: "HEAD" });
@@ -547,11 +547,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 93 && od.counts?.sources === 415,
-      "T8.3 OpenData: 93 zapisov / 415 virov",
+      od.counts?.exhibits === 93 && od.counts?.sources === 423,
+      "T8.3 OpenData: 93 zapisov / 423 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 415 && totalRows === 415, "T8.4 OpenData sourceKey 415/415", `${withKey}/${totalRows}`);
+    check(withKey === 423 && totalRows === 423, "T8.4 OpenData sourceKey 423/423", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();

@@ -2151,3 +2151,27 @@ Stage Summary:
 - 46. sklop: spletna raziskava z vgradnjo LE novih najdb; dokumentirana zavrnitev 9+ duplikatov/neoverljivih trditev (evidenčna disciplina ohranjena)
 - Nova artefakta: research-griblje/14-spletna-raziskava-vgradnja-2026-10.md + raw-web-2026-10/ (surovi rezultati)
 - Zbirka: 93 zapisov / 415 vrstic virov / 317 identitet / 52 deljenih / 27 pojmov izrazoslovja
+
+---
+Task ID: 47
+Agent: Z.ai Code (glavni agent)
+Task: Iskanje Griblje po slovenskih spletnih muzejih, zbirkah in knjigah (vse ustanove, izključno Griblje) + vgradnja najdb brez duplikatov; push na GitHub
+
+Work Log:
+- Preverjanje baseline: tsc 0 (popravek import iz 46. sklopa že na mainu), main == origin/main (push potrjen)
+- Kontrola duplikatov pred integracijo: grep proti 93 zapisom/92 entitetam za vse kandidatne teme (žbularji, šola 1889, muzejska učilnica, EŠD 10094/11118, križevo, Kučar, tamburica, Rab, manevri, Napoleon…) — identificirano, kaj je že pokrito
+- 22+ ciljanih spletnih iskanj po ustanovah (Kamra, Belokranjski muzej, dLib/COBISS, SIstory, MDC/museu.ms, Narodni muzej, SEM, krajevni leksikon, ZVKDS, Geopedia, cerkev/škofija, Zbornik Bele krajine, arheologija, folklora, šola, NOB, fotografije, domača imena) — surovine v research-griblje/raw-web-muzeji-2026-10/ (21 JSON + _digest + orodja)
+- Pridobitev strani (curl + page_reader): Belokranjski muzej (publishwall post 292000 Kulturna zgodovina — polno besedilo zbirk), SEM drupal (digitalne zbirke, ključne besede, zapisi F0000182/F0001407), muzejsporta.si (SŠM letna poročila), arheologija.si zborniki, iza2.zrc-sazu.si, hrcak.srce.hr
+- NAJDBE: (a) SEM Zbirka starih fotografij — F0000182 »Belokranjska hiša z gospodarskim poslopjem, Griblje« (avtor neznan) + F0001407 »Hiša, Griblje« (Drago Vahtar, 1. 4. 1928); (b) Belokranjski muzej Kulturna zgodovina — toaletna skledica s podobo Napoleona I., začetek 19. st., Griblje, inv. št. 1767 (kontekst: francoski davki, upor v Starem trgu in Črnomlju); (c) SŠM letno poročilo — odprtje muzejske učilnice POŠ Griblje, nagovor mag. Marjetke Balkovec Debevec (razlika datumov 2. vs 26. junij 2022 — zapisana v opombi vira); (d) Andrič 2007 (The Holocene 17(6): 763–776) — polenska zapisa Mlake in Gribelj: intenziven človeški vpliv ~4150 cal BC; Andrič 2011 (Opera IAS 21: 235–249) — Griblje marsh, Bela krajina nepoledenena; Dular 2001 (Varstvo spomenikov 39: 7–27) — temeljni članek o Gribljah; (e) Dular 1986 (Etnološka tribina 16(9)) — koleracija: Janko Barle je pisal o ženitovanjskih običajih, pesmih in pastirskem prazniku (križih) v Gribljah
+- VGRADNJA (add-only, 5 zapisov, 8 virov, 4 nove povedi/odstavki SL+EN): MVG-017 (SEM fotografije + 2 vira + popravek povedi »primeri še čakajo« → prvi dokumentirani primeri), MVG-092 (skledica + odstavek + vir), MVG-083 (polenski odstavek + 3 vira Dular 2001/Andrič 2007/2011), MVG-087 (koleracijska poved + vir), MVG-046 (SŠM vir z opombo o razliki datumov)
+- ZAVRNJENO (duplikat/ni Griblje/neoverljivo): uskoška sablja (Dolenjci), vrč s srebrniki (Grabrovec), grb Lenkoviča (Pobrežje), železarna Gradac 1882 + Johan Barle, kupski manevri 1937, interniranci na Rabu, kačje pastirje RTŠB 2008, »Zvonovi so sami zapeli«, cox.si (napačna domena) — vsi s razlogom v research-griblje/15
+- Konstante regresij posodobljene: test-timeline-map (T7.2 415→423, T7.3 317→325, T8.3/T8.4 423), test-entities (T8.6 325, T8.11/T9.3/T9.4 423), audit-entities (423/325), audit-timeline-map (423), test-curator-red-team (R0.3/R16.2 stale 412 → 423); orodje: BASE_URL env za test skripte (privzeto :3000)
+- db reseeda (db:push + db:seed, idempotentno) — OpenData 93/423
+- Verifikacija: test-entities 100 ✓/0 ✗, test-timeline-map 72 ✓/0 ✗ (proti živemu strežniku :3100), test-ai-curator 214 ✓/0 ✗, red-team 157 ✓/0 ✗ (GAP 24), audit-entities ✓ 0, audit-timeline-map 39 ✓/0 ✗, verify-i18n 930×5, tsc 0, eslint 0, spot-check 5 strani živo (skledica/F-papirjev/Andrič/Dular/SSM vse izrisano)
+- Dokumentacija: research-griblje/15-muzejska-raziskava-2026-10.md + KAZALO +15 + README 47. sklop; commit + push origin main
+
+Stage Summary:
+- 47. sklop: muzejska raziskava po slovenskih ustanovah z vgradnjo LE novih najdb; 8 novih virov (SEM ×2, BM, SŠM, Dular 1986, Dular 2001, Andrič 2007, Andrič 2011), 4 nove vsebinske dopolnitve SL/EN
+- Zbirka: 93 zapisov / 423 vrstic virov / 325 identitet / 52 deljenih (vse številke v testih usklajene)
+- Nova artefakta: research-griblje/15-muzejska-raziskava-2026-10.md + raw-web-muzeji-2026-10/ (surovi rezultati + orodja)
+- TO_COLLECT (kustos): identifikacija hiš na SEM fotografijah, točen datum odprtja učilnice, Johan Barle 1882, interniranci na Rabu, SEM »Svetovljan iz Gribelj«, Kamra obeležja
