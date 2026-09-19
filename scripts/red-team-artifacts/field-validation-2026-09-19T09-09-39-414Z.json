@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "sl": 1
+    },
+    "counts": {
+      "PASS": 1,
+      "REVIEW": 0,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 70,
+      "category": "G",
+      "question": "Ali vemo, kdaj je bil rojen Fran Vesel?",
+      "language": "sl",
+      "retrieved_records": [
+        "tkalstvo",
+        "anton-filak",
+        "bele-breze",
+        "pecnica-susenje-sadja",
+        "evakuacija-1945",
+        "veselko-fotograf",
+        "zracni-most-krasinec",
+        "peter-kambic",
+        "katarina-zupanic",
+        "kucar-podzemelj",
+        "ljudje-ob-kolpi",
+        "nikolaj-dragos",
+        "matija-totter",
+        "joze-dular"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:fran-vesel",
+          "type": "person",
+          "label": "Fran Vesel"
+        },
+        {
+          "id": "person:franjo-veselko",
+          "type": "person",
+          "label": "Franjo Veselko"
+        },
+        {
+          "id": "person:katarina-zupanic",
+          "type": "person",
+          "label": "Katarina Zupanič"
+        },
+        {
+          "id": "person:marjeta-totter",
+          "type": "person",
+          "label": "Marjeta Totter"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Predenje_v_Beli_krajini.jpg",
+        "ime:Slovenska etnografska literatura o predenju in tkalstvu na Dolenjskem in v Beli krajini",
+        "url:etno-muzej.si",
+        "url:sl.wikipedia.org/wiki/Lan",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:worldploughing.org",
+        "url:svet24.si/sport/filak-spet-drzavni-prvak-v-oranju-pate-prvi-z-obracalnimi-plugi-32794-1693225",
+        "url:svet24.si/sport/drzavna-prvaka-v-oranju-postala-igor-pate-in-anton-filak-730417",
+        "ime:Kmečki glas: Stara nova zmagovalca državnega tekmovanja (65. tekmovanje 2022)",
+        "url:svet24.si/sport/anton-filak-drzavni-prvak-v-oranju-292991-1718823",
+        "url:zotks.si",
+        "url:radio-odeon.com/novice/filak-in-simonic-uspesna-na-drzavnem-tekmovanju-v-oranju",
+        "url:commons.wikimedia.org/wiki/File:Oranje_s_konjsko_vprego.jpg",
+        "ime:Slovenska etnografska literatura o oranju, plugu in vpregah (tipologija)",
+        "url:slovenskenovice.delo.si/novice/slovenija/v-butoraju-in-gribljah-s-slovesno-maso-proslavili-500-letnici-cerkev-je-vedno-ogledalo-vasi-foto",
+        "url:radio-odeon.com/novice/plug-kot-simbol-kmetijstva-in-prezivetja-cloveka-na-zemlji",
+        "url:commons.wikimedia.org/wiki/File:Hiša_med_brezami.jpg",
+        "url:kp-kolpa.si",
+        "url:kp-kolpa.si/o-nas/osebna-izkaznica",
+        "url:sl.wikipedia.org/wiki/Navadna_breza",
+        "url:commons.wikimedia.org/wiki/File:Pečnica_za_sušenje_sadja_v_Adlešičih.jpg",
+        "url:radio-odeon.com/novice/semic-v-starih-cajtih-574",
+        "url:radio-odeon.com/novice/stavbna-dediscina-podezelja",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:sistory.si/publikacije",
+        "url:commons.wikimedia.org/wiki/File:Moški_s_fotoaparatom,_v_ozadju_gospodarska_poslopja.jpg",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:commons.wikimedia.org/wiki/File:Božično_drevo.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-peter-kambic",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "ime:Pirc Krasinski (Peter Kambič): Božič pri Belokranjcih, Dolenjske novice, 1. januar 1889",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Herbarij_-_Flysser_1696_-_PMS.jpg",
+        "url:slovenska-biografija.si/oseba/sbi915246",
+        "ime:Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogled_na_Kolpo_in_Adlešiče_1920.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-nikolaj-dragos",
+        "ime:Nikolaj Dragoš: Mojih sto let (knjiga, napisana ob stotem rojstnem dnevu)",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": [
+          "veselko-fotograf"
+        ]
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "veselko-fotograf"
+        ],
+        "keepApprox": {
+          "re": "približno|okoli|~|≈|ni zapisan|ni dokumentiran",
+          "why": "leta življenja Franeta Vesla niso v podatkih"
+        },
+        "refusalLikely": true
+      },
+      "curatorial_judgment": "Leta življenja NISO v podatkih (fotografije ~1920) — zavrnitev/približno ~1920 z oznako.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": [
+        "poštena zavrnitev (pričakovana) — muzej prizna, da ne ve"
+      ]
+    }
+  ]
+}

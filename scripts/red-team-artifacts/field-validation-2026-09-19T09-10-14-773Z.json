@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "sl": 1
+    },
+    "counts": {
+      "PASS": 0,
+      "REVIEW": 1,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 71,
+      "category": "H",
+      "question": "Ali je bil zvon izdelan leta 1900?",
+      "language": "sl",
+      "retrieved_records": [
+        "zvon-2008",
+        "sveti-vid",
+        "anton-filak",
+        "audrey-totter",
+        "gribeljski-zbul",
+        "janko-barle",
+        "kanizarica",
+        "katarina-zupanic",
+        "konrad-barle",
+        "tkalstvo",
+        "bele-breze",
+        "pecnica-susenje-sadja",
+        "petstoletnica-2026",
+        "kavbojski-zur",
+        "vaska-sola",
+        "jurjevo-v-gribljah"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:blagoslov-zvona-2008",
+          "type": "event",
+          "label": "Blagoslov in posvetitev novega zvona"
+        },
+        {
+          "id": "event:vrnitev-glavnega-zvona-1998",
+          "type": "event",
+          "label": "Vrnitev glavnega zvona"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Church_bell_2017_G1.jpg",
+        "ime:SV. VID GRIBLJE — Blagoslovitev in posvetitev zvona, Griblje 2008 (spominska knjiga)",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj_-_cerkev_sv._Vida.jpg",
+        "url:sl.wikipedia.org/wiki/Sveti_Vid",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Sv. Vid Griblje — blagoslovitev in posvetitev zvona, spominska knjiga, Griblje 2008",
+        "url:sl.wikipedia.org/wiki/Cerkev_sv._Vida,_Griblje",
+        "url:slovenskenovice.delo.si/novice/slovenija/v-butoraju-in-gribljah-s-slovesno-maso-proslavili-500-letnici-cerkev-je-vedno-ogledalo-vasi-foto",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:worldploughing.org",
+        "url:svet24.si/sport/filak-spet-drzavni-prvak-v-oranju-pate-prvi-z-obracalnimi-plugi-32794-1693225",
+        "url:svet24.si/sport/drzavna-prvaka-v-oranju-postala-igor-pate-in-anton-filak-730417",
+        "ime:Kmečki glas: Stara nova zmagovalca državnega tekmovanja (65. tekmovanje 2022)",
+        "url:svet24.si/sport/anton-filak-drzavni-prvak-v-oranju-292991-1718823",
+        "url:zotks.si",
+        "url:radio-odeon.com/novice/filak-in-simonic-uspesna-na-drzavnem-tekmovanju-v-oranju",
+        "url:commons.wikimedia.org/wiki/File:Oranje_s_konjsko_vprego.jpg",
+        "ime:Slovenska etnografska literatura o oranju, plugu in vpregah (tipologija)",
+        "url:radio-odeon.com/novice/plug-kot-simbol-kmetijstva-in-prezivetja-cloveka-na-zemlji",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "url:commons.wikimedia.org/wiki/File:AUDREYTotter.jpg",
+        "url:commons.wikimedia.org/wiki/File:Lady-in-the-Lake-trailer-mirror.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:youtu.be/9N0Y_GAC1og",
+        "url:youtu.be/_4pM9KSBKBE",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:svet24.si",
+        "url:radio-odeon.com/novice/miklavzeva-in-zbulckova-trznica",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:rtvslo.si/kultura/dediscina/muzej-rudnika-kanizarica-predan-v-upravljanje-ric-u-bela-krajina/613386",
+        "url:sl.wikipedia.org/wiki/Kanižarica",
+        "url:radio-odeon.com/novice/mestna-muzejska-zbirka-z-novim-imenom",
+        "url:commons.wikimedia.org/wiki/File:Rudnik_Kanižarica.jpg",
+        "url:commons.wikimedia.org/wiki/File:Herbarij_-_Flysser_1696_-_PMS.jpg",
+        "url:slovenska-biografija.si/oseba/sbi915246",
+        "ime:Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:commons.wikimedia.org/wiki/File:Predenje_v_Beli_krajini.jpg",
+        "ime:Slovenska etnografska literatura o predenju in tkalstvu na Dolenjskem in v Beli krajini",
+        "url:etno-muzej.si",
+        "url:sl.wikipedia.org/wiki/Lan",
+        "url:commons.wikimedia.org/wiki/File:Hiša_med_brezami.jpg",
+        "url:kp-kolpa.si",
+        "url:kp-kolpa.si/o-nas/osebna-izkaznica",
+        "url:sl.wikipedia.org/wiki/Navadna_breza",
+        "url:commons.wikimedia.org/wiki/File:Pečnica_za_sušenje_sadja_v_Adlešičih.jpg",
+        "url:radio-odeon.com/novice/semic-v-starih-cajtih-574",
+        "url:radio-odeon.com/novice/stavbna-dediscina-podezelja",
+        "url:crnomelj.si/sl/za-obcane/novice/2026062314453884/v-gribljah-slovesno-obelezili-500-letnico-cerkve-sv-vida-in-namenu-predali-novo-pridobitev",
+        "url:moja-dolenjska.si/griblje-slovesno-obelezili-500-letnico-prve-pisne-omembe",
+        "url:instagram.com/p/DZ7pevXDEU1",
+        "url:commons.wikimedia.org/wiki/File:Cowboy-Boots-And-Hat.png",
+        "url:radio-odeon.com/novice/kavbojski-zur-v-gribljah-znova-navdusil",
+        "url:radio-odeon.com/novice/po-gribljah-s-starodobnimi-kolesi",
+        "url:radio-odeon.com/novice/v-gribljah-ze-16-pasuljada",
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": [
+          "audrey-totter",
+          "gribeljski-zbul",
+          "janko-barle"
+        ]
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zvon-2008"
+        ],
+        "mustNotState": [
+          {
+            "re": "izdelan[^.]{0,30}1900|1900[^.]{0,30}izdelan",
+            "why": "1900 ni dokazana letnica zvona"
+          }
+        ]
+      },
+      "curatorial_judgment": "NAPAČNO: zvon je iz 2008 (blagoslov), glavni zvon vrnjen 1998. Odgovor popravi ali zavrne — 1900 ne sme biti potrjeno.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "dokaz je bil razrešljiv, a kustos je odklonil — morda preveč previden; človeška presoja"
+      ]
+    }
+  ]
+}

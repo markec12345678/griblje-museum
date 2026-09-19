@@ -1,0 +1,1321 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 16,
+    "totalModelCalls": 10,
+    "byLanguage": {
+      "hr": 3,
+      "sl": 7,
+      "en": 2,
+      "de": 2,
+      "it": 2
+    },
+    "counts": {
+      "PASS": 2,
+      "REVIEW": 4,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 10,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 85,
+      "category": "I",
+      "question": "Koliko ljudi je prevezao zračni most?",
+      "language": "hr",
+      "retrieved_records": [
+        "letalisce-otok-1944",
+        "evakuacija-1945",
+        "zracni-most-krasinec"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:zracni-most-krasinec-1945",
+          "type": "event",
+          "label": "Zračni most Krasinec"
+        }
+      ],
+      "retrieved_sources": [
+        "url:rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
+        "url:sl.wikipedia.org/wiki/Otok,_Metlika",
+        "url:odkrijtebelokrajino.com",
+        "url:radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki",
+        "url:commons.wikimedia.org/wiki/File:Zavezniško_letalo_na_letališču_Otok.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Zavezniške dakote i spitfiri s partizanskog letališta Krasinec prepeljale su 2041 ljudi — ranjenike, djecu i savezničke pilote. [[zracni-most-krasinec]]",
+          "Među evakuiranim osobama bila je i književnica Alma Karlin. [[zracni-most-krasinec]]"
+        ],
+        "kakoVemo": [
+          "Broj od 2041 evakuirane osobe potječe iz zapisa o zračnom mostu Krasinec, koji navodi podatke iz knjige Ilinke Todorovski 'Zračni most' (2025). [[zracni-most-krasinec]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 2
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "zracni-most-krasinec"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ],
+        "keepApprox": {
+          "re": "krajem ožujka|48|25",
+          "why": "krajem ožujka 1945"
+        }
+      },
+      "curatorial_judgment": "2041 ljudi u 48 sati — HR; krajem ožujka ostaje približno.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": [
+        "hrvaški odgovor — jezik se preveri ročno (sl/hr ločevanje ni deterministična)"
+      ]
+    },
+    {
+      "id": 86,
+      "category": "I",
+      "question": "Kaj je Cerkvišče?",
+      "language": "sl",
+      "retrieved_records": [
+        "cerkvisce"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:cerkvisce",
+          "type": "place",
+          "label": "Cerkvišče"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+        "url:sl.wikipedia.org/wiki/Cerkvišče",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+        "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Cerkvišče je zaselk, ki je danes drugi naseljni del krajevne skupnosti Griblje. Znana je po tem, da so pred turškimi vpadi stale tri cerkvice, ki so jih Turki porušili in zažgali. Leta 1994 je bila v spomin postavljena kapelica. Zaselka so znana tudi po dveh jamah [[cerkvisce]].",
+          "Cerkvišče je povezana z zgodnjimi turškimi vpadi na to območje, prvi je zabeležen okoli leta 1408 [[cerkvisce]].",
+          "Cerkvišče je sosednja vas krajevne skupnosti Griblje in je del Občine Črnomelj [[cerkvisce]]."
+        ],
+        "kakoVemo": [
+          "Te informacije so dokumentirane v več virih, vključno z Wikimedia Commons, Wikipedijo, spletnimi strani Občine Črnomelj in objavo RTV SLO [[cerkvisce]]."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 4
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "cerkvisce"
+      ],
+      "uncertainty": "približnost prisotna: okoli",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "cerkvisce"
+        ],
+        "keepApprox": {
+          "re": "okrog|približno|okoli|~|≈|1408",
+          "why": "~1408"
+        }
+      },
+      "curatorial_judgment": "Tri cerkvice, ki jih ni več (~1408) — SL; približna letnica.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 87,
+      "category": "I",
+      "question": "What is Cerkvišče?",
+      "language": "en",
+      "retrieved_records": [
+        "cerkvisce"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:cerkvisce",
+          "type": "place",
+          "label": "Cerkvišče"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+        "url:sl.wikipedia.org/wiki/Cerkvišče",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+        "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Cerkvišče is a hamlet and the second settlement of the Griblje local community in Bela krajina, Slovenia [[cerkvisce]]. It is known as the 'sister village' of Griblje [[cerkvisce]]. According to local tradition, three churches once stood at Cerkvišče, but they were pulled down and burned by the Turks during Ottoman incursions [[cerkvisce]]. The villagers believe they know the locations of two of these churches, but the location of the third is unknown [[cerkvisce]]. A memorial chapel was erected on the site in 1994 [[cerkvisce]]. The hamlet also features two caves [[cerkvisce]]."
+        ],
+        "kakoVemo": [
+          "The information about Cerkvišče comes from multiple sources, including Wikimedia Commons, Wikipedia pages for both Cerkvišče and Griblje, the Municipality of Črnomelj website, and an RTV SLO publication. All these sources provide consistent details about the history of the three churches, the 1994 memorial chapel, the caves, and its status as the second settlement of the Griblje local community [[cerkvisce]]."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 4
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "cerkvisce"
+      ],
+      "uncertainty": "približnost prisotna: unknown",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "cerkvisce"
+        ],
+        "keepApprox": {
+          "re": "around|circa|c\\.|~|≈|1408",
+          "why": "around 1408"
+        }
+      },
+      "curatorial_judgment": "Three churches that are no more (around 1408) — EN; approximate year.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "negotovost (around 1408) ni razpoznavna v odgovoru — človeška presoja"
+      ]
+    },
+    {
+      "id": 88,
+      "category": "I",
+      "question": "Was ist Cerkvišče?",
+      "language": "de",
+      "retrieved_records": [
+        "cerkvisce"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:cerkvisce",
+          "type": "place",
+          "label": "Cerkvišče"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+        "url:sl.wikipedia.org/wiki/Cerkvišče",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+        "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Cerkvišče ist ein Ortsteil der Lokalgemeinde Griblje in der Bela krajina. Vor den osmanischen Invasionen standen dort drei Kirchen, die von den Türken zerstört und niedergebrannt wurden. Die Dorfbewohner glauben, die Standorte von zwei dieser Kirchen zu kennen, während der dritte unbekannt ist. 1994 wurde eine Gedenkkapelle errichtet. Der Weiler mit seinen beiden Höhlen ist heute die zweite Siedlung der Lokalgemeinde Griblje [[cerkvisce]]."
+        ],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 4
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "cerkvisce"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "cerkvisce"
+        ],
+        "keepApprox": {
+          "re": "um |etwa|ca\\.|~|≈|1408",
+          "why": "um 1408"
+        }
+      },
+      "curatorial_judgment": "Drei Kirchen, die es nicht mehr gibt (um 1408) — DE; ungefähre Jahreszahl.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "negotovost (um 1408) ni razpoznavna v odgovoru — človeška presoja"
+      ]
+    },
+    {
+      "id": 89,
+      "category": "I",
+      "question": "Cos'è Cerkvišče?",
+      "language": "it",
+      "retrieved_records": [
+        "cerkvisce"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:cerkvisce",
+          "type": "place",
+          "label": "Cerkvišče"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+        "url:sl.wikipedia.org/wiki/Cerkvišče",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+        "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Cerkvišče è un insediamento che fa parte della comunità locale di Griblje. Si tratta del secondo insediamento di questa comunità, dopo Griblje stesso [[cerkvisce]].",
+          "Secondo la documentazione museale, prima delle incursioni ottomane a Cerkvišče sorgevano tre chiese. Tuttavia, i turchi le distrussero e le bruciarono. Gli abitanti del villaggio credono di sapere dove si trovavano due di queste chiese, ma nessuno conosce la posizione della terza [[cerkvisce]].",
+          "In memoria di queste antiche chiese, nel 1994 è stata eretta una cappella commemorativa. L'insediamento di Cerkvišče è noto anche per le sue due grotte [[cerkvisce]]."
+        ],
+        "kakoVemo": [
+          "Queste informazioni sono documentate in diversi fonti, tra cui una fotografia di Wikimedia Commons, voci di Wikipedia in sloveno, il sito del Comune di Črnomelj e un'articolo di RTV SLO. Tutte le fonti concordano sulla storia delle tre chiese distrutte e della cappella del 1994."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 4
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "cerkvisce"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "cerkvisce"
+        ],
+        "keepApprox": {
+          "re": "intorno|circa|~|≈|1408",
+          "why": "intorno al 1408"
+        }
+      },
+      "curatorial_judgment": "Tre chiese che non ci sono più (intorno al 1408) — IT; anno approssimativo.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "negotovost (intorno al 1408) ni razpoznavna v odgovoru — človeška presoja"
+      ]
+    },
+    {
+      "id": 90,
+      "category": "I",
+      "question": "Što je Cerkvišče?",
+      "language": "hr",
+      "retrieved_records": [
+        "cerkvisce",
+        "nikolaj-dragos"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:cerkvisce",
+          "type": "place",
+          "label": "Cerkvišče"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+        "url:sl.wikipedia.org/wiki/Cerkvišče",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+        "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne",
+        "url:commons.wikimedia.org/wiki/File:Pogled_na_Kolpo_in_Adlešiče_1920.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-nikolaj-dragos",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "ime:Nikolaj Dragoš: Mojih sto let (knjiga, napisana ob stotem rojstnem dnevu)",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Cerkvišče je zaselk, ki je danes drugi naseljni del krajevne skupnosti Griblje. [[cerkvisce]]",
+          "Znano je po tem da je pred turškimi vpadi imel tri cerkvice, ki so jih Turki porušili in zažgali. Za dve domnevno vaščani veje, kje sta stali, za tretjo pa ni — leta 1994 so v spomin postavili kapelico. [[cerkvisce]]",
+          "Cerkvišče je zaselk z dvema jamama. [[cerkvisce]]"
+        ],
+        "kakoVemo": [
+          "Znanje temelji na virovih: Wikimedia Commons, Wikipedija, Občina Črnomelj in RTV SLO. [[cerkvisce]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "cerkvisce",
+            "sourceIndex": 4
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "cerkvisce"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "cerkvisce"
+        ],
+        "keepApprox": {
+          "re": "oko|cirka|~|≈|1408",
+          "why": "oko 1408"
+        }
+      },
+      "curatorial_judgment": "Tri crkve kojih više nema (oko 1408) — HR; približna godina.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "negotovost (oko 1408) ni razpoznavna v odgovoru — človeška presoja",
+        "hrvaški odgovor — jezik se preveri ročno (sl/hr ločevanje ni deterministična)"
+      ]
+    },
+    {
+      "id": 91,
+      "category": "J",
+      "question": "Kaj je hitrost svetlobe?",
+      "language": "sl",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Čisto izven korpusa — 0 klicev modela, poštena zavrnitev BREZ navidezno relevantnega zapisa.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)"
+      ]
+    },
+    {
+      "id": 92,
+      "category": "J",
+      "question": "Koliko prebivalcev ima Pariz?",
+      "language": "sl",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Izven korpusa — 0 klicev (dokazano TASK 42.1).",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)"
+      ]
+    },
+    {
+      "id": 93,
+      "category": "J",
+      "question": "Kdo je bil Julius Cezar?",
+      "language": "sl",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Svetovna zgodovina brez povezave — zavrnitev (0 klicev ali poštena zavrnitev).",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)"
+      ]
+    },
+    {
+      "id": 94,
+      "category": "J",
+      "question": "What is the capital of Australia?",
+      "language": "en",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Splošno znanje — 0 klicev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)"
+      ]
+    },
+    {
+      "id": 95,
+      "category": "J",
+      "question": "Wer war Bismarck?",
+      "language": "de",
+      "retrieved_records": [
+        "niko-zupanic",
+        "spanska-gripa-1918",
+        "zvon-2008",
+        "tamburasi-danica",
+        "mate-zupanic-svarski",
+        "snos-crnomelj-1944",
+        "letalisce-otok-1944",
+        "evakuacija-1945",
+        "zaseda-1941",
+        "nikolaj-dragos",
+        "kolpa-extremi",
+        "madronicev-mlin",
+        "zracni-most-krasinec",
+        "franc-brinc"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "time:1914-1918",
+          "type": "time",
+          "label": "prva svetovna vojna"
+        },
+        {
+          "id": "time:1941-1945",
+          "type": "time",
+          "label": "druga svetovna vojna — okupacija in svobodna Bela krajina"
+        }
+      ],
+      "retrieved_sources": [
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:etno-muzej.si",
+        "url:slovenska-biografija.si",
+        "url:kamra.si",
+        "url:commons.wikimedia.org/wiki/File:Ivan_Vavpotič_-_Niko_Županič.jpg",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo",
+        "ime:Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        "url:radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894",
+        "url:sl.wikipedia.org/wiki/Španska_gripa",
+        "url:en.wikipedia.org/wiki/Spanish_flu",
+        "url:commons.wikimedia.org/wiki/File:Church_bell_2017_G1.jpg",
+        "ime:SV. VID GRIBLJE — Blagoslovitev in posvetitev zvona, Griblje 2008 (spominska knjiga)",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj_-_cerkev_sv._Vida.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-nikolaj-dragos",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:commons.wikimedia.org/wiki/File:Dangubica.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-mate-zupanic-svarski-1",
+        "url:commons.wikimedia.org/wiki/File:Salonika_Front_WW1.jpg",
+        "url:sl.wikipedia.org/wiki/Slovenski_narodnoosvobodilni_svet",
+        "url:rtvslo.si/kultura/drugo/slovenski-narodnoosvobodilni-svet-80-let-pozneje-in-kako-je-bil-tedaj-videti-crnomelj/699117",
+        "url:delo.si",
+        "url:zgodovina.si",
+        "url:commons.wikimedia.org/wiki/File:Kulturni_dom_Črnomelj.jpg",
+        "url:sl.wikipedia.org/wiki/Josip_Vidmar",
+        "url:rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
+        "url:sl.wikipedia.org/wiki/Otok,_Metlika",
+        "url:odkrijtebelokrajino.com",
+        "url:radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki",
+        "url:commons.wikimedia.org/wiki/File:Zavezniško_letalo_na_letališču_Otok.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:kamra.si/mm-elementi/spomenik-napadu-na-italijanske-mejne-policiste",
+        "url:kamra.si/digitalne-zbirke/spominska-obelezja-v-obcini-crnomelj",
+        "url:sl.wikipedia.org/wiki/Ljubljanska_pokrajina",
+        "url:commons.wikimedia.org/wiki/File:Pogled_na_Kolpo_in_Adlešiče_1920.jpg",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "ime:Nikolaj Dragoš: Mojih sto let (knjiga, napisana ob stotem rojstnem dnevu)",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:arso.gov.si/vode/poročila in publikacije/Porocilo_visoke_vode_in_poplave_sept2022a.pdf",
+        "url:ojs-gr.zrc-sazu.si/ujma/article/view/9384",
+        "url:radio-odeon.com/novice/julij-se-nikoli-tako-malo-vodnat",
+        "url:svet24.si/novice/slovenija/video-kampi-ob-kolpi-pod-vodo-voda-zaliva-mobilne-hiske-994742",
+        "url:vaskanal.com/poplave-v-beli-krajini",
+        "url:radio-odeon.com/novice/kolpa-mocno-narasla-tezave-tudi-v-prometu",
+        "url:e-utrip.si/kolpa-poplavila-priljubljeni-gostinski-objekt-voda-je-prihajala-z-neverjetno-hitrostjo-mi-pa-smo-skusali-resiti-kar-smo-lahko",
+        "url:radio-odeon.com/novice/kolpa-pod-pritiskom-podnebnih-sprememb-cas-za-usklajeno-ukrepanje",
+        "url:commons.wikimedia.org/wiki/File:Mlin,_Bela_krajina.jpg",
+        "url:radio-odeon.com/novice/madronicev-mlin-v-prelesju-ob-kolpi-v-beli-krajini",
+        "url:sl.wikipedia.org/wiki/Kolpa",
+        "url:commons.wikimedia.org/wiki/File:Slap_in_malenca_na_Kolpi_pri_Gribljah.jpg",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Svetovna zgodovina — zavrnitev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "zavrnitev po 1 klicu/ih modela (pošteno)",
+        "POZOR: pričakovanih 0 klicev, bilo je 1 — preveri retrieval"
+      ]
+    },
+    {
+      "id": 96,
+      "category": "J",
+      "question": "Chi era Leonardo da Vinci?",
+      "language": "it",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Svetovna zgodovina — zavrnitev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)"
+      ]
+    },
+    {
+      "id": 97,
+      "category": "J",
+      "question": "Tko je bio Nikola Tesla?",
+      "language": "hr",
+      "retrieved_records": [
+        "vaska-sola",
+        "audrey-totter",
+        "nikolaj-dragos",
+        "franc-brinc",
+        "tamburasi-danica",
+        "matija-totter",
+        "spanska-gripa-1918",
+        "ljudje-ob-kolpi"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:nikolaj-dragos",
+          "type": "person",
+          "label": "Nikolaj Dragoš"
+        }
+      ],
+      "retrieved_sources": [
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "url:commons.wikimedia.org/wiki/File:AUDREYTotter.jpg",
+        "url:commons.wikimedia.org/wiki/File:Lady-in-the-Lake-trailer-mirror.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Pogled_na_Kolpo_in_Adlešiče_1920.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-nikolaj-dragos",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "ime:Nikolaj Dragoš: Mojih sto let (knjiga, napisana ob stotem rojstnem dnevu)",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:commons.wikimedia.org/wiki/File:Dangubica.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894",
+        "url:sl.wikipedia.org/wiki/Španska_gripa",
+        "url:en.wikipedia.org/wiki/Spanish_flu",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": [
+          "nikolaj-dragos"
+        ]
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Izven korpusa (tovarna Nikola Tesla je le v slikovnem kreditu zapisa, ne v trditvah) — zavrnitev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "zavrnitev po 1 klicu/ih modela (pošteno)",
+        "POZOR: pričakovanih 0 klicev, bilo je 1 — preveri retrieval"
+      ]
+    },
+    {
+      "id": 98,
+      "category": "J",
+      "question": "Kaj je Higgsov bozon?",
+      "language": "sl",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "zeroCalls": true
+      },
+      "curatorial_judgment": "Fizika — 0 klicev (dokazano TASK 42.1).",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)"
+      ]
+    },
+    {
+      "id": 99,
+      "category": "J",
+      "question": "Kakšno je vreme jutri v Gribljah?",
+      "language": "sl",
+      "retrieved_records": [
+        "gribeljci-po-svetu-2019",
+        "franc-brinc",
+        "praznik-ks-2024",
+        "obcina-griblje",
+        "dkz-griblje",
+        "pgd-griblje-1927",
+        "etimologija-gribljati",
+        "evakuacija-1945",
+        "griblje-v-stevilkah",
+        "griblje-vas",
+        "ilirska-carina-1809",
+        "jurjevo-v-gribljah",
+        "zracni-most-krasinec",
+        "spanska-gripa-1918"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:gribeljci-po-svetu-2019",
+          "type": "event",
+          "label": "Gribeljci po svetu — vrnitev ob 130-letnici šole"
+        },
+        {
+          "id": "event:praznik-krajevne-skupnosti-2024",
+          "type": "event",
+          "label": "Praznik krajevne skupnosti Griblje"
+        },
+        {
+          "id": "event:ukinitev-obcine-griblje-1933",
+          "type": "event",
+          "label": "Ukinitev občine Griblje"
+        },
+        {
+          "id": "event:ustanovitev-dkz-griblje-1996",
+          "type": "event",
+          "label": "Ustanovitev Društva kmečkih žena Griblje"
+        },
+        {
+          "id": "event:ustanovitev-obcine-griblje-1854",
+          "type": "event",
+          "label": "Ustanovitev občine Griblje"
+        },
+        {
+          "id": "event:ustanovitev-pgd-griblje-1927",
+          "type": "event",
+          "label": "Ustanovitev Prostovoljnega gasilskega društva Griblje"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:radio-odeon.com/koledar-dogodkov/praznik-ks-griblje",
+        "url:commons.wikimedia.org/wiki/File:Belokranjska_narodna_noša_1942.jpg",
+        "url:sl.wikipedia.org/wiki/Občina_Črnomelj",
+        "url:commons.wikimedia.org/wiki/File:Občine_dravske_banovine_v_letih_1933_-_1937.pdf",
+        "url:crnomelj.si",
+        "url:radio-odeon.com/novice/pozdrav-pomladi-v-gribljah",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:commons.wikimedia.org/wiki/File:Gasilska_crpalka_1924.JPG",
+        "url:facebook.com/profile.php?id=61560623422110",
+        "url:bizi.si",
+        "url:moja-dolenjska.si/griblje-slovesno-obelezili-500-letnico-prve-pisne-omembe",
+        "url:instagram.com/p/DZ7pevXDEU1",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "ime:Bibliografija: Jože Šimec, »Izvor imena vasi Griblje«, Dolenjski list, 11. 1. 2001, str. 17",
+        "url:commons.wikimedia.org/wiki/File:Oranje_z_volovsko_vprego.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:wikidata.org/wiki/Q2531566",
+        "url:pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05C5003S.px",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:artsandculture.google.com/asset/_gEvY_zLVRQmkQ",
+        "url:commons.wikimedia.org/wiki/File:Special-Karte_des_Herzogthums_Krain_1843.jpg",
+        "url:commons.wikimedia.org/wiki/File:ISS067-E-80408_-_View_of_Earth.jpg",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:sl.wikipedia.org/wiki/Ilirske_province",
+        "ime:Pivec Stele, J. (1930) — študiji o gospodarstvu Ilirskih provinc",
+        "ime:Gašperič, P., Orožen Adamič, M., Šumrada, J. (2012): Zemljevid Ilirskih provinc iz leta 1812, ZRC SAZU",
+        "url:commons.wikimedia.org/wiki/File:Illyrian_Provinces_(1812).svg",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894",
+        "url:sl.wikipedia.org/wiki/Španska_gripa",
+        "url:en.wikipedia.org/wiki/Spanish_flu"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": [
+          "dkz-griblje",
+          "etimologija-gribljati",
+          "evakuacija-1945"
+        ]
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "mustNotState": [
+          {
+            "re": "jutri bo (sončno|deževno|oblačno|toplo|hladno)|napoved (vremena )?(pravi|za jutri)",
+            "why": "vremenska napoved ni muzejska vsebina"
+          }
+        ]
+      },
+      "curatorial_judgment": "TRDI TEST: Griblje se razreši (entiteta obstaja), a vremenska napoved NI muzejska vsebina. Odgovor NE SME napovedati vremena; pošteno lahko ponudi le dokumentirane podnebne ekstreme ali zavrne.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "zavrnitev po 1 klicu/ih modela (pošteno)"
+      ]
+    },
+    {
+      "id": 100,
+      "category": "J",
+      "question": "Kdo je bil papež Janez Pavel II.?",
+      "language": "sl",
+      "retrieved_records": [
+        "audrey-totter",
+        "matija-totter",
+        "ciril-totter",
+        "uskoki-in-vojna-krajina",
+        "janko-barle",
+        "kucar-podzemelj",
+        "valvasor-1689",
+        "stari-zemljevidi",
+        "kresovanje",
+        "joze-dular",
+        "izseljenstvo"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:janez-totter",
+          "type": "person",
+          "label": "Janez Totter"
+        },
+        {
+          "id": "person:janez-vajkard-valvasor",
+          "type": "person",
+          "label": "Janez Vajkard Valvasor"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "url:commons.wikimedia.org/wiki/File:AUDREYTotter.jpg",
+        "url:commons.wikimedia.org/wiki/File:Lady-in-the-Lake-trailer-mirror.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:commons.wikimedia.org/wiki/File:Ljubljana_Marathon,_Slovenia_(25904370335).jpg",
+        "url:sl.wikipedia.org/wiki/Vojna_krajina",
+        "url:sl.wikipedia.org/wiki/Turški_vpadi",
+        "url:sl.wikipedia.org/wiki/Bela_krajina",
+        "url:delo.si",
+        "url:commons.wikimedia.org/wiki/File:Bojanci_in_Bojanke_1908.jpg",
+        "url:nasasuperhrana.si",
+        "url:sl.wikipedia.org/wiki/Uskoki",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Janez_Vajkard_Valvasor",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:commons.wikimedia.org/wiki/File:Jurij_Šubic_-_Janez_Vajkard_Valvasor.jpg",
+        "url:commons.wikimedia.org/wiki/File:Tabula_Ducatus_Carnioliae,_Vindorum_Marchiae_et_Histriae.jpg",
+        "url:commons.wikimedia.org/wiki/File:Special-Karte_des_Herzogthums_Krain_1843.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. 1. 2001",
+        "url:commons.wikimedia.org/wiki/File:Gorenje-izzajčjegore.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": [
+          "kresovanje"
+        ]
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {},
+      "curatorial_judgment": "TRDI TEST: »Janez« je muzejska beseda (Dular/Totter/Valvasor), a papež NI v zbirki. Poštena zavrnitev brez ponujanja Janeza Dularja kot odgovora na vprašanje o papežu.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "OUT_OF_CORPUS",
+      "notes": [
+        "zavrnitev po 1 klicu/ih modela (pošteno)"
+      ]
+    }
+  ]
+}

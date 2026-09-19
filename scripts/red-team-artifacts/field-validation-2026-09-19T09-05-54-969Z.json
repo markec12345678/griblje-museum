@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "sl": 1
+    },
+    "counts": {
+      "PASS": 1,
+      "REVIEW": 0,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 46,
+      "category": "E",
+      "question": "Kdaj so vrnili glavni zvon?",
+      "language": "sl",
+      "retrieved_records": [
+        "ko-se-pticki-zenijo",
+        "zvon-2008",
+        "sveti-vid",
+        "anton-filak",
+        "mate-zupanic-svarski",
+        "niko-zupanic",
+        "tkalstvo",
+        "bele-breze",
+        "pecnica-susenje-sadja",
+        "jurjevo-v-gribljah"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:gregorjevo-2026",
+          "type": "event",
+          "label": "Gregorjevo, ki se je vrnilo"
+        },
+        {
+          "id": "event:blagoslov-zvona-2008",
+          "type": "event",
+          "label": "Blagoslov in posvetitev novega zvona"
+        },
+        {
+          "id": "event:vrnitev-glavnega-zvona-1998",
+          "type": "event",
+          "label": "Vrnitev glavnega zvona"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/ko-se-pticki-zenijo",
+        "url:commons.wikimedia.org/wiki/File:Barn_Swallow_perched_on_a_Power_Line.jpg",
+        "url:commons.wikimedia.org/wiki/File:Church_bell_2017_G1.jpg",
+        "ime:SV. VID GRIBLJE — Blagoslovitev in posvetitev zvona, Griblje 2008 (spominska knjiga)",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj_-_cerkev_sv._Vida.jpg",
+        "url:sl.wikipedia.org/wiki/Sveti_Vid",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Sv. Vid Griblje — blagoslovitev in posvetitev zvona, spominska knjiga, Griblje 2008",
+        "url:sl.wikipedia.org/wiki/Cerkev_sv._Vida,_Griblje",
+        "url:slovenskenovice.delo.si/novice/slovenija/v-butoraju-in-gribljah-s-slovesno-maso-proslavili-500-letnici-cerkev-je-vedno-ogledalo-vasi-foto",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:worldploughing.org",
+        "url:svet24.si/sport/filak-spet-drzavni-prvak-v-oranju-pate-prvi-z-obracalnimi-plugi-32794-1693225",
+        "url:svet24.si/sport/drzavna-prvaka-v-oranju-postala-igor-pate-in-anton-filak-730417",
+        "ime:Kmečki glas: Stara nova zmagovalca državnega tekmovanja (65. tekmovanje 2022)",
+        "url:svet24.si/sport/anton-filak-drzavni-prvak-v-oranju-292991-1718823",
+        "url:zotks.si",
+        "url:radio-odeon.com/novice/filak-in-simonic-uspesna-na-drzavnem-tekmovanju-v-oranju",
+        "url:commons.wikimedia.org/wiki/File:Oranje_s_konjsko_vprego.jpg",
+        "ime:Slovenska etnografska literatura o oranju, plugu in vpregah (tipologija)",
+        "url:radio-odeon.com/novice/plug-kot-simbol-kmetijstva-in-prezivetja-cloveka-na-zemlji",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-mate-zupanic-svarski-1",
+        "url:commons.wikimedia.org/wiki/File:Salonika_Front_WW1.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:etno-muzej.si",
+        "url:slovenska-biografija.si",
+        "url:kamra.si",
+        "url:commons.wikimedia.org/wiki/File:Ivan_Vavpotič_-_Niko_Županič.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo",
+        "ime:Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        "url:radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic",
+        "url:commons.wikimedia.org/wiki/File:Predenje_v_Beli_krajini.jpg",
+        "ime:Slovenska etnografska literatura o predenju in tkalstvu na Dolenjskem in v Beli krajini",
+        "url:sl.wikipedia.org/wiki/Lan",
+        "url:commons.wikimedia.org/wiki/File:Hiša_med_brezami.jpg",
+        "url:kp-kolpa.si",
+        "url:kp-kolpa.si/o-nas/osebna-izkaznica",
+        "url:sl.wikipedia.org/wiki/Navadna_breza",
+        "url:commons.wikimedia.org/wiki/File:Pečnica_za_sušenje_sadja_v_Adlešičih.jpg",
+        "url:radio-odeon.com/novice/semic-v-starih-cajtih-574",
+        "url:radio-odeon.com/novice/stavbna-dediscina-podezelja",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Glavni zvon cerkve sv. Vida so vrnili leta 2008, ko so ga blagoslovili in posvetili. [[zvon-2008]]",
+          "Dogodek je dokumentiran v spominski knjigi SV. VID GRIBLJE iz leta 2008, ki je nastala v sami vasi. [[zvon-2008]]",
+          "Obnovitev zvona je povezana s cerkvijo sv. Vida, ki je najbolj prepoznavna stavba v središču Gribelj. [[sveti-vid]]"
+        ],
+        "kakoVemo": [
+          "Informacije so potrjene prek več virov, med katerimi so spominska knjiga iz leta 2008, Wikipedija in poročila o 500-letnici prve omembe cerkve sv. Vida. [[zvon-2008]]"
+        ],
+        "opomba": "V kontekstu ni podrobnejših podatkov o tem, kdaj in zakaj je bil zvon pred tem izginil ali odnesen.",
+        "viri": [
+          {
+            "slug": "zvon-2008",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "zvon-2008",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "zvon-2008",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "sveti-vid",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "sveti-vid",
+            "sourceIndex": 3
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "zvon-2008",
+        "sveti-vid"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zvon-2008"
+        ]
+      },
+      "curatorial_judgment": "Vrnitev glavnega zvona 1998 (dogodek registra); 2008 je blagoslov NOVEGA zvona — ločiti.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    }
+  ]
+}

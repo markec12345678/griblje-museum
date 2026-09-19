@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "sl": 1
+    },
+    "counts": {
+      "PASS": 1,
+      "REVIEW": 0,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 49,
+      "category": "E",
+      "question": "Kdaj je bila ustanovljena občina Griblje in kdaj je bila ukinjena?",
+      "language": "sl",
+      "retrieved_records": [
+        "griblje-vas",
+        "griblje-v-stevilkah",
+        "zaselki-griblje",
+        "etimologija-gribljati",
+        "obcina-griblje",
+        "gribeljci-po-svetu-2019",
+        "franc-brinc",
+        "praznik-ks-2024",
+        "dkz-griblje",
+        "pgd-griblje-1927",
+        "evakuacija-1945",
+        "ilirska-carina-1809",
+        "jurjevo-v-gribljah",
+        "kopalisce-griblje",
+        "kucar-podzemelj",
+        "zracni-most-krasinec",
+        "joze-dular",
+        "spanska-gripa-1918"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:griblje",
+          "type": "place",
+          "label": "Griblje"
+        },
+        {
+          "id": "event:ukinitev-obcine-griblje-1933",
+          "type": "event",
+          "label": "Ukinitev občine Griblje"
+        },
+        {
+          "id": "event:ustanovitev-obcine-griblje-1854",
+          "type": "event",
+          "label": "Ustanovitev občine Griblje"
+        },
+        {
+          "id": "event:gribeljci-po-svetu-2019",
+          "type": "event",
+          "label": "Gribeljci po svetu — vrnitev ob 130-letnici šole"
+        },
+        {
+          "id": "event:praznik-krajevne-skupnosti-2024",
+          "type": "event",
+          "label": "Praznik krajevne skupnosti Griblje"
+        },
+        {
+          "id": "event:ustanovitev-dkz-griblje-1996",
+          "type": "event",
+          "label": "Ustanovitev Društva kmečkih žena Griblje"
+        }
+      ],
+      "retrieved_sources": [
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:wikidata.org/wiki/Q2531566",
+        "url:pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05C5003S.px",
+        "url:artsandculture.google.com/asset/_gEvY_zLVRQmkQ",
+        "url:commons.wikimedia.org/wiki/File:Special-Karte_des_Herzogthums_Krain_1843.jpg",
+        "url:commons.wikimedia.org/wiki/File:ISS067-E-80408_-_View_of_Earth.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "ime:Bibliografija: Jože Šimec, »Izvor imena vasi Griblje«, Dolenjski list, 11. 1. 2001, str. 17",
+        "url:commons.wikimedia.org/wiki/File:Oranje_z_volovsko_vprego.jpg",
+        "url:sl.wikipedia.org/wiki/Občina_Črnomelj",
+        "url:commons.wikimedia.org/wiki/File:Občine_dravske_banovine_v_letih_1933_-_1937.pdf",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:radio-odeon.com/koledar-dogodkov/praznik-ks-griblje",
+        "url:commons.wikimedia.org/wiki/File:Belokranjska_narodna_noša_1942.jpg",
+        "url:radio-odeon.com/novice/pozdrav-pomladi-v-gribljah",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:commons.wikimedia.org/wiki/File:Gasilska_crpalka_1924.JPG",
+        "url:facebook.com/profile.php?id=61560623422110",
+        "url:bizi.si",
+        "url:moja-dolenjska.si/griblje-slovesno-obelezili-500-letnico-prve-pisne-omembe",
+        "url:instagram.com/p/DZ7pevXDEU1",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:sl.wikipedia.org/wiki/Ilirske_province",
+        "ime:Pivec Stele, J. (1930) — študiji o gospodarstvu Ilirskih provinc",
+        "ime:Gašperič, P., Orožen Adamič, M., Šumrada, J. (2012): Zemljevid Ilirskih provinc iz leta 1812, ZRC SAZU",
+        "url:commons.wikimedia.org/wiki/File:Illyrian_Provinces_(1812).svg",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA",
+        "url:radio-odeon.com/nasveti/odkrijte-krajinski-park-kolpa-zaklad-narave-in-kulturne-dediscine/kolpa-pod-drobnogledom-cista-reka-je-skupna-odgovornost",
+        "url:sl.wikipedia.org/wiki/Kolpa",
+        "url:radio-odeon.com/novice/tradicionalna-pasuljada-v-gribljah",
+        "url:commons.wikimedia.org/wiki/File:Damelj_(50053531627).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894",
+        "url:sl.wikipedia.org/wiki/Španska_gripa",
+        "url:en.wikipedia.org/wiki/Spanish_flu"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Občina Griblje je bila ustanovljena leta 1854 po reformi sredi 19. stoletja, ki je Griblje določila za eno od občin okraja Črnomelj. [[obcina-griblje]] Ukinjena je bila leta 1933 z komasacijo, leta 1936 pa sta kraja Griblje in Dragoši prešla k občini Gradac. [[obcina-griblje]]"
+        ],
+        "kakoVemo": [
+          "Podatke o ustanovitvi in ukinitvi občine Griblje nosijo trije dokumentirani viri: Wikipedija: Občina Črnomelj — zgodovina upravne členitve, Županska zveza v Ljubljani (1937): Občine dravske banovine v letih 1933–1937 in Občina Črnomelj — Zgodovina. [[obcina-griblje]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "obcina-griblje",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "obcina-griblje",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "obcina-griblje",
+            "sourceIndex": 2
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "obcina-griblje"
+      ],
+      "uncertainty": "približnost prisotna: c. ",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "obcina-griblje"
+        ]
+      },
+      "curatorial_judgment": "Ustanovitev 1854; ukitev 1933 (komasacija; 1936 priključitev Gradcu) — MVG-031.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    }
+  ]
+}
