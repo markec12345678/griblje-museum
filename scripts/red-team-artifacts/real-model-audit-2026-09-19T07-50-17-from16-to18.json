@@ -1,0 +1,329 @@
+{
+  "task": "TASK 42 §15 — real-model audit (audit artefakt, NI muzejska vsebina)",
+  "generatedAt": "2026-09-19T07:50:17.448Z",
+  "gitHead": "f05991a",
+  "providerChain": "OpenRouter → HuggingFace → z-ai SDK (pravi klic)",
+  "summary": {
+    "cases": 3,
+    "of": 44,
+    "from": 16,
+    "to": 18,
+    "modelCalls": 3,
+    "PASS": 1,
+    "WARN": 2,
+    "FAIL": 0,
+    "REFUSED": 0,
+    "ERROR": 0
+  },
+  "results": [
+    {
+      "id": 16,
+      "group": "entity",
+      "lang": "sl",
+      "question": "Ali je Peter Madronič iz mlina isti Peter Madronič kot pričevalec poplav?",
+      "modelCalls": 1,
+      "durationMs": 5854,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "V muzejski zbirki obstajata dva zapisa o osebah z imenom Peter Madronič: [[madronicev-mlin]] o 'starem Petru', rojenem leta 1901 v Dalnjih Njivah, ki je bil mlinar in odposlanec zbora v Kočevju leta 1943; ter [[kolpa-extremi]] o Petru Madroniču, ki je pričeval o poplavah leta 2022 in 2025. Kuratorji muzeja jasno navajajo, da gre za dve različni osebi in ju nikoli ne združujeta."
+        ],
+        "kakoVemo": [
+          "Informacije so povzete odprtega kuratorskega vprašanja iz polja 'openQuestions' muzejskega konteksta, ki posebej opozarja, da gre za dve osebi z istim imenom in ju prepoveduje združevati."
+        ],
+        "opomba": "Kuratorji muzeja jasno navajajo, da gre za dve različni osebi z imenom Peter Madronič in ju nikoli ne združujeta."
+      },
+      "viri": [
+        {
+          "slug": "madronicev-mlin",
+          "museumNo": "MVG-045",
+          "titleSi": "Madroničev mlin — mlin in žaga ob Kolpi",
+          "titleEn": "The Madronič mill — a mill and sawmill on the Kolpa",
+          "sourceIndex": 0,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Mlin,_Bela_krajina.jpg",
+          "sourceNameSi": "Wikimedia Commons: Kuzmin mlin z žago v Pobrežju, Bela krajina (Fran Vesel, 1920)",
+          "sourceNameEn": "Wikimedia Commons: The Kuzmin mill with its saw at Pobrežje, Bela krajina (Fran Vesel, 1920)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mlin%2C_Bela_krajina.jpg"
+        },
+        {
+          "slug": "madronicev-mlin",
+          "museumNo": "MVG-045",
+          "titleSi": "Madroničev mlin — mlin in žaga ob Kolpi",
+          "titleEn": "The Madronič mill — a mill and sawmill on the Kolpa",
+          "sourceIndex": 1,
+          "sourceKey": "url:radio-odeon.com/novice/madronicev-mlin-v-prelesju-ob-kolpi-v-beli-krajini",
+          "sourceNameSi": "Radio Odeon — Madroničev mlin v Prelesju ob Kolpi (Božidar Flajšman, 23. avgust 2019)",
+          "sourceNameEn": "Radio Odeon — The Madronič mill at Prelesje on the Kolpa (Božidar Flajšman, 23 August 2019)",
+          "sourceUrl": "https://www.radio-odeon.com/novice/madronicev-mlin-v-prelesju-ob-kolpi-v-beli-krajini/"
+        },
+        {
+          "slug": "kolpa-extremi",
+          "museumNo": "MVG-008",
+          "titleSi": "Reka ekstremov — suša in poplave",
+          "titleEn": "A river of extremes — drought and floods",
+          "sourceIndex": 0,
+          "sourceKey": "url:arso.gov.si/vode/poročila in publikacije/Porocilo_visoke_vode_in_poplave_sept2022a.pdf",
+          "sourceNameSi": "ARSO — Poročilo o poplavah: Visoke vode in poplave med 15. in 18. septembrom 2022 (PDF)",
+          "sourceNameEn": "ARSO — Flood report: High water and floods between 15 and 18 September 2022 (PDF)",
+          "sourceUrl": "https://www.arso.gov.si/vode/poro%C4%8Dila%20in%20publikacije/Porocilo_visoke_vode_in_poplave_sept2022a.pdf"
+        },
+        {
+          "slug": "kolpa-extremi",
+          "museumNo": "MVG-008",
+          "titleSi": "Reka ekstremov — suša in poplave",
+          "titleEn": "A river of extremes — drought and floods",
+          "sourceIndex": 5,
+          "sourceKey": "url:radio-odeon.com/novice/kolpa-mocno-narasla-tezave-tudi-v-prometu",
+          "sourceNameSi": "Radio Odeon (11. 9. 2025): Kolpa močno narasla, težave tudi v prometu",
+          "sourceNameEn": "Radio Odeon (11 Sep 2025): The Kolpa rises sharply, trouble on the roads too",
+          "sourceUrl": "https://radio-odeon.com/novice/kolpa-mocno-narasla-tezave-tudi-v-prometu/"
+        }
+      ],
+      "promptChars": 32523,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "madronicev-mlin,madronicev-mlin,kolpa-extremi,kolpa-extremi"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [],
+      "verdict": "PASS"
+    },
+    {
+      "id": 17,
+      "group": "entity",
+      "lang": "sl",
+      "question": "Je Ivan Barle isti kot Konrad Barle?",
+      "modelCalls": 1,
+      "durationMs": 4504,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "Ivan Barle in Konrad Barle sta dve različni osebi, saj imata različna življenjska obdobja in dosežki. [[konrad-barle]]",
+          "Ivan Barle je živel od 1841 do 1930 in bil podzemeljski učitelj. [[konrad-barle]]",
+          "Konrad Barle je živel od 19. februarja 1875 do 15. julija 1951 in bil učitelj v Metliki, kjer je poučeval petintrideset let. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Informacije o življenjskem obdobju in poklicu obeh oseb so navedene v zapisu [[konrad-barle]] iz virov Slovenska biografija."
+        ],
+        "opomba": null
+      },
+      "viri": [
+        {
+          "slug": "konrad-barle",
+          "museumNo": "MVG-059",
+          "titleSi": "Konrad Barle — učitelj, ki je prinesel AŽ-panj v Belo krajino",
+          "titleEn": "Konrad Barle — the teacher who brought the AŽ hive to Bela krajina",
+          "sourceIndex": 1,
+          "sourceKey": "url:slovenska-biografija.si/oseba/sbi1017060",
+          "sourceNameSi": "Slovenska biografija — Barle, Ivan (1841–1930) (Novi slovenski biografski leksikon, 2. zv.; avtorica gesla: Marjetka Balkovec Debevec)",
+          "sourceNameEn": "Slovenska biografija — Barle, Ivan (1841–1930) (New Slovene Biographical Lexicon, vol. 2; entry by Marjetka Balkovec Debevec)",
+          "sourceUrl": "https://www.slovenska-biografija.si/oseba/sbi1017060/"
+        }
+      ],
+      "promptChars": 37301,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "konrad-barle"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [
+        "entitetna dvojnost brez izrecne oznake nerazrešenosti (preberi)"
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 18,
+      "group": "entity",
+      "lang": "sl",
+      "question": "Ali je dogodek iz MVG-014 isti kot dogodek MVG-056?",
+      "modelCalls": 1,
+      "durationMs": 6142,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "V zbirki obstajata dva zapisa, ki opisujeta evakuacijo z zavezniškimi letali konec marca 1945. [[evakuacija-1945]] opisuje dogodek, pri katerem so zavezniška letala iz Bele krajine evakuirala ranjene partizane v Bari, pri čemer sta dokumentirani dve fotografiji, posneti pri Gribljah. [[zracni-most-krasinec]] opisuje zračni most s partizanskega letališča Krasinec, v katerem so zavezniška letala v 48 urah prepeljala 2041 ljudi, med njimi tudi pisateljico Almo Karlin.",
+          "Oba zapista sta povezana z dogodki evakuacije konec marca 1945 in uporabe zavezniških letal v Beli krajini, vendar se razlikujeta po lokaciji (Griblje pri Črnomlju in letališče Krasinec) in specifičnih podrobnostih (evakuacija v Bari in evakuacija v Dalmacijo).",
+          "Kuratorji še niso razrešili, ali gre za isti ali dva različna dogodka."
+        ],
+        "kakoVemo": [
+          "Informacije temeljijo na dveh dokumentiranih zapisih v muzejski zbirki, [[evakuacija-1945]] in [[zracni-most-krasinec]], ki oba opisujejo dogodke evakuacije konec marca 1945. V zbirki je izrecno zapisano odprto kuratorsko vprašanje ali sta zapista istega dogodka ali ne."
+        ],
+        "opomba": "V muzejski zbirki je kuratorsko odprto vprašanje ali sta zapista [[evakuacija-1945]] in [[zracni-most-krasinec]] isti ali različna dogodka."
+      },
+      "viri": [
+        {
+          "slug": "evakuacija-1945",
+          "museumNo": "MVG-014",
+          "titleSi": "Marec 1945: zavezniška letala nad Gribljami",
+          "titleEn": "March 1945: Allied aircraft over Griblje",
+          "sourceIndex": 0,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+          "sourceNameSi": "Wikimedia Commons: Ranjeni partizani opazujejo pristajanje zavezniških letal, Griblje pri Črnomlju, marec 1945 (avtor: Franjo Veselko)",
+          "sourceNameEn": "Wikimedia Commons: Wounded Partisans watching Allied aircraft land, Griblje near Črnomelj, March 1945 (author: Franjo Veselko)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezni%C5%A1kih_letal%2C_Griblje_pri_%C4%8Crnomlju%2C_marec_1945.jpg"
+        },
+        {
+          "slug": "evakuacija-1945",
+          "museumNo": "MVG-014",
+          "titleSi": "Marec 1945: zavezniška letala nad Gribljami",
+          "titleEn": "March 1945: Allied aircraft over Griblje",
+          "sourceIndex": 1,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+          "sourceNameSi": "Wikimedia Commons: Pogovor angleškega pilota s partizani, Griblje pri Črnomlju, marec 1945",
+          "sourceNameEn": "Wikimedia Commons: An English pilot in conversation with Partisans, Griblje near Črnomelj, March 1945",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pogovor_angle%C5%A1kega_pilota_s_partizani%2C_Griblje_pri_%C4%8Crnomlju%2C_marec_1945.jpg"
+        },
+        {
+          "slug": "evakuacija-1945",
+          "museumNo": "MVG-014",
+          "titleSi": "Marec 1945: zavezniška letala nad Gribljami",
+          "titleEn": "March 1945: Allied aircraft over Griblje",
+          "sourceIndex": 2,
+          "sourceKey": "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+          "sourceNameSi": "RTV Slovenija (2025): Nenavadna zgodba evakuiranih iz Bele krajine pred koncem vojne z zavezniškimi letali",
+          "sourceNameEn": "RTV Slovenia (2025): The unusual story of those evacuated from Bela krajina before the end of the war by Allied aircraft",
+          "sourceUrl": "https://www.rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207"
+        },
+        {
+          "slug": "zracni-most-krasinec",
+          "museumNo": "MVG-056",
+          "titleSi": "Zračni most Krasinec — 2041 ljudi v 48 urah",
+          "titleEn": "The Krasinec airlift — 2041 people in 48 hours",
+          "sourceIndex": 0,
+          "sourceKey": "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+          "sourceNameSi": "RTV SLO (27. 4. 2025): Nenavadna zgodba evakuiranih iz Bele krajine pred koncem vojne — z zavezniškimi letali v Dalmacijo; 2041 ljudi iz Krasinca v 48 urah; knjiga Ilinke Todorovski Zračni most (2025); Alma Karlin med evakuiranci",
+          "sourceNameEn": "RTV SLO (27 Apr 2025): The unusual story of those evacuated from Bela krajina before the war's end — by Allied aircraft to Dalmatia; 2041 people from Krasinec in 48 hours; Ilinka Todorovski's book Zračni most (2025); Alma Karlin among the evacuees",
+          "sourceUrl": "https://www.rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207"
+        },
+        {
+          "slug": "zracni-most-krasinec",
+          "museumNo": "MVG-056",
+          "titleSi": "Zračni most Krasinec — 2041 ljudi v 48 urah",
+          "titleEn": "The Krasinec airlift — 2041 people in 48 hours",
+          "sourceIndex": 1,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+          "sourceNameSi": "Wikimedia Commons: Pogovor angleškega pilota s partizani, Griblje pri Črnomlju, marec 1945 (Franjo Veselko)",
+          "sourceNameEn": "Wikimedia Commons: An English pilot in conversation with partisans, Griblje near Črnomelj, March 1945 (Franjo Veselko)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pogovor_angle%C5%A1kega_pilota_s_partizani,_Griblje_pri_%C4%8Crnomlju,_marec_1945.jpg"
+        },
+        {
+          "slug": "zracni-most-krasinec",
+          "museumNo": "MVG-056",
+          "titleSi": "Zračni most Krasinec — 2041 ljudi v 48 urah",
+          "titleEn": "The Krasinec airlift — 2041 people in 48 hours",
+          "sourceIndex": 2,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Alma_Karlin",
+          "sourceNameSi": "Wikipedija: Alma Karlin (pisateljica in popotnica, evakuirana marca 1945)",
+          "sourceNameEn": "Wikipedia: Alma Karlin (writer and traveller, evacuated in March 1945)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Alma_Karlin"
+        }
+      ],
+      "promptChars": 9490,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "evakuacija-1945,evakuacija-1945,evakuacija-1945,zracni-most-krasinec,zracni-most-krasinec,zracni-most-krasinec"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [
+        "vsaj en odstavek kajVemo brez [[slug]] navedka"
+      ],
+      "verdict": "WARN"
+    }
+  ]
+}

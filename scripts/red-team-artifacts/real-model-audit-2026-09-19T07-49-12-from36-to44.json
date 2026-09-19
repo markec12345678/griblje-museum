@@ -1,0 +1,702 @@
+{
+  "task": "TASK 42 §15 — real-model audit (audit artefakt, NI muzejska vsebina)",
+  "generatedAt": "2026-09-19T07:49:12.952Z",
+  "gitHead": "f05991a",
+  "providerChain": "OpenRouter → HuggingFace → z-ai SDK (pravi klic)",
+  "summary": {
+    "cases": 9,
+    "of": 44,
+    "from": 36,
+    "to": 44,
+    "modelCalls": 6,
+    "PASS": 3,
+    "WARN": 2,
+    "FAIL": 0,
+    "REFUSED": 4,
+    "ERROR": 0
+  },
+  "results": [
+    {
+      "id": 36,
+      "group": "approx-year",
+      "lang": "sl",
+      "question": "Kdaj je nastalo Cerkvišče?",
+      "modelCalls": 1,
+      "durationMs": 3644,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "V Cerkvišču so pred turškimi vpadi stale tri cerkvice, ki so jih Turki porušili in zažgali. Leta 1994 je v spomin na njih postavljena kapelica. Zaselk z dvema jamami je danes drugi naseljni del krajevne skupnosti Griblje."
+        ],
+        "kakoVemo": [
+          "Trazitve temeljijo na zapisu [[cerkvisce]], ki združuje podatke iz različnih virov o zgodovini in trenutnem statusu kraja."
+        ],
+        "opomba": "Kraj je dokumentiran od približno leta 1408, ko so zabeleženi prvi turški vpadi, ki so uničili cerkvice. Točen nastanek naselja ni znan."
+      },
+      "viri": [
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 0,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+          "sourceNameSi": "Wikimedia Commons: Kamnita kapelica na slovenskem podeželju (fotograf: Scary Boots)",
+          "sourceNameEn": "Wikimedia Commons: A stone roadside shrine in the Slovene countryside (photographer: Scary Boots)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 1,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Cerkvišče",
+          "sourceNameSi": "Wikipedija: Cerkvišče (tri porušene cerkvice, kapelica 1994, jame)",
+          "sourceNameEn": "Wikipedia: Cerkvišče (the three ruined churches, the 1994 chapel, the caves)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Cerkvi%C5%A1%C4%8De"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 2,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Griblje",
+          "sourceNameSi": "Wikipedija: Griblje (krajevna skupnost, prvi turški vpad 1408)",
+          "sourceNameEn": "Wikipedia: Griblje (the local community, the first Ottoman incursion of 1408)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Griblje"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 3,
+          "sourceKey": "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+          "sourceNameSi": "Občina Črnomelj — krajevna skupnost Griblje (naselji Griblje in Cerkvišče)",
+          "sourceNameEn": "Municipality of Črnomelj — the Griblje local community (the settlements of Griblje and Cerkvišče)",
+          "sourceUrl": "https://www.crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje/"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 4,
+          "sourceKey": "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne",
+          "sourceNameSi": "RTV SLO — evakuacija z letališča Krasinec, marec 1945 (april 2025)",
+          "sourceNameEn": "RTV SLO — the evacuation from the Krasinec airfield, March 1945 (April 2025)",
+          "sourceUrl": "https://www.rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne/"
+        }
+      ],
+      "promptChars": 8457,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "cerkvisce,cerkvisce,cerkvisce,cerkvisce,cerkvisce"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [
+        "vsaj en odstavek kajVemo brez [[slug]] navedka"
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 37,
+      "group": "approx-year",
+      "lang": "en",
+      "question": "When did Cerkvišče come into being?",
+      "modelCalls": 1,
+      "durationMs": 5151,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "The hamlet of Cerkvišče is documented as a settlement in the Griblje local community from at least around 1408. Its history is marked by the destruction of three churches by Ottoman incursions, after which the site was rebuilt with a memorial chapel in 1994 [[cerkvisce]]."
+        ],
+        "kakoVemo": [
+          "The claim that Cerkvišče existed from around 1408 is documented in multiple sources, including Wikipedia entries for both Cerkvišče and Griblje, and the Municipality of Črnomelj's website [[cerkvisce]]."
+        ],
+        "opomba": "The exact founding date of Cerkvišče is not specified in the evidence; the context only confirms its existence from around 1408."
+      },
+      "viri": [
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 0,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+          "sourceNameSi": "Wikimedia Commons: Kamnita kapelica na slovenskem podeželju (fotograf: Scary Boots)",
+          "sourceNameEn": "Wikimedia Commons: A stone roadside shrine in the Slovene countryside (photographer: Scary Boots)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 1,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Cerkvišče",
+          "sourceNameSi": "Wikipedija: Cerkvišče (tri porušene cerkvice, kapelica 1994, jame)",
+          "sourceNameEn": "Wikipedia: Cerkvišče (the three ruined churches, the 1994 chapel, the caves)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Cerkvi%C5%A1%C4%8De"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 2,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Griblje",
+          "sourceNameSi": "Wikipedija: Griblje (krajevna skupnost, prvi turški vpad 1408)",
+          "sourceNameEn": "Wikipedia: Griblje (the local community, the first Ottoman incursion of 1408)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Griblje"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 3,
+          "sourceKey": "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+          "sourceNameSi": "Občina Črnomelj — krajevna skupnost Griblje (naselji Griblje in Cerkvišče)",
+          "sourceNameEn": "Municipality of Črnomelj — the Griblje local community (the settlements of Griblje and Cerkvišče)",
+          "sourceUrl": "https://www.crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje/"
+        }
+      ],
+      "promptChars": 13525,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "cerkvisce,cerkvisce,cerkvisce,cerkvisce"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [],
+      "verdict": "PASS"
+    },
+    {
+      "id": 38,
+      "group": "approx-year",
+      "lang": "de",
+      "question": "Wann entstand Cerkvišče?",
+      "modelCalls": 1,
+      "durationMs": 6589,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "Cerkvišče ist ein Ortsteil der Lokalgemeinschaft Griblje und wird als deren zweiter Siedlungsort erwähnt. Es wird als \"Schwesterdorf\" der Lokalgemeinschaft Griblje bezeichnet. Der Ort existiert seit etwa 1408, wie aus dem Zeitraum \"~1408 → present · das Schwesterdorf der Lokalgemeinschaft Griblje\" hervorgeht. Vor den osmanischen Invasionen standen in Cerkvišče drei Kirchen, die von den Türken zerstört und niedergebrannt wurden. Die Dorfbewohner glauben, die Standorte von zwei dieser Kirchen zu kennen, während der dritte unbekannt ist. Im Jahr 1994 wurde eine Gedenkkapelle errichtet. [[cerkvisce]]"
+        ],
+        "kakoVemo": [
+          "Die Informationen stammen aus dem Beleg [[cerkvisce]], der in mehreren Quellen dokumentiert ist, darunter Wikimedia Commons, Wikipedia und die Webseite der Gemeinde Črnomelj."
+        ],
+        "opomba": "Das genaue Gründungsjahr von Cerkvišče ist nicht überliefert; der Zeitraum \"~1408\" ist eine ungefähre Angabe."
+      },
+      "viri": [
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 0,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+          "sourceNameSi": "Wikimedia Commons: Kamnita kapelica na slovenskem podeželju (fotograf: Scary Boots)",
+          "sourceNameEn": "Wikimedia Commons: A stone roadside shrine in the Slovene countryside (photographer: Scary Boots)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 1,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Cerkvišče",
+          "sourceNameSi": "Wikipedija: Cerkvišče (tri porušene cerkvice, kapelica 1994, jame)",
+          "sourceNameEn": "Wikipedia: Cerkvišče (the three ruined churches, the 1994 chapel, the caves)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Cerkvi%C5%A1%C4%8De"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 2,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Griblje",
+          "sourceNameSi": "Wikipedija: Griblje (krajevna skupnost, prvi turški vpad 1408)",
+          "sourceNameEn": "Wikipedia: Griblje (the local community, the first Ottoman incursion of 1408)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Griblje"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 3,
+          "sourceKey": "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+          "sourceNameSi": "Občina Črnomelj — krajevna skupnost Griblje (naselji Griblje in Cerkvišče)",
+          "sourceNameEn": "Municipality of Črnomelj — the Griblje local community (the settlements of Griblje and Cerkvišče)",
+          "sourceUrl": "https://www.crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje/"
+        }
+      ],
+      "promptChars": 9040,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "cerkvisce,cerkvisce,cerkvisce,cerkvisce"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [],
+      "verdict": "PASS"
+    },
+    {
+      "id": 39,
+      "group": "approx-year",
+      "lang": "it",
+      "question": "Quando nacque Cerkvišče?",
+      "modelCalls": 1,
+      "durationMs": 4174,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "Cerkvišče è un insediamento della comunità locale di Griblje, documentato come villaggio gemello di Griblje [[cerkvisce]].",
+          "La storia di Cerkvišče è strettamente legata alle invasioni ottomane: si ritiene che prima delle incursioni ottomane intorno al 1408, vi sorgessero tre chiese che furono successivamente distrutte e bruciate dai Turchi [[cerkvisce]].",
+          "Oggi Cerkvišče è il secondo insediamento della comunità locale di Griblje, caratterizzato da una cappella commemorativa eretta nel 1994 e due grotte [[cerkvisce]]."
+        ],
+        "kakoVemo": [],
+        "opomba": "La data esatta della fondazione di Cerkvišče non è documentata nel corpus del museo; si sa solo che esisteva già prima dell'incursione ottomana intorno al 1408."
+      },
+      "viri": [
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 0,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+          "sourceNameSi": "Wikimedia Commons: Kamnita kapelica na slovenskem podeželju (fotograf: Scary Boots)",
+          "sourceNameEn": "Wikimedia Commons: A stone roadside shrine in the Slovene countryside (photographer: Scary Boots)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 1,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Cerkvišče",
+          "sourceNameSi": "Wikipedija: Cerkvišče (tri porušene cerkvice, kapelica 1994, jame)",
+          "sourceNameEn": "Wikipedia: Cerkvišče (the three ruined churches, the 1994 chapel, the caves)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Cerkvi%C5%A1%C4%8De"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 2,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Griblje",
+          "sourceNameSi": "Wikipedija: Griblje (krajevna skupnost, prvi turški vpad 1408)",
+          "sourceNameEn": "Wikipedia: Griblje (the local community, the first Ottoman incursion of 1408)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Griblje"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 3,
+          "sourceKey": "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+          "sourceNameSi": "Občina Črnomelj — krajevna skupnost Griblje (naselji Griblje in Cerkvišče)",
+          "sourceNameEn": "Municipality of Črnomelj — the Griblje local community (the settlements of Griblje and Cerkvišče)",
+          "sourceUrl": "https://www.crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje/"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 4,
+          "sourceKey": "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne",
+          "sourceNameSi": "RTV SLO — evakuacija z letališča Krasinec, marec 1945 (april 2025)",
+          "sourceNameEn": "RTV SLO — the evacuation from the Krasinec airfield, March 1945 (April 2025)",
+          "sourceUrl": "https://www.rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne/"
+        }
+      ],
+      "promptChars": 9043,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "cerkvisce,cerkvisce,cerkvisce,cerkvisce,cerkvisce"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [],
+      "verdict": "PASS"
+    },
+    {
+      "id": 40,
+      "group": "approx-year",
+      "lang": "hr",
+      "question": "Kada je nastalo Cerkvišče?",
+      "modelCalls": 1,
+      "durationMs": 4108,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "Cerkvišče se spominja že oko 1408. godine, u vrijeme turskih provala. Danas je drugi naseljni dio mjesne zajednice Griblje.",
+          "U Cerkvišću su prije turskih provala stajale tri crkvice koje su Turci porušili i zapalili. U spomen na njih 1994. godine podignuta je kapelica.",
+          "Cerkvišće je zaselak s dvije jame, danas drugi naseljni dio krajevne skupnosti Griblje."
+        ],
+        "kakoVemo": [
+          "Ovdje su prikupljeni podaci iz [[cerkvisce]] koji spominju Cerkvišće u kontekstu turskih provala oko 1408. godine, uništenja triju crkvi i podizanja kapelice 1994. godine."
+        ],
+        "opomba": "Navedeno je približno vrijeme nastanka Cerkvišća (~1408) u kontekstu turskih provala, ali točan datum nastanka naselja nije dokumentiran u zbirki."
+      },
+      "viri": [
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 0,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg",
+          "sourceNameSi": "Wikimedia Commons: Kamnita kapelica na slovenskem podeželju (fotograf: Scary Boots)",
+          "sourceNameEn": "Wikimedia Commons: A stone roadside shrine in the Slovene countryside (photographer: Scary Boots)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roadside_shrine_in_Slovenia_(20066631714).jpg"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 1,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Cerkvišče",
+          "sourceNameSi": "Wikipedija: Cerkvišče (tri porušene cerkvice, kapelica 1994, jame)",
+          "sourceNameEn": "Wikipedia: Cerkvišče (the three ruined churches, the 1994 chapel, the caves)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Cerkvi%C5%A1%C4%8De"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 2,
+          "sourceKey": "url:sl.wikipedia.org/wiki/Griblje",
+          "sourceNameSi": "Wikipedija: Griblje (krajevna skupnost, prvi turški vpad 1408)",
+          "sourceNameEn": "Wikipedia: Griblje (the local community, the first Ottoman incursion of 1408)",
+          "sourceUrl": "https://sl.wikipedia.org/wiki/Griblje"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 3,
+          "sourceKey": "url:crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje",
+          "sourceNameSi": "Občina Črnomelj — krajevna skupnost Griblje (naselji Griblje in Cerkvišče)",
+          "sourceNameEn": "Municipality of Črnomelj — the Griblje local community (the settlements of Griblje and Cerkvišče)",
+          "sourceUrl": "https://www.crnomelj.si/sl/o-obcini/krajevne-skupnosti/2021122908394017/griblje/"
+        },
+        {
+          "slug": "cerkvisce",
+          "museumNo": "MVG-040",
+          "titleSi": "Cerkvišče — tri cerkvice, ki jih ni več",
+          "titleEn": "Cerkvišče — the three churches that are no more",
+          "sourceIndex": 4,
+          "sourceKey": "url:rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne",
+          "sourceNameSi": "RTV SLO — evakuacija z letališča Krasinec, marec 1945 (april 2025)",
+          "sourceNameEn": "RTV SLO — the evacuation from the Krasinec airfield, March 1945 (April 2025)",
+          "sourceUrl": "https://www.rtvslo.si/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne/"
+        }
+      ],
+      "promptChars": 8451,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "cerkvisce,cerkvisce,cerkvisce,cerkvisce,cerkvisce"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [
+        "vsaj en odstavek kajVemo brez [[slug]] navedka"
+      ],
+      "verdict": "WARN"
+    },
+    {
+      "id": 41,
+      "group": "approx-year",
+      "lang": "sl",
+      "question": "Kdaj se je rodil Tone Kralj?",
+      "modelCalls": 1,
+      "durationMs": 1673,
+      "answerable": false,
+      "reason": "insufficient_evidence",
+      "answer": {
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null
+      },
+      "viri": [],
+      "promptChars": 13220,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "zavrnitev po pogodbi",
+          "pass": true,
+          "detail": "insufficient_evidence"
+        }
+      ],
+      "warnings": [],
+      "verdict": "REFUSED"
+    },
+    {
+      "id": 42,
+      "group": "retrieval-noise",
+      "lang": "sl",
+      "question": "Kaj je hitrost svetlobe?",
+      "modelCalls": 0,
+      "durationMs": 14,
+      "answerable": false,
+      "reason": "insufficient_evidence",
+      "answer": {
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null
+      },
+      "viri": [],
+      "promptChars": 0,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "0 klicev modela (brez dokaza)",
+          "pass": true,
+          "detail": "klicev: 0"
+        },
+        {
+          "name": "zavrnitev po pogodbi",
+          "pass": true,
+          "detail": "insufficient_evidence"
+        }
+      ],
+      "warnings": [],
+      "verdict": "REFUSED"
+    },
+    {
+      "id": 43,
+      "group": "retrieval-noise",
+      "lang": "sl",
+      "question": "Kdo je bil papež leta 1500?",
+      "modelCalls": 0,
+      "durationMs": 13,
+      "answerable": false,
+      "reason": "insufficient_evidence",
+      "answer": {
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null
+      },
+      "viri": [],
+      "promptChars": 0,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "0 klicev modela (brez dokaza)",
+          "pass": true,
+          "detail": "klicev: 0"
+        },
+        {
+          "name": "zavrnitev po pogodbi",
+          "pass": true,
+          "detail": "insufficient_evidence"
+        }
+      ],
+      "warnings": [],
+      "verdict": "REFUSED"
+    },
+    {
+      "id": 44,
+      "group": "retrieval-noise",
+      "lang": "sl",
+      "question": "Kaj je Higgsov bozon?",
+      "modelCalls": 0,
+      "durationMs": 14,
+      "answerable": false,
+      "reason": "insufficient_evidence",
+      "answer": {
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null
+      },
+      "viri": [],
+      "promptChars": 0,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "0 klicev modela (brez dokaza)",
+          "pass": true,
+          "detail": "klicev: 0"
+        },
+        {
+          "name": "zavrnitev po pogodbi",
+          "pass": true,
+          "detail": "insufficient_evidence"
+        }
+      ],
+      "warnings": [],
+      "verdict": "REFUSED"
+    }
+  ]
+}

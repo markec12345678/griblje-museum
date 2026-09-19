@@ -195,17 +195,43 @@ function commonPrefixLen(a: string, b: string): number {
   return n;
 }
 
+/** Priponske končnice sklanjatve/množine: ena beseda se ZAČNE z drugo in
+ *  ostanek je ena od znanih končnic (zvon → zvona/zvonovi, kraj → kraje,
+ *  Griblje → Gribljah prek ≥ 6 znakov). Ostanek, ki NI končnica, je DRUGO
+ *  geslo — to je bila luža TASK 42.1 §2: »svetlobe« ~ »svet« (svetloba ≠
+ *  svet, skupna predpona 4 znakov), »francije« ~ »franc« (Francija ≠ Franc),
+ *  »zemlja« ~ »zemljevidi« (5 znakov brez predponske oblike). */
+const INFLECTION_TAILS = new Set([
+  // slovensko/HR sklanjatve (enični/množinski končnici brez −ija/-ij)
+  "a", "e", "i", "o", "u", "m", "ov", "ova", "ove", "ovi", "ovih",
+  "ev", "eva", "eve", "evi", "evih", "em", "om", "im", "ih",
+  "ah", "am", "ami", "ja", "je", "ji", "jo", "ju",
+  "ga", "ge", "gi", "gu", "ema", "ama", "tih",
+  // angleške množine/besedne oblike
+  "s", "es",
+]);
+
 /**
- * Ujemanje žetona vprašanja z žetonom entitete: enako, ali predponsko
- * (zvon ~ zvona, griblje ~ gribljah, barle = barle). Splošne besede so
- * predhodno odstranjene s seznamom STOPWORDS.
+ * Ujemanje žetona vprašanja z žetonom entitete/zapisa: enako, predponsko
+ * (Griblje ~ Gribljah, ≥ 6 znakov), predponska oblika s PRIPONSKO končnico
+ * (zvon ~ zvona, zvon ~ zvonovi) ali enakovredno deblo (kolpa ~ kolpi).
+ * Splošne besede so predhodno odstranjene s seznamom STOPWORDS.
  */
 function tokenMatches(qt: string, et: string): boolean {
   if (qt === et) return true;
   const p = commonPrefixLen(qt, et);
-  if (p >= 4 && (qt.startsWith(et) || et.startsWith(qt) || p >= 5)) return true;
-  // Slovenske sklanjatve s spremembo končnega samoglasnika (kolpa/kolpi):
-  // odstranimo po en končni samoglasnik in primerjamo debla.
+  // Dolga skupna predpona je sama po sebi dovolj (Griblje/Gribljah, kolpa/kolpini …).
+  if (p >= 6) return true;
+  // Krajša beseda se ZAČNE z daljšo + ostanek je znana končnica sklanjatve
+  // (zvon/zvona, kraj/kraju). Ostanek, ki ni končnica (svet→svet-lobe,
+  // franc→franc-ije, bozo→bozo-n), je drugo geslo in NE ustreza.
+  if (p >= 4 && (qt.startsWith(et) || et.startsWith(qt))) {
+    const longer = qt.length > et.length ? qt : et;
+    const tail = longer.slice(p);
+    if (tail.length <= 4 && INFLECTION_TAILS.has(tail)) return true;
+  }
+  // Slovenske sklanjatve s spremembo končnega samoglasnika (kolpa/kolpi,
+  // zvona/zvon): odstranimo po en končni samoglasnik in primerjamo debla.
   const stem = (w: string) => w.replace(/[aeiou]$/, "");
   const qs = stem(qt);
   const es = stem(et);
@@ -300,12 +326,45 @@ function museumReadable(text: string, layer: "sl" | "en"): string {
 
 type ExhibitHit = { exhibit: SeedExhibit; score: number };
 
+/** Ali KATERI KOLI vsebinski žeton vprašanja ujema katero koli muzejsko
+ *  besedo (oznake/aliasi entitet registra + naslovi/povzetki vseh zapisov)?
+ *  TASK 42.1 §2: letnica sama ne dokazuje relevantnosti — če NOBENA beseda
+ *  vprašanja ni muzejska (»papež leta 1500«, »hitrost svetlobe«), zadetki
+ *  po letnici niso sidrani; varneje je zavrniti (»ni dovolj dokumentiranih
+ *  podatkov«) kot prikazati navidezno relevanten zapis. Če vprašanje sploh
+ *  nima vsebinskih žetonov (»Kaj se je zgodilo leta 1942?«), je letnica
+ *  edina sled in USTREZNA. */
+function vocabularyAnchorExists(questionTokens: string[]): boolean {
+  if (questionTokens.length === 0) return true;
+  for (const entity of ENTITIES) {
+    for (const etok of entityTokens(entity)) {
+      for (const qt of questionTokens) {
+        if (tokenMatches(qt, etok)) return true;
+      }
+    }
+  }
+  for (const exhibit of seedExhibits) {
+    for (const key of [exhibit.titleSi, exhibit.titleEn, exhibit.summarySi, exhibit.summaryEn]) {
+      if (!key) continue;
+      for (const tt of tokensOf(normalizeQuestion(key))) {
+        for (const qt of questionTokens) {
+          if (tokenMatches(qt, tt)) return true;
+        }
+      }
+    }
+  }
+  return false;
+}
+
 function matchExhibits(
   questionTokens: string[],
   years: number[],
   layer: "sl" | "en",
   excludeSlugs: ReadonlySet<string>,
   mvgNumbers: number[] = [],
+  /** Letni zadetki štejejo samo, kadar ima vprašanje besedilno sidro
+   *  (vidno zgornje) ali sploh nič vsebinskih žetonov. */
+  yearPoints = true,
 ): ExhibitHit[] {
   const hits: ExhibitHit[] = [];
   for (const exhibit of seedExhibits) {
@@ -319,12 +378,14 @@ function matchExhibits(
       if ([...titleTokens].some((tt) => tokenMatches(qt, tt))) score += 3;
       else if ([...summaryTokens].some((st) => tokenMatches(qt, st))) score += 1;
     }
-    for (const y of years) {
-      const from = exhibit.yearFrom ?? Number.NaN;
-      const to = exhibit.yearTo ?? Number.NaN;
-      // Konec intervala ali zaprt interval, ki leto nosi; odprti interval
-      // (→ danes) se NE razteza čez vsa leta — samo končna točka.
-      if (from === y || to === y || (from < y && to > y)) score += 4;
+    if (yearPoints) {
+      for (const y of years) {
+        const from = exhibit.yearFrom ?? Number.NaN;
+        const to = exhibit.yearTo ?? Number.NaN;
+        // Konec intervala ali zaprt interval, ki leto nosi; odprti interval
+        // (→ danes) se NE razteza čez vsa leta — samo končna točka.
+        if (from === y || to === y || (from < y && to > y)) score += 4;
+      }
     }
     // Muzejska številka (MVG-014) — najmočnejša razrešitev zapisa.
     if (exhibit.museumNo && mvgNumbers.includes(Number(exhibit.museumNo.slice(4)))) {
@@ -477,6 +538,18 @@ export function buildContext(
   const years = yearsIn(normalized);
   const mvgNumbers = mvgNumbersIn(normalized);
   const intent = intentOf(normalized);
+  // Besedilno sidro (TASK 42.1 §2): letnica brez ene same muzejske besede
+  // v vprašanju ne dokazuje relevantnosti — zadetki po letnici takrat ne
+  // štejejo (varneje zavrniti kot prikazati navidezno relevanten zapis).
+  // Samo številski žetoni (leta: »leta 1942«) so domena LETNE plasti in
+  // se kot sidro NE štejejo — »Kaj se je zgodilo leta 1942?« ima pravico
+  // do klica; »Kdo je bil papež leta 1500?« pa nima (papež ni muzejska
+  // beseda, letnica sama pa ne dokazuje relevantnosti).
+  const contentTokens = questionTokens.filter((t) => !/^\d+$/.test(t));
+  const vocabAnchored =
+    mvgNumbers.length > 0 ||
+    contentTokens.length === 0 ||
+    vocabularyAnchorExists(contentTokens);
 
   // --- 1. razrešitev entitet ---------------------------------------------
   const entityHits = matchEntities(questionTokens, normalized, years);
@@ -486,7 +559,7 @@ export function buildContext(
   for (const hit of entityHits.slice(0, MAX_ENTITIES)) {
     for (const ev of hit.entity.evidence) entitySlugs.add(ev.slug);
   }
-  const exhibitHits = matchExhibits(questionTokens, years, layer, entitySlugs, mvgNumbers);
+  const exhibitHits = matchExhibits(questionTokens, years, layer, entitySlugs, mvgNumbers, vocabAnchored);
 
   // --- 3. odprta kuratorska vprašanja --------------------------------------
   //    (a) vprašanje KAJ ŠE NE VEMO: kuratorska vrsta P0–P4 JE odgovor —
@@ -625,7 +698,7 @@ export function buildContext(
     provided,
   };
 
-  const nearest = matchExhibits(questionTokens, years, layer, new Set(), mvgNumbers)
+  const nearest = matchExhibits(questionTokens, years, layer, new Set(), mvgNumbers, vocabAnchored)
     .slice(0, 3)
     .map((h) => ({ slug: h.exhibit.slug, score: h.score }));
 

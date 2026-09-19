@@ -1200,20 +1200,42 @@ section("R10 — OUT-OF-CORPUS (brez dokaza = 0 klicev modela)");
     note: "0-klicev pravilo velja za BREZ DOKAZA; pri »Griblje + nedokumentirano« je dokazna domena prisotna",
   });
 
-  // Leksični šum (varna smer, dokumentirana): splošne besede včasih zadenejo
-  // zapise (»hitrost svetlobe« → vaška šola). Model je KLICAN, a vidi samo
-  // muzejske zapise — morebitni odgovor je dolžan ostati v njih (zavrnitev).
-  row({
-    id: "R10.4",
-    question: "Kaj je hitrost svetlobe? / Kdo je bil papež leta 1500?",
-    evidence: "zadetki: vaska-sola, tamburasi-danica … (leksični šum)",
-    expected: "brez izmišljanja; odgovor samo iz muzejskih zapisov",
-    actual: "model klican s pomotoma pridobljenimi zapisi — nadzor je na plasti pravil + verifyAnswer",
-    citation: "—",
-    supports: false,
-    verdict: "GAP",
-    note: "recall hrup: predponsko ujemanje (svetlobe~svetlobe?) — varnostno nedotakljivo (closed world), a odgovor je odvisen od poštenosti modela; realni audit #26–29",
-  });
+  // Leksični šum (TASK 42.1 §2 — ZAPRT): predponsko ujemanje brez priponske
+  // končnice (svetlobe ≠ svet, 4-znakovna predpona) in letnica BREZ
+  // besedilnega sidra (papež leta 1500) ne prineseta več zapisov —
+  // 0 klicev modela, poštena zavrnitev brez navideznih predlogov.
+  {
+    const guard = attackProvider([
+      { answerable: false, reason: "insufficient_evidence", kajVemo: [], kakoVemo: [], viri: [], opomba: null },
+    ]);
+    const r1 = await askCurator("sl", "Kaj je hitrost svetlobe?", guard);
+    check(
+      guard.calls.length === 0 && r1.answerable === false,
+      "R10.4a »hitrost svetlobe« → 0 klicev (svetlobe ≠ svet — predponski šum zaprt)",
+      `klicev: ${guard.calls.length}`,
+    );
+    check(
+      r1.suggestions.length === 0,
+      "R10.4b zavrnitev brez navideznih predlogov (vaška šola ni več »najbližji« zapis)",
+    );
+    const r2 = await askCurator("sl", "Kdo je bil papež leta 1500?", guard);
+    check(
+      guard.calls.length === 0 && r2.answerable === false,
+      "R10.4c »papež leta 1500« → 0 klicev (letnica brez besedilnega sidra)",
+      `klicev: ${guard.calls.length}`,
+    );
+    row({
+      id: "R10.4",
+      question: "Kaj je hitrost svetlobe? / Kdo je bil papež leta 1500?",
+      evidence: "ZAPRTO (TASK 42.1 §2): svetlobe≠svet (predpona 4 znakov brez končnice); letnica 1500 brez besedilnega sidra",
+      expected: "0 klicev modela; poštena zavrnitev brez navideznih zapisov",
+      actual: `klicev ${guard.calls.length}; answerable=${r1.answerable && r2.answerable}; predlogi ${r1.suggestions.length}`,
+      citation: "—",
+      supports: true,
+      verdict: "PASS",
+      note: "pred popravkom: vaška šola po žetonu »svet«, kučar/zemljevidi po letnici 1500 — model je bil klican z navidezno relevantnimi zapisi; varnost je zdaj v plasti RETRIEVAL-a, ne le pravil poziva",
+    });
+  }
 
   // Osebe, ki jih ni: France Prešeren (ne sme dobiti izmišljene biografije).
   {
