@@ -1,5 +1,5 @@
 /** Semantična revizija: starosti, obletnice, trajanja — aritmetične preverbe. */
-import { seedExhibits } from "./src/lib/museum-content";
+import { seedExhibits } from "../src/lib/museum-content";
 
 const reBirthDeath = /(\d{4})\s*[–—-]\s*(\d{4})/g;
 const reBirthday = /(\d{1,3})\.\s*(rojstn\w*)/gi;
