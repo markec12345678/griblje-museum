@@ -28,6 +28,7 @@
 import { seedExhibits, type SeedExhibit } from "@/lib/museum-content";
 import {
   ENTITIES,
+  ENTITY_BY_ID,
   ENTITY_QUEUE,
   entitiesOfKind,
   type EntityKind,
@@ -71,11 +72,14 @@ const LANG_MARKERS: Record<CuratorLang, Set<string>> = {
     "vemo", "ves", "povej", "povejte", "prosim", "ampak", "vendar",
     "ker", "tukaj", "tam", "ze", "spet", "znova", "bil", "sem",
     "vam", "nam", "pri", "ob",
+    // TASK 42 §10: SL »Ali je …?« vprašanja so imela samo HR oznako »ali« —
+    // dodane enključno slovenske besede (kot/dogodek/sta) razrešijo smer.
+    "kot", "dogodek", "dogodki", "dogodkov", "sta", "kdo je", "kaj je",
   ]),
   hr: new Set([
-    "sto", "tko", "gdje", "kada", "zasto", "koji", "koja", "koje",
+    "sto", "tko", "gdje", "kada", "zasto", "koji", "koja", "koje", "kao", "li",
     "su", "nisu", "bio", "nesto", "netko", "ovaj", "ovdje", "tamo",
-    "jos", "opet", "znamo", "znas", "reci", "molim", "vec", "ali",
+    "jos", "opet", "znamo", "znas", "reci", "molim", "vec",
   ]),
   en: new Set([
     "what", "who", "where", "when", "why", "which", "whose",
@@ -89,12 +93,16 @@ const LANG_MARKERS: Record<CuratorLang, Set<string>> = {
     "der", "die", "das", "und", "ist", "sind", "war", "waren", "hat",
     "habe", "haben", "erzahl", "erzahle", "bitte", "danke", "aber",
     "denn", "dort", "hier", "diese", "dieser", "kurator",
+    // TASK 42 §10: »Was geschah Ende März 1945?« — brez teh besed se
+    // »was« izenači z EN in nemško vprašanje dobi slovenski odgovor.
+    "geschah", "geschehen", "geschecht", "ende", "wurde", "wurden",
+    "seit", "jahr", "jahre", "jahres", "dorfes", "erzahlte",
   ]),
   it: new Set([
     "cosa", "chi", "dove", "quando", "perche", "quale", "quali",
     "di", "il", "lo", "la", "le", "gli", "un", "una", "sono", "stato",
     "stata", "racconta", "raccontami", "per", "favore", "grazie", "ma",
-    "li", "qui", "questa", "questo", "curatore",
+    "qui", "questa", "questo", "curatore",
   ]),
 };
 
@@ -214,6 +222,18 @@ export function yearsIn(question: string): number[] {
   return out;
 }
 
+/** Muzejske številke v vprašanju (MVG-014 / »mvg 14«) — TASK 42 §5:
+ *  agresivna vprašanja po MVG številkah morajo razrešiti PRAVE zapise
+ *  (prej so bila zavrnjena, ker žetoni »mvg/014« ne zadetkajo naslovov). */
+export function mvgNumbersIn(normalized: string): number[] {
+  const out: number[] = [];
+  for (const m of normalized.matchAll(/\bmvg\s?(\d{1,3})\b/g)) {
+    const n = Number(m[1]);
+    if (!out.includes(n)) out.push(n);
+  }
+  return out;
+}
+
 /* ---------------------------------------------------------------------------
  * Razrešitev entitet
  * ------------------------------------------------------------------------- */
@@ -268,6 +288,16 @@ function matchEntities(
  * Razrešitev zapisov (besedilno iskanje po naslovu + povzetku, letnice)
  * ------------------------------------------------------------------------- */
 
+/** Interni ID registra v besedilu vrzeli → berljiva oznaka entitete
+ *  (kontekst/model/uporabnik NE vidita ID-jev — TASK 42 §14/§17). */
+function museumReadable(text: string, layer: "sl" | "en"): string {
+  return text.replace(/\b(person|place|event|time):[a-z0-9-]+\b/g, (id) => {
+    const ref = ENTITY_BY_ID.get(id);
+    if (!ref) return id;
+    return layer === "sl" ? ref.labelSi : ref.labelEn;
+  });
+}
+
 type ExhibitHit = { exhibit: SeedExhibit; score: number };
 
 function matchExhibits(
@@ -275,6 +305,7 @@ function matchExhibits(
   years: number[],
   layer: "sl" | "en",
   excludeSlugs: ReadonlySet<string>,
+  mvgNumbers: number[] = [],
 ): ExhibitHit[] {
   const hits: ExhibitHit[] = [];
   for (const exhibit of seedExhibits) {
@@ -294,6 +325,10 @@ function matchExhibits(
       // Konec intervala ali zaprt interval, ki leto nosi; odprti interval
       // (→ danes) se NE razteza čez vsa leta — samo končna točka.
       if (from === y || to === y || (from < y && to > y)) score += 4;
+    }
+    // Muzejska številka (MVG-014) — najmočnejša razrešitev zapisa.
+    if (exhibit.museumNo && mvgNumbers.includes(Number(exhibit.museumNo.slice(4)))) {
+      score += 9;
     }
     if (score >= 3) hits.push({ exhibit, score });
   }
@@ -440,6 +475,7 @@ export function buildContext(
   const normalized = normalizeQuestion(question);
   const questionTokens = tokensOf(normalized);
   const years = yearsIn(normalized);
+  const mvgNumbers = mvgNumbersIn(normalized);
   const intent = intentOf(normalized);
 
   // --- 1. razrešitev entitet ---------------------------------------------
@@ -450,7 +486,7 @@ export function buildContext(
   for (const hit of entityHits.slice(0, MAX_ENTITIES)) {
     for (const ev of hit.entity.evidence) entitySlugs.add(ev.slug);
   }
-  const exhibitHits = matchExhibits(questionTokens, years, layer, entitySlugs);
+  const exhibitHits = matchExhibits(questionTokens, years, layer, entitySlugs, mvgNumbers);
 
   // --- 3. odprta kuratorska vprašanja --------------------------------------
   //    (a) vprašanje KAJ ŠE NE VEMO: kuratorska vrsta P0–P4 JE odgovor —
@@ -472,7 +508,9 @@ export function buildContext(
     openQuestions.push({
       id: item.id,
       priority: item.priority,
-      text: layer === "sl" ? item.questionSi : item.questionEn,
+      // Besedilo vrzeli v MUZEJSKO berljivi obliki: interni ID-ji registra
+      // (person:…, place:…, TASK 42 §14/§17) se nadomestijo z oznakami.
+      text: museumReadable(layer === "sl" ? item.questionSi : item.questionEn, layer),
       slugs: item.slugs,
     });
   };
@@ -587,7 +625,7 @@ export function buildContext(
     provided,
   };
 
-  const nearest = matchExhibits(questionTokens, years, layer, new Set())
+  const nearest = matchExhibits(questionTokens, years, layer, new Set(), mvgNumbers)
     .slice(0, 3)
     .map((h) => ({ slug: h.exhibit.slug, score: h.score }));
 
