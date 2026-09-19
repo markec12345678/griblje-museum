@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "en": 1
+    },
+    "counts": {
+      "PASS": 1,
+      "REVIEW": 0,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 26,
+      "category": "C",
+      "question": "Who was Niko Županič?",
+      "language": "en",
+      "retrieved_records": [
+        "griblje-vas",
+        "petstoletnica-2026",
+        "niko-zupanic",
+        "izseljenstvo",
+        "vaska-sola",
+        "peter-kambic",
+        "katarina-zupanic",
+        "kucar-podzemelj",
+        "ljudje-ob-kolpi",
+        "mate-zupanic-svarski",
+        "matija-totter",
+        "franc-brinc",
+        "joze-dular"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:niko-zupanic",
+          "type": "person",
+          "label": "Niko Županič"
+        },
+        {
+          "id": "person:katarina-zupanic",
+          "type": "person",
+          "label": "Katarina Zupanič"
+        },
+        {
+          "id": "person:mate-zupanic-svarski",
+          "type": "person",
+          "label": "Mate Zupanič-Švarski"
+        }
+      ],
+      "retrieved_sources": [
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:crnomelj.si/sl/za-obcane/novice/2026062314453884/v-gribljah-slovesno-obelezili-500-letnico-cerkve-sv-vida-in-namenu-predali-novo-pridobitev",
+        "url:moja-dolenjska.si/griblje-slovesno-obelezili-500-letnico-prve-pisne-omembe",
+        "url:slovenskenovice.delo.si/novice/slovenija/v-butoraju-in-gribljah-s-slovesno-maso-proslavili-500-letnici-cerkev-je-vedno-ogledalo-vasi-foto",
+        "url:sl.wikipedia.org/wiki/Cerkev_sv._Vida,_Griblje",
+        "url:instagram.com/p/DZ7pevXDEU1",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:etno-muzej.si",
+        "url:slovenska-biografija.si",
+        "url:kamra.si",
+        "url:commons.wikimedia.org/wiki/File:Ivan_Vavpotič_-_Niko_Županič.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo",
+        "ime:Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        "url:radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Božično_drevo.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-peter-kambic",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "ime:Pirc Krasinski (Peter Kambič): Božič pri Belokranjcih, Dolenjske novice, 1. januar 1889",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Herbarij_-_Flysser_1696_-_PMS.jpg",
+        "url:slovenska-biografija.si/oseba/sbi915246",
+        "ime:Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        "url:physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-mate-zupanic-svarski-1",
+        "url:commons.wikimedia.org/wiki/File:Salonika_Front_WW1.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Niko Županič was an ethnologist, anthropologist, historian and politician, and the founder of today's Slovene Ethnographic Museum. He was born in Griblje on 1 December 1876. [[niko-zupanic]]",
+          "Županič is documented as having preserved the oldest pictures of the village of Griblje, including works by Ivan Vavpotič and Gaspari. [[niko-zupanic]]",
+          "During the First World War, he worked among emigrants from Slovenia in the United States. [[izseljenstvo]]",
+          "Županič's mother, Katarina Zupanič (née Pezdirc, 1855–1923), gathered and wrote down the folk tradition of Griblje at his request in 1894/95. This record was published in 1937 as 'A Bouquet of Meadow Flowers from Griblje'. [[katarina-zupanic]]"
+        ],
+        "kakoVemo": [],
+        "opomba": "There is an open curatorial question regarding whether Niko Županič and 'Niko Županič-Švarski' are the same person, as they are entered as aliases in the museum records.",
+        "viri": [
+          {
+            "slug": "niko-zupanic",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "niko-zupanic",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "niko-zupanic",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "niko-zupanic",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "niko-zupanic",
+            "sourceIndex": 4
+          },
+          {
+            "slug": "niko-zupanic",
+            "sourceIndex": 5
+          },
+          {
+            "slug": "izseljenstvo",
+            "sourceIndex": 4
+          },
+          {
+            "slug": "katarina-zupanic",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "niko-zupanic",
+        "izseljenstvo",
+        "katarina-zupanic"
+      ],
+      "uncertainty": "približnost prisotna: um ",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "niko-zupanic"
+        ]
+      },
+      "curatorial_judgment": "EN odgovor: MVG-010, cosmopolitan from Griblje; 1. 12. 1876–1961.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    }
+  ]
+}

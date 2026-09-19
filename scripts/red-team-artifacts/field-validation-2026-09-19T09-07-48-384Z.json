@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "en": 1
+    },
+    "counts": {
+      "PASS": 1,
+      "REVIEW": 0,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 50,
+      "category": "E",
+      "question": "When did the Allied airlift over Krasinec take place?",
+      "language": "en",
+      "retrieved_records": [
+        "letalisce-otok-1944",
+        "peter-kambic",
+        "zracni-most-krasinec",
+        "evakuacija-1945",
+        "vaska-sola",
+        "katarina-zupanic",
+        "muzejska-ucilnica",
+        "gribeljci-po-svetu-2019",
+        "novo-zivljenje-1914",
+        "kopalisce-griblje",
+        "ljudje-ob-kolpi",
+        "tamburasi-danica"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:krasinec",
+          "type": "place",
+          "label": "Krasinec"
+        },
+        {
+          "id": "event:zracni-most-krasinec-1945",
+          "type": "event",
+          "label": "Zračni most Krasinec"
+        },
+        {
+          "id": "person:peter-kambic",
+          "type": "person",
+          "label": "Peter Kambič"
+        }
+      ],
+      "retrieved_sources": [
+        "url:rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
+        "url:sl.wikipedia.org/wiki/Otok,_Metlika",
+        "url:odkrijtebelokrajino.com",
+        "url:radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki",
+        "url:commons.wikimedia.org/wiki/File:Zavezniško_letalo_na_letališču_Otok.jpg",
+        "url:commons.wikimedia.org/wiki/File:Božično_drevo.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-peter-kambic",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "ime:Pirc Krasinski (Peter Kambič): Božič pri Belokranjcih, Dolenjske novice, 1. januar 1889",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Herbarij_-_Flysser_1696_-_PMS.jpg",
+        "url:slovenska-biografija.si/oseba/sbi915246",
+        "ime:Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        "url:commons.wikimedia.org/wiki/File:Slovenian_School_Museum_-_Ljubljana,_Slovenia_(7451262652).jpg",
+        "url:svet24.si/novice/kultura/v-soli-so-spravljene-mnoge-skrivnosti-odprtje-muzejske-ucilnice-na-ps-griblje-263268-1783688",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:sl.wikipedia.org/wiki/Novo_življenje_(Kostanjevec)",
+        "url:sl.wikisource.org/wiki/Novo_življenje_(Josip_Kostanjevec)",
+        "url:commons.wikimedia.org/wiki/File:Josip_Kostanjevec_-_Novo_življenje.pdf",
+        "url:sl.wikipedia.org/wiki/Josip_Kostanjevec",
+        "url:radio-odeon.com/nasveti/odkrijte-krajinski-park-kolpa-zaklad-narave-in-kulturne-dediscine/kolpa-pod-drobnogledom-cista-reka-je-skupna-odgovornost",
+        "url:sl.wikipedia.org/wiki/Kolpa",
+        "url:radio-odeon.com/novice/tradicionalna-pasuljada-v-gribljah",
+        "url:commons.wikimedia.org/wiki/File:Damelj_(50053531627).jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-nikolaj-dragos",
+        "url:commons.wikimedia.org/wiki/File:Dangubica.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "The Allied airlift over Krasinec took place over two nights, specifically on 25–26 March 1945. In this operation, Allied Dakotas and Spitfires flew 2041 people from the partisan airfield of Krasinec, including wounded individuals, children, and Allied airmen. Among the evacuees was the writer Alma Karlin. [[zracni-most-krasinec]]",
+          "The event occurred at the end of March 1945, during which Allied aircraft evacuated wounded Partisans from Bela krajina to Bari. Two photographs taken at Griblje document this operation. [[evakuacija-1945]]"
+        ],
+        "kakoVemo": [
+          "The dates and details of the Krasinec airlift are documented by multiple sources, including RTV SLO, Wikimedia Commons photographs, and Wikipedia, all of which cite the period 25–26 March 1945 and the number of people evacuated. [[zracni-most-krasinec], [evakuacija-1945]]"
+        ],
+        "opomba": "The curatorial question remains whether the evacuation described in 'evakuacija-1945' (end of March 1945) and 'zracni-most-krasinec' (25–26 March 1945) refer to the same event or two distinct but closely related operations.",
+        "viri": [
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "evakuacija-1945",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "evakuacija-1945",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "evakuacija-1945",
+            "sourceIndex": 2
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "zracni-most-krasinec",
+        "evakuacija-1945"
+      ],
+      "uncertainty": "približnost prisotna: end of March",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ],
+        "keepApprox": {
+          "re": "late March|48|25",
+          "why": "late March 1945 (48 hours)"
+        }
+      },
+      "curatorial_judgment": "EN odgovor: late March 1945, 48 hours — približnost dneva v EN.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    }
+  ]
+}

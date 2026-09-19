@@ -1,0 +1,1793 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 14,
+    "totalModelCalls": 11,
+    "byLanguage": {
+      "sl": 9,
+      "en": 2,
+      "de": 2,
+      "it": 1
+    },
+    "counts": {
+      "PASS": 8,
+      "REVIEW": 5,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 1
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 71,
+      "category": "H",
+      "question": "Ali je bil zvon izdelan leta 1900?",
+      "language": "sl",
+      "retrieved_records": [
+        "zvon-2008",
+        "sveti-vid",
+        "anton-filak",
+        "audrey-totter",
+        "gribeljski-zbul",
+        "janko-barle",
+        "kanizarica",
+        "katarina-zupanic",
+        "konrad-barle",
+        "tkalstvo",
+        "bele-breze",
+        "pecnica-susenje-sadja",
+        "petstoletnica-2026",
+        "kavbojski-zur",
+        "vaska-sola",
+        "jurjevo-v-gribljah"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:blagoslov-zvona-2008",
+          "type": "event",
+          "label": "Blagoslov in posvetitev novega zvona"
+        },
+        {
+          "id": "event:vrnitev-glavnega-zvona-1998",
+          "type": "event",
+          "label": "Vrnitev glavnega zvona"
+        }
+      ],
+      "retrieved_sources": [
+        "url:commons.wikimedia.org/wiki/File:Church_bell_2017_G1.jpg",
+        "ime:SV. VID GRIBLJE — Blagoslovitev in posvetitev zvona, Griblje 2008 (spominska knjiga)",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj_-_cerkev_sv._Vida.jpg",
+        "url:sl.wikipedia.org/wiki/Sveti_Vid",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Sv. Vid Griblje — blagoslovitev in posvetitev zvona, spominska knjiga, Griblje 2008",
+        "url:sl.wikipedia.org/wiki/Cerkev_sv._Vida,_Griblje",
+        "url:slovenskenovice.delo.si/novice/slovenija/v-butoraju-in-gribljah-s-slovesno-maso-proslavili-500-letnici-cerkev-je-vedno-ogledalo-vasi-foto",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:worldploughing.org",
+        "url:svet24.si/sport/filak-spet-drzavni-prvak-v-oranju-pate-prvi-z-obracalnimi-plugi-32794-1693225",
+        "url:svet24.si/sport/drzavna-prvaka-v-oranju-postala-igor-pate-in-anton-filak-730417",
+        "ime:Kmečki glas: Stara nova zmagovalca državnega tekmovanja (65. tekmovanje 2022)",
+        "url:svet24.si/sport/anton-filak-drzavni-prvak-v-oranju-292991-1718823",
+        "url:zotks.si",
+        "url:radio-odeon.com/novice/filak-in-simonic-uspesna-na-drzavnem-tekmovanju-v-oranju",
+        "url:commons.wikimedia.org/wiki/File:Oranje_s_konjsko_vprego.jpg",
+        "ime:Slovenska etnografska literatura o oranju, plugu in vpregah (tipologija)",
+        "url:radio-odeon.com/novice/plug-kot-simbol-kmetijstva-in-prezivetja-cloveka-na-zemlji",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "url:commons.wikimedia.org/wiki/File:AUDREYTotter.jpg",
+        "url:commons.wikimedia.org/wiki/File:Lady-in-the-Lake-trailer-mirror.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:youtu.be/9N0Y_GAC1og",
+        "url:youtu.be/_4pM9KSBKBE",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:svet24.si",
+        "url:radio-odeon.com/novice/miklavzeva-in-zbulckova-trznica",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:rtvslo.si/kultura/dediscina/muzej-rudnika-kanizarica-predan-v-upravljanje-ric-u-bela-krajina/613386",
+        "url:sl.wikipedia.org/wiki/Kanižarica",
+        "url:radio-odeon.com/novice/mestna-muzejska-zbirka-z-novim-imenom",
+        "url:commons.wikimedia.org/wiki/File:Rudnik_Kanižarica.jpg",
+        "url:commons.wikimedia.org/wiki/File:Herbarij_-_Flysser_1696_-_PMS.jpg",
+        "url:slovenska-biografija.si/oseba/sbi915246",
+        "ime:Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:commons.wikimedia.org/wiki/File:Predenje_v_Beli_krajini.jpg",
+        "ime:Slovenska etnografska literatura o predenju in tkalstvu na Dolenjskem in v Beli krajini",
+        "url:etno-muzej.si",
+        "url:sl.wikipedia.org/wiki/Lan",
+        "url:commons.wikimedia.org/wiki/File:Hiša_med_brezami.jpg",
+        "url:kp-kolpa.si",
+        "url:kp-kolpa.si/o-nas/osebna-izkaznica",
+        "url:sl.wikipedia.org/wiki/Navadna_breza",
+        "url:commons.wikimedia.org/wiki/File:Pečnica_za_sušenje_sadja_v_Adlešičih.jpg",
+        "url:radio-odeon.com/novice/semic-v-starih-cajtih-574",
+        "url:radio-odeon.com/novice/stavbna-dediscina-podezelja",
+        "url:crnomelj.si/sl/za-obcane/novice/2026062314453884/v-gribljah-slovesno-obelezili-500-letnico-cerkve-sv-vida-in-namenu-predali-novo-pridobitev",
+        "url:moja-dolenjska.si/griblje-slovesno-obelezili-500-letnico-prve-pisne-omembe",
+        "url:instagram.com/p/DZ7pevXDEU1",
+        "url:commons.wikimedia.org/wiki/File:Cowboy-Boots-And-Hat.png",
+        "url:radio-odeon.com/novice/kavbojski-zur-v-gribljah-znova-navdusil",
+        "url:radio-odeon.com/novice/po-gribljah-s-starodobnimi-kolesi",
+        "url:radio-odeon.com/novice/v-gribljah-ze-16-pasuljada",
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zvon-2008"
+        ],
+        "mustNotState": [
+          {
+            "re": "izdelan[^.]{0,30}1900|1900[^.]{0,30}izdelan",
+            "why": "1900 ni dokazana letnica zvona"
+          }
+        ]
+      },
+      "curatorial_judgment": "NAPAČNO: zvon je iz 2008 (blagoslov), glavni zvon vrnjen 1998. Odgovor popravi ali zavrne — 1900 ne sme biti potrjeno.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "INFRASTRUCTURE",
+      "notes": [
+        "infra poskus 1: API request failed with status 429: {\"error\":\"Too many requests, please try agai — čakam in poskušam znova",
+        "infra poskus 2: API request failed with status 429: {\"error\":\"Too many requests, please try agai — čakam in poskušam znova",
+        "INFRASTRUCTURE: API request failed with status 429: {\"error\":\"Too many requests, please try again later\"}"
+      ]
+    },
+    {
+      "id": 72,
+      "category": "H",
+      "question": "Ali je Napoleon obiskal Griblje?",
+      "language": "sl",
+      "retrieved_records": [
+        "griblje-vas",
+        "griblje-v-stevilkah",
+        "zaselki-griblje",
+        "etimologija-gribljati",
+        "gribeljci-po-svetu-2019",
+        "franc-brinc",
+        "praznik-ks-2024",
+        "obcina-griblje",
+        "dkz-griblje",
+        "ilirska-carina-1809",
+        "evakuacija-1945",
+        "jurjevo-v-gribljah",
+        "kopalisce-griblje",
+        "kucar-podzemelj",
+        "novo-zivljenje-1914",
+        "zracni-most-krasinec",
+        "joze-dular",
+        "spanska-gripa-1918"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:griblje",
+          "type": "place",
+          "label": "Griblje"
+        },
+        {
+          "id": "event:gribeljci-po-svetu-2019",
+          "type": "event",
+          "label": "Gribeljci po svetu — vrnitev ob 130-letnici šole"
+        },
+        {
+          "id": "event:praznik-krajevne-skupnosti-2024",
+          "type": "event",
+          "label": "Praznik krajevne skupnosti Griblje"
+        },
+        {
+          "id": "event:ukinitev-obcine-griblje-1933",
+          "type": "event",
+          "label": "Ukinitev občine Griblje"
+        },
+        {
+          "id": "event:ustanovitev-dkz-griblje-1996",
+          "type": "event",
+          "label": "Ustanovitev Društva kmečkih žena Griblje"
+        },
+        {
+          "id": "event:ustanovitev-obcine-griblje-1854",
+          "type": "event",
+          "label": "Ustanovitev občine Griblje"
+        }
+      ],
+      "retrieved_sources": [
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:wikidata.org/wiki/Q2531566",
+        "url:pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05C5003S.px",
+        "url:artsandculture.google.com/asset/_gEvY_zLVRQmkQ",
+        "url:commons.wikimedia.org/wiki/File:Special-Karte_des_Herzogthums_Krain_1843.jpg",
+        "url:commons.wikimedia.org/wiki/File:ISS067-E-80408_-_View_of_Earth.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "ime:Bibliografija: Jože Šimec, »Izvor imena vasi Griblje«, Dolenjski list, 11. 1. 2001, str. 17",
+        "url:commons.wikimedia.org/wiki/File:Oranje_z_volovsko_vprego.jpg",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:radio-odeon.com/koledar-dogodkov/praznik-ks-griblje",
+        "url:commons.wikimedia.org/wiki/File:Belokranjska_narodna_noša_1942.jpg",
+        "url:sl.wikipedia.org/wiki/Občina_Črnomelj",
+        "url:commons.wikimedia.org/wiki/File:Občine_dravske_banovine_v_letih_1933_-_1937.pdf",
+        "url:radio-odeon.com/novice/pozdrav-pomladi-v-gribljah",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:sl.wikipedia.org/wiki/Ilirske_province",
+        "ime:Pivec Stele, J. (1930) — študiji o gospodarstvu Ilirskih provinc",
+        "ime:Gašperič, P., Orožen Adamič, M., Šumrada, J. (2012): Zemljevid Ilirskih provinc iz leta 1812, ZRC SAZU",
+        "url:commons.wikimedia.org/wiki/File:Illyrian_Provinces_(1812).svg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA",
+        "url:radio-odeon.com/nasveti/odkrijte-krajinski-park-kolpa-zaklad-narave-in-kulturne-dediscine/kolpa-pod-drobnogledom-cista-reka-je-skupna-odgovornost",
+        "url:sl.wikipedia.org/wiki/Kolpa",
+        "url:radio-odeon.com/novice/tradicionalna-pasuljada-v-gribljah",
+        "url:commons.wikimedia.org/wiki/File:Damelj_(50053531627).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Novo_življenje_(Kostanjevec)",
+        "url:sl.wikisource.org/wiki/Novo_življenje_(Josip_Kostanjevec)",
+        "url:commons.wikimedia.org/wiki/File:Josip_Kostanjevec_-_Novo_življenje.pdf",
+        "url:sl.wikipedia.org/wiki/Josip_Kostanjevec",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894",
+        "url:sl.wikipedia.org/wiki/Španska_gripa",
+        "url:en.wikipedia.org/wiki/Spanish_flu"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "V Gribljah je v letih 1809–1813 deloval francoski carinski urad, ki je bil del Napoleonovega sistema Ilirskih provinc. [[ilirska-carina-1809]]"
+        ],
+        "kakoVemo": [
+          "Podatek je dokazan v zapisu [[ilirska-carina-1809]], ki navaja obstoj carinskega urada v Gribljah kot dela upravne mreže Ilirskih provinc. [[ilirska-carina-1809]]"
+        ],
+        "opomba": "V kontekstu ni nobenih dokazov o osebnem obisku Napoleona Bonaparta v Gribljah.",
+        "viri": [
+          {
+            "slug": "ilirska-carina-1809",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "ilirska-carina-1809"
+      ],
+      "uncertainty": "približnost prisotna: c. ",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "ilirska-carina"
+        ],
+        "mustNotState": [
+          {
+            "re": "Napoleon [^.]{0,15}obiskal|obiskal [^.]{0,12}Griblj",
+            "why": "obisk ni dokumentiran (dokumentirana je carinarnica v Ilirskih provincah)"
+          }
+        ]
+      },
+      "curatorial_judgment": "Obisk NI dokumentiran; dokumentirana je Napoleonova carinarnica v Ilirskih provincah (1809–1813, MVG-092). Odgovor loči.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": [
+        "infra poskus 1: API request failed with status 429: {\"error\":\"Too many requests, please try agai — čakam in poskušam znova",
+        "retrieval ni razrešil: ilirska-carina (pričakovano iz kuratorske presoje)"
+      ]
+    },
+    {
+      "id": 73,
+      "category": "H",
+      "question": "Ali je Ivan Barle zagotovo brat Konrada Barla?",
+      "language": "sl",
+      "retrieved_records": [
+        "konrad-barle",
+        "kucar-podzemelj",
+        "kranjska-sivka",
+        "janko-barle",
+        "panjska-koncnica",
+        "matija-totter",
+        "pisanice",
+        "kresovanje",
+        "ljudje-ob-kolpi",
+        "joze-dular",
+        "izseljenstvo"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:ivan-barle",
+          "type": "person",
+          "label": "Ivan Barle"
+        },
+        {
+          "id": "person:konrad-barle",
+          "type": "person",
+          "label": "Konrad Barle"
+        },
+        {
+          "id": "person:janko-barle",
+          "type": "person",
+          "label": "Janko Barle"
+        }
+      ],
+      "retrieved_sources": [
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Kranjska_čebela",
+        "url:sl.wikipedia.org/wiki/Anton_Janša",
+        "url:sl.wikipedia.org/wiki/Svetovni_dan_čebel",
+        "url:sl.wikipedia.org/wiki/Anton_Žnideršič",
+        "url:commons.wikimedia.org/wiki/File:Apis_mellifera_carnica_worker_hive_entrance_3.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:sl.wikipedia.org/wiki/Panjska_končnica",
+        "url:en.wikipedia.org/wiki/Micka_Pavlič",
+        "url:commons.wikimedia.org/wiki/File:Lovčev_pogreb,_poslikana_panjska_končnica,_les,_1891.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/novice/belokranjske-pisanice-ziva-nesnovna-kulturna-dediscina",
+        "url:nesnovnadediscina.si",
+        "url:commons.wikimedia.org/wiki/File:Belokranjske_pisanke.JPG",
+        "url:commons.wikimedia.org/wiki/File:Gorenje-izzajčjegore.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": [
+          "konrad-barle",
+          "janko-barle"
+        ]
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "konrad-barle"
+        ],
+        "identityProbe": "Ivan–Konrad: brat NE (oče po registru); model vidi le trditve.",
+        "mustNotState": [
+          {
+            "re": "brat Konrada|(je|sta) brata",
+            "why": "bratstvo Ivana in Konrada ni dokazano v trditvah (Ivan je oče po registru)"
+          }
+        ]
+      },
+      "curatorial_judgment": "§9B: odnos brat/oče med Barleti je v registru (Ivan = oče), a NE v trditvah, ki jih model vidi. Model ne sme potrditi brata; poštena zavrnitev ali popravek (oče) sta sprejemljiva.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "dokaz je bil razrešljiv, a kustos je odklonil — morda preveč previden; človeška presoja"
+      ]
+    },
+    {
+      "id": 74,
+      "category": "H",
+      "question": "Ali je Peter Madronič iz mlina isti kot pričevalec poplav?",
+      "language": "sl",
+      "retrieved_records": [
+        "kolpa-extremi",
+        "madronicev-mlin",
+        "vaska-sola",
+        "peter-kambic",
+        "katarina-zupanic",
+        "muzejska-ucilnica",
+        "gribeljci-po-svetu-2019",
+        "mlini-na-kolpi",
+        "ljudje-ob-kolpi",
+        "tamburasi-danica"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:madronicev-mlin",
+          "type": "place",
+          "label": "Madroničev mlin"
+        },
+        {
+          "id": "person:peter-kambic",
+          "type": "person",
+          "label": "Peter Kambič"
+        }
+      ],
+      "retrieved_sources": [
+        "url:arso.gov.si/vode/poročila in publikacije/Porocilo_visoke_vode_in_poplave_sept2022a.pdf",
+        "url:ojs-gr.zrc-sazu.si/ujma/article/view/9384",
+        "url:radio-odeon.com/novice/julij-se-nikoli-tako-malo-vodnat",
+        "url:svet24.si/novice/slovenija/video-kampi-ob-kolpi-pod-vodo-voda-zaliva-mobilne-hiske-994742",
+        "url:vaskanal.com/poplave-v-beli-krajini",
+        "url:radio-odeon.com/novice/kolpa-mocno-narasla-tezave-tudi-v-prometu",
+        "url:e-utrip.si/kolpa-poplavila-priljubljeni-gostinski-objekt-voda-je-prihajala-z-neverjetno-hitrostjo-mi-pa-smo-skusali-resiti-kar-smo-lahko",
+        "url:radio-odeon.com/novice/kolpa-pod-pritiskom-podnebnih-sprememb-cas-za-usklajeno-ukrepanje",
+        "url:commons.wikimedia.org/wiki/File:Mlin,_Bela_krajina.jpg",
+        "url:radio-odeon.com/novice/madronicev-mlin-v-prelesju-ob-kolpi-v-beli-krajini",
+        "url:sl.wikipedia.org/wiki/Kolpa",
+        "url:commons.wikimedia.org/wiki/File:Slap_in_malenca_na_Kolpi_pri_Gribljah.jpg",
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Božično_drevo.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-peter-kambic",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "ime:Pirc Krasinski (Peter Kambič): Božič pri Belokranjcih, Dolenjske novice, 1. januar 1889",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Herbarij_-_Flysser_1696_-_PMS.jpg",
+        "url:slovenska-biografija.si/oseba/sbi915246",
+        "ime:Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        "url:commons.wikimedia.org/wiki/File:Slovenian_School_Museum_-_Ljubljana,_Slovenia_(7451262652).jpg",
+        "url:svet24.si/novice/kultura/v-soli-so-spravljene-mnoge-skrivnosti-odprtje-muzejske-ucilnice-na-ps-griblje-263268-1783688",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:radio-odeon.com/novice/mlini-v-beli-krajini",
+        "url:researchgate.net",
+        "url:kp-kolpa.si",
+        "url:commons.wikimedia.org/wiki/File:Mlin_Pobrežje.jpg",
+        "ime:Strokovna literatura o vodnih mlinih na Slovenskem (mlini na žimaln, mlinščina, letni krog)",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-nikolaj-dragos",
+        "url:commons.wikimedia.org/wiki/File:Dangubica.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "V zbirki obstajata dva različna zapisa o osebah z imenom Peter Madronič. Prvi je »stari Peter«, rojen leta 1901 v Dalnjih Njivah, ki je bil mlinar in odposlanec zbora v Kočevju leta 1943. Drugi je njegov pravnuk, ki je bil pričevalec poplav leta 2022 in 2025. Kuratorji jih še niso združili.",
+          "Dokumentirano je, da sta dve osebi z istim imenom, ki nista istovetni: »stari Peter« (rojen 1901) in njegov pravnuk (pričevalec poplav 2022/2025)."
+        ],
+        "kakoVemo": [
+          "To trditev podpira odprto kuratorsko vprašanje iz konteksta, ki jasno navaja: »Peter Madronič — DVE osebi z istim imenom: »stari Peter« (rojen 1901 v Dalnjih Njivah, mlinar, odposlanec zbora v Kočevju 1943; [[madronicev-mlin]] in pravnuk (pričevalec poplav 2022/2025; [[kolpa-extremi]]. Nobena ni entiteta; ju NIKOLI ne združuj.«"
+        ],
+        "opomba": "Kuratorji še niso razrešili, ali gre za eno ali dve osebi, vendar dokumenti jasno kažeta na dve različni osebi z istim imenom.",
+        "viri": [
+          {
+            "slug": "kolpa-extremi",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "madronicev-mlin",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "madronicev-mlin",
+        "kolpa-extremi"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "madronicev-mlin",
+          "kolpa-extremi"
+        ],
+        "identityProbe": "P0-E1 dva Petra Madroniča — ostane odprto.",
+        "mustNotState": [
+          {
+            "re": "(ista|isti|ena in ista|en in isti) oseba|same person|dieselbe Person|stessa persona|ista osoba",
+            "why": "istovetnost P0-E1 je kuratorsko odprta (ne sme biti potrjena niti zavrnjena)"
+          }
+        ]
+      },
+      "curatorial_judgment": "P0-E1: KURATORSKO ODPRTA vrzel — odgovor jo izreče, NE POTRDI niti NE ZAVRNE istovetnosti.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "identiteta: P0-E1 dva Petra Madroniča — ostane odprto. — človeška presoja besedila"
+      ]
+    },
+    {
+      "id": 75,
+      "category": "H",
+      "question": "Ali se je zaseda zgodila 7. septembra 1941?",
+      "language": "sl",
+      "retrieved_records": [
+        "zaseda-1941",
+        "praznik-ks-2024",
+        "snos-crnomelj-1944",
+        "letalisce-otok-1944",
+        "evakuacija-1945",
+        "nikolaj-dragos",
+        "audrey-totter",
+        "belokranjska-nosa",
+        "gribeljski-zbul",
+        "janko-barle",
+        "joze-dular",
+        "jurjevo-v-gribljah",
+        "kolpa-extremi",
+        "madronicev-mlin",
+        "zracni-most-krasinec",
+        "franc-brinc",
+        "kucar-podzemelj"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:zaseda-na-cesti-1941",
+          "type": "event",
+          "label": "Zaseda na cesti Črnomelj–Griblje"
+        },
+        {
+          "id": "time:1941-1945",
+          "type": "time",
+          "label": "druga svetovna vojna — okupacija in svobodna Bela krajina"
+        },
+        {
+          "id": "event:snos-zasedanje-1944",
+          "type": "event",
+          "label": "Zasedanje SNOS v Črnomlju"
+        }
+      ],
+      "retrieved_sources": [
+        "url:kamra.si/mm-elementi/spomenik-napadu-na-italijanske-mejne-policiste",
+        "url:kamra.si/digitalne-zbirke/spominska-obelezja-v-obcini-crnomelj",
+        "url:sl.wikipedia.org/wiki/Ljubljanska_pokrajina",
+        "url:radio-odeon.com/koledar-dogodkov/praznik-ks-griblje",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:commons.wikimedia.org/wiki/File:Belokranjska_narodna_noša_1942.jpg",
+        "url:sl.wikipedia.org/wiki/Slovenski_narodnoosvobodilni_svet",
+        "url:rtvslo.si/kultura/drugo/slovenski-narodnoosvobodilni-svet-80-let-pozneje-in-kako-je-bil-tedaj-videti-crnomelj/699117",
+        "url:delo.si",
+        "url:zgodovina.si",
+        "url:commons.wikimedia.org/wiki/File:Kulturni_dom_Črnomelj.jpg",
+        "url:sl.wikipedia.org/wiki/Josip_Vidmar",
+        "url:rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
+        "url:sl.wikipedia.org/wiki/Otok,_Metlika",
+        "url:odkrijtebelokrajino.com",
+        "url:radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki",
+        "url:commons.wikimedia.org/wiki/File:Zavezniško_letalo_na_letališču_Otok.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:commons.wikimedia.org/wiki/File:Pogled_na_Kolpo_in_Adlešiče_1920.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-nikolaj-dragos",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "ime:Nikolaj Dragoš: Mojih sto let (knjiga, napisana ob stotem rojstnem dnevu)",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "url:commons.wikimedia.org/wiki/File:AUDREYTotter.jpg",
+        "url:commons.wikimedia.org/wiki/File:Lady-in-the-Lake-trailer-mirror.jpg",
+        "url:rtvslo.si/zabava-in-slog/popkultura/retro/na-dnevih-narodnih-nos-v-kamniku-osrednja-gostja-bela-krajina/757370",
+        "url:commons.wikimedia.org/wiki/File:Stanko_Vurnik_-_Peča_1928.pdf",
+        "url:kamra.si/album-slovenije/belokranjska-narodna-nosa",
+        "url:svet24.si/novice/kultura/belokranjska-ljudska-nosa-v-likovni-podobi-oglejte-si-jo-236296-1788082",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:youtu.be/9N0Y_GAC1og",
+        "url:youtu.be/_4pM9KSBKBE",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:svet24.si",
+        "url:radio-odeon.com/novice/miklavzeva-in-zbulckova-trznica",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA",
+        "url:arso.gov.si/vode/poročila in publikacije/Porocilo_visoke_vode_in_poplave_sept2022a.pdf",
+        "url:ojs-gr.zrc-sazu.si/ujma/article/view/9384",
+        "url:radio-odeon.com/novice/julij-se-nikoli-tako-malo-vodnat",
+        "url:svet24.si/novice/slovenija/video-kampi-ob-kolpi-pod-vodo-voda-zaliva-mobilne-hiske-994742",
+        "url:vaskanal.com/poplave-v-beli-krajini",
+        "url:radio-odeon.com/novice/kolpa-mocno-narasla-tezave-tudi-v-prometu",
+        "url:e-utrip.si/kolpa-poplavila-priljubljeni-gostinski-objekt-voda-je-prihajala-z-neverjetno-hitrostjo-mi-pa-smo-skusali-resiti-kar-smo-lahko",
+        "url:radio-odeon.com/novice/kolpa-pod-pritiskom-podnebnih-sprememb-cas-za-usklajeno-ukrepanje",
+        "url:commons.wikimedia.org/wiki/File:Mlin,_Bela_krajina.jpg",
+        "url:radio-odeon.com/novice/madronicev-mlin-v-prelesju-ob-kolpi-v-beli-krajini",
+        "url:sl.wikipedia.org/wiki/Kolpa",
+        "url:commons.wikimedia.org/wiki/File:Slap_in_malenca_na_Kolpi_pri_Gribljah.jpg",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Zaseda na cesti Črnomelj–Griblje se je zgodila 6. septembra 1941, ko so belokranjski partizani iz zasede napadli patruljo italijanske mejne policije, ki je peljala strelivo za postojanko v Gribljah [[zaseda-1941]].",
+          "Dogodek je znan kot prva oborožena akcija belokranjskih partizanov na vaškem pragu [[zaseda-1941]]."
+        ],
+        "kakoVemo": [
+          "Podatek je dokumentiran v zapisu [[zaseda-1941]], ki temelji na spominskem kamnu Jakoba Savinška iz leta 1960 in digitalni zbirki Knjižnice Črnomelj."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "zaseda-1941",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "zaseda-1941",
+            "sourceIndex": 1
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "zaseda-1941"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zaseda-1941"
+        ],
+        "mustNotState": [
+          {
+            "re": "7\\.? ?(septembra|sept|September)",
+            "why": "pravi datum je 6. september 1941"
+          }
+        ]
+      },
+      "curatorial_judgment": "NAPAČEN datum: 6. september 1941. Datumski varuh odstrani nedokazani 7. 9.; popravek ali zavrnitev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 76,
+      "category": "H",
+      "question": "Ali je zračni most rešil 3000 ljudi?",
+      "language": "sl",
+      "retrieved_records": [
+        "letalisce-otok-1944",
+        "evakuacija-1945",
+        "zracni-most-krasinec"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:zracni-most-krasinec-1945",
+          "type": "event",
+          "label": "Zračni most Krasinec"
+        }
+      ],
+      "retrieved_sources": [
+        "url:rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
+        "url:sl.wikipedia.org/wiki/Otok,_Metlika",
+        "url:odkrijtebelokrajino.com",
+        "url:radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki",
+        "url:commons.wikimedia.org/wiki/File:Zavezniško_letalo_na_letališču_Otok.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "V dveh nočih, 25. in 26. marca 1945, so zavezniške dakote in spitfiri s partizanskega letališča Krasinec prepeljale 2041 ljudi, med njimi ranjence, otroke in zavezniške letalce [[zracni-most-krasinec]].",
+          "Prejšnje operacije, kot je evakuacija z letališča Otok, so že prej prepeljale 1473 ranjencev v južno Italijo [[letalisce-otok-1944]]."
+        ],
+        "kakoVemo": [
+          "Podatek o 2041 evakuiranih je zabeležen v več virih, ki se nanašajo na zračni most Krasinec [[zracni-most-krasinec]]."
+        ],
+        "opomba": "Število 2041 se nanaša na zračni most Krasinec, število 3000 pa ni dokumentirano v zbirki.",
+        "viri": [
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "letalisce-otok-1944",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "zracni-most-krasinec",
+        "letalisce-otok-1944"
+      ],
+      "uncertainty": "približnost prisotna: ni dokumentiran",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ],
+        "mustNotState": [
+          {
+            "re": "3\\.?000|tri tisoč|3000",
+            "why": "dokumentirano število je 2041"
+          }
+        ]
+      },
+      "curatorial_judgment": "NAPAČNO število: 2041 ljudi. Odgovor popravi (2041) ali zavrne — 3000 ne sme pastati kot dejstvo.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 77,
+      "category": "H",
+      "question": "Was Audrey Totter born in Griblje?",
+      "language": "en",
+      "retrieved_records": [
+        "audrey-totter",
+        "zaselki-griblje",
+        "matija-totter",
+        "ciril-totter",
+        "ljudje-ob-kolpi",
+        "griblje-vas",
+        "griblje-v-stevilkah",
+        "etimologija-gribljati",
+        "gribeljci-po-svetu-2019",
+        "franc-brinc",
+        "praznik-ks-2024",
+        "obcina-griblje",
+        "dkz-griblje",
+        "niko-zupanic",
+        "anton-brodaric",
+        "evakuacija-1945",
+        "gribeljski-zbul",
+        "ilirska-carina-1809",
+        "jurjevo-v-gribljah",
+        "zracni-most-krasinec",
+        "mate-zupanic-svarski"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:audrey-totter",
+          "type": "person",
+          "label": "Audrey Totter"
+        },
+        {
+          "id": "place:griblje",
+          "type": "place",
+          "label": "Griblje"
+        },
+        {
+          "id": "event:gribeljci-po-svetu-2019",
+          "type": "event",
+          "label": "Gribeljci po svetu — vrnitev ob 130-letnici šole"
+        },
+        {
+          "id": "event:praznik-krajevne-skupnosti-2024",
+          "type": "event",
+          "label": "Praznik krajevne skupnosti Griblje"
+        },
+        {
+          "id": "event:ukinitev-obcine-griblje-1933",
+          "type": "event",
+          "label": "Ukinitev občine Griblje"
+        },
+        {
+          "id": "event:ustanovitev-dkz-griblje-1996",
+          "type": "event",
+          "label": "Ustanovitev Društva kmečkih žena Griblje"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "url:commons.wikimedia.org/wiki/File:AUDREYTotter.jpg",
+        "url:commons.wikimedia.org/wiki/File:Lady-in-the-Lake-trailer-mirror.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:commons.wikimedia.org/wiki/File:Ljubljana_Marathon,_Slovenia_(25904370335).jpg",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:wikidata.org/wiki/Q2531566",
+        "url:pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05C5003S.px",
+        "url:artsandculture.google.com/asset/_gEvY_zLVRQmkQ",
+        "url:commons.wikimedia.org/wiki/File:Special-Karte_des_Herzogthums_Krain_1843.jpg",
+        "url:commons.wikimedia.org/wiki/File:ISS067-E-80408_-_View_of_Earth.jpg",
+        "ime:Bibliografija: Jože Šimec, »Izvor imena vasi Griblje«, Dolenjski list, 11. 1. 2001, str. 17",
+        "url:commons.wikimedia.org/wiki/File:Oranje_z_volovsko_vprego.jpg",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:radio-odeon.com/koledar-dogodkov/praznik-ks-griblje",
+        "url:commons.wikimedia.org/wiki/File:Belokranjska_narodna_noša_1942.jpg",
+        "url:sl.wikipedia.org/wiki/Občina_Črnomelj",
+        "url:commons.wikimedia.org/wiki/File:Občine_dravske_banovine_v_letih_1933_-_1937.pdf",
+        "url:radio-odeon.com/novice/pozdrav-pomladi-v-gribljah",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:etno-muzej.si",
+        "url:slovenska-biografija.si",
+        "url:kamra.si",
+        "url:commons.wikimedia.org/wiki/File:Ivan_Vavpotič_-_Niko_Županič.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo",
+        "ime:Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        "url:radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic",
+        "url:radio-odeon.com/novice/v-gribljah-pripravili-sprejem-za-antona-brodarica",
+        "url:radio-odeon.com/novice/anton-brodaric-na-cajanki-v-kovacnici-srece",
+        "url:commons.wikimedia.org/wiki/File:Mera_Peak_Photowalk_08.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:youtu.be/9N0Y_GAC1og",
+        "url:youtu.be/_4pM9KSBKBE",
+        "url:svet24.si",
+        "url:radio-odeon.com/novice/miklavzeva-in-zbulckova-trznica",
+        "url:sl.wikipedia.org/wiki/Ilirske_province",
+        "ime:Pivec Stele, J. (1930) — študiji o gospodarstvu Ilirskih provinc",
+        "ime:Gašperič, P., Orožen Adamič, M., Šumrada, J. (2012): Zemljevid Ilirskih provinc iz leta 1812, ZRC SAZU",
+        "url:commons.wikimedia.org/wiki/File:Illyrian_Provinces_(1812).svg",
+        "url:commons.wikimedia.org/wiki/File:Zeleni_Jurij_1908.jpg",
+        "url:youtu.be/yr8QsY7jRDA",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-mate-zupanic-svarski-1",
+        "url:commons.wikimedia.org/wiki/File:Salonika_Front_WW1.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "The museum collection documents that Audrey Totter was a film noir star from Gornje Griblje, with her family roots tracing back to the village [[audrey-totter]]. Specifically, it is recorded that at the end of the nineteenth century three Jandreč (Totter) brothers left Gornje Griblje for Joliet, Illinois, and that the daughter of the branch that stayed within the Slovene community became the Hollywood actress Audrey Totter [[audrey-totter]]."
+        ],
+        "kakoVemo": [],
+        "opomba": "The museum documents Audrey Totter's family connection to Gornje Griblje and her Hollywood fame, but does not explicitly state her place of birth.",
+        "viri": [
+          {
+            "slug": "audrey-totter",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "audrey-totter",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "audrey-totter",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "audrey-totter",
+            "sourceIndex": 3
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "audrey-totter"
+      ],
+      "uncertainty": "približnost prisotna: um ",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "audrey-totter"
+        ],
+        "mustNotState": [
+          {
+            "re": "was born in Griblje|born in the village",
+            "why": "rojstni kraj ni Griblje (družina iz Gornjih Gribelj, Joliet)"
+          }
+        ]
+      },
+      "curatorial_judgment": "NAPAČNO: veja Tottrovih se je iz Gornjih Gribelj izselila v Joliet (Illinois); njen rostni kraj ni Griblje. Popravek (family origin) ali zavrnitev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 78,
+      "category": "H",
+      "question": "Ali je Konrad Barle poučeval v Ljubljani?",
+      "language": "sl",
+      "retrieved_records": [
+        "janko-barle",
+        "konrad-barle",
+        "kucar-podzemelj",
+        "kranjska-sivka",
+        "panjska-koncnica",
+        "griblje-vas",
+        "niko-zupanic",
+        "matija-totter",
+        "pisanice",
+        "kresovanje",
+        "ljudje-ob-kolpi",
+        "joze-dular",
+        "mate-zupanic-svarski"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:konrad-barle",
+          "type": "person",
+          "label": "Konrad Barle"
+        },
+        {
+          "id": "event:ustanovitev-sem-1921",
+          "type": "event",
+          "label": "Ustanovitev Etnografskega inštituta v Ljubljani"
+        },
+        {
+          "id": "person:ivan-barle",
+          "type": "person",
+          "label": "Ivan Barle"
+        },
+        {
+          "id": "person:janko-barle",
+          "type": "person",
+          "label": "Janko Barle"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Kranjska_čebela",
+        "url:sl.wikipedia.org/wiki/Anton_Janša",
+        "url:sl.wikipedia.org/wiki/Svetovni_dan_čebel",
+        "url:sl.wikipedia.org/wiki/Anton_Žnideršič",
+        "url:commons.wikimedia.org/wiki/File:Apis_mellifera_carnica_worker_hive_entrance_3.jpg",
+        "url:sl.wikipedia.org/wiki/Panjska_končnica",
+        "url:en.wikipedia.org/wiki/Micka_Pavlič",
+        "url:commons.wikimedia.org/wiki/File:Lovčev_pogreb,_poslikana_panjska_končnica,_les,_1891.jpg",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:etno-muzej.si",
+        "url:slovenska-biografija.si",
+        "url:kamra.si",
+        "url:commons.wikimedia.org/wiki/File:Ivan_Vavpotič_-_Niko_Županič.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo",
+        "ime:Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        "url:radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/novice/belokranjske-pisanice-ziva-nesnovna-kulturna-dediscina",
+        "url:nesnovnadediscina.si",
+        "url:commons.wikimedia.org/wiki/File:Belokranjske_pisanke.JPG",
+        "url:commons.wikimedia.org/wiki/File:Gorenje-izzajčjegore.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-mate-zupanic-svarski-1",
+        "url:commons.wikimedia.org/wiki/File:Salonika_Front_WW1.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Konrad Barle je poučeval petintrideset let in razširil šolo na osem razredov v Metliki, ne v Ljubljani. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Trditev temelji na zapisu o Konradu Barletu, ki navaja njegovo delovno mesto v Metliki. [[konrad-barle]]"
+        ],
+        "opomba": "V kontekstu ni nobenega podatka, ki bi podpiral poučevanje Konrada Barleta v Ljubljani.",
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "konrad-barle"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "konrad-barle"
+        ],
+        "mustNotState": [
+          {
+            "re": "poučeval (je )?(v )?Ljubljani|v Ljubljani poučeval",
+            "why": "Konrad je poučeval v Metliki (in na Robu), ne v Ljubljani"
+          }
+        ]
+      },
+      "curatorial_judgment": "NAPAČNO: v Ljubljani je obiskoval učiteljišče (1891–1895), poučeval pa na Robu in v Metliki (1899–1934).",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 79,
+      "category": "H",
+      "question": "Stimmt es, dass die Luftbrücke 3000 Menschen rettete?",
+      "language": "de",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ],
+        "mustNotState": [
+          {
+            "re": "3\\.?000|3000",
+            "why": "dokumentirano število je 2041"
+          }
+        ]
+      },
+      "curatorial_judgment": "DE napačna predpostavka: 2041 ljudi (48 ur). Popravek ali zavrnitev — 3000 ne sme pastati.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)",
+        "RETRIEVAL-COVERAGE: pričakovanih zapisov (zracni-most-krasinec) retrival ni razrešil — poštena zavrnitev, a koristen odgovor manjka"
+      ]
+    },
+    {
+      "id": 80,
+      "category": "H",
+      "question": "Ali so Griblje dobile železnico leta 1903?",
+      "language": "sl",
+      "retrieved_records": [
+        "griblje-vas",
+        "griblje-v-stevilkah",
+        "zaselki-griblje",
+        "etimologija-gribljati",
+        "gribeljci-po-svetu-2019",
+        "franc-brinc",
+        "praznik-ks-2024",
+        "obcina-griblje",
+        "dkz-griblje",
+        "razglednica-1903",
+        "kucar-podzemelj",
+        "gribeljski-zbul",
+        "krizevo-pastirski-dan",
+        "mate-zupanic-svarski",
+        "matice-podzemelj",
+        "joze-dular",
+        "niko-zupanic",
+        "spanska-gripa-1918"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:griblje",
+          "type": "place",
+          "label": "Griblje"
+        },
+        {
+          "id": "event:gribeljci-po-svetu-2019",
+          "type": "event",
+          "label": "Gribeljci po svetu — vrnitev ob 130-letnici šole"
+        },
+        {
+          "id": "event:praznik-krajevne-skupnosti-2024",
+          "type": "event",
+          "label": "Praznik krajevne skupnosti Griblje"
+        },
+        {
+          "id": "event:ukinitev-obcine-griblje-1933",
+          "type": "event",
+          "label": "Ukinitev občine Griblje"
+        },
+        {
+          "id": "event:ustanovitev-dkz-griblje-1996",
+          "type": "event",
+          "label": "Ustanovitev Društva kmečkih žena Griblje"
+        },
+        {
+          "id": "event:ustanovitev-obcine-griblje-1854",
+          "type": "event",
+          "label": "Ustanovitev občine Griblje"
+        }
+      ],
+      "retrieved_sources": [
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:wikidata.org/wiki/Q2531566",
+        "url:pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05C5003S.px",
+        "url:artsandculture.google.com/asset/_gEvY_zLVRQmkQ",
+        "url:commons.wikimedia.org/wiki/File:Special-Karte_des_Herzogthums_Krain_1843.jpg",
+        "url:commons.wikimedia.org/wiki/File:ISS067-E-80408_-_View_of_Earth.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-audrey-mary-totter",
+        "ime:Bibliografija: Jože Šimec, »Izvor imena vasi Griblje«, Dolenjski list, 11. 1. 2001, str. 17",
+        "url:commons.wikimedia.org/wiki/File:Oranje_z_volovsko_vprego.jpg",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:radio-odeon.com/koledar-dogodkov/praznik-ks-griblje",
+        "url:commons.wikimedia.org/wiki/File:Belokranjska_narodna_noša_1942.jpg",
+        "url:sl.wikipedia.org/wiki/Občina_Črnomelj",
+        "url:commons.wikimedia.org/wiki/File:Občine_dravske_banovine_v_letih_1933_-_1937.pdf",
+        "url:radio-odeon.com/novice/pozdrav-pomladi-v-gribljah",
+        "url:search.worldcat.org/title/gribeljski-zbul/oclc/821110335",
+        "url:radio-odeon.com/novice/stara-metlika-230",
+        "url:commons.wikimedia.org/wiki/File:Postcard_of_Metlika_(2).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:dups.si/files/2021/12/zbornik_DUPS_2021_dediscina.pdf",
+        "url:youtu.be/9N0Y_GAC1og",
+        "url:youtu.be/_4pM9KSBKBE",
+        "url:svet24.si",
+        "url:radio-odeon.com/novice/miklavzeva-in-zbulckova-trznica",
+        "url:radio-odeon.com/novice/v-gribljah-ohranjajo-tradicijo",
+        "url:youtu.be/yr8QsY7jRDA",
+        "url:commons.wikimedia.org/wiki/File:Sheep_flock_in_grasland_in_Eğribel_02.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-mate-zupanic-svarski-1",
+        "url:commons.wikimedia.org/wiki/File:Salonika_Front_WW1.jpg",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/01733",
+        "url:sl.wikipedia.org/wiki/Tevtonski_viteški_red",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/01723",
+        "url:commons.wikimedia.org/wiki/File:Krstna_knjiga_župnije_Mošnje_1610-1730.jpg",
+        "url:matricula-online.eu",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:etno-muzej.si",
+        "url:slovenska-biografija.si",
+        "url:kamra.si",
+        "url:commons.wikimedia.org/wiki/File:Ivan_Vavpotič_-_Niko_Županič.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo",
+        "ime:Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        "url:radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894",
+        "url:sl.wikipedia.org/wiki/Španska_gripa",
+        "url:en.wikipedia.org/wiki/Spanish_flu"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Leta 1903 železnica Gribljam še ni bila zgrajena. V razglednici iz leta 1903, poslani iz Metlike gribeljski učiteljici, se omenja gradnja železnice, ki Gribljam obide za šest kilometrov in je trajala pol stoletja. [[razglednica-1903]]"
+        ],
+        "kakoVemo": [
+          "Podatke nosi razglednica iz leta 1903, ki je edini znani predmet iz tistega obdobja, naslovljen na Griblje. [[razglednica-1903]]"
+        ],
+        "opomba": "Vprašanje je odvisno od približnega časa in razlage dogodka — gradnja železnice je bila proces, ki je trajal pol stoletja in je Gribljam obšel.",
+        "viri": [
+          {
+            "slug": "razglednica-1903",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "razglednica-1903",
+            "sourceIndex": 1
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "razglednica-1903"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "razglednica-1903"
+        ],
+        "mustNotState": [
+          {
+            "re": "(so )?dobile železnic|železniška (proga|postaja) (v|skozi) Griblj",
+            "why": "železnica je Gribljam obšla — vlak ni pripeljal v vasi"
+          }
+        ]
+      },
+      "curatorial_judgment": "NAPAČNO: vlak je Gribljam OBŠEL (razglednica 1903 priča o vlaku, ki vasi ni pripeljal). Popravek po MVG-088.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 81,
+      "category": "I",
+      "question": "Koliko ljudi je prepeljal zračni most?",
+      "language": "sl",
+      "retrieved_records": [
+        "letalisce-otok-1944",
+        "evakuacija-1945",
+        "zracni-most-krasinec"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:zracni-most-krasinec-1945",
+          "type": "event",
+          "label": "Zračni most Krasinec"
+        }
+      ],
+      "retrieved_sources": [
+        "url:rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
+        "url:sl.wikipedia.org/wiki/Otok,_Metlika",
+        "url:odkrijtebelokrajino.com",
+        "url:radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki",
+        "url:commons.wikimedia.org/wiki/File:Zavezniško_letalo_na_letališču_Otok.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Zavezniške dakote in spitfiri so s partizanskega letališča Krasinec prepeljale 2041 ljudi, med njimi ranjence, otroke in zavezniške letalce. [[zracni-most-krasinec]]",
+          "Med evakuiranci je bila tudi pisateljica Alma Karlin. [[zracni-most-krasinec]]"
+        ],
+        "kakoVemo": [],
+        "opomba": "Podatek o 2041 evakuirancih je naveden za določen časovni interval (25.–26. marec 1945), kar je povezano z odprtim kuratorskim vprašanjem o točni povezavi med zapisom o zračnem mostu Krasinec in drugimi zapisi o evakuacijah konec marca 1945.",
+        "viri": [
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "zracni-most-krasinec"
+      ],
+      "uncertainty": "približnost prisotna: konec marca",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ]
+      },
+      "curatorial_judgment": "2041 ljudi v 48 urah — SL; negotovost dneva (konec marca) ohranjena.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 82,
+      "category": "I",
+      "question": "How many people did the airlift carry?",
+      "language": "en",
+      "retrieved_records": [
+        "gribeljci-po-svetu-2019",
+        "letalisce-otok-1944",
+        "evakuacija-1945",
+        "zracni-most-krasinec",
+        "ljudje-ob-kolpi"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:gribeljci-po-svetu-2019",
+          "type": "event",
+          "label": "Gribeljci po svetu — vrnitev ob 130-letnici šole"
+        },
+        {
+          "id": "event:zracni-most-krasinec-1945",
+          "type": "event",
+          "label": "Zračni most Krasinec"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:rtvslo.si/slovenija/v-otoku-pri-metliki-slovesnost-v-spomin-medvojnega-resevanja-zavezniskih-letalcev/641511",
+        "url:sl.wikipedia.org/wiki/Otok,_Metlika",
+        "url:odkrijtebelokrajino.com",
+        "url:radio-odeon.com/novice/vojaki-po-poti-vranovega-leta-od-ozbolta-do-otoka-pri-metliki",
+        "url:commons.wikimedia.org/wiki/File:Zavezniško_letalo_na_letališču_Otok.jpg",
+        "url:commons.wikimedia.org/wiki/File:Ranjeni_partizani_opazujejo_pristajanje_zavezniških_letal,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:commons.wikimedia.org/wiki/File:Pogovor_angleškega_pilota_s_partizani,_Griblje_pri_Črnomlju,_marec_1945.jpg",
+        "url:rtvslo.si/80-let-od-konca-2-svetovne-vojne/odmevi-preteklosti/nenavadna-zgodba-evakuiranih-iz-bele-krajine-pred-koncem-vojne-z-zavezniskimi-letali-v-dalmacijo/743207",
+        "url:sl.wikipedia.org/wiki/Alma_Karlin",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "The Krasinec airlift carried 2,041 people. This evacuation took place over two nights, from 25–26 March 1945, using Allied Dakotas and Spitfires [[zracni-most-krasinec]]. The evacuees included wounded Partisans, children, and Allied airmen [[zracni-most-krasinec]].",
+          "Another evacuation of wounded Partisans from Bela krajina to Bari by Allied aircraft occurred at the end of March 1945 [[evakuacija-1945]]. While this operation is documented, the total number of people evacuated in this specific instance is not provided in the evidence.",
+          "Earlier, from 1944 to 1945, the Otok partisan airfield was used to fly 1,473 wounded Allied personnel to southern Italy [[letalisce-otok-1944]]."
+        ],
+        "kakoVemo": [
+          "The figure of 2,041 people carried by the Krasinec airlift comes from the record [[zracni-most-krasinec]]. The claim that 1,473 wounded were flown from the Otok airfield is documented in [[letalisce-otok-1944]]. The information about the March 1945 evacuation of wounded Partisans from Bela krajina is found in [[evakuacija-1945]]."
+        ],
+        "opomba": "The exact number of people evacuated in the operation at the end of March 1945 from Griblje is not documented in the evidence, only that it involved wounded Partisans. Additionally, it is an open curatorial question whether the evacuation from Griblje and the Krasinec airlift are the same event.",
+        "viri": [
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "zracni-most-krasinec",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "letalisce-otok-1944",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "letalisce-otok-1944",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "letalisce-otok-1944",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "letalisce-otok-1944",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "letalisce-otok-1944",
+            "sourceIndex": 4
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "zracni-most-krasinec",
+        "evakuacija-1945",
+        "letalisce-otok-1944"
+      ],
+      "uncertainty": "približnost prisotna: end of March, not documented",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ],
+        "keepApprox": {
+          "re": "late March|48|25",
+          "why": "late March 1945"
+        }
+      },
+      "curatorial_judgment": "2041 people in 48 hours — EN; late March stays approximate.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 83,
+      "category": "I",
+      "question": "Wie viele Menschen hat die Luftbrücke befördert?",
+      "language": "de",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ]
+      },
+      "curatorial_judgment": "TRDI TEST večjezičnosti: DE sestavljenka »Luftbrücke« se NE razreši na SL entiteto »zračni most« — poštena zavrnitev (brez izmišljanja), a koristen odgovor manjka. Dokumentiraj kot retrieval-coverage ugotovitev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)",
+        "RETRIEVAL-COVERAGE: pričakovanih zapisov (zracni-most-krasinec) retrival ni razrešil — poštena zavrnitev, a koristen odgovor manjka"
+      ]
+    },
+    {
+      "id": 84,
+      "category": "I",
+      "question": "Quante persone ha trasportato il ponte aereo?",
+      "language": "it",
+      "retrieved_records": [],
+      "retrieved_entities": [],
+      "retrieved_sources": [],
+      "model_calls": 0,
+      "answer": {
+        "answerable": false,
+        "reason": "insufficient_evidence",
+        "kajVemo": [],
+        "kakoVemo": [],
+        "opomba": null,
+        "viri": [],
+        "suggestions": []
+      },
+      "citations": [],
+      "uncertainty": null,
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "zracni-most-krasinec"
+        ]
+      },
+      "curatorial_judgment": "TRDI TEST večjezičnosti: IT »ponte aereo« se NE razreši na SL entiteto — poštena zavrnitev, a koristen odgovor manjka. Dokumentiraj kot retrieval-coverage ugotovitev.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "guard: kontekst brez dokaza — 0 klicev modela (deterministična zavrnitev)",
+        "RETRIEVAL-COVERAGE: pričakovanih zapisov (zracni-most-krasinec) retrival ni razrešil — poštena zavrnitev, a koristen odgovor manjka"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 2,
+    "totalModelCalls": 2,
+    "byLanguage": {
+      "sl": 2
+    },
+    "counts": {
+      "PASS": 2,
+      "REVIEW": 0,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 1,
+      "category": "A",
+      "question": "Kaj je vaška šola in čemu je služila?",
+      "language": "sl",
+      "retrieved_records": [
+        "vaska-sola",
+        "peter-kambic",
+        "franc-brinc",
+        "muzejska-ucilnica",
+        "gribeljci-po-svetu-2019",
+        "griblje-vas",
+        "ribnik",
+        "spanska-gripa-1918"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:vaska-sola",
+          "type": "place",
+          "label": "Vaška šola Griblje"
+        },
+        {
+          "id": "event:gribeljci-po-svetu-2019",
+          "type": "event",
+          "label": "Gribeljci po svetu — vrnitev ob 130-letnici šole"
+        },
+        {
+          "id": "place:vaski-ribnik",
+          "type": "place",
+          "label": "Vaški ribnik"
+        }
+      ],
+      "retrieved_sources": [
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Božično_drevo.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-peter-kambic",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "ime:Pirc Krasinski (Peter Kambič): Božič pri Belokranjcih, Dolenjske novice, 1. januar 1889",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:commons.wikimedia.org/wiki/File:Slovenian_School_Museum_-_Ljubljana,_Slovenia_(7451262652).jpg",
+        "url:svet24.si/novice/kultura/v-soli-so-spravljene-mnoge-skrivnosti-odprtje-muzejske-ucilnice-na-ps-griblje-263268-1783688",
+        "url:commons.wikimedia.org/wiki/File:Kongres_narodnih_noš_v_Ljubljani,_skupina_Bela_krajina.jpg",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:commons.wikimedia.org/wiki/File:Pond_at_Griblje_(44612474114).jpg",
+        "url:sl.wikipedia.org/wiki/Bela_krajina",
+        "url:kp-kolpa.si",
+        "url:data.matricula-online.eu/en/slovenia/ljubljana/podzemelj/04894",
+        "url:sl.wikipedia.org/wiki/Španska_gripa",
+        "url:en.wikipedia.org/wiki/Spanish_flu"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Vaška šola je bila ustanovljena leta 1889 v Gribljah in je delovala neprekinjeno od leta 1869 do danes. [[vaska-sola]]",
+          "Namen šole je bil, da vsaki vasi podari branje in računanje, kot je določil Cesarjev šolski zakon iz leta 1869. [[vaska-sola]]",
+          "V Beli krajini je šola delovala celo pod okupacijo, vendar ni jasno, ali je šlo za isto institucijo ali za partizansko gimnazijo v Črnomlju. [[vaska-sola]]"
+        ],
+        "kakoVemo": [
+          "Te informacije so dokumentirane v več virih, med njimi v prispevku na Wikipediji (nemški članek o Reichsvolksschulgesetzu), objavi na RTV Slovenija in na spletni strani OŠ Loka Črnomelj - Podružnica Griblje. [[vaska-sola]]"
+        ],
+        "opomba": "Časovni okvir delovanja šole je podan kot '1869 → danes', kar kaže na kontinuiteto, ki sega vsaj do leta 1869, ko je bil uveljavljen Cesarjev šolski zakon.",
+        "viri": [
+          {
+            "slug": "vaska-sola",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "vaska-sola",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "vaska-sola",
+            "sourceIndex": 2
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "vaska-sola"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "vaska-sola"
+        ]
+      },
+      "curatorial_judgment": "Zapis MVG-026: vaška šola 1889, pot iz tablic v svet; razumljiv odgovor s citatom.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 2,
+      "category": "A",
+      "question": "Čemu je služil Madroničev mlin?",
+      "language": "sl",
+      "retrieved_records": [
+        "kolpa-extremi",
+        "madronicev-mlin",
+        "mlini-na-kolpi"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "place:madronicev-mlin",
+          "type": "place",
+          "label": "Madroničev mlin"
+        }
+      ],
+      "retrieved_sources": [
+        "url:arso.gov.si/vode/poročila in publikacije/Porocilo_visoke_vode_in_poplave_sept2022a.pdf",
+        "url:ojs-gr.zrc-sazu.si/ujma/article/view/9384",
+        "url:radio-odeon.com/novice/julij-se-nikoli-tako-malo-vodnat",
+        "url:svet24.si/novice/slovenija/video-kampi-ob-kolpi-pod-vodo-voda-zaliva-mobilne-hiske-994742",
+        "url:vaskanal.com/poplave-v-beli-krajini",
+        "url:radio-odeon.com/novice/kolpa-mocno-narasla-tezave-tudi-v-prometu",
+        "url:e-utrip.si/kolpa-poplavila-priljubljeni-gostinski-objekt-voda-je-prihajala-z-neverjetno-hitrostjo-mi-pa-smo-skusali-resiti-kar-smo-lahko",
+        "url:radio-odeon.com/novice/kolpa-pod-pritiskom-podnebnih-sprememb-cas-za-usklajeno-ukrepanje",
+        "url:commons.wikimedia.org/wiki/File:Mlin,_Bela_krajina.jpg",
+        "url:radio-odeon.com/novice/madronicev-mlin-v-prelesju-ob-kolpi-v-beli-krajini",
+        "url:sl.wikipedia.org/wiki/Kolpa",
+        "url:commons.wikimedia.org/wiki/File:Slap_in_malenca_na_Kolpi_pri_Gribljah.jpg",
+        "url:radio-odeon.com/novice/mlini-v-beli-krajini",
+        "url:researchgate.net",
+        "url:kp-kolpa.si",
+        "url:commons.wikimedia.org/wiki/File:Mlin_Pobrežje.jpg",
+        "ime:Strokovna literatura o vodnih mlinih na Slovenskem (mlini na žimaln, mlinščina, letni krog)"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Madroničev mlin je bil vodni mlin in žaga, ki sta stala ob Kolpi. Leta 1937 ga je kupila tesarska družina Madronič in ga preuredila. Danes mlin ne melje več, njegova dediščina pa se ohraja v maketah, arhivu in pripravljani knjigi.",
+          "Mlini ob Kolpi, vključno z Madroničevim, so stoletja služili za mletje žita bližnjih vasi in so bili pomemben del mlinarskega vsakdana v regiji.",
+          "Na Kolpi je bilo zabeleženih več ekstremnih dogodkov, kot so poplave in suše, ki so lahko vplivale na delovanje mlinov in življenje ob reki."
+        ],
+        "kakoVemo": [
+          "Podatke o tem, da je bil Madroničev mlin vodni mlin in žaga, ki ga je leta 1937 kupila družina Madronič, ponujajo zapisi [[madronicev-mlin]].",
+          "Informacijo o funkciji mlinov ob Kolpi, da so mleli žito bližnjih vasi, navaja zapis [[mlini-na-kolpi]].",
+          "Zapis [[kolpa-extremi]] opisuje ekstreme vodnega toka na Kolpi, ki so lahko vplivali na delovanje mlinov."
+        ],
+        "opomba": "Odprto vprašanje ostaja natančna lega Madroničevega mlina, saj koordinat ni v zapisu.",
+        "viri": [
+          {
+            "slug": "madronicev-mlin",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "madronicev-mlin",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "mlini-na-kolpi",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "kolpa-extremi",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "madronicev-mlin",
+        "mlini-na-kolpi",
+        "kolpa-extremi"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "madronicev-mlin"
+        ]
+      },
+      "curatorial_judgment": "MVG-045: mlin in žaga ob Kolpi — mletje žita, žaganje; viri zapisa.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    }
+  ]
+}

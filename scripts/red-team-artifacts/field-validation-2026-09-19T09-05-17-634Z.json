@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "sl": 1
+    },
+    "counts": {
+      "PASS": 1,
+      "REVIEW": 0,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 45,
+      "category": "E",
+      "question": "Kdaj se je začel izseljenski val v Ameriko?",
+      "language": "sl",
+      "retrieved_records": [
+        "izseljenstvo",
+        "matija-totter"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "event:izseljenski-val-1880-1914",
+          "type": "event",
+          "label": "Val izseljenstva v Združene države"
+        }
+      ],
+      "retrieved_sources": [
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Izseljenski val v Ameriko se je začel leta 1880 in je trajal vse do danes. [[izseljenstvo]]"
+        ],
+        "kakoVemo": [
+          "To trditev podpira dokaz [[izseljenstvo]], ki navaja, da so vali odhoda v Ameriko v 20. stoletju raznesli Griblje po svetu. [[izseljenstvo]]"
+        ],
+        "opomba": "V zbirki je dokumentiran odprt kuratorski problem izseljenske geografije, ki še ni razrešen.",
+        "viri": [
+          {
+            "slug": "izseljenstvo",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "izseljenstvo",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "izseljenstvo",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "izseljenstvo",
+            "sourceIndex": 3
+          },
+          {
+            "slug": "izseljenstvo",
+            "sourceIndex": 4
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "izseljenstvo"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "izseljenstvo"
+        ],
+        "keepApprox": {
+          "re": "1880|1914",
+          "why": "interval 1880–1914, ne ena letnica"
+        }
+      },
+      "curatorial_judgment": "INTERVAL 1880 → 1914 (MVG-011) — interval ne sme biti stisnjen v eno letnino.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    }
+  ]
+}
