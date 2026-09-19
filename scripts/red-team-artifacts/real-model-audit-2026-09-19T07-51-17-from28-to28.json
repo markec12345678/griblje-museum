@@ -1,0 +1,105 @@
+{
+  "task": "TASK 42 §15 — real-model audit (audit artefakt, NI muzejska vsebina)",
+  "generatedAt": "2026-09-19T07:51:17.522Z",
+  "gitHead": "f05991a",
+  "providerChain": "OpenRouter → HuggingFace → z-ai SDK (pravi klic)",
+  "summary": {
+    "cases": 1,
+    "of": 44,
+    "from": 28,
+    "to": 28,
+    "modelCalls": 1,
+    "PASS": 0,
+    "WARN": 1,
+    "FAIL": 0,
+    "REFUSED": 0,
+    "ERROR": 0
+  },
+  "results": [
+    {
+      "id": 28,
+      "group": "out-of-corpus",
+      "lang": "sl",
+      "question": "Kdaj je bila v Gribljah zgrajena železniška postaja?",
+      "modelCalls": 1,
+      "durationMs": 5471,
+      "answerable": true,
+      "reason": null,
+      "answer": {
+        "kajVemo": [
+          "V Gribljah nikoli ni bila zgrajena železniška postaja. Edini znani predmet, naslovljen na Griblje iz prvih let dvajsetega stoletja, je razglednica iz leta 1903, v kateri se omenja, da se je železnica gradila pol stoletja in da je Gribljam obšla za šest kilometrov.",
+          "Železniška proga, ki je speljana skozi Belo krajino, je Griblje obšla, zato v vasi ni bila postaja."
+        ],
+        "kakoVemo": [
+          "Informacijo o tem, da železnica ni bila zgrajena v Gribljah, navaja razglednica iz leta 1903, ki je edini znani predmet iz zgodnjih dvajsetega stoletja, ki omenja Griblje in železnico."
+        ],
+        "opomba": "Viri omenjajo, da se je železnica gradila pol stoletja in da je Gribljam obšla za šest kilometrov, vendar natančen datum pričetka gradnje proge, ki je Griblje obšla, ni naveden."
+      },
+      "viri": [
+        {
+          "slug": "razglednica-1903",
+          "museumNo": "MVG-088",
+          "titleSi": "Razglednica iz leta 1903 — vlak, ki je Gribljam obšel",
+          "titleEn": "A postcard from 1903 — the train that bypassed Griblje",
+          "sourceIndex": 0,
+          "sourceKey": "url:radio-odeon.com/novice/stara-metlika-230",
+          "sourceNameSi": "Radio Odeon — Stara Metlika (229): razglednica 22. 4. 1903 iz Metlike v Griblje (17. 3. 2023)",
+          "sourceNameEn": "Radio Odeon — Old Metlika (229): a postcard of 22 April 1903 from Metlika to Griblje (17 Mar 2023)",
+          "sourceUrl": "https://www.radio-odeon.com/novice/stara-metlika-230/"
+        },
+        {
+          "slug": "razglednica-1903",
+          "museumNo": "MVG-088",
+          "titleSi": "Razglednica iz leta 1903 — vlak, ki je Gribljam obšel",
+          "titleEn": "A postcard from 1903 — the train that bypassed Griblje",
+          "sourceIndex": 1,
+          "sourceKey": "url:commons.wikimedia.org/wiki/File:Postcard_of_Metlika_(2).jpg",
+          "sourceNameSi": "Wikimedia Commons: razglednica Metlike (zbirka SEM)",
+          "sourceNameEn": "Wikimedia Commons: a postcard of Metlika (SEM collection)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postcard_of_Metlika_(2).jpg"
+        }
+      ],
+      "promptChars": 40500,
+      "approxTimes": false,
+      "hardChecks": [
+        {
+          "name": "viri ⊆ kontekst (sourceKey iz registra)",
+          "pass": true,
+          "detail": "razglednica-1903,razglednica-1903"
+        },
+        {
+          "name": "navedki [[slug]] veljavni",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "celi datumi dokazani v kontekstu",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "približne letnice ohranijo približevanje",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "brez internih kod/IDjev",
+          "pass": true
+        },
+        {
+          "name": "URL-ji so viri konteksta",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "odgovor citira (veriga trditev→zapis→vir)",
+          "pass": true
+        }
+      ],
+      "warnings": [
+        "vsaj en odstavek kajVemo brez [[slug]] navedka"
+      ],
+      "verdict": "WARN"
+    }
+  ]
+}

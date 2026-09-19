@@ -54,7 +54,7 @@ MUZEJSKI KONTEKST SPODAJ je CELOTNO tvoje znanje za to vprašanje — ZAPRTA DOK
 
 1. Napišeš lahko SAMO: (A) kar je neposredno dokazano v kontekstu; (B) kar je legitimna sinteza več PODANIH dokazov; (C) da podatka ni — »Tega v trenutni muzejski zbirki nimamo dovolj dokumentiranega.«
 2. NE uporabljaj lastnega predznanja, Wikipedije, spleta ali spomina za ZGODOVINSKA DEJSTVA — niti za »pomoč« pri datumih, imenih ali krajih.
-3. NEGOTOVOST OHRANJAJ DOBESEDNO: »konec marca 1945« NI 25. marca 1945; »1880–1914« NI 1900; »unresolved« ostane unresolved; približne in intervalne čase izpisuj točno tako, kot so zapisani v kontekstu.
+3. NEGOTOVOST OHRANJAJ DOBESEDNO: »konec marca 1945« NI 25. marca 1945; »1880–1914« NI 1900; »okoli 1900« / »~1408« / »c. 1928« NI natančna letnica 1900/1408/1928 — približne letnice izpisuj s približevanjem (okoli, okrog, ~); »unresolved« ostane unresolved; približne in intervalne čase izpisuj točno tako, kot so zapisani v kontekstu.
 4. OSEBE IN DOGODKE NIKOLI NE ZDRUŽUJ: enak priimek ni ista oseba (Konrad, Ivan in Janko Barle so TRIJE vnosi); dva zapisa o istem dogodku (npr. MVG-014 in MVG-056) sta DVA zapisa — če je njihova istovetnost odprto kuratorsko vprašanje, to TAKO tudi poveš, nikoli pa ne trdiš, da je »zagotovo isti dogodek«. Oseb in dogodkov, ki jih ni v kontekstu, ne dodajaš.
 5. VSAKO dejansko trditev v »kajVemo« podpri z navedkom [[slug]] — SAMO s slug-i, ki obstajajo v kontekstu (polje »slug« dokazov); navedek je IZKLJUČNO oblike [[slug]], muzejske številke (MVG-###) namesto navedka NE štejejo. V »viri« naštejemo SAMO kombinacije {slug, sourceIndex}, ki obstajajo v kontekstu (polji »slug« in »sourceIndex« dokazov).
 8. »odprtaVprasanja« konteksta so MUZEJSKI PODATKI: če vprašanje naslavlja njihovo osebo ali dogodek, dokumentirane kontekste predstavi PO ZAPISIH (z navedki) in izrecno povej, da identiteta ali istovetnost še ni razrešena. To je pošten DOKUMENTIRAN odgovor, ne zavrnitev. Na kuratorsko odprto vprašanje NE IZBEREŠ odgovora — poveš le, da v zbirki še ni kuratorsko razrešeno, in pokažeš, kaj je dokumentirano.
@@ -73,7 +73,7 @@ THE MUSEUM CONTEXT BELOW is your ENTIRE knowledge for this question — a CLOSED
 
 1. You may write ONLY: (A) what is directly evidenced in the context; (B) a legitimate synthesis of the GIVEN evidence; (C) that the data is missing — "The current museum collection does not document this sufficiently."
 2. Do NOT use your own pretrained knowledge, Wikipedia, the web, or memory for HISTORICAL FACTS — not even to "help" with dates, names, or places.
-3. PRESERVE UNCERTAINTY VERBATIM: "konec marca 1945" (late March 1945) is NOT 25 March 1945; "1880–1914" is NOT 1900; "unresolved" stays unresolved; approximate and interval times are quoted exactly as written in the context.
+3. PRESERVE UNCERTAINTY VERBATIM: "konec marca 1945" (late March 1945) is NOT 25 March 1945; "1880–1914" is NOT 1900; "okoli 1900" / "~1408" / "c. 1928" / "around 2004" is NOT the exact year 1900/1408/1928/2004 — approximate years keep their qualifier (around, circa, ~); "unresolved" stays unresolved; approximate and interval times are quoted exactly as written in the context.
 4. NEVER MERGE PERSONS OR EVENTS: a shared surname is not one person (Konrad, Ivan and Janko Barle are THREE entries); two records of possibly the same event (e.g. MVG-014 and MVG-056) are TWO records — if their identity is an open curatorial question, SAY SO; never claim it is "certainly the same event". Never add persons or events that are not in the context.
 5. Support EVERY factual claim in "kajVemo" with a [[slug]] citation — ONLY slugs that exist in the context (the "slug" field of the evidence); the citation is EXCLUSIVELY of the form [[slug]] — museum numbers (MVG-###) do not count as citations. In "viri", list ONLY {slug, sourceIndex} combinations that exist in the context (the "slug" and "sourceIndex" fields of the evidence).
 8. The "openQuestions" of the context ARE museum data: if the question addresses their person or event, present the documented contexts BY RECORD (with citations) and state explicitly that the identity is not yet resolved. That is an honest DOCUMENTED answer, not a refusal. You NEVER pick an answer to an open curatorial question — you only say it is not yet curatorially resolved in the collection and show what IS documented.
@@ -286,8 +286,8 @@ const MAX_VIRI = 8;
  *
  * Ekstraktor je namerno ozek: prepozná standardne oblike (SL/EN/DE/IT/HR
  * + številsko + ISO) in raje ZAMOLČI kot pa sproži lažni pozitiv
- * (npr. »12 majhnih« ni 12. maj). Letnice same po sebi se NE preverjajo
- * (letna raven negotovosti je semantična meja — dokumentirana).
+ * (npr. »12 majhnih« ni 12. maj). Letnice pokriva LOČEN letni varuh
+ * spodaj (TASK 42.1 §1: približno leto ne sme postati natančno).
  */
 
 export type DateTriple = { d: number; m: number; y: number };
@@ -385,6 +385,155 @@ function attestedDateTriplesOf(context: AIContext): Set<string> {
 function unattestedFullDate(text: string, attested: ReadonlySet<string>): DateTriple | null {
   for (const d of extractFullDates(text)) {
     if (!attested.has(`${d.d}.${d.m}.${d.y}`)) return d;
+  }
+  return null;
+}
+
+/* --- LETNI VARUH (TASK 42.1 §1: približno leto NE sme postati natančno) ---
+ *
+ * Muzej zapisuje približne letnice kot »okoli 1900«, »okrog leta 1310«,
+ * »~1408«, »≈ 2011«, »c. 1928«, »around 2004« … Gola letnica v odgovoru
+ * (kajVemo, kakoVemo, opomba) je dovoljena SAMO, če jo kontekst dokazuje
+ * kot natančno; letnica, ki jo kontekst nosi SAMO s približevanjem, mora
+ * približevanje OHRANITI (tudi v prevodu — označevalci vseh 5 jezikov).
+ * Letnica, ki je nikjer v kontekstu, je izmišljena → odstavek odpade.
+ *
+ * Označevalci približevanja so NAMERNO ozki: »konec marca 1945« NE
+ * približuje LETA 1945 (le dneva) — leto ostaja natančno; enako
+ * »late March 1945« / »Ende März 1945«. Natančna izpoved povsod v
+ * kontekstu premaga približno (kjer koli je leto dokazano natančno,
+ * sme model uporabiti golo letnico).
+ */
+
+export type YearAttestation = {
+  /** letnice, ki jih kontekst dokazuje kot natančne (tudi iz celih datumov) */
+  exact: Set<number>;
+  /** letnice, ki jih kontekst nosi SAMO s približevanjem (»okoli 1900«) */
+  approxOnly: Set<number>;
+};
+
+/** Besede približevanja pred letnico (SL/EN/DE/IT/HR; brez diakritike). */
+const APPROX_YEAR_WORDS = new Set([
+  "okoli", "okrog", "okvirno", "priblizno",
+  "ca", "c", "approx", "approximate", "approximately",
+  "around", "circa", "um", "gegen", "intorno", "verso",
+  "oko", "towards", "toward", "estimated", "geschatzt",
+  "etwa", "ungefahr", "rund", "incirca",
+]);
+
+/** Veznice med označevalcem in letnico (okoli LETA 1900, intorno AL 1310,
+ *  around THE YEAR 1900, um DAS JAHR 1900, oko GODINE 1900 …). */
+const YEAR_FILLERS = new Set([
+  "leta", "let", "letu", "leto", "v", "u", "za", "pri", "dne", "na",
+  "im", "jahr", "jahre", "das", "dem", "der", "die", "zu", "an",
+  "anno", "del", "della", "al", "all", "il", "lo", "la", "le", "gli", "di", "a",
+  "the", "year", "of", "in", "godine", "godiste",
+]);
+
+/** Vse letnice v besedilu (1200–2100), ki niso del daljših števil. */
+const YEAR_RE = /(?<!\d)(1[2-9]\d{2}|20[0-9]{2}|2100)(?!\d)/g;
+
+export function extractYears(rawText: string): number[] {
+  const text = normalizeForDates(rawText);
+  const out: number[] = [];
+  const seen = new Set<number>();
+  for (const m of text.matchAll(YEAR_RE)) {
+    const y = Number(m[1]);
+    if (!seen.has(y)) {
+      seen.add(y);
+      out.push(y);
+    }
+  }
+  return out;
+}
+
+/** Ali je letnica na tem mestu približna? ~ ali ≈ pred njo, ali beseda
+ *  približevanja v sprehodu nazaj (veznice se preskočijo, največ 4 besede,
+ *  prva NE-veznica odloči — »okoli cerkve leta 1900« je točno leto). */
+function yearApproxQualifiedAt(normalizedText: string, yearStart: number): boolean {
+  // nebesedni približevanji muzeja: ~1408, ≈ 2011
+  if (/[~≈]\s*$/.test(normalizedText.slice(Math.max(0, yearStart - 4), yearStart))) {
+    return true;
+  }
+  const tokens = normalizedText
+    .slice(0, yearStart)
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean);
+  let steps = 0;
+  for (let i = tokens.length - 1; i >= 0 && steps < 4; i--, steps++) {
+    const t = tokens[i]!;
+    if (YEAR_FILLERS.has(t)) continue;
+    return APPROX_YEAR_WORDS.has(t);
+  }
+  return false;
+}
+
+/** Letnice, ki jih kontekst (in samo kontekst!) dejansko dokazuje —
+ *  natančne in približne. Kuratorska izpoved (trditve, obdobja, časi,
+ *  odprta vprašanja) je AVTORITATIVNA: gola letnica v IMENU vira
+ *  (napovedna kartica, npr. »… prvi turški vpad 1408«) ne more
+ *  preklicati kuratorske približnosti (»~1408«); ime vira sme model
+ *  odmevati, natančnost pa določa zapis. */
+export function attestedYearsOf(context: AIContext): YearAttestation {
+  const texts: string[] = [];
+  const sourceNames: string[] = [];
+  for (const e of context.entities) {
+    texts.push(e.label);
+    for (const ev of e.evidence) {
+      texts.push(ev.claim, ev.period ?? "", ev.exhibitTitle);
+      if (ev.sourceName) sourceNames.push(ev.sourceName);
+    }
+  }
+  for (const t of context.times) texts.push(t.label);
+  for (const ex of context.exhibits) {
+    texts.push(ex.claim, ex.period ?? "", ex.exhibitTitle);
+    if (ex.sourceName) sourceNames.push(ex.sourceName);
+  }
+  for (const q of context.openQuestions) texts.push(q.text);
+  if (context.collection) texts.push(...context.collection.featuredTitles);
+  const exact = new Set<number>();
+  const approx = new Set<number>();
+  for (const raw of texts) {
+    const text = normalizeForDates(raw);
+    for (const m of text.matchAll(YEAR_RE)) {
+      const y = Number(m[1]);
+      if (yearApproxQualifiedAt(text, m.index ?? 0)) approx.add(y);
+      else exact.add(y);
+    }
+  }
+  // imena virov: približevanje v imenu (»okoli leta 1990«) šteje kot
+  // približno; gola letnica v imenu šteje kot omemba SAMO, če je
+  // kuratorsko niso izrečene — in NIKOLI ne prekliče kuratorske
+  // približnosti.
+  for (const raw of sourceNames) {
+    const text = normalizeForDates(raw);
+    for (const m of text.matchAll(YEAR_RE)) {
+      const y = Number(m[1]);
+      if (exact.has(y) || approx.has(y)) continue;
+      if (yearApproxQualifiedAt(text, m.index ?? 0)) approx.add(y);
+      else exact.add(y);
+    }
+  }
+  for (const y of exact) approx.delete(y);
+  return { exact, approxOnly: approx };
+}
+
+/** Prva problematična letnica v besedilu odgovora: izmišljena (nikjer v
+ *  kontekstu) ali PREDSTAVLJENA KOT NATANČNA, čeprav jo kontekst nosi
+ *  le približno (»okoli 1900« → »leta 1900«). Null = vse v redu. */
+function precisifiedOrUnattestedYear(
+  rawText: string,
+  attested: YearAttestation,
+): number | null {
+  const text = normalizeForDates(rawText);
+  for (const m of text.matchAll(YEAR_RE)) {
+    const y = Number(m[1]);
+    if (attested.exact.has(y)) continue;
+    if (attested.approxOnly.has(y)) {
+      if (!yearApproxQualifiedAt(text, m.index ?? 0)) return y;
+      continue;
+    }
+    return y;
   }
   return null;
 }
@@ -525,9 +674,10 @@ export function verifyAnswer(raw: string, context: AIContext): AIAnswer | null {
 
   const provided = context.provided;
   const attestedDates = attestedDateTriplesOf(context);
+  const attestedYears = attestedYearsOf(context);
   const attestedUrls = attestedUrlsOf(context);
 
-  // --- kajVemo: navedki + datumski varuh + čiščenje ----------------------
+  // --- kajVemo: navedki + datumski/letni varuh + čiščenje ----------------------
   const kajRaw = Array.isArray(json.kajVemo) ? json.kajVemo : [];
   const kajVemo: string[] = [];
   const cited = new Set<string>();
@@ -537,6 +687,8 @@ export function verifyAnswer(raw: string, context: AIContext): AIAnswer | null {
     if (!proc) continue;
     // Datumski varuh: cel datum, ki ga kontekst ne dokazuje, umakne odstavek.
     if (unattestedFullDate(proc.text, attestedDates)) continue;
+    // Letni varuh: približna letnica ne sme postati natančna (TASK 42.1 §1).
+    if (precisifiedOrUnattestedYear(proc.text, attestedYears) !== null) continue;
     const clean = scrubInternalReferences(proc.text, context, attestedUrls);
     if (!clean) continue;
     kajVemo.push(clean);
@@ -552,6 +704,7 @@ export function verifyAnswer(raw: string, context: AIContext): AIAnswer | null {
     const proc = processParagraph(p, provided);
     if (!proc) continue;
     if (unattestedFullDate(proc.text, attestedDates)) continue;
+    if (precisifiedOrUnattestedYear(proc.text, attestedYears) !== null) continue;
     const clean = scrubInternalReferences(proc.text, context, attestedUrls);
     if (!clean) continue;
     kakoVemo.push(clean);
@@ -592,7 +745,11 @@ export function verifyAnswer(raw: string, context: AIContext): AIAnswer | null {
   let opomba: string | null = null;
   if (typeof opombaRaw === "string" && opombaRaw.trim()) {
     const proc = processParagraph(opombaRaw, provided);
-    if (proc && !unattestedFullDate(proc.text, attestedDates)) {
+    if (
+      proc &&
+      !unattestedFullDate(proc.text, attestedDates) &&
+      precisifiedOrUnattestedYear(proc.text, attestedYears) === null
+    ) {
       const clean = scrubInternalReferences(proc.text, context, attestedUrls);
       if (clean) {
         opomba = clean;

@@ -30,11 +30,18 @@ import {
   detectQuestionLang,
   yearsIn,
 } from "../src/lib/curator-retrieval";
-import { verifyAnswer, museumAIProvider, systemPrompt } from "../src/lib/curator-provider";
+import {
+  verifyAnswer,
+  museumAIProvider,
+  systemPrompt,
+  attestedYearsOf,
+  extractYears,
+} from "../src/lib/curator-provider";
 import { askCurator, curatorRateLimited } from "../src/lib/curator";
 import type {
   AIAnswer,
   AIContext,
+  AIProvidedExhibit,
   MuseumAIProvider,
 } from "../src/lib/curator-types";
 import { seedExhibits } from "../src/lib/museum-content";
@@ -797,6 +804,376 @@ async function t11() {
   );
 }
 await t11();
+
+// ===========================================================================
+section("T12 — LETNI VARUH (približno leto NE sme postati natančno)");
+// ===========================================================================
+
+/** Sintetični kontekst z eno trditvijo (deterministične preverbe letnika). */
+function yearTestContext(
+  claim: string,
+  opts: { layer?: "sl" | "en"; period?: string; sourceName?: string } = {},
+): AIContext {
+  const layer = opts.layer ?? "sl";
+  const sourceName = opts.sourceName ?? "Testni vir";
+  const provided = new Map<string, AIProvidedExhibit>([
+    [
+      "testni-zapis",
+      {
+        title: "Testni zapis",
+        museumNo: null,
+        claim,
+        evidenceStatus: "DOCUMENTED",
+        period: opts.period,
+        sources: [
+          {
+            sourceKey: "vir-test",
+            sourceName,
+            sourceUrl: null,
+            sourceType: "document",
+            license: "javno dostopno",
+          },
+        ],
+      },
+    ],
+  ]);
+  return {
+    lang: layer === "sl" ? "sl" : "en",
+    layer,
+    queryType: "object",
+    question: "test",
+    entities: [],
+    times: [],
+    exhibits: [
+      {
+        exhibitSlug: "testni-zapis",
+        exhibitTitle: "Testni zapis",
+        claim,
+        evidenceStatus: "DOCUMENTED",
+        period: opts.period,
+        sourceKey: "vir-test",
+        sourceIndex: 0,
+        sourceName,
+        sourceType: "document",
+        license: "javno dostopno",
+      },
+    ],
+    openQuestions: [],
+    provided,
+  };
+}
+
+/** Odgovor modelu z eno trditvijo (+ opomba po želji). */
+function yearAnswer(paragraphs: string[], opomba: string | null = null): string {
+  return JSON.stringify({
+    answerable: true,
+    reason: null,
+    kajVemo: paragraphs,
+    kakoVemo: ["Trditev nosi zapis [[testni-zapis]]."],
+    viri: [{ slug: "testni-zapis" }],
+    opomba,
+  });
+}
+
+{
+  // --- naročilove prepovedane pretvorbe (TASK 42.1 §1) -------------------
+  const forbidden: Array<[string, string, string]> = [
+    ["okoli 1900", "Predmet je nastal leta 1900 [[testni-zapis]].", "okoli 1900 → 1900"],
+    ["približno 1900", "Predmet je nastal leta 1900 [[testni-zapis]].", "približno 1900 → 1900"],
+    ["ca. 1900", "Predmet je nastal leta 1900 [[testni-zapis]].", "ca. 1900 → 1900"],
+    ["c. 1900", "Predmet je nastal leta 1900 [[testni-zapis]].", "c. 1900 → 1900"],
+    ["approx. 1900", "Predmet je nastal leta 1900 [[testni-zapis]].", "approx. 1900 → 1900"],
+    ["okoli leta 1900", "Predmet je nastal leta 1900 [[testni-zapis]].", "okoli leta 1900 → 1900"],
+    ["around 1900", "The item was made in 1900 [[testni-zapis]].", "around 1900 → in 1900 (EN)"],
+  ];
+  let fi = 0;
+  for (const [evidence, answer, name] of forbidden) {
+    fi++;
+    const layer = answer.startsWith("The") ? "en" : "sl";
+    const ctx = yearTestContext(evidence, { layer });
+    const v = verifyAnswer(yearAnswer([answer]), ctx);
+    check(
+      v !== null && v.answerable === false && v.kajVemo.length === 0,
+      `T12.${fi} prepovedana pretvorba: ${name} → odstavek ODPADE`,
+    );
+  }
+
+  // --- približnost OHRANJENA (dovoljene oblike) ---------------------------
+  const preserved: Array<[string, string, string]> = [
+    ["okoli 1900", "Predmet je nastal okoli 1900 [[testni-zapis]].", "okoli 1900"],
+    ["okoli leta 1900", "Predmet je nastal okoli leta 1900 [[testni-zapis]].", "okoli leta 1900"],
+    ["okoli leta 1900", "Predmet je nastal okrog leta 1900 [[testni-zapis]].", "okrog leta 1900 (enakovredno)"],
+    ["okoli 1900", "Predmet je nastal ~1900 [[testni-zapis]].", "~1900"],
+    ["≈ 2011", "Predmet je nastal ≈ 2011 [[testni-zapis]].", "≈ 2011"],
+    ["okoli 1900", "The item was made around 1900 [[testni-zapis]].", "around 1900 (EN prevod)"],
+    ["um 1310", "Das Objekt entstand um 1310 [[testni-zapis]].", "um 1310 (DE)"],
+    ["intorno al 1310", "L'oggetto risale intorno al 1310 [[testni-zapis]].", "intorno al 1310 (IT)"],
+    ["oko 1310", "Predmet je nastao oko 1310 [[testni-zapis]].", "oko 1310 (HR)"],
+  ];
+  let pi = 0;
+  for (const [evidence, answer, name] of preserved) {
+    pi++;
+    const layer = /The |Das |L'og/.test(answer) ? "en" : "sl";
+    const ctx = yearTestContext(evidence, { layer });
+    const v = verifyAnswer(yearAnswer([answer]), ctx);
+    check(
+      v !== null && v.answerable === true && v.kajVemo.length === 1,
+      `T12.${forbidden.length + pi} približnost OHRANJENA: ${name} → odstavek ostane`,
+    );
+  }
+
+  // --- prevod ne sme izgubiti približnosti (SL dokaz, EN odgovor) --------
+  const trans = yearTestContext("okoli 1900", { layer: "en" });
+  check(
+    verifyAnswer(yearAnswer(["The item was made in 1900 [[testni-zapis]]."]), trans)?.answerable === false,
+    `T12.${forbidden.length + preserved.length + 1} prevod: SL »okoli 1900« → EN »in 1900« ODPADE`,
+  );
+  check(
+    verifyAnswer(yearAnswer(["The item was made around 1900 [[testni-zapis]]."]), trans)?.answerable === true,
+    `T12.${forbidden.length + preserved.length + 2} prevod: SL »okoli 1900« → EN »around 1900« ostane`,
+  );
+
+  // --- legitimne NATANČNE letnice ostanejo dovoljene ----------------------
+  const legit1 = yearTestContext("Šola je bila ustanovljena leta 1900.");
+  check(
+    verifyAnswer(yearAnswer(["Šola je bila ustanovljena leta 1900 [[testni-zapis]]."]), legit1)?.answerable === true,
+    `T12.19 legitimno natančno leto 1900 ostane dovoljeno`,
+  );
+  const legit2 = yearTestContext("Zaseda se je zgodila 6. septembra 1941.");
+  check(
+    verifyAnswer(yearAnswer(["Zaseda se je zgodila 6. septembra 1941 [[testni-zapis]]."]), legit2)?.answerable === true,
+    `T12.20 natančen cel datum (6. september 1941) ostane dovoljen`,
+  );
+  check(
+    verifyAnswer(yearAnswer(["Zaseda leta 1941 [[testni-zapis]]."]), legit2)?.answerable === true,
+    `T12.21 golo leto 1941 iz dokazanega celega datuma je dovoljeno`,
+  );
+  const legit3 = yearTestContext("Izseljevanje je trajalo med 1880 in 1914.", { period: "1880–1914" });
+  check(
+    verifyAnswer(yearAnswer(["Val je trajal med 1880 in 1914 [[testni-zapis]]."]), legit3)?.answerable === true,
+    `T12.22 interval 1880–1914 ostane interval (obe letnici dovoljeni)`,
+  );
+  check(
+    verifyAnswer(yearAnswer(["Val je trajal okoli 1900 [[testni-zapis]]."]), legit3)?.answerable === false,
+    `T12.23 intervala NI dovoljeno pretvoriti v sredinsko približevanje (1880–1914 ≠ okoli 1900)`,
+  );
+  const legit4 = yearTestContext("Konec marca 1945 je pripeljal zračni most.");
+  check(
+    verifyAnswer(yearAnswer(["Zračni most je bil leta 1945 [[testni-zapis]]."]), legit4)?.answerable === true,
+    `T12.24 »konec marca 1945« približuje DAN, ne leto — golo 1945 ostane dovoljeno`,
+  );
+  const fake = yearTestContext("Prva omemba je iz leta 1468.");
+  check(
+    verifyAnswer(yearAnswer(["Prva omemba je iz leta 1337 [[testni-zapis]]."]), fake)?.answerable === false,
+    `T12.25 izmišljena letnica 1337 (nikjer v kontekstu) → odstavek odpade`,
+  );
+
+  // --- kakoVemo in opomba: enako pravilo ----------------------------------
+  const kw = yearTestContext("okoli 1900");
+  const kwRaw = JSON.stringify({
+    answerable: true,
+    reason: null,
+    kajVemo: ["Predmet [[testni-zapis]]."],
+    kakoVemo: ["Nastal je leta 1900 [[testni-zapis]]."],
+    viri: [{ slug: "testni-zapis" }],
+    opomba: null,
+  });
+  const kwv = verifyAnswer(kwRaw, kw);
+  check(
+    kwv !== null && kwv.answerable === true && kwv.kakoVemo.length === 0,
+    `T12.26 kakoVemo: golo 1900 odpade (kajVemo ostane)`,
+  );
+  const op1 = verifyAnswer(yearAnswer(["Predmet [[testni-zapis]]."], "Letnica je natančna: 1900."), kw);
+  check(op1?.opomba === null, `T12.27 opomba: golo 1900 odpade`);
+  const op2 = verifyAnswer(yearAnswer(["Predmet [[testni-zapis]]."], "Letnica ni natančna — okoli 1900."), kw);
+  check(
+    op2 !== null && op2.opomba !== null && /okoli 1900/.test(op2.opomba),
+    `T12.28 opomba: okoli 1900 ostane`,
+  );
+
+  // --- ime vira: odmev dovoljen, natančnosti ne določa --------------------
+  const sn = yearTestContext("Mlin ob Kolpi.", { sourceName: "Madroničev mlin okoli leta 1990 (arhiv)" });
+  check(
+    verifyAnswer(yearAnswer(["Mlin je iz leta 1990 [[testni-zapis]]."]), sn)?.answerable === false,
+    `T12.29 vir »okoli leta 1990« → golo 1990 odpade`,
+  );
+  check(
+    verifyAnswer(yearAnswer(["Mlin je iz obdobja okoli leta 1990 [[testni-zapis]]."]), sn)?.answerable === true,
+    `T12.30 vir »okoli leta 1990« → okoli leta 1990 ostane`,
+  );
+  const snCancel = yearTestContext("Cerkvišče, star zapis.", {
+    period: "~1408 → danes",
+    sourceName: "Griblje (krajevna skupnost, prvi turški vpad 1408)",
+  });
+  check(
+    verifyAnswer(yearAnswer(["Zapis je iz leta 1408 [[testni-zapis]]."]), snCancel)?.answerable === false,
+    `T12.31 kuratorska približnost (~1408) PREMAGA golo letnico v imenu vira`,
+  );
+  check(
+    verifyAnswer(yearAnswer(["Zapis je star okoli 1408 [[testni-zapis]]."]), snCancel)?.answerable === true,
+    `T12.32 ~1408 → okoli 1408 ostane (kljub goli letnici v imenu vira)`,
+  );
+
+  // --- ekstraktor letnic: osnovne oblike ----------------------------------
+  check(
+    JSON.stringify(extractYears("okoli leta 1900")) === "[1900]" &&
+      JSON.stringify(extractYears("~1408 → danes")) === "[1408]" &&
+      JSON.stringify(extractYears("≈ 2011 → danes")) === "[2011]" &&
+      JSON.stringify(extractYears("born c. 1928")) === "[1928]",
+    `T12.33 extractYears: okoli/~1408/≈/c. oblike`,
+  );
+  check(
+    extractYears("1.009 m³/s").length === 0 && extractYears("45.57246").length === 0,
+    `T12.34 extractYears: decimalna števila/koordinate NISO letnice`,
+  );
+
+  // --- REALNI muzejski podatki (~1408, ~2004, ~1928) ----------------------
+  const cerkvisce = buildContext("sl", "Kaj je Cerkvišče?");
+  const cy = attestedYearsOf(cerkvisce.context);
+  check(
+    cy.approxOnly.has(1408) && !cy.exact.has(1408),
+    `T12.35 Cerkvišče (realno): 1408 je približna letnica (~1408)`,
+  );
+  check(
+    verifyAnswer(
+      yearAnswer(["Cerkvišče je zapis iz leta 1408 [[cerkvisce]]."]).replace(/\[\[testni-zapis\]\]/g, "[[cerkvisce]]").replace(/"testni-zapis"/g, '"cerkvisce"'),
+      cerkvisce.context,
+    )?.answerable === false,
+    `T12.36 Cerkvišče (realno): golo 1408 v odgovoru ODPADE`,
+  );
+  check(
+    verifyAnswer(
+      yearAnswer(["Cerkvišče je zapis, nastal okoli leta 1408 [[cerkvisce]]."]).replace(/\[\[testni-zapis\]\]/g, "[[cerkvisce]]").replace(/"testni-zapis"/g, '"cerkvisce"'),
+      cerkvisce.context,
+    )?.answerable === true,
+    `T12.37 Cerkvišče (realno): okoli leta 1408 ostane`,
+  );
+  const pasuljada = buildContext("sl", "Kdaj se je začela zgodovina pasuljade?");
+  const py = attestedYearsOf(pasuljada.context);
+  check(py.approxOnly.has(2004), `T12.38 Pasuljada (realno): ~2004 je približna letnica`);
+  const kralj = buildContext("en", "Who was Tone Kralj?");
+  const ky = attestedYearsOf(kralj.context);
+  check(
+    ky.approxOnly.has(1928),
+    `T12.39 Tone Kralj (realno, EN plast): »born c. 1928« je približna letnica`,
+  );
+}
+
+// ===========================================================================
+section("T13 — LEKSIČNI ŠUM RETRIEVALA (očitni lažni zadetki → zavrnitev)");
+// ===========================================================================
+
+async function t13() {
+  // --- očitni lažni zadetki: 0 klicev modela, poštena zavrnitev ---------
+  const noise: Array<[string, string]> = [
+    ["sl", "Kaj je hitrost svetlobe?"],
+    ["sl", "Koliko je hitrost svetlobe v vakuumu?"],
+    ["sl", "Kdo je bil papež leta 1500?"],
+    ["sl", "Kaj je Higgsov bozon?"],
+    ["sl", "Kaj je hitrost zvoka?"],
+  ];
+  let ni = 0;
+  for (const [lang, q] of noise) {
+    ni++;
+    const guard = fakeProvider();
+    const r = await askCurator(lang as "sl", q, guard);
+    check(
+      guard.calls.length === 0 && r.answerable === false && r.reason === "insufficient_evidence",
+      `T13.${ni} šum »${q}« → 0 klicev modela + zavrnitev`,
+      `klicev: ${guard.calls.length}`,
+    );
+    check(
+      r.suggestions.length === 0,
+      `T13.${ni}b zavrnitev brez navideznih predlogov (nearest čist)`,
+    );
+  }
+
+  // --- zadetki po letnici BREZ besedilnega sidra -------------------------
+  const { context: papezCtx } = buildContext("sl", "Kdo je bil papež leta 1500?");
+  check(
+    papezCtx.exhibits.length === 0 && papezCtx.entities.length === 0,
+    `T13.6 letnica 1500 brez besedilnega sidra ne prinese zapisov (kučar/zemljevidi prej da)`,
+  );
+
+  // --- legitimni primeri NE SMEJO odpasti (naročilo §2) ------------------
+  const legit: Array<[string, string, (c: AIContext) => boolean, string]> = [
+    [
+      "sl",
+      "Kaj se je dogajalo ob Kolpi?",
+      (c) => c.entities.some((e) => /Kolp/i.test(e.label)),
+      "Kolpa (sklanjatev Kolpi)",
+    ],
+    [
+      "sl",
+      "Kaj pripoveduje zapis o zvonu leta 2008?",
+      (c) => [...c.provided.keys()].includes("zvon-2008"),
+      "zvon + letnica 2008",
+    ],
+    [
+      "sl",
+      "Kaj se je zgodilo v Gribljah marca 1945?",
+      (c) => c.exhibits.length > 0 || c.entities.length > 0,
+      "Gribljah (sklanjatev) + marec 1945",
+    ],
+    [
+      "sl",
+      "Kaj se je zgodilo leta 1942?",
+      (c) => c.exhibits.length > 0,
+      "letnica sama (occupationska obdobja)",
+    ],
+    [
+      "sl",
+      "Kaj se je zgodilo z MVG-014?",
+      (c) => [...c.provided.keys()].includes("evakuacija-1945"),
+      "MVG-014 razrešitev",
+    ],
+    [
+      "sl",
+      "Povej o Barletih",
+      (c) => c.entities.filter((e) => /Barle/.test(e.label)).length === 3,
+      "Barletih (množinska sklanjatev) → TRIJE Barle",
+    ],
+    [
+      "sl",
+      "Kaj je Cerkvišče?",
+      (c) => [...c.provided.keys()].includes("cerkvisce"),
+      "zapis s približno letnico dosegljiv",
+    ],
+  ];
+  let li = 0;
+  for (const [lang, q, test, name] of legit) {
+    li++;
+    const { context } = buildContext(lang as "sl", q);
+    check(
+      contextHasEvidence(context) && test(context),
+      `T13.${6 + li} legitimni zadetek ostaja: ${name}`,
+    );
+  }
+
+  // --- predponska luža: svetlobe ≠ svet (korenski vzrok) ------------------
+  const vaska = seedExhibits.find((e) => e.slug === "vaska-sola");
+  const vaskaTokens = new Set(
+    (vaska?.titleSi ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().split(/[^\p{L}\p{N}]+/u),
+  );
+  check(
+    vaskaTokens.has("svet"),
+    `T13.14 korenski vzrok potrjen: naslov vaška šola vsebuje žeton »svet«`,
+  );
+  const light = buildContext("sl", "Kaj je hitrost svetlobe?");
+  check(
+    light.context.exhibits.length === 0 && light.trace.nearest.length === 0,
+    `T13.15 »svetlobe« NE zadene »svet« (predpona 4 znakov brez končnice)`,
+  );
+
+  // --- REFUSAL sporočilo je pošteno muzejsko ------------------------------
+  const guard2 = fakeProvider();
+  const rr = await askCurator("sl", "Kaj je hitrost svetlobe?", guard2);
+  check(
+    rr.kajVemo.length === 0 && rr.viri.length === 0 && !rr.answerable,
+    `T13.16 zavrnitev šuma: prazno kajVemo, brez virov (»ni dovolj dokumentiranih podatkov«)`,
+  );
+}
+await t13();
 
 // ===========================================================================
 console.log("");

@@ -35,7 +35,12 @@
 import { execSync } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { askCurator } from "../src/lib/curator";
-import { museumAIProvider, systemPrompt, extractFullDates } from "../src/lib/curator-provider";
+import {
+  museumAIProvider,
+  systemPrompt,
+  extractFullDates,
+  attestedYearsOf,
+} from "../src/lib/curator-provider";
 import { buildContext, contextHasEvidence } from "../src/lib/curator-retrieval";
 import type {
   AIContext,
@@ -63,7 +68,7 @@ if (!process.argv.includes("--real")) {
 
 type Case = {
   id: number;
-  group: "normal" | "uncertain" | "entity" | "injection" | "out-of-corpus" | "multilingual";
+  group: "normal" | "uncertain" | "entity" | "injection" | "out-of-corpus" | "multilingual" | "approx-year" | "retrieval-noise";
   lang: CuratorLang;
   question: string;
   /** kaj deterministicno pričakujemo */
@@ -112,6 +117,17 @@ const CASES: Case[] = [
   { id: 33, group: "multilingual", lang: "it", question: "Cosa è successo alla fine di marzo 1945?" },
   { id: 34, group: "multilingual", lang: "hr", question: "Što se dogodilo krajem ožujka 1945?" },
   { id: 35, group: "multilingual", lang: "en", question: "What does the collection tell about Griblje?" },
+  // --- 6 približnih letnic (TASK 42.1 §6: SL/EN/DE/IT/HR + realni vir) ---
+  { id: 36, group: "approx-year", lang: "sl", question: "Kdaj je nastalo Cerkvišče?" },
+  { id: 37, group: "approx-year", lang: "en", question: "When did Cerkvišče come into being?" },
+  { id: 38, group: "approx-year", lang: "de", question: "Wann entstand Cerkvišče?" },
+  { id: 39, group: "approx-year", lang: "it", question: "Quando nacque Cerkvišče?" },
+  { id: 40, group: "approx-year", lang: "hr", question: "Kada je nastalo Cerkvišče?" },
+  { id: 41, group: "approx-year", lang: "sl", question: "Kdaj se je rodil Tone Kralj?" },
+  // --- 3 leksični šum retrieval-a (TASK 42.1 §6: 0 klicev) ---
+  { id: 42, group: "retrieval-noise", lang: "sl", question: "Kaj je hitrost svetlobe?", expect: { zeroCalls: true } },
+  { id: 43, group: "retrieval-noise", lang: "sl", question: "Kdo je bil papež leta 1500?", expect: { zeroCalls: true } },
+  { id: 44, group: "retrieval-noise", lang: "sl", question: "Kaj je Higgsov bozon?", expect: { zeroCalls: true } },
 ];
 
 /** Zaključni argument: --to=N konča pri primeru N (vperski izbor). */
@@ -271,6 +287,31 @@ async function runCase(c: Case): Promise<CaseResult> {
         name: "celi datumi dokazani v kontekstu",
         pass: unattested.length === 0,
         detail: unattested.map((d) => `${d.d}.${d.m}.${d.y}`).join(","),
+      });
+      // LETNI VARUH (TASK 42.1 §1): letnica, ki jo kontekst nosi SAMO
+      // približno (~1408, okoli 1900, c. 1928), ne sme preživeti kot
+      // natančna — produkcija take odstavke BRIŠE; to je dokaz verige na
+      // končnem besedilu (neodvisen re-izračun, kot attestedDatesOf zgoraj).
+      const yearAtt = attestedYearsOf(context);
+      const approxYearViol: number[] = [];
+      for (const y of yearAtt.approxOnly) {
+        const re = new RegExp(`(?<!\\d)${y}(?!\\d)`, "g");
+        for (const m of answerText.matchAll(re)) {
+          const before = answerText.slice(Math.max(0, (m.index ?? 0) - 30), m.index ?? 0);
+          const qualified =
+            /(\b(okoli|okrog|približno|priblizno|ca|c|approx|approximately|around|circa|um|gegen|intorno|oko|etwa|ungefähr|ungerfahr|rund|verso|incirca)\b|~|≈)[^.\n]{0,25}$/i.test(
+              before,
+            );
+          if (!qualified) {
+            approxYearViol.push(y);
+            break;
+          }
+        }
+      }
+      hc.push({
+        name: "približne letnice ohranijo približevanje",
+        pass: approxYearViol.length === 0,
+        detail: approxYearViol.join(","),
       });
       // Interne kode/ID-ji ne morejo ven.
       hc.push({
