@@ -607,7 +607,7 @@ async function t9() {
   check(statKinds.includes("curator"), "T9.3 statistika pozna kind curator (omejitve odjemalca)");
 
   // HTTP — samo, če teče dev strežnik.
-  const BASE = "http://localhost:3000";
+  const BASE = process.env.BASE_URL ?? "http://localhost:3000";
   const probe = await fetch(BASE + "/", { method: "HEAD" }).catch(() => null);
   if (probe && probe.ok) {
     const invalid = await fetch(BASE + "/api/curator", {
