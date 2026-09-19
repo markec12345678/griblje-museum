@@ -12,6 +12,7 @@ MUZEJSKI KONTEKST SPODAJ je CELOTNO tvoje znanje za to vprašanje — ZAPRTA DOK
 7. Če kontekst ne nosi dovolj dokaza: answerable=false, reason="insufficient_evidence". KajVemo takrat ostane PRAZNO — ne piši splošnih zgodb.
 9. V odgovoru NE uporabljaj internih kod kuratorske vrste niti internih ID-jev registra — vsako odprto vprašanje povzameš v običajnem muzejskem jeziku (npr. »za kateri zapis gre, kuratorji še lahko potrdijo«). Če uporabnik vpraša, kaj o zbirki še ni dovolj dokumentirano, pošteno naštej odprta vprašanja konteksta (po zapisih, na katere se nanašajo) — to je muzejsko dragocen odgovor, ne pomanjkljivost.
 10. Imena virov in zgodovinskih naslovov NE prevajaj, kadar bi se s tem spremenila identiteta — sourceName iz konteksta izpiši, kot je zapisan. Licenca ali status vira, ki je v evidenci nejasen ali neznan, ostane nejasen — takega vira NE predstaviš kot popolnoma preverjenega ali avtoritativnega.
+11. LASTNA IDENTITETA ENTITETE IMA PREDNOST PRED OMEMBAMI: polje »identity« entitete je NJENA lastna identiteta, kuratorsko dokumentirana v registru muzeja. Za entiteto, ki je predmet vprašanja (»isTarget«: true), odgovor o njej zgradiš iz njenega »identity« in zapisov, ki so O njej (»relation«: »about-this-entity«). Zapis z »relation«: »mentioned-in-record« entiteto le OMENJA: njegova trditev govori o SUBJEKTU TISTEGA ZAPISA in dokazuje omembo — NI biografija niti identiteta omembe osebe (zapis o Konradu Barletu, v katerem je omenjen Ivan, ostane dokaz o Konradu; Ivanu pripada samo njegov lastni »identity« in njegovi zapisi). Osebe v »distinctFrom« so LOČENE registrirane osebe (enak priimek, druga oseba) — nikoli ista oseba in nikoli različica imena. Kjer »identity« in zapisi-o-entiteti ne zadoščajo, ostanka NE dopolnjuješ iz drugih zapisov — odkrito povej, da v zbirki ni dovolj dokumentirano.
 
 ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje iz treh vzvratnih narekovajev):
 {"answerable": true, "reason": null, "kajVemo": ["1–3 odstavkov, vsak z vsaj enim [[slug]] navedkom"], "kakoVemo": ["1 odstavek: kateri zapisi in viri nosijo trditve"], "viri": [{"slug": "primer-slug", "sourceIndex": 0}], "opomba": null}
@@ -25,6 +26,8 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
   {
    "type": "event",
    "label": "Zračni most Krasinec",
+   "isTarget": false,
+   "identity": "konec marca 1945 (48 ur) — 2041 ljudi v 48 urah v zavezniško bazo v Bari; obe fotografiji Veselka posneti pri Gribljah. Povezuje MVG-014 in MVG-056, ki opisujeta isto operacijo — kuratorska potrditev identitete dogodka v vrsti.",
    "exhibits": [
     "letalisce-otok-1944",
     "evakuacija-1945",
@@ -33,6 +36,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
    "evidence": [
     {
      "slug": "letalisce-otok-1944",
+     "relation": "mentioned-in-record",
      "title": "Partizansko letališče Otok",
      "claim": "Spomladi 1944 so partizani pri Otoku uredili letališče, s katerega so zavezniki v južno Italijo prepeljali 1473 ranjencev.",
      "evidenceStatus": "DOCUMENTED",
@@ -45,6 +49,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "letalisce-otok-1944",
+     "relation": "mentioned-in-record",
      "title": "Partizansko letališče Otok",
      "claim": "Spomladi 1944 so partizani pri Otoku uredili letališče, s katerega so zavezniki v južno Italijo prepeljali 1473 ranjencev.",
      "evidenceStatus": "DOCUMENTED",
@@ -57,6 +62,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "letalisce-otok-1944",
+     "relation": "mentioned-in-record",
      "title": "Partizansko letališče Otok",
      "claim": "Spomladi 1944 so partizani pri Otoku uredili letališče, s katerega so zavezniki v južno Italijo prepeljali 1473 ranjencev.",
      "evidenceStatus": "DOCUMENTED",
@@ -69,6 +75,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "letalisce-otok-1944",
+     "relation": "mentioned-in-record",
      "title": "Partizansko letališče Otok",
      "claim": "Spomladi 1944 so partizani pri Otoku uredili letališče, s katerega so zavezniki v južno Italijo prepeljali 1473 ranjencev.",
      "evidenceStatus": "DOCUMENTED",
@@ -81,6 +88,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "letalisce-otok-1944",
+     "relation": "mentioned-in-record",
      "title": "Partizansko letališče Otok",
      "claim": "Spomladi 1944 so partizani pri Otoku uredili letališče, s katerega so zavezniki v južno Italijo prepeljali 1473 ranjencev.",
      "evidenceStatus": "DOCUMENTED",
@@ -93,6 +101,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "evakuacija-1945",
+     "relation": "mentioned-in-record",
      "title": "Marec 1945: zavezniška letala nad Gribljami",
      "claim": "Konec marca 1945 so zavezniška letala iz Bele krajine evakuirala ranjene partizane v Bari. Dve fotografiji, posneti pri Gribljah, sta med redkimi dokumenti te operacije.",
      "evidenceStatus": "DOCUMENTED",
@@ -105,6 +114,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "evakuacija-1945",
+     "relation": "mentioned-in-record",
      "title": "Marec 1945: zavezniška letala nad Gribljami",
      "claim": "Konec marca 1945 so zavezniška letala iz Bele krajine evakuirala ranjene partizane v Bari. Dve fotografiji, posneti pri Gribljah, sta med redkimi dokumenti te operacije.",
      "evidenceStatus": "DOCUMENTED",
@@ -117,6 +127,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "evakuacija-1945",
+     "relation": "mentioned-in-record",
      "title": "Marec 1945: zavezniška letala nad Gribljami",
      "claim": "Konec marca 1945 so zavezniška letala iz Bele krajine evakuirala ranjene partizane v Bari. Dve fotografiji, posneti pri Gribljah, sta med redkimi dokumenti te operacije.",
      "evidenceStatus": "DOCUMENTED",
@@ -129,6 +140,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "zracni-most-krasinec",
+     "relation": "about-this-entity",
      "title": "Zračni most Krasinec — 2041 ljudi v 48 urah",
      "claim": "V dveh nočeh so zavezniške dakote in spitfiri s partizanskega letališča Krasinec prepeljale 2041 ljudi — ranjence, otroke in zavezniške letalce; med njimi pisateljico Almo Karlin.",
      "evidenceStatus": "DOCUMENTED",
@@ -141,6 +153,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "zracni-most-krasinec",
+     "relation": "about-this-entity",
      "title": "Zračni most Krasinec — 2041 ljudi v 48 urah",
      "claim": "V dveh nočeh so zavezniške dakote in spitfiri s partizanskega letališča Krasinec prepeljale 2041 ljudi — ranjence, otroke in zavezniške letalce; med njimi pisateljico Almo Karlin.",
      "evidenceStatus": "DOCUMENTED",
@@ -153,6 +166,7 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
     },
     {
      "slug": "zracni-most-krasinec",
+     "relation": "about-this-entity",
      "title": "Zračni most Krasinec — 2041 ljudi v 48 urah",
      "claim": "V dveh nočeh so zavezniške dakote in spitfiri s partizanskega letališča Krasinec prepeljale 2041 ljudi — ranjence, otroke in zavezniške letalce; med njimi pisateljico Almo Karlin.",
      "evidenceStatus": "DOCUMENTED",
@@ -191,4 +205,4 @@ ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje 
 }
 --- KONEC MUZEJSKEGA KONTEKSTA ---
 
-PONOVITEV PRAVIL: odgovor je SAMO JSON, vsebina v živi slovenščini, vsaka trditev s [[slug]] navedkom iz konteksta, brez internih kod kuratorske vrste in ID-jev.
+PONOVITEV PRAVIL: odgovor je SAMO JSON, vsebina v živi slovenščini, vsaka trditev s [[slug]] navedkom iz konteksta, lastna identiteta entitete pred njenimi omembami, brez internih kod kuratorske vrste in ID-jev.

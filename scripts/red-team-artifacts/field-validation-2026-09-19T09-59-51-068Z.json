@@ -1,0 +1,435 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 3,
+    "totalModelCalls": 3,
+    "byLanguage": {
+      "sl": 3
+    },
+    "counts": {
+      "PASS": 2,
+      "REVIEW": 1,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 21,
+      "category": "C",
+      "question": "Kdo je bil Konrad Barle?",
+      "language": "sl",
+      "retrieved_records": [
+        "janko-barle",
+        "konrad-barle",
+        "kucar-podzemelj",
+        "kranjska-sivka",
+        "panjska-koncnica",
+        "matija-totter",
+        "pisanice",
+        "kresovanje",
+        "ljudje-ob-kolpi",
+        "joze-dular",
+        "izseljenstvo"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:konrad-barle",
+          "type": "person",
+          "label": "Konrad Barle"
+        },
+        {
+          "id": "person:ivan-barle",
+          "type": "person",
+          "label": "Ivan Barle"
+        },
+        {
+          "id": "person:janko-barle",
+          "type": "person",
+          "label": "Janko Barle"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Kranjska_čebela",
+        "url:sl.wikipedia.org/wiki/Anton_Janša",
+        "url:sl.wikipedia.org/wiki/Svetovni_dan_čebel",
+        "url:sl.wikipedia.org/wiki/Anton_Žnideršič",
+        "url:commons.wikimedia.org/wiki/File:Apis_mellifera_carnica_worker_hive_entrance_3.jpg",
+        "url:sl.wikipedia.org/wiki/Panjska_končnica",
+        "url:en.wikipedia.org/wiki/Micka_Pavlič",
+        "url:commons.wikimedia.org/wiki/File:Lovčev_pogreb,_poslikana_panjska_končnica,_les,_1891.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/novice/belokranjske-pisanice-ziva-nesnovna-kulturna-dediscina",
+        "url:nesnovnadediscina.si",
+        "url:commons.wikimedia.org/wiki/File:Belokranjske_pisanke.JPG",
+        "url:commons.wikimedia.org/wiki/File:Gorenje-izzajčjegore.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Konrad Barle je bil učitelj v Metliki od leta 1899 do 1934, čebelar, ki je Beli krajini prinesel AŽ-panj, in eden od ustanoviteljev Belokranjskega muzeja. [[konrad-barle]]",
+          "Rodil se je 19. februarja 1875 in umrl 15. julija 1951. [[konrad-barle]]",
+          "Bil je sin podzemeljskega učitelja Ivana Barleta in brat Janka Barleta. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Te informacije so dokumentirane v zapisu [[konrad-barle]], ki temelji na Slovenski biografiji. [[konrad-barle]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 0
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "konrad-barle"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "konrad-barle"
+        ]
+      },
+      "curatorial_judgment": "MVG-059: učitelj v Metliki, AŽ-panj, rojen 19. 2. 1875; lastna entiteta, ločeno od Janka/Šivana.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 22,
+      "category": "C",
+      "question": "Kdo je bil Janko Barle?",
+      "language": "sl",
+      "retrieved_records": [
+        "matija-totter",
+        "janko-barle",
+        "pisanice",
+        "kresovanje",
+        "ljudje-ob-kolpi",
+        "konrad-barle",
+        "kucar-podzemelj",
+        "kranjska-sivka",
+        "panjska-koncnica",
+        "joze-dular",
+        "izseljenstvo"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:janko-barle",
+          "type": "person",
+          "label": "Janko Barle"
+        },
+        {
+          "id": "person:ivan-barle",
+          "type": "person",
+          "label": "Ivan Barle"
+        },
+        {
+          "id": "person:konrad-barle",
+          "type": "person",
+          "label": "Konrad Barle"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:radio-odeon.com/novice/belokranjske-pisanice-ziva-nesnovna-kulturna-dediscina",
+        "url:nesnovnadediscina.si",
+        "url:commons.wikimedia.org/wiki/File:Belokranjske_pisanke.JPG",
+        "url:commons.wikimedia.org/wiki/File:Gorenje-izzajčjegore.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Kranjska_čebela",
+        "url:sl.wikipedia.org/wiki/Anton_Janša",
+        "url:sl.wikipedia.org/wiki/Svetovni_dan_čebel",
+        "url:sl.wikipedia.org/wiki/Anton_Žnideršič",
+        "url:commons.wikimedia.org/wiki/File:Apis_mellifera_carnica_worker_hive_entrance_3.jpg",
+        "url:sl.wikipedia.org/wiki/Panjska_končnica",
+        "url:en.wikipedia.org/wiki/Micka_Pavlič",
+        "url:commons.wikimedia.org/wiki/File:Lovčev_pogreb,_poslikana_panjska_končnica,_les,_1891.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Janko Barle (1869–1941) je bil duhovnik, etnolog, botanik in glasbenik, ki je otroštvo preživel ob Kolpi v Podzemlju. [[janko-barle]]",
+          "Zbral je 3.000 slovenskih imen rastlin in s pomočjo gribeljskega Matička zapisal belokranjske šege. [[janko-barle]]",
+          "Bil je brat Konrada in sin Ivana Barleta. [[janko-barle]]",
+          "Leta 1893 je objavil delo »Pisanice iz Bele Krajine«, v katerem je opisal belokranjske pisanice, ki so bile od leta 2012 vpisane v register žive nesnovne kulturne dediščine Slovenije. [[pisanice]]"
+        ],
+        "kakoVemo": [
+          "Te informacije nosijo zapisi [[janko-barle]] in [[pisanice]] ter viri, kot so Radio Odeon — Ljudje ob Kolpi: Janko Barle (življenjepis in dela), Bibliografija: Janko Barle, »Pisanice iz Bele Krajine« in Register nesnovne kulturne dediščine Slovenije."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "janko-barle",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "janko-barle",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "pisanice",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "pisanice",
+            "sourceIndex": 1
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "janko-barle",
+        "pisanice"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "janko-barle"
+        ]
+      },
+      "curatorial_judgment": "MVG-058: zapisovalec Bele krajine (šege, pesmi); lastna entiteta 1869–1941.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "PASS",
+      "notes": []
+    },
+    {
+      "id": 23,
+      "category": "C",
+      "question": "Kdo je bil Ivan Barle?",
+      "language": "sl",
+      "retrieved_records": [
+        "konrad-barle",
+        "kucar-podzemelj",
+        "kranjska-sivka",
+        "matija-totter",
+        "janko-barle",
+        "pisanice",
+        "kresovanje",
+        "ljudje-ob-kolpi",
+        "panjska-koncnica",
+        "joze-dular",
+        "izseljenstvo"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:ivan-barle",
+          "type": "person",
+          "label": "Ivan Barle"
+        },
+        {
+          "id": "person:janko-barle",
+          "type": "person",
+          "label": "Janko Barle"
+        },
+        {
+          "id": "person:konrad-barle",
+          "type": "person",
+          "label": "Konrad Barle"
+        }
+      ],
+      "retrieved_sources": [
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Kranjska_čebela",
+        "url:sl.wikipedia.org/wiki/Anton_Janša",
+        "url:sl.wikipedia.org/wiki/Svetovni_dan_čebel",
+        "url:sl.wikipedia.org/wiki/Anton_Žnideršič",
+        "url:commons.wikimedia.org/wiki/File:Apis_mellifera_carnica_worker_hive_entrance_3.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:radio-odeon.com/novice/belokranjske-pisanice-ziva-nesnovna-kulturna-dediscina",
+        "url:nesnovnadediscina.si",
+        "url:commons.wikimedia.org/wiki/File:Belokranjske_pisanke.JPG",
+        "url:commons.wikimedia.org/wiki/File:Gorenje-izzajčjegore.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:sl.wikipedia.org/wiki/Panjska_končnica",
+        "url:en.wikipedia.org/wiki/Micka_Pavlič",
+        "url:commons.wikimedia.org/wiki/File:Lovčev_pogreb,_poslikana_panjska_končnica,_les,_1891.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Ivan Barle je bil učitelj, organist in sadjar v Podzemlju med letoma 1872 in 1893. Pred letom 1889 so gribeljski otroki hodili k njegovemu pouku. [[konrad-barle]]",
+          "Bil je oče Janka in Konrada Barleta, s katerima tvori tri različne vnose v muzejski zbirki. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Podatke o Ivanu Barletu ponuja zapis [[konrad-barle]], ki ga omenja kot očeta in podzemeljskega učitelja."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 1
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "konrad-barle"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "konrad-barle",
+          "kucar-podzemelj",
+          "kranjska-sivka"
+        ],
+        "identityProbe": "Ivan Barle je lasten vnos — ne sme se spojiti s Konradom/Jankom."
+      },
+      "curatorial_judgment": "Entiteta person:ivan-barle (1841–1930): podzemeljski učitelj; TRIJE Barleti se ne smejo spojiti.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "identiteta: Ivan Barle je lasten vnos — ne sme se spojiti s Konradom/Jankom. — človeška presoja besedila"
+      ]
+    }
+  ]
+}

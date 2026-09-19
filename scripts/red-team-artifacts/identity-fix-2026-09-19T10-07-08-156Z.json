@@ -1,0 +1,164 @@
+{
+  "what": "TASK 43 identity fix — real model",
+  "records": [
+    {
+      "id": "T43.1",
+      "question": "Kdo je bil Ivan Barle?",
+      "judgment": "Odgovor govori O IVANU (učitelj/organist/sadjar v Podzemlju, 1841–1930, oče). NE SME pripisati Konradove biografije (Metlika 1899–1934, AŽ-panj, muzej) Ivanu.",
+      "answer": {
+        "answerable": true,
+        "kajVemo": [
+          "Ivan Barle je bil učitelj, organist in sadjar v Podzemlju, kjer je deloval med leti 1872 in 1893. Pred letom 1889 je poučeval tudi gribeljske otroke. [[kucar-podzemelj]]",
+          "Bil je oče Janka in Konrada Barleta, za katere je v muzejski zbirki ločeno dokumentirana vsaka oseba. [[konrad-barle]]",
+          "Njegov sin Konrad je bil učitelj v Metliki in čebelar, ki je Beli krajini prinesel AŽ-panj ter sodeloval pri ustanovitvi Belokranjskega muzeja. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Podatke o Ivanu Barlemu dobivamo iz njegove registrirane identitete in iz zapisa o njegovem sinu Konradu, kjer je omenjen kot podzemeljski učitelj. [[konrad-barle]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 1
+          },
+          {
+            "slug": "kucar-podzemelj",
+            "sourceIndex": 0
+          }
+        ]
+      },
+      "entities": [
+        "Ivan Barle",
+        "Janko Barle",
+        "Konrad Barle"
+      ],
+      "ms": 3468
+    },
+    {
+      "id": "T43.2",
+      "question": "Kdo je bil Konrad Barle?",
+      "judgment": "Konradova biografija ostane Konradova (Metlika, AŽ-panj, 1875–1951); Ivanova identiteta se NE uporabi namesto njegove.",
+      "answer": {
+        "answerable": true,
+        "kajVemo": [
+          "Konrad Barle je bil učitelj v Metliki, kjer je poučeval petintrideset let in razširil šolo na osem razredov. [[konrad-barle]]",
+          "Beli krajini je prinesel AŽ-panj, leta 1912 pa je ustanovil čebelarsko podružnico in bil med ustanovitelji Belokranjskega muzeja. [[konrad-barle]]",
+          "Rodil se je 19. februarja 1875 in umrl 15. julija 1951. Njegov oče je bil Ivan Barle, brat pa Janko Barle. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Te informacije so dokumentirane v zapisu [[konrad-barle]], ki je posvečen Konradu Barletu in temelji na viru Slovenska biografija — Barle, Konrad (1875–1951). [[konrad-barle]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 0
+          }
+        ]
+      },
+      "entities": [
+        "Konrad Barle",
+        "Ivan Barle",
+        "Janko Barle"
+      ],
+      "ms": 3504
+    },
+    {
+      "id": "T43.3",
+      "question": "Kdo je bil Janko Barle?",
+      "judgment": "Janko ostane ločena oseba (zapisovalec, 1869–1941).",
+      "answer": {
+        "answerable": true,
+        "kajVemo": [
+          "Janko Barle (1869 – 1941) je bil duhovnik, etnolog, botanik in glasbenik, ki je otroštvo preživel ob Kolpi v Podzemlju. [[janko-barle]]",
+          "Zbral je 3.000 slovenskih imen rastlin in s pomočjo gribeljskega Matička zapisal belokranjske šege. [[janko-barle]]",
+          "Njegova dela vključujejo tudi razpravo o belokranjskih pisanicah, objavljeno leta 1893. [[pisanice]]"
+        ],
+        "kakoVemo": [
+          "Te informacije so dokumentirane v življenjepisu Janka Barla, ki je nastal v okviru radijske rubrike Ljudje ob Kolpi in bibliografskem citatu njegove razprave. [[janko-barle]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "janko-barle",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "janko-barle",
+            "sourceIndex": 2
+          },
+          {
+            "slug": "pisanice",
+            "sourceIndex": null
+          }
+        ]
+      },
+      "entities": [
+        "Janko Barle",
+        "Ivan Barle",
+        "Konrad Barle"
+      ],
+      "ms": 3899
+    },
+    {
+      "id": "T43.4",
+      "question": "Ali sta Ivan in Konrad Barle ista oseba?",
+      "judgment": "Sistem NE združi oseb: Ivan je oče (1841–1930), Konrad sin (1875–1951) — dve ločeni registrirani osebi po registru.",
+      "answer": {
+        "answerable": true,
+        "kajVemo": [
+          "Ivan Barle (1841 – 1930) in Konrad Barle (19. februar 1875 – 15. julij 1951) sta dve različni osebi. V evidenca muzeja jih jasno ločujejo kot trije ločeni vnosi: Ivan, Janko in Konrad Barle.",
+          "Ivan Barle je bil učitelj, organist in sadjar v Podzemlju (1872–1893). Njegovi otroci, med njimi tudi Konrad, so hodili k njegovemu pouku pred letom 1889.",
+          "Konrad Barle je bil sin Ivana Barleta. Poučeval je v Metliki (1899–1934), Beli krajini je prinesel AŽ-panj in bil ustanovitelj čebelarske podružnice leta 1912 ter Belokranjskega muzeja."
+        ],
+        "kakoVemo": [
+          "Informacije so dokumentirane v muzejskih evidencah, kjer je razvidno, da sta Ivan in Konrad Barle dve različni osebi. To potrjuje tudi dejstva, da je bil Ivan Konradov oče in da sta imela različna poklica in življenjska pota. Podatki so zajeti iz evidenčnih zapisov o osebah."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "kucar-podzemelj",
+            "sourceIndex": 0
+          }
+        ]
+      },
+      "entities": [
+        "Konrad Barle",
+        "Ivan Barle",
+        "Janko Barle"
+      ],
+      "ms": 5849
+    },
+    {
+      "id": "T43.5",
+      "question": "Kaj pripoveduje zapis o Konradu Barletu?",
+      "judgment": "Zapis je O Konradu; Ivan, omenjen v njem, ostane omemba — ne postane njegova biografija.",
+      "answer": {
+        "answerable": true,
+        "kajVemo": [
+          "Konrad Barle je bil učitelj v Metliki, kjer je poučeval petintrideset let in razširil šolo na osem razredov. [[konrad-barle]]",
+          "Beli krajini je prinesel AŽ-panj in je bil eden od ustanoviteljev Belokranjskega muzeja. [[konrad-barle]]",
+          "Leta 1912 je ustanovil čebelarsko podružnico. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Zapis o Konradu Barletu je dokumentiran v Slovenski biografiji, kjer je podrobno opisano njegovo delo in dosežke. [[konrad-barle]]"
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 0
+          }
+        ]
+      },
+      "entities": [
+        "Konrad Barle"
+      ],
+      "ms": 4570
+    }
+  ]
+}

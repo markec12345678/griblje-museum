@@ -1176,6 +1176,328 @@ async function t13() {
 await t13();
 
 // ===========================================================================
+section("T43 — LASTNA IDENTITETA PRED OMEMBAMI (TASK 43 — FAIL #23)");
+// ===========================================================================
+
+/**
+ * FAIL #23 (Field Validation, reproduciran 3/3 + 1): »Kdo je bil Ivan
+ * Barle?« → Konradova biografija. Korenski vzrok: AIEntityContext je nosil
+ * le oznako + zapise z OMENBAMI entitete, trditve zapisov pa govorijo o
+ * njihovih lastnih subjektih. Popravek: LASTNA identiteta iz registra
+ * (identity), predmet vprašanja (isTarget), priimkovno ločeni vnosi
+ * (distinctFrom) in odnos zapisa do entitete (relation) — vse
+ * DETERMINISTIČNO, izključno iz obstoječega registra, brez novih dejstev.
+ */
+
+{
+  // --- T43.1 — »Kdo je bil Ivan Barle?« (FAIL #23, reproduciran) ----------
+  const ivan = buildContext("sl", "Kdo je bil Ivan Barle?");
+  const ivanEntity = ivan.context.entities.find((e) => e.id === "person:ivan-barle");
+  check(!!ivanEntity, "T43.1a Ivan Barle je razrešen v kontekstu");
+  check(
+    ivanEntity?.isTarget === true,
+    "T43.1b Ivan je PREDMET vprašanja (isTarget=true)",
+  );
+  check(
+    !!ivanEntity?.identity &&
+      /1841 – 1930/.test(ivanEntity.identity) &&
+      /Učitelj, organist in sadjar v Podzemlju \(1872–1893\)/.test(ivanEntity.identity) &&
+      /Oče Janka in Konrada/.test(ivanEntity.identity),
+    "T43.1c Ivanova LASTNA identiteta iz registra (čas + opomba: Podzemelj 1872–1893, oče)",
+    ivanEntity?.identity ?? "ni identitete",
+  );
+  check(
+    !!ivanEntity?.distinctFrom &&
+      ivanEntity.distinctFrom.length === 2 &&
+      ivanEntity.distinctFrom.some((d) => /^Janko Barle \(1869 – 1941\)$/.test(d)) &&
+      ivanEntity.distinctFrom.some((d) => /^Konrad Barle \(19\. februar 1875 – 15\. julij 1951\)$/.test(d)),
+    "T43.1d distinctFrom: KONRAD in JANKO kot ločeni registrirani osebi (s letnicami)",
+    JSON.stringify(ivanEntity?.distinctFrom),
+  );
+  check(
+    (ivanEntity?.evidence ?? []).length > 0 &&
+      ivanEntity!.evidence.every((ev) => ev.relation === "mentioned-in-record"),
+    "T43.1e VSI Ivanovi zapisi so OMENJBE (ni zapisa O Ivanu — njegova biografija je identiteta, ne Konradov povzetek)",
+  );
+  check(
+    ivanEntity!.evidence.some((ev) => ev.exhibitSlug === "konrad-barle" && ev.relation === "mentioned-in-record"),
+    "T43.1f Konradov zapis ostane kot DOKAZ, a z vlogo OMENJBE (ne odstranjen, ne biografija)",
+  );
+  check(
+    ivan.context.entities.find((e) => e.id === "person:konrad-barle")?.isTarget !== true &&
+      ivan.context.entities.find((e) => e.id === "person:janko-barle")?.isTarget !== true,
+    "T43.1g Konrad/Janko sta v kontekstu, a NISTA predmet vprašanja",
+  );
+  // Poziv nosi nove plasti + pravilo prednosti.
+  const ivanPrompt = systemPrompt(ivan.context);
+  check(
+    ivanPrompt.includes("LASTNA IDENTITETA ENTITETE IMA PREDNOST PRED OMEMBAMI") ||
+      ivanPrompt.includes("OWN IDENTITY OUTRANKS ITS MENTIONS"),
+    "T43.1h poziv nosi pravilo 11 (lastna identiteta pred omembami)",
+  );
+  check(
+    ivanPrompt.includes("Učitelj, organist in sadjar v Podzemlju") &&
+      ivanPrompt.includes("\"isTarget\": true") &&
+      ivanPrompt.includes("\"distinctFrom\"") &&
+      ivanPrompt.includes("\"mentioned-in-record\""),
+    "T43.1i poziv nosi identity/isTarget/distinctFrom/relation konteksta",
+  );
+  // Letni varuh: letnice Ivanove identitete so DOKAZANE (1841/1930/1872/1893
+  // so registrski podatek) — odgovor, ki jih izpiše, NE odpade.
+  const ivanYears = attestedYearsOf(ivan.context);
+  check(
+    ivanYears.exact.has(1841) && ivanYears.exact.has(1930) && ivanYears.exact.has(1872) && ivanYears.exact.has(1893),
+    "T43.1j letnice identitete so dokazane (1841/1930/1872/1893 — opomba registra šteje)",
+  );
+  const ivanAnswer = verifyAnswer(
+    JSON.stringify({
+      answerable: true,
+      reason: null,
+      kajVemo: [
+        "Ivan Barle (1841 – 1930) je bil učitelj, organist in sadjar v Podzemlju, kjer je poučeval med letoma 1872 in 1893; gribeljski otroci so hodili k njegovemu pouku pred 1889. [[konrad-barle]]",
+      ],
+      kakoVemo: ["Njegovo identiteto dokumentira zapis o družini Barle. [[konrad-barle]]"],
+      viri: [{ slug: "konrad-barle", sourceIndex: 1 }],
+      opomba: null,
+    }),
+    ivan.context,
+  );
+  check(
+    ivanAnswer !== null && ivanAnswer.answerable === true && ivanAnswer.kajVemo.length === 1,
+    "T43.1k odgovor O IVANU (iz lastne identitete) preide preverbo — letnice ne odpadejo",
+  );
+
+  // --- T43.2 — »Kdo je bil Konrad Barle?« (regresija nasprotne smeri) -----
+  const konrad = buildContext("sl", "Kdo je bil Konrad Barle?");
+  const konradEntity = konrad.context.entities.find((e) => e.id === "person:konrad-barle");
+  check(konradEntity?.isTarget === true, "T43.2a Konrad je predmet vprašanja");
+  check(
+    konradEntity!.evidence.some((ev) => ev.exhibitSlug === "konrad-barle" && ev.relation === "about-this-entity"),
+    "T43.2b Konradov zapis je O KONRADU (relation: about-this-entity)",
+  );
+  check(
+    /Učitelj v Metliki \(1899–1934\)/.test(konradEntity?.identity ?? ""),
+    "T43.2c Konradova identiteta ostaja njegova (Metlika 1899–1934)",
+    konradEntity?.identity ?? "ni identitete",
+  );
+  check(
+    (konradEntity?.distinctFrom ?? []).some((d) => d.startsWith("Ivan Barle (1841 – 1930)")),
+    "T43.2d Ivan je v Konradovem distinctFrom (ločen vnos) — Ivanova identiteta se NE uporabi namesto Konradove",
+  );
+  check(
+    konrad.context.entities.find((e) => e.id === "person:ivan-barle")?.isTarget !== true,
+    "T43.2e Ivan NI predmet Konradovega vprašanja",
+  );
+
+  // --- T43.3 — »Kdo je bil Janko Barle?« -----------------------------------
+  const janko = buildContext("sl", "Kdo je bil Janko Barle?");
+  const jankoEntity = janko.context.entities.find((e) => e.id === "person:janko-barle");
+  check(jankoEntity?.isTarget === true, "T43.3a Janko je predmet vprašanja");
+  check(
+    jankoEntity!.evidence.some((ev) => ev.exhibitSlug === "janko-barle" && ev.relation === "about-this-entity"),
+    "T43.3b Jankov zapis je O JANKU (about-this-entity)",
+  );
+  check(
+    /Zapisovalec Bele krajine/.test(jankoEntity?.identity ?? "") &&
+      (jankoEntity?.distinctFrom ?? []).length === 2,
+    "T43.3c Jankova identiteta + oba brata v distinctFrom (ločena oseba)",
+    jankoEntity?.identity ?? "",
+  );
+
+  // --- T43.4 — »Ali sta Ivan in Konrad Barle ista oseba?« ------------------
+  const ista = buildContext("sl", "Ali sta Ivan in Konrad Barle ista oseba?");
+  const istaIvan = ista.context.entities.find((e) => e.id === "person:ivan-barle");
+  const istaKonrad = ista.context.entities.find((e) => e.id === "person:konrad-barle");
+  check(
+    istaIvan?.isTarget === true && istaKonrad?.isTarget === true,
+    "T43.4a obe osebi sta PREDMET vprašanja (dva cilja)",
+  );
+  check(
+    (istaIvan?.distinctFrom ?? []).some((d) => d.startsWith("Konrad Barle (")) &&
+      (istaKonrad?.distinctFrom ?? []).some((d) => d.startsWith("Ivan Barle (")),
+    "T43.4b vsaka nosi drugo v distinctFrom — register jih drži LOČENO",
+  );
+  check(
+    istaIvan!.identity !== istaKonrad!.identity &&
+      /1841 – 1930/.test(istaIvan!.identity ?? "") &&
+      /19\. februar 1875/.test(istaKonrad!.identity ?? ""),
+    "T43.4c identiteti sta RAZLIČNI (ne združita, ne zamenjata)",
+  );
+
+  // --- T43.5 — omemba Ivana v Konradovem zapisu NE postane Ivanova biografija
+  // Opomba: sklanjatvena oblika »Barletu« ne dokonča žetonske slike priimka
+  // (dohodno besedilno ujemanje iz 42.1 se NE razširja — zato Konrad ni
+  // »isTarget«, je pa razrešen po imenu in njegov zapis nosi about-vezo).
+  const zapisKonrad = buildContext("sl", "Kaj pripoveduje zapis o Konradu Barletu?");
+  const zkKonrad = zapisKonrad.context.entities.find((e) => e.id === "person:konrad-barle");
+  const zkIvan = zapisKonrad.context.entities.find((e) => e.id === "person:ivan-barle");
+  check(
+    !!zkKonrad,
+    "T43.5a Konrad je razrešen (žeton imena) — zapis, v katerem je Ivan omenjen, je njegov",
+  );
+  check(
+    zkKonrad!.evidence.some((ev) => ev.exhibitSlug === "konrad-barle" && ev.relation === "about-this-entity"),
+    "T43.5b zapis je o Konradu (about) — Ivan, omenjen v njem, ostane OMENJBA",
+  );
+  check(
+    (zkIvan ? zkIvan.isTarget : false) !== true && !zapisKonrad.context.entities.some((e) => e.isTarget && e.type === "person" && /Ivan/.test(e.label)),
+    "T43.5c Ivan NI predmet vprašanja o Konradovem zapisu (omemba ostane omemba)",
+  );
+  const barletih = buildContext("sl", "Kaj veš o Barletih?");
+  const barleTargets = barletih.context.entities.filter((e) => e.isTarget);
+  check(
+    barletih.context.entities.filter((e) => /Barle/.test(e.label)).length === 3 &&
+      barleTargets.length === 0,
+    "T43.5d pri golem priimku NIČ od treh Barle ni »predmet« — vse tri ostanejo ločene osebe z lastnimi identitetami",
+  );
+  check(
+    barletih.context.entities
+      .find((e) => e.id === "person:ivan-barle")!
+      .evidence.every((ev) => ev.relation === "mentioned-in-record"),
+    "T43.5e omemba Ivana v Konradovem/Jankovem zapisu ostane OMENJBA (ne biografija)",
+  );
+
+  // --- ostale znane identitetne vezi (naročilo §9) ------------------------
+  // Jože ≠ Janez Dular
+  const dular = buildContext("sl", "Kdo je bil Jože Dular?");
+  const dularEntity = dular.context.entities.find((e) => e.id === "person:joze-dular");
+  check(
+    dularEntity?.isTarget === true && /NI Janez Dular/.test(dularEntity?.identity ?? ""),
+    "T43.6a Jože Dular: cilj + identiteta nosi ločitev od Janeza (arheologa)",
+    dularEntity?.identity ?? "",
+  );
+  check(
+    !ENTITY_BY_ID.has("person:janez-dular") &&
+      (dularEntity?.distinctFrom ?? []).every((d) => !/Janez/.test(d)),
+    "T43.6b Janez Dular NI entiteta registra (P1-E4 ostaja nerazrešen — nič novega)",
+  );
+  check(
+    dularEntity!.evidence.some((ev) => ev.exhibitSlug === "joze-dular" && ev.relation === "about-this-entity"),
+    "T43.6c Dularov zapis ostane O Dularju (about)",
+  );
+
+  // Fran Vesel ≠ Franjo Veselko (žetonska slika ju pri sovpajanju imena
+  // »fran/franjo« lahko izbere OBA — izbira je obstoječa vedenjska plast
+  // retrievala; meja naloge je CILJ in IDENTITETA, ne izbira)
+  const vesel = buildContext("sl", "Kaj je fotografiral Fran Vesel?");
+  const veselEntity = vesel.context.entities.find((e) => e.id === "person:fran-vesel");
+  const veselko = buildContext("sl", "Kdo je bil Franjo Veselko?");
+  const veselkoEntity = veselko.context.entities.find((e) => e.id === "person:franjo-veselko");
+  check(
+    veselEntity?.isTarget === true &&
+      vesel.context.entities.find((e) => e.id === "person:franjo-veselko")?.isTarget !== true,
+    "T43.7a Fran Vesel je cilj svojega vprašanja; Franjo Veselko (tudi če je soizbran) NI predmet",
+  );
+  check(
+    veselkoEntity?.isTarget === true &&
+      veselko.context.entities.find((e) => e.id === "person:fran-vesel")?.isTarget !== true,
+    "T43.7b Franjo Veselko je cilj svojega vprašanja; Fran Vesel (tudi če je soizbran) NI predmet — njegova identiteta se NE uporabi namesto Franjetove",
+  );
+  check(
+    !!veselEntity?.identity && /~1920/.test(veselEntity.identity) &&
+      attestedYearsOf(vesel.context).approxOnly.has(1920) && !attestedYearsOf(vesel.context).exact.has(1920),
+    "T43.7c Veselova identiteta nosi ~1920 in letni varuh jo drži PIBLIŽNO (tudi iz identitete)",
+  );
+  check(
+    (veselEntity?.distinctFrom ?? []).length === 0 &&
+      (veselkoEntity?.distinctFrom ?? []).length === 0,
+    "T43.7d Vesel/Veselko nimata skupnega žetona — ločita se po LASTNIH identitetah",
+  );
+
+  // Zupaniči: trije vnosi
+  for (const [q, id] of [
+    ["Kdo je bil Niko Županič?", "person:niko-zupanic"],
+    ["Kdo je bil Mate Zupanič-Švarski?", "person:mate-zupanic-svarski"],
+    ["Kdo je bil Katarina Zupanič?", "person:katarina-zupanic"],
+  ] as const) {
+    const { context } = buildContext("sl", q);
+    const target = context.entities.find((e) => e.id === id);
+    const others = context.entities.filter((e) => e.id !== id && e.type === "person");
+    check(
+      target?.isTarget === true &&
+        others.every((o) => o.isTarget !== true),
+      `T43.8 ${q.replace("Kdo je bil ", "")} → pravi cilj, drugi Zupaniči niso predmet`,
+    );
+    check(
+      (target?.distinctFrom ?? []).length >= 2,
+      `T43.8 ${q.replace("Kdo je bil ", "")} → vsaj 2 ločeni sorodniki v distinctFrom`,
+      JSON.stringify(target?.distinctFrom),
+    );
+  }
+
+  // Dragoši (KRAJ) ≠ Dragoš (OSEBA)
+  const dragosi = buildContext("sl", "Kaj so Dragoši?");
+  const dragosPerson = buildContext("sl", "Kdo je bil Nikolaj Dragoš?");
+  const dragosiPlace = dragosi.context.entities.find((e) => e.id === "place:dragosi");
+  const dragosEntity = dragosPerson.context.entities.find((e) => e.id === "person:nikolaj-dragos");
+  check(
+    dragosiPlace?.isTarget === true && /NI priimek Dragoš/.test(dragosiPlace?.identity ?? ""),
+    "T43.9a Dragoši: cilj je KRAJ, identiteta nosi ločitev od priimka Dragoš",
+    dragosiPlace?.identity ?? "",
+  );
+  check(
+    dragosEntity?.isTarget === true &&
+      dragosPerson.context.entities.find((e) => e.id === "place:dragosi")?.isTarget !== true,
+    "T43.9b Nikolaj Dragoš: cilj je OSEBA, kraj Dragoši NI predmet (smer NAPREJ — Dragоš ≠ kraj)",
+  );
+  check(
+    (dragosEntity?.distinctFrom ?? []).length === 0,
+    "T43.9c Nikolaj nima priimkovnega sorodnika med OSEBAMI (kraj se NE šteje)",
+  );
+
+  // Otok ≠ Krasinec (kraji)
+  const otok = buildContext("sl", "Kje je bilo partizansko letališče Otok?");
+  const krasinec = buildContext("sl", "Kaj je Krasinec?");
+  const otokEntity = otok.context.entities.find((e) => e.id === "place:partizansko-letalisce-otok");
+  const krasinecEntity = krasinec.context.entities.find((e) => e.id === "place:krasinec");
+  check(
+    otokEntity?.isTarget === true && /1473 prepeljanih ranjencev/.test(otokEntity?.identity ?? ""),
+    "T43.10a Otok: lastna identiteta kraja (travnik, ranjenci)",
+  );
+  check(
+    krasinecEntity?.isTarget === true && /Zaselk ob Kolpi/.test(krasinecEntity?.identity ?? ""),
+    "T43.10b Krasinec: lastna identiteta kraja (ločen kraj, ne Otok)",
+  );
+  check(
+    krasinec.context.entities.find((e) => e.id === "place:partizansko-letalisce-otok") === undefined ||
+      krasinec.context.entities.find((e) => e.id === "place:partizansko-letalisce-otok")?.isTarget !== true,
+    "T43.10c Krasinec vprašanje NE cilja na Otok (in obratno)",
+  );
+
+  // MVG-014 ↔ MVG-056: razcep ostaja (P1-E1)
+  const mvg = buildContext("sl", "Ali je dogodek iz MVG-014 isti kot MVG-056?");
+  check(
+    mvg.context.provided.has("evakuacija-1945") && mvg.context.provided.has("zracni-most-krasinec") &&
+      mvg.trace.openQuestions.some((q) => q.id === "P1-E1"),
+    "T43.11 MVG-014/MVG-056: oba zapisa + P1-E1 ostajajo (identitetni popravek razcepa NI dotaknil)",
+  );
+
+  // Peter Madronič: ostaja BREZ entitete (P0-E1)
+  const madronic = buildContext("sl", "Kdo je bil Peter Madronič?");
+  check(
+    !madronic.context.entities.some((e) => /madronic/i.test(e.label)) &&
+      madronic.trace.openQuestions.some((q) => q.id === "P0-E1"),
+    "T43.12 Madronič: NOBENA nova entiteta (P0-E1 vrsta ostaja edina pot)",
+  );
+
+  // Determinizem novih plasti (bajtno identičen dvojni zagon)
+  const d1 = JSON.stringify(buildContext("sl", "Kdo je bil Ivan Barle?").context.entities);
+  const d2 = JSON.stringify(buildContext("sl", "Kdo je bil Ivan Barle?").context.entities);
+  check(d1 === d2, "T43.13 identitetne plasti so deterministične (dvojni zagon identičen)");
+
+  // EN plast: identiteta obstaja tudi v angleški smeri
+  const ivanEn = buildContext("en", "Who was Ivan Barle?");
+  const ivanEnEntity = ivanEn.context.entities.find((e) => e.id === "person:ivan-barle");
+  check(
+    ivanEnEntity?.isTarget === true &&
+      /1841 – 1930/.test(ivanEnEntity?.identity ?? "") &&
+      (ivanEnEntity?.distinctFrom ?? []).some((d) => d.startsWith("Konrad Barle (19 February 1875")),
+    "T43.14 EN plast: isti cilj, ista ločitev (angleške letnice iz registra)",
+    JSON.stringify(ivanEnEntity?.distinctFrom),
+  );
+}
+
+// ===========================================================================
 console.log("");
 console.log("=".repeat(70));
 if (fail === 0) {
