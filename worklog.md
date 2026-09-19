@@ -2132,3 +2132,22 @@ Stage Summary:
 - FAIL #23 ZAPRT in dokazan: reprodukcija pred (4/4) → popravek (deterministični identitetni kontekst izključno iz obstoječega registra) → preverba po (realni model: Ivanova lastna identiteta z pravim virom; 214/157/100/72/39 preverb zelenih)
 - Arhitektura NEDOTIČNA: noben NLI/embedding/vektor/graf/semantični ponudnik/verifier; podatkovni model registra in semena nedotaknjena; entitete/ID-ji/vrzeli nespremenjeni (Madronič ostaja brez entitete, MVG-014/056 razcep P1-E1 ostaja, Janez Dular ostaja izven registra)
 - DOCUMENTIRANE MEJE (ostajajo po naročilu): sklanjatvena oblika priimka (»Barletu«) ne dokonča isTarget; soizbira priimkovnih sorojenikov (fran/franjo) je meja retrievala (cilj/identiteta ločita); semantični entailment trditev ostaja arhitekturno odprt
+
+---
+Task ID: 46
+Agent: Z.ai Code (glavni agent)
+Task: Spletna raziskava Gribelj + vgradnja najdb STROGO brez duplikatov; push na GitHub
+
+Work Log:
+- Kontrola duplikatov: izpisanih vseh 93 zapisov (slug+museumNo), 92 entitet, 13 dokumentov research-griblje/, 21 pojmov izrazoslovja
+- 10 spletnih iskanj + pridobitev strani (griblje.netlify.app, eheritage.si, hr.wiki Velika Paka, Radio Odeon, OŠ Loka, občina); surovine v research-griblje/raw-web-2026-10/
+- Zavrnjeno kot duplikat/neoverljivo: 3,45 km², 153,4 m, 8332 Gradac (MVG-030); italijanska postojanka (MVG-028); Romana Husič (MVG-003); DKZ 1996 (MVG-089); 1477/337 preb./zvonik 1890-Blaznik (brez virov, nasprotuje dokumentiranemu)
+- Vgrajeno (add-only): MVG-043 polno besedilo Šopeka (110 domov, Poljci, 1524 »niti eden plug«, prišverki ×6 rodbin, 60/161/64 + slovar, nagovor 4 profesorjev) + nov vir; MVG-004 uskoški odstavek o prišverkih; MVG-015 Velika Paka/Ertić + vir; MVG-060 EŠD 11118 + vir eHeritage; glossary +6 pojmov (pir, debeljača, zdenec, plahta, bohó, Krajnc se smeje) + črki B/D
+- Konstante regresij posodobljene po konvenciji: test-entities (T5.12 2→3 vrstice Šopek, T8.6 315→317, T8.7 51→52, T8.11 412→415, T9.3/4 412→415), test-timeline-map (T7 415/317/52, T8 OpenData 415), audit-entities, audit-timeline-map; README (vir identitet, db:seed, 46. sklop); KAZALO +14
+- db reseeda (idempotentno) — OpenData 93/415; dev strežnik na :3100 (sandbox 3000 zaseden z drugim projektom)
+- Verifikacija: test-entities 100 ✓/0 ✗, test-timeline-map 72 ✓/0 ✗ (z živim strežnikom), audit-entities ✓ 0, audit-timeline-map 39 ✓/0 ✗, verify-i18n 930×5, tsc 0, eslint 0, API spot-check (prišverki MVG-004/043, EŠD 11118 MVG-060, Velika Paka MVG-015)
+
+Stage Summary:
+- 46. sklop: spletna raziskava z vgradnjo LE novih najdb; dokumentirana zavrnitev 9+ duplikatov/neoverljivih trditev (evidenčna disciplina ohranjena)
+- Nova artefakta: research-griblje/14-spletna-raziskava-vgradnja-2026-10.md + raw-web-2026-10/ (surovi rezultati)
+- Zbirka: 93 zapisov / 415 vrstic virov / 317 identitet / 52 deljenih / 27 pojmov izrazoslovja

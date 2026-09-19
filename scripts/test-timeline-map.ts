@@ -9,7 +9,7 @@
  *  T4 MVG-014 ↔ MVG-056 — ločena, dokler kustos ne potrdi (P1-E1)
  *  T5 zemljevid spomina (26 PlaceRef, dokazane koordinate, roundtrip)
  *  T6 kuratorska varnost (Madronič ×2, Barle ×3, Dragoši ≠ Dragoš, Otok ≠ Krasinec)
- *  T7 podatkovna regresija (93/412/315/51/372, related, walkStopOf, i18n)
+ *  T7 podatkovna regresija (93/415/317/52/372, related, walkStopOf, i18n)
  *  T8 HTTP regresija (93/93 strani, IIIF, OpenData, QR, sitemap)
  *
  * Zagon: bun scripts/test-timeline-map.ts
@@ -443,10 +443,10 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 93 && new Set(seedExhibits.map((e) => e.museumNo)).size === 93, "T7.1 93 zapisov, 93 MVG številk");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 412, "T7.2 412 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 315, "T7.3 315 identitet virov (WorldCat OCLC 821110335 združen po dokazu)", `=${SOURCE_USAGE.size}`);
+  check(rows === 415, "T7.2 415 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 317, "T7.3 317 identitet virov (WorldCat OCLC 821110335 združen po dokazu; eheritage.si identiteta združuje MVG-060 + MVG-083)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
-  check(shared === 51, "T7.4 51 deljenih virov (≥2 zapisa)", `=${shared}`);
+  check(shared === 52, "T7.4 52 deljenih virov (≥2 zapisa)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
   const wcRows = seedExhibits.flatMap((ex) =>
     ex.sources
@@ -547,11 +547,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 93 && od.counts?.sources === 412,
-      "T8.3 OpenData: 93 zapisov / 412 virov",
+      od.counts?.exhibits === 93 && od.counts?.sources === 415,
+      "T8.3 OpenData: 93 zapisov / 415 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 412 && totalRows === 412, "T8.4 OpenData sourceKey 412/412", `${withKey}/${totalRows}`);
+    check(withKey === 415 && totalRows === 415, "T8.4 OpenData sourceKey 415/415", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();

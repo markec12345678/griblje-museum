@@ -10,6 +10,8 @@
 
 12. **[12-panjska-koncnica-2026-09.md](./12-panjska-koncnica-2026-09.md)** — 27. sklop: panjska končnica (kranjič, zlata doba 1820–1880, Micka Pavlič 141 motivov, register 2018) — zapis 93
 
+14. **[14-spletna-raziskava-vgradnja-2026-10.md](./14-spletna-raziskava-vgradnja-2026-10.md)** — 46. sklop: spletna raziskava z vgradnjo (polno besedilo Šopeka: 110 domov, 1524, prišverki rodbin, vsebina zbirke + belokranjski slovar; prišverki v uskoškem zapisu; Velika Paka/Ertić; EŠD 11118; 6 pojmov izrazoslovja) — kontrola duplikatov: zavrnjeni seznam
+
 ## Gradiva
 - `commons-slike.json` — metapodatki 11 slik Wikimedia Commons (URL, licenca, avtor)
 - `slike/` — 3 prenesene fotografije spomenikov (Kamra/Knjižnica Črnomelj, CC BY-NC)

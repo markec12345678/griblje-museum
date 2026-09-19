@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=e8b76a1b-6b7a-474c-af8f-af0cc5c01b2c
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="hosting-provider" content="Netlify">
+<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=e8b76a1b-6b7a-474c-af8f-af0cc5c01b2c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griblje | Bela krajina | Slovenija</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Odkrijte čar vasi Griblje v Beli krajini ob reki Kolpi. Zgodovina, znamenitosti, aktivnosti, nastanitve in lokalna kulinarika.">
+    <meta name="keywords" content="Griblje, Bela krajina, Kolpa, Slovenija, turizem, vas, Niko Županič, cerkev sv. Vida">
+    <meta name="author" content="Robert Pezdirc">
+    
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Griblje - Vas ob reki Kolpi">
+    <meta property="og:description" content="Odkrijte čar vasi Griblje v Beli krajini. Zgodovina, znamenitosti, aktivnosti in lokalna kulinarika ob najlepši slovenski reki.">
+    <meta property="og:image" content="Gemini_Generated_Image_ldyvl6ldyvl6ldyv.png">
+    <meta property="og:url" content="https://griblje.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sl_SI">
+    <meta property="og:site_name" content="Griblje - Bela krajina">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Griblje - Vas ob reki Kolpi">
+    <meta name="twitter:description" content="Odkrijte čar vasi Griblje v Beli krajini ob reki Kolpi.">
+    <meta name="twitter:image" content="Gemini_Generated_Image_ldyvl6ldyvl6ldyv.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB74H7NHMV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YB74H7NHMV');
+    </script>
+</head>
+<body>
+    <!-- Music Popup -->
+    <div id="musicPopup" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10001; justify-content: center; align-items: center;">
+        <div style="background: linear-gradient(135deg, #f8f6f0 0%, #e8e4d9 100%); padding: 3rem; border-radius: 20px; text-align: center; max-width: 400px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+            <div style="font-size: 4rem; margin-bottom: 1rem;">🎵</div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.5rem;">Pastirče mlado i milo</h3>
+            <p style="color: #666; margin-bottom: 1.5rem; font-size: 0.9rem;">Belokranjska ljudska pesem s tamburicami</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button onclick="playMusic()" style="background: #2d5016; color: white; border: none; padding: 1rem 2rem; border-radius: 50px; cursor: pointer; font-size: 1rem; font-weight: 600;">▶ Predvajaj</button>
+                <button onclick="closePopup()" style="background: transparent; color: #666; border: 2px solid #ccc; padding: 1rem 2rem; border-radius: 50px; cursor: pointer; font-size: 1rem;">Ne, hvala</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Music - YouTube Audio -->
+    <iframe id="bgMusic" width="0" height="0" src="" allow="autoplay" style="display:none;"></iframe>
+
+    <!-- Music Control Button -->
+    <button id="musicToggle" onclick="toggleMusic()" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: #2d5016; color: white; border: none; width: 60px; height: 60px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">🎵</button>
+
+    <!-- Intro Loader -->
+    <div class="intro-loader" id="introLoader">
+        <div class="loader-content">
+            <svg class="loader-logo" viewBox="0 0 100 100">
+                <circle class="loader-circle" cx="50" cy="50" r="45"/>
+            </svg>
+            <div class="loader-text">
+                <span>G</span><span>R</span><span>I</span><span>B</span><span>L</span><span>J</span><span>E</span>
+            </div>
+            <div class="loader-subtitle">Bela krajina</div>
+        </div>
+    </div>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Griblje</span>
+                <span class="logo-subtitle">Bela krajina</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#o-nas">O vasi</a></li>
+                <li><a href="#znamenitosti">Znamenitosti</a></li>
+                <li><a href="#aktivnosti">Aktivnosti</a></li>
+                <li><a href="#nastanitve">Nastanitve</a></li>
+                <li><a href="#kulinarika">Kulinarika</a></li>
+                <li><a href="#dediscina">Dediščina</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="Gemini_Generated_Image_ldyvl6ldyvl6ldyv.png" alt="Etnološka in naravna dediščina Gribelj" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-subtitle" data-aos="fade-up">Dobrodošli v</span>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Griblje</h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="400">Slikovita vas ob reki Kolpi v srcu Bele krajine</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+                <a href="#o-nas" class="hero-btn" data-aos="fade-up" data-aos-delay="600">Odkrijte več</a>
+                <a class='hero-btn' data-aos-delay='700' data-aos='fade-up' href='/experience' style='background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%); color: #1a1a2e;'>🎮 AI Experience</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O nas Section -->
+    <section class="section about" id="o-nas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Spoznajte nas</span>
+                <h2 class="section-title">O vasi Griblje</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="lead">Griblje so večje naselje v Beli krajini, na levem bregu reke Kolpe v občini Črnomelj.</p>
+                    <p>Naselje sestavljajo zaselki Dolnje Griblje, Brinsko selo, Srednje Griblje in Gornje Griblje. Ime se v zgodovinskih virih prvič pojavi kot <em>Griblach</em> (1468), nato <em>Briglach</em> (1490) in <em>Griblah</em> (1593). Izvor imena lahko izhaja iz besede "grib" (jurček - vrsta gobe), "griba" (gruda zemlje) ali "griva" (travnato pobočje). S 337 prebivalci (2025) ohranja pristno vaško vzdušje in bogato kulturno dediščino.</p>
+                    <p>Griblje ležijo približno <strong>10 km vzhodno od Črnomlja</strong>, na meji s Hrvaško. Na nasprotnem bregu reke Kolpe se nahajata hrvaški naselji Velika Paka in Ertić. Griblje z okolico so najbolj suh kraj v Beli krajini, z najmanj padavin na m² na leto.</p>
+                    <p><strong>Arheološka dediščina:</strong> V bližini Gribelj ob Kolpi so najdišča iz mlajše kamene dobe, bakrene dobe, bronaste dobe, starejše železne dobe in zgodnjega rimskega obdobja - dokaz tisočletne poselitve tega območja.</p>
+                    <a class='history-link' href='/zgodovina'>📜 Preberite celotno zgodovino vasi →</a>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">337</span>
+                            <span class="stat-label">Prebivalcev</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3,45</span>
+                            <span class="stat-label">km² površine</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">153</span>
+                            <span class="stat-label">m nadm. višine</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" onclick="openVillageModal()" style="cursor: pointer;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN9BcSqnlnG0AY-nDvAxWXYnOlKsBJ1Q3p5w&s" alt="Griblje vas">
+                    <span class="click-hint-img">Klikni za več →</span>
+                </div>
+            </div>
+            
+            <!-- Časovnica -->
+            <div class="timeline-ascii" style="margin-top: 3rem; background: #f8f6f0; border-radius: 12px; padding: 2rem; font-family: 'Courier New', monospace; overflow-x: auto;">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">Varuhi ob Kolpi - Zgodovinska časovnica</h3>
+                <pre style="font-size: 0.85rem; line-height: 1.6; color: #333;">
+  1. OBDOBJE: OGNJENI KRST (15. - 16. stoletje)
+  ---------------------------------------------
+        |
+  ⚔️    |   TURŠKI VPADI & OBRAMBA
+        |   "Antemurale Christianitatis"
+        |   Leta 1477: Prva omemba cerkve sv. Vida.
+        |   Griblje so "ščit" pred vpadi iz Balkana.
+        v
+
+  2. OBDOBJE: NOVA KRI (1597 - 17. stoletje)
+  ------------------------------------------
+        |
+  🦅    |   PRIHOD USKOKOV
+        |   Kolonizacija zapuščenih kmetij.
+        |   * Nov genetski bazen
+        |   * Vojaška organizacija (Vojna krajina)
+        |   * Jezikovno mešanje (štokavski vplivi)
+        v
+
+  3. OBDOBJE: GRADNJA IN ODHAJANJE (19. stoletje)
+  -----------------------------------------------
+        |
+  ⛪    |   KAMEN IN DUH
+        |   1890: Gradnja neogotskega zvonika.
+        |   Zlata doba sakralne umetnosti (slikar Blaznik).
+        |
+  🚢    |   ... IN SLOVO
+        |   Ekonomska kriza žene mnoge v ZDA ("Amerikanci").
+        |   Denar izseljencev obnavlja vas.
+        v
+
+  4. OBDOBJE: ODPOR IN ŽRTEV (1941 - 1945)
+  ----------------------------------------
+        |
+  🕯️    |   DRUGA SVETOVNA VOJNA
+        |   Bela krajina kot svobodno ozemlje.
+        |   * 13 žrtev (padli partizani in žrtve nasilja)
+        |   * 1961: Postavitev spomenika pred šolo.
+        v
+
+  5. OBDOBJE: SODOBNOST (21. stoletje)
+  ------------------------------------
+        |
+  🚣    |   TURIZEM & IDENTITETA
+        |   Reka Kolpa postane vir doživetij.
+        |   Griblje: Vrata v turistično Belo krajino.
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Znamenitosti Section -->
+    <section class="section attractions" id="znamenitosti">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Raziščite</span>
+                <h2 class="section-title">Znamenitosti</h2>
+            </div>
+            <div class="attractions-grid">
+                <div class="attraction-card large">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Griblje%2C_%C4%8Crnomelj_-_cerkev_sv._Vida.jpg/960px-Griblje%2C_%C4%8Crnomelj_-_cerkev_sv._Vida.jpg" alt="Cerkev sv. Vida">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Kulturna dediščina</span>
+                        <h3>Cerkev svetega Vida</h3>
+                        <p>Lokalna cerkev, posvečena svetemu Vidu, se nahaja južno od glavnega naselja. Prvič je bila omenjena leta 1526, sedanji objekt pa izvira iz 18. stoletja.</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxosij8n6F6Gg7fenqIfwKovRcfwFG4948gw&s" alt="Reka Kolpa">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Narava</span>
+                        <h3>Reka Kolpa</h3>
+                        <p>Najtoplejša reka v Sloveniji (do 28°C poleti) in ena najčistejših v Evropi. Idealna za kopanje, kajak in ribolov.</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5NpesM50WkT6tRpJFva8MB69iLI_dbWD5EA&s" alt="Ribnik Griblje">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Fotografska točka</span>
+                        <h3>Ribnik Griblje</h3>
+                        <p>Priljubljena točka za fotografiranje in opazovanje narave.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Znani rojaki -->
+    <section class="section famous-people">
+        <div class="container">
+            <div class="famous-content" id="nikoCard" onclick="openNikoModal()">
+                <div class="famous-image">
+                    <div class="image-frame">
+                        <img src="http://zgodovina.si/wp-content/uploads/2016/11/Zajeta-slika-k.jpg" alt="Niko Županič">
+                    </div>
+                </div>
+                <div class="famous-text">
+                    <span class="section-subtitle">Znani rojaki</span>
+                    <h2>Niko Županič</h2>
+                    <p class="years">1876 - 1961</p>
+                    <p>Slovenski etnolog, antropolog in politik, rojen v Griblju. Bil je profesor etnologije na Filozofski fakulteti v Ljubljani ter ustanovitelj in prvi ravnatelj Etnografskega muzeja v Ljubljani.</p>
+                    <span class="click-hint">Klikni za več →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vas Griblje Modal -->
+    <div class="modal" id="villageModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVillageModal()">&times;</button>
+            <div class="modal-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Bela_krajina_Kolpa.jpg" alt="Griblje">
+                <div>
+                    <h2>Vas Griblje</h2>
+                    <p class="modal-years">Bela krajina, Slovenija</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>Zgodovina</h3>
+                <p>Vas Griblje je bila <strong>prvič uradno omenjena leta 1526</strong> v urbarjih. V najstarejših zemljevidih se pojavlja pod imenom <em>Grüble</em>. Ime izvira iz staroslovanske besede <strong>gribljati</strong>, kar pomeni brazdati oziroma orati - kar kaže na dolgo kmetijsko tradicijo tega kraja.</p>
+                
+                <h3>Geografija</h3>
+                <p>Griblje ležijo na <strong>levem bregu reke Kolpe</strong> v občini Črnomelj, v jugovzhodni Sloveniji. Vas spada v tradicionalno pokrajino Belo krajino in je del statistične regije Jugovzhodna Slovenija. Nahaja se na <strong>nadmorski višini 153 m</strong> in zavzema <strong>3,45 km²</strong> površine.</p>
+                
+                <h3>Zaselki</h3>
+                <p>Naselje sestavljajo štirje zaselki:</p>
+                <ul>
+                    <li><strong>Dolnje Griblje</strong></li>
+                    <li><strong>Brinsko selo</strong></li>
+                    <li><strong>Srednje Griblje</strong></li>
+                    <li><strong>Gornje Griblje</strong></li>
+                </ul>
+                
+                <h3>Cerkev sv. Vida</h3>
+                <p>V vasi stoji <strong>cerkev svetega Vida</strong>, ki je bila prvič omenjena leta 1526. Sedanji objekt izvira iz 18. stoletja. Cerkev in pokopališče sta bila prvotno tik ob brezovem gozdu, ki so ga kmetje po letu 1848 s pomočjo vprežne živine izkrčili.</p>
+                
+                <h3>Naravne značilnosti</h3>
+                <p>Griblje z okolico so <strong>najbolj suh kraj v Beli krajini</strong>, z najmanj padavin na m² na leto. Mejna reka Kolpa je v tisočletjih s poplavljanjem ustvarila rodovitne travnike, tako imenovane <em>loke</em>. Ob reki se nahajajo številni studenci zaradi podzemnega delovanja vode.</p>
+                
+                <h3>Rudna peč</h3>
+                <p>V bližini leži kraj <strong>Rudna peč</strong>, kjer je v plasteh zemlje tudi železova prst - kar nakazuje na nekdanjo rudarsko dejavnost v tem območju.</p>
+                
+                <h3>Bližnja naselja</h3>
+                <p>Pomembnejša bližnja naselja so: Podzemelj (4 km), Gradac (6 km), Črnomelj (9 km) in Adlešiči (6 km).</p>
+                
+                <h3>Prebivalstvo</h3>
+                <p>Leta 2025 ima vas <strong>337 prebivalcev</strong>. Poštna številka je 8332 Gradac.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Niko Županič Modal -->
+    <div class="modal" id="nikoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeNikoModal()">&times;</button>
+            <div class="modal-header">
+                <img src="http://zgodovina.si/wp-content/uploads/2016/11/Zajeta-slika-k.jpg" alt="Niko Županič">
+                <div>
+                    <h2>Dr. Niko Županič</h2>
+                    <p class="modal-years">1. december 1876, Griblje – 1961, Ljubljana</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>Življenjepis</h3>
+                <p>Niko Županič se je rodil v Gribljah v Beli krajini. Osnovno šolo je obiskoval med letoma 1884 in 1887 v Podzemlju, meščansko šolo in gimnazijo pa med 1887 in 1897 v Novem mestu.</p>
+                
+                <h3>Izobrazba</h3>
+                <p>Po maturi se je vpisal na dunajsko univerzo, kjer je sprva študiral pravo, pozneje pa zgodovino, prazgodovinsko arheologijo, geografijo, etnologijo in antropologijo. Leta 1903 je doktoriral na Dunaju. Po doktoratu se je izpopolnjeval na antropoloških inštitutih v Münchnu, Zürichu in Baslu.</p>
+                
+                <h3>Kariera</h3>
+                <p>Po doktoratu je živel v Beogradu, kjer je bil kustos v Zgodovinsko-umetniškem in od leta 1914 v Etnografskem muzeju. Od leta 1921 je živel v Ljubljani, kjer je bil do leta 1940 ravnatelj Etnografskega muzeja, nato pa profesor etnologije na Filozofski fakulteti do upokojitve leta 1957.</p>
+                
+                <h3>Dosežki</h3>
+                <ul>
+                    <li>Prvi direktor Etnografskega muzeja v Ljubljani</li>
+                    <li>Prvi redni profesor za etnologijo na Univerzi v Ljubljani</li>
+                    <li>Objavil preko 200 razprav, knjig in člankov</li>
+                    <li>Raziskoval etnično in zgodovinsko preteklost Balkana</li>
+                </ul>
+                
+                <h3>Politično delovanje</h3>
+                <p>Med prvo svetovno vojno je politično deloval za ustanovitev jugoslovanske države. Kot član delegacije Kraljevine SHS je sodeloval na pariški mirovni konferenci. Dosegel je, da so Srbi v Niško deklaracijo vnesli tudi odcepitev slovenskega naroda od Avstro-Ogrske.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Šopek Modal -->
+    <div class="modal" id="sopekModal">
+        <div class="modal-content" style="max-height: 90vh; overflow-y: auto;">
+            <button class="modal-close" onclick="closeSopekModal()">&times;</button>
+            <div class="modal-header">
+                <div>
+                    <h2>Šopek poljskih cvetlic iz Gribelj v Beli Krajini</h2>
+                    <p class="modal-years">† Katarina Županič — Griblje ob Kolpi (1855-1921)</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>O zbirki</h3>
+                <p>Narodno blago, ki ga tu objavljamo, je zbrala in zapisala pokojna <strong>Katarina Županič iz Gribelj</strong> v letih 1894-1895 po nagovoru svojega sina, ki je bil takrat gimnazijec v Novem mestu (1889 do 1897).</p>
+                
+                <h3>Nastanek</h3>
+                <p>Pobudo za zbiranje narodnih pesmi, pripovedk, pregovorov, vraž kakor tudi starih oblek in orodja so dajali dijakom njihovi učitelji, profesorji novomeške gimnazije, posebno <strong>Josip Šturm</strong>, pater <strong>Lacko Hrovat</strong>, <strong>Rajko Perušek</strong> in <strong>Ivan Vrhovec</strong>.</p>
+                <p>Tako se je tudi Katarina Županič odzvala želji svojega sina in je narekovala ali zapisala, kar je znala. Po njeni smrti (1921) se je našel v zapuščini zvezek, v katerem so bile zapisane narodne pesmi, pregovori, izreki in nekaj jezikovnega blaga.</p>
+                
+                <h3>O Gribljah</h3>
+                <p>Griblje, velika vas ob Kolpi, ki šteje <strong>110 domov</strong>, ležijo na ozemlju belokranjskih Poljcev, in sicer na južni strani, tako da se dotikajo ozemlja Privršcev v adlešički župniji. Poljci stanujejo med Tribučami in Fučkovci na eni ter Metliko na drugi strani, na levem bregu Kolpe, na najlepšem in najplodnejšem delu Bele Krajnske.</p>
+                
+                <h3>Življenjepis Katarine Županič</h3>
+                <p>Katarina Županič se je rodila leta <strong>1855</strong> gospodarju Juretu Pezdircu (po domače »Grizinu«) iz Gribelj, h. št. 42. Dekletce je začelo hoditi v šolo šele z devetimi leti v eno uro hoda oddaljeni Podzemelj, kjer je bila leta 1857 ustanovljena ljudska šola.</p>
+                <p>Z dvanajstimi leti je končala šolo (1867) in je morala pomagati doma pri kmetovanju. Najprej je gonila ovce na pašo, posebno v breg Kolpe, pozneje pa goveda v brezje.</p>
+                <p>Leta 1876 je zaprosil za njeno roko premožen posestnik in trgovec <strong>Miko Županič</strong>. Iz tega zakona se je rodilo 8 otrok: sedem sinov in ena hči. Najstarejši sin <strong>Niko</strong> je postal doktor filozofije in minister Kraljevine SHS.</p>
+                
+                <h3>Turški vpadi in opustošenje</h3>
+                <p>V času turških vojn (XV. in XVI. stoletje) je Bela krajina silno trpela. Turki so prehajali preko nje, če so hoteli vpasti na Dolenjsko. Na kraju je ostalo belokranjsko polje skoraj prazno, brez prebivalcev. Listine za leto <strong>1524</strong> pišejo za Griblje, da <em>ni ostal niti eden plug po turškem napadu istega leta</em>.</p>
+                <p>Graščaki so vabili begunce iz Bosne in Hrvaške, da se naselijo na opustošenih poljih. Tako so zasedli prazno zemljo hrvaški begunci, kmetje iz Like in iz porečja Dobre in Mrežnice.</p>
+                
+                <h3>Prišverki - domača imena rodbin</h3>
+                <p>Stari »prišverki« (domača imena) hiš in rodbin v Gribljah in Krasincu povedo, odkod so prišle:</p>
+                <ul>
+                    <li><strong>Šimec</strong> (vulgo Judbinjak) — iz Udbine</li>
+                    <li><strong>Pezdirec</strong> (vulgo Loparec) — iz Lopara v Primorju</li>
+                    <li><strong>Starešinič</strong> (vulgo Švarščan) — iz Švarče pri Karlovcu</li>
+                    <li><strong>Brinci</strong> — iz Brinja v Liki</li>
+                    <li><strong>Krbavci</strong> iz Cerkvišč — iz Krbave</li>
+                    <li><strong>Mušiči</strong> iz Podzemlja (vulgo Gomirec) — iz Gomirja</li>
+                </ul>
+                
+                <h3>Vsebina zbirke</h3>
+                <ul>
+                    <li><strong>I. Narodne pesmi</strong> — 60 pesmi (ljubezenske, svatovske, pivske, božičnice)</li>
+                    <li><strong>II. Pregovori in izreki</strong> — 161 pregovorov</li>
+                    <li><strong>III. Vraže, šege in navade</strong> — 64 zapisov</li>
+                    <li><strong>IV. Nenavadne besede in izrazi</strong> — belokranjski slovar</li>
+                </ul>
+                
+                <h3>Primeri pesmi</h3>
+                <blockquote style="font-style: italic; border-left: 3px solid #c9a227; padding-left: 1rem; margin: 1rem 0;">
+                    "Sveti meni jasna mesečina,<br>
+                    da bo potom lahko potovati,<br>
+                    da bom videl koju ljubil budem.<br>
+                    Ljubil budem Milico divojko,<br>
+                    milo ljubo, lepo vijolico..."
+                </blockquote>
+                
+                <h3>Primeri pregovorov</h3>
+                <ul style="font-style: italic;">
+                    <li>"Kaj oči ne vidijo, to srce ne boli."</li>
+                    <li>"Daj času časa!"</li>
+                    <li>"Delaj kot da boš vavik živ, moli kot da boš jutro vmrl!"</li>
+                    <li>"Bolje je sebi pepel zgrinjat nek drugim zlato."</li>
+                    <li>"Par para vavik najde."</li>
+                </ul>
+                
+                <h3>Primeri vraž</h3>
+                <ul>
+                    <li>Ako znaš za kakove tiče, ne povi tega pod streho — bi ti se skujale.</li>
+                    <li>Sv. Vida rosa je dobra ranija za oči.</li>
+                    <li>Kada čuješ prvič kukavico popevat, poljubi zemljo, potle te ne bodo boleli zobi.</li>
+                </ul>
+                
+                <h3>Objava</h3>
+                <p>Zbirka je bila objavljena v reviji <em>Etnolog</em> (letnik 10-11, 1937-1939). <a href="https://www.etno-muzej.si/files/etnolog/pdf/etnolog_10_11_1937_1939_sopek.pdf" target="_blank">Preberi celoten dokument →</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Heritage Lightbox -->
+    <div class="heritage-lightbox" id="heritageLightbox" onclick="closeHeritageLightbox()">
+        <button class="lightbox-close" onclick="closeHeritageLightbox()">&times;</button>
+        <img id="heritageLightboxImg" src="" alt="">
+        <p id="heritageLightboxCaption" style="color: white; text-align: center; margin-top: 1rem; font-size: 1.1rem;"></p>
+    </div>
+
+    <!-- Slovar Modal -->
+    <div class="modal" id="slovarModal">
+        <div class="modal-content" style="max-height: 90vh; overflow-y: auto;">
+            <button class="modal-close" onclick="closeSlovarModal()">&times;</button>
+            <div class="modal-header">
+                <div>
+                    <h2>Belokranjski slovar</h2>
+                    <p class="modal-years">Nenavadne besede in izrazi iz Gribelj</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Izbor belokranjskih besed in izrazov, zbranih v zbirki "Šopek poljskih cvetlic" (1894-1895):</p>
+                
+                <h3>Vsakdanje besede</h3>
+                <ul>
+                    <li><strong>pir</strong> — svatba</li>
+                    <li><strong>debeljača</strong> — koruza</li>
+                    <li><strong>žbela</strong> — čebela</li>
+                    <li><strong>zdenec</strong> — studenec</li>
+                    <li><strong>luč</strong> — tenka treska za svetiti</li>
+                    <li><strong>mazana</strong> — liter in pol držeči vrč</li>
+                    <li><strong>polič</strong> — vrč, ki drži pol mazane</li>
+                    <li><strong>oterač</strong> — brisača</li>
+                    <li><strong>plahta</strong> — rjuha za pokriti posteljo</li>
+                </ul>
+                
+                <h3>Klici živini</h3>
+                <ul>
+                    <li><strong>bohó</strong> — klic volom, da se ustavijo</li>
+                    <li><strong>čo hajt!</strong> — poziv volom, da vozijo na desno</li>
+                    <li><strong>vr hajs</strong> — poziv volom, da vozijo na levo</li>
+                    <li><strong>éha!</strong> — klic za ustaviti konja</li>
+                    <li><strong>čiba, čibica</strong> — klic kokošim, da pridejo domov jest</li>
+                </ul>
+                
+                <h3>Imena</h3>
+                <ul>
+                    <li><strong>Miko, Mike, Mikič</strong> — Nikolaj</li>
+                    <li><strong>Jure, Juraj, Jurič</strong> — Jurij</li>
+                    <li><strong>Jandre</strong> — Andrej</li>
+                    <li><strong>Jarne</strong> — Jernej</li>
+                    <li><strong>Anuška, Nuška</strong> — Ana, Anica</li>
+                </ul>
+                
+                <h3>Reki in primerjave</h3>
+                <ul>
+                    <li><strong>pun kot jajce</strong> — do kraja poln</li>
+                    <li><strong>moker kot žlop</strong> — povsem premočen</li>
+                    <li><strong>kisel kot vrisk</strong> — zelo kisel</li>
+                    <li><strong>suh kot trn</strong> — zelo suh</li>
+                    <li><strong>lep kot ajngel</strong> — lep kot angel</li>
+                    <li><strong>lep kot dan</strong> — lep kot dan</li>
+                    <li><strong>dobr kot materino mleko</strong> — zelo dober</li>
+                </ul>
+                
+                <h3>Posebni izrazi</h3>
+                <ul>
+                    <li><strong>Krajnc se smeje</strong> — Mirna gora in Gorjanci žarijo od zahajočega sonca; če se "Krajnc smeje", bo lepo drugi dan</li>
+                    <li><strong>Tiho bodi, črni Krajnc te bo!</strong> — Tako plašijo poredne otroke, ker so bili Kranjci črno oblečeni in tuji</li>
+                    <li><strong>mirak</strong> — mnogo</li>
+                    <li><strong>nebore</strong> — veš! ("Tako je nebore" = veš, tako je)</li>
+                </ul>
+                
+                <p style="margin-top: 1.5rem;"><a href="https://www.etno-muzej.si/files/etnolog/pdf/etnolog_10_11_1937_1939_sopek.pdf" target="_blank">Preberi celoten slovar v izvirniku →</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DKZ Modal -->
+    <div class="modal" id="dkzModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeDkzModal()">&times;</button>
+            <div class="modal-header">
+                <div>
+                    <h2>Društvo kmečkih žena Griblje</h2>
+                    <p class="modal-years">Ustanovljeno leta 1996</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>O društvu</h3>
+                <p><strong>Društvo kmečkih žena Griblje</strong> je bilo ustanovljeno leta 1996 z namenom ohranjanja in promocije lokalne kulturne dediščine Bele krajine.</p>
+                
+                <h3>Dejavnosti</h3>
+                <ul>
+                    <li>Ohranjanje tradicionalnih belokranjskih receptov</li>
+                    <li>Prenos znanja o ročnih delih na mlajše generacije</li>
+                    <li>Organizacija kulturnih dogodkov v vasi</li>
+                    <li>Sodelovanje na lokalnih sejmih in prireditvah</li>
+                    <li>Promocija belokranjske kulinarike (pogača, vino, jagenjček)</li>
+                </ul>
+                
+                <h3>Pomen</h3>
+                <p>Društvo igra pomembno vlogo pri ohranjanju vaške skupnosti in povezovanju generacij. Članice skrbijo za prenos znanja o tradicionalnih obrteh, kulinariki in običajih, ki bi sicer lahko utonili v pozabo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Šola Modal -->
+    <div class="modal" id="schoolModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeSchoolModal()">&times;</button>
+            <div class="modal-header">
+                <div>
+                    <h2>Podružnična šola Griblje</h2>
+                    <p class="modal-years">Od leta 1889 do danes</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>Zgodovina</h3>
+                <p>Podružnična šola Griblje je bila zgrajena okoli leta 1888, prvo šolsko leto pa se je začelo 1889/90. Šola je del OŠ Loka Črnomelj in že več kot 130 let služi izobraževanju otrok iz Gribelj in okoliških zaselkov.</p>
+                
+                <h3>Prvi učitelj</h3>
+                <p><strong>Peter Kambič s Krasinca</strong> je bil prvi učitelj na šoli. Žal je še istega leta (1889/90) zbolel in umrl. Kljub kratkemu delovanju je postavil temelje izobraževanju v vasi, ki se ohranja do danes.</p>
+                
+                <h3>Obletnica</h3>
+                <p>Leta 2019 je šola praznovala <strong>130-letnico delovanja</strong>. Ob tej priložnosti so se zbrali nekdanji učenci, učitelji in vaščani ter obeležili bogato zgodovino šolstva v Gribljah.</p>
+                
+                <h3>Sodobnost</h3>
+                <p>Danes šola deluje kot podružnica OŠ Loka Črnomelj. Kljub majhnosti dosega odlične rezultate - učenci so se uvrstili na državna tekmovanja iz matematike, biologije in zgodovine.</p>
+                
+                <h3>Prenova</h3>
+                <p>Leta 2020 je bila izvedena celovita prenova ogrevalnega sistema z namestitvijo toplotne črpalke, kar kaže na zavezanost občine k ohranjanju šole v kraju.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aktivnosti Section -->
+    <section class="section activities" id="aktivnosti">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Doživite</span>
+                <h2 class="section-title">Aktivnosti</h2>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card has-image">
+                    <div class="activity-image">
+                        <img src="https://www.belakrajina.si/site/assets/files/1098/20190614_piknik_damelj-107.480x0.jpg" alt="Plavanje">
+                    </div>
+                    <h3>Plavanje</h3>
+                    <p>Osvežite se v kristalno čisti reki Kolpi, eni najčistejših rek v Evropi.</p>
+                </div>
+                <div class="activity-card has-image">
+                    <div class="activity-image">
+                        <img src="https://dolenjskavila.si/wp-content/uploads/2023/03/ribarjenje.png" alt="Ribolov">
+                    </div>
+                    <h3>Ribolov</h3>
+                    <p>Kolpa je raj za ribiče z bogato populacijo različnih vrst rib.</p>
+                </div>
+                <div class="activity-card has-image">
+                    <div class="activity-image">
+                        <img src="https://www.vandraj.si/wp-content/uploads/2024/07/big-berry-resort-kolpa-bela-krajina-metlika-mobilne-hiske-kamp1.jpg" alt="Kanu na Kolpi">
+                    </div>
+                    <h3>Kanu & kajak</h3>
+                    <p>Raziskujte reko Kolpo z veslanjem skozi čudovito naravo.</p>
+                </div>
+                <div class="activity-card has-image">
+                    <div class="activity-image">
+                        <img src="https://www.belakrajina.si/site/assets/files/4218/2020_08_30_6__dnevi_kocevarske_k_3-1.jpg" alt="Pohodništvo">
+                    </div>
+                    <h3>Pohodništvo</h3>
+                    <p>Odkrijte skrite kotičke Bele krajine po urejenih pohodniških poteh.</p>
+                </div>
+                <div class="activity-card has-image">
+                    <div class="activity-image">
+                        <img src="https://www.visitsaleska.si/app/uploads/2019/09/Smrekovec-kolesarjenje-3540-visitsaleska.jpg" alt="Kolesarjenje">
+                    </div>
+                    <h3>Kolesarjenje</h3>
+                    <p>Razgibane kolesarske poti za vse ravni zahtevnosti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jurjevanje Section -->
+    <section class="section jurjevanje-simple" id="jurjevanje">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tradicija</span>
+                <h2 class="section-title">Jurjevanje</h2>
+            </div>
+            <div class="jurjevanje-card">
+                <div style="margin-bottom: 2rem; text-align: center;">
+                    <img src="zeleni-jurij-praznovanje.png" alt="Jurjevanje" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                    <img src="tambura-ki-ansambel.png" alt="Tamburaški ansambel v belokranjski noši" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                </div>
+                <p>Tradicionalni praznik, ki vključuje petje, koledovanje in kurjenje jurjevanjskega kresa. Ta starodavni običaj ohranja bogato kulturno dediščino Bele krajine in povezuje skupnost skozi generacije.</p>
+                <div class="jurjevanje-features-simple">
+                    <div class="feature-simple">
+                        <span class="feature-icon">🔥</span>
+                        <span>Kurjenje kresa</span>
+                    </div>
+                    <div class="feature-simple">
+                        <span class="feature-icon">🎵</span>
+                        <span>Ljudsko petje</span>
+                    </div>
+                    <div class="feature-simple">
+                        <span class="feature-icon">🎭</span>
+                        <span>Koledovanje</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nastanitve Section -->
+    <section class="section accommodations" id="nastanitve">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Prespite</span>
+                <h2 class="section-title">Nastanitve</h2>
+            </div>
+            <div class="accommodations-grid">
+                <div class="accommodation-card">
+                    <div class="accommodation-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5oYAYJwae1gAhz0BJkgIz2bgn77C0A7UJQ&s" alt="Počitniške hiše">
+                    </div>
+                    <div class="accommodation-content">
+                        <h3>Počitniške hiše</h3>
+                        <p>V Gribljah in okolici najdete več počitniških hiš, primernih za družine in manjše skupine.</p>
+                        <ul class="accommodation-features">
+                            <li>Blizu reke Kolpe</li>
+                            <li>Idealno za družine</li>
+                            <li>Mir in narava</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accommodation-card">
+                    <div class="accommodation-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62kgsTspXY46YzY_YhMbvPXbbRRwrPBm7Qw&s" alt="Apartmaji">
+                    </div>
+                    <div class="accommodation-content">
+                        <h3>Apartmaji</h3>
+                        <p>Sodobno opremljeni apartmaji za udobno bivanje v bližini naravnih lepot Bele krajine.</p>
+                        <ul class="accommodation-features">
+                            <li>Različne kapacitete</li>
+                            <li>Mirna lokacija</li>
+                            <li>Blizu kopališča</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accommodation-card">
+                    <div class="accommodation-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kiKtEnQI_kbL-QKJMPFDadSGpYnPOf66AQ&s" alt="Kampiranje">
+                    </div>
+                    <div class="accommodation-content">
+                        <h3>Kampiranje</h3>
+                        <p>Ob reki Kolpi so urejeni kampi s prostori za šotore in prikolice.</p>
+                        <ul class="accommodation-features">
+                            <li>Ob reki Kolpi</li>
+                            <li>Vodne aktivnosti</li>
+                            <li>Sezona: poletje</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kulinarika Section -->
+    <section class="section culinary" id="kulinarika">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Okusi</span>
+                <h2 class="section-title">Lokalna kulinarika</h2>
+            </div>
+            <div class="culinary-grid">
+                <div class="culinary-card">
+                    <div class="culinary-image">
+                        <img src="https://images.24ur.com/media/images/953x459/Oct2021/aa974814a97215da9afd_62631611.jpg?v=6dad&fop=fp:0.49:0.42" alt="Belokranjska pogača">
+                    </div>
+                    <div class="culinary-content">
+                        <h3>Belokranjska pogača</h3>
+                        <p>Tradicionalna pogača iz kvašenega testa, obložena z ocvirki, sirom in jajci. Nepogrešljiva na vsaki praznični mizi v Beli krajini.</p>
+                    </div>
+                </div>
+                <div class="culinary-card">
+                    <div class="culinary-image">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800" alt="Vino">
+                    </div>
+                    <div class="culinary-content">
+                        <h3>Vina Bele krajine</h3>
+                        <p><strong>Metliška črnina</strong> - rahlo sladko rdeče vino. <strong>Belokranjec</strong> - osvežilno belo vino. Pridelana na sončnih pobočjih.</p>
+                    </div>
+                </div>
+                <div class="culinary-card">
+                    <div class="culinary-image">
+                        <img src="https://www.bolha.com/image-xlsize/drobnica/pecen-jagencek-slika-56682544.jpg" alt="Jagenjček">
+                    </div>
+                    <div class="culinary-content">
+                        <h3>Jagenjček</h3>
+                        <p>Pečen jagenjček na žaru ali v peči - tradicionalna belokranjska jed za praznike in družinske praznovanja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dediščina Section -->
+    <section class="section heritage" id="dediscina">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Arhiv</span>
+                <h2 class="section-title">Kulturna dediščina</h2>
+                <p class="section-desc">Zgodovinske fotografije iz zbirke <a href="https://www.etno-muzej.si/sl/digitalne-zbirke/lokacije/griblje" target="_blank">Slovenskega etnografskega muzeja</a></p>
+            </div>
+            <div class="heritage-main-image" style="margin-bottom: 3rem; text-align: center;">
+                <img src="Gemini_Generated_Image_g33aqzg33aqzg33a.png" alt="Etnološka in naravna dediščina Gribelj" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div class="heritage-main-image" style="margin-bottom: 3rem; text-align: center;">
+                <img src="Gemini_Generated_Image_yancbdyancbdyanc.png" alt="Ilustracija Gribelj" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div class="heritage-main-image" style="margin-bottom: 3rem; text-align: center;">
+                <img src="Gemini_Generated_Image_n8ruon8ruon8ruon.png" alt="Ilustracija Gribelj" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div class="heritage-main-image" style="margin-bottom: 3rem; text-align: center;">
+                <img src="ChatGPT Image Dec 17, 2025, 09_43_12 AM.png" alt="Ilustracija Gribelj" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div class="heritage-main-image" style="margin-bottom: 3rem; text-align: center;">
+                <img src="Village folk dance in rural setting.png" alt="Belokranjski ljudski ples" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div class="heritage-main-image" style="margin-bottom: 3rem; text-align: center;">
+                <img src="1765966959352.png" alt="Belokranjsko kolo - tradicionalni ples" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div class="heritage-main-image" style="margin-bottom: 3rem; text-align: center;">
+                <img src="1765966969967.png" alt="Griblje ob Kolpi - ilustracija" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div class="heritage-grid">
+                <div class="heritage-card" onclick="openHeritageLightbox('https://www.etno-muzej.si/files/oc/f0000182.jpg', 'Belokranjska hiša - Hiša z gospodarskim poslopjem, Griblje')" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/oc/f0000182.jpg" alt="Belokranjska hiša">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Belokranjska hiša</h3>
+                        <p>Hiša z gospodarskim poslopjem, Griblje</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openHeritageLightbox('https://www.etno-muzej.si/files/oc/f0000183.jpg', 'Kmečka hiša - Tradicionalna hiša z vsakdanjo nošo')" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/oc/f0000183.jpg" alt="Hiša Griblje">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Kmečka hiša</h3>
+                        <p>Tradicionalna hiša z vsakdanjo nošo</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openHeritageLightbox('https://www.etno-muzej.si/files/oc/f0000212.jpg', 'Rojstna hiša Nika Županiča - Enonadstropna hiša na pero, 1920')" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/oc/f0000212.jpg" alt="Rojstna hiša Nika Županiča">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Rojstna hiša Nika Županiča</h3>
+                        <p>Enonadstropna hiša na pero, 1920</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openHeritageLightbox('https://www.etno-muzej.si/files/oc/f0001407.jpg', 'Hiša z ograjo - Tradicionalna belokranjska hiša')" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/oc/f0001407.jpg" alt="Hiša z ograjo">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Hiša z ograjo</h3>
+                        <p>Tradicionalna belokranjska hiša</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openHeritageLightbox('https://www.etno-muzej.si/files/oc/n0014096.jpg', 'Griblje - Arhivska fotografija vasi')" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/oc/n0014096.jpg" alt="Griblje">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Griblje</h3>
+                        <p>Arhivska fotografija vasi</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openHeritageLightbox('https://www.radio-odeon.com/site/assets/files/9205/griblje1925.webp', 'Griblje 1925 - Zgodovinska fotografija')" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.radio-odeon.com/site/assets/files/9205/griblje1925.webp" alt="Griblje 1925">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Griblje 1925</h3>
+                        <p>Zgodovinska fotografija</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openSchoolModal()" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.os-loka-crnomelj.si/wp-content/blogs.dir/25115/files/griblje-prireditev/Griblje-17.jpg" alt="Podružnična šola Griblje">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Podružnična šola Griblje</h3>
+                        <p>Od leta 1889 • Klikni za več →</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openSopekModal()" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://trgovina.sanjski-sopek.si/wp-content/uploads/2020/02/sopek-ranunkule-pomladno-veselje-2203.jpg" alt="Šopek poljskih cvetlic">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Šopek poljskih cvetlic</h3>
+                        <p>Katarina Županič, 1894 • Klikni za več →</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openSlovarModal()" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/oc/f0000183.jpg" alt="Belokranjski slovar">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Belokranjski slovar</h3>
+                        <p>Nenavadne besede in izrazi • Klikni za več →</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openDkzModal()" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/oc/n0014096.jpg" alt="Društvo kmečkih žena Griblje">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Društvo kmečkih žena</h3>
+                        <p>Od leta 1996 • Klikni za več →</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openPisaniceModal()" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="https://www.etno-muzej.si/files/431525573_885469956922906_3554630907898465733_n.jpg" alt="Belokranjske pisanice">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Belokranjske pisanice</h3>
+                        <p>UNESCO dediščina • Klikni za več →</p>
+                    </div>
+                </div>
+                <div class="heritage-card" onclick="openKmetovSinModal()" style="cursor: pointer;">
+                    <div class="heritage-image">
+                        <img src="http://zgodovina.si/wp-content/uploads/2016/11/Zajeta-slika-k.jpg" alt="Kmetov sin na Pariški konferenci">
+                    </div>
+                    <div class="heritage-content">
+                        <h3>Kmetov sin na Pariški konferenci</h3>
+                        <p>🎧 Zvočni posnetek • Klikni za več →</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerija Section -->
+    <section class="section gallery">
+        <div class="section-header">
+            <span class="section-subtitle">Utrinki</span>
+            <h2 class="section-title">Galerija</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Bela_krajina_Kolpa.jpg" alt="Griblje ob Kolpi">
+            </div>
+            <div class="gallery-item">
+                <img src="kolpa-poleti-kopanje-in-olni.png" alt="Kolpa poleti - kopanje">
+            </div>
+            <div class="gallery-item">
+                <img src="cerkev-sv-vida-v-zimski-atmosferi.png" alt="Cerkev sv. Vida pozimi">
+            </div>
+            <div class="gallery-item">
+                <img src="pogled-na-vas-z-vi-ine.png" alt="Panorama vasi Griblje">
+            </div>
+            <div class="gallery-item">
+                <img src="jesenska-trgatev-v-vinogradih.png" alt="Trgatev v vinogradih">
+            </div>
+            <div class="gallery-item">
+                <img src="-enska-v-tradicionalni-belokranjski-no-i.png" alt="Belokranjska noša">
+            </div>
+        </div>
+        
+        <!-- Dodatne ilustracije -->
+        <div style="margin-top: 3rem; text-align: center;">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 1.5rem;">
+                <img src="Gemini_Generated_Image_n8ruon8ruon8ruon.png" alt="Griblje ilustracija" style="max-width: 48%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                <img src="griblje.jpg" alt="Griblje" style="max-width: 48%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 1.5rem;">
+                <img src="Gemini_Generated_Image_g33aqzg33aqzg33a.png" alt="Griblje ilustracija 2" style="max-width: 48%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                <img src="1c8c494db9a4ff4db96d0337615dce28.jpeg" alt="Ženske s čebulnimi venci" style="max-width: 48%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+            </div>
+            <img src="Gemini_Generated_Image_yancbdyancbdyanc.png" alt="Griblje ilustracija 3" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+        </div>
+    </section>
+
+    <!-- Oddajte Sliko Section -->
+    <section class="section upload-section" id="oddaj-sliko">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Delite z nami</span>
+                <h2 class="section-title">Oddajte svojo sliko</h2>
+                <p class="section-description">Imate lepe fotografije Gribelj? Delite jih z nami in pojavile se bodo v naši galeriji!</p>
+            </div>
+            <div class="upload-box">
+                <div class="upload-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="17 8 12 3 7 8"/>
+                        <line x1="12" y1="3" x2="12" y2="15"/>
+                    </svg>
+                </div>
+                <h3>Povlecite sliko sem</h3>
+                <p>ali kliknite za izbiro datoteke</p>
+                <input type="file" id="fileUpload" accept="image/*" hidden>
+                <button class="upload-btn" onclick="document.getElementById('fileUpload').click()">Izberite sliko</button>
+                <div class="upload-info">
+                    <p>Dovoljeni formati: JPG, PNG, WEBP (max 10MB)</p>
+                </div>
+                <div class="upload-preview" id="uploadPreview"></div>
+                <form class="upload-form" id="uploadForm" style="display: none;">
+                    <input type="text" placeholder="Vaše ime" required>
+                    <input type="text" placeholder="Kratek opis slike" required>
+                    <button type="submit" class="submit-btn">Pošlji sliko</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section class="section contact" id="kontakt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Pišite nam</span>
+                <h2 class="section-title">Kontakt</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Lokacija</h4>
+                            <p>Griblje 70<br>8332 Gradac<br>Slovenija</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+38640451250">040 451 250</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:robertpezdirc@gmail.com">robertpezdirc@gmail.com</a></p>
+                            <h4 style="margin-top: 1rem;">Kontaktna oseba</h4>
+                            <p>Robert Pezdirc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11105.8!2d15.28!3d45.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764f6c5c5c5c5c5%3A0x1234567890abcdef!2sGriblje!5e0!3m2!1ssl!2ssi!4v1702800000000"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 16px;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Kako do nas -->
+            <div style="margin-top: 3rem; background: #f8f6f0; border-radius: 12px; padding: 2rem;">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">🚗 Kako do nas</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="text-align: center;">
+                        <strong>Iz Ljubljane</strong>
+                        <p>~95 km • ~1h 15min<br>A2 → Novo mesto → Črnomelj → Griblje</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <strong>Iz Zagreba</strong>
+                        <p>~85 km • ~1h 10min<br>A1 → Karlovac → Metlika → Griblje</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <strong>Iz Novega mesta</strong>
+                        <p>~45 km • ~40min<br>Smer Črnomelj → Griblje</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Komentarji in Števec Section -->
+    <section class="section" id="komentarji" style="background: #f8f6f0; padding: 4rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Vaše mnenje</span>
+                <h2 class="section-title">Knjiga gostov</h2>
+            </div>
+            
+            <!-- Števec obiskov -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div style="display: inline-block; background: linear-gradient(135deg, #2d5016 0%, #4a7c23 100%); color: white; padding: 1.5rem 3rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(45,80,22,0.3);">
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.9;">👁️ Število obiskov</p>
+                    <p id="visitorCount" style="font-size: 3rem; font-weight: bold; font-family: 'Playfair Display', serif;">0</p>
+                </div>
+            </div>
+            
+            <!-- Obrazec za komentar - Netlify Forms -->
+            <div style="max-width: 600px; margin: 0 auto 3rem;">
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <h3 style="margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">✍️ Pustite svoj komentar</h3>
+                    <form name="komentarji" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="komentarji">
+                        <p style="display: none;"><input name="bot-field"></p>
+                        <div style="margin-bottom: 1rem;">
+                            <input type="text" name="ime" id="commentName" placeholder="Vaše ime" required style="width: 100%; padding: 0.8rem 1rem; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <textarea name="komentar" id="commentText" placeholder="Vaš komentar..." rows="4" required style="width: 100%; padding: 0.8rem 1rem; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; resize: vertical; box-sizing: border-box;"></textarea>
+                        </div>
+                        <button type="submit" style="background: #2d5016; color: white; border: none; padding: 1rem 2rem; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; width: 100%;">📝 Oddaj komentar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Seznam komentarjev -->
+            <div id="commentsList" style="max-width: 600px; margin: 0 auto;">
+                <h3 style="margin-bottom: 1.5rem; font-family: 'Playfair Display', serif; text-align: center;">💬 Komentarji obiskovalcev</h3>
+                <!-- Komentarji se dodajo tukaj -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">Griblje</span>
+                        <span class="logo-subtitle">Bela krajina</span>
+                    </a>
+                    <p>Odkrijte čar Bele krajine v naši slikoviti vasi ob reki Kolpi.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Povezave</h4>
+                    <ul>
+                        <li><a href="#o-nas">O vasi</a></li>
+                        <li><a href="#znamenitosti">Znamenitosti</a></li>
+                        <li><a href="#aktivnosti">Aktivnosti</a></li>
+                        <li><a href="#nastanitve">Nastanitve</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Bela krajina</h4>
+                    <ul>
+                        <li><a href="https://www.belakrajina.si" target="_blank">Turizem Bela krajina</a></li>
+                        <li><a href="#" target="_blank">Občina Črnomelj</a></li>
+                        <li><a href="#" target="_blank">Kolpa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Sledite nam</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/robert.pezdirc/" target="_blank" class="social-link" title="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/38640451250" target="_blank" class="social-link" title="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:robertpezdirc@gmail.com" class="social-link" title="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        <a href="tel:+38640451250" class="social-link" title="Telefon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; text-align: center;">
+                <h4 style="color: white; margin-bottom: 0.5rem;">📬 Ostanite v stiku</h4>
+                <p style="color: #aaa; margin-bottom: 1rem; font-size: 0.9rem;">Prijavite se na novice o dogodkih v Gribljah</p>
+                <form name="newsletter" method="POST" data-netlify="true" style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; max-width: 400px; margin: 0 auto;">
+                    <input type="hidden" name="form-name" value="newsletter">
+                    <input type="email" name="email" placeholder="Vaš email" required style="flex: 1; min-width: 200px; padding: 0.75rem 1rem; border-radius: 8px; border: none; font-size: 1rem;">
+                    <button type="submit" style="background: #2d5016; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer; font-weight: 600;">Prijava</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <h4>Uporabne povezave</h4>
+                <a href="https://www.belakrajina.si" target="_blank">Turizem Bela krajina</a>
+                <a href="https://www.etno-muzej.si/sl/digitalne-zbirke/lokacije/griblje" target="_blank">Etnografski muzej - Griblje</a>
+                <a href="https://www.crnomelj.si" target="_blank">Občina Črnomelj</a>
+                <a href='/zgodovina'>Zgodovina Gribelj</a>06-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Uporabne povezave</h4>
+                <a href="https://www.belakrajina.si" target="_blank">Turizem Bela krajina</a>
+                <a href="https://www.etno-muzej.si/sl/digitalne-zbirke/lokacije/griblje" target="_blank">Etnografski muzej - Griblje</a>
+                <a href="https://www.crnomelj.si" target="_blank">Občina Črnomelj</a>
+                <a href='/zgodovina'>Zgodovina Gribelj</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Griblje, Bela krajina. Vse pravice pridržane.</p>
+                <p class="photo-credits">Fotografija hero: Alanorlic – lastno delo, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=74805777" target="_blank">Wikimedia Commons</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pisanice Modal -->
+    <div id="pisaniceModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closePisaniceModal()">&times;</span>
+            <h2>🥚 Belokranjske pisanice</h2>
+            <p><strong>UNESCO nematerialna kulturna dediščina</strong></p>
+            <img src="https://www.etno-muzej.si/files/431525573_885469956922906_3554630907898465733_n.jpg" alt="Belokranjske pisanice" style="width: 100%; max-width: 400px; border-radius: 12px; margin: 1rem auto; display: block;">
+            <p>Belokranjske pisanice so tradicionalna obrt barvanja velikonočnih jajc, ki se je v Beli krajini ohranila že več kot 200 let.</p>
+            <h3>Tehnika</h3>
+            <p>Pisanice se izdelujejo z voščeno tehniko (batik). Na jajce se s posebnim pisalom (pisalkom) nanaša raztaljen vosek, ki zaščiti površino pred barvo. Postopek se večkrat ponovi z različnimi barvami.</p>
+            <h3>Motivi</h3>
+            <p>Tradicionalni motivi vključujejo:</p>
+            <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+                <li>🌿 Rastlinski motivi (rožice, listi)</li>
+                <li>☀️ Sončni motivi</li>
+                <li>✝️ Krščanski simboli</li>
+                <li>💠 Geometrijski vzorci</li>
+            </ul>
+            <h3>Pomen</h3>
+            <p>Pisanice so bile darilo ob velikonočnih praznikih - simbol plodnosti, življenja in pomladi. Danes predstavljajo pomemben del belokranjske kulturne identitete.</p>
+        </div>
+    </div>
+
+    <!-- Kmetov Sin Modal -->
+    <div id="kmetovSinModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeKmetovSinModal()">&times;</span>
+            <h2>🎧 Kmetov sin na Pariški konferenci</h2>
+            <p><strong>Zgodba o Niku Županiču</strong></p>
+            <img src="http://zgodovina.si/wp-content/uploads/2016/11/Zajeta-slika-k.jpg" alt="Dr. Niko Županič" style="width: 100%; max-width: 300px; border-radius: 12px; margin: 1rem auto; display: block;">
+            <p>Zvočni posnetek pripoveduje zgodbo o dr. Niku Županiču, kmečkem sinu iz Gribelj, ki je postal svetovno priznan znanstvenik in diplomat.</p>
+            <div style="margin: 2rem 0; text-align: center;">
+                <audio controls style="width: 100%; max-width: 400px;">
+                    <source src="Kmetov sin na Pariški konferenci.mp3" type="audio/mpeg">
+                    Vaš brskalnik ne podpira predvajanja zvoka.
+                </audio>
+            </div>
+            <p>Niko Županič je na Pariški mirovni konferenci leta 1919 zastopal interese slovenskega naroda in prispeval k oblikovanju meja nove države.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

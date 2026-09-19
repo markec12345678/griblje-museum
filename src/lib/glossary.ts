@@ -250,10 +250,76 @@ export const glossaryTerms: GlossaryTerm[] = [
       "The nickname the neighbouring villages gave the people of Griblje after their main crop — the onion, the žbul. The people of Bela krajina still call them that today: few villages in the region carry the name of the vegetable they grew.",
     related: ["gribeljski-zbul"],
   },
+  {
+    slug: "pir",
+    sortKey: "pir",
+    termSi: "pir",
+    termEn: "pir (a wedding)",
+    definitionSi:
+      "Belokranjska beseda za svatbo, zapisana v Katarininem Šopku poljskih cvetlic (1894/95): pir je bil dogodek, ki je povezal dve domačiji in celo vas — s pesmijo, hrano in praznično nošo. Zapisala jo je vaščanka, ki je svatovski pir poznala iz življenja.",
+    definitionEn:
+      "The Bela krajina word for a wedding, recorded in Katarina Zupanič's Bouquet of Meadow Flowers (1894/95): a pir was an event that joined two homesteads and the whole village — with song, food and festive dress. It was written down by a village woman who knew the wedding feast from life.",
+    related: ["katarina-zupanic", "porocna-1669"],
+  },
+  {
+    slug: "debeljaca",
+    sortKey: "debeljača",
+    termSi: "debeljača",
+    termEn: "debeljača (maize)",
+    definitionSi:
+      "Belokranjsko narečno ime za koruzo, zapisano v Katarininem Šopku (1894/95). Koruza je bila v vasi hrana in valuta: kaša, pogača in obrani storži so preživeli kmečki letni krog, pleva pa je šla živini.",
+    definitionEn:
+      "The Bela krajina dialect name for maize, recorded in Katarina's Bouquet (1894/95). Maize was the village's food and currency: its porridge and bread carried the farming year, and the husks went to the livestock.",
+    related: ["katarina-zupanic", "belokranjska-kuhinja"],
+  },
+  {
+    slug: "zdenec",
+    sortKey: "zdenec",
+    termSi: "zdenec",
+    termEn: "zdenec (a spring)",
+    definitionSi:
+      "Narečna beseda za studenec, zapisana v Katarininem Šopku (1894/95). Ob Kolpi, kjer ponikalnica vrača vodo, so bili zdenci — hladni izviri ob reki — vaška pomivalnica, hladilnik in središče govorice.",
+    definitionEn:
+      "The dialect word for a spring, recorded in Katarina's Bouquet (1894/95). Along the Kolpa, where the karst water returns to daylight, the zdenec — the cold river spring — was the village's wash-house, its refrigerator and its conversation centre.",
+    related: ["katarina-zupanic", "loke-in-studenci"],
+  },
+  {
+    slug: "plahta",
+    sortKey: "plahta",
+    termSi: "plahta",
+    termEn: "plahta (a bed sheet)",
+    definitionSi:
+      "Narečna beseda za rjuho za pokriti posteljo, zapisana v Katarininem Šopku (1894/95): platno, tkano na vaških statvah, je v belokranjski hiši nosilo svoja imena — plahta za ležišče, oterač za brisanje, polič za vrč.",
+    definitionEn:
+      "The dialect word for the sheet covering a bed, recorded in Katarina's Bouquet (1894/95): linen woven on the village looms carried its own names in the Bela krajina house — the plahta for the bed, the oterač for drying, the polič for the jug.",
+    related: ["katarina-zupanic", "tkalstvo"],
+  },
+  {
+    slug: "boho",
+    sortKey: "bohó",
+    termSi: "bohó",
+    termEn: "bohó (a call to oxen)",
+    definitionSi:
+      "Klic volom, da se ustavijo, zapisan v Katarininem Šopku (1894/95) med »klici živini«: vrstica, ki odpira svet kmečkega dela — bohó za vola, čo hajt in vr hajs za smer vožnje, čiba, čibica za kokoši. Jezik, s katerim se je vas dogovarjala z živino.",
+    definitionEn:
+      "The call to stop the oxen, recorded among the \"calls to livestock\" in Katarina's Bouquet (1894/95): a line that opens the world of farm work — bohó for the ox, čo hajt and vr hajs to steer the cart, čiba, čibica for the hens. The language with which the village negotiated with its animals.",
+    related: ["katarina-zupanic", "anton-filak"],
+  },
+  {
+    slug: "krajnc-se-smeje",
+    sortKey: "krajnc se smeje",
+    termSi: "Krajnc se smeje",
+    termEn: "\"Krajnc se smeje\" (the Krajnc is smiling)",
+    definitionSi:
+      "Belokranjski vremenski pregovor, zapisan v Katarininem Šopku (1894/95): ko Mirna gora in Gorjanci »žarijo od zahajočega sonca« — ko se »Krajnc smeje« —, bo jutri lepo. Vas je vreme brala s hribov ob obzorju, preden je obstajal uradni terminski telefon.",
+    definitionEn:
+      "A Bela krajina weather proverb recorded in Katarina's Bouquet (1894/95): when Mirna gora and the Gorjanci \"glow with the setting sun\" — when \"the Krajnc is smiling\" — tomorrow will be fair. The village read the weather from the hills on the horizon, long before the official forecast.",
+    related: ["katarina-zupanic", "griblje-vas"],
+  },
 ];
 
 /** Slovenska abecedna razvrstitev (Č, Š, Ž za ustreznimi črkami). */
-export const GLOSSARY_LETTERS = ["C", "Č", "J", "K", "L", "M", "O", "P", "S", "Š", "T", "U", "V", "Z", "Ž"];
+export const GLOSSARY_LETTERS = ["B", "C", "Č", "D", "J", "K", "L", "M", "O", "P", "S", "Š", "T", "U", "V", "Z", "Ž"];
 
 export function letterOf(term: GlossaryTerm): string {
   const key = term.sortKey.toUpperCase();
