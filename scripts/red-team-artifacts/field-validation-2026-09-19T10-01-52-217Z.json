@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "sl": 1
+    },
+    "counts": {
+      "PASS": 0,
+      "REVIEW": 1,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 28,
+      "category": "C",
+      "question": "Kaj vemo o Mate Zupanič-Švarskem?",
+      "language": "sl",
+      "retrieved_records": [
+        "mate-zupanic-svarski",
+        "griblje-vas",
+        "petstoletnica-2026",
+        "niko-zupanic",
+        "izseljenstvo",
+        "vaska-sola",
+        "peter-kambic",
+        "katarina-zupanic",
+        "kucar-podzemelj",
+        "ljudje-ob-kolpi",
+        "matija-totter",
+        "franc-brinc",
+        "joze-dular"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:mate-zupanic-svarski",
+          "type": "person",
+          "label": "Mate Zupanič-Švarski"
+        },
+        {
+          "id": "person:niko-zupanic",
+          "type": "person",
+          "label": "Niko Županič"
+        },
+        {
+          "id": "person:katarina-zupanic",
+          "type": "person",
+          "label": "Katarina Zupanič"
+        }
+      ],
+      "retrieved_sources": [
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-mate-zupanic-svarski-1",
+        "url:commons.wikimedia.org/wiki/File:Salonika_Front_WW1.jpg",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Bela_krajina_Kolpa.jpg",
+        "url:commons.wikimedia.org/wiki/File:Griblje,_Črnomelj.jpg",
+        "ime:Jože Šimec: Izvor imena vasi Griblje, Dolenjski list, 11. januarja 2001",
+        "url:en.wikipedia.org/wiki/Griblje",
+        "ime:Marko Snoj: Etimološki slovar slovenskih zemljepisnih imen, Modrijan, Ljubljana 2009, str. 153",
+        "url:crnomelj.si",
+        "url:commons.wikimedia.org/wiki/Category:Griblje",
+        "url:crnomelj.si/sl/za-obcane/novice/2026062314453884/v-gribljah-slovesno-obelezili-500-letnico-cerkve-sv-vida-in-namenu-predali-novo-pridobitev",
+        "url:moja-dolenjska.si/griblje-slovesno-obelezili-500-letnico-prve-pisne-omembe",
+        "url:slovenskenovice.delo.si/novice/slovenija/v-butoraju-in-gribljah-s-slovesno-maso-proslavili-500-letnici-cerkev-je-vedno-ogledalo-vasi-foto",
+        "url:sl.wikipedia.org/wiki/Cerkev_sv._Vida,_Griblje",
+        "url:instagram.com/p/DZ7pevXDEU1",
+        "url:radio-odeon.com/novice/v-gribljah-slovesno-obelezili-500-letnico-prve-omembe-cerkve-sv-vida",
+        "url:sl.wikipedia.org/wiki/Niko_Županič",
+        "url:etno-muzej.si",
+        "url:slovenska-biografija.si",
+        "url:kamra.si",
+        "url:commons.wikimedia.org/wiki/File:Ivan_Vavpotič_-_Niko_Županič.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-ob-jubilejnem-letu-z-novo-pridobitvijo",
+        "ime:Katarina Zupanič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Županičev zbornik, Ljubljana 1939",
+        "url:radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:de.wikipedia.org/wiki/Reichsvolksschulgesetz",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:osloka.splet.arnes.si/podruznica-griblje-naslovna",
+        "url:os-loka-crnomelj.si/2026/09/03/prvi-solski-dan-na-podruznicni-soli-griblje",
+        "url:commons.wikimedia.org/wiki/File:Glasbena_šol_Črnomelj,_med_drugo_svetovno_vojno_partizanska_gimnazija.jpg",
+        "url:commons.wikimedia.org/wiki/File:Primož_Trubar_-_Abecednik.jpg",
+        "url:commons.wikimedia.org/wiki/File:Vaška_šola_(19._st.).jpg",
+        "url:nms.si",
+        "url:sl.wikipedia.org/wiki/Črnomelj",
+        "url:kamra.si/mm-elementi/spomenik-padlim-partizanom-in-zrtvam-v-narodnoosvobodilnem-boju",
+        "url:radio-odeon.com/novice/vaja-evakuacije-na-podruznici-griblje",
+        "url:commons.wikimedia.org/wiki/File:Božično_drevo.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-peter-kambic",
+        "url:radio-odeon.com/novice/jubilej-gribeljske-sole",
+        "ime:Pirc Krasinski (Peter Kambič): Božič pri Belokranjcih, Dolenjske novice, 1. januar 1889",
+        "url:svet24.si/lokalno/dolenjska/novice/podruznicna-sola-griblje-1870858",
+        "url:commons.wikimedia.org/wiki/File:Herbarij_-_Flysser_1696_-_PMS.jpg",
+        "url:slovenska-biografija.si/oseba/sbi915246",
+        "ime:Etnolog — Šopek poljskih cvetlic iz Gribelj v Beli Krajini (zapis Katarine Zupanič, 1937/9)",
+        "url:physics.fe.uni-lj.si/members/iglic/history/Niko_Zupanic_indent_Slov.pdf",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:commons.wikimedia.org/wiki/File:Krovska_obrt_v_Beli_krajini.jpg",
+        "url:radio-odeon.com/novice/v-gribljah-odkrili-spominsko-plosco-francu-brincu",
+        "url:radio-odeon.com/novice/krajevna-skupnost-griblje-je-praznovala",
+        "url:svet24.si/lokalno/dolenjska/novice/pgd-griblje-stoletnica-rojak-franc-brinc-1898805",
+        "url:radio-odeon.com/novice/v-gribljah-praznovali-visok-jubilej-cenjenega-rojaka",
+        "url:radio-odeon.com/novice/franci-brinc-praznuje-90-let",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Mate Zupanič-Švarski (17. november 1885 – 1917) je bil prostovoljec solunske fronte in brat etnologa Nika Županiča. Izviral je iz hiše Švarskih pod Gribljami. [[mate-zupanic-svarski]]",
+          "Leta 1914 je kot prostovoljec odšel braniti Srbijo. Po umiku vojske skozi Albanijo je umrl v Nîmesu, Francija, zaradi ran in malarije. [[mate-zupanic-svarski]]",
+          "Njegova smrt je vojna Gribljam odrekla enega od sinov. Pesnik Janko Lavrin mu je posvetil sonete. [[mate-zupanic-svarski]]"
+        ],
+        "kakoVemo": [
+          "Vse te trditve izhajajo iz zapisa [[mate-zupanic-svarski]], ki je objavljen na spletnem portalu Radio Odeon in podprt z zemljevidom solunske fronte iz zbirke Wikimedia Commons."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "mate-zupanic-svarski",
+            "sourceIndex": 0
+          },
+          {
+            "slug": "mate-zupanic-svarski",
+            "sourceIndex": 1
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "mate-zupanic-svarski"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "mate-zupanic-svarski"
+        ],
+        "identityProbe": "TRIJE Zupaniči — ne sme se spojiti."
+      },
+      "curatorial_judgment": "MVG-085: prostovolec, ki se ni vrnil (1885–1917); ločen od Nikota/Katarine.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "identiteta: TRIJE Zupaniči — ne sme se spojiti. — človeška presoja besedila"
+      ]
+    }
+  ]
+}

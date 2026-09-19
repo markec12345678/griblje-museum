@@ -16,10 +16,12 @@
  * KAJ SME PRITI V PROMPT (ta pogodba, spodnji tipi):
  *  - AIEvidenceItem   — trditev zapisa (povzetek), status zanesljivosti,
  *                       vir s sourceKey/sourceIndex/sourceName/sourceUrl,
- *                       obdobje KOT JE ZAPISANO;
+ *                       obdobje KOT JE ZAPISANO, odnos do entitete
+ *                       (about-this-entity / mentioned-in-record);
  *  - AIEntityContext  — obstoječa entiteta registra (id, vrsta, oznaka,
- *                       zapisi, dokazi) — NIKOLI entiteta iz uporabnikovega
- *                       vprašanja;
+ *                       lastna identiteta iz registra, predmet vprašanja,
+ *                       sorodne ločene osebe, zapisi, dokazi) — NIKOLI
+ *                       entiteta iz uporabnikovega vprašanja;
  *  - AITimeContext    — mehki čas, OHRANJEN besedno (≈, intervali, unresolved);
  *  - AIQuestionNote   — odprta kuratorska vprašanja (ENTITY_QUEUE) in
  *                       poštena opomba omejitve, kadar je odločilna.
@@ -48,6 +50,12 @@
  * NI 1900; unresolved ostane unresolved. Osebe/dogodki se NIKOLI ne
  * združujejo (trije Barle; MVG-014 ↔ MVG-056 sta dva zapisa z odprtim
  * kuratorskim vprašanjem P1-E1; dva Petra Madroniča nima entitete).
+ *
+ * LASTNA IDENTITETA PRED OMEMBAMI (TASK 43): identiteta entitete je njen
+ * REGISTRSKI podatek (identity); zapis, ki entiteto le omenja
+ * (relation: mentioned-in-record), dokazuje OMEMBO in subjekt SVOJEGA
+ * zapisa — ne biografije omenjene osebe. Priimkovne sorodnike iz
+ * distinctFrom sme model imenovati kot LOČENE osebe, ne kot isto osebo.
  *
  * VBRIZGIVANJE (injection): muzejski podatki so PODATKI, ne navodila.
  * Vsebina virov z navodili (»Ignore previous instructions …«) ostane
@@ -84,6 +92,17 @@ export type CuratorRefusalReason =
  * MINIMALNI OBJEKTI, KI SMEJO V KONTEKST MODELA (pogodba, vrstni red pomembnosti)
  * ------------------------------------------------------------------------- */
 
+/** Odnos zapisa do entitete, katere kontekst nosi dokaz (TASK 43):
+ *  - "about-this-entity" — zapis je O entiteti (naslov nosi njeno ime ali
+ *    slug zapisa je enak slug-delu ID-ja entitete — npr. zapis konrad-barle
+ *    za person:konrad-barle);
+ *  - "mentioned-in-record" — entiteta je v zapisu O DRUGEM subjektu le
+ *    OMENJENA (npr. Ivan Barle, omenjen v Konradovem zapisu).
+ *  Oznaka je deterministično izpeljana iz obstoječih podatkov (naslov/slug),
+ *  ne iz nove kuratorske odločitve. Dokazi BREZ entitetne veze (prosto
+ *  besedilno ujemanje po zapisih) oznake nosijo, kadar je veza znana. */
+export type AIEvidenceRelation = "about-this-entity" | "mentioned-in-record";
+
 /** En dokazni predmet: trditev zapisa + vir, ki jo nosi. */
 export type AIEvidenceItem = {
   exhibitSlug: string;
@@ -91,6 +110,10 @@ export type AIEvidenceItem = {
 
   /** Trditev muzeja o tem zapisu (povzetek — ne cela zgodba). */
   claim: string;
+
+  /** Odnos zapisa do entitete konteksta (glej AIEvidenceRelation); BREZ
+   *  vrednosti pri samostojnih zapisih brez entitetne veze. */
+  relation?: AIEvidenceRelation;
 
   /** DOCUMENTED / CORROBORATED / TESTIMONY / TRADITION / UNVERIFIED … */
   evidenceStatus: string;
@@ -112,6 +135,24 @@ export type AIEntityContext = {
   id: string;
   type: EntityKind;
   label: string;
+
+  /** LASTNA IDENTITETA entitete IZ REGISTRA (TASK 43): mehki čas (v plasti
+   *  konteksta) + kuratorska opomba registra (EntityRef.note), kot sta
+   *  ZAPISANA. Nič ni pridobljeno izven registra — polje je sestavljeno
+   *  deterministično, da ga model vidi kot identiteto OSEBE/KRAJA, ne pa
+   *  le kot seznam zapisov, v katerih je entiteta omenjena. */
+  identity?: string;
+
+  /** true, kadar je entiteta PREDMET vprašanja (vsak žeton oznake/aliasa
+   *  se v vprašanju pojavi, ali cela oznaka je podniz vprašanja) —
+ *  deterministično, BREZ modela. Več entitet je lahko hkrati predmet
+ *  (»Ali sta Ivan in Konrad Barle ista oseba?«). */
+  isTarget?: boolean;
+
+  /** Druge registrirane OSEBE, ki si z entiteto delijo žeton imena
+ *  (priimek) — LOČENI vnosi registra, nikoli ista oseba (trije Barle,
+ *  Zupaniči, Totterji). Osebe BREZ take veze polja nimajo. */
+  distinctFrom?: string[];
 
   /** Zapisi, v katerih je entiteta izpričana (samo iz evidence vezi). */
   exhibits: string[];

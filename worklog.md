@@ -2106,3 +2106,29 @@ Stage Summary:
 - EN DOKAZAN FAIL (reproduciran 3/3): posredno osebno vprašanje (»Kdo je bil Ivan Barle?«) pripisuje sorodnikovo biografijo — trditve so zapisne, ne osebne; varnostni sloji ne morejo ujeti napake PRIPISA (to je dokumentirana meja istovetnosti v prostem besedilu, ki je tokrat ugriznila pri realnem uporabniškem vprašanju, ne pri namernem napadu)
 - 6 REVIEW ostaja dokumentiranih (preveč previdna starost, P0-E1 fraza, DE/IT retrieval pokritost, opomba P1-E5) — NE popravljeno (ne lovimo 100 %; RETRIEVAL-COVERAGE DE/IT je kuratorska odločitev za prihodnje aliasi, ne tehnična napaka)
 - Odločitev FIX REQUIRED s predlaganim (neimplementiranim) minimalnim popravkom; faza NI spremenila nobene muzejske kode — edini dodatek: scripts/field-validation.ts + artefakti + README/dnevnik
+
+---
+Task ID: 45
+Agent: Main agent (Z.ai Code)
+Task: TASK 43 — ENTITY IDENTITY CONTEXT HARDENING (zapritev edinega FAIL-a Field Validation #23: »Kdo je bil Ivan Barle?« → Konradova biografija)
+
+Work Log:
+- Baseline potrjen: f23112e = origin/main, čisto drevo; celoten tok kustosa prebran (curator-retrieval.ts buildContext → AIEntityContext → curator-provider contextForPrompt/systemPrompt → verifyAnswer → API → UI); registr pregledan za Ivan/Konrad/Janko Barle (note + SoftTime ŽE obstajata v registru — nikoli nista dosegla modela)
+- REPRODUKCIJA pred spremembo (4/4): bun scripts/field-validation.ts --real --from=23 --to=23 → isti FAIL (Konradova biografija pripisana Ivanu; varnostni sloji zeleni ker je trditev resnična, napačen je PRIPIS subjekta)
+- Korenski vzrok lociran: buildContext korak 5 — AIEntityContext brez lastne identitete, brez označevalca predmeta vprašanja, brez razlikovanja »zapis O osebi« vs »oseba omenjena v tujem zapisu«; Ivanova entiteta je nosila Konradov povzetek kot svojo trditev
+- MINIMALNI POPRAVEK (3 datoteke, obstoječi registri/evidence/verifier, NIČ nove arhitekture, NIČ novih dejstev):
+  (1) curator-types.ts: AIEntityContext.identity/isTarget/distinctFrom + AIEvidenceItem.relation ("about-this-entity"|"mentioned-in-record") + dokumentacija pogodbe
+  (2) curator-retrieval.ts: identityOf (SoftTime plasti + note, higiena internih ID-jev/kod — 12 opemb z kodami, 1 z ID-jem), entityIsTarget (cela oznaka/alias podniz ali vsi žetoni, ujemanje SAMO V NAPREJ — Dragоš ≠ Dragoši, Kolpi = Kolpa), distinctPersonsOf (priimkovni sorodniki iz registra: 3 Barle, 3 Zupaniči, 5 Totterjev), exhibitIsAboutEntity (slug ID-ja ali oznaka v naslovu: Konradov zapis O Konradu, Ivanovi SAMO omembe — dokaz NI odstranjen, samo označen)
+  (3) curator-provider.ts: pravilo 11 poziva SL+EN (lastna identiteta pred omembami; mentioned-in-record dokazuje omembo in subjekt svojega zapisa, ne biografijo; distinctFrom = ločene osebe; nezadoščnost → »ni dovolj dokumentirano«), nove plasti v prompt JSON, atestacija letnic iz identitet kot DODAJALA (Ivan 1841/1930/1872/1893; ~1408 Cerkvišča in ~1920 Vesel OSTANEJO približni — identiteta ne prevrne kuratorske približnosti)
+- Popravek med razvojem: prvi poskus atestacije identitet je POKVARIL T12.35/36 (golo 1408 v opombi Cerkvišča je prevrnilo ~1408) → identitetna besedila so sedaj add-only vrsta (enako kot imena virov); higiena opomb uvedena po R15.9 (kode vrste v opombah so puščale v poziv)
+- TESTI: nova surita T43 v scripts/test-ai-curator.ts (50 preverb: T43.1 Ivan v 11 plasteh, T43.2 Konrad, T43.3 Janko, T43.4 ista-oseba, T43.5 omemba ostane omemba, T43.6–T43.12 vse identitetne vezi iz §9, T43.13 determinizem, T43.14 EN plast) — skupaj 214 ✓ / 0 ✗
+- REALNI MODEL: #21 Konrad PASS, #22 Janko PASS, #23 IVAN PRAVILNO (lastna identiteta: »učitelj, organist in sadjar v Podzemlju med 1872 in 1893; oče Janka in Konrada«, vir NSBI-o-Ivanu, brez Metlike/AŽ-panja/muzeja), #73 napačna predpostavka popravljena (»Ivan je oče, ne brat; dve ločeni osebi«), #28 opazovano (odgovor o Matu); scripts/test-identity-real-model.ts --real (T43.1–T43.5 skozi produkcijo; T43.4 zavrne združitev: »dve različni osebi … trije ločeni vnosi«) + artefakt identity-fix-*.json
+- BROWSER (agent-browser): kustos Ctrl+J, »Kdo je bil Ivan Barle?« → Ivanova identiteta v UI, klikljivi citati MVG-059/MVG-060, vir »Slovenska biografija — Barle, Ivan (1841–1930)«, mobilno 390 px brez preliva, 0 napak konzole
+- REGRESIJA: test-ai-curator 214 ✓, red-team 157 ✓ (GAP 24 nespremenjen), test-entities 100 ✓, test-timeline-map 72 ✓, audit-entities ✓, audit-timeline-map 39 ✓, verify-i18n 930 × 5, tsc 1 znana napaka (audit-semantics, enaka na baseline), eslint 0, db nedotaknjeno
+- Orodna opomba: lastna orodna cev je tiho okrnila zaporedje »[m« v prikazih (citat [[mate-…]] se je kazal kot [ate-…]) — hex preverba je potrdila, da so artefakti na disku PRAVILNI; muzejska izvajalna plast bila brez napake
+- README 45. sklop dodan; commit + push origin main
+
+Stage Summary:
+- FAIL #23 ZAPRT in dokazan: reprodukcija pred (4/4) → popravek (deterministični identitetni kontekst izključno iz obstoječega registra) → preverba po (realni model: Ivanova lastna identiteta z pravim virom; 214/157/100/72/39 preverb zelenih)
+- Arhitektura NEDOTIČNA: noben NLI/embedding/vektor/graf/semantični ponudnik/verifier; podatkovni model registra in semena nedotaknjena; entitete/ID-ji/vrzeli nespremenjeni (Madronič ostaja brez entitete, MVG-014/056 razcep P1-E1 ostaja, Janez Dular ostaja izven registra)
+- DOCUMENTIRANE MEJE (ostajajo po naročilu): sklanjatvena oblika priimka (»Barletu«) ne dokonča isTarget; soizbira priimkovnih sorojenikov (fran/franjo) je meja retrievala (cilj/identiteta ločita); semantični entailment trditev ostaja arhitekturno odprt

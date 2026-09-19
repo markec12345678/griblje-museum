@@ -40,6 +40,7 @@ import { EVENT_PRECISION, ERA_ORDER, eraOfSortKey } from "@/lib/timeline-map";
 import type {
   AICollectionContext,
   AIEvidenceItem,
+  AIEvidenceRelation,
   AIEntityContext,
   AIQuestionNote,
   AITimeContext,
@@ -324,6 +325,27 @@ function museumReadable(text: string, layer: "sl" | "en"): string {
   });
 }
 
+/** Higiena opombe registra za identiteto v kontekstu (TASK 43, enaka
+ *  higiena kot pri besedilu kuratorske vrste — TASK 42 §14/§17): interni
+ *  ID-ji se nadomestijo z berljivimi oznakami, interne kode kuratorske
+ *  vrste (P0–P4, P1-E4 …) pa se umaknejo — opomba je muzejska VSEBINA,
+ *  njena interna navigacija pa modela ne zanima (in ne sme priti vanj).
+ *  Primer: »Rojstno leto ni zapisano (P3-E4).« → »Rojstno leto ni
+ *  zapisano.« — podatek ostane, interna koda odpade. */
+function identityNoteReadable(note: string, layer: "sl" | "en"): string {
+  let text = museumReadable(note, layer);
+  // oklepajna omemba kode odpade CELO (»(P3-E4)«, »(P1-E4, …)«)
+  text = text.replace(/\(\s*P[0-4](?:-[Ee][0-9]+)?[^)]*\)/g, "");
+  // gole kode (zavarovalno, tudi brez oklepaja)
+  text = text.replace(/\bP[0-4](?:-[Ee][0-9]+)?\b/g, "");
+  return text
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+([.,;:!?])/g, "$1")
+    .replace(/\(\s+/g, "(")
+    .replace(/\s+\)/g, ")")
+    .trim();
+}
+
 type ExhibitHit = { exhibit: SeedExhibit; score: number };
 
 /** Ali KATERI KOLI vsebinski žeton vprašanja ujema katero koli muzejsko
@@ -445,6 +467,141 @@ function intentOf(normalizedQuestion: string): "collection" | "source" | "relati
 }
 
 /* ---------------------------------------------------------------------------
+ * LASTNA IDENTITETA ENTITETE (TASK 43 — identity context hardening)
+ *
+ * Korenski vzrok FAIL #23 (»Kdo je bil Ivan Barle?« → Konradova biografija):
+ * AIEntityContext je nosil le oznako + zapise, v katerih je entiteta
+ * omenjena — trditve teh zapisov pa govorijo o NJIHOVIH subjektih. Ivanova
+ * ENTITETA je nosila Konradov zapis; njegova LASTNA registrirana identiteta
+ * (EntityRef.note + SoftTime) pa modela NI nikoli dosegla.
+ *
+ * Popravek je DETERMINISTIČEN in IZKLJUČNO iz obstoječega registra:
+ *  - identity   — SoftTime (plast konteksta) + kuratorska opomba registra;
+ *  - isTarget   — entiteta je predmet vprašanja (žetoni oznake/aliasa);
+ *  - distinctFrom — druge registrirane OSEBE z deljenim žetonom imena
+ *                   (priimkom) — LOČENI vnosi (trije Barle, Zupaniči …);
+ *  - relation   — zapis je O entiteti (slug/naslov) ali jo le OMINJA.
+ * NIKAKRŠNO novo zgodovinsko dejstvo se ne dodaja: uporabljen je SAMO
+ * podatek, ki v registru ŽE obstaja (enako priporočilo Field Validation).
+ * Ni NLI, ni drugega LLM, ni embeddingov — samo preoblikovanje obstoječih
+ * podatkov v jasno ločene plasti: LASTNA IDENTITETA / OMENBE V ZAPISIH.
+ * ------------------------------------------------------------------------- */
+
+/** Vse izpričane oblike imena entitete (oznaki SL/EN + aliasi), normalizirane. */
+function entityKeys(entity: EntityRef): string[] {
+  return [entity.labelSi, entity.labelEn, ...(entity.aliases ?? [])]
+    .map((k) => normalizeQuestion(k))
+    .filter((k) => k.length > 0);
+}
+
+/** Ujemanje žetona vprašanja z žetonom entitete v smeri NAPREJ (TASK 43,
+ *  samo za isTarget): vprašanje lahko nosi le OBLIKO osnovne besede —
+ *  enake dolžine (kolpa/kolpi) ali daljšo (Griblje/Gribljah, zvon/zvona),
+ *  nikoli KRAJŠO. »Dragoš« v vprašanju zato NE cilja na kraj »Dragoši«
+ *  (drugega imena, druga entiteta), »Kolpi« pa pravilno cilja na Kolpo. */
+function tokenMatchesForward(qt: string, et: string): boolean {
+  if (qt === et) return true;
+  if (qt.length < et.length) return false;
+  return tokenMatches(qt, et);
+}
+
+/** Je entiteta PREDMET vprašanja? Cela oznaka/alias kot podniz vprašanja
+ *  ali VSI žetoni oznake/aliasa prisotni v vprašanju (sklanjatveno
+ *  ujemanje V NAPREJ — glej tokenMatchesForward). Deterministično — brez
+ *  modela. Več entitet je lahko hkrati predmet (»Ali sta Ivan in Konrad
+ *  Barle ista oseba?«). */
+function entityIsTarget(
+  entity: EntityRef,
+  normalizedQuestion: string,
+  questionTokens: string[],
+): boolean {
+  for (const key of entityKeys(entity)) {
+    if (key.length >= 5 && normalizedQuestion.includes(key)) return true;
+    const keyTokens = tokensOf(key);
+    if (
+      keyTokens.length > 0 &&
+      keyTokens.every((kt) => questionTokens.some((qt) => tokenMatchesForward(qt, kt)))
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/** Lastna identiteta entitete IZ REGISTRA: mehki čas (v plasti konteksta) +
+ *  kuratorska opomba (EntityRef.note), očiščena internih referenc (ID-ji,
+ *  kode vrste). Sestavljeno deterministično; če registra ne nosi nobenega
+ *  od obeh, polje odpade (NIČ izmišljanja). */
+function identityOf(entity: EntityRef, layer: "sl" | "en"): string | undefined {
+  const time = entity.type === "place" ? undefined : entity.time;
+  const timeLabel = time ? (layer === "sl" ? time.labelSi : time.labelEn) : null;
+  const note = entity.note ? identityNoteReadable(entity.note, layer) : null;
+  if (timeLabel && note) return `${timeLabel} — ${note}`;
+  return timeLabel ?? note ?? undefined;
+}
+
+/** Žetoni imena v priimkovnem položaju (vsi razen prvega; enobesedna
+ *  oznaka pa svoj edini žeton) — osnova za iskanje priimkovnih sorodnikov
+ *  v registru. Dolžina ≥ 4, da kratka splošna beseda ne povezuje oseb. */
+function nameTailTokens(entity: EntityRef): string[] {
+  const out = new Set<string>();
+  for (const key of entityKeys(entity)) {
+    const toks = tokensOf(key);
+    if (toks.length === 0) continue;
+    for (const t of toks.length === 1 ? toks : toks.slice(1)) {
+      if (t.length >= 4) out.add(t);
+    }
+  }
+  return [...out];
+}
+
+const DISTINCT_FROM_MAX = 5;
+
+/** Druge registrirane OSEBE z deljenim žetonom imena (priimkovni sorodniki
+ *  iz registra) — LOČENI vnosi, nikoli ista oseba. Navedene z lastnimi
+ *  letnicami, kadar so v registru zapisane. Osebe brez take veze (npr.
+ *  Jože Dular — Janez Dular NI v registru) polja nimajo. */
+function distinctPersonsOf(entity: EntityRef, layer: "sl" | "en"): string[] | undefined {
+  if (entity.type !== "person") return undefined;
+  const myTokens = nameTailTokens(entity);
+  if (myTokens.length === 0) return undefined;
+  const out: string[] = [];
+  for (const other of ENTITIES) {
+    if (other.id === entity.id || other.type !== "person") continue;
+    const otherTokens = nameTailTokens(other);
+    const shares = otherTokens.some((t) =>
+      myTokens.some((m) => tokenMatches(m, t) || tokenMatches(t, m)),
+    );
+    if (!shares) continue;
+    const label = layer === "sl" ? other.labelSi : other.labelEn;
+    const time = other.time;
+    out.push(time ? `${label} (${layer === "sl" ? time.labelSi : time.labelEn})` : label);
+    if (out.length >= DISTINCT_FROM_MAX) break;
+  }
+  return out.length > 0 ? out : undefined;
+}
+
+/** Ali je zapis O entiteti: slug zapisa je enak slug-delu ID-ja entitete
+ *  (person:konrad-barle → zapis konrad-barle) ALI cela oznaka/alias
+ *  entiteta je podniz NASLOVA zapisa (naslovi lastnih zapisov nosijo ime
+ *  subjekta). Sicer je entiteta v zapisu le OMENJENA — zapis ostane v
+ *  kontekstu kot povezan dokaz, a z jasno označeno vlogo (TASK 43 §7:
+ *  omemba NE sme postati biografija, dokaz se NE odstrani). */
+function exhibitIsAboutEntity(
+  exhibit: SeedExhibit,
+  entity: EntityRef,
+  layer: "sl" | "en",
+): boolean {
+  if (exhibit.slug === entity.id.split(":")[1]) return true;
+  const title = normalizeQuestion(layer === "sl" ? exhibit.titleSi : exhibit.titleEn);
+  if (!title) return false;
+  for (const key of entityKeys(entity)) {
+    if (key.length >= 5 && title.includes(key)) return true;
+  }
+  return false;
+}
+
+/* ---------------------------------------------------------------------------
  * Dokazni predmeti iz zapisa (AIEvidenceItem) — trditev + vir
  * ------------------------------------------------------------------------- */
 
@@ -463,6 +620,9 @@ function evidenceItemsOf(
   layer: "sl" | "en",
   /** Omejitev na dokazno vez (sourceIndex entitete), če je zapisana. */
   onlySourceIndex?: number,
+  /** Odnos zapisa do entitete konteksta (TASK 43); brez vrednosti pri
+   *  samostojnih zapisih brez entitetne veze. */
+  relation?: AIEvidenceRelation,
 ): AIEvidenceItem[] {
   const title = layer === "sl" ? exhibit.titleSi : exhibit.titleEn;
   const claim = truncate(layer === "sl" ? exhibit.summarySi : exhibit.summaryEn, CLAIM_MAX_CHARS);
@@ -474,6 +634,7 @@ function evidenceItemsOf(
   return rows.map((s) => ({
     exhibitSlug: exhibit.slug,
     exhibitTitle: title,
+    ...(relation ? { relation } : {}),
     claim,
     evidenceStatus: exhibit.evidenceStatus,
     period,
@@ -626,12 +787,20 @@ export function buildContext(
     for (const ev of evidenceRows) {
       const exhibit = seedExhibits.find((e) => e.slug === ev.slug);
       if (!exhibit) continue;
-      items.push(...evidenceItemsOf(exhibit, layer, ev.sourceIndex));
+      const about = exhibitIsAboutEntity(exhibit, entity, layer);
+      items.push(
+        ...evidenceItemsOf(exhibit, layer, ev.sourceIndex, about ? "about-this-entity" : "mentioned-in-record"),
+      );
     }
     return {
       id: entity.id,
       type: entity.type,
       label: layer === "sl" ? entity.labelSi : entity.labelEn,
+      // TASK 43: lastna identiteta iz registra + predmet vprašanja +
+      // priimkovno ločeni vnosi — vse deterministično, vse že v registru.
+      identity: identityOf(entity, layer),
+      isTarget: entityIsTarget(entity, normalized, questionTokens),
+      distinctFrom: distinctPersonsOf(entity, layer),
       exhibits: evidenceRows.map((r) => r.slug),
       evidence: items,
     };

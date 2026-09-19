@@ -32,6 +32,7 @@ import type {
   AIAnswer,
   AIContext,
   AIEvidenceItem,
+  AIEvidenceRelation,
   AIProvidedExhibit,
   CuratorRefusalReason,
   MuseumAIProvider,
@@ -62,6 +63,7 @@ MUZEJSKI KONTEKST SPODAJ je CELOTNO tvoje znanje za to vprašanje — ZAPRTA DOK
 7. Če kontekst ne nosi dovolj dokaza: answerable=false, reason="insufficient_evidence". KajVemo takrat ostane PRAZNO — ne piši splošnih zgodb.
 9. V odgovoru NE uporabljaj internih kod kuratorske vrste niti internih ID-jev registra — vsako odprto vprašanje povzameš v običajnem muzejskem jeziku (npr. »za kateri zapis gre, kuratorji še lahko potrdijo«). Če uporabnik vpraša, kaj o zbirki še ni dovolj dokumentirano, pošteno naštej odprta vprašanja konteksta (po zapisih, na katere se nanašajo) — to je muzejsko dragocen odgovor, ne pomanjkljivost.
 10. Imena virov in zgodovinskih naslovov NE prevajaj, kadar bi se s tem spremenila identiteta — sourceName iz konteksta izpiši, kot je zapisan. Licenca ali status vira, ki je v evidenci nejasen ali neznan, ostane nejasen — takega vira NE predstaviš kot popolnoma preverjenega ali avtoritativnega.
+11. LASTNA IDENTITETA ENTITETE IMA PREDNOST PRED OMEMBAMI: polje »identity« entitete je NJENA lastna identiteta, kuratorsko dokumentirana v registru muzeja. Za entiteto, ki je predmet vprašanja (»isTarget«: true), odgovor o njej zgradiš iz njenega »identity« in zapisov, ki so O njej (»relation«: »about-this-entity«). Zapis z »relation«: »mentioned-in-record« entiteto le OMENJA: njegova trditev govori o SUBJEKTU TISTEGA ZAPISA in dokazuje omembo — NI biografija niti identiteta omembe osebe (zapis o Konradu Barletu, v katerem je omenjen Ivan, ostane dokaz o Konradu; Ivanu pripada samo njegov lastni »identity« in njegovi zapisi). Osebe v »distinctFrom« so LOČENE registrirane osebe (enak priimek, druga oseba) — nikoli ista oseba in nikoli različica imena. Kjer »identity« in zapisi-o-entiteti ne zadoščajo, ostanka NE dopolnjuješ iz drugih zapisov — odkrito povej, da v zbirki ni dovolj dokumentirano.
 
 ODGOVOR — IZKLJUČNO veljaven JSON (brez besedila okrog, brez markdown-ograje iz treh vzvratnih narekovajev):
 {"answerable": true, "reason": null, "kajVemo": ["1–3 odstavkov, vsak z vsaj enim [[slug]] navedkom"], "kakoVemo": ["1 odstavek: kateri zapisi in viri nosijo trditve"], "viri": [{"slug": "primer-slug", "sourceIndex": 0}], "opomba": null}
@@ -81,6 +83,7 @@ THE MUSEUM CONTEXT BELOW is your ENTIRE knowledge for this question — a CLOSED
 7. If the context does not carry enough evidence: answerable=false, reason="insufficient_evidence". Then "kajVemo" stays EMPTY — no general stories.
 9. NEVER use internal curatorial-queue codes or internal registry IDs in the answer — summarise every open question in ordinary museum language (e.g. "which record it is, curators may still confirm"). If the user asks what is not yet documented about the collection, honestly list the open questions of the context (by the records they concern) — that is a valuable museum answer, not a deficiency.
 10. Do NOT translate source names or historical titles where translation would change their identity — print the sourceName from the context exactly as recorded. A licence or status recorded as unclear or unknown stays unclear — never present such a source as fully verified or authoritative.
+11. AN ENTITY'S OWN IDENTITY OUTRANKS ITS MENTIONS: an entity's "identity" field is its own identity, curator-documented in the museum's registry. For the entity that is the subject of the question ("isTarget": true), build the answer about it from its "identity" and from records that are ABOUT it ("relation": "about-this-entity"). A record with "relation": "mentioned-in-record" only MENTIONS the entity: its claim speaks about THAT record's own subject and evidences the mention — it is never a biography or the identity of the mentioned person (a record about Konrad Barle that mentions Ivan remains evidence about Konrad; only Ivan's own "identity" and his own records belong to Ivan). Persons in "distinctFrom" are SEPARATE registered persons (same surname, different person) — never the same person and never a name variant. Where the "identity" and the records-about-the-entity do not suffice, do NOT fill the gap from other records — say honestly that the collection does not document it sufficiently.
 
 ANSWER — ONLY valid JSON (no prose around it, no markdown fence of three backticks):
 {"answerable": true, "reason": null, "kajVemo": ["1–3 paragraphs, each with at least one [[slug]] citation"], "kakoVemo": ["1 paragraph: which records and sources carry the claims"], "viri": [{"slug": "example-slug", "sourceIndex": 0}], "opomba": null}
@@ -89,8 +92,8 @@ ANSWER — ONLY valid JSON (no prose around it, no markdown fence of three backt
 
   const json = contextForPrompt(context);
   const closing = sl
-    ? `PONOVITEV PRAVIL: odgovor je SAMO JSON, vsebina v živi ${langSl}, vsaka trditev s [[slug]] navedkom iz konteksta, brez internih kod kuratorske vrste in ID-jev.`
-    : `RULE REMINDER: the answer is ONLY JSON, content in ${languageNameOf(context.lang)}, every claim cited with a [[slug]] from the context, no internal curatorial-queue codes or IDs.`;
+    ? `PONOVITEV PRAVIL: odgovor je SAMO JSON, vsebina v živi ${langSl}, vsaka trditev s [[slug]] navedkom iz konteksta, lastna identiteta entitete pred njenimi omembami, brez internih kod kuratorske vrste in ID-jev.`
+    : `RULE REMINDER: the answer is ONLY JSON, content in ${languageNameOf(context.lang)}, every claim cited with a [[slug]] from the context, an entity's own identity before its mentions, no internal curatorial-queue codes or IDs.`;
 
   return `${rules}
 
@@ -122,6 +125,9 @@ function languageNameOf(lang: AIContext["lang"]): string {
 
 type PromptEvidence = {
   slug: string;
+  /** Odnos zapisa do entitete konteksta (TASK 43); samostojni zapisi brez
+   *  entitetne veze oznake nimajo. */
+  relation?: AIEvidenceRelation;
   title: string;
   claim: string;
   evidenceStatus: string;
@@ -136,6 +142,7 @@ type PromptEvidence = {
 function evidenceToPrompt(item: AIEvidenceItem): PromptEvidence {
   return {
     slug: item.exhibitSlug,
+    ...(item.relation ? { relation: item.relation } : {}),
     title: item.exhibitTitle,
     claim: item.claim,
     evidenceStatus: item.evidenceStatus,
@@ -155,6 +162,11 @@ function contextForPrompt(context: AIContext): string {
       // interni ID NE gre v model (§17 TASK 42: meja konteksta = meja sveta)
       type: e.type,
       label: e.label,
+      // TASK 43: lastna identiteta iz registra + predmet vprašanja +
+      // priimkovno ločeni vnosi (deterministično, izključno iz registra).
+      isTarget: e.isTarget === true,
+      ...(e.identity ? { identity: e.identity } : {}),
+      ...(e.distinctFrom?.length ? { distinctFrom: e.distinctFrom } : {}),
       exhibits: e.exhibits,
       evidence: e.evidence.map(evidenceToPrompt),
     })),
@@ -365,6 +377,11 @@ function attestedDateTriplesOf(context: AIContext): Set<string> {
   const texts: string[] = [];
   for (const e of context.entities) {
     texts.push(e.label);
+    // TASK 43: lastna identiteta in priimkovno ločeni vnosi so registrski
+    // podatki — datumi/letnice v njih so dokazani (npr. Ivan 1841–1930,
+    // »distinctFrom: Konrad Barle (19. februar 1875 – 15. julij 1951)«).
+    if (e.identity) texts.push(e.identity);
+    for (const d of e.distinctFrom ?? []) texts.push(d);
     for (const ev of e.evidence) {
       texts.push(ev.claim, ev.period ?? "", ev.exhibitTitle);
     }
@@ -476,9 +493,17 @@ function yearApproxQualifiedAt(normalizedText: string, yearStart: number): boole
  *  odmevati, natančnost pa določa zapis. */
 export function attestedYearsOf(context: AIContext): YearAttestation {
   const texts: string[] = [];
+  // TASK 43: identiteta/priimkovno ločeni vnosi so registrski podatki in
+  // letnice v njih so dokazane (npr. Ivan 1872–1893) — a le DODAJAJO:
+  // kuratorska približnost SoftTime/obdobjev je AVTORITATIVNA nad opisno
+  // frazo opombe registra (Cerkvišče ~1408 ostane približno, četudi
+  // opomba nosi golo letnico) — enaka semantika kot imena virov spodaj.
+  const identityTexts: string[] = [];
   const sourceNames: string[] = [];
   for (const e of context.entities) {
     texts.push(e.label);
+    if (e.identity) identityTexts.push(e.identity);
+    for (const d of e.distinctFrom ?? []) identityTexts.push(d);
     for (const ev of e.evidence) {
       texts.push(ev.claim, ev.period ?? "", ev.exhibitTitle);
       if (ev.sourceName) sourceNames.push(ev.sourceName);
@@ -506,6 +531,19 @@ export function attestedYearsOf(context: AIContext): YearAttestation {
   // kuratorsko niso izrečene — in NIKOLI ne prekliče kuratorske
   // približnosti.
   for (const raw of sourceNames) {
+    const text = normalizeForDates(raw);
+    for (const m of text.matchAll(YEAR_RE)) {
+      const y = Number(m[1]);
+      if (exact.has(y) || approx.has(y)) continue;
+      if (yearApproxQualifiedAt(text, m.index ?? 0)) approx.add(y);
+      else exact.add(y);
+    }
+  }
+  // TASK 43 — identitete registra (opomba + priimkovno ločeni vnosi):
+  // letnice DODAJO (Ivan 1872–1893, distinctFrom 1875/1951 …), a nikoli
+  // ne prevrne razvrstitve, ki jo nosijo trditve/obdobja/časi (~1408
+  // ostane približno, četudi opomba registra nosi golo letnico).
+  for (const raw of identityTexts) {
     const text = normalizeForDates(raw);
     for (const m of text.matchAll(YEAR_RE)) {
       const y = Number(m[1]);

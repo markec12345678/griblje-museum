@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "what": "FIELD VALIDATION / CURATORIAL QUALITY AUDIT — audit artefakt (ni muzejska vsebina)",
+    "commit": "fdec521 (baseline)",
+    "cases": 1,
+    "totalModelCalls": 1,
+    "byLanguage": {
+      "sl": 1
+    },
+    "counts": {
+      "PASS": 0,
+      "REVIEW": 1,
+      "FAIL": 0,
+      "OUT_OF_CORPUS": 0,
+      "INFRASTRUCTURE": 0
+    },
+    "note": "avtomatski status je podlaga; končne kuratorske presode so v poročilu faze (REVIEW != FAIL)"
+  },
+  "records": [
+    {
+      "id": 73,
+      "category": "H",
+      "question": "Ali je Ivan Barle zagotovo brat Konrada Barla?",
+      "language": "sl",
+      "retrieved_records": [
+        "konrad-barle",
+        "kucar-podzemelj",
+        "kranjska-sivka",
+        "janko-barle",
+        "panjska-koncnica",
+        "matija-totter",
+        "pisanice",
+        "kresovanje",
+        "ljudje-ob-kolpi",
+        "joze-dular",
+        "izseljenstvo"
+      ],
+      "retrieved_entities": [
+        {
+          "id": "person:ivan-barle",
+          "type": "person",
+          "label": "Ivan Barle"
+        },
+        {
+          "id": "person:konrad-barle",
+          "type": "person",
+          "label": "Konrad Barle"
+        },
+        {
+          "id": "person:janko-barle",
+          "type": "person",
+          "label": "Janko Barle"
+        }
+      ],
+      "retrieved_sources": [
+        "url:slovenska-biografija.si/oseba/sbi1017070",
+        "url:slovenska-biografija.si/oseba/sbi1017060",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-konrad-barle-1",
+        "ime:Bibliografija: Zvonko Rus, »Konrad Barle 1875–1951«, v: Čebelarsko društvo dr. Jožef Starc (Metlika): 100 let 1912–2012, Metlika 2012, str. 30–33",
+        "url:commons.wikimedia.org/wiki/File:\"Čebnjak\"_(čebelnjak),_Vrh_2,_pri_Komatarju_1952_(2).jpg",
+        "url:sl.wikipedia.org/wiki/Podzemelj",
+        "ime:Bibliografija: Janez Dular, Slavko Ciglenečki, Anja Dular, »Kučar: železnodobno naselje in zgodnjekrščanski stavbni kompleks na Kučarju pri Podzemlju«, Opera Instituti archaeologici Sloveniae 1, Ljubljana 1995",
+        "ime:Bibliografija: Janez Dular, »Podzemelj«, Katalogi in monografije 16, 1978",
+        "url:commons.wikimedia.org/wiki/File:Kučar_pri_Podzemlju_(54131009570).jpg",
+        "url:sl.wikipedia.org/wiki/Kranjska_čebela",
+        "url:sl.wikipedia.org/wiki/Anton_Janša",
+        "url:sl.wikipedia.org/wiki/Svetovni_dan_čebel",
+        "url:sl.wikipedia.org/wiki/Anton_Žnideršič",
+        "url:commons.wikimedia.org/wiki/File:Apis_mellifera_carnica_worker_hive_entrance_3.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-janko-barle",
+        "ime:Bibliografija: Janko Barle, »Pisanice iz Bele Krajine«, Izvestja Muzejskega društva za Kranjsko 3 (1893), str. 233–240",
+        "url:commons.wikimedia.org/wiki/File:Janko_Barle_1932.jpg",
+        "url:sl.wikipedia.org/wiki/Panjska_končnica",
+        "url:en.wikipedia.org/wiki/Micka_Pavlič",
+        "url:commons.wikimedia.org/wiki/File:Lovčev_pogreb,_poslikana_panjska_končnica,_les,_1891.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter",
+        "url:sl.wikipedia.org/wiki/Griblje",
+        "url:commons.wikimedia.org/wiki/File:Balmorhea_cienaga_2009.jpg",
+        "url:rtvslo.si/kultura/razglednice-preteklosti/106-letni-niko-in-mladostna-leta-ob-tamburicah/323956",
+        "url:radio-odeon.com/novice/belokranjske-pisanice-ziva-nesnovna-kulturna-dediscina",
+        "url:nesnovnadediscina.si",
+        "url:commons.wikimedia.org/wiki/File:Belokranjske_pisanke.JPG",
+        "url:commons.wikimedia.org/wiki/File:Gorenje-izzajčjegore.jpg",
+        "url:radio-odeon.com/iskanje?q=Ljudje%20ob%20Kolpi",
+        "url:commons.wikimedia.org/wiki/File:Kosmaj_49.jpg",
+        "url:radio-odeon.com/novice/ljudje-ob-kolpi-joze-dular",
+        "ime:Bibliografija: Jože Dular, »Dr. Niko Županič. Ob odkritju njegove spominske plošče v Gribljah v Beli krajini«",
+        "url:commons.wikimedia.org/wiki/File:Jože_Dular_(1).jpg",
+        "url:commons.wikimedia.org/wiki/File:Metlika,_Belokranjski_muzej;_lapidarij_v_cerkvi_sv_._Martina;_nagrobnik_1626_umrlega_Andreja_Butgstahla_iz_gradu_Krupa.jpg",
+        "url:sl.wikipedia.org/wiki/Ameriški_Slovenci",
+        "url:en.wikipedia.org/wiki/Slovene_diaspora",
+        "url:en.wikipedia.org/wiki/Red_Star_Line",
+        "url:commons.wikimedia.org/wiki/File:Steerage_passengers_on_SS_Friedrich_der_Grosse.jpg",
+        "url:sl.wikipedia.org/wiki/Niko_Županič"
+      ],
+      "model_calls": 1,
+      "answer": {
+        "answerable": true,
+        "reason": null,
+        "kajVemo": [
+          "Ivan Barle (1841–1930) je bil oče Janka in Konrada Barla. [[konrad-barle]]",
+          "Konrad Barle (19. februar 1875–15. julij 1951) je bil sin Ivana Barla in brat Janka Barla. [[konrad-barle]]",
+          "Ivan Barle in Konrad Barle sta dve ločeni registrirani osebi v muzejski zbirki. [[konrad-barle]]"
+        ],
+        "kakoVemo": [
+          "Informacije so povzete iz kuratorsko določenih identitet oseb v registru muzeja, ki jasno navajajo sorodstveno razmerje med Ivanom in Konradom Barlom."
+        ],
+        "opomba": null,
+        "viri": [
+          {
+            "slug": "konrad-barle",
+            "sourceIndex": 1
+          }
+        ],
+        "suggestions": []
+      },
+      "citations": [
+        "konrad-barle"
+      ],
+      "uncertainty": "brez približnostnih oznak (ni bilo zahtevano ali ni relevantno)",
+      "expected_evidence": {
+        "anyOfSlugs": [
+          "konrad-barle"
+        ],
+        "identityProbe": "Ivan–Konrad: brat NE (oče po registru); model vidi le trditve.",
+        "mustNotState": [
+          {
+            "re": "brat Konrada|(je|sta) brata",
+            "why": "bratstvo Ivana in Konrada ni dokazano v trditvah (Ivan je oče po registru)"
+          }
+        ]
+      },
+      "curatorial_judgment": "§9B: odnos brat/oče med Barleti je v registru (Ivan = oče), a NE v trditvah, ki jih model vidi. Model ne sme potrditi brata; poštena zavrnitev ali popravek (oče) sta sprejemljiva.",
+      "invariants": [
+        {
+          "name": "sources-in-context",
+          "ok": true
+        },
+        {
+          "name": "no-internal-codes",
+          "ok": true
+        },
+        {
+          "name": "years-attested",
+          "ok": true
+        },
+        {
+          "name": "dates-attested",
+          "ok": true
+        },
+        {
+          "name": "urls-attested",
+          "ok": true
+        }
+      ],
+      "status": "REVIEW",
+      "notes": [
+        "identiteta: Ivan–Konrad: brat NE (oče po registru); model vidi le trditve. — človeška presoja besedila"
+      ]
+    }
+  ]
+}
