@@ -14,7 +14,7 @@
  *   4. LESEN   (lijak) — koliko imen je revizija našla v prozi in koliko
  *                        jih je postalo entitet (brez eksplozije)
  *   5. INVARIANTI      — osnovna linija TASK 38 ostaja netaknjena:
- *                        93/93 zapisov, 412 vrstic virov, 315 identitet,
+ *                        93/93 zapisov, 415 vrstic virov, 317 identitet,
  *                        51 deljenih, 372 biografskih faz, 0 zdrobljenih
  *                        sourceIndex (biografije)
  *   6. KURATORSKA VRSTA — P0–P4 iz ENTITY_QUEUE (nerešene identitete;
@@ -259,9 +259,9 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 93) ok("93/93 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 93) ok("93/93 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 412) ok("412 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 315) ok("315 identitet virov (A1/A2)"); else err(`identitet: ${identities}`);
-if (shared === 51) ok("51 deljenih virov"); else err(`deljenih: ${shared}`);
+if (srcN === 415) ok("412 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 317) ok("315 identitet virov (A1/A2)"); else err(`identitet: ${identities}`);
+if (shared === 52) ok("51 deljenih virov"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
 

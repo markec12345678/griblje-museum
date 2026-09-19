@@ -407,8 +407,11 @@ section("T5 — Ločitev identitet oseb (brez napačne avtomatske združitve)");
   // Deljen VIR (Šopek) ostaja na nivoju VIROV — 2 ločena sourceKey:
   const sopek = sourceRows("Šopek poljskih cvetlic");
   const sopekKeys = new Set(sopek.map((r) => r.key));
-  check(sopek.length === 2 && sopekKeys.size === 2,
-    `T5.12 vir »Šopek poljskih cvetlic« (MVG-010/MVG-043) = 2 VRSTICI, 2 LOČENA sourceKey (${sopekKeys.size}) — B-kandidat TASK 38 ostaja kustosu`);
+  // 46. sklop: poleg dveh vrstic Etnologa (MVG-010 + MVG-043) tudi tretja vrstica —
+  // polno prepisano besedilo Šopeka na predstavitveni strani vasi (MVG-043, URL griblje.netlify.app).
+  // B-kandidat TASK 38 (dve vrstici Etnologa z ločenima sourceKey) ostaja kustosu.
+  check(sopek.length === 3 && sopekKeys.size === 3,
+    `T5.12 vir »Šopek poljskih cvetlic«: 2 vrstici Etnologa (MVG-010/MVG-043) + 1 vrstica prepisa (MVG-043, polno besedilo) = 3 VRSTICE, 3 LOČENA sourceKey (${sopek.length}/${sopekKeys.size}) — B-kandidat TASK 38 ostaja kustosu`);
   check(queueIds.has("P1-E1") || true, "T5.13 (dokumentacija) B-kandidat MVG-010↔MVG-043 živi v audit-sources vrsti (TASK 38), ne v entitetah");
 
   // --- Totter: ŠEST ločenih ------------------------------------------------
@@ -557,9 +560,9 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   check(conn.length > 0, `T8.5 connectionsBetween(griblje-vas, sveti-vid) deluje (${conn.map((c) => c.kind).join(", ")})`);
 
   // Source registry: identitete in deljenost.
-  check(SOURCE_USAGE.size === 315, `T8.6 315 identitet virov (${SOURCE_USAGE.size})`);
+  check(SOURCE_USAGE.size === 317, `T8.6 317 identitet virov (${SOURCE_USAGE.size})`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length > 1).length;
-  check(shared === 51, `T8.7 51 deljenih virov (${shared})`);
+  check(shared === 52, `T8.7 52 deljenih virov (${shared})`);
 
   // WorldCat normalizacija (TASK 38) ostaja.
   const wc = sourceRows("").filter((r) => r.url?.includes("821110335"));
@@ -577,7 +580,7 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   // Viri skupaj.
   let srcRows = 0;
   for (const ex of seedExhibits) srcRows += ex.sources.length;
-  check(srcRows === 412, `T8.11 412 vrstic virov (${srcRows})`);
+  check(srcRows === 415, `T8.11 415 vrstic virov (${srcRows})`);
 
   // Biografije.
   let phases = 0;
@@ -636,8 +639,8 @@ section("T9 — HTTP regresija (93/93 strani, 93/93 IIIF, OpenData, QR, sitemap)
         if (s.sourceKey) withKey += 1;
       }
     }
-    check(od.counts?.exhibits === 93 && od.counts?.sources === 412, `T9.3 OpenData: 93 zapisov / 412 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
-    check(withKey === 412 && totalRows === 412, `T9.4 OpenData sourceKey 412/412 (${withKey}/${totalRows})`);
+    check(od.counts?.exhibits === 93 && od.counts?.sources === 415, `T9.3 OpenData: 93 zapisov / 415 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
+    check(withKey === 415 && totalRows === 415, `T9.4 OpenData sourceKey 415/415 (${withKey}/${totalRows})`);
 
     // QR globoka povezava.
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
