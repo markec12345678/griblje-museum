@@ -2310,3 +2310,28 @@ Stage Summary:
 - Dva nova zapisa dokumentirana (razsvetljava z arheologijo; pogača Vigred 2024), križevo obogateno s polno etnografijo in dokumentiranim začetkom vrnitve 2017
 - Regresija v celoti zelena; db reseeded; produkcija (Vercel) bo po pushu prejela 98/450
 - TO_COLLECT za naslednji val: rezultati arheoloških raziskav razsvetljave, Družina 1943 patrole URL, ebooks.uni-lj mejni pas, SEM hiša Nika Županiča, Odeon »Pastirski praznik« vabilo URL
+
+---
+Task ID: 54
+Agent: Z.ai Code (GLM)
+Task: Naročilo — »nadaljuj kjer si ostal« (zaključek 8. raziskovalnega vala + push GitHub + sinhronizacija README + Vercel): pred sejo je bil val 8 v teku (surovine raw-web-val8 zbrane, MVG-073 zgodbi delno obogatene); ta sklop izvleče, dedup-preveri, vgradi (add-only), požene regresijo, sinhronizira dokumentacijo in pošlje na GitHub/Vercel.
+
+Work Log:
+- Diagnostika stanja: 53. sklop commitan + na origin/main; neobjavljeno = museum-content.ts (MVG-073 zgodbi obogatene) + research-griblje/raw-web-val8-2026-10/ (60 surovin); klasifikacija surovin (8 z realno vsebino, ostalo Cloudflare/404/iskalniki)
+- Izvleček ključnih surovin: Odeon »Krajevna skupnost Griblje je praznovala« (17. 9. 2024, avtor KS Griblje, foto Jani Pavlin — 100 % potrditev obogatenih MVG-073 zgodb); SBZ Niko Županič (celoten življenjepis); crnomelj-ks-griblje (svet KS 2025); MD križevo 30. 5. 2025 + požar 31. 3. 2025 + odpadki 19. 8. 2019 + asfalt 26. 8. 2025; Odeon križevo 31. 5. 2019 (duplikat); DL iskanja ×5 (~20 novih člankov)
+- Dedup preverbe: Odeon križevo 2019 = že vir MVG-087; DL PGD stoletnica = že dobesedno v MVG-027; DL Pasuljada 21. = že vgrajena (val 6); MD asfalt = že vir mojadolenjska-asfalt-2025 (MVG-097); Odeon praznik KS = vir odeon-ks-praznik že prisoten (MVG-073)
+- Vgrajeno add-only (+6 virov: 450→456): MVG-043 niko-zupanic (dl-zupanic-svarski + SBZ odstavek SL/EN: starši Miha/Katarina r. Pezdirc, sošolci Kette/Župančič, München 1904–5, smrt 11. 9. 1961, psevdonim Gribljanovič; entiteta: alias »Dr. Nikša Gribljanovič« + čas do 11. 9. 1961 + note); MVG-087 krizevo (md-krizevo-2025 + dl-pastirski-2009 + 2 zgodbi odstavka: Totter = informator, mučki, Starašiničev pašnik 2009 — neprekinjen koledar 1890→2026); MVG-057 matija-totter (dl-totter-2025 + vloga pričevalca); MVG-093 tone-kralj-98 (dl-kralj-90-2018 + »od kurirčka« — najzgodnejši poklicni zapis; P3-E3 spoštovan); MVG-073 praznik-ks-2024 (crnomelj-ks-griblje-svet — svet KS: Husič, T. Brinc, Jakofčič, Piškurič, Brodarič)
+- Popravek duplikata ključa: crnomelj-ks-griblje (obstoječ v MVG-001) → nov ključ preimenovan v crnomelj-ks-griblje-svet
+- Ne-vgrajeno (dokaz najprej): MD požar 31. 3. 2025 (vir NE imenuje PGD Griblje), MD odpadki 2019 (FB-vir), DL Rally Griblje 2026 (kandidat za zapis), DL 140 let železarne Gradac, ~13 kronik male vasi — vse v research doc 21
+- Konstante usklajene: 450→456 (R0.3/R16.2/T7.2/T8.11/T9.3/T9.4/T8.3/T8.4/audit + komentar T9 443→456), 351→354 (T7.3/T8.6/audit-entities), 52→54 (T7.4/T8.7/audit); razlog +3 identitete/+2 deljena = kolizije DL-iskalnih URL-jev (kanonična identiteta vira — namenjeno)
+- Popravek dev strežnika: :3100 padel / zastarel DB (96) → restart z izrecnim DATABASE_URL=file:/home/z/griblje-museum/db/custom.db → OpenData 98/456 živo
+- Regresija (živi :3100): tsc 0, eslint 0, verify-i18n 930×5, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), audit-entities ✓ 0, audit-timeline-map 39 ✓/0
+- Baza: reseeda z izrecnim DATABASE_URL → OpenData 98/456; sitemap 99 (dinamičen)
+- Dokumentacija: research-griblje/21-sbz-dolenjski-list-val8.md + KAZALO +21 + README sklop 54 + worklog (ta zapis)
+- Push: commit + push origin main (GitHub) → Vercel auto-deploy; preverba produkcije
+
+Stage Summary:
+- Val 8 zaključen: 98 zapisov (MVG-001–098), 456 virov, 354 identitet virov, 92 entitet
+- SBZ potencial Županiča izkoriščen (starši, sošolci, psevdonim Gribljanovič — najmočnejša kulturna vez vasi z znanostjo); uradni svet KS 2025 potrjen; križevo z neodvisno potrditvijo in neprekinjenim koledarjem 1890→2026; Kralj kot kurirček; Totter = vir zapisovalcev
+- Regresija v celoti zelena; produkcija (Vercel) bo po pushu prejela 98/456
+- TO_COLLECT za val 9: DL polni teksti (Kralj/Totter/Švarski/2009/Rally), Odeon t-* ob odprtem oknu, rezultati arheologije razsvetljave, SEM hiša Županiča, Rally Griblje kot kandidat za zapis

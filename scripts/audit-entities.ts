@@ -259,9 +259,9 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 98) ok("98/98 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 98) ok("98/98 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 450) ok("450 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 351) ok("351 identitet virov (7. val: +7 moja-dolenjska/NP Kolpa/Odeon 2019/vigred)"); else err(`identitet: ${identities}`);
-if (shared === 52) ok("51 deljenih virov"); else err(`deljenih: ${shared}`);
+if (srcN === 456) ok("456 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 354) ok("354 identitet virov (8. val: +3 — md križevo 2025, DL pastirski 2009, KS svet)"); else err(`identitet: ${identities}`);
+if (shared === 54) ok("54 deljenih virov"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
 

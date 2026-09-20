@@ -1,0 +1,16 @@
+{
+    "exception": "Invalid SPARQL query: Prefix rdfs was not registered using a PREFIX declaration",
+    "metadata": {
+        "line": 1,
+        "positionInLine": 27,
+        "startIndex": 27,
+        "stopIndex": 36
+    },
+    "query": "SELECT ?item WHERE { ?item rdfs:label \"Griblje\"@sl } LIMIT 10",
+    "resultsize": 0,
+    "status": "ERROR",
+    "time": {
+        "computeResult": 0,
+        "total": 0
+    }
+}

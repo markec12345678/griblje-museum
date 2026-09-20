@@ -171,13 +171,13 @@ export const ENTITIES: EntityRef[] = [
     role: "subjekt-zapisa",
     labelSi: "Niko Županič",
     labelEn: "Niko Županič",
-    aliases: ["dr. Niko Županič", "Niko Županič-Švarski"],
+    aliases: ["dr. Niko Županič", "Niko Županič-Švarski", "Dr. Nikša Gribljanovič"],
     time: {
-      labelSi: "1. december 1876 – 1961",
-      labelEn: "1 December 1876 – 1961",
+      labelSi: "1. december 1876 – 11. september 1961",
+      labelEn: "1 December 1876 – 11 September 1961",
       sortKey: 1876,
     },
-    note: "Ustanovitelj Slovenskega etnografskega muzeja (1921); rojen v hiši Švarskih — vzdevek izpričan v MVG-057/085.",
+    note: "Ustanovitelj Slovenskega etnografskega muzeja (1921); rojen v hiši Švarskih — vzdevek izpričan v MVG-057/085; starši Miha (Miko), kmet in trgovec, ter Katarina r. Pezdirc; gimnazija Novo mesto 1888–97 (sošolec Ketteja in O. Župančiča); psevdonim dr. Nikša Gribljanovič (SBZ, vir sbl-zupanic).",
     evidence: [
       { slug: "griblje-vas" },
       { slug: "petstoletnica-2026" },
