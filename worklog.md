@@ -2175,3 +2175,23 @@ Stage Summary:
 - Zbirka: 93 zapisov / 423 vrstic virov / 325 identitet / 52 deljenih (vse številke v testih usklajene)
 - Nova artefakta: research-griblje/15-muzejska-raziskava-2026-10.md + raw-web-muzeji-2026-10/ (surovi rezultati + orodja)
 - TO_COLLECT (kustos): identifikacija hiš na SEM fotografijah, točen datum odprtja učilnice, Johan Barle 1882, interniranci na Rabu, SEM »Svetovljan iz Gribelj«, Kamra obeležja
+
+---
+Task ID: 48
+Agent: Z.ai Code (glavni agent)
+Task: Nadaljevanje muzejske raziskave po slovenskih spletnih muzejih (drugi val, naročilo »odlicno se raziskuj nadaljuj«) — ustanove/koti izven 47. sklopa; vgradnja LE nedupliranih, dokazano podprtih najdb; regresija; push na GitHub.
+
+Work Log:
+- Dedup-pregled stanja 47. sklopa: research-griblje/15 + _digest.txt (66 iskanj, 184 URL) — ugotovljene luknje: MNZS/Rab, šolske kronike/SŠM dokumentacija, dLib časopisje + »Griblach«, kataster, Narodna galerija, regionalni muzeji, ZNOŽ, kupski manevri 1937, Županičeva terenska dela, Leksikon 1882.
+- Drugi val iskanj: 24 poizvedb (n01–n24, search-round2.ts) + follow-up (f01–f08 search-followup.ts, g01–g08 search-citations.ts, h01–h06 search-phrases.ts, i01–i04 search-weiss.ts, j01–j03) — surovine v research-griblje/raw-web-muzeji-2026-10/ (n/f/g/h/i/j JSON + regeneriran _digest.txt).
+- Pridobivanje strani: slov.si Tovariš TV-15_1968_37.pdf (pdftotext — polno pričevanje o zasedi 6. 9. 1941: Lojze Fabjan, taborišče nad Miklarji, voz 6–7 vojakov, »ubila tri in ranila dva«); DOI 10.22586/csp.v57i1.31066 → OJS SRCE → polni PDF Đerek 2025 (odstavek: vodne postaje Sveta Marija/Gradac/Dvor/Vinica/GRIBLJE za ~20.000 vojakov); Kamra Tomšič (rojen Vinica — ZAVRNJENO); Commons API (sliki + licence, prenos prek Special:FilePath).
+- Dedup preverjava proti zbirki: »Gribelj v Beli Krajini« = podnaslov Šopeka (že MVG-043); Briglach ×8 že pokrit; Boršt v zbirki = belorepec (ne urno grobišče) → igla A 478 NOVA; zaseda 1941 že pokrita → le koleracija; Tomšič ni Griblje; ZC 1988 (Kambič nagrobnik) neoverljeno → TO_COLLECT.
+- Vgradnja v src/lib/museum-content.ts: MVG-094 kupski-manevri-1937 (vojna, DOCUMENTED, SL/EN, vir Đerek 2025 z DOI/URL, slika cistilna-krasinec.jpg CC BY-SA 3.0 ilustrativna); MVG-095 bronasta-igla-a478 (kraj, DOCUMENTED, SL/EN, vir Dular 1979 AV 30, slika Laténium CC BY-SA 3.0 ilustrativna); +4 vira obstoječim (MVG-028 Tovariš 1968 + koleracijski odstavek SL/EN; MVG-026 SŠM mapa šole Griblje; MVG-010 Promitzer/Etnolog merjenja Gradac–Krasinec–Griblje + starši; MVG-083 Mason/Grahek VS 39/41 2006); sprehod: +2 postaje (src/lib/walks.ts — »Voda je življenje«: igla za najdiščem; »Vojna in svoboda«: manevri 1937 pred zasedo 1941).
+- Testne konstante usklajene (95 zapisov/429 virov/331 identitet/82 s časom/30 s lego/96 sitemap): test-timeline-map, test-entities, test-ai-curator, red-team (R0.2/R0.3/R12.2/R16.1/R16.2), audit-entities, audit-timeline-map.
+- Regresija proti živemu strežniku :3100 (BASE_URL): test-entities 100 ✓/0 ✗, test-timeline-map 72 ✓/0 ✗, test-ai-curator 214 ✓/0 ✗, red-team 157 ✓/0 ✗, audit-entities ✓ 0 napak, audit-timeline-map 39 ✓/0 ✗; verify-i18n 930 × 5 ✓; tsc 0; eslint 0; db:seed idempotentno → OpenData 95/429; spot-check živo: /exponat/kupski-manevri-1937 200, /exponat/bronasta-igla-a478 200, IIIF 200.
+- Dokumentacija: research-griblje/16-muzejska-raziskava-2-2026-09.md (metoda, najdbe po ustanovah, zavrnjeni seznam, regresija, 7×TO_COLLECT) + KAZALO +16 + README 48. sklop.
+
+Stage Summary:
+- 48. sklop: 2 nova zapisa (MVG-094 kupski-manevri-1937 — postaja za pitno vodo pri Gribljih med kupskimi manevri 1937; MVG-095 bronasta-igla-a478 — prvi imenovani predmet iz Gribelj v arheološki literaturi), 4 novi viri obstoječim zapisom, koleracija zasede 1941 s pričevanjem udeleženca (TV 1968), +2 postaji sprehodov
+- Zbirka: 95 zapisov / 429 virov / 331 identitet / 52 deljenih (vse številke v testih usklajene, vse regresije zelene)
+- Push: origin main (commit 48. sklop)

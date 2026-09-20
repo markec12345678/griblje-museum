@@ -930,6 +930,15 @@ export const seedExhibits: SeedExhibit[] = [
         noteSi: "Minister v Pašičevi vladi 1922–25; dvoboja s Pekmezijem in z avstrijskim častnikom; častni občan Adlešič 1931 (spremljala Gaspari in Vurnik); evakuacija v Dalmacijo; oče Miko vinski trgovec.",
         noteEn: "Minister in Pašić's government 1922–25; the duels with Pekmezi and the Austrian officer; honorary citizen of Adlešiči 1931 (accompanied by Gaspari and Vurnik); evacuation to Dalmatia; the father Miko a wine merchant.",
       },
+      {
+        key: "promitzer-etnolog-zupanic",
+        nameSi: "Promitzer, C.: Niko Županič kot slovenski etnolog — njegovo ravnateljevanje v Etnografskem muzeju v Ljubljani (1923–1940) — Etnolog (SEM), številka o Kraljevini Jugoslaviji",
+        nameEn: "Promitzer, C.: Niko Županič as a Slovene ethnologist — his directorship of the Ethnographic Museum in Ljubljana (1923–1940) — Etnolog (SEM), the Kingdom of Yugoslavia issue",
+        sourceType: "objava",
+        license: "navedba vira",
+        noteSi: "Objava (dostopna tudi v dLib.si) navaja, da je Županič »v okolici Gradac–Krasinec–Griblje vršil antropološka merjenja in etnografsko raziskavanje« (po Vurnikovi navedbi) — dokumentiran zapis terenskega dela pri rojstni vasi; biografija navaja starše: Katarina in Mik Zupanič.",
+        noteEn: "The publication (also available in dLib.si) states that Županič \"carried out anthropological measurements and ethnographic research around Gradac–Krasinec–Griblje\" (after Vurnik's note) — a documented record of fieldwork near his native village; the biography names his parents: Katarina and Mik Zupanič.",
+      },
     ],
   },
   {
@@ -2192,6 +2201,15 @@ export const seedExhibits: SeedExhibit[] = [
           "The September 2026 moment: the older pupils' welcome with a song and a word, closed with a cake.",
       },
       {
+        key: "ssm-mapa-sola-griblje",
+        nameSi: "Slovenski šolski muzej — dokumentacijska zbirka: Mapa šole Griblje",
+        nameEn: "Slovenian School Museum — documentation collection: the Griblje school file",
+        sourceType: "arhiv",
+        license: "muzejska dokumentacija (navedba)",
+        noteSi: "SŠM v dokumentacijski zbirki (register šol + šolske mape) hrani mapo šole Griblje; najdba po bibliografski navedbi v reviji Retrospektive, letnik 2, št. 2/3 (2019), ki našteva šolske mape zbirke SŠM. Vsebina mape (listine, kronika?) čaka na obisk — TO_COLLECT.",
+        noteEn: "The Slovenian School Museum keeps the Griblje school file in its documentation collection (the school register + school files); found through a bibliographic listing in the journal Retrospektive, vol. 2, no. 2/3 (2019), which enumerates the school files of the SŠM collection. The file's contents (documents, chronicle?) await an on-site visit — TO_COLLECT.",
+      },
+      {
         key: "commons-glasbena-crnomelj",
         nameSi: "Wikimedia Commons: Glasbena šola Črnomelj — med drugo svetovno vojno partizanska gimnazija (Bb63lj, CC BY 4.0)",
         nameEn: "Wikimedia Commons: The Music School of Črnomelj — the partisan gymnasium of World War II (Bb63lj, CC BY 4.0)",
@@ -2373,9 +2391,9 @@ export const seedExhibits: SeedExhibit[] = [
     summaryEn:
       "The first armed action of Bela krajina's Partisans at the village's doorstep: on 6 September 1941 they ambushed a patrol of the Italian border police carrying ammunition for the post at Griblje.",
     storySi:
-      "April 1941 je vojna prispela na Kolpo: jugoslovanska država se je razpadla, Bela krajina pa padla pod italijansko oblast in bila priključena Ljubljanski pokrajini — ozemlju, ki si ga je fašistična Italija izmerila zase. Ob reki in cestah so zrasle postojanke; ena od njih je stala v Gribljah, kjer je italijanska mejna policija nadzirala prehode, promet in mejo. Okupacija ni bila tiha: racije, prepovedi, oddaja žita in živine — in strah, ki se ni zapisal v arhive.\n\n6. septembra 1941, poleti in sredi dneva, se je na cesti med Črnomljem in Gribljami zgodilo nekaj, kar Belo krajino uvršča med najzgodnejši odpor v Sloveniji. Štirje borci belokranjske partizanske skupine, zbrane v taborišču na Židovcu, so iz zasede napadli patruljo italijanskih mejnih policistov, ki je iz Črnomlja peljala hrano in strelivo za postojanko v Gribljah. Dva pripadnika patrulje sta na mestu umrla, trije so bili ranjeni; eden od ranjenih je umrl pozneje. Za vas ob Kolpi se je druga svetovna vojna začela tistega dne — ne z fronto od daleč, ampak s streljanjem na lastni cesti.\n\nTa zapis pomika vojno zgodovino Gribelj tri leta nazaj: dosedanja zbirka se je začenjala z letom 1944, z zavezniškimi letali nad poljem. Imena štirih borcev zasede, usoda postojanke in podrobnosti dneva še čakajo na arhiv in spomin domačinov — muzej te vrzeli izrecno priznava, namesto da bi jih zapolnil z domnevo.\n\nKraj spopada ni pozabljen. 24. julija 1960 so na cesti Črnomelj–Griblje postavili spominski kamen po načrtu kiparja Jakoba Savinška; Zavod za varstvo kulturne dediščine Slovenije ga vodi v registru nepremične kulturne dediščine pod številko EŠD 19324. Skupaj s spomenikom trinajstim padlim vaščanom pred šolo (EŠD 19326) zida isti spomin: vojna v Gribljah ni trajala od 1944 — trajala je od prvega septembrskega dne 1941.",
+      "April 1941 je vojna prispela na Kolpo: jugoslovanska država se je razpadla, Bela krajina pa padla pod italijansko oblast in bila priključena Ljubljanski pokrajini — ozemlju, ki si ga je fašistična Italija izmerila zase. Ob reki in cestah so zrasle postojanke; ena od njih je stala v Gribljah, kjer je italijanska mejna policija nadzirala prehode, promet in mejo. Okupacija ni bila tiha: racije, prepovedi, oddaja žita in živine — in strah, ki se ni zapisal v arhive.\n\n6. septembra 1941, poleti in sredi dneva, se je na cesti med Črnomljem in Gribljami zgodilo nekaj, kar Belo krajino uvršča med najzgodnejši odpor v Sloveniji. Štirje borci belokranjske partizanske skupine, zbrane v taborišču na Židovcu, so iz zasede napadli patruljo italijanskih mejnih policistov, ki je iz Črnomlja peljala hrano in strelivo za postojanko v Gribljah. Dva pripadnika patrulje sta na mestu umrla, trije so bili ranjeni; eden od ranjenih je umrl pozneje. Za vas ob Kolpi se je druga svetovna vojna začela tistega dne — ne z fronto od daleč, ampak s streljanjem na lastni cesti.\n\nAkcija ima ohranjeno pričevanje udeleženca: nekaj dni zatem je komandir prve belokranjske čete Lojze Fabjan iz Črnomlja v taborišču nad Miklarji povedal, kako je zaseda tisto nedeljsko dopoldne počakala voz s šestimi do sedmimi vojaki, naložen z orožjem in živili; pričevanje je zapisal P. Romanič in ga 1968 objavil v Tovarišu — končni izid, trije mrtvi in dva ranjena, se pokrije z zapisom na spominskem kamnu.\n\nTa zapis pomika vojno zgodovino Gribelj tri leta nazaj: dosedanja zbirka se je začenjala z letom 1944, z zavezniškimi letali nad poljem. Imena štirih borcev zasede, usoda postojanke in podrobnosti dneva še čakajo na arhiv in spomin domačinov — muzej te vrzeli izrecno priznava, namesto da bi jih zapolnil z domnevo.\n\nKraj spopada ni pozabljen. 24. julija 1960 so na cesti Črnomelj–Griblje postavili spominski kamen po načrtu kiparja Jakoba Savinška; Zavod za varstvo kulturne dediščine Slovenije ga vodi v registru nepremične kulturne dediščine pod številko EŠD 19324. Skupaj s spomenikom trinajstim padlim vaščanom pred šolo (EŠD 19326) zida isti spomin: vojna v Gribljah ni trajala od 1944 — trajala je od prvega septembrskega dne 1941.",
     storyEn:
-      "April 1941 brought the war to the Kolpa: the Yugoslav state collapsed, and Bela krajina fell under Italian authority, annexed to the Province of Ljubljana — territory Fascist Italy had measured out for itself. Posts grew up along the river and the roads; one of them stood at Griblje, where the Italian border police controlled crossings, traffic and the border. The occupation was not silent: raids, prohibitions, the requisition of grain and livestock — and a fear that never wrote itself into the archives.\n\nOn 6 September 1941, in summer and in broad daylight, something happened on the road between Črnomelj and Griblje that places Bela krajina among the earliest resistance in Slovenia. Four fighters of the Bela krajina Partisan group, gathered in the camp at Židovec, ambushed a patrol of Italian border police carrying food and ammunition from Črnomelj to the post at Griblje. Two of the patrol died on the spot, three were wounded; one of the wounded died later. For the village on the Kolpa, the Second World War began that day — not with a distant front, but with shooting on its own road.\n\nThis record moves Griblje's war history three years back: until now the collection began with 1944 and the Allied aircraft over the field. The names of the four fighters, the fate of the post and the details of the day still await the archive and the villagers' memory — the museum openly admits these gaps rather than filling them with conjecture.\n\nThe site of the fighting is not forgotten. On 24 July 1960 a memorial stone, designed by the sculptor Jakob Savinšek, was raised on the Črnomelj–Griblje road; the Institute for the Protection of Cultural Heritage of Slovenia keeps it in the register of immovable cultural heritage under EŠD 19324. Together with the memorial to the thirteen fallen villagers before the school (EŠD 19326) it builds the same memory: the war at Griblje did not last from 1944 — it lasted from that first September day of 1941.",
+      "April 1941 brought the war to the Kolpa: the Yugoslav state collapsed, and Bela krajina fell under Italian authority, annexed to the Province of Ljubljana — territory Fascist Italy had measured out for itself. Posts grew up along the river and the roads; one of them stood at Griblje, where the Italian border police controlled crossings, traffic and the border. The occupation was not silent: raids, prohibitions, the requisition of grain and livestock — and a fear that never wrote itself into the archives.\n\nOn 6 September 1941, in summer and in broad daylight, something happened on the road between Črnomelj and Griblje that places Bela krajina among the earliest resistance in Slovenia. Four fighters of the Bela krajina Partisan group, gathered in the camp at Židovec, ambushed a patrol of Italian border police carrying food and ammunition from Črnomelj to the post at Griblje. Two of the patrol died on the spot, three were wounded; one of the wounded died later. For the village on the Kolpa, the Second World War began that day — not with a distant front, but with shooting on its own road.\n\nThe action has a preserved participant's testimony: a few days later the commander of the first Bela krajina company, Lojze Fabjan of Črnomelj, told at the camp above Miklari how on that Sunday morning the ambush had waited for the wagon with six or seven soldiers, loaded with weapons and food; the testimony was written down by P. Romanič and published in 1968 in Tovariš — the final outcome, three dead and two wounded, matches the inscription on the memorial stone.\n\nThis record moves Griblje's war history three years back: until now the collection began with 1944 and the Allied aircraft over the field. The names of the four fighters, the fate of the post and the details of the day still await the archive and the villagers' memory — the museum openly admits these gaps rather than filling them with conjecture.\n\nThe site of the fighting is not forgotten. On 24 July 1960 a memorial stone, designed by the sculptor Jakob Savinšek, was raised on the Črnomelj–Griblje road; the Institute for the Protection of Cultural Heritage of Slovenia keeps it in the register of immovable cultural heritage under EŠD 19324. Together with the memorial to the thirteen fallen villagers before the school (EŠD 19326) it builds the same memory: the war at Griblje did not last from 1944 — it lasted from that first September day of 1941.",
     evidenceStatus: "DOCUMENTED",
     image: "/images/authentic/zaseda-spomenik.jpg",
     imageCredit:
@@ -2425,6 +2443,16 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://www.kamra.si/mm-elementi/spomenik-napadu-na-italijanske-mejne-policiste/",
         noteSi: "Glavna slika zapisa: pravi spominski kamen zasede iz leta 1960 (EŠD 19324), iz digitalne zbirke Spominska obeležja v občini Črnomelj.",
         noteEn: "The record's main image: the actual memorial stone of the ambush raised in 1960 (EŠD 19324), from the digital collection Memorials of the Municipality of Črnomelj.",
+      },
+      {
+        key: "tovaris-1968-zaseda",
+        nameSi: "Romanič, P. (1968): pričevanje o zasedi pri Gribljih 6. 9. 1941 — Tovariš, št. 37/1968 (digitalizirano: slov.si, TV-15_1968_37)",
+        nameEn: "Romanič, P. (1968): a testimony of the ambush at Griblje, 6 September 1941 — Tovariš, no. 37/1968 (digitised: slov.si, TV-15_1968_37)",
+        sourceType: "objava",
+        license: "digitalizirano časopisje (navedba)",
+        url: "https://slov.si/doc/TV-15_1968/TV-15_1968_37.pdf",
+        noteSi: "Pričevanje komandirja prve belokranjske čete Lojzea Fabjana, zapisano nekaj dni po akciji v taborišču nad Miklarji (po viru Kamra: taborišče na Židovcu — uskladitev imen TO_COLLECT); voz s 6–7 vojaki, orožje in živila; »napadla fašistično motó in pri tem ubila tri in ranila dva« — številke se pokrijejo z zapisom (2 na mestu + 1 pozneje = 3 mrtvi, 2 ranjena); obeležje 1968 opisano kot kamnita kocka na treh železnih drogovih; akcija po neuspelem napadu na vlak Otovec–Metlika 11/12. 8. 1941.",
+        noteEn: "The testimony of Lojze Fabjan, commander of the first Bela krajina company, recorded a few days after the action at the camp above Miklari (per the Kamra source: the camp at Židovec — reconciling the names TO_COLLECT); a wagon with 6–7 soldiers, weapons and food; \"attacked the fascist vehicle, killing three and wounding two\" — the numbers match the record (2 on the spot + 1 later = 3 dead, 2 wounded); the 1968 memorial described as a stone cube on three iron posts; the action following the failed train attack on the Otovec–Metlika line, 11/12 August 1941.",
       },
     ],
   },
@@ -6301,6 +6329,15 @@ export const seedExhibits: SeedExhibit[] = [
           "The foundational scholarly article on Griblje as a problem of lowland archaeological complexes; cited by the Holocene vegetation studies of Bela krajina.",
       },
       {
+        key: "vs-39-41-mason-2006",
+        nameSi: "Mason, Ph., Grahek, L., Bricelj, M., Pintér, I., Čaval, S. (2006): Griblje — Varstvo spomenikov 39/41, poročila 2000/2004, str. 55–56",
+        nameEn: "Mason, Ph., Grahek, L., Bricelj, M., Pintér, I., Čaval, S. (2006): Griblje — Varstvo spomenikov 39/41, reports 2000/2004, pp. 55–56",
+        sourceType: "objava",
+        license: "navedba vira",
+        noteSi: "Poročilo o ekstenzivnih arheoloških raziskavah pri Gribljih v obdobju 2000–2004 v poročilnem zvezku Varstva spomenikov; koleracija Dularjevega članka (2001) o problematiki nižinskih kompleksov.",
+        noteEn: "The report on extensive archaeological research near Griblje in the period 2000–2004, in the report volume of Varstvo spomenikov; a corroboration of Dular's 2001 article on the problem of lowland complexes.",
+      },
+      {
         key: "andric-2007-holocene",
         nameSi: "Andrič, M. (2007): Holocene vegetation development in Bela krajina (Slovenia) and the impact of first farmers on the landscape — The Holocene 17(6), str. 763–776",
         nameEn: "Andrič, M. (2007): Holocene vegetation development in Bela krajina (Slovenia) and the impact of first farmers on the landscape — The Holocene 17(6), pp. 763–776",
@@ -6892,6 +6929,89 @@ export const seedExhibits: SeedExhibit[] = [
         url: WM("F%C3%BCnf_Haseln%C3%BCsse.JPG"),
         noteSi: "Ilustrativna slika zapisa: dejavnost, ne oseba — Kraljeva fotografija ostaja v zasebnem arhivu.",
         noteEn: "The record's illustrative image: the activity, not the person — Kralj's photograph remains in a private archive.",
+      },
+    ],
+  },
+  {
+    slug: "kupski-manevri-1937",
+    museumNo: "MVG-094",
+    addedAt: "2026-09-20",
+    category: "vojna",
+    titleSi: "Kupski manevri 1937 — vojaška postaja za pitno vodo pri Gribljih",
+    titleEn: "The Kupa manoeuvres of 1937 — the army's drinking-water station at Griblje",
+    periodSi: "september 1937 · Kraljevina Jugoslavija · vaje ob reki Kupi",
+    periodEn: "September 1937 · Kingdom of Yugoslavia · the exercises on the Kupa river",
+    summarySi:
+      "Septembra 1937 so potekali kupski manevri — največji mirnodopski vojaški dogodek Kraljevine Jugoslavije. Za oskrbo okrog 20.000 vojakov je vojska na področju Bele in Suhe krajine uredila posebne postaje za pročiščevanje pitne vode; ena od petih je bila v Gribljah.",
+    summaryEn:
+      "In September 1937 the Kupa manoeuvres took place — the largest peacetime military event of the Kingdom of Yugoslavia. To supply some 20,000 soldiers the army built special drinking-water treatment stations in Bela and Suha krajina; one of the five stood at Griblje.",
+    storySi:
+      "Septembra 1937 se je pokrajina ob Kolpi za nekaj tednov spremenila v vojaški poligon. Kupski manevri — največji mirnodopski dogodek vojske Kraljevine Jugoslavije — so združili dve manevarski skupini: številčnejšo »rdečo« na severu, sestavljeno večinoma iz enot Dravske divizijske oblasti, in manjšo »belo« na hrvaškem tlu. Na slovensko stran je prišlo okrog 20.000 vojakov s konji, vozovi in mostovnimi ekipami; k vajam je sodila tudi logistika — ceste, oskrba, poljske kuhinje in voda.\n\nPrav voda je postala logistična nit, ki je zašla tudi v Griblje. Vojska je na področju Bele in Suhe krajine morala organizirati posebne postaje za pročiščevanje pitne vode: v vaseh Sveta Marija, Gradac, Dvor, Vinica in Griblje. Tako je gribeljska ravnica za nekaj tednov nosila vojaško infrastrukturo, ki je oskrbovala tisoče ust — vas, navajena potokov, studencev in malence, se je za mesec dni uvrstila na vojaške zemljevide kot pipa za dvajset tisoč ljudi.\n\nZa vas je bil to dogodek s predzgodbo in nadaljevanjem. Vojska je tu stala stoletja prej kot obmejna krajina; po aprilu 1941 je mejna policija na cesti v Gribljah pripeljala vojaški svet nazaj v vas; štiri leta po manevrih, 6. septembra 1941, se je na isti cesti zgodila zaseda — prva oborožena akcija belokranjskih partizanov. V tem zaporedju so manevri 1937 zadnji mirnodopski vojaški pečat na gribeljski ravnici: še vaje, ne še vojna.\n\nZapis temelji na znanstveni študiji o kupskih manevrih, ki je leta 2025 izšla v Časopisu za suvremenu povijest in stoji na arhivski podlagi vojaških in banovinskih spisov. Muzej išče: fotografije vojakov pri Gribljih leta 1937, spomine domačinov na manevre in natančno mesto vodne postaje — vsak od teh dokumentov bo zapis iz splošne vojaške zgodovine približal vaški.",
+    storyEn:
+      "In September 1937 the landscape along the Kolpa turned into a military training ground for a few weeks. The Kupa manoeuvres — the largest peacetime event of the Army of the Kingdom of Yugoslavia — joined two manoeuvre groups: the more numerous \"red\" one in the north, formed mostly of units of the Drava divisional district, and the smaller \"white\" one on Croatian soil. Some 20,000 soldiers with horses, carts and bridging units came to the Slovene side; the exercises included logistics as well — roads, supply, field kitchens and water.\n\nWater became the logistic thread that also led to Griblje. In Bela and Suha krajina the army had to organise special drinking-water treatment stations: in the villages of Sveta Marija, Gradac, Dvor, Vinica and Griblje. For a few weeks the Griblje plain thus carried military infrastructure serving thousands of mouths — a village used to streams, springs and weirs entered the military maps for a month as the tap for twenty thousand people.\n\nFor the village this was an event with a prehistory and a sequel. The army had stood here centuries earlier as the frontier landscape; after April 1941 the border police on the Griblje road brought the military world back to the village; four years after the manoeuvres, on 6 September 1941, the ambush happened on the same road — the first armed action of Bela krajina's Partisans. In that sequence the 1937 manoeuvres were the last peacetime military imprint on the Griblje plain: still exercises, not yet war.\n\nThe record rests on a scholarly study of the Kupa manoeuvres published in 2025 in the journal Časopis za suvremenu povijest, grounded in military and provincial archives. The museum is looking for: photographs of soldiers at Griblje in 1937, villagers' memories of the manoeuvres and the exact site of the water station — each such document will bring the record from general military history closer to the village.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/cistilna-krasinec.jpg",
+    imageCredit:
+      "Foto: Hythlodot · Wikimedia Commons · CC BY-SA 3.0 — čistilna naprava ob Kolpi pri Krasincu (ilustrativna slika: vrsta infrastrukture, ki je leta 1937 oskrbovala manevarske enote s pitno vodo)",
+    yearFrom: 1937,
+    yearTo: 1937,
+    lat: 45.5728,
+    lng: 15.2926,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "derek-2025-kupski-manevri",
+        nameSi: "Đerek, D. (2025): Kupski manevri vojske Kraljevine Jugoslavije 1937. godine — Časopis za suvremenu povijest 57(1), str. 143–173 (DOI 10.22586/csp.v57i1.31066)",
+        nameEn: "Đerek, D. (2025): The Kupa manoeuvres of the Army of the Kingdom of Yugoslavia in 1937 — Časopis za suvremenu povijest 57(1), pp. 143–173 (DOI 10.22586/csp.v57i1.31066)",
+        sourceType: "objava",
+        license: "znanstvena objava (open access)",
+        url: "https://ojs.srce.hr/casopis-za-suvremenu-povijest/article/view/31066",
+        noteSi:
+          "»Na tlu Dravske banovine vojska je za opskrbu manevarskih snaga pitkom vodom koristila vodovod u Novome Mestu, ali je na području Bele i Suhe krajine morala organizirati i posebne postaje za pročišćavanje vode u selima Sveta Marija, Gradac, Dvor, Vinica i Griblje (uglavnom blizu Črnomlja) ... Tako se i na slovenskom tlu osigurala lokalna opskrba pitkom vodom za još oko 20.000 vojnika tijekom Kupskih manevara.«",
+        noteEn:
+          "\"On the territory of the Drava Banovina the army used the Novo mesto waterworks to supply the manoeuvre forces with drinking water, but in Bela and Suha krajina it had to organise special water-treatment stations in the villages of Sveta Marija, Gradac, Dvor, Vinica and Griblje (mostly near Črnomelj) ... thus a local supply of drinking water for a further c. 20,000 soldiers was secured on Slovene soil during the Kupa manoeuvres.\"",
+      },
+    ],
+  },
+  {
+    slug: "bronasta-igla-a478",
+    museumNo: "MVG-095",
+    addedAt: "2026-09-20",
+    category: "kraj",
+    titleSi: "Bronasta igla iz Gribelj — predmet z inventarno številko A 478",
+    titleEn: "The bronze pin from Griblje — an object with inventory number A 478",
+    periodSi: "pozna bronasta doba (tipološka umestitev) · predmet objavljen 1979",
+    periodEn: "Late Bronze Age (typological placement) · the object published in 1979",
+    summarySi:
+      "V objavi žarnega grobišča na Borštku pri Metliki (1979) je z lokacijo »Griblje« zapisana bronasta igla s profilirano glavico (inv. št. A 478, 19,6 cm) — prvi imenovani predmet iz Gribelj, objavljen v arheološki literaturi.",
+    summaryEn:
+      "In the publication of the urn necropolis at Boršt near Metlika (1979) a bronze pin with a profiled head is listed under the place-name \"Griblje\" (inv. no. A 478, 19.6 cm) — the first named object from Griblje published in the archaeological literature.",
+    storySi:
+      "Arheološka zgodba Gribelj ne živi samo pod njivami ob Kolpi — živi tudi v inventarjih muzejev. V objavi žarnega grobišča na Borštku v Metliki, ki jo je leta 1979 v Arheološkem vestniku objavil Janez Dular, med gradivom stoji zapis, ki je za ta muzej nenavadno dragocen: »Bronasta igla s profilirano glavico Griblje (A 478); velikost 19,6 cm« (t. 12: 5).\n\nIgla s profilirano glavico je predmet, ki spada v izročilje pozne bronaste in zgodnje železne dobe — sveta žarnih grobišč in prvih knežjih središč, kakršno je Boršt nad Metliko. Dolga skoraj dvajset centimetrov, je pripadala oprsju ali pričeski — in v Dularjevi objavi stoji ob grobnih pridatkih Boršta kot primerjava, ki dokazuje, da je gribeljska najdba tipološko sodila v isti svet metliških žarnih grobov. V rokah je nosila isti čas, v katerem so ob Kolpi zrastle naselbine, ki jih muzej predstavlja v zapisu o najdišču ob Kolpi.\n\nKje je predmet danes? Številčenje »A« je oblika, ki v slovenski arheologiji kaže na arheološko zbirko Narodnega muzeja Slovenije — vendar točen dom predmeta, kontekst najdbe (kdaj in kje v Gribljih) ter natančno datiranje čakajo na pregled inventarjev. Muzej to vrzel izrecno zapisuje, namesto da bi jo zapolnil z domnevo; objava iz leta 1979 je doslej trdni dokaz, da predmet obstaja.\n\nTo je prvi imenovani predmet iz Gribelj, objavljen v arheološki literaturi — in hkrati manjkajoč člen med pokrajino pod vasjo ter zbirki, ki jo hranijo muzeji. Muzej išče: fotografijo igle, karton najdbe in potrditev hrambe; vsak od teh dokumentov bo predmetu vrnil ime kraja, ki ga nosi.",
+    storyEn:
+      "The archaeological story of Griblje does not live only beneath the fields by the Kolpa — it also lives in museum inventories. In the publication of the urn necropolis at Boršt in Metlika, which Janez Dular published in 1979 in Arheološki vestnik, there stands among the material a line of unusual value for this museum: \"A bronze pin with a profiled head, Griblje (A 478); size 19.6 cm\" (pl. 12: 5).\n\nA pin with a profiled head belongs to the legacy of the Late Bronze and Early Iron Age — the world of urn necropolises and the first princely centres, such as Boršt above Metlika. Almost twenty centimetres long, it belonged to dress or hairstyle; in Dular's publication it stands beside the grave goods of Boršt as a comparison proving that the Griblje find belonged typologically to the same world as the Metlika urn graves. In hand it carried the same age in which the settlements along the Kolpa grew, the ones this museum presents in its record of the site by the Kolpa.\n\nWhere is the object today? The \"A\" numbering is a form that in Slovene archaeology points to the archaeological collection of the National Museum of Slovenia — yet the object's exact home, the find context (when and where in Griblje) and its precise dating await an examination of the inventories. The museum records this gap openly instead of filling it with conjecture; the 1979 publication is, so far, the firm proof that the object exists.\n\nThis is the first named object from Griblje published in the archaeological literature — and at the same time the missing link between the landscape beneath the village and the collections kept by museums. The museum is looking for: a photograph of the pin, the find card and confirmation of its keeping; every one of these documents will return to the object the name of the place it carries.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/bronasta-igla-ilustracija.jpg",
+    imageCredit:
+      "Foto: Laténium / J.-J. Luder · Wikimedia Commons · CC BY-SA 3.0 — bronaste igle pozne bronaste dobe, Laténium Neuchâtel (ilustrativna slika tipologije — gribeljska igla čaka na lasten posnetek)",
+    yearFrom: -1000,
+    yearTo: -700,
+    lat: 45.5728,
+    lng: 15.2926,
+    coordsApprox: true,
+    featured: false,
+    sources: [
+      {
+        key: "dular-1979-av30",
+        nameSi: "Dular, J. (1979): Žarno grobišče na Borštku v Metliki (Das Urnenfeld auf Boršt in Metlika) — Arheološki vestnik 30, str. 65–100",
+        nameEn: "Dular, J. (1979): The urn necropolis at Boršt near Metlika (Das Urnenfeld auf Boršt in Metlika) — Arheološki vestnik 30, pp. 65–100",
+        sourceType: "objava",
+        license: "navedba vira",
+        noteSi:
+          "V objavi (t. 12: 5) je med gradivom zapisana »bronasta igla s profilirano glavico Griblje (A 478); velikost 19,6 cm«. Bibliografske potrditve citata: Gabrovec 1997 (50 let arheologije starejše železne dobe), avstriaca.at, iza.zrc-sazu.si.",
+        noteEn:
+          "The publication (pl. 12: 5) lists among the material \"a bronze pin with a profiled head, Griblje (A 478); size 19.6 cm\". Bibliographic confirmations of the citation: Gabrovec 1997 (50 years of the archaeology of the Older Iron Age), austriaca.at, iza.zrc-sazu.si.",
       },
     ],
   },

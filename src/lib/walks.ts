@@ -50,6 +50,13 @@ export const WALKS: Walk[] = [
           "Before the mills, before the church, before writing: people lived by this river for five thousand years. Beneath the fields by the Kolpa lie settlements from the Neolithic to the Romans — registered heritage, tilled by the plough.",
       },
       {
+        exhibitSlug: "bronasta-igla-a478",
+        noteSi:
+          "Iz teh njiv je prišel tudi prvi imenovani predmet: bronasta igla s profilirano glavico (inv. A 478, 19,6 cm), objavljena leta 1979 v Dularjevi študiji o Borštu — pet tisoč let pod plugom ima svoje ime.",
+        noteEn:
+          "From these fields comes the first named object as well: a bronze pin with a profiled head (inv. A 478, 19.6 cm), published in 1979 in Dular's study of Boršt — five thousand years beneath the plough have their name.",
+      },
+      {
         exhibitSlug: "mlini-na-kolpi",
         noteSi:
           "Kjer je reka dajala moč, so stali mlini. Urbarji jih omenjajo že v srednjem veku — moko je pridelovala voda, ne roka.",
@@ -144,6 +151,13 @@ export const WALKS: Walk[] = [
           "Med obema vojnama sprehoda stoti še prva: gribeljski sin, ki je leta 1914 prostovoljno šel braniti Srbijo in se z vojsko umaknil skozi Albanijo. Mate Zupanič-Švarski je umrl v Nîmesu; njegovi sopotniki so bili trije bratje Dragoše — vojna prve svetovne je v te hiše prišla prej kot september 1941.",
         noteEn:
           "Between the two wars of this walk stands a third: the Griblje son who went to defend Serbia as a volunteer in 1914 and retreated with the army through Albania. Mate Zupanič-Švarski died at Nîmes; his fellow travellers were the three Dragoš brothers — the First World War reached these houses before September 1941.",
+      },
+      {
+        exhibitSlug: "kupski-manevri-1937",
+        noteSi:
+          "September 1937: kupski manevri, največji mirnodopski vojaški dogodek Kraljevine Jugoslavije. Za oskrbo 20.000 vojakov je vojska pri Gribljah uredila postajo za pitno vodo — zadnja vaja pred vojno na isti cesti.",
+        noteEn:
+          "September 1937: the Kupa manoeuvres, the largest peacetime military event of the Kingdom of Yugoslavia. To supply 20,000 soldiers the army built a drinking-water station at Griblje — the last exercise before the war on the same road.",
       },
       {
         exhibitSlug: "zaseda-1941",
