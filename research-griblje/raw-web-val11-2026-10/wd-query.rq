@@ -1,0 +1,9 @@
+SELECT ?item ?itemLabel ?desc WHERE {
+  SERVICE wikibase:mwapi {
+    bd:serviceParam wikibase:api "EntitySearch" ;
+                    wikibase:endpoint "www.wikidata.org" ;
+                    mwapi:search "Griblje" ; mwapi:language "sl" .
+    ?item wikibase:apiOutputItem mwapi:item .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "sl,en,de,it". ?item schema:description ?desc. }
+} LIMIT 60

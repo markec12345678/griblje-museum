@@ -1,0 +1,18 @@
+{
+  "head" : {
+    "vars" : [ "item", "itemLabel", "desc" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "item" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q2531566"
+      },
+      "desc" : {
+        "xml:lang" : "sl",
+        "type" : "literal",
+        "value" : "naselje v Sloveniji"
+      }
+    } ]
+  }
+}

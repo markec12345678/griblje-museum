@@ -2384,3 +2384,24 @@ Stage Summary:
 - MVG-026 zdaj hrani himno vaške šole (»Naša šola Gribeljska« — Lozar/Kunič) — prvi zapis o glasbi šole; MVG-097 hrani mikro-geografijo elektro-omrežja (TP GOR. GRIBLJE)
 - Metodološki prispevek: t-* iskalni fragmenti Odeona so duhovi (404), ne Cloudflare-blokada — raziskovalni seznam očiščen lažnih ciljev
 - Regresija v celoti zelena; push + Vercel produkcija preverjena
+
+---
+Task ID: 57
+Agent: Z.ai Code (glavni)
+Task: »odlicno nadaljuj« — nadaljevanje: (a) push GitHub, (b) sinhronizacija README, (c) Vercel preverba, (d) 11. val raziskave + vgradnja (57. sklop)
+
+Work Log:
+- Okolje resetirano → repozitorij ponovno kloniran (283 MB, main @ ecb0960 = 56. sklop, 98/459); bun install 520 paketov; tsc 0
+- Preverjeno: bug audit-semantics.ts že popravljen v repozitoriju; README že sinhroniziran (98/98, 459); origin/main usklajen; Vercel produkcija ŽIVO (griblje-museum.vercel.app HTTP 200, OpenData 98/459) — veriga push/README/Vercel iz prejšnjega naročila zaprta
+- Slike (naročilo uporabnika): MVG-089 dkz-griblje = foto Nikola Vukmanič/Radio Odeon (Pasuljada 2017, original s kreditom); kupski manevri = Savinjc/Wikimedia CC BY-SA (lokacija z izrecno iskalno opombo) — ni generičnih zamenjav
+- 11. val: Kamra WP iskalnik (1 zadetek = 100 % dedup MVG-029); Wikidata SPARQL (nič novega); dLib/SIstory/vaskanal/muzej.si — blokade; GisKD preko spletnejšega iskanja
+- PRELOM: Dolenjski list — prvič enumerirane VSE strani (q=Griblje 1–12 + q=Gribelj 1–6) = 274 unikatnih člankov, 68 relevantnih; 28 prenešenih; meta-datumi
+- Vgrajeno add-only +11 virov (459→470) + 7 zgodbenih odstavkov SL/EN + išče-stavek MVG-089 posodobljen: MVG-089 (kmečke žene 20 let 2016, Anica Totter/Ivanka Pezdirc/Čemas Stjepanovič), MVG-033 (Audrey: Jandreči/Gornji Griblje, Ida Mae, Main Street After Dark 1945, hiša stoji), MVG-022 (Filak: SP Švedska 2011, sprejem, regijsko 2012), MVG-034 (Dragoš: grunt, milica, Pahor), MVG-082 (žbul do Kočevja, poroka 1946), MVG-032 (Torpedo 4. reli 2016, BMM), MVG-087 (drugi poročevalec 2017), MVG-097 (ČN 2008, 70 % EU)
+- Dedup potrjen: DL arzenal 2021 (že Kolpa-vir), DL kopalne vode (že K05010), Kamra spomenik (100 % MVG-029); TO_COLLECT: John Randolph Totter, Dragojila Milek, Valentina Štrucelj, ~10 kronik (DL žar-mar)
+- Regresija: tsc 0, eslint čist, verify-i18n 930×5, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0, audit-entities ✓, audit-timeline-map 39 ✓/0; reseeda → OpenData 98/470 živo; konstante usklajene (470/367/54) v 5 skriptah
+- Dokumentacija: research-griblje/24 + KAZALO +24 + README sklop 57 + surovine raw-web-val11-2026-10/
+
+Stage Summary:
+- Stanje: 98 zapisov (MVG-001–098), 470 virov, 367 identitet, 54 deljenih; sitemap 99
+- Vsi testi zeleni; commit + push na GitHub + Vercel auto-deploy sledita
+- Izpuščene vrstice TL;DR: DL je zdaj enumeracijsko izčrpan do nivoja žar-mar (naročniških) odlomkov
