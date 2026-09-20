@@ -2702,7 +2702,7 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "objava",
         license: "javna last / public domain",
         url: WM("Ob%C4%8Dine_dravske_banovine_v_letih_1933_-_1937.pdf"),
-        noteSi: "Primarni vir: komasacija 11. 9. 1933 — o. Griblje priključena novi občini Adlešiči (z o. Tribuče in k. o. Zuniči); 21. 9. 1936 (Sl. l. 78/36) kraja Dragoši in Griblje izločeni in priključeni občini Gradac; abecedno kazalo: Griblje 5—5 (= o. Gradac). Izrez te tabele je glavna slika zapisa.",
+        noteSi: "Primarni vir: komasacija 11. 9. 1933 — o. Griblje priključena novi občini Adlešiči (z o. Tribuče in k. o. Zuniči); 21. 9. 1936 (Sl. l. 78/36) kraja Dragoši in Griblje izločeni in priključeni občini Gradac; abecedno kazalo: Griblje 5—5 (= o. Gradac). Izrez te tabele je glavna slika zapisa. Sken v Digitalni knjižnici Slovenije in SIstory (ref. 35114).",
         noteEn: "Primary source: the amalgamation of 11 Sept. 1933 — the Municipality of Griblje joined to the new Municipality of Adlešiči (with Tribuče and the cadastral Zuniči); on 21 Sept. 1936 (Official Gazette 78/36) the places of Dragoši and Griblje were separated and joined to the Municipality of Gradac; the alphabetical index reads Griblje 5—5 (= the Gradac municipality). An excerpt of this table is the record's main image.",
       },
       {
@@ -6691,9 +6691,9 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "Every village has two calendars. One is written by mayors and stamped societies; the other by the women who bake the bread, teach the song, and bring to the stage all the energy the village has left after work. In Griblje this second calendar has a name: the Griblje Farm Women's Society.\n\nThe society first becomes graspable in the records in 1996, when together with the Črnomelj Institute for Education and Culture it published the booklet on the Griblje žbul — five Griblje women wrote the history of the onion-growing that once made the village famous. A revival followed: out of the memory of the žbul they made a study circle, from which a new booklet grew in 2012 — and the bed before the branch school, on which the pupils plant the true Griblje žbul every spring.\n\nOn the spring greeting day the society shows itself whole. At the Pozdrav pomladi in the fire station — a joint event of the branch school, the local community and the society — the women prepared folklore, a clarinet, a choir and a staged play, and the women's choir Viniške cür greeted the guests. Then came the bread: a competitive baking of home bread, with the best three announced.\n\nThe same hands revived the shepherds' games at the village pool and are present at every pasuljada: the Farm Women's Society has been on the poster from the first pot. The museum seeks: the exact founding date, the list of presidents and photographs of the society's beginnings — a history written by hands deserves its own archive too.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/kmecke-zene-testo.jpg",
+    image: "/images/authentic/pasuljada-2017-griblje.webp",
     imageCredit:
-      "Foto: Mona Hassan Abo-Abda · Wikimedia Commons · CC BY-SA 4.0 — ženske pri testu (ilustrativna slika)",
+      "Foto: Nikola Vukmanič · Radio Odeon — zmagovalne ekipe na 14. pasuljadi v Gribljah (2017), prireditvi, ki jo od prvega lonca prirejata TD Griblje in Društvo kmečkih žena Griblje",
     yearFrom: 1996,
     yearTo: 2026,
     featured: false,
@@ -6707,6 +6707,16 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://www.radio-odeon.com/novice/pozdrav-pomladi-v-gribljah/",
         noteSi: "Prireditev 30. 3. 2025 v gasilskem domu: PŠ + KS + DKŽ Griblje; folklor, klarinet, pevski zbor, igrana predstava, Viniške cür, tekmovalna peka domačega kruha.",
         noteEn: "The event of 30 March 2025 at the fire station: branch school + local community + the Farm Women's Society; folklore, clarinet, choir, a staged play, the Viniške cür, a competitive baking of home bread.",
+      },
+      {
+        key: "odeon-pasuljada-2017",
+        nameSi: "Radio Odeon (8. 8. 2017): 14. pasuljada v Gribljah — foto: Nikola Vukmanič",
+        nameEn: "Radio Odeon (8 Aug 2017): The 14th pasuljada in Griblje — photo: Nikola Vukmanič",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/14-pasuljada-v-gribljah/",
+        noteSi: "Organizatorji: podjetje Pezdirc, TD Griblje in Društvo kmečkih žena Griblje; zmagali sta domačinki Mateja Pezdirc in Romana Husič. Iz te objave je glavna slika zapisa.",
+        noteEn: "Organisers: the Pezdirc company, TD Griblje and the Griblje Farm Women's Society; the local winners were Mateja Pezdirc and Romana Husič. The record's main image comes from this article.",
       },
       {
         key: "worldcat-zbul",
@@ -6742,9 +6752,9 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "A village a hundred and fifty-three metres above the sea has its own mountain arithmetic: the Kolpa is a valley, Bela krajina a plain — yet Griblje is also the village that sent the war a ski-instructor on the Bulgarian border, a marathon runner in Ciril Totter, and in 2024 a mountaineer. Anton (Tone) Brodarič set out on a three-week expedition to Asia and stood on the summit of Mera Peak — 6,467 metres, the highest point ever reached by a man of this village.\n\nThe village answered with a hall. At the reception in the Griblje Dom krajanov seventy visitors came — in a room that holds eighteen. Brodarič spoke of the road, the altitude and the cold morning on the summit; the Municipality of Črnomelj awarded him its recognition for sporting achievements, and a tea evening at the Kovačnica sreče carried the story into the winter months.\n\nFor the museum the record is proof of the geography a village can make: what matters is not how high the mountain stood — what matters is that three generations of Griblje people sat in the room and listened. The museum seeks: photographs from the expedition, the route and the dates; the summit has its visitors' book, and the village its own.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/mera-peak.jpg",
+    image: "/images/authentic/brodaric-sprejem-griblje.webp",
     imageCredit:
-      "Foto: Nabin K. Sapkota · Wikimedia Commons · CC BY-SA 4.0 — panoramska slika Mera Peaka (6.467 m)",
+      "Foto: KS Griblje · Radio Odeon (7. 11. 2024) — Anton Brodarič pod napisom »Dobrodošel Tone iz Himalaje« pri sprejemu v vasi",
     yearFrom: 2024,
     yearTo: 2025,
     featured: false,
@@ -6995,9 +7005,9 @@ export const seedExhibits: SeedExhibit[] = [
     storyEn:
       "In September 1937 the landscape along the Kolpa turned into a military training ground for a few weeks. The Kupa manoeuvres — the largest peacetime event of the Army of the Kingdom of Yugoslavia — joined two manoeuvre groups: the more numerous \"red\" one in the north, formed mostly of units of the Drava divisional district, and the smaller \"white\" one on Croatian soil. Some 20,000 soldiers with horses, carts and bridging units came to the Slovene side; the exercises included logistics as well — roads, supply, field kitchens and water.\n\nWater became the logistic thread that also led to Griblje. In Bela and Suha krajina the army had to organise special drinking-water treatment stations: in the villages of Sveta Marija, Gradac, Dvor, Vinica and Griblje. For a few weeks the Griblje plain thus carried military infrastructure serving thousands of mouths — a village used to streams, springs and weirs entered the military maps for a month as the tap for twenty thousand people.\n\nFor the village this was an event with a prehistory and a sequel. The army had stood here centuries earlier as the frontier landscape; after April 1941 the border police on the Griblje road brought the military world back to the village; four years after the manoeuvres, on 6 September 1941, the ambush happened on the same road — the first armed action of Bela krajina's Partisans. In that sequence the 1937 manoeuvres were the last peacetime military imprint on the Griblje plain: still exercises, not yet war.\n\nThe record rests on a scholarly study of the Kupa manoeuvres published in 2025 in the journal Časopis za suvremenu povijest, grounded in military and provincial archives. The museum is looking for: photographs of soldiers at Griblje in 1937, villagers' memories of the manoeuvres and the exact site of the water station — each such document will bring the record from general military history closer to the village.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/cistilna-krasinec.jpg",
+    image: "/images/authentic/kolpa-pri-gribljih.jpg",
     imageCredit:
-      "Foto: Hythlodot · Wikimedia Commons · CC BY-SA 3.0 — čistilna naprava ob Kolpi pri Krasincu (ilustrativna slika: vrsta infrastrukture, ki je leta 1937 oskrbovala manevarske enote s pitno vodo)",
+      "Foto: Savinjc · Wikimedia Commons · CC BY-SA 3.0 — Kolpa pri Gribljih: pokrajina, kjer je septembra 1937 stala vojaška postaja za pročiščevanje pitne vode (avtentična fotografija lokacije; fotografija same postaje 1937 še iščemo)",
     yearFrom: 1937,
     yearTo: 1937,
     lat: 45.5728,

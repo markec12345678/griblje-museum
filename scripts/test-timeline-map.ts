@@ -443,8 +443,8 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 96 && new Set(seedExhibits.map((e) => e.museumNo)).size === 96, "T7.1 96 zapisov, 96 MVG številk");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 434, "T7.2 434 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 335, "T7.3 335 identitet virov (WorldCat OCLC 821110335 združen po dokazu; eheritage.si identiteta združuje MVG-060 + MVG-083; 49. sklop: +5 novih virov INZ postojanka/INZ Klepec/ARHAT 2012/ZVKDS 2023/Volčjak 2019)", `=${SOURCE_USAGE.size}`);
+  check(rows === 435, "T7.2 435 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 336, "T7.3 336 identitet virov (WorldCat OCLC 821110335 združen po dokazu; eheritage.si identiteta združuje MVG-060 + MVG-083; 49. sklop: +5 novih virov INZ postojanka/INZ Klepec/ARHAT 2012/ZVKDS 2023/Volčjak 2019)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 52, "T7.4 52 deljenih virov (≥2 zapisa)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -547,11 +547,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 96 && od.counts?.sources === 434,
-      "T8.3 OpenData: 96 zapisov / 434 virov",
+      od.counts?.exhibits === 96 && od.counts?.sources === 435,
+      "T8.3 OpenData: 96 zapisov / 435 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 434 && totalRows === 434, "T8.4 OpenData sourceKey 434/434", `${withKey}/${totalRows}`);
+    check(withKey === 435 && totalRows === 435, "T8.4 OpenData sourceKey 435/435", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
