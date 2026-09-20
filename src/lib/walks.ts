@@ -167,6 +167,13 @@ export const WALKS: Walk[] = [
           "This war's first blood comes early: on 6 September 1941, the first armed action of the Bela krajina partisans — right on the Črnomelj–Griblje road, on the village's doorstep.",
       },
       {
+        exhibitSlug: "precanje-pri-gribljih",
+        noteSi:
+          "Medtem ko je straža gledala na cesto, je reka delala svoje: pri ovinku pri Gribljih, kjer stražarji niso imeli pregleda, so kajdarji prikrivajoče prevažali ljudi čez Kolpo — vas ni bila le postojanka, bila je tudi slepo mesto, ki je pustilo skozi življenje.",
+        noteEn:
+          "While the guard watched the road, the river did its own work: at the bend near Griblje, where the sentries had no view, boatmen secretly ferried people across the Kolpa — the village was not only a garrison post; it was also a blind spot that let a life through.",
+      },
+      {
         exhibitSlug: "snos-crnomelj-1944",
         noteSi:
           "Februarja 1944 se v Črnomlju, dvanajst kilometrov stran, sestal SNOS — »prvi slovenski parlament«. Vasi, ki jih vidite na karti, so takrat hranile upor.",
