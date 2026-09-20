@@ -269,6 +269,13 @@ export const WALKS: Walk[] = [
           "From the hearth came meals that had to last the year. The Bela krajina pogača even holds European recognition today.",
       },
       {
+        exhibitSlug: "pogaca-vigred-2024",
+        noteSi:
+          "Pogača iz tega sprehoda pa ni samo preteklost: leta 2024 je bila najboljša belokranjska pogača 44. Vinske vigredi pečena v Gribljih — Darinka Jerčinovič z Kovačnice sreče, 79,38 točk. Recept, ki ga prepozna celotna regija, izhaja iz te pečice.",
+        noteEn:
+          "And the loaf of this walk is not only the past: in 2024 the best Bela krajina pogača of the 44th Vinska vigred was baked in Griblje — Darinka Jerčinovič of the Kovačnica sreče, 79.38 points. The recipe the whole region recognises came from this oven.",
+      },
+      {
         exhibitSlug: "pasuljada",
         noteSi:
           "In jedilnik se ne konča s preteklostjo: vsak avgust v Gribljah kuhajo pasulj na tekmovanje — nova šega, ki je postala koledarska.",
@@ -573,6 +580,13 @@ export const WALKS: Walk[] = [
           "Zvonik živi z glasom: leta 2008 so blagoslovili nov zvon, o dogodku pa je nastala spominska knjiga — eden redkih tiskanih virov, nastalih v sami vasi.",
         noteEn:
           "A steeple lives by its voice: in 2008 a new bell was blessed, and a memorial book arose from the event — one of the rare printed sources created in the village itself.",
+      },
+      {
+        exhibitSlug: "javna-razsvetljava-2023",
+        noteSi:
+          "Zvonik pa danes sije tudi ponoči: leta 2023 je vas dobila javno razsvetljavo — 70.000 evrov občine in 7.000 krajanov, arheološke raziskave ob gradnji pa so pod luč postavile tudi preteklost. Vas, ki si svet uredi sama.",
+        noteEn:
+          "And today the steeple shines at night as well: in 2023 the village received public lighting — €70,000 from the municipality and €7,000 from the villagers, and the archaeology dug during the construction brought the past into the light, too. A village that arranges its own world.",
       },
       {
         exhibitSlug: "niko-zupanic",

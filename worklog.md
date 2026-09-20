@@ -2286,3 +2286,27 @@ Stage Summary:
 - Rešeni obe TO_COLLECT iz 50. sklopa: 130 let šole = 16. 6. 2019 (1889), KS praznik 2024 = napad 1941/spominska soba (že v zbirki)
 - 3 evidencne korekcije datumov/zneskov (objava≠dogodek disciplina; valuta-aritmetika); zbirka: 96 zapisov MVG-001–096, 443 virov, 344 identitet
 - Regresija v celoti zelena; produkcija (Vercel) bo po pushu prejela 96/443
+
+---
+Task ID: 53
+Agent: Z.ai Code (GLM)
+Task: Naročilo — »odlično nadaljuj raziskuj« (7. raziskovalni val): iskanje po novih virih (moja-dolenjska.si, radio-odeon.com prava domena, arhiv.vaskanal.com, NP Kolpa, Vinska vigred, Družina, SEM), vgradnja najdb z dedup-preverbo (add-only), regresija, sinhronizacija dokumentacije, push na GitHub + Vercel.
+
+Work Log:
+- 16 spletnih iskanj (z-ai web_search) + ~10 pridobitev strani (page_reader/curl); surovine v research-griblje/raw-web-val7-2026-10/ + DIGEST-val7.md
+- PRELOMI: Radio Odeon = radio-odeon.com (prejšnja Cloudflare blokada zapisana za napačno domeno .si; URL shema /novice/<slug>/); arhiv.vaskanal.com obstaja (še blokiran); moja-dolenjska.si = nov medij, curl deluje; iskalni API vrača samo domene → URL-je rekonstruirani iz živih strani/extract href
+- Dedup preverbe: rg nad museum-content.ts/entities.ts za vsako temo (križevo, TD, kopališče, razsvetljava, asfalt, Tone Kralj, pogača, 1854, 500-letnica)
+- Vgrajeno add-only: +7 virov (443→450), +2 zapisa (96→98): MVG-097 javna-razsvetljava-2023 (70k občina + 7k krajani, arheološke raziskave 12.5k — TO_COLLECT rezultati; + asfalt 190 m/35k 2025; slika razsvetljava-led.jpg John Goldsmith CC BY-SA 2.0 prenesena prek Commons API in pomanjšana; postaja sprehoda »Vas in njeni ljudje«), MVG-098 pogaca-vigred-2024 (Darinka Jerčinovič, Kovačnica sreče, 79,38 točk, 44. Vinska vigred 2024; URL potrjen iz žive domače strani; reuse pogaca.jpg; postaja sprehoda »Kruh, platno in vino«)
+- Potrditveni viri: MVG-087 +2 vira (NP Kolpa 28. 5. 2017 — dokumentirani začetek vrnitve: kopališče 15.00, igre, košnja z ročno koso, pohane šnite, TD+DKZ+otroci šole; Odeon 31. 5. 2019 Grabrijan/KP Kolpa — polna etnografija: izpihana jajca pred sončnim vzhodom, breza s lupinami, Šašelj 1906, kralj križev/lončegloja/pepelmera, zapaski, vsi sveti) + 2 zgodbi odstavka SL/EN; MVG-093 + Moja Dolenjska (7. 2. 2026 — 98 let, obisk župana/RK/KS); MVG-003 + Moja Dolenjska (26. 6. 2026 — neodvisna medijska potrditev slovesnosti)
+- Urejanje s sliko: lokalno preusmerjanje (ffmpeg scale=1600) javnega brezpilotnika; popravki (podvojen }, realni prelomi v story strings → \n eskape, kuhinja noteEn tail)
+- Konstante testov usklajene: 96→98 (R0.2/R12.2/R16.1/T7.1/T7.5/T8.1/T8.2/T9.1/T9.2/T9.3/audit-entities/audit-timeline-map/test-ai-curator), 443→450 (R0.3/R16.2/T7.2/T8.3/T8.4/T8.11/T9.4/audit), 344→351 (T7.3/T8.6/audit-entities), 83/31→85/33 (T7.9/T5.12/audit-timeline-map), 97→99 (T8.7/T9.8)
+- Regresija (BASE_URL=:3100): tsc 0, eslint 0, verify-i18n 930×5, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), audit-entities ✓ 0, audit-timeline-map 39 ✓/0
+- Baza: reseeda z izrecnim DATABASE_URL=file:/home/z/griblje-museum/db/custom.db → OpenData 98/450; sitemap 99; spot-check /api/opendata živo
+- Dokumentacija: research-griblje/20-moja-dolenjska-val7.md + DIGEST-val7.md + KAZALO +20 + README sklop 53 + db:seed komentar 98/450 + worklog (ta zapis)
+
+Stage Summary:
+- Radio Odeon (radio-odeon.com) odprt kot virni sloj; arhiv Vašega kanala in moja-dolenjska.si identificirana kot nova sloja
+- Zbirka: 98 zapisov MVG-001–098, 450 virov, 351 identitet; 2 postaji sprehodov dodani
+- Dva nova zapisa dokumentirana (razsvetljava z arheologijo; pogača Vigred 2024), križevo obogateno s polno etnografijo in dokumentiranim začetkom vrnitve 2017
+- Regresija v celoti zelena; db reseeded; produkcija (Vercel) bo po pushu prejela 98/450
+- TO_COLLECT za naslednji val: rezultati arheoloških raziskav razsvetljave, Družina 1943 patrole URL, ebooks.uni-lj mejni pas, SEM hiša Nika Županiča, Odeon »Pastirski praznik« vabilo URL
