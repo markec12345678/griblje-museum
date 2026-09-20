@@ -502,7 +502,7 @@ section("T7 — Ločitev identitet dogodkov");
     "T7.3 zračni most vezan na MVG-014 IN MVG-056 (isti dogodek, dva zapisa)"
   );
   check(queueIds.has("P1-E1"), "T7.4 istovetnost MVG-014 ↔ MVG-056 čaka kuratorsko potrditev (P1-E1)");
-  check(bySlug.size === 96, "T7.5 zapisa MVG-014 in MVG-056 ostajata LOČENA zapisa (96/96)");
+  check(bySlug.size === 98, "T7.5 zapisa MVG-014 in MVG-056 ostajata LOČENA zapisa (98/98)");
 
   const z1998 = eventOf("event:vrnitev-glavnega-zvona-1998");
   const z2008 = eventOf("event:blagoslov-zvona-2008");
@@ -536,8 +536,8 @@ section("T7 — Ločitev identitet dogodkov");
 section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/sourceIndex/sourceKey/usedBy)");
 {
   // Zbirka sama.
-  check(seedExhibits.length === 96, `T8.1 96/96 zapisov (${seedExhibits.length})`);
-  check(seedExhibits.filter((e) => /^MVG-\d{3}$/.test(e.museumNo ?? "")).length === 96, "T8.2 96/96 muzejskih številk MVG");
+  check(seedExhibits.length === 98, `T8.1 98/98 zapisov (${seedExhibits.length})`);
+  check(seedExhibits.filter((e) => /^MVG-\d{3}$/.test(e.museumNo ?? "")).length === 98, "T8.2 98/98 muzejskih številk MVG");
 
   // Sprehodi: vsak zapis je postaja vsaj enega sprehoda.
   let noWalk = 0;
@@ -560,7 +560,7 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   check(conn.length > 0, `T8.5 connectionsBetween(griblje-vas, sveti-vid) deluje (${conn.map((c) => c.kind).join(", ")})`);
 
   // Source registry: identitete in deljenost.
-  check(SOURCE_USAGE.size === 344, `T8.6 344 identitet virov (${SOURCE_USAGE.size})`);
+  check(SOURCE_USAGE.size === 351, `T8.6 351 identitet virov (${SOURCE_USAGE.size})`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length > 1).length;
   check(shared === 52, `T8.7 52 deljenih virov (${shared})`);
 
@@ -580,7 +580,7 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   // Viri skupaj.
   let srcRows = 0;
   for (const ex of seedExhibits) srcRows += ex.sources.length;
-  check(srcRows === 443, `T8.11 443 vrstic virov (${srcRows})`);
+  check(srcRows === 450, `T8.11 450 vrstic virov (${srcRows})`);
 
   // Biografije.
   let phases = 0;
@@ -610,7 +610,7 @@ section("T9 — HTTP regresija (96/96 strani, 96/96 IIIF, OpenData, QR, sitemap)
       const r = await fetch(BASE + "/exponat/" + ex.slug);
       if (r.status === 200) okPages += 1; else badPages.push(ex.slug + ":" + r.status);
     }
-    check(okPages === 96, `T9.1 96/96 objektnih strani (${okPages}; ${badPages.join(",") || "vse 200"})`);
+    check(okPages === 98, `T9.1 98/98 objektnih strani (${okPages}; ${badPages.join(",") || "vse 200"})`);
 
     // 93/93 IIIF manifestov, vsak z vsaj enim virom.
     let okManifests = 0;
@@ -624,7 +624,7 @@ section("T9 — HTTP regresija (96/96 strani, 96/96 IIIF, OpenData, QR, sitemap)
       okManifests += 1;
       if (srcs.length >= 1) withSources += 1;
     }
-    check(okManifests === 96 && withSources === 96, `T9.2 96/96 IIIF manifestov z viri (${okManifests} manifestov, ${withSources} z ≥1 virom)`);
+    check(okManifests === 98 && withSources === 98, `T9.2 98/98 IIIF manifestov z viri (${okManifests} manifestov, ${withSources} z ≥1 virom)`);
 
     // OpenData: števci + sourceKey na vseh vrsticah.
     const od = (await (await fetch(BASE + "/api/opendata")).json()) as {
@@ -639,8 +639,8 @@ section("T9 — HTTP regresija (96/96 strani, 96/96 IIIF, OpenData, QR, sitemap)
         if (s.sourceKey) withKey += 1;
       }
     }
-    check(od.counts?.exhibits === 96 && od.counts?.sources === 443, `T9.3 OpenData: 96 zapisov / 443 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
-    check(withKey === 443 && totalRows === 443, `T9.4 OpenData sourceKey 443/443 (${withKey}/${totalRows})`);
+    check(od.counts?.exhibits === 98 && od.counts?.sources === 450, `T9.3 OpenData: 98 zapisov / 450 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
+    check(withKey === 450 && totalRows === 450, `T9.4 OpenData sourceKey 450/450 (${withKey}/${totalRows})`);
 
     // QR globoka povezava.
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
@@ -655,7 +655,7 @@ section("T9 — HTTP regresija (96/96 strani, 96/96 IIIF, OpenData, QR, sitemap)
     // Sitemap.
     const sm = await (await fetch(BASE + "/sitemap.xml")).text();
     const locs = (sm.match(/<loc>/g) ?? []).length;
-    check(locs === 97, `T9.8 sitemap: 97 URL (${locs})`);
+    check(locs === 99, `T9.8 sitemap: 99 URL (${locs})`);
   }
 }
 
