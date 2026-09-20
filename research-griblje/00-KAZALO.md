@@ -13,6 +13,7 @@
 14. **[14-spletna-raziskava-vgradnja-2026-10.md](./14-spletna-raziskava-vgradnja-2026-10.md)** — 46. sklop: spletna raziskava z vgradnjo (polno besedilo Šopeka: 110 domov, 1524, prišverki rodbin, vsebina zbirke + belokranjski slovar; prišverki v uskoškem zapisu; Velika Paka/Ertić; EŠD 11118; 6 pojmov izrazoslovja) — kontrola duplikatov: zavrnjeni seznam
 
 15. **[15-muzejska-raziskava-2026-10.md](./15-muzejska-raziskava-2026-10.md)** — 47. sklop: Griblje po slovenskih spletnih muzejih, zbirkah in knjigah (SEM fotografije F0000182/F0001407 — Drago Vahtar 1928; Belokranjski muzej: toaletna skledica s podobo Napoleona, Griblje, inv. 1767; SŠM letno poročilo o muzejski učilnici; Andrič 2007/2011 polen — Griblje marsh, 4150 cal BC; Dular 2001 VS 39; Dular 1986 Etnološka tribina — križevo) — zavrnjeni seznam + TO_COLLECT
+16. **[16-muzejska-raziskava-2-2026-09.md](./16-muzejska-raziskava-2-2026-09.md)** — 48. sklop: drugi val muzejske raziskave (Tovariš 1968 — pričevanje Lojzea Fabjana o zasedi 6. 9. 1941; Đerek 2025 — kupski manevri, vodna postaja Griblje, 20.000 vojakov → MVG-094; Dular 1979 AV 30 — bronasta igla Griblje A 478, 19,6 cm → MVG-095; SŠM Mapa šole Griblje; Promitzer — Županičeva merjenja Gradac–Krasinec–Griblje; Mason/Grahek VS 39/41 2000–2004) — zavrnjeni seznam (Tomšič ni Griblje, Šopek=Etnolog 10/11) + TO_COLLECT
 
 ## Gradiva
 - `commons-slike.json` — metapodatki 11 slik Wikimedia Commons (URL, licenca, avtor)

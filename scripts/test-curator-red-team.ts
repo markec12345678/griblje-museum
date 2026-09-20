@@ -242,9 +242,9 @@ section("R0 — AUDIT TRAIL (repo, veriga ponudnikov)");
   check(!!head, "R0.1 trenutni commit zabeležen", head);
   console.log(`  · HEAD: ${head}${dirty ? " (delovno drevo NI čisto)" : " (čisto)"}`);
 
-  check(seedExhibits.length === 93, "R0.2 zbirka: 93 zapisov", String(seedExhibits.length));
+  check(seedExhibits.length === 95, "R0.2 zbirka: 95 zapisov", String(seedExhibits.length));
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 423, "R0.3 zbirka: 423 vrstic virov", String(sourceRows));
+  check(sourceRows === 429, "R0.3 zbirka: 429 vrstic virov", String(sourceRows));
   check(ENTITY_BY_ID.size === 92, "R0.4 registr: 92 entitet", String(ENTITY_BY_ID.size));
 
   // Dejanska podatkovna pot (iz kode, ne iz poročila):
@@ -1402,7 +1402,7 @@ section("R12 — COLLECTION QUESTIONS (brez generičnega turističnega besedila)
 {
   const { context } = buildContext("sl", "Kaj pripoveduje zbirka o Gribljah?");
   check(context.queryType === "collection" && context.collection !== undefined, "R12.1 namen ZBIRKA → pregled zbirke v kontekstu (93 zapisov, dobe)");
-  check(context.collection?.exhibitCount === 93, "R12.2 pregled nosi dejanske števce (93)");
+  check(context.collection?.exhibitCount === 95, "R12.2 pregled nosi dejanske števce (93)");
 
   // Generično turistično besedilo BREZ navedkov → degradirano.
   const a = verifyAnswer(
@@ -1650,9 +1650,9 @@ section("R16 — INVARIANTI ZBIRKE (regresija)");
 // ===========================================================================
 
 {
-  check(seedExhibits.length === 93, "R16.1 93 zapisov");
+  check(seedExhibits.length === 95, "R16.1 93 zapisov");
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 423, "R16.2 423 vrstic virov");
+  check(sourceRows === 429, "R16.2 429 vrstic virov");
   check(ENTITY_BY_ID.size === 92, "R16.3 92 entitet registra");
   check(ENTITY_QUEUE.length >= 28, "R16.4 kuratorska vrsta ≥ 28 vprašanj", String(ENTITY_QUEUE.length));
   const withTime = seedExhibits.filter((e) => e.periodSi).length;

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portal hrvatskih znanstvenih i stručnih časopisa - Hrčak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <meta name="description" content="Hrčak je centralni portal koji na jednom mjestu okuplja hrvatske znanstvene i stručne časopise koji nude otvoreni pristup svojim radovima ili minimalno bibliografskim podacima i sažecima svojih radova" />
+                <meta name="keywords" content="hrčak,hrcak,znanstveni časopisi,hrvatski,scientific journals,croatian" />
+    
+    
+    
+    <meta content="Srce" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/javno/assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="/javno/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/javno/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/javno/assets/css/app.css" rel="stylesheet" type="text/css" />
+    <!-- JATS -->
+    <link href="/javno/assets/libs/jats/transform/hrcak/hrcak.css" rel="stylesheet" type="text/css" />
+
+    <link href="/javno/assets/css/custom_selec2_css.css" rel="stylesheet" type="text/css" />
+
+    
+</head>
+
+
+<body data-layout="topnav">
+<a class="skip-main text-white" href="#skipToMain" aria-label="skoči na glavni sadržaj">
+    Skoči na glavni sadržaj
+</a>
+
+<div class="wrapper">
+
+    <div class="navbar navbar-expand flex-column flex-md-row navbar-custom">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a href="https://hrcak.srce.hr/index.php/" class="navbar-brand mr-0 mr-md-2 logo">
+                    <span class="logo-lg">
+                        <img src="/javno/assets/images/hrcak-logo2.png" alt="" height="34" />
+
+                    </span>
+                <span class="logo-sm">
+                        <img src="/javno/assets/images/hrcak-logo2.png" alt="" height="24">
+                    </span>
+            </a>
+
+            <ul class="navbar-nav bd-navbar-nav flex-row list-unstyled menu-left mb-0">
+                <li class="">
+                    <button class="button-menu-mobile open-left disable-btn">
+                        <i data-feather="menu" class="menu-icon"></i>
+                        <i data-feather="x" class="close-icon"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
+
+								<!-- Search -->
+                
+                <li>
+                    <div class="app-search">
+
+                      <div class="input-group">
+                                                <a rel="alternate" hreflang="en" href="https://hrcak.srce.hr/index.php/en?show=search&amp;text=kupski%20manevri" class="mr-0 mt-1 btn btn-primary btn-sm ">english</a>
+                                              </div>
+
+                    </div>
+                </li>
+
+
+                <li class="dropdown notification-list align-self-center profile-dropdown">
+                    <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="false" aria-expanded="false">
+                        <div class="media user-profile ">
+                                                            <div class="media-body text-left">
+                                    <h6 class="pro-user-name ml-2 my-0">
+                                        <i data-feather="user" class="icon-dual icon-xs mr-2"></i>
+                                        <span>Prijava i registracija</span>
+                                    </h6>
+                                </div>
+                                                        <span data-feather="chevron-down" class="ml-2 align-self-center"></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu profile-dropdown-items dropdown-menu-right">
+                                                    <a href="/login" class="dropdown-item notify-item">
+                                <i data-feather="user" class="icon-dual icon-xs mr-2"></i>
+                                <span>Prijava</span>
+                            </a>
+                            <a href="/korisnik/nova_autentikacija" class="dropdown-item notify-item">
+                                <i data-feather="help-circle" class="icon-dual icon-xs mr-2"></i>
+                                <span>Promjena načina <br>autentikacije</span>
+                            </a>
+                            <a href="/novi_korisnik" class="dropdown-item notify-item">
+                                <i data-feather="settings" class="icon-dual icon-xs mr-2"></i>
+                                <span>Registracija</span>
+                            </a>
+                                            </div>
+                </li>
+
+
+                <li class="d-none d-sm-block">
+                    <div class="app-search">
+
+                        <div class="input-group">
+                            <a href="https://www.srce.unizg.hr" target="_blank"><img src="/javno/assets/images/srcelogo55.png" class="mr-0" alt="srce logo" height="34"></a>
+                        </div>
+
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+<div class="topnav shadow-sm">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light navbar-expand-lg topbar-nav">
+                <div class="collapse navbar-collapse" id="topnav-menu-content">
+                    <ul class="metismenu" id="menu-bar">
+                        <li class="menu-title">Navigation</li>
+
+                        <li>
+                            <a href="/">
+                                <span class="badge badge-success float-right">1</span>
+                                <span>Početna</span>
+                            </a>
+                        </li>
+                        <li class="menu-title">O Hrčku</li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+
+                                <span> O Hrčku </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/o-hrcku">O Hrčku</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/interoperabilnost">Interoperabilnost</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/politike">Politike korištenja</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/savjet-hrcka">Savjet Hrčka</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/kontakt">Kontakt</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.srce.unizg.hr/redovna-odrzavanja-sustava#hrcak">Redovne nadogradnje</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li>
+                            <a href="javascript: void(0);">
+
+                                <span> Časopisi </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/popis_casopisa/abecedno">Abecedno</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/podrucja">Po područjima</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);">
+
+                                <span> Za uredništva </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/posjecenost">Posjećenost časopisa</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/statusi">Statusi časopisa</a>
+                                </li>
+                                <li>
+                                    <a href="https://wiki.srce.hr/pages/viewpage.action?pageId=27690837" target="_blank">Upute za administratore časopisa</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/otvoreni-pristup">Izjava o otvorenom pristupu</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/kriteriji">Kriteriji uvrštavanja časopisa</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/novi_casopis">Prijava časopisa u Hrčak</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/alati">Alati</a>
+                                </li>
+                                <li>
+                                    <a href="https://wiki.srce.hr/spaces/HRCAK/pages/326041734/Certifikacijske+oznake+%C4%8Dasopisa+u+Hr%C4%8Dku" target="_blank">Certifikacijske oznake časopisa</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        <li>
+                            <a href="javascript: void(0);">
+
+                                <span> Za autore </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/prijava-radova">Prijava radova</a>
+                                </li>
+                                <li>
+                                    <a href="https://hrcak.srce.hr/index.php/orcid">ORCID identifikator</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+        
+    <div id="skipToMain">
+        
+    <div class="content-page">
+        <div class="content">
+            <header class="masthead">
+                <div class="container position-relative">
+
+                    <div class="row justify-content-center padding">
+                        <h1 class="mb-5 text-white">Portal hrvatskih znanstvenih i stručnih časopisa</h1>
+                        <div class="col-md-8 ftco-animate fadeInUp ftco-animated">
+                            <form action="pretraga" class="domain-form" title="Pretraživanje">
+                                <div class="form-group d-md-flex mb-1">
+																<input type="text" class="form-control px-4" name="q" placeholder="Unesite pojam za pretragu..." autofocus>
+																<input type="submit" class="search-domain btn btn-primary px-5" value="Pretraži"> </div>
+                            </form>
+                            <p class="text-center">
+                                <a href="/pretraga/napredna" class="text-white">Napredno pretraživanje</a>&nbsp;&nbsp;&nbsp;
+                                <a href="https://hrcak.srce.hr/index.php/upute-za-pretrazivanje" class="text-white">Upute za pretraživanje</a>
+                            </p>
+
+                            <h5 class="text-white mt-4">Hrčak je centralni portal koji na jednom mjestu okuplja hrvatske znanstvene i stručne časopise koji nude otvoreni pristup svojim radovima (<a href="o-hrcku">više</a>).</h5>
+                        </div>
+                    </div>
+
+               </div>
+                <hr style="
+                    background-color: red;
+                    height: 2px;
+                ">
+                <ul class="list-inline front-stats">
+                    <li>
+                        <p class="stat-item-count">580</p>
+                        <p class="stat-item-name">Časopisa</p>
+                    </li>
+                    <li>
+                        <p class="stat-item-count">25.248</p>
+                        <p class="stat-item-name">Sveščića</p>
+                    </li>
+                    <li>
+                        <p class="stat-item-count">327.743</p>
+                        <p class="stat-item-name">Radova s cjelovitim tekstom</p>
+                    </li>
+                    <li>
+                        <p class="stat-item-count">107.407</p>
+                        <p class="stat-item-name">ORCID identifikatora</p>
+                    </li>
+                </ul>
+            </header>
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="card topBorder">
+                            <div class="card-body">
+                                <div id="carouselContent" class="carousel slide" data-interval="false">
+                                        <span class="float-right">
+                                            <a href="#carouselContent" role="button" data-slide="prev">
+                                                <i data-feather="arrow-left" class="icon-dual icon-xs mr-2"></i>
+
+                                            </a>
+                                            <a href="#carouselContent" role="button" data-slide="next">
+                                                <i data-feather="arrow-right" class="icon-dual icon-xs mr-2"></i>
+                                            </a>
+                                        </span>
+
+                                    
+                                    <h6 class="mt-0 header-title">Obavijest</h6>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item">
+                                           <p>Obavještavamo Vas da je u sustavu Open Journal Systems (OJS) uveden novi način prijave.
+                                               Uz lokalne korisničke račune, sada autori, recenzenti i urednici časopisa mogu za
+                                               prijavu koristiti elektroničke identitete uključene u globalni sustav <a href="https://edugain.org/" target="_blank">eduGAIN</a> (obuhvaća
+                                               i <a href="https://www.aaiedu.hr/" target="_blank">AAI@EduHr</a>) te <a href="https://orcid.org/" target="_blank">ORCID</a>.
+                                           </p>
+                                            <p>
+                                                Dosadašnji način prijave pomoću postojećih korisničkih imena i lozinki u OJS na
+                                                Hrčku bit će omogućen do petka 12. prosinca 2025., nakon čega će prijava biti moguća
+                                                isključivo putem <a href="https://edugain.org/" target="_blank">eduGAIN-a</a> ili <a href="https://orcid.org/" target="_blank">ORCID-a</a>.
+                                            </p>
+                                            <p>
+                                                U slučaju poteškoća s eduGAIN računom obratite se nadležnoj IT službi svoje
+                                                ustanove, dok se za pomoć vezanu uz ORCID možete obratiti ORCID korisničkoj podršci
+                                                putem stranice <a href="https://support.orcid.org/" target="_blank">https://support.orcid.org/</a>.
+                                            </p>
+                                            <p>
+                                                S ovim promjenama nastojimo se osloniti prvenstveno na elektroničke identitete u sustavu
+                                                <a href="https://edugain.org/" target="_blank">eduGAIN</a>. Riječ je o globalnom sustavu koji obuhvaća elektroničke identitete
+                                                istraživačkih i obrazovnih zajednica, uključujući i <a href="https://www.aaiedu.hr/" target="_blank">AAI@EduHr</a>. Ti su elektronički
+                                                identiteti, za razliku od lokalnih registracija, provjereni od strane matičnih ustanova
+                                                koje ih izdaju. Time urednici dobivaju dodatnu sigurnost da se s druge strane zaista
+                                                nalazi osoba koja se predstavlja tim identitetom.
+                                            </p>
+                                            <p>
+                                                Osim što urednici, recenzenti i autori više neće trebati prolaziti proces registracije
+                                                jer će moći koristiti korisničku oznaku koju im je izdala njihova matična ustanova,
+                                                novi način autentikacije omogućava i Single Sign-On (SSO). To znači da, ako ste već
+                                                prijavljeni na neki drugi sustav svojim <a href="https://www.aaiedu.hr/" target="_blank">AAI@EduHr</a> elektroničkim identitetom, nećete
+                                                morati ponovno upisivati korisničku oznaku i lozinku - sustav će automatski prepoznati
+                                                da ste već autenticirani.
+                                            </p>
+                                            <p>
+                                                Za osobe koje nemaju elektronički identitet uključen u <a href="https://edugain.org/" target="_blank">eduGAIN</a>, uvijek postoji
+                                                mogućnost korištenja postojećeg ili registracije novog korisničkog računa u <a href="https://support.orcid.org/" target="_blank">ORCID-u</a>.
+                                            </p>
+                                            <p>
+                                                Upute za prijavu dostupne su na: <a href="https://wiki.srce.hr/x/z4BwEQ" target="_blank">https://wiki.srce.hr/x/z4BwEQ</a>.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="carousel-item active">
+
+                                            <p>Znate li da <a href="https://hrcak.srce.hr">Hrčak – portal hrvatskih znanstvenih i stručnih časopisa</a> ove godine obilježava 20 godina od puštanja u produkcijski rad?</p>
+    <p>Javnosti je prvi puta predstavljen prigodnom radionicom koja je održana 7. veljače 2006. godine, ali to je bio službeni početak. Rad na sustavu počeo je 2004. godine i intenzivno se radilo na njemu do javne promocije. Tadašnje Ministarstvo znanosti, obrazovanja i športa, poduprlo je zamisao o osnivanju portala na kojem bi se objavljivali cjeloviti tekstovi znanstvenih i stručnih časopisa u otvorenom pristupu. </p>
+                                            <p>Portal je nastao na temelju zamisli grupe informacijskih stručnjaka i knjižničara okupljenih u Hrvatskom informacijskom i dokumentacijskom društvu (HID), a prva inačica sustava realizirana je u razdoblju od 2004. do 2006. godine u Srcu. </p>
+                                            <p>Članovi prvog projektnog tima iz Srca bili su mr. sc. Miroslav Milinović (voditelj), Draženko Celjak, Nino Katić i Nebojša Topolšćak, a članovi iz HID-a mr. sc. Tibor Toth, Mirjana Mihalić, dr. sc. Jadranka Stojanovski i Iva Melinščak Zlodi. </p>
+                                            <p>Hrčak je inicijalno nastao s ciljem izgradnje sustava koji će uredništvima časopisa znatno olakšati postupak objavljivanja digitalnih inačica časopisa koji nude otvoreni pristup svojim radovima, a korisnicima omogućiti nesmetan pristup, pregledavanje i pretraživanje sadržaja. </p>
+                                            <p>S vremenom je Hrčak prerastao u sveobuhvatnu podršku za pokretanje, uređivanje i objavu časopisa. Za uređivački proces prije objave na Portalu, uredništvima je dostupan alat Open Journal Systems (OJS), a kako bi časopis bio i strojno čitljiv, razvijena je mogućnost izrade radova u JATS XML formatu kroz administrativno sučelje Hrčka, kao i uporabom samostalnog alata JATS XML Converter Service. U okviru Hrčka, 2022. godine je pokrenut i Open Monograph Press (OMP), alat za pripremu i objavu zbornika konferencijskih radova. </p>
+                                            <p>Danas Hrčak urednicima časopisa nudi alat kojim će besplatno i lako objaviti svoj časopis u elektroničkom obliku ili postojećem elektroničkom časopisu dodati mogućnost pronalaženja i pretraživanja te mu povećati vidljivost i utjecaj i nezaobilazno je mjesto studenata, istraživača, znanstvenika, ali i svih koji žele nešto dodatno naučiti. </p>
+
+
+                                        </div>
+
+                                        <!-- Da bi se dodala nova vijest samo treba staviti novi div a klasom carousel-item -->
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card topBorder">
+                            <div class="card-body ">
+                                <h4 class="header-title mt-0 mb-4">10 najnovijih online first radova u Hrčku
+                                </h4>
+                                <ol class="listPo">
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506607">
+                                                        Korištenje proizvodnih resursa u različitim sustav...
+                                                    </a>
+                                                    , Stočarstvo
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506593">
+                                                        ESG IZVJEŠTAVANJE U ODABRANIM SEKTORIMA: EMPIRIJSK...
+                                                    </a>
+                                                    , Ekonomska misao i praksa
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506581">
+                                                        Mit u kamenu: Narodnooslobodilačka borba u natpisi...
+                                                    </a>
+                                                    , Sociologija i prostor
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506526">
+                                                        UVJETI IZVRŠAVANJA KAZNE ZATVORA ZA ŽENE – ZATVORE...
+                                                    </a>
+                                                    , Zbornik radova Međimurskog veleučilišta u Čakovcu
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506525">
+                                                        Utjecaj digitalnih komunikacijskih strategija na p...
+                                                    </a>
+                                                    , Zbornik radova Međimurskog veleučilišta u Čakovcu
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506524">
+                                                        Upravljanje troškovima u telekomunikacijskim poduz...
+                                                    </a>
+                                                    , Zbornik radova Međimurskog veleučilišta u Čakovcu
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506523">
+                                                        Umjetna inteligencija kao podrška prilikom rješava...
+                                                    </a>
+                                                    , Zbornik radova Međimurskog veleučilišta u Čakovcu
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506522">
+                                                        Primjena unutarnjih lokatora u pronalaženju paketa...
+                                                    </a>
+                                                    , Zbornik radova Međimurskog veleučilišta u Čakovcu
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506521">
+                                                        IoT sustav za mjerenje potrošnje vode s ESP32 mikr...
+                                                    </a>
+                                                    , Zbornik radova Međimurskog veleučilišta u Čakovcu
+                                            </li>
+                                                                                    <li>
+                                                    <a href="https://hrcak.srce.hr/index.php/clanak/506519">
+                                                        Primjena percentilnih raspodjela u analizi antropo...
+                                                    </a>
+                                                    , Tekstil
+                                            </li>
+                                        
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card topBorder">
+                            <div class="card-body">
+                                <h4 class="header-title mt-0 mb-4">10 najnovijih sveščića po datumu izdavanja
+                                </h4>
+                                    <ol class="listPo">
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27073">Interdisciplinary Description of Complex Systems, 24(5), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/26938">Metalurgija, 65(4), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27178">Journal of Sustainable Development of Energy, Water and Environment Systems, 14(3), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27180">Journal of Sustainable Development Indicators, 2(3), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27179">Journal of Sustainable Development of Smart Energy Networks, 1(3), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27191">Cardiologia Croatica, 21(7-8), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27189">The holistic approach to environment, 16(4), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27186">EFZG working paper series, 2026(05), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27185">Arhiv za higijenu rada i toksikologiju, 77(3), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27183">Croatian Journal of Fisheries, 84(3), 2026</a>
+                                            </li>
+                                                                            </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card topBorder">
+                            <div class="card-body">
+                                <h4 class="header-title mt-0 mb-4">10 zadnje objavljenih sveščića na Hrčku</h4>
+                                <ol class="listPo">
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27191">Cardiologia Croatica, 21(7-8), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/26903">Croatian Veterinary Journal, 57(5), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27189">The holistic approach to environment, 16(4), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27185">Arhiv za higijenu rada i toksikologiju, 77(3), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27186">EFZG working paper series, 2026(05), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27172">Zbornik Pravnog fakulteta Sveučilišta u Rijeci, 47(2), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27187">Libri et liberi, 15(1), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27183">Croatian Journal of Fisheries, 84(3), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/26932">Transactions of FAMENA, 50(3), 2026</a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="https://hrcak.srce.hr/index.php/broj/27114">Kemija u industriji, 75(9-10), 2026</a>
+                                            </li>
+                                                                        </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="footerLinks">
+                            <span>
+                                2021 © Portal hrvatskih znanstvenih i stručnih časopisa - Hrčak
+                            </span>
+                        <div>
+                            <a href="https://wiki.srce.hr/x/xIB3Aw" target="_blank">Izjava o pristupačnosti</a>
+                            |
+
+                                                            <a href="https://www.srce.unizg.hr/politika-privatnosti" target="_blank">Politika privatnosti</a>
+                                                            |
+                            <a href="/kontakt">Kontakt</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+<script src="/javno/assets/js/vendor.min.js"></script>
+<script src="/javno/assets/libs/moment/moment.min.js"></script>
+<script src="/javno/assets/js/app.min.js"></script>
+
+<script src="/javno/assets/js/pristupacnost.js"></script>
+<script>
+    var options = {
+        icon: {
+            circular: true,
+            img: 'accessibility',
+        }
+    }
+    window.addEventListener('load', function () { new Pristupacnost(options); }, false);
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-3867323-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

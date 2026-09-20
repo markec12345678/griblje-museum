@@ -101,7 +101,7 @@ const times = entitiesOfKind("time").length;
 check("92 entitet", ENTITIES.length === 92, `=${ENTITIES.length}`);
 check("33 oseb / 26 krajev / 27 dogodkov / 6 časov", persons === 33 && places === 26 && events === 27 && times === 6);
 check("kuratorska vrsta 28 vprašanj", ENTITY_QUEUE.length === 28);
-check("93 zapisov", exhibits.length === 93);
+check("95 zapisov", exhibits.length === 95);
 
 console.log("=".repeat(72));
 console.log("2) ČASOVNICA — gradniki in sledljivost");
@@ -188,14 +188,14 @@ console.log("=".repeat(72));
 console.log("6) PLAST ZAPISOV — obstoječa koordinatna logika");
 console.log("=".repeat(72));
 const objects = objectLayer(exhibits);
-check("28 zapisov s preverjeno lego (obstoječe)", objects.length === 28);
+check("30 zapisov s preverjeno lego (48. sklop: + MVG-094, MVG-095)", objects.length === 30);
 check("vsak objekt ima lat/lng", objects.every((ex) => ex.lat != null && ex.lng != null));
 
 console.log("=".repeat(72));
 console.log("7) INTEGRITETA PODATKOVNEGA SEMENA (invariante TASK 38)");
 console.log("=".repeat(72));
 const sources = exhibits.reduce((n, ex) => n + ex.sources.length, 0);
-check("423 vrstic virov", sources === 423, `=${sources}`);
+check("429 vrstic virov", sources === 429, `=${sources}`);
 const sourceIndexOk = exhibits.every((ex) =>
   ex.sources.every((_, i) => i >= 0) &&
   ENTITIES.every((e) => e.evidence.every((ev) => {
