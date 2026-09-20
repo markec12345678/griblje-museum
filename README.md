@@ -28,11 +28,11 @@ kraj → ljudje → dogodki → predmeti):
 
 | Plast zapisa | Standard | Stanje |
 |---|---|---|
-| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 72/72 |
-| Zgodba | 250–400 besed, SLO+EN | ✅ 72/72 (povprečno ~291) |
-| Življenje predmeta | 4–6 faz časovnice | ✅ 72/72 |
-| Viri | 4–6 preverljivih virov na zapis | ✅ 296 skupaj (povprečno 4,3) |
-| Zanesljivost | izrecni status dokazilosti | ✅ 72/72 |
+| Etiketa (povzetek) | ~30–50 besed, SLO+EN | ✅ 98/98 |
+| Zgodba | 250–400 besed, SLO+EN | ✅ 98/98 (74 na polnem standardu ≥ 250 besed, povprečno ~332) |
+| Življenje predmeta | 4–6 faz časovnice | ✅ 93/98 (61 z 4+ fazami, 88 z 3+) |
+| Viri | 4–6 preverljivih virov na zapis | ✅ 458 skupaj (povprečno 4,7) |
+| Zanesljivost | izrecni status dokazilosti | ✅ 98/98 |
 
 Program poglabljanja poteka v sklopih (PR #16: prvih 6 zapisov na standard;
 PR #17: preostalih 14 + dosje AI vodnika do 3000 znakov na zapis; PR #19:
@@ -176,7 +176,7 @@ seznam) in **griblje-v-stevilkah** (občina Griblje 1854 v okraju Črnomelj — 
 
 ## Funkcije / Features
 
-- 🖼️ **Zbirka** — 93 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
+- 🖼️ **Zbirka** — 98 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
   muzejska postavitev), filtri, iskanje, dialog z viri in citatom
 - 🚶 **Muzejski sprehodi** — šest kuriranih sprehodov skozi celotno zbirko
   (pet tematskih + družinski; po vzoru vodenih ogledov Norsk Folkemuseum): vsaka postaja odpre zapis s kuratorsko
@@ -263,12 +263,12 @@ načela in odprti razpis za pričevanja skupnosti
   viri); 15 krajev brez preverjene lokacije (Malenca, Madroničev mlin,
   Podzemelj, Krasinec, zaselki, pokrajina …) ostane pošteno na dostopnem
   seznamu — NIČ se ne geokodira. Ista mapa združuje kraj + zapise na eni
-  koordinati (ena pika = en kraj). i18n 5 jezikov (888 × 5), tipkovnična
+  koordinati (ena pika = en kraj). i18n 5 jezikov (930 × 5), tipkovnična
   pot čez sezname, mobilno 390/360 px brez preliva:
-  testna surita `bun scripts/test-timeline-map.ts` (72 trditve v 8 razdelkih: SoftTime semantika brez pretvorbe datumov, P1-E1 ločena, kuratorska varnost identitet, roundtrip object↔place, regresija 93/412/315/51/372 + HTTP) · `bun scripts/audit-timeline-map.ts` (39 preverb: invarianta »vsak
+  testna surita `bun scripts/test-timeline-map.ts` (72 trditve v 8 razdelkih: SoftTime semantika brez pretvorbe datumov, P1-E1 ločena, kuratorska varnost identitet, roundtrip object↔place, regresija 98/458/355/54/372 + HTTP) · `bun scripts/audit-timeline-map.ts` (39 preverb: invarianta »vsak
   timeline item → EventRef/TimeRef → evidence → zapis → vir«, 11+15 krajev,
   brez geokodiranja, P1-E1 razcep s pravim parom zapisov)
-- 📚 **Muzejski register** — strežniško upodobljen katalog vseh 93 zapisov na domači strani
+- 📚 **Muzejski register** — strežniško upodobljen katalog vseh 98 zapisov na domači strani
   s pravimi HTML povezami na `/exponat/[slug]` (trajna številka + naslov + kategorija):
   plezalna pot za iskalnike in obiskovalce brez JavaScripta (vzorec katalogov zbirk
   Rijksmuseuma in DigitaltMuseum) — isti register, ki ga nosijo QR oznake fizičnega muzeja
@@ -451,7 +451,7 @@ načela in odprti razpis za pričevanja skupnosti
 ```bash
 bun install
 bun run db:push        # ustvari SQLite shemo
-bun run db:seed        # napolni zbirko (idempotentno: 98 zapisov, 450 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
+bun run db:seed        # napolni zbirko (idempotentno: 98 zapisov, 458 virov, 6 zgodb, 9 dogodkov, 6 vpisov, 10 spominov)
 bun run dev            # razvojna storitev na :3000
 ```
 
