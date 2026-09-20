@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+
+
+<html lang="sl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Iskanje - Slovenska biografija</title>
+
+    <meta name="author" content="Slovenska akademija znanosti in umetnosti">
+    <meta name="description" content="Slovenska biografija zbrana in urejena na enem mestu.">
+
+    <link rel="stylesheet" type="text/css" href="/static/frontend/main.69e581392124.css">
+</head>
+
+<body id="skrollr-body">
+
+    <header>
+        <div class="container with-separator">
+            <div class="row">
+                <div class="about col-md-1 col-sm-1 hidden-xs hidden-print">
+                    <a id="about" href="/kolofon/" data-toggle="tooltip" data-original-title="Kolofon">?</a>
+                </div>
+                
+                <div class="brand col-md-7 col-sm-7 col-xs-12">
+                    <a href="/">Slovenska biografija</a>
+                </div>
+                <div class="search col-md-3 col-sm-4 col-xs-12 hidden-print">
+                    <form class="form-inline" role="search" action="/iskanje/">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" name="q" placeholder="Iskanje">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><img src="/static/img/search-small.b18274da5390.png" alt="Iskanje"></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="site-nav col-sm-offset-1 col-md-11 col-sm-11 hidden-xs">
+                  <nav>
+  <ul class="nav nav-pills">
+    <li><a href="/#abecedno-kazalo">Abecedno kazalo</a></li>
+    <li><a href="/#obdobja">Obdobja</a></li>
+    <li><a href="/#poklici">Poklici in dejavnosti</a></li>
+    <li><a href="/#skupine">Skupine oseb</a></li>
+    <li><a href="/#na-danasnji-dan">Na današnji dan</a></li>
+    <li><a href="/#rodbine">Rodbine</a></li>
+    <li><a href="/#zemljevid">Zemljevid</a></li>
+  </ul>
+</nav>
+
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="content container with-separator" id="page-search">
+        
+
+        
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    
+
+<h1>Iskanje</h1>
+
+<div class="simple-search-container">
+
+
+<form method="get" action="/iskanje/" class="form-horizontal" role="form">
+	<div class="form-group">
+	    <div class="input-group input-group-lg">
+			<div id="search-autosuggest" data-query="Gribelj"></div>
+	        <span class="input-group-btn">
+	            <button type="submit" class="btn btn-default"><img src="/static/img/search.dc95aa8cb612.png" alt="Iskanje"></button>
+	        </span>
+	        <span class="input-group-btn complex-search-link">
+	            <a href="/iskanje/?mode=complex" class="btn-complex-search"><i class="more"></i> Zahtevno iskanje</a>
+	        </span>
+	    </div>
+	</div>
+</form>
+
+</div>
+
+<div class="complex-search-container hide">
+<form class="form-horizontal complex-search" method="get" action="/iskanje/" role="form">
+
+	<input type="hidden" name="mode" value="complex">
+
+	<div class="form-group">
+		<label class="control-label col-sm-1" for="id-gender">Spol:</label>
+		<div class="col-sm-2">
+			<select class="form-control" id="id-gender" name="gender">
+				<option value="">Ni pomembno</value>
+				<option value="1">Moški</value>
+				<option value="2">Ženska</value>
+			</select>
+		</div>
+	</div>
+
+ 	<div class="form-group">
+		<label class="control-label col-sm-1" for="id-forename">Ime:</label>
+		<div class="col-sm-4">
+			<input class="form-control" id="id-forename" type="text" name="forename" value="">
+		</div>
+	</div>
+
+ 	<div class="form-group">
+		<label class="control-label col-sm-1" for="id-surname">Priimek:</label>
+		<div class="col-sm-4">
+			<input class="form-control" id="id-surname" type="text" name="surname" value="">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="control-label col-sm-1">Rojstvo:</label>
+		<label class="control-label sr-only" for="id-birth-from-year">od leta</label>
+		<div class="col-sm-2">
+			<input class="form-control" id="id-birth-from-year" type="number" name="birthFrom" value="" placeholder="od leta">
+		</div>
+		<label class="control-label sr-only" for="id-birth-to-year">do leta</label>
+		<div class="col-sm-2">
+			<input class="form-control" id="id-birth-to-year" type="number" name="birthTo" value="" placeholder="do leta">
+		</div>
+		<label class="control-label sr-only" for="id-birth-place">kraj ali država</label>
+		<div class="col-sm-3">
+			<input class="form-control" id="id-birth-place" type="text" name="birthPlace" value="" placeholder="v kraju ali državi">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="control-label col-sm-1">Smrt:</label>
+		<label class="control-label sr-only" for="id-death-from-year">od leta</label>
+		<div class="col-sm-2">
+			<input class="form-control" id="id-death-from-year" type="number" name="deathFrom" value="" placeholder="od leta">
+		</div>
+		<label class="control-label sr-only" for="id-death-to-year">do leta</label>
+		<div class="col-sm-2">
+			<input class="form-control" id="id-death-to-year" type="number" name="deathTo" value="" placeholder="do leta">
+		</div>
+		<label class="control-label sr-only" for="id-death-place">kraj ali država</label>
+		<div class="col-sm-3">
+			<input class="form-control" id="id-death-place" type="text" name="deathPlace" value="" placeholder="v kraju ali državi">
+		</div>
+	</div>
+
+ 	<div class="form-group">
+		<label class="control-label col-sm-1" for="id-occupation">Poklic:</label>
+		<div class="col-sm-4">
+			<input class="form-control" id="id-occupation" type="text" name="occupation" value="">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-2 col-sm-offset-1 col-xs-3">
+			<button class="btn btn-primary">Išči po zbirki</button>
+		</div>
+		<div class="col-sm-9 col-xs-9">
+			<span class="simple-search-link">
+	            <a href="/iskanje/" class="btn-simple-search"><i class="more"></i> Enostavno iskanje</a>
+	        </span>
+	    </div>
+	</div>
+</form>
+
+</div>
+
+
+<h2>Rezultati iskanja</h2>
+
+<table class="table people">
+      <thead>
+        <th/>
+        <th>Ime</th>
+        <th>Rojstvo / smrt</th>
+        <th>Poklic</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="gender">♂</td>
+          <td class="name">
+            <a href="/oseba/sbi627894/">Sturm, Jožef</a>
+          </td>
+          <td class="birth-death">
+            <div class="birth">
+              <div>
+                <div class="symbol">★</div>
+                <div class="values">
+                  <div>20. april 1858, Dunaj, Avstrija</div>
+                </div>
+              </div>
+            </div>
+            <div class="death">
+              <div>
+                <div class="symbol">†</div>
+                <div class="values">
+                  <div>8. december 1935, Dunaj, Avstrija</div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="occupation">
+            <ul>
+              <li>
+                <a href="/poklic/druzbene-vede/vzgojitelji-solniki-pedagogi/prosvetni-delavec/">prosvetni delavec</a>
+              </li>
+              <li>
+                <a href="/poklic/umetnost/likovni-ustvarjalci/slikarji-risarji/slikar/">slikar</a>
+              </li>
+              <li>
+                <a href="/poklic/druzbene-vede/druzbeni-kulturni-in-politicni-delavci/politik/">politik</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="gender">♂</td>
+          <td class="name">
+            <a href="/oseba/sbi915246/">Zupanič, Niko</a>
+          </td>
+          <td class="birth-death">
+            <div class="birth">
+              <div>
+                <div class="symbol">★</div>
+                <div class="values">
+                  <div>1. december 1876, Griblje, Slovenija</div>
+                </div>
+              </div>
+            </div>
+            <div class="death">
+              <div>
+                <div class="symbol">†</div>
+                <div class="values">
+                  <div>11. september 1961, Ljubljana, Slovenija</div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="occupation">
+            <ul>
+              <li>
+                <a href="/poklic/druzbene-vede/druzbeni-kulturni-in-politicni-delavci/politik/">politik</a>
+              </li>
+              <li>
+                <a href="/poklic/humanisticne-vede/etnologi-in-zbiralci-etnoloskega-gradiva/etnolog/">etnolog</a>
+              </li>
+              <li>
+                <a href="/poklic/druzbene-vede/antropologi/antropolog/">antropolog</a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+<div class="infinite-scroll" style="display: none">
+  <div class="infinite-scroll-request">
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  </div>
+</div>
+
+
+<div class="clarin">
+    <div>Iskanje poganja:</div>
+    <div><a href="https://clarin.si/"><img src="/static/img/logo-clarin.4bc889167324.png" alt="Logo CLARIN.SI"></a></div>
+</div>
+
+
+                </div>
+            </div>
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-sm-4 hidden-xs logo">
+                    <a href="http://www.sazu.si/"><img src="/static/img/logo-sazu.dccba20a8ef3.png" alt="SAZU - Slovenska akademija znanosti in umetnosti" class="sazu" width="102" height="102"></a>
+                    <a href="http://www.zrc-sazu.si/"><img src="/static/img/logo-zrc-sazu.06a85e8b9f21.png" alt="ZRC SAZU - Znanstvenoraziskovalni center Slovenske akademije znanosti in umetnosti" class="zrc-sazu" width="339" height="102"></a>
+                </div>
+                <div class="col-sm-3 address">
+                    <div class="vcard">
+                        <div class="organization-name"><a class="url" href="http://www.sazu.si/">Slovenska akademija znanosti in umetnosti</a></div>
+                        <div class="adr">
+                            <span class="street-address">Novi trg 3</span>
+                            <br>
+                            <span class="post-office-box">P.P. 323</span>
+                            <br>
+                            <span class="postal-code">SI-1000</span> <span class="locality">Ljubljana</span>
+                        </div>
+                        <div class="tel-email">
+                            T: <span class="tel">(01) 470 6100</span>
+                            <br>
+                            E: <span class="email"><a class="url" href="mailto:sazu@sazu.si">sazu@sazu.si</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 address">
+                    <div class="vcard">
+                        <div class="organization-name"><a class="url" href="http://www.zrc-sazu.si/">Znanstvenoraziskovalni center Slovenske akademije znanosti in umetnosti</a></div>
+                        <div class="adr">
+                            <span class="street-address">Novi trg 2</span>
+                            <br>
+                            <span class="postal-code">SI-1000</span> <span class="locality">Ljubljana</span>
+                        </div>
+                        <div class="tel-email">
+                            T: <span class="tel">+386 1 470 6100</span>
+                            <br>
+                            E: <span class="email"><a class="url" href="mailto:zrc@zrc-sazu.si">zrc@zrc-sazu.si</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <p class="back-to-top pull-right hidden-print hidden-xs"><a href="#">Na vrh strani</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-consent">
+        
+        <div class="message">Slovenska biografija uporablja <a href="/piskotki/">piškotke</a>. Z uporabo spletne strani se strinjate z njihovo uporabo: <button class="btn btn-default btn-sm btn-consent">Potrdi</button></div>
+        
+    </div>
+
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyBKsvKbmC79SLzvpFp4TzHP3vgxhurU3zw"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/static/frontend/vendor.d333a390b098.js"></script>
+    <script src="/static/frontend/main.26bcb3a97eb0.js"></script>
+
+    
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47226003-1', 'slovenska-biografija.si');
+  ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>
