@@ -2218,3 +2218,24 @@ Stage Summary:
 - Zbirka: 96 zapisov (MVG-001–096) / 434 vrstic virov / 335 identitet / 18 koordinat / 83 s časom / 31 s lego (vse številke v testih usklajene, vse regresije zelene)
 - Identifikirano, ostaja TO_COLLECT: Weiss v monografiji Neumarkt–Möttling–Metlika (BM Metlika 2018, ISBN 978-961-6652-19-3, ~str. 284–285); ZC 42(4) 1988; Križnar 2001 film; lasten posnetek ovinka/malence
 - Push: origin main (commit 49. sklop)
+
+---
+Task ID: 4 + 5 (50. sklop)
+Agent: Z.ai Code (glavni)
+Task: pushaj sinhroniziraj pushaj na vercel in nadaljuj raziskuj — sinhronizacija produkcije (GitHub + Vercel), četrti raziskovalni val po slovenskih virih
+
+Work Log:
+- Potrjeno: GitHub main = a2c9543 že sinhroniziran, tsc 0, working tree čist; import bug audit-semantics.ts že popravljen (d70f676)
+- ODKRITO in POPRAVJENO: Vercel produkcija zastala na 93/415 (stanje 46. sklopa) kljub SUCCESS deploymentom — vzrok: globalna peskovniška env DATABASE_URL=file:/home/z/my-project/db/custom.db je bun prisma/seed.ts usmerjal v DB DRUGEGA projekta (/home/z/my-project), db/custom.db v gitu pa je ostal na 93/415; reseedi 47/48/49. sklopa so dejansko pisali v /home/z/my-project/db/custom.db (stranski učinek — my-project DB ima sedaj gribeljsko seme, nekritično: template peskovniški projekt)
+- Rešitev: DATABASE_URL="file:/home/z/griblje-museum/db/custom.db" bun prisma/seed.ts → db/custom.db = 96 zapisov/434 virov → commit 70fef93 (+ vercel.json: framework nextjs, regions fra1 za nižjo latenco do Slovenije) → push a2c9543..70fef93 → Vercel deploy SUCCESS (GitHub statuses API) → produkcija /api/opendata?cb= potrjeno {"exhibits": 96, "sources": 434}
+- 50. sklop raziskave (četrta runda, research-griblje/18 + raw-web-val4-2026-10/ 23 JSON): 26 iskanj + 10 pridobitev strani + Commons MediaWiki API; novi koti: Commons kategorija Griblje do konca, BMM nova spletna stran (publishwall objave), RTV arhiv, kataster jam, EHRI, PISRS/odloki o KS, Radio Odeon 2024–2026, Google Books/FamilySearch/dLib/Kamra API dostopi
+- Rezultat vala: POTRDITVENI — vgradnja 0, vse kandidatke duplikati ali blokade; Commons kategorija Griblje 100 % izčrpana (7 datotek + podkategorija, vse že pokrite — preverjeni krediti/avtorji: Andrejj, Eleassar 2012 CC BY-SA 3.0); Kamra spomenik 10. 9. 1961/13 žrtev = že MVG-005; KS Griblje=Cerkvišče+Griblje odlok 2022 = že vir MVG-040; BMM objave (Fux-Dular, Navratil, arheološki biseri, 7 tisočletij) brez Griblje-vsebine; kataster jam brez javnih zadetkov
+- Blokade dokumentirane: Google Books 429, dLib HTTP:000, EHRI SPA, Kamra SearchService 404, FamilySearch prijava (Priročni krajevni leksikon 1996), Radio Odeon Cloudflare, muzej.si timeout, Bing page_reader fail
+- Nove TO_COLLECT (2): Odeon »130 let šole Griblje« (16. 6. 2026, obletnica neznana — brskalniški obisk/klic radiu); Odeon »KS Griblje je praznovala« (15. 9. 2024, praznik po več desetletjih — kateri praznik neznano)
+- Kuratorski zaključek: javno-dostopen spletni sloj slovenskih muzejev o Gribljih izčrpan do nivoja zbirke — rast naprej iz arhivov/terenskega dela/skupnosti
+- Dokumentacija: research-griblje/18-muzejska-raziskava-4-2026-10.md + KAZALO +18 + README sklop 50
+
+Stage Summary:
+- Produkcija (Vercel) sinhronizirana: 96 zapisov/434 virov živo (prej 93/415); GitHub main = 70fef93; vercel.json fra1
+- 50. sklop = potrditveni val (0 vgraditev po dedup pravilu — dokumentirano kot kakovostni rezultat); 2 novi TO_COLLECT; 8 novih blokad dokumentiranih
+- Stanje zbirke nespremenjeno: 96 zapisov MVG-001–096, 434 virov, 335 identitet; teste ni bilo treba poganjati (brez sprememb src/) — tsc 0 potrjen
