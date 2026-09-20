@@ -2239,3 +2239,27 @@ Stage Summary:
 - Produkcija (Vercel) sinhronizirana: 96 zapisov/434 virov živo (prej 93/415); GitHub main = 70fef93; vercel.json fra1
 - 50. sklop = potrditveni val (0 vgraditev po dedup pravilu — dokumentirano kot kakovostni rezultat); 2 novi TO_COLLECT; 8 novih blokad dokumentiranih
 - Stanje zbirke nespremenjeno: 96 zapisov MVG-001–096, 434 virov, 335 identitet; teste ni bilo treba poganjati (brez sprememb src/) — tsc 0 potrjen
+
+---
+Task ID: 6 (51. sklop)
+Agent: Z.ai Code (glavni)
+Task: "drustvo kmeckih zena zamenjaj sliko z original ... kupski manevri 1937 original najdi zamenjaj vse to slike morajo bit original ... isci po muzejih spletnih po celi sloveniji podatke za griblje raziskuj" — revizija ilustrativnih slik na originalne + 5. val muzejske raziskave
+
+Work Log:
+- Inventar: 12 zapisov s kreditom "ilustrativna slika"; dva eksplicitno naročena (MVG-089 DKŽ = ženske pri testu, Wikimedia; MVG-094 kupski manevri = sodobna čistilna naprava Krasinec, Wikimedia — zavajajoča)
+- Radio Odeon: prenešenih 5 člankov (pozdrav pomladi 2025 z 10 originalnimi fot. prireditve, 14. pasuljada 2017, pasuljada 2025, ribnik 2024, Brodaričev sprejem 2024); galerija Pozdrava pomladi = šolski program, ne DKŽ → uporabna fotografija pasuljadi
+- Commons MediaWiki API: enumeracija "Griblje" ponovno potrjena (100 % že pokrita, 50. sklop) + 2 javnolastniški fot. Franca Veselka 1945 = že viri MVG-014 (dedup OK); File:Kolpa griblje.jpg (Savinjc, CC BY-SA 3.0) najdena kot avtentična fotografija točne lokacije postaje pitne vode 1937
+- Študija Đerek 2025 (ČSP 57(1)) prenesena in pregledana: 31 strani BREZ fotografij → ni vir fotografij manevrov; viri študije (Slovenec, Jutarnji list, Konjički glasnik) ostajajo TO_COLLECT (dLib.si/št. arhivi iz peskovnika nedostopni: HTTP 000/timeout)
+- Blokade dokumentirane: ZIK Črnomelj in Radio Odeon ?s= iskanje (Cloudflare "One moment"), SEM Drupal search (prazen HTML), MUSIS (DNS ne obstaja), muzej.si (timeout), agent-browser CDP timeout na dLib
+- ZAMENJAVE IZVEDENE (3): MVG-089 → pasuljada-2017-griblje.webp (Foto: Nikola Vukmanič · Radio Odeon; DKŽ soorganizatorka; nov vir odeon-pasuljada-2017 +1 vrstica); MVG-090 anton-brodaric → brodaric-sprejem-griblje.webp (KS Griblje · Radio Odeon, napis "Dobrodošel Tone iz Himalaje"); MVG-094 → kolpa-pri-gribljih.jpg (Savinjc, CC BY-SA 3.0; podnapis izrecno: fotografija postaje 1937 še iščemo)
+- image-dimensions.ts posodobljen (3 novi vnosi, razglednica-metlika ohranjena), 3 stare ilustrativne datoteke odstranjene po preverbi referenc (rg: 0 zadetkov)
+- Preverbe: tsc 0, eslint 0, verify-i18n 930 × 5 ✓
+- KRITIČNA OPERACIJSKA IZKUŠNJA (ponovitev 50. sklopa): `bun run db:seed` brez override je PONOVNO pisal v /home/z/my-project/db/custom.db (globalna env DATABASE_URL); :3100 strežnik (next dev v peskovniku) bere isto peskovniško bazo — zato je API po seedu kazal nove slike kljub temu, da repo db/custom.db še ni bil osvežen. Rešitev kot v 50. sklopu: reseeda z izrecnim DATABASE_URL="file:/home/z/griblje-museum/db/custom.db" → repo DB = 96 zapisov/435 virov; produkcija (Vercel) bere commitano repo DB (resolveDatabaseUrl: /var/task fallback)
+- Konstante testov usklajene z novim stanjem (435 vrstic virov, 336 identitet): test-curator-red-team R0.3/R16.2, audit-timeline-map, test-timeline-map T7.2/T7.3/T8.3/T8.4, test-entities T8.6, audit-entities
+- Regresija: test-timeline-map 72 ✓/0, test-entities 100 ✓/0, red-team 157 ✓/0 (GAP 24), audit-skripte; spot-check brskalnik (agent-browser): /exponat/dkz-griblje, /exponat/kupski-manevri-1937, /exponat/anton-brodaric — originalne fotografije izrisane s pravilnimi krediti, ni napak
+- README: nov sklop 51 + db:seed komentar 96/435
+
+Stage Summary:
+- 3 originalne fotografije vgrajene (MVG-089, MVG-090, MVG-094); 7 ilustrativnih zadržano po kustodskem pravilu s transparentnimi podnapisi — javno dostopni originali za njih ne obstajajo (dokumentirano iskanje: dLib, NMS, SEM, MUSIS, Kamra, Commons, študija brez slik)
+- Zbirka: 96 zapisov (MVG-001–096), 435 virov (+1 odeon-pasuljada-2017), 336 identitet; baza repo (db/custom.db) sinkronizirana z izrecnim DATABASE_URL
+- 5. val raziskave = deloma potrditveni (Commons/SEM/Kamra), nove vsebine ni (dedup disciplina); TO_COLLECT razširjen neformalno: fotografija postaje 1937 (arhivi časopisov Slovenec/Jutarnji list), fotografije DKŽ z začetkov društva, NMS inventar A 478
