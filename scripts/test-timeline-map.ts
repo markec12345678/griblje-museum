@@ -170,7 +170,7 @@ section("T2 — SOFTTIME SEMANTIKA: čas KOT JE ZAPISAN");
   );
   check(
     items.filter((i) => i.precision === "exact-date").length === 4,
-    "T2.5 točen dan: 4 (zaseda 6. 9. 1941, SNOS 19.–20. 2. 1944, Gribeljci 19. 6. 2019, praznik KS 15. 9. 2024)",
+    "T2.5 točen dan: 4 (zaseda 6. 9. 1941, SNOS 19.–20. 2. 1944, Gribeljci 16. 6. 2019, praznik KS 15. 9. 2024)",
     `=${items.filter((i) => i.precision === "exact-date").length}`
   );
   check(
@@ -443,8 +443,8 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 96 && new Set(seedExhibits.map((e) => e.museumNo)).size === 96, "T7.1 96 zapisov, 96 MVG številk");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 435, "T7.2 435 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 336, "T7.3 336 identitet virov (WorldCat OCLC 821110335 združen po dokazu; eheritage.si identiteta združuje MVG-060 + MVG-083; 49. sklop: +5 novih virov INZ postojanka/INZ Klepec/ARHAT 2012/ZVKDS 2023/Volčjak 2019)", `=${SOURCE_USAGE.size}`);
+  check(rows === 443, "T7.2 443 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 344, "T7.3 344 identitet virov (WorldCat OCLC 821110335 združen po dokazu; eheritage.si identiteta združuje MVG-060 + MVG-083; 6. sklop: +8 novih virov Dolenjski list/OŠ Loka/Radio Odeon — šola, Brinc, PGD, pasuljada, Štrucelj, sveti-vid)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 52, "T7.4 52 deljenih virov (≥2 zapisa)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -547,11 +547,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 96 && od.counts?.sources === 435,
-      "T8.3 OpenData: 96 zapisov / 435 virov",
+      od.counts?.exhibits === 96 && od.counts?.sources === 443,
+      "T8.3 OpenData: 96 zapisov / 443 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 435 && totalRows === 435, "T8.4 OpenData sourceKey 435/435", `${withKey}/${totalRows}`);
+    check(withKey === 443 && totalRows === 443, "T8.4 OpenData sourceKey 443/443", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
