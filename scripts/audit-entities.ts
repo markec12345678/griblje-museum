@@ -259,8 +259,8 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 98) ok("98/98 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 98) ok("98/98 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 456) ok("456 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 354) ok("354 identitet virov (8. val: +3 — md križevo 2025, DL pastirski 2009, KS svet)"); else err(`identitet: ${identities}`);
+if (srcN === 458) ok("458 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 355) ok("355 identitet virov (9. val: +4 — md križevo 2025, DL pastirski 2009, KS svet, Odeon Brinsko selo 2021)"); else err(`identitet: ${identities}`);
 if (shared === 54) ok("54 deljenih virov"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
