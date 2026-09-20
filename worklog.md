@@ -2358,3 +2358,29 @@ Stage Summary:
 - MVG-097 zdaj dokumentira celoten vzorec razsvetljave (2021 Brinsko selo + 2023 vas + 2025 asfalt) z natančnimi številkami obeh arheoloških nadzorov; MVG-032 povezan z muzejsko učilnico prek učne ure »Bistre buče«
 - Metodološki prispevek: Odeon = curl z brskalnim UA (page_reader Cloudflare) — odprta pot za prihodnje t-* sluge
 - Regresija v celoti zelena; push + Vercel produkcija preverjena
+
+---
+Task ID: 56
+Agent: Z.ai Code (glavni)
+Task: Val 10 raziskave — Odeon enumeracija (elektrika 2021 + polno besedilo učilnice) + produkcijska veriga (README sinhronizacija, push, Vercel preverba)
+
+Work Log:
+- Produkcijska preverba ob zagonu: lokalni main = origin/main (0 zaostanka), tsc 0, import audit-semantics.ts že pravilen (`../src/lib/museum-content`); Vercel produkcija ŽIVO (obe domeni HTTP 200, /api/opendata 98/458)
+- README sinhronizacija (commit 1437e62, push): globinska tabela 72/72→98/98 (74 polnih zgodb ≥250 besed, povprečno ~332; biografije 93/98 — 61 z 4+ fazami; viri 458, povprečno 4,7), Funkcije/register 93→98 zapisov, db:seed 450→458, regresijska osnova 98/458/355/54/372, i18n 930×5
+- Raziskava val 10: 8 pridobitev Radio Odeon z brskalnim UA (research-griblje/raw-web-val10-2026-10/) → 2 × HTTP 200, 6 × 404
+- PRELOM 1: Odeon »Del Gribelj bo brez elektrike« (1. 12. 2021) — polno besedilo; izklop TP GOR. GRIBLJE, 20 naslovov (3–15 + razdelki, »BŠ«), Elektro Ljubljana DE Novo mesto/nadzorništvo Metlika → rešen TO_COLLECT iz vala 7
+- PRELOM 2: Odeon »V šoli so spravljene mnoge skrivnosti« (3. 6. 2022) — polno besedilo; URL ŽE vir MVG-026 (dedup!), polno besedilo pa: himna PŠ Griblje »Naša šola Gribeljska« (Majda Lozar/Maja Kunič), pesmi zbrali Kunič+Špringer, recitali Jakša/Banovec/Malnarič, knjižničarka Urša Prus, Smetkota; datum 2. 6. 2022 potrjen
+- SKLEP: 6 × 404 t-* slugov = iskalno-indeksni duhovi (http404 preusmeritve) — Odeon-arhiv enumeracijsko izčrpan
+- Vgradnja add-only: MVG-097 +vir odeon-elektrika-2021 + 1 odstavek SL/EN (mikro-geografija omrežja); MVG-026 +razširjen odstavek o himni SL/EN + razširjeni opombe vira odeon-v-soli-skrivnosti (vir že obstajal — brez novega)
+- Dedup potrjen: Odeon učilnica kot nov vir = duplikat (isti URL); Weiss citat že MVG-046; program učilnice že MVG-026/MVG-046
+- Konstante usklajene: 458→459 (test-timeline-map ×4, test-entities ×4, audit-entities ×2, audit-timeline-map ×1, red-team ×2), 355→356 identitet, deljeni 54 ostaja
+- Regresija (živi :3100): tsc 0, eslint čist, verify-i18n 930×5, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), audit-entities ✓ 0, audit-timeline-map 39 ✓/0
+- Baza: reseeda z izrecnim DATABASE_URL → OpenData 98/459 živo; sitemap 99
+- Dokumentacija: research-griblje/23-val10-odeon-elektrika-ucilnica.md + KAZALO +23 + README sklop 56 + worklog (ta zapis)
+- Commit + push origin main; preverba Vercel produkcije
+
+Stage Summary:
+- Zbirka: 98 zapisov MVG-001–098, 459 virov, 356 identitet, 92 entitet
+- MVG-026 zdaj hrani himno vaške šole (»Naša šola Gribeljska« — Lozar/Kunič) — prvi zapis o glasbi šole; MVG-097 hrani mikro-geografijo elektro-omrežja (TP GOR. GRIBLJE)
+- Metodološki prispevek: t-* iskalni fragmenti Odeona so duhovi (404), ne Cloudflare-blokada — raziskovalni seznam očiščen lažnih ciljev
+- Regresija v celoti zelena; push + Vercel produkcija preverjena

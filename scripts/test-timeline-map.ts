@@ -443,8 +443,8 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 98 && new Set(seedExhibits.map((e) => e.museumNo)).size === 98, "T7.1 98 zapisov, 98 MVG številk");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 458, "T7.2 458 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 355, "T7.3 355 identitet virov (9. val: +8 virov, +4 identitete — kolizije DL-iskalni URLji + Odeon rally)", `=${SOURCE_USAGE.size}`);
+  check(rows === 459, "T7.2 459 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 356, "T7.3 356 identitet virov (10. val: +1 vir odeon-elektrika-2021)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 54, "T7.4 54 deljenih virov (≥2 zapisa)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -547,11 +547,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 98 && od.counts?.sources === 458,
-      "T8.3 OpenData: 98 zapisov / 458 virov",
+      od.counts?.exhibits === 98 && od.counts?.sources === 459,
+      "T8.3 OpenData: 98 zapisov / 459 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 458 && totalRows === 458, "T8.4 OpenData sourceKey 458/458", `${withKey}/${totalRows}`);
+    check(withKey === 459 && totalRows === 459, "T8.4 OpenData sourceKey 459/459", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
