@@ -2335,3 +2335,26 @@ Stage Summary:
 - SBZ potencial Županiča izkoriščen (starši, sošolci, psevdonim Gribljanovič — najmočnejša kulturna vez vasi z znanostjo); uradni svet KS 2025 potrjen; križevo z neodvisno potrditvijo in neprekinjenim koledarjem 1890→2026; Kralj kot kurirček; Totter = vir zapisovalcev
 - Regresija v celoti zelena; produkcija (Vercel) bo po pushu prejela 98/456
 - TO_COLLECT za val 9: DL polni teksti (Kralj/Totter/Švarski/2009/Rally), Odeon t-* ob odprtem oknu, rezultati arheologije razsvetljave, SEM hiša Županiča, Rally Griblje kot kandidat za zapis
+
+---
+Task ID: 55
+Agent: Z.ai Code (GLM)
+Task: Naročilo — »nadaljuj z raziskavo« (9. val): izpolnjevanje TO_COLLECT iz 8. vala (arheologija razsvetljave, Rally Griblje, SEM hiša Županiča), vgradnja add-only, regresija, push GitHub + preverba Vercela.
+
+Work Log:
+- 5 spletnih iskanj (web_search) + 2 pridobitvi Odeon (page_reader Cloudflare → rešitev: curl z brskalnim UA); surovine v research-griblje/raw-web-val9-2026-10/
+- PRELOMI: Odeon »Zaselek Brinsko selo z novo javno razsvetljavo« (18. 10. 2021) — predhodni projekt MVG-097: dela 46.987,81 EUR, arheologija 11.931,60 EUR (Skupina STIK Ljubljana), krajani+KS 10.000 EUR, EVI; predaja Kavšek + predsednik KS Toni Brinc (2021!) + dr. Brinc; Odeon »Po Gribljah s starodobnimi kolesi« (6. 7. 2026) — Rally 2026: 4. 7., ~50 kolesarjev/8 društev SI+HR, ogled cerkve + stare šole z učno uro »Bistre buče«, Country Roses, kopališče; FB Sekcija Torpedo potrjuje
+- Dedup: SEM razstava Županič = že vir MVG-043 (sem-kozmopolit); MD razsvetljava 2023 = že vir MVG-097; Odeon rally 2026 = že vir td-griblje (kanonični URL isti — v MVG-032 kot odeon-rally-2026-torpedo); BMM skledica = duplikat
+- Vgrajeno add-only (+2 vira: 456→458): MVG-097 +odeon-brinsko-selo-2021 + 2 zgodbi odstavka SL/EN (»dva projekta, en vzorec«; druga arheološka raziskava; Brinc kot predsednik KS 2021); MVG-032 +odeon-rally-2026-torpedo + 2 zgodbi odstavka SL/EN (Bistre buče ↔ muzejska učilnica)
+- Popravljen nesrečen prelom niza v storySi MVG-097 med urejanjem (tsc ujel, takoj popravljen); odstranjen/imenovan duplikat ključa odeon-rally-2026
+- Konstante usklajene: 456→458 (viri, vse skripte), 354→355 (identitete), deljeni 54 OSTAJA (rally URL že deljen med ≥3 zapisi — pričakovanje +1 ovrženo s testom, konstanta vrnjena)
+- Regresija (živi :3100): tsc 0, eslint čist (SIGKILL pri 1. poskusu, 2. čist), verify-i18n 930×5, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), audit-entities ✓ 0, audit-timeline-map 39 ✓/0
+- Baza: reseeda z izrecnim DATABASE_URL → OpenData 98/458 živo; sitemap 99
+- Dokumentacija: research-griblje/22-val9-brinsko-selo-rally.md + KAZALO +22 + README sklop 55 + worklog (ta zapis)
+- Commit + push origin main; preverba Vercel produkcije
+
+Stage Summary:
+- Zbirka: 98 zapisov MVG-001–098, 458 virov, 355 identitet, 92 entitet
+- MVG-097 zdaj dokumentira celoten vzorec razsvetljave (2021 Brinsko selo + 2023 vas + 2025 asfalt) z natančnimi številkami obeh arheoloških nadzorov; MVG-032 povezan z muzejsko učilnico prek učne ure »Bistre buče«
+- Metodološki prispevek: Odeon = curl z brskalnim UA (page_reader Cloudflare) — odprta pot za prihodnje t-* sluge
+- Regresija v celoti zelena; push + Vercel produkcija preverjena
