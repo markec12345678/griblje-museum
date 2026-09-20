@@ -2195,3 +2195,26 @@ Stage Summary:
 - 48. sklop: 2 nova zapisa (MVG-094 kupski-manevri-1937 — postaja za pitno vodo pri Gribljih med kupskimi manevri 1937; MVG-095 bronasta-igla-a478 — prvi imenovani predmet iz Gribelj v arheološki literaturi), 4 novi viri obstoječim zapisom, koleracija zasede 1941 s pričevanjem udeleženca (TV 1968), +2 postaji sprehodov
 - Zbirka: 95 zapisov / 429 virov / 331 identitet / 52 deljenih (vse številke v testih usklajene, vse regresije zelene)
 - Push: origin main (commit 48. sklop)
+
+---
+Task ID: 49
+Agent: Z.ai Code (glavni agent)
+Task: Naročilo »pushaj sinhroniziraj readme kode github in nadaljuj« — potrditev push/sinhronizacije (48. sklop že na origin, README usklajen) + nadaljevanje muzejske raziskave (tretji val, Griblje-only) z dedup vgradnjo, regresijo, dokumentacijo in pushom.
+
+Work Log:
+- Push/sinhronizacija potrjena: lokal main = origin/main = 250a07d (48. sklop), git push no-op, README vsebuje 48. sklop; avtentikacija deluje.
+- Tretji val raziskave (Griblje-only): dedup-pregled digestov 46–48 → neizkoriščene sledi (okupacijskemeje.si, ARHEOLOGIJA 2012/2023, Attems 1771, cox.si, GeisKD) + poskusi rešitve TO_COLLECT (Weiss, ZC 1988, Križnar film).
+- Pridobivanje: celotna razstava Okupacijske meje 1941–1945 (okupacijskemeje.si, 71+8 strani SL/EN — poglavja exh04-ch02/exh04-ch05 s Griblji); Volčjak 2019 AHAS 24(1) prek OJS ZRC SAZU (DOI 10.3986/ahas.v24i1.7586, PDF 5,5 MB, pdftotext — str. 148, opomba 265); nosilni strani arheoloških zbornikov; Commons API (iskanja + meta); z-ai web_search ~10 poizvedb; surovine v research-griblje/raw-web-muzeji-2026-10/k49/.
+- Blokade (dokumentirane): upload.wikimedia.org 429 (CDN/IP — slika malence ni prenesena, ozadnja zanka brez uspeha), dLib timeout, Google Books 429, academia challenge, RG unavailable, DDG/Bing blokada.
+- Dedup: cox.si Lateglacial = Andrič 2011 (že citiran) — zavrnjeno; prečanje Židov/beguncev pri Gribljih + utrditev postojanke 1942 + vizitacije 1753/1771 — NE obstajata v zbirki; Stariha (svobodnabeseda) izven teme; razglednice/Valvasor/leksikon brez dokazov.
+- Vgradnja (add-only, 1 zapis + 5 virov + 1 postaja): MVG-096 precanje-pri-gribljih (TESTIMONY, pričevanje J. Klepec — ovinka Kolpe, prevažanje Židov/beguncev, cekini; slika kolpa-dolina.jpg ponovno uporabljena, CC BY 2.0; postaja v sprehodu »Vojna in svoboda«); MVG-028 + vir INZ (utrditev 8. 4. 1942: šola/financarji, 5+3 bunkerji, žica, skica Arhiv RS) + povedi SL/EN; MVG-068 + vir Volčjak 2019 (Grible 1771, om. 1753 — prvi vizitacijski zapisi) + povedi SL/EN; MVG-083 + 2 vira (ARHAT/Tiran 2012 vpis 109; ZVKDS CPA 2023 projekt 23-0070, str. 108) + zgodba (2011, 2012, 2021 + 2023).
+- Konstante regresij usklajene: test-entities (96/96, 335, 434, 96/96 IIIF, 96/434 OpenData, sitemap 97), test-timeline-map (T7.1 96, T7.2 434, T7.3 335, T7.8 96, T8.1/T8.2 96, T8.3 96/434, T8.4 434, T8.7 97, T5.12 31, T5.14 18, T7.9 83/31), audit-entities (96/434/335), audit-timeline-map (96/31/434), test-curator-red-team (R0.2/R0.3/R12.2/R16.1/R16.2 96/434), test-ai-curator (96).
+- Regresija (živi :3100, BASE_URL): test-entities 100 ✓/0 ✗, test-timeline-map ✓ vsi, test-ai-curator 214 ✓/0 ✗, red-team 157 ✓/0 ✗ (GAP 24), audit-entities ✓ 0, audit-timeline-map 39 ✓/0 ✗, verify-i18n 930 × 5, tsc 0, eslint 0, audit-numbers brez novih oznak, audit-crossfile 19 (= baseline).
+- db:push + db:seed (idempotentno) → OpenData 96/434, sitemap 97 URL; spot-check živo: /exponat/precanje-pri-gribljih 200 (izrisano), /exponat/zaseda-1941 200 (8. 4. 1942 izrisano), /exponat/sveti-vid 200 (Grible/1753 izrisano), /api/opendata 200.
+- Dokumentacija: research-griblje/17-muzejska-raziskava-3-2026-09.md + KAZALO +17 + README 49. sklop.
+
+Stage Summary:
+- 49. sklop: 1 nov zapis (MVG-096 precanje-pri-gribljih, TESTIMONY — ovinka Kolpe kot slepo mesto obmejnega pasu), 5 novih virov, 2 zapolnjeni izrecno priznani vrzeli (usoda postojanke 1942 → MVG-028; vizitacijski zapisi 1753/1771 → MVG-068), +2 arheološki raziskavi (2012, 2023 → MVG-083), +1 postaja sprehoda
+- Zbirka: 96 zapisov (MVG-001–096) / 434 vrstic virov / 335 identitet / 18 koordinat / 83 s časom / 31 s lego (vse številke v testih usklajene, vse regresije zelene)
+- Identifikirano, ostaja TO_COLLECT: Weiss v monografiji Neumarkt–Möttling–Metlika (BM Metlika 2018, ISBN 978-961-6652-19-3, ~str. 284–285); ZC 42(4) 1988; Križnar 2001 film; lasten posnetek ovinka/malence
+- Push: origin main (commit 49. sklop)
