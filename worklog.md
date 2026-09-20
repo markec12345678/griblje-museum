@@ -2263,3 +2263,26 @@ Stage Summary:
 - 3 originalne fotografije vgrajene (MVG-089, MVG-090, MVG-094); 7 ilustrativnih zadržano po kustodskem pravilu s transparentnimi podnapisi — javno dostopni originali za njih ne obstajajo (dokumentirano iskanje: dLib, NMS, SEM, MUSIS, Kamra, Commons, študija brez slik)
 - Zbirka: 96 zapisov (MVG-001–096), 435 virov (+1 odeon-pasuljada-2017), 336 identitet; baza repo (db/custom.db) sinkronizirana z izrecnim DATABASE_URL
 - 5. val raziskave = deloma potrditveni (Commons/SEM/Kamra), nove vsebine ni (dedup disciplina); TO_COLLECT razširjen neformalno: fotografija postaje 1937 (arhivi časopisov Slovenec/Jutarnji list), fotografije DKŽ z začetkov društva, NMS inventar A 478
+
+---
+Task ID: 52
+Agent: Z.ai Code (glavni)
+Task: Raziskava po naročilu »imaš na facebooku, imaš dolenjski list, slike, odeon, povsod išči, raziskuj« — 6. raziskovalni val; vgradnja z dedup-preverbo; regresija; dokumentacija
+
+Work Log:
+- 13 spletnih iskanj (Dolenjski list, Facebook, Odeon, svet24, muzejska učilnica, PGD, Brinc, Pasuljada, yumpu/dLib) + 10 pridobitev strani; surovine v research-griblje/raw-web-val6-2026-10/
+- PRELOM: dolenjskilist.svet24.si/iskanje?q= dostopen prek curl (SSR) → enumeriranih 19 člankov o Gribljah; preneseni ključni: PGD stoletnica (1898805), spominska plošča/91 let (1894366), muzejska učilnica (1783688), 21. Pasuljada (1923027), Štrucelj 80 let (1920964), Pet stoletij vere (1917550), podružnična šola (1870858), tranzit most (1832442), spanje v šoli (1533106)
+- Dedup preverbe: rg nad museum-content.ts/entities.ts za vsako temo (Brinc, Torpedo, muzejska učilnica, gribeljci, zvonovi, 130-letnica, Štrucelj)
+- Vgrajeno add-only: +8 virov (435→443) — os-loka-130-let, dl-muzejska-ucilnica, dl-vas-s-svojo-solo, odeon-v-soli-skrivnosti (MVG-026); dl-brinc-91 (MVG-042); dl-pasuljada-21 (MVG-041); dl-strucelj-80 (strucelj-kmetija); dl-pet-stoletij-vere (sveti-vid); MVG-027 zgodba dopolnjena (35.000 €, kombi, kviz mladine — vir že obstajal)
+- Korekcije: otvoritev učilnice 26. 6. → 2. 6. 2022 (MVG-046, objava≠dogodek); Gribeljci 19. → 16. 6. 2019 (MVG-070, entiteta, timeline komentar, T2.5); zvonovi 1988 → 1998 (MVG-042, nemogoča valuta; obe različici dokumentirani); PGD 30.000 → 35.000 €; šola 17 učencev/5 oddelkov RaP (MVG-046)
+- MVG-026 vaska-sola: +3 nove zgodbe (SL+EN) — DL vas-s-svojo-solo, muzejska učilnica, 130-letnica/Zabukovšek/plošča; MVG-042: 91. rojstni dan, razčlenitev darov, Marija 65 let; entiteta franc-brinc +3. neodvisni vir (DL 91)
+- Konstante testov usklajene: 443 vrstic virov, 344 identitet (test-entities T8.6/T8.11/T9, test-timeline-map T7.2/T7.3/T8.3/T8.4, red-team R0.3/R16.2, audit-entities, audit-timeline-map)
+- Regresija (BASE_URL=:3100, strežnik težava = napačni privzeti port 3000 v BASE): tsc 0, eslint 0, test-timeline-map 72 ✓/0, test-entities 100 ✓/0, red-team 157 ✓/0 (GAP 24), audit-entities ✓, audit-timeline-map 39 ✓/0, verify-i18n 930×5
+- Baza: reseeda z izrecnim DATABASE_URL=file:/home/z/griblje-museum/db/custom.db → 96/443; opendata spot-check 443 ✓
+- Dokumentacija: research-griblje/19-dolenjski-list-val6.md + KAZALO +19 + README sklop 52 + worklog (ta zapis)
+
+Stage Summary:
+- Dolenjski list (Media24) kot nov izkoriščen virni sloj: 19 enumeriranih člankov, 8 novih virov v zbirki; Facebook/Radio Odeon/dLib/Vaš kanal blokade dokumentirane
+- Rešeni obe TO_COLLECT iz 50. sklopa: 130 let šole = 16. 6. 2019 (1889), KS praznik 2024 = napad 1941/spominska soba (že v zbirki)
+- 3 evidencne korekcije datumov/zneskov (objava≠dogodek disciplina; valuta-aritmetika); zbirka: 96 zapisov MVG-001–096, 443 virov, 344 identitet
+- Regresija v celoti zelena; produkcija (Vercel) bo po pushu prejela 96/443

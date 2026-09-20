@@ -61,7 +61,7 @@ export const EVENT_PRECISION: Readonly<Record<string, EventPrecision>> = {
   // — z dnem —
   "event:zaseda-na-cesti-1941": "exact-date", // 6. september 1941
   "event:snos-zasedanje-1944": "exact-date", // 19.–20. februar 1944
-  "event:gribeljci-po-svetu-2019": "exact-date", // 19. junij 2019
+  "event:gribeljci-po-svetu-2019": "exact-date", // 16. junij 2019 (poročilo OŠ Loka objavljeno 19. 6.)
   "event:praznik-krajevne-skupnosti-2024": "exact-date", // 15. september 2024
   // — z mesecem —
   "event:blagoslov-solskega-poslopja-1889": "month", // november 1889

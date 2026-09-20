@@ -296,7 +296,7 @@ export const ENTITIES: EntityRef[] = [
       labelEn: "90th birthday 2025 (birth date not recorded)",
       sortKey: 1935,
     },
-    note: "Pravnik in dobrotnik vasi; obiskoval gribeljsko šolo 1941–1945. »Franci Brinc« (Radio Odeon) je ista oseba — 90. rojstni dan v obeh virih (P1-E3, P2-E2). Ni sorodnik Katarine Brinc (pogreb 1918, P1-E6).",
+    note: "Pravnik in dobrotnik vasi; obiskoval gribeljsko šolo 1941–1945. »Franci Brinc« (Radio Odeon) je ista oseba — 90. rojstni dan v obeh virih (P1-E3, P2-E2); Dolenjski list (maj 2026) potrdi 91. rojstni dan s spominsko ploščo na šoli — tretji neodvisni vir. Ni sorodnik Katarine Brinc (pogreb 1918, P1-E6).",
     evidence: [
       { slug: "petstoletnica-2026" },
       { slug: "pgd-griblje-1927" },
@@ -1320,11 +1320,11 @@ export const ENTITIES: EntityRef[] = [
     labelSi: "Gribeljci po svetu — vrnitev ob 130-letnici šole",
     labelEn: "Griblje people around the world — the return at the school's 130th anniversary",
     time: {
-      labelSi: "19. junij 2019",
-      labelEn: "19 June 2019",
+      labelSi: "16. junij 2019",
+      labelEn: "16 June 2019",
       sortKey: 2019,
     },
-    note: "Srečanje vseh vej razpršene družine: KS in TD Griblje; šola — ustanova, ki jo je vsak Gribljec delil.",
+    note: "Srečanje vseh vej razpršene družine: KS in TD Griblje; šola — ustanova, ki jo je vsak Gribljec delil. Datum dogodka 16. 6. (poročilo OŠ Loka je objavljeno 19. 6.).",
     evidence: [{ slug: "gribeljci-po-svetu-2019" }],
   },
   {
