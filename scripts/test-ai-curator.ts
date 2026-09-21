@@ -656,7 +656,7 @@ async function t9() {
       data?: { exhibits?: unknown[] };
     };
     check(
-      opendata.status === 200 && (od.counts?.exhibits ?? od.data?.exhibits?.length ?? 0) === 98,
+      opendata.status === 200 && (od.counts?.exhibits ?? od.data?.exhibits?.length ?? 0) === 101,
       "T9.10 OpenData 93 zapisov (regresija)",
     );
   } else {

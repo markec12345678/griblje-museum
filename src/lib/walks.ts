@@ -541,6 +541,27 @@ export const WALKS: Walk[] = [
         noteEn:
           "And finally the longest road: Jandreč Matiček, who wrote down the customs and ended in Texas. What he left was no fortune — it was the notes by which Bela krajina's customs are known.",
       },
+      {
+        exhibitSlug: "john-randolph-totter",
+        noteSi:
+          "Matičkova najmlajša veja: sin teksaške ravnine je odkril kemijo po kompletu za razcvetno analizo, ki mu ga je podaril duhovnik — in končal kot svetovno znan biokemik v Oak Ridgeu. Knjiga je zmagala nad plugom.",
+        noteEn:
+          "Matiček's youngest branch: a son of the Texas plain discovered chemistry through a blowpipe analysis kit given by a priest — and ended as a world-known biochemist at Oak Ridge. The book beat the plough.",
+      },
+      {
+        exhibitSlug: "dragojila-milek",
+        noteSi:
+          "Vrnitev iz sveta: Dragojila Milek, hči očeta iz sosednjih Gribelj, je postala Gregorčičeva »planinska roža« — in končala v Podzemlju, župniji gribeljske cerkve, pri ravnatelju Ivanu Barletu iz našega registra.",
+        noteEn:
+          "A return from the world: Dragojila Milek, daughter of a father from neighbouring Griblje, became Gregorčič's 'mountain flower' — and ended in Podzemelj, the parish of the Griblje church, under the head teacher Ivan Barle from our register.",
+      },
+      {
+        exhibitSlug: "valentina-strucelj",
+        noteSi:
+          "In pot, ki se še piše: gribeljski sintetizator je zrasel v klarinet, zavrnitev v Ljubljani pa v odliko v Gradcu. Danes iz Gribelj po svetu vodi tudi glasba — do Berna.",
+        noteEn:
+          "And a path still being written: a Griblje synthesizer grew into a clarinet, and a Ljubljana rejection into a distinction in Graz. Today music, too, leads from Griblje into the world — all the way to Bern.",
+      },
     ],
   },
   {
