@@ -259,8 +259,8 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 101) ok("101/101 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 101) ok("101/101 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 512) ok("512 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 402) ok("402 identitet virov (15. val: +17 — Odeon re-enumeracija)"); else err(`identitet: ${identities}`);
+if (srcN === 514) ok("514 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 404) ok("404 identitet virov (16. val: +2 — spomenik 2013 + ribnik)"); else err(`identitet: ${identities}`);
 if (shared === 60) ok("60 deljenih virov"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
