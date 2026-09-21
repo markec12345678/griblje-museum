@@ -2541,3 +2541,25 @@ Stage Summary:
 - Vrzel #4 iz benchmarka zaprta: AI planiranje obiska po dokaznem vzorcu — izbor postaj determinističen, model samo personalizira pripoved in ne more spremeniti izbora; pošten fallback (synthesized=false) — načrt nikoli ne odpove
 - Iz benchmarka ostaja samo vrzel #3 (avtentične 360° panorame — zbiranje od vaščanov, TO_COLLECT, AI slike izključene)
 - Vsi testi zeleni; commit + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 64
+Agent: Z.ai Code (glavni)
+Task: »odlicno nadaljuj raziskuj« — 15. val raziskave: Odeon re-enumeracija (iskalni arhiv prek curl -4), 17 novih virov 2017–2026, vgradnja add-only, regresija, push
+
+Work Log:
+- Priprava: veriga potrjena — sklopi 61–63 pushani, vrzeli #2/#4 zaprte, slike avtentične (18 arhivskih kreditov brez Foto: = zakoniti Wikimedia/matricule/holotip), dev :3000 živ (OpenData 101/488)
+- Metodološki preboj: radio-odeon.com/iskanje/?q=…&limit=100 z curl -4 (IPv4 — 000 blokada = IPv6, ne Cloudflare) + brskalni UA → pravi zadetki; stranski predlogi ločeni prek <main>; »griblje« (19) + »gribelj« (21) → unija ~33, dedup proti 57 slugom; paketno pridobljenih 21 člankov (page_reader za 3, med njimi 2 × 403 → ok)
+- Prelomi: Brinc = letni koledar donacij (OŠ Loka 2021 obisk + odprtje razsvetljave; Odeon 12/2025 »znova 5.000 evrov«, Marjetka Žunič); Darinka Jerčinovič 79/80 = druga zmaga 2026 (MVG-098); žbul v sortno listi + sladoled podmladka DKŽ (vir LU Črnomelj); omrežje skozi 5 let (38 naslovov 2025; izvod 2 »GOR.G.-VIKENDI«; TP GRIBLJE izvod Šola = druga postaja); Županič + Derganc revija Jug 1901 (»iz belokranjskih Gribelj«); legenda o brodarju (2017); kavbojski žur tretjič 2026 (Husič/Pezdirc/Lavrič/Brodarič/Podržaj); Torpedo naslovljeni gost Sem'ške ohceti; Noč knjige (Ana Kočevar, Palček Migetaliček) + kovček 19. sezone; »članice iz Gribelj govorile o žbulu«
+- Dedup: prvi šolski dan (OŠ Loka že vir), LOK Zupan/Kunič brez gribeljske veze (izrecno), Commons kategorija 100 % pokrita, kolesarski izlet/kilometri/na-Roglo/drugi izklop Šola
+- Vgrajeno: +17 ključev / +24 vrstic (MVG-010+1, MVG-026+6, MVG-032+1, MVG-042+2, MVG-047+1, MVG-074+1, MVG-082+3, MVG-084+1, MVG-089+2, MVG-097+4, MVVG-098+2) + 12 zgodbenih dopolnitev SL/EN (insert pred »Muzej išče« ali konec) — vse s ubežanimi \n
+- Poučne epizode: (1) vstavljanje odstavkov v TS stringe zahteva ubežane \n — realne nove vrstice lomijo string literal; 2 kola popravkov (10 + 2 mesta), tsc kot varovalka; (2) MultiEdit ni atomaren — preverba per-check; (3) idempotencia vstavljanja prek sidr (sidro po vgradnji ne več ustreza)
+- Konstante usklajene: 512/402/60 v 6 skriptah (test-entities T8.6/T8.7/T8.11/T9.3/T9.4, test-timeline-map T7.2/T7.3/T7.4/T8.3/T8.4, audit-entities, audit-timeline-map, test-curator-red-team R0.3/R16.2) + README (tabela, deljeni, regresija, db:seed)
+- Regresija (živi :3000): tsc 0, eslint čist, verify-i18n 946×5, audit-entities ✓, audit-timeline-map 39 ✓/0, audit-iiif-annotations 5 ✓/0 (372/372), test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), test-plan-visit 42 ✓/0; reseeda → OpenData 101/512 živo (sourceKey 512/512)
+- BROWSER: dialog MVG-042 (?exhibit=franc-brinc) prikazuje novo zgodbo + vir Odeon 19. 12. 2025; domov brez napak konzole
+- Dokumentacija: research-griblje/29-val15-odeon-reenumeracija.md + KAZALO +29 + README (64. sklop + števci 512/402/60) + worklog; surovine raw-web-val15-2026-10/
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 512 virov, 402 identitet, 60 deljenih, 94 entitet; sitemap 102; i18n 946 × 5; 13 API poti
+- Odeon-arhiv zdaj dejansko izčrpan (iskalni arhiv + paginacija + dvojezične poizvedbe); zadnji sveži 2025–2026 viri vgrajeni
+- Vsi testi zeleni; commit + push na GitHub; Vercel auto-deploy sledi
