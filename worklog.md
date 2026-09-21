@@ -2563,3 +2563,31 @@ Stage Summary:
 - Stanje: 101 zapisov (MVG-001–101), 512 virov, 402 identitet, 60 deljenih, 94 entitet; sitemap 102; i18n 946 × 5; 13 API poti
 - Odeon-arhiv zdaj dejansko izčrpan (iskalni arhiv + paginacija + dvojezične poizvedbe); zadnji sveži 2025–2026 viri vgrajeni
 - Vsi testi zeleni; commit + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 65
+Agent: Z.ai Code (glavni)
+Task: "odlicno nadaljuj" — nadaljevanje po sklopu 64: 16. val raziskave (spominska obeležja — drugi poročevalci; narava — ribnik; kartografija — kataster/izmeri), vgradnja add-only, regresija, push
+
+Work Log:
+- Priprava: veriga potrjena — sklopi 61–64 pushani (main @ 77c16a3), vrzeli #2/#4 zaprte (ostaja #3 — panorame od vaščanov), dev :3000 živ; OpenData preverjena (pot /api/opendata, ne /api/open-data) 101/512
+- Val 16 trije rovi: (A) spominska obeležja, (B) ribnik, (C) kartografija (frančiškanski kataster SI AS 176, vojaški izmeri, Geopedia, Mapire, eZKN)
+- ROV A PRELOM: blog Simboli polpretekle zgodovine (Primož Šmajdek, 18. 1. 2013) = DRUGI poročevalec spomenika MVG-029: kamnit steber, enajst padlih borcev + dve žrtvi, DVIGNJEN PLATOJ S STOPNICAMI (nova arhitekturna podrobnost), 1961, pred šolo; page_reader prenesel cel opis; partizanstvo.si = besedilno enak blogu (verjeten skupen vir; wp-json 404, page_reader 404/prazen) izpuščen z izrecnim sklepop; avArc aGis = agregator (kredit "partizanstvo.si / Arhiv Geopedia") izpuščen; Mapy/Hribi/spomenikdatabase = druge vasi (PVV zadetki Ajdovščina/Šmartno — dedup ✓)
+- ROV B PRELOM: Discover Bela krajina (en.odkrijtebelokrajino.com/ribnik-v-gribljah, © 2022, osebni projekt fotografa) = prvi ZUNANJI opis ribnika MVG-016: polja med Gribljami in Krasincem, lesena kočica + brv, štorklje, vodne lilije, nivo stalen razen suše, 500 m peš (vozilo ni mogoče), skrbetv = domačini; stran najdena prek Nature indeksa (guessed URL 404 → pravi slug ribnik-v-gribljah); reka-kolpa.si že vir; belakrajina.si brez gribeljske vsebine (domena z 0 virov — priložnost)
+- ROV C (nič vgrajenega, vse dokumentirano): eZKN ×5 naslovov 000 + gu.gov.si page_reader CONNECTION_RESET; agd/e-arhiv/opisnik.sas.si 000; geopedia.si 000; Mapire curl 403 (AWS; val 12 prazen poskus zdaj porožen); Commons API: "Metlika third military survey" + "Spezialkarte Krain 5055" = 0 zadetkov, rate-limit; rodoslovje/kartografija 200 a JS-brano; dLib: domov 200 (114 kB), vzorec results/?query= najden, a results 404 (page_reader) / timeout >110 s (curl) — največja nepopisana površina, lasten val
+- Wikidata preverba: iskalni rezultat Q2794477 = revija Frontiers in Psychology (zaljivka; host_name prazno, /goto opaqni) — prek wbgetentities API; muzejev citat MVG-030 Q2531566 (Griblje, naselje) POTRJEN pravilen, ni spremembe
+- Vgrajeno add-only: +2 vira (spomeniki-blog-2013 → MVG-029; odkrij-belakrajina-ribnik → MVG-016; 512→514, identitet 402→404, deljenih 60) + 2 zgodbeni odstavki SL/EN; brez i18n ključev, brez entitet, sitemap 102; koordinate ribnika ostanejo približne (točne ni v viru — muzej ne ugiba)
+- Poučna epizoda 1: MultiEdit spet ni atomaren — 1. kolu apliciral 3/6 popraškov (2 zgodbi MVG-029 + vir) pred odpovedjo na ribnikovem sidru; preverba per-check; drugi kolu 3 popravki z točnimi sidri
+- Poučna epizoda 2: sidro "V Bela krajini voda ni samoumevna" ne obstaja — v datoteki "V Beli krajini" (sklanjana oblika); preverjanje sidr po kosih (grep -F na krajših nizih) lokalizira neujemajočo obliko
+- BONUS popravek: brskalniška preverba odkrila zastarel števec — hero "Zbirka 93 zapisov" (iz zgodnjih sklopov) namesto 101; 25 nizov v 5 jezikih popravljenih (hero, podnaslov vodiča, opomba sprehodov, vizualno iskanje, koledarska vrata): SL/HR/DE/IT "101", EN "one hundred and one", HR hero "Sto jedan zapis" (popravek iz "Stot i jedan"), DE "hundertundein", IT "centouna"; verify-i18n 946×5 ostaja
+- Konstante usklajene: 514/404 v 6 skriptah (audit-entities 262–263, audit-timeline-map 198, test-entities T8.6/T8.11/T9.3/T9.4 + komentar T9, test-timeline-map T7.2/T7.3/T8.3/T8.4 + popravljen zastarel label T7.4 "54"→"60", test-curator-red-team R0.3/R16.2) + README (tabela 514, regresija 101/514/404/60/372, db:seed 514)
+- Regresija (živi :3000): tsc 0, eslint čist, verify-i18n 946×5, audit-entities ✓ (514/404/60/372), audit-timeline-map 39 ✓/0, audit-iiif-annotations 5 ✓/0 (372/372), test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), test-plan-visit 42 ✓/0; reseeda (izrecni DATABASE_URL) → OpenData 101/514 živo
+- BROWSER: dialog MVG-029 prikazuje novo zgodbo (dvignjen platoju ×3, Simboli ×2) + vir; dialog MVG-016 prikazuje Krasinec/štorklje/lilije/Discover/500 m; hero "Zbirka 101 zapisov" živo; konzola brez napak (samo React DevTools + HMR)
+- Dokumentacija: research-griblje/30-val16-spomenik-ribnik-kartografija.md (+ dopis o hero popravku) + KAZALO +30 + README (65. sklop + števci 514/404) + worklog; surovine raw-web-val16-2026-10/ (k01–k14, p01–p11, wd-*, mapire/dlib/rodoslovje poskusi)
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 514 virov, 404 identitet, 60 deljenih, 94 entitet; sitemap 102; i18n 946 × 5; 13 API poti
+- MVG-029: drugi neodvisni poročevalec (blog 2013) z novo podrobnostjo platoja/stopnic + potrditvijo 11+2; MVG-016: prvi zunanji opis ribnika (lega med Gribljami in Krasincem, kočica/brv, štorklje, lilije, dostop)
+- Kartografija: popis dostopnosti iz peskovnika — frančiškanski kataster KO Metlika (~1824) ostaja najzanimivejši nedostopen vir; dLib polnotekstovna enumeracija = naslednji veliki val (results 404/timeout)
+- Hero števec 93→101 popravljen v 5 jezikih (25 nizov) — točnost kot jedro muzeja
+- Vsi testi zeleni; commit 2c9ad7f + push na GitHub; Vercel auto-deploy sledi
