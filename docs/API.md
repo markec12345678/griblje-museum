@@ -84,6 +84,17 @@ curl -s "https://griblje-museum.vercel.app/api/iiif?manifest=mvg-001" \
 ```
 Manifest vsebuje `items → AnnotationPage → AnnotationPage.items (Annotation)` po IIIF 3.0.
 
+**Anotacije življenjepisa (61. sklop):** poleg `painting` anotacije (slika) Canvas nosi
+`annotations → AnnotationPage` z motivacijo `supplementing` — **ena anotacija na fazo
+življenjepisa predmeta** (vzorec: Rijksmuseumove razstave na anotacijah). Vsaka anotacija
+ima dvojezično telo (`TextualBody` sl + en) in oznako `letnica · faza · status dokazilnosti`.
+Zapisi brez življenjepisa Canvas.annotations ne pošiljajo.
+```bash
+curl -s "https://griblje-museum.vercel.app/api/iiif?manifest=izseljenstvo" \
+  | jq '.items[0].annotations[0].items | length'
+# 5  ← 5 faz življenjepisa kot anotacije
+```
+
 ### 9) `GET /api/opendata` — odprti podatki (CC BY-SA 4.0)
 Celoten dump zbirke + muzejski metapodatek + JSON-LD kontekst + Wikidata `sameAs`.
 ```bash

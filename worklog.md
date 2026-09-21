@@ -2470,3 +2470,25 @@ Stage Summary:
 - Benchmark ugotovitev: po kuratorski globini, dokazilnosti in preverljivosti AI odgovorov je muzej na svetovni ravni ali nad njo; identifikirane 4 vrzeli z načrtom (1 zaprta, 3 naslednji sklopi)
 - Nova javna dokumentacija docs/API.md; README benchmark razdelek; research-griblje/27 + raw-web-bench-2026-10/
 - Commit + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 61
+Agent: Z.ai Code (glavni)
+Task: »nadaljuj« — zaprtje vrzeli #2 iz benchmarka (IIIF anotacije življenjepisov) + slikovna avtenticnost (DKŽ original 2016; kupski manevri 1937 preverba) + regresija + push
+
+Work Log:
+- Preverba slik po naročilu 8 (avtenticnost): MVG-089 dkz-griblje je uporabljal pasuljada-2017 (sorodna, a ne društvo); MVG-094 kupski-manevri lokacijsko fotografijo z iskrenim kreditom
+- DL članek 2016 (dl-kmecke-zene-2016) ima 3 galerijske fotografije dogodka → prenesene 3 (768×576) + večje različice prek CDN vzorca (1600×1200, 2048×1536); vizualna preverba: pult »DKŽ GRIBLJE — OD SEMENA DO ŽBULA«, košare žbula, stena fotografij društva, članice; izbrana 2048×1536 → public/images/authentic/dkz-griblje-2016-od-semena-do-zbula.jpg
+- Vgrajeno: MVG-089 image + imageCredit (Foto: Dolenjski list 16. 8. 2016; vir dl-kmecke-zene-2016 že obstaja — dedup ✓) + IMAGE_DIMENSIONS 2048×1536
+- Kupski manevri 1937: iskanje (web-search + Hrčak ojs.srce.hr + ResearchGate + aukcije/Alamy) — prosto dostopna fotografija vodne postaje 1937 NE obstaja (študija Đerek 2025 arhivski ©); obstoječe iskreno stanje potrjeno kot pravilno (lokacijska fotografija + izrecna iskalna opomba)
+- IIIF anotacije življenjepisov (vrzel #2): refactor — čisti graditelji izvlečeni iz src/app/api/iiif/route.ts v novo src/lib/iiif-manifest.ts (strukturalni tipi IiifExhibitRow/IiifExhibitWithSources; route tanek: GET+db+NextResponse); buildBiographyAnnotations — Canvas.annotations → AnnotationPage z motivation=supplementing, 1 anotacija na fazo, telo = TextualBody sl+en, label = letnica · faza (6 stopenj sl/en) · status dokazilosti; zapisi brez življenjepisa brez annotations
+- Nov audit scripts/audit-iiif-annotations.ts (5 preverb: A1 strani po fazah 93/93, A2 anotacije 372/372 supplementing+sl/en+target, A3 seštevek 372 = 372 faz, A4 0 prepustov, A5 painting nedotaknjen 101/101)
+- Poučna epizoda: dev strežnik restartan po moji napaki — podedoval DATABASE_URL=file:/home/z/my-project/db/custom.db iz okolja (druga baza, API vračal 0 zapisov); restart s pravilnim file:/home/z/griblje-museum/db/custom.db → OpenData/exhibits spet 101, nova slika HTTP 200, anotacije žive (izseljenstvo 5, dkz 3, motivation supplementing)
+- Regresija (živi :3000): tsc 0, eslint čist, verify-i18n 930×5, audit-iiif-annotations 5 ✓/0, audit-entities ✓, audit-timeline-map 39 ✓/0, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24)
+- Dokumentacija: docs/API.md (IIIF razdelek + anotacije s curl primerom), README (sklop 60 + 61 vrstici, benchmark vrzeli #2 → zaprta), research-griblje/27 (vrzel #2 → ZAPRTO)
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 482 virov, 379 identitet, 94 entitet; sitemap 102
+- Vrzel #2 iz benchmarka zaprta: IIIF anotacije življenjepisov 1:1 (372/372) — Rijksmuseumov standard anotacij dosegel z muzejsko vsebino (pot predmeta)
+- MVG-089: avtentična fotografija društva 2016 namesto sorodne pasuljade; MVG-094: prosto dostopen original ne obstaja — iskreno stanje dokumentirano
+- Vse zeleno; commit + push na GitHub; Vercel auto-deploy sledi
