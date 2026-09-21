@@ -259,8 +259,8 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 101) ok("101/101 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 101) ok("101/101 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 477) ok("477 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 374) ok("374 identitet virov (12. val: +7 — trije novi zapisi oseb)"); else err(`identitet: ${identities}`);
+if (srcN === 482) ok("482 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 379) ok("379 identitet virov (12. val: +7 — trije novi zapisi oseb)"); else err(`identitet: ${identities}`);
 if (shared === 54) ok("54 deljenih virov"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
