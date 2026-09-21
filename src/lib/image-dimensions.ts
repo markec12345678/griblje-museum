@@ -126,6 +126,11 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
 
   // 27. sklop: Lovčev pogreb — panjska končnica, Micka Pavlič 1891 (SEM, javna last; optimizirano 1600×783)
   "/images/authentic/panjska-koncnica.jpg": { width: 1600, height: 783 },
+
+  // 58. sklop (12. val): trije novi zapisi oseb — portreti z virom
+  "/images/authentic/dragojila-milek.jpg": { width: 459, height: 785 },
+  "/images/authentic/totter-john.jpg": { width: 144, height: 180 },
+  "/images/authentic/valentina-strucelj.jpg": { width: 800, height: 532 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };

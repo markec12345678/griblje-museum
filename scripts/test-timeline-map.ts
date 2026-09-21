@@ -441,10 +441,10 @@ section("T6 — KURATORSKA VARNOST: identitete se NIKOLI ne združijo");
 // ===========================================================================
 section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
-  check(seedExhibits.length === 98 && new Set(seedExhibits.map((e) => e.museumNo)).size === 98, "T7.1 98 zapisov, 98 MVG številk");
+  check(seedExhibits.length === 101 && new Set(seedExhibits.map((e) => e.museumNo)).size === 101, "T7.1 101 zapisov, 101 MVG številk");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 470, "T7.2 470 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 367, "T7.3 367 identitet virov (10. val: +1 vir odeon-elektrika-2021)", `=${SOURCE_USAGE.size}`);
+  check(rows === 477, "T7.2 477 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 374, "T7.3 374 identitet virov (12. val: +7 — trije novi zapisi oseb)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 54, "T7.4 54 deljenih virov (≥2 zapisa)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -475,11 +475,11 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
   check(allRelated && minRelated >= 5, "T7.7 relatedExhibits: vsi ≥1 (min 5) — kuratorski graf OBJECT ↔ OBJECT nedotaknjen", `min=${minRelated}`);
 
   const walkCover = seedExhibits.filter((ex) => walkStopOf(ex.slug) != null).length;
-  check(walkCover === 98 && ALL_WALKS.length >= 5, "T7.8 walkStopOf pokriva vseh 98 zapisov (sprehodi: 49. sklop + postaja precanje-pri-gribljih + 7. val: razsvetljava/pogača)", `=${walkCover}`);
+  check(walkCover === 101 && ALL_WALKS.length >= 5, "T7.8 walkStopOf pokriva vseh 101 zapisov (sprehodi: 49. sklop + postaja precanje-pri-gribljih + 7. val: razsvetljava/pogača + 58. sklop: trije ljudje)", `=${walkCover}`);
 
   const withTime = seedExhibits.filter((e) => e.yearFrom != null).length;
   const withCoords = seedExhibits.filter((e) => e.lat != null && e.lng != null).length;
-  check(withTime === 85 && withCoords === 33, "T7.9 objektov s časom (yearFrom) = 85; s koordinato = 33", `=${withTime}/${withCoords}`);
+  check(withTime === 88 && withCoords === 33, "T7.9 objektov s časom (yearFrom) = 88; s koordinato = 33", `=${withTime}/${withCoords}`);
 
   // i18n: 930 ključev × 5 jezikov, identična struktura (ista logika kot verify-i18n;
   // število je zraslo z 41. sklopom — curator razdelek + curatorAsks).
@@ -521,7 +521,7 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       if (r.status === 200) okPages += 1;
       else badPages.push(ex.slug + ":" + r.status);
     }
-    check(okPages === 98, "T8.1 98/98 objektnih strani", `${okPages}; ${badPages.join(",") || "vse 200"}`);
+    check(okPages === 101, "T8.1 101/101 objektnih strani", `${okPages}; ${badPages.join(",") || "vse 200"}`);
 
     let okManifests = 0;
     let withSources = 0;
@@ -532,7 +532,7 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       if ((j.metadata ?? []).some((m) => JSON.stringify(m.label).includes("Vir"))) withSources += 1;
       okManifests += 1;
     }
-    check(okManifests === 98 && withSources === 98, "T8.2 98/98 IIIF manifestov z ≥1 virom", `${okManifests}/${withSources}`);
+    check(okManifests === 101 && withSources === 101, "T8.2 101/101 IIIF manifestov z ≥1 virom", `${okManifests}/${withSources}`);
 
     const od = (await (await fetch(BASE + "/api/opendata")).json()) as {
       counts?: { exhibits?: number; sources?: number };
@@ -547,11 +547,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 98 && od.counts?.sources === 470,
-      "T8.3 OpenData: 98 zapisov / 470 virov",
+      od.counts?.exhibits === 101 && od.counts?.sources === 477,
+      "T8.3 OpenData: 101 zapisov / 477 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 470 && totalRows === 470, "T8.4 OpenData sourceKey 470/470", `${withKey}/${totalRows}`);
+    check(withKey === 477 && totalRows === 477, "T8.4 OpenData sourceKey 477/477", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
@@ -562,7 +562,7 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
 
     const sm = await (await fetch(BASE + "/sitemap.xml")).text();
     const locs = (sm.match(/<loc>/g) ?? []).length;
-    check(locs === 99, "T8.7 sitemap: 99 URL", `=${locs}`);
+    check(locs === 102, "T8.7 sitemap: 102 URL", `=${locs}`);
 
     const home = await fetch(BASE + "/");
     check(home.status === 200, "T8.8 domača stran → " + home.status);

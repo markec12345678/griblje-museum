@@ -242,10 +242,10 @@ section("R0 — AUDIT TRAIL (repo, veriga ponudnikov)");
   check(!!head, "R0.1 trenutni commit zabeležen", head);
   console.log(`  · HEAD: ${head}${dirty ? " (delovno drevo NI čisto)" : " (čisto)"}`);
 
-  check(seedExhibits.length === 98, "R0.2 zbirka: 98 zapisov", String(seedExhibits.length));
+  check(seedExhibits.length === 101, "R0.2 zbirka: 101 zapisov", String(seedExhibits.length));
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 470, "R0.3 zbirka: 470 vrstic virov", String(sourceRows));
-  check(ENTITY_BY_ID.size === 92, "R0.4 registr: 92 entitet", String(ENTITY_BY_ID.size));
+  check(sourceRows === 477, "R0.3 zbirka: 477 vrstic virov", String(sourceRows));
+  check(ENTITY_BY_ID.size === 94, "R0.4 registr: 94 entitet", String(ENTITY_BY_ID.size));
 
   // Dejanska podatkovna pot (iz kode, ne iz poročila):
   const { context } = buildContext("sl", "Kaj je zračni most?");
@@ -1402,7 +1402,7 @@ section("R12 — COLLECTION QUESTIONS (brez generičnega turističnega besedila)
 {
   const { context } = buildContext("sl", "Kaj pripoveduje zbirka o Gribljah?");
   check(context.queryType === "collection" && context.collection !== undefined, "R12.1 namen ZBIRKA → pregled zbirke v kontekstu (93 zapisov, dobe)");
-  check(context.collection?.exhibitCount === 98, "R12.2 pregled nosi dejanske števce (98)");
+  check(context.collection?.exhibitCount === 101, "R12.2 pregled nosi dejanske števce (101)");
 
   // Generično turistično besedilo BREZ navedkov → degradirano.
   const a = verifyAnswer(
@@ -1650,10 +1650,10 @@ section("R16 — INVARIANTI ZBIRKE (regresija)");
 // ===========================================================================
 
 {
-  check(seedExhibits.length === 98, "R16.1 98 zapisov");
+  check(seedExhibits.length === 101, "R16.1 101 zapisov");
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 470, "R16.2 470 vrstic virov");
-  check(ENTITY_BY_ID.size === 92, "R16.3 92 entitet registra");
+  check(sourceRows === 477, "R16.2 477 vrstic virov");
+  check(ENTITY_BY_ID.size === 94, "R16.3 94 entitet registra");
   check(ENTITY_QUEUE.length >= 28, "R16.4 kuratorska vrsta ≥ 28 vprašanj", String(ENTITY_QUEUE.length));
   const withTime = seedExhibits.filter((e) => e.periodSi).length;
   check(withTime > 80, "R16.5 obdobja ostajajo zapisana (brez ISO pretvorb)", String(withTime));

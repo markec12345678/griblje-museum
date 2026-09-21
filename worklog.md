@@ -2405,3 +2405,26 @@ Stage Summary:
 - Stanje: 98 zapisov (MVG-001–098), 470 virov, 367 identitet, 54 deljenih; sitemap 99
 - Vsi testi zeleni; commit + push na GitHub + Vercel auto-deploy sledita
 - Izpuščene vrstice TL;DR: DL je zdaj enumeracijsko izčrpan do nivoja žar-mar (naročniških) odlomkov
+
+---
+Task ID: 58
+Agent: Z.ai Code (glavni)
+Task: »odlicno nadaljuj« — nadaljevanje po pushu/Vercelu: (a) preverba produkcije, (b) 12. val raziskave (razrešitev treh TO_COLLECT oseb iz vala 11), (c) vgradnja add-only (58. sklop), (d) regresija + push
+
+Work Log:
+- Produkcija preverjena: griblje-museum.vercel.app HTTP 200, OpenData že na 98/470 (auto-deploy po pushu f3bb70d) — veriga push/README/Vercel zaprta
+- 12. val — spletno iskanje po vseh treh TO_COLLECT osebah; vsaka potrjena z ≥2 neodvisnimi viri
+- PRELOM 1: John Randolph Totter polno potrjen z ETHW/IEEE (življenjepis po DOE oral history 23. 1. 1995): rojen 7. 1. 1914 Saragosa TX, umrl 1. 2. 2001; sin Matije Tottre iz Griblja + Agnes Smith iz Manchestra; Joliet 1902; Balmorhea = Balcomb+Moore+Rhea; sestra Mabel; duhovnik Brocardus Eiken (razcvetna analiza); Wyoming 1934/1935, Iowa PhD 1938, Oak Ridge
+- PRELOM 2: Dragojila Milek v celoti razrešena (OSP geslo Mateje Kambič + DL 22. 7. 2022 Grabrijan, Ljudje ob Kolpi, polno vidno besedilo): 1850–1890, oče doma iz sosednjih Gribelj, Gregorčičeva »planinska roža«, Sloves 8. 6. 1873, uglasbil Gustav Ipavec, psevdonima Petrovna/Črnogorka, 1888 Podzemelj pri ravnatelju IVANU BARLETU (že v našem registru!); razlika DL 1889 vs SB/OSP 1890 izrecno dokumentirana
+- PRELOM 3: Valentina Štrucelj v celoti razrešena (DL 12. 8. 2010 Bezek-Jakše polno vidno besedilo + Radio Odeon 4. 10. 2025 Belokranjci po svetu 13 polno besedilo + Inexhaustible + IDAGIO): sintetizator v Gribljih, ravnatelj Silvester Mihelčič, zavrnitev Akademije Ljubljana → odlika v Gradcu, bas klarinet pri Ernestu Molinarju, Glasbena šola konservatorij Bern, album Current Density s Sebastianom Rotzlerjem (Galerija Škuc/KUD Mreža), v Švici od 2007
+- Vgrajeno add-only: MVG-099 dragojila-milek (2 vira), MVG-100 john-randolph-totter (2 vira), MVG-101 valentina-strucelj (3 vira) — 470→477 virov, 367→374 identitet, deljenih 54
+- DEDUP: person:john-randolph-totter že obstajal (druzinski-clan) — NADGRADJEN v subjekt-zapisa (+čas 1914–2001, Oak Ridge/DOE) namesto podvojitve; +2 novi entiteti (dragojila-milek, valentina-strucelj) → 94; person:ivan-barle +Podzemelj 1888/dvorazrednica/Milekova; audrey-totter + matija-totter +evidenca
+- Sprehod »Iz Gribelj v svet« +3 postaje (walkCover 101); image-dimensions +3; 3 avtentične slike prenesene (NUK portret Milekove, ETHW portret Tottre, Radio Odeon Štrucelj) — ni generičnih zamenjav
+- Konstante usklajene v 7 skriptah (98→101, 470→477, 367→374, 92→94, 85→88 čas, 33 oseb→35, 99→102 sitemap); T7.9 85→88
+- Regresija: tsc 0, eslint čist, verify-i18n 930×5, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), audit-entities ✓ (94), audit-timeline-map 39 ✓/0, audit-numbers/semantika brez novih oznak; reseeda (izrecni DATABASE_URL) → OpenData 101/477 živo, nove strani 200, sitemap 102
+- Dokumentacija: research-griblje/25 + KAZALO +25 + README (sklop 58 + tabela standardov 101/101 + 78 polnih zgodb ~375 besed) + surovine raw-web-val12-*.json/html
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 477 virov, 374 identitet, 54 deljenih, 94 entitet; sitemap 102
+- Vse tri TO_COLLECT osebe iz vala 11 razrešene in vgrajene z avtentičnimi slikami; dedup vključno z entitetno plastjo (nadgradnja namesto podvojitve)
+- Commit + push na GitHub; Vercel auto-deploy sledi
