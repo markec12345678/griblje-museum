@@ -12,12 +12,12 @@
 |---|---|
 | Format | JSON (UTF-8) · IIIF Presentation 3.0 · JSON-LD (OpenData) |
 | CORS | odprt za GET |
-| Status podatkov | 101 zapis (MVG-001–101) · 482 virov · 94 entitet · 372 faz življenjepisov |
+| Status podatkov | 101 zapis (MVG-001–101) · 488 virov · 94 entitet · 372 faz življenjepisov |
 | Verzija | 2026.09 (sledi sklopom v README) |
 
 ---
 
-## Seznam poti (12)
+## Seznam poti (13)
 
 | Pot | Metoda | Namen |
 |---|---|---|
@@ -33,6 +33,7 @@
 | `/api/guide` | POST | AI vodnik po zapisu |
 | `/api/audio-guide` | GET | TTS avdio vodnik |
 | `/api/curator` | POST | AI kurator (retrieval + verifikacija) |
+| `/api/plan-visit` | POST | AI planiranje obiska (osebni načrt) |
 
 ---
 
@@ -123,10 +124,33 @@ curl -s -X POST https://griblje-museum.vercel.app/api/curator \
 Struktura odgovora: **KAJ VEMO → KAKO VEMO → VIRI → OPOMBA** z gumbi `[MVG-###]`;
 vsaka trditev preverjena proti zbirki; statusi dokazilosti izrecno navedeni.
 
+### 13) `POST /api/plan-visit` — AI planiranje obiska (63. sklop)
+Osebni kurirani načrt po zbirki: obiskovalec poda čas, interese in spremljevalce;
+**izbor postaj je determinističen** nad zbirko (točkovanje + pestrost + kronologija),
+AI pa personalizira samo pripoved — postaje ne more spremeniti (dokazni vzorec kuratorja).
+```bash
+curl -s -X POST https://griblje-museum.vercel.app/api/plan-visit \
+  -H 'Content-Type: application/json' \
+  -d '{"lang":"sl","minutes":30,"interests":["kolpa","narava"],"withKids":false}' \
+  | jq '{intro, totalMinutes, synthesized, stops: (.stops | length)}'
+```
+
+| Param | Vrsta | Opomba |
+|---|---|---|
+| `lang` | `sl\|en\|hr\|de\|it` | jezik pripovedi |
+| `minutes` | `15\|30\|60\|90` | časovni proračun (≈ 5 min/postajo, min 3, max 14) |
+| `interests` | kategorije[] | `kraj\|kolpa\|vojna\|narava\|gospodarstvo\|sege` (prazno = vse teme) |
+| `withKids` | boolean | prilagodi izbor mlajšim obiskovalcem |
+
+Odgovor: `{ intro, totalMinutes, tip, synthesized, stops[] }` — vsaka postaja nosi
+`slug · museumNo · naslovi sl/en · obdobje · kategorija · evidenceStatus · minutes · why ·
+walkId` (sprehod, ki vsebuje postajo). Zastavica `synthesized: false` pomeni odkrito,
+da AI pripovedi ni bilo in načrt nosi deterministične povzetke — načrt nikoli ne odpove.
+
 ---
 
 ## Hitrostne omejitve in predpomnilnik
-- AI poti (`guide`, `audio-guide`, `curator`): **12 zahtev / 10 minut / IP**; odgovori predpomnjeni **24 h**.
+- AI poti (`guide`, `audio-guide`, `curator`, `plan-visit`): **12 zahtev / 10 minut / IP**; odgovori predpomnjeni **24 h**.
 - Ostale poti: brez omejitev (veljajo ravni uporabe Vercel).
 - Pošteno rabo pričakujemo po duhu licence CC BY-SA 4.0 — navedite vir.
 

@@ -350,7 +350,12 @@ export function HomeView({
       <CommunitySection onNavigate={onNavigate} />
 
       {/* NAČRT OBISKA — vzorec velikih muzejev (Louvre/Met) */}
-      <PlanVisit onNavigate={onNavigate} onStartWalk={onStartWalk} />
+      <PlanVisit
+        onNavigate={onNavigate}
+        onStartWalk={onStartWalk}
+        onOpenExhibit={onOpenExhibit}
+        exhibits={exhibits}
+      />
 
       {/* TEASER DOGODKOV */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
