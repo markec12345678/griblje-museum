@@ -257,10 +257,10 @@ for (const b of OBJECT_BIOGRAPHIES) {
   }
 }
 
-if (exN === 101) ok("101/101 zapisov"); else err(`zapisov: ${exN}`);
-if (mvgN === 101) ok("101/101 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 515) ok("515 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 405) ok("405 identitet virov (17. val: +1 — Račič 2017 prek dLib)"); else err(`identitet: ${identities}`);
+if (exN === 104) ok("104/104 zapisov"); else err(`zapisov: ${exN}`);
+if (mvgN === 104) ok("104/104 muzejskih številk"); else err(`MVG: ${mvgN}`);
+if (srcN === 523) ok("523 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 412) ok("412 identitet virov (19. val: +8 — TULV 4, pajek 1, tranzit 1, DL pasuljada 1, Odeon Županič 1)"); else err(`identitet: ${identities}`);
 if (shared === 60) ok("60 deljenih virov"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);

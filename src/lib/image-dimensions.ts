@@ -11,6 +11,7 @@
 export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
   // revizija 2026-09 (2. krog): hero = izrez panorame na pas vasi; glavna slika vasi = Andrejj
   "/images/authentic/hero-griblje.jpg": { width: 2000, height: 573 },
+  "/images/authentic/poljska-voluharica.jpg": { width: 1360, height: 1123 },
   "/images/authentic/solunska-fronta.jpg": { width: 800, height: 541 },
   "/images/authentic/tobak-burley.jpg": { width: 946, height: 645 },
   "/images/authentic/pastirji-ovce.jpg": { width: 1920, height: 1280 },

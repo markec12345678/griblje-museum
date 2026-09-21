@@ -1031,6 +1031,20 @@ export const seedExhibits: SeedExhibit[] = [
         noteEn:
           "A biographical sketch in the series on Slovene ethnologists of the SEM's journal Etnolog (ISSN 0354-0316; URN:NBN:SI:doc-1K9KVK42) — the title reuses the home formula 'a citizen of the world from Griblje'; full metadata and free access via dLib.si (found in wave 17 of the dLib enumeration).",
       },
+      {
+        key: "odeon-gribeljcan-2019",
+        nameSi:
+          "Radio Odeon (12. 9. 2019): Gribeljčan, srbski minister, slovenski znanstvenik dr. Niko Županič",
+        nameEn:
+          "Radio Odeon (12 Sep 2019): A man of Griblje, a Serbian minister, a Slovene scientist — dr. Niko Županič",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/gribeljcan-srbski-minister-slovenski-znanstvenik-dr-niko-zupanic/",
+        noteSi:
+          "Najdeno v 19. valu raziskave (re-enumeracija Odeona). Naslov prinaša tretjo oznako: »srbski minister«. Opis: »Dr. Niko Županič (tudi Županič, Županić), po domače Švarski; etnolog, politik, svetovljan iz Gribelj«. DOKUMENTIRANO NESKLADJE DATUMOV: Odeon piše rojen 11. 9. 1876, umrl 1. 12. 1961 — standardni življenjepisi (SBL, Wikipedija) pa 1. 12. 1876 in 11. 9. 1961; letnici sta obrnjeni. Zgodba zapisa ostaja na standardnih datumih, neskladje je zapisano.",
+        noteEn:
+          "Found in wave 19 of the research (Odeon re-enumeration). The title adds a third epithet: 'a Serbian minister'. Description: 'Dr. Niko Županič (also Županič, Županić), known at home as Švarski; ethnologist, politician, a citizen of the world from Griblje'. DOCUMENTED DATE DISCREPANCY: Odeon gives born 11 Sep 1876, died 1 Dec 1961 — the standard biographies (SBL, Wikipedia) have 1 Dec 1876 and 11 Sep 1961; the two dates are swapped. The record's story keeps the standard dates; the discrepancy is written down.",
+      },
     ],
   },
   {
@@ -3888,6 +3902,18 @@ export const seedExhibits: SeedExhibit[] = [
           "Prispevek o pasuljadi avgusta 2019 — takrat šestnajsta izvedba; istodatumski članek arhiv.vaskanal.com »V Gribljah kuhali pasulj« (ustvarjeno 5. 8. 2019 19:28) potrjuje datum; po datumu najstarejši videodokument pasuljade med viri zapisa; arhiv.vaskanal.com je za avtomatiziran dostop blokiran (Cloudflare) — datum po iskalnem indeksu arhiva.",
         noteEn:
           "A report on the August 2019 Pasuljada — the sixteenth edition at the time; the same-dated article arhiv.vaskanal.com \"V Gribljah kuhali pasulj\" (created 5 Aug 2019 19:28) confirms the date; by date the oldest video document of the Pasuljada among the record's sources; arhiv.vaskanal.com is blocked for automated access (Cloudflare) — the date comes from the archive's search index.",
+      },
+      {
+        key: "dl-pasuljada-2025",
+        nameSi: "Dolenjski list/Svet24 (31. 8. 2025): Pasuljada v Gribljah: Ko ob Kolpi zadiši po pasulju …",
+        nameEn: "Dolenjski list/Svet24 (31 Aug 2025): Pasuljada in Griblje: when the Kolpa begins to smell of pasulj …",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://dolenjskilist.svet24.si/lokalno/dolenjska/posavje/novice/pasuljada-2025-kolpa-griblje-1844211",
+        noteSi:
+          "Najdeno v 19. valu raziskave (iskanje po dolenjskilist.svet24.si). Telo članka za avtomatiziran dostop neobvestljivo; naslov in povzetek potrjena iz meta opisa: »Kot slovo poletju in piknikom na prostem so se v Turističnem društvu Griblje že tradicionalno posvetili kuhanju pasulja.« Drugi poročevalec izvedbe 2025 (poleg Odeonovega prispevka) in prvi DL poročevalec slova po poletju.",
+        noteEn:
+          "Found in wave 19 of the research (search of dolenjskilist.svet24.si). The article body resists automated access; title and summary confirmed from the meta description: 'As a farewell to summer and to picnics in the open, the Griblje Tourist Society once again — by now traditionally — devoted itself to cooking pasulj.' The second reporter of the 2025 edition (beside the Odeon piece) and the first Dolenjski list reporter of the summer farewell.",
       },
     ],
   },
@@ -8169,6 +8195,159 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://inexhaustible-editions.com/",
         noteSi: "Založniška stran albuma Current Density (klarinet + kontrabas); »Slovenka sedaj živi in ustvarja v Švici«. Diskografija potrjena tudi na IDAGIO (app.idagio.com); oceno albuma je pisal Jan Kopač.",
         noteEn: "The label page of the album Current Density (clarinet + double bass); 'the Slovene now lives and works in Switzerland'. The discography is also confirmed on IDAGIO (app.idagio.com); the album review was written by Jan Kopač.",
+      },
+    ],
+  },
+  {
+    slug: "tula-virus-griblje",
+    museumNo: "MVG-102",
+    category: "narava",
+    addedAt: "2026-09-21",
+    titleSi: "TULV/Griblje/Ma57_01 — Tulski virus, ki za vedno nosi ime vasi",
+    titleEn: "TULV/Griblje/Ma57_01 — the Tula virus that carries the village's name forever",
+    periodSi: "2001 – 2013 · Griblje, Ljubljana, svetovne baze podatkov",
+    periodEn: "2001 – 2013 · Griblje, Ljubljana, the world's databases",
+    summarySi:
+      "Leta 2001 je bila v Gribljih ulovljena poljska voluharica, iz katere so raziskovalci Instituta za mikrobiologijo Medicinske fakultete prvič molekularno dokazali Tulski virus (TULV) v voluharjih v Sloveniji. Sev nosi ime TULV/Griblje/Ma57_01 — od 2009 zapisan v mednarodni bazi GenBank, tako da je ime vasi postalo del znanstvene nomenklature.",
+    summaryEn:
+      "In 2001 a common vole was caught in Griblje from whose lungs researchers of the Institute of Microbiology of the Medical Faculty provided the first molecular evidence of the Tula virus (TULV) in Microtus voles in Slovenia. The strain bears the name TULV/Griblje/Ma57_01 — recorded in the international GenBank database since 2009, so that the village's name has become part of scientific nomenclature.",
+    storySi:
+      "Malo je naselij, ki imajo svoje ime vpisano v mednarodne baze podatkov o virusih. Griblje imajo — in to po poti, ki je bila povsem znanstvena. Zgodba se začne leta 2001, ko je na terenu v Gribljih prišel v roke raziskovalcem primerek poljske voluharice (Microtus arvalis), malega glodalca mokrih travnikov ob Kolpi. Iz njegovih pljuč je ekipa Instituta za mikrobiologijo in imunologijo Medicinske fakultete v Ljubljani molekularno dokazala Tulski virus (Tula orthohantavirus, TULV) — virus, poimenovan po mestu Tula v Rusiji, ki pri ljudeh sicer povzroča blažjo obliko hemoragične mrzlice z renalnim sindromom, v naravi pa ga prenašajo glodavci.\n\nNajdba je bila znanstveno prelomna: prvo molekularno dokazilo o Tulskem virusu v voluharjih (rod Microtus) v Sloveniji. Oznaka seva — TULV/Griblje/Ma57_01 — sledi mednarodni konvenciji: ime najdišča, oznaka nosilca in številka živali z letom (razlaga kode je muzejska, ne izpričana iz vira). Sekvenci segmentov L in S sta bili deponirani 1. decembra 2008 v mednarodno bazo GenBank pod številkama FJ495099 in FJ495093; kot prijavitelji so zapisani M. Korva, D. Duh in T. Avšič-Županc (Univerza v Ljubljani, Inštitut za mikrobiologijo in imunologijo, Zaloška 4).\n\nLeta 2009 je v reviji Virus Research (letn. 144, št. 1–2, str. 318–322; PMID 19410611) izšel članek Korvare, Duha, Puterleta, Trilarja in Zupančeve z naslovom First molecular evidence of Tula hantavirus in Microtus voles in Slovenia — z gribeljskim sevom kot enim od ključnih dokazov. Leta 2013 pa je mednarodna ekipa v vplivni reviji Emerging Infectious Diseases (CDC, letn. 19, št. 11; DOI 10.3201/eid1911.130421) gribeljski sev uporabila v filogenetski primerjavi evropskih hantavirusov — »Griblje/Ma57/01 (FJ495099)« tako stoji med slovenskimi sevi ob Hodos, Sred ob Dravi in Sestrže v objavljeni drevesni razvejitvi.\n\nPo vzoru ribe Alburnus sava, vrste opisane iz Kolpe, ta zapis nadaljuje nit »vas v znanosti«: leta 2001 je ta vas dala ime sevu, ki ga bo svetovna literatura citirala še desetletja. Muzej išče: laboratorijski dnevnik terenske izprave 2001, točno lokacijo ulova znotraj vasi, fotografijo primerka in objavo o izpravi v lokalnem glasilu.",
+    storyEn:
+      "Few settlements have their name written into the international virus databases. Griblje does — by a path that was purely scientific. The story begins in 2001, when a common vole (Microtus arvalis), the small rodent of the wet meadows along the Kolpa, was caught in the field at Griblje. From its lungs the team of the Institute of Microbiology and Immunology of the Medical Faculty in Ljubljana proved molecularly the presence of the Tula virus (Tula orthohantavirus, TULV) — a virus named after the town of Tula in Russia, which in humans causes the milder form of haemorrhagic fever with renal syndrome and lives in nature among rodents.\n\nThe finding was a scientific breakthrough: the first molecular evidence of the Tula virus in Microtus voles in Slovenia. The strain's designation — TULV/Griblje/Ma57_01 — follows the international convention: the site's name, the host's code and the animal's number with the year (the reading of the code is the museum's, not attested by a source). The sequences of the L and S segments were deposited on 1 December 2008 into the international GenBank database under the numbers FJ495099 and FJ495093; the submitters recorded are M. Korva, D. Duh and T. Avšič-Županc (University of Ljubljana, Institute of Microbiology and Immunology, Zaloška 4).\n\nIn 2009 the journal Virus Research (vol. 144, no. 1–2, pp. 318–322; PMID 19410611) published the paper by Korva, Duh, Puterle, Trilar and Zupanc titled First molecular evidence of Tula hantavirus in Microtus voles in Slovenia — with the Griblje strain as one of the key proofs. In 2013 an international team in the influential journal Emerging Infectious Diseases (CDC, vol. 19, no. 11; DOI 10.3201/eid1911.130421) used the Griblje strain in a phylogenetic comparison of European hantaviruses — 'Griblje/Ma57/01 (FJ495099)' thus stands among the Slovene strains beside Hodos, Sred ob Dravi and Sestrže in the published branching of the tree.\n\nIn the wake of the fish Alburnus sava, the species described from the Kolpa, this record continues the thread of 'the village in science': in 2001 this village gave its name to a strain that the world's literature will cite for decades. The museum seeks: the field notebook of the 2001 expedition, the exact location of the catch within the village, a photograph of the specimen, and any report of the expedition in a local paper.",
+    evidenceStatus: "CORROBORATED",
+    image: "/images/authentic/poljska-voluharica.jpg",
+    imageCredit:
+      "Foto: Dieter TD · Wikimedia Commons · CC BY-SA 3.0 — poljska voluharica (Microtus arvalis), nosilka Tulskega virusa; slika vrste, ne gribeljskega primerka",
+    yearFrom: 2001,
+    yearTo: 2013,
+    featured: false,
+    sources: [
+      {
+        key: "korva-2009-virus-res",
+        nameSi: "Korva, M., Duh, D., Puterle, A., Trilar, T., Zupanc, T. A. (2009): First molecular evidence of Tula hantavirus in Microtus voles in Slovenia. Virus Research 144(1–2), 318–322",
+        nameEn: "Korva, M., Duh, D., Puterle, A., Trilar, T., Zupanc, T. A. (2009): First molecular evidence of Tula hantavirus in Microtus voles in Slovenia. Virus Research 144(1–2), 318–322",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19410611/",
+        noteSi:
+          "Primarna znanstvena objava (PMID 19410611), v kateri je prvič opisano molekularno dokazilo o TULV v voluharjih v Sloveniji; med sevi je gribeljski primer iz leta 2001. Odkrita v 19. valu raziskave prek reference 1 GenBank zapisa.",
+        noteEn:
+          "The primary scientific publication (PMID 19410611) that first described the molecular evidence of TULV in voles in Slovenia; among the strains is the Griblje specimen of 2001. Found in wave 19 of the research via reference 1 of the GenBank record.",
+      },
+      {
+        key: "genbank-fj495099",
+        nameSi: "GenBank/NCBI: FJ495099 (segment L) in FJ495093 (segment S) — Tula virus strain TULV/Griblje/Ma57_01",
+        nameEn: "GenBank/NCBI: FJ495099 (L segment) and FJ495093 (S segment) — Tula virus strain TULV/Griblje/Ma57_01",
+        sourceType: "spletni-vir",
+        license: "javni podatkovni zapis / public data record (INSD)",
+        url: "https://www.ncbi.nlm.nih.gov/nuccore/FJ495099",
+        noteSi:
+          "Primarni podatkovni zapis mednarodne baze nukleotidnih zaporedij (INSD/NCBI, prek E-utilities; prenesen v 19. valu). Izpis: strain TULV/Griblje/Ma57_01; isolation_source: pljuča; host: Microtus arvalis; geo_loc_name: Slovenia; collection_date: 2001; prijava 1. 12. 2008, Univerza v Ljubljani, Inštitut za mikrobiologijo in imunologijo (Korva, Duh, Avšič-Županc); reference 1 = Virus Research 144, 318–322 (2009).",
+        noteEn:
+          "The primary data record of the international nucleotide sequence database (INSD/NCBI, via E-utilities; downloaded in wave 19). The record: strain TULV/Griblje/Ma57_01; isolation_source: lungs; host: Microtus arvalis; geo_loc_name: Slovenia; collection_date: 2001; submitted 1 Dec 2008, University of Ljubljana, Institute of Microbiology and Immunology (Korva, Duh, Avšič-Županc); reference 1 = Virus Research 144, 318–322 (2009).",
+      },
+      {
+        key: "eid-2013-tula",
+        nameSi: "Zelená, H., Mrázek, J., Kuhn, T. (2013): Tula hantavirus infection in immunocompromised host, Czech Republic. Emerging Infectious Diseases 19(11) — filogenija z gribeljskim sevom",
+        nameEn: "Zelená, H., Mrázek, J., Kuhn, T. (2013): Tula hantavirus infection in immunocompromised host, Czech Republic. Emerging Infectious Diseases 19(11) — the phylogeny with the Griblje strain",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba; PMC odprti dostop)",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3837639/",
+        noteSi:
+          "Tretji, neodvisni poročevalec: članek CDC revije Emerging Infectious Diseases (DOI 10.3201/eid1911.130421; PMID 24209605) v filogenetskem drevesu našteva »Griblje/Ma57/01 (FJ495099)« ob slovenskih sevih Hodos/Ma99/99, Sred ob Dravi/Ms51/97 in Sestrze/Mag98/02. Celotno besedilo prek PubMed Central (PMC3837639), preverjeno v 19. valu.",
+        noteEn:
+          "The third, independent reporter: the article of the CDC journal Emerging Infectious Diseases (DOI 10.3201/eid1911.130421; PMID 24209605) lists 'Griblje/Ma57/01 (FJ495099)' in its phylogenetic tree beside the Slovene strains Hodos/Ma99/99, Sred ob Dravi/Ms51/97 and Sestrze/Mag98/02. Full text via PubMed Central (PMC3837639), verified in wave 19.",
+      },
+      {
+        key: "korva-2013-viruses",
+        nameSi: "Korva, M., Knap, N., Rus, K. R., Fajs, L., Grubelnik, G., Bremec, M., Knapič, T., Trilar, T., Županc, T. A. (2013): Phylogeographic diversity of pathogenic and non-pathogenic hantaviruses in Slovenia. Viruses 5(12)",
+        nameEn: "Korva, M., Knap, N., Rus, K. R., Fajs, L., Grubelnik, G., Bremec, M., Knapič, T., Trilar, T., Županc, T. A. (2013): Phylogeographic diversity of pathogenic and non-pathogenic hantaviruses in Slovenia. Viruses 5(12)",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba; MDPI odprti dostop)",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24335778/",
+        noteSi:
+          "Pregledni članek filogeografije slovenskih hantavirusov iste raziskovalne skupine (PMID 24335778); kontekstna objava, ki slovenske seve TULV — med njimi gribeljskega — umesti v evropski prostor. Vgrajen kot kontekstni vir; posamezni citat seva v telesu članka še ni preverjen (PMC celotnotekstovni indeks ne vrne besede »Griblje« — sev je upodobljen v slikah dreves).",
+        noteEn:
+          "The overview paper of the phylogeography of Slovene hantaviruses by the same research group (PMID 24335778); a contextual publication placing the Slovene TULV strains — Griblje's among them — into the European space. Included as a contextual source; the individual citation of the strain in the article body is not yet verified (the PMC full-text index does not return the word 'Griblje' — the strain is shown in the tree images).",
+      },
+    ],
+  },
+  {
+    slug: "cryptachaea-riparia",
+    museumNo: "MVG-103",
+    category: "narava",
+    addedAt: "2026-09-21",
+    titleSi: "Cryptachaea riparia — pajek, katerega prvi slovenski primerki so bili zabeleženi tudi ob ribniku pri Gribljih",
+    titleEn: "Cryptachaea riparia — the spider whose first Slovene specimens were recorded also by the pond at Griblje",
+    periodSi: "29. julij 2001 · ribnik SZ od vasi Griblje",
+    periodEn: "29 July 2001 · the pond NW of the village of Griblje",
+    summarySi:
+      "V nacionalnem registru pajkov Slovenije (Araneae Sloveniae, ZooKeys 474, 2015) je vrsta Cryptachaea riparia z zvezdico označena kot nova za slovensko favno; med primerki, s katerimi je vrsta vpisana v seznam, je tudi samec z ribnika SZ od Gribelj — 29. 7. 2001, ujel in določil arahnolog Rok Kostanjšek.",
+    summaryEn:
+      "In the national register of Slovene spiders (Araneae Sloveniae, ZooKeys 474, 2015) the species Cryptachaea riparia is marked with an asterisk as new to the Slovene fauna; among the specimens by which the species entered the list is also a male from the pond NW of Griblje — 29 July 2001, collected and determined by the arachnologist Rok Kostanjšek.",
+    storySi:
+      "Pajki so skromen vir vaške zgodovine — ampak prav ena od mikro-zgodb te vrste vpisuje Griblje v nacionalno znanstveno dokumentacijo. Leta 2015 je v odprto-dostopni reviji ZooKeys (letn. 474; DOI 10.3897/zookeys.474.8474; PMID 25632258) izšel Araneae Sloveniae, nacionalni seznam vrst pajkov, ki sta ga pripravila arahnolog Rok Kostanjšek in Matjaž Kuntner. Seznam ima jasno pravilo za zvezdice: vrste, ki jih za slovensko favno doslej niso zabeležili, so označene z zvezdico, ob njih pa so navedeni opisi najdišč, geografski podatki, datumi zbiranja ter podatki o zbiratelju in določevalcu.\n\nMed zvezdicami je tudi Cryptachaea riparia (Blackwall, 1834) — majhna kroglastnica iz družine Theridiidae, vrsta, vezana na bregove in vodna okolja, kot pravi njeno ime (riparia = obrežna). Med primerki, s katerimi je vrsta vpisana v seznam, stoji zapis: »1♂ — Pond Ribnik NW of village Griblje; 45°34,56′ N, 15°17,01′ E, 150 m n. m.; 29. 7. 2001; leg. & det. Kostanjšek R.« — samec z ribnika SZ od vasi Griblje, ujet 29. julija 2001. Koordinata 45,576 N / 15,283 E ustreza vaškemu ribniku na zgornjem koncu vasi — istemu ribniku, ki ga zbirka pozna iz lastnega zapisa (MVG-016).\n\nGribeljski primerek je med najzgodnejšimi dokumentiranimi primerki vrste v seznamu — starejši je samo cerkniški iz 30. 7. 2000; gribeljski je zato eden izmed prvih primerkov, s katerimi je Cryptachaea riparia postala del slovenske favne. Zgodba ima tudi poetično simetrijo: vrsta obrežnih pajkov je prišla v nacionalni seznam z brega ribnika, ki vodi vodo vasi — in z očmi muzeja je to prvi zapis o nevretenčarju iz same vasi. Muzej išče: fotografijo vrste (vir je seznam brez slik), laboratorijski dnevnik zbiratelja in morebitne starejše zapise vrste iz arhiva Polenčevih določitev.",
+    storyEn:
+      "Spiders are a modest source of village history — yet one of the micro-stories of this kind writes Griblje into the national scientific documentation. In 2015 the open-access journal ZooKeys (vol. 474; DOI 10.3897/zookeys.474.8474; PMID 25632258) published Araneae Sloveniae, the national checklist of spider species prepared by the arachnologist Rok Kostanjšek and Matjaž Kuntner. The checklist has a clear rule for asterisks: species not yet recorded for the Slovene fauna are marked with an asterisk, accompanied by descriptions of the collecting sites, geographic data, dates of collection, and the data of the collector and the determining authority.\n\nAmong the asterisks is Cryptachaea riparia (Blackwall, 1834) — a small comb-footed spider of the family Theridiidae, a species bound to banks and watery places, as its name says (riparia = of the riverbank). Among the specimens by which the species entered the list stands the entry: '1♂ — Pond Ribnik NW of village Griblje; 45°34.56′ N, 15°17.01′ E, 150 m a.s.l.; 29.7.2001; leg. & det. Kostanjšek R.' — a male from the pond north-west of the village of Griblje, caught on 29 July 2001. The coordinate 45.576 N / 15.283 E corresponds to the village pond at the upper end of the village — the same pond the collection knows from its own record (MVG-016).\n\nThe Griblje specimen is among the earliest documented specimens of the species in the list — only the Cerknica one of 30 July 2000 is older; the Griblje one is thus among the first specimens by which Cryptachaea riparia became part of the Slovene fauna. The story has a poetic symmetry too: a species of bank spiders entered the national list from the bank of the pond that leads the village its water — and with the museum's eyes this is the first record of an invertebrate from the village itself. The museum seeks: a photograph of the species (the source is a checklist without images), the collector's laboratory notebook, and any older records of the species from the archive of Polenec's determinations.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/goranja-lokva.jpg",
+    imageCredit:
+      "Foto: Wikimedia Commons (aerofotografija ribnika na zgornjem koncu vasi) — ribnik pri Gribljih, najdišče primerka; slika lokacije, ne vrste; delitev slike z zapisom o ribniku je namerna",
+    yearFrom: 2001,
+    yearTo: 2015,
+    featured: false,
+    sources: [
+      {
+        key: "zookeys-474-araneae",
+        nameSi: "Kostanjšek, R., Kuntner, M. (2015): Araneae Sloveniae: a national spider species checklist. ZooKeys 474, 1–205",
+        nameEn: "Kostanjšek, R., Kuntner, M. (2015): Araneae Sloveniae: a national spider species checklist. ZooKeys 474, 1–205",
+        sourceType: "spletni-vir",
+        license: "CC BY (Pensoft/PMC odprti dostop)",
+        url: "https://doi.org/10.3897/zookeys.474.8474",
+        noteSi:
+          "Nacionalni registr pajkov Slovenije (PMID 25632258; PMC4304008; CC BY). Vrsta Cryptachaea riparia z zvezdico (nova za slovensko favno) s podatkom o primerku: 1♂, Pond Ribnik NW of village Griblje, 45°34,56′N 15°17,01′E, 150 m, 29. 7. 2001, leg. & det. Kostanjšek R. Celotno besedilo (XML prek E-utilities) preverjeno v 19. valu; legenda zvezdice: »The new, previously unrecorded species in the list are marked by an asterisk and followed by a description of the collecting site …«",
+        noteEn:
+          "The national register of Slovene spiders (PMID 25632258; PMC4304008; CC BY). The species Cryptachaea riparia with an asterisk (new to the Slovene fauna) with the specimen's data: 1♂, Pond Ribnik NW of village Griblje, 45°34.56′N 15°17.01′E, 150 m, 29 Jul 2001, leg. & det. Kostanjšek R. The full text (XML via E-utilities) verified in wave 19; the legend of the asterisk: 'The new, previously unrecorded species in the list are marked by an asterisk and followed by a description of the collecting site …'",
+      },
+    ],
+  },
+  {
+    slug: "tranzit-2025",
+    museumNo: "MVG-104",
+    category: "kraj",
+    addedAt: "2026-09-21",
+    titleSi: "Poletje tranzita — ko je obvoz peljal skozi vas",
+    titleEn: "The summer of transit — when the detour ran through the village",
+    periodSi: "19. maj → poletje 2025 · lokalna cesta skozi Griblje",
+    periodEn: "19 May → the summer of 2025 · the local road through Griblje",
+    summarySi:
+      "Od 19. maja 2025 so bili vaščani Gribelj izpostavljeni okrepljenemu tranzitnemu prometu: vozniki kljub uradnemu obvozu skozi Dolenjce — zaradi rekonstrukcije mostu čez Lahinjo v Gradcu — množično uporabljali lokalno cesto skozi vas. Dolenjski list je zapisal: »Na cesti skozi Griblje nevarnost preži na vsakem koraku.«",
+    summaryEn:
+      "From 19 May 2025 the villagers of Griblje were exposed to increased transit traffic: despite the official detour through Dolenjce — because of the reconstruction of the bridge over the Lahinja at Gradac — drivers used the local road through the village en masse. The Dolenjski list wrote: 'On the road through Griblje danger lurks at every step.'",
+    storySi:
+      "Vas ob Kolpi je bila vse do obvoza tranzitna cesta — in ko si je poletje 2025 glavno pot vzelo za popravilo, se je stari vzorec za nekaj mesecev vrnil. 19. maja 2025 se je začela rekonstrukcija mostu čez Lahinjo v Gradcu; uradni obvoz je vodil skozi Dolenjce, vozniki pa so si množično skrajšali pot čez lokalno cesto skozi Griblje. Vas, ki ji je zadnja desetletja mir vrnil pešce in kolesarje, je za eno poletje znova postala prevozna povezava.\n\nDolenjski list je 11. julija 2025 objavil članek z naslovom »Na cesti skozi Griblje nevarnost preži na vsakem koraku«; meta opis članka stanje povzame: »Od 19. maja so vaščani Gribelj izpostavljeni okrepljenemu tranzitnemu prometu, saj vozniki kljub uradnemu obvozu skozi Dolenjce zaradi rekonstrukcije mostu čez reko Lahinjo v Gradcu množično uporabljajo lokalno cesto skozi njihovo naselje.« Zgodba je mikro-zgodovina vaške ceste: promet, ki ga je vaški spomin vedno poznal kot senca ob obvozu, se je vrnil kot vsakdanji zvok pod okni.\n\nZapis ta mesec zgodovine vasi dokumentira iz muzejske perspektive: ni to zgodba o gradnji, ampak o vsakdanjem odzivu vasi na promet, ki je prišel brez povabila. Je tudi opomin, da sta obvoz in most v Gradcu del istega vaškega prostora — »mimo vasi« pomeni »skoznjo«, takoj ko glavna pot odpove. Muzej išče: fotografije prometa poleti 2025, izjave KS Griblje ali Turističnega društva, datum odprtja rekonstruiranega mostu in morebitne peticije vaščanov.",
+    storyEn:
+      "The village on the Kolpa was a transit road until the bypass came — and when the summer of 2025 took the main road away for repairs, the old pattern returned for a few months. On 19 May 2025 the reconstruction of the bridge over the Lahinja at Gradac began; the official detour led through Dolenjce, but drivers shortened their path en masse over the local road through Griblje. The village, to which the last decades of quiet had returned its pedestrians and cyclists, became once more a traffic link for one summer.\n\nOn 11 July 2025 the Dolenjski list published a piece titled 'Na cesti skozi Griblje nevarnost preži na vsakem koraku' — On the road through Griblje danger lurks at every step; the article's meta description sums up the state: 'From 19 May the villagers of Griblje have been exposed to increased transit traffic, as drivers, despite the official detour through Dolenjce because of the reconstruction of the bridge over the Lahinja at Gradac, use the local road through their settlement en masse.' The story is the micro-history of the village road: the traffic that the village's memory always knew as the shadow beside the bypass returned as an everyday sound under the windows.\n\nThe record documents this chapter of the village's history from the museum's perspective: it is not a story of construction, but of the village's everyday response to traffic that arrived uninvited. It is also a reminder that the bypass and the bridge at Gradac belong to the same village space — 'past the village' means 'through it' the moment the main road fails. The museum seeks: photographs of the traffic in the summer of 2025, statements by the Griblje local community or the Tourist Society, the date of the reconstructed bridge's opening, and any petitions of the villagers.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/zaselki-griblje.jpg",
+    imageCredit:
+      "Foto: Eleassar · Wikimedia Commons · CC BY-SA — panorama doline z vaško cesto; delitev slike z zapisom o zaselkih je namerna (isti prostor)",
+    yearFrom: 2025,
+    yearTo: 2025,
+    featured: false,
+    sources: [
+      {
+        key: "dl-tranzit-2025",
+        nameSi: "Dolenjski list/Svet24 (11. 7. 2025): Na cesti skozi Griblje nevarnost preži na vsakem koraku",
+        nameEn: "Dolenjski list/Svet24 (11 Jul 2025): On the road through Griblje danger lurks at every step",
+        sourceType: "spletni-vir",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://dolenjskilist.svet24.si/lokalno/dolenjska/novice/griblje-tranzit-zaprt-most-1832442",
+        noteSi:
+          "Najdeno v 19. valu raziskave. Telo članka za avtomatiziran dostop neobvestljivo; meta opis (og:description) citiran v celoti: »Od 19. maja so vaščani Gribelj izpostavljeni okrepljenemu tranzitnemu prometu, saj vozniki kljub uradnemu obvozu skozi Dolenjce zaradi rekonstrukcije mostu čez reko Lahinjo v Gradcu množično uporabljajo lokalno cesto skozi njihovo naselje.« Naslov in datum potrjena iz strani članka (title; datePublished 2025-07-11).",
+        noteEn:
+          "Found in wave 19 of the research. The article body resists automated access; the meta description (og:description) quoted in full: 'From 19 May the villagers of Griblje have been exposed to increased transit traffic, as drivers, despite the official detour through Dolenjce because of the reconstruction of the bridge over the Lahinja at Gradac, use the local road through their settlement en masse.' Title and date confirmed from the article page (title; datePublished 2025-07-11).",
       },
     ],
   },
