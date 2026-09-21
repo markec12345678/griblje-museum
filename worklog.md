@@ -2449,3 +2449,24 @@ Stage Summary:
 - Stanje: 101 zapisov (MVG-001–101), 482 virov, 379 identitet, 54 deljenih, 94 entitet; sitemap 102
 - MVG-084 jurjevo: avtentična gribeljska fotografija 2023 namesto ilustracije 1908; serija obhodov 2016–2026 dokumentirana z 5 viri; preostali išče: samo posnetek jurjevske pesmi
 - Vsi testi zeleni; commit + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 60
+Agent: Z.ai Code (glavni)
+Task: »odlicno nadaljuj po svetovnih digitalnih muzejih da smo boljsi od njih« — zaprtje verige push/README/Vercel + benchmark svetovnih digitalnih muzejev (Rijksmuseum, Smithsonian, Nasjonalmuseet, DigitaltMuseum, Google Arts & Culture, AI vodniki, IIIF, ekomuzeji) + vgradnja API dokumentacije
+
+Work Log:
+- Priprava: veriga iz prejšnjega naročila potrjena zaprta — tsc 0 (import audit-semantics.ts že popravljen), README že sinhroniziran (sklop 59, 482), GitHub main usklajen (0 naprej/nazaj), Vercel produkcija živo (HTTP 200, OpenData 101/482, sitemap 200)
+- Raziskava: 9 spletnih poizvedb (web-search CLI) — s1 najboljše digitalne muzeje 2025/2026, s2 Rijksmuseum Collection Online (LOD+AI, IIIF anotacije, odprti API), s3 Smithsonian Open Access (2,8 M CC0 2020 → ~828 TB/9,1 M datotek, api.data.gov), s4 Nasjonalmuseet (Årets museum 2025), s5 DigitaltMuseum (4–5,5 M predmetov/286 muzejev NO+SE), s6 Google Arts & Culture (2.000+ muzejev, 500+ virtualnih ogledov, Museum Views), s7 AI muzejski vodniki (musa.guide kurirana tura + živi govorjeni odgovori; zapt.tech personalizirane rute; museumnext ChatGPT 24/7; ACM 5/2025 GenAI vodniki; AAM 9/2025 obiskovalci planirajo z AI), s8 IIIF (Presentation 3.0 anotacije, georeference extension), s9 ekomuzeji/participacija (Springer 2025 digitalna doba, tandfonline 2026 državljanska veda, museum-id aktivna participacija); surovine: research-griblje/raw-web-bench-2026-10/ (9 JSON)
+- Analiza: preverjeno stanje kodebe proti benchmarku (17 pogledov, 12 API poti, walk-ui sprehodi z globokimi povezavami, IIIF AnnotationPage, OpenData CC BY-SA 4.0, about-view OpenData blok) → ugotovitve: prekašamo na globini na zapis, statusih dokazilosti, AI kuratorju s per-claim verifikacijo, rdeči ekipi, 5 jezikih, odprtosti podatkov na prebivalca; vrzeli: API dokumentacija (Rijks standard), IIIF anotacije življenjepisov, avtentične 360° panorame, planiranje obiska z AI
+- Vgrajeno: docs/API.md (nova javna dokumentacija vseh 12 poti: metode, parametri, curl primeri, hitrostne omejitve 12/10min/IP, predpomnilnik 24h, izrecna dokumentirana odločitev CC BY-SA 4.0 namesto CC0 — ohranitev avtorstva vaščanov; integracija Mirador/UV, JSON-LD, sitemap, Wikidata sameAs) — zapira vrzel #1 po Rijksmuseum standardu
+- README: nov razdelek »Benchmark: svetovni digitalni muzeji« (tabela prekašanj + vrzeli + povezavi docs/API.md in research-griblje/27) — strateško jedro: ne posnemati slepo velikane, braniti najgloblji dokumentirani zapis za eno vas
+- Dokumentacija: research-griblje/27-benchmark-svetovni-digitalni-muzeji.md (8 razdelkov, 17 virov) + KAZALO +27
+- Regresija: tsc 0, verify-i18n 930×5, test-entities 100 ✓/0, test-ai-curator 214 ✓/0, test-timeline-map 72 ✓/0, red-team 157 ✓/0 (GAP 24, artefakt shranjen)
+- Commit ffedecb + push origin main uspešen (8734353..ffedecb); Vercel auto-deploy sledi
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 482 virov, 379 identitet, 94 entitet; 12 API poti zdaj javno dokumentirane; sitemap 102
+- Benchmark ugotovitev: po kuratorski globini, dokazilnosti in preverljivosti AI odgovorov je muzej na svetovni ravni ali nad njo; identifikirane 4 vrzeli z načrtom (1 zaprta, 3 naslednji sklopi)
+- Nova javna dokumentacija docs/API.md; README benchmark razdelek; research-griblje/27 + raw-web-bench-2026-10/
+- Commit + push na GitHub; Vercel auto-deploy sledi
