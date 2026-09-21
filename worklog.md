@@ -2617,3 +2617,26 @@ Stage Summary:
 - dLib za Griblje enumeracijsko izčrpan na nivoju javnega indeksa: Šopek prvič z URL-jem in kanonsko citacijo (plus dokumentirano identitetno neskladje avtoritet), Županič dobi SEM-ovo biografsko skico 2017 kot nov vir
 - Metodološka dediščina: /DC/JSON = brezsejni API dLiba za vse bodoče citate; pod sejo (stari tiski, matice) = izven-peskovniški val
 - Vsi testi zeleni; commit + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 67
+Agent: Z.ai Code (glavni)
+Task: "odlicno nadaljuj" — 18. val raziskave: osvojitev meja peskovnika (štiri orodja), identifikacija novih virov (Belokranjec, Vaš kanal, Kropej/Fabečeva), falsifikacije, dokumentacija; ničelna vgradnja po dokazni disciplini
+
+Work Log:
+- Priprava: veriga potrjena — sklopi 61–66 pushani (main @ 2942eac), vrzeli #2/#4 zaprte, dev :3000 živ (OpenData 101/515); ugotovljeno, da je pridobitveno poročilo zastarelo (vrzel #2 že zaprta v 61. sklopu)
+- ROV 1 (dLib prek pravega brskalnika): agent-browser nameščen + seja živa; dLib.si = CDP Page.navigate timeout tudi prek Playwright s pravim UA → IP/TLS blokada TRETJIČ potrjena (meja, ne bot-obzidje); Mapire.eu = 403 tudi Playwright (AWS prestreza headless); eZKN/SAAS/Geopedia ostajajo 000 (gov.si omrežje)
+- ROV 2 (JS-challenge domene): roz.si, belokranjec.si, arhiv.vaskanal.com, vaskanal.com, jurjevanje.si = isti openresty challenge »One moment, please…« (~12 kB); curl = challenge vedno; Playwright + pravi UA + 2× reload = NE prebije (ni piškotka — server-side fingerprint); JINA prebije VSE (200)
+- ROV 3 (Belokranjec): revija iz Gradca (Andreja Milavec), brezplačnik od dec. 1997, 9.300 gospodinjstev Črnomelj/Metlika/Semič, arhiv 24 izdaj 2024–2026, vsebine izključno v PDF (50,6 MB za 7-8/2026); JINA na PDF = prazen embedder (potrjeno val 17); Googlov indeks izdaje 7-8/XXIX (7–8/2026) omenja »vsaka vas svoj pevski zbor, na primer Griblje, Adlešiči …« — kontekst ne citiren brez PDF-a → NE vgrajeno
+- ROV 4 (TV Vaš kanal): arhiv Joomla (RokAjaxSearch = AJAX, JINA dobi samo lupino) + vaskanal.com WP (DestinySearchConfig); WP REST `wp-json/wp/v2/search?search=griblje` prek JINA = deluje (10 zadetkov, ampak per_page/page obrezana); Google fragment 8. 2. 2017 »GRIBLJE — Vaščani Gribelj … zadovoljni … tudi hiše v Dolnjih Gribljah« = neidentificiran članek o kanalizaciji/vodovodu ~2017 → NE vgrajeno (fragment brez URL-a)
+- ROV 5 (Kropej/Fabečeva): angl. izdaja ZRC 2012 omenja staro Fabečko iz Gribelj (»her grandmother's grandmother was a Greek woman. Kolpa was then a stream…«) = staroselska pripoved starejša od 1468; academia.edu = 403 (curl + search URL), slovenski izvirnik na SPA založbe brez iskanja, CEEOL zadetek = samo recenzija (Hiiemäe 2013) → NE vgrajeno
+- FALSIFIKACIJE: (1) Odeon protokol 11. 12. 2025 »obnova ceste Črnomelj–Griblje« = fragment občinskega sveta brez članka (Odeon iskalni arhiv metode val 15 ga ne vrača); (2) »Namenu predali kanalizacijo« = Krška vas 2026 / Volavče 2010, NE Griblje — Googlov agregiran snippet zlije sosednja članka arhiva!; (3) roz.si = Koroški Rož (SPD, Avstrija) — identiteta domene izrecno ločena; (4) RožBRIN (roznbrin.si) = mrtva domena; (5) Andričin projekt IZA2 = arhiviran (projektne strani ni več; muzej ima The Holocene 2007 + Opera 21 2011)
+- Dedup/sanitarna preverba: Kamra, Odeon (val 15 metoda), SEM, Commons, dLib-indeks = izčrpni statusi potrjeni, ni novih predmetov; dev :3000 OpenData 101/515 skladno s sklopom 66
+- Odločitev: NIČELNA vgradnja — vsi trije novi viri identificirani, citatni konteksti pa peskovniško nedostopni (PDF/AJAX/403); muzejska disciplina: vgrajen samo dovolj dostopen vir; nova vrstniška vrsta izven-peskovniških valov: Belokranjec PDF → Vaš kanal arhiv → Kropej 2012
+- Dokumentacija: research-griblje/32-val18-osvojitev-meja-in-novi-viri.md (7 sekcij: metoda 4 orodij, 3 novi viri, 5 falsifikacij, poučne epizode, stanje, vrstniška vrsta) + KAZALO +32 + README (67. sklop) + worklog; surovine raw-web-val18-2026-10/ (va-home/va-search/va-griblje/vn-* — vaskanal; bk-home/bk-78-2026 — Belokranjec; roz2/p01 — roz.si; w01–w-iza2 — web_search; odeon-cesta/člani — Odeon; iza-* — IZA2; isn-* — ISN)
+
+Stage Summary:
+- Stanje NESPREMENJENO po načrtu: 101 zapisov (MVG-001–101), 515 virov, 405 identitet, 60 deljenih, 94 entitet; sitemap 102; i18n 946 × 5; 13 API poti
+- Metodološka dediščina vala 18: (1) JS-challenge openresty prestane samo JINA (Playwright tudi z pravim UA ne); (2) JINA obrežuje REST parametre — paginacija ne gre prek page_readerja; (3) Googlov snippet na arhivski strani agregira sosednje članki — točnost zahteva točen URL; (4) CDP timeout = globlja blokada kot bot-obzidje
+- Trije novi viri čakajo na izven-peskovniško razrešitev: Belokranjec (9.300 gospodinjstev od 1997 — največji neenumeriran lokalni vir), Vaš kanal arhiv (30.000+ novic, vodovod ~2017), Kropej 2012 (Fabečeva — staroselska pripoved)
+- Benchmark: ostaja samo vrzel #3 (360° panorame od vaščanov, TO_COLLECT)
