@@ -2428,3 +2428,24 @@ Stage Summary:
 - Stanje: 101 zapisov (MVG-001–101), 477 virov, 374 identitet, 54 deljenih, 94 entitet; sitemap 102
 - Vse tri TO_COLLECT osebe iz vala 11 razrešene in vgrajene z avtentičnimi slikami; dedup vključno z entitetno plastjo (nadgradnja namesto podvojitve)
 - Commit + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 59
+Agent: Z.ai Code (glavni)
+Task: »odlicno nadlajuj« — 13. val raziskave (Facebook/YouTube/RTV/šolska spletišča): jurjevo-v-gribljah — avtentična gribeljska fotografija + dokumentirana serija obhodov 2016–2026; vgradnja add-only, regresija, push
+
+Work Log:
+- Priprava: veriga iz prejšnjega naročila potrjena zaprta — GitHub main usklajen (0 naprej/0 nazaj, 58. sklop), tsc 0, Vercel produkcija živo (HTTP 200, OpenData 101/477)
+- 13. val — spletno iskanje (10 poizvedb): Facebook (site:facebook.com, skupine, albumi), YouTube, RTV SLO, TD/ŠD Griblje, jurjevo PŠ Griblje, PM Metlika, video.arnes.si, crnomelj.si rally
+- PRELOM: OŠ Loka spletišče (oba hosta) — iskalnik »Zeleni Jurij Griblje« → 5 člankov o jurjevu na PŠ Griblje (2016/2023/2024/2025/2026) s polnimi besedili + URL-ji galerij; letni obhodi: 2016 »Tudi letos« (obuditev starejša od 2016; brezove veje pripeljal Ciril Totter, oče učencev; kolednica), 2023 kulturni dan (24. 4.), 2024 (26. 4.), 2025 v nošah (24. 4.), 2026 +vseslovensko petje (24. 4.) — neprekinjena letna šega; rešitev iskanega dela MVG-084 (»fotografija Zelenega Jurija na poti po vasi«)
+- Slike: 6 kandidatov preneseno + vizualna preverba; izbrana IMG_20230424_104030 (900×406): Zeleni Jurij v brezju na vaški cesti, otroci z vejicami, obraz v brezju (dokumentarna + zasebno prijazna izbira)
+- Vgrajeno add-only: MVG-084 glavna slika zamenjana — ilustrativni Zeleni Jurij 1908 (druga vas, Wikimedia) → /images/authentic/zeleni-jurij-griblje-2023.jpg (PŠ Griblje/OŠ Loka, javna objava šole) + image-dimensions; 1908 ostaja vir z opombo »zgodovinska primerjava«; +5 virov os-loka-jurjevo-2016/2023/2024/2025/2026 (477→482, identitet 374→379); zgodbi SL/EN razširjeni s kronologijo 2016–2026; povzetka posodobljena (dokumentirano 2016–2026); išče ožje: posnetek pesmi
+- DEDUP: OŠ Loka jurjevo URL-ji ≠ obstoječi viri; Odeon jurjevo 2025 = 2. poročevalec istega dogodka (brez ločenega vira); Zeleni Jurij NE entiteta (pravilo šegovih figur); Ciril Totter — po vlogi šole, istovetnost s tekačem MVG-061 NI dokazana (brez trditve); TD/ŠD/nogomet/rally — že v bazi; Facebook/YouTube/RTV/video.arnes.si — brez nove overljive gribeljske vsebine
+- Konstante usklajene: 477→482 (test-timeline-map, test-entities, audit-entities, test-curator-red-team, audit-timeline-map), 374→379 (3 skripte), stari OpenData komentar 470→482
+- Regresija (živi :3000): tsc 0, eslint čist, verify-i18n 930×5, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24), audit-entities ✓ (94), audit-timeline-map 39 ✓/0, audit-numbers/semantika brez novih oznak za jurjevo; reseeda (izrecni DATABASE_URL file:/home/z/griblje-museum/db/custom.db) → OpenData 101/482 živo, MVG-084 = 8 virov + nova slika
+- Dokumentacija: research-griblje/26 + KAZALO +26 + README (sklop 59 + števci 482) + surovine raw-web-val13-2026-10/ + slike/val13-jurjevo/
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 482 virov, 379 identitet, 54 deljenih, 94 entitet; sitemap 102
+- MVG-084 jurjevo: avtentična gribeljska fotografija 2023 namesto ilustracije 1908; serija obhodov 2016–2026 dokumentirana z 5 viri; preostali išče: samo posnetek jurjevske pesmi
+- Vsi testi zeleni; commit + push na GitHub; Vercel auto-deploy sledi

@@ -115,6 +115,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/griblje-ravnina.jpg": { width: 1280, height: 857 },
   "/images/authentic/zeleni-jurij-1908.jpg": { width: 1280, height: 620 },
 
+  // 59. sklop: jurjevo — Zeleni Jurij na poti po gribeljski vasi, 24. 4. 2023 (PŠ Griblje / OŠ Loka)
+  "/images/authentic/zeleni-jurij-griblje-2023.jpg": { width: 900, height: 406 },
+
   // 25. sklop: Konrad Barle — čebelnjak na Vrhu pri Komatarju (Boris Orel, SEM, 1952, javna last)
   "/images/authentic/cebnjak-orel-1952.jpg": { width: 1033, height: 1054 },
 

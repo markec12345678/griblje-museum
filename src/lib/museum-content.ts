@@ -6626,17 +6626,17 @@ export const seedExhibits: SeedExhibit[] = [
     periodSi: "24. april · šega, ki jo nosi podružnična šola",
     periodEn: "24 April · a custom carried by the branch school",
     summarySi:
-      "Dan pred jurjevim gribeljska šola uredi okolico, posadi žbul in splete koš iz zelenih brezovih vej; 24. aprila po vasi kroži Zeleni Jurij — deček v košu — in poje pesem, ki se je ohranila v gribeljskem narečju.",
+      "Dan pred jurjevim gribeljska šola uredi okolico, posadi žbul in splete koš iz zelenih brezovih vej; 24. aprila po vasi kroži Zeleni Jurij — deček v košu — in poje pesem, ki se je ohranila v gribeljskem narečju; šega, ki jo šola z zapisom obudi vsako leto (dokumentirano 2016–2026).",
     summaryEn:
-      "On the eve of St. George's day the Griblje school tidies its grounds, plants the žbul and weaves a basket of green birch; on 24 April Green George — a boy inside the basket — walks the village, and the song has survived in the Griblje dialect.",
+      "On the eve of St. George's day the Griblje school tidies its grounds, plants the žbul and weaves a basket of green birch; on 24 April Green George — a boy inside the basket — walks the village, and the song has survived in the Griblje dialect; a custom the school revives with its record year after year (documented 2016–2026).",
     storySi:
-      "Jurjevo je v Beli krajini nekdaj pomenilo eno samo stvar: prvi izgon živine na pašo. Pastirji so ga šteli za svoj praznik — po njem so se začela pašniška leta, ob njem so proslavili pomlad in se poslovili od zime. V Gribljah je ta spomin prevzela šola in ga nosila naprej na najlepši mogoč način: z živimi koraki.\n\nDan pred jurjevem se na podružnični šoli zbere cela vaška družina odraščanja: učenci, starši, stari starši, bivši in bodoči učenci. Skupaj poberejo odpadke, pograbijo listje, uredijo igrala in vrt — ter na gredico posadijo avtohtoni gribeljski žbul. Nato spletejo koš: zeleni koš iz brezovih vej, v katerega bo naslednji dan »oblečen« deček.\n\nNa dan sv. Jurija, 24. aprila, se sprevod odpravi po vasi, od hiše do hiše, od vrat do vrat. Pred vsako hišo zapojejo jurjevo pesem — in gribeljska različica se je ohranila z vsemi svojimi besedami: »Prošel je prošel pisani vuzem, došel je došel zeleni Jure. Donesel je donesel, pedenj dugu travicu, lakat dugu mladicu. Dajte mu dajte! Jurja darovajte! Dajte mu pogače, da mu noga poskače! Dajte mu vina, da ga ne bu zima! … Dajte mu groš, da vam dojde još!« Vuzem — velikonočna nedelja v belokranjskem narečju — je torej minila, zeleni Jure je prišel; pesem prosi zase vse, od pogač do groša. Če se vrata odpirajo počasi, pride na vrsto še drugi glas: »Haj, haj, haj! Buli skoro kaj?«\n\nOb vsaki hiši zataknejo na vrata ali okno brezovo vejico — naj prinese družini dobro letino in blagostanje — vaščani pa sprevod, kot se spodobi, obdarijo z jajci in sladkarijami. Slika, ki drži ta zapis, je fotografija sprevoda Zelenega Jurija iz leta 1908: ista šega, druga vas, druga doba — v Gribljah pa živi še danes. Muzej išče: posnetek gribeljske jurjevske pesmi in fotografijo Zelenega Jurija na poti po vasi.",
+      "Jurjevo je v Beli krajini nekdaj pomenilo eno samo stvar: prvi izgon živine na pašo. Pastirji so ga šteli za svoj praznik — po njem so se začela pašniška leta, ob njem so proslavili pomlad in se poslovili od zime. V Gribljah je ta spomin prevzela šola in ga nosila naprej na najlepši mogoč način: z živimi koraki.\n\nDan pred jurjevem se na podružnični šoli zbere cela vaška družina odraščanja: učenci, starši, stari starši, bivši in bodoči učenci. Skupaj poberejo odpadke, pograbijo listje, uredijo igrala in vrt — ter na gredico posadijo avtohtoni gribeljski žbul. Nato spletejo koš: zeleni koš iz brezovih vej, v katerega bo naslednji dan »oblečen« deček.\n\nNa dan sv. Jurija, 24. aprila, se sprevod odpravi po vasi, od hiše do hiše, od vrat do vrat. Pred vsako hišo zapojejo jurjevo pesem — in gribeljska različica se je ohranila z vsemi svojimi besedami: »Prošel je prošel pisani vuzem, došel je došel zeleni Jure. Donesel je donesel, pedenj dugu travicu, lakat dugu mladicu. Dajte mu dajte! Jurja darovajte! Dajte mu pogače, da mu noga poskače! Dajte mu vina, da ga ne bu zima! … Dajte mu groš, da vam dojde još!« Vuzem — velikonočna nedelja v belokranjskem narečju — je torej minila, zeleni Jure je prišel; pesem prosi zase vse, od pogač do groša. Če se vrata odpirajo počasi, pride na vrsto še drugi glas: »Haj, haj, haj! Buli skoro kaj?«\n\nOb vsaki hiši zataknejo na vrata ali okno brezovo vejico — naj prinese družini dobro letino in blagostanje — vaščani pa sprevod, kot se spodobi, obdarijo z jajci in sladkarijami. Šega ni spomin, ampak urnik: spletišče šole beleži obhode vsako leto. Zapis iz aprila 2016 se začne z »Tudi letos smo obudili ljudski praznik Jurjevo« — brezove veje za koš je pripeljal Ciril Totter, oče takratnih učencev, sprevod pa odšel po vasi s kolednico »Prošel je prošel, pisani vuzem, došel je došel, zeleni Jure«. 24. aprila 2023 je bil na šoli kulturni dan Zeleni Jure: koš iz brezovih vejic, šopki, učenci kot Zeleni Jurij in petje pri bližnjih hišah; 26. aprila 2024 šego ponovijo; 24. aprila 2025 hodijo po vasi že v nošah — z Zelenim Jurijem iz svežih brezovih vejic in polno košaro sladkarij; 24. aprila 2026 pa se jurjevo poveže še z vseslovenskim petjem. Slika, ki drži ta zapis, je od leta 2023 gribeljska: fotografija z 24. aprila 2023 — Zeleni Jurij, oblečen v brezje, na poti po vaški cesti, za njim otroci z vejicami. Zgodovinsko globino šege pa drži tudi fotografija sprevoda iz leta 1908 iz druge belokranjske vasi (vir). Muzej še išče: posnetek gribeljske jurjevske pesmi.",
     storyEn:
-      "In Bela krajina Jurjevo used to mean one thing only: the first driving of the cattle to pasture. The shepherds counted it their feast — with it the grazing years began, around it spring was welcomed and winter bidden farewell. In Griblje the school took over this memory and carried it on in the most living way possible: with walking feet.\n\nOn the eve of the feast the whole growing family of the village gathers at the branch school: pupils, parents, grandparents, former and future pupils. Together they pick up litter, rake the leaves, mend the playthings and the garden — and plant the autochthonous Griblje žbul on the bed. Then they weave the basket: a green basket of birch branches, into which a boy will be 'dressed' the next day.\n\nOn St. George's day, 24 April, the procession sets out through the village, house to house, door to door. Before every house they sing the jurjevo song — and the Griblje version has survived with all its words: 'Prošel je prošel pisani vuzem, došel je došel zeleni Jure. Donesel je donesel, pedenj dugu travicu, lakat dugu mladicu. Dajte mu dajte! Jurja darovajte! Dajte mu pogače, da mu noga poskače! Dajte mu vina, da ga ne bu zima! … Dajte mu groš, da vam dojde još!' Vuzem — Easter in the Bela krajina dialect — has passed, green George has come; the song asks for everything, from flatbread to small coin. And if a door opens slowly, a second voice follows: 'Haj, haj, haj! Buli skoro kaj?'\n\nAt every house a birch twig is tucked over the door or window — to bring the family a good harvest and well-being — and the villagers, as is right, gift the procession eggs and sweets. The image holding this record is a photograph of a Green George procession from 1908: the same custom, another village, another age — in Griblje it lives on today. The museum seeks: a recording of the Griblje jurjevo song and a photograph of Green George on his way through the village.",
+      "In Bela krajina Jurjevo used to mean one thing only: the first driving of the cattle to pasture. The shepherds counted it their feast — with it the grazing years began, around it spring was welcomed and winter bidden farewell. In Griblje the school took over this memory and carried it on in the most living way possible: with walking feet.\n\nOn the eve of the feast the whole growing family of the village gathers at the branch school: pupils, parents, grandparents, former and future pupils. Together they pick up litter, rake the leaves, mend the playthings and the garden — and plant the autochthonous Griblje žbul on the bed. Then they weave the basket: a green basket of birch branches, into which a boy will be 'dressed' the next day.\n\nOn St. George's day, 24 April, the procession sets out through the village, house to house, door to door. Before every house they sing the jurjevo song — and the Griblje version has survived with all its words: 'Prošel je prošel pisani vuzem, došel je došel zeleni Jure. Donesel je donesel, pedenj dugu travicu, lakat dugu mladicu. Dajte mu dajte! Jurja darovajte! Dajte mu pogače, da mu noga poskače! Dajte mu vina, da ga ne bu zima! … Dajte mu groš, da vam dojde još!' Vuzem — Easter in the Bela krajina dialect — has passed, green George has come; the song asks for everything, from flatbread to small coin. And if a door opens slowly, a second voice follows: 'Haj, haj, haj! Buli skoro kaj?'\n\nAt every house a birch twig is tucked over the door or window — to bring the family a good harvest and well-being — and the villagers, as is right, gift the procession eggs and sweets. The custom is not a memory but a timetable: the school's website records the processions year by year. The school's record from April 2016 begins with 'Once again this year we revived the folk feast of Jurjevo' — Ciril Totter, father of the pupils of the day, brought the birch branches for the basket, and the procession walked the village with the carol 'Prošel je prošel, pisani vuzem, došel je došel, zeleni Jure'. On 24 April 2023 the school held a cultural day of Green George: the birch basket, the bouquets, pupils as Green George and singing at the nearby houses; on 26 April 2024 the custom was repeated; on 24 April 2025 the children walked the village in national dress — with a Green George of fresh birch twigs and a basket full of sweets; and on 24 April 2026 the jurjevo was linked to the all-Slovene singing. Since 2023 the image holding this record has been a Griblje one: a photograph of 24 April 2023 — Green George, dressed in birch, on his way along the village road, children with twigs behind him. The historical depth of the custom is held by a photograph of a procession from 1908 in another Bela krajina village (source). The museum still seeks: a recording of the Griblje jurjevo song.",
     evidenceStatus: "DOCUMENTED",
-    image: "/images/authentic/zeleni-jurij-1908.jpg",
+    image: "/images/authentic/zeleni-jurij-griblje-2023.jpg",
     imageCredit:
-      "Fotografija: neznani avtor, »Zeleni Jurij« (1908) · Wikimedia Commons · javna last — sprevod Zelenega Jurija: ista šega, ki jo gribeljska šola živi še danes",
+      "Foto: PŠ Griblje / OŠ Loka Črnomelj · osloka.splet.arnes.si (24. 4. 2023) — Zeleni Jurij, oblečen v brezje, na poti po gribeljski vasi, za njim otroci z brezovimi vejicami; javna objava šole",
     yearFrom: 1908,
     yearTo: 2026,
     featured: false,
@@ -6658,8 +6658,68 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "fotografija",
         license: "javna last / public domain (neznani avtor)",
         url: WM("Zeleni_Jurij_1908.jpg"),
-        noteSi: "Glavna slika zapisa: dokumentarna fotografija sprevoda Zelenega Jurija iz leta 1908.",
-        noteEn: "The record's main image: a documentary photograph of a Green George procession from 1908.",
+        noteSi: "Zgodovinska primerjava: dokumentarna fotografija sprevoda Zelenega Jurija iz leta 1908 iz druge belokranjske vasi — prej glavna slika zapisa, zdaj njegova zgodovinska referenca.",
+        noteEn: "Historical comparison: a documentary photograph of a Green George procession from 1908 in another Bela krajina village — formerly the record's main image, now its historical reference.",
+      },
+      {
+        key: "os-loka-jurjevo-2016",
+        nameSi: "OŠ Loka Črnomelj: Jurjevo na PŠ Griblje (25. 4. 2016)",
+        nameEn: "OŠ Loka Črnomelj: Jurjevo at the Griblje branch school (25 April 2016)",
+        sourceType: "objava",
+        license: "objava šole (navedba vira)",
+        url: "https://www.os-loka-crnomelj.si/2016/04/25/jurjevo-na-ps-griblje/",
+        noteSi:
+          "Zapis šole: »Tudi letos smo obudili ljudski praznik Jurjevo« — brezove veje za koš pripeljal Ciril Totter, oče učencev; kolednica »Prošel je prošel, pisani vuzem, došel je došel, zeleni Jure«; sprevod po vasi + sobotna generalka (dokaz, da je obuditev starejša od leta 2016).",
+        noteEn:
+          "The school's record: 'Once again this year we revived the folk feast of Jurjevo' — Ciril Totter, father of the pupils, brought the birch branches for the basket; the carol 'Prošel je prošel, pisani vuzem, došel je došel, zeleni Jure'; the procession through the village and a Saturday dress rehearsal (proof the revival predates 2016).",
+      },
+      {
+        key: "os-loka-jurjevo-2023",
+        nameSi: "OŠ Loka Črnomelj: »Došel je došel, Zeleni Jure« (3. 5. 2023; kulturni dan 24. 4. 2023)",
+        nameEn: "OŠ Loka Črnomelj: 'Došel je došel, Zeleni Jure' (3 May 2023; cultural day 24 April 2023)",
+        sourceType: "objava",
+        license: "objava šole (navedba vira)",
+        url: "https://osloka.splet.arnes.si/2023/05/03/dosel-je-dosel-zeleni-jure/",
+        noteSi:
+          "Kulturni dan Zeleni Jure na PŠ Griblje, 24. 4. 2023: koš iz brezovih vejic, šopki, učenci kot Zeleni Jurij, petje tradicionalne pesmi pri bližnjih hišah, brezove vejice za srečo; galerija fotografij sprevoda po vasi (vir glavne slike zapisa).",
+        noteEn:
+          "The Green George cultural day at the Griblje branch school, 24 April 2023: the birch basket, bouquets, pupils as Green George, singing the traditional song at nearby houses, birch twigs for luck; a photo gallery of the procession through the village (the source of the record's main image).",
+      },
+      {
+        key: "os-loka-jurjevo-2024",
+        nameSi: "OŠ Loka Črnomelj: Prošel je, prošel, pisani vuzem, došel je, došel je Zeleni Jurij (6. 5. 2024; obhod 26. 4. 2024)",
+        nameEn: "OŠ Loka Črnomelj: Prošel je, prošel, pisani vuzem, došel je, došel je Zeleni Jurij (6 May 2024; procession 26 April 2024)",
+        sourceType: "objava",
+        license: "objava šole (navedba vira)",
+        url: "https://www.os-loka-crnomelj.si/2024/05/06/prosel-je-prosel-pisani-vuzem-dosel-je-dosel-je-zeleni-jurij/",
+        noteSi:
+          "Tradicionalni obhod Zelenega Jurija 26. 4. 2024: opletanje koša, ponovitev pesmi, obdaritev vaščanov z vejicami in sladkimi dobrotami; galerija fotografij.",
+        noteEn:
+          "The traditional Green George procession of 26 April 2024: weaving the basket, repeating the song, gifting villagers with twigs and sweets; a photo gallery.",
+      },
+      {
+        key: "os-loka-jurjevo-2025",
+        nameSi: "OŠ Loka Črnomelj: Utrinki Zelenega Jurija na PŠ Griblje (7. 5. 2025; obhod 24. 4. 2025)",
+        nameEn: "OŠ Loka Črnomelj: Glimpses of Green George at the Griblje branch school (7 May 2025; procession 24 April 2025)",
+        sourceType: "objava",
+        license: "objava šole (navedba vira)",
+        url: "https://www.os-loka-crnomelj.si/2025/05/07/utrinki-zelenega-jurija-na-ps-griblje/",
+        noteSi:
+          "Obhod 24. 4. 2025: učenci v nošah, Zeleni Jurij iz svežih brezovih vejic, dolg sprehod po vasi Griblje, vejice za zdravje in dobro letino, polna košara sladkarij; galerija fotografij.",
+        noteEn:
+          "The procession of 24 April 2025: pupils in national dress, a Green George of fresh birch twigs, a long walk through Griblje, twigs for health and a good harvest, a basket full of sweets; a photo gallery.",
+      },
+      {
+        key: "os-loka-jurjevo-2026",
+        nameSi: "OŠ Loka Črnomelj: Vseslovensko petje in Zeleni Jurij v PŠ Griblje (24. 4. 2026)",
+        nameEn: "OŠ Loka Črnomelj: All-Slovene singing and Green George at the Griblje branch school (24 April 2026)",
+        sourceType: "objava",
+        license: "objava šole (navedba vira)",
+        url: "https://www.os-loka-crnomelj.si/2026/04/24/vseslovensko-petje-in-zeleni-jurij-v-ps-griblje/",
+        noteSi:
+          "Jurjevo 24. 4. 2026 povezano z vseslovenskim petjem: sprehod po vasi z zelenimi vejicami, želje domačinom za srečo, zdravje in rodovitno leto; najnovejši dokaz neprekinjene letne šege (2016–2026).",
+        noteEn:
+          "The jurjevo of 24 April 2026 linked to the all-Slovene singing: a walk through the village with green twigs, wishes of luck, health and a fertile year to the villagers; the newest proof of the unbroken annual custom (2016–2026).",
       },
       {
         key: "ro-pastirski-2020",
