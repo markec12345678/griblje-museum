@@ -1,0 +1,153 @@
+LOCUS       FJ495099                 359 bp    cRNA    linear   VRL 24-JUL-2016
+DEFINITION  Tula virus strain TULV/Griblje/Ma57_01 segment L RNA dependent RNA
+            polymerase gene, partial cds.
+ACCESSION   FJ495099
+VERSION     FJ495099.1
+KEYWORDS    .
+SOURCE      Orthohantavirus tulaense
+  ORGANISM  Orthohantavirus tulaense
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Bunyaviricetes; Elliovirales; Hantaviridae;
+            Mammantavirinae; Orthohantavirus.
+REFERENCE   1  (bases 1 to 359)
+  AUTHORS   Korva,M., Duh,D., Puterle,A., Trilar,T. and Zupanc,T.A.
+  TITLE     First molecular evidence of Tula hantavirus in Microtus voles in
+            Slovenia
+  JOURNAL   Virus Res. 144 (1-2), 318-322 (2009)
+   PUBMED   19410611
+REFERENCE   2  (bases 1 to 359)
+  AUTHORS   Korva,M., Duh,D. and Avsic-Zupanc,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-DEC-2008) University of Ljubljana, Institute of
+            Microbiology and Immunology, Zaloska 4, Ljubljana 1000, Slovenia
+FEATURES             Location/Qualifiers
+     source          1..359
+                     /organism="Orthohantavirus tulaense"
+                     /mol_type="viral cRNA"
+                     /strain="TULV/Griblje/Ma57_01"
+                     /isolation_source="lungs"
+                     /host="Microtus arvalis"
+                     /db_xref="taxon:3052503"
+                     /segment="L"
+                     /geo_loc_name="Slovenia"
+                     /collection_date="2001"
+                     /note="PCR_primers=fwd_name: HAN-L-F2, rev_name: HAN-L-R2"
+     CDS             <1..>359
+                     /note="structural protein"
+                     /codon_start=3
+                     /product="RNA dependent RNA polymerase"
+                     /protein_id="ACT35626.1"
+                     /translation="GDNSAKFRRFTQALHDGLRDDKLKRCVVDALRNIYETDFFMSRK
+                     LHRYIDGMDDLSEFVEDFLSFFPNKVSAAIKGNWLQGNLNKCSSLFGAAVSLLFRKIW
+                     NLLYPELDCFFEFAHHS"
+ORIGIN      
+        1 caggtgataa ttctgcgaaa tttcgaaggt ttactcaagc attgcatgat ggtttacgcg
+       61 atgataaact aaaaaggtgc gtagtggatg ccttacggaa catatatgaa actgattttt
+      121 ttatgtctag aaagctacat agatatattg acggtatgga cgatttatct gaatttgtag
+      181 aggatttttt atcattcttt ccaaataagg tgtctgctgc cataaaggga aattggcttc
+      241 aaggaaactt aaacaaatgc tcatcactat ttggtgctgc agtttccctg ctgttcagaa
+      301 aaatctggaa tcttctttac ccagaattag attgcttttt tgagtttgca catcactca
+//
+
+LOCUS       FJ495093                 306 bp    cRNA    linear   VRL 24-JUL-2016
+DEFINITION  Tula virus strain TULV/Griblje/Ma57_01 segment S nucleocapsid
+            protein gene, partial cds.
+ACCESSION   FJ495093
+VERSION     FJ495093.1
+KEYWORDS    .
+SOURCE      Orthohantavirus tulaense
+  ORGANISM  Orthohantavirus tulaense
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Bunyaviricetes; Elliovirales; Hantaviridae;
+            Mammantavirinae; Orthohantavirus.
+REFERENCE   1  (bases 1 to 306)
+  AUTHORS   Korva,M., Duh,D., Puterle,A., Trilar,T. and Zupanc,T.A.
+  TITLE     First molecular evidence of Tula hantavirus in Microtus voles in
+            Slovenia
+  JOURNAL   Virus Res. 144 (1-2), 318-322 (2009)
+   PUBMED   19410611
+REFERENCE   2  (bases 1 to 306)
+  AUTHORS   Korva,M., Duh,D. and Avsic-Zupanc,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-NOV-2008) University of Ljubljana, Institute of
+            Microbiology and Immunology, Zaloska 4, Ljubljana 1000, Slovenia
+FEATURES             Location/Qualifiers
+     source          1..306
+                     /organism="Orthohantavirus tulaense"
+                     /mol_type="viral cRNA"
+                     /strain="TULV/Griblje/Ma57_01"
+                     /isolation_source="lungs"
+                     /host="Microtus arvalis"
+                     /db_xref="taxon:3052503"
+                     /segment="S"
+                     /geo_loc_name="Slovenia"
+                     /collection_date="2001"
+                     /note="PCR_primers=fwd_name: PPT376C, rev_name: PPT716R"
+     CDS             <1..>306
+                     /note="structural protein"
+                     /codon_start=2
+                     /product="nucleocapsid protein"
+                     /protein_id="ACT35620.1"
+                     /translation="DWFSIGQYITGFALAIILKALYMLSTRGRQTIKENKGTRIRFKD
+                     DSSYEEINGIRRPKHLYVSMPTAQSTMKADELTPGRFRTIVCGLFPAQIMHRNIISPV
+                     "
+ORIGIN      
+        1 agactggttt tctattggcc aatacatcac aggatttgca cttgctataa tcttgaaagc
+       61 attgtatatg ctgtcaacca gagggagaca aacaatcaag gaaaataagg ggacaagaat
+      121 tcggttcaag gatgacagct cttatgaaga aattaatggc attagacgac caaagcatct
+      181 gtatgtgtct atgcctacag cccaatctac catgaaagcg gatgagttga caccgggtag
+      241 gtttaggaca attgtctgtg gactcttccc tgctcagatt atgcacagaa acatcataag
+      301 tcctgt
+//
+
+LOCUS       FJ495100                 359 bp    cRNA    linear   VRL 24-JUL-2016
+DEFINITION  Tula virus strain TULV/Sestrze/Mag98_02 segment L RNA dependent RNA
+            polymerase gene, partial cds.
+ACCESSION   FJ495100
+VERSION     FJ495100.1
+KEYWORDS    .
+SOURCE      Orthohantavirus tulaense
+  ORGANISM  Orthohantavirus tulaense
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Bunyaviricetes; Elliovirales; Hantaviridae;
+            Mammantavirinae; Orthohantavirus.
+REFERENCE   1  (bases 1 to 359)
+  AUTHORS   Korva,M., Duh,D., Puterle,A., Trilar,T. and Zupanc,T.A.
+  TITLE     First molecular evidence of Tula hantavirus in Microtus voles in
+            Slovenia
+  JOURNAL   Virus Res. 144 (1-2), 318-322 (2009)
+   PUBMED   19410611
+REFERENCE   2  (bases 1 to 359)
+  AUTHORS   Korva,M., Duh,D. and Avsic-Zupanc,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-DEC-2008) University of Ljubljana, Institute of
+            Microbiology and Immunology, Zaloska 4, Ljubljana 1000, Slovenia
+FEATURES             Location/Qualifiers
+     source          1..359
+                     /organism="Orthohantavirus tulaense"
+                     /mol_type="viral cRNA"
+                     /strain="TULV/Sestrze/Mag98_02"
+                     /isolation_source="lungs"
+                     /host="Microtus agrestis"
+                     /db_xref="taxon:3052503"
+                     /segment="L"
+                     /geo_loc_name="Slovenia"
+                     /collection_date="2002"
+                     /note="PCR_primers=fwd_name: HAN-L-F2, rev_name: HAN-L-R2"
+     CDS             <1..>359
+                     /note="structural protein"
+                     /codon_start=3
+                     /product="RNA dependent RNA polymerase"
+                     /protein_id="ACT35627.1"
+                     /translation="GDNSAKFRRFTQTLHDGLRDDKLKRCVVDALRNIYETDFFMSRK
+                     LHRYIDGMDDLSEFVEDFLSFFPNKVSAAIKGNWLQGNLNKCSSLFGAAVSLLFRKVW
+                     NLLYPELDCFFEFAHHS"
+ORIGIN      
+        1 caggagacaa ttctgcaaaa ttcagaaggt ttactcaaac attgcatgat ggtttacgag
+       61 atgataaact gaaaaggtgt gttgtagatg ctttacggaa catatatgaa actgattttt
+      121 ttatgtctag aaagctacat aggtatattg atggtatgga cgatttgtct gaatttgtag
+      181 aggatttttt gtcatttttc ccaaacaagg tgtctgctgc cataaaagga aattggcttc
+      241 agggaaatct aaacaaatgt tcatcattat ttggtgcagc agtttccctg ttatttagaa
+      301 aagtctggaa ccttctttat ccagaactgg attgcttttt tgagtttgca catcattct
+//
+

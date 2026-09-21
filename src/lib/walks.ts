@@ -451,6 +451,20 @@ export const WALKS: Walk[] = [
       },
 
       {
+        exhibitSlug: "tula-virus-griblje",
+        noteSi:
+          "Najmanjši potnik te vasi ni nikoli rabil potnega lista: poljska voluharica, ujeta v Gribljih leta 2001, je dala ime sevu TULV/Griblje — vas je vpisana v svetovne baze podatkov o virusih.",
+        noteEn:
+          "This village's smallest traveller never needed a passport: the common vole caught in Griblje in 2001 gave its name to the strain TULV/Griblje — the village is written into the world's virus databases.",
+      },
+      {
+        exhibitSlug: "cryptachaea-riparia",
+        noteSi:
+          "Tudi pajki potujejo v znanost: prvi slovenski primerki Cryptachaea riparia — vrste, za katero se je izkazalo, da je za Slovenijo nova — so bili zabeleženi ob ribniku na zgornjem koncu vasi.",
+        noteEn:
+          "Spiders travel into science too: the first Slovene specimens of Cryptachaea riparia — a species revealed to be new for Slovenia — were recorded by the pond at the upper end of the village.",
+      },
+      {
         exhibitSlug: "toni-gasperic",
         noteSi:
           "Nekateri odidejo v svet in se vrnejo z darovi; Gašperič se je vrnil z besedo. Humor z bregov Kolpe — oddaje, knjige in Noč na Kolpi.",
@@ -651,6 +665,13 @@ export const WALKS: Walk[] = [
           "In šola ima svojega dobrotnika: dr. Franc Brinc, učenec iz vojnih let, se je vrnil z darovi — gasilski dom, šola in cerkvena okolica so danes njegov spomenik.",
         noteEn:
           "And the school has its benefactor: dr. Franc Brinc, a pupil of the war years, returned with gifts — the fire station, the school and the churchyard are his monument today.",
+      },
+      {
+        exhibitSlug: "tranzit-2025",
+        noteSi:
+          "In cesta ima svoje poletje: ko je most v Gradcu 2025 šel v obnovo, je tranzit za nekaj mesecev zapeljal nazaj skozi vas — opomin, da je »mimo vasi« včasih pomenilo »skozi vas«.",
+        noteEn:
+          "And the road has its summer: when the Gradac bridge went into repair in 2025, the transit turned back through the village for a few months — a reminder that 'past the village' once more meant 'through it'.",
       },
       {
         exhibitSlug: "jurjevanje",
