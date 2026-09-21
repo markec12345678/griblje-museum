@@ -2492,3 +2492,27 @@ Stage Summary:
 - Vrzel #2 iz benchmarka zaprta: IIIF anotacije življenjepisov 1:1 (372/372) — Rijksmuseumov standard anotacij dosegel z muzejsko vsebino (pot predmeta)
 - MVG-089: avtentična fotografija društva 2016 namesto sorodne pasuljade; MVG-094: prosto dostopen original ne obstaja — iskreno stanje dokumentirano
 - Vse zeleno; commit + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 62
+Agent: Z.ai Code (glavni)
+Task: »nadaljuj kjer si ostal« — po sklopu 61 (IIIF anotacije, pushan) nadaljevanje raziskave: 14. val po slovenskih muzejih/zbirkah (obvezen dedup); obnova peskovnika (projekt kloniran iz GitHuba)
+
+Work Log:
+- Obnova peskovnika: okolje resetirano (/home/z/my-project = prazen scaffold) → projekt kloniran iz GitHuba (markec12345678/griblje-museum, HEAD = 9e62d7a sklop 61), bun install, dev strežnik na :3000 (ubit zastarel proces starega peskovnika na /home/z/griblje-museum), OpenData 101/482 potrjeno
+- Val 14 iskanja: 13 poizvedb (muzej.si, Europeana, PMM, RKD, dLib, SEM, EŠD, kataster, muzejski vestnik, arhivi, obrazi, film, YouTube) — surovine research-griblje/raw-web-val14-2026-10/ (17 datotek)
+- PRELOM 1: SEM lokacijska stran /digitalne-zbirke/lokacije/griblje enumerira natančno 5 predmetov za vas — SEM fond 100 % enumeriran: F0000182 + F0001407 že vira; 3 NOVI: F0000183 (Hiša, Griblje — kokoši/perutninarstvo), F0000212 (rojstna hiša dr. Nika Županiča — prva poznana fotografija!), F0000838 (ženska vsakdanja noša ~1920, avtor verjetno Niko Županič — atribucija izrecno nedokončana); 3 slike prenesene + vizualno preverjene (slika-f0000212.jpg: hiša z galerijo/klopci/hlodi; slika-n0014096.jpg: dve ženski v belih nošah + ovce; slika-f0000183.jpg: hiša s slamnato streho + kokoši); n0014096.jpg = datoteka slike F0000838 (ni ločen predmet); SEM pravice ZASP → viri, ne prikazne slike (doslednost z valom 1)
+- PRELOM 2: YouTube iskanje (»mrliška vežica«) → 4 gribeljski videi Vašega kanala; oEmbed potrdi naslove/kanale (watch strani/innertube = prijavna stena); datumi po iskalnih opisih: mrliška vežica 18. 2. 2013, pasulj 5. 8. 2019 (arhiv.vaskanal.com »ustvarjeno 5. 8. 2019 19:28«), poklon Brincu v eter 17. 4. 2026 (radio.brezice.eu); 4. video »Griblje 2019« (DOZIS) = TO_COLLECT
+- Dedup: Instagram objava občine DZ7pevXDEU1 = že vir; muzej.si/Europeana/RKD (0 zadetkov)/dLib (nerelevanten zadetek)/muzejski vestnik/arhivi brez novih gribeljskih vsebin; poklon Brincu = drugi poročevalec dl-brinc-91 — vir vseeno dodan (video, citirljiv URL, prekrivanje izrecno v opombi)
+- Vgrajeno (add-only, +6 virov: 482→488, identitet 379→385): MVG-017 +sem-f0000183 (odstavek 4 razširjen: dve → tri fotografije), MVG-010 +sem-f0000212 (nov odstavek: rojstna hiša kot fotografiran kraj), MVG-079 +sem-f0000838 (nov odstavek: etnolog kot fotograf; išče še imena žensk), MVG-002 +yt-mrliska-veznica-2013 (nov odstavek: cerkev + pokopališče + vežica = zadnji koledar vasi), MVG-041 +vk-pasulj-2019 (nov odstavek: 16. pasuljada; najstarejši videodokument), MVG-042 +vk-brinc-poklon-2026 (nov odstavek: 91. rojstni dan) — vse SL+EN
+- Poučna epizoda: MultiEdit ni atomaren v praksi — prvi poskus urejanja zgodb apliciral 1. poprasek (MVG-017 SL) preden je odpadel na EN (ubežani narekovaji \"...\" v TS viru); stanje preverjeno per-check in preostalih 11 popraškov aplicirano v drugem kolu z ubežanimi narekovaji + literalnimi \n
+- Konstante usklajene (482→488, 379→385) v 5 skriptah: test-entities (T8.6/T8.11/T9.3/T9.4/komentar), test-timeline-map (T7.2/T7.3/T8.3/T8.4), audit-entities, audit-timeline-map, test-curator-red-team (R0.3/R16.2)
+- Regresija (živi :3000): tsc 0, eslint čist, verify-i18n 930×5, audit-entities ✓ (94, 0 napak), audit-timeline-map 39 ✓/0 (488), audit-iiif-annotations 5 ✓/0 (372/372), test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24); reseeda (izrecni DATABASE_URL) → OpenData 101/488 živo; sitemap 102
+- Dokumentacija: research-griblje/28-val14-muzeji-sem-100.md (nova) + KAZALO +28 + README (sklop 62 + števci 488/385) + worklog
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 488 virov, 385 identitet, 54 deljenih, 94 entitet; sitemap 102
+- SEM (muzej ustanovitelja Županiča) fond za rojstno vas zdaj 100 % viden v muzeju (5/5); rojstna hiša Županiča = prvič fotografirana (F0000212)
+- F0000838: fotografija noše iz Gribelj z avtorstvom »verjetno Niko Županič« — unikatna zavest o lastnem fondu; iskrenost (nedokončna atribucija) dokumentirana
+- Trije videi Vašega kanala s podatkom (2013/2019/2026) — nov časovni sloj avdio-vizualnih virov; najstarejši videodokument pasuljade (2019)
+- TO_COLLECT: hiša »na pero« Županiča (hišna številka), imena žensk na F0000838, »Griblje 2019« (DOZIS), jurjevska pesem, SŠM mapa, arheološka poročila, kajdarji
