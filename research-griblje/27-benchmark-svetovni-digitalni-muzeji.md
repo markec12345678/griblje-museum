@@ -46,7 +46,7 @@
 | 1 | **Razvijalska dokumentacija API-jev** — Rijks: »odprte storitve, ki jih lahko uporabite v osebnih aplikacijah«, z dokumentacijo | Rijksmuseum, Smithsonian | ✅ **ZAPRTO v tem sklopu:** nov `docs/API.md` s popolnim referenčnim seznamom vseh 12 poti + povezava iz README in oMuzeju |
 | 2 | **IIIF anotacije** — Rijksmuseumove razstave poganjajo anotacije na platnih | Rijksmuseum | ✅ **ZAPRTO (61. sklop):** 372 faz življenjepisov kot `supplementing` anotacije na Canvas (`annotations → AnnotationPage` po IIIF 3.0), dvojezično telo sl+en, oznaka `letnica · faza · status`; zapisi brez življenjepisa ne pošiljajo anotacij; audit `scripts/audit-iiif-annotations.ts` 5 ✓/0; doc: research-griblje/27, vir: `src/lib/iiif-manifest.ts` |
 | 3 | **360° / virtualni ogledi** — 500+ tur na GAC | Google Arts & Culture | ⚠️ potrebne avtentične panorame vasi — AI-generirane NE smejo biti (pravilo avtenticnosti); zbiranje panoram od vaščanov → prihodnji sklop |
-| 4 | **Planiranje obiska z AI** — AAM 9/2025 trend | industrijski trend | ⏳ AI kurator je vsebinski; dodati meta-odgovore »kako obiskati« (rute, GPS, čas obiska) — naslednji sklop |
+| 4 | **Planiranje obiska z AI** — AAM 9/2025 trend | industrijski trend | ✅ **ZAPRTO (63. sklop):** `POST /api/plan-visit` + sekcija v Načrtu obiska — obiskovalec poda čas (15/30/60/90), interese (6 kategorij) in z otroki; izbor postaj DETERMINISTIČEN nad zbirko (točkovanje + pestrost + kronologija), LLM personalizira SAMO pripoved nad podanimi povzetki in ne more spremeniti izbora; preverba sinteze + deterministični fallback (`synthesized: false` odkrito); testi `scripts/test-plan-visit.ts` 42 ✓/0 |
 | 5 | **Osebne rute / lokacija v realnem času** (zapt.tech) | AI vodniški izdelki | ⏳ sprehodi že kurirani; GPS hotspots = izboljšava walk-ui |
 | 6 | **Odstopanje od CC0** — Smithsonian vse CC0 | Smithsonian | ⚖️ premeditirana odločitev: CC BY-SA 4.0 ohranja avtorstvo avtorjev vasi — ohranimo, a izrecno dokumentiramo v API.md ✅ (v tem sklopu) |
 
@@ -56,7 +56,7 @@
 
 ## 4. Vgrajeno v 60. sklopu (ta dokument)
 
-1. **`docs/API.md`** — popolna javna dokumentacija vseh 12 API poti (metode, parametri, primeri, licence, hitrostne omejitve) — zapira vrzel #1 (Rijksmuseum standard).
+1. **`docs/API.md`** — popolna javna dokumentacija vseh API poti (metode, parametri, primeri, licence, hitrostne omejitve) — zapira vrzel #1 (Rijksmuseum standard); v 63. sklopu dopolnjena s 13. potjo `/api/plan-visit` (vrzel #4).
 2. **README** — nov razdelek »Benchmark svetovnih digitalnih muzejev« z gornjo tabelo + povezava na API dokumentacijo.
 3. Ta benchmark dokument (27) + KAZALO + worklog.
 

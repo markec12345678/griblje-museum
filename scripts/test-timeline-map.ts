@@ -481,8 +481,9 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
   const withCoords = seedExhibits.filter((e) => e.lat != null && e.lng != null).length;
   check(withTime === 88 && withCoords === 33, "T7.9 objektov s časom (yearFrom) = 88; s koordinato = 33", `=${withTime}/${withCoords}`);
 
-  // i18n: 930 ključev × 5 jezikov, identična struktura (ista logika kot verify-i18n;
-  // število je zraslo z 41. sklopom — curator razdelek + curatorAsks).
+  // i18n: 946 ključev × 5 jezikov, identična struktura (ista logika kot verify-i18n;
+  // število je zraslo z 41. sklopom — curator razdelek + curatorAsks — in
+  // 63. sklopom — planAi za AI planiranje obiska).
   function shapeOf(obj: Record<string, unknown>, prefix = ""): string[] {
     const out: string[] = [];
     for (const [k, v] of Object.entries(obj)) {
@@ -497,7 +498,7 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
   const langs = ["sl", "en", "hr", "de", "it"] as const;
   const shapes = langs.map((l) => shapeOf(ui[l] as unknown as Record<string, unknown>));
   const sameStructure = shapes.every((s) => JSON.stringify(s) === JSON.stringify(shapes[0]));
-  check(shapes[0].length === 930 && sameStructure, "T7.10 i18n: 930 ključev × 5 jezikov, struktura identična SL", `=${shapes.map((s) => s.length).join("/")}`);
+  check(shapes[0].length === 946 && sameStructure, "T7.10 i18n: 946 ključev × 5 jezikov, struktura identična SL", `=${shapes.map((s) => s.length).join("/")}`);
 }
 
 // ===========================================================================
