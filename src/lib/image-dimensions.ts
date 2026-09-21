@@ -118,6 +118,9 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   // 59. sklop: jurjevo — Zeleni Jurij na poti po gribeljski vasi, 24. 4. 2023 (PŠ Griblje / OŠ Loka)
   "/images/authentic/zeleni-jurij-griblje-2023.jpg": { width: 900, height: 406 },
 
+  // 61. sklop: DKŽ Griblje — razstavni pult »Od semena do žbula« ob 20-letnici društva, vaško igrišče 16. 8. 2016 (Dolenjski list)
+  "/images/authentic/dkz-griblje-2016-od-semena-do-zbula.jpg": { width: 2048, height: 1536 },
+
   // 25. sklop: Konrad Barle — čebelnjak na Vrhu pri Komatarju (Boris Orel, SEM, 1952, javna last)
   "/images/authentic/cebnjak-orel-1952.jpg": { width: 1033, height: 1054 },
 

@@ -44,7 +44,7 @@
 | # | Vrzel | Kdo je pred | Načrt (pripravljenost) |
 |---|---|---|---|
 | 1 | **Razvijalska dokumentacija API-jev** — Rijks: »odprte storitve, ki jih lahko uporabite v osebnih aplikacijah«, z dokumentacijo | Rijksmuseum, Smithsonian | ✅ **ZAPRTO v tem sklopu:** nov `docs/API.md` s popolnim referenčnim seznamom vseh 12 poti + povezava iz README in oMuzeju |
-| 2 | **IIIF anotacije** — Rijksmuseumove razstave poganjajo anotacije na platnih | Rijksmuseum | ⏳ IIIF 3.0 manifest imamo z AnnotationPage; faze življenjepisov kot anotacije = naslednji sklop (visok vložek, zmerna nagrada) |
+| 2 | **IIIF anotacije** — Rijksmuseumove razstave poganjajo anotacije na platnih | Rijksmuseum | ✅ **ZAPRTO (61. sklop):** 372 faz življenjepisov kot `supplementing` anotacije na Canvas (`annotations → AnnotationPage` po IIIF 3.0), dvojezično telo sl+en, oznaka `letnica · faza · status`; zapisi brez življenjepisa ne pošiljajo anotacij; audit `scripts/audit-iiif-annotations.ts` 5 ✓/0; doc: research-griblje/27, vir: `src/lib/iiif-manifest.ts` |
 | 3 | **360° / virtualni ogledi** — 500+ tur na GAC | Google Arts & Culture | ⚠️ potrebne avtentične panorame vasi — AI-generirane NE smejo biti (pravilo avtenticnosti); zbiranje panoram od vaščanov → prihodnji sklop |
 | 4 | **Planiranje obiska z AI** — AAM 9/2025 trend | industrijski trend | ⏳ AI kurator je vsebinski; dodati meta-odgovore »kako obiskati« (rute, GPS, čas obiska) — naslednji sklop |
 | 5 | **Osebne rute / lokacija v realnem času** (zapt.tech) | AI vodniški izdelki | ⏳ sprehodi že kurirani; GPS hotspots = izboljšava walk-ui |
