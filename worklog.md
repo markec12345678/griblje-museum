@@ -2591,3 +2591,29 @@ Stage Summary:
 - Kartografija: popis dostopnosti iz peskovnika — frančiškanski kataster KO Metlika (~1824) ostaja najzanimivejši nedostopen vir; dLib polnotekstovna enumeracija = naslednji veliki val (results 404/timeout)
 - Hero števec 93→101 popravljen v 5 jezikih (25 nizov) — točnost kot jedro muzeja
 - Vsi testi zeleni; commit 2c9ad7f + push na GitHub; Vercel auto-deploy sledi
+
+---
+Task ID: 66
+Agent: Z.ai Code (glavni)
+Task: »odlicno nadaljuj raziskuj« — nadaljevanje po sklopu 65: 17. val raziskave — dLib.si enumeracija (označena kot »največja nepopisana površina« v valu 16), vgradnja add-only, regresija, push
+
+Work Log:
+- Priprava: veriga potrjena — sklopi 61–65 pushani (main @ c14a1be), vrzeli #2/#4 zaprte, dev :3000 živ, OpenData 101/514
+- Metodološki preboj — hibridna enumeracija dLiba: neposredne poti mrtve iz peskovnika (curl 000 tudi -4 — DNS prav 193.2.8.28 ARNES, mrežna pot ne gre; page_reader/JINA na /results/?query= in na pravilnem /results/?EuAPI=on&fts=off&q= [parametra odkrita iz submitSearch() JS v HTML domače strani] = 404 IIS — rezultati zahtevajo sejo; OAI-PMH ?verb= = »Malicious request« WAF; /stream/…/PDF in /…/TEXT = preusmeritve na details)
+- Dve brezsejni poti delujeta: objektne strani /details/URN:NBN:SI:doc-… (97 kB polna stran) in KLJUČNO /URN:NBN:SI:doc-…/DC/JSON = Dublin Core metapodatki kot JSON = dejanski brezsejni API dLiba, doslej nepopisan (kreator, datiranje, ISSN, COBISS, URN, založnik, pravice, predmetnice)
+- Enumeracija prek web_search s pojmom »dlib.si« (site: operator nezanesljiv — vrne nesorodne zadetke) po 7 poizvedbah → indeks dLiba za Griblje izčrpan: 2 predmeta, oba zgrajena v val
+- PRELOM 1 (MVG-043): Šopek poljskih cvetlic iz Gribelj (URN:NBN:SI:doc-NR7PHRCK) prvič z URL-jem in kanonsko citacijo — Etnolog, knj. 10/11 (1937–1939), str. 114–146, ISSN 0353-4855, založil Etnografski muzej, COBISS 239469568, InC s prostim PDF od 14. 10. 2013; predmetnice: Griblje ob Kolpi, ljudsko slovstvo, Zupanič Katarina 1894–1985, Zupanič Milko 1841–1911
+- IDENTITETNO NESKLADJE — dokumentirano kot odprto vprašanje: dLib avtoriteta »Zupanič, Katarina, 1894–1985« se ne ujema s SBL (mati Katarina r. Pezdirc, r. nov. 1855 pri Grizinu, u. 23. 7. 1923; SBL izrecno: »1894–5, ko je bil sin Niko dijak v Nov. mestu, na njegovo željo zbrala in zapisala«, oc. B. Orel, Sloven 1937 št. 122); letnici se medsebojno izključujejo (oseba r. 1894 ni mogla zapisovala 1894/95; oseba u. 1923 ne podpisati 1937/9); muzejska zgodba ostaja na SBL kot najavtoritetnejšem viru, neskladje zapisano v opombo vira (pot rešitve: SEM arhiv, uredniška zapisa zvezka 10/11)
+- Vgrajeno MVG-043: vir etnolog-sopek nadgrajen (URL dLib + kanonska citacija v naslovu + razširjena opomba z ISSN/založnikom/pravicami/neskladjem); MVG-010: vir zupanic-sopek dobi vezavo na kanonsko citacijo (Županičev zbornik 1939 = isti tisk, Etnolog 10/11 1937–1939) — notranja konsistentnost registra
+- PRELOM 2 (MVG-010): NOV VIR — Račič, Mojca: Dr. Niko Zupanič — svetovljan iz Gribelj (Etnolog. Nova vrsta, letn. 27 = 78, 2017, str. 195–198, ISSN 0354-0316, SEM; URN:NBN:SI:doc-1K9KVK42) — biografska skica v SEM-ovi seriji o slovenskih etnologihih naslavlja ustanovitelja z domačo formulo; +vir racic-etnolog-2017 + odstavek SL/EN (biografski krog: rojen v vasi, naslovljen z vaso, ohranjen v muzeju)
+- Dedup: Odeon »Gribeljski žbul v novi preobleki« (21. 9. 2026, objavljen med valom) = ŽE VIR (val 15, URL identičen — dedup disciplina potrjena na sveži objavi); Račič ≠ Božo Račič (38. sklop); enkratna avtorica brez entitete (lijak); SEM avtorska stran Katarine Zupanič = samo navada članka (ni vgrajena kot vir); CONOR/COBISS razrešitve avtoritete ne ponujata
+- Konstante usklajene (514→515, 404→405): audit-entities (262–263), audit-timeline-map (198), test-entities (T8.6/T8.11/T9.3/T9.4 + komentar T9), test-timeline-map (T7.2/T7.3/T8.3 label/T8.4), test-curator-red-team (R0.3/R16.2) + README (tabela 515, regresija 101/515/405/60/372, db:seed 515)
+- Regresija (živi :3000): tsc 0, eslint čist, verify-i18n 946×5, audit-entities ✓ (515/405/60/372), audit-timeline-map 39 ✓/0, audit-iiif-annotations 5 ✓/0 (372/372), test-entities 100 ✓/0 (po dopolnitvi T8.6 404→405), test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0 (GAP 24, artefakt), test-plan-visit 42 ✓/0; reseeda (izrecni DATABASE_URL) → OpenData 101/515 živo
+- HTML preverba: /exponat/niko-zupanic prikazuje Račičev odstavek + vir doc-1K9KVK42; /exponat/katarina-zupanic prikazuje dLib URL doc-NR7PHRCK + neskladje avtoritet (1894–1985)
+- Poučne epizode: (1) dLibova avtoriteta se lahko razlikuje od biografskih leksikonov — zapiši neskladje, ne utišaj; (2) JINA-reader je page_readerjev motor (422 napaka razkriva izvajalca); (3) ubežani \" v EN stringih — tretja ponovitev pasti (tsc + grep ubežnih mest kot varovalka); (4) Edit old/new obrnjena pri velikem vnosu README — prerazporeditev prek python razrešila
+
+Stage Summary:
+- Stanje: 101 zapisov (MVG-001–101), 515 virov, 405 identitet, 60 deljenih, 94 entitet; sitemap 102; i18n 946 × 5; 13 API poti
+- dLib za Griblje enumeracijsko izčrpan na nivoju javnega indeksa: Šopek prvič z URL-jem in kanonsko citacijo (plus dokumentirano identitetno neskladje avtoritet), Županič dobi SEM-ovo biografsko skico 2017 kot nov vir
+- Metodološka dediščina: /DC/JSON = brezsejni API dLiba za vse bodoče citate; pod sejo (stari tiski, matice) = izven-peskovniški val
+- Vsi testi zeleni; commit + push na GitHub; Vercel auto-deploy sledi

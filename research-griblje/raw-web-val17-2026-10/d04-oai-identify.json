@@ -1,0 +1,28 @@
+{
+  "code": 200,
+  "data": {
+    "description": "",
+    "external": {},
+    "html": "<html><head></head><body><h1>Malicious request</h1>\n\n<h1>You can not see this content</h1>\n</body></html>",
+    "httpStatus": 200,
+    "httpStatusText": "OK",
+    "metadata": {},
+    "title": "",
+    "url": "https://www.dlib.si/oai-pmh/",
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 35,
+      "tokens": 35
+    }
+  },
+  "meta": {
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 35,
+      "tokens": 35
+    }
+  },
+  "status": 20000
+}
