@@ -174,6 +174,23 @@ prvenstvu pri Pragi — 6 novih virov: svet24 3×, kmeckiglas, zotks, RO 2025), 
 za ceste na šestih lokacijah), **td-griblje** (balonarski piknik »Griblje Kolpa« 2008 — Wikipedia
 seznam) in **griblje-v-stevilkah** (občina Griblje 1854 v okraju Črnomelj — crnomelj.si).
 
+## Benchmark: svetovni digitalni muzeji / Benchmark: world digital museums
+
+Polna analiza: [research-griblje/27-benchmark-svetovni-digitalni-muzeji.md](research-griblje/27-benchmark-svetovni-digitalni-muzeji.md).
+
+**Kje že prekašamo svetovne standarde** (Rijksmuseum Collection Online, Smithsonian Open Access,
+Nasjonalmuseet *Årets museum 2025*, DigitaltMuseum, Google Arts & Culture):
+globina na zapis (povzetek + zgodba 250–400 besed SL+EN + življenjepis predmeta + 4,8 virov povprečno),
+izrecni statusi dokazilosti, AI kurator s per-claim verifikacijo in [MVG-###] viri,
+rdeča ekipa (157 preverb + 100 vprašanj × 5 jezikov), 5 jezikov UI,
+odprti podatki + IIIF 3.0 + JSON-LD na vas s ~330 prebivalci.
+
+**Kje so velikani pred nami (in načrt):** javna razvijalska dokumentacija API-jev
+(→ zaprto: [docs/API.md](docs/API.md)), IIIF anotacije življenjepisov, avtentične
+360° panorame (zbiranje od vaščanov — AI slike ne smejo), planiranje obiska z AI.
+
+Strateško jedro: ne posnemati slepo velikane — braniti **najgloblji dokumentirani zapis za eno vas**.
+
 ## Funkcije / Features
 
 - 🖼️ **Zbirka** — 101 zapisov z dokazilnimi statusi (preverjeno / avtentično gradivo /
