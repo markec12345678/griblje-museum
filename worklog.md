@@ -2771,3 +2771,20 @@ Stage Summary:
 - Izven-peskovniška vrsta (posodobljena): Belokranjec PDF → Vaš kanal → Kropej 2012 → Chapman 2018 → knjige 2009/2006/1941/1997 → Weiss 2018 („das dorff Griblach") → Poganjec → sken strani Domoljuba → Valvasor full-text (IA/e-rara blokirana) → Radio Odeon arhiv (JS anti-bot) → datum prve gostilne
 - Poučne epizode: rep-strict 3× zavrnil pisanje (nič ni bilo zapisano do zelenih kontrol); React „duplicate key" kot edini ulov podvojene postaje sprehoda; max-w-7xl = strop (izmera, ne računanje); HMR konzola ≠ trenutno stanje
 - Benchmark: vrzel #3 (360° panorame od vaščanov) ostaja edina odprta — TO_COLLECT
+
+---
+Task ID: 73
+Agent: Z.ai Code (glavni)
+Task: "odlicno nadaljuj sinhroniziraj github vercel kode readme in nadaljuj" — sinhronizacija GitHub/Vercel/koda/README + popravek številčenja sklopov
+
+Work Log:
+- GitHub: lokalni HEAD 5890536 = origin/main 5890536 (73./72. sklop, val 23) — push sposobnost potrjena (git ls-remote ✓), working tree čist pred popravki
+- Vercel: produkcija https://griblje-museum.vercel.app → HTTP 200; /api/opendata → {exhibits: 109, sources: 542, events: 9, stories: 6} = identično lokalnemu stanju → Vercel je samodejno uvedel zadnji commit (auto-deploy potrjen)
+- Koda: bunx tsc --noEmit = 0 napak; bun run lint = čist; dev strežnik :3000 živ, GET /api/opendata 200 (46 ms)
+- POPRAVEK ŠTEVILČENJA SKLOPOV (neskladje odkrito ob sinhronizaciji): formula val N = sklop 49+N je veljala do val 21=70, val 22=71; val-22 commit sporočilo je zmotno skočilo na 72, val-23 pa prepisal 73 v KAZALO — README je imel prav (72. sklop za val 23). Popravljeni 3 vnosi 73→72: research-griblje/37-val23-sbl-pivcan-identiteta.md (glava), research-griblje/KAZALO-raziskav.md (vnos 37), research-griblje/00-KAZALO.md (naslov razdelka); preverba: 0 ostankov "73. sklop" v docs + README; commit sporočili 98cc544/5890536 ostajata (nespremenljiva zgodovina) — dokumentacija zdaj dosledna 69→70→71→72
+- README preverjen celostno: 72. sklop (val 23) vpisan s števci 109/542/430/95, db:seed vrstica (109 zapisov, 542 virov), globinska tabela (Etiketa 109/109, Zgodba 109/109, Življenje 93/109, Viri 542), brez "73. sklop"
+
+Stage Summary:
+- Sinhronizacija potrjena: GitHub (lokalni = origin = 5890536), Vercel (griblje-museum.vercel.app 109/542 = lokalno), koda (tsc 0, lint čist, dev :3000 živ), README (72. sklop + števci ✓)
+- Številčenje sklopov zdaj dosledno: val 23 = 72. sklop (formula val N = sklop 49+N velja skozi celotno kronologijo); popravljene 3 datoteke, 0 regresij
+- Naslednji korak: 24. val raziskave po izven-peskovniški vrsti (Weiss 2018 "das dorff Griblach", Belokranjec PDF, Poganjec toponim, sken strani Domoljuba, datum prve gostilne)
