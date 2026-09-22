@@ -486,6 +486,13 @@ export const WALKS: Walk[] = [
           "Spiders travel into science too: the first Slovene specimens of Cryptachaea riparia — a species revealed to be new for Slovenia — were recorded by the pond at the upper end of the village.",
       },
       {
+        exhibitSlug: "nemastoma-gruberi",
+        noteSi:
+          "Pod listjem gozda pa je čakala še ena skrivnost: koscaka, zbrana pri Gribljih leta 1985 in 1994, je v predalih Prirodoslovnega muzeja preživela 36 let, da bi znanost leta 2021 razumela kot samostojno podvrsto — Nemastoma bidentatum gruberi.",
+        noteEn:
+          "Beneath the forest litter waited another secret: harvestmen collected near Griblje in 1985 and 1994 spent 36 years in the drawers of the Slovene Museum of Natural History before science understood them, in 2021, as a distinct subspecies — Nemastoma bidentatum gruberi.",
+      },
+      {
         exhibitSlug: "biodiverzitetne-baze",
         noteSi:
           "Vas je prešla v svetovne podatkovne baze: krogličasta lunja nad novoletnimi travniki, medonosna čebela na marčevskih poljih — vsako opazovanje s stalnim identifikatorjem, kakor muzejska številka.",

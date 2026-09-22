@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>We'll forward you in a second</title>
+	</head>
+	<body>
+		<p>We'll forward you to the treatment or publication in just a second ...</p>
+		<script type="text/javascript">
+			function forwardToTreatment() {
+				if (window.location.href.includes('/html/'))
+					window.location.href = location.href.replace('/html/', '/xhtml/');
+				else if (window.location.href.includes('publication.plazi.org') && window.location.href.includes('/id/'))
+					window.location.href = location.href.replace('/id/', '/GgServer/summary/');
+				else if (window.location.href.includes('/id/'))
+					window.location.href = location.href.replace('/id/', '/GgServer/xhtml/');
+			}
+			forwardToTreatment();
+		</script>
+	</body>
+</html>
+
+
