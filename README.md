@@ -2,7 +2,14 @@
 
 Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, zemljevid,
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
-(Nasionalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
+(Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
+
+> **Zadnja posodobitev — 81. sklop (31. val raziskave, 2026-09-22)**
+> Stanje zbirke: **112 zapisov (MVG-001–112), 564 virov, 446 identitet, 65 deljenih, 95 entitet (oseb 36)** ·
+> popis arhiva Vašega kanala **zaključen** (37 enkratnih člankov 2008–2026, vsi razvrščeni) ·
+> 45 raziskovalnih dokumentov (valovi 1–31) · i18n 946 ključev × 5 jezikov · 13 API poti.
+> Produkcija: **https://griblje-museum.vercel.app** (odprti podatki: `/api/opendata` — 112/564 živo).
+> GitHub: `main` sinhroniziran z origin, Vercel auto-deploy potrjen.
 
 A digital village museum for **Griblje** (Bela krajina, Slovenia) — collection, stories,
 map, events and open data. Built to the standard of award-winning Norwegian museums
@@ -650,13 +657,13 @@ prisma/schema.prisma      # Exhibit, Source, StoryItem, MuseumEvent, GuestbookEn
 prisma/seed.ts            # idempotentni seed z dejstvi iz javnih virov
 src/app/page.tsx          # enostranska aplikacija muzeja
 src/components/museum/    # pogleji: Domov, Zbirka, Zgodbe, Karta, Dogodki, O muzeju, Knjiga, Za kuliso
-src/lib/i18n.tsx          # SLO/HRV/DEU/ITA/EN slovar (783 ključev × 5 jezikov)
+src/lib/i18n.tsx          # SLO/HRV/DEU/ITA/EN slovar (946 ključev × 5 jezikov)
 src/lib/contributions.ts  # moderacija prispevkov (honeypot, hitrost, hevristika)
 src/lib/community-content.ts  # seme vpisov in spominov (git kot CMS)
 src/lib/behind-scenes.ts  # zapisi Za kuliso
 src/app/api/              # REST + odprti podatki
 public/models/            # 3D-modeli (GLB/USDZ, model-viewer + AR)
-research-griblje/         # raziskava vsebin o Gribljah: 4 sintezni dokumenti (raw/ lokalno)
+research-griblje/         # raziskava vsebin o Gribljah: 45 dokumentov (valovi 1–31) + kazala (raw/ lokalno)
 public/images/authentic/  # avtentične fotografije (Wikimedia Commons / javna last)
 ```
 
