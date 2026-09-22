@@ -1,4 +1,4 @@
-# 29. val (78. sklop) — Zenodo API odpre dokaz o Nemastomi: kosca pri Gribljih sta 36 let čakala na ime — nov zapis MVG-112, +1 vir (560), +1 identiteta (442), postaja v sprehodu »Iz Gribelj v svet«
+# 29. val (79. sklop) — Zenodo API odpre dokaz o Nemastomi: kosca pri Gribljih sta 36 let čakala na ime — nov zapis MVG-112, +1 vir (560), +1 identiteta (442), postaja v sprehodu »Iz Gribelj v svet«
 
 **Datum:** 2026-09-22 · **Naročilo:** »odlicno nadaljuj raziskuj« (29. val; nadaljevanje po valih 21–28)
 
