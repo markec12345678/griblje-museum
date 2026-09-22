@@ -244,7 +244,7 @@ section("R0 — AUDIT TRAIL (repo, veriga ponudnikov)");
 
   check(seedExhibits.length === 111, "R0.2 zbirka: 111 zapisov", String(seedExhibits.length));
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 554, "R0.3 zbirka: 554 vrstic virov", String(sourceRows));
+  check(sourceRows === 556, "R0.3 zbirka: 556 vrstic virov", String(sourceRows));
   check(ENTITY_BY_ID.size === 95, "R0.4 registr: 95 entitet", String(ENTITY_BY_ID.size));
 
   // Dejanska podatkovna pot (iz kode, ne iz poročila):
@@ -1661,7 +1661,7 @@ section("R16 — INVARIANTI ZBIRKE (regresija)");
 {
   check(seedExhibits.length === 111, "R16.1 111 zapisov");
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 554, "R16.2 554 vrstic virov");
+  check(sourceRows === 556, "R16.2 556 vrstic virov");
   check(ENTITY_BY_ID.size === 95, "R16.3 95 entitet registra");
   check(ENTITY_QUEUE.length >= 28, "R16.4 kuratorska vrsta ≥ 28 vprašanj", String(ENTITY_QUEUE.length));
   const withTime = seedExhibits.filter((e) => e.periodSi).length;
