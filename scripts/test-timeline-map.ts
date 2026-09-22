@@ -443,8 +443,8 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 109 && new Set(seedExhibits.map((e) => e.museumNo)).size === 109, "T7.1 109 zapisov, 109 MVG številk");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 541, "T7.2 541 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 429, "T7.3 429 identitet virov (22. val: +4 nova virov, -1 koren slovenska-biografija.si — sbl-zupanic na sbi915246)", `=${SOURCE_USAGE.size}`);
+  check(rows === 542, "T7.2 542 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 430, "T7.3 430 identitet virov (23. val: +1 vir SBL sbi753104 — identiteta Pivčana rešena; 22. val: -1 koren slovenska-biografija.si)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 61, "T7.4 61 deljenih virov (≥2 zapisa; sbi915246 deljen med niko-zupanic + katarina-zupanic)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -548,11 +548,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 109 && od.counts?.sources === 541,
-      "T8.3 OpenData: 109 zapisov / 541 virov",
+      od.counts?.exhibits === 109 && od.counts?.sources === 542,
+      "T8.3 OpenData: 109 zapisov / 542 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 541 && totalRows === 541, "T8.4 OpenData sourceKey 541/541", `${withKey}/${totalRows}`);
+    check(withKey === 542 && totalRows === 542, "T8.4 OpenData sourceKey 542/542", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();

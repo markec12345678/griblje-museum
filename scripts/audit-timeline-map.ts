@@ -98,8 +98,8 @@ const persons = entitiesOfKind("person").length;
 const places = entitiesOfKind("place").length;
 const events = entitiesOfKind("event").length;
 const times = entitiesOfKind("time").length;
-check("94 entitet", ENTITIES.length === 94, `=${ENTITIES.length}`);
-check("35 oseb / 26 krajev / 27 dogodkov / 6 časov", persons === 35 && places === 26 && events === 27 && times === 6);
+check("95 entitet", ENTITIES.length === 95, `=${ENTITIES.length}`);
+check("36 oseb / 26 krajev / 27 dogodkov / 6 časov (23. val: + anton-vadnal)", persons === 36 && places === 26 && events === 27 && times === 6);
 check("kuratorska vrsta 28 vprašanj", ENTITY_QUEUE.length === 28);
 check("109 zapisov", exhibits.length === 109);
 
@@ -195,7 +195,7 @@ console.log("=".repeat(72));
 console.log("7) INTEGRITETA PODATKOVNEGA SEMENA (invariante TASK 38)");
 console.log("=".repeat(72));
 const sources = exhibits.reduce((n, ex) => n + ex.sources.length, 0);
-check("541 vrstic virov", sources === 541, `=${sources}`);
+check("542 vrstic virov", sources === 542, `=${sources}`);
 const sourceIndexOk = exhibits.every((ex) =>
   ex.sources.every((_, i) => i >= 0) &&
   ENTITIES.every((e) => e.evidence.every((ev) => {

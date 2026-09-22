@@ -327,13 +327,6 @@ export const WALKS: Walk[] = [
           "Sixteen years before Kostanjevec's school, another pen carried the Griblje inn into the world — under the pseudonym Pivčan. 'The richest man in the village, and the inn famed far around. He trades wine across all Croatia and Slavonia.' The wine that, by that tale, flowed from the village to market flows along this walk too.",
       },
       {
-        exhibitSlug: "bridke-izkusnje-1898",
-        noteSi:
-          "Šestnajst let pred Kostanjevčevo šolo je gribeljsko gostilno v svet nesel drugo pero — pod psevdonimom Pivčan. »Najpremožnejši je v vasi, in gostilna slovi daleč na okoli. Z vinom trguje po vsem Hrvaškem in Slavoniji.« Vino, ki je po tej pripovedi teklo iz vasi na trg, teče tudi po tej poti.",
-        noteEn:
-          "Sixteen years before Kostanjevec's school, another pen carried the Griblje inn into the world — under the pseudonym Pivčan. 'The richest man in the village, and the inn famed far around. He trades wine across all Croatia and Slavonia.' The wine that, by that tale, flowed from the village to market flows along this walk too.",
-      },
-      {
         exhibitSlug: "vino-in-crnina",
         noteSi:
           "Zadnja postaja diši po kletarski: metliška črnina, prvič ustekleničena 1968, danes zaščitena geografska označba.",
