@@ -257,10 +257,10 @@ for (const b of OBJECT_BIOGRAPHIES) {
   }
 }
 
-if (exN === 105) ok("105/105 zapisov"); else err(`zapisov: ${exN}`);
-if (mvgN === 105) ok("105/105 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 527) ok("527 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 416) ok("416 identitet virov (20. val: +4 — biodiverzitetne baze: GBIF lunja, GBIF Tropinota, iNaturalist, GBIF Birda)"); else err(`identitet: ${identities}`);
+if (exN === 108) ok("108/108 zapisov"); else err(`zapisov: ${exN}`);
+if (mvgN === 108) ok("108/108 muzejskih številk"); else err(`MVG: ${mvgN}`);
+if (srcN === 537) ok("537 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 426) ok("426 identitet virov (21. val: +10 — Vaš kanal: 3 novi zapisi (lokostrelstvo, komasacija, odkupne cene) + 6 add-only virov + 1 WP)"); else err(`identitet: ${identities}`);
 if (shared === 60) ok("60 deljenih virov"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
