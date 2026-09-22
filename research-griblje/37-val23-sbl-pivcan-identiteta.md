@@ -1,6 +1,6 @@
 # 37 — 23. VAL: SBL REŠI IDENTITETO PIVČANA — ANTON VADNAL (1876–1935), POPRAVEK LETNIKA, KANONIČNI dLib, NAPOLEONSKA DOBA
 
-*73. sklop · 2026-09-22 · naročilo: „odlicno nadaljuj raziskuj"*
+*72. sklop · 2026-09-22 · naročilo: „odlicno nadaljuj raziskuj"*
 
 ## Naročilo in cilj
 
