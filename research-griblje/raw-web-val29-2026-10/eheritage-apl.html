@@ -1,0 +1,702 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+
+</title><link rel="stylesheet" type="text/css" href="style.css" />
+    <style type="text/css">
+        .style11
+        {
+            width: 100%;
+        }
+        .style12
+        {
+            width: 121px;
+        }
+        .style13
+        {
+            width: 127px;
+        }
+        .butt
+        {
+            cursor: pointer;
+            display: block;
+            position: relative;
+            width: 58px;
+            height: 34px;
+            background: #00F;
+            border-radius: 7px;
+            color: white;
+            padding: 7px;
+            background: #ff0000;
+            color: Black;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 11pt;
+        }
+        .style14
+        {
+            width: 21px;
+        }
+
+#slideshow {
+    position:relative;
+    height:350px;
+    z-index:-1;
+}
+  
+#slideshow {
+    position:relative;
+    height:0px;
+    z-index:-1;
+}
+  
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+  
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+  
+#slideshow IMG.last-active {
+    z-index:9;
+}
+  
+#slideshow img {
+    /* Set rules to fill background */
+    min-height: 100%;
+    /* min-width: 1024px; */
+  
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+  
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+@media screen and (max-width: 1024px){
+    img.bg {
+    left: 50%;
+    margin-left: -512px;
+}
+}
+        .stilt
+        {
+            font-family: Arial;
+            font-size: 11pt;
+        }
+ </style>
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" type="text/css" href="not-ie.css" />
+    <!--<![endif]-->
+    <script language="javascript">
+        function toggle() {
+            var ele = document.getElementById("toggleText");
+            var text = document.getElementById("displayText");
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+                text.innerHTML = "podrobno";
+            }
+            else {
+                ele.style.display = "block";
+                text.innerHTML = "enostavno";
+            }
+        } 
+    </script>
+    <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+   <script type="text/javascript">
+
+       function slideSwitch() {
+
+           var $active = $('#slideshow IMG.active');
+
+           if ($active.length == 0) $active = $('#slideshow IMG:last');
+
+           // use this to pull the images in the order they appear in the markup
+           var $next = $active.next().length ? $active.next()
+			: $('#slideshow IMG:first');
+
+           // uncomment the 3 lines below to pull the images in random order
+
+           var $sibs = $active.siblings();
+           var rndNum = Math.floor(Math.random() * $sibs.length);
+           var $next = $($sibs[rndNum]);
+
+           $active.addClass('last-active');
+
+           $next.css({ opacity: 0.0 })
+			.addClass('active')
+			.animate({ opacity: 1.0 }, 1000, function () {
+			    $active.removeClass('active last-active');
+			});
+       }
+
+       // $(document).ready(function () {
+      //      document.getElementById("slideshow").style.display = "block"
+       //   });
+
+       $(function () {
+           setInterval("slideSwitch()", 7000);
+       });
+
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = { "message": "Ta stran uporablja piškotke. Z nadaljevanjem uporabe te strani soglašate z uporabo piškotkov.", "dismiss": "Naprej", "learnMore": "Več o piškotkih", "link": "piskotki.aspx", "theme": "dark-bottom" };
+</script>
+
+<script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142529664-1"></script><script>window.dataLayer = window.dataLayer || [];  function gtag()  {dataLayer.push(arguments); }  gtag('js', new Date());  gtag('config', 'UA-142529664-1');</script></head>
+
+
+<body onload="setTokens();">
+
+
+        <form name="form1" method="post" action="./" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTk5NDQ0MDYzMA9kFgICAw9kFgoCAw9kFgICAQ88KwANAQw8KwAFAQQUKwACFgYeBFRleHQFMDxkaXYgc3R5bGU9J2NvbG9yOiBsaWdodGdyZXknPk1vamUgdnNlYmluZTwvZGl2Ph4KU2VsZWN0YWJsZWgeCFNlbGVjdGVkaGRkAhEPEA8WAh4LXyFEYXRhQm91bmRnZBAVCgAHbmV6bmFubxZhcmhlb2xvxaFrYSBuYWpkacWhxI1hBnN0YXZiZQ9wYXJraSBpbiB2cnRvdmkYc3RhdmJlIHMgcGFya2kgaW4gdnJ0b3ZpFnNwb20uIG9iamVrdGkgaW4ga3JhamkYZHJ1Z2kgb2JqZWt0aSBpbiBuYXByYXZlF25hc2VsamEgaW4gbmppaG92aSBkZWxpEGt1bHR1cm5hIGtyYWppbmEVCgAHbmV6bmFubxZhcmhlb2xvxaFrYSBuYWpkacWhxI1hBnN0YXZiZQ9wYXJraSBpbiB2cnRvdmkYc3RhdmJlIHMgcGFya2kgaW4gdnJ0b3ZpFnNwb20uIG9iamVrdGkgaW4ga3JhamkYZHJ1Z2kgb2JqZWt0aSBpbiBuYXByYXZlF25hc2VsamEgaW4gbmppaG92aSBkZWxpEGt1bHR1cm5hIGtyYWppbmEUKwMKZ2dnZ2dnZ2dnZ2RkAhUPEA8WAh8DZ2QQFdUBAAxBSkRPVsWgxIxJTkEIQkVMVElOQ0kEQkxFRAZCT0hJTkoJQk9ST1ZOSUNBBUJPVkVDBEJSREEJQlJFWk9WSUNBCEJSRcW9SUNFB1RJxaBJTkEFQ0VMSkUVQ0VSS0xKRSBOQSBHT1JFTkpTS0VNCENFUktOSUNBBkNFUktOTwvEjFJFTsWgT1ZDSRLEjFJOQSBOQSBLT1JPxaBLRU0JxIxSTk9NRUxKCERFU1RSTklLB0RJVkHEjEEKRE9CUkVQT0xKRRVET0JST1ZBLVBPTEhPViBHUkFERUMRRE9MIFBSSSBMSlVCTEpBTkkIRE9Nxb1BTEUHRE9STkFWQQlEUkFWT0dSQUQGRFVQTEVLE0dPUkVOSkEgVkFTLVBPTEpBTkUKR09SScWgTklDQQ5HT1JOSkEgUkFER09OQQtHT1JOSkkgR1JBRA9HT1JOSkkgUEVUUk9WQ0kJR1JPU1VQTEpFCMWgQUxPVkNJCEhSQVNUTklLDkhSUEVMSkUtS09aSU5BBklEUklKQQJJRxBJTElSU0tBIEJJU1RSSUNBD0lWQU7EjE5BIEdPUklDQQVJWk9MQQhKRVNFTklDRQlKVVLFoElOQ0kGS0FNTklLBUtBTkFMCktJRFJJxIxFVk8HS09CQVJJRAdLT0JJTEpFCEtPxIxFVkpFBUtPTUVOBUtPUEVSBUtPWkpFBUtSQU5KDUtSQU5KU0tBIEdPUkEGS1LFoEtPB0tVTkdPVEEFS1VaTUEGTEHFoEtPBkxFTkFSVAdMRU5EQVZBBkxJVElKQQlMSlVCTEpBTkEGTEpVQk5PCExKVVRPTUVSB0xPR0FURUMNTE/FoEtBIERPTElOQQxMT8WgS0kgUE9UT0sFTFXEjEUITFVLT1ZJQ0EJTUFKxaBQRVJLB01BUklCT1IHTUVEVk9ERQdNRU5HRcWgB01FVExJS0EHTUXFvUlDQRJNSVJFTi1LT1NUQU5KRVZJQ0EITUlTTElOSkEITU9SQVbEjEUQTU9SQVZTS0UgVE9QTElDRQdNT1pJUkpFDU1VUlNLQSBTT0JPVEEETVVUQQVOQUtMTwdOQVpBUkpFC05PVkEgR09SSUNBCk5PVk8gTUVTVE8HT0RSQU5DSQZPUk1Pxb0IT1NJTE5JQ0EHUEVTTklDQQVQSVJBTgVQSVZLQQtQT0TEjEVUUlRFSwhQT0RWRUxLQQhQT1NUT0pOQQhQUkVERFZPUgRQVFVKB1BVQ09OQ0kKUkHEjEUtRlJBTQdSQURFxIxFB1JBREVOQ0kPUkFETEpFIE9CIERSQVZJClJBRE9WTEpJQ0ESUkFWTkUgTkEgS09ST8WgS0VNB1JJQk5JQ0EKUk9HQcWgT1ZDSRBST0dBxaBLQSBTTEFUSU5BB1JPR0FURUMFUlXFoEUGU0VNScSMB1NFVk5JQ0EHU0XFvUFOQQ5TTE9WRU5KIEdSQURFQxJTTE9WRU5TS0EgQklTVFJJQ0ERU0xPVkVOU0tFIEtPTkpJQ0UHU1RBUsWgRQtTVkVUSSBKVVJJSgjFoEVOxIxVUgjFoEVOVElMSgvFoEVOVEpFUk5FSgjFoEVOVEpVUgjFoEtPQ0pBTgzFoEtPRkpBIExPS0EKxaBLT0ZMSklDQRPFoE1BUkpFIFBSSSBKRUzFoEFIEMWgTUFSVE5PIE9CIFBBS0kJxaBPxaBUQU5KBsWgVE9SRQZUT0xNSU4IVFJCT1ZMSkUHVFJFQk5KRQdUUsW9ScSMClRVUk5JxaDEjEUHVkVMRU5KRQ5WRUxJS0UgTEHFoMSMRQVWSURFTQZWSVBBVkEHVklUQU5KRQZWT0RJQ0UGVk9KTklLB1ZSSE5JS0EIVlVaRU5JQ0EPWkFHT1JKRSBPQiBTQVZJBlpBVlLEjAZaUkXEjEUKxb1FTEVaTklLSQXFvUlSSQhCRU5FRElLVBFCSVNUUklDQSBPQiBTT1RMSQVCTE9LRQpCUkFTTE9WxIxFB0NBTktPVkEKQ0VSS1ZFTkpBSwVET0JKRQZET0JSTkEJRE9CUk9WTklLEURPTEVOSlNLRSBUT1BMSUNFBEdSQUQHSEFKRElOQQ5IT8SMRS1TTElWTklDQQZIT0RPxaAGSE9SSlVMCEpFWkVSU0tPB0tPTUVOREEGS09TVEVMCUtSScW9RVZDSRJMT1ZSRU5DIE5BIFBPSE9SSlUITUFSS09WQ0kaTUlLTEFWxb0gTkEgRFJBVlNLRU0gUE9MSlUKTUlSTkEgUEXEjAlPUExPVE5JQ0EJUE9ETEVITklLB1BPTFpFTEEHUFJFQk9MRAhQUkVWQUxKRQpSQVpLUknFvUpFElJJQk5JQ0EgTkEgUE9IT1JKVRBTRUxOSUNBIE9CIERSQVZJClNPRFJBxb1JQ0EIU09MxIxBVkEJU1ZFVEEgQU5BHVNWRVRJIEFORFJBxb0gViBTTE9WLiBHT1JJQ0FIEcWgRU1QRVRFUi1WUlRPSkJBBVRBQk9SDFRSTk9WU0tBIFZBUwVUUlpJTg1WRUxJS0EgUE9MQU5BB1ZFUsW9RUoHVlJBTlNLTwbFvUFMRUMHxb1FVEFMRQrFvUlST1ZOSUNBC8W9VcW9RU1CRVJLE8WgTUFSVE5PIFBSSSBMSVRJSkkGQVBBxIxFCUNJUktVTEFORRRLT1NUQU5KRVZJQ0EgTkEgS1JLSQZNQUtPTEURTU9LUk9OT0ctVFJFQkVMTk8JUE9MSsSMQU5FDlJFTsSMRS1WT0dSU0tPE1NSRURJxaDEjEUgT0IgRFJBVkkHU1RSQcW9QRtTVi4gVFJPSklDQSBWIFNMT1YuIEdPUklDQUgMU1ZFVEkgVE9NQcW9E8WgTUFSSkXFoEtFIFRPUExJQ0UFR09SSkUMTE9HLURSQUdPTUVSElJFxIxJQ0EgT0IgU0FWSU5KSRtTVkVUSSBKVVJJSiBWIFNMT1YuIEdPUklDQUgLxaBFTlRSVVBFUlQFTUlSTkEGT1NUQUxPFdUBAAxBSkRPVsWgxIxJTkEIQkVMVElOQ0kEQkxFRAZCT0hJTkoJQk9ST1ZOSUNBBUJPVkVDBEJSREEJQlJFWk9WSUNBCEJSRcW9SUNFB1RJxaBJTkEFQ0VMSkUVQ0VSS0xKRSBOQSBHT1JFTkpTS0VNCENFUktOSUNBBkNFUktOTwvEjFJFTsWgT1ZDSRLEjFJOQSBOQSBLT1JPxaBLRU0JxIxSTk9NRUxKCERFU1RSTklLB0RJVkHEjEEKRE9CUkVQT0xKRRVET0JST1ZBLVBPTEhPViBHUkFERUMRRE9MIFBSSSBMSlVCTEpBTkkIRE9Nxb1BTEUHRE9STkFWQQlEUkFWT0dSQUQGRFVQTEVLE0dPUkVOSkEgVkFTLVBPTEpBTkUKR09SScWgTklDQQ5HT1JOSkEgUkFER09OQQtHT1JOSkkgR1JBRA9HT1JOSkkgUEVUUk9WQ0kJR1JPU1VQTEpFCMWgQUxPVkNJCEhSQVNUTklLDkhSUEVMSkUtS09aSU5BBklEUklKQQJJRxBJTElSU0tBIEJJU1RSSUNBD0lWQU7EjE5BIEdPUklDQQVJWk9MQQhKRVNFTklDRQlKVVLFoElOQ0kGS0FNTklLBUtBTkFMCktJRFJJxIxFVk8HS09CQVJJRAdLT0JJTEpFCEtPxIxFVkpFBUtPTUVOBUtPUEVSBUtPWkpFBUtSQU5KDUtSQU5KU0tBIEdPUkEGS1LFoEtPB0tVTkdPVEEFS1VaTUEGTEHFoEtPBkxFTkFSVAdMRU5EQVZBBkxJVElKQQlMSlVCTEpBTkEGTEpVQk5PCExKVVRPTUVSB0xPR0FURUMNTE/FoEtBIERPTElOQQxMT8WgS0kgUE9UT0sFTFXEjEUITFVLT1ZJQ0EJTUFKxaBQRVJLB01BUklCT1IHTUVEVk9ERQdNRU5HRcWgB01FVExJS0EHTUXFvUlDQRJNSVJFTi1LT1NUQU5KRVZJQ0EITUlTTElOSkEITU9SQVbEjEUQTU9SQVZTS0UgVE9QTElDRQdNT1pJUkpFDU1VUlNLQSBTT0JPVEEETVVUQQVOQUtMTwdOQVpBUkpFC05PVkEgR09SSUNBCk5PVk8gTUVTVE8HT0RSQU5DSQZPUk1Pxb0IT1NJTE5JQ0EHUEVTTklDQQVQSVJBTgVQSVZLQQtQT0TEjEVUUlRFSwhQT0RWRUxLQQhQT1NUT0pOQQhQUkVERFZPUgRQVFVKB1BVQ09OQ0kKUkHEjEUtRlJBTQdSQURFxIxFB1JBREVOQ0kPUkFETEpFIE9CIERSQVZJClJBRE9WTEpJQ0ESUkFWTkUgTkEgS09ST8WgS0VNB1JJQk5JQ0EKUk9HQcWgT1ZDSRBST0dBxaBLQSBTTEFUSU5BB1JPR0FURUMFUlXFoEUGU0VNScSMB1NFVk5JQ0EHU0XFvUFOQQ5TTE9WRU5KIEdSQURFQxJTTE9WRU5TS0EgQklTVFJJQ0ERU0xPVkVOU0tFIEtPTkpJQ0UHU1RBUsWgRQtTVkVUSSBKVVJJSgjFoEVOxIxVUgjFoEVOVElMSgvFoEVOVEpFUk5FSgjFoEVOVEpVUgjFoEtPQ0pBTgzFoEtPRkpBIExPS0EKxaBLT0ZMSklDQRPFoE1BUkpFIFBSSSBKRUzFoEFIEMWgTUFSVE5PIE9CIFBBS0kJxaBPxaBUQU5KBsWgVE9SRQZUT0xNSU4IVFJCT1ZMSkUHVFJFQk5KRQdUUsW9ScSMClRVUk5JxaDEjEUHVkVMRU5KRQ5WRUxJS0UgTEHFoMSMRQVWSURFTQZWSVBBVkEHVklUQU5KRQZWT0RJQ0UGVk9KTklLB1ZSSE5JS0EIVlVaRU5JQ0EPWkFHT1JKRSBPQiBTQVZJBlpBVlLEjAZaUkXEjEUKxb1FTEVaTklLSQXFvUlSSQhCRU5FRElLVBFCSVNUUklDQSBPQiBTT1RMSQVCTE9LRQpCUkFTTE9WxIxFB0NBTktPVkEKQ0VSS1ZFTkpBSwVET0JKRQZET0JSTkEJRE9CUk9WTklLEURPTEVOSlNLRSBUT1BMSUNFBEdSQUQHSEFKRElOQQ5IT8SMRS1TTElWTklDQQZIT0RPxaAGSE9SSlVMCEpFWkVSU0tPB0tPTUVOREEGS09TVEVMCUtSScW9RVZDSRJMT1ZSRU5DIE5BIFBPSE9SSlUITUFSS09WQ0kaTUlLTEFWxb0gTkEgRFJBVlNLRU0gUE9MSlUKTUlSTkEgUEXEjAlPUExPVE5JQ0EJUE9ETEVITklLB1BPTFpFTEEHUFJFQk9MRAhQUkVWQUxKRQpSQVpLUknFvUpFElJJQk5JQ0EgTkEgUE9IT1JKVRBTRUxOSUNBIE9CIERSQVZJClNPRFJBxb1JQ0EIU09MxIxBVkEJU1ZFVEEgQU5BHVNWRVRJIEFORFJBxb0gViBTTE9WLiBHT1JJQ0FIEcWgRU1QRVRFUi1WUlRPSkJBBVRBQk9SDFRSTk9WU0tBIFZBUwVUUlpJTg1WRUxJS0EgUE9MQU5BB1ZFUsW9RUoHVlJBTlNLTwbFvUFMRUMHxb1FVEFMRQrFvUlST1ZOSUNBC8W9VcW9RU1CRVJLE8WgTUFSVE5PIFBSSSBMSVRJSkkGQVBBxIxFCUNJUktVTEFORRRLT1NUQU5KRVZJQ0EgTkEgS1JLSQZNQUtPTEURTU9LUk9OT0ctVFJFQkVMTk8JUE9MSsSMQU5FDlJFTsSMRS1WT0dSU0tPE1NSRURJxaDEjEUgT0IgRFJBVkkHU1RSQcW9QRtTVi4gVFJPSklDQSBWIFNMT1YuIEdPUklDQUgMU1ZFVEkgVE9NQcW9E8WgTUFSSkXFoEtFIFRPUExJQ0UFR09SSkUMTE9HLURSQUdPTUVSElJFxIxJQ0EgT0IgU0FWSU5KSRtTVkVUSSBKVVJJSiBWIFNMT1YuIEdPUklDQUgLxaBFTlRSVVBFUlQFTUlSTkEGT1NUQUxPFCsD1QFnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIZDxAPFgIfA2dkEBUJAApaVktEIENlbGplEFpWS0QgTm92YSBHb3JpY2EKWlZLRCBLcmFuag5aVktEIExqdWJsamFuYQxaVktEIE1hcmlib3IPWlZLRCBOb3ZvIG1lc3RvClpWS0QgUGlyYW4Gb3N0YWxvFQkAClpWS0QgQ2VsamUQWlZLRCBOb3ZhIEdvcmljYQpaVktEIEtyYW5qDlpWS0QgTGp1YmxqYW5hDFpWS0QgTWFyaWJvcg9aVktEIE5vdm8gbWVzdG8KWlZLRCBQaXJhbgZvc3RhbG8UKwMJZ2dnZ2dnZ2dnZGQCHQ8QDxYCHwNnZBAVBAAZc3BvbWVuaWsgbG9rYWxuZWdhIHBvbWVuYRpzcG9tZW5payBkcsW+YXZuZWdhIHBvbWVuYQEtFQQAGXNwb21lbmlrIGxva2FsbmVnYSBwb21lbmEac3BvbWVuaWsgZHLFvmF2bmVnYSBwb21lbmEBLRQrAwRnZ2dnZGQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFDEltYWdlQnV0dG9uMQUFTWVudTEPD2QFC0RlZGnFocSNaW5hZGDvXN105ZK0KHF+U5W0tYf/eAvru2ckIRSpVj3L30Yt" />
+
+
+<script src="/apl/WebResource.axd?d=TEu9wxY9GMmGpj18mmvkJW6hNcNbVdktG9I6_k9toqDolNGTjl9Np5OHgkrFlsQMgX1dJr-nFvi3kon-5Tf5vRmV35-qFE_alT_LSjseRmE1&amp;t=637100573640000000" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="990B5162" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+          <div id="Div1" horizontalalign="right" align="right" style="background-color: #000066; border-color: #000066; border-width: 0px 0px 0px 0px; width: 100%; border-right-style: solid;">
+             
+             <a href="#Menu2_SkipLink"><img alt="Skip Navigation Links" src="/apl/WebResource.axd?d=7oyvNXtyDPP8xi3EE-7-DicwIg35xdOJRL1vunHlVeSnLv1G5NGPoRBQj6o2e1mwM7azgsMSsN_2YSh_icE8wXBw6nCYkICI8-rzIcraggg1&amp;t=637100573640000000" width="0" height="0" border="0" /></a><table id="Menu2" cellpadding="0" cellspacing="0" border="0" height="16" width="200" style="text-align: right; font-size: 8pt; color: #6699FF; font-family: Arial;">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu2n0"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td nowrap="nowrap"><a href="Default.aspx" target="_self"><font color="White" size="1">Doma</font></a></td>
+			</tr>
+		</table></td><td width="15"></td><td width="15"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu2n1"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td nowrap="nowrap"><a href="Pomoc.aspx" target="_blank"><font color="White" size="1">Pomoč</font></a></td>
+			</tr>
+		</table></td><td width="15"></td><td width="15"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu2n2"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td nowrap="nowrap"><a href="Pripombe.aspx" target="_self"><font color="White" size="1">Sporočilo</font></a></td>
+			</tr>
+		</table></td><td width="15"></td>
+	</tr>
+</table><a id="Menu2_SkipLink"></a>
+                   </div>
+       
+           <div style="background: white; width:915px; border-left-style: solid; border-left-width: 0px; border-left-color: #FFFFFF;">
+             <table cellpadding="0" style="border-color: #FFFFFF #FFFFFF #00A8EF #FFFFFF; border-style: solid; 
+                 background: white; margin: 0px; border-width: 0px 0px 2px 0px;" cellspacing="0">
+            <tr>
+                <td align="center" colspan="2">
+				<a href="http://www.eheritage.si/apl/">
+                <img alt="" src="images/LogoHer.jpg" align="left" />
+				</a>
+                </td>
+            </tr>
+            <tr style="text-align: left;">
+                <td align="center" 
+                    text-align: left;" width="500px">
+                    &nbsp;
+                </td>
+                <td align="right" text-align = left;">
+                    <div id="Panel4" horizontalalign="right" align="right">
+                       <a href="#Menu1_SkipLink"><img alt="Skip Navigation Links" src="/apl/WebResource.axd?d=7oyvNXtyDPP8xi3EE-7-DicwIg35xdOJRL1vunHlVeSnLv1G5NGPoRBQj6o2e1mwM7azgsMSsN_2YSh_icE8wXBw6nCYkICI8-rzIcraggg1&amp;t=637100573640000000" width="0" height="0" border="0" /></a><table id="Menu1" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: right">
+	<tr>
+		<td onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n0"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;Menu1&#39;,&#39;Dediščina&#39;)"><b><font face="Arial" color="#0099FF" size="3">Dediščina</font></b></a></td>
+			</tr>
+		</table></td><td width="20"></td><td width="20"></td><td onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n1"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td nowrap="nowrap"><a href="Map.aspx"><b><font face="Arial" color="Black" size="3">Karta</font></b></a></td>
+			</tr>
+		</table></td><td width="20"></td><td width="20"></td><td onmouseover="Menu_HoverRoot(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="Menu1n2"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td nowrap="nowrap"><a href="Search.aspx"><b><font face="Arial" color="Black" size="3">Digitalne vsebine</font></b></a></td>
+			</tr>
+		</table></td><td width="20"></td><td width="20"></td><td id="Menu1n3"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td nowrap="nowrap"><a><b><font face="Arial" color="Black" size="3"><div style='color: lightgrey'>Moje vsebine</div></font></b></a></td>
+			</tr>
+		</table></td><td width="20"></td>
+	</tr>
+</table><a id="Menu1_SkipLink"></a>
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+                    <table  style="border-bottom: 1px solid #0066FF; width: 900px; font-family: arial;
+                        font-size: 11pt;">
+                        <tr>
+                            <td class="style12" valign="middle">
+                                <strong><font size="2">iskanje dediščine</font></strong>:
+                            </td>
+                            <td valign="middle" width="226px">
+                                <input name="tbiskanje" type="text" id="tbiskanje" class="stilt" border="1" />
+                            </td>
+                            <td valign="middle" class="style14">
+                                <input type="submit" name="btnIskanje" value="Najdi" id="btnIskanje" class="butt" />
+                            </td>
+                            <td valign="middle" align="left" style="text-align: left">
+                                <div style="float:left;"> <a id="displayText" href="javascript:toggle();"><span>podrobno</span></a>
+                                 <input name="TextBox1" type="text" id="TextBox1" class="stilt" border="1" />
+                                </div>
+                                <div style="float:left;"> <strong><font size="2">  ime:</font></strong>
+                                <input name="TextBox2" type="text" id="TextBox2" class="stilt" border="1" /> </div>
+                                <div style="position: absolute; right: 140px; top:116px; z-index:999;">
+                                 <iframe  src="http://eheritage.eculturelab.eu/solr/index3.html" scrolling="no" 
+                                width="255px" height="140px" frameborder="0" allowTransparency="true"></iframe>
+                                </div>
+
+                                <div style="float:right;border-top:3px;"> <strong><font size="2">ešd:</font></strong> 
+                                    <input name="tbxEsd" type="text" id="tbxEsd" class="stilt" border="1" />&nbsp;<input type="image" name="ImageButton1" id="ImageButton1" src="Images/Isci.gif" align="absmiddle" border="0" style="width: 10px" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9" colspan="4">
+                                <div id="toggleText" style="display: none">
+                                    <table class="style11">
+                                        <tr>
+                                            <td class="style13">
+                                                zvrst:
+                                            </td>
+                                            <td valign="top">
+                                                <select name="ddzvrst" id="ddzvrst" style="font-family: Arial; font-size: 11pt">
+	<option value=""></option>
+	<option value="neznano">neznano</option>
+	<option value="arheološka najdišča">arheološka najdišča</option>
+	<option value="stavbe">stavbe</option>
+	<option value="parki in vrtovi">parki in vrtovi</option>
+	<option value="stavbe s parki in vrtovi">stavbe s parki in vrtovi</option>
+	<option value="spom. objekti in kraji">spom. objekti in kraji</option>
+	<option value="drugi objekti in naprave">drugi objekti in naprave</option>
+	<option value="naselja in njihovi deli">naselja in njihovi deli</option>
+	<option value="kulturna krajina">kulturna krajina</option>
+
+</select>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style13">
+                                                občina:
+                                            </td>
+                                            <td valign="top">
+                                                <select name="ddobcina" id="ddobcina" style="font-family: Arial; font-size: 11pt">
+	<option value=""></option>
+	<option value="AJDOVŠČINA">AJDOVŠČINA</option>
+	<option value="BELTINCI">BELTINCI</option>
+	<option value="BLED">BLED</option>
+	<option value="BOHINJ">BOHINJ</option>
+	<option value="BOROVNICA">BOROVNICA</option>
+	<option value="BOVEC">BOVEC</option>
+	<option value="BRDA">BRDA</option>
+	<option value="BREZOVICA">BREZOVICA</option>
+	<option value="BREŽICE">BREŽICE</option>
+	<option value="TIŠINA">TIŠINA</option>
+	<option value="CELJE">CELJE</option>
+	<option value="CERKLJE NA GORENJSKEM">CERKLJE NA GORENJSKEM</option>
+	<option value="CERKNICA">CERKNICA</option>
+	<option value="CERKNO">CERKNO</option>
+	<option value="ČRENŠOVCI">ČRENŠOVCI</option>
+	<option value="ČRNA NA KOROŠKEM">ČRNA NA KOROŠKEM</option>
+	<option value="ČRNOMELJ">ČRNOMELJ</option>
+	<option value="DESTRNIK">DESTRNIK</option>
+	<option value="DIVAČA">DIVAČA</option>
+	<option value="DOBREPOLJE">DOBREPOLJE</option>
+	<option value="DOBROVA-POLHOV GRADEC">DOBROVA-POLHOV GRADEC</option>
+	<option value="DOL PRI LJUBLJANI">DOL PRI LJUBLJANI</option>
+	<option value="DOMŽALE">DOMŽALE</option>
+	<option value="DORNAVA">DORNAVA</option>
+	<option value="DRAVOGRAD">DRAVOGRAD</option>
+	<option value="DUPLEK">DUPLEK</option>
+	<option value="GORENJA VAS-POLJANE">GORENJA VAS-POLJANE</option>
+	<option value="GORIŠNICA">GORIŠNICA</option>
+	<option value="GORNJA RADGONA">GORNJA RADGONA</option>
+	<option value="GORNJI GRAD">GORNJI GRAD</option>
+	<option value="GORNJI PETROVCI">GORNJI PETROVCI</option>
+	<option value="GROSUPLJE">GROSUPLJE</option>
+	<option value="ŠALOVCI">ŠALOVCI</option>
+	<option value="HRASTNIK">HRASTNIK</option>
+	<option value="HRPELJE-KOZINA">HRPELJE-KOZINA</option>
+	<option value="IDRIJA">IDRIJA</option>
+	<option value="IG">IG</option>
+	<option value="ILIRSKA BISTRICA">ILIRSKA BISTRICA</option>
+	<option value="IVANČNA GORICA">IVANČNA GORICA</option>
+	<option value="IZOLA">IZOLA</option>
+	<option value="JESENICE">JESENICE</option>
+	<option value="JURŠINCI">JURŠINCI</option>
+	<option value="KAMNIK">KAMNIK</option>
+	<option value="KANAL">KANAL</option>
+	<option value="KIDRIČEVO">KIDRIČEVO</option>
+	<option value="KOBARID">KOBARID</option>
+	<option value="KOBILJE">KOBILJE</option>
+	<option value="KOČEVJE">KOČEVJE</option>
+	<option value="KOMEN">KOMEN</option>
+	<option value="KOPER">KOPER</option>
+	<option value="KOZJE">KOZJE</option>
+	<option value="KRANJ">KRANJ</option>
+	<option value="KRANJSKA GORA">KRANJSKA GORA</option>
+	<option value="KRŠKO">KRŠKO</option>
+	<option value="KUNGOTA">KUNGOTA</option>
+	<option value="KUZMA">KUZMA</option>
+	<option value="LAŠKO">LAŠKO</option>
+	<option value="LENART">LENART</option>
+	<option value="LENDAVA">LENDAVA</option>
+	<option value="LITIJA">LITIJA</option>
+	<option value="LJUBLJANA">LJUBLJANA</option>
+	<option value="LJUBNO">LJUBNO</option>
+	<option value="LJUTOMER">LJUTOMER</option>
+	<option value="LOGATEC">LOGATEC</option>
+	<option value="LOŠKA DOLINA">LOŠKA DOLINA</option>
+	<option value="LOŠKI POTOK">LOŠKI POTOK</option>
+	<option value="LUČE">LUČE</option>
+	<option value="LUKOVICA">LUKOVICA</option>
+	<option value="MAJŠPERK">MAJŠPERK</option>
+	<option value="MARIBOR">MARIBOR</option>
+	<option value="MEDVODE">MEDVODE</option>
+	<option value="MENGEŠ">MENGEŠ</option>
+	<option value="METLIKA">METLIKA</option>
+	<option value="MEŽICA">MEŽICA</option>
+	<option value="MIREN-KOSTANJEVICA">MIREN-KOSTANJEVICA</option>
+	<option value="MISLINJA">MISLINJA</option>
+	<option value="MORAVČE">MORAVČE</option>
+	<option value="MORAVSKE TOPLICE">MORAVSKE TOPLICE</option>
+	<option value="MOZIRJE">MOZIRJE</option>
+	<option value="MURSKA SOBOTA">MURSKA SOBOTA</option>
+	<option value="MUTA">MUTA</option>
+	<option value="NAKLO">NAKLO</option>
+	<option value="NAZARJE">NAZARJE</option>
+	<option value="NOVA GORICA">NOVA GORICA</option>
+	<option value="NOVO MESTO">NOVO MESTO</option>
+	<option value="ODRANCI">ODRANCI</option>
+	<option value="ORMOŽ">ORMOŽ</option>
+	<option value="OSILNICA">OSILNICA</option>
+	<option value="PESNICA">PESNICA</option>
+	<option value="PIRAN">PIRAN</option>
+	<option value="PIVKA">PIVKA</option>
+	<option value="PODČETRTEK">PODČETRTEK</option>
+	<option value="PODVELKA">PODVELKA</option>
+	<option value="POSTOJNA">POSTOJNA</option>
+	<option value="PREDDVOR">PREDDVOR</option>
+	<option value="PTUJ">PTUJ</option>
+	<option value="PUCONCI">PUCONCI</option>
+	<option value="RAČE-FRAM">RAČE-FRAM</option>
+	<option value="RADEČE">RADEČE</option>
+	<option value="RADENCI">RADENCI</option>
+	<option value="RADLJE OB DRAVI">RADLJE OB DRAVI</option>
+	<option value="RADOVLJICA">RADOVLJICA</option>
+	<option value="RAVNE NA KOROŠKEM">RAVNE NA KOROŠKEM</option>
+	<option value="RIBNICA">RIBNICA</option>
+	<option value="ROGAŠOVCI">ROGAŠOVCI</option>
+	<option value="ROGAŠKA SLATINA">ROGAŠKA SLATINA</option>
+	<option value="ROGATEC">ROGATEC</option>
+	<option value="RUŠE">RUŠE</option>
+	<option value="SEMIČ">SEMIČ</option>
+	<option value="SEVNICA">SEVNICA</option>
+	<option value="SEŽANA">SEŽANA</option>
+	<option value="SLOVENJ GRADEC">SLOVENJ GRADEC</option>
+	<option value="SLOVENSKA BISTRICA">SLOVENSKA BISTRICA</option>
+	<option value="SLOVENSKE KONJICE">SLOVENSKE KONJICE</option>
+	<option value="STARŠE">STARŠE</option>
+	<option value="SVETI JURIJ">SVETI JURIJ</option>
+	<option value="ŠENČUR">ŠENČUR</option>
+	<option value="ŠENTILJ">ŠENTILJ</option>
+	<option value="ŠENTJERNEJ">ŠENTJERNEJ</option>
+	<option value="ŠENTJUR">ŠENTJUR</option>
+	<option value="ŠKOCJAN">ŠKOCJAN</option>
+	<option value="ŠKOFJA LOKA">ŠKOFJA LOKA</option>
+	<option value="ŠKOFLJICA">ŠKOFLJICA</option>
+	<option value="ŠMARJE PRI JELŠAH">ŠMARJE PRI JELŠAH</option>
+	<option value="ŠMARTNO OB PAKI">ŠMARTNO OB PAKI</option>
+	<option value="ŠOŠTANJ">ŠOŠTANJ</option>
+	<option value="ŠTORE">ŠTORE</option>
+	<option value="TOLMIN">TOLMIN</option>
+	<option value="TRBOVLJE">TRBOVLJE</option>
+	<option value="TREBNJE">TREBNJE</option>
+	<option value="TRŽIČ">TRŽIČ</option>
+	<option value="TURNIŠČE">TURNIŠČE</option>
+	<option value="VELENJE">VELENJE</option>
+	<option value="VELIKE LAŠČE">VELIKE LAŠČE</option>
+	<option value="VIDEM">VIDEM</option>
+	<option value="VIPAVA">VIPAVA</option>
+	<option value="VITANJE">VITANJE</option>
+	<option value="VODICE">VODICE</option>
+	<option value="VOJNIK">VOJNIK</option>
+	<option value="VRHNIKA">VRHNIKA</option>
+	<option value="VUZENICA">VUZENICA</option>
+	<option value="ZAGORJE OB SAVI">ZAGORJE OB SAVI</option>
+	<option value="ZAVRČ">ZAVRČ</option>
+	<option value="ZREČE">ZREČE</option>
+	<option value="ŽELEZNIKI">ŽELEZNIKI</option>
+	<option value="ŽIRI">ŽIRI</option>
+	<option value="BENEDIKT">BENEDIKT</option>
+	<option value="BISTRICA OB SOTLI">BISTRICA OB SOTLI</option>
+	<option value="BLOKE">BLOKE</option>
+	<option value="BRASLOVČE">BRASLOVČE</option>
+	<option value="CANKOVA">CANKOVA</option>
+	<option value="CERKVENJAK">CERKVENJAK</option>
+	<option value="DOBJE">DOBJE</option>
+	<option value="DOBRNA">DOBRNA</option>
+	<option value="DOBROVNIK">DOBROVNIK</option>
+	<option value="DOLENJSKE TOPLICE">DOLENJSKE TOPLICE</option>
+	<option value="GRAD">GRAD</option>
+	<option value="HAJDINA">HAJDINA</option>
+	<option value="HOČE-SLIVNICA">HOČE-SLIVNICA</option>
+	<option value="HODOŠ">HODOŠ</option>
+	<option value="HORJUL">HORJUL</option>
+	<option value="JEZERSKO">JEZERSKO</option>
+	<option value="KOMENDA">KOMENDA</option>
+	<option value="KOSTEL">KOSTEL</option>
+	<option value="KRIŽEVCI">KRIŽEVCI</option>
+	<option value="LOVRENC NA POHORJU">LOVRENC NA POHORJU</option>
+	<option value="MARKOVCI">MARKOVCI</option>
+	<option value="MIKLAVŽ NA DRAVSKEM POLJU">MIKLAVŽ NA DRAVSKEM POLJU</option>
+	<option value="MIRNA PEČ">MIRNA PEČ</option>
+	<option value="OPLOTNICA">OPLOTNICA</option>
+	<option value="PODLEHNIK">PODLEHNIK</option>
+	<option value="POLZELA">POLZELA</option>
+	<option value="PREBOLD">PREBOLD</option>
+	<option value="PREVALJE">PREVALJE</option>
+	<option value="RAZKRIŽJE">RAZKRIŽJE</option>
+	<option value="RIBNICA NA POHORJU">RIBNICA NA POHORJU</option>
+	<option value="SELNICA OB DRAVI">SELNICA OB DRAVI</option>
+	<option value="SODRAŽICA">SODRAŽICA</option>
+	<option value="SOLČAVA">SOLČAVA</option>
+	<option value="SVETA ANA">SVETA ANA</option>
+	<option value="SVETI ANDRAŽ V SLOV. GORICAH">SVETI ANDRAŽ V SLOV. GORICAH</option>
+	<option value="ŠEMPETER-VRTOJBA">ŠEMPETER-VRTOJBA</option>
+	<option value="TABOR">TABOR</option>
+	<option value="TRNOVSKA VAS">TRNOVSKA VAS</option>
+	<option value="TRZIN">TRZIN</option>
+	<option value="VELIKA POLANA">VELIKA POLANA</option>
+	<option value="VERŽEJ">VERŽEJ</option>
+	<option value="VRANSKO">VRANSKO</option>
+	<option value="ŽALEC">ŽALEC</option>
+	<option value="ŽETALE">ŽETALE</option>
+	<option value="ŽIROVNICA">ŽIROVNICA</option>
+	<option value="ŽUŽEMBERK">ŽUŽEMBERK</option>
+	<option value="ŠMARTNO PRI LITIJI">ŠMARTNO PRI LITIJI</option>
+	<option value="APAČE">APAČE</option>
+	<option value="CIRKULANE">CIRKULANE</option>
+	<option value="KOSTANJEVICA NA KRKI">KOSTANJEVICA NA KRKI</option>
+	<option value="MAKOLE">MAKOLE</option>
+	<option value="MOKRONOG-TREBELNO">MOKRONOG-TREBELNO</option>
+	<option value="POLJČANE">POLJČANE</option>
+	<option value="RENČE-VOGRSKO">RENČE-VOGRSKO</option>
+	<option value="SREDIŠČE OB DRAVI">SREDIŠČE OB DRAVI</option>
+	<option value="STRAŽA">STRAŽA</option>
+	<option value="SV. TROJICA V SLOV. GORICAH">SV. TROJICA V SLOV. GORICAH</option>
+	<option value="SVETI TOMAŽ">SVETI TOMAŽ</option>
+	<option value="ŠMARJEŠKE TOPLICE">ŠMARJEŠKE TOPLICE</option>
+	<option value="GORJE">GORJE</option>
+	<option value="LOG-DRAGOMER">LOG-DRAGOMER</option>
+	<option value="REČICA OB SAVINJI">REČICA OB SAVINJI</option>
+	<option value="SVETI JURIJ V SLOV. GORICAH">SVETI JURIJ V SLOV. GORICAH</option>
+	<option value="ŠENTRUPERT">ŠENTRUPERT</option>
+	<option value="MIRNA">MIRNA</option>
+	<option value="OSTALO">OSTALO</option>
+
+</select>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style13">
+                                                pristojnost:
+                                            </td>
+                                            <td valign="top">
+                                                <select name="ddzavod" id="ddzavod" style="font-size: 11pt; font-family: Arial">
+	<option value=""></option>
+	<option value="ZVKD Celje">ZVKD Celje</option>
+	<option value="ZVKD Nova Gorica">ZVKD Nova Gorica</option>
+	<option value="ZVKD Kranj">ZVKD Kranj</option>
+	<option value="ZVKD Ljubljana">ZVKD Ljubljana</option>
+	<option value="ZVKD Maribor">ZVKD Maribor</option>
+	<option value="ZVKD Novo mesto">ZVKD Novo mesto</option>
+	<option value="ZVKD Piran">ZVKD Piran</option>
+	<option value="ostalo">ostalo</option>
+
+</select>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style13">
+                                                vrsta spomenika:
+                                            </td>
+                                            <td valign="top">
+                                                <select name="ddspomenik" id="ddspomenik" style="font-family: Arial; font-size: 11pt">
+	<option value=""></option>
+	<option value="spomenik lokalnega pomena">spomenik lokalnega pomena</option>
+	<option value="spomenik državnega pomena">spomenik državnega pomena</option>
+	<option value="-">-</option>
+
+</select>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+   <div id="Panel3" nowrap="nowrap">
+	
+        <iframe style="" width="100%" height="350px" frameborder="0" name="openlayers" scrolling="no"
+            src="slider.aspx"></iframe>
+    
+</div>
+    <div id="Panel2">
+	
+        <table width="900px">
+            <tr>
+                <td colspan="8" style="border-top-style: solid; border-top-width: 3px; border-top-color: #ff0000">
+                    .
+                </td>
+            </tr>
+            <tr>
+                <td>
+               <a href="http://www.zvkds.si" target="_blank">
+             <img alt="" class="style9" src="logom/zvkds.jpg" border="0" /></a>
+                </td>
+                <td>
+                 <a href="http://www.mk.gov.si/‎" target="_blank">
+             <img alt="" class="style9" src="logom/mk.jpg" border="0" /></a>
+               </td>
+                <td>
+                 <a href="http://www.europeana.eu/portal/" target="_blank">
+             <img alt="" class="style9" src="images/Podalga_europeana.jpg" border="0" /></a>
+
+                </td>
+                <td>
+                <a href="http://www.carare.eu/eng‎" target="_blank">
+             <img alt="" class="style9" src="images/Carar.jpg" border="0" /></a>
+                </td>
+                <td>
+                 <a href="http://www.linkedheritage.eu/index.php?en/1/home" target="_blank">
+             <img alt="" class="style9" src="images/Podalga_linked.jpg" border="0" /></a>
+              </td>
+                <td>
+             <a href="http://www.locloud.eu/About" target="_blank">
+             <img alt="" class="style9" src="images/Podalga_LoCLoud.jpg" border="0" /></a>
+                </td>
+                <td>
+               <a href="http://www.athenaplus.eu/index.php?en/1/home‎‎‎‎" target="_blank">
+             <img alt="" class="style9" src="images/PodalgaAthenaPlus.jpg" border="0" /></a>
+                </td>
+                <td>
+          <a href="http://www.nms.si/‎‎‎‎‎" target="_blank">
+             <img alt="" class="style9" src="logom/Podalga_narodnimuzej.jpg" border="0" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <a href="http://www.pms-lj.si/si/‎‎‎‎‎‎" target="_blank">
+             <img alt="" class="style9" src="logom/prirodoslovni.jpg" border="0" /></a>
+                </td>
+                <td>
+                  <a href="http://www.nuk.uni-lj.si/nuk.asp‎‎‎‎‎‎" target="_blank">
+             <img alt="" class="style9" src="logom/NUK.jpg" border="0" /></a>
+
+                </td>
+                <td>
+              <a href="http://www.ng-slo.si/si/‎‎‎‎‎‎‎" target="_blank">
+             <img alt="" class="style9" src="logom/narodna.jpg" border="0" /></a>
+
+                </td>
+                <td>
+             <a href="http://www.mgml.si/mestni-muzej-ljubljana/‎‎‎‎‎‎‎" target="_blank">
+             <img alt="" class="style9" src="logom/Podalga_mestni.jpg" border="0" /></a>
+                 </td>
+                <td>
+             <a href="http://www.tms.si/index.php?&lang=1" target="_blank">
+             <img alt="" class="style9" src="logom/tms.jpg" border="0" /></a>
+                </td>
+                <td>
+                  <a href="http://www.kpm.si/?lang=sl‎‎‎‎‎‎‎‎‎" target="_blank">
+             <img alt="" class="style9" src="logom/koroski.jpg" border="0" /></a>
+                </td>
+                <td>
+                <a href="http://www.etno-muzej.si/sl" target="_blank">
+             <img alt="" class="style9" src="logom/SEM.jpg" border="0" /></a>
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+
+        </table>
+    
+</div>
+     <table style="width: 100%; background-color: #00A8EF;" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td style="text-align: center; color: #000000; font-size: 8pt; font-family: Arial;">
+                               Razvoj in implementacija: Franc J. Zakrajšek s sodelavci (franc.zakrajsek@guest.arnes.si)
+                            </td>
+                        </tr>
+                    </table>
+    </td> 
+    </tr> 
+    </table>
+   
+</div>
+    
+                                
+    
+
+<script type="text/javascript">
+//<![CDATA[
+var Menu2_Data = new Object();
+Menu2_Data.disappearAfter = 500;
+Menu2_Data.horizontalOffset = 0;
+Menu2_Data.verticalOffset = 0;
+var Menu1_Data = new Object();
+Menu1_Data.disappearAfter = 500;
+Menu1_Data.horizontalOffset = 0;
+Menu1_Data.verticalOffset = 0;
+Menu1_Data.hoverClass = '';
+//]]>
+</script>
+</form>
+
+</body>
+</html>
+

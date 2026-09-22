@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>RUL (sl)</ShortName>
+  <Description>Iskalnik repozitorija Univerze v Ljubljani</Description>
+  <Contact>repozitorij@uni-lj.si</Contact>
+  <Url type="text/html"
+    template="https://repozitorij.uni-lj.si/Iskanje.php?niz={searchTerms}&amp;lang=slv&amp;page={startPage?}"/>
+  <Image height="16" width="16" type="image/vnd.microsoft.icon">https://repozitorij.uni-lj.si/teme/rulDev/img/favicon.ico</Image>
+  <Query role="example" searchTerms="test" startPage="1" />
+  <Language>*</Language>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

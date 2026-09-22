@@ -257,10 +257,10 @@ for (const b of OBJECT_BIOGRAPHIES) {
   }
 }
 
-if (exN === 111) ok("111/111 zapisov"); else err(`zapisov: ${exN}`);
-if (mvgN === 111) ok("111/111 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 559) ok("559 vrstic virov (28. val: +2 — Grošelj 1972 na MVG-068, Andrič/Mason 2009 na MVG-083)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 441) ok("441 identitet virov (28. val: +2 — DOI URL Grošljeve opombe in DP36 članka)"); else err(`identitet: ${identities}`);
+if (exN === 112) ok("112/112 zapisov"); else err(`zapisov: ${exN}`);
+if (mvgN === 112) ok("112/112 muzejskih številk"); else err(`MVG: ${mvgN}`);
+if (srcN === 560) ok("560 vrstic virov (29. val: +1 — EJT 777 Nemastoma b. gruberi na MVG-112)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 442) ok("442 identitet virov (29. val: +1 — DOI URL EJT 777)"); else err(`identitet: ${identities}`);
 if (shared === 65) ok("65 deljenih virov (26. val: +1 — Cabin URL zdaj deljen med MVG-016 in MVG-069)"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
