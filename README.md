@@ -4,10 +4,11 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
-> **Zadnja posodobitev — 83. sklop (32. val raziskave, 2026-09-22)**
-> Stanje zbirke: **112 zapisov (MVG-001–112), 564 virov, 446 identitet, 65 deljenih, 95 entitet (oseb 36)** ·
+> **Zadnja posodobitev — 84. sklop (33. val raziskave, 2026-09-22)**
+> Stanje zbirke: **112 zapisov (MVG-001–112), 565 virov, 447 identitet, 65 deljenih, 95 entitet (oseb 36)** ·
+> najnovejši preboj: **abstrakt Andrič 2007 (SAGE, DOI 10.1177/0959683607080516) — Griblje (G3) na peščeni podlagi, ki je ostala gozdnata do danes** (kontrast z Mlako ~1000 cal BP); 2. bibliografska potrditev Mason 2001 ·
 > popis arhiva Vašega kanala **zaključen** (37 enkratnih člankov 2008–2026, vsi razvrščeni) ·
-> 45 raziskovalnih dokumentov (valovi 1–31) · i18n 946 ključev × 5 jezikov · 13 API poti.
+> 47 raziskovalnih dokumentov (valovi 1–33) · i18n 946 ključev × 5 jezikov · 13 API poti.
 > Produkcija: **https://griblje-museum.vercel.app** (odprti podatki: `/api/opendata` — 112/565 živo).
 > GitHub: `main` sinhroniziran z origin, Vercel auto-deploy potrjen.
 
