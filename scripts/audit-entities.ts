@@ -257,12 +257,12 @@ for (const b of OBJECT_BIOGRAPHIES) {
   }
 }
 
-if (exN === 112) ok("112/112 zapisov"); else err(`zapisov: ${exN}`);
-if (mvgN === 112) ok("112/112 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 565) ok("565 vrstic virov (32. val: +1 — vk-najboljsa-oraca-2010 na MVG-022: kvalifikacija Vipava 2010 → Švedska 2011)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 447) ok("447 identitet virov (33. val: vir andric-2007-holocene dobi DOI URL — ključ identitete ime → url, števec nespremenjen)"); else err(`identitet: ${identities}`);
-if (shared === 65) ok("65 deljenih virov (26. val: +1 — Cabin URL zdaj deljen med MVG-016 in MVG-069)"); else err(`deljenih: ${shared}`);
-if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
+if (exN === 113) ok("113/113 zapisov"); else err(`zapisov: ${exN}`);
+if (mvgN === 113) ok("113/113 muzejskih številk"); else err(`MVG: ${mvgN}`);
+if (srcN === 567) ok("567 vrstic virov (34. val: +2 — av71-2020-poselitev + mason-2001-vs39 deljen na MVG-113: Srednje njive)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 448) ok("448 identitet virov (34. val: +1 — nov vir av71-2020 z DOI URL; mason-2001 deljen = ista identiteta)"); else err(`identitet: ${identities}`);
+if (shared === 66) ok("66 deljenih virov (34. val: +1 — mason-2001-vs39 zdaj deljen med MVG-083 in MVG-113)"); else err(`deljenih: ${shared}`);
+if (phases === 375) ok("375 biografskih faz (34. val: +3 — biografija srednje-njive)"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
 
 // Graf OBJECT ↔ OBJECT ni bil dotaknjen (connections/walks izvirni):

@@ -3059,3 +3059,24 @@ Stage Summary:
 - main na GitHubu ažuren (f86e7ce), 85. sklop = README sinhronizacija (ni raziskave)
 - Stanje: 112 zapisov, 565 virov, 447 identitet, 65 deljenih, 95 entitet; sitemap 113; i18n 946 × 5; 13 API poti; OpenData 112/565 živo lokalno + produkcija
 - Naslednja vrsta (izven-peskovniška): OpenAlex z lastnim ključem → ARSO letna serija → vinogradniška diploma (RUL gID) → Kataster jam → Belokranjec PDF (3. poraz) → Poganjec → Lojze↔Alojz → Kamra pričevanje → SI AS 176 → gostilna pred 1898 → vrzel #3 (360°) → Mason 2001 (session dLib) → Andrič 2007 polno besedilo
+
+---
+Task ID: 86
+Agent: Z.ai Code (glavni)
+Task: "odlicno nadaljuj pushaj na github vercel sinhroniziraj posodobi readme in nadaljuj" — 34. val raziskave: Semantic Scholar = nov kanal; Arheološki vestnik 71 (2020) — Srednje njive pri Gribljih; nov zapis MVG-113; vgradnja, regresija, README, push
+
+Work Log:
+- 85. sklop (prejšnji commit): obnova peskovnika iz GitHuba (0d6162a = 84. sklop), sinhronizacija GitHub/Vercel (112/565 živo), README status blok f86e7ce, worklog 579a57f
+- OpenAlex = 429 (deljeni IP izčrpan, $0.0004; lastni ključ zahteva registracijo) → izven-peskovniška vrsta
+- SEMANTIC SCHOLAR Graph API = NOV KANAL (200): 29 citatov Andriča 2007, 3 citata DP 36; abstrakti AGS 2012/2024, DP 41.9, Chapman = 0 × Griblj
+- PRELOM: 10.3986/av.71.14 — Mason, Mlekuž Vrhovnik & Udovč (2020), AV 71: 421–434, odprti dostop; PDF 8,7 MB z ojs.zrc-sazu.si (ZRC OJS = nov delujoč kanal); pdftotext 45 kB; navedba »Kučar pa nad poznobronastodobno naselbino Srednje njive pri Gribljah« (n. 32 = Mason 2001, 10) — prvi imenovani prazgodovinski lokacijski zapis za vaško ravnino; 3. bibliografska potrditev Masona 2001 (prva s konkretno stranjo); bonus: Mason 2007 (Situla 44: 357–368) + Mason 2008a (Črnomaljski zbornik: 17–47) v opombi
+- VGRADNJA (add-only): MVG-113 srednje-njive (kraj, DOCUMENTED; zgodba SL/EN; EŠD 10094/G3 relacija pošteno nerešena; Muzej išče str. 10 + toponim); +2 vrstici virov (567): av71-2020-poselitev (+1 identiteta 448) + mason-2001-vs39 deljen (66); +3 faze (375; biografij 94); postaja voda-je-zivljenje 3/13 (pokritost 113/113, 0 duplikatov); i18n 25 nizov × 5 jezikov 112→113 (nizovne oblike EN/HR/DE/IT); konstante v 8 skriptah
+- Regresija (živi :3000 po reseed): tsc 0, lint čist, verify-i18n 946×5, audit-entities ✓ 0 napak (113/567/448/66/375; 95 entitet), audit-timeline-map 39 ✓/0, audit-iiif 5 ✓/0 (375 faz; 94+19), test-entities 100 ✓/0, test-timeline-map 72 ✓/0 (walkCover 113, withTime 100), test-ai-curator 214 ✓/0, red-team 157 ✓/0, test-plan-visit 42 ✓/0; OpenData 113/567 živo; sitemap 114
+- agent-browser: /exponat/srednje-njive 200 (naslov/MVG-113/zgodba/viri+DOI/faze/Muzej išče SL+EN), hero 113 na domači (edini »112« = MVG-112), noga footBottom = pageH (16.269 px, vrzel 0), preliv 0 pri 390 px, konzola čista
+- Dokumentacija: research-griblje/48-val34-srednje-njive-av71.md + KAZALO-raziskav +48 + 00-KAZALO (glava 86. sklopom + vnos 34. val) + README (86. sklop vnos + status blok 113/567/448/66 + tabela globine 113/94/567/91/89) + worklog (ta vnos); surovine raw-web-val34-2026-10/ (s01–s06, av71.pdf 8,7 MB + av71.txt 45 kB)
+
+Stage Summary:
+- Stanje: **113 zapisov (MVG-001–113), 567 virov, 448 identitet, 66 deljenih, 95 entitet (oseb 36); sitemap 114; i18n 946 × 5; 13 API poti**
+- NOVO DEJSTVO: Srednje njive pri Gribljih = poznobronastodobna naselbina (Mason 2001, str. 10 prek AV 71/2020) — prva imenovana prazgodovinska lokacija na vaški ravnini; Masonov opus razširjen (2007 Situla 44; 2008a Črnomaljski zbornik)
+- Novi kanali: Semantic Scholar Graph API (deluje); ZRC OJS neposredni PDF URL (deluje); OpenAlex potrebuje lasten ključ (registracija)
+- Izven-peskovniška vrsta (posodobljena): S2 citacijska enumeracija (nova) → OpenAlex z lastnim ključem → ARSO letna serija → vinogradniška diploma (RUL gID) → Kataster jam → Belokranjec PDF (3. poraz) → Poganjec → Lojze↔Alojz → Kamra pričevanje → SI AS 176 → gostilna pred 1898 → vrzel #3 (360°) → Mason 2001 session dLib (zdaj tudi str. 10) → Andrič 2007 polno besedilo → AGS 2012/2024 polno besedilo

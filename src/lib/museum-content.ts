@@ -9066,6 +9066,53 @@ export const seedExhibits: SeedExhibit[] = [
       },
     ],
   },
+  {
+    slug: "srednje-njive",
+    museumNo: "MVG-113",
+    category: "kraj",
+    addedAt: "2026-09-22",
+    titleSi: "Srednje njive pri Gribljih — imenovana poznobronastodobna naselbina na vaški ravnini",
+    titleEn: "Srednje njive at Griblje — the named Late Bronze Age settlement on the village plain",
+    featured: false,
+    periodSi: "pozna bronasta doba (konvencionalno pribl. 13.–9. stoletje pr. n. št.; datacija najdišča ni navedena) · popisana 2001, imenovana v recenzirani literaturi 2020",
+    periodEn: "Late Bronze Age (conventionally c. 13th–9th century BC; the site is not dated explicitly) · surveyed 2001, named in peer-reviewed literature 2020",
+    summarySi:
+      "Recenzirani članek v Arheološkem vestniku 71 (2020) ob gradišču Kučar imenuje »poznobronastodobno naselbino Srednje njive pri Gribljah« — v strokovni literaturi se tako prvič pojavlja zemljiško ime, ki označuje prazgodovinsko naselbino na vaški ravnini. Avtoriteta za navedbo je Philip Mason, Varstvo spomenikov 39 (2001), str. 10.",
+    summaryEn:
+      "A peer-reviewed article in Arheološki vestnik 71 (2020) names, beside the Kučar hillfort, 'the Late Bronze Age settlement of Srednje njive at Griblje' — the first time a field name marking a prehistoric settlement on the village plain appears in the scholarly literature. The authority for the note is Philip Mason, Varstvo spomenikov 39 (2001), p. 10.",
+    storySi:
+      "Med vasjo in Kolpo se razprostira najrodovitnejše območje Bele krajine — in arheologija ga bere po pravilu, ki ga recenzirani članek v Arheološkem vestniku 71 (2020) zapiše za celotno pokrajino: gradišča na osamelcih so bila umeščena v bližino starejših nižinskih naselbin in jih obvladovala. Nerajski Cirnik se dviga nad naselbino na Gradinjah, Kučar pa — »nad poznobronastodobno naselbino Srednje njive pri Gribljah«. Enojna poved na sredi študije o poselitvi Bele krajine v prvi polovici 1. tisočletja pr. n. št., ki pa vaši ravnini prvič daje v strokovni literaturi imenovano prazgodovinsko naselbino: ne »naselbine pri Gribljih«, ampak naselbina z zemljiškim imenom — Srednje njive.\n\nVeriga dokazov je kratka in pošteno vidna. Članek (Philip Mason, Dimitrij Mlekuž Vrhovnik, Katarina Udovč: Poselitev Bele krajine v prvi polovici 1. tisočletja pr. n. št. v luči novih raziskav, Arheološki vestnik 71, str. 421–434, DOI 10.3986/AV.71.14, odprti dostop; muzej je prebral polno besedilo z odprto-dostopnega PDF-ja ZRC SAZU) opre navedbo z nogo 32, ki se sklicuje na »Mason 2001, 10« — torej na str. 10 temeljnega članka o Gribljah kot problemu nižinskih arheoloških kompleksov (Varstvo spomenikov 39, str. 7–27). Tega članka muzej pozna bibliografsko že od 28. vala, polno besedilo pa je še vedno TO_COLLECT (dLib.si): str. 10 je torej znana le prek navedbe. Hkrati je ta navedba že tretja neodvisna bibliografska potrditev Masonovega članka iz leta 2001 — poleg SAGE-ove strani (Andrič 2007) in Springerjeve sinteze (Andrič & Karger 2024) — in prva, ki iz nje citira konkretno stran.\n\nKaj pomeni ime za sliko prazgodovine vasi? Register nepremične kulturne dediščine (EŠD 10094, MVG-083) našteva »neolitske, eneolitske in bronastodobne naselbine« brez zemljiških imen; povezava med njimi in Srednjimi njivami ni dokumentirana in jo mora razrešiti kustodos. Tudi odnos do neolitsko-eneolitskega jedra G3 ni zapisan — Srednje njive so najverjetneje druga lega v isti ravnini, datirana v pozno bronasto dobo, torej v svet, iz katerega prihaja tudi bronasta igla A 478 iz obkolpskih njiv in poznobronastodobno grobišče Požekov vrt. Točna datacija naselbine v vire ni navedena; »pozna bronasta doba« je strokovna oznaka, ki ji po konvenciji pripada okvir pribl. 13.–9. stoletja pr. n. št. Kar je dokumentirano, pa je jasno: vaška ravnina je v recenzirani literaturi opisana kot pokrajina, kjer se pod gradiščem Kučar stoji poznobronastodobna naselbina — in ima ime.\n\nMuzej išče: polno besedilo Masonovega članka (str. 10, dLib.si), domačinsko potrditev zemljiškega imena — kje so »Srednje njive«, ki jih tako imenujete? — in ali ustrezajo najdišču, ter (ko bo besedilo dosegljivo) razrešitev, ali so bronastodobne naselbine registra EŠD 10094 ravno Srednje njive.",
+    storyEn:
+      "Between the village and the Kolpa stretches the most fertile ground of Bela krajina — and archaeology reads it by a rule that the peer-reviewed article in Arheološki vestnik 71 (2020) states for the whole region: hillforts on isolated hills were placed beside older lowland settlements and controlled them. Nerajski Cirnik rises above the settlement at Gradinje, and Kučar — 'above the Late Bronze Age settlement of Srednje njive at Griblje'. A single sentence in the middle of a study on the settlement of Bela krajina in the first half of the 1st millennium BC, yet the one that gives the village plain its first named prehistoric settlement in the scholarly literature: not 'settlements near Griblje', but a settlement with a field name — Srednje njive.\n\nThe chain of evidence is short and honestly visible. The article (Philip Mason, Dimitrij Mlekuž Vrhovnik, Katarina Udovč: Settlement in Bela krajina in the first half of the 1st millennium BC in the light of new research, Arheološki vestnik 71, pp. 421–434, DOI 10.3986/AV.71.14, open access; the museum read the full text from the open-access PDF of ZRC SAZU) supports the note with footnote 32, which cites 'Mason 2001, 10' — that is, p. 10 of the foundational article on Griblje as a problem of lowland archaeological complexes (Varstvo spomenikov 39, pp. 7–27). The museum has known this article bibliographically since wave 28, while its full text remains TO_COLLECT (dLib.si): p. 10 is thus known only through citation. At the same time this is already the third independent bibliographic confirmation of Mason's 2001 article — after the SAGE page (Andrič 2007) and the Springer synthesis (Andrič & Karger 2024) — and the first one that cites a concrete page from it.\n\nWhat does the name mean for the village's prehistoric picture? The Register of Immovable Cultural Heritage (EŠD 10094, MVG-083) lists 'Neolithic, Eneolithic and Bronze Age settlements' without field names; the link between them and Srednje njive is not documented and the curator must resolve it. The relation to the Neolithic–Eneolithic core G3 is also unrecorded — Srednje njive are most probably a different location in the same plain, dated to the Late Bronze Age, that is, the world from which the bronze pin A 478 of the Kolpa fields and the Late Bronze Age cemetery of Požekov vrt also come. The site's precise dating is not given in the sources; 'Late Bronze Age' is the scholarly label to which convention assigns the frame of roughly the 13th–9th century BC. What is documented is this: the village plain is described in peer-reviewed literature as a landscape where a Late Bronze Age settlement stands beneath the hillfort of Kučar — and it has a name.\n\nThe museum seeks: the full text of Mason's article (p. 10, dLib.si), local confirmation of the field name — where are the 'Srednje njive' that people call by this name, and do they match the site? — and, once the text is accessible, the resolution of whether the Bronze Age settlements of register EŠD 10094 are precisely Srednje njive.",
+    evidenceStatus: "DOCUMENTED",
+    yearFrom: -1200,
+    yearTo: -800,
+    sources: [
+      {
+        key: "av71-2020-poselitev",
+        nameSi: "Mason, Ph., Mlekuž Vrhovnik, D., Udovč, K. (2020): Poselitev Bele krajine v prvi polovici 1. tisočletja pr. n. št. v luči novih raziskav — Arheološki vestnik 71, str. 421–434",
+        nameEn: "Mason, Ph., Mlekuž Vrhovnik, D., Udovč, K. (2020): Settlement in Bela krajina in the first half of the 1st millennium BC in the light of new research — Arheološki vestnik 71, pp. 421–434",
+        sourceType: "objava",
+        license: "odprti dostop / open access (ZRC SAZU)",
+        url: "https://doi.org/10.3986/AV.71.14",
+        noteSi:
+          "Polno besedilo prebrano (34. val, PDF z ojs.zrc-sazu.si): navedba »Kučar pa nad poznobronastodobno naselbino Srednje njive pri Gribljah«, opeta z nogo 32 »Mason 2001, 10«; prvi imenovani prazgodovinski lokacijski zapis za vaško ravnino. Odprti dostop: https://ojs.zrc-sazu.si/av/article/download/8798/7947 — hkrati 3. neodvisna bibliografska potrditev Masona 2001 (poleg Andrič 2007/SAGE in Andrič & Karger 2024/Springer). Članek zbliža arheologijo z lidarskim snemanjem, pedološkimi analizami in radiokarbonskimi datiranji.",
+        noteEn:
+          "Full text read (wave 34, PDF from ojs.zrc-sazu.si): the note 'Kučar above the Late Bronze Age settlement of Srednje njive at Griblje', supported by footnote 32 'Mason 2001, 10'; the first named prehistoric location record for the village plain. Open access: https://ojs.zrc-sazu.si/av/article/download/8798/7947 — at the same time the 3rd independent bibliographic confirmation of Mason 2001 (besides Andrič 2007/SAGE and Andrič & Karger 2024/Springer). The article joins archaeology with lidar survey, pedological analyses and radiocarbon dating.",
+      },
+      {
+        key: "mason-2001-vs39",
+        nameSi: "Mason, P. (2001): Griblje in problem nižinskih arheoloških kompleksov v Sloveniji — Varstvo spomenikov 39, Ljubljana, str. 7–27",
+        nameEn: "Mason, P. (2001): Griblje and the problem of lowland archaeological complexes in Slovenia — Varstvo spomenikov 39, Ljubljana, pp. 7–27",
+        sourceType: "objava",
+        license: "navedba vira",
+        noteSi:
+          "Avtoriteta za ime Srednje njive: str. 10 (navedba prek noge 32 v Arheološkem vestniku 71 (2020) — polno besedilo ostaja TO_COLLECT, dLib.si). Deljen vir z MVG-083.",
+        noteEn:
+          "The authority for the name Srednje njive: p. 10 (cited via footnote 32 in Arheološki vestnik 71 (2020) — the full text remains TO_COLLECT, dLib.si). A source shared with MVG-083.",
+      },
+    ],
+  },
 ];
 
 export const seedStories: Omit<StoryDTO, "id">[] = [
