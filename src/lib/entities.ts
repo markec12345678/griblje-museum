@@ -741,6 +741,21 @@ export const ENTITIES: EntityRef[] = [
     note: "Oblikovalec AŽ-panja (Alberti-Žnideršičev panj), ki ga je Konrad Barle razširil po Beli krajini.",
     evidence: [{ slug: "kranjska-sivka", sourceIndex: 3 }],
   },
+  {
+    id: "person:anton-vadnal",
+    type: "person",
+    role: "subjekt-zapisa",
+    labelSi: "Anton Vadnal",
+    labelEn: "Anton Vadnal",
+    aliases: ["Pivčan", "A. Komar", "Anton Komar", "Fronetov Fran", "Anton Vadnjal"],
+    time: {
+      labelSi: "4. april 1876 – 10. februar 1935",
+      labelEn: "4 April 1876 – 10 February 1935",
+      sortKey: 1876,
+    },
+    note: "Avtor povesti »Bridke izkušnje« (Domoljub 1898, MVG-109) pod psevdonimom Pivčan; duhovnik in pisatelj — SBL sbi753104: ★ 4. 4. 1876 Borovnica (oče železniški sprevodnik), † 10. 2. 1935 Šentožbolt; psevdonimi A. Komar, Pivčan, Fronetov Fran (SBL iskanje: izključno ta vnos); gimnazija Ljubljana 1888–96 (sošolec O. Župančiča), dunajski študij zemljepisa in zgodovine 1896–1900, kaplan Višnja Gora/Cerklje na Dolenjskem/Krka, župnik Šentožbolt od 1928; po 1929 zaprt zaradi nastopa proti centralni diktaturi (23. val: identiteta psevdonima razrešena).",
+    evidence: [{ slug: "bridke-izkusnje-1898", sourceIndex: 3 }],
+  },
 
   // =========================================================================
   // KRAJEVI (26)

@@ -244,8 +244,8 @@ section("R0 — AUDIT TRAIL (repo, veriga ponudnikov)");
 
   check(seedExhibits.length === 109, "R0.2 zbirka: 109 zapisov", String(seedExhibits.length));
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 541, "R0.3 zbirka: 541 vrstic virov", String(sourceRows));
-  check(ENTITY_BY_ID.size === 94, "R0.4 registr: 94 entitet", String(ENTITY_BY_ID.size));
+  check(sourceRows === 542, "R0.3 zbirka: 542 vrstic virov", String(sourceRows));
+  check(ENTITY_BY_ID.size === 95, "R0.4 registr: 95 entitet", String(ENTITY_BY_ID.size));
 
   // Dejanska podatkovna pot (iz kode, ne iz poročila):
   const { context } = buildContext("sl", "Kaj je zračni most?");
@@ -1661,8 +1661,8 @@ section("R16 — INVARIANTI ZBIRKE (regresija)");
 {
   check(seedExhibits.length === 109, "R16.1 109 zapisov");
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 541, "R16.2 541 vrstic virov");
-  check(ENTITY_BY_ID.size === 94, "R16.3 94 entitet registra");
+  check(sourceRows === 542, "R16.2 542 vrstic virov");
+  check(ENTITY_BY_ID.size === 95, "R16.3 95 entitet registra");
   check(ENTITY_QUEUE.length >= 28, "R16.4 kuratorska vrsta ≥ 28 vprašanj", String(ENTITY_QUEUE.length));
   const withTime = seedExhibits.filter((e) => e.periodSi).length;
   check(withTime > 80, "R16.5 obdobja ostajajo zapisana (brez ISO pretvorb)", String(withTime));

@@ -67,26 +67,31 @@ const DESKTOP_NAV_VIEWS = VIEW_ORDER.filter(
 
 /**
  * Stopnje vidnosti namizne navigacije — glava mora biti brez vodoravnega
- * preliva pri VSAKI širini (izmerjene širine: navigacija 885 px, znamka 108 px,
- * desni gumbi 268 px). Jedro (md+) nosi pet rubrik, lg doda zemljevid spomina,
- * osebni muzej in igre, xl pa izrazoslovje, časovnico, kroniko in spominsko
- * knjigo; »O muzeju« je v vrstici šele od 2xl (v nogi je vedno). Do ostalih
- * pogledov služi hamburger-menij do xl.
+ * preliva pri VSAKI širini. 23. val (izmera po valih 22/23): vsebnik je
+ * omejen na max-w-7xl (1280 px), zato ima namizna vrstica na voljo le
+ * ~1216 px — pri 13 rubrikah (921 px) je glava preplavila (scrollW 1409).
+ * Jedro (md+) nosi pet rubrik; xl doda spomin, osebni muzej, igre, kroniko
+ * in spominsko knjigo (skupaj ~719 px); Izrazoslovje, Časovnica in »O
+ * muzeju« so izrecno IZVEN vrstice (nivo »menu« — dosegljivi prek
+ * hamburgerja, ki je zdaj viden pri vseh širinah, in O muzeju tudi v nogi).
  */
-const NAV_TIER: Partial<Record<MuseumView, "core" | "lg" | "xl" | "2xl">> = {
+const NAV_TIER: Partial<Record<MuseumView, "core" | "lg" | "xl" | "2xl" | "menu">> = {
   domov: "core",
   zbirka: "core",
   zgodbe: "core",
   karta: "core",
-  spomin: "lg",
+  spomin: "xl",
   dogodki: "core",
-  mojMuzej: "lg",
-  igre: "lg",
-  izrazoslovje: "xl",
-  casovnica: "xl",
+  mojMuzej: "xl",
+  igre: "xl",
+  /* 23. val: izrazoslovje in časovnica sta bila xl/2xl v vrstici — pri
+     xl (1280–1535) je glava preplavila (scrollW 1409 > innerW 1280);
+     zdaj sta + O muzeju izključno v hamburgerju (nivo »menu«). */
+  izrazoslovje: "menu",
+  casovnica: "menu",
   kronika: "xl",
   knjiga: "xl",
-  oMuzeju: "2xl",
+  oMuzeju: "menu",
 };
 
 const TIER_CLASS: Record<string, string> = {
@@ -94,6 +99,7 @@ const TIER_CLASS: Record<string, string> = {
   lg: "hidden lg:flex",
   xl: "hidden xl:flex",
   "2xl": "hidden 2xl:flex",
+  menu: "hidden",
 };
 
 /** Mobilni spustni meni — vključi vse razen vodnika po razpoloženju. */
@@ -342,12 +348,14 @@ export function Header({
             )}
           </Button>
 
-          {/* Mobilni/hamburger meni — viden do xl, ker namizna vrstica
-              stopnjuje število rubrik po širini (glava brez preliva) */}
+          {/* Mobilni/hamburger meni — viden pri VSEH širinah (23. val:
+              namizna vrstica je omejena z max-w-7xl, zato rubrike izven
+              jedra+xl služijo hamburger; glava brez preliva pri vsaki
+              širini) */}
           <Button
             variant="outline"
             size="icon"
-            className="size-11 xl:hidden"
+            className="size-11"
             aria-expanded={menuOpen}
             aria-label={menuOpen ? t.a11y.closeMenu : t.a11y.openMenu}
             onClick={() => setMenuOpen((open) => !open)}
@@ -357,11 +365,11 @@ export function Header({
         </div>
       </div>
 
-      {/* Spustni meni (hamburger) — odprt do xl */}
+      {/* Spustni meni (hamburger) — na voljo pri vseh širinah */}
       {menuOpen && (
         <nav
           aria-label={t.a11y.mainNav}
-          className="border-t border-border bg-background px-4 pb-4 pt-2 xl:hidden"
+          className="border-t border-border bg-background px-4 pb-4 pt-2"
         >
           <ul className="grid gap-1">
             {MOBILE_NAV_VIEWS.map((key) => (
