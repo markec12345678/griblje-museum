@@ -138,6 +138,10 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/authentic/dragojila-milek.jpg": { width: 459, height: 785 },
   "/images/authentic/totter-john.jpg": { width: 144, height: 180 },
   "/images/authentic/valentina-strucelj.jpg": { width: 800, height: 532 },
+
+  // 68. sklop (20. val): MVG-105 biodiverzitetne baze — samec krogličaste lunje
+  // (Circus cyaneus, Peter von Bagh, Wikimedia Commons, CC0; optimizirano 1360×949)
+  "/images/authentic/kroglicasta-lunja.jpg": { width: 1360, height: 949 },
 };
 
 export const FALLBACK_DIMENSIONS = { width: 1600, height: 1067 };
