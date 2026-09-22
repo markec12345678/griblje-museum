@@ -1,0 +1,1977 @@
+
+
+<!DOCTYPE html>
+<html lang=sl>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/SiStat/css/republika-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/SiStat/css/republika-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="apple-touch-icon" type="image/png" href="/SiStat/favicon/apple-touch-icon.png" sizes="180x180" />
+    <link rel="icon" type="image/png" href="/SiStat/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/SiStat/favicon/favicon-16x16.png" sizes="16x16" />
+
+
+        <title>Podatkovna baza SiStat</title>
+        <meta name="description"
+            content="Statistični urad RS ponuja v podatkovni bazi SiStat statistične podatke z gospodarskega, demografskega, družbenega in okoljskega področja v Sloveniji.">
+        <meta property="og:title" content="Podatkovna baza SiStat">
+        <meta property="og:description"
+            content="Statistični urad RS ponuja v podatkovni bazi SiStat statistične podatke z gospodarskega, demografskega, družbenega in okoljskega področja v Sloveniji.">
+        <meta property="og:image" content="https://pxweb.stat.si/sistat/images/sistat-share.jpg" />
+        <meta property="og:url" content="https://pxweb.stat.si/sistat/sl">
+
+    <link rel="icon" type="image/x-icon" href="/SiStat/favicon.ico">
+
+    
+    
+        <script src="/SiStat/js/jquery-3.4.1.min.js"></script>
+        <script src="/SiStat/lib/jquery/dist/jquery.js"></script>
+        <script src="/SiStat/js/pako.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+<meta name="x-stylesheet-fallback-test" content="" class="sr-only" /><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["\/SiStat\/lib\/bootstrap\/dist\/css\/bootstrap.min.css"], "rel=\u0022stylesheet\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=\u0022 ");</script>
+    
+    <link rel="stylesheet" href="/SiStat/css/site.css" />
+    <link rel="stylesheet" href="/SiStat/css/icomoon.css" />
+    <link rel="stylesheet" href="/SiStat/css/sursCookieStyles.css" />
+    <link rel="stylesheet" href="/SiStat/css/simptip.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="IE-notification" class="IE-notification">
+                <p>Aplikacija ni podprta v brskalniku, ki ga trenutno uporabljate. Uporabite sodoben brskalnik, kot so <a
+                        href="https://www.google.com/intl/sl_SI/chrome/" target="_blank">Chrome</a>,<a
+                        href="https://www.mozilla.org/sl/firefox/new/" target="_blank"> Firefox</a> ali <a
+                        href="https://www.microsoft.com/sl-si/edge" target="_blank">Edge</a>.</p>
+
+        </div>
+        <div>
+            
+
+
+
+<header>
+    <div class="surs-menu-bar-sticky">
+        <div class="sistat-top-header">
+            <div class="brand-wrapper">
+                <a id="jumpMainContentButton" class="skip-main"  tabindex="0">Skok na glavno vsebino</a>
+                <a href="/SiStat/sl">
+                        <img src="/SiStat/images/SiStat_logo_SLO.svg" alt="Statisti&#x10D;ni urad RS"
+                             class="surs-logo" />
+                </a>
+
+                <div class="nav-float-right">
+                    <!--<div class="d-none d-xl-inline-block sistat-homepage-wrapper">
+                        <div class="sistat-homepage-link">
+                            <a class="sistat-language-select-button home-page-button" onclick="setPageTheme();" href="">III</a>
+                        </div>
+                    </div>-->
+                    <div class="d-none d-xl-inline-block sistat-homepage-wrapper">
+                        <div class="sistat-homepage-link">
+                            <a class="sistat-language-select-button home-page-button" href='https://www.stat.si/StatWeb'>stat.si</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-inline-block sistat-homepage-wrapper wrapper-help">
+                        <div class="help-cont left-bordered">
+                            <a class="sistat-language-select-button help-link-border-margin link-help" href="/SiStat/sl/Notifications">Spremembe</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-inline-block sistat-homepage-wrapper wrapper-help">
+                        <div class="help-cont left-bordered">
+                            <a class="sistat-language-select-button link-help help-link-border-margin" href="/SiStat/sl/Home/Help">Pomo&#x10D;</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-inline-block sistat-language-wrapper">
+                        <div class="left-bordered">
+                            <form id="selectLanguage" method="post" class="form-change-language" action="/SiStat/sl/Home/ChangeLanguage?returnUrl=%2Fsl">
+                                <a id="langChangeButton" class="sistat-language-select-button lang-button" href="htttp://pxweb.stat.si">EN</a>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HoUy6PVrzhLkU4zS8Bz7uh9NjxwEZSE69_eup7vmkmh5DUdw_I_88LCIyXhYmgO9-jJSf1r-PkJZFbp7MmX_3_aNKvVg2haHoagFazjPm2F2RgObUHByuwdb_jAqM6qp8AzsYJbFUzbxb-Ug4zi5CQ" /></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-dark menu-background sistat-navbar surs-navbar fixed-top">
+        <button class="navbar-toggler hamburger-button sistat-hamburger-button surs-hamburger-button" type="button" data-toggle="collapse" data-target="#collapsingNavbarLg" onclick="scrollToTop();">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbarLg">
+            <div class="main-menu-top-wrapper">
+                <div class="d-block d-xl-none sistat-lang-homepage-wrapper-md">
+                    <div class="col-sm-12">
+                        <div>
+                            <div>
+                                <button class="sistat-language-select-button web-page-link-collapse" onclick="window.location.href='https://www.stat.si/StatWeb'">stat.si</button>
+                            </div>
+                            <div>
+                                <a class="sistat-language-select-button link-help link-collapsed" href="/SiStat/sl/Notifications">Spremembe</a>
+                            </div>
+                            <div class="menu-help-wrapper">
+                                <a class="sistat-language-select-button link-help link-collapsed" href="/SiStat/sl/Home/Help">Pomo&#x10D;</a>
+                            </div>
+                            <div>
+                                <form id="selectLanguage" method="post" action="/SiStat/sl/Home/ChangeLanguage?returnUrl=%2Fsl">
+                                    <button class="sistat-language-select-button button-lang-collapsed" type="submit">EN</button>
+                                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HoUy6PVrzhLkU4zS8Bz7uh9NjxwEZSE69_eup7vmkmh5DUdw_I_88LCIyXhYmgO9-jJSf1r-PkJZFbp7MmX_3_aNKvVg2haHoagFazjPm2F2RgObUHByuwdb_jAqM6qp8AzsYJbFUzbxb-Ug4zi5CQ" /></form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- SURS COOKIE POPUP -->
+    <div id="surs_cookie_popup" class="surs-cookies-wrapper">
+        <div class="surs-cookie-container">
+            <div>
+                <div id="cookie_popup_text" class="surs-cookies-text surs-cookie-text">
+                </div>
+                <a id="surs_cookie_more_link" class="surs-cookie-more-link"></a>
+            </div>
+            <div class="surs-cookies-button-wrapper surs-cookie-text">
+                <button id="cookie_button_no" type="button" onClick="cookiesDisagree();" class="btn btn-cookies surs-cookie-button-no" tabindex="0"></button>
+                <button id="cookie_button_yes" type="button" onClick="cookiesAgree();" class="btn btn-cookies surs-cookie-button-yes" tabindex="0"></button>
+            </div>
+        </div>
+    </div>
+    <!-- END SURS COOKIE POPUP -->
+    <!-- COOKIES SECTION -->
+
+    <div class="sistat-banner-index">
+        <div class="sistat-banner-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8"><h1 class="sistat-banner-text">Milijarda podatkov v podatkovni bazi SiStat </h1></div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row search-row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5 search-input-field-wrapper">
+                        <button data-toggle="modal" data-target="#helpModal" class="quick-help-buttton" id="quickHelp">?</button>
+                        <input type="search" id="searchField" class="search-field data-hj-allow" aria-label="Vnesi iskalni niz" />
+                    </div>
+                    <div class="col-md-1 align-text-center search-button-wrapper">
+                        <button id="searchFieldButton" onclick="searchMatrixWithRedirect('/SiStat/sl/Home/GetSearchResultsRedirect');"
+                                class="search-button">
+                            I&#x161;&#x10D;i
+                        </button>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse show fields-area" id="fieldCollapseContainer">
+        <div class="container">
+            <div class="row main-menu-row">
+                <div class="col-sm-6 main-menu-column">
+                    <div class="row">
+                        <div class="col-md-6 main-menu-column">
+                            <ul class="main-menu-ul">
+
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-bdp-in-nacionalni-racuni main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/56/bdp-in-nacionalni-racuni">
+                                                    BDP in nacionalni ra&#x10D;uni
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-cene-in-inflacija main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/134/cene-in-inflacija">
+                                                    Cene in inflacija
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-delo-in-brezposelnost main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/139/delo-in-brezposelnost">
+                                                    Delo in brezposelnost
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-ekonomski-odnosi-s-tujino main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/162/ekonomski-odnosi-s-tujino">
+                                                    Ekonomski odnosi s tujino
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-energetika main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/186/energetika">
+                                                    Energetika
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-gradbenistvo main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/183/gradbenistvo">
+                                                    Gradbeni&#x161;tvo
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 main-menu-column">
+                            <ul class="main-menu-ul">
+
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-industrija main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/167/industrija">
+                                                    Industrija&#x9;
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-izobrazevanje main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/192/izobrazevanje">
+                                                    Izobra&#x17E;evanje
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-kakovost-zivljenja main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/53/kakovost-zivljenja">
+                                                    Kakovost &#x17E;ivljenja
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-kmetijstvo-gozdarstvo-ribistvo main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/85/kmetijstvo-gozdarstvo-in-ribistvo">
+                                                    Kmetijstvo, gozdarstvo in ribi&#x161;tvo
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-kultura-in-mediji main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/96/kultura">
+                                                    Kultura
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-medpodrocni-kazalniki main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/491/medpodrocni-kazalniki">
+                                                    Medpodro&#x10D;ni kazalniki
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 main-menu-column">
+                    <div class="row">
+                        <div class="col-md-6 main-menu-column">
+                            <ul class="main-menu-ul">
+
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-okolje main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/99/okolje">
+                                                    Okolje
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-place main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/98/place-in-stroski-dela">
+                                                    Pla&#x10D;e in stro&#x161;ki dela
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-podjetja main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/97/podjetja">
+                                                    Podjetja
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-prebivalstvo main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/100/prebivalstvo">
+                                                    Prebivalstvo
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-razvoj-in-tehnologija main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/88/razvoj-in-tehnologija">
+                                                    Razvoj in tehnologija
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 main-menu-column">
+                            <ul class="main-menu-ul">
+
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-regionalni-pregled main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/583/regionalni-pregled">
+                                                    Regionalni pregled
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-socialna-zascita main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/45/socialna-zascita">
+                                                    Socialna za&#x161;&#x10D;ita
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-transport main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/48/transport">
+                                                    Transport
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-trgovina-in-storitve main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/141/trgovina-in-storitve">
+                                                    Trgovina in storitve
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-menu-li">
+                                        <div class="fields-top-wrapper">
+                                            <div class="fields-icon-wrapper">
+                                                <span class="icon-turizem main-menu-icon"></span>
+                                            </div>
+                                            <div class="fields-name-wrapper">
+                                                <a class="main-menu-link" href="/SiStat/sl/Podrocja/Index/155/turizem">
+                                                    Turizem
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show-hide-fields-container">
+        <div class="show-more-button-wrapper">
+            <button class="btn btn-link field-collapse-toggle-link"
+                    type="button"
+                    id="fieldCollapseToggleButton"
+                    onclick="return toggleShowHideFieldMenu('fieldCollapseToggleButton','Prika&#x17E;i podro&#x10D;ja', 'Skrij podro&#x10D;ja');">
+                <span class="btn_content" tabindex="-1" id="fieldCollapseToggleSpan">
+                    Skrij podro&#x10D;ja
+                    <i class="icon-arrow_up arrow-navigation-fields"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
+<!-- -->
+
+<script>
+    $(document).ready(function () {
+        markSelectedField();
+        setSearchButtonTriggerOnEnterPressed("searchField","searchFieldButton");
+    });
+
+    $("#langChangeButton").click(function (event) {
+        event.preventDefault();
+        $("#selectLanguage").submit();
+    });
+    
+    document.getElementById("jumpMainContentButton").onclick = focusOnFirstElementInMainContent;
+    document.getElementById("jumpMainContentButton").onkeypress = focusOnFirstElementInMainContent;
+</script>
+
+        </div>
+        <main role="main" class="pb-3 surs-main" id="main" tabindex="-1">
+            
+
+
+
+
+
+
+
+<div class="container sistat-content-container">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12">
+
+                <h3 class="sistat-content-title">
+                    <b>
+                        <span class="icon-star-full icon-content-title"></span>
+                        Izpostavljeno
+                    </b>
+                </h3>
+            </div>
+        </div>
+        <div class="sistat-content-wrapper">
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0301910S.px" class="matrix-link" target="_self" aria-label="Bruto doma&#x10D;i proizvod, Slovenija, letno">
+                                        <span class="matrix-link-span" tabindex="-1">Bruto doma&#x10D;i proizvod, Slovenija, letno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(9957)" onkeypress="getMatrixDetails(9957)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2207701S.px" class="matrix-link" target="_self" aria-label="Cestni blagovni prevoz, Slovenija, &#x10D;etrtletno">
+                                        <span class="matrix-link-span" tabindex="-1">Cestni blagovni prevoz, Slovenija, &#x10D;etrtletno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(12416)" onkeypress="getMatrixDetails(12416)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0762003S.px" class="matrix-link" target="_self" aria-label="Delovno sposobni glede na aktivnost in mere aktivnosti po starostnih skupinah in spolu, kohezijski regiji, Slovenija, &#x10D;etrtletno">
+                                        <span class="matrix-link-span" tabindex="-1">Delovno sposobni glede na aktivnost in mere aktivnosti po starostnih skupinah in spolu, kohezijski regiji, Slovenija, &#x10D;etrtletno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(10687)" onkeypress="getMatrixDetails(10687)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0953221S.px" class="matrix-link" target="_self" aria-label="Dijaki po starosti, letnikih, spolu in vrsti izobra&#x17E;evanja, Slovenija, letno">
+                                        <span class="matrix-link-span" tabindex="-1">Dijaki po starosti, letnikih, spolu in vrsti izobra&#x17E;evanja, Slovenija, letno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(11171)" onkeypress="getMatrixDetails(11171)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0300220S.px" class="matrix-link" target="_self" aria-label="Dodana vrednost po dejavnostih in BDP (SKD 2008), Slovenija, &#x10D;etrtletno">
+                                        <span class="matrix-link-span" tabindex="-1">Dodana vrednost po dejavnostih in BDP (SKD 2008), Slovenija, &#x10D;etrtletno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(9953)" onkeypress="getMatrixDetails(9953)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/1817902S.px" class="matrix-link" target="_self" aria-label="Energetski kazalniki, Slovenija, letno">
+                                        <span class="matrix-link-span" tabindex="-1">Energetski kazalniki, Slovenija, letno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(12127)" onkeypress="getMatrixDetails(12127)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0419001S.px" class="matrix-link" target="_self" aria-label="Indeksi cen stanovanjskih nepremi&#x10D;nin po vrstah stanovanjskih nepremi&#x10D;nin, Slovenija, &#x10D;etrtletno">
+                                        <span class="matrix-link-span" tabindex="-1">Indeksi cen stanovanjskih nepremi&#x10D;nin po vrstah stanovanjskih nepremi&#x10D;nin, Slovenija, &#x10D;etrtletno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(10053)" onkeypress="getMatrixDetails(10053)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0400608S.px" class="matrix-link" target="_self" aria-label="Indeksi cen &#x17E;ivljenjskih potreb&#x161;&#x10D;in (ECOICOP ver. 2), Slovenija, mese&#x10D;no">
+                                        <span class="matrix-link-span" tabindex="-1">Indeksi cen &#x17E;ivljenjskih potreb&#x161;&#x10D;in (ECOICOP ver. 2), Slovenija, mese&#x10D;no</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(16636)" onkeypress="getMatrixDetails(16636)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2640010S.px" class="matrix-link" target="_self" aria-label="Izbrani podatki po ob&#x10D;inah, Slovenija, letno">
+                                        <span class="matrix-link-span" tabindex="-1">Izbrani podatki po ob&#x10D;inah, Slovenija, letno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(14045)" onkeypress="getMatrixDetails(14045)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2490201S.px" class="matrix-link" target="_self" aria-label="Izvoz in uvoz po 8-mestni &#x161;ifri Kombinirane nomenklature in po dr&#x17E;avah, Slovenija, letno (kumulativni podatki)">
+                                        <span class="matrix-link-span" tabindex="-1">Izvoz in uvoz po 8-mestni &#x161;ifri Kombinirane nomenklature in po dr&#x17E;avah, Slovenija, letno (kumulativni podatki)</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(12762)" onkeypress="getMatrixDetails(12762)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="collapse exposed-collapse" id="exposedCollapse">
+
+                    <hr class="martix-list-divider"/>
+
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2700001S.px" class="matrix-link" target="_self" aria-label="Kazalniki za odpadke, Slovenija, letno">
+                                                <span class="matrix-link-span" tabindex="-1">Kazalniki za odpadke, Slovenija, letno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(12801)" onkeypress="getMatrixDetails(12801)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05A1002S.px" class="matrix-link" target="_self" aria-label="Osnovne skupine prebivalstva po spolu, Slovenija, &#x10D;etrtletno">
+                                                <span class="matrix-link-span" tabindex="-1">Osnovne skupine prebivalstva po spolu, Slovenija, &#x10D;etrtletno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(10102)" onkeypress="getMatrixDetails(10102)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05J1002S.px" class="matrix-link" target="_self" aria-label="Osnovni podatki o rojenih, Slovenija, letno">
+                                                <span class="matrix-link-span" tabindex="-1">Osnovni podatki o rojenih, Slovenija, letno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(10232)" onkeypress="getMatrixDetails(10232)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/1418807S.px" class="matrix-link" target="_self" aria-label="Podjetja po ob&#x10D;inah, letno">
+                                                <span class="matrix-link-span" tabindex="-1">Podjetja po ob&#x10D;inah, letno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(11629)" onkeypress="getMatrixDetails(11629)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0701029S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ne mese&#x10D;ne pla&#x10D;e in indeksi povpre&#x10D;nih mese&#x10D;nih pla&#x10D; pri pravnih osebah po dejavnostih (SKD 2025), Slovenija, mese&#x10D;no">
+                                                <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ne mese&#x10D;ne pla&#x10D;e in indeksi povpre&#x10D;nih mese&#x10D;nih pla&#x10D; pri pravnih osebah po dejavnostih (SKD 2025), Slovenija, mese&#x10D;no</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(16643)" onkeypress="getMatrixDetails(16643)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05C4003S.px" class="matrix-link" target="_self" aria-label="Prebivalstvo po starosti, ob&#x10D;ine, Slovenija, polletno">
+                                                <span class="matrix-link-span" tabindex="-1">Prebivalstvo po starosti, ob&#x10D;ine, Slovenija, polletno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14425)" onkeypress="getMatrixDetails(14425)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2164521S.px" class="matrix-link" target="_self" aria-label="Preno&#x10D;itvene zmogljivosti, prihodi in preno&#x10D;itve turistov po vrstah turisti&#x10D;nih ob&#x10D;in, Slovenija, letno">
+                                                <span class="matrix-link-span" tabindex="-1">Preno&#x10D;itvene zmogljivosti, prihodi in preno&#x10D;itve turistov po vrstah turisti&#x10D;nih ob&#x10D;in, Slovenija, letno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(12253)" onkeypress="getMatrixDetails(12253)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/1502402S.px" class="matrix-link" target="_self" aria-label="Pridelava polj&#x161;&#x10D;in (ha, t, t/ha), Slovenija, letno">
+                                                <span class="matrix-link-span" tabindex="-1">Pridelava polj&#x161;&#x10D;in (ha, t, t/ha), Slovenija, letno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(11679)" onkeypress="getMatrixDetails(11679)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2164525S.px" class="matrix-link" target="_self" aria-label="Prihodi in preno&#x10D;itve doma&#x10D;ih in tujih turistov, ob&#x10D;ine, Slovenija, letno">
+                                                <span class="matrix-link-span" tabindex="-1">Prihodi in preno&#x10D;itve doma&#x10D;ih in tujih turistov, ob&#x10D;ine, Slovenija, letno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(12255)" onkeypress="getMatrixDetails(12255)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/1970713S.px" class="matrix-link" target="_self" aria-label="Stavbe, za katere so bila izdana gradbena dovoljenja, Slovenija, mese&#x10D;no">
+                                                <span class="matrix-link-span" tabindex="-1">Stavbe, za katere so bila izdana gradbena dovoljenja, Slovenija, mese&#x10D;no</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(12170)" onkeypress="getMatrixDetails(12170)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05A2010S.px" class="matrix-link" target="_self" aria-label="&#x160;tevilo prebivalcev in naravno gibanje prebivalstva, Slovenija, letno">
+                                                <span class="matrix-link-span" tabindex="-1">&#x160;tevilo prebivalcev in naravno gibanje prebivalstva, Slovenija, letno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(10103)" onkeypress="getMatrixDetails(10103)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/05L1018S.px" class="matrix-link" target="_self" aria-label="Umrli po dnevu smrti, Slovenija, mese&#x10D;no">
+                                                <span class="matrix-link-span" tabindex="-1">Umrli po dnevu smrti, Slovenija, mese&#x10D;no</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14069)" onkeypress="getMatrixDetails(14069)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="row text-center">
+                    <button id="buttonExposedCollapse" class="link-collapsed-more collapsed btn font-bold">
+                        <span class="btn_content more-less-span" tabindex="-1">
+                            Več tabel
+                            <i class="icon-arrow_down font-bold"></i>
+                        </span>
+                    </button>
+                </div>
+
+        </div>
+        <hr class="surs-horizontal-split-line" />
+    </div>
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="sistat-content-title">
+                    <b>
+                        <span class="icon-spinner11 icon-content-title"></span>
+                        Zadnje posodobljene
+                    </b>
+                </h3>
+            </div>
+        </div>
+
+        <div class="sistat-content-wrapper">
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0811601S.px" class="matrix-link" target="_self" aria-label="Mnenje potro&#x161;nikov po ekonomskih kazalnikih, Slovenija, mese&#x10D;no">
+                                        <span class="matrix-link-span" tabindex="-1">Mnenje potro&#x161;nikov po ekonomskih kazalnikih, Slovenija, mese&#x10D;no</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(10798)" onkeypress="getMatrixDetails(10798)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0811603S.px" class="matrix-link" target="_self" aria-label="Mnenje potro&#x161;nikov, gibanje cen v preteklosti, Slovenija, mese&#x10D;no">
+                                        <span class="matrix-link-span" tabindex="-1">Mnenje potro&#x161;nikov, gibanje cen v preteklosti, Slovenija, mese&#x10D;no</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(10800)" onkeypress="getMatrixDetails(10800)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/0811604S.px" class="matrix-link" target="_self" aria-label="Mnenje potro&#x161;nikov, gibanje cen v prihodnosti, Slovenija, mese&#x10D;no">
+                                        <span class="matrix-link-span" tabindex="-1">Mnenje potro&#x161;nikov, gibanje cen v prihodnosti, Slovenija, mese&#x10D;no</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(10801)" onkeypress="getMatrixDetails(10801)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/H284S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ne kumulativne pla&#x10D;e pri pravnih osebah, Slovenija, mese&#x10D;no">
+                                        <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ne kumulativne pla&#x10D;e pri pravnih osebah, Slovenija, mese&#x10D;no</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(13454)" onkeypress="getMatrixDetails(13454)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/H285S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ne mese&#x10D;ne pla&#x10D;e pri pravnih osebah, Slovenija, mese&#x10D;no">
+                                        <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ne mese&#x10D;ne pla&#x10D;e pri pravnih osebah, Slovenija, mese&#x10D;no</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(13455)" onkeypress="getMatrixDetails(13455)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176732S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR) po glavnih razlogih za prihod in dr&#x17E;avah prebivali&#x161;&#x10D;a, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                        <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR) po glavnih razlogih za prihod in dr&#x17E;avah prebivali&#x161;&#x10D;a, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(14169)" onkeypress="getMatrixDetails(14169)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176733S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR) po glavnih razlogih za prihod in vrstah ob&#x10D;in, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                        <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR) po glavnih razlogih za prihod in vrstah ob&#x10D;in, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(14170)" onkeypress="getMatrixDetails(14170)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176734S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR) po dr&#x17E;avah prebivali&#x161;&#x10D;a in glede na organizacijo potovanja, v izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                        <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR) po dr&#x17E;avah prebivali&#x161;&#x10D;a in glede na organizacijo potovanja, v izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(14171)" onkeypress="getMatrixDetails(14171)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176735S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR), glede na organizacijo potovanja in po vrstah ob&#x10D;in, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                        <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ni dnevni izdatki na tujega turista (v EUR), glede na organizacijo potovanja in po vrstah ob&#x10D;in, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(14172)" onkeypress="getMatrixDetails(14172)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row matrix-table-row">
+                        <div class="col-lg-12">
+                            <div class="matrix-exposed-icon-wrapper">
+                                <span class="icon-calendar matrix-icon-exposed"></span>
+                            </div>
+                            <div class="matrix-exposed-item-link-wrapper">
+                                    <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176738S.px" class="matrix-link" target="_self" aria-label="Povpre&#x10D;ni izdatki za prevoz (v EUR) na tujega turista iz dr&#x17E;ave prebivali&#x161;&#x10D;a v Slovenijo in nazaj po glavnih prevoznih sredstvih in dr&#x17E;avah prebivali&#x161;&#x10D;a, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                        <span class="matrix-link-span" tabindex="-1">Povpre&#x10D;ni izdatki za prevoz (v EUR) na tujega turista iz dr&#x17E;ave prebivali&#x161;&#x10D;a v Slovenijo in nazaj po glavnih prevoznih sredstvih in dr&#x17E;avah prebivali&#x161;&#x10D;a, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                    </a>
+                                <button class="matrix-download-link" onclick="getMatrixDetails(14175)" onkeypress="getMatrixDetails(14175)" aria-label="matrix info">
+                                    <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="collapse last-updated-collapse" id="lastPublishedCollapse">
+
+                    <hr class="martix-list-divider"/>
+
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176613S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in splo&#x161;nih vtisih o Sloveniji, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in splo&#x161;nih vtisih o Sloveniji, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14181)" onkeypress="getMatrixDetails(14181)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176614S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po vrstah ob&#x10D;in in splo&#x161;nih vtisih o Sloveniji, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po vrstah ob&#x10D;in in splo&#x161;nih vtisih o Sloveniji, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14182)" onkeypress="getMatrixDetails(14182)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176615S.px" class="matrix-link" target="_self" aria-label="Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, po dr&#x17E;avah prebivali&#x161;&#x10D;a in motivih za obisk Slovenije, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, po dr&#x17E;avah prebivali&#x161;&#x10D;a in motivih za obisk Slovenije, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14183)" onkeypress="getMatrixDetails(14183)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176616S.px" class="matrix-link" target="_self" aria-label="Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, po vrstah ob&#x10D;in in motivih za obisk Slovenije, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, po vrstah ob&#x10D;in in motivih za obisk Slovenije, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14184)" onkeypress="getMatrixDetails(14184)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176617S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po vrstah ob&#x10D;in, elementih turisti&#x10D;ne ponudbe in ocenah zadovoljstva, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po vrstah ob&#x10D;in, elementih turisti&#x10D;ne ponudbe in ocenah zadovoljstva, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14185)" onkeypress="getMatrixDetails(14185)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176618S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a, elementih turisti&#x10D;ne ponudbe in ocenah zadovoljstva, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a, elementih turisti&#x10D;ne ponudbe in ocenah zadovoljstva, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14186)" onkeypress="getMatrixDetails(14186)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176411S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in spolu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in spolu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14187)" onkeypress="getMatrixDetails(14187)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176412S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po vrstah ob&#x10D;in in spolu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po vrstah ob&#x10D;in in spolu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14188)" onkeypress="getMatrixDetails(14188)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176413S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in starostnih razredih, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in starostnih razredih, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14189)" onkeypress="getMatrixDetails(14189)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176414S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po vrstah ob&#x10D;in in starostnih razredih, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po vrstah ob&#x10D;in in starostnih razredih, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14190)" onkeypress="getMatrixDetails(14190)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176415S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in ekonomski aktivnosti, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in ekonomski aktivnosti, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14191)" onkeypress="getMatrixDetails(14191)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176416S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po vrstah ob&#x10D;in in ekonomski aktivnosti, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po vrstah ob&#x10D;in in ekonomski aktivnosti, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14192)" onkeypress="getMatrixDetails(14192)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176417S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in &#x17E;ivljenjskem standardu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in &#x17E;ivljenjskem standardu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14193)" onkeypress="getMatrixDetails(14193)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176418S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po vrstah ob&#x10D;in in &#x17E;ivljenjskem standardu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po vrstah ob&#x10D;in in &#x17E;ivljenjskem standardu, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14194)" onkeypress="getMatrixDetails(14194)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176822S.px" class="matrix-link" target="_self" aria-label="Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, glede na &#x10D;as odlo&#x10D;itve za prihod v Slovenijo in po dr&#x17E;avah prebivali&#x161;&#x10D;a (v %), po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, glede na &#x10D;as odlo&#x10D;itve za prihod v Slovenijo in po dr&#x17E;avah prebivali&#x161;&#x10D;a (v %), po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14199)" onkeypress="getMatrixDetails(14199)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176823S.px" class="matrix-link" target="_self" aria-label="Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, glede na vire informacij, ki so najbolj vplivali na njihov prihod in po dr&#x17E;avah prebivali&#x161;&#x10D;a (v %), po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti, ki so Slovenijo obiskali iz zasebnih razlogov, glede na vire informacij, ki so najbolj vplivali na njihov prihod in po dr&#x17E;avah prebivali&#x161;&#x10D;a (v %), po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14200)" onkeypress="getMatrixDetails(14200)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176828S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in glavnih prevoznih sredstvih, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in glavnih prevoznih sredstvih, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14205)" onkeypress="getMatrixDetails(14205)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176829S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in prete&#x17E;nem na&#x10D;inu prehranjevanja, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in prete&#x17E;nem na&#x10D;inu prehranjevanja, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14206)" onkeypress="getMatrixDetails(14206)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176830S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in &#x161;tevilu preno&#x10D;itev v Sloveniji, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avah prebivali&#x161;&#x10D;a in &#x161;tevilu preno&#x10D;itev v Sloveniji, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14207)" onkeypress="getMatrixDetails(14207)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row matrix-table-row">
+                                <div class="col-lg-12">
+                                    <div class="matrix-exposed-icon-wrapper">
+                                        <span class="icon-calendar matrix-icon-exposed"></span>
+                                    </div>
+                                    <div class="matrix-exposed-item-link-wrapper">
+                                            <a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2176831S.px" class="matrix-link" target="_self" aria-label="Tuji turisti po dr&#x17E;avi prebivali&#x161;&#x10D;a in &#x161;tevilu preno&#x10D;itev v kraju anketiranja, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno">
+                                                <span class="matrix-link-span" tabindex="-1">Tuji turisti po dr&#x17E;avi prebivali&#x161;&#x10D;a in &#x161;tevilu preno&#x10D;itev v kraju anketiranja, po izbranih dvomese&#x10D;jih anketiranja, Slovenija, obdobno</span>
+                                            </a>
+                                        <button class="matrix-download-link" onclick="getMatrixDetails(14208)" onkeypress="getMatrixDetails(14208)" aria-label="matrix info">
+                                            <span class="icon-info matrix-details-icon" tabindex="-1"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="row text-center">
+                    <button id="buttonLastPublishedCollapse" class="link-collapsed-more collapsed btn font-bold">
+                        <span class="btn_content more-less-span" tabindex="-1">
+                            Več tabel
+                            <i class="icon-arrow_down font-bold"></i>
+                        </span>
+                    </button>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#buttonExposedCollapse").click(function (event) {
+        exposedCollapse();
+    });
+
+    //$("#buttonExposedCollapse").keypress(function (event) {
+    //    event.preventDefault();
+    //    if (event.which == 13)
+    //        exposedCollapse();
+    //});
+
+    $("#buttonLastPublishedCollapse").click(function (event) {
+        lastPublishedCollapse();
+    });
+
+    //$("#buttonLastPublishedCollapse").keypress(function (event) {
+    //    event.preventDefault();
+    //    if (event.which == 13)
+    //        lastPublishedCollapse();
+    //});
+
+    function exposedCollapse() {
+        var icon = document.createElement("i");
+        var span = document.createElement("span");
+
+        if ($("#buttonExposedCollapse").hasClass("collapsed")) {
+            $("#buttonExposedCollapse").removeClass("link-collapsed-more");
+            $("#buttonExposedCollapse").addClass("link-collapsed-less");
+            $("#buttonExposedCollapse").empty();
+            span.innerHTML = 'Manj tabel';
+            span.classList.add("btn_content");
+            span.classList.add("more-less-span");
+            span.setAttribute("tabindex", "-1");
+            icon.classList.add("icon-arrow_up");
+            $("#exposedCollapse").collapse("show");
+            $("#buttonExposedCollapse").removeClass("collapsed");
+            //icon.classList.add("up");
+
+        } else {
+            $("#buttonExposedCollapse").removeClass("link-collapsed-less");
+            $("#buttonExposedCollapse").addClass("link-collapsed-more");
+            $("#buttonExposedCollapse").empty();
+            span.innerHTML = 'Več tabel';
+            span.classList.add("btn_content");
+            span.setAttribute("tabindex", "-1");
+            span.classList.add("more-less-span");
+            icon.classList.add("icon-arrow_down");
+            $("#exposedCollapse").collapse("hide");
+            $("#buttonExposedCollapse").addClass("collapsed");
+            //icon.classList.add("down");
+        }
+        /*span.append(icon);*/
+        span.appendChild(icon);
+        $("#buttonExposedCollapse").append(span);
+    }//exposedCollapse
+
+    function lastPublishedCollapse() {
+        var icon = document.createElement("i");
+        var span = document.createElement("span");
+
+        if ($("#buttonLastPublishedCollapse").hasClass("collapsed")) {
+            $("#buttonLastPublishedCollapse").removeClass("link-collapsed-more");
+            $("#buttonLastPublishedCollapse").addClass("link-collapsed-less");
+            $("#buttonLastPublishedCollapse").empty();
+            span.innerHTML = 'Manj tabel';
+            span.classList.add("btn_content");
+            span.setAttribute("tabindex", "-1");
+            span.classList.add("more-less-span");
+            icon.classList.add("icon-arrow_up");
+            $("#lastPublishedCollapse").collapse("show");
+            $("#buttonLastPublishedCollapse").removeClass("collapsed");
+            //$("#lastPublishedCollapse").collapse("show");
+            //icon.classList.add("up");
+        } else {
+            $("#buttonLastPublishedCollapse").removeClass("link-collapsed-less");
+            $("#buttonLastPublishedCollapse").addClass("link-collapsed-more");
+            $("#buttonLastPublishedCollapse").empty();
+            span.innerHTML = 'Več tabel';
+            span.classList.add("btn_content");
+            span.setAttribute("tabindex", "-1");
+            span.classList.add("more-less-span");
+            icon.classList.add("icon-arrow_down");
+            $("#lastPublishedCollapse").collapse("hide");
+            $("#buttonLastPublishedCollapse").addClass("collapsed");
+            //$("#lastPublishedCollapse").collapse("hide");
+            //icon.classList.add("down");
+        }
+        span.append(icon);
+        $("#buttonLastPublishedCollapse").append(span);
+    }//lastPublishedCollapse
+</script>
+
+        </main>
+
+    </div>
+
+
+
+
+    
+
+<div id="footer-wrapper" role="contentinfo">
+    <footer>
+        <div id="footer-container">
+            <div class="section">
+                <h2>Kontakt</h2>
+                <ul class="surs-footer-list">
+                    <li>
+
+                        <a href="https://www.google.com/maps/place/Statisti%C4%8Dni&#x2B;urad&#x2B;Republike&#x2B;Slovenije/@46.0823242,14.4942302,17z/data=!4m6!3m5!1s0x476532ceec83a109:0xf89c3f2cbeba11ec!8m2!3d46.0823242!4d14.4942302!16s%2Fg%2FChIJCaG-7s5TZUcR7BG-yyyfnPg" target="_blank">
+                            Statistični urad RS<br />
+                            Litostrojska cesta 54<br />
+                            1000 Ljubljana
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+38612416400" class="contact-tel">T: (01) 241 64 00</a>
+                    </li>
+                    <li>
+                        <a href="mailto:gp.surs@gov.si">E: gp.surs@gov.si</a>
+                    </li>
+
+                    <ul class="ul-social">
+                        <li class="li-social">
+                            <a href="https://www.facebook.com/StatSlovenija/" target="_blank" aria-label="facebook">
+                                <span class="icon-fb surs-icon-footer surs-icon-fb-blue" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li class="li-social">
+                            <a href="https://www.instagram.com/statslovenija/" target="_blank" aria-label="instagram">
+                                <span class="icon-instagram surs-icon-footer surs-icon-instagram"
+                                    aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li class="li-social">
+                            <a href="https://vimeo.com/statslovenija/collections" target="_blank" aria-label="vimeo">
+                                <span class="icon-vimeo surs-icon-footer surs-icon-vimeo" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li class="li-social">
+                            <a href="https://www.youtube.com/user/StatSlovenia" target="_blank" aria-label="youtube">
+                                <span class="icon-youtube surs-icon-footer surs-icon-youtube" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li class="li-social">
+                            <a href="https://www.linkedin.com/company/statisticni-urad-rs" target="_blank"
+                                aria-label="linkedin">
+                                <span class="icon-linkedin surs-icon-footer surs-icon-linkedin"
+                                    aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Produkti</h2>
+                <ul class="surs-footer-list">
+                    <li>
+                        <a href="https://www.stat.si/StatWeb">Spletna stran SURS</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stat.si/ImenaRojstva">Imena in rojstni dnevi</a>
+                    </li>
+                    <li>
+                        <a href="https://pxweb.stat.si">Podatkovna baza SiStat</a>
+                    </li>
+                        <li>
+                            <a href="https://www.stat.si/Slogovnik/">Slogovnik</a>
+                        </li>
+                    <li>
+                        <a href="https://www.stat.si/StatWeb/ReleaseCal">Koledar objav</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stat.si/StatWeb/Catalogue/Index">Publikacije</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stat.si/StatWeb/Population/Pyramid">Prebivalstvena piramida</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.stat.si/inflacija">Inflacija</a>
+                    </li>
+                    <li>
+                        <a href="https://gis.stat.si/">Podatki v prostoru STAGE</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stat.si/obcine">Regije in občine v številkah</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stat.si/KrajevnaImena/Settlements/ByRegion">Krajevna imena</a>
+                    </li>
+                        <li>
+                            <a href="https://www.stat.si/SKD">Iskalnik SKD in CPA</a>
+                        </li>
+                    <li>
+                        <a href="https://www.stat.si/Pages/cilji">Kazalniki trajnostnega razvoja</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stat.si/StatWeb/Dashboard/Slovenia">Slovenija interaktivno</a>
+                    </li>
+                    <li>
+                        <a href="STEDyLink">STEDy</a>
+                    </li>
+                    <li>
+                        <a href="https://www.stat.si/statweb/Tourism/TourismDaily">Turizem dnevno</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Druge podatkovne baze</h2>
+                <ul class="surs-footer-list">
+                    <li>
+                        <a href='https://podatki.gov.si/'>OPSI – Odprti podatki Slovenije</a>
+                    </li>
+                    <li>
+                        <a href='https://ec.europa.eu/eurostat'>Podatkovna baza Eurostat</a>
+                    </li>
+                </ul>
+                <h2 class="exp-content-footer">Izpostavljena vsebina</h2>
+                <ul class="surs-footer-list">
+                    <li> <a href="https://pxweb.stat.si/SiStat/sl/Help/Cookies">Piškotki</a> </li>
+                    <li> <a href="https://pxweb.stat.si/SiStat/sl/Home/Accessibility">Izjava o dostopnosti</a> </li>
+                    <li> <a href="https://www.stat.si/StatWeb/StaticPages/Index/Copyright">Avtorske pravice</a> </li>
+                </ul>
+            </div>
+            <div id="surs-copyright">
+                <a href="https://www.stat.si/StatWeb/StaticPages/Index/Copyright">&copy; Statistični urad Republike Slovenije</a>
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js" crossorigin="anonymous" integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+            </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022\/SiStat\/lib\/bootstrap\/dist\/js\/bootstrap.bundle.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha256-E\/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ\/PR7CA4=\u0022\u003E\u003C\/script\u003E"));</script>
+    
+    <script src="/SiStat/js/site.js?v=jTEnflIFkvsAe92FstGHm_KqWjA87a0cE24KwKUjpvw"></script>
+    <script src="/SiStat/js/sursCookie.js?v=VesJTEPrMKszxAGsyxuG2hXarzh2Gt2glSDe8K1kgLw"></script>
+
+    <!-- Modal -->
+
+
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Rezultati iskanja</h5>
+                <button type="button" class="close" data-dismiss="modal" onclick="emptyModal();" aria-label="Zapri">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="searchResultBody">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="reults-text-modal">
+                            Zadetki:
+                        </div>
+                        <div class="search-hits-number" id="resultHits">
+                        </div>
+                    </div>
+                </div>
+                <div class="row modal-results-header">
+                    <div class="col-8">
+                        <b>Matrika</b>
+                    </div>
+                    <div class="col-2">
+                        <b>Objavljena</b>
+                    </div>
+                </div>
+                <div id="resultsArea">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="emptyModal();">Zapri</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function searchMatrix() {
+        var searchString = $("#searchField").val();
+        var searchUrl = "/SiStat/sl/Home/GetSearchResults";
+        //alert(searchUrl);
+        $.ajax({
+            type: "GET",
+            url: searchUrl + "?searchQuery=" + searchString
+        }).done(function (result) {
+            var count = 0;
+            $.each(result, function (i, obj) {
+                //primer s stolpci
+                var resultsArea = $("#resultsArea");
+                var resultsRow = $("<div></div>").attr("class", "row modal-search-results-row");
+
+                var descriptionField = $("<div></div>").attr("class", "col-8");
+                var dateField = $("<div></div>").attr("class", "col-2");
+
+                var matrixLink = $("<a></a>").attr("href", obj.linkUrl)
+                                                .attr("class", "matrix-link")
+                                                .text(obj.description);
+                dateField.text(obj.published);
+
+                descriptionField.append(matrixLink);
+                resultsRow.append(descriptionField);
+                resultsRow.append(dateField);
+                resultsArea.append(resultsRow);
+
+                //primer s tabelo
+                /*var table = $("#tableSearchResult");
+                var tableRow = $("<tr></tr>");
+                var tableDescriptionField = $("<td></td>");
+                var matrixLink = $("<a></a>").text(obj.description);
+                matrixLink.attr("href", obj.linkUrl);
+
+                tableDescriptionField.append(matrixLink);
+                tableRow.append(tableDescriptionField);
+                table.append(tableRow);
+                */
+                count++;
+            });
+            $("#resultHits").text(count);
+            $("#searchModal").modal();
+        });
+    }//searchMatrix
+
+    function emptyModal() {
+        $("#resultsArea").empty();
+    }
+</script>
+
+
+    <!-- Modal-->
+
+
+
+<div class="modal fade" id="matrixDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header modal-matrix-details">
+                <h5 class="modal-title" id="exampleModalLongTitle">Informacije o tabeli</h5>
+                <button type="button" class="close modal-details-close-button" data-dismiss="modal" onclick="emptyModal();" aria-label="Zapri">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-matrix-details" id="matrixDetailsBody">
+                <div class="row">
+                    <div class="col-12 table-title-container">
+                        <div class="popup-table-title-label">
+                        </div>
+                        <div class="popup-table-description" id="tableDescription">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 popup-matrix-name">
+                        <div class="popup-matrix-name-label">
+                            ID tabele: 
+                        </div>
+                        <div class="popup-matrix-name-matrix-name" id="matrixIdField">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 table-last-updated-container">
+                        <div class="popup-last-updated-label">
+                            Zadnja objava:
+                        </div>
+                        <div class="popup-last-updated-date" id="tableLastUpdated">
+                        </div>
+                    </div>
+                </div>
+                <div class="row table-popup-row-download">
+                    <div class="download-pxfile">
+                        <div>
+                            <span class="icon-px-icon download-px-icon"></span>
+                            <a id="linkToPxFile" class="surs-sistat-link surs-download-px-link">
+                                Datoteka px
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 download-pxwin-container">
+                        <p class="download-pxwin-text">Za odpiranje datotek px si naložite program Px-Win, <a class="surs-sistat-link px-win-download-link" href="https://www.stat.si/doc/px/pxwin.rar">prenos programa</a>.</p>
+                    </div>
+                </div>
+                <div class="row documentation-container">
+                    <div class="col-12 meth-explanation-conteiner" id="methExplanationsContainer">
+
+                    </div>
+                </div>
+                <div class="row" id="methodologicalExplanation">
+                    <div class="col-12 table-popup-documentation-content">
+                        <p class="modal-documentation-content">
+                            Metodološka pojasnila vsebujejo informacije o statističnih raziskovanjih, o metodologiji zbiranja podatkov, o izračunavanju statistik in drugo metodološko gradivo, potrebno za pravilno razumevanje, interpretacijo in uporabo podatkov. Posamezno metodološko pojasnilo se lahko nanaša na več v podatkovni bazi SiStat objavljenih tabel.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" id="revisionExplanation">
+                    <div class="col-12 revision-expl-wrapper">
+                        <div class="revision-expl-title">
+                            <p class="revision-expl-title-text">Podatki v tabeli so podvrženi reviziji</p>
+                        </div>
+                        <div class="revision-expl-content">
+                            <p class="revision-expl-content-text">Revidiranje podatkov je statistični proces, ki spremeni vrednosti objavljenih podatkov. <a class="surs-sistat-link revision-expl-link" target="_blank" href="https://www.stat.si/statweb/File/DocSysFile/5296">Več o tem v dodatnih pojasnilih.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function getMatrixDetails(idPxMatrix) {
+    var searchUrl = "/SiStat/sl/Home/GetMatrixDetails";
+    var culture = 'sl';
+    var pxWebUrl;
+    var pxAcronym = ".px";
+
+    if (culture == "sl")
+        pxWebUrl = 'https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/';
+    else
+        pxWebUrl = 'https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/';
+
+    $.ajax({
+        type: "GET",
+        url: searchUrl + "?idPxMatrix=" + idPxMatrix,
+        success: function (data) {
+            var lastUpdated;
+            if (data.lang.toLowerCase() == "sl") {
+                lastUpdated = new Date(data.lastUpdated)
+                    .toLocaleDateString("sl-SI", {
+                        day: "numeric",
+                        month: "numeric",
+                        year: "numeric",
+                    })
+                    .replace(/\./g, ". ")
+                    .replace(/\s+/g, " ")
+                    .trim();
+            } else if (data.lang.toLowerCase() == "en") {
+                lastUpdated = new Date(data.lastUpdated).toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
+                });
+            }
+            
+            //Set PxMatrix Name
+            $("#matrixIdField").text(" " + data.pxMatrixName);
+            $("#tableDescription").empty();
+            $("#tableDescription").append(
+                $("<a></a>")
+                    .attr("href", pxWebUrl + data.pxMatrixName + pxAcronym)
+                    .addClass("modal-title-link")
+                    .text(data.pxMatrixDescription)
+            );
+            $("#tableLastUpdated").text(lastUpdated);
+            
+            //Link do px fajla
+            $("#linkToPxFile").attr("href", data.downloadLink);
+            
+            //Methodological explanation
+            var dateField = $("<div></div>").attr("class", "col-2");
+            dateField.text("asd");
+            
+            //Hide Methodological Explanation Description, if there is no Methodological Explanations attached to matrix
+            if (data.methodologicalExplanationsUrlsList.length == 0) {
+                $("#methodologicalExplanation").addClass("hidden-div");
+            } else {
+                $("#methodologicalExplanation").removeClass("hidden-div");
+            }
+            
+            //Hide or Show Revision Data Explanation
+            if (data.revizija == false) {
+                $("#revisionExplanation").addClass("hidden-div");
+            } else {
+                $("#revisionExplanation").removeClass("hidden-div");
+            }
+            
+            $("#methExplanationsContainer").empty();
+            for (var i = 0; i < data.methodologicalExplanationsUrlsList.length; i++) {
+                var metodText = "Metodološko pojasnilo";
+                if (data.methodologicalExplanationsUrlsList.length > 1) {
+                    metodText = metodText + "\xa0" + (i + 1).toString();
+                }
+                var methExpl = $("<div></div>");
+                methExpl.attr("class", "method-expl-text-container");
+                var methExplLink = $("<a></a>").text(metodText);
+                methExplLink.attr("class", "surs-sistat-link surs-meth-expl-link");
+                methExplLink.attr("href", data.methodologicalExplanationsUrlsList[i]);
+                methExplLink.attr("target", "_blank");
+                var methExplIcon = $("<span></span>");
+                methExplIcon.attr(
+                    "class",
+                    "icon-pdf-file-format-symbol modal-meth-expl-icon"
+                );
+                methExpl.append(methExplIcon);
+                methExpl.append(methExplLink);
+                $("#methExplanationsContainer").append(methExpl);
+                applyPageTheme();
+            }
+            
+            $("#matrixDetailsModal").modal();
+            
+            //when hide, remove item from local storage (part of closing modal on browser BACK button)
+            $("#matrixDetailsModal").on("hide.bs.modal", function () {
+                localStorage.removeItem("modalShown");
+            });
+        },
+    });
+}
+
+function emptyModal() {
+    $("#methExplanations").empty();
+}
+</script>
+    
+
+
+
+<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="help modal" aria-modal="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header modal-matrix-details">
+                <h5 class="modal-title" id="exampleModalLongTitle">Pomoč pri uporabi iskalnika</h5>
+                <button type="button" class="close modal-details-close-button" data-dismiss="modal" aria-label="">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body modal-matrix-details" id="help">
+                <div class="row">
+                    <div class="col-12 table-title-container">
+                        <div class="popup-table-description">
+                           Kako uporabljati iskalnik podatkovne baze SiStat?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 table-popup-documentation-content">
+                        <p class="modal-documentation-content">
+                            <p class="quick-help-content">V iskalno polje vnesite želeno besedo ali besedno zvezo in kliknite gumb Išči. Če iskalnik vrne premalo ali preveč zadetkov, lahko število iskalnih zadetkov razširite ali zmanjšate z uporabo iskalnih operatorjev (npr. zvezdico, narekovaje, OR, AND, NOT).</p>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 table-popup-documentation-content">
+                        <p class="modal-documentation-content quick-help-modal-sub-title">
+                            <strong class="modal-sub-title">
+                                Zvezdica, npr. povpreč*
+                            </strong>
+                                <p class="quick-help-content">Zvezdica razširi iskanje na vse besede, ki se začnejo z istim zaporedjem črk. Tako boste lahko iskali različne oblike iste besede hkrati, npr. <b>povpreč</b>je, <b>povpreč</b>ja, <b>povpreč</b>no.</p>
+                        </p>
+                         <p class="modal-documentation-content quick-help-modal-sub-title">
+                            <strong class="modal-sub-title">
+                                Narekovaji, npr. "bruto domači proizvod"
+                            </strong>
+                                <p class="quick-help-content">Uporaba narekovajev omogoča iskanje po točno določenem zaporedju besed (npr. naslovu tabele). Iskalnik bo prikazal povezave do vseh tabel, ki v naslovu ali vsebini vsebujejo besede v <b>točno</b> takem zaporedju, kot so zapisane med narekovaji. Znotraj narekovajev drugi iskalni operatorji ne bodo delovali.</p>
+                        </p>
+                        <p class="modal-documentation-content quick-help-modal-sub-title">
+                            <strong class="modal-sub-title">
+                                AND 
+                            </strong>
+                                <p class="quick-help-content">Iskalni operator <b>AND</b> določa med iskanima besedama oz. besedami odnos <b>»in«</b>. To pomeni, da bo iskalnik med zadetki prikazal samo povezave do tabel, ki vsebujejo <b>oba</b> oz. <b>vse</b> iskalne nize. Če želite na primer pridobiti podatke o povprečnem zaslužku po občinah, vtipkajte (s presledki med besedami): povpreč* plač* občin*. Operator <b>AND</b> lahko izpustite, saj ga iskalnik uporablja privzeto.</p>
+                        </p>
+                        <p class="modal-documentation-content quick-help-modal-sub-title">
+                            <strong class="modal-sub-title">
+                                OR
+                            </strong>
+                                <p class="quick-help-content">Operator <b>OR</b> določa med iskanima besedama oz. besedami odnos <b>»ali«</b>. To pomeni, da bo iskalnik med zadetki prikazal povezave do tabel, ki vsebujejo v naslovu ali v vsebini vsaj eno od besed (ali vse). Npr. hruške <b>OR</b> jabolka <b>OR</b> jagode. Operator <b>OR</b> je uporaben, kadar želite razširiti število zadetkov.</p>
+                        </p>
+                        <p class="modal-documentation-content quick-help-modal-sub-title">
+                            <strong class="modal-sub-title">
+                                NOT
+                            </strong>
+                                <p class="quick-help-content">Iskalni operator <b>NOT</b> določa med iskalnima besedama odnos <b>»in ne«</b>. Če želite npr. iz »prenočitve turistov« izločiti domače goste, vpišite tako: prenočitve tuji <b>NOT</b> domači. Iskalnik bo med zadetki prikazal samo povezave do tabel, ki v naslovu ali v vsebini vsebujejo besedi »prenočitve« in »tuji«, <b>ne</b> pa besede »domači«.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <p class="modal-documentation-content">
+                            <strong>
+                                Za podrobnejša navodila za uporabo iskalnika kliknite <a class="surs-sistat-link revision-expl-link" href="/SiStat/sl/Home/Help">Pomoč</a>.
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+    <script type="text/javascript">
+
+        //Handle Cookies PxWeb
+        (function () {
+            configureCookieElements();
+            handleAnalitics();
+            hideNavigation();
+            hideNavigationIfDesktopOnSearchPage();
+        })();
+
+    </script>
+    <!-- END COOKIES SECTION -->
+</body>
+
+</html>

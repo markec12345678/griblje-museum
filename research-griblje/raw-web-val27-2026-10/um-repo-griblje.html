@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sl" xml:lang="sl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="keywords" content="DKUM, digitalna knjižnica Univerze v Mariboru, digitalna knjižnica, knjižnica, diplome, magisteriji, doktorati, raziskovalni podatki, UM" />
+<meta name="description" content="Digitalna knjižnica Univerze v Mariboru - institucionalni repozitorij Univerze v Mariboru: diplomska, magistrska in doktorska dela; publikacije, raziskovalni podatki, drugi raziskovalni rezultati; izdaje univerzitetne založbe." />
+<title>DKUM - Izpis gradiva</title>
+<link href="teme/dkumDev2/css/icofont.min.css?v=24200" rel="stylesheet" />
+<link href="teme/dkumDev2/css/style.css?v=24200" type="text/css" rel="stylesheet" title="default" />
+<!--[if IE]>
+<link href="teme/dkumDev2/css/style_ie.css?v=24200" type="text/css" rel="stylesheet" title="IE" />
+<![endif]-->
+<link rel="icon" href="teme/dkumDev2/img/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+var cfgTema = 'teme/dkumDev2/';
+var cfgLangID = 'slv';
+var cfgSearchIndexURL = 'https://dk.um.si/elastic/';
+var cfgAppBaseURL = 'https://dk.um.si/';
+var cfgAppApiURL = 'api/';
+var cfgKratica = 'DKUM';
+var cfgFacetSide = 'right';
+var cfgImaOpis = true;
+var cfgLogoPath = cfgTema + 'img/logo/';
+var cfgImgPath = cfgTema + 'img/';
+</script>
+<script src="js/jquery.min.js" type="text/JavaScript"></script>
+<script src="js/lang_slv.js?v=24200" type="text/JavaScript"></script>
+<script src="js/script_lib.js?v=24200" type="text/JavaScript"></script>
+<script src="js/script.js?v=24200" type="text/JavaScript"></script>
+<script src="js/jquery.rating.min.js" type="text/javascript"></script>
+<script src="js/textsizer.js?v=24200" type="text/javascript"></script>
+<script src="js/cookieLaw.js?v=24200" type="text/javascript"></script>
+</head>
+<body>
+  <a id="top"></a><noscript><div class="NoScript">  <h1>Vaš brskalnik ne omogoča JavaScript!</h1>JavaScript je nujen za pravilno delovanje teh spletnih strani.
+    Omogočite JavaScript ali uporabite sodobnejši brskalnik.</div></noscript>
+    <div class="platno tex2jax_ignore">
+      <header>
+        <div id="zgornjiDelGlave">
+          <div id="logo">
+            <a href="info/index.php/slo/" title="Pojdi na prvo stran DKUM">
+              <img src="teme/dkumDev2/img/logotip_um2_slv.png" alt="Logotip UM" />
+            </a>
+          </div>
+          <div id="topMenu">
+								<a target="_blank" href="https://www.facebook.com/digitalnaknjiznicaDKUM/">
+			<img src="teme/dkumDev2/img/facebook16.png" alt="Facebook" title="Facebook" class="social" />
+		</a> |
+    <a target="_blank" href="https://twitter.com/dknjiznicaUM/">
+			<img src="teme/dkumDev2/img/twitter16.png" alt="Twitter" title="Twitter" class="social" />
+		</a> |
+		            <a href="https://dk.um.si:443/IzpisGradiva.php?lang=slv&text=Griblje">SLO</a> |
+            <a href="https://dk.um.si:443/IzpisGradiva.php?lang=eng&text=Griblje">ENG</a> |
+            <a href="cookies.php?lang=slv">Piškotki in zasebnost</a>
+            <div class="iskalnoPolje">
+                <label>
+                  <input type="text" id="hitriIskalnik"
+                  title="Hitro iskanje"
+                  value="ISKANJE PO KATALOGU"
+                  onkeydown="HitroIskanje_onKeyDown(event);"
+                  onFocus="HitroIskanje_onFocus(event);"
+                  onBlur="HitroIskanje_onBlur(event);"
+                  />
+
+                  <img src="teme/dkumDev2/img/gosearch15.png" alt="Lupa"
+                  id="hitroIskanjeLupa" onclick="HitroIskanje_OnLupaClick(event);"
+                  title="Išči"
+                  />
+              </label>
+            </div>
+            <label>
+                <select id="iskaniVir">
+                <option value="dk" selected="selected">DKUM</option><option value="2">&nbsp;&nbsp;&nbsp;&nbsp;EPF - Ekonomsko-poslovna fakulteta</option><option value="19">&nbsp;&nbsp;&nbsp;&nbsp;FE - Fakulteta za energetiko</option><option value="3">&nbsp;&nbsp;&nbsp;&nbsp;FERI - Fakulteta za elektrotehniko, računalništvo in informatiko</option><option value="9">&nbsp;&nbsp;&nbsp;&nbsp;FF - Filozofska fakulteta</option><option value="5">&nbsp;&nbsp;&nbsp;&nbsp;FGPA - Fakulteta za gradbeništvo, prometno inženirstvo in arhitekturo</option><option value="13">&nbsp;&nbsp;&nbsp;&nbsp;FKBV - Fakulteta za kmetijstvo in biosistemske vede</option><option value="6">&nbsp;&nbsp;&nbsp;&nbsp;FKKT - Fakulteta za kemijo in kemijsko tehnologijo</option><option value="16">&nbsp;&nbsp;&nbsp;&nbsp;FL - Fakulteta za logistiko</option><option value="11">&nbsp;&nbsp;&nbsp;&nbsp;FNM - Fakulteta za naravoslovje in matematiko</option><option value="8">&nbsp;&nbsp;&nbsp;&nbsp;FOV - Fakulteta za organizacijske vede</option><option value="7">&nbsp;&nbsp;&nbsp;&nbsp;FS - Fakulteta za strojništvo</option><option value="22">&nbsp;&nbsp;&nbsp;&nbsp;FT - Fakulteta za turizem</option><option value="12">&nbsp;&nbsp;&nbsp;&nbsp;FVV - Fakulteta za varnostne vede</option><option value="14">&nbsp;&nbsp;&nbsp;&nbsp;FZV - Fakulteta za zdravstvene vede</option><option value="17">&nbsp;&nbsp;&nbsp;&nbsp;MF - Medicinska fakulteta</option><option value="10">&nbsp;&nbsp;&nbsp;&nbsp;PEF - Pedagoška fakulteta</option><option value="18">&nbsp;&nbsp;&nbsp;&nbsp;PF - Pravna fakulteta</option><option value="15">&nbsp;&nbsp;&nbsp;&nbsp;UKM - Univerzitetna knjižnica Maribor</option><option value="21">&nbsp;&nbsp;&nbsp;&nbsp;UM - Univerza v Mariboru</option><option value="23">&nbsp;&nbsp;&nbsp;&nbsp;UZUM - Univerzitetna založba Univerze v Mariboru</option><option class="NeIzbirna" value="cobiss">COBISS</option><option value="cepf">&nbsp;&nbsp;&nbsp;&nbsp;Ekonomsko poslovna fakulteta</option><option value="cfkmb">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za kmetijstvo in biosistemske vede</option><option value="cflce">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za logistiko</option><option value="cfov">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za organizacijske vede</option><option value="cvpvslj">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za varnostne vede</option><option value="cvzsmb">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za zdravstvene vede</option><option value="cktfmb">&nbsp;&nbsp;&nbsp;&nbsp;Knjižnica tehniških fakultet</option><option value="cmfmb">&nbsp;&nbsp;&nbsp;&nbsp;Medicinska fakulteta</option><option value="cpefmb">&nbsp;&nbsp;&nbsp;&nbsp;Miklošičeva knjižnica - FPNM</option><option value="cprfmb">&nbsp;&nbsp;&nbsp;&nbsp;Pravna fakulteta</option><option value="cukm">&nbsp;&nbsp;&nbsp;&nbsp;Univerzitetna knjižnica Maribor</option>                </select>
+            </label><br />
+            <a href="javascript:ts('Vsebina',1)"
+              title="Povečaj velikost besedila">
+              Večja pisava</a> |
+            <a href="javascript:ts('Vsebina',-1)"
+              title="Zmanjšaj velikost besedila">
+              Manjša pisava</a>
+          </div>
+        </div>
+        <nav><a href="info/index.php/slo/uvodnik">Uvodnik</a><a href="Iskanje.php?lang=slv">Iskanje</a><a href="Brskanje.php?lang=slv">Brskanje</a><a href="info/index.php/slo/oddaja-dela" class="idOddajaDela">Oddaja dela</a><a href="Statistika.php?lang=slv">Statistika</a><a href="prijava.php?lang=slv" class="prijavaNi" title="Uporabnik: ">Prijava</a></nav>
+      </header>
+      <section class="Vsebina">
+        <div class="pot">
+          <a href="info/index.php/slo/">Prva stran</a> &gt;
+          <a href="#" id="potZadnji">Izpis gradiva</a>
+        </div>
+<h1>Izpis gradiva <a href="javascript:showHelp('javno.izpis&amp;lang=slv')" ><img src="teme/dkumDev2/img/vprasaj.gif" alt="Pomoč" title="Pomoč" /></a></h1>
+<form name="form" method="post" action="IzpisGradiva.php?lang=slv&amp;text=Griblje">
+<div class="AdminNapaka">Ni podatka o gradivu!</div>
+
+  <br />
+  <a href="javascript:history.go(-1)" class="povezavaNazaj">Nazaj</a>
+  <script>hideBackButtonWithNoHistory();</script>
+  <br /></form></section>    <img class="Partnerji"
+      src="teme/dkumDev2/img/partnerji_slv.gif"
+      usemap="#partnerji"
+      alt="Logotipi partnerjev" />
+    <map name="partnerji" alt="Logotipi partnerjev">
+      <area shape="rect" coords="522,25,670,105"
+        href="http://www.um.si/"
+        title="Univerza v Mariboru"
+        alt="Univerza v Mariboru" />
+      <area shape="rect" coords="685,25,780,105"
+        href="http://www.uni-lj.si/"
+        title="Univerza v Ljubljani"
+        alt="Univerza v Ljubljani" />
+      <area shape="rect" coords="795,25,855,105"
+        href="http://www.upr.si/"
+        title="Univerza na Primorskem"
+        alt="Univerza na Primorskem" />
+      <area shape="rect" coords="870,25,950,105"
+        href="http://www.ung.si/"
+        title="Univerza v Novi Gorici"
+        alt="Univerza v Novi Gorici" />
+    </map>
+    <footer>
+      <div>
+        Digitalna knjižnica Univerze v Mariboru |
+        <a href="mailto:dkum@um.si">dkum@um.si</a><a class="prijava" href="prijava.php?lang=slv&mode=">Prijava za skrbnike</a>      </div>
+    </footer>
+  </div>  <script>ts('Vsebina', 0); addSubmenu();</script>
+  <!-- RenderTime: 0 sec. -->
+  </body>
+</html>

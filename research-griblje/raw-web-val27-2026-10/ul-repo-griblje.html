@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sl" xml:lang="sl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta name="keywords" content="Repozitorij Univerze v Ljubljani, repozitorij, digitalna knjižnica, knjižnica, diplome, magisteriji, doktorati,UL, RUL" />
+<meta name="description" content="Repozitorij Univerze v Ljubljani: diplomska, magistrska in doktorska dela; publikacije, raziskovalni podatki, drugi raziskovalni rezultati; izdaje univerzitetne založbe." />
+<title>RUL - iskanje</title>
+<link href="teme/rulDev/css/icofont.min.css?v=13600" rel="stylesheet" />
+<link href="teme/rulDev/css/style.css?v=13600" type="text/css" rel="stylesheet" title="default" />
+<!--[if IE]>
+<link href="teme/rulDev/css/style_ie.css?v=13600" type="text/css" rel="stylesheet" title="IE" />
+<![endif]-->
+<link rel="icon" href="teme/rulDev/img/favicon.png?v=2" type="image/png" />
+<script type="text/javascript">
+var cfgTema = 'teme/rulDev/';
+var cfgLangID = 'slv';
+var cfgSearchIndexURL = 'https://repozitorij.uni-lj.si/elastic/';
+var cfgAppBaseURL = 'https://repozitorij.uni-lj.si/';
+var cfgAppApiURL = 'api/';
+var cfgKratica = 'RUL';
+var cfgFacetSide = 'right';
+var cfgImaOpis = false;
+var cfgLogoPath = cfgTema + 'img/logo/';
+var cfgImgPath = cfgTema + 'img/';
+</script>
+<script src="js/jquery.min.js" type="text/JavaScript"></script>
+<script src="js/lang_slv.js?v=13600" type="text/JavaScript"></script>
+<script src="js/script.js?v=13600" type="text/JavaScript"></script>
+<script src="js/jquery.rating.min.js" type="text/javascript"></script>
+<script src="js/textsizer.js?v=13600" type="text/javascript"></script>
+<script src="js/cookieLaw.js?v=13600" type="text/javascript"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+ <link rel="search"
+      type="application/opensearchdescription+xml"
+      href="ajax.php?cmd=getOpenSearchXml&lang=slv"
+      title="RUL (sl)" /><script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script><script>MathJax.Hub.Config(
+    {tex2jax: {
+      inlineMath: [['\▫$','$\▫'], ['$','$'], ['\\(','\\)']],
+      processEscapes: true,
+      ignoreClass: 'tex2jax_ignore',
+      processClass: 'tex2jax_do'
+    }});</script>
+</head>
+<body style="background-image: url('https://repozitorij.uni-lj.si/teme/rulDev/img/bg/knjiga.02.jpg');">
+  <a id="top"></a><noscript><div class="bigMsg"><div>  <h1>Vaš brskalnik ne omogoča JavaScript!</h1>JavaScript je nujen za pravilno delovanje teh spletnih strani.
+    Omogočite JavaScript ali pa uporabite sodobnejši brskalnik.</div></div></noscript>
+<!--[if lt IE 9]>
+<div class="bigMsg"><div><h1>Vaš brskalnik trenutno ni podprt.</h1>Vaš brskalnik je starejše različice in lahko ima težave s prikazom te spletne strani. V primeru težav priporočamo namestitev <a href="http://browsehappy.com/?locale=sl_SI" target="_blank">novejšega brskalnika</a>.</div></div><![endif]-->    <div class="platno">
+      <header>
+        <div id="glavaLogo">
+          <a href="http://www.uni-lj.si/" target="_blank">
+            <img src="teme/rulDev/img/logo_ul.png"
+              alt="Univerza v Ljubljani"
+              title="Univerza v Ljubljani"
+            />
+          </a>
+        </div>
+        <div id="glavaVsebina">
+          <div id="nazivRepozitorija">
+            <a href="info/index.php/slo/" title="Repozitorij Univerze v Ljubljani">
+              Repozitorij Univerze v Ljubljani            </a>
+          </div>
+          <ul id="glavaMenu">
+            <li style="width: 260px">
+              <a href="http://openscience.si/"
+                target="_blank"
+                title="Nacionalni portal odprte znanosti"
+              >Nacionalni portal odprte znanosti</a>
+            </li>
+            <li style="width: 92px;">
+              <a href="https://www.uni-lj.si/raziskovanje/odprta-znanost"
+                target="_blank"
+                title="Odprta znanost Slovenia"
+              >Odprta znanost</a>
+            </li>
+            <li style="width: 92px">
+              <a href="https://plus-legacy.cobiss.net/cobiss/ul/sl/bib/search"
+                target="_blank"
+                title="Digitalna knjižnica Univerze v Ljubljani"
+              >DiKUL</a>
+            </li>
+            <li style="width: 92px" class="fontSizer">
+              <img src="teme/rulDev/img/font_minus.gif" alt="A-"
+                onClick="ts('section', -1)"
+                title="Manjša pisava"
+              />
+              &nbsp;
+              <img src="teme/rulDev/img/font_plus.gif" alt="A+"
+                onClick="ts('section', 1)"
+                title="Večja pisava"
+              />
+            </li>
+            <li style="width: 70px">
+              <a href="https://repozitorij.uni-lj.si:443/Iskanje.php?lang=slv&text=Griblje" title="Slovensko">slv</a> |
+              <a href="https://repozitorij.uni-lj.si:443/Iskanje.php?lang=eng&text=Griblje" title="English">eng</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div>
+        <div id="glavniMenu">
+          <nav><a href="Iskanje.php?lang=slv" class="sel" style="width:93px;">Iskanje</a><a href="Iskanje.php?type=napredno&lang=slv" class="sel" style="width:93px;">Napredno</a><a href="info/index.php/slo/novosti" style="width:93px;">Novo v RUL</a><a href="info/index.php/slo/kaj-je-rul" style="width:93px;">Kaj je RUL</a><a href="Statistika.php?lang=slv" style="width:93px;">V številkah</a><a href="info/index.php/slo/pomoc" style="width:93px;">Pomoč</a><a href="prijava.php?lang=slv" class="prijavaNi" style="width:85px;">Prijava</a></nav>
+        </div>
+      </div>
+      <section >
+        
+<h1 class="h1-white">Iskanje</h1>
+<div class="vsebina"><form name="form" method="get" action="Iskanje.php">
+	<input type="hidden" name="type" value="enostavno" />
+  <input type="hidden" name="lang" value="slv" />
+  <div class="PrvaStran">
+  	<table class="IskanjeEnostavno">
+  	<tr>
+  		<td colspan="2">
+        <input type="text" id="niz" name="niz" onkeydown="Iskanje_onKeyDown(event);"
+          title="Iskalni niz"
+          value="" autofocus
+        />
+      </td>
+    </tr>
+  	<tr>
+  		<td>
+  			<select id="vir" name="vir" title="Išči po">
+  				<option value="dk" selected="selected">RUL</option>
+          <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;Akademija za glasbo</option><option value="3">&nbsp;&nbsp;&nbsp;&nbsp;Akademija za gledališče, radio, film in televizijo</option><option value="4">&nbsp;&nbsp;&nbsp;&nbsp;Akademija za likovno umetnost in oblikovanje</option><option value="5">&nbsp;&nbsp;&nbsp;&nbsp;Biotehniška fakulteta </option><option value="1">&nbsp;&nbsp;&nbsp;&nbsp;Ekonomska fakulteta</option><option value="6">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za arhitekturo </option><option value="7">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za družbene vede </option><option value="27">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za elektrotehniko</option><option value="8">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za farmacijo </option><option value="9">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za gradbeništvo in geodezijo </option><option value="10">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za kemijo in kemijsko tehnologijo </option><option value="11">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za matematiko in fiziko </option><option value="12">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za pomorstvo in promet </option><option value="25">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za računalništvo in informatiko</option><option value="13">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za socialno delo </option><option value="14">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za strojništvo </option><option value="15">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za šport </option><option value="16">&nbsp;&nbsp;&nbsp;&nbsp;Fakulteta za upravo </option><option value="17">&nbsp;&nbsp;&nbsp;&nbsp;Filozofska fakulteta </option><option value="18">&nbsp;&nbsp;&nbsp;&nbsp;Medicinska fakulteta </option><option value="19">&nbsp;&nbsp;&nbsp;&nbsp;Naravoslovnotehniška fakulteta </option><option value="20">&nbsp;&nbsp;&nbsp;&nbsp;Pedagoška fakulteta</option><option value="21">&nbsp;&nbsp;&nbsp;&nbsp;Pravna fakulteta </option><option value="22">&nbsp;&nbsp;&nbsp;&nbsp;Teološka fakulteta </option><option value="26">&nbsp;&nbsp;&nbsp;&nbsp;Univerza v Ljubljani</option><option value="23">&nbsp;&nbsp;&nbsp;&nbsp;Veterinarska fakulteta </option><option value="24">&nbsp;&nbsp;&nbsp;&nbsp;Zdravstvena fakulteta </option>        </select>
+  		</td>
+      <td class="iskanje-gumbi-odmik">
+        <a href="#" onClick="Submit_Iskanje(4);">
+          Išči        </a>
+              </td>
+  	</tr>
+  	<tr class="iskanje-opcija-odmik">
+  		<td>
+  			<input type="checkbox" name="chkFullOnly" id="chkFullOnly" class="chk"
+                  />
+  			<label class="chk" for="chkFullOnly">Prikaži samo rezultate s celotnim besedilom</label>
+  		</td>
+      <td class="iskanje-gumbi-odmik">
+        <a href="#" onclick="location.href='Iskanje.php?type=napredno&lang=slv';">
+          Napredno iskanje        </a>
+      </td>
+  	</tr>
+  	<tr>
+  	<td>&nbsp;</td>
+  	<td>
+  		<br/>
+  	</td>
+  	</tr>
+  	</table>
+  </div>	<br /><br />
+</form>
+</section><div id="footerMargin"></div>    <footer class="footer-slv">
+      <div class="partnerji">
+        <div class="logo footer-logo1">
+          <img src="teme/rulDev/img/logo_mizs_slv.gif"
+            alt="Logo MIZS RS"
+          />
+        </div>
+        <div class="logo footer-logo2">
+          <img src="teme/rulDev/img/logo_euSklad_slv.gif"
+            alt="Logo Evropskega sklada"
+          />
+        </div>
+        <div class="besedilo">
+          <img src="teme/rulDev/img/text/noga_partnerji_slv.gif"
+            alt="Partnerji projekta Pilotna vzpostavitev nacionalne infrastrukture odprtega
+    dostopa do zaključnih del študija in objav raziskovalcev so bili:
+    Univerza v Mariboru, Univerza v Ljubljani, Univerza na Primorskem in
+    Univerza v Novi Gorici."
+          />
+        </div>
+      </div>
+      <div class="financerji">
+        <div>Operacijo delno financira Evropska unija iz Evropskega sklada za regionalni
+    razvoj ter Ministrstvo za izobraževanje, znanost in šport. Operacija se izvaja
+    v okviru Operativnega programa krepitve regionalnih razvojnih potencialov za
+    obdobje 2007-2013, razvojne prioritete: Gospodarsko razvojna infrastruktura;
+    prednostne usmeritve Informacijska družba.
+  </div>
+      </div>
+      <div class="nogaMenu">
+        <span class="footer_menu_a1">&copy; 2013 Univerza v Ljubljani</span>
+        <a class="footer_menu_a2" href="info/index.php/slo/kontakt">
+          Kontakt</a>
+        <a class="footer_menu_a3" href="Statistika.php?lang=slv">RSS</a>
+        <a class="footer_menu_a4" href="cookies.php">
+          Piškotki</a>
+        <a class="footer_menu_a5" href="info/index.php/slo/pogoji-uporabe">
+          Pogoji uporabe</a>
+        <a class="footer_menu_a4" href="info/index.php/slo/mobilno">
+          Mobilno</a>
+      </div>
+    </footer>
+  </div>
+  <!-- Google Analytics tu ni v uporabi! -->
+    <script type="text/javascript">
+      ts('section', 0);
+      $(window).load(resizeContent());
+      $(window).on('resize', resizeContent);
+    </script>
+    <!-- RenderTime: 0.02 sec. -->
+  </body>
+</html>

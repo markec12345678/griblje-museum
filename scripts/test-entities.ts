@@ -19,7 +19,7 @@
  *                                    1854 ≠ 1933; šege niso dogodki; 27 ≠ 372 faz
  *   T8  Obstoječe relacije         — walks, related exhibits, sourceIndex,
  *                                    sourceKey (315), usedBy (51/13/2), WorldCat
- *   T9  HTTP regresija             — 111/111 strani, 111/111 IIIF, OpenData 556,
+ *   T9  HTTP regresija             — 111/111 strani, 111/111 IIIF, OpenData 557,
  *                                    QR, sprehod, sitemap 97
  *
  * Zagon: bun scripts/test-entities.ts  (zahteva tekoč dev strežnik na :3000
@@ -560,7 +560,7 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   check(conn.length > 0, `T8.5 connectionsBetween(griblje-vas, sveti-vid) deluje (${conn.map((c) => c.kind).join(", ")})`);
 
   // Source registry: identitete in deljenost.
-  check(SOURCE_USAGE.size === 438, `T8.6 438 identitet virov (${SOURCE_USAGE.size})`);
+  check(SOURCE_USAGE.size === 439, `T8.6 439 identitet virov (${SOURCE_USAGE.size})`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length > 1).length;
   check(shared === 65, `T8.7 65 deljenih virov (${shared})`);
 
@@ -580,7 +580,7 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   // Viri skupaj.
   let srcRows = 0;
   for (const ex of seedExhibits) srcRows += ex.sources.length;
-  check(srcRows === 556, `T8.11 556 vrstic virov (${srcRows})`);
+  check(srcRows === 557, `T8.11 557 vrstic virov (${srcRows})`);
 
   // Biografije.
   let phases = 0;
@@ -639,8 +639,8 @@ section("T9 — HTTP regresija (96/96 strani, 96/96 IIIF, OpenData, QR, sitemap)
         if (s.sourceKey) withKey += 1;
       }
     }
-    check(od.counts?.exhibits === 111 && od.counts?.sources === 556, `T9.3 OpenData: 111 zapisov / 556 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
-    check(withKey === 556 && totalRows === 556, `T9.4 OpenData sourceKey 556/556 (${withKey}/${totalRows})`);
+    check(od.counts?.exhibits === 111 && od.counts?.sources === 557, `T9.3 OpenData: 111 zapisov / 557 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
+    check(withKey === 557 && totalRows === 557, `T9.4 OpenData sourceKey 557/557 (${withKey}/${totalRows})`);
 
     // QR globoka povezava.
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");

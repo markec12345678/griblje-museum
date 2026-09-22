@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="sl"/>
+<meta name="description" content="ARSO - Agencija Republike Slovenije za okolje: Državna meteorološka služba - podatki o vremenu in podnebju."/>
+<meta name="robots" content ="all"/>
+<meta name="keywords" content="vreme, vremenska napoved, opozorilo, prognoza, obeti, podatki, razmere, plazovi, pozari, arhiv, podnebne spremembe, vreme po sloveniji"/>
+
+  <title>meteo.si - Uradna vremenska napoved za Slovenijo - Državna meteorološka služba RS - Klimatološka povprečja 1981–2010</title>
+  <link rel="icon" type="image/png" href="/uploads/meteo/style/img/logo/meteoSI_simbol-pda.png" />
+  
+<meta name="generator" content="WebGUI 7.4.15" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript">
+function getWebguiProperty (propName) {
+var props = new Array();
+props["extrasURL"] = "/extras/";
+props["pageURL"] = "/met/sl/climate/tables/normals_81_10";
+return props[propName];
+}
+</script>
+<style type="text/css">
+
+div#meni2 div.prazen {
+  background-color: #ffffff
+}
+
+</style>
+<meta http-equiv="Cache-Control" content="must-revalidate" />
+<link rel="stylesheet" type="text/css" media="screen" href="/uploads/meteo/style/css/ARSOgumbi.css" />
+  <link rel="stylesheet" type="text/css" href="/style/ogrodje03eu.css" />
+  <link rel="stylesheet" type="text/css" href="/style/stran02eu.css" />
+  <script language="JavaScript" type="text/javascript" src="/javascript/language.js"> </script>
+  <script language="JavaScript" type="text/javascript" src="/javascript/testurl.js"> </script>
+  <script language="JavaScript" type="text/javascript" >
+    function PopupHtml(sPicURL) {
+       window.open("/uploads/meteo/app/webmet/bin/js/text.html?"+sPicURL, "metg", "resizable=0,HEIGHT=380,WIDTH=820").focus(); } 
+   </script>
+
+
+<style  type="text/css">
+
+.meteoSI-table td,
+.meteoSI-table th {
+  text-align:center;
+}
+.informaltable .meteoSI-table {
+  margin:auto;
+	/* margin-left: 200px; */
+}
+.titlepage .title {
+  text-align:center;
+}
+
+</style>
+
+<!-- GA -->
+<script type="text/javascript">
+  var loc=window.location.hostname;
+  var _gaq = _gaq || [];
+
+	switch(loc) {
+	case 'www.meteo.si':
+					_gaq.push(['_setAccount', 'UA-36387960-1']);
+					_gaq.push(['_setDomainName', 'meteo.si']);
+					_gaq.push(['_setAllowLinker', true]);
+					_gaq.push(['_trackPageview']);
+					break;
+			default:
+				_gaq.push(['_setAccount', 'UA-36387960-2']);
+				_gaq.push(['_trackPageview']);
+	}
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+
+			     <script language="JavaScript" type="text/javascript">
+			    // choseLanguage();
+				var urlToPutIn;
+				urlToPutIn = loadUrlLang(document.location,"sl","en");
+				if(urlToPutIn!=false)document.getElementById("ln-en-ln").href=urlToPutIn;
+			    </script>
+<script type="text/javascript">
+  function JavaBlink() {
+     var blinks = document.getElementsByTagName('JavaBlink');
+     for (var i = blinks.length - 1; i >= 0; i--) {
+        var s = blinks[i];
+        s.style.opacity = (s.style.opacity === '1') ? '0.5' : '1';
+     }
+     window.setTimeout(JavaBlink, 1000);
+  }
+  if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+  else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+  else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+  else window.onload = JavaBlink;
+ </script>
+ 
+
+</head>
+
+<body> <a id="vrh" name="vrh"></a>
+
+
+<table class="sirina_strani" cellspacing="0" cellpadding="0">
+  <!--  ##############  H E A D  1   ############## -->
+  <tr height="100%">
+  <td class="media">
+ 	 <div class="main-container media">
+			   <table class="main-container" height="100%">
+			   	<tr class="navbar-nav" heght="30%">
+<!-- 				   <td colspan="4" style="text-align:center">
+					<span class="media">Spremljajte nas:</span>         
+				  </td>
+				</tr>
+			   	<tr class="navbar-nav" heght="70%">
+ -->				   <td class="btn-img">
+					    <a class="media" href="https://www.facebook.com/ArsoVreme/" title="facebook">
+						  <img src="/uploads/meteo/style/img/logo/facebook.svg" alt="facebook" />
+					  </a>    
+				   </td>
+				   <td class="btn-img">
+					    <a class="media" href="https://www.instagram.com/arso_vreme/" title="instagram">
+						  <img src="/uploads/meteo/style/img/logo/instagram.svg" alt="instagram" />
+					  </a>    
+				   </td>
+				   <td class="btn-img">
+					    <a class="media" href="https://twitter.com/meteoSI" title="twitter">
+						  <img src="/uploads/meteo/style/img/logo/twitter.svg" alt="twitter" />
+					  </a>    
+				   </td>
+				   <td class="btn-img">
+					    <a class="media" href="https://www.youtube.com/channel/UCanSayCifxS6-kvtB2UMcJA" title="YouTube">
+						  <img src="/uploads/meteo/style/img/logo/youtube.svg" alt="YouTube" />
+					  </a>    
+				   </td>
+			     </tr>
+			  </table>
+	  </div>
+  <td>
+   <!-- gumbi -->
+  <div class="main-container prikaz">
+        <header id="navbar" role="banner" class="navbar-inverse">
+          <div class="container-fluid">
+              <table class="navbar-header">
+
+                <tr class="navbar-nav">
+                  <td class="first leaf">
+                    <a class="navbar-btn" href="//www.arso.gov.si/" title="ARSO">
+                      <img src="/uploads/meteo/style/img/logo/ARSO_white.svg" alt="ARSO" />
+                    </a>
+                  </td>
+                  <td class="leaf ">
+                    <a class="navbar-btn" href="//vreme.arso.gov.si/" title="ARSO VREME">
+                      <img src="/uploads/meteo/style/img/logo/ARSOvreme_white.svg" alt="ARSO Vreme" />
+                    </a>
+                  </td>
+                  <td class="leaf">
+                    <a class="navbar-btn" href="//www.arso.gov.si/vode/" title="ARSO Vode">
+                      <img src="/uploads/meteo/style/img/logo/ARSOvode_white.svg" alt="ARSO Vode" />
+                    </a>
+                  </td>
+                  <!-- <td class="leaf">
+                    <a class="navbar-btn" href="//www.arso.gov.si/narava/" title="ARSO Narava">
+                      <img src="/uploads/meteo/style/img/logo/ARSOnarava_white.svg" alt="ARSO Narava" />
+                    </a>
+                  </td> -->
+                  <td class="leaf">
+                    <a class="navbar-btn" href="//www.arso.gov.si/varstvo%20okolja/" title="ARSO Okolje">
+                      <img src="/uploads/meteo/style/img/logo/ARSOokolje_white.svg" alt="ARSO Okolje" />
+                    </a>
+                  </td>
+                  <td class="last leaf">
+                    <a class="navbar-btn" href="//potresi.arso.gov.si/ " title="ARSO Potresi">
+                      <img src="/uploads/meteo/style/img/logo/ARSOpotresi_white.svg" alt="ARSO Potresi" />
+                    </a>
+                  </td>
+                </tr>
+		   </table>
+
+          </div>
+	 </header>
+    </div>
+   </td>
+  </tr>
+
+  <!--  ##############  L E F T    M E N U  +   CONTENT   ############## -->
+  <tr>
+    <!--  ##############  L E F T    M E N U ############## -->
+  <!--  ##############  H E A D  2   ############## -->
+  <!-- <tr style="background-color:white;height:2px;">
+  </tr> -->
+  <!-- meni 1 
+     AssetProxy(root/import/arso-template-folder/glavni-meni-2)
+      /meni 1 -->
+   <td colspan="2">
+     <div class="sklop">
+      <table id="meni1" class="media" width="100%">
+        <tr class="navbar-nav">
+          <td class="headerLeft">
+          <!-- <span class="nivo1b">ARSO </span><span class="nivo1">meteo</span>  -->    
+          <div class="navbar-btn">
+		<img src="/uploads/meteo/style/img/logo/ARSOmeteo_white.svg" alt="ARSO vreme" />
+		</div>
+          </td>
+          <td class="headToLeft">
+            <a class="lang" href="/pda">
+              <span class="pdaLogo">  <img src="/uploads/meteo/style/img/misc/mobile.gif"/></span>
+              <span class="pda">  mini </span>
+            </a>
+          </td>
+          <td class="headToCenter">
+               <span class="pda">-</span>
+          <td class="headToCenter">
+               <span class="pda"> MOBILNO </span>
+          <td class="headToCenter">
+               <span class="pda">-</span>
+          </td>
+          <td class="headToRight">
+             <a class="lang" href="//vreme.arso.gov.si/">
+              <span class="pda"> novo </span>                         
+              <span class="pdaLogo">  <img src="/uploads/meteo/style/img/misc/pointer.png"/></span>
+            </a>
+          </td>
+          <td class="headCenter"  width="35%">
+            <!--    
+
+
+
+<span class="naslovP">
+
+   Državna meteorološka služba
+
+</span>-->
+          </td>
+          <td class="iskalnik">
+            <!-- iskalec -->
+              <form method="get" action="//www.google.com/custom" target="_blank">
+                <input class="text" type="text" name="q" size="16" />
+                <input type="hidden" name="cof" value="T:#000000;LW:100;ALC:#44aa44;L://www.meteo.si/style/logo/arsometsi.png;LC:#339933;LH:81;BGC:#ffffff;AH:left;VLC:#228822;S://www.meteo.si;AWFID:dc9a7a2f6b867111;" />
+                <input type="hidden" name="sitesearch" value="www.meteo.si/" />
+                <input type="image" name="sa" value="search" alt="search" src="/style/icon/search_ico.png" class="submit" />
+              </form>
+            <!-- /iskalec  -->
+         </td>
+          <td class="headCenter" width="4%">
+            <!--    
+
+
+
+<span class="naslovP">
+
+   Državna meteorološka služba
+
+</span>-->
+          </td>
+			<td class="headToMiddle" width="2%">
+			  <!--  <table class="meteo-header">
+			   	<tr class="navbar-nav">
+				   <td class="navbar-nav"> -->
+					 <a class="lang" href="/met/sl/" title="slovenščina">
+					 <span class="pda">sl</span>
+					 </a>
+				  </td>
+				   <td class="headToCenter">
+				   <span class="pda">|</span>
+				   </td>
+				   <td class="headToMiddle" width="2%">
+					 <a class="lang" href="/met/en/" title="english">
+					 <span class="pda">en</span>
+					 </a>    
+<!-- 				   </td>
+			     </tr>
+			  </table>
+ --><!-- 			   <table class="meteo-header">
+			   	<tr class="navbar-nav">
+				   <td class="navbar-nav">
+					<span id="ln-sl" class="chosen-lang">
+					 <a class="lang" id="ln-sl-ln" href="/met/sl/" title="slovenščina">sl</a>
+					</span>         
+				  </td>
+				   <td class="navbar-nav">
+				     <p class="btn-blank">|</p>
+				   </td>
+				   <td class="navbar-nav">
+					<span id="ln-en" class="chosen-lang">
+					 <a class="lang" id="ln-en-ln" href="/met/en/" title="english">en</a>    
+					</span>
+				   </td>
+			     </tr>
+			  </table>
+ -->
+ 			</td>
+		    <td class="headCenter"  width="10px">
+		    </td>
+	        </tr>
+	   </table>
+	</div>   
+    </td>
+  </tr>
+  <tr>
+    <td class="meni2">
+      <!-- meni 2 -->     
+      <div id="meni2">
+        
+
+
+
+  
+   
+
+   
+     <div 
+               
+          
+            class="prazen" 
+          
+                      
+        
+     >
+       
+     <a 
+       
+       
+          
+             id="firstPage"
+          
+         
+       
+          href="/met/sl" 
+       
+     > 
+       Pregled
+     </a>  <!-- gl:3 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/warning" 
+       
+     > 
+       Opozorila
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/weather" 
+       
+     > 
+       Vreme
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/app/webmet" 
+       
+     > 
+       Vreme podrobneje
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/aviation" 
+       
+     > 
+       Letalstvo
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+           
+              class="izbran"
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/climate" 
+       
+     > 
+       Podnebje
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/climate/change" 
+       
+     > 
+       Podnebne spremembe
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/agromet" 
+       
+     > 
+       Agrometeorologija
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/watercycle" 
+       
+     > 
+       Vodni krog
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/archive" 
+       
+     > 
+       Arhiv meritev
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/service" 
+       
+     > 
+       XML/RSS/HTML
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/link" 
+       
+     > 
+       Povezave
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/faq" 
+       
+     > 
+       Pogosta vprašanja
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/interesting" 
+       
+     > 
+       Novice / Zanimivosti
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+   
+
+   
+     <div 
+       
+          
+            
+               class="prazen" 
+            
+                  
+                      
+        
+           
+             id="lastPage" 
+          
+        
+     >
+       
+     <a 
+       
+         
+       
+          href="/met/sl/about" 
+       
+     > 
+       O spletnih straneh
+     </a>  <!-- gl:4 -->
+     
+     </div>
+
+
+
+
+        
+  
+ 
+      </div>
+      <!-- /meni 2 -->
+      <!-- brez ankete -->
+	<div style="height:150px;">
+	    <a class="novi" href="//vreme.arso.gov.si" title="ARSO VREME">
+		  <img style="width:180px;" src="/uploads/meteo/style/img/logo/NoviARSOvremeSmall.png" alt="ARSO VREME" />
+	  </a> 	</div> 
+	<!-- anketa -->
+<!--	<div style="height:110px;">
+	    <a class="novi" href="//vreme.arso.gov.si" title="ARSO VREME">
+		  <img style="width:180px;" src="/uploads/meteo/style/img/logo/NoviARSOvremeSmall.png" alt="ARSO VREME" />
+	  </a>    
+	</div>
+	<a class="anketa" href="//gov-ankete.si/ARSOv2024" title="Anketa">
+	   <div class="anketa" style="height:30px;">
+		   <span><JavaBlink>Anketa 2024</JavaBlink></span>
+	      </div>
+	</a> -->   
+	<div style="height:20px;">
+	</div> 
+<!--- twitter -->
+<!--     <div style="background-color:#5198B5; color: white; font-weight: bold; font-size: 13px; border-top: 1px solid #D8D8D8; padding: 3px 0 4px 0;">
+           &nbsp; Spremljajte nas:
+      </div>
+     <div style="width:100%; max-width: 180px;"> 
+<a class="twitter-timeline" data-width="180" data-height="240" data-theme="light" href="https://twitter.com/meteoSI?ref_src=twsrc%5Etfw">Tweets from meteoSI</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+</div> -->
+<!--- old    <div style="width:100%; max-width: 180px;"> 
+	<a class="twitter-timeline" lang="sl" width="180" height="240" data-show-replies="false" data-chrome="noheader nofooter noscrollbar transparent" href="https://twitter.com/meteoSI"
+data-widget-id="420161540474433536">Sporočila @meteoSI</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName
+(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById
+(id)){js=d.createElement(s);js.id=id;js.src=p
++"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore
+(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+      <div> &nbsp; &nbsp; &nbsp; &nbsp;   
+        <a href="https://twitter.com/meteoSI" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true"  data-lang="sl">Spremljajte @meteoSI
+        </a>
+      </div> -->
+
+      <!-- /twitter -->     
+
+    </td>
+    <!--  ##############  CONTENT   ############## -->
+    <td class="prikaz">
+      <table class="vsebina" cellspacing="0">
+        <tr class="lokacija">
+          <td colspan="2">
+            		
+		
+		
+<span class="crumbTrail">
+
+<a class="crumbTrail" 
+    href="/met">meteo.si</a>
+    &gt; 
+
+<a class="crumbTrail" 
+    href="/met/sl">Pregled</a>
+    &gt; 
+
+<a class="crumbTrail" 
+    href="/met/sl/climate">Podnebje</a>
+    &gt; 
+
+<a class="crumbTrail" 
+    href="/met/sl/climate/tables">Preglednice</a>
+    &gt; 
+
+<a class="crumbTrail" 
+    href="/met/sl/climate/tables/normals_81_10">Klimatološka povprečja 1981-2010</a>
+   
+
+</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="vsebina" colspan="2" style="padding-top: 0px;">
+                  <div><a name="idbMq-mmyKJOqIjOWv7YHWMQ" id="idbMq-mmyKJOqIjOWv7YHWMQ"></a></div>
+
+
+
+
+	<h1>Klimatološka povprečja 1981–2010</h1>
+
+
+
+	<p><p><img src="/uploads/probase/www/climate/image/sl/by_station_type/climate/slovenia-map_climate-tables_81-10.png" usemap="#climate-tables" /> <map id="climate-tables" name="climate-tables"><area href="/uploads/probase/www/climate/table/sl/by_location/babno-polje/climate-normals_81-10_Babno-polje.pdf" shape="RECT" target="_blank" coords="283,417,350,447" /><area href="/uploads/probase/www/climate/table/sl/by_location/bilje/climate-normals_81-10_Bilje.pdf" shape="RECT" target="_blank" coords="61,344,94,359" /><area href="/uploads/probase/www/climate/table/sl/by_location/biserjane/climate-normals_81-10_Biserjane.pdf" shape="RECT" target="_blank" coords="635,109,689,122" /><area href="/uploads/probase/www/climate/table/sl/by_location/bizeljsko/climate-normals_81-10_Bizeljsko.pdf" shape="RECT" target="_blank" coords="561,304,614,318" /><area href="/uploads/probase/www/climate/table/sl/by_location/bohinjska-cesnjica/climate-normals_81-10_Bohinjska-Cesnjica.pdf" shape="RECT" target="_blank" coords="141,205,214,217" /><area href="/uploads/probase/www/climate/table/sl/by_location/bovec/climate-normals_81-10_Bovec.pdf" shape="RECT" target="_blank" coords="44,187,95,207" /><area href="/uploads/probase/www/climate/table/sl/by_location/celje/climate-normals_81-10_Celje.pdf" shape="RECT" target="_blank" coords="452,223,488,233" /><area href="/uploads/probase/www/climate/table/sl/by_location/cepovan/climate-normals_81-10_Cepovan.pdf" shape="RECT" target="_blank" coords="102,286,154,299" /><area href="/uploads/probase/www/climate/table/sl/by_location/doblice/climate-normals_81-10_Doblice.pdf" shape="RECT" target="_blank" coords="428,463,475,477" /><area href="/uploads/probase/www/climate/table/sl/by_location/gornja-radgona/climate-normals_81-10_Gornja-Radgona.pdf" shape="RECT" target="_blank" coords="628,70,713,81" /><area href="/uploads/probase/www/climate/table/sl/by_location/gornji-lenart/climate-normals_81-10_Gornji-Lenart.pdf" shape="RECT" target="_blank" coords="532,335,606,347" /><area href="/uploads/probase/www/climate/table/sl/by_location/ilirska-bistrica/climate-normals_81-10_Ilirska-Bistrica.pdf" shape="RECT" target="_blank" coords="209,459,286,475" /><area href="/uploads/probase/www/climate/table/sl/by_location/jareninski-vrh/climate-normals_81-10_Jareninski-vrh.pdf" shape="RECT" target="_blank" coords="559,85,593,111" /><area href="/uploads/probase/www/climate/table/sl/by_location/javorje/climate-normals_81-10_Javorje.pdf" shape="RECT" target="_blank" coords="195,253,242,267" /><area href="/uploads/probase/www/climate/table/sl/by_location/klenik/climate-normals_81-10_Klenik.pdf" shape="RECT" target="_blank" coords="357,269,398,283" /><area href="/uploads/probase/www/climate/table/sl/by_location/kocevje/climate-normals_81-10_Kocevje.pdf" shape="RECT" target="_blank" coords="357,433,406,447" /><area href="/uploads/probase/www/climate/table/sl/by_location/kredarica/climate-normals_81-10_Kredarica.pdf" shape="RECT" target="_blank" coords="117,176,174,190" /><area href="/uploads/probase/www/climate/table/sl/by_location/krn/climate-normals_81-10_Krn.pdf" shape="RECT" target="_blank" coords="72,226,102,240" /><area href="/uploads/probase/www/climate/table/sl/by_location/krvavec/climate-normals_81-10_Krvavec.pdf" shape="RECT" target="_blank" coords="281,205,331,221" /><area href="/uploads/probase/www/climate/table/sl/by_location/kum/climate-normals_81-10_Kum.pdf" shape="RECT" target="_blank" coords="412,280,444,294" /><area href="/uploads/probase/www/climate/table/sl/by_location/lesce/climate-normals_81-10_Lesce.pdf" shape="RECT" target="_blank" coords="197,182,236,195" /><area href="/uploads/probase/www/climate/table/sl/by_location/letalisce-maribor/climate-normals_81-10_Letalisce-ER-Maribor.pdf" shape="RECT" target="_blank" coords="549,136,577,172" /><area href="/uploads/probase/www/climate/table/sl/by_location/brnik/climate-normals_81-10_Letalisce-JP-Ljubljana.pdf" shape="RECT" target="_blank" coords="267,234,377,246" /><area href="/uploads/probase/www/climate/table/sl/by_location/portoroz/climate-normals_81-10_Letalisce-Portoroz.pdf" shape="RECT" target="_blank" coords="56,491,150,502" /><area href="/uploads/probase/www/climate/table/sl/by_location/lisca/climate-normals_81-10_Lisca.pdf" shape="RECT" target="_blank" coords="461,288,499,298" /><area href="/uploads/probase/www/climate/table/sl/by_location/ljubljana/climate-normals_81-10_Ljubljana.pdf" shape="RECT" target="_blank" coords="277,288,372,299" /><area href="/uploads/probase/www/climate/table/sl/by_location/mali-lipoglav/climate-normals_81-10_Mali-Lipoglav.pdf" shape="RECT" target="_blank" coords="307,304,372,325" /><area href="/uploads/probase/www/climate/table/sl/by_location/maribor/climate-normals_81-10_Maribor.pdf" shape="RECT" target="_blank" coords="548,122,623,134" /><area href="/uploads/probase/www/climate/table/sl/by_location/metlika/climate-normals_81-10_Metlika.pdf" shape="RECT" target="_blank" coords="472,432,517,447" /><area href="/uploads/probase/www/climate/table/sl/by_location/miklavski-hrib/climate-normals_81-10_Miklavski-hrib.pdf" shape="RECT" target="_blank" coords="456,236,532,247" /><area href="/uploads/probase/www/climate/table/sl/by_location/mozirje/climate-normals_81-10_Mozirje.pdf" shape="RECT" target="_blank" coords="383,195,429,209" /><area href="/uploads/probase/www/climate/table/sl/by_location/murska-sobota/climate-normals_81-10_Murska-Sobota.pdf" shape="RECT" target="_blank" coords="677,84,758,93" /><area href="/uploads/probase/www/climate/table/sl/by_location/nanos-abram/climate-normals_81-10_Nanos-Abram.pdf" shape="RECT" target="_blank" coords="159,372,234,386" /><area href="/uploads/probase/www/climate/table/sl/by_location/nova-gorica/climate-normals_81-10_Nova-Gorica.pdf" shape="RECT" target="_blank" coords="68,323,136,337" /><area href="/uploads/probase/www/climate/table/sl/by_location/nova-vas/climate-normals_81-10_Nova-vas.pdf" shape="RECT" target="_blank" coords="274,389,328,401" /><area href="/uploads/probase/www/climate/table/sl/by_location/novo-mesto/climate-normals_81-10_Novo-mesto.pdf" shape="RECT" target="_blank" coords="436,379,503,392" /><area href="/uploads/probase/www/climate/table/sl/by_location/planina-pod-golico/climate-normals_81-10_Planina-pod-Golico.pdf" shape="RECT" target="_blank" coords="167,145,265,159" /><area href="/uploads/probase/www/climate/table/sl/by_location/planina-pod-mirno-goro/climate-normals_81-10_Planina-pod-Mirno-goro.pdf" shape="RECT" target="_blank" coords="416,443,464,458" /><area href="/uploads/probase/www/climate/table/sl/by_location/planina-pri-sevnici/climate-normals_81-10_Planina-pri-Sevnici.pdf" shape="RECT" target="_blank" coords="492,274,588,286" /><area href="/uploads/probase/www/climate/table/sl/by_location/podgradje/climate-normals_81-10_Podgradje.pdf" shape="RECT" target="_blank" coords="685,134,745,147" /><area href="/uploads/probase/www/climate/table/sl/by_location/postojna/climate-normals_81-10_Postojna.pdf" shape="RECT" target="_blank" coords="198,390,251,404" /><area href="/uploads/probase/www/climate/table/sl/by_location/ratece/climate-normals_81-10_Ratece.pdf" shape="RECT" target="_blank" coords="86,135,131,144" /><area href="/uploads/probase/www/climate/table/sl/by_location/ravne-na-koroskem/climate-normals_81-10_Ravne-na-Koroskem.pdf" shape="RECT" target="_blank" coords="382,122,484,134" /><area href="/uploads/probase/www/climate/table/sl/by_location/rogaska-slatina/climate-normals_81-10_Rogaska-Slatina.pdf" shape="RECT" target="_blank" coords="548,226,634,239" /><area href="/uploads/probase/www/climate/table/sl/by_location/sevno/climate-normals_81-10_Sevno.pdf" shape="RECT" target="_blank" coords="381,316,418,329" /><area href="/uploads/probase/www/climate/table/sl/by_location/slovenske-konjice/climate-normals_81-10_Slovenske-Konjice.pdf" shape="RECT" target="_blank" coords="494,189,556,203" /><area href="/uploads/probase/www/climate/table/sl/by_location/starse/climate-normals_81-10_Starse.pdf" shape="RECT" target="_blank" coords="581,149,620,159" /><area href="/uploads/probase/www/climate/table/sl/by_location/salovci/climate-normals_81-10_Salovci.pdf" shape="RECT" target="_blank" coords="699,16,746,28" /><area href="/uploads/probase/www/climate/table/sl/by_location/smartno-pri-slovenj-gradcu/climate-normals_81-10_Smartno-pri-Slovenj-Gradcu.pdf" shape="RECT" target="_blank" coords="422,138,535,152" /><area href="/uploads/probase/www/climate/table/sl/by_location/tomaj/climate-normals_81-10_Tomaj.pdf" shape="RECT" target="_blank" coords="113,393,153,407" /><area href="/uploads/probase/www/climate/table/sl/by_location/topol-pri-medvodah/climate-normals_81-10_Topol-pri-Medvodah.pdf" shape="RECT" target="_blank" coords="244,263,341,286" /><area href="/uploads/probase/www/climate/table/sl/by_location/urslja-gora/climate-normals_81-10_Urslja-gora.pdf" shape="RECT" target="_blank" coords="385,141,418,164" /><area href="/uploads/probase/www/climate/table/sl/by_location/vedrijan/climate-normals_81-10_Vedrijan.pdf" shape="RECT" target="_blank" coords="42,302,91,316" /><area href="/uploads/probase/www/climate/table/sl/by_location/velenje/climate-normals_81-10_Velenje.pdf" shape="RECT" target="_blank" coords="423,183,468,195" /><area href="/uploads/probase/www/climate/table/sl/by_location/vojsko/climate-normals_81-10_Vojsko.pdf" shape="RECT" target="_blank" coords="130,302,174,313" /><area href="/uploads/probase/www/climate/table/sl/by_location/vrhnika/climate-normals_81-10_Vrhnika.pdf" shape="RECT" target="_blank" coords="223,322,271,334" /><area href="/uploads/probase/www/climate/table/sl/by_location/zgornja-scavnica/climate-normals_81-10_Zgornja-Scavnica.pdf" shape="RECT" target="_blank" coords="595,86,665,97" /></map>Diagram za določeno meteorolo&scaron;ko postajo izberete s klikom na zemljevid ali seznam. </p><font size="+0"><b><table border="0" width="800"><tbody><tr><td style="width: 250px"><ul><li><a href="/uploads/probase/www/climate/table/sl/by_location/babno-polje/climate-normals_81-10_Babno-polje.pdf" target="_blank">Babno Polje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/bilje/climate-normals_81-10_Bilje.pdf" target="_blank">Bilje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/biserjane/climate-normals_81-10_Biserjane.pdf" target="_blank">Biserjane</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/bizeljsko/climate-normals_81-10_Bizeljsko.pdf" target="_blank">Bizeljsko</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/bohinjska-cesnjica/climate-normals_81-10_Bohinjska-Cesnjica.pdf" target="_blank">Bohinjska Če&scaron;njica</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/bovec/climate-normals_81-10_Bovec.pdf" target="_blank">Bovec</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/celje/climate-normals_81-10_Celje.pdf" target="_blank">Celje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/cepovan/climate-normals_81-10_Cepovan.pdf" target="_blank">Čepovan</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/doblice/climate-normals_81-10_Doblice.pdf" target="_blank">Dobliče</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/gornja-radgona/climate-normals_81-10_Gornja-Radgona.pdf" target="_blank">Gornja Radgona</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/gornji-lenart/climate-normals_81-10_Gornji-Lenart.pdf" target="_blank">Gornji Lenart</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/ilirska-bistrica/climate-normals_81-10_Ilirska-Bistrica.pdf" target="_blank">Ilirska Bistrica</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/jareninski-vrh/climate-normals_81-10_Jareninski-vrh.pdf" target="_blank">Jareninski vrh</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/javorje/climate-normals_81-10_Javorje.pdf" target="_blank">Javorje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/klenik/climate-normals_81-10_Klenik.pdf" target="_blank">Klenik</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/kocevje/climate-normals_81-10_Kocevje.pdf" target="_blank">Kočevje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/kredarica/climate-normals_81-10_Kredarica.pdf" target="_blank">Kredarica</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/krn/climate-normals_81-10_Krn.pdf" target="_blank">Krn</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/krvavec/climate-normals_81-10_Krvavec.pdf" target="_blank">Krvavec</a></li></ul></td><td style="width: 250px"><ul><li><a href="/uploads/probase/www/climate/table/sl/by_location/kum/climate-normals_81-10_Kum.pdf" target="_blank">Kum</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/lesce/climate-normals_81-10_Lesce.pdf" target="_blank">Lesce</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/letalisce-maribor/climate-normals_81-10_Letalisce-ER-Maribor.pdf" target="_blank">Letali&scaron;če ER Maribor</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/brnik/climate-normals_81-10_Letalisce-JP-Ljubljana.pdf" target="_blank">Letali&scaron;če JP Ljubljana</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/portoroz/climate-normals_81-10_Letalisce-Portoroz.pdf" target="_blank">Letali&scaron;če Portorož</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/lisca/climate-normals_81-10_Lisca.pdf" target="_blank">Lisca</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/ljubljana/climate-normals_81-10_Ljubljana.pdf" target="_blank">Ljubljana Bežigrad</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/mali-lipoglav/climate-normals_81-10_Mali-Lipoglav.pdf" target="_blank">Mali Lipoglav</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/maribor/climate-normals_81-10_Maribor.pdf" target="_blank">Maribor Tabor</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/metlika/climate-normals_81-10_Metlika.pdf" target="_blank">Metlika</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/miklavski-hrib/climate-normals_81-10_Miklavski-hrib.pdf" target="_blank">Miklav&scaron;ki hrib</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/mozirje/climate-normals_81-10_Mozirje.pdf" target="_blank">Mozirje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/murska-sobota/climate-normals_81-10_Murska-Sobota.pdf" target="_blank">Murska Sobota</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/nanos-abram/climate-normals_81-10_Nanos-Abram.pdf" target="_blank">Nanos, Abram</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/nova-gorica/climate-normals_81-10_Nova-Gorica.pdf" target="_blank">Nova Gorica</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/nova-vas/climate-normals_81-10_Nova-vas.pdf" target="_blank">Nova vas</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/novo-mesto/climate-normals_81-10_Novo-mesto.pdf" target="_blank">Novo mesto</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/planina-pri-sevnici/climate-normals_81-10_Planina-pri-Sevnici.pdf" target="_blank">Planina pri Sevnici</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/planina-pod-golico/climate-normals_81-10_Planina-pod-Golico.pdf" target="_blank">Planina pod Golico</a></li></ul></td><td style="width: 300px"><ul><li><a href="/uploads/probase/www/climate/table/sl/by_location/planina-pod-mirno-goro/climate-normals_81-10_Planina-pod-Mirno-goro.pdf" target="_blank">Planina (pod Mirno goro)</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/podgradje/climate-normals_81-10_Podgradje.pdf" target="_blank">Podgradje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/postojna/climate-normals_81-10_Postojna.pdf" target="_blank">Postojna</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/ratece/climate-normals_81-10_Ratece.pdf" target="_blank">Rateče</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/ravne-na-koroskem/climate-normals_81-10_Ravne-na-Koroskem.pdf" target="_blank">Ravne na Koro&scaron;kem</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/rogaska-slatina/climate-normals_81-10_Rogaska-Slatina.pdf" target="_blank">Roga&scaron;ka Slatina</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/sevno/climate-normals_81-10_Sevno.pdf" target="_blank">Sevno</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/slovenske-konjice/climate-normals_81-10_Slovenske-Konjice.pdf" target="_blank">Slovenske Konjice</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/starse/climate-normals_81-10_Starse.pdf" target="_blank">Star&scaron;e</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/smartno-pri-slovenj-gradcu/climate-normals_81-10_Smartno-pri-Slovenj-Gradcu.pdf" target="_blank">&Scaron;martno pri Slovenj Gradcu</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/topol-pri-medvodah/climate-normals_81-10_Topol-pri-Medvodah.pdf" target="_blank">Topol pri Medvodah</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/urslja-gora/climate-normals_81-10_Urslja-gora.pdf" target="_blank">Ur&scaron;lja gora</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/vedrijan/climate-normals_81-10_Vedrijan.pdf" target="_blank">Vedrijan</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/velenje/climate-normals_81-10_Velenje.pdf" target="_blank">Velenje</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/salovci/climate-normals_81-10_Salovci.pdf" target="_blank">&Scaron;alovci</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/tomaj/climate-normals_81-10_Tomaj.pdf" target="_blank">Tomaj</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/vojsko/climate-normals_81-10_Vojsko.pdf" target="_blank">Vojsko</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/vrhnika/climate-normals_81-10_Vrhnika.pdf" target="_blank">Vrhnika</a></li><li><a href="/uploads/probase/www/climate/table/sl/by_location/zgornja-scavnica/climate-normals_81-10_Zgornja-Scavnica.pdf" target="_blank">Zgornja &Scaron;čavnica</a></li></ul></td></tr></tbody></table></b></font></p>
+
+
+<div class="layoutColumnPadding">
+
+
+
+
+
+</div>
+
+
+
+          </td>
+        </tr>     
+      </table>
+    </td>
+  </tr> 
+    
+    
+   <!--  ##############  L E G  ############## -->
+   <tr>
+      <td colspan=2>
+       <table id="leg" class="sirina_strani_ac">
+         <tr> 
+           <td class="legLeft">
+             <div class="heading" id="nogaLog">
+               <div class="padding" >
+                 <div class="siteFunctions"><a class="myAccountLink" href="/met/sl/climate/tables/normals_81_10?op=auth;method=init">Visitor</a> <a class="loginToggleLink" href="/met/sl/climate/tables/normals_81_10?op=auth;method=init">Log in.</a><br/> </div>
+                 <div class="copyright">&copy; 2026 ARSO</div>
+                 <div class="endFloat"></div>
+               </div>
+            </div>
+          </td>
+          <td class="legCenter" celspan=2>
+            <!-- noga -->
+            <div id="noga">
+             <div>Ministrstvo za okolje in prostor<br /> AGENCIJA REPUBLIKE SLOVENIJE ZA OKOLJE<br />
+            Vojkova 1b, SI-1000 Ljubljana, Slovenija Tel: +386 1 4784 000 Fax: +386 1 4784 052<br/>
+<a href="//www.arso.gov.si/Izjava_o_dostopnosti.html" title="Izjava o dostopnosti">Izjava o dostopnosti</a></div>
+            </div>
+            <!-- /noga -->
+          </td>
+        </tr>
+      </table>
+
+<!--  ##############  E N D  ############## -->
+    </td>
+   </tr>
+   
+  </table>
+
+</body>
+
+</html>

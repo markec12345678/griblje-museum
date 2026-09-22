@@ -259,8 +259,8 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 111) ok("111/111 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 111) ok("111/111 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 556) ok("556 vrstic virov (26. val: +2 — zimska fotografija ribnika Cabin under the Sun na MVG-016, uradni opis enote RKD EŠD 2122 na MVG-002)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 438) ok("438 identitet virov (26. val: +1 — nov URL geohub opis enote 2122; Cabin URL je deljena identiteta z MVG-069)"); else err(`identitet: ${identities}`);
+if (srcN === 557) ok("557 vrstic virov (27. val: +1 — uradna klimatološka povprečja ARSO Metlika 1981–2010 na MVG-016)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 439) ok("439 identitet virov (27. val: +1 — nov URL uradnih klimatoloških povprečij ARSO Metlika na MVG-016)"); else err(`identitet: ${identities}`);
 if (shared === 65) ok("65 deljenih virov (26. val: +1 — Cabin URL zdaj deljen med MVG-016 in MVG-069)"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
