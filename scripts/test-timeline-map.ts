@@ -443,10 +443,10 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 111 && new Set(seedExhibits.map((e) => e.museumNo)).size === 111, "T7.1 111 zapisov, 111 MVG številk (24. val: + turški-vpadi-1524, grybl-cevljar)");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 550, "T7.2 550 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 436, "T7.3 436 identitet virov (24. val: +6 novih — celo Weissovo poglavje, cehovska knjiga ABMM, Kronika 2024, založniška stran; weiss-2018-castite ena identiteta)", `=${SOURCE_USAGE.size}`);
+  check(rows === 554, "T7.2 554 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 437, "T7.3 437 identitet virov (25. val: +1 kamra pričevanje; kamra-plosca nadgrajena; Kolpa_griblje/Pond_Griblje že vira — deljena)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
-  check(shared === 62, "T7.4 62 deljenih virov (≥2 zapisa; 24. val: + weiss-2018-castite med 3 zapisi)", `=${shared}`);
+  check(shared === 64, "T7.4 64 deljenih virov (≥2 zapisa; 25. val: + Kolpa_griblje med MVG-001/006 in Pond_Griblje med MVG-016/050; weiss-2018-castite med 4 zapisi)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
   const wcRows = seedExhibits.flatMap((ex) =>
     ex.sources
@@ -548,11 +548,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 111 && od.counts?.sources === 550,
-      "T8.3 OpenData: 111 zapisov / 550 virov",
+      od.counts?.exhibits === 111 && od.counts?.sources === 554,
+      "T8.3 OpenData: 111 zapisov / 554 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 550 && totalRows === 550, "T8.4 OpenData sourceKey 550/550", `${withKey}/${totalRows}`);
+    check(withKey === 554 && totalRows === 554, "T8.4 OpenData sourceKey 554/554", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
