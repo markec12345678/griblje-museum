@@ -396,6 +396,20 @@ export const WALKS: Walk[] = [
         noteEn:
           "And once the village was written down, it was drawn too: in 1891 the Viennese painter Josef Sturm depicted a Griblje farmstead for the imperial encyclopedia — the oldest known picture of the village, with an engraving and a description in the same volume.",
       },
+      {
+        exhibitSlug: "komasacija-agromelioracije",
+        noteSi:
+          "Polje, ki ga ta sprehod obnavlja po hrani, je doživelo tudi svojo modernizacijo: 2013 državnih 650.000 evrov za komasacijo Griblje–Cerkvišče, 2015 pogodba za agromelioracije — skoraj 500 hektarjev, »belokranjska Panonska nižina«.",
+        noteEn:
+          "The field that this walk replenishes through food also had its modernisation: in 2013 the state's 650,000 euros for the Griblje–Cerkvišče consolidation, in 2015 the agromelioration contract — almost 500 hectares, 'the Bela krajina Pannonian plain'.",
+      },
+      {
+        exhibitSlug: "odkupne-cene-covid",
+        noteSi:
+          "In najnovejši glas istega polja: februarja 2021 je kmet iz Gribelj pred kamero Vašega kanala povedal, da odkupne cene ne pokrijejo niti stroškov — priča o kmečkem letu, ki še ni končana.",
+        noteEn:
+          "And the newest voice of the same field: in February 2021 a farmer from Griblje told Vaš kanal's camera that purchase prices do not even cover the costs — a testimony of a farming year that is not yet over.",
+      },
     ],
   },
   {
@@ -819,6 +833,13 @@ export const WALKS: Walk[] = [
           "In ko se leto zavrti do praznika, se obleče bela ruta: belokranjska noša s pečo, pokrivalom, ki se veže z rožo na čelu. V njej so hodile te šege — in v nji še hodijo.",
         noteEn:
           "And when the year turns to a feast, the white cloth dresses: the Bela krajina costume with the peča, the head covering tied with a flower on the forehead. These customs walked in it — and still do.",
+      },
+      {
+        exhibitSlug: "poljsko-lokostrelstvo",
+        noteSi:
+          "In ko so polja počivala, je prišel k nam državni tekmec: Lokostrelsko društvo Krasinec je štiri sezone zapored na gribeljskih poljih prirejalo državno prvenstvo v poljskem lokostrelstvu — vas kot oder, ne le kot zaledje.",
+        noteEn:
+          "And when the fields rested, the national competitor came to us: for four seasons in a row the Krasinec Archery Society held the national field-archery championship on the Griblje fields — the village as a stage, not merely a backdrop.",
       },
     ],
   },
