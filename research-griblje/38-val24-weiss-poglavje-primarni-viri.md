@@ -71,7 +71,7 @@ Ceh čevljarjev Metlike (Posten Antwerh, izpričan od 1587) — članstvo ni le 
 ## PRELOM 4 — Poganjec: GBIF izrecno vodi lokaliteto „Poganjec“ s koordinatami
 
 - GBIF occurrence **5277910285** (api.gbif.org, odprt): species **Circus cyaneus** (krogličasta lunja), **locality: „Poganjec“**, 45.574073 / 15.278092, 1. 1. 2025 (Birda dataset 6ff8b3b0).
-- Razdalja od jedra vasi: **~297 m JV** (izračun haversine) — njiva na robu vasi, povsem skladno z lokalnim toponimom.
+- Lega glede na muzejsko točko zapisa griblje-vas (45.57246 / 15.29257): ~1,1 km zahodno-severozahodno — polja na poti k Kolpi; obstoječa opomba vira (val 20) navaja „okoli 0,7 km južno od jedra vasi“ po svoji referenčni točki. Njiva ob reki, povsem skladno z lokalnim toponimom.
 - iNaturalist places autocomplete „Poganjec“ = 0 (brez place objekta; opazovalec uporablja prosto ime lokalitete) — dokumentirana praznina LOD.
 - Muzej išče še vedno domačinsko potrditev toponima — GBIF verbatim lokaliteta + koordinati pa zdaj **pinirata lego** in potrjujeta rabo imena s strani tretje osebe (opazovalec ptic 2025); posodobljen opomba vira v MVG-105 (add-only).
 
@@ -89,21 +89,19 @@ Ceh čevljarjev Metlike (Posten Antwerh, izpričan od 1587) — članstvo ni le 
 - **+2 zapisa**: **MVG-110 turški-vpadi-1524** (kraj, DOCUMENTED, 4 viri: weiss-2018-castite, hhsta-m-25-1556, dular-kronika-2024, belokranjski-muzej-metliski-grad; postaja sprehoda „Vas in njeni ljudje“) in **MVG-111 grybl-cevljar** (obrt, DOCUMENTED, 3 viri: weiss-2018-castite, abmm-cevljarski-ceh, golia-slovenica; postaja sprehoda „Iz Gribelj v svet“) — brez slik (vzorec MVG-108/109).
 - **griblje-vas +1 vir** (weiss-2018-castite; opomba: listina 1468 — pet hub + mlin na Kolpi — neodvisna potrditev prve omembe; str. 182 Katterjeve hube; str. 267 opustošenje).
 - **MVG-105 posodobljen vir** gbif-lunja (opomba: GBIF verbatim lokaliteta „Poganjec“ + koordinati 45.574073/15.278092, ~297 m JV od jedra — add-only opomba).
-- Skupaj: **542 → 551 virov** (8 novih + 1 odprtje identitete? ne — deljeni weiss-2018-castite med 3 zapisi), identitet/deljenih preračunano po auditu.
-- i18n: 25 nizov števcev × 5 jezikov 109→111 (EN „one hundred and eleven“, HR „Sto enajst“, DE „Hundertelf“, IT „Cento undici“).
-- Konstante v 7 skriptah (audit-entities, test-entities ×11, test-timeline-map ×13, test-ai-curator, red-team ×5, audit-timeline-map ×3).
+- Skupaj: **542 → 550 virov** (8 novih vrstic: 4 MVG-110 + 3 MVG-111 + 1 griblje-vas; weiss-2018-castite ena identiteta deljena med 3 zapise), identitet 430→**436**, deljenih 61→**62**.
+- i18n: 25 nizov števcev × 5 jezikov 109→111 (20 številskih + 5 besednih: EN „one hundred and eleven“, HR „Sto enajst“, DE „Hundertelf“, IT „Cento undici“).
+- Konstante v 6 skriptah (audit-entities, test-entities, test-timeline-map, test-ai-curator, test-curator-red-team, audit-timeline-map) + obstranski ulovi testov: T9.8 sitemap 110→112, T8.1/T8.2 (109→111), T8.7 sitemap, T7.1/T7.8 (109→111), T5.12 (34→36 z lego), T7.9 (96→98 s časom).
 
 ## Regresija (živi :3000 po restartu + reseed)
 
-- tsc 0 · lint čist · verify-i18n 948×5 · audit-entities ✓ 0 napak (111/551/…/372) · audit-timeline-map 41 ✓/0 · audit-iiif 5 ✓/0 (376 faz) · test-entities 100 ✓/0 · test-timeline-map 72 ✓/0 · test-ai-curator 214 ✓/0 · red-team 157 ✓/0 (GAP 24) · test-plan-visit 42 ✓/0
-- OpenData **111/551** živo · sitemap **112** · IIIF 111/111 + manifesti MVG-110/111
-- agent-browser: MVG-110 + MVG-111 (naslovi, viri, timeline), hero „111“, 0 konzolnih napak po svežem nalaganju, preliv 0 na 6 širinah, footer mt-auto
+- tsc 0 · lint čist · verify-i18n 946×5 · audit-entities ✓ 0 napak (**111/550/436/62/372; 95 entitet, 36 oseb; pokritost 82/111**) · audit-timeline-map 39 ✓/0 · audit-iiif 5 ✓/0 (372 faz; **93 z življenjepisom, 18 brez**) · test-entities 100 ✓/0 · test-timeline-map 72 ✓/0 · test-ai-curator 214 ✓/0 · red-team 157 ✓/0 (GAP 24) · test-plan-visit 42 ✓/0
+- OpenData **111/550** živo · sitemap **112** · IIIF 111/111 + manifesti MVG-110/111
+- agent-browser: hero „111“, MVG-110 (listina + 4 viri) in MVG-111 (Grybl + 3 viri) izrisana, postaji 26/34 vidni na domači strani, 0 konzolnih napak, preliv 0 pri 390 px, prava site noga (mt-auto) brez vrzeli (scrollH = footer bottom)
 
 ## Stanje po valu 24
 
-**111 zapisov (MVG-001–111), 551 virov, 438 identitet, 63 deljenih, 95 entitet (oseb 36); sitemap 112; i18n 948 × 5; 13 API poti.**
-
-*(števci identitet/deljenih potrditi z audit-entities ob vgradnji)*
+**111 zapisov (MVG-001–111), 550 virov, 436 identitet, 62 deljenih, 95 entitet (oseb 36); sitemap 112; i18n 946 × 5; 13 API poti.**
 
 ## Surovine
 

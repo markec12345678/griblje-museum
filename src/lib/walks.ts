@@ -604,6 +604,13 @@ export const WALKS: Walk[] = [
         noteEn:
           "And a path still being written: a Griblje synthesizer grew into a clarinet, and a Ljubljana rejection into a distinction in Graz. Today music, too, leads from Griblje into the world — all the way to Bern.",
       },
+      {
+        exhibitSlug: "grybl-cevljar",
+        noteSi:
+          "In obrt, ki je potovala v mesto: v cehovski knjigi metliških čevljarjev stoji med brati iz vasi tudi »Mykhula Malleschitsch von Grybl« — prvo imenovano gribeljsko ime v mestni instituciji, zapisano v obliki, kakršne zbirka še ni imela (Grybl).",
+        noteEn:
+          "And the craft that travelled to town: in the guild book of the Metlika shoemakers, among the brothers from the villages, stands 'Mykhula Malleschitsch von Grybl' — the first named Griblje name inside a town institution, written in a form the collection had never seen (Grybl).",
+      },
     ],
   },
   {
@@ -847,6 +854,13 @@ export const WALKS: Walk[] = [
           "In ko so polja počivala, je prišel k nam državni tekmec: Lokostrelsko društvo Krasinec je štiri sezone zapored na gribeljskih poljih prirejalo državno prvenstvo v poljskem lokostrelstvu — vas kot oder, ne le kot zaledje.",
         noteEn:
           "And when the fields rested, the national competitor came to us: for four seasons in a row the Krasinec Archery Society held the national field-archery championship on the Griblje fields — the village as a stage, not merely a backdrop.",
+      },
+      {
+        exhibitSlug: "turski-vpadi-1524",
+        noteSi:
+          "Najtežja postaja: listina Hofkammerarhiva iz leta 1556 zapisuje, da je bilo »das dorf Griblach« po turških vpadih okrog leta 1524 »gannz oedd« — popolnoma prazno — in da je »več let ležalo puščeno«. Vas, ki je utihnila in se vrnila.",
+        noteEn:
+          "The hardest stop: a 1556 deed of the Vienna Hofkammer Archive records that 'das dorf Griblach' after the Ottoman raids of around 1524 stood 'gannz oedd' — completely empty — and 'remained deserted for several years'. A village that fell silent and came back.",
       },
     ],
   },

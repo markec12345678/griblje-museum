@@ -257,11 +257,11 @@ for (const b of OBJECT_BIOGRAPHIES) {
   }
 }
 
-if (exN === 109) ok("109/109 zapisov"); else err(`zapisov: ${exN}`);
-if (mvgN === 109) ok("109/109 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 542) ok("542 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 430) ok("430 identitet virov (23. val: +1 vir SBL sbi753104 — identiteta psevdonima Pivčan rešena; 22. val: +4 nova virov, -1 koren slovenska-biografija.si)"); else err(`identitet: ${identities}`);
-if (shared === 61) ok("61 deljenih virov (sbi915246 zdaj pravično deljen: niko-zupanic + katarina-zupanic)"); else err(`deljenih: ${shared}`);
+if (exN === 111) ok("111/111 zapisov"); else err(`zapisov: ${exN}`);
+if (mvgN === 111) ok("111/111 muzejskih številk"); else err(`MVG: ${mvgN}`);
+if (srcN === 550) ok("550 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 436) ok("436 identitet virov (24. val: +6 novih — celo Weissovo poglavje, cehovska knjiga, Kronika 2024, založniška stran; weiss-2018-castite kot ena identiteta)"); else err(`identitet: ${identities}`);
+if (shared === 62) ok("62 deljenih virov (24. val: + weiss-2018-castite deljen med griblje-vas, turski-vpadi-1524 in grybl-cevljar)"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
 
