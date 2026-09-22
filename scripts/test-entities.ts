@@ -560,7 +560,7 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   check(conn.length > 0, `T8.5 connectionsBetween(griblje-vas, sveti-vid) deluje (${conn.map((c) => c.kind).join(", ")})`);
 
   // Source registry: identitete in deljenost.
-  check(SOURCE_USAGE.size === 448, `T8.6 448 identitet virov (${SOURCE_USAGE.size})`);
+  check(SOURCE_USAGE.size === 449, `T8.6 449 identitet virov (${SOURCE_USAGE.size})`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length > 1).length;
   check(shared === 66, `T8.7 66 deljenih virov (${shared})`);
 
@@ -580,7 +580,7 @@ section("T8 — Obstoječe relacije objektov nespremenjene (walks/related/source
   // Viri skupaj.
   let srcRows = 0;
   for (const ex of seedExhibits) srcRows += ex.sources.length;
-  check(srcRows === 567, `T8.11 567 vrstic virov (${srcRows})`);
+  check(srcRows === 568, `T8.11 568 vrstic virov (${srcRows})`);
 
   // Biografije.
   let phases = 0;
@@ -639,8 +639,8 @@ section("T9 — HTTP regresija (96/96 strani, 96/96 IIIF, OpenData, QR, sitemap)
         if (s.sourceKey) withKey += 1;
       }
     }
-    check(od.counts?.exhibits === 113 && od.counts?.sources === 567, `T9.3 OpenData: 113 zapisov / 567 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
-    check(withKey === 567 && totalRows === 567, `T9.4 OpenData sourceKey 567/567 (${withKey}/${totalRows})`);
+    check(od.counts?.exhibits === 113 && od.counts?.sources === 568, `T9.3 OpenData: 113 zapisov / 568 virov (${od.counts?.exhibits}/${od.counts?.sources})`);
+    check(withKey === 568 && totalRows === 568, `T9.4 OpenData sourceKey 568/568 (${withKey}/${totalRows})`);
 
     // QR globoka povezava.
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
