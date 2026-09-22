@@ -259,8 +259,8 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 112) ok("112/112 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 112) ok("112/112 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 561) ok("561 vrstic virov (30. val: +1 — Andrič & Karger 2024 Springer sinteza na MVG-083)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 443) ok("443 identitet virov (30. val: +1 — DOI URL Andrič & Karger 2024)"); else err(`identitet: ${identities}`);
+if (srcN === 564) ok("564 vrstic virov (31. val: +3 — arhiv Vaš kanala stran 2: orča 2011 na MVG-022, obnova šole + 120-letnica 2009 na MVG-026)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 446) ok("446 identitet virov (31. val: +3 — 3 novi arhivski URL-ji Vašega kanala)"); else err(`identitet: ${identities}`);
 if (shared === 65) ok("65 deljenih virov (26. val: +1 — Cabin URL zdaj deljen med MVG-016 in MVG-069)"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
