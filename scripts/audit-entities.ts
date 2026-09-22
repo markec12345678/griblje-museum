@@ -260,7 +260,7 @@ for (const b of OBJECT_BIOGRAPHIES) {
 if (exN === 112) ok("112/112 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 112) ok("112/112 muzejskih številk"); else err(`MVG: ${mvgN}`);
 if (srcN === 565) ok("565 vrstic virov (32. val: +1 — vk-najboljsa-oraca-2010 na MVG-022: kvalifikacija Vipava 2010 → Švedska 2011)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 447) ok("447 identitet virov (32. val: +1 — nov arhivski URL Vašega kanala 488-najbolja-oraa)"); else err(`identitet: ${identities}`);
+if (identities === 447) ok("447 identitet virov (33. val: vir andric-2007-holocene dobi DOI URL — ključ identitete ime → url, števec nespremenjen)"); else err(`identitet: ${identities}`);
 if (shared === 65) ok("65 deljenih virov (26. val: +1 — Cabin URL zdaj deljen med MVG-016 in MVG-069)"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);

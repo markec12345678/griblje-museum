@@ -444,7 +444,7 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
   check(seedExhibits.length === 112 && new Set(seedExhibits.map((e) => e.museumNo)).size === 112, "T7.1 112 zapisov, 112 MVG številk (29. val: + nemastoma-gruberi)");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
   check(rows === 565, "T7.2 565 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 447, "T7.3 447 identitet virov (32. val: +1 — arhivski URL Vaš kanala 488-najbolja-oraa 2010)", `=${SOURCE_USAGE.size}`);
+  check(SOURCE_USAGE.size === 447, "T7.3 447 identitet virov (33. val: URL obstoječemu viru — ključ ime → url, števec nespremenjen)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 65, "T7.4 65 deljenih virov (≥2 zapisa; 26. val: +1 — Cabin URL med MVG-016/069)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
