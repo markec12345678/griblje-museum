@@ -1,0 +1,27 @@
+{
+  "code": 200,
+  "data": {
+    "description": "",
+    "html": "<html><head><meta name=\"color-scheme\" content=\"light dark\"></head><body><pre style=\"word-wrap: break-word; white-space: pre-wrap;\">jQuery(document).ready(function () {\n  $(\"#reader\").click(function (params) {\n    $(\"#pane\").removeClass(\"hidden\");\n    let file = $(\".pdf-dl\").attr(\"href\");\n    jQuery(\".pdf-flip-container\").flipBook({\n      pdfUrl: file,\n      assets: {\n        preloader: \"/site/templates/scripts/assets/images/preloader.jpg\",\n        overlay: \"/site/templates/scripts/assets/images/overlay.png\",\n        flipMp3: \"/site/templates/scripts/assets/mp3/turnPage.mp3\",\n        spinner: \"/site/templates/scripts/assets/images/spinner.gif\",\n        backgroundMp3: \"/site/templates/scripts/assets/mp3/background.mp3\",\n      },\n    });\n  });\n});\n</pre></body></html>",
+    "httpStatus": 200,
+    "httpStatusText": "",
+    "publishedTime": "Fri, 15 Mar 2024 12:48:07 GMT",
+    "title": "",
+    "url": "https://www.belokranjec.si/site/templates/scripts/flipbook-init.js",
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 182,
+      "tokens": 182
+    }
+  },
+  "meta": {
+    "usage": {
+      "measuredTokens": 0,
+      "outputTokens": 0,
+      "scaledTokens": 182,
+      "tokens": 182
+    }
+  },
+  "status": 20000
+}
