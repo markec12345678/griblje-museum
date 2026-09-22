@@ -3041,3 +3041,21 @@ Stage Summary:
 - Griblje (G3) ima zdaj abstrakt primarne raziskave z novim dejstvom o pokrajini: peščena podlaga — gozdnatost do danes, kontrast z Mlako (~1000 cal BP); vir andric-2007-holocene ima DOI URL; Mason 2001 potrjen v DVEH mednarodnih referenčnih seznamih (Andrič 2007 + Andrič & Karger 2024)
 - SAGE = nov peskovniški kanal (page_reader 347 kB na doi-strani); dLib rezultatska pot znana (/results/default.aspx — školjka 71 kB, rezultati sejo-vezani); Belokranjec PDF za headless-zanko (3. poraz, ostaja TO_COLLECT)
 - Izven-peskovniška vrsta (posodobljena): vinogradniška diploma (RUL gID) → OpenAlex z lastnim ključem → Kataster jam → Belokranjec PDF (3. poraz) → Poganjec → Lojze↔Alojz → Kamra pričevanje → ARSO letna serija → SI AS 176 → gostilna pred 1898 → vrzel #3 (360° panorame) → Mason 2001 (session-prenos dLib) → Andrič 2007 polno besedilo (abstrakt ✓, polno TO_COLLECT)
+
+---
+Task ID: 85
+Agent: Z.ai Code (glavni)
+Task: "odlicno nadaljuj pushaj na github vercel sinhroniziraj posodobi readme in nadaljuj" — obnova peskovnika iz GitHuba + sinhronizacija README + push + verifikacija produkcije
+
+Work Log:
+- Peskovnik resetiran: lokalni direktorij vseboval samo predlogo (brez muzeja); preverjena vhodna vrata — worklog lokalni (32 vrstic, Task 5/46) = podnabor repo workloga (3043 vrstice) → varno nadomeščen
+- Kloniran repo markec12345678/griblje-museum z PAT (HEAD 0d6162a = 84. sklop); obnovljen /home/z/my-project (ohranjen skills/), bun install 520 paketov, prisma generate, dev strežnik na :3000
+- Ugotovljeno stanje 84. sklopa: 112 zapisov, 565 virov, 447 identitet, 65 deljenih, 95 entitet; popis Vašega kanala ZAKLJUČEN (37 člankov, 100 % dedup) — val 21 zaključek že izveden v valih 21/31/32
+- SINHRONIZACIJA: GitHub HEAD = origin/main (0d6162a) ✓; Vercel produkcija griblje-museum.vercel.app HTTP 200, OpenData 112/565 = identično lokalnemu (auto-deploy potrjen)
+- README popravek (commit f86e7ce): status blok »Zadnja posodobitev« zastarel na 83. sklop / 564 virov / 446 identitet / valovi 1–31 → posodobljen na 84. sklop / 565 / 447 / valovi 1–33 + preboj 33. vala (abstrakt Andrič 2007 na SAGE — peščena podlaga, gozdnatost do danes)
+- Push 0d6162a..f86e7ce → Vercel auto-deploy sprožen
+
+Stage Summary:
+- main na GitHubu ažuren (f86e7ce), 85. sklop = README sinhronizacija (ni raziskave)
+- Stanje: 112 zapisov, 565 virov, 447 identitet, 65 deljenih, 95 entitet; sitemap 113; i18n 946 × 5; 13 API poti; OpenData 112/565 živo lokalno + produkcija
+- Naslednja vrsta (izven-peskovniška): OpenAlex z lastnim ključem → ARSO letna serija → vinogradniška diploma (RUL gID) → Kataster jam → Belokranjec PDF (3. poraz) → Poganjec → Lojze↔Alojz → Kamra pričevanje → SI AS 176 → gostilna pred 1898 → vrzel #3 (360°) → Mason 2001 (session dLib) → Andrič 2007 polno besedilo
