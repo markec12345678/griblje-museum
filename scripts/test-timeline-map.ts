@@ -443,8 +443,8 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 112 && new Set(seedExhibits.map((e) => e.museumNo)).size === 112, "T7.1 112 zapisov, 112 MVG številk (29. val: + nemastoma-gruberi)");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 560, "T7.2 560 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 442, "T7.3 442 identitet virov (29. val: +1 DOI URL — EJT 777 Nemastoma)", `=${SOURCE_USAGE.size}`);
+  check(rows === 561, "T7.2 561 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 443, "T7.3 443 identitet virov (30. val: +1 DOI URL — Andrič & Karger 2024)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 65, "T7.4 65 deljenih virov (≥2 zapisa; 26. val: +1 — Cabin URL med MVG-016/069)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -548,11 +548,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 112 && od.counts?.sources === 560,
-      "T8.3 OpenData: 112 zapisov / 560 virov",
+      od.counts?.exhibits === 112 && od.counts?.sources === 561,
+      "T8.3 OpenData: 112 zapisov / 561 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 560 && totalRows === 560, "T8.4 OpenData sourceKey 560/560", `${withKey}/${totalRows}`);
+    check(withKey === 561 && totalRows === 561, "T8.4 OpenData sourceKey 561/561", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
