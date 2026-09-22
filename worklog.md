@@ -3103,3 +3103,24 @@ Stage Summary:
 - Andrič 2011 (Drobci ledenodobnega okolja, OIAS 21) = 3 bibliografske potrditve + izvirni slovenski naslov
 - Ničelne meritve: AGS 2012 (Vinomer, 0 × Griblj), citatni AV 71.14 (0), bracken/litter-raking/Drava (0); S2 search kvota 429 (paper endpoint deluje)
 - Izven-peskovniška vrsta (posodobljena): S2 search-kvota (Mason 2001 CorpusId → citacije) → OpenAlex z lastnim ključem → ARSO letna serija → vinogradniška diploma (RUL gID) → Kataster jam → Belokranjec PDF (3. poraz) → Poganjec → Lojze↔Alojz → Kamra pričevanje → SI AS 176 → gostilna pred 1898 → vrzel #3 (360°) → Mason 2001 session dLib (str. 10) → Andrič 2007 polno besedilo → AGS 2012/2024 = OPRAVLJENO (2024 = preboj)
+---
+Task ID: 88
+Agent: Z.ai Code (glavni)
+Task: "odlicno nadaljuj" — 36. val raziskave: SEM = NOV KANAL (polno besedilo Etnolog 10/11 1937/1939 + stare fotografije Griblje); +3 viri, 3 zgodbe; popravek sem-kozmopolit; regresija, dokumentacija, push
+
+Work Log:
+- IZHODIŠČE: HEAD 33ad0e2 (87. sklop) = origin/main ✓, delovno drevo čisto; stanje 113/568/449/66/95
+- POLENO 1 — S2 search: 429 (5. poskus, s01/s02) — search-kvota ostaja zaprta, Mason 2001 citacije TO_COLLECT
+- POLENO 2 — dLib Mason 2001: JS-SPA brez iskalnega URL-ja brez seje; spletno iskanje brez site: ne loči domene → TO_COLLECT
+- POLENO 3 — PREBOJ: SEM etno-muzej.si = NOV KANAL (GCSE je JS; r.jina.ai bralnik deluje): (1) Etnolog ključne besede »Griblje ob Kolpi« (taxonomy 8249) → polno besedilo PDF Etnolog 10/11 (1937/1939) Zupanič Šopek, str. 114–146, 5,44 MB → pdftotext 69,1 kB; 11 × Griblj: 1894.–1895. po nagovoru sina Nika, 110 domov, listina 1524 »niti en plug« + naselitev beguncev iz Bosne/Hrvaške, 3 skupine pesmi Un–Kolpa, zidanice + trgatveno petje, akvarel Gasparija sv. Vida, Miko Zupanič (1841–1911) Krasinec št. 18 → Griblje št. 73; (2) digitalne zbirke lokacija Griblje = 4 stare fotografije: F0000838 noša ok. 1920 »verjetno fotografiral Niko Županič«, F0000212 rojstna hiša, F0000183, F0001407 (1928); (3) spominska razstava »Dr. Niko Zupanič — kozmopolit iz Griblje« 140-letnica + Etnolog 27 (2017)
+- VGRADNJA (add-only): MVG-043 +1 vir etnolog-1937-1939-sopek-pdf + zgodba SL/EN +1 stavek; MVG-004 +1 vir (isti PDF deljen) + zgodba +1 stavek (1524); MVG-079 zgodba +1 stavek (F0000838); MVG-010 +1 vir sem-digitalne-zbirke-lokacija-griblje + zgodba +1 stavek; popravek sem-kozmopolit URL (golo domeno → razstava). DEDUP PRED vgradnjo: 5 ponudnikov → 3 (sem-f0000212/sem-f0000838 že obstojata — A1; razstava se je združil s popravljenim sem-kozmopolit). Nauk: grep semena PRED vgradnjo
+- PREDMET PRESKUSA 1: vgradnja najprej v DB (573) — auuditi berijo SEME (museum-content.ts): preneseno v seme, DB reseed; SourceType brez "zbirka"/"razstava" → "spletni-vir"/"objava"
+- Konstante: 568→571 (5 skript), identitet 449→452 (3 skripte), deljenih 66→67 (3), T5.12 3/3→5 vrstic/4 sourceKey
+- Regresija (živi :3000 po reseed + restart dev — stari proces držal zastarel ročaj DB): tsc 0, lint čist, verify-i18n 946 × 5, audit-entities ✓ 0 napak (113/571/452/67/375; 95 entitet, 36 oseb), audit-timeline-map 39 ✓/0, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0, test-plan-visit 42 ✓/0; OpenData 113/571 živo; sitemap 114
+- agent-browser: /exponat/katarina-zupanic stavek 114–146 + PDF povezava ✓, /exponat/belokranjska-nosa F0000838 + Niko Županič ✓, hero 113, noga vrzel 0 (5606), preliv 0 pri 390 px, konzola čista
+- Dokumentacija: research-griblje/50-val36-sem-etnolog.md + KAZALO-raziskav +50 + 00-KAZALO (vnos 36. val) + README (88. sklop vnos + status blok 571/452/67 + tabela globine 571) + worklog (ta vnos); surovine raw-web-val36-2026-10/ (PDF 5,44 MB + txt 69,1 kB, jina-sem-*.md ×4, s01–s06, vgradnja-val36.mjs)
+
+Stage Summary:
+- Stanje: **113 zapisov (MVG-001–113), 571 virov, 452 identitet, 67 deljenih, 95 entitet (oseb 36); sitemap 114; i18n 946 × 5; 13 API poti**
+- NOV KANAL: Slovenski etnografski muzej (SEM) — polno besedilo Etnolog 10/11 (1937/1939) + digitalne zbirke (stare fotografije z lokacijo Griblje) + razstava 140-letnica; NOVO dejstvo: listina 1524 (turški napad, niti en plug, naselitev beguncev)
+- Izven-peskovniška vrsta (posodobljena): S2 search-kvota (Mason 2001 CorpusId → citacije) → dLib Mason 2001 VS 39 (str. 7–27) → Kamra pričevanje → OpenAlex z lastnim ključem → ARSO letna serija → vinogradniška diploma (RUL gID) → Kataster jam → Belokranjec PDF (3. poraz) → Poganjec → Lojze↔Alojz → SI AS 176 → gostilna pred 1898 → vrzel #3 (360°) → Mason 2001 session dLib → Andrič 2007 polno besedilo
