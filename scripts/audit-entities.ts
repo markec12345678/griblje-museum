@@ -259,8 +259,8 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 113) ok("113/113 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 113) ok("113/113 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 567) ok("567 vrstic virov (34. val: +2 — av71-2020-poselitev + mason-2001-vs39 deljen na MVG-113: Srednje njive)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 448) ok("448 identitet virov (34. val: +1 — nov vir av71-2020 z DOI URL; mason-2001 deljen = ista identiteta)"); else err(`identitet: ${identities}`);
+if (srcN === 568) ok("568 vrstic virov (35. val: +1 — ags-2024-holocene-review, nacionalni pregled Holocena AGS 64-2)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 449) ok("449 identitet virov (35. val: +1 — nov vir ags-2024-holocene-review; andric-2011 obogatena z naslovom = ista identiteta)"); else err(`identitet: ${identities}`);
 if (shared === 66) ok("66 deljenih virov (34. val: +1 — mason-2001-vs39 zdaj deljen med MVG-083 in MVG-113)"); else err(`deljenih: ${shared}`);
 if (phases === 375) ok("375 biografskih faz (34. val: +3 — biografija srednje-njive)"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
