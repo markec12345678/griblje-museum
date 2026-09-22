@@ -259,9 +259,9 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 113) ok("113/113 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 113) ok("113/113 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 568) ok("568 vrstic virov (35. val: +1 — ags-2024-holocene-review, nacionalni pregled Holocena AGS 64-2)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 449) ok("449 identitet virov (35. val: +1 — nov vir ags-2024-holocene-review; andric-2011 obogatena z naslovom = ista identiteta)"); else err(`identitet: ${identities}`);
-if (shared === 66) ok("66 deljenih virov (34. val: +1 — mason-2001-vs39 zdaj deljen med MVG-083 in MVG-113)"); else err(`deljenih: ${shared}`);
+if (srcN === 571) ok("571 vrstic virov (36. val: +3 — SEM/Etnolog: polno besedilo PDF Zupanič 1937/39 (deljen MVG-004/043), SEM lokacija Griblje; sem-kozmopolit URL natančen)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 452) ok("452 identitet virov (36. val: +3 — etnolog-1937-1939-sopek-pdf (SEM), sem-digitalne-zbirke-lokacija-griblje, razstava-page; sem-kozmopolit URL natančen)"); else err(`identitet: ${identities}`);
+if (shared === 67) ok("67 deljenih virov (36. val: +1 — etnolog-1937-1939-sopek-pdf deljen med MVG-004 in MVG-043)"); else err(`deljenih: ${shared}`);
 if (phases === 375) ok("375 biografskih faz (34. val: +3 — biografija srednje-njive)"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
 
