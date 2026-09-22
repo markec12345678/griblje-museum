@@ -242,9 +242,9 @@ section("R0 — AUDIT TRAIL (repo, veriga ponudnikov)");
   check(!!head, "R0.1 trenutni commit zabeležen", head);
   console.log(`  · HEAD: ${head}${dirty ? " (delovno drevo NI čisto)" : " (čisto)"}`);
 
-  check(seedExhibits.length === 104, "R0.2 zbirka: 104 zapisov", String(seedExhibits.length));
+  check(seedExhibits.length === 105, "R0.2 zbirka: 105 zapisov", String(seedExhibits.length));
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 523, "R0.3 zbirka: 523 vrstic virov", String(sourceRows));
+  check(sourceRows === 527, "R0.3 zbirka: 527 vrstic virov", String(sourceRows));
   check(ENTITY_BY_ID.size === 94, "R0.4 registr: 94 entitet", String(ENTITY_BY_ID.size));
 
   // Dejanska podatkovna pot (iz kode, ne iz poročila):
@@ -1402,7 +1402,7 @@ section("R12 — COLLECTION QUESTIONS (brez generičnega turističnega besedila)
 {
   const { context } = buildContext("sl", "Kaj pripoveduje zbirka o Gribljah?");
   check(context.queryType === "collection" && context.collection !== undefined, "R12.1 namen ZBIRKA → pregled zbirke v kontekstu (93 zapisov, dobe)");
-  check(context.collection?.exhibitCount === 104, "R12.2 pregled nosi dejanske števce (104)");
+  check(context.collection?.exhibitCount === 105, "R12.2 pregled nosi dejanske števce (104)");
 
   // Generično turistično besedilo BREZ navedkov → degradirano.
   const a = verifyAnswer(
@@ -1412,13 +1412,22 @@ section("R12 — COLLECTION QUESTIONS (brez generičnega turističnega besedila)
   check(a !== null && !a.answerable, "R12.3 generično turistično besedilo brez navedkov NI odgovor (insufficient_evidence)");
 
   // Sestavljeno iz evidence (z navedki) → preide.
+  // Citati se IZPELJEJO iz dejanskega konteksta (retrieval z oknom, ki se
+  // lahko pri novih zapisih premakne — 20. val) — namen preverbe ostaja:
+  // odgovor, sestavljen IZ evidence konteksta, mora preiti.
+  const provList = [...context.provided.keys()];
+  const s1 = provList[0];
+  const s2 = provList[1] ?? provList[0];
+  const ex1 = seedExhibits.find((e) => e.slug === s1)!;
+  const ex2 = seedExhibits.find((e) => e.slug === s2)!;
+  const frag = (si: string) => si.replace(/\s+/g, " ").slice(0, 70);
   const b = verifyAnswer(
     attackJson({
       kajVemo: [
-        "Zbirka govori o vasi ob Kolpi, prvič izpričani leta 1468. [[griblje-vas]]",
-        "Govori o reki ekstremov — suši in poplavah. [[kolpa-extremi]]",
+        `${frag(ex1.summarySi)} [[${s1}]]`,
+        `${frag(ex2.summarySi)} [[${s2}]]`,
       ],
-      viri: [{ slug: "griblje-vas" }, { slug: "kolpa-extremi" }],
+      viri: [{ slug: s1 }, { slug: s2 }],
     }),
     context,
   );
@@ -1650,9 +1659,9 @@ section("R16 — INVARIANTI ZBIRKE (regresija)");
 // ===========================================================================
 
 {
-  check(seedExhibits.length === 104, "R16.1 104 zapisov");
+  check(seedExhibits.length === 105, "R16.1 105 zapisov");
   const sourceRows = seedExhibits.reduce((n, e) => n + e.sources.length, 0);
-  check(sourceRows === 523, "R16.2 523 vrstic virov");
+  check(sourceRows === 527, "R16.2 527 vrstic virov");
   check(ENTITY_BY_ID.size === 94, "R16.3 94 entitet registra");
   check(ENTITY_QUEUE.length >= 28, "R16.4 kuratorska vrsta ≥ 28 vprašanj", String(ENTITY_QUEUE.length));
   const withTime = seedExhibits.filter((e) => e.periodSi).length;

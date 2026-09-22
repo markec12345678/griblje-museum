@@ -465,6 +465,13 @@ export const WALKS: Walk[] = [
           "Spiders travel into science too: the first Slovene specimens of Cryptachaea riparia — a species revealed to be new for Slovenia — were recorded by the pond at the upper end of the village.",
       },
       {
+        exhibitSlug: "biodiverzitetne-baze",
+        noteSi:
+          "Vas je prešla v svetovne podatkovne baze: krogličasta lunja nad novoletnimi travniki, medonosna čebela na marčevskih poljih — vsako opazovanje s stalnim identifikatorjem, kakor muzejska številka.",
+        noteEn:
+          "The village has crossed into the world's data infrastructures: a hen harrier above the New Year meadows, a honey bee on the March fields — every observation with a permanent identifier, like a museum number.",
+      },
+      {
         exhibitSlug: "toni-gasperic",
         noteSi:
           "Nekateri odidejo v svet in se vrnejo z darovi; Gašperič se je vrnil z besedo. Humor z bregov Kolpe — oddaje, knjige in Noč na Kolpi.",

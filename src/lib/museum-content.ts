@@ -8351,6 +8351,81 @@ export const seedExhibits: SeedExhibit[] = [
       },
     ],
   },
+  {
+    slug: "biodiverzitetne-baze",
+    museumNo: "MVG-105",
+    category: "narava",
+    addedAt: "2026-09-22",
+    titleSi: "Griblje v svetovnih biodiverzitetnih bazah — novoletna lunja in marčevska čebela",
+    titleEn: "Griblje in the world's biodiversity databases — a New Year harrier and a March bee",
+    periodSi: "1. januar 2025 → danes · svetovne podatkovne infrastrukture",
+    periodEn: "1 January 2025 → present · the world's data infrastructures",
+    summarySi:
+      "Svetovna baza GBIF vodi enajst opazovanj vrst v dveh kilometrih od jedra vasi: šest ptic z novega leta 2025 z lokalitete »Poganjec« — med njimi dve krogličasti lunji, ujeda, ki zimi na belokranjskih poljih — in pet marčevskih zapisov s polj severno od vasi (med njimi medonosna čebela). iNaturalist v treh kilometrih dodaja 317 opazovanj: vas živi v svetovni infrastrukturi državljanske znanosti.",
+    summaryEn:
+      "The global database GBIF holds eleven species observations within two kilometres of the village core: six birds from New Year's Day 2025 at the locality 'Poganjec' — among them two hen harriers, a raptor that winters on the Bela krajina fields — and five March records from the fields north of the village (among them the honey bee). iNaturalist adds 317 observations within three kilometres: the village lives inside the world's citizen-science infrastructure.",
+    storySi:
+      "Vas je zapisana v urbarjih, leksikonih in časopisih — in od novega leta 2025 tudi v svetovnih bazah biodiverzitetnih podatkov. Prvega januarja 2025 je opazovalec ptic prek aplikacije Birda zabeležil šest ptic na lokaliteti, ki jo baza zapiše kot »Poganjec«, južno od vasi, na poti k Kolpi: dve krogličasti lunji (Circus cyaneus), dva trstna strnada (Emberiza schoeniclus), konopko (Linaria cannabina) in rdečko (Erithacus rubecula). Krogličasta lunja je ujeda, ki na belokranjskih poljih prezimuje — novoletni obisk nad vaškimi travniki je danes zapisan v svetovni bazi GBIF s stalnim identifikatorjem zapisov in licenco CC BY 4.0.\n\nDo marca 2026 je baza GBIF v dveh kilometrih okoli jedra vasi popisala enajst zapisov: petnajstega marca so polja severno od vasi dodala medonosno čebelo (Apis mellifera), poljsko vijolico (Viola arvensis), perzijsko jetičnico (Veronica persica) ter dve manj znani vrsti, Tropinota hirta in Stellaria media — vsak zapis s točnim časom, koordinato in opazovalcem, zrcaljenim iz iNaturalista. iNaturalist, platforma državljanske znanosti, v treh kilometrih od vasi vodi 317 opazovanj (stanje septembra 2026): poletje 2026 je okoliška polja odprla tudi entomologom, ki štejejo mravlje (Lasius niger, Formica pratensis) in druge majhne gospodarje travnikov.\n\nVas z okolico tako živi v isti infrastrukturi, v kateri nastaja današnja podoba svetovne narave: podatki opazovalcev s stalnimi identifikatorji, izrecnimi licencami in odprtim dostopom — ista načela, po katerih ta muzej objavlja svoje zapise. Kdor danes poizveduje po koordinatah vasi v svetovni bazi, dobi enajst živih odgovorov; enkrat so to šteli urbarji, danes to delajo senzorji v žepih. Muzej išče: domačini, ki poznate vaška imena — ali med njimi obstaja Poganjec (polje, travnik, hrib)? Povežite bazično lokaliteto z imenom, ki ga nosi vaš spomin. Muzej išče tudi lokalne opazovalce narave: ptice, metulje in rastline iz oklica vasi lahko s stalnimi identifikatorji pridejo v isto bazo — in v ta muzej.",
+    storyEn:
+      "The village is written in urbars, lexicons and newspapers — and since New Year 2025 also in the world's biodiversity databases. On 1 January 2025 a birdwatcher recorded six birds through the Birda app at a locality the database writes as 'Poganjec', south of the village, on the way to the Kolpa: two hen harriers (Circus cyaneus), two reed buntings (Emberiza schoeniclus), a linnet (Linaria cannabina) and a robin (Erithacus rubecula). The hen harrier is the raptor that winters on the Bela krajina fields — its New Year visit above the village meadows is today written in the global GBIF database with permanent record identifiers and a CC BY 4.0 licence.\n\nBy March 2026 GBIF had counted eleven records within two kilometres of the village core: on 15 March the fields north of the village added the honey bee (Apis mellifera), the field pansy (Viola arvensis), the Persian speedwell (Veronica persica) and two less familiar species, Tropinota hirta and Stellaria media — every record with a precise time, coordinate and observer, mirrored from iNaturalist. iNaturalist, the citizen-science platform, holds 317 observations within three kilometres of the village (as of September 2026): the summer of 2026 opened the surrounding fields to entomologists counting ants (Lasius niger, Formica pratensis) and other small masters of the meadows.\n\nThe village and its surroundings thus live inside the same infrastructure in which today's picture of the world's nature is being made: observations with permanent identifiers, explicit licences and open access — the same principles by which this museum publishes its records. Whoever queries the village's coordinates in the global database today receives eleven living answers; once the urbars did this counting, today the sensors in people's pockets do it. The museum seeks: villagers who know the local names — does a Poganjec exist among them (a field, a meadow, a rise)? Connect the database locality to the name your memory carries. The museum also seeks local nature observers: birds, butterflies and plants from the village's surroundings can enter the same database with permanent identifiers — and this museum.",
+    evidenceStatus: "DOCUMENTED",
+    image: "/images/authentic/kroglicasta-lunja.jpg",
+    imageCredit:
+      "Foto: Peter von Bagh · Wikimedia Commons · CC0 — samec krogličaste lunje (Circus cyaneus); vrsta iz zapisov GBIF z lokalitete Poganjec (1. 1. 2025); slika vrste, ne posnetka z vasi",
+    yearFrom: 2025,
+    yearTo: 2026,
+    featured: false,
+    sources: [
+      {
+        key: "gbif-circus-cyaneus-2025",
+        nameSi: "GBIF: Circus cyaneus — zapis 5277910285 (Birda, 1. 1. 2025, lokaliteta Poganjec)",
+        nameEn: "GBIF: Circus cyaneus — record 5277910285 (Birda, 1 Jan 2025, locality Poganjec)",
+        sourceType: "spletni-vir",
+        license: "CC BY 4.0",
+        url: "https://api.gbif.org/v1/occurrence/5277910285",
+        noteSi:
+          "Preverjeno prek odprtega API-ja GBIF (HTTP 200, 20. val): Circus cyaneus (Linnaeus, 1766), eventDate 1. 1. 2025, 45,5741 N 15,2781 E (okoli 0,7 km južno od jedra vasi), lokaliteta »Poganjec«, HUMAN_OBSERVATION, nabor Birda — Global Observation Dataset; opazovalec anonimiziran s ključem. Istega dne druga opazovanja lunje (tudi zapis 5279974550) in še štiri vrste na isti lokaliteti.",
+        noteEn:
+          "Verified through the open GBIF API (HTTP 200, wave 20): Circus cyaneus (Linnaeus, 1766), eventDate 1 Jan 2025, 45.5741 N 15.2781 E (about 0.7 km south of the village core), locality 'Poganjec', HUMAN_OBSERVATION, from the Birda — Global Observation Dataset; the observer anonymised by key. A second harrier observation the same day (record 5279974550) and four more species at the same locality.",
+      },
+      {
+        key: "gbif-tropinota-2026",
+        nameSi: "GBIF: Tropinota hirta — zapis 6498192135 (iNaturalist, 15. 3. 2026, polja severno od vasi)",
+        nameEn: "GBIF: Tropinota hirta — record 6498192135 (iNaturalist, 15 Mar 2026, fields north of the village)",
+        sourceType: "spletni-vir",
+        license: "CC BY 4.0",
+        url: "https://api.gbif.org/v1/occurrence/6498192135",
+        noteSi:
+          "Preverjeno prek odprtega API-ja GBIF (HTTP 200, 20. val): Tropinota hirta (Poda, 1761), eventDate 15. 3. 2026 12:47, 45,5791 N 15,2840 E (okoli 400 m severno od jedra vasi), opazovalec Balder Dyekjær, zrcaljeno iz iNaturalista. Istega dne še štirje zapisi z okoliških polj: Apis mellifera, Viola arvensis, Stellaria media, Veronica persica — skupaj pet od enajstih zapisov v radiu 2 km.",
+        noteEn:
+          "Verified through the open GBIF API (HTTP 200, wave 20): Tropinota hirta (Poda, 1761), eventDate 15 Mar 2026 12:47, 45.5791 N 15.2840 E (about 400 m north of the village core), observer Balder Dyekjær, mirrored from iNaturalist. Four more records from the surrounding fields the same day: Apis mellifera, Viola arvensis, Stellaria media, Veronica persica — five of the eleven records within 2 km in total.",
+      },
+      {
+        key: "inaturalist-griblje",
+        nameSi: "iNaturalist: 317 opazovanj v 3-kilometrskem radiu od jedra vasi (poizvedba 22. 9. 2026)",
+        nameEn: "iNaturalist: 317 observations within 3 km of the village core (query of 22 Sep 2026)",
+        sourceType: "spletni-vir",
+        license: "različne licence po posameznih opazovanjih",
+        url: "https://api.inaturalist.org/v1/observations?lat=45.576&lng=15.283&radius=3",
+        noteSi:
+          "Odprti API iNaturalista (HTTP 200, 20. val): total_results 317 za poizvedbo z središčem 45,576/15,283 in radijem 3 km; prvih sto zadetkov 77 unikatnih taksonov, razpon datumov julij–september 2026; med taksoni mravlje Lasius niger, Formica pratensis, Formica cunicularia, Tetramorium caespitum. iNaturalist svoja opazovanja zrcali v GBIF — nabor 50c9509d.",
+        noteEn:
+          "The open iNaturalist API (HTTP 200, wave 20): total_results 317 for the query centred on 45.576/15.283 with a 3 km radius; the first hundred hits carry 77 unique taxa, dates spanning July–September 2026; among the taxa the ants Lasius niger, Formica pratensis, Formica cunicularia, Tetramorium caespitum. iNaturalist mirrors its observations into GBIF — dataset 50c9509d.",
+      },
+      {
+        key: "gbif-dataset-birda",
+        nameSi: "GBIF: podatkovni nabor Birda — Global Observation Dataset",
+        nameEn: "GBIF: the Birda dataset — Global Observation Dataset",
+        sourceType: "spletni-vir",
+        license: "CC BY 4.0 (opazovanja)",
+        url: "https://api.gbif.org/v1/dataset/6ff8b3b0-ef0f-4f79-a310-5a5615c6aa0b",
+        noteSi:
+          "Identifikacija podatkovnega vira prek API-ja GBIF (HTTP 200, 20. val): OCCURRENCE nabor aplikacije Birda (birda.org), taksonomija IOC; vsa šest gribeljskih novoletnih ptic 1. 1. 2025 prihaja iz tega nabora, v njem tudi lokaliteta »Poganjec«.",
+        noteEn:
+          "Identification of the data source through the GBIF API (HTTP 200, wave 20): an OCCURRENCE dataset of the Birda app (birda.org), IOC taxonomy; all six of the village's New Year birds of 1 Jan 2025 come from this dataset, as does the locality 'Poganjec'.",
+      },
+    ],
+  },
 ];
 
 export const seedStories: Omit<StoryDTO, "id">[] = [
