@@ -259,9 +259,9 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 111) ok("111/111 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 111) ok("111/111 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 554) ok("554 vrstic virov (25. val: +4 — Kolpa 2002 in ribnik panorama iz kategorije Commons Griblje, deljena listina 1468 na malenci, kamra pričevanje Cirila Totterja)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 437) ok("437 identitet virov (25. val: +1 kamra pričevanje Cirila Totterja; kamra-plosca nadgrajena z gole domene na natančen vnos; Commons URL-ja Kolpa_griblje in Pond_Griblje že vira MVG-006 in MVG-050 — identiteta ostaja)"); else err(`identitet: ${identities}`);
-if (shared === 64) ok("64 deljenih virov (25. val: +2 — Kolpa_griblje zdaj deljen med MVG-001+MVG-006, Pond_Griblje med MVG-016+MVG-050; weiss-2018-castite deljen med 4 zapise)"); else err(`deljenih: ${shared}`);
+if (srcN === 556) ok("556 vrstic virov (26. val: +2 — zimska fotografija ribnika Cabin under the Sun na MVG-016, uradni opis enote RKD EŠD 2122 na MVG-002)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 438) ok("438 identitet virov (26. val: +1 — nov URL geohub opis enote 2122; Cabin URL je deljena identiteta z MVG-069)"); else err(`identitet: ${identities}`);
+if (shared === 65) ok("65 deljenih virov (26. val: +1 — Cabin URL zdaj deljen med MVG-016 in MVG-069)"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
 
