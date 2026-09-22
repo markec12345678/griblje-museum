@@ -907,7 +907,7 @@ export const seedExhibits: SeedExhibit[] = [
         nameEn: "Novak, Vilko: Županič Niko — Slovene Biographical Lexicon (ZRC SAZU)",
         sourceType: "objava",
         license: "navedi vir / cite the source",
-        url: "https://www.slovenska-biografija.si/",
+        url: "https://www.slovenska-biografija.si/oseba/sbi915246/",
       },
       {
         key: "kamra-plosca",
@@ -7577,9 +7577,9 @@ export const seedExhibits: SeedExhibit[] = [
     periodSi: "1914 · Celovec: Družba sv. Mohorja · Slovenske večernice, 68. zvezek",
     periodEn: "1914 · Celovec: St. Hermagoras Society · Slovene Večernice, vol. 68",
     summarySi:
-      "Edina doslej znana književna dogodivščina, postavljena v Griblje: povest Josipa Kostanjevca o gradnji vaške šole, oderuhu Lokvarju, modremu Jekovcu in učitelju Tratarju. Izšla je leta 1914 pri Družbi sv. Mohorja; celotno besedilo je danes prosto dostopno.",
+      "Prva od doslej znanih dveh književnih dogodivščin, postavljenih v Griblje: povest Josipa Kostanjevca o gradnji vaške šole, oderuhu Lokvarju, modremu Jekovcu in učitelju Tratarju. 22. val je ob njej postavil še drugo — povest »Bridke izkušnje« (Domoljub 1898, zapis bridke-izkusnje-1898). Izšla je leta 1914 pri Družbi sv. Mohorja; celotno besedilo je danes prosto dostopno.",
     summaryEn:
-      "The only known work of fiction set in Griblje: Josip Kostanjevec's tale of the building of the village school, the usurer Lokvar, the wise Jekovec and the teacher Tratar. Published in 1914 by the St. Hermagoras Society; the full text is freely available today.",
+      "The first of the two known works of fiction set in Griblje: Josip Kostanjevec's tale of the building of the village school, the usurer Lokvar, the wise Jekovec and the teacher Tratar. Val 22 raised beside it the second — the tale \"Bridke izkušnje\" (Domoljub 1898, record bridke-izkusnje-1898). Published in 1914 by the St. Hermagoras Society; the full text is freely available today.",
     storySi:
       "Med vsemi predmeti te zbirke je najbolj nenavadna tanka knjiga iz Celovca: oseminšestdeseti zvezek Slovenskih večernic, ki ga je leta 1914 izdala Družba sv. Mohorja. Njen naslov je Novo življenje, avtor učitelj in pisatelj Josip Kostanjevec (1864, Vipava – 1934, Maribor) — in njena prva stvarnost je zapisana z enim stavkom: »Na malem griču je čepela vas Griblje.«\n\nKostanjevec, vrstnik realizma, ki se je zgledoval pri Janku Kersniku, je zgodbo napel po žilah kmečke povesti: ob gradnji nove šole kmeta Antona Damjana zadene kap; sin Jakob pod pritiskom oderuha Lokvarja zapade v lenobo in skoraj izgubi dom; reši ga skupnost — modri starček Jekovec, čigar geslo je »Človek se mora učiti, dokler živi!«, in novi učitelj Ivan Tratar, ki Gribljanom v šoli nedeljskimi popoldnevi razlaga o kmetijskih strojih. Vaščani v šolskem poslopju ustanovijo okrajno posojilnico (predsednik Jekovec, tajnik Tratar), si priskrbijo mlatilnico in čistilnico za žito — oderuh pa umre od šoka, ko ugotovi, da mu je dolg poplačan. Povest se konča z Jakobovo poroko: novo življenje.\n\nZanj je zbirka citatov, ki bi lahko stali nad vsakim vaškim muzejem. Otroci so pred šolo hodili »v uro hoda oddaljeni Dol, po slabih stezah, čez trhle, nevarno se zibajoče brvi«. O šoli pa popotnik zasluti: »Ali ste to lepo poslopje napravili sami Gribljani?« — »Sami Gribljani, s svojimi žulji, s svojim znojem in po lastni pameti!« Vas je v povesti »komaj dvajset hiš, a ima šolo kakor palačo«.\n\nKje se končuje pisateljeva domišljija in kje se začenja Griblje? Zemljepis je resničen: šola, sodišče v Dolu, opeka iz bližnje opekarne (glina iz Goranje lokve!), zimski mraz ob mejni reki. Ustvarjene so osebe in strnjena je zgodovina — prava šola je stala že četrt stoletja, ko je knjiga izšla, in pravih Gribelj je bilo prek dvajsetih hiš. Kostanjevec v Beli krajini nikoli ni učil; od kod mu vas, ki jo je poimenoval po njenem pravem imenu, muzej ne ve. Zapis zato stoji na meji, ki jo zna natančno popisati: knjiga je dokumentirana, dogajališče je resnično, ljudje so literarni.\n\nSlovenske večernice so bile knjižna vrsta zase: poceni zvezki »za pouk in kratek čas«, ki so gribeljsko zgodbo nosili v slovenske hiše od Trsta do Prekmurja. Da je med njimi tudi Griblje, je bilo skoraj pozabljeno — dokler se besedilo ni vrnilo v javno last. Danes ga je mogoče prebrati v celoti; ta zapis pa prinaša njegovo naslovno stran, natisnjeno v Celovcu leta 1914.",
     storyEn:
@@ -7620,8 +7620,8 @@ export const seedExhibits: SeedExhibit[] = [
         sourceType: "arhiv",
         license: "javna last",
         url: WM("Josip_Kostanjevec_-_Novo_%C5%BEivljenje.pdf"),
-        noteSi: "Digitaliziran izvod; naslovna stran zapisa je izrez iz tega skena.",
-        noteEn: "A digitised copy; the record's title page is a crop from this scan.",
+        noteSi: "Digitaliziran izvod; naslovna stran zapisa je izrez iz tega skena. Naslovna stran skena izrecno nosi »68. zvezek. 1914.« (prebrano s skena 22. vala) — potrjuje leto in zvezek zapisa; metapodatki Wikivira (»69. zvezek, 1915«) so zmotni.",
+        noteEn: "A digitised copy; the record's title page is a crop from this scan. The scan's title page explicitly reads \"68. zvezek. 1914.\" (read from the scan in val 22) — confirming the record's year and volume; the Wikisource metadata ('69. zvezek, 1915') is erroneous.",
       },
       {
         key: "wiki-kostanjevec",
@@ -7632,6 +7632,18 @@ export const seedExhibits: SeedExhibit[] = [
         url: "https://sl.wikipedia.org/wiki/Josip_Kostanjevec",
         noteSi: "Učiteljišče Koper; služboval na Primorskem, v Litiji in Ljubljani; zgled Janko Kersnik.",
         noteEn: "Teacher-training college in Koper; served in the Littoral, Litija and Ljubljana; modelled on Janko Kersnik.",
+      },
+      {
+        key: "sbl-kostanjevec",
+        nameSi: "Novak, Vilko: Kostanjevec Josip — Slovenski biografski leksikon (ZRC SAZU)",
+        nameEn: "Novak, Vilko: Kostanjevec Josip — Slovene Biographical Lexicon (ZRC SAZU)",
+        sourceType: "objava",
+        license: "navedi vir / cite the source",
+        url: "https://www.slovenska-biografija.si/oseba/sbi293950/",
+        noteSi:
+          "SBL (22. val): pisatelj in učitelj, ★ 19. 2. 1864 Vipava, † 20. 5. 1934 Maribor — datumi v zapisu potrjeni s citiranim leksikonom.",
+        noteEn:
+          "SBL (val 22): writer and teacher, b. 19 Feb 1864 Vipava, d. 20 May 1934 Maribor — the record's dates corroborated by the cited lexicon.",
       },
     ],
   },
@@ -8615,6 +8627,69 @@ export const seedExhibits: SeedExhibit[] = [
           "»Med epidemijo covida-19 v kmetijskih organizacijah opozarjajo, da so odkupne cene kmetijskih surovin prenizke in v mnogih primerih ne pokrivajo več niti stroškov pridelave, maloprodajne cene pa se zvišujejo. Stanje je porazno, nam je potrdil kmet iz Gribelj v Beli krajini.« Video PENuY63B2Bs; pričevalec anonimen — status zapisa TESTIMONY.",
         noteEn:
           "'During the COVID-19 epidemic, agricultural organisations warn that the purchase prices of agricultural raw materials are too low and in many cases no longer cover even the costs of production, while retail prices are rising. The situation is disastrous, a farmer from Griblje in Bela krajina confirmed to us.' Video PENuY63B2Bs; the testifier is anonymous — the record's status is TESTIMONY.",
+      },
+    ],
+  },
+  {
+    slug: "bridke-izkusnje-1898",
+    museumNo: "MVG-109",
+    addedAt: "2026-09-22",
+    category: "kraj",
+    titleSi: "Bridke izkušnje (1898) — povest, ki prenoči v Gribljih",
+    titleEn: "Bridke izkušnje — Bitter Experiences (1898) — a tale that spends the night in Griblje",
+    featured: false,
+    periodSi: "1898 · Ljubljana: Domoljub, letn. 28, št. 14–17 in 19–21 · pod psevdonimom Pivčan",
+    periodEn: "1898 · Ljubljana: Domoljub, vol. 28, nos. 14–17 and 19–21 · under the pseudonym Pivčan",
+    summarySi:
+      "Druga doslej znana književna dogodivščina z Gribljami: pripoved, objavljena pod psevdonimom Pivčan v ljubljanskem poljudnem časopisu Domoljub leta 1898, ki na vaški trg postavi gostilno, trgovino z vinom po Hrvaškem in ognjišče Romov ob Kolpi.",
+    summaryEn:
+      "The second known work of fiction to touch Griblje: a tale published under the pseudonym Pivčan in the Ljubljana popular paper Domoljub in 1898, setting the village inn, a wine trade across Croatia and a Roma campfire by the Kolpa onto the village stage.",
+    storySi:
+      "Šestnajst let, preden je Josip Kostanjevec na majhnem griču »čepel« vas Griblje (zapis novo-zivljenje-1914), je gribeljska gostilna že stala v slovenskem tisku. Leta 1898 je ljubljanski poljudni časopis Domoljub — »slovenskemu ljudstvu v poduk in zabavo« — objavil povest Bridke izkušnje, podpisano s psevdonimom Pivčan; izhajala je v zvezkih 14–17 in 19–21 osemindvajsetega letnika, kar pomeni, da je bila dovolj dolga, da je bralec čakal naslednjo številko. In njen potopisni del je napravil nekaj, kar v slovenski literaturi ni storil še nihče pred njo: pripeljal je branilce čez Kočevje in Koprivnik — in jih ponočil v Gribljih.\n\nVozniki v pripovedi res pripotujejo: »Dospevši onkraj Postojne zavijejo po občinski cesti na Ribnico, kjer se ustavijo čez poldne. Nato vozijo čez Kočevje, Koprivnik in dospejo proti večeru do vasi Griblje.« In nato en stavek, ki je za muzej kot iz punce rok narejen: »Bili so na meji.« Pot je prava: stare ceste iz Kočevske čez Koprivnik v Belo krajino se spustijo ravno sem — k eni od najbolj mejnih vasi dežele. Gostitelj pa je literaren: »Tu v Gribljah imam prijatelja Grozdiča … Najpremožnejši je v vasi, in gostilna slovi daleč na okoli. Z vinom trguje po vsem Hrvaškem in Slavoniji. V Daruvaru se vedno oglasi pri nas.«\n\nTukaj je ta zapis najbolj iskren: Grozdičev priimek muzej ne pozna; v gribeljskih virih ga ni. Ampak njegova gostilna je zgodovinsko zelo verjetna: vaška krčma, ki »slovi daleč na okoli«, in trgovina z vinom proti Zagrebu in Slavoniji — to je vzorec, ki ga dokumentirajo tudi drugi viri zbirke (Jure Županič je v Gribljih držal trgovino in gostilno; vino in črnina — zapis vino-in-crnina — je gribeljska kombinacija za belokranjske mize). Pred veliko lepo hišo »z veho nad vratmi« se torej ne ustavi samo voz, ampak tudi verjetnost: 1898 je v Gribljah gostilna lahko stala; ali je bila pri Grozdiču, ne moremo vedeti.\n\nTretja scena pa pripoved postavi na breg reke: ciganka, ki je opazovala voz, »zavije navzdol proti Kolpi. Tu je ob obrežju na zeleni trati sedela okoli ognja tolpa ljudij« — Romi, ki so v 19. stoletju taborili ob kolpskih travnikih, njihova zgodba o Daruvarju in maščevanju pa razpihne nočno pripoved. Muzej to priznanje piše z dvema zvezkama: besedilo iz leta 1898 je pisano s stereotipi svojega časa — in hkrati je to ena od najzgodnejših omemb taborjenja Romov ob Kolpi pri Gribljih v slovenskem leposlovju. Vsaj tisto, kar muzej preveri, mora biti jasno: ognjišče je literarno, breg je pravi.\n\nKdo je bil Pivčan, muzej ne ve. Psevdonim v wikipedistični razlagi ni vezan na znano osebo; Domoljub je objavljal anonimne in psevdonimne domoznanske prispevke. To je vrzel, ki jo ta zapis izrecno priznava: knjiga je dokumentirana (celotno besedilo je prebrano po Wikiviru, izvodi pa digitalizirani v dLibu), objava je izpričana, dogajališče je resnično, avtor pa je ime, ki se je umaknilo. Po opombi Wikivira je besedilo pregledalo več urejevalcev in je brez tipkarskih napak — tisto, kar muzej lahko naredi, je, da ga vrne v vaško zgodbo, kjer je nastalo.\n\nSkupaj z Kostanjevčevo povesto tako gribeljska književnost ne stoji več na enem naslovu: dve deli, šestnajst let narazen, ena vas — ena z gradnjo šole in oderuhom, druga z gostilno, vinom in ognjiščem ob reki. Muzej išče: dejansko identiteto Pivčana in datum prve tiskane gostilne v Gribljih (župnijska in hišna knjiga).",
+    storyEn:
+      "Sixteen years before Josip Kostanjevec had the village of Griblje 'sit' on a small hill (record novo-zivljenje-1914), the Griblje inn already stood in the Slovene press. In 1898 the Ljubljana popular paper Domoljub — 'for the instruction and amusement of the Slovene people' — published the tale Bridke izkušnje (Bitter Experiences), signed with the pseudonym Pivčan; it ran across instalments 14–17 and 19–21 of volume twenty-eight, which means it was long enough to make readers wait for the next issue. And its travel section did something no one in Slovene literature had done before: it brought its readers over Kočevje and Koprivnik — and lodged them for the night in Griblje.\n\nThe travellers in the tale really do travel: 'Having passed beyond Postojna they turn onto the district road to Ribnica, where they stop for midday. Then they drive on through Kočevje, Koprivnik and by evening reach the village of Griblje.' And then one sentence made, as it were, for a museum: 'Bili so na meji. They were at the border.' The road is real: the old routes from the Kočevsko region across Koprivnik into Bela krajina descend exactly here — to one of the most border-bound villages of the land. The host, however, is literary: 'Here in Griblje I have a friend, Grozdič … He is the richest man in the village, and the inn is famed far around. He trades wine across all Croatia and Slavonia. He is always to be found among us at Daruvar.'\n\nHere the record is at its most honest: the museum does not know the name Grozdič; it does not appear in the village's sources. But his inn is historically very plausible: a village tavern 'famed far around', a wine trade towards Zagreb and Slavonia — this is the pattern other sources of the collection also document (Jure Županič kept a shop and an inn in Griblje; wine and darkness — the record vino-in-crnina — is the Griblje pairing for Bela krajina tables). So it is not only a wagon that stops before 'a big fine house with a wreath above the door' — it is also plausibility: in 1898 an inn could well have stood in Griblje; whether it was Grozdič's, we cannot know.\n\nThe third scene sets the tale on the riverbank: a Gypsy woman who watched the wagon 'turns away downhill towards the Kolpa. There on the green grass by the water sat a company of people around a fire' — Roma who in the 19th century camped on the Kolpa meadows, and their tale of Daruvar and revenge sets the night narrative alight. This museum notes it with two notebooks: the 1898 text is written with the stereotypes of its time — and at the same time it is one of the earliest mentions of Roma camping by the Kolpa near Griblje in Slovene fiction. At least what the museum can verify must be clear: the campfire is literary, the riverbank is real.\n\nWho Pivčan was, the museum does not know. The pseudonym is not tied to any known figure; Domoljub published anonymous and pseudonymous local contributions. That is a gap this record openly admits: the tale is documented (the full text read via Wikisource, the issues digitised in dLib), the publication attested, the setting real — while the author remains a name that withdrew. Per the Wikisource note the text was proofread by several editors and is free of typographical errors — and what the museum can do is return it to the village story where it was born.\n\nTogether with Kostanjevec's tale, Griblje's literature no longer rests on a single title: two works, sixteen years apart, one village — one with the building of the school and a usurer, the other with an inn, wine and a campfire by the river. The museum is looking for: the actual identity of Pivčan, and the date of the first recorded inn in Griblje (parish and house registers).",
+    evidenceStatus: "DOCUMENTED",
+    lat: 45.5728,
+    lng: 15.2926,
+    coordsApprox: true,
+    yearFrom: 1898,
+    yearTo: 1898,
+    sources: [
+      {
+        key: "wikisource-bridke-izkusnje",
+        nameSi: "Wikivir: Bridke izkušnje — celotno besedilo",
+        nameEn: "Wikisource: Bridke izkušnje — the complete text",
+        sourceType: "objava",
+        license: "javna last",
+        url: "https://sl.wikisource.org/wiki/Bridke_izku%C5%A1nje",
+        noteSi:
+          "Vsi citati zapisa (»Bili so na meji«, »Najpremožnejši je v vasi…«, »Z vinom trguje po vsem Hrvaškem in Slavoniji«, »zavije navzdol proti Kolpi«) preverjeni po besedilu; metapodatki: Domoljub 1898 (št. 14–17, 19–21), avtor Pivčan (psevdonim), 100 % pregledano.",
+        noteEn:
+          "All the record's quotations (\"Bili so na meji\", \"The richest man in the village…\", \"He trades wine across all Croatia and Slavonia\", \"turns away downhill towards the Kolpa\") verified against the text; metadata: Domoljub 1898 (nos. 14–17, 19–21), author Pivčan (pseudonym), 100% proofread.",
+      },
+      {
+        key: "domoljub-1898-dlib",
+        nameSi: "dLib: Domoljub, letn. 28, 1898 (št. 14–17, 19–21) — skeni izvirnika",
+        nameEn: "dLib: Domoljub, vol. 28, 1898 (nos. 14–17, 19–21) — scans of the original",
+        sourceType: "arhiv",
+        license: "javna last",
+        url: "http://www.dlib.si/?URN=URN:NBN:SI:DOC-VMHV8D26",
+        noteSi:
+          "Digitalizirani izvodi revije (7 zvezkov: VMHV8D26, NTBTE8XR, DF9FXOUJ, WFWJGHBH, B9S5HH4Z, E2998DOJ, JYAMM6P5); dLib strežniki za ta zapis peskovniško nedostopni — sken strani z omembo TO_COLLECT.",
+        noteEn:
+          "Digitised issues of the journal (7 volumes: VMHV8D26, NTBTE8XR, DF9FXOUJ, WFWJGHBH, B9S5HH4Z, E2998DOJ, JYAMM6P5); dLib servers unreachable from the sandbox for this record — page scan with the mention TO_COLLECT.",
+      },
+      {
+        key: "wiki-domoljub-casnik",
+        nameSi: "Wikipedija: Domoljub (časnik) — okvir objave",
+        nameEn: "Wikipedia: Domoljub (newspaper) — the frame of publication",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikipedia.org/wiki/Domoljub_(%C4%8Dasnik)",
+        noteSi:
+          "Ljubljana 1888–1944; do 1906 dvakrat mesečno; sprva priloga Slovenca, od 1897 samostojno — revija, ki je gribeljsko zgodbo 1898 razdelila na sedem zvezkov »slovenskemu ljudstvu v poduk in zabavo«.",
+        noteEn:
+          "Ljubljana 1888–1944; twice monthly until 1906; first a supplement of Slovenec, independent from 1897 — the journal that divided the Griblje tale of 1898 into seven instalments 'for the instruction and amusement of the Slovene people'.",
       },
     ],
   },

@@ -257,11 +257,11 @@ for (const b of OBJECT_BIOGRAPHIES) {
   }
 }
 
-if (exN === 108) ok("108/108 zapisov"); else err(`zapisov: ${exN}`);
-if (mvgN === 108) ok("108/108 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 537) ok("537 vrstic virov"); else err(`vrstic virov: ${srcN}`);
-if (identities === 426) ok("426 identitet virov (21. val: +10 — Vaš kanal: 3 novi zapisi (lokostrelstvo, komasacija, odkupne cene) + 6 add-only virov + 1 WP)"); else err(`identitet: ${identities}`);
-if (shared === 60) ok("60 deljenih virov"); else err(`deljenih: ${shared}`);
+if (exN === 109) ok("109/109 zapisov"); else err(`zapisov: ${exN}`);
+if (mvgN === 109) ok("109/109 muzejskih številk"); else err(`MVG: ${mvgN}`);
+if (srcN === 541) ok("541 vrstic virov"); else err(`vrstic virov: ${srcN}`);
+if (identities === 429) ok("429 identitet virov (22. val: +4 nova virov, -1 koren slovenska-biografija.si: sbl-zupanic prebrisan na natančno osebno stran sbi915246)"); else err(`identitet: ${identities}`);
+if (shared === 61) ok("61 deljenih virov (sbi915246 zdaj pravično deljen: niko-zupanic + katarina-zupanic)"); else err(`deljenih: ${shared}`);
 if (phases === 372) ok("372 biografskih faz"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
 
