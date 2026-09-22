@@ -4822,6 +4822,47 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
       },
     ],
   },
+  {
+    slug: "srednje-njive",
+    phases: [
+      {
+        stage: "nastanek",
+        yearLabelSi: "pozna bronasta doba",
+        yearLabelEn: "Late Bronze Age",
+        sortYear: -1000,
+        textSi:
+          "Na ravnini pri Gribljih stoji nižinska naselbina; nad njo se po vzorcu, ki ga zapiše Arheološki vestnik 71 (2020), dvigne gradišče Kučar.",
+        textEn:
+          "A lowland settlement stands on the plain at Griblje; above it, in the pattern recorded by Arheološki vestnik 71 (2020), rises the hillfort of Kučar.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+      {
+        stage: "zivljenje",
+        yearLabelSi: "2001",
+        yearLabelEn: "2001",
+        sortYear: 2001,
+        textSi:
+          "Philip Mason v Varstvu spomenikov 39 (str. 10) popisuje nižinske komplekse Bele krajine — naselbina pri Gribljih dobi ime po njivah: Srednje njive.",
+        textEn:
+          "Philip Mason, in Varstvo spomenikov 39 (p. 10), surveys the lowland complexes of Bela krajina — the settlement at Griblje takes its name from the fields: Srednje njive.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 1,
+      },
+      {
+        stage: "danes",
+        yearLabelSi: "2020",
+        yearLabelEn: "2020",
+        sortYear: 2020,
+        textSi:
+          "Recenzirani članek v Arheološkem vestniku 71 (str. 421–434) navedbo prevzame po imenu — vaška ravnina ima v strokovni literaturi imenovano poznobronastodobno naselbino.",
+        textEn:
+          "The peer-reviewed article in Arheološki vestnik 71 (pp. 421–434) takes over the note by name — the village plain has a named Late Bronze Age settlement in the scholarly literature.",
+        evidenceStatus: "DOCUMENTED",
+        sourceIndex: 0,
+      },
+    ],
+  },
 ];
 
 export function getBiography(slug: string): ObjectBiography | undefined {

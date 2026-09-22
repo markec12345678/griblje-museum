@@ -50,6 +50,13 @@ export const WALKS: Walk[] = [
           "Before the mills, before the church, before writing: people lived by this river for five thousand years. Beneath the fields by the Kolpa lie settlements from the Neolithic to the Romans — registered heritage, tilled by the plough.",
       },
       {
+        exhibitSlug: "srednje-njive",
+        noteSi:
+          "Ravnina ima tudi ime v strokovni literaturi: Srednje njive — poznobronastodobna naselbina, nad katero se dviga gradišče Kučar. Prva imenovana prazgodovinska lokacija na vaških njivah.",
+        noteEn:
+          "The plain has a name in the scholarly literature too: Srednje njive — a Late Bronze Age settlement beneath the rising hillfort of Kučar. The first named prehistoric location on the village fields.",
+      },
+      {
         exhibitSlug: "bronasta-igla-a478",
         noteSi:
           "Iz teh njiv je prišel tudi prvi imenovani predmet: bronasta igla s profilirano glavico (inv. A 478, 19,6 cm), objavljena leta 1979 v Dularjevi študiji o Borštu — pet tisoč let pod plugom ima svoje ime.",

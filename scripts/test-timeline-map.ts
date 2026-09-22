@@ -441,12 +441,12 @@ section("T6 — KURATORSKA VARNOST: identitete se NIKOLI ne združijo");
 // ===========================================================================
 section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
-  check(seedExhibits.length === 112 && new Set(seedExhibits.map((e) => e.museumNo)).size === 112, "T7.1 112 zapisov, 112 MVG številk (29. val: + nemastoma-gruberi)");
+  check(seedExhibits.length === 113 && new Set(seedExhibits.map((e) => e.museumNo)).size === 113, "T7.1 113 zapisov, 113 MVG številk (34. val: + srednje-njive)");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 565, "T7.2 565 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 447, "T7.3 447 identitet virov (33. val: URL obstoječemu viru — ključ ime → url, števec nespremenjen)", `=${SOURCE_USAGE.size}`);
+  check(rows === 567, "T7.2 567 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 448, "T7.3 448 identitet virov (34. val: +1 — av71-2020 z DOI; mason-2001 deljen)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
-  check(shared === 65, "T7.4 65 deljenih virov (≥2 zapisa; 26. val: +1 — Cabin URL med MVG-016/069)", `=${shared}`);
+  check(shared === 66, "T7.4 66 deljenih virov (≥2 zapisa; 34. val: +1 — mason-2001 med MVG-083/113)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
   const wcRows = seedExhibits.flatMap((ex) =>
     ex.sources
@@ -463,7 +463,7 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
     "T7.5 WorldCat 821110335: 2 vrstici (različni imeni, isti URL) → 1 sourceKey + usedBy 2 (MVG-082 + MVG-089)"
   );
   const phases = OBJECT_BIOGRAPHIES.reduce((n, b) => n + b.phases.length, 0);
-  check(phases === 372 && OBJECT_BIOGRAPHIES.length === 93, "T7.6 93 biografij / 372 faz (NISO dogodki)", `=${OBJECT_BIOGRAPHIES.length}/${phases}`);
+  check(phases === 375 && OBJECT_BIOGRAPHIES.length === 94, "T7.6 94 biografij / 375 faz (NISO dogodki)", `=${OBJECT_BIOGRAPHIES.length}/${phases}`);
 
   let minRelated = Number.POSITIVE_INFINITY;
   let allRelated = true;
@@ -475,11 +475,11 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
   check(allRelated && minRelated >= 5, "T7.7 relatedExhibits: vsi ≥1 (min 5) — kuratorski graf OBJECT ↔ OBJECT nedotaknjen", `min=${minRelated}`);
 
   const walkCover = seedExhibits.filter((ex) => walkStopOf(ex.slug) != null).length;
-  check(walkCover === 112 && ALL_WALKS.length >= 5, "T7.8 walkStopOf pokriva vseh 112 zapisov (sprehodi: 49. sklop + postaja precanje-pri-gribljih + 7. val: razsvetljava/pogača + 58. sklop: trije ljudje + 68. sklop: TULV/pajek/tranzit + 70. sklop: lokostrelstvo/komasacija/odkupne cene + 73. sklop: turski-vpadi-1524/grybl-cevljar + 79. sklop: nemastoma-gruberi)", `=${walkCover}`);
+  check(walkCover === 113 && ALL_WALKS.length >= 5, "T7.8 walkStopOf pokriva vseh 113 zapisov (sprehodi: 49. sklop + postaja precanje-pri-gribljih + 7. val: razsvetljava/pogača + 58. sklop: trije ljudje + 68. sklop: TULV/pajek/tranzit + 70. sklop: lokostrelstvo/komasacija/odkupne cene + 73. sklop: turski-vpadi-1524/grybl-cevljar + 79. sklop: nemastoma-gruberi + 86. sklop: srednje-njive)", `=${walkCover}`);
 
   const withTime = seedExhibits.filter((e) => e.yearFrom != null).length;
   const withCoords = seedExhibits.filter((e) => e.lat != null && e.lng != null).length;
-  check(withTime === 99 && withCoords === 36, "T7.9 objektov s časom (yearFrom) = 99; s koordinato = 36", `=${withTime}/${withCoords}`);
+  check(withTime === 100 && withCoords === 36, "T7.9 objektov s časom (yearFrom) = 100; s koordinato = 36", `=${withTime}/${withCoords}`);
 
   // i18n: 946 ključev × 5 jezikov, identična struktura (ista logika kot verify-i18n;
   // število je zraslo z 41. sklopom — curator razdelek + curatorAsks — in
@@ -522,7 +522,7 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       if (r.status === 200) okPages += 1;
       else badPages.push(ex.slug + ":" + r.status);
     }
-    check(okPages === 112, "T8.1 112/112 objektnih strani", `${okPages}; ${badPages.join(",") || "vse 200"}`);
+    check(okPages === 113, "T8.1 113/113 objektnih strani", `${okPages}; ${badPages.join(",") || "vse 200"}`);
 
     let okManifests = 0;
     let withSources = 0;
@@ -533,7 +533,7 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       if ((j.metadata ?? []).some((m) => JSON.stringify(m.label).includes("Vir"))) withSources += 1;
       okManifests += 1;
     }
-    check(okManifests === 112 && withSources === 112, "T8.2 112/112 IIIF manifestov z ≥1 virom", `${okManifests}/${withSources}`);
+    check(okManifests === 113 && withSources === 113, "T8.2 113/113 IIIF manifestov z ≥1 virom", `${okManifests}/${withSources}`);
 
     const od = (await (await fetch(BASE + "/api/opendata")).json()) as {
       counts?: { exhibits?: number; sources?: number };
@@ -548,11 +548,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 112 && od.counts?.sources === 565,
-      "T8.3 OpenData: 112 zapisov / 565 virov",
+      od.counts?.exhibits === 113 && od.counts?.sources === 567,
+      "T8.3 OpenData: 113 zapisov / 567 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 565 && totalRows === 565, "T8.4 OpenData sourceKey 565/565", `${withKey}/${totalRows}`);
+    check(withKey === 567 && totalRows === 567, "T8.4 OpenData sourceKey 567/567", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
@@ -563,7 +563,7 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
 
     const sm = await (await fetch(BASE + "/sitemap.xml")).text();
     const locs = (sm.match(/<loc>/g) ?? []).length;
-    check(locs === 113, "T8.7 sitemap: 113 URL", `=${locs}`);
+    check(locs === 114, "T8.7 sitemap: 114 URL", `=${locs}`);
 
     const home = await fetch(BASE + "/");
     check(home.status === 200, "T8.8 domača stran → " + home.status);
