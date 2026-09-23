@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Naslovni napisi (dobesedno):**\n\n*   **Številka lista (desno zgoraj):** `QIX 24 c g` (ročno zapisano)\n*   **Ime občine (zgoraj):** `Siehe die Reambulirungs Buimappe`\n*   **Okrožje/Območje:** Ni izrecno napisano kot »okrožje«, vendar je velika napisana beseda ob desnem robu: **`ADLESCHITZ`** (sodobno Adlešiči).\n*   **Datum:** Ni vidnega datuma v glavi lista; na dnu je le navedba o reviziji.\n*   **Izmeritelj (dno):** `Vermittelt durch den Steuerflammen-Inspector von Altenburg.`\n*   **Revizija (dno, desno):** `Aufgenommen und berechnet durch Knittelmann.` (podpisano s črko, morda **K** ali **R**, v krogu).\n\n---\n\n**1) Toponimi (najbolj berljivi):**\n\n*   **Schlatoviz / Schlatovič** (zgoraj levo)\n*   **na Rebar** (zgoraj desno)\n*   **Peran** (sredina zgoraj)\n*   **na Bište / na Biste** (sredina desno)\n*   **Mali grani** (desno, sredina)\n*   **Žerjavc / Žeravuz** (desno, pod Malim granim)\n*   **Golčna / Goluha** (skrajno desno zgoraj)\n*   **Bresnik / Bresnuk** (spodnja sredina)\n*   **Zibonik / Zibenik** (desno od Bresnika)\n*   **WEIDENDORF** (spodaj, veliko; sodobno Griblje – *Weiden*dorf = vas pri vrbah)\n*   **Schumski Damm / Schumshie Damm** (spodaj, ob Weidendorfu)\n*   **Na Lože** (spodaj levo)\n*   **Na Breze / Na Brezo** (spodaj desno)\n\n---\n\n**2) Sosednje katastrske občine / meje:**\n\n*   **Desni rob:** Velika črka po vertikali: **ADLESCHITZ** (k.o. Adlešiči). To je hkrati tudi **državna meja** (z Hrvaško), kar nakazuje tudi napis *Zeichnung par Grenze* (risanje po meji) ob spodnjem delu te meje.\n\n---\n\n**3) Stavbe in objekti:**\n\n*   **Cerkev / kapela:** **NAPISANO NI VIDNO** (na tem listu ni označene cerkve ali kapele z znakom ✠ ali podobnim).\n*   **Gostilna (Gasthaus/Wirtshaus/Schenke/Krug):** **NAPISANO NI VIDNO** (ni vidne oznake za gostilno, niti napisa *Wirth*, *Schenke*, *Krug* itd.).\n*   **Mlin:** **NAPISANO NI VIDNO** (ni vidnega simbola za mlin niti napisa *Mühle*).\n*   **Javna stavba:** **NAPISANO NI VIDNO**.\n\n*(Opomba: Na listu so vidne samo hiše (označene s črnimi pikami/trikotniki), vendar brez posebnih atributov, ki bi jih identificirale kot zgornje objekte.)*\n\n---\n\n**4) Odnos lista do vasi Griblje:**\n\nList prikazuje **katastrsko občino N83 Griblje**, ki je na samem listu poimenovana z nemskim imenom **WEIDENDORF** (slovensko *Griblje* – etimološko povezano z *griba* ali pa gre za prevod/poimenovanje »vas pri vrbah«). \n\nVas **Weidendorf/Griblje** je locirana na **spodnjem (južnem) delu** lista, pri čemer je njeno jedro označeno z veliko tiskano pisavo **WEIDENDORF**. Severno od vasi ( proti sredini in severu lista) se razprostirajo njive in pašniki (toponimi *Bresnik*, *na Bište*, *Peran*, *Schlatovič* itd.), ki pripadajo tej isti katastrski občini. Desna meja katastralne občine sočasno predstavlja mejo s katastrsko občino **Adlešici (Adleschitz)** in državno mejo.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790174555,
+  "id": "20260923224158ab098f8a59764157",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260923224158ab098f8a59764157",
+  "usage": {
+    "completion_tokens": 1145,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5939,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7084
+  }
+}

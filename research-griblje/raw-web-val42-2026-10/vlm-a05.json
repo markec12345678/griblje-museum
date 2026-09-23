@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je dobesedni prepis naslovnih napisov in odgovori na postavljena vprašanja na podlagi prikazane karte:\n\n**Naslovni napisi (dobesedno):**\n*   **Številka lista (zgoraj desno):** OIX 24ch\n*   **Ime občine / napisi zgoraj:** *Siche der Reambulirungs-Beimappe*\n*   **Datum:** NAPISANO NI VIDNO (na vidnem delu ni datuma)\n*   **Izmeritelj (spodaj desno):** *Aufgenommen und bezeichnet durch Wukangigk.* (podpis: *Wukangigk*)\n*   **Revizija (spodaj levo):** *Revidirt durch den Hauptmannschen Inspector von Blumenegg.*\n\n**1) Toponimi (krajevna imena), ki so vidni na listu:**\n*   *Pri Janbovičih*\n*   *Schamsho Traverne* (ali *Schamsche Traverne*)\n*   *Vratatschitsch Dg.*\n*   *Na Prago Zdolcg* (ali *Na Prago Ždolec*)\n*   *Stüze Vardianove*\n\n**2) Sosednje katastrske občine (k.o.) / državne meje ob robovih:**\nOb robu zemljevida teče meja, označena z velikimi črkami:\n*   **Zahodna in južna meja:** *W A U E N D O R F* (k.o. Vavhen Dorf / Vavendof)\n*   **Vzhodna in severovzhodna meja:** *A D D L E S C H I T T E N* (k.o. Adleschitten / Adlešiči)\n\n**3) Stavbe in objekti:**\n*   **Cerkev / kapela:** NAPISANO NI VIDNO (ni vidnega znaka za cerkev ali kapelo)\n*   **Gostilna (Gasthaus/Wirtshaus):** **VIDNA** – *Schamsho Traverne* (označena na zahodnem robu)\n*   **Mlin:** NAPISANO NI VIDNO (ni vidnega znaka za mlin)\n*   **Javna stavba:** NAPISANO NI VIDNO\n\n**4) Odnos lista do vasi Griblje:**\nVas Griblje je na listu prikazana kot **naselje v sredini** (oziroma zavzema osrednji in vzhodni del prikazanega območja, kjer so goste hišne številke).\n\n**5) Naselje (hiše):**\n**Ja**, na listu je prikazano naselje (razločeni so posamezni stavbni kompleksi/hiše s številkami).\n*   **Približno število hiš:** Na osrednjem in vzhodnem delu (vas Griblje / Pri Janbovičih) je **približno 40–50** različno oštevilčenih hišnih parcel (stavbnih zemljišč). Na zahodnem delu (*Pri Janbovičih*) je še približno 5–10 samostojnih hiš. Skupaj je na listu vidnih **okoli 50–60 hiš**.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790174640,
+  "id": "2026092322433251655c15a26c484a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092322433251655c15a26c484a",
+  "usage": {
+    "completion_tokens": 822,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5941,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6763
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je dobesedni prepis zadnjih 4 vrstic (črka za črko, v originalni Kurrent ortografiji):\n\n**Vrsta 1 (poklici):**\n`Einigen gantz Armen Dienstbößigen Bauersleuten zinspflicht 44 — 6 Ackerbößige,`\n\n**Vrsta 2 (nadaljevanje poklicev):**\n`neunliche 5[?]e Grüblerl mit 9[?]en Kindern und 1 Leinweber, — 9 Häuslmacher,`\n\n**Vrsta 3 (objekti – mlin in šola):**\n`in Gänseübung das lothfamend, ein Schmiedhaus[?], — 9 neun bis zehn Schäf-`\n\n**Vrsta 4 (zaključek):**\n`Mühle ohne Ackerland find.`\n\n---\n\n### Odgovori na posebna vprašanja:\n\n**1) Seznam poklicev (točno kot piše):**\n*   **Einigen gantz Armen Dienstbößigen Bauersleute** – *44* (št. 44 je napisano)\n*   **Ackerbößige** – *6*\n*   **Grüblerl** – *5[?]* (prva številka je morda 5 ali S, druga črka je nedoločljiva, sledi \"mit 9[?]en Kindern\")\n*   **Leinweber** – *1*\n*   **Häuslmacher** – *9*\n\n*Opomba:* Besede **Hauswirthe**, **Zimmermann**, **Schneider**, **Bürger**, **Wirth** se v tem odlomku **NE** pojavijo.\n\n**2) Iskanje besed WIRTH / WIRTHSHAUS / GASTHAUS / TAVERNE itd.:**\n**NEGATIVEN ZADETEK.** Nobena od iskanih besed (**Wirth**, **Wirthshaus**, **Gasthaus**, **Taferne**, **Taverne**, **Schenke**, **Krug**) se v prikazanem besedilu **ne pojavi**.\n\n**3) O MÜHLE (mlin):**\nZadnja vrstica se končuje z:  \n**...neun bis zehn Schaf-Mühle ohne Ackerland find.**  \n(tj. »...devet do deset ovčjih [?] mlinov brez zemljišča najdemo«).  \n*Opomba:* Med \"Schaf-\" in \"Mühle\" je pomik v novo vrstico; beseda pred \"Mühle\" je verjetno \"Schaf\" (ovčji), čeprav je pisanje zelo težko berljivo in bi lahko bilo tudi drugačno pridevnikovo določilo.\n\n**4) O SCHULE (šola) in Lehrer (učitelj):**\nBesedi **Schule** in **Lehrer** se v prikazanem odlomku **NE** pojavita.  \nV tretji vrstici namesto tega stoji: **ein Schmiedhaus[?]** (»jedna kovačnica« – zadnji del besede je nejasen, lahko tudi Schmiedhütt[?] ali podobno), kar pa ni šola.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790175470,
+  "id": "2026092322572764576a31ea4344a8",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092322572764576a31ea4344a8",
+  "usage": {
+    "completion_tokens": 773,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6045,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 6818
+  }
+}

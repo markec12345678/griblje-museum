@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi priloženih slik (naslovnica in stran 1) katastrskega cenilnega elaborata za k.o. N83 Griblje/Grüble so odgovori na vaša vprašanja:\n\n**1) Naslovi obeh strani:**\n*   **Stran 0 (naslovnica):**  \n    **CATASTRAL-SCHÄTZUNGS-ELABORAT**  \n    *Z nadpisi:* Land Krain. 83. Schätzung District No 2 / Kreis Neustadtl, Steuerbezirk **Kruppe** / der Gemeinde **Grüble**.\n*   **Stran 1:**  \n    Levi rob: **Gränzen** (Meje), **Bevölkerung** (Prebivalstvo).  \n    Vsebina: **§ 2** (meje občine), **§ 3** (podatki o prebivalstvu iz konskripcij-revizij-registracij leta 1830).\n\n**2) Kaj dokument vsebuje (glede na prikazane strani):**\nDokument je **rokopisni** (handgeschr.) katastrski cenilni elaborat. Na prikazanih straneh **še ne vsebuje** cenitev kultur, bonitetnih razredov ali pridełkov – to so podatki, ki bi se pojavili na kasnejših straneh elaborata (tabelarični del). Tukaj sta zabeležena samo:\n*   Opis meja občine (sosednje katastralne občine/posesti).\n*   Statistični pregled prebivalstva (število duš, hiš, družin) iz leta 1830 ter opis lokalnih razmer (poklici, šolstvo, industrija).\n\n**3) Katere kulture omenja:**\n**Nobene.** Na teh dveh straneh ni omenjenih nobenih kultiviranih zemljišč (ne Acker, Wiesen, Weinberge, Wald, Hutweide niti drugih).\n\n**4) Kakšna števila (ha/jutra, cene):**\n*   **Površinske enote (ha/jutra):** Ni navedenih.\n*   **Cene:** Ni navedenih.\n*   **Številke, ki so prisotne:**\n    *   **83** (številka katastra/okrožja),\n    *   **2** (številka ocenitvenega distrikta),\n    *   **322** (število \"Männlichen\" – moških/duš),\n    *   **219** (število \"Weibspersonen\" – žensk/duš),\n    *   **541** (skupno število \"Seelen\" – duš),\n    *   **70** (število hiš/domov),\n    *   **102** (število družin),\n    *   **1830** (leto konskripcije),\n    *   **5, 6, 11, 12, 16, 19, 18, 20, 22, 23, 24** (številke parcel/hišnih številk na dnu naslovnice).\n\n**5) Ali omenja Traverne/Gasthaus/Wirtshaus/Mühle/Kirche?**\n**Ne.** Na prikazanih straneh ni omenjena nobena od navedenih stavb (gostilna, mljn, cerkev itd.). Besedilo omenja le splošne dejavnosti prebivalstva (poljedelstvo, živinoreja, \"Industrie\" – verjetno domače obrti) in obstoj šole (\"Schule\").\n\n**NEGATIVEN ZADETEK** – Dokument na tem mestu (strani 1–2) ne vsebuje iskanih podatkov o kulturah, površinah, cenah ali stavbah; predstavlja samo uvodni opisni del (meje in demografija).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790175286,
+  "id": "202609232254148fba79c79e574091",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609232254148fba79c79e574091",
+  "usage": {
+    "completion_tokens": 971,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1393,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2364
+  }
+}

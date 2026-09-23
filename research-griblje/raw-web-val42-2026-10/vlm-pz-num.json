@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi preučitve rokopisne slike (Kurrent pisava, ok. 1826–1830) so podatki o prebivalstvu naslednji:\n\n**1) Leto (Conscriptions-Revisionen vom Jahre ...):**  \n**1830**  \n*(V besedilu jasno piše: »...vom **Jahre 1830** und«.)*\n\n**2) Männlichen (moški):**  \n**222**\n\n**3) Weiblichen (ženske):**  \n**219**\n\n**4) Zusammen / Seelen (skupaj / duše):**  \n**441**  \n*Preverjanje vsote:* 222 + 219 = **441** (vsota se ujema).\n\n**5) Häusern (hiše):**  \n**72**  \n*(V besedilu: »...in **72 Häusern«)*\n\n**6) Familien (družine):**  \n**102**  \n*(V besedilu: »...und **102 Familien«)*\n\n---\n\n**Opomba:** Vse številke so v rokopisu zapisane jasno in brez dvoma. Vsota moških in žensk (222 + 219 = 441) se popolnoma ujema z navedeno skupno številko prebivalstva (»Zusammen 441 Seelen«). Število hiš (72) in družin (102) sta tudi jasno berljiva.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790175515,
+  "id": "202609232258202e5d53509b3043dd",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609232258202e5d53509b3043dd",
+  "usage": {
+    "completion_tokens": 345,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5978,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6323
+  }
+}

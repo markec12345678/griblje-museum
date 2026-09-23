@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>VAČ - Virtualna Čitalnica</title>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/fonts/style.css" />
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/js/jstree.3.3.7/themes/default/style.css" />
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac.css"></link>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac_Default.css" title="default"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnWhite.css" title="blackOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_WhiteOnBlack.css" title="whiteOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnBeige.css" title="blackOnBeige"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnWhite.css" title="blueOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnGreen.css" title="blackOnGreen"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnYellow.css" title="blackOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnYellow.css" title="blueOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_YellowOnBlue.css" title="yellowOnBlue"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_TurquoiseOnBlack.css" title="turquoiseOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnPink.css" title="blackOnPink"></link>
+<link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/themes/smoothness/jquery-ui.css">
+    </link>
+
+<!-- <script src="/js/jquery-3.3.1.js"></script> -->
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/i18n/jquery-ui-i18n.min.js"></script>
+<script src="https://prostor.sjas.gov.si//gms-sdk.js" data-sdk-version="4"></script>
+
+
+    <script>
+/*<![CDATA[*/
+var errMsgDefault = "Pri\u0161lo je do napake. Obrnite se na skrbnika sistema.";
+var defaultLocale = "sl";
+var currentLocale = "sl";
+/*]]>*/
+</script>
+
+<script src="/js/Popper.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+<script src="/js/vac.js"></script>
+    
+
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/jstree.3.3.7/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<!-- <script src="/js/jspdf-1.5.3/jspdf.min.js"></script> -->
+
+<style>
+/*body {
+    font-family: ;
+    font-family: OpenDyslexicAlta;
+  }*/
+/** {
+    box-sizing: border-box;
+}*/
+
+/*
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+*/
+/*label {
+	padding: 6px 6px 12px 0;
+	display: inline-block;
+}
+
+#input[type=submit] { #
+	background-color: #14789F;
+	color: white; #
+	padding: 12px 20px; #
+	border: none; #
+	border-radius: 4px; #
+	cursor: pointer; #
+	float: left;
+	#
+}*/
+
+/*
+input[type=submit]:hover {
+    background-color: #79B0C5;
+}
+*/
+
+/*
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}*/
+
+/* Clear floats after the columns */
+/*.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}*/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}*/
+
+#skiptocontent a
+{
+position:absolute;
+#left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+</style>
+
+</head>
+<link rel="stylesheet" type="text/css" href="/css/details.css;jsessionid=D7133E3A208360B630B3C6A82EAFEA5D"/>
+
+<style>
+    .lift-map-wrap {
+        width: 800px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #lift-map {
+        width: 100% !important;
+        height: 100% !important;
+        position: relative !important;
+    }
+
+    #lift-map > * {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    #lift-map * {
+        max-height: 100% !important;
+    }
+
+    /* Tablice (768px - 1024px) */
+    @media (max-width: 1024px) {
+        .lift-map-wrap {
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    /* Mobilni (do 768px) */
+    @media (max-width: 768px) {
+        .lift-map-wrap {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    /* Majhni mobilni (do 480px) */
+    @media (max-width: 480px) {
+        .lift-map-wrap {
+            width: 100%;
+            height: 250px;
+        }
+    }
+</style>
+
+<script>
+    /*<![CDATA[*/
+    var pageTitle ="VA\u010C | Podrobnosti popisne enote";
+    document.title = pageTitle;
+    /*]]>*/
+</script>
+
+<body>
+<div id="pageContainer" class="container-fluid">
+    <div id="pageHeader">
+        <header data-locale="sl" data-defaultLocale="sl" data-msgEditRow="Uredi" data-msgDeleteRow="Izbriši">
+            <div id="confirmationDialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="confirmationDialog_Text"
+                >
+                <div>
+                    <span id="confirmationDialog_Title">
+                        <span id="confirmationDialog_Text"></span> <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup1" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel1"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput1" aria-label="Vnosno polje">
+                        <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup2" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel2"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput2" aria-label="Vnosno polje 2">
+                        <br />
+                    </span>
+                    <br />
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonYes" value="Da" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonNo" value="Ne" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonCancel" value="Prekliči" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonOK" value="V redu" aria-describedby="confirmationDialog_Text">
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <button id="explanationDialogToggler" type="button" class="btn btn-primary" data-toggle="modal" data-target="#explanationDialog" hidden="true">Launch demo modal</button>
+            <div class="modal fade" id="explanationDialog" tabindex="-1" role="dialog" aria-labelledby="explanationDialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="explanationDialogTitle">Dodatno pojasnilo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Zapri">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="explanationDialogBody">Podatki se zabeležijo na podlagi vpogleda v dokazilo o invalidnosti in se hranijo za čas uporabe arhivskega gradiva ali največ 1 leto oziroma do preklica dovoljenja s strani uporabnika.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" data-dismiss="modal" value="Zapri" aria-label="Zapri" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="glassPane" tabindex="0"></div>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary2" >
+                <!-- Button trigger modal -->
+                <a class="navbar-brand hover-nochange" href="/vac">
+                    <input class="glyph-logo bg-primary2 no-shadow" type="button" aria-label="Domov" style="vertical-align:top;background-size:9rem;height:3rem;width:7rem;border:none!important;"></input>
+                    <span class="inARow logo-text-big logo-text-color">VAČ</span><span class="inARow logo-text-big logo-text-color">&nbsp;-&nbsp;</span> <span
+                        class="inARow logo-text-small logo-text-color" style="z-index: 0">VIRTUALNA ARHIVSKA ČITALNICA</span>
+                </a> 
+                <div id="skiptocontent">
+                    <a href="#page" class=""><span>Skoči na glavno vsebino</span></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Meni za uporabniški profil in dostopnost">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <ul id="mainNavBar" class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-header headerNav-link" href="#" id="navbardropUserProfile" data-toggle="dropdown"
+                                aria-label="Uporabniški profil" data-parent="#navbarSupportedContent" title="Uporabniški profil">
+                                
+                                <input class="glyph-user" aria-label="Uporabniški profil" type="button" tabindex="-1" style="border:none!important;"></input>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="https://vac.sjas.gov.si/vac/login"
+                                    style="font-size:1rem">Prijava</a>
+                                
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${session!= null && session.userBean != null && session.userBean.loggedIn}" class="dropdown-item" href="/vac/userprofile/mydocuments"
+                                    th:utext="#{Header.UserProfile.MyDocs}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Moji dokumenti</a -->
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${permissions.contains(8L)}" class="dropdown-item" href="/vac/userprofile/advanced/prepareAEG"
+                                    th:utext="#{Header.UserProfile.PrepareAEG}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Priprava AEG</a -->
+                                
+                                
+                                
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-text-height headerNav-link" href="#" id="navbardropFontSize" data-toggle="dropdown" data-parent="#navbarSupportedContent" title="Velikost pisave"
+                                aria-label="Velikost pisave"></a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right" style="font-size: 14px">
+                                <a class="dropdown-item" style="font-size: 14px;" href="#" onclick="changeFontSize('14px', true)">Privzeto</a>
+                                <a class="dropdown-item" style="font-size: 1.25em;" href="#" onclick="changeFontSize('1.25rem', true)">125%</a>
+                                <a class="dropdown-item" style="font-size: 1.50em;" href="#" onclick="changeFontSize('1.50rem', true)">150%</a>
+                                <a class="dropdown-item" style="font-size: 2.00em;" href="#" onclick="changeFontSize('2.00rem', true)">200%</a>
+                                <a class="dropdown-item" style="font-size: 14pt;" href="#" onclick="changeFontSize('14pt', true)">14pt</a>
+                                <a class="dropdown-item" style="font-size: 16pt;" href="#" onclick="changeFontSize('16pt', true)">16pt</a>
+                                <a class="dropdown-item" style="font-size: 18pt;" href="#" onclick="changeFontSize('18pt', true)">18pt</a>
+                                <a class="dropdown-item" style="font-size: 20pt;" href="#" onclick="changeFontSize('20pt', true)">20pt</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-font headerNav-link" href="#" id="navbardropFontFamily" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Vrsta pisave" title="Vrsta pisave"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Privzeto</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Arial</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Arial Bold', 'bold')">Arial bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana;" href="#" onclick="changeFontFamily('Verdana', 'normal')">Verdana</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Verdana Bold', 'bold')">Verdana bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexic;" href="#" onclick="changeFontFamily('OpenDyslexic', 'normal')">Open Dyslexic</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexicAlta;" href="#" onclick="changeFontFamily('OpenDyslexicAlta', 'normal')">Open Dyslexic Alta</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: DidactGothic;" href="#" onclick="changeFontFamily('DidactGothic', 'normal')">Didact Gothic</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-eye-plus headerNav-link" href="#" id="navbardropColorScheme" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Barvna shema" title="Barvna shema"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" href="#" onclick="switchStyle('default')" id="defualt">Privzeta barvna shema</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" onclick="switchStyle('blackOnWhite')" id="blackOnWhite" href="#">Črno na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:white!important;background-color:black!important" onclick="switchStyle('whiteOnBlack')" id="whiteOnBlack" href="#">Belo na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:beige!important" onclick="switchStyle('blackOnBeige')" id="blackOnBeige" href="#">Črno na bež</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:white!important" onclick="switchStyle('blueOnWhite')" id="blueOnWhite" href="#">Modro na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:green!important" onclick="switchStyle('blackOnGreen')" id="blackOnGreen" href="#">Črno na zelenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:yellow!important" onclick="switchStyle('blackOnYellow')" id="blackOnYellow" href="#">Črno na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:yellow!important" onclick="switchStyle('blueOnYellow')" id="blueOnYellow" href="#">Modro na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:yellow!important;background-color:blue!important" onclick="switchStyle('yellowOnBlue')" id="yellowOnBlue" href="#">Rumeno na modrem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:turquoise!important;background-color:black!important" onclick="switchStyle('turquoiseOnBlack')" id="turquoiseOnBlack"
+                                    href="#">Turkizna na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:pink!important" onclick="switchStyle('blackOnPink')" id="blackOnPink" href="#">Črna na roza</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=en" aria-label="Jezik: Angleški" title="Jezik: Angleški"
+                            onclick="return setLocale(&#39;en&#39;);">EN</a></span>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=sl" aria-label="Jezik: Slovenski" title="Jezik: Slovenski"
+                            onclick="return setLocale(&#39;sl&#39;);">SL</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class='navbar-shadow'>
+                <div class='master_op_center' style="padding-top: 0.05em;">
+
+                    <nav class="navbar navbar-expand-md navbar-light bg-light2">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                            aria-label="Glavni meni">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent2">-->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+                            <ul class="navbar-nav mr-auto mx-auto">
+                                <li class="nav-item active">
+                                    <div>
+                                        <a class="nav-link" href="/vac" aria-label="Prva stran" title="Prva stran">
+                                            <div style="width:120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-home'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Prva stran</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <!-- li class="nav-item" th:if="${permissions.contains(7L)}" -->
+                                
+                                <li class="nav-item dropdown">
+                                    <div>
+                                        <a class="nav-link" href="/vac/search/getfullTextPage" aria-label="Iskanje" title="Iskanje">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <!-- <a class="nav-link" href="#" th:aria-label="#{Header.Search}" data-toggle="dropdown" th:title="#{Header.Search}">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;" th:utext="#{Header.Search}">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="/vac/search/getfullTextPage" th:utext="#{FullTextSearch.Title}" style="font-size:1rem">Iskanje po besedilu</a>
+                                            <a class="dropdown-item" href="/vac/search/fieldSearch" th:utext="#{FieldSearch.Title}" style="font-size:1rem">Iskanje po poljih</a>
+                                            <a class="dropdown-item" href="/vac/search/archivePlanSearch" th:utext="#{ArchivePlanSearch.Title}" style="font-size:1rem">Iskanje po tektoniki arhiva</a>
+                                            <a class="dropdown-item" href="/vac/search/descriptorSearch" th:utext="#{DescriptorSearch.Title}" style="font-size:1rem">Iskanje po deskriptorjih</a>
+                                        </div> -->
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                <li class="nav-item">
+                                    <div>
+                                        <a class="nav-link" href="/vac/userhelp" aria-label="Pomoč" title="Pomoč">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-help'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Pomoč</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const link = document.getElementById('reportErrorLink');
+                                if (!link) return;
+
+                                link.addEventListener('click', async (event) => {
+                                    event.preventDefault();
+
+                                    try {
+                                        const elementToCapture = document.documentElement;
+
+                                        const canvas = await html2canvas(elementToCapture, {
+                                            useCORS: true,
+                                            backgroundColor: '#fff',
+                                        });
+
+                                        const dataUrl = canvas.toDataURL('image/png', 0.9);
+                                        sessionStorage.setItem('errorScreenshot', dataUrl);
+                                        window.location.href = link.getAttribute('href');
+                                    } catch (err) {
+                                        window.location.href = link.getAttribute('href');
+                                    }
+                                });
+                            });
+                        </script>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="pageBody" class="container-fluid">
+        <div class="row justify-content-start">
+            <div class="d-print-none leftmenu">
+                <div id="addToWorkbookDialog">
+                    <div>
+                        <div class="row form-group">
+                            <div class="col-sm-5">
+                                <label class="form-control-label form-control-sm">Delovne mape:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <select id="workbooks" class="form-control form-control-sm"
+                                        title="Izberi delovno mapo."
+                                        aria-label="Izberi delovno mapo.">
+                                    <option value="0">&lt;nova delovna mapa&gt;</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-5">
+                                <label class="form-control-label form-control-sm">Ime:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input id="newWorkbookName" type="text" class="form-control form-control-sm"
+                                       placeholder="Vnesite ime"/>
+                            </div>
+                        </div>
+                        <div class="spacer7"></div>
+                        <input type="button" class="btn btn-primary" id="addToWorkbookDialog_ButtonCancel"
+                               value="Prekliči"
+                               onclick="workbookDialog.hide();">
+                        <input type="button" class="btn btn-primary" id="addToWorkbookDialog_ButtonOK"
+                               value="V redu"
+                               onclick="addToWorkbook();">
+                    </div>
+                </div>
+                <div id="wrapper" class="toggled tblbgr">
+                    <div>
+                        
+                        
+                        <!-- <div>
+                            <a href="#" onclick="toPdf();$(this).blur();return false;" class="lvl3">
+                                <label class="glyph-print"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu " th:utext="#{General.Print}">General.Print</span>
+                            </a>
+                        </div> -->
+                        <div>
+                            <a href="#" onclick="$(this).blur();return false;" class="lvl3" title="Pomoč">
+                                <label class="glyph-help-l"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">Pomoč</span>
+                            </a>
+                        </div>
+
+                        <div class="bg-light2" style="padding-left:10px;">
+                            <span style="display: inline;" class="va_tb h6 c_leftmenu">Navigacija</span>
+                        </div>
+
+                        <div>
+                            <a href="#" onclick="gotoPrevRes(this);return false;" class="lvl3"
+                               title="K predhodniku med rezultati" id="navPrevRes">
+                                <label class="glyph-nav-prevRes"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">K predhodniku med rezultati</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" onclick="gotoNextRes(this);return false;" class="lvl3"
+                               title="K nasledniku med rezultati" id="navNextRes">
+                                <label class="glyph-nav-nextRes"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">K nasledniku med rezultati</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" onclick="gotoPrevLev(this);return false;" class="lvl3"
+                               title="Na prejšnji nivo" id="navPrevLev">
+                                <label class="glyph-nav-prevLev"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">Na prejšnji nivo</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" onclick="gotoNextLev(this);return false;" class="lvl3"
+                               title="Na podrejeni nivo" id="navNextLev">
+                                <label class="glyph-nav-nextLev"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">Na podrejeni nivo</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" onclick="gotoPrevSibl(this);return false;" class="lvl3"
+                               title="K predhodniku" id="navPrevSibl">
+                                <label class="glyph-nav-prevSibl"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">K predhodniku</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" onclick="gotoNextSibl(this);return false;" class="lvl3"
+                               title="K nasledniku" id="navNextSibl">
+                                <label class="glyph-nav-nextSibl"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">K nasledniku</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" onclick="showInArchivePlan(227668);return false;" class="lvl3"
+                               title="Prikaži v tektoniki" id="showInAP">
+                                <label class="glyph-inAPBold"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">Prikaži v tektoniki</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page" class="col-sm-10" style="min-height: 500px;"><!-- <div id="page" style="width: 60%;"> -->
+                <div class="navbar-fixed-top" style="padding-right: 0; padding-left: 20px;">
+                    <div class="clearfix"></div>
+                    <div id="content">
+                        <h3>SI AS 176/N/N83/g/A02   list A02 (Slika)</h3>
+                        <div class="tblbgr">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label class="form-control-label form-control-sm titleBackground"><strong>Tektonika arhiva</strong></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div id="archivePlanTreePathData" style="display:none">
+                                        <ul data-id="1000001"
+                                            data-title=" Vzajemna podatkovna zbirka slovenskih javnih arhivov" data-iconId="20"></ul>
+                                        <ul data-id="1"
+                                            data-title=" Arhiv Republike Slovenije [ARS]" data-iconId="17"></ul>
+                                        <ul data-id="653381"
+                                            data-title="000 UPRAVA" data-iconId="10"></ul>
+                                        <ul data-id="653535"
+                                            data-title="070 Posebni  upravni organi in organizacije do 1945/1947" data-iconId="10"></ul>
+                                        <ul data-id="653582"
+                                            data-title="071 Posebni organi za upravo, pravosodje in notranje in zunanje zadeve do 1945/1947" data-iconId="10"></ul>
+                                        <ul data-id="23253"
+                                            data-title="SI AS 176 Franciscejski kataster za Kranjsko (1823-1869)" data-iconId="8"></ul>
+                                        <ul data-id="226589"
+                                            data-title="N Novomeška kresija" data-iconId="5"></ul>
+                                        <ul data-id="227663"
+                                            data-title="N83 Griblje, k.o." data-iconId="3"></ul>
+                                        <ul data-id="227665"
+                                            data-title=" grafični" data-iconId="3"></ul>
+                                        <ul data-id="227668"
+                                            data-title="N083A02 list A02" data-iconId="1"></ul>
+                                    </div>
+                                    <div id="archivePlanTreePrevData" style="display:none">
+                                        <ul data-id="227666"
+                                            data-title="N083A01 list A01" data-iconId="1"></ul>
+                                    </div>
+                                    <div id="archivePlanTreeNextData" style="display:none">
+                                        <ul data-id="227670"
+                                            data-title="N083A03 list A03" data-iconId="1"></ul>
+                                    </div>
+                                    <div id="archivePlanTreeChildData" style="display:none">
+                                        
+                                    </div>
+                                    <div id="archivePlanTree" style="font-size:1rem"></div>
+                                </div>
+                            </div>
+                            <div class="spacer14"></div>
+
+                            <div class="row">
+                                
+
+                                
+                                    
+                                        <!-- 7=Text -->
+                                        
+                                            <div class="col-lg-2 col-md-3">
+                                                <label class="form-control-label form-control-sm">Signatura PE:</label>
+                                            </div>
+                                        
+                                        
+                                        <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                        <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                            <label class="form-control-label form-control-sm">SI AS 176/N/N83/g/A02</label>
+                                        </div>
+                                    
+
+                                    
+
+                                    
+
+                                    <!-- 17=Image <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->
+                                    
+                                
+                            </div>
+
+                            <div class="row">
+                                
+
+                                
+                                    
+                                        <!-- 7=Text -->
+                                        
+                                            <div class="col-lg-2 col-md-3">
+                                                <label class="form-control-label form-control-sm">Signatura PE AP:</label>
+                                            </div>
+                                        
+                                        
+                                        <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                        <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                            <label class="form-control-label form-control-sm">N083A02</label>
+                                        </div>
+                                    
+
+                                    
+
+                                    
+
+                                    <!-- 17=Image <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->
+                                    
+                                
+                            </div>
+
+                            <div class="row">
+                                
+
+                                
+                                    
+                                        <!-- 7=Text -->
+                                        
+                                            <div class="col-lg-2 col-md-3">
+                                                <label class="form-control-label form-control-sm">Nivo popisa:</label>
+                                            </div>
+                                        
+                                        
+                                        <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                        <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                            <label class="form-control-label form-control-sm">Slika</label>
+                                        </div>
+                                    
+
+                                    
+
+                                    
+
+                                    <!-- 17=Image <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->
+                                    
+                                
+                            </div>
+
+                            <div class="row">
+                                
+
+                                
+                                    
+                                        <!-- 7=Text -->
+                                        
+                                            <div class="col-lg-2 col-md-3">
+                                                <label class="form-control-label form-control-sm">Naslov PE:</label>
+                                            </div>
+                                        
+                                        
+                                        <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                        <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                            <label class="form-control-label form-control-sm">list A02</label>
+                                        </div>
+                                    
+
+                                    
+
+                                    
+
+                                    <!-- 17=Image <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->
+                                    
+                                
+                            </div>
+
+                            <div class="row">
+                                
+
+                                
+                                    
+                                        <!-- 7=Text -->
+                                        
+                                            <div class="col-lg-2 col-md-3">
+                                                <label class="form-control-label form-control-sm">Prejšnje signature PE:</label>
+                                            </div>
+                                        
+                                        
+                                        <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                        <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                            <label class="form-control-label form-control-sm">N083A02</label>
+                                        </div>
+                                    
+
+                                    
+
+                                    
+
+                                    <!-- 17=Image <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->
+                                    
+                                
+                            </div>
+
+                            <div class="row">
+                                
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    <!-- 17=Image <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->
+                                     <!-- 17=Image -->
+                                        
+                                            <div class="col-lg-2 col-md-3">
+                                                <label class="form-control-label form-control-sm">Predogled slike:</label>
+                                            </div>
+                                        
+                                        
+                                        <a href="/vac/tify;jsessionid=D7133E3A208360B630B3C6A82EAFEA5D?uodid=227668&amp;docid=10&amp;seq=1"
+                                           target="_blank" rel="noopener">
+                                            <div class="col-lg-10 col-md-9" style="padding-left:20px;"><img src="data:image;base64,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"></div>
+                                        </a>
+                                    
+                                
+                            </div>
+
+                            <div class="row">
+                                
+
+                                
+                                    
+
+                                    
+
+                                    
+
+                                    <!-- 17=Image <img src="data:image/gif;base64,xxxxxxxxxxxxx..."> -->
+                                     <!-- 17=Image -->
+                                        
+                                            <div class="col-lg-2 col-md-3">
+                                                <label class="form-control-label form-control-sm">Digitalni posnetek:</label>
+                                            </div>
+                                        
+                                        
+                                        <a href="/vac/tify;jsessionid=D7133E3A208360B630B3C6A82EAFEA5D?uodid=227668&amp;docid=10&amp;seq=1"
+                                           target="_blank" rel="noopener">
+                                            <div class="col-lg-10 col-md-9" style="padding-left:20px;"><img src="data:image;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QB2RXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKGAAcAAABAAAAALAAAAABVTklDT0RFAABMAEUAQQBEACAAVABlAGMAaABuAG8AbABvAGcAaQBlAHMAIABJAG4AYwAuACAAVgAxAC4AMAAxAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAF0AggDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2t7dweZjgtnp254/z6U1rUsgBmcHGMqSPXnr7/pVmXtzSdhzWFxAq7UAPJAHPrXOXm77ZIc4Ge9dH261zt2M3UvX7xrCtsa0dyvFIX3FMcHGRTwGZuXI5zxTo121T1a8fT9MuryNQzRJuAboawsbsugqWORuYdSaTYjNuI5qrpN3Jf6dHcyBVZiwIXOOGI/pV0D3osCABVcHbkAdKUeXz8gppznHXtWdOmoNeq8eBEsRBTOAXLDB9SAAc/X8mI0sJjhR+VBA3KMD6YrLnk1ZvKEduqgOGf5xlh6Z/Dn6gepEs76ltQx28XmFPmO7IU+g6Zx+GePwAuXzs7gGmcFzgAfhVGJtQgspDJbebKgwiK4zIfrwAP8PwqrZxaxbJI8y/aJXYnG8BQBzwO2ScDnoATzwSwXNtOO36UEAk/wCFZgudVDECyjYj/poAD+vsfzHvhHGrLP8AaAkJwNqxlyFX3Prn9B+OSwrmuRyOMVGy/MAeT2rNY6mbvzODGowI0x83vye+PXuPQ5mMuqDb/o0HTJIcnHt2yf8APfgsO5c6L8xyaTA7YFZn26/N0sLW0QYjcQH3FR7/AOefzwl82oy26QQQ7GkBMkiOAUHZQf7x9eg59qQXNXaMdqQAFemayYjqkNuI/I3kZy3mZLHJ9fz9hgfQm1DULeMs1pFjOEG/JY+w/P8AL34dgua5IXjFNBBHT9KzE1G/kneEWkZdQCQr8LnnBPTPTj6npjNy2kuJIibmNI3JxtU5wPrSBMnJI7U3dknj6UcKmMkgD15pEw6DAwfekUOMnP8A9akG0MWB+Y9aCFA560g29+1MQ/nHJyPQijzG5AP6Ugb0pCMg5NACmT91yO3pTEJYZxj04pOUC/Sn5XIPQ+nakApZd2CBx1yKaSuRgArj0pflDZPHHem5XcOMUAO85OhA/Kl3LjtUTsOw5pvykbh35oAmLYXO8qPrUaSxSoTHIHAJBKnPIOD+NY999tuplVYXWGOSN1AIy2Dls89xwB+PtUEkF889v5NmI7e2UCKMFQN54LEZ6AZwPc+1OwrnQ5B5ViPxpoww4OcVzZtdZMoZIBCrNucRFVB5yeAeT7+3vxpSS3+793ZA4/jkcZH4Z/rRYLmmxIH3c/hUe+THAz+FUJJ9UMu6KACMDG1ivPqTz9KFutTMbhrZQ+35SpBGff5ulKwXNGPz3HVse5p+xwSBhvrXPx3eqiaSKKGR+5ZmXg4xjrgfgO/5zfa9ajmCm0Ri5J4I4H/fXb9fanYLmyynqy9PQUoVz0Zlx0wap2LXZhAuw+/HJO0Z/I1bRgpwB9MUhkgLKeSD9RTWYfSkLEn1NPAFMQi7ThWAP4Uvlx54UD8Kfhe1KNvc4FFguMZR0BA/Co2jXIO4ZJ54qyQMdvrUR+8AfzoAjMYxyB+VIyAL8qD8qlfGMDJqNlOzr1oGhvlDggLz1x2psq4TnHXvWXHq7tJD+6AWS8e0C/xLtDfMfbK5+hBqsuuXH2O1up0hFvcAqXAP7lt2FLf7J9exp2FdG6sTegz7U0mRCcMCx9ulUDfyQSss6gKoO5wenIC/gck+2KgTXorjSI7zGZPLRpFAOFJUNjOOwpWC5qQzSCSRS7FRgjnpnNXPOGzJycd81nwL/pEm7sFP86uqofqc+1CBiGcnkMRn3o+0N2zjFKRkgkAA0hUDpx7UDRXlmlG7bIxBPY1pJIxjUBz07msmZTkLtJye1aUHESn/AGRTQSJSTyoPb1oo464opkG9L2pueKWXrTe1dhzDgeK5+5/4+5P941v9qwbjH2qT/eNYVtjaluRjOOR+tRtDHKHSVA6twQ3INSj7tNXq1Ymw6OGKNAsaBVHYcCnbB/dFC7iTnoOmKUcHk0CECp/d5o2r6CnEDrSYGeKAAgDtSEAMOBmnd6CueaAMd5/MuZm8wqqtsUduKbmTJIZs98kikQkI5JcZduoyOp9KbgH5lwF7lTUPcEMtvPQuZpdxLEjd2B5xmm3rXCmN4SDu4ILYX1/lmrEPC4UKMfw025hMkbYXa45BU9/woEOjUiEF1feeSN3Ippd4k8xUkk/2R1pIJIpog+XB6EEkYNSgRf8APT/x81JXQq27SuS0tvskKrv29Ce9Wkw5wQ351DuTdL354PmEdhUkarjow+hNNbjHPaAy+as0qsF24D8dfSq9zvjtbjLZx0b04FWgozgK34tVe8TFrcKVxlBwDn1pkljKlUU459D7UxYV3tsd0weOcj8jmobBjLaRSHt8o+gzU+cBgB1HUfSlctWaGtbyHaTOwLddoHp75psVoEyTI8hDj7zn27dKtEDemOuefyNJjG//AHx/SkAzy8TPxnjjPagBTzgchen1qtczzC9S3jQSOQHdmXARcn9T2H1qrLeSWqCNmRpdgeQnO2JB3PPU9AO5p6hdGoCBKVwfvdQPallYeVJgHIB7Vnw6nEYGLwyJJ8jtGqcgnGF/3uRx70xNVd42aeIxxFc5Ck5Gcf1x7/lk1C6NLarx44xjtUbQZwSzfgKejuYlIjIyM4PBFLIxEeB1bgUhkEbq2cRMQDjJOc/rQ8h3Z8oj64qQ7EAUEL2AzTXO1smghsfG4fcNgDAfdNChmTcI0Htn/wCtUex8iQcMPug/1qRXEhG0kK47djTY07kqIjIG65GRkU0L8x+QAVSkkmhmeISEL1XgdD/9fNRfaJz/AMtXA/3R/hQS5pGptQcbV/KsrUWeK6VyI/J28ksAR17ZqvM0skYJll6g+ox6GqjRtdYMO1EHG/b976f400RKaZLLIX2xYw0jHkf3R3B9x/OrAf5yCAqDue9GnWnmiaW5CTNuKIduMc8/rWj9nh3ECMAewxSbBQbVzn0uYYdQfc2VfoVJJz/k1f3XLcxwSHJwC/yAZ+vP6VbtYY/7RlbqYlABPqck/wBKvOC+4bsEjj60GnIjPtNOKHfcSs7g5wrEKP8AH8auKiEOhHIPBx0z/k1KpBwV5BGailMqunloDuO1iTjA9f5/nQUQR3EJfBlTLHGA34ED6GrIdNjbmCnryehHWsn7Bd2yPHFNGmZpZSSu75XYnA/PJ/Cn3NtczYHmRmNFGNxyHcd2AHTHOO5qiTZUoyAgZyM1BE7BXVyd8TdznK1nRWuoW8HkxXaDDZBcZyOeSe5Lcn61FEL97qQm5Hlu3lLJsHOOpAx17fXPGBygNaeTYhIJ+Unpn6j/AAqvPK3kE5ZSE5IOORkf1qXy8KMjAUEcH7xHPI/z1qpLiTZbJliThsdhwf51Iy+5WNFByCUIznvxVeS6JnAGduRz+dDu7sduCUGPmB4/KoVSTzNzSKcDgYH+NNsehIseXVnjLHgnK8jp6/Smm3ijjaJ4ItkgCkdeOeoxUhuGeNMAMzJ84UE7T/nNLKEdshQCG5DADP8AWncLIiWGCCV5lUK7DDMuMkfmTTWt1WHbmLY2FAzxjI4Ix09qlklfy1VUGc42gkfrxTkkaURrleT9T6+vtSuFlYrS71kdkmySABtc/wCNTwzusP3zu46yHHb3qWNm+1sh6Lg/TO6rDDIdicKg59+KLiMmZ50iJEjbih/jPU9KtzSNFaNN877YyxAY5OB9agnhijiCoPmJUfL06/8A66ffRtLp7RK5QuQmV68kD+tWtrk7ysR2282sAkaQyMg3EMc5PXvWtHH5ccce9+CoOWPPIqssYM6DHTmqWo3uoRatHb2bWhyu8ieOTjBPO5eAOO/NVFEzep0hX0ooiJaBWfbvKgnb0z7UUAb0nXHtR2/GhvvfgKXHH412HMHasC5/4+pOp+Y10FYF1zcuFxnfWFbY1pbkefl7CkUEFuetK+cY70ij5myc1ibkgBz70vXgij+dFAjnL/V7rTNQ+1TEto7t5Mh2Ye1cHAc+qnjntxW7bLIsCCVy8m35mIxmnyRrIhRlDKwwQRkGnAc0MQEHPBplw/lQO5z8oqXII4prAMhU8gjFAzIRWjjCt9cjpTiiMMkD6imeWwmZDgNGeDjqO3+fanM/lsSW474Q/wCNR1H00GLFGWypVsfjUoRh0z+Bz/Om48rLrtJPohP9af5j4z0x1/dn/GgRS3CC7zwElODkbQGHf8almlG0oULZ5O3J/pSvb+erbWw2eDgg5zn+dNFysn7t0CS8huMkEfhSKIjvw42nk569OB14qcYVcjP0yajFux8x1yWJ4HAHT8KAkq7QFDY4ww/+yoAFu4opAmVVmBxkdfyqw4MkUikZ3RkcA/571EsT/MSu3J4x/wDrqVNyyKCoGVPb6e9OxLYyxRV0yAqeCAfzNT4H7xc9s1UtGkWz8pFGImZSxb0NWsnzG3kHgdBj1pFocQqsH9Tn9KYzcMcHkg/yoZwFj4Jz/hUfmZV/3bAD1x7UhkuAZmPGdoGfzqsIoGQFQgYqWJwMk8VZ3DzGPsP60zaCOQDiMAcdz/8AqpiFeP5mIA5Kn9aiazT7UsxJLYIx2A/zirGV349W/kP8aUj95n0X+f8A+qgAVeOOwqM5Z8jkJwB707kuVDsPlB4x7/4ULhFxk+5osJsjdUPzN/DzyelRgrI/Ujb2NSOykbmOFHI/xqPbg+c4VE6nJwT7n/CmLcJG/dF3bZGB69aqRX5kk8qCFmUjgLxt9CT0FSFH1CTkEW4PXPWrEPk20gt4V5YZAz/M0hDGsvtP7y4dw+MDZwB/jVS6sY1ty0M85wRk5BHX6VqtnGJBuPoBwKjvObOXIx8pI/Ci45RTMOS3Xbl2d+Rne5x19OlOfKgshBZuBigwIZvPCneV27g3anWsQa/XcvyxnJOON3amYJXZr28C28MUI6qOT7/5zQxEcTSMOACTinNyWyGx2xmq93gxwWufmlYKf90dag6R1lFsSMtndIGdvqcGrTthsAdKJOFDD+A5/Dv+lBX95ncfzpgMTILJnpyPoaGDMCKQg+crN0IK/wBf6GpFjCkleM0ARbSVWQE9cHnOPWomRIm2lgPTnGfT+oq0EyroeOT+tVEtVaQtK3zDghASfz/KmFwLsZEkDHYv5YP+f0qS7iItn+Y/KNy9sY9KUowJIVVXkc/55qLPmgxupYbf4mA/SgCIXRmIhtySSAWkPY/Tv2p6W+1dibuvzEHk/wCfem2LR7G+TJDYwTwe/wDWrmZX6DC/TFIXUgNu43bpSB2z2/CkVolO1pNxI6jnP58VIyBWDOwHv3/OolMEeFXfyc9Ov50DHxvmUbFbb0Of8KlcISR5hycbgvWmiTfNsfKgr8qjPPr/AEqQllU+XGAvqeKaAa0KYykP6Cm7GUINijDDGD0pQX27nbp0wo4pZCGj3Fhx/eY4pAMCgXkkhHzYUfqamuMNEVY4BIGPUd/0qgbyI3D+UTI5VQqqDyQaUzyySxJLA0eRvyGDA9uv496Yhss2byOLbgZLcfkP51NMC0sCrkgtuP4A/wBcU2OLdqDNkbVUDg59/wCtWMk6jhekcX/oR/8Asa0+yTHV3J4FJcvg8UpmgW/ggaVBK5OELDcRg9qkhHyFvXj/AD+VZs+mXM+sh1isjbkhzLIn71SOOOOT6HIx6GrS0Jlub2BjHpRQvyxhck4GMk8mipA3n6/gKTt+NLIeRSdvxrsOYcOlc/c7Rdyeu41vjpXP3H/H3J/vHtWNbY1pbjQCTk0KDvbml7YoX7zVgbDuV5HNKGyOnNHP0pQeKEAcDrxScdjzS5+bpxSZGfShgHFIQKdgc01hQBmaiirKkxUHnaflz1qvuXHypGx7DpVzUc7Y/wDfFVGJweM+xqXuBGFLybSAg7cjr+VTEgKBk8HaTkcmmQ7XyRxtOPlbODUM+VnwGBAG4EqM5pCbSLh2lV28sCOQ3+BqrcLsf7SMnadrAH9enaoJZ5hHvWVlOVz8q+tQTXdwySKZXPynOcAGhIl1EjUhldogzcMxJwFPrQzEMPusMHocVTsJkbT49xJK/KTvPr6fl+dX4YVYnJfaBj7x6mg0Wo2DcQcY46kk/wCAqR9ylGcjAPZfaphBGOPm/wC+z/jTZYlVVOWIBxgnOe39aBWZShLFrhV+6HLfmtWVwZScjpUEShb2eMcAopH6j+lTRrgqcj5lyf0qS1sIFz5ff/8AVQfuzf57UHOxdv39vH5UyTGHBPVWJI9uKBj5MgTE+nH5U5Tlz/vAflzTWXh8dyBzUaFlLDuoLZ9T0oAmGGYH/Zz+ZpVX5nP4ClUDc2O2BTGlWOBpGOFGWyPrxTYgTIkfOc4A/CopLiLPzONo7Dkn8KjEc90WEjmKNlHyr94j3PapoU8lfLiRQw4Py/rmmTa7IPO8xlYQSsSflXGAPrmntbyTSK1ww2A8Rjp+dWVQgE8EnqWprEsdmR/tEfyoQ7ENzJJHATbpwvBbso9qr2cDylZSdiKdxbOSxq6d7jYhCqBzxwfanRYIG4bWH8HYfSkyWrseCxOPug9Djk/4VUv2eGH93Er7shixyR+HU1PnL/IASP4j2qKSUW4zIck8DnJagpoyfPCw5Ay2OhOOav2KxJaAbkkeUlmwwpslib1982Yl7KnX6moYtLCXJ3vmJBuOOM/X/wDXTM4xcWay4U7GOT/CfWqj4k1EhRnyYs/Ric/0pXhkih3KxYD5tjdV+hqtpzmZ7mZyVdpMHYueg47e9Sao1MI3zAA5HWkibKLntwT9OKbG2yIARuSOB0phZ/NYMFXPIyelAyWUjAP90g/41JuVU3NwvqarMrFW3ybVx/CMUq+URnG8nufmoEJJcIsw2guSOi/p/WljaVmYjhWOcDmlhRdhBHKnB3VPvAGQM+54FUhEIgJbc2Mjpnk/rRtRJdxReersaV2LA88fXaP8agjGZC4D5x27/wCfrSGh0PE9wka8Fg+ceoqUpI3BfA7harNKkF6zOVTMXdsnrTZLqc4MUe1ScBnHJ+gpCRP5KIxLE9OST1+tQG4jQnycv2wigKPqaBCrOpmLOT/fPA+g6VY+VF+VfxY4osMhjF5NslBijGMgHLHHv0pLq4ltIlae4RI2OC4hO1fqc8fWnq7JlS5PsAB/OmuVkHzISB75J/OmhC+QkgUveTOPSIAD9B/Wke0t1AYLliy8O+49fTmpD9zhTjGAO35cU1kkSMk/dHON2P5UAKnF45yByAfyNU7pZpZIFRzHtVsNjjsOanQ7rxlJ4DKevsahuSzmNcYBUAcjPPX9M01qD0JNPim275Cu5zuJq1DC/wBquCGzwo/SnwjCjB4AxSQn/Sbj5iPmH/oIq5Ew2ZcjG23B6881ENQt4ZY45m2zXDlIo+rMB1OB2680/pZZBPU0200q2tZXnRCLiXHmS5yzY7ZPQew4q+hL3L2SMiijBXjJx/KipA3pOv4U3tSycUnb8a7DlQ/tXP3H/HzJ/vGug7Vz9yf9Kk4z8xrGtsbUtxgPrSDJdsHNLnjHrTQeWAOOlYG5KSccmsvW9UOkwJcbt5YmOO3VNzzSHG1V5+tabfd5GQaieCKV0kkQMyZ2kjpn0oQiHSnv2skbUvJF23zOkIO1Aeg5Jz9auNliR0qOOCGKR3iQKzgbsd8VISc9eKGAo4XGc0h54o6CobiYQQs569APU0gKN9IJrgR/N5cZy23PJ9OKgkJz+7Rjzzu3VLGhjH7xgCeWNRSX1sCQr7yP7g3fypAh2FEo4bbtPVWPPFV7vy4otyWYmlbgYhPHvzSPfSs6xxWrOzjIG8DA9TjOBU8S34G0rAPUli39BSYFfT7eJRK09vuLEYDxH+WKmltrd0EYgRWdgAQhGOef0qRxdA/PcxqO22E/40ptpGKSNdSfIcjCqPr29KQJJISbT0yPKSNUHOMVLBCqx4Csvqc4yfwqRrPI5uJz9HxVZrGIv8z3JJ6HzWx/OgtItRqxRWLn7vTrms6a+hOFEpHzDPJ9fpVgW1qqYKEY/wBs037BYj70CjPq3/16BO5ViuojfK5kLK0ZU8E9CPYe9W1uIA6qWK7V2nKnHaqV5a2kLRyLFt2thwD2PFTmAKAqvNg9AXFA1ck+2QrtyWIVcEhScHikkkjKOvzFzuwAhPrS/ZEByZJ+nY/4UkdpCyMWkmwCcgtRZAL9qjaNiC33geVPbFVzfRrIQCgwSGJbHU0+bT4JbcjyyZQuc7ieRWcqqsilowybhkHnjPPX2o0JcrM01v49pO5ctyOR6fWpJ+WghHQnLfQf5FU5oLaJQ6QxkO2MdMU/yLaWIyxwcg46ZFA29bFk3MSMpaaInpgGpkmiY5EyH6MKrxRwouWSPCgEkDjNK1tBI3+rVf8Ad4OaLBcsO7Nwg49SKru3klIy4y5wp759TTVE8av5cysg4G/k5qpPa3kkxc4fd0ZXGB9KdhSk0tDT/wBXHhecDNNYGSIbvl9COCKqbbzOHlUf7PQmqN2ZFUfvWOeiknn070C6XNFr1UYQR7WkPAI4FEMCtKsm/wAx+pY/lx7dayox5cYOCWXq3qfStyGLbbqQMMecE9KHoKEuZkoOO496jHOOoLncR7f5xQwLIEIwzHBx2HenopyzEk84H4f/AF80jQdglcis6xDB7ohXx57AAHAGMD+laSqwJO4kelU7JYyspYKWMr9hnrSAmB7lZB/wL/69NZx5nfH0bNS+UmOd+PZjTWijZskk46ZAoBDIUDRhsdzyRz1qwMjjFU5b6zty6SysGjyWwGHv+NRWutW13erbxbwWBwxGBx2+tOzJco7XJ7ljFMpDKCw53dvQ/rSJdxSOsavukPTaM9vXpUGqlPKjZvlIk6sQc8Gs+3uhHPGy4ba2cgYqkZym1KxtMpY/3STwScmnMFijLSOdoHJJ4qG5uWRgfIVZCOCxz/Kk+zB5Ukncy+gPCjjOcVLNjPcyzXjXccapDAQMkdR34/EnNaBldmyFAA6k/wCPensoeKaMdGQ4x+f9aW1jR4I5erFQc0iRiNIfur14JHH69f50jI+xySFI6nqcevvU/MTOApPOcD3pGUu6ErgHg8/596bGQWxjDbdu7cOMmrEiPjHyBfTk1TCbLlD0JJHHrxk1afazFHJOHH3j1BHpQhgWTO1nJUD+E8/kKY+ya2LRpuQjqTzSgKpQA8YK8dDjp/Wq9sPKeaNjgBtw+h5NK4BE2b18dCFOc+xqKZWSSJwuflBH9f5j8qmSPFycuBgAcDnjOKkaENApklJKITjinF2E1oXbYAAFhwaYJIllu3YhQHHJ/wB0VUtryZ4vKiiJZTgluB+f+FFvbl7i5knO5lkGB/CDtXtWj3JhszShPn2sYAYZfjI6jr/Km2Vvq0Nxm81G3uIcfdW1MbZ+u4j9KkjYIVJz8ql8AZzx/wDXostQlu5pIp7C5tGUZXztpDj1BUkfgeavoS9y4e/FFKQQDzRUgbknWj+H8aWQdKTt+Ndhyjh0xWBcD/SpCP7xreFYVz/x8P8A7xrGtsbUtyHv/jTEYfaJE2nIAOakzjtmlQ5ZuPSuc3YucdqQZJ6U7PtRkenNMQopO5pcd+9JjnrQwF5I4xWPq6zGSFl8zYD0jIzu/HtWz2xUcsSyxlG5BFITVzEXTZHwZAiN6yMZWH58Cp49NhX/AFjPKf8AabA/IYpivKxKNOFZDtIYgE1NCwiDB5kck5BMnT2qSk1YkWK3i48lAO21M1J5MRPCL+WKQTIejx59jmmmX5uHH/fBNDDQGgjPDKSPQsaPKUD+L/vo0ySY4+9z7RmmrJlfmeTP+7/9apK0sQx3UYiUEyk49f8ACg3VttyxJ/3lJoFtAABumPHHH/1qabW2I5SU/iRTM/eFNxAACkYOf9gj+lSo0L52Mxx1AZqrxW0Sxpl2XcMn5v8AGrFvGIVkIkIG7nOPQUwjzNjXjgeNkYvyDnlqr2bbo/KIJkiO0hlPTsfyq637uNpAVYDqBn/GqMiTWz/a3TIYES+WecdvypFrQshWPSLbgkHIB/rUcbSiaWOSALG/+rK4GfXPNC39v94O+GHUqTTWvIJI9vnEN1VihAzQLmj3LSrKCfujkn161USwjeMlpHGCy4GOmfp9KnSeJkWQSbcju/SmRXVu3mhp48b8g7xzkCgbSe5Ul0yX7VJMhjO7GM8Ecf571atA8ELBtyktnnkH8f8A69PW5ilfyo5AwA5INTEMCAqrs6YzTEoq90IEXgsp5GcqOf0qjc3SRHCHzDk8g4x/TP4Voqqxx/Idn0/wrIawnSXdL88YyxI5JPoRQhSv0L9m0bRqR8vHyqwxn3qVo97EbNue/GDUSYWIBfnBAJ+Un8qN7RqCZwAv3tw4H40FDL1hDbglBuXAU+uePwrLcSm4Mki7WwCB3APf/PpV4SR6heKrNiKMbgvPzn/P+eabqVvCbdZYwW2uARnPB4/wouRON46FbT4Td3DOxzHH3x94+lbBds7VQHnAyfzpttELW1VQPmxk/WmNIvmCMOokxgLnk+p/z6UhwjyoJLkQwS3DDlQQqnv/AJNcgPEerxlwY1MbRzTW06KCkiqhIX1BBwffmusugILeR1+RdmOMdccVQ0kI6yxeTkKOGwOM9Rn8BTVrCk3zJXJohqFz4eXyrvZdvBuSUAHLkZycjGM9sVkafrUq6NbXMqyea1x9mliOAPNL4OTgnAOenqK6WOJVjWMcIBgKBgCqFvLYhLiCXy2QztlCmR1z9KV0VZkMmov/AGha28tkU33RiR95CuPLZt2Mc9CMHvzWVbaheTXOj3LyHMwuWeNXKocEADHtW+brTGniO5GdCSn7rJB9uMg0yT7BlDHbLuByuIfU/Njjv39aaaCzMuCV9XC3SYjS4hWUR4yVJUHrjnrSQ+VDdowiDFzu3YO4fT/PerP2WS4mIsohBAoCqNu0DAxjH4VnnzopMmQxzRtgAe39KowkuV3Y7UJ5JJW3H5UHypjPtUMcsVxMqqgUscZK4C56471OMNJ50uMngjPWq8VuZZ1SNyuWwGPb3oQSbbujftogkYDuWUjOF6A+oz9KvKCqlsnC9j7f/WpiRsmEK/PxyT/n0qZyykj5V3Y68+x/SoOhWSsgIEci4+6B1/P/AOtUEMsMNiZJn2JDncS2AMU9htgUks5A2kE/57ioBaJNcsjhiscgkVe2T3Prj+fNICS1v0vCsgSSIfdxKMEkjIqae4jjhLvIoCkHr1//AF1Tk0u0C7djlySSwcluTljnrz/9akfSbTk+VhTnJdz3/wDrcfTiqdhajmkMl4Qsa4xjJYYXjJ/SpZWjWIu7KvGcf7XYfrVZtLsQdrKSMbgCSATnn656fTinPpFq2/ersDJuILnB3dT/AE+n1NCSGrkispkYKG+UA89MYH/1/wBahndoryJ3AKPwx9B/k/pVq3tIrdSI127w2455JqO/USW6HPVgPz4/rU6XCV7DygE0rYB+VW/U1KFjaOXcOdpHPtxTHbMsqqVB8sZ4z606TdHGxL9DngD1yaaAZpqqqMVBOWPf3qe324uG/iaRv0wP6VHpzlIY1brjNTW7hrRicYZ3I/76JrSW5MPhLUUayKVYZUpg/j1/lUsNoluQFeRgqBRvctwPc8596p3LyQadM0JlEhcBDHF5jdug/PrT9La9kSX7YzMyvtUmHy84/E5HvVkmgc7T9KKQk854xRUgbsnWm06XrTf8a7DlHjpWBcf8fMnH8RroO1c/c5NxJ7Mf51jW2NqW5EOD0oQ5dx6Ype3tTBjzXxjPFc5uyb8KaGBPegNkc9KcMU0Bl6j4l0jS5TBdXii4/wCeCAvIc9PlGTWjDKJoUmVWVZFDAMMEZHcUogiEzTLGgkYfM4Xk/jUnTnihkiDr1/ClGc+1L1FNOMUDM26BivNyhisg7eopu5uvlt+n+NWNRTMG8ZLRnd1xx3qsUJPA/wDHzSYl2FQuT9wD6mn/AD56L+dMCH+6P++zQQB1RfwGaQhx3eg/nUZBk2jBHPUD/wCvTRGJCdvy4OCNmKkSEqgBKkjuVqSh21wOWX24/wDr1GgLJuLnkegp3kcdEz7rSKSI9uMMuAaYEEu9JII1V3XPLZA24HH1qxC7KzLvGSc4Yc//AKqZJDvYSMDlAcYcr1HtTGjiVidj7n5Yoxz+NAvQlZ3klCkLtT5mCt1PalbcR8oOOvJFV7dYW8zajiMAbecZ6+/vTvs0Umf3bgHqCG5pFq5SnsZ0Jlt4/kPJTIx9RVHz4w22QmM91cYrpGYJFt5zj0IprNE427omHcMadzOVJNmCoRhkbCPakeEbcoFBHtW01jZSszCKInGPl4/lVK4061t1L+bNGxPyoJN2foDQQ6TWtyTTreSC3Z3KHzjkLjBxV1RtGA3zf3R/hWTDdT28QjlXzo1GBxkgf1q9FdxXOdjKZAMEEcj8Ov5UM1hKNrIsbsgs/wA2B/Cc4/rQASmRll7Luzn6mmswIwjEkDkHsP50jsIAXc7CeSc9fwpFiTkQp5uRGe4zkGqEcJvpAzrthByFXgZ/qal2SXz+dMNluPuqT1q0i7iqovlqOuO/+fWgVhrxQbBDsXA5BU/MD61Csk6FUkjeaNTkOq8+2R/npWgEVRhVwKbkIMsaBkBu7eYbRIAQPuH5ST6VmXrhb0hMgxqFLKcEk81qmBZz5kqBgONjDOB/jVSbR7GZ8qskbH+KJiP/AK1CInFyVkZjMGB+XD4yN3NW4r2ztYMwq80rgFgOfzPQVBd6SIW8wtJPEuAQ3Y/QdaZAluZR5oXywMoCcLmq6HPG8ZW6kwa71FjFwiY5RDhQPc9TVrT7dLK6lthhtwDg7cYPf+lRaaWS6doxi3ORluO/FXZFP26CQfKGDKT36ZpM1pq65nuYF9A817JbxyFP3uOD0zz/AFrXitoo0it4TI0yAjzGONo6H/CrUG6WaR4ZmWP7rOAPnPt/jU6RLE5Kg5PVick/U0X0NFG10IqqihEwABjFK9rFKu1l75BHBBpJAobcAN2eKq3N7Pay7NiMpXIb/JqWy1Hm0RXl0hlZ/IcIgxsQjIAxyKxnklFzJCI9q5b5yvp3/wD1Zro4bqWTaxTPqApzUE1qbi6jaSKNIo8kBhycjvjjFUmQ6cV0HwytPbISSH4PI6g9/wDPSrBXKL36jmqt3AY4kkiYjaQGIXA29MVOba5K4W7UDOc+Xn+tJoZIqrsZlXG0ZAP51QWZzeLIceVICE564xzVwWrkeXNcFl2jhVC568fSkvU2RwsBjbIo49CcUg3G75DxGFA7gf8A1qQM4ALKPqGzj8f/AK9WPJAyXk+XGAD/APXqNpYY8qvzseynmmwG43RhvLfAYcEY/wA/rTgrPEhDbccEDn3FL++eMqsZQEfxGo0lJjkJU7c5GPbrQMn8kd2Y8560wxqRhowBngE5p77hhiCPqf8ACmEyZ/hx65pDIWIWWTjGI/So7757dgZFbJyAcehoLn7c6EqV8kknHTnpTruXau1lOT0X15FOO5L2LVv8kSgL2p1ipGnwE9WRT+YqrE8yQzySyDiM7UA4XGf8/wCeNCNBBAgZuEUfgBWj3Jj8JahISAEkDLNjJ68mn5JPHP41TutOttQs4Yb23hljVQSksYfDY6jPfr+dTWFpHY2620EUcUSklUjGAAST/WrZJZOcHj86KRhx149KKkDel7Unb8aWTjFJ2rsOUdXP3AxcSYPO8/zrfFYNwP8ASZP981jW2RtS3IwD1qIgs7bR3qToKRfvtxiuc3H7TtxUigYGaYBnvSgqvGaaEPx+NNJ5PFCqS+7tTse1ACc0mKd26UYyKAI5FDKykcEYrLhWbJXemE+Qjbzkfj6Vrt1wDWdOjJfYQDEozye4/wDrUMRHvw+0uc+wp4B3EFzwM9BTlt/nLEqrEYJA5oEILZIk5HUnH8qgLCbcfxH9KRgURmLscAnoP8KmEKdi3/fRpWhQjB3c/wC1SKsVt25fkZ8d8gCo2D8H5jj0xT2Ty5AkeVUDIx0pqtuYgO3HtTENCk+ZIGHIwQRjbxUSwmVmdVxGeR/tfy4p3z3EpQEeSv3sj7xHb6VJL5YZS5X5QeAP/wBdAdRbcGKRgynoMHH1+tSl1TlnkPttP+FN3FsED7y+uKZ+8CYbLHPXP/16LAmPZi45YKMcL3P1qOJ2PyfIW9F4Cj3pzM5ZQMgd+P8A61R7418wsygluC/0oC5ZEaqMnDMe5FQTWsEp3tEd3TcvBpFaPy9zqi/7OBmjzFR1A/i5JVuB/Sgej0ZXm0tsfupdwHZuP1H+FUpbV4+ZYXG3o684/EVtCZtrEFSobA5pZLlYomdxg46etO5m6SeqMKG9mEm35ZkA4bvn39TV2O0kum3yyZQHsck+3tVqytztMswBlk5IPYelRmP7A7ZZjbOcjqdjf1FJlxVlqyxtVGHy7iOBzk/h6VHJKu9C0gV8/Kv96pFUyIpDYQ/MNvU1VvrdV/0hF9n+nrQgk2ldFm5ljhiEkgPsB1J9Kq2t1JNfDzMBWU7V/un/ADmnxyJeweRN98cq3f6j3qlHC9texKVO/cOncdM0WIlNtprY2mVgMrjOPzqEll+6w+fqcdPepfMxycBR371DlcMw5B5b0HtUmw4DdjsCOPYev1qi+mRtcbkU+SPvRjjJ9varylh2G5v8/pUm1lUAbQo65p3JcU9xscIQDKqMDgAcD6VWvcyXFvEhIYkkkdhg1ZMpb7uAvTPc/SqEO77e8ojJOSnUcdOp/OkM0UVY4wijCqMAUpPPBNGAcHFNkILiMdSMn6UDKRuHbVY4zxEYyVHqfX9P1q4VXzVYqDwQDjp/nFQssUjCfaQ8fIzkYHerAVVGVz19aBuwzBzwcDOeBzTlEZ+6QW9SckU5iQelOHI6U0Ijlj3xspP3hiorNy9tGx64wfqKklnji/1sqJnpuIFQ2UqyRyCNlbDnGDxjNAizu/eDnsRUdxH9pheMPtcjg+hqRwcKxxwRn+VNMbbwVI96QFaCNXUlyS/Rl96m4gGY4xz1AGKSUGJvPjXJx84HcUhuldQykcjPqabBE24ugJXGR0qoCoZ13E8EEDnrQ0zZwMHI6E9f6Un7xlyUY89On6HihDD94y7iSmR3eqj24TP+kDJ7A5J/Op5kkwCgAOccjA/NaiMUuSZJFb2D5A/MUhpEMFvIXljLkl0HJBUjk1NPEy3MGeQuBknJPX29hT7TYlwWJA+QDp/9b2p107NfxxgcAbs/n/jVQ3Inexauos2Mpx1Uj8+KmkViVTHDMFP0JxVW4Z/s6jpl0H/jwq8p3zxA/wB4dPbmr6h9kNRub6CRRaaf9qXGWImVCD9D1q1AWeKNnTy3ZQWQkEqfTNVbrVdPtb2O2nu4kmk4WNmAJzwPzNXAse7kZ9KtkDnAAxiimyAoCwyVFFSwN6TrTegp0nX8KaeldhyijpWBcuq3MgLdXOBW/wBq524UfapWbn5z/Osa2xtS3AMG4H5Ui/NI/T86VQBjriheXfGeuawNh6kHIyCR2p4xxwBTCSi9M0ofPBGOKEA8Fe5H1rA8Syax5Ii0YSmebESuCuyHJ5ds85A6Y/wrfUD0pCRnFMRT0wGKzERmuZtjFfMuQQ7Y7ngZ+tXQ3amkCl9qQDGwr7s1BfIzQb4/vxnevvjtUz5LjAzTyuTz0pg9jNEryLvMoVTg5VcfzzSud0bESP04wSKijzG8sYPCOQPlzx1/rTnctExBHQj7tZsExyurcAy/iWFO2g8Et/30aijAX5VKbjycDGae0hQcgHnHWgYeWgb+LP1NQOF3mKJirNy7DsP8akluNqblALHhRnqabCrqnzBSzcsc9T+VAD1RYgAHxxgA4oMIL+ZkFsdeacyeYMFDgHPBoV23FfLIA6dKYhjB1xwOD6+tVTfN9p8gRDOcZLcfyq1KxCEkEYx6etRK4MQQfMc/nQCVxiTMkjB/wG7IxVO9u0klhjDjb5mWwO3+c1f8rnLSPkc4wRiohbRTPtnjRmycNjnH1pDkrrQmFzbvxviZjxhmAqUbkC4B2kjoc4/CqkmkwsPkd09ATuFMt1urfKh45Iwduwkg/hRYIzd7NGgxBB39Om4VT/192I+Xhg5O0dT/AJ/kalnukhgYA/vOgVuuaW0gFvAOznqc4/CkWyxlcBWbOeV5waXy0aMxsuVIx1qIxbm3Ocr1yKcG25Ixz0x0P+FAFFDLp1x5THdbuflJ7VecMxAJXZnpimsiXMTpKOTwf9n6VHEhKCGY7igA/wB4etPoStCmbJkuA0chWEHKuOdvtWoiBeep9T1NICFPlseo4z3oBKEIVJB+6aGKMUtiK5kEEbyyIWUfdC/1rLjvJA2SQ6k7ijcAfQ1euzqG7MMYKg9Fbr9c1ELFbtd4je3kz8/HB+lCsRPmb90kh1K3LF5AUOMDJyPz/wAatFhKv94Edug/xqlJpAUjbOQO4ZeT9MVcihIjVNvlqo4VT0oaRUHL7Q0ssCuwXJAz/n0p0MRS2VG+8RlvqaJUB8uJeATub6D/AOvintvwcMQTwKk0FicsuGXkfqPWmDPmq+M7sgfTt/KllDeV8hww4U1CCwlUKVIXqN/1HpQAt0FuLaSJWJLoQCBmlgaU2kaMuHKbSSehxSh1iVTIyqACCSeKZHPF9qjgMw85k3rHnkr0J/MigCXe5I3FeWIOBn1qpfmUafK0UjmRTxg471ObmH7QLfzF87lwnfGcE/qKS52izlZ8lc4K9M8+tUiZbHPzJGYZELulwxzGy9D7HjrUtlcpo7yR+YZ0c5BDZ/z3p832Ta0gtmAAPRjn9Cc1QRPImfadyu3LE8DI/Wnuc6nyxstzpYdVt7lHVmWLA4LMOakuEa5hTyZSgJB3KeornfKnuXEMKLKy4JI44579qlivGgWNo2fCkHaGLLjvUuJUKzWrOgt4fIt1QuZCB941SXSxE8jwzMgY5C8YFINftVQeaCjdwvIqpJr5kJNva71GCGY9fwFDNrpq5oRyGM7JkCsejhiA35VM0RK7tqZ7ZG6sRJ59VZ1eRIgpwABg/gOua0ZRJb22Yp3ODllwM+/BFCKLHlqDuJK+u0VFOvG4O3pyvY1Oscrorx3ZKkZGUBBqrc3RgkWOdOpyHXpxSaHuLAc3UjYLfKAMcfpSMVbUUJUhhkZx24p8LbpndIywYDjI7VEW36ptC8j/AAFVDciexbuky1uu770o/QE/0q3CmbqI7uhP8jVWQZntVPZi35KR/Wr1tjzxkdASP8/jWi3E9kOmiLhl2rhyN25c5Hf9KmWUE9BXO/apH10xi+1eNTLjynsswnHYPs4HHXdXQF1XGcYNNi3HO4Knpiio2UFG5wAMiipYHRydRTccU6TqPpTa7jkFrnbnJuZPQOf510Vc7cA/anIBxuP86wrbI2pbiKcJikQ/vG59OlOGAOhpqAh2+XHPp7VgbMm7dKBk9qapySORgelPGMYGMUIBp3FcK21vUjNV47WSObzDPu9crz+HpVsVClzFI5CPyGK8jGSOuM9fwpsRE0Fwx3LdDnkfJx/OnJBdLjdcqw7/ALvH9as04dOaSBlJobrflboD1/d8fzqWOOZS/mzbiTxhcYqbvxQBzzTAxJ0e2v2McpYMnzq4zuPY8d+v50kkx3J90qeSdhHT/wCvVqRQ9/MTnhVA5x61E0Q3nk7QAMcdzUS3FEjWUkNIY/m696e03H3RxyMMKd9nU9T6dR6Up/cxM24bQM9Cf60imVVYvcGXaCkfyjGep6ngVOsu84COT9MfzpkduRAAQpY8k9DzTUhliGWYMqnOBkHr/hQCLYL4/wBW/wCY/wAaii81G+dWb3A/+vVgAgfck/77/wDr0xh5eGUMO3+etK4+VA3zfwP2/h96hYKVYMrAlx/CenFWNzFcszg9/l/+tUXmr5pHnDoMA496YJWGsqFNoYDjjcM809CiqF3Lgds1J85HDL/3yf8AGmNvJ255+hH60XCwEx/wlM/WoRCsjSAlsB+mevAp580JjYrc92/+tWDNua4eOONd7SMDgc9TRuJtxehedvOv1SMYhhYZ2jv1/nV5NsrcAheuKZBB9ltwrgNkfOQP88U99iRszLuzyMjnPpSNByS4l8sIDgdRx/nt+dKGBlLYwvTPvVa2RkjDZ+eTliB1z/nNR6pLJDCkcLbQ3BPemRJ2V2XApWQtnlvf0/z+lNmO9VCghw3ytjpVX7X/AKLHLNKqgkLhl6t/getXA6iNZRnBAzxSGmmIsglTBUhx1A6qaULubDO2R1A6fWkbLss1vgsBz6MPSqF1qO+RUjym3725eT7Y9KNxSkoq7NSLcyHLZI6H196CSq/M/wA2eAves621GVrgRsu5X+6qjG3/AOtWgAQdzcsf0FGwRkpLQVVO7cxye3tQrjpkj6jrTtwznmk3DB5FIojjO6eZyThcIPyyf50ocOy4JxjPSm2hElrvIwJCWOfc09cF2wM4wOO3+c0AQaiktxptxDbSbJniYRv6MQQD+dc4Fvo7Gwggsmjmt7RxI2DmOQIQNpBwxLH39a6fblGUHoAopBk5I4y39f8A61NOwNXMGJdVW60uWSWR7dlzcRbOVPln73PPz46AVX0+C/bUNPu7xLjKWc0cjAYIJcbRx7D9K6RQxIye3H04psSB2bHBI649v/r0+YXKczNHrpMNx5ZN+umvGXwMCUshA9M8H2zWjdxztYzk3D+TKiIIZVOVbqTk88jt7VslTgbcdCR+ef8ACoJYnuFRGHy7w2COT/nn8qd9BcvZlOxtII49rRqyqBwV79+vvWVd3kqSyGEJHA7ZPAwmBx+NaupTpAh3uqlzgjocDt+PHPvWHAkql2YgLnLLt3Enn+v6fnSRFSSW25NDrN0sTRrsSZMkl15IOTVeAvO0gdSRuBVsDJH07UrASOoaJWyMu4x+A6cipYpI4wGiMpB+XDDGP06mjqRKTcdhVjjkhCMpiwc4Y45/qKtxxRtNHG4yCNoCAA/rTrWJrufZIWUbSVAXkmpLuIW9wpjwABuUnk020hUqUptF+ysLRGMqxBm3cs53c4/L8qvqwZcAEDtxgVDDI7oCqLtbnJPqM0O53YdmAHUjAFTc6UrEUZa3leAECNvmiPoe4/rUGqY+xIzENtkBPv1qW9jLWrNCreYg3K5HTHuag1CNZNL8wlnBKsPfkUCb00HabIJGcE5AA2n1HXNKyFtRZoyBwMnH4VnadcqglVflO0AZ64z298nFaViAZXOc5bgsecDgVcNyG7pFpQxvo1fBKRsTj3Ix/I1dt2P2jHbYf5iqcG17meU/3vLX6Af4k1ft8rIuBnKn+Yqojl2JW5FIMZ5FP75pcAnkU2IhcLsP0xRSyY2tg9RRUsDopOtN7U6Sm9q7TkHY4rn5yftEnGfnP866DtXPzti5kBH8Z/nWNbY2pbjRyOaarHzH570oJJwPxpoAEjDbnJrA2Jgw7UoGepxTRtGRinAgChAKVrnYvC9rHqi3c/nX0gIMc1zLuNuFIIVBgY+vWuhU5JI5o3ZHI/KmIXFOwaOCKM5zQgExg8Ck4HPNLzmq17L5Nq5H3j8q+5NMT0RUibe0kmfvsSPw4o6hzn+KljgRNuM/KMdetRtFvXcGwAWyPWs2CWhNmoZ/mWOMY+dgD9Byf5VNn+6M/wAqrK7Peudo2xAKDnueT/T86QyyRxxTSuQQe9Eodk+T731wKUIVGCSaBksWTEpJ5xzSTD90ccUR52svoeDTXU7NpYtn1pMpD2AwetRryi5B6d6Ax4+RiCOTxilU/Lg+pxQMjaNF6Qj8AKTy1YDBdSR03HiqV617HextCjNEAMhT788fSr000cELSyHaFHNAk76GVq0t3bKggkYiTK8qCc9v61FZodNvB9oXcZEDF+pUnOf5CtO2h89lu5wCxGY17IP8arauu2aB8dQyn9Mf1pozm2lzI0sl1BTaVPf1qjLcobo2qAuqrmTjhfaqcEtxFmO2y5YH5T0Hv7UQhbZAk0csTtkszDdk+uRTsJVFJdjStizjJGABwM5/z/8AXqrqybhECONx/lVmBleHdldrnIzxn3pk8Mc4WMl1KncNpyf1pXsy5LmjZFKNY7i3aO6bIiIYZPYVoqFUgISQ3K/McEGseaCVZGBikYKeCV6+/StGzj22y+Y6bsnAP8IPahk05PZl0RMuMMdvccVU221xGd6iQDjIGcfl0q0q8fMx9sE/41WgsIoVJQt82Dyc0jXrqJb2SxszW8jpuAzuGf5ipz9oiyTiVfQDDD/GpI4igwrdfUU7Dg9m/SgVktioJ42m+VsEdF6Z/CnXUyrbNg8uuBT2VGyJ0yv+2oqnc2tvsUImdzjgscdaALS3VtDGqeap2gD5Tn+VRRX6sXCwzMQ3OF/L9MVJbwIru3loGHAxz/nrTbhEjmEzKNhG1/6H/PrSBD1nlbcVtJOT3ZR/WmeZcID/AKMB1PMlSjeI8FV9/m/+tSsHyUAVV4J5zQMrmS7Ugm2QqB/DLz+opy3KQj95G8R28Fl4z9RkVYZRsbAySO9O4ynHBP8ASgCLcjqQjBgcIMc/X/PtTJ51iTdhmYnKovVu35VXvYf9JDxKqBfvFTg/5xWdmSS9lWOViFBCFn9OvpVIWxnajG2pMLoth2AVQx4UZzwB3p8FqkZO3DFiWLH1PWmW9k15eNHLsQSAlFL/AC88kdDzSRys0nlumzyyVA355HUH3pnM1Jq/QWW0W4+Vd6BSdwXjOeetSafZLLcFJhhSWIf0PH/16dNKIkLDndkgdjgf/WrW0gF9MWVFXJYn7vXpUsujd6PYS3hWGSOVJi/Ypx3/ABqy8ImALqTsHGGA6f8A6qdtyFkKsMHPsKk82LLZOV9uaT1N0lHYYGkyUSNlx23HipDCfK3O3zei96ihWNWDRlxkc4INTO0XQqTn+8f8aaHcRQCMY3cdM7qobdunSKwOY22HPpnj9MVf8+SM/KpKnvyQB+lVHaKaW4ST/loARj16dB+FBL1WhhXEsgnheNA4AKttHbPFdHYogjUnIwvase2jBmmby+duACTnuCa2rSPcAB6d60iYp3J7ZALOHYSS67jn1PJ/nV2AHezEDgBf0z/n6VSsl2WcJJ5VcH8OK0VIVmAIHAP86cdjSW5KUz/EMUhVgeGzjrim4YgYbFHlknHn4b602IWRRgnB5oqOQAJhwHx3oqWB0Unam9qdJjjFNPSu45BQa5+ZibiXI6Oa6AdKwJzieUY/jNYVtjaluRB1Xgg80gfBYgZoZdyYpiD5m5JGePyrnNieMk5JH0zTmcLyQB2poGB3z9ayNU1C/tbuOK30eS9Rhnek6Jz6Yb/PNNAbYGcEUu3mqtlPPcWkc09u1rIwyYXYMV+pHFWcnNMQ44HelHtRxSbT64oAaTzzWZcS/abhQq7oojng9W/+tU9/PtxCsgDv1PoO5qtE0SKFWRAo/wBoUmxPUl3k8eW36f401SAu11YZzVa/ubiGNDZw/aHLYZRIFwMdefy/GrqFSowSe2SMVIET+Xt3SBuF54OKitZYjCH8wZkO8gnB5P8Ahin3rbYdndzjn07/AOfemZdkAVA0Q55A6A0hljeOzL+dCjqBzSSRRsBiJB9Y80iwwjnyVz7R0kyuUlQYlxk8r/KlYfOvfNM8uMbSEA5/u1BqFuHt8og3Id3A/Omw2RZU/ulPtTVJYsOeD6VW090kt9oblDjhqmGd52y855HBpDi7q5LnbnKbs1g6jKlzOyqQ0UQ6g8E1evL6eGT7OkJLSL8smePes1rW5WMjy3xjnGD/APXppGdWTtZG3aDFnCB2Qfypt1ardIoYlSpyCKbbyRG0hDnjYPvAjtUkk0aQOysp2qTgGgvRrUy7PcbnAVWUghyRxtHf+VRzt58pKDAY7Yx9e9NjMiRFEcANjdx1Hpmp7VS12vy52AtwfwHWqORO8VFGlGjRxhAVZVGACKjYsB8sYB/2W/8A1VLuGOTj68UhXIzkmk0dKbI1lbBD7gc8cU4zLxmWPH1/+vUMDtvdDG6BSeW7+49qmYcD60WHzDdySSKmYyoG4lcflU+xQuQWH45qF1BABGc8U/YoGeV9wcUmgUiRcsMrJnt8wpoDBmwqEg9c4qva3RuAwXzFIJxuGQRng59+v41YUuoIIDZOc5xSsPmQpfuykfhn+VVJSkjxqFwS+SOhOAal86PzdpZwwG7b146Z4qEOJWaZcbfuJvHB9f8APtQVoSqCFIy3J6Mf6j3pSjMhjZchhg/NnA79aRRsPJ6nkk+lSnLv8pAwOuM9f/1UgK8TgBopMl14U5+8OgqySPMXJ5IxTfISUHePmRsqwOCOO1Vy32aZUnI5OEkAwD7H0NAy0dw4JyO3FNV9qR5IA4z+VSfSohhQT82VJOO1ADd6FpCwDc9dvsKxItNuSzTRzog3MAd5B/QVuhV+0H/aUfp/+sVTQrDfGB1fa75UhyAPwH4CmiJxT3M6a0ubTa7Sqd4IGD16e1VVXf8AuHkMccnysdm7A64/PFdK1tDcRJ5q78f3iTzWVdaTI2ohrdIhEE+bOBg/gKq/Qy9m07xZTFpbm8isGI3BWyQSFPGRwc9jWxp8bQxvb7iApDAZ7Ef45rPtXYXEbKAVGfujpxWlgpcxFnK70IJ9CDkf1qWVTaavawsinZkKCdmevp6UoilK8jn1P+NS/KQuMNkkUgmGFGDux6ihmgJAwHXP1YH+lL5Zxhh37H/ACnK77RhFP/Av/rUxsycHyyQeh5oQ7CmyDvuZicdv/wBeahZPKu49rZ3Iy8+2CP61cVJT/wAtdvsAKpXqGJ4ZNzMRJg9+vtQDKVjAdwlM2dwwUHoTirtlIUjj7nGDVC1mZLiSJ8gAkJkd+uKu2x2yyLjo5P581cTHTSxas5MxshPSRxj/AIET/Wrk8Uk8UkUMxhd0AEigErzyRnvg1RtWXzrhcbT5mR+Kj+ua0YwfO6/wn+lOJctyCwtZLUSQm5uZlBBDztk8+hxzV3ylPWqq6nZzT/Zory3e4xny1kBbA9s5qyCWHIqmIHUBWHaimOGKkA5HeipYHSSdqaegp0meKaegruOQcOVrAmH7+Tp98/zrf7Vz8uftEh/2z/OsK2xtS3GbcA801B8z/X+lOByMnrTUb52x6/0rA2JBgHrTJYRMoGWUhgwYHH+fSpO3fmlGfemgFA455oxzRS5ANABt4qOe4W3iLsCccADvUvXvWdcYubg8/u4eBjjLUtiWMAOS7nLucn/CnEjOADTHEcCbpHIHcljxShFb5gzEH/aNSOxHbTPNLNHJAY9jbVLfxjA+Ye3NWPLjz9xfyrO1DdHLHteQAhshXPtVWKVzKcSTH5eAXPJyBj9aDPm96xpsUErP5YIB2LgD8f8AD8KQbTj7o2kgDcBjmpFiWKJV3Hgcncary3IgkjVFlcOSWcH5V5AOc/Xp7Gkalh5P3YD7SQB0frQlwNuAAAOOWoO51U+Y5VvUAf0oRWUfK55/vDNKxfMrDmmLRNjGccfMKf8AOygq4AI7jNMYyDGChycfd/8Ar0B5ERRtVsDHBxRYXMUbVFtL+SDACsPlOOo7f1/Krk8qRLuYE84UDqT7VT1CZUaKcKweNgCMdR/j/jUkX7x/Pl5c8Ko5CD/GgmOmgoiPzTSkGQrxjoo9BUuBmmZC+YdzEkc5B4pstvFPIshKmRBgNjkVQmPtTiEIB9wlfyNSlVkGHUN6g81DD8ssyA55DfmP/rVPxQBSktrJ5WhVgkwAYqjYOPXFLb2jWzuQ3mbsZJ4IH9ake0i8/wA4ou4d8mpjj1/CncjlV7jN+VwPlbsGFQqxZGeSJoyPwP6GpTyhyc8VGuSioc9M8+lA0AkUOIjL+927tpIzinbmJxkdeKY0UHmNKcFwOaie2BuY538wFEK5VsLzyePwH5UIGWtxOGK8DPQ/hSmQL94MM+2agw4VUBwcDk+vWqKWEk1uYHuT5RYsSR1DdR/PH1oA1lUE7lc89s8U7p3qj59vYrHHLK5eQkKSSSOMjNWizeUSDuyOOxpDuU5rcLIs6g+awCqS54yP5dTU1ltjtyhPyiRwCT15NMfN3LtifaI+Bg4Oe/8Ah+dSWzMtuVHUscHPTmkyk7FggIcodoxk+mKRVdjvY7cgcLTQ+9mTOWyAflIGBUrHDAbWPuKTGtRsI2ySKT3B5Pt/9akmVpWMbxK0Z65P9KMKbnawBJQEAj0PP8xTiFaXaoZcemQKRaI1zathiTCehJztP19KmAAc45DDIqGd/IUbn3buApGSaqmznEe5yRF1MasflFOwieW5gt9pklVdpwQTzj6flVK9l8yaGdFkCDncRjOOasR20KqWhig2lM5HOfoaXUY91mw5wpzx6U0KSvoWsHYVU7eeo/Ok2kMCX6KcnpXPpLNBcrIASE/vdTnj8R0qbzLjUZPKVwMcsMcL/jSWuopyUXy7ss3GqrbrJgrIoIwxcAZ46cVBY6q91fIrxKqAEqc9a0ItPt7ZAgXc2CSzDJJ4/Kor1fLa2nQZ8uQ7v90gj/CgS5t2WHfEock9R0xj0pAVI/gP1f8ApTZWL/wpkepyRT4mKIAwfp/dNIserOBlcewCk0EyEYCkY/uqBj86VCzMfY8DjI/Wn/MCxAB+rf8A1qaAa0cjD5tx/wCB4/lVe4QrEPl6MpB3k96tl8cmRFJ7Ef8A16qXsubWQCaM/Qc9frQIrRKi394roDgqSMetTxqkV1JtUAEA4A9qjj8ttTlAKuskYJ98cU9xjUAQeqD+Zq47mTLKGMag4wfmjUj8Cf8A61WgxF0qgHDA/wCf0qoSVvocjhkYfyP+NW42IlUjsf6Yprc0fcq2Wmm0l8wzMAGYiOONUTB6DAGeB7/0xrbgRn2rKutTuIr4RkWaWwIDPLNhyT/dXGPzPJrT2uODgj1FUyRSU2HPHHaimNheQvT2oqQOjk6jmkPQUsmKb6V3HIO7Vz8/+vk4/iP866CuduMidznjef51hW2NqW4gPGMVRudVtLCaKO5ZkaeQRoQjMMnAGSBhfxq3uFYeqaLcXly15YajLa3YAUqfnhkA5AZDx+I5rBGzNy2u7e8j8y2nimTON0bhh+lTHGOtVNOt/s1pGgjgjcjMggTahfuQKuLken5U0A5VOKXI6U3Lf5FJzmgRHdzi3tyRjeflX61VgCKgUMGx39T3NMmk865zgskfAx696axDMFBC56AoDmpbEtXcdeW0F5byW0674pFw656inKm0bQS2PXFZF1hCbcsH3OXJKcgZyB/n0qscKD821f8AdPFBLnZ2NLUBiSJu3I/lVC1lE2rxKv3VJGcZ5waktrU+XHFLIryFRkv1A9fr/ntVs2cEbAWxiiZSrAj0z8w/EfzoJ5W3zFx3KNg8/RCary3xhvI7cwMQ4z5mMKOvX8v1qYhioK4PqPMNShMdGb86RqxjbiVJAAz2PtSOZAy7Oh68dP1odX3f6047ZA60wSSKxVinqOCM0AiYjJAOOlVZWEChEYtI3Ax1P+fWllnkVV8tULsdijJ6n8O2KS1EY8zYxlkB2yOCCQfTrx9KAK0QiWeVZCDcKucdhn09T71akRmuY3SZk2AqUxlWzj9eOtOYJ/FuJxjLIeKcrZUFQeR34oAX/lk5zgnPOOnaq1nCsUQjMplVeBu5I/GrAMirjaDgdQajnkaOIttYMeB06ngUCId6IZrollQfKMZPA/8ArmrKP5iB45FYEjmoP3BQW3mISuMqw9MHofwNTrtWPCsvHZRQA87wDlR+Bphdc/MjD8M/yqVunWqd3PJEVSJNzEg5bhQMjPPrjNMGTCSMjAIJx0zUbSAsqBeQoIPY+1SRlXiUuoBI5U80uxc8fL9Dx+VIEMYIwGAPm6/SqsfnPLLkReUxwoRuV7duverIRhM5DZHoR37/ANKU7gR93g+uKYmRQWvkzysXZ9/zEE8ZP8ulPVCz46KRnH+f89aedx3ZU/N6Ht/nNEbgZLBsnk8HigBMRl+UG7pkrVeeZ2byoQQ5GEbHGO7fhVmaRRExVhgDJPpVT7I8keRM8UhYElcZA9KQyzDDGirGq/Ki469+/wCNQxxrHKVZyPLbIyf4Tk/zp8huorUNAiySswJ3HAxn/DiluHC+XM48sA7XOex46/XFDGtx8aHzsxMmFTqV65PsfarG9x1TJ/2TUcEkJchJVf5Rj58k9akkLgfKM/jipZcdSMuv2qEjgkMvp6H+lSSuEJY8ADmqc8EktjuTiRW8wDryOoqOba8JKxDBVWVtv/1qFqN6Fm2G7MzAFpPU9vSp9xC4U/ie3tSBAqggjAHXHX60bgCcnB9+319qYiq0RhkkeJSRjDoOmT3FSzlJLSR9+5dp78Urt5a4yVB/zxVO88uC3LPNjzGCk4AB+tAyDT9Ojmt1mcvscAhDV6OCOEuyJtZuNyjtVsKFQAABQMDFULn7YLtBFHF5BK7mzhuvNBCSRYZxnGSxAyc9f88U0xho0U9Dwcj2pXLB1RsHd02j/PrUp5kGB0HNQWUop/LgUFwNvy9h0OPf+VNa6JPLkgjjGf8A638qGgxdODIqK3zjI/PrSNbwKRh2lbP94kD8qbBFdpZDyvm4z1Y4/Q1NagTSqHG455zjnj0qwkMQYEQHI6EipcMORDtYdG4//XQhj0iVdpVFXDHoMetQ3Sn7G+O5/rU0coYA56Ak/oahviI7MbmCqWUEk9ORTJIfJkXUlcyIP3ZGNvXn6+9EhY3cTZzwQflxUodHnOWiYBf61XlMaeUYgo/eZJUeuaqL1Iki3cMoe3L9nxn6g0+RwDvBwFINMuAv2YORnaysfwIqRwvPy8cZFV1H0LMlpbz3Mc8ttC80Y+SR0BZfoeoq1koDkA/0rIvFv5beBbERJO/yPPLk+Uo6kD+I+2QK1YUeOFI5JGlZVALsAC3ucAD8hVCHeaxGI+D7Gik2qtFSI6CTtik7Usnb6U3PFdxyjs8Vztwf9Ikwf4j/ADroe1c9cYSSZ2OFDEknsKwrbG1LcjA74ojOWc4xz/QUI6lAw5BGRSRkln4xzXObsnX2NKMev501QR2p3Of/AK9NCHg9waq3kxiiOD87cKKnZgoJJwByeay98k8xm2ZjHCLnn60Ml9iGK4WO5a02uwChizL8pJ7D379DTNQa3Ro8RKLgcoem3PU5H0q8rKNzFmGBkhj0rmruKS81H7WZJPLxhVU42jn+fHFSTN8qsh2+TzpftCgLvykm77wwOvvnNTxl0mIlibIVWiz/ABEk8D/a4/DNWLG18xzMfuqcIDyCfWrIYyyvJICqoSqYPA9T9aZMI9WV11CKyZ43R5ZgA0zJyEJ6A/hz7AZOKt3F5BEEKyq0mQFRDljn0H6/hTYrOzFuYQqmNjuYFs7jnOST1OactnZRszqkauwIJB9f/wBQ/IUtDTW4+6lW3iDzTIgLBQdvckAfqarQTRxIWuJ4XG444APUkDHsP5Va8m1nCGZY3ZD/ABdjUf8AZ+nhv9TGcYAGc45z/P8AOgGLNcWkatmeGNkznLAYI5/z9apC4knulkjmhNqwBwWw4bkHr3zt7VZNjYdoFBHoDnqT/Mk/XmqJ0u2uZnEabIo8KApKnIHY9QAD270aDVx66lAL9gVBWI+XvTG3eev8gKsW8axTSG3dQsjltqsMDIGePrz+NVho8MJXZaR8dNo+77jP+eT6mrMGm2VvtKQ4kU7tzZPPrz9T+Z9aALUzERMG3EkYHy07IA4B/wC+TUYk8xACy5LdKmIOPl5PpmgCktzP9ukieNliwCj7SQ3r9McdafMwaSFNw+9uPPp/kUTm83xmJIyufn3N29qemWuASuCqdM5xk/8A1qBFf7FbretdAJ5zfxMee3+A/KrOUc4JUgHmmxxzQyOGkaSNnLDIGVyc4+gqZQN7cd/6CgAZ0xjd1qFwzSDEyqg6gY5ppuWF4YXi2oR8jHqT3/pUxKBuSB9aYAjJsABUY96NwzwwpVVQOgpoRSxYqCOg4pCFTBBbjkn/AAplxAJ4GjJKhhg49KZcyRWyK5jZiWA2xjnk4z9BmpBkjKlgD2IpgMtwsSiJWc4HAbPH51N060gL56A/pSbyB8ynjv1oAglG+8iXJ2kFuPb/APXSK5M0sfl7WBwGK/eGOuf89KjbzJV86DYxzwrjPy8/qTirMbbhyrIcdMnApASHDcMpwO6ms/VZUEEcWcbnGQT2HP8AhV2NSGbaQADj7vWkYk3UAKjOG754x/8AqoG1dWMRnU5ztyBwQeRXQZCxqwJXIHXkU50RlO9Qw9CM0xQjfdDLgdORUt3HTg4hv/cNu+UFTz2qlAfN8u2Un5HO4jsAeK0CjtGyB+CMHIqtYRBd8uOXP6DihFssSF4xnGfUjvUYVyBhhnqKsMdwxUSp8zbB8oONvqaGO5Cwk+6X3DPy8Vm6zaSX0LMsihIxg5GPr+VaNy5UbYxmRztUH+v0pJYiunSRhix2Hk9z1P600KWqIrPzba1jW5cTW7AFJCMlc9j7e9XHwAFAABYY/nTLLB0+EdV2Co2hlgYPGzNGpyYj2+n+FAJ3JvkMowQSDjj6Z/wpUxy3qTxUct1BEiyyTYjY8ADOanhdHiSSPaykZBBqQTK8qO8auq/vIzuA/mKnQh4ldSDkZFObpmsw3drBePBNKY1cB0JYgc9RTA0wCV+bH4GkcYzg5IFVCbZRlpISnYBsk01ppVjJtrNiNwxuOzP4df0oQ2y06rhgOMKDWbrLsY41B+/Kqge3NSi7uVZlnsmGSOUkBA6cdqivXE81sArKVlByy+nagT1RbikVpy2CQVAHHuajuGX7MUA5Bz9MH/61PjDreFAVA8vPC4xzWU91cpcNbzeWdreXkLzg98/QimiJySNdz5llIo7ocY+lTxOJI1cDO5cjH51Ws5ne3Q7eMVJZNi3jHeP5PyOP6Vo9wj8JdSaOG3aSV0jRWOWcgAc+p+tLYaja6j5rWtzDOsbbWaKRXGcZ7E02NEuInhmiSRTglXAIP4fhViKJImYqm3IA2jpx6DoKYEjck4PbpRQy7uoxRUiN1+vPtTe1Dn5vyo/xruOUXPFcrq8F3cQzJZXQtp9+Vdk3jg9CPeur7Vz8xAmfOfvH+dYVtjalqc1o9pfHUZLjUYZYJYgE/dXTPBN/tBD0xW/Hku+B37/SnZz0FKmcuMY5/pWBtaxKCwHpSb+ecGkC9+oqpfu4h2xtt3kLmgCO6l+0sYo8eUp+Y/3vaq9vdQXcSvG42kZBQ1JGgEPlvHlSMfLSxhVlZY3T1ZSPm/nUtiXcrzJKpkkleOSz2AbD97vk59T0xWPHNI8xto4yc42HOc+v5e9beohFszkEFiAuD3rMsb+FLmUyowMXybguPQ5x3HPamjKpZysy85kSeGCCNxCsZ3Hdg57Y7Hvn6inIrsrlZCFEjA+uc8Uya6WOWNXcyq4bL7eFII4OOh69fSnWe91VRwdxdwSDjPPrnuKRsXsbIyEXJA4Hr7VBbG6C7bgDd2dR/wDXqbEnQlfy/wDr01Zd7bRIhI7Y/wDr0Eh+8TDsepwT/KpN8u4cKV6E96jSQXUAeKRHRxwQP/r0iySbQQv1JHH86RQ64lEULSd8cD1PYVBahoIER423dXYc5Y8n9ajhlkvLp5MKYYsBAeNx9at7n5BUj3BzTEL5mWyGIHoUNV4IZUuHkkvd6s2dgxgdBx+VSM7eS6q4VyMKzLgCn2aSJAiSTCXaMbscn3NAmLKFYrwp5/pUVxJDaW7SyINo7KvJqYqBcLhVHynnHPakmj3qFwp/3hmgBE8tkVlJIIyDuNQRgCWaTeQMhRg56Dtn8afb2620ZVTxkntgfSiJFe2AYZ3fMcj1OaAG284uolkR3GQCVdcFfqKkBYDcXUAngkfgO9IsQjBVR949Bx9aS5torlQku7aP4c8Hof6UASnfjqp/Cmnf/dU/jQI8IFDscd8804K2PX3oAjLSCP5VX25pVYrwY2wPpTm+6Oucil5zxmgRG/lv95QfTcvSm4G3CMo57CkuYpZQgjlMeGDNgcnBBx+lM3qsYWdkLjuRQMnKtsOGAfBwcd6rSGTyEhfHmP8AKzDuO5xU+1SMjI47HFQYV7iVXzIgQLzzjPX+lMRONuwKqhgOMelV/OdbsxGKVEIG1/vKTznPpjilggNuuxNzxgkgFskE+9SSbljYkgj3pAV7lLphb/Z5TH82+Q7cgj0/X9KshC8yM8QzsbrzjkUkLw3cKSI2VdcqwNPPLFwcBBtznvQyorUXbGxIU49QCRQpVVyXZeeDn/GlUtsLCQEAdxn+VEayeUoO3IHPaoLCVytszI+7jg0IPKRYyvCrjI5FMkDtNDHgBSxYkH0FT4+bkmmMaAoBKBQTwMCpUAA2gdKgP32kCk4GBjvQ0zLESoO7oAe5oEMyWupGx90bB/n6/wAqkZcow5xjaB61HsKIqZJ28sc9Sf8AP61MvIADA4600BBaAJYxKoztQD8an/H61WtTuEkYGWjkZfqM1NsO/dub/d7UmNFW9sIJ2Riu1iSCwGR09KoFJ7JA3IUj78fT8RW1MQFUH+8OKYFTYUK5HTApoylFXuY4uZ3iH744A4xgVcvFtxCXk2Oysu12xgnA7+/NLLpqScxkxn1Hf61XigfLQXEe+ON925ACCcDGRTJimnqX4PLZFaND15+QDHt+FOjMx8zftZfMyhHZcjAqFWRGLwMMY/eIOD9cetS+aHXarM44O7HB/HoaEaX1CXcXIP3dy8j6iql2hLQEDIE+P1/+tV10IQJ6Mv8ASqc5KRxEsB/pH9TUGg8GQXRKplhHyM+5rNv4nl1B/LUlmRXyGOB25/KtpRtuCR1Ef580iTbk2PHtIxn0PNNOzInHmRBY/LI8ZySGP681YtiqyXCc8PkZHYgH+eaqQfJdk4IDAGrY3G+YcfPGMfgf/ritW9EyY9UXLd/3gIA5BGTUVpJrLT7ryGyihx92GRnbPbkqBToG2uFPZv58f1qzJd28LKss8aMxCqruASfQUxD2Zipz360UEnb2HvRUtDN0/ep2BgUh60ox3I/Ou05BT0rn5PL812JOdxzx71vkjH3h+dc1JuMzjDYDHjafWsKz0NqJIDH1BoRVyxLd+n4VB/Fzn6bTQjJIzBGBwcEd+grA3LQUkE7uKzr/AAs0AGfvHPHtV5flP8X0qldvm7hwvG09RT6EspQJd/bpHmlXydx8tRkcYGM579eMelUGJuLr/WoGd+Mj5gP/ANVaVxqBtriOPymdT94jquTgfXvTb+ZWaFQvynLZx/n1qSZq6I/slxKuLiUsVdjG0fIwTxkdcgYpsenSxXCvIieWDksvf04+tVba5tbnc0W07WKnjByDg1oxKiWUJmfaJn45POeg/Ki5KSkyJrUwW0/lkFXJYqD/ABMeevTOauQl3+YZXAwNwpl4omkjiJbA+diGOQAePzNWI4CihfNkz1OcH+lBra4ZYckrj1JxUcrpIgjORvOBtYc+3PtUGoXE1k0bCUFGzu3gf56ZqRrdbkrJJGhZTlGBwR7igjqSqIolwqbfUhTVG7ut3mQKR5Y+aRgex/h/Grssogh+42eig85NZkkMsRbMoZZGU4PVW7/gcUi0X7CIQ22N+STk5PSp23H7rD8RmqtpdQXNsHZQhBIKPgEEE08lMkKIfUZpgiFry6F+ESEPbgbWO0ghvXp0x/OtAxo2CQpP0qlAJWu5hJDEISfkIxnGB/XNXGCJGSozgdAaCRFVdxYDGOBVXznRZHnmiVFJIIOeO2eKWSeOG4jt98i5TOeo9h/P8qlDCUFQY5PUelAWITOJLPfEyOHACke/FTRTxurBQf3ZKnHOCKhmeK3MZdRHHvySe56D9SKBHCrSXKFd20klRQBIk0U7lhIDg4ABwaWVSAwQNuI4YtkflmsUEiMfLu45rVsEP2JMlsnnr0B6UEQncLZLgvILjbwTtKMcYycceuKmMSE8gGnhCob7xyeprPj1KSa58uG2barMrM+RnHp9SevsaZZe8lGXBVfxFMCAOoBYcH+I1MAMZI7U35fOGWwSDx69KQCNuUcSf99Coim8bwqNznOadd25mi2RTNG24EsOpAPI/HpVeC1NqSNzlDk7eSB/k57UATK7biHUj04z/KqaxMyzBJZIv3oIYDnjHHPar6A4HJxjj1qLBS7ZecSjcPqOv9KAHDJALOhYDkjiorhplXNvtkcAkKx79qs4Kgknjrk1BbXcF6haFtwDFcEdcHGfpQA23Hys5TYTy69AT+VTYEEO7ew7kDnn2qG4CkAquFVxk468+1KZVMf7ssW7LkHP50DJdxc4WQBWAxkdeae4LcMCf904qHzQq7X8pUGDydopjTwHnzE9lLA/kR0qWikyZCDeKp3fLH39c1KyIHyqgO3GcVVtpY57ktDIPljwQCDjnoaskssvzAEdBt7UDuPwBwOg6VCpMtzu4KRcD/e71HdyNIFhhYhnPJU8gDrUkMUcaKkf7vA4Hf8A+vT6APbO4AnA6n60Rkg8Y2kfp2pGcq204J+hpcrt5iPPfAoQGbZMI5rmcfdMxD+2eh/z61eNxGCdrF2AzhOTVKwAWS7jI4MmMEdev9KvJsjUrgLyeAKGiY7DBMJXTAPHzHPpj/69JBJI8YaZNj/xKOQOfWi2CSWuF4aIlAfQg0quWYEgY6EY6UITESeGa4khWTMseN6jtnpSwqPNnP8Atjt/sik8mBJmlEe2R8bmAxu9M+tN81l88RfeMgGdu4D5R2FMQBo7iOVXRTtXoRn1qN7VrSNjag4wT5ecjp1Hp9KeksjxSiRQCAxyAQDVstkYIA98UIZnWd5NdWzliC4k25x0omRZRBESeXySO3BNWJbYJL59qNrsfmXOA/8A9f3qDzUaa3B+V1LblIwRxUstbEyu6zls7tqHr35pZZyIvmj6EcjkdqjkdV5OOVbH50XRZYiIydxUMMd+KBPRFcIVkik/gLsBgfT/AAq/LtFxbsOOSh/EZ/oK55ZLhJ0Evm71YF1Y9Mn/AANbtwU+zb2XGxlbOff/AArT7JEJXkWlJMhAI3DkZ9qP7Kspbt78Wtt9okwRMYVL9AAScZ4x60xQv2gNzuHA54/GrTXUdpaGWY7YYkYvIxAChfWq6A9yyxQkqzYxRVe1uFvrOK58mSJZF3BJBhgO2R29aKQEiyELzlm+tSI7leT+FQR52gg9qnXpzSRRKPek3qTtJ5xnApC2FAAJNVI4N+4zIcsxPyseM0xF4sirnIGO9Zv2mCO4kO4bi/A7ngVa+yW5iCeWNozjk96rJaQmadduPn/H7o70MEXY5UlBZXUqOpBrMmvIZdTjiikBcRsfqMj/ABp91draBLW2UPMwwqDsPU+1U4okWdiGV5gR5xPJ6Zx3wKTYt2X/AC9x+Z2HH8LVmakd906j5gqhSDx7/wBapfbJ0ml8qVyqu3RgQOferUULXEAuWnQM5JIYYzg4/pUNEuXNoiukKsFUIEdjtBBz1rTuobe4eGKRcxxc7GX5TgVXt1AvgrtGzRpvwjZODkA49OtWrmSNbeZgcERtgHjtQ9ApruV4JB9sVR/Hyeegx8o/r+NaDKGbh2X/AHTWXdW5eSOS3uERxjdkjqKuibJ+aaMHvtx/Wg1i2tx91CJ7VkyAw5DN6iqcSyXVlCquU2HBIODkcVKDH5ufNVwOzfMf502W9Xa3lYDHAUkdTTJau7iF3a5+ZsrAvp95/wD6w/nUMF2bu2MxiaJkkU7JDg44yf1/SpilzE0RtijxqD5gY/eJ5z9eP1qw6rNG6mPkqRyKAI7kTqjC32+Y44J6A+tJE7vGrSxlXI+YelV7m78pYBBH5kxAYxh9pwe49TxVtW3qCGYZHQ9aAJFRCMlF5HcUJFGdx2J19KVS2DllwPUU6MHYMjBJJoEQyeQZxH5g81cHHcZ9vwpS0wkwFVkx1zg5+lJJaxGXzWiLt6nnFSDCqABx2oBFK5bfcKjRAjyySHOB1GOaaobPlG2Zl/i+bIx7VLO7p5zxIXkCAKMZ556+3SnwN5ydBHJ3CnINAGdc206EeREcNwFdhnPoOa1Y8bAqggAAdeRUM9tFdbBLuBjbcjKxGGwR1HsTT4YtgEe18KOHLZ/rTFGKWxORjoT+dRjzN3KD608/L97keophuYF+9Kn03UD2H5OM+1MKB5BuUH5T1/ComvrbGAzMcdlNFvdrO7BI3wg5Jxzn/wDVQTzLYS4ntrZlR+Hf7qoOSPwp0Dx3NtHPEz7JFDKSex+tOcRmQM0eHA447fhSFEDblbbkgntQUSbXA4f8xmq8zMLiFAVaTdu9ML3P61L5wAYupVF/iOMEY7VHbxne07f6yTsf4V7CkBBeXckd1DEiKY2yJHLfcOMgY75GasADaMKA+OSOuKmdtq+pPAxWZere+dGtq6opIZ5W5zycjHbtQBKkM/zmWVXjZ1IVlK7enA/LNN2S3E3lIX2ry7jqvsM96luWKWTvJnPZfU9h370ttaeTAqKwz1Yngk9+RQNCrZxKSdis3cyJuP51G8f3kbac/d2dAKmIm2smWOCAcHP86hlneJfm2mNepkHP4DvSHoFmUjv5osEMIw2Me5/+tVreQ+WILAYGO5rOiUpN9ql+Vy2CgXGFNWrkCFGkU42KWY+nX/69LqWh9qPNlml6gHYp9h1P4mrCgO7bsFRxzVa0Kw2sShT8wB6etWFkAUdTu56etDFYQqPNOCQAB3pwQjkN+YpFIO7JwSf/AK1SZ4poDPhUi+uxweVYce1TJPzJgbsOFY54zgVGM/2hP6GMHikt08tLhQSxEjHn86diL2GQxy2d68jNmKdjx6HqP8KtFTuaQjYCOh6kjvSufPiZU69Q3oe1VR5zxtI7K437trDGzjGPfnNIPImEWJ3lRyfMADBhxx6elNgOPtLZHMnB/AVIN7R/uyBgY5HSkiUfvckf6zOfypiI1+5Ku07myC23H9akuSv2dS3GSM01o/vSEKGzwRyfT0qeRFaPaSOnShFdRiIsKrgsQTnGOelUNRnUXFpNtwoLKwZexxmtAYSQAB245zn+v41C436pAhTCiNzg9+gpW1LTIpW+SQqcjypMfn/9aifzFAGEO1cZI5HXFPex/wBIdYH8rKZA6qc9eKjkF27eW1rljnkEbSMY607E9DP1KCQajK7kqHXOc4B4wP5CrMt1BLpskbXAVniI+U8jirf9kfa543v33gDaY04UgZ6+taA0q0WNlW1ijDDHyjH8qtbGajaTZnWl19qtY7mOOXy3QNnYeQQDnpWm1nDeW4ju4S8ayB1RuBkcgkDrzzzTbXSbeC1SFlLlVxuJPP61Yt7eOJyVXLdM+g9Ka0Ke5IqIgbbzk5OSTRSt0OB1opCIk2svGMDpTsN/CAfUGo0wFAAwBT/nx8pwM81JRKvI4Bpy4IIximoTnaGxVe+vY7KLdIcsThVHVqoTdiyxWNdxIUdyaw2u5ZrqdbQLsLf61unQdKcyT6gglvPkj/hhB/nTU2xvKiADnC4GcfKOwpNiV2Ogtp7d5GUxyyP952ypP86bDELe4e4kilR3A3lfmDemccnHvVmxtWtIEi80vGi4XcOQB0qSR1VHkbkKpP5VJS2OVu3jla42zKpEhIOQCPmzWppBuJrKMxuFh+YZK5J5PQGsa7RLiJVZlYOTkjggjrgnvmtnTJWhtbaLyXKuHLSochTngY98n8qGYU97l2SJDIN0heUDr90gfhVG5hc3Hkvbo0Mm0LJ95gcktn8BV5o1W6+17cSMvlsWGMqMkfzNIrNNdLIgRlEQKYfg7u/T2FI2RMPK6bMf8BIoLIp4KH6tihywB+Ug+xzVWaOaWCSMMyFhjcAMj6U0MewuXukeOWNYgpBXOc5/w/qaVAJb0sTlYV2j/ePX9KahaO2YzN5hQf3MZpixmKxYRqv2hlzllx8x78+n9KbM76kqee0shliXyy3y+oGB1/HNOeaKN1jZvLZgSATgHFRWxfyUE+zzQAGKPgH3xVoRK4+Ybh7kmkX0M6G1jlmaSQYkgchJFAyBg9/oanmuFtoJJmYOI1LHA5OKlRMXNx87LyucY9PpVe5nlhizbxNcPkZUY6Z5PagZYEnmbWUoYyNxIbj2qdHZ0VlAZGGQQ3UVUVI2tTv2wpIwGAu09QMdanhgjgjWKJECjoBkUELcfJIwxlSM8ZJ4qPDE8v8AkKdIrKFJUbQecMTUbxr5ikkgDtgfrQNBC37yXd3bAPrgCidwisVQsQOdg5+lQLFudJ/NdcbwVAyrAnv+VT4UAAMQD93B6mgY+KQEbcEADuMVVjvYHvJ7ZWIliIyrDg5GeDUjBkuDuaLbt6k/Nn/ChLaInfESp9OuPzoCw2+uBDan5tjv8ozWRCkqTufNVoicou3G3gDGfqCfxroHHGGwR/Oq7WUbygtEoGMkLx+eKoynBt3M7eQPmUcDqDWhZgQ2qmRgrSndgn8v0xUZ0yIoSGkA6kZyDV2WMuoXAwD0BK0hQi07sTqzMOeMVStXu5JGM0exS3yj2ycfjjHrVrJThkK9enIoPlnGXK+nOKDUiuo1MajavMi9uvzCrBUe4/Go5cYiGc/vF5qQsDxuBpANVSSxLHjgUrIW6hT/AMBpUK7WJ9TSsQvJPHegCrInm3cSNjbF+8IB79B/X8qbbWr2008zyE+a29lB4zgDjPToKdDnDTBCxlO7r27fpUpYEDJxgZOaAC3u4Hkkt0kQyRNtde+cA/1qJttzfLHgGOA7n75Y9B+HWopVgtIfNtYg0znZGMk/Mf6f4VYt4PsyxjO5jkOx6sTyTQxrzJ3hjaN1CgbhjIFZd3P5tvFAc75WCkewP+NawyOS4x6YrNEUX9oBzGpbcyjI+73B/nUotovSOscbE4G0ZrJF/evP5kcMiW20FI/LyzDOOc9Ce3oMk+2qwT7plweOM0pZlBwAQPSgLGU+oXKyoRbTeUoy21Mlm9z2A56cnHuM3La5eRji1dBnDFjwOp/Ht09asICFVe4AqUKcdOaaApqEa9nLqDgKM/hTbO9jlZkSIrycHHBHY+3HrU0KZubhif4gMfhRlHdsHBGOcYpkNaih9qKPujGDgZ6VHKygedHkhhiRV7+/1FEqrJbzRCUoWOAyH5h3oiMiQgO29uxIwfyoEPWbyoy7kEMu5dvenwwqsQMigux3MSO5qlCAsgkkwYAx2jsrev061pYyOHA+lDKjqIEiD8opyOmKRoY3bhApAGCByKdjcQu8Zx1oEbhSMh3x1PApXKsJ8yFi7ZIA5x9arxOJNWYj+GED8z/9arUcEhZtw5IGcVXtofLu7oqOFCqP1prcfQsY/wBNA5/1f9asBRn29qomQpqABHWL196uRzRjJLDA96dyBz/KUK5ODzmrHUccHtVY3MJkXDjr61I1zCOfMXd25qkIWT03E+vNKpIx0OaiM8ATl1+uaI7qHoGH50DJnbaNxoqEzwgl9ytgc5aikIZGSVyD1FTR42jgj8ahRcLxiplOB97gdqENkN5d/Zo1EabpXO1V96pw2zhzNPmWc/xcYX6U4Yubl7kMNqjZH/U1PsYLkEGhkbu4McJgoSfwqjECLmUhQPm4BPTgVfIyBntVJd32mbBAG8dR/sikykXQ4ZimAWAyQDyP84qnq04isXAXaWIXOeg6n9KadOIuGuUlXzSRncmflHb16/hz0qDV5meSOMMBsUuxK/596CZuyMFkilaWMsvllcDHAYn5jj+fFb1lZzQruaR3VkUBGwdhA7fWsMWweBd0ceXfcCeCCeOPTiulzKLkus6mIoF8oL90jPP48DHtSZFPcWWLzECFMA5B6dMVFZwLaOIY1basYCjjgDOBUzTedDmLLvyBwRz0qtYR3kbmS7UM5XHyEY7ep+tLoaotyM/IbcAeuB/hVdIVj84xPKHlH3mBOPpU1xH5yhMSKM5OMc0kayRAjlvQnrj86aAbM6sI48jLOM59Byf5VYLqH4KY9d1VpHxLEXUj5iM/gaVorg3HmJNIqkAFMAjgk5/HNMhBHBKlwzvOJI2JwpH3cnj+gpbWKSJnFxsYFiQFQkjPbNTAhgfMTd6fJR90YBY+xHP50iyPCLPOduAAM4OO1R2tyLqBXjLK7AExuOV9jSpIGnnVkYghcgrn1pYQkZyuxfXCgZoAk+zLcW6LIMgAEcnrUm1IhuOwBR1PaiGRApDSKOT1NOZkKFcqQRz3oEIHEsKupRo2GQQeCDUEgC4YkfKOQD1+tLDbRW67YtoXAAReAAOOlNuSPK28ZchfzoGhtmJhCgKrgjPPaiaZbZk3xySCRtuQpbbxnn2q0FGOvAHalHIAHSgGMwjLuXPP+elR4ZZNy7c8DB4zUuzHVyfrigD5uaAF245Y81WmvIrZVkmb/WMAo/z+dTSjjbn73FBwByM9uBTBjlKvHlGyCuKgu/Ne2/cv5chIO705z/8AWqWMgqAAVwMelMBBjwYy3oeKQiIvKYkL7GkA7cAnH+NV7LzkQRzSK2CdrE8kc9cGrMjbU6IoBHVsVHbzx3cYaGReD06n8qAGRzQ3UsBj2kbt24KRng+o+lEs9y9y8UMSBVX5HdTy3Oc+g+7z35qSKCOG6VFVQoQthVwMkgVbOAD7CmBBPAt1aeVKzIG5Ow9fxqOZfLhS3V2zJ8oJJJx35PtVggCMBgDx6VWBR7lmP3YxsU479T/SkBcG1Rg8YFNUgIWwPm5/Cq0bTOCHAQdirbwf0FFy8oVbdcb5Mgsn8K9zTAbDmWV7kIXVAViVcZY9z/SnwfaJEZLiMI45DqwIPp+NTxeXHGFVWVFHpSArv5k69iRSAfGxKc4yOCKpZeS9DqAVMhJ45IC4yPxNTXL4+SJsSMPmI7L61DazL9pcuQmxFQKG4Hc/0oSKvoW2ZRgyKV+ophKsxCyE7sD5elRzRQ3hU7hlDkEYJqxFtMhAGAn8z/n9aTQXbHfKG+8afuCqT2o28/doKArg8ZFCKKkcS+bM7McswJwenApfkMhVAc92YUyJlDSqud27BP0ApYpg64XA9O5NMhkmEhfCgncOAPUf/rqKVX3BSAJH4B9B3xU6R7SXPXuTUMSmUtJJ1b7oz0Hb6UISQ7yopIWiVvk2kcdKLDBsowCDhcc0sZO3kYH0P9ahsiEV0ZujYGBn2oY1oy4TzjKDt8wpxgLL0yT3FIJVIwqsx/KnCRxkbG/T/Gki7ojMMqKxVzj3qnYzSLdXEbg9Fb3HrV17iT5kGQAufrVNXA1RcJtDxYP1zR1GiwEjmvcuob5OM8961LWJETc5jDHsFxWYqf6Zn0XitKCFWG6RunanHcmWxYdoEGdi59QKYHDHO1enTFS+WgGVAFNZwvUA1oZoaDk8KBSHHQYDehoGGOVOD6GoXDiQkqetJsqxKGmBI6EelFDH0opCKSkAZ2k8VDeSHy0tkJEk3Gf7q9zUnmBYd54XGTmqdoxmke6bPz8IPRe350Dl2LflJHGqoAqqMADNKoZVyHX8v/r0NkL/ADqvBeW9yCsUqtjGce4yP0pATuWC7i/bJxVCEgzz+Y/zBx3x/CKuyjcAo5ye9UoiVnuVAUfvOAP91aGHUnkaRY2aKIuwIwPM6jPP6Vi6j5l1qIWHjLquD/EMdDn65rXdJ3B8l03KylgTu46kdOMjvWXpiNLrNxMY/kjdipB4/wD19aFsRLVpG7FEIwMWyqMfwqoqQse6H9KeJP8AZYcVGxXdycfXikyjKnsWGpJcKjKgHGyTGCfvcdKvQCRIQr73x0ZsZ/nVglCM4BqIFlODgr2pAkNJZTxGfzH+NM3PIvCsu4cdKaBdLdO7yDyjwE64wTz+PFSpL+7UYIwPSqGN8suhR1ZgRznFMiaSN/IlDk/wPn7w/wAahc3FvO1x5ryKzAGFBnA4H/1/zq6wS4iwc4PIOMEe4oIW43aSQAZB7ZFRm2DXJnzOr4CnDDGB2x+NIcTERSqPOiOVbJGeMZH4E1N5jRW7uwHyqSOSc0kWQwM2+VhGfmc85HQcf0ouY2uITGrSRk9161MqGOFVHUDqaokfbo45YpnidGyPlZe/OQcelAFqCN40xJJJIR3K1LuOc4+X/cNNNxHCqiaVQTxz3pPtEz8Qw/L/AH5flH5df5UCHNtxnb/46apySQS3UMKsrOGLMMdMCp2tjKN08ryg/wAK/Kv5d/xJppSKK7i2hUVY2wAMDkigaJRCoP3Fx9Kd9nj6+Wv/AHzS+YmPvr+dOUg98igBhiiP/LNOP9kVRE6/ajG1rsiIGx2XBY9xg1fkSN+o/EGggZoAb5UfUKAR0IGKUqf4XP0PNOI96aRjnNMRFJvKbRgluPSnBwDt2HcBkgEUcluMHAqrLZGS487zZFk4ztOMgdB9OT+dAkWCQcggjP8As5pqbEPYE99u2nbnxwufqcc0ryLGrPIwVVGSTSGNhcPdSbSDtUDrn1qST7hGR0qh+/ktt0GxZJG8wlxnAzwMfTiraLuiyxZD9c/zpgPlkSOF2P8AAM1VSKVEiCSEYyz4AO4n1zTp2Mg8mILIScM3QKPc9zU5ZP4gVakBHk4aSTYqgZLKcEVDbho1+0yscy9M9VXsKZfyDyWQq7HAO5eVOOcE++MfjVxWHlhhL8rDIJximA/fuXJ+6vLZ9aZJMiRZwMngBu5oMnlwnO0pg5PQVDArMRKYwvGFX+6P8aQhFt4goyw37g7Mhxk/h29qktyqPOxy2ZOuOfuile2Eq4kyy5zjdj+QqCzBhWSONVKK5Ay3TGPaguNrlr904OU3DryKBEijMa4J6gcUb9gAZGGe455oSSHO4YHvjFTqVoG52O0EA9ww5qQbx97kf7PFMLJLhlYZXoQelNZjtJdyPcHFCAgWVVuJQMAsQQD+R/lUhVgpKD94e+MCq1tNG13LIAQGHBx1qZZhFIyrvkZzkKATj8+gqjPfYlbfIBCcYxlz7f8A16k8s9CxGPQcU2EMiszISzHc2KbOzbVwjA556f40AShR0Iz7nmqyhkuposDBw459eD+oqZZGA/1TdO7Cq80hWWJ9mCTsznPX/wDVQBZjUKxLYB9KezFtxiccgZ5qH9502qR/tAUxIriHc0YT5j/ETQNE6xylWJHOzBqHy5RqS+YFIWMkke54pJLqeFG81owxG3apyT9KLEvJLPJJIC+4KdvTgdP1pFouRY88np8tXYXjAO4mqMY/fEdsVoW0ZIOADinHcT2JRNFjG7H1FMLbnwF/GpCCv8NMyFzhcZrQhDcMM/LxTlZgcMCaOOpJz2pckdOaBsT+InHWil460UhHP3xLxwwA8SnkD0HWrkWBGBjAHtWdBIJr5ueIowvHTcev9Ks3F0LRYiysVd9pI/hGCc/p+tSHW5bwSvY5qCO3jgwI4kXHTavSlQrKokikyh546VISyx9Pu0DGF2JZtrNjgYxVONC005Kfx5+9g9BSvfIbGQiQDYWVyoyQQcE4+tVbeSK1gkwZJo49oGDuOMAZ4/zxQwTNGR4rYNOY2V24JBHJx359qp6LELbSRNcuI2Y7nJIx/wDqqPULxZIxbouFZcrIDkZHbp3GavfZ43tI7eSPeigArng/X1oF1LiluqspB5HHWqU+rJHem1ChpABlVfnn2qYlbK1Zxuwq8Bmzz2FZGm26S6g95JgMgwD3JP8A+v8AWkTJ62RopbGFNu55AWyPMwcVOirt5yp+pAqotuYmaRLh3LnL5BwTwOB26dqspJlec/gDSLWwp+ZuJc+3FLGBtUdexqhcwyTzBllkQI2QFwM8d6UNKs0aiIGMLhiV5J4wQfTrVAaQji3Zx82OtPwO9U5o38tzCqmUIdm7oT2qON2WQC4KxkglVVySeP8A9dDJLNzCJcFTtdTlW9KrvK0yJEQEfzAHUnoBz+RxTrgOY2SJyjsuEYkkKcdcZ+lU7WI3twZbqP8A1a7U2k4b1NIo0DcDkIDJ/u/49KZsnk6sI1/2eT+dJdF4LVmt0Z3A+Vdwxnt17Uy3aaRMyB427jg/0oGSmOK2/eCF3diASo3N+J9KewaZCvKZ/iBIIrOubi7g1CGKIs8bDD8DI5/wzVtJwbh4TI6upwCy8NwDx+dBKabH2tqtnCIlkdlAAAZicYAHf6UfevW9kH6k1IxkUfeU8f3f/r1UiMn2mVsqDwPu0DLo64qnHNKbuRJY12bvlAU8DA5z35P+cVKblUuEhd41kdSygjGQCB/UVLl8/dUj60CY1lhU87B7UuFJGM/99Ghi/wDcT6Z/+tTQzA48r8sUDFYAf3v++qauc/fP6USSknBibn3H+NMBHowPsM0xDwjKSd559hSfN3YflR5qfdO7OM42mo5bhY1y2R2AxyaBCySGJC7uoXt8v/16z591ykRkcbHOQijOVHJP1/xqwIRIxmncMxztUPgIPb396rwwxrcyeREpVQFBP3V9T7np+VIomnvCHjMaEjOMn5Sv0B5P5UpWe5Krc/uo8fcQ/ePuf6UhjNvKjrF57NkNIzYKj2HpUzxO0ZMZAZh1bn/9dAbDp4ZPISOBvKAIJKDoAc4pYmZMCVgWxycYpI3kjjAdt/HcYP8A9ehHVgT5gOT/AHhQIDKnniIqeRkOAcfnUERMdu0QJLRsUxnt25+hFSSuIY2kdWwo6qNx/Tmqs0ssc6tbgnzhjk9x35+v6UAWQpnZF2kQx8tznJ7A/wA/yq2HGOCCfSqDRIBHFMHZQd4ba2M+pI/rVoHPKrkdMA5oAlilV0JXoO+c1n24Z4JmWQfM5bO3JGeasXLbbOXAZTtIHHFVbaKTDqkjIgbAUAeg70DJmmZjGoBbr8y7iB9TjinpKkC+Wzx5Hq/NMCRs5z+8YcEeYTj8KmiEaltseznnC/4UAQPKZWwI5GH+4CKZNHJLCYxbSDd1IcDP4c1O0z/aCpUKnQHPX8KmLqkTSE8KMnmmhMyLG3uhNIrnCjgjAz9M1px+XCVVUKD2pLcy/ZlYKNz/ADMfc1IWfIAQEgUrjSsSb1HQnPuDTJnGzcuG9QOTSCbEmHGC3AGKkO4EjAIPOCKSATOU6A+vNVrz/j2BxtKsDknuKdPIciKJV8xu+37o9aY0EBbZ8/mEfeOcn8abAm+0RTIQN7gjoq/16UiCfywqoqKOBk/4VVgnMOImdsqxUZxj2/Q1dEjGEMxUAjuv/wBei4JDVsBKWeZhIzccrwB6VJY7YoZAo6yNyB+H9KiiDKrFJs5/2aTTmke174Dtn65NBVi7H/rOO5xzV2IFcncQR71RjUlwAehyR+BrRhweD1px3BknnFsAn60EgjgA0MoHPHPeoyuDnfn8ashIOQcn8qfgHjkVCC5PWpSRt68npQNiOe3P4UU0gjJz0/nRUiMG10x7XcWl3lupxitDyS6cgHHY1LnJzjr0qWMAL6GlYoi2OFwAvI7mmskhAUqvXJwauADGetG3J7Y9adgKX2MDDbV6YOTknp7VniCKOeYt5aKH4BX2HSt8jCYBrPjhSSecvGCd+OfTAoaBDTYh0+dR2+YdeKmRFVC29Qo6k9ql8mHGDEvT0pgt488RD2/nRZAQXVgLtY1MuzByAP4jT4LMW0axAjHrjkmpjBGWMjJ83rk00RQh8qMHB7nvQxcqvcqLpsULt5XygnLKCcZ/xqURbBt3qfrnP86mFvEgyqc9eCaZ9liH8AHGM5OaVh9CE24G7kDd7Uvlb8EBGHY4zUhtU5JXdnP8RpPJiXHyMMdPnP8AjQBH5PPzBT6fLSfZY5yrkhtv3eTj+fNTiKMA4Vz0/jP+NKLWDOBvC4xt3nH86BEUtvvUqWUZIyccn2qSO32D5cDJz0pxtITjhiQcgljxTjEmzaV+UHPU0WGRvCSMZU+uVqAIqNhWTPoB0q4EVVOATxjliaq/ZoAxYKQW6/MeaNARALBWvftYkO7txx0xU7xE43lGHuv/ANenNCFTEYPsN5FMht9q5lZnbOepx9BQwSsOMWF2gAfQUyO28sswOSxycirJxj+lAKkHigCtLCJF5Ctj1FKIiVAwmB0G2phtxwP0pBj/ACKB2I3VumV/KmrG2Tk8fSpHJGNoB+tR+ZMMfulPrg0CBoCR6e+KRrfPb8qI7iSQcJ0JB5qXzn/55n8xQBAtpH97b83qeahnsVmDiTL7umewBz/SrbSOF+WL5vc0omf/AJ5E/iKAsVUtjGoAJCgYxRHB5SbVYtyTyKuGRyMCL9RUZZgP9Sc47EUBoRiMY7e+aUxbhgk/hSeYzHHknPrkUoaUAAxEnuQR/jSCwGDcu0kn0qGOwRHdkUqz8tg4zxirIeT/AJ5N+Y/xp6s235sbs9BQFiv9n28cE47gZqNrT5vM5BxgYGMVc+bHUD8aB05xQFiukbbf9Y5x60LbyKWIbr/sirCnB+UD64qQ5K8CgLFJ7eWWFkc5U9cCmxweTuIwFJLEmtAblU5GRUEsSSg8twcgA45oAhWABsqwDN61IsBXqc5OTxTYreYli8rg4wMEf4VJ9mf5czy5HuP8KAIDbAzeZkbsYzjtTZ7QzQsrc59hVkQOG/10pwc4OOf0pfJbGPOlH5f4U0BRTTxFzHLInqB0/LpVhYmAPz5Y+1Sm2OV2yyKAMDBH9e9MNu7NkzyYHsP8KNAInsUkZWbl4yShx93PBqTy2HVv0p/lHBzO5YDGTjj8MYpnkMFAW4k/EKf6UgEitggYgtubkk4pRFG0pG47xznA/wA9qmijMalSxYk5JIpj2+Zd6OyNjAAANMBgtArM5Jy3XgUNARFtBOPoOP0o+zOC0n2mXcfQA1DicqTLMwIOQuBx/kYosFySOJxnBxn0x/hSRQyRIUR9oLFiAB1NR2QliaTzWDAtheTn8eAM1ad/kyMdaWw9wtgwl/eNuyODitBUUngnIrOt33TZXB7HB6Vo26EE9OacRMkYLjGDQAh7YxSuueOlN2kfhVkhtC/hSAB/mINDbm7HFA+Y4FAxrAbaKhu5pIEDIu47gDRUtk3KsDsYsHpjNWR90cmiikaCKx6Z7VYHC9T+NFFNAx5Y4x7VVi/1k3+//QUUU2SidOU3HrQTzRRUjDJxUfGeg60UUMBjOeTTVkZiQaKKQxsh2kEd6aHbOD0NFFAyUHkCgMeaKKBCZOBzTwKKKA6DsZOO1RBBRRQCGvwGOTxSEngUUUwHgksATwaRlC5xnpRRQAxSSabIzKOGNFFIBR80W49aaPqaKKTGIiBZXxn5sMfr/kUFzuoopiFLHcBmkDkHiiigY4OTzgU1ueooooENz2xSxMT1oooYEhc44wOKjJIXOTRRSGRtKwK4xzmnhztHTmiimAvnOCqjABODUpAX7vH0oopC6jVmcNjORz1qxtypfPPWiimBULkNxxTt7f3j+dFFAB5jFTzSRuz9TRRQA/NSRqGUk54oooARolV8jP50zaKKKAHEAEAU7aOuT+dFFMQojGM5NRS20cgLEfNnrgUUUAV1sLdHOEyzHlj1NSSxKsKxD7pwv4UUUnsNFfToliuZVUkjdnn6VuRH5KKKUAmSEkVGXJ9PyoorUgb5jdKfuKpxgZ9qKKQ2Qo5lJDY69qKKKqKIluf/2Q=="></div>
+                                        </a>
+                                    
+                                
+                            </div>
+
+                            <!-- Descriptors -->
+                            
+                            
+                            
+
+                            <!-- Containers -->
+                            
+                            
+
+                            
+                            
+
+                            <!-- Usage -->
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label class="form-control-label form-control-sm titleBackground"><strong>Uporaba</strong></label>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3" style="padding-left:20px;">
+                                    <label class="form-control-label form-control-sm">Potrebno dovoljenje:</label>
+                                </div>
+                                <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                    <label class="form-control-label form-control-sm">dovoljenje ni potrebno</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3" style="padding-left:20px;">
+                                    <label class="form-control-label form-control-sm">Možnost uporabe:</label>
+                                </div>
+                                <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                    <label class="form-control-label form-control-sm">na razpolago</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3" style="padding-left:20px;">
+                                    <label class="form-control-label form-control-sm">Dostopnost:</label>
+                                </div>
+                                <div class="w-100 d-xl-none d-lg-none d-md-none d-sm-block"></div>
+                                <div class="col-lg-10 col-md-9" style="padding-left:20px;">
+                                    <label class="form-control-label form-control-sm">javno dostopno</label>
+                                </div>
+                            </div>
+
+                            <!-- Additional Search Sources -->
+                            
+
+                            <!-- References -->
+                            
+                            
+
+                            <!-- DIPp -->
+                            
+                            <div class="spacer14"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer start -->
+        <div id="pageFooter" class="">
+            <div><div style="background-color: #333333;">
+
+                <!-- Opozorilo o piškotkih -->
+                <footer id="footerCookiesWarning">
+                    <div id="cookieConsent">
+                        <div>Virtualna arhivska čitalnica (VAČ) uporablja spletne piškotke in ostale elemente z namenom zagotavljanja polnega delovanja spletne storitve in boljše uporabniške izkušnje. Ali se strinjate z njihovo uporabo?
+                            <a href="#" class="cookieConsentNOK" tabindex="0"
+                               onclick="javascript:cookieConsentNOK();">Ne strinjam se</a>
+                            <a href="#" class="cookieConsentOK" tabindex="0"
+                               onclick="javascript:cookieConsentOK();">Strinjam se</a>
+                        </div>
+                        <a tabindex="0">Več o tem.</a>
+                    </div>
+                </footer>
+
+                <div id="footerMain" class="d-print-none">
+
+                    <!-- Navigacijske povezave -->
+                    <footer class="footer2">
+                        <div cellspacing='0' class='betatestwarning'></div>
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="row">
+                                    <a href="/vac">Prva stran</a>&#160;|&#160;
+                                    <a href="/vac/search/getfullTextPage">Iskanje</a>&#160;|&#160;
+                                    <a href="/vac/cart/list">Košarica</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutVAC">O VAČ</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutArchives">O arhivih</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/vacNewsUsers">Novice</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/accessibilityStatement"
+                                       title="Izjava o dostopnosti"
+                                       aria-label="Izjava o dostopnosti">Dostopnost</a>&#160;|&#160;
+                                    <a href="/vac/userhelp">Pomoč</a>&#160;|&#160;
+                                    <a href="/vac/vacindex">Zemljevid spletne strani</a>
+                                </div>
+                                <div class="row h5"></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Kontakt, povezave, arhivi -->
+                    <footer class="footer2">
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="ce-bodytext">
+                                    <div style="padding:0 5px; width:100%; box-sizing:border-box !important; float:left;">
+
+                                        <!-- Kontakt -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <ul role="list">
+                                                <li style="list-style:none;"><span class="row h6b">Kontakt </span></li>
+                                                <li style="list-style:none;"><span class="row h7">PODPORA VAČ</span></li>
+                                                <li style="list-style:none;"><span class="row h7">ARHIV REPUBLIKE SLOVENIJE</span></li>
+                                                <li style="list-style:none;"><span class="row h7">Poljanska 40</span></li>
+                                                <li style="list-style:none;"><span class="row h7">1102 Ljubljana</span></li>
+                                                <li style="list-style:none;"><span class="row h7">T:&nbsp;<a href="tel:+38612414200">01 2414 200 &phone;</a></span></li>
+                                                <li style="list-style:none;"><span class="row h7">F: 01 2414 276</span></li>
+                                                <li style="list-style:none;"><span class="row h7">E:&nbsp;<a href="mailto:citalnica.ars@gov.si">citalnica.ars@gov.si</a></span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Uporabne povezave -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Uporabne povezave</span>
+                                            <a class="row h7" href="/vac/userhelp"><span>Pogosta vprašanja</span></a>
+                                            <a class="row h7" href="https://www.gov.si/teme/javna-arhivska-mreza/"><span>Slovenska javna arhivska mreža</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Piškotki</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Obdelava osebnih podatkov</span></a>
+                                            <a class="row h7" href="/vac/userhelp/accessibilityStatement"><span>Dostopnost spletne strani</span></a>
+                                        </div>
+
+                                        <!-- Spletne strani arhivov -->
+                                        <div style="padding:0 5px; width:34%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Spletne strani arhivov</span>
+                                            <a class="row h7" href="https://www.gov.si/drzavni-organi/organi-v-sestavi/arhiv/"><span>Arhiv Republike Slovenije</span></a>
+                                            <a class="row h7" href="https://arhiv-koper.si/"><span>Pokrajinski arhiv Koper</span></a>
+                                            <a class="row h7" href="https://www.pokarh-mb.si/"><span>Pokrajinski arhiv Maribor</span></a>
+                                            <a class="row h7" href="https://www.pa-ng.si/"><span>Pokrajinski arhiv v Novi Gorici</span></a>
+                                            <a class="row h7" href="https://zac.si/"><span>Zgodovinski arhiv Celje</span></a>
+                                            <a class="row h7" href="https://www.zal-lj.si/"><span>Zgodovinski arhiv Ljubljana</span></a>
+                                            <a class="row h7" href="https://www.arhiv-ptuj.si/"><span>Zgodovinski arhiv Ptuj</span></a>
+                                            <a class="row h7" href="https://www.archivesportaleurope.net/"><span>Arhivski portal Evrope</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Verzija -->
+                        <table width="100%">
+                            <tr>
+                                <!-- td><span style="display: inline; float: left;">&#169; 2018 Arhiv Republike Slovenije</span> <span
+                                    style="display: inline; float: right;"><a href="http://www.arhiv.gov.si/si/splosno/kolofon/kolofon/">Kolofon</a>&#160;|&#160;<a
+                                        href="http://www.arhiv.gov.si/si/splosno/piskotki/">Piškotki</a></span></td -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row h7" style="display:inline; float:right;">
+                                        <div ondblclick="showVerDetails(); return false;">
+                                            <label>VAČ</label>&nbsp;
+                                            <strong>2.20_5.5</strong>
+                                        </div>
+                                        <div style="display:none" id="vacVersionDetails">
+                                            <strong>Podrobnosti o verziji</strong><br/><br/>
+                                            <table style="border:0;">
+                                                <tr align="left">
+                                                    <td>Verzija:</td>
+                                                    <td><strong>2.20_5.5</strong></td>
+                                                </tr>
+                                                <tr align='left'><td>Datum:</td><td><strong>2026-09-16T13:42:32+02:00</strong></td></tr><tr align='left'><td>Interni ID:</td><td><strong>84d567d8</strong></td></tr><tr align='left'><td>Verzioniranje:</td><td><strong>nepopolno</strong></td></tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <script>
+                            /*<![CDATA[*/
+                            function showVerDetails() {
+                                if (!window.event.ctrlKey) {
+                                    dialog($("#vacVersionDetails")[0].innerHTML.trim(), null, null, null, null, false, false, true, false);
+                                } else {
+                                    $.ajax({
+                                        cache: false,
+                                        type: 'get',
+                                        url: '/vac/snfo',
+                                        success: function(response) {
+                                            dialog(response.data, null, null, null, null, false, false, true, false);
+                                        },
+                                        error: handleAjaxError
+                                    });
+                                }
+                            }
+                            /*]]>*/
+                        </script>
+                    </footer>
+
+                </div><!-- /footerMain -->
+
+
+<!--                <div th:if="${@environment.getProperty('vac.ai.widget.enabled', 'false') == 'true' && session.userBean != null && session.userBean.userId != 0 && session.userBean.loggedIn}"-->
+<!--                     id="vac-chat-widget"-->
+<!--                     class="d-print-none"-->
+<!--                     th:attr="data-user-id=${session.userBean.userId},-->
+<!--                              data-user-type=${session.userBean.advancedUser ? 'NU' : 'KU'},-->
+<!--                              data-open-label=#{VirtualAssistant.Chat.Open},-->
+<!--                              data-close-label=#{VirtualAssistant.Chat.Close}">-->
+<!--                    <button id="vac-chat-toggle" type="button" onclick="vacChatToggle()"-->
+<!--                            aria-controls="vac-chat-window" aria-expanded="false"-->
+<!--                            th:title="#{VirtualAssistant.Chat.Open}"-->
+<!--                            th:aria-label="#{VirtualAssistant.Chat.Open}">💬</button>-->
+<!--                    <div id="vac-chat-window" role="dialog" aria-modal="false"-->
+<!--                         aria-labelledby="vac-chat-title" aria-hidden="true" style="display:none;">-->
+<!--                        <div id="vac-chat-header">-->
+<!--                            <span id="vac-chat-title">VAČ Asistent</span>-->
+<!--                            <button type="button" onclick="vacChatToggle()"-->
+<!--                                    th:title="#{VirtualAssistant.Chat.Close}"-->
+<!--                                    th:aria-label="#{VirtualAssistant.Chat.Close}">×</button>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-messages">-->
+<!--                            <div class="vac-msg-bot">Pozdravljeni! Sem virtualni asistent VAČ. Kako vam lahko pomagam?</div>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>-->
+<!--                        <div id="vac-chat-input">-->
+<!--                            <input type="text" id="vac-chat-text" placeholder="Vpišite vprašanje..."-->
+<!--                                   onkeypress="if(event.key==='Enter') vacChatSend()"/>-->
+<!--                            <button onclick="vacChatSend()">Pošlji</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div></div>
+        </div>
+    </div>
+</div>
+<script>
+    /*<![CDATA[*/
+    var protectedEntry = "(za\u0161\u010Diten vnos)";
+    var addToWorkbookSuccess = "Izbrani rezultati so shranjeni.";
+    var workbookDialog = $("#addToWorkbookDialog");
+    var workbooks = $("#workbooks");
+    var newWorkbookName = $("#newWorkbookName");
+    const descriptors = null;
+
+    var prevRes = null;
+    var nextRes = null;
+    var activeSearchId = null;
+    var prevSibl = null;
+    var nextSibl = null;
+    var prevLev = null;
+    var nextLev = null;
+
+    if (prevRes == null) {
+        $("#navPrevRes").remove();
+    }
+    if (nextRes == null) {
+        $("#navNextRes").remove();
+    }
+
+    function findDescriptorConnectedUoDs(domElement, id) {
+        $(domElement).blur();
+        $("#descriptorId").val(id);
+        $("#descriptorConnectedFindForm").submit();
+    }
+
+    (function ($, undefined) {
+        "use strict";
+        $.jstree.plugins.noclose = function () {
+            this.close_node = $.noop;
+        };
+    })(jQuery);
+
+    $(function () {
+        var prevNode = null;
+        var rootNode = [];
+        var lastMinusOneNode = null;
+        var theNode = null;
+        var state = {};
+        state["opened"] = true;
+        state["selected"] = false;
+        var hiddenIndex = 0;
+
+        $("#archivePlanTreePathData").children().each(function (index) {
+            var newNode = {};
+            if (index == 0) {
+                rootNode.push(newNode);
+            } else {
+                lastMinusOneNode = prevNode;
+            }
+
+            var id = $(this).attr("data-id");
+            if (parseInt(id) < 0) {
+                id -= hiddenIndex;
+                hiddenIndex++;
+            }
+
+            newNode["id"] = id;
+            newNode["text"] = $(this).attr("data-title") ? $(this).attr("data-title") : protectedEntry;
+            newNode["type"] = $(this).attr("data-iconId");
+            if (prevNode != null) {
+                prevNode["children"] = [];
+                prevNode["children"].push(newNode);
+                prevNode["state"] = state;
+            }
+            prevNode = newNode;
+        });
+        if (lastMinusOneNode != null) {
+            prevLev = lastMinusOneNode["id"];
+        } else {
+            $("#navPrevLev").remove();
+        }
+
+        theNode = prevNode;
+
+        var index = 0;
+        // Add previous siblings.
+        $("#archivePlanTreePrevData").children().each(function (index) {
+            if (lastMinusOneNode != null) {
+                var newNode = {};
+                newNode["id"] = $(this).attr("data-id");
+                newNode["text"] = $(this).attr("data-title");
+                newNode["type"] = $(this).attr("data-iconId");
+                lastMinusOneNode["children"].splice(index, 0, newNode);
+                index++;
+                prevSibl = $(this).attr("data-id");
+            }
+        });
+        if (prevSibl == null) {
+            $("#navPrevSibl").remove();
+        }
+
+        // Add next siblings.
+        $("#archivePlanTreeNextData").children().each(function (index) {
+            if (lastMinusOneNode != null) {
+                var newNode = {};
+                newNode["id"] = $(this).attr("data-id");
+                newNode["text"] = $(this).attr("data-title");
+                newNode["type"] = $(this).attr("data-iconId");
+                lastMinusOneNode["children"].push(newNode);
+                if (nextSibl == null) {
+                    nextSibl = $(this).attr("data-id");
+                }
+            }
+        });
+        if (nextSibl == null) {
+            $("#navNextSibl").remove();
+        }
+
+
+        $("#archivePlanTreeChildData").children().each(function (index) {
+            var newNode = {};
+            newNode["id"] = $(this).attr("data-id");
+            newNode["text"] = $(this).attr("data-title") ? $(this).attr("data-title") : protectedEntry;
+            newNode["type"] = $(this).attr("data-iconId");
+            if (nextLev == null) {
+                nextLev = $(this).attr("data-id");
+            }
+            if (prevNode != null) {
+                prevNode["children"] = [];
+                prevNode["children"].push(newNode);
+                prevNode["state"] = state;
+            }
+            prevNode = newNode;
+        });
+        if (nextLev == null) {
+            $("#navNextLev").remove();
+        }
+
+        $('#archivePlanTree').jstree({
+            "plugins": ["types", "noclose"],
+            'core': {
+                'dblclick_toggle': false,
+                'check_callback': true,
+                'data': rootNode,
+            },
+            "types": {
+                "0": {"icon": "jstree-icon-0"},
+                "1": {"icon": "jstree-icon-1"},
+                "2": {"icon": "jstree-icon-2"},
+                "3": {"icon": "jstree-icon-3"},
+                "4": {"icon": "jstree-icon-4"},
+                "5": {"icon": "jstree-icon-5"},
+                "6": {"icon": "jstree-icon-6"},
+                "7": {"icon": "jstree-icon-7"},
+                "8": {"icon": "jstree-icon-8"},
+                "9": {"icon": "jstree-icon-9"},
+                "10": {"icon": "jstree-icon-10"},
+                "11": {"icon": "jstree-icon-11"},
+                "12": {"icon": "jstree-icon-12"},
+                "13": {"icon": "jstree-icon-13"},
+                "14": {"icon": "jstree-icon-14"},
+                "15": {"icon": "jstree-icon-15"},
+                "16": {"icon": "jstree-icon-16"},
+                "17": {"icon": "jstree-icon-17"},
+                "18": {"icon": "jstree-icon-18"},
+                "19": {"icon": "jstree-icon-19"},
+                "20": {"icon": "jstree-icon-20"},
+                "21": {"icon": "jstree-icon-21"},
+                "22": {"icon": "jstree-icon-22"},
+                "23": {"icon": "jstree-icon-23"},
+                "24": {"icon": "jstree-icon-24"}
+            }
+        }).bind("loaded.jstree", function () {
+            $("#" + theNode["id"] + "_anchor").css("font-weight", "bold");
+        });
+
+        $('body').on('click', '#addItemToCart', function (e) {
+            e.preventDefault();
+            //$(this).prop('disabled',true);
+            var itemId = $(this).attr('href');
+            var ajaxReq = $.ajax({
+                url: "/vac/search/" + itemId,
+                type: "POST",
+                cache: false,
+                contentType: false,
+                processData: false,
+            });
+
+            ajaxReq.done(function (count) {
+                $('#counterId').remove();
+                $('#userCartId').append("<span id='counterId'>(" + count + ")</span");
+                //console.log("ajax DONE");
+                var msgUploadOK = "Izbrana popisna enota je dodana v ko\u0161arico.";
+                dialog(msgUploadOK, null, null, null, null, false, false, true, false);
+            });
+            ajaxReq.fail(function () {
+                //console.log("ajax FAIL");
+                var msgUploadErr = "Za odlaganje v ko\u0161arico se morate prijaviti v VA\u010C z uporabni\u0161kim profilom, ki ima dovoljenje za naro\u010Danje.";
+                dialog(msgUploadErr, null, null, null, null, false, false, true, false);
+            });
+        });
+    });
+
+    function gotoPrevRes(obj) {
+        inProgress(true);
+        location.href = "details?id=" + prevRes
+            + (activeSearchId != null ? "&searchId=" + encodeURIComponent(activeSearchId) : "");
+    }
+
+    function gotoNextRes(obj) {
+        inProgress(true);
+        location.href = "details?id=" + nextRes
+            + (activeSearchId != null ? "&searchId=" + encodeURIComponent(activeSearchId) : "");
+    }
+
+    function gotoPrevLev(obj) {
+        inProgress(true);
+        location.href = "details?id=" + prevLev;
+    }
+
+    function gotoNextLev(obj) {
+        inProgress(true);
+        location.href = "details?id=" + nextLev;
+    }
+
+    function gotoPrevSibl(obj) {
+        inProgress(true);
+        location.href = "details?id=" + prevSibl;
+    }
+
+    function gotoNextSibl(obj) {
+        inProgress(true);
+        location.href = "details?id=" + nextSibl;
+    }
+
+    function showInArchivePlan(id) {
+        if (id == "") {
+            return "";
+        }
+        var path = $("#archivePlanTree").jstree(true).get_path(id, ",", true);
+        window.location.href = "/vac/search/archivePlanSearch?path=" + path;
+    }
+
+    $('#archivePlanTree').on("dblclick", function (e) {
+        nodeSelected(e);
+    });
+
+    $('#archivePlanTree').on("keydown", function (e) {
+        if (e.keyCode == 13) {
+            nodeSelected(e);
+        }
+    });
+
+    var selectedNodeId;
+
+    function nodeSelected(e) {
+        try {
+            isDoubleClicked = true;
+            // Check if clicked item is not plus icon (I).
+            if (e.target.tagName.toUpperCase() != "I") {
+                inProgress(true);
+                var li = $(e.target).closest("li");
+
+                // Deselect node if page is activated using history.back from the UoD details page.
+                selectedNodeId = li[0].id;
+
+                if (selectedNodeId > 0) {
+                    location.href = "details?id=" + selectedNodeId;
+                } else {
+                    inProgress(false);
+                }
+            }
+        } catch (err) {
+            inProgress(false);
+        }
+    }
+
+    //reset cursor to default when page is activated (on history.back).
+    visibilityHandler(function () {
+        if (visibilityHandler()) {
+            inProgress(false);
+            $('#archivePlanTree').jstree(true).deselect_node(selectedNodeId);
+        }
+        ;
+    });
+
+
+    // Workbooks
+    var uodId = 0;
+
+    function chooseWorkbook(id) {
+        uodId = id;
+        workbookDialog.show();
+        workbookDialog.attr("aria-hidden", false);
+        positionOnCenter(workbookDialog);
+    }
+
+    function addToWorkbook() {
+        if (workbooks.val() <= 0 && newWorkbookName.val().trim() === "") {
+            return;
+        }
+        workbookDialog.hide();
+        workbookDialog.attr("aria-hidden", true);
+        inProgress(true);
+        try {
+            var ids = [];
+            ids.push(uodId);
+
+            $.ajax({
+                type: "post",
+                url: "/vac/search/addToWorkbookAjax?id=" + workbooks.val() + "&name=" + newWorkbookName.val(),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                data: JSON.stringify(ids),
+                success: function (response) {
+                    if (!response.error) {
+                        inProgress(false);
+                        dialog(addToWorkbookSuccess, null, null, null, null, false, false, true, false);
+                    } else {
+                        inProgress(false);
+                        dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                    }
+
+                    if (response.id > 0) {
+                        workbooks.append(new Option(newWorkbookName.val(), response.id));
+                    }
+                    workbooks.val(0);
+                    newWorkbookName.val("");
+
+                    return false;
+                },
+                error: handleAjaxError
+            });
+        } catch (err) {
+            inProgress(false);
+        }
+    }
+
+    $(window).resize(function () {
+        positionOnCenter(workbookDialog);
+    });
+    /*]]>*/
+</script>
+
+<!-- Mark.js library for text highlighting -->
+<script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script>
+<script src="/js/highlight-search.js;jsessionid=D7133E3A208360B630B3C6A82EAFEA5D"></script>
+
+<script>
+    /*<![CDATA[*/
+    $(document).ready(function () {
+        highlightSearchTerms({
+            highlightMatches: false,
+            wordVariants: false,
+            searchFullText: "",
+            searchExactPhrase: "",
+            searchOneOfWords: ""
+        });
+    });
+    /*]]>*/
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const mapElement = document.getElementById('lift-map');
+        if (!mapElement) {
+            return;
+        }
+
+        const map = new gms.Map('lift-map', {
+            url: mapElement.dataset.mapUrl,
+            srid: 4326,
+            scale: 1548255,
+            token: mapElement.dataset.mapToken,
+            onInit: function () {
+                let processedCount = 0;
+                const totalDescriptors = descriptors.length;
+                const allWkts = [];
+                const foundResults = [];
+
+                descriptors.forEach((descriptor, descriptorIndex) => {
+                    const originalTitle = descriptor.title;
+
+                    // ===== EKSTRAHIRAJ VSEBINO IZ [] =====
+                    let insideBrackets = '';
+                    let outsideBrackets = originalTitle;
+
+                    const bracketMatch = originalTitle.match(/\[([^\]]+)\]/);
+                    if (bracketMatch) {
+                        insideBrackets = bracketMatch[1].trim();
+                        outsideBrackets = originalTitle.replace(/\[([^\]]+)\]/g, '').trim();
+                    }
+
+                    // ===== ODSTRANI OKROGLE OKLEPAJE IZ VSEGA =====
+                    insideBrackets = insideBrackets.replace(/\([^)]*\)/g, '').trim();
+                    outsideBrackets = outsideBrackets.replace(/\([^)]*\)/g, '').trim();
+
+                    // ===== VRSTNI RED ISKANJA =====
+                    const searchTerms = [];
+// 1. CELOTNA VSEBINA IZVEN []
+                    if (outsideBrackets) {
+                        searchTerms.push({
+                            query: outsideBrackets,
+                            type: 'outside_full',
+                            label: `Zunaj [] (celotno): "${outsideBrackets}"`
+                        });
+                    }
+
+// 2. CELOTNA VSEBINA IZ []
+                    if (insideBrackets) {
+                        searchTerms.push({
+                            query: insideBrackets,
+                            type: 'inside_full',
+                            label: `Znotraj [] (celotno): "${insideBrackets}"`
+                        });
+                    }
+
+// 3. POSAMEZNE BESEDE IZVEN []
+                    if (outsideBrackets) {
+                        const outsideWords = outsideBrackets
+                            .split(/[\s,]+/)
+                            .map(w => w.trim())
+                            .filter(w => w.length > 0);
+
+                        outsideWords.forEach(word => {
+                            searchTerms.push({
+                                query: word,
+                                type: 'outside_word',
+                                label: `Zunaj [] (beseda): "${word}"`
+                            });
+                        });
+                    }
+
+// 4. POSAMEZNE BESEDE IZ []
+                    if (insideBrackets) {
+                        const insideWords = insideBrackets
+                            .split(/[\s,]+/)
+                            .map(w => w.trim())
+                            .filter(w => w.length > 0);
+
+                        insideWords.forEach(word => {
+                            searchTerms.push({
+                                query: word,
+                                type: 'inside_word',
+                                label: `Znotraj [] (beseda): "${word}"`
+                            });
+                        });
+                    }
+
+                    // ===== REKURZIVNO ISKANJE =====
+                    function trySearch(index) {
+                        if (index >= searchTerms.length) {
+                            processedCount++;
+                            checkIfDone();
+                            return;
+                        }
+
+                        const searchTerm = searchTerms[index];
+
+                        map.Search.byText({query: searchTerm.query}, (response) => {
+                            const items = (response && response.data) ? response.data : [];
+
+                            if (items.length > 0) {
+                                const selected = items[0];
+                                // Shrani najdeni rezultat
+                                foundResults.push({
+                                    title: originalTitle,
+                                    query: searchTerm.query,
+                                    searchType: searchTerm.type,
+                                    label: selected.label,
+                                    x: selected.data.coordinates.x,
+                                    y: selected.data.coordinates.y,
+                                    index: descriptorIndex
+                                });
+
+                                if (selected.wkt) {
+                                    map.Geometry.add({wkt: selected.wkt});
+                                    allWkts.push(selected.wkt);
+                                }
+
+                                processedCount++;
+                                checkIfDone();
+                            } else {
+                                trySearch(index + 1);
+                            }
+                        });
+                    }
+
+                    function checkIfDone() {
+                        if (processedCount === totalDescriptors) {
+                            if (allWkts.length > 0) {
+                                showInfoWindowsSequentially(foundResults);
+                            }
+                        }
+                    }
+
+                    trySearch(0);
+                });
+
+                // Funkcija za prikaz info oblačkov zaporedoma
+                function showInfoWindowsSequentially(results, currentIndex = 0) {
+                    if (currentIndex >= results.length) return;
+
+                    const result = results[currentIndex];
+
+                    map.openInfoWindow({
+                        title: result.title,
+                        content: "",
+                        x: result.x,
+                        y: result.y,
+                        srid: 4326,
+                        style: {
+                            wrapper: {minWidth: '150px', maxWidth: '250px'},
+                            container: {
+                                background: '#eeeeee',
+                                padding: '15px',
+                                borderRadius: '3px',
+                                boxShadow: '1px 1px 3px rgba(0,0,0,.8)',
+                            },
+                            title: {
+                                fontSize: '1em',
+                                fontWeight: 'bold',
+                                marginBottom: '10px',
+                            },
+                            close: {
+                                position: 'absolute',
+                                top: 0,
+                                right: '6px',
+                                fontSize: '1.3em',
+                            },
+                            content: {
+                                fontSize: '0.9em',
+                                color: '#666'
+                            },
+                        },
+                    }, () => {
+                        // Počakaj 2 sekundi, potem prikaži naslednjega
+                        setTimeout(() => {
+                            showInfoWindowsSequentially(results, currentIndex + 1);
+                        }, 2000);
+                    });
+                }
+            },
+        });
+    });
+</script>
+</body>
+</html>

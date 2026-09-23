@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je dobesedni prepis in analiza dokumenta **'Izkaz rabe zemljišč' (AUSWEIS über die Benützungsart des Bodens)** za katastrsko občino **Griblje/Grüble** iz let 1825–1827:\n\n### 1) DOBESEDNI NASLOV IN POLJA TABELE\n\n**Naslov:**\n> **AUSWEIS**\n> **über die Benützungsart des Bodens der Gemeinde. Grüble**\n\n**Glava tabele (stolpci):**\n*   *Auf den Flächenaume befinden sich :* (Na površinskih merah se nahaja:)\n    *   **Gemüse Gärten.** (Zelenjavni vrtovi)\n    *   **Obst Gärten.** (Sadovnjaki)\n    *   **Zier Gärten.** (Okrasni vrtovi)\n    *   **Wein Gärten.** (Vinski vrtovi/vinogradi)\n    *   **Hopfen Gärten.** (Hmeljniški vrtovi)\n    *   **Wiesen.** (Travniki)\n    *   **Wiesen mit Obstbäumen.** (Travniki s sadnimi drevesi)\n    *   **Walden.** (Gozdovi)\n    *   **Stümpfe.** (Panji/čebelnjaki)\n    *   **Stümpfe mit Tabakswurz.** (Panji s tobakom)\n    *   **Acker.** (Njive)\n    *   **Acker mit Obstbäumen.** (Njive s sadnimi drevesi)\n    *   **Acker mit Ölbaumen.** (Njive z oljkami)\n    *   **Acker mit Weiden.** (Njive z vrbovjem)\n    *   **Acker mit Dornen und Weiden.** (Njive s trnjem in vrbovjem)\n*   *Gemeinde Area oder Gemeinde.* (Površina občine ali občina)\n\n**Drugi del glave tabele (stolpci):**\n*   **Heidefläd.** (Krajše travniki/puščavne površine)\n*   **Gelörigte.** (Zamočvirjene/deponije)\n*   **Wöldchen.** (Gozdiči)\n*   **Schutt- und Sumpfgräben.** (Odpadni in močvirni jarki)\n*   **Lehmgruben.** (Glinita/jame za gline)\n*   **Steinbrüche.** (Kamnolomi)\n*   **Torfstiche.** (Barija/torf kopi)\n*   **Nackte Felsen.** (Gole skale)\n*   **Ödlandjen.** (Pustinja/neobdelana zemlja)\n*   **Flüsse oder Bäche.** (Reke ali potoki)\n*   **Seen oder Teiche.** (Jezera ali ribniki)\n*   **Meer Salinen.** (Morske soline)\n*   **Weg Parzellen.** (Cestni parcely)\n*   **Bau Parzellen.** (Gradbeni parcely/stavbna zemljišča)\n\n---\n\n### 2) ŠTEVILA PO KULTURAH (Joch / Klf.)\n\n| Kultura | Joch | Klf. | Opomba |\n| :--- | :--- | :--- | :--- |\n| **Gemüse Gärten** (Zelenjad) | 2 | 122 | |\n| **Wein Gärten** (Vinogradi) | – | 7 | 665 |\n| **Wiesen** (Travniki) | 76 | 1480 | |\n| **Wiesen mit Obstbäumen** (Travniki s sad.) | 12 | 328 | |\n| **Walden** (Gozd) | 556 | 263 | |\n| **Acker** (Njive) | – | 913 | 870 |\n| **Ödlandjen** (Neobdelano) | 1 | 476 | |\n| **Flüsse oder Bache** (Vodotoki) | 21 | 182 | |\n| **Weg Parzellen** (Ceste) | 46 | 117 | |\n| **Bau Parzellen** (Stavbna zemljišča) | 4 | 389 | |\n\n*Opomba: Vse ostale kulture (sadovnjaki, hmelj, njive s sadnimi drevesi/oljkami/vrbovjem, heide, gozdiči itd.) so prazne (označene s piko ali črtico).*\n\n---\n\n### 3) VSOTA SKUPNO\n\nDokument prikazuje dve vsoti:\n*   **Desna stran (zvodna vsota stolpcev):** **1148 Joch 529 Klf.**\n*   **Spodaj desno (Area der ganzen Gemeinde - Površina celotne občine):** **1233 Joch 573 Klf.**\n\n*(Razlika med obema številoma verjetno izhaja iz nekih dodatnih popravkov ali drugačne metode seštevanka, ki je bila uporabljena pri končni overitvi).*\n\n---\n\n### 4) ALI OMENJA TRAVERNE/GASTHAUS/WIRTSHAUS/MÜHLE?\n\n**NEGATIVEN ZADETEK.**\nV tem dokumentu **ni omenjeno** nobeno od naslednjih: *Traverne* (gostilna), *Gasthaus*, *Wirtshaus* (krčma), *Mühle* (mlin), niti podobnih stavbnih objektov. Edini zapisani objekti so splošne **Bau Parzellen** (stavbne parcele) in **Weg Parzellen** (cestne parcele).\n\n---\n\n### 5) TISKANO ALI ROKOPIS?\n\n**ROKOPIS (Handschrift).**\nDokument je **ročno napisan** (kaligrafija s peresom in črnilom na predtiskanem formularju).\n*   **Tiskano:** Samo osnovna mreža tabele, glave stolpcev in naslov \"AUSWEIS...\" so tiskani.\n*   **Rokopis:** Vsi podatki (števila, imena krajev: *Illyrien*, *Grüble*, *Neustädtel*, *Trieste*), podpisi (*Weingärtl*, *Hollensteiner*) in datum (*10. Jänner 1826*) so ročno zapisani.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790175096,
+  "id": "202609232250506351d6e05e1b4a8e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609232250506351d6e05e1b4a8e",
+  "usage": {
+    "completion_tokens": 1580,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1112,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2692
+  }
+}
