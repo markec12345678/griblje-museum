@@ -195,7 +195,7 @@ console.log("=".repeat(72));
 console.log("7) INTEGRITETA PODATKOVNEGA SEMENA (invariante TASK 38)");
 console.log("=".repeat(72));
 const sources = exhibits.reduce((n, ex) => n + ex.sources.length, 0);
-check("575 vrstic virov", sources === 575, `=${sources}`);
+check("578 vrstic virov", sources === 578, `=${sources}`);
 const sourceIndexOk = exhibits.every((ex) =>
   ex.sources.every((_, i) => i >= 0) &&
   ENTITIES.every((e) => e.evidence.every((ev) => {
