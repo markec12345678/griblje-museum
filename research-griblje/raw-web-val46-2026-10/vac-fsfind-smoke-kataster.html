@@ -1,0 +1,2990 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>VAČ - Virtualna Čitalnica</title>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/fonts/style.css" />
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/js/jstree.3.3.7/themes/default/style.css" />
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac.css"></link>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac_Default.css" title="default"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnWhite.css" title="blackOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_WhiteOnBlack.css" title="whiteOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnBeige.css" title="blackOnBeige"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnWhite.css" title="blueOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnGreen.css" title="blackOnGreen"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnYellow.css" title="blackOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnYellow.css" title="blueOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_YellowOnBlue.css" title="yellowOnBlue"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_TurquoiseOnBlack.css" title="turquoiseOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnPink.css" title="blackOnPink"></link>
+<link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/themes/smoothness/jquery-ui.css">
+    </link>
+
+<!-- <script src="/js/jquery-3.3.1.js"></script> -->
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/i18n/jquery-ui-i18n.min.js"></script>
+<script src="https://prostor.sjas.gov.si//gms-sdk.js" data-sdk-version="4"></script>
+
+
+    <script>
+/*<![CDATA[*/
+var errMsgDefault = "Pri\u0161lo je do napake. Obrnite se na skrbnika sistema.";
+var defaultLocale = "sl";
+var currentLocale = "sl";
+/*]]>*/
+</script>
+
+<script src="/js/Popper.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+<script src="/js/vac.js"></script>
+    
+
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/jstree.3.3.7/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<!-- <script src="/js/jspdf-1.5.3/jspdf.min.js"></script> -->
+
+<style>
+/*body {
+    font-family: ;
+    font-family: OpenDyslexicAlta;
+  }*/
+/** {
+    box-sizing: border-box;
+}*/
+
+/*
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+*/
+/*label {
+	padding: 6px 6px 12px 0;
+	display: inline-block;
+}
+
+#input[type=submit] { #
+	background-color: #14789F;
+	color: white; #
+	padding: 12px 20px; #
+	border: none; #
+	border-radius: 4px; #
+	cursor: pointer; #
+	float: left;
+	#
+}*/
+
+/*
+input[type=submit]:hover {
+    background-color: #79B0C5;
+}
+*/
+
+/*
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}*/
+
+/* Clear floats after the columns */
+/*.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}*/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}*/
+
+#skiptocontent a
+{
+position:absolute;
+#left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+</style>
+
+</head>
+
+
+<script>
+    /*<![CDATA[*/
+    var currentWorkbookName = null;
+    var pageTitle = currentWorkbookName
+        ? "VA\u010C | Delovne mape"
+        : "VA\u010C | Rezultati iskanja";
+    document.title = pageTitle;
+    /*]]>*/
+</script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+<body>
+<div id="pageContainer">
+    <div id="pageHeader">
+        <header data-locale="sl" data-defaultLocale="sl" data-msgEditRow="Uredi" data-msgDeleteRow="Izbriši">
+            <div id="confirmationDialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="confirmationDialog_Text"
+                >
+                <div>
+                    <span id="confirmationDialog_Title">
+                        <span id="confirmationDialog_Text"></span> <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup1" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel1"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput1" aria-label="Vnosno polje">
+                        <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup2" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel2"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput2" aria-label="Vnosno polje 2">
+                        <br />
+                    </span>
+                    <br />
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonYes" value="Da" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonNo" value="Ne" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonCancel" value="Prekliči" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonOK" value="V redu" aria-describedby="confirmationDialog_Text">
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <button id="explanationDialogToggler" type="button" class="btn btn-primary" data-toggle="modal" data-target="#explanationDialog" hidden="true">Launch demo modal</button>
+            <div class="modal fade" id="explanationDialog" tabindex="-1" role="dialog" aria-labelledby="explanationDialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="explanationDialogTitle">Dodatno pojasnilo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Zapri">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="explanationDialogBody">Podatki se zabeležijo na podlagi vpogleda v dokazilo o invalidnosti in se hranijo za čas uporabe arhivskega gradiva ali največ 1 leto oziroma do preklica dovoljenja s strani uporabnika.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" data-dismiss="modal" value="Zapri" aria-label="Zapri" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="glassPane" tabindex="0"></div>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary2" >
+                <!-- Button trigger modal -->
+                <a class="navbar-brand hover-nochange" href="/vac">
+                    <input class="glyph-logo bg-primary2 no-shadow" type="button" aria-label="Domov" style="vertical-align:top;background-size:9rem;height:3rem;width:7rem;border:none!important;"></input>
+                    <span class="inARow logo-text-big logo-text-color">VAČ</span><span class="inARow logo-text-big logo-text-color">&nbsp;-&nbsp;</span> <span
+                        class="inARow logo-text-small logo-text-color" style="z-index: 0">VIRTUALNA ARHIVSKA ČITALNICA</span>
+                </a> 
+                <div id="skiptocontent">
+                    <a href="#page" class=""><span>Skoči na glavno vsebino</span></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Meni za uporabniški profil in dostopnost">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <ul id="mainNavBar" class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-header headerNav-link" href="#" id="navbardropUserProfile" data-toggle="dropdown"
+                                aria-label="Uporabniški profil" data-parent="#navbarSupportedContent" title="Uporabniški profil">
+                                
+                                <input class="glyph-user" aria-label="Uporabniški profil" type="button" tabindex="-1" style="border:none!important;"></input>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="https://vac.sjas.gov.si/vac/login"
+                                    style="font-size:1rem">Prijava</a>
+                                
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${session!= null && session.userBean != null && session.userBean.loggedIn}" class="dropdown-item" href="/vac/userprofile/mydocuments"
+                                    th:utext="#{Header.UserProfile.MyDocs}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Moji dokumenti</a -->
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${permissions.contains(8L)}" class="dropdown-item" href="/vac/userprofile/advanced/prepareAEG"
+                                    th:utext="#{Header.UserProfile.PrepareAEG}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Priprava AEG</a -->
+                                
+                                
+                                
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-text-height headerNav-link" href="#" id="navbardropFontSize" data-toggle="dropdown" data-parent="#navbarSupportedContent" title="Velikost pisave"
+                                aria-label="Velikost pisave"></a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right" style="font-size: 14px">
+                                <a class="dropdown-item" style="font-size: 14px;" href="#" onclick="changeFontSize('14px', true)">Privzeto</a>
+                                <a class="dropdown-item" style="font-size: 1.25em;" href="#" onclick="changeFontSize('1.25rem', true)">125%</a>
+                                <a class="dropdown-item" style="font-size: 1.50em;" href="#" onclick="changeFontSize('1.50rem', true)">150%</a>
+                                <a class="dropdown-item" style="font-size: 2.00em;" href="#" onclick="changeFontSize('2.00rem', true)">200%</a>
+                                <a class="dropdown-item" style="font-size: 14pt;" href="#" onclick="changeFontSize('14pt', true)">14pt</a>
+                                <a class="dropdown-item" style="font-size: 16pt;" href="#" onclick="changeFontSize('16pt', true)">16pt</a>
+                                <a class="dropdown-item" style="font-size: 18pt;" href="#" onclick="changeFontSize('18pt', true)">18pt</a>
+                                <a class="dropdown-item" style="font-size: 20pt;" href="#" onclick="changeFontSize('20pt', true)">20pt</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-font headerNav-link" href="#" id="navbardropFontFamily" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Vrsta pisave" title="Vrsta pisave"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Privzeto</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Arial</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Arial Bold', 'bold')">Arial bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana;" href="#" onclick="changeFontFamily('Verdana', 'normal')">Verdana</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Verdana Bold', 'bold')">Verdana bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexic;" href="#" onclick="changeFontFamily('OpenDyslexic', 'normal')">Open Dyslexic</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexicAlta;" href="#" onclick="changeFontFamily('OpenDyslexicAlta', 'normal')">Open Dyslexic Alta</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: DidactGothic;" href="#" onclick="changeFontFamily('DidactGothic', 'normal')">Didact Gothic</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-eye-plus headerNav-link" href="#" id="navbardropColorScheme" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Barvna shema" title="Barvna shema"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" href="#" onclick="switchStyle('default')" id="defualt">Privzeta barvna shema</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" onclick="switchStyle('blackOnWhite')" id="blackOnWhite" href="#">Črno na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:white!important;background-color:black!important" onclick="switchStyle('whiteOnBlack')" id="whiteOnBlack" href="#">Belo na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:beige!important" onclick="switchStyle('blackOnBeige')" id="blackOnBeige" href="#">Črno na bež</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:white!important" onclick="switchStyle('blueOnWhite')" id="blueOnWhite" href="#">Modro na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:green!important" onclick="switchStyle('blackOnGreen')" id="blackOnGreen" href="#">Črno na zelenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:yellow!important" onclick="switchStyle('blackOnYellow')" id="blackOnYellow" href="#">Črno na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:yellow!important" onclick="switchStyle('blueOnYellow')" id="blueOnYellow" href="#">Modro na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:yellow!important;background-color:blue!important" onclick="switchStyle('yellowOnBlue')" id="yellowOnBlue" href="#">Rumeno na modrem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:turquoise!important;background-color:black!important" onclick="switchStyle('turquoiseOnBlack')" id="turquoiseOnBlack"
+                                    href="#">Turkizna na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:pink!important" onclick="switchStyle('blackOnPink')" id="blackOnPink" href="#">Črna na roza</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=en" aria-label="Jezik: Angleški" title="Jezik: Angleški"
+                            onclick="return setLocale(&#39;en&#39;);">EN</a></span>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=sl" aria-label="Jezik: Slovenski" title="Jezik: Slovenski"
+                            onclick="return setLocale(&#39;sl&#39;);">SL</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class='navbar-shadow'>
+                <div class='master_op_center' style="padding-top: 0.05em;">
+
+                    <nav class="navbar navbar-expand-md navbar-light bg-light2">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                            aria-label="Glavni meni">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent2">-->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+                            <ul class="navbar-nav mr-auto mx-auto">
+                                <li class="nav-item active">
+                                    <div>
+                                        <a class="nav-link" href="/vac" aria-label="Prva stran" title="Prva stran">
+                                            <div style="width:120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-home'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Prva stran</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <!-- li class="nav-item" th:if="${permissions.contains(7L)}" -->
+                                
+                                <li class="nav-item dropdown">
+                                    <div>
+                                        <a class="nav-link" href="/vac/search/getfullTextPage" aria-label="Iskanje" title="Iskanje">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <!-- <a class="nav-link" href="#" th:aria-label="#{Header.Search}" data-toggle="dropdown" th:title="#{Header.Search}">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;" th:utext="#{Header.Search}">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="/vac/search/getfullTextPage" th:utext="#{FullTextSearch.Title}" style="font-size:1rem">Iskanje po besedilu</a>
+                                            <a class="dropdown-item" href="/vac/search/fieldSearch" th:utext="#{FieldSearch.Title}" style="font-size:1rem">Iskanje po poljih</a>
+                                            <a class="dropdown-item" href="/vac/search/archivePlanSearch" th:utext="#{ArchivePlanSearch.Title}" style="font-size:1rem">Iskanje po tektoniki arhiva</a>
+                                            <a class="dropdown-item" href="/vac/search/descriptorSearch" th:utext="#{DescriptorSearch.Title}" style="font-size:1rem">Iskanje po deskriptorjih</a>
+                                        </div> -->
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                <li class="nav-item">
+                                    <div>
+                                        <a class="nav-link" href="/vac/userhelp" aria-label="Pomoč" title="Pomoč">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-help'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Pomoč</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const link = document.getElementById('reportErrorLink');
+                                if (!link) return;
+
+                                link.addEventListener('click', async (event) => {
+                                    event.preventDefault();
+
+                                    try {
+                                        const elementToCapture = document.documentElement;
+
+                                        const canvas = await html2canvas(elementToCapture, {
+                                            useCORS: true,
+                                            backgroundColor: '#fff',
+                                        });
+
+                                        const dataUrl = canvas.toDataURL('image/png', 0.9);
+                                        sessionStorage.setItem('errorScreenshot', dataUrl);
+                                        window.location.href = link.getAttribute('href');
+                                    } catch (err) {
+                                        window.location.href = link.getAttribute('href');
+                                    }
+                                });
+                            });
+                        </script>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="pageBody">
+        <div class="row">
+            <div class="leftmenu">
+                <div id="archivePlanContainer" class="tblbgr"
+                     style="border-style:solid;border-width:1px;position:absolute;width:800px;height:150px;overflow:scroll;display:none;z-index:10;">
+                    <div id="archivePlanId" class="inARow"><div>
+        <style>
+            .jstree-default .jstree-open > .jstree-ocl { background-image:none!important; }
+            #archivePlanTree { position:relative; left:-1.5rem; }
+        </style>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="archivePlanTreePathData" style="display:none">
+                    
+                </div>
+                <div id="archivePlanTreePrevData" style="display:none">
+                    
+                </div>
+                <div id="archivePlanTreeNextData" style="display:none">
+                    
+                </div>
+                <div id="archivePlanTreeChildData" style="display:none">
+                    
+                </div>
+                <div id="archivePlanTree" style="font-size:1rem"></div>
+            </div>
+            <ul data-id="" data-title="" data-refCode="" data-iconId=""></ul>
+        </div>
+        <script>
+/*<![CDATA[*/
+var protectedEntry = "(za\u0161\u010Diten vnos)";
+var onLoadfunction = null;
+var onNodeClickfunction = null;
+var callInteralOnNodeClick = true;
+var selectedNodeId = -1;
+var selectedNodeRefCode = null;
+var defaultId = 0;
+var defaultRefCode = null;
+var defaultTitle = null;
+
+// Public functions
+function archivePlanTreeInit(onLoadCallback, onClickCallback, uodId, callInteralOnClick) {
+    onLoadfunction = onLoadCallback
+    onNodeClickfunction = onClickCallback;
+    callInteralOnNodeClick = callInteralOnClick;
+
+    defaultId = uodId;
+    
+    initAPTreeInternal(uodId);
+}
+function archivePlanTreeGetSelectedPath() {
+    var id = $("#archivePlanTree").jstree("get_selected");
+    if(id == "") {
+        return "";
+    }
+    var path = $("#archivePlanTree").jstree(true).get_path(id, ",", true);
+    
+    return path;
+}
+function archivePlanTreeGetSelectedId() {
+    var id = $("#archivePlanTree").jstree("get_selected");
+    if(id == "") {
+        return -1;
+    }
+    selectedNodeId = parseInt(id);
+    
+    return selectedNodeId;
+}
+function archivePlanTreeGetSelectedRefCode() {
+    var id = archivePlanTreeGetSelectedId();
+    if(id <= 0) {
+        return null;
+    }
+    selectedNodeRefCode = $("ul[data-id='" + id + "']").attr("data-refCode");
+    
+    return selectedNodeRefCode;
+}
+function archivePlanTreeGetSelectedText() {
+    var id = archivePlanTreeGetSelectedId();
+    if(id <= 0) {
+        return null;
+    }
+    return $('#archivePlanTree').jstree(true).get_node(id).text;
+}
+//End of public functions
+
+function initAPTreeInternal(uodId) {
+    var data = [];
+    data = {
+            "uodId": uodId
+    };
+    $.ajax({
+        type: "post", // method attribute of form
+        url: "/vac/search/getArchivePlanTreeAjax",
+        data: data,
+        success: function(response){
+            if(!response.error) {
+                //alert(JSON.stringify(response));
+                //archivePlanPath
+                var parent = document.getElementById("archivePlanTreePathData");
+                parent.innerHTML = "";
+                for(i = 0; i < response[0].length; i++) {
+                    addUl(parent, response[0][i]);
+                }
+                //archivePlanPrev
+                parent = document.getElementById("archivePlanTreePrevData");
+                parent.innerHTML = "";
+                for(i = 0; i < response[1].length; i++) {
+                    addUl(parent, response[1][i]);
+                }
+                //archivePlanNext
+                parent = document.getElementById("archivePlanTreeNextData");
+                parent.innerHTML = "";
+                for(i = 0; i < response[2].length; i++) {
+                    addUl(parent, response[2][i]);
+                }
+                //archivePlanChildren
+                parent = document.getElementById("archivePlanTreeChildData");
+                parent.innerHTML = "";
+                for(i = 0; i < response[3].length; i++) {
+                    addUl(parent, response[3][i]);
+                }
+                
+                buildTree();
+
+                if(onLoadfunction != null && defaultId > 0) {
+                    onLoadfunction(defaultId, defaultRefCode, defaultTitle);
+                }
+            }
+            else {
+                inProgress(false);
+                dialog(response.errorDescription, null, null, function() {
+                    //location.reload(true);
+                    formSubmit("/vac/dip/archiveMaterialEditor", [], []);
+                }, null, false, false, true, false);
+            }
+            return false;
+        },
+        error: handleAjaxError
+    });
+}
+
+function addUl(parent, apInfo) {
+    var ul = document.createElement("ul");
+    var att = document.createAttribute("data-id");
+    att.value = apInfo.id;
+    ul.setAttributeNode(att);
+    att = document.createAttribute("data-title");
+    att.value = apInfo.title;
+    ul.setAttributeNode(att);
+    att = document.createAttribute("data-refCode");
+    att.value = apInfo.refCode;
+    ul.setAttributeNode(att);
+    att = document.createAttribute("data-iconId");
+    att.value = apInfo.iconId;
+    ul.setAttributeNode(att);
+    parent.appendChild(ul);
+
+    if(defaultId == apInfo.id) {
+        defaultRefCode = apInfo.refCode;
+        defaultTitle = apInfo.title;
+    }
+}
+
+(function ($, undefined) {
+    "use strict";
+    $.jstree.plugins.noclose = function () {
+        this.close_node = $.noop;
+    };
+})(jQuery);
+
+function buildTree() {
+    $("#archivePlanTree").jstree('destroy');
+
+    var prevNode = null;
+    var rootNode = [];
+    var lastMinusOneNode = null;
+    var theNode = null;
+    var state = {};
+    state["opened"] = true;
+    state["selected"] = false;
+    var hiddenIndex = 0;
+    
+    $("#archivePlanTreePathData").children().each(function(index) {
+        var newNode = {};
+        if(index == 0) {
+            rootNode.push(newNode);
+        }
+        else {
+            lastMinusOneNode = prevNode;
+        }
+        
+        var id = $(this).attr("data-id");
+        if(parseInt(id) < 0) {
+            id -= hiddenIndex;
+            hiddenIndex++;
+        }
+        
+        newNode["id"] = id;
+        newNode["type"] = $(this).attr("data-iconId");
+        if(newNode["type"] != 0) {
+            newNode["text"] = $(this).attr("data-title") ? $(this).attr("data-title") : $(this).attr("data-refCode");
+        }
+        else {
+            newNode["text"] = protectedEntry;
+        }
+        if(prevNode != null) {
+            prevNode["children"] = [];
+            prevNode["children"].push(newNode);
+            prevNode["state"] = state;
+        }
+        prevNode = newNode;
+    });
+
+    theNode = prevNode;
+
+    var index = 0;
+    // Add previous siblings.
+    $("#archivePlanTreePrevData").children().each(function(index) {
+        if(lastMinusOneNode != null) {
+            var newNode = {};
+            newNode["id"] = $(this).attr("data-id");
+            newNode["type"] = $(this).attr("data-iconId");
+            if(newNode["type"] != 0) {
+                newNode["text"] = $(this).attr("data-title") ? $(this).attr("data-title") : $(this).attr("data-refCode");
+            }
+            else {
+                newNode["text"] = protectedEntry;
+            }
+            lastMinusOneNode["children"].splice(index, 0, newNode);
+            index++;
+        }
+    });
+    
+    // Add next siblings.
+    $("#archivePlanTreeNextData").children().each(function(index) {
+        if(lastMinusOneNode != null) {
+            var newNode = {};
+            newNode["id"] = $(this).attr("data-id");
+            newNode["type"] = $(this).attr("data-iconId");
+            if(newNode["type"] != 0) {
+                newNode["text"] = $(this).attr("data-title") ? $(this).attr("data-title") : $(this).attr("data-refCode");
+            }
+            else {
+                newNode["text"] = protectedEntry;
+            }
+            lastMinusOneNode["children"].push(newNode);
+        }
+    });
+
+    $("#archivePlanTreeChildData").children().each(function(index) {
+        var newNode = {};
+        newNode["id"] = $(this).attr("data-id");
+        newNode["type"] = $(this).attr("data-iconId");
+        if(newNode["type"] != 0) {
+            newNode["text"] = $(this).attr("data-title") ? $(this).attr("data-title") : $(this).attr("data-refCode");
+        }
+        else {
+            newNode["text"] = protectedEntry;
+        }
+        if(prevNode != null) {
+            prevNode["children"] = [];
+            prevNode["children"].push(newNode);
+            prevNode["state"] = state;
+        }
+        prevNode = newNode;
+    });
+
+    $('#archivePlanTree').jstree({
+        "plugins" : ["types", "noclose"],
+        'core': {
+            'dblclick_toggle' : false,
+            'check_callback': true,
+            'data': rootNode,
+        },
+        "types" : {
+            "0" : { "icon" : "jstree-icon-0" },
+            "1" : { "icon" : "jstree-icon-1" },
+            "2" : { "icon" : "jstree-icon-2" },
+            "3" : { "icon" : "jstree-icon-3" },
+            "4" : { "icon" : "jstree-icon-4" },
+            "5" : { "icon" : "jstree-icon-5" },
+            "6" : { "icon" : "jstree-icon-6" },
+            "7" : { "icon" : "jstree-icon-7" },
+            "8" : { "icon" : "jstree-icon-8" },
+            "9" : { "icon" : "jstree-icon-9" },
+            "10" : { "icon" : "jstree-icon-10" },
+            "11" : { "icon" : "jstree-icon-11" },
+            "12" : { "icon" : "jstree-icon-12" },
+            "13" : { "icon" : "jstree-icon-13" },
+            "14" : { "icon" : "jstree-icon-14" },
+            "15" : { "icon" : "jstree-icon-15" },
+            "16" : { "icon" : "jstree-icon-16" },
+            "17" : { "icon" : "jstree-icon-17" },
+            "18" : { "icon" : "jstree-icon-18" },
+            "19" : { "icon" : "jstree-icon-19" },
+            "20" : { "icon" : "jstree-icon-20" },
+            "21" : { "icon" : "jstree-icon-21" },
+            "22" : { "icon" : "jstree-icon-22" },
+            "23" : { "icon" : "jstree-icon-23" },
+            "24" : { "icon" : "jstree-icon-24" }
+        }            
+    }).bind("loaded.jstree", function () {
+        $("#" + theNode["id"] + "_anchor").css("font-weight", "bold");
+    });
+}
+
+$('#archivePlanTree').on("dblclick", function (e) {
+    nodeSelected(e);
+});
+
+$('#archivePlanTree').on("keydown", function (e) {
+    if (e.keyCode == 13) {
+        nodeSelected(e);
+    }
+});
+
+function nodeSelected(e) {
+    try {
+        isDoubleClicked = true;
+        // Check if clicked item is not plus icon (I).
+        if(e.target.tagName.toUpperCase() != "I") {
+            inProgress(true);
+            var li = $(e.target).closest("li");
+    
+            // Deselect node if page is activated using history.back from the UoD details page.
+            selectedNodeId = li[0].id;
+
+            if(selectedNodeId > 0) {
+                selectedNodeRefCode = $("ul[data-id='" + selectedNodeId + "']").attr("data-refCode");
+                if(callInteralOnNodeClick) {
+                    initAPTreeInternal(selectedNodeId);
+                }
+                if(onNodeClickfunction != null) {
+                    onNodeClickfunction(selectedNodeId, selectedNodeRefCode);
+                }
+            }
+            else {
+                selectedNodeRefCode = null;
+            }
+            inProgress(false);
+        }
+    }
+    catch(err) {
+        alert(err.message);
+        inProgress(false);
+    }
+}
+
+//reset cursor to default when page is activated (on history.back).
+visibilityHandler(function(){
+    if(visibilityHandler()) {
+        inProgress(false);
+        var archivePlanTree = $('#archivePlanTree').jstree(true);
+        if (archivePlanTree != null && typeof archivePlanTree.deselect_node === 'function'
+                && selectedNodeId != null) {
+            archivePlanTree.deselect_node(selectedNodeId);
+        }
+    };
+});
+/*]]>*/
+        </script>
+    </div></div>
+                </div>
+                <div id="addToWorkbookDialog">
+                    <div>
+                        <div class="row form-group">
+                            <div class="col-sm-5">
+                                <label class="form-control-label form-control-sm">Delovne mape:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <select id="workbooks" tabindex="1" class="form-control form-control-sm"
+                                        title="Izberi delovno mapo."
+                                        aria-label="Izberi delovno mapo.">
+                                    <option value="0">&lt;nova delovna mapa&gt;</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group"  id="newWorkbookNameRow">
+                            <div class="col-sm-5">
+                                <label class="form-control-label form-control-sm">Ime:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input id="newWorkbookName" tabindex="2" type="text"
+                                       class="form-control form-control-sm"
+                                       placeholder="Vnesite ime"/>
+                            </div>
+                        </div>
+                        <div class="spacer7"></div>
+                        <input type="button" tabindex="3" class="btn btn-primary" id="addToWorkbookDialog_ButtonCancel"
+                               value="Prekliči"
+                               onclick="workbookDialog.hide();glassPane(false);">
+                        <input type="button" tabindex="4" class="btn btn-primary" id="addToWorkbookDialog_ButtonOK"
+                               value="V redu"
+                               onclick="addToWorkbook();">
+                    </div>
+                </div>
+                <div id="wrapper" class="toggled tblbgr">
+                    <div>
+                        <div class="noprint"></div>
+                        <!-- <div style="padding-left:15px;padding-right:15px;">
+                            <a href="/vac/settings/thesaurus" class="lvl3"><span style="display: inline;" class="va_tb h6 c_leftmenu " th:utext="#{SearchResults.SwitchToListView}">SearchResults.SwitchToListView</span></a>
+                        </div>
+                        <div style="padding-left:15px;padding-right:15px;">
+                            <a href="/vac/settings/thesaurus" class="lvl3"><span style="display: inline;" class="va_tb h6 c_leftmenu " th:utext="#{SearchResults.SwitchToImageList}">SearchResults.SwitchToImageList</span></a>
+                        </div>
+                        <div style="padding-left:15px;padding-right:15px;">
+                            <a href="/vac/settings/thesaurus" class="lvl3"><span style="display: inline;" class="va_tb h6 c_leftmenu " th:utext="#{SearchResults.SwitchToImageView}">SearchResults.SwitchToImageView</span></a>
+                        </div>-->
+                        <div>
+                            <a href="#" onclick="details(this);return false;" class="lvl3">
+                                <label class="glyph-details"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">Prikaži podrobnosti</span>
+                            </a>
+                        </div>
+                        
+                        
+                        
+                        <!-- <div>
+                            <a href="#" onclick="toPdf();$(this).blur();return false;" class="lvl3">
+                                <label class="glyph-print"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu " th:utext="#{General.Print}">General.Print</span>
+                            </a>
+                        </div> -->
+                        <div>
+                            <a href="/help/help.htm#_TOCrezultati" target="help"
+                               onclick="$(this).blur();" class="lvl3">
+                                <label class="glyph-help-l"></label>&#160;&#160;
+                                <span style="display: inline;" class="va_tb h6 c_leftmenu ">Pomoč</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label id="labelInProgress" class="form-control-label form-control-sm">V teku je priprava podatkov za prikaz. Počakajte trenutek.</label>
+            <div id="page" style="display:none;">
+                <div class="container-fluid  navbar-fixed-top" style="padding-right: 0; padding-left: 20px;">
+                    <div class="clearfix"></div>
+                    <div id="content">
+                        <div class="container">
+                            
+                            <div class="row form-group">
+                                <div class="col-auto mr-auto">
+                                    <h3>Seznam zadetkov</h3>
+                                    <small><br></small>
+                                </div>
+
+                                <div class="col-auto align-self-end">
+                                    <div class="c-cb normal">
+                                        <input type="checkbox" name="showOrderableChk"
+                                               aria-label="Prikaži samo dostopne popisne enote."
+                                               onclick="showOrderable(this);">
+                                        <label>Prikaži samo dostopne popisne enote.</label>
+                                    </div>
+                                    <div class="c-cb normal">
+                                        <input type="checkbox" name="showImagesChk"
+                                               aria-label="Prikaži seznam s slikami."
+                                               onclick="showImages(this);">
+                                        <label>Prikaži seznam s slikami.</label>
+                                    </div>
+                                    <div class="c-cb normal">
+                                        <input type="checkbox" name="showDocumentsChk"
+                                               aria-label="Prikaži seznam, ki vsebuje datoteke"
+                                               onclick="showDocuments(this);">
+                                        <label>Prikaži seznam, ki vsebuje datoteke</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container tblbgr">
+                                <div class="container-fluid" id="searchResults_TableView">
+                                    <div class="row mb-2">
+                                        <div class="col-8" style="padding-left: 0;">
+                                            <div class="accordion" id="accordion">
+                                                <div class="card">
+                                                    <div class="card-header p-0" id="headingOne">
+                                                        <h5 class="mb-0">
+                                                            <button class="btn btn-link d-flex justify-content-between align-items-center w-100 accordion-text"
+                                                                    id="searchWithinResultsToggle"
+                                                                    style="padding: 10px;"
+                                                                    type="button"
+                                                                    data-toggle="collapse"
+                                                                    data-target="#collapseOne"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="collapseOne">
+
+                                                                <span>Iskanje znotraj zadetkov</span>
+
+                                                                <!-- puščica -->
+                                                                <span class="accordion-arrow accordion-text" aria-hidden="true">&#x02C5;</span>
+                                                            </button>
+                                                        </h5>
+                                                    </div>
+
+                                                    <div id="collapseOne"
+                                                         class="collapse"
+                                                         aria-labelledby="headingOne"
+                                                         data-parent="#accordion">
+                                                        <div class="card-body p-0"><div>
+        <div id="content">
+            <form id="fieldSearchForm"
+                  method="post"
+                  action="/vac/search/fieldSearchFindAjax"
+                  class="main_bg px-4">
+                <div>
+                    <div class="tblbgr" style="min-height: 300px;">
+                        <div class="row">
+                            <hr />
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-sm-4">
+                                <select id="field1" name="field1" class="form-control form-control-sm" title="Iskalno polje 1" aria-label="Iskalno polje 1">
+                                    <option value="10041">Jezik</option>
+                                    <option value="10068">Kraj nastanka</option>
+                                    <option value="1" selected="selected">Naslov PE</option>
+                                    <option value="6">Nivo popisa</option>
+                                    <option value="10047">Opomba</option>
+                                    <option value="2">Signatura PE</option>
+                                    <option value="3">Signatura PE AP</option>
+                                    <option value="10034">Vsebina PE</option>
+                                    <option value="8">Vsebuje tudi</option>
+                                    <option value="17">Zvrsti arhivskega gradiva</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <select id="searchMode1" class="form-control form-control-sm" title="Način iskanja 1" aria-label="Način iskanja 1" name="mode1">
+                                    <option value="0">začne z</option>
+                                    <option value="1" selected="selected">vsebuje</option>
+                                    <option value="2">zaključi z</option>
+                                    <option value="3">je enako</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" placeholder="Vnesite iskano besedilo"
+                                       class="form-control form-control-sm" id="text1" name="text1" value="Franciscejski kataster">
+                            </div>
+                            <div class="col-sm-2">
+                                <select id="searchLink1" class="form-control form-control-sm" title="Povezava na iskalno polje 2"
+                                        aria-label="Povezava na iskalno polje 2" onChange="linkChanged(this.value, 2)" name="link1">
+                                    <option value="-1"></option>
+                                    <option value="AND">IN</option>
+                                    <option value="OR">ALI</option>
+                                    <option value="AND_NOT">IN NE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group" id="row2Space" style="display:none">
+                            <div class="col-sm-12">&nbsp;</div>
+                        </div>
+                        <div class="row form-group" id="row2" style="display:none">
+                            <div class="col-sm-4">
+                                <select id="field2" name="field2" class="form-control form-control-sm" title="Iskalno polje 2" aria-label="Iskalno polje 2">
+                                    <option value="10041">Jezik</option>
+                                    <option value="10068">Kraj nastanka</option>
+                                    <option value="1" selected="selected">Naslov PE</option>
+                                    <option value="6">Nivo popisa</option>
+                                    <option value="10047">Opomba</option>
+                                    <option value="2">Signatura PE</option>
+                                    <option value="3">Signatura PE AP</option>
+                                    <option value="10034">Vsebina PE</option>
+                                    <option value="8">Vsebuje tudi</option>
+                                    <option value="17">Zvrsti arhivskega gradiva</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <select id="searchMode2" class="form-control form-control-sm" title="Način iskanja 2" aria-label="Način iskanja 2" name="mode2">
+                                    <option value="0" selected="selected">začne z</option>
+                                    <option value="1">vsebuje</option>
+                                    <option value="2">zaključi z</option>
+                                    <option value="3">je enako</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" placeholder="Vnesite iskano besedilo"
+                                       class="form-control form-control-sm" id="text2" name="text2" value="">
+                            </div>
+                            <div class="col-sm-2">
+                                <select id="searchLink2" class="form-control form-control-sm" title="Povezava na iskalno polje 3"
+                                        aria-label="Povezava na iskalno polje 3" onChange="linkChanged(this.value, 3)" name="link2">
+                                    <option value="-1"></option>
+                                    <option value="AND">IN</option>
+                                    <option value="OR">ALI</option>
+                                    <option value="AND_NOT">IN NE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group" id="row3Space" style="display:none">
+                            <div class="col-sm-12">&nbsp;</div>
+                        </div>
+                        <div class="row form-group" id="row3" style="display:none">
+                            <div class="col-sm-4">
+                                <select id="field3" name="field3" class="form-control form-control-sm" title="Iskalno polje 3" aria-label="Iskalno polje 3">
+                                    <option value="10041">Jezik</option>
+                                    <option value="10068">Kraj nastanka</option>
+                                    <option value="1" selected="selected">Naslov PE</option>
+                                    <option value="6">Nivo popisa</option>
+                                    <option value="10047">Opomba</option>
+                                    <option value="2">Signatura PE</option>
+                                    <option value="3">Signatura PE AP</option>
+                                    <option value="10034">Vsebina PE</option>
+                                    <option value="8">Vsebuje tudi</option>
+                                    <option value="17">Zvrsti arhivskega gradiva</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <select id="searchMode3" class="form-control form-control-sm" title="Način iskanja 3" aria-label="Način iskanja 3" name="mode3">
+                                    <option value="0" selected="selected">začne z</option>
+                                    <option value="1">vsebuje</option>
+                                    <option value="2">zaključi z</option>
+                                    <option value="3">je enako</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" placeholder="Vnesite iskano besedilo"
+                                       class="form-control form-control-sm" id="text3" name="text3" value="">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-12">&nbsp;</div>
+                        </div>
+
+                        <div><div>
+        <!--  8. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label h5">Iskanje omejite na:</label>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <!--  9. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label id="labelSearchSearchRange" class="form-control-label form-control-sm">Področje iskanja</label>
+            </div>
+            <div class="col-sm-6">
+                <select id="searchRange" class="form-control form-control-sm" name="searchRange" aria-labelledby="labelSearchSearchRange"
+                onchange="if(this.value==0){$('#searchRangeWarningCommon').hide();}else{$('#searchRangeWarningCommon').show();}">
+                    <option value="0">(Celotni arhiv)</option>
+                    <option value="1"
+                            selected="selected">(Zadnji rezultati iskanja)</option>
+                    
+                    
+                </select>
+            </div>
+        </div>
+        <div class="row form-group" style="display:none" id="searchRangeWarningCommon">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-6">
+                <label class="form-control-label form-control-sm">Pozor! Področje iskanja je omejeno.</label>
+            </div>
+        </div>
+        <!--  10. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Področje iskanja (arhivi)</label>
+            </div>
+            <div class="col-sm-6">
+                <select id="searchRangeArchive" class="form-control form-control-sm" name="searchRangeArchive" onchange="if(this.value==0){$('#searchRangeWarningArchivesCommon').hide();}else{$('#searchRangeWarningArchivesCommon').show();}">
+                    <option value="">(Vsi arhivi)</option>
+                    <option value="SI_ZAL_NME">Zgodovinski arhiv Ljubljana, Enota v Novem mestu</option>
+                    <option value="SI_ZAL_TRŽ">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_RAD">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_JES">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_CER">Zgodovinski arhiv Ljubljana, Enota v Ljubljani, UE Cerknica</option>
+                    <option value="SI_ZAL_DOM">Zgodovinski arhiv Ljubljana, Enota v Ljubljani, UE Domžale</option>
+                    <option value="SI_ZAL_GRO">Zgodovinski arhiv Ljubljana, Enota v Ljubljani, UE Grosuplje</option>
+                    <option value="SI_ZAL_KAM">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI AS">Arhiv Republike Slovenije</option>
+                    <option value="SI_PAM">Pokrajinski arhiv Maribor</option>
+                    <option value="SI_PAK">Pokrajinski arhiv Koper</option>
+                    <option value="SI_PANG">Pokrajinski arhiv v Novi Gorici </option>
+                    <option value="SI_ZAC">Zgodovinski arhiv Celje</option>
+                    <option value="SI_ZAL_LJU">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAP">Zgodovinski arhiv na Ptuju</option>
+                    <option value="SI_ZAL_KOČ">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_LIT">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_LOG">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_RIB">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_VRH">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_KRA">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_ŠKL">Zgodovinski arhiv v Ljubljani, Enota v Škofji Loki</option>
+                    <option value="SI_ZAL_IDR">Zgodovinski arhiv v Ljubljani, Enota v Idriji</option>
+                    <option value="SI_ZAL_ČRN">Zgodovinski arhiv Ljubljana, Enota v Novem mestu, UE Črnomelj</option>
+                    <option value="SI_ZAL_MET">Zgodovinski arhiv Ljubljana, Enota v Novem mestu</option>
+                    <option value="SI_ZAL_TRE">Zgodovinski arhiv Ljubljana, Enota v Novem mestu</option>
+                </select>
+            </div>
+        </div>
+        <div class="row form-group" style="display:none" id="searchRangeWarningArchivesCommon">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-6">
+                <label class="form-control-label form-control-sm">Pozor! Področje iskanja je omejeno.</label>
+            </div>
+        </div>
+        <!--  11. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Časovno obdobje</label>
+            </div>
+            <div class="col-sm-1">
+                <label class="form-control-label form-control-sm">Od</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control form-control-sm" id="datepickerFrom" placeholder="Vnesite datum od (npr. null)" onblur="checkDates(this, true);" name="timePeriodFrom" value=""/>
+            </div>
+            <div class="col-sm-1">
+                <label class="form-control-label form-control-sm">do</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control form-control-sm" id="datepickerTo" placeholder="Vnesite datum do (npr. null)" onblur="checkDates(this, false);" name="timePeriodTo" value=""/>
+            </div>
+        </div>
+        <!--  12. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label id="labelSearchArchivalMaterialType" class="form-control-label form-control-sm">Vrsta arhivskega gradiva</label>
+            </div>
+            <div class="col-sm-6">
+                <select class="form-control form-control-sm" aria-labelledby="labelSearchArchivalMaterialType" id="archivalMaterialTypeId" name="archivalMaterialTypeId">
+                    <option value="-1"></option>
+                    <option value="10769">3D predmeti</option>
+                    <option value="10094">arhitekturne in tehnološke risbe</option>
+                    <option value="10097">digitalno gradivo</option>
+                    <option value="10006">filmsko gradivo</option>
+                    <option value="10004">fotografsko gradivo</option>
+                    <option value="10095">grafično gradivo</option>
+                    <option value="10005">kartografsko gradivo</option>
+                    <option value="10002">listinsko gradivo</option>
+                    <option value="10742">mikrografsko gradivo</option>
+                    <option value="10096">muzikalije</option>
+                    <option value="10770">ostalo</option>
+                    <option value="10237">podatkovne zbirke</option>
+                    <option value="10099">rokopisno gradivo</option>
+                    <option value="10003">spisovno gradivo</option>
+                    <option value="10098">tiskano gradivo</option>
+                    <option value="10007">zvočni zapisi</option>
+                </select>
+            </div>
+        </div>
+        <!--  13. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <div class="c-cb normal">
+                    <input type="checkbox" aria-label="Preko spleta dostopne slike" id="imagesOnline1" name="imagesOnline" value="true"><input type="hidden" name="_imagesOnline" value="on"/>
+                    <label>Preko spleta dostopne slike</label>
+                </div>
+            </div>
+        </div>
+        <!--  14. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Nivo(ji) popisa</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" id="levelsText" readonly="readonly" class="form-control form-control-sm" aria-label="Nivo(ji) popisa">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" id="nivojiId" class="form-control-label form-control-sm"
+                       aria-label="Prikaži/skrij nivoje popisa"
+                       data-toggle="collapse"
+                       data-target="#levelsOfDescription"
+                       aria-expanded="false"
+                       aria-controls="levelsOfDescription"
+                       value="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <div id="levelsOfDescription" class="fade collapse" tabindex="-1">
+                    
+                        <input hidden="true" name="levelOfDescription[0].scopeId" value="10000" />
+                        <input hidden="true" name="levelOfDescription[0].levelName" value="Arhiv" />
+                        <input hidden="true" name="levelOfDescription[0].iconId" value="17" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Arhiv" name="levelOfDescription[0].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Arhiv">
+                            <label>Arhiv</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[1].scopeId" value="10007" />
+                        <input hidden="true" name="levelOfDescription[1].levelName" value="Dokument" />
+                        <input hidden="true" name="levelOfDescription[1].iconId" value="7" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Dokument" name="levelOfDescription[1].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Dokument">
+                            <label>Dokument</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[2].scopeId" value="10003" />
+                        <input hidden="true" name="levelOfDescription[2].levelName" value="Fond/zbirka" />
+                        <input hidden="true" name="levelOfDescription[2].iconId" value="8" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Fond/zbirka" name="levelOfDescription[2].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Fond/zbirka">
+                            <label>Fond/zbirka</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[3].scopeId" value="10014" />
+                        <input hidden="true" name="levelOfDescription[3].levelName" value="Organizacijska enota" />
+                        <input hidden="true" name="levelOfDescription[3].iconId" value="17" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Organizacijska enota" name="levelOfDescription[3].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Organizacijska enota">
+                            <label>Organizacijska enota</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[4].scopeId" value="10010" />
+                        <input hidden="true" name="levelOfDescription[4].levelName" value="Podfond" />
+                        <input hidden="true" name="levelOfDescription[4].iconId" value="5" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Podfond" name="levelOfDescription[4].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Podfond">
+                            <label>Podfond</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[5].scopeId" value="10011" />
+                        <input hidden="true" name="levelOfDescription[5].levelName" value="Podserija" />
+                        <input hidden="true" name="levelOfDescription[5].iconId" value="12" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Podserija" name="levelOfDescription[5].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Podserija">
+                            <label>Podserija</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[6].scopeId" value="10004" />
+                        <input hidden="true" name="levelOfDescription[6].levelName" value="Serija" />
+                        <input hidden="true" name="levelOfDescription[6].iconId" value="2" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Serija" name="levelOfDescription[6].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Serija">
+                            <label>Serija</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[7].scopeId" value="10013" />
+                        <input hidden="true" name="levelOfDescription[7].levelName" value="Skupina arhivov" />
+                        <input hidden="true" name="levelOfDescription[7].iconId" value="20" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Skupina arhivov" name="levelOfDescription[7].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Skupina arhivov">
+                            <label>Skupina arhivov</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[8].scopeId" value="10002" />
+                        <input hidden="true" name="levelOfDescription[8].levelName" value="Skupina fondov" />
+                        <input hidden="true" name="levelOfDescription[8].iconId" value="10" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Skupina fondov" name="levelOfDescription[8].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Skupina fondov">
+                            <label>Skupina fondov</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[9].scopeId" value="10012" />
+                        <input hidden="true" name="levelOfDescription[9].levelName" value="Slika" />
+                        <input hidden="true" name="levelOfDescription[9].iconId" value="1" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Slika" name="levelOfDescription[9].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Slika">
+                            <label>Slika</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[10].scopeId" value="10006" />
+                        <input hidden="true" name="levelOfDescription[10].levelName" value="Združeni dokumenti" />
+                        <input hidden="true" name="levelOfDescription[10].iconId" value="3" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Združeni dokumenti" name="levelOfDescription[10].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Združeni dokumenti">
+                            <label>Združeni dokumenti</label>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- dodatni iskalniki -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Dodatni iskalniki</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" id="additionalSearchSourcesText" readonly="readonly" class="form-control form-control-sm" aria-label="Dodatni iskalniki">
+                <input type="text" style="display: none" aria-labelledby="additionalSearchSourcesText" id="csvSearchSources" name="csvSearchSources" value="">
+            </div>
+            <div class="col-sm-1">
+                <input type="button"
+                       id="buttonAdditionalSearchSources"
+                       class="form-control-label form-control-sm"
+                       aria-label="Prikaži/skrij dodatne vire"
+                       data-toggle="collapse"
+                       data-target="#additionalSearchSources"
+                       aria-expanded="false"
+                       aria-controls="additionalSearchSources"
+                       value="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <div id="additionalSearchSources" class="fade collapse" tabindex="-1">
+                    <div class="c-cb normal">
+                        <input type="checkbox" aria-label="Iskalnik prostorskih podatkov" onclick="selectAdditionalSearchSource();"
+                               data-sourceText="Iskalnik prostorskih podatkov" data-sourceId="GeoNetwork">
+                        <label>Iskalnik prostorskih podatkov</label>
+                    </div>
+                    <div class="c-cb normal">
+                        <input type="checkbox" aria-label="Iskalnik avdiovizualnega gradiva" onclick="selectAdditionalSearchSource();"
+                               data-sourceText="Iskalnik avdiovizualnega gradiva" data-sourceId="Jukebox">
+                        <label>Iskalnik avdiovizualnega gradiva</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+/*<![CDATA[*/
+
+// Get java localized date pattern. 
+var datePattern = null;
+datePattern = datePattern.replace("yyyy", "y").replace("yy", "y").replace("y", "yy").toLowerCase();
+var expectedDatePattern = datePattern.replace("yy", "yyyy").replace("m", "M");
+
+var datepickerFromVisible = false;
+var datepickerToVisible = false;
+// Variable is used in jquery-ui.js. If variable is not defined, datepicker behaves as by default.
+var jQueryUIDatepickerSliders = true;
+
+var yearText = "Leto";
+var monthText = "Mesec";
+
+// Function needed only if slider is on.
+function datePickerSliderSetYear(year) {
+    if($("#sliderYear")[0].min == year) {
+        setTimeout(function() {
+            var min = Number($("#sliderYear")[0].min) - 50;
+            if(min < 100) {
+                min = 100;
+            }
+            $("#sliderYear")[0].min = min;
+        }, 500);
+    }
+    else if($("#sliderYear")[0].max == year) {
+        setTimeout(function() {
+            var max = Number($("#sliderYear")[0].max) + 50;
+            if(max > 3000) {
+                max = 3000;
+            }
+            $("#sliderYear")[0].max = max;
+        }, 500);
+    }
+    $("#sliderYearValue").text(year);
+}
+
+//Function needed only if slider is on.
+function datePickerSliderSetMonth(month) {
+    $("#sliderMonthValue").text(month);
+}
+
+// In IE11 oninput doesn't work. Instead of this the onchange event is triggered
+// on every slider movement. If we call the datepicker.setDate method instantly the
+// slider value frame appears in the upper-left corner and it stays there for ever.
+// To avoid this the datepicker.setDate is called after 100 ms.
+// All this is for IE only.
+// Variable isIE11 is defined in the vac.js script.
+// Variables are needed only if slider is on.
+var mouseIsDown = false;
+var dateString;
+var datepickerParent;
+
+//Function needed only if slider is on.
+function datePickerSliderMouseDown() {
+    mouseIsDown = true;
+}
+
+//Function needed only if slider is on.
+function datePickerSliderMouseUp() {
+    mouseIsDown = false;
+    if(isIE11) {
+        setTimeout(function(){ datepickerParent.datepicker("setDate", dateString); }, 100);
+    }
+}
+
+//Function needed only if slider is on.
+function datePickerSliderSetDate(year, month) {
+    //year = $("#sliderYearValue").text();
+    //month = $("#sliderMonthValue").text();
+
+    if(datepickerFromVisible) {
+        datepickerParent = $("#datepickerFrom");
+    }
+    else if(datepickerToVisible) {
+        datepickerParent = $("#datepickerTo");
+    }
+    var date = datepickerParent.datepicker("getDate");
+    if(date == null) {
+        date = new Date();
+    }
+    var day = date.getDate();
+
+    var isOk = false;
+    do {
+        isOk = isValidDate(year, month, day);
+        if(!isOk) {
+            day--;
+        }
+    }
+    while(!isOk && day >= 0)
+    
+    dateString = datePattern.replace("d", day).replace("m", month + 1).replace("yy", year);
+    if(!isIE11) {
+        datepickerParent.datepicker("setDate", dateString);
+    }
+    else {
+        if(!mouseIsDown) {
+            datepickerParent.datepicker("setDate", dateString);
+        }
+    }
+}
+
+//Function needed only if slider is on.
+function isValidDate(year, month, day) {
+    var date = new Date();
+    date.setFullYear(year, month, day);
+    
+    if(date.getFullYear() == year && date.getMonth() == month && date.getDate() == day) {
+        return true;
+    }
+
+    return false;
+}
+
+$( function() {
+    var options = $.extend({}, // empty object    
+        $.datepicker.regional[locale], { //locale is defined in vac.js
+            dateFormat: datePattern,
+            beforeShow: function () {
+                datepickerFromVisible = true;
+                datepickerToVisible = false;
+            },
+            /*onClose: function() {
+                alert($("#datepickerFrom").datepicker("getDate"));
+            },*/
+        } // your custom options    
+    );
+    $("#datepickerFrom").datepicker(options);
+
+    var options = $.extend({}, // empty object    
+        $.datepicker.regional[locale], { //locale is defined in vac.js
+            dateFormat: datePattern,
+            beforeShow: function () {
+                datepickerFromVisible = false;
+                datepickerToVisible = true;
+            },
+        } // your custom options    
+    );
+    $("#datepickerTo").datepicker(options);
+});
+
+function selectLevelsOfDescription() {
+    //th:data-levelName
+    var separator = "";
+    var levels = "";
+    $('input:checkbox[data-levelName]').each(function () {
+        if(this.checked) {
+            //alert($(this).attr("data-levelName"));
+            levels += separator + $(this).attr("data-levelName");
+            separator = ", ";
+        }
+    });
+    $("#levelsText").val(levels);
+}
+
+function selectAdditionalSearchSource() {
+    var separatorText = "";
+    var separatorCsv = "";
+    var sourcesText = "";
+    var sourcesCsv = "";
+    $('input:checkbox[data-sourceId]').each(function () {
+        if(this.checked) {
+            sourcesText += separatorText + $(this).attr("data-sourceText");
+            sourcesCsv += separatorCsv + $(this).attr("data-sourceId");
+            separatorText = ", ";
+            separatorCsv = ",";
+        }
+    });
+    $("#additionalSearchSourcesText").val(sourcesText);
+    $("#csvSearchSources").val(sourcesCsv);
+}
+
+function checkDates(element, isFrom) {
+    if(element.value.length > 0) {
+        if(parseInt(element.value) == element.value.trim()) {
+            if(isFrom) {
+                element.value = "1.1." + element.value;
+            }
+            else {
+                element.value = "31.12." + element.value;
+            }
+        }
+        else if(parseDate(element.value, "dd.MM.yyyy", null) == null) {
+            element.value = "";
+        }
+    }
+}
+
+document.getElementById('buttonAdditionalSearchSources')
+    .addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+    });
+
+document.getElementById('nivojiId')
+    .addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+    });
+
+/*]]>*/
+        </script>
+    </div></div>
+
+                        <div id="searchRangeWarning" style="display:none" class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-6">
+                                <label class="form-control-label form-control-sm">Pozor! Področje iskanja je omejeno. Za ukinitev omejitev razširite možnosti iskanja.</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-6">
+                                <input class="form-control-label form-control-sm" id="srchCmd" type="button" value="Išči" onclick="searchWithinResultsAjax();">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <script>
+                    $(document).on('submit', '#fieldSearchForm', function(e){
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    });
+
+                    $(document).on('keydown', '#fieldSearchForm input[type="text"]', function(e){
+                        if (e.keyCode === 13) {
+                            e.preventDefault();
+                            searchWithinResultsAjax();
+                            return false;
+                        }
+                    });
+
+                    function searchWithinResultsAjax() {
+                        var $form = $('#fieldSearchForm');
+                        
+                        var baseSearchId = $('#searchResults_Table').attr('data-searchId');
+                        var requestData = $form.serialize();
+                        if (baseSearchId) {
+                            requestData += '&baseSearchId=' + encodeURIComponent(baseSearchId);
+                        }
+                        $.ajax({
+                            type: "POST",
+                            url: $form.attr('action'),
+                            data: requestData,
+                            dataType: "json",
+                            success: function(resp) {
+                                var newSearchId = resp.searchId;
+                                $("#searchResults_Table").attr("data-searchId", newSearchId);
+
+                                inProgress(true);
+
+                                var first = document.querySelector('#searchResults_Table a[data-id="PaginationFirst"]');
+                                if (first != null) {
+                                    dataTableGoToPageInt(first);
+                                }
+                            },
+                            error: function(xhr) {
+                                inProgress(false);
+                                handleAjaxError(xhr);
+                            }
+                        });
+                    }
+
+
+                </script>
+            </form>
+        </div>
+    </div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <input type="button" aria-label="Izvozi rezultate v Excel"
+                                                       title="Izvozi rezultate v Excel"
+                                                       class="btn glyph-excel mr-2" style="font-size: 1.7em; width: 40px;"
+                                                       onclick="exportDocument('Excel')" />
+                                                <input type="button" aria-label="Izvozi rezultate v PDF"
+                                                       title="Izvozi rezultate v PDF"
+                                                       class="btn glyph-pdf" style="font-size: 1.7em; width: 40px;"
+                                                       onclick="exportDocument('Pdf')" />
+                                            </div>
+
+                                            <div>
+                                                <input type="button"
+                                                       id="listViewBtn" aria-label="Prikaži rezultate kot seznam"
+                                                       title="Prikaži rezultate kot seznam"
+                                                       aria-pressed="true"
+                                                       class="btn glyph-unordered-list"
+                                                       style="font-size: 1.7em; width: 40px;"
+                                                       onclick="toggleView('list')"/>
+                                                <input type="button" id="gridViewBtn"
+                                                       aria-label="Prikaži rezultate kot mrežo"
+                                                       title="Prikaži rezultate kot mrežo"
+                                                       aria-pressed="false"
+                                                       class="btn glyph-grid"
+                                                       style="font-size: 1.7em; width: 40px; opacity: 0.6"
+                                                       onclick="toggleView('grid')"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table class="table datatable sortable noBorder table-cards"
+                                           aria-label="Tabela Seznam zadetkov"
+                                           id="searchResults_Table" data-path="/vac/search/"
+                                           data-entityName="searchResults" data-sortColumn="score"
+                                           data-pageSize="10" data-sortIsAsc="true"
+                                           data-currentPage="1"
+                                           data-totalPages="0" data-canEdit="false"
+                                           data-canDelete="false"
+                                           data-itemId="id"
+                                           data-showColumns="!!defined in the javascript: showColumnsDefault & showColumnsImages!!"
+                                           data-specialColumns="true"
+                                           style="display:none"
+                                           data-searchId="1790193976257"
+                                    >
+                                        <thead>
+                                        <tr>
+                                            <!--
+                                            data-colName = column name
+                                            data-currentSort=true (to the default sort column)
+                                            th:aria-label
+                                            th:utext
+                                            -->
+                                            <th style="display:none"></th>
+                                            <th>
+                                                <div class="c-cb normal">
+                                                    <input type="checkbox" name="selectAll"
+                                                           aria-label="Označi vse"
+                                                           onclick="selectAll(this);">
+                                                    <label></label>
+                                                </div>
+                                            </th>
+                                            <th></th>
+                                            <th><a class="sorting glyph-sort-updown" data-colName="title" href="#"
+                                                   aria-label="Razvrsti po: Naslov/Vsebuje tudi"
+                                                   onclick="dataTableSortInt(this);return false;">Naslov/Vsebuje tudi</a></th>
+                                            <th><a class="sorting glyph-sort-down" data-currentSort="true"
+                                                   data-colName="dateRangeText" href="#"
+                                                   aria-label="Razvrsti po: Čas nastanka"
+                                                   onclick="dataTableSortInt(this);return false;">Čas nastanka</a></th>
+                                            <th><a class="sorting glyph-sort-updown" data-colName="level" href="#"
+                                                   aria-label="Razvrsti po: Nivo popisa"
+                                                   onclick="dataTableSortInt(this);return false;">Nivo popisa</a></th>
+                                            <th><a class="sorting glyph-sort-updown" data-colName="refCode" href="#"
+                                                   aria-label="Razvrsti po: Signatura PE"
+                                                   onclick="dataTableSortInt(this);return false;">Signatura PE</a></th>
+                                            <th><a class="sorting glyph-sort-updown" data-colName="score" href="#"
+                                                   aria-label="Razvrsti po: Ustreznost"
+                                                   onclick="dataTableSortInt(this);return false;">Ustreznost</a></th>
+                                            <th>Dostopnost</th>
+                                            <th>Vsebuje datoteke</th>
+                                            <th><a class="sorting glyph-sort-updown" data-colName="searchSource"
+                                                   href="#"
+                                                   aria-label="Razvrsti po: Dodatni iskalnik"
+                                                   onclick="dataTableSortInt(this);return false;">Dodatni iskalnik</a></th>
+                                            <th aria-label="Tektonika arhiva"
+                                                title="Tektonika arhiva">Tektonika arhiva</th>
+                                        </tr>
+                                        <tr class="head-hidden">
+                                            <th style="display:none"></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th aria-label="Naslov/Vsebuje tudi">Naslov/Vsebuje tudi</th>
+                                            <th aria-label="Čas nastanka">Čas nastanka</th>
+                                            <th aria-label="Nivo popisa">Nivo popisa</th>
+                                            <th aria-label="Signatura PE">Signatura PE</th>
+                                            <th aria-label="Ustreznost">Ustreznost</th>
+                                            <th aria-label="Dostopnost">Dostopnost</th>
+                                            <th aria-label="Vsebuje datoteke">Vsebuje datoteke</th>
+                                            <th aria-label="Dodatni iskalnik">Dodatni iskalnik</th>
+                                            <th aria-label="Tektonika arhiva">Tektonika arhiva</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <td colspan="1000" data-startPage="1"
+                                                data-endPage="0">
+                                                <div class="row">
+                                                    <span style="padding-left:10px"
+                                                          class="form-control-label form-control-sm inARow">Zadetkov:</span>
+                                                    <span id="pagerTotalItems"
+                                                          class="form-control-label form-control-sm inARow">0</span>
+                                                    &nbsp;
+                                                    <label style="padding-left:20px"
+                                                           class="form-control-label form-control-sm inARow">Pojdi na </label>
+                                                    <select id="pagerSelectPage" title="Izberi stran za ogled."
+                                                            aria-label="Izberi stran za ogled."
+                                                            value="1"
+                                                            class="form-control form-control-sm inARow"
+                                                            style="width:auto;position:relative;top:-2px"
+                                                            onchange="dataTableGoToPageNumber(this, this.value);" data-init="false">
+                                                        <option value="1">1</option>
+                                                        <option value="0">0</option>
+                                                    </select>
+                                                    <label style="padding-left:20px"
+                                                           class="form-control-label form-control-sm inARow">Zadetkov na stran</label>
+                                                    <select id="pagerPageSize" title="Izberi število zadetkov na stran."
+                                                            aria-label="Izberi število zadetkov na stran."
+                                                            class="form-control form-control-sm inARow"
+                                                            style="width:auto;position:relative;top:-2px"
+                                                            onchange="dataTableGoToPage(null);"
+                                                            value="10">
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="50" selected>50</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                    <div class="inARow"
+                                                         style="position:relative;top:1px;padding-left:20px">
+                                                        <a data-id="PaginationFirst" data-destinationPage="First"
+                                                           aria-label="Pojdi na prvo stran"
+                                                           class="pagination-link pagination-row pagination-disabled"
+                                                           href="#" onclick="dataTableGoToPageInt(this);return false;">
+                                                            <span class="glyph-page-first"></span></a>
+                                                        <a data-id="PaginationPrevious"
+                                                           data-destinationPage="Previous"
+                                                           aria-label="Pojdi na prejšnjo stran"
+                                                           class="pagination-link pagination-row pagination-disabled"
+                                                           href="#" onclick="dataTableGoToPageInt(this);return false;">
+                                                            <span class="glyph-page-previous"></span></a>
+                                                        <span class="pagination-row" data-id="PaginationPages"> &nbsp;&nbsp;
+                                                                    </span>
+                                                        <a data-id="PaginationNext" data-destinationPage="Next"
+                                                           aria-label="Pojdi na naslednjo stran"
+                                                           class="pagination-link pagination-row pagination-disabled"
+                                                           href="#" onclick="dataTableGoToPageInt(this);return false;">
+                                                            <span class="glyph-page-next"></span></a>
+                                                        <a data-id="PaginationLast"
+                                                           data-destinationPage="Last" aria-label="Pojdi na zadnjo stran"
+                                                           class="pagination-link pagination-row pagination-disabled"
+                                                           href="#" onclick="dataTableGoToPageInt(this);return false;">
+                                                            <span class="glyph-page-last"></span></a>
+                                                        <div class="pagination-row" style="float: right">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="onlyXRecordsDisplayed" class="row">
+                                                    <span id="onlyXRecordsDisplayedValue" style="padding-left:10px"
+                                                          class="form-control-label form-control-sm inARow">Prikazanih je samo prvih {0} zadetkov. </span>
+                                                    <span id="searchResultsMax" style="visibility:hidden">1000</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <input type="button"
+                                                   class="form-control-label form-control-sm"
+                                                   value="Nazaj"
+                                                   onclick="try{history.back();}catch(err){alert(err.message);}">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="spacer14"></div>
+                                    <script>
+                                        /*<![CDATA[*/
+                                        var msgAddToCart = "Dodaj v ko\u0161arico";
+                                        var msgShowAP = "Poglej tektoniko arhiva";
+                                        var noneSelectedWarning = "Ni ozna\u010Denih elementov.";
+                                        var addToWorkbookSuccess = "Izbrani rezultati so shranjeni.";
+                                        var addToWorkbookNA = "Elementi, najdeni samo v zunanjih iskalnikih niso primerni za dodajanje v delovno mapo.";
+                                        var deletedFromWorkbookSuccess = "Izbrane popisne enote so odstranjene iz delovne mape.";
+                                        var msgSelect = "Izberi";
+                                        var workbookDialog = $("#addToWorkbookDialog");
+                                        var workbooks = $("#workbooks");
+                                        var newWorkbookName = $("#newWorkbookName");
+                                        var labelDateRange = "\u010Cas nastanka";
+                                        var labelRefCode = "Signatura PE";
+                                        var labelScore = "Ustreznost";
+                                        var labelAccessibility = "Dostopnost";
+                                        var labelContainsFiles = "Vsebuje datoteke";
+                                        var labelLevel = "Nivo popisa";
+                                        var labelYes = "DA";
+                                        var labelNo = "NE";
+                                        var showColumnsDefault =
+                                            "scopeId::hidden," +
+                                            "scopeId::customParameterizedFunction::addChekbox::2::scopeId::canBeOrdered," +
+                                            "scopeId::customParameterizedFunction::addSingleToCart::2::scopeId::canBeOrdered," +
+                                            "title::customParameterizedFunction::handleTitle::5::scopeId::refCode::searchSource::searchSourceId::searchSourceLink," +
+                                            "dateRangeText," +
+                                            "level," +
+                                            "refCode," +
+                                            "score," +
+                                            "accessibility," +
+                                            "containsDocuments," +
+                                            "searchSource::hrefNewWin::{{0}}::1::searchSourceLink," +
+                                            "scopeId::customParameterizedFunction::addShowAP::1::scopeId";
+
+                                        var showColumnsImages =
+                                            "scopeId::hidden," +
+                                            "scopeId::customParameterizedFunction::addChekbox::2::scopeId::canBeOrdered," +
+                                            "scopeId::customParameterizedFunction::addSingleToCart::2::scopeId::canBeOrdered," +
+                                            "title::customParameterizedFunction::handleTitle::5::scopeId::refCode::searchSource::searchSourceId::searchSourceLink," +
+                                            "dateRangeText," +
+                                            "level," +
+                                            "scopeId::customFunction::showImage::scopeId," +
+                                            "refCode," +
+                                            "score," +
+                                            "accessibility," +
+                                            "containsDocuments," +
+                                            "searchSource::hrefNewWin::{{0}}::1::searchSourceLink," +
+                                            "scopeId::customParameterizedFunction::addShowAP::1::scopeId";
+
+                                        var searchResultsTable = $("#searchResults_Table");
+                                        var chkShowImages = $("input[name=showImagesChk]");
+                                        var chkShowDocuments = $("input[name=showDocumentsChk]");
+                                        var chkShowOrderable = $("input[name=showOrderableChk]");
+                                        var currentAPPosition;
+                                        var apContainer = $("#archivePlanContainer");
+                                        var selectedAP = null;
+
+                                        let currentView = 'list';
+
+                                        function toggleView(viewType) {
+                                            if (currentView === viewType) return;
+                                            currentView = viewType;
+
+                                            if (viewType === 'list') {
+                                                $("#listViewBtn").css("opacity", "1");
+                                                $("#gridViewBtn").css("opacity", "0.6");
+                                                $("#listViewBtn").attr("aria-pressed", "true");
+                                                $("#gridViewBtn").attr("aria-pressed", "false");
+                                            } else {
+                                                $("#gridViewBtn").css("opacity", "1");
+                                                $("#listViewBtn").css("opacity", "0.6");
+                                                $("#gridViewBtn").attr("aria-pressed", "true");
+                                                $("#listViewBtn").attr("aria-pressed", "false");
+                                            }
+
+                                            const $cardsContainer = $('div[id="searchResults_Cards"]');
+                                            $cardsContainer
+                                                .removeClass('results-cards--list results-cards--grid')
+                                                .addClass(viewType === 'list' ? 'results-cards--list' : 'results-cards--grid');
+                                        }
+
+                                        function buildCardsForSearchResults(table) {
+                                            var $table = $(table);
+                                            var $tbody = $table.find('tbody');
+                                            var $rows = $tbody.children('tr');
+
+                                            var colCount = $table.find('thead tr').first().children('th').length || 1000;
+                                            if ($rows.length === 0) {
+                                                $tbody.empty();
+                                                $tbody.append(
+                                                    '<tr class="sr-cards-row"><td colspan="' + colCount + '">' +
+                                                    '<div id="searchResults_Cards" class="results-cards results-cards--' + currentView + '"></div>' +
+                                                    '</td></tr>'
+                                                );
+                                                return;
+                                            }
+
+                                            var cards = [];
+                                            $rows.each(function () {
+                                                cards.push(buildCardFromRow($(this)));
+                                            });
+
+                                            $tbody.empty();
+                                            var $cardsRow = $('<tr class="sr-cards-row"><td colspan="' + colCount + '"><div id="searchResults_Cards" class="results-cards results-cards--' + currentView + '"></div></td></tr>');
+                                            $tbody.append($cardsRow);
+
+                                            var $cardsContainer = $cardsRow.find('#searchResults_Cards');
+
+                                            $cardsContainer
+                                                .addClass('results-cards')
+                                                .toggleClass('results-cards--list', currentView === 'list')
+                                                .toggleClass('results-cards--grid', currentView === 'grid');
+
+                                            cards.forEach(function ($card) {
+                                                $cardsContainer.append($card);
+                                            });
+                                        }
+
+                                        function buildCardFromRow($row) {
+                                            var $checkbox = $row.find("input[type='checkbox'][id]").first();
+                                            var $cartBtn = $row.find("a.addToCart").first();
+
+                                            var $titleCell = $row.find("td[data-property='title']");
+                                            var $dateCell = $row.find("td[data-property='dateRangeText']");
+                                            var $levelCell = $row.find("td[data-property='level']");
+                                            var $refCodeCell = $row.find("td[data-property='refCode']");
+                                            var $scoreCell = $row.find("td[data-property='score']");
+                                            var $accCell = $row.find("td[data-property='accessibility']");
+                                            var $docsCell = $row.find("td[data-property='containsDocuments']");
+                                            var $sourceCell = $row.find("td[data-property='searchSource']");
+                                            var $apCell = $row.find("td[data-property='archivePlan']");
+
+                                            var $imgCell = $row.find("td[data-property='image']");
+                                            var checkboxTitle = $.trim($titleCell.text());
+
+                                            var $card = $('<article class="sr-card sr-card--detailed"></article>');
+                                            var $inner = $('<div class="sr-card__inner"></div>');
+
+                                            var $left = $('<div class="sr-card__left"></div>');
+                                            if ($checkbox.length) {
+                                                $checkbox.attr(
+                                                    "aria-label",
+                                                    checkboxTitle ? msgSelect + ": " + checkboxTitle : msgSelect
+                                                );
+                                                $left.append($checkbox.closest('div.c-cb').detach());
+                                            }
+                                            if ($cartBtn.length) {
+                                                $left.append($cartBtn.closest('td').contents().detach());
+                                            }
+
+                                            var $right = $('<div class="sr-card__right"></div>');
+
+                                            var $titleWrapper = $('<div class="sr-card__title"></div>');
+                                            if ($titleCell.length) {
+                                                $titleWrapper.append($titleCell.contents().detach());
+                                            }
+                                            $right.append($titleWrapper);
+
+                                            var $grid = $('<div class="sr-card__grid"></div>');
+
+                                            var f1 = field(labelDateRange, $dateCell.text());
+                                            var f3 = field(labelRefCode, $refCodeCell.text());
+                                            var f4 = field(labelScore, $scoreCell.text());
+                                            var f5 = field(labelAccessibility, $accCell.text());
+                                            var f6 = imageField(labelContainsFiles, $docsCell.text());
+                                            var f2 = fieldNivo($levelCell, $imgCell);
+                                            var f7 = field('Vir', $sourceCell.text());
+                                            var fAp = apField('Tektonika arhiva', $apCell.text());
+
+                                            [f1, f3, f2, f4, f5, f6, f7, fAp].forEach(function (f) {
+                                                if (f) $grid.append(f);
+                                            });
+
+                                            $right.append($grid);
+
+                                            $inner.append($left).append($right);
+                                            $card.append($inner);
+
+                                            return $card;
+                                        }
+
+                                        function field(labelText, valueText) {
+                                            if (!valueText || !valueText.trim()) return null;
+                                            var $f = $('<div class="sr-card__field"></div>');
+                                            $f.append('<span class="sr-card__field-label">' + labelText + ':</span> ');
+                                            $f.append('<span class="sr-card__field-value">' + valueText + '</span>');
+                                            return $f;
+                                        }
+
+                                        function fieldNivo($levelCell, $imgCell) {
+                                            // 1) če obstaja slika → prikaži sliko
+                                            if ($imgCell && $imgCell.find('img').length) {
+                                                var $f = $('<div class="sr-card__field sr-card__field--nivel"></div>');
+                                                $f.append('<span class="sr-card__field-label">' + labelLevel + ':</span>');
+
+                                                var $imgWrap = $('<span class="sr-card__field-value"></span>');
+                                                $imgWrap.append($imgCell.contents().detach()); // <a><img/></a>
+
+                                                $f.append($imgWrap);
+                                                return $f;
+                                            }
+
+                                            // 2) sicer prikaži tekst
+                                            var text = ($levelCell.text() || '').trim();
+                                            if (!text) return null;
+
+                                            return field(labelLevel, text);
+                                        }
+
+                                        function imageField(label, valueText) {
+                                            var clean = (valueText ?? "").trim();
+                                            if (clean === "" || clean === "0" || clean.toLowerCase() === "false") {
+                                                var $f = $('<div class="sr-card__field"></div>');
+                                                $f.append('<span class="sr-card__field-label">' + label + ':</span> ');
+                                                $f.append('<span class="sr-card__field-value">' + labelNo + '</span>');
+                                                return $f;
+                                            }
+                                            var $f = $('<div class="sr-card__field"></div>');
+                                            $f.append('<span class="sr-card__field-label">' + label + ':</span> ');
+                                            $f.append('<span class="sr-card__field-value">' + labelYes + '</span>');
+                                            return $f;
+                                        }
+
+                                        $('#collapseOne').on('shown.bs.collapse', function () {
+                                            $(this).find('input, select, button').filter(':visible').first().focus();
+                                        });
+
+                                        $('#collapseOne').on('hidden.bs.collapse', function () {
+                                            $('#searchWithinResultsToggle').focus();
+                                        });
+
+                                        function apField(label, valueText) {
+                                            var clean = (valueText ?? "").trim();
+
+                                            if (clean === "" || clean === "0") {
+                                                var $f = $('<div class="sr-card__field"></div>');
+                                                $f.append('<span class="sr-card__field-label">' + label + ':</span> ');
+                                                $f.append('<span class="sr-card__field-value">/</span>');
+                                                return $f;
+                                            }
+
+                                            var apId = clean;
+
+                                            var $f = $('<div class="sr-card__field"></div>');
+                                            $f.append('<span class="sr-card__field-label">' + label + ':</span> ');
+
+                                            var $link = $('<a class="glyph-inAP sr-ap-link" href="#"></a>');
+                                            $link.attr("onclick", "showAP(this, " + apId + "); return false;");
+
+                                            $f.append($link);
+
+                                            return $f;
+                                        }
+
+                                        function dataTableSortInt(domObj) {
+                                            selectAllBoolean(false);
+                                            var images = false;
+                                            var orderable = false;
+                                            var documents = false;
+                                            if (chkShowImages[0] != null && chkShowImages[0].checked) {
+                                                images = true;
+                                            }
+                                            if (chkShowOrderable[0] != null && chkShowOrderable[0].checked) {
+                                                orderable = true;
+                                            }
+                                            if (chkShowDocuments[0] != null && chkShowDocuments[0].checked) {
+                                                documents = true;
+                                            }
+                                            if (images || orderable || documents) {
+                                                dataTableSortExtraUrlParams(domObj, "&images=" + images + "&orderable=" + orderable + "&documents=" + documents);
+                                            } else {
+                                                dataTableSort(domObj);
+                                            }
+                                        }
+
+                                        function dataTableGoToPageInt(domObj) {
+                                            selectAllBoolean(false);
+                                            var images = false;
+                                            var orderable = false;
+                                            var documents = false;
+                                            if (chkShowImages[0] != null && chkShowImages[0].checked) {
+                                                images = true;
+                                            }
+                                            if (chkShowOrderable[0] != null && chkShowOrderable[0].checked) {
+                                                orderable = true;
+                                            }
+                                            if (chkShowDocuments[0] != null && chkShowDocuments[0].checked) {
+                                                documents = true;
+                                            }
+                                            if (images || orderable || documents) {
+                                                dataTableGoToPageExtraUrlParams(domObj, "&images=" + images + "&orderable=" + orderable + "&documents=" + documents);
+                                            } else {
+                                                dataTableGoToPage(domObj);
+                                            }
+                                        }
+
+                                        function showImages(chkDom) {
+                                            selectAllBoolean(false);
+                                            if (chkDom.checked) {
+                                                searchResultsTable.attr("data-showColumns", showColumnsImages);
+                                            } else {
+                                                searchResultsTable.attr("data-showColumns", showColumnsDefault);
+                                            }
+                                            inProgress(true);
+                                            $('a[data-id="PaginationFirst"]').click();
+                                        }
+
+                                        function showDocuments(chkDom) {
+                                            selectAllBoolean(false);
+                                            inProgress(true);
+                                            $('a[data-id="PaginationFirst"]').click();
+                                        }
+
+                                        function showImage(property, value, tableBodyTd) {
+                                            try {
+                                                if (value != null && value > 0) {
+                                                    const uodid = value;
+                                                    const docid = 10;
+                                                    const seq = 1;
+
+                                                    const viewerUrl = '/vac/tify?uodid=' + uodid + '&docid=' + docid + '&seq=' + seq;
+
+                                                    tableBodyTd +=
+                                                        '<td data-property="image">' +
+                                                        '<a href="' + viewerUrl + '" target="_blank" rel="noopener">' +
+                                                        '<img class="sr-thumb" src="/vac/util/fileStream?type=2&uodid=' + uodid + '&docid=9&seq=1" style="width:40px;height:40px;" alt="">' +
+                                                        '</a>' +
+                                                        '</td>';
+
+                                                } else {
+                                                    tableBodyTd += '<td data-property="image"></td>';
+                                                }
+                                            } catch (err) {}
+                                            return tableBodyTd;
+                                        }
+
+                                        function selectAll(triggerElement) {
+                                            selectAllBoolean(triggerElement.checked);
+                                        }
+
+                                        function selectAllBoolean(select) {
+                                            $("input[type='checkbox'][id]").prop('checked', select);
+                                            if (select) {
+                                                $("input[name='selectAll'")[0].checked = true;
+                                                $("input[name='selectAll'")[0].readOnly = false;
+                                            } else {
+                                                $("input[name='selectAll'")[0].checked = false;
+                                                $("input[name='selectAll'")[0].readOnly = false;
+                                            }
+                                        }
+
+                                        $(document).on('click', "input[type='checkbox'][id]", function (event) {
+                                            var all = $("input[type='checkbox'][id]").length;
+                                            if ($("input[type='checkbox'][id]:checked").length == 0) {
+                                                // None is selected. Reset.
+                                                $("input[name='selectAll'")[0].checked = $("input[name='selectAll'")[0].readOnly = false;
+                                            } else if ($("input[type='checkbox'][id]:checked").length == all) {
+                                                // All are selected.
+                                                $("input[name='selectAll'")[0].checked = true;
+                                                $("input[name='selectAll'")[0].readOnly = false;
+                                            } else {
+                                                // Some are selected.
+                                                $("input[name='selectAll'")[0].readOnly = $("input[name='selectAll'")[0].indeterminate = true;
+                                            }
+                                        });
+
+                                        /*$(document).on('click', "input[type='checkbox' id]", function (event) {
+                                            alert("OK");
+                                        });*/
+
+                                        function addToWorkbook() {
+                                            if (workbooks.val() <= 0 && newWorkbookName.val().trim() === "") {
+                                                return;
+                                            }
+                                            workbookDialog.hide();
+                                            workbookDialog.attr("aria-hidden", true);
+                                            inProgress(true);
+                                            try {
+                                                var ids = [];
+                                                $("input[type='checkbox'][id]:checked").each(function (index) {
+                                                    if ($(this)[0].id > 0) {
+                                                        ids.push($(this)[0].id);
+                                                    }
+                                                });
+
+                                                $.ajax({
+                                                    type: "post",
+                                                    url: "/vac/search/addToWorkbookAjax?id=" + workbooks.val() + "&name=" + newWorkbookName.val(),
+                                                    contentType: 'application/json; charset=utf-8',
+                                                    dataType: 'json',
+                                                    data: JSON.stringify(ids),
+                                                    success: function (response) {
+                                                        if (!response.error) {
+                                                            inProgress(false);
+                                                            dialog(addToWorkbookSuccess, null, null, null, null, false, false, true, false);
+                                                        } else {
+                                                            glassPane(false);
+                                                            inProgress(false);
+                                                            dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                                                        }
+
+                                                        if (response.id > 0) {
+                                                            workbooks.append(new Option(newWorkbookName.val(), response.id));
+                                                        }
+                                                        workbooks.val(0);
+                                                        newWorkbookName.val("");
+
+                                                        return false;
+                                                    },
+                                                    error: handleAjaxError
+                                                });
+                                            } catch (err) {
+                                                glassPane(false);
+                                                workbookDialog.attr("aria-hidden", true);
+                                                inProgress(false);
+                                            }
+                                        }
+
+                                        function details() {
+                                            if ($("input[type='checkbox'][id]:checked").length == 0) {
+                                                dialog(noneSelectedWarning, null, null, null, null, false, false, true, false);
+                                                return;
+                                            }
+                                            try {
+                                                var chkbox = $("input[type='checkbox'][id]:checked");
+                                                var id = chkbox[0].id;
+                                                if (id > 0) {
+                                                    chkbox.parent().parent().parent().find("td[data-property='title'] > a")[0].click();
+                                                } else {
+                                                    chkbox.parent().parent().parent().find("td[data-property='searchSource'] > a")[0].click();
+                                                }
+                                            } catch (err) {
+                                            }
+                                        }
+
+                                        function deleteFromWorkbook(workbookId, workbookName) {
+                                            if ($("input[type='checkbox'][id]:checked").length == 0) {
+                                                dialog(noneSelectedWarning, null, null, null, null, false, false, true, false);
+                                                return;
+                                            }
+
+                                            inProgress(true);
+                                            try {
+                                                var ids = [];
+                                                $("input[type='checkbox'][id]:checked").each(function (index) {
+                                                    if ($(this)[0].id > 0) {
+                                                        ids.push($(this)[0].id);
+                                                    }
+                                                });
+
+                                                $.ajax({
+                                                    type: "post",
+                                                    url: "/vac/search/deleteFromWorkbookAjax?id=" + workbookId,
+                                                    contentType: 'application/json; charset=utf-8',
+                                                    dataType: 'json',
+                                                    data: JSON.stringify(ids),
+                                                    success: function (response) {
+                                                        if (!response.error) {
+                                                            inProgress(false);
+                                                            dialog(deletedFromWorkbookSuccess, null, null, function () {
+                                                                window.location.href = "/vac/search/getWorkbookUoDs?id=" + workbookId + "&name=" + workbookName;
+                                                            }, null, false, false, true, false);
+                                                        } else {
+                                                            inProgress(false);
+                                                            dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                                                        }
+
+                                                        return false;
+                                                    },
+                                                    error: handleAjaxError
+                                                });
+                                            } catch (err) {
+                                                inProgress(false);
+                                            }
+                                        }
+
+                                        function chooseWorkbook() {
+
+                                            var displayWarning = false;
+                                            $("input[type='checkbox'][id]:checked").each(function (index) {
+                                                if ($(this)[0].id <= 0) {
+                                                    $(this).click();
+                                                    displayWarning = true;
+                                                }
+                                            });
+                                            if (!displayWarning) {
+                                                openWorkbooks();
+                                            } else {
+                                                dialog(addToWorkbookNA, null, null, function () {
+                                                    openWorkbooks();
+                                                }, null, false, false, true, true);
+                                            }
+                                        }
+
+                                        function openWorkbooks() {
+                                            if ($("input[type='checkbox'][id]:checked").length == 0) {
+                                                dialog(noneSelectedWarning, null, null, null, null, false, false, true, false);
+                                                return;
+                                            }
+                                            workbookDialog.show();
+                                            workbookDialog.attr("aria-hidden", false);
+                                            glassPane(true);
+                                            $("#glassPane").on('keydown', function (e) {
+                                                e.preventDefault();
+                                                return false;
+                                            });
+                                            positionOnCenter(workbookDialog);
+                                            $("#workbooks").focus();
+                                        }
+
+                                        // --- helpers za JSON v localStorage pod ključem "vac" ---
+                                        const VAC_KEY = 'vac';
+
+                                        function vacRead() {
+                                            try {
+                                                return JSON.parse(localStorage.getItem(VAC_KEY) || '{}');
+                                            } catch {
+                                                return {};
+                                            }
+                                        }
+
+                                        function vacWrite(obj) {
+                                            localStorage.setItem(VAC_KEY, JSON.stringify(obj));
+                                        }
+
+                                        function vacSet(path, value) {
+                                            const vac = vacRead();
+                                            const parts = path.split('.');
+                                            let cur = vac;
+                                            for (let i = 0; i < parts.length - 1; i++) {
+                                                const k = parts[i];
+                                                if (typeof cur[k] !== 'object' || cur[k] === null) cur[k] = {};
+                                                cur = cur[k];
+                                            }
+                                            cur[parts[parts.length - 1]] = value;
+                                            vacWrite(vac);
+                                        }
+
+                                        function vacGet(path, def = undefined) {
+                                            let cur = vacRead();
+                                            for (const k of path.split('.')) {
+                                                if (cur == null || !(k in cur)) return def;
+                                                cur = cur[k];
+                                            }
+                                            return cur;
+                                        }
+
+                                        $(window).resize(function () {
+                                            positionOnCenter(workbookDialog);
+                                        });
+
+                                        function clonePaginationTop() {
+                                            const $table = $('#searchResults_Table');
+                                            const $footerCell = $table.find('tfoot td[colspan]').first();
+
+                                            if (!$footerCell.length) return;
+
+                                            // Host nad tabelo
+                                            let $host = $('#paginationTopHost');
+                                            if (!$host.length) {
+                                                $host = $('<div id="paginationTopHost" class="mb-2" aria-label="Navigacija nad tabelo"></div>');
+                                                $table.before($host);
+                                            }
+
+                                            // Počisti star klon
+                                            $host.empty();
+
+                                            // Skloniraj celotno vsebino footerja (tudi "onlyXRecordsDisplayed", če ga želiš imeti zgoraj)
+                                            const $topContent = $('<div class="pagination-top-content"></div>');
+                                            $topContent.append($footerCell.children().clone(false));
+
+                                            // Preimenuj ID-je v klonu, da ni duplikatov
+                                            $topContent.find('[id]').each(function () {
+                                                this.id = this.id + '_top';
+                                            });
+
+                                            // Odstrani inline handlerje samo v klonu
+                                            $topContent.find('a, select, input').removeAttr('onclick').removeAttr('onchange');
+
+                                            // Spodnji originalni pager = prva .row v footerju
+                                            const $bottomPagerRow = $footerCell.children('.row').first();
+                                            if (!$bottomPagerRow.length) {
+                                                $host.append($topContent);
+                                                return;
+                                            }
+
+                                            // ORIGINALNI elementi v footerju
+                                            const $bottomPageSelect = $bottomPagerRow.find('#pagerSelectPage');
+                                            const $bottomPageSize = $bottomPagerRow.find('#pagerPageSize');
+
+                                            // 1) Linki First/Prev/1/2/3/Next/Last
+                                            $topContent.on('click', 'a[data-destinationPage]', function (e) {
+                                                e.preventDefault();
+
+                                                const $clicked = $(this);
+                                                if ($clicked.hasClass('pagination-disabled')) {
+                                                    return false;
+                                                }
+
+                                                const dest = $clicked.attr('data-destinationPage');
+                                                const $bottomLink = $bottomPagerRow.find('a[data-destinationPage="' + dest + '"]').first();
+
+                                                if ($bottomLink.length && !$bottomLink.hasClass('pagination-disabled')) {
+                                                    $bottomLink[0].click();
+                                                }
+
+                                                return false;
+                                            });
+
+                                            // 2) "Go to page"
+                                            const $topPageSelect = $topContent.find('#pagerSelectPage_top');
+                                            if ($topPageSelect.length && $bottomPageSelect.length) {
+                                                $topPageSelect.val($bottomPageSelect.val());
+
+                                                $topPageSelect.on('change', function () {
+                                                    $bottomPageSelect.val(this.value);
+
+                                                    $bottomPageSelect[0].dispatchEvent(new Event('change', {
+                                                        bubbles: true
+                                                    }));
+                                                });
+                                            }
+
+                                            // 3) "Page size"
+                                            const $topPageSize = $topContent.find('#pagerPageSize_top');
+                                            if ($topPageSize.length && $bottomPageSize.length) {
+
+                                                // Ob kloniranju preberi dejansko vrednost iz DOM elementa
+                                                $topPageSize.val($bottomPageSize[0].value);
+
+                                                $topPageSize.on('change', function () {
+                                                    const val = this.value;
+
+                                                    // 1. Posodobi originalni select
+                                                    $bottomPageSize[0].value = val;
+
+                                                    // 2. Posodobi data-pageSize na tabeli
+                                                    searchResultsTable.attr('data-pageSize', val);
+
+                                                    // 3. Shrani nastavitev
+                                                    vacSet('search.pagerPageSize', val);
+
+                                                    // 4. Pojdi na stran 1 – enako kot originalni footer
+                                                    $('a[data-destinationPage="First"]').not('#paginationTopHost a').first()[0].click();
+                                                });
+                                            }
+
+                                            $host.append($topContent);
+                                        }
+
+                                        document.getElementById('pagerPageSize').onchange = function() {
+                                            searchResultsTable.attr('data-pageSize', this.value);
+                                            vacSet('search.pagerPageSize', this.value);
+                                            $('a[data-destinationPage="First"]').not('#paginationTopHost a').first()[0].click();
+                                        };
+
+                                        $(document).ready(function () {
+                                            searchResultsTable.attr("data-showColumns", showColumnsDefault);
+                                            // Targets per page
+                                            const targetPerPageSelect = document.getElementById('pagerPageSize');
+                                            const storeKey = 'vac.search.pagerPageSize';
+
+                                            const savedPagerPageSize = vacGet('search.pagerPageSize', null);
+
+                                            if (savedPagerPageSize && targetPerPageSelect) {
+                                                targetPerPageSelect.value = String(savedPagerPageSize);
+                                            }
+
+                                            inProgress(true);
+                                            $('a[data-id="PaginationFirst"]').click();
+
+                                            $(document).ajaxComplete(function (e, xhr, settings) {
+                                                if (settings.url && settings.url.indexOf('searchResultsAjax') !== -1) {
+                                                    setTimeout(clonePaginationTop, 50);
+                                                }
+                                            });
+
+                                            $('body').on('click', '.addToCart', function (e) {
+                                                e.preventDefault();
+                                                //$(this).prop('disabled',true);
+                                                var itemId = $(this).attr('href');
+                                                var ajaxReq = $.ajax({
+                                                    url: "/vac/search/" + itemId,
+                                                    type: "POST",
+                                                    cache: false,
+                                                    contentType: false,
+                                                    processData: false,
+                                                });
+
+                                                ajaxReq.done(function (count) {
+                                                    $('#counterId').remove();
+                                                    $('#userCartId').append("<span id='counterId'>(" + count + ")</span");
+                                                    //console.log("ajax DONE");
+                                                    var msgUploadOK = "Izbrana popisna enota je dodana v ko\u0161arico.";
+                                                    dialog(msgUploadOK, null, null, null, null, false, false, true, false);
+                                                });
+                                                ajaxReq.fail(function () {
+                                                    //console.log("ajax FAIL");
+                                                    var msgUploadErr = "Za odlaganje v ko\u0161arico se morate prijaviti v VA\u010C z uporabni\u0161kim profilom, ki ima dovoljenje za naro\u010Danje.";
+                                                    dialog(msgUploadErr, null, null, null, null, false, false, true, false);
+                                                });
+                                            });
+
+                                            $(document).on('change', '#pagerPageSize', function () {
+                                                vacSet('search.pagerPageSize', this.value);
+                                            });
+                                        });
+
+                                        //reset cursor to default when page is activated (on history.back).
+                                        visibilityHandler(function () {
+                                            if (visibilityHandler()) {
+                                                inProgress(false);
+                                            }
+                                            ;
+                                        });
+
+                                        $(document).on('click', "a[href^='details']", function (event) {
+                                            inProgress(true);
+                                        });
+                                        $(document).on('keydown', "a[href^='details']", function (event) {
+                                            if (e.keyCode == 13) {
+                                                inProgress(true);
+                                            }
+                                        });
+
+                                        function handleTitle(property, value, tableBodyTd, properties) {
+                                            try {
+                                                if (properties["scopeId"] != null && properties["scopeId"] > 0) {
+                                                    var activeSearchId = $('#searchResults_Table').attr('data-searchId');
+                                                    var searchIdParam = activeSearchId ? '&searchId=' + encodeURIComponent(activeSearchId) : '';
+                                                    tableBodyTd += '<td data-property="' + property + '"><a href="details?id=' + properties["scopeId"] + '&refCode=' + properties["refCode"] + '&type=' + properties["searchSource"] + '&subId=' + properties["searchSourceId"] + '&subLink=' + encodeURIComponent(properties["searchSourceLink"]) + searchIdParam + '">' + value + '</a></td>';
+                                                } else {
+                                                    tableBodyTd += '<td data-property="' + property + '">' + value + '</td>';
+                                                }
+                                            } catch (err) {
+                                            }
+                                            return tableBodyTd;
+                                        }
+
+                                        function addToCart() {
+                                            if ($("input[type='checkbox'][id]:checked").length == 0) {
+                                                dialog(noneSelectedWarning, null, null, null, null, false, false, true, false);
+                                                return;
+                                            }
+
+                                            inProgress(true);
+                                            try {
+                                                var ids = [];
+                                                $("input[type='checkbox'][id]:checked").each(function (index) {
+                                                    if ($(this)[0].id > 0) {
+                                                        ids.push($(this)[0].id);
+                                                    }
+                                                });
+
+                                                $.ajax({
+                                                    type: "post",
+                                                    url: "/vac/search/addToCartAjax",
+                                                    contentType: 'application/json; charset=utf-8',
+                                                    dataType: 'json',
+                                                    data: JSON.stringify(ids),
+                                                    success: function (response) {
+
+                                                        if (!response.error) {
+                                                            inProgress(false);
+                                                            var msgUploadOK = "Izbrane popisne enote so bile dodane v ko\u0161arico. Podvojeni vnosi se avtomatsko ignorirajo!";
+                                                            //dialog(msgUploadOK, null, null, null, null, false, false, true, false);
+                                                            var ajaxReqCount = $.ajax({
+                                                                url: "/vac/cart/count/",
+                                                                type: "GET",
+                                                                cache: false,
+                                                                contentType: false,
+                                                                processData: false,
+                                                            });
+
+                                                            ajaxReqCount.done(function (count) {
+                                                                $('#counterId').remove();
+                                                                $('a[data-id="PaginationFirst"]').click();
+                                                                $('#userCartId').append("<span id='counterId'>(" + count + ")</span");
+                                                                dialog(msgUploadOK, null, null, null, null, false, false, true, false);
+                                                            });
+                                                        } else {
+                                                            inProgress(false);
+                                                            dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                                                        }
+
+                                                        //if(response.id > 0) {
+                                                        //    workbooks.append(new Option(newWorkbookName.val(), response.id));
+                                                        // }
+                                                        // workbooks.val(0);
+                                                        //newWorkbookName.val("");
+
+                                                        return false;
+                                                    },
+                                                    error: handleAjaxError
+                                                });
+                                            } catch (err) {
+                                                inProgress(false);
+                                            }
+                                        }
+
+                                        function addSingleToCart(property, value, tableBodyTd, properties) {
+                                            try {
+                                                if (value != null && value > 0 && properties["canBeOrdered"] != null && properties["canBeOrdered"]) {
+                                                    tableBodyTd += '<td data-property="' + property + '"><a class="btnInTable glyph-shopping-cart addToCart" style="width:1.5rem;font-size:1.5rem;height:1.5rem;" href="toCart?id=' + value +
+                                                        '" aria-label="' + msgAddToCart + '" title="' + msgAddToCart + '"></a></td>';
+                                                } else {
+                                                    tableBodyTd += '<td data-property="' + property + '"></td>';
+                                                }
+                                            } catch (err) {
+                                            }
+                                            return tableBodyTd;
+                                        }
+
+                                        function addShowAP(property, value, tableBodyTd, properties) {
+                                            try {
+                                                if (value != null && value > 0) {
+                                                    tableBodyTd += '<td data-property="' + property + '"><a class="btnInTable glyph-inAP" style="width:1.5rem;font-size:1.5rem;height:1.5rem;" href="#" onclick="showAP(this, ' + value +
+                                                        ');return false;" aria-label="' + msgShowAP + '" title="' + msgShowAP + '"></a></td>';
+                                                } else {
+                                                    tableBodyTd += '<td data-property="' + property + '"></td>';
+                                                }
+                                            } catch (err) {
+                                            }
+                                            return tableBodyTd;
+                                        }
+
+                                        document.body.addEventListener('click', function (e) {
+                                            if (e.target.id != "archivePlanContainer" && $(e.target).parents("#archivePlanContainer").length == 0) {
+                                                apContainer.hide();
+                                                inProgress(false);
+                                            }
+                                        }, true);
+
+
+                                        function showAP(obj, id) {
+                                            inProgress(true);
+                                            selectedAP = id;
+                                            currentAPPosition = $(obj).offset();
+                                            archivePlanTreeInit(loadedAP, clickedAP, id, false);
+                                        }
+
+                                        function clickedAP() {
+                                            window.location.href = "/vac/search/archivePlanSearch?path=" + archivePlanTreeGetSelectedPath();
+                                        }
+
+                                        function loadedAP() {
+                                            apContainer.show();
+                                            var top = currentAPPosition.top - 150;
+                                            if (top < 0) {
+                                                top = 0;
+                                            }
+                                            var left = currentAPPosition.left - 600;
+                                            if (left < 0) {
+                                                left = 0;
+                                            }
+                                            apContainer.offset({top: top, left: left});
+                                            setTimeout(function () {
+                                                $("#" + selectedAP + "_anchor").focus();
+                                            }, 100);
+                                            inProgress(false);
+                                        }
+
+                                        function addChekbox(property, value, tableBodyTd, properties) {
+                                            try {
+                                                if (value != null && value > 0 && properties["canBeOrdered"] != null && properties["canBeOrdered"]) {
+                                                    tableBodyTd += '<td data-property="' + property + '">' + checkboxCell(false, value) + '</td>';
+                                                } else {
+                                                    tableBodyTd += '<td data-property="' + property + '"></td>';
+                                                }
+                                            } catch (err) {
+                                            }
+                                            return tableBodyTd;
+                                        }
+
+                                        function showOrderable(obj) {
+                                            $('a[data-id="PaginationFirst"]').click();
+                                        }
+
+                                        function exportDocument(documentType) {
+                                            const $table = $("#searchResults_Table");
+
+                                            const searchId = $table.attr("data-searchId");
+                                            const sort = $table.attr("data-sortColumn") || "score";
+                                            const dir = $table.attr("data-sortIsAsc") === "true" ? "ASC" : "DESC";
+
+                                            function stripHtml(value) {
+                                                if (value === null || value === undefined) {
+                                                    return value;
+                                                }
+
+                                                return $("<div>").html(String(value)).text();
+                                            }
+
+                                            function cleanExportData(data) {
+                                                if (!Array.isArray(data)) {
+                                                    return [];
+                                                }
+
+                                                return data.map(function (item) {
+                                                    return {
+                                                        ...item,
+                                                        title: stripHtml(item.title),
+                                                        dateRangeText: stripHtml(item.dateRangeText),
+                                                        level: stripHtml(item.level),
+                                                        refCode: stripHtml(item.refCode),
+                                                        score: stripHtml(item.score),
+                                                        accessibility: stripHtml(item.accessibility),
+                                                        containsDocuments: stripHtml(item.containsDocuments),
+                                                        searchSource: stripHtml(item.searchSource)
+                                                    };
+                                                });
+                                            }
+
+                                            inProgress(true);
+
+                                            $.ajax({
+                                                url: "/vac/search/searchResultsExport",
+                                                type: "GET",
+                                                dataType: "json",
+                                                data: {
+                                                    searchId: searchId,
+                                                    sort: sort,
+                                                    dir: dir,
+                                                    images: chkShowImages[0] != null && chkShowImages[0].checked,
+                                                    orderable: chkShowOrderable[0] != null && chkShowOrderable[0].checked,
+                                                    documents: chkShowDocuments[0] != null && chkShowDocuments[0].checked
+                                                },
+                                                headers: {
+                                                    "Accept-Language": locale
+                                                },
+                                                success: function (response) {
+                                                    inProgress(false);
+
+                                                    if (response && response.error) {
+                                                        dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                                                        return false;
+                                                    }
+
+                                                    const rawData = response && response.pageData ? response.pageData : [];
+                                                    const data = cleanExportData(rawData);
+
+                                                    const exportedColumnList = [
+                                                        "title",
+                                                        "dateRangeText",
+                                                        "level",
+                                                        "refCode",
+                                                        "score",
+                                                        "accessibility",
+                                                        "containsDocuments",
+                                                        "searchSource"
+                                                    ];
+
+                                                    if (documentType === "Excel") {
+                                                        exportUsersToXlsx(data, "Seznam zadetkov", exportedColumnList, "searchResults_Table");
+                                                    } else {
+                                                        exportUsersToPdf(data, "Seznam zadetkov", exportedColumnList, "searchResults_Table");
+                                                    }
+
+                                                    return false;
+                                                },
+                                                error: function (xhr, status, error) {
+                                                    inProgress(false);
+                                                    handleAjaxError(xhr, status, error);
+                                                }
+                                            });
+                                        }
+
+                                        document.getElementById('workbooks').addEventListener('change', function() {
+                                            const row = document.getElementById('newWorkbookNameRow');
+                                            const input = document.getElementById('newWorkbookName');
+                                            const isNew = this.value === '0';
+
+                                            row.style.display = isNew ? '' : 'none';
+                                            input.setAttribute('aria-hidden', !isNew);
+                                            if (!isNew) {
+                                                input.value = '';
+                                            }
+                                        });
+
+                                        /*]]>*/
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    <div id="pageFooter" class="">
+        <div><div style="background-color: #333333;">
+
+                <!-- Opozorilo o piškotkih -->
+                <footer id="footerCookiesWarning">
+                    <div id="cookieConsent">
+                        <div>Virtualna arhivska čitalnica (VAČ) uporablja spletne piškotke in ostale elemente z namenom zagotavljanja polnega delovanja spletne storitve in boljše uporabniške izkušnje. Ali se strinjate z njihovo uporabo?
+                            <a href="#" class="cookieConsentNOK" tabindex="0"
+                               onclick="javascript:cookieConsentNOK();">Ne strinjam se</a>
+                            <a href="#" class="cookieConsentOK" tabindex="0"
+                               onclick="javascript:cookieConsentOK();">Strinjam se</a>
+                        </div>
+                        <a tabindex="0">Več o tem.</a>
+                    </div>
+                </footer>
+
+                <div id="footerMain" class="d-print-none">
+
+                    <!-- Navigacijske povezave -->
+                    <footer class="footer2">
+                        <div cellspacing='0' class='betatestwarning'></div>
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="row">
+                                    <a href="/vac">Prva stran</a>&#160;|&#160;
+                                    <a href="/vac/search/getfullTextPage">Iskanje</a>&#160;|&#160;
+                                    <a href="/vac/cart/list">Košarica</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutVAC">O VAČ</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutArchives">O arhivih</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/vacNewsUsers">Novice</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/accessibilityStatement"
+                                       title="Izjava o dostopnosti"
+                                       aria-label="Izjava o dostopnosti">Dostopnost</a>&#160;|&#160;
+                                    <a href="/vac/userhelp">Pomoč</a>&#160;|&#160;
+                                    <a href="/vac/vacindex">Zemljevid spletne strani</a>
+                                </div>
+                                <div class="row h5"></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Kontakt, povezave, arhivi -->
+                    <footer class="footer2">
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="ce-bodytext">
+                                    <div style="padding:0 5px; width:100%; box-sizing:border-box !important; float:left;">
+
+                                        <!-- Kontakt -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <ul role="list">
+                                                <li style="list-style:none;"><span class="row h6b">Kontakt </span></li>
+                                                <li style="list-style:none;"><span class="row h7">PODPORA VAČ</span></li>
+                                                <li style="list-style:none;"><span class="row h7">ARHIV REPUBLIKE SLOVENIJE</span></li>
+                                                <li style="list-style:none;"><span class="row h7">Poljanska 40</span></li>
+                                                <li style="list-style:none;"><span class="row h7">1102 Ljubljana</span></li>
+                                                <li style="list-style:none;"><span class="row h7">T:&nbsp;<a href="tel:+38612414200">01 2414 200 &phone;</a></span></li>
+                                                <li style="list-style:none;"><span class="row h7">F: 01 2414 276</span></li>
+                                                <li style="list-style:none;"><span class="row h7">E:&nbsp;<a href="mailto:citalnica.ars@gov.si">citalnica.ars@gov.si</a></span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Uporabne povezave -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Uporabne povezave</span>
+                                            <a class="row h7" href="/vac/userhelp"><span>Pogosta vprašanja</span></a>
+                                            <a class="row h7" href="https://www.gov.si/teme/javna-arhivska-mreza/"><span>Slovenska javna arhivska mreža</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Piškotki</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Obdelava osebnih podatkov</span></a>
+                                            <a class="row h7" href="/vac/userhelp/accessibilityStatement"><span>Dostopnost spletne strani</span></a>
+                                        </div>
+
+                                        <!-- Spletne strani arhivov -->
+                                        <div style="padding:0 5px; width:34%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Spletne strani arhivov</span>
+                                            <a class="row h7" href="https://www.gov.si/drzavni-organi/organi-v-sestavi/arhiv/"><span>Arhiv Republike Slovenije</span></a>
+                                            <a class="row h7" href="https://arhiv-koper.si/"><span>Pokrajinski arhiv Koper</span></a>
+                                            <a class="row h7" href="https://www.pokarh-mb.si/"><span>Pokrajinski arhiv Maribor</span></a>
+                                            <a class="row h7" href="https://www.pa-ng.si/"><span>Pokrajinski arhiv v Novi Gorici</span></a>
+                                            <a class="row h7" href="https://zac.si/"><span>Zgodovinski arhiv Celje</span></a>
+                                            <a class="row h7" href="https://www.zal-lj.si/"><span>Zgodovinski arhiv Ljubljana</span></a>
+                                            <a class="row h7" href="https://www.arhiv-ptuj.si/"><span>Zgodovinski arhiv Ptuj</span></a>
+                                            <a class="row h7" href="https://www.archivesportaleurope.net/"><span>Arhivski portal Evrope</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Verzija -->
+                        <table width="100%">
+                            <tr>
+                                <!-- td><span style="display: inline; float: left;">&#169; 2018 Arhiv Republike Slovenije</span> <span
+                                    style="display: inline; float: right;"><a href="http://www.arhiv.gov.si/si/splosno/kolofon/kolofon/">Kolofon</a>&#160;|&#160;<a
+                                        href="http://www.arhiv.gov.si/si/splosno/piskotki/">Piškotki</a></span></td -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row h7" style="display:inline; float:right;">
+                                        <div ondblclick="showVerDetails(); return false;">
+                                            <label>VAČ</label>&nbsp;
+                                            <strong>2.20_5.5</strong>
+                                        </div>
+                                        <div style="display:none" id="vacVersionDetails">
+                                            <strong>Podrobnosti o verziji</strong><br/><br/>
+                                            <table style="border:0;">
+                                                <tr align="left">
+                                                    <td>Verzija:</td>
+                                                    <td><strong>2.20_5.5</strong></td>
+                                                </tr>
+                                                <tr align='left'><td>Datum:</td><td><strong>2026-09-16T13:42:32+02:00</strong></td></tr><tr align='left'><td>Interni ID:</td><td><strong>84d567d8</strong></td></tr><tr align='left'><td>Verzioniranje:</td><td><strong>nepopolno</strong></td></tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <script>
+                            /*<![CDATA[*/
+                            function showVerDetails() {
+                                if (!window.event.ctrlKey) {
+                                    dialog($("#vacVersionDetails")[0].innerHTML.trim(), null, null, null, null, false, false, true, false);
+                                } else {
+                                    $.ajax({
+                                        cache: false,
+                                        type: 'get',
+                                        url: '/vac/snfo',
+                                        success: function(response) {
+                                            dialog(response.data, null, null, null, null, false, false, true, false);
+                                        },
+                                        error: handleAjaxError
+                                    });
+                                }
+                            }
+                            /*]]>*/
+                        </script>
+                    </footer>
+
+                </div><!-- /footerMain -->
+
+
+<!--                <div th:if="${@environment.getProperty('vac.ai.widget.enabled', 'false') == 'true' && session.userBean != null && session.userBean.userId != 0 && session.userBean.loggedIn}"-->
+<!--                     id="vac-chat-widget"-->
+<!--                     class="d-print-none"-->
+<!--                     th:attr="data-user-id=${session.userBean.userId},-->
+<!--                              data-user-type=${session.userBean.advancedUser ? 'NU' : 'KU'},-->
+<!--                              data-open-label=#{VirtualAssistant.Chat.Open},-->
+<!--                              data-close-label=#{VirtualAssistant.Chat.Close}">-->
+<!--                    <button id="vac-chat-toggle" type="button" onclick="vacChatToggle()"-->
+<!--                            aria-controls="vac-chat-window" aria-expanded="false"-->
+<!--                            th:title="#{VirtualAssistant.Chat.Open}"-->
+<!--                            th:aria-label="#{VirtualAssistant.Chat.Open}">💬</button>-->
+<!--                    <div id="vac-chat-window" role="dialog" aria-modal="false"-->
+<!--                         aria-labelledby="vac-chat-title" aria-hidden="true" style="display:none;">-->
+<!--                        <div id="vac-chat-header">-->
+<!--                            <span id="vac-chat-title">VAČ Asistent</span>-->
+<!--                            <button type="button" onclick="vacChatToggle()"-->
+<!--                                    th:title="#{VirtualAssistant.Chat.Close}"-->
+<!--                                    th:aria-label="#{VirtualAssistant.Chat.Close}">×</button>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-messages">-->
+<!--                            <div class="vac-msg-bot">Pozdravljeni! Sem virtualni asistent VAČ. Kako vam lahko pomagam?</div>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>-->
+<!--                        <div id="vac-chat-input">-->
+<!--                            <input type="text" id="vac-chat-text" placeholder="Vpišite vprašanje..."-->
+<!--                                   onkeypress="if(event.key==='Enter') vacChatSend()"/>-->
+<!--                            <button onclick="vacChatSend()">Pošlji</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div></div>
+    </div>
+</div>
+
+<!-- Mark.js library for text highlighting -->
+<script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script>
+<script src="/js/highlight-search.js;jsessionid=A375DD68E9719C86532A4BBD2D09A6D5"></script>
+
+<script>
+/*<![CDATA[*/
+// Store highlighting options for use after AJAX loads content
+var highlightOptions = {
+    highlightMatches: true,
+    wordVariants: false,
+    searchFullText: "Franciscejski kataster",
+    searchExactPhrase: "",
+    searchOneOfWords: ""
+};
+
+// Apply highlighting after AJAX content loads
+$(document).ajaxComplete(function(event, xhr, settings) {
+    // Only highlight after search results AJAX calls
+    if (settings.url && settings.url.indexOf('searchResultsAjax') !== -1) {
+        // Small delay to ensure DOM is updated
+        setTimeout(function() {
+            highlightSearchTerms(highlightOptions);
+        }, 100);
+    }
+});
+/*]]>*/
+</script>
+</body>
+</html>

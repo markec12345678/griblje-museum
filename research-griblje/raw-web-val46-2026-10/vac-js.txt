@@ -1,0 +1,2074 @@
+var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+var isEdge = navigator.userAgent.indexOf("Edge") > -1;
+var working = false;
+
+var cookieLocale = getCookie("vac.locale");
+if(cookieLocale == "") {
+    document.documentElement.setAttribute("lang", "sl");
+}
+else {
+    document.documentElement.setAttribute("lang", cookieLocale);
+}
+
+$(document).on('mouseenter', '.dropdown-item', function (event) {
+    $(this).focus();
+})/*.on('mouseleave', '.dropdown-item',  function(){
+})*/;
+
+$(document).on("click", ".jstree-anchor", function (event) {
+    $(this).attr("href", "#");
+})
+$(document).on("contextmenu", ".jstree-anchor", function (event) {
+    $(this).attr("href", "details?id=" + $(this).attr("id").replace("_anchor", ""));
+})
+
+function formSubmit(action, names, values) {
+    inProgress(true);
+    var form = document.createElement("form");
+    form.style.display = "none";
+    for(i = 0; i < names.length; i++) {
+        var element = document.createElement("input");
+        element.value = values[i];
+        element.name = names[i];
+        form.appendChild(element);
+    }
+    
+    form.method = "POST";
+    form.action = action;   
+
+    document.body.appendChild(form);
+
+    form.submit();
+}
+
+function goBack(reload) {
+    try {
+        if(reload) {
+            window.history.back();
+        }
+        else {
+            window.history.back();
+        }
+    }
+    catch(err) {
+    }
+}
+
+var visibilityHandler = (function(){
+    var stateKey, eventKey, keys = {
+        hidden: "visibilitychange",
+        webkitHidden: "webkitvisibilitychange",
+        mozHidden: "mozvisibilitychange",
+        msHidden: "msvisibilitychange"
+    };
+    for (stateKey in keys) {
+        if (stateKey in document) {
+            eventKey = keys[stateKey];
+            break;
+        }
+    }
+    return function(c) {
+        if (c) document.addEventListener(eventKey, c);
+        return !document[stateKey];
+    }
+})();
+
+function dialogHide() {
+    $('#confirmationDialog').hide();
+    $('#confirmationDialog').attr("aria-hidden",true);
+    glassPane(false);
+}
+
+function triStateCheckbox(domElement) {
+    if (domElement.readOnly) {
+        domElement.checked = domElement.readOnly = false;
+    }
+    else if (!domElement.checked) {
+        domElement.readOnly = domElement.indeterminate = true;
+    }
+}
+
+function glassPane(show) {
+    if(show) {
+        $("#glassPane").show();
+        $("#glassPane").focus();
+    
+        $("#glassPane").on('keydown', function (e) { 
+            e.preventDefault();
+            return false;
+        });
+    }
+    else {
+        $("#glassPane").off('keydown');
+        $("#glassPane").hide();
+    }
+}
+
+function isInProgress() {
+    return working;
+}
+
+function inProgress(isInProgress) {
+    working = isInProgress;
+    $("html").removeClass("in-progress");
+    $("input").removeClass("in-progress");
+    $("select").removeClass("in-progress");
+    $("a").removeClass("in-progress");
+    $("i").removeClass("in-progress");
+    $("span").removeClass("in-progress");
+    $("label").removeClass("in-progress");
+    $("textarea").removeClass("in-progress");
+    $("div").removeClass("in-progress");
+    if(isInProgress) {
+        $("html").addClass("in-progress");
+        $("input").addClass("in-progress");
+        $("select").addClass("in-progress");
+        $("a").addClass("in-progress");
+        $("i").addClass("in-progress");
+        $("span").addClass("in-progress");
+        $("label").addClass("in-progress");
+        $("textarea").addClass("in-progress");
+        $("div").addClass("in-progress");
+    }
+    else {
+        $("#labelInProgress").hide();
+        $("#page").show();
+    }
+}
+
+function dialog2(title, body) {
+    $("#explanationDialogTitle")[0].innerHTML = title;
+    $("#explanationDialogBody")[0].innerHTML = body;
+    $("#explanationDialogToggler").click();
+}
+
+function dialog(message, yesCallback, noCallback, okCallback, cancelCallback, showYes, showNo, showOK, showCancel) {
+    if(message.charAt(0) != "<") {
+        dialogHTML(message, yesCallback, noCallback, okCallback, cancelCallback, showYes, showNo, showOK, showCancel, false);
+    }
+    else {
+        dialogHTML(message, yesCallback, noCallback, okCallback, cancelCallback, showYes, showNo, showOK, showCancel, true);
+    }
+}
+
+function dialogInput(message, twoFields, field1Msg, field2Msg, input1Value, input2Value, okCallback, cancelCallback) {
+    dialogInputHTML(message, null, null, okCallback, cancelCallback, false, false, true, true, false, true, twoFields, field1Msg, field2Msg, input1Value, input2Value);
+}
+
+function dialogHTML(message, yesCallback, noCallback, okCallback, cancelCallback, showYes, showNo, showOK, showCancel, isHTML) {
+    dialogInputHTML(message, yesCallback, noCallback, okCallback, cancelCallback, showYes, showNo, showOK, showCancel, isHTML, false, false, null, null, "", "");
+}
+
+function dialogInputHTML(message, yesCallback, noCallback, okCallback, cancelCallback, showYes, showNo, showOK, showCancel, isHTML, isInput, twoFields, field1Msg, field2Msg, input1Value, input2Value) {
+    glassPane(true);
+    
+    var lastFocusedElement = $(':focus');
+    // remove event listeners added in previous dialog request
+    $('#confirmationDialog_ButtonYes').off("click");
+    $('#confirmationDialog_ButtonYes').off("keydown");
+    $('#confirmationDialog_ButtonNo').off("click");
+    $('#confirmationDialog_ButtonOK').off("click");
+    $('#confirmationDialog_ButtonOK').off("keydown");
+    $('#confirmationDialog_ButtonCancel').off("click");
+    var dialog = $('#confirmationDialog');
+    if(showYes || showNo || showOK || showCancel) {
+        dialog.show();
+        dialog.attr("aria-hidden",false);
+    }
+    else {
+        dialogHide();
+        lastFocusedElement.focus();
+        return;
+    }
+    
+    $("#confirmationDialog_UserInputGroup1").hide();
+    $("#confirmationDialog_UserInput1").val(input1Value);
+    $("#confirmationDialog_UserInputGroup2").hide();
+    $("#confirmationDialog_UserInput2").val(input2Value);
+    if(isInput) {
+        $("#confirmationDialog_UserInputGroup1").show();
+        if(field1Msg != null) {
+            $("#confirmationDialog_UserInputLabel1").show();
+            $("#confirmationDialog_UserInputLabel1").text(field1Msg)
+        }
+        else {
+            $("#confirmationDialog_UserInputLabel1").hide();
+        }
+        if(twoFields) {
+            $("#confirmationDialog_UserInputGroup2").show();
+            if(field2Msg != null) {
+                $("#confirmationDialog_UserInputLabel2").show();
+                $("#confirmationDialog_UserInputLabel2").text(field2Msg)
+            }
+            else {
+                $("#confirmationDialog_UserInputLabel2").hide();
+            }
+        }
+    }
+    if(message != null) {
+        $("#confirmationDialog_Title").show();
+    }
+    else {
+        $("#confirmationDialog_Title").hide();
+    }
+    
+    if(!isHTML) {
+        $('#confirmationDialog_Text').text(message);
+    }
+    else {
+        $('#confirmationDialog_Text')[0].innerHTML = message;
+    }
+
+    if(showYes) {
+        $('#confirmationDialog_ButtonYes').show();
+        $('#confirmationDialog_ButtonYes').focus();
+    }
+    else {
+        $('#confirmationDialog_ButtonYes').hide();
+    }
+    if(showNo) {
+        $('#confirmationDialog_ButtonNo').show();
+    }
+    else {
+        $('#confirmationDialog_ButtonNo').hide();
+    }
+    if(showOK) {
+        $('#confirmationDialog_ButtonOK').show();
+        $('#confirmationDialog_ButtonOK').focus();
+    }
+    else {
+        $('#confirmationDialog_ButtonOK').hide();
+    }
+    if(showCancel) {
+        $('#confirmationDialog_ButtonCancel').show();
+    }
+    else {
+        $('#confirmationDialog_ButtonCancel').hide();
+    }
+
+    $('#confirmationDialog_ButtonYes').click(function() {
+        dialog.hide();
+        glassPane(false);
+        lastFocusedElement.focus();
+        if(yesCallback != null) {
+            yesCallback();
+        }
+    });
+    $('#confirmationDialog_ButtonYes').keydown(function() {
+        if(event.keyCode === 27) {
+            dialog.hide();
+            glassPane(false);
+            lastFocusedElement.focus();
+        }
+    });
+    $('#confirmationDialog_ButtonNo').click(function() {
+        dialog.hide();
+        dialog.attr("aria-hidden",true);
+        glassPane(false);
+        lastFocusedElement.focus();
+        if(noCallback != null) {
+            noCallback();
+        }
+    });
+    $('#confirmationDialog_ButtonOK').click(function() {
+        dialog.hide();
+        dialog.attr("aria-hidden",true);
+        glassPane(false);
+        lastFocusedElement.focus();
+        if(okCallback != null) {
+            okCallback();
+        }
+    });
+    $('#confirmationDialog_ButtonOK').keydown(function() {
+        //alert(event.keyCode);
+        if(event.keyCode === 27) {
+            dialog.hide();
+            dialog.attr("aria-hidden",true);
+            glassPane(false);
+            lastFocusedElement.focus();
+            if(!showCancel && okCallback != null) {
+                okCallback();
+            }
+        }
+    });
+    $('#confirmationDialog_ButtonCancel').click(function() {
+        dialog.hide();
+        dialog.attr("aria-hidden",true);
+        glassPane(false);
+        lastFocusedElement.focus();
+        if(cancelCallback != null) {
+            cancelCallback();
+        }
+    });
+
+    // position on center
+    /*var left = $(window).width() / 2 + $(document).scrollLeft() - dialog.width() / 2;
+    var top = $(window).height() / 2 + $(document).scrollTop() - dialog.height() / 2;
+    
+    dialog.css({top: top, left: left});*/
+    
+    positionOnCenter(dialog);
+}
+
+function positionOnCenter(element) {
+    var left = $(window).width() / 2 + $(document).scrollLeft() - element.width() / 2;
+    var top = $(window).height() / 2 + $(document).scrollTop() - element.height() / 2;
+    
+    element.css({top: top, left: left});
+    
+    //alert(element[0]);
+    //alert(left + ", " + top);
+}
+
+// dialog usage:
+/*dialog('Are you sure you want to do this?',
+    function() {
+        // Do something
+    },
+    function() {
+        // Do something else
+    },
+    function() {
+        // Do something
+    },
+    function() {
+        // Do something
+    },
+    true,
+    true,
+    false,
+    false
+);*/
+
+
+function parseDate(date, format, errMsg) {
+    var dateIndex = 0;
+    var formatIndex = 0;
+    
+    var tempNumber;
+    var tempFormatChar;
+    var prevFormatChar = null;
+    var day = "";
+    var month = "";
+    var year = "";
+    
+    try
+    {
+        var max = 100;
+        while(dateIndex < date.length && formatIndex < format.length) {
+            if(max-- <= 0) break;
+            tempNumber = date.charAt(dateIndex);
+            tempFormatChar = format.charAt(formatIndex);
+            
+            if(/^\d+$/.test(tempNumber)) {
+                // Check which date part we are working on.
+                if(tempFormatChar == "d") {
+                    day += tempNumber;
+                    prevFormatChar = tempFormatChar;
+                    dateIndex++;
+                    formatIndex++;
+                }
+                else if(tempFormatChar == "M") {
+                    month += tempNumber;
+                    prevFormatChar = tempFormatChar;
+                    dateIndex++;
+                    formatIndex++;
+                }
+                else if(tempFormatChar == "y") {
+                    year += tempNumber;
+                    prevFormatChar = tempFormatChar;
+                    dateIndex++;
+                    formatIndex++;
+                }
+                else {
+                    prevFormatChar = null;
+                }
+            }
+            else {
+                //alert("NOT A DIGIT: " + date + "<=>" + format + ", " + tempFormatChar + " ?= " + prevFormatChar + ", di:" + dateIndex + ", fi:" + formatIndex + ", d:" + day + ", m:" + month + ", y:" + year);
+                // not a digit
+                var foundDigit = false;
+                dateIndex++;
+                while(dateIndex < date.length) {
+                    if(max-- <= 0) break;
+                    if(/^\d+$/.test(date.charAt(dateIndex))) {
+                        foundDigit = true;
+                        break;
+                    }
+                    dateIndex++;
+                }
+                if(foundDigit) {
+                    // Find next format part.
+                    var foundNextFormatPart = false;
+                    while(dateIndex < date.length) {
+                        if(max-- <= 0) break;
+                        tempFormatChar = format.charAt(formatIndex);
+                        //alert(date + "<=>" + format + ", " + tempFormatChar + " ?= " + prevFormatChar + ", di:" + dateIndex + ", fi:" + formatIndex + ", d:" + day + ", m:" + month + ", y:" + year);
+                        if(tempFormatChar == prevFormatChar) {
+                            if(tempFormatChar == "d") {
+                                day = "0" + day;
+                            }
+                            else if(tempFormatChar == "M") {
+                                month = "0" + month;
+                            }
+                            else if(tempFormatChar == "y") {
+                                year = "0" + year;
+                            }
+                        }
+                        else if(tempFormatChar == "d" || tempFormatChar == "M" || tempFormatChar == "y") {
+                            foundNextFormatPart = true;
+                            break;
+                        }
+                        formatIndex++;
+                    }
+                    if(!foundNextFormatPart) {
+                        // End of format string.
+                        break;
+                    }
+                }
+                else {
+                    // End of date string.
+                    break;
+                }
+            }
+            //alert(date + "<=>" + format + ", di:" + dateIndex + ", fi:" + formatIndex + ", d:" + day + ", m:" + month + ", y:" + year);
+        }
+    }
+    catch(err) {
+        if(errMsg != null) {
+            dialog(errMsg + " (" + err + ")", null, null, null, null, false, false, true, false);
+        }
+        return null;
+    }
+    
+    if(day.length < 1 || month.length < 1 || year.length < 1) {
+        if(errMsg != null) {
+            dialog(errMsg, null, null, null, null, false, false, true, false);
+        }
+        return null;
+    }
+    
+    if(dateIndex < date.length) {
+        // not all parts of string were used so it is not in a proper date format
+        if(errMsg != null) {
+            dialog(errMsg, null, null, null, null, false, false, true, false);
+        }
+        return null;
+    }
+    
+    //var jsonDateFormat = "yyyy-MM-dd";
+    return year + "-" + month + "-" + day;
+}
+
+//*******************************
+// Table pagination
+//*******************************
+function dataTableSort(domElement) {
+    return dataTableFilteredSortExtraUrlParams(domElement, null, "");
+}
+
+function dataTableSortExtraUrlParams(domElement, extraUrlParams) {
+    return dataTableFilteredSortExtraUrlParams(domElement, null, extraUrlParams);
+}
+
+function dataTableFilteredSort(domElement, filter) {
+    return dataTableFilteredSortExtraUrlParams(domElement, filter, "");
+}
+
+var exportParameter = "exp=true";
+function dataTableFilteredSortExport(domElement, filter) {
+    return dataTableFilteredSortExtraUrlParams(domElement, filter, exportParameter);
+}
+
+function dataTableFilteredSortExtraUrlParams(domElement, filter, extraUrlParams) {
+    try {
+        // hide dialog
+        dialogHide();
+        
+        var target = $(domElement);
+        target.blur();
+        var targetTable = getParentTable(target);
+        
+        var entityName = targetTable.attr("data-entityName");
+        var path = targetTable.attr("data-path");
+        var controllerPath =  path + entityName;
+        var columnName = target.attr("data-colName");
+        var sortColumn = targetTable.attr("data-sortColumn");
+        var pageSize = 10;
+        if($("#pagerPageSize").val() != null) {
+            pageSize = $("#pagerPageSize").val();
+        }
+        else {
+            pageSize = targetTable.attr("data-pageSize");
+        }
+        var sortIsAsc = targetTable.attr("data-sortIsAsc") == "true";
+        var currentPage = targetTable.attr("data-currentPage");
+        var totalPages = targetTable.attr("data-totalPages");
+        var searchId = targetTable.attr("data-searchId");
+        if(searchId != null) {
+            searchId = "&searchId=" + searchId;
+        }
+        else {
+            searchId = "";
+        }
+        
+        // check if columnName is null and try to get it from the parent (th)
+        if(columnName == null) {
+            target = target.parent().children("[data-colName]");
+            columnName = target.attr("data-colName");
+        }
+        if(columnName == null) {
+            columnName = sortColumn;
+            target = $("#" + entityName + "_Table a[data-colName='" + columnName + "']")
+            sortIsAsc = false;
+        }
+        
+        var onlyWithoutTranslations = false;
+        if($('#' + entityName + '_WithoutTranslations:checked').length > 0) {
+            onlyWithoutTranslations = true;
+        }
+        
+        var filtered = "";
+        var requestType = "GET";
+        var dataType = "";
+        var contentType = "application/x-www-form-urlencoded; charset=UTF-8";
+        if(filter != null) {
+            filtered = "Filtered";
+            requestType = "POST";
+            dataType = "json";
+            contentType = "application/json";
+        }
+        var hrefType = "Ajax";
+        if(extraUrlParams == exportParameter) {
+            hrefType = "Export";
+        }
+        var href = controllerPath + filtered + hrefType + "?pageSize=" + pageSize + "&page=1&prevSort=" + sortColumn + "&sort=" + columnName + "&prevDir=" + (sortIsAsc ? "ASC" : "DESC") + "&dir=" + (sortColumn == columnName ? (sortIsAsc ? "DESC" : "ASC") : "ASC") + "&notrans=" + onlyWithoutTranslations + searchId;
+
+        //alert(requestType + ", " + dataType + ", " + contentType + ", " + href);
+        inProgress(true);
+        
+        if(extraUrlParams != exportParameter) {
+            $.ajax({ // Send request
+                type: requestType,
+                url: href + extraUrlParams,
+                contentType: contentType,
+                data: filter, //'{"filter":"name:weori 3rer er;id:12"}',
+                dataType: dataType,
+                cache: false,
+                headers: {
+                    'Accept-Language': 'si_sl'
+                },
+                success: function(response){
+                    if(!response.error) {
+                        populatePaginatedTableExtraUrlParams(target, targetTable, response, path, entityName, extraUrlParams);
+                        inProgress(false);
+                    }
+                    else {
+                        inProgress(false);
+                        dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                    }
+                    return false;
+                },
+                error: handleAjaxError
+            });
+        }
+        else {
+            href = href + "&filter=" + encodeURIComponent(filter);
+            window.location.href = href;
+            inProgress(false);
+        }
+    }
+    catch(err) {
+        inProgress(false);
+    }
+    return false;
+}
+
+function dataTableGoToPage(domElement) {
+    return dataTableFilteredGoToPageExtraUrlParams(domElement, null, "", 0);
+}
+
+function dataTableGoToPageNumber(domElement, page) {
+    return dataTableFilteredGoToPageExtraUrlParams(domElement, null, "", page);
+}
+
+function dataTableGoToPageExtraUrlParams(domElement, extraUrlParams) {
+    return dataTableFilteredGoToPageExtraUrlParams(domElement, null, extraUrlParams, 0);
+}
+
+function dataTableFilteredGoToPage(domElement, filter) {
+    return dataTableFilteredGoToPageExtraUrlParams(domElement, filter, "", 0);
+}
+
+function dataTableFilteredGoToPageExtraUrlParams(domElement, filter, extraUrlParams, page) {
+    try {
+        // hide dialog
+        dialogHide();
+        
+        var target = null;
+        if(domElement != null) {
+            target = $(domElement);
+        }
+        else {
+            target = $("a[data-id='PaginationFirst']");
+        }
+        target.blur();
+        if(target.prop("tagName") == "SPAN") {
+            target = target.parent();
+        }
+        var targetTable = getParentTable(target);
+        if (targetTable == null || targetTable.length === 0) {
+            inProgress(false);
+            return false;
+        }
+        
+        var entityName = targetTable.attr("data-entityName");
+        var path = targetTable.attr("data-path");
+        if (!entityName || !path) {
+            inProgress(false);
+            return false;
+        }
+        var destinationPage = 1;
+        if(page < 1) {
+            destinationPage = target.attr("data-destinationPage");
+        }
+        else {
+            destinationPage = page;
+        }
+        var sortColumn = targetTable.attr("data-sortColumn");
+        var pageSize = 10;
+        if($("#pagerPageSize").val() != null) {
+            pageSize = $("#pagerPageSize").val();
+        }
+        else {
+            pageSize = targetTable.attr("data-pageSize");
+        }
+        var sortIsAsc = targetTable.attr("data-sortIsAsc") == "true";
+        var currentPage = targetTable.attr("data-currentPage");
+        var totalPages = targetTable.attr("data-totalPages");
+        var searchId = targetTable.attr("data-searchId");
+        if(searchId != null) {
+            searchId = "&searchId=" + searchId;
+        }
+        else {
+            searchId = "";
+        }
+        
+        var onlyWithoutTranslations = false;
+        if($('#' + entityName + '_WithoutTranslations:checked').length > 0) {
+            onlyWithoutTranslations = true;
+        }
+        
+        var filtered = "";
+        var requestType = "GET";
+        var dataType = "";
+        var contentType = "application/x-www-form-urlencoded; charset=UTF-8";
+        if(filter != null) {
+            filtered = "Filtered";
+            requestType = "POST";
+            dataType = "json";
+            contentType = "application/json";
+        }
+        var href = path + entityName + filtered + "Ajax?pageSize=" + pageSize + "&prevSort=" + sortColumn + "&sort=" + sortColumn + "&prevDir=" + (sortIsAsc ? "ASC" : "DESC") + "&dir=" + (sortIsAsc ? "ASC" : "DESC") + "&notrans=" + onlyWithoutTranslations + searchId;
+        
+        if(destinationPage == "First") {
+            href += "&page=1";
+        }
+        else if(destinationPage == "Last") {
+            href += "&page=" + totalPages;
+        }
+        else if(destinationPage == "Previous") {
+            var previous = parseInt(currentPage) - 1;
+            href += "&page=" + previous;
+        }
+        else if(destinationPage == "Next") {
+            var next = parseInt(currentPage) + 1;
+            href += "&page=" + next;
+        }
+        else if(!isNaN(destinationPage)) {
+            href += "&page=" + destinationPage
+        }
+        
+        // set the target to the column header A element for calling the populatePaginatedTable function
+        target = $('#' + entityName + '_Table a[data-colName="' + sortColumn + '"]');
+        
+        //alert(href + extraUrlParams);
+        
+        inProgress(true);
+        $.ajax({ // Send request
+            type: requestType,
+            url: href + extraUrlParams,
+            contentType: contentType,
+            data: filter, //'{"filter":"name:weori 3rer er;id:12"}',
+            dataType: dataType,
+            cache: false,
+            headers: {
+                'Accept-Language': locale
+            },
+            success: function(response){
+                if(!response.error) {
+                    if (targetTable.attr('id') !== 'searchResults_Table') {
+                        populatePaginatedTableExtraUrlParams(target, targetTable, response, path, entityName, extraUrlParams);
+                    } else {
+                        // TODO
+                        populatePaginatedTableExtraUrlParams(target, targetTable, response, path, entityName, extraUrlParams);
+                    }
+
+                    inProgress(false);
+                }
+                else {
+                    inProgress(false);
+                    dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                }
+                return false;
+            },
+            error: handleAjaxError
+        });
+    }
+    catch(err) {
+        inProgress(false);
+    }
+    return false;
+}
+
+function handleAjaxError(jqXHR, exception) {
+    glassPane(false);
+    inProgress(false);
+    
+    /*if (jqXHR.status === 0) {
+        alert('Not connect.n Verify Network.');
+    } else if (jqXHR.status == 400) {
+        alert('Internal Server Error [400].\n   Message: ' + jqXHR.message);
+    } else if (jqXHR.status == 404) {
+        alert('Requested page not found. [404]');
+    } else if (jqXHR.status == 500) {
+        alert('Internal Server Error [500].\n   Message: ' + jqXHR.message);
+    } else if (exception === 'parsererror') {
+        alert('Requested JSON parse failed.');
+    } else if (exception === 'timeout') {
+        alert('Time out error.');
+    } else if (exception === 'abort') {
+        alert('Ajax request aborted.');
+    } else {
+        alert('Uncaught Error.\nStatus: ' + jqXHR.status + '\nTitle: ' + jqXHR.title + '\nDetail: ' + jqXHR.detail + '\nException: ' + exception + '\nDescription: ' + jqXHR.responseText);
+    }*/
+    
+    if(jqXHR.status === 0) {
+        // Ignore this because it is most probably the result of second click on the tree plus icon.
+    }
+    else {
+        try {
+            if(jqXHR.responseJSON.error) {
+                dialog(jqXHR.responseJSON.errorDescription, null, null, null, null, false, false, true, false);
+            }
+        }
+        catch(error) {
+            dialog(errMsgDefault, null, null, null, null, false, false, true, false);
+        }
+    }
+}
+
+function dataTableNew(domElement) {
+    dialogHide();
+    
+    var targetTable = getParentTable($(domElement));
+    
+    var entityName = "#" + targetTable.attr("data-entityName");
+    try {
+        $(entityName + "_NewEntryView").show();
+        $(entityName + "_IdContainer").hide();
+        $(entityName + "_Delete").hide();
+        
+        $(entityName + "_Id").text("");
+        $("#archMaterialAccessType_LANG_ID").val("");
+        
+        var offset = $(entityName + "_NewEntryView").offset();
+        $('html, body').animate({
+            scrollTop: offset.top,
+            scrollLeft: offset.left,
+        }, 1);
+        
+        if($(entityName + "_NewEntryView").find("[required]").length > 0) {
+            $(entityName + "_NewEntryView").find("[required]")[0].focus();
+        }
+    }
+    catch(err) {
+        dialog(err.message, null, null, null, null, false, false, true, false);
+    }
+}
+
+function getParentTable(target) {
+    try {
+        var fuse = 0;
+        while(target.prop("tagName") != "TABLE" && fuse++ < 30) {
+            target = target.parent();
+        }
+    }
+    catch(err) {
+        dialog(err.message, null, null, null, null, false, false, true, false);
+    }
+    
+    return target;
+}
+
+function getParentTableEntityName(target) {
+    return getParentTable(target).attr("data-entityName");
+}
+
+
+function checkForPaginatedTableItem(itemIdAttributeName, item, paginatedTableItemsDict) {
+    var returnItem = null;
+    if(itemIdAttributeName != null) {
+        // Check if item already exists in the dictionary. This is needed because of the jackson way of deserialization.
+        
+        var ignore = false;
+        var id = item[itemIdAttributeName];
+        if(id == null) {
+            // looks like the same instance was already handled and only id is provided. 
+            id = item;
+            ignore = true;
+        }
+        
+        //alert(id);
+        //alert(JSON.stringify(item));
+        
+        // add regional archive to the list because the next occurence of the same instance will be ommited and
+        // only id will be provided, without the "regionalArchiveId:". 
+        if(!ignore && paginatedTableItemsDict[id] == null) {
+            paginatedTableItemsDict[id] = item;
+            returnItem = item;
+        }
+        returnItem = paginatedTableItemsDict[id];
+        //alert(JSON.stringify(returnItem));
+    }
+    
+    var returnArray = [];
+    returnArray.push(returnItem);
+    returnArray.push(paginatedTableItemsDict);
+    //alert("inner: " + JSON.stringify(paginatedTableItemsDict));
+    
+    return returnArray;
+}
+
+function populatePaginatedTable(target, table, response, path, entityName) {
+    populatePaginatedTableExtraUrlParams(target, table, response, path, entityName, "");
+}
+
+// NOTE: the object ID must be it's first property
+function populatePaginatedTableExtraUrlParams(target, table, response, path, entityName, extraUrlParams) {
+    //alert(JSON.stringify(response));
+    //table.attr("data-response", JSON.stringify(response));
+    var itemId = table.attr("data-itemId");
+    var paginatedTableItemsDict = {};
+    
+    if(target != null) {
+        table.attr("data-sortColumn", response.sortColumn);
+        table.attr("data-pageSize", response.pageSize);
+        table.attr("data-sortIsAsc", response.sortIsAsc);
+        table.attr("data-currentPage", response.currentPage);
+        table.attr("data-totalPages", response.totalPages);
+        
+        if($("#pagerSelectPage").length > 0) {
+            $("#pagerSelectPage")
+                .find('option')
+                .remove();
+            for(i = 1; i <= response.totalPages; i++) {
+                $("#pagerSelectPage").append("<option value=" + i + ">" + i + "</option>")
+            }
+            $("#pagerSelectPage").val(response.currentPage);
+            
+            $("#pagerTotalPages").text(response.totalPages);
+            $("#pagerTotalItems").text(response.totalItems);
+            if(response.totalItems >= parseInt($("#searchResultsMax").text())) {
+            	$("#onlyXRecordsDisplayedValue").text($("#onlyXRecordsDisplayedValue").text().replace("{0}", response.totalItems));
+            	$("#onlyXRecordsDisplayed").show();
+            }
+            else {
+            	$("#onlyXRecordsDisplayed").hide();
+            }
+        }
+    }
+
+    var showColumns = table.attr("data-showColumns");
+    if(showColumns != null) {
+        showColumns = showColumns.split(",");
+    }
+    var specialColumns = table.attr("data-specialColumns") == "true";
+    
+    var canEdit = table.attr("data-canEdit") == "true";
+    var canDelete = table.attr("data-canDelete") != "false";
+    
+    if(target != null) {
+        $("#" + entityName + "_Table a[data-currentSort='true']").addClass("glyph-sort-updown");
+        $("#" + entityName + "_Table a[data-currentSort='true']").removeClass("glyph-sort-down glyph-sort-up");
+        $("#" + entityName + "_Table a[data-currentSort='true']").attr("data-currentSort", false);
+
+        target.attr("data-currentSort", true);
+        target.removeClass();
+        target.addClass("sorting");
+        if(response.sortIsAsc) {
+            target.addClass("glyph-sort-down")
+        }
+        else {
+            target.addClass("glyph-sort-up")
+        }
+    }
+    
+    var tableBody = '';
+    var showLocale = response.showLocale;
+    
+    if(typeof preHandleSpecialElement === "function") {
+        preHandleSpecialElement();
+    }
+    
+    // Load objects from main items
+    for (var key in response.pageData){
+        paginatedTableItemsDict = checkForPaginatedTableItem(itemId, response.pageData[key], paginatedTableItemsDict)[1];
+    }
+    // Load objects from translations
+    for (var key in response.pageDataTranslations){
+        paginatedTableItemsDict = checkForPaginatedTableItem(itemId, response.pageDataTranslations[key], paginatedTableItemsDict)[1];
+    }
+    
+    for (var key = 0, size = response.pageData.length; key < size; key++){
+        
+        var returnArray = checkForPaginatedTableItem(itemId, response.pageData[key], paginatedTableItemsDict);
+        paginatedTableItemsDict = returnArray[1];
+        var item = returnArray[0];
+        if(item == null) {
+            item = response.pageData[key];
+        }
+        
+        var iterLocale = item["locale"];
+        var iterLocaleConnectedId = item["localeConnectedId"];
+        var showEditButton = canEdit;
+        
+        if(showLocale && iterLocale != null && iterLocaleConnectedId != null && iterLocale != locale && iterLocale != defaultLocale) {
+            continue;
+        }
+        var tableBodyTr = '<tr '
+        var tableBodyTd = '';
+        var i = 0;
+        var idProperty = null;
+        var idValue = -1;
+        if(itemId != null) {
+            idProperty = itemId;
+            idValue = item[itemId];
+        }
+        
+        var deletable = true
+        if(showColumns == null) {
+            for (var property in item) {
+                if(property.charAt(0) == '_') {
+                    if(typeof handleSpecialElement === "function") {
+                        tableBodyTd += handleSpecialElement(item, property);
+                    }
+                    continue;
+                }
+                var value = item[property];
+                
+                if(typeof value == "boolean") {
+                    value = booleanCell(value);
+                }
+                if(property == "deletable") {
+                    deletable = item[property];
+                }
+                else {
+                    if(showLocale) {
+                        if(property == "localeConnectedId") {
+                            if(value == idValue) {
+                                tableBodyTd += '<td style="opacity:0.5" data-property="' + property + '">' + value + '</td>';
+                            }
+                            else {
+                                tableBodyTd += '<td style="font-weight:bold" data-property="' + property + '">' + value + '</td>';
+                            }
+                        }
+                        else {
+                            tableBodyTd += '<td data-property="' + property + '">' + value + '</td>';
+                        }
+                        
+                        if(property == "locale" && value != defaultLocale) {
+                            showEditButton = false;
+                        }
+                    }
+                    else if(property != "locale" && property != "localeConnectedId") {
+                        tableBodyTd += '<td data-property="' + property + '">' + value + '</td>';
+                    }
+                }
+                
+                if(idProperty == null && i++ == 0) {
+                    idProperty = property;
+                    idValue = value;
+                }
+            }
+        }
+        else {
+            for (var index in showColumns) {
+                if(item["deletable"] != null) {
+                    deletable = item["deletable"];
+                }
+                var property = showColumns[index];
+                
+                var propertyParameters = null;
+                if(specialColumns) {
+                    //alert("splitting property " + property);
+                    propertyParameters = property.split("::");
+                    property = propertyParameters[0];
+                }
+                
+                //alert(property);
+                //alert(propertyParameters.length);
+                var type = null;
+                if(property.charAt(0) == '_') {
+                    if(typeof handleSpecialElement === "function") {
+                        tableBodyTd += handleSpecialElement(item, property);
+                    }
+                    continue;
+                }
+                //var value = item[property];
+                var value = null;
+                if(property.indexOf(".") < 0) {
+                    value = item[property];
+                }
+                else {
+                    var propertyParts = property.split(".");
+                    value = item;
+                    for(var propertyPartIndex in propertyParts) {
+                        value = value[propertyParts[propertyPartIndex]];
+                    }
+                }
+                
+                if(typeof value == "boolean") {
+                    value = booleanCell(value);
+                }
+                if(showLocale) {
+                    if(property == "localeConnectedId") {
+                        if(value == idValue) {
+                            tableBodyTd += '<td style="opacity:0.5" data-property="' + property + '">' + value + '</td>';
+                        }
+                        else {
+                            tableBodyTd += '<td style="font-weight:bold" data-property="' + property + '">' + value + '</td>';
+                        }
+                    }
+                    else {
+                        tableBodyTd += '<td data-property="' + property + '">' + value + '</td>';
+                    }
+                    
+                    if(property == "locale" && value != defaultLocale) {
+                        showEditButton = false;
+                    }
+                }
+                else if(property != "locale" && property != "localeConnectedId") {
+                    if(propertyParameters == null || propertyParameters.length == 1) {
+                        tableBodyTd += '<td data-property="' + property + '">' + (value != null ? value : '') + '</td>';
+                    }
+                    else {
+                        switch(propertyParameters[1]) {
+                            case "hidden":
+                                tableBodyTd += '<td data-property="' + property + '" style="display:none">' + value + '</td>';
+                                break;
+                            case "chk":
+                                tableBodyTd += '<td>' + checkboxCell(false,value) + '</td>';
+                                break;
+                            case "boolImgHref":
+                                // canBeOrdered::boolImgHref::glyph-shopping-cart::1.5::toCart?id={{id}}<::optional_title>
+                                if(item[property]) {
+                                    //tableBodyTd += '<td><a href="http://krneki" class="' + propertyParameters[2] + '"></td>';
+                                    var ariaLabel = "";
+                                    if(propertyParameters.length == 6) {
+                                        ariaLabel = " aria-label='" + propertyParameters[5] + "' title='" + propertyParameters[5] + "'";
+                                    }
+                                    tableBodyTd += '<td><a class="btnInTable ' +propertyParameters[2]+'" style="width:' + propertyParameters[3] + 'rem;font-size:' + propertyParameters[3] +
+                                        'rem;height:' + propertyParameters[3] + 'rem;" href="' + propertyParameters[4].replace("{{id}}", idValue) + '"' + ariaLabel + '></td>';
+                                }
+                                else {
+                                    tableBodyTd += '<td></td>';
+                                }
+                                break;
+                            case "fixTextHref":
+                                if(item[property]) {
+                                    //tableBodyTd += '<td><a href="http://krneki" class="' + propertyParameters[2] + '"></td>';
+                                	//var textValue= /*[[#{UserCart.DeleteCart.Succ}]]*/ null;propertyParameters[5];
+                                	tableBodyTd += '<td><a class="" style="width:' + propertyParameters[3] + 'rem;font-size:' + propertyParameters[3] +
+                                    'rem;height:' + propertyParameters[3] + 'rem;" href="' + propertyParameters[4].replace("{{id}}", idValue) + '">'+document.getElementById(propertyParameters[5]).innerText+'</a></td>';
+                                }
+                                else {
+                                    tableBodyTd += '<td></td>';
+                                }
+                                break;
+                            case "href":
+                                // title::href::details?id={{0}}&refCode={{1}}&type={{2}}::3::id::refCode::SearchProvider
+                                var href = propertyParameters[2];
+                                for(var i = 0; i < parseInt(propertyParameters[3]); i++) {
+                                    href = href.replace("{{" + i + "}}", item[propertyParameters[i + 4]]);
+                                }
+                                tableBodyTd += '<td><a href="' + encodeURI(href) + '">' + value + '</a></td>';
+                                break;
+                            case "hrefNewWin":
+                                // title::hrefNewWin::details?id={{0}}&refCode={{1}}&type={{2}}::3::id::refCode::SearchProvider
+                                if(value != null) {
+                                    var href = propertyParameters[2];
+                                    for(var i = 0; i < parseInt(propertyParameters[3]); i++) {
+                                        href = href.replace("{{" + i + "}}", item[propertyParameters[i + 4]]);
+                                    }
+                                    if(href.length > 0) {
+                                        tableBodyTd += '<td data-property="' + property + '"><a href="#" onclick="window.open(\'' + encodeURI(href) + '\',\'_blank\');return false;">' + value + '</a></td>';
+                                    }
+                                    else {
+                                        tableBodyTd += '<td></td>';
+                                    }
+                                }
+                                else {
+                                    tableBodyTd += '<td></td>';
+                                }
+                                break;
+                            case "functionHref":
+                                // title::functionHref::action::functionName({{0}}.{{1}}.{{2}});::3::id::refCode::SearchProvider
+                                var functionName = propertyParameters[3];
+                                functionName = functionName.replace(/\./g, ",");
+                                for(var i = 0; i < parseInt(propertyParameters[4]); i++) {
+                                    functionName = functionName.replace("{{" + i + "}}", item[propertyParameters[i + 5]]);
+                                }
+                                tableBodyTd += '<td><a href="#" ' + propertyParameters[2] + '="' + functionName + ';return false;">' + value + '</a></td>';
+                                break;
+                            case "boolImgfunctionHref":
+                                // canBeSelected::boolImgfunctionHref::glyph-shopping-cart::1.5::Dodaj deskriptor na seznam za iskanje::action::functionName({{0}}.{{1}}.{{2}});::3::id::refCode::SearchProvider
+                                if(item[property]) {
+                                    var functionName = propertyParameters[6];
+                                    functionName = functionName.replace(/\./g, ",");
+                                    for(var i = 0; i < parseInt(propertyParameters[7]); i++) {
+                                        functionName = functionName.replace("{{" + i + "}}", item[propertyParameters[i + 8]]);
+                                    }
+                                    tableBodyTd += '<td><a class="btnInTable ' + propertyParameters[2]+'" style="width:' + propertyParameters[3] + 'rem;font-size:' + propertyParameters[3] +
+                                        'rem;height:' + propertyParameters[3] + 'rem;" href="#" ' + propertyParameters[5] + '="' + functionName + ';return false;" title="' + propertyParameters[4] + '"></td>';
+                                }
+                                else {
+                                    tableBodyTd += '<td></td>';
+                                }
+                                break;
+                            case "customFunction":
+                                // subDescriptors::customFunction::functionName
+                                var funct = window[propertyParameters[2]];
+                                if (typeof funct === "function") {
+                                    tableBodyTd = funct(property, value, tableBodyTd);
+                                }
+                                break;
+                            case "customParameterizedFunction":
+                                // subDescriptors::customFunction::functionName::3::id::refCode::SearchProvider
+                                var funct = window[propertyParameters[2]];
+                                var parametersArray = {};
+                                for(var i = 0; i < parseInt(propertyParameters[3]); i++) {
+                                    parametersArray[propertyParameters[i + 4]] = item[propertyParameters[i + 4]];
+                                    //alert(propertyParameters[i + 4] + "=" + parametersArray[propertyParameters[i + 4]]);
+                                }
+                                if (typeof funct === "function") {
+                                    tableBodyTd = funct(property, value, tableBodyTd, parametersArray);
+                                }
+                            default:
+                                break;
+                        }
+                    }
+                }
+                
+                if(idProperty == null && i++ == 0) {
+                    idProperty = property;
+                    idValue = value;
+                }
+            }
+        }
+            
+        if(showLocale) {
+            // add information about translation (all fields)
+            if(response.pageDataTranslations[idValue] != null) {
+                var returnArray = checkForPaginatedTableItem(itemId, response.pageDataTranslations[idValue], paginatedTableItemsDict);
+                paginatedTableItemsDict = returnArray[1];
+                var translatedItem = returnArray[0];
+                
+                if(translatedItem == null) {
+                    translatedItem = response.pageDataTranslations[idValue];
+                }
+                for (var propertyTranslation in translatedItem) {
+                    tableBodyTd += '<td style="display:none;" data-property="translation_' + propertyTranslation + '">' + translatedItem[propertyTranslation] + '</td>';
+                }
+            }
+        }
+        
+        // append any custom cells if needed
+        if(typeof addCustomCells === "function") {
+            tableBodyTd += addCustomCells(response, key);
+        }
+        
+        if(canEdit) {
+            var msgEditRow = $("header[data-msgEditRow]").attr("data-msgEditRow");
+            tableBodyTd += '<td>';
+            if(showEditButton) {
+            	//deleted 11.12.2019: + item[idProperty]
+                tableBodyTd += '<a onclick="' + entityName + 'DataTableEdit(this);return false;" class="btn glyph-table-edit" data-rowId="' +
+                    item[idProperty] + '" href="#" aria-label="' + msgEditRow  + '">';
+            }
+            tableBodyTd += '</td>';
+            if(canDelete) {
+                tableBodyTd += '<td>';
+                if(deletable) {
+                    var msgDeleteRow = $("header[data-msgDeleteRow]").attr("data-msgDeleteRow");
+                    //deleted 11.12.2019: + item[idProperty]
+                    tableBodyTd += '<a class="btn glyph-table-delete" data-rowId="' +
+                        item[idProperty] + '" href="#" onclick="' + entityName + 'DataTableDelete(this);return false;" aria-label="' + msgDeleteRow  + '">';
+                }
+                tableBodyTd += '</td>';
+            }
+        }
+        tableBody += tableBodyTr + "data-rowDeletable='" + deletable + "'>" + tableBodyTd + '</tr>';
+    }
+    $("#" + entityName + "_Table > tbody").html(tableBody);
+
+    // pagination buttons
+    var container = $("#" + entityName + "_Table span[data-id='PaginationPages'");
+    
+    var onClickFunction = "dataTableGoToPage";
+    if(typeof sendFilteredGotoPage === "function") {
+        onClickFunction = "sendFilteredGotoPage";
+    }
+    
+    paginationDisplayExtraUrlParams(response, onClickFunction, container, "#" + entityName + "_Table", extraUrlParams);
+    
+    table.show();
+
+    try {
+        if (table.attr('id') === 'searchResults_Table') {
+            buildCardsForSearchResults(table);
+        }
+    } catch (e) {
+        console && console.error && console.error(e);
+    }
+}
+
+function paginationDisplay(response, onClickFunction, pageNumbersContainer, paginationContainer) {
+    paginationDisplayExtraUrlParams(response, onClickFunction, pageNumbersContainer, paginationContainer, "");
+}
+
+/**
+ * 
+ * @param response
+ * @param onClickFunction
+ * @param pageNumbersContainer ajax object
+ * @param paginationContainer  ajax object selector
+ * @returns
+ */
+function paginationDisplayExtraUrlParams(response, onClickFunction, pageNumbersContainer, paginationContainer, extraUrlParams) {
+    pageNumbersContainer.empty();
+    pageNumbersContainer.append("&nbsp;&nbsp;&nbsp;");
+    
+    for(var pageIndex = response.startPage; pageIndex <= response.endPage; pageIndex++) {
+        // <a class="pagination-link pagination-row" href="/vac/settings/.regionalArchive.1">1</a>
+        var className = "pagination-link pagination-row ";
+        if(pageIndex != response.currentPage) {
+            className += "pagination-active";
+        }
+        else {
+            className += "pagination-disabled";
+        }
+        if(extraUrlParams == "") {
+            pageNumbersContainer.append("<a class='" + className + "' data-destinationPage='" + pageIndex + "' href='#' onclick='" + onClickFunction + "(this);return false;'>" + pageIndex + "&nbsp;&nbsp;&nbsp;</a>")
+        }
+        else {
+            pageNumbersContainer.append("<a class='" + className + "' data-destinationPage='" + pageIndex + "' href='#' onclick='" + onClickFunction + "ExtraUrlParams(this, \"" + extraUrlParams + "\");return false;'>" + pageIndex + "&nbsp;&nbsp;&nbsp;</a>")
+        }
+    }
+
+    if(response.currentPage != 1) {
+        $(paginationContainer + " a[data-id=PaginationFirst].pagination-disabled").attr("tabindex", 0);
+        $(paginationContainer + " a[data-id=PaginationFirst].pagination-disabled").addClass("pagination-active");
+        $(paginationContainer + " a[data-id=PaginationFirst].pagination-disabled").removeClass("pagination-disabled");
+        $(paginationContainer + " a[data-id=PaginationPrevious].pagination-disabled").attr("tabindex", 0);
+        $(paginationContainer + " a[data-id=PaginationPrevious].pagination-disabled").addClass("pagination-active");
+        $(paginationContainer + " a[data-id=PaginationPrevious].pagination-disabled").removeClass("pagination-disabled");
+    }
+    else{
+        $(paginationContainer + " a[data-id=PaginationFirst].pagination-active").attr("tabindex", -1);
+        $(paginationContainer + " a[data-id=PaginationFirst].pagination-active").addClass("pagination-disabled");
+        $(paginationContainer + " a[data-id=PaginationFirst].pagination-active").removeClass("pagination-active");
+        $(paginationContainer + " a[data-id=PaginationPrevious].pagination-active").attr("tabindex", -1);
+        $(paginationContainer + " a[data-id=PaginationPrevious].pagination-active").addClass("pagination-disabled");
+        $(paginationContainer + " a[data-id=PaginationPrevious].pagination-active").removeClass("pagination-active");
+    }
+    if(response.currentPage != response.totalPages) {
+        $(paginationContainer + " a[data-id=PaginationLast].pagination-disabled").attr("tabindex", 0);
+        $(paginationContainer + " a[data-id=PaginationLast].pagination-disabled").addClass("pagination-active");
+        $(paginationContainer + " a[data-id=PaginationLast].pagination-disabled").removeClass("pagination-disabled");
+        $(paginationContainer + " a[data-id=PaginationNext].pagination-disabled").attr("tabindex", 0);
+        $(paginationContainer + " a[data-id=PaginationNext].pagination-disabled").addClass("pagination-active");
+        $(paginationContainer + " a[data-id=PaginationNext].pagination-disabled").removeClass("pagination-disabled");
+    }
+    else {
+        $(paginationContainer + " a[data-id=PaginationLast].pagination-active").attr("tabindex", -1);
+        $(paginationContainer + " a[data-id=PaginationLast].pagination-active").addClass("pagination-disabled");
+        $(paginationContainer + " a[data-id=PaginationLast].pagination-active").removeClass("pagination-active");
+        $(paginationContainer + " a[data-id=PaginationNext].pagination-active").attr("tabindex", -1);
+        $(paginationContainer + " a[data-id=PaginationNext].pagination-active").addClass("pagination-disabled");
+        $(paginationContainer + " a[data-id=PaginationNext].pagination-active").removeClass("pagination-active");
+    }
+}
+
+function booleanCell(checked) {
+    var checkbox = "<div class='c-cb noBorder'><input type='checkbox' onclick='return false;'";
+    if(checked) {
+        checkbox += " checked='checked'";
+    }
+    checkbox += "><label></label></div>";
+    return checkbox;
+}
+
+function checkboxCell(checked) {
+    var checkbox = "<div class='c-cb normal'><input type='checkbox'";
+    if(checked) {
+        checkbox += " checked='checked'";
+    }
+    checkbox += "><label></label></div>";
+    return checkbox;
+}
+
+function checkboxCell(checked,value) {
+    var checkbox = "<div class='c-cb normal'><input type='checkbox' id='"+value+"'";
+    if(checked) {
+        checkbox += " checked='checked'";
+    }
+    checkbox += "><label></label></div>";
+    return checkbox;
+}
+
+// Table pagination finished
+//*******************************
+
+var locale = "si";
+var defaultLocale = "si";
+
+// Cookies user agreement
+$(document).ready(function(){
+    locale = $("header[data-locale]").attr("data-locale");
+    defaultLocale = $("header[data-defaultLocale]").attr("data-defaultLocale");
+    
+    setTimeout(function () {
+    	if(!Cookies.get("vac.cookies.allowed")) {
+            $("#cookieConsent").fadeIn(200);
+        }
+    }, 500);
+    
+    // TODO: FOUT
+    
+    var fontFamily = Cookies.get("vac.accessibility.font.family")
+    if(fontFamily != null && fontFamily !== "default") {
+        changeFontFamily(fontFamily, Cookies.get("vac.accessibility.font.weight"));
+    }
+    var fontSize = Cookies.get("vac.accessibility.font.size")
+    if(fontSize != null && fontSize !== "default") {
+        changeFontSize(fontSize, false);
+    }
+}); 
+
+function setLocale(languageTag) {
+    if(Cookies.get("vac.cookies.allowed")) {
+        Cookies.set("vac.locale", languageTag, { expires: 365 });
+    }
+    document.documentElement.setAttribute("lang", languageTag);
+    return true;
+}
+
+/*$(document).ready(function() {
+	$(".cookieConsentOK").click(function() {
+	    cookieConsentOK();
+    }); 
+	$(".cookieConsentNOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    });
+	
+	$(".cookieConsentOK").keyup(function(event) {
+	    event.preventDefault();
+	    if (event.keyCode === 13) {
+	        cookieConsentOK(); //$(".cookieConsentOK").click();
+	    }
+    });
+	$(".cookieConsentNOK").keyup(function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            cookieConsentNOK(); //$(".cookieConsentNOK").click();
+        }
+    });
+});*/
+
+function cookieConsentOK() {
+    $("#cookieConsent").fadeOut(200);
+    Cookies.set("vac.cookies.allowed", true, { expires: 365 });
+}
+
+function cookieConsentNOK() {
+    $("#cookieConsent").fadeOut(200);
+} 
+
+
+function changeFontSize(fontSize, byUser){
+    //console.log('change font size');
+    if(fontSize !== "default") {
+        document.documentElement.style.fontSize = fontSize;
+    }
+    else {
+        document.documentElement.style.fontSize = null;
+    }
+    if(Cookies.get("vac.cookies.allowed")) {
+        Cookies.set("vac.accessibility.font.size", fontSize, { expires: 365 });
+    }
+    
+    if(byUser && (isIE11 || isEdge)) {
+        // In IE and edge page must be reloaded after the font size is changed.
+        location.reload();
+    }
+    else {
+        if(typeof handleFontSizeChange === "function") {
+            handleFontSizeChange();
+        }
+    }
+    
+    return '';
+}
+
+function changeFontFamily(fontFamily, fontWeight){
+    //console.log('change font family');
+    try {
+        if(fontFamily !== "default") {
+            document.getElementsByTagName("body")[0].style.fontFamily= fontFamily;
+            document.getElementsByTagName("body")[0].style.fontWeight= fontWeight;
+            //document.documentElement.style.fontFamily= fontFamily;
+            document.getElementById("footer").style.fontFamily= fontFamily;
+            document.getElementById("footer").style.fontWeight= fontWeight;
+        }
+        else {
+            document.getElementsByTagName("body")[0].style.fontFamily= null;
+            document.getElementsByTagName("body")[0].style.fontWeight= null;
+            //document.documentElement.style.fontFamily= fontFamily;
+            document.getElementById("footer").style.fontFamily= null;
+            document.getElementById("footer").style.fontWeight= null;
+        }
+    }
+    catch(err) {
+        //alert(err.message);
+    }
+    
+    if(Cookies.get("vac.cookies.allowed")) {
+        Cookies.set("vac.accessibility.font.family", fontFamily, { expires: 365 });
+        Cookies.set("vac.accessibility.font.weight", fontWeight, { expires: 365 });
+    }
+    return '';
+}
+
+    /* 
+     * JS for style changing
+     */
+
+    function switchStyle(cssTitle)
+    {
+    // You may use this script on your site free of charge provided
+    // you do not remove this notice or the URL below. Script from
+    // https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+        // console.log('switch_style');
+        var i, linkTag ;
+        for (i = 0, linkTag = document.getElementsByTagName("link"); i < linkTag.length; i++ ) {
+            if ((linkTag[i].rel.indexOf("stylesheet") != -1) && linkTag[i].title) {
+                // console.log("link " + linkTag[i].id + " --> DISABLED");
+                linkTag[i].disabled = true;
+                if (linkTag[i].title == cssTitle) {
+                    // console.log("link " + linkTag[i].id + " --> ENABLED");
+                    linkTag[i].disabled = false ;
+                }
+            }
+            if(Cookies.get("vac.cookies.allowed")) {
+                Cookies.set("vac.accessibility.css", cssTitle, { expires: 365 });
+            }
+        }
+     }
+    
+    function getCookie(cname) {
+        let name = cname + "=";
+        let ca = document.cookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+     
+//     function set_style_from_cookie()
+//     {
+//       var cssTitle = get_cookie( style_cookie_name );
+//       if (cssTitle.length) {
+//         switch_style( cssTitle );
+//       }
+//     }
+//     function set_cookie ( cookie_name, cookie_value,
+//         lifespan_in_days, valid_domain )
+//     {
+//         // https://www.thesitewizard.com/javascripts/cookies.shtml
+//         //var domain_string = valid_domain ?
+//         //                   ("; domain=" + valid_domain) : '' ;
+//        // document.cookie = cookie_name +
+//          //                  "=" + encodeURIComponent( cookie_value ) +
+//            //                "; max-age=" + 60 * 60 *
+//            //                24 * lifespan_in_days +
+//            //                "; path=/" + domain_string ;
+//     }
+//     function get_cookie ( cookie_name )
+//     {
+//         // https://www.thesitewizard.com/javascripts/cookies.shtml
+//    	 /*
+//     	var cookie_string = document.cookie ;
+//     	if (cookie_string.length != 0) {
+//     		var cookie_array = cookie_string.split( '; ' );
+//     		for (i = 0 ; i < cookie_array.length ; i++) {
+//     			cookie_value = cookie_array[i].match ( cookie_name + '=(.*)' );
+//     			if (cookie_value != null) {
+//     				return decodeURIComponent ( cookie_value[1] ) ;
+//     			}
+//     		}
+//     	}
+//     	*/
+//     	return '' ;
+//     }
+
+     /*
+     * End of Style Changing JS
+     */
+
+  
+
+  
+
+/*    (function ($)
+    {
+      var $window = $(window);
+      var $html = $('html');
+      console.log("mobile mode1");
+      var cookieName;
+      
+      var decodedCookie = decodeURIComponent(document.cookie);
+      //var ca = decodedCookie.split(';');
+      for (i = 0, ca = decodedCookie.split(';') ; i < ca.length ; i++ ) {
+ 	  	 console.log((ca[i]));
+   }
+      
+
+      $("#btnleftmenu").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        
+        //$("#btnleftmenu").toggleClass("icon-edpicon-left");
+        //$("#btnleftmenu").toggleClass("icon-edpicon-right");
+
+      });
+
+      $("#to_hdrbluemenu").click(function (e) {
+        e.preventDefault();
+        if ($("#hdrblue_nav").css("display") == "none") {
+          $("#hdrblue_nav").css("display", "block");
+        }
+        else {
+          $("#hdrblue_nav").css("display", "none");
+        }
+        $("#to_hdrbluemenu").toggleClass("icon-edpicon-more-horiz");
+        $("#to_hdrbluemenu").toggleClass("icon-edpicon-more-vert");
+      });
+
+      $("#to_el_iskanje_m").click(function (e) {
+        e.preventDefault();
+        $("#el_iskanje_m").toggleClass('hide');
+
+        //if (!$("#el_main_m").hasClass('hide'))
+        //  $("#el_main_m").toggleClass('hide');
+        
+        $("#to_el_iskanje_m").toggleClass("icon-edpicon-search-black");
+        $("#to_el_iskanje_m").toggleClass("icon-edpicon-close");
+      });
+
+      // if footend class on page -> footer on end of page allways
+      //var isfootend = document.getElementsByClassName("footend");
+      //if (isfootend.length == 0)
+      {
+        var $footers = $('#footers');
+        //SUSL:var footersbtm = $footers.offset().top + $footers.innerHeight();
+        var footersbtm = 10;
+       //SUSL: if (CheckIeNotEdge()) footersbtm -= 50; // cca all padding-tops
+        var wh = $window.scrollTop() + window.innerHeight;
+        if (wh > footersbtm) {
+          $footers.addClass("div-bottom-fixed");
+        }
+      }
+
+     //SUSL: startmovefooter();
+
+      // skrivanje footers
+      if ($("#btnCmEditRefresh").length ) {
+        $("#footers").toggleClass('hide');
+        $("#btnFooterOnOff").toggleClass('icon-edpicon-down icon-edpicon-up');
+      }
+
+// element id=isEndOfPage izklopi footer na strani
+      //if ($("#isEndOfPage").length ) {
+      //  $("#footers").toggleClass('hide');
+      //  $("#btnFooterOnOff").toggleClass('icon-edpicon-down icon-edpicon-up');
+      //}
+
+      //$("#btnFooterOnOff").click(function (e) {
+      //  $("#footers").toggleClass('hide');
+
+      //  if (!$("#footers").hasClass("hide")) {
+      //    $(this).toggleClass('icon-edpicon-up icon-edpicon-down');
+      //  }
+      //  else
+      //  {
+      //    $(this).toggleClass('icon-edpicon-down icon-edpicon-up');
+      //  }
+      //});
+      //$("#btnFooterOnOff").toggleClass('hide');
+// end skrivanje footers
+
+      function resize()
+      {
+
+        if ($(window).width() < 768)
+        {
+        	console.log("mobile mode: width: "+$(window).width());
+         // $html.addClass('mobile');
+         // $html.removeClass('www');
+          $("#hdrblue_nav").css("display", "none");
+
+          // #wrapper for leftmenu
+          if (!$('#wrapper').hasClass('notvisible')) 
+          {
+            $('#wrapper').removeClass('toggled');
+            $("#btnleftmenu").removeClass('hide');
+          }
+        }
+        else
+        {
+          $html.removeClass('mobile');
+          $html.addClass('www');
+
+          $("#hdrblue_nav").css("display", "inline");
+
+          // #wrapper for leftmenu
+          if (!$('#wrapper').hasClass('notvisible'))
+          {
+            $('#wrapper').addClass('toggled');
+            $("#btnleftmenu").addClass('hide');
+
+          }
+
+        }
+        // footer at page bottom when resizing
+        //if ($(window).height() < wheight || $(window).width() < wwidth)
+        //{
+        //  $("#footers").removeClass("div-bottom-fixed");
+        //}
+       
+      }
+      var wheight = $(window).height(); 
+      var wwidth = $(window).width(); 
+
+      $window
+        .resize(resize)
+        .trigger('resize');
+
+    })(jQuery);
+
+ 
+
+
+    $(document).ready(function () {
+
+      $('a:contains("Prijava")').addClass("prijava");
+      $('a:contains("Login")').addClass("prijava");
+      
+      //if ($('.icon-prijava').text().startsWith('\xa0'))
+      if ($('.icon-prijava').text().charAt(0) == ('\xa0'))
+      {
+        $('.icon-prijava').toggleClass("icon-prijava icon-hidden");
+      }
+
+      if ($("html[data-useragent*='MSIE']").length ) return;
+
+      if ($('.parlbackgr').length > 0) {
+        $(window).scroll(function () {
+          parallax();
+          if ($('.parlmidgr').length > 0)
+            parallax1();
+        });
+      }
+    });
+
+    function parallax() {
+      var scrolled = $(window).scrollTop();
+      $('.parlbackgr').css('top', -(scrolled * 0.2) + 'px');
+    }
+
+    function parallax1() {
+      var scrolled = $(window).scrollTop();
+      $('.parlmidgr').css('top', -(scrolled * 0.3) + 'px');
+    }
+
+    $('#sidebar-wrapper a').click(function (event) {
+      localStorage.setItem('target', this.id);
+      var target = localStorage.getItem('target');
+    });
+
+    $('#sidebar-wrapper button').click(function (event) {
+      localStorage.setItem('target', this.id);
+      var target = localStorage.getItem('target');
+    });
+
+    var target = localStorage.getItem('target');
+    if (target != '')
+    {
+      var el = $('#' + target).parent();
+      if (el.hasClass('collapse')) {
+        var item_id = el.attr('id');
+        var btn_id = item_id.replace("item", "btn");
+        $('#' + btn_id).click();
+      }
+      $('#' + target).focus();
+    }
+
+    $('a.disabled').click(function () { return false; });
+*/
+
+
+function getExportColumns(tableName, propsList) {
+    const $table = $("#" + tableName);
+    if ($table.length === 0) throw new Error(`Tabela z ID '${tableName}' ne obstaja.`);
+
+    const headers = [];
+    $table.find("thead tr.head-hidden th").each(function () {
+        const $th = $(this);
+        const header =
+            ($th.attr("aria-label") || $th.text() || "").trim();
+        if (header) headers.push(header);
+    });
+
+    const props = Array.isArray(propsList) ? propsList : [];
+
+    return props.map((prop, i) => ({
+        prop,
+        header: headers[i] || prop
+    }));
+}
+
+function statusText(code) {
+    const $sel = $("#registrationStatus");
+    if ($sel.length === 0) return String(code);
+    const $opt = $sel.find('option[value="' + code + '"]');
+    return $opt.length ? $opt.text() : String(code);
+}
+
+function formatCurrentDate(v) {
+    if (!v) return "";
+    const d = (v instanceof Date) ? v : new Date(v);
+    if (isNaN(d)) return String(v);
+    // dd.MM.yyyy
+    const dd = String(d.getDate()).padStart(2, "0");
+    const mm = String(d.getMonth() + 1).padStart(2, "0");
+    const yyyy = d.getFullYear();
+    return `${dd}.${mm}.${yyyy}`;
+}
+
+function yesNo(val) { return val ? "Da" : "Ne"; }
+
+function findRegionalArchive(value) {
+    let archiveName;
+    try {
+        if (value != null) {
+            if (value.regionalArchiveId != null  && value.refCode != null) {
+                regionalArchiveMap[value.regionalArchiveId] = value.refCode;
+                archiveName = value.refCode;
+                return tableBodyTd;
+            } else if (value) {
+                archiveName=regionalArchiveMap[value];
+                return tableBodyTd;
+            }
+        }
+        archiveName= value;
+    } catch(err) {
+        return archiveName;
+    }
+    return archiveName;
+}
+
+function findPurpose(value) {
+    let purpose;
+    try {
+        if (value != null) {
+            msgPurposeOther = "drugo";
+            msgPurposeResearch =  "znanstveno-raziskovalni";
+            msgPurposeLegal = "upravno-pravni";
+            purposeOther = 1;
+            purposeResearch = 2;
+            purposeLegal = 4;
+            if (value == purposeOther) {
+                purpose = msgPurposeOther;
+            } else if(value == purposeResearch) {
+                purpose = msgPurposeResearch;
+            } else if (value == purposeLegal) {
+                purpose += msgPurposeLegal;
+            } else {
+                purpose = "";
+            }
+        }else {
+            purpose = "";
+        }
+    } catch(err) {
+        return purpose;
+    }
+    return purpose;
+}
+
+
+function findStatusText(value) {
+    let rowLoanStatus=-1;
+
+    let statusText;
+    try {
+        if(value != null) {
+            var msg = "Shranjeno";
+            var startedOrder = 0;
+            var sentOrder = 10;
+            var accepted = 11;
+            var changed = 1;
+            var changesConfirmed = 12;
+            var confirmed = 13;
+            var confirmedPayable = 14;
+            var storno = 33;
+            var inProgress = 16;
+            var inProgressError = 17;
+            var orderReady = 18;
+            var orderUsed = 19;
+            var orderCompleted = 32;
+            var changesRejected = 31;
+            var orderRejected = 30;
+            var orderDeleted = 40;
+            var orderChangedPayable = 2;
+            var extSent = 20;
+            var extAccepted = 3;
+            var extConfirmed = 4;
+            var extRejected = 5;
+            rowLoanStatus=value;
+            if (value == startedOrder) {
+                //nothing to do
+            } else if (value == sentOrder){
+                if(isAdmin) {
+                    msg = "Oddano";
+                }
+            } else if (value == accepted){
+                if(isAdmin) {
+                    msg = "Sprejeto";
+                }
+            } else if (value == changed){
+                msg = "Spremenjeno";
+            } else if (value ==changesConfirmed){
+                if(isAdmin) {
+                    msg = "Spremembe potrjene";
+                }
+            } else if (value == confirmed){
+                if(isAdmin) {
+                    msg = "Potrjeno";
+                }
+            } else if (value == confirmedPayable){
+                if(isAdmin) {
+                    msg = "Potrjeno - potrebno pla\u010Dilo";
+                }
+            } else if (value == storno){
+                msg = "Stornirano";
+            } else if (value == inProgress){
+                if(isAdmin) {
+                    msg = "V pripravi";
+                }
+            } else if (value == inProgressError){
+                msg = "V pripravi z napako";
+            } else if (value == orderReady){
+                msg = "Pripravljeno";
+            } else if (value == orderUsed){
+                msg = "Uporabljeno";
+            } else if (value == orderCompleted){
+                msg = "Zaklju\u010Deno";
+            } else if (value == changesRejected){
+                if(isAdmin) {
+                    msg = "Spremembe zavrnjene";
+                }
+            } else if (value == orderRejected){
+                msg = "Zavrnjeno";
+            } else if (value == orderDeleted){
+                msg = "Izbrisano";
+            } else if (value == orderChangedPayable){
+                msg = "Spremenjeno (pla\u010Dljivo)";
+            } else if (value == extSent){
+                msg = "Zahteva za podalj\u0161anje";
+            } else if (value == extAccepted){
+                msg = "Podalj\u0161anje v obdelavi";
+            } else if (value == extConfirmed){
+                msg = "Podalj\u0161anje potrjeno";
+            } else if (value == extRejected){
+                msg = "Podalj\u0161anje zavrnjeno";
+            } else {
+                msg = "";
+            }
+            statusText = msg;
+        }
+    }
+    catch(err) {}
+    return statusText;
+}
+
+
+function valueFor(obj, prop) {
+    const v = obj[prop];
+
+    switch (prop) {
+        case "status":
+            return statusText(v);
+        case "advancedUser":
+        case "hasSicasId":
+        case "reproductionOrder":
+        case "containsDocuments":
+            return yesNo(!!v);
+        case "usageStartDate":
+        case "inquiryDate":
+            return formatCurrentDate(v);
+        case "regionalArchive":
+            return findRegionalArchive(v);
+        case "purpose":
+            return findPurpose(v);
+        case "loanStatus":
+            return findStatusText(v);
+        default:
+            return v == null ? "" : v
+    }
+}
+
+function buildRowsForExport(dataArray, columns) {
+    return dataArray.map(item => {
+        const row = {};
+        columns.forEach(col => {
+            row[col.header] = valueFor(item, col.prop);
+        });
+        return row;
+    });
+}
+
+async function loadTtfAsBase64(url) {
+    const res = await fetch(url, { cache: "force-cache" });
+    if (!res.ok) throw new Error(`Font fetch failed ${res.status}: ${url}`);
+    const buf = await res.arrayBuffer();
+    let binary = "";
+    const bytes = new Uint8Array(buf);
+    const chunk = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunk) {
+        binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunk));
+    }
+    return btoa(binary);
+}
+
+// ====== Excel ======
+function exportUsersToXlsx(dataArray, fileName, selectedProps, tableName) {
+    if (!window.XLSX) throw new Error("XLSX library ni naložena.");
+    if (!Array.isArray(dataArray)) {
+        if (dataArray && Array.isArray(dataArray.pageData)) dataArray = dataArray.pageData;
+        else throw new Error("exportUsersToXlsx: expected Array of rows");
+    }
+
+    let columns = getExportColumns(tableName, selectedProps);
+    if (Array.isArray(selectedProps) && selectedProps.length) {
+        const set = new Set(selectedProps);
+        columns = columns.filter(c => set.has(c.prop));
+    }
+
+    const rows = buildRowsForExport(dataArray, columns);
+    const wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.json_to_sheet(rows, { header: columns.map(c => c.header) });
+    XLSX.utils.book_append_sheet(wb, ws, fileName);
+
+    const headerColor = "1E4760";
+    const textColor = "FFFFFF";
+
+    const range = XLSX.utils.decode_range(ws['!ref']);
+    const headerRow = range.s.r;
+
+    for (let C = range.s.c; C <= range.e.c; ++C) {
+        const cellRef = XLSX.utils.encode_cell({ r: headerRow, c: C });
+        const cell = ws[cellRef];
+        if (!cell) continue;
+
+        cell.s = {
+            fill: {
+                patternType: "solid",
+                fgColor: { rgb: headerColor }
+            },
+            font: {
+                bold: true,
+                color: { rgb: textColor }
+            },
+            alignment: {
+                horizontal: "center",
+                vertical: "center"
+            }
+        };
+    }
+
+    XLSX.writeFile(wb, fileName + ".xlsx", { cellStyles: true });
+}
+
+// ====== PDF ======
+async function exportUsersToPdf(dataArray, fileName, selectedProps, tableName) {
+    if (!window.jspdf || !window.jspdf.jsPDF) throw new Error("jsPDF UMD ni naložen.");
+
+    const { jsPDF } = window.jspdf;
+
+    if (!Array.isArray(dataArray)) {
+        if (dataArray && Array.isArray(dataArray.pageData)) dataArray = dataArray.pageData;
+        else throw new Error("exportUsersToPdf: expected Array of rows");
+    }
+
+    let columns = getExportColumns(tableName, selectedProps);
+    if (!Array.isArray(columns) || columns.length === 0) {
+        const first = dataArray[0] || {};
+        columns = Object.keys(first).map(k => ({ prop: k, header: k }));
+    }
+
+    if (Array.isArray(selectedProps) && selectedProps.length) {
+        const set = new Set(selectedProps);
+        columns = columns.filter(c => set.has(c.prop));
+    }
+
+    const head = [columns.map(c => String(c.header))];
+    const body = dataArray.map(item => columns.map(c => valueFor(item, c.prop)));
+
+    const fontUrl = "/fonts/Republika/republika-regular-webfont.ttf";
+    const fontBase64 = await loadTtfAsBase64(fontUrl);
+
+    const doc = new jsPDF({ orientation: "landscape", unit: "pt", format: "A4" });
+    doc.addFileToVFS("republika-regular-webfont.ttf", fontBase64);
+    doc.addFont("republika-regular-webfont.ttf", "Republika", "normal");
+    doc.setFont("Republika", "normal");
+    doc.setFontSize(14);
+    doc.text(fileName, 40, 40);
+
+    doc.autoTable({
+        head,
+        body,
+        startY: 60,
+        styles: { fontSize: 9, cellPadding: 4, overflow: "linebreak", font: "Republika" },
+        headStyles: { fontStyle: "bold", font: "Republika", fillColor: [30, 71, 96], textColor: 255 },
+        margin: { left: 40, right: 40 },
+    });
+
+    doc.save(`${fileName}.pdf`);
+}
