@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je natančna transkripcija vseh vrstic tabele **„Protocoll der Bau Parcellen“** (Seznam stavbnih parcel) za katastrsko občino **Griblje (Grüble)** iz leta 1825, točno kot je zapisano v rokopisu.\n\n**Opomba:** V tem odlomku ni bilo najdenih nobenih oznak za **Gasthaus**, **Gastwirtschaft**, **Wirtshaus**, **Schenke**, **Krčma**, gostilno ali trgovino (**Handlung/Laden**). Vse stavbe so označene kot „Bau“ (stavba) ali so pustili polje prazno/nezaznavljivo.\n\n| Št. parcele | Ime in priimek lastnika | Stan / Razred | Kje živi | Gattung (Vrsta stavbe) | Areal (m²) | Opombe |\n|:---:|:---|:---:|:---:|:---|:---:|:---|\n| 81 | *Knapf Georg* | Laub. | Griblje | 45 | Bau | 11 | *(opomba: rokopisna zabeležka desno)* |\n| 82 | *Knapf Georg* | \" | \" | 45 | Bau | 92 | |\n| 83 | *Knapf Georg* | \" | \" | 45 | Bau | 282 | |\n| 84 | *Knapf Georg* | \" | \" | 45 | Bau | 21 | |\n| 85 | *Pavlicek Peter* | \" | \" | 37 | Bau | 76 | |\n| 86 | *Lorberghuber Valentin* | \" | \" | 36 | Bau | 23 | |\n| 87 | *Hunziker Marcel* | \" | \" | 44 | Bau | 28 | |\n| 88 | *Lorberhuber Mathäus* | \" | \" | 36 | Bau | 91 | |\n| 89 | *Hunziker Marcel* | \" | \" | 44 | Bau | 172 | |\n| 90 | *Pavlicek Paul* | \" | \" | 37 | Bau | 88 | *(opomba: št. 88?)* |\n| 91 | *Hunziker Paul* | \" | \" | 44 | Bau | 176 | *(opomba: št. 176)* |\n| 92 | *Fiedler Georg* | \" | \" | 41 | Bau | 239 | *(opomba: št. 230)* |\n| 93 | *Fiedler Mathäus* | \" | \" | 40 | Bau | 12 | *(opomba: št. 12)* |\n| 94 | *Fiedler Mathäus* | \" | \" | 40 | Bau | 144 | *(opomba: št. 144)* |\n| 95 | *Almerig Marcel* | \" | \" | 39 | Bau | 97 | *(opomba: št. 97)* |\n| 96 | *Kliner Georg* | \" | \" | 38 | Bau | 20 | *(opomba: št. 20)* |\n| 97 | *Schmitz Marcel* | \" | \" | 39 | Bau | 8 | *(opomba: št. 8)* |\n| 98 | *A. B. Zöllner* | Bauerl | \" | 30 | Bau | 102 | |\n| 99 | *(prazno)* | | | 5 | Vorschlag | 1 | 77 |\n\n---\n\n### Poročilo o iskanju gostilne/trgovine:\n**NIČ NI NAJDENO.**  \nV pregledanih vrsticah (81–99) se v stolpcu **Gattung** pojavljajo samo naslednje vrednosti:\n*   **Bau** (pri večini)\n*   **Vorschlag** (samo pri zadnji vrstici 99 – verjetno predlog za novo parcelo)\n\n**Ne obstaja nobena omemba:** Gasthaus, Gastwirtschaft, Wirtshaus, Schenke, Krčma, Handlung ali Laden.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790169547,
+  "id": "20260923211835e04f4a25f98a4158",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260923211835e04f4a25f98a4158",
+  "usage": {
+    "completion_tokens": 969,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2881
+  }
+}

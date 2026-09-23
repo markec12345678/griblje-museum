@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je popolna transkripcija vidnega besedilnega vsebine s strani franciscejskega katastra:\n\n**Naslov dokumenta (tiskano/rokopis):**\n> **Protocoll**\n> **Der Bau Parcellen**\n> **der Gemeinde**\n> **„GRÜBLE“**\n\n**Podrobnosti:**\n*   **Dokument:** Protokol o stavbnih parcelah (Bau Parcellen)\n*   **Leto:** 1825 (po vašem navedku; na sami naslovnici letnica ni izpisana, ampak je del celotnega dokumenta N83)\n*   **Katastrska občina:** **Griblje** (zapisano kot **GRÜBLE** – to je zgodovinski/nemški zapis imena, ki se uporablja v katastru)\n*   **Številke hiš/parcel:** Na tej naslovnici **ni** navedena nobena številka hiše ali parcele.\n*   **Imena lastnikov:** Na tej strani **ni** zapisan noben lastnik.\n*   **Podpisi:** Na tej strani **ni** podpisa.\n\n**Opombe:**\n*   Besedilo je napisano v mešanem slogu: prve tri vrstice so v lepi klici (Kurrentschrift), ime občine pa je natisnjeno z velikimi tiskanimi črkami (Majuskel) in je v okvirju označeno z nemškimi narekovaji („ “).\n*   Ime **Griblje** je v dokumentu zapisano v nemški obliki **Grüble** (kar pomeni 'jama' ali 'vrtača', kar ustreza krajevnemu imenu).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790169316,
+  "id": "20260923211505697741d0da2f4440",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260923211505697741d0da2f4440",
+  "usage": {
+    "completion_tokens": 428,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 737
+  }
+}

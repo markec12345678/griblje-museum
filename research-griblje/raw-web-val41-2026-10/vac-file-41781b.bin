@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="sl">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>VAČ - Virtualna Čitalnica</title>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/fonts/style.css" />
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/js/jstree.3.3.7/themes/default/style.css" />
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac.css"></link>
+
+<link id="theme" type="text/css" rel="stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href=""></link>
+<link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/themes/smoothness/jquery-ui.css">
+    </link>
+
+<!-- <script src="/js/jquery-3.3.1.js"></script> -->
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/i18n/jquery-ui-i18n.min.js"></script>
+<script src="https://prostor.sjas.gov.si//gms-sdk.js" data-sdk-version="4"></script>
+
+
+    <script>
+/*<![CDATA[*/
+var errMsgDefault = "Pri\u0161lo je do napake. Obrnite se na skrbnika sistema.";
+var defaultLocale = "sl";
+var currentLocale = "sl";
+/*]]>*/
+</script>
+
+<script src="/js/Popper.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+<script src="/js/vac.js"></script>
+    
+
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/jstree.3.3.7/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<!-- <script src="/js/jspdf-1.5.3/jspdf.min.js"></script> -->
+
+<style>
+/*body {
+    font-family: ;
+    font-family: OpenDyslexicAlta;
+  }*/
+/** {
+    box-sizing: border-box;
+}*/
+
+/*
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+*/
+/*label {
+	padding: 6px 6px 12px 0;
+	display: inline-block;
+}
+
+#input[type=submit] { #
+	background-color: #14789F;
+	color: white; #
+	padding: 12px 20px; #
+	border: none; #
+	border-radius: 4px; #
+	cursor: pointer; #
+	float: left;
+	#
+}*/
+
+/*
+input[type=submit]:hover {
+    background-color: #79B0C5;
+}
+*/
+
+/*
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}*/
+
+/* Clear floats after the columns */
+/*.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}*/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}*/
+
+#skiptocontent a
+{
+position:absolute;
+#left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+</style>
+
+</head>
+<script>
+
+    /*<![CDATA[*/
+    var pageTitle ="VA\u010C | Gradivo";
+    document.title = pageTitle;
+    /*]]>*/
+</script>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    #tify {
+        height: 100vh;
+        width: 100vw;
+    }
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tify@0.35.0/dist/tify.css?0.35.0">
+
+<body>
+<div id="tify"></div>
+
+<script type="module">
+    import Tify from 'https://cdn.jsdelivr.net/npm/tify@0.35.0/dist/tify.js?0.35.0';
+
+    const params = new URLSearchParams(location.search);
+
+    const uodid = params.get('uodid');
+    const docid = params.get('docid');
+    const seq   = params.get('seq');
+    const type  = params.get('type'); // "pdf" ali null
+
+    let manifestUrl = null;
+
+    // 1) Novi "čisti" način
+    if (uodid && docid) {
+        if (type === 'pdf') {
+            manifestUrl = `${location.origin}/vac/iiif/pdf-manifest?uodid=${encodeURIComponent(uodid)}&docid=${encodeURIComponent(docid)}`;
+        } else if (type === 'image') {
+            manifestUrl = `${location.origin}/vac/iiif/file-manifest?uodid=${encodeURIComponent(uodid)}&docid=${encodeURIComponent(docid)}`;
+        } else if (seq) {
+            manifestUrl = `${location.origin}/vac/iiif/manifest?uodid=${encodeURIComponent(uodid)}&docid=${encodeURIComponent(docid)}&seq=${encodeURIComponent(seq)}`;
+        } else {
+            document.body.innerHTML =
+                '<pre style="padding:16px">Manjka seq (za sliko) ali type=pdf (za PDF).</pre>';
+            throw new Error('Missing seq or type');
+        }
+    }
+    // 2) Backward compatible: stari način manifest=...
+    else {
+        const raw = params.get('manifest');
+        if (!raw) {
+            document.body.innerHTML = '<pre style="padding:16px">Manjka parameter ?uodid=&docid=&seq= ali ?type=pdf ali ?manifest=...</pre>';
+            throw new Error('Missing params');
+        }
+
+        // URLSearchParams already decoded the outer parameter. Keep filenames inside it encoded.
+        manifestUrl = new URL(raw, location.origin).href;
+    }
+
+    new Tify({
+        container: '#tify',
+        manifestUrl: manifestUrl,
+        language: 'sl',
+        translationsDirUrl: '/i18n',
+        annotationsVisible: true,
+        viewer: {
+            maxZoomPixelRatio: 4,
+            imageLoaderLimit: 2,
+            immediateRender: false,
+            blendTime: 0.15,
+        },
+    });
+
+    // Zagotovimo, da so slike zaznavne tudi, če jih pregledovalnik ustvari brez alt atributa.
+    let accessibilityFrame = null;
+    const imageObserver = new MutationObserver(function () {
+        if (accessibilityFrame !== null) return;
+        accessibilityFrame = requestAnimationFrame(function () {
+            accessibilityFrame = null;
+            document.querySelectorAll('#tify img:not([alt])').forEach(function (image) {
+                image.setAttribute('alt', 'Slika');
+            });
+            document.querySelectorAll('#tify canvas').forEach(function (canvas) {
+                canvas.setAttribute('role', 'img');
+                canvas.setAttribute('aria-label', canvas.getAttribute('aria-label') || 'Slika');
+            });
+            localizeTifyControls();
+        });
+    });
+    imageObserver.observe(document.getElementById('tify'), {
+        childList: true,
+        subtree: true,
+        attributes: false
+    });
+
+    function localizeTifyControls() {
+        const translations = {
+            'Export': 'Izvoz',
+            'Current page': 'Trenutna stran',
+            'Current Page': 'Trenutna stran',
+            'Download Individual Images': 'Prenesi posamezne slike',
+            'Download individual images': 'Prenesi posamezne slike',
+            'Fulltext': 'Besedilo',
+            'Full text': 'Besedilo',
+            'Fulltext [noun]': 'Besedilo',
+            'View': 'Pogled',
+            'View [noun]': 'Pogled'
+        };
+
+        document.querySelectorAll('#tify *').forEach(function (element) {
+            ['aria-label', 'title'].forEach(function (attribute) {
+                const value = element.getAttribute(attribute);
+                if (value && translations[value] && value !== translations[value]) {
+                    element.setAttribute(attribute, translations[value]);
+                }
+            });
+
+            if (element.children.length === 0) {
+                const value = element.textContent.trim();
+                if (translations[value] && value !== translations[value]) {
+                    element.textContent = translations[value];
+                }
+            }
+        });
+    }
+
+    localizeTifyControls();
+    window.addEventListener('pagehide', function () {
+        imageObserver.disconnect();
+        if (accessibilityFrame !== null) cancelAnimationFrame(accessibilityFrame);
+    });
+</script>
+
+
+</body>
+</html>

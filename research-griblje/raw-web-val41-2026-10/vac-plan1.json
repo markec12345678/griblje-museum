@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>VAČ - Virtualna Čitalnica</title>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/fonts/style.css" />
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/js/jstree.3.3.7/themes/default/style.css" />
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac.css"></link>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac_Default.css" title="default"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnWhite.css" title="blackOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_WhiteOnBlack.css" title="whiteOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnBeige.css" title="blackOnBeige"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnWhite.css" title="blueOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnGreen.css" title="blackOnGreen"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnYellow.css" title="blackOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnYellow.css" title="blueOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_YellowOnBlue.css" title="yellowOnBlue"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_TurquoiseOnBlack.css" title="turquoiseOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnPink.css" title="blackOnPink"></link>
+<link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/themes/smoothness/jquery-ui.css">
+    </link>
+
+<!-- <script src="/js/jquery-3.3.1.js"></script> -->
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/i18n/jquery-ui-i18n.min.js"></script>
+<script src="https://prostor.sjas.gov.si//gms-sdk.js" data-sdk-version="4"></script>
+
+
+    <script>
+/*<![CDATA[*/
+var errMsgDefault = "Pri\u0161lo je do napake. Obrnite se na skrbnika sistema.";
+var defaultLocale = "sl";
+var currentLocale = "sl";
+/*]]>*/
+</script>
+
+<script src="/js/Popper.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+<script src="/js/vac.js"></script>
+    
+
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/jstree.3.3.7/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<!-- <script src="/js/jspdf-1.5.3/jspdf.min.js"></script> -->
+
+<style>
+/*body {
+    font-family: ;
+    font-family: OpenDyslexicAlta;
+  }*/
+/** {
+    box-sizing: border-box;
+}*/
+
+/*
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+*/
+/*label {
+	padding: 6px 6px 12px 0;
+	display: inline-block;
+}
+
+#input[type=submit] { #
+	background-color: #14789F;
+	color: white; #
+	padding: 12px 20px; #
+	border: none; #
+	border-radius: 4px; #
+	cursor: pointer; #
+	float: left;
+	#
+}*/
+
+/*
+input[type=submit]:hover {
+    background-color: #79B0C5;
+}
+*/
+
+/*
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}*/
+
+/* Clear floats after the columns */
+/*.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}*/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}*/
+
+#skiptocontent a
+{
+position:absolute;
+#left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+</style>
+
+</head>
+<script>
+/*<![CDATA[*/
+    var pageTitle="VA\u010C | Iskanje";
+    document.title = pageTitle;
+ /*]]>*/
+</script>
+<body>
+    <div id="pageContainer" class="container-fluid">
+        <div id="pageHeader">
+            <header data-locale="sl" data-defaultLocale="sl" data-msgEditRow="Uredi" data-msgDeleteRow="Izbriši">
+            <div id="confirmationDialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="confirmationDialog_Text"
+                >
+                <div>
+                    <span id="confirmationDialog_Title">
+                        <span id="confirmationDialog_Text"></span> <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup1" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel1"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput1" aria-label="Vnosno polje">
+                        <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup2" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel2"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput2" aria-label="Vnosno polje 2">
+                        <br />
+                    </span>
+                    <br />
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonYes" value="Da" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonNo" value="Ne" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonCancel" value="Prekliči" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonOK" value="V redu" aria-describedby="confirmationDialog_Text">
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <button id="explanationDialogToggler" type="button" class="btn btn-primary" data-toggle="modal" data-target="#explanationDialog" hidden="true">Launch demo modal</button>
+            <div class="modal fade" id="explanationDialog" tabindex="-1" role="dialog" aria-labelledby="explanationDialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="explanationDialogTitle">Dodatno pojasnilo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Zapri">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="explanationDialogBody">Podatki se zabeležijo na podlagi vpogleda v dokazilo o invalidnosti in se hranijo za čas uporabe arhivskega gradiva ali največ 1 leto oziroma do preklica dovoljenja s strani uporabnika.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" data-dismiss="modal" value="Zapri" aria-label="Zapri" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="glassPane" tabindex="0"></div>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary2" >
+                <!-- Button trigger modal -->
+                <a class="navbar-brand hover-nochange" href="/vac">
+                    <input class="glyph-logo bg-primary2 no-shadow" type="button" aria-label="Domov" style="vertical-align:top;background-size:9rem;height:3rem;width:7rem;border:none!important;"></input>
+                    <span class="inARow logo-text-big logo-text-color">VAČ</span><span class="inARow logo-text-big logo-text-color">&nbsp;-&nbsp;</span> <span
+                        class="inARow logo-text-small logo-text-color" style="z-index: 0">VIRTUALNA ARHIVSKA ČITALNICA</span>
+                </a> 
+                <div id="skiptocontent">
+                    <a href="#page" class=""><span>Skoči na glavno vsebino</span></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Meni za uporabniški profil in dostopnost">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <ul id="mainNavBar" class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-header headerNav-link" href="#" id="navbardropUserProfile" data-toggle="dropdown"
+                                aria-label="Uporabniški profil" data-parent="#navbarSupportedContent" title="Uporabniški profil">
+                                
+                                <input class="glyph-user" aria-label="Uporabniški profil" type="button" tabindex="-1" style="border:none!important;"></input>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="https://vac.sjas.gov.si/vac/login"
+                                    style="font-size:1rem">Prijava</a>
+                                
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${session!= null && session.userBean != null && session.userBean.loggedIn}" class="dropdown-item" href="/vac/userprofile/mydocuments"
+                                    th:utext="#{Header.UserProfile.MyDocs}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Moji dokumenti</a -->
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${permissions.contains(8L)}" class="dropdown-item" href="/vac/userprofile/advanced/prepareAEG"
+                                    th:utext="#{Header.UserProfile.PrepareAEG}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Priprava AEG</a -->
+                                
+                                
+                                
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-text-height headerNav-link" href="#" id="navbardropFontSize" data-toggle="dropdown" data-parent="#navbarSupportedContent" title="Velikost pisave"
+                                aria-label="Velikost pisave"></a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right" style="font-size: 14px">
+                                <a class="dropdown-item" style="font-size: 14px;" href="#" onclick="changeFontSize('14px', true)">Privzeto</a>
+                                <a class="dropdown-item" style="font-size: 1.25em;" href="#" onclick="changeFontSize('1.25rem', true)">125%</a>
+                                <a class="dropdown-item" style="font-size: 1.50em;" href="#" onclick="changeFontSize('1.50rem', true)">150%</a>
+                                <a class="dropdown-item" style="font-size: 2.00em;" href="#" onclick="changeFontSize('2.00rem', true)">200%</a>
+                                <a class="dropdown-item" style="font-size: 14pt;" href="#" onclick="changeFontSize('14pt', true)">14pt</a>
+                                <a class="dropdown-item" style="font-size: 16pt;" href="#" onclick="changeFontSize('16pt', true)">16pt</a>
+                                <a class="dropdown-item" style="font-size: 18pt;" href="#" onclick="changeFontSize('18pt', true)">18pt</a>
+                                <a class="dropdown-item" style="font-size: 20pt;" href="#" onclick="changeFontSize('20pt', true)">20pt</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-font headerNav-link" href="#" id="navbardropFontFamily" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Vrsta pisave" title="Vrsta pisave"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Privzeto</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Arial</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Arial Bold', 'bold')">Arial bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana;" href="#" onclick="changeFontFamily('Verdana', 'normal')">Verdana</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Verdana Bold', 'bold')">Verdana bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexic;" href="#" onclick="changeFontFamily('OpenDyslexic', 'normal')">Open Dyslexic</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexicAlta;" href="#" onclick="changeFontFamily('OpenDyslexicAlta', 'normal')">Open Dyslexic Alta</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: DidactGothic;" href="#" onclick="changeFontFamily('DidactGothic', 'normal')">Didact Gothic</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-eye-plus headerNav-link" href="#" id="navbardropColorScheme" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Barvna shema" title="Barvna shema"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" href="#" onclick="switchStyle('default')" id="defualt">Privzeta barvna shema</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" onclick="switchStyle('blackOnWhite')" id="blackOnWhite" href="#">Črno na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:white!important;background-color:black!important" onclick="switchStyle('whiteOnBlack')" id="whiteOnBlack" href="#">Belo na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:beige!important" onclick="switchStyle('blackOnBeige')" id="blackOnBeige" href="#">Črno na bež</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:white!important" onclick="switchStyle('blueOnWhite')" id="blueOnWhite" href="#">Modro na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:green!important" onclick="switchStyle('blackOnGreen')" id="blackOnGreen" href="#">Črno na zelenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:yellow!important" onclick="switchStyle('blackOnYellow')" id="blackOnYellow" href="#">Črno na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:yellow!important" onclick="switchStyle('blueOnYellow')" id="blueOnYellow" href="#">Modro na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:yellow!important;background-color:blue!important" onclick="switchStyle('yellowOnBlue')" id="yellowOnBlue" href="#">Rumeno na modrem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:turquoise!important;background-color:black!important" onclick="switchStyle('turquoiseOnBlack')" id="turquoiseOnBlack"
+                                    href="#">Turkizna na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:pink!important" onclick="switchStyle('blackOnPink')" id="blackOnPink" href="#">Črna na roza</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=en" aria-label="Jezik: Angleški" title="Jezik: Angleški"
+                            onclick="return setLocale(&#39;en&#39;);">EN</a></span>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=sl" aria-label="Jezik: Slovenski" title="Jezik: Slovenski"
+                            onclick="return setLocale(&#39;sl&#39;);">SL</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class='navbar-shadow'>
+                <div class='master_op_center' style="padding-top: 0.05em;">
+
+                    <nav class="navbar navbar-expand-md navbar-light bg-light2">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                            aria-label="Glavni meni">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent2">-->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+                            <ul class="navbar-nav mr-auto mx-auto">
+                                <li class="nav-item active">
+                                    <div>
+                                        <a class="nav-link" href="/vac" aria-label="Prva stran" title="Prva stran">
+                                            <div style="width:120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-home'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Prva stran</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <!-- li class="nav-item" th:if="${permissions.contains(7L)}" -->
+                                
+                                <li class="nav-item dropdown">
+                                    <div>
+                                        <a class="nav-link" href="/vac/search/getfullTextPage" aria-label="Iskanje" title="Iskanje">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <!-- <a class="nav-link" href="#" th:aria-label="#{Header.Search}" data-toggle="dropdown" th:title="#{Header.Search}">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;" th:utext="#{Header.Search}">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="/vac/search/getfullTextPage" th:utext="#{FullTextSearch.Title}" style="font-size:1rem">Iskanje po besedilu</a>
+                                            <a class="dropdown-item" href="/vac/search/fieldSearch" th:utext="#{FieldSearch.Title}" style="font-size:1rem">Iskanje po poljih</a>
+                                            <a class="dropdown-item" href="/vac/search/archivePlanSearch" th:utext="#{ArchivePlanSearch.Title}" style="font-size:1rem">Iskanje po tektoniki arhiva</a>
+                                            <a class="dropdown-item" href="/vac/search/descriptorSearch" th:utext="#{DescriptorSearch.Title}" style="font-size:1rem">Iskanje po deskriptorjih</a>
+                                        </div> -->
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                <li class="nav-item">
+                                    <div>
+                                        <a class="nav-link" href="/vac/userhelp" aria-label="Pomoč" title="Pomoč">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-help'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Pomoč</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const link = document.getElementById('reportErrorLink');
+                                if (!link) return;
+
+                                link.addEventListener('click', async (event) => {
+                                    event.preventDefault();
+
+                                    try {
+                                        const elementToCapture = document.documentElement;
+
+                                        const canvas = await html2canvas(elementToCapture, {
+                                            useCORS: true,
+                                            backgroundColor: '#fff',
+                                        });
+
+                                        const dataUrl = canvas.toDataURL('image/png', 0.9);
+                                        sessionStorage.setItem('errorScreenshot', dataUrl);
+                                        window.location.href = link.getAttribute('href');
+                                    } catch (err) {
+                                        window.location.href = link.getAttribute('href');
+                                    }
+                                });
+                            });
+                        </script>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        </div>
+        <div id="pageBody" class="container-fluid">
+            <div class="row justify-content-start">
+                <div class="d-print-none leftmenu">
+                    <div id="addToWorkbookDialog" >
+                        <div>
+                            <div class="row form-group">
+                                <div class="col-sm-5">
+                                    <label class="form-control-label form-control-sm">Delovne mape:</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <select id="workbooks" class="form-control form-control-sm" title="Izberi delovno mapo." aria-label="Izberi delovno mapo.">
+                                        <option value="0">&lt;nova delovna mapa&gt;</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-5">
+                                    <label class="form-control-label form-control-sm">Ime:</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <input id="newWorkbookName" type="text" class="form-control form-control-sm" placeholder="Vnesite ime" />
+                                </div>
+                            </div>
+                            <div class="spacer7"></div>
+                            <input type="button" class="btn btn-primary" id="addToWorkbookDialog_ButtonCancel" value="Prekliči"
+                            onclick="workbookDialog.hide();">
+                            <input type="button" class="btn btn-primary" id="addToWorkbookDialog_ButtonOK" value="V redu"
+                            onclick="addToWorkbook();">
+                        </div>
+                    </div>
+                    <div id="wrapper" class="toggled tblbgr">
+                        <div>
+                            <div>
+                                <a href="#" onclick="filter(this);$(this).blur();return false;" class="lvl3">
+                                    <label class="glyph-filter"></label>&#160;&#160;
+                                    <span style="display: inline;" class="va_tb h6 c_leftmenu ">Omejitev pogleda</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="filterCancel(this);$(this).blur();return false;" class="lvl3">
+                                    <label class="glyph-filter-clear"></label>&#160;&#160;
+                                    <span style="display: inline;" class="va_tb h6 c_leftmenu ">Preklic omejitve</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="details(this);return false;" class="lvl3">
+                                    <label class="glyph-details"></label>&#160;&#160;
+                                    <span style="display: inline;" class="va_tb h6 c_leftmenu ">Prikaži podrobnosti</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="chooseWorkbook();return false;" class="lvl3">
+                                    <label class="glyph-to-workbook"></label>&#160;&#160;
+                                    <span style="display: inline;" class="va_tb h6 c_leftmenu ">Dodaj v delovno mapo</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="toPdf();$(this).blur();return false;" class="lvl3">
+                                    <label class="glyph-print"></label>&#160;&#160;
+                                    <span style="display: inline;" class="va_tb h6 c_leftmenu ">Natisni</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="/help/help.htm#iskanje" target="help" onclick="$(this).blur();" class="lvl3">
+                                    <label class="glyph-help-l"></label>&#160;&#160;
+                                    <span style="display: inline;" class="va_tb h6 c_leftmenu ">Pomoč</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="page" class="col-sm-10" style="min-height: 500px;"><!-- <div id="page" style="width: 60%;"> -->
+                    <div class="navbar-fixed-top" style="padding-right: 0; padding-left: 20px;">
+                        <div class="clearfix"></div>
+                        <div id="content">
+                            <form id="body" name="body" method="post" action="/vac/search/fullText" class="main_bg">
+                                <div>
+                                    <div class="inARow tblbgr-tabBorderRight d-print-none"><h5 style="padding: 0 10px 0 10px;"><a href="/vac/search/getfullTextPage">Iskanje po besedilu</a></h5></div>
+                                    <div class="inARow tblbgr-tabBorderRight d-print-none"><h5 style="padding: 0 10px 0 10px;"><a href="/vac/search/fieldSearch">Iskanje po poljih</a></h5></div>
+                                    <h3 class="inARow tblbgr-tabBorderRight d-print-none" style="padding:0 10px 10px;margin-bottom:0px;">Iskanje po tektoniki arhiva</h3>
+<!--                                    <div class="inARow d-print-none"><h5 style="padding: 0 10px 0 10px;"><a href="/vac/search/descriptorSearch" th:utext="#{DescriptorSearch.Title}">Iskanje po deskriptorjih</a></h5></div>-->
+                                    <div class="tblbgr" style="min-height: 300px;padding:20px;">
+                                        <!-- <a class="nav-link jstree-icon-17 inARow" href="#"></a><span class="inARow" style="font-size:1rem;">Arhiv Republike Slovenije</span>-->
+                                        <div id="archivePlanTree" class="d-print-inline" style="font-size:1rem"><ul id="-1"></ul></div>
+                                        <script>
+/*<![CDATA[*/
+var rootId = 1000001;
+var rootText = "Vzajemna podatkovna zbirka slovenskih arhivov";
+var rootType = 17;
+var filterId = null;
+var filterText = null;
+var filterType = null;
+var loadingText = "Nalagam...";
+var addToWorkbookSuccess = "Izbrani rezultati so shranjeni.";
+var noItemSelected = "Izbrati morate popisno enoto.";
+var noFilterSet = "Ni nastavljene omejitve.";
+var msgArchPlanLimit = "Iskana PE je pregloboko v tektoniki in je na ta na\u010Din ni mo\u017Eno prikazati!";
+var workbookDialog = $("#addToWorkbookDialog");
+var workbooks = $("#workbooks");
+var newWorkbookName = $("#newWorkbookName");
+
+var isDoubleClicked = false;
+
+function filter(domObject) {
+    var id = $("#archivePlanTree").jstree("get_selected");
+    if(id == "") {
+        dialog(noItemSelected, null, null, null, null, false, false, true, false);
+        return;
+    }
+
+    var text = $('#archivePlanTree').jstree(true).get_node(id).text;
+    var type = $('#archivePlanTree').jstree(true).get_node(id).type;
+
+    inProgress(true);
+    try {
+        $.ajax({ // Send request
+            type: "post",
+            url: "/vac/search/archivePlanFilterAjax?id=" + id + "&type=" + type,
+            contentType : 'application/json; charset=utf-8',
+            dataType : 'json',
+            data : text,
+            success: function(response) {
+                initTree(id, text, type, loadingText, true);
+                filterId = id;
+                inProgress(false);
+            },
+            error: handleAjaxError
+        });
+    }
+    catch(err) {
+        inProgress(false);
+    }
+}
+
+function filterCancel(domObject) {
+    if(filterId == null) {
+        dialog(noFilterSet, null, null, null, null, false, false, true, false);
+        return;
+    }
+    inProgress(true);
+    try {
+        $.ajax({ // Send request
+            type: "post",
+            url: "/vac/search/archivePlanFilterAjax?id=-1&type=-1",
+            contentType : 'application/json; charset=utf-8',
+            dataType : 'json',
+            data : JSON.stringify(""),
+            success: function(response) {
+                initTree(rootId, rootText, rootType, loadingText, true);
+                filterId = null;
+                inProgress(false);
+            },
+            error: handleAjaxError
+        });
+    }
+    catch(err) {
+        inProgress(false);
+    }
+}
+
+function details(domObject) {
+    var id = $("#archivePlanTree").jstree("get_selected");
+    if(id == "") {
+        dialog(noItemSelected, null, null, null, null, false, false, true, false);
+        return;
+    }
+    if(String(id).indexOf("+") !== -1 || String(id).indexOf("-") !== -1) {
+        // First/previous/next/last page selected. Cancel.
+        return;
+    }
+    inProgress(true);
+    location.href = "details?id=" + id + "&text=" + encodeURIComponent($('#archivePlanTree').jstree(true).get_node(id).text);
+}
+
+function toPdf() {
+    /*var doc = new jsPDF();
+    doc.fromHTML($("#archivePlanTree").get(0), 20, 20, { width:500,lang:'sl' });
+    doc.save("Test.pdf");*/
+    window.print();
+}
+
+function addToWorkbook() {
+    if(workbooks.val() <= 0 && newWorkbookName.val().trim() === "") {
+        return;
+    }
+    
+    workbookDialog.hide();
+    workbookDialog.attr("aria-hidden",true);
+    inProgress(true);
+    try {
+        var ids = $("#archivePlanTree").jstree("get_selected");
+        
+        $.ajax({
+            type: "post",
+            url: "/vac/search/addToWorkbookAjax?id=" + workbooks.val() + "&name=" + newWorkbookName.val(),
+            contentType : 'application/json; charset=utf-8',
+            dataType : 'json',
+            data : JSON.stringify(ids),
+            success: function(response){
+                if(!response.error) {
+                    inProgress(false);
+                    dialog(addToWorkbookSuccess, null, null, null, null, false, false, true, false);
+                }
+                else {
+                    inProgress(false);
+                    dialog(response.errorDescription, null, null, null, null, false, false, true, false);
+                }
+
+                if(response.id > 0) {
+                    workbooks.append(new Option(newWorkbookName.val(), response.id));
+                }
+                workbooks.val(0);
+                newWorkbookName.val("");
+                
+                return false;
+            },
+            error: handleAjaxError
+        });
+    }
+    catch(err) {
+        inProgress(false);
+    }
+}
+
+function chooseWorkbook() {
+    var id = $("#archivePlanTree").jstree("get_selected");
+    if(id == "") {
+        dialog(noItemSelected, null, null, null, null, false, false, true, false);
+        return;
+    }
+    
+    workbookDialog.show();
+    workbookDialog.attr("aria-hidden",false);
+    positionOnCenter(workbookDialog);
+}
+
+$(window).resize(function() {
+    positionOnCenter(workbookDialog);
+});
+
+$(function () {
+    if(filterId == null) {
+        initTree(rootId, rootText, rootType, loadingText, false);
+    }
+    else {
+        initTree(filterId, filterText, filterType, loadingText, false);
+    }
+});
+
+function initTree(rootId, rootText, rootType, loadingText, reinit) {
+    if(reinit) {
+        $("#archivePlanTree").jstree('destroy');
+    }
+    $('#archivePlanTree').jstree({
+        "plugins" : ["types"],
+        'core': {
+            'dblclick_toggle' : false,
+            'data': [{
+                "id": rootId,
+                "text": rootText,
+                "type": rootType,
+                "data":"0", //page_index
+                "state": {
+                "opened": false,
+                "selected":false
+                },
+                "children": [{
+                    "id": rootId + "_dummy",
+                    "text": loadingText,
+                    "type": 0
+                }]
+            }],
+            'check_callback': true
+        },
+        "types" : {
+            "pgUp" : { "icon" : "jstree-icon-pgUp" },
+            "pgDown" : { "icon" : "jstree-icon-pgDown" },
+            "0" : { "icon" : "jstree-icon-0" },
+            "1" : { "icon" : "jstree-icon-1" },
+            "2" : { "icon" : "jstree-icon-2" },
+            "3" : { "icon" : "jstree-icon-3" },
+            "4" : { "icon" : "jstree-icon-4" },
+            "5" : { "icon" : "jstree-icon-5" },
+            "6" : { "icon" : "jstree-icon-6" },
+            "7" : { "icon" : "jstree-icon-7" },
+            "8" : { "icon" : "jstree-icon-8" },
+            "9" : { "icon" : "jstree-icon-9" },
+            "10" : { "icon" : "jstree-icon-10" },
+            "11" : { "icon" : "jstree-icon-11" },
+            "12" : { "icon" : "jstree-icon-12" },
+            "13" : { "icon" : "jstree-icon-13" },
+            "14" : { "icon" : "jstree-icon-14" },
+            "15" : { "icon" : "jstree-icon-15" },
+            "16" : { "icon" : "jstree-icon-16" },
+            "17" : { "icon" : "jstree-icon-17" },
+            "18" : { "icon" : "jstree-icon-18" },
+            "19" : { "icon" : "jstree-icon-19" },
+            "20" : { "icon" : "jstree-icon-20" },
+            "21" : { "icon" : "jstree-icon-21" },
+            "22" : { "icon" : "jstree-icon-22" },
+            "23" : { "icon" : "jstree-icon-23" },
+            "24" : { "icon" : "jstree-icon-24" }
+        }            
+    })
+    .on('before_open.jstree', function(e, data) {
+        isDoubleClicked = false;
+        replaceAndAddChildren(data.node);
+    })
+    .on('loaded.jstree', function(e, data) {
+        var url = new URL(window.location);
+        var path = url.searchParams.get("path");
+        if(path != null) {
+            ids = path.split(',');
+            expandNext();
+        }
+    });
+}
+
+var ids = null;
+var idsIndex = -1;
+var idsPage = 0;
+
+function expandNext() {
+    idsIndex++;
+    if(ids != null && idsIndex < ids.length) {
+        //$("#archivePlanTree").jstree(true).select_node(ids[idsIndex]);
+        $("#" + ids[idsIndex] + "_anchor").focus();
+        if ($("#archivePlanTree").jstree(true).get_node(ids[idsIndex], true) == false) {
+            // Item not found. Check if "Next 100" exists and click it.
+            idsIndex--;
+            idsPage++;
+            var idsNextPageId = ids[idsIndex] + "+" + idsPage;
+            if ($("#archivePlanTree").jstree(true).get_node(idsNextPageId, true) == false) {
+                dialog(msgArchPlanLimit, null, null, null, null, false, false, true, false);
+            }
+            $("#archivePlanTree").jstree(true).open_node(idsNextPageId);
+            return;
+        }
+        $("#archivePlanTree").jstree(true).open_node(ids[idsIndex]);
+    }
+}
+
+function replaceAndAddChildren(node) {
+    //if(working) return false;
+    try {
+        var id = String(node.id);
+        var dummyChild = $('#archivePlanTree').jstree(true).get_node(id + "_dummy", true);
+        var pageChange = false;
+        var pageIndex = 0;
+        var moveForward = false;
+        if(id.indexOf("--") !== -1) { // goto first page
+            pageIndex = 0;
+            id = id.replace("--", "");
+            pageChange = true;
+        }
+        else if(id.indexOf("-") !== -1) { // goto previous page
+            var parts = id.split("-");
+            id = parts[0];
+            pageIndex = parseInt(parts[1]);
+            pageChange = true;
+        }
+        else if(id.indexOf("++") !== -1) { // goto next page
+            var parts = id.split("++");
+            id = parts[0];
+            pageIndex = parseInt(parts[1]);
+            pageChange = true;
+            moveForward = true;
+        }
+        else if(id.indexOf("+") !== -1) { // goto last page
+            var parts = id.split("+");
+            id = parts[0];
+            pageIndex = parseInt(parts[1]);
+            pageChange = true;
+            moveForward = true;
+        }
+        else if(dummyChild[0] == null) {
+            return;
+        }
+
+        inProgress(true);
+        $("#archivePlanTree").jstree(true).delete_node(dummyChild);
+        inProgress(true);
+
+        // Add waiting class to the node.
+        $('#archivePlanTree').jstree(true).get_node(id, true).addClass("jstree-loading");
+    
+        replaceAndAddChildrenWithDelay(node, dummyChild, pageChange, id, pageIndex, moveForward);
+    }
+    catch(err) {
+        inProgress(false);
+    }
+}
+
+function replaceAndAddChildrenWithDelay(node, dummyChild, pageChange, id, pageIndex, moveForward) {
+    try {
+        var href = "/vac/search/archivePlanSearchAjax?id=" + id + "&page=" + pageIndex;
+        
+        $.ajax({ // Send request
+            type: "get",
+            url: href,
+            success: function(response) {
+                if(pageChange) {
+                    id = node.parent;
+                    var parentNode = $('#archivePlanTree').jstree(true).get_node(id);
+                    // Clear children
+                    parentNode.children = [];
+                }
+                var lastNode = null;
+                for(var i = 0; i < response.length; i++) {
+                    var newNode = response[i];
+                    lastNode = newNode;
+                    $('#archivePlanTree').jstree('create_node', $("#" + id), newNode, "last", null, false);
+                }
+                inProgress(false);
+                if(lastNode != null && moveForward) {
+                    $("#archivePlanTree").jstree(true).get_node(lastNode.id, true).children('.jstree-anchor').focus();
+                }
+
+                var nodeAsDom = $('#archivePlanTree').jstree(true).get_node(id, true);
+                if($(nodeAsDom).hasClass("jstree-loading")) {
+                    $(nodeAsDom).removeClass("jstree-loading");
+                }
+                //$("#archivePlanTree").jstree(true).select_node(node.parent);
+
+                expandNext();
+            },
+            error: handleAjaxError
+        });
+    }
+    catch(err) {
+        inProgress(false);
+    }
+}
+
+$('#archivePlanTree').on("dblclick", function (e) {
+    nodeSelected(e);
+});
+
+$('#archivePlanTree').on("keydown", function (e) {
+    if (e.keyCode == 13) {
+        nodeSelected(e);
+    }
+});
+
+var selectedNodeId;
+function nodeSelected(e) {
+    try {
+        isDoubleClicked = true;
+        // Check if clicked item is not plus icon (I).
+        if(e.target.tagName.toUpperCase() != "I") {
+            var li = $(e.target).closest("li");
+    
+            // Deselect node if page is activated using history.back from the UoD details page.
+            selectedNodeId = li[0].id;
+
+            if(String(selectedNodeId).indexOf("+") !== -1 || String(selectedNodeId).indexOf("-") !== -1) {
+                // First/previous/next/last page selected. Cancel.
+                isDoubleClicked = false;
+
+                // expand children
+                //replaceAndAddChildren(li[0]);
+                
+                return;
+            }
+
+            inProgress(true);
+            location.href = "details?id=" + selectedNodeId + "&text=" + encodeURIComponent($('#archivePlanTree').jstree(true).get_node(selectedNodeId).text);
+        }
+    }
+    catch(err) {
+        inProgress(false);
+    }
+}
+
+// reset cursor to default when page is activated (on history.back).
+visibilityHandler(function(){
+    if(visibilityHandler()) {
+        inProgress(false);
+        $('#archivePlanTree').jstree(true).deselect_node(selectedNodeId);
+    };
+});
+
+//$("archivePlanTree").jstree().bind("before_open.jstree", function(event, data) { alert("OK"); } ); 
+    
+/*$(function () {
+    $('#archivePlanTree').jstree({
+        "plugins" : ["types"],
+        'core': {
+            'data': [{
+                "id": 1,
+                "text": "test",
+                "type":"10",
+                "state": {
+                "opened": false,
+                "selected":false
+                },
+                //"children":true
+                "children": [{
+                    "id": -1
+                }]
+            }],
+            'check_callback': true
+        },
+        "types" : {
+            "10" : { "icon" : "jstree-icon-10" }
+        }            
+    });
+});*/
+
+/*$('#archivePlanTree').jstree({
+    "plugins" : ["types"],
+    "core" : {
+        "data" : {
+            "url" : function (node) {
+                if(node.id === "#") {
+                    return "/vac/search/archivePlanSearchAjax?id=1&page=0";
+                }
+                else {
+                    //alert("data: " + node.data);
+                    var id = node.id;
+                    //alert("id: " + id);
+                    var pageIndex = parseInt(node.data);
+                    var pageMove = "";
+                    //alert("pageIndex: " + pageIndex);
+                    if(id.indexOf("-") !== -1) {
+                        pageMove = "Page";
+                        pageIndex--;
+                        id = id.replace("-", "");
+                    }
+                    if(id.indexOf("+") !== -1) {
+                        pageMove = "Page";
+                        pageIndex++;
+                        id = id.replace("+", "");
+                    }
+
+                    //alert("/vac/search/archivePlanSearchAjax?id=" + id + "&page=" + pageIndex);
+                    return "/vac/search/archivePlanSearch" + pageMove + "Ajax?id=" + id + "&page=" + pageIndex;
+                }
+            },
+            "data" : function (node) {
+                //alert(JSON.stringify(node));
+                var id = node.id.toString();
+                if(id.indexOf("-") !== -1) {
+                    id = id.replace("-", "");
+                }
+                if(id.indexOf("+") !== -1) {
+                    id = id.replace("+", "");
+                }
+                //alert(id)
+                return { "id" : id };
+            }
+        }
+    },
+    "types" : {
+        "1" : { "icon" : "jstree-icon-1" },
+        "2" : { "icon" : "jstree-icon-2" },
+        "3" : { "icon" : "jstree-icon-3" },
+        "4" : { "icon" : "jstree-icon-4" },
+        "5" : { "icon" : "jstree-icon-5" },
+        "6" : { "icon" : "jstree-icon-6" },
+        "7" : { "icon" : "jstree-icon-7" },
+        "8" : { "icon" : "jstree-icon-8" },
+        "9" : { "icon" : "jstree-icon-9" },
+        "10" : { "icon" : "jstree-icon-10" },
+        "11" : { "icon" : "jstree-icon-11" },
+        "12" : { "icon" : "jstree-icon-12" },
+        "13" : { "icon" : "jstree-icon-13" },
+        "14" : { "icon" : "jstree-icon-14" },
+        "15" : { "icon" : "jstree-icon-15" },
+        "16" : { "icon" : "jstree-icon-16" },
+        "17" : { "icon" : "jstree-icon-17" },
+        "18" : { "icon" : "jstree-icon-18" },
+        "19" : { "icon" : "jstree-icon-19" },
+        "20" : { "icon" : "jstree-icon-20" },
+        "21" : { "icon" : "jstree-icon-21" },
+        "22" : { "icon" : "jstree-icon-22" },
+        "23" : { "icon" : "jstree-icon-23" },
+        "24" : { "icon" : "jstree-icon-24" }
+    }
+});*/
+/*]]>*/
+                                        </script>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer start -->
+        <div id="pageFooter" class="">
+            <div><div style="background-color: #333333;">
+
+                <!-- Opozorilo o piškotkih -->
+                <footer id="footerCookiesWarning">
+                    <div id="cookieConsent">
+                        <div>Virtualna arhivska čitalnica (VAČ) uporablja spletne piškotke in ostale elemente z namenom zagotavljanja polnega delovanja spletne storitve in boljše uporabniške izkušnje. Ali se strinjate z njihovo uporabo?
+                            <a href="#" class="cookieConsentNOK" tabindex="0"
+                               onclick="javascript:cookieConsentNOK();">Ne strinjam se</a>
+                            <a href="#" class="cookieConsentOK" tabindex="0"
+                               onclick="javascript:cookieConsentOK();">Strinjam se</a>
+                        </div>
+                        <a tabindex="0">Več o tem.</a>
+                    </div>
+                </footer>
+
+                <div id="footerMain" class="d-print-none">
+
+                    <!-- Navigacijske povezave -->
+                    <footer class="footer2">
+                        <div cellspacing='0' class='betatestwarning'></div>
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="row">
+                                    <a href="/vac">Prva stran</a>&#160;|&#160;
+                                    <a href="/vac/search/getfullTextPage">Iskanje</a>&#160;|&#160;
+                                    <a href="/vac/cart/list">Košarica</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutVAC">O VAČ</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutArchives">O arhivih</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/vacNewsUsers">Novice</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/accessibilityStatement"
+                                       title="Izjava o dostopnosti"
+                                       aria-label="Izjava o dostopnosti">Dostopnost</a>&#160;|&#160;
+                                    <a href="/vac/userhelp">Pomoč</a>&#160;|&#160;
+                                    <a href="/vac/vacindex">Zemljevid spletne strani</a>
+                                </div>
+                                <div class="row h5"></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Kontakt, povezave, arhivi -->
+                    <footer class="footer2">
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="ce-bodytext">
+                                    <div style="padding:0 5px; width:100%; box-sizing:border-box !important; float:left;">
+
+                                        <!-- Kontakt -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <ul role="list">
+                                                <li style="list-style:none;"><span class="row h6b">Kontakt </span></li>
+                                                <li style="list-style:none;"><span class="row h7">PODPORA VAČ</span></li>
+                                                <li style="list-style:none;"><span class="row h7">ARHIV REPUBLIKE SLOVENIJE</span></li>
+                                                <li style="list-style:none;"><span class="row h7">Poljanska 40</span></li>
+                                                <li style="list-style:none;"><span class="row h7">1102 Ljubljana</span></li>
+                                                <li style="list-style:none;"><span class="row h7">T:&nbsp;<a href="tel:+38612414200">01 2414 200 &phone;</a></span></li>
+                                                <li style="list-style:none;"><span class="row h7">F: 01 2414 276</span></li>
+                                                <li style="list-style:none;"><span class="row h7">E:&nbsp;<a href="mailto:citalnica.ars@gov.si">citalnica.ars@gov.si</a></span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Uporabne povezave -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Uporabne povezave</span>
+                                            <a class="row h7" href="/vac/userhelp"><span>Pogosta vprašanja</span></a>
+                                            <a class="row h7" href="https://www.gov.si/teme/javna-arhivska-mreza/"><span>Slovenska javna arhivska mreža</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Piškotki</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Obdelava osebnih podatkov</span></a>
+                                            <a class="row h7" href="/vac/userhelp/accessibilityStatement"><span>Dostopnost spletne strani</span></a>
+                                        </div>
+
+                                        <!-- Spletne strani arhivov -->
+                                        <div style="padding:0 5px; width:34%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Spletne strani arhivov</span>
+                                            <a class="row h7" href="https://www.gov.si/drzavni-organi/organi-v-sestavi/arhiv/"><span>Arhiv Republike Slovenije</span></a>
+                                            <a class="row h7" href="https://arhiv-koper.si/"><span>Pokrajinski arhiv Koper</span></a>
+                                            <a class="row h7" href="https://www.pokarh-mb.si/"><span>Pokrajinski arhiv Maribor</span></a>
+                                            <a class="row h7" href="https://www.pa-ng.si/"><span>Pokrajinski arhiv v Novi Gorici</span></a>
+                                            <a class="row h7" href="https://zac.si/"><span>Zgodovinski arhiv Celje</span></a>
+                                            <a class="row h7" href="https://www.zal-lj.si/"><span>Zgodovinski arhiv Ljubljana</span></a>
+                                            <a class="row h7" href="https://www.arhiv-ptuj.si/"><span>Zgodovinski arhiv Ptuj</span></a>
+                                            <a class="row h7" href="https://www.archivesportaleurope.net/"><span>Arhivski portal Evrope</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Verzija -->
+                        <table width="100%">
+                            <tr>
+                                <!-- td><span style="display: inline; float: left;">&#169; 2018 Arhiv Republike Slovenije</span> <span
+                                    style="display: inline; float: right;"><a href="http://www.arhiv.gov.si/si/splosno/kolofon/kolofon/">Kolofon</a>&#160;|&#160;<a
+                                        href="http://www.arhiv.gov.si/si/splosno/piskotki/">Piškotki</a></span></td -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row h7" style="display:inline; float:right;">
+                                        <div ondblclick="showVerDetails(); return false;">
+                                            <label>VAČ</label>&nbsp;
+                                            <strong>2.20_5.5</strong>
+                                        </div>
+                                        <div style="display:none" id="vacVersionDetails">
+                                            <strong>Podrobnosti o verziji</strong><br/><br/>
+                                            <table style="border:0;">
+                                                <tr align="left">
+                                                    <td>Verzija:</td>
+                                                    <td><strong>2.20_5.5</strong></td>
+                                                </tr>
+                                                <tr align='left'><td>Datum:</td><td><strong>2026-09-16T13:42:32+02:00</strong></td></tr><tr align='left'><td>Interni ID:</td><td><strong>84d567d8</strong></td></tr><tr align='left'><td>Verzioniranje:</td><td><strong>nepopolno</strong></td></tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <script>
+                            /*<![CDATA[*/
+                            function showVerDetails() {
+                                if (!window.event.ctrlKey) {
+                                    dialog($("#vacVersionDetails")[0].innerHTML.trim(), null, null, null, null, false, false, true, false);
+                                } else {
+                                    $.ajax({
+                                        cache: false,
+                                        type: 'get',
+                                        url: '/vac/snfo',
+                                        success: function(response) {
+                                            dialog(response.data, null, null, null, null, false, false, true, false);
+                                        },
+                                        error: handleAjaxError
+                                    });
+                                }
+                            }
+                            /*]]>*/
+                        </script>
+                    </footer>
+
+                </div><!-- /footerMain -->
+
+
+<!--                <div th:if="${@environment.getProperty('vac.ai.widget.enabled', 'false') == 'true' && session.userBean != null && session.userBean.userId != 0 && session.userBean.loggedIn}"-->
+<!--                     id="vac-chat-widget"-->
+<!--                     class="d-print-none"-->
+<!--                     th:attr="data-user-id=${session.userBean.userId},-->
+<!--                              data-user-type=${session.userBean.advancedUser ? 'NU' : 'KU'},-->
+<!--                              data-open-label=#{VirtualAssistant.Chat.Open},-->
+<!--                              data-close-label=#{VirtualAssistant.Chat.Close}">-->
+<!--                    <button id="vac-chat-toggle" type="button" onclick="vacChatToggle()"-->
+<!--                            aria-controls="vac-chat-window" aria-expanded="false"-->
+<!--                            th:title="#{VirtualAssistant.Chat.Open}"-->
+<!--                            th:aria-label="#{VirtualAssistant.Chat.Open}">💬</button>-->
+<!--                    <div id="vac-chat-window" role="dialog" aria-modal="false"-->
+<!--                         aria-labelledby="vac-chat-title" aria-hidden="true" style="display:none;">-->
+<!--                        <div id="vac-chat-header">-->
+<!--                            <span id="vac-chat-title">VAČ Asistent</span>-->
+<!--                            <button type="button" onclick="vacChatToggle()"-->
+<!--                                    th:title="#{VirtualAssistant.Chat.Close}"-->
+<!--                                    th:aria-label="#{VirtualAssistant.Chat.Close}">×</button>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-messages">-->
+<!--                            <div class="vac-msg-bot">Pozdravljeni! Sem virtualni asistent VAČ. Kako vam lahko pomagam?</div>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>-->
+<!--                        <div id="vac-chat-input">-->
+<!--                            <input type="text" id="vac-chat-text" placeholder="Vpišite vprašanje..."-->
+<!--                                   onkeypress="if(event.key==='Enter') vacChatSend()"/>-->
+<!--                            <button onclick="vacChatSend()">Pošlji</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Spodaj je natančna transkripcija vseh vrstic tabele **„Protocoll der Bau Parcellen“** (Seznam stavbnih parcel) za KO Griblje/Grüble iz leta 1825. Podatki so prepisani točno, kot so zapisani v rokopisu (vključno s črkovanjem, okrajšavami in pisanjem), pri čemer so stolpci razvrščeni po vaši zahtevi: **št. parcele**, **lastnik**, **stan/razred**, **prebivališče**, **Gattung (vrsta)**, **areal/meritve** in **opombe**.\n\n---\n\n### Transkripcija tabele\n\n| Št. | Lastnik (Ver und Zuname) | Stand. | Wohnort | Gattung | Areal / Meritve | Opombe |\n|:---:|:---|:---:|:---:|:---:|:---:|:---|\n| 1. | *Musterblatt der Gemeinde*<br>(naslovni zapis – ni lastnik) | — | — | — | — | — |\n| 2. | *[nečitljivo, mogoče* ***Kreuzer*** *ali podobno]* | 1. | 1. | 1. | 1142<br>7375 | — |\n| 3. | *[prazno]* | 1. | 1. | 1. | 960<br>6478 | — |\n| 4. | *[prazno]* | 1. | 1. | 1. | 1104 | — |\n| 5. | *[prazno]* | 1. | 1. | 1. | 962<br>+ 44 | — |\n| 6. | *[prazno]* | 1. | 1. | 1. | 427<br>669 | — |\n| 7. | *[prazno]* | 1. | 1. | 1. | 277 | — |\n| 8. | ***Lampič***<br>*[ali* ***Lampiz*** *?]* | 1. | 1. | 3. | 3349<br>15 / 469 | — |\n| 9. | ***St. Jos. Rukavina***<br>*[ali* ***Rukavin*** *?]* | — | — | — | — | — |\n| 10. | ***Marthaller***<br>*[ali* ***Martaller*** *?]*<br>*z dopisom:* „und 20 f.“ | — | — | — | 883 | — |\n| 11. | ***Hüttenberger***<br>*[velika pisava, obkroženo]* | — | — | — | — | — |\n| 12. | *[nečitljivo, mogoče ime začne se z* ***J*** *ali* ***G***]* | — | — | — | — | — |\n| 13. | ***J. Hüttenberger***<br>*[ali* ***Hillenberg*** *?]* | — | — | — | — | — |\n| 14. | ***Jos. Grah***<br>*[ali* ***Gras*** *?]* | — | — | — | — | — |\n| … | *(nadaljevanje na naslednji strani)* | | | | | |\n\n---\n\n### POMEMBNE OPOMBE IN ANALIZA:\n\n#### 1. **Opozorilo o gostilnah/trgovinah**\nV pregledanih vrsticah te strani **NI ZAPISA**, ki bi eksplicitno omenjal:\n*   **Gasthaus**, **Gastwirtschaft**, **Wirtshaus**, **Schenke**, **Krčma** ali **gostilno**.\n*   Tudi za trgovino (**Handlung** ali **Laden**) ni vidnega zapisa v stolpcu *Gattung*.\n\nVse stavbe so v tem odlomku označene le z številkami razredov (predvsem **1.** in enkrat **3.**), kar kaže na navadne stanovanjske hiše (Wohnhäuser) ali gospodarske poslopja, ne pa na javne gostilne. Če bi bila prisotna gostilna, bi bila v stolpcu *Gattung* navadno zapisana beseda **„Wirthschaft“**, **„Schenke“** ali **„Gasthaus“**.\n\n#### 2. **Opombe k posameznim vnosom**\n*   **Vrsta 1:** Vsebuje naslov **„Musterblatt der Gemeinde“** (Vzorec liste občine). To je zagotovo naslovni zapis, ne lastnik.\n*   **Vrsta 8:** Pri imenu je zapisano **„Lampič“** (slovenski priimek), v stolpcu *Gattung* pa številka **3.** (morda drugačen tip stavbe, npr. kmetijsko poslopje).\n*   **Vrsta 10:** Pri priimku **„Marthaller“** (ali **Martaller**) je dodan zapis **„und 20 f.“** (in 20 florenov/kronen) – verjetno davek, dolg ali vrednost.\n*   **Vrsta 11:** Ime **„Hüttenberger“** je zapisano z veliko, okrasno pisavo in **obkroženo** (verjetno pomemben lastnik, morda župan ali bogatejši meščan).\n*   **Desni rob:** Vidne so ročne aritmetične operacije (številke **869, 112, 389, 1241, 1735, 1214** itd.), ki so verjetno kasnejše kontrolne vsote (Summe) za davek (Steuer) ali površino, ne pa del originalne tabele.\n\n#### 3. **Nejasnosti v branju (paleografija)**\nZaradi starejšega kurzivnega pisja (Kurrentschrift) so nekateri priimki težko berljivi:\n*   Vrsta 2: Lahko gre za **Kreuzer**, **Krautzer** ali podobno.\n*   Vrsta 9: Mogoče **Rukavina**, **Rukavin** ali **Rekawin**.\n*   Vrsta 13: Mogoče **Hüttenberger** (ponovitev), **Hillenberg** ali **Hollenberger**.\n*   Vrsta 14: **Grah** ali **Gras** (slovenski priimek).\n\n**Sklep:** Na tej strani dokumenta ni bila najdena nobena gostilna (taverna) niti trgovina. Vsi vnosi se nanašajo na zasebne stavbne parcele (Bau Parcellen) navadnih prebivalcev vasi Griblje (Grüble).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790169604,
+  "id": "202609232119074938d0a9c2bf438a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609232119074938d0a9c2bf438a",
+  "usage": {
+    "completion_tokens": 1662,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1768,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3430
+  }
+}

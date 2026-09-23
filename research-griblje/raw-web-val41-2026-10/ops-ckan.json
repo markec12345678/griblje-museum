@@ -1,0 +1,1130 @@
+{
+    "help": "https://podatki.gov.si/api/3/action/help_show?name=package_search",
+    "success": true,
+    "result": {
+        "count": 1,
+        "sort": "score desc, popularity desc, name asc",
+        "facets": {},
+        "results": [
+            {
+                "vrsta_pravne_podlage": "",
+                "license_title": "",
+                "maintainer": null,
+                "licence": "/",
+                "temporal_coverage-from": "1/1/1817",
+                "relationships_as_object": [],
+                "tag_string": "arhiv, davek, kmetijstvo, zemlji\u0161ki kataster, zgodovina, zgodovinska geografija",
+                "publisher": "MINISTRSTVO ZA KULTURO ARHIV REPUBLIKE SLOVENIJE",
+                "private": false,
+                "revision_timestamp": "2023-01-17T13:50:11.503525",
+                "notification_recipient": "oba",
+                "foi-email": "alenka.kacicnik@gov.si",
+                "dostopnost_zbirke": "Na voljo je spletni vpogled v podatke",
+                "id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                "metadata_created": "2018-03-07T14:04:30.969594",
+                "municipal": "false",
+                "pogoji_licence": "/",
+                "metadata_modified": "2025-08-13T11:59:21.877012",
+                "author": null,
+                "author_email": null,
+                "geographic_coverage": "Slovenija",
+                "state": "active",
+                "version": null,
+                "archiver": {
+                    "status": "Archived successfully",
+                    "is_broken": false,
+                    "reason": "",
+                    "status_id": 0
+                },
+                "opsi_tip": "1",
+                "license_id": "",
+                "type": "dataset",
+                "unpublished": "false",
+                "resources": [
+                    {
+                        "hash": "",
+                        "description": "spletna stran Arhiv RS",
+                        "created": "2018-03-07T15:04:31.033480",
+                        "url": "http://www.arhiv.gov.si/",
+                        "pogostost_osvezevanja": "po potrebi",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.473115', 'openness_score': 0, 'archival_timestamp': '2025-08-13T12:20:53.621568', 'format': u'HTML', 'created': '2018-03-07T15:04:32.048108', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 75,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T12:20:53.621568', 'cache_filepath': u'/var/ckan/resource_cache/81/81624a30-2549-43a4-928e-c531b7d77b3f/resource', 'last_success': '2025-08-13T12:20:53.621568', 'size': u'43838', 'is_broken': False, 'failure_count': 0, 'etag': u'\"4d7408643b6a0ad511546aca52b85693\"', 'status': 'Archived successfully', 'url_redirected_to': u'https://www.gov.si/drzavni-organi/organi-v-sestavi/arhiv/', 'hash': u'2be4e6dc3b278db4293f25d33a968f2fbc4f184c', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2023-01-20T12:55:58.138512', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/81/81624a30-2549-43a4-928e-c531b7d77b3f/resource', 'created': '2018-03-07T15:04:32.587065', 'first_failure': None}",
+                        "url_type": "",
+                        "date": "",
+                        "position": 0,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "81624a30-2549-43a4-928e-c531b7d77b3f",
+                        "resource_type": "documentation"
+                    },
+                    {
+                        "hash": "",
+                        "description": "Navodila za iskanje po sistemu VA\u010c",
+                        "created": "2022-04-22T10:09:43.701214",
+                        "url": "https://vac.sjas.gov.si/vac/userhelp/aboutVAC",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.502900', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:06.008213', 'format': u'HTML', 'created': '2022-04-22T10:09:54.455111', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 19,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:06.008213', 'cache_filepath': u'/var/ckan/resource_cache/88/88b8bf8c-ed8d-419c-ad60-1fd1d201ba26/aboutVAC', 'last_success': '2025-08-13T13:56:06.008213', 'size': u'2179831', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'3500af2d42ff241ab876e11fc5524bd722a77c99', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/88/88b8bf8c-ed8d-419c-ad60-1fd1d201ba26/aboutVAC', 'created': '2022-04-22T10:09:47.841613', 'first_failure': None}",
+                        "url_type": "",
+                        "position": 1,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "88b8bf8c-ed8d-419c-ad60-1fd1d201ba26",
+                        "resource_type": "documentation"
+                    },
+                    {
+                        "hash": "",
+                        "description": "spletna stran Archives Portal Europe",
+                        "created": "2023-01-11T10:10:00.987445",
+                        "url": "https://www.archivesportaleurope.net/",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.524982', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:08.054621', 'format': u'HTML', 'created': '2023-01-11T10:10:27.216999', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:08.054621', 'cache_filepath': u'/var/ckan/resource_cache/04/0430140f-9c3a-4e82-a5e3-33602f581a3b/resource', 'last_success': '2025-08-13T13:56:08.054621', 'size': u'92868', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'4e84d7d3769d6bc204f955542f0ba2471a904303', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/04/0430140f-9c3a-4e82-a5e3-33602f581a3b/resource', 'created': '2023-01-11T10:10:13.222767', 'first_failure': None}",
+                        "url_type": "",
+                        "position": 2,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "0430140f-9c3a-4e82-a5e3-33602f581a3b",
+                        "resource_type": "documentation"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 176 Franciscejski kataster za Kranjsko, 1823-1869",
+                        "created": "2018-03-07T15:04:31.033495",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23253",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.548459', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:08.564582', 'format': u'HTML', 'created': '2018-03-07T15:04:32.057588', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:08.564582', 'cache_filepath': u'/var/ckan/resource_cache/1b/1bce8be4-c865-4cb3-9f81-4ad907c72106/details', 'last_success': '2025-08-13T13:56:08.564582', 'size': u'110087', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'23e4a0ec853636f2412e2953c0767d0b2a3ff898', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/1b/1bce8be4-c865-4cb3-9f81-4ad907c72106/details', 'created': '2018-03-07T15:04:33.060214', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 3,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "1bce8be4-c865-4cb3-9f81-4ad907c72106",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 177 Franciscejski kataster za \u0160tajersko, 1823-1869",
+                        "created": "2018-03-07T15:04:31.033509",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23254",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.572041', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:09.027269', 'format': u'HTML', 'created': '2018-03-07T15:04:32.083610', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 189,
+                            "recent": 5
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:09.027269', 'cache_filepath': u'/var/ckan/resource_cache/fc/fc63377d-1377-4a6b-9d5a-1a9b30ac6295/details', 'last_success': '2025-08-13T13:56:09.027269', 'size': u'111499', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'd8f20a20780e6ad82bdef0da873c5021374fe7ce', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/fc/fc63377d-1377-4a6b-9d5a-1a9b30ac6295/details', 'created': '2018-03-07T15:04:34.384326', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 4,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "fc63377d-1377-4a6b-9d5a-1a9b30ac6295",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 178 Franciscejski kataster za Koro\u0161ko, 1823-1869",
+                        "created": "2018-03-07T15:04:31.033504",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23255",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.592284', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:09.507127', 'format': u'HTML', 'created': '2018-03-07T15:04:32.074607', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 21,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:09.507127', 'cache_filepath': u'/var/ckan/resource_cache/1b/1b0722d1-1490-4eb8-b623-d07de4587b69/details', 'last_success': '2025-08-13T13:56:09.507127', 'size': u'93245', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'4bd4b37e2a4ba7ce49b3849201663704de34960c', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/1b/1b0722d1-1490-4eb8-b623-d07de4587b69/details', 'created': '2018-03-07T15:04:33.929601', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 5,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "1b0722d1-1490-4eb8-b623-d07de4587b69",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 179 Franciscejski kataster za Primorsko, 1811-1869",
+                        "created": "2018-03-07T15:04:31.033513",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23256",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.612838', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:09.956898', 'format': u'HTML', 'created': '2018-03-07T15:04:32.093175', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 108,
+                            "recent": 12
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:09.956898', 'cache_filepath': u'/var/ckan/resource_cache/f1/f16211d5-ea46-4dcf-b842-f5637dbdad66/details', 'last_success': '2025-08-13T13:56:09.956898', 'size': u'91360', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'8b12787880f69cde97042ba08b1f008d6f85acad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/f1/f16211d5-ea46-4dcf-b842-f5637dbdad66/details', 'created': '2018-03-07T15:04:34.822861', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 6,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "f16211d5-ea46-4dcf-b842-f5637dbdad66",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 180 Kataster za Prekmurje, 1858-1860",
+                        "created": "2018-03-07T15:04:31.033517",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23257",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.643163', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:10.398305', 'format': u'HTML', 'created': '2018-03-07T15:04:32.101454', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 25,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:10.398305', 'cache_filepath': u'/var/ckan/resource_cache/9d/9dd2dc5e-028a-41e5-a263-25469737b348/details', 'last_success': '2025-08-13T13:56:10.398305', 'size': u'91389', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'cc884fb34f79d8e7b34015186d9a9e03ef58ef26', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/9d/9dd2dc5e-028a-41e5-a263-25469737b348/details', 'created': '2018-03-07T15:04:35.275866', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 7,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "9dd2dc5e-028a-41e5-a263-25469737b348",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 181 Reambulan\u010dni kataster za Kranjsko, 1867-1882",
+                        "created": "2018-03-07T15:04:31.033500",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23258",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.681111', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:10.896137', 'format': u'HTML', 'created': '2018-03-07T15:04:32.066161', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 45,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:10.896137', 'cache_filepath': u'/var/ckan/resource_cache/ce/ce4d9292-6adf-46ec-bffd-25bc2ef6fa3e/details', 'last_success': '2025-08-13T13:56:10.896137', 'size': u'89104', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'30878c647edaee823d4fb7b56ddec1e47cb099bc', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/ce/ce4d9292-6adf-46ec-bffd-25bc2ef6fa3e/details', 'created': '2018-03-07T15:04:33.494385', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 8,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "ce4d9292-6adf-46ec-bffd-25bc2ef6fa3e",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 182 Reambulan\u010dni kataster za Koro\u0161ko, 1869",
+                        "created": "2018-03-07T15:04:31.033521",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23259",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.701490', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:11.337829', 'format': u'HTML', 'created': '2018-03-07T15:04:32.109940', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 4,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:11.337829', 'cache_filepath': u'/var/ckan/resource_cache/23/237aba9c-6e85-49a1-8ac1-e60ede3a8098/details', 'last_success': '2025-08-13T13:56:11.337829', 'size': u'87622', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'ab52382113f7c5ed256f31983dba010f23a1e151', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/23/237aba9c-6e85-49a1-8ac1-e60ede3a8098/details', 'created': '2018-03-07T15:04:35.715577', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 9,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "237aba9c-6e85-49a1-8ac1-e60ede3a8098",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 176 Franciscejski kataster za Kranjsko - tektonika arhiva",
+                        "created": "2022-04-22T09:35:48.997920",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23253",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.723078', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:11.580832', 'format': u'HTML', 'created': '2022-04-22T09:36:01.225320', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 3,
+                            "recent": 2
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:11.580832', 'cache_filepath': u'/var/ckan/resource_cache/72/72d0342a-cdd5-4f8a-bd97-d3f4139b05fd/archivePlanSearch', 'last_success': '2025-08-13T13:56:11.580832', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/72/72d0342a-cdd5-4f8a-bd97-d3f4139b05fd/archivePlanSearch', 'created': '2022-04-22T09:35:57.840509', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 10,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "72d0342a-cdd5-4f8a-bd97-d3f4139b05fd",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 177 Franciscejski kataster za \u0160tajersko - tektonika arhiva",
+                        "created": "2022-04-22T09:21:08.709743",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23254",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.746280', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:11.825113', 'format': u'HTML', 'created': '2022-04-22T09:21:17.549970', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 8,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:11.825113', 'cache_filepath': u'/var/ckan/resource_cache/82/82dbf834-bc31-4bd8-b43c-8d25cecaf81a/archivePlanSearch', 'last_success': '2025-08-13T13:56:11.825113', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/82/82dbf834-bc31-4bd8-b43c-8d25cecaf81a/archivePlanSearch', 'created': '2022-04-22T09:21:17.174108', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 11,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "82dbf834-bc31-4bd8-b43c-8d25cecaf81a",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 178 Franciscejski kataster za Koro\u0161ko - tektonika arhiva ",
+                        "created": "2022-04-22T09:35:48.997944",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23255",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.769460', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.070467', 'format': u'HTML', 'created': '2022-04-22T09:36:01.272811', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.070467', 'cache_filepath': u'/var/ckan/resource_cache/ba/ba1d8a40-397e-43cf-b65f-40f4c57b5a5c/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.070467', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/ba/ba1d8a40-397e-43cf-b65f-40f4c57b5a5c/archivePlanSearch', 'created': '2022-04-22T09:35:58.479862', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 12,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "ba1d8a40-397e-43cf-b65f-40f4c57b5a5c",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 179 Franciscejski kataster za Primorsko - tektonika arhiva",
+                        "created": "2022-04-22T09:35:48.997949",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23256",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.791105', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.299274', 'format': u'HTML', 'created': '2022-04-22T09:36:01.297937', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 3,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.299274', 'cache_filepath': u'/var/ckan/resource_cache/f9/f9b70c47-d6e7-417e-9677-feeb47e36703/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.299274', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/f9/f9b70c47-d6e7-417e-9677-feeb47e36703/archivePlanSearch', 'created': '2022-04-22T09:35:58.797450', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 13,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "f9b70c47-d6e7-417e-9677-feeb47e36703",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 180 Kataster za Prekmurje - tektonika arhiva ",
+                        "created": "2022-04-22T09:35:48.997953",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23257",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.809949', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.522096', 'format': u'HTML', 'created': '2022-04-22T09:36:01.321617', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 1,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.522096', 'cache_filepath': u'/var/ckan/resource_cache/b6/b62bd8a1-3373-4096-861c-01de3dcb1c90/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.522096', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/b6/b62bd8a1-3373-4096-861c-01de3dcb1c90/archivePlanSearch', 'created': '2022-04-22T09:35:59.128035', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 14,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "b62bd8a1-3373-4096-861c-01de3dcb1c90",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 181 Reambulan\u010dni kataster za Kranjsko - tektonika arhiva ",
+                        "created": "2022-04-22T09:35:48.997957",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23258",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.828701', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.745461', 'format': u'HTML', 'created': '2022-04-22T09:36:01.343562', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 1,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.745461', 'cache_filepath': u'/var/ckan/resource_cache/1b/1b2931a9-8cda-4667-ae11-b8da1c829ec1/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.745461', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/1b/1b2931a9-8cda-4667-ae11-b8da1c829ec1/archivePlanSearch', 'created': '2022-04-22T09:35:59.445212', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 15,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "1b2931a9-8cda-4667-ae11-b8da1c829ec1",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 182 Reambulan\u010dni kataster za Koro\u0161ko - tektonika arhiva  ",
+                        "created": "2022-04-22T09:35:48.997962",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23259",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.849525', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:13.030441', 'format': u'HTML', 'created': '2022-04-22T09:36:01.370362', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:13.030441', 'cache_filepath': u'/var/ckan/resource_cache/02/0238c330-700a-4b8f-99f3-753ceb4ca967/archivePlanSearch', 'last_success': '2025-08-13T13:56:13.030441', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/02/0238c330-700a-4b8f-99f3-753ceb4ca967/archivePlanSearch', 'created': '2022-04-22T09:35:59.976604', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 16,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "0238c330-700a-4b8f-99f3-753ceb4ca967",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "Archives Portal Europe - Franciscejski kataster",
+                        "created": "2023-01-11T10:08:51.170530",
+                        "url": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/?term=franciscejski%20kataster&institutions%5b%5d=Arhiv%20Republike%20Slovenije:393&using=default&sort=Relevance&context=listTab&page=1",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.871565', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:14.839105', 'format': u'HTML', 'created': '2023-01-11T10:09:21.734802', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:14.839105', 'cache_filepath': u'/var/ckan/resource_cache/f2/f28e72b9-1af4-4687-b257-176d6802f165/resource', 'last_success': '2025-08-13T13:56:14.839105', 'size': u'118472', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'6c8047d86b666685e39c009bfc75712901019e59', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/f2/f28e72b9-1af4-4687-b257-176d6802f165/resource', 'created': '2023-01-11T10:09:18.535845', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 17,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "f28e72b9-1af4-4687-b257-176d6802f165",
+                        "resource_type": "file"
+                    }
+                ],
+                "num_resources": 18,
+                "pogoji_licence_cena": "/",
+                "contact-email": "ars@gov.si",
+                "tags": [
+                    {
+                        "vocabulary_id": null,
+                        "display_name": "arhiv",
+                        "name": "arhiv",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "id": "5236b04a-9834-43c2-a30d-a2eda5cf9d7e"
+                    },
+                    {
+                        "vocabulary_id": null,
+                        "display_name": "davek",
+                        "name": "davek",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "id": "5532aa96-65e4-494a-8411-737bf52daf64"
+                    },
+                    {
+                        "vocabulary_id": null,
+                        "display_name": "kmetijstvo",
+                        "name": "kmetijstvo",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "id": "d5efad6a-c100-4b26-a34b-c08dda3b6104"
+                    },
+                    {
+                        "vocabulary_id": null,
+                        "display_name": "zemlji\u0161ki kataster",
+                        "name": "zemlji\u0161ki kataster",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "id": "96b264b2-b721-4976-b06a-d28bf652a71a"
+                    },
+                    {
+                        "vocabulary_id": null,
+                        "display_name": "zgodovina",
+                        "name": "zgodovina",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "id": "18a88020-efc6-4904-9072-42083f0cc1a8"
+                    },
+                    {
+                        "vocabulary_id": null,
+                        "display_name": "zgodovinska geografija",
+                        "name": "zgodovinska geografija",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "id": "f8e973c6-c2de-4a56-b132-50e9e9ec440e"
+                    }
+                ],
+                "title": "Digitalizirano arhivsko gradivo starih katastrov, SI AS 176, SI AS 177, SI AS 178, SI AS 179, SI AS 180, SI AS 181, SI AS 182",
+                "foi-name": "dr. Alenka Ka\u010di\u010dnik Gabri\u010d",
+                "temporal_coverage-to": "31/12/1882",
+                "povezanost_desc": "Ni povezave",
+                "accessRights": "public",
+                "tracking_summary": {
+                    "total": 6257,
+                    "recent": 128
+                },
+                "organization": {
+                    "description": "",
+                    "created": "2016-11-09T19:15:42.354648",
+                    "title": "MINISTRSTVO ZA KULTURO ARHIV REPUBLIKE SLOVENIJE",
+                    "name": "ministrstvo_za_kulturo_arhiv_republike_slovenije",
+                    "revision_timestamp": "2016-11-09T18:14:18.421616",
+                    "is_organization": true,
+                    "state": "active",
+                    "image_url": "",
+                    "revision_id": "361ed549-3111-4dac-bce8-50740eb5cd9b",
+                    "type": "organization",
+                    "id": "2399369000",
+                    "approval_status": "approved"
+                },
+                "sop_stevilka": "2006-01-1229, 2017-01-2140",
+                "groups": [],
+                "creator_user_id": "583",
+                "podrocje": "Finance in davki",
+                "additional_resources": [
+                    {
+                        "hash": "",
+                        "description": "spletna stran Arhiv RS",
+                        "created": "2018-03-07T15:04:31.033480",
+                        "url": "http://www.arhiv.gov.si/",
+                        "pogostost_osvezevanja": "po potrebi",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.473115', 'openness_score': 0, 'archival_timestamp': '2025-08-13T12:20:53.621568', 'format': u'HTML', 'created': '2018-03-07T15:04:32.048108', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 75,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T12:20:53.621568', 'cache_filepath': u'/var/ckan/resource_cache/81/81624a30-2549-43a4-928e-c531b7d77b3f/resource', 'last_success': '2025-08-13T12:20:53.621568', 'size': u'43838', 'is_broken': False, 'failure_count': 0, 'etag': u'\"4d7408643b6a0ad511546aca52b85693\"', 'status': 'Archived successfully', 'url_redirected_to': u'https://www.gov.si/drzavni-organi/organi-v-sestavi/arhiv/', 'hash': u'2be4e6dc3b278db4293f25d33a968f2fbc4f184c', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2023-01-20T12:55:58.138512', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/81/81624a30-2549-43a4-928e-c531b7d77b3f/resource', 'created': '2018-03-07T15:04:32.587065', 'first_failure': None}",
+                        "url_type": "",
+                        "date": "",
+                        "position": 0,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "81624a30-2549-43a4-928e-c531b7d77b3f",
+                        "resource_type": "documentation"
+                    },
+                    {
+                        "hash": "",
+                        "description": "Navodila za iskanje po sistemu VA\u010c",
+                        "created": "2022-04-22T10:09:43.701214",
+                        "url": "https://vac.sjas.gov.si/vac/userhelp/aboutVAC",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.502900', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:06.008213', 'format': u'HTML', 'created': '2022-04-22T10:09:54.455111', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 19,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:06.008213', 'cache_filepath': u'/var/ckan/resource_cache/88/88b8bf8c-ed8d-419c-ad60-1fd1d201ba26/aboutVAC', 'last_success': '2025-08-13T13:56:06.008213', 'size': u'2179831', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'3500af2d42ff241ab876e11fc5524bd722a77c99', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/88/88b8bf8c-ed8d-419c-ad60-1fd1d201ba26/aboutVAC', 'created': '2022-04-22T10:09:47.841613', 'first_failure': None}",
+                        "url_type": "",
+                        "position": 1,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "88b8bf8c-ed8d-419c-ad60-1fd1d201ba26",
+                        "resource_type": "documentation"
+                    },
+                    {
+                        "hash": "",
+                        "description": "spletna stran Archives Portal Europe",
+                        "created": "2023-01-11T10:10:00.987445",
+                        "url": "https://www.archivesportaleurope.net/",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.524982', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:08.054621', 'format': u'HTML', 'created': '2023-01-11T10:10:27.216999', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:08.054621', 'cache_filepath': u'/var/ckan/resource_cache/04/0430140f-9c3a-4e82-a5e3-33602f581a3b/resource', 'last_success': '2025-08-13T13:56:08.054621', 'size': u'92868', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'4e84d7d3769d6bc204f955542f0ba2471a904303', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/04/0430140f-9c3a-4e82-a5e3-33602f581a3b/resource', 'created': '2023-01-11T10:10:13.222767', 'first_failure': None}",
+                        "url_type": "",
+                        "position": 2,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "0430140f-9c3a-4e82-a5e3-33602f581a3b",
+                        "resource_type": "documentation"
+                    }
+                ],
+                "relationships_as_subject": [],
+                "num_tags": 6,
+                "naziv_zakona": "<span class=\"form-control field_req\" rows=\"1\" cols=\"60\" readonly><a href=\"https://pisrs.si/Pis.web/pregledPredpisa?sop=2006-01-1229\" target=\"_blank\">Zakon o varstvu dokumentarnega in arhivskega gradiva ter arhivih (ZVDAGA)</a></span><br /><span class=\"form-control field_req\" rows=\"1\" cols=\"60\" readonly><a href=\"https://pisrs.si/Pis.web/pregledPredpisa?sop=2017-01-2140\" target=\"_blank\">Uredba o varstvu dokumentarnega in arhivskega gradiva</a></span>",
+                "contact-name": "MINISTRSTVO ZA KULTURO RS, ARHIV REPUBLIKE SLOVENIJE",
+                "name": "digitalizirano-arhivsko-gradivo-starih-katastrov-si-as-176-si-as-177-si-as-178-si-as-179-si-as-180-s",
+                "isopen": false,
+                "rights": "/",
+                "url": null,
+                "restricted_data": false,
+                "bulk_download": "false",
+                "owner_org": "2399369000",
+                "contact-phone": "+386 1 2414200",
+                "high_value_data": "false",
+                "qa": {
+                    "openness_score_reason": "Licenca ni odprta",
+                    "updated": "2025-08-13T13:56:17.871565",
+                    "openness_score": 0
+                },
+                "naziv_zakona_lep_izpis": "Zakon o varstvu dokumentarnega in arhivskega gradiva ter arhivih (ZVDAGA), Uredba o varstvu dokumentarnega in arhivskega gradiva",
+                "jezik_zbirke": "Sloven\u0161\u010dina",
+                "opsi_tip_naziv": "Dr\u017eavni organi",
+                "individual_resources": [
+                    {
+                        "hash": "",
+                        "description": "SI AS 176 Franciscejski kataster za Kranjsko, 1823-1869",
+                        "created": "2018-03-07T15:04:31.033495",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23253",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.548459', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:08.564582', 'format': u'HTML', 'created': '2018-03-07T15:04:32.057588', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:08.564582', 'cache_filepath': u'/var/ckan/resource_cache/1b/1bce8be4-c865-4cb3-9f81-4ad907c72106/details', 'last_success': '2025-08-13T13:56:08.564582', 'size': u'110087', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'23e4a0ec853636f2412e2953c0767d0b2a3ff898', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/1b/1bce8be4-c865-4cb3-9f81-4ad907c72106/details', 'created': '2018-03-07T15:04:33.060214', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 3,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "1bce8be4-c865-4cb3-9f81-4ad907c72106",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 177 Franciscejski kataster za \u0160tajersko, 1823-1869",
+                        "created": "2018-03-07T15:04:31.033509",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23254",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.572041', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:09.027269', 'format': u'HTML', 'created': '2018-03-07T15:04:32.083610', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 189,
+                            "recent": 5
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:09.027269', 'cache_filepath': u'/var/ckan/resource_cache/fc/fc63377d-1377-4a6b-9d5a-1a9b30ac6295/details', 'last_success': '2025-08-13T13:56:09.027269', 'size': u'111499', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'd8f20a20780e6ad82bdef0da873c5021374fe7ce', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/fc/fc63377d-1377-4a6b-9d5a-1a9b30ac6295/details', 'created': '2018-03-07T15:04:34.384326', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 4,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "fc63377d-1377-4a6b-9d5a-1a9b30ac6295",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 178 Franciscejski kataster za Koro\u0161ko, 1823-1869",
+                        "created": "2018-03-07T15:04:31.033504",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23255",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.592284', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:09.507127', 'format': u'HTML', 'created': '2018-03-07T15:04:32.074607', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 21,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:09.507127', 'cache_filepath': u'/var/ckan/resource_cache/1b/1b0722d1-1490-4eb8-b623-d07de4587b69/details', 'last_success': '2025-08-13T13:56:09.507127', 'size': u'93245', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'4bd4b37e2a4ba7ce49b3849201663704de34960c', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/1b/1b0722d1-1490-4eb8-b623-d07de4587b69/details', 'created': '2018-03-07T15:04:33.929601', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 5,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "1b0722d1-1490-4eb8-b623-d07de4587b69",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 179 Franciscejski kataster za Primorsko, 1811-1869",
+                        "created": "2018-03-07T15:04:31.033513",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23256",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.612838', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:09.956898', 'format': u'HTML', 'created': '2018-03-07T15:04:32.093175', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 108,
+                            "recent": 12
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:09.956898', 'cache_filepath': u'/var/ckan/resource_cache/f1/f16211d5-ea46-4dcf-b842-f5637dbdad66/details', 'last_success': '2025-08-13T13:56:09.956898', 'size': u'91360', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'8b12787880f69cde97042ba08b1f008d6f85acad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/f1/f16211d5-ea46-4dcf-b842-f5637dbdad66/details', 'created': '2018-03-07T15:04:34.822861', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 6,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "f16211d5-ea46-4dcf-b842-f5637dbdad66",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 180 Kataster za Prekmurje, 1858-1860",
+                        "created": "2018-03-07T15:04:31.033517",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23257",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.643163', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:10.398305', 'format': u'HTML', 'created': '2018-03-07T15:04:32.101454', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 25,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:10.398305', 'cache_filepath': u'/var/ckan/resource_cache/9d/9dd2dc5e-028a-41e5-a263-25469737b348/details', 'last_success': '2025-08-13T13:56:10.398305', 'size': u'91389', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'cc884fb34f79d8e7b34015186d9a9e03ef58ef26', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/9d/9dd2dc5e-028a-41e5-a263-25469737b348/details', 'created': '2018-03-07T15:04:35.275866', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 7,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "9dd2dc5e-028a-41e5-a263-25469737b348",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 181 Reambulan\u010dni kataster za Kranjsko, 1867-1882",
+                        "created": "2018-03-07T15:04:31.033500",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23258",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.681111', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:10.896137', 'format': u'HTML', 'created': '2018-03-07T15:04:32.066161', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 45,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:10.896137', 'cache_filepath': u'/var/ckan/resource_cache/ce/ce4d9292-6adf-46ec-bffd-25bc2ef6fa3e/details', 'last_success': '2025-08-13T13:56:10.896137', 'size': u'89104', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'30878c647edaee823d4fb7b56ddec1e47cb099bc', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/ce/ce4d9292-6adf-46ec-bffd-25bc2ef6fa3e/details', 'created': '2018-03-07T15:04:33.494385', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 8,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "ce4d9292-6adf-46ec-bffd-25bc2ef6fa3e",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 182 Reambulan\u010dni kataster za Koro\u0161ko, 1869",
+                        "created": "2018-03-07T15:04:31.033521",
+                        "url": "https://vac.sjas.gov.si/vac/search/details?id=23259",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.701490', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:11.337829', 'format': u'HTML', 'created': '2018-03-07T15:04:32.109940', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 4,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:11.337829', 'cache_filepath': u'/var/ckan/resource_cache/23/237aba9c-6e85-49a1-8ac1-e60ede3a8098/details', 'last_success': '2025-08-13T13:56:11.337829', 'size': u'87622', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'ab52382113f7c5ed256f31983dba010f23a1e151', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/23/237aba9c-6e85-49a1-8ac1-e60ede3a8098/details', 'created': '2018-03-07T15:04:35.715577', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 9,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "237aba9c-6e85-49a1-8ac1-e60ede3a8098",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 176 Franciscejski kataster za Kranjsko - tektonika arhiva",
+                        "created": "2022-04-22T09:35:48.997920",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23253",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.723078', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:11.580832', 'format': u'HTML', 'created': '2022-04-22T09:36:01.225320', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 3,
+                            "recent": 2
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:11.580832', 'cache_filepath': u'/var/ckan/resource_cache/72/72d0342a-cdd5-4f8a-bd97-d3f4139b05fd/archivePlanSearch', 'last_success': '2025-08-13T13:56:11.580832', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/72/72d0342a-cdd5-4f8a-bd97-d3f4139b05fd/archivePlanSearch', 'created': '2022-04-22T09:35:57.840509', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 10,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "72d0342a-cdd5-4f8a-bd97-d3f4139b05fd",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 177 Franciscejski kataster za \u0160tajersko - tektonika arhiva",
+                        "created": "2022-04-22T09:21:08.709743",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23254",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.746280', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:11.825113', 'format': u'HTML', 'created': '2022-04-22T09:21:17.549970', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 8,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:11.825113', 'cache_filepath': u'/var/ckan/resource_cache/82/82dbf834-bc31-4bd8-b43c-8d25cecaf81a/archivePlanSearch', 'last_success': '2025-08-13T13:56:11.825113', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/82/82dbf834-bc31-4bd8-b43c-8d25cecaf81a/archivePlanSearch', 'created': '2022-04-22T09:21:17.174108', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 11,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "82dbf834-bc31-4bd8-b43c-8d25cecaf81a",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 178 Franciscejski kataster za Koro\u0161ko - tektonika arhiva ",
+                        "created": "2022-04-22T09:35:48.997944",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23255",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.769460', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.070467', 'format': u'HTML', 'created': '2022-04-22T09:36:01.272811', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.070467', 'cache_filepath': u'/var/ckan/resource_cache/ba/ba1d8a40-397e-43cf-b65f-40f4c57b5a5c/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.070467', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/ba/ba1d8a40-397e-43cf-b65f-40f4c57b5a5c/archivePlanSearch', 'created': '2022-04-22T09:35:58.479862', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 12,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "ba1d8a40-397e-43cf-b65f-40f4c57b5a5c",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 179 Franciscejski kataster za Primorsko - tektonika arhiva",
+                        "created": "2022-04-22T09:35:48.997949",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23256",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.791105', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.299274', 'format': u'HTML', 'created': '2022-04-22T09:36:01.297937', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 3,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.299274', 'cache_filepath': u'/var/ckan/resource_cache/f9/f9b70c47-d6e7-417e-9677-feeb47e36703/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.299274', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/f9/f9b70c47-d6e7-417e-9677-feeb47e36703/archivePlanSearch', 'created': '2022-04-22T09:35:58.797450', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 13,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "f9b70c47-d6e7-417e-9677-feeb47e36703",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 180 Kataster za Prekmurje - tektonika arhiva ",
+                        "created": "2022-04-22T09:35:48.997953",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23257",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.809949', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.522096', 'format': u'HTML', 'created': '2022-04-22T09:36:01.321617', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 1,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.522096', 'cache_filepath': u'/var/ckan/resource_cache/b6/b62bd8a1-3373-4096-861c-01de3dcb1c90/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.522096', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/b6/b62bd8a1-3373-4096-861c-01de3dcb1c90/archivePlanSearch', 'created': '2022-04-22T09:35:59.128035', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 14,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "b62bd8a1-3373-4096-861c-01de3dcb1c90",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 181 Reambulan\u010dni kataster za Kranjsko - tektonika arhiva ",
+                        "created": "2022-04-22T09:35:48.997957",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23258",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.828701', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:12.745461', 'format': u'HTML', 'created': '2022-04-22T09:36:01.343562', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 1,
+                            "recent": 1
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:12.745461', 'cache_filepath': u'/var/ckan/resource_cache/1b/1b2931a9-8cda-4667-ae11-b8da1c829ec1/archivePlanSearch', 'last_success': '2025-08-13T13:56:12.745461', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/1b/1b2931a9-8cda-4667-ae11-b8da1c829ec1/archivePlanSearch', 'created': '2022-04-22T09:35:59.445212', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 15,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "1b2931a9-8cda-4667-ae11-b8da1c829ec1",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "SI AS 182 Reambulan\u010dni kataster za Koro\u0161ko - tektonika arhiva  ",
+                        "created": "2022-04-22T09:35:48.997962",
+                        "url": "https://vac.sjas.gov.si/vac/search/archivePlanSearch?path=1000001,1,653381,653535,653582,23259",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.849525', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:13.030441', 'format': u'HTML', 'created': '2022-04-22T09:36:01.370362', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:13.030441', 'cache_filepath': u'/var/ckan/resource_cache/02/0238c330-700a-4b8f-99f3-753ceb4ca967/archivePlanSearch', 'last_success': '2025-08-13T13:56:13.030441', 'size': u'58211', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'21e72472e333331ad7ff8d2e7cfaf0a5b99a7bad', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/02/0238c330-700a-4b8f-99f3-753ceb4ca967/archivePlanSearch', 'created': '2022-04-22T09:35:59.976604', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 16,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "0238c330-700a-4b8f-99f3-753ceb4ca967",
+                        "resource_type": "file"
+                    },
+                    {
+                        "hash": "",
+                        "description": "Archives Portal Europe - Franciscejski kataster",
+                        "created": "2023-01-11T10:08:51.170530",
+                        "url": "https://www.archivesportaleurope.net/advanced-search/search-in-archives/?term=franciscejski%20kataster&institutions%5b%5d=Arhiv%20Republike%20Slovenije:393&using=default&sort=Relevance&context=listTab&page=1",
+                        "format": "HTML",
+                        "qa": "{'updated': '2025-08-13T13:56:17.871565', 'openness_score': 0, 'archival_timestamp': '2025-08-13T13:56:14.839105', 'format': u'HTML', 'created': '2023-01-11T10:09:21.734802', 'resource_timestamp': None, 'openness_score_reason': u'Licenca ni odprta'}",
+                        "tracking_summary": {
+                            "total": 0,
+                            "recent": 0
+                        },
+                        "archiver": "{'is_broken_printable': 'Downloaded OK', 'updated': '2025-08-13T13:56:14.839105', 'cache_filepath': u'/var/ckan/resource_cache/f2/f28e72b9-1af4-4687-b257-176d6802f165/resource', 'last_success': '2025-08-13T13:56:14.839105', 'size': u'118472', 'is_broken': False, 'failure_count': 0, 'etag': None, 'status': 'Archived successfully', 'url_redirected_to': None, 'hash': u'6c8047d86b666685e39c009bfc75712901019e59', 'status_id': 0, 'reason': u'', 'last_modified': None, 'resource_timestamp': '2025-08-13T11:56:01.841788', 'mimetype': u'text/html', 'cache_url': u'http://localhost:5000/data/resource_cache/f2/f28e72b9-1af4-4687-b257-176d6802f165/resource', 'created': '2023-01-11T10:09:18.535845', 'first_failure': None}",
+                        "url_type": "",
+                        "file_marker": "",
+                        "position": 17,
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "datastore_active": false,
+                        "id": "f28e72b9-1af4-4687-b257-176d6802f165",
+                        "resource_type": "file"
+                    }
+                ],
+                "pogostost_osvezevanja": "po potrebi",
+                "revision_id": "7cabe8a0-bfd0-439b-b9e0-2dab1b8bb2b7",
+                "foi-phone": "+ 386 1 2414220",
+                "notes": "Zbirka Digitalizirano arhivsko gradivo starih katastrov zajema gradivo ve\u010d fondov in sicer: \r\nSI AS 176 Franciscejski kataster za Kranjsko\r\nSI AS 177 Franciscejski kataster za \u0160tajersko\r\nSI AS 178 Franciscejski kataster za Koro\u0161ko\r\nSI AS 179 Franciscejski kataster za Primorsko\r\nSI AS 180 Kataster za Prekmurje\r\nSI AS 181 Reambulan\u010dni kataster za Kranjsko\r\nSI AS 182 Reambulan\u010dni kataster za Koro\u0161ko\r\nGradivo zajema:\r\n- grafi\u010dne karte za posamezne katastrske ob\u010dine\r\n- spisovne evidence, ki so slu\u017eile za izra\u010dunavanje dav\u010dnih obveznosti za posamezno zemlji\u0161\u010de: skica katastrske ob\u010dine, opis meje katastrske ob\u010dine, seznam obdelovalnih zemlji\u0161\u010d, seznam stavbnih zemlji\u0161\u010d, abecedni seznam lastnikov zemlji\u0161\u010d po posamezni katastrski ob\u010dini, sumarij rabe tal po posamezni katastrski ob\u010dini, elaborat z osnovnimi topografskimi zna\u010dilnostmi obmo\u010dja in metodologijo izra\u010duna donosa in vi\u0161ine dav\u010dne obveznosti. Opisni podatki za vsak kataster so v slovenskem jeziku, skenirani grafi\u010dni listi imajo nem\u0161ke napise. \r\nPravne podlage za pripravo katastrskega gradiva sta bila:\r\n- cesarski patent Franca I., z dne 23. 12.1817\r\n- Zakon o reambulaciji zemlji\u0161kega katastra, 24.5.1869. \r\nSpletni dostop ima le ogledno kopijo, za zahtevnej\u0161o uporabo se pridobi kopijo z ve\u010djo resolucijo v \u010ditalnici Arhiva RS.\r\n\r\nZa la\u017eji dostop do digitalizatov katastra svetujemo uporabo navodil VA\u010c.\r\n\r\nPreprosta navodila za dostop do grafi\u010dnih listov katastra:\r\n-\tIz ponujenih virov na OPSI najprej izberemo enega od navedenih \u00bbkatastrov \u2013 tektonika  arhiva\u00ab, na primer: 'Franciscejski kataster za Kranjsko \u2013 tektonika arhiva'.\r\n-\tKo vir odpremo, se nam poka\u017ee celotna struktura katastra.\r\n-\tIz dobljenega drevesa arhivskega sistema izberemo relevantno kresijo.\r\n-\tOdpremo znak + pred npr. Postojnska kresija in se odprejo vse katastrske ob\u010dine v tej kresiji.\r\n-\tNadaljujemo z odpiranjem znakov + pri \u017eeljeni katastrski ob\u010dini (k.o.), na koncu odpremo znak + grafi\u010dni in dobimo vse grafi\u010dne liste neke katastrske ob\u010dine (na + spisovni pa se nahajajo spisovne priloge, ki so del Franciscejskega katastra).\r\n-\tKliknemo 2x na grafi\u010dni list in dobimo PDF sliko, ki jo lahko poljubno pove\u010dujemo, pregledujemo in natisnemo, shranimo pa lahko samo kot sliko.\r\n-\tNa spletu so na voljo samo ogledne kopije, ki za tisk niso dovolj kakovostne.\r\n",
+                "extras": [
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "false",
+                        "revision_timestamp": "2023-01-11T09:08:50.033598",
+                        "state": "active",
+                        "key": "bulk_download",
+                        "revision_id": "1b6691c1-0322-4e6d-9b28-352efacea458",
+                        "id": "8ed1c290-f90d-4f01-9b9b-6c7c3e96295a"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "ars@gov.si",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "contact-email",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "5c6a426a-8eee-4522-b684-b02d2c9ba4be"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "MINISTRSTVO ZA KULTURO RS, ARHIV REPUBLIKE SLOVENIJE",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "contact-name",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "97d21222-0422-4c5a-8dfc-0ad64e7bd93b"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "+386 1 2414200",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "contact-phone",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "de9a1309-606f-4ed3-84bb-d31bcb81421e"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "Na voljo je spletni vpogled v podatke",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "dostopnost_zbirke",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "e53db3ac-a188-4dbb-9ecd-faa39956ef8b"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "alenka.kacicnik@gov.si",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "foi-email",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "c45e8cb4-348f-4058-be20-5c666fbe4abc"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "dr. Alenka Ka\u010di\u010dnik Gabri\u010d",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "foi-name",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "3469b94d-b417-49f8-bffb-1a52911a00ba"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "+ 386 1 2414220",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "foi-phone",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "b2bc7eba-ab74-4745-a266-3a04b1332397"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "Slovenija",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "geographic_coverage",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "a8e808e7-02ce-4014-aa57-14721ade2612"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "false",
+                        "revision_timestamp": "2023-01-11T09:08:50.033598",
+                        "state": "active",
+                        "key": "high_value_data",
+                        "revision_id": "1b6691c1-0322-4e6d-9b28-352efacea458",
+                        "id": "10b6bc5f-2ba3-47b6-91b4-d4d3497bd90a"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "Sloven\u0161\u010dina",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "jezik_zbirke",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "aa2c1bdb-cd22-41fc-9c33-afe9f3866d60"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "/",
+                        "revision_timestamp": "2025-08-13T11:56:01.841788",
+                        "state": "active",
+                        "key": "licence",
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "id": "c4683bfd-0588-4392-89dc-c30da1b3804b"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "false",
+                        "revision_timestamp": "2020-04-06T17:27:49.746110",
+                        "state": "active",
+                        "key": "municipal",
+                        "revision_id": "e0a57b5c-1350-4bf2-8a47-b7affe8a73de",
+                        "id": "24c28e79-479a-42fa-8d04-f24028cf5f68"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "<span class=\"form-control field_req\" rows=\"1\" cols=\"60\" readonly><a href=\"https://pisrs.si/Pis.web/pregledPredpisa?sop=2006-01-1229\" target=\"_blank\">Zakon o varstvu dokumentarnega in arhivskega gradiva ter arhivih (ZVDAGA)</a></span><br /><span class=\"form-control field_req\" rows=\"1\" cols=\"60\" readonly><a href=\"https://pisrs.si/Pis.web/pregledPredpisa?sop=2017-01-2140\" target=\"_blank\">Uredba o varstvu dokumentarnega in arhivskega gradiva</a></span>",
+                        "revision_timestamp": "2025-08-13T10:20:47.328700",
+                        "state": "active",
+                        "key": "naziv_zakona",
+                        "revision_id": "dfabfd1f-bf69-4018-86bf-4b7d616c1968",
+                        "id": "403a3c26-b752-4b0c-be08-a3f327c0e98b"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "Zakon o varstvu dokumentarnega in arhivskega gradiva ter arhivih (ZVDAGA), Uredba o varstvu dokumentarnega in arhivskega gradiva",
+                        "revision_timestamp": "2020-04-06T17:27:49.746110",
+                        "state": "active",
+                        "key": "naziv_zakona_lep_izpis",
+                        "revision_id": "e0a57b5c-1350-4bf2-8a47-b7affe8a73de",
+                        "id": "def61c32-a184-485c-8c68-4090a9381e2e"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "oba",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "notification_recipient",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "3fd7769d-730c-4f8f-b55f-6952361c4186"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "1",
+                        "revision_timestamp": "2018-03-08T08:53:33.476971",
+                        "state": "active",
+                        "key": "opsi_tip",
+                        "revision_id": "94008018-5e66-4297-9c25-f4b5a5a896f8",
+                        "id": "cc266c8d-d850-4636-b2f5-a7c846de3c02"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "Dr\u017eavni organi",
+                        "revision_timestamp": "2018-03-08T08:53:33.476971",
+                        "state": "active",
+                        "key": "opsi_tip_naziv",
+                        "revision_id": "94008018-5e66-4297-9c25-f4b5a5a896f8",
+                        "id": "689e8af4-7a26-49e8-93d3-34d83400200b"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "Finance in davki",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "podrocje",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "c3c2a125-1aa6-4c19-96d0-9ae882d58f45"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "/",
+                        "revision_timestamp": "2025-08-13T11:56:01.841788",
+                        "state": "active",
+                        "key": "pogoji_licence",
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "id": "2890d367-5a4e-4e57-a22d-6a42f0b84c6c"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "/",
+                        "revision_timestamp": "2025-08-13T11:56:01.841788",
+                        "state": "active",
+                        "key": "pogoji_licence_cena",
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "id": "2cc7e15f-3fb5-43d3-8425-f2516f982577"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "po potrebi",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "pogostost_osvezevanja",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "f15d9733-8688-4220-af49-c945a8722347"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "Ni povezave",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "povezanost_desc",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "eac27234-ee6b-4bd0-9a49-fcfc7e075542"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "2006-01-1229, 2017-01-2140",
+                        "revision_timestamp": "2025-08-13T10:20:47.328700",
+                        "state": "active",
+                        "key": "sop_stevilka",
+                        "revision_id": "dfabfd1f-bf69-4018-86bf-4b7d616c1968",
+                        "id": "a77312c6-0df0-498b-94a7-e34818def420"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "1817-01-01",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "temporal_coverage-from",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "a982ba45-76cd-4388-80bd-64bf8dbc9518"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "1882-12-31",
+                        "revision_timestamp": "2018-03-07T14:04:30.969594",
+                        "state": "active",
+                        "key": "temporal_coverage-to",
+                        "revision_id": "5f0cb8ae-9f68-4367-a5a1-ade50c3c922b",
+                        "id": "8a7953ea-e143-40c7-b3a9-bf142ba435b4"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "false",
+                        "revision_timestamp": "2025-08-13T11:56:01.841788",
+                        "state": "active",
+                        "key": "unpublished",
+                        "revision_id": "1f36a341-f832-4601-9a91-32af5a17bb1a",
+                        "id": "75d92d7c-a129-402c-b7da-4df1d636950f"
+                    },
+                    {
+                        "package_id": "2bb73f5c-407d-42cf-9b2a-4de23a06ebee",
+                        "value": "",
+                        "revision_timestamp": "2020-04-06T17:27:49.746110",
+                        "state": "active",
+                        "key": "vrsta_pravne_podlage",
+                        "revision_id": "e0a57b5c-1350-4bf2-8a47-b7affe8a73de",
+                        "id": "59066aba-ea46-47bc-bb70-02beecc67b6f"
+                    }
+                ]
+            }
+        ],
+        "search_facets": {}
+    }
+}
