@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi priloženih slik (naslovnica in glava tabele) strani 1 in 2 iz 'Abecedni seznam lastnikov zemljišč' (N083PUA) za k.o. N83 Griblje/Grüble:\n\n**1) Naslov:**\n*Alphabetisches Verzeichniß Der Grund-Eigenthümer Der Gemeinde „GRÜBLE“*  \n(oziroma na strani 2 še: *Alphabetisches Verzeichniß der Gemeinde Griblje*)\n\n**2) Struktura (stolpci):**\nTabela vsebuje naslednje stolpce:\n*   **Land / Bezirk**\n*   **Kreis / Gemeinde**\n*   **Fortlaufende Nummer** (tekoča številka)\n*   **Bezeichnung der Section** (označba sekcije)\n*   **Des Eigenthümers:** → **Haus Nr.** (hišna št.) | **Name Stand und Wohnort** (ime, stan in prebivališče)\n*   **Anmerkung** (opomba)\n\n**3) Priimki/lastniki (preliminarno, začetne črke):**\nNa prikazanih straneh 1 in 2 **ni vnesenih nobenih imen ali priimkov lastnikov** – gre le za naslovno stran in prazno/glavo tabele (s ponovljenim rokopisnim naslovom). Torej: **ni vidnih priimkov**.\n\n**4) Poklic/upalenje (Wirt, Gastwirt, Schankwirt, Taferner, Krüger, Travern, Gasthaus):**\n**NEGATIVEN ZADETEK** – na teh dveh straneh se ne pojavlja nobena izmed navedenih besed (ne v tiskanem glavi tabele ne v rokopisnem besedilu).\n\n**5) Rokopis/tiskano:**\n**Mešano (kombinacija):**\n*   **Tiskano:** Glavni naslov (*Alphabetisches Verzeichniß...*), podnaslovi in celotna struktura tabele (oznake stolpcev, črte) so tiskani.\n*   **Rokopisno (manuskript):** Naslov *„GRÜBLE“* (str. 1) ter ponovljeni naslov *Alphabetisches Verzeichniß der Gemeinde Griblje* (str. 2) so napisani s krasno klicirano pisavo (Kurrent/Kanzleischrift).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790175195,
+  "id": "2026092322525705f88e9de7664f2b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092322525705f88e9de7664f2b",
+  "usage": {
+    "completion_tokens": 606,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1239,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1845
+  }
+}

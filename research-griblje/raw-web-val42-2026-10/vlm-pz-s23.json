@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je dobesedni prepis zahtevanih delov (Kurrent pisava, črka za črko, z ohranitvijo originalne črkovanja in ločil):\n\n**1) §2 Gränzen – Meje:**\n\n> **§. 2**\n>\n> *Gränzen*\n>\n> Die gemaßte **griblje** [?] grenzt mit südlich vom Krasny\n>\n> &nbsp;&nbsp;&nbsp;&nbsp;*Ost* : **Balpa Nro. 2. Dolschütte**\n>\n> &nbsp;&nbsp;&nbsp;&nbsp;*Süd* : **Weidenburg**\n>\n> &nbsp;&nbsp;&nbsp;&nbsp;*West* : **Trübosche [?] Krasny**\n\n*(Opomba: Prva vrstica vsebuje ime kraja, ki je napisano kot *griblje* ali podobno, sledi pa mu beseda \"grenzt\". Pri zadnjem imenu je druga beseda morda *Krasny* ali *Krasnij*, prva pa *Trübosche*, *Tribose* ali podobno — zapis je nejasen.)*\n\n---\n\n**2) §3 Bevölkerung – Prebivalstvo:**\n\n> **§. 3**\n>\n> *Bevölkerung*\n>\n> Nach den Conscriptions-Revisionen-Resultaten vom Jahre 1826 und\n>\n> fällt die gegenwärtige Bevölkerung zusammen\n>\n> &nbsp;&nbsp;&nbsp;&nbsp;an **Männlichen** **222**\n>\n> &nbsp;&nbsp;&nbsp;&nbsp;\"&nbsp;&nbsp;&nbsp;**Weiblichen** **219**\n>\n> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Zusammen** **441** **Seelen**, welche in **70 Häusern**\n>\n> **vertheilt**, und in **102 Familien** unter **Hausvätern** bestehen, **Einige** sind\n>\n> **die katholischen** **Protestanten**.\n>\n> Die gesammte **Bevölkerung** spricht **Slowenisch** im **Ost** und **West**\n>\n> und **deutsche Sprache** nur **eingesessen** **Familien**, und an **fremden** und **ge**\n>\n> **bildeten** **Orten** gehen nach **schlecht** **fließt**? **ihre** **geschäfte**.\n>\n> **Den** **ganzen** **Ort** **befinden** **sich** **—** **6** **katholische**,\n>\n> **welche** **die** **Gemeinde** **mit** **einem** **Schule** **und** **1 Lehrer**, **29** **Hauswirthen**,\n>\n> **ein** **Zimmermann** **der** **Schmiede**, **mein** **Schneider**, **2** **mein** **Bürger** **ein**?\n>\n> **Mühle** **darin** **findet**.\n\n*(Opombe k nejasnim delom: \n- V 7. vrstici je po \"schlecht\" verjetno \"fließt\" ali \"fließen\" (teče/težko teče), zapis je zelo neuraden.\n- V zadnji vrstici sta pred \"Mühle\" dve nejasni besedi — morda \"ein\" in \"Bürger\" ali \"Wirth\", nato \"darin findet\" (najde se tam).)*\n\n---\n\n**3) Omenjeni objekti (gostilna, mlin, cerkev):**\n\n*   **Wirtshaus / Gasthaus / Taferne itn.:** Besedilo **NE** vsebuje nobene od teh besed (v zadnji vrstici je sicer nejasen zapis, ki *lahko* vsebuje \"Wirth\", ampak ni jasno berljiv — če strogo upoštevamo navodilo \"ne ugibaj\", potem **NI** jasno omenjena gostilna).\n*   **Mühle:** **DA**, v absolutno zadnji vrstici piše: **\"... Mühle darin findet.\"** (tam se najde mlin).\n*   **Kirche:** **NE**, besedilo **NE** omenja cerkve (omenja samo \"katholische\" in \"Protestanten\" pri religiji ter \"Schule\" pri šoli).\n\n---\n\n**4) Omenjena kmetijska zemljišča:**\n\n*   **Vino / vinograde (Weinberg):** **NE**, besedilo **NE** vsebuje besede *Weinberg*, *Wein* ali *Rebe*.\n*   **Steljniki (Stellwick / Stellhaine):** **NE**, besedilo **NE** vsebuje teh izrazov.\n\n**Povzetek ključnih podatkov iz §3:**\n*   **Prebivalci:** 441 duš (222 moških, 219 žensk)\n*   **Hiše:** 70\n*   **Družine:** 102\n*   **Religija:** večina katoličani, manjšina protestanti (\"die katholischen Protestanten\" — zapis je nekoliko nerazen, verjetno \"die katholischen [und] Protestanten\")\n*   **Jezik:** slovenščina (vzhod in zahod), nemščina (samo pri \"ingesessenen Familien\" — domačih družinah)\n*   **Šola (Schule):** **\"6 katholische, welche die Gemeinde mit einem Schule und 1 Lehrer\"** — to pomeni, da obstaja **ena šola (einem Schule)** z **enim učiteljem (1 Lehrer)**, ki jo vzdržuje občina (die Gemeinde); številka \"6\" se najverjetneje nanaša na število katoliških (hiš/družin?), ki so vezane na to šolo, ali pa je del daljšega seznama (povezano z naslednjim \"welche...\").\n*   **Poklici:** 29 Hauswirthen (gospodarjev), 1 Zimmermann (tesar), 1 Schmiede (ključavničar), 1 Schneider (krajevni krojač), 2 Bürger (meščana?), 1 Mühle (mlin).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790175379,
+  "id": "20260923225523cf05232cd6524841",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260923225523cf05232cd6524841",
+  "usage": {
+    "completion_tokens": 1489,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1230,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2719
+  }
+}

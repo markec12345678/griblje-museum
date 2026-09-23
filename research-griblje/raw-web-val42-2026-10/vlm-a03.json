@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi priložene slike (list **O IX 24 d 6** iz franciscejskega katastra za k.o. Griblje) so odgovori naslednji:\n\n**Naslovni napisi (dobesedno):**\n*   **Številka lista:** OIX24d6 (desni zgornji kot)\n*   **Ime občine / katastrska občina:** Griblje (podano v vašem navodilu; na samem listu je napisano *griblje* sicer v levem delu listine)\n*   **Okrožje:** III (levi zgornji kot)\n*   **Datum:** Ni vidnega datuma na tem odseku (navadno je zapisan spodaj, tu ni razločen)\n*   **Izmeritelj:** *Aufgenommen und einohenet durch Kultenigg* (spodaj desno)\n*   **Revizija:** *Revidirt durch den Steuerpflann Inspector von Hilternegg* (spodaj levo)\n\n---\n\n**1) Vidni toponimi:**\n*   *Weidendorf* (dolga oznaka ob desnem robu – to je nemško ime za vas Griblje, ki se je takrat uradno imenovala Weidendorf)\n*   *Eichstutweir* (ob desnem robu, verjetno označuje mejo ali lokacijo)\n*   *na Borli* (znotraj zemljišč, desna stran)\n*   *Na Stomoz* (ob desnem robu, zgoraj)\n*   *Waldi Gr.* ali *Waldi Gr.[und]* (zgornji desni rob, delno prekriveno)\n*   *Lubige* (ob desnem robu, sredina)\n*   *Na-Lukotschen-Brucke* (ob desnem robu, spodaj – most/prehod)\n*   *griblje* (v levem, praznem delu liste)\n\n**2) Sosednje k.o. / državne meje:**\nOb desnem robu teče rdeča črta, ki ločuje to katastrsko občino od sosednje. Ob tej črti so napisane:\n*   **WEIDENDORF** (to je oznaka za sosednjo katastrsko občino Weidendorf/Griblje – kar pomeni, da je to notranja meja znotraj iste k.o. ali meja z istim imenom; glede na kontekst Bel krajine in položaj Gribelj je to najverjetneje meja proti sosednji enoti, morda proti Hrvaški oziroma meja med deli, vendar natančnejša oznaka sosednje k.o. tu ni izrecno napisana kot drugo ime, razen če štejemo *Weidendorf* kot oznako sosednjega območja).\n*   *Eichstutweir* (lahko označuje tudi mejno točko ali sosesko).\n\n**3) Cerkev, gostilna, mlin, javna stavba, grad:**\n**NAPISANO NI VIDNO.** Na tem odseku lista (ki je večinoma prazen, le desna tretjina vsebuje zemljevid) ni vidnih znakov za cerkev (križ), gostilno (označba GH/Wirtshaus), mlin (kolo), javno stavbo ali grad/utrdbo.\n\n**4) Odnos lista do vasi Griblje:**\nVas **Griblje (Weidendorf) je NA ROBU** lista.\n*   Razlog: Samo desna tretjina lista vsebuje zemljevid s parcelami in hišami (označene s črnimi pikami). Levi dve tretjini lista sta prazni (beli). Vas oziroma njene hiše so razporejene v zemljevidnem delu ob desnem robu, medtem ko je središčni del liste prazen. Vas torej ni v sredini liste, ampak zaseda le robni (desni) del prikaza.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790174503,
+  "id": "2026092322410652673ddb779e4ead",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092322410652673ddb779e4ead",
+  "usage": {
+    "completion_tokens": 1011,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5950,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6961
+  }
+}

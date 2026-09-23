@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi priloženih slik (stran 1 – naslovnica in stran 3 – prva podatkovna stran) franciscejskega katastra za k.o. Griblje/Grüble (N083PS) so odgovori:\n\n**1) Naslov naslovnice:**\n> **Protocol der Grund-Parzellen der Gemeinde „GRÜBLE“**\n\n**2) Struktura tabele na podatkovni strani:**\nTabela je razdeljena na dva glavna dela (leva in desna stran):\n*   **Levi del (Des Eigenthümers – Lastnik):** Vsebuje stolpce: *Nr. des Districts* (št. okrožja), *Denominatio des Grundes* (oznaka zemljišča), *Nr. der Jährlichen* (letna št.), *Guetzerliche-Ergebn. Chart der Grundstücks-Dominical* (katastrski dohodek), *Rustical* (rustikalni dohodek), *Haus Nr.* (hišna št.) ter *Vor und Zuname* (ime in priimek lastnika), *Stand* (stanje) in *Wohnort* (bivališče).\n*   **Desni del (Des Grundstückes – Parcela):** Vsebuje stolpce: *Kultur-Gattung* (vrsta kulture), *Flächen-Inhalt* (površina; št. *Joch*, *Quadrat-Klafter*), *Classe* (bonitetni razred), *Reiner Ertrag* (čisti pridelek; v *Metall-Münze*: *fl.*, *kr.*, *pf.*) ter *Capital Werth nach p.Ct.* (kapitalska vrednost po odstotkih) in *Anmerkung* (opombe).\n\n**3) Navedene kulture zemljišč:**\nV stolpcu *Kultur-Gattung* so zapisane predvsem:\n*   **Acker** (njiva/oranje zemljišče)\n*   **Wiesen** (travniki)\n*   **Äcker** (varianta zapisa za njive)\n\n*(Opomba: Na tej strani nisem zaznal kultur Weinberge, Wald ali Hutweide, so pa tipične za te katastre na drugih straneh.)*\n\n**4) Preliminarni seznam lastnikov/priimkov:**\nIz stolpca *Vor und Zuname* so berljivi (v stari nemški kurzivi/Kurrentschrift):\n*   **Piringer / Piriguer** (ali podobno, mogoče *Piringer*)\n*   **Grilc / Grillitsch** (ali *Grillitscher*)\n*   **Kriechbaum** (večkrat: *Kriechhan Georg*, *Kriechhan Math.*, *Kriechhan Maridl*, *Kriechhan Veit*)\n*   **Malič / Malic** (*Malič Matho*, *Malič Veit*)\n*   **Schellander / Schellkopf** (*Schellkopf*, *Schellanders*)\n*   **Brine / Bring** (*Bring Maridl*, *Bring Bepart*, *Bring Math.*)\n*   **Millay / Mille** (*Millay Hanns*)\n*   **Gemeinde** (občina – pri parceli št. 19)\n*   **Resig / Resigl** (*Resig Hupfa*)\n\n**5) Iskane besede (Traverne/Taferne/Gasthaus/Wirtshaus/Schenke/Krug/Wirt/Mühle):**\n**NEGATIVEN ZADETEK.**  \nNa prikazanih dveh straneh (naslovnici in prvi podatkovni tabeli) ni bilo mogoče zaznati nobene izmed iskanih besed, ki bi nakazovalo gostilno, krčmo ali mlin.\n\n**6) Rokopis ali tiskano?**\n**Rokopis (Handschrift).**  \nNaslov na naslovnici je natančno napisan s črko (kaligrafija). Celotna tabela na strani 3 je ročno izpolnjena s črnilom (Kurrentschrift), tiskani so samo horizontalne in vertikalne črte tabele ter naslovi stolpcev (ki so verjetno litografski ali tiskani predhodno).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790175161,
+  "id": "202609232252143354dce80ce34a23",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609232252143354dce80ce34a23",
+  "usage": {
+    "completion_tokens": 1031,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2023,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3054
+  }
+}

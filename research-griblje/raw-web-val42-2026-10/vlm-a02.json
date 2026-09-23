@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je dobesedni prepis naslovnih napisov in odgovori na vaša vprašanja na podlagi prikazane katastrske mape:\n\n### **DOBESEDNI PREPIS NASLOVNIH NAPISOV**\n\n*   **Zgornji levi kot (signatura/oznaka):** `I`\n*   **Sredina zgoraj (naslov):** `Sitze der Raumballirungs Bezirksmappe`\n*   **Zgornji sredinski napis:** `St.Veith als eine Obrigkeit`\n*   **Zgornji desni kot (številka lista):** `ODK 2468`\n*   **Levi rob (meja):** `KAISERLICH ÖSTERREICH` (navpično)\n*   **Desni rob (meja):** `KÖNIGREICH CROATIEN` (navpično)\n*   **Spodnji levi del (revizija):** `Revidirt durch den Staatsbaumeister Inspektor von Kletschigg`\n*   **Spodnji desni del (izmeritelj/datum):** `Aufgenommen und gezeichnet durch Schullzzigl`\n\n---\n\n### **1) TOPOFIMI (vasi, zaselki, polja, travniki)**\n\nNa listu so vidni naslednji večji toponimi:\n*   **Vasi/zaselki:** *St Veith* (Sveti Vid), *Grüble* (Griblje), *Robav* (Rob), *Boschkovisch* (Boškoviško/Boškovišče).\n*   **Manjši zaselki/deli vasi/polja:** *V Dollye* (v Dolah), *Na Drugi* (na Drugem), *Pod Schatuligg* (pod Šatuligo/Šatuljem), *Holo crik* (Holo crik/Hola crkva – verjetno gre za zapis *Holo Cerkv* ali podobno, kar pomeni \"pri cerkvi\" oz. \"prazna cerkev\", a je zapisano malo nejasno; lahko je tudi *Hrastov crik* itd., najbolj berljivo je **Holo crik**), *Gosowinigg* (Gošavinjak).\n\n---\n\n### **2) SOSEDNJE KATASTRSKE OBČINE OB MEJAH**\n\nOb zunanjih mejah lista (meje katastrske občine) so napisane:\n*   **Na levem robu (zahodna meja):** `KAISERLICH ÖSTERREICH` (to je državna meja, na drugi strani je Avstrija).\n*   **Na desnem robu (vzhodna meja):** `KÖNIGREICH CROATIEN` (to je državna meja, na drugi strani je Hrvaška kraljevina).\n*   **Opomba:** Notranje meje med parcelami so označene s črtami, imena sosednjih katastrskih občin (npr. Hrast pri Vinici, Radovica, Metlika itd.) na tem konkretnem izrezku **niso eksplicitno napisana ob rdeči mejni črti**, ampak samo državni meji.\n\n---\n\n### **3) STAVBE (cerkev, gostilna, mlin)**\n\n*   **Cerkev/kapela:** **VIDNA JE**. V naselju *St Veith* (Sveti Vid) je označena stavba s simbolom cerkve (križec/zvonik) in napisom *St Veith*. Prav tako je v bližini mogoče razbrati zapis, ki se nanaša na cerkev (glej toponim *Holo crik* ali similar).\n*   **Gostilna (Gasthaus/Wirtshaus/Schenke/Krug):** **NAPISANO NI VIDNO**. Na listu ni eksplicitnega napisa \"Wirtshaus\", \"Gasthaus\", \"Schenke\" ali \"Krug\" poleg katere od stavb.\n*   **Mlin (Mühle):** **NAPISANO NI VIDNO**. Ni vidnega napisa \"Mühle\" ali simbola mlin ob reki.\n*   **Javna stavba:** Razen omenjene cerkve v St. Veith, drugih jasno označenih javnih stavb (šole, sodišča) **NI VIDNO**.\n\n---\n\n### **4) LOKACIJA VASI GRIBLJE**\n\nVas **Griblje** (na mapi *Grüble*) leži na tem listu **v desni (vzhodni) polovici**, približno **v sredini višinsko**, malo **jugovzhodno od centra** celotnega lista. Ni povsem na robu, ampak tudi ne v popolnem središču; leži v vzhodnem delu katastra, jugovzhodno od vasi St. Veith.\n\n---\n\n### **5) ZNAČILNOSTI POKRAJINE**\n\n*   **Reka Kolpa (KUPA):** **DA, VIDNA JE**. Na **levem robu** lista teče reka, označena z valovito črto in napisom *Die Kulpa* (oziroma *Die Kupa*). To je zahodna meja katastra.\n*   **Gozdovi:** **DA, VIDNI SO**. Na mapi so gozdovi prikazani kot **zelene ploskve** (zakrajšane parcele). Največji kompleksi gozda so vidni:\n    *   Okoli vasi *St Veith* in *Grüble* (manjši patchi).\n    *   V južnem delu, okoli toponima *Pod Schatuligg* in *Gosowinigg*, kjer so večje zelene površine (verjetno hrastovi gozdovi ali mešani gozdovi).\n    *   Tudi ob sami reki Kolpa so vidni manjši gozdni pasovi.\n*   **Njive:** **DA, VIDNE SO**. Velika večina površine je razdeljena na **pravokotne parcele** (polja in travniki), ki so barvane bledo rumeno/rjavo. To kaže na intenzivno kmetijsko rabo (oranice, njive, travniki). Parcelacija je zelo gosta, značilna za franciscejski kataster.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790174434,
+  "id": "202609232239376ef1d4b0283c4bbd",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609232239376ef1d4b0283c4bbd",
+  "usage": {
+    "completion_tokens": 1585,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6157,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7742
+  }
+}

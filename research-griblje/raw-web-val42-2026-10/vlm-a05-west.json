@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi natančnega pregleda posnetka (izsek leve/zahodne strani lista franciscejskega katastra, k.o. Griblje) so rezultati naslednji:\n\n**1. Vse prepoznane besedilne nalepke na sliki:**\n\n*   **V glavi lista:** *Siche die Reambullirungs Beimappe*\n*   **V sredini desne strani (ob robu katastrskih parcel):** *Schimstl Traverne* (ali *Schimschl Traverne* – črka pred 't' v priimku je nekoliko nejasna, najverjetneje je 's' ali 'sch', zapisano je v kurzivi)\n*   **Ob robu desno (velike tiskane črke, ki črkujejo ime):** **M A I U E N** (navpično)\n*   **V nogi lista:** *Providirt durch den Hauptmann Inspector von Chlumetzky*\n\n**2. Ali napis vsebuje iskane besede?**\n\n**DA.** Na sliki je prisoten napis, ki vsebuje besedo **Traverne**.\n\n**3. Natančen prepis in kontekst napisa:**\n\n*   **Natančno besedilo:** ***Schimstl Traverne*** (alternativno branje prvega dela: *Schimschl*)\n*   **Lokacija in vrsta:** To je **ime kraja/lokalitete (toponim)**, ki označuje določeno lokacijo ob meji katastrskega območja (zahodni rob zemljevida). **NI direktna nalepka ob stavbi (hiši)** – na tem izseku ni prikazane nobene stavbe (hiše), ampak samo rob zemljevida z napisom in del katastrskih parcel (zeleni in bež poligoni). Napis stoji samostojno v prostoru med robom lista in parcelami, kar kaže, da gre za oznako za širše območje ali posest, poimenovano po nekdanji gostilni (*Taferne/Traverne*), ne pa za neposredno označevanje posamezne zgradbe na tej točni lokaciji.\n\n**4. Če takega napisa NI:**\n\nNe velja – napis **JE** prisoten.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790174736,
+  "id": "202609232245147a9f1bf09abf43ea",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609232245147a9f1bf09abf43ea",
+  "usage": {
+    "completion_tokens": 573,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6222,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6795
+  }
+}

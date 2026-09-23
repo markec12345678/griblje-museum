@@ -259,8 +259,8 @@ for (const b of OBJECT_BIOGRAPHIES) {
 
 if (exN === 113) ok("113/113 zapisov"); else err(`zapisov: ${exN}`);
 if (mvgN === 113) ok("113/113 muzejskih številk"); else err(`MVG: ${mvgN}`);
-if (srcN === 582) ok("582 vrstic virov (41. val: +2 — franciscejski-kataster-n83-vas, franciscejski-kataster-n83-pt)"); else err(`vrstic virov: ${srcN}`);
-if (identities === 463) ok("463 identitet virov (40. val: +2)"); else err(`identitet: ${identities}`);
+if (srcN === 588) ok("588 vrstic virov (42. val: +6 — franciscejski-kataster-n83-a01/pr/ps/pua/pv/pz)"); else err(`vrstic virov: ${srcN}`);
+if (identities === 469) ok("469 identitet virov (42. val: +6)"); else err(`identitet: ${identities}`);
 if (shared === 67) ok("67 deljenih virov (36. val: +1 — etnolog-1937-1939-sopek-pdf deljen med MVG-004 in MVG-043)"); else err(`deljenih: ${shared}`);
 if (phases === 375) ok("375 biografskih faz (34. val: +3 — biografija srednje-njive)"); else err(`faz: ${phases}`);
 if (brokenIndex === 0) ok("0 zdrobljenih sourceIndex v biografijah"); else err(`zdrobljenih: ${brokenIndex}`);
