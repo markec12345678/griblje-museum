@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Grm, 69-11-9-2-0",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790188202,
+  "id": "202609240230011c0df60a1d9a4085",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609240230011c0df60a1d9a4085",
+  "usage": {
+    "completion_tokens": 14,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 926
+  }
+}

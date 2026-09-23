@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Dolnje Dobravice, 51-7-6-1-0.**\nDolnje Dobravice, 51-7-6-1-0. Sr fin Črnomelj 9 km, so du zdr\nfin Metlika 5 km, žand o pT Gradač 2 km, žel v kraju, š Pod-\nzemelj 1.5 km, žup Podzemelj 2 km. Gas. Nm 155 m. Vasica leži\nna ravnem in v bregu pri železnici, od ban. este oddaljena\n3 km. Dohod mogoč z avtom. Pred zaselkom je skupen stude-\nnce tudi za Gornje Dobravice, v katerem živi človeška ribica.\nKmetijstvo, sadjarstvo, vinogradništvo in perutninarstvo. Vino-\ngrade imajo doma in in Drašičih. Sadje prodajajo deloma v\nLjubljano. Podr. cerkev D. M. presv. rožn. venca.\n\n**Girišiče, 38-7-6-1-0.**\nGirišiče, 38-7-6-1-0. Sr Črnomelj 8 km, so du zdr fin Metlika\n6 km, žand o pT Gradač 1 km, žel Dobravice 1 km, š žup Pod-\nzemelj 1 km. Nm ca 145 m. Stoji na terasi nad Lalinjo, preko\nkatere pelje lesen most. Od ban. ceste (1.5 km) dohod tudi z\navtom. Poljedelstvo, živinorecja in sadjarstvo. Nekaj vinogra-",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186593,
+  "id": "202609240203035379c910b0574342",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609240203035379c910b0574342",
+  "usage": {
+    "completion_tokens": 423,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1063,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1486
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "HEADWORD: Planina. 181-33-24-5,4. Sr so dúnžandark o PTF Črnomelj,\n11,4 km, fin Šemje 9 km, zel Črnomelj 11,4 km in Šemč 7 km,\n5 zup kršja. Sola ust. 1866, 2 oddi. Gas, PSPD. Nm 737 na.\nVas srednjega tipa doloma v ravnini ob banu, esli II. red na\npovršini 1.820 ha (1048 ha) do katere je od ti po markantni\npoštni poti Mirna gora—Črnomelj. Ime dobila po planini, ki se\noskrbovana planinske koče. Kmirji gozdovi, soli vsakno po 3 ro-\nstline in skopne leščice. Z mirne gore, posebno z vroknja cer-\nkve sv. Frančiška, se nudi diven razgled po Beli Krajini, dalje\npreko Kolpe v llirskih na Karlovac in proti severu na Kunun-\ng, planine Vrh (1048) Mirne gore je poraščena s bukvomi in\ngorskim breskovim, medtem ko so ostale višine gozdnate, le na\nske ceste prčki škriljave, planinske poti pogosto kamnito\nzaravljene Gače protl Črnomelju. Pogoravlece in Gace imata\nvask svoj, od Kočevjar 1930 postavljen, stoplj v spomina na\nnekdanjo naselje. O nekdanjem tláčanskem naselju na Mirni\ngori pričajo še danes Planine je ladičane pot po gozdu in ko-\nsenični prčko Ponikve gozda, ki je bil nekdaj Golobinjek, kjer\nprviprk. Od Mirne gore Črnomelj 14 km, Golebnik 9 km,\nna Sela pri Otavicah 9 km. Teren okrog Planine je pripiraven\ntudi za smučanje. Planina ima vodovod in studence. Zemlja je\npeščena, kamenita in plitva. Prebivalstvo se preživlja s živino-\nrejo, poljedelstvom, vinogradništvom, gozdarstvom, suliče robe.\nNekaj vinogradov ma v Gorenjskem. Železniška postaja Dolović in\nv Rodinah. Poljedelsko niti za domačo porabo ne zadostuje. Prva-\nvendar pridelajo žela toliko, da ga prodajajo v Črnomelj. Pra-\n\nHEADWORD: Rožične vrh. 55-11-5-6,0. Sr so du žandr fin o PTF žup\nČrnomelj 6,6 km, Štalci vrh 2,5 km. Nm ca 320 m. Vinogradski\nnaselje stoi na prijaznem svetu nad vinogradmi in zelenjadmi.\nIme izhaja iz prvotnega Róžič. Je se sedaj tam doma, od\nkmečkih hiš je samo še ena II. reda. Druge so bile že pred\nmogim dodoh z avtom. Ilovnata in kamčita zemlja, je pri-\npravna za vinograde, ki dobro uspevajo. Prebivalstvo se havi\nv glavnem z vinogradništvom, v majhnem meri na tudi z drvnin-\ngami kmetijstkom panogami. Kostanjev in bukov gozd dajejo\npotrebne les za dom in neku. Nalagajo za proizvod. Skozi naselje\nvodi cesta iz Rožičnega vrha v Podlesek. Naselje nato zago in po-\nstruja Knapela, sv. Jožefa jo bliže Radoše. 1852.\n\nHEADWORD: Rožanec. 103-16-11-5,0. Sr so du žandr fin o PTF žup\nČrnomelj 5,6 km, žel Sela pri Otovicah 1,5 km, Petrova vas\n1,5 km. Vodovod priključen na vodovod Blatnik-Črnomelj. Nm\n290 m. Vas stoji na nezazidani dvignjeni kamnitem robu\npod hribom, diri nad njo. Južno ju obdaja strma pečina. Po-\nmešana tudi zeletjado in se južnih pobočjih Vidulnik. Imamo\nmaseljni hiši. Odl 0,5 km oddaljena ban, česte je po obč. česti\nI. reda mogče dohod z avtom. Ilovnata in ilovnato-peščena\nzemlja je srednje rodovitna. Prebivalstvo se havi s poljedelstvom,\nvinogradništvom, gozdarstvom (holo in riče vino) sadjarstvom,\ngovedorejo, vinjarijo, čez mejo se odvaja iz Blatnika. Me-\nšani gozd bukov, kostanjev in gaberov. Pragozdov ni. Naselje\ndon je za produkcijo. V starern veku je vodila tod mimo rimska\ncesta na Gradac in po dolini Kolpe na Hrvatsko. Pod podr.\ncerkvi sv. Jurija, ki je v zapiski omenjena prvič 1526, je se\nobranjeno pogojsko svečišče z oltarjem. Eho stoje tvori. Hiva\nMilan je srednji ta krščansko prakso, kegra se nenoga vse\nMitja, srednji ta krščansko prakso, kega se nenoga vse\nski napisi. Skulptura je delona pokovana (nos odtis). Pred\npečino, na katerej je tu oltar, leži ravna trata, ogromna na-\nkrog z visokimi laiko nanosemi kamenitimi skladi. Prostor\nzapira tudi dreve. Ljudstvo imenjuje to svetište Jidrovec.\nHrib, na katerem stoji pravi, da je Judoviju zakopano klatvo\ntuj drugega preverka pravi, da je grajdil spomenik deli lovec, ki je\nušel napad divje zveri.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790188801,
+  "id": "20260924023910a1f1b74cfcd64632",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260924023910a1f1b74cfcd64632",
+  "usage": {
+    "completion_tokens": 1619,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 730,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2349
+  }
+}

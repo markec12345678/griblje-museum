@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the scanned page of the 1937 *Krajevni leksikon* (specifically the *Slovenski krajevni leksikon*, Volume 1, *Dražovše–Gorenja Vas*):\n\n1.  **Printed Page Number:** **148** (visible in the top right corner).\n2.  **Village Headwords:** The only village headword (bolded entry) visible on this page is **Dolgaš**.\n3.  **Mentions of Griblje or Gradac:**\n    *   **Gradac:** Yes, it is mentioned in the entry for *Dolgaš*. The text states that Dolgaš belongs to the parish and school district of Gradac.\n        *   *Quote:* \"...spada v župnijo in šolski okraj **Gradac**.\"\n    *   **Griblje:** No, there is no mention of Griblje on this specific page.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790183073,
+  "id": "2026092401042172e4ca854f2c4f59",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092401042172e4ca854f2c4f59",
+  "usage": {
+    "completion_tokens": 213,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 966,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1179
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "HEADWORD: Kokejle 58-16-12-40. Sr so du žand. žar d fin. o pTJ s žup\nCrnomelj 1,3 km, žel Crnomelj 1,5 km. Nu 156 m. Vas stoji na\nmoklih legah, 57-10-9-10. Sr so du žand. žar d fin. o pTJ s žup\nCrnomelj 4,3 km, žel Sela pri Otovcu 2 km, s Taleži vrh 2,5 km.\nNm 175 m. Leži na ravnem polju, 100 m oddaljeno od ban-\nceste i. reda. Dohod mogoče tudi z avtom. Loke imajo vodovod\niz Bitunjice, bližini se nahaja podcelomljska jama s številnimi\nkapniškimi tvorbami in poljedelsko, živinorejsko, vinogradničko,\nprodajno. Meja se gozdi kjuži domače porabe in dalje les na\nMavrlen, 78-15-7-11-0. Sr so du žand. žar d fin. o pTJ s žup\nCrnomelj 6,6 km, žel Cernelič 8,5 km. V s kraj u. ust. 1852.\nI omd. PJS. Gas. Nm ca 376 m. Ta vinogradna vas stoji\nna terasah, na jugovzhodnem pobočju Sv. Kriza (597 m), na\nskrajnem odročnem koncu Bele krajine. Že znamen belokranjski\nskalnat svet, prepreden s stopami, od katerih vodijo številne poti\npo vseli Beli krajini kakor tudi daleč po Hrvatskem. Skoli\nvas drži ban. česta tl. reda, ki se priljublja na Dobliški gori na\nban. često l. reda. Mavrlen je znan po svoji vinogradbi, ki\ndajojejo veči redči vino. Tu se nalaga tudi podeželska jama.\nPrebivalstvo je mešano s Kočevci*, se največ bavi z vino-\ngradničtvom in živinorejo, deloma pa drugačnim delom; ima\ngostilno. Meja se gozdi porečje Otra in joji tudi ladi\nprodaj v Črnomlju. V drugi polovici 14. stoletja (med 1348 do\n1363) je ondotni zemljiški gospod Oton grof Ortenburški koloni-\nziral nemške doselence havarskega poreklja med tedaj\nredko naseljeno Slovenijo. Kolonisti so krčili gozdove in kultivi-\nrali svet, Močenja, glavna namska kolonizacija je bila izvrsne\nkvalitete, razvijala je posebno meso. Zanima je le tuši ludi\npo naravnih bojih, med Slovenci in Nemci v Šuhorju in Podle-\ncinu.\nHEADWORD: Miklarjev, 6-11-4-0-0. Sr so du žand. žar d fin. o pTJ s žup\nCrnomelj 12,6 km, s Mavrlen 5 km. Nm 505 m. Miklarjevi so ime-\nnuje ena logarska hiša z gospodarskimi poslopji in posetov-\nkami, razporejena bari česti i. reda, vodcejo samo Crnomelj.\n—Brezovo ravno, baragarska Logatec — naselje, voljeno naselje\nposetovom in čebelarstvom v Zuidarščilih. Od Miklarjev deži",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790188750,
+  "id": "20260924023842af264a9b341a44a2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260924023842af264a9b341a44a2",
+  "usage": {
+    "completion_tokens": 965,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 730,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1695
+  }
+}

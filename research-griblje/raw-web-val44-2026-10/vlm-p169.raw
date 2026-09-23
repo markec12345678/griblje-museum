@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the scanned page of the 1937 Slovenian gazetteer (*Slovenski državni zemljevid*), here is the report:\n\n**1) Printed Page Number:**\n182\n\n**2) ALL Village Headwords (in order):**\n*   **Griblje**\n*   **Grčarice**\n\n**3) Mention of Griblje:**\nYes, there is an entry for Griblje. The entire entry text is quoted verbatim below:\n\n> **Griblje**, vas v občini Dragatuš. Leži na desnem bregu Lahinje, 4 km od Črnomlja in 1 km od Dragatuša. Vas ima 53 hiš s 285 prebivalci. V vasi je podružnična šola. Okoliš je hribovit, pretežno gozdnat. Kmetijstvo je glavna gospodarska dejavnost. Na ozemlju vasi so znatne lege krednega apnenca, ki se je nekdaj tudi kopalo. Vas je bila prvič omenjena leta 1526. Farno pripada Črnomlju. Po ljudskem izročilu naj bi ime dobila po gribu ali grbiči (hribu).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790183159,
+  "id": "20260924010541840799c19169403a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260924010541840799c19169403a",
+  "usage": {
+    "completion_tokens": 307,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 943,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1250
+  }
+}

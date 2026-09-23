@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "laténske in rimske dobe. Izkopine hranijo v ljubljanskem, du-\nnajskem, monakovskem in berlinskem muzeju. Na j. pobóčju\nKučerja so odkopali tudi predzgodovinske topilnice železnč\nrude iz 2. pol. prvega tisočletja pred Kr. Kraj od Željna pri\nVinici do Metlike so polni železne rude, zlasti rjavega in rdečega\nželezovca. Kučer spada skupno z Vačami in Šmarjeto med naj-\nvažnejše in najznamaenitješče postojanke predzgodovinskega\nželezarstva. Železo iz Kučerja je bilo gosto, trdo in brez žvepla\nter tako celo boljše od železa iz Vač.\n\n**Kaplišče**, 48-7-7-1-0. Sr Črnomelj 8 km, so du zdr fin Me-\ntlika 8 km, žand želo pT Gradac 1 km, š žup Podzemelj 0.5 km.\nNm 139 m. Zaselek stoji dcloma v bregu in ravnini, 100 m od\nban. ceste. Dohod možoč z avtom. Kmetijstvo, nekaj vinogra-\ndov na pobóčju Kučerja in v Drašičih.\n\n**Klošter**, 76-14-12-2-0. Sr fin Črnomelj 7 km, so du zdr Me-\ntlika 9 km, žaund žel o pT š Gradac 0.5 km, žup Podzemeli",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186926,
+  "id": "202609240208391050811b4b7e4ef0",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609240208391050811b4b7e4ef0",
+  "usage": {
+    "completion_tokens": 423,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1334,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1757
+  }
+}

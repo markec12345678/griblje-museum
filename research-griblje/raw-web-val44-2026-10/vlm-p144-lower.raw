@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the provided image, which is a **map** (not a printed page of text from a gazetteer), it is not possible to transcribe the specific textual content of page 128 as requested. The image shows a geographical map with place names labeled on it.\n\nHowever, I can transcribe the visible **place names (labels)** from the map exactly as they appear:\n\n**Top/North Area:**\nRadna\nRade v.m.\nSela\nGorenje\nOlek\nOd Babič\nČrnomelj\nBabno Polje\nButoraj\nStara vas\nTavžlje\nPlešivica\nČrnuče\nGoljma\n\n**Central/North-Central Area:**\nBozec\nMehuše\nSuhor\nKotli\nHrast pri Vinici\nJankoviči\nDolnji Prekar\nDraga\nJernej vas\nOtok\nKršice\nŽumberk\nBukovje\nVrhovci\nVeliki Labinj\nTrbince\nDražiči\nFučkovci\nBalini\nDolenji Adlešiči\nAdlešiči\nPeleh\nSela\nGorovec\nVinica\n\n**West/Central-West Area:**\nBrezočnica\nZadrc\nVrh\nCegelnj\nKralji\nZapudje\nPodgorje\nJedrtje vas\nPrelesje\nJuže\nOd N. L.\nLaze\nHrast pri Ziljah\nDolga Njiva\nRadovci\nRadovica\nPrhoviči\nGrilje\nDragovanja vas\nTanča gora\nBreznik\nGolo Brdo\nZagradec\nGornje Cerovo\nSpodnje Cerovo\nOtovec\nGradec\nCrni Lahi\nOtošče\nBela Gora\nBelčji Vrh\n\n**South/East Area:**\nSuhor Go.\nStara Lipa\nNova Lipa\nHrast\nObrunje\nDolnje Slemene\nGozd Podpeč\nZilje\nBakeči\nPreloka\nŠkrilje\nGrič\nRožič Vrh\nDolga Vas\nVrhovci\nDelujo\nUšenci\nRadoši\nVrba\nSebo\nDrenovce\nDreznik\nVseljovci\nDemelja Njiva\n\n---\n*Note: The word \"Griblje\" does not appear to be present on this map. The closest phonetically similar name appears to be \"**Grilje**\" located in the southwestern portion of the map.*",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790187206,
+  "id": "202609240212491428e2660006466a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609240212491428e2660006466a",
+  "usage": {
+    "completion_tokens": 604,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 744,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    },
+    "total_tokens": 1348
+  }
+}

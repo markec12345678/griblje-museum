@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "dov na pobocju Kučerja in v Drašičih.\nKlošter, 76-14-12-2-0. Sr fin Črnomelj 7 km, so du zdr Me-\ntlika 9 km, žand žel o pT š Gradac 0.5 km, žup Podzemelj\n3.5 km. Nm 155 m. Vas stoji na vrtačasti ravnini ob ban. cesti.\nlnc ima po franciškanskem samostanu, ki so ga po ustanovitvi\nlistini iz 1467 dali ob sedanji Marijini cerkvi zidati brata Jurij\nin Gašper Črnomeljski in glavar metliške grofije Audrej Ilo-\nbenwartzski za franciškane, begunce iz Bosne. A še ne dovolj\nutrjeni samostan so Turki kj hitro podrli, nakar se ui več\nobnovil. Ena hiša v Kloštru se še danes imenuje vulgo Vardjan\n(gvardijan). Klošterska podr. cerkev Žal. M. B. s pokopališčem\nstoji nad izlivom Krupe v Lahinjo. V prejšnjem stoletju je bila\nromarska pot, sedaj pa je ta sloves izgubila. Pri cerkvi so od-\nkrili tudi rimske grobove in rimsko zidovje.\n\nKrasinec, 275-53-49-4-2. Sr fin Črnomelj 8 km, so du zdr\nMetlika 8 km, žand žel o pT Gradac 2 km, š žup Podzemelj\n1 km. Nm 149 m. Gručasta vas stoji na ravnini, tik ob ban. cesti.\nZemlja je deloma aluvialna in ilovnata. Na v. strani vas i teče\nširoka Kolpa, ki žene mlin in nudi lepa naravna kopališča. V\nsuši je mogoč prehod preko Kolpe z vozom, sieer s čolnom.\nPoljedelstvo in živinoreja. Zelenjadno semenje, posebno pa če-\nbulo in »polaje« prodajajo ženske po sejmih v Beli Krajini, pa\ntudi v Kočevju, Karlovcu in Ogulinu. Nekaj vinogradov imajo\nna Plešivici pri Adlešičih. Na sejme nosijo tudi perutnino in\njaje. Ribolov v Kolpi je prost. Nekdaj je stal 500 m s. od vasi\ngrad Krasinec (Crassinitz). Po Valvasorjevem poročilu je grad\nv njegovi dobi — konec 17. stol. — sezidal Ivan Adam grof\nBurgstall [?] [?] [?] [?] [?] [?] [?] [?] [?] [?] [?] [?] [?] [?]",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186943,
+  "id": "202609240208468513473b924048c7",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609240208468513473b924048c7",
+  "usage": {
+    "completion_tokens": 726,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1510,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2236
+  }
+}
