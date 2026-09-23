@@ -1,0 +1,494 @@
+  <!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <!-- IE=edge tells IE8 not to be tempted to use IE7 compatibility/quirks modes.
+          chrome=IE7 tells IE7 to use the Chrome Frame if available - good for Flex machines.
+          Should be the first meta tag in the body. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=IE7" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://podatki.gov.si/sites/all/themes/custom/opsi_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+    <title>Podatki | OPSI - Odprti podatki Slovenije</title>
+    <style type="text/css" media="all">
+@import url("https://podatki.gov.si/modules/system/system.base.css?t2o5v4");
+@import url("https://podatki.gov.si/modules/system/system.menus.css?t2o5v4");
+@import url("https://podatki.gov.si/modules/system/system.messages.css?t2o5v4");
+@import url("https://podatki.gov.si/modules/system/system.theme.css?t2o5v4");
+</style>
+<style type="text/css" media="all">
+@import url("https://podatki.gov.si/modules/book/book.css?t2o5v4");
+@import url("https://podatki.gov.si/sites/all/modules/contrib/date/date_api/date.css?t2o5v4");
+@import url("https://podatki.gov.si/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?t2o5v4");
+@import url("https://podatki.gov.si/modules/field/theme/field.css?t2o5v4");
+@import url("https://podatki.gov.si/profiles/dgu/modules/contrib/logintoboggan/logintoboggan.css?t2o5v4");
+@import url("https://podatki.gov.si/modules/node/node.css?t2o5v4");
+@import url("https://podatki.gov.si/modules/search/search.css?t2o5v4");
+@import url("https://podatki.gov.si/modules/user/user.css?t2o5v4");
+@import url("https://podatki.gov.si/profiles/dgu/modules/contrib/extlink/extlink.css?t2o5v4");
+@import url("https://podatki.gov.si/profiles/dgu/modules/contrib/views/css/views.css?t2o5v4");
+</style>
+<style type="text/css" media="all">
+@import url("https://podatki.gov.si/profiles/dgu/modules/contrib/ctools/css/ctools.css?t2o5v4");
+@import url("https://podatki.gov.si/profiles/dgu/modules/contrib/lexicon/css/lexicon.css?t2o5v4");
+@import url("https://podatki.gov.si/profiles/dgu/modules/contrib/panels/css/panels.css?t2o5v4");
+@import url("https://podatki.gov.si/profiles/dgu/modules/features/dgu_glossary/css/dgu_glossary.css?t2o5v4");
+</style>
+<style type="text/css" media="all">
+@import url("https://podatki.gov.si/sites/all/themes/custom/opsi_theme/css/app.css?t2o5v4");
+@import url("https://podatki.gov.si/sites/all/themes/custom/opsi_theme/fonts/opsi/opsi.css?t2o5v4");
+@import url("https://podatki.gov.si/sites/all/themes/custom/opsi_theme/css/chatbot.css?t2o5v4");
+@import url("https://podatki.gov.si/sites/all/themes/custom/opsi_theme/css/cookieconsent-opsi.css?t2o5v4");
+</style>
+<style type="text/css" media="print">
+@import url("https://podatki.gov.si/sites/all/themes/custom/opsi_theme/css/print.css?t2o5v4");
+</style>
+
+    <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
+
+    <link rel="apple-touch-icon" sizes="152x152" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/sites/all/themes/custom/opsi_theme/img/icons/apple-touch-icon-57x57.png" />
+
+    <meta name="msapplication-TileColor" content="#c7d8e2">
+    <meta name="msapplication-TileImage" content="/sites/all/themes/custom/opsi_theme/img/icons/mstile-144x144.png">
+
+    <!-- <link rel="stylesheet" href="/assets/css/dgu-drupal.min.css" /> -->
+    <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script-->
+    <script>
+      //<![CDATA[
+      window.jQuery || document.write('<script src="/assets/js/jquery-1.8.3.min.js"><\/script>')
+      // ]]>
+    </script>
+    <script src="/sites/all/themes/custom/opsi_theme/js/underscore-min.js"></script>
+    
+    <!--<script src="/assets/js/vendor.min.js"></script>-->
+    <!--<script src="http://pops-ckan-test.xlab.si/assets/js/dgu-drupal.min.js"></script> not in use -->
+    <!--<script src="http://pops-ckan-test.xlab.si/assets/js/dgu-shared.min.js"></script> not in use -->
+    
+    <!-- Piwik --> 
+    <!-- needs to be before "php print $scripts" so variables are set before init of js in cookie consent processing -->
+    <script type="text/javascript"> 
+      var _paq = _paq || [];
+      _paq.push(['requireConsent']); //required for cookie consent
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      // the rest was moved to cookieconsent-opsi.js
+    </script> 
+    <!-- End Piwik Code --> 
+    
+    <script type="text/javascript" src="https://podatki.gov.si/profiles/dgu/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://podatki.gov.si/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+<script type="text/javascript" src="https://podatki.gov.si/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://podatki.gov.si/misc/drupal.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/profiles/dgu/modules/contrib/admin_menu/admin_devel/admin_devel.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/sites/all/modules/contrib/ajax_dlcount/ajax_dlcount.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/profiles/dgu/modules/features/dgu_data_set_request/dgu_data_set_request.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/profiles/dgu/modules/features/dgu_site_feature/dgu_site.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/profiles/dgu/modules/contrib/extlink/extlink.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/sites/default/files/languages/sl_D8JcS9bfRya35WkGE1kzFWlHHzo7xbS9HiDUIPIL8EQ.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/sites/all/modules/custom/opsi/lib/cryptojs-aes-php-master/example/aes.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/sites/all/modules/custom/opsi/lib/cryptojs-aes-php-master/aes-json-format.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/sites/all/themes/custom/opsi_theme/js/modernizr-custom.js?t2o5v4"></script>
+<script type="text/javascript" src="https://podatki.gov.si/sites/all/themes/custom/opsi_theme/js/app.min.js?t2o5v4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"opsi_theme","theme_token":"OvjgFt-SzlDqPVKogG1xSueYzRx6ISTyGbxgowcO8eQ","js":{"0":1,"1":1,"https:\/\/podatki.gov.si\/assets\/js\/vendor.min.js?1780392187116":1,"https:\/\/podatki.gov.si\/scripts\/dgu-ckan-application.min.js?1775635500473":1,"profiles\/dgu\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/dgu\/modules\/contrib\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/contrib\/ajax_dlcount\/ajax_dlcount.js":1,"profiles\/dgu\/modules\/features\/dgu_data_set_request\/dgu_data_set_request.js":1,"profiles\/dgu\/modules\/features\/dgu_site_feature\/dgu_site.js":1,"profiles\/dgu\/modules\/contrib\/extlink\/extlink.js":1,"public:\/\/languages\/sl_D8JcS9bfRya35WkGE1kzFWlHHzo7xbS9HiDUIPIL8EQ.js":1,"sites\/all\/modules\/custom\/opsi\/lib\/cryptojs-aes-php-master\/example\/aes.js":1,"sites\/all\/modules\/custom\/opsi\/lib\/cryptojs-aes-php-master\/aes-json-format.js":1,"sites\/all\/themes\/custom\/opsi_theme\/js\/modernizr-custom.js":1,"sites\/all\/themes\/custom\/opsi_theme\/js\/app.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"profiles\/dgu\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/dgu\/modules\/contrib\/extlink\/extlink.css":1,"profiles\/dgu\/modules\/contrib\/views\/css\/views.css":1,"profiles\/dgu\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/dgu\/modules\/contrib\/lexicon\/css\/lexicon.css":1,"profiles\/dgu\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/dgu\/modules\/features\/dgu_glossary\/css\/dgu_glossary.css":1,"sites\/all\/themes\/custom\/opsi_theme\/css\/app.css":1,"sites\/all\/themes\/custom\/opsi_theme\/fonts\/opsi\/opsi.css":1,"sites\/all\/themes\/custom\/opsi_theme\/css\/chatbot.css":1,"sites\/all\/themes\/custom\/opsi_theme\/css\/cookieconsent-opsi.css":1,"sites\/all\/themes\/custom\/opsi_theme\/css\/print.css":1}},"extlink":{"extTarget":0,"extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"div .pull-right","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"}});
+//--><!]]>
+</script>
+
+    <!-- HTML5 element support for IE8 -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <link rel="stylesheet" href="/sites/all/themes/custom/opsi/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Temporary -->
+    <!-- <link rel="stylesheet" href="/assets/css/datagovuk.min.css?-1"> -->
+  </head>
+    <body class="html not-front not-logged-in no-sidebars page-dataset i18n-sl view_theme_0 theme_opsi" >
+    <!-- Piwik for disabled JS --> 
+    <!-- the rest of Piwik code is in <head> and the cookie consent script to ensure init before cookie consent processing -->
+    <noscript><p><img src="/analitika/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript> 
+    <!-- End Piwik Code --> 
+        
+<header class="page print-hide">
+
+<div class="contain-to-grid sticky">
+  <div class="top-bar expanded" data-topbar data-options="sticky_on: large">
+
+    <div class="row expanded top">
+      <div class="small-4 columns">
+        <a class="logo rs-mju image_background icon icon-rs-mju" target="_blank" href="https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-digitalno-preobrazbo/" title="Ministrstvo za digitalno preobrazbo"></a>
+      </div>
+      <div class="small-8 columns hide-for-medium-up">
+        <a class="burger hide-for-medium-up" href="#"><div></div></a>
+      </div>
+      <div class="small-12 medium-8 columns right-wrapper">
+        <a class="logo ess icon-ess show-for-large-up" target="_blank" href="http://ec.europa.eu/esf/home.jsp?langId=sl" title="Evropski socialni sklad"></a>
+        <div class="right">
+          <div id="google_translate_element" class="visible-for-medium-up"></div>
+          <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'sl', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+          </script>
+          <nav id="menu-header-top">
+              <div class="region region-header-top-right-nav">
+    <div id="block-system-user-menu" class="block block-system block-menu boxed">
+
+    <h2>User menu</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><span id="accessibility" class="nolink">Dostopnost</span></li>
+<li class="leaf"><a href="/kontakt">Pišite nam</a></li>
+<li class="leaf"><a href="/datarequest">Predlagajte zbirko</a></li>
+<li class="last leaf"><a href="/user/login" id="user" class="login icon-user">Log in</a></li>
+</ul>  </div>
+</div>
+  </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="row accessibility">
+      <div class="small-12 width-limit">
+
+        <h5>Pisava</h5>
+
+        <div class="row" data-equalizer="text">
+
+          <div class="small-12 medium-4 columns">
+            <div class="accessibility-box" data-equalizer-watch>
+              <h6>Velikost</h6>
+              Uporabite
+                <ul>
+                  <li><strong>CTRL+</strong> za povečavo</li>
+                  <li><strong>CTRL-</strong> za pomanjšavo</li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="small-12 medium-4 columns">
+            <div class="accessibility-box" data-equalizer-watch>
+              <h6>Velike / male črke</h6>
+              <div class="row">
+                <div class="small-6 columns element">
+                  <a view_mode="view_upper" class="view_mode view_lower active">Male</a>
+                </div>
+                <div class="small-6 columns element">
+                  <a view_mode="view_upper" class="view_mode view_upper ">Velike</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="small-12 medium-4 columns">
+            <div class="accessibility-box" data-equalizer-watch>
+              <h6>Stil</h6>
+              <div class="row">
+                <div class="small-6 columns element">
+                  <a view_mode="view_strong" class="view_mode  view_normal active">Navadno</a>
+                </div>
+                <div class="small-6 columns element">
+                  <a view_mode="view_strong" class="view_mode  view_strong ">Krepko</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <h5>Teme</h5>
+
+        <div class="row themes" data-equalizer>
+            
+              <div class="small-6 medium-4 large-2 columns element">
+                <a view_theme="0" class="view_theme view_theme_0  active" title="Belo ozadje, sans-serifna pisava" data-equalizer-watch>
+                  <div class="bold">Krepko</div>
+                  <div class="regular">Navadno</div>
+                  <div class="link">Povezava</div>
+                </a>
+              </div>
+              
+              <div class="small-6 medium-4 large-2 columns element">
+                <a view_theme="1" class="view_theme view_theme_1 " title="Belo ozadje, črna pisava" data-equalizer-watch>
+                  <div class="bold">Krepko</div>
+                  <div class="regular">Navadno</div>
+                  <div class="link">Povezava</div>
+                </a>
+              </div>
+              
+              <div class="small-6 medium-4 large-2 columns element">
+                <a view_theme="2" class="view_theme view_theme_2 " title="Modro ozadje, rumena pisava" data-equalizer-watch>
+                  <div class="bold">Krepko</div>
+                  <div class="regular">Navadno</div>
+                  <div class="link">Povezava</div>
+                </a>
+              </div>
+              
+              <div class="small-6 medium-4 large-2 columns element">
+                <a view_theme="3" class="view_theme view_theme_3 " title="Bež ozadje, modra pisava" data-equalizer-watch>
+                  <div class="bold">Krepko</div>
+                  <div class="regular">Navadno</div>
+                  <div class="link">Povezava</div>
+                </a>
+              </div>
+              
+              <div class="small-6 medium-4 large-2 columns element">
+                <a view_theme="4" class="view_theme view_theme_4 " title="Črno ozadje, rumena pisava" data-equalizer-watch>
+                  <div class="bold">Krepko</div>
+                  <div class="regular">Navadno</div>
+                  <div class="link">Povezava</div>
+                </a>
+              </div>
+              
+              <div class="small-6 medium-4 large-2 columns element">
+                <a view_theme="5" class="view_theme view_theme_5 " title="Belo ozadje, serifna pisava" data-equalizer-watch>
+                  <div class="bold">Krepko</div>
+                  <div class="regular">Navadno</div>
+                  <div class="link">Povezava</div>
+                </a>
+              </div>
+                      </div>
+
+      </div>
+    </div>
+
+    <div class="row expanded middle">
+      <div class="small-4 columns">
+        <a class="burger hide-for-large-up" href="#"><div></div></a>
+        <nav class="header_navigation_left">
+            <div class="region region-header-middle-left-nav">
+    <div id="block-menu-menu-header-middle-left-nav" class="block block-menu boxed">
+
+    <h2>Header - middle left navigation</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/">Domov</a></li>
+<li class="leaf"><a href="/data/search?open_data=true">Podatki</a></li>
+<li class="leaf"><a href="/api/view/store/">OPSIapi</a></li>
+<li class="leaf"><a href="/aplikacije">Aplikacije</a></li>
+<li class="leaf"><a href="/knjiznica">Knjižnica</a></li>
+<li class="last expanded show-for-large-only icon icon-arrow-right" id="menu_more"><span class="nolink">Več</span><ul class="menu"><li class="first leaf"><a href="/o-portalu">O portalu</a></li>
+<li class="last leaf"><a href="/statistika">Statistika portala</a></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+        </nav>
+      </div>
+      <div class="small-4 columns">
+        <a class="logo opsi image_background icon icon-logo-opsi" target="_self" href="/" title="Odprti podatki Slovenije">
+        </a>
+      </div>
+      <div class="small-4 columns">
+        <nav class="header_navigation_right">
+            <div class="region region-header-middle-right-nav">
+    <div id="block-menu-menu-header-middle-right-nav" class="block block-menu boxed">
+
+    <h2>Header - middle right navigation</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/o-portalu">O portalu</a></li>
+<li class="leaf"><a href="/knjiznica/novice">Novice</a></li>
+<li class="last leaf"><a href="/statistika">Statistika portala</a></li>
+</ul>  </div>
+</div>
+  </div>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /Sticky -->
+
+  <div class="row expanded bottom">
+      <div class="region region-header-bottom">
+    <div id="block-opsi-opsi-block-data-search-form" class="block block-opsi boxed">
+
+    
+  <div class="content">
+    
+	<div class="small-12">
+		<form class="search" action="/data/search">
+			<input type="text" class="form-control" name="s" title="Išči po podatkih" placeholder="Išči po podatkih" value="Franciscejski kataster" />
+			<span class="input-group-btn">
+				<button type="submit" class="icon icon-search"></button>
+			</span>
+		</form>
+	</div>
+	  </div>
+</div>
+  </div>
+  </div>
+
+</header>
+
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+    <a id="left-off-canvas-toggle" class="left-off-canvas-toggle hidden" href="#" title="Mobile menu" ></a>
+
+    <!-- Off Canvas Menu -->
+    <aside class="left-off-canvas-menu">
+      <nav>
+          <div class="region region-header-middle-left-nav">
+      <div class="region region-header-middle-left-nav">
+    <div id="block-menu-menu-header-middle-left-nav" class="block block-menu boxed">
+
+    <h2>Header - middle left navigation</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/">Domov</a></li>
+<li class="leaf"><a href="/data/search?open_data=true">Podatki</a></li>
+<li class="leaf"><a href="/api/view/store/">OPSIapi</a></li>
+<li class="leaf"><a href="/aplikacije">Aplikacije</a></li>
+<li class="leaf"><a href="/knjiznica">Knjižnica</a></li>
+<li class="last expanded show-for-large-only icon icon-arrow-right" id="menu_more"><span class="nolink">Več</span><ul class="menu"><li class="first leaf"><a href="/o-portalu">O portalu</a></li>
+<li class="last leaf"><a href="/statistika">Statistika portala</a></li>
+</ul></li>
+</ul>  </div>
+</div>
+  </div>
+  </div>
+          <div class="region region-header-middle-right-nav">
+      <div class="region region-header-middle-right-nav">
+    <div id="block-menu-menu-header-middle-right-nav" class="block block-menu boxed">
+
+    <h2>Header - middle right navigation</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/o-portalu">O portalu</a></li>
+<li class="leaf"><a href="/knjiznica/novice">Novice</a></li>
+<li class="last leaf"><a href="/statistika">Statistika portala</a></li>
+</ul>  </div>
+</div>
+  </div>
+  </div>
+      </nav>
+    </aside>
+
+
+  <div class="region region-content">
+    <div id="block-system-main" class="block block-system boxed">
+
+    
+  <div class="content">
+    
+
+    
+  
+    
+  
+
+    <div role="main">
+
+      
+        <div class="row">
+          <div class="small-12 columns flash-messages">
+              
+                
+              
+          </div>
+        </div>
+      
+
+    
+                        
+                        
+
+
+
+   
+   
+
+   
+   
+   
+   
+
+   
+
+   
+   
+   
+
+   
+   
+   
+
+	<!-- Title bar -->
+	<div class="row expanded titlebar">
+		<div class="small-12 columns">
+            <div class="icon ckan search"></div>
+			<div class="title center"><h1>Podatki</h1></div>
+		</div>
+	</div>
+	
+	<!-- Tab bar -->
+	<div class="row expanded tabbar">
+		<div class="small-12 columns">
+			<ul>
+				<li><a class="" href="/data/search?_format=json&amp;open_data=true&amp;q=Franciscejski+kataster">Odprti podatki</a></li>
+				<li><a class="active" href="/data/search?_format=json&amp;q=Franciscejski+kataster">Katalog IJZ</a></li>
+				<li><a class="" href="/publisher">Organizacije</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+<div class="row ckan-container
+
+two_columns
+
+" data-equalizer data-equalizer-mq="small-up">
+
+
+
+   
+  <div class="small-12 large-3 columns ckan-left print-hide" data-equalizer-watch>
+    
+<div class="sidebar-search ckan-hide">
+    
+
+  <div class="search-area ckan-hide">
+    <div class="clearfix dgu-equal-height" data-selector=".auto-height">
+      <div class="mini">
+        <div class="left-inner auto-height">
+        <form class="form-search" action="/data/search" method="GET">
+          <div class="input-group">
+            <input class="form-control" type="text" name="q" value="Franciscejski kataster" results="0" placeholder="Search for data..." />
+            <span class="input-group-btn">
+              <button type="submit" class="button btn btn-default">
+                <i class="fi-search"></i>
+              </button>
+            </span>
+          </div>
+
+          <div>
+      
+      <span class="dropdown">
+          <a href="#" class="dropdown-button" data-placement="top" data-delay="300" data-toggle="dropdown" title="" data-original-title="Advanced Search" style="color: #666; font-size: 12px; text-decoration: underline; text-align:center; display: block;">
+            Search Tips
+          </a>
+
+          <div class="panel panel-default dropdown-menu" style="width: 500px; margin-left: -1px;">
+            <div class="panel-heading" style="margin-top: -10px;"><strong>Search Tips</strong></div>
+            <div class="panel-body">
+
+                <ul>
+                  <li><span class='search-terms'>"armed forces" expenses</span> - search for exact phrases by putting quote marks around them</li>
+                  <li><span class='search-terms'>primary school -care</span> - exclude words or quoted phrases by using a minus sign or NO

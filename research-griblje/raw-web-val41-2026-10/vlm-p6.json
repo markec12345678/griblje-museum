@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je natančna transkripcija vseh vrstic tabele **„Protocoll der Bau Parcellen“** (Seznam stavbnih parcel) za KO Griblje/Grüble iz Franciškega katastra 1825.\n\n**Opomba:** V pregledanih vrsticah te strani **ni omenjena nobena gostilna** (Gasthaus, Gastwirtschaft, Wirtshaus, Schenke, Krčma) in **nobena trgovina** (Handlung, Laden). Vse stavbe so označene kot bivalne hiše (*Haus*, *Wohnhaus*) ali podobno.\n\n| Št. parcele | Lastnik (rokopis) | Stan/razred | Bivališče | Št. objekta | Gattung (vrsta) | Areal (m²) |\n|:---:|:---|:---|:---:|:---:|:---|:---:|\n| 61 | *Sedivy Johann* | *bauer* | — | 50 | *Häusl* | 71 |\n| 62 | *Loparz Michl* | — | — | 54 | *Häusl* | 9 |\n| 63 | *Schimey Michael* | — | — | 49 | *Haus* | 19 |\n| 64 | *Sedivy Johann* | — | — | 55 | *Wohnhaus / Haus* | 30 |\n| 65 | *Sedivy Johann* | — | — | 53 | *Häusl / Haus* | 27 |\n| 66 | *Schimey Johann* | — | — | 55 | *Häusl* | 18 |\n| 67 | *Loparz Michl* | — | — | 51 | *Häusl* | 84 |\n| 68 | *Dichatschak Wölfl* | — | — | 93 | *Häusl / Haus* | 192 |\n| 69 | *Fellach Johann* | — | — | 55 | *Haus* | 13 |\n| 70 | *Fellach Johann* | — | — | 56 | *Haus / Häusl* | 86 |\n| 71 | *Fellach Wölfl* | — | — | 34 | *Häusl* | 202 |\n| 72 | *auredt Anna*<br>(prečrtano: *Dichatschak Wölfl*) | — | — | 58<br>47 | *Häusl* | 183 |\n| 73 | *Pechey Rupp* | — | — | 60 | *Haus / Häusl* | 210 |\n| 74 | *Auredt Johann* | — | — | 57 | *Häusl* | 440 |\n| 75 | *Ehrlich Peter* | — | — | 21 | *Häusl* | 66 |\n| 76 | *Henkel Georg* | — | — | 16 | *Haus* | 20 |\n| 77 | *Dichatschak Michl* | — | — | 17 | *Häusl* | 11 |\n| 78 | *Dichatschak Wurzl* | — | — | 17 | *Häusl / Wohnhaus* | 174<br>86 |\n| 79 | *Henkel Georg* | — | — | 15 | *Haus / Häusl* | 107 |\n| 80 | *Dichatschak Anna* | — | — | 17 | *Häusl* | 44 |\n| | | | | **Vsota:** | **1** | **1882** |\n\n**Pojasnila k zapisu:**\n*   **Št. parcele (Nr. in der Mappa):** Številka na levem robu (61–80).\n*   **Lastnik (Vor und Zuname):** Ime in priimek lastnika, zapisan v stari nemški kurzivi (Kurrentschrift). Pri št. 72 je prvotni lastnik (*Dichatschak Wölfl*) prečrtan in nad njim zapisan nov (*auredt Anna*).\n*   **Stan/razred (Stand):** Socialni razred (npr. *bauer* – kmet), kjer je zapisan.\n*   **Bivališče (Wohnort):** Stolpec je prazen (vsi lastniki domači).\n*   **Št. objekta (N°):** Številka posamezne stavbe na katastrskem načrtu.\n*   **Gattung (vrsta stavbe):** Predvsem *Häusl* (hiška), *Haus* (hiša) ali *Wohnhaus* (bivalna hiša). **Ni gostilne ali trgovine.**\n*   **Areal (Quadrat-Klafter):** Površina parcele v kvadratnih klftah (okvirna vrednost iz stolpca „Areal Inhalt“). Pri št. 78 sta dve vrednosti (verjetno dva dela parcele ali dve stavbi).\n\n**Skupni seštevek (Viertelg):** Na dnu tabele je zapisana vsota **1882** (kvadratnih klft).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790169515,
+  "id": "2026092321180455cc4dc4867e4fd5",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092321180455cc4dc4867e4fd5",
+  "usage": {
+    "completion_tokens": 1249,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3161
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Spodaj je natančna transkripcija vseh vrstic tabele **„Protocoll der Bau Parcellen“** (Seznam stavbnih parcel) za katastrsko občino (KO) **Griblje/Grüble** iz leta 1825.\n\nStolpci so: **Št. parcele** | **Ime lastnika (rokopis)** | **Stan/Razred** | **Kje živi** | **Št. hiše** | **Gattung (vrsta stavbe)** | **Areal (kvadratne kljukice)**\n\n| Št. | Lastnik (Vor- und Zuname) | Stan. | Wohnort | Nr. | Gattung | Areal |\n|:---:|:---|:---:|:---:|:---:|:---|:---:|\n| 11 | *Josef Gorg* | | | 47 | *Wohnhaus* | 169 |\n| 12 | *Bartl Gorg* | | | 26 | *Wohnhaus* | 51 |\n| 13 | *Michel Michl* | | | 27 | *Wohnhaus* | 64 |\n| 14 | *Andreas Mally* | | | 20 | *Wohnhaus* | 109 |\n| 15 | *Bartl Maly* | | | 28 | *Wohnhaus* | 108 |\n| 16 | *Christoph Gorg* | | | 63 | *Wohnhaus* | 80 |\n| 17 | *Christoph Gorg* | | | 62 | *Häuschen* | 814 |\n| 18 | *Christoph Gorg* | | | 65 | *Häuschen* | 4 |\n| 19 | *Michel Gorg* | | | 65 | *Häuschen* | 14 |\n| 20 | *Michel Michl* | | | 61 | *Häuschen* | 16 |\n| 21 | *Schiller Jörg* | | | 66 | *Häuschen* | 9 |\n| 22 | *Schiller Jörg* | | | 64 | *Wohnhaus* | 90 |\n| 23 | *Michel Michl* | | | 60 | *Wohnhaus* | 87 |\n| 24 | *Michel Michl* | | | 67 | *Wohnhaus* | 48 |\n| 25 | *Christoph Mally* | | | 21 | *Wohnhaus* | 143 |\n| 26 | *Winkler Georg* | | | 22 | *Wohnhaus* | 60 |\n| 27 | *Schiller Jörg* | | | 60 | *Wohnhaus* | 45 |\n| 28 | *Ulrich Michl* | | | 63 | *Wohnhaus* | 196 |\n| 29 | *Ulrich Gorg* | | | 32 | *Scheune* | 23 |\n| 30 | *Ulrich Gorg* | | | 32 | *Häuschen* | 18 |\n| 31 | *Thomas Ulrich* | | | 36 | *Häuschen* | 10 |\n| 32 | *Schiller Jan* | | | 33 | *Häuschen* | 12 |\n| | *(prazno)* | | | 3 | *Futterh.* | 1849 |\n\n---\n\n### Opombe in posebna opozorila:\n\n1.  **Gostilne / Trgovine:** V tej tabeli **ni omenjena nobena gostilna** (noben vnos ne vsebuje izrazov *Gasthaus, Gastwirtschaft, Wirtshaus, Schenke, Krčma* ali podobnega). Prav tako ni omenjena nobena trgovina (*Handlung/Laden*). Vse stavbe so bivalne (*Wohnhaus, Häuschen*) ali gospodarske (*Scheune, Futterh.* [verjetno Futterhaus/ hlev za krmo]).\n2.  **Pisava in črkovanje:** Imena so zapisana v nemški kurzivi (Kurrentschrift). Pričakovana lokalna imena so verjetno:\n    *   *Gorg* = **Gorjup** (pogost priimek v Beli krajini)\n    *   *Mally/Michl* = **Mali**, **Mihelčič**\n    *   *Schiller* = **Šiler**\n    *   *Winkler* = **Vinkler**\n    *   *Ulrich* = **Urh** ali **Ulčar**\n3.  **Enote:** Areal je podan v kvadratnih kljukicah (Quadrat-Klafter), kar je bilo standardno za franciscejski kataster.\n4.  **Zadnja vrstica (št. 32):** Zadnji vnos s št. **3** v stolpcu *Nr.* in vrsto stavbe ***Futterh.*** (okrajšava za *Futterhaus* – hlev/skladišče za krmo) ima zelo velik areal (**1849**), kar kaže na večjo gospodarsko poslopje (morda skupaj s pripadajočim dvoriščem).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790169484,
+  "id": "20260923211610c66a6ffc034b49bf",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260923211610c66a6ffc034b49bf",
+  "usage": {
+    "completion_tokens": 1226,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3138
+  }
+}

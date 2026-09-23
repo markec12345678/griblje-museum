@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je natančna transkripcija vseh vrstic tabele **„Protocoll der Bau Parcellen“** (Seznam stavbnih parcel) za KO Griblje/Grüble iz leta 1825, ohranjena v originalni nemški obliki (vključno s črkovanjem in okrajšavami, kot so jih zapisovalci uporabljali).\n\n**Opomba:** V pregledanih vrsticah **ni bilo najdenih** oznak za gostilno (Gasthaus, Gastwirtschaft, Wirtshaus, Schenke, Krčma) ali trgovino (Handlung, Laden). Vse stavbe so označene kot „Häusl“ (hiška), „Wohnhaus“ (bivalna hiša) ali podobno.\n\n| Št. parcele | Lastnik (Vor- und Zuname) | Stan/Stand | Kje živi (Wohnort) | Št. hiše | Vrsta stavbe (Gattung) | Areal (Jahr) | Opombe (Anmerkung) |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **21** | *Hans Muffel* | Laindl | Griblje | 10 | Häusl | 172 | — |\n| **22** | *Hans Muffel* | — | — | 10 | Häusl | 19 | — |\n| **23** | *Peter Gorg* | — | — | 11 | Häusl | 101 | — |\n| **24** | *Chrysost Muffel* | — | — | 1 | Häusl | 28 | — |\n| **25** | *Chrysost Muffel* | — | — | 1 | Wohnhaus | 89 | — |\n| **26** | *Hlady Johan* | — | — | 2 | Häusl | 248 | — |\n| **27** | *Joseph Hribar* | — | — | 21 | Häusl | 84 | *Rop(ot?)...* (nečitno, rdeče črnilo) |\n| **28** | *Joseph Milke* | — | — | 31 | Häusl | 23 | — |\n| **29** | *Michael Gorg* | — | — | 66 | Häusl | 28 | — |\n| **30** | *Lothar Gorg* | — | — | 66 | Häusl | 28 | — |\n| **31** | *Bening Marle* | — | — | 65 | Haus | 18 | — |\n| **32** | *Bening Marle* | — | — | 62 | Wohnhaus | 60 | — |\n| **33** | *Veitkalec/Muffel* | — | — | 63 | Häusl | 64 | — |\n| **34** | *Milly Hanu* | — | — | 39 | Häusl | 16 | — |\n| **35** | *Milly Hanu* | — | — | 39 | Häusl | 5 | — |\n| **36** | *Hans Muffel* | — | — | 24 | Häusl | 81 | — |\n| **37** | *Milly Johan* | — | — | 32 | Häusl | 146 | *dito* (rdeče črnilo) |\n| **38** | *Benz Muffel* | — | — | 22 | Wohnhaus | 68 | — |\n| **39** | *Benz Muffel* | — | — | 28 | Häusl | 21 | — |\n| **40** | *Benz Milke* | — | — | 35 | Häusl | 29 | — |\n| **41** | *Benz Muffel* | — | — | 25 | Häusl | 6 | — |\n| **—** | *(skupna vrstica)* | — | — | **2** | **Feldräck** | **1083 / 960** | — |\n\n### Pripombe k transkripciji:\n1.  **Imena:** Priimki so zapisani v lokalni narečni obliki (npr. *Muffel*, *Gorg*, *Hlady*, *Hribar*, *Milke/Marle*, *Veitkalec*), ki se razlikuje od standardne nemščine.\n2.  **Stolpec „Stand“:** Pri št. 21 je zapisano *Laindl* (verjetno socialni stan/oznaka lastništva), pri ostalih je prazno.\n3.  **Vrsta stavbe (Gattung):** Najpogostejši vpisi so **Häusl** (mala hiša, vikend), **Wohnhaus** (bivalna hiša) in **Haus** (hiša). Zadnja vrstica navaja **Feldräck** (poljski rob/obrobje – verjetno skupni zemljiški opis za nekatere parcele).\n4.  **Areal:** Številke predstavljajo površino (verjetno v kvadratnih klfterjih ali podobnih enotah, glede na glavo tabele „Areal Jahrt“).\n5.  **Posebni vnosi:**\n    *   Vrsta **27**: V stolpcu *Anmerkung* je zapisano nekaj z rdečim črnilom (verjetno opomba o dajatvi ali statusu, delno berljivo kot *Rop...* ali *Rott...*).\n    *   Vrsta **37**: V stolpcu *Anmerkahng* je zapisano *dito* (isto), kar se verjetno nanaša na prejšnjo opombo ali status.\n6.  **Gostilne/Trgovine:** **NIČ** od naštetih tipov (Gasthaus, Wirtshaus, Handlung itd.) ni bilo zaznanih v stolpcu *Gattung*. Vse stavbe so bivalne narave.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790169370,
+  "id": "20260923211536974518f52f584560",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260923211536974518f52f584560",
+  "usage": {
+    "completion_tokens": 1447,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3359
+  }
+}
