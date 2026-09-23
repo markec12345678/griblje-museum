@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "trgovec Sutej. Pri vasi so odkopali hallstatske in rimske gro-\nbove. Izleti na arheološko sloviti Kučer pri Podzemlju, h gradu\nKrupi (s tujskimi sobami) itd. Iz Gradaca doma: Pirselu Adolf\n(1858—1929), portretist cvropskega slovesa.\n**Grm**, 69-11-9-2-0. Sr Crnomelj 9 km, so du zdr fiu Metlika\n6 km, žaud o pT' žcl Gradac 2 km, š žup Podzemelj 0.5 km. Nm\n152 m. Stoji na gričku, tik ban. ceste Metlika—Crnomelj. Po-\nljedelstvo, živinoreja in vinogradništvo (vinogradi na polbočju\nKučerju [220 m] in v 3 ure oddaljenih Drašičkih goricah). Izde-\nluje se še domače belokrajnsko platno. Pri vasi so odkrili bo-\ngata hallstatska in keltska grobišča. Zanimiva je bila staro-\ndavna kovačnica na Grmu, katere sledovi so še vidni. Tu so\nodkopali številne bronaste in železne predmete. Na strmem in\nosamelem Kučerju nad vasjo so odkopali utrjeno predzgodo-\nvinsko grobišče, ki ga je obdajal 2300 m dolg nasip. Okrog\nhriba so naleteli na mnoge gomile in najdbe iz hallstatske,",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186491,
+  "id": "2026092402012184c8b4e1f8ab4554",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092402012184c8b4e1f8ab4554",
+  "usage": {
+    "completion_tokens": 403,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1149,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1552
+  }
+}

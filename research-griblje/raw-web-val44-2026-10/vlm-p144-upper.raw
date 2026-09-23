@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "HEADWORD: Griblje\nSECTION: Občina Črnomelj\nGriblje, vas v občini Črnomelj. Leži na levem bregu reke Lahinje, 4 km jugovzhodno od Črnomlja. Nadmorska višina 186 m. Število prebivalcev (1931): 236. Hiš: 48. Površina katastra 519 ha. Župnija Adlešiči. Osnovna šola v kraju. Pošta in telegraf Črnomelj. Vas je razpotegnjena v smeri sever-jug. Na zahodni strani se dviga gozdnata vzpetina Gribljek (289 m). Zemljišče je ilovnato in peščeno. Prebivalci se ukvarjajo predvsem s kmetijstvom, vinogradništvom in živinarejo. V vasi sta mlin in žaga. Arheološko najdišče: grobišče iz železne dobe. Prvič omenjena leta 1334.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790187169,
+  "id": "20260924021240b42d1c3d6ef74f2b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260924021240b42d1c3d6ef74f2b",
+  "usage": {
+    "completion_tokens": 276,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 744,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1020
+  }
+}

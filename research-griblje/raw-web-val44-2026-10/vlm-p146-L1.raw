@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Crnomelj, Seime in Griblje na prehodu preko Lahinje. Na\nLahinji je mlin in zaga, nudi pa tudi idealen vodni sport in\nribolov. Prebivalstvo se bavi v glavnem z obrtništvom. Poljc-\ndeljstvo ne zadostuje niti za dom. Nekaj zaslužka daje prodaju\ngobanov, malin in jagod, katere hodijo nabirat v daljnc\nkočevske hribe okrog Golobinjka onstran Mirne gorc. S po-\nstaje Gradace se izvažajo hlodi, brzojavni drogi, železniški\npragi, deske, drva in dr. v razne kraje Jugolavije ter preko\nSušaka v Italijo. Gradac ima svoje ime od ustanoviteljev\ngradu, gospodov Graz (Graearji), ki se omenjajo tu že 1220.\nOd raznih poznejših lastnikov tega gradu je vitec von Fridau\nzgradil tu 1851 železolivarno. Tdaj je prišlo v Gradace mnogo\ntujih delavcev, ki so se tu za stalno naselili. Radi propadanja\nso 1883 železolivarno podrli in deloma iz njnih temeljnih\nkamnov 1885 zgradili sedanji zidani most čez Lahinjo. Poleg\ntega držita v Gradaču grajski leseni most čez Lahinjo v grajski\npark in na vrt Tropinik, ter leseni most preko suhega jarka v\ngrad sam. Ta grad je zuamenit ne samo kot ueckdanji z vodo\niu obzidjem obdani tabor, ampak tudi po svojih dveh rimslih\nspominskih napisnih kamnih, ki sta pri vhodu na vrt. Na vrtu\nstoji kamenit mavzolej, v katerem je pokopan Jurij Ziga barou\nGušič, zadnji od Gušičev, ki so tu gospodarili v Valvasorjevi\ndobí. Sedanji lastnik precej zapuščenega gradu je zagrebski\ntrgovce Šutej. Pri vasi so odkopali hallstatske in rimske gro-\nbove. Izleti na arhcologsko sloviti Kučer pri Podzemlju, h gradu",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186480,
+  "id": "2026092402010326ad31782cc6489c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092402010326ad31782cc6489c",
+  "usage": {
+    "completion_tokens": 600,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1325,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1925
+  }
+}

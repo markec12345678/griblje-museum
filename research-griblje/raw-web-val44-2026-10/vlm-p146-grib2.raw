@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Kučerju |220 m| in v 3 ure oddaljenih Draščkih goricah). Izde-\nlujajo se še domače belokranjsko platno. Pri vasi so odkrili bo-\ngata hallstatske in keltska grobišča. Zanimiva je bila sta-\ndavna kovačnica na Grmu, katero sledovi so še vidni. Tu so\nodkopali številne bronaste in železne predmete. Na strmem in\nosamlem Kučerju nad vasjo so odkopali utrjeno predzgodov-\ninsko grobišče, ki ga je obdajal 2300 m dolg nasip. Okrog\nhriba so naleteli na mnoge gomile in najdbe iz hallstatske, Kučerju, temveč tudi okrog vasi so odkrili hallstatske in\nlaténske gomile ter sledeove fuzinarstva. Tudi rimske izkopine\nimamo. Z uporabi Podzemlja (dek. Semić, škof. ljublj.) ima\n2667 duš. Pokopališče. Zupnja cerkev sv. Martina je bila do-\nnujevno sezidana 1375. Prvotno je bila podr. črnomeljske pra-\nfare, samostojna je postala pred 1338, ko je bila skupno z\nmaterjo župnijo inkorporirana nemškemu viteškemu redu, kot\nje še danes. L. 1785. se je izločila iz nje župnija v Adlešičih.\n\n9",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186356,
+  "id": "20260924015904de72116ad3114e58",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260924015904de72116ad3114e58",
+  "usage": {
+    "completion_tokens": 407,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1012,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1419
+  }
+}

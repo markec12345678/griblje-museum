@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "grad sam. Ta grad je zuamenit ne samo kot nuckdanji z vodo\nin obzidjem obdani tabor, ampak tudi po svojih dveh rimskih\nspominskih napisnih kamnih, ki sta pri vhodu na vrt. Na vrtu\nstoji kamenit mavzolej, v katerem je pokopan Jurij Ziga barou\nGušič, zadnji od Gušičev, ki so tu gospodarili v Valvasorjevi\ndobí. Sedanji lastnik precej zapuščenega gradu je zagrebaški\ntrgovec Šutej. Pri vasi so odkopali hallstattske in rimske gro-\nbove. Izleti na arheološko sloviti Kučer pri Podzemlju, h gradu\nKrupi (s tujskimi sobami) itd. Iz Gradaca doma: Pirsch Adolf\n(1858—1929), portretist evropskega slovesa.\n\n**Griblje**, 69-11-9-2-0. Sr Črnomelj 9 km, so du zdr fin Metlika\n6 km, žaud o pT žcl Gradače 2 km, š žup Podzemlja 0.5 km. Nm\n152 m. Stoji na gričku, tik ban. ceste Metlika—Črnomelj. Po-\nličdelstvo, živinoreja in vinogradništvo (vinogradi na pobočju\nKučerju [220 m] in v 3 ure oddaljenih Draščkih goricah). Izde-\nluje se še domače belokrajjsko platno. Pri vasi so odkrili bo-\nPodzemlji, 122-18-17-1-0. Sr Črnomelj 9 km, so du zdr fin\nMetlika 6 km, žaud žel o pT Gradac 2 km, š žup v kraju. Šola\nust. 1857, 5 odd. Javna kujž., SKJ, DKfid, Prosv. d. »Bela Kra-\njina«, 2 Gas., PRK, PJS. Nm 158 m. Ta majlna župnijska vas\nstoji na položenem pobočju Kučerja (220 m), komaj 50 m od bau.\nceste. Dohod z vsemi vozili. Kučer, ki je znamenit po svoji\npredzgodoovinski naselbini (gl. Grm), slovi tudi kot lepa raz-\ngledna točka. Na njegovi v. iu j. strani so zasajeni vinogradi,\nostalo pa zavzemajo gozdovi. Poljedelstvo in živinoreja. Prost\nribolov v Kolpi. Prodaja živine in svinj. Lepo naravno kopalíšče\n:na Viru« (v poletju se segreje voda v Kolpi do 31° C). Ugodcu\nkraj za letoviščarje. Gostilna s prenočišči. Ne le na bližnjem\nKučerju, temveč tudi okrog vasi so odkrili hallstattske in\nlaténske gomile ter sledove fuzinarstva. Tudi rimske izkopine",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186344,
+  "id": "20260924015836db6b41daa5124da2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260924015836db6b41daa5124da2",
+  "usage": {
+    "completion_tokens": 796,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1316,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2112
+  }
+}

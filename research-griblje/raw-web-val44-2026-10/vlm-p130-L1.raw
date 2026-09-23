@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "130\nSREZ ČRNO\n\nCerkveno je pripadala do 1751 oglejskim patriarhom, nato do 1787 goriški nadškofiji in poslej ljubljanski škofiji. Podzemeljska rojaka: Barle Jancz (r. 1869), kanonik v Zagrebu; Tomc Matija (r. 1899), skladatelj.\n\n**Priložci, 43-10-9-0.** Sr fin Črnomelj 8 km, so du zdr Metlika 9 km, žand žel o pT Gradac 2 km, š žup Podzemelj 1 km. Nm 157 m. Naselje stoji v ravnini med njivami in stoljniki, 1 km od ban. ceste, dostopno z vozom. Prebivalstvo se preživlja cnako kot Boginja vas.\n\n**Primostek, 124-19-15-3-1.** Sr Črnomelj 10 km, so du zdr fin Metlika 5 km, žand žel o pT Gradac 3 km, š žup Podzemelj 1.5 km. Nm 140 m. Vas stoji ob ban. cesti na desnem bregu Lahinje, nedaleč z. od njenega izliva v Kolpo. Na levem bregu stoječi del Primostka spada pod Metliko. Preko Lahinje pelje lescn most. Poljedelstvo in živinoreja, uckaj vinogradov v Drašičih.\n\n**Škrilje, 24-3-2-1-0.** Sr Črnomelj 8 km, so du zdr fin Metlika 8 km, žand žel o pT Gradac 1 km, š žup Podzemelj 0.5 km. Nm 137 m. Tri kmetije na ravnini pri Kolpi, 0.7 km od ban. ceste.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186688,
+  "id": "2026092402043531060ce6ecdd4c65",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092402043531060ce6ecdd4c65",
+  "usage": {
+    "completion_tokens": 477,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1513,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1990
+  }
+}

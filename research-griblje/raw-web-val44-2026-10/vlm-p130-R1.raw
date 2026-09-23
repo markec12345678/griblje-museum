@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "ČRNOMELJ\n\nCrnomelj in Karlovec »Strnišče« in odtod proti kolodvoru\n»Borštek«. Nad pomolom na s. strani segajo liše na Požčgi v\nrcber vinorodne Veselice, ki rode rdeče vino. Sicer imajo Me-\ntličani svoje glavne vinograde po goricah pri Drašičih, a ne-\nkaj tudi v Brečah. Pri z. vrsti hiš na pomolu je od »Strnišča«\nše mogoče videti, kako so nadzidane na nekdanjc mestno ob-\nzidje. Nova drž. cesta se je izognila pomolu in tako glavnemu\nmetliškemu trgu. Odkar nima mesto obzidja, se razvija ob se-\ndanji drž. cesti, ko pa je 1914 stekla železnica, se je obrnil\nrazvoj na jv. proti kolodvoru in Kolpi. Razvoj mesta je\nv ostalem neznaten, ker ni prepotrebne industrije. Mesto tvori\ngospodarsko-prometno središče za v. del Bele Krajine in bliž-\nnjo obkolpsko Hrvatsko. Zlasti se v njem gospodarsko uveljav-\nljajo Zumberčani. Poleg uradništva muogo trgovine in obrti.\nRazen drž. ceste Karlovcc—Novo mesto drž iz mesta ban. ceste\nv Črnomelj, Semič, Radovico, Drašiče in Božakovo. M. jc mir-\nno, ceneno in gostoljubno letoviško mesto, katerega glavna pri-\nvlačnost je poleti do 31° C topla Kolpa (kopališče v Križevski\nvasi) in lepa vinorodna okolica. Hotel in gostilne s tujskimi",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186701,
+  "id": "202609240204485936e02ee2af43bc",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609240204485936e02ee2af43bc",
+  "usage": {
+    "completion_tokens": 479,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1513,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1992
+  }
+}

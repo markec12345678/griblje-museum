@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Gor. Dobravice, 92-16-4-2-0.**\nGor. Dobravice, 92-16-4-2-0. Sr Črnomelj 9 km, so du zdr fin Metlika 5 km, žand o pT Gradac 2 km, žel Dobravice 0.5 km, š žup Podzemelj 2.5 km. Nm 165 m. Vas leži na gričku, med njivami, travniki in vinogradi, proti s. in z. gozdovi. Ostalo kot v Dolnjih Dobraviceh.\n\n**Gradac, 382-83-74-5-8.**\nGradac, 382-83-74-5-8. Sr fin Črnomelj 7 km, so du zdr Metlika 8 km, žand žel o pT š v kraju, žup Podzemelj 2 km. Sola ustanovljena 1933, 2 oddelka, SKJ, Sas., DKfid. Nm 153 m. Vas stoji na terasah na obeh bregovih Lahinje, ki tu napravi okrog gradu velik zavoj. Važno križišče čest v Metliko, Črnomelj, Semič in Griblje na prehodu preko Lahinje. Na Lahinji je mlin in žaga, nudi pa tudi idealen vodni sport in ribolov. Prebivalstvo se bavi v glavnem z obrtništvom. Poljc-",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790186605,
+  "id": "2026092402031309c817b4a5004194",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092402031309c817b4a5004194",
+  "usage": {
+    "completion_tokens": 368,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1063,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1431
+  }
+}

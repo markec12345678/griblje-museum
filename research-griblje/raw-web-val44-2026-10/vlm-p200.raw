@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the scanned page of the 1937 Slovenian gazetteer (Slovenski zemljevid), here is the information you requested:\n\n1.  **Printed Page Number:** **179** (visible in the top right corner).\n2.  **First and Last Bold Headwords:**\n    *   **First:** **Petrovci** (or **Petrovje**, depending on whether the first entry is considered a continuation; **Petrovci** is the first full bold entry at the start of the text block).\n    *   **Last:** **Veliki Jelnik**.\n3.  **Mention of Griblje:** **Yes**, there is a mention of **Griblje**. It appears in the third paragraph under the entry for **Trojane**:\n    > \"...zand Griblje, nad 23 km. Na ca. 500 m, zand Domažle 22 km...\"",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790180657,
+  "id": "20260924002405af257400a8114aa5",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260924002405af257400a8114aa5",
+  "usage": {
+    "completion_tokens": 206,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1460,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1666
+  }
+}

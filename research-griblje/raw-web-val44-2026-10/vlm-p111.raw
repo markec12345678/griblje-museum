@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the image provided, here is the report:\n\n1.  **Printed page number:** Not visible (the image appears to be a blank or nearly blank page with only a few stray marks).\n2.  **First and last bold headwords:** None found.\n3.  **List of all bold headwords:** None.\n4.  **Mention of Griblje?** No.\n\n**Note:** The uploaded image does not contain any legible text or entries from the gazetteer. It appears to be a scan of an empty page or the back of a leaf.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790180884,
+  "id": "202609240027462ce6b476129e492a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609240027462ce6b476129e492a",
+  "usage": {
+    "completion_tokens": 122,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1479,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1601
+  }
+}
