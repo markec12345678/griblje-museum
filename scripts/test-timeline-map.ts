@@ -443,8 +443,8 @@ section("T7 — PODATKOVNA REGRESIJA (invariante osnovne linije)");
 {
   check(seedExhibits.length === 113 && new Set(seedExhibits.map((e) => e.museumNo)).size === 113, "T7.1 113 zapisov, 113 MVG številk (34. val: + srednje-njive)");
   const rows = seedExhibits.reduce((n, ex) => n + ex.sources.length, 0);
-  check(rows === 575, "T7.2 575 vrstic virov", `=${rows}`);
-  check(SOURCE_USAGE.size === 456, "T7.3 456 identitet virov (38. val: +3 — andric-2007-dp34, andric-2001-oxford-dphil, rtv-neurje-2023)", `=${SOURCE_USAGE.size}`);
+  check(rows === 578, "T7.2 578 vrstic virov", `=${rows}`);
+  check(SOURCE_USAGE.size === 459, "T7.3 459 identitet virov (39. val: +3 — odeon-donatorstvo-2020, arso-kv2021-dragosi-griblje, miklavcic-1965-steljniki)", `=${SOURCE_USAGE.size}`);
   const shared = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length >= 2).length;
   check(shared === 67, "T7.4 67 deljenih virov (≥2 zapisa; 36. val: +1 — etnolog-1937-1939-sopek-pdf med MVG-014/043)", `=${shared}`);
   // WorldCat 821110335: dve vrstici (različni imeni, ENAK URL) → en sourceKey.
@@ -548,11 +548,11 @@ section("T8 — HTTP REGRESIJA (živ strežnik :3000)");
       }
     }
     check(
-      od.counts?.exhibits === 113 && od.counts?.sources === 575,
-      "T8.3 OpenData: 113 zapisov / 575 virov",
+      od.counts?.exhibits === 113 && od.counts?.sources === 578,
+      "T8.3 OpenData: 113 zapisov / 578 virov",
       `${od.counts?.exhibits}/${od.counts?.sources}`
     );
-    check(withKey === 575 && totalRows === 575, "T8.4 OpenData sourceKey 575/575", `${withKey}/${totalRows}`);
+    check(withKey === 578 && totalRows === 578, "T8.4 OpenData sourceKey 578/578", `${withKey}/${totalRows}`);
 
     const qr = await fetch(BASE + "/?exhibit=zvon-2008");
     const html = await qr.text();
