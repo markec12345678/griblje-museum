@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>VAČ - Virtualna Čitalnica</title>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/css/bootstrap-grid.min.css"></link>
+<link id="theme" type="text/css" rel="stylesheet" href="/fonts/style.css" />
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+<link rel="stylesheet" href="/js/jstree.3.3.7/themes/default/style.css" />
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac.css"></link>
+
+<link id="theme" type="text/css" rel="stylesheet" href="/css/vac_Default.css" title="default"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnWhite.css" title="blackOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_WhiteOnBlack.css" title="whiteOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnBeige.css" title="blackOnBeige"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnWhite.css" title="blueOnWhite"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnGreen.css" title="blackOnGreen"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnYellow.css" title="blackOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlueOnYellow.css" title="blueOnYellow"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_YellowOnBlue.css" title="yellowOnBlue"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_TurquoiseOnBlack.css" title="turquoiseOnBlack"></link>
+<link id="theme" type="text/css" rel="alternative stylesheet" href="/css/vac_BlackOnPink.css" title="blackOnPink"></link>
+<link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/themes/smoothness/jquery-ui.css">
+    </link>
+
+<!-- <script src="/js/jquery-3.3.1.js"></script> -->
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="/js/jquery-ui-1.12.1.custom/i18n/jquery-ui-i18n.min.js"></script>
+<script src="https://prostor.sjas.gov.si//gms-sdk.js" data-sdk-version="4"></script>
+
+
+    <script>
+/*<![CDATA[*/
+var errMsgDefault = "Pri\u0161lo je do napake. Obrnite se na skrbnika sistema.";
+var defaultLocale = "sl";
+var currentLocale = "sl";
+/*]]>*/
+</script>
+
+<script src="/js/Popper.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+
+<script src="/js/vac.js"></script>
+    
+
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/jstree.3.3.7/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<!-- <script src="/js/jspdf-1.5.3/jspdf.min.js"></script> -->
+
+<style>
+/*body {
+    font-family: ;
+    font-family: OpenDyslexicAlta;
+  }*/
+/** {
+    box-sizing: border-box;
+}*/
+
+/*
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+*/
+/*label {
+	padding: 6px 6px 12px 0;
+	display: inline-block;
+}
+
+#input[type=submit] { #
+	background-color: #14789F;
+	color: white; #
+	padding: 12px 20px; #
+	border: none; #
+	border-radius: 4px; #
+	cursor: pointer; #
+	float: left;
+	#
+}*/
+
+/*
+input[type=submit]:hover {
+    background-color: #79B0C5;
+}
+*/
+
+/*
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}*/
+
+/* Clear floats after the columns */
+/*.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}*/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}*/
+
+#skiptocontent a
+{
+position:absolute;
+#left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+</style>
+
+</head>
+<script>
+/*<![CDATA[*/
+    var pageTitle="VA\u010C | Iskanje";
+    document.title = pageTitle;
+ /*]]>*/
+</script>
+<body>
+    <div id="pageContainer" class="container-fluid">
+        <div id="pageHeader">
+            <header data-locale="sl" data-defaultLocale="sl" data-msgEditRow="Uredi" data-msgDeleteRow="Izbriši">
+            <div id="confirmationDialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="confirmationDialog_Text"
+                >
+                <div>
+                    <span id="confirmationDialog_Title">
+                        <span id="confirmationDialog_Text"></span> <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup1" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel1"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput1" aria-label="Vnosno polje">
+                        <br />
+                    </span>
+                    <span id="confirmationDialog_UserInputGroup2" style="display:none">
+                        <label class="form-control-label form-control-sm" id="confirmationDialog_UserInputLabel2"></label><input type="text" onkeydown="if(event.keyCode===13){confirmationDialog_ButtonOK.click();}" class="form-control form-control-sm" id="confirmationDialog_UserInput2" aria-label="Vnosno polje 2">
+                        <br />
+                    </span>
+                    <br />
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonYes" value="Da" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonNo" value="Ne" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonCancel" value="Prekliči" aria-describedby="confirmationDialog_Text">
+                    <input type="button" class="btn btn-primary form-control-label form-control-sm" id="confirmationDialog_ButtonOK" value="V redu" aria-describedby="confirmationDialog_Text">
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <button id="explanationDialogToggler" type="button" class="btn btn-primary" data-toggle="modal" data-target="#explanationDialog" hidden="true">Launch demo modal</button>
+            <div class="modal fade" id="explanationDialog" tabindex="-1" role="dialog" aria-labelledby="explanationDialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="explanationDialogTitle">Dodatno pojasnilo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Zapri">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="explanationDialogBody">Podatki se zabeležijo na podlagi vpogleda v dokazilo o invalidnosti in se hranijo za čas uporabe arhivskega gradiva ali največ 1 leto oziroma do preklica dovoljenja s strani uporabnika.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" data-dismiss="modal" value="Zapri" aria-label="Zapri" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="glassPane" tabindex="0"></div>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary2" >
+                <!-- Button trigger modal -->
+                <a class="navbar-brand hover-nochange" href="/vac">
+                    <input class="glyph-logo bg-primary2 no-shadow" type="button" aria-label="Domov" style="vertical-align:top;background-size:9rem;height:3rem;width:7rem;border:none!important;"></input>
+                    <span class="inARow logo-text-big logo-text-color">VAČ</span><span class="inARow logo-text-big logo-text-color">&nbsp;-&nbsp;</span> <span
+                        class="inARow logo-text-small logo-text-color" style="z-index: 0">VIRTUALNA ARHIVSKA ČITALNICA</span>
+                </a> 
+                <div id="skiptocontent">
+                    <a href="#page" class=""><span>Skoči na glavno vsebino</span></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Meni za uporabniški profil in dostopnost">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <ul id="mainNavBar" class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-header headerNav-link" href="#" id="navbardropUserProfile" data-toggle="dropdown"
+                                aria-label="Uporabniški profil" data-parent="#navbarSupportedContent" title="Uporabniški profil">
+                                
+                                <input class="glyph-user" aria-label="Uporabniški profil" type="button" tabindex="-1" style="border:none!important;"></input>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="https://vac.sjas.gov.si/vac/login"
+                                    style="font-size:1rem">Prijava</a>
+                                
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${session!= null && session.userBean != null && session.userBean.loggedIn}" class="dropdown-item" href="/vac/userprofile/mydocuments"
+                                    th:utext="#{Header.UserProfile.MyDocs}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Moji dokumenti</a -->
+                                
+                                
+                                
+                                
+                                <!-- a th:if="${permissions.contains(8L)}" class="dropdown-item" href="/vac/userprofile/advanced/prepareAEG"
+                                    th:utext="#{Header.UserProfile.PrepareAEG}" style="font-size:1rem"
+                                    th:onclick="'dialog(\'' + #{General.NotAvailable} + '\',null,null,null,null,false,false,true,false);return false;'">Priprava AEG</a -->
+                                
+                                
+                                
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-text-height headerNav-link" href="#" id="navbardropFontSize" data-toggle="dropdown" data-parent="#navbarSupportedContent" title="Velikost pisave"
+                                aria-label="Velikost pisave"></a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right" style="font-size: 14px">
+                                <a class="dropdown-item" style="font-size: 14px;" href="#" onclick="changeFontSize('14px', true)">Privzeto</a>
+                                <a class="dropdown-item" style="font-size: 1.25em;" href="#" onclick="changeFontSize('1.25rem', true)">125%</a>
+                                <a class="dropdown-item" style="font-size: 1.50em;" href="#" onclick="changeFontSize('1.50rem', true)">150%</a>
+                                <a class="dropdown-item" style="font-size: 2.00em;" href="#" onclick="changeFontSize('2.00rem', true)">200%</a>
+                                <a class="dropdown-item" style="font-size: 14pt;" href="#" onclick="changeFontSize('14pt', true)">14pt</a>
+                                <a class="dropdown-item" style="font-size: 16pt;" href="#" onclick="changeFontSize('16pt', true)">16pt</a>
+                                <a class="dropdown-item" style="font-size: 18pt;" href="#" onclick="changeFontSize('18pt', true)">18pt</a>
+                                <a class="dropdown-item" style="font-size: 20pt;" href="#" onclick="changeFontSize('20pt', true)">20pt</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-font headerNav-link" href="#" id="navbardropFontFamily" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Vrsta pisave" title="Vrsta pisave"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Privzeto</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial;" href="#" onclick="changeFontFamily('Arial', 'normal')">Arial</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Arial Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Arial Bold', 'bold')">Arial bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana;" href="#" onclick="changeFontFamily('Verdana', 'normal')">Verdana</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: Verdana Bold; font-weight: bold;" href="#" onclick="changeFontFamily('Verdana Bold', 'bold')">Verdana bold</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexic;" href="#" onclick="changeFontFamily('OpenDyslexic', 'normal')">Open Dyslexic</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: OpenDyslexicAlta;" href="#" onclick="changeFontFamily('OpenDyslexicAlta', 'normal')">Open Dyslexic Alta</a>
+                                <a class="dropdown-item" style="font-size:1rem;font-family: DidactGothic;" href="#" onclick="changeFontFamily('DidactGothic', 'normal')">Didact Gothic</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link head_btn glyph-eye-plus headerNav-link" href="#" id="navbardropColorScheme" data-toggle="dropdown" data-parent="#navbarSupportedContent"
+                                aria-label="Barvna shema" title="Barvna shema"> </a>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" href="#" onclick="switchStyle('default')" id="defualt">Privzeta barvna shema</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:white!important" onclick="switchStyle('blackOnWhite')" id="blackOnWhite" href="#">Črno na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:white!important;background-color:black!important" onclick="switchStyle('whiteOnBlack')" id="whiteOnBlack" href="#">Belo na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:beige!important" onclick="switchStyle('blackOnBeige')" id="blackOnBeige" href="#">Črno na bež</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:white!important" onclick="switchStyle('blueOnWhite')" id="blueOnWhite" href="#">Modro na belem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:green!important" onclick="switchStyle('blackOnGreen')" id="blackOnGreen" href="#">Črno na zelenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:yellow!important" onclick="switchStyle('blackOnYellow')" id="blackOnYellow" href="#">Črno na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:blue!important;background-color:yellow!important" onclick="switchStyle('blueOnYellow')" id="blueOnYellow" href="#">Modro na rumenem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:yellow!important;background-color:blue!important" onclick="switchStyle('yellowOnBlue')" id="yellowOnBlue" href="#">Rumeno na modrem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:turquoise!important;background-color:black!important" onclick="switchStyle('turquoiseOnBlack')" id="turquoiseOnBlack"
+                                    href="#">Turkizna na črnem</a>
+                                <a class="dropdown-item dropdown-item-colorscheme" style="font-size:1rem;color:black!important;background-color:pink!important" onclick="switchStyle('blackOnPink')" id="blackOnPink" href="#">Črna na roza</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=en" aria-label="Jezik: Angleški" title="Jezik: Angleški"
+                            onclick="return setLocale(&#39;en&#39;);">EN</a></span>
+                        </li>
+                        <li>
+                            <span><a class="nav-link head_btn headerNav-link" href="/?lang=sl" aria-label="Jezik: Slovenski" title="Jezik: Slovenski"
+                            onclick="return setLocale(&#39;sl&#39;);">SL</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class='navbar-shadow'>
+                <div class='master_op_center' style="padding-top: 0.05em;">
+
+                    <nav class="navbar navbar-expand-md navbar-light bg-light2">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                            aria-label="Glavni meni">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent2">-->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+                            <ul class="navbar-nav mr-auto mx-auto">
+                                <li class="nav-item active">
+                                    <div>
+                                        <a class="nav-link" href="/vac" aria-label="Prva stran" title="Prva stran">
+                                            <div style="width:120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-home'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Prva stran</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <!-- li class="nav-item" th:if="${permissions.contains(7L)}" -->
+                                
+                                <li class="nav-item dropdown">
+                                    <div>
+                                        <a class="nav-link" href="/vac/search/getfullTextPage" aria-label="Iskanje" title="Iskanje">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <!-- <a class="nav-link" href="#" th:aria-label="#{Header.Search}" data-toggle="dropdown" th:title="#{Header.Search}">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-search'></div>
+                                                <div class="glyph-text" style="margin: -5px;" th:utext="#{Header.Search}">Iskanje</div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="/vac/search/getfullTextPage" th:utext="#{FullTextSearch.Title}" style="font-size:1rem">Iskanje po besedilu</a>
+                                            <a class="dropdown-item" href="/vac/search/fieldSearch" th:utext="#{FieldSearch.Title}" style="font-size:1rem">Iskanje po poljih</a>
+                                            <a class="dropdown-item" href="/vac/search/archivePlanSearch" th:utext="#{ArchivePlanSearch.Title}" style="font-size:1rem">Iskanje po tektoniki arhiva</a>
+                                            <a class="dropdown-item" href="/vac/search/descriptorSearch" th:utext="#{DescriptorSearch.Title}" style="font-size:1rem">Iskanje po deskriptorjih</a>
+                                        </div> -->
+                                    </div>
+                                </li>
+                                
+                                
+                                
+                                
+                                <li class="nav-item">
+                                    <div>
+                                        <a class="nav-link" href="/vac/userhelp" aria-label="Pomoč" title="Pomoč">
+                                            <div style="width: 120px; text-align: center;">
+                                                <div style="font-size: 36px;" class='glyph-help'></div>
+                                                <div class="glyph-text" style="margin: -5px;">Pomoč</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const link = document.getElementById('reportErrorLink');
+                                if (!link) return;
+
+                                link.addEventListener('click', async (event) => {
+                                    event.preventDefault();
+
+                                    try {
+                                        const elementToCapture = document.documentElement;
+
+                                        const canvas = await html2canvas(elementToCapture, {
+                                            useCORS: true,
+                                            backgroundColor: '#fff',
+                                        });
+
+                                        const dataUrl = canvas.toDataURL('image/png', 0.9);
+                                        sessionStorage.setItem('errorScreenshot', dataUrl);
+                                        window.location.href = link.getAttribute('href');
+                                    } catch (err) {
+                                        window.location.href = link.getAttribute('href');
+                                    }
+                                });
+                            });
+                        </script>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        </div>
+        <div id="pageBody" class="container-fluid">
+            <div class="row justify-content-start">
+                <div class="d-print-none leftmenu">
+                    <div id="wrapper" class="toggled tblbgr">
+                        <div>
+                            <div>
+                                <a href="/help/help.htm#iskanje" target="help" onclick="$(this).blur();" class="lvl3">
+                                    <label class="glyph-help-l"></label>&#160;&#160;
+                                    <span style="display: inline;" class="va_tb h6 c_leftmenu ">Pomoč</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        		<div id="page" class="col-sm-10" style="min-height: 500px;"><!-- <div id="page" style="width: 60%;"> -->
+        			<div class="navbar-fixed-top" style="padding-right: 0; padding-left: 20px;">
+        				<div class="clearfix"></div>
+        				<div id="content">
+        					<form id="body" name="body" method="post" action="/vac/search/fieldSearchFind" class="main_bg">
+        						<div>
+                                    <div class="inARow tblbgr-tabBorderRight"><h5 style="padding: 0 10px 0 10px;"><a href="/vac/search/getfullTextPage">Iskanje po besedilu</a></h5></div>
+                                    <h3 class="inARow tblbgr-tabBorderRight" style="padding:0 10px 10px;margin-bottom:0px;">Iskanje po poljih</h3>
+                                    <div class="inARow tblbgr-tabBorderRight"><h5 style="padding: 0 10px 0 10px;"><a href="/vac/search/archivePlanSearch">Iskanje po tektoniki arhiva</a></h5></div>
+<!--                                    <div class="inARow"><h5 style="padding: 0 10px 0 10px;"><a href="/vac/search/descriptorSearch" th:utext="#{DescriptorSearch.Title}">Iskanje po deskriptorjih</a></h5></div>-->
+                                    <div class="tblbgr" style="min-height: 300px;padding:20px;">
+        								<div class="row">
+        									<hr />
+        								</div>
+
+        								<div class="row form-group">
+        									<div class="col-sm-2">
+        										<select id="field1" name="field1" class="form-control form-control-sm" title="Iskalno polje 1" aria-label="Iskalno polje 1">
+                                                    <option value="10041">Jezik</option>
+                                                    <option value="10068">Kraj nastanka</option>
+                                                    <option value="1" selected="selected">Naslov PE</option>
+                                                    <option value="6">Nivo popisa</option>
+                                                    <option value="10047">Opomba</option>
+                                                    <option value="2">Signatura PE</option>
+                                                    <option value="3">Signatura PE AP</option>
+                                                    <option value="10034">Vsebina PE</option>
+                                                    <option value="8">Vsebuje tudi</option>
+                                                    <option value="17">Zvrsti arhivskega gradiva</option>
+                                                </select>
+        									</div>
+        									<div class="col-sm-1">
+                                                <select id="searchMode1" class="form-control form-control-sm" title="Način iskanja 1" aria-label="Način iskanja 1" name="mode1">
+                                                    <option value="0" selected="selected">začne z</option>
+                                                    <option value="1">vsebuje</option>
+                                                    <option value="2">zaključi z</option>
+                                                    <option value="3">je enako</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="text" placeholder="Vnesite iskano besedilo"
+                                                        class="form-control form-control-sm" id="text1" name="text1" value="">
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <select id="searchLink1" class="form-control form-control-sm" title="Povezava na iskalno polje 2"
+                                                aria-label="Povezava na iskalno polje 2" onChange="linkChanged(this.value, 2)" name="link1">
+                                                    <option value="-1"></option>
+                                                    <option value="AND">IN</option>
+                                                    <option value="OR">ALI</option>
+                                                    <option value="AND_NOT">IN NE</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4"></div>
+        								</div>
+                                        <div class="row form-group" id="row2Space" style="display:none">
+                                            <div class="col-sm-12">&nbsp;</div>
+                                        </div>
+                                        <div class="row form-group" id="row2" style="display:none">
+                                            <div class="col-sm-2">
+                                                <select id="field2" name="field2" class="form-control form-control-sm" title="Iskalno polje 2" aria-label="Iskalno polje 2">
+                                                    <option value="10041">Jezik</option>
+                                                    <option value="10068">Kraj nastanka</option>
+                                                    <option value="1" selected="selected">Naslov PE</option>
+                                                    <option value="6">Nivo popisa</option>
+                                                    <option value="10047">Opomba</option>
+                                                    <option value="2">Signatura PE</option>
+                                                    <option value="3">Signatura PE AP</option>
+                                                    <option value="10034">Vsebina PE</option>
+                                                    <option value="8">Vsebuje tudi</option>
+                                                    <option value="17">Zvrsti arhivskega gradiva</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <select id="searchMode2" class="form-control form-control-sm" title="Način iskanja 2" aria-label="Način iskanja 2" name="mode2">
+                                                    <option value="0" selected="selected">začne z</option>
+                                                    <option value="1">vsebuje</option>
+                                                    <option value="2">zaključi z</option>
+                                                    <option value="3">je enako</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="text" placeholder="Vnesite iskano besedilo"
+                                                        class="form-control form-control-sm" id="text2" name="text2" value="">
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <select id="searchLink2" class="form-control form-control-sm" title="Povezava na iskalno polje 3"
+                                                aria-label="Povezava na iskalno polje 3" onChange="linkChanged(this.value, 3)" name="link2">
+                                                    <option value="-1"></option>
+                                                    <option value="AND">IN</option>
+                                                    <option value="OR">ALI</option>
+                                                    <option value="AND_NOT">IN NE</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4"></div>
+                                        </div>
+                                        <div class="row form-group" id="row3Space" style="display:none">
+                                            <div class="col-sm-12">&nbsp;</div>
+                                        </div>
+                                        <div class="row form-group" id="row3" style="display:none">
+                                            <div class="col-sm-2">
+                                                <select id="field3" name="field3" class="form-control form-control-sm" title="Iskalno polje 3" aria-label="Iskalno polje 3">
+                                                    <option value="10041">Jezik</option>
+                                                    <option value="10068">Kraj nastanka</option>
+                                                    <option value="1" selected="selected">Naslov PE</option>
+                                                    <option value="6">Nivo popisa</option>
+                                                    <option value="10047">Opomba</option>
+                                                    <option value="2">Signatura PE</option>
+                                                    <option value="3">Signatura PE AP</option>
+                                                    <option value="10034">Vsebina PE</option>
+                                                    <option value="8">Vsebuje tudi</option>
+                                                    <option value="17">Zvrsti arhivskega gradiva</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <select id="searchMode3" class="form-control form-control-sm" title="Način iskanja 3" aria-label="Način iskanja 3" name="mode3">
+                                                    <option value="0" selected="selected">začne z</option>
+                                                    <option value="1">vsebuje</option>
+                                                    <option value="2">zaključi z</option>
+                                                    <option value="3">je enako</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="text" placeholder="Vnesite iskano besedilo"
+                                                        class="form-control form-control-sm" id="text3" name="text3" value="">
+                                            </div>
+                                            <div class="col-sm-1"></div>
+                                            <div class="col-sm-4"></div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-sm-12">&nbsp;</div>
+                                        </div>
+        								<div class="fade collapse" id="extendedOptions">
+        									
+                                            <div><div>
+        <!--  8. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label h5">Iskanje omejite na:</label>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <!--  9. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label id="labelSearchSearchRange" class="form-control-label form-control-sm">Področje iskanja</label>
+            </div>
+            <div class="col-sm-6">
+                <select id="searchRange" class="form-control form-control-sm" name="searchRange" aria-labelledby="labelSearchSearchRange"
+                onchange="if(this.value==0){$('#searchRangeWarningCommon').hide();}else{$('#searchRangeWarningCommon').show();}">
+                    <option value="0" selected="selected">(Celotni arhiv)</option>
+                    
+                    
+                    
+                </select>
+            </div>
+        </div>
+        <div class="row form-group" style="display:none" id="searchRangeWarningCommon">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-6">
+                <label class="form-control-label form-control-sm">Pozor! Področje iskanja je omejeno.</label>
+            </div>
+        </div>
+        <!--  10. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Področje iskanja (arhivi)</label>
+            </div>
+            <div class="col-sm-6">
+                <select id="searchRangeArchive" class="form-control form-control-sm" name="searchRangeArchive" onchange="if(this.value==0){$('#searchRangeWarningArchivesCommon').hide();}else{$('#searchRangeWarningArchivesCommon').show();}">
+                    <option value="">(Vsi arhivi)</option>
+                    <option value="SI_ZAL_NME">Zgodovinski arhiv Ljubljana, Enota v Novem mestu</option>
+                    <option value="SI_ZAL_TRŽ">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_RAD">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_JES">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_CER">Zgodovinski arhiv Ljubljana, Enota v Ljubljani, UE Cerknica</option>
+                    <option value="SI_ZAL_DOM">Zgodovinski arhiv Ljubljana, Enota v Ljubljani, UE Domžale</option>
+                    <option value="SI_ZAL_GRO">Zgodovinski arhiv Ljubljana, Enota v Ljubljani, UE Grosuplje</option>
+                    <option value="SI_ZAL_KAM">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI AS">Arhiv Republike Slovenije</option>
+                    <option value="SI_PAM">Pokrajinski arhiv Maribor</option>
+                    <option value="SI_PAK">Pokrajinski arhiv Koper</option>
+                    <option value="SI_PANG">Pokrajinski arhiv v Novi Gorici </option>
+                    <option value="SI_ZAC">Zgodovinski arhiv Celje</option>
+                    <option value="SI_ZAL_LJU">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAP">Zgodovinski arhiv na Ptuju</option>
+                    <option value="SI_ZAL_KOČ">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_LIT">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_LOG">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_RIB">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_VRH">Zgodovinski arhiv Ljubljana, Enota v Ljubljani</option>
+                    <option value="SI_ZAL_KRA">Zgodovinski arhiv Ljubljana, Enota v Kranju</option>
+                    <option value="SI_ZAL_ŠKL">Zgodovinski arhiv v Ljubljani, Enota v Škofji Loki</option>
+                    <option value="SI_ZAL_IDR">Zgodovinski arhiv v Ljubljani, Enota v Idriji</option>
+                    <option value="SI_ZAL_ČRN">Zgodovinski arhiv Ljubljana, Enota v Novem mestu, UE Črnomelj</option>
+                    <option value="SI_ZAL_MET">Zgodovinski arhiv Ljubljana, Enota v Novem mestu</option>
+                    <option value="SI_ZAL_TRE">Zgodovinski arhiv Ljubljana, Enota v Novem mestu</option>
+                </select>
+            </div>
+        </div>
+        <div class="row form-group" style="display:none" id="searchRangeWarningArchivesCommon">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-6">
+                <label class="form-control-label form-control-sm">Pozor! Področje iskanja je omejeno.</label>
+            </div>
+        </div>
+        <!--  11. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Časovno obdobje</label>
+            </div>
+            <div class="col-sm-1">
+                <label class="form-control-label form-control-sm">Od</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control form-control-sm" id="datepickerFrom" placeholder="Vnesite datum od (npr. 23.9.2026)" onblur="checkDates(this, true);" name="timePeriodFrom" value=""/>
+            </div>
+            <div class="col-sm-1">
+                <label class="form-control-label form-control-sm">do</label>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control form-control-sm" id="datepickerTo" placeholder="Vnesite datum do (npr. 23.9.2026)" onblur="checkDates(this, false);" name="timePeriodTo" value=""/>
+            </div>
+        </div>
+        <!--  12. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label id="labelSearchArchivalMaterialType" class="form-control-label form-control-sm">Vrsta arhivskega gradiva</label>
+            </div>
+            <div class="col-sm-6">
+                <select class="form-control form-control-sm" aria-labelledby="labelSearchArchivalMaterialType" id="archivalMaterialTypeId" name="archivalMaterialTypeId">
+                    <option value="-1"></option>
+                    <option value="10769">3D predmeti</option>
+                    <option value="10094">arhitekturne in tehnološke risbe</option>
+                    <option value="10097">digitalno gradivo</option>
+                    <option value="10006">filmsko gradivo</option>
+                    <option value="10004">fotografsko gradivo</option>
+                    <option value="10095">grafično gradivo</option>
+                    <option value="10005">kartografsko gradivo</option>
+                    <option value="10002">listinsko gradivo</option>
+                    <option value="10742">mikrografsko gradivo</option>
+                    <option value="10096">muzikalije</option>
+                    <option value="10770">ostalo</option>
+                    <option value="10237">podatkovne zbirke</option>
+                    <option value="10099">rokopisno gradivo</option>
+                    <option value="10003">spisovno gradivo</option>
+                    <option value="10098">tiskano gradivo</option>
+                    <option value="10007">zvočni zapisi</option>
+                </select>
+            </div>
+        </div>
+        <!--  13. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <div class="c-cb normal">
+                    <input type="checkbox" aria-label="Preko spleta dostopne slike" id="imagesOnline1" name="imagesOnline" value="true"><input type="hidden" name="_imagesOnline" value="on"/>
+                    <label>Preko spleta dostopne slike</label>
+                </div>
+            </div>
+        </div>
+        <!--  14. vrstica -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Nivo(ji) popisa</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" id="levelsText" readonly="readonly" class="form-control form-control-sm" aria-label="Nivo(ji) popisa">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" id="nivojiId" class="form-control-label form-control-sm"
+                       aria-label="Prikaži/skrij nivoje popisa"
+                       data-toggle="collapse"
+                       data-target="#levelsOfDescription"
+                       aria-expanded="false"
+                       aria-controls="levelsOfDescription"
+                       value="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <div id="levelsOfDescription" class="fade collapse" tabindex="-1">
+                    
+                        <input hidden="true" name="levelOfDescription[0].scopeId" value="10000" />
+                        <input hidden="true" name="levelOfDescription[0].levelName" value="Arhiv" />
+                        <input hidden="true" name="levelOfDescription[0].iconId" value="17" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Arhiv" name="levelOfDescription[0].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Arhiv">
+                            <label>Arhiv</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[1].scopeId" value="10007" />
+                        <input hidden="true" name="levelOfDescription[1].levelName" value="Dokument" />
+                        <input hidden="true" name="levelOfDescription[1].iconId" value="7" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Dokument" name="levelOfDescription[1].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Dokument">
+                            <label>Dokument</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[2].scopeId" value="10003" />
+                        <input hidden="true" name="levelOfDescription[2].levelName" value="Fond/zbirka" />
+                        <input hidden="true" name="levelOfDescription[2].iconId" value="8" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Fond/zbirka" name="levelOfDescription[2].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Fond/zbirka">
+                            <label>Fond/zbirka</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[3].scopeId" value="10014" />
+                        <input hidden="true" name="levelOfDescription[3].levelName" value="Organizacijska enota" />
+                        <input hidden="true" name="levelOfDescription[3].iconId" value="17" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Organizacijska enota" name="levelOfDescription[3].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Organizacijska enota">
+                            <label>Organizacijska enota</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[4].scopeId" value="10010" />
+                        <input hidden="true" name="levelOfDescription[4].levelName" value="Podfond" />
+                        <input hidden="true" name="levelOfDescription[4].iconId" value="5" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Podfond" name="levelOfDescription[4].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Podfond">
+                            <label>Podfond</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[5].scopeId" value="10011" />
+                        <input hidden="true" name="levelOfDescription[5].levelName" value="Podserija" />
+                        <input hidden="true" name="levelOfDescription[5].iconId" value="12" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Podserija" name="levelOfDescription[5].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Podserija">
+                            <label>Podserija</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[6].scopeId" value="10004" />
+                        <input hidden="true" name="levelOfDescription[6].levelName" value="Serija" />
+                        <input hidden="true" name="levelOfDescription[6].iconId" value="2" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Serija" name="levelOfDescription[6].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Serija">
+                            <label>Serija</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[7].scopeId" value="10013" />
+                        <input hidden="true" name="levelOfDescription[7].levelName" value="Skupina arhivov" />
+                        <input hidden="true" name="levelOfDescription[7].iconId" value="20" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Skupina arhivov" name="levelOfDescription[7].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Skupina arhivov">
+                            <label>Skupina arhivov</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[8].scopeId" value="10002" />
+                        <input hidden="true" name="levelOfDescription[8].levelName" value="Skupina fondov" />
+                        <input hidden="true" name="levelOfDescription[8].iconId" value="10" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Skupina fondov" name="levelOfDescription[8].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Skupina fondov">
+                            <label>Skupina fondov</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[9].scopeId" value="10012" />
+                        <input hidden="true" name="levelOfDescription[9].levelName" value="Slika" />
+                        <input hidden="true" name="levelOfDescription[9].iconId" value="1" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Slika" name="levelOfDescription[9].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Slika">
+                            <label>Slika</label>
+                        </div>
+                    
+                        <input hidden="true" name="levelOfDescription[10].scopeId" value="10006" />
+                        <input hidden="true" name="levelOfDescription[10].levelName" value="Združeni dokumenti" />
+                        <input hidden="true" name="levelOfDescription[10].iconId" value="3" />
+                        <div class="c-cb normal">
+                            <input type="checkbox" aria-label="Združeni dokumenti" name="levelOfDescription[10].selected"
+                                   onclick="selectLevelsOfDescription();" data-levelName="Združeni dokumenti">
+                            <label>Združeni dokumenti</label>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- dodatni iskalniki -->
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label class="form-control-label form-control-sm">Dodatni iskalniki</label>
+            </div>
+            <div class="col-sm-5">
+                <input type="text" id="additionalSearchSourcesText" readonly="readonly" class="form-control form-control-sm" aria-label="Dodatni iskalniki">
+                <input type="text" style="display: none" aria-labelledby="additionalSearchSourcesText" id="csvSearchSources" name="csvSearchSources" value="">
+            </div>
+            <div class="col-sm-1">
+                <input type="button"
+                       id="buttonAdditionalSearchSources"
+                       class="form-control-label form-control-sm"
+                       aria-label="Prikaži/skrij dodatne vire"
+                       data-toggle="collapse"
+                       data-target="#additionalSearchSources"
+                       aria-expanded="false"
+                       aria-controls="additionalSearchSources"
+                       value="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <div id="additionalSearchSources" class="fade collapse" tabindex="-1">
+                    <div class="c-cb normal">
+                        <input type="checkbox" aria-label="Iskalnik prostorskih podatkov" onclick="selectAdditionalSearchSource();"
+                               data-sourceText="Iskalnik prostorskih podatkov" data-sourceId="GeoNetwork">
+                        <label>Iskalnik prostorskih podatkov</label>
+                    </div>
+                    <div class="c-cb normal">
+                        <input type="checkbox" aria-label="Iskalnik avdiovizualnega gradiva" onclick="selectAdditionalSearchSource();"
+                               data-sourceText="Iskalnik avdiovizualnega gradiva" data-sourceId="Jukebox">
+                        <label>Iskalnik avdiovizualnega gradiva</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+/*<![CDATA[*/
+
+// Get java localized date pattern. 
+var datePattern = "d.M.y";
+datePattern = datePattern.replace("yyyy", "y").replace("yy", "y").replace("y", "yy").toLowerCase();
+var expectedDatePattern = datePattern.replace("yy", "yyyy").replace("m", "M");
+
+var datepickerFromVisible = false;
+var datepickerToVisible = false;
+// Variable is used in jquery-ui.js. If variable is not defined, datepicker behaves as by default.
+var jQueryUIDatepickerSliders = true;
+
+var yearText = "Leto";
+var monthText = "Mesec";
+
+// Function needed only if slider is on.
+function datePickerSliderSetYear(year) {
+    if($("#sliderYear")[0].min == year) {
+        setTimeout(function() {
+            var min = Number($("#sliderYear")[0].min) - 50;
+            if(min < 100) {
+                min = 100;
+            }
+            $("#sliderYear")[0].min = min;
+        }, 500);
+    }
+    else if($("#sliderYear")[0].max == year) {
+        setTimeout(function() {
+            var max = Number($("#sliderYear")[0].max) + 50;
+            if(max > 3000) {
+                max = 3000;
+            }
+            $("#sliderYear")[0].max = max;
+        }, 500);
+    }
+    $("#sliderYearValue").text(year);
+}
+
+//Function needed only if slider is on.
+function datePickerSliderSetMonth(month) {
+    $("#sliderMonthValue").text(month);
+}
+
+// In IE11 oninput doesn't work. Instead of this the onchange event is triggered
+// on every slider movement. If we call the datepicker.setDate method instantly the
+// slider value frame appears in the upper-left corner and it stays there for ever.
+// To avoid this the datepicker.setDate is called after 100 ms.
+// All this is for IE only.
+// Variable isIE11 is defined in the vac.js script.
+// Variables are needed only if slider is on.
+var mouseIsDown = false;
+var dateString;
+var datepickerParent;
+
+//Function needed only if slider is on.
+function datePickerSliderMouseDown() {
+    mouseIsDown = true;
+}
+
+//Function needed only if slider is on.
+function datePickerSliderMouseUp() {
+    mouseIsDown = false;
+    if(isIE11) {
+        setTimeout(function(){ datepickerParent.datepicker("setDate", dateString); }, 100);
+    }
+}
+
+//Function needed only if slider is on.
+function datePickerSliderSetDate(year, month) {
+    //year = $("#sliderYearValue").text();
+    //month = $("#sliderMonthValue").text();
+
+    if(datepickerFromVisible) {
+        datepickerParent = $("#datepickerFrom");
+    }
+    else if(datepickerToVisible) {
+        datepickerParent = $("#datepickerTo");
+    }
+    var date = datepickerParent.datepicker("getDate");
+    if(date == null) {
+        date = new Date();
+    }
+    var day = date.getDate();
+
+    var isOk = false;
+    do {
+        isOk = isValidDate(year, month, day);
+        if(!isOk) {
+            day--;
+        }
+    }
+    while(!isOk && day >= 0)
+    
+    dateString = datePattern.replace("d", day).replace("m", month + 1).replace("yy", year);
+    if(!isIE11) {
+        datepickerParent.datepicker("setDate", dateString);
+    }
+    else {
+        if(!mouseIsDown) {
+            datepickerParent.datepicker("setDate", dateString);
+        }
+    }
+}
+
+//Function needed only if slider is on.
+function isValidDate(year, month, day) {
+    var date = new Date();
+    date.setFullYear(year, month, day);
+    
+    if(date.getFullYear() == year && date.getMonth() == month && date.getDate() == day) {
+        return true;
+    }
+
+    return false;
+}
+
+$( function() {
+    var options = $.extend({}, // empty object    
+        $.datepicker.regional[locale], { //locale is defined in vac.js
+            dateFormat: datePattern,
+            beforeShow: function () {
+                datepickerFromVisible = true;
+                datepickerToVisible = false;
+            },
+            /*onClose: function() {
+                alert($("#datepickerFrom").datepicker("getDate"));
+            },*/
+        } // your custom options    
+    );
+    $("#datepickerFrom").datepicker(options);
+
+    var options = $.extend({}, // empty object    
+        $.datepicker.regional[locale], { //locale is defined in vac.js
+            dateFormat: datePattern,
+            beforeShow: function () {
+                datepickerFromVisible = false;
+                datepickerToVisible = true;
+            },
+        } // your custom options    
+    );
+    $("#datepickerTo").datepicker(options);
+});
+
+function selectLevelsOfDescription() {
+    //th:data-levelName
+    var separator = "";
+    var levels = "";
+    $('input:checkbox[data-levelName]').each(function () {
+        if(this.checked) {
+            //alert($(this).attr("data-levelName"));
+            levels += separator + $(this).attr("data-levelName");
+            separator = ", ";
+        }
+    });
+    $("#levelsText").val(levels);
+}
+
+function selectAdditionalSearchSource() {
+    var separatorText = "";
+    var separatorCsv = "";
+    var sourcesText = "";
+    var sourcesCsv = "";
+    $('input:checkbox[data-sourceId]').each(function () {
+        if(this.checked) {
+            sourcesText += separatorText + $(this).attr("data-sourceText");
+            sourcesCsv += separatorCsv + $(this).attr("data-sourceId");
+            separatorText = ", ";
+            separatorCsv = ",";
+        }
+    });
+    $("#additionalSearchSourcesText").val(sourcesText);
+    $("#csvSearchSources").val(sourcesCsv);
+}
+
+function checkDates(element, isFrom) {
+    if(element.value.length > 0) {
+        if(parseInt(element.value) == element.value.trim()) {
+            if(isFrom) {
+                element.value = "1.1." + element.value;
+            }
+            else {
+                element.value = "31.12." + element.value;
+            }
+        }
+        else if(parseDate(element.value, "dd.MM.yyyy", null) == null) {
+            element.value = "";
+        }
+    }
+}
+
+document.getElementById('buttonAdditionalSearchSources')
+    .addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+    });
+
+document.getElementById('nivojiId')
+    .addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+    });
+
+/*]]>*/
+        </script>
+    </div></div>
+                                            
+                                            <script>
+/*<![CDATA[*/
+
+var furtherSearchOptionsShow = "Prika\u017Ei druge mo\u017Enosti iskanja";
+var furtherSearchOptionsHide = "Skrij druge mo\u017Enosti iskanja";
+
+$(document).ready(function(){
+    $("#toggleLinkId").click(function(){
+        if($("#extendedOptions").is(":visible")) {
+            this.innerText = furtherSearchOptionsShow;
+            if($("#searchRange")[0].value != 0) {
+                $("#searchRangeWarning").show();
+            }
+        }
+        else {
+            this.innerText = furtherSearchOptionsHide;
+            $("#searchRangeWarning").hide();
+        }
+        $("#extendedOptions").collapse('toggle');
+    });
+
+    $("#extendedOptions").on('show.bs.collapse', function(){
+    	$("#extendedOptions").attr("aria-hidden",false);
+    });
+    $("#extendedOptions").on('hide.bs.collapse', function(){
+    	$("#extendedOptions").attr("aria-hidden",true);
+    });
+
+    var url = new URL(window.location);
+    var searchRangeOpt = url.searchParams.get("sr");
+    if(searchRangeOpt != null) {
+        $("#searchRange").val(searchRangeOpt);
+        $("#toggleLinkId").click();
+        $("#searchRange").focus();
+    }
+});
+
+function linkChanged(value, linkTo) {
+    if(value != -1) {
+        $("#row" + linkTo).show();
+        $("#row" + linkTo).attr("aria-hidden",false);
+        $("#row" + linkTo + "Space").show();
+        $("#row" + linkTo + "Space").attr("aria-hidden",false);
+    }
+    else {
+        $("#row" + linkTo).hide();
+        $("#row" + linkTo).attr("aria-hidden",true);
+        $("#row" + linkTo + "Space").hide();
+        $("#row" + linkTo + "Space").attr("aria-hidden",true);
+        if(linkTo == 2) {
+            $("#row3").hide();
+            $("#row3").attr("aria-hidden",true);
+            $("#row3Space").hide();
+            $("#row3Space").attr("aria-hidden",true);
+        }
+    }
+}
+/*try {
+    $("#extendedOptions").collapse('toggle');
+}
+catch(err) {
+    alert(err);
+}*/
+
+/** AUTOCOMPLETE **/
+var cache = {};
+
+function updateAutocompleteList(request, response) {
+    var term = request.term;
+    if (term in cache) {
+        response(cache[term]);
+        return;
+    }
+
+    $.ajax({
+        type: "get", // method attribute of form
+        url: "/vac/search/searchAutocompleteAjax?text=" + term + "&lnkFiles=" + $("#linkedFiles1")[0].checked + "&repFiles=false",
+        contentType : 'application/json; charset=utf-8',
+        dataType : 'json',
+        success: function(ajaxResponse){
+            cache[term] = ajaxResponse;
+            response(ajaxResponse);
+        },
+    });
+}
+
+
+$(function() {
+    var availableWords = [];
+    $("#fullText").autocomplete({
+        delay: 500,
+        minLength: 3,
+        source: function(request, response) {
+            updateAutocompleteList(request, response);
+        }
+    });
+    $("#exactPhrase").autocomplete({
+        delay: 500,
+        minLength: 3,
+        source: function(request, response) {
+            updateAutocompleteList(request, response);
+        }
+    });
+    $("#oneOfWords").autocomplete({
+        delay: 500,
+        minLength: 3,
+        source: function(request, response) {
+            updateAutocompleteList(request, response);
+        }
+    });
+    $("#withoutWords").autocomplete({
+        delay: 500,
+        minLength: 3,
+        source: function(request, response) {
+            updateAutocompleteList(request, response);
+        }
+    });
+});
+/*]]>*/
+                                            </script>
+        								</div>
+        								<!--  skriavanje -->
+        								<div class="row">
+        									<div class="col-sm-2">
+        										<a class="toggleLink form-control-sm" id="toggleLinkId" style="cursor: pointer; text-decoration: underline;">Prikaži druge možnosti iskanja</a>
+        									</div>
+        									<div class="col-sm-6"></div>
+        								</div>
+        								<div class="row">
+        									<div class="col-sm-2"></div>
+        									<div class="col-sm-6">
+        										<hr>
+        									</div>
+        								</div>
+                                        <div id="searchRangeWarning" style="display:none" class="row">
+                                            <div class="col-sm-2"></div>
+                                            <div class="col-sm-6">
+                                                <label class="form-control-label form-control-sm">Pozor! Področje iskanja je omejeno. Za ukinitev omejitev razširite možnosti iskanja.</label>
+                                            </div>
+                                        </div>
+        								<div class="row">
+        									<div class="col-sm-2"></div>
+        									<div class="col-sm-6">
+        										<input class="form-control-label form-control-sm" id="srchCmd" type="submit" value="Išči">
+        									</div>
+        								</div>
+        								<div class="row">
+        									<div class="col-75">&#160;</div>
+        								</div>
+        								<div class="row">
+        									<div class="col-75">&#160;</div>
+        								</div>
+
+        							</div>
+        						</div>
+        
+        					</form>
+        				</div>
+        			</div>
+        		</div>
+            </div>
+        </div>
+        <!-- footer start -->
+        <div id="pageFooter" class="">
+            <div><div style="background-color: #333333;">
+
+                <!-- Opozorilo o piškotkih -->
+                <footer id="footerCookiesWarning">
+                    <div id="cookieConsent">
+                        <div>Virtualna arhivska čitalnica (VAČ) uporablja spletne piškotke in ostale elemente z namenom zagotavljanja polnega delovanja spletne storitve in boljše uporabniške izkušnje. Ali se strinjate z njihovo uporabo?
+                            <a href="#" class="cookieConsentNOK" tabindex="0"
+                               onclick="javascript:cookieConsentNOK();">Ne strinjam se</a>
+                            <a href="#" class="cookieConsentOK" tabindex="0"
+                               onclick="javascript:cookieConsentOK();">Strinjam se</a>
+                        </div>
+                        <a tabindex="0">Več o tem.</a>
+                    </div>
+                </footer>
+
+                <div id="footerMain" class="d-print-none">
+
+                    <!-- Navigacijske povezave -->
+                    <footer class="footer2">
+                        <div cellspacing='0' class='betatestwarning'></div>
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="row">
+                                    <a href="/vac">Prva stran</a>&#160;|&#160;
+                                    <a href="/vac/search/getfullTextPage">Iskanje</a>&#160;|&#160;
+                                    <a href="/vac/cart/list">Košarica</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutVAC">O VAČ</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/aboutArchives">O arhivih</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/vacNewsUsers">Novice</a>&#160;|&#160;
+                                    <a href="/vac/userhelp/accessibilityStatement"
+                                       title="Izjava o dostopnosti"
+                                       aria-label="Izjava o dostopnosti">Dostopnost</a>&#160;|&#160;
+                                    <a href="/vac/userhelp">Pomoč</a>&#160;|&#160;
+                                    <a href="/vac/vacindex">Zemljevid spletne strani</a>
+                                </div>
+                                <div class="row h5"></div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Kontakt, povezave, arhivi -->
+                    <footer class="footer2">
+                        <div class="container">
+                            <div class='master_op_center'>
+                                <div class="ce-bodytext">
+                                    <div style="padding:0 5px; width:100%; box-sizing:border-box !important; float:left;">
+
+                                        <!-- Kontakt -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <ul role="list">
+                                                <li style="list-style:none;"><span class="row h6b">Kontakt </span></li>
+                                                <li style="list-style:none;"><span class="row h7">PODPORA VAČ</span></li>
+                                                <li style="list-style:none;"><span class="row h7">ARHIV REPUBLIKE SLOVENIJE</span></li>
+                                                <li style="list-style:none;"><span class="row h7">Poljanska 40</span></li>
+                                                <li style="list-style:none;"><span class="row h7">1102 Ljubljana</span></li>
+                                                <li style="list-style:none;"><span class="row h7">T:&nbsp;<a href="tel:+38612414200">01 2414 200 &phone;</a></span></li>
+                                                <li style="list-style:none;"><span class="row h7">F: 01 2414 276</span></li>
+                                                <li style="list-style:none;"><span class="row h7">E:&nbsp;<a href="mailto:citalnica.ars@gov.si">citalnica.ars@gov.si</a></span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Uporabne povezave -->
+                                        <div style="padding:0 5px; width:33%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Uporabne povezave</span>
+                                            <a class="row h7" href="/vac/userhelp"><span>Pogosta vprašanja</span></a>
+                                            <a class="row h7" href="https://www.gov.si/teme/javna-arhivska-mreza/"><span>Slovenska javna arhivska mreža</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Piškotki</span></a>
+                                            <a class="row h7" href="/vac/userhelp/aboutVAC"><span>Obdelava osebnih podatkov</span></a>
+                                            <a class="row h7" href="/vac/userhelp/accessibilityStatement"><span>Dostopnost spletne strani</span></a>
+                                        </div>
+
+                                        <!-- Spletne strani arhivov -->
+                                        <div style="padding:0 5px; width:34%; box-sizing:border-box !important; float:left;">
+                                            <span class="row h6b">Spletne strani arhivov</span>
+                                            <a class="row h7" href="https://www.gov.si/drzavni-organi/organi-v-sestavi/arhiv/"><span>Arhiv Republike Slovenije</span></a>
+                                            <a class="row h7" href="https://arhiv-koper.si/"><span>Pokrajinski arhiv Koper</span></a>
+                                            <a class="row h7" href="https://www.pokarh-mb.si/"><span>Pokrajinski arhiv Maribor</span></a>
+                                            <a class="row h7" href="https://www.pa-ng.si/"><span>Pokrajinski arhiv v Novi Gorici</span></a>
+                                            <a class="row h7" href="https://zac.si/"><span>Zgodovinski arhiv Celje</span></a>
+                                            <a class="row h7" href="https://www.zal-lj.si/"><span>Zgodovinski arhiv Ljubljana</span></a>
+                                            <a class="row h7" href="https://www.arhiv-ptuj.si/"><span>Zgodovinski arhiv Ptuj</span></a>
+                                            <a class="row h7" href="https://www.archivesportaleurope.net/"><span>Arhivski portal Evrope</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Verzija -->
+                        <table width="100%">
+                            <tr>
+                                <!-- td><span style="display: inline; float: left;">&#169; 2018 Arhiv Republike Slovenije</span> <span
+                                    style="display: inline; float: right;"><a href="http://www.arhiv.gov.si/si/splosno/kolofon/kolofon/">Kolofon</a>&#160;|&#160;<a
+                                        href="http://www.arhiv.gov.si/si/splosno/piskotki/">Piškotki</a></span></td -->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row h7" style="display:inline; float:right;">
+                                        <div ondblclick="showVerDetails(); return false;">
+                                            <label>VAČ</label>&nbsp;
+                                            <strong>2.20_5.5</strong>
+                                        </div>
+                                        <div style="display:none" id="vacVersionDetails">
+                                            <strong>Podrobnosti o verziji</strong><br/><br/>
+                                            <table style="border:0;">
+                                                <tr align="left">
+                                                    <td>Verzija:</td>
+                                                    <td><strong>2.20_5.5</strong></td>
+                                                </tr>
+                                                <tr align='left'><td>Datum:</td><td><strong>2026-09-16T13:42:32+02:00</strong></td></tr><tr align='left'><td>Interni ID:</td><td><strong>84d567d8</strong></td></tr><tr align='left'><td>Verzioniranje:</td><td><strong>nepopolno</strong></td></tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <script>
+                            /*<![CDATA[*/
+                            function showVerDetails() {
+                                if (!window.event.ctrlKey) {
+                                    dialog($("#vacVersionDetails")[0].innerHTML.trim(), null, null, null, null, false, false, true, false);
+                                } else {
+                                    $.ajax({
+                                        cache: false,
+                                        type: 'get',
+                                        url: '/vac/snfo',
+                                        success: function(response) {
+                                            dialog(response.data, null, null, null, null, false, false, true, false);
+                                        },
+                                        error: handleAjaxError
+                                    });
+                                }
+                            }
+                            /*]]>*/
+                        </script>
+                    </footer>
+
+                </div><!-- /footerMain -->
+
+
+<!--                <div th:if="${@environment.getProperty('vac.ai.widget.enabled', 'false') == 'true' && session.userBean != null && session.userBean.userId != 0 && session.userBean.loggedIn}"-->
+<!--                     id="vac-chat-widget"-->
+<!--                     class="d-print-none"-->
+<!--                     th:attr="data-user-id=${session.userBean.userId},-->
+<!--                              data-user-type=${session.userBean.advancedUser ? 'NU' : 'KU'},-->
+<!--                              data-open-label=#{VirtualAssistant.Chat.Open},-->
+<!--                              data-close-label=#{VirtualAssistant.Chat.Close}">-->
+<!--                    <button id="vac-chat-toggle" type="button" onclick="vacChatToggle()"-->
+<!--                            aria-controls="vac-chat-window" aria-expanded="false"-->
+<!--                            th:title="#{VirtualAssistant.Chat.Open}"-->
+<!--                            th:aria-label="#{VirtualAssistant.Chat.Open}">💬</button>-->
+<!--                    <div id="vac-chat-window" role="dialog" aria-modal="false"-->
+<!--                         aria-labelledby="vac-chat-title" aria-hidden="true" style="display:none;">-->
+<!--                        <div id="vac-chat-header">-->
+<!--                            <span id="vac-chat-title">VAČ Asistent</span>-->
+<!--                            <button type="button" onclick="vacChatToggle()"-->
+<!--                                    th:title="#{VirtualAssistant.Chat.Close}"-->
+<!--                                    th:aria-label="#{VirtualAssistant.Chat.Close}">×</button>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-messages">-->
+<!--                            <div class="vac-msg-bot">Pozdravljeni! Sem virtualni asistent VAČ. Kako vam lahko pomagam?</div>-->
+<!--                        </div>-->
+<!--                        <div id="vac-chat-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>-->
+<!--                        <div id="vac-chat-input">-->
+<!--                            <input type="text" id="vac-chat-text" placeholder="Vpišite vprašanje..."-->
+<!--                                   onkeypress="if(event.key==='Enter') vacChatSend()"/>-->
+<!--                            <button onclick="vacChatSend()">Pošlji</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div></div>
+        </div>
+    </div>
+</body>
+</html>
