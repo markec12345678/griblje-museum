@@ -3258,3 +3258,28 @@ Stage Summary:
 - Gostilna pred 1898: ostaja odprta; nov kvalificiran signal = toponim Traverne (A05); negativni zadetki dokumentirani po enotah
 - Tehnične poučne točke: (1) pot details = /vac/search/details?id=; (2) raster UUID sejsko vezan — manifest+raster v isti seji; (3) grafični listi = IIIF P3 (docid 10), spisovni = PDF (41778–41784); (4) VLM branja Kurrenta = vedno predbitna, kritična mesta z več prehodi + obrezanimi izseki; (5) konfliktna števila se zapišejo s štetjem prehodov, ne s tiho izbiro
 - Izven-peskovniška vrsta (posodobljena): N83 specializirani Kurrent prepis (PS 143 + PUA 49 + PZ 71 + PT 8 str.) → Leksikon 1937 (dLib seja) → SI AS 177–182 enumeracija → Andrič 2001 DPhil → SAGE Holocene polno besedilo → gostilna (župnijska/hišna knjiga; Traverne paleografija) → vrzel #3 (360°) → kataster jam (ko gostitelj oživi) → Miklavčič preostalih 68 strani → Poganjec + Lojze↔Alojz
+
+---
+Task ID: 95 (43. val, TASK 95)
+Agent: Z.ai Code (glavni)
+Task: TASK 95 — N83 PRIMARY EVIDENCE CONSOLIDATION (7 vprašanj; brez novih virov/entitet/UI; LESS BUT PROVABLE)
+
+Work Log:
+- Dokazna osnova (samo obstoječe gradivo): 16 VLM transkripcij 42. vala + 8 strani PT 41. vala + izseki A05/PZ; +1 VNAPREJ REGISTRIRAN kontrolni prehod na obstoječem izseku pz2-mid-4x.jpg (primerjava oblik cifer, brez interpretacije → vlm-pz-digits.json) — brez novih prenosov gradiva
+- Q1 441/541: 4 prehodi (322→541; 222→441 ×2; kontrolni 4.: Männlichen = 222, stotica oblikovno identična '2' pri 219, pisavna razlika '2'/'3' izrecno opisana, '3' NI najdena; Zusammen = 441 »jasno zapisano«) → 441 = PROBABLE / PRELIMINARY / PALEOGRAPHY REQUIRED; aritmetika sama ne odloča (obe branji konsistentni); demografska kontrola: 541 → 59,5 % moških (anomalično) vs. 441 → 50,3 % + družina 4,3 vs. 5,3; v zgodbi MVG-001 z obstoječo kvalifikacijo, konflikt dokumentiran v opombi PZ
+- Q2 70/72: prehodi 70·70·72 + kontrolni prehod »zadnja cifra definitivno NI 2« (zaokrožena/zaprt zgornji lok; vrstica delno zmedena z »29 Hauswirthen« → glas oslabljen) + PT hišne številke ≥ 65 (skladno, ne odločilno) → 70 = PROBABLE / PALEOGRAPHY REQUIRED
+- Q3 šola: 1 prehod (»einer Schule und 1 Lehrer«); izseka je nista potrdila; brez novih ugibanj (po naročilu) → UNRESOLVED, v muzeju NI vgrajena ✓
+- Q4 mlin: konsolidacija = beseda Mühle v VSEH 3 prehodih (42. val je bil zapisal »dveh od treh« = napačen števec) → IZVEDEN popravek opombe vira PZ SL/EN (ingest-val43.py, idempotenten); določilo »brez njiv« = 1/3 (najbolj osredotočen izsek); en objekt UNKNOWN; PR/Mlinščica tematsko; MVG-007 samo tematsko (identifikacija nedopustna); nov zapis NI ustvarjen
+- Q5 Traverne: beseda Traverne 3/3 dobesedno stabilna; prva beseda UNRESOLVED (Schamsho/Schimstl/Schumsthl; »Schums-« niz tudi A04 »Schumski Damm« 1×); napis v praznem prostoru ob zahodni meji k.o., NI nalepka ob stavbi; alternativi (taferna-toponim vs. »trava-« napačno branje) dokumentirani → PROBABLE READING, MVG-109 nespremenjen ✓
+- Q6 PV: aritmetična kontrola: vsota vrstic 1631 J (z Acker 913) ≠ 1148 ≠ 1233 → vsaj ena vrstica napačna (Acker ≈ 515?) → sporne vrstice NE vgrajene; varno le ~710 ha + gozd ~45 % kot predbitno (celovita kvalifikacija v opombi PV že prisotna) ✓
+- Q7 A01↔PT: PARTIAL — dokumentirano: isti operat k.o. 83 (ARS popis), ena oštevilčenja 1824–27; UNRESOLVED: posamezne vezave (nič preverjeno na obeh) + vezave na danes; geokodiranja NI ✓
+- VGRADNJA: +0 virov, +0 entitet; edina sprememba = popravek števca prehodov mlina v opombi PZ; reseed → OpenData 113/588 nespremenjena
+- Regresija (živi :3000 po reseedu): tsc 0, lint čist, verify-i18n 946 × 5, audit-entities ✓ 0 napak (113/588/469/67/375), audit-timeline-map 39 ✓/0, audit-iiif 5 ✓/0, test-entities 100 ✓/0, test-timeline-map 72 ✓/0, test-ai-curator 214 ✓/0, red-team 157 ✓/0, test-plan-visit 42 ✓/0; OpenData 113/588 živo; sitemap 114
+- agent-browser: MVG-001 VIRI (17) + popravljen stavek mlina v PZ opombi ✓, hero 113/588 ✓, noga vrzel 0 ✓, preliv 0 pri 390 px ✓, konzola čista ✓
+- Dokumentacija: research-griblje/57-val43-n83-evidence-consolidation.md + KAZALO-raziskav (#57) + 00-KAZALO (vnos 43. vala) + README (status blok 95. sklop + vnos) + worklog (ta vnos); surovine: vlm-pz-digits.json + ingest-val43.py
+
+Stage Summary:
+- Stanje: **113 zapisov (MVG-001–113), 588 virov, 469 identitet, 67 deljenih, 95 entitet; sitemap 114; i18n 946 × 5; 13 API poti** (nespremenjeno po konsolidaciji — namen taska)
+- SKLEP: CONFIRMED FOR MUSEUM = popolna digitalizacija 12/12 + 6 primarnih potrditev GRÜBLE + A01 prvi katastrski zemljevid + sistemski sklop A01↔PT; PRELIMINARY = 441 (3/4 + demografija), 70 (2+1 proti-72), 102 (4/4), mlin (3/3), gozd ~45 %/~710 ha (1×), slovenski jezik (1×); UNRESOLVED = šola, število/lega mlinov, sosedje, prva beseda toponima A05, atribucija A02–A05, posamezne vezave A01↔PT; PALEOGRAPHY REQUIRED = vrsta J (P1: A05 Traverne, PZ 441/541, PZ 70/72; P2: šola, PV vrstice, sosedje; P3: atribucija listov)
+- Edina muzejska sprememba: popravek napačnega števca koroboracije mlina v opombi PZ — sicer NO CONTENT CHANGE REQUIRED; meja med prebranim, interpretiranim in nedokazanim sedaj izrecno dokumentirana (dokument 57, razdelki A–J)
+- Naslednji sklopi (ločeno, po naročilu): TASK 96 — Leksikon 1937 / dLib primary-source session; šele nato TASK 97 — SI AS 177–182 enumeration
