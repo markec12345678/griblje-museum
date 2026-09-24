@@ -37,6 +37,7 @@ type PageRecord = {
   version: string;
   status: string;
   readable: boolean;
+  readable_body?: boolean;
   pass1_entries: number;
   pass2_verification: boolean;
   pass3_targeted: boolean;
