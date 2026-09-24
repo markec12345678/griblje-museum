@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi priložene slike (povečan zahodni del lista) so vidni naslednji napisi in elementi:\n\n**1. Glavni napis (mejni toponim):**\n*   **Črkovanje:** `W A U D E N D O R F` (velike črke, razporejene navpično)\n*   **Pozicija:** Sredinsko-desno, v praznem prostoru (belem polju) zahodno od zemljiškega katastra.\n*   **Vrsta:** Toponim (ime sosednje vasi/občine Waudendorf/Weidendorf).\n\n**2. Podpis (izvajalec):**\n*   **Črkovanje:** `Schimsch [?] Travi 1826` (prvi del je morda *Schimstl* ali podobno, zapisano v Kurrentu; letnica je jasna: 1826).\n*   **Pozicija:** Desno od napisov \"WAUDENDORF\", tik ob robu zemljiškega katastra (zelenih parcel).\n*   **Vrsta:** Podpis izvajalca meritve/geodeta.\n\n**3. Napisi na parcelah (znotraj zelene površine – desni rob):**\n*   Zaradi ločljivosti slike so posamezni drobni napisi (lastniška imena v Kurrentu, številke parcel) na samih parcelah **nečitljivi** oziroma precej nejasni. Videti so le majhni rdeči/rjavkasti znaki (verjetno številke parcel in kratke oznake), vendar njihovega črkovanja ni mogoče zanesljivo prebrati.\n\n**Iskanje posebnih besed:**\n*   »Rim«, »Rimb«, »Rymb«, »Rimm«: **ni najden** (ne v vidnem delu).\n*   »Grabri-«: **ni najden**.\n*   »Futsch-«, »Fukow-«: **ni najden**.\n*   »Stelzn/Stelnik«: **ni najden**.\n*   »Einzeln« (označevalec samotne hiše): **ni najden** (na vidnih parcelah ni jasne oznake za samotno hišo, kot je npr. kvadrat z napisom, ali pa ni vidna v tem odseku).\n*   »Haus« z imeni: **ni najden**.\n\n**Opomba:** Večina informacij (podrobni lastniški napisi in mikro-toponimi) se nahaja v vzhodnem delu tega lista, ki na tej sliki ni prikazan. Ta odsek predstavlja predvsem mejo proti Waudendorfu.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790271956,
+  "id": "20260925014534c4263563e2f742a2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925014534c4263563e2f742a2",
+  "usage": {
+    "completion_tokens": 674,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6147,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6821
+  }
+}

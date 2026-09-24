@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi natančnega pregleda posredovane listine **Franciscejskega katastra (OIX 24 čg, 1824)** za katastrsko občino (k.o.) N83 Grüble/Griblje, ki prikazuje mejo proti Adlešičem, je spodaj popis vseh zabeleženih krajevnih imen in toponimov ter rezultati iskanja posebej navedenih izrazov.\n\n### 1. Popis VSEH krajevnih imen/toponimov na zemljevidu\n\n| Črkovanje na zemljevidu | Približna lega (opis) | Vrsta zapisa |\n| :--- | :--- | :--- |\n| **Schulatowitz** | Zgornji levi kot (severozahod), večje naselje/zaselek. | Toponim (naselje/zaselek) |\n| **na Reban** | Zgornji desni del (severovzhod), travnik/območje. | Toponim |\n| **Peran** | Srednji zgornji del (sever), med parcelami. | Toponim / Lastnik? |\n| **Golcuna** | Skrajni desni zgorni kot. | Toponim |\n| **Žeravž** (ali *Žeravuj* / *Zseraug*) | Desni rob, sredina, ob meji. | Toponim (zaselek/območje) |\n| **Mali goren** | Desni rob, pod Žeravžem. | Toponim |\n| **na Bište** | Sredina zemljevida, večje območje. | Toponim |\n| **Bresnik** | Spodnja sredina (jug), večje naselje/zaselek. | Toponim (naselje/zaselek) |\n| **Stelnik** | Pod Bresnikom, proti jugovzhodu. | Toponim (zaselek/samotna kmetija) |\n| **WEIDENDORF** | Spodnji levi kot (jugozahod), velika črkovana oznaka. | Toponim (naselje) |\n| **Schumacher Damm** | Ob spodnjem robu, pod Weidendorfom. | Toponim (nasip/pot) |\n| **na Lose** | Skrajni spodnji levi kot. | Toponim |\n| **ADLESCHITZ** | Velike črke po diagonali desne strani (vzhod). | Toponim (mejno naselje/občina) |\n| **na Breze** | Desni spodnji kot (jugovzhod). | Toponim |\n| **Lescheining pur Stange** | Skrajni desni spodni kot (podpis opisa meje). | Opis mejnika (mejni kamen) |\n\n---\n\n### 2. Rezultati iskanja posebej navedenih izrazov\n\n*   **»Rim« / »Rimb« / »Rymb«**: **ni najden** (na tem odseku lista ni zabeležen).\n*   **»Fučkovci/Futschkofen/Fukowcz«**: **ni najden** (na tem odseku lista ni zabeležen).\n*   **»Stelnik/Stelzn«**: **najden**\n    *   *Črkovanje*: **Stelnik**\n    *   *Lega*: Južni del zemljevida, južno-jugovzhodno od **Bresnik**, severozahodno od velikega napis **ADLESCHITZ** (približno 55–60 % višine slike, 50–55 % širine).\n    *   *Vrsta*: Toponim (zaselek ali samotna kmetija).\n*   **»Grabrijan/Grabrian/Grabriam«**: **ni najden** (na tem odseku lista ni zabeležen).\n*   **»Adleschitz«**: **najden**\n    *   *Črkovanje*: **ADLESCHITZ** (velike tiskane črke)\n    *   *Lega*: Desna (vzhodna) stran zemljevida, teče diagonalno od sredine desnega roba proti spodnjemu desnemu kotu (približno med 40 % in 90 % višine, pri 65–85 % širine).\n    *   *Vrsta*: Toponim (označuje sosednjo katastrsko občino/naselje Adlešice, proti kateri poteka meja).\n\n**Opomba:** Na tem specifičnem listu (mejni pas proti Adlešičem) so dominantna imena **Bresnik**, **Stelnik** in **Weidendorf** (vzhodni del), medtem ko iskana imena *Rim*, *Fučkovci* in *Grabrijan* verjetno ležijo na sosednjih listih (npr. bolj zahodno ali severno) iste katastrske občine Grüble/Griblje.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790271827,
+  "id": "20260925014306dd29b7a7f177454c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925014306dd29b7a7f177454c",
+  "usage": {
+    "completion_tokens": 1223,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5921,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7144
+  }
+}
