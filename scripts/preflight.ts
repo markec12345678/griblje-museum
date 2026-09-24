@@ -37,16 +37,27 @@ function warn(name: string, detail?: string): void {
 
 /* --- 1. baza --------------------------------------------------------------- */
 
-const dbFile = path.join(REPO_ROOT, "db", "custom.db");
-if (!fs.existsSync(dbFile)) {
-  fail("Baza ne obstaja", "zaženi bun run db:seed (ali postavi db/custom.db)");
-} else {
+// Neon PostgreSQL (issue #27/A1): povezava prek DATABASE_URL/DIRECT_URL.
+// .env razčlenjava iz repo korena, da preflight deluje brez next-load.
+function readEnvValue(key: string): string | undefined {
+  const fromProcess = process.env[key];
+  if (fromProcess) return fromProcess;
   try {
-    fs.accessSync(dbFile, fs.constants.R_OK);
-    ok("Baza berljiva", path.relative(REPO_ROOT, dbFile));
+    const envFile = fs.readFileSync(path.join(REPO_ROOT, ".env"), "utf8");
+    const m = envFile.match(new RegExp(`^${key}="?([^"\\n]+)"?`, "m"));
+    return m?.[1];
   } catch {
-    fail("Baza ni berljiva", path.relative(REPO_ROOT, dbFile));
+    return undefined;
   }
+}
+
+const databaseUrl = readEnvValue("DATABASE_URL");
+const directUrl = readEnvValue("DIRECT_URL") ?? databaseUrl;
+if (!databaseUrl) {
+  fail("DATABASE_URL ni nastavljen", "postavi .env (Neon PostgreSQL, docs/DEPLOYMENT.md)");
+} else {
+  const host = databaseUrl.replace(/:\/\/[^:]+:[^@]+@/, "://***:***@");
+  ok("DATABASE_URL", host);
 }
 
 /* --- 2. prisma odjemalec ---------------------------------------------------- */
@@ -60,11 +71,9 @@ if (fs.existsSync(prismaClient)) {
 
 /* --- 3. številke iz žive baze ----------------------------------------------- */
 
-if (fs.existsSync(dbFile) && fs.existsSync(prismaClient)) {
+if (databaseUrl && fs.existsSync(prismaClient)) {
   try {
-    // Eksplicitna pot do repozitorjske baze — skripta mora meriti TO bazo,
-    // ne naključne baze iz okoljske spremenljivke peskovnika.
-    process.env.DATABASE_URL = `file:${dbFile}`;
+    process.env.DATABASE_URL = directUrl as string;
     const { db } = await import("../src/lib/db");
     const [ex, src, ev, st] = await Promise.all([
       db.exhibit.count(),
@@ -73,7 +82,7 @@ if (fs.existsSync(dbFile) && fs.existsSync(prismaClient)) {
       db.storyItem.count(),
     ]);
     if (ex === 0) {
-      fail("Zbirka je prazna", "zaženi bun run db:seed");
+      fail("Zbirka je prazna", "zaženi bun run db:seed ali migriraj podatke (scripts/migrate-data-sqlite-to-postgres.ts)");
     } else {
       ok("Živo stanje zbirke", `${ex} zapisov · ${src} virov · ${ev} dogodkov · ${st} zgodb`);
     }
@@ -98,8 +107,16 @@ if (!process.env.ZAI_CONFIG && !process.env.ELEVENLABS_API_KEY) {
 }
 
 const provider = fs.readFileSync(path.join(REPO_ROOT, "prisma", "schema.prisma"), "utf8").match(/provider\s*=\s*"(\w+)"/)?.[1];
-if (provider === "sqlite") {
-  warn("Baza je SQLite", "issue #27/A1: produkcija naj preide na PostgreSQL + migrations (docs/DEPLOYMENT.md)");
+const migrationsDir = path.join(REPO_ROOT, "prisma", "migrations");
+if (provider !== "postgresql") {
+  fail("Shema ni PostgreSQL", `provider=${provider} — issue #27/A1 zahteva postgresql`);
+} else {
+  ok("Shema", "postgresql");
+}
+if (fs.existsSync(migrationsDir) && fs.readdirSync(migrationsDir).some((d) => d !== "migration_lock.toml")) {
+  ok("Prisma migracije", path.relative(REPO_ROOT, migrationsDir));
+} else {
+  warn("Ni prisma migracij", "produkcija naj uporablja `prisma migrate deploy` (docs/DEPLOYMENT.md)");
 }
 
 /* --- izid ---------------------------------------------------------------------- */

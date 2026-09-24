@@ -1,39 +1,32 @@
 import { PrismaClient } from '@prisma/client'
-import fs from 'node:fs'
-import path from 'node:path'
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined
 }
 
 /**
- * Pot do SQLite datoteke, odporna na različna okolja:
- * 1. eksplicitna DATABASE_URL (razvoj, .zscripts) ima vedno prednost;
- * 2. sicer poiščemo db/custom.db glede na cwd (lokalni next dev/start);
- * 3. nato glede na /var/task (korenska mapa strežniške funkcije na Vercelu,
- *    kamur Next razdeli datoteke iz outputFileTracingIncludes);
- * 4. nazadnje privzamemo cwd — baza se ustvari ob prvem zapisu (seed).
+ * Povezava z bazo (Neon PostgreSQL, issue #27/A1).
  *
- * Datoteko db/custom.db v paket funkcije vključuje outputFileTracingIncludes
- * v next.config.ts (Next je sam po sledenju uvozov ne zazna, ker jo odpre
- * šele Prisma-in pogonski program ob zagonu).
+ * - DATABASE_URL = pooled endpoint (PgBouncer) — aplikacijski runtime
+ *   (lokalni dev, Vercel serverless funkcije).
+ * - DIRECT_URL = direkt endpoint — izključno za `prisma migrate` (shadow DB
+ *   ne sme iti skozi pooler); nastavljen v .env / Vercel environment.
+ *
+ * Če DATABASE_URL manjka, napaka pade zgodaj in jasno — tiho ustvarjanje
+ * prazne datoteke (stari SQLite vzorec) ni več mogoče niti zaželeno.
  */
-function resolveDatabaseUrl(): string {
-  if (process.env.DATABASE_URL) return process.env.DATABASE_URL
-
-  const candidates = [process.cwd(), '/var/task']
-  for (const base of candidates) {
-    const file = path.join(base, 'db', 'custom.db')
-    try {
-      if (fs.existsSync(file)) return `file:${file}`
-    } catch {
-      /* nadaljuj z naslednjim kandidatom */
-    }
+function requireDatabaseUrl(): string {
+  const url = process.env.DATABASE_URL
+  if (!url) {
+    throw new Error(
+      'DATABASE_URL ni nastavljen. Za lokalni razvoj kopiraj vzorec iz ' +
+        'docs/DEPLOYMENT.md v .env (Neon PostgreSQL, sslmode=require).'
+    )
   }
-  return `file:${path.join(process.cwd(), 'db', 'custom.db')}`
+  return url
 }
 
-process.env.DATABASE_URL = resolveDatabaseUrl()
+process.env.DATABASE_URL = requireDatabaseUrl()
 
 export const db =
   globalForPrisma.prisma ??

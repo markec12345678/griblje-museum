@@ -1,16 +1,16 @@
 /**
- * VARNOSTNA KOPIJA BAZE (issue #27, točka T — P0).
+ * VARNOSTNA KOPIJA BAZE (issue #27, točka T — P0; PostgreSQL/Neon, A1).
  *
- * Ustvari potrjeno kopijo SQLite baze:
  *   bun run db:backup
  *
- * Kopija dobLastError mapa backups/backup-<ČAS>/, poleg pa manifest.json
- * z velikostjo, SHA-256 povzetkom in git HEAD — brez checksuma kopija ni
- * dokazljiva (nagate kopije med zapisom so lahko poškodovane).
+ * Ustvari logični odvod vsebine baze: backups/backup-<ČAS>/snapshot.json
+ * (vse tabele, vse vrstice, JSON) + manifest.json z velikostjo, SHA-256
+ * povzetkom, git HEAD in živimi števci — brez checksuma kopija ni dokazljiva.
  *
- * KO baza preide na PostgreSQL (issue #27/A1), se ta skripta nadomesti z
- * pg_dump v dokazanih postopkih (docs/BACKUP-RESTORE.md) — izhodni obliki
- * manifestov sta enakovredni, da prehod ostane sledljiv.
+ * Zakaj JSON in ne pg_dump: priložnostna pot brez zunanjih orodij (deluje v
+ * peskovniku, CI in na Vercelu); operater pa v produkciji vedno lahko uporabi
+ * kanonični pg_dump — postopki so enakovredni, glej docs/BACKUP-RESTORE.md.
+ * Obnova: docs/BACKUP-RESTORE.md (migrate deploy + scripts/restore-verify.ts).
  */
 
 import { createHash } from "node:crypto";
@@ -21,9 +21,17 @@ import { execSync } from "node:child_process";
 export {};
 
 const REPO_ROOT = path.resolve(import.meta.dir, "..");
-const DB_FILE = path.join(REPO_ROOT, "db", "custom.db");
 const BACKUP_ROOT = path.join(REPO_ROOT, "backups");
 const KEEP = 10; // število ohranjenih zadnjih kopij
+
+process.env.DATABASE_URL =
+  process.env.DIRECT_URL ??
+  (() => {
+    const envFile = fs.readFileSync(path.join(REPO_ROOT, ".env"), "utf8");
+    return envFile.match(/^DIRECT_URL="?([^"\n]+)"?/m)?.[1] ?? process.env.DATABASE_URL;
+  })();
+
+const { db } = await import("../src/lib/db");
 
 function sha256(file: string): string {
   const hash = createHash("sha256");
@@ -39,37 +47,44 @@ function gitHead(): string | null {
   }
 }
 
-/* --- izvedba -------------------------------------------------------------- */
+/* --- odvod -------------------------------------------------------------- */
 
-if (!fs.existsSync(DB_FILE)) {
-  console.error(`✗ Baza ne obstaja: ${DB_FILE}`);
-  process.exit(1);
-}
+const TABLES = [
+  ["Exhibit", () => db.exhibit.findMany()],
+  ["Source", () => db.source.findMany()],
+  ["StoryItem", () => db.storyItem.findMany()],
+  ["MuseumEvent", () => db.museumEvent.findMany()],
+  ["GuestbookEntry", () => db.guestbookEntry.findMany()],
+  ["ObjectMemory", () => db.objectMemory.findMany()],
+  ["StatDay", () => db.statDay.findMany()],
+] as const;
 
 const stamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
 const targetDir = path.join(BACKUP_ROOT, `backup-${stamp}`);
-const targetFile = path.join(targetDir, "custom.db");
-
 fs.mkdirSync(targetDir, { recursive: true });
-fs.copyFileSync(DB_FILE, targetFile);
+const snapshotFile = path.join(targetDir, "snapshot.json");
 
-const originalSize = fs.statSync(DB_FILE).size;
-const copiedSize = fs.statSync(targetFile).size;
-if (originalSize !== copiedSize) {
-  console.error(`✗ Kopija ni popolna (${copiedSize} ≠ ${originalSize} bajtov) — NE uporabljaj.`);
-  process.exit(1);
+const counts: Record<string, number> = {};
+const tables: Record<string, unknown[]> = {};
+for (const [name, read] of TABLES) {
+  const rows = await read();
+  counts[name] = rows.length;
+  tables[name] = rows;
+  console.log(`  ✓ ${name}: ${rows.length} vrstic`);
 }
+
+fs.writeFileSync(snapshotFile, JSON.stringify({ createdAt: new Date().toISOString(), counts, tables }, null, 1));
 
 const manifest = {
   createdAt: new Date().toISOString(),
-  source: path.relative(REPO_ROOT, DB_FILE),
-  file: path.relative(REPO_ROOT, targetFile),
-  bytes: copiedSize,
-  sha256: sha256(targetFile),
+  provider: "postgresql (Neon)",
+  file: path.relative(REPO_ROOT, snapshotFile),
+  bytes: fs.statSync(snapshotFile).size,
+  sha256: sha256(snapshotFile),
+  counts,
   gitHead: gitHead(),
-  note: "Nagata kopija SQLite; preverjena velikost + SHA-256 (issue #27/T).",
+  note: "Logični odvod PostgreSQL (JSON); SHA-256 + števci (issue #27/T, A1).",
 };
-
 fs.writeFileSync(path.join(targetDir, "manifest.json"), JSON.stringify(manifest, null, 2));
 
 /* --- ohranjanje: izloči najstarejše kopije prek meje ----------------------- */
@@ -83,7 +98,9 @@ for (const old of dirs.slice(0, Math.max(0, dirs.length - KEEP))) {
   console.log(`− izločena stara kopija: ${old}`);
 }
 
-console.log(`✓ Kopija: ${manifest.file}`);
+console.log(`✓ Odvod: ${manifest.file}`);
 console.log(`  ${manifest.bytes} bajtov · SHA-256 ${manifest.sha256.slice(0, 16)}…`);
-console.log(`  git HEAD: ${manifest.gitHead ?? "(ni gita)"}`);
-console.log(`  Obnovitev: docs/BACKUP-RESTORE.md`);
+console.log(`  števci: ${Object.values(counts).join("/")} · git HEAD ${manifest.gitHead ?? "(ni gita)"}`);
+console.log(`  Obnova: docs/BACKUP-RESTORE.md`);
+
+await db.$disconnect();
