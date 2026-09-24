@@ -19,7 +19,9 @@
     "db:reset": "prisma migrate reset",
     "db:seed": "bun prisma/seed.ts",
     "db:migrate:deploy": "prisma migrate deploy",
-    "db:data-migrate": "bun scripts/migrate-data-sqlite-to-postgres.ts"
+    "db:data-migrate": "bun scripts/migrate-data-sqlite-to-postgres.ts",
+    "archive:seed": "bun scripts/archive-register.ts seed-priority",
+    "archive:list": "bun scripts/archive-register.ts list"
   },
   "prisma": {
     "seed": "bun prisma/seed.ts"
