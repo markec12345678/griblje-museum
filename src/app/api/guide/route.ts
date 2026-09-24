@@ -2,11 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import {
   askGuide,
-  guideClientIp,
   guideProviderTrail,
-  guideRateLimited,
   type GuideMessage,
 } from "@/lib/guide";
+import { clientIpOf, rateLimited } from "@/lib/rate-limit";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
 import { openRouterQuotaOf } from "@/lib/openrouter-llm";
 
@@ -53,7 +52,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "invalid-request" }, { status: 400 });
     }
 
-    if (guideRateLimited(guideClientIp(req))) {
+    if (rateLimited("guide", clientIpOf(req))) {
       return NextResponse.json({ error: "rate-limited" }, { status: 429 });
     }
 

@@ -3,6 +3,7 @@ import { db } from "@/lib/db";
 import { getMinuteStory } from "@/lib/minute-stories";
 import { synthesizeSpeech, type SynthResult } from "@/lib/tts";
 import { MAX_CHARS, prepareForTts, splitIntoChunks } from "@/lib/audio-chunks";
+import { clientIpOf, rateLimited } from "@/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 // Sinteza TTS lahko traja več kot privzetih 10 s (hladen klic ~20 s) —
@@ -115,27 +116,8 @@ async function synthesize(text: string, lang: Lang): Promise<SynthResult> {
 
 /* Varčevanje z mesečnim kreditom ElevenLabs: omejimo število dejanskih
  * sintez na IP (predvajanje iz predpomnilnika ni omejeno — ogreto
- * posnetko lahko posluša neomejeno obiskovalcev). */
-const TTS_RATE = { count: 30, windowMs: 5 * 60 * 1000 } as const;
-const ttsBuckets = new Map<string, number[]>();
-
-function synthRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const hits = (ttsBuckets.get(ip) ?? []).filter((t) => now - t < TTS_RATE.windowMs);
-  if (hits.length >= TTS_RATE.count) {
-    ttsBuckets.set(ip, hits);
-    return true;
-  }
-  hits.push(now);
-  ttsBuckets.set(ip, hits);
-  return false;
-}
-
-function clientIp(req: NextRequest): string {
-  const fwd = req.headers.get("x-forwarded-for");
-  if (fwd) return fwd.split(",")[0]!.trim();
-  return req.headers.get("x-real-ip") ?? "local";
-}
+ * posnetko lahko posluša neomejeno obiskovalcev). Kvota "tts" živi v
+ * skupnem modulu src/lib/rate-limit.ts (issue #27/J). */
 
 export async function GET(req: NextRequest) {
   try {
@@ -202,7 +184,7 @@ export async function GET(req: NextRequest) {
     if (!audio) {
       // Varčevanje s kreditom TTS: omejimo samo DEJANSKE sinteze na IP
       // (ogret posnetek iz predpomnilnika ni omejen).
-      if (synthRateLimited(clientIp(req))) {
+      if (rateLimited("tts", clientIpOf(req))) {
         return NextResponse.json({ error: "rate-limited" }, { status: 429 });
       }
       // Hkratne enake zahteve delijo obljubo — brez dvojne sinteze.
