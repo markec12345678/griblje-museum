@@ -34,6 +34,8 @@ export const RATE_RULES = {
   contributions: { count: 5, windowMs: 10 * 60 * 1000 } as const satisfies RateRule,
   /** Dejavna TTS sinteza (samo hladni klici — ogreto predvajanje ni omejeno). */
   tts: { count: 30, windowMs: 5 * 60 * 1000 } as const satisfies RateRule,
+  /** Prijave neprimernih prispevkov (moderation/report). */
+  reports: { count: 5, windowMs: 10 * 60 * 1000 } as const satisfies RateRule,
 } as const;
 
 export type RateScope = keyof typeof RATE_RULES;
