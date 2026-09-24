@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { askCurator, curatorClientIp, curatorRateLimited } from "@/lib/curator";
+import { claimsForSlugs } from "@/lib/curator-claims";
+import { correlationIdOf } from "@/lib/obs";
 
 export const dynamic = "force-dynamic";
 // Sinteza modela lahko traja več kot privzetih 10 s — enako kot vodnik.
@@ -44,12 +46,21 @@ export async function POST(req: NextRequest) {
 
     const result = await askCurator(lang, question);
 
-    return NextResponse.json(result, {
-      headers: {
-        "Cache-Control": "no-store",
-        "Access-Control-Allow-Origin": "*",
-      },
-    });
+    // Issue #27/K — veriga dokaza: objavljene trditve zapisov v odgovoru,
+    // vsaka z vidnim evidence statusom in oznako, ali sme AI trditev
+    // predstaviti kot dejstvo (TESTIMONY/TRADITION/TO_COLLECT nikoli tiho).
+    const claims = await claimsForSlugs(result.viri.map((v) => v.slug));
+
+    return NextResponse.json(
+      { ...result, ...(claims.length > 0 ? { claims } : {}) },
+      {
+        headers: {
+          "Cache-Control": "no-store",
+          "Access-Control-Allow-Origin": "*",
+          "x-correlation-id": correlationIdOf(req),
+        },
+      }
+    );
   } catch (error) {
     console.error("API /api/curator error:", error);
     const message = error instanceof Error ? error.message : String(error);

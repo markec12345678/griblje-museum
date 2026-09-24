@@ -4,6 +4,22 @@ import "./globals.css";
 import { Providers } from "@/components/museum/providers";
 import { PwaRegister } from "@/components/museum/pwa-register";
 import { SITE_URL } from "@/lib/site";
+import { seedExhibits } from "@/lib/museum-content";
+
+/* Število zapisov v opisu pride iz vira podatkov (seme muzejske vsebine),
+ * ne iz ročno zapisane številke — uredniške dopolnitve tako ne ostanejo
+ * vidne kot zastarela trditev v metapodatkih (issue #27, točka Q).
+ * Sklanjatev po pravilih: 1 zapis · 2–4 zapisa · 5+ in 11–14 zapisov. */
+function zapisovSKlanjatvjo(count: number): string {
+  const lastTwo = count % 100;
+  const last = count % 10;
+  if (count === 1) return "1 zapis";
+  if (lastTwo >= 11 && lastTwo <= 14) return `${count} zapisov`;
+  if (last >= 2 && last <= 4) return `${count} zapisa`;
+  return `${count} zapisov`;
+}
+
+const OPIS_ZAPISOV = zapisovSKlanjatvjo(seedExhibits.length);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,8 +37,7 @@ export const metadata: Metadata = {
     default: "Muzej vasi Griblje — digitalni muzej vasi ob Kolpi",
     template: "%s — Muzej vasi Griblje",
   },
-  description:
-    "Muzej vasi Griblje je večjezični digitalni muzej resnične vasi v Beli krajini: 93 zapisov, dokazljivi viri, lestvica zanesljivosti, odprti podatki in zemljevid. / A multilingual digital museum of a real village in Bela krajina, Slovenia.",
+  description: `Muzej vasi Griblje je večjezični digitalni muzej resnične vasi v Beli krajini: ${OPIS_ZAPISOV}, dokazljivi viri, lestvica zanesljivosti, odprti podatki in zemljevid. / A multilingual digital museum of a real village in Bela krajina, Slovenia.`,
   keywords: [
     "Griblje",
     "Bela krajina",

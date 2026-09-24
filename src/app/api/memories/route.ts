@@ -3,12 +3,11 @@ import { db } from "@/lib/db";
 import { isReadOnlyDatabase, readOnlyResponse } from "@/lib/readonly-db";
 import {
   cleanText,
-  clientIp,
   looksSuspicious,
   memorySchema,
-  rateLimited,
   LIMITS,
 } from "@/lib/contributions";
+import { clientIpOf, rateLimited } from "@/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
@@ -128,14 +127,14 @@ export async function OPTIONS() {
  *
  * Enaka samodejna moderacija kot spominska knjiga:
  *  - honeypot `website` → tiho zavržemo (lažni uspeh za robota)
- *  - povezave/e-pošta/oznake → status `held` (čaka na kurotorski pregled)
+ *  - povezave/e-pošta/oznake → status `pending` (čaka na kurotorski pregled)
  *  - čisto besedilo → takoj objavljeno
  * Omejitev: 5 prispevkov / 10 min na IP na primerek strežnika.
  */
 export async function POST(request: Request) {
   try {
-    const ip = clientIp(request);
-    if (rateLimited(ip)) {
+    const ip = clientIpOf(request);
+    if (rateLimited("contributions", ip)) {
       return NextResponse.json(
         { error: "Preveč prispevkov v kratkem času — poskusite znova kasneje." },
         { status: 429 }
@@ -178,7 +177,7 @@ export async function POST(request: Request) {
     }
 
     const status =
-      looksSuspicious(memory) || looksSuspicious(author) ? "held" : "published";
+      looksSuspicious(memory) || looksSuspicious(author) ? "pending" : "published";
 
     await db.objectMemory.create({
       data: {

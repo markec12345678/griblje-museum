@@ -21,7 +21,7 @@
  *    približnost samo, kadar je ZAPISANA (EventPrecision iz timeline-map).
  *
  * Iskanje je predponsko po žetonih (za slovenske oblike: zvon/zvona,
- * Griblje/Gribljah) — 93 zapisov in 92 entitet ne potrebuje vektorjev
+ * Griblje/Gribljah) — obseg zbirke in entitetne plasti ne potrebuje vektorjev
  * niti grafske baze (navodilo: NO BLIND RAG, NO GRAPH DATABASE).
  */
 

@@ -21,10 +21,15 @@ export const dynamic = "force-dynamic";
 
 const KINDS = ["visit", "open", "walk", "guide", "curator", "audio", "ar", "download", "detail"] as const;
 
+/* Jezikovna oznaka števca sledi dejansko podprtim jezikom vmesnika
+ * (SLO/HRV/DEU/ITA/EN — glej src/lib/i18n.tsx); prej so se obiski DE/IT
+ * tiho zavrnili (400) in prišli k privzeti slovenščini — issue #27, točka R. */
+const LANGS = ["sl", "en", "hr", "de", "it"] as const;
+
 const statSchema = z.object({
   kind: z.enum(KINDS),
   key: z.string().max(120).optional(),
-  lang: z.enum(["sl", "en", "hr"]).default("sl"),
+  lang: z.enum(LANGS).default("sl"),
 });
 
 /** Lokalni dan strežnika (Europe/Ljubljana) kot YYYY-MM-DD. */

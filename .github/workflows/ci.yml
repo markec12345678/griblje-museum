@@ -1,0 +1,136 @@
+# CI — Griblje Village Museum (issue #4 + #27/A1/S)
+#
+# Pipeline: tipi → lint → enotni testi → dimni testi API-jev na živem dev
+# strežniku z PostgreSQL (kontejner postgres:17 + `prisma migrate deploy`
+# + seed) — enaka oživitvena pot kot v produkciji (docs/DEPLOYMENT.md).
+#
+# Baza: shema je PostgreSQL (issue #27/A1, Neon). Dimni testi tečejo na
+# sveže migrirani + sejani bazi v kontejnerju, brez zunanjih storitev.
+# TTS klice dimni test namenoma ne sproži (samo napake 400/404).
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    name: tipi + lint + enotni testi
+    runs-on: ubuntu-latest
+
+    # Bazični preverbi upravljanja (#27/S) tečejo na pravi PostgreSQL —
+    # isti kontejner kot pri dimnih testih, brez zunanjih storitev.
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: museum
+          POSTGRES_PASSWORD: museum
+          POSTGRES_DB: museum
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U museum"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      DATABASE_URL: postgresql://museum:museum@localhost:5432/museum
+      DIRECT_URL: postgresql://museum:museum@localhost:5432/museum
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Namestitev odvisnosti
+        run: bun install --frozen-lockfile
+
+      - name: Tipi (tsc --noEmit)
+        run: bunx tsc --noEmit
+
+      - name: Lint (ESLint)
+        run: bun run lint
+
+      - name: Migracija sheme (prisma migrate deploy)
+        run: bunx prisma migrate deploy
+
+      - name: Enotni testi (bun test)
+        run: bun test tests/
+
+  smoke:
+    name: dimni testi API-jev (živi strežnik + PostgreSQL)
+    runs-on: ubuntu-latest
+    needs: quality
+
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: museum
+          POSTGRES_PASSWORD: museum
+          POSTGRES_DB: museum
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U museum"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      DATABASE_URL: postgresql://museum:museum@localhost:5432/museum
+      DIRECT_URL: postgresql://museum:museum@localhost:5432/museum
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Namestitev odvisnosti
+        run: bun install --frozen-lockfile
+
+      - name: Migracija sheme (prisma migrate deploy)
+        run: bunx prisma migrate deploy
+
+      - name: Sejanje zbirke
+        run: bun run db:seed
+
+      - name: Zagon dev strežnika (ozadje)
+        run: |
+          bunx next dev -p 3001 > /tmp/dev-ci.log 2>&1 &
+          echo $! > /tmp/dev-ci.pid
+
+      - name: Čakanje na strežnik (do 90 s)
+        run: |
+          for i in $(seq 1 45); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' http://localhost:3001/api/exhibits || true)
+            if [ "$code" = "200" ]; then
+              echo "Strežnik živ po ${i}×2 s (HTTP $code)."
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Strežnik se ni zagnal — log:"
+          tail -50 /tmp/dev-ci.log
+          exit 1
+
+      - name: Dimni testi API-jev
+        run: SMOKE_BASE_URL=http://localhost:3001 bun tests/api-smoke.ts
+
+      - name: Predpravniška preverba (preflight)
+        run: bun scripts/preflight.ts
+
+      - name: Ustavitev strežnika
+        if: always()
+        run: |
+          if [ -f /tmp/dev-ci.pid ]; then kill "$(cat /tmp/dev-ci.pid)" || true; fi
+          tail -20 /tmp/dev-ci.log || true

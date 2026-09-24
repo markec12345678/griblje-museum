@@ -977,8 +977,9 @@ export function getWalk(id: string): Walk | undefined {
 
 /**
  * Postaja kuriranega TEMATSKEGA sprehoda, ki nosi dani zapis.
- * Vseh 93 zapisov je pokritih s 5 tematskimi sprehodi točno enkrat
- * (družinski sprehod je podmnožica — zato iščemo samo po WALKS).
+ * Vsi zapisi zbirke so pokriti s tematskimi sprehodi točno enkrat
+ * (invarianta je preverjena v tests/walks-coverage.test.ts;
+ * družinski sprehod je podmnožica — zato iščemo samo po WALKS).
  * Vrača null, če zapis ni (več) na nobenem sprehodu.
  */
 export function walkStopOf(slug: string): {

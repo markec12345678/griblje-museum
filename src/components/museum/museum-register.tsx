@@ -5,7 +5,7 @@ import { useLang, pick } from "@/lib/i18n";
 import { Archive } from "lucide-react";
 
 /**
- * Muzejski register — strežniško upodobljen katalog vseh 93 zapisov.
+ * Muzejski register — strežniško upodobljen katalog vseh zapisov zbirke.
  *
  * Vzorec: katalogi zbirk vodilnih muzejev (Rijksmuseum Collection, DigitaltMuseum)
  * so HTML povezave na strani zapisa — plezalni robot (in obiskovalec brez

@@ -50,6 +50,9 @@ test
 prompt
 
 server.log
+# Varnostne kopije baze (lokalne — manifest je vir resnice, kopije se ne
+# commitirajo; oddaljena hramba: docs/BACKUP-RESTORE.md)
+/backups/
 # Skills directory (sandbox template — never part of the museum repo)
 /skills/
 .zscripts/dev.pid
