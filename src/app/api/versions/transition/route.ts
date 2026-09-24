@@ -9,6 +9,7 @@ import {
   type VersionAction,
   type VersionStatus,
 } from "@/lib/editorial";
+import { guideCacheClear } from "@/lib/guide-cache";
 
 export const dynamic = "force-dynamic";
 
@@ -137,6 +138,9 @@ export async function POST(request: Request) {
           action,
           status: result.status,
           exhibit: version.exhibit.slug,
+          // Issue #27/K: nova objava → predpomnilnik vodnika/kustosa
+          // ne sme več servirati zastarele vsebine zapisa.
+          cacheCleared: guideCacheClear(`published ${version.exhibit.slug}`),
         });
       }
 
