@@ -47,32 +47,8 @@ export function guideProviderTrail(): string {
 /* --- Omejitve (v samostojnem modulu guide-limits.ts, da jih lahko
  * uvozi tudi odjemalec brez strežniških odvisnosti.) ------------------ */
 
-/* --- Omejitev hitrosti (drseče okno, ločeno od prispevkov) ------------- */
-
-type Bucket = { hits: number[] };
-const RATE_BUCKETS = new Map<string, Bucket>();
-/** 12 vprašanj na 10 minut na IP (na primerek strežnika). */
-const RATE_LIMIT = { count: 12, windowMs: 10 * 60 * 1000 } as const;
-
-export function guideRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const bucket = RATE_BUCKETS.get(ip) ?? { hits: [] };
-  bucket.hits = bucket.hits.filter((t) => now - t < RATE_LIMIT.windowMs);
-  if (bucket.hits.length >= RATE_LIMIT.count) {
-    RATE_BUCKETS.set(ip, bucket);
-    return true;
-  }
-  bucket.hits.push(now);
-  RATE_BUCKETS.set(ip, bucket);
-  return false;
-}
-
-/** IP iz glav zahteve (x-forwarded-for na proxy-ju, sicer "local"). */
-export function guideClientIp(request: Request): string {
-  const fwd = request.headers.get("x-forwarded-for");
-  if (fwd) return fwd.split(",")[0]!.trim();
-  return request.headers.get("x-real-ip") ?? "local";
-}
+/* --- Omejitev hitrosti: skupni modul src/lib/rate-limit.ts (issue #27/J)
+ * — kvota "guide". ---------------------------------------------------- */
 
 /* --- Dosje zbirke ------------------------------------------------------ */
 

@@ -17,7 +17,8 @@ export const LIMITS = CONTRIBUTION_LIMITS;
  *  2. Čisto besedilo — striptamo kontrolne znake, skrčimo presledke;
  *     vrnjenega besedila nikoli ne prevajamo v HTML (React samo-escape).
  *  3. Hevristika — povezave, e-pošta ali oglati oklepaji prestavijo
- *     prispevek v status `held` (objavi ga kustos po pregledu).
+ *     prispevek v status `pending` (objavi ga kustos po pregledu;
+ *     profesionalen moderation workflow — issue #27/G).
  *  4. Omejitev hitrosti — drseče okno v pomnilniku (na primeru strežnika;
  *     na strežniški platformi velja na primerek, kar je za demo dovolj).
  *
@@ -56,33 +57,8 @@ export function looksSuspicious(text: string): boolean {
   );
 }
 
-// --- Omejitev hitrosti (drseče okno) ------------------------------------
-
-type Bucket = { hits: number[] };
-
-const RATE_BUCKETS = new Map<string, Bucket>();
-/** 5 prispevkov na 10 minut na IP (na primerek strežnika). */
-const RATE_LIMIT = { count: 5, windowMs: 10 * 60 * 1000 } as const;
-
-export function rateLimited(ip: string): boolean {
-  const now = Date.now();
-  const bucket = RATE_BUCKETS.get(ip) ?? { hits: [] };
-  bucket.hits = bucket.hits.filter((t) => now - t < RATE_LIMIT.windowMs);
-  if (bucket.hits.length >= RATE_LIMIT.count) {
-    RATE_BUCKETS.set(ip, bucket);
-    return true;
-  }
-  bucket.hits.push(now);
-  RATE_BUCKETS.set(ip, bucket);
-  return false;
-}
-
-/** IP iz glav zahteve (x-forwarded-for na proxy-ju, sicer "local"). */
-export function clientIp(request: Request): string {
-  const fwd = request.headers.get("x-forwarded-for");
-  if (fwd) return fwd.split(",")[0]!.trim();
-  return request.headers.get("x-real-ip") ?? "local";
-}
+// --- Omejitev hitrosti: skupni modul src/lib/rate-limit.ts (issue #27/J)
+// — kvota "contributions" (prej lasten Map v tem modulu). ---------------
 
 // --- Sheme (zod) --------------------------------------------------------
 

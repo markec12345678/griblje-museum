@@ -6,8 +6,11 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
+  // Direkt endpoint za migracije in shadow DB (Neon); DATABASE_URL je pooled
+  // (PgBouncer) za aplikacijski runtime. Glej docs/DEPLOYMENT.md (issue #27/A1).
+  directUrl = env("DIRECT_URL")
 }
 
 // Muzej vasi Griblje — shema digitalne muzejske zbirke.
@@ -49,10 +52,76 @@ model Exhibit {
   updatedAt     DateTime @updatedAt
   sources       Source[]
   memories      ObjectMemory[]
+  assets        DigitalAsset[]
+  versions      ExhibitVersion[]
+  claims        Claim[]
 
   @@index([category])
   @@index([evidenceStatus])
   @@index([museumNo])
+}
+
+// --- Digital asset management (issue #27/B) ------------------------------
+// Centralni register digitalnih vsebin: fotografije, skeni, PDF, audio,
+// video, GLB/USDZ, IIIF derivati, sličice. Velikih binarnih vsebin NE
+// shranjujemo v bazi — samo ključ objekta (storageKey) + metapodatki.
+//
+// Načela (acceptance criteria #27/B):
+//   - original in derivat sta ločena zapisa, povezana z derivedFromId;
+//   - vsak asset nosi SHA-256 povzetek vsebine (identiteta bitov);
+//   - vsak asset nosi pravice (copyright, licenca, URL licence, atribucija);
+//   - zasebni asset (accessLevel != PUBLIC) ni javno servisiran brez
+//     avtorizacije (glej /api/assets — filter je obvezen);
+//   - zamenjava ne briše zgodovine: nov zapis prevzame rolo in staremu
+//     nastavi preservationStatus = REPLACED + replacedById.
+
+model DigitalAsset {
+  id               String   @id @default(uuid())
+  /** Ključ objekta v hranilniku (S3/R2/disk) — nikoli binarna vsebina. */
+  storageKey       String   @unique
+  mime             String
+  originalFilename String
+  bytes            Int
+  width            Int?
+  height           Int?
+  /** SHA-256 vsebine, izračunan ob vnosu (scripts/asset-register.ts).
+   * Enak checksum na več zapisih = znana duplikacija, ne napaka —
+   * deduplikacija je odločitev registra, ne sheme. */
+  sha256           String
+  creator          String?
+  copyrightHolder  String
+  license          String
+  licenseUrl       String?
+  attribution      String?
+  /** Izvor vsebine (arhiv, fotograf, donator …) — prosto besedilo. */
+  origin           String?
+  /** fotografija | sken | pdf | audio | video | glb | usdz | iiif-derivative | thumbnail */
+  kind             String
+  /** ACTIVE | MIGRATED | DEGRADED | REPLACED | LOST (preservacija #27/N). */
+  preservationStatus String @default("ACTIVE")
+  /** PUBLIC | RESTRICTED | INTERNAL — javni klici smejo videti samo PUBLIC. */
+  accessLevel      String   @default("PUBLIC")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  exhibitId String?
+  exhibit   Exhibit? @relation(fields: [exhibitId], references: [id], onDelete: SetNull)
+
+  /** Derivacijska veriga: IIIF derivati, sličice, konverzije. */
+  derivedFromId String?
+  derivedFrom   DigitalAsset?  @relation("AssetDerivation", fields: [derivedFromId], references: [id], onDelete: SetNull)
+  derivatives   DigitalAsset[] @relation("AssetDerivation")
+
+  /** Zamenjava: stari zapis ostane (zgodovina), kaže na naslednika. */
+  replacedById String?
+  replacedBy   DigitalAsset?  @relation("AssetReplacement", fields: [replacedById], references: [id], onDelete: SetNull)
+  replaces     DigitalAsset[] @relation("AssetReplacement")
+
+  @@index([exhibitId])
+  @@index([kind])
+  @@index([accessLevel])
+  @@index([sha256])
+  @@index([preservationStatus])
 }
 
 model Source {
@@ -67,6 +136,30 @@ model Source {
   noteSi     String?
   noteEn     String?
   sortOrder  Int      @default(0)
+
+  // --- Pravice (issue #27/F) — javni API servisira samo creator/
+  // licenseUrl/attribution/restrictions; permissionEvidence in
+  // rightsVerifiedAt ostajata notranja polja (issue #27/I).
+  creator             String?
+  copyrightHolder     String?
+  licenseUrl          String?
+  /** GRANTED | DENIED | UNKNOWN | NOT_REQUIRED (privzeto UNKNOWN —
+   *  REVIEW_REQUIRED pojemek: neznan status se ne pretvarja, da je znan). */
+  permissionToPublish String? @default("UNKNOWN")
+  permissionToModify  String? @default("UNKNOWN")
+  /** YES | NO | UNKNOWN — komercialna uporaba vsebine. */
+  commercialUse       String? @default("UNKNOWN")
+  attribution         String?
+  /** INTERNO — dokaz o pravicah (sporazum, e-pošta, licencna listina). */
+  permissionEvidence  String?
+  rightsVerifiedAt    DateTime?
+  /** Omejitve uporabe (npr. »samo citalnica«, »brez razmnoževanja«). */
+  restrictions        String?
+
+  archiveRecordId String?
+  archiveRecord   ArchiveRecord? @relation(fields: [archiveRecordId], references: [id], onDelete: SetNull)
+  versions        SourceVersion[]
+  claims          Claim[]
 
   @@index([exhibitId])
 }
@@ -101,10 +194,17 @@ model MuseumEvent {
 }
 
 // --- Sodelovanje skupnosti (vzorec: DigitaltMuseum, Tenement Museum) ---
-// Prispevki obiskovalcev. Status:
-//   published — viden vsem (samodejno objavljen čisti besedili brez povezav)
-//   held      — čaka na kurotorski pregled (vsebuje povezavo/e-pošto/oznake)
+// Prispevki obiskovalcev. Statusi (issue #27/G — profesionalen workflow):
+//   pending   — čaka na kurotorski pregled (vsebuje povezave/e-pošto/oznake;
+//               prejšnji status »held« preimenovan, pomen enak)
+//   published — viden vsem (samodejno objavljeno čisto besedilo ali
+//               kurotorsko odobren prispevek)
+//   rejected  — zavrnjen (ni viden; po retencijskem pravilu #27/H izbrisán)
+//   hidden    — skrit po prijavi/odločitvi moderatorja (ni viden, ostane)
+//   deleted   — mehki izbris (deletedAt; fizicni izbris po retenciji)
 // Honeypot polje `website` se ne shranjuje — tiho zavrženo (spam past).
+// Meta podatki moderatorja (moderatedBy/…Note) so INTERNO polja — nikoli
+// v javnem API-ju (issue #27/I).
 
 model GuestbookEntry {
   id        String   @id @default(uuid())
@@ -114,6 +214,14 @@ model GuestbookEntry {
   lang      String   @default("sl") // jezik, v katerem obiskovalec piše
   status    String   @default("published")
   createdAt DateTime @default(now())
+
+  // Moderacija (issue #27/G) — kdo/kdaj/zakaj/prejšnji status:
+  moderatedBy    String?
+  moderatedAt    DateTime?
+  moderationNote String?
+  previousStatus String?
+  reportCount    Int       @default(0)
+  deletedAt      DateTime?
 
   @@index([status, createdAt])
 }
@@ -129,8 +237,173 @@ model ObjectMemory {
   status    String   @default("published")
   createdAt DateTime @default(now())
 
+  // Moderacija (issue #27/G) — ista politika kot spominska knjiga:
+  moderatedBy    String?
+  moderatedAt    DateTime?
+  moderationNote String?
+  previousStatus String?
+  reportCount    Int       @default(0)
+  deletedAt      DateTime?
+
   @@index([exhibitId, status])
   @@index([status, createdAt])
+}
+
+// --- Uredniško delo in verzije (issue #27/C) -----------------------------
+// Vsaka uredniška sprememba mora omogocati rekonstrukcijo: kdo, kdaj, kaj,
+// prejšnja verzija, nova verzija, razlog, status objave. `updatedAt` sam
+// ni dovolj — snapshot JSON nosi celotno urejanljivo vsebinsko stanje.
+// Workflow: DRAFT → REVIEW → APPROVED → PUBLISHED (po potrebi REJECTED /
+// ARCHIVED). Javni obiskovalec vidi samo objavljeno stanje zapisa (tabela
+// Exhibit ostaja »trenutno objavljeno«; verzije so zgodovina + priprava).
+
+model ExhibitVersion {
+  id          String   @id @default(uuid())
+  exhibitId   String
+  exhibit     Exhibit  @relation(fields: [exhibitId], references: [id], onDelete: Cascade)
+  version     Int
+  /** DRAFT | REVIEW | APPROVED | PUBLISHED | REJECTED | ARCHIVED */
+  status      String   @default("DRAFT")
+  /** Celoten posnetek urejanljive vsebine zapisa v tej verziji (JSON).
+   *  Objava (publish) v transakciji prepise polja Exhibit iz snapshot. */
+  snapshot    Json
+  /** Uredniški alias (brez racunov: ime/krajišce urednika). */
+  changedBy   String
+  reason      String?
+  prevVersion Int?
+  createdAt   DateTime @default(now())
+
+  @@unique([exhibitId, version])
+  @@index([status])
+}
+
+model SourceVersion {
+  id          String   @id @default(uuid())
+  sourceId    String
+  source      Source   @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  version     Int
+  status      String   @default("DRAFT")
+  snapshot    Json
+  changedBy   String
+  reason      String?
+  prevVersion Int?
+  createdAt   DateTime @default(now())
+
+  @@unique([sourceId, version])
+  @@index([status])
+}
+
+// --- Claim-level provenance (issue #27/D) --------------------------------
+// Exhibit → Claim → Source: trditev (ena zahteva = ena trditev) z lastnim
+// evidence statusom in neposredno vezavo na vir + stran/oddelka/enoto.
+// Primer: »šola ustanovljena 1889« → vir Krajevni leksikon 1937, str. X.
+// En Exhibit sme hkrati nositi DOCUMENTED, TESTIMONY in TO_COLLECT trditve.
+// Kritično: AI kustos sme trditev predstaviti kot dokumentirano samo, ce
+// obstaja preverljiva veriga (glej src/lib/claims.ts — evidence gate).
+
+model Claim {
+  id             String   @id @default(uuid())
+  exhibitId      String
+  exhibit        Exhibit  @relation(fields: [exhibitId], references: [id], onDelete: Cascade)
+  /** Natančna zgodovinska trditev. */
+  statement      String
+  lang           String   @default("sl")
+  /** DOCUMENTED | CORROBORATED | TESTIMONY | TRADITION | UNVERIFIED |
+   *  TO_COLLECT (enaka lestvica kot Exhibit.evidenceStatus). */
+  evidenceStatus String
+  /** HIGH | MEDIUM | LOW — kuratorska ocena zanesljivosti. */
+  confidence     String?
+  sourceId       String?
+  source         Source?  @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  archiveRecordId String?
+  archiveRecord  ArchiveRecord? @relation(fields: [archiveRecordId], references: [id], onDelete: SetNull)
+  /** Stran / paragraf / arhivska enota znotraj vira. */
+  pageRef        String?
+  /** INTERNO — raziskovalna opomba, nikoli v javnem API-ju (#27/I). */
+  researcherNote String?
+  /** DRAFT | APPROVED | PUBLISHED — javni API servira samo PUBLISHED. */
+  status         String   @default("DRAFT")
+  version        Int      @default(1)
+  createdBy      String?
+  updatedBy      String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([exhibitId, status])
+  @@index([evidenceStatus])
+  @@index([sourceId])
+}
+
+// --- Strukturirani arhivski metapodatki (issue #27/E) --------------------
+// Pomembnih arhivskih podatkov ne pustamo samo v noteSi: fond, serija,
+// signatura, dostopnost, digitalizacija, raziskovalni status.
+// researchStatus je pošteno sinhroniziran z dejanskim branjem (issue
+// #27/M): NOT_VIEWED pomeni »najdeno v katalogu, ne prebrano« — take
+// trditve ne smejo postati DOCUMENTED.
+
+model ArchiveRecord {
+  id               String   @id @default(uuid())
+  /** Ustanova (npr. »ZAL — Enota za Dolenjsko in Belo krajino Novo mesto«). */
+  institution      String
+  repository       String?
+  /** Fond/zbirka (npr. »Okrajno glavarstvo Črnomelj 1861–1943«). */
+  fonds            String
+  series           String?
+  unit             String?
+  /** Signatura (npr. SI_ZAL_ČRN/0001/001/00012). */
+  signature        String
+  /** Identifikator v repozitoriju arhiva (npr. VAČ hub id 4118864). */
+  identifier       String?
+  /** Arhivska datacija (pogosto besedilna: »1929–1941«, »cca. 1898«). */
+  dateFrom         String?
+  dateTo           String?
+  digitized        Boolean  @default(false)
+  /** Dostopnost v arhivu: PUBLIC (javno) | READING_ROOM (samo čitalnica)
+   *  | RESTRICTED (omejeno). */
+  accessLevel      String   @default("PUBLIC")
+  repositoryUrl    String?
+  physicalLocation String?
+  pageRef          String?
+  /** NOT_VIEWED | VIEWED_PARTIALLY | VIEWED | TRANSCRIBED. */
+  researchStatus   String   @default("NOT_VIEWED")
+  /** INTERNO — raziskovalne opombe, nikoli v javnem API-ju (#27/I). */
+  researcherNotes  String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  sources Source[]
+  claims  Claim[]
+
+  @@unique([institution, signature])
+  @@index([researchStatus])
+  @@index([fonds])
+}
+
+// --- Ozadnja opravila (issue #27/W) ---------------------------------------
+// Za daljše operacije (asset processing, sličice, audio, 3D derivati,
+// preverjanje checksum, preservacija, statistika, čiščenje retencije).
+
+model Job {
+  id             String    @id @default(uuid())
+  /** checksum-verify | preservation | retention | thumbnail | audio |
+   *  stats-aggregate | cache-invalidate | asset-processing */
+  type           String
+  /** PENDING | RUNNING | SUCCEEDED | FAILED */
+  status         String    @default("PENDING")
+  attempts       Int       @default(0)
+  maxAttempts    Int       @default(3)
+  startedAt      DateTime?
+  completedAt    DateTime?
+  error          String?
+  /** ID za povezavo z dnevnikom/zahtevo (issue #27/V). */
+  correlationId  String?
+  /** Idempotenca: isti ključ = isti opravilo (ponovitev ne podvoji dela). */
+  idempotencyKey String?   @unique
+  payload        Json?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([status, type])
 }
 
 // --- Statistika obiska (priprava na razpisna poročila: spremljanje in
@@ -142,7 +415,7 @@ model StatDay {
   id        String   @id @default(uuid())
   day       String // YYYY-MM-DD
   kind      String // visit | open | walk | guide | curator | audio | ar | download
-  lang      String // sl | en | hr
+  lang      String // sl | en | hr | de | it ( jeziki vmesnika)
   key       String   @default("") // slug zapisa / id sprehoda / "" za splošno
   count     Int      @default(0)
   updatedAt DateTime @updatedAt

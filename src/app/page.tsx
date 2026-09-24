@@ -6,7 +6,7 @@ import { siteGraphJsonLd } from "@/lib/site-jsonld";
  *
  * Aplikacija je odjemalska (enostranska), zato sem strežniško vdela
  * strukturirane podatke o muzeju, spletišču in zbirki: Muzej (organizacija),
- * WebSite in CollectionPage z ItemList vseh 93 zapisov — vsak s trajnim
+ * WebSite in CollectionPage z ItemList vseh zapisov zbirke — vsak s trajnim
  * naslovom /exponat/[slug] (vzorec vdelanega JSON-LD: Rijksmuseum, Tate).
  * Aplikacije ne dotika; njena vsebina in navigacija ostajata nespremenjeni.
  */
