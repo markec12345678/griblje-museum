@@ -2,21 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "standalone",
-  // SQLite baza (db/custom.db) se odpre šele ob zagonu — sledenje uvozov
-  // je ne vključi v paket strežniške funkcije, zato jo izrecno priložimo
-  // vsem API potem (nabor datotek za Vercel / standalone).
-  outputFileTracingIncludes: {
-    "/api/exhibits": ["./db/custom.db"],
-    "/api/events": ["./db/custom.db"],
-    "/api/stories": ["./db/custom.db"],
-    "/api/search": ["./db/custom.db"],
-    "/api/opendata": ["./db/custom.db"],
-    "/api/iiif": ["./db/custom.db"],
-    "/api/audio-guide": ["./db/custom.db"],
-    "/api/guide": ["./db/custom.db"],
-    "/api/guestbook": ["./db/custom.db"],
-    "/api/memories": ["./db/custom.db"],
-  },
+  // Baza je Neon PostgreSQL (issue #27/A1) — povezava gre prek
+  // DATABASE_URL (pooled) / DIRECT_URL (migracije); nobena datoteka baze
+  // ni več del paketa strežniške funkcije.
   // Tipovne napake se ne smejo tiho pretakati v produkcijo
   // (`bunx tsc --noEmit` je čist; ob novih napakah build odpove).
   typescript: {

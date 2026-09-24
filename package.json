@@ -17,7 +17,9 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:reset": "prisma migrate reset",
-    "db:seed": "bun prisma/seed.ts"
+    "db:seed": "bun prisma/seed.ts",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:data-migrate": "bun scripts/migrate-data-sqlite-to-postgres.ts"
   },
   "prisma": {
     "seed": "bun prisma/seed.ts"
@@ -44,6 +46,7 @@
     "next": "^16.3.5",
     "next-themes": "^0.4.6",
     "openseadragon": "^6.1.1",
+    "pg": "^8.23.0",
     "prisma": "^6.19.3",
     "qrcode": "^1.5.4",
     "react": "^19.3.0",
@@ -57,6 +60,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
     "@types/leaflet": "^1.9.22",
+    "@types/pg": "^8.23.1",
     "@types/qrcode": "^1.5.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",

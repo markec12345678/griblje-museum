@@ -39,9 +39,14 @@ const BASE = (process.env.SMOKE_BASE_URL ?? process.argv[2] ?? "http://localhost
 
 /* --- 0. dostopnost strežnika -------------------------------------------- */
 
+// SMOKE_TIMEOUT_MS: hladni zagon Neon računa traja ~30 s in prenos zbirke
+// čez počasno povezavo več — privzeto 8 s (lokalni PG container), za zunanje
+// baze nastavi višje: SMOKE_TIMEOUT_MS=60000.
+const REACHABLE_TIMEOUT_MS = Number(process.env.SMOKE_TIMEOUT_MS ?? 8000);
+
 async function reachable(): Promise<boolean> {
   try {
-    const res = await fetch(`${BASE}/api/exhibits`, { signal: AbortSignal.timeout(8000) });
+    const res = await fetch(`${BASE}/api/exhibits`, { signal: AbortSignal.timeout(REACHABLE_TIMEOUT_MS) });
     return res.status < 500;
   } catch {
     return false;

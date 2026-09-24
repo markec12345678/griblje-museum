@@ -6,8 +6,11 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
+  // Direkt endpoint za migracije in shadow DB (Neon); DATABASE_URL je pooled
+  // (PgBouncer) za aplikacijski runtime. Glej docs/DEPLOYMENT.md (issue #27/A1).
+  directUrl = env("DIRECT_URL")
 }
 
 // Muzej vasi Griblje — shema digitalne muzejske zbirke.
