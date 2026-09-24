@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { getMinuteStory } from "@/lib/minute-stories";
 import { synthesizeSpeech, type SynthResult } from "@/lib/tts";
+import { MAX_CHARS, prepareForTts, splitIntoChunks } from "@/lib/audio-chunks";
 
 export const dynamic = "force-dynamic";
 // Sinteza TTS lahko traja več kot privzetih 10 s (hladen klic ~20 s) —
@@ -16,15 +17,15 @@ export const maxDuration = 60;
  * izrecno označen kot sintetiziran — nikoli kot avtentično pričevanje.
  *
  * Omejitve TTS: sinteza je omejena po dolžini besedila na zahtevo →
- * besedilo delimo na odseke (MAX_CHARS, z varnostno rezervo).
+ * besedilo delimo na odseke (MAX_CHARS, z varnostno rezervo). Čiste funkcije
+ * deljenja besedila so v src/lib/audio-chunks.ts (preverljive brez strežnika).
  */
 
 type Lang = "sl" | "en";
 
-const MAX_CHARS = 950; // varnostna rezerva pod omejitvijo TTS (1024 znakov)
-
 /* Ponudniki govora: veriga ElevenLabs → z-ai (src/lib/tts.ts), samo
- * strežniška stran. Ključi živijo v env (ELEVENLABS_API_KEY, ZAI_CONFIG). */
+ * strežniška stran. Ključi živijo v env (ELEVENLABS_API_KEY, ZAI_CONFIG).
+ * Očistitev besedila in deljenje na odseke: src/lib/audio-chunks.ts. */
 
 /* Pomnilniški predpomnilnik: slug|lang → odseki besedila + posnetki.
  * Posnetki so veliki, zato meja velja po SKUPNIH BAJTIH (in ne le po
@@ -75,49 +76,8 @@ function storeAudio(
   }
 }
 
-/** Očisti besedilo za izgovorjavo (misle, pomišljaji, odvečni presledki). */
-function prepareForTts(text: string): string {
-  return text
-    .replace(/\r/g, " ")
-    .replace(/[—–]/g, ", ")
-    .replace(/[«»„“”"]/g, "")
-    .replace(/\s*\n\s*\n\s*/g, ". ")
-    .replace(/\s*\n\s*/g, " ")
-    .replace(/\s{2,}/g, " ")
-    .trim();
-}
-
-/** Deli besedilo na odseke ≤ MAX_CHARS znakov po stavkih. */
-function splitIntoChunks(text: string, max = MAX_CHARS): string[] {
-  if (text.length <= max) return [text];
-  const sentences = text.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) ?? [text];
-  const chunks: string[] = [];
-  let current = "";
-  for (const sentence of sentences) {
-    if ((current + sentence).length <= max) {
-      current += sentence;
-    } else {
-      if (current.trim()) chunks.push(current.trim());
-      if (sentence.length > max) {
-        /* Zelo dolg stavek → trdi rez po besedah. */
-        let piece = "";
-        for (const word of sentence.split(/\s+/)) {
-          if ((piece + " " + word).trim().length > max) {
-            if (piece.trim()) chunks.push(piece.trim());
-            piece = word;
-          } else {
-            piece = `${piece} ${word}`.trim();
-          }
-        }
-        current = piece;
-      } else {
-        current = sentence;
-      }
-    }
-  }
-  if (current.trim()) chunks.push(current.trim());
-  return chunks;
-}
+/* prepareForTts in splitIntoChunks živita v src/lib/audio-chunks.ts —
+ * uvoženi zgoraj (preverljivi brez strežnika, tests/audio-chunks.test.ts). */
 
 /** Sestavi pripoved vodnika: naslov, obdobje, povzetek, zgodba. */
 function buildNarration(
