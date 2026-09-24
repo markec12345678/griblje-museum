@@ -1535,6 +1535,66 @@ export const ENTITIES: EntityRef[] = [
       { slug: "tone-kralj-98" },
     ],
   },
+  /* --- 47. val (issue #30): lastniki iz abecednega seznama franciscejskega
+   * katastra (PUA, 1825) — prebereni fol. 3–6. Identiteta: priimek + ime +
+   * hišna številka iz primarnega rokopisa; priimki so skladni z zaselkom
+   * Brinsko selo. Vez: MVG-001 (vir franciscejski-kataster-n83-pua).
+   * Življenjskih letnic register ne nosi — SoftTime = leto vpisa. */
+  {
+    id: "person:brinc-matija-1825",
+    type: "person",
+    role: "zgodovinska-oseba",
+    labelSi: "Brinc Matija (k.o. Griblje, 1825)",
+    labelEn: "Brinc Matija (c.m. Griblje, 1825)",
+    aliases: ["Brincz Matija (Kurrent: Princz/Brincz)"],
+    time: { labelSi: "lastnik hiše št. 23, 1825", labelEn: "owner of house no. 23, 1825", sortKey: 1825 },
+    note: "Vpisan v abecednem seznamu lastnikov zemljišč franciscejskega katastra (PUA fol. 3): Bauer, hiša št. 23, »haus Grüble«. Preliminarno branje Kurrenta; specializiran prepis čaka.",
+    evidence: [{ slug: "griblje-vas" }],
+  },
+  {
+    id: "person:brinc-mihael-1825",
+    type: "person",
+    role: "zgodovinska-oseba",
+    labelSi: "Brinc Mihael (k.o. Griblje, 1825)",
+    labelEn: "Brinc Mihael (c.m. Griblje, 1825)",
+    aliases: ["Brincz Michael (Kurrent)"],
+    time: { labelSi: "lastnik hiše št. 24, 1825", labelEn: "owner of house no. 24, 1825", sortKey: 1825 },
+    note: "PUA fol. 4: Bauer, hiša št. 24. Preliminarno branje Kurrenta.",
+    evidence: [{ slug: "griblje-vas" }],
+  },
+  {
+    id: "person:brinc-janez-1825",
+    type: "person",
+    role: "zgodovinska-oseba",
+    labelSi: "Brinc Janez (k.o. Griblje, 1825)",
+    labelEn: "Brinc Janez (c.m. Griblje, 1825)",
+    aliases: ["Brincz Johann/Jhuan (Kurrent)"],
+    time: { labelSi: "lastnik hiše št. 26, 1825", labelEn: "owner of house no. 26, 1825", sortKey: 1825 },
+    note: "PUA fol. 5: hiša št. 26. Branje imena »Jhuan/Johann« = Janez. Preliminarno branje Kurrenta.",
+    evidence: [{ slug: "griblje-vas" }],
+  },
+  {
+    id: "person:brinc-miha-1825",
+    type: "person",
+    role: "zgodovinska-oseba",
+    labelSi: "Brinc Miha (k.o. Griblje, 1825)",
+    labelEn: "Brinc Miha (c.m. Griblje, 1825)",
+    aliases: ["Brincz Michl (Kurrent)"],
+    time: { labelSi: "lastnik hiše št. 28, 1825", labelEn: "owner of house no. 28, 1825", sortKey: 1825 },
+    note: "PUA fol. 5: Bauer, hiša št. 28. Ločen vnos od Brinc Mihael (h. 24) — različni hiši. Preliminarno branje Kurrenta.",
+    evidence: [{ slug: "griblje-vas" }],
+  },
+  {
+    id: "person:brinc-marko-1825",
+    type: "person",
+    role: "zgodovinska-oseba",
+    labelSi: "Brinc Marko (k.o. Griblje, 1825)",
+    labelEn: "Brinc Marko (c.m. Griblje, 1825)",
+    aliases: ["Brincz Marko/Marika (Kurrent)"],
+    time: { labelSi: "lastnik hiše št. 65, 1825", labelEn: "owner of house no. 65, 1825", sortKey: 1825 },
+    note: "PUA fol. 6: Bauer, hiša št. 65 (ali 66 — zadnja cifra branja negotova). Preliminarno branje Kurrenta.",
+    evidence: [{ slug: "griblje-vas" }],
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -1798,6 +1858,42 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
     questionEn:
       "Single-record historical periods (the Illyrian Provinces 1809–1813; the Uskok Military Frontier of the 16th century; the 1933 land consolidation) — TimeRefs are introduced only for cross-record anchors; these periods are carried by their records.",
     slugs: ["ilirska-carina-1809", "uskoki-in-vojna-krajina"],
+  },
+  {
+    id: "P2-E8",
+    priority: "P2",
+    questionSi:
+      "PUA fol. 4 (1825): vpis »Brincz Michl Karlina?«, hiša št. 25 — ali je to »Brinc, vdova/Michlova Karolina«, ženski lastnik, ali dvočlanska zveza imen? Kurrent branje negotovo; hiša 25 leži med Brinčevima 24 in 26. Kustos potrdi ob specializiranem prepisu.",
+    questionEn:
+      "PUA fol. 4 (1825): entry 'Brincz Michl Karlina?', house no. 25 — is this 'Brinc, the widow/Michl's Karolina', a female owner, or a pair of names? Kurrent reading uncertain; house 25 lies between the Brinc houses 24 and 26. Curator to confirm at specialised transcription.",
+    slugs: ["griblje-vas"],
+  },
+  {
+    id: "P2-E9",
+    priority: "P2",
+    questionSi:
+      "PUA fol. 6 (1825): institucionalni lastnik »Commenda …« (obsežen sklop parcel v Section V, hiša/V. oddelka) — Malteška komenda? Religionsfonds? Natančna ustanova in njeni gribeljski dohodki čakajo zgodovinsko kontrolo (Malteški red v Beli krajini do 1797/1807).",
+    questionEn:
+      "PUA fol. 6 (1825): institutional owner 'Commenda …' (a large block of parcels in Section V) — the Hospitaller commandery? The Religionsfonds? The exact institution and its Griblje revenues await historical control (the Order of Malta in Bela krajina until 1797/1807).",
+    slugs: ["griblje-vas"],
+  },
+  {
+    id: "P3-E10",
+    priority: "P3",
+    questionSi:
+      "PUA fol. 3 (1825): opomba v Anmerkung — »Baron Apfaltrer?« kot (fevdalni) lastnik; Kurrent branje priimka negotovo (Adlstorfer/Apfaltrer). Vez na fevdalno zgodovino Bele krajine potrdi referenčna literatura.",
+    questionEn:
+      "PUA fol. 3 (1825): a note in the Anmerkung — 'Baron Apfaltrer?' as (feudal) owner; Kurrent surname reading uncertain (Adlstorfer/Apfaltrer). Reference literature to confirm the link with the feudal history of Bela krajina.",
+    slugs: ["griblje-vas"],
+  },
+  {
+    id: "P3-E11",
+    priority: "P3",
+    questionSi:
+      "PUA fol. 20 (1825): vpis »K…an Jožef« (branje začetka priimka nestabilno: Klobučan? Kabotschan?), hiša št. 46 — NISO vgrajene kot dejstvo; posebej preveri ob specializiranem prepisu fol. 7–49 (poln seznam lastnikov za leto 1825).",
+    questionEn:
+      "PUA fol. 20 (1825): entry 'K…an Jožef' (unstable reading of the surname start: Klobučan? Kabotschan?), house no. 46 — NOT imported as fact; to verify at the specialised transcription of fol. 7–49 (the full 1825 owner list).",
+    slugs: ["griblje-vas"],
   },
 ];
 
