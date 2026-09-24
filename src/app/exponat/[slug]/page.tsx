@@ -30,6 +30,8 @@ import { walkStopOf } from "@/lib/walks";
 import { SITE_URL } from "@/lib/site";
 import { WIKIDATA_SAMEAS } from "@/lib/wikidata";
 import { IMAGE_DIMENSIONS } from "@/lib/image-dimensions";
+import { publicClaimDTO, type ClaimDTO } from "@/lib/claims";
+import { db } from "@/lib/db";
 import {
   museumJsonLd,
   collectionJsonLd,
@@ -122,6 +124,11 @@ const SL = {
   whatWeKnow: "Kaj vemo",
   howWeKnow: "Kako vemo",
   sources: "Viri",
+  claimsTitle: "Zgodovinske trditve",
+  claimsHint:
+    "Izrazite trditve z živo verigo dokazov (vir + stran/enota + status). Izvirni vpisi so v slovenščini; negotova branja so označena, ugibanj ni.",
+  claimsSource: "Vir",
+  claimsConfidence: "Zanesljivost",
   evidenceStatus: "Status dokaza",
   citeRecord: "Citiraj zapis",
   openInMuseum: "Odpri v muzeju",
@@ -207,6 +214,11 @@ const EN = {
   whatWeKnow: "What we know",
   howWeKnow: "How we know it",
   sources: "Sources",
+  claimsTitle: "Historical claims",
+  claimsHint:
+    "Explicit claims with a living chain of evidence (source + page/unit + status). The original entries are in Slovene; uncertain readings are marked, no guesses.",
+  claimsSource: "Source",
+  claimsConfidence: "Confidence",
   evidenceStatus: "Evidence status",
   citeRecord: "Cite this record",
   openInMuseum: "Open in the museum",
@@ -488,6 +500,30 @@ function buildJsonLd(slug: string, isEn: boolean) {
 
 /* --- Stran --------------------------------------------------------------- */
 
+/** PUBLISHED trditve zapisa; napaka baze = prazen seznam (graceful). */
+async function publishedClaimsFor(slug: string): Promise<ClaimDTO[]> {
+  try {
+    const exhibit = await db.exhibit.findUnique({ where: { slug }, select: { id: true } });
+    if (!exhibit) return [];
+    const rows = await db.claim.findMany({
+      where: { exhibitId: exhibit.id, status: "PUBLISHED" },
+      include: {
+        source: { select: { nameSi: true, nameEn: true, license: true, url: true } },
+        archiveRecord: {
+          select: { institution: true, fonds: true, signature: true, repositoryUrl: true },
+        },
+      },
+      orderBy: [{ evidenceStatus: "asc" }, { createdAt: "desc" }],
+      take: 20,
+    });
+    return rows.map((c) =>
+      publicClaimDTO({ ...c, source: c.source ?? null, archiveRecord: c.archiveRecord ?? null }),
+    );
+  } catch {
+    return [];
+  }
+}
+
 export default async function ExhibitRecordPage({ params, searchParams }: PageProps) {
   const { slug } = await params;
   const { lang: langParam } = await searchParams;
@@ -536,6 +572,12 @@ export default async function ExhibitRecordPage({ params, searchParams }: PagePr
       : null;
 
   const jsonLd = buildJsonLd(slug, isEn);
+
+  /* Trditve z živo verigo dokazov (issue #30, Claim #27/D): PUBLISHED
+   * trditve zapisa iz baze — vir + stran/enota + evidence status. Napaka
+   * baze se tiho degradira v prazen seznam (trditve so nadgradnja strani,
+   * ne pogoj veljavnosti) — enako pravilo kot pri kustosu (#27/K). */
+  const claims = await publishedClaimsFor(slug);
 
   return (
     <div className="exponat-print-page flex min-h-screen flex-col bg-background text-foreground">
@@ -855,6 +897,75 @@ export default async function ExhibitRecordPage({ params, searchParams }: PagePr
               })}
             </ol>
           </section>
+
+          {/* ZGODOVINSKE TRDITVE — živa veriga dokazov (issue #30): trditve
+              iz baze z virom, stranjo/enoto in statusom dokaza. Skrito, če
+              jih zapis še nima ali baza ni dosegljiva. */}
+          {claims.length > 0 && (
+            <section aria-labelledby="trditve" className="mt-10">
+              <h2
+                id="trditve"
+                className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+              >
+                {s.claimsTitle} ({claims.length})
+              </h2>
+              <p className="mt-2 max-w-2xl text-xs leading-relaxed text-muted-foreground">
+                {s.claimsHint}
+              </p>
+              <ol className="mt-4 space-y-3">
+                {claims.map((claim) => {
+                  const ClaimIcon = EVIDENCE_ICON[claim.evidenceStatus];
+                  return (
+                    <li
+                      key={claim.id}
+                      className="rounded-lg border bg-card p-4 text-sm"
+                    >
+                      <div className="flex flex-wrap items-start justify-between gap-2">
+                        <p className="max-w-3xl font-medium leading-relaxed text-foreground">
+                          {claim.statement}
+                        </p>
+                        <span
+                          className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium ${EVIDENCE_STYLE[claim.evidenceStatus]}`}
+                        >
+                          <ClaimIcon className="h-3.5 w-3.5" aria-hidden="true" />
+                          {s.evidence[claim.evidenceStatus]}
+                        </span>
+                      </div>
+                      {claim.confidence && (
+                        <p className="mt-1.5 text-xs text-muted-foreground">
+                          {s.claimsConfidence}: {claim.confidence}
+                        </p>
+                      )}
+                      {(claim.citation.name || claim.pageRef) && (
+                        <p className="mt-1.5 text-xs text-muted-foreground">
+                          {s.claimsSource}:{" "}
+                          {claim.citation.url ? (
+                            <a
+                              href={claim.citation.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-medium text-primary underline underline-offset-2"
+                            >
+                              {claim.citation.name}
+                            </a>
+                          ) : (
+                            claim.citation.name && (
+                              <span className="font-medium text-foreground">
+                                {claim.citation.name}
+                              </span>
+                            )
+                          )}
+                          {claim.citation.reference && (
+                            <span> — {claim.citation.reference}</span>
+                          )}
+                        </p>
+                      )}
+                    </li>
+                  );
+                })}
+              </ol>
+            </section>
+          )}
 
           {/* Citat zapisa — trajna identiteta v citatu */}
           <section aria-labelledby="citiraj" className="mt-10">
