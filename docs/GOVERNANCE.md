@@ -100,3 +100,17 @@ javnih poti po 13 notranjih ključih — puščanje = rdeč test.
 - **Observability** (`/api/health` + `src/lib/obs.ts`): strukturirani
   JSON logi, correlation ID (`x-request-id`), števci napak po razredih;
   v logih ni osebnih podatkov.
+
+## 8. Raziskovalni cevovod (#27/L)
+
+Formalni tok: `Research finding → Archive/source record → page
+verification → transcription → Claim → Source link → Exhibit →
+Editorial review → Published`.
+
+- **Železno pravilo:** najdena spletna sled sama po sebi NI dokaz za
+  `DOCUMENTED` trditev — naprej sme samo do katalogizacije
+  (`ArchiveRecord`, `NOT_VIEWED`).
+- Mašina stanj: `src/lib/pipeline.ts` (`canAdvance`,
+  `reachableStage`, `validatePipeline`) + preverbi v
+  `tests/pipeline.test.ts`.
+- Poglobljeno: [RESEARCH-PIPELINE](./RESEARCH-PIPELINE.md).
