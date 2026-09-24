@@ -90,3 +90,28 @@ export function guideCacheSet(
 export function guideCacheSize(): number {
   return store.size;
 }
+
+/**
+ * Potrditev predpomnilnika ob novi objavi (issue #27/K): objava nove
+ * verzije zapisa (ExhibitVersion → PUBLISHED) počisti predpomnilnik
+ * vodnika — obiskovalec ne sme dobiti zastarelega odgovora o zaprti
+ * vsebini. V serverless okolju velja na primerek; produkcija izmenično
+ * uporablja kratke TTL-je (24 h) ali skupni store (dokumentirano v
+ * docs/DEPLOYMENT.md).
+ */
+export function guideCacheClear(reason: string): number {
+  const cleared = store.size;
+  store.clear();
+  if (cleared > 0) {
+    console.log(
+      JSON.stringify({
+        ts: new Date().toISOString(),
+        scope: "guide-cache",
+        level: "info",
+        msg: "predpomnilnik počiščen ob novi objavi",
+        meta: { reason, cleared },
+      })
+    );
+  }
+  return cleared;
+}
