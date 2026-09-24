@@ -1,0 +1,82 @@
+# CI — Griblje Village Museum (issue #4 + #27/S)
+#
+# Pipeline: tipi → lint → enotni testi → dimni testi API-jev na živem dev strežniku.
+# Baza: repo vsebuje db/custom.db (SQLite), zato dev strežnik zaživi brez
+# zunanjih storitev; TTS klice dimni test namenoma ne sproži (samo napake 400/404).
+#
+# KO projekt preide na PostgreSQL (issue #27/A1), ta workflow dobi dodatni
+# job z service kontejnerjem postgres:16 — preverba `prisma migrate deploy`
+# na prazni bazi (oživitev po docs/DEPLOYMENT.md).
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    name: tipi + lint + enotni testi
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Namestitev odvisnosti
+        run: bun install --frozen-lockfile
+
+      - name: Tipi (tsc --noEmit)
+        run: bunx tsc --noEmit
+
+      - name: Lint (ESLint)
+        run: bun run lint
+
+      - name: Enotni testi (bun test)
+        run: bun test tests/
+
+  smoke:
+    name: dimni testi API-jev (živi strežnik)
+    runs-on: ubuntu-latest
+    needs: quality
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Namestitev odvisnosti
+        run: bun install --frozen-lockfile
+
+      - name: Zagon dev strežnika (ozadje)
+        run: |
+          bunx next dev -p 3001 > /tmp/dev-ci.log 2>&1 &
+          echo $! > /tmp/dev-ci.pid
+
+      - name: Čakanje na strežnik (do 90 s)
+        run: |
+          for i in $(seq 1 45); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' http://localhost:3001/api/exhibits || true)
+            if [ "$code" = "200" ]; then
+              echo "Strežnik živ po ${i}×2 s (HTTP $code)."
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Strežnik se ni zagnal — log:"
+          tail -50 /tmp/dev-ci.log
+          exit 1
+
+      - name: Dimni testi API-jev
+        run: SMOKE_BASE_URL=http://localhost:3001 bun tests/api-smoke.ts
+
+      - name: Ustavitev strežnika
+        if: always()
+        run: |
+          if [ -f /tmp/dev-ci.pid ]; then kill "$(cat /tmp/dev-ci.pid)" || true; fi
+          tail -20 /tmp/dev-ci.log || true
