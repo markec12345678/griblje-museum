@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page 7 of the alphabetical register of landowners for the municipality of Grüble (Grübln), showing entries 76 and 77 with their associated land parcels across multiple sections.\", \"title_block\": \"Alphabetisches Verzeichniß / Der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"76\", \"section\": \"\", \"house_no\": \"20\", \"owner_original\": \"Huber Wolfpaul Bauer zu Grüble\", \"status_original\": \"Bauer\", \"residence_original\": \"Grüble\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"437\", \"469\", \"485\", \"525\", \"550\", \"574\", \"586\", \"594\", \"596\", \"623\", \"654\", \"662\", \"638\", \"639\", \"684\", \"692\", \"701\", \"707\", \"708\", \"718\", \"746\"]}, {\"section\": \"II.\", \"numbers\": [\"1091\", \"1092\", \"1093\", \"1094\", \"1095\", \"1096\", \"1097\", \"1098\", \"1099\"]}, {\"section\": \"III.\", \"numbers\": [\"1080\", \"1072\", \"1052\", \"991\", \"983\"]}, {\"section\": \"III b.\", \"numbers\": [\"1023\"]}, {\"section\": \"IV.\", \"numbers\": [\"951\", \"947\", \"940\", \"941\", \"939\", \"938\", \"936\", \"935\", \"933\", \"1030\", \"1010\"]}, {\"section\": \"V.\", \"numbers\": [\"1020\", \"1017\"]}], \"annotation_original\": \"B. P. h.\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"77\", \"section\": \"\", \"house_no\": \"28\", \"owner_original\": \"Schimer Georg Bauer zu Grüble\", \"status_original\": \"Bauer\", \"residence_original\": \"Grüble\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"462\", \"476\", \"492\", \"512\", \"551\", \"562\", \"574\", \"575\", \"591\"]}, {\"section\": \"II.\", \"numbers\": [\"1058\", \"1069\", \"1070\", \"1071\", \"1072\", \"1073\", \"1074\", \"1075\", \"1076\", \"1077\", \"1078\", \"1079\", \"1080\"]}, {\"section\": \"III.\", \"numbers\": [\"1039\", \"1037\"]}, {\"section\": \"IV.\", \"numbers\": [\"916\", \"917\", \"907\", \"901\", \"919\", \"919\"]}], \"annotation_original\": \"D. T. gb.\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"Entry 77, Section IV contains a duplicate parcel number '919' which is transcribed as written. The abbreviations 'B. P. h.' and 'D. T. gb.' in the annotation column are transcribed verbatim.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274820,
+  "id": "20260925023332eaaceaa45da14b9f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925023332eaaceaa45da14b9f",
+  "usage": {
+    "completion_tokens": 710,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 540
+    },
+    "total_tokens": 2118
+  }
+}

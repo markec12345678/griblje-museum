@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V.T.\",\n  \"focus_findings\": [\n    {\n      \"row\": \"96\",\n      \"entry_no\": \"96\",\n      \"section\": \"I, III, V, VI, VII, VIII, IX, X\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Wiese in der Gemeinde Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"2688\", \"2689\"]},\n        {\"section\": \"III\", \"numbers\": [\"2690\", \"2691\", \"2692\", \"2693\", \"2694\", \"2695\", \"2696\", \"2697\", \"2698\", \"2699\"]},\n        {\"section\": \"V\", \"numbers\": [\"2670\", \"2671\", \"2700\", \"2701\", \"2702\", \"2703\", \"2704\", \"2705\", \"2706\"]},\n        {\"section\": \"VI\", \"numbers\": [\"2660\"]},\n        {\"section\": \"VII\", \"numbers\": [\"2640\", \"2642\", \"2643\", \"2644\", \"2645\", \"2646\", \"2647\", \"2648\", \"2649\", \"2650\", \"2651\", \"2652\", \"2653\", \"2654\", \"2655\", \"2656\", \"2657\", \"2658\", \"2659\", \"2661\", \"2662\", \"2663\", \"2664\", \"2665\", \"2666\", \"2667\", \"2668\", \"2669\"]},\n        {\"section\": \"VIII\", \"numbers\": [\"2616\", \"2617\", \"2621\", \"2622\", \"2623\", \"2624\", \"2625\"]},\n        {\"section\": \"IX\", \"numbers\": [\"2602\", \"2603\", \"2604\", \"2605\", \"2606\", \"2607\", \"2608\", \"2609\", \"2610\", \"2611\", \"2612\", \"2613\", \"2614\", \"2615\"]},\n        {\"section\": \"X\", \"numbers\": [\"2582\", \"2583\", \"2584\", \"2585\", \"2586\", \"2587\", \"2588\", \"2589\", \"2590\", \"2591\", \"2592\", \"2593\", \"2594\", \"2595\", \"2596\", \"2597\", \"2598\", \"2599\", \"2600\", \"2601\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"The page contains the header 'Alphabetisches Verzeichniß Der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen' for Gemeinde Grüble. The visible content is exclusively row 96, which lists the communal property ('Wiese in der Gemeinde Grübln') distributed across sections I through X with numerous parcel numbers. No entries mentioning 'Gemeinschaftliche Waldweide', 'Waldweide', or 'F. Kirch' are present on this specific page.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278537,
+  "id": "20260925033529713f8db8f5584b8c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033529713f8db8f5584b8c",
+  "usage": {
+    "completion_tokens": 759,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3453,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 4212
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"28\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"21\",\n      \"owner_original\": \"Sankowitsch Joseph\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner string format to separate name, status, and residence fields.\"\n    },\n    {\n      \"entry_no\": \"\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"V\",\n      \"house_no\": \"\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"1234\", \"1235\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected section from 'V' (draft had 'V' in parcel objects but listed numbers as main content).\"\n    },\n    {\n      \"entry_no\": \"29\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"3\",\n      \"owner_original\": \"Sankowitsch Johann Rieder\",\n      \"status_original\": \"Söllner\",\n      \"residence_original\": \"zu Schönboden\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner string format to separate name, status, and residence fields.\"\n    },\n    {\n      \"entry_no\": \"\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"IV.V\",\n      \"house_no\": \"\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"IV.V\",\n          \"numbers\": [\"2090\", \"2059\", \"2060\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected section from 'IVV' to 'IV.V' based on visual evidence of a dot between the Roman numerals.\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 28 and 29. Entry 28 has parcels in Section V. Entry 29 has parcels in Section IV.V. The handwriting is clear Kurrent script.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277053,
+  "id": "202609250310408a8aaf4244a741f4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250310408a8aaf4244a741f4",
+  "usage": {
+    "completion_tokens": 592,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1601,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2193
+  }
+}

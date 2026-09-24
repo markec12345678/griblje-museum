@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page from the 1825 Austrian Franciscan Cadastre for Gemeinde Grüble, showing entries 35 and 36 (owners P. Rieger and J. Rieger) with their respective land parcels listed by section.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"35\",\n      \"section\": \"\",\n      \"house_no\": \"16\",\n      \"owner_original\": \"P. Rieger, Wirths Besitzer zu Grübln\",\n      \"status_original\": \"Wirths Besitzer\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"696\", \"724\", \"1000\"]},\n        {\"section\": \"II.\", \"numbers\": [\"698\", \"1023\", \"1033\", \"1076\", \"1078\", \"1084\", \"1091\", \"1101\", \"1126\", \"1130\", \"1153\", \"1169\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"1024\", \"1052\", \"1056\", \"1067\", \"1069\", \"1205\", \"1251\", \"1286\"]}\n      ],\n      \"annotation_original\": \"B. St. 78.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"36\",\n      \"section\": \"\",\n      \"house_no\": \"20\",\n      \"owner_original\": \"Johann Michael Rieger, Besitzer zu Grübln\",\n      \"status_original\": \"Besitzer\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"703\"]},\n        {\"section\": \"II.\", \"numbers\": [\"701\", \"702\", \"710\", \"711\", \"712\", \"713\", \"714\", \"715\", \"716\", \"717\", \"718\", \"719\", \"720\", \"721\", \"722\", \"723\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"1193\", \"1261\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 36, Section II contains a line of crossed-out text ('ein drittes Theil...') which has been transcribed in the annotation field as per instructions. Some ink blots are visible in the lower right margin but do not obscure table data.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274639,
+  "id": "2026092502302508a3aeda607c48fb",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502302508a3aeda607c48fb",
+  "usage": {
+    "completion_tokens": 591,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1999
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Alphabetical register of landowners and their parcels for Gemeinde Grüble, entries 92-93 (Michael and Lorenz Leidner)\",\n  \"title_block\": \"Land: [blank] | Bezirk: V.T.\nKreis: [blank] | Gemeinde: [blank]\n\nAlphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"92\",\n      \"section\": \"\",\n      \"house_no\": \"16\",\n      \"owner_original\": \"Michael Leidner zu Grübln / 170,171,172,1734,1745,1756,1767,1778,1789,1790,1800, / 2078,2029,2030,2075,2084,2087,2094,2125,2136, / 2218,2223,2236,2259,2280,2277,2281,2330,2331,2361, / 2362.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"II\", \"numbers\": [\"170\", \"171\", \"172\", \"1734\", \"1745\", \"1756\", \"1767\", \"1778\", \"1789\", \"1790\", \"1800\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"2078\", \"2029\", \"2030\", \"2075\", \"2084\", \"2087\", \"2094\", \"2125\", \"2136\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2218\", \"2223\", \"2236\", \"2259\", \"2280\", \"2277\", \"2281\", \"2330\", \"2331\", \"2361\", \"2362\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"93\",\n      \"section\": \"\",\n      \"house_no\": \"17\",\n      \"owner_original\": \"Lorenz Leidner zu Grübln / 1301,1302,1303,1304,1305,1306,1307,1308,1309,1310, / 1331,1341[?],1351,1361,1371,1381,1396,1397, / 1399. / 2081,2079,2083,2093,2102,2103,2113,2117,2128, / 2136,2328,2329,2316,2332,2304,2351,2364, / 2371,2372.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"II\", \"numbers\": [\"1301\", \"1302\", \"1303\", \"1304\", \"1305\", \"1306\", \"1307\", \"1308\", \"1309\", \"1310\", \"1331\", \"1341[?]\", \"1351\", \"1361\", \"1371\", \"1381\", \"1396\", \"1397\", \"1399\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2081\", \"2079\", \"2083\", \"2093\", \"2102\", \"2103\", \"2113\", \"2117\", \"2128\", \"2136\"]},\n        {\"section\": \"V\", \"numbers\": [\"2328\", \"2329\", \"2316\", \"2332\", \"2304\", \"2351\", \"2364\", \"2371\", \"2372\"]}\n      ],\n      \"annotation_original\": \"B.p.s.\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"1341\"]\n    }\n  ],\n  \"page_notes\": \"Entry 92 has a combined section designation 'III/IV' in the margin between the second and third parcel lines. Entry 93 has a marginal annotation 'B.p.s.' (likely 'Bauernplatz' or similar). Parcel number 1341 in entry 93 is slightly uncertain due to handwriting formation.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274478,
+  "id": "202609250227382d27ebe47c4543c4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250227382d27ebe47c4543c4",
+  "usage": {
+    "completion_tokens": 953,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2361
+  }
+}

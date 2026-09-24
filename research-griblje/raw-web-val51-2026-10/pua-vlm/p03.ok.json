@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page from the 1825 Alphabetical Register of Landowners for Gemeinde Grüble, showing entries 1 and 2 with their associated land parcels across multiple sections.\", \"title_block\": \"Alphabetisches Verzeichniß / Der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\", \"entries\": [{\"entry_no\": \"1\", \"section\": \"\", \"house_no\": \"1\", \"owner_original\": \"Mellachitsch Waise Leopold von / Ungaritsch gewesene Mellachitsch.\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"201\", \"204\", \"429\", \"872\", \"975\", \"976\", \"983\", \"1005\", \"1023\"]}, {\"section\": \"IV\", \"numbers\": [\"969\", \"978\", \"979\", \"1230\", \"2074\", \"2387\", \"2594\", \"2606\", \"2615\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"2\", \"section\": \"\", \"house_no\": \"22\", \"owner_original\": \"Brincz Marfil Louise Wittibin.\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"16\", \"241\", \"427\", \"456\", \"500\", \"507\", \"583\", \"654\", \"666\", \"926\", \"949\", \"953\", \"967\", \"974\"]}, {\"section\": \"II.\", \"numbers\": [\"1223\", \"126\", \"1416\"]}, {\"section\": \"III.\", \"numbers\": [\"1972\", \"1979\", \"1998\", \"1917\", \"1918\", \"1927\", \"1934\", \"1936\", \"1941\", \"1967\", \"1969\"]}, {\"section\": \"IV.\", \"numbers\": [\"208\", \"218\"]}, {\"section\": \"V.\", \"numbers\": [\"108\"]}, {\"section\": \"G\", \"numbers\": [\"B P. 17, 35, 40\"]}, {\"section\": \"I\", \"numbers\": [\"22\"]}], \"annotation_original\": \"\", \"confidence\": \"medium\", \"uncertain_words\": [\"Marfil[?]\", \"Wittibin[?]\"]}], \"page_notes\": \"Entry 1: The name 'Mellachitsch' appears to be a surname; 'Waise' indicates an orphan/ward. Entry 2: The given name 'Marfil' is unusual and difficult to read in Kurrent script; 'Wittibin' indicates a widow. Parcel numbers are handwritten lists within the section columns.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274211,
+  "id": "20260925022316aed2db9e5dc64872",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022316aed2db9e5dc64872",
+  "usage": {
+    "completion_tokens": 617,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2025
+  }
+}

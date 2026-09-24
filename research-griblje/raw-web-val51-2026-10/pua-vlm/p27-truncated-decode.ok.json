@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Alphabetisches Verzeichniß der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen, Gemeinde Grüble, 1825. Contains entries for Noa N. (No. 393) and Peter G. (No. 394) with their land parcels listed by section.\",\n  \"title_block\": \"V.T.\nLand: [blank]\nBezirk: [blank]\nKreis: [blank]\nGemeinde: [blank]\n\nAlphabetisches Verzeichniß\nDer Grund-Eigenthümer und ihrer nach Sectionen abgetheilten Grund-Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"393\",\n      \"section\": \"\",\n      \"house_no\": \"4\",\n      \"owner_original\": \"NoaN. Bauerhäuslbesitzer / in Grübln\",\n      \"status_original\": \"Bauerhäuslbesitzer\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"56\", \"61\", \"69\", \"581\", \"709\"]},\n        {\"section\": \"II.\", \"numbers\": [\"308\", \"339\", \"382\", \"495\", \"640\", \"990\", \"961\", \"993\", \"1728\", \"1888\", \"1930\", \"1977\", \"1981\", \"1982\", \"1984\", \"1985\", \"1987\", \"1988\", \"1990\", \"1991\", \"1994\", \"1995\", \"1996\", \"2001\", \"2002\", \"2003\", \"2004\", \"2005\", \"2010\", \"2011\", \"2012\", \"2013\", \"2014\", \"2015\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"1779\", \"1797\", \"2059\", \"2129\", \"2209\", \"2305\", \"2384\", \"2489\"]},\n        {\"section\": \"V.\", \"numbers\": [\"2679\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"394\",\n      \"section\": \"\",\n      \"house_no\": \"11\",\n      \"owner_original\": \"Peter Gröger Bauerhäuslbesitzer / in Grübln\",\n      \"status_original\": \"Bauerhäuslbesitzer\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"62\", \"785\"]},\n        {\"section\": \"III.\", \"numbers\": [\"978\", \"986\", \"1016\", \"1022\", \"1039\", \"1043\", \"1062\", \"1082\", \"1090\", \"1104\", \"1160\", \"1183\", \"1197\", \"1205\", \"1237\", \"1247\", \"2181\", \"2182\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"Gröger[?]\"]\n    }\n  ],\n  \"page_notes\": \"The page is cut off at the bottom; entry 394 is incomplete (Section IV and possibly V are missing). The first name of entry 393 appears to be 'NoaN.' or 'NoahN.' with a very stylized capital N. The surname in entry 394 is difficult to read due to cursive ligatures; 'Gröger' is the most likely reading but uncertain.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276314,
+  "id": "202609250258184cddd9c33a564d67",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250258184cddd9c33a564d67",
+  "usage": {
+    "completion_tokens": 796,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2204
+  }
+}

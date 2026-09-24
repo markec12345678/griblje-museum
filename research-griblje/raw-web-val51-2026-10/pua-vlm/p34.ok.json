@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page 7 of the alphabetical register of landowners for the municipality of Grüble (Grübln), containing entries for the 'Procurat' and 'Pfarrer' with their associated parcel numbers.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"67\",\n      \"section\": \"\",\n      \"house_no\": \"7\",\n      \"owner_original\": \"Procurat Miko Laurin / Landpfleger zu / Gräving.\",\n      \"status_original\": \"Landpfleger\",\n      \"residence_original\": \"zu Gräving.\",\n      \"parcels\": [\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\n            \"1269.\",\n            \"1270.\",\n            \"1280.\",\n            \"1296.\"\n          ]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"68\",\n      \"section\": \"\",\n      \"house_no\": \"69\",\n      \"owner_original\": \"Pfarrer Elias Brandl / hiesiger.\",\n      \"status_original\": \"hiesiger\",\n      \"residence_original\": \"\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 68 has a circled number '0' written below the owner's name, possibly indicating zero parcels or a placeholder. The handwriting is clear Kurrent script. Entry 67's residence 'Gräving' might be a phonetic spelling or specific local name for Grüble/Grübln.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274751,
+  "id": "2026092502321893fe4ccaeb214aa2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502321893fe4ccaeb214aa2",
+  "usage": {
+    "completion_tokens": 388,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1796
+  }
+}

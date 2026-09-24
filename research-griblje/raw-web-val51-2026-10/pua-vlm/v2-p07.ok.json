@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"10-11\",\n  \"rows\": [\n    {\n      \"entry_no\": \"10\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"32\",\n      \"owner_original\": \"Breitwiesch Mattl / Söllner zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"168\", \"169\", \"182\", \"206\", \"609\", \"617\", \"646\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"972\", \"994\", \"1011\", \"1203\", \"1238\", \"1332\", \"1374\", \"1477\", \"1495\", \"1639\"]\n        },\n        {\n          \"section\": \"III-IV\",\n          \"numbers\": [\"1672\", \"1878\", \"1999\", \"2000\", \"2012\", \"2021\", \"1809\", \"1810\", \"1978\"]\n        }\n      ],\n      \"annotation_original\": \"b. P. 68.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected parcel section groupings: Sections III and IV are listed together in the document (III-IV) with numbers 1672, 1878, 1999, 2000, 2012, 2021, 1809, 1810, 1978. Draft incorrectly split these into separate III and IV sections.\"\n    },\n    {\n      \"entry_no\": \"11\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"3\",\n      \"owner_original\": \"Draschisch Jörgen Lorenz / und Begusche / Gänßlin in Adelsberg\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"928\", \"981\", \"985\", \"1059\", \"1079\", \"1120\", \"1146\", \"1168\", \"1181\", \"1263\", \"1639\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1799\", \"1844\", \"2048\", \"2072\", \"2083\", \"2409\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Added missing parcel II 1639 to entry 11, which was visible in the image but omitted from the draft.\"\n    }\n  ],\n  \"page_notes\": \"Entry 10 lists parcels for sections I, II, and a combined III-IV section. Entry 11 lists parcels for sections II and IV. The handwriting is clear Kurrent script.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276871,
+  "id": "20260925030743ba4ec376186e4904",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925030743ba4ec376186e4904",
+  "usage": {
+    "completion_tokens": 638,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2306,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2944
+  }
+}

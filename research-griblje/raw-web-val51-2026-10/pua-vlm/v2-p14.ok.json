@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Alphabetisches Verzeichniß der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen, Gemeinde Grüble, 1825\", \"rows\": [{\"entry_no\": \"26\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"V\", \"house_no\": \"7\", \"owner_original\": \"Sankovitsch Walf.\", \"status_original\": \"Bauers Wittib\", \"residence_original\": \"Zogwitsche.\", \"parcels\": [{\"section\": \"V\", \"numbers\": [\"410\"]}, {\"section\": \"V\", \"numbers\": [\"1103\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected 'Walf' to 'Walf.' (with period). Confirmed all other fields.\"}, {\"entry_no\": \"27\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"V\", \"house_no\": \"26\", \"owner_original\": \"Sankovitsch Lorenz\", \"status_original\": \"Bauer\", \"residence_original\": \"Zogwitsche\", \"parcels\": [{\"section\": \"V\", \"numbers\": [\"487\"]}, {\"section\": \"V\", \"numbers\": [\"874\"]}, {\"section\": \"V\", \"numbers\": [\"1275\"]}, {\"section\": \"V\", \"numbers\": [\"679\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected owner name from 'Lazar' to 'Lorenz'. Removed trailing period from residence 'Zogwitsche'. Confirmed parcel numbers 487, 874, 1275, 679.\"}], \"page_notes\": \"Page contains entries 26 and 27. Handwriting is clear Kurrent script. Entry 27 owner is definitively 'Lorenz', not 'Lazar' as in draft.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277040,
+  "id": "20260925031031f8bd60f5e62f45be",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031031f8bd60f5e62f45be",
+  "usage": {
+    "completion_tokens": 428,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1539,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1967
+  }
+}

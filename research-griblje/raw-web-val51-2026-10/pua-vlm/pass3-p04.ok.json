@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V.T\",\n  \"focus_findings\": [\n    {\n      \"row\": \"3\",\n      \"entry_no\": \"3.\",\n      \"section\": \"\",\n      \"house_no\": \"24\",\n      \"owner_original\": \"Brincz Marjan\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"hier/Grüblen\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"479\", \"490\", \"494\", \"598\", \"592\", \"619\", \"597\", \"596\", \"668\", \"669\", \"663\", \"671\", \"673\", \"687\", \"693\", \"711\", \"712\", \"720\", \"721\"]},\n        {\"section\": \"II\", \"numbers\": [\"1166\", \"1259\", \"1266\", \"1281\", \"1297\", \"1300\", \"1352\", \"1362\", \"1661\", \"1698\"]},\n        {\"section\": \"III\", \"numbers\": [\"1892\", \"1894\", \"1900\", \"1907\", \"1910\", \"1912\", \"1915\", \"1929\", \"1940\", \"1950\", \"1958\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2022\", \"2062\", \"2168\"]}\n      ],\n      \"annotation_original\": \"B. P. 25.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"4\",\n      \"entry_no\": \"4.\",\n      \"section\": \"\",\n      \"house_no\": \"25\",\n      \"owner_original\": \"Brincz Mathias\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"hier/Grüblen\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"478\", \"491\", \"492\", \"499\", \"515\", \"598\", \"561\", \"570\", \"571\", \"616\", \"668\"]},\n        {\"section\": \"II\", \"numbers\": [\"697\", \"706\", \"708\", \"709\", \"710\", \"722\", \"800\"]},\n        {\"section\": \"III\", \"numbers\": [\"1897\", \"1899\", \"1905\", \"1911\", \"1912\", \"1916\", \"1916\", \"1926\", \"1930\", \"1957\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2058\", \"2168\"]}\n      ],\n      \"annotation_original\": \"B.P. 29\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"The header indicates 'Alphabetisches Verzeichniß der Grund Eigenthümer...'. The municipality (Gemeinde) is Grüble. Row 3 corresponds to entry number '3.' with house number '24' and owner 'Brincz Marjan'. Row 4 corresponds to entry number '4.' with house number '25' and owner 'Brincz Mathias'. Both are listed as 'bauer' residing in 'hier/Grüblen'. Parcel numbers are listed under sections I, II, III, and IV.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278352,
+  "id": "2026092503321910dd449c417c4abf",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503321910dd449c417c4abf",
+  "usage": {
+    "completion_tokens": 737,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3745,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4482
+  }
+}

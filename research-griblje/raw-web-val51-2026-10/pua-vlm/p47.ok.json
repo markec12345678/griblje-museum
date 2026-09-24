@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page from the 1825 Franciscan Cadastre for the municipality of Grüble, showing the end of the alphabetical list of landowners (entry 95) and a signature.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\\nGemeinde: Grüble\", \"entries\": [{\"entry_no\": \"95\", \"section\": \"III\", \"house_no\": \"70\", \"owner_original\": \"Zollamt b. H. Neuradl in Gröbln / 795.\", \"status_original\": \"\", \"residence_original\": \"Gröbln\", \"parcels\": [{\"section\": \"III\", \"numbers\": [\"795\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"\", \"section\": \"\", \"house_no\": \"\", \"owner_original\": \"B. P. 98.\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"The entry for 'Zollamt' (Customs Office) is written in Kurrent script. The line below it appears to be a signature or official notation ('B. P. 98.') rather than a standard table entry. The page ends after this entry.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275352,
+  "id": "20260925024224d1bf4cc8ac1e4d25",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925024224d1bf4cc8ac1e4d25",
+  "usage": {
+    "completion_tokens": 308,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1716
+  }
+}

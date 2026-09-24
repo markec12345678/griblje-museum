@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Alphabetical register of landowners and their parcels for the municipality of Grüble (Gemeinde Grüble), 1825. This page contains entries 49 and 50, listing landowner names, social status, residence, and parcel numbers organized by sections I through V.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"49\",\n      \"section\": \"\",\n      \"house_no\": \"68\",\n      \"owner_original\": \"Rappare Wirthsleuths hiesig / zu 40.20.48.57.46.29.50.59.67.100.108.109.\",\n      \"status_original\": \"Wirthsleuths\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"40\", \"20\", \"48\", \"57\", \"46\", \"29\", \"50\", \"59\", \"67\", \"100\", \"108\", \"109\"]\n        },\n        {\n          \"section\": \"I. II.\",\n          \"numbers\": [\"797\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"782\", \"791\", \"799\", \"816\", \"838\", \"850\", \"852\", \"926\", \"928\", \"954\", \"980\", \"1010\", \"1020\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"1915\", \"1937\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1906\", \"1924\", \"1925\", \"2007\", \"2040\", \"2058\", \"2091\", \"2098\"]\n        },\n        {\n          \"section\": \"IX V.\",\n          \"numbers\": [\"2401\", \"2405\", \"2410\", \"2417\", \"2429\", \"2459\", \"2466\", \"2481\"]\n        },\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\"2490\", \"2518\", \"2550\"]\n        }\n      ],\n      \"annotation_original\": \"D.P. 66. 61.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"50\",\n      \"section\": \"\",\n      \"house_no\": \"22\",\n      \"owner_original\": \"Müller Johann Wirthsleuths hiesig / zu 47.50.76.87.92.96.97.99.107.\",\n      \"status_original\": \"Wirthsleuths\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"47\", \"50\", \"76\", \"87\", \"92\", \"96\", \"97\", \"99\", \"107\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"693\", \"769\", \"787\", \"801\", \"836\", \"887\", \"928\", \"959\", \"970\", \"981\", \"991\", \"999\", \"1016\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"1892\", \"1904\", \"1964\", \"1965\"]\n        }\n      ],\n      \"annotation_original\": \"D. J. 16.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"The document uses Kurrent script for handwritten entries. Entry 49 has a complex section breakdown with 'IX V.' likely indicating a combined or marginal section notation. Parcel numbers are listed in groups corresponding to printed section rows. The abbreviation 'D.P.' and 'D.J.' appear in the annotation column, likely referring to specific administrative or tax designations.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274620,
+  "id": "2026092502294559f79eb286dd4f94",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502294559f79eb286dd4f94",
+  "usage": {
+    "completion_tokens": 873,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2281
+  }
+}

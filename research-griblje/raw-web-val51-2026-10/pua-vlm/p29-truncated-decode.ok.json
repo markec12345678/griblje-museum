@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Page from the alphabetical land register (Grundbuch) for Gemeinde Grüble, 1825, showing entries for owners with surnames starting with 'P' (Pfeiffer and Pötsch).\",\n  \"title_block\": \"Alphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"37\",\n      \"section\": \"\",\n      \"house_no\": \"21\",\n      \"owner_original\": \"Pfeiffer Michael, bürgerl. Hand-Geselle / 172. 728.\",\n      \"status_original\": \"bürgerl. Hand-Geselle\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"172\", \"728\"]},\n        {\"section\": \"II\", \"numbers\": [\"409\", \"742\", \"743\", \"744\", \"745\", \"746\", \"747\", \"748\", \"754\", \"755\", \"756\", \"757\", \"958\", \"959\", \"960\", \"961\", \"962\", \"1263\", \"1270\", \"1271\", \"1282\", \"1283\", \"1284\", \"1285\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"998\"]},\n        {\"section\": \"IV\", \"numbers\": [\"793\", \"999\"]}\n      ],\n      \"annotation_original\": \"R. T. 27. 26.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"38\",\n      \"section\": \"\",\n      \"house_no\": \"40\",\n      \"owner_original\": \"Pötsch Ruprecht, Söhn und Geselle / 161. 162. 163. 170. 776. 978. 979. 980. 981. 1020. 1028. / 1244. 1299. 1301. 261. 262. 264. 268. 468. 480. 484. 486. / 579. 587. 597. 600. 650. 652. 758.\",\n      \"status_original\": \"Söhn und Geselle\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"161\", \"162\", \"163\", \"170\", \"776\", \"978\", \"979\", \"980\", \"981\", \"1020\", \"1028\", \"1244\", \"1299\", \"1301\", \"261\", \"262\", \"264\", \"268\", \"468\", \"480\", \"484\", \"486\", \"579\", \"587\", \"597\", \"600\", \"650\", \"652\", \"758\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"The page shows two main entries (37 and 38). Entry 37 has parcels listed across multiple sections (I, II, III/IV, IV) within the owner cell. Entry 38 has a long list of parcel numbers in section I. The handwriting is clear Kurrent script.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276619,
+  "id": "2026092503032600b8eee4e1a9411f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503032600b8eee4e1a9411f",
+  "usage": {
+    "completion_tokens": 755,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2163
+  }
+}

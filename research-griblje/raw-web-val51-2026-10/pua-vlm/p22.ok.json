@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page from the 1825 Franciscan Cadastre for Gemeinde Grüble, showing entries 42-44 with land parcels distributed across sections I-V and C.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"42\", \"section\": \"\", \"house_no\": \"47\", \"owner_original\": \"Widow Katharina Brandl in Grübln / Gütlerin\", \"status_original\": \"Gütlerin\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"22\", \"94\", \"277\", \"98\", \"162\", \"437\", \"118\", \"442\", \"748\", \"197\", \"257\", \"300\", \"646\", \"358\", \"459\", \"459\", \"481\", \"bis\", \"492\", \"577\", \"616\"]}, {\"section\": \"II\", \"numbers\": [\"1000\", \"1012\", \"1013\", \"1023\", \"1077\", \"1078\", \"1250\", \"1351\", \"1555\", \"1562\", \"1636\", \"1669\", \"1670\", \"1874\"]}, {\"section\": \"IV\", \"numbers\": [\"1605\", \"1979\", \"2000\", \"2116\"]}, {\"section\": \"IV.V\", \"numbers\": [\"2428\"]}, {\"section\": \"V\", \"numbers\": [\"2500\", \"2699\", \"2698\", \"2987\", \"3020\"]}], \"annotation_original\": \"RP 72. 77. 79. 80.\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"43\", \"section\": \"\", \"house_no\": \"69\", \"owner_original\": \"Christian Brandl in Grübln / Bauer\", \"status_original\": \"Bauer\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"839\", \"566\", \"552\", \"553\", \"551\", \"597\", \"95\", \"600\", \"576\", \"601\", \"628\", \"1066\", \"1097\", \"1109\", \"1161\", \"1178\", \"1458\", \"1478\", \"1709\", \"1799\", \"1800\", \"1971\", \"1981\", \"2045\", \"2148\", \"2156\", \"2170\", \"2178\", \"2222\", \"2251\", \"2301\", \"2401\", \"2600\", \"2870\", \"2927\", \"3389\", \"3396\", \"3401\", \"3479\"]}, {\"section\": \"IV\", \"numbers\": []}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"44\", \"section\": \"\", \"house_no\": \"\", \"owner_original\": \"Kirche zu Veith in Grüble\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"C\", \"numbers\": []}], \"annotation_original\": \"Lp. 12.\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"Entry 42: The name appears to be 'Katharina Brandl' (or similar), status 'Gütlerin' (female gardener/smallholder). Entry 43: 'Christian Brandl', status 'Bauer'. Entry 44: Institutional entry for the church ('Kirche'). Section IV in entry 43 has no parcel numbers listed. Some numbers in the long lists (especially in Section II) are difficult to decipher with absolute certainty due to dense handwriting.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790273858,
+  "id": "202609250217146d8688a8eaae4c62",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250217146d8688a8eaae4c62",
+  "usage": {
+    "completion_tokens": 845,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2253
+  }
+}

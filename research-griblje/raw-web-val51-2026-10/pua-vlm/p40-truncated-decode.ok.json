@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Alphabetical register of landowners and their parcels for the municipality of Grüble, page V, showing entries 80 and 81 (Schimetz family)\",\n  \"title_block\": \"Land: [blank] | Bezirk: [blank] | Kreis: [blank] | Gemeinde: [blank]\\n\\nAlphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen .\",\n  \"entries\": [\n    {\n      \"entry_no\": \"80\",\n      \"section\": \"I.\",\n      \"house_no\": \"hg\",\n      \"owner_original\": \"Schimetz Michael bauer hiesig / Grüble / 714. 688. 724. 699. 976. 772. 288. 999. 378. 66. 877.\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"hiesig / Grüble\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"714\", \"688\", \"724\", \"699\", \"976\", \"772\", \"288\", \"999\", \"378\", \"66\", \"877\"]},\n        {\"section\": \"II.\", \"numbers\": [\"718\"]},\n        {\"section\": \"II.\", \"numbers\": [\"787\", \"372\", \"804\", \"861\", \"395\", \"682\", \"4163\", \"1988\", \"1029\", \"1059\", \"1050\", \"1076\", \"1073\", \"2018\", \"2046\", \"1856\", \"2516\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"1953\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"1031\", \"1093\", \"1019\", \"2508\", \"2399\", \"2296\", \"2246\", \"2359\", \"2086\", \"2099\", \"2461\", \"2406\", \"2496\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"81\",\n      \"section\": \"I.\",\n      \"house_no\": \"60\",\n      \"owner_original\": \"Schimetz Johann bauer hiesig / Grüble / 66. 79. 71. 82. 99. 106. 110. 122. 206. 268. 292. 320. 380. 382. 902. 964. 981. 985. 1027. 492. 425.\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"hiesig / Grüble\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"66\", \"79\", \"71\", \"82\", \"99\", \"106\", \"110\", \"122\", \"206\", \"268\", \"292\", \"320\", \"380\", \"382\", \"902\", \"964\", \"981\", \"985\", \"1027\", \"492\", \"425\"]},\n        {\"section\": \"II.\", \"numbers\": [\"307\", \"876\", \"352.776.853. 1938. 2072. 1616. 16. 97. 1209. 1249. 1307. 1316. 1336. 1356. 1361. 1399. 1279. 1283. 1441. 1499. 1526. 2056. 2061.\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"1986\"]},\n        {\"section\": \"III.\", \"numbers\": [\"1681. 1685. 1688. 1690\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2201. 2206. 2256. 2259. 2280. 2306. 2319. 2323. 2399. 2106. 2121. 2136. 2149. 2150. 2189. 2195. 2166. 2176. 2236. 2270. 2039. 2079. 2093. 2043. 2453. 2556. 2567. - 2538. - 2427. 2400.\"]},\n        {\"section\": \"V.\", \"numbers\": [\"2442. 2445. 2446. 2468. 2472. 2477. 2540. 2546.\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"352.776.853[?]\", \"1681[?]\", \"1685[?]\", \"1688[?]\", \"1690[?]\", \"- 2538.[?]\"]\n    }\n  ],\n  \"page_notes\": \"Entry 80 has 'B.T. 62.' written below the parcel list (possibly a marginal note or reference). Entry 81 continues onto the next page (bottom of column cut off). Section III/IV appears as a combined designation in both entries. Some numbers in entry 81 section II and IV are densely packed with possible dots or dashes between them.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276650,
+  "id": "20260925030345bf208201ab3a4003",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925030345bf208201ab3a4003",
+  "usage": {
+    "completion_tokens": 1202,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2610
+  }
+}

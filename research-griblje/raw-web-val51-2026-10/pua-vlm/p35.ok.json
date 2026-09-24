@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page 69-70 of the Alphabetical Register of Landowners for Gemeinde Grüble, showing entries for Schönitisch Major and Schinig Major (Schönegg), with parcel numbers listed in Sections II, III, IV, and V.\", \"title_block\": \"Land / Bezirk / Kreis / Gemeinde / Alphabetisches Verzeichniß / Der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"69\", \"section\": \"\", \"house_no\": \"1\", \"owner_original\": \"Schönitisch Major / Landes Oberfeldgerl / 939. 899. 898. 968. 907. 910. 1022. 1003. 1052. / 1076. 1077. 1078. 1085. 1090. 1099. 1102. 1103. / 1167. 1185. 1187. 1188. 1190. 1192. 1193. 1202. / 1236. 1276. 1776. / III. 1705. 1729. / IV. 2046. 2072. 2085. / B.P. ca. 10.\", \"status_original\": \"Major\", \"residence_original\": \"Landes Oberfeldgerl\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"939\", \"899\", \"898\", \"968\", \"907\", \"910\", \"1022\", \"1003\", \"1052\"]}, {\"section\": \"II\", \"numbers\": [\"1076\", \"1077\", \"1078\", \"1085\", \"1090\", \"1099\", \"1102\", \"1103\"]}, {\"section\": \"II\", \"numbers\": [\"1167\", \"1185\", \"1187\", \"1188\", \"1190\", \"1192\", \"1193\", \"1202\"]}, {\"section\": \"II\", \"numbers\": [\"1236\", \"1276\", \"1776\"]}, {\"section\": \"III\", \"numbers\": [\"1705\", \"1729\"]}, {\"section\": \"IV\", \"numbers\": [\"2046\", \"2072\", \"2085\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"70\", \"section\": \"\", \"house_no\": \"1\", \"owner_original\": \"Schinig Major / Landes Oberfeldgerl / V. 2527.\", \"status_original\": \"Major\", \"residence_original\": \"Landes Oberfeldgerl\", \"parcels\": [{\"section\": \"V\", \"numbers\": [\"2527\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"Entry 69 has a long list of parcel numbers spanning multiple lines within the owner cell; 'B.P. ca. 10.' is written at the bottom of that cell, likely indicating additional parcels or a note. The handwriting is clear Kurrent script.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274765,
+  "id": "202609250232350937e7d323db42d8",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250232350937e7d323db42d8",
+  "usage": {
+    "completion_tokens": 679,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 540
+    },
+    "total_tokens": 2087
+  }
+}
