@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi navedene liste franciscajskega katastra (k.o. N83 Grüble/Griblje, 1824) so bila najdena naslednja krajevna imena in toponimi:\n\n**Splošni pregled toponimov na listi:**\n\n1.  **Weidendorf**\n    *   **Črkovanje:** *Weidendorf*\n    *   **Pozicija:** Skrajni jugovzhodni rob liste, vzdolž meje (diagonalno zapisano).\n    *   **Vrsta:** Sosednja občina / Naselje.\n\n2.  **Eichstutbirt**\n    *   **Črkovanje:** *Eichstutbirt* (zapisano vertikalno: E-I-C-H-S-T-U-T-B-I-R-T)\n    *   **Pozicija:** Vzhodna meja, med *Weidendorf* in *Waldli Cr.*.\n    *   **Vrsta:** Mejni toponim / Ozemlje (verjetno gozd ali pašnik, povezan z 'Jelenjo samotno farmo').\n\n3.  **Waldli Cr.** (ali *Waldli Gr.*)\n    *   **Črkovanje:** *Waldli Cr.* (ali podobno, manj jasno)\n    *   **Pozicija:** Severovzhodni vogal, na meji.\n    *   **Vrsta:** Mejni toponim / Gozd.\n\n4.  **Na Stelnig** (ali *Stelzn*)\n    *   **Črkovanje:** *Na Stelnig* (ali *Stelzn*, pisava je kurzivna in nekoliko težko berljiva, vendar se sklada s iskanim izrazom).\n    *   **Pozicija:** Vzhodna stran, srednjeevropski del meje, južno od *Waldli Cr.*\n    *   **Vrsta:** Mejni toponim / Kraška jama ali dolina (toponim 'Stelnik' pogosto označuje kraško pojavitev).\n\n5.  **Grüble**\n    *   **Črkovanje:** *Grüble*\n    *   **Pozicija:** Osrednji zahodni del liste (prostor brez parcelacije).\n    *   **Vrsta:** Glavni toponim katastrske občine / Dolina / Kotanja.\n\n6.  **na Borli**\n    *   **Črkovanje:** *na Borli*\n    *   **Pozicija:** Vzhodna polovica, sredi parcellirane zemlje.\n    *   **Vrsta:** Zaselek / Del naselja / Krajevno ime.\n\n7.  **Lubige** (ali *Lubige*)\n    *   **Črkovanje:** *Lubige*\n    *   **Pozicija:** Jugovzhodni del, na meji, severno od *Weidendorf*.\n    *   **Vrsta:** Mejni toponim / Potok ali zemljišče.\n\n8.  **Na-Lubigischen-Brücke** (ali *Brucke*)\n    *   **Črkovanje:** *Na-Lubigischen-Brücke* (dolg napis).\n    *   **Pozicija:** Južna meja, tik nad *Weidendorf*, pri izhodu ceste/poti.\n    *   **Vrsta:** Most / Lokacija mostu čez potok *Lubige*.\n\n---\n\n**Rezultati posebnega iskanja:**\n\n*   **»Rim/Rimb/Rymb«**: **Ni najden** na tej listi.\n*   **»Fučkovci/Futschkofen/Fukowcz«**: **Ni najden** na tej listi.\n*   **»Stelnik/Stelzn«**: **Najden** – glej točko **4** (*Na Stelnig* / *Stelzn*) na vzhodni meji.\n*   **»Grabrijan/Grabrian«**: **Ni najden** na tej listi.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790272036,
+  "id": "2026092501463885f1734b994a4a02",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092501463885f1734b994a4a02",
+  "usage": {
+    "completion_tokens": 969,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5870,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6839
+  }
+}
