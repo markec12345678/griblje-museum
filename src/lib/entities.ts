@@ -24,7 +24,7 @@
  *  - kuratorska vrsta P0–P4 za nerešene identitete.
  *
  * KAJ TA PLAST NI
- *  - ni grafska baza: 93 zapisov + 92 entitet zadošča običajnim
+ *  - ni grafska baza: obseg zbirke in entitetne plasti zadošča običajnim
  *    podatkovnim strukturam (množice, zemljevidi) — kot doslej;
  *  - ni nov vir resnice: seme (museum-content.ts) ostaja edini vir;
  *  - ni samodejno sklepanje: 372 biografskih faz NI pretvorjenih v

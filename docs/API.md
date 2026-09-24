@@ -12,7 +12,7 @@
 |---|---|
 | Format | JSON (UTF-8) · IIIF Presentation 3.0 · JSON-LD (OpenData) |
 | CORS | odprt za GET |
-| Status podatkov | 101 zapis (MVG-001–101) · 488 virov · 94 entitet · 372 faz življenjepisov |
+| Status podatkov | 113 zapisov (MVG-001–113) · 588 virov · 95 entitet · 372 faz življenjepisov — *posnetek ob 98. sklopu (2026-09-23); živo stanje vrača [`/api/opendata`](#) → `counts`* |
 | Verzija | 2026.09 (sledi sklopom v README) |
 
 ---
