@@ -1922,6 +1922,15 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
       "PUA (1825): the numbering structure of the register (val 51, issue #35) — the book has title blocks at p01/p26/p42 (internal dividers); numbering runs 1–50 (p03–p25) and the tail shows 80/81→97 continuity (p40-recovered … p49). Unstable: p16 reads '70/71' (twice), yet the book's continuity (29 at p15 → 32/33 at p17) demands 30/31 (Kurrent 3↔7); gaps 53–58 (block p27–p31: p27-recovered '393/394' clearly wrong, p28 '35/36', p29-recovered '37/38', p30 '59/60' — an arithmetic hypothesis of 51–58 for 6 entries, NOT applied); 85/86 likely under the p42 cut; the 70/71 conflict (p16 vs p35/36). Remaining: control of pages p16 and p27–p31 at full resolution and the re-download of p26/p42.",
     slugs: ["griblje-vas"],
   },
+  {
+    id: "P2-E14",
+    priority: "P2",
+    questionSi:
+      "Kataster list A01 (1824/27): provizorična georeferenca v zemljevidu »Zemljevid vasi 1825« (52. val) po eni sidrni točki (centroid stavb ↔ muzejska koordinata vasi) + listnem merilu (320 Klafter = 277 px → 2,19 m/px); rotacija lista ni rešena — odstopanja do nekaj sto metrov na robovih. Ostaja: kontrola proti moderni zemljevidni podlagi (GURS/eKataster ali ortofoto) z ≥2 kontrolnimi točkami (cerkev sv. Vid, Kolpa prehodi), popravek transformacije (rotacija) in eventualna nadgradnja overlayja; isto velja za liste A02–A05.",
+    questionEn:
+      "Cadastre sheet A01 (1824/27): the provisional georeference in the 'Village map 1825' view (val 52) uses one anchor point (building centroid ↔ the museum's village coordinate) plus the sheet scale (320 Klafter = 277 px → 2.19 m/px); the sheet's rotation is unresolved — offsets up to several hundred metres at the edges. Remaining: control against a modern base map (GURS/eKataster or orthophoto) with ≥2 control points (St. Vitus church, Kolpa crossings), a corrected (rotated) transform and an upgraded overlay; the same applies to sheets A02–A05.",
+    slugs: ["griblje-vas"],
+  },
 ];
 
 // ---------------------------------------------------------------------------

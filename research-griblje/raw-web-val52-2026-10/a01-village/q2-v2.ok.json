@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"buildings\": [],\n  \"toponyms\": [\n    {\"name\": \"na Kameniza\", \"px\": [280, 750], \"type\": \"hamlet/area\"},\n    {\"name\": \"Kulpa Fluss\", \"px\": [870, 530], \"type\": \"river\"}\n  ],\n  \"notes\": \"No buildings (red/orange rectangles) are visible in this quadrant. The area appears to be entirely agricultural land parcels (numbered roughly 112–348) between the settlement of 'na Kameniza' and the Kolpa river bank.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790281591,
+  "id": "202609250426270d0be82280524327",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250426270d0be82280524327",
+  "usage": {
+    "completion_tokens": 132,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1932,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2064
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Title page of the Building Parcel Protocol for the municipality of Grüble (Grablo). No data rows present on this page.\",\n  \"rows\": [],\n  \"page_notes\": \"This is the title page (cover sheet) of the protocol. The text reads 'Bauparzellen Protocoll der Gemeinde Grüble' (Building Parcel Protocol of the Municipality of Grüble). Printed column headers are visible but no handwritten data entries (rows) are filled in on this specific page. Handwriting is in Kurrent script. Top right corner has 'Original' and 'H.P.' notation.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790281168,
+  "id": "20260925041924db066c24d52d4d3e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925041924db066c24d52d4d3e",
+  "usage": {
+    "completion_tokens": 134,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1271,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1405
+  }
+}

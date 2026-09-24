@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"quadrant\": \"Gemeinde GRÜBLE, sheet A01 (partial view)\",\n  \"buildings\": [],\n  \"toponyms\": [\n    {\n      \"name\": \"na Kameniza\",\n      \"px\": [260, 750]\n    },\n    {\n      \"name\": \"Stupar Stih\",\n      \"px\": [870, 540]\n    }\n  ],\n  \"notes\": \"No buildings with house numbers are visible in this specific quadrant. The image primarily shows agricultural land parcels (numbered in red, e.g., 1774, 197, 198), a river or stream on the right (labeled 'Stupar Stih'), and a toponym 'na Kameniza' at the bottom left. A red line runs parallel to the water body on the right edge.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790280842,
+  "id": "2026092504135875ce4ea09bee4240",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092504135875ce4ea09bee4240",
+  "usage": {
+    "completion_tokens": 184,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2048,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2232
+  }
+}

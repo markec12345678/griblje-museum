@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Protocoll der Bau Parcellen der Gemeinde GRÜBLE (Page with header and partial entries)\",\n  \"rows\": [\n    {\n      \"bp_no\": \"\",\n      \"owner_original\": \"Musterstellung der Einträge\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"bp_no\": \"1\",\n      \"owner_original\": \"[nečitljivo]\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"1112 / 7375\",\n      \"gattung\": \"[nečitljivo]\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"owner\", \"gattung\"]\n    },\n    {\n      \"bp_no\": \"2\",\n      \"owner_original\": \"\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"960 / 4780\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": []\n    },\n    {\n      \"bp_no\": \"3\",\n      \"owner_original\": \"\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"1004\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": []\n    },\n    {\n      \"bp_no\": \"4\",\n      \"owner_original\": \"\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"962 / 4810\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": []\n    },\n    {\n      \"bp_no\": \"5\",\n      \"owner_original\": \"\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"127 / 639[?]\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"house_no\"]\n    },\n    {\n      \"bp_no\": \"6\",\n      \"owner_original\": \"[nečitljivo] von [nečitljivo]\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"3529 / 4649\",\n      \"gattung\": \"[nečitljivo]\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"owner\", \"gattung\"]\n    },\n    {\n      \"bp_no\": \"7\",\n      \"owner_original\": \"[nečitljivo] [nečitljivo]er [nečitljivo]er [?]\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"owner\"]\n    },\n    {\n      \"bp_no\": \"8\",\n      \"owner_original\": \"Musterhülle [?] des [?] Jahres 1825\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"owner\"]\n    },\n    {\n      \"bp_no\": \"9\",\n      \"owner_original\": \"Stellungspflicht[?]\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"869, 112, 389, 1241, 775, 1214\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"owner\"]\n    },\n    {\n      \"bp_no\": \"10\",\n      \"owner_original\": \"[nečitljivo] zu Stellungspflicht[?]\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"6294 / 3159[?]\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"1258, 320, 2316\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"owner\", \"house_no\"]\n    },\n    {\n      \"bp_no\": \"11\",\n      \"owner_original\": \"St. Jos. Glog[?]\",\n      \"stand\": \"\",\n      \"wohnort\": \"\",\n      \"house_no\": \"\",\n      \"gattung\": \"\",\n      \"annotation_original\": \"\",\n      \"confidence\": \"low\",\n      \"uncertain_words\": [\"owner\"]\n    }\n  ],\n  \"page_notes\": \"This page appears to be a template or example page ('Musterstellung') rather than actual data entries for Grüble. The handwriting is extremely difficult to read in the lower rows. The red numbers appear to be area measurements or fiscal values. The right margin contains handwritten calculations.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790281375,
+  "id": "202609250422392c39025d85d94ddd",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250422392c39025d85d94ddd",
+  "usage": {
+    "completion_tokens": 1064,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1991,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3055
+  }
+}

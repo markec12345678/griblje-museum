@@ -5,6 +5,10 @@ import dynamic from "next/dynamic";
 import { Map as MapIcon } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { useExhibitStrings } from "@/components/museum/exhibit-strings";
+const CadastreMapView = dynamic(
+  () => import("@/components/museum/cadastre-map-view").then((m) => m.CadastreMapView),
+  { ssr: false, loading: () => null }
+);
 import type { ExhibitDTO } from "@/lib/types";
 
 const LeafletMap = dynamic(() => import("@/components/museum/leaflet-map"), {
@@ -97,6 +101,9 @@ export function MapView({
         </ul>
         <p className="mt-4 text-xs text-muted-foreground">{t.map.osm}</p>
       </section>
+
+      {/* Zemljevid 1825 — list A01 franciscejskega katastra (val 52) */}
+      <CadastreMapView />
     </div>
   );
 }

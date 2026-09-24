@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"buildings\": [],\n  \"toponyms\": [\n    {\"name\": \"Grüble\", \"px\": [220, 95]},\n    {\"name\": \"CROATIEN\", \"px\": [890, 420], \"orientation\": \"vertical\"},\n    {\"name\": \"Kulturgut\", \"px\": [140, 920]}\n  ],\n  \"notes\": \"No buildings (red/orange rectangles) are visible in this quadrant. The area shows agricultural land parcels (numbered in red) between the village of Grüble and the Kolpa river (labeled CROATIEN on the eastern bank). A road runs through the middle of the image, but no structures are marked along it or the riverbank.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790281605,
+  "id": "20260925042641779293408bda48cf",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925042641779293408bda48cf",
+  "usage": {
+    "completion_tokens": 161,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1932,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2093
+  }
+}

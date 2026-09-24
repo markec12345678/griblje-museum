@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"quadrant\": \"Gemeinde GRÜBLE, sheet A01 (partial view)\",\n  \"buildings\": [\n    {\n      \"house_no\": \"92\",\n      \"px\": [963, 332],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"94\",\n      \"px\": [941, 445],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"100\",\n      \"px\": [962, 484],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"95\",\n      \"px\": [866, 497],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"99\",\n      \"px\": [928, 581],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"98\",\n      \"px\": [935, 617],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"89\",\n      \"px\": [874, 722],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"85\",\n      \"px\": [856, 778],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"86\",\n      \"px\": [889, 861],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"83\",\n      \"px\": [850, 888],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"82\",\n      \"px\": [805, 925],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"94\",\n      \"px\": [784, 876],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"95\",\n      \"px\": [739, 834],\n      \"reading_confidence\": \"high\"\n    },\n    {\n      \"house_no\": \"93\",\n      \"px\": [750, 901],\n      \"reading_confidence\": \"high\"\n    }\n  ],\n  \"toponyms\": [\n    {\n      \"name\": \"na Feld\",\n      \"px\": [140, 980],\n      \"reading_confidence\": \"medium\"\n    }\n  ],\n  \"notes\": \"The image shows a mix of agricultural land (beige with red parcel numbers) and a built-up area (green) on the right side. Buildings are represented as small yellow/white rectangles with black outlines, mostly clustered in the green area. A road runs vertically along the right side of the main field block. Parcel numbers are written in red ink throughout the fields.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790280829,
+  "id": "20260925041335fa9d8207bf314fe8",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925041335fa9d8207bf314fe8",
+  "usage": {
+    "completion_tokens": 614,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2048,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2662
+  }
+}

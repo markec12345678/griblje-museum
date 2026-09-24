@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"buildings\": [\n    {\"bp_no\":\"79\", \"px\":[449,75], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"65\", \"px\":[521,128], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"77\", \"px\":[636,126], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"73\", \"px\":[723,147], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"78\", \"px\":[786,130], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"76\", \"px\":[755,219], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"72\", \"px\":[788,293], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"68\", \"px\":[613,224], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"67\", \"px\":[591,269], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"66\", \"px\":[607,371], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"64\", \"px\":[701,360], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"63\", \"px\":[663,401], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"56\", \"px\":[373,315], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"55\", \"px\":[354,342], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"54\", \"px\":[324,340], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"53\", \"px\":[293,420], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"52\", \"px\":[430,365], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"51\", \"px\":[370,425], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"50\", \"px\":[363,482], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"49\", \"px\":[482,490], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"47\", \"px\":[332,572], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"46\", \"px\":[320,612], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"45\", \"px\":[380,600], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"44\", \"px\":[358,650], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"43\", \"px\":[160,442], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"42\", \"px\":[106,467], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"41\", \"px\":[73,557], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"39\", \"px\":[88,585], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"38\", \"px\":[61,643], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"37\", \"px\":[27,669], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"36\", \"px\":[96,706], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"35\", \"px\":[166,697], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"34\", \"px\":[194,645], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"33\", \"px\":[222,550], \"reading_confidence\":\"high\"},\n    {\"bp_no\":\"32\", \"px\":[124,838], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"31\", \"px\":[213,767], \"reading_confidence\":\"medium\"},\n    {\"bp_no\":\"30\", \"px\":[270,828], \"reading_confidence\":\"medium\"}\n  ],\n  \"toponyms\": [\n    {\"name\":\"Zohlanič\", \"px\":[790,765], \"type\":\"hamlet/area\"}\n  ],\n  \"notes\": \"Map shows the eastern part of Gemeinde GRÜBLE (Zohlanič area) with dense building clusters along roads and field boundaries. Building numbers range approximately from 30 to 79 in this quadrant. Some smaller or fainter building numbers may have lower reading confidence due to image resolution or handwriting style.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790281666,
+  "id": "20260925042724a18abd67d27f4aa3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925042724a18abd67d27f4aa3",
+  "usage": {
+    "completion_tokens": 937,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4012,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4949
+  }
+}
