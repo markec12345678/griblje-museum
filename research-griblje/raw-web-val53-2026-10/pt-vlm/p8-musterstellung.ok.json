@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Summary page of the building parcel protocol (Gebäude-Parzellen-Protokoll) from the Franciscan Cadastre (1825), containing the 'Musterstellung der Gebäude' (classification of buildings) with categories, counts, and area totals in square fathoms (Klafter).\",\n  \"summary_table\": [\n    {\n      \"category\": \"Wohngebäude\",\n      \"count\": \"4\",\n      \"area_or_remark\": \"869\"\n    },\n    {\n      \"category\": \"Nebengebäude\",\n      \"count\": \"4\",\n      \"area_or_remark\": \"112\"\n    },\n    {\n      \"category\": \"Zusammen\",\n      \"count\": \"8\",\n      \"area_or_remark\": \"981\"\n    },\n    {\n      \"category\": \"Hofraum\",\n      \"count\": \"\",\n      \"area_or_remark\": \"1241\"\n    },\n    {\n      \"category\": \"Insgesamt\",\n      \"count\": \"\",\n      \"area_or_remark\": \"2222\"\n    }\n  ],\n  \"signatures\": [\n    \"[nečitljivo]\",\n    \"[nečitljivo]\"\n  ],\n  \"header_note\": \"Des Hauseigenthümers | Der Häuser und Gebäude | No. | Ver und Zuname. | Stand. | Wohnort. | No. | Gattung & | Areahl Inhalt auf Hiebsgriff des Hofraums\",\n  \"uncertain_words\": [\"Musterstellung\", \"Wohngebäude\", \"Nebengebäude\", \"Hofraum\"],\n  \"confidence\": \"medium\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790285492,
+  "id": "20260925053124f017f9e95788413f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925053124f017f9e95788413f",
+  "usage": {
+    "completion_tokens": 358,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1815,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2173
+  }
+}

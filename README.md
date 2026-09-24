@@ -4,6 +4,9 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **107. sklop — PT N083 popoln prepis: Protocoll der Bau Parcellen (53. val, 2026-09-24)**
+> **Faza POBRANJA** (naročilo »najprej vse poberi, potem usklajujemo«): zadnji večji lokalno-pobran vir — protokol stavbnih parcel 1825 (docid 41781, 8 strani) — prebran v celoti · **prvo branje p3** (JPEG okrnjen, PIL delno dekodiranje) · 3 viri branj (val 41/52 prior + val 53 passA 7× + passB 6× 2× zoom) → **konsenzni register `pt-n83/register.json`: 100 vrstic / 97 BP, 40 STABLE, 51 REVIEW-CONFLICT, 9 REVIEW** · vrzel BP 15–20 dokumentirana (ni ugibanja) · bp 1–2 = St. Veith (korooboracija PUA no. 44) · p8 = **Musterstellung der Gebäude** (povzetek 4+4 objektov; ni dokaz odsotnosti gostilne) · PUA navzkrižna kontrola = vstopna točka za fazo 2 usklajevanja · **+0 vsebin, +1 kuratorska vrsta P3-E14 (137)** · QA tests/pt-n83-register.test.ts (10; skupaj **151/151**) · stanje zbirke 113/589/469 nespremenjeno ·
+
 > **106. sklop — zemljevid vasi 1825: list A01 z stavbami in lastniki (52. val, 2026-09-24)**
 > **List A01 v muzeju**: 56 stavb izluščenih z VLM iz katastrskega lista (rdeče številke = **stavbne parcele**, potrjeno s PT protokolom) + 7 toponimov · **vez na lastnike 1825** prek PT p7 (dvojno branje) in PUA opomb — 11 stavb z imenom lastnika, vsaka vez z virom v popupu · dva pogleda: **avtentični list** (pikselne pozicije — exakt) in **Danes** (OSM + provizoričen overlay, rumeno opozorilo o natančnosti, drsnik prosojnosti) · iskanje po parceli/hiši/lastniku + flyTo · i18n (5 jezikov) · **novo P2-E14** (georeferenčna kontrola) · 141/141 testov + agent-browser verifikacija ·
 
