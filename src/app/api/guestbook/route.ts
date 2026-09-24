@@ -3,12 +3,11 @@ import { db } from "@/lib/db";
 import { isReadOnlyDatabase, readOnlyResponse } from "@/lib/readonly-db";
 import {
   cleanText,
-  clientIp,
   guestbookSchema,
   looksSuspicious,
-  rateLimited,
   LIMITS,
 } from "@/lib/contributions";
+import { clientIpOf, rateLimited } from "@/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
@@ -89,8 +88,8 @@ export async function OPTIONS() {
  */
 export async function POST(request: Request) {
   try {
-    const ip = clientIp(request);
-    if (rateLimited(ip)) {
+    const ip = clientIpOf(request);
+    if (rateLimited("contributions", ip)) {
       return NextResponse.json(
         { error: "Preveč vpisov v kratkem času — poskusite znova kasneje." },
         { status: 429 }
