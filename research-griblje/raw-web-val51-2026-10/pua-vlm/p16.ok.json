@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Alphabetical list of landowners and their parcels for Gemeinde Grüble, 1825, showing entries 70 and 71 with multiple sections and parcel numbers\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"70\", \"section\": \"\", \"house_no\": \"3\", \"owner_original\": \"Christan / Wörfl / Einwohner hiesig\", \"status_original\": \"Einwohner\", \"residence_original\": \"hiesig\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"829\"]}, {\"section\": \"II\", \"numbers\": [\"283\", \"284\", \"581\", \"588\", \"594\", \"695\", \"975\", \"997\", \"999\", \"1002\", \"1013\", \"1020\", \"1031\", \"1042\", \"1052\", \"1064\", \"1075\", \"1086\", \"1097\", \"1108\", \"1119\", \"1130\", \"1141\", \"1152\", \"1163\", \"1174\", \"1185\", \"1196\", \"1207\", \"1218\", \"1229\", \"1240\", \"1251\", \"1262\"]}, {\"section\": \"III/IV\", \"numbers\": [\"1492\", \"1816\"]}, {\"section\": \"V\", \"numbers\": [\"2241\"]}], \"annotation_original\": \"B. P. 22.\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"71\", \"section\": \"\", \"house_no\": \"10\", \"owner_original\": \"Liese / Wörflin / Einwohnerin hiesig\", \"status_original\": \"Einwohnerin\", \"residence_original\": \"hiesig\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"282\", \"280\", \"290\", \"301\", \"361\", \"381\", \"564\", \"685\", \"1001\", \"1051\", \"1074\", \"1709\", \"1710\", \"1769\"]}, {\"section\": \"V\", \"numbers\": [\"2111\", \"1929\", \"2016\", \"2035\", \"2042\", \"2052\", \"2091\", \"2102\", \"2167\", \"2207\", \"2216\", \"2236\", \"2278\", \"2291\", \"2316\", \"2324\", \"2363\"]}], \"annotation_original\": \"B. P. 222.\", \"confidence\": \"medium\", \"uncertain_words\": [\"Liese[?]\", \"Wörflin[?]\"]}], \"page_notes\": \"Entry 70: Section I has only one parcel (829); Section II contains a long sequence of numbers; Section III/IV is combined in one row; Section V has one parcel (2241). Entry 71: Name 'Liese' and surname 'Wörflin' are somewhat uncertain due to cursive handwriting; Section II and V contain multiple parcel numbers. Both entries have annotations starting with 'B. P.' (likely 'Bauland Parzelle' or similar). The page shows typical Kurrent script with some faded ink in number sequences.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274453,
+  "id": "20260925022717b710fea609304cbc",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022717b710fea609304cbc",
+  "usage": {
+    "completion_tokens": 732,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2140
+  }
+}

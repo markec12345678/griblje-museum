@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Alphabetical register of landowners and their parcels for the municipality of Grüble, page 5 (VT), showing entries 71-73 with detailed parcel lists in sections II, IV and V.\",\n  \"title_block\": \"Land: [blank] / Bezirk: [blank] / Kreis: [blank] / Gemeinde: [blank]\\n\\nAlphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"71\",\n      \"section\": \"V\",\n      \"house_no\": \"17\",\n      \"owner_original\": \"Gnadenstifts Güter / Landeshultspfarrer / 677.678.\",\n      \"status_original\": \"Landeshultspfarrer\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"V\", \"numbers\": [\"677\", \"678\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"Gnadenstifts\", \"Landeshultspfarrer\"]\n    },\n    {\n      \"entry_no\": \"72\",\n      \"section\": \"II\",\n      \"house_no\": \"5\",\n      \"owner_original\": \"Brugt Joh. Riedler / Bauer zu Grüble\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"Grüble\",\n      \"parcels\": [\n        {\"section\": \"II\", \"numbers\": [\"690\", \"693\", \"696\", \"698\", \"699\", \"701\", \"928\", \"936\", \"974\", \"975\", \"978\", \"1376\", \"1383\", \"1683\", \"1697\", \"1701\", \"1703\", \"1764\", \"1770\", \"1772\", \"1778\", \"1780\", \"1790\", \"1794\", \"1796\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1828\", \"1831\", \"1858\", \"1867\", \"1882\", \"1899\", \"1909\", \"1911\", \"1921\", \"1926\", \"2339\", \"2430\", \"2459\", \"2465\", \"2468\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"73\",\n      \"section\": \"IV\",\n      \"house_no\": \"3\",\n      \"owner_original\": \"Dienstbot Johann Seiz zu Waidhofen / 2175. / D.P. 15.16.18\",\n      \"status_original\": \"Dienstbot\",\n      \"residence_original\": \"Waidhofen\",\n      \"parcels\": [\n        {\"section\": \"IV\", \"numbers\": [\"2175\"]}\n      ],\n      \"annotation_original\": \"D.P. 15.16.18\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"Seiz\"]\n    }\n  ],\n  \"page_notes\": \"Entry 71: The name 'Gnadenstifts' and 'Landeshultspfarrer' are somewhat difficult to read due to cursive script; 'Landeshultspfarrer' may be a specific clerical title or place name. Entry 72 contains a very long list of parcel numbers spanning two sections (II and IV). Entry 73 includes a marginal note 'D.P. 15.16.18' at the bottom of the cell.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274789,
+  "id": "20260925023249e041e6f16d654485",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925023249e041e6f16d654485",
+  "usage": {
+    "completion_tokens": 783,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "total_tokens": 2191
+  }
+}

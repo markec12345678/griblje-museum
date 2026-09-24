@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": null,\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": null,\n      \"house_no\": null,\n      \"owner_original\": null,\n      \"status_original\": null,\n      \"residence_original\": null,\n      \"parcels\": [],\n      \"annotation_original\": \"Alphabetisches Verzeichniß der Gemeinde Gauble\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Added the title row that was missing from the draft.\"\n    }\n  ],\n  \"page_notes\": \"The image shows only the title page of the register for 'Gemeinde Gauble' (or Grüble). There are no data rows (no lfd. Nummer, no owner names, etc.) on this specific page. The draft was empty, which is correct for data rows, but the title text present on the page has been added as an entry.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276806,
+  "id": "202609250306425076cee8b17a4772",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250306425076cee8b17a4772",
+  "usage": {
+    "completion_tokens": 217,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1298,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1515
+  }
+}

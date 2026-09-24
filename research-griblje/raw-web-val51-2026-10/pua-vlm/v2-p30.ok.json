@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"59-60\",\n  \"rows\": [\n    {\n      \"entry_no\": \"59\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"41\",\n      \"owner_original\": \"Pöchinger Georg Leinwand Fabrikant\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"25\", \"166\", \"167\", \"176\", \"180\", \"188\", \"216\", \"229\", \"241\", \"267\", \"280\", \"283\", \"301\", \"302\", \"305\", \"306\", \"349\", \"449\", \"450\", \"473\", \"575\", \"581\", \"619\", \"641\", \"673\", \"816\", \"836\", \"878\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"1020\", \"1022\", \"1032\", \"1102\", \"1129\", \"1179\", \"1183\", \"1201\", \"1239\", \"1256\", \"1312\", \"1324\", \"1336\", \"1361\", \"1378\", \"1395\", \"1400\", \"1469\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"1505\", \"1507\", \"1514\", \"1525\"]\n        },\n        {\n          \"section\": \"III/IV\",\n          \"numbers\": [\"1633\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"1973\", \"1983\", \"1994\", \"2019\"]\n        },\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\"2203\"]\n        }\n      ],\n      \"annotation_original\": \"19. Pp.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"\"\n    },\n    {\n      \"entry_no\": \"60\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"42\",\n      \"owner_original\": \"Pöchinger Malfa Leinwand Fabrikant\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"27\", \"168\", \"169\", \"175\", \"189\", \"193\", \"204\", \"217\", \"228\", \"240\", \"260\", \"297\", \"304\", \"320\", \"352\", \"451\", \"618\", \"621\", \"727\"]\n        },\n        {\n          \"section\": \"II/III\",\n          \"numbers\": [\"1052\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"1035\", \"1099\", \"1192\", \"1262\", \"1278\", \"1291\", \"1298\", \"1299\", \"1300\", \"1349\", \"1420\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"1489\", \"1494\", \"1532\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"2016\", \"2021\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"\"\n    }\n  ],\n  \"page_notes\": \"The draft transcription is accurate. Entry 59 contains a long list of parcels across sections I, II, III, III/IV, IV, and V, with an annotation '19. Pp.' (likely indicating 19 pages of detail). Entry 60 lists parcels in sections I, II/III, II, III, and IV. Both entries are for the Pöchinger family (Georg and Malfa), linen manufacturers.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277226,
+  "id": "202609250313311ab98a9da3744022",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250313311ab98a9da3744022",
+  "usage": {
+    "completion_tokens": 847,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3319,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4166
+  }
+}

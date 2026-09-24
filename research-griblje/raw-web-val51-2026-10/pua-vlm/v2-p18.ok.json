@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"24\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"34\",\n      \"owner_original\": \"Krischan / Marla / Bauerin / zu Grübln\",\n      \"status_original\": \"Bauerin\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"6\", \"22\", \"28\", \"37\", \"39\", \"49\", \"66\", \"67\", \"68\", \"69\"]},\n        {\"section\": \"II\", \"numbers\": [\"109\", \"191\", \"293\", \"399\", \"402\", \"414\"]},\n        {\"section\": \"III\", \"numbers\": [\"676\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1005\", \"1007\", \"1038\", \"1092\", \"1119\", \"1128\"]}\n      ],\n      \"annotation_original\": \"b. P. 50.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"None\"\n    },\n    {\n      \"entry_no\": \"25\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"36\",\n      \"owner_original\": \"Krischan / Marla / Bauerin / zu Grübln\",\n      \"status_original\": \"Bauerin\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"13\", \"15\", \"16\", \"17\", \"18\", \"20\", \"46\", \"49\", \"57\", \"58\", \"59\", \"60\", \"61\", \"62\", \"63\", \"64\", \"65\", \"70\", \"71\", \"72\", \"73\", \"74\", \"75\", \"76\", \"77\", \"78\"]},\n        {\"section\": \"II\", \"numbers\": [\"115\", \"116\", \"225\", \"226\", \"309\", \"310\", \"312\"]},\n        {\"section\": \"III\", \"numbers\": [\"667\", \"668\"]},\n        {\"section\": \"V\", \"numbers\": [\"1019\", \"1015\", \"1023\", \"1050\"]}\n      ],\n      \"annotation_original\": \"b. P. 56. 38.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"None\"\n    }\n  ],\n  \"page_notes\": \"Page contains entries 24 and 25. Both entries refer to the same owner (Krischan Marla, Bauerin in Grübln) but different house numbers (34 and 36). Handwriting is clear Kurrent script.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277104,
+  "id": "20260925031128d5616f20b3b14a59",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031128d5616f20b3b14a59",
+  "usage": {
+    "completion_tokens": 618,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2685,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3303
+  }
+}

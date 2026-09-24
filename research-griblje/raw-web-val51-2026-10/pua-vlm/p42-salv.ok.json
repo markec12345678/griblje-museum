@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Title page of the alphabetical register for the municipality of Grüble, 1825. Contains header fields for Land, District, Municipality, and document title, but no table entries.\", \"title_block\": \"Land: [blank] / Bezirk: [blank] / Kreis: [blank] / Gemeinde: Grüble / Alphabetisches Verzeichniß\", \"entries\": [], \"page_notes\": \"The page is a title/form page. The lower half of the image is obscured by a grey overlay, but the visible portion contains only printed headers and the municipality name 'Grüble' filled in by hand. No table rows or parcel data are present on this page.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275517,
+  "id": "20260925024513f362bacc782b406d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925024513f362bacc782b406d",
+  "usage": {
+    "completion_tokens": 144,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1552
+  }
+}

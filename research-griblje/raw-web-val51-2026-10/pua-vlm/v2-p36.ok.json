@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"71-73\",\n  \"rows\": [\n    {\n      \"entry_no\": \"71\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"V\",\n      \"house_no\": \"17\",\n      \"owner_original\": \"Gnadenstifts Güter / Landeshultspfarrer\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"677\", \"678\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner field: removed parcel numbers '677.678.' from the name column (they belong in the parcel list).\"\n    },\n    {\n      \"entry_no\": \"72\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"II / IV\",\n      \"house_no\": \"5\",\n      \"owner_original\": \"Brugt Joh. Riedler\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"zu Grüble\",\n      \"parcels\": [\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"690\", \"693\", \"696\", \"698\", \"699\", \"701\", \"928\", \"936\", \"974\", \"975\", \"978\", \"1376\", \"1383\", \"1683\", \"1697\", \"1701\", \"1703\", \"1764\", \"1770\", \"1772\", \"1778\", \"1780\", \"1790\", \"1794\", \"1796\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1828\", \"1831\", \"1858\", \"1867\", \"1882\", \"1899\", \"1909\", \"1911\", \"1921\", \"1926\", \"2339\", \"2430\", \"2459\", \"2465\", \"2468\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Split owner field into Name (Brugt Joh. Riedler), Status (Bauer), and Residence (zu Grüble). Verified all parcel numbers against image.\"\n    },\n    {\n      \"entry_no\": \"73\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"IV\",\n      \"house_no\": \"3\",\n      \"owner_original\": \"Dienstbot Johann Seiz\",\n      \"status_original\": \"\",\n      \"residence_original\": \"zu Waidhofen\",\n      \"parcels\": [\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"2175\"]\n        }\n      ],\n      \"annotation_original\": \"D.P. 15.16.18\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner field: removed parcel number '2175.' and annotation 'D.P. 15.16.18' from the name column; moved to parcels and annotation fields respectively.\"\n    }\n  ],\n  \"page_notes\": \"The draft incorrectly included parcel numbers and annotations within the 'owner_original' text field for entries 71 and 73. These have been separated into their correct fields. Entry 72's owner string was parsed into name, status, and residence components. All numerical data verified as accurate.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277319,
+  "id": "20260925031508016d54fc2149472e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031508016d54fc2149472e",
+  "usage": {
+    "completion_tokens": 763,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2398,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3161
+  }
+}

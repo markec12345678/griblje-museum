@@ -1863,45 +1863,45 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
     id: "P2-E8",
     priority: "P2",
     questionSi:
-      "PUA h. 25 (1825): val 48 je branje »Karlina?« opustil — stran prebere »Brincz Michl Bauerin« (ženski status, vzorec vdov, ki se potrjuje na h. 16 in 61 Frillak, h. 2 Hlibetz, h. 6 Hahitsch). Ostaja: identifikacija osebe (vdova koga?) po matrikah Podzemelj in vez na hišo 25.",
+      "PUA h. 25 (1825): 51. val (issue #35) je branje »Brincz Michl Bauerin« (48. val) opustilo — vsi trije prehodi na p04/p05 berejo moškega kmeta: no. 4 = »Brincz Mathias[?]/Wendel[?]« Bauer (h. 25), no. 6 = »Brincz Michl« Bauer (h. 28). Vdovski vzorec registra ostaja resničen drugje (no. 7/8 Maria Wittib, no. 39 Lahodathar Wittib h. 46, no. 43 Ritschka Wittwe). Ostaja: identifikacija lastnika h. 25 (Mathias ali Wendel — branja se razhajajo) po matrikah Podzemelj.",
     questionEn:
-      "PUA no. 25 (1825): val 48 abandoned the 'Karlina?' reading — the page reads 'Brincz Michl Bauerin' (a feminine status, the widow pattern corroborated at nos. 16 and 61 Frillak, 2 Hlibetz, 6 Hahitsch). Remaining: identification of the person (widow of whom?) via the Podzemelj registers and the link to house 25.",
+      "PUA no. 25 (1825): val 51 (issue #35) abandoned the 'Brincz Michl Bauerin' reading (val 48) — all three passes at p04/p05 read a male farmer: no. 4 = 'Brincz Mathias[?]/Wendel[?]' Bauer (no. 25), no. 6 = 'Brincz Michl' Bauer (no. 28). The register's widow pattern remains real elsewhere (no. 7/8 Maria Wittib, no. 39 Lahodathar Wittib no. 46, no. 43 Ritschka Wittwe). Remaining: identification of the owner of no. 25 (Mathias or Wendel — readings differ) via the Podzemelj registers.",
     slugs: ["griblje-vas"],
   },
   {
     id: "P2-E9",
     priority: "P2",
     questionSi:
-      "PUA (1825): institucionalni lastnik »Commenda Tahern unde.« (Nro. 9, brez hišne št., obsežen sklop parcel Section V; val 48 prepis str. p06) — Malteška komenda? Religionsfonds? Identiteta ustanove čaka zgodovinsko kontrolo (Malteški red v Beli krajini do 1797/1807); »Tahern unde« je še nerazčlenjen izraz.",
+      "PUA (1825): institucionalni lastnik (Nro. 9, brez hišne št., obsežen sklop parcel Section V, p06) — baza imena »Commenda Tahern-« je potrjena 2× (48. val »Tahern unde.«, 51. val pass3 »Tahernwirth.[?]«); konec zapisa ostaja nerazčlenjen (pass1 »Fischerwies« opuščeno kot solo branje). Malteška komenda? Religionsfonds? Identiteta ustanove čaka zgodovinsko kontrolo (Malteški red v Beli krajini do 1797/1807).",
     questionEn:
-      "PUA (1825): the institutional owner 'Commenda Tahern unde.' (entry no. 9, no house number, a large block of parcels in Section V; val 48 transcription of p06) — the Hospitaller commandery? The Religionsfonds? The identity of the institution awaits historical control (the Order of Malta in Bela krajina until 1797/1807); 'Tahern unde' is an unresolved expression.",
+      "PUA (1825): the institutional owner (entry no. 9, no house number, a large block of parcels in Section V, p06) — the name stem 'Commenda Tahern-' is confirmed twice (val 48 'Tahern unde.', val 51 pass3 'Tahernwirth.[?]'); the ending remains unresolved (pass1 'Fischerwies' abandoned as a lone reading). The Hospitaller commandery? The Religionsfonds? The identity of the institution awaits historical control (the Order of Malta in Bela krajina until 1797/1807).",
     slugs: ["griblje-vas"],
   },
   {
     id: "P3-E10",
     priority: "P3",
     questionSi:
-      "PUA (1825): plemiška lastvina v k.o. Griblje — val 48 prebere »Baron Apfaltrer« v Section G pri vpisu hiše 23 (Brincz Mathias, p03) in ločen vpis »Husitsch Baron von Gradac« s parcelama III 748/777 (Nro. 20, p11). Ostaja: identiteta obeh nosilcev naslova po referenčni literaturi (Apfaltrerji in gospostvo Gradac; ali sta ista oseba?).",
+      "PUA (1825): plemiška lastvina v k.o. Griblje — 51. val (issue #35) potrjuje: »Baron Apfalterer[?]« znotraj parcelnega seznama vpisa no. 2 na p03 (Section G/O; val 48 pripis »ob hiši 23« popravljen) ter »Kusitsch[?] Baron von Gradatz[?]« z III 748/777 pri Nro. 20 (p11; potrjeno 2× — 48. val + 51. val zoom; pass1/2 na isti številki berejo »Barbara des Grädlers Ehefrau«, morda žena barona v sosednji vrstici). Ostaja: identiteta nosilcev naslovov po referenčni literaturi (Apfaltrerji, gospostvo Gradac; je Barbara njegova žena?) in vez na isto osebo.",
     questionEn:
-      "PUA (1825): noble land in c.m. Griblje — val 48 reads 'Baron Apfaltrer' in Section G at the entry for house 23 (Brincz Mathias, p03) and a separate entry 'Husitsch Baron von Gradac' with parcels III 748/777 (no. 20, p11). Remaining: identification of both title holders via reference literature (the Apfaltrer family and the lordship of Gradac; are they the same person?).",
+      "PUA (1825): noble land in c.m. Griblje — val 51 (issue #35) confirms: 'Baron Apfalterer[?]' within the parcel list of entry no. 2 on p03 (Section G/O; the val 48 attribution 'by house 23' corrected) and 'Kusitsch[?] Baron von Gradatz[?]' with III 748/777 at no. 20 (p11; confirmed twice — val 48 + val 51 zoom; passes 1/2 read 'Barbara des Grädlers Ehefrau' at the same number, possibly the baron's wife in the adjacent row). Remaining: identification of the title holders via reference literature (the Apfaltrer family, the lordship of Gradac; is Barbara his wife?) and whether they are the same person.",
     slugs: ["griblje-vas"],
   },
   {
     id: "P3-E11",
     priority: "P3",
     questionSi:
-      "PUA h. 46 (1825): val 48 prebere »Ribetitsch? Jožefa? Söllner von Grübln« (p20) — val47 branje »K…an Jožef« opuščeno kot nestabilno; status Söllner (kežar) je stabilno prebran, priimek pa še ne. Posebej preveri ob kontrolnem prepisu (Ribič? Ribetitsch?) in poveži s poznejšimi registri hiše 46.",
+      "PUA h. 46 (1825): 51. val (issue #35) s tremi neodvisnimi branjemi rešuje vpis: »Lahodathar / Wittib Lahodatharin« (p20; Nro. 39, parcele I 162, II 1022/1104/1107/1110) — branji »K…an Jožef« (47. val) in »Ribetitsch? Jožefa? Söllner« (48. val) sta opuščeni kot nestabilni; status kežarja (Söllner) ni potrjen, namesto njega vdova (Wittib). Ostaja: identifikacija Lahodatharjeve vdove po matrikah Podzemelj in povezava s poznejšimi registri hiše 46.",
     questionEn:
-      "PUA no. 46 (1825): val 48 reads 'Ribetitsch? Jožefa? Söllner von Grübln' (p20) — the val 47 reading 'K…an Jožef' abandoned as unstable; the status Söllner (cottager) is read stably, the surname is not. To verify at a control transcription (Ribič? Ribetitsch?) and to link with later registers of house 46.",
+      "PUA no. 46 (1825): val 51 (issue #35) resolves the entry with three independent readings: 'Lahodathar / Wittib Lahodatharin' (p20; no. 39, parcels I 162, II 1022/1104/1107/1110) — the readings 'K…an Jožef' (val 47) and 'Ribetitsch? Jožefa? Söllner' (val 48) are abandoned as unstable; the cottager (Söllner) status is not confirmed, replaced by a widow (Wittib). Remaining: identification of the Lahodathar widow via the Podzemelj registers and a link with later registers of house 46.",
     slugs: ["griblje-vas"],
   },
   {
     id: "P3-E12",
     priority: "P3",
     questionSi:
-      "PUA p48/p49 (1825): zaključni seznam »… in der Gemeinde Grüble« (dolgi seznami parcel po sekcijah I–V, brez imen lastnikov — skupna/nerazdeljena zemlja?) ter vpis »F. Kirch« (Nro. 97, parcela V 2700) ostajata brez natančne transkripcije številk; dokument ima podpisa in datum »10. … 1825« — mesec prebrati ob kontrolnem prepisu. Prav tako ponovno prenesti okrnjeni strani p26 in p42 — reševalno branje (nepopoln JPEG, PIL+VLM, 48/49. val) na obeh pokaže naslovna bloka »Alphabetisches Verzeichniß« (Land/Bezirk/Kreis/Gemeinde prazni) brez vidnih vpisov; teles pod rezom ni mogoče potrditi.",
+      "PUA p48/p49 (1825): 51. val (issue #35) je zaključek prebral: Nro. 96 = »Wiese[?]/Hiesige in der Gemeinde Grübln« (dolgi seznami parcel po sekcijah — skupna/nerazdeljena zemlja?), Nro. 97 = »Philipp De Giammo Zucchelli« (2×; branje »F. Kirch« opuščeno), parcela 2700, zaključna formula »Ich Amtl[ich] am 10. Jänner 1825« (MESEC PREBRAN) s tremi podpisi (Mumppen[?], Hollmayr[?], 1 nečitljiv). Ostaja: identiteta Zucchellija (italijanska oblika? Hutmayer[?]?), natančna transkripcija zaključnih seznamov in ponovni prenos okrnjenih strani p26/p42 (aritmetika nakazuje, da telo p42 vsebuje vpisa 85/86); reševalno branje (PIL+VLM, 48/49. val) na obeh pokaže naslovna bloka »Alphabetisches Verzeichniß« brez vidnih vpisov.",
     questionEn:
-      "PUA p48/p49 (1825): the closing list '… in der Gemeinde Grüble' (long section-by-section parcel lists I–V without owner names — common/undivided land?) and the entry 'F. Kirch' (no. 97, parcel V 2700) still lack an exact transcription of the numbers; the document bears two signatures and the date '10. … 1825' — the month to be read at a control transcription. Also re-download the two truncated pages p26 and p42 — salvage reading (truncated JPEG, PIL+VLM, val 48/49) shows title blocks 'Alphabetisches Verzeichniß' (Land/Bezirk/Kreis/Gemeinde blank) with no visible entries; the bodies below the cut cannot be verified.",
+      "PUA p48/p49 (1825): val 51 (issue #35) read the closing: no. 96 = 'Wiese[?]/Hiesige in der Gemeinde Grübln' (long section-by-section parcel lists — common/undivided land?), no. 97 = 'Philipp De Giammo Zucchelli' (2×; the 'F. Kirch' reading abandoned), parcel 2700, the closing formula 'Ich Amtl[ich] am 10. Jänner 1825' (THE MONTH READ) with three signatures (Mumppen[?], Hollmayr[?], 1 illegible). Remaining: the identity of Zucchelli (an Italian form? Hutmayer[?]?), an exact transcription of the closing lists, and the re-download of the truncated pages p26/p42 (the arithmetic suggests the body of p42 holds entries 85/86); salvage reading (PIL+VLM, val 48/49) shows title blocks 'Alphabetisches Verzeichniß' with no visible entries on both.",
     slugs: ["griblje-vas"],
   },
   {
@@ -1911,6 +1911,15 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
       "Toponim »Rim« (KL 1937: dve samotni Grabrijanovi hiši, »bolj v steljnikih e blizu Fukovcev«): sistematično VLM iskanje po vseh 5 grafičnih listih A01–A05 (50. val) = NEGATIVEN zadetek pri bazični ločljivosti — negativni zadetek NI dokaz odsotnosti; korooboracija okolice: toponimi Steln-/Stelz- na 3 listih (A03 vzhod, A04 jug med Bresnikom in ADLESCHITZ, A05 vzhodni rob; vse preliminarno). Ostaja: seja-vezani IIIF rastri v polni ločljivosti (kvadranti A04-jug, A03-vzhod, A05-vzhod) + kontrola PUA indeksa (hiše brez priimka / skupna lastvina); Grabrijan v prepisu PUA 1825 ni — vez 1825→1937 nepovezana.",
     questionEn:
       "Toponym 'Rim' (KL 1937: two solitary Grabrijan houses, 'more in the hay-meadows near Fučkovci'): systematic VLM search across all 5 graphical sheets A01–A05 (val 50) = NEGATIVE result at base resolution — a negative result is NOT proof of absence; area corroboration: Steln-/Stelz- toponyms on 3 sheets (A03 east, A04 south between Bresnik and ADLESCHITZ, A05 east edge; all preliminary). Remaining: session-bound IIIF rasters at full resolution (quadrants A04-south, A03-east, A05-east) + PUA index control (houses without a surname / common property); Grabrijan is absent from the 1825 PUA transcription — the 1825→1937 link remains unconnected.",
+    slugs: ["griblje-vas"],
+  },
+  {
+    id: "P3-E13",
+    priority: "P3",
+    questionSi:
+      "PUA (1825): številčna struktura registra (51. val, issue #35) — knjiga ima naslovne bloke na p01/p26/p42 (notranje ločnice); številčenje teče 1–50 (p03–p25), rep pa 80/81→97 (p40-recovered … p49) kontinuiteto. Nestabilno: p16 bere »70/71« (2×), a kontinuiteta knjige (29 na p15 → 32/33 na p17) zahteva 30/31 (Kurrent 3↔7); vrzeli 53–58 (blok p27–p31: p27-recovered »393/394« očitno napačno, p28 »35/36«, p29-recovered »37/38«, p30 »59/60« — aritmetična hipoteza 51–58 za 6 vpisov, NI uveljavljena); 85/86 verjetno pod rezom p42; konflikt 70/71 (p16 proti p35/36). Ostaja: kontrola strani p16 in p27–p31 v polni ločljivosti in re-download p26/p42.",
+    questionEn:
+      "PUA (1825): the numbering structure of the register (val 51, issue #35) — the book has title blocks at p01/p26/p42 (internal dividers); numbering runs 1–50 (p03–p25) and the tail shows 80/81→97 continuity (p40-recovered … p49). Unstable: p16 reads '70/71' (twice), yet the book's continuity (29 at p15 → 32/33 at p17) demands 30/31 (Kurrent 3↔7); gaps 53–58 (block p27–p31: p27-recovered '393/394' clearly wrong, p28 '35/36', p29-recovered '37/38', p30 '59/60' — an arithmetic hypothesis of 51–58 for 6 entries, NOT applied); 85/86 likely under the p42 cut; the 70/71 conflict (p16 vs p35/36). Remaining: control of pages p16 and p27–p31 at full resolution and the re-download of p26/p42.",
     slugs: ["griblje-vas"],
   },
 ];

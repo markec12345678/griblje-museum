@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"V. F.\",\n  \"rows\": [\n    {\n      \"entry_no\": \"5\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"26\",\n      \"owner_original\": \"Brincz Johann Bauer zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"160\", \"166\", \"170\", \"207\", \"208\", \"212\", \"222\", \"223\", \"229\", \"263\", \"269\", \"300\", \"324\", \"351\", \"358\", \"674\", \"693\", \"697\", \"704\"]},\n        {\"section\": \"II.\", \"numbers\": [\"1003\", \"1019\", \"1020\", \"1030\", \"1043\", \"1052\", \"1062\", \"1079\", \"1818\", \"1927\", \"1936\"]},\n        {\"section\": \"III.\", \"numbers\": [\"4940\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"5010\", \"5122\", \"5219\", \"5235\", \"5301\", \"5369\", \"5385\", \"5520\", \"5673\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"4946\"]},\n        {\"section\": \"V.\", \"numbers\": [\"5972\", \"6070\", \"6270\", \"6579\"]}\n      ],\n      \"annotation_original\": \"B. P. M.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"No changes required; all fields and parcel numbers verified correct.\"\n    },\n    {\n      \"entry_no\": \"6\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"28\",\n      \"owner_original\": \"Brincz Maria Bäuerin zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"171\", \"232\", \"258\", \"260\", \"264\", \"320\", \"333\", \"337\", \"666\", \"682\", \"690\", \"700\", \"702\", \"716\", \"719\", \"720\"]},\n        {\"section\": \"II.\", \"numbers\": [\"1004\", \"1027\", \"1038\", \"1051\", \"1082\", \"1118\", \"1137\", \"1167\", \"1188\", \"1830\", \"1834\", \"1883\"]},\n        {\"section\": \"II/III\", \"numbers\": [\"1861\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"5009\", \"5044\", \"5116\", \"5207\", \"5248\", \"5316\", \"5349\", \"5502\"]}\n      ],\n      \"annotation_original\": \"B. S. M.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Reordered parcels to match the visual sequence of sections in the document (I, II, II/III, IV).\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 5 and 6. The handwriting is clear Kurrent script. Entry 5 lists parcels for Johann Brincz, and Entry 6 for Maria Brincz. All numbers and names match the draft accurately.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276846,
+  "id": "20260925030713b3edf39ade754227",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925030713b3edf39ade754227",
+  "usage": {
+    "completion_tokens": 777,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3141,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3918
+  }
+}

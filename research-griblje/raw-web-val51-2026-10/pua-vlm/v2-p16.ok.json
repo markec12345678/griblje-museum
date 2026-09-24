@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"70\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I, II, III/IV, V\",\n      \"house_no\": \"3\",\n      \"owner_original\": \"Christan / Wörfl / Einwohner hiesig\",\n      \"status_original\": \"Einwohner hiesig\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"829\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"283\", \"284\", \"581\", \"588\", \"594\", \"695\", \"975\", \"997\", \"999\", \"1002\", \"1013\", \"1020\", \"1031\", \"1042\", \"1052\", \"1064\", \"1075\", \"1086\", \"1097\", \"1108\", \"1119\", \"1130\", \"1141\", \"1152\", \"1163\", \"1174\", \"1185\", \"1196\", \"1207\", \"1218\", \"1229\", \"1240\", \"1251\", \"1262\"]\n        },\n        {\n          \"section\": \"III/IV\",\n          \"numbers\": [\"1492\", \"1816\"]\n        },\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"2241\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. 22.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and sections against image; draft was accurate.\"\n    },\n    {\n      \"entry_no\": \"71\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"II, V\",\n      \"house_no\": \"10\",\n      \"owner_original\": \"Liese / Wörflin / Einwohnerin hiesig\",\n      \"status_original\": \"Einwohnerin hiesig\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"282\", \"280\", \"290\", \"301\", \"361\", \"381\", \"564\", \"685\", \"1001\", \"1051\", \"1074\", \"1709\", \"1710\", \"1769\"]\n        },\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"2111\", \"1929\", \"2016\", \"2035\", \"2042\", \"2052\", \"2091\", \"2102\", \"2167\", \"2207\", \"2216\", \"2236\", \"2278\", \"2291\", \"2316\", \"2324\", \"2363\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. 222.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and sections against image; draft was accurate.\"\n    }\n  ],\n  \"page_notes\": \"Page contains entries 70 and 71. Entry 70 has parcels in Sections I, II, III/IV, and V. Entry 71 has parcels in Sections II and V. Handwriting is clear Kurrent script.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277072,
+  "id": "202609250311013a23378a083840db",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250311013a23378a083840db",
+  "usage": {
+    "completion_tokens": 740,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2879,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 3619
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Alphabetisches Verzeichniß der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen, Gemeinde Grüble, 1825. Contains entries 28 and 29.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\", \"entries\": [{\"entry_no\": \"28\", \"section\": \"\", \"house_no\": \"21\", \"owner_original\": \"Sankowitsch Joseph / Bauer zu Grübln\", \"status_original\": \"Bauer\", \"residence_original\": \"Grübln\", \"parcels\": [], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"\", \"section\": \"V\", \"house_no\": \"\", \"owner_original\": \"1234, 1235\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"V\", \"numbers\": [\"1234\", \"1235\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"29\", \"section\": \"\", \"house_no\": \"3\", \"owner_original\": \"Sankowitsch Johann Rieder / Söllner zu Schönboden\", \"status_original\": \"Söllner\", \"residence_original\": \"Schönboden\", \"parcels\": [], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [\"Rieder[?]\"]}, {\"entry_no\": \"\", \"section\": \"IVV\", \"house_no\": \"\", \"owner_original\": \"2090, 2059, 2060\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"IVV\", \"numbers\": [\"2090\", \"2059\", \"2060\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"Entry 28 and 29 are split across two rows each: the first row contains owner details (Name, Stand, Wohnort), while the second row lists the parcel numbers under the 'Bezeichnung der Section' column. The surname in entry 28/29 is transcribed as 'Sankowitsch' based on Kurrent letter shapes, though it could potentially be a variant like 'Sandowitsch'. Entry 29's middle name 'Rieder' is slightly uncertain due to cursive ligature.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274433,
+  "id": "2026092502270659bc8f2ac0764484",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502270659bc8f2ac0764484",
+  "usage": {
+    "completion_tokens": 540,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 540
+    },
+    "total_tokens": 1948
+  }
+}

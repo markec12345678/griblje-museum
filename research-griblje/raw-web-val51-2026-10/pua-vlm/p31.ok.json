@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Alphabetical register of landowners and their parcels for Gemeinde Grüble, showing entries 61-62 (Penzig family)\",\n  \"title_block\": \"Land / Bezirk\nKreis / Gemeinde\n\nAlphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\n\nFortlaufende Nummer | Bezeichnung der Section | Haus Nr. | Des Eigenthümers. Name Stand und Wohnort. | Anmerkung\",\n  \"entries\": [\n    {\n      \"entry_no\": \"61\",\n      \"section\": \"\",\n      \"house_no\": \"60\",\n      \"owner_original\": \"Penzig Stuffe Leuthold zu Grüble / 20, 190, 291, 392, 493, 594, 695, 796, 897, 998, 1099, 1200, 1301, 1402, 1503, 1604, 1705, 1806, 1907, 2008, 2109, 2210\",\n      \"status_original\": \"Stufe[?]\",\n      \"residence_original\": \"Grüble\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"20\", \"190\", \"291\", \"392\", \"493\", \"594\", \"695\", \"796\", \"897\", \"998\", \"1099\"]},\n        {\"section\": \"II\", \"numbers\": [\"1200\", \"1301\", \"1402\", \"1503\", \"1604\", \"1705\", \"1806\", \"1907\", \"2008\", \"2109\", \"2210\"]},\n        {\"section\": \"III\", \"numbers\": [\"Meer. 2222\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2201\", \"2304\", \"2405\", \"2506\", \"2607\", \"2708\", \"2809\", \"2910\", \"3011\", \"3212\", \"3313\", \"3414\", \"3515\", \"3616\", \"3717\"]},\n        {\"section\": \"V\", \"numbers\": [\"2367\", \"2468\", \"2569\", \"2670\", \"2771\", \"2872\", \"2973\", \"3074\"]}\n      ],\n      \"annotation_original\": \"B.P. 73.\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"Stufe\", \"Meer\"]\n    },\n    {\n      \"entry_no\": \"62\",\n      \"section\": \"\",\n      \"house_no\": \"62\",\n      \"owner_original\": \"Penzig Gottl. Leuthold zu Grüble\",\n      \"status_original\": \"\",\n      \"residence_original\": \"Grüble\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"432\", \"229\"]},\n        {\"section\": \"II\", \"numbers\": [\"107\"]},\n        {\"section\": \"IV\", \"numbers\": [\"247\"]},\n        {\"section\": \"V\", \"numbers\": [\"2390\", \"2391\", \"2592\", \"2793\", \"2894\", \"2995\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 61 has a marginal note 'B.P. 73.' in the annotation column. Section III for entry 61 contains text that appears to be 'Meer. 2222' or similar. Some parcel numbers in entry 61 Section IV are densely written and may have slight uncertainty in individual digits. The surname is clearly Penzig with given names Stuffe (entry 61) and Gottl./Gottlieb (entry 62), both with patronymic Leuthold.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274688,
+  "id": "202609250231078f8a80adae794634",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250231078f8a80adae794634",
+  "usage": {
+    "completion_tokens": 861,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "total_tokens": 2269
+  }
+}

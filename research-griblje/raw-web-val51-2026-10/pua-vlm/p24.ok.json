@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page VI of the alphabetical register of landowners for the municipality of Grüble, showing entries 147 and 148 for the Liechtenstein family.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Gründ Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"147\",\n      \"section\": \"I.\",\n      \"house_no\": \"7\",\n      \"owner_original\": \"Liechtenst. Mandl / Beurlaubtsgeselle\",\n      \"status_original\": \"Beurlaubtsgeselle\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"670\", \"676\", \"678\", \"679\", \"680\"]},\n        {\"section\": \"II.\", \"numbers\": [\"872\", \"928\", \"942\", \"952\", \"957\", \"964\", \"1066\", \"1083\", \"1090\", \"1091\", \"1092\", \"1070\", \"1076\", \"1058\", \"1028\", \"1045\", \"1034\", \"992\", \"1001\", \"1017\", \"1016\", \"1014\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2239\", \"2249\", \"2251\", \"2252\", \"2256\", \"2259\"]}\n      ],\n      \"annotation_original\": \"b.P. 17.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"148\",\n      \"section\": \"II.\",\n      \"house_no\": \"12\",\n      \"owner_original\": \"Liechtensth. Murgi / Beurlaubtsgeselle\",\n      \"status_original\": \"Beurlaubtsgeselle\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"II.\", \"numbers\": [\"882\", \"900\", \"908\", \"910\", \"915\", \"926\", \"929\", \"930\", \"1070\", \"1080\"]},\n        {\"section\": \"II.N.\", \"numbers\": [\"1942\", \"1954\", \"1967\", \"2015\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2039\", \"2047\", \"2050\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 147 contains a marginal note 'b.P. 17.' (likely referring to a page or protocol). The handwriting is clear Kurrent script with standard abbreviations (Liechtenst., Liechtensth.).\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274580,
+  "id": "20260925022923073eddfe0c59449d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022923073eddfe0c59449d",
+  "usage": {
+    "completion_tokens": 602,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2010
+  }
+}

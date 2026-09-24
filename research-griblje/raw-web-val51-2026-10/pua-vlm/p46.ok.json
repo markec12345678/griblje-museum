@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page 5 of the 1825 Franciscan Cadaster for the municipality of Grüble, containing two main entries (93 and 94) with their respective parcel sections.\", \"title_block\": \"V.T.\\nLand: [blank]\\nKreis: [blank]\\nBezirk: [blank]\\nGemeinde: [blank]\\nAlphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"93\", \"section\": \"\", \"house_no\": \"6\", \"owner_original\": \"Wandsteiner Mihl. baur. zu Grübln / eib. 4th. 466.\", \"status_original\": \"baur.\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"IV.\", \"numbers\": [\"eib.\", \"4th.\", \"466.\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [\"Mihl[?]\", \"Wandsteiner[?]\"]}, {\"entry_no\": \"94\", \"section\": \"\", \"house_no\": \"7\", \"owner_original\": \"Wandsteiner Balth. baur. zu Grübln / 2tt. 202.\", \"status_original\": \"baur.\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"V.\", \"numbers\": [\"2tt.\", \"202.\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"The handwriting is in Kurrent script. Entry 93's first name looks like 'Mihl' (possibly Michael). Parcel numbers use archaic abbreviations like 'eib.' and '2tt.'. The table columns for 'Bezeichnung der Section' are filled in the rows below the owner names, indicating the section for the parcels listed.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275340,
+  "id": "20260925024110f6c18c0a080949f2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925024110f6c18c0a080949f2",
+  "usage": {
+    "completion_tokens": 423,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1831
+  }
+}

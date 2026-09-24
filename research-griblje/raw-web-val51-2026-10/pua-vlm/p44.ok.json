@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page from the 1825 Alphabetical Register of Landowners for Gemeinde Grüble, showing entries 89 and 90 with parcel details by section.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"89\", \"section\": \"\", \"house_no\": \"51\", \"owner_original\": \"Urich Pattle / Bauer zu Grübln\", \"status_original\": \"Bauer\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"376\", \"482\", \"534\", \"625\", \"716\", \"814\", \"915\", \"978\", \"997\", \"1004\", \"1023\"]}, {\"section\": \"II\", \"numbers\": [\"265\", \"410\", \"618\", \"673\", \"727\", \"950\", \"1008\", \"1038\", \"1070\", \"1088\", \"1092\", \"1101\", \"1171\", \"1197\", \"1202\", \"1250\", \"1260\"]}, {\"section\": \"III V\", \"numbers\": [\"1493\", \"1496\"]}, {\"section\": \"IV\", \"numbers\": [\"1500\", \"1501\", \"1530\", \"1551\", \"1600\", \"1626\", \"1636\", \"1656\", \"1691\", \"1710\", \"1720\", \"1739\", \"1759\", \"1767\", \"1781\", \"1792\"]}, {\"section\": \"V\", \"numbers\": [\"1799\", \"1801\", \"1831\", \"1863\", \"1889\", \"1929\", \"1937\", \"1953\", \"1996\", \"2010\"]}], \"annotation_original\": \"D. P. 94, 95,\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"90\", \"section\": \"\", \"house_no\": \"68\", \"owner_original\": \"Urich Mattle / Söllner zu Grübln\", \"status_original\": \"Söllner\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"56\", \"200a\", \"401\", \"492\", \"629\", \"646\", \"971\", \"986\", \"999\", \"1016\"]}, {\"section\": \"II\", \"numbers\": [\"189\", \"299\", \"469\", \"651\", \"877\", \"1043\", \"1072\", \"1182\", \"1203\", \"1249/50\"]}, {\"section\": \"IV\", \"numbers\": [\"1537\", \"1558\", \"1645\", \"1661\", \"1704\", \"1776\", \"1787\", \"1799\", \"1857\", \"1894\", \"1962\", \"1990\", \"2052\"]}], \"annotation_original\": \"D. T. sh.\\n\\nUebersprungene Parzellen Nummer\\n\\nI: 20, 161, 310, 472, 483, 682, 692, 696, 720, 882, 89?\\nII: 637\\n\\nIV: 6\\nWaldtheilung [?] des Wiedners of\\nIX:\", \"confidence\": \"medium\", \"uncertain_words\": [\"Waldtheilung\"]}], \"page_notes\": \"Entry 90 contains a list of 'skipped parcel numbers' (Uebersprungene Parzellen Nummer) in the annotation column. The word 'Waldtheilung' is slightly uncertain due to cursive ligature. Section III/V is combined for entry 89.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275243,
+  "id": "202609250240202e2f200beb864198",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250240202e2f200beb864198",
+  "usage": {
+    "completion_tokens": 835,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2243
+  }
+}

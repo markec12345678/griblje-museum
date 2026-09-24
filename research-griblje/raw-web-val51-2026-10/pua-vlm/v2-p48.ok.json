@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"VT.\", \"rows\": [{\"entry_no\": \"96\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"6\", \"owner_original\": \"Hiesige Gemeinde / Grübln\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"460\", \"461\"]}, {\"section\": \"II\", \"numbers\": [\"462\", \"463\", \"464\", \"465\", \"466\", \"467\", \"468\", \"469\"]}, {\"section\": \"V\", \"numbers\": [\"470\", \"471\", \"472\", \"473\", \"474\", \"475\", \"476\", \"477\", \"478\", \"479\", \"480\"]}, {\"section\": \"D.V\", \"numbers\": [\"481\"]}, {\"section\": \"IV\", \"numbers\": [\"482\", \"483\", \"484\", \"485\", \"486\", \"487\", \"488\", \"489\", \"490\", \"491\", \"492\", \"493\", \"494\", \"495\", \"496\", \"497\", \"498\", \"499\", \"500\", \"501\", \"502\", \"503\", \"504\", \"505\", \"506\"]}, {\"section\": \"H.IV\", \"numbers\": [\"507\", \"508\", \"509\", \"510\", \"511\", \"512\", \"513\"]}, {\"section\": \"III\", \"numbers\": [\"514\", \"515\", \"516\", \"517\", \"518\", \"519\", \"520\", \"521\", \"522\", \"523\", \"524\", \"525\"]}, {\"section\": \"II\", \"numbers\": [\"526\", \"527\", \"528\", \"529\", \"530\", \"531\", \"532\", \"533\", \"534\", \"535\", \"536\", \"537\", \"538\", \"539\", \"540\", \"541\", \"542\", \"543\", \"544\", \"545\", \"546\", \"547\", \"548\", \"549\", \"550\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Confirmed all fields and parcel numbers against the image. The draft was accurate.\"}], \"page_notes\": \"The page contains a single entry (No. 96) for the local municipality 'Hiesige Gemeinde Grübln' with a large number of parcels listed across multiple sections.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278003,
+  "id": "20260925032632cecc22b4c2824415",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925032632cecc22b4c2824415",
+  "usage": {
+    "completion_tokens": 592,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3268,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3860
+  }
+}

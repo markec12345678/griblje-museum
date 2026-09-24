@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Alphabetical register of landowners and their parcels for Gemeinde Grüble, 1825. Contains entries 24 and 25 (Jakobitschek family).\",\n  \"title_block\": \"Alphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"24\",\n      \"section\": \"\",\n      \"house_no\": \"9\",\n      \"owner_original\": \"Jakoffitschek / Hans Bauer hiesig\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\"section\": \"II\", \"numbers\": [\"1070\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"25\",\n      \"section\": \"\",\n      \"house_no\": \"10\",\n      \"owner_original\": \"Jakoffitschek / Maria Bauerin hiesig\",\n      \"status_original\": \"Bauerin\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"823\", \"824\", \"826\", \"783\"]},\n        {\"section\": \"II\", \"numbers\": [\"978\", \"979\", \"976\", \"977\", \"975\", \"964\", \"963\", \"1023\", \"1000\", \"1001\", \"1016\", \"1042\", \"1032\", \"1052\", \"1065\", \"1082\", \"1083\", \"1097\", \"1097a\", \"1102\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2292\", \"2301\", \"2298\", \"2380\"]},\n        {\"section\": \"V\", \"numbers\": [\"2050\"]}\n      ],\n      \"annotation_original\": \"D. R. q.\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"1097a[?]\", \"D. R. q.[?]\"]\n    }\n  ],\n  \"page_notes\": \"Entry 25 contains a very long list of parcel numbers in Section II, some of which are densely written and may require verification against the original cadastre maps. The annotation 'D. R. q.' in entry 25 is an abbreviation (likely 'Der Rest qualifiziert' or similar legal notation). The name is spelled 'Jakoffitschek' with a double 'f' and 'ck'.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274409,
+  "id": "202609250226360fba129e54234002",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250226360fba129e54234002",
+  "usage": {
+    "completion_tokens": 564,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1972
+  }
+}

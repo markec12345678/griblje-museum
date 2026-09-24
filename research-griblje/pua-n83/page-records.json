@@ -1,0 +1,452 @@
+[
+ {
+  "page": 1,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 0,
+  "pass2_verification": false,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 2,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 0,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 3,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 4,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 5,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 6,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 3,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 7,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 8,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 9,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 10,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 11,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 4,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 12,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 13,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 14,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 15,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 4,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 16,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 17,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 18,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 19,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 20,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 21,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 22,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 3,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 23,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 24,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 25,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 26,
+  "version": "original-truncated + salvage (PIL re-encode)",
+  "status": "TRUNCATED / UNVERIFIED",
+  "readable_body": false,
+  "salvage_finding": "vidni del = naslovni blok 'Alphabetisches Verzeichniß' brez vidnih vpisov; telo pod rezom ni mogoče potrditi (val 48/49 reševalno branje + val 51 salvage branje)",
+  "action": "ponovni prenos ob delujočem arhiv.si (P3-E12); p42 telo verjetno vsebuje vpisa 85/86 (aritmetika številčenja)",
+  "pass1_entries": 0,
+  "pass2_verification": false,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 27,
+  "version": "recovered (pXX-recovered, JFIF 1.01 re-render)",
+  "status": "READ (recovered verzija)",
+  "recovered_pass1_entries": 2,
+  "pass1_entries": 0,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 28,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 29,
+  "version": "recovered (pXX-recovered, JFIF 1.01 re-render)",
+  "status": "READ (recovered verzija)",
+  "recovered_pass1_entries": 2,
+  "pass1_entries": 0,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 30,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 31,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 32,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 33,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 34,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 35,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 36,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 3,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 37,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 38,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 39,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 40,
+  "version": "recovered (pXX-recovered, JFIF 1.01 re-render)",
+  "status": "READ (recovered verzija)",
+  "recovered_pass1_entries": 2,
+  "pass1_entries": 0,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 41,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 3,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 42,
+  "version": "original-truncated + salvage (PIL re-encode)",
+  "status": "TRUNCATED / UNVERIFIED",
+  "readable_body": false,
+  "salvage_finding": "vidni del = naslovni blok 'Alphabetisches Verzeichniß' brez vidnih vpisov; telo pod rezom ni mogoče potrditi (val 48/49 reševalno branje + val 51 salvage branje)",
+  "action": "ponovni prenos ob delujočem arhiv.si (P3-E12); p42 telo verjetno vsebuje vpisa 85/86 (aritmetika številčenja)",
+  "pass1_entries": 0,
+  "pass2_verification": false,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 43,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 44,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 45,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 46,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": false,
+  "readable": true
+ },
+ {
+  "page": 47,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 2,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 48,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 1,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ },
+ {
+  "page": 49,
+  "version": "original",
+  "status": "READ",
+  "pass1_entries": 1,
+  "pass2_verification": true,
+  "pass3_targeted": true,
+  "readable": true
+ }
+]

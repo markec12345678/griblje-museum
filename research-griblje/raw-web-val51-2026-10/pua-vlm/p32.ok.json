@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Page from the alphabetical index of landowners for Gemeinde Grüble (1825), showing entries 63 and 64 with their respective parcels listed by section.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"63\",\n      \"section\": \"\",\n      \"house_no\": \"33\",\n      \"owner_original\": \"Pfarrer Johann Leopold Kaulßgütlle\",\n      \"status_original\": \"Pfarrer\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"62\", \"26\", \"79\", \"82\", \"83\", \"89\", \"261/322\", \"326\", \"391\", \"399\", \"416\"]},\n        {\"section\": \"II\", \"numbers\": [\"780\", \"792\", \"795\", \"797\", \"822\", \"836\", \"857\", \"958\", \"962\", \"1002\", \"1026\", \"1050\", \"1057\", \"1094/5\", \"1297\", \"1363\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"1416\"]},\n        {\"section\": \"III\", \"numbers\": [\"1850\", \"1923\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2095\", \"2164\", \"2245\", \"2249\", \"2391\", \"2419\", \"2478\", \"2518\", \"2592\", \"2695\", \"2891\", \"2918\", \"2920\", \"3040\"]},\n        {\"section\": \"V/3\", \"numbers\": [\"3159\", \"3444\", \"3513\", \"3578\"]}\n      ],\n      \"annotation_original\": \"d. P. G. k.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"64\",\n      \"section\": \"\",\n      \"house_no\": \"\",\n      \"owner_original\": \"G. Pfarrer Johann Leopold Kaulßgütlle\",\n      \"status_original\": \"Pfarrer\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"380\", \"492\", \"504\", \"536\", \"605\", \"606\", \"662\", \"676\", \"693\", \"695\", \"953\", \"958\"]},\n        {\"section\": \"II\", \"numbers\": [\"1626\", \"1639\"]},\n        {\"section\": \"III\", \"numbers\": [\"1874\", \"1909\", \"1935\", \"1947\", \"1958\", \"1999\"]},\n        {\"section\": \"III/V\", \"numbers\": [\"983\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2209\", \"2281\"]},\n        {\"section\": \"V\", \"numbers\": [\"3010\", \"3079\"]}\n      ],\n      \"annotation_original\": \"D. P. M.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 63 has a 'G.' prefix before 'Pfarrer' in the owner column, likely indicating a specific parish or administrative distinction. Entry 64 is explicitly marked with a 'G.' at the start of the name cell, possibly indicating a different legal status or ownership share (e.g., 'Grund' or 'Gült'). The handwriting is clear Kurrent script. Section designations include combined sections like 'III/IV', 'V/3', and 'III/V'.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274717,
+  "id": "2026092502313204997986d4b34006",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502313204997986d4b34006",
+  "usage": {
+    "completion_tokens": 837,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2245
+  }
+}

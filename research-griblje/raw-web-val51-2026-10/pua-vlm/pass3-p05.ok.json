@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V.T.\",\n  \"focus_findings\": [\n    {\n      \"row\": \"5\",\n      \"entry_no\": \"5\",\n      \"section\": \"\",\n      \"house_no\": \"26\",\n      \"owner_original\": \"Brincz Johann\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"hier/Grüblb[?]\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"Grüblb\"]\n    },\n    {\n      \"row\": \"6\",\n      \"entry_no\": \"6\",\n      \"section\": \"\",\n      \"house_no\": \"28\",\n      \"owner_original\": \"Brincz Michl\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"hier/Grüblb[?]\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"Grüblb\"]\n    }\n  ],\n  \"extra_observations\": \"Neither row 5 nor row 6 contains the term 'Bauerin'; both list male owners (Johann and Michl) with the status 'Bauer'. The handwriting for the residence appears to be an abbreviation for the Gemeinde name, possibly 'h. G.' or 'hier Grüble'.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278372,
+  "id": "20260925033240c28b532f013f44e5",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033240c28b532f013f44e5",
+  "usage": {
+    "completion_tokens": 298,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3748,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4046
+  }
+}

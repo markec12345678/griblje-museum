@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"87-88\", \"rows\": [{\"entry_no\": \"87\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"72\", \"owner_original\": \"Strauß Khonrad bauer zu Grübln\", \"status_original\": \"bauer\", \"residence_original\": \"Grübln\", \"parcels\": [], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"No changes needed.\"}, {\"entry_no\": \"88\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"22\", \"owner_original\": \"Uebl Georg Söllner zu Grübln\", \"status_original\": \"Söllner\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"55\", \"207\", \"210\", \"274\", \"516\", \"553\", \"632\", \"659\", \"683\"]}, {\"section\": \"II.\", \"numbers\": [\"758\", \"1173\"]}, {\"section\": \"III.\", \"numbers\": [\"609\", \"812\", \"824\", \"978\", \"1283\", \"1314\", \"1321/32\", \"1433\", \"1534\", \"1553\", \"1734\", \"1770\", \"1779\", \"1790\", \"1797\", \"1815\"]}, {\"section\": \"IV.\", \"numbers\": [\"2082\", \"2164\", \"2281\", \"2372\", \"2373\", \"2429\", \"2453\", \"2551\"]}], \"annotation_original\": \"D. I. 56, 57, 58.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Verified all parcel numbers and sections against the image. All match the draft.\"}], \"page_notes\": \"The page contains entries 87 and 88. Entry 87 has no parcels listed on this page. Entry 88 lists parcels in Sections I, II, III, and IV. The handwriting is clear Kurrent script.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277367,
+  "id": "20260925031601ed72a514ca5a4cb7",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031601ed72a514ca5a4cb7",
+  "usage": {
+    "completion_tokens": 467,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2149,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2616
+  }
+}

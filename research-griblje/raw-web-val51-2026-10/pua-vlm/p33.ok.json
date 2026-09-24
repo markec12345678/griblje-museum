@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page V.T. of the 1825 Franciscan Cadastre for Gemeinde Grüble, showing entries for 'Paderitz' (no. 65) and 'Pacharotte' (no. 66) with their respective land parcels.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\\nLand: [blank] | Dezirk: [blank]\\nKreis: [blank] | Oemende: [blank]\", \"entries\": [{\"entry_no\": \"65\", \"section\": \"IV\", \"house_no\": \"\", \"owner_original\": \"Paderiz Franz / Kirchendienst gewesener / Häusler\", \"status_original\": \"Häusler\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"IV\", \"numbers\": [\"284\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"66\", \"section\": \"V\", \"house_no\": \"6\", \"owner_original\": \"Pacharotte Michael bauer und der Gemeine / Häusling\", \"status_original\": \"bauer\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"V\", \"numbers\": [\"299\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [\"Pacharotte\"]}], \"page_notes\": \"Entry 65 has a crossed-out or faint line in the Section V row that appears to read '284' (or similar) but is largely illegible and treated as empty per instructions. Entry 66 surname 'Pacharotte' is a best-effort transcription of a difficult Kurrent word.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274734,
+  "id": "2026092502320154379cb490064e48",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502320154379cb490064e48",
+  "usage": {
+    "completion_tokens": 381,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1789
+  }
+}

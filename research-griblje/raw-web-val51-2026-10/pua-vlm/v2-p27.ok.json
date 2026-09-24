@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"93\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"A\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Noah Michael Häußler\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"56\", \"61\", \"399\", \"581\", \"579\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"398\", \"329\", \"382\", \"925\", \"940\", \"991\", \"961\", \"909\", \"928\", \"1082\", \"1098\", \"1077\", \"1091\", \"1025\", \"1030\", \"1055\", \"1044\", \"1037\", \"1066\", \"1019\", \"1076\", \"1016\", \"1024\", \"1079\", \"1002\", \"1072\", \"1079\", \"1077\", \"1075\", \"753\", \"859\", \"857\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"279\", \"299\", \"287\", \"229\", \"209\", \"205\", \"206\", \"208\"]\n        },\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\"249\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Added missing row from image\"\n    },\n    {\n      \"entry_no\": \"94\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"11\",\n      \"owner_original\": \"Pater Franz Xaver Häußler\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"62\", \"763\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"978\", \"861\", \"956\", \"916\", \"920\", \"919\", \"913\", \"921\", \"923\", \"1020\", \"984\", \"1980\", \"1063\", \"1078\", \"1079\", \"776\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Added missing row from image\"\n    }\n  ],\n  \"page_notes\": \"Draft was empty. Transcribed two visible entries (93 and 94) from the page. Entry 93 spans multiple section rows. Entry 94 is partially visible at the bottom.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277252,
+  "id": "202609250314068023fd0188484fbc",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250314068023fd0188484fbc",
+  "usage": {
+    "completion_tokens": 615,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1298,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1913
+  }
+}

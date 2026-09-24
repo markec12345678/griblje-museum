@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Page from the 1825 Franciscan Cadastre for Gemeinde Grüble, showing entries 14 and 15 (Friedrich Wurzer and Johann Wurzer) with their land parcels distributed across sections I, II, III, and IV.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten grund Parzellen.\n\nLand: [blank]\nBezirk: V.T.\nKreis: [blank]\nGemeinde: [blank]\",\n  \"entries\": [\n    {\n      \"entry_no\": \"14\",\n      \"section\": \"\",\n      \"house_no\": \"W\",\n      \"owner_original\": \"Friedrich Wurzer, bauer hiesig\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"31\", \"168\", \"97\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"988\", \"997\", \"998\", \"999\", \"996\", \"993\", \"992\", \"1001\", \"1003\", \"1005\", \"1000\", \"1001\", \"1041\", \"1050\", \"1036\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1028\", \"1027\", \"1026\", \"1029\", \"1024\", \"1023\", \"1018\", \"1019\", \"c.26\", \"c.66\", \"c.69\"]\n        }\n      ],\n      \"annotation_original\": \"L. P. b.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"15\",\n      \"section\": \"\",\n      \"house_no\": \"24\",\n      \"owner_original\": \"Johann Wurzer, bauernd hiesig\",\n      \"status_original\": \"bauernd\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"21\", \"22\", \"c.23\", \"c.25\", \"c.27\", \"c.28\", \"29\", \"30\", \"32\", \"33\", \"34\", \"35\", \"36\", \"169\", \"170\", \"171\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"1002\", \"1004\", \"1006\", \"1007\", \"1008\", \"1009\", \"1010\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"1016\", \"1015\", \"1014\", \"1013\", \"1012\", \"1011\", \"1017\", \"1020\", \"1021\", \"1022\", \"994\", \"995\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"1038\", \"1039\", \"1040\", \"1037\", \"1031\", \"1032\", \"1033\", \"1034\", \"1035\"]\n        }\n      ],\n      \"annotation_original\": \"P. T. n. 70.\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\n        \"bauernd[?]\"\n      ]\n    }\n  ],\n  \"page_notes\": \"Entry 14: The status appears to be 'bauer' or possibly 'bauers' with a final flourish; 'hiesig' is clearly legible. Entry 15: The status is transcribed as 'bauernd' (possibly an abbreviation for Bauerndienst or a variant spelling), though it could be read as 'bauer' with a flourish. Section II appears twice for entry 15, which may indicate a sub-division or a continuation of the section list. Parcel numbers prefixed with 'c.' likely denote specific parcel types (e.g., 'censuales' or garden plots). Handwriting is generally clear Kurrent script.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274334,
+  "id": "20260925022502784bb87b36af4ed1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022502784bb87b36af4ed1",
+  "usage": {
+    "completion_tokens": 878,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2286
+  }
+}

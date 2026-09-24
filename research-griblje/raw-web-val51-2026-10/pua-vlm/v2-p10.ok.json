@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"16\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"30\",\n      \"owner_original\": \"Tillak Philipp bürgerl. zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"2\", \"206\", \"294\", \"497\", \"578\", \"626\", \"724\", \"828\", \"1011\", \"1082\", \"1169\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"1200\", \"1304\", \"1503\", \"2023\", \"2032\", \"2091\", \"2303\"]\n        }\n      ],\n      \"annotation_original\": \"P. V. g. 20.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected parcel sections: first group is Section I., second group is Section IV.\"\n    },\n    {\n      \"entry_no\": \"17\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"61\",\n      \"owner_original\": \"Tillak Nikla bürgerl. zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"9\", \"32\", \"70\", \"76\", \"98\", \"200\", \"220\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"742\", \"759\", \"779\", \"816\", \"1257\", \"1238\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"819\", \"818\", \"874\", \"873\", \"998\", \"952\", \"1096\", \"1297\", \"1271\", \"1077\", \"1209\", \"1381\", \"1456\", \"1595\", \"1649\", \"1672\", \"1750\", \"1779\", \"2080\", \"1867\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"getr. 1063\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"2079\", \"2230\", \"2204\", \"2256\", \"2287\", \"2278\", \"2367\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. ag. 334\\nGemeinschaftliche Waldweide\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected parcel sections and sequence: I. (a.), III. (N.), II. (blank), III. (getr.), IV. (blank). Removed duplicate 778 from draft. Reordered 1867 to end of II. group per image.\"\n    }\n  ],\n  \"page_notes\": \"The draft contained incorrect or missing section assignments for the parcels. The image clearly shows Roman numerals (I, III, II, III, IV) in the 'Bezeichnung der Section' column corresponding to groups of parcel numbers. Entry 17 had a duplicate number 778 in the draft which does not appear in the image (the sequence jumps from 816 to 793).\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276995,
+  "id": "202609250309430d134f65d7114ef2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250309430d134f65d7114ef2",
+  "usage": {
+    "completion_tokens": 759,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2899,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3658
+  }
+}

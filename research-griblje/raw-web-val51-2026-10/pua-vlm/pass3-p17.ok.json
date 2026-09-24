@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V.T.\",\n  \"focus_findings\": [\n    {\n      \"row\": \"1\",\n      \"entry_no\": \"32\",\n      \"section\": \"\",\n      \"house_no\": \"16\",\n      \"owner_original\": \"Michael Leidner\",\n      \"status_original\": \"bürger[?]\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"179\", \"181\", \"529\", \"1006/1\", \"1056\", \"1060\", \"1828\", \"1938\", \"1968\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"1797\", \"1798\", \"1799\", \"1800\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"2078\", \"2039\", \"2072\", \"2075\", \"2086\", \"2087\", \"2144\", \"2152\", \"2211\", \"2228\", \"2236\", \"2258\", \"2263\", \"2277\", \"2287\", \"2350\", \"2362\", \"2364\", \"2365\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"2\",\n      \"entry_no\": \"33\",\n      \"section\": \"\",\n      \"house_no\": \"17\",\n      \"owner_original\": \"Lorenz Leidner\",\n      \"status_original\": \"bürger[?]\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"180\", \"180\", \"184\", \"1023\", \"1029\", \"1035\", \"1039\", \"1041\", \"1051\", \"1052\", \"1549\", \"1561\", \"1567\", \"1651\", \"1682\", \"1856\", \"1926\", \"1928\", \"4799\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"2051\", \"2074\", \"2088\", \"2180\", \"2203\", \"2213\", \"2227\", \"2238\", \"2264\", \"2280\", \"2316\", \"2320\", \"2354\", \"2363\", \"2364\", \"2571\", \"2572\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"The lfd. Nummern are clearly '32' and '33'. The Haus No. are '16' and '17'. The handwriting for the names is 'Michael Leidner' (entry 32) and 'Lorenz Leidner' (entry 33). Both are listed as 'bürger zu Grübln'. Parcel numbers are transcribed exactly as they appear in Kurrent script.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278748,
+  "id": "20260925033852865b01ce018c4f96",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033852865b01ce018c4f96",
+  "usage": {
+    "completion_tokens": 668,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3994,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4662
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"VT\",\n  \"focus_findings\": [\n    {\n      \"row\": \"97\",\n      \"entry_no\": \"97\",\n      \"section\": \"\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Philipp De Giammo Zucchelli\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"2700\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"Closing formula: 'Ich Amtl[ich] am 10. Jänner 1825' (or 'Jenner'). Signatures: 'Mumppen' (or similar, possibly 'Mumpfer'), 'Hollmayr', and a third illegible signature. The owner name is clearly 'Philipp De Giammo Zucchelli'. The parcel is listed as '2700' under section 'I' (Roman numeral one).\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278553,
+  "id": "2026092503354504e4d02054ec4733",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503354504e4d02054ec4733",
+  "usage": {
+    "completion_tokens": 231,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3473,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3704
+  }
+}

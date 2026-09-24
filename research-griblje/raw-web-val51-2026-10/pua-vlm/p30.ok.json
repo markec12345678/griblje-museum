@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Alphabetical register of landowners and their parcels by sections for the municipality of Grüble, 1825. Contains two entries (nos. 59 and 60) with multiple parcel sections.\", \"title_block\": \"Land / Kreis / Bezirk / Gemeinde\\n\\nAlphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"59\", \"section\": \"\", \"house_no\": \"41\", \"owner_original\": \"Pöchinger Georg Leinwand Fabrikant\", \"status_original\": \"Leinwand Fabrikant\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"25\", \"166\", \"167\", \"176\", \"180\", \"188\", \"216\", \"229\", \"241\", \"267\", \"280\", \"283\", \"301\", \"302\", \"305\", \"306\", \"349\", \"449\", \"450\", \"473\", \"575\", \"581\", \"619\", \"641\", \"673\", \"816\", \"836\", \"878\"]}, {\"section\": \"II.\", \"numbers\": [\"1020\", \"1022\", \"1032\", \"1102\", \"1129\", \"1179\", \"1183\", \"1201\", \"1239\", \"1256\", \"1312\", \"1324\", \"1336\", \"1361\", \"1378\", \"1395\", \"1400\", \"1469\"]}, {\"section\": \"III.\", \"numbers\": [\"1505\", \"1507\", \"1514\", \"1525\"]}, {\"section\": \"III/IV\", \"numbers\": [\"1633\"]}, {\"section\": \"IV.\", \"numbers\": [\"1973\", \"1983\", \"1994\", \"2019\"]}, {\"section\": \"V.\", \"numbers\": [\"2203\"]}], \"annotation_original\": \"19. Pp.\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"60\", \"section\": \"\", \"house_no\": \"42\", \"owner_original\": \"Pöchinger Malfa Leinwand Fabrikant\", \"status_original\": \"Leinwand Fabrikant\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"27\", \"168\", \"169\", \"175\", \"189\", \"193\", \"204\", \"217\", \"228\", \"240\", \"260\", \"297\", \"304\", \"320\", \"352\", \"451\", \"618\", \"621\", \"727\"]}, {\"section\": \"II/III\", \"numbers\": [\"1052\"]}, {\"section\": \"II.\", \"numbers\": [\"1035\", \"1099\", \"1192\", \"1262\", \"1278\", \"1291\", \"1298\", \"1299\", \"1300\", \"1349\", \"1420\"]}, {\"section\": \"III.\", \"numbers\": [\"1489\", \"1494\", \"1532\"]}, {\"section\": \"IV.\", \"numbers\": [\"2016\", \"2021\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [\"Malfa\"]}], \"page_notes\": \"Entry 59 has a marginal note '19. Pp.' in the annotation column. The name in entry 60 appears to be 'Pöchinger Malfa' or possibly 'Maria' but the middle name is somewhat unclear; transcribed as 'Malfa' based on letter shapes.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274663,
+  "id": "20260925023043b1d8714746a44903",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925023043b1d8714746a44903",
+  "usage": {
+    "completion_tokens": 778,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2186
+  }
+}

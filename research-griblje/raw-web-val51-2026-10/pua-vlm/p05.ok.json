@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page 5 of the alphabetical register of landowners for the municipality of Grüble, showing entries for landowner number 5 (Brincz Johann) and 6 (Brincz Maria) with their respective parcels listed by section.\", \"title_block\": \"Land: [blank] / Bezirk: V.F. / Kreis: [blank] / Gemeinde: Grüble / Alphabetisches Verzeichniß / Der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\", \"entries\": [{\"entry_no\": \"5\", \"section\": \"\", \"house_no\": \"26\", \"owner_original\": \"Brincz Johann Bauer zu Grübln\", \"status_original\": \"Bauer\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"160\", \"166\", \"170\", \"207\", \"208\", \"212\", \"222\", \"223\", \"229\", \"263\", \"269\", \"300\", \"324\", \"351\", \"358\", \"674\", \"693\", \"697\", \"704\"]}, {\"section\": \"II.\", \"numbers\": [\"1003\", \"1019\", \"1020\", \"1030\", \"1043\", \"1052\", \"1062\", \"1079\"]}, {\"section\": \"II.\", \"numbers\": [\"1818\", \"1927\", \"1936\"]}, {\"section\": \"III.\", \"numbers\": [\"4940\"]}, {\"section\": \"IV.\", \"numbers\": [\"5010\", \"5122\", \"5219\", \"5235\", \"5301\", \"5369\", \"5385\", \"5520\", \"5673\"]}, {\"section\": \"III/IV\", \"numbers\": [\"4946\"]}, {\"section\": \"V.\", \"numbers\": [\"5972\", \"6070\", \"6270\", \"6579\"]}], \"annotation_original\": \"B. P. M.\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"6\", \"section\": \"\", \"house_no\": \"28\", \"owner_original\": \"Brincz Maria Bäuerin zu Grübln\", \"status_original\": \"Bäuerin\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"171\", \"232\", \"258\", \"260\", \"264\", \"320\", \"333\", \"337\", \"666\", \"682\", \"690\", \"700\", \"702\", \"716\", \"719\", \"720\"]}, {\"section\": \"II.\", \"numbers\": [\"1004\", \"1027\", \"1038\", \"1051\", \"1082\", \"1118\", \"1137\", \"1167\", \"1188\"]}, {\"section\": \"II/III\", \"numbers\": [\"1861\"]}, {\"section\": \"II.\", \"numbers\": [\"1830\", \"1834\", \"1883\"]}, {\"section\": \"IV.\", \"numbers\": [\"5009\", \"5044\", \"5116\", \"5207\", \"5248\", \"5316\", \"5349\", \"5502\"]}], \"annotation_original\": \"B. S. M.\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"The page is clearly legible in Kurrent script. Entry 5 has a marginal note 'B. P. M.' and entry 6 has 'B. S. M.' in the annotation column. Section II appears twice for entry 5 with different parcel ranges.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790273842,
+  "id": "202609250217130da7d583e0204169",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250217130da7d583e0204169",
+  "usage": {
+    "completion_tokens": 797,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 2205
+  }
+}

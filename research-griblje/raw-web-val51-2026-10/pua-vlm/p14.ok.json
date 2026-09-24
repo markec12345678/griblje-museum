@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page 27 of the alphabetical register of landowners for the municipality of Grüble, showing entries 26 and 27 for the Sankovitsch family.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"26\",\n      \"section\": \"V\",\n      \"house_no\": \"7\",\n      \"owner_original\": \"Sankovitsch Walf. / Bauers Wittib / Zogwitsche.\",\n      \"status_original\": \"Bauers Wittib\",\n      \"residence_original\": \"Zogwitsche\",\n      \"parcels\": [\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"410\", \"1103\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"27\",\n      \"section\": \"V\",\n      \"house_no\": \"26\",\n      \"owner_original\": \"Sankovitsch Lorenz / Bauer / Zogwitsche\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"Zogwitsche\",\n      \"parcels\": [\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"487\", \"874\", \"1275\", \"679\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"The page shows entries 26 and 27, both belonging to the Sankovitsch family in Zogwitsche (likely a locality or farm name). Entry 26 is for a widow (Wittib) of Walf. Sankovitsch, and entry 27 is for Lorenz Sankovitsch. All parcels are in Section V.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274422,
+  "id": "20260925022653cca4786ebd99403d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022653cca4786ebd99403d",
+  "usage": {
+    "completion_tokens": 428,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1836
+  }
+}
