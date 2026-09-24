@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"22\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"6\",\n      \"owner_original\": \"Schafschlader Hann Leidensgüttin\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"27\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"941\", \"942\", \"943\", \"944\", \"945\", \"946\", \"947\", \"948\", \"949\", \"950\", \"951\", \"952\", \"953\", \"954\", \"1620\", \"1696\", \"1697\", \"1698\", \"1699\", \"1700\", \"1701\", \"1702\", \"1717\", \"1728\", \"1734\", \"1755\", \"1772\", \"1781\", \"1792\", \"1793\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"222\", \"223\", \"224\", \"225\", \"226\", \"228\", \"679\", \"726\", \"727\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. m. m.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner field: removed 'B. P. m. m.' from owner string and placed it in annotation_original as it appears at the bottom of the entry cell.\"\n    },\n    {\n      \"entry_no\": \"23\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"8\",\n      \"owner_original\": \"Schafschlader Mütze Leidensgüttin\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"288\", \"295\", \"296\", \"297\", \"298\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"69\", \"676\", \"689\", \"690\", \"691\", \"692\", \"693\", \"694\", \"695\", \"696\", \"697\", \"1602\", \"1663\", \"1674\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"218\", \"219\", \"220\", \"221\", \"227\", \"258\", \"259\", \"260\", \"261\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. 11/12. 12.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner field: removed 'B. P. 11/12. 12.' from owner string and placed it in annotation_original as it appears at the bottom of the entry cell.\"\n    }\n  ],\n  \"page_notes\": \"The draft correctly identified all row numbers, house numbers, names, and parcel numbers. The primary correction involved separating the annotations (B.P. notations) from the owner name field to match their physical position in the document layout.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277023,
+  "id": "2026092503100216ea0711d3444e59",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503100216ea0711d3444e59",
+  "usage": {
+    "completion_tokens": 730,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2845,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3575
+  }
+}

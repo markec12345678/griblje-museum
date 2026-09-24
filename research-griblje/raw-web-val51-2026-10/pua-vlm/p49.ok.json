@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Alphabetisches Verzeichniß der Grund Eigenthümer, Gemeinde Grüble, 1825. Page contains one main entry (No. 97) for Philipp De Giammo Zucchelli, followed by administrative annotations and signatures.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\", \"entries\": [{\"entry_no\": \"97\", \"section\": \"\", \"house_no\": \"\", \"owner_original\": \"Philipp De Giammo Zucchelli / 2700\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [], \"annotation_original\": \"VC Mayr vell. am 10 Jenner 1826 / [signature] / [signature] / gezgen: / d[?] Hutmayer[?]\", \"confidence\": \"medium\", \"uncertain_words\": [\"Hutmayer\"]}], \"page_notes\": \"Entry 97 has no section or house number filled in the printed columns. The name 'Philipp De Giammo Zucchelli' is written in cursive script across the owner column, with '2700' written below it (possibly a file or parcel reference). The 'Anmerkung' column contains later administrative notes from 1826 (Mayr, January 10), two signatures (likely 'Mittermeyer' and another official), and a witness line ('gezgen') with an uncertain name ('Hutmayer' or similar). The page is otherwise clean with no visible ink blots or tears.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275373,
+  "id": "20260925024248a1ac0f126ca74581",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925024248a1ac0f126ca74581",
+  "usage": {
+    "completion_tokens": 334,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 540
+    },
+    "total_tokens": 1742
+  }
+}

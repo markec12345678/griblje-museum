@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"VT\", \"rows\": [{\"entry_no\": \"45\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"48\", \"owner_original\": \"Höchsthaler Georg bürgerl. Hofg'sitzl.\", \"status_original\": \"bürgerl. Hofg'sitzl.\", \"residence_original\": \"zu Grublh.\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"108\", \"120\", \"144\", \"167\", \"192\", \"226\", \"249\", \"292\", \"323\", \"333\", \"376\", \"380\", \"400\", \"466\", \"508\", \"579\", \"598\", \"668\", \"684\"]}, {\"section\": \"II\", \"numbers\": [\"1001\", \"1009\", \"1017\", \"1022\", \"1038\", \"1047\", \"1049\", \"1050\", \"1079\"]}, {\"section\": \"III\", \"numbers\": [\"1097\", \"1100\", \"1162\"]}, {\"section\": \"IV\", \"numbers\": [\"1200\", \"1216\"]}, {\"section\": \"V\", \"numbers\": [\"1301-1303\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected owner string to separate name and status/residence fields; verified all parcel numbers match image.\"}, {\"entry_no\": \"46\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"2\", \"owner_original\": \"Höppets Georg bürgerl. Hofsitzer\", \"status_original\": \"bürgerl. Hofsitzer\", \"residence_original\": \"zu Grublh. in Höchsthal.\", \"parcels\": [{\"section\": \"IV\", \"numbers\": [\"1202\", \"1230\", \"1251\", \"1276\", \"1297\", \"1328\", \"eine Schmiedung\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected owner string to separate name and status/residence fields; verified parcel numbers including 'eine Schmiedung'.\"}], \"page_notes\": \"Page contains entries 45-46. Entry 45 spans sections I-V. Entry 46 is in section IV only. Handwriting is clear Kurrent script.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277167,
+  "id": "20260925031242a2486395e1264b68",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031242a2486395e1264b68",
+  "usage": {
+    "completion_tokens": 529,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1687,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 2216
+  }
+}

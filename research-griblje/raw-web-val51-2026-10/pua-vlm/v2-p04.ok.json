@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"V.7\",\n  \"rows\": [\n    {\n      \"entry_no\": \"3.\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"24\",\n      \"owner_original\": \"Brincz Marjan\",\n      \"status_original\": \"Bauer zu Grüblen\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"679\", \"680\", \"681\", \"682\", \"683\", \"684\", \"685\", \"686\", \"687\", \"688\", \"689\", \"690\", \"691\", \"692\", \"693\"]},\n        {\"section\": \"II.\", \"numbers\": [\"1688\", \"1690\", \"1691\", \"1692\", \"1693\", \"1694\", \"1695\", \"1696\", \"1697\", \"1698\", \"1699\", \"1700\"]},\n        {\"section\": \"II. III.\", \"numbers\": [\"948\"]},\n        {\"section\": \"III.\", \"numbers\": [\"1931\", \"1934\", \"1900\", \"1897\", \"1916\", \"1915\", \"1913\", \"1935\", \"1936\", \"1938\", \"1950\", \"1953\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2022\", \"2024\", \"2063\"]}\n      ],\n      \"annotation_original\": \"D. R. 32.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"No changes; verified all parcel numbers and sections match the image.\"\n    },\n    {\n      \"entry_no\": \"4.\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"25\",\n      \"owner_original\": \"Brincz Wendel\",\n      \"status_original\": \"Bauer zu Grüblen\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"678\", \"691\", \"692\", \"693\", \"695\", \"696\", \"697\", \"698\", \"662\", \"663\"]},\n        {\"section\": \"II.\", \"numbers\": [\"1677\", \"1678\", \"1679\", \"1680\", \"1681\", \"1682\", \"1683\"]},\n        {\"section\": \"III.\", \"numbers\": [\"1892\", \"1893\", \"1889\", \"1890\", \"1872\", \"1914\", \"1916\", \"1926\", \"1927\", \"1928\", \"1937\", \"1981\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"205\", \"2063\"]}\n      ],\n      \"annotation_original\": \"D. R. 29.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"No changes; verified all parcel numbers and sections match the image.\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 3 and 4. Entry 3 (Haus No. 24) belongs to Brincz Marjan with parcels in Sections I, II, II/III, III, and IV. Entry 4 (Haus No. 25) belongs to Brincz Wendel with parcels in Sections I, II, III, and IV. The sequence is consecutive starting from 3 on this page.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276833,
+  "id": "20260925030702db757b27fb844774",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925030702db757b27fb844774",
+  "usage": {
+    "completion_tokens": 773,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2979,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3752
+  }
+}

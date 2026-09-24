@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"147-148\",\n  \"rows\": [\n    {\n      \"entry_no\": \"147\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"7\",\n      \"owner_original\": \"Liechtenst. Mandl\",\n      \"status_original\": \"Beurlaubtsgeselle\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"670\", \"676\", \"678\", \"679\", \"680\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"872\", \"928\", \"942\", \"952\", \"957\", \"964\", \"1066\", \"1083\", \"1090\", \"1091\", \"1092\", \"1070\", \"1076\", \"1058\", \"1028\", \"1045\", \"1034\", \"992\", \"1001\", \"1017\", \"1016\", \"1014\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"2239\", \"2249\", \"2251\", \"2252\", \"2256\", \"2259\"]\n        }\n      ],\n      \"annotation_original\": \"b.P. 17.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and sections against image; confirmed owner name and status.\"\n    },\n    {\n      \"entry_no\": \"148\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"12\",\n      \"owner_original\": \"Liechtensth. Murgi\",\n      \"status_original\": \"Beurlaubtsgeselle\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"882\", \"900\", \"908\", \"910\", \"915\", \"926\", \"929\", \"930\", \"1070\", \"1080\"]\n        },\n        {\n          \"section\": \"II.N.\",\n          \"numbers\": [\"1942\", \"1954\", \"1967\", \"2015\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"2039\", \"2047\", \"2050\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and sections against image; confirmed owner name and status.\"\n    }\n  ],\n  \"page_notes\": \"Page contains entries 147 and 148. Handwriting is clear Kurrent script. Entry 147 has a long list of parcels in Section II that are not strictly sequential. Entry 148 includes parcels in Section II.N. (likely 'Neu' or similar sub-section).\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277184,
+  "id": "2026092503124766472faa57004e83",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503124766472faa57004e83",
+  "usage": {
+    "completion_tokens": 631,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2470,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3101
+  }
+}

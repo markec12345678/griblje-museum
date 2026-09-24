@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"VT\",\n  \"focus_findings\": [\n    {\n      \"row\": \"42\",\n      \"entry_no\": \"42\",\n      \"section\": \"I, II, IV, IVV, V\",\n      \"house_no\": \"47\",\n      \"owner_original\": \"Stöbacher\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"hiesig / hießig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"96\", \"97\", \"98\", \"106\", \"107\", \"118\", \"145\", \"148\", \"197\", \"297\", \"436\", \"468\", \"497\", \"509\", \"528\", \"561\", \"592\", \"695\", \"897\", \"912\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"1100\", \"1112\", \"1114\", \"1243\", \"1297\", \"1316\", \"1350\", \"1381\", \"1392\", \"1450\", \"1436\", \"1469\", \"1472\", \"1511\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1803\", \"1976\", \"2000\", \"2126\"]\n        },\n        {\n          \"section\": \"IVV\",\n          \"numbers\": [\"2423\"]\n        },\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"2481\", \"2493\", \"2595\", \"2603\"]\n        }\n      ],\n      \"annotation_original\": \"J.P. 72. 71. 78. 80.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"43\",\n      \"entry_no\": \"43\",\n      \"section\": \"II, IV\",\n      \"house_no\": \"69\",\n      \"owner_original\": \"Ritschka\",\n      \"status_original\": \"Wittwe / Witib\",\n      \"residence_original\": \"hier / hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"859\", \"860\", \"882\", \"883\", \"885\", \"887\", \"893\", \"900\", \"916\", \"926\", \"1287\", \"1606\", \"1629\", \"1639\", \"1614\", \"1618\", \"1658\", \"1675\", \"1700\", \"1749\", \"1750\", \"1791\", \"1804\", \"1768\", \"1776\", \"1780\", \"1796\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"2200\", \"2261\", \"2301\", \"2306\", \"2368\", \"2910\", \"2937\", \"2983\", \"2993\", \"2879\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"44\",\n      \"entry_no\": \"44\",\n      \"section\": \"C\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Kirche\",\n      \"status_original\": \"zu St. Veith\",\n      \"residence_original\": \"in Grüble\",\n      \"parcels\": [],\n      \"annotation_original\": \"L.P. 12.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"Row 44 is indeed a church entry: 'Kirche zu St. Veith in Grüble' (Church of St. Veit in Grüble). It is listed under Section 'C'. The abbreviation 'L.P.' in the annotation likely stands for 'Liegender Pacht' or a similar legal/land term common in these cadastres.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278485,
+  "id": "202609250334379d191602220347e2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250334379d191602220347e2",
+  "usage": {
+    "completion_tokens": 854,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3726,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 4580
+  }
+}

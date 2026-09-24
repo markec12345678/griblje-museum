@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"1\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"1\",\n      \"owner_original\": \"Mellachitsch Waise Leopold von / Ungaritsch gewesene Mellachitsch.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"201\", \"204\", \"429\", \"872\", \"975\", \"976\", \"983\", \"1005\", \"1023\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"969\", \"978\", \"979\", \"1230\", \"2074\", \"2387\", \"2594\", \"2606\", \"2615\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and owner name. Draft was accurate.\"\n    },\n    {\n      \"entry_no\": \"2\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"22\",\n      \"owner_original\": \"Brincz Marfil Louise Wittibin.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"16\", \"241\", \"427\", \"456\", \"500\", \"507\", \"583\", \"654\", \"666\", \"926\", \"949\", \"953\", \"967\", \"974\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"1223\", \"126\", \"1416\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"1972\", \"1979\", \"1998\", \"1917\", \"1918\", \"1927\", \"1934\", \"1936\", \"1941\", \"1967\", \"1969\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"208\", \"218\"]\n        },\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\"108\"]\n        },\n        {\n          \"section\": \"G\",\n          \"numbers\": [\"B P. 17, 35, 40\"]\n        },\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"22\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and owner name. Draft was accurate.\"\n    }\n  ],\n  \"page_notes\": \"The page contains two main entries. Entry 1 (No. 1) and Entry 2 (No. 22). The handwriting is clear Kurrent script. All draft entries match the image.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276822,
+  "id": "20260925030646e7a5a34f1c054ca4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925030646e7a5a34f1c054ca4",
+  "usage": {
+    "completion_tokens": 659,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2491,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3150
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page from the alphabetical index of landowners for the municipality of Grüble (Grübln), showing entries 87 and 88 with associated parcel numbers across sections I-IV.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"87\",\n      \"section\": \"\",\n      \"house_no\": \"72\",\n      \"owner_original\": \"Strauß Khonrad bauer zu Grübln\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"88\",\n      \"section\": \"I.\",\n      \"house_no\": \"22\",\n      \"owner_original\": \"Uebl Georg Söllner zu Grübln\",\n      \"status_original\": \"Söllner\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"55\", \"207\", \"210\", \"274\", \"516\", \"553\", \"632\", \"659\", \"683\"]},\n        {\"section\": \"II.\", \"numbers\": [\"758\", \"1173\"]},\n        {\"section\": \"III.\", \"numbers\": [\"609\", \"812\", \"824\", \"978\", \"1283\", \"1314\", \"1321/32\", \"1433\", \"1534\", \"1553\", \"1734\", \"1770\", \"1779\", \"1790\", \"1797\", \"1815\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2082\", \"2164\", \"2281\", \"2372\", \"2373\", \"2429\", \"2453\", \"2551\"]}\n      ],\n      \"annotation_original\": \"D. I. 56, 57, 58.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 87 has a large 'O' or circle drawn below the name, possibly indicating a correction or status change. Entry 88 spans multiple rows for the different sections (I-IV). The handwriting is clear Kurrent script.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275215,
+  "id": "2026092502400210066f65703e43f6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502400210066f65703e43f6",
+  "usage": {
+    "completion_tokens": 527,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1935
+  }
+}

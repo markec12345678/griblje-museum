@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"12\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"4\",\n      \"owner_original\": \"Dragosch, Maria, bauerin, zu Dragosch / gemindt. Holzschildk.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"\"\n    },\n    {\n      \"entry_no\": \"13\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"5\",\n      \"owner_original\": \"Dragosch, georg, bauer, zu Dragosch / gemindt. Holzschildk.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        { \"section\": \"II.\", \"numbers\": [\"806\", \"898\", \"916\", \"922\", \"1097\", \"1022\", \"325\", \"1571\", \"1673\", \"168\", \"1636\"] },\n        { \"section\": \"III.\", \"numbers\": [\"1692\"] },\n        { \"section\": \"IV.\", \"numbers\": [\"2288\", \"2043\", \"2046\", \"2093\", \"2405\", \"2465\", \"2502\"] }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers against the image; sequence and values are correct.\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 12 and 13 for the surname Dragosch. Entry 12 has no listed parcels in this view. Entry 13 lists parcels across sections II, III, and IV.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276878,
+  "id": "202609250307510113c85ec276486a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250307510113c85ec276486a",
+  "usage": {
+    "completion_tokens": 425,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1822,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2247
+  }
+}

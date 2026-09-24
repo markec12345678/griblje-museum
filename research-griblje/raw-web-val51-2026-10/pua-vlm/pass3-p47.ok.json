@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"VT\",\n  \"focus_findings\": [\n    {\n      \"row\": \"95\",\n      \"entry_no\": \"95\",\n      \"section\": \"\",\n      \"house_no\": \"70\",\n      \"owner_original\": \"Zollamt\",\n      \"status_original\": \"k.k. Merarial[?]\",\n      \"residence_original\": \"in Grüblen\",\n      \"parcels\": [\n        {\n          \"section\": \"\",\n          \"numbers\": [\"70\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"Merarial\"]\n    }\n  ],\n  \"extra_observations\": \"The page contains only one visible entry (No. 95) for the k.k. Zollamt (Imperial-Royal Customs Office). The status 'Merarial' is likely a Kurrent misreading of 'Ministerial' or similar. No rows containing 'Waldweide' or 'Gemeinschaftliche' are visible on this specific page fragment.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278521,
+  "id": "2026092503351448554d6283874746",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503351448554d6283874746",
+  "usage": {
+    "completion_tokens": 222,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3736,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3958
+  }
+}

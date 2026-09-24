@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V1\",\n  \"focus_findings\": [\n    {\n      \"row\": \"7\",\n      \"entry_no\": \"7\",\n      \"section\": \"\",\n      \"house_no\": \"40\",\n      \"owner_original\": \"Bruller Maria\",\n      \"status_original\": \"Wittib\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"78\", \"181\", \"182\", \"177\", \"176\", \"179\", \"192\", \"215\", \"216\", \"202\", \"243\", \"162\", \"900\"]},\n        {\"section\": \"II\", \"numbers\": [\"916\", \"976\", \"930\", \"938\", \"901\", \"910\", \"632\", \"626\", \"746\", \"750\"]},\n        {\"section\": \"III\", \"numbers\": [\"1233\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1167\", \"1173\", \"1179\", \"1180\", \"1252\", \"1293\", \"1294\", \"1295\", \"1296\", \"1111\", \"1160\", \"1159\", \"1853\", \"1868\"]},\n        {\"section\": \"\", \"numbers\": [\"1395\", \"2405\", \"2189\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"8\",\n      \"entry_no\": \"8\",\n      \"section\": \"\",\n      \"house_no\": \"63\",\n      \"owner_original\": \"Bring Maria\",\n      \"status_original\": \"Wittib\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"49\", \"50\", \"56\", \"262\", \"256\", \"779\", \"664\"]},\n        {\"section\": \"II\", \"numbers\": [\"759\", \"760\", \"767\", \"770\"]},\n        {\"section\": \"III\", \"numbers\": [\"788\", \"912\", \"981\", \"1004\", \"1016\", \"1105\", \"1200\", \"1215\", \"1211\", \"1281\", \"1269\", \"1273\", \"1329\", \"1362\", \"1362\", \"1403\", \"1428\", \"1426\", \"1747\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1839\", \"1845\"]},\n        {\"section\": \"\", \"numbers\": [\"1801\", \"1982\", \"1987\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"9\",\n      \"entry_no\": \"9\",\n      \"section\": \"V\",\n      \"house_no\": \"o\",\n      \"owner_original\": \"Commenda Tahernwirth.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"V\", \"numbers\": [\"2146\", \"2077\", \"2472\", \"2179\", \"2487\", \"2362\", \"2363\", \"2468\", \"1881\", \"887\", \"2189\", \"2359\", \"2297\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"Tahernwirth\"]\n    }\n  ],\n  \"extra_observations\": \"Row 9 owner cell reads 'Commenda Tahernwirth.' (not Fischerwies). The second word is a surname, likely referring to the location or administrator of the Commenda. The house number appears to be 'o' (possibly indicating no house/land only).\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278400,
+  "id": "20260925033300147804a0d2e74c23",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033300147804a0d2e74c23",
+  "usage": {
+    "completion_tokens": 827,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3741,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4568
+  }
+}

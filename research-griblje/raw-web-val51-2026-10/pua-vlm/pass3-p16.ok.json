@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"VT\",\n  \"focus_findings\": [\n    {\n      \"row\": \"1\",\n      \"entry_no\": \"70\",\n      \"section\": \"\",\n      \"house_no\": \"3\",\n      \"owner_original\": \"Christoph Wörfl\",\n      \"status_original\": \"bürger[?]\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"699\"]},\n        {\"section\": \"II\", \"numbers\": [\"553\", \"546\", \"581\", \"584\", \"489\", \"890\", \"897\", \"601\", \"602\", \"603\", \"911\", \"912\", \"915\", \"919\", \"917\", \"978\", \"979\", \"1006\", \"1094\", \"1192\", \"1200\", \"1202\", \"1269\", \"1296\", \"1402\", \"1505\", \"1612\", \"1615\", \"1619\", \"1620\", \"1623\", \"1667\", \"1689\", \"1689\", \"1697\", \"1702\", \"1702\", \"1750\", \"1758\", \"1783\", \"1796\", \"1761\", \"1762\", \"1776\", \"1767\", \"1789\"]},\n        {\"section\": \"II-IV\", \"numbers\": [\"1792\", \"1812\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2016\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"2\",\n      \"entry_no\": \"71\",\n      \"section\": \"\",\n      \"house_no\": \"10\",\n      \"owner_original\": \"Lucrezia Wörflin\",\n      \"status_original\": \"bürger[?]\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\"section\": \"II\", \"numbers\": [\"553\", \"560\", \"620\", \"651\", \"681\", \"694\", \"698\", \"1056\", \"1581\", \"1682\", \"1684\", \"1702\", \"1684\", \"1708\"]},\n        {\"section\": \"IV\", \"numbers\": [\"2311\", \"2290\", \"2311\", \"2329\", \"2382\", \"2718\", \"2901\", \"2960\", \"3007\", \"309\", \"2510\", \"2556\", \"2778\", \"2791\", \"2816\", \"2824\", \"2828\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extraobservations\": \"The running numbers are clearly '70' and '71' (not 30/31 or 50/51). The house numbers are '3' and '10'. The names are transcribed as Christoph Wörfl (Einwohner) and Lucrezia Wörflin (Einwohnerin).\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278723,
+  "id": "20260925033835b76d7ddc06784d93",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033835b76d7ddc06784d93",
+  "usage": {
+    "completion_tokens": 689,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3986,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 4675
+  }
+}

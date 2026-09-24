@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page V.T of the 1825 Austrian Franciscan Cadastre for the municipality (Gemeinde) Grüble, containing two main property owner entries with their associated land parcels listed by section.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\\nLand: [blank] | Bezirk: [blank]\\nKreis: [blank] | Gemeinde: [blank]\", \"entries\": [{\"entry_no\": \"45\", \"section\": \"\", \"house_no\": \"48\", \"owner_original\": \"Höchsthaler Georg bürgerl. Hofg'sitzl. / zu Grublh.\", \"status_original\": \"bürgerl. Hofg'sitzl.\", \"residence_original\": \"Grublh\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"108, 120, 144, 167, 192, 226, 249, 292, 323, 333, 376, 380, 400, 466, 508, 579, 598, 668, 684\"]}, {\"section\": \"II\", \"numbers\": [\"1001, 1009, 1017, 1022, 1038, 1047, 1049, 1050, 1079\"]}, {\"section\": \"III\", \"numbers\": [\"1097, 1100, 1162\"]}, {\"section\": \"IV\", \"numbers\": [\"1200, 1216\"]}, {\"section\": \"V\", \"numbers\": [\"1301-1303\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"46\", \"section\": \"\", \"house_no\": \"2\", \"owner_original\": \"Höppets Georg bürgerl. Hofsitzer / zu Grublh. in Höchsthal.\", \"status_original\": \"bürgerl. Hofsitzer\", \"residence_original\": \"Grublh. in Höchsthal\", \"parcels\": [{\"section\": \"IV\", \"numbers\": [\"1202, 1230, 1251, 1276, 1297, 1328, eine Schmiedung\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"The handwriting is a clear Kurrent script. Entry 45 spans multiple section rows (I-V) for its parcels. The word 'Schmiedung' in entry 46's parcel list appears to be written out rather than being a standard numeric parcel identifier.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274559,
+  "id": "2026092502290437ca8fe967854607",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502290437ca8fe967854607",
+  "usage": {
+    "completion_tokens": 582,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1990
+  }
+}

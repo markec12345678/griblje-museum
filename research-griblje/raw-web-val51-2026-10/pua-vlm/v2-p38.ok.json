@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"V7\",\n  \"rows\": [\n    {\n      \"entry_no\": \"76\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"20\",\n      \"owner_original\": \"Huber Wolfpaul Bauer zu Grüble\",\n      \"status_original\": \"Bauer zu Grüble\",\n      \"residence_original\": \"Grüble\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"437\", \"469\", \"485\", \"525\", \"550\", \"574\", \"586\", \"594\", \"596\", \"623\", \"654\", \"662\", \"638\", \"639\", \"684\", \"692\", \"701\", \"707\", \"708\", \"718\", \"746\"]},\n        {\"section\": \"II.\", \"numbers\": [\"1091\", \"1092\", \"1093\", \"1094\", \"1095\", \"1096\", \"1097\", \"1098\", \"1099\"]},\n        {\"section\": \"III.\", \"numbers\": [\"1080\", \"1072\", \"1052\", \"991\", \"983\"]},\n        {\"section\": \"III b.\", \"numbers\": [\"1023\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"951\", \"947\", \"940\", \"941\", \"939\", \"938\", \"936\", \"935\", \"933\", \"1030\", \"1010\"]},\n        {\"section\": \"V.\", \"numbers\": [\"1020\", \"1017\"]}\n      ],\n      \"annotation_original\": \"B. P. h.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"No changes required; all fields match the image.\"\n    },\n    {\n      \"entry_no\": \"77\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"28\",\n      \"owner_original\": \"Schimer Georg Bauer zu Grüble\",\n      \"status_original\": \"Bauer zu Grüble\",\n      \"residence_original\": \"Grüble\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"462\", \"476\", \"492\", \"512\", \"551\", \"562\", \"574\", \"575\", \"591\"]},\n        {\"section\": \"II.\", \"numbers\": [\"1058\", \"1069\", \"1070\", \"1071\", \"1072\", \"1073\", \"1074\", \"1075\", \"1076\", \"1077\", \"1078\", \"1079\", \"1080\"]},\n        {\"section\": \"III.\", \"numbers\": [\"1039\", \"1037\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"916\", \"917\", \"907\", \"901\", \"919\", \"919\"]}\n      ],\n      \"annotation_original\": \"D. T. gb.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"No changes required; all fields match the image.\"\n    }\n  ],\n  \"page_notes\": \"The page contains two entries (76 and 77). Entry 77 lists parcel 919 twice in section IV, which is transcribed exactly as it appears in the original document. The sequence of entry numbers is consecutive.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277335,
+  "id": "202609250315242d5efda2df284c31",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250315242d5efda2df284c31",
+  "usage": {
+    "completion_tokens": 747,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3065,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3812
+  }
+}

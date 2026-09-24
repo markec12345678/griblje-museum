@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page V.T of the 1825 Alphabetical Register of Landowners for Gemeinde Grüble, showing entries 22 and 23 (Schafschlader family) with their land parcels in Sections I-IV.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"22\",\n      \"section\": \"\",\n      \"house_no\": \"6\",\n      \"owner_original\": \"Schafschlader Hann Leidensgüttin / B. P. m. m.\",\n      \"status_original\": \"Leidensgüttin\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"27\"]},\n        {\"section\": \"II\", \"numbers\": [\"941\", \"942\", \"943\", \"944\", \"945\", \"946\", \"947\", \"948\", \"949\", \"950\", \"951\", \"952\", \"953\", \"954\", \"1620\", \"1696\", \"1697\", \"1698\", \"1699\", \"1700\", \"1701\", \"1702\", \"1717\", \"1728\", \"1734\", \"1755\", \"1772\", \"1781\", \"1792\", \"1793\"]},\n        {\"section\": \"IV\", \"numbers\": [\"222\", \"223\", \"224\", \"225\", \"226\", \"228\", \"679\", \"726\", \"727\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"23\",\n      \"section\": \"\",\n      \"house_no\": \"8\",\n      \"owner_original\": \"Schafschlader Mütze Leidensgüttin / B. P. 11/12. 12.\",\n      \"status_original\": \"Leidensgüttin\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"288\", \"295\", \"296\", \"297\", \"298\"]},\n        {\"section\": \"II\", \"numbers\": [\"69\", \"676\", \"689\", \"690\", \"691\", \"692\", \"693\", \"694\", \"695\", \"696\", \"697\", \"1602\", \"1663\", \"1674\"]},\n        {\"section\": \"IV\", \"numbers\": [\"218\", \"219\", \"220\", \"221\", \"227\", \"258\", \"259\", \"260\", \"261\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"Mütze[?]\", \"11/12. 12.[?]\"]\n    }\n  ],\n  \"page_notes\": \"Entry 22: The name appears to be 'Hann' (short for Johann/Johannes) or possibly 'Hans' with a specific Kurrent flourish; 'Leidensgüttin' is clearly written. Entry 23: First name is difficult, looks like 'Mütze', 'Mitze', or similar; the note 'B.P. 11/12. 12.' at bottom may refer to tax assessment or payment dates. Parcel numbers in Section II for entry 22 are densely packed; some numbers like 1717 and 1728 are slightly squeezed but legible.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274392,
+  "id": "20260925022622c8139bc5170b4245",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022622c8139bc5170b4245",
+  "usage": {
+    "completion_tokens": 777,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 540
+    },
+    "total_tokens": 2185
+  }
+}

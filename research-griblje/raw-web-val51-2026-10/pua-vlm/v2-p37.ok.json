@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"74-75\", \"rows\": [{\"entry_no\": \"74\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"18\", \"owner_original\": \"Schim von Pater Bardeleßky / [nečitljivo]\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"776\"]}, {\"section\": \"II\", \"numbers\": [\"195\", \"358\", \"358\", \"366\", \"366\", \"410\", \"410\", \"466\", \"469\", \"690\", \"693\", \"1058\", \"1059\", \"1062\", \"1063\", \"1065\", \"1067\"]}, {\"section\": \"III\", \"numbers\": [\"1016\"]}, {\"section\": \"IV\", \"numbers\": [\"1091\", \"2299\", \"2526\", \"2529\", \"2532\", \"2550\", \"2574\", \"2623\", \"2625\"]}], \"annotation_original\": \"L. p.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Removed duplicate parcel I/776 from draft. Confirmed all other fields.\"}, {\"entry_no\": \"75\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"19\", \"owner_original\": \"Schim von Wirth Bardeleßky\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"401\", \"477\", \"978\", \"995\", \"1000\", \"1029\", \"1039\", \"1049\", \"1061\", \"1063\"]}, {\"section\": \"III\", \"numbers\": [\"1016\", \"1732\", \"1754\", \"1792\"]}, {\"section\": \"IV\", \"numbers\": [\"1088\", \"2227\", \"2392\"]}], \"annotation_original\": \"L. p. n.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Confirmed all fields match image exactly.\"}], \"page_notes\": \"Page contains entries 74 and 75. Entry 74 had a duplicate parcel (I/776) in the draft which has been removed. Handwriting is clear Kurrent script. Entry 75 annotation ends with 'n.' (likely 'neu' or similar abbreviation).\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277324,
+  "id": "202609250315190e76d322810e4135",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250315190e76d322810e4135",
+  "usage": {
+    "completion_tokens": 539,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2387,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 2926
+  }
+}

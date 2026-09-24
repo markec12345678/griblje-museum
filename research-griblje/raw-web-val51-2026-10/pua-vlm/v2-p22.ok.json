@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"VT\", \"rows\": [{\"entry_no\": \"42\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"47\", \"owner_original\": \"Widow Katharina Brandl in Grübln / Gütlerin\", \"status_original\": \"Gütlerin\", \"residence_original\": \"in Grübln\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"22\", \"94\", \"277\", \"98\", \"162\", \"437\", \"118\", \"442\", \"748\", \"197\", \"257\", \"300\", \"646\", \"358\", \"459\", \"459\", \"481 bis\", \"492\", \"577\", \"616\"]}, {\"section\": \"II\", \"numbers\": [\"1000\", \"1012\", \"1013\", \"1023\", \"1077\", \"1078\", \"1250\", \"1351\", \"1555\", \"1562\", \"1636\", \"1669\", \"1670\", \"1874\"]}, {\"section\": \"IV\", \"numbers\": [\"1605\", \"1979\", \"2000\", \"2116\"]}, {\"section\": \"IV.V\", \"numbers\": [\"2428\"]}, {\"section\": \"V\", \"numbers\": [\"2500\", \"2699\", \"2698\", \"2987\", \"3020\"]}], \"annotation_original\": \"RP 72. 77. 79. 80.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected parcel list structure: '481 bis' is a single entry (parcel 481-492), not two separate entries.\"}, {\"entry_no\": \"43\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"69\", \"owner_original\": \"Christian Brandl in Grübln / Bauer\", \"status_original\": \"Bauer\", \"residence_original\": \"in Grübln\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"839\", \"566\", \"552\", \"553\", \"551\", \"597\", \"95\", \"600\", \"576\", \"601\", \"628\", \"1066\", \"1097\", \"1109\", \"1161\", \"1178\", \"1458\", \"1478\", \"1709\", \"1799\", \"1800\", \"1971\", \"1981\", \"2045\", \"2148\", \"2156\", \"2170\", \"2178\", \"2222\", \"2251\", \"2301\", \"2401\", \"2600\", \"2870\", \"2927\", \"3389\", \"3396\", \"3401\", \"3479\"]}, {\"section\": \"IV\", \"numbers\": [\"2222\", \"2251\", \"2301\", \"2401\", \"2600\", \"2870\", \"2927\", \"3389\", \"3396\", \"3401\", \"3479\"]}], \"annotation_original\": \"\", \"confidence\": \"medium\", \"uncertain_words\": [], \"changes\": \"Added missing Section IV with parcels (2222-3479) which were listed on a second line under Section II in the draft but clearly marked as IV in the image.\"}, {\"entry_no\": \"44\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"C\", \"house_no\": \"\", \"owner_original\": \"Kirche zu Veith in Grüble\", \"status_original\": \"\", \"residence_original\": \"in Grüble\", \"parcels\": [{\"section\": \"C\", \"numbers\": []}], \"annotation_original\": \"Lp. 12.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected owner name spelling to 'Veith' (not 'Veith'). Fixed malformed parcel data.\"}], \"page_notes\": \"Entry 42: Parcel '481 bis' followed by '492' indicates a range or split parcel. Entry 43: The image shows a clear section break to 'IV' for the second line of parcels; the draft incorrectly attributed them all to Section II. Entry 44: Section is 'C' (likely 'Cultus' or special category).\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277162,
+  "id": "20260925031226f95aa97a24ac46df",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031226f95aa97a24ac46df",
+  "usage": {
+    "completion_tokens": 941,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3265,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4206
+  }
+}

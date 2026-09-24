@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"VT\",\n  \"focus_findings\": [\n    {\n      \"row\": \"1\",\n      \"entry_no\": \"1\",\n      \"section\": \"\",\n      \"house_no\": \"1\",\n      \"owner_original\": \"Hollschitzsch\",\n      \"status_original\": \"Wittwe\",\n      \"residence_original\": \"buergerlich zu Hollschitzsch.\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"2\",\n      \"entry_no\": \"2\",\n      \"section\": \"\",\n      \"house_no\": \"20\",\n      \"owner_original\": \"Bring Matfel\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"hier in Grüble.\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"3\",\n      \"entry_no\": \"3\",\n      \"section\": \"I.\",\n      \"house_no\": \"\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"16. 891. 893. 896. 900. 907. 958. 964. 965. 982. 986. 997. 705. 101. 677.\",\n      \"parcels\": [{\"section\":\"I.\",\"numbers\":[\"16\",\"891\",\"893\",\"896\",\"900\",\"907\",\"958\",\"964\",\"965\",\"982\",\"986\",\"997\",\"705\",\"101\",\"677\"]}],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"4\",\n      \"entry_no\": \"3\",\n      \"section\": \"II.\",\n      \"house_no\": \"\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"1023. 1026. 1046.\",\n      \"parcels\": [{\"section\":\"II.\",\"numbers\":[\"1023\",\"1026\",\"1046\"]}],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"5\",\n      \"entry_no\": \"3\",\n      \"section\": \"III\",\n      \"house_no\": \"\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"1872. 1879. 1908. 1917. 1918. 1921. 1934. 936. 1941. 1967. 1999.\",\n      \"parcels\": [{\"section\":\"III\",\"numbers\":[\"1872\",\"1879\",\"1908\",\"1917\",\"1918\",\"1921\",\"1934\",\"936\",\"1941\",\"1967\",\"1999\"]}],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"6\",\n      \"entry_no\": \"3\",\n      \"section\": \"IV.\",\n      \"house_no\": \"\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"226. 2316.\",\n      \"parcels\": [{\"section\":\"IV.\",\"numbers\":[\"226\",\"2316\"]}],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"2316\"]\n    },\n    {\n      \"row\": \"7\",\n      \"entry_no\": \"3\",\n      \"section\": \"V.\",\n      \"house_no\": \"\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"2505. D. P. 27. 28. 40.\",\n      \"parcels\": [{\"section\":\"V.\",\"numbers\":[\"2505\",\"D.P. 27\",\"28\",\"40\"]}],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"8\",\n      \"entry_no\": \"3\",\n      \"section\": \"O\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Baron Apfalterer\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"9\",\n      \"entry_no\": \"3\",\n      \"section\": \"I\",\n      \"house_no\": \"23\",\n      \"owner_original\": \"\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"23\"]\n    }\n  ],\n  \"extra_observations\": \"Row 1 (Entry No. 1) contains Haus No. 1 for owner 'Hollschitzsch'. Row 2 (Entry No. 2) contains Haus No. 20 for owner 'Bring Matfel' and lists parcels across sections I, II, III, IV, V, and O. The name 'Baron Apfalterer' appears in the Owner column of Section O within Entry No. 2's parcel list. Haus No. 23 is faintly visible in Section I, but no corresponding owner or status text is legible in that row. Haus No. 24 is not visible on this page.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278330,
+  "id": "20260925033144f95cc5db0089475d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033144f95cc5db0089475d",
+  "usage": {
+    "completion_tokens": 1194,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3779,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4973
+  }
+}

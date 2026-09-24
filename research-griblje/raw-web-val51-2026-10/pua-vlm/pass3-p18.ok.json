@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V1\",\n  \"focus_findings\": [\n    {\n      \"row\": \"1\",\n      \"entry_no\": \"34\",\n      \"section\": \"\",\n      \"house_no\": \"34\",\n      \"owner_original\": \"Krischan Marla\",\n      \"status_original\": \"Bauerin\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"6\", \"22\", \"60\", \"87\", \"99\", \"107\", \"109\", \"426\"]},\n        {\"section\": \"II\", \"numbers\": [\"1192\", \"1291\", \"1393\", \"1490\", \"2018\", \"2146\"]},\n        {\"section\": \"III\", \"numbers\": [\"1666\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1806\", \"1807\", \"1835\", \"1989\", \"2118\", \"2125\"]}\n      ],\n      \"annotation_original\": \"D. P. 93.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"2\",\n      \"entry_no\": \"35\",\n      \"section\": \"\",\n      \"house_no\": \"36\",\n      \"owner_original\": \"Krischan Marla\",\n      \"status_original\": \"Bauerin\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"138\", \"150\", \"154\", \"159\", \"174\", \"187\", \"206\", \"269\", \"271\", \"274\", \"283\", \"284\", \"289\", \"294\", \"300\", \"305\", \"308\", \"315\", \"321\", \"323\", \"329\", \"333\", \"334\", \"337\", \"393\", \"395\", \"396\", \"402\"]},\n        {\"section\": \"II\", \"numbers\": [\"1182\", \"1287\", \"1288\", \"1294\", \"1322\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1967\", \"2155\"]},\n        {\"section\": \"V\", \"numbers\": [\"2474\", \"2518\", \"2529\", \"2535\"]}\n      ],\n      \"annotation_original\": \"D. P. 86, 88.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"The two rows represent distinct entries for the same owner (Krischan Marla) associated with different house numbers (Haus No. 34 and Haus No. 36). The lfd. Nummern are clearly '34' and '35' (not 24/25 or 46/47). In Kurrent script, the first digit of both numbers is a '3' (characteristic flat top and rounded bottom), and the second digits are a '4' (open top) and a '5' (flat top with a loop), respectively.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278775,
+  "id": "20260925033916facf12473a9040e5",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033916facf12473a9040e5",
+  "usage": {
+    "completion_tokens": 664,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3801,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4465
+  }
+}

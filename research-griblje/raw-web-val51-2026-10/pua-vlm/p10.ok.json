@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page from the 1825 Austrian Franciscan Cadastre register for Gemeinde Grüble, showing entries 16 and 17 with detailed parcel lists.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"16\", \"section\": \"\", \"house_no\": \"30\", \"owner_original\": \"Tillak Philipp bürgerl. zu Grübln / N. 2. 206. 294. 497. 578. 626. 724. 828. 1011. 1082. 1169. / 1200. 1304. 1503. / 2023. 2032. 2091. 2303.\", \"status_original\": \"bürgerl.\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"N.\", \"numbers\": [\"2\", \"206\", \"294\", \"497\", \"578\", \"626\", \"724\", \"828\", \"1011\", \"1082\", \"1169\"]}, {\"section\": \"\", \"numbers\": [\"1200\", \"1304\", \"1503\"]}, {\"section\": \"\", \"numbers\": [\"2023\", \"2032\", \"2091\", \"2303\"]}], \"annotation_original\": \"P. V. g. 20.\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"17\", \"section\": \"\", \"house_no\": \"61\", \"owner_original\": \"Tillak Nikla bürgerl. zu Grübln / a. 9. 32. 70. 76. 98. 200. 220. / 742. 759. 779. 816. 778. 778. 793. 1257. 1238. / 819. 818. 874. 873. 998. 952. 1096. 1297. 1271. 1077 / 1209. 1381. 1456. 1595. 1649. 1672. 1750. 1779. 2080. / 1867. / getr. 1063. 2079. 2230. 2204. 2256. 2287. 2278. 2367\", \"status_original\": \"bürgerl.\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"a.\", \"numbers\": [\"9\", \"32\", \"70\", \"76\", \"98\", \"200\", \"220\"]}, {\"section\": \"\", \"numbers\": [\"742\", \"759\", \"779\", \"816\", \"778\", \"778\", \"793\", \"1257\", \"1238\"]}, {\"section\": \"\", \"numbers\": [\"819\", \"818\", \"874\", \"873\", \"998\", \"952\", \"1096\", \"1297\", \"1271\", \"1077\"]}, {\"section\": \"\", \"numbers\": [\"1209\", \"1381\", \"1456\", \"1595\", \"1649\", \"1672\", \"1750\", \"1779\", \"2080\"]}, {\"section\": \"\", \"numbers\": [\"1867\"]}, {\"section\": \"\", \"numbers\": [\"getr. 1063\", \"2079\", \"2230\", \"2204\", \"2256\", \"2287\", \"2278\", \"2367\"]}], \"annotation_original\": \"B. P. ag. 334\\nGemeinschaftliche Waldweide\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"Entry 16 contains 'P. V. g. 20.' annotation (likely 'per Verordnung gemäß' or similar). Entry 17 has a long parcel list including 'getr.' (likely 'getrennt' or 'getheilt') and mentions 'Gemeinschaftliche Waldweide' in the remarks column.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274349,
+  "id": "20260925022538e10ca9e50e1849b1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022538e10ca9e50e1849b1",
+  "usage": {
+    "completion_tokens": 913,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 540
+    },
+    "total_tokens": 2321
+  }
+}

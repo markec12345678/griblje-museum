@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"40\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I, II, III, IV\",\n      \"house_no\": \"65\",\n      \"owner_original\": \"Widhann Georg häusler und Gärtner\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"26\", \"52\", \"59\", \"372\", \"384\", \"398\", \"399\", \"401\", \"402\", \"479\", \"546\", \"556\", \"560\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"100\", \"710\", \"677[?]\", \"708\", \"718\", \"317\", \"876\", \"857\", \"979\", \"1001\", \"1600\", \"1610\", \"1629\", \"1631\", \"1677\", \"1685\", \"1690\", \"1701\", \"1709\", \"1719\", \"1722\", \"1640\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"1844\", \"1855\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1929\", \"2000\", \"2017\", \"2020\", \"2039\", \"2042\", \"2051\", \"2061\", \"2070\", \"2075\", \"2089\", \"2099\", \"2103\", \"2146\", \"2157\", \"2162\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. 46. 48.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"677\"],\n      \"changes\": \"Corrected 'Gärtler' to 'Gärtner'. Moved 'B. P. 46. 48.' from owner field to annotation field.\"\n    },\n    {\n      \"entry_no\": \"41\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I, II, III/IV, IV\",\n      \"house_no\": \"66\",\n      \"owner_original\": \"Widhann Georg häusler und Gärtner\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"22\", \"53\", \"58\", \"362\", \"387\", \"562\", \"583\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"107\", \"716\", \"761\", \"1048\", \"1057[?]\", \"1069\", \"1164\", \"1203\", \"1241\", \"1346\", \"1459\", \"1462[?]\"]\n        },\n        {\n          \"section\": \"III/IV\",\n          \"numbers\": [\"1802\", \"1803\", \"1805\", \"1832\", \"1833\", \"1876\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1977\", \"1990\", \"2000\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. 49. 50.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"1057\", \"1462\"],\n      \"changes\": \"Corrected 'Gärtler' to 'Gärtner'. Moved 'B. P. 49. 50.' from owner field to annotation field.\"\n    }\n  ],\n  \"page_notes\": \"The draft incorrectly included the 'B. P.' (likely Besitz-Parzellen or similar) references within the owner name string; these are clearly annotations at the bottom of the entry block in the original image. The spelling of the occupation is 'Gärtner', not 'Gärtler'. The section for parcels 1802-1876 in row 41 is written as 'III/IV' or 'III. IV.' in the manuscript.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277146,
+  "id": "202609250312098e834901cf4a4f0a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250312098e834901cf4a4f0a",
+  "usage": {
+    "completion_tokens": 888,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3125,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "total_tokens": 4013
+  }
+}

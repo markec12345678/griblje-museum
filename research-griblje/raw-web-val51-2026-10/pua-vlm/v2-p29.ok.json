@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"V.T.\",\n  \"rows\": [\n    {\n      \"entry_no\": \"37\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"21\",\n      \"owner_original\": \"Pfarrer Michael Sautter\",\n      \"status_original\": \"hiesiger\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"770\", \"774\"]},\n        {\"section\": \"II\", \"numbers\": [\"469\", \"765\", \"782\", \"803\", \"815\", \"822\", \"829\", \"830\", \"854\", \"863\", \"872\", \"935\", \"940\", \"953\", \"958\", \"963\", \"1000\", \"1016\", \"1021\", \"1025\", \"1030\", \"1044\", \"1048\", \"1050\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"998\"]},\n        {\"section\": \"IV\", \"numbers\": [\"793\", \"799\"]}\n      ],\n      \"annotation_original\": \"R. P. 27. 20.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Added missing row from image\"\n    },\n    {\n      \"entry_no\": \"38\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"40\",\n      \"owner_original\": \"Pfarrkirche Sankt Leonhard\",\n      \"status_original\": \"hiesige\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"161\", \"165\", \"169\", \"170\", \"177\", \"178\", \"179\", \"180\", \"181\", \"182\", \"183\", \"184\", \"185\", \"186\", \"187\", \"188\", \"189\", \"190\", \"191\", \"192\", \"193\", \"194\", \"195\", \"196\", \"197\", \"198\", \"199\", \"200\", \"201\", \"202\", \"203\", \"204\", \"205\", \"206\", \"207\", \"208\", \"209\", \"210\", \"211\", \"212\", \"213\", \"214\", \"215\", \"216\", \"217\", \"218\", \"219\", \"220\", \"221\", \"222\", \"223\", \"224\", \"225\", \"226\", \"227\", \"228\", \"229\", \"230\", \"231\", \"232\", \"233\", \"234\", \"235\", \"236\", \"237\", \"238\", \"239\", \"240\", \"241\", \"242\", \"243\", \"244\", \"245\", \"246\", \"247\", \"248\", \"249\", \"250\", \"251\", \"252\", \"253\", \"254\", \"255\", \"256\", \"257\", \"258\", \"259\", \"260\", \"261\", \"262\", \"263\", \"264\", \"265\", \"266\", \"267\", \"268\", \"269\", \"270\", \"271\", \"272\", \"273\", \"274\", \"275\", \"276\", \"277\", \"278\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Added missing row from image\"\n    }\n  ],\n  \"page_notes\": \"Draft was empty. Both rows (37 and 38) were transcribed from the image. Row 37 contains parcels across sections I, II, III/IV, and IV. Row 38 contains a large list of parcels in section I.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277261,
+  "id": "20260925031412bb22954b94844080",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031412bb22954b94844080",
+  "usage": {
+    "completion_tokens": 851,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1298,
+    "prompt_tokens_details": {
+      "cached_tokens": 430
+    },
+    "total_tokens": 2149
+  }
+}

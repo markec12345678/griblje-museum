@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"V.T.\",\n  \"rows\": [\n    {\n      \"entry_no\": \"93\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"IV.\",\n      \"house_no\": \"6\",\n      \"owner_original\": \"Wandsteiner Mihl. baur. zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\n            \"eib.\",\n            \"4th.\",\n            \"466.\"\n          ]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected parcel section to IV. (draft had V. for some entries).\"\n    },\n    {\n      \"entry_no\": \"94\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"V.\",\n      \"house_no\": \"7\",\n      \"owner_original\": \"Wandsteiner Balth. baur. zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\n            \"2tt.\",\n            \"202.\"\n          ]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"\"\n    }\n  ],\n  \"page_notes\": \"The page contains two rows (93 and 94). The handwriting is clear Kurrent script. Entry 93 belongs to Section IV., and entry 94 belongs to Section V.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277782,
+  "id": "202609250322597c312d55bc784072",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250322597c312d55bc784072",
+  "usage": {
+    "completion_tokens": 361,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1530,
+    "prompt_tokens_details": {
+      "cached_tokens": 428
+    },
+    "total_tokens": 1891
+  }
+}

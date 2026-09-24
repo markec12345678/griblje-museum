@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Page VI of the alphabetical register of landowners for the municipality of Grüble, showing entries 7, 8, and 9 with their respective parcel numbers across sections I through V.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"7\",\n      \"section\": \"\",\n      \"house_no\": \"70\",\n      \"owner_original\": \"Grübler Maria Leutnerin zu Grübln\",\n      \"status_original\": \"Leutnerin\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"70\", \"161\", \"82\", \"517\", \"676\", \"799\", \"962\", \"215\", \"246\", \"282\", \"426\", \"481\", \"886\"]},\n        {\"section\": \"II\", \"numbers\": [\"216\", \"276\", \"26\", \"386\", \"61\", \"62\", \"656\", \"746\", \"793\", \"1833\"]},\n        {\"section\": \"III\", \"numbers\": [\"1857\", \"1703\", \"1709\", \"769\", \"1758\", \"1793\", \"1899\", \"1795\", \"1796\", \"1811\", \"1840\", \"1859\", \"1863\", \"1883\"]},\n        {\"section\": \"IV\", \"numbers\": [\"177\", \"2400\", \"2459\"]}\n      ],\n      \"annotation_original\": \"B.P. 90.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"8\",\n      \"section\": \"\",\n      \"house_no\": \"66\",\n      \"owner_original\": \"Brincz Maria Leutnerin zu Grübln\",\n      \"status_original\": \"Leutnerin\",\n      \"residence_original\": \"Grübln\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"160\", \"236\", \"338\", \"556\", \"778\", \"584\"]},\n        {\"section\": \"II\", \"numbers\": [\"229\", \"270\", \"257\", \"275\"]},\n        {\"section\": \"III\", \"numbers\": [\"1682\", \"1697\", \"1698\", \"1706\", \"1713\", \"1720\", \"1733\", \"1741\", \"1761\", \"1789\", \"1875\", \"1839\", \"1846\", \"1856\", \"1868\", \"1826\", \"1777\", \"1809\", \"1908\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1890\", \"1930\", \"1987\"]}\n      ],\n      \"annotation_original\": \"R.P. 37. 32.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"9\",\n      \"section\": \"\",\n      \"house_no\": \"0\",\n      \"owner_original\": \"Commenda Fischerwies\",\n      \"status_original\": \"Commenda\",\n      \"residence_original\": \"Fischerwies\",\n      \"parcels\": [\n        {\"section\": \"V\", \"numbers\": [\"2442\", \"2470\", \"2492\", \"2505\", \"2489\", \"2462\", \"2453\", \"2458\", \"2481\", \"2492\", \"2493\", \"2559\", \"2579\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 7 has a marginal note 'B.P. 90.' in the owner column. Entry 8 has a marginal note 'R.P. 37. 32.' in the owner column. The handwriting is clear Kurrent script with some abbreviations (e.g., numbers like 2442 written with a superscript or connected style).\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274260,
+  "id": "20260925022359a1543b7a998340cb",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022359a1543b7a998340cb",
+  "usage": {
+    "completion_tokens": 900,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2308
+  }
+}

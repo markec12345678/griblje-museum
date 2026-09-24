@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"VT\",\n  \"rows\": [\n    {\n      \"entry_no\": \"35\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"16\",\n      \"owner_original\": \"P. Rieger, Wirths Besitzer zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"696\", \"724\", \"1000\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"698\", \"1023\", \"1033\", \"1076\", \"1078\", \"1084\", \"1091\", \"1101\", \"1126\", \"1130\", \"1153\", \"1169\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"1024\", \"1052\", \"1056\", \"1067\", \"1069\", \"1205\", \"1251\", \"1286\"]\n        }\n      ],\n      \"annotation_original\": \"B. St. 78.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner name from 'P. Rieger, Wirths Besitzer' to 'P. Rieger, Wirths Besitzer zu Grübln'.\"\n    },\n    {\n      \"entry_no\": \"36\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"20\",\n      \"owner_original\": \"Johann Michael Rieger, Besitzer zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"703\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"701\", \"702\", \"710\", \"711\", \"712\", \"713\", \"714\", \"715\", \"716\", \"717\", \"718\", \"719\", \"720\", \"721\", \"722\", \"723\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"1193\", \"1261\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"\"\n    }\n  ],\n  \"page_notes\": \"Page contains entries 35 and 36. Entry 35 has a long list of parcels across sections I, II, and IV. Entry 36 follows with parcels in sections I, II, and IV.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277211,
+  "id": "20260925031317a7666d1628e14ad6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031317a7666d1628e14ad6",
+  "usage": {
+    "completion_tokens": 582,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2296,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2878
+  }
+}

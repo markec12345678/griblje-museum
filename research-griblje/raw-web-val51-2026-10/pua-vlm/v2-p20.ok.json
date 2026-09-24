@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"V.T\", \"rows\": [{\"entry_no\": \"38\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"62\", \"owner_original\": \"Brinczhan / Witwe Brinczhan Gütlin\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"637\", \"734\", \"269\", \"275\", \"279\", \"281\", \"297\", \"299\", \"301\", \"303\", \"306/308\", \"302/309\"]}, {\"section\": \"III\", \"numbers\": [\"746\", \"747/748\", \"751\", \"763\", \"776\"]}, {\"section\": \"II\", \"numbers\": [\"709\", \"816\", \"819\", \"820\", \"822\", \"823\", \"824\", \"825\", \"826\", \"827\", \"828\", \"829\", \"831\", \"832\", \"833\", \"835\", \"836\", \"837\", \"838\", \"840\", \"841\", \"842\"]}, {\"section\": \"III\", \"numbers\": [\"987/988\"]}, {\"section\": \"IV\", \"numbers\": [\"1020/1021\", \"1030\", \"1045\", \"1050\", \"1083\", \"1091\", \"1102\", \"1112/1114\", \"1126\", \"1130\", \"1159\", \"1203\", \"1213\", \"1254\"]}], \"annotation_original\": \"O. J. 52.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"\"}, {\"entry_no\": \"39\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"46\", \"owner_original\": \"Lahodathar / Wittib Lahodatharin\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"486\"]}, {\"section\": \"II\", \"numbers\": [\"652\", \"700\", \"707\", \"710\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"\"}], \"page_notes\": \"The page contains entries 38 and 39. Entry 38 is a large multi-section entry for the widow of Brinczhan with an annotation 'O. J. 52.'. Entry 39 is for the widow Lahodathar (Wittib Lahodatharin) with parcels in sections I and II.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277128,
+  "id": "202609250311558b9012635e184cda",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250311558b9012635e184cda",
+  "usage": {
+    "completion_tokens": 584,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2664,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3248
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"36-37\",\n  \"rows\": [\n    {\n      \"entry_no\": \"36\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"37\",\n      \"owner_original\": \"Krischan / Peter / Bauer in Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"166\", \"168\", \"167\", \"188\", \"199\", \"403\", \"408\", \"276\", \"358\", \"86\", \"297\", \"395\", \"300\", \"326\", \"329\", \"334\", \"366\", \"370\", \"374\", \"328\", \"392\", \"388\", \"326\", \"328\", \"326\", \"347\", \"97\", \"358\", \"497\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"1173\", \"1169\", \"1207\", \"943\"]\n        },\n        {\n          \"section\": \"III/V.\",\n          \"numbers\": [\"1970\", \"9978\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"1672\", \"2472\", \"2367\", \"2324\"]\n        }\n      ],\n      \"annotation_original\": \"P.P. 85.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and sections against the image. The draft was accurate.\"\n    },\n    {\n      \"entry_no\": \"37\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"I.\",\n      \"house_no\": \"37\",\n      \"owner_original\": \"Krischan / Balda / Bauerin in Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"223\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified entry details. The draft was accurate.\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 36 and 37. Entry 36 is a large landowner with parcels across Sections I, II, III/V, and IV. Entry 37 owns a single parcel in Section I. Both reside at House No. 37.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277115,
+  "id": "20260925031145ab5f7ce90e02459b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031145ab5f7ce90e02459b",
+  "usage": {
+    "completion_tokens": 557,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2246,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2803
+  }
+}

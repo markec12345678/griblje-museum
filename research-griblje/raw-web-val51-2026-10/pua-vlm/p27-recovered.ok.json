@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Alphabetical register of landowners and their parcels for the municipality of Grüble, 1825. Contains entries for landowners starting with 'N' and 'P' (Noah N... and Peter P...), with detailed parcel numbers listed by section.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"393\", \"section\": \"\", \"house_no\": \"4\", \"owner_original\": \"Noah N[?] / Bauerhäuslbesitzer / zu Grübln\", \"status_original\": \"Bauerhäuslbesitzer\", \"residence_original\": \"zu Grübln\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"56\", \"61\", \"359\", \"581\", \"579\"]}, {\"section\": \"II\", \"numbers\": [\"368\", \"329\", \"382\", \"925\", \"940\", \"991\", \"961\", \"959\", \"1288\", \"1268\", \"1295\", \"1277\", \"1301\", \"1253\", \"1380\", \"1395\", \"1041\", \"1031\", \"1010\", \"1019\", \"1020\", \"616\", \"624\", \"629\", \"628\", \"1292\", \"1279\", \"1276\", \"1275\", \"1231\", \"1209\", \"1187\"]}, {\"section\": \"IV\", \"numbers\": [\"1179\", \"1197\", \"1209\", \"1219\", \"1229\", \"1249\", \"1259\", \"1269\"]}, {\"section\": \"V\", \"numbers\": [\"626\"]}], \"annotation_original\": \"\", \"confidence\": \"medium\", \"uncertain_words\": [\"N[?]\"]}, {\"entry_no\": \"394\", \"section\": \"\", \"house_no\": \"11\", \"owner_original\": \"Peter P[?] / Häuslbesitzer / zu Grübln\", \"status_original\": \"Häuslbesitzer\", \"residence_original\": \"zu Grübln\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"62\"]}, {\"section\": \"III\", \"numbers\": [\"763\"]}, {\"section\": \"II\", \"numbers\": [\"978\", \"981\", \"985\", \"986\", \"923\", \"919\", \"915\", \"921\", \"922\", \"1002\", \"1004\", \"1080\", \"1063\", \"1074\", \"1107\", \"1112\", \"1120\", \"1143\", \"1154\", \"1164\", \"1174\", \"1184\", \"1194\"]}], \"annotation_original\": \"\", \"confidence\": \"medium\", \"uncertain_words\": [\"P[?]\"]}], \"page_notes\": \"The bottom of the page is cut off in the image; entry 394's parcel list for Section II is incomplete. The first names of the owners are abbreviated with initials that are somewhat ambiguous in Kurrent script.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275392,
+  "id": "20260925024257ab5d7dc3fa194daa",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925024257ab5d7dc3fa194daa",
+  "usage": {
+    "completion_tokens": 678,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "total_tokens": 2086
+  }
+}

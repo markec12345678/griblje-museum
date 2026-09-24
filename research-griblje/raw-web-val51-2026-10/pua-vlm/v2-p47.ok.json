@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"95\", \"rows\": [{\"entry_no\": \"95\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"III\", \"house_no\": \"70\", \"owner_original\": \"Zollamt b. H. Neuradl in Gröbln\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"III\", \"numbers\": [\"795\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected owner field: removed '/ 795.' from name (it belongs to parcel number column). Confirmed entry_no 95, house_no 70, section III, parcel 795.\"}, {\"entry_no\": \"\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"\", \"owner_original\": \"B. P. 98.\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Confirmed row content matches image exactly.\"}], \"page_notes\": \"Page contains two rows. Row 1: Entry 95, House 70, Owner 'Zollamt b. H. Neuradl in Gröbln', Section III, Parcel 795. Row 2: Contains only text 'B. P. 98.' (likely a reference or continuation note) with no entry number, house number, or parcels listed on this line.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277977,
+  "id": "20260925032609d8ff9d48c8a74a83",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925032609d8ff9d48c8a74a83",
+  "usage": {
+    "completion_tokens": 330,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1420,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "total_tokens": 1750
+  }
+}

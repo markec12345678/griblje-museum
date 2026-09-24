@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"14-15\",\n  \"rows\": [\n    {\n      \"entry_no\": \"14\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"W\",\n      \"owner_original\": \"Friedrich Wurzer, bauer hiesig\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"31\", \"168\", \"97\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"988\", \"997\", \"998\", \"999\", \"996\", \"993\", \"992\", \"1001\", \"1003\", \"1005\", \"1000\", \"1041\", \"1050\", \"1036\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1028\", \"1027\", \"1026\", \"1029\", \"1024\", \"1023\", \"1018\", \"1019\", \"c.26\", \"c.66\", \"c.69\"]\n        }\n      ],\n      \"annotation_original\": \"L. P. b.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Removed duplicate parcel 1001 from Section II (appeared twice in draft).\"\n    },\n    {\n      \"entry_no\": \"15\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"24\",\n      \"owner_original\": \"Johann Wurzer, bauernd hiesig\",\n      \"status_original\": \"bauernd\",\n      \"residence_original\": \"hiesig\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"21\", \"22\", \"c.23\", \"c.25\", \"c.27\", \"c.28\", \"29\", \"30\", \"32\", \"33\", \"34\", \"35\", \"36\", \"169\", \"170\", \"171\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"1002\", \"1004\", \"1006\", \"1007\", \"1008\", \"1009\", \"1010\", \"1038\", \"1039\", \"1040\", \"1037\", \"1031\", \"1032\", \"1033\", \"1034\", \"1035\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"1016\", \"1015\", \"1014\", \"1013\", \"1012\", \"1011\", \"1017\", \"1020\", \"1021\", \"1022\", \"994\", \"995\"]\n        }\n      ],\n      \"annotation_original\": \"P. T. n. 70.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Reordered parcels to match visual sequence in image (I -> II -> III instead of I -> II -> III -> II).\"\n    }\n  ],\n  \"page_notes\": \"Entry 14: Section II contained a duplicate '1001' in the draft; removed one instance. Entry 15: The draft listed Section II parcels in two separate blocks (split by III); verified they belong to Section II and reordered for logical flow. Handwriting is clear Kurrent script.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790276983,
+  "id": "2026092503075973c49ce15cfd4cc3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503075973c49ce15cfd4cc3",
+  "usage": {
+    "completion_tokens": 738,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2943,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3681
+  }
+}

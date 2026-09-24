@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Page from the alphabetical register of landowners for Gemeinde Grüble, showing entries 40 and 41 (handwritten) with their associated land parcels in sections I through IV.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"40\",\n      \"section\": \"\",\n      \"house_no\": \"65\",\n      \"owner_original\": \"Widhann Georg häusler und Gärtler / B. P. 46. 48.\",\n      \"status_original\": \"häusler und Gärtler\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"26\", \"52\", \"59\", \"372\", \"384\", \"398\", \"399\", \"401\", \"402\", \"479\", \"546\", \"556\", \"560\"]},\n        {\"section\": \"II\", \"numbers\": [\"100\", \"710\", \"677[?]\", \"708\"]},\n        {\"section\": \"II\", \"numbers\": [\"718\", \"317\", \"876\", \"857\", \"979\", \"1001\", \"1600\", \"1610\", \"1629\", \"1631\", \"1677\", \"1685\", \"1690\", \"1701\", \"1709\", \"1719\", \"1722\", \"1640\"]},\n        {\"section\": \"III\", \"numbers\": [\"1844\", \"1855\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1929\", \"2000\", \"2017\", \"2020\", \"2039\", \"2042\", \"2051\", \"2061\", \"2070\", \"2075\", \"2089\", \"2099\", \"2103\", \"2146\", \"2157\", \"2162\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"677[?]\"]\n    },\n    {\n      \"entry_no\": \"41\",\n      \"section\": \"\",\n      \"house_no\": \"66\",\n      \"owner_original\": \"Widhann Georg häusler und Gärtler / B. P. 49. 50.\",\n      \"status_original\": \"häusler und Gärtler\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\"section\": \"I\", \"numbers\": [\"22\", \"53\", \"58\", \"362\", \"387\", \"562\", \"583\"]},\n        {\"section\": \"II\", \"numbers\": [\"107\", \"716\", \"761\"]},\n        {\"section\": \"II\", \"numbers\": [\"1048\", \"1057[?]\", \"1069\", \"1164\", \"1203\", \"1241\", \"1346\", \"1459\", \"1462[?]\"]},\n        {\"section\": \"III\", \"numbers\": [\"1802\", \"1803\", \"1805\"]},\n        {\"section\": \"III\", \"numbers\": [\"1832\", \"1833\"]},\n        {\"section\": \"III/IV\", \"numbers\": [\"1876\"]},\n        {\"section\": \"IV\", \"numbers\": [\"1977\", \"1990\", \"2000\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\"1057[?]\", \"1462[?]\"]\n    }\n  ],\n  \"page_notes\": \"The handwriting is in Kurrent script. Entry 40 and 41 share a similar owner name (Widhann Georg). Section II appears twice for entry 40, likely indicating a continuation or sub-division. Some numbers in the parcel lists are slightly unclear due to cursive ligatures.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790273849,
+  "id": "20260925021714e462bd504ead4479",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925021714e462bd504ead4479",
+  "usage": {
+    "completion_tokens": 835,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2243
+  }
+}
