@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"buildings\": [],\n  \"toponyms\": [\n    {\n      \"name\": \"Pod Griblani\",\n      \"px\": [165, 120]\n    },\n    {\n      \"name\": \"Lulischewki stz.\",\n      \"px\": [225, 495]\n    }\n  ],\n  \"notes\": \"The image shows the upper part of a cadastral map (Gemeinde GRÜBLE sheet A01). It contains field parcel numbers (red text, e.g., 560-600 range) but NO buildings or building parcel numbers (bp_no) are visible in this specific crop. The right edge shows the River Kolpa (labeled 'E I C H' vertically) with a red boundary line. A road runs diagonally across the center. Green lines indicate other boundaries.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790281553,
+  "id": "20260925042548c943ceb6cd1d4cd9",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925042548c943ceb6cd1d4cd9",
+  "usage": {
+    "completion_tokens": 178,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2241,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2419
+  }
+}

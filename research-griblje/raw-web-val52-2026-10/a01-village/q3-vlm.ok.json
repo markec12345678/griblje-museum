@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"quadrant\": \"A01\",\n  \"buildings\": [\n    {\"house_no\": \"56\", \"px\": [451, 311], \"reading_confidence\": \"high\"},\n    {\"house_no\": \"55\", \"px\": [376, 289], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"54\", \"px\": [419, 382], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"53\", \"px\": [368, 414], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"52\", \"px\": [244, 429], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"51\", \"px\": [184, 447], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"50\", \"px\": [79, 455], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"49\", \"px\": [162, 581], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"48\", \"px\": [143, 632], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"47\", \"px\": [276, 634], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"46\", \"px\": [234, 678], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"45\", \"px\": [171, 702], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"44\", \"px\": [93, 674], \"reading_confidence\": \"low\"},\n    {\"house_no\": \"43\", \"px\": [99, 624], \"reading_confidence\": \"low\"},\n    {\"house_no\": \"42\", \"px\": [76, 592], \"reading_confidence\": \"low\"},\n    {\"house_no\": \"41\", \"px\": [10, 550], \"reading_confidence\": \"low\"},\n    {\"house_no\": \"40\", \"px\": [392, 562], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"39\", \"px\": [430, 579], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"38\", \"px\": [436, 477], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"37\", \"px\": [503, 357], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"36\", \"px\": [554, 480], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"35\", \"px\": [512, 600], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"34\", \"px\": [344, 831], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"33\", \"px\": [257, 779], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"32\", \"px\": [198, 850], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"79\", \"px\": [526, 61], \"reading_confidence\": \"high\"},\n    {\"house_no\": \"78\", \"px\": [656, 55], \"reading_confidence\": \"high\"},\n    {\"house_no\": \"77\", \"px\": [700, 105], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"76\", \"px\": [823, 226], \"reading_confidence\": \"high\"},\n    {\"house_no\": \"75\", \"px\": [853, 112], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"74\", \"px\": [854, 275], \"reading_confidence\": \"high\"},\n    {\"house_no\": \"73\", \"px\": [686, 201], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"72\", \"px\": [662, 250], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"71\", \"px\": [715, 300], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"70\", \"px\": [772, 344], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"69\", \"px\": [739, 380], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"68\", \"px\": [666, 432], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"67\", \"px\": [661, 350], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"66\", \"px\": [720, 315], \"reading_confidence\": \"medium\"},\n    {\"house_no\": \"65\", \"px\": [590, 110], \"reading_confidence\": \"medium\"}\n  ],\n  \"toponyms\": [\n    {\"name\": \"Zohlami\", \"px\": [830, 758]},\n    {\"name\": \"Aufgenommen und berechnet durch\", \"px\": [600, 925]}\n  ],\n  \"notes\": \"Map shows a village settlement (Grüble) with clustered buildings and surrounding agricultural parcels. Green areas indicate gardens/orchards or meadows; beige areas are fields. Red numbers on parcels appear to be land registry/cadastral parcel IDs. A main road runs diagonally through the center of the image.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790280871,
+  "id": "2026092504141992d7fb9255cf4e62",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092504141992d7fb9255cf4e62",
+  "usage": {
+    "completion_tokens": 1193,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2048,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 3241
+  }
+}
