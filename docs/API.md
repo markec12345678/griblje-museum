@@ -17,7 +17,7 @@
 
 ---
 
-## Seznam poti (14)
+## Seznam poti (22)
 
 | Pot | Metoda | Namen |
 |---|---|---|
@@ -35,6 +35,20 @@
 | `/api/audio-guide` | GET | TTS avdio vodnik |
 | `/api/curator` | POST | AI kurator (retrieval + verifikacija) |
 | `/api/plan-visit` | POST | AI planiranje obiska (osebni načrt) |
+| `/api/claims` | GET · POST † | trditve z neposredno provenienco (#27/D) |
+| `/api/claims/transition` | POST † | uredniški prehodi trditev (approve/publish/…) |
+| `/api/archive-records` | GET · POST † | strukturirani arhivski metapodatki (#27/E) |
+| `/api/versions` | GET † · POST † | verzije zapisov/virov (uredniška zgodovina) |
+| `/api/versions/transition` | POST † | DRAFT→REVIEW→APPROVED→PUBLISHED (+REJECTED/ARCHIVED) |
+| `/api/moderation` | GET † · POST † | moderacijska vrsta + akcije (#27/G) |
+| `/api/moderation/report` | POST | javna prijava neprimernega prispevka |
+| `/api/health` | GET | zdravstveno stanje sistema (#27/V, U) |
+
+† = uredniški/moderacijski API — zahteva žeton v glavi `x-editorial-token`
+oz. `x-moderation-token` (deljeni žetoni, nastavljeni v produkciji; brez
+žetona pot vrne 503, z napačnim 401). Notranja polja (raziskovalne
+opombe, dokazi pravic, metapodatki moderacije) se prek javnih poti
+nikoli ne vračajo — regresijsko preverjeno v dimnih testih (#27/I).
 
 ---
 
@@ -175,11 +189,32 @@ da AI pripovedi ni bilo in načrt nosi deterministične povzetke — načrt niko
 
 ---
 
+---
+
+## Uredniški in moderacijski API (issue #27/C, D, E, G)
+
+| Akcija | Klic |
+|---|---|
+| nova verzija zapisa | `POST /api/versions` `{type:"exhibit", slug, changedBy, reason, patch}` → DRAFT |
+| prehod verzije | `POST /api/versions/transition` `{type, versionId, action: submit\|approve\|reject\|publish\|archive\|return-to-draft, by}` |
+| objava verzije | `publish` (samo iz APPROVED) v transakciji prepisuje polja zapisa iz snapshot-a; starejša PUBLISHED verzija gre v ARCHIVED |
+| nova trditev | `POST /api/claims` `{slug, statement, evidenceStatus, sourceId?, archiveRecordId?, pageRef, …}` — DOCUMENTED brez (vir + pageRef) → **422** |
+| objava trditve | `POST /api/claims/transition` `{claimId, action: approve\|publish\|…}` — publish ponovno preveri evidence gate |
+| arhivski zapis | `POST /api/archive-records` (upsert po institution+signature) |
+| moderacija | `POST /api/moderation` `{type, id, action: approve\|reject\|hide\|restore\|soft-delete, by, note?}` |
+| prijava vsebine | `POST /api/moderation/report` `{type: guestbook\|memory, id, reason?}` — 3. prijava samodejno skrije |
+
+Javna branja: `GET /api/claims?slug=<zapis>` (samo PUBLISHED, javni DTO),
+`GET /api/archive-records` (brez raziskovalnih opomb), `GET /api/health`
+(ok, baza, živi števci, konfiguracija kot zastavice, števci napak,
+correlation ID).
+
 ## Hitrostne omejitve in predpomnilnik
 - Enoten limiter v `src/lib/rate-limit.ts` (issue #27/J) z imenovanimi kvotami:
   - AI vodnik (`/api/guide`): **12 / 10 min / IP**;
   - prispevki skupnosti (`guestbook`, `memories`): **5 / 10 min / IP**;
-  - dejavna TTS sinteza (`/api/audio-guide`, samo hladni klici): **30 / 5 min / IP**.
+  - dejavna TTS sinteza (`/api/audio-guide`, samo hladni klici): **30 / 5 min / IP**;
+  - prijave vsebin (`/api/moderation/report`): **5 / 10 min / IP**.
 - AI odgovori predpomnjeni **24 h**; ostale poti brez omejitev (veljajo ravni uporabe Vercel).
 - Obseg kvote je primerek strežnika (Vercel serverless); odgovori 429 vključujejo pošteno sporočilo.
 - Pošteno rabo pričakujemo po duhu licence CC BY-SA 4.0 — navedite vir.
