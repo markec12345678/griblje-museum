@@ -60,6 +60,12 @@ export async function GET(request: Request) {
         url: s.url,
         noteSi: s.noteSi,
         noteEn: s.noteEn,
+        // Pravice (#27/F) — javno varna podmnožina; permissionEvidence in
+        // rightsVerifiedAt ostajata interno (issue #27/I).
+        creator: s.creator,
+        licenseUrl: s.licenseUrl,
+        attribution: s.attribution,
+        restrictions: s.restrictions,
       })),
     }));
 
