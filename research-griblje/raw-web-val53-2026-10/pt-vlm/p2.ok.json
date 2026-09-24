@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Title page for the cadastral community Grüble (Griblje), containing the header 'Bau Parzellen Protocoll der Gemeinde Grüble' but no data rows.\", \"title_block\": \"Bau Parzellen Protocoll\\nder\\nGemeinde Grüble\", \"rows\": [], \"page_notes\": \"This page contains only the title block and printed column headers. No parcel data rows are filled in. There is a decorative swirl/flourish below the community name. The top right corner has a handwritten note 'Original' and 'III.P'.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790284849,
+  "id": "202609250520461d63d9d803994a92",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250520461d63d9d803994a92",
+  "usage": {
+    "completion_tokens": 125,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1525,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1650
+  }
+}

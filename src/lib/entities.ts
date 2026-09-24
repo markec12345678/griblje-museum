@@ -1931,6 +1931,15 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
       "Cadastre sheet A01 (1824/27): the provisional georeference in the 'Village map 1825' view (val 52) uses one anchor point (building centroid ↔ the museum's village coordinate) plus the sheet scale (320 Klafter = 277 px → 2.19 m/px); the sheet's rotation is unresolved — offsets up to several hundred metres at the edges. Remaining: control against a modern base map (GURS/eKataster or orthophoto) with ≥2 control points (St. Vitus church, Kolpa crossings), a corrected (rotated) transform and an upgraded overlay; the same applies to sheets A02–A05.",
     slugs: ["griblje-vas"],
   },
+  {
+    id: "P3-E14",
+    priority: "P3",
+    questionSi:
+      "PT N083 — Protocoll der Bau Parcellen (1825, docid 41781; 53. val): popoln konsenzni register 100 vrstic / 97 BP (40 STABLE, 51 REVIEW-CONFLICT, 9 REVIEW). Odprto: (1) vrzel BP 15–20 (p3 okrnjen; p4 začne pri 21 — 3 neodvisna branja); (2) 51 konfliktnih vezav bp→hiša (različne branje med prehodi — kontrola v polni ločljivosti ob delujočem arhiv.si); (3) PUA↔PT nesoglasja imen na istih hišnih št. (npr. bp 94 → h.40 PT »Georg Mache[?]« vs PUA »Pfarrer Rupert Sautter«) — faza 2 usklajevanja (naročilo: najprej pobrati, potem usklajevati); (4) Musterstellung der Gebäude na p8 (Wohngebäude 4/Nebengebäude 4) — obseg kompleksa nejasen; (5) polovične parcele 7½/8½ na p3; (6) Zollamt B.P. 98 (PUA opomba) v PT konfliktno.",
+    questionEn:
+      "PT N083 — Protocoll der Bau Parcellen (1825, docid 41781; val 53): a full consensus register of 100 rows / 97 building parcels (40 STABLE, 51 REVIEW-CONFLICT, 9 REVIEW). Open: (1) the BP 15–20 gap (p3 truncated; p4 starts at 21 — three independent readings); (2) 51 conflicting bp→house links (different readings between passes — full-resolution control once arhiv.si is reachable); (3) PUA↔PT name disagreements on the same house numbers (e.g. bp 94 → h.40 PT 'Georg Mache[?]' vs PUA 'Pfarrer Rupert Sautter') — reconciliation phase 2 (order: collect first, then reconcile); (4) the Musterstellung der Gebäude on p8 (Wohngebäude 4/Nebengebäude 4) — the extent of the complex is unclear; (5) half parcels 7½/8½ on p3; (6) the customs office B.P. 98 (PUA note) conflicts in PT.",
+    slugs: ["griblje-vas"],
+  },
 ];
 
 // ---------------------------------------------------------------------------
