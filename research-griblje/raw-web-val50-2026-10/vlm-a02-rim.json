@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi franciscejskega katastrskega lista (k.o. N83 Grüble/Griblje, ok. 1824) so bili prepoznani naslednji krajevni nazivi (toponimi):\n\n**1. Naselja in zaselki:**\n*   **St Veith** – središče naselja (severovzhodno od sredine), naselje/zaselek\n*   **Grüble** – središčni del (vzhodno od St. Veith), naselje/zaselek\n*   **Boschonschitz / Bosconschitz** – vzhodno-severovzhodno od Grüble, zaselek\n*   **Robav / Robau** – južno od Grüble, zaselek\n\n**2. Krajevna imena (toponimi) – območja in zemljišča:**\n*   **V Dollye / V Dolle** – severozahodno od St. Veith, območje/razglašen kraj\n*   **Na Drugi** – severovzhodno nad St. Veith, območje\n*   **Holo cziach / Holo czich** – zahodno od St. Veith, travnik/zemljišče\n*   **Pod Schatuligey / Pod Schatuligeu** – jugozahodni del karte, območje/pod\n*   **Golowinigoze / Golowinigoze** – jugozahodni kot, območje (mejni predel)\n*   **Pre clauden Weide** – zahodni rob (ob meji), travnik/pašnik\n*   **Schaze / Schazye** – vzhodni rob (ob reki), območje/rečni breg\n*   **Sifurica / Sifuriza** – osrednji-jugozahodni del, travnik/zemljišče\n\n**3. Meje in večji geografski pojmi:**\n*   **Königreich Kroatien** – napis vertikalno desno (vzhodna meja), državna/mejna črta\n*   **Krainis** – napis vertikalno levo (zahodna meja), pokrajinska mejna črta\n\n---\n\n### Iskani posebni izrazi:\n\n*   **»Rim/Rimb/Rymb«**: **NI NAJDEN** (na vidnem delu karte ni zapisan)\n*   **»Fučkovci/Futschkofen/Fukowcz«**: **NI NAJDEN** (na vidnem delu karte ni zapisan; možen je zapis v manjšem merilu ali na drugem listu istega katastra)\n*   **»Stelnik/Stelzn«**: **NI NAJDEN** (na vidnem delu karte ni zapisan)\n*   **»Grabrijan/Grabrian«**: **NI NAJDEN** (na vidnem delu karte ni zapisan)\n\n**Opomba:** Nekateri zapisani nazivi (npr. *Holo cziach*, *Sifurica*, *Pod Schatuligey*) so verjetno imena posameznih parcel, travnikov ali gozdnih kosov, ki so se ohranila le lokalno ali v arhivskih zapisih, in danes morda niso več v splošni rabi. Črkovanje je povzeto po originalnem rokopisu (franciscejska ortografija, ki uporablja tudi *y* namesto *ij* in *sch* za *š*).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790271998,
+  "id": "20260925014608ada379cdaf4c4190",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925014608ada379cdaf4c4190",
+  "usage": {
+    "completion_tokens": 870,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6046,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6916
+  }
+}

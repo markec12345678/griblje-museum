@@ -1904,6 +1904,15 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
       "PUA p48/p49 (1825): the closing list '… in der Gemeinde Grüble' (long section-by-section parcel lists I–V without owner names — common/undivided land?) and the entry 'F. Kirch' (no. 97, parcel V 2700) still lack an exact transcription of the numbers; the document bears two signatures and the date '10. … 1825' — the month to be read at a control transcription. Also re-download the two truncated pages p26 and p42 — salvage reading (truncated JPEG, PIL+VLM, val 48/49) shows title blocks 'Alphabetisches Verzeichniß' (Land/Bezirk/Kreis/Gemeinde blank) with no visible entries; the bodies below the cut cannot be verified.",
     slugs: ["griblje-vas"],
   },
+  {
+    id: "P2-E13",
+    priority: "P2",
+    questionSi:
+      "Toponim »Rim« (KL 1937: dve samotni Grabrijanovi hiši, »bolj v steljnikih e blizu Fukovcev«): sistematično VLM iskanje po vseh 5 grafičnih listih A01–A05 (50. val) = NEGATIVEN zadetek pri bazični ločljivosti — negativni zadetek NI dokaz odsotnosti; korooboracija okolice: toponimi Steln-/Stelz- na 3 listih (A03 vzhod, A04 jug med Bresnikom in ADLESCHITZ, A05 vzhodni rob; vse preliminarno). Ostaja: seja-vezani IIIF rastri v polni ločljivosti (kvadranti A04-jug, A03-vzhod, A05-vzhod) + kontrola PUA indeksa (hiše brez priimka / skupna lastvina); Grabrijan v prepisu PUA 1825 ni — vez 1825→1937 nepovezana.",
+    questionEn:
+      "Toponym 'Rim' (KL 1937: two solitary Grabrijan houses, 'more in the hay-meadows near Fučkovci'): systematic VLM search across all 5 graphical sheets A01–A05 (val 50) = NEGATIVE result at base resolution — a negative result is NOT proof of absence; area corroboration: Steln-/Stelz- toponyms on 3 sheets (A03 east, A04 south between Bresnik and ADLESCHITZ, A05 east edge; all preliminary). Remaining: session-bound IIIF rasters at full resolution (quadrants A04-south, A03-east, A05-east) + PUA index control (houses without a surname / common property); Grabrijan is absent from the 1825 PUA transcription — the 1825→1937 link remains unconnected.",
+    slugs: ["griblje-vas"],
+  },
 ];
 
 // ---------------------------------------------------------------------------
