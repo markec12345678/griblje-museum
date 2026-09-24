@@ -14,7 +14,8 @@ import { sha256Of } from "../src/lib/fixity";
  * (lokalni SQLite vzorec), testi uporabijo DIRECT_URL (Neon direktni
  * endpoint — brez PgBouncerja, zato tudi primernejši za transakcije).
  * V CI/produkciji je DATABASE_URL nastavljen pravilno in je varovalka
- * brez učinka. */
+ * brez učinka. Brez postgres URL-a (npr. quality job brez service) se
+ * preverbi eleganto preskočijo — napaka je razvidna, ne tiha. */
 if (
   process.env.DATABASE_URL &&
   process.env.DATABASE_URL.startsWith("file:") &&
@@ -22,14 +23,25 @@ if (
 ) {
   process.env.DATABASE_URL = process.env.DIRECT_URL;
 }
+const HAS_POSTGRES = (process.env.DATABASE_URL ?? "").startsWith("postgres");
+
 /* Dinamični uvoz: db.ts bere DATABASE_URL ob inicializaciji — varovalka
- * zgoraj mora teči PRVÁ. */
-const { db } = await import("../src/lib/db");
+ * zgoraj mora teči PRVÁ. Brez baze modula ne nalagamo (db.ts meče jasno
+ * napako ob manjkajočem URL — to NE smemo pokvariti testov, ki baze ne
+ * potrebujejo). Testi se v tem primeru preskočijo (dbTest), zato db
+ * tudi dejansko ne bo uporabljen. */
+type DbModule = typeof import("../src/lib/db");
+const db: DbModule["db"] = HAS_POSTGRES
+  ? (await import("../src/lib/db")).db
+  : (undefined as unknown as DbModule["db"]);
+
+/** Lokalni preskok celotne datoteke, če PostgreSQL ni dosegljiv. */
+const dbTest = HAS_POSTGRES ? test : test.skip;
 
 const RUN = `TEST-GOV-${Date.now()}`;
 const tempExhibitIds: string[] = [];
 
-afterAll(async () => {
+if (HAS_POSTGRES) afterAll(async () => {
   // Vrstni red zaradi FK: trditve → viri → verzije → asseti → zapisi → arhivske enote
   await db.claim.deleteMany({ where: { OR: [{ statement: { startsWith: RUN } }, { exhibit: { slug: { startsWith: RUN } } }] } });
   await db.source.deleteMany({ where: { exhibit: { slug: { startsWith: RUN } } } });
@@ -63,7 +75,7 @@ async function tempExhibit(suffix: string) {
 /* --- Database: omejitve, FK, transakcije, sočasnost (#27/S) ---------------- */
 
 describe("database-governance (#27/S) — omejitve baze", () => {
-  test("kršitev tuje ključa (asset na neobstoječ zapis) je zavrnjena (P2003)", async () => {
+  dbTest("kršitev tuje ključa (asset na neobstoječ zapis) je zavrnjena (P2003)", async () => {
     // PrismaPromise ni nativen Promise — expect().rejects ne velja; uporabimo
     // eksplicitno usodo: success → null, napaka → napaka.
     const err = await db.digitalAsset
@@ -85,7 +97,7 @@ describe("database-governance (#27/S) — omejitve baze", () => {
     expect((err as Prisma.PrismaClientKnownRequestError).code).toBe("P2003");
   });
 
-  test("transakcijski rollback: napaka sredi transakcije ne pušča sledi", async () => {
+  dbTest("transakcijski rollback: napaka sredi transakcije ne pušča sledi", async () => {
     const before = await db.archiveRecord.count({ where: { institution: { startsWith: "TEST-GOV" } } });
     await db
       .$transaction(async (tx) => {
@@ -104,7 +116,7 @@ describe("database-governance (#27/S) — omejitve baze", () => {
     expect(after).toBe(before);
   });
 
-  test("sočasna pisanja: enolična omejitev (institucija+signatura) zavrne duplikat (P2002)", async () => {
+  dbTest("sočasna pisanja: enolična omejitev (institucija+signatura) zavrne duplikat (P2002)", async () => {
     const data = {
       institution: `${RUN}-race`,
       fonds: "Test fond",
@@ -136,7 +148,7 @@ describe("database-governance (#27/S) — omejitve baze", () => {
 /* --- Provenance: brisanje vira, neobjavljene trditve (#27/S) ---------------- */
 
 describe("database-governance (#27/S) — provenienca", () => {
-  test("brisanje vira: trditev ostane, vezava se počisti (SetNull) → AI ne sme kot dejstvo", async () => {
+  dbTest("brisanje vira: trditev ostane, vezava se počisti (SetNull) → AI ne sme kot dejstvo", async () => {
     const exhibit = await tempExhibit("setnull");
     const source = await db.source.create({
       data: {
@@ -192,7 +204,7 @@ describe("database-governance (#27/S) — provenienca", () => {
     ).toBe(false);
   });
 
-  test("neobjavljena trditev ni v javnem vzorcu poizvedbe (status PUBLISHED)", async () => {
+  dbTest("neobjavljena trditev ni v javnem vzorcu poizvedbe (status PUBLISHED)", async () => {
     const exhibit = await tempExhibit("draft");
     await db.claim.create({
       data: {
@@ -219,7 +231,7 @@ describe("database-governance (#27/S) — provenienca", () => {
     expect(afterPublish).toHaveLength(1);
   });
 
-  test("notranja polja ne puščajo skozi javni DTO (#27/I)", () => {
+  dbTest("notranja polja ne puščajo skozi javni DTO (#27/I)", () => {
     const dto = publicClaimDTO({
       id: "id-1",
       statement: "Trditev",
@@ -243,7 +255,7 @@ describe("database-governance (#27/S) — provenienca", () => {
 /* --- Assets: checksum, derivacija, pravice, vidnost (#27/S) ----------------- */
 
 describe("database-governance (#27/S) — asseti", () => {
-  test("derivacijska veriga + checksum vsebine (SHA-256)", async () => {
+  dbTest("derivacijska veriga + checksum vsebine (SHA-256)", async () => {
     const exhibit = await tempExhibit("asset");
     const content = Buffer.from(`vsebina-masterja-${RUN}`);
     const master = await db.digitalAsset.create({
@@ -285,7 +297,7 @@ describe("database-governance (#27/S) — asseti", () => {
     expect(orphan!.derivedFromId).toBeNull();
   });
 
-  test("javni vzorec poizvedbe servira izključno PUBLIC (#27/I)", async () => {
+  dbTest("javni vzorec poizvedbe servira izključno PUBLIC (#27/I)", async () => {
     const exhibit = await tempExhibit("access");
     const shared = {
       mime: "image/jpeg",
@@ -316,7 +328,7 @@ describe("database-governance (#27/S) — asseti", () => {
     expect(publicAssets[0].storageKey).toBe(`${RUN}-A-public.jpg`);
   });
 
-  test("pravice so izrecne: nosilec + licenca obvezna, privzeto UNKNOWN ni skrit", async () => {
+  dbTest("pravice so izrecne: nosilec + licenca obvezna, privzeto UNKNOWN ni skrit", async () => {
     const exhibit = await tempExhibit("rights");
     const asset = await db.digitalAsset.create({
       data: {
