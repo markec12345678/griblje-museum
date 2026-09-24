@@ -1863,36 +1863,45 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
     id: "P2-E8",
     priority: "P2",
     questionSi:
-      "PUA fol. 4 (1825): vpis »Brincz Michl Karlina?«, hiša št. 25 — ali je to »Brinc, vdova/Michlova Karolina«, ženski lastnik, ali dvočlanska zveza imen? Kurrent branje negotovo; hiša 25 leži med Brinčevima 24 in 26. Kustos potrdi ob specializiranem prepisu.",
+      "PUA h. 25 (1825): val 48 je branje »Karlina?« opustil — stran prebere »Brincz Michl Bauerin« (ženski status, vzorec vdov, ki se potrjuje na h. 16 in 61 Frillak, h. 2 Hlibetz, h. 6 Hahitsch). Ostaja: identifikacija osebe (vdova koga?) po matrikah Podzemelj in vez na hišo 25.",
     questionEn:
-      "PUA fol. 4 (1825): entry 'Brincz Michl Karlina?', house no. 25 — is this 'Brinc, the widow/Michl's Karolina', a female owner, or a pair of names? Kurrent reading uncertain; house 25 lies between the Brinc houses 24 and 26. Curator to confirm at specialised transcription.",
+      "PUA no. 25 (1825): val 48 abandoned the 'Karlina?' reading — the page reads 'Brincz Michl Bauerin' (a feminine status, the widow pattern corroborated at nos. 16 and 61 Frillak, 2 Hlibetz, 6 Hahitsch). Remaining: identification of the person (widow of whom?) via the Podzemelj registers and the link to house 25.",
     slugs: ["griblje-vas"],
   },
   {
     id: "P2-E9",
     priority: "P2",
     questionSi:
-      "PUA fol. 6 (1825): institucionalni lastnik »Commenda …« (obsežen sklop parcel v Section V, hiša/V. oddelka) — Malteška komenda? Religionsfonds? Natančna ustanova in njeni gribeljski dohodki čakajo zgodovinsko kontrolo (Malteški red v Beli krajini do 1797/1807).",
+      "PUA (1825): institucionalni lastnik »Commenda Tahern unde.« (Nro. 9, brez hišne št., obsežen sklop parcel Section V; val 48 prepis str. p06) — Malteška komenda? Religionsfonds? Identiteta ustanove čaka zgodovinsko kontrolo (Malteški red v Beli krajini do 1797/1807); »Tahern unde« je še nerazčlenjen izraz.",
     questionEn:
-      "PUA fol. 6 (1825): institutional owner 'Commenda …' (a large block of parcels in Section V) — the Hospitaller commandery? The Religionsfonds? The exact institution and its Griblje revenues await historical control (the Order of Malta in Bela krajina until 1797/1807).",
+      "PUA (1825): the institutional owner 'Commenda Tahern unde.' (entry no. 9, no house number, a large block of parcels in Section V; val 48 transcription of p06) — the Hospitaller commandery? The Religionsfonds? The identity of the institution awaits historical control (the Order of Malta in Bela krajina until 1797/1807); 'Tahern unde' is an unresolved expression.",
     slugs: ["griblje-vas"],
   },
   {
     id: "P3-E10",
     priority: "P3",
     questionSi:
-      "PUA fol. 3 (1825): opomba v Anmerkung — »Baron Apfaltrer?« kot (fevdalni) lastnik; Kurrent branje priimka negotovo (Adlstorfer/Apfaltrer). Vez na fevdalno zgodovino Bele krajine potrdi referenčna literatura.",
+      "PUA (1825): plemiška lastvina v k.o. Griblje — val 48 prebere »Baron Apfaltrer« v Section G pri vpisu hiše 23 (Brincz Mathias, p03) in ločen vpis »Husitsch Baron von Gradac« s parcelama III 748/777 (Nro. 20, p11). Ostaja: identiteta obeh nosilcev naslova po referenčni literaturi (Apfaltrerji in gospostvo Gradac; ali sta ista oseba?).",
     questionEn:
-      "PUA fol. 3 (1825): a note in the Anmerkung — 'Baron Apfaltrer?' as (feudal) owner; Kurrent surname reading uncertain (Adlstorfer/Apfaltrer). Reference literature to confirm the link with the feudal history of Bela krajina.",
+      "PUA (1825): noble land in c.m. Griblje — val 48 reads 'Baron Apfaltrer' in Section G at the entry for house 23 (Brincz Mathias, p03) and a separate entry 'Husitsch Baron von Gradac' with parcels III 748/777 (no. 20, p11). Remaining: identification of both title holders via reference literature (the Apfaltrer family and the lordship of Gradac; are they the same person?).",
     slugs: ["griblje-vas"],
   },
   {
     id: "P3-E11",
     priority: "P3",
     questionSi:
-      "PUA fol. 20 (1825): vpis »K…an Jožef« (branje začetka priimka nestabilno: Klobučan? Kabotschan?), hiša št. 46 — NISO vgrajene kot dejstvo; posebej preveri ob specializiranem prepisu fol. 7–49 (poln seznam lastnikov za leto 1825).",
+      "PUA h. 46 (1825): val 48 prebere »Ribetitsch? Jožefa? Söllner von Grübln« (p20) — val47 branje »K…an Jožef« opuščeno kot nestabilno; status Söllner (kežar) je stabilno prebran, priimek pa še ne. Posebej preveri ob kontrolnem prepisu (Ribič? Ribetitsch?) in poveži s poznejšimi registri hiše 46.",
     questionEn:
-      "PUA fol. 20 (1825): entry 'K…an Jožef' (unstable reading of the surname start: Klobučan? Kabotschan?), house no. 46 — NOT imported as fact; to verify at the specialised transcription of fol. 7–49 (the full 1825 owner list).",
+      "PUA no. 46 (1825): val 48 reads 'Ribetitsch? Jožefa? Söllner von Grübln' (p20) — the val 47 reading 'K…an Jožef' abandoned as unstable; the status Söllner (cottager) is read stably, the surname is not. To verify at a control transcription (Ribič? Ribetitsch?) and to link with later registers of house 46.",
+    slugs: ["griblje-vas"],
+  },
+  {
+    id: "P3-E12",
+    priority: "P3",
+    questionSi:
+      "PUA p48/p49 (1825): zaključni seznam »… in der Gemeinde Grüble« (dolgi seznami parcel po sekcijah I–V, brez imen lastnikov — skupna/nerazdeljena zemlja?) ter vpis »F. Kirch« (Nro. 97, parcela V 2700) ostajata brez natančne transkripcije številk; dokument ima podpisa in datum »10. … 1825« — mesec prebrati ob kontrolnem prepisu. Prav tako ponovno prenesti okrnjeni strani p26 in p42.",
+    questionEn:
+      "PUA p48/p49 (1825): the closing list '… in der Gemeinde Grüble' (long section-by-section parcel lists I–V without owner names — common/undivided land?) and the entry 'F. Kirch' (no. 97, parcel V 2700) still lack an exact transcription of the numbers; the document bears two signatures and the date '10. … 1825' — the month to be read at a control transcription. Also re-download the two truncated pages p26 and p42.",
     slugs: ["griblje-vas"],
   },
 ];
