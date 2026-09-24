@@ -8,6 +8,7 @@ import {
   LIMITS,
 } from "@/lib/contributions";
 import { clientIpOf, rateLimited } from "@/lib/rate-limit";
+import { correlationIdOf, logEvent, recordError } from "@/lib/obs";
 
 export const dynamic = "force-dynamic";
 
@@ -87,6 +88,7 @@ export async function OPTIONS() {
  * Omejitev: 5 prispevkov / 10 min na IP na primerek strežnika.
  */
 export async function POST(request: Request) {
+  const correlationId = correlationIdOf(request);
   try {
     const ip = clientIpOf(request);
     if (rateLimited("contributions", ip)) {
@@ -138,7 +140,8 @@ export async function POST(request: Request) {
     // 201 tudi za `pending` — prispevek je sprejet, objava pa odvisna od pregleda.
     return NextResponse.json({ ok: true, status }, { status: 201 });
   } catch (error) {
-    console.error("API /api/guestbook POST error:", error);
+    recordError("api");
+    logEvent("guestbook", "error", "shranjevanje vpisa ni uspelo", { correlationId });
     // Strežniške funkcije z bralnim datotečnim sistemom (npr. Vercel) —
     // bazo lahko beremo, ne pa tudi zapisujemo. Povemo pošteno.
     if (isReadOnlyDatabase(error)) {
