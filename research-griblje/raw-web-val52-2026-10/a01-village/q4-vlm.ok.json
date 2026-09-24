@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"quadrant\": \"A01 (Grüble)\",\n  \"buildings\": [],\n  \"toponyms\": [\n    {\"name\": \"Grüble\", \"px\": [220, 95]},\n    {\"name\": \"CROATIEN\", \"px\": [890, 420]},\n    {\"name\": \"Kulturgut\", \"px\": [140, 920]}\n  ],\n  \"notes\": \"No buildings with red/orange fills and house numbers are visible in this quadrant. The image primarily shows long, narrow agricultural land parcels (likely vineyards or garden plots) with red parcel numbers. A river or stream boundary is visible on the right side, separating the municipality from 'CROATIEN'. A road runs along the left/center of the lower half. The bottom left contains a signature ('Kulturgut' or similar).\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790280885,
+  "id": "2026092504143959c8b196978946f0",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092504143959c8b196978946f0",
+  "usage": {
+    "completion_tokens": 188,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2048,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2236
+  }
+}
