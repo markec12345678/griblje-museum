@@ -52,10 +52,74 @@ model Exhibit {
   updatedAt     DateTime @updatedAt
   sources       Source[]
   memories      ObjectMemory[]
+  assets        DigitalAsset[]
 
   @@index([category])
   @@index([evidenceStatus])
   @@index([museumNo])
+}
+
+// --- Digital asset management (issue #27/B) ------------------------------
+// Centralni register digitalnih vsebin: fotografije, skeni, PDF, audio,
+// video, GLB/USDZ, IIIF derivati, sličice. Velikih binarnih vsebin NE
+// shranjujemo v bazi — samo ključ objekta (storageKey) + metapodatki.
+//
+// Načela (acceptance criteria #27/B):
+//   - original in derivat sta ločena zapisa, povezana z derivedFromId;
+//   - vsak asset nosi SHA-256 povzetek vsebine (identiteta bitov);
+//   - vsak asset nosi pravice (copyright, licenca, URL licence, atribucija);
+//   - zasebni asset (accessLevel != PUBLIC) ni javno servisiran brez
+//     avtorizacije (glej /api/assets — filter je obvezen);
+//   - zamenjava ne briše zgodovine: nov zapis prevzame rolo in staremu
+//     nastavi preservationStatus = REPLACED + replacedById.
+
+model DigitalAsset {
+  id               String   @id @default(uuid())
+  /** Ključ objekta v hranilniku (S3/R2/disk) — nikoli binarna vsebina. */
+  storageKey       String   @unique
+  mime             String
+  originalFilename String
+  bytes            Int
+  width            Int?
+  height           Int?
+  /** SHA-256 vsebine, izračunan ob vnosu (scripts/asset-register.ts).
+   * Enak checksum na več zapisih = znana duplikacija, ne napaka —
+   * deduplikacija je odločitev registra, ne sheme. */
+  sha256           String
+  creator          String?
+  copyrightHolder  String
+  license          String
+  licenseUrl       String?
+  attribution      String?
+  /** Izvor vsebine (arhiv, fotograf, donator …) — prosto besedilo. */
+  origin           String?
+  /** fotografija | sken | pdf | audio | video | glb | usdz | iiif-derivative | thumbnail */
+  kind             String
+  /** ACTIVE | MIGRATED | DEGRADED | REPLACED | LOST (preservacija #27/N). */
+  preservationStatus String @default("ACTIVE")
+  /** PUBLIC | RESTRICTED | INTERNAL — javni klici smejo videti samo PUBLIC. */
+  accessLevel      String   @default("PUBLIC")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  exhibitId String?
+  exhibit   Exhibit? @relation(fields: [exhibitId], references: [id], onDelete: SetNull)
+
+  /** Derivacijska veriga: IIIF derivati, sličice, konverzije. */
+  derivedFromId String?
+  derivedFrom   DigitalAsset?  @relation("AssetDerivation", fields: [derivedFromId], references: [id], onDelete: SetNull)
+  derivatives   DigitalAsset[] @relation("AssetDerivation")
+
+  /** Zamenjava: stari zapis ostane (zgodovina), kaže na naslednika. */
+  replacedById String?
+  replacedBy   DigitalAsset?  @relation("AssetReplacement", fields: [replacedById], references: [id], onDelete: SetNull)
+  replaces     DigitalAsset[] @relation("AssetReplacement")
+
+  @@index([exhibitId])
+  @@index([kind])
+  @@index([accessLevel])
+  @@index([sha256])
+  @@index([preservationStatus])
 }
 
 model Source {

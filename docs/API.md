@@ -17,7 +17,7 @@
 
 ---
 
-## Seznam poti (13)
+## Seznam poti (14)
 
 | Pot | Metoda | Namen |
 |---|---|---|
@@ -25,6 +25,7 @@
 | `/api/search` | GET | polnotekstovno iskanje |
 | `/api/events` | GET | dogodki vasi |
 | `/api/stories` | GET | zgodbe |
+| `/api/assets` | GET | javni register digitalnih vsebin (#27/B) |
 | `/api/guestbook` | GET · POST | knjiga gostov |
 | `/api/memories` | GET · POST | spomini (po zapisu) |
 | `/api/stats` | GET · POST | statistika obiska |
@@ -60,7 +61,32 @@ Iskanje zajema povzetke, zgodbe in entitete (SL+EN).
 ### 3) `GET /api/events` · 4) `GET /api/stories`
 Brez parametrov; vračata dogodke / zgodbe z dvojezičnimi polji (`…Si` / `…En`).
 
-### 5) `GET·POST /api/guestbook` — knjiga gostov
+### 5) `GET /api/assets` — register digitalnih vsebin (issue #27/B)
+
+Javni metapodatki digitalnih vsebin (fotografije, skeni, PDF, audio, video, GLB, USDZ, IIIF derivati, sličice). Servisirani so IZKLJUČNO zapisi z `accessLevel = "PUBLIC"` in statusom != LOST. Notranji ključi (`storageKey`, `exhibitId`) ne puščajo — zapis se veže prek `exhibitSlug`.
+
+```
+GET /api/assets?kind=fotografija&exhibit=griblje-vas&limit=50
+# {
+#   "count": 1,
+#   "assets": [{
+#     "id": "…", "kind": "fotografija", "mime": "image/jpeg",
+#     "bytes": 73528, "width": 729, "height": 426,
+#     "sha256": "5fc69bfaa27081f5…",          // identiteta bitov (#27/B)
+#     "creator": "Andrejj", "copyrightHolder": "Andrejj (Wikimedia Commons)",
+#     "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/…",
+#     "attribution": "Foto: Andrejj · Wikimedia Commons · …",
+#     "preservationStatus": "ACTIVE",          // ACTIVE|MIGRATED|DEGRADED|REPLACED|LOST
+#     "exhibitSlug": "griblje-vas",
+#     "derivedFromId": null, "replacedById": null,   // derivacijska/zamenjavna veriga
+#     "createdAt": "2026-09-24T…"
+#   }]
+# }
+```
+
+Vpis/posodobitev vsebin poteka prek operativne skripte `scripts/asset-register.ts` (izračun SHA-256, vezava, zamenjava z ohranjeno zgodovino) — javni API je samo za branje.
+
+### 6) `GET·POST /api/guestbook` — knjiga gostov
 - GET: zadnji vpisi.
 - POST JSON `{ "name": "…", "message": "…", "lang": "sl" }` → vnos po hevristični moderaciji (brez administracije; zlonamerno se zavrže).
 
@@ -70,14 +96,14 @@ curl -s -X POST https://griblje-museum.vercel.app/api/guestbook \
   -d '{"name":"Ana","message":"Krasna zbirka!","lang":"sl"}'
 ```
 
-### 6) `GET·POST /api/memories?exhibit=…` — spomini
+### 7) `GET·POST /api/memories?exhibit=…` — spomini
 - GET `?exhibit=mvg-084`: spomini vezani na zapis.
 - POST JSON `{ "exhibit": "mvg-084", "author": "…", "text": "…" }`.
 
-### 7) `GET·POST /api/stats` — statistika
+### 8) `GET·POST /api/stats` — statistika
 GET vrača števca ogledov; POST poveča (idempotentno po seji brskalnika).
 
-### 8) `GET /api/iiif?manifest=…` — IIIF Presentation 3.0
+### 9) `GET /api/iiif?manifest=…` — IIIF Presentation 3.0
 ```bash
 curl -s "https://griblje-museum.vercel.app/api/iiif?manifest=mvg-001" \
   | jq '.type, (.items | length)'
@@ -96,7 +122,7 @@ curl -s "https://griblje-museum.vercel.app/api/iiif?manifest=izseljenstvo" \
 # 5  ← 5 faz življenjepisa kot anotacije
 ```
 
-### 9) `GET /api/opendata` — odprti podatki (CC BY-SA 4.0)
+### 10) `GET /api/opendata` — odprti podatki (CC BY-SA 4.0)
 Celoten dump zbirke + muzejski metapodatek + JSON-LD kontekst + Wikidata `sameAs`.
 ```bash
 curl -s https://griblje-museum.vercel.app/api/opendata | jq '.counts'
@@ -104,7 +130,7 @@ curl -s https://griblje-museum.vercel.app/api/opendata | jq '.counts'
 ```
 Navedba: »Muzej vasi Griblje (2026), CC BY-SA 4.0, <https://griblje-museum.vercel.app>«.
 
-### 10) `POST /api/guide` — AI vodnik
+### 11) `POST /api/guide` — AI vodnik
 ```bash
 curl -s -X POST https://griblje-museum.vercel.app/api/guide \
   -H 'Content-Type: application/json' \
@@ -112,10 +138,10 @@ curl -s -X POST https://griblje-museum.vercel.app/api/guide \
 ```
 Odgovor temelji izključno na zbirki (retrieval) z verifikacijo trditev.
 
-### 11) `GET /api/audio-guide?slug=…&lang=sl&minute=…&chunk=…` — TTS
+### 12) `GET /api/audio-guide?slug=…&lang=sl&minute=…&chunk=…` — TTS
 Vrača avdio dele vodnika (omejitve za hitrost kot pri AI potih).
 
-### 12) `POST /api/curator` — AI kurator
+### 13) `POST /api/curator` — AI kurator
 ```bash
 curl -s -X POST https://griblje-museum.vercel.app/api/curator \
   -H 'Content-Type: application/json' \
@@ -124,7 +150,7 @@ curl -s -X POST https://griblje-museum.vercel.app/api/curator \
 Struktura odgovora: **KAJ VEMO → KAKO VEMO → VIRI → OPOMBA** z gumbi `[MVG-###]`;
 vsaka trditev preverjena proti zbirki; statusi dokazilosti izrecno navedeni.
 
-### 13) `POST /api/plan-visit` — AI planiranje obiska (63. sklop)
+### 14) `POST /api/plan-visit` — AI planiranje obiska (63. sklop)
 Osebni kurirani načrt po zbirki: obiskovalec poda čas, interese in spremljevalce;
 **izbor postaj je determinističen** nad zbirko (točkovanje + pestrost + kronologija),
 AI pa personalizira samo pripoved — postaje ne more spremeniti (dokazni vzorec kuratorja).
@@ -150,8 +176,12 @@ da AI pripovedi ni bilo in načrt nosi deterministične povzetke — načrt niko
 ---
 
 ## Hitrostne omejitve in predpomnilnik
-- AI poti (`guide`, `audio-guide`, `curator`, `plan-visit`): **12 zahtev / 10 minut / IP**; odgovori predpomnjeni **24 h**.
-- Ostale poti: brez omejitev (veljajo ravni uporabe Vercel).
+- Enoten limiter v `src/lib/rate-limit.ts` (issue #27/J) z imenovanimi kvotami:
+  - AI vodnik (`/api/guide`): **12 / 10 min / IP**;
+  - prispevki skupnosti (`guestbook`, `memories`): **5 / 10 min / IP**;
+  - dejavna TTS sinteza (`/api/audio-guide`, samo hladni klici): **30 / 5 min / IP**.
+- AI odgovori predpomnjeni **24 h**; ostale poti brez omejitev (veljajo ravni uporabe Vercel).
+- Obseg kvote je primerek strežnika (Vercel serverless); odgovori 429 vključujejo pošteno sporočilo.
 - Pošteno rabo pričakujemo po duhu licence CC BY-SA 4.0 — navedite vir.
 
 ## Integracija

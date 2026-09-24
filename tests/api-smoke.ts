@@ -205,6 +205,22 @@ if (firstRef?.id) {
   );
 }
 
+/* --- 5b. /api/assets — javni register vsebin (#27/B) ---------------------- */
+
+const assets = await getJson("/api/assets");
+ok("assets: status 200 + CORS", assets.status === 200 && assets.cors === "*");
+ok("assets: oblika { count, assets[] }", Array.isArray(assets.body?.assets) && typeof assets.body?.count === "number");
+ok(
+  "assets: vsak javni zapis ima checksum in licenco (#27/B)",
+  (assets.body?.assets ?? []).every(
+    (a: any) => typeof a.sha256 === "string" && a.sha256.length === 64 && typeof a.license === "string"
+  )
+);
+ok(
+  "assets: notranji ključi ne puščajo (storageKey, exhibitId) (#27/I)",
+  (assets.body?.assets ?? []).every((a: any) => !("storageKey" in a) && !("exhibitId" in a))
+);
+
 /* --- 6. poštene napake (brez stranskih učinkov / TTS klicev) -------------- */
 
 const agMissing = await getJson("/api/audio-guide");
