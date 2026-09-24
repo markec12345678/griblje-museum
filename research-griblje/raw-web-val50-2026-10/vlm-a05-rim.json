@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi natančnega pregleda franciscejskega katastrskega lista **OIX 24ch** (k.o. N83 Grüble/Griblje, 1824) je popis vseh krajevnih imen in toponimov naslednji:\n\n### 1. GLAVNA IN DELEŽNA IMENA (znotraj katastrske občine)\n\n| Črkovanje na listu | Pozicija (približno) | Vrsta / opomba |\n|:---|:---|:---|\n| **Pri Janbovičih** | ~60% z leve, ~22% od zgoraj | **Zaselek / naselbina** (središče zemljevida, pisano kurizivno) |\n| **Schumsthal** (ali *Schumsthall*) | ~42% z leve, ~29% od zgoraj | **Dol / dolina / žlebič** (na zahodnem robu občine, zapisano kot *Schumsthal* ali podobno) |\n| **Travern** (ali *Traverne*) | ~44% z leve, ~29% od zgoraj (blizu *Schumsthal*) | **Travnik / pašnik** (zapisano kot *Schumst. Travern* ali *Schumsthal Travern*) |\n| **Vratarschüttä Schütt** | ~63% z leve, ~27% od zgoraj | **Prehod / sedlo / vrata** (na severnem delu, blizu meje) |\n| **Na Prago Zdolcg** (ali *Prago Zdolec*) | ~88% z leve, ~15% od zgoraj | **Dolina / žleb** (na skrajnem severovzhodnem robu) |\n| **Stelze Wandlarnow** (ali *Stelzn*) | ~90% z leve, ~33% od zgoraj | **Strma peč / stena / klif** (na vzhodni meji) |\n| **N°8 Na Vratarschüttä Schütt** | ~86% z leve, ~40% od zgoraj | **Označba zemljišča / parcela** (na jugovzhodnem robu) |\n\n---\n\n### 2. IMENA SOSSEDNJIH OBČIN (zunaj meje, velike črke)\n\n| Črkovanje | Pozicija | Vrsta |\n|:---|:---|:---|\n| **W A U D E N D O R F** | diagonalno od ~40% do ~55% z leve, od ~7% do ~45% od zgoraj | **Sosednja katastrska občina** (na zahodu in jugozahodu) |\n| **A D D L E S C H I T T E N** | diagonalno od ~68% do ~93% z leve, od ~5% do ~47% od zgoraj | **Sosednja katastrska občina** (na vzhodu in severovzhodu) |\n\n---\n\n### 3. REZULTATI ISKANJA POSEBNIH IZRAZOV\n\n*   **»Rim« / »Rimb« / »Rymb«**: **NI NAJDEN** – na tem listu ni nobenega zapisa s tem korenom.\n*   **»Fučkovci« / »Futschkofen« / »Fukowcz«**: **NI NAJDEN** – ime ni prisotno na zemljevidu.\n*   **»Stelnik« / »Stelzn«**: **NAJDEN** – v obliki **»Stelze«** (del imena *Stelze Wandlarnov*), pozicija ~90% z leve, ~33% od zgoraj; vrsta: **orografski objekt (peč/stena)**.\n*   **»Grabrijan« / »Grabrian«**: **NI NAJDEN**.\n*   **»Schumsthal«**: **NAJDEN** – pozicija ~42% z leve, ~29% od zgoraj; vrsta: **dolina/žlebič** (pogosto v povezavi s *Travern*).\n*   **»Traverne«**: **NAJDEN** – v obliki **»Travern«** (kot *Schumst. Travern*), pozicija ~44% z leve, ~29% od zgoraj; vrsta: **travnik/pašnik**.\n\n---\n\n### 4. TEHNIČNI PODATKI LISTA (glava in noga)\n\n*   **Naslov:** *Sitze der Reambulirungs-Beimappe* (Levo zgoraj)\n*   **Številka lista:** *OIX 24ch* (Desno zgoraj)\n*   **Inventarna št.:** *SlAS 176* (Levo zgoraj, ročno)\n*   **Merilo:** Grafikon na dnu (brez napisanega številskega razmerja, tipično za te liste cca 1:2880)\n*   **Podpis:** *Aufgenommen und beeichnet durch [podpis, nečitljiv]* (Desno spodaj)\n*   **Potrdilo:** *Providirt durch den Hauptmannschen Inspector von Blumenau* (Levo spodaj)\n\n**Opomba:** Črkovanja so prepisana dobesedno, kot se pojavljajo na originalu iz leta 1824 (vključno s staro nemško in slovensko ortografijo tistega časa).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790271895,
+  "id": "202609250144154a2adc6812b04523",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250144154a2adc6812b04523",
+  "usage": {
+    "completion_tokens": 1309,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5907,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7216
+  }
+}
