@@ -1899,9 +1899,9 @@ export const ENTITY_QUEUE: EntityQueueItem[] = [
     id: "P3-E12",
     priority: "P3",
     questionSi:
-      "PUA p48/p49 (1825): zaključni seznam »… in der Gemeinde Grüble« (dolgi seznami parcel po sekcijah I–V, brez imen lastnikov — skupna/nerazdeljena zemlja?) ter vpis »F. Kirch« (Nro. 97, parcela V 2700) ostajata brez natančne transkripcije številk; dokument ima podpisa in datum »10. … 1825« — mesec prebrati ob kontrolnem prepisu. Prav tako ponovno prenesti okrnjeni strani p26 in p42.",
+      "PUA p48/p49 (1825): zaključni seznam »… in der Gemeinde Grüble« (dolgi seznami parcel po sekcijah I–V, brez imen lastnikov — skupna/nerazdeljena zemlja?) ter vpis »F. Kirch« (Nro. 97, parcela V 2700) ostajata brez natančne transkripcije številk; dokument ima podpisa in datum »10. … 1825« — mesec prebrati ob kontrolnem prepisu. Prav tako ponovno prenesti okrnjeni strani p26 in p42 — reševalno branje (nepopoln JPEG, PIL+VLM, 48/49. val) na obeh pokaže naslovna bloka »Alphabetisches Verzeichniß« (Land/Bezirk/Kreis/Gemeinde prazni) brez vidnih vpisov; teles pod rezom ni mogoče potrditi.",
     questionEn:
-      "PUA p48/p49 (1825): the closing list '… in der Gemeinde Grüble' (long section-by-section parcel lists I–V without owner names — common/undivided land?) and the entry 'F. Kirch' (no. 97, parcel V 2700) still lack an exact transcription of the numbers; the document bears two signatures and the date '10. … 1825' — the month to be read at a control transcription. Also re-download the two truncated pages p26 and p42.",
+      "PUA p48/p49 (1825): the closing list '… in der Gemeinde Grüble' (long section-by-section parcel lists I–V without owner names — common/undivided land?) and the entry 'F. Kirch' (no. 97, parcel V 2700) still lack an exact transcription of the numbers; the document bears two signatures and the date '10. … 1825' — the month to be read at a control transcription. Also re-download the two truncated pages p26 and p42 — salvage reading (truncated JPEG, PIL+VLM, val 48/49) shows title blocks 'Alphabetisches Verzeichniß' (Land/Bezirk/Kreis/Gemeinde blank) with no visible entries; the bodies below the cut cannot be verified.",
     slugs: ["griblje-vas"],
   },
 ];
