@@ -221,6 +221,80 @@ ok(
   (assets.body?.assets ?? []).every((a: any) => !("storageKey" in a) && !("exhibitId" in a))
 );
 
+/* --- 5c. meja javno/interno (#27/I) — regresijske preverbe ---------------- */
+
+// Notranja polja, ki se v javnem API-ju ne smejo pojaviti nikoli:
+const INTERNAL_KEYS = [
+  "permissionEvidence",
+  "rightsVerifiedAt",
+  "permissionToPublish",
+  "permissionToModify",
+  "commercialUse",
+  "researcherNote",
+  "researcherNotes",
+  "moderatedBy",
+  "moderatedAt",
+  "moderationNote",
+  "previousStatus",
+  "reportCount",
+  "deletedAt",
+];
+
+function leaks(body: any, path: string): string | null {
+  const stack: Array<{ obj: any; path: string }> = [{ obj: body, path }];
+  while (stack.length) {
+    const { obj, path: p } = stack.pop()!;
+    if (!obj || typeof obj !== "object") continue;
+    if (Array.isArray(obj)) {
+      stack.push(...obj.map((o, i) => ({ obj: o, path: `${p}[${i}]` })));
+      continue;
+    }
+    for (const key of INTERNAL_KEYS) {
+      if (key in obj) return `${p}.${key}`;
+    }
+    stack.push(...Object.entries(obj).map(([k, v]) => ({ obj: v, path: `${p}.${k}` })));
+  }
+  return null;
+}
+
+const exhLeak = await getJson("/api/exhibits");
+ok("exhibits: status 200", exhLeak.status === 200, `status=${exhLeak.status}`);
+{
+  const leak = leaks(exhLeak.body, "exhibits");
+  ok("exhibits: brez notranjih polj pravic/moderacije/raziskave (#27/I)", !leak, leak ?? "");
+}
+
+const arLeak = await getJson("/api/archive-records");
+ok("archive-records: status 200", arLeak.status === 200, `status=${arLeak.status}`);
+{
+  const leak = leaks(arLeak.body, "archive-records");
+  ok("archive-records: researcherNotes ne puščajo (#27/E+I)", !leak, leak ?? "");
+}
+
+const gbLeak = await getJson("/api/guestbook");
+{
+  const leak = leaks(gbLeak.body, "guestbook");
+  ok("guestbook: brez metapodatkov moderacije (#27/G+I)", !leak, leak ?? "");
+}
+
+// Uredniški API-ji brez žetona NISO dostopni (401) ali NISO nastavljeni (503):
+const verNoTok = await getJson("/api/versions?slug=griblje-vas");
+ok("versions brez žetona: 401/503 (ne 200)", verNoTok.status === 401 || verNoTok.status === 503, `status=${verNoTok.status}`);
+const modNoTok = await getJson("/api/moderation?status=pending");
+ok("moderation brez žetona: 401/503 (ne 200)", modNoTok.status === 401 || modNoTok.status === 503, `status=${modNoTok.status}`);
+
+// Javne trditve: samo objavljene, brez notranjih polj:
+const claimsPub = await getJson("/api/claims?slug=griblje-vas");
+ok("claims: status 200 + oblika { count, claims[] }", claimsPub.status === 200 && Array.isArray(claimsPub.body?.claims));
+{
+  const leak = leaks(claimsPub.body, "claims");
+  ok("claims: brez researcherNote/workflow polj (#27/D+I)", !leak, leak ?? "");
+  const unpublished = (claimsPub.body?.claims ?? []).some(
+    (c: any) => "status" in c && c.status !== "PUBLISHED"
+  );
+  ok("claims: servisira samo PUBLISHED trditve", !unpublished);
+}
+
 /* --- 6. poštene napake (brez stranskih učinkov / TTS klicev) -------------- */
 
 const agMissing = await getJson("/api/audio-guide");

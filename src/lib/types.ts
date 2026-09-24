@@ -73,6 +73,12 @@ export type SourceDTO = {
   url: string | null;
   noteSi: string | null;
   noteEn: string | null;
+  /** Pravice (#27/F) — javno varna podmnožina. Interni polji
+   *  permissionEvidence in rightsVerifiedAt sta izključeni (#27/I). */
+  creator?: string | null;
+  licenseUrl?: string | null;
+  attribution?: string | null;
+  restrictions?: string | null;
 };
 
 export type MuseumEventDTO = {
