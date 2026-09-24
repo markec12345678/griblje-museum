@@ -22,7 +22,8 @@
     "db:data-migrate": "bun scripts/migrate-data-sqlite-to-postgres.ts",
     "archive:seed": "bun scripts/archive-register.ts seed-priority",
     "archive:list": "bun scripts/archive-register.ts list",
-    "gdpr:retention": "bun scripts/gdpr-retention.ts"
+    "gdpr:retention": "bun scripts/gdpr-retention.ts",
+    "assets:fixity": "bun scripts/fixity-check.ts"
   },
   "prisma": {
     "seed": "bun prisma/seed.ts"
