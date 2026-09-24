@@ -1,0 +1,663 @@
+{
+ "meta": {
+  "sheet": "N083A01",
+  "title": "Gemeinde GRÜBLE in Illyrien — Kreis Neustadt, Bezirk Krupp",
+  "survey_year": 1824,
+  "correction_year": 1827,
+  "source": "SI AS 176/N/N83/g/A01, Arhiv Republike Slovenije (VAČ IIIF, docid 10)",
+  "scale_note": "listno merilo: 320 Klafter = 277 px → ~2,19 m/px (±10–15 %)",
+  "georef": {
+   "method": "1 sidrna točka (središče vasi = centroid izluščenih stavb ↔ muzejska koordinata vasi) + sever-navzgor predpostavka",
+   "accuracy": "PROVIZORIČNO: ±200–500 m na robovih (rotacija lista ni rešena); kuratorska kontrola proti moderni podlagi = P2-E14",
+   "anchor_px": [
+    1851,
+    1778
+   ],
+   "anchor_geo": [
+    45.57246,
+    15.29257
+   ],
+   "meters_per_px": 2.1909
+  },
+  "building_numbers_note": "rdeče številke na listu = stavbne parcele (B.P., 'Nro. in der Mappe' iz PT protokola), ne hišne številke; veza hiša→B.P. iz PT p7 (dvojno branje) + PUA opomb",
+  "missing_bp": "B.P. 1–29, 57–62, 80–81, 84, 87–88, 90–91, 96–97 niso izluščeni pri tej ločljivosti (drobne gospodarske stavbe) → P3"
+ },
+ "buildings": [
+  {
+   "bp": "30",
+   "px": 1740,
+   "py": 1976,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.568559,
+   "lng": 15.289445
+  },
+  {
+   "bp": "31",
+   "px": 1721,
+   "py": 1956,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.568954,
+   "lng": 15.288911
+  },
+  {
+   "bp": "32",
+   "px": 1691,
+   "py": 1979,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.5685,
+   "lng": 15.288067
+  },
+  {
+   "bp": "33",
+   "px": 1724,
+   "py": 1883,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.570393,
+   "lng": 15.288995
+  },
+  {
+   "bp": "34",
+   "px": 1715,
+   "py": 1915,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.569762,
+   "lng": 15.288742
+  },
+  {
+   "bp": "35",
+   "px": 1705,
+   "py": 1932,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.569427,
+   "lng": 15.288461
+  },
+  {
+   "bp": "36",
+   "px": 1682,
+   "py": 1935,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.569368,
+   "lng": 15.287814
+  },
+  {
+   "bp": "37",
+   "px": 1659,
+   "py": 1923,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.569604,
+   "lng": 15.287168
+  },
+  {
+   "bp": "38",
+   "px": 1670,
+   "py": 1914,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.569782,
+   "lng": 15.287477
+  },
+  {
+   "bp": "39",
+   "px": 1679,
+   "py": 1895,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.570156,
+   "lng": 15.28773
+  },
+  {
+   "bp": "40",
+   "px": 1796,
+   "py": 1992,
+   "conf": "medium",
+   "source": "q3",
+   "lat": 45.568244,
+   "lng": 15.29102
+  },
+  {
+   "bp": "41",
+   "px": 1674,
+   "py": 1886,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.570334,
+   "lng": 15.28759
+  },
+  {
+   "bp": "42",
+   "px": 1685,
+   "py": 1856,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.570925,
+   "lng": 15.287899
+  },
+  {
+   "bp": "43",
+   "px": 1703,
+   "py": 1847,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.571103,
+   "lng": 15.288405
+  },
+  {
+   "bp": "44",
+   "px": 1769,
+   "py": 1917,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.569723,
+   "lng": 15.290261
+  },
+  {
+   "bp": "45",
+   "px": 1777,
+   "py": 1900,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.570058,
+   "lng": 15.290485
+  },
+  {
+   "bp": "46",
+   "px": 1757,
+   "py": 1904,
+   "conf": "high",
+   "source": "qcore-3x",
+   "house_no": 65,
+   "link_source": "PUA opomba (p21)",
+   "owner": "Widhann Georg häusler und Gärtner",
+   "owner_status": "REVIEW",
+   "owner_page": 21,
+   "lat": 45.569979,
+   "lng": 15.289923
+  },
+  {
+   "bp": "47",
+   "px": 1761,
+   "py": 1891,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.570235,
+   "lng": 15.290036
+  },
+  {
+   "bp": "48",
+   "px": 1672,
+   "py": 2027,
+   "conf": "medium",
+   "source": "q3",
+   "lat": 45.567554,
+   "lng": 15.287533
+  },
+  {
+   "bp": "49",
+   "px": 1811,
+   "py": 1863,
+   "conf": "high",
+   "source": "qcore-3x",
+   "house_no": 66,
+   "link_source": "PUA opomba B.P. 49 + pass3 (h. 66 = Widhann Georg 3×)",
+   "owner": "Widhann Georg häusler und Gärtner",
+   "owner_status": "VERIFIED-2x",
+   "owner_page": 6,
+   "lat": 45.570787,
+   "lng": 15.291441
+  },
+  {
+   "bp": "50",
+   "px": 1771,
+   "py": 1861,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.570827,
+   "lng": 15.290317
+  },
+  {
+   "bp": "51",
+   "px": 1773,
+   "py": 1842,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.571201,
+   "lng": 15.290373
+  },
+  {
+   "bp": "52",
+   "px": 1793,
+   "py": 1822,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.571595,
+   "lng": 15.290935
+  },
+  {
+   "bp": "53",
+   "px": 1748,
+   "py": 1840,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.571241,
+   "lng": 15.28967
+  },
+  {
+   "bp": "54",
+   "px": 1758,
+   "py": 1813,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.571773,
+   "lng": 15.289951
+  },
+  {
+   "bp": "55",
+   "px": 1768,
+   "py": 1814,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.571753,
+   "lng": 15.290232
+  },
+  {
+   "bp": "56",
+   "px": 1774,
+   "py": 1805,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.571931,
+   "lng": 15.290401
+  },
+  {
+   "bp": "63",
+   "px": 1871,
+   "py": 1834,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.571359,
+   "lng": 15.293128
+  },
+  {
+   "bp": "64",
+   "px": 1884,
+   "py": 1820,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.571635,
+   "lng": 15.293494
+  },
+  {
+   "bp": "65",
+   "px": 1824,
+   "py": 1743,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.573153,
+   "lng": 15.291807
+  },
+  {
+   "bp": "66",
+   "px": 1852,
+   "py": 1824,
+   "conf": "medium",
+   "source": "qcore-3x",
+   "lat": 45.571556,
+   "lng": 15.292594
+  },
+  {
+   "bp": "67",
+   "px": 1847,
+   "py": 1790,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.572226,
+   "lng": 15.292454
+  },
+  {
+   "bp": "68",
+   "px": 1854,
+   "py": 1775,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.572522,
+   "lng": 15.29265
+  },
+  {
+   "bp": "69",
+   "px": 1970,
+   "py": 1901,
+   "conf": "medium",
+   "source": "q3",
+   "lat": 45.570038,
+   "lng": 15.295912
+  },
+  {
+   "bp": "70",
+   "px": 1986,
+   "py": 1883,
+   "conf": "medium",
+   "source": "q3",
+   "lat": 45.570393,
+   "lng": 15.296362
+  },
+  {
+   "bp": "71",
+   "px": 1958,
+   "py": 1861,
+   "conf": "medium",
+   "source": "q3",
+   "lat": 45.570827,
+   "lng": 15.295574
+  },
+  {
+   "bp": "72",
+   "px": 1913,
+   "py": 1798,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.572069,
+   "lng": 15.294309
+  },
+  {
+   "bp": "73",
+   "px": 1891,
+   "py": 1749,
+   "conf": "high",
+   "source": "qcore-3x",
+   "house_no": 60,
+   "link_source": "PUA opomba (p31)",
+   "owner": "Penzig Stuffe Leuthold zu Grüble",
+   "owner_status": "REVIEW-CONFLICT",
+   "owner_page": 31,
+   "lat": 45.573035,
+   "lng": 15.293691
+  },
+  {
+   "bp": "74",
+   "px": 2027,
+   "py": 1848,
+   "conf": "high",
+   "source": "q3",
+   "lat": 45.571083,
+   "lng": 15.297514
+  },
+  {
+   "bp": "75",
+   "px": 2026,
+   "py": 1767,
+   "conf": "medium",
+   "source": "q3",
+   "lat": 45.57268,
+   "lng": 15.297486
+  },
+  {
+   "bp": "76",
+   "px": 1902,
+   "py": 1773,
+   "conf": "high",
+   "source": "qcore-3x",
+   "house_no": 28,
+   "link_source": "PUA opomba (p39)",
+   "owner": "Brincz Maria Bäuerin zu Grübln",
+   "owner_status": "VERIFIED-2x",
+   "owner_page": 5,
+   "lat": 45.572561,
+   "lng": 15.294
+  },
+  {
+   "bp": "77",
+   "px": 1862,
+   "py": 1742,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.573173,
+   "lng": 15.292875
+  },
+  {
+   "bp": "78",
+   "px": 1912,
+   "py": 1743,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.573153,
+   "lng": 15.294281
+  },
+  {
+   "bp": "79",
+   "px": 1800,
+   "py": 1725,
+   "conf": "high",
+   "source": "qcore-3x",
+   "lat": 45.573508,
+   "lng": 15.291132
+  },
+  {
+   "bp": "82",
+   "px": 2002,
+   "py": 1612,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 45,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "lat": 45.575735,
+   "lng": 15.296811
+  },
+  {
+   "bp": "83",
+   "px": 2025,
+   "py": 1594,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 45,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "lat": 45.57609,
+   "lng": 15.297458
+  },
+  {
+   "bp": "85",
+   "px": 2028,
+   "py": 1539,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 37,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "owner": "Krischan / Peter / Bauer in Grübln",
+   "owner_status": "VERIFIED-2x",
+   "owner_page": 19,
+   "lat": 45.577175,
+   "lng": 15.297542
+  },
+  {
+   "bp": "86",
+   "px": 2044,
+   "py": 1580,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 36,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "owner": "Krischan / Marla / Bauerin / zu Grübln",
+   "owner_status": "VERIFIED-2x",
+   "owner_page": 18,
+   "lat": 45.576366,
+   "lng": 15.297992
+  },
+  {
+   "bp": "89",
+   "px": 2037,
+   "py": 1511,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 44,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "owner": "Husitsch Maria Bauersleute / zu Grübln",
+   "owner_status": "REVIEW",
+   "owner_page": 11,
+   "lat": 45.577727,
+   "lng": 15.297795
+  },
+  {
+   "bp": "92",
+   "px": 2082,
+   "py": 1316,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 41,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "owner": "Pöchinger Georg Leinwand Fabrikant",
+   "owner_status": "VERIFIED-2x",
+   "owner_page": 30,
+   "lat": 45.581571,
+   "lng": 15.299061
+  },
+  {
+   "bp": "93",
+   "px": 1975,
+   "py": 1600,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 40,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "owner": "Pfarrer Rupert Sautter hiesig",
+   "owner_status": "REVIEW",
+   "owner_page": 29,
+   "lat": 45.575972,
+   "lng": 15.296052
+  },
+  {
+   "bp": "94",
+   "px": 2070,
+   "py": 1372,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 40,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "owner": "Pfarrer Rupert Sautter hiesig",
+   "owner_status": "REVIEW",
+   "owner_page": 29,
+   "lat": 45.580467,
+   "lng": 15.298723
+  },
+  {
+   "bp": "95",
+   "px": 2033,
+   "py": 1398,
+   "conf": "high",
+   "source": "q1",
+   "house_no": 39,
+   "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+   "lat": 45.579954,
+   "lng": 15.297683
+  },
+  {
+   "bp": "98",
+   "px": 2068,
+   "py": 1458,
+   "conf": "high",
+   "source": "q1",
+   "link_source": "PT p7 owner (2× branja) + PUA opomba B.P. 98",
+   "owner": "k.k. Zollamt",
+   "owner_status": "VERIFIED-2x",
+   "owner_page": 6,
+   "lat": 45.578771,
+   "lng": 15.298667
+  },
+  {
+   "bp": "99",
+   "px": 2064,
+   "py": 1440,
+   "conf": "high",
+   "source": "q1",
+   "lat": 45.579126,
+   "lng": 15.298555
+  },
+  {
+   "bp": "100",
+   "px": 2081,
+   "py": 1392,
+   "conf": "high",
+   "source": "q1",
+   "lat": 45.580073,
+   "lng": 15.299033
+  }
+ ],
+ "toponyms": [
+  {
+   "name": "na Feld",
+   "px": 1670,
+   "py": 1640,
+   "source": "q1",
+   "lat": 45.575183,
+   "lng": 15.287477
+  },
+  {
+   "name": "na Kameniza",
+   "px": 2343,
+   "py": 1525,
+   "source": "q2",
+   "lat": 45.577451,
+   "lng": 15.306399
+  },
+  {
+   "name": "Stupar Stih",
+   "px": 2648,
+   "py": 1420,
+   "source": "q2",
+   "lat": 45.579521,
+   "lng": 15.314974
+  },
+  {
+   "name": "Zohlami",
+   "px": 2015,
+   "py": 2090,
+   "source": "q3",
+   "lat": 45.566312,
+   "lng": 15.297177
+  },
+  {
+   "name": "Pod Griblani",
+   "px": 1710,
+   "py": 630,
+   "source": "qtop",
+   "lat": 45.595095,
+   "lng": 15.288602
+  },
+  {
+   "name": "Lulischewki stz.",
+   "px": 1750,
+   "py": 880,
+   "source": "qtop",
+   "lat": 45.590166,
+   "lng": 15.289726
+  },
+  {
+   "name": "Zohlanič",
+   "px": 1913,
+   "py": 1955,
+   "source": "qcore",
+   "lat": 45.568973,
+   "lng": 15.294309
+  }
+ ],
+ "overlay": {
+  "sw": [
+   45.562704,
+   15.240524
+  ],
+  "ne": [
+   45.607515,
+   15.319979
+  ],
+  "px_size": [
+   2826,
+   2273
+  ]
+ }
+}
