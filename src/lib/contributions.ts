@@ -17,7 +17,8 @@ export const LIMITS = CONTRIBUTION_LIMITS;
  *  2. Čisto besedilo — striptamo kontrolne znake, skrčimo presledke;
  *     vrnjenega besedila nikoli ne prevajamo v HTML (React samo-escape).
  *  3. Hevristika — povezave, e-pošta ali oglati oklepaji prestavijo
- *     prispevek v status `held` (objavi ga kustos po pregledu).
+ *     prispevek v status `pending` (objavi ga kustos po pregledu;
+ *     profesionalen moderation workflow — issue #27/G).
  *  4. Omejitev hitrosti — drseče okno v pomnilniku (na primeru strežnika;
  *     na strežniški platformi velja na primerek, kar je za demo dovolj).
  *

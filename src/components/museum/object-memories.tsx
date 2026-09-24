@@ -32,7 +32,7 @@ export function ObjectMemories({ exhibit }: { exhibit: ExhibitDTO }) {
   const [place, setPlace] = React.useState("");
   const [memory, setMemory] = React.useState("");
   const [website, setWebsite] = React.useState(""); // honeypot
-  const [feedback, setFeedback] = React.useState<"published" | "held" | "error" | null>(null);
+  const [feedback, setFeedback] = React.useState<"published" | "pending" | "error" | null>(null);
 
   const dateFmt = React.useMemo(
     () =>
@@ -117,10 +117,10 @@ export function ObjectMemories({ exhibit }: { exhibit: ExhibitDTO }) {
             {t.memories.success}
           </span>
         )}
-        {feedback === "held" && (
+        {feedback === "pending" && (
           <span className="inline-flex items-center gap-1.5 font-medium text-accent-foreground/90">
             <Clock3 className="h-4 w-4" aria-hidden="true" />
-            {t.memories.successHeld}
+            {t.memories.successPending}
           </span>
         )}
         {feedback === "error" && (

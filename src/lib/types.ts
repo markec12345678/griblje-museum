@@ -143,5 +143,5 @@ export type ObjectMemoriesDTO = {
 
 export type ContributionResult = {
   ok: boolean;
-  status: "published" | "held";
+  status: "published" | "pending";
 };

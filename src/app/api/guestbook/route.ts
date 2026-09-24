@@ -82,7 +82,7 @@ export async function OPTIONS() {
  *
  * Samodejna moderacija (glej src/lib/contributions.ts):
  *  - honeypot `website` → tiho zavržemo (lažni uspeh za robota)
- *  - povezave/e-pošta/oznake → status `held` (čaka na kurotorski pregled)
+ *  - povezave/e-pošta/oznake → status `pending` (čaka na kurotorski pregled)
  *  - čisto besedilo → takoj objavljeno
  * Omejitev: 5 prispevkov / 10 min na IP na primerek strežnika.
  */
@@ -123,7 +123,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Besedilo je prekratko." }, { status: 400 });
     }
 
-    const status = looksSuspicious(message) || looksSuspicious(name) ? "held" : "published";
+    const status = looksSuspicious(message) || looksSuspicious(name) ? "pending" : "published";
 
     await db.guestbookEntry.create({
       data: {
@@ -135,7 +135,7 @@ export async function POST(request: Request) {
       },
     });
 
-    // 201 tudi za `held` — prispevek je sprejet, objava pa odvisna od pregleda.
+    // 201 tudi za `pending` — prispevek je sprejet, objava pa odvisna od pregleda.
     return NextResponse.json({ ok: true, status }, { status: 201 });
   } catch (error) {
     console.error("API /api/guestbook POST error:", error);
