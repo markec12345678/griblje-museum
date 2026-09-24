@@ -295,6 +295,21 @@ ok("claims: status 200 + oblika { count, claims[] }", claimsPub.status === 200 &
   ok("claims: servisira samo PUBLISHED trditve", !unpublished);
 }
 
+/* --- 5d. /api/health — zdravstveno stanje (#27/V+U) ----------------------- */
+
+const health = await getJson("/api/health");
+ok("health: status 200 + ok:true", health.status === 200 && health.body?.ok === true, `status=${health.status}`);
+ok(
+  "health: baza povezana + živi števci zbirke (#27/U)",
+  health.body?.database?.connected === true && typeof health.body?.counts?.exhibits === "number"
+);
+ok(
+  "health: konfiguracija samo kot zastavice (brez razkritja vrednosti)",
+  typeof health.body?.config?.editorialApi === "boolean" &&
+    typeof health.body?.config?.moderationApi === "boolean"
+);
+ok("health: correlation ID prisoten", typeof health.body?.correlationId === "string");
+
 /* --- 6. poštene napake (brez stranskih učinkov / TTS klicev) -------------- */
 
 const agMissing = await getJson("/api/audio-guide");
