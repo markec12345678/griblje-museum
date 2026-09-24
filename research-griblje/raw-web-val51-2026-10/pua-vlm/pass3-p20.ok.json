@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"VT\",\n  \"focus_findings\": [\n    {\n      \"row\": \"38\",\n      \"entry_no\": \"38\",\n      \"section\": \"\",\n      \"house_no\": \"62\",\n      \"owner_original\": \"Krischan Michael\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"zu Grübln\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"4\", \"8\", \"17\", \"54\", \"209\", \"278\", \"289\", \"296\", \"297\", \"299\", \"301\", \"319\", \"360a\", \"362\", \"369\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"744\", \"746\", \"747\", \"761\", \"768\", \"776\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"789\", \"816\", \"878\", \"879\", \"595\", \"1006\", \"1018\", \"1019\", \"1218\", \"1307\", \"1412\", \"1612\", \"1816\", \"1941\", \"2046\", \"2170\", \"2642\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"1326\", \"1360\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"2008\", \"2012\", \"2019\", \"2069\", \"2080\", \"2081\", \"2090\", \"2102\", \"2117\", \"2135\", \"2158\", \"2190\", \"2189\", \"2203\", \"2215\", \"2254\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"39\",\n      \"entry_no\": \"39\",\n      \"section\": \"\",\n      \"house_no\": \"46\",\n      \"owner_original\": \"Lahodathar\",\n      \"status_original\": \"Wittib Lahodatharin\",\n      \"residence_original\": \"buersthalgübln\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"162\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"1022\", \"1104\", \"1107\", \"1110\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"For row 39 (Haus No. 46), the name reads 'Lahodathar' (not Ribetitsch). The full entry is: 'Lahodathar Wittib Lahodatharin buersthalgübln'. The handwriting clearly shows an initial capital L, followed by a-h-o-d-a-t-h-a-r. The status field contains the legal term 'Wittib' (widow) followed by the feminine form of the surname 'Lahodatharin'.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278444,
+  "id": "20260925033354a3f662e9f1dd4f95",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033354a3f662e9f1dd4f95",
+  "usage": {
+    "completion_tokens": 678,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3749,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4427
+  }
+}

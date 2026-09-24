@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page from the 1825 alphabetical land register for the municipality of Grüble, showing entries 36 and 37 (Krischan Krischank family) with their associated land parcels across multiple sections.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"36\",\n      \"section\": \"I.\",\n      \"house_no\": \"37\",\n      \"owner_original\": \"Krischan / Peter / Bauer in Grübln\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"in Grübln\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"166\", \"168\", \"167\", \"188\", \"199\", \"403\", \"408\", \"276\", \"358\", \"86\", \"297\", \"395\", \"300\", \"326\", \"329\", \"334\", \"366\", \"370\", \"374\", \"328\", \"392\", \"388\", \"326\", \"328\", \"326\", \"347\", \"97\", \"358\", \"497\"]},\n        {\"section\": \"II.\", \"numbers\": [\"1173\", \"1169\", \"1207\", \"943\"]},\n        {\"section\": \"III/V.\", \"numbers\": [\"1970\", \"9978\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"1672\", \"2472\", \"2367\", \"2324\"]}\n      ],\n      \"annotation_original\": \"P.P. 85.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"37\",\n      \"section\": \"I.\",\n      \"house_no\": \"37\",\n      \"owner_original\": \"Krischan / Balda / Bauerin in Grübln\",\n      \"status_original\": \"Bauerin\",\n      \"residence_original\": \"in Grübln\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"223\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"The handwriting is clear Kurrent script. Entry 36 contains a very long list of parcel numbers spanning four sections. Entry 37 appears to be a continuation or related entry for the same household (same house number 37), likely the wife (Bauerin). The annotation 'P.P. 85.' is written below the parcel list for entry 36.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274520,
+  "id": "2026092502282576198e34160c4459",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502282576198e34160c4459",
+  "usage": {
+    "completion_tokens": 579,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1987
+  }
+}

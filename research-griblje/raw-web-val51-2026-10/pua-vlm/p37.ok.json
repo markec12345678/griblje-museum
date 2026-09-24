@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page from the 1825 Franciscan Cadaster for Gemeinde Grüble, showing entries 74 and 75 (Haus No. 18 and 19) with their associated land parcels in Sections I, II, III, and IV.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\", \"entries\": [{\"entry_no\": \"74\", \"section\": \"\", \"house_no\": \"18\", \"owner_original\": \"Schim von Pater Bardeleßky / [nečitljivo]\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"776\", \"776\"]}, {\"section\": \"II\", \"numbers\": [\"195\", \"358\", \"358\", \"366\", \"366\", \"410\", \"410\", \"466\", \"469\", \"690\", \"693\", \"1058\", \"1059\", \"1062\", \"1063\", \"1065\", \"1067\"]}, {\"section\": \"III\", \"numbers\": [\"1016\"]}, {\"section\": \"IV\", \"numbers\": [\"1091\", \"2299\", \"2526\", \"2529\", \"2532\", \"2550\", \"2574\", \"2623\", \"2625\"]}], \"annotation_original\": \"L. p.\", \"confidence\": \"medium\", \"uncertain_words\": [\"Bardeleßky\", \"L. p.\"]}, {\"entry_no\": \"75\", \"section\": \"\", \"house_no\": \"19\", \"owner_original\": \"Schim von Wirth Bardeleßky\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"401\", \"477\", \"978\", \"995\", \"1000\", \"1029\", \"1039\", \"1049\", \"1061\", \"1063\"]}, {\"section\": \"III\", \"numbers\": [\"1016\", \"1732\", \"1754\", \"1792\"]}, {\"section\": \"IV\", \"numbers\": [\"1088\", \"2227\", \"2392\"]}], \"annotation_original\": \"L. p. n.\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"Entry 74 has a second line of text in the owner column that is heavily crossed out and illegible. The name 'Bardeleßky' (or similar) appears to be shared between entries 74 and 75. The abbreviation 'L. p.' likely stands for 'Landespflichten' or similar administrative term.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274808,
+  "id": "202609250233138f8506f9d91d43aa",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250233138f8506f9d91d43aa",
+  "usage": {
+    "completion_tokens": 590,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1998
+  }
+}

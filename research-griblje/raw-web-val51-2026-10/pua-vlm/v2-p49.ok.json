@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"97\",\n  \"rows\": [\n    {\n      \"entry_no\": \"97\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Philipp De Giammo Zucchelli\",\n      \"status_original\": \"\",\n      \"residence_original\": \"2700\",\n      \"parcels\": [],\n      \"annotation_original\": \"VC Mayr vell. am 10 Jenner 1826 / [signature] / [signature] / gezgen: / d[?] Hutmayer[?]\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"d[?] Hutmayer[?]\"],\n      \"changes\": \"Corrected owner field to separate name and residence; removed slash from draft's combined field.\"\n    }\n  ],\n  \"page_notes\": \"The page contains only one entry (No. 97). The residence '2700' is written below the name. The annotation contains signatures and a witness note.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278023,
+  "id": "202609250326593888abc3c2db4c3c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250326593888abc3c2db4c3c",
+  "usage": {
+    "completion_tokens": 224,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1383,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1607
+  }
+}

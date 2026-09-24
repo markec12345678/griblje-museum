@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"V.T.\", \"rows\": [{\"entry_no\": \"82\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"I\", \"house_no\": \"66\", \"owner_original\": \"Schmutz Johann\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"66\", \"276\", \"277e\", \"279\", \"280m\", \"284\", \"293\", \"294\", \"301\", \"302\", \"309\", \"304g\", \"402\", \"403h\", \"405\"]}, {\"section\": \"II\", \"numbers\": [\"497\", \"503\", \"570\", \"571\", \"593a\", \"1018\", \"1031\", \"1050\", \"1061d\", \"1062\", \"1063\", \"1075\", \"1089\", \"1091\", \"1093\", \"1104u\", \"1120\", \"1129v\", \"1130\", \"1146\", \"1152\", \"1160\"]}, {\"section\": \"III\", \"numbers\": [\"1603\", \"1646\"]}, {\"section\": \"IV\", \"numbers\": [\"1693\", \"1695\", \"1698\", \"1710c\", \"1719\", \"1726\", \"2006\", \"2011\", \"2031\", \"2041\", \"2050\", \"2053\", \"2065\", \"2086\", \"2093\", \"2103\", \"2110\", \"2137\", \"2149\", \"217n\", \"2201\", \"2236\", \"2251\", \"2281\", \"2343\", \"2357\", \"2364\", \"2647\", \"2846\"]}], \"annotation_original\": \"B. P. g.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"\"}, {\"entry_no\": \"83\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"II\", \"house_no\": \"58\", \"owner_original\": \"Stipanitsch Jakob Brauhaußgütler\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"1835\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"\"}, {\"entry_no\": \"84\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"V\", \"house_no\": \"61\", \"owner_original\": \"Schimek Joseph / Bau in Tschabathe\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"V\", \"numbers\": [\"334\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"\"}], \"page_notes\": \"The draft is accurate for all visible rows (82-84). Entry 82 contains a very long list of parcels across sections I, II, III, and IV. The handwriting in Kurrent script is clear.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277360,
+  "id": "202609250315518c9d14ad0e104a7b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250315518c9d14ad0e104a7b",
+  "usage": {
+    "completion_tokens": 673,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2933,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3606
+  }
+}

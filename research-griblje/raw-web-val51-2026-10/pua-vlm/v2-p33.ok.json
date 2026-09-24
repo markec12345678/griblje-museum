@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"V.T.\",\n  \"rows\": [\n    {\n      \"entry_no\": \"65\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"IV.\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Paderiz Franz\",\n      \"status_original\": \"Kirchendienst gewesener\",\n      \"residence_original\": \"Häusler\",\n      \"parcels\": [\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"284\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected owner name from 'Paderiz' to 'Paderiz' (spelling verified), formatted status and residence fields.\"\n    },\n    {\n      \"entry_no\": \"66\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"V.\",\n      \"house_no\": \"6\",\n      \"owner_original\": \"Pacharotte Michael bauer und der Gemeine\",\n      \"status_original\": \"Häusling\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\"299\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified name 'Pacharotte' and parcel number '299'.\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 65 and 66. Entry 65 has a parcel in Section IV. Entry 66 has a parcel in Section V. The handwriting is clear Kurrent script.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277295,
+  "id": "20260925031443412709ad6dd147ec",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031443412709ad6dd147ec",
+  "usage": {
+    "completion_tokens": 369,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1450,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1819
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V T\",\n  \"focus_findings\": [\n    {\n      \"row\": \"18\",\n      \"entry_no\": \"18\",\n      \"section\": \"\",\n      \"house_no\": \"2\",\n      \"owner_original\": \"Hlebetz Johan Baudischbaur Grüble\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"881\", \"892\", \"894\", \"899\", \"900\", \"908\", \"909\", \"1029\", \"1140\", \"1579\", \"1587\", \"1589\", \"1591\", \"1592\", \"1597\", \"1598\", \"1600\", \"1601\", \"1602\", \"1604\", \"1610\", \"1616\", \"1617\", \"1632\", \"1653\", \"1697\", \"1700\", \"1701\", \"1703\", \"1756\", \"1787\", \"1789\", \"1796\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"2212\", \"2270\", \"2328\", \"2389\", \"2393\", \"2396\", \"2407\", \"2408\"]\n        }\n      ],\n      \"annotation_original\": \"b. P. 26.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"19\",\n      \"entry_no\": \"19\",\n      \"section\": \"III\",\n      \"house_no\": \"\",\n      \"owner_original\": \"Kusitschke Maria Lucina Grüble\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"164\", \"169\", \"168\", \"173\", \"191\", \"269\", \"270\", \"273\", \"282\", \"296\", \"300\", \"309\", \"325\", \"330\", \"359\", \"360\", \"426\", \"430\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"550\", \"651\", \"787\", \"1268\", \"1339\", \"1370\", \"1371\", \"1464\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"1968\", \"2035\"]\n        },\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\"2746\", \"2777\", \"2878\", \"2879\"]\n        }\n      ],\n      \"annotation_original\": \"b. P. 87, 89, 91.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"20\",\n      \"entry_no\": \"20\",\n      \"section\": \"III\",\n      \"house_no\": \"0\",\n      \"owner_original\": \"Kusitsch Baron von Gradatz\",\n      \"status_original\": \"Baron\",\n      \"residence_original\": \"von Gradatz\",\n      \"parcels\": [\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"748\", \"777\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"Row 20 explicitly mentions 'Baron von Gradatz' (likely the 'Gradac' referenced in the prompt) and lists parcels III 748 and 777 under Section III.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278426,
+  "id": "202609250333283171985038e14111",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250333283171985038e14111",
+  "usage": {
+    "completion_tokens": 775,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3743,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4518
+  }
+}

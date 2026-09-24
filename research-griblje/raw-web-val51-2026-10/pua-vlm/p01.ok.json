@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Title page of the alphabetical register of landowners for the municipality of Grüble, 1825. Contains only the title block, no tabular entries.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund-Eigenthümer\\nder\\nGemeinde\\nGRÜBLE\",\n  \"entries\": [],\n  \"page_notes\": \"This is the title/cover page of the register. It contains no table rows or data entries. The text is in a mix of cursive script (Kurrent/Copperplate) and printed type.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790273836,
+  "id": "202609250217138ee50e3c4bb34061",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250217138ee50e3c4bb34061",
+  "usage": {
+    "completion_tokens": 124,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 736,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 860
+  }
+}

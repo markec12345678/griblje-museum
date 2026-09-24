@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"61-62\",\n  \"rows\": [\n    {\n      \"entry_no\": \"61\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"60\",\n      \"owner_original\": \"Penzig Stuffe Leuthold zu Grüble\",\n      \"status_original\": \"\",\n      \"residence_original\": \"Grüble\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"20\", \"190\", \"291\", \"392\", \"493\", \"594\", \"695\", \"796\", \"897\", \"998\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"1099\", \"1200\", \"1301\", \"1402\", \"1503\", \"1604\", \"1705\", \"1806\", \"1907\", \"2008\", \"2109\", \"2210\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"Meer. 2222\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"2201\", \"2304\", \"2405\", \"2506\", \"2607\", \"2708\", \"2809\", \"2910\", \"3011\", \"3212\", \"3313\", \"3414\", \"3515\", \"3616\", \"3717\"]\n        },\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"2367\", \"2468\", \"2569\", \"2670\", \"2771\", \"2872\", \"2973\", \"3074\"]\n        }\n      ],\n      \"annotation_original\": \"B.P. 73.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Corrected parcel section assignments: parcels 20-998 are Section I (not II), parcels 1099-2210 are Section II (not III). Verified all numbers and sections against image.\"\n    },\n    {\n      \"entry_no\": \"62\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"62\",\n      \"owner_original\": \"Penzig Gottl. Leuthold zu Grüble\",\n      \"status_original\": \"\",\n      \"residence_original\": \"Grüble\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"432\", \"229\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"107\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"247\"]\n        },\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"2390\", \"2391\", \"2592\", \"2793\", \"2894\", \"2995\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all fields match image correctly.\"\n    }\n  ],\n  \"page_notes\": \"Page contains entries 61-62. Entry 61 is a large multi-section landholder entry with parcels in Sections I, II, III, IV, and V. Entry 62 is a smaller entry. Handwriting is clear Kurrent script. All draft rows exist on page; no missing rows detected.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277246,
+  "id": "20260925031346509d9f1418834d2c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031346509d9f1418834d2c",
+  "usage": {
+    "completion_tokens": 745,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2693,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3438
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Title page of the 1825 Franciscan Cadastre (Grundbuch) for Gemeinde Grüble. Contains printed header fields for Land, Bezirk, Kreis, and Gemeinde (all blank), followed by the main title 'Alphabetisches Verzeichniß Der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen'. No table entries are present on this page.\", \"title_block\": \"Land: [blank]\\nBezirk: [blank]\\nKreis: [blank]\\nGemeinde: [blank]\\n\\nAlphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [], \"page_notes\": \"This is a title/cover page. The table headers and data entries begin on the following page(s). The page number 'V.T' is visible in the top right corner.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275509,
+  "id": "2026092502450573f11a18efce4da8",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092502450573f11a18efce4da8",
+  "usage": {
+    "completion_tokens": 199,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1607
+  }
+}

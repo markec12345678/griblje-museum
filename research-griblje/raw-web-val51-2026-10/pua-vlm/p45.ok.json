@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page from the 1825 alphabetical land register for the municipality of Grüble, showing entries for property owners Veritscher and Watschinger with their associated land parcels in various sections.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\",\n  \"entries\": [\n    {\n      \"entry_no\": \"91\",\n      \"section\": \"\",\n      \"house_no\": \"64\",\n      \"owner_original\": \"Veritscher Wirts Leibkinds Gsöll\",\n      \"status_original\": \"Wirts\",\n      \"residence_original\": \"Leibkinds Gsöll\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"22\", \"37\", \"38\", \"Jura 26a\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"692\", \"738\", \"782\", \"803\", \"809\", \"dann\", \"leer\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"1000\", \"1001\", \"1023\", \"1024\", \"1025\", \"1035\", \"1040\", \"1050/56\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"1066\", \"1069/76\", \"1081\", \"Angern\", \"c\", \"1051\", \"1746/472\"]\n        },\n        {\n          \"section\": \"III\",\n          \"numbers\": [\"1946\", \"1953\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1802\", \"1982\", \"64\", \"32\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\n        \"Veritscher[?]\",\n        \"Leibkinds[?]\",\n        \"Gsöll[?]\",\n        \"Jura[?]\",\n        \"leer[?]\",\n        \"Angern[?]\"\n      ]\n    },\n    {\n      \"entry_no\": \"92\",\n      \"section\": \"\",\n      \"house_no\": \"1\",\n      \"owner_original\": \"Watschinger Wirts Leibkinds Gsöll / Gemeinde Riedstätt\",\n      \"status_original\": \"Wirts\",\n      \"residence_original\": \"Leibkinds Gsöll / Gemeinde Riedstätt\",\n      \"parcels\": [\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\"2068/69\", \"2480\", \"2507\", \"2550\", \"2578\", \"2579\", \"2581\", \"2588\", \"2596\", \"2598\", \"2579\", \"2579\", \"2579\"]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"medium\",\n      \"uncertain_words\": [\n        \"Watschinger[?]\",\n        \"Leibkinds[?]\",\n        \"Gsöll[?]\",\n        \"Riedstätt[?]\"\n      ]\n    }\n  ],\n  \"page_notes\": \"The handwriting is in Kurrent script. Some parcel numbers and words are difficult to decipher due to cursive ligatures and ink quality. Entry 91 has multiple lines of parcel numbers distributed across sections I-IV. Entry 92 lists parcels only in section V. The word 'leer' appears to be a notation rather than a number.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275266,
+  "id": "20260925024047b30ffd13007641a3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925024047b30ffd13007641a3",
+  "usage": {
+    "completion_tokens": 762,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2170
+  }
+}

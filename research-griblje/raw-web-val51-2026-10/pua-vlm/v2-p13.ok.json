@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"24-25\", \"rows\": [{\"entry_no\": \"24\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"II\", \"house_no\": \"9\", \"owner_original\": \"Jakoffitschek / Hans Bauer hiesig\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"II\", \"numbers\": [\"1070\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"\"}, {\"entry_no\": \"25\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"I, II, IV, V\", \"house_no\": \"10\", \"owner_original\": \"Jakoffitschek / Maria Bauerin hiesig\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"823\", \"824\", \"826\", \"783\"]}, {\"section\": \"II\", \"numbers\": [\"978\", \"979\", \"976\", \"977\", \"975\", \"964\", \"963\", \"1023\", \"1000\", \"1001\", \"1016\", \"1042\", \"1032\", \"1052\", \"1065\", \"1082\", \"1083\", \"1097\", \"1097a\", \"1102\"]}, {\"section\": \"IV\", \"numbers\": [\"2292\", \"2301\", \"2298\", \"2380\"]}, {\"section\": \"V\", \"numbers\": [\"2050\"]}], \"annotation_original\": \"D. R. q.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Verified all parcel numbers against image; sequence and values match.\"}], \"page_notes\": \"Page contains entries 24 and 25. Entry 24 has one section (II) with one parcel (1070). Entry 25 spans four sections (I, II, IV, V) with a total of 29 parcels listed. Handwriting is clear Kurrent script.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277031,
+  "id": "2026092503102394cf890939184dcf",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503102394cf890939184dcf",
+  "usage": {
+    "completion_tokens": 448,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2041,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2489
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page from the 1825 Austrian Franciscan Cadastre (Grundbuch) for Gemeinde Grüble, showing entries 18-21 with landowner details and parcel numbers.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen.\", \"entries\": [{\"entry_no\": \"18\", \"section\": \"II.\", \"house_no\": \"2\", \"owner_original\": \"Hiebetz Johann Bauersleute / zu Grübln\", \"status_original\": \"Bauersleute\", \"residence_original\": \"zu Grübln\", \"parcels\": [{\"section\": \"II.\", \"numbers\": [\"192\", \"193\", \"194\", \"199\", \"200\", \"201\", \"202\", \"203\", \"204\", \"205\", \"206\", \"207\", \"208\", \"209\", \"210\", \"211\", \"212\", \"213\", \"214\", \"215\", \"216\", \"217\", \"218\", \"219\", \"220\", \"221\", \"222\", \"223\", \"224\", \"225\", \"226\", \"227\", \"228\", \"229\"]}, {\"section\": \"IV.\", \"numbers\": [\"2392\", \"2530\", \"2568\", \"2639\", \"2695\", \"2704\", \"2780\", \"2801\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"19\", \"section\": \"III.\", \"house_no\": \"44\", \"owner_original\": \"Husitsch Maria Bauersleute / zu Grübln\", \"status_original\": \"Bauersleute\", \"residence_original\": \"zu Grübln\", \"parcels\": [{\"section\": \"I.\", \"numbers\": [\"100\", \"101\", \"102\", \"103\", \"104[?]\", \"270\", \"272\", \"284[?]\", \"292\", \"307\", \"320\", \"330\", \"340\", \"360\", \"380\"]}, {\"section\": \"II.\", \"numbers\": [\"1300\", \"1351\", \"1379\", \"1398\", \"1419\", \"1470\", \"1571\", \"1644\", \"1661\", \"1693\"]}, {\"section\": \"IV.\", \"numbers\": [\"2162[?]\", \"2179\", \"2187[?]\"]}, {\"section\": \"V.\", \"numbers\": []}], \"annotation_original\": \"\", \"confidence\": \"medium\", \"uncertain_words\": [\"104[?]\", \"284[?]\", \"2162[?]\", \"2187[?]\"]}, {\"entry_no\": \"20\", \"section\": \"III.\", \"house_no\": \"6\", \"owner_original\": \"Husitsch Barbara des Grädlers / Ehefrau\", \"status_original\": \"des Grädlers Ehefrau\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"III.\", \"numbers\": [\"146\", \"1777\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}, {\"entry_no\": \"21\", \"section\": \"IV.\", \"house_no\": \"8\", \"owner_original\": \"Maurerisch Johann Bäckersleute / zu Waidhofen\", \"status_original\": \"Bäckersleute\", \"residence_original\": \"zu Waidhofen\", \"parcels\": [{\"section\": \"IV.\", \"numbers\": [\"2418\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"Entry 19 contains some parcel numbers that are slightly unclear due to handwriting (marked with [?]). Entry 20 has no explicit residence listed, only status. The name 'Hiebetz' in entry 18 could potentially be 'Hieberz' but 'Hiebetz' is more consistent with the letter forms.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274377,
+  "id": "202609250225548b6b4b606b104853",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250225548b6b4b606b104853",
+  "usage": {
+    "completion_tokens": 866,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2274
+  }
+}

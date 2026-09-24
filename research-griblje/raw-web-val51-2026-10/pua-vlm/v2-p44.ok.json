@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Alphabetisches Verzeichniß der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen. Gemeinde Grüble. Rows 89-90.\",\n  \"rows\": [\n    {\n      \"entry_no\": \"89\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"51\",\n      \"owner_original\": \"Urich Pattle / Bauer zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"376\", \"482\", \"534\", \"625\", \"716\", \"814\", \"915\", \"978\", \"997\", \"1004\", \"1023\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"265\", \"410\", \"618\", \"673\", \"727\", \"950\", \"1008\", \"1038\", \"1070\", \"1088\", \"1092\", \"1101\", \"1171\", \"1197\", \"1202\", \"1250\", \"1260\"]\n        },\n        {\n          \"section\": \"III V\",\n          \"numbers\": [\"1493\", \"1496\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1500\", \"1501\", \"1530\", \"1551\", \"1600\", \"1626\", \"1636\", \"1656\", \"1691\", \"1710\", \"1720\", \"1739\", \"1759\", \"1767\", \"1781\", \"1792\"]\n        },\n        {\n          \"section\": \"V\",\n          \"numbers\": [\"1799\", \"1801\", \"1831\", \"1863\", \"1889\", \"1929\", \"1937\", \"1953\", \"1996\", \"2010\"]\n        }\n      ],\n      \"annotation_original\": \"D. P. 94, 95,\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Verified all parcel numbers and sections against image.\"\n    },\n    {\n      \"entry_no\": \"90\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"68\",\n      \"owner_original\": \"Urich Mattle / Söllner zu Grübln\",\n      \"status_original\": \"\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"56\", \"200a\", \"401\", \"492\", \"629\", \"646\", \"971\", \"986\", \"999\", \"1016\"]\n        },\n        {\n          \"section\": \"II\",\n          \"numbers\": [\"189\", \"299\", \"469\", \"651\", \"877\", \"1043\", \"1072\", \"1182\", \"1203\", \"1249/50\"]\n        },\n        {\n          \"section\": \"IV\",\n          \"numbers\": [\"1537\", \"1558\", \"1645\", \"1661\", \"1704\", \"1776\", \"1787\", \"1799\", \"1857\", \"1894\", \"1962\", \"1990\", \"2052\"]\n        }\n      ],\n      \"annotation_original\": \"D. T. sh.\n\nUebersprungene Parzellen Nummer\n\nI: 20, 161, 310, 472, 483, 682, 692, 696, 720, 882, 89?\nII: 637\n\nIV: 6\nWaldtheilung [?] des Wiedners of\nIX:\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [\"Waldtheilung\"],\n      \"changes\": \"Verified all parcel numbers and sections against image.\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 89 and 90. Entry 89 is for Urich Pattle (Bauer) with parcels in Sections I, II, III V, IV, and V. Entry 90 is for Urich Mattle (Söllner) with parcels in Sections I, II, and IV. The annotation for entry 90 lists skipped parcel numbers (Uebersprungene Parzellen Nummer).\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277383,
+  "id": "2026092503160868cbb498721144f5",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503160868cbb498721144f5",
+  "usage": {
+    "completion_tokens": 960,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3370,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "total_tokens": 4330
+  }
+}

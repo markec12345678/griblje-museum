@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V.T.\",\n  \"focus_findings\": [\n    {\n      \"row\": \"1\",\n      \"entry_no\": \"47\",\n      \"section\": \"I., II., IV.\",\n      \"house_no\": \"7\",\n      \"owner_original\": \"Liechtenst. Mandl\",\n      \"status_original\": \"b. G. [?]\",\n      \"residence_original\": \"b. u. w. in Grüble\",\n      \"parcels\": [\n        {\"section\": \"I.\", \"numbers\": [\"49\", \"50\", \"61\", \"62\", \"63\", \"790\", \"813\"]},\n        {\"section\": \"II.\", \"numbers\": [\"920\", \"924\", \"942\", \"952\", \"961\", \"1016\", \"1034\", \"1056\", \"1089\", \"1101\", \"1145\", \"1157\", \"1216\", \"1231\", \"1247\", \"1263\", \"1285\", \"1303\", \"1320\", \"1696\", \"1702\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2234\", \"2293\", \"2312\", \"2322\", \"2350\", \"2389\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"2\",\n      \"entry_no\": \"48\",\n      \"section\": \"II., II-IV, IV.\",\n      \"house_no\": \"12\",\n      \"owner_original\": \"Liechtensth. Murgi\",\n      \"status_original\": \"\",\n      \"residence_original\": \"b. u. w. in Grüble\",\n      \"parcels\": [\n        {\"section\": \"II.\", \"numbers\": [\"832\", \"840\", \"848\", \"862\", \"917\", \"926\", \"927\", \"1050\", \"1072\", \"1676\", \"1722\", \"1756\", \"1797\", \"1813\"]},\n        {\"section\": \"II-IV\", \"numbers\": [\"1891\", \"1937\"]},\n        {\"section\": \"IV.\", \"numbers\": [\"2295\", \"2318\", \"2360\"]}\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"The running numbers (lfd. Nummer) for the two Liechtenstein entries are clearly '47' and '48'. The status for entry 47 appears to be an abbreviation like 'b. G.' or similar, written below the parcel list. The residence is abbreviated as 'b. u. w.' (bey und wohnend) followed by the location.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278506,
+  "id": "20260925033453c75a9f24ccf547af",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925033453c75a9f24ccf547af",
+  "usage": {
+    "completion_tokens": 605,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4374
+  }
+}

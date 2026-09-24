@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"V.7\",\n  \"rows\": [\n    {\n      \"entry_no\": \"67\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"7\",\n      \"owner_original\": \"Procurat Miko Laurin / Landpfleger zu / Gräving.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"Gräving.\",\n      \"parcels\": [\n        {\n          \"section\": \"V.\",\n          \"numbers\": [\n            \"1269.\",\n            \"1270.\",\n            \"1280.\",\n            \"1296.\"\n          ]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Confirmed all fields. Draft was accurate.\"\n    },\n    {\n      \"entry_no\": \"68\",\n      \"exists\": true,\n      \"missing_from_draft\": false,\n      \"section\": \"\",\n      \"house_no\": \"69\",\n      \"owner_original\": \"Pfarrer Elias Brandl / hiesiger.\",\n      \"status_original\": \"\",\n      \"residence_original\": \"hiesiger.\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": [],\n      \"changes\": \"Confirmed all fields. Draft was accurate.\"\n    }\n  ],\n  \"page_notes\": \"The page contains entries 67 and 68. Entry 67 lists four parcels in Section V (1269, 1270, 1280, 1296). Entry 68 has no parcels listed on this page and contains a small circular mark or doodle below the name.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277302,
+  "id": "2026092503145507812c6a515e466c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503145507812c6a515e466c",
+  "usage": {
+    "completion_tokens": 361,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1488,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1849
+  }
+}

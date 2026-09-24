@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page\": \"V T\",\n  \"focus_findings\": [\n    {\n      \"row\": \"40\",\n      \"entry_no\": \"40\",\n      \"section\": \"\",\n      \"house_no\": \"65\",\n      \"owner_original\": \"Widhann Georg\",\n      \"status_original\": \"bäuerlicher Gütlbesitzer\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I\",\n          \"numbers\": [\"3\", \"6\", \"52\", \"89\", \"177\", \"284\", \"298\", \"302\", \"351\", \"362\", \"327\", \"341\", \"346\", \"350\", \"39\"]\n        },\n        {\n          \"section\": \"I.II\",\n          \"numbers\": [\"719\", \"760\", \"767\", \"796\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"785\", \"817\", \"876\", \"879\", \"991\", \"1001\", \"1002\", \"1070\", \"1029\", \"109\", \"1079\", \"1085\", \"1065\", \"1066\", \"1067\", \"1049\", \"1051\", \"1052\", \"1640\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"1844\", \"1845\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"2029\", \"2040\", \"2041\", \"2070\", \"2079\", \"2088\", \"2091\", \"2101\", \"2107\", \"2168\", \"2169\", \"2170\", \"2179\", \"2186\", \"237\", \"12853\"]\n        }\n      ],\n      \"annotation_original\": \"B. P. 46, 47, 48.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"row\": \"41\",\n      \"entry_no\": \"41\",\n      \"section\": \"\",\n      \"house_no\": \"66\",\n      \"owner_original\": \"Widhann Georg\",\n      \"status_original\": \"bäuerlicher Gütlbesitzer\",\n      \"residence_original\": \"\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\"10\", \"20\", \"59\", \"40\", \"272\", \"757\", \"663\", \"666\"]\n        },\n        {\n          \"section\": \"I.II\",\n          \"numbers\": [\"721\", \"762\", \"764\"]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\"1006\", \"1007\", \"1109\", \"1164\", \"1203\", \"1241\", \"1246\", \"1267\", \"1663\", \"1664\"]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\"1842\", \"1843\", \"1846\"]\n        },\n        {\n          \"section\": \"III.IV\",\n          \"numbers\": [\"1926\"]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\"1977\", \"1980\", \"2000\"]\n        }\n      ],\n      \"annotation_original\": \"P. S. 29, 20,\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"extra_observations\": \"The names in the image are 'Widhann Georg' (not Brincz Marko). The status is 'bäuerlicher Gütlbesitzer' (farmer/peasant estate owner), which is a compound of 'bäuerlich', 'Gütl', and 'Besitzer'. The handwriting for the name in row 41 is identical to row 40. The B.P./P.S. numbers are recorded at the bottom of each entry block.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790278469,
+  "id": "2026092503341237c9458a2aa549dc",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092503341237c9458a2aa549dc",
+  "usage": {
+    "completion_tokens": 839,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3733,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4572
+  }
+}

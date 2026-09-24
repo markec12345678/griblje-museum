@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"V.T. Alphabetisches Verzeichniß Der Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"rows\": [{\"entry_no\": \"63\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"33\", \"owner_original\": \"Pfarrer Johann Leopold Kaulßgütlle\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"62\", \"26\", \"79\", \"82\", \"83\", \"89\", \"261/322\", \"326\", \"391\", \"399\", \"416\"]}, {\"section\": \"II\", \"numbers\": [\"780\", \"792\", \"795\", \"797\", \"822\", \"836\", \"857\", \"958\", \"962\", \"1002\", \"1026\", \"1050\", \"1057\", \"1094/5\", \"1297\", \"1363\"]}, {\"section\": \"III/IV\", \"numbers\": [\"1416\"]}, {\"section\": \"III\", \"numbers\": [\"1850\", \"1923\"]}, {\"section\": \"IV\", \"numbers\": [\"2095\", \"2164\", \"2245\", \"2249\", \"2391\", \"2419\", \"2478\", \"2518\", \"2592\", \"2695\", \"2891\", \"2918\", \"2920\", \"3040\"]}, {\"section\": \"V/3\", \"numbers\": [\"3159\", \"3444\", \"3513\", \"3578\"]}], \"annotation_original\": \"d. P. G. k.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"No changes required; all fields match the image.\"}, {\"entry_no\": \"64\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"\", \"owner_original\": \"G. Pfarrer Johann Leopold Kaulßgütlle\", \"status_original\": \"\", \"residence_original\": \"\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"380\", \"492\", \"504\", \"536\", \"605\", \"606\", \"662\", \"676\", \"693\", \"695\", \"953\", \"958\"]}, {\"section\": \"II\", \"numbers\": [\"1626\", \"1639\"]}, {\"section\": \"III\", \"numbers\": [\"1874\", \"1909\", \"1935\", \"1947\", \"1958\", \"1999\"]}, {\"section\": \"III/V\", \"numbers\": [\"983\"]}, {\"section\": \"IV\", \"numbers\": [\"2209\", \"2281\"]}, {\"section\": \"V\", \"numbers\": [\"3010\", \"3079\"]}], \"annotation_original\": \"D. P. M.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"No changes required; all fields match the image.\"}], \"page_notes\": \"The page contains entries 63 and 64 for Johann Leopold Kaulßgütlle (Parish Priest). Entry 63 lists his property associated with House No. 33, while Entry 64 (prefixed with 'G.') lists additional properties without a specific house number. The handwriting is clear Kurrent script.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277283,
+  "id": "20260925031427043fa7c6bf604e0b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031427043fa7c6bf604e0b",
+  "usage": {
+    "completion_tokens": 756,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2981,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3737
+  }
+}

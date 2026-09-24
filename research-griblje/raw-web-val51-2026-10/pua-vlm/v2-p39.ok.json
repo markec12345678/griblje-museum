@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"78-79\", \"rows\": [{\"entry_no\": \"78\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"29\", \"owner_original\": \"Schimcz Maria Bäurin hiesig\", \"status_original\": \"Bäurin\", \"residence_original\": \"hiesig\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"103\", \"104\", \"191\", \"246\", \"346\", \"357\", \"382\", \"393\"]}, {\"section\": \"I/II\", \"numbers\": [\"1052\"]}, {\"section\": \"II\", \"numbers\": [\"916\", \"1061\", \"1163\", \"1188\", \"1196\", \"1270\", \"1284\", \"1290\", \"1397\", \"1533\", \"1570\", \"1679\", \"1685\", \"1693\"]}, {\"section\": \"III\", \"numbers\": [\"1891\", \"1963\", \"1994\", \"1996\"]}, {\"section\": \"IV\", \"numbers\": [\"971a\", \"973b\", \"229b\", \"235\"]}], \"annotation_original\": \"B.P. 95. 97.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected owner field to separate name/status/residence. Moved B.P. numbers from owner field to annotation field.\"}, {\"entry_no\": \"79\", \"exists\": true, \"missing_from_draft\": false, \"section\": \"\", \"house_no\": \"28\", \"owner_original\": \"Breunig Georgy Bauer hiesig\", \"status_original\": \"Bauer\", \"residence_original\": \"hiesig\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"20\", \"29/30\", \"33\", \"99\", \"102\", \"107\", \"108\", \"109\", \"110\", \"111/112\", \"113\", \"114\", \"115\", \"116\", \"117\", \"119\", \"120\", \"121\", \"122\", \"123\", \"124\", \"125\", \"126\", \"127\", \"128\", \"129\", \"130\", \"131\", \"132\", \"133\", \"134\", \"135\", \"136\", \"137\", \"138\", \"139\", \"140\", \"141\", \"142\", \"143\", \"144\", \"145\", \"146\", \"147\", \"148\", \"149\", \"150\", \"151\", \"152\", \"153\", \"154\", \"155\", \"156\", \"157\", \"158\", \"159\", \"160\", \"161\", \"162\", \"163\", \"164\", \"165\", \"166\", \"167\", \"168\", \"169\", \"170\", \"171\", \"172\", \"173\", \"174\", \"175\", \"176\", \"177\", \"178\", \"179\", \"180\", \"181\", \"182\", \"183\", \"184\", \"185\", \"186\", \"187\", \"188\", \"189\", \"190\", \"191\", \"192\", \"193\", \"194\", \"195\", \"196\"]}, {\"section\": \"II\", \"numbers\": [\"709\", \"876\", \"1028\", \"1029\", \"1043\", \"1063\", \"1102\", \"1103/1104\", \"1126\", \"1307\", \"1376\", \"1379\", \"1381\", \"1401\", \"1448\", \"1459\", \"1520/1521\", \"1529\", \"1557\", \"1638\", \"1649\", \"1661\", \"1682\"]}, {\"section\": \"III\", \"numbers\": [\"1836\", \"1859\", \"1897\", \"1908\", \"1923\", \"1926\"]}, {\"section\": \"III/I\", \"numbers\": [\"1928\"]}, {\"section\": \"IV\", \"numbers\": [\"1934\", \"1937\", \"1943\", \"2007\", \"2178\", \"228a\", \"230a\", \"231a\", \"232a\"]}, {\"section\": \"V\", \"numbers\": [\"2035\"]}], \"annotation_original\": \"B.P. 76. 79. 81/82. 93/84.\", \"confidence\": \"high\", \"uncertain_words\": [], \"changes\": \"Corrected owner field to separate name/status/residence. Moved B.P. numbers from owner field to annotation field.\"}], \"page_notes\": \"Verified rows 78 and 79 against the image. The draft had incorrectly placed the 'B.P.' (building parcel) numbers inside the owner name string; these have been moved to the annotation field as they appear in the 'Anmerkung' column of the original document. All parcel numbers and sections verified.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790277350,
+  "id": "20260925031535e0e51fc1677645c6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925031535e0e51fc1677645c6",
+  "usage": {
+    "completion_tokens": 1032,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4909,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5941
+  }
+}

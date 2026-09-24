@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"page_read\": \"Page 96 of the 1825 Franciscan Cadastre for Gemeinde Grüble, showing a single entry for the 'Gemeinde' (municipality) with extensive parcel listings across multiple sections.\", \"title_block\": \"Alphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\", \"entries\": [{\"entry_no\": \"96\", \"section\": \"\", \"house_no\": \"6\", \"owner_original\": \"Hiesige Gemeinde / Grübln\", \"status_original\": \"\", \"residence_original\": \"Grübln\", \"parcels\": [{\"section\": \"I\", \"numbers\": [\"460\", \"461\"]}, {\"section\": \"II\", \"numbers\": [\"462\", \"463\", \"464\", \"465\", \"466\", \"467\", \"468\", \"469\"]}, {\"section\": \"V\", \"numbers\": [\"470\", \"471\", \"472\", \"473\", \"474\", \"475\", \"476\", \"477\", \"478\", \"479\", \"480\"]}, {\"section\": \"D.V\", \"numbers\": [\"481\"]}, {\"section\": \"IV\", \"numbers\": [\"482\", \"483\", \"484\", \"485\", \"486\", \"487\", \"488\", \"489\", \"490\", \"491\", \"492\", \"493\", \"494\", \"495\", \"496\", \"497\", \"498\", \"499\", \"500\", \"501\", \"502\", \"503\", \"504\", \"505\", \"506\"]}, {\"section\": \"H.IV\", \"numbers\": [\"507\", \"508\", \"509\", \"510\", \"511\", \"512\", \"513\"]}, {\"section\": \"III\", \"numbers\": [\"514\", \"515\", \"516\", \"517\", \"518\", \"519\", \"520\", \"521\", \"522\", \"523\", \"524\", \"525\"]}, {\"section\": \"II\", \"numbers\": [\"526\", \"527\", \"528\", \"529\", \"530\", \"531\", \"532\", \"533\", \"534\", \"535\", \"536\", \"537\", \"538\", \"539\", \"540\", \"541\", \"542\", \"543\", \"544\", \"545\", \"546\", \"547\", \"548\", \"549\", \"550\"]}], \"annotation_original\": \"\", \"confidence\": \"high\", \"uncertain_words\": []}], \"page_notes\": \"The entry for 'Hiesige Gemeinde' (local municipality) spans multiple lines in the parcel columns. Section designations include Roman numerals and mixed alphanumeric codes (D.V, H.IV). Handwriting is clear Kurrent script.\"}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790275364,
+  "id": "202609250242366699d0bac43545cd",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250242366699d0bac43545cd",
+  "usage": {
+    "completion_tokens": 652,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 540
+    },
+    "total_tokens": 2060
+  }
+}

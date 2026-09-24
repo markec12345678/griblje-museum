@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "```json\n{\n  \"page_read\": \"Page from the alphabetical index of landowners for Gemeinde Grüble (1825), showing entries for 'Dragosch' with associated parcel numbers across multiple sections.\",\n  \"title_block\": \"Alphabetisches Verzeichniß\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"12\",\n      \"section\": \"\",\n      \"house_no\": \"4\",\n      \"owner_original\": \"Dragosch, Maria, bauerin, zu Dragosch / gemindt. Holzschildk.\",\n      \"status_original\": \"bauerin\",\n      \"residence_original\": \"zu Dragosch\",\n      \"parcels\": [],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"13\",\n      \"section\": \"\",\n      \"house_no\": \"5\",\n      \"owner_original\": \"Dragosch, georg, bauer, zu Dragosch / gemindt. Holzschildk.\",\n      \"status_original\": \"bauer\",\n      \"residence_original\": \"zu Dragosch\",\n      \"parcels\": [\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\n            \"806\",\n            \"898\",\n            \"916\",\n            \"922\",\n            \"1097\",\n            \"1022\",\n            \"325\",\n            \"1571\",\n            \"1673\",\n            \"168\",\n            \"1636\"\n          ]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\n            \"1692\"\n          ]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\n            \"2288\",\n            \"2043\",\n            \"2046\",\n            \"2093\",\n            \"2405\",\n            \"2465\",\n            \"2502\"\n          ]\n        }\n      ],\n      \"annotation_original\": \"\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"Entry 12 has a large 'O' or circle drawn in the empty space below the owner's name. The handwriting is clear Kurrent script. The word 'gemindt' appears to be an abbreviation for 'gemeinde' or similar administrative term.\"\n}\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274298,
+  "id": "202609250224475bcc49a017de4f95",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609250224475bcc49a017de4f95",
+  "usage": {
+    "completion_tokens": 503,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1911
+  }
+}

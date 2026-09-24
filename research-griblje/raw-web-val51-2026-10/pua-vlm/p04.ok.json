@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\n  \"page_read\": \"Page V.7 of the 1825 Austrian Franciscan Cadaster for the municipality of Grüble, containing two property owner entries (Brincz Marjan and Brincz Wendel) with their parcel numbers distributed across sections I through IV.\",\n  \"title_block\": \"Land: [blank]\\nKreis: [blank]\\nBezirk: [blank]\\nGemeinde: [blank]\\n\\nAlphabetisches Verzeichniß\\nDer Grund Eigenthümer und ihrer nach Sectionen abgetheilten Grund Parzellen\",\n  \"entries\": [\n    {\n      \"entry_no\": \"3.\",\n      \"section\": \"\",\n      \"house_no\": \"24\",\n      \"owner_original\": \"Brincz Marjan Bauer zu Grüblen\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"Grüblen\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\n            \"679\",\n            \"680\",\n            \"681\",\n            \"682\",\n            \"683\",\n            \"684\",\n            \"685\",\n            \"686\",\n            \"687\",\n            \"688\",\n            \"689\",\n            \"690\",\n            \"691\",\n            \"692\",\n            \"693\"\n          ]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\n            \"1688\",\n            \"1690\",\n            \"1691\",\n            \"1692\",\n            \"1693\",\n            \"1694\",\n            \"1695\",\n            \"1696\",\n            \"1697\",\n            \"1698\",\n            \"1699\",\n            \"1700\"\n          ]\n        },\n        {\n          \"section\": \"II. III.\",\n          \"numbers\": [\n            \"948\"\n          ]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\n            \"1931\",\n            \"1934\",\n            \"1900\",\n            \"1897\",\n            \"1916\",\n            \"1915\",\n            \"1913\",\n            \"1935\",\n            \"1936\",\n            \"1938\",\n            \"1950\",\n            \"1953\"\n          ]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\n            \"2022\",\n            \"2024\",\n            \"2063\"\n          ]\n        }\n      ],\n      \"annotation_original\": \"D. R. 32.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    },\n    {\n      \"entry_no\": \"4.\",\n      \"section\": \"\",\n      \"house_no\": \"25\",\n      \"owner_original\": \"Brincz Wendel Bauer zu Grüblen\",\n      \"status_original\": \"Bauer\",\n      \"residence_original\": \"Grüblen\",\n      \"parcels\": [\n        {\n          \"section\": \"I.\",\n          \"numbers\": [\n            \"678\",\n            \"691\",\n            \"692\",\n            \"693\",\n            \"695\",\n            \"696\",\n            \"697\",\n            \"698\",\n            \"662\",\n            \"663\"\n          ]\n        },\n        {\n          \"section\": \"II.\",\n          \"numbers\": [\n            \"1677\",\n            \"1678\",\n            \"1679\",\n            \"1680\",\n            \"1681\",\n            \"1682\",\n            \"1683\"\n          ]\n        },\n        {\n          \"section\": \"III.\",\n          \"numbers\": [\n            \"1892\",\n            \"1893\",\n            \"1889\",\n            \"1890\",\n            \"1872\",\n            \"1914\",\n            \"1916\",\n            \"1926\",\n            \"1927\",\n            \"1928\",\n            \"1937\",\n            \"1981\"\n          ]\n        },\n        {\n          \"section\": \"IV.\",\n          \"numbers\": [\n            \"205\",\n            \"2063\"\n          ]\n        }\n      ],\n      \"annotation_original\": \"D. R. 29.\",\n      \"confidence\": \"high\",\n      \"uncertain_words\": []\n    }\n  ],\n  \"page_notes\": \"The page is clearly legible. Section II and III are combined in one row for the first entry (parcel 948). The annotation 'D. R.' likely stands for 'Dominal-Rente' or similar fiscal term.\"\n}",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790274235,
+  "id": "20260925022336a189ebf35cfd4259",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260925022336a189ebf35cfd4259",
+  "usage": {
+    "completion_tokens": 927,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2335
+  }
+}
