@@ -49,6 +49,42 @@ type Building = {
 
 type Toponym = { name: string; px: number; py: number; lat: number; lng: number };
 
+/* --- Podatkovni sloji atlasa 1825 (issue #42 §15, PASS 5) — /api/atlas/map --- */
+type KgMapObject = {
+  node_id: string;
+  sheet: string;
+  label: string;
+  building_type: string;
+  bp_glyph: string | null;
+  glyph_tier: string;
+  px: [number, number] | null;
+  lat: number | null;
+  lng: number | null;
+  georef_status: string;
+  evidence_status: string;
+  evidence_url: string;
+};
+type KgHouse = {
+  node_id: string;
+  house_no_1825: string;
+  evidence_status: string;
+  bp_refs: { bp: number; final_status: string; map_object: string | null }[];
+  located: boolean;
+  position: { lat: number; lng: number; px: [number, number]; via_bp: number; map_object: string; georef_status: string } | null;
+  evidence_url: string;
+};
+type KgMapData = {
+  ok: boolean;
+  counts: {
+    map_objects: number;
+    map_objects_a01: number;
+    map_objects_other_sheets: number;
+    houses_located: number;
+    toponyms: number;
+  };
+  layers: { map_objects: KgMapObject[]; houses: KgHouse[] };
+};
+
 const data = cadastre as unknown as {
   meta: {
     sheet: string;
@@ -140,6 +176,37 @@ export function CadastreMapView() {
   const [query, setQuery] = React.useState("");
   const [opacity, setOpacity] = React.useState(0.55);
   const [target, setTarget] = React.useState<[number, number] | null>(null);
+
+  /* --- podatkovni sloji KG (PASS 5): naloži enkrat, prikaži z stikali --- */
+  const [kgData, setKgData] = React.useState<KgMapData | null>(null);
+  const [kgState, setKgState] = React.useState<"loading" | "ready" | "error">("loading");
+  const [showKgObjects, setShowKgObjects] = React.useState(true);
+  const [showKgHouses, setShowKgHouses] = React.useState(false);
+  React.useEffect(() => {
+    let alive = true;
+    fetch("/api/atlas/map")
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d: KgMapData) => {
+        if (!alive) return;
+        setKgData(d);
+        setKgState("ready");
+      })
+      .catch(() => {
+        if (alive) setKgState("error");
+      });
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  const kgObjectsA01 = React.useMemo(
+    () => (kgData?.layers.map_objects ?? []).filter((m) => m.sheet === "A01"),
+    [kgData]
+  );
+  const kgHousesLocated = React.useMemo(
+    () => (kgData?.layers.houses ?? []).filter((h) => h.located && h.position),
+    [kgData]
+  );
 
   const labeled = data.buildings.filter((b) => b.owner);
   const plain = data.buildings.filter((b) => !b.owner);
@@ -293,6 +360,88 @@ export function CadastreMapView() {
                   </Popup>
                 </Marker>
               ))}
+              {/* KG sloj: kartografski objekti atlasa 1825 (val 65/66, §15) */}
+              {kgState === "ready" && showKgObjects
+                ? kgObjectsA01.map((m) => {
+                    if (!m.px) return null;
+                    const label = `${m.label}${m.bp_glyph ? ` · BP ${m.bp_glyph}` : ""}`;
+                    return (
+                      <Marker
+                        key={`kg-${m.node_id}`}
+                        position={[data.overlay.px_size[1] - m.px[1], m.px[0]]}
+                        title={label}
+                        alt={label}
+                        icon={markerIcon("#2f6f4f", m.bp_glyph ?? "•", true, label)}
+                      >
+                        <Popup>
+                          <div className="min-w-56 space-y-1.5">
+                            <p className="text-[11px] font-semibold uppercase tracking-wide text-stone-500">
+                              {m.node_id} · {m.glyph_tier}
+                            </p>
+                            <p className="text-sm font-semibold leading-snug">{m.label}</p>
+                            <p className="text-xs text-stone-600">
+                              {m.building_type}
+                              {m.bp_glyph ? ` · BP ${m.bp_glyph}` : ""}
+                            </p>
+                            <p className="text-[11px] text-amber-700">{m.georef_status}</p>
+                            <a
+                              className="inline-block text-xs font-semibold text-[#2f6f4f] underline underline-offset-2"
+                              href={m.evidence_url}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {k.kgEvidence} ↗
+                            </a>
+                          </div>
+                        </Popup>
+                      </Marker>
+                    );
+                  })
+                : null}
+              {/* KG sloj: hiše locirane prek dokazane verige BP → objekt */}
+              {kgState === "ready" && showKgHouses
+                ? kgHousesLocated.map((h) => {
+                    if (!h.position) return null;
+                    const label = `${k.houseNo} ${h.house_no_1825} · ${k.kgViaBp.replace("{bp}", String(h.position.via_bp))}`;
+                    return (
+                      <Marker
+                        key={`kgh-${h.node_id}`}
+                        position={[data.overlay.px_size[1] - h.position.px[1], h.position.px[0]]}
+                        title={label}
+                        alt={label}
+                        icon={markerIcon("#5d6e3f", h.house_no_1825.slice(0, 3), false, label)}
+                      >
+                        <Popup>
+                          <div className="min-w-56 space-y-1.5">
+                            <p className="text-[11px] font-semibold uppercase tracking-wide text-stone-500">
+                              {h.node_id} · {h.evidence_status}
+                            </p>
+                            <p className="text-sm font-semibold leading-snug">
+                              {k.houseNo} {h.house_no_1825}
+                            </p>
+                            <p className="text-xs text-stone-600">
+                              {k.kgViaBp.replace("{bp}", String(h.position.via_bp))} →{" "}
+                              {h.position.map_object}
+                            </p>
+                            {h.bp_refs.length > 0 ? (
+                              <p className="text-[11px] leading-snug text-stone-500">
+                                BP: {h.bp_refs.map((r) => `${r.bp} (${r.final_status})`).join(" · ")}
+                              </p>
+                            ) : null}
+                            <a
+                              className="inline-block text-xs font-semibold text-[#2f6f4f] underline underline-offset-2"
+                              href={h.evidence_url}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {k.kgEvidence} ↗
+                            </a>
+                          </div>
+                        </Popup>
+                      </Marker>
+                    );
+                  })
+                : null}
             </MapContainer>
           ) : (
             <MapContainer
@@ -379,6 +528,55 @@ export function CadastreMapView() {
                 .replace("{labeled}", String(labeled.length))
                 .replace("{buildings}", String(data.buildings.length))}
             </p>
+            {kgState === "ready" && kgData ? (
+              <div className="mt-3 rounded-lg border border-border/70 bg-background/60 p-3">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-stone-500">
+                  {k.kgLayers}
+                </p>
+                <p className="mt-1.5 text-[11px] leading-snug text-muted-foreground">
+                  {k.kgPanelNote
+                    .replace("{objects}", String(kgData.counts.map_objects))
+                    .replace("{houses}", String(kgData.counts.houses_located))
+                    .replace("{toponyms}", String(kgData.counts.toponyms))}
+                </p>
+                {kgData.counts.map_objects_other_sheets > 0 ? (
+                  <p className="mt-1 text-[11px] leading-snug text-muted-foreground">
+                    {k.kgOtherSheets.replace(
+                      "{other}",
+                      String(kgData.counts.map_objects_other_sheets)
+                    )}
+                  </p>
+                ) : null}
+                <div className="mt-2 flex flex-col gap-1.5">
+                  <label className="flex cursor-pointer items-center gap-2 text-xs">
+                    <input
+                      type="checkbox"
+                      checked={showKgObjects}
+                      onChange={(e) => setShowKgObjects(e.target.checked)}
+                      className="h-4 w-4 accent-[#2f6f4f]"
+                      aria-label={k.kgToggleObjects}
+                    />
+                    {k.kgToggleObjects} ({kgData.counts.map_objects_a01})
+                  </label>
+                  <label className="flex cursor-pointer items-center gap-2 text-xs">
+                    <input
+                      type="checkbox"
+                      checked={showKgHouses}
+                      onChange={(e) => setShowKgHouses(e.target.checked)}
+                      className="h-4 w-4 accent-[#5d6e3f]"
+                      aria-label={k.kgToggleHouses}
+                    />
+                    {k.kgToggleHouses} ({kgData.counts.houses_located})
+                  </label>
+                </div>
+              </div>
+            ) : kgState === "loading" ? (
+              <p className="mt-3 text-[11px] text-muted-foreground" role="status">
+                {k.kgLoading}
+              </p>
+            ) : (
+              <p className="mt-3 text-[11px] text-muted-foreground">{k.kgError}</p>
+            )}
           </div>
           <ul className="min-h-0 flex-1 divide-y divide-border/50 overflow-y-auto" role="list">
             {filtered.map((b) => (

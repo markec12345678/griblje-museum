@@ -406,6 +406,54 @@ ok(
   `status=${atlasBp12.status} claim=${bp12Claim?.status}`
 );
 
+/* --- 5h. /api/atlas/map — PASS 5 podatkovni zemljevid (val 67, #42 §15) ------ */
+const atlasMap = await getJson("/api/atlas/map");
+ok(
+  "atlas map: layer=all — 34 MAP_OBJECT (24 A01 + 10 drugi listi), disclaimers (val 67)",
+  atlasMap.status === 200 &&
+    atlasMap.body?.counts?.map_objects === 34 &&
+    atlasMap.body?.counts?.map_objects_a01 === 24 &&
+    atlasMap.body?.counts?.map_objects_other_sheets === 10 &&
+    String(atlasMap.body?.disclaimer).includes("PROVIZORIČNA"),
+  `status=${atlasMap.status} objects=${atlasMap.body?.counts?.map_objects}`
+);
+const h40 = (atlasMap.body?.layers?.houses ?? []).find(
+  (h: any) => h.node_id === "HOUSE:H-040"
+);
+ok(
+  "atlas map: hiša 40 locirana prek BP 94 → MO-A01-002, PROVIZORIČNO (val 67)",
+  atlasMap.status === 200 &&
+    h40?.located === true &&
+    h40?.position?.via_bp === 94 &&
+    h40?.position?.map_object === "MO:MO-A01-002" &&
+    typeof h40?.position?.lat === "number",
+  `located=${h40?.located} via=${h40?.position?.via_bp}`
+);
+ok(
+  "atlas map: A02–A05 brez koordinat + KG-F05 varovalka (hiša BP 12 ni locirana)",
+  (atlasMap.body?.layers?.map_objects ?? [])
+    .filter((m: any) => m.sheet !== "A01")
+    .every((m: any) => m.lat === null && m.lng === null) &&
+    (atlasMap.body?.layers?.houses ?? [])
+      .filter((h: any) => h.bp_refs?.some?.((r: any) => r.bp === 12))
+      .every((h: any) => h.located === false),
+  "A02/A05 lat=null; BP12 not-located"
+);
+const atlasMapSheets = await getJson("/api/atlas/map?layer=sheets");
+ok(
+  "atlas map: sheets — 5 listov A01–A05 z vac_details_url (§11)",
+  atlasMapSheets.status === 200 &&
+    atlasMapSheets.body?.count === 5 &&
+    atlasMapSheets.body?.sheets?.every?.((s: any) => String(s?.vac_details_url).includes("vac.sjas.gov.si")),
+  `count=${atlasMapSheets.body?.count}`
+);
+const atlasMapBad = await getJson("/api/atlas/map?layer=neznana");
+ok(
+  "atlas map: neznana plast → 400 unknown_layer (poštene napake)",
+  atlasMapBad.status === 400 && atlasMapBad.body?.error === "unknown_layer",
+  `status=${atlasMapBad.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
