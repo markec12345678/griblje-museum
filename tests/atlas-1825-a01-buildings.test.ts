@@ -130,19 +130,24 @@ describe("val65 — a01-building-inventory-1825 (PASS 4, §7)", () => {
 });
 
 describe("val65 — KG v1.2 MAP_OBJECT integracija", () => {
-  test("24 MAP_OBJECT vozlišč, vsi DEPICTED_ON → SRC-A01, 18 CORRESPONDS_TO_BP z claimi", () => {
+  test("A01: 24 MAP_OBJECT vozlišč, vsi A01 DEPICTED_ON → SRC-A01, 18 A01 CORRESPONDS_TO_BP z claimi (val 66: skupaj 34 MO)", () => {
     const mo = kg.nodes.filter((n: { node_type: string }) => n.node_type === "MAP_OBJECT");
-    expect(mo.length).toBe(24);
-    const dep = kg.edges.filter((e: { relation_type: string }) => e.relation_type === "DEPICTED_ON");
-    expect(dep.length).toBe(24);
-    for (const e of dep) {
+    expect(mo.length).toBe(34); // val 66: +8 A02 +2 A05
+    const depA01 = kg.edges.filter(
+      (e: { relation_type: string; from_entity: string }) =>
+        e.relation_type === "DEPICTED_ON" && e.from_entity.startsWith("MO:MO-A01-"),
+    );
+    expect(depA01.length).toBe(24);
+    for (const e of depA01) {
       expect(e.to_entity).toBe("SRC-A01");
       expect(e.evidence_status).toBeTruthy();
     }
-    const cbp = kg.edges.filter((e: { relation_type: string }) => e.relation_type === "CORRESPONDS_TO_BP");
-    expect(cbp.length).toBe(18);
-    for (const e of cbp) {
-      expect(e.from_entity.startsWith("MO:MO-A01-")).toBe(true);
+    const cbpA01 = kg.edges.filter(
+      (e: { relation_type: string; from_entity: string }) =>
+        e.relation_type === "CORRESPONDS_TO_BP" && e.from_entity.startsWith("MO:MO-A01-"),
+    );
+    expect(cbpA01.length).toBe(18); // val 66: +3 A02 kandidati (12/20/22) = 21 skupaj
+    for (const e of cbpA01) {
       expect(e.to_entity).toMatch(/^BP:\d{3}$/);
       expect(e.claim_ids.length).toBe(1);
     }
@@ -166,15 +171,15 @@ describe("val65 — KG v1.2 MAP_OBJECT integracija", () => {
     expect(e2house.to_entity).toBe("HOUSE:H-040");
   });
 
-  test("RG-001 PARTIAL + KG-F03/KG-F04 v grafa; 0 invariant violations", () => {
+  test("RG-001 RESOLVED-V66 (val 66: A02–A05 inventarizirani) + KG-F03/KG-F04 v grafa; 0 invariant violations", () => {
     const rg1 = kg.research_gaps.find((g: { gap_id: string }) => g.gap_id === "RG-001");
-    expect(rg1.status).toBe("PARTIAL");
-    expect(rg1.current_result).toContain("A01 v1");
+    expect(rg1.status).toBe("RESOLVED-V66");
+    expect(rg1.current_result).toContain("vseh 5 listov");
     const fids = kg.findings.map((f: { finding_id: string }) => f.finding_id);
     expect(fids).toContain("KG-F03");
     expect(fids).toContain("KG-F04");
     expect(kg.invariant_violations).toEqual([]);
-    expect(kg.val).toBe(65);
+    expect(kg.val).toBe(66);
     const moCat = kg.coverage.categories.find(
       (c: { category: string }) => c.category === "map_objects_a01",
     );
