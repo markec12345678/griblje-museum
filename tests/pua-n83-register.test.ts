@@ -41,6 +41,8 @@ type PageRecord = {
   pass1_entries: number;
   pass2_verification: boolean;
   pass3_targeted: boolean;
+  native_entries?: number; // val 57: p26/p42 PDF-native branja (2 vpisa vsaka)
+  notes?: string;
 };
 
 const register: PuaEntry[] = JSON.parse(
@@ -109,9 +111,19 @@ describe("pua-n83/register.json (issue #35 §7/§16)", () => {
     }
   });
 
-  test("okrnjeni strani p26/p42 ne prispevata nobenega vpisa (UNVERIFIED ni fact)", () => {
+  test("vpisi z okrnjenih strani p26/p42 imajo izrecno NATIVNO provenanco val 57 (667px verzija ostaja zavrnjena)", () => {
+    // val 51: p26/p42 TRUNCATED → 0 vpisov. val 56: PDF-native ekstrakcija
+    // (1391×2145 / 1400×2151), val 57: branje — vpisa 51+52 (p26), 85+86 (p42).
+    // Varovalka: vsak vpis s teh strani MORA imeti val 57 nativno provenanco,
+    // nikoli branje iz starejše okrnjene 667px verzije (UNVERIFIED ni fact).
     const fromTruncated = register.filter((e) => e.page === 26 || e.page === 42);
-    expect(fromTruncated.length).toBe(0);
+    expect(fromTruncated.length).toBe(4);
+    for (const e of fromTruncated) {
+      expect(e.reading_provenance).toContain("val 57");
+      expect(e.reading_provenance).toContain("native");
+      expect(e.review_status).not.toBe("VERIFIED-2x"); // 1× branje
+      expect(e.notes).toContain("VAL 57");
+    }
   });
 
   test("podvojenih (page, entry_no) parov med VERIFIED vpisi ni", () => {
@@ -207,14 +219,12 @@ describe("pua-n83/page-records.json (issue #35 §1/§5/§6/§15)", () => {
     for (let p = 1; p <= 49; p++) expect(pages.has(p)).toBe(true);
   });
 
-  test("p26/p42 so eksplicitno TRUNCATED / UNVERIFIED — nikoli 'prazni'", () => {
+  test("p26/p42: okrnjeni 667px status zamenjan z nativnim branjem (val 57) — zabeležen z nativnimi vpisi", () => {
     for (const p of [26, 42]) {
       const rec = pageRecords.find((r) => r.page === p);
       expect(rec).toBeDefined();
-      expect(rec!.status).toBe("TRUNCATED / UNVERIFIED");
-      expect(rec!.readable_body === false || !("readable_body" in rec!)).toBe(
-        true
-      );
+      expect(rec!.status).toBe("READ (native verzija, val 57)");
+      expect(rec!.native_entries).toBe(2);
     }
   });
 

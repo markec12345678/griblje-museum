@@ -227,14 +227,16 @@
  {
   "page": 26,
   "version": "original-truncated + salvage (PIL re-encode)",
-  "status": "TRUNCATED / UNVERIFIED",
+  "status": "READ (native verzija, val 57)",
   "readable_body": false,
   "salvage_finding": "vidni del = naslovni blok 'Alphabetisches Verzeichniß' brez vidnih vpisov; telo pod rezom ni mogoče potrditi (val 48/49 reševalno branje + val 51 salvage branje)",
-  "action": "ponovni prenos ob delujočem arhiv.si (P3-E12); p42 telo verjetno vsebuje vpisa 85/86 (aritmetika številčenja)",
+  "action": "P3-E12 RAZREŠENO (val 56/57): PDF-native ekstrakcija + VLM branje — vpisi v register.json",
   "pass1_entries": 0,
   "pass2_verification": false,
   "pass3_targeted": false,
-  "readable": true
+  "readable": true,
+  "native_entries": 2,
+  "notes": "val 56: PDF-native ekstrakcija (1391×2145 / 1400×2151); val 57: branje — p26 vpisa 51+52, p42 vpisa 85+86 (86 parcele odrezane v samem viru)"
  },
  {
   "page": 27,
@@ -377,14 +379,16 @@
  {
   "page": 42,
   "version": "original-truncated + salvage (PIL re-encode)",
-  "status": "TRUNCATED / UNVERIFIED",
+  "status": "READ (native verzija, val 57)",
   "readable_body": false,
   "salvage_finding": "vidni del = naslovni blok 'Alphabetisches Verzeichniß' brez vidnih vpisov; telo pod rezom ni mogoče potrditi (val 48/49 reševalno branje + val 51 salvage branje)",
-  "action": "ponovni prenos ob delujočem arhiv.si (P3-E12); p42 telo verjetno vsebuje vpisa 85/86 (aritmetika številčenja)",
+  "action": "P3-E12 RAZREŠENO (val 56/57): PDF-native ekstrakcija + VLM branje — vpisi v register.json",
   "pass1_entries": 0,
   "pass2_verification": false,
   "pass3_targeted": false,
-  "readable": true
+  "readable": true,
+  "native_entries": 2,
+  "notes": "val 56: PDF-native ekstrakcija (1391×2145 / 1400×2151); val 57: branje — p26 vpisa 51+52, p42 vpisa 85+86 (86 parcele odrezane v samem viru)"
  },
  {
   "page": 43,
