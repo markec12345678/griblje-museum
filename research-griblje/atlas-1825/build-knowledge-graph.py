@@ -45,15 +45,29 @@ SRC_DOCS = [
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418"},
     {"source_id": "SRC-PZ", "label": "PZ — Konskripcija 1830", "uodid": 373419, "docid": 41784, "pages": 71,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"},
-    {"source_id": "SRC-A01", "label": "A01 — katastrski list (vas)", "uodid": 227666, "docid": 10,
+    # KG-F05 (val 66): A01–A05 = ista označena družina listov (napis "Siche die
+    # Reambullirungs Beimappe" na vseh 5, R-A01-title-full + T-pasi); A02–A05 nosijo
+    # numerala II–V in kode O.IX.24ci/dg/cg/ch; A01 = detaljni list vasi (~2.4x večje
+    # merilo); vintage (izmera 1824/27 vs reambulacija) ostaja UNRESOLVED.
+    {"source_id": "SRC-A01", "label": "A01 — katastrski list (detajlni list vasi)", "uodid": 227666, "docid": 10,
+     "section_numeral": None, "series_code": None,
+     "title_inscription": "Siche die Reambullirungs Beimappe", "family_vintage": "UNRESOLVED (KG-F05)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227666"},
-    {"source_id": "SRC-A02", "label": "A02 — katastrski list", "uodid": 227668, "docid": 10,
+    {"source_id": "SRC-A02", "label": "A02 — katastrski list (sekcija II)", "uodid": 227668, "docid": 10,
+     "section_numeral": "II", "series_code": "O.IX.24ci",
+     "title_inscription": "Siche die Reambullirungs Beimappe", "family_vintage": "UNRESOLVED (KG-F05)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227668"},
-    {"source_id": "SRC-A03", "label": "A03 — katastrski list", "uodid": 227670, "docid": 10,
+    {"source_id": "SRC-A03", "label": "A03 — katastrski list (sekcija III)", "uodid": 227670, "docid": 10,
+     "section_numeral": "III", "series_code": "O.IX.24dg",
+     "title_inscription": "Siche die Reambullirungs Beimappe", "family_vintage": "UNRESOLVED (KG-F05)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227670"},
-    {"source_id": "SRC-A04", "label": "A04 — katastrski list", "uodid": 227671, "docid": 10,
+    {"source_id": "SRC-A04", "label": "A04 — katastrski list (sekcija IV)", "uodid": 227671, "docid": 10,
+     "section_numeral": "IV", "series_code": "O.IX.24cg",
+     "title_inscription": "Siche die Reambullirungs Beimappe", "family_vintage": "UNRESOLVED (KG-F05)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227671"},
-    {"source_id": "SRC-A05", "label": "A05 — katastrski list", "uodid": 227673, "docid": 10,
+    {"source_id": "SRC-A05", "label": "A05 — katastrski list (sekcija V)", "uodid": 227673, "docid": 10,
+     "section_numeral": "V", "series_code": "O.IX.24ch",
+     "title_inscription": "Siche die Reambullirungs Beimappe", "family_vintage": "UNRESOLVED (KG-F05)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227673"},
     {"source_id": "SRC-SIAS176", "label": "SI AS 176 — fond Novomeška kresija (k.o. N83 [227663], 12 enot)", "uodid": 227663, "docid": None,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227663"},
@@ -316,12 +330,50 @@ def main():
                    TIER_CONF[o["glyph_tier"]],
                    notes="veza glifa→BP; hišne veze ostajajo prek BP_BOUND_TO_HOUSE (val 57)",
                    claim_ids=[cid])
-    G.gap("MAP_OBJECT inventory (A01–A05 objekti)", ["A01 raster (val 42/65)", "A02–A05 rastri (val 42)"],
-          "A01 v1: %d objektov v65 (%d s BP glifo) + %d prior-only + %d rdečih glif; A02–A05 še neinventarizirani" % (
+    # ---------- MAP_OBJECT (val 66, PASS 4b, issue #42 §7): A02–A05 inventory v1 ----------
+    p4b = load(os.path.join(BASE, "pass4b", "a02-a05-building-inventory-1825.json"))
+    P4B_SRC = {"A02": "SRC-A02", "A03": "SRC-A03", "A04": "SRC-A04", "A05": "SRC-A05"}
+    for o in p4b["objects"]:
+        mo_id = "MO:" + o["object_id"]
+        src_id = P4B_SRC[o["sheet"]]
+        G.node(mo_id, "MAP_OBJECT", {
+            "label": (("%s stavba BP %s" % (o["sheet"], o["bp_glyph"])) if o["bp_glyph"]
+                      else ("%s objekt %s" % (o["sheet"], o["object_id"]))),
+            "sheet": o["sheet"],
+            "bp_glyph": o["bp_glyph"],
+            "glyph_tier": o["glyph_tier"],
+            "glyph_layer": o["glyph_layer"],
+            "building_type": o["building_type"],
+            "footprint_note": o["footprint_note"],
+            "px": o["px"],
+            "position_precision_px": o["position_precision_px"],
+            "lat": o["lat"], "lng": o["lng"],
+            "georef_status": o["georef_status"],
+        }, source_ids=[src_id], evidence_status=TIER_EV.get(o["glyph_tier"], "REVIEW"),
+           notes="; ".join([o["notes"], "crops: " + ", ".join(o["source_crops"])]))
+        G.edge(mo_id, "DEPICTED_ON", src_id,
+               "družina 'Reambulirungs-Beimappe', vintage UNRESOLVED (KG-F05)", [src_id],
+               TIER_EV.get(o["glyph_tier"], "REVIEW"), TIER_CONF.get(o["glyph_tier"], "low"),
+               notes="2-prehodno agentovo branje brez VLM (val 66)")
+        if o["bp_glyph"]:
+            bp_node = "BP:%03d" % int(o["bp_glyph"])
+            cid = G.claim(mo_id, "CORRESPONDS_TO_BP", bp_node,
+                          {"source": src_id, "crops": o["source_crops"], "raster_px": o["px"],
+                           "bp_cross_status": o["bp_cross_status"]},
+                          "REVIEW", period="družina listov, vintage UNRESOLVED (KG-F05)",
+                          confidence="low",
+                          notes="glifa @6x na A02; A01↔A02 sidro NE obstaja — merge v BP matrico prepovedan (§5)")
+            G.edge(mo_id, "CORRESPONDS_TO_BP", bp_node,
+                   "vintage UNRESOLVED", [src_id], "REVIEW", "low",
+                   notes="veza glifa→BP; hišne veze ostajajo prek BP_BOUND_TO_HOUSE (val 57)",
+                   claim_ids=[cid])
+    G.gap("MAP_OBJECT inventory (A01–A05 objekti)", ["A01 raster (val 42/65)", "A02–A05 rastri (val 42/66)"],
+          "vseh 5 listov inventariziranih v1: A01 %d objektov (%d s BP) + %d prior-only; A02 %d (cerkev + 3 BP kandidati 12/20/22); A03 0 (negativna); A04 0 (negativna); A05 %d (klaster koč + parcel)" % (
               a01_inv["counts"]["objects_v65"], a01_inv["counts"]["objects_with_bp"],
-              a01_inv["counts"]["located_prior_only"], a01_inv["counts"]["red_glyphs"]),
-          "A02–A05 isti 2-prehodni protokol; PT p7 re-read @300dpi; VAČ original @višji dpi",
-          status="PARTIAL", tied_to="issue #42 §7")
+              a01_inv["counts"]["located_prior_only"],
+              p4b["counts"]["by_sheet"]["A02"], p4b["counts"]["by_sheet"]["A05"]),
+          "georef sidra A02–A05; višji dpi re-readi (BP glife vasi A02, koče A05, naslovne annotacije); PR re-read za mejne točke N°1–9",
+          status="RESOLVED-V66", tied_to="issue #42 §7")
 
     # ================= EDGES + CLAIMS =================
 
@@ -641,14 +693,19 @@ def main():
                            "located_prior_only": a01_inv["counts"]["located_prior_only"],
                            "red_glyphs": a01_inv["counts"]["red_glyphs"],
                            "not_located_1_100": a01_inv["counts"]["not_located_1_100"]}},
+            {"category": "map_objects_a02_a05", "total": len(p4b["objects"]),
+             "breakdown": {"A02": p4b["counts"]["by_sheet"]["A02"], "A03": p4b["counts"]["by_sheet"]["A03"],
+                           "A04": p4b["counts"]["by_sheet"]["A04"], "A05": p4b["counts"]["by_sheet"]["A05"],
+                           "bp_glyph_candidates": p4b["counts"]["with_bp_glyph"],
+                           "negative_sheets": ["A03", "A04"]}},
         ],
         "note": "brez umetnega skupnega procenta — dejansko stanje po kategorijah (issue #43 §10)",
     }
 
     out = {
-        "val": 65,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4",
-        "title": "knowledge-graph-1825 v1.2",
+        "val": 66,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b",
+        "title": "knowledge-graph-1825 v1.3",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -677,13 +734,28 @@ def main():
                 "status": "OPEN",
                 "provenance": "a01-building-inventory-1825.json F-A01-02; parcel-register-1825.json cross-check; bp-house-reconciliation (val 57)",
             },
+            {
+                "finding_id": "KG-F05",
+                "val": 66,
+                "statement": "Družina listov A01–A05: vsi 5 nosijo napis 'Siche die Reambullirungs Beimappe' (R-A01-title-full + T-pasi val 66) — ista označena družina. A02–A05 = sekcije II–V kode O.IX.24ci/dg/cg/ch; A01 = detaljni list vasi (~2.4x večje merilo; vas je na obeh). Parcelna numeracija se nadaljuje III→IV (1966→1967). Vintage (izmera 1824/27 krita karta vs reambulacija) in relacija A01↔sekcije ostajata UNRESOLVED — arhivsko vprašanje (SI AS).",
+                "status": "OPEN",
+                "provenance": "pass4b/a02-a05-building-inventory-1825.json sheets + findings F-A02-03/F-A03-01",
+            },
+            {
+                "finding_id": "KG-F06",
+                "val": 66,
+                "statement": "PASS 4b: A02–A05 inventarizirani (2 prehoda, brez VLM). Cerkev sv. Vid najdena na A02 s križem (F-A02-02 — na A01 je odrezana). A03+A04 = 0 stavb (negativni rezultati). A05 'vas 50–60 hiš' (val 42) = vinogradniški trakovi s kocami (F-A05-02); 'Schumsthl Traverne' (val 42) vs 'Schimshu Dravi N°8' (val 66) = dve branji, gostilniški signal OSLABLJEN (F-A05-04); mejne točke N°1–9 = verjetno PR Grenz-Beschreibung točke (F-A05-03). BP kandidati 12/20/22 na A02 @6x — merge v matrico prepovedan brez sidra.",
+                "status": "RESOLVED-V66 (odprta: F-A02-01, F-A05-03, F-A05-04)",
+                "provenance": "pass4b/a02-a05-building-inventory-1825.json (val 66)",
+            },
         ],
         "provenance": {
             "built_from": ["house-register-1825.json", "person-owner-register-1825.json",
                            "bp-house-reconciliation-1825.json", "conflict-register-1825.json",
                            "parcel-register-1825.json", "toponym-register-1825.json",
                            "pua-n83/register.json", "ps-n83/register.json",
-                           "a01-building-inventory-1825.json"],
+                           "a01-building-inventory-1825.json",
+                           "pass4b/a02-a05-building-inventory-1825.json"],
             "deterministic": True,
             "regenerable": "ob PS 143/143 ponovni zagon build-knowledge-graph.py + vseh registrov",
             "runtime_copy": "src/data/knowledge-graph-1825.json (piše TA skript — prepovedan ročni urejanji, ena izhodna resnica)",
