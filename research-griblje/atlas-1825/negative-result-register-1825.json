@@ -1,0 +1,113 @@
+{
+ "val": "60",
+ "pass": 3,
+ "issue": "#42 §13",
+ "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi",
+ "provenance": {
+  "pua": "pua-n83/register.json (98 vpisov / 2.645 parcelnih referenc, val 51+57)",
+  "ps": "ps-n83/register.json (1.073 vrstic / 55-143 strani, val 57)",
+  "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original"
+ },
+ "negatives_total": 11,
+ "negatives": [
+  {
+   "neg_id": "NR-01",
+   "searched": "B.P. / Zollamt sklici v PS Anmerkung stolpcu",
+   "source": "PS N83",
+   "pages": "s. 1-55 (vsi prebrani)",
+   "result": "0 zadetkov",
+   "why": "B.P. opombe so domena PUA/PT (parcelni protokol jih ne ponavlja)",
+   "next_source": "PS s. 56-143 (ko kvota); PT/PUA ostajajo edini B.P. viri"
+  },
+  {
+   "neg_id": "NR-02",
+   "searched": "ujemanje PS jaethe ↔ PUA parcelnih števil (Rosetta kontrola)",
+   "source": "PS (55/143) + PUA",
+   "pages": "vse prebrane",
+   "result": "6 opaženih ≈ 6,5 pričakovanih po naključju; 0 sekcija+številka",
+   "why": "delna pokritost (39 % strani) + Flurbezirk stolpec ne-dekodiran (val 58 F14)",
+   "next_source": "PS 143/143 + glava @300 dpi → ponovni deterministični test"
+  },
+  {
+   "neg_id": "NR-03",
+   "searched": "PS OCR besedilni sloj",
+   "source": "vac.sjas.gov.si /vac/iiif/pdf-raw-text",
+   "pages": "celoten PDF",
+   "result": "prazen (OCR sloji neuporabni)",
+   "why": "sken brez kvalitetnega OCR (LuraDocument)",
+   "next_source": "brez — VLM branje je edina pot"
+  },
+  {
+   "neg_id": "NR-04",
+   "searched": "PUA OCR besedilni sloj",
+   "source": "N083PUA.pdf (pymupdf)",
+   "pages": "vseh 49",
+   "result": "0 znakov (sloj ne obstaja)",
+   "why": "isti razlog kot NR-03",
+   "next_source": "brez — VLM branje"
+  },
+  {
+   "neg_id": "NR-05",
+   "searched": "hiše 73-78 v vseh virih (PUA/PS/PT/A01)",
+   "source": "PUA + PS (55/143) + PT + A01",
+   "pages": "vse prebrane",
+   "result": "ne obstajajo v nobenem viru (PS vrzel 70-78 = bloki čakajo p56+)",
+   "why": "delna PS pokritost; ni dokaza o obstoju ali ne-obstoju",
+   "next_source": "PS s. 56-143 — odločilno"
+  },
+  {
+   "neg_id": "NR-06",
+   "searched": "Waldweide kot lastniški vpis (negative result val 57)",
+   "source": "PUA",
+   "pages": "vseh 49",
+   "result": "ni lastniški vpis (samo omenjena)",
+   "why": "terminološko: Waldweide = raba, ne lastnik",
+   "next_source": "—"
+  },
+  {
+   "neg_id": "NR-07",
+   "searched": "foliacija PS (zaporedje listov)",
+   "source": "PS N83",
+   "pages": "s. 26 itd.",
+   "result": "neusklajena (p26 nosi žig 'VI' — listi se ponavljajo po razprtjah)",
+   "why": "tiskani listni žigi II/III niso zaporedni s stranmi digitalizata (val 58)",
+   "next_source": "fizični pregled arhivskega zvoka (izven peskovnika)"
+  },
+  {
+   "neg_id": "NR-08",
+   "searched": "B.P. 222 (anomalija val 57)",
+   "source": "PUA/PT/A01",
+   "pages": "—",
+   "result": "B.P. 222 izven BP 1-100 obsega vasi; pomen nejasen",
+   "why": "ni dodatnega vira v peskovniku",
+   "next_source": "obseg okoliških KG (izven peskovnika)"
+  },
+  {
+   "neg_id": "NR-09",
+   "searched": "Leksikon 1937 — stran vpisa (Griblje)",
+   "source": "dLib",
+   "pages": "—",
+   "result": "TO_COLLECT — dLib dostop iz peskovnika blokiran",
+   "why": "peskovniška omrežna omejitev (val 44)",
+   "next_source": "ročni zajem (izven peskovnika)"
+  },
+  {
+   "neg_id": "NR-10",
+   "searched": "web-search korooboracija imena Zucchelli (K7)",
+   "source": "web-search",
+   "pages": "—",
+   "result": "429 kvota (TO_COLLECT)",
+   "why": "isti API kvotni limit kot VLM",
+   "next_source": "ko se kvota resetira"
+  },
+  {
+   "neg_id": "NR-11",
+   "searched": "PUA↔PS lastniška soglasja ≥0.7 (AGREE hiše)",
+   "source": "PS (55/143) + PUA",
+   "pages": "vse prebrane",
+   "result": "0 — strukturno (F9 različni lastniški stanji), ne bralna napaka",
+   "why": "PUA = pripravljalno stanje, PS = končno; prehodi dokumentirani (pfand opombe p12)",
+   "next_source": "PS 143/143: ali se AGREE pojavi kje (npr. nespremenjene hiše)"
+  }
+ ]
+}
