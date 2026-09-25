@@ -1,0 +1,5881 @@
+{
+ "val": "59",
+ "pass": 2,
+ "issue": "#42 §5",
+ "title": "PERSON/OWNER REGISTER 1825 — v1 brez združevanja (possible_duplicate samo z razlogom)",
+ "method": {
+  "no_auto_merge": "identna normalizirana imena = possible_duplicate+razlog, decision NOT_MERGED",
+  "caveat": "\"oseba omenjena v zbirki\" ≠ \"dokazana kot lastnik 1825\"",
+  "pt_caveat": "PT imena nestabilna (val 54 F1); uporabna le s PS korooboracijo (val 58 F10)"
+ },
+ "provenance": {
+  "pua": "pua-n83/register.json (98 vpisov, val 51+57)",
+  "pt": "pt-n83/register.json (100 vrstic, val 53) + pt-n83/reconciliation.json (val 54+56+57)",
+  "ps": "ps-n83/register.json (1.073 vrstic, 55/143 strani, val 57) + ps-n83/analysis-v1.json (val 58)",
+  "bp_matrix": "raw-web-val57-2026-10/bp-house-matrix.json (100 vrstic, val 57)",
+  "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)"
+ },
+ "persons_total": 488,
+ "possible_duplicates": 161,
+ "persons": [
+  {
+   "name_original": "Mellachitsch Waise Leopold von / Ungaritsch gewesene Mellachitsch.",
+   "normalized": "mellachitschwaiseleopoldvonungaritschgewesenemellachitsch",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 3,
+   "house_no": "1",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Brincz Marfil Louise Wittibin.",
+   "normalized": "brinczmarfillouisewittibin",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 3,
+   "house_no": "22",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Brincz Marjan",
+   "normalized": "brinczmarjan",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 4,
+   "house_no": "24",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Brincz Wendel",
+   "normalized": "brinczwendel",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 4,
+   "house_no": "25",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Brincz Johann Bauer zu Grübln",
+   "normalized": "brinczjohannbauerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 5,
+   "house_no": "26",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Brincz Maria Bäuerin zu Grübln",
+   "normalized": "brinczmariabauerinzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 5,
+   "house_no": "28",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Grübler Maria Leutnerin zu Grübln",
+   "normalized": "grublermarialeutnerinzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 6,
+   "house_no": "43",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Brincz Maria Leutnerin zu Grübln",
+   "normalized": "brinczmarialeutnerinzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 6,
+   "house_no": "63",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Commenda Fischerwies",
+   "normalized": "commendafischerwies",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 6,
+   "house_no": "0",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Breitwiesch Mattl / Söllner zu Grübln",
+   "normalized": "breitwieschmattlsollnerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 7,
+   "house_no": "32",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Draschisch Jörgen Lorenz / und Begusche / Gänßlin in Adelsberg",
+   "normalized": "draschischjorgenlorenzundbeguscheganlininadelsberg",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 7,
+   "house_no": "3",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Dragosch, Maria, bauerin, zu Dragosch / gemindt. Holzschildk.",
+   "normalized": "dragoschmariabauerinzudragoschgemindtholzschildk",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 8,
+   "house_no": "4",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Dragosch, georg, bauer, zu Dragosch / gemindt. Holzschildk.",
+   "normalized": "dragoschgeorgbauerzudragoschgemindtholzschildk",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 8,
+   "house_no": "5",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Friedrich Wurzer, bauer hiesig",
+   "normalized": "friedrichwurzerbauerhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 9,
+   "house_no": "",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Johann Wurzer, bauernd hiesig",
+   "normalized": "johannwurzerbauerndhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 9,
+   "house_no": "24",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Tillak Philipp bürgerl. zu Grübln",
+   "normalized": "tillakphilippburgerlzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 10,
+   "house_no": "30",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Tillak Nikla bürgerl. zu Grübln",
+   "normalized": "tillakniklaburgerlzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 10,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Hiebetz Johann Bauersleute / zu Grübln",
+   "normalized": "hiebetzjohannbauersleutezugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 11,
+   "house_no": "2",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Husitsch Maria Bauersleute / zu Grübln",
+   "normalized": "husitschmariabauersleutezugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 11,
+   "house_no": "44",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Husitsch Barbara des Grädlers / Ehefrau",
+   "normalized": "husitschbarbaradesgradlersehefrau",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 11,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Kusitsch[?] Baron von Gradatz[?]",
+   "normalized": "kusitschbaronvongradatz",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 11,
+   "house_no": "",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Maurerisch Johann Bäckersleute / zu Waidhofen",
+   "normalized": "maurerischjohannbackersleutezuwaidhofen",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 11,
+   "house_no": "8",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schafschlader Hann Leidensgüttin",
+   "normalized": "schafschladerhannleidensguttin",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 12,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Schafschlader Mütze Leidensgüttin",
+   "normalized": "schafschladermutzeleidensguttin",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 12,
+   "house_no": "8",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Jakoffitschek / Hans Bauer hiesig",
+   "normalized": "jakoffitschekhansbauerhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 13,
+   "house_no": "9",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Jakoffitschek / Maria Bauerin hiesig",
+   "normalized": "jakoffitschekmariabauerinhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 13,
+   "house_no": "10",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Sankovitsch Walf.",
+   "normalized": "sankovitschwalf",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 14,
+   "house_no": "7",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Sankovitsch Lorenz",
+   "normalized": "sankovitschlorenz",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 14,
+   "house_no": "26",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Sankowitsch Joseph",
+   "normalized": "sankowitschjoseph",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 15,
+   "house_no": "21",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Sankowitsch Johann Rieder",
+   "normalized": "sankowitschjohannrieder",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 15,
+   "house_no": "3",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Christan / Wörfl / Einwohner hiesig",
+   "normalized": "christanworfleinwohnerhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 16,
+   "house_no": "3",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Liese / Wörflin / Einwohnerin hiesig",
+   "normalized": "lieseworflineinwohnerinhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 16,
+   "house_no": "10",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Michael Leidner zu Grübln",
+   "normalized": "michaelleidnerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 17,
+   "house_no": "16",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Lorenz Leidner zu Grübln",
+   "normalized": "lorenzleidnerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 17,
+   "house_no": "17",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Krischan / Marla / Bauerin / zu Grübln",
+   "normalized": "krischanmarlabauerinzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 18,
+   "house_no": "34",
+   "evidence_status": "VERIFIED-2x",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PUA) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Krischan / Marla / Bauerin / zu Grübln",
+   "normalized": "krischanmarlabauerinzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 18,
+   "house_no": "36",
+   "evidence_status": "VERIFIED-2x",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PUA) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Krischan / Peter / Bauer in Grübln",
+   "normalized": "krischanpeterbaueringrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 19,
+   "house_no": "37",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Krischan / Balda / Bauerin in Grübln",
+   "normalized": "krischanbaldabaueriningrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 19,
+   "house_no": "37",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Brinczhan / Witwe Brinczhan Gütlin",
+   "normalized": "brinczhanwitwebrinczhangutlin",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 20,
+   "house_no": "62",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Lahodathar / Wittib Lahodatharin",
+   "normalized": "lahodatharwittiblahodatharin",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 20,
+   "house_no": "46",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Widhann Georg häusler und Gärtner",
+   "normalized": "widhanngeorghauslerundgartner",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 21,
+   "house_no": "65",
+   "evidence_status": "REVIEW",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PUA) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Widhann Georg häusler und Gärtner",
+   "normalized": "widhanngeorghauslerundgartner",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 21,
+   "house_no": "66",
+   "evidence_status": "REVIEW",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PUA) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Widow Katharina Brandl in Grübln / Gütlerin",
+   "normalized": "widowkatharinabrandlingrublngutlerin",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 22,
+   "house_no": "47",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Christian Brandl in Grübln / Bauer",
+   "normalized": "christianbrandlingrublnbauer",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 22,
+   "house_no": "69",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Kirche zu Veith in Grüble",
+   "normalized": "kirchezuveithingruble",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 22,
+   "house_no": "",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Höchsthaler Georg bürgerl. Hofg'sitzl.",
+   "normalized": "hochsthalergeorgburgerlhofgsitzl",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 23,
+   "house_no": "48",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Höppets Georg bürgerl. Hofsitzer",
+   "normalized": "hoppetsgeorgburgerlhofsitzer",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 23,
+   "house_no": "2",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Liechtenst. Mandl",
+   "normalized": "liechtenstmandl",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 24,
+   "house_no": "7",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Liechtensth. Murgi",
+   "normalized": "liechtensthmurgi",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 24,
+   "house_no": "12",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Rappare Wirthsleuths hiesig",
+   "normalized": "rapparewirthsleuthshiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 25,
+   "house_no": "68",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Müller Johann Wirthsleuths hiesig",
+   "normalized": "mullerjohannwirthsleuthshiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 25,
+   "house_no": "22",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Malleßthak [?] Han Bauw [?] Han Güßla [?]",
+   "normalized": "mallethakhanbauwhangula",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 26,
+   "house_no": "27",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Milleg Hanu Bauw [?] Han Grübla [?]",
+   "normalized": "milleghanubauwhangrubla",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 26,
+   "house_no": "29",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Noah N[?] Bauerhäuslbesitzer zu Grübln",
+   "normalized": "noahnbauerhauslbesitzerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 27,
+   "house_no": "4",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Peter P[?] Häuslbesitzer zu Grübln",
+   "normalized": "peterphauslbesitzerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 27,
+   "house_no": "11",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "P. Rieger, Wirths Besitzer zu Grübln",
+   "normalized": "priegerwirthsbesitzerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 28,
+   "house_no": "16",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Johann Michael Rieger, Besitzer zu Grübln",
+   "normalized": "johannmichaelriegerbesitzerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 28,
+   "house_no": "20",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Pfarrer Michael Sautter hiesig",
+   "normalized": "pfarrermichaelsautterhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 29,
+   "house_no": "21",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Pfarrer Rupert Sautter hiesig",
+   "normalized": "pfarrerrupertsautterhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 29,
+   "house_no": "40",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Pöchinger Georg Leinwand Fabrikant",
+   "normalized": "pochingergeorgleinwandfabrikant",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 30,
+   "house_no": "41",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Pöchinger Malfa Leinwand Fabrikant",
+   "normalized": "pochingermalfaleinwandfabrikant",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 30,
+   "house_no": "42",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Penzig Stuffe Leuthold zu Grüble",
+   "normalized": "penzigstuffeleutholdzugruble",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 31,
+   "house_no": "60",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Penzig Gottl. Leuthold zu Grüble",
+   "normalized": "penziggottlleutholdzugruble",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 31,
+   "house_no": "62",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Pfarrer Johann Leopold Kaulßgütlle",
+   "normalized": "pfarrerjohannleopoldkaulgutlle",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 32,
+   "house_no": "33",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "G. Pfarrer Johann Leopold Kaulßgütlle",
+   "normalized": "gpfarrerjohannleopoldkaulgutlle",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 32,
+   "house_no": "",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Paderiz Franz",
+   "normalized": "paderizfranz",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 33,
+   "house_no": "",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Pacharotte Michael bauer und der Gemeine",
+   "normalized": "pacharottemichaelbauerunddergemeine",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 33,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Procurat Miko Laurin / Landpfleger zu / Gräving.",
+   "normalized": "procuratmikolaurinlandpflegerzugraving",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 34,
+   "house_no": "7",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Pfarrer Elias Brandl / hiesiger.",
+   "normalized": "pfarrereliasbrandlhiesiger",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 34,
+   "house_no": "69",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schönitisch Major",
+   "normalized": "schonitischmajor",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 35,
+   "house_no": "1",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Schinig Major",
+   "normalized": "schinigmajor",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 35,
+   "house_no": "1",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Gnadenstifts Güter / Landeshultspfarrer",
+   "normalized": "gnadenstiftsguterlandeshultspfarrer",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 36,
+   "house_no": "17",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Brugt Joh. Riedler",
+   "normalized": "brugtjohriedler",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 36,
+   "house_no": "5",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Dienstbot Johann Seiz",
+   "normalized": "dienstbotjohannseiz",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 36,
+   "house_no": "3",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Schim von Pater Bardeleßky / [nečitljivo]",
+   "normalized": "schimvonpaterbardelekynecitljivo",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 37,
+   "house_no": "18",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schim von Wirth Bardeleßky",
+   "normalized": "schimvonwirthbardeleky",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 37,
+   "house_no": "19",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Huber Wolfpaul Bauer zu Grüble",
+   "normalized": "huberwolfpaulbauerzugruble",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 38,
+   "house_no": "20",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schimer Georg Bauer zu Grüble",
+   "normalized": "schimergeorgbauerzugruble",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 38,
+   "house_no": "28",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schimcz Maria Bäurin hiesig",
+   "normalized": "schimczmariabaurinhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 39,
+   "house_no": "29",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Breunig Georgy Bauer hiesig",
+   "normalized": "breuniggeorgybauerhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 39,
+   "house_no": "28",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Schimetz Wafal bauer hiesig",
+   "normalized": "schimetzwafalbauerhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 40,
+   "house_no": "69",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schimetz Johann bauer hiesig",
+   "normalized": "schimetzjohannbauerhiesig",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 40,
+   "house_no": "60",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Schmutz Johann",
+   "normalized": "schmutzjohann",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 41,
+   "house_no": "66",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Stipanitsch Jakob Brauhaußgütler",
+   "normalized": "stipanitschjakobbrauhaugutler",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 41,
+   "house_no": "58",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schimek Joseph / Bau in Tschabathe",
+   "normalized": "schimekjosephbauintschabathe",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 41,
+   "house_no": "61",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Schelko Georg Bauersleibgäbler [?]",
+   "normalized": "schelkogeorgbauersleibgabler",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 42,
+   "house_no": "60",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Stauger Matho Bauersleibgäbler [?]",
+   "normalized": "staugermathobauersleibgabler",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 42,
+   "house_no": "71",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Strauß Khonrad bauer zu Grübln",
+   "normalized": "straukhonradbauerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 43,
+   "house_no": "72",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Uebl Georg Söllner zu Grübln",
+   "normalized": "ueblgeorgsollnerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 43,
+   "house_no": "22",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Urich Pattle / Bauer zu Grübln",
+   "normalized": "urichpattlebauerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 44,
+   "house_no": "51",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Urich Mattle / Söllner zu Grübln",
+   "normalized": "urichmattlesollnerzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 44,
+   "house_no": "68",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Veritscher Wirts Leibkinds Gsöll",
+   "normalized": "veritscherwirtsleibkindsgsoll",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 45,
+   "house_no": "64",
+   "evidence_status": "VERIFIED-2x"
+  },
+  {
+   "name_original": "Watschinger Wirts Leibkinds Gsöll / Gemeinde Riedstätt",
+   "normalized": "watschingerwirtsleibkindsgsollgemeinderiedstatt",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 45,
+   "house_no": "1",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Wandsteiner Mihl. baur. zu Grübln",
+   "normalized": "wandsteinermihlbaurzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 46,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Wandsteiner Balth. baur. zu Grübln",
+   "normalized": "wandsteinerbalthbaurzugrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 46,
+   "house_no": "7",
+   "evidence_status": "REVIEW-CONFLICT"
+  },
+  {
+   "name_original": "Zollamt b. H. Neuradl in Gröbln",
+   "normalized": "zollamtbhneuradlingrobln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 47,
+   "house_no": "70",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Hiesige Gemeinde / Grübln",
+   "normalized": "hiesigegemeindegrubln",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 48,
+   "house_no": "6",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Philipp De Giammo Zucchelli",
+   "normalized": "philippdegiammozucchelli",
+   "person_type": "owner(pua)",
+   "source": "PUA N83",
+   "page": 49,
+   "house_no": "",
+   "evidence_status": "REVIEW"
+  },
+  {
+   "name_original": "Gemeinde",
+   "normalized": "gemeinde",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    12,
+    41,
+    47,
+    48,
+    51,
+    55
+   ],
+   "house_no": "0",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Lorbltcher Hauffl",
+   "normalized": "lorbltcherhauffl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    5,
+    6,
+    45,
+    47,
+    48,
+    49,
+    50,
+    53
+   ],
+   "house_no": "6",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Reuschard Franz",
+   "normalized": "reuschardfranz",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    6,
+    8,
+    17,
+    36
+   ],
+   "house_no": "66",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pogacar Michl",
+   "normalized": "pogacarmichl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    13,
+    14,
+    23
+   ],
+   "house_no": "58",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pechl[?] Joann",
+   "normalized": "pechljoann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    8,
+    14
+   ],
+   "house_no": "59",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schimey Wenzel",
+   "normalized": "schimeywenzel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    5,
+    16,
+    43,
+    45,
+    47,
+    48,
+    50
+   ],
+   "house_no": "69",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Urbas Peter",
+   "normalized": "urbaspeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    5,
+    6,
+    8,
+    16,
+    21,
+    23,
+    43,
+    55
+   ],
+   "house_no": "51",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Urban Pankrazgall",
+   "normalized": "urbanpankrazgall",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    9,
+    14,
+    16,
+    20,
+    26,
+    31,
+    36
+   ],
+   "house_no": "64",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Urbas Peter",
+   "normalized": "urbaspeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    7,
+    9,
+    10,
+    16,
+    17,
+    18,
+    20,
+    23,
+    26,
+    35
+   ],
+   "house_no": "35",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Reuschard Franz",
+   "normalized": "reuschardfranz",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    11,
+    12,
+    13,
+    14,
+    15,
+    21,
+    26,
+    31,
+    32,
+    33
+   ],
+   "house_no": "41",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pechl[?] hauptl",
+   "normalized": "pechlhauptl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    4,
+    5,
+    9,
+    23,
+    43,
+    54
+   ],
+   "house_no": "16",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ludwig Matzen",
+   "normalized": "ludwigmatzen",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    13,
+    17,
+    43,
+    49,
+    50
+   ],
+   "house_no": "14",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Feldt Peter",
+   "normalized": "feldtpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    7,
+    18,
+    19,
+    26,
+    27,
+    29,
+    30,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+   ],
+   "house_no": "26",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Breugl Georg",
+   "normalized": "breuglgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    8,
+    34,
+    54
+   ],
+   "house_no": "18",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Urich Peter",
+   "normalized": "urichpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    54
+   ],
+   "house_no": "21",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Leibniz Mathäus",
+   "normalized": "leibnizmathaus",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    14,
+    33,
+    45,
+    49
+   ],
+   "house_no": "7",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Feldt Margreth",
+   "normalized": "feldtmargreth",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    15,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    36,
+    37,
+    38,
+    39
+   ],
+   "house_no": "29",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Feldt Mäda",
+   "normalized": "feldtmada",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    6,
+    8,
+    9,
+    13,
+    14,
+    19,
+    43
+   ],
+   "house_no": "61",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Kirschan Georg",
+   "normalized": "kirschangeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    6,
+    14,
+    15,
+    16,
+    17,
+    23,
+    31
+   ],
+   "house_no": "60",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Kirschan Mäda",
+   "normalized": "kirschanmada",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    43
+   ],
+   "house_no": "62",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Urich Mäda",
+   "normalized": "urichmada",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5
+   ],
+   "house_no": "168",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schimay Peter",
+   "normalized": "schimaypeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    8,
+    14,
+    15,
+    20,
+    22,
+    23,
+    24,
+    43
+   ],
+   "house_no": "56",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schimer Hans",
+   "normalized": "schimerhans",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    5,
+    27,
+    30,
+    31,
+    36,
+    37,
+    38,
+    39
+   ],
+   "house_no": "23",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Gemeinde",
+   "normalized": "gemeinde",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6,
+    28,
+    43,
+    45,
+    48,
+    49
+   ],
+   "house_no": "8",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pölling Georg",
+   "normalized": "pollinggeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6,
+    45,
+    49,
+    50,
+    55
+   ],
+   "house_no": "11",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ulrich Peter",
+   "normalized": "ulrichpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6,
+    43
+   ],
+   "house_no": "81",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Ulrich Peter",
+   "normalized": "ulrichpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6,
+    9,
+    11,
+    12,
+    13,
+    14,
+    16,
+    25,
+    26,
+    33
+   ],
+   "house_no": "43",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pölling Joan",
+   "normalized": "pollingjoan",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6
+   ],
+   "house_no": "529",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Shumey Joan",
+   "normalized": "shumeyjoan",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6,
+    22,
+    23
+   ],
+   "house_no": "53",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pölling Wolf",
+   "normalized": "pollingwolf",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6,
+    34
+   ],
+   "house_no": "142",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Brullat Michl",
+   "normalized": "brullatmichl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    6,
+    10
+   ],
+   "house_no": "162",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schimeczkhanl",
+   "normalized": "schimeczkhanl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    8,
+    16,
+    36,
+    43
+   ],
+   "house_no": "65",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Poiding Hanl",
+   "normalized": "poidinghanl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    8,
+    13,
+    14,
+    16,
+    18,
+    20,
+    48
+   ],
+   "house_no": "63",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Lappary Marbl",
+   "normalized": "lapparymarbl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    14,
+    28,
+    33,
+    35,
+    36,
+    37,
+    39,
+    54
+   ],
+   "house_no": "20",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Lappary Marbl",
+   "normalized": "lapparymarbl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    22,
+    23
+   ],
+   "house_no": "54",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "(R)abitscher Marbl",
+   "normalized": "rabitschermarbl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    8,
+    10,
+    12,
+    14,
+    23,
+    24,
+    25,
+    26,
+    32,
+    33
+   ],
+   "house_no": "47",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Strauß Georg",
+   "normalized": "straugeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    10,
+    12,
+    23,
+    24,
+    25,
+    26,
+    32
+   ],
+   "house_no": "45",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Poiding Matthl",
+   "normalized": "poidingmatthl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    8,
+    12,
+    15,
+    21,
+    22,
+    25,
+    31,
+    43,
+    55
+   ],
+   "house_no": "50",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Peders Marbl",
+   "normalized": "pedersmarbl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    10,
+    15,
+    34
+   ],
+   "house_no": "80",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "(R)abitscher Georg",
+   "normalized": "rabitschergeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    12,
+    14,
+    23,
+    24,
+    25,
+    28,
+    32,
+    33
+   ],
+   "house_no": "48",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Strauß Georg",
+   "normalized": "straugeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    7,
+    12,
+    26,
+    32,
+    54
+   ],
+   "house_no": "46",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hrabotar Marha",
+   "normalized": "hrabotarmarha",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    8,
+    27,
+    28,
+    29,
+    30,
+    36,
+    38
+   ],
+   "house_no": "67",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schimer Jacob",
+   "normalized": "schimerjacob",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    8,
+    13,
+    15,
+    21,
+    22,
+    23,
+    24,
+    43
+   ],
+   "house_no": "55",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Eidlald Wurfl",
+   "normalized": "eidlaldwurfl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    54,
+    55
+   ],
+   "house_no": "17",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Beckhlach Wurfl",
+   "normalized": "beckhlachwurfl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    20,
+    27
+   ],
+   "house_no": "33",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Eidlald Wurfl",
+   "normalized": "eidlaldwurfl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    15,
+    17,
+    20,
+    33,
+    35
+   ],
+   "house_no": "34",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schuchardt Wenzl",
+   "normalized": "schuchardtwenzl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    12,
+    21,
+    24,
+    33,
+    34,
+    35
+   ],
+   "house_no": "31",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Krischan Wenzl",
+   "normalized": "krischanwenzl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    11,
+    12,
+    25,
+    32,
+    33
+   ],
+   "house_no": "39",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Krishnar Wurfl",
+   "normalized": "krishnarwurfl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    10,
+    11,
+    13,
+    16,
+    17,
+    19,
+    20,
+    21,
+    23,
+    26,
+    36
+   ],
+   "house_no": "36",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Krishnar Peter",
+   "normalized": "krishnarpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    10,
+    11,
+    13,
+    17,
+    19,
+    20,
+    24
+   ],
+   "house_no": "37",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Müller Johann",
+   "normalized": "mullerjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    9,
+    12,
+    13,
+    30,
+    36,
+    54
+   ],
+   "house_no": "22",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS, PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Tillach Peter",
+   "normalized": "tillachpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    10,
+    23,
+    28,
+    54
+   ],
+   "house_no": "15",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Hlahotshar Georg",
+   "normalized": "hlahotshargeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    10
+   ],
+   "house_no": "147",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Hanefl Georg",
+   "normalized": "haneflgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    10
+   ],
+   "house_no": "165",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Bratula Mihael",
+   "normalized": "bratulamihael",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    10,
+    43
+   ],
+   "house_no": "149",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Priškar Jelen",
+   "normalized": "priskarjelen",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    10,
+    30
+   ],
+   "house_no": "87",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Rudolf Mihael",
+   "normalized": "rudolfmihael",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    10
+   ],
+   "house_no": "144",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pečnik Mathej",
+   "normalized": "pecnikmathej",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    10
+   ],
+   "house_no": "82",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Peter Muster",
+   "normalized": "petermuster",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    21,
+    25,
+    26,
+    31,
+    32,
+    33
+   ],
+   "house_no": "40",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Barbara Muster",
+   "normalized": "barbaramuster",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    11,
+    35,
+    45,
+    47,
+    48,
+    50,
+    55
+   ],
+   "house_no": "1",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Peter Muster",
+   "normalized": "petermuster",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    25,
+    32,
+    33
+   ],
+   "house_no": "42",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Matthäus Muster",
+   "normalized": "matthausmuster",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    11,
+    16,
+    17,
+    18,
+    19,
+    20,
+    24,
+    26
+   ],
+   "house_no": "44",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Thomas Gnoy",
+   "normalized": "thomasgnoy",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    12,
+    13,
+    25,
+    26,
+    32
+   ],
+   "house_no": "38",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Wolitz Gregor",
+   "normalized": "wolitzgregor",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    13,
+    21,
+    23,
+    31,
+    34,
+    35
+   ],
+   "house_no": "32",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Križnar Matija",
+   "normalized": "kriznarmatija",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    14
+   ],
+   "house_no": "57",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Novak Mihelc",
+   "normalized": "novakmihelc",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    14,
+    28,
+    45,
+    48
+   ],
+   "house_no": "4",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Tillah Walfja",
+   "normalized": "tillahwalfja",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    15,
+    21,
+    24,
+    26,
+    27,
+    29,
+    30,
+    34,
+    35,
+    37,
+    38,
+    39
+   ],
+   "house_no": "30",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pauling Johen",
+   "normalized": "paulingjohen",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    15,
+    43
+   ],
+   "house_no": "52",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Thomaz Majzel",
+   "normalized": "thomazmajzel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    15,
+    21,
+    22,
+    25
+   ],
+   "house_no": "49",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Hoschlar Peter",
+   "normalized": "hoschlarpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    16,
+    17,
+    18,
+    24,
+    26,
+    27,
+    29,
+    30,
+    34,
+    35,
+    37,
+    38
+   ],
+   "house_no": "27",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Häusler Mache",
+   "normalized": "hauslermache",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    17,
+    23,
+    30,
+    31,
+    34,
+    35,
+    43
+   ],
+   "house_no": "68",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Vilter Wulffj",
+   "normalized": "vilterwulffj",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    18,
+    27,
+    28,
+    29,
+    30,
+    31,
+    36,
+    37,
+    38,
+    39
+   ],
+   "house_no": "24",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Thomas Malfg",
+   "normalized": "thomasmalfg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    21,
+    54
+   ],
+   "house_no": "19",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Rödig matthl",
+   "normalized": "rodigmatthl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    25,
+    45,
+    49,
+    50,
+    55
+   ],
+   "house_no": "10",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ring Michl",
+   "normalized": "ringmichl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    26,
+    29,
+    30,
+    34,
+    35,
+    37,
+    38,
+    39
+   ],
+   "house_no": "28",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pirn Michael",
+   "normalized": "pirnmichael",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    26
+   ],
+   "house_no": "214",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Hauschild Mathä",
+   "normalized": "hauschildmatha",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    27,
+    49,
+    50,
+    51,
+    55
+   ],
+   "house_no": "5",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ring Mito",
+   "normalized": "ringmito",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    27,
+    28,
+    29,
+    31,
+    36,
+    37,
+    38
+   ],
+   "house_no": "25",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Stadtpfarrkirche[?]",
+   "normalized": "stadtpfarrkirche",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    28,
+    32,
+    45,
+    48,
+    49,
+    55
+   ],
+   "house_no": "12",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pavlic Georg",
+   "normalized": "pavlicgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    28,
+    43,
+    55
+   ],
+   "house_no": "13",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Stadtpfarrkirche[?]",
+   "normalized": "stadtpfarrkirche",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    28,
+    45,
+    55
+   ],
+   "house_no": "9",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Stuker Michl",
+   "normalized": "stukermichl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    29
+   ],
+   "house_no": "00",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Matjaž Marnel",
+   "normalized": "matjazmarnel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    32
+   ],
+   "house_no": "9.",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Prunkl Maria",
+   "normalized": "prunklmaria",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    33
+   ],
+   "house_no": "113",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Piber, Matthel",
+   "normalized": "pibermatthel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    34
+   ],
+   "house_no": "140",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Piber, Georg",
+   "normalized": "pibergeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    34
+   ],
+   "house_no": "141",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ravella, Michl",
+   "normalized": "ravellamichl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    34
+   ],
+   "house_no": "143",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Gemeinde",
+   "normalized": "gemeinde",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    35
+   ],
+   "house_no": "k",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Wernig Mathäus",
+   "normalized": "wernigmathaus",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40,
+    44
+   ],
+   "house_no": "1 / 23",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Wernig Mathäus",
+   "normalized": "wernigmathaus",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 25",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Wernig Michael",
+   "normalized": "wernigmichael",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 24",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Willing Johann",
+   "normalized": "willingjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 29",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schiffbauer Mathäus",
+   "normalized": "schiffbauermathaus",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40,
+    44,
+    46
+   ],
+   "house_no": "1 / 12",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Rudolla Nißl",
+   "normalized": "rudollanil",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 43",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pechley Mathäus",
+   "normalized": "pechleymathaus",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 42",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pechley Johann",
+   "normalized": "pechleyjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 40",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pechley Georg",
+   "normalized": "pechleygeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 41",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Wundala nißl",
+   "normalized": "wundalanil",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40,
+    44
+   ],
+   "house_no": "1 / 13",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pechley Nißl",
+   "normalized": "pechleynil",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 31",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pechley Michael",
+   "normalized": "pechleymichael",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 20",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Willing Johann",
+   "normalized": "willingjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 22",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Weinhandl Georg",
+   "normalized": "weinhandlgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 66",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Wernig Dorothea",
+   "normalized": "wernigdorothea",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40,
+    41
+   ],
+   "house_no": "1 / 65",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Weichselbaum Nißl",
+   "normalized": "weichselbaumnil",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40
+   ],
+   "house_no": "1 / 69",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Wernig Joseph",
+   "normalized": "wernigjoseph",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    40,
+    44
+   ],
+   "house_no": "1 / 68",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Witschak Michl.",
+   "normalized": "witschakmichl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41,
+    42,
+    52
+   ],
+   "house_no": "1/62",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Witschak Georg.",
+   "normalized": "witschakgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 63",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (4 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Witschak Georg.",
+   "normalized": "witschakgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41,
+    52,
+    53
+   ],
+   "house_no": "1/63",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (4 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pritschak Andr.",
+   "normalized": "pritschakandr",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41,
+    42,
+    52
+   ],
+   "house_no": "1/61",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Baron v. Zallant",
+   "normalized": "baronvzallant",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 100",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Gyomandl",
+   "normalized": "gyomandl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 6",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pechly Mathes.",
+   "normalized": "pechlymathes",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 50",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Weiss Peter",
+   "normalized": "weisspeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 51",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Witschak Georg.",
+   "normalized": "witschakgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 61",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (4 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pechly Georg.",
+   "normalized": "pechlygeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 64",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schellko Jozeph.",
+   "normalized": "schellkojozeph",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 60",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Witschak Georg.",
+   "normalized": "witschakgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    41
+   ],
+   "house_no": "1 / 52",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (4 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Christan Georg",
+   "normalized": "christangeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42,
+    53
+   ],
+   "house_no": "1/66",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Veit Blaschke seni[?]",
+   "normalized": "veitblaschkeseni",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42,
+    53
+   ],
+   "house_no": "1/64",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Radling Georg",
+   "normalized": "radlinggeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42
+   ],
+   "house_no": "1/11",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Lupzina Maria",
+   "normalized": "lupzinamaria",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42
+   ],
+   "house_no": "1/54",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schimek Michael",
+   "normalized": "schimekmichael",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42,
+    52
+   ],
+   "house_no": "1/59",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schumig Johann",
+   "normalized": "schumigjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42,
+    53
+   ],
+   "house_no": "1/18",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Chorll Maria",
+   "normalized": "chorllmaria",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42,
+    53
+   ],
+   "house_no": "1/15",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Khaull Joanne",
+   "normalized": "khaulljoanne",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    42
+   ],
+   "house_no": "1/17",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "De Costil de Malfis",
+   "normalized": "decostildemalfis",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 1",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Dragasch (Jure)",
+   "normalized": "dragaschjure",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 5",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Hödle (Marko)",
+   "normalized": "hodlemarko",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44,
+    46
+   ],
+   "house_no": "1 / 3",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schönig (Peter)",
+   "normalized": "schonigpeter",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 18",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Leppanig (Michl)",
+   "normalized": "leppanigmichl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 21",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Bau Prug (Joan)",
+   "normalized": "bauprugjoan",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 53",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Stelby (Thomas)",
+   "normalized": "stelbythomas",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 14",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Puch (Gregor)",
+   "normalized": "puchgregor",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 32",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Stelbpfennich (Mathey)",
+   "normalized": "stelbpfennichmathey",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 19",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Lahfenitsch (Georg)",
+   "normalized": "lahfenitschgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 4",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Lahfenitsch (Andreas)",
+   "normalized": "lahfenitschandreas",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    44
+   ],
+   "house_no": "1 / 8",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Dragosch Georg",
+   "normalized": "dragoschgeorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    45,
+    47,
+    48,
+    50,
+    55
+   ],
+   "house_no": "3",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Heideri Anna",
+   "normalized": "heiderianna",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    45,
+    47,
+    48,
+    55
+   ],
+   "house_no": "2",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Witschkan Muhel",
+   "normalized": "witschkanmuhel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "1 / 2",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pölling gzung.",
+   "normalized": "pollinggzung",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "1 / 11",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Hinde Mucko",
+   "normalized": "hindemucko",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "1 / 10.",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Olekschul Wulf",
+   "normalized": "olekschulwulf",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "11 / 1",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Tschokitsch Muhel",
+   "normalized": "tschokitschmuhel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "11 / 61",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Witschkan gzung.",
+   "normalized": "witschkangzung",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "11 / 63",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Witschkan Muhel",
+   "normalized": "witschkanmuhel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "11 / 62",
+   "evidence_status": "SINGLE_SOURCE",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Jannowitz",
+   "normalized": "jannowitz",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    46
+   ],
+   "house_no": "1 / 9",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schöffpoltzy Joan",
+   "normalized": "schoffpoltzyjoan",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    48
+   ],
+   "house_no": "C",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schiffelbichl Barthol. Lorenz",
+   "normalized": "schiffelbichlbarthollorenz",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    50
+   ],
+   "house_no": "1/4",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Lehning Michael",
+   "normalized": "lehningmichael",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    50
+   ],
+   "house_no": "79",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Stallh. Mühle",
+   "normalized": "stallhmuhle",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    52
+   ],
+   "house_no": "1/16",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ludwig Muffel",
+   "normalized": "ludwigmuffel",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    52
+   ],
+   "house_no": "1/49",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Johann Johann",
+   "normalized": "johannjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    52,
+    53
+   ],
+   "house_no": "1/56",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ludwig Johann",
+   "normalized": "ludwigjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    52,
+    53
+   ],
+   "house_no": "1/55",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Pirker Mühle",
+   "normalized": "pirkermuhle",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    52
+   ],
+   "house_no": "1/14",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Schmiedtisch Johann",
+   "normalized": "schmiedtischjohann",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    52
+   ],
+   "house_no": "1/6",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Hantzel Jhe.",
+   "normalized": "hantzeljhe",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    52
+   ],
+   "house_no": "1/3",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Michel Gorg",
+   "normalized": "michelgorg",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    53
+   ],
+   "house_no": "1/65",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Theresia Mitterp.",
+   "normalized": "theresiamitterp",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    53
+   ],
+   "house_no": "39/36",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Wenzl Gland",
+   "normalized": "wenzlgland",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    53
+   ],
+   "house_no": "18/17",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Michaell Maier",
+   "normalized": "michaellmaier",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    53
+   ],
+   "house_no": "16/17",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Wenzl Mitterp.",
+   "normalized": "wenzlmitterp",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    53
+   ],
+   "house_no": "1/19",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Wenzl Piberl",
+   "normalized": "wenzlpiberl",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    53
+   ],
+   "house_no": "1/10",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "Ihanz Jurey",
+   "normalized": "ihanzjurey",
+   "person_type": "owner(ps)",
+   "source": "PS N83 (PARTIAL)",
+   "page": [
+    55
+   ],
+   "house_no": "85",
+   "evidence_status": "SINGLE_SOURCE"
+  },
+  {
+   "name_original": "St Veith",
+   "normalized": "stveith",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "[nečitljivo]",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "St. Veith",
+   "normalized": "stveith",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "[nečitljivo]",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "St. Veith",
+   "normalized": "stveith",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "[nečitljivo]",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schmieg Barbara",
+   "normalized": "schmiegbarbara",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "18",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Thomas Johan[?]",
+   "normalized": "thomasjohan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "18",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schmieg Marthl",
+   "normalized": "schmiegmarthl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "19",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Thomas Marfa[?]",
+   "normalized": "thomasmarfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "19",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Kneel Hanse",
+   "normalized": "kneelhanse",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "17",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Nikol. Hannes[?]",
+   "normalized": "nikolhannes",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "17",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Tillan Mih[?]",
+   "normalized": "tillanmih",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "16",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Tillein Math",
+   "normalized": "tilleinmath",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "16",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Leopold Mader[?]",
+   "normalized": "leopoldmader",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "110",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Lebring Math",
+   "normalized": "lebringmath",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "11",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Veitig Philipp[?]",
+   "normalized": "veitigphilipp",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "11",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Zu Hoffstättten Mih[?]",
+   "normalized": "zuhoffstatttenmih",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Zu Noftstätten Michl",
+   "normalized": "zunoftstattenmichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Zu Hoffstättten Mih[?]",
+   "normalized": "zuhoffstatttenmih",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Zu Noftstätten Michl",
+   "normalized": "zunoftstattenmichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Zu Hoffstätten Marx[?]",
+   "normalized": "zuhoffstattenmarx",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "9",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Zu Noftstätten Marle",
+   "normalized": "zunoftstattenmarle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "9",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Zu Hoffstätten muke[?]",
+   "normalized": "zuhoffstattenmuke",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "8",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Zu Noftstätten Marlo",
+   "normalized": "zunoftstattenmarlo",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "8",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Zu Hoffstätten Ghan[?]",
+   "normalized": "zuhoffstattenghan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Zu Noftstätten Buncha",
+   "normalized": "zunoftstattenbuncha",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Zu Noftstätten Schur",
+   "normalized": "zunoftstattenschur",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "6",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Georg mader[?]",
+   "normalized": "georgmader",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "110",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Lebring Math",
+   "normalized": "lebringmath",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "110",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Lebring math.",
+   "normalized": "lebringmath",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "14",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Zu Hoffstätten muke[?]",
+   "normalized": "zuhoffstattenmuke",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 3,
+   "house_no": "8",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Malfal",
+   "normalized": "hansmalfal",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Mayrl",
+   "normalized": "hansmayrl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Muffel",
+   "normalized": "hansmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Malfal",
+   "normalized": "hansmalfal",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Mayrl",
+   "normalized": "hansmayrl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Muffel",
+   "normalized": "hansmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "10",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Nikolaus Groß",
+   "normalized": "nikolausgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "11",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 5 zapisih (4 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Peter Gorg",
+   "normalized": "petergorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "11",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Peter Gspan",
+   "normalized": "petergspan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "11",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Achmüth Malfg.",
+   "normalized": "achmuthmalfg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "1",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Christof Malfal",
+   "normalized": "christofmalfal",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "1",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Christof Muffel",
+   "normalized": "christofmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "1",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Achmüth Malfg.",
+   "normalized": "achmuthmalfg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "1",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Christof Malfa",
+   "normalized": "christofmalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "1",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Christof Muffel",
+   "normalized": "christofmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "1",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hlady Johann",
+   "normalized": "hladyjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "2",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Hölzly Hanu",
+   "normalized": "holzlyhanu",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "2",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Hölzly Johann",
+   "normalized": "holzlyjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "2",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Pepay Michle",
+   "normalized": "pepaymichle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "21",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Pepay Michlo",
+   "normalized": "pepaymichlo",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "21",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Seyfrid Miko",
+   "normalized": "seyfridmiko",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "21",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Gepay Michle",
+   "normalized": "gepaymichle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "21",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Gorgy Michle",
+   "normalized": "gorgymichle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "21",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Seyfrid Miko",
+   "normalized": "seyfridmiko",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "21",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Michan gorg",
+   "normalized": "michangorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "66",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Michel gspan",
+   "normalized": "michelgspan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "66",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Nikolaus Groß",
+   "normalized": "nikolausgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "66",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 5 zapisih (4 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Achmüth Groß",
+   "normalized": "achmuthgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Lorber gorg",
+   "normalized": "lorbergorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Lorenz gspan",
+   "normalized": "lorenzgspan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "6",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Bering Marx",
+   "normalized": "beringmarx",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "65",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brinc Marko",
+   "normalized": "brincmarko",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "65",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Brünig Mahe",
+   "normalized": "brunigmahe",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "65",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Bering Marx",
+   "normalized": "beringmarx",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "65",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brinc Michle",
+   "normalized": "brincmichle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "65",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brünig Mahe",
+   "normalized": "brunigmahe",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "65",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Veithaler Malfa",
+   "normalized": "veithalermalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Veitlacher Muffa",
+   "normalized": "veitlachermuffa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Verblühter Malfa",
+   "normalized": "verbluhtermalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Milly Hanns",
+   "normalized": "millyhanns",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "39",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Mülleg Hanu",
+   "normalized": "mulleghanu",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "39",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Müller Hanns",
+   "normalized": "mullerhanns",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "39",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brünig Mayrl",
+   "normalized": "brunigmayrl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "31",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Milly Hanns",
+   "normalized": "millyhanns",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "31",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Müller Hanns",
+   "normalized": "mullerhanns",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "31",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Malfal",
+   "normalized": "hansmalfal",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "32",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Muffel",
+   "normalized": "hansmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "32",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Mülleg Hanu",
+   "normalized": "mulleghanu",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "32",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brünig Malfa",
+   "normalized": "brunigmalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "20",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Milling Johann",
+   "normalized": "millingjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "20",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Müller Johann",
+   "normalized": "mullerjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "20",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PS, PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Bering Malfa",
+   "normalized": "beringmalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "20",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brinc Muffa",
+   "normalized": "brincmuffa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "20",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brönig Malfa",
+   "normalized": "bronigmalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "20",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Bering Malfa",
+   "normalized": "beringmalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "35",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brinc Michle",
+   "normalized": "brincmichle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "35",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brünig Miko",
+   "normalized": "brunigmiko",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "35",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Bering Malfa",
+   "normalized": "beringmalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "29",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brinc Muffa",
+   "normalized": "brincmuffa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "29",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Brünig Malfa",
+   "normalized": "brunigmalfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 4,
+   "house_no": "29",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Josef Groß",
+   "normalized": "josefgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "64",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Sepp Järgy",
+   "normalized": "seppjargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "64",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Bartl Järgy",
+   "normalized": "bartljargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "26",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Lorenz Glan",
+   "normalized": "lorenzglan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "26",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Michel Bartl",
+   "normalized": "michelbartl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "27",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Nicolaus Glan",
+   "normalized": "nicolausglan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "27",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Andreas Muth",
+   "normalized": "andreasmuth",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "30",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Andres Mally",
+   "normalized": "andresmally",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "30",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Andreas Muth",
+   "normalized": "andreasmuth",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "28",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Bartl Aß[?]",
+   "normalized": "bartla",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "28",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Christoph Järgy",
+   "normalized": "christophjargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "63",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Nikolaus Groß",
+   "normalized": "nikolausgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "63",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 5 zapisih (4 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Christoph Järgy",
+   "normalized": "christophjargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "65",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Nikolaus Groß",
+   "normalized": "nikolausgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "65",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 5 zapisih (4 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Michel Järgy",
+   "normalized": "micheljargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "63",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Nikolaus Groß",
+   "normalized": "nikolausgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "63",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 5 zapisih (4 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Michel Mally",
+   "normalized": "michelmally",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Nikolaus Muth",
+   "normalized": "nikolausmuth",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schilko Joppiß",
+   "normalized": "schilkojoppi",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "60",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schilko Jörgl",
+   "normalized": "schilkojorgl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "60",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schilko Joppiß",
+   "normalized": "schilkojoppi",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "60",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schilko Jörgl",
+   "normalized": "schilkojorgl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "60",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Michel Mally",
+   "normalized": "michelmally",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "62",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Nikolaus Muth",
+   "normalized": "nikolausmuth",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "62",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Michel Mally",
+   "normalized": "michelmally",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Nikolaus Muth",
+   "normalized": "nikolausmuth",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "61",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Christoph Marx",
+   "normalized": "christophmarx",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "30",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Nikolaus Muth",
+   "normalized": "nikolausmuth",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "30",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Ulrich Groß",
+   "normalized": "ulrichgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "32",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Wenzel Järgy",
+   "normalized": "wenzeljargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "32",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schilko Joppiß",
+   "normalized": "schilkojoppi",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "60",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schilko Jörgl",
+   "normalized": "schilkojorgl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "60",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Ulrich Mally",
+   "normalized": "ulrichmally",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "63",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Ulrich Muth",
+   "normalized": "ulrichmuth",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "63",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Ulrich Järgy",
+   "normalized": "ulrichjargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "32",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Ulrich Piberger",
+   "normalized": "ulrichpiberger",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "32",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Ulrich Groß",
+   "normalized": "ulrichgro",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "32",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Ulrich Järgy",
+   "normalized": "ulrichjargy",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "32",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Simon Glan",
+   "normalized": "simonglan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Thomas Mally",
+   "normalized": "thomasmally",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Thomas Mally",
+   "normalized": "thomasmally",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 5,
+   "house_no": "3",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pauling Johan",
+   "normalized": "paulingjohan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "50",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Sedivy Johann",
+   "normalized": "sedivyjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "50",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Seidly John",
+   "normalized": "seidlyjohn",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "50",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Loparz Michl",
+   "normalized": "loparzmichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "54",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Lopparz Michl",
+   "normalized": "lopparzmichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "54",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schimey Michael",
+   "normalized": "schimeymichael",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "49",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schloßhüter Michael",
+   "normalized": "schlohutermichael",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "49",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schimey Johan",
+   "normalized": "schimeyjohan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "55",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schmiedt John",
+   "normalized": "schmiedtjohn",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "55",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Sedivy Johann",
+   "normalized": "sedivyjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "55",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pauling Johan",
+   "normalized": "paulingjohan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "53",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Sedivy Johann",
+   "normalized": "sedivyjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "53",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (3 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Seidly John",
+   "normalized": "seidlyjohn",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "53",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schimey Johan",
+   "normalized": "schimeyjohan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "55",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Schimey Johann",
+   "normalized": "schimeyjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "55",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schmiedt John",
+   "normalized": "schmiedtjohn",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "55",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Lopparz Michl",
+   "normalized": "lopparzmichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "54",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Dichatschek Muffel",
+   "normalized": "dichatschekmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "43",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Dicheltaler Marfa",
+   "normalized": "dicheltalermarfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "43",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Dichstaler Wolfgr",
+   "normalized": "dichstalerwolfgr",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "43",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Fellach John",
+   "normalized": "fellachjohn",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "45",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Fellek Johann",
+   "normalized": "fellekjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "45",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Fillek Johan",
+   "normalized": "fillekjohan",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "45",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Fellach John",
+   "normalized": "fellachjohn",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Fellek Johann",
+   "normalized": "fellekjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Fillek Peter",
+   "normalized": "fillekpeter",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Fellach Wolfgr",
+   "normalized": "fellachwolfgr",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "34",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Fellek Muffel",
+   "normalized": "fellekmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "34",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Fillek Marfa",
+   "normalized": "fillekmarfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "34",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Kraler Anna",
+   "normalized": "kraleranna",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "38",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Kratz Anna",
+   "normalized": "kratzanna",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "38",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Tschermak Peter",
+   "normalized": "tschermakpeter",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "38",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Dichatschek Muffel",
+   "normalized": "dichatschekmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Dicheltaler Marla[?]",
+   "normalized": "dicheltalermarla",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Kobolthofer[?] Michl",
+   "normalized": "kobolthofermichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Fellach Michl",
+   "normalized": "fellachmichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "60",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Felley Michl",
+   "normalized": "felleymichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "60",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Pauling Marfa",
+   "normalized": "paulingmarfa",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "60",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Ainöd Johann",
+   "normalized": "ainodjohann",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "51",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Aurich John",
+   "normalized": "aurichjohn",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "51",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Knapp Peter",
+   "normalized": "knapppeter",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "51",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Ehrlich Peter",
+   "normalized": "ehrlichpeter",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "51",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Einöder Peter",
+   "normalized": "einoderpeter",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "51",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Knapp Peter",
+   "normalized": "knapppeter",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "51",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Herrn Georg",
+   "normalized": "herrngeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "48",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Heuritsch Georg",
+   "normalized": "heuritschgeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "48",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Steinle Georg",
+   "normalized": "steinlegeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "48",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Dichatschek Muffel",
+   "normalized": "dichatschekmuffel",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Kobolthofer[?] Michl",
+   "normalized": "kobolthofermichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Pechtlhans[?]",
+   "normalized": "pechtlhans",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Dichatschek Mardko",
+   "normalized": "dichatschekmardko",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Dicheltaler Martho",
+   "normalized": "dicheltalermartho",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Kobolthofer[?] Martin",
+   "normalized": "kobolthofermartin",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Dicheltaler Martho",
+   "normalized": "dicheltalermartho",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Herrn Georg",
+   "normalized": "herrngeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Heuritsch Georg",
+   "normalized": "heuritschgeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Dichatschek Mardko",
+   "normalized": "dichatschekmardko",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "48",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Kobolthofer[?][?] Michl",
+   "normalized": "kobolthofermichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "48",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Steinle Georg",
+   "normalized": "steinlegeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "48",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Dicheltaker Marthe",
+   "normalized": "dicheltakermarthe",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 6,
+   "house_no": "41",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Krauß Georg",
+   "normalized": "kraugeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "REVIEW",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Georg",
+   "normalized": "hansgeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Krauß Georg",
+   "normalized": "kraugeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Georg",
+   "normalized": "hansgeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Krauß Georg",
+   "normalized": "kraugeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Georg / Lenz Gansb[?]",
+   "normalized": "hansgeorglenzgansb",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Krauß Georg",
+   "normalized": "kraugeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 4 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Hans Georg",
+   "normalized": "hansgeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Winkler Peter",
+   "normalized": "winklerpeter",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "45",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Christian Pichl[?]",
+   "normalized": "christianpichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "37",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Leopoldin Wulfin",
+   "normalized": "leopoldinwulfin",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "37",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Christian Pichl[?]",
+   "normalized": "christianpichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Musterer Marle",
+   "normalized": "musterermarle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Christen Mache[?]",
+   "normalized": "christenmache",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "44",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Krischan Wolf",
+   "normalized": "krischanwolf",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "44",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Christian Mache[?]",
+   "normalized": "christianmache",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Musterer Marle",
+   "normalized": "musterermarle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "36",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Christen Mache[?]",
+   "normalized": "christenmache",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "44",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Winkler Paul",
+   "normalized": "winklerpaul",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "44",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Achaz Pichl[?]",
+   "normalized": "achazpichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "40",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Musterer Paul",
+   "normalized": "mustererpaul",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "40",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Christen Mache[?]",
+   "normalized": "christenmache",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "44",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 3 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Fischer Georg",
+   "normalized": "fischergeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "44",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Feiner Wolfi",
+   "normalized": "feinerwolfi",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Georg Georg",
+   "normalized": "georggeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "41",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Feiner Wolfi",
+   "normalized": "feinerwolfi",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "40",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (2 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Georg Mache[?]",
+   "normalized": "georgmache",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "40",
+   "evidence_status": "STABLE",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Almer Marle",
+   "normalized": "almermarle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "40",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Georg Mache[?]",
+   "normalized": "georgmache",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "40",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "reason": "identno normalizirano ime v 2 zapisih (1 hiša/hiš, viri: PT) — združitev šele z dodatnim dokazom (§5)"
+  },
+  {
+   "name_original": "Kumer Georg",
+   "normalized": "kumergeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "39",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schim[?]er Pichl[?]",
+   "normalized": "schimerpichl",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "39",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schim[?]er Georg",
+   "normalized": "schimergeorg",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "38",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schimer Marle",
+   "normalized": "schimermarle",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "38",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "A. Zöllner",
+   "normalized": "azollner",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "39",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Schim[?]er Mache[?]",
+   "normalized": "schimermache",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "39",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "Alois Pollandt",
+   "normalized": "aloispollandt",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "50",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  },
+  {
+   "name_original": "[nečitljivo]",
+   "normalized": "necitljivo",
+   "person_type": "owner_variant(pt)",
+   "source": "PT N083 p7",
+   "page": 7,
+   "house_no": "50",
+   "evidence_status": "REVIEW-CONFLICT",
+   "note": "nestabilna branja (val 54 F1) — uporabna le s PS korooboracijo (val 58 F10)"
+  }
+ ]
+}
