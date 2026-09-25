@@ -8,7 +8,7 @@
   "ps": "ps-n83/register.json (1.073 vrstic / 55-143 strani, val 57)",
   "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original"
  },
- "negatives_total": 11,
+ "negatives_total": 13,
  "negatives": [
   {
    "neg_id": "NR-01",
@@ -108,6 +108,24 @@
    "result": "0 — strukturno (F9 različni lastniški stanji), ne bralna napaka",
    "why": "PUA = pripravljalno stanje, PS = končno; prehodi dokumentirani (pfand opombe p12)",
    "next_source": "PS 143/143: ali se AGREE pojavi kje (npr. nespremenjene hiše)"
+  },
+  {
+   "neg_id": "NR-12",
+   "searched": "named Flurbezirke (toponymic district names) in PS jaethe column",
+   "source": "PS N83 pages 1–55 (55/143 transcribed)",
+   "pages": "p1–p55",
+   "result": "NOT FOUND — all Flurbezirk segments are numeric/roman (I–V sections + numbers); zero named districts",
+   "why": "the Gemeinde divides land into numbered Flurbezirke, not named ones (at least in the transcribed half)",
+   "next_source": "PS p56–p143 once VLM quota restores"
+  },
+  {
+   "neg_id": "NR-13",
+   "searched": "non-local residences in PT wohnort_original",
+   "source": "PT N83 (100 rows)",
+   "pages": "p1–p8",
+   "result": "NOT FOUND — wohnort_original is empty except 3× self-form 'Grüble' (p3/4/5)",
+   "why": "PT records building parcels of local owners; external owners appear in PS/PUA, not PT",
+   "next_source": "none — negative is structural"
   }
  ]
 }

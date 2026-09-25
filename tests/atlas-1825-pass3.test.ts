@@ -91,8 +91,8 @@ describe("val 60 — ATLAS 1825 PASS 3 v1", () => {
   });
 
   describe("§13 negative-result register", () => {
-    it("11 dokumentiranih negativnih rezultatov, vsi z next_source", () => {
-      expect(nr.negatives_total).toBe(11);
+    it("13 dokumentiranih negativnih rezultatov (11 val 60 + NR-12/NR-13 val 62), vsi z next_source", () => {
+      expect(nr.negatives_total).toBe(13);
       expect(nr.negatives.every((n) => n.next_source && n.searched && n.result)).toBe(true);
     });
 
@@ -101,6 +101,8 @@ describe("val 60 — ATLAS 1825 PASS 3 v1", () => {
       expect(ids).toContain("NR-01"); // B.P./Zoll v PS Anmerkung = 0
       expect(ids).toContain("NR-05"); // hiše 73-78 ne obstajajo v virih
       expect(ids).toContain("NR-11"); // 0 AGREE (F9 strukturno)
+      expect(ids).toContain("NR-12"); // brez imenskih Flurbezirkov (val 62)
+      expect(ids).toContain("NR-13"); // PT wohnort samo self-forme (val 62)
     });
   });
 });
