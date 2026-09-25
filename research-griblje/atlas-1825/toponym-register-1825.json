@@ -1,0 +1,1318 @@
+{
+ "val": 62,
+ "pass": "3-supplement (§12)",
+ "issue": "#42 output #7 + #43 TOPONYM node type",
+ "title": "toponym-register-1825 v1",
+ "provenance": {
+  "field_transcription": "PUA residence_original (val 51), PS wohnort (vals 57/61), PT wohnort_original (val 53) — row-verified forms",
+  "vlm_single_pass": "PR Grenz-Beschreibung (4 PDF pages) + PG sketch labels — semantic VLM reading, val 42 — PROVISIONAL",
+  "vlm_multi_pass": "A05 'Traverne' ×3 (val 42/43) — first word UNRESOLVED",
+  "printed_title": "typeset Gemeinde titles ×6 — VERIFIED_FORM",
+  "method": "deterministic builder (this script); no modern knowledge injected; narrative entries cite their VLM artifacts"
+ },
+ "rules": [
+  "no merge of similar names across sources — possible_matches with decision NOT_MERGED",
+  "self-forms merged ONLY by document identity (k.o. N83 context), each form keeps sources",
+  "modern_mapping stays UNKNOWN until a repo-documented source proves a link",
+  "UNKNOWN / NOT FOUND / CONFLICT kept distinct (issue #43 §5)"
+ ],
+ "coverage": {
+  "total": 37,
+  "by_type": {
+   "self_gemeinde": 1,
+   "administrative": 2,
+   "neighbor_gemeinde": 10,
+   "watercourse": 7,
+   "hill": 4,
+   "mill_point": 4,
+   "external_settlement": 8,
+   "map_label_uncertain": 1
+  },
+  "by_provenance": {
+   "mixed: printed_title + field_transcription": 1,
+   "printed_title": 1,
+   "research_doc": 1,
+   "vlm_single_pass": 25,
+   "field_transcription": 8,
+   "vlm_multi_pass": 1
+  },
+  "by_review_status": {
+   "VERIFIED_FORM": 11,
+   "PROVISIONAL": 25,
+   "PROVISIONAL_MULTI": 1
+  },
+  "possible_matches_open": 5,
+  "excluded_non_toponyms": 7
+ },
+ "toponyms": [
+  {
+   "toponym_id": "TP-001",
+   "original_forms": [
+    {
+     "form": "GRÜBLE",
+     "script": "printed",
+     "occurrences": [
+      {
+       "source": "PT",
+       "page": "title",
+       "as_written": "Protocoll der Bau Parcellen der Gemeinde \"GRÜBLE\""
+      },
+      {
+       "source": "PR",
+       "page": "title",
+       "as_written": "Grenz-Beschreibung der Gemeinde \"GRÜBLE\""
+      },
+      {
+       "source": "PS",
+       "page": "title",
+       "as_written": "Protocol der Grund-Parzellen der Gemeinde \"GRÜBLE\""
+      },
+      {
+       "source": "PUA",
+       "page": "title",
+       "as_written": "Alphabetisches Verzeichniß Der Grund-Eigenthümer Der Gemeinde \"GRÜBLE\""
+      },
+      {
+       "source": "PV",
+       "page": "title",
+       "as_written": "AUSWEIS über die Benützungsart des Bodens der Gemeinde. Grüble"
+      },
+      {
+       "source": "A01",
+       "page": "legend",
+       "as_written": "Gemeinde GRÜBLE in Illyrien"
+      },
+      {
+       "source": "PG",
+       "page": "sheet",
+       "as_written": "Gemeinde Grüble."
+      }
+     ],
+     "field": "document_title"
+    },
+    {
+     "form": "Grübln",
+     "script": "handwritten",
+     "occurrences": [
+      {
+       "source": "PUA",
+       "page": 6,
+       "house_no": "43",
+       "as_written": "Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 6,
+       "house_no": "63",
+       "as_written": "Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 15,
+       "house_no": "21",
+       "as_written": "zu Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 17,
+       "house_no": "16",
+       "as_written": "Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 17,
+       "house_no": "17",
+       "as_written": "Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 18,
+       "house_no": "34",
+       "as_written": "zu Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 18,
+       "house_no": "36",
+       "as_written": "zu Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 22,
+       "house_no": "47",
+       "as_written": "in Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 22,
+       "house_no": "69",
+       "as_written": "in Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 43,
+       "house_no": "72",
+       "as_written": "Grübln"
+      },
+      {
+       "source": "PUA",
+       "page": 43,
+       "house_no": "22",
+       "as_written": "Grübln"
+      }
+     ],
+     "field": "residence"
+    },
+    {
+     "form": "Grublh.",
+     "script": "handwritten",
+     "occurrences": [
+      {
+       "source": "PUA",
+       "page": 23,
+       "house_no": "48",
+       "as_written": "zu Grublh."
+      },
+      {
+       "source": "PUA",
+       "page": 23,
+       "house_no": "2",
+       "as_written": "zu Grublh. in Höchsthal."
+      }
+     ],
+     "field": "residence"
+    },
+    {
+     "form": "Grüble",
+     "script": "handwritten",
+     "occurrences": [
+      {
+       "source": "PUA",
+       "page": 22,
+       "house_no": "",
+       "as_written": "in Grüble"
+      },
+      {
+       "source": "PUA",
+       "page": 31,
+       "house_no": "60",
+       "as_written": "Grüble"
+      },
+      {
+       "source": "PUA",
+       "page": 31,
+       "house_no": "62",
+       "as_written": "Grüble"
+      },
+      {
+       "source": "PUA",
+       "page": 36,
+       "house_no": "5",
+       "as_written": "zu Grüble"
+      },
+      {
+       "source": "PUA",
+       "page": 38,
+       "house_no": "20",
+       "as_written": "Grüble"
+      },
+      {
+       "source": "PUA",
+       "page": 38,
+       "house_no": "28",
+       "as_written": "Grüble"
+      },
+      {
+       "source": "PT",
+       "page": 3,
+       "as_written": "Grüble"
+      },
+      {
+       "source": "PT",
+       "page": 4,
+       "as_written": "Grüble"
+      },
+      {
+       "source": "PT",
+       "page": 5,
+       "as_written": "Grüble"
+      }
+     ],
+     "field": "residence/wohnort"
+    },
+    {
+     "form": "Gruble",
+     "script": "handwritten",
+     "occurrences": [
+      {
+       "source": "PS",
+       "page": 4,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 5,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 6,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 6,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 9,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 10,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 12,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 13,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 19,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 20,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 22,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 23,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 26,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 27,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 48,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 48,
+       "as_written": "Gruble"
+      },
+      {
+       "source": "PS",
+       "page": 52,
+       "as_written": "Gruble"
+      }
+     ],
+     "field": "wohnort"
+    },
+    {
+     "form": "Grable",
+     "script": "handwritten",
+     "occurrences": [
+      {
+       "source": "PS",
+       "page": 32,
+       "as_written": "Grable"
+      },
+      {
+       "source": "PS",
+       "page": 49,
+       "as_written": "Grable"
+      }
+     ],
+     "field": "wohnort"
+    }
+   ],
+   "type": "self_gemeinde",
+   "relation_to_griblje": "self",
+   "location": "k.o. N83 Griblje",
+   "provenance_level": "mixed: printed_title + field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "merge_decision": "MERGED — justified by document identity: every form occurs in a document belonging to k.o. N83 Griblje (printed titles, residence/wohnort fields of its own registers). NOT merged by name similarity.",
+   "possible_matches": [],
+   "what_would_resolve": "nothing — self-reference is established by the documents themselves",
+   "notes": "forms carry 48 field occurrences total; script variance (ü/u, -e/-n, Grable/Gruble) = Kurrent reading variance within one Gemeinde context"
+  },
+  {
+   "toponym_id": "TP-002",
+   "original_forms": [
+    {
+     "form": "Illyrien",
+     "source": "A01",
+     "page": "legend",
+     "context": "Gemeinde GRÜBLE in Illyrien (1824/27)"
+    }
+   ],
+   "type": "administrative",
+   "relation_to_griblje": "context",
+   "location": "province of Illyria (as printed on A01)",
+   "provenance_level": "printed_title",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "administrative-history source for Illyrian province administration (TO_COLLECT)"
+  },
+  {
+   "toponym_id": "TP-003",
+   "original_forms": [
+    {
+     "form": "k.o. N83 Griblje",
+     "source": "SI AS 176",
+     "page": "[227663]",
+     "context": "12 enot: 5 grafičnih N083A01–A05 + 7 spisovnih PG/PR/PS/PT/PUA/PV/PZ"
+    }
+   ],
+   "type": "administrative",
+   "relation_to_griblje": "self",
+   "location": "SI AS 176, Novomeška kresija",
+   "provenance_level": "research_doc",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "nothing — archive tree enumeration (vals 41/42)"
+  },
+  {
+   "toponym_id": "TP-004",
+   "original_forms": [
+    {
+     "form": "Weichselberg",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: Grenzversteher/commissioners 'von der Gemeinde Weichselberg' ×2"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-005",
+   "original_forms": [
+    {
+     "form": "Hochsteg",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2: Gemeinde name; p2/p3 also used as boundary point/terrain term"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-006",
+   "original_forms": [
+    {
+     "form": "Schönbach",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: neighboring Gemeinde, representatives ×2"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-007",
+   "original_forms": [
+    {
+     "form": "Stadelbach",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: neighboring Gemeinde, Grenzversteher"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-008",
+   "original_forms": [
+    {
+     "form": "Dolga vas",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3+p4: neighboring Gemeinde, German form 'Dollwitz' ×3"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-009",
+   "original_forms": [
+    {
+     "form": "Črnomelj",
+     "source": "PR",
+     "page": "PR p3",
+     "context": "PR p3: 'Občina Črnomelj (Tschernomelj) ali njena okolica' — VLM itself hedged the scope"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-010",
+   "original_forms": [
+    {
+     "form": "Lahinja",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2: stream, German reading 'Lainizza'"
+    }
+   ],
+   "type": "watercourse",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-011",
+   "original_forms": [
+    {
+     "form": "Dolina",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2: stream, German reading 'Duliza'"
+    }
+   ],
+   "type": "watercourse",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-012",
+   "original_forms": [
+    {
+     "form": "Radešica",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2: stream, German readings 'Radessitza/Radischitz'"
+    }
+   ],
+   "type": "watercourse",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-013",
+   "original_forms": [
+    {
+     "form": "Bistrica",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: stream, German readings 'Wistritz/Wistrizza'; mill 'Mlin Bistrica' on its course"
+    }
+   ],
+   "type": "watercourse",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-014",
+   "original_forms": [
+    {
+     "form": "Sušica",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: stream, German readings 'Schuschitz/Schuschniza'; mill 'Mlin Sušica'"
+    }
+   ],
+   "type": "watercourse",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-015",
+   "original_forms": [
+    {
+     "form": "Mlinščica",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: stream, German readings 'Mlinzschiza/Mlinshiza'"
+    }
+   ],
+   "type": "watercourse",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-016",
+   "original_forms": [
+    {
+     "form": "Grübler Berg",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: hill, Slovene gloss 'Gribljski hrib' in VLM reading"
+    }
+   ],
+   "type": "hill",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-017",
+   "original_forms": [
+    {
+     "form": "Hoher Stein",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2: hill/rock point; also cited as grenzpunkt description"
+    }
+   ],
+   "type": "hill",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-018",
+   "original_forms": [
+    {
+     "form": "Steinberg",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2: hill"
+    }
+   ],
+   "type": "hill",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-019",
+   "original_forms": [
+    {
+     "form": "Kapellen-Berg",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: hill, Slovene gloss 'Kapeljski hrib' in VLM reading"
+    }
+   ],
+   "type": "hill",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-020",
+   "original_forms": [
+    {
+     "form": "Mlin Dolo",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2: mill at 'Dolo' cited as boundary object"
+    }
+   ],
+   "type": "mill_point",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-021",
+   "original_forms": [
+    {
+     "form": "Mlin Bistrica",
+     "source": "PR",
+     "page": "PR p2",
+     "context": "PR p2+p3: mill at Bistrica as boundary object"
+    }
+   ],
+   "type": "mill_point",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-022",
+   "original_forms": [
+    {
+     "form": "Mlin Sušica",
+     "source": "PR",
+     "page": "PR p3",
+     "context": "PR p3: 'Mlin Sušica (or Mlin bei Schuschitz)' as boundary object"
+    }
+   ],
+   "type": "mill_point",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-023",
+   "original_forms": [
+    {
+     "form": "Mühle (unidentified)",
+     "source": "PR",
+     "page": "PR p4",
+     "context": "PR p4: final 'Mühle' before closure of the perimeter; which mill = UNKNOWN"
+    }
+   ],
+   "type": "mill_point",
+   "relation_to_griblje": "neighbor",
+   "location": "PR text (boundary narrative)",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "medium",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-024",
+   "original_forms": [
+    {
+     "form": "Thiasing",
+     "source": "PG",
+     "page": "PG sheet",
+     "context": "PG sketch label (top left): 'Gemeinde Thiasing'"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "map: PG sketch label",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-025",
+   "original_forms": [
+    {
+     "form": "Dampfbach",
+     "source": "PG",
+     "page": "PG sheet",
+     "context": "PG sketch label (right side boundary): 'Dampfbach Grenze'"
+    }
+   ],
+   "type": "watercourse",
+   "relation_to_griblje": "neighbor",
+   "location": "map: PG sketch label",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-026",
+   "original_forms": [
+    {
+     "form": "Dullach",
+     "source": "PG",
+     "page": "PG sheet",
+     "context": "PG sketch label (bottom right): 'Gemeinde Dullach'"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "map: PG sketch label",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-027",
+   "original_forms": [
+    {
+     "form": "Waischenberg",
+     "source": "PG",
+     "page": "PG sheet",
+     "context": "PG sketch label (bottom): 'Gemeinde Waischenberg'"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "map: PG sketch label",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-028",
+   "original_forms": [
+    {
+     "form": "Drulach",
+     "source": "PG",
+     "page": "PG sheet",
+     "context": "PG sketch label (bottom left): 'Gemeinde Drulach'"
+    }
+   ],
+   "type": "neighbor_gemeinde",
+   "relation_to_griblje": "neighbor",
+   "location": "map: PG sketch label",
+   "provenance_level": "vlm_single_pass",
+   "review_status": "PROVISIONAL",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "PR/PG re-read @300dpi with 2 independent passes (agent instrument from val 61); cross-check against Grenz-Beschreibung original"
+  },
+  {
+   "toponym_id": "TP-029",
+   "original_forms": [
+    {
+     "form": "Zagorje",
+     "source": "PS",
+     "field": "wohnort",
+     "occurrences": [
+      {
+       "page": 48,
+       "house_no": "4"
+      },
+      {
+       "page": 48,
+       "house_no": "6"
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [
+    "PM-03"
+   ],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": "occurs in PS p48 = non-local owners section (F12, val 58); rows are composite '1 / N' references"
+  },
+  {
+   "toponym_id": "TP-030",
+   "original_forms": [
+    {
+     "form": "Gradiše",
+     "source": "PS",
+     "field": "wohnort",
+     "occurrences": [
+      {
+       "page": 14,
+       "house_no": "43"
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": ""
+  },
+  {
+   "toponym_id": "TP-031",
+   "original_forms": [
+    {
+     "form": "Dragole",
+     "source": "PS",
+     "field": "wohnort",
+     "occurrences": [
+      {
+       "page": 49,
+       "house_no": "8"
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": ""
+  },
+  {
+   "toponym_id": "TP-032",
+   "original_forms": [
+    {
+     "form": "Zogwitsche",
+     "source": "PUA",
+     "field": "residence_original",
+     "occurrences": [
+      {
+       "page": 14,
+       "house_no": "7",
+       "as_written": "Zogwitsche."
+      },
+      {
+       "page": 14,
+       "house_no": "26",
+       "as_written": "Zogwitsche"
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [
+    "PM-03"
+   ],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": ""
+  },
+  {
+   "toponym_id": "TP-033",
+   "original_forms": [
+    {
+     "form": "Schönboden",
+     "source": "PUA",
+     "field": "residence_original",
+     "occurrences": [
+      {
+       "page": 15,
+       "house_no": "3",
+       "as_written": "zu Schönboden"
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [
+    "PM-04"
+   ],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": ""
+  },
+  {
+   "toponym_id": "TP-034",
+   "original_forms": [
+    {
+     "form": "Waidhofen",
+     "source": "PUA",
+     "field": "residence_original",
+     "occurrences": [
+      {
+       "page": 36,
+       "house_no": "3",
+       "as_written": "zu Waidhofen"
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": ""
+  },
+  {
+   "toponym_id": "TP-035",
+   "original_forms": [
+    {
+     "form": "Gräving",
+     "source": "PUA",
+     "field": "residence_original",
+     "occurrences": [
+      {
+       "page": 34,
+       "house_no": "7",
+       "as_written": "Gräving."
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": ""
+  },
+  {
+   "toponym_id": "TP-036",
+   "original_forms": [
+    {
+     "form": "Höchsthal",
+     "source": "PUA",
+     "field": "residence_original (compound)",
+     "occurrences": [
+      {
+       "page": 23,
+       "house_no": "2",
+       "as_written": "zu Grublh. in Höchsthal."
+      }
+     ]
+    }
+   ],
+   "type": "external_settlement",
+   "relation_to_griblje": "external",
+   "location": "UNKNOWN (not on N83 sheets — owners' residence outside the Gemeinde)",
+   "provenance_level": "field_transcription",
+   "review_status": "VERIFIED_FORM",
+   "confidence": "high",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "possible_matches": [],
+   "what_would_resolve": "identify from independent sources (šolski list [4118864], SA Podzemelj, SI AS 749 — TO_COLLECT); PUA/PS page re-reads @300dpi where flagged",
+   "notes": "appears ONLY inside compound 'zu Grublh. in Höchsthal.' (PUA p23 h.2) — possibly sub-location qualifier of the village itself"
+  },
+  {
+   "toponym_id": "TP-037",
+   "original_forms": [
+    {
+     "form": "Schumsthl",
+     "source": "A05",
+     "page": "map label",
+     "context": "val 42 reading"
+    },
+    {
+     "form": "Schamsho",
+     "source": "A05",
+     "page": "map label",
+     "context": "alternative pass"
+    },
+    {
+     "form": "Schimstl",
+     "source": "A05",
+     "page": "map label",
+     "context": "alternative pass"
+    },
+    {
+     "form": "Traverne",
+     "source": "A05",
+     "page": "map label",
+     "context": "3/3 consistent readings (val 43 Q5)"
+    }
+   ],
+   "type": "map_label_uncertain",
+   "relation_to_griblje": "uncertain_signal",
+   "location": "map sheet A05 (not beside a building — val 42)",
+   "provenance_level": "vlm_multi_pass",
+   "review_status": "PROVISIONAL_MULTI — first word UNRESOLVED",
+   "confidence": "low",
+   "historical_only": true,
+   "modern_mapping": "UNKNOWN",
+   "meaning": null,
+   "what_would_resolve": "A05 paleography @300dpi (P1 backlog, val 43); possible gasthaus-relevant signal (MVG-109)",
+   "notes": "the ONLY tavern-like signal in any 1825 source so far — negative result otherwise documented (val 42)"
+  }
+ ],
+ "possible_matches_uncertain": [
+  {
+   "pm_id": "PM-01",
+   "a": "Waischenberg (PG sketch)",
+   "b": "Weichselberg (PR text)",
+   "reason": "orthographic proximity (W..sch..berg); both readings are single VLM passes of different documents",
+   "decision": "NOT_MERGED",
+   "what_would_resolve": "PR+PG re-read @300dpi, 2 independent passes; compare first letters against original"
+  },
+  {
+   "pm_id": "PM-02",
+   "a": "Dullach (PG sketch)",
+   "b": "Dolga vas / Dollwitz (PR text)",
+   "reason": "initial D + boundary context; forms are NOT identical",
+   "decision": "NOT_MERGED",
+   "what_would_resolve": "PR+PG re-read @300dpi; check whether PG label sits on the Dolga vas side of the perimeter"
+  },
+  {
+   "pm_id": "PM-03",
+   "a": "Zagorje (PS wohnort p48)",
+   "b": "Zogwitsche (PUA residence p14)",
+   "reason": "phonetic similarity Z-g-r; different document families; PS p48 = non-local owners section (F12)",
+   "decision": "NOT_MERGED",
+   "what_would_resolve": "PUA p14 re-read @300dpi + owner-name cross-check h.7/h.26 against PS p48 owners"
+  },
+  {
+   "pm_id": "PM-04",
+   "a": "Schönboden (PUA residence p15)",
+   "b": "Schönbach (PR text)",
+   "reason": "shared 'Schön-' prefix only; weak signal",
+   "decision": "NOT_MERGED",
+   "what_would_resolve": "PUA p15 re-read @300dpi; independent identification of Schönboden"
+  },
+  {
+   "pm_id": "PM-05",
+   "a": "Dullach (PG sketch)",
+   "b": "Dolina / Duliza (PR stream)",
+   "reason": "'-ach' is a German stream/water suffix and 'Dul-' root overlaps; but PG labels it 'Gemeinde'",
+   "decision": "NOT_MERGED",
+   "what_would_resolve": "PR+PG re-read @300dpi; determine whether one entity carries both settlement and stream reference"
+  }
+ ],
+ "excluded_non_toponyms": [
+  {
+   "value": "hiesig / hiesiger",
+   "source": "PUA p9,16,17,25,34,39 (8×)",
+   "why": "generic term 'local', not a place name"
+  },
+  {
+   "value": "Häusler",
+   "source": "PUA p33 (no house_no)",
+   "why": "status word misread into residence field"
+  },
+  {
+   "value": "2700",
+   "source": "PUA p49 (no house_no)",
+   "why": "number misread into residence field"
+  },
+  {
+   "value": "Weinberge",
+   "source": "PR p2",
+   "why": "generic land-use term (vineyards), not a name"
+  },
+  {
+   "value": "Steinbruch",
+   "source": "PR p3",
+   "why": "generic (quarry), VLM itself marked '(kamnolom?)'"
+  },
+  {
+   "value": "Waldstücke",
+   "source": "PR p3",
+   "why": "generic (wood lots)"
+  },
+  {
+   "value": "eingeäckerte Wiese",
+   "source": "PR p2",
+   "why": "generic boundary description, not a name"
+  }
+ ],
+ "negative_results_addendum": [
+  {
+   "neg_id": "NR-12",
+   "searched": "named Flurbezirke (toponymic district names) in PS jaethe column",
+   "source": "PS N83 pages 1–55 (55/143 transcribed)",
+   "pages": "p1–p55",
+   "result": "NOT FOUND — all Flurbezirk segments are numeric/roman (I–V sections + numbers); zero named districts",
+   "why": "the Gemeinde divides land into numbered Flurbezirke, not named ones (at least in the transcribed half)",
+   "next_source": "PS p56–p143 once VLM quota restores"
+  },
+  {
+   "neg_id": "NR-13",
+   "searched": "non-local residences in PT wohnort_original",
+   "source": "PT N83 (100 rows)",
+   "pages": "p1–p8",
+   "result": "NOT FOUND — wohnort_original is empty except 3× self-form 'Grüble' (p3/4/5)",
+   "why": "PT records building parcels of local owners; external owners appear in PS/PUA, not PT",
+   "next_source": "none — negative is structural"
+  }
+ ]
+}
