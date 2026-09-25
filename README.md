@@ -4,6 +4,10 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **120. sklop — ISSUE #42 §15 PASS 5: MAP DATA MODEL v1 (67. val, 2026-09-25)**
+> **Podatkovni zemljevid, ne samo vizualizacija** — `GET /api/atlas/map` (sloji map_objects/houses/toponyms/sheets + `?sheet=` filter, poštene 400) + UI sloji na listu A01 z **»Dokazna veriga ↗« (klikljivo do vira)** · hiša locirana **samo** prek dokazane verige HOUSE ← BP_BOUND_TO_HOUSE ← BP ← CORRESPONDS_TO_BP ← MO-A01 (status-rang CONFIRMED > … > CONFLICT, konflikti ostanejo vidni §14) · **KG-F05 varovalka: A02–A05 glife (12/20/22) NE locirajo hiš** (brez sidra je lat/lng izmišljotina) · **§9: 2.467 parcel brez geometrije** (nikoli ne rišemo »lepih« parcel) · §10 disclaimer v vsakem odgovoru (PROVIZORIČNO; OSM NI zgodovinski dokaz) · api-smoke 60/60 · +0 virov/+0 trditev/+0 MAP_OBJECT · 294/294 testov
+>
+
 > **119. sklop — ISSUE #42 §7 PASS 4b: A02–A05 building inventory v1 + KG v1.3 (66. val, 2026-09-25)**
 > **2-prehodno agentovo branje vseh 4 preostalih listov atlasa brez VLM** (88 determinističnih izrezkov A/B/T/R/R2 iz a227668/70/71/73) · **10 objektov** (A02: 8, A03: 0, A04: 0, A05: 2) + 5 negativnih + 9 mejnih točk N°1–9 + 21 toponimov · **CERKEV sv. Vid s križem na A02 = prva kartografska lokacija cerkve** (F-A02-02; razlaga NF-A01-01) · BP kandidati **"12." CLEAR + "20" + "22" PROBABLE @6× = prvi glifi iz range 1–29** (merge brez sidra PREPOVEDAN, KG-F05) · **F-A05-04: "Schimshu Dravi N°8" (cel napis) vs "Schumsthl Traverne" (val 42) — gostilniški signal MVG-109 OSLABLJEN** · KG v1.3 **3.309 nodes / 3.569 edges / 621 claims** (+10 MAP_OBJECT, DEPICTED_ON, 3× CORRESPONDS_TO_BP claim-first; RG-001 → **RESOLVED-V66**) · api-smoke 55/55 · +0 virov/+0 trditve/+0 UI · 275/275 testov
 >
