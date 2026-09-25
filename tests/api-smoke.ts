@@ -379,6 +379,33 @@ ok(
   `status=${atlasSearchMO.status} hits=${atlasSearchMO.body?.results?.length}`
 );
 
+/* --- 5g. /api/atlas/evidence — PASS 4b (val 66, #42 §7) --------------------- */
+const atlasChurch = await getJson("/api/atlas/evidence?node=MO:MO-A02-001");
+const churchEdge = (atlasChurch.body?.edges ?? []).find(
+  (e: any) => e.relation_type === "DEPICTED_ON"
+);
+ok(
+  "atlas evidence: MO-A02-001 CERKEV sv. Vid — DEPICTED_ON → SRC-A02 z vac_details_url (val 66)",
+  atlasChurch.status === 200 &&
+    atlasChurch.body?.node?.node_type === "MAP_OBJECT" &&
+    atlasChurch.body?.node?.building_type === "church" &&
+    churchEdge?.to_entity === "SRC-A02" &&
+    atlasChurch.body?.sources?.some?.((s: any) => String(s?.vac_details_url).includes("id=227668")),
+  `status=${atlasChurch.status} type=${atlasChurch.body?.node?.building_type}`
+);
+const atlasBp12 = await getJson("/api/atlas/evidence?node=MO:MO-A02-002");
+const bp12Claim = (atlasBp12.body?.claims ?? []).find(
+  (c: any) => c.predicate === "CORRESPONDS_TO_BP"
+);
+ok(
+  "atlas evidence: MO-A02-002 glifa '12.' — CORRESPONDS_TO_BP BP:012 REVIEW, merge prepovedan (val 66)",
+  atlasBp12.status === 200 &&
+    atlasBp12.body?.node?.bp_glyph === "12" &&
+    (atlasBp12.body?.edges ?? []).some((e: any) => e.relation_type === "CORRESPONDS_TO_BP" && e.to_entity === "BP:012") &&
+    bp12Claim?.status === "REVIEW",
+  `status=${atlasBp12.status} claim=${bp12Claim?.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
