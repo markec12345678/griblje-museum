@@ -143,5 +143,45 @@
    "p26_p42": "PDF-native popolni strani (1391×2145 / 1400×2151) — P3-E12 prenos REŠEN; p26 = glava + začetek vpisa 52, p42 = vpisa 85/86 (aritmetika val 48 potrjena)",
    "a01_a05": "obstoječi rastri A01–A05 (2826px) so že maksimalna IIIF raven — P2-E13/E14 ostajata BRALNA nalogi, brez novih prenosov"
   }
+ },
+ "val57": {
+  "date": "2026-09-25",
+  "trigger": "Issue #42 PASS 1 (PUA COMPLETE COVERAGE AUDIT) + kontrolne točke uporabnika (bp 90 Nro. 7/8, PT p5 Kurrent, Zucchelli)",
+  "method": "Tarčne neodvisne VLM brane iz PDF-native/300dpi pasov (val 57): PUA p6-top/midband/bot + p47-top/bot + p49-native/closing-zoom + p26/p42 native; PT p5-top/bot + p7-top/bot + p7 bp89-91 pas. Vsa ključna branja digit-by-digit z opisi oblik števk.",
+  "readings": {
+   "PT_p7_bp89_91": {
+    "native_300dpi_band": "89→h.44 Flaustakl Marx[?]; 90→h.43 Knaller Niklo[?]; 91→h.44 Flaustakl Manlo[?]; 92→h.41 Gredig Georg[?]",
+    "digit_notes": "bp90: 'first digit 4 (open top, crossbar); second 3 (flat top, rounded lower curve) — not 44/51/28'",
+    "verdict": "PT p7 spodnji blok ostane INSTABILEN med kampanjami (val53: 36/44/40/44; val57: 44/43/44/41; imena popolnoma različna) → 89-92 ostajajo REVIEW-CONFLICT RAZEN bp 90 (spodaj)"
+   },
+   "PT_bp90_vs_PUA": {
+    "PUA_no7": "h.43 digit-by-digit (val 56 native + val 57 p06-top) + opomba 'B.P. 90.' pod parcelnim seznamom no.7 (val 51/54/56 + val 57 midband 'centered below the parcel list of entry No. 7')",
+    "PT": "bp 90 → h.43 (val 57 digit-by-digit) proti h.44 (val 53, 1/2 glasov)",
+    "verdict": "BP 90 ↔ h.43 = DVE neodvisni viri se strinjata (PUA no.7 + PT bp90), oba digit-by-digit pri nativni ločljivosti → dvignjeno iz REVIEW-CONFLICT v CONFIRMED-2x. Uporabnikovo vprašanje 'Nro. 7 vs 8' razrešeno: opomba pripada no.7 (midband lega)."
+   },
+   "PT_p5_46_48": {
+    "val57_digit_by_digit": "46→h.63 ('3 flat rounded top, no sharp angle'); 47→h.65 ('5 sharp horizontal top stroke'); 48→h.62 ('2 flat/wavy top')",
+    "history": "val53: 63/65/63; val56: 63/65/62; val57: 63/65/62",
+    "verdict": "PT p5 bere 63/65/62 konsistentno v 3 kampanjah; PUA opomba (no.40 h.65 'B.P. 46. 48.') trdi obe na h.65 → SISTEMSKI KONFLIKT ostaja (PUA opomba vs PT stolpec); bp 46/48 ostajata REVIEW-CONFLICT, bp 47→h.65 CONFIRMED. Kurrent 2↔3↔5↔6 dokumentiran z opisi oblik."
+   },
+   "PT_bp98": {
+    "val57": "h.50 'A. Zöllamt' ('5 distinctive top curve and bottom loop, 0 oval — does not resemble 2/3/9')",
+    "history": "PT hišna št. za bp 98: val52 '20', val53 '39' (1/2), val57 '50' — TRETJE različno branje",
+    "verdict": "PT hišni stolpec za bp 98 = NERAZREŠLJIV iz obstoječih skenov (20/39/50). PUA stran: no.95 h.70 digit-by-digit 3× (val51 pass3 + val56 native 2× + val57) + 'B.P. 98.' opomba → BP 98 = Zollamt @ h.70 ostane CONFIRMED po PUA; PT hišna vezava UNRESOLVED. Dodatni primarni dokaz: PS (val 57 transkripcija — iskanje 'Zoll' po Anmerkung/Haus Nro.)."
+   },
+   "PT_p5_bp55": {
+    "val57": "bp 55 se pojavita 2× (drugič '55¹' z nadpisano enico) = Abtheilung marker",
+    "verdict": "NOVA NAJDBA: PT ima nadpisane delitvene oznake (55¹) — vezava bp→h mora šteti samo prvo vrstico; hišne št. p5-bot v tej branji nečitljive (polovična resolucija pasu)"
+   }
+  },
+  "PUA_p49_datum": {
+   "val57_closing_zoom": "leta št. digit-by-digit: '1825' — zadnja '5': 'sharp horizontal top stroke, open bowl; lacks the closed bottom loop of a 6'",
+   "verdict": "10. Jänner 1825 (3:1 proti 1826) — potrjeno; register no.97 posodobljen"
+  },
+  "PUA_p49_ime": {
+   "val57": "letter-by-letter 'Philipp De Giannuto Zucchelli'",
+   "history": "val 51 2×: 'Philipp De Giammo Zucchelli'",
+   "verdict": "IME ostaja REVIEW (Giannuto vs Giammo — ni rešeno z ugibanjem); parcela 2700, zaključna formula 'Ich Amtl[ich] bestätige', podpisa 'Mumppen' + 'v Hillmayer', 'Zeugen:'"
+  }
  }
 }

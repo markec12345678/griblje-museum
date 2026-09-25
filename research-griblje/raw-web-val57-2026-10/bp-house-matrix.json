@@ -1,0 +1,1435 @@
+[
+ {
+  "bp": 1,
+  "pt_houses": [
+   "[nečitljivo]"
+  ],
+  "pt_status": "REVIEW",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "UNRESOLVED",
+  "note": "PT 1× branje h.[nečitljivo]"
+ },
+ {
+  "bp": 2,
+  "pt_houses": [
+   "[nečitljivo]"
+  ],
+  "pt_status": "REVIEW",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "UNRESOLVED",
+  "note": "PT 1× branje h.[nečitljivo]"
+ },
+ {
+  "bp": 3,
+  "pt_houses": [
+   "18"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.18"
+ },
+ {
+  "bp": 4,
+  "pt_houses": [
+   "19"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.19"
+ },
+ {
+  "bp": 5,
+  "pt_houses": [
+   "17"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.17"
+ },
+ {
+  "bp": 6,
+  "pt_houses": [
+   "16"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.16"
+ },
+ {
+  "bp": 7,
+  "pt_houses": [
+   "110"
+  ],
+  "pt_status": "REVIEW",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "UNRESOLVED",
+  "note": "PT 1× branje h.110"
+ },
+ {
+  "bp": 8,
+  "pt_houses": [
+   "11"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 9,
+  "pt_houses": [
+   "10"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.10"
+ },
+ {
+  "bp": 10,
+  "pt_houses": [
+   "10"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.10"
+ },
+ {
+  "bp": 11,
+  "pt_houses": [
+   "9"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.23 (p12)",
+    "house_no": "8",
+    "owner": "Schafschlader Mütze Leidensgüttin"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT STABLE h.9 vs PUA h.8 (no.23 (p12)) — nizki B.P. opombe = možna drugačna rubrika"
+ },
+ {
+  "bp": 12,
+  "pt_houses": [
+   "8"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.23 (p12)",
+    "house_no": "8",
+    "owner": "Schafschlader Mütze Leidensgüttin"
+   },
+   {
+    "pua_entry": "no.23 (p12)",
+    "house_no": "8",
+    "owner": "Schafschlader Mütze Leidensgüttin"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.23 (p12) h.8"
+ },
+ {
+  "bp": 13,
+  "pt_houses": [
+   "6"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 14,
+  "pt_houses": [
+   "6"
+  ],
+  "pt_status": "REVIEW",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "UNRESOLVED",
+  "note": "PT 1× branje h.6"
+ },
+ {
+  "bp": 15,
+  "pt_houses": [],
+  "pt_status": "NONE",
+  "pt_rows": 0,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "NOT_FOUND",
+  "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+ },
+ {
+  "bp": 16,
+  "pt_houses": [],
+  "pt_status": "NONE",
+  "pt_rows": 0,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "NOT_FOUND",
+  "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+ },
+ {
+  "bp": 17,
+  "pt_houses": [],
+  "pt_status": "NONE",
+  "pt_rows": 0,
+  "pua_refs": [
+   {
+    "pua_entry": "no.47 (p24)",
+    "house_no": "7",
+    "owner": "Liechtenst. Mandl"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "brez PT vrstice (vrzel 15-20); PUA no.47 (p24)"
+ },
+ {
+  "bp": 18,
+  "pt_houses": [],
+  "pt_status": "NONE",
+  "pt_rows": 0,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "NOT_FOUND",
+  "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+ },
+ {
+  "bp": 19,
+  "pt_houses": [],
+  "pt_status": "NONE",
+  "pt_rows": 0,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "NOT_FOUND",
+  "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+ },
+ {
+  "bp": 20,
+  "pt_houses": [],
+  "pt_status": "NONE",
+  "pt_rows": 0,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "NOT_FOUND",
+  "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+ },
+ {
+  "bp": 21,
+  "pt_houses": [
+   "10"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.10"
+ },
+ {
+  "bp": 22,
+  "pt_houses": [
+   "10"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.70 (p16)",
+    "house_no": "3",
+    "owner": "Christan / Wörfl / Einwohner hiesig"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT STABLE h.10 vs PUA h.3 (no.70 (p16)) — nizki B.P. opombe = možna drugačna rubrika"
+ },
+ {
+  "bp": 23,
+  "pt_houses": [
+   "11"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.11"
+ },
+ {
+  "bp": 24,
+  "pt_houses": [
+   "1"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.1"
+ },
+ {
+  "bp": 25,
+  "pt_houses": [
+   "1"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.1"
+ },
+ {
+  "bp": 26,
+  "pt_houses": [
+   "2"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.2"
+ },
+ {
+  "bp": 27,
+  "pt_houses": [
+   "21"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.21"
+ },
+ {
+  "bp": 28,
+  "pt_houses": [
+   "21"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.21"
+ },
+ {
+  "bp": 29,
+  "pt_houses": [
+   "66"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.66"
+ },
+ {
+  "bp": 30,
+  "pt_houses": [
+   "6"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 31,
+  "pt_houses": [
+   "65"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.65"
+ },
+ {
+  "bp": 32,
+  "pt_houses": [
+   "65"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.65"
+ },
+ {
+  "bp": 33,
+  "pt_houses": [
+   "61"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 34,
+  "pt_houses": [
+   "39"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.39"
+ },
+ {
+  "bp": 35,
+  "pt_houses": [
+   "31"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 36,
+  "pt_houses": [
+   "32"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 37,
+  "pt_houses": [
+   "20"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 38,
+  "pt_houses": [
+   "20"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.35 (p18)",
+    "house_no": "36",
+    "owner": "Krischan / Marla / Bauerin / zu Grübln"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.35 (p18) h.36"
+ },
+ {
+  "bp": 39,
+  "pt_houses": [
+   "35"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 40,
+  "pt_houses": [
+   "29"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 41,
+  "pt_houses": [
+   "64"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 42,
+  "pt_houses": [
+   "26"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.26"
+ },
+ {
+  "bp": 43,
+  "pt_houses": [
+   "27"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.27"
+ },
+ {
+  "bp": 44,
+  "pt_houses": [
+   "30"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 45,
+  "pt_houses": [
+   "28"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.28"
+ },
+ {
+  "bp": 46,
+  "pt_houses": [
+   "63"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.40 (p21)",
+    "house_no": "65",
+    "owner": "Widhann Georg häusler und Gärtner"
+   }
+  ],
+  "a01_owner": "Widhann Georg häusler und Gärtner",
+  "a01_status": "REVIEW",
+  "final_status": "CONFLICT",
+  "note": "PT STABLE h.63 vs PUA h.65 (no.40 (p21)) — nizki B.P. opombe = možna drugačna rubrika"
+ },
+ {
+  "bp": 47,
+  "pt_houses": [
+   "65"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 48,
+  "pt_houses": [
+   "63"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.40 (p21)",
+    "house_no": "65",
+    "owner": "Widhann Georg häusler und Gärtner"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT STABLE h.63 vs PUA h.65 (no.40 (p21)) — nizki B.P. opombe = možna drugačna rubrika"
+ },
+ {
+  "bp": 49,
+  "pt_houses": [
+   "61"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.41 (p21)",
+    "house_no": "66",
+    "owner": "Widhann Georg häusler und Gärtner"
+   }
+  ],
+  "a01_owner": "Widhann Georg häusler und Gärtner",
+  "a01_status": "VERIFIED-2x",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.41 (p21) h.66"
+ },
+ {
+  "bp": 50,
+  "pt_houses": [
+   "60"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.34 (p18)",
+    "house_no": "34",
+    "owner": "Krischan / Marla / Bauerin / zu Grübln"
+   },
+   {
+    "pua_entry": "no.41 (p21)",
+    "house_no": "66",
+    "owner": "Widhann Georg häusler und Gärtner"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.34 (p18) h.34"
+ },
+ {
+  "bp": 51,
+  "pt_houses": [
+   "60"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 52,
+  "pt_houses": [
+   "62"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 53,
+  "pt_houses": [
+   "61"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 54,
+  "pt_houses": [
+   "30"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 55,
+  "pt_houses": [
+   "32"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.32"
+ },
+ {
+  "bp": 56,
+  "pt_houses": [
+   "60"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.35 (p18)",
+    "house_no": "36",
+    "owner": "Krischan / Marla / Bauerin / zu Grübln"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.35 (p18) h.36"
+ },
+ {
+  "bp": 57,
+  "pt_houses": [
+   "63"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 58,
+  "pt_houses": [
+   "32"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.32"
+ },
+ {
+  "bp": 59,
+  "pt_houses": [
+   "32"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 60,
+  "pt_houses": [
+   "36"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 61,
+  "pt_houses": [
+   "3",
+   "50"
+  ],
+  "pt_status": "REVIEW",
+  "pt_rows": 2,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "UNRESOLVED",
+  "note": "PT 1× branje h.3/50"
+ },
+ {
+  "bp": 62,
+  "pt_houses": [
+   "54"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.54"
+ },
+ {
+  "bp": 63,
+  "pt_houses": [
+   "49"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.49"
+ },
+ {
+  "bp": 64,
+  "pt_houses": [
+   "55"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.55"
+ },
+ {
+  "bp": 65,
+  "pt_houses": [
+   "53"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.53"
+ },
+ {
+  "bp": 66,
+  "pt_houses": [
+   "55"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.55"
+ },
+ {
+  "bp": 67,
+  "pt_houses": [
+   "54"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.54"
+ },
+ {
+  "bp": 68,
+  "pt_houses": [
+   "43"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.10 (p7)",
+    "house_no": "32",
+    "owner": "Breitwiesch Mattl / Söllner zu Grübln"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.10 (p7) h.32"
+ },
+ {
+  "bp": 69,
+  "pt_houses": [
+   "45"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 70,
+  "pt_houses": [
+   "36"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 71,
+  "pt_houses": [
+   "34"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 72,
+  "pt_houses": [
+   "38"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 73,
+  "pt_houses": [
+   "41"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.61 (p31)",
+    "house_no": "60",
+    "owner": "Penzig Stuffe Leuthold zu Grüble"
+   }
+  ],
+  "a01_owner": "Penzig Stuffe Leuthold zu Grüble",
+  "a01_status": "REVIEW-CONFLICT",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.61 (p31) h.60"
+ },
+ {
+  "bp": 74,
+  "pt_houses": [
+   "60"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.60"
+ },
+ {
+  "bp": 75,
+  "pt_houses": [
+   "51"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 76,
+  "pt_houses": [
+   "51"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.79 (p39)",
+    "house_no": "28",
+    "owner": "Breunig Georgy Bauer hiesig"
+   }
+  ],
+  "a01_owner": "Brincz Maria Bäuerin zu Grübln",
+  "a01_status": "REVIEW-CONFLICT",
+  "final_status": "CONFLICT",
+  "note": "PT STABLE h.51 vs PUA h.28 (no.79 (p39)) — nizki B.P. opombe = možna drugačna rubrika"
+ },
+ {
+  "bp": 77,
+  "pt_houses": [
+   "48"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.48"
+ },
+ {
+  "bp": 78,
+  "pt_houses": [
+   "41"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 79,
+  "pt_houses": [
+   "41"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.79 (p39)",
+    "house_no": "28",
+    "owner": "Breunig Georgy Bauer hiesig"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+ },
+ {
+  "bp": 80,
+  "pt_houses": [
+   "41"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 81,
+  "pt_houses": [
+   "45",
+   "48"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 2,
+  "pua_refs": [
+   {
+    "pua_entry": "no.79 (p39)",
+    "house_no": "28",
+    "owner": "Breunig Georgy Bauer hiesig"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+ },
+ {
+  "bp": 82,
+  "pt_houses": [
+   "41",
+   "45"
+  ],
+  "pt_status": "REVIEW",
+  "pt_rows": 2,
+  "pua_refs": [
+   {
+    "pua_entry": "no.79 (p39)",
+    "house_no": "28",
+    "owner": "Breunig Georgy Bauer hiesig"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "UNRESOLVED",
+  "note": "PT 1× branje h.41/45"
+ },
+ {
+  "bp": 83,
+  "pt_houses": [
+   "45"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.45"
+ },
+ {
+  "bp": 84,
+  "pt_houses": [
+   "45"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.79 (p39)",
+    "house_no": "28",
+    "owner": "Breunig Georgy Bauer hiesig"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT STABLE h.45 vs PUA h.28 (no.79 (p39)) — nizki B.P. opombe = možna drugačna rubrika"
+ },
+ {
+  "bp": 85,
+  "pt_houses": [
+   "45"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": "Krischan / Peter / Bauer in Grübln",
+  "a01_status": "VERIFIED-2x",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 86,
+  "pt_houses": [
+   "37"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": "Krischan / Marla / Bauerin / zu Grübln",
+  "a01_status": "REVIEW-CONFLICT",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 87,
+  "pt_houses": [
+   "36"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 88,
+  "pt_houses": [
+   "44"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 89,
+  "pt_houses": [
+   "36"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": "Husitsch Maria Bauersleute / zu Grübln",
+  "a01_status": "REVIEW",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 90,
+  "pt_houses": [
+   "44"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.7 (p6)",
+    "house_no": "43",
+    "owner": "Grübler Maria Leutnerin zu Grübln"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFIRMED",
+  "note": "val 57: PUA no.7 h.43 (digit-by-digit + opomba B.P.90.) + PT bp90 h.43 (digit-by-digit) = 2 vira"
+ },
+ {
+  "bp": 91,
+  "pt_houses": [
+   "40"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 92,
+  "pt_houses": [
+   "44"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": "Pöchinger Georg Leinwand Fabrikant",
+  "a01_status": "REVIEW",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 93,
+  "pt_houses": [
+   "41"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.79 (p39)",
+    "house_no": "28",
+    "owner": "Breunig Georgy Bauer hiesig"
+   }
+  ],
+  "a01_owner": "Pfarrer Rupert Sautter hiesig",
+  "a01_status": "REVIEW",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+ },
+ {
+  "bp": 94,
+  "pt_houses": [
+   "40"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": "Pfarrer Rupert Sautter hiesig",
+  "a01_status": "VERIFIED-2x",
+  "final_status": "CONFIRMED",
+  "note": "PT STABLE h.40 + A01 VERIFIED-2x"
+ },
+ {
+  "bp": 95,
+  "pt_houses": [
+   "40"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.78 (p39)",
+    "house_no": "29",
+    "owner": "Schimcz Maria Bäurin hiesig"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.78 (p39) h.29"
+ },
+ {
+  "bp": 96,
+  "pt_houses": [
+   "39"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 97,
+  "pt_houses": [
+   "38"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.78 (p39)",
+    "house_no": "29",
+    "owner": "Schimcz Maria Bäurin hiesig"
+   }
+  ],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.78 (p39) h.29"
+ },
+ {
+  "bp": 98,
+  "pt_houses": [
+   "39"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [
+   {
+    "pua_entry": "no.95 (p47)",
+    "house_no": "70",
+    "owner": "k.k. Zollamt"
+   }
+  ],
+  "a01_owner": "k.k. Zollamt",
+  "a01_status": "VERIFIED-2x",
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo; PUA: no.95 (p47) h.70"
+ },
+ {
+  "bp": 99,
+  "pt_houses": [
+   "50"
+  ],
+  "pt_status": "REVIEW-CONFLICT",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "CONFLICT",
+  "note": "PT branja se razlikujejo"
+ },
+ {
+  "bp": 100,
+  "pt_houses": [
+   "5"
+  ],
+  "pt_status": "STABLE",
+  "pt_rows": 1,
+  "pua_refs": [],
+  "a01_owner": null,
+  "a01_status": null,
+  "final_status": "PROBABLE",
+  "note": "PT STABLE h.5"
+ }
+]
