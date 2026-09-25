@@ -93,5 +93,55 @@
   "PUA p18 (no. 35 'b. P. 56. 38.') — bp 86 povezava",
   "PUA p30 (no. 59 '19. Pp.') — bp 92 povezava",
   "PT p7 rep 90-100 (pomik vrstic + Zollamt)"
- ]
+ ],
+ "val56": {
+  "date": "2026-09-25",
+  "trigger": "VAČ preseljen arhiv.si (NXDOMAIN) → vac.sjas.gov.si; vse končne ločljivosti dostopne",
+  "method": "PDF-native ekstrakcija (pymupdf) iz N083PUA.pdf (6.9 MB, 49 str.) + N083PT.pdf (2.9 MB, 8 str.); pasovni izrezi 300 dpi; 2 neodvisna branja za sporne točke (z-ai vision, serial+backoff)",
+  "readings": {
+   "PUA_p47_no95_Zollamt": {
+    "native": "95 | III | h.70 | Zollamt k.k. Merial/Merarial in Gräbln | (nadaljevalna vrstica) B.P. 98.",
+    "band_A": "95 | 70 | Zollamt S.S. Merarial in Gräbln | B.P. 98. (dno pasu)",
+    "band_B": "(samo) B. P. 98.",
+    "verdict": "2× branja strinjajo: Zollamt (no. 95) @ h.70 z opombo B.P. 98. — STARE branje (val 52/54: 'brez opombe') je bilo napačno (opomba v nadaljevalni vrstici vpisa je bila izpuščena pri 667px)"
+   },
+   "PUA_p6_no7": {
+    "native_1": "7 | h.43 | Brulla Maria Laura von Grubla | B.P. 90",
+    "native_2": "neusklajeno (pomik vrstic: 6/7/8 → h.43/h.63/h.0)",
+    "band_A": "vpis z h.43 (Brulla Mäds Buunhausgütl) s končnico B.P. 90. + parcelni seznami I/II/III/IV",
+    "band_B": "no. 8 h.63 Bringmann Lorenz 'B.P. go.' [verjetno 90]; no. 9 Commenda Tschornembl 'B.P. 31. 32.'",
+    "verdict": "opomba 'B.P. 90.' zagotovo obstaja na p6 (3. potrditev), vezava na Nro. 7 vs 8 OSTAJA NEUSKLAJENA (pomik vrstic med prehodi) → bp 90 lastnik ostaja REVIEW"
+   },
+   "PT_p5_46_48_76": {
+    "native": "46→h.63, 47→h.62, 48→h.62, 76→h.68 (Michael Grouy×3, Ulrich Miko)",
+    "puo_pomoč": "PUA h.65 opomba 'B.P. 46. 48.' (val 54) → 46/48 pričakovano h.65; 76: val53 h.51, možnost h.28",
+    "verdict": "3-kratno nesoglasje (63/65/62; 68/51/28) — Kurrent 2↔3↔5↔6 zmeda ostaja → REVIEW-CONFLICT obdržan, NIČ ne rešeno z ugibanjem"
+   },
+   "PT_p4_24_25": {
+    "native": "24→h.1 Schumidt Malfa, 25→h.1 Schumidt Malfn",
+    "verdict": "potrjeno h.1 (skladno z val 53); PUA h.1 'B.P. ca. 10' — kompatibilno (ca. 10 vključuje 24/25)"
+   },
+   "PUA_p18_no35": {
+    "native": "35 | h.36 | Krischan Muffl Leinwand Güßbl | b. P. 56. 38. (znak po znak)",
+    "verdict": "opomba NE vsebuje 86 → bp 86 REVIEW-CONFLICT utemeljen (val 54 potrjen)"
+   },
+   "PUA_p30_no59": {
+    "native": "59 | h.41 | Gestor Georg Buian, Hof Gülbla | 19. Pp. (znak po znak)",
+    "verdict": "opomba NE vsebuje 92 → bp 92 REVIEW utemeljen (val 54 potrjen)"
+   },
+   "PT_p7_90_100": {
+    "native": "90→h.49, 91→h.44, 92→h.41, 93→h.40, 94→h.40, 95→h.39, 96→h.38, 97→h.39, 98→h.20 'A. Zollamt', 99-100 prazno",
+    "verdict": "Zollamt kot lastnik bp 98 potrjen tudi v PT; hišna št. h.20 (PT) vs h.70 (PUA) → hišna vezava ostaja REVIEW-CONFLICT"
+   },
+   "PUA_p49": {
+    "native": "vpis 97 | V | 2700 | podpis 'Bürgermeister'; 'M. Cny[?]will um 10. Januar 1825'",
+    "verdict": "datum '10. Januar 1825' korooborira val 51 '10. Jänner 1825' (2 vira → mesec POTRJEN)"
+   }
+  },
+  "materials": {
+   "ps_n83": "143/143 strani prenešenih (n083ps-pages/, download-log.json) + identificirano: 'Protocol der Grund-Parcellen der Gemeinde Gruble' (p1 naslov, p2 glave stolpcev: N.º., Kultur Gattung, Flurbezirk Zone, Quadrat Meter, Rente jährlicher Ertrag, Capital Werth, Anmerkung)",
+   "p26_p42": "PDF-native popolni strani (1391×2145 / 1400×2151) — P3-E12 prenos REŠEN; p26 = glava + začetek vpisa 52, p42 = vpisa 85/86 (aritmetika val 48 potrjena)",
+   "a01_a05": "obstoječi rastri A01–A05 (2826px) so že maksimalna IIIF raven — P2-E13/E14 ostajata BRALNA nalogi, brez novih prenosov"
+  }
+ }
 }
