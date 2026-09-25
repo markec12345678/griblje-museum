@@ -3429,3 +3429,22 @@ Stage Summary:
 - ATLAS 1825: PASS 1 ✓ PASS 2 ✓ PASS 3 ✓ PASS 4 ✓ PASS 4b ✓ PASS 5 ✓ PASS 6 ✓ + PASS 7 ✓ (story engine v1, +API) — preostalo iz #42: PASS 8 (§23 coverage report + §24 obvezni outputi) = zaključek podatkovnega sklopa; UI zgodbe ("Zgodba te hiše" klik-flux + §19 EXPLORE 1825); ob kvoti PS p56–143 / PT p7 @300dpi / PR re-read / PV prepis (F-SE-01)
 - main še @ d989fc6; lokalno: val 68 @ 7c631d0 + val 69 @ e0ec5ee (feat/val69-story-engine → val 68 → main); 345 testov + 78/78 dimnih; KG v1.4 nespremenjen (3.309 nodes / 3.569 edges / 622 claims); zbirka 113/589/6; +0 virov/+0 trditve/+0 UI
 - Naslednje: 1) push val 68 + val 69 + poročili na #42 (žeton uporabnika); 2) PASS 8 coverage report (§23/§24); 3) UI zgodbe + §19 EXPLORE; 4) ob kvoti re-readi + PV prepis
+
+---
+Task ID: 26
+Agent: Z.ai Code (main orchestrator)
+Task: Push + merge val 68 + val 69 + poročili #42 + deploy verifikacija (user: "ghp_... nadaljuj")
+
+Work Log:
+- Uporabnik priskrbel GitHub žeton → push val 68 (feat/val68-story-graph @ 7c631d0) → PR #56 → CI 3/3 (Vercel Preview ✓, tipi+lint+enotni ✓, dimni + PostgreSQL ✓) → MERGED @ e1e2cce
+- Push val 69 (feat/val69-story-engine @ f7d2ca9, stacked; diff vs main po merge-u val 68 = čist val 69) → PR #57 → CI 2/2 zeleno → MERGED @ 98018b2
+- Poročili na issue #42: val 68 (comment-5840097306) + val 69 (comment-5840101952) — checklist checkpoint: PASS 1–7 ✓, ostaja PASS 8
+- Lokalna sinhronizacija: main @ 98018b2 (val 68 + val 69 + README 121/122); branchi feat/val68-* in feat/val69-* izbrisani lokalno + na remote
+- Žeton: uporabljen samo inline v push/API klicih — preverjeno ni sledi v git config/credentials (uporabnik po vzorcu sam izbriše/rotira žeton)
+- DEPLOY: Render ŽIV z val 69 — /api/atlas/story?entity=HOUSE:H-040 na produkciji → SE-D95BD3D612 / EVIDENCED / 7 sekcij = ISTI story_id kot lokalno (determinizem §22 potrjen čez produkcijo!); Vercel: produkcija uspešno nadoknapila val 68 (deploy @ e1e2cce7 21:43 UTC success, /api/atlas/story-graph 200) — za val 69 (98018b2) production deploy še NE ustvarjen (6+ min polling 404; CI dimni = preview build uspešen, build ni problem); znan vzorec z val 67 → pričakovano nadoknaplenje ali uporabnikova Vercel dashboard preverba
+
+Stage Summary:
+- main @ 98018b2 = val 68 (PASS 6 story graph + KG v1.4) + val 69 (PASS 7 story engine) + README 121/122; GitHub main sinhroniziran, branchi počiščeni
+- 345 testov + 78/78 dimnih; zbirka 113/589/6; +0 virov/+0 trditve/+0 UI
+- DEPLOY MATRICA: GitHub ✓ · Render ✓ (val 69 živ, determinizem potrjen na produkciji) · Vercel ⚠️ val 68 ✓ / val 69 deploy pending (znan vzorec — previewi delujejo, build uspešen)
+- Naslednje: PASS 8 (§23 coverage report + §24 obvezni outputi 1–14) = zaključek ATLAS 1825 podatkovnega sklopa; UI zgodbe ("Zgodba te hiše" klik-flux + §19 EXPLORE 1825); ob kvoti PS p56–143 / PT p7 @300dpi / PR re-read / PV prepis (F-SE-01)
