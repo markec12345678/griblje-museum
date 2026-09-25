@@ -153,6 +153,7 @@ def main():
     conflicts = load(os.path.join(BASE, "conflict-register-1825.json"))["conflicts"]
     parcels = load(os.path.join(BASE, "parcel-register-1825.json"))
     topos = load(os.path.join(BASE, "toponym-register-1825.json"))["toponyms"]
+    a01_inv = load(os.path.join(BASE, "a01-building-inventory-1825.json"))
     pua_reg = load(os.path.join(RG, "pua-n83", "register.json"))
 
     G = Graph()
@@ -277,10 +278,50 @@ def main():
         "statement": "PUA p49 zaključni zapis 10. Jänner 1825",
     }, source_ids=["SRC-PUA"], evidence_status="VERIFIED-2x", notes="3:1 branja val 57")
 
-    # ---------- MAP_OBJECT: tip definiran, 0 instanc (§7 pending) ----------
-    G.gap("MAP_OBJECT inventory (A01–A05 objekti)", ["A01–A05 rastri (val 42)"],
-          "§7 A01 building coverage register še ni zgrajen; node tip obstaja, instanc 0",
-          "PASS 4 (issue #42 §7): A01 inventory iz obstoječih rasterjev + PT gattung", tied_to="issue #42 §7")
+    # ---------- MAP_OBJECT (val 65, PASS 4, issue #42 §7): A01 inventory v1 ----------
+    TIER_EV = {"CLEAR": "PROVISIONAL", "PROBABLE": "REVIEW", "CANDIDATE": "REVIEW",
+               "UNREADABLE": "REVIEW", "UNRESOLVED": "REVIEW", "UNIDENTIFIED": "REVIEW"}
+    TIER_CONF = {"CLEAR": "medium", "PROBABLE": "medium", "CANDIDATE": "low",
+                 "UNREADABLE": "low", "UNRESOLVED": "low", "UNIDENTIFIED": "low"}
+    for o in a01_inv["objects"]:
+        mo_id = "MO:" + o["object_id"]
+        pua_x = json.dumps(o["pua_parcel_cross"], ensure_ascii=False) if o["pua_parcel_cross"] else ""
+        G.node(mo_id, "MAP_OBJECT", {
+            "label": ("A01 stavba BP " + str(o["bp"])) if o["bp"] else ("A01 objekt " + o["object_id"]),
+            "bp": o["bp"],
+            "glyph_tier": o["glyph_tier"],
+            "glyph_layer": o["glyph_layer"],
+            "building_type": o["building_type"],
+            "footprint_note": o["footprint_note"],
+            "px": o["px"],
+            "lat": o["lat"], "lng": o["lng"],
+            "georef_status": o["georef_status"],
+            "verdict_vs_prior": o["verdict_vs_prior"],
+            "px_prior": o["px_prior"],
+        }, source_ids=["SRC-A01"], evidence_status=TIER_EV[o["glyph_tier"]],
+           notes="; ".join([o["notes"], "crops: " + ", ".join(o["source_crops"])]))
+        G.edge(mo_id, "DEPICTED_ON", "SRC-A01",
+               "1824 (izmera), korekcije 1827", ["SRC-A01"], TIER_EV[o["glyph_tier"]],
+               TIER_CONF[o["glyph_tier"]],
+               notes="2-prehodno agentovo branje brez VLM (val 65)")
+        if o["bp"]:
+            bp_node = "BP:%03d" % int(o["bp"])
+            claim_notes = "glifna vrstica na stavbi; PUA parcelni preverek: " + pua_x if pua_x else "glifna vrstica na stavbi (brez PUA zadetka)"
+            cid = G.claim(mo_id, "CORRESPONDS_TO_BP", bp_node,
+                          {"source": "SRC-A01", "crops": o["source_crops"], "raster_px": o["px"]},
+                          "REVIEW", period="1824/1827", confidence=TIER_CONF[o["glyph_tier"]],
+                          notes=claim_notes)
+            G.edge(mo_id, "CORRESPONDS_TO_BP", bp_node,
+                   "1824/1827", ["SRC-A01"], TIER_EV[o["glyph_tier"]],
+                   TIER_CONF[o["glyph_tier"]],
+                   notes="veza glifa→BP; hišne veze ostajajo prek BP_BOUND_TO_HOUSE (val 57)",
+                   claim_ids=[cid])
+    G.gap("MAP_OBJECT inventory (A01–A05 objekti)", ["A01 raster (val 42/65)", "A02–A05 rastri (val 42)"],
+          "A01 v1: %d objektov v65 (%d s BP glifo) + %d prior-only + %d rdečih glif; A02–A05 še neinventarizirani" % (
+              a01_inv["counts"]["objects_v65"], a01_inv["counts"]["objects_with_bp"],
+              a01_inv["counts"]["located_prior_only"], a01_inv["counts"]["red_glyphs"]),
+          "A02–A05 isti 2-prehodni protokol; PT p7 re-read @300dpi; VAČ original @višji dpi",
+          status="PARTIAL", tied_to="issue #42 §7")
 
     # ================= EDGES + CLAIMS =================
 
@@ -595,15 +636,19 @@ def main():
              "breakdown": {"merged": 0, "possible_duplicate_not_merged": sum(1 for p in persons_reg if p.get("possible_duplicate"))}},
             {"category": "toponyms", "total": len(topos), "breakdown": {"modern_mapping_known": 0, "UNKNOWN": len(topos)}},
             {"category": "events", "total": 3, "breakdown": {"documented": 3}},
-            {"category": "map_objects_a01", "total": 0, "breakdown": {"inventory": "PENDING (PASS 4)"}},
+            {"category": "map_objects_a01", "total": len(a01_inv["objects"]) + len(a01_inv["prior_only_bp"]),
+             "breakdown": {"located_v65_glyph": a01_inv["counts"]["located_v65"],
+                           "located_prior_only": a01_inv["counts"]["located_prior_only"],
+                           "red_glyphs": a01_inv["counts"]["red_glyphs"],
+                           "not_located_1_100": a01_inv["counts"]["not_located_1_100"]}},
         ],
         "note": "brez umetnega skupnega procenta — dejansko stanje po kategorijah (issue #43 §10)",
     }
 
     out = {
-        "val": 64,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps",
-        "title": "knowledge-graph-1825 v1.1",
+        "val": 65,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4",
+        "title": "knowledge-graph-1825 v1.2",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -613,17 +658,32 @@ def main():
             },
             {
                 "finding_id": "KG-F02",
-                "val": 64,
+                "val": 65,
                 "statement": "SRC katalog v1 je imel NAPAČNE VAC uodid-e (227668/227670/227671 = A02/A03/A04, ne PT/PUA/PS — ugibanje iz manifest datotek). Popravljeno po eksplicitni tabeli 56-val42: PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/227668/227670/227671/227673, k.o. N83=227663. Vsak SOURCE node zdaj nosi vac_details_url (§6 pot do dokumenta).",
                 "status": "RESOLVED",
                 "provenance": "research-griblje/56-val42-kataster-n83-complete-research.md (tabela enot)",
+            },
+            {
+                "finding_id": "KG-F03",
+                "val": 65,
+                "statement": "px pozicije izluška A01 (val 52–56, 56 stavb) so sistematično odmaknjene od številčnih glif (delta 28–224 px = 60–490 m @2,19 m/px); glife pri teh pozicijah niso berljive @4–6x. v65 uvaja glifno pozicijsko plast (2-prehodno branje, regenerabilno); px_prior ohranjen vsakemu objektu (nič prepisano).",
+                "status": "RESOLVED-V65",
+                "provenance": "a01-building-inventory-1825.json findings F-A01-01 + verdict_vs_prior per objekt",
+            },
+            {
+                "finding_id": "KG-F04",
+                "val": 65,
+                "statement": "Ključni prostori: temne številke na stavbah A01 (BP, PT 'Protocoll der Bau Parcellen') obstajajo hkrati kot parcelne številke PUA sec I/II z house_refs, ki so HOLDINGI (npr. glifa 94: PUA house_refs [47] vs PT p7 hiša 40). 'Nro. in der Mappe' in PUA parcelna številka = ista številka stavbne parcele; house_refs (PUA holding) ≠ hišna številka (PT). Dokumentirana obe interpretaciji; merge prepovedan do re-reada PT p7 @300dpi.",
+                "status": "OPEN",
+                "provenance": "a01-building-inventory-1825.json F-A01-02; parcel-register-1825.json cross-check; bp-house-reconciliation (val 57)",
             },
         ],
         "provenance": {
             "built_from": ["house-register-1825.json", "person-owner-register-1825.json",
                            "bp-house-reconciliation-1825.json", "conflict-register-1825.json",
                            "parcel-register-1825.json", "toponym-register-1825.json",
-                           "pua-n83/register.json", "ps-n83/register.json"],
+                           "pua-n83/register.json", "ps-n83/register.json",
+                           "a01-building-inventory-1825.json"],
             "deterministic": True,
             "regenerable": "ob PS 143/143 ponovni zagon build-knowledge-graph.py + vseh registrov",
             "runtime_copy": "src/data/knowledge-graph-1825.json (piše TA skript — prepovedan ročni urejanji, ena izhodna resnica)",
