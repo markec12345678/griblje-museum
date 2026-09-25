@@ -4,6 +4,9 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **113. sklop — ATLAS 1825 PASS 3 v1: parcelni + negative-result register (60. val, 2026-09-25)**
+> **§4**: PUA 2.035 parcelnih referenc (417 so-referenciranih z >1 hišo = so-vlasništvo katastra, ne konflikt) + PS 432 kandidatov (ločena prostora, F14); raba samo EXACT leksikalno (njiva 230/travnik 60/…/UNKNOWN 106 z originalom) · **§13: 11 negativnih rezultatov** z naslednjim virom vsak · +0 virov/+0 trditev/+0 UI
+>
 > **112. sklop — ATLAS 1825 PASS 2: House + BP reconciliation (59. val, 2026-09-25)**
 > **4 centralna registra** (`research-griblje/atlas-1825/`): house-register 167 hiš (49 CONFLICT / 13 PARTIAL / 32 SINGLE_SOURCE / 73 UNKNOWN_SEMANTICS; hiše 73–78 v nobenem viru) · bp-house-reconciliation 100 BP (FOUND 2 / UNCERTAIN 39 / CONFLICT 54 / NOT_FOUND 5) · conflict-register **113 konfliktov** (54 CB + 51 CH + 8 CF, vsi z what_would_resolve) · person-owner register 488 oseb (161 possible_duplicate, **0 združitev**) · deterministično obnovljivo ob PS 143/143 · +0 virov/+0 trditev/+0 UI
 >
