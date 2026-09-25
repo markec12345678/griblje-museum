@@ -3405,3 +3405,27 @@ Stage Summary:
 - main @ d989fc6 (val 68 čaka na push — branch lokalno); 314 testov + 70/70 dimnih; KG v1.4: 3.309 nodes / 3.569 edges / 622 claims / 8 gaps / 4 atomi / 0 kršitev; zbirka 113/589/6; +0 virov/+0 trditve zgodbe/+0 UI
 - KG-F07 dokazuje vrednost invariant-no-gibal: arhitekturni test je ujel realno vrzel (zgodba brez dokazne verige) še pred Story Engine
 - Naslednje: 1) push + PR + merge val 68 (žeton uporabnika) + poročilo #42; 2) PASS 7 story engine (§16, nad story_engine_contract + sosednost API); 3) PASS 8 coverage report (§23/§24 outputi); 4) ob kvoti re-readi PS/PT/PR
+
+---
+Task ID: 25
+Agent: Z.ai Code (main orchestrator)
+Task: Val 69 — ISSUE #42 §16–§18 PASS 7: Story Engine v1 (user: "odlicno nadaljuj")
+
+Work Log:
+- Start: val 68 (PASS 6 story graph) lokalno commitan na feat/val68-story-graph @ 7c631d0, čaka na GitHub žeton za push; brez žetona in brez VLM kvote → naslednji lokalni val po worklog načrtu = PASS 7 story engine
+- Fetch specifikacije: issue #42 prebran prek javnega GitHub API (§16 story engine, §17 evidence-first štirje tiri, §18 zgodba vasi, §19 AI iz strukturiranih claims, §22 reproducibilnost, §25 PASS 7)
+- ARHITEKTURNA ODLOČITEV: v1 = 100 % determinističen sestavljevalnik, BREZ LLM (§17 "AI ne sme zapolnjevati praznin z domišljijo" + §19 "iz strukturiranih claims + sources, ne iz prostega modelskega spomina") — LLM sloj lahko kasneje sede SAMO na ta izhod pod istim contractom
+- src/lib/atlas-story-engine.ts (čista plast nad KG v1.4 + story graf, O(1) indeksi): generateEntityStory (§16 hiša: 8 sekcij lastništvo→parcele+raba→kataster→osebe→dogodki samo z virom→konflikti vidni §14→"Kaj še ne vemo" §17; splošne sekcije za BP/PERSON/PARCEL/TOPONYM/EVENT/MO/SOURCE z SLO narrativnimi znaki iz PASS 6) + generateVillageStory (§18: 10 sekcij od pokrajine do raziskovalnih vrzel, vse številke računane iz grafa) + evidenceTier (§17 popolna preslikava 15+ statusov → 4 tiri; natančna tabela → varovalni vzorci: CONFLICT prej kot FOUND, neznan status NIKOLI tiho DOKAZANO) + story_engine_contract (§22: story_id = SE-hash od kg_sha256 ⇒ sprememba podatkov ⇒ sprememba ID; content_hash kanonične vsebine; generation_timestamp = čas gradnje podatkov iz story atomov; story_status EVIDENCED/PARTIAL_EVIDENCE/NOT_PUBLISHED — pravilo "zgodba brez povezav = NE-OBJAVLJENA")
+- API: GET /api/atlas/story — ?entity=HOUSE:H-040 (okrajšave enake story-graph API) + ?scope=village; poštene napake 400 missing_param / 400 unknown_scope / 404 node_not_found; CORS+no-store+correlation-id konvencija
+- KLJUČNO ODKRITJE F-SE-01: raba zemljišča JE delno dokumentirana — 432 PS-parcel (val 61) ima land_use_category (njiva 230, travnik 60, gozd 13, vrt 10, pašnik 9, drugo 4, UNKNOWN 106), 2035 PUA-parcel čaka PV prepis [373418]; zgodba vasi loči 🟢 dokumentirano + ⚪ ni prepisano; hiša 40: 9/121 parcel z rabo; izveden "dokazano najprej" sort parcel v prikazu (stabilen)
+- F-SE-02: PS parcele TRANSCRIBED_PARTIAL (cross_ref_to_pua UNKNOWN, F14) → 🟡 VERJETNO — tier sistem loči "prepisano ampak nerazrešena vezava" brez ročnih izjem (test to dokumentira)
+- F-SE-04: A01 MAP_OBJECT-i sheet=null (samo A02/A05 imajo polje) → moSheet() izpeljava iz node_id predpone, deterministično
+- Popravki med razvojem: stray znaki v komentarju; bind claim lookup odvečni pogoj; SOURCE nodes brez evidence_status (13× None) → listi v §18.2 VERIFIED_FORM; hišna številka item z viri (SRC-PUA+SRC-PS); osebe tier iz osebinega statusa; git add -A spravil pycache+crops v commit → git rm --cached + .gitignore + amend (čist commit e0ec5ee)
+- QA: tests/atlas-story-engine.test.ts (31 testov/157 expect: tier preslikava vključno NOT_FOUND-vs-FOUND substring varovalo + popolnost nad vsemi statusi grafa; §22 contract+determinizem deep-equal+hash; §16 hiša 40 C-00083/C-00154/PER-0059/PER-0157/BP 94 C-00609 DOKAZANO+91/95 KONFLIKTNO/MO-A01-002/121 parcel capped; pogodba: nedotaknjena parcela NOT_PUBLISHED z nič izmišljenega; §18 vasi 10 sekcij 167/488/2467/34/5 + raba 326/2141 + 8 RG + C-00622) → suite 345/345; tsc čist; lint čist; api-smoke 78/78 živ :3000 (+8: H-40 EVIDENCED+tiri, §16 sekcije, determinizem čez HTTP, vas 10 sekcij, NOT_PUBLISHED, 400/400/404)
+- Dokumentacija: poročilo research-griblje/82-val69-atlas-1825-pass7-story-engine.md; README 122. sklop (KG-F08 oznaka preimenovana v F-SE-01 — KG findings niso spreminjani, +0 na grafovi resnici); worklog (ta vnos)
+- GIT: branch feat/val69-story-engine (stacked na val 68) commit e0ec5ee — push čaka na GitHub žeton (vzorec val 66)
+
+Stage Summary:
+- ATLAS 1825: PASS 1 ✓ PASS 2 ✓ PASS 3 ✓ PASS 4 ✓ PASS 4b ✓ PASS 5 ✓ PASS 6 ✓ + PASS 7 ✓ (story engine v1, +API) — preostalo iz #42: PASS 8 (§23 coverage report + §24 obvezni outputi) = zaključek podatkovnega sklopa; UI zgodbe ("Zgodba te hiše" klik-flux + §19 EXPLORE 1825); ob kvoti PS p56–143 / PT p7 @300dpi / PR re-read / PV prepis (F-SE-01)
+- main še @ d989fc6; lokalno: val 68 @ 7c631d0 + val 69 @ e0ec5ee (feat/val69-story-engine → val 68 → main); 345 testov + 78/78 dimnih; KG v1.4 nespremenjen (3.309 nodes / 3.569 edges / 622 claims); zbirka 113/589/6; +0 virov/+0 trditve/+0 UI
+- Naslednje: 1) push val 68 + val 69 + poročili na #42 (žeton uporabnika); 2) PASS 8 coverage report (§23/§24); 3) UI zgodbe + §19 EXPLORE; 4) ob kvoti re-readi + PV prepis
