@@ -1,0 +1,1703 @@
+{
+ "val": "59",
+ "pass": 2,
+ "issue": "#42 §3",
+ "title": "BP↔HOUSE RECONCILIATION 1825 — matrica BP 1–100",
+ "status_map": {
+  "CONFIRMED": "FOUND",
+  "PROBABLE": "UNCERTAIN",
+  "UNRESOLVED": "UNCERTAIN",
+  "CONFLICT": "CONFLICT",
+  "NOT_FOUND": "NOT_FOUND"
+ },
+ "provenance": {
+  "pua": "pua-n83/register.json (98 vpisov, val 51+57)",
+  "pt": "pt-n83/register.json (100 vrstic, val 53) + pt-n83/reconciliation.json (val 54+56+57)",
+  "ps": "ps-n83/register.json (1.073 vrstic, 55/143 strani, val 57) + ps-n83/analysis-v1.json (val 58)",
+  "bp_matrix": "raw-web-val57-2026-10/bp-house-matrix.json (100 vrstic, val 57)",
+  "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)"
+ },
+ "coverage": {
+  "UNCERTAIN": 39,
+  "CONFLICT": 54,
+  "NOT_FOUND": 5,
+  "FOUND": 2
+ },
+ "bp_total": 100,
+ "bp_rows": [
+  {
+   "bp": 1,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "UNRESOLVED",
+   "house_candidates": {
+    "pt_houses": [
+     "[nečitljivo]"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT 1× branje h.[nečitljivo]"
+  },
+  {
+   "bp": 2,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "UNRESOLVED",
+   "house_candidates": {
+    "pt_houses": [
+     "[nečitljivo]"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT 1× branje h.[nečitljivo]"
+  },
+  {
+   "bp": 3,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "18"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.18"
+  },
+  {
+   "bp": 4,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "19"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.19"
+  },
+  {
+   "bp": 5,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "17"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.17"
+  },
+  {
+   "bp": 6,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "16"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.16"
+  },
+  {
+   "bp": 7,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "UNRESOLVED",
+   "house_candidates": {
+    "pt_houses": [
+     "110"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT 1× branje h.110"
+  },
+  {
+   "bp": 8,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "11"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-008"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 9,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "10"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.10"
+  },
+  {
+   "bp": 10,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "10"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.10"
+  },
+  {
+   "bp": 11,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "9"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.23 (p12)",
+      "house_no": "8",
+      "owner": "Schafschlader Mütze Leidensgüttin"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-011"
+   ],
+   "note": "PT STABLE h.9 vs PUA h.8 (no.23 (p12)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "bp": 12,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "8"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.23 (p12)",
+      "house_no": "8",
+      "owner": "Schafschlader Mütze Leidensgüttin"
+     },
+     {
+      "pua_entry": "no.23 (p12)",
+      "house_no": "8",
+      "owner": "Schafschlader Mütze Leidensgüttin"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-012"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.23 (p12) h.8"
+  },
+  {
+   "bp": 13,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "6"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-013"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 14,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "UNRESOLVED",
+   "house_candidates": {
+    "pt_houses": [
+     "6"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT 1× branje h.6"
+  },
+  {
+   "bp": 15,
+   "atlas_status": "NOT_FOUND",
+   "val57_status": "NOT_FOUND",
+   "house_candidates": {
+    "pt_houses": [],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+  },
+  {
+   "bp": 16,
+   "atlas_status": "NOT_FOUND",
+   "val57_status": "NOT_FOUND",
+   "house_candidates": {
+    "pt_houses": [],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+  },
+  {
+   "bp": 17,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [],
+    "pua_refs": [
+     {
+      "pua_entry": "no.47 (p24)",
+      "house_no": "7",
+      "owner": "Liechtenst. Mandl"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "brez PT vrstice (vrzel 15-20); PUA no.47 (p24)"
+  },
+  {
+   "bp": 18,
+   "atlas_status": "NOT_FOUND",
+   "val57_status": "NOT_FOUND",
+   "house_candidates": {
+    "pt_houses": [],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+  },
+  {
+   "bp": 19,
+   "atlas_status": "NOT_FOUND",
+   "val57_status": "NOT_FOUND",
+   "house_candidates": {
+    "pt_houses": [],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+  },
+  {
+   "bp": 20,
+   "atlas_status": "NOT_FOUND",
+   "val57_status": "NOT_FOUND",
+   "house_candidates": {
+    "pt_houses": [],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT vrzel 15-20; brez PUA B.P. opombe; brez A01 vezave"
+  },
+  {
+   "bp": 21,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "10"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.10"
+  },
+  {
+   "bp": 22,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "10"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.70 (p16)",
+      "house_no": "3",
+      "owner": "Christan / Wörfl / Einwohner hiesig"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-022"
+   ],
+   "note": "PT STABLE h.10 vs PUA h.3 (no.70 (p16)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "bp": 23,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "11"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.11"
+  },
+  {
+   "bp": 24,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "1"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.1"
+  },
+  {
+   "bp": 25,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "1"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.1"
+  },
+  {
+   "bp": 26,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "2"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.2"
+  },
+  {
+   "bp": 27,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "21"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.21"
+  },
+  {
+   "bp": 28,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "21"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.21"
+  },
+  {
+   "bp": 29,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "66"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.66"
+  },
+  {
+   "bp": 30,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "6"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-030"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 31,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "65"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.65"
+  },
+  {
+   "bp": 32,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "65"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.65"
+  },
+  {
+   "bp": 33,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "61"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-033"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 34,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "39"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.39"
+  },
+  {
+   "bp": 35,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "31"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-035"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 36,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "32"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-036"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 37,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "20"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-037"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 38,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "20"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.35 (p18)",
+      "house_no": "36",
+      "owner": "Krischan / Marla / Bauerin / zu Grübln"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-038"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.35 (p18) h.36"
+  },
+  {
+   "bp": 39,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "35"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-039"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 40,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "29"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-040"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 41,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "64"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-041"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 42,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "26"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.26"
+  },
+  {
+   "bp": 43,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "27"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.27"
+  },
+  {
+   "bp": 44,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "30"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-044"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 45,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "28"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.28"
+  },
+  {
+   "bp": 46,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "63"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.40 (p21)",
+      "house_no": "65",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ]
+   },
+   "a01": {
+    "owner": "Widhann Georg häusler und Gärtner",
+    "status": "REVIEW"
+   },
+   "conflict_ids": [
+    "CB-046"
+   ],
+   "note": "PT STABLE h.63 vs PUA h.65 (no.40 (p21)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "bp": 47,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "65"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-047"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 48,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "63"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.40 (p21)",
+      "house_no": "65",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-048"
+   ],
+   "note": "PT STABLE h.63 vs PUA h.65 (no.40 (p21)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "bp": 49,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "61"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.41 (p21)",
+      "house_no": "66",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ]
+   },
+   "a01": {
+    "owner": "Widhann Georg häusler und Gärtner",
+    "status": "VERIFIED-2x"
+   },
+   "conflict_ids": [
+    "CB-049"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.41 (p21) h.66"
+  },
+  {
+   "bp": 50,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "60"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.34 (p18)",
+      "house_no": "34",
+      "owner": "Krischan / Marla / Bauerin / zu Grübln"
+     },
+     {
+      "pua_entry": "no.41 (p21)",
+      "house_no": "66",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-050"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.34 (p18) h.34"
+  },
+  {
+   "bp": 51,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "60"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-051"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 52,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "62"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-052"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 53,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "61"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-053"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 54,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "30"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-054"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 55,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "32"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.32"
+  },
+  {
+   "bp": 56,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "60"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.35 (p18)",
+      "house_no": "36",
+      "owner": "Krischan / Marla / Bauerin / zu Grübln"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-056"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.35 (p18) h.36"
+  },
+  {
+   "bp": 57,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "63"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-057"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 58,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "32"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.32"
+  },
+  {
+   "bp": 59,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "32"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-059"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 60,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "36"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-060"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 61,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "UNRESOLVED",
+   "house_candidates": {
+    "pt_houses": [
+     "3",
+     "50"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT 1× branje h.3/50"
+  },
+  {
+   "bp": 62,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "54"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.54"
+  },
+  {
+   "bp": 63,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "49"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.49"
+  },
+  {
+   "bp": 64,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "55"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.55"
+  },
+  {
+   "bp": 65,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "53"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.53"
+  },
+  {
+   "bp": 66,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "55"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.55"
+  },
+  {
+   "bp": 67,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "54"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.54"
+  },
+  {
+   "bp": 68,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "43"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.10 (p7)",
+      "house_no": "32",
+      "owner": "Breitwiesch Mattl / Söllner zu Grübln"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-068"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.10 (p7) h.32"
+  },
+  {
+   "bp": 69,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "45"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-069"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 70,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "36"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-070"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 71,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "34"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-071"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 72,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "38"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-072"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 73,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "41"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.61 (p31)",
+      "house_no": "60",
+      "owner": "Penzig Stuffe Leuthold zu Grüble"
+     }
+    ]
+   },
+   "a01": {
+    "owner": "Penzig Stuffe Leuthold zu Grüble",
+    "status": "REVIEW-CONFLICT"
+   },
+   "conflict_ids": [
+    "CB-073"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.61 (p31) h.60"
+  },
+  {
+   "bp": 74,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "60"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.60"
+  },
+  {
+   "bp": 75,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "51"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-075"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 76,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "51"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ]
+   },
+   "a01": {
+    "owner": "Brincz Maria Bäuerin zu Grübln",
+    "status": "REVIEW-CONFLICT"
+   },
+   "conflict_ids": [
+    "CB-076"
+   ],
+   "note": "PT STABLE h.51 vs PUA h.28 (no.79 (p39)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "bp": 77,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "48"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.48"
+  },
+  {
+   "bp": 78,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "41"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-078"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 79,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "41"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-079"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+  },
+  {
+   "bp": 80,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "41"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-080"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 81,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "45",
+     "48"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-081"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+  },
+  {
+   "bp": 82,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "UNRESOLVED",
+   "house_candidates": {
+    "pt_houses": [
+     "41",
+     "45"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT 1× branje h.41/45"
+  },
+  {
+   "bp": 83,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "45"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.45"
+  },
+  {
+   "bp": 84,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "45"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-084"
+   ],
+   "note": "PT STABLE h.45 vs PUA h.28 (no.79 (p39)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "bp": 85,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "45"
+    ],
+    "pua_refs": []
+   },
+   "a01": {
+    "owner": "Krischan / Peter / Bauer in Grübln",
+    "status": "VERIFIED-2x"
+   },
+   "conflict_ids": [
+    "CB-085"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 86,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "37"
+    ],
+    "pua_refs": []
+   },
+   "a01": {
+    "owner": "Krischan / Marla / Bauerin / zu Grübln",
+    "status": "REVIEW-CONFLICT"
+   },
+   "conflict_ids": [
+    "CB-086"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 87,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "36"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-087"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 88,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "44"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-088"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 89,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "36"
+    ],
+    "pua_refs": []
+   },
+   "a01": {
+    "owner": "Husitsch Maria Bauersleute / zu Grübln",
+    "status": "REVIEW"
+   },
+   "conflict_ids": [
+    "CB-089"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 90,
+   "atlas_status": "FOUND",
+   "val57_status": "CONFIRMED",
+   "house_candidates": {
+    "pt_houses": [
+     "44"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.7 (p6)",
+      "house_no": "43",
+      "owner": "Grübler Maria Leutnerin zu Grübln"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "val 57: PUA no.7 h.43 (digit-by-digit + opomba B.P.90.) + PT bp90 h.43 (digit-by-digit) = 2 vira"
+  },
+  {
+   "bp": 91,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "40"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-091"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 92,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "44"
+    ],
+    "pua_refs": []
+   },
+   "a01": {
+    "owner": "Pöchinger Georg Leinwand Fabrikant",
+    "status": "REVIEW"
+   },
+   "conflict_ids": [
+    "CB-092"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 93,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "41"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ]
+   },
+   "a01": {
+    "owner": "Pfarrer Rupert Sautter hiesig",
+    "status": "REVIEW"
+   },
+   "conflict_ids": [
+    "CB-093"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+  },
+  {
+   "bp": 94,
+   "atlas_status": "FOUND",
+   "val57_status": "CONFIRMED",
+   "house_candidates": {
+    "pt_houses": [
+     "40"
+    ],
+    "pua_refs": []
+   },
+   "a01": {
+    "owner": "Pfarrer Rupert Sautter hiesig",
+    "status": "VERIFIED-2x"
+   },
+   "conflict_ids": [],
+   "note": "PT STABLE h.40 + A01 VERIFIED-2x"
+  },
+  {
+   "bp": 95,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "40"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.78 (p39)",
+      "house_no": "29",
+      "owner": "Schimcz Maria Bäurin hiesig"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-095"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.78 (p39) h.29"
+  },
+  {
+   "bp": 96,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "39"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-096"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 97,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "38"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.78 (p39)",
+      "house_no": "29",
+      "owner": "Schimcz Maria Bäurin hiesig"
+     }
+    ]
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-097"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.78 (p39) h.29"
+  },
+  {
+   "bp": 98,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "39"
+    ],
+    "pua_refs": [
+     {
+      "pua_entry": "no.95 (p47)",
+      "house_no": "70",
+      "owner": "k.k. Zollamt"
+     }
+    ]
+   },
+   "a01": {
+    "owner": "k.k. Zollamt",
+    "status": "VERIFIED-2x"
+   },
+   "conflict_ids": [
+    "CB-098"
+   ],
+   "note": "PT branja se razlikujejo; PUA: no.95 (p47) h.70"
+  },
+  {
+   "bp": 99,
+   "atlas_status": "CONFLICT",
+   "val57_status": "CONFLICT",
+   "house_candidates": {
+    "pt_houses": [
+     "50"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [
+    "CB-099"
+   ],
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "bp": 100,
+   "atlas_status": "UNCERTAIN",
+   "val57_status": "PROBABLE",
+   "house_candidates": {
+    "pt_houses": [
+     "5"
+    ],
+    "pua_refs": []
+   },
+   "a01": null,
+   "conflict_ids": [],
+   "note": "PT STABLE h.5"
+  }
+ ]
+}
