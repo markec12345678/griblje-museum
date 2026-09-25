@@ -4,6 +4,10 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **118. sklop — ISSUE #42 §7 PASS 4: A01 building inventory v1 (65. val, 2026-09-25)**
+> **2-prehodno agentovo branje katastrskega lista A01 brez VLM** (40 determinističnih izrezkov 3×–6×) · **24 objektov v65 + 56 prior-only + 8 rdečih glif; 18 z BP glifo** — novi BP: **24 (edini iz 1–29), 91, 87+88 kandidat** · **KG-F03: prior pozicije (val 52–56) odmaknjene od glif do 490 m — glifna plast = nova referenca, px_prior ohranjen** · **KG-F04 OPEN: BP številke = stavbne parcele tudi po PUA (house_refs = holdingi, ne hišne številke)** · Žolant: največja zidana stavba NEoznačena (ni identificirano ≠ ni obstajalo) · KG v1.2 **3.299 nodes / 3.556 edges / 618 claims** + MAP_OBJECT plast (RG-001 PARTIAL) · api-smoke 53/53 · +0 virov/+0 trditve/+0 UI · 259/259 testov
+>
+
 > **117. sklop — ISSUE #43 §2/§6: Evidence Explorer API + KG v1.1 (64. val, 2026-09-25)**
 > `GET /api/atlas/evidence` — pregled grafa + dokazna veriga per node (`?node=house 40` → 2 OWNER claim-a → vac_details_url do dokumenta) + iskanje · **KG-F02: popravljen SRC katalog** (v1 napačni uodidi 227668/70/71 = A02/A03/A04; pravilno po val 42: PUA=373417, PS=373415, PT=373416 …) · api-smoke 51/51 · +0 virov/+0 trditve/+0 UI · 248/248 testov
 >
