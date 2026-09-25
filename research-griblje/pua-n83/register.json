@@ -973,7 +973,7 @@
   "page": 6,
   "entry_no": "7",
   "section": "",
-  "house_no": "70",
+  "house_no": "43",
   "owner_original": "Grübler Maria Leutnerin zu Grübln",
   "owner_normalized": "",
   "status_original": "Leutnerin zu Grübln",
@@ -1144,10 +1144,10 @@
   "annotation_original": "B.P. 90.",
   "transcription_confidence": "high",
   "normalization_confidence": "",
-  "review_status": "VERIFIED-2x",
+  "review_status": "REVIEW-CONFLICT",
   "uncertain_words": [],
   "reading_provenance": "2× VLM (pass1 surovo + pass2 verifikacija, val 51)",
-  "notes": ""
+  "notes": " | VAL 57 REVIZIJA hišne št.: 43 (3× neodvisno: val 56 native_1 + val 57 p06-top digit-by-digit '4 open top crossbar + 3 flat top' + posredno val 57 midband/bot-compact za blok) proti 70 (val 48/51 @667px) — Kurrent 4↔7 in 3↔0; 43 utemeljeno z opisi oblik števk. Lastniško ime V KONFLIKTU: val 56/57 'Brulla Mäda/Laura …' vs val 48/51 'Grübler Maria Leutnerin' (2:2) → REVIEW-CONFLICT. Opomba B.P. 90. leži pod parcelnim seznamom no.7 (val 57 midband: 'centered below the parcel list of entry No. 7'; annot-strip desni stolpec prazen — opomba je znotraj bloka vpisa, ne v stolpcu)."
  },
  {
   "source": "SI AS 176/N/N83/s/PUA",
@@ -1155,7 +1155,7 @@
   "page": 6,
   "entry_no": "8",
   "section": "",
-  "house_no": "66",
+  "house_no": "63",
   "owner_original": "Brincz Maria Leutnerin zu Grübln",
   "owner_normalized": "",
   "status_original": "Leutnerin zu Grübln",
@@ -1297,7 +1297,7 @@
   "review_status": "VERIFIED-2x",
   "uncertain_words": [],
   "reading_provenance": "2× VLM (pass1 surovo + pass2 verifikacija, val 51)",
-  "notes": ""
+  "notes": " | VAL 57 REVIZIJA hišne št.: 63 (val 57 midband '63' + bot-compact '6 loop, 3 two curves' + val 56 band_B) proti 66 (val 48/51 @667px) — Kurrent 3↔6; owner 'Brincz/Brinig Maria …' soglasen. Bot-compact je opombama no.7/no.8 pripisal 'B.P. 90. R.P. 37. 32.' skupaj — vrstni red opomb med vpisoma dvoumen; B.P. 90. ostaja pri no.7 (3 kampanje + midband)."
  },
  {
   "source": "SI AS 176/N/N83/s/PUA",
@@ -6364,6 +6364,303 @@
  {
   "source": "SI AS 176/N/N83/s/PUA",
   "document_id": "VAČ docid 41782",
+  "owner_normalized": "",
+  "status_normalized": "",
+  "residence_original": "",
+  "status_original": "",
+  "page": 26,
+  "entry_no": "51",
+  "section": "I, II, III, III/IV, IV",
+  "house_no": "27",
+  "owner_original": "Malleßthak [?] Han Bauw [?] Han Güßla [?]",
+  "parcels": [
+   {
+    "parcel_section": "I",
+    "parcel_number": "428"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "468"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "434"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "488"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "524"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "629"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "596"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "597"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "942"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "547"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "648"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "551"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "552"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "651"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "652"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "654"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "682"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "692"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "700"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "717"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "718"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1200"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1341"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1323"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1406"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1497"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1810"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1870"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1920"
+   },
+   {
+    "parcel_section": "III/IV",
+    "parcel_number": "998"
+   },
+   {
+    "parcel_section": "III/IV",
+    "parcel_number": "999"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2106"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2170"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2120"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2153"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2157"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2162"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2174"
+   },
+   {
+    "parcel_section": "IV",
+    "parcel_number": "2169"
+   }
+  ],
+  "annotation_original": "D. P. 40.",
+  "transcription_confidence": "medium",
+  "normalization_confidence": "",
+  "review_status": "REVIEW",
+  "uncertain_words": [
+   "Malleßthak[?]",
+   "Bauw[?]",
+   "Güßla[?]"
+  ],
+  "reading_provenance": "1× VLM PDF-native (val 57, PUA-p26-native.jpeg 1391×2145)",
+  "notes": "VAL 57 NOVI VPIS: p26 je v val48/51 veljala za TRUNCATED; PDF-native stran (1391×2145, val 56) pokaže VPOLNEM vpisa 51+52. h.27 = NOVA hišna št. v registru (prej brez vpisa). Branje 1× native — lastniško ime z več [?], parcele s srednjo zaupnostjo (avtor branja opozoril na gosto številčenje). Glej audit 69-val57 §5."
+ },
+ {
+  "source": "SI AS 176/N/N83/s/PUA",
+  "document_id": "VAČ docid 41782",
+  "owner_normalized": "",
+  "status_normalized": "",
+  "residence_original": "",
+  "status_original": "",
+  "page": 26,
+  "entry_no": "52",
+  "section": "I, II",
+  "house_no": "29",
+  "owner_original": "Milleg Hanu Bauw [?] Han Grübla [?]",
+  "parcels": [
+   {
+    "parcel_section": "I",
+    "parcel_number": "15"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "477"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "494"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "521"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "532"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "859"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "566"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "567"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "661"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "668"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "679"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "689"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "690"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "708"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "724"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "801"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1221"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1228"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1403"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1408"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1421"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1422"
+   }
+  ],
+  "annotation_original": "D. J. 24 34",
+  "transcription_confidence": "medium",
+  "normalization_confidence": "",
+  "review_status": "REVIEW",
+  "uncertain_words": [
+   "Milleg[?]",
+   "Hanu[?]",
+   "Bauw[?]",
+   "Grübla[?]"
+  ],
+  "reading_provenance": "1× VLM PDF-native (val 57, PUA-p26-native.jpeg 1391×2145)",
+  "notes": "VAL 57 NOVI VPIS: p26 PDF-native (glej no.51). h.29 — KOLLIZIJA: h.29 že nosi no.78 (Schimcz Maria Bäurin, p47) → bodisi so-posedž bodisi napačno branje št. (Kurrent 9↔0/2↔8 možnost); dokumentirano, ne rešeno. Branje 1× native."
+ },
+ {
+  "source": "SI AS 176/N/N83/s/PUA",
+  "document_id": "VAČ docid 41782",
   "page": 27,
   "entry_no": "51[?]",
   "section": "",
@@ -6380,7 +6677,7 @@
   "review_status": "REVIEW",
   "uncertain_words": [],
   "reading_provenance": "recovered stran p27-recovered (JFIF 1.01 re-render, 47./48. val) — 1× VLM branje (val 51)",
-  "notes": "številka 393/394 (recovered branje) očitno napačna; položaj nakazuje 51/52"
+  "notes": "številka 393/394 (recovered branje) očitno napačna; položaj nakazuje 51/52 | VAL 57: p26 native vsebuje VPISA 51 (h.27) + 52 (h.29) → aritmetična veriga zaprta: p27 verjetno 53/54, p28 55/56, p29 57/58, p30 59 ✓. Obstojni vpisni št. 51[?]/52[?] ostanejo kot prebrani, NE spremenjeni (prepoved ugibanja)."
  },
  {
   "source": "SI AS 176/N/N83/s/PUA",
@@ -6401,7 +6698,7 @@
   "review_status": "REVIEW",
   "uncertain_words": [],
   "reading_provenance": "recovered stran p27-recovered (JFIF 1.01 re-render, 47./48. val) — 1× VLM branje (val 51)",
-  "notes": ""
+  "notes": " | VAL 57: p26 native vsebuje VPISA 51 (h.27) + 52 (h.29) → aritmetična veriga zaprta: p27 verjetno 53/54, p28 55/56, p29 57/58, p30 59 ✓. Obstojni vpisni št. 51[?]/52[?] ostanejo kot prebrani, NE spremenjeni (prepoved ugibanja)."
  },
  {
   "source": "SI AS 176/N/N83/s/PUA",
@@ -11017,6 +11314,153 @@
  {
   "source": "SI AS 176/N/N83/s/PUA",
   "document_id": "VAČ docid 41782",
+  "owner_normalized": "",
+  "status_normalized": "",
+  "residence_original": "",
+  "status_original": "",
+  "page": 42,
+  "entry_no": "85",
+  "section": "I, II, III, V",
+  "house_no": "60",
+  "owner_original": "Schelko Georg Bauersleibgäbler [?]",
+  "parcels": [
+   {
+    "parcel_section": "I",
+    "parcel_number": "10"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "11"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "12"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "13"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "14"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "762"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "2014"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "872"
+   },
+   {
+    "parcel_section": "I",
+    "parcel_number": "573"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "794"
+   },
+   {
+    "parcel_section": "II",
+    "parcel_number": "1204"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1250"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1265"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1280"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1496"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1522"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1461"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1837"
+   },
+   {
+    "parcel_section": "III",
+    "parcel_number": "1839"
+   },
+   {
+    "parcel_section": "V",
+    "parcel_number": "2487"
+   },
+   {
+    "parcel_section": "V",
+    "parcel_number": "2489"
+   },
+   {
+    "parcel_section": "V",
+    "parcel_number": "2580"
+   },
+   {
+    "parcel_section": "V",
+    "parcel_number": "2581"
+   },
+   {
+    "parcel_section": "V",
+    "parcel_number": "2618"
+   },
+   {
+    "parcel_section": "V",
+    "parcel_number": "2856"
+   }
+  ],
+  "annotation_original": "B. T. 50, 51, 55.",
+  "transcription_confidence": "medium",
+  "normalization_confidence": "",
+  "review_status": "REVIEW",
+  "uncertain_words": [
+   "Bauersleibgäbler[?]"
+  ],
+  "reading_provenance": "1× VLM PDF-native (val 57, PUA-p42-native.jpeg 1400×2151)",
+  "notes": "VAL 57 NOVI VPIS: p42 veljala za TRUNCATED; PDF-native (1400×2151, val 56/57) pokaže vpisa 85+86. h.60 = tretji vpis na hiši 60 (poleg no.61 Penzig, no.81 Schimetz) — abecedni register dovoljuje so-posedž; dokumentirano. Opomba B.T. 50/51/55 (v branju znotraj parcelnega niza, ločeno kot anmerkung po vzoru no.80 B.T. 62). Branje 1× native."
+ },
+ {
+  "source": "SI AS 176/N/N83/s/PUA",
+  "document_id": "VAČ docid 41782",
+  "owner_normalized": "",
+  "status_normalized": "",
+  "residence_original": "",
+  "status_original": "",
+  "page": 42,
+  "entry_no": "86",
+  "section": "",
+  "house_no": "71",
+  "owner_original": "Stauger Matho Bauersleibgäbler [?]",
+  "parcels": [],
+  "annotation_original": "",
+  "transcription_confidence": "medium",
+  "normalization_confidence": "",
+  "review_status": "REVIEW",
+  "uncertain_words": [
+   "Bauersleibgäbler[?]"
+  ],
+  "reading_provenance": "1× VLM PDF-native (val 57, PUA-p42-native.jpeg 1400×2151)",
+  "notes": "VAL 57 NOVI VPIS: p42 PDF-native (glej no.85). h.71 = NOVA hišna št. (prej brez vpisa). PARCELNI SEZNAM MANJKA V SAMEM VIRU: dno p42 je odrezano tudi v PDF-native verziji (rez skena, ne samo predogleda) — p43 se začne z vpisom 87, nadaljevanje 86 NI v digitalizatu. NEGATIVNI REZULTAT audit 69-val57 §8."
+ },
+ {
+  "source": "SI AS 176/N/N83/s/PUA",
+  "document_id": "VAČ docid 41782",
   "page": 43,
   "entry_no": "87",
   "section": "",
@@ -12314,6 +12758,6 @@
    "d[?] Hutmayer[?]"
   ],
   "reading_provenance": "2× neodvisno VLM branje (pass1 + pass3 zoom, val 51) proti val 48",
-  "notes": "§4 REVIZIJA: val48 'F. Kirch' opuščeno — pass1 in pass3 (2× zoom, high) neodvisno berejeta 'Philipp De Giammo Zucchelli', parcela 2700; pass3: zaključna formula 'Ich Amtl[ich] am 10. Jänner 1825' + 3 podpisi (Mumppen[?], Hollmayr[?], 1 nečitljiv) — MESEC DATUMA ZDAJ PREBRAN: Jänner; degradirano iz VERIFIED (pass2 uncertain besede ali medium zaupanje) — kuratorska kontrola"
+  "notes": "§4 REVIZIJA: val48 'F. Kirch' opuščeno — pass1 in pass3 (2× zoom, high) neodvisno berejeta 'Philipp De Giammo Zucchelli', parcela 2700; pass3: zaključna formula 'Ich Amtl[ich] am 10. Jänner 1825' + 3 podpisi (Mumppen[?], Hollmayr[?], 1 nečitljiv) — MESEC DATUMA ZDAJ PREBRAN: Jänner; degradirano iz VERIFIED (pass2 uncertain besede ali medium zaupanje) — kuratorska kontrola | VAL 57: LETO RAZREŠENO = 1825 (3:1) — val 57 closing-zoom digit-by-digit: zadnja št. '5' ('sharp horizontal top stroke, open bowl; lacks the closed bottom loop of a 6') + val 51/56 '1825' proti val 48 '1826'. Podpisnikova branja: 'Mumppen' + 'v Hillmayer' (val 57) ≈ 'Mumppen[?], Hollmayr[?]' (val 51). Ime: val 57 letter-by-letter 'Philipp De Giannuto Zucchelli' vs val 51 2× 'De Giammo' → imenska oblika ostaja REVIEW (ni rešeno z ugibanjem; glej audit §10)."
  }
 ]
