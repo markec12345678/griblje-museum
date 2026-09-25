@@ -1,0 +1,77 @@
+{
+  "title": "PS N83 — ponovno branje vsotnih vrstic (Fürtrag veriga), 2 prehoda agenta @7x zoom",
+  "date": "2026-10",
+  "source": "SI AS 176/N/N83/s/PS — strani p05, p11, p12, p14, p16, p20, p24, p32, p35, p36, p42, p44, p54",
+  "image_basis": "raw-web-val56-2026-10/n083ps-pages/pNN.jpg (1266x1017 preview), izrezki 3x-7x LANCZOS (ps-n83/make-reread-crops.py)",
+  "readers": [
+    {"id": "vlm-v57", "desc": "VLM transkripcija val 57 (ps-vlm/pNNN.json, polna strani, brez zooma)", "passes": 1},
+    {"id": "agent-2026-10", "desc": "Glavni agent, direktno branje izrezkov (prehod 1: 3x pasovi; prehod 2: 7x števke)", "passes": 2}
+  ],
+  "format_decoded": {
+    "line": "N. Fürtrag. | [Joch] | [Quad. Klafter]",
+    "counter": "ročno zapisan tekoči števec pred tiskano oznako 'Fürtrag.' (v vpisu 'Übertrag' = prenos/šeštevanje); poimenovanje 'Fürtrag' je tiskana oznaka, ne 'Futterag/Flächen/Grundst./Stück' kot je bral VLM",
+    "value": "(Joch | Quad-Klafter) vsota TEKOČE strani (listni seštevek) — ni kumulativno (p11 2J798 < p5 6J1459); vsi QKl < 1600 IZVEN p12 '7986' (anomalija, glej notes)",
+    "red_second_line": "rdeče predelani/vstavljen seštevek pod glavno vrstico na 9/13 straneh; semantika TO-DECODE (popravljen seštevek brez prečrtanih vrstic ali prenos na naslednjo stran ali kontrolni zapis) — ne komentirati naprej"
+  },
+  "verified_chain": [
+    {"page": 5,  "counter": 2,  "value": "6|1459", "crossed": true,  "red_line": "3|906",
+     "vlm_v57": {"label": "2 Fürtrag", "value": "6 - 14357"},
+     "agent_notes": "števec 2 potrjen @7x (Kurrent 2 z ravnim dnom); vrednost 1459 (ne 14357 — VLM je staknil števke); rdeča 3|906"},
+    {"page": 11, "counter": 9,  "value": "2|798",  "crossed": true,  "red_line": "81",
+     "vlm_v57": {"label": "Summa", "value": "2 / 792"},
+     "agent_notes": "NOVA TOČKA — VLM števca sploh ni prebral ('Summa'); 9 potrjen @7x (rep pri 9); vrednost 798 (ne 792) @7x; rdeča '81' pod QKl stolpcem, nepopolna/pomen negotov"},
+    {"page": 12, "counter": 10, "value": "4|7986", "crossed": true,  "red_line": "2|1551",
+     "vlm_v57": {"label": "10. Fürtrag.", "value": "4 7986"},
+     "agent_notes": "števec 10 potrjen; vrednost 4|7986 dobesedno (ANOMALIJA: QKl 7986 > 1599 edina v verigi; zadnja štefka negotova, alt '4|798'); rdeča 2|1551"},
+    {"page": 14, "counter": 12, "value": "6|1088", "crossed": true,  "red_line": "6|77",
+     "vlm_v57": {"label": "Summa Jaethen", "value": "6 / 10808"},
+     "agent_notes": "števec 12 — VLM oznako '12. Fürtrag.' prebral kot 'Summa Jaethen'; vrednost 1088 (ne 10808); rdeča 6|77 — 'Summa Quadrat-Klafter 6/77' iz v58 je bila ta rdeča vrstica"},
+    {"page": 16, "counter": 14, "value": "5|811",  "crossed": false, "red_line": null,
+     "vlm_v57": {"label": "14 Färberg.", "value": "5 811"},
+     "agent_notes": "potrjeno obojestransko; VLM oznaka 'Färberg' = napačna (je 'Fürtrag')"},
+    {"page": 20, "counter": 18, "value": "6|1183", "crossed": false, "red_line": null,
+     "vlm_v57": {"label": "19 Futterg.", "value": "6 + 1188"},
+     "agent_notes": "števec 18 (ne 19) — @7x dvojna zanka 8 brez repa; vrednost 1183 (ne 1188) — zadnja štefka 3 (dvojna skleda)"},
+    {"page": 24, "counter": 22, "value": "8|1310", "crossed": true,  "red_line": "1|919",
+     "vlm_v57": {"label": "22 Fürtrg.", "value": "8 / 1240"},
+     "agent_notes": "števec 22 ✓; vrednost 1310 (ne 1240) @7x; rdeča 1|919 (VLM '/ 1919' — vodilna 1 je bila v stolpcu Joch)"},
+    {"page": 32, "counter": 30, "value": "6|1244", "crossed": true,  "red_line": "3|265",
+     "vlm_v57": {"label": "26 Firstag:", "value": "6 - 1944"},
+     "agent_notes": "števec 30 (ne 26!) — @7x jasno 3+0; vrednost 1244 (ne 1944); rdeča 3|265 ✓ se ujema z VLM drugo vrednostjo"},
+    {"page": 35, "counter": 33, "value": "2|798",  "crossed": false, "red_line": null,
+     "vlm_v57": {"label": "39 Fürstog", "value": "2. 768"},
+     "agent_notes": "števec 33 (ne 39!) — @7x dve identični trojki; VLM je 39 vzel od p42; vrednost 2|798 @7x (ne 768); brez rdeče"},
+    {"page": 36, "counter": 38, "value": "2|1578", "crossed": true,  "red_line": "3|349",
+     "vlm_v57": {"label": "36 Grundst.", "value": "2 / 8790"},
+     "agent_notes": "števec 38 (ne 36!) — med 3 in 8 je tuj potez ('3/8'); VLM oznaka 'Grundst.' napačna; vrednost 2|1578 (druga štefka 5/6 negotova; VLM 8790 popolnoma napačno); rdeča 3|349"},
+    {"page": 42, "counter": 39, "value": "7|365",  "crossed": true,  "red_line": "1|815",
+     "vlm_v57": {"label": "20 Stück", "value": "7 362"},
+     "agent_notes": "števec 39 (ne 20!) — @7x jasno 3+9; VLM oznaka 'Stück' napačna; vrednost 7|365 (ne 362); rdeča 1|815 (ne 1876)"},
+    {"page": 44, "counter": 42, "value": "6|255",  "crossed": true,  "red_line": "4|1030",
+     "vlm_v57": {"label": "42 Fütterag", "value": "6 + 4 1030"},
+     "agent_notes": "števec 42 ✓; glavna vrednost 6|255 prečrtana (VLM je izpustil 255), rdeča 4|1030 ✓"},
+    {"page": 54, "counter": 52, "value": "8|1165", "crossed": true,  "red_line": "7|943",
+     "vlm_v57": {"label": "52 Flächen", "value": "8 1165"},
+     "agent_notes": "števec 52 ✓; vrednost 8|1165 ✓; rdeča 7|943 (VLM '7 9948' — staknjeno)"}
+  ],
+  "chain_summary": {
+    "counters": [2, 9, 10, 12, 14, 18, 22, 30, 33, 38, 39, 42, 52],
+    "strictly_monotone": true,
+    "violations": 0,
+    "v58_chain": [2, 10, 14, 19, 22, 26, 39, 42, 52],
+    "v58_violations_resolved": [
+      "p36 '36 Grundst.' -> dejansko 38. Fürtrag (misread števca + oznake)",
+      "p42 '20 Stück' -> dejansko 39. Fürtrag (misread števca + oznake)"
+    ],
+    "new_points": [11, 14, 35],
+    "increment_pattern": "večina korakov +1/stran (p12->p14->p16 +2/2, p16->p20 +4/4, p20->p24 +4/4, p24->p32 +8/8, p44->p54 +10/10) = skladenj z interpretacijo 'števec = tekoči indeks Jaethe (holdingov)'; izjemi: p35->p36 +5 (zaključek malega dedicinskih holdingov), p36->p42 +1/6 strani (sekcija ne-lokalnih lastnikov z velikimi sestavljenimi holdingi — skladno s F12)",
+    "interpretation": "F11 nadgrajeno: 13 točk, strogo monotono, 0 kršitev; VLM oznake (Färberg/Futterg/Firstag/Grundst./Stück/Flächen/Summa) = vse napačne, tiskana oznaka je VEDNO 'Fürtrag.'"
+  },
+  "value_semantics_status": {
+    "confirmed": "(J|QKl) = vsota TEKOČE strani, ne kumulativa (p11 2J798 < p5 6J1459 izključi kumulacijo)",
+    "anomaly": "p12 4|7986 — edina vrednost QKl > 1599; zadnja štefka negotova (alt 4|798); aritmetična kontrola proti vsotam vrstic sešteka šele pri 143/143",
+    "red_line_semantics": "TO-DECODE (hipoteze: popravljen seštevek brez prečrtanih / prenos / kontrola) — branje sešteka vrstic čaka PS p56-143",
+    "v58_question_F11_metrics": "delno razrešeno: 'Summa Jaethen 6/10808' in 'Summa Quadrat-Klafter 6/77' iz v58 sta NEOBSTOJECI entiteti — to sta bila misreada vrstice '12. Fürtrag 6|1088' + rdeče '6|77' na p14"
+  },
+  "provenance": "izrezki regenerabilni: python3 research-griblje/ps-n83/make-reread-crops.py; branje 2 prehoda glavnega agenta (direktni vid, brez VLM); vsi VLM prioriteti ohranjeni v vlm_v57"
+}

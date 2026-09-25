@@ -4,6 +4,9 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **114. sklop — PS N83 re-read: verifikirana Fürtrag veriga + imenske variante + no_blatt semantika (61. val, 2026-09-25)**
+> **Nov instrument ob 26+ urah VLM 429: agent bere izrezke strani direktno** (2 neodvisna prehoda, 3×–7× LANCZOS, regenerabilni crops) · **F11 NADGRADJENO: veriga 13 točk (2,9,10,12,14,18,22,30,33,38,39,42,52) strogo monotona, 0 kršitev** — v1 »kršitvi« p36=36/p42=20 = VLM napaki (v resnici 38./39. Fürtrag); nove točke p11=9, p14=12, p35=33; **format dekodiran: »N. Fürtrag. | Joch | Quad-Klafter« = vsota tekoče strani** (ne kumulativa); »Summa Jaethen 6/10808« = neobstoječi entiteti · **F10b: 3 visoko-zanesljive korekcije p12** (h45 → Strauß Georg, h38/h39 → Schimerz[?]; PT vzporednica + 2 prehoda; originali ohranjeni) → PS↔PT močna soglasja 3→4; **družinski sklad h.36-50 DOWNGRADED: priimek NAME_UNCERTAIN** (Muster/Mutza/Mache/Murško — trije bralci, trije preberi) · **F15: »Nro. des Blattes« = raven lista z ditto znaki, ne vrstice** (no_blatt v registru semantično nezanesljiv; 821–840 = Uebersetzung čistopis sklici v dveh kopijah) · **F16: p11 struktura vrstic divergira** (23 vs ~22; h=1 vrstica brez identifikacije) · +0 virov/+0 trditev/+0 UI · 209/209 testov
+>
 > **113. sklop — ATLAS 1825 PASS 3 v1: parcelni + negative-result register (60. val, 2026-09-25)**
 > **§4**: PUA 2.035 parcelnih referenc (417 so-referenciranih z >1 hišo = so-vlasništvo katastra, ne konflikt) + PS 432 kandidatov (ločena prostora, F14); raba samo EXACT leksikalno (njiva 230/travnik 60/…/UNKNOWN 106 z originalom) · **§13: 11 negativnih rezultatov** z naslednjim virom vsak · +0 virov/+0 trditev/+0 UI
 >
