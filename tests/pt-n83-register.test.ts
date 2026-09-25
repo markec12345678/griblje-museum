@@ -125,3 +125,45 @@ describe("PT N83 register (val 53)", () => {
     expect(cats.join(" ")).toContain("Nebengebäude");
   });
 });
+
+describe("val 54 usklajevanje (PUA↔PT↔zemljevid A01)", () => {
+  const recPath = join(HERE, "research-griblje", "pt-n83", "reconciliation.json");
+  const rec = JSON.parse(readFileSync(recPath, "utf-8")) as {
+    headline_findings: string[];
+    map_links_audit: { bp: string; verdict: string }[];
+  };
+  const cadPath = join(HERE, "src", "data", "cadastre-a01.json");
+  const cad = JSON.parse(readFileSync(cadPath, "utf-8")) as {
+    buildings: { bp: string; owner?: string; owner_status?: string }[];
+  };
+
+  test("reconciliation ima 8 glavnih najdb in revizijo 11 vezav", () => {
+    expect(rec.headline_findings.length).toBe(8);
+    expect(rec.map_links_audit.length).toBe(11);
+  });
+
+  test("bp 98 (Zollamt) NI VEČ VERIFIED-2x — regresijsko varstvo popravka", () => {
+    const b98 = cad.buildings.find((b) => b.bp === "98")!;
+    expect(b98.owner).toContain("Zollamt");
+    expect(b98.owner_status).not.toBe("VERIFIED-2x");
+    expect(b98.owner_status).toBe("REVIEW-CONFLICT");
+  });
+
+  test("bp 86 NI VEČ VERIFIED-2x (opomba 'b. P. 56. 38.' ne vsebuje 86)", () => {
+    const b86 = cad.buildings.find((b) => b.bp === "86")!;
+    expect(b86.owner_status).toBe("REVIEW-CONFLICT");
+  });
+
+  test("bp 94 je nadgrajen na VERIFIED-2x (3 neodvisni viri)", () => {
+    const b94 = cad.buildings.find((b) => b.bp === "94")!;
+    expect(b94.owner_status).toBe("VERIFIED-2x");
+  });
+
+  test("vsaka vezana stavba ima link_source (provenanca vezave)", () => {
+    for (const b of cad.buildings) {
+      if (b.owner) {
+        expect((b as { link_source?: string }).link_source?.length ?? 0).toBeGreaterThan(0);
+      }
+    }
+  });
+});

@@ -4,6 +4,9 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **108. sklop — faza 2 usklajevanja: PUA ↔ PT ↔ zemljevid A01 (54. val, 2026-09-25)**
+> **Sistemski dokaz**: PT lastniška imena nezanesljiva (0/39 imenskih soglasij; isti bp med prehodi dobi 3–4 različna imena) → **PUA = edina lastniška avtoriteta**, PT uporaben le strukturno · **popravek zemljevida**: vezava bp 98 »k.k. Zollamt« NEPODPRTA (opomba h.70 = »B.P. **90.**«, Zollamt brez opombe — verjetna zmeda 90↔98) → 5 statusov vezav popravljeno (98/86/76 → REVIEW-CONFLICT, 92 → REVIEW, **94 nadgrajen na VERIFIED-2x = 3 viri**) + pageRef 49 popravljen · Kurrent 3↔5 in 2↔3 vzorci dokumentirani · nič rešeno z ugibanjem — 6 točk za polno ločljivost (novo **P2-E15**, vrsta **138**) · QA 15/15 ·
+
 > **107. sklop — PT N083 popoln prepis: Protocoll der Bau Parcellen (53. val, 2026-09-24)**
 > **Faza POBRANJA** (naročilo »najprej vse poberi, potem usklajujemo«): zadnji večji lokalno-pobran vir — protokol stavbnih parcel 1825 (docid 41781, 8 strani) — prebran v celoti · **prvo branje p3** (JPEG okrnjen, PIL delno dekodiranje) · 3 viri branj (val 41/52 prior + val 53 passA 7× + passB 6× 2× zoom) → **konsenzni register `pt-n83/register.json`: 100 vrstic / 97 BP, 40 STABLE, 51 REVIEW-CONFLICT, 9 REVIEW** · vrzel BP 15–20 dokumentirana (ni ugibanja) · bp 1–2 = St. Veith (korooboracija PUA no. 44) · p8 = **Musterstellung der Gebäude** (povzetek 4+4 objektov; ni dokaz odsotnosti gostilne) · PUA navzkrižna kontrola = vstopna točka za fazo 2 usklajevanja · **+0 vsebin, +1 kuratorska vrsta P3-E14 (137)** · QA tests/pt-n83-register.test.ts (10; skupaj **151/151**) · stanje zbirke 113/589/469 nespremenjeno ·
 
