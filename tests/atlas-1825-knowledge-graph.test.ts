@@ -10,25 +10,25 @@ import { resolve } from "node:path";
 const BASE = resolve(import.meta.dir, "..", "research-griblje", "atlas-1825");
 const kg = JSON.parse(readFileSync(resolve(BASE, "knowledge-graph-1825.json"), "utf8"));
 
-describe("knowledge-graph-1825 v1 [val 63]", () => {
+describe("knowledge-graph-1825 v1.2 [val 65]", () => {
   test("struktura + velikosti (varovalke)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v1.1");
-    expect(kg.findings.map((f: { finding_id: string }) => f.finding_id)).toEqual(["KG-F01", "KG-F02"]);
+    expect(kg.title).toBe("knowledge-graph-1825 v1.2");
+    expect(kg.findings.map((f: { finding_id: string }) => f.finding_id)).toEqual(["KG-F01", "KG-F02", "KG-F03", "KG-F04"]);
     // KG-F02: popravljen SRC katalog — PT = uodid 373416 (ne 227668 = A02)
     const pt = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PT");
     expect(pt.uodid).toBe(373416);
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3275);
-    expect(kg.edges.length).toBe(3514);
-    expect(kg.claims.length).toBe(600);
+    expect(kg.nodes.length).toBe(3299);
+    expect(kg.edges.length).toBe(3556);
+    expect(kg.claims.length).toBe(618);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.length).toBe(4);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2467 / BP 100 / TOPONYM 37 / EVENT 3", () => {
+  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2467 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 24 (val 65)", () => {
     expect(kg.node_stats).toEqual({
       SOURCE: 13,
       HOUSE: 167,
@@ -37,6 +37,7 @@ describe("knowledge-graph-1825 v1 [val 63]", () => {
       BP: 100,
       TOPONYM: 37,
       EVENT: 3,
+      MAP_OBJECT: 24,
     });
   });
 
@@ -185,10 +186,16 @@ describe("knowledge-graph-1825 v1 [val 63]", () => {
     expect(targets.has("TP-029")).toBe(true); // Zagorje
   });
 
-  test("MAP_OBJECT = 0 instanc + research gap RG-001 (§7 pending)", () => {
-    expect(kg.nodes.filter((n) => n.node_type === "MAP_OBJECT").length).toBe(0);
+  test("MAP_OBJECT v1 (val 65 PASS 4): 24 instanc + RG-001 PARTIAL (A02–A05 še pending)", () => {
+    const mo = kg.nodes.filter((n) => n.node_type === "MAP_OBJECT");
+    expect(mo.length).toBe(24);
+    for (const n of mo) {
+      expect(n.node_id.startsWith("MO:MO-A01-")).toBe(true);
+      expect(Array.isArray(n.px)).toBe(true);
+    }
     const rg1 = kg.research_gaps.find((g) => g.gap_id === "RG-001")!;
     expect(rg1.missing_relation).toContain("MAP_OBJECT");
+    expect(rg1.status).toBe("PARTIAL");
     expect(rg1.tied_to).toBe("issue #42 §7");
   });
 
