@@ -1,0 +1,637 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Val 63 — ISSUE #43 §1/§3/§8/§9: KNOWLEDGE GRAPH v1 (knowledge-graph-1825.json)
+
+Evidence-first graf: PERSON ↔ HOUSE ↔ PARCEL ↔ BP ↔ TOPONYM ↔ EVENT ↔ SOURCE.
+ claim-first (§3): interpretativne povezave so CLAIM-i s source + status.
+ Vsi nodes/edges/claims so deterministično rekonstruirani iz registrov:
+   atlas-1825/{house-register, person-owner-register, bp-house-reconciliation,
+               conflict-register, parcel-register, toponym-register}.json
+   (+ pua-n83/register.json za (page,entry_no)→house indeks)
+
+Pravila (issue #43 §5, §11, §12):
+  - claim brez source = napaka (assert v build + testi)
+  - edge brez evidence_status ali source = napaka
+  - osebe NIKOLI ne mergeane (possible_duplicate ohranja merge_decision NOT_MERGED)
+  - UNKNOWN/NOT FOUND/CONFLICT ostanejo ločeni; NOT_FOUND → research gap, ne "absent"
+  - nič zgodovinskih podatkov ni spremenjeno (infra sloj)
+"""
+
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+RG = os.path.dirname(BASE)
+
+SRC_DOCS = [
+    {"source_id": "SRC-PUA", "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer", "archive": "SI AS 176 [227670]", "docid": 41782, "pages": 49},
+    {"source_id": "SRC-PS", "label": "PS N83 — Protocol der Grund-Parcellen", "archive": "SI AS 176 [227671]", "docid": 41780, "pages": 143, "coverage": "PARTIAL 55/143 (val 57/61)"},
+    {"source_id": "SRC-PT", "label": "PT N083 — Protocoll der Bau Parcellen", "archive": "SI AS 176 [227668]", "docid": 41781, "pages": 8},
+    {"source_id": "SRC-PR", "label": "PR — Grenz-Beschreibung der Gemeinde GRÜBLE", "archive": "SI AS 176", "docid": 41779, "pages": 4},
+    {"source_id": "SRC-PG", "label": "PG — Übersichtsskizze k.o. N83", "archive": "SI AS 176", "docid": 41778, "pages": 1},
+    {"source_id": "SRC-PV", "label": "PV — Ausweis über die Benützungsart des Bodens", "archive": "SI AS 176", "docid": 41783, "pages": 1},
+    {"source_id": "SRC-PZ", "label": "PZ — Konskripcija 1830", "archive": "SI AS 176", "docid": 41784, "pages": 71},
+    {"source_id": "SRC-A01", "label": "A01 — katastrski list (vas)", "archive": "SI AS 176 [227663]", "docid": 10},
+    {"source_id": "SRC-A02", "label": "A02 — katastrski list", "archive": "SI AS 176", "docid": 10},
+    {"source_id": "SRC-A03", "label": "A03 — katastrski list", "archive": "SI AS 176", "docid": 10},
+    {"source_id": "SRC-A04", "label": "A04 — katastrski list", "archive": "SI AS 176", "docid": 10},
+    {"source_id": "SRC-A05", "label": "A05 — katastrski list", "archive": "SI AS 176", "docid": 10},
+    {"source_id": "SRC-SIAS176", "label": "SI AS 176 — fond Novomeška kresija (k.o. N83 [227663], 12 enot)", "archive": "SI AS 176", "docid": None},
+]
+
+
+def load(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+class Graph:
+    def __init__(self):
+        self.nodes = []
+        self.edges = []
+        self.claims = []
+        self.research_gaps = []
+        self.story_atoms = []
+        self.gap_seq = 0
+        self.invariant_violations = []
+
+    def node(self, node_id, node_type, props, source_ids=None, evidence_status=None, notes=None):
+        n = {"node_id": node_id, "node_type": node_type}
+        n.update(props)
+        if source_ids:
+            n["source_ids"] = source_ids
+        if evidence_status:
+            n["evidence_status"] = evidence_status
+        if notes:
+            n["notes"] = notes
+        self.nodes.append(n)
+        return node_id
+
+    def edge(self, from_id, rel, to_id, period, source_ids, evidence_status,
+             confidence="medium", notes=None, conflict_refs=None, claim_ids=None):
+        rid = f"R-{len(self.edges)+1:05d}"
+        e = {
+            "relation_id": rid,
+            "from_entity": from_id,
+            "relation_type": rel,
+            "to_entity": to_id,
+            "date_period": period,
+            "source_ids": source_ids,
+            "evidence_status": evidence_status,
+            "confidence": confidence,
+        }
+        if notes:
+            e["notes"] = notes
+        if conflict_refs:
+            e["conflict_refs"] = conflict_refs
+        if claim_ids:
+            e["claim_ids"] = claim_ids
+        self.edges.append(e)
+        return rid
+
+    def claim(self, subject, predicate, obj, source_ref, status, period=None, confidence=None, notes=None):
+        cid = f"C-{len(self.claims)+1:05d}"
+        if not source_ref:
+            self.invariant_violations.append(f"claim {cid} without source")
+        c = {
+            "claim_id": cid,
+            "subject": subject,
+            "predicate": predicate,
+            "object": obj,
+            "source_ref": source_ref,
+            "status": status,
+        }
+        if period:
+            c["period"] = period
+        if confidence:
+            c["confidence"] = confidence
+        if notes:
+            c["notes"] = notes
+        self.claims.append(c)
+        return cid
+
+    def gap(self, missing_relation, searched, result, next_source, status="OPEN", tied_to=None):
+        self.gap_seq += 1
+        g = {
+            "gap_id": f"RG-{self.gap_seq:03d}",
+            "missing_relation": missing_relation,
+            "searched_sources": searched,
+            "current_result": result,
+            "next_source": next_source,
+            "status": status,
+        }
+        if tied_to:
+            g["tied_to"] = tied_to
+        self.research_gaps.append(g)
+        return g
+
+
+def main():
+    houses_reg = load(os.path.join(BASE, "house-register-1825.json"))["houses"]
+    persons_reg = load(os.path.join(BASE, "person-owner-register-1825.json"))["persons"]
+    bp_reg = load(os.path.join(BASE, "bp-house-reconciliation-1825.json"))["bp_rows"]
+    conflicts = load(os.path.join(BASE, "conflict-register-1825.json"))["conflicts"]
+    parcels = load(os.path.join(BASE, "parcel-register-1825.json"))
+    topos = load(os.path.join(BASE, "toponym-register-1825.json"))["toponyms"]
+    pua_reg = load(os.path.join(RG, "pua-n83", "register.json"))
+
+    G = Graph()
+
+    # ---------- SOURCES ----------
+    for s in SRC_DOCS:
+        G.node(s["source_id"], "SOURCE", {k: v for k, v in s.items() if k != "source_id"})
+    src_ids = {s["source_id"] for s in SRC_DOCS}
+
+    # ---------- HOUSES ----------
+    house_ids = set()
+    house_by_no = {}
+    for h in houses_reg:
+        hid = f"HOUSE:{h['house_id']}"
+        house_ids.add(hid)
+        house_by_no[str(h["house_no_1825"])] = hid
+        G.node(
+            hid, "HOUSE",
+            {
+                "house_no_1825": h["house_no_1825"],
+                "house_no_type": h["house_no_type"],
+                "pua_ps_name_sim": h.get("pua_ps_name_sim"),
+                "bp_refs": h.get("bp_refs") or [],
+            },
+            evidence_status=h["evidence_status"],
+            notes=h.get("notes"),
+        )
+
+    # ---------- PERSONS (0 mergeov — possible_duplicate ohranja NOT_MERGED) ----------
+    per_by_key = {}
+    for i, p in enumerate(persons_reg):
+        pid = f"PER-{i+1:04d}"
+        G.node(
+            pid, "PERSON",
+            {
+                "name_original": p["name_original"],
+                "person_type": p["person_type"],
+                "possible_duplicate": p.get("possible_duplicate", False),
+                "merge_decision": p.get("merge_decision"),
+                "reason": p.get("reason"),
+            },
+            source_ids=[p["source"].split(" p")[0].replace("PUA N83", "SRC-PUA").replace("PS N83 (PARTIAL)", "SRC-PS").replace("PS N83", "SRC-PS").replace("PT N083", "SRC-PT")],
+            evidence_status=p["evidence_status"],
+            notes=p.get("note"),
+        )
+        key = (p["person_type"], str(p.get("page")), str(p.get("house_no")), p["name_original"])
+        per_by_key.setdefault(key, []).append(pid)
+        # page is a list for PS owners
+        if isinstance(p.get("page"), list):
+            for pg in p["page"]:
+                per_by_key.setdefault((p["person_type"], str(pg), str(p.get("house_no")), p["name_original"]), []).append(pid)
+
+    # ---------- PARCELS ----------
+    for p in parcels["pua_parcels"]:
+        G.node(
+            f"PARCEL:{p['parcel_id']}", "PARCEL",
+            {
+                "section_original": p["section_original"],
+                "parcel_number": p["parcel_number"],
+                "co_referenced": p.get("co_referenced", False),
+                "land_use_category": p.get("land_use_category"),
+                "cross_ref_to_pua": None,
+                "origin": "PUA",
+            },
+            source_ids=["SRC-PUA"],
+            evidence_status="TRANSCRIBED",
+            notes=("parcel_number_is_bp_annotation" if p.get("parcel_number_is_bp_annotation") else None),
+        )
+    for p in parcels["ps_parcels"]:
+        G.node(
+            f"PARCEL:{p['parcel_id']}", "PARCEL",
+            {
+                "section_original": None,
+                "parcel_number": p["parcel_number"],
+                "co_referenced": False,
+                "land_use_category": p.get("land_use_category"),
+                "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
+                "origin": "PS",
+            },
+            source_ids=["SRC-PS"],
+            evidence_status="TRANSCRIBED_PARTIAL",
+            notes=None,
+        )
+
+    # ---------- BP ----------
+    for r in bp_reg:
+        G.node(
+            f"BP:{int(r['bp']):03d}", "BP",
+            {"bp": int(r["bp"]), "val57_status": r.get("val57_status")},
+            source_ids=["SRC-PT", "SRC-PUA"],
+            evidence_status=r["atlas_status"],
+            notes=r.get("note"),
+        )
+
+    # ---------- TOPONYMS ----------
+    for t in topos:
+        G.node(
+            t["toponym_id"], "TOPONYM",
+            {
+                "type": t["type"],
+                "relation_to_griblje": t["relation_to_griblje"],
+                "provenance_level": t["provenance_level"],
+                "modern_mapping": t["modern_mapping"],
+                "historical_only": t["historical_only"],
+            },
+            evidence_status=t["review_status"],
+            notes=t.get("merge_decision"),
+        )
+
+    # ---------- EVENTS ----------
+    G.node("EVT-001", "EVENT", {
+        "label": "Pfandverschreibung (zastava) 1801",
+        "statement": "PS p12 rdeča opomba 'Auf pfandbeyern 1801' na hišah 43/45/46 — dokumentiran pfand dogodek pred finalnim protokolom",
+    }, source_ids=["SRC-PS"], evidence_status="VERIFIED_FORM", notes="[rot] označba v viru")
+    G.node("EVT-002", "EVENT", {
+        "label": "Definitivna določitev meje Gemeinde Grüble",
+        "statement": "PR: Grenzversteher sosednjih občin, mejne točke No.1–21, leti 1825/1826",
+    }, source_ids=["SRC-PR"], evidence_status="PROVISIONAL", notes="single VLM pass (val 42)")
+    G.node("EVT-003", "EVENT", {
+        "label": "Zaključek PUA N83",
+        "statement": "PUA p49 zaključni zapis 10. Jänner 1825",
+    }, source_ids=["SRC-PUA"], evidence_status="VERIFIED-2x", notes="3:1 branja val 57")
+
+    # ---------- MAP_OBJECT: tip definiran, 0 instanc (§7 pending) ----------
+    G.gap("MAP_OBJECT inventory (A01–A05 objekti)", ["A01–A05 rastri (val 42)"],
+          "§7 A01 building coverage register še ni zgrajen; node tip obstaja, instanc 0",
+          "PASS 4 (issue #42 §7): A01 inventory iz obstoječih rasterjev + PT gattung", tied_to="issue #42 §7")
+
+    # ================= EDGES + CLAIMS =================
+
+    # ---- OWNER_OF (PUA: pripravljalno stanje) ----
+    pua_idx = {(e["page"], str(e["entry_no"])): e.get("house_no") for e in pua_reg}
+    owner_gap_hits = []
+    for h in houses_reg:
+        hid = house_by_no.get(str(h["house_no_1825"]))
+        if not hid:
+            continue
+        for o in (h["owners"].get("pua") or []):
+            hn = pua_idx.get((o["page"], str(o["entry_no"])))
+            persons_hit = per_by_key.get(("owner(pua)", str(o["page"]), str(hn), o["owner_original"]))
+            if hn is None or persons_hit is None:
+                owner_gap_hits.append({"house": h["house_no_1825"], "page": o["page"], "entry_no": o["entry_no"]})
+                continue
+            for pid in persons_hit:
+                cid = G.claim(
+                    hid, "OWNER_DOCUMENTED", pid,
+                    {"source": "SRC-PUA", "page": o["page"]},
+                    "REVIEW" if o.get("review_status") == "REVIEW" else "VERIFIED",
+                    period="pripravljalno stanje (pre-1825, F9)",
+                    confidence="medium",
+                    notes=f"owner_original: {o['owner_original']}",
+                )
+                G.edge(pid, "OWNER_OF", hid, "pripravljalno stanje (PUA)", ["SRC-PUA"],
+                       o.get("review_status") or "REVIEW", "medium",
+                       notes=f"entry_no {o['entry_no']}", conflict_refs=h.get("conflict_ids"), claim_ids=[cid])
+
+    # ---- OWNER_OF (PS: končno stanje 1825) ----
+    for h in houses_reg:
+        hid = house_by_no.get(str(h["house_no_1825"]))
+        ps = h["owners"].get("ps")
+        if not hid or not ps:
+            continue
+        persons_hit = per_by_key.get(("owner(ps)", str(h["house_no_1825"]), ps["owner_original"])) or \
+                      per_by_key.get(("owner(ps)", str(ps.get("pages", ["?"])[0]), str(h["house_no_1825"]), ps["owner_original"]))
+        # robust: match by (house_no, name) across page keys
+        if not persons_hit:
+            persons_hit = [pid for (t, pg, hn, nm), ids in per_by_key.items()
+                           if t == "owner(ps)" and hn == str(h["house_no_1825"]) and nm == ps["owner_original"] for pid in ids]
+        if not persons_hit:
+            owner_gap_hits.append({"house": h["house_no_1825"], "source": "PS", "name": ps["owner_original"]})
+            continue
+        status = "CONFLICT" if any(c.startswith("CH-") for c in (h.get("conflict_ids") or [])) else "SINGLE_SOURCE"
+        for pid in set(persons_hit):
+            cid = G.claim(
+                hid, "OWNER_DOCUMENTED", pid,
+                {"source": "SRC-PS", "pages": ps.get("pages", [])},
+                status,
+                period="1825 (končni protokol, F9)",
+                confidence="medium",
+                notes=f"owner_original: {ps['owner_original']}; stand: {ps.get('stand')}; rows: {ps.get('rows')}",
+            )
+            G.edge(pid, "OWNER_OF", hid, "1825 (PS končni)", ["SRC-PS"], status, "medium",
+                   notes=f"coverage {ps.get('coverage')}", conflict_refs=h.get("conflict_ids"), claim_ids=[cid])
+
+    # ---- OWNER_OF (PT: lastniške variante — nestabilna imena, F1/F10) ----
+    for (ptype, pg, hn, nm), ids in list(per_by_key.items()):
+        if ptype != "owner_variant(pt)":
+            continue
+        hid = house_by_no.get(hn)
+        if not hid:
+            continue
+        for pid in ids:
+            node = next(n for n in G.nodes if n["node_id"] == pid)
+            cid = G.claim(
+                hid, "OWNER_VARIANT_DOCUMENTED", pid,
+                {"source": "SRC-PT", "page": int(pg) if str(pg).isdigit() else None},
+                "REVIEW",
+                period="1825 (PT, imena nestabilna — F1/F10)",
+                confidence="low",
+                notes=f"variant: {nm}; uporabna le s PS korooboracijo (val 58 F10)",
+            )
+            G.edge(pid, "OWNER_VARIANT_OF", hid, "1825 (PT, nestabilna imena)", ["SRC-PT"], "REVIEW", "low",
+                   notes=f"variant: {nm}", conflict_refs=hid_conflicts(houses_reg, hn), claim_ids=[cid])
+
+    # ---- BP_BOUND_TO_HOUSE ----
+    # NOTE (KG-F01, §12 finding): bp 90 ima register-internal napetost — pt_houses ["44"]
+    # (starejša PT register plast, val 41–53) vs note + PUA ref h.43 (val 57 digit-by-digit,
+    # CONFIRMED-2x). Ne rešujemo tiho: PT edge dobi REVIEW + research gap, PUA edge ostaja FOUND.
+    bp90_flagged = False
+    for r in bp_reg:
+        bpid = f"BP:{int(r['bp']):03d}"
+        cands = r.get("house_candidates") or {}
+        refs = []
+        for hh in (cands.get("pt_houses") or []):
+            refs.append(("pt", hh))
+        for pr in (cands.get("pua_refs") or []):
+            refs.append(("pua", str(pr.get("house_no")), pr))
+        flat = []
+        for x in refs:
+            if x[0] == "pua":
+                flat.append(("pua", x[1], x[2]))
+            else:
+                flat.append(("pt", x[1], None))
+        if not flat:
+            if r["atlas_status"] == "NOT_FOUND":
+                G.gap(f"BP {r['bp']} → HOUSE ?", ["PT N083", "PUA N83", "A01"],
+                      "NOT_FOUND (val 57/59 sodba ohranjena)",
+                      "PS p56–p143 + PUA/PT re-readi @300dpi")
+            continue
+        for origin, hh, pr in flat:
+            hid = house_by_no.get(str(hh))
+            if not hid:
+                continue
+            src = "SRC-PT" if origin == "pt" else "SRC-PUA"
+            status = r["atlas_status"]
+            note = f"candidate origin: {origin}" + (f"; pua_ref: {pr.get('pua_entry')} owner {pr.get('owner')}" if pr else "")
+            if r["bp"] == 90 and origin == "pt":
+                status = "REVIEW"
+                note += "; KG-F01: pt_houses 44 (starejša plast val 41–53) vs val 57 digit-by-digit h.43 — napetost dokumentirana, re-read PT p7 @300dpi"
+                bp90_flagged = True
+            cid = G.claim(
+                bpid, "BP_BOUND_TO_HOUSE", hid,
+                {"source": src},
+                "VERIFIED" if status == "FOUND" else status,
+                period="1825",
+                confidence="high" if status == "FOUND" else "low",
+                notes=note,
+            )
+            G.edge(bpid, "BP_BOUND_TO_HOUSE", hid, "1825", [src],
+                   status, "high" if status == "FOUND" else "low",
+                   notes=note, conflict_refs=r.get("conflict_ids"), claim_ids=[cid])
+    if bp90_flagged:
+        G.gap("BP 90 → HOUSE: 43 ali 44? (KG-F01)",
+              ["PT N083 p7 (val 41/52/53 register = 44; val 57 digit-by-digit = 43)", "PUA no.7 p6 (h.43 + opomba B.P.90.)"],
+              "register-internal napetost: pt_houses [44] vs CONFIRMED-2x h.43 — obe povezavi ohranjeni (PT edge REVIEW)",
+              "PT p7 re-read @300dpi 2-prehodno (instrument val 61)")
+
+    # ---- HAS_PARCEL (HOUSE → PARCEL) ----
+    for p in parcels["pua_parcels"]:
+        for hn in (p.get("house_refs") or []):
+            hid = house_by_no.get(str(hn))
+            if not hid:
+                continue
+            G.edge(hid, "HAS_PARCEL", f"PARCEL:{p['parcel_id']}", "1825 (PUA)", ["SRC-PUA"],
+                   "TRANSCRIBED", "high",
+                   notes=("so-referenced: parcela v več hišah (značilnost katastra, NE konflikt)"
+                          if p.get("co_referenced") else None))
+    for p in parcels["ps_parcels"]:
+        hid = house_by_no.get(str(p.get("house_ref")))
+        if not hid:
+            continue
+        G.edge(hid, "HAS_PARCEL", f"PARCEL:{p['parcel_id']}", "1825 (PS)", ["SRC-PS"],
+               "TRANSCRIBED_PARTIAL", "medium",
+               notes="cross_ref_to_pua UNKNOWN (F14)")
+
+    # ---- RESIDENCE_DOCUMENTED_AT (PERSON → TOPONYM; samo field-level viri) ----
+    topo_by_form = {"Zogwitsche": "TP-032", "Schönboden": "TP-033", "Waidhofen": "TP-034",
+                    "Gräving": "TP-035", "Höchsthal": "TP-036",
+                    "Zagorje": "TP-029", "Gradiše": "TP-030", "Dragole": "TP-031"}
+    res_edges = 0
+    for e in pua_reg:
+        r = (e.get("residence_original") or "").strip()
+        if not r:
+            continue
+        for form, tid in topo_by_form.items():
+            if form in r:
+                persons_hit = per_by_key.get(("owner(pua)", str(e["page"]), str(e.get("house_no")), None)) or []
+                # match person by page+house (any name — register person name may differ from residence row)
+                persons_hit = [pid for (t, pg, hn, nm), ids in per_by_key.items()
+                               if t == "owner(pua)" and str(pg) == str(e["page"]) and hn == str(e.get("house_no")) for pid in ids]
+                if not persons_hit:
+                    G.gap(f"PERSON (PUA p{e['page']} h.{e.get('house_no')}) → RESIDENCE {form} ?",
+                          ["person-owner-register (join)"],
+                          "join miss — person register ne vsebuje (page,house) ključa",
+                          "preveri person register build (val 59) proti PUA strani")
+                    continue
+                for pid in persons_hit:
+                    G.edge(pid, "RESIDENCE_DOCUMENTED_AT", tid, "pre-1825 (PUA)", ["SRC-PUA"],
+                           "VERIFIED_FORM", "high", notes=f"residence_original: {r}")
+                    res_edges += 1
+    for row in load(os.path.join(RG, "ps-n83", "register.json")):
+        w = (row.get("wohnort") or "").strip()
+        if w in ("Zagorje", "Gradiše", "Dragole"):
+            persons_hit = [pid for (t, pg, hn, nm), ids in per_by_key.items()
+                           if t == "owner(ps)" and str(pg) == str(row["page"]) and hn == str(row.get("haus_no")) for pid in ids]
+            if not persons_hit:
+                continue
+            for pid in persons_hit:
+                G.edge(pid, "RESIDENCE_DOCUMENTED_AT", topo_by_form[w], "1825 (PS, ne-lokalna sekcija F12)",
+                       ["SRC-PS"], "VERIFIED_FORM", "high", notes=f"wohnort: {w}")
+                res_edges += 1
+
+    # ---- EVENT povezave ----
+    for hn in ("43", "45", "46"):
+        hid = house_by_no.get(hn)
+        if hid:
+            cid = G.claim("EVT-001", "AFFECTS_HOUSE", hid,
+                          {"source": "SRC-PS", "page": 12}, "VERIFIED_FORM",
+                          period="1801", confidence="high",
+                          notes="rdeča opomba 'Auf pfandbeyern 1801' v vrstici hiše")
+            G.edge("EVT-001", "AFFECTS_HOUSE", hid, "1801", ["SRC-PS"], "VERIFIED_FORM", "high",
+                   notes="[rot]", claim_ids=[cid])
+    G.edge("EVT-002", "DOCUMENTED_IN", "SRC-PR", "1825/1826", ["SRC-PR"], "PROVISIONAL", "low")
+    G.edge("EVT-003", "DOCUMENTED_IN", "SRC-PUA", "10. 1. 1825", ["SRC-PUA"], "VERIFIED-2x", "high")
+
+    # ---- TOPONYM DOCUMENTED_IN + self link ----
+    topo_src_map = {"PUA": "SRC-PUA", "PS": "SRC-PS", "PT": "SRC-PT", "PR": "SRC-PR",
+                    "PG": "SRC-PG", "A01": "SRC-A01", "A05": "SRC-A05", "SI AS 176": "SRC-SIAS176"}
+    for t in topos:
+        srcs = set()
+        for f in t.get("original_forms", []):
+            s = f.get("source")
+            if s in topo_src_map:
+                srcs.add(topo_src_map[s])
+        for s in sorted(srcs):
+            G.edge(t["toponym_id"], "DOCUMENTED_IN", s, "1825/1827", [s], t["review_status"], "medium")
+    G.edge("TP-001", "IS_GEMEINDE_OF", "TP-003", "1824/1827", ["SRC-A01", "SRC-PT", "SRC-PS"],
+           "VERIFIED_FORM", "high", notes="tiskane naslovnice vseh registrov poimenujejo isto Gemeindo")
+
+    # ---------- STORY ATOMS (§8, exemplarji s polno provenanco) ----------
+    def claims_of(pred, subj=None):
+        return [c["claim_id"] for c in G.claims if c["predicate"] == pred and (subj is None or c["subject"] == subj)]
+
+    G.story_atoms = [
+        {
+            "story_id": "SA-001",
+            "subject": "Hiše 43/45/46 — pfand 1801",
+            "period": "1801",
+            "statement": "PS p12 rdeča opomba 'Auf pfandbeyern 1801' dokumentira pfand (zastavo) na hišah 43/45/46 — razlog za različna lastniška stanja PUA vs PS (F9).",
+            "entities": ["EVT-001", house_by_no["43"], house_by_no["45"], house_by_no["46"]],
+            "claim_ids": claims_of("AFFECTS_HOUSE", "EVT-001"),
+            "source_ids": ["SRC-PS"],
+            "confidence": "high",
+            "evidence_status": "VERIFIED_FORM",
+        },
+        {
+            "story_id": "SA-002",
+            "subject": "Hiša 40 — dva lastniška stanja",
+            "period": "pre-1825 → 1825",
+            "statement": "PUA (pripravljalno) beleži 'Pfarrer Rupert Sautter hiesig', PS (končni 1825) 'Peter Muster' (Landl. Gutsh.) — CONFLICT ohranjen (CH-040-01), obe trditvi živita.",
+            "entities": [house_by_no["40"]],
+            "claim_ids": claims_of("OWNER_DOCUMENTED", house_by_no["40"]),
+            "source_ids": ["SRC-PUA", "SRC-PS"],
+            "confidence": "medium",
+            "evidence_status": "CONFLICT",
+        },
+        {
+            "story_id": "SA-003",
+            "subject": "BP 94 ↔ hiša 40 (najmočnejša BP vezava)",
+            "period": "1825",
+            "statement": "PT STABLE h.40 + A01 owner identiteta ('Pfarrer Rupert Sautter hiesig' = PUA h.40 lastnik) = 2 neodvisna vira (val 52/54 VERIFIED-2x). Bp 90 ↔ h.43 (PUA no.7 + val 57 digit-by-digit) ima register-noto CONFIRMED-2x, ampak PT register plast nosi še branje h.44 (KG-F01, research gap).",
+            "entities": ["BP:094", house_by_no["40"], "BP:090", house_by_no["43"]],
+            "claim_ids": claims_of("BP_BOUND_TO_HOUSE", "BP:094") + claims_of("BP_BOUND_TO_HOUSE", "BP:090"),
+            "source_ids": ["SRC-PT", "SRC-PUA", "SRC-A01"],
+            "confidence": "high",
+            "evidence_status": "VERIFIED",
+        },
+        {
+            "story_id": "SA-004",
+            "subject": "Gemeinde Grüble / k.o. N83",
+            "period": "1824/1827",
+            "statement": "Tiskane naslovnice vseh spisovnih enot + A01 legenda ('Gemeinde GRÜBLE in Illyrien') poimenujejo ista Gemeindo — self-toponym z 6 variantskami formami.",
+            "entities": ["TP-001", "TP-003"],
+            "claim_ids": [],
+            "source_ids": ["SRC-PT", "SRC-PR", "SRC-PS", "SRC-PUA", "SRC-PV", "SRC-A01", "SRC-PG"],
+            "confidence": "high",
+            "evidence_status": "VERIFIED_FORM",
+        },
+    ]
+    for sa in G.story_atoms:
+        sa["generated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        sa["generator"] = "atlas-1825/build-knowledge-graph.py v1 (deterministično)"
+        sa["provenance_note"] = "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
+
+    # ---------- RESEARCH GAPS iz join diagnostike ----------
+    for m in owner_gap_hits:
+        G.gap(f"HOUSE {m['house']} → OWNER (join miss {m})", ["person-owner-register", "PUA/PS register"],
+              "register-join ni našel person node-a (F16 p11 struktura / register drift)",
+              "re-read strani @300dpi + ponovna gradnja registrov", tied_to="F16")
+
+    # ---------- INVARIANTI (§11) ----------
+    for c in G.claims:
+        if not c.get("source_ref"):
+            G.invariant_violations.append(f"claim {c['claim_id']} brez source")
+    for e in G.edges:
+        if not e.get("evidence_status") or not e.get("source_ids"):
+            G.invariant_violations.append(f"edge {e['relation_id']} brez evidence/source")
+    not_merged = all(n.get("merge_decision") in (None, "NOT_MERGED") for n in G.nodes if n["node_type"] == "PERSON")
+    if not not_merged:
+        G.invariant_violations.append("oseba mergeana!")
+
+    # ---------- COVERAGE (§10 — brez umetnega procenta) ----------
+    by_type = {}
+    for n in G.nodes:
+        by_type[n["node_type"]] = by_type.get(n["node_type"], 0) + 1
+    by_rel = {}
+    by_ev = {}
+    for e in G.edges:
+        by_rel[e["relation_type"]] = by_rel.get(e["relation_type"], 0) + 1
+        by_ev[e["evidence_status"]] = by_ev.get(e["evidence_status"], 0) + 1
+    by_claim_status = {}
+    for c in G.claims:
+        by_claim_status[c["status"]] = by_claim_status.get(c["status"], 0) + 1
+
+    bp_status_map = {}
+    for r in bp_reg:
+        bp_status_map[r["atlas_status"]] = bp_status_map.get(r["atlas_status"], 0) + 1
+    house_ev = {}
+    for h in houses_reg:
+        house_ev[h["evidence_status"]] = house_ev.get(h["evidence_status"], 0) + 1
+
+    coverage = {
+        "categories": [
+            {"category": "houses", "total": 167, "breakdown": house_ev},
+            {"category": "bp_1_100", "total": 100, "breakdown": bp_status_map},
+            {"category": "parcels", "total": len(parcels["pua_parcels"]) + len(parcels["ps_parcels"]),
+             "breakdown": {"PUA": len(parcels["pua_parcels"]), "PS": len(parcels["ps_parcels"]), "geometry": "NOT AVAILABLE"}},
+            {"category": "owners_persons", "total": len(persons_reg),
+             "breakdown": {"merged": 0, "possible_duplicate_not_merged": sum(1 for p in persons_reg if p.get("possible_duplicate"))}},
+            {"category": "toponyms", "total": len(topos), "breakdown": {"modern_mapping_known": 0, "UNKNOWN": len(topos)}},
+            {"category": "events", "total": 3, "breakdown": {"documented": 3}},
+            {"category": "map_objects_a01", "total": 0, "breakdown": {"inventory": "PENDING (PASS 4)"}},
+        ],
+        "note": "brez umetnega skupnega procenta — dejansko stanje po kategorijah (issue #43 §10)",
+    }
+
+    out = {
+        "val": 63,
+        "issue": "#43 §1 KG + §3 claim-first + §8 story atoms + §9 research gaps",
+        "title": "knowledge-graph-1825 v1",
+        "provenance": {
+            "built_from": ["house-register-1825.json", "person-owner-register-1825.json",
+                           "bp-house-reconciliation-1825.json", "conflict-register-1825.json",
+                           "parcel-register-1825.json", "toponym-register-1825.json",
+                           "pua-n83/register.json", "ps-n83/register.json"],
+            "deterministic": True,
+            "regenerable": "ob PS 143/143 ponovni zagon build-knowledge-graph.py + vseh registrov",
+            "sources_catalog": SRC_DOCS,
+        },
+        "invariants_enforced": [
+            "claim brez source = build napaka",
+            "edge brez evidence_status/source = build napaka",
+            "osebe: merge_decision NOT_MERGED ohranjen (0 mergeov)",
+            "UNKNOWN/NOT FOUND/CONFLICT ločeni; NOT_FOUND → research gap",
+        ],
+        "invariant_violations": G.invariant_violations,
+        "coverage": coverage,
+        "node_stats": by_type,
+        "edge_stats": by_rel,
+        "edge_evidence_stats": by_ev,
+        "claim_stats": by_claim_status,
+        "nodes": G.nodes,
+        "edges": G.edges,
+        "claims": G.claims,
+        "story_atoms": G.story_atoms,
+        "research_gaps": G.research_gaps,
+    }
+
+    with open(os.path.join(BASE, "knowledge-graph-1825.json"), "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+
+    print(f"nodes: {len(G.nodes)} {by_type}")
+    print(f"edges: {len(G.edges)} {by_rel}")
+    print(f"claims: {len(G.claims)} {by_claim_status}")
+    print(f"research gaps: {len(G.research_gaps)}")
+    print(f"story atoms: {len(G.story_atoms)}")
+    print(f"invariant violations: {G.invariant_violations}")
+    return 0 if not G.invariant_violations else 1
+
+
+def hid_conflicts(houses_reg, hn):
+    for h in houses_reg:
+        if str(h["house_no_1825"]) == str(hn):
+            return h.get("conflict_ids")
+    return None
+
+
+if __name__ == "__main__":
+    sys.exit(main())
