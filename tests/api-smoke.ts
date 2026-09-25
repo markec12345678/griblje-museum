@@ -454,6 +454,94 @@ ok(
   `status=${atlasMapBad.status}`
 );
 
+/* --- 5i. /api/atlas/story-graph — PASS 6 pripovedni graf (val 68, #42 §21) --- */
+const sgOverview = await getJson("/api/atlas/story-graph");
+ok(
+  "atlas story-graph: pregled — 3.309 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22)",
+  sgOverview.status === 200 &&
+    sgOverview.body?.ok === true &&
+    sgOverview.body?.stats?.entities === 3309 &&
+    sgOverview.body?.stats?.relations === 3569 &&
+    sgOverview.body?.stats?.story_atoms === 4 &&
+    Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
+  `status=${sgOverview.status} entities=${sgOverview.body?.stats?.entities}`
+);
+
+const sgH40 = await getJson("/api/atlas/story-graph?node=" + encodeURIComponent("HOUSE:H-040"));
+ok(
+  "atlas story-graph: sosednost hiše 40 — lastniki + BP + atom SA-002 (vhod Story Engine §16)",
+  sgH40.status === 200 &&
+    sgH40.body?.focus?.node_id === "HOUSE:H-040" &&
+    (sgH40.body?.entities ?? []).some((e: any) => e.node_type === "PERSON") &&
+    (sgH40.body?.relations ?? []).some((r: any) => r.relation_type === "OWNER_OF") &&
+    (sgH40.body?.story_atoms ?? []).some((a: any) => a.story_id === "SA-002"),
+  `status=${sgH40.status} entities=${sgH40.body?.entities?.length}`
+);
+
+const sgDepth2 = await getJson("/api/atlas/story-graph?node=BP%20094&depth=2");
+ok(
+  "atlas story-graph: BP 94 depth 2 — parcele pridejo v sosednost (HAS_PARCEL)",
+  sgDepth2.status === 200 &&
+    (sgDepth2.body?.relations ?? []).some((r: any) => r.relation_type === "HAS_PARCEL") &&
+    (sgDepth2.body?.entities ?? []).some((e: any) => e.node_type === "PARCEL"),
+  `status=${sgDepth2.status} entities=${sgDepth2.body?.entities?.length}`
+);
+
+const sgPersons = await getJson("/api/atlas/story-graph?type=PERSON&limit=5000");
+ok(
+  "atlas story-graph: 488 oseb (projekcija KG, nič novih trditev)",
+  sgPersons.status === 200 && sgPersons.body?.count === 488,
+  `count=${sgPersons.body?.count}`
+);
+
+const sgGemeinde = await getJson("/api/atlas/story-graph?relation=IS_GEMEINDE_OF");
+ok(
+  "atlas story-graph: IS_GEMEINDE_OF z claimom C-00622 (KG-F07 claim-first fix)",
+  sgGemeinde.status === 200 &&
+    sgGemeinde.body?.count === 1 &&
+    sgGemeinde.body?.relations?.[0]?.from_entity === "TP-001" &&
+    JSON.stringify(sgGemeinde.body?.relations?.[0]?.claim_ids) === '["C-00622"]' &&
+    typeof sgGemeinde.body?.relations?.[0]?.date_period === "string" &&
+    sgGemeinde.body?.relations?.[0]?.source_ids?.length >= 3,
+  `status=${sgGemeinde.status}`
+);
+
+const sgAtoms = await getJson("/api/atlas/story-graph?atoms=1");
+ok(
+  "atlas story-graph: atomi z razrešenimi claims — SA-004 provenance_complete (§22)",
+  sgAtoms.status === 200 &&
+    sgAtoms.body?.count === 4 &&
+    (sgAtoms.body?.story_atoms ?? []).every((a: any) => a.provenance_complete === true) &&
+    (sgAtoms.body?.story_atoms ?? []).some((a: any) => a.story_id === "SA-004" && JSON.stringify(a.claim_ids) === '["C-00622"]'),
+  `status=${sgAtoms.status}`
+);
+
+const sgSearch = await getJson("/api/atlas/story-graph?q=Sautter");
+ok(
+  "atlas story-graph: iskanje oseb — Sautter najden (PUA lastnik hiše 40)",
+  sgSearch.status === 200 && sgSearch.body?.count >= 1 && sgSearch.body?.hits?.[0]?.evidence_url?.includes("/api/atlas/evidence"),
+  `count=${sgSearch.body?.count}`
+);
+
+const sgBadType = await getJson("/api/atlas/story-graph?type=VOZEL");
+ok(
+  "atlas story-graph: neznana vrsta entitete → 400 (poštene napake)",
+  sgBadType.status === 400 && sgBadType.body?.error === "unknown_entity_type",
+  `status=${sgBadType.status}`
+);
+const sgNotFound = await getJson("/api/atlas/story-graph?node=H-999");
+ok(
+  "atlas story-graph: neobstoječa entiteta → 404 node_not_found",
+  sgNotFound.status === 404 && sgNotFound.body?.error === "node_not_found",
+  `status=${sgNotFound.status}`
+);
+const sgBadDepth = await getJson("/api/atlas/story-graph?node=BP:094&depth=5");
+ok(
+  "atlas story-graph: depth 5 → 400 invalid_depth (zaščita pred parcelno eksplozijo)",
+  sgBadDepth.status === 400 && sgBadDepth.body?.error === "invalid_depth",
+  `status=${sgBadDepth.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);

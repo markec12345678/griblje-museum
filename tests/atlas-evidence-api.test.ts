@@ -91,13 +91,13 @@ describe("atlas-evidence resolver [val 64]", () => {
 
   test("overview (§10): brez umetnega procenta, vse ključne strukture", () => {
     const ov = overview();
-    expect(ov.title).toBe("knowledge-graph-1825 v1.3");
+    expect(ov.title).toBe("knowledge-graph-1825 v1.4");
     expect(ov.stats.nodes.HOUSE).toBe(167);
     expect(ov.stats.nodes.PERSON).toBe(488);
     expect(ov.stats.edges.OWNER_OF).toBe(254);
     expect(ov.stats.claims.CONFLICT).toBe(128);
     expect(ov.research_gaps.length).toBe(8);
-    expect(ov.findings.map((f) => f.finding_id)).toEqual(["KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06"]);
+    expect(ov.findings.map((f) => f.finding_id)).toEqual(["KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07"]);
     expect(JSON.stringify(ov.coverage)).toContain("brez umetnega skupnega procenta");
   });
 

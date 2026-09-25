@@ -3357,3 +3357,51 @@ Stage Summary:
 - Trije ključni rezultati: (1) **najdena direktata digitalizirana enota za gribeljsko šolo** — šolski list z opisom kraja 1929–41 [4118864] + kronika matične šole, ki pokriva ustanovitev 1889 [3864805]; (2) **župnijska pot korigovana prek Podzemlja** (Griblje = 3. podružnica, del matičnega območja; matrike online; SA 1850–1890 I. z Gribljem v čitalnici NŠAL = najboljši odgovor na hišo/gostilno pred 1898); (3) **koncesijska/občinska pot za Griblje v javnem katalogu ZAPRTA** (fondi ne obstajajo) — negativne ugotovitve izrecno ločene od »ne obstaja«
 - P1 backlog za naslednje sklope: šolski list [4118864] (content extraction, digitaliziran), SA Podzemelj 1850–1890 I. (NŠAL čitalnica), kronika OŠ Podzemelj 1873–1922 + SI AS 749/3/8/12 (ZAL NM/ARS čitalnici), Matricula online matrike, SI AS 16/I/44+45 volilni spisi
 - Tehnični poučki: VAČ poljsko iskanje = brskalniška seja obvezna (searchId v HTTP seji; curl vrne »potekla seja«); cookieConsent overlay blokira klikne (skrij prek JS ali Strinjam se); page_reader obide 302 na matriculi; NŠAL SA popis PDF = ključ javno dokumentiran vir (januar 2026)
+
+---
+Task ID: 23
+Agent: Z.ai Code (main orchestrator)
+Task: GitHub push + sinhronizacija + README + Render/Vercel + nadaljuj (user: "github token pushaj sinhroniziraj kode readme render vercel ce je sprostil quoto in nadaljuj")
+
+Work Log:
+- Stanje ob startu: val 66 blokiran na push (žeton manjkal); main @ ee52fab (val 65); uporabnik priskrbel GitHub žeton
+- VAL 66 ODLOŽEN: push feat/val66-pass4b-a02-a05 @ 1a3cb10 → PR #54 → CI 2/2 → MERGED @ b4047ce → main synced; README 119. sklop (+4 vrstice, enak vzorec kot val 65) @ 77d29f2
+- POROČILO #42 val 66 (comment-5837963329, 18:58 UTC): PASS 4b A02–A05 + KG v1.3, cerkev veriga, KG-F05, F-A05-04
+- DEPLOY po val 66: Render mirror ŽIV na KG v1.3 (MO-A02-001 church, DEPICTED_ON → SRC-A02, vac id=227668 potrjeno na produkciji) — VERCEL produkcija UJETA na val 65 build: /api/atlas/evidence?node=MO:MO-A02-001 → node_not_found = star KG v grafu; 6+ minut polling neupadajoč; brez Vercel žetona status deploymenta neviden; preview deployi pa USPEŠNI (Vercel Preview Comments: success na PR #55) → produkcijska pipeline specifično zadržana (verjetno kvota artefakt, kot val 64)
+- LOKALNO OKOLJE (2. ura debugginga): sandbox shell izvozi DATABASE_URL=file:/home/z/my-project/db/custom.db (SQLite) ki POVOZI .env → prisma "URL must start with postgresql://" → health 503; rešitev: explicitno export DATABASE_URL/DIRECT_URL iz .env pri zagonu dev strežnika (+ sed odstrani narekovaje v .env); strežnik živ na :3000 z bazo (113/589)
+- VAL 67 (PASS 5, #42 §15 MAP DATA MODEL — čisto lokalni val, 0 VLM):
+  - src/lib/atlas-map.ts — čista deterministična plast nad KG v1.3: sloji map_objects (34: 24 A01 + 8 A02 + 2 A05), houses (167), toponyms (37), sheets (§11 A01–A05 z vac URL-i, 24/8/0/0/2)
+  - reševanje hiš SAMO prek verige HOUSE ← BP_BOUND_TO_HOUSE ← BP ← CORRESPONDS_TO_BP ← MO-A01; determinističen status-rang (CONFIRMED-2x > VERIFIED-2x > PROBABLE > REVIEW > SINGLE_SOURCE > UNCERTAIN > CONFLICT; izenačene → nižji bp); konfliktne veze ostanejo vidne (§14); KG-F05 varovalka: A02–A05 glife (12/20/22) NE locirajo hiš
+  - GET /api/atlas/map — layer=all|map_objects|houses|toponyms|sheets + sheet filter + 400 poštene napake; enake konvencije kot evidence API
+  - UI cadastre-map-view.tsx: KG sloji na listu A01 (CRS.Simple px), popupi z node_id + georef opozorilom + »Dokazna veriga ↗« (evidence_url → vac_details_url, DoD klikljivo do vira), stikala + števci, i18n SLO/EN (9 novih ključev kataster.kg*), loading/error stanja; pogled Danes namenoma brez KG slojev (preprečeno mešanje provizorične georef z OSM)
+  - QA: tests/atlas-map.test.ts 19 testov (2.467 parcel brez geometrije = §9 test, H-040 veriga, KG-F05 varovalka); api-smoke +5 → 60/60; suite 294/294; tsc čist; lint čist
+  - poročilo research-griblje/80-val67-atlas-1825-pass5-map-data-model.md
+- Git: feat/val67-map-data-model → push → PR #55 → CI 3/3 (inkl. Vercel Preview success) → MERGED @ 4be52ad → README 120. sklop @ d989fc6 → poročilo #42 (comment-5838311540, 19:34 UTC)
+- DEPLOY po val 67: Render ŽIV z val 67 (/api/atlas/map?layer=sheets → 5 listov 24/8/0/0/2; H-040 located via 94 → MO:MO-A01-002 na PRODUKCIJI); Vercel produkcija še na val 65 (auto-deploy zadržan — potrebna uporabnikova Vercel preverba/žeton; previewi delujejo, pričakovano nadoknaplenje kot val 65)
+
+Stage Summary:
+- main @ d989fc6 = val 66 (PASS 4b + KG v1.3) + val 67 (PASS 5 map data model) + README 119/120; 294 testov + 60/60 dimnih; zbirka 113/589/6; +0 virov/+0 trditve (val 67 = +1 sloj API + UI)
+- DEPLOY MATRICA: GitHub ✓ · Render ✓ (val 67 živ) · Vercel ⚠️ produkcija ujeta na val 65, previewi ✓ — uporabnik naj preveri Vercel dashboard (Deployments → zadnji production deploy za main @ d989fc6) ali priskrbi Vercel žeton; pričakovano samo-nadoknaplenje ob sprostitvi kvote (vzorec val 64→65)
+- ATLAS 1825 sklop: PASS 1 ✓ PASS 2 ✓ PASS 3 ✓ PASS 4 ✓ PASS 4b ✓ PASS 5 ✓ (map data model v1) — ostalo: PASS 6 (story-graph §21), PASS 7 (story engine §16), PASS 8 (coverage report) + ob kvoti PS p56–143 / PT p7 @300dpi / PR re-read / višji dpi A02 + sidro A01↔A02
+- Naslednje: PASS 6 entity/relation story-graph; story engine po atlas zaključku — »najprej podatki, potem zemljevid, šele nato zgodbe«
+
+---
+Task ID: 24
+Agent: Z.ai Code (main orchestrator)
+Task: Val 68 — ISSUE #42 §21 PASS 6: Story Graph v1 + KG v1.4 (user: "odlicno nadaljuj si vse isssue pregledal naredil na githubu")
+
+Work Log:
+- Start: pregled GitHub issue-jev brez žetona (javni API) — odprta #42 + #43; preostanek #42: PASS 6 (§21 story graph) → PASS 7 (§16 engine) → PASS 8 (§23 coverage report); stanje main @ d989fc6 (val 67), 294 testov
+- KG v1.3 → v1.4 (KG-F07): PASS 6 invariant "story atom brez claim/source = napaka" (§43 §11) je PRVI zagon builderja ODBIL — ujeta prava kršitev claim-first arhitekture (§43 §3): relacija IS_GEMEINDE_OF (TP-001→TP-003) brez claima + story atom SA-004 (7 virov, 0 claims) → build-knowledge-graph.py dodan claim C-00622 (TP-001 IS_GEMEINDE_OF TP-003, SRC-A01, VERIFIED_FORM, 1824/1827), SA-004 povezana; claim kot ZADNJI v vrsti → 0 premikov ID-jev (C-00621 = EVT-001→H-046 preverjeno stabilno); nič prepisano (§12); findings +KG-F07 (RESOLVED-V68)
+- Builder: research-griblje/atlas-1825/build-story-graph.py (determinističen, fail-fast) — 1:1 projekcija KG v1.4: 3.309 entitet (8 vrst: PARCEL 2467 / PERSON 488 / HOUSE 167 / BP 100 / TOPONYM 37 / MAP_OBJECT 34 / SOURCE 13 / EVENT 3) + 3.569 relacij (10 vrst); vsaka relacija §21 obvezna polja (relation_type + narrative_label SLO + source_ids + confidence + date_period; prazno → izrecno UNKNOWN) + degree vsake entitete; story atomi (4) skopirani iz KG; story_engine_contract (§22/§43 §7 shema: story_id/input_entity_ids/used_claim_ids/used_source_ids/generation_timestamp/prompt_version/story_status); provenance z kg_sha256 (d2416428a5d7) za reproducibilnost §22; izhoda: arhivska resnica + runtime kopija src/data/story-graph-1825.json; invarianti: §21 polja, referenčna integriteta koncov, atomi z claims+sources, claim_ids obstajajo — kršitev = izhod NE zapisan
+- API: src/app/api/atlas/story-graph/route.ts + src/lib/atlas-story-graph.ts — pregled (stats + atomi + pogodba + uporaba) / ?node= sosednost depth 1–2 (capped 1.000 + izrecen truncated flag; zaščita pred HAS_PARCEL eksplozijo) / ?type= / ?relation= / ?q= (label + name_original + node_id) / ?atoms=1 (razrešene entitete + claims + provenance_complete) / resolver okrajšav (H-040, HOUSE 40, BP 90, 90, TP-001, PER-0001, MO:MO-A01-002) / poštene napake 400 unknown_entity_type | unknown_relation_type | invalid_depth + 404 node_not_found
+- QA: tests/atlas-story-graph.test.ts (20 testov / 25.721 expect: 1:1 projekcija številčno dokazana, §21 polja na vseh 3.569 relacijah, referenčna integriteta, claim 1:1 obrnjeno pokritje, degree konsistenta, SA-004/C-00622, provenance_complete, sosednost H-40 z OWNER_OF+SA-002, depth2>depth1, cap 1.000, null za neznan, resolver, pogodba §22) + 3 testne datoteke posodobljene na KG v1.4 (title/findings+KG-F07/622/val 68) → suite 314/314; api-smoke +10 → 70/70 na živem :3000 (pregled 3309/3569/4, sosednost H-040, BP 94 depth2 s HAS_PARCEL, 488 oseb, IS_GEMEINDE_OF C-00622, atomi, Sautter, 400/404/400); tsc čist; lint čist
+- Popravki med razvojem: TS error test (Set<string> nad const literal union; nesmiselna pričakovanja kg_val); test pričakoval 200 hiš pri default limitu (hiš je 167 — limit ne kapira pod velikostjo)
+- Dokumentacija: poročilo research-griblje/81-val68-atlas-1825-pass6-story-graph.md; README 121. sklop; worklog (ta vnos)
+- GIT: push NI izveden — GitHub žeton ni na voljo (vzorec val 66: uporabnik priskrbi, po pushu izbrisan); branch feat/val68-story-graph pripravljen lokalno
+
+Stage Summary:
+- ATLAS 1825: PASS 1 ✓ PASS 2 ✓ PASS 3 ✓ PASS 4 ✓ PASS 4b ✓ PASS 5 ✓ + PASS 6 ✓ (story graph v1, +API) — preostalo: PASS 7 (§16 story engine nad story_engine_contract), PASS 8 (§23 final coverage report) + ob kvoti PS p56–143 / PT p7 @300dpi (KG-F01/F04) / PR re-read / višji dpi A02 + sidro A01↔A02 (KG-F05)
+- main @ d989fc6 (val 68 čaka na push — branch lokalno); 314 testov + 70/70 dimnih; KG v1.4: 3.309 nodes / 3.569 edges / 622 claims / 8 gaps / 4 atomi / 0 kršitev; zbirka 113/589/6; +0 virov/+0 trditve zgodbe/+0 UI
+- KG-F07 dokazuje vrednost invariant-no-gibal: arhitekturni test je ujel realno vrzel (zgodba brez dokazne verige) še pred Story Engine
+- Naslednje: 1) push + PR + merge val 68 (žeton uporabnika) + poročilo #42; 2) PASS 7 story engine (§16, nad story_engine_contract + sosednost API); 3) PASS 8 coverage report (§23/§24 outputi); 4) ob kvoti re-readi PS/PT/PR
