@@ -1,0 +1,2197 @@
+{
+ "val": "59",
+ "pass": 2,
+ "issue": "#42 §14",
+ "title": "CONFLICT REGISTER 1825 — centralni register (nič skritega z mergeom)",
+ "provenance": {
+  "pua": "pua-n83/register.json (98 vpisov, val 51+57)",
+  "pt": "pt-n83/register.json (100 vrstic, val 53) + pt-n83/reconciliation.json (val 54+56+57)",
+  "ps": "ps-n83/register.json (1.073 vrstic, 55/143 strani, val 57) + ps-n83/analysis-v1.json (val 58)",
+  "bp_matrix": "raw-web-val57-2026-10/bp-house-matrix.json (100 vrstic, val 57)",
+  "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)"
+ },
+ "coverage": {
+  "bp_house_binding": 54,
+  "owner_state_pua_vs_ps": 51,
+  "named_finding": 8
+ },
+ "conflicts_total": 113,
+ "conflicts": [
+  {
+   "conflict_id": "CB-008",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 8",
+   "claim_a": {
+    "pt_houses": [
+     "11"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-011",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 11",
+   "claim_a": {
+    "pt_houses": [
+     "9"
+    ],
+    "pt_status": "STABLE"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.23 (p12)",
+      "house_no": "8",
+      "owner": "Schafschlader Mütze Leidensgüttin"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT STABLE h.9 vs PUA h.8 (no.23 (p12)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "conflict_id": "CB-012",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 12",
+   "claim_a": {
+    "pt_houses": [
+     "8"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.23 (p12)",
+      "house_no": "8",
+      "owner": "Schafschlader Mütze Leidensgüttin"
+     },
+     {
+      "pua_entry": "no.23 (p12)",
+      "house_no": "8",
+      "owner": "Schafschlader Mütze Leidensgüttin"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.23 (p12) h.8"
+  },
+  {
+   "conflict_id": "CB-013",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 13",
+   "claim_a": {
+    "pt_houses": [
+     "6"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-022",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 22",
+   "claim_a": {
+    "pt_houses": [
+     "10"
+    ],
+    "pt_status": "STABLE"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.70 (p16)",
+      "house_no": "3",
+      "owner": "Christan / Wörfl / Einwohner hiesig"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT STABLE h.10 vs PUA h.3 (no.70 (p16)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "conflict_id": "CB-030",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 30",
+   "claim_a": {
+    "pt_houses": [
+     "6"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-033",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 33",
+   "claim_a": {
+    "pt_houses": [
+     "61"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-035",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 35",
+   "claim_a": {
+    "pt_houses": [
+     "31"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-036",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 36",
+   "claim_a": {
+    "pt_houses": [
+     "32"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-037",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 37",
+   "claim_a": {
+    "pt_houses": [
+     "20"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-038",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 38",
+   "claim_a": {
+    "pt_houses": [
+     "20"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.35 (p18)",
+      "house_no": "36",
+      "owner": "Krischan / Marla / Bauerin / zu Grübln"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.35 (p18) h.36"
+  },
+  {
+   "conflict_id": "CB-039",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 39",
+   "claim_a": {
+    "pt_houses": [
+     "35"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-040",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 40",
+   "claim_a": {
+    "pt_houses": [
+     "29"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-041",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 41",
+   "claim_a": {
+    "pt_houses": [
+     "64"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-044",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 44",
+   "claim_a": {
+    "pt_houses": [
+     "30"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-046",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 46",
+   "claim_a": {
+    "pt_houses": [
+     "63"
+    ],
+    "pt_status": "STABLE"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.40 (p21)",
+      "house_no": "65",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ],
+    "a01_owner": "Widhann Georg häusler und Gärtner"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT STABLE h.63 vs PUA h.65 (no.40 (p21)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "conflict_id": "CB-047",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 47",
+   "claim_a": {
+    "pt_houses": [
+     "65"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-048",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 48",
+   "claim_a": {
+    "pt_houses": [
+     "63"
+    ],
+    "pt_status": "STABLE"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.40 (p21)",
+      "house_no": "65",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT STABLE h.63 vs PUA h.65 (no.40 (p21)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "conflict_id": "CB-049",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 49",
+   "claim_a": {
+    "pt_houses": [
+     "61"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.41 (p21)",
+      "house_no": "66",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ],
+    "a01_owner": "Widhann Georg häusler und Gärtner"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.41 (p21) h.66"
+  },
+  {
+   "conflict_id": "CB-050",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 50",
+   "claim_a": {
+    "pt_houses": [
+     "60"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.34 (p18)",
+      "house_no": "34",
+      "owner": "Krischan / Marla / Bauerin / zu Grübln"
+     },
+     {
+      "pua_entry": "no.41 (p21)",
+      "house_no": "66",
+      "owner": "Widhann Georg häusler und Gärtner"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.34 (p18) h.34"
+  },
+  {
+   "conflict_id": "CB-051",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 51",
+   "claim_a": {
+    "pt_houses": [
+     "60"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-052",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 52",
+   "claim_a": {
+    "pt_houses": [
+     "62"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-053",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 53",
+   "claim_a": {
+    "pt_houses": [
+     "61"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-054",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 54",
+   "claim_a": {
+    "pt_houses": [
+     "30"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-056",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 56",
+   "claim_a": {
+    "pt_houses": [
+     "60"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.35 (p18)",
+      "house_no": "36",
+      "owner": "Krischan / Marla / Bauerin / zu Grübln"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.35 (p18) h.36"
+  },
+  {
+   "conflict_id": "CB-057",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 57",
+   "claim_a": {
+    "pt_houses": [
+     "63"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-059",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 59",
+   "claim_a": {
+    "pt_houses": [
+     "32"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-060",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 60",
+   "claim_a": {
+    "pt_houses": [
+     "36"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-068",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 68",
+   "claim_a": {
+    "pt_houses": [
+     "43"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.10 (p7)",
+      "house_no": "32",
+      "owner": "Breitwiesch Mattl / Söllner zu Grübln"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.10 (p7) h.32"
+  },
+  {
+   "conflict_id": "CB-069",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 69",
+   "claim_a": {
+    "pt_houses": [
+     "45"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-070",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 70",
+   "claim_a": {
+    "pt_houses": [
+     "36"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-071",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 71",
+   "claim_a": {
+    "pt_houses": [
+     "34"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-072",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 72",
+   "claim_a": {
+    "pt_houses": [
+     "38"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-073",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 73",
+   "claim_a": {
+    "pt_houses": [
+     "41"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.61 (p31)",
+      "house_no": "60",
+      "owner": "Penzig Stuffe Leuthold zu Grüble"
+     }
+    ],
+    "a01_owner": "Penzig Stuffe Leuthold zu Grüble"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.61 (p31) h.60"
+  },
+  {
+   "conflict_id": "CB-075",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 75",
+   "claim_a": {
+    "pt_houses": [
+     "51"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-076",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 76",
+   "claim_a": {
+    "pt_houses": [
+     "51"
+    ],
+    "pt_status": "STABLE"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ],
+    "a01_owner": "Brincz Maria Bäuerin zu Grübln"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT STABLE h.51 vs PUA h.28 (no.79 (p39)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "conflict_id": "CB-078",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 78",
+   "claim_a": {
+    "pt_houses": [
+     "41"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-079",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 79",
+   "claim_a": {
+    "pt_houses": [
+     "41"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+  },
+  {
+   "conflict_id": "CB-080",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 80",
+   "claim_a": {
+    "pt_houses": [
+     "41"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-081",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 81",
+   "claim_a": {
+    "pt_houses": [
+     "45",
+     "48"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+  },
+  {
+   "conflict_id": "CB-084",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 84",
+   "claim_a": {
+    "pt_houses": [
+     "45"
+    ],
+    "pt_status": "STABLE"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT STABLE h.45 vs PUA h.28 (no.79 (p39)) — nizki B.P. opombe = možna drugačna rubrika"
+  },
+  {
+   "conflict_id": "CB-085",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 85",
+   "claim_a": {
+    "pt_houses": [
+     "45"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": "Krischan / Peter / Bauer in Grübln"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-086",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 86",
+   "claim_a": {
+    "pt_houses": [
+     "37"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": "Krischan / Marla / Bauerin / zu Grübln"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-087",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 87",
+   "claim_a": {
+    "pt_houses": [
+     "36"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-088",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 88",
+   "claim_a": {
+    "pt_houses": [
+     "44"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-089",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 89",
+   "claim_a": {
+    "pt_houses": [
+     "36"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": "Husitsch Maria Bauersleute / zu Grübln"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-091",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 91",
+   "claim_a": {
+    "pt_houses": [
+     "40"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-092",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 92",
+   "claim_a": {
+    "pt_houses": [
+     "44"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": "Pöchinger Georg Leinwand Fabrikant"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-093",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 93",
+   "claim_a": {
+    "pt_houses": [
+     "41"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.79 (p39)",
+      "house_no": "28",
+      "owner": "Breunig Georgy Bauer hiesig"
+     }
+    ],
+    "a01_owner": "Pfarrer Rupert Sautter hiesig"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.79 (p39) h.28"
+  },
+  {
+   "conflict_id": "CB-095",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 95",
+   "claim_a": {
+    "pt_houses": [
+     "40"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.78 (p39)",
+      "house_no": "29",
+      "owner": "Schimcz Maria Bäurin hiesig"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.78 (p39) h.29"
+  },
+  {
+   "conflict_id": "CB-096",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 96",
+   "claim_a": {
+    "pt_houses": [
+     "39"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CB-097",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 97",
+   "claim_a": {
+    "pt_houses": [
+     "38"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.78 (p39)",
+      "house_no": "29",
+      "owner": "Schimcz Maria Bäurin hiesig"
+     }
+    ],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.78 (p39) h.29"
+  },
+  {
+   "conflict_id": "CB-098",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 98",
+   "claim_a": {
+    "pt_houses": [
+     "39"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [
+     {
+      "pua_entry": "no.95 (p47)",
+      "house_no": "70",
+      "owner": "k.k. Zollamt"
+     }
+    ],
+    "a01_owner": "k.k. Zollamt"
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo; PUA: no.95 (p47) h.70"
+  },
+  {
+   "conflict_id": "CB-099",
+   "conflict_type": "bp_house_binding",
+   "entity": "BP 99",
+   "claim_a": {
+    "pt_houses": [
+     "50"
+    ],
+    "pt_status": "REVIEW-CONFLICT"
+   },
+   "source_a": "PT N083 p7 (val 41/52/53 branja)",
+   "claim_b": {
+    "pua_refs": [],
+    "a01_owner": null
+   },
+   "source_b": "PUA opombe + A01 val 52/54/56",
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA/PT strani (P2-E15); dodatna neodvisna branja",
+   "note": "PT branja se razlikujejo"
+  },
+  {
+   "conflict_id": "CH-000-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 0",
+   "claim_a": {
+    "owner": "Commenda Fischerwies"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Gemeinde",
+    "sim": 0.37
+   },
+   "source_b": "PS N83 s. [4, 12, 29, 41, 47, 48, 51, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-001-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 1",
+   "claim_a": {
+    "owner": "Mellachitsch Waise Leopold von / Ungaritsch gewesene Mellachitsch."
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Barbara Muster",
+    "sim": 0.143
+   },
+   "source_b": "PS N83 s. [11, 35, 45, 47, 48, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-002-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 2",
+   "claim_a": {
+    "owner": "Hiebetz Johann Bauersleute / zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Heideri Anna",
+    "sim": 0.326
+   },
+   "source_b": "PS N83 s. [45, 47, 48, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-003-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 3",
+   "claim_a": {
+    "owner": "Draschisch Jörgen Lorenz / und Begusche / Gänßlin in Adelsberg"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Dragosch Georg",
+    "sim": 0.381
+   },
+   "source_b": "PS N83 s. [45, 47, 48, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-004-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 4",
+   "claim_a": {
+    "owner": "Dragosch, Maria, bauerin, zu Dragosch / gemindt. Holzschildk."
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Novak Mihelc",
+    "sim": 0.237
+   },
+   "source_b": "PS N83 s. [14, 28, 45, 48] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-005-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 5",
+   "claim_a": {
+    "owner": "Dragosch, georg, bauer, zu Dragosch / gemindt. Holzschildk."
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Hauschild Mathä",
+    "sim": 0.333
+   },
+   "source_b": "PS N83 s. [27, 49, 50, 51, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-006-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 6",
+   "claim_a": {
+    "owner": "Husitsch Barbara des Grädlers / Ehefrau"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Lorbltcher Hauffl",
+    "sim": 0.327
+   },
+   "source_b": "PS N83 s. [4, 5, 6, 45, 47, 48, 49, 50, 53] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-007-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 7",
+   "claim_a": {
+    "owner": "Sankovitsch Walf."
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Leibniz Mathäus",
+    "sim": 0.345
+   },
+   "source_b": "PS N83 s. [5, 14, 33, 45, 49] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-008-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 8",
+   "claim_a": {
+    "owner": "Maurerisch Johann Bäckersleute / zu Waidhofen"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Gemeinde",
+    "sim": 0.255
+   },
+   "source_b": "PS N83 s. [6, 28, 43, 45, 48, 49] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-009-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 9",
+   "claim_a": {
+    "owner": "Jakoffitschek / Hans Bauer hiesig"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Stadtpfarrkirche[?]",
+    "sim": 0.273
+   },
+   "source_b": "PS N83 s. [28, 45, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-010-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 10",
+   "claim_a": {
+    "owner": "Jakoffitschek / Maria Bauerin hiesig"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Rödig matthl",
+    "sim": 0.238
+   },
+   "source_b": "PS N83 s. [25, 45, 49, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-011-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 11",
+   "claim_a": {
+    "owner": "Peter P[?] Häuslbesitzer zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Pölling Georg",
+    "sim": 0.308
+   },
+   "source_b": "PS N83 s. [6, 45, 49, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-012-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 12",
+   "claim_a": {
+    "owner": "Liechtensth. Murgi"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Stadtpfarrkirche[?]",
+    "sim": 0.25
+   },
+   "source_b": "PS N83 s. [28, 32, 45, 48, 49, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-016-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 16",
+   "claim_a": {
+    "owner": "Michael Leidner zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Pechl[?] hauptl",
+    "sim": 0.303
+   },
+   "source_b": "PS N83 s. [4, 5, 9, 23, 43, 54] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-017-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 17",
+   "claim_a": {
+    "owner": "Lorenz Leidner zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Eidlald Wurfl",
+    "sim": 0.364
+   },
+   "source_b": "PS N83 s. [9, 54, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-018-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 18",
+   "claim_a": {
+    "owner": "Schim von Pater Bardeleßky / [nečitljivo]"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Breugl Georg",
+    "sim": 0.279
+   },
+   "source_b": "PS N83 s. [5, 8, 34, 54] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-019-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 19",
+   "claim_a": {
+    "owner": "Schim von Wirth Bardeleßky"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Thomas Malfg",
+    "sim": 0.242
+   },
+   "source_b": "PS N83 s. [21, 54] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-020-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 20",
+   "claim_a": {
+    "owner": "Johann Michael Rieger, Besitzer zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Lappary Marbl",
+    "sim": 0.255
+   },
+   "source_b": "PS N83 s. [7, 14, 28, 33, 35, 36, 37, 39, 54] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-021-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 21",
+   "claim_a": {
+    "owner": "Sankowitsch Joseph"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Urich Peter",
+    "sim": 0.296
+   },
+   "source_b": "PS N83 s. [5, 54] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-022-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 22",
+   "claim_a": {
+    "owner": "Brincz Marfil Louise Wittibin."
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Müller Johann",
+    "sim": 0.263
+   },
+   "source_b": "PS N83 s. [9, 12, 13, 30, 36, 54] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-024-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 24",
+   "claim_a": {
+    "owner": "Brincz Marjan"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Vilter Wulffj",
+    "sim": 0.25
+   },
+   "source_b": "PS N83 s. [18, 27, 28, 29, 30, 31, 36, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-025-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 25",
+   "claim_a": {
+    "owner": "Brincz Wendel"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Ring Mito",
+    "sim": 0.3
+   },
+   "source_b": "PS N83 s. [27, 28, 29, 31, 36, 37, 38] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-026-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 26",
+   "claim_a": {
+    "owner": "Brincz Johann Bauer zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Feldt Peter",
+    "sim": 0.114
+   },
+   "source_b": "PS N83 s. [5, 7, 18, 19, 26, 27, 29, 30, 34, 35, 36, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-027-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 27",
+   "claim_a": {
+    "owner": "Malleßthak [?] Han Bauw [?] Han Güßla [?]"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Hoschlar Peter",
+    "sim": 0.222
+   },
+   "source_b": "PS N83 s. [16, 17, 18, 24, 26, 27, 29, 30, 34, 35, 37, 38] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-028-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 28",
+   "claim_a": {
+    "owner": "Brincz Maria Bäuerin zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Ring Michl",
+    "sim": 0.343
+   },
+   "source_b": "PS N83 s. [26, 29, 30, 34, 35, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-029-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 29",
+   "claim_a": {
+    "owner": "Milleg Hanu Bauw [?] Han Grübla [?]"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Feldt Margreth",
+    "sim": 0.222
+   },
+   "source_b": "PS N83 s. [5, 15, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-030-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 30",
+   "claim_a": {
+    "owner": "Tillak Philipp bürgerl. zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Tillah Walfja",
+    "sim": 0.35
+   },
+   "source_b": "PS N83 s. [15, 21, 24, 26, 27, 29, 30, 34, 35, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-032-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 32",
+   "claim_a": {
+    "owner": "Breitwiesch Mattl / Söllner zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Wolitz Gregor",
+    "sim": 0.279
+   },
+   "source_b": "PS N83 s. [13, 21, 23, 31, 34, 35] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-033-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 33",
+   "claim_a": {
+    "owner": "Pfarrer Johann Leopold Kaulßgütlle"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Beckhlach Wurfl",
+    "sim": 0.273
+   },
+   "source_b": "PS N83 s. [9, 20, 27] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-034-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 34",
+   "claim_a": {
+    "owner": "Krischan / Marla / Bauerin / zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Eidlald Wurfl",
+    "sim": 0.3
+   },
+   "source_b": "PS N83 s. [9, 15, 17, 20, 33, 35] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-036-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 36",
+   "claim_a": {
+    "owner": "Krischan / Marla / Bauerin / zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Krishnar Wurfl",
+    "sim": 0.537
+   },
+   "source_b": "PS N83 s. [9, 10, 11, 13, 16, 17, 19, 20, 21, 23, 26, 36] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "FUZZY (delna podobnost imen)"
+  },
+  {
+   "conflict_id": "CH-037-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 37",
+   "claim_a": {
+    "owner": "Krischan / Peter / Bauer in Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Krishnar Peter",
+    "sim": 0.564
+   },
+   "source_b": "PS N83 s. [9, 10, 11, 13, 17, 19, 20, 24] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "FUZZY (delna podobnost imen)"
+  },
+  {
+   "conflict_id": "CH-040-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 40",
+   "claim_a": {
+    "owner": "Pfarrer Rupert Sautter hiesig"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Peter Muster",
+    "sim": 0.432
+   },
+   "source_b": "PS N83 s. [11, 12, 13, 14, 15, 21, 25, 26, 31, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-041-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 41",
+   "claim_a": {
+    "owner": "Pöchinger Georg Leinwand Fabrikant"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Reuschard Franz",
+    "sim": 0.356
+   },
+   "source_b": "PS N83 s. [4, 11, 12, 13, 14, 15, 21, 26, 31, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-042-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 42",
+   "claim_a": {
+    "owner": "Pöchinger Malfa Leinwand Fabrikant"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Peter Muster",
+    "sim": 0.286
+   },
+   "source_b": "PS N83 s. [11, 12, 13, 14, 15, 25, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-043-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 43",
+   "claim_a": {
+    "owner": "Grübler Maria Leutnerin zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Ulrich Peter",
+    "sim": 0.4
+   },
+   "source_b": "PS N83 s. [6, 9, 11, 12, 13, 14, 16, 25, 26, 33] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-044-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 44",
+   "claim_a": {
+    "owner": "Husitsch Maria Bauersleute / zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Matthäus Muster",
+    "sim": 0.391
+   },
+   "source_b": "PS N83 s. [11, 16, 17, 18, 19, 20, 24, 26] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-046-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 46",
+   "claim_a": {
+    "owner": "Lahodathar / Wittib Lahodatharin"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Strauß Georg",
+    "sim": 0.263
+   },
+   "source_b": "PS N83 s. [7, 12, 26, 32, 54] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-047-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 47",
+   "claim_a": {
+    "owner": "Widow Katharina Brandl in Grübln / Gütlerin"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "(R)abitscher Marbl",
+    "sim": 0.314
+   },
+   "source_b": "PS N83 s. [7, 8, 10, 12, 14, 23, 24, 25, 26, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-048-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 48",
+   "claim_a": {
+    "owner": "Höchsthaler Georg bürgerl. Hofg'sitzl."
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "(R)abitscher Georg",
+    "sim": 0.383
+   },
+   "source_b": "PS N83 s. [7, 12, 14, 23, 24, 25, 28, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-051-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 51",
+   "claim_a": {
+    "owner": "Urich Pattle / Bauer zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Urbas Peter",
+    "sim": 0.353
+   },
+   "source_b": "PS N83 s. [4, 5, 6, 8, 16, 21, 23, 43, 55] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-058-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 58",
+   "claim_a": {
+    "owner": "Stipanitsch Jakob Brauhaußgütler"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Pogacar Michl",
+    "sim": 0.341
+   },
+   "source_b": "PS N83 s. [4, 13, 14, 23] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-060-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 60",
+   "claim_a": {
+    "owner": "Penzig Stuffe Leuthold zu Grüble"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Kirschan Georg",
+    "sim": 0.244
+   },
+   "source_b": "PS N83 s. [5, 6, 14, 15, 16, 17, 23, 31] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-061-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 61",
+   "claim_a": {
+    "owner": "Tillak Nikla bürgerl. zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Feldt Mäda",
+    "sim": 0.171
+   },
+   "source_b": "PS N83 s. [5, 6, 8, 9, 13, 14, 19, 43] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-062-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 62",
+   "claim_a": {
+    "owner": "Brinczhan / Witwe Brinczhan Gütlin"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Kirschan Mäda",
+    "sim": 0.293
+   },
+   "source_b": "PS N83 s. [5, 13, 14, 16, 17, 18, 19, 20, 43] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-063-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 63",
+   "claim_a": {
+    "owner": "Brincz Maria Leutnerin zu Grübln"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Poiding Hanl",
+    "sim": 0.256
+   },
+   "source_b": "PS N83 s. [7, 8, 13, 14, 16, 18, 20, 48] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-064-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 64",
+   "claim_a": {
+    "owner": "Veritscher Wirts Leibkinds Gsöll"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Urban Pankrazgall",
+    "sim": 0.267
+   },
+   "source_b": "PS N83 s. [4, 9, 14, 16, 20, 26, 31, 36] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-065-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 65",
+   "claim_a": {
+    "owner": "Widhann Georg häusler und Gärtner"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Schimeczkhanl",
+    "sim": 0.238
+   },
+   "source_b": "PS N83 s. [7, 8, 16, 36, 43] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-066-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 66",
+   "claim_a": {
+    "owner": "Widhann Georg häusler und Gärtner"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Reuschard Franz",
+    "sim": 0.326
+   },
+   "source_b": "PS N83 s. [4, 6, 8, 17, 36] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-068-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 68",
+   "claim_a": {
+    "owner": "Rappare Wirthsleuths hiesig"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Häusler Mache",
+    "sim": 0.324
+   },
+   "source_b": "PS N83 s. [17, 23, 30, 31, 34, 35, 43] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CH-069-01",
+   "conflict_type": "owner_state_pua_vs_ps",
+   "entity": "hiša 69",
+   "claim_a": {
+    "owner": "Christian Brandl in Grübln / Bauer"
+   },
+   "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
+   "claim_b": {
+    "owner": "Schimey Wenzel",
+    "sim": 0.244
+   },
+   "source_b": "PS N83 s. [4, 5, 16, 43, 45, 47, 48, 50] (končno stanje 1825, PARTIAL 55/143)",
+   "status": "OPEN",
+   "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
+   "note": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+  },
+  {
+   "conflict_id": "CF-F1",
+   "conflict_type": "named_finding",
+   "entity": "najdba F1",
+   "claim_a": {
+    "opis": "F1 SISTEMSKO: PT lastniška imena NEZANESLJIVA (isti bp med prehodi dobi 3-4 različna imena: bp 82-84 = Hunziker Marcel / Hraupf Georg / Hans Georg / Krauß Georg) — slaba kakovost skena; PUA = edina lastniška avtoriteta; PT uporaben LEKO strukturno (bp↔h)"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "DOCUMENTED",
+   "what_would_resolve": "metodološka doktrina (PT imena nestabilna; PS korooboracija = razsodnik, val 58 F10)"
+  },
+  {
+   "conflict_id": "CF-F2",
+   "conflict_type": "named_finding",
+   "entity": "najdba F2",
+   "claim_a": {
+    "opis": "F2 POMIK VRSTIC: p7-rep zoom branja ima +1 pomik vrstic (90-97); večinski glasovi (val41+val52+PUA opombe) razrešijo"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "DOCUMENTED",
+   "what_would_resolve": "bralni artefakt pomika vrstic; večinski glasovi razrešujejo"
+  },
+  {
+   "conflict_id": "CF-F3",
+   "conflict_type": "named_finding",
+   "entity": "najdba F3",
+   "claim_a": {
+    "opis": "F3 ZEMLJEVID bp 98 NEPODPRTO: opomba 'B.P. 98' ne obstaja — no. 7 (h.70, Grübler Maria Leutnerin) ima 'B.P. 90.', Zollamt (no. 95) brez opombe, PT bp 98 = h.20/39/50; verjetna zmeda 90↔98 pri val 52; popravek v zemljevid (VERIFIED-2x → REVIEW-CONFLICT)"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "PARTIALLY_RESOLVED",
+   "what_would_resolve": "val 56 P2-E15: vezava B.P. 98↔Zollamt ponovno vzpostavljena (opomba v nadaljevalni vrstici); hišna vezava h.70 vs h.20/39/50 ostaja → cf. CB-098"
+  },
+  {
+   "conflict_id": "CF-F4",
+   "conflict_type": "named_finding",
+   "entity": "najdba F4",
+   "claim_a": {
+    "opis": "F4 KURRENT 3↔5: PT 46/48→'h.63' 2× STABLE, a PUA opomba h.65='B.P. 46. 48.' + zoom 47→65 → 63 je verjetno napačno branje 65"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PT p5/p7 (P2-E15)"
+  },
+  {
+   "conflict_id": "CF-F5",
+   "conflict_type": "named_finding",
+   "entity": "najdba F5",
+   "claim_a": {
+    "opis": "F5 KURRENT 2↔3: PUA h.29 opomba 'B.P. 95. 97.' vs PT 95→h.39/40, 97→h.35/38 — 29↔39 dvom"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA h.29 okolice + PT p7"
+  },
+  {
+   "conflict_id": "CF-F6",
+   "conflict_type": "named_finding",
+   "entity": "najdba F6",
+   "claim_a": {
+    "opis": "F6 bp 76 KONFLIKT: PT 76→h.51 (2× STABLE) vs PUA opomba h.28 vključuje '76.' — zemljevid spuščen na REVIEW-CONFLICT"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "OPEN",
+   "what_would_resolve": "polna ločljivost PUA p30 + PT p7"
+  },
+  {
+   "conflict_id": "CF-F7",
+   "conflict_type": "named_finding",
+   "entity": "najdba F7",
+   "claim_a": {
+    "opis": "F7 bp 86 ŠIBKO: opomba 'b. P. 56. 38.' ne vsebuje 86; PT 86→h.37 konflikt → REVIEW-CONFLICT"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "PARTIALLY_RESOLVED",
+   "what_would_resolve": "val 57: opomba »b. P. 56. 38.« znak-po-znak potrjena @ nativno ločljivost; vezava bp 86 ostaja REVIEW-CONFLICT → cf. CB-086"
+  },
+  {
+   "conflict_id": "CF-F8",
+   "conflict_type": "named_finding",
+   "entity": "najdba F8",
+   "claim_a": {
+    "opis": "F8 NAJMOČNEJŠA VEZ: bp 94→h.40 = 3 neodvisni viri (val41+52+53) + PUA no. 38 → nadgrajena na VERIFIED-2x"
+   },
+   "source_a": "pt-n83/reconciliation.json headline_findings (val 54)",
+   "claim_b": null,
+   "source_b": null,
+   "status": "RESOLVED",
+   "what_would_resolve": "bp 94→h.40 = 3 neodvisni viri + PUA no. 38 → VERIFIED-2x (najmočnejša vez)"
+  }
+ ]
+}

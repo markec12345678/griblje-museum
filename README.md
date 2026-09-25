@@ -4,6 +4,9 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **112. sklop — ATLAS 1825 PASS 2: House + BP reconciliation (59. val, 2026-09-25)**
+> **4 centralna registra** (`research-griblje/atlas-1825/`): house-register 167 hiš (49 CONFLICT / 13 PARTIAL / 32 SINGLE_SOURCE / 73 UNKNOWN_SEMANTICS; hiše 73–78 v nobenem viru) · bp-house-reconciliation 100 BP (FOUND 2 / UNCERTAIN 39 / CONFLICT 54 / NOT_FOUND 5) · conflict-register **113 konfliktov** (54 CB + 51 CH + 8 CF, vsi z what_would_resolve) · person-owner register 488 oseb (161 possible_duplicate, **0 združitev**) · deterministično obnovljivo ob PS 143/143 · +0 virov/+0 trditev/+0 UI
+>
 > **111. sklop — PS N83 analiza v1: tritralna kontrola PUA↔PS↔PT + Fürtrag veriga (58. val, 2026-09-25)**
 > **F9**: PUA↔PS = različni lastniški stanji (50/51 hiš MISMATCH, premik izključen; pfand opombe p12) — PUA = pripravljalno stanje, PS = končni protokol 1825 · **F10**: PS↔PT soglasja (h.45 Strauß/Krauß 0,84) → val 54 »Krauß Georg« potrjena; F1 doktrina revizija (PUA avtoriteta za pripravljalno stanje + B.P. vezave, PS+PT za končno) · **F11**: Fürtrag = tekoči indeks Jaethe (p5=2 → p54=52) · F12: meja p40 = ne-lokalni lastniki »1 / N« · +0 virov/+0 trditev/+0 UI · surovine ps-n83/analysis-v1.json
 >

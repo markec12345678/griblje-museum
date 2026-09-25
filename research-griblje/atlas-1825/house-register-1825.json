@@ -1,0 +1,8261 @@
+{
+ "val": "59",
+ "pass": 2,
+ "issue": "#42 §2",
+ "title": "HOUSE REGISTER 1825 — hiše Gribelj, združen pregled PUA/PS/PT/A01",
+ "method": {
+  "rules": [
+   "house_no ≠ BP ≠ parcela (ločeni model)",
+   "nič ugibanja",
+   "imena ne-združena; konflikti ostajajo",
+   "vsak podatek z virom/stranjo"
+  ],
+  "evidence_status_logic": {
+   "AGREE": "PUA+PS lastnik podoben (token LCS ≥0.7)",
+   "PARTIAL": "PUA+PS delno podoben (0.5–0.7) ALI ≥2 vira brez PUA+PS parice",
+   "CONFLICT": "PUA+PS nesoglasje (F9 različni stanji — obe trditvi ohranjeni, cf. conflict register)",
+   "SINGLE_SOURCE": "samo en vir",
+   "UNKNOWN": "brez lastniškega dokaza",
+   "UNKNOWN_SEMANTICS": "sestavljen '1 / N' sklic (F12 TO-DECODE)"
+  },
+  "ps_coverage_warning": "PS bloki za hiše 70–78 (vključno Zollamt h.70) čakajo p56–p143"
+ },
+ "provenance": {
+  "pua": "pua-n83/register.json (98 vpisov, val 51+57)",
+  "pt": "pt-n83/register.json (100 vrstic, val 53) + pt-n83/reconciliation.json (val 54+56+57)",
+  "ps": "ps-n83/register.json (1.073 vrstic, 55/143 strani, val 57) + ps-n83/analysis-v1.json (val 58)",
+  "bp_matrix": "raw-web-val57-2026-10/bp-house-matrix.json (100 vrstic, val 57)",
+  "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)"
+ },
+ "coverage": {
+  "CONFLICT": 49,
+  "SINGLE_SOURCE": 32,
+  "PARTIAL": 13,
+  "UNKNOWN_SEMANTICS": 73
+ },
+ "houses_total": 167,
+ "houses": [
+  {
+   "house_id": "H-000",
+   "house_no_1825": "0",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Commenda Fischerwies",
+      "page": 6,
+      "entry_no": "9",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 13,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Gemeinde",
+     "stand": null,
+     "pages": [
+      4,
+      12,
+      41,
+      47,
+      48,
+      51,
+      55
+     ],
+     "rows": 12,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.37,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 13,
+    "ps_rows": 12,
+    "ps_kultur": {
+     "Wald": 1,
+     "Wiese": 1,
+     "Hutweide": 1,
+     "Acker": 6,
+     "Gartn": 1,
+     "Lohd": 1,
+     "o. Rieg": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-000-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-000",
+   "house_no_1825": "00",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Stuker Michl",
+     "stand": "~",
+     "pages": [
+      29
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Läuige": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-000-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-001",
+   "house_no_1825": "1",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Mellachitsch Waise Leopold von / Ungaritsch gewesene Mellachitsch.",
+      "page": 3,
+      "entry_no": "1",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 18,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Schönitisch Major",
+      "page": 35,
+      "entry_no": "69",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 33,
+      "annotation_original": "B.P. ca. 10."
+     },
+     {
+      "owner_original": "Schinig Major",
+      "page": 35,
+      "entry_no": "70",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Watschinger Wirts Leibkinds Gsöll / Gemeinde Riedstätt",
+      "page": 45,
+      "entry_no": "92",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 13,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Barbara Muster",
+     "stand": null,
+     "pages": [
+      11,
+      35,
+      45,
+      47,
+      48,
+      50,
+      55
+     ],
+     "rows": 12,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Achmüth Malfg.",
+      "Christof Malfa",
+      "Christof Malfal",
+      "Christof Muffel"
+     ],
+     "bps": [
+      "24",
+      "25"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.143,
+   "bp_refs": [
+    {
+     "bp": 24,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 25,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 65,
+    "ps_rows": 12,
+    "ps_kultur": {
+     "Schindel. Wald": 1,
+     "Acker": 5,
+     "Hüte": 1,
+     "Lohd": 1,
+     "Wiese": 2,
+     "Einhof": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-001-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-002",
+   "house_no_1825": "2",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Hiebetz Johann Bauersleute / zu Grübln",
+      "page": 11,
+      "entry_no": "18",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 42,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Höppets Georg bürgerl. Hofsitzer",
+      "page": 23,
+      "entry_no": "46",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "zu Grublh. in Höchsthal.",
+      "n_parcels": 7,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Heideri Anna",
+     "stand": null,
+     "pages": [
+      45,
+      47,
+      48,
+      55
+     ],
+     "rows": 12,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Hlady Johann",
+      "Hölzly Hanu",
+      "Hölzly Johann"
+     ],
+     "bps": [
+      "26"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.326,
+   "bp_refs": [
+    {
+     "bp": 26,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 49,
+    "ps_rows": 12,
+    "ps_kultur": {
+     "Wiese": 2,
+     "Lohd": 3,
+     "Acker": 5,
+     "Wise": 1,
+     "Einhof": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-002-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-003",
+   "house_no_1825": "3",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Draschisch Jörgen Lorenz / und Begusche / Gänßlin in Adelsberg",
+      "page": 7,
+      "entry_no": "11",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 17,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Sankowitsch Johann Rieder",
+      "page": 15,
+      "entry_no": "29",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "zu Schönboden",
+      "n_parcels": 0,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Christan / Wörfl / Einwohner hiesig",
+      "page": 16,
+      "entry_no": "70",
+      "review_status": "REVIEW",
+      "residence_original": "hiesig",
+      "n_parcels": 38,
+      "annotation_original": "B. P. 22."
+     },
+     {
+      "owner_original": "Dienstbot Johann Seiz",
+      "page": 36,
+      "entry_no": "73",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "zu Waidhofen",
+      "n_parcels": 1,
+      "annotation_original": "D.P. 15.16.18"
+     }
+    ],
+    "ps": {
+     "owner_original": "Dragosch Georg",
+     "stand": null,
+     "pages": [
+      45,
+      47,
+      48,
+      50,
+      55
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Thomas Mally"
+     ],
+     "bps": [
+      "61"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.381,
+   "bp_refs": [
+    {
+     "bp": 22,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 61,
+     "final_status": "UNRESOLVED"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 56,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Acker": 5,
+     "Einhof und Baumgarten": 1,
+     "Hutweide": 1,
+     "Stöger": 2
+    }
+   },
+   "conflict_ids": [
+    "CH-003-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-004",
+   "house_no_1825": "4",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Dragosch, Maria, bauerin, zu Dragosch / gemindt. Holzschildk.",
+      "page": 8,
+      "entry_no": "12",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 0,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Noah N[?] Bauerhäuslbesitzer zu Grübln",
+      "page": 27,
+      "entry_no": "51[?]",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 0,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Novak Mihelc",
+     "stand": null,
+     "pages": [
+      14,
+      28,
+      45,
+      48
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.237,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Žitno": 1,
+     "Lobing[?]": 1,
+     "Wiese": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-004-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-005",
+   "house_no_1825": "5",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Dragosch, georg, bauer, zu Dragosch / gemindt. Holzschildk.",
+      "page": 8,
+      "entry_no": "13",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 19,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Brugt Joh. Riedler",
+      "page": 36,
+      "entry_no": "72",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "zu Grüble",
+      "n_parcels": 40,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Hauschild Mathä",
+     "stand": null,
+     "pages": [
+      27,
+      49,
+      50,
+      51,
+      55
+     ],
+     "rows": 11,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [],
+     "bps": [
+      "100"
+     ],
+     "pages": [
+      7
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.333,
+   "bp_refs": [
+    {
+     "bp": 100,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 59,
+    "ps_rows": 11,
+    "ps_kultur": {
+     "Acker": 8,
+     "Wald": 1,
+     "48 Fürsteß": 1,
+     "Waldweg": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-005-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-006",
+   "house_no_1825": "6",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Husitsch Barbara des Grädlers / Ehefrau",
+      "page": 11,
+      "entry_no": "20",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 2,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Schafschlader Hann Leidensgüttin",
+      "page": 12,
+      "entry_no": "22",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 40,
+      "annotation_original": "B. P. m. m."
+     },
+     {
+      "owner_original": "Pacharotte Michael bauer und der Gemeine",
+      "page": 33,
+      "entry_no": "66",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Wandsteiner Mihl. baur. zu Grübln",
+      "page": 46,
+      "entry_no": "93",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 3,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Hiesige Gemeinde / Grübln",
+      "page": 48,
+      "entry_no": "96",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 91,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Lorbltcher Hauffl",
+     "stand": "Bauer",
+     "pages": [
+      4,
+      5,
+      6,
+      45,
+      47,
+      48,
+      49,
+      50,
+      53
+     ],
+     "rows": 18,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Achmüth Groß",
+      "Lorber gorg",
+      "Lorenz gspan",
+      "Zu Hoffstätten Ghan[?]",
+      "Zu Noftstätten Buncha",
+      "Zu Noftstätten Schur"
+     ],
+     "bps": [
+      "13",
+      "14",
+      "30"
+     ],
+     "pages": [
+      3,
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.327,
+   "bp_refs": [
+    {
+     "bp": 13,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 14,
+     "final_status": "UNRESOLVED"
+    },
+    {
+     "bp": 30,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 137,
+    "ps_rows": 18,
+    "ps_kultur": {
+     "Acker": 9,
+     "Läuger Hof": 1,
+     "Wiese": 2,
+     "Lohg": 1,
+     "Einhof": 1,
+     "Hutweide": 2,
+     "Stöger": 1,
+     "Weg": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-006-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-007",
+   "house_no_1825": "7",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Sankovitsch Walf.",
+      "page": 14,
+      "entry_no": "26",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "Zogwitsche.",
+      "n_parcels": 2,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Liechtenst. Mandl",
+      "page": 24,
+      "entry_no": "47",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 33,
+      "annotation_original": "b.P. 17."
+     },
+     {
+      "owner_original": "Procurat Miko Laurin / Landpfleger zu / Gräving.",
+      "page": 34,
+      "entry_no": "67",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Gräving.",
+      "n_parcels": 4,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Wandsteiner Balth. baur. zu Grübln",
+      "page": 46,
+      "entry_no": "94",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 2,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Leibniz Mathäus",
+     "stand": "~",
+     "pages": [
+      5,
+      14,
+      33,
+      45,
+      49
+     ],
+     "rows": 7,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.345,
+   "bp_refs": [
+    {
+     "bp": 17,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 41,
+    "ps_rows": 7,
+    "ps_kultur": {
+     "Acker": 3,
+     "Žitno": 1,
+     "Hutweide": 1,
+     "Wiese": 2
+    }
+   },
+   "conflict_ids": [
+    "CH-007-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-008",
+   "house_no_1825": "8",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Maurerisch Johann Bäckersleute / zu Waidhofen",
+      "page": 11,
+      "entry_no": "21",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Schafschlader Mütze Leidensgüttin",
+      "page": 12,
+      "entry_no": "23",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 28,
+      "annotation_original": "B. P. 11/12. 12."
+     }
+    ],
+    "ps": {
+     "owner_original": "Gemeinde",
+     "stand": "bauer",
+     "pages": [
+      6,
+      28,
+      43,
+      45,
+      48,
+      49
+     ],
+     "rows": 11,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Zu Hoffstätten muke[?]",
+      "Zu Noftstätten Marlo"
+     ],
+     "bps": [
+      "12",
+      "12½"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.255,
+   "bp_refs": [
+    {
+     "bp": 11,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 12,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 29,
+    "ps_rows": 11,
+    "ps_kultur": {
+     "Acker": 5,
+     "G.Wiese": 1,
+     "Lobising[?]": 1,
+     "Lobing[?]": 1,
+     "Löhpr": 1,
+     "Wald": 1,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-008-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-009",
+   "house_no_1825": "9",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Jakoffitschek / Hans Bauer hiesig",
+      "page": 13,
+      "entry_no": "24",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Stadtpfarrkirche[?]",
+     "stand": null,
+     "pages": [
+      28,
+      45,
+      55
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Zu Hoffstätten Marx[?]",
+      "Zu Noftstätten Marle"
+     ],
+     "bps": [
+      "11"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.273,
+   "bp_refs": [
+    {
+     "bp": 11,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 1,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Lobing[?]\nGartn": 1,
+     "Lobing[?]": 1,
+     "Hütung": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-009-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-010",
+   "house_no_1825": "10",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Jakoffitschek / Maria Bauerin hiesig",
+      "page": 13,
+      "entry_no": "25",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 29,
+      "annotation_original": "D. R. q."
+     },
+     {
+      "owner_original": "Liese / Wörflin / Einwohnerin hiesig",
+      "page": 16,
+      "entry_no": "71",
+      "review_status": "REVIEW",
+      "residence_original": "hiesig",
+      "n_parcels": 31,
+      "annotation_original": "B. P. 222."
+     }
+    ],
+    "ps": {
+     "owner_original": "Rödig matthl",
+     "stand": null,
+     "pages": [
+      25,
+      45,
+      49,
+      50,
+      55
+     ],
+     "rows": 10,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Hans Malfal",
+      "Hans Mayrl",
+      "Hans Muffel",
+      "Zu Hoffstättten Mih[?]",
+      "Zu Noftstätten Michl"
+     ],
+     "bps": [
+      "10",
+      "21",
+      "22",
+      "9"
+     ],
+     "pages": [
+      3,
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.238,
+   "bp_refs": [
+    {
+     "bp": 9,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 10,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 21,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 22,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 60,
+    "ps_rows": 10,
+    "ps_kultur": {
+     "Ried": 1,
+     "Acker": 8,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-010-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-011",
+   "house_no_1825": "11",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Peter P[?] Häuslbesitzer zu Grübln",
+      "page": 27,
+      "entry_no": "52[?]",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 0,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Pölling Georg",
+     "stand": "~",
+     "pages": [
+      6,
+      45,
+      49,
+      50,
+      55
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Lebring Math",
+      "Nikolaus Groß",
+      "Peter Gorg",
+      "Peter Gspan",
+      "Veitig Philipp[?]"
+     ],
+     "bps": [
+      "23",
+      "8"
+     ],
+     "pages": [
+      3,
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.308,
+   "bp_refs": [
+    {
+     "bp": 8,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 23,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Wiese": 1,
+     "Acker": 5,
+     "Gartn": 1,
+     "Hutweide": 2
+    }
+   },
+   "conflict_ids": [
+    "CH-011-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-012",
+   "house_no_1825": "12",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Liechtensth. Murgi",
+      "page": 24,
+      "entry_no": "48",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 17,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Stadtpfarrkirche[?]",
+     "stand": null,
+     "pages": [
+      28,
+      32,
+      45,
+      48,
+      49,
+      55
+     ],
+     "rows": 10,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.25,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 17,
+    "ps_rows": 10,
+    "ps_kultur": {
+     "Hutweide": 1,
+     "Lobing[?]\nGartn": 1,
+     "Acker": 4,
+     "Wiese": 4
+    }
+   },
+   "conflict_ids": [
+    "CH-012-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-013",
+   "house_no_1825": "13",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pavlic Georg",
+     "stand": null,
+     "pages": [
+      28,
+      43,
+      55
+     ],
+     "rows": 8,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 8,
+    "ps_kultur": {
+     "Lobing[?]\nGartn": 1,
+     "Lobing[?]": 2,
+     "Acker": 4,
+     "Wiese / Waid": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-014",
+   "house_no_1825": "14",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Ludwig Matzen",
+     "stand": "~",
+     "pages": [
+      5,
+      13,
+      17,
+      43,
+      49,
+      50
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Lebring math."
+     ],
+     "bps": [
+      "8½"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Acker": 6,
+     "Hutweid": 1,
+     "Stöger": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-015",
+   "house_no_1825": "15",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Tillach Peter",
+     "stand": null,
+     "pages": [
+      10,
+      23,
+      28,
+      54
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Acker": 1,
+     "Wiese": 1,
+     "Lobing[?]\nGartn": 1,
+     "Lichtw.": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-016",
+   "house_no_1825": "16",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Michael Leidner zu Grübln",
+      "page": 17,
+      "entry_no": "32",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Grübln",
+      "n_parcels": 31,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "P. Rieger, Wirths Besitzer zu Grübln",
+      "page": 28,
+      "entry_no": "35",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 23,
+      "annotation_original": "B. St. 78."
+     }
+    ],
+    "ps": {
+     "owner_original": "Pechl[?] hauptl",
+     "stand": null,
+     "pages": [
+      4,
+      5,
+      9,
+      23,
+      43,
+      54
+     ],
+     "rows": 17,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Tillan Mih[?]",
+      "Tillein Math"
+     ],
+     "bps": [
+      "6"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.303,
+   "bp_refs": [
+    {
+     "bp": 6,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 54,
+    "ps_rows": 17,
+    "ps_kultur": {
+     "Acker": 11,
+     "~": 1,
+     "Lohholz": 1,
+     "Wald": 1,
+     "Lichtw.": 2,
+     "Stagaz": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-016-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-017",
+   "house_no_1825": "17",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Lorenz Leidner zu Grübln",
+      "page": 17,
+      "entry_no": "33",
+      "review_status": "REVIEW",
+      "residence_original": "Grübln",
+      "n_parcels": 38,
+      "annotation_original": "B.p.s."
+     },
+     {
+      "owner_original": "Gnadenstifts Güter / Landeshultspfarrer",
+      "page": 36,
+      "entry_no": "71",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 2,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Eidlald Wurfl",
+     "stand": "1832",
+     "pages": [
+      9,
+      54,
+      55
+     ],
+     "rows": 7,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Kneel Hanse",
+      "Nikol. Hannes[?]"
+     ],
+     "bps": [
+      "5"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.364,
+   "bp_refs": [
+    {
+     "bp": 5,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 40,
+    "ps_rows": 7,
+    "ps_kultur": {
+     "Lohholz": 1,
+     "Wiese": 1,
+     "Hutweide": 3,
+     "Acker": 1,
+     "Lichtw.": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-017-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-018",
+   "house_no_1825": "18",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Schim von Pater Bardeleßky / [nečitljivo]",
+      "page": 37,
+      "entry_no": "74",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 28,
+      "annotation_original": "L. p."
+     }
+    ],
+    "ps": {
+     "owner_original": "Breugl Georg",
+     "stand": "~",
+     "pages": [
+      5,
+      8,
+      34,
+      54
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Schmieg Barbara",
+      "Thomas Johan[?]"
+     ],
+     "bps": [
+      "3"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.279,
+   "bp_refs": [
+    {
+     "bp": 3,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 28,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Acker": 2,
+     "Grund / Garten": 1,
+     "6 Einträg.": 1,
+     "Lichtw.": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-018-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-019",
+   "house_no_1825": "19",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Schim von Wirth Bardeleßky",
+      "page": 37,
+      "entry_no": "75",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 17,
+      "annotation_original": "L. p. n."
+     }
+    ],
+    "ps": {
+     "owner_original": "Thomas Malfg",
+     "stand": null,
+     "pages": [
+      21,
+      54
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Schmieg Marthl",
+      "Thomas Marfa[?]"
+     ],
+     "bps": [
+      "4"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.242,
+   "bp_refs": [
+    {
+     "bp": 4,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 17,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 1,
+     "Stagaz": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-019-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-020",
+   "house_no_1825": "20",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Johann Michael Rieger, Besitzer zu Grübln",
+      "page": 28,
+      "entry_no": "36",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 19,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Huber Wolfpaul Bauer zu Grüble",
+      "page": 38,
+      "entry_no": "76",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Grüble",
+      "n_parcels": 49,
+      "annotation_original": "B. P. h."
+     }
+    ],
+    "ps": {
+     "owner_original": "Lappary Marbl",
+     "stand": null,
+     "pages": [
+      7,
+      14,
+      28,
+      33,
+      35,
+      36,
+      37,
+      39,
+      54
+     ],
+     "rows": 11,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Bering Malfa",
+      "Brinc Muffa",
+      "Brönig Malfa",
+      "Brünig Malfa",
+      "Milling Johann",
+      "Müller Johann"
+     ],
+     "bps": [
+      "37",
+      "38"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.255,
+   "bp_refs": [
+    {
+     "bp": 37,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 38,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 68,
+    "ps_rows": 11,
+    "ps_kultur": {
+     "Lehngut Hfl.": 1,
+     "Žitno": 1,
+     "Acker": 3,
+     "Wiese": 2,
+     "Wiese und": 1,
+     "Lobig und Riedl": 1,
+     "Garten": 1,
+     "Gartn.": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-020-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-021",
+   "house_no_1825": "21",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Sankowitsch Joseph",
+      "page": 15,
+      "entry_no": "28",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "zu Grübln",
+      "n_parcels": 0,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Pfarrer Michael Sautter hiesig",
+      "page": 29,
+      "entry_no": "37",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 36,
+      "annotation_original": "R.P. 17.20."
+     }
+    ],
+    "ps": {
+     "owner_original": "Urich Peter",
+     "stand": "~",
+     "pages": [
+      5,
+      54
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Gepay Michle",
+      "Gorgy Michle",
+      "Pepay Michle",
+      "Pepay Michlo",
+      "Seyfrid Miko"
+     ],
+     "bps": [
+      "27",
+      "28"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.296,
+   "bp_refs": [
+    {
+     "bp": 27,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 28,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 36,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Acker": 2,
+     "Lichtw.": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-021-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-022",
+   "house_no_1825": "22",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Brincz Marfil Louise Wittibin.",
+      "page": 3,
+      "entry_no": "2",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 35,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Müller Johann Wirthsleuths hiesig",
+      "page": 25,
+      "entry_no": "50",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "hiesig",
+      "n_parcels": 26,
+      "annotation_original": "D. J. 16."
+     },
+     {
+      "owner_original": "Uebl Georg Söllner zu Grübln",
+      "page": 43,
+      "entry_no": "88",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Grübln",
+      "n_parcels": 35,
+      "annotation_original": "D. I. 56, 57, 58."
+     }
+    ],
+    "ps": {
+     "owner_original": "Müller Johann",
+     "stand": null,
+     "pages": [
+      9,
+      12,
+      13,
+      30,
+      36,
+      54
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.263,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 96,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Acker": 3,
+     "Riden": 1,
+     "Lobig und Riedl": 1,
+     "Riedl": 2,
+     "Lobig": 1,
+     "Hutweide": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-022-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-023",
+   "house_no_1825": "23",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schimer Hans",
+     "stand": "~",
+     "pages": [
+      5,
+      27,
+      30,
+      31,
+      36,
+      37,
+      38,
+      39
+     ],
+     "rows": 12,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 12,
+    "ps_kultur": {
+     "Acker": 5,
+     "Lohigg": 1,
+     "Riedl": 1,
+     "Güben": 1,
+     "Wald.": 2,
+     "Garten": 1,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-024",
+   "house_no_1825": "24",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Brincz Marjan",
+      "page": 4,
+      "entry_no": "3",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 43,
+      "annotation_original": "D. R. 32."
+     },
+     {
+      "owner_original": "Johann Wurzer, bauernd hiesig",
+      "page": 9,
+      "entry_no": "15",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "hiesig",
+      "n_parcels": 44,
+      "annotation_original": "P. T. n. 70."
+     }
+    ],
+    "ps": {
+     "owner_original": "Vilter Wulffj",
+     "stand": null,
+     "pages": [
+      18,
+      27,
+      28,
+      29,
+      30,
+      31,
+      36,
+      37,
+      38,
+      39
+     ],
+     "rows": 20,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.25,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 87,
+    "ps_rows": 20,
+    "ps_kultur": {
+     "Acker": 8,
+     "Wiese": 2,
+     "Lhlo": 1,
+     "Lobig": 1,
+     "Riedl": 2,
+     "Gruben": 2,
+     "Wald.": 2,
+     "Reben": 1,
+     "Läderg": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-024-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-025",
+   "house_no_1825": "25",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Brincz Wendel",
+      "page": 4,
+      "entry_no": "4",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 31,
+      "annotation_original": "D. R. 29."
+     }
+    ],
+    "ps": {
+     "owner_original": "Ring Mito",
+     "stand": null,
+     "pages": [
+      27,
+      28,
+      29,
+      31,
+      36,
+      37,
+      38
+     ],
+     "rows": 12,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.3,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 31,
+    "ps_rows": 12,
+    "ps_kultur": {
+     "Acker": 6,
+     "Wiese": 1,
+     "Riedl": 1,
+     "Güben": 1,
+     "Wald.": 3
+    }
+   },
+   "conflict_ids": [
+    "CH-025-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-026",
+   "house_no_1825": "26",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Brincz Johann Bauer zu Grübln",
+      "page": 5,
+      "entry_no": "5",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 45,
+      "annotation_original": "B. P. M."
+     },
+     {
+      "owner_original": "Sankovitsch Lorenz",
+      "page": 14,
+      "entry_no": "27",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "Zogwitsche",
+      "n_parcels": 4,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Feldt Peter",
+     "stand": "~",
+     "pages": [
+      5,
+      7,
+      18,
+      19,
+      26,
+      27,
+      29,
+      30,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+     ],
+     "rows": 36,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Bartl Järgy",
+      "Lorenz Glan"
+     ],
+     "bps": [
+      "42"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.114,
+   "bp_refs": [
+    {
+     "bp": 42,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 49,
+    "ps_rows": 36,
+    "ps_kultur": {
+     "Acker": 18,
+     "Lehngut": 1,
+     "Wiesen": 1,
+     "Gübel": 1,
+     "Läuige": 2,
+     "Wald": 1,
+     "Lohigg": 1,
+     "Riedl": 1,
+     "Güben": 1,
+     "Lößgrube": 1,
+     "Gruben": 2,
+     "Wald.": 2,
+     "Garten": 1,
+     "Läderg": 2,
+     "Reben": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-026-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-027",
+   "house_no_1825": "27",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Malleßthak [?] Han Bauw [?] Han Güßla [?]",
+      "page": 26,
+      "entry_no": "51",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 39,
+      "annotation_original": "D. P. 40."
+     }
+    ],
+    "ps": {
+     "owner_original": "Hoschlar Peter",
+     "stand": null,
+     "pages": [
+      16,
+      17,
+      18,
+      24,
+      26,
+      27,
+      29,
+      30,
+      34,
+      35,
+      37,
+      38
+     ],
+     "rows": 24,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Michel Bartl",
+      "Nicolaus Glan"
+     ],
+     "bps": [
+      "43"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.222,
+   "bp_refs": [
+    {
+     "bp": 43,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 39,
+    "ps_rows": 24,
+    "ps_kultur": {
+     "Stroh": 1,
+     "Rohr": 1,
+     "Acker": 10,
+     "Wald": 3,
+     "Läuige": 2,
+     "Wiese": 1,
+     "Lohigg": 1,
+     "Wiese und Acker": 1,
+     "Lößgrube": 1,
+     "Wald.": 3
+    }
+   },
+   "conflict_ids": [
+    "CH-027-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-028",
+   "house_no_1825": "28",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Brincz Maria Bäuerin zu Grübln",
+      "page": 5,
+      "entry_no": "6",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 37,
+      "annotation_original": "B. S. M."
+     },
+     {
+      "owner_original": "Schimer Georg Bauer zu Grüble",
+      "page": 38,
+      "entry_no": "77",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Grüble",
+      "n_parcels": 30,
+      "annotation_original": "D. T. gb."
+     },
+     {
+      "owner_original": "Breunig Georgy Bauer hiesig",
+      "page": 39,
+      "entry_no": "79",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "hiesig",
+      "n_parcels": 133,
+      "annotation_original": "B.P. 76. 79. 81/82. 93/84."
+     }
+    ],
+    "ps": {
+     "owner_original": "Ring Michl",
+     "stand": "~",
+     "pages": [
+      26,
+      29,
+      30,
+      34,
+      35,
+      37,
+      38,
+      39
+     ],
+     "rows": 21,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Andreas Muth",
+      "Bartl Aß[?]"
+     ],
+     "bps": [
+      "45"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": [
+     {
+      "bp": "76",
+      "owner": "Brincz Maria Bäuerin zu Grübln",
+      "owner_status": "REVIEW-CONFLICT",
+      "link_source": "PUA opomba »B.P. 76. 79. 81/82. 93/84.« (no. 79, p39) KONFLIKT s PT (76→h.51, 2× STABLE) — kontrolo p39/p5 v polni ločljivosti",
+      "owner_page": 5
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.343,
+   "bp_refs": [
+    {
+     "bp": 45,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 76,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 79,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 81,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 82,
+     "final_status": "UNRESOLVED"
+    },
+    {
+     "bp": 84,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 93,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 200,
+    "ps_rows": 21,
+    "ps_kultur": {
+     "Wiesen": 1,
+     "Läuige": 1,
+     "Wiese": 2,
+     "Wald": 2,
+     "Acker": 4,
+     "Güben": 1,
+     "Lößgrube": 2,
+     "Gruben": 3,
+     "Wald.": 2,
+     "Reben": 1,
+     "Läderg": 2
+    }
+   },
+   "conflict_ids": [
+    "CH-028-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-029",
+   "house_no_1825": "29",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Milleg Hanu Bauw [?] Han Grübla [?]",
+      "page": 26,
+      "entry_no": "52",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 22,
+      "annotation_original": "D. J. 24 34"
+     },
+     {
+      "owner_original": "Schimcz Maria Bäurin hiesig",
+      "page": 39,
+      "entry_no": "78",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "hiesig",
+      "n_parcels": 31,
+      "annotation_original": "B.P. 95. 97."
+     }
+    ],
+    "ps": {
+     "owner_original": "Feldt Margreth",
+     "stand": "~",
+     "pages": [
+      5,
+      15,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      36,
+      37,
+      38,
+      39
+     ],
+     "rows": 22,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Bering Malfa",
+      "Brinc Muffa",
+      "Brünig Malfa"
+     ],
+     "bps": [
+      "40"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.222,
+   "bp_refs": [
+    {
+     "bp": 40,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 95,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 97,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 53,
+    "ps_rows": 22,
+    "ps_kultur": {
+     "Acker": 9,
+     "Wiesen": 1,
+     "Gübel": 1,
+     "Wiese": 1,
+     "Wald": 1,
+     "Lobig": 1,
+     "Riedl": 2,
+     "Güben": 1,
+     "Lößgrube": 1,
+     "Wald.": 2,
+     "Garten": 1,
+     "Läderg": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-029-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-030",
+   "house_no_1825": "30",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Tillak Philipp bürgerl. zu Grübln",
+      "page": 10,
+      "entry_no": "16",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 18,
+      "annotation_original": "P. V. g. 20."
+     }
+    ],
+    "ps": {
+     "owner_original": "Tillah Walfja",
+     "stand": null,
+     "pages": [
+      15,
+      21,
+      24,
+      26,
+      27,
+      29,
+      30,
+      34,
+      35,
+      37,
+      38,
+      39
+     ],
+     "rows": 24,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Andreas Muth",
+      "Andres Mally",
+      "Christoph Marx",
+      "Nikolaus Muth"
+     ],
+     "bps": [
+      "44",
+      "54"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.35,
+   "bp_refs": [
+    {
+     "bp": 44,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 54,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 18,
+    "ps_rows": 24,
+    "ps_kultur": {
+     "Acker": 8,
+     "Wiesen": 1,
+     "Wald": 3,
+     "Läuige": 1,
+     "Wiese": 4,
+     "Lohigg": 2,
+     "Wiese und Acker": 1,
+     "Wald.": 2,
+     "Hutweide": 1,
+     "Läderg": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-030-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-031",
+   "house_no_1825": "31",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schuchardt Wenzl",
+     "stand": null,
+     "pages": [
+      9,
+      12,
+      21,
+      24,
+      33,
+      34,
+      35
+     ],
+     "rows": 8,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Brünig Mayrl",
+      "Milly Hanns",
+      "Müller Hanns"
+     ],
+     "bps": [
+      "35"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 35,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 8,
+    "ps_kultur": {
+     "Lohholz": 1,
+     "Acker": 4,
+     "Wiese": 1,
+     "Schlaget": 1,
+     "Wiese und Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-032",
+   "house_no_1825": "32",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Breitwiesch Mattl / Söllner zu Grübln",
+      "page": 7,
+      "entry_no": "10",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 26,
+      "annotation_original": "b. P. 68."
+     }
+    ],
+    "ps": {
+     "owner_original": "Wolitz Gregor",
+     "stand": "~",
+     "pages": [
+      13,
+      21,
+      23,
+      31,
+      34,
+      35
+     ],
+     "rows": 10,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Hans Malfal",
+      "Hans Muffel",
+      "Mülleg Hanu",
+      "Ulrich Groß",
+      "Ulrich Järgy",
+      "Ulrich Piberger",
+      "Wenzel Järgy"
+     ],
+     "bps": [
+      "36",
+      "55",
+      "58",
+      "59"
+     ],
+     "pages": [
+      4,
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.279,
+   "bp_refs": [
+    {
+     "bp": 36,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 55,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 58,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 59,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 68,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 26,
+    "ps_rows": 10,
+    "ps_kultur": {
+     "Riden": 1,
+     "Acker": 7,
+     "Wiese": 1,
+     "Wiese und Acker": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-032-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-033",
+   "house_no_1825": "33",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Pfarrer Johann Leopold Kaulßgütlle",
+      "page": 32,
+      "entry_no": "63",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 48,
+      "annotation_original": "d. P. G. k."
+     }
+    ],
+    "ps": {
+     "owner_original": "Beckhlach Wurfl",
+     "stand": null,
+     "pages": [
+      9,
+      20,
+      27
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.273,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 48,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Lohholz": 1,
+     "Acker": 3,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-033-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-034",
+   "house_no_1825": "34",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Krischan / Marla / Bauerin / zu Grübln",
+      "page": 18,
+      "entry_no": "34",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "zu Grübln",
+      "n_parcels": 23,
+      "annotation_original": "b. P. 50."
+     }
+    ],
+    "ps": {
+     "owner_original": "Eidlald Wurfl",
+     "stand": null,
+     "pages": [
+      9,
+      15,
+      17,
+      20,
+      33,
+      35
+     ],
+     "rows": 11,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Fellach Wolfgr",
+      "Fellek Muffel",
+      "Fillek Marfa"
+     ],
+     "bps": [
+      "71"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.3,
+   "bp_refs": [
+    {
+     "bp": 50,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 71,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 23,
+    "ps_rows": 11,
+    "ps_kultur": {
+     "Lohholz": 1,
+     "Acker": 6,
+     "Wiese": 2,
+     "Wiese und": 1,
+     "Weide": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-034-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-035",
+   "house_no_1825": "35",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Urbas Peter",
+     "stand": null,
+     "pages": [
+      4,
+      7,
+      9,
+      10,
+      16,
+      17,
+      18,
+      20,
+      23,
+      26,
+      35
+     ],
+     "rows": 13,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Bering Malfa",
+      "Brinc Michle",
+      "Brünig Miko"
+     ],
+     "bps": [
+      "39"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 39,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 13,
+    "ps_kultur": {
+     "Acker": 7,
+     "Lehngut": 1,
+     "Lohholz": 1,
+     "Rohr": 1,
+     "Wald": 1,
+     "Wiesen": 1,
+     "Wiese und Weide": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-036",
+   "house_no_1825": "36",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Krischan / Marla / Bauerin / zu Grübln",
+      "page": 18,
+      "entry_no": "35",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "zu Grübln",
+      "n_parcels": 39,
+      "annotation_original": "b. P. 56. 38."
+     }
+    ],
+    "ps": {
+     "owner_original": "Krishnar Wurfl",
+     "stand": null,
+     "pages": [
+      9,
+      10,
+      11,
+      13,
+      16,
+      17,
+      19,
+      20,
+      21,
+      23,
+      26,
+      36
+     ],
+     "rows": 27,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Christian Mache[?]",
+      "Christian Pichl[?]",
+      "Fellach John",
+      "Fellek Johann",
+      "Fillek Peter",
+      "Musterer Marle",
+      "Simon Glan",
+      "Thomas Mally"
+     ],
+     "bps": [
+      "60",
+      "70",
+      "87",
+      "89"
+     ],
+     "pages": [
+      5,
+      6,
+      7
+     ]
+    },
+    "a01": [
+     {
+      "bp": "86",
+      "owner": "Krischan / Marla / Bauerin / zu Grübln",
+      "owner_status": "REVIEW-CONFLICT",
+      "link_source": "PUA opomba »b. P. 56. 38.« (no. 35, p18) — številke ne pokrivajo 86; PT p7 86→h.37 konflikt — kontrolo p18 v polni ločljivosti",
+      "owner_page": 18
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.537,
+   "bp_refs": [
+    {
+     "bp": 38,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 56,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 60,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 70,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 87,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 89,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 39,
+    "ps_rows": 27,
+    "ps_kultur": {
+     "Acker": 13,
+     "Lehngut Obft": 1,
+     "Wald": 1,
+     "Riden": 1,
+     "Gartn": 1,
+     "Stroh": 1,
+     "Rohr": 2,
+     "Wiese": 4,
+     "Riedgen": 1,
+     "Wiesen": 1,
+     "Riedl": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-036-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-037",
+   "house_no_1825": "37",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Krischan / Peter / Bauer in Grübln",
+      "page": 19,
+      "entry_no": "36",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 39,
+      "annotation_original": "P.P. 85."
+     },
+     {
+      "owner_original": "Krischan / Balda / Bauerin in Grübln",
+      "page": 19,
+      "entry_no": "37",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Krishnar Peter",
+     "stand": null,
+     "pages": [
+      9,
+      10,
+      11,
+      13,
+      17,
+      19,
+      20,
+      24
+     ],
+     "rows": 21,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Christian Pichl[?]",
+      "Leopoldin Wulfin"
+     ],
+     "bps": [
+      "86"
+     ],
+     "pages": [
+      7
+     ]
+    },
+    "a01": [
+     {
+      "bp": "85",
+      "owner": "Krischan / Peter / Bauer in Grübln",
+      "owner_status": "VERIFIED-2x",
+      "link_source": "PT p7 (dvojno branje val 41 + val 52: h.37) + PUA opomba »P.P. 85.« (no. 36, p19; val 54; B↔P dvom) — PT val 53: 45/37 konflikt",
+      "owner_page": 19
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.564,
+   "bp_refs": [
+    {
+     "bp": 86,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 40,
+    "ps_rows": 21,
+    "ps_kultur": {
+     "Acker": 15,
+     "Lehngut Obft": 1,
+     "Wald": 1,
+     "Ride": 1,
+     "Hutweide": 1,
+     "Wiese": 2
+    }
+   },
+   "conflict_ids": [
+    "CH-037-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-038",
+   "house_no_1825": "38",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Thomas Gnoy",
+     "stand": null,
+     "pages": [
+      12,
+      13,
+      25,
+      26,
+      32
+     ],
+     "rows": 8,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Kraler Anna",
+      "Kratz Anna",
+      "Schim[?]er Georg",
+      "Schimer Marle",
+      "Tschermak Peter"
+     ],
+     "bps": [
+      "72",
+      "97"
+     ],
+     "pages": [
+      6,
+      7
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 72,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 97,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 8,
+    "ps_kultur": {
+     "Acker": 4,
+     "Riden": 1,
+     "Ried": 1,
+     "Wald": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-039",
+   "house_no_1825": "39",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Krischan Wenzl",
+     "stand": null,
+     "pages": [
+      9,
+      11,
+      12,
+      25,
+      32,
+      33
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "A. Zöllner",
+      "Kumer Georg",
+      "Milly Hanns",
+      "Mülleg Hanu",
+      "Müller Hanns",
+      "Schim[?]er Mache[?]",
+      "Schim[?]er Pichl[?]"
+     ],
+     "bps": [
+      "34",
+      "96",
+      "98"
+     ],
+     "pages": [
+      4,
+      7
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 34,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 96,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 98,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Acker": 4,
+     "Liegend. Baul.": 1,
+     "Schindel. Wald": 1,
+     "Wald": 1,
+     "Gartn": 1,
+     "Ried": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-040",
+   "house_no_1825": "40",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Pfarrer Rupert Sautter hiesig",
+      "page": 29,
+      "entry_no": "38",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 112,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Peter Muster",
+     "stand": "Landl. Gutsh.",
+     "pages": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      21,
+      25,
+      26,
+      31,
+      32,
+      33
+     ],
+     "rows": 34,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Achaz Pichl[?]",
+      "Almer Marle",
+      "Feiner Wolfi",
+      "Georg Mache[?]",
+      "Musterer Paul"
+     ],
+     "bps": [
+      "91",
+      "94",
+      "95"
+     ],
+     "pages": [
+      7
+     ]
+    },
+    "a01": [
+     {
+      "bp": "93",
+      "owner": "Pfarrer Rupert Sautter hiesig",
+      "owner_status": "REVIEW",
+      "link_source": "PT p7 (dvojno branje: val 41 + val 52) + PUA h.40 (no. 38, p29) — PT val 53 zoom 93→h.41 (sum pomika vrstic)",
+      "owner_page": 29
+     },
+     {
+      "bp": "94",
+      "owner": "Pfarrer Rupert Sautter hiesig",
+      "owner_status": "VERIFIED-2x",
+      "link_source": "PT 94→h.40 = 3 neodvisna viri (val 41 + val 52 + val 53 obe branji) + PUA h.40 (no. 38, p29) — najmočnejša vez",
+      "owner_page": 29
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.432,
+   "bp_refs": [
+    {
+     "bp": 91,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 94,
+     "final_status": "CONFIRMED"
+    },
+    {
+     "bp": 95,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 112,
+    "ps_rows": 34,
+    "ps_kultur": {
+     "Liegend. Baul.": 2,
+     "Wiese": 1,
+     "Hutweide": 1,
+     "Gemeinde Grund": 2,
+     "Wald": 1,
+     "Acker": 16,
+     "Riedn": 1,
+     "Riden": 1,
+     "Žitno": 1,
+     "Žl.b.d.": 1,
+     "Ried": 4,
+     "Wiesen": 1,
+     "Ladgrd[?]": 1,
+     "Gartn": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-040-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-041",
+   "house_no_1825": "41",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Pöchinger Georg Leinwand Fabrikant",
+      "page": 30,
+      "entry_no": "59",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 56,
+      "annotation_original": "19. Pp."
+     }
+    ],
+    "ps": {
+     "owner_original": "Reuschard Franz",
+     "stand": null,
+     "pages": [
+      4,
+      11,
+      12,
+      13,
+      14,
+      15,
+      21,
+      26,
+      31,
+      32,
+      33
+     ],
+     "rows": 23,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Dichatschek Mardko",
+      "Dichatschek Muffel",
+      "Dicheltaker Marthe",
+      "Dicheltaler Marla[?]",
+      "Dicheltaler Martho",
+      "Feiner Wolfi",
+      "Georg Georg",
+      "Herrn Georg",
+      "Heuritsch Georg",
+      "Kobolthofer[?] Martin",
+      "Kobolthofer[?] Michl",
+      "Pechtlhans[?]"
+     ],
+     "bps": [
+      "73",
+      "78",
+      "79",
+      "80",
+      "82",
+      "93"
+     ],
+     "pages": [
+      6,
+      7
+     ]
+    },
+    "a01": [
+     {
+      "bp": "92",
+      "owner": "Pöchinger Georg Leinwand Fabrikant",
+      "owner_status": "REVIEW",
+      "link_source": "PT p7 dvojno branje (val 41 + val 52: 41) + PUA no. 59 opomba nečitljiva (»19. Pp.«); PT zoom 92→h.44 (sum pomika vrstic)",
+      "owner_page": 30
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.356,
+   "bp_refs": [
+    {
+     "bp": 73,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 78,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 79,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 80,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 82,
+     "final_status": "UNRESOLVED"
+    },
+    {
+     "bp": 93,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 56,
+    "ps_rows": 23,
+    "ps_kultur": {
+     "Acker": 14,
+     "Wald": 1,
+     "Schindel. Wald": 1,
+     "Gemeinde Grund": 1,
+     "Ride": 1,
+     "Zemlja": 1,
+     "Trava": 1,
+     "Wiese": 1,
+     "Wiesen": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-041-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-042",
+   "house_no_1825": "42",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Pöchinger Malfa Leinwand Fabrikant",
+      "page": 30,
+      "entry_no": "60",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 36,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Peter Muster",
+     "stand": null,
+     "pages": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      25,
+      32,
+      33
+     ],
+     "rows": 13,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.286,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 36,
+    "ps_rows": 13,
+    "ps_kultur": {
+     "Wald": 2,
+     "Acker": 6,
+     "Riden": 1,
+     "Žitno": 1,
+     "Ried": 1,
+     "Hutweide": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-042-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-043",
+   "house_no_1825": "43",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Grübler Maria Leutnerin zu Grübln",
+      "page": 6,
+      "entry_no": "7",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "Grübln",
+      "n_parcels": 40,
+      "annotation_original": "B.P. 90."
+     }
+    ],
+    "ps": {
+     "owner_original": "Ulrich Peter",
+     "stand": "~",
+     "pages": [
+      6,
+      9,
+      11,
+      12,
+      13,
+      14,
+      16,
+      25,
+      26,
+      33
+     ],
+     "rows": 16,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Dichatschek Muffel",
+      "Dicheltaler Marfa",
+      "Dichstaler Wolfgr"
+     ],
+     "bps": [
+      "68"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.4,
+   "bp_refs": [
+    {
+     "bp": 68,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 90,
+     "final_status": "CONFIRMED"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 40,
+    "ps_rows": 16,
+    "ps_kultur": {
+     "Läuger": 1,
+     "Grund Garten": 3,
+     "Acker": 3,
+     "Gemeinde Grund": 1,
+     "Wald": 3,
+     "Riden": 1,
+     "Hutweid": 1,
+     "Zemlja": 1,
+     "Stroh": 1,
+     "Ried": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-043-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-044",
+   "house_no_1825": "44",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Husitsch Maria Bauersleute / zu Grübln",
+      "page": 11,
+      "entry_no": "19",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 31,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Matthäus Muster",
+     "stand": null,
+     "pages": [
+      11,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24,
+      26
+     ],
+     "rows": 13,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Christen Mache[?]",
+      "Fischer Georg",
+      "Krischan Wolf",
+      "Winkler Paul"
+     ],
+     "bps": [
+      "88",
+      "90",
+      "92"
+     ],
+     "pages": [
+      7
+     ]
+    },
+    "a01": [
+     {
+      "bp": "89",
+      "owner": "Husitsch Maria Bauersleute / zu Grübln",
+      "owner_status": "REVIEW",
+      "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
+      "owner_page": 11
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.391,
+   "bp_refs": [
+    {
+     "bp": 88,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 90,
+     "final_status": "CONFIRMED"
+    },
+    {
+     "bp": 92,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 31,
+    "ps_rows": 13,
+    "ps_kultur": {
+     "Gemeinde Grund": 1,
+     "Stroh": 2,
+     "Acker": 6,
+     "Wiese": 3,
+     "Lehen": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-044-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-045",
+   "house_no_1825": "45",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Strauß Georg",
+     "stand": null,
+     "pages": [
+      7,
+      10,
+      12,
+      23,
+      24,
+      25,
+      26,
+      32
+     ],
+     "rows": 19,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Fellach John",
+      "Fellek Johann",
+      "Fillek Johan",
+      "Hans Georg",
+      "Hans Georg / Lenz Gansb[?]",
+      "Krauß Georg",
+      "Winkler Peter"
+     ],
+     "bps": [
+      "69",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85"
+     ],
+     "pages": [
+      6,
+      7
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 69,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 81,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 82,
+     "final_status": "UNRESOLVED"
+    },
+    {
+     "bp": 83,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 84,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 85,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 19,
+    "ps_kultur": {
+     "Wiese": 5,
+     "Lehngut Hfl.": 1,
+     "Acker": 8,
+     "Gartn": 1,
+     "Weide": 1,
+     "Ried": 1,
+     "Wiesen": 1,
+     "Riedgen": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-046",
+   "house_no_1825": "46",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Lahodathar / Wittib Lahodatharin",
+      "page": 20,
+      "entry_no": "39",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 5,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Strauß Georg",
+     "stand": null,
+     "pages": [
+      7,
+      12,
+      26,
+      32,
+      54
+     ],
+     "rows": 6,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.263,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 5,
+    "ps_rows": 6,
+    "ps_kultur": {
+     "Wiese": 1,
+     "Acker": 4,
+     "Wiesen": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-046-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-047",
+   "house_no_1825": "47",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Widow Katharina Brandl in Grübln / Gütlerin",
+      "page": 22,
+      "entry_no": "42",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "in Grübln",
+      "n_parcels": 44,
+      "annotation_original": "RP 72. 77. 79. 80."
+     }
+    ],
+    "ps": {
+     "owner_original": "(R)abitscher Marbl",
+     "stand": null,
+     "pages": [
+      7,
+      8,
+      10,
+      12,
+      14,
+      23,
+      24,
+      25,
+      26,
+      32,
+      33
+     ],
+     "rows": 21,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.314,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 44,
+    "ps_rows": 21,
+    "ps_kultur": {
+     "Acker": 8,
+     "Lehngut Hfl.": 2,
+     "Wiese": 7,
+     "Wald": 2,
+     "Žitno": 1,
+     "Ried": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-047-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-048",
+   "house_no_1825": "48",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Höchsthaler Georg bürgerl. Hofg'sitzl.",
+      "page": 23,
+      "entry_no": "45",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "zu Grublh.",
+      "n_parcels": 34,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "(R)abitscher Georg",
+     "stand": null,
+     "pages": [
+      7,
+      12,
+      14,
+      23,
+      24,
+      25,
+      28,
+      32,
+      33
+     ],
+     "rows": 13,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Dichatschek Mardko",
+      "Herrn Georg",
+      "Heuritsch Georg",
+      "Kobolthofer[?][?] Michl",
+      "Steinle Georg"
+     ],
+     "bps": [
+      "77",
+      "81"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.383,
+   "bp_refs": [
+    {
+     "bp": 77,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 81,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 34,
+    "ps_rows": 13,
+    "ps_kultur": {
+     "Lehngut Hfl.": 1,
+     "Acker": 4,
+     "Žitno": 1,
+     "Wiese": 4,
+     "Ried": 1,
+     "Lobing[?]": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-048-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-049",
+   "house_no_1825": "49",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Thomaz Majzel",
+     "stand": null,
+     "pages": [
+      15,
+      21,
+      22,
+      25
+     ],
+     "rows": 8,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Schimey Michael",
+      "Schloßhüter Michael"
+     ],
+     "bps": [
+      "63"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 63,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 8,
+    "ps_kultur": {
+     "Acker": 5,
+     "Wiesen": 2,
+     "Ried": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-050",
+   "house_no_1825": "50",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Poiding Matthl",
+     "stand": null,
+     "pages": [
+      7,
+      8,
+      12,
+      15,
+      21,
+      22,
+      25,
+      31,
+      43,
+      55
+     ],
+     "rows": 15,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Alois Pollandt",
+      "Pauling Johan",
+      "Sedivy Johann",
+      "Seidly John",
+      "[nečitljivo]"
+     ],
+     "bps": [
+      "61",
+      "99"
+     ],
+     "pages": [
+      6,
+      7
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 61,
+     "final_status": "UNRESOLVED"
+    },
+    {
+     "bp": 99,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 15,
+    "ps_kultur": {
+     "Gartn Gartn": 1,
+     "Lehngut": 1,
+     "Grund / Garten": 1,
+     "Acker": 8,
+     "Wiesen": 2,
+     "Ried": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-051",
+   "house_no_1825": "51",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Urich Pattle / Bauer zu Grübln",
+      "page": 44,
+      "entry_no": "89",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 56,
+      "annotation_original": "D. P. 94, 95,"
+     }
+    ],
+    "ps": {
+     "owner_original": "Urbas Peter",
+     "stand": null,
+     "pages": [
+      4,
+      5,
+      6,
+      8,
+      16,
+      21,
+      23,
+      43,
+      55
+     ],
+     "rows": 12,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Ainöd Johann",
+      "Aurich John",
+      "Ehrlich Peter",
+      "Einöder Peter",
+      "Knapp Peter"
+     ],
+     "bps": [
+      "75",
+      "76"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.353,
+   "bp_refs": [
+    {
+     "bp": 75,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 76,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 56,
+    "ps_rows": 12,
+    "ps_kultur": {
+     "Acker": 6,
+     "Läuger": 1,
+     "Wald": 2,
+     "Stroh": 2,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-051-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-052",
+   "house_no_1825": "52",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pauling Johen",
+     "stand": null,
+     "pages": [
+      15,
+      43
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-053",
+   "house_no_1825": "53",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Shumey Joan",
+     "stand": "~",
+     "pages": [
+      6,
+      22,
+      23
+     ],
+     "rows": 7,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Pauling Johan",
+      "Sedivy Johann",
+      "Seidly John"
+     ],
+     "bps": [
+      "65"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 65,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 7,
+    "ps_kultur": {
+     "Grund Garten": 1,
+     "Hutweide Hof": 1,
+     "Acker": 2,
+     "Wiesen": 1,
+     "Wiese": 1,
+     "Gartn": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-054",
+   "house_no_1825": "54",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Lappary Marbl",
+     "stand": null,
+     "pages": [
+      7,
+      22,
+      23
+     ],
+     "rows": 7,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Loparz Michl",
+      "Lopparz Michl"
+     ],
+     "bps": [
+      "62",
+      "67"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 62,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 67,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 7,
+    "ps_kultur": {
+     "Wiesen": 2,
+     "Lehngut Hfl.": 1,
+     "Gartn Gartn": 1,
+     "Acker": 2,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-055",
+   "house_no_1825": "55",
+   "house_no_type": "gruble_house",
+   "evidence_status": "PARTIAL",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schimer Jacob",
+     "stand": null,
+     "pages": [
+      8,
+      13,
+      15,
+      21,
+      22,
+      23,
+      24,
+      43
+     ],
+     "rows": 10,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Schimey Johan",
+      "Schimey Johann",
+      "Schmiedt John",
+      "Sedivy Johann"
+     ],
+     "bps": [
+      "64",
+      "66"
+     ],
+     "pages": [
+      6
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 64,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 66,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 10,
+    "ps_kultur": {
+     "Wald": 2,
+     "Acker": 6,
+     "Gartn": 1,
+     "Wiesen": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-056",
+   "house_no_1825": "56",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schimay Peter",
+     "stand": "~",
+     "pages": [
+      5,
+      8,
+      14,
+      15,
+      20,
+      22,
+      23,
+      24,
+      43
+     ],
+     "rows": 15,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 15,
+    "ps_kultur": {
+     "Acker": 6,
+     "Wald": 1,
+     "Žitno": 1,
+     "Wiese": 3,
+     "Wiesen": 2,
+     "Gartn": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-057",
+   "house_no_1825": "57",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Križnar Matija",
+     "stand": null,
+     "pages": [
+      14
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Žitno": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-058",
+   "house_no_1825": "58",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Stipanitsch Jakob Brauhaußgütler",
+      "page": 41,
+      "entry_no": "83",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Pogacar Michl",
+     "stand": null,
+     "pages": [
+      4,
+      13,
+      14,
+      23
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.341,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 1,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Acker": 2,
+     "Wald": 2,
+     "Žitno": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-058-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-059",
+   "house_no_1825": "59",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechl[?] Joann",
+     "stand": null,
+     "pages": [
+      4,
+      8,
+      14
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Acker": 2,
+     "Wald": 2,
+     "Žitno": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-060",
+   "house_no_1825": "60",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Penzig Stuffe Leuthold zu Grüble",
+      "page": 31,
+      "entry_no": "61",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "Grüble",
+      "n_parcels": 46,
+      "annotation_original": "B.P. 73."
+     },
+     {
+      "owner_original": "Schimetz Johann bauer hiesig",
+      "page": 40,
+      "entry_no": "81",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 87,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Schelko Georg Bauersleibgäbler [?]",
+      "page": 42,
+      "entry_no": "85",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 25,
+      "annotation_original": "B. T. 50, 51, 55."
+     }
+    ],
+    "ps": {
+     "owner_original": "Kirschan Georg",
+     "stand": "~",
+     "pages": [
+      5,
+      6,
+      14,
+      15,
+      16,
+      17,
+      23,
+      31
+     ],
+     "rows": 10,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Fellach Michl",
+      "Felley Michl",
+      "Pauling Marfa",
+      "Schilko Joppiß",
+      "Schilko Jörgl"
+     ],
+     "bps": [
+      "50",
+      "51",
+      "56",
+      "74"
+     ],
+     "pages": [
+      5,
+      6
+     ]
+    },
+    "a01": [
+     {
+      "bp": "73",
+      "owner": "Penzig Stuffe Leuthold zu Grüble",
+      "owner_status": "REVIEW-CONFLICT",
+      "link_source": "PUA opomba (p31)",
+      "owner_page": 31
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.244,
+   "bp_refs": [
+    {
+     "bp": 50,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 51,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 56,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 73,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 74,
+     "final_status": "PROBABLE"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 158,
+    "ps_rows": 10,
+    "ps_kultur": {
+     "Acker": 5,
+     "Hutweide Hof": 1,
+     "Wiese": 2,
+     "Žitno": 1,
+     "Rohr": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-060-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-061",
+   "house_no_1825": "61",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Tillak Nikla bürgerl. zu Grübln",
+      "page": 10,
+      "entry_no": "17",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": null,
+      "n_parcels": 41,
+      "annotation_original": "B. P. ag. 334\nGemeinschaftliche Waldweide"
+     },
+     {
+      "owner_original": "Schimek Joseph / Bau in Tschabathe",
+      "page": 41,
+      "entry_no": "84",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Feldt Mäda",
+     "stand": "~",
+     "pages": [
+      5,
+      6,
+      8,
+      9,
+      13,
+      14,
+      19,
+      43
+     ],
+     "rows": 12,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Michel Mally",
+      "Nikolaus Muth",
+      "Veithaler Malfa",
+      "Veitlacher Muffa",
+      "Verblühter Malfa"
+     ],
+     "bps": [
+      "33",
+      "49",
+      "53"
+     ],
+     "pages": [
+      4,
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.171,
+   "bp_refs": [
+    {
+     "bp": 33,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 49,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 53,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 42,
+    "ps_rows": 12,
+    "ps_kultur": {
+     "Wiese": 1,
+     "Acker": 5,
+     "Läuger": 1,
+     "Wald": 2,
+     "Riden": 2,
+     "Žitno": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-061-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-062",
+   "house_no_1825": "62",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Brinczhan / Witwe Brinczhan Gütlin",
+      "page": 20,
+      "entry_no": "38",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 54,
+      "annotation_original": "O. J. 52."
+     },
+     {
+      "owner_original": "Penzig Gottl. Leuthold zu Grüble",
+      "page": 31,
+      "entry_no": "62",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Grüble",
+      "n_parcels": 10,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Kirschan Mäda",
+     "stand": "~",
+     "pages": [
+      5,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      43
+     ],
+     "rows": 18,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Michel Mally",
+      "Nikolaus Muth"
+     ],
+     "bps": [
+      "52"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.293,
+   "bp_refs": [
+    {
+     "bp": 52,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 64,
+    "ps_rows": 18,
+    "ps_kultur": {
+     "Acker": 12,
+     "Riden": 1,
+     "Žitno": 1,
+     "Stroh": 1,
+     "Rohr": 1,
+     "Wiese": 2
+    }
+   },
+   "conflict_ids": [
+    "CH-062-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-063",
+   "house_no_1825": "63",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Brincz Maria Leutnerin zu Grübln",
+      "page": 6,
+      "entry_no": "8",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Grübln",
+      "n_parcels": 32,
+      "annotation_original": "R.P. 37. 32."
+     }
+    ],
+    "ps": {
+     "owner_original": "Poiding Hanl",
+     "stand": null,
+     "pages": [
+      7,
+      8,
+      13,
+      14,
+      16,
+      18,
+      20,
+      48
+     ],
+     "rows": 17,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Christoph Järgy",
+      "Michel Järgy",
+      "Nikolaus Groß",
+      "Ulrich Mally",
+      "Ulrich Muth"
+     ],
+     "bps": [
+      "46",
+      "48",
+      "57"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.256,
+   "bp_refs": [
+    {
+     "bp": 46,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 48,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 57,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 32,
+    "ps_rows": 17,
+    "ps_kultur": {
+     "Lehngut Hfl.": 1,
+     "Wald": 2,
+     "Grund / Garten": 2,
+     "Acker / Grund": 1,
+     "Riedn": 1,
+     "Riden": 1,
+     "Žitno": 1,
+     "Rohr": 1,
+     "Acker": 6,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-063-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-064",
+   "house_no_1825": "64",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Veritscher Wirts Leibkinds Gsöll",
+      "page": 45,
+      "entry_no": "91",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 30,
+      "annotation_original": null
+     }
+    ],
+    "ps": {
+     "owner_original": "Urban Pankrazgall",
+     "stand": null,
+     "pages": [
+      4,
+      9,
+      14,
+      16,
+      20,
+      26,
+      31,
+      36
+     ],
+     "rows": 11,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Josef Groß",
+      "Sepp Järgy"
+     ],
+     "bps": [
+      "41"
+     ],
+     "pages": [
+      5
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.267,
+   "bp_refs": [
+    {
+     "bp": 41,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 30,
+    "ps_rows": 11,
+    "ps_kultur": {
+     "Wiese": 1,
+     "Acker": 5,
+     "Žitno": 1,
+     "Stroh": 1,
+     "Rohr": 1,
+     "Wiesen": 1,
+     "Lobig": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-064-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-065",
+   "house_no_1825": "65",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Widhann Georg häusler und Gärtner",
+      "page": 21,
+      "entry_no": "40",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 53,
+      "annotation_original": "B. P. 46. 48."
+     }
+    ],
+    "ps": {
+     "owner_original": "Schimeczkhanl",
+     "stand": "bauer Gruble",
+     "pages": [
+      7,
+      8,
+      16,
+      36,
+      43
+     ],
+     "rows": 6,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Bering Marx",
+      "Brinc Marko",
+      "Brinc Michle",
+      "Brünig Mahe",
+      "Christoph Järgy",
+      "Nikolaus Groß"
+     ],
+     "bps": [
+      "31",
+      "32",
+      "47"
+     ],
+     "pages": [
+      4,
+      5
+     ]
+    },
+    "a01": [
+     {
+      "bp": "46",
+      "owner": "Widhann Georg häusler und Gärtner",
+      "owner_status": "REVIEW",
+      "link_source": "PUA opomba (p21)",
+      "owner_page": 21
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.238,
+   "bp_refs": [
+    {
+     "bp": 31,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 32,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 46,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 47,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 48,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 53,
+    "ps_rows": 6,
+    "ps_kultur": {
+     "Acker": 1,
+     "Lehngut Hfl.": 1,
+     "Wald": 1,
+     "Rohr": 1,
+     "Riedl": 1,
+     "A.Bau": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-065-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-066",
+   "house_no_1825": "66",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Widhann Georg häusler und Gärtner",
+      "page": 21,
+      "entry_no": "41",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 28,
+      "annotation_original": "B. P. 49. 50."
+     },
+     {
+      "owner_original": "Schmutz Johann",
+      "page": 41,
+      "entry_no": "82",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 68,
+      "annotation_original": "B. P. g."
+     }
+    ],
+    "ps": {
+     "owner_original": "Reuschard Franz",
+     "stand": null,
+     "pages": [
+      4,
+      6,
+      8,
+      17,
+      36
+     ],
+     "rows": 11,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": {
+     "variants": [
+      "Michan gorg",
+      "Michel gspan",
+      "Nikolaus Groß"
+     ],
+     "bps": [
+      "29"
+     ],
+     "pages": [
+      4
+     ]
+    },
+    "a01": [
+     {
+      "bp": "49",
+      "owner": "Widhann Georg häusler und Gärtner",
+      "owner_status": "VERIFIED-2x",
+      "link_source": "PUA opomba »B. P. 49. 50.« (no. 41, p21; val 54 preverjeno) + PT p5 konflikt (h61/62 ↔ 66, Kurrent 1↔6)",
+      "owner_page": 21
+     }
+    ]
+   },
+   "pua_ps_name_sim": 0.326,
+   "bp_refs": [
+    {
+     "bp": 29,
+     "final_status": "PROBABLE"
+    },
+    {
+     "bp": 49,
+     "final_status": "CONFLICT"
+    },
+    {
+     "bp": 50,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 96,
+    "ps_rows": 11,
+    "ps_kultur": {
+     "Acker": 7,
+     "Läuger": 1,
+     "Wald": 1,
+     "Riedl": 1,
+     "Lößl": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-066-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-067",
+   "house_no_1825": "67",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Hrabotar Marha",
+     "stand": null,
+     "pages": [
+      8,
+      27,
+      28,
+      29,
+      30,
+      36,
+      38
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Lehngut / Acker": 1,
+     "Grund / Garten": 1,
+     "Acker": 3,
+     "Wiese": 2,
+     "Riedl": 1,
+     "Wald.": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-068",
+   "house_no_1825": "68",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Rappare Wirthsleuths hiesig",
+      "page": 25,
+      "entry_no": "49",
+      "review_status": "REVIEW-CONFLICT",
+      "residence_original": "hiesig",
+      "n_parcels": 47,
+      "annotation_original": "D.P. 66. 61."
+     },
+     {
+      "owner_original": "Urich Mattle / Söllner zu Grübln",
+      "page": 44,
+      "entry_no": "90",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 33,
+      "annotation_original": "D. T. sh.\n\nUebersprungene Parzellen Nummer\n\nI: 20, 161, 310, 472, 483, 682, 692, 696, 720, 882, 89?\nII: 637\n\nIV: 6\nWaldtheilung [?] des Wiedners of\nIX:"
+     }
+    ],
+    "ps": {
+     "owner_original": "Häusler Mache",
+     "stand": null,
+     "pages": [
+      17,
+      23,
+      30,
+      31,
+      34,
+      35,
+      43
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.324,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 80,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Wiese": 2,
+     "Lohigg": 1,
+     "Acker": 4,
+     "Löhing": 1,
+     "Schupfer": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-068-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-069",
+   "house_no_1825": "69",
+   "house_no_type": "gruble_house",
+   "evidence_status": "CONFLICT",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Christian Brandl in Grübln / Bauer",
+      "page": 22,
+      "entry_no": "43",
+      "review_status": "REVIEW",
+      "residence_original": "in Grübln",
+      "n_parcels": 50,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Pfarrer Elias Brandl / hiesiger.",
+      "page": 34,
+      "entry_no": "68",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "hiesiger.",
+      "n_parcels": 0,
+      "annotation_original": null
+     },
+     {
+      "owner_original": "Schimetz Wafal bauer hiesig",
+      "page": 40,
+      "entry_no": "80",
+      "review_status": "VERIFIED-2x",
+      "residence_original": null,
+      "n_parcels": 49,
+      "annotation_original": "B.T. 62."
+     }
+    ],
+    "ps": {
+     "owner_original": "Schimey Wenzel",
+     "stand": null,
+     "pages": [
+      4,
+      5,
+      16,
+      43,
+      45,
+      47,
+      48,
+      50
+     ],
+     "rows": 16,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": 0.244,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 99,
+    "ps_rows": 16,
+    "ps_kultur": {
+     "Acker": 8,
+     "Wird": 1,
+     "Ladisch": 1,
+     "Lohg": 2,
+     "Wisd": 2,
+     "Waldg": 1,
+     "Hütstürg": 1
+    }
+   },
+   "conflict_ids": [
+    "CH-069-01"
+   ],
+   "notes": null
+  },
+  {
+   "house_id": "H-070",
+   "house_no_1825": "70",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Zollamt b. H. Neuradl in Gröbln",
+      "page": 47,
+      "entry_no": "95",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 1,
+      "annotation_original": null
+     }
+    ],
+    "ps": null,
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 98,
+     "final_status": "CONFLICT"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 1,
+    "ps_rows": 0,
+    "ps_kultur": {}
+   },
+   "conflict_ids": [],
+   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+  },
+  {
+   "house_id": "H-071",
+   "house_no_1825": "71",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Stauger Matho Bauersleibgäbler [?]",
+      "page": 42,
+      "entry_no": "86",
+      "review_status": "REVIEW",
+      "residence_original": null,
+      "n_parcels": 0,
+      "annotation_original": null
+     }
+    ],
+    "ps": null,
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 0,
+    "ps_kultur": {}
+   },
+   "conflict_ids": [],
+   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+  },
+  {
+   "house_id": "H-072",
+   "house_no_1825": "72",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": [
+     {
+      "owner_original": "Strauß Khonrad bauer zu Grübln",
+      "page": 43,
+      "entry_no": "87",
+      "review_status": "VERIFIED-2x",
+      "residence_original": "Grübln",
+      "n_parcels": 0,
+      "annotation_original": null
+     }
+    ],
+    "ps": null,
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 0,
+    "ps_kultur": {}
+   },
+   "conflict_ids": [],
+   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+  },
+  {
+   "house_id": "H-079",
+   "house_no_1825": "79",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Lehning Michael",
+     "stand": null,
+     "pages": [
+      50
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-080",
+   "house_no_1825": "80",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Peders Marbl",
+     "stand": null,
+     "pages": [
+      7,
+      10,
+      15,
+      34
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Lehngut Hfl.": 1,
+     "Acker": 3
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-081",
+   "house_no_1825": "81",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Ulrich Peter",
+     "stand": "~",
+     "pages": [
+      6,
+      43
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Wald": 2,
+     "Hutweide": 1,
+     "A.Bau": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-082",
+   "house_no_1825": "82",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pečnik Mathej",
+     "stand": null,
+     "pages": [
+      10
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-085",
+   "house_no_1825": "85",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Ihanz Jurey",
+     "stand": null,
+     "pages": [
+      55
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-087",
+   "house_no_1825": "87",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Priškar Jelen",
+     "stand": null,
+     "pages": [
+      10,
+      30
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Lehge": 1,
+     "Lohigg": 1,
+     "Wald": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-110",
+   "house_no_1825": "110",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": null,
+    "pt": {
+     "variants": [
+      "Georg mader[?]",
+      "Lebring Math",
+      "Leopold Mader[?]"
+     ],
+     "bps": [
+      "7",
+      "7½"
+     ],
+     "pages": [
+      3
+     ]
+    },
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [
+    {
+     "bp": 7,
+     "final_status": "UNRESOLVED"
+    }
+   ],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 0,
+    "ps_kultur": {}
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-113",
+   "house_no_1825": "113",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Prunkl Maria",
+     "stand": "~",
+     "pages": [
+      33
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-140",
+   "house_no_1825": "140",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Piber, Matthel",
+     "stand": null,
+     "pages": [
+      34
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-141",
+   "house_no_1825": "141",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Piber, Georg",
+     "stand": null,
+     "pages": [
+      34
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-142",
+   "house_no_1825": "142",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pölling Wolf",
+     "stand": "~",
+     "pages": [
+      6,
+      34
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Läuger": 1,
+     "Lobig": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-143",
+   "house_no_1825": "143",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Ravella, Michl",
+     "stand": null,
+     "pages": [
+      34
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-144",
+   "house_no_1825": "144",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Rudolf Mihael",
+     "stand": null,
+     "pages": [
+      10
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-147",
+   "house_no_1825": "147",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Hlahotshar Georg",
+     "stand": null,
+     "pages": [
+      10
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-149",
+   "house_no_1825": "149",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Bratula Mihael",
+     "stand": null,
+     "pages": [
+      10,
+      43
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Gartn": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-162",
+   "house_no_1825": "162",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Brullat Michl",
+     "stand": "~",
+     "pages": [
+      6,
+      10
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Läuger": 1,
+     "Lehngut Obft": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-165",
+   "house_no_1825": "165",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Hanefl Georg",
+     "stand": null,
+     "pages": [
+      10
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Lehngut": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-168",
+   "house_no_1825": "168",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Urich Mäda",
+     "stand": "~",
+     "pages": [
+      5
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-214",
+   "house_no_1825": "214",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pirn Michael",
+     "stand": "~",
+     "pages": [
+      26
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Wiesen": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-529",
+   "house_no_1825": "529",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pölling Joan",
+     "stand": "~",
+     "pages": [
+      6
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Grund Garten": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": null
+  },
+  {
+   "house_id": "H-1-1",
+   "house_no_1825": "1 / 1",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "De Costil de Malfis",
+     "stand": "Landwirthschaft",
+     "pages": [
+      44
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-10.",
+   "house_no_1825": "1 / 10.",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Hinde Mucko",
+     "stand": null,
+     "pages": [
+      46
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Lohde": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-100",
+   "house_no_1825": "1 / 100",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Baron v. Zallant",
+     "stand": "Gräbla",
+     "pages": [
+      41
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Garten": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-11",
+   "house_no_1825": "1 / 11",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pölling gzung.",
+     "stand": null,
+     "pages": [
+      46
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Lohde": 3,
+     "Lhop": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-12",
+   "house_no_1825": "1 / 12",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schiffbauer Mathäus",
+     "stand": null,
+     "pages": [
+      40,
+      44,
+      46
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Acker": 2,
+     "Lhop": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-13",
+   "house_no_1825": "1 / 13",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wundala nißl",
+     "stand": null,
+     "pages": [
+      40,
+      44
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-14",
+   "house_no_1825": "1 / 14",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Stelby (Thomas)",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-18",
+   "house_no_1825": "1 / 18",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schönig (Peter)",
+     "stand": "g'sellt",
+     "pages": [
+      44
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Acker": 3
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-19",
+   "house_no_1825": "1 / 19",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Stelbpfennich (Mathey)",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-2",
+   "house_no_1825": "1 / 2",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschkan Muhel",
+     "stand": "Laun. Grille",
+     "pages": [
+      46
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Lohde": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-20",
+   "house_no_1825": "1 / 20",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechley Michael",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-21",
+   "house_no_1825": "1 / 21",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Leppanig (Michl)",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-22",
+   "house_no_1825": "1 / 22",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Willing Johann",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Hutweide[?]": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-23",
+   "house_no_1825": "1 / 23",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wernig Mathäus",
+     "stand": "Bauer gänzlich",
+     "pages": [
+      40,
+      44
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-24",
+   "house_no_1825": "1 / 24",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wernig Michael",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-25",
+   "house_no_1825": "1 / 25",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wernig Mathäus",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-29",
+   "house_no_1825": "1 / 29",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Willing Johann",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-3",
+   "house_no_1825": "1 / 3",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Hödle (Marko)",
+     "stand": null,
+     "pages": [
+      44,
+      46
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Acker": 2,
+     "Lhop": 1,
+     "Lohde": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-31",
+   "house_no_1825": "1 / 31",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechley Nißl",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "—": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-32",
+   "house_no_1825": "1 / 32",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Puch (Gregor)",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-4",
+   "house_no_1825": "1 / 4",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Lahfenitsch (Georg)",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-40",
+   "house_no_1825": "1 / 40",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechley Johann",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-41",
+   "house_no_1825": "1 / 41",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechley Georg",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-42",
+   "house_no_1825": "1 / 42",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechley Mathäus",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-43",
+   "house_no_1825": "1 / 43",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Rudolla Nißl",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-5",
+   "house_no_1825": "1 / 5",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Dragasch (Jure)",
+     "stand": "Dragas",
+     "pages": [
+      44
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-50",
+   "house_no_1825": "1 / 50",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechly Mathes.",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-51",
+   "house_no_1825": "1 / 51",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Weiss Peter",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-52",
+   "house_no_1825": "1 / 52",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschak Georg.",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-53",
+   "house_no_1825": "1 / 53",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Bau Prug (Joan)",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-6",
+   "house_no_1825": "1 / 6",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Gyomandl",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Gartn": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-60",
+   "house_no_1825": "1 / 60",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schellko Jozeph.",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-61",
+   "house_no_1825": "1 / 61",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschak Georg.",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-63",
+   "house_no_1825": "1 / 63",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschak Georg.",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-64",
+   "house_no_1825": "1 / 64",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pechly Georg.",
+     "stand": "~",
+     "pages": [
+      41
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Acker": 4
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-65",
+   "house_no_1825": "1 / 65",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wernig Dorothea",
+     "stand": null,
+     "pages": [
+      40,
+      41
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Gartn[?]": 2,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-66",
+   "house_no_1825": "1 / 66",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Weinhandl Georg",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Gartn[?]": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-68",
+   "house_no_1825": "1 / 68",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wernig Joseph",
+     "stand": null,
+     "pages": [
+      40,
+      44
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Wiese": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-69",
+   "house_no_1825": "1 / 69",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Weichselbaum Nißl",
+     "stand": null,
+     "pages": [
+      40
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-8",
+   "house_no_1825": "1 / 8",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Lahfenitsch (Andreas)",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-9",
+   "house_no_1825": "1 / 9",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Jannowitz",
+     "stand": null,
+     "pages": [
+      46
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-10",
+   "house_no_1825": "1/10",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wenzl Piberl",
+     "stand": null,
+     "pages": [
+      53
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Gartn": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-11",
+   "house_no_1825": "1/11",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Radling Georg",
+     "stand": null,
+     "pages": [
+      42
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Wald": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-14",
+   "house_no_1825": "1/14",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pirker Mühle",
+     "stand": "~",
+     "pages": [
+      52
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-15",
+   "house_no_1825": "1/15",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Chorll Maria",
+     "stand": null,
+     "pages": [
+      42,
+      53
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Wald": 1,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-16",
+   "house_no_1825": "1/16",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Stallh. Mühle",
+     "stand": "~",
+     "pages": [
+      52
+     ],
+     "rows": 6,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 6,
+    "ps_kultur": {
+     "Acker": 4,
+     "Rebg[?]": 1,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-17",
+   "house_no_1825": "1/17",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Khaull Joanne",
+     "stand": null,
+     "pages": [
+      42
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Wald": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-18",
+   "house_no_1825": "1/18",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schumig Johann",
+     "stand": null,
+     "pages": [
+      42,
+      53
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Wald": 1,
+     "Zehend": 1,
+     "Hausraum": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-19",
+   "house_no_1825": "1/19",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wenzl Mitterp.",
+     "stand": null,
+     "pages": [
+      53
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Wiese": 2,
+     "Garten": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-3",
+   "house_no_1825": "1/3",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Hantzel Jhe.",
+     "stand": "~",
+     "pages": [
+      52
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-4",
+   "house_no_1825": "1/4",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schiffelbichl Barthol. Lorenz",
+     "stand": null,
+     "pages": [
+      50
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Acker": 2,
+     "Wald": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-49",
+   "house_no_1825": "1/49",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Ludwig Muffel",
+     "stand": "~",
+     "pages": [
+      52
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-54",
+   "house_no_1825": "1/54",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Lupzina Maria",
+     "stand": null,
+     "pages": [
+      42
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Wald": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-55",
+   "house_no_1825": "1/55",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Ludwig Johann",
+     "stand": "~",
+     "pages": [
+      52,
+      53
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 1,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-56",
+   "house_no_1825": "1/56",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Johann Johann",
+     "stand": "~",
+     "pages": [
+      52,
+      53
+     ],
+     "rows": 3,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 3,
+    "ps_kultur": {
+     "Acker": 2,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-59",
+   "house_no_1825": "1/59",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schimek Michael",
+     "stand": null,
+     "pages": [
+      42,
+      52
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Wald": 1,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-6",
+   "house_no_1825": "1/6",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schmiedtisch Johann",
+     "stand": "~",
+     "pages": [
+      52
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-61",
+   "house_no_1825": "1/61",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Pritschak Andr.",
+     "stand": "~",
+     "pages": [
+      41,
+      42,
+      52
+     ],
+     "rows": 6,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 6,
+    "ps_kultur": {
+     "Acker": 2,
+     "Wald": 2,
+     "Land": 1,
+     "Rebg[?] 1677": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-62",
+   "house_no_1825": "1/62",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschak Michl.",
+     "stand": "Land. Gräbler.",
+     "pages": [
+      41,
+      42,
+      52
+     ],
+     "rows": 9,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 9,
+    "ps_kultur": {
+     "Acker": 4,
+     "Wald": 5
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-63",
+   "house_no_1825": "1/63",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschak Georg.",
+     "stand": "~",
+     "pages": [
+      41,
+      52,
+      53
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Acker": 4
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-64",
+   "house_no_1825": "1/64",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Veit Blaschke seni[?]",
+     "stand": null,
+     "pages": [
+      42,
+      53
+     ],
+     "rows": 5,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 5,
+    "ps_kultur": {
+     "Wald": 2,
+     "Wiesen": 1,
+     "Wiese": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-65",
+   "house_no_1825": "1/65",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Michel Gorg",
+     "stand": "Einsiedler",
+     "pages": [
+      53
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Hutweide": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-1-66",
+   "house_no_1825": "1/66",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Christan Georg",
+     "stand": null,
+     "pages": [
+      42,
+      53
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Wald": 1,
+     "Wiese": 1,
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-11-1",
+   "house_no_1825": "11 / 1",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Olekschul Wulf",
+     "stand": null,
+     "pages": [
+      46
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Lhop": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-11-61",
+   "house_no_1825": "11 / 61",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Tschokitsch Muhel",
+     "stand": "Gruble",
+     "pages": [
+      46
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 1,
+     "Lohde": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-11-62",
+   "house_no_1825": "11 / 62",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschkan Muhel",
+     "stand": null,
+     "pages": [
+      46
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 1,
+     "Lhop": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-11-63",
+   "house_no_1825": "11 / 63",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Witschkan gzung.",
+     "stand": null,
+     "pages": [
+      46
+     ],
+     "rows": 2,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Lohde": 1,
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-16-17",
+   "house_no_1825": "16/17",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Michaell Maier",
+     "stand": null,
+     "pages": [
+      53
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-18-17",
+   "house_no_1825": "18/17",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Wenzl Gland",
+     "stand": null,
+     "pages": [
+      53
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Weiden": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-39-36",
+   "house_no_1825": "39/36",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Theresia Mitterp.",
+     "stand": null,
+     "pages": [
+      53
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-9.",
+   "house_no_1825": "9.",
+   "house_no_type": "special",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Matjaž Marnel",
+     "stand": "Bauer",
+     "pages": [
+      32
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-C",
+   "house_no_1825": "C",
+   "house_no_type": "special",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schöffpoltzy Joan",
+     "stand": null,
+     "pages": [
+      48
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
+   "house_id": "H-k",
+   "house_no_1825": "k",
+   "house_no_type": "special",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Gemeinde",
+     "stand": null,
+     "pages": [
+      35
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Leithe": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  }
+ ]
+}
