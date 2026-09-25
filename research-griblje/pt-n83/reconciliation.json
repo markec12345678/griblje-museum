@@ -1,0 +1,97 @@
+{
+ "built": "val 54 (faza 2 usklajevanja — naročilo: najprej pobrati, potem usklajevati)",
+ "method": "PT STABLE (40) klasificirani proti PUA (94 vpisov); 11 zemljevidnih vezav reviziranih proti PUA opombam + PT val53; nič ugibanja",
+ "headline_findings": [
+  "F1 SISTEMSKO: PT lastniška imena NEZANESLJIVA (isti bp med prehodi dobi 3-4 različna imena: bp 82-84 = Hunziker Marcel / Hraupf Georg / Hans Georg / Krauß Georg) — slaba kakovost skena; PUA = edina lastniška avtoriteta; PT uporaben LEKO strukturno (bp↔h)",
+  "F2 POMIK VRSTIC: p7-rep zoom branja ima +1 pomik vrstic (90-97); večinski glasovi (val41+val52+PUA opombe) razrešijo",
+  "F3 ZEMLJEVID bp 98 NEPODPRTO: opomba 'B.P. 98' ne obstaja — no. 7 (h.70, Grübler Maria Leutnerin) ima 'B.P. 90.', Zollamt (no. 95) brez opombe, PT bp 98 = h.20/39/50; verjetna zmeda 90↔98 pri val 52; popravek v zemljevid (VERIFIED-2x → REVIEW-CONFLICT)",
+  "F4 KURRENT 3↔5: PT 46/48→'h.63' 2× STABLE, a PUA opomba h.65='B.P. 46. 48.' + zoom 47→65 → 63 je verjetno napačno branje 65",
+  "F5 KURRENT 2↔3: PUA h.29 opomba 'B.P. 95. 97.' vs PT 95→h.39/40, 97→h.35/38 — 29↔39 dvom",
+  "F6 bp 76 KONFLIKT: PT 76→h.51 (2× STABLE) vs PUA opomba h.28 vključuje '76.' — zemljevid spuščen na REVIEW-CONFLICT",
+  "F7 bp 86 ŠIBKO: opomba 'b. P. 56. 38.' ne vsebuje 86; PT 86→h.37 konflikt → REVIEW-CONFLICT",
+  "F8 NAJMOČNEJŠA VEZ: bp 94→h.40 = 3 neodvisni viri (val41+52+53) + PUA no. 38 → nadgrajena na VERIFIED-2x"
+ ],
+ "pt_stable_vs_pua": {
+  "n": 40,
+  "name_match": 0,
+  "name_mismatch": 39,
+  "owner_empty": 1,
+  "interpretation": "0/39 imenskih soglasij = sistemski dokaz F1 (imena neuporabna za korooboracijo); strukturne povezave bp→h ostajajo veljavne neodvisno od imen"
+ },
+ "map_links_audit": [
+  {
+   "bp": "46",
+   "owner": "Widhann Georg (h.65)",
+   "verdict": "OK",
+   "evidence": "PUA no. 40 opomba 'B. P. 46. 48.' (p21); PT 63≈65 Kurrent"
+  },
+  {
+   "bp": "49",
+   "owner": "Widhann Georg (h.66)",
+   "verdict": "OK — popravljen pageRef 6→21",
+   "evidence": "PUA no. 41 opomba 'B. P. 49. 50.' (p21); PT 49→h61/62 konflikt (1↔6)"
+  },
+  {
+   "bp": "73",
+   "owner": "Penzig (h.60)",
+   "verdict": "OK (REVIEW-CONFLICT obstoječi)",
+   "evidence": "PUA no. 61 'B.P. 73.' (p31); PT 74→h.60 STABLE — sosednja vrstica, 73/74 dvom"
+  },
+  {
+   "bp": "76",
+   "owner": "Brincz Maria (h.28)",
+   "verdict": "SPUŠČEN na REVIEW-CONFLICT",
+   "evidence": "opomba h.28 vključuje '76.', a PT 76→h.51 2× STABLE"
+  },
+  {
+   "bp": "85",
+   "owner": "Krischan Peter (h.37)",
+   "verdict": "OK",
+   "evidence": "PT dual (41+52: 37) + PUA no. 36 opomba 'P.P. 85.' (B↔P); PT 53: 45/37 konflikt"
+  },
+  {
+   "bp": "86",
+   "owner": "Krischan Marla (h.36)",
+   "verdict": "SPUŠČEN na REVIEW-CONFLICT",
+   "evidence": "opomba 'b. P. 56. 38.' ne vsebuje 86; PT 86→h.37"
+  },
+  {
+   "bp": "89",
+   "owner": "Husitsch Maria (h.44)",
+   "verdict": "OK (REVIEW)",
+   "evidence": "PT dual 87/89/91→h.44; PUA no. 19 h.44 (p11)"
+  },
+  {
+   "bp": "92",
+   "owner": "Pöchinger Georg (h.41)",
+   "verdict": "SPUŠČEN na REVIEW",
+   "evidence": "PT dual 41 + zoom 44 (pomik); PUA opomba nečitljiva '19. Pp.'"
+  },
+  {
+   "bp": "93",
+   "owner": "Sautter (h.40)",
+   "verdict": "OK (REVIEW)",
+   "evidence": "PT dual 40 + PUA no. 38; zoom 41 (pomik)"
+  },
+  {
+   "bp": "94",
+   "owner": "Sautter (h.40)",
+   "verdict": "NADGRAJEN na VERIFIED-2x",
+   "evidence": "3 viri (41+52+53 obe) + PUA no. 38"
+  },
+  {
+   "bp": "98",
+   "owner": "k.k. Zollamt",
+   "verdict": "NEPODPRTO — SPUŠČEN na REVIEW-CONFLICT",
+   "evidence": "noben vir ne veže Zollamt na bp 98; no. 7 'B.P. 90.'; verjetna zmeda 90↔98 (val 52)"
+  }
+ ],
+ "open_for_full_res": [
+  "PUA p6 (no. 7 'B.P. 90.') in p47 (Zollamt no. 95) — reši bp 90/98 vprašanje",
+  "PT p5 vrstice 46-48 (h.63 vs 65) in 76 (h.51 vs 28)",
+  "PT p4 vrstice 24/25 (h.1) vs PUA h.1 opomba 'B.P. ca. 10'",
+  "PUA p18 (no. 35 'b. P. 56. 38.') — bp 86 povezava",
+  "PUA p30 (no. 59 '19. Pp.') — bp 92 povezava",
+  "PT p7 rep 90-100 (pomik vrstic + Zollamt)"
+ ]
+}
