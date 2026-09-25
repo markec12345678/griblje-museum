@@ -134,7 +134,7 @@ describe("val 54 usklajevanje (PUA↔PT↔zemljevid A01)", () => {
   };
   const cadPath = join(HERE, "src", "data", "cadastre-a01.json");
   const cad = JSON.parse(readFileSync(cadPath, "utf-8")) as {
-    buildings: { bp: string; owner?: string; owner_status?: string }[];
+    buildings: { bp: string; owner?: string; owner_status?: string; link_source?: string }[];
   };
 
   test("reconciliation ima 8 glavnih najdb in revizijo 11 vezav", () => {
