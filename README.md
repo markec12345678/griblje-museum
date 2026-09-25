@@ -4,6 +4,10 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **117. sklop — ISSUE #43 §2/§6: Evidence Explorer API + KG v1.1 (64. val, 2026-09-25)**
+> `GET /api/atlas/evidence` — pregled grafa + dokazna veriga per node (`?node=house 40` → 2 OWNER claim-a → vac_details_url do dokumenta) + iskanje · **KG-F02: popravljen SRC katalog** (v1 napačni uodidi 227668/70/71 = A02/A03/A04; pravilno po val 42: PUA=373417, PS=373415, PT=373416 …) · api-smoke 51/51 · +0 virov/+0 trditve/+0 UI · 248/248 testov
+>
+
 > **116. sklop — ISSUE #43: Knowledge Graph v1 (63. val, 2026-09-25)**
 > **3.275 nodes / 3.514 edges / 600 claims / 8 research gaps / 4 story atoms** iz registrov 59/60/62 (deterministično, regenerabilno) · OWNER_OF z ločenima periodama (PUA pripravljalno vs PS 1825 — F9 v grafu) · h.40 OBA claim-a živita · **KG-F01: bp 90 napetost pt_houses 44 vs CONFIRMED-2x h.43 — obe povezavi ohranjeni + RG-008** · §11 invarianti enforce-ana (claim brez source = napaka; 0 mergeov; referenčna integriteta) · +0 virov/+0 trditev/+0 UI · 238/238 testov
 >
