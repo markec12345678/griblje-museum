@@ -4,6 +4,10 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **121. sklop — ISSUE #42 §21 PASS 6: STORY GRAPH v1 + KG v1.4 (68. val, 2026-09-26)**
+> **Pripovedni graf kot osnova za zgodbonizacijo** — `GET /api/atlas/story-graph` (pregled / `?node=` sosednost depth 1–2 z capped 1.000 + `truncated` flag / `?type=` / `?relation=` / `?q=` / `?atoms=1` z razrešenimi claims in `provenance_complete`) · **1:1 projekcija KG v1.4: 3.309 entitet / 3.569 relacij** (OSEBA ↔ HIŠA ↔ PARCELA ↔ BP ↔ TOPONIM ↔ DOGODEK ↔ VIR), **vsaka povezava z relation type + source + confidence + date/period** (§21) + SLO bralni znak · **KG-F07: PASS 6 invariant ujel claim-first vrzel** — IS_GEMEINDE_OF (TP-001→TP-003) brez claima, SA-004 brez claim_ids → v1.4 dodan **claim C-00622** (prejšnji ID-ji stabilni, nič prepisano §12) · **story_engine_contract** (§22/§43 §7: story_id + entity/claim/source IDs + timestamp + prompt_version + status = shema, ne podatki) · kg_sha256 provenance (reproducibilnost) · fail-fast invarianti (kršitev = build ne zapiše izhoda) · api-smoke 70/70 · +0 virov/+0 trditev/+0 UI · **314/314 testov**
+>
+
 > **120. sklop — ISSUE #42 §15 PASS 5: MAP DATA MODEL v1 (67. val, 2026-09-25)**
 > **Podatkovni zemljevid, ne samo vizualizacija** — `GET /api/atlas/map` (sloji map_objects/houses/toponyms/sheets + `?sheet=` filter, poštene 400) + UI sloji na listu A01 z **»Dokazna veriga ↗« (klikljivo do vira)** · hiša locirana **samo** prek dokazane verige HOUSE ← BP_BOUND_TO_HOUSE ← BP ← CORRESPONDS_TO_BP ← MO-A01 (status-rang CONFIRMED > … > CONFLICT, konflikti ostanejo vidni §14) · **KG-F05 varovalka: A02–A05 glife (12/20/22) NE locirajo hiš** (brez sidra je lat/lng izmišljotina) · **§9: 2.467 parcel brez geometrije** (nikoli ne rišemo »lepih« parcel) · §10 disclaimer v vsakem odgovoru (PROVIZORIČNO; OSM NI zgodovinski dokaz) · api-smoke 60/60 · +0 virov/+0 trditev/+0 MAP_OBJECT · 294/294 testov
 >
