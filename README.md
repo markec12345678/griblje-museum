@@ -4,6 +4,10 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **119. sklop — ISSUE #42 §7 PASS 4b: A02–A05 building inventory v1 + KG v1.3 (66. val, 2026-09-25)**
+> **2-prehodno agentovo branje vseh 4 preostalih listov atlasa brez VLM** (88 determinističnih izrezkov A/B/T/R/R2 iz a227668/70/71/73) · **10 objektov** (A02: 8, A03: 0, A04: 0, A05: 2) + 5 negativnih + 9 mejnih točk N°1–9 + 21 toponimov · **CERKEV sv. Vid s križem na A02 = prva kartografska lokacija cerkve** (F-A02-02; razlaga NF-A01-01) · BP kandidati **"12." CLEAR + "20" + "22" PROBABLE @6× = prvi glifi iz range 1–29** (merge brez sidra PREPOVEDAN, KG-F05) · **F-A05-04: "Schimshu Dravi N°8" (cel napis) vs "Schumsthl Traverne" (val 42) — gostilniški signal MVG-109 OSLABLJEN** · KG v1.3 **3.309 nodes / 3.569 edges / 621 claims** (+10 MAP_OBJECT, DEPICTED_ON, 3× CORRESPONDS_TO_BP claim-first; RG-001 → **RESOLVED-V66**) · api-smoke 55/55 · +0 virov/+0 trditve/+0 UI · 275/275 testov
+>
+
 > **118. sklop — ISSUE #42 §7 PASS 4: A01 building inventory v1 (65. val, 2026-09-25)**
 > **2-prehodno agentovo branje katastrskega lista A01 brez VLM** (40 determinističnih izrezkov 3×–6×) · **24 objektov v65 + 56 prior-only + 8 rdečih glif; 18 z BP glifo** — novi BP: **24 (edini iz 1–29), 91, 87+88 kandidat** · **KG-F03: prior pozicije (val 52–56) odmaknjene od glif do 490 m — glifna plast = nova referenca, px_prior ohranjen** · **KG-F04 OPEN: BP številke = stavbne parcele tudi po PUA (house_refs = holdingi, ne hišne številke)** · Žolant: največja zidana stavba NEoznačena (ni identificirano ≠ ni obstajalo) · KG v1.2 **3.299 nodes / 3.556 edges / 618 claims** + MAP_OBJECT plast (RG-001 PARTIAL) · api-smoke 53/53 · +0 virov/+0 trditve/+0 UI · 259/259 testov
 >
