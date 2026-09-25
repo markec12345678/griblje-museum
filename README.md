@@ -4,6 +4,10 @@ Digitalni muzej vasi **Griblje** (Bela krajina, Slovenija) — zbirka, zgodbe, z
 dogodki in odprti podatki. Zgrajen po vzoru standardov nagrajenih norveških muzejev
 (Nasjonalmuseet — *Årets museum 2025*, Valdresmusea — *Årets museum 2022*).
 
+> **116. sklop — ISSUE #43: Knowledge Graph v1 (63. val, 2026-09-25)**
+> **3.275 nodes / 3.514 edges / 600 claims / 8 research gaps / 4 story atoms** iz registrov 59/60/62 (deterministično, regenerabilno) · OWNER_OF z ločenima periodama (PUA pripravljalno vs PS 1825 — F9 v grafu) · h.40 OBA claim-a živita · **KG-F01: bp 90 napetost pt_houses 44 vs CONFIRMED-2x h.43 — obe povezavi ohranjeni + RG-008** · §11 invarianti enforce-ana (claim brez source = napaka; 0 mergeov; referenčna integriteta) · +0 virov/+0 trditev/+0 UI · 238/238 testov
+>
+
 > **115. sklop — ATLAS 1825 §12: toponimni register v1 (62. val, 2026-09-25)**
 > **37 toponimov** iz 5 nivojev dokazov (field/printed/single-pass/multi-pass/research_doc) · **TP-001 self Gemeinde: 6 form, 48 pojavitev** (GRÜBLE tiskano, Grübln/Gruble/Grable … — merge po dokumentni identiteti k.o. N83, ne po podobnosti) · **25 PROVISIONAL iz PR Grenz-Beschreibung** (sosedje Weichselberg/Hochsteg/Schönbach/Stadelbach/Dolga vas/Črnomelj + potoki Lahinja/Dolina/Radešica/Bistrica/Sušica/Mlinščica + 4 hribi + 3 mlini; PG skica: Thiasing/Dullach/Waischenberg/Drulach/Dampfbach) · **8 zunanjih naselitev** (Zagorje, Gradiše, Dragole, Zogwitsche, Schönboden, Waidhofen, Gräving, Höchsthal) · 5 possible_matches NOT_MERGED · **modern_mapping = UNKNOWN povsod** · NR-12/NR-13 → 13 negativnih rezultatov · +0 virov/+0 trditev/+0 UI · 221/221 testov
 >
