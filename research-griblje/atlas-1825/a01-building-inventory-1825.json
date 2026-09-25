@@ -1,0 +1,2328 @@
+{
+ "val": 65,
+ "pass": 4,
+ "issue": "42 §7 (A01 building coverage)",
+ "title": "A01 BUILDING INVENTORY v1 — 2-prehodno agentovo branje brez VLM",
+ "method": {
+  "protocol": "2 neodvisna prehoda (A: mreza 3x, B: kvadranti 2.5x + zunanji) + R 4x + R2 6x kontrola",
+  "reader": "glavni agent (orodje za branje slik), brez VLM API klicev (kvota 429)",
+  "crop_script": "research-griblje/a01/make-a01-crops.py (deterministično, regenerabilno)",
+  "position_convention": "px = pozicija ŠTEVILČNE GLIFE (ali središče stavbe pri UNIDENTIFIED) na rasterju 2826x2273"
+ },
+ "raster": {
+  "file": "raw-web-val42-2026-10/n083a-pages/a01.jpg",
+  "px": [
+   2826,
+   2273
+  ]
+ },
+ "georef": {
+  "anchor_px": [
+   1851,
+   1778
+  ],
+  "anchor_geo": [
+   45.57246,
+   15.29257
+  ],
+  "meters_per_px": 2.1909,
+  "accuracy": "PROVIZORIČNO: ±200–500 m na robovih (rotacija lista ni rešena)"
+ },
+ "provenance": {
+  "prior_extraction": "src/data/cadastre-a01.json (56 stavb, val 52+54+56, q1/q3/qcore-3x)",
+  "bp_matrix": "atlas-1825/bp-house-reconciliation-1825.json (val 57)",
+  "house_register": "atlas-1825/house-register-1825.json (owners.a01 veze, val 54/56/57)",
+  "pua_parcels": "atlas-1825/parcel-register-1825.json (2035 parcel, val 60)",
+  "crops": {
+   "A": [
+    "v-r1c1",
+    "v-r1c2",
+    "v-r2c1",
+    "v-r2c2",
+    "v-r3c1",
+    "v-r3c2"
+   ],
+   "B": [
+    "b-nw",
+    "b-ne",
+    "b-sw",
+    "b-se",
+    "x-north",
+    "x-west",
+    "x-gruell",
+    "ctx-village",
+    "x-title"
+   ],
+   "R": [
+    "t-94-mine",
+    "t-95-93-mine",
+    "t-94-old",
+    "t-93-old",
+    "t-95-old",
+    "t-57-62",
+    "t-80-84",
+    "t-87-91",
+    "t-96-97",
+    "t-zohlant",
+    "t-east-100s",
+    "t-east-100b"
+   ],
+   "R2": [
+    "z-9x-2157-1354",
+    "z-yellow-2187-1342",
+    "z-94c-2175-1404",
+    "z-93or94-2169-1538",
+    "z-159or109-2185-1428",
+    "z-1459-2121-1468",
+    "z-91-2171-1499",
+    "z-88-2079-1535",
+    "z-87-2109-1490",
+    "z-58-1905-1902",
+    "z-61-1939-1976",
+    "z-59-1788-1940"
+   ]
+  }
+ },
+ "counts": {
+  "objects_v65": 24,
+  "objects_with_bp": 18,
+  "located_v65": 18,
+  "located_prior_only": 43,
+  "not_located_1_100": 40,
+  "red_glyphs": 8
+ },
+ "objects": [
+  {
+   "object_id": "MO-A01-001",
+   "bp": "24",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "rumena stavba z dvokapno streho v dvorišču BP 94; zraven rdeča glifa 103 (vrtna parcela)",
+   "px": [
+    2189,
+    1341
+   ],
+   "lat": 45.581061,
+   "lng": 15.302073,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "1"
+    ]
+   },
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": "NEW",
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "A-v-r1c2",
+    "B-b-ne",
+    "R-t-94-mine",
+    "R-t-east-100s",
+    "R2-z-yellow-2187-1342"
+   ],
+   "notes": "NOV BP: 1–29 prej vsi neizluščeni (val 52–56: 'drobne gospodarske stavbe'); 6x branje '24' jasno"
+  },
+  {
+   "object_id": "MO-A01-002",
+   "bp": "94",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "bela (zidana?) dvokapna stavba, 2 trakt; prizidek z rdečo glifo 169 (PUA parcela 169 sec I)",
+   "px": [
+    2176,
+    1402
+   ],
+   "lat": 45.57986,
+   "lng": 15.301708,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [
+    {
+     "house_id": "H-040",
+     "house_no": "40",
+     "status": "VERIFIED-2x",
+     "link_source": "PT 94→h.40 = 3 neodvisna viri (val 41 + val 52 + val 53 obe branji) + PUA h.40 (no. 38, p29) — najmočnejša vez"
+    }
+   ],
+   "val57_matrix": {
+    "status": "CONFIRMED",
+    "pt_houses": [
+     "40"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "47"
+     ],
+     "page": 22
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    2070,
+    1372
+   ],
+   "px_prior_delta": [
+    106,
+    30
+   ],
+   "source_crops": [
+    "A-v-r1c2",
+    "B-b-ne",
+    "R-t-94-mine",
+    "R2-z-94c-2175-1404",
+    "R2-z-159or109-2185-1428"
+   ],
+   "notes": "glifa '94' jasna @6x; h.40 veza VERIFIED-2x (PT p7 + PUA no.38 p29)"
+  },
+  {
+   "object_id": "MO-A01-003",
+   "bp": "91",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "rumeno-bela stavba v kompleksu z 93/89; dvokapna",
+   "px": [
+    2164,
+    1498
+   ],
+   "lat": 45.577971,
+   "lng": 15.30137,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "40"
+    ]
+   },
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": "NEW",
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "A-v-r1c2",
+    "B-b-ne",
+    "R-t-87-91",
+    "R2-z-91-2171-1499"
+   ],
+   "notes": "NOV BP (prej med 90–91 'niso izluščeni'); @6x jasno '91'; h.40 CONFLICT (PT p7 91→h.40)"
+  },
+  {
+   "object_id": "MO-A01-004",
+   "bp": "98",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "building_unclassified",
+   "footprint_note": "stavba ob zahodnem robu vzhodne ulice; brez vidnejših tlorisnih posebnosti @4x",
+   "px": [
+    2132,
+    1435
+   ],
+   "lat": 45.579211,
+   "lng": 15.30047,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "39"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "47",
+      "61"
+     ],
+     "page": 10
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    2068,
+    1458
+   ],
+   "px_prior_delta": [
+    64,
+    -23
+   ],
+   "source_crops": [
+    "R-t-94-mine",
+    "R-t-94-old",
+    "R2-z-1459-2121-1468"
+   ],
+   "notes": "glifa '98' jasna v 3 izrezkih; PUA p47 no.95 (h.70 Zollamt) opomba 'B.P. 98.' VERIFIED-2x (val 56)"
+  },
+  {
+   "object_id": "MO-A01-005",
+   "bp": "89",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "bela stavba s prečno dvokapno streho na koncu vzhodne ulice",
+   "px": [
+    2134,
+    1560
+   ],
+   "lat": 45.57675,
+   "lng": 15.300527,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [
+    {
+     "house_id": "H-044",
+     "house_no": "44",
+     "status": "REVIEW",
+     "link_source": "PT p7 (dvojno branje: val 41 + val 52)"
+    }
+   ],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "36"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "33"
+     ],
+     "page": 32
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    2037,
+    1511
+   ],
+   "px_prior_delta": [
+    97,
+    49
+   ],
+   "source_crops": [
+    "B-b-ne",
+    "R-t-87-91",
+    "R2-z-93or94-2169-1538"
+   ],
+   "notes": "glifa '89' jasna; h.44 veza (PT p7 dvojno branje)"
+  },
+  {
+   "object_id": "MO-A01-006",
+   "bp": "86",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "outbuilding",
+   "footprint_note": "manjša stavba ob cestišču zahodno od 88-dvorišča",
+   "px": [
+    2088,
+    1501
+   ],
+   "lat": 45.577912,
+   "lng": 15.299233,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [
+    {
+     "house_id": "H-036",
+     "house_no": "36",
+     "status": "REVIEW-CONFLICT",
+     "link_source": "PUA opomba »b. P. 56. 38.« (no. 35, p18) — številke ne pokrivajo 86; PT p7 86→h.37 konflikt — kontrolo p18 v polni ločljivosti"
+    }
+   ],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "37"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "37"
+     ],
+     "page": 19
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    2044,
+    1580
+   ],
+   "px_prior_delta": [
+    44,
+    -79
+   ],
+   "source_crops": [
+    "R-t-87-91",
+    "R2-z-88-2079-1535",
+    "R2-z-87-2109-1490"
+   ],
+   "notes": "glifa '86' jasna; h.36 konflikt (PUA 'b. P. 56. 38.' p18 ne pokriva 86)"
+  },
+  {
+   "object_id": "MO-A01-007",
+   "bp": "82",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "bela stavba z rumenim prizidkom, južno od 86",
+   "px": [
+    2124,
+    1594
+   ],
+   "lat": 45.576081,
+   "lng": 15.300246,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "UNRESOLVED",
+    "pt_houses": [
+     "41",
+     "45"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "33",
+      "43"
+     ],
+     "page": 6
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    2002,
+    1612
+   ],
+   "px_prior_delta": [
+    122,
+    -18
+   ],
+   "source_crops": [
+    "A-v-r1c2",
+    "R-t-80-84"
+   ],
+   "notes": "glifa '82' jasna @4x; h.45 veza (PT p7 dvojno branje)"
+  },
+  {
+   "object_id": "MO-A01-008",
+   "bp": "71",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "rumena dvotraktna stavba na zahodnem vhodu v vas",
+   "px": [
+    1986,
+    1702
+   ],
+   "lat": 45.573956,
+   "lng": 15.296366,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "34"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "36",
+      "60"
+     ],
+     "page": 18
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1958,
+    1861
+   ],
+   "px_prior_delta": [
+    28,
+    -159
+   ],
+   "source_crops": [
+    "A-v-r2c1",
+    "B-b-nw"
+   ],
+   "notes": "2 neodvisna prehoda konsistentna (1986,1702)/(1987,1701)"
+  },
+  {
+   "object_id": "MO-A01-009",
+   "bp": "56",
+   "glyph_tier": "CLEAR",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "bela dvokapna stavba, glifa '56.' s piko",
+   "px": [
+    1873,
+    1879
+   ],
+   "lat": 45.570472,
+   "lng": 15.293189,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "60"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "68"
+     ],
+     "page": 44
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1774,
+    1805
+   ],
+   "px_prior_delta": [
+    99,
+    74
+   ],
+   "source_crops": [
+    "A-v-r3c1",
+    "B-b-sw",
+    "R-t-57-62",
+    "R2-z-58-1905-1902"
+   ],
+   "notes": "glifa jasna v 2 izrezkih; PUA parcela 56 sec I → house_refs [68]"
+  },
+  {
+   "object_id": "MO-A01-010",
+   "bp": "93",
+   "glyph_tier": "PROBABLE",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "rumena dvokapna stavba pod 91",
+   "px": [
+    2167,
+    1538
+   ],
+   "lat": 45.577183,
+   "lng": 15.301455,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [
+    {
+     "house_id": "H-040",
+     "house_no": "40",
+     "status": "REVIEW",
+     "link_source": "PT p7 (dvojno branje: val 41 + val 52) + PUA h.40 (no. 38, p29) — PT val 53 zoom 93→h.41 (sum pomika vrstic)"
+    }
+   ],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "41"
+    ]
+   },
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1975,
+    1600
+   ],
+   "px_prior_delta": [
+    192,
+    -62
+   ],
+   "source_crops": [
+    "A-v-r1c2",
+    "R-t-80-84",
+    "R2-z-93or94-2169-1538"
+   ],
+   "notes": "druga številka dvomljiva 3|8 @6x; '98' že jasno pri (2132,1435) → 93 verjetneje; h.40 REVIEW"
+  },
+  {
+   "object_id": "MO-A01-011",
+   "bp": "100",
+   "glyph_tier": "PROBABLE",
+   "glyph_layer": "dark",
+   "building_type": "building_unclassified",
+   "footprint_note": "glifa '100.' na dvoriščnem prostoru med 82 in vzhodnim robom; vezava na stavbo NEJASNA",
+   "px": [
+    2112,
+    1616
+   ],
+   "lat": 45.575648,
+   "lng": 15.299908,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "5"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "44",
+      "68"
+     ],
+     "page": 11
+    },
+    {
+     "section": "II",
+     "houses": [
+      "65"
+     ],
+     "page": 21
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    2081,
+    1392
+   ],
+   "px_prior_delta": [
+    31,
+    224
+   ],
+   "source_crops": [
+    "A-v-r2c2",
+    "R-t-80-84"
+   ],
+   "notes": "prior (2081,1392) 224 px stran — možno dve različni '100' (parcela vs BP); glej glyph_catalog"
+  },
+  {
+   "object_id": "MO-A01-012",
+   "bp": "79",
+   "glyph_tier": "PROBABLE",
+   "glyph_layer": "dark",
+   "building_type": "outbuilding",
+   "footprint_note": "manjša stavba na zahodnem robu srednjega dela vasi",
+   "px": [
+    1917,
+    1740
+   ],
+   "lat": 45.573208,
+   "lng": 15.294426,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "41"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "33"
+     ],
+     "page": 32
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1800,
+    1725
+   ],
+   "px_prior_delta": [
+    117,
+    15
+   ],
+   "source_crops": [
+    "A-v-r2c1"
+   ],
+   "notes": "en prehod; vrednost 79|76|78 — zapisano kot PROBABLE 79"
+  },
+  {
+   "object_id": "MO-A01-013",
+   "bp": "87",
+   "glyph_tier": "CANDIDATE",
+   "glyph_layer": "dark",
+   "building_type": "outbuilding",
+   "footprint_note": "manjša stavba ob cestišču med 86 in 98; glifa '8' + majhen znak",
+   "px": [
+    2109,
+    1492
+   ],
+   "lat": 45.578089,
+   "lng": 15.299824,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "36"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "22"
+     ],
+     "page": 25
+    }
+   ],
+   "verdict_vs_prior": "NEW",
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "R-t-94-mine",
+    "R2-z-87-2109-1490"
+   ],
+   "notes": "NOV kandidat (prej 87–88 'niso izluščeni'); druga številka ni rešena @6x"
+  },
+  {
+   "object_id": "MO-A01-014",
+   "bp": "88",
+   "glyph_tier": "CANDIDATE",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "bela stavba z rumenim prizidkom v dvorišču zahodno od 89",
+   "px": [
+    2079,
+    1535
+   ],
+   "lat": 45.577243,
+   "lng": 15.29898,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "44"
+    ]
+   },
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": "NEW",
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "R-t-87-91",
+    "R-t-80-84",
+    "R2-z-88-2079-1535"
+   ],
+   "notes": "NOV kandidat; dvojni ovoj bran kot '88' @4x, @6x drugi znak nejasen"
+  },
+  {
+   "object_id": "MO-A01-015",
+   "bp": null,
+   "glyph_tier": "UNRESOLVED",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "rumeno-bela stavba v južnem delu vasi; glifa dvomljiva",
+   "px": [
+    1936,
+    1980
+   ],
+   "lat": 45.568484,
+   "lng": 15.29496,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": null,
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": null,
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "A-v-r3c1",
+    "B-b-sw",
+    "R-t-57-62",
+    "R2-z-61-1939-1976"
+   ],
+   "notes": "branja med prehodi: 34|61|51|81 — vrednost NI rešena; glej bp_coverage NOT_LOCATED"
+  },
+  {
+   "object_id": "MO-A01-016",
+   "bp": "42",
+   "glyph_tier": "CANDIDATE",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "rumena stavba v južnem grozdu",
+   "px": [
+    1829,
+    1930
+   ],
+   "lat": 45.569468,
+   "lng": 15.291951,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "26"
+    ]
+   },
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1685,
+    1856
+   ],
+   "px_prior_delta": [
+    144,
+    74
+   ],
+   "source_crops": [
+    "A-v-r3c1",
+    "B-b-sw",
+    "R-t-57-62"
+   ],
+   "notes": "kandidat '42'; vzporedno branje '42' tudi pri (1746,1946) — vsaj eno od obeh je druga številka"
+  },
+  {
+   "object_id": "MO-A01-017",
+   "bp": "42",
+   "glyph_tier": "CANDIDATE",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "bela-rumena stavba v jugozahodnem grozdu",
+   "px": [
+    1746,
+    1946
+   ],
+   "lat": 45.569154,
+   "lng": 15.289618,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "26"
+    ]
+   },
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1685,
+    1856
+   ],
+   "px_prior_delta": [
+    61,
+    90
+   ],
+   "source_crops": [
+    "B-b-sw"
+   ],
+   "notes": "drugi kandidat '42' (isti pass); 42a/42b — vsaj ena je napačna identifikacija"
+  },
+  {
+   "object_id": "MO-A01-018",
+   "bp": "52",
+   "glyph_tier": "PROBABLE",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "stavba z dvokapno streho v južnem delu",
+   "px": [
+    1852,
+    1970
+   ],
+   "lat": 45.568681,
+   "lng": 15.292598,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "62"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "65"
+     ],
+     "page": 21
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1793,
+    1822
+   ],
+   "px_prior_delta": [
+    59,
+    148
+   ],
+   "source_crops": [
+    "A-v-r3c1",
+    "B-b-sw"
+   ],
+   "notes": "PROBABLE '52' (5x?), en prehod"
+  },
+  {
+   "object_id": "MO-A01-019",
+   "bp": "55",
+   "glyph_tier": "PROBABLE",
+   "glyph_layer": "dark",
+   "building_type": "outbuilding",
+   "footprint_note": "manjša stavba med 56 in 61-kandidatom",
+   "px": [
+    1902,
+    1906
+   ],
+   "lat": 45.569941,
+   "lng": 15.294004,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "32"
+    ]
+   },
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "22"
+     ],
+     "page": 43
+    }
+   ],
+   "verdict_vs_prior": "POSITION_DISAGREE",
+   "px_prior": [
+    1768,
+    1814
+   ],
+   "px_prior_delta": [
+    134,
+    92
+   ],
+   "source_crops": [
+    "A-v-r3c1",
+    "B-b-sw"
+   ],
+   "notes": "PROBABLE '55'"
+  },
+  {
+   "object_id": "MO-A01-020",
+   "bp": null,
+   "glyph_tier": "UNREADABLE",
+   "glyph_layer": "dark",
+   "building_type": "outbuilding",
+   "footprint_note": "stavba s poševno hatch; glifa prekrižana (hatch čez zapis)",
+   "px": [
+    1905,
+    1902
+   ],
+   "lat": 45.57002,
+   "lng": 15.294088,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": null,
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": null,
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "A-v-r3c1",
+    "R-t-57-62",
+    "R2-z-58-1905-1902"
+   ],
+   "notes": "vrednost neberljiva (58|53 domneva iz 2.5x — NE potrjeno); 'ni identificirano' ≠ 'ni obstajalo'"
+  },
+  {
+   "object_id": "MO-A01-021",
+   "bp": null,
+   "glyph_tier": "UNRESOLVED",
+   "glyph_layer": "dark",
+   "building_type": "dwelling",
+   "footprint_note": "stavba na JV robu vasi",
+   "px": [
+    2126,
+    1864
+   ],
+   "lat": 45.570767,
+   "lng": 15.300302,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": null,
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": null,
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "A-v-r2c2",
+    "B-b-se"
+   ],
+   "notes": "branja: 72|73|78|79 — vrednost NI rešena; prior ima 72–79 v bližini (razpršene pozicije)"
+  },
+  {
+   "object_id": "MO-A01-022",
+   "bp": null,
+   "glyph_tier": "CANDIDATE",
+   "glyph_layer": "dark",
+   "building_type": "outbuilding",
+   "footprint_note": "manjša stavba na jugu vasi",
+   "px": [
+    1861,
+    2020
+   ],
+   "lat": 45.567697,
+   "lng": 15.292851,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": null,
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": null,
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "B-b-sw",
+    "R-t-57-62"
+   ],
+   "notes": "kandidat '27|21' — nizka številka (obseg Žolant?) v vasi — semantika nejasna, glej F-A01-06"
+  },
+  {
+   "object_id": "MO-A01-023",
+   "bp": null,
+   "glyph_tier": "UNIDENTIFIED",
+   "glyph_layer": "none",
+   "building_type": "complex_unidentified",
+   "footprint_note": "VELIKA zidana dvotraktna stavba (temno rdečkano-rjava) + zeleni bazen/vrt; brez glife @4x",
+   "px": [
+    1995,
+    2144
+   ],
+   "lat": 45.565257,
+   "lng": 15.296619,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": null,
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": null,
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "A-v-r3c1",
+    "B-b-sw",
+    "R-t-zohlant"
+   ],
+   "notes": "Žolant: največja stavba na listu, NEoznačena — 'ni identificirano' ≠ 'ni obstajalo' (§7)"
+  },
+  {
+   "object_id": "MO-A01-024",
+   "bp": null,
+   "glyph_tier": "UNIDENTIFIED",
+   "glyph_layer": "none",
+   "building_type": "landmark_unresolved",
+   "footprint_note": "majhen črno-bel kvadratni simbol ob kurzivnem 'Pod Grüblani' — kapelica/deszkak/vodnjak?",
+   "px": [
+    1697,
+    625
+   ],
+   "lat": 45.595152,
+   "lng": 15.28824,
+   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "related_houses": [],
+   "val57_matrix": null,
+   "pua_parcel_cross": [],
+   "verdict_vs_prior": null,
+   "px_prior": null,
+   "px_prior_delta": null,
+   "source_crops": [
+    "B-x-gruell"
+   ],
+   "notes": "tip NI rešljiv iz rasterja; brez napisa; toponim 'Pod Griblani' že v toponym-register (val 62)"
+  }
+ ],
+ "glyph_catalog_red_layer": [
+  {
+   "glyph": "103",
+   "layer": "red",
+   "kind": "garden_parcel",
+   "px": [
+    2187,
+    1325
+   ],
+   "geo": [
+    45.581376,
+    15.302017
+   ],
+   "source_crops": [
+    "A-v-r1c2",
+    "R-t-east-100s"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "29",
+      "44"
+     ],
+     "page": 11
+    }
+   ],
+   "notes": "rdeča na zelenem; PUA sec I: houses 29,44"
+  },
+  {
+   "glyph": "107",
+   "layer": "red",
+   "kind": "garden_parcel",
+   "px": [
+    2177,
+    1581
+   ],
+   "geo": [
+    45.576337,
+    15.301736
+   ],
+   "source_crops": [
+    "A-v-r2c2",
+    "R-t-80-84"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "II",
+     "houses": [
+      "62",
+      "66"
+     ],
+     "page": 21
+    },
+    {
+     "section": "I",
+     "houses": [
+      "22",
+      "28"
+     ],
+     "page": 25
+    }
+   ],
+   "notes": "rdeča na zelenem; PUA sec I+II"
+  },
+  {
+   "glyph": "159",
+   "layer": "red",
+   "kind": "outbuilding_parcel",
+   "px": [
+    2192,
+    1428
+   ],
+   "geo": [
+    45.579348,
+    15.302157
+   ],
+   "source_crops": [
+    "R2-z-159or109-2185-1428"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "28"
+     ],
+     "page": 39
+    }
+   ],
+   "notes": "rdeča NA prizidku 94; @6x '169|159' — glej tudi 169"
+  },
+  {
+   "glyph": "169",
+   "layer": "red",
+   "kind": "outbuilding_parcel",
+   "px": [
+    2192,
+    1426
+   ],
+   "geo": [
+    45.579388,
+    15.302157
+   ],
+   "source_crops": [
+    "R2-z-94c-2175-1404",
+    "R2-z-159or109-2185-1428"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "24",
+      "28",
+      "32",
+      "42"
+     ],
+     "page": 7
+    }
+   ],
+   "notes": "@6x jasnejše '169'; PUA sec I: houses 24,28,32,42"
+  },
+  {
+   "glyph": "165",
+   "layer": "red",
+   "kind": "garden_parcel",
+   "px": [
+    2200,
+    1502
+   ],
+   "geo": [
+    45.577892,
+    15.302382
+   ],
+   "source_crops": [
+    "R2-z-91-2171-1499"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "28"
+     ],
+     "page": 39
+    }
+   ],
+   "notes": "rdeča na zelenem"
+  },
+  {
+   "glyph": "1459",
+   "layer": "red",
+   "kind": "road_parcel",
+   "px": [
+    2123,
+    1468
+   ],
+   "geo": [
+    45.578561,
+    15.300217
+   ],
+   "source_crops": [
+    "R-t-94-mine",
+    "R-t-94-old",
+    "R2-z-87-2109-1490",
+    "R2-z-1459-2121-1468"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "II",
+     "houses": [
+      "28",
+      "66"
+     ],
+     "page": 21
+    }
+   ],
+   "notes": "rdeča '1459.' na cestišču; PUA sec II: houses 28,66 — CESTA = parcela"
+  },
+  {
+   "glyph": "926",
+   "layer": "red",
+   "kind": "field_parcel",
+   "px": [
+    2212,
+    1334
+   ],
+   "geo": [
+    45.581198,
+    15.30272
+   ],
+   "source_crops": [
+    "R2-z-yellow-2187-1342"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "22"
+     ],
+     "page": 3
+    },
+    {
+     "section": "II",
+     "houses": [
+      "12",
+      "68"
+     ],
+     "page": 24
+    }
+   ],
+   "notes": "rdeča na njivi vzhodno od vasi; '926|826' — UNRESOLVED"
+  },
+  {
+   "glyph": "65",
+   "layer": "red",
+   "kind": "road_garden_parcel",
+   "px": [
+    2093,
+    1453
+   ],
+   "geo": [
+    45.578856,
+    15.299374
+   ],
+   "source_crops": [
+    "R-t-94-old",
+    "R2-z-1459-2121-1468"
+   ],
+   "pua_parcel_cross": [
+    {
+     "section": "I",
+     "houses": [
+      "36"
+     ],
+     "page": 18
+    }
+   ],
+   "notes": "rdeča ob cesti"
+  }
+ ],
+ "prior_only_bp": [
+  {
+   "bp": "30",
+   "px_prior": [
+    1740,
+    1976
+   ],
+   "lat": 45.568563,
+   "lng": 15.289449,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "6"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "31",
+   "px_prior": [
+    1721,
+    1956
+   ],
+   "lat": 45.568957,
+   "lng": 15.288915,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "65"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "32",
+   "px_prior": [
+    1691,
+    1979
+   ],
+   "lat": 45.568504,
+   "lng": 15.288072,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "65"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "33",
+   "px_prior": [
+    1724,
+    1883
+   ],
+   "lat": 45.570393,
+   "lng": 15.288999,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "61"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "34",
+   "px_prior": [
+    1715,
+    1915
+   ],
+   "lat": 45.569764,
+   "lng": 15.288746,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "39"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "35",
+   "px_prior": [
+    1705,
+    1932
+   ],
+   "lat": 45.569429,
+   "lng": 15.288465,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "31"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "36",
+   "px_prior": [
+    1682,
+    1935
+   ],
+   "lat": 45.56937,
+   "lng": 15.287818,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "32"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "37",
+   "px_prior": [
+    1659,
+    1923
+   ],
+   "lat": 45.569606,
+   "lng": 15.287172,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "20"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "38",
+   "px_prior": [
+    1670,
+    1914
+   ],
+   "lat": 45.569783,
+   "lng": 15.287481,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "20"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "39",
+   "px_prior": [
+    1679,
+    1895
+   ],
+   "lat": 45.570157,
+   "lng": 15.287734,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "35"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "40",
+   "px_prior": [
+    1796,
+    1992
+   ],
+   "lat": 45.568248,
+   "lng": 15.291024,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "29"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "41",
+   "px_prior": [
+    1674,
+    1886
+   ],
+   "lat": 45.570334,
+   "lng": 15.287594,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "64"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "43",
+   "px_prior": [
+    1703,
+    1847
+   ],
+   "lat": 45.571102,
+   "lng": 15.288409,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "27"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "44",
+   "px_prior": [
+    1769,
+    1917
+   ],
+   "lat": 45.569724,
+   "lng": 15.290265,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "30"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "45",
+   "px_prior": [
+    1777,
+    1900
+   ],
+   "lat": 45.570059,
+   "lng": 15.290489,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "28"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "46",
+   "px_prior": [
+    1757,
+    1904
+   ],
+   "lat": 45.56998,
+   "lng": 15.289927,
+   "conf_prior": "high",
+   "house_no_prior": 65,
+   "link_source_prior": "PUA opomba (p21)",
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "63"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "47",
+   "px_prior": [
+    1761,
+    1891
+   ],
+   "lat": 45.570236,
+   "lng": 15.29004,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "65"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "48",
+   "px_prior": [
+    1672,
+    2027
+   ],
+   "lat": 45.567559,
+   "lng": 15.287537,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "63"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "49",
+   "px_prior": [
+    1811,
+    1863
+   ],
+   "lat": 45.570787,
+   "lng": 15.291445,
+   "conf_prior": "high",
+   "house_no_prior": 66,
+   "link_source_prior": "PUA opomba »B. P. 49. 50.« (no. 41, p21; val 54 preverjeno) + PT p5 konflikt (h61/62 ↔ 66, Kurrent 1↔6)",
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "61"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "50",
+   "px_prior": [
+    1771,
+    1861
+   ],
+   "lat": 45.570826,
+   "lng": 15.290321,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "60"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "51",
+   "px_prior": [
+    1773,
+    1842
+   ],
+   "lat": 45.5712,
+   "lng": 15.290377,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "60"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "53",
+   "px_prior": [
+    1748,
+    1840
+   ],
+   "lat": 45.57124,
+   "lng": 15.289674,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "61"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "54",
+   "px_prior": [
+    1758,
+    1813
+   ],
+   "lat": 45.571771,
+   "lng": 15.289955,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "30"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "63",
+   "px_prior": [
+    1871,
+    1834
+   ],
+   "lat": 45.571358,
+   "lng": 15.293132,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "49"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "64",
+   "px_prior": [
+    1884,
+    1820
+   ],
+   "lat": 45.571633,
+   "lng": 15.293498,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "55"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "65",
+   "px_prior": [
+    1824,
+    1743
+   ],
+   "lat": 45.573149,
+   "lng": 15.291811,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "53"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "66",
+   "px_prior": [
+    1852,
+    1824
+   ],
+   "lat": 45.571555,
+   "lng": 15.292598,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "55"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "67",
+   "px_prior": [
+    1847,
+    1790
+   ],
+   "lat": 45.572224,
+   "lng": 15.292458,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "54"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "68",
+   "px_prior": [
+    1854,
+    1775
+   ],
+   "lat": 45.572519,
+   "lng": 15.292654,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "43"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "69",
+   "px_prior": [
+    1970,
+    1901
+   ],
+   "lat": 45.570039,
+   "lng": 15.295916,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "45"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "70",
+   "px_prior": [
+    1986,
+    1883
+   ],
+   "lat": 45.570393,
+   "lng": 15.296366,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "36"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "72",
+   "px_prior": [
+    1913,
+    1798
+   ],
+   "lat": 45.572066,
+   "lng": 15.294313,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "38"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "73",
+   "px_prior": [
+    1891,
+    1749
+   ],
+   "lat": 45.573031,
+   "lng": 15.293695,
+   "conf_prior": "high",
+   "house_no_prior": 60,
+   "link_source_prior": "PUA opomba (p31)",
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "41"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "74",
+   "px_prior": [
+    2027,
+    1848
+   ],
+   "lat": 45.571082,
+   "lng": 15.297518,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "60"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "75",
+   "px_prior": [
+    2026,
+    1767
+   ],
+   "lat": 45.572676,
+   "lng": 15.29749,
+   "conf_prior": "medium",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "51"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "76",
+   "px_prior": [
+    1902,
+    1773
+   ],
+   "lat": 45.572558,
+   "lng": 15.294004,
+   "conf_prior": "high",
+   "house_no_prior": 28,
+   "link_source_prior": "PUA opomba »B.P. 76. 79. 81/82. 93/84.« (no. 79, p39) KONFLIKT s PT (76→h.51, 2× STABLE) — kontrolo p39/p5 v polni ločljivosti",
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "51"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "77",
+   "px_prior": [
+    1862,
+    1742
+   ],
+   "lat": 45.573169,
+   "lng": 15.292879,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "48"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "78",
+   "px_prior": [
+    1912,
+    1743
+   ],
+   "lat": 45.573149,
+   "lng": 15.294285,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "41"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "83",
+   "px_prior": [
+    2025,
+    1594
+   ],
+   "lat": 45.576081,
+   "lng": 15.297462,
+   "conf_prior": "high",
+   "house_no_prior": 45,
+   "link_source_prior": "PT p7 (dvojno branje: val 41 + val 52)",
+   "val57_matrix": {
+    "status": "PROBABLE",
+    "pt_houses": [
+     "45"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "85",
+   "px_prior": [
+    2028,
+    1539
+   ],
+   "lat": 45.577164,
+   "lng": 15.297546,
+   "conf_prior": "high",
+   "house_no_prior": 37,
+   "link_source_prior": "PT p7 (dvojno branje val 41 + val 52: h.37) + PUA opomba »P.P. 85.« (no. 36, p19; val 54; B↔P dvom) — PT val 53: 45/37 konflikt",
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "45"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "92",
+   "px_prior": [
+    2082,
+    1316
+   ],
+   "lat": 45.581553,
+   "lng": 15.299065,
+   "conf_prior": "high",
+   "house_no_prior": 41,
+   "link_source_prior": "PT p7 dvojno branje (val 41 + val 52: 41) + PUA no. 59 opomba nečitljiva (»19. Pp.«); PT zoom 92→h.44 (sum pomika vrstic)",
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "44"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "95",
+   "px_prior": [
+    2033,
+    1398
+   ],
+   "lat": 45.579939,
+   "lng": 15.297687,
+   "conf_prior": "high",
+   "house_no_prior": 39,
+   "link_source_prior": "PT p7 (dvojno branje: val 41 + val 52)",
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "40"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  },
+  {
+   "bp": "99",
+   "px_prior": [
+    2064,
+    1440
+   ],
+   "lat": 45.579112,
+   "lng": 15.298559,
+   "conf_prior": "high",
+   "house_no_prior": null,
+   "link_source_prior": null,
+   "val57_matrix": {
+    "status": "CONFLICT",
+    "pt_houses": [
+     "50"
+    ]
+   },
+   "status": "LOCATED_PRIOR_NOT_RECONFIRMED_V65",
+   "note": "pozicija iz val 52–56 ni bila ponovno najdena kot glifa v prehodih A/B/R/R2 — NI izpodbita, samo nepotrjena (§7: ne-identificirano ≠ ni-obstajalo)"
+  }
+ ],
+ "bp_coverage": {
+  "LOCATED_V65": [
+   "24",
+   "42",
+   "42",
+   "52",
+   "55",
+   "56",
+   "71",
+   "79",
+   "82",
+   "86",
+   "87",
+   "88",
+   "89",
+   "91",
+   "93",
+   "94",
+   "98",
+   "100"
+  ],
+  "LOCATED_PRIOR_ONLY": [
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40",
+   "41",
+   "43",
+   "44",
+   "45",
+   "46",
+   "47",
+   "48",
+   "49",
+   "50",
+   "51",
+   "53",
+   "54",
+   "63",
+   "64",
+   "65",
+   "66",
+   "67",
+   "68",
+   "69",
+   "70",
+   "72",
+   "73",
+   "74",
+   "75",
+   "76",
+   "77",
+   "78",
+   "83",
+   "85",
+   "92",
+   "95",
+   "99"
+  ],
+  "NOT_LOCATED": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "21",
+   "22",
+   "23",
+   "25",
+   "26",
+   "27",
+   "28",
+   "29",
+   "57",
+   "58",
+   "59",
+   "60",
+   "61",
+   "62",
+   "80",
+   "81",
+   "84",
+   "90",
+   "96",
+   "97"
+  ],
+  "not_located_meaning": "BP ni bil lociran na A01 @raster 2826x2273 (gre za drobne gospodarske stavbe ali glife pod ločljivostjo) — NI dokaz, da objekt ni obstajal (§7/§8)"
+ },
+ "negative_findings": [
+  {
+   "id": "NF-A01-01",
+   "finding": "Na A01 ni simbolov/napisov za cerkev, kapelico, gostilno ali križ (2 prehoda + val 42 VLM soglasje)",
+   "implication": "cerkev Griblje se na izmerjenem listu NE označuje; cerkvena parcela ostaja dokumentirana samo prek PUA/PS"
+  },
+  {
+   "id": "NF-A01-02",
+   "finding": "'Stavba' na severnem robu (pregled val 65 celotnega predogleda) = rob lista + trikotnik njive ob zeleni meji; NI stavbe",
+   "implication": "negativna kontrola — preprečen lažen BP vnos na severu"
+  },
+  {
+   "id": "NF-A01-03",
+   "finding": "'Grozd stavb' na jugozahodu (pregled val 65) = skupina dreves + rdeče številke njiv; NI stavb",
+   "implication": "negativna kontrola jugozahoda"
+  },
+  {
+   "id": "NF-A01-04",
+   "finding": "Žolant: poleg velike zidane stavbe ni prepoznavnih dodatnih stavb z glifami @4x",
+   "implication": "nizke rdeče številke 20–60 v Žolantu so NJIVE/vrtovi, ne stavbne glife"
+  }
+ ],
+ "findings": [
+  {
+   "id": "F-A01-01",
+   "status": "RESOLVED-V65",
+   "finding": "px pozicije izluška val 52–56 so sistematično odmaknjene od glif (delta 28–224 px = 60–490 m @2,19 m/px, smer SZ–JV mešana); niso bile berljive kot številke @4–6x",
+   "action": "v65 glifne pozicije = nova referenčna plast; px_prior ohranjen vsak objekt (nikoli prepisan); zemljevidna plast rabi kuratorski pregled (P2)"
+  },
+  {
+   "id": "F-A01-02",
+   "status": "OPEN",
+   "finding": "PUA preverek: vse temne glife na stavbah obstajajo TUDI kot parcelne številke PUA sec I/II z house_refs (npr. 94→[47], 56→[68], 1459→[28,66]) — 'Nro. in der Mappe' (BP, PT 'Protocoll der Bau Parcellen') in PUA parcelna številka sta ista številka na stavbni parceli, ampak house_refs (PUA holding) ≠ hišna številka (PT p7) — dva različna ključna prostora",
+   "what_would_resolve": "re-read PT p7 @300dpi (ob kvoti) + kontrola 2–3 vezav h.NN ↔ PUA holding; do takrat ostajajo obe interpretaciji ločeno (§5: ne prepiši ene z drugo)"
+  },
+  {
+   "id": "F-A01-03",
+   "status": "RESOLVED-V65",
+   "finding": "novi BP glifi: 24 CLEAR (edini iz 1–29), 91 CLEAR, 87 + 88 CANDIDATE — izlušek 56 → 60 pozicij (56 prior + 4 nova, od tega 2 kandidatski)",
+   "action": "vključeno v bp_coverage.LOCATED_V65"
+  },
+  {
+   "id": "F-A01-04",
+   "status": "OPEN",
+   "finding": "Žolant: največja zidana stavba na celem listu (~1995,2144) je NEoznačena (brez glife @4x); nizke rdeče številke 20–60 so njive/vrtovi",
+   "what_would_resolve": "re-read @višji dpi (VAČ original) ali PZ konskripcija 1830 (Žolant hiše) — ob kvoti"
+  },
+  {
+   "id": "F-A01-05",
+   "status": "RESOLVED-V65",
+   "finding": "rdeče 4-mestne glife na cestišču = parcelne številke cest (1459 potrjeno v PUA sec II, houses 28/66) — ceste/voda so tudi parcele",
+   "action": "glyph_catalog_red_layer.kind=road_parcel"
+  },
+  {
+   "id": "F-A01-06",
+   "status": "OPEN",
+   "finding": "kandidat '27|21' (1861,2020) je nizka številka v vasi — bodisi glifa pod ločljivostjo bodisi oštevilčenje, ki prečka vaško/Žolant semantiko",
+   "what_would_resolve": "re-read @višji dpi; PUA parcela 27/21 sec I kontrola"
+  }
+ ],
+ "research_gaps": [
+  {
+   "gap_id": "RG-001",
+   "status": "PARTIAL",
+   "missing_relation": "MAP_OBJECT inventory (A01–A05 objekti)",
+   "current_result": "A01 v1: 24 objektov v65 (9 s BP, 15 brez/dvomljivi) + 56 prior-only + 8 rdečih glif; A02–A05 ŠE NI inventariziranih",
+   "next_source": "A02–A05 isti protokol; PT p7 re-read @300dpi za BP→hiše; VAČ original @višji dpi za 87/88/58/61/93 glife"
+  }
+ ],
+ "generated_utc": "2026-09-25T17:19:20Z"
+}

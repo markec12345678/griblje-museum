@@ -355,6 +355,30 @@ ok(
 const atlasMissing = await getJson("/api/atlas/evidence?node=house%20999");
 ok("atlas evidence: neobstoječi node = 404 node_not_found (brez ugibanja)", atlasMissing.status === 404 && atlasMissing.body?.error === "node_not_found", `status=${atlasMissing.status}`);
 
+/* --- 5f. /api/atlas/evidence — MAP_OBJECT veriga (val 65, #42 §7) ---------- */
+const atlasMO94 = await getJson("/api/atlas/evidence?node=" + encodeURIComponent("MO:MO-A01-002"));
+const mo94BpEdge = (atlasMO94.body?.edges ?? []).find(
+  (e: any) => e.relation_type === "CORRESPONDS_TO_BP"
+);
+ok(
+  "atlas evidence: MAP_OBJECT (BP 94) — glifna plast z CORRESPONDS_TO_BP + DEPICTED_ON SRC-A01 (val 65)",
+  atlasMO94.status === 200 &&
+    atlasMO94.body?.node?.node_type === "MAP_OBJECT" &&
+    atlasMO94.body?.node?.bp === "94" &&
+    mo94BpEdge?.to_entity === "BP:094" &&
+    (atlasMO94.body?.edges ?? []).some((e: any) => e.relation_type === "DEPICTED_ON" && e.to_entity === "SRC-A01"),
+  `status=${atlasMO94.status} bp=${atlasMO94.body?.node?.bp}`
+);
+const atlasSearchMO = await getJson("/api/atlas/evidence?q=complex_unidentified&type=MAP_OBJECT");
+ok(
+  "atlas evidence: search MAP_OBJECT — neoznačena Žolant stavba po building_type (UNIDENTIFIED ≠ ne-obstoj)",
+  atlasSearchMO.status === 200 &&
+    atlasSearchMO.body?.results?.length === 1 &&
+    atlasSearchMO.body?.results?.[0]?.node_type === "MAP_OBJECT" &&
+    String(atlasSearchMO.body?.results?.[0]?.node_id).startsWith("MO:MO-A01-"),
+  `status=${atlasSearchMO.status} hits=${atlasSearchMO.body?.results?.length}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
