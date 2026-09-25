@@ -583,8 +583,15 @@ def main():
                 srcs.add(topo_src_map[s])
         for s in sorted(srcs):
             G.edge(t["toponym_id"], "DOCUMENTED_IN", s, "1825/1827", [s], t["review_status"], "medium")
+    # v1.4 (KG-F07): tudi IS_GEMEINDE_OF claim-first (§43 §3) — prej edge brez
+    # claima, SA-004 pa brez claim povezave (ujel PASS 6 invariant §43 §8/§11).
+    _cid_gemeinde = G.claim("TP-001", "IS_GEMEINDE_OF", "TP-003",
+                            {"source": "SRC-A01"}, "VERIFIED_FORM",
+                            period="1824/1827", confidence="high",
+                            notes="tiskane naslovnice vseh registrov poimenujejo isto Gemeindo; vire SRC-A01/PT/PS nosi relacija")
     G.edge("TP-001", "IS_GEMEINDE_OF", "TP-003", "1824/1827", ["SRC-A01", "SRC-PT", "SRC-PS"],
-           "VERIFIED_FORM", "high", notes="tiskane naslovnice vseh registrov poimenujejo isto Gemeindo")
+           "VERIFIED_FORM", "high", notes="tiskane naslovnice vseh registrov poimenujejo isto Gemeindo",
+           claim_ids=[_cid_gemeinde])
 
     # ---------- STORY ATOMS (§8, exemplarji s polno provenanco) ----------
     def claims_of(pred, subj=None):
@@ -630,7 +637,7 @@ def main():
             "period": "1824/1827",
             "statement": "Tiskane naslovnice vseh spisovnih enot + A01 legenda ('Gemeinde GRÜBLE in Illyrien') poimenujejo ista Gemeindo — self-toponym z 6 variantskami formami.",
             "entities": ["TP-001", "TP-003"],
-            "claim_ids": [],
+            "claim_ids": claims_of("IS_GEMEINDE_OF", "TP-001"),
             "source_ids": ["SRC-PT", "SRC-PR", "SRC-PS", "SRC-PUA", "SRC-PV", "SRC-A01", "SRC-PG"],
             "confidence": "high",
             "evidence_status": "VERIFIED_FORM",
@@ -703,9 +710,9 @@ def main():
     }
 
     out = {
-        "val": 66,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b",
-        "title": "knowledge-graph-1825 v1.3",
+        "val": 68,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6",
+        "title": "knowledge-graph-1825 v1.4",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -747,6 +754,13 @@ def main():
                 "statement": "PASS 4b: A02–A05 inventarizirani (2 prehoda, brez VLM). Cerkev sv. Vid najdena na A02 s križem (F-A02-02 — na A01 je odrezana). A03+A04 = 0 stavb (negativni rezultati). A05 'vas 50–60 hiš' (val 42) = vinogradniški trakovi s kocami (F-A05-02); 'Schumsthl Traverne' (val 42) vs 'Schimshu Dravi N°8' (val 66) = dve branji, gostilniški signal OSLABLJEN (F-A05-04); mejne točke N°1–9 = verjetno PR Grenz-Beschreibung točke (F-A05-03). BP kandidati 12/20/22 na A02 @6x — merge v matrico prepovedan brez sidra.",
                 "status": "RESOLVED-V66 (odprta: F-A02-01, F-A05-03, F-A05-04)",
                 "provenance": "pass4b/a02-a05-building-inventory-1825.json (val 66)",
+            },
+            {
+                "finding_id": "KG-F07",
+                "val": 68,
+                "statement": "PASS 6 invariant je ujel kršitev claim-first arhitekture: relacija IS_GEMEINDE_OF (TP-001 → TP-003) je bila brez claima, story atom SA-004 pa brez claim_ids (§43 §8/§11: zgodba brez claim povezav ni dovoljena). v1.4: dodan claim C-00622 (subject TP-001, IS_GEMEINDE_OF, TP-003, source SRC-A01; vire SRC-A01/PT/PS nosi relacija), SA-004 povezana nanj. Nič prejšnjih claim ID-jev se ne premakne (claim je zadnji v vrsti).",
+                "status": "RESOLVED-V68",
+                "provenance": "story-graph-1825.json invariant build (val 68); issue #43 §3/§8/§11",
             },
         ],
         "provenance": {
