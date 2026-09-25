@@ -25,21 +25,38 @@ from datetime import datetime, timezone
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 RG = os.path.dirname(BASE)
+REPO = os.path.dirname(RG)
 
 SRC_DOCS = [
-    {"source_id": "SRC-PUA", "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer", "archive": "SI AS 176 [227670]", "docid": 41782, "pages": 49},
-    {"source_id": "SRC-PS", "label": "PS N83 — Protocol der Grund-Parcellen", "archive": "SI AS 176 [227671]", "docid": 41780, "pages": 143, "coverage": "PARTIAL 55/143 (val 57/61)"},
-    {"source_id": "SRC-PT", "label": "PT N083 — Protocoll der Bau Parcellen", "archive": "SI AS 176 [227668]", "docid": 41781, "pages": 8},
-    {"source_id": "SRC-PR", "label": "PR — Grenz-Beschreibung der Gemeinde GRÜBLE", "archive": "SI AS 176", "docid": 41779, "pages": 4},
-    {"source_id": "SRC-PG", "label": "PG — Übersichtsskizze k.o. N83", "archive": "SI AS 176", "docid": 41778, "pages": 1},
-    {"source_id": "SRC-PV", "label": "PV — Ausweis über die Benützungsart des Bodens", "archive": "SI AS 176", "docid": 41783, "pages": 1},
-    {"source_id": "SRC-PZ", "label": "PZ — Konskripcija 1830", "archive": "SI AS 176", "docid": 41784, "pages": 71},
-    {"source_id": "SRC-A01", "label": "A01 — katastrski list (vas)", "archive": "SI AS 176 [227663]", "docid": 10},
-    {"source_id": "SRC-A02", "label": "A02 — katastrski list", "archive": "SI AS 176", "docid": 10},
-    {"source_id": "SRC-A03", "label": "A03 — katastrski list", "archive": "SI AS 176", "docid": 10},
-    {"source_id": "SRC-A04", "label": "A04 — katastrski list", "archive": "SI AS 176", "docid": 10},
-    {"source_id": "SRC-A05", "label": "A05 — katastrski list", "archive": "SI AS 176", "docid": 10},
-    {"source_id": "SRC-SIAS176", "label": "SI AS 176 — fond Novomeška kresija (k.o. N83 [227663], 12 enot)", "archive": "SI AS 176", "docid": None},
+    # uodid = VAC enota (details URL); docid = digitalni objekt (IIIF/PDF).
+    # KG-F02 (val 64): v1 je imela napačne uodid-e (ugibanje iz manifest datotek);
+    # popravljeno po tabeli 56-val42 (repo vir) — glej findings v izhodu.
+    {"source_id": "SRC-PUA", "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer", "uodid": 373417, "docid": 41782, "pages": 49,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373417"},
+    {"source_id": "SRC-PS", "label": "PS N83 — Protocol der Grund-Parcellen", "uodid": 373415, "docid": 41780, "pages": 143, "coverage": "PARTIAL 55/143 (val 57/61)",
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373415"},
+    {"source_id": "SRC-PT", "label": "PT N083 — Protocoll der Bau Parcellen", "uodid": 373416, "docid": 41781, "pages": 8,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373416"},
+    {"source_id": "SRC-PR", "label": "PR — Grenz-Beschreibung der Gemeinde GRÜBLE", "uodid": 373414, "docid": 41779, "pages": 4,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373414"},
+    {"source_id": "SRC-PG", "label": "PG — Übersichtsskizze k.o. N83", "uodid": 373413, "docid": 41778, "pages": 1,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373413"},
+    {"source_id": "SRC-PV", "label": "PV — Ausweis über die Benützungsart des Bodens", "uodid": 373418, "docid": 41783, "pages": 1,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418"},
+    {"source_id": "SRC-PZ", "label": "PZ — Konskripcija 1830", "uodid": 373419, "docid": 41784, "pages": 71,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"},
+    {"source_id": "SRC-A01", "label": "A01 — katastrski list (vas)", "uodid": 227666, "docid": 10,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227666"},
+    {"source_id": "SRC-A02", "label": "A02 — katastrski list", "uodid": 227668, "docid": 10,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227668"},
+    {"source_id": "SRC-A03", "label": "A03 — katastrski list", "uodid": 227670, "docid": 10,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227670"},
+    {"source_id": "SRC-A04", "label": "A04 — katastrski list", "uodid": 227671, "docid": 10,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227671"},
+    {"source_id": "SRC-A05", "label": "A05 — katastrski list", "uodid": 227673, "docid": 10,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227673"},
+    {"source_id": "SRC-SIAS176", "label": "SI AS 176 — fond Novomeška kresija (k.o. N83 [227663], 12 enot)", "uodid": 227663, "docid": None,
+     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=227663"},
 ]
 
 
@@ -235,6 +252,7 @@ def main():
         G.node(
             t["toponym_id"], "TOPONYM",
             {
+                "label": t["original_forms"][0].get("form") if t.get("original_forms") else t["toponym_id"],
                 "type": t["type"],
                 "relation_to_griblje": t["relation_to_griblje"],
                 "provenance_level": t["provenance_level"],
@@ -583,9 +601,24 @@ def main():
     }
 
     out = {
-        "val": 63,
-        "issue": "#43 §1 KG + §3 claim-first + §8 story atoms + §9 research gaps",
-        "title": "knowledge-graph-1825 v1",
+        "val": 64,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps",
+        "title": "knowledge-graph-1825 v1.1",
+        "findings": [
+            {
+                "finding_id": "KG-F01",
+                "val": 63,
+                "statement": "bp 90 register-internal napetost: pt_houses ['44'] (PT register plast val 41–53) vs note + PUA ref h.43 (val 57 digit-by-digit, CONFIRMED-2x). Obe povezavi ohranjeni (PT REVIEW + PUA FOUND); rešitev = PT p7 re-read @300dpi (RG-008).",
+                "status": "OPEN",
+            },
+            {
+                "finding_id": "KG-F02",
+                "val": 64,
+                "statement": "SRC katalog v1 je imel NAPAČNE VAC uodid-e (227668/227670/227671 = A02/A03/A04, ne PT/PUA/PS — ugibanje iz manifest datotek). Popravljeno po eksplicitni tabeli 56-val42: PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/227668/227670/227671/227673, k.o. N83=227663. Vsak SOURCE node zdaj nosi vac_details_url (§6 pot do dokumenta).",
+                "status": "RESOLVED",
+                "provenance": "research-griblje/56-val42-kataster-n83-complete-research.md (tabela enot)",
+            },
+        ],
         "provenance": {
             "built_from": ["house-register-1825.json", "person-owner-register-1825.json",
                            "bp-house-reconciliation-1825.json", "conflict-register-1825.json",
@@ -593,6 +626,7 @@ def main():
                            "pua-n83/register.json", "ps-n83/register.json"],
             "deterministic": True,
             "regenerable": "ob PS 143/143 ponovni zagon build-knowledge-graph.py + vseh registrov",
+            "runtime_copy": "src/data/knowledge-graph-1825.json (piše TA skript — prepovedan ročni urejanji, ena izhodna resnica)",
             "sources_catalog": SRC_DOCS,
         },
         "invariants_enforced": [
@@ -614,8 +648,13 @@ def main():
         "research_gaps": G.research_gaps,
     }
 
-    with open(os.path.join(BASE, "knowledge-graph-1825.json"), "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=1)
+    for out_path in (
+        os.path.join(BASE, "knowledge-graph-1825.json"),
+        os.path.join(REPO, "src", "data", "knowledge-graph-1825.json"),
+    ):
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(out, f, ensure_ascii=False, indent=1)
 
     print(f"nodes: {len(G.nodes)} {by_type}")
     print(f"edges: {len(G.edges)} {by_rel}")

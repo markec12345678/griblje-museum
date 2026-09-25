@@ -321,6 +321,40 @@ ok("audio-guide brez jezika: 400", agLang.status === 400, `status=${agLang.statu
 const agMissing2 = await getJson("/api/audio-guide?slug=ta-zapis-ne-obstaja&lang=sl");
 ok("audio-guide z neobstoječim slugom: 404", agMissing2.status === 404, `status=${agMissing2.status}`);
 
+/* --- 5e. /api/atlas/evidence — Evidence Explorer (issue #43 §2/§6) -------- */
+
+const atlasOverview = await getJson("/api/atlas/evidence");
+ok(
+  "atlas evidence: pregled grafa — stats + coverage + research gaps (#43 §10)",
+  atlasOverview.status === 200 &&
+    atlasOverview.body?.ok === true &&
+    atlasOverview.body?.stats?.nodes?.HOUSE === 167 &&
+    Array.isArray(atlasOverview.body?.research_gaps),
+  `status=${atlasOverview.status}`
+);
+
+const atlasH40 = await getJson("/api/atlas/evidence?node=house%2040");
+const h40Owners = (atlasH40.body?.claims ?? []).filter(
+  (c: any) => c.predicate === "OWNER_DOCUMENTED"
+);
+ok(
+  "atlas evidence: house 40 — dokazna veriga z 2 OWNER_DOCUMENTED claim-oma (PUA+PS, #43 §2)",
+  atlasH40.status === 200 &&
+    atlasH40.body?.node?.house_no_1825 === "40" &&
+    h40Owners.length === 2 &&
+    h40Owners.map((c: any) => c.source_ref?.source).sort().join(",") === "SRC-PS,SRC-PUA",
+  `status=${atlasH40.status} owners=${h40Owners.length}`
+);
+ok(
+  "atlas evidence: house 40 — original evidence URL (pot do dokumenta, #43 §6)",
+  (atlasH40.body?.original_evidence ?? []).every(
+    (s: any) => typeof s.vac_details_url === "string" && s.vac_details_url.startsWith("https://vac.sjas.gov.si/")
+  )
+);
+
+const atlasMissing = await getJson("/api/atlas/evidence?node=house%20999");
+ok("atlas evidence: neobstoječi node = 404 node_not_found (brez ugibanja)", atlasMissing.status === 404 && atlasMissing.body?.error === "node_not_found", `status=${atlasMissing.status}`);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);

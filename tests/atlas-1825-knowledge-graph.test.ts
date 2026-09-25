@@ -12,7 +12,14 @@ const kg = JSON.parse(readFileSync(resolve(BASE, "knowledge-graph-1825.json"), "
 
 describe("knowledge-graph-1825 v1 [val 63]", () => {
   test("struktura + velikosti (varovalke)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v1");
+    expect(kg.title).toBe("knowledge-graph-1825 v1.1");
+    expect(kg.findings.map((f: { finding_id: string }) => f.finding_id)).toEqual(["KG-F01", "KG-F02"]);
+    // KG-F02: popravljen SRC katalog — PT = uodid 373416 (ne 227668 = A02)
+    const pt = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PT");
+    expect(pt.uodid).toBe(373416);
+    expect(pt.vac_details_url).toContain("id=373416");
+    const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
+    expect(pua.uodid).toBe(373417);
     expect(kg.nodes.length).toBe(3275);
     expect(kg.edges.length).toBe(3514);
     expect(kg.claims.length).toBe(600);
