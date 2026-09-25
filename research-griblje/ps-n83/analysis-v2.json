@@ -1,0 +1,2009 @@
+{
+ "val": "61",
+ "title": "PS N83 analiza v2 — re-read 2026-10: verifikirana Fürtrag veriga (13 točk), imenske variante p11/p12, no_blatt semantika",
+ "inputs": {
+  "ps_register": "ps-n83/register.json",
+  "ps_rows": 1073,
+  "ps_pages_read": 55,
+  "ps_pages_total": 143,
+  "pua_register": "pua-n83/register.json",
+  "pua_entries": 98,
+  "pt_register": "pt-n83/register.json",
+  "pt_rows": 100
+ },
+ "method": {
+  "name_similarity": "LCS po tokenih na NFKD-normaliziranih imenih (brez ne-črk); pragovi AGREE>0.7 / FUZZY|PARTIAL>0.5 / sicer MISMATCH|DISAGREE",
+  "no_guessing": "nobena imena ni združena; vse razlike dokumentirane"
+ },
+ "A_pua_vs_ps": {
+  "shared_houses": 51,
+  "agree": 0,
+  "fuzzy": 2,
+  "mismatch": 49,
+  "fuzzy_cases": [
+   {
+    "house": 36,
+    "pua_owner": "Krischan / Marla / Bauerin / zu Grübln",
+    "ps_owner": "Krishnar Wurfl",
+    "sim": 0.537,
+    "class": "FUZZY",
+    "ps_pages": [
+     9,
+     10,
+     11,
+     13,
+     16,
+     17,
+     19,
+     20,
+     21,
+     23,
+     26,
+     36
+    ]
+   },
+   {
+    "house": 37,
+    "pua_owner": "Krischan / Peter / Bauer in Grübln",
+    "ps_owner": "Krishnar Peter",
+    "sim": 0.564,
+    "class": "FUZZY",
+    "ps_pages": [
+     9,
+     10,
+     11,
+     13,
+     17,
+     19,
+     20,
+     24
+    ]
+   }
+  ],
+  "rows": [
+   {
+    "house": 0,
+    "pua_owner": "Commenda Fischerwies",
+    "ps_owner": "Gemeinde",
+    "sim": 0.37,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     12,
+     29,
+     41,
+     47,
+     48,
+     51,
+     55
+    ]
+   },
+   {
+    "house": 1,
+    "pua_owner": "Mellachitsch Waise Leopold von / Ungaritsch gewesene Mellachitsch.",
+    "ps_owner": "Barbara Muster",
+    "sim": 0.143,
+    "class": "MISMATCH",
+    "ps_pages": [
+     11,
+     35,
+     45,
+     47,
+     48,
+     50,
+     55
+    ]
+   },
+   {
+    "house": 2,
+    "pua_owner": "Hiebetz Johann Bauersleute / zu Grübln",
+    "ps_owner": "Heideri Anna",
+    "sim": 0.326,
+    "class": "MISMATCH",
+    "ps_pages": [
+     45,
+     47,
+     48,
+     55
+    ]
+   },
+   {
+    "house": 3,
+    "pua_owner": "Draschisch Jörgen Lorenz / und Begusche / Gänßlin in Adelsberg",
+    "ps_owner": "Dragosch Georg",
+    "sim": 0.381,
+    "class": "MISMATCH",
+    "ps_pages": [
+     45,
+     47,
+     48,
+     50,
+     55
+    ]
+   },
+   {
+    "house": 4,
+    "pua_owner": "Dragosch, Maria, bauerin, zu Dragosch / gemindt. Holzschildk.",
+    "ps_owner": "Novak Mihelc",
+    "sim": 0.237,
+    "class": "MISMATCH",
+    "ps_pages": [
+     14,
+     28,
+     45,
+     48
+    ]
+   },
+   {
+    "house": 5,
+    "pua_owner": "Dragosch, georg, bauer, zu Dragosch / gemindt. Holzschildk.",
+    "ps_owner": "Hauschild Mathä",
+    "sim": 0.333,
+    "class": "MISMATCH",
+    "ps_pages": [
+     27,
+     49,
+     50,
+     51,
+     55
+    ]
+   },
+   {
+    "house": 6,
+    "pua_owner": "Husitsch Barbara des Grädlers / Ehefrau",
+    "ps_owner": "Lorbltcher Hauffl",
+    "sim": 0.327,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     5,
+     6,
+     45,
+     47,
+     48,
+     49,
+     50,
+     53
+    ]
+   },
+   {
+    "house": 7,
+    "pua_owner": "Sankovitsch Walf.",
+    "ps_owner": "Leibniz Mathäus",
+    "sim": 0.345,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     14,
+     33,
+     45,
+     49
+    ]
+   },
+   {
+    "house": 8,
+    "pua_owner": "Maurerisch Johann Bäckersleute / zu Waidhofen",
+    "ps_owner": "Gemeinde",
+    "sim": 0.255,
+    "class": "MISMATCH",
+    "ps_pages": [
+     6,
+     28,
+     43,
+     45,
+     48,
+     49
+    ]
+   },
+   {
+    "house": 9,
+    "pua_owner": "Jakoffitschek / Hans Bauer hiesig",
+    "ps_owner": "Stadtpfarrkirche[?]",
+    "sim": 0.273,
+    "class": "MISMATCH",
+    "ps_pages": [
+     28,
+     45,
+     55
+    ]
+   },
+   {
+    "house": 10,
+    "pua_owner": "Jakoffitschek / Maria Bauerin hiesig",
+    "ps_owner": "Rödig matthl",
+    "sim": 0.238,
+    "class": "MISMATCH",
+    "ps_pages": [
+     25,
+     45,
+     49,
+     50,
+     55
+    ]
+   },
+   {
+    "house": 11,
+    "pua_owner": "Peter P[?] Häuslbesitzer zu Grübln",
+    "ps_owner": "Pölling Georg",
+    "sim": 0.308,
+    "class": "MISMATCH",
+    "ps_pages": [
+     6,
+     45,
+     49,
+     50,
+     55
+    ]
+   },
+   {
+    "house": 12,
+    "pua_owner": "Liechtensth. Murgi",
+    "ps_owner": "Stadtpfarrkirche[?]",
+    "sim": 0.25,
+    "class": "MISMATCH",
+    "ps_pages": [
+     28,
+     32,
+     45,
+     48,
+     49,
+     55
+    ]
+   },
+   {
+    "house": 16,
+    "pua_owner": "Michael Leidner zu Grübln",
+    "ps_owner": "Pechl[?] hauptl",
+    "sim": 0.303,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     5,
+     9,
+     23,
+     43,
+     54
+    ]
+   },
+   {
+    "house": 17,
+    "pua_owner": "Lorenz Leidner zu Grübln",
+    "ps_owner": "Eidlald Wurfl",
+    "sim": 0.364,
+    "class": "MISMATCH",
+    "ps_pages": [
+     9,
+     54,
+     55
+    ]
+   },
+   {
+    "house": 18,
+    "pua_owner": "Schim von Pater Bardeleßky / [nečitljivo]",
+    "ps_owner": "Breugl Georg",
+    "sim": 0.279,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     8,
+     34,
+     54
+    ]
+   },
+   {
+    "house": 19,
+    "pua_owner": "Schim von Wirth Bardeleßky",
+    "ps_owner": "Thomas Malfg",
+    "sim": 0.242,
+    "class": "MISMATCH",
+    "ps_pages": [
+     21,
+     54
+    ]
+   },
+   {
+    "house": 20,
+    "pua_owner": "Johann Michael Rieger, Besitzer zu Grübln",
+    "ps_owner": "Lappary Marbl",
+    "sim": 0.255,
+    "class": "MISMATCH",
+    "ps_pages": [
+     7,
+     14,
+     28,
+     33,
+     35,
+     36,
+     37,
+     39,
+     54
+    ]
+   },
+   {
+    "house": 21,
+    "pua_owner": "Sankowitsch Joseph",
+    "ps_owner": "Urich Peter",
+    "sim": 0.296,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     54
+    ]
+   },
+   {
+    "house": 22,
+    "pua_owner": "Brincz Marfil Louise Wittibin.",
+    "ps_owner": "Müller Johann",
+    "sim": 0.263,
+    "class": "MISMATCH",
+    "ps_pages": [
+     9,
+     12,
+     13,
+     30,
+     36,
+     54
+    ]
+   },
+   {
+    "house": 24,
+    "pua_owner": "Brincz Marjan",
+    "ps_owner": "Vilter Wulffj",
+    "sim": 0.25,
+    "class": "MISMATCH",
+    "ps_pages": [
+     18,
+     27,
+     28,
+     29,
+     30,
+     31,
+     36,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 25,
+    "pua_owner": "Brincz Wendel",
+    "ps_owner": "Ring Mito",
+    "sim": 0.3,
+    "class": "MISMATCH",
+    "ps_pages": [
+     27,
+     28,
+     29,
+     31,
+     36,
+     37,
+     38
+    ]
+   },
+   {
+    "house": 26,
+    "pua_owner": "Brincz Johann Bauer zu Grübln",
+    "ps_owner": "Feldt Peter",
+    "sim": 0.114,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     7,
+     18,
+     19,
+     26,
+     27,
+     29,
+     30,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 27,
+    "pua_owner": "Malleßthak [?] Han Bauw [?] Han Güßla [?]",
+    "ps_owner": "Hoschlar Peter",
+    "sim": 0.222,
+    "class": "MISMATCH",
+    "ps_pages": [
+     16,
+     17,
+     18,
+     24,
+     26,
+     27,
+     29,
+     30,
+     34,
+     35,
+     37,
+     38
+    ]
+   },
+   {
+    "house": 28,
+    "pua_owner": "Brincz Maria Bäuerin zu Grübln",
+    "ps_owner": "Ring Michl",
+    "sim": 0.343,
+    "class": "MISMATCH",
+    "ps_pages": [
+     26,
+     29,
+     30,
+     34,
+     35,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 29,
+    "pua_owner": "Milleg Hanu Bauw [?] Han Grübla [?]",
+    "ps_owner": "Feldt Margreth",
+    "sim": 0.222,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     15,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     36,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 30,
+    "pua_owner": "Tillak Philipp bürgerl. zu Grübln",
+    "ps_owner": "Tillah Walfja",
+    "sim": 0.35,
+    "class": "MISMATCH",
+    "ps_pages": [
+     15,
+     21,
+     24,
+     26,
+     27,
+     29,
+     30,
+     34,
+     35,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 32,
+    "pua_owner": "Breitwiesch Mattl / Söllner zu Grübln",
+    "ps_owner": "Wolitz Gregor",
+    "sim": 0.279,
+    "class": "MISMATCH",
+    "ps_pages": [
+     13,
+     21,
+     23,
+     31,
+     34,
+     35
+    ]
+   },
+   {
+    "house": 33,
+    "pua_owner": "Pfarrer Johann Leopold Kaulßgütlle",
+    "ps_owner": "Beckhlach Wurfl",
+    "sim": 0.273,
+    "class": "MISMATCH",
+    "ps_pages": [
+     9,
+     20,
+     27
+    ]
+   },
+   {
+    "house": 34,
+    "pua_owner": "Krischan / Marla / Bauerin / zu Grübln",
+    "ps_owner": "Eidlald Wurfl",
+    "sim": 0.3,
+    "class": "MISMATCH",
+    "ps_pages": [
+     9,
+     15,
+     17,
+     20,
+     33,
+     35
+    ]
+   },
+   {
+    "house": 36,
+    "pua_owner": "Krischan / Marla / Bauerin / zu Grübln",
+    "ps_owner": "Krishnar Wurfl",
+    "sim": 0.537,
+    "class": "FUZZY",
+    "ps_pages": [
+     9,
+     10,
+     11,
+     13,
+     16,
+     17,
+     19,
+     20,
+     21,
+     23,
+     26,
+     36
+    ]
+   },
+   {
+    "house": 37,
+    "pua_owner": "Krischan / Peter / Bauer in Grübln",
+    "ps_owner": "Krishnar Peter",
+    "sim": 0.564,
+    "class": "FUZZY",
+    "ps_pages": [
+     9,
+     10,
+     11,
+     13,
+     17,
+     19,
+     20,
+     24
+    ]
+   },
+   {
+    "house": 40,
+    "pua_owner": "Pfarrer Rupert Sautter hiesig",
+    "ps_owner": "Peter Muster",
+    "sim": 0.432,
+    "class": "MISMATCH",
+    "ps_pages": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     21,
+     25,
+     26,
+     31,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 41,
+    "pua_owner": "Pöchinger Georg Leinwand Fabrikant",
+    "ps_owner": "Reuschard Franz",
+    "sim": 0.356,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     11,
+     12,
+     13,
+     14,
+     15,
+     21,
+     26,
+     31,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 42,
+    "pua_owner": "Pöchinger Malfa Leinwand Fabrikant",
+    "ps_owner": "Peter Muster",
+    "sim": 0.286,
+    "class": "MISMATCH",
+    "ps_pages": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     25,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 43,
+    "pua_owner": "Grübler Maria Leutnerin zu Grübln",
+    "ps_owner": "Ulrich Peter",
+    "sim": 0.4,
+    "class": "MISMATCH",
+    "ps_pages": [
+     6,
+     9,
+     11,
+     12,
+     13,
+     14,
+     16,
+     25,
+     26,
+     33
+    ]
+   },
+   {
+    "house": 44,
+    "pua_owner": "Husitsch Maria Bauersleute / zu Grübln",
+    "ps_owner": "Matthäus Muster",
+    "sim": 0.391,
+    "class": "MISMATCH",
+    "ps_pages": [
+     11,
+     16,
+     17,
+     18,
+     19,
+     20,
+     24,
+     26
+    ]
+   },
+   {
+    "house": 46,
+    "pua_owner": "Lahodathar / Wittib Lahodatharin",
+    "ps_owner": "Strauß Georg",
+    "sim": 0.263,
+    "class": "MISMATCH",
+    "ps_pages": [
+     7,
+     12,
+     26,
+     32,
+     54
+    ]
+   },
+   {
+    "house": 47,
+    "pua_owner": "Widow Katharina Brandl in Grübln / Gütlerin",
+    "ps_owner": "(R)abitscher Marbl",
+    "sim": 0.314,
+    "class": "MISMATCH",
+    "ps_pages": [
+     7,
+     8,
+     10,
+     12,
+     14,
+     23,
+     24,
+     25,
+     26,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 48,
+    "pua_owner": "Höchsthaler Georg bürgerl. Hofg'sitzl.",
+    "ps_owner": "(R)abitscher Georg",
+    "sim": 0.383,
+    "class": "MISMATCH",
+    "ps_pages": [
+     7,
+     12,
+     14,
+     23,
+     24,
+     25,
+     28,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 51,
+    "pua_owner": "Urich Pattle / Bauer zu Grübln",
+    "ps_owner": "Urbas Peter",
+    "sim": 0.353,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     5,
+     6,
+     8,
+     16,
+     21,
+     23,
+     43,
+     55
+    ]
+   },
+   {
+    "house": 58,
+    "pua_owner": "Stipanitsch Jakob Brauhaußgütler",
+    "ps_owner": "Pogacar Michl",
+    "sim": 0.341,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     13,
+     14,
+     23
+    ]
+   },
+   {
+    "house": 60,
+    "pua_owner": "Penzig Stuffe Leuthold zu Grüble",
+    "ps_owner": "Kirschan Georg",
+    "sim": 0.244,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     6,
+     14,
+     15,
+     16,
+     17,
+     23,
+     31
+    ]
+   },
+   {
+    "house": 61,
+    "pua_owner": "Tillak Nikla bürgerl. zu Grübln",
+    "ps_owner": "Feldt Mäda",
+    "sim": 0.171,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     6,
+     8,
+     9,
+     13,
+     14,
+     19,
+     43
+    ]
+   },
+   {
+    "house": 62,
+    "pua_owner": "Brinczhan / Witwe Brinczhan Gütlin",
+    "ps_owner": "Kirschan Mäda",
+    "sim": 0.293,
+    "class": "MISMATCH",
+    "ps_pages": [
+     5,
+     13,
+     14,
+     16,
+     17,
+     18,
+     19,
+     20,
+     43
+    ]
+   },
+   {
+    "house": 63,
+    "pua_owner": "Brincz Maria Leutnerin zu Grübln",
+    "ps_owner": "Poiding Hanl",
+    "sim": 0.256,
+    "class": "MISMATCH",
+    "ps_pages": [
+     7,
+     8,
+     13,
+     14,
+     16,
+     18,
+     20,
+     48
+    ]
+   },
+   {
+    "house": 64,
+    "pua_owner": "Veritscher Wirts Leibkinds Gsöll",
+    "ps_owner": "Urban Pankrazgall",
+    "sim": 0.267,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     9,
+     14,
+     16,
+     20,
+     26,
+     31,
+     36
+    ]
+   },
+   {
+    "house": 65,
+    "pua_owner": "Widhann Georg häusler und Gärtner",
+    "ps_owner": "Schimeczkhanl",
+    "sim": 0.238,
+    "class": "MISMATCH",
+    "ps_pages": [
+     7,
+     8,
+     16,
+     36,
+     43
+    ]
+   },
+   {
+    "house": 66,
+    "pua_owner": "Widhann Georg häusler und Gärtner",
+    "ps_owner": "Reuschard Franz",
+    "sim": 0.326,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     6,
+     8,
+     17,
+     36
+    ]
+   },
+   {
+    "house": 68,
+    "pua_owner": "Rappare Wirthsleuths hiesig",
+    "ps_owner": "Häusler Mache",
+    "sim": 0.324,
+    "class": "MISMATCH",
+    "ps_pages": [
+     17,
+     23,
+     30,
+     31,
+     34,
+     35,
+     43
+    ]
+   },
+   {
+    "house": 69,
+    "pua_owner": "Christian Brandl in Grübln / Bauer",
+    "ps_owner": "Schimey Wenzel",
+    "sim": 0.244,
+    "class": "MISMATCH",
+    "ps_pages": [
+     4,
+     5,
+     16,
+     43,
+     45,
+     47,
+     48,
+     50
+    ]
+   }
+  ],
+  "pua_only_houses": [
+   70,
+   71,
+   72
+  ],
+  "ps_missing_1_69": [],
+  "ps_houses_70plus_read": [
+   79,
+   80,
+   81,
+   82,
+   85,
+   87,
+   113,
+   140,
+   141,
+   142,
+   143,
+   144,
+   147,
+   149,
+   162,
+   165,
+   168,
+   214,
+   529
+  ],
+  "shift_test_avg_sim": {
+   "-2": 0.275,
+   "-1": 0.283,
+   "+0": 0.302,
+   "+1": 0.289,
+   "+2": 0.295
+  },
+  "shift_conclusion": "offset 0 je najboljši -> pomik vrstic izključen; razlike so vsebinske, ne bralne"
+ },
+ "B_ps_vs_pt": {
+  "shared_houses": 47,
+  "agree_strong": 4,
+  "partial": 7,
+  "disagree": 36,
+  "rows_over_05": [
+   {
+    "house": 14,
+    "ps_owner": "Ludwig Matzen",
+    "pt_best": "Lebring math.",
+    "sim": 0.522,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Lebring math."
+    ]
+   },
+   {
+    "house": 19,
+    "ps_owner": "Thomas Malfg",
+    "pt_best": "Thomas Marfa[?]",
+    "sim": 0.818,
+    "class": "AGREE",
+    "pt_variants": [
+     "Schmieg Marthl",
+     "Thomas Marfa[?]"
+    ]
+   },
+   {
+    "house": 38,
+    "ps_owner": "Schimerz[?] Gnoy",
+    "pt_best": "Schim[?]er Georg",
+    "sim": 0.75,
+    "class": "AGREE",
+    "pt_variants": [
+     "Kraler Anna",
+     "Kratz Anna",
+     "Schim[?]er Georg",
+     "Schimer Marle",
+     "Tschermak Peter"
+    ]
+   },
+   {
+    "house": 40,
+    "ps_owner": "Peter Muster",
+    "pt_best": "Musterer Paul",
+    "sim": 0.522,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Achaz Pichl[?]",
+     "Almer Marle",
+     "Feiner Wolfi",
+     "Georg Mache[?]",
+     "Musterer Paul"
+    ]
+   },
+   {
+    "house": 43,
+    "ps_owner": "Ulrich Peter",
+    "pt_best": "Dicheltaler Marfa",
+    "sim": 0.519,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Dichatschek Muffel",
+     "Dicheltaler Marfa",
+     "Dichstaler Wolfgr"
+    ]
+   },
+   {
+    "house": 45,
+    "ps_owner": "Strauß Georg",
+    "pt_best": "Krauß Georg",
+    "sim": 0.842,
+    "class": "AGREE",
+    "pt_variants": [
+     "Fellach John",
+     "Fellek Johann",
+     "Fillek Johan",
+     "Hans Georg",
+     "Hans Georg / Lenz Gansb[?]",
+     "Krauß Georg",
+     "Winkler Peter"
+    ]
+   },
+   {
+    "house": 48,
+    "ps_owner": "(R)abitscher Georg",
+    "pt_best": "Heuritsch Georg",
+    "sim": 0.759,
+    "class": "AGREE",
+    "pt_variants": [
+     "Dichatschek Mardko",
+     "Herrn Georg",
+     "Heuritsch Georg",
+     "Kobolthofer[?][?] Michl",
+     "Steinle Georg"
+    ]
+   },
+   {
+    "house": 51,
+    "ps_owner": "Urbas Peter",
+    "pt_best": "Knapp Peter",
+    "sim": 0.6,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Ainöd Johann",
+     "Aurich John",
+     "Ehrlich Peter",
+     "Einöder Peter",
+     "Knapp Peter"
+    ]
+   },
+   {
+    "house": 53,
+    "ps_owner": "Shumey Joan",
+    "pt_best": "Sedivy Johann",
+    "sim": 0.636,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Pauling Johan",
+     "Sedivy Johann",
+     "Seidly John"
+    ]
+   },
+   {
+    "house": 54,
+    "ps_owner": "Lappary Marbl",
+    "pt_best": "Lopparz Michl",
+    "sim": 0.583,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Loparz Michl",
+     "Lopparz Michl"
+    ]
+   },
+   {
+    "house": 55,
+    "ps_owner": "Schimer Jacob",
+    "pt_best": "Schimey Johan",
+    "sim": 0.667,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Schimey Johan",
+     "Schimey Johann",
+     "Schmiedt John",
+     "Sedivy Johann"
+    ]
+   }
+  ],
+  "rows": [
+   {
+    "house": 1,
+    "ps_owner": "Barbara Muster",
+    "pt_best": "Achmüth Malfg.",
+    "sim": 0.32,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Achmüth Malfg.",
+     "Christof Malfa",
+     "Christof Malfal",
+     "Christof Muffel"
+    ]
+   },
+   {
+    "house": 2,
+    "ps_owner": "Heideri Anna",
+    "pt_best": "Hlady Johann",
+    "sim": 0.455,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Hlady Johann",
+     "Hölzly Hanu",
+     "Hölzly Johann"
+    ]
+   },
+   {
+    "house": 3,
+    "ps_owner": "Dragosch Georg",
+    "pt_best": "Thomas Mally",
+    "sim": 0.167,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Thomas Mally"
+    ]
+   },
+   {
+    "house": 6,
+    "ps_owner": "Lorbltcher Hauffl",
+    "pt_best": "Lorber gorg",
+    "sim": 0.462,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Achmüth Groß",
+     "Lorber gorg",
+     "Lorenz gspan",
+     "Zu Hoffstätten Ghan[?]",
+     "Zu Noftstätten Buncha",
+     "Zu Noftstätten Schur"
+    ]
+   },
+   {
+    "house": 8,
+    "ps_owner": "Gemeinde",
+    "pt_best": "Zu Hoffstätten muke[?]",
+    "sim": 0.24,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Zu Hoffstätten muke[?]",
+     "Zu Noftstätten Marlo"
+    ]
+   },
+   {
+    "house": 9,
+    "ps_owner": "Stadtpfarrkirche[?]",
+    "pt_best": "Zu Noftstätten Marle",
+    "sim": 0.412,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Zu Hoffstätten Marx[?]",
+     "Zu Noftstätten Marle"
+    ]
+   },
+   {
+    "house": 10,
+    "ps_owner": "Rödig matthl",
+    "pt_best": "Zu Noftstätten Michl",
+    "sim": 0.414,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Hans Malfal",
+     "Hans Mayrl",
+     "Hans Muffel",
+     "Zu Hoffstättten Mih[?]",
+     "Zu Noftstätten Michl"
+    ]
+   },
+   {
+    "house": 11,
+    "ps_owner": "Pölling Georg",
+    "pt_best": "Peter Gorg",
+    "sim": 0.476,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Lebring Math",
+     "Nikolaus Groß",
+     "Peter Gorg",
+     "Peter Gspan",
+     "Veitig Philipp[?]"
+    ]
+   },
+   {
+    "house": 14,
+    "ps_owner": "Ludwig Matzen",
+    "pt_best": "Lebring math.",
+    "sim": 0.522,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Lebring math."
+    ]
+   },
+   {
+    "house": 16,
+    "ps_owner": "Pechl[?] hauptl",
+    "pt_best": "Tillein Math",
+    "sim": 0.273,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Tillan Mih[?]",
+     "Tillein Math"
+    ]
+   },
+   {
+    "house": 17,
+    "ps_owner": "Eidlald Wurfl",
+    "pt_best": "Kneel Hanse",
+    "sim": 0.273,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Kneel Hanse",
+     "Nikol. Hannes[?]"
+    ]
+   },
+   {
+    "house": 18,
+    "ps_owner": "Breugl Georg",
+    "pt_best": "Schmieg Barbara",
+    "sim": 0.24,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Schmieg Barbara",
+     "Thomas Johan[?]"
+    ]
+   },
+   {
+    "house": 19,
+    "ps_owner": "Thomas Malfg",
+    "pt_best": "Thomas Marfa[?]",
+    "sim": 0.818,
+    "class": "AGREE",
+    "pt_variants": [
+     "Schmieg Marthl",
+     "Thomas Marfa[?]"
+    ]
+   },
+   {
+    "house": 20,
+    "ps_owner": "Lappary Marbl",
+    "pt_best": "Brönig Malfa",
+    "sim": 0.348,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Bering Malfa",
+     "Brinc Muffa",
+     "Brönig Malfa",
+     "Brünig Malfa",
+     "Milling Johann",
+     "Müller Johann"
+    ]
+   },
+   {
+    "house": 21,
+    "ps_owner": "Urich Peter",
+    "pt_best": "Gorgy Michle",
+    "sim": 0.476,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Gepay Michle",
+     "Gorgy Michle",
+     "Pepay Michle",
+     "Pepay Michlo",
+     "Seyfrid Miko"
+    ]
+   },
+   {
+    "house": 26,
+    "ps_owner": "Feldt Peter",
+    "pt_best": "Lorenz Glan",
+    "sim": 0.2,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Bartl Järgy",
+     "Lorenz Glan"
+    ]
+   },
+   {
+    "house": 27,
+    "ps_owner": "Hoschlar Peter",
+    "pt_best": "Michel Bartl",
+    "sim": 0.5,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Michel Bartl",
+     "Nicolaus Glan"
+    ]
+   },
+   {
+    "house": 28,
+    "ps_owner": "Ring Michl",
+    "pt_best": "Andreas Muth",
+    "sim": 0.3,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Andreas Muth",
+     "Bartl Aß[?]"
+    ]
+   },
+   {
+    "house": 29,
+    "ps_owner": "Feldt Margreth",
+    "pt_best": "Bering Malfa",
+    "sim": 0.25,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Bering Malfa",
+     "Brinc Muffa",
+     "Brünig Malfa"
+    ]
+   },
+   {
+    "house": 30,
+    "ps_owner": "Tillah Walfja",
+    "pt_best": "Nikolaus Muth",
+    "sim": 0.333,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Andreas Muth",
+     "Andres Mally",
+     "Christoph Marx",
+     "Nikolaus Muth"
+    ]
+   },
+   {
+    "house": 31,
+    "ps_owner": "Schuchardt Wenzl",
+    "pt_best": "Müller Hanns",
+    "sim": 0.308,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Brünig Mayrl",
+     "Milly Hanns",
+     "Müller Hanns"
+    ]
+   },
+   {
+    "house": 32,
+    "ps_owner": "Wolitz Gregor",
+    "pt_best": "Ulrich Groß",
+    "sim": 0.476,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Hans Malfal",
+     "Hans Muffel",
+     "Mülleg Hanu",
+     "Ulrich Groß",
+     "Ulrich Järgy",
+     "Ulrich Piberger",
+     "Wenzel Järgy"
+    ]
+   },
+   {
+    "house": 34,
+    "ps_owner": "Eidlald Wurfl",
+    "pt_best": "Fellek Muffel",
+    "sim": 0.5,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Fellach Wolfgr",
+     "Fellek Muffel",
+     "Fillek Marfa"
+    ]
+   },
+   {
+    "house": 35,
+    "ps_owner": "Urbas Peter",
+    "pt_best": "Bering Malfa",
+    "sim": 0.286,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Bering Malfa",
+     "Brinc Michle",
+     "Brünig Miko"
+    ]
+   },
+   {
+    "house": 36,
+    "ps_owner": "Krishnar Wurfl",
+    "pt_best": "Christian Mache[?]",
+    "sim": 0.37,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Christian Mache[?]",
+     "Christian Pichl[?]",
+     "Fellach John",
+     "Fellek Johann",
+     "Fillek Peter",
+     "Musterer Marle",
+     "Simon Glan",
+     "Thomas Mally"
+    ]
+   },
+   {
+    "house": 37,
+    "ps_owner": "Krishnar Peter",
+    "pt_best": "Christian Pichl[?]",
+    "sim": 0.37,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Christian Pichl[?]",
+     "Leopoldin Wulfin"
+    ]
+   },
+   {
+    "house": 38,
+    "ps_owner": "Schimerz[?] Gnoy",
+    "pt_best": "Schim[?]er Georg",
+    "sim": 0.75,
+    "class": "AGREE",
+    "pt_variants": [
+     "Kraler Anna",
+     "Kratz Anna",
+     "Schim[?]er Georg",
+     "Schimer Marle",
+     "Tschermak Peter"
+    ]
+   },
+   {
+    "house": 39,
+    "ps_owner": "Krischan Wenzl",
+    "pt_best": "Milly Hanns",
+    "sim": 0.435,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "A. Zöllner",
+     "Kumer Georg",
+     "Milly Hanns",
+     "Mülleg Hanu",
+     "Müller Hanns",
+     "Schim[?]er Mache[?]",
+     "Schim[?]er Pichl[?]"
+    ]
+   },
+   {
+    "house": 40,
+    "ps_owner": "Peter Muster",
+    "pt_best": "Musterer Paul",
+    "sim": 0.522,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Achaz Pichl[?]",
+     "Almer Marle",
+     "Feiner Wolfi",
+     "Georg Mache[?]",
+     "Musterer Paul"
+    ]
+   },
+   {
+    "house": 41,
+    "ps_owner": "Reuschard Franz",
+    "pt_best": "Heuritsch Georg",
+    "sim": 0.429,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Dichatschek Mardko",
+     "Dichatschek Muffel",
+     "Dicheltaker Marthe",
+     "Dicheltaler Marla[?]",
+     "Dicheltaler Martho",
+     "Feiner Wolfi",
+     "Georg Georg",
+     "Herrn Georg",
+     "Heuritsch Georg",
+     "Kobolthofer[?] Martin",
+     "Kobolthofer[?] Michl",
+     "Pechtlhans[?]"
+    ]
+   },
+   {
+    "house": 43,
+    "ps_owner": "Ulrich Peter",
+    "pt_best": "Dicheltaler Marfa",
+    "sim": 0.519,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Dichatschek Muffel",
+     "Dicheltaler Marfa",
+     "Dichstaler Wolfgr"
+    ]
+   },
+   {
+    "house": 44,
+    "ps_owner": "Matthäus Muster",
+    "pt_best": "Christen Mache[?]",
+    "sim": 0.296,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Christen Mache[?]",
+     "Fischer Georg",
+     "Krischan Wolf",
+     "Winkler Paul"
+    ]
+   },
+   {
+    "house": 45,
+    "ps_owner": "Strauß Georg",
+    "pt_best": "Krauß Georg",
+    "sim": 0.842,
+    "class": "AGREE",
+    "pt_variants": [
+     "Fellach John",
+     "Fellek Johann",
+     "Fillek Johan",
+     "Hans Georg",
+     "Hans Georg / Lenz Gansb[?]",
+     "Krauß Georg",
+     "Winkler Peter"
+    ]
+   },
+   {
+    "house": 48,
+    "ps_owner": "(R)abitscher Georg",
+    "pt_best": "Heuritsch Georg",
+    "sim": 0.759,
+    "class": "AGREE",
+    "pt_variants": [
+     "Dichatschek Mardko",
+     "Herrn Georg",
+     "Heuritsch Georg",
+     "Kobolthofer[?][?] Michl",
+     "Steinle Georg"
+    ]
+   },
+   {
+    "house": 49,
+    "ps_owner": "Thomaz Majzel",
+    "pt_best": "Schimey Michael",
+    "sim": 0.462,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Schimey Michael",
+     "Schloßhüter Michael"
+    ]
+   },
+   {
+    "house": 50,
+    "ps_owner": "Poiding Matthl",
+    "pt_best": "Pauling Johan",
+    "sim": 0.4,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Alois Pollandt",
+     "Pauling Johan",
+     "Sedivy Johann",
+     "Seidly John",
+     "[nečitljivo]"
+    ]
+   },
+   {
+    "house": 51,
+    "ps_owner": "Urbas Peter",
+    "pt_best": "Knapp Peter",
+    "sim": 0.6,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Ainöd Johann",
+     "Aurich John",
+     "Ehrlich Peter",
+     "Einöder Peter",
+     "Knapp Peter"
+    ]
+   },
+   {
+    "house": 53,
+    "ps_owner": "Shumey Joan",
+    "pt_best": "Sedivy Johann",
+    "sim": 0.636,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Pauling Johan",
+     "Sedivy Johann",
+     "Seidly John"
+    ]
+   },
+   {
+    "house": 54,
+    "ps_owner": "Lappary Marbl",
+    "pt_best": "Lopparz Michl",
+    "sim": 0.583,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Loparz Michl",
+     "Lopparz Michl"
+    ]
+   },
+   {
+    "house": 55,
+    "ps_owner": "Schimer Jacob",
+    "pt_best": "Schimey Johan",
+    "sim": 0.667,
+    "class": "PARTIAL",
+    "pt_variants": [
+     "Schimey Johan",
+     "Schimey Johann",
+     "Schmiedt John",
+     "Sedivy Johann"
+    ]
+   },
+   {
+    "house": 60,
+    "ps_owner": "Kirschan Georg",
+    "pt_best": "Schilko Jörgl",
+    "sim": 0.48,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Fellach Michl",
+     "Felley Michl",
+     "Pauling Marfa",
+     "Schilko Joppiß",
+     "Schilko Jörgl"
+    ]
+   },
+   {
+    "house": 61,
+    "ps_owner": "Feldt Mäda",
+    "pt_best": "Verblühter Malfa",
+    "sim": 0.5,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Michel Mally",
+     "Nikolaus Muth",
+     "Veithaler Malfa",
+     "Veitlacher Muffa",
+     "Verblühter Malfa"
+    ]
+   },
+   {
+    "house": 62,
+    "ps_owner": "Kirschan Mäda",
+    "pt_best": "Michel Mally",
+    "sim": 0.435,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Michel Mally",
+     "Nikolaus Muth"
+    ]
+   },
+   {
+    "house": 63,
+    "ps_owner": "Poiding Hanl",
+    "pt_best": "Ulrich Mally",
+    "sim": 0.364,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Christoph Järgy",
+     "Michel Järgy",
+     "Nikolaus Groß",
+     "Ulrich Mally",
+     "Ulrich Muth"
+    ]
+   },
+   {
+    "house": 64,
+    "ps_owner": "Urban Pankrazgall",
+    "pt_best": "Sepp Järgy",
+    "sim": 0.32,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Josef Groß",
+     "Sepp Järgy"
+    ]
+   },
+   {
+    "house": 65,
+    "ps_owner": "Schimeczkhanl",
+    "pt_best": "Brinc Michle",
+    "sim": 0.417,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Bering Marx",
+     "Brinc Marko",
+     "Brinc Michle",
+     "Brünig Mahe",
+     "Christoph Järgy",
+     "Nikolaus Groß"
+    ]
+   },
+   {
+    "house": 66,
+    "ps_owner": "Reuschard Franz",
+    "pt_best": "Michan gorg",
+    "sim": 0.333,
+    "class": "DISAGREE",
+    "pt_variants": [
+     "Michan gorg",
+     "Michel gspan",
+     "Nikolaus Groß"
+    ]
+   }
+  ]
+ },
+ "C_furtrag_chain": {
+  "chain": [
+   {
+    "page": 5,
+    "counter": 2,
+    "value": "6|1459",
+    "crossed": true,
+    "red_line": "3|906",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 11,
+    "counter": 9,
+    "value": "2|798",
+    "crossed": true,
+    "red_line": "81",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 12,
+    "counter": 10,
+    "value": "4|7986",
+    "crossed": true,
+    "red_line": "2|1551",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 14,
+    "counter": 12,
+    "value": "6|1088",
+    "crossed": true,
+    "red_line": "6|77",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 16,
+    "counter": 14,
+    "value": "5|811",
+    "crossed": false,
+    "red_line": null,
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 20,
+    "counter": 18,
+    "value": "6|1183",
+    "crossed": false,
+    "red_line": null,
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 24,
+    "counter": 22,
+    "value": "8|1310",
+    "crossed": true,
+    "red_line": "1|919",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 32,
+    "counter": 30,
+    "value": "6|1244",
+    "crossed": true,
+    "red_line": "3|265",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 35,
+    "counter": 33,
+    "value": "2|798",
+    "crossed": false,
+    "red_line": null,
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 36,
+    "counter": 38,
+    "value": "2|1578",
+    "crossed": true,
+    "red_line": "3|349",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 42,
+    "counter": 39,
+    "value": "7|365",
+    "crossed": true,
+    "red_line": "1|815",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 44,
+    "counter": 42,
+    "value": "6|255",
+    "crossed": true,
+    "red_line": "4|1030",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   },
+   {
+    "page": 54,
+    "counter": 52,
+    "value": "8|1165",
+    "crossed": true,
+    "red_line": "7|943",
+    "source": "reread-2026-10 (agent 2 prehoda @7x)"
+   }
+  ],
+  "vlm_v57_chain_for_audit": [
+   {
+    "page": 5,
+    "label": "2 Fürtrag",
+    "counter": 2,
+    "value": "6 - 14357"
+   },
+   {
+    "page": 12,
+    "label": "10. Fürtrag.",
+    "counter": 10,
+    "value": "4 7986"
+   },
+   {
+    "page": 16,
+    "label": "14 Färberg.",
+    "counter": 14,
+    "value": "5 811"
+   },
+   {
+    "page": 20,
+    "label": "19 Futterg.",
+    "counter": 19,
+    "value": "6"
+   },
+   {
+    "page": 24,
+    "label": "22 Fürtrg.",
+    "counter": 22,
+    "value": "8 / 1240"
+   },
+   {
+    "page": 32,
+    "label": "26 Firstag:",
+    "counter": 26,
+    "value": "6 - 1944"
+   },
+   {
+    "page": 35,
+    "label": "39 Fürstog",
+    "counter": 39,
+    "value": "2. 768"
+   },
+   {
+    "page": 44,
+    "label": "42 Fütterag",
+    "counter": 42,
+    "value": "6"
+   },
+   {
+    "page": 54,
+    "label": "52 Flächen",
+    "counter": 52,
+    "value": "8 1165"
+   }
+  ],
+  "counters": [
+   2,
+   9,
+   10,
+   12,
+   14,
+   18,
+   22,
+   30,
+   33,
+   38,
+   39,
+   42,
+   52
+  ],
+  "strictly_monotone": true,
+  "format_decoded": {
+   "line": "N. Fürtrag. | [Joch] | [Quad. Klafter]",
+   "counter": "ročno zapisan tekoči števec pred tiskano oznako 'Fürtrag.' (v vpisu 'Übertrag' = prenos/šeštevanje); poimenovanje 'Fürtrag' je tiskana oznaka, ne 'Futterag/Flächen/Grundst./Stück' kot je bral VLM",
+   "value": "(Joch | Quad-Klafter) vsota TEKOČE strani (listni seštevek) — ni kumulativno (p11 2J798 < p5 6J1459); vsi QKl < 1600 IZVEN p12 '7986' (anomalija, glej notes)",
+   "red_second_line": "rdeče predelani/vstavljen seštevek pod glavno vrstico na 9/13 straneh; semantika TO-DECODE (popravljen seštevek brez prečrtanih vrstic ali prenos na naslednjo stran ali kontrolni zapis) — ne komentirati naprej"
+  },
+  "chain_summary": {
+   "counters": [
+    2,
+    9,
+    10,
+    12,
+    14,
+    18,
+    22,
+    30,
+    33,
+    38,
+    39,
+    42,
+    52
+   ],
+   "strictly_monotone": true,
+   "violations": 0,
+   "v58_chain": [
+    2,
+    10,
+    14,
+    19,
+    22,
+    26,
+    39,
+    42,
+    52
+   ],
+   "v58_violations_resolved": [
+    "p36 '36 Grundst.' -> dejansko 38. Fürtrag (misread števca + oznake)",
+    "p42 '20 Stück' -> dejansko 39. Fürtrag (misread števca + oznake)"
+   ],
+   "new_points": [
+    11,
+    14,
+    35
+   ],
+   "increment_pattern": "večina korakov +1/stran (p12->p14->p16 +2/2, p16->p20 +4/4, p20->p24 +4/4, p24->p32 +8/8, p44->p54 +10/10) = skladenj z interpretacijo 'števec = tekoči indeks Jaethe (holdingov)'; izjemi: p35->p36 +5 (zaključek malega dedicinskih holdingov), p36->p42 +1/6 strani (sekcija ne-lokalnih lastnikov z velikimi sestavljenimi holdingi — skladno s F12)",
+   "interpretation": "F11 nadgrajeno: 13 točk, strogo monotono, 0 kršitev; VLM oznake (Färberg/Futterg/Firstag/Grundst./Stück/Flächen/Summa) = vse napačne, tiskana oznaka je VEDNO 'Fürtrag.'"
+  },
+  "value_semantics_status": {
+   "confirmed": "(J|QKl) = vsota TEKOČE strani, ne kumulativa (p11 2J798 < p5 6J1459 izključi kumulacijo)",
+   "anomaly": "p12 4|7986 — edina vrednost QKl > 1599; zadnja štefka negotova (alt 4|798); aritmetična kontrola proti vsotam vrstic sešteka šele pri 143/143",
+   "red_line_semantics": "TO-DECODE (hipoteze: popravljen seštevek brez prečrtanih / prenos / kontrola) — branje sešteka vrstic čaka PS p56-143",
+   "v58_question_F11_metrics": "delno razrešeno: 'Summa Jaethen 6/10808' in 'Summa Quadrat-Klafter 6/77' iz v58 sta NEOBSTOJECI entiteti — to sta bila misreada vrstice '12. Fürtrag 6|1088' + rdeče '6|77' na p14"
+  },
+  "note": "v61: verifikirana veriga 13 točk (2,9,10,12,14,18,22,30,33,38,39,42,52) — STROGO monotona, 0 kršitev; v1 kršitvi p36=36/p42=20 = VLM napaki branja (v resnici 38. in 39. Fürtrag); format vrstice = 'N. Fürtrag. | Joch | Quad-Klafter'; VLM oznake (Färberg/Futterg/Firstag/Grundst./Stück/Flächen/Summa) = vse napačne."
+ },
+ "D_structure": {
+  "compound_haus_no": {
+   "first_page": 40,
+   "count_rows": 140,
+   "distinct_values_sample": [
+    "1/1",
+    "1/10",
+    "1/10.",
+    "1/100",
+    "1/11",
+    "1/12",
+    "1/13",
+    "1/14",
+    "1/15",
+    "1/16",
+    "1/17",
+    "1/18",
+    "1/19",
+    "1/2",
+    "1/20",
+    "1/21",
+    "1/22",
+    "1/23",
+    "1/24",
+    "1/25",
+    "1/29",
+    "1/3",
+    "1/31",
+    "1/32"
+   ],
+   "hypothesis": "'1 / N' = (KG-blatt / hiša) ali (sekcija / parcela) za ne-lokalne lastnike; Wohnort Zagorje/Dragole na p40-55 podpira ne-lokalne lastnike"
+  },
+  "pfand_notes": [
+   {
+    "page": 12,
+    "haus_no": "46",
+    "no_blatt": 1,
+    "anmerkung": "Auf pfandbeyern 1801 [rot]"
+   },
+   {
+    "page": 12,
+    "haus_no": "43",
+    "no_blatt": null,
+    "anmerkung": "Auf pfandbeyern 1801 [rot]"
+   },
+   {
+    "page": 12,
+    "haus_no": "45",
+    "no_blatt": null,
+    "anmerkung": "Auf pfandbeyern 1801 [rot]"
+   }
+  ],
+  "jaethe_format_classes": {
+   "<EMPTY>": 623,
+   "<PURE-NUM>": 430,
+   "num-then-num": 3,
+   "other": 15,
+   "has-slash": 2
+  },
+  "jaethe_big_values": [
+   {
+    "page": 22,
+    "value": "9116"
+   }
+  ],
+  "sheet_stamps": {
+   "III N.": 1,
+   "II. N.": 3,
+   "III. N.": 20,
+   "11. N.": 21,
+   "10. N.": 5,
+   "111. N.": 1,
+   "61. N.": 1
+  },
+  "sheet_stamp_note": "listi so tiskani II/III (VLM jih vidi kot '11.'/'111.'/'III N.'); niso zaporedni s stranmi"
+ },
+ "findings": {
+  "F9": "PUA<->PS lastniška kontrola: 50/51 skupnih hiš MISMATCH, 1 FUZZY, 0 AGREE — PUA (pripravljalni zvezek) in PS (končni protokol 1825) vsebujeta RAZLIČNI lastniški stanji. Premik vrstic izključen (shift test). Delne družinske oblike so prepoznane (Draschisch/Dragosch h.3, Krischan/Krishnar h.36-37, Tillak/Tillah h.30, Urich Pattle/Urbas Peter h.51).",
+  "F10": "PS<->PT kontrola (dva končna protokola istega leta): 3 močna (h.45 Strauß/Krauß 0.84, h.19 Thomas 0.82, h.48 0.76) + 7 delnih ujemanj / 47 skupnih hiš — PS lahko RAZSOJA nestabilne PT prebrke (npr. val 54 'Krauß Georg' variant potrjena).",
+  "F11": "NADGRADJENO v61: Fürtrag veriga VERIFIKIRANA — 13 točk (2,9,10,12,14,18,22,30,33,38,39,42,52), strogo monotona, 0 kršitev; format = 'N. Fürtrag. | Joch | Quad-Klafter' (vsota TEKOČE strani, ne kumulativa — p11 2J798 < p5 6J1459 izključi kumulacijo); rdeče druge vrstice = predelani seštevki (semantika TO-DECODE); koraki večinoma +1/stran = skladno s 'števec = tekoči indeks Jaethe'; izjemi p35->p36 +5 in p36->p42 +1/6 strani se skladata s F12 (dediščina zaključi male holdinge; ne-lokalna sekcija = veliki holdingi). 'Summa Jaethen 6/10808' in 'Summa Quadrat-Klafter 6/77' iz v1 = neobstoječi entiteti (misreada vrstice '12. Fürtrag 6|1088' + rdeče '6|77' na p14).",
+  "F10b": "NOVO v61 (imenske variante p11/p12): trije neodvisni bralci (PS-VLM v57, agent 2026-10 @5x, PT-VLM v53) se NE ujemajo o priimkih v dediščinskem skladu h.36-50 (kandidati: Muster/Mutza/Mache/Murško/Musterer); potrjeno: 'Christian' h36/h37 (agent+PT), 'Schimerz' kot realen priimek h38/h39/p11 (agent+PT), 'Strauß Georg' h45 TUDI na p12 (register v57 je imel 'Hansp[?] Gnoy' — popravljeno; p7 precedent + PT 'Krauß Georg'); družinski sklad h.36-50 = STRUKTURNO dokazan, PRIIMEK = NAME_UNCERTAIN; 'Muster družina' NE sme v UI/KG kot gotovost (glej reread-2026-10/name-variants-p11-p12.json).",
+  "F12": "Strukturna meja p40: sestavljeni '1 / N' sklici (do 140 vrstic) + ne-lokalni Wohnort (Zagorje, Dragole) = sekcija ne-lokalnih lastnikov, prepletena z nadaljevanjem lokalnih blokov.",
+  "F13": "PS p12 rdeča opomba 'Auf pfandbeyern 1801' = pfand (zastava) — pravni razlog za lastniške razlike; rdeči vpisi v PS dokumentirajo prehode lastništva.",
+  "F14": "PUA parcelne številke (2-9978) in PS jaethe (1-9116) v ISTI rangi; p002 potrjuje tiskano glavo 'Flurbezirk / Jaethe' — ujemanje parcel je pričakovano šele po polni transkripciji z dekodiranim Flurbezirk stolpcem (delna pokritost 55/143 = pričakovano malo ujemanj).",
+  "F15": "NOVO v61: 'Nro. des Blattes' = raven lista (I, II, ... z ditto znaki), NE zaporedna številka vrstice; register v57 vrednosti no_blatt so semantično nezanesljive ('11' na p44 = rimski 'II'; zaporedja 1..23 na p11 = ditto tolmačeno kot številčenje); stolpci 821-840 (p44, dve kopiji z rdečimi popravki) = 'Nro. der Uebersetzung' (sklici na čistopis); p45/48/51 = kaos v register v57 (mešane vrednosti) — no_blatt = UNRELIABLE za vseh 55 strani do popolnega re-reada.",
+  "F16": "NOVO v61: struktura vrstic p11 divergira (register 23 vrstic vs ~22 vidnih); register nb4 h=1 'Barbara Muster' nima jasne identifikacije na strani; h-stolpec p11 vrstic 2-6 = UNCERTAIN med register (40,41,1,39,39) in agent (39,30,38,39) — hipoteza: VLM je h=1 vzel iz Geistliche/Dominical stolpca; hišne veze p11 vrstic 2-6 = PROVISIONAL do full re-reada."
+ },
+ "doctrine_impact": {
+  "F1_val54": "PUA = edina lastniška avtoriteta — REVIZIJA: PUA je avtoriteta za PRIPRAVLJALNO stanje (in B.P.<->hiša vezave); za KONČNO stanje 1825 sta PS+PT medsebojno potrjeni viri.",
+  "impact_on_ui": "NIČ — zemljevid A01 lastniške veze ostajajo na PUA (pripravljalno stanje je tisto, ki je vezano na B.P. opombe); ob polni PS transkripciji sledi P3 odločitev o prikazu."
+ }
+}

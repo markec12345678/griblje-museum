@@ -1,0 +1,57 @@
+{
+  "title": "PS N83 p11-p12 — tri-sodisna kontrola imen (register VLM v57 / agent re-read 2026-10 / PT vzporednica)",
+  "date": "2026-10",
+  "context": "Dedicinski sklad h.36-50 (p11-12, stand 'Landl. Gutsh.'): val 58 je VLM-ova branja 'Muster/Gnoy/Schimerz' oznacil kot nejasna -> re-read. Agent je prebral izrezke 5x direktno (2 prehoda); PT (samostojen finalni protokol, val 53) = tretje, neodvisno branje istih holdingov.",
+  "kurrent_caveat": "Koncni pripone '-er/-or' v tem rokopisu imajo rocni zamah, ki ga lahko vec bralcev prebere kot '-a/-o/-za'; 'st' digraf je lahko 'tlz'. Zato so priimki v tem skladu DOKUMENTIRANO negotovi — niti eno branje ni povzet kot resnica.",
+  "high_confidence_corrections": [
+    {
+      "page": 12, "haus_no": "45", "row": "prva vidna h45 vrstica na p12 (zgornja)",
+      "register_v57": "Hansp[?] Gnoy",
+      "agent_reread": "Strauß Georg",
+      "pt_parallel": "Krauß Georg (PT h45, val 53)",
+      "decision": "CORRECTED -> Strauß Georg",
+      "evidence": "glifi 'Straufs Grosg' jasna @5x na dveh prehodih; h45 na p7 ze prebran 'Strauß Georg' (isti lastnik, vec parcel); PT h45 'Krauß Georg' potrjuje ime; val 58 F10 match 0.84 PS↔PT h45 ostane in se Krepi"
+    },
+    {
+      "page": 12, "haus_no": "38", "row": "h38 vrstica (kulturna vrstica 'Acker 305')",
+      "register_v57": "Thomas Gnoy",
+      "agent_reread": "Schimerz[?] Gnoy",
+      "pt_parallel": "Schim[?]er Georg (PT h38)",
+      "decision": "CORRECTED first name -> Schimerz[?] (priimek ostaja Gnoy z varianto)",
+      "evidence": "glifi se ocitno zacnejo z 'Š' (dolg skok z strešico), ne 'T'; PT neodvisno 'Schim[?]er'; 'Thomas' = VLM napaka"
+    },
+    {
+      "page": 12, "haus_no": "39", "row": "h39 vrstica (kulturna vrstica 'Acker 371')",
+      "register_v57": "Thomas Muster",
+      "agent_reread": "Schimerz[?] Marko/Murko[?]",
+      "pt_parallel": "Schim[?]er Mache[?] (PT h39, stand Bauer[?])",
+      "decision": "CORRECTED first name -> Schimerz[?] (priimek VARIANT: Marko/Murko/Muster/Mache)",
+      "evidence": "isti 'Š' zacneki kot h38; PT potrjuje 'Schim-'; priimek negotov pri vseh treh bralcih"
+    }
+  ],
+  "variant_records_no_overwrite": [
+    {"page": 11, "rows": "h40 (5x)", "register_v57": "Peter Muster", "agent_reread": "Peter[?] Mutza/Murlza[?]", "note": "ime 'Peter' obojestransko verjetno; priimek: VLM 'Muster' / agent 'Mutza' / PT h40 'Musterer Paul' + 'Georg Mache' — Kurrent '-er' zamah = '-a' nevarnost; VARIANT"},
+    {"page": 11, "rows": "h41 (2 vrstici, 'Gnoy' blok)", "register_v57": "Peter Muster + Fidriz Georg", "agent_reread": "Pešdir(g) Grosg/Gnoy (obe)", "note": "register je vrstici prebral razlicno ('Peter Muster'/'Fidriz Georg'), agent vidi isto zaporedje kot h41 vrstici 'Pešdir Gnoy'; mozen VLM split artefakt; VARIANT + STRUKTURA"},
+    {"page": 11, "rows": "h43 (2 vrstici)", "register_v57": "Barbara Muster", "agent_reread": "Brulla/Grulla[?] Muško[?]", "pt_parallel": "Dicheltaler Marfa[?] (PT h43)", "note": "trije bralci, trije preberi; VARIANT"},
+    {"page": 11, "rows": "h36 + h37", "register_v57": "Barthol Muster + Fridrich Peter", "agent_reread": "Kristahan/Christian Matthe[?] + Kristahan Peter[?]", "pt_parallel": "Christian Mache[?] (h36) + Christian Pichl[?] (h37)", "note": "ime 'Christian' potrjeno z agentom in PT; register ('Barthol'/'Fridrich') = VLM napaki; priimki negotovi; CORRECTION CANDIDATE (ime), priimek VARIANT"},
+    {"page": 11, "rows": "h44", "register_v57": "Matthäus Muster", "agent_reread": "Hasittak[?] Mauslo[?]", "pt_parallel": "Christen Mache[?] (PT h44)", "note": "neujemljivo; h44 morda 'Christian' (PT) — glifi ne razlocijo; VARIANT"},
+    {"page": 12, "rows": "h46 r1", "register_v57": "Kristof Muster", "agent_reread": "Kristek/Kristof[?] Murško/Mursko[?]", "note": "ime skladno ('Krist-'); priimek VARIANT"},
+    {"page": 12, "rows": "h36 + h31", "register_v57": "Kristohan Muster", "agent_reread": "Kristahan (=Christian) Muntza/Murlza[?]", "pt_parallel": "Christian Mache[?] (h36)", "note": "ime potrjeno; priimek VARIANT"},
+    {"page": 12, "rows": "h50, h41, h40, h42, h41 (5 vrstic 'Poldi/Peter')", "register_v57": "Poldi Muster / Poldi Gnoy / Poldi Muster / Poldi Muster / Poldi Gnoy", "agent_reread": "Pešdir(g) Murlza / Pešdir(g) Gnozg / Pešdir(g) Murlza / Pešdir(g) Murlza / Pešdir(g) Gnozg", "note": "isti glifi, ki jih je VLM na p11 prebral 'Peter', je na p12 prebral 'Poldi' — notranja nekonsistentnost VLM; agent bere 'Pešdir' (morda 'Peter' z zamahom); VARIANT — ime ni razloceno brez vire izven peskovnika (matricni dokazi)"},
+    {"page": 12, "rows": "h48 + h47", "register_v57": "Khristofer Gnoy + Khristofer Muster", "agent_reread": "Khristobatar/Kristobal[?] Gnozg + Khristobatar[?] Murko[?]", "note": "ime: 'Khristofer' vs 'Kristobal' neujemljivo; priimek VARIANT"},
+    {"page": 12, "rows": "h45 (druga h45 vrstica)", "register_v57": "Hansp[?] Gnoy", "agent_reread": "Hans[?] Gnoy", "note": "obstoj 'Hans[?] Gnoy' potrjen (druga h45 vrstica); '[?]' ostaja"},
+    {"page": 12, "rows": "h22", "register_v57": "Michl Gnoy", "agent_reread": "Michl/Uraich[?] Gnoz", "note": "ime verjetno 'Michl'; VARIANT nizka stopnja razlike"}
+  ],
+  "structural_findings": [
+    "S1: p11 register 23 vrstic vs stran ~22 vidnih — VLM je vsaj eno večparcelno bloko razdelil; register nb4 h=1 'Barbara Muster' NIMA jasne identifikacije na strani (h-stolpec p11 vrstice 2-6 = UNCERTAIN med register (40,41,1,39,39) in agent (39,30,38,39) — hipoteza: VLM je h=1 vzel iz oznake Geistliche/Dominical stolpca)",
+    "S2: p11 vsebuje 2 vrstici h38 'Schimerz' (register jih NIMA — p11 brez h38); p12 h38/h39 'Schimerz' — 'Schimerz' je realen ponavljajoci se priimek skladu (PT 'Schim[?]er' x3), ne dolocen kot 'Thomas'",
+    "S3: 'Strauß Georg' se na p12 pojavi kot lastnik h45 (register je zgrešil; p7 ze prebran) — pomeni da val 58 F10 match h45 ni izoliran na p7 ampak se ponovi",
+    "S4: ena rdeca marginala 'Zu 60 N?' (p12, ob h47) — referencna oznaka, TO-DECODE"
+  ],
+  "family_cluster_status": {
+    "v58_claim": "'Muster/Musterer' = realna druzina (F10, PT h40 'Musterer Paul' ≈ PS 'Peter Muster')",
+    "v61_status": "DOWNGRADED: druzinski sklad h.36-50 je STRUKTURNOST dokazana (recen priimek + recena imena Peter/Christian/Kristof/Schimerz/Georg), a PRIIMEK NI DOLOCEN: kandidati Muster / Mutza / Mache / Maček / Murško / Musterer; PT-samo 'Musterer' (val 54) je ENO od moznih zapisov; dokoncna identifikacija šele: (a) re-read @higher dpi p11-12, (b) PT h40 zoom, (c) vire izven peskovnika (matricni/evidenca hiš)",
+    "ui_impact": "noben prikaz imena druzine ne sme iti v UI kot gotovost; v KG status = NAME_UNCERTAIN_CLUSTER"
+  },
+  "provenance": "izrezki: ps-n83/reread-crops/ (regenerabilni, gitignored); branje: glavni agent direktni vid 2 prehoda; PT vzporednica: pt-n83/register.json (val 53); register VLM: ps-n83/register.json (val 57)"
+}
