@@ -41,6 +41,8 @@ type PageRecord = {
   pass1_entries: number;
   pass2_verification: boolean;
   pass3_targeted: boolean;
+  native_entries?: number; // val 57: p26/p42 PDF-native branja (2 vpisa vsaka)
+  notes?: string;
 };
 
 const register: PuaEntry[] = JSON.parse(
