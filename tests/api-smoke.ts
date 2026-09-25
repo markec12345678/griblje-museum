@@ -542,6 +542,85 @@ ok(
   `status=${sgBadDepth.status}`
 );
 
+/* --- ATLAS STORY ENGINE (issue #42 §16–§18, PASS 7, val 69) ---------------- */
+
+const seH40 = await getJson("/api/atlas/story?entity=HOUSE:H-040");
+ok(
+  "atlas story: zgodba hiše 40 — contract EVIDENCED + tiri ločeni (§16/§17/§22)",
+  seH40.status === 200 &&
+    seH40.body?.contract?.story_status === "EVIDENCED" &&
+    seH40.body?.contract?.story_id?.startsWith("SE-") &&
+    (seH40.body?.contract?.used_claim_ids ?? []).includes("C-00083") &&
+    (seH40.body?.contract?.used_claim_ids ?? []).includes("C-00154") &&
+    seH40.body?.tier_breakdown?.KONFLIKTNO > 0 &&
+    seH40.body?.tier_breakdown?.NEZNANO > 0,
+  `status=${seH40.status} story_id=${seH40.body?.contract?.story_id}`
+);
+
+const seSections = await getJson("/api/atlas/story?entity=H-040");
+ok(
+  "atlas story: hiša 40 — §16 sekcije (lastništvo/parcele/kataster/konflikti/neznanje)",
+  seSections.status === 200 &&
+    (seSections.body?.sections ?? []).some((s: any) => s.title === "Lastništvo 1825") &&
+    (seSections.body?.sections ?? []).some((s: any) => s.title === "Parcele in raba zemljišča") &&
+    (seSections.body?.sections ?? []).some((s: any) => s.title.startsWith("Na katastrskem listu")) &&
+    (seSections.body?.sections ?? []).some((s: any) => s.title.includes("Konflikti")) &&
+    (seSections.body?.sections ?? []).some((s: any) => s.title.includes("Kaj še ne vemo")),
+  `status=${seSections.status} sections=${seSections.body?.sections?.length}`
+);
+
+const seDeterminism = await getJson("/api/atlas/story?entity=HOUSE:H-040");
+ok(
+  "atlas story: determinizem — isti story_id + content_hash (§22 reproducibilnost)",
+  seDeterminism.status === 200 &&
+    seDeterminism.body?.contract?.story_id === seH40.body?.contract?.story_id &&
+    seDeterminism.body?.contract?.content_hash === seH40.body?.contract?.content_hash &&
+    seDeterminism.body?.contract?.kg_sha256 === seH40.body?.contract?.kg_sha256,
+  `hash=${seDeterminism.body?.contract?.content_hash?.slice(0, 12)}`
+);
+
+const seVillage = await getJson("/api/atlas/story?scope=village");
+ok(
+  "atlas story: zgodba vasi (§18) — 10 sekcij + EVIDENCED + C-00622 + raba ločena",
+  seVillage.status === 200 &&
+    seVillage.body?.sections?.length === 10 &&
+    seVillage.body?.contract?.story_status === "EVIDENCED" &&
+    (seVillage.body?.contract?.used_claim_ids ?? []).includes("C-00622") &&
+    (seVillage.body?.sections ?? []).some((s: any) => s.title.includes("Raba zemljišča") && s.items.length >= 2),
+  `status=${seVillage.status} sections=${seVillage.body?.sections?.length}`
+);
+
+const seNotPublished = await getJson(
+  `/api/atlas/story?entity=${encodeURIComponent("PARCEL:PUA-G-B P. 17")}`
+);
+ok(
+  "atlas story: entiteta brez claims in relacij → NOT_PUBLISHED (pravilo pogodbe)",
+  seNotPublished.status === 200 &&
+    seNotPublished.body?.contract?.story_status === "NOT_PUBLISHED" &&
+    seNotPublished.body?.contract?.used_claim_ids?.length === 0 &&
+    typeof seNotPublished.body?.contract?.prompt_version === "string",
+  `status=${seNotPublished.status} story_status=${seNotPublished.body?.contract?.story_status}`
+);
+
+const seMissing = await getJson("/api/atlas/story");
+ok(
+  "atlas story: brez parametra → 400 missing_param (poštene napake)",
+  seMissing.status === 400 && seMissing.body?.error === "missing_param",
+  `status=${seMissing.status}`
+);
+const seBadScope = await getJson("/api/atlas/story?scope=nekaj");
+ok(
+  "atlas story: neznan scope → 400 unknown_scope",
+  seBadScope.status === 400 && seBadScope.body?.error === "unknown_scope",
+  `status=${seBadScope.status}`
+);
+const seNotFound = await getJson("/api/atlas/story?entity=HOUSE:H-999");
+ok(
+  "atlas story: neobstoječa entiteta → 404 node_not_found",
+  seNotFound.status === 404 && seNotFound.body?.error === "node_not_found",
+  `status=${seNotFound.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
