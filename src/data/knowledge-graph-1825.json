@@ -1,7 +1,7 @@
 {
- "val": 66,
- "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b",
- "title": "knowledge-graph-1825 v1.3",
+ "val": 68,
+ "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6",
+ "title": "knowledge-graph-1825 v1.4",
  "findings": [
   {
    "finding_id": "KG-F01",
@@ -43,6 +43,13 @@
    "statement": "PASS 4b: A02–A05 inventarizirani (2 prehoda, brez VLM). Cerkev sv. Vid najdena na A02 s križem (F-A02-02 — na A01 je odrezana). A03+A04 = 0 stavb (negativni rezultati). A05 'vas 50–60 hiš' (val 42) = vinogradniški trakovi s kocami (F-A05-02); 'Schumsthl Traverne' (val 42) vs 'Schimshu Dravi N°8' (val 66) = dve branji, gostilniški signal OSLABLJEN (F-A05-04); mejne točke N°1–9 = verjetno PR Grenz-Beschreibung točke (F-A05-03). BP kandidati 12/20/22 na A02 @6x — merge v matrico prepovedan brez sidra.",
    "status": "RESOLVED-V66 (odprta: F-A02-01, F-A05-03, F-A05-04)",
    "provenance": "pass4b/a02-a05-building-inventory-1825.json (val 66)"
+  },
+  {
+   "finding_id": "KG-F07",
+   "val": 68,
+   "statement": "PASS 6 invariant je ujel kršitev claim-first arhitekture: relacija IS_GEMEINDE_OF (TP-001 → TP-003) je bila brez claima, story atom SA-004 pa brez claim_ids (§43 §8/§11: zgodba brez claim povezav ni dovoljena). v1.4: dodan claim C-00622 (subject TP-001, IS_GEMEINDE_OF, TP-003, source SRC-A01; vire SRC-A01/PT/PS nosi relacija), SA-004 povezana nanj. Nič prejšnjih claim ID-jev se ne premakne (claim je zadnji v vrsti).",
+   "status": "RESOLVED-V68",
+   "provenance": "story-graph-1825.json invariant build (val 68); issue #43 §3/§8/§11"
   }
  ],
  "provenance": {
@@ -314,7 +321,7 @@
   "CONFLICT": 128,
   "SINGLE_SOURCE": 111,
   "UNCERTAIN": 40,
-  "VERIFIED_FORM": 3
+  "VERIFIED_FORM": 4
  },
  "nodes": [
   {
@@ -94024,7 +94031,10 @@
    ],
    "evidence_status": "VERIFIED_FORM",
    "confidence": "high",
-   "notes": "tiskane naslovnice vseh registrov poimenujejo isto Gemeindo"
+   "notes": "tiskane naslovnice vseh registrov poimenujejo isto Gemeindo",
+   "claim_ids": [
+    "C-00622"
+   ]
   }
  ],
  "claims": [
@@ -103522,6 +103532,19 @@
    "period": "1801",
    "confidence": "high",
    "notes": "rdeča opomba 'Auf pfandbeyern 1801' v vrstici hiše"
+  },
+  {
+   "claim_id": "C-00622",
+   "subject": "TP-001",
+   "predicate": "IS_GEMEINDE_OF",
+   "object": "TP-003",
+   "source_ref": {
+    "source": "SRC-A01"
+   },
+   "status": "VERIFIED_FORM",
+   "period": "1824/1827",
+   "confidence": "high",
+   "notes": "tiskane naslovnice vseh registrov poimenujejo isto Gemeindo; vire SRC-A01/PT/PS nosi relacija"
   }
  ],
  "story_atoms": [
@@ -103546,7 +103569,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-25T18:30:07Z",
+   "generated_at": "2026-09-25T20:32:14Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103568,7 +103591,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-09-25T18:30:07Z",
+   "generated_at": "2026-09-25T20:32:14Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103595,7 +103618,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-09-25T18:30:07Z",
+   "generated_at": "2026-09-25T20:32:14Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103608,7 +103631,9 @@
     "TP-001",
     "TP-003"
    ],
-   "claim_ids": [],
+   "claim_ids": [
+    "C-00622"
+   ],
    "source_ids": [
     "SRC-PT",
     "SRC-PR",
@@ -103620,7 +103645,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-25T18:30:07Z",
+   "generated_at": "2026-09-25T20:32:14Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }
