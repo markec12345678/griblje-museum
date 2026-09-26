@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Table Title:**\nZusammenstellung\n\n**Headers (Top to Bottom, Left to Right):**\n\n**Main Column Headers:**\n*   Culturgattungen\n*   Resultate der benützten Behelfe\n    *   Angabe des Gemeinde-Ausschusses\n    *   [Signature/Note]\n    *   [Empty]\n*   Hieraus und mit Berücksichtigung des eigenen Urtheiles abgeleiteter Commissions-Anspruch\n\n**Sub-headers for Ackerland (Arable Land):**\n*   Weizen (Wheat)\n*   Korn (Grain/Corn)\n*   Gerste (Barley)\n*   Hafer (Oats)\n*   Spelzen (Spelt)\n*   Mais (Corn/Maize)\n*   Hirse (Millet)\n*   Heiden (Heath) - sub-columns: Brach (Fallow), Stoppel (Stubble), Dick (Thick), Rapsfeld (Rape field), Rüben (Beets), Futter-Rüben (Fodder beets), Stoppel (Stubble), Rüben (Beets)\n*   [Total column]\n\n**Sub-headers for Wiesen (Meadows):**\n*   Heu (Hay) - sub-columns: süßes (sweet), saures (sour), gemischt (mixed)\n*   Grumet (Aftermath/Second cut) - sub-columns: süßes (sweet), saures (sour), gemischt (mixed)\n*   [Repeated 4 times]\n\n**Sub-headers for Weingärten (Vineyards):**\n*   besserer (better) - sub-columns: Most (Must), Calo (Calo), Wein (Wine)\n*   schlechterer (worse) - sub-columns: Most (Must), Calo (Calo), Wein (Wine)\n*   [Repeated 4 times]\n\n---\n\n**Transcribed Data Rows:**\n\n**Ackerland (Arable Land)**\n*   **Header Row:** Ackerland | n. ö. Metze n. | [blank] | n. ö. Centner | Anmerkung.\n*   **Class I:** I | 12 | 12 | -- | -- | 26 | 15 | -- | 10 | 80 | -- | -- | -- | 50 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 12 | 12 | -- | -- | 26 | 15 | -- | 10 | 80 | -- | -- | 50\n*   **Class II:** II | 9 | 9 | -- | -- | 18 | 10 | -- | 7 | 65 | -- | -- | -- | 20 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 9 | 9 | -- | -- | 18 | 10 | -- | 7 | 65 | -- | -- | 20\n\n**Wiesen (Meadows)**\n*   **Header Row:** Wiesen | n. ö. Centner | n. ö. Centner | n. ö. Centner | n. ö. Centner | n. ö. Centner | n. ö. Centner | n. ö. Centner | n. ö. Centner\n*   **Class I:** I | 14 | -- | -- | 6 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 14 | -- | -- | 6\n*   **Class II:** II | 8 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 8\n\n**Weingärten (Vineyards)**\n*   **Header Row:** Weingärten | n. ö. Eimer | n. ö. Eimer | n. ö. Eimer | n. ö. Eimer | n. ö. Eimer | n. ö. Eimer | n. ö. Eimer | n. ö. Eimer\n*   **Class C:** C | -- | -- | -- | -- | -- | -- | 12 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 12\n\n**Footnote/Signature (bottom right):**\n[Signature appears to read:] Grübl(?) / [illegible]",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429446,
+  "id": "202609262130205ed2fc5549d74760",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262130205ed2fc5549d74760",
+  "usage": {
+    "completion_tokens": 1014,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5873,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6887
+  }
+}

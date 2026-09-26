@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Hecker CLASSE=II JOCH=3 3 4 KLAFTER=1 2 0 OTHER: col1=1 6 col2=5 0 col3=5 6 2 4 col4=5 9 col5=9 col6=1 5 2 col7=5 5",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429906,
+  "id": "202609262138246c79512ae6e8498c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262138246c79512ae6e8498c",
+  "usage": {
+    "completion_tokens": 75,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1582,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1657
+  }
+}

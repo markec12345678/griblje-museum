@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Title:**\nBeurlaubm Anwesens zu Grübl.\nUeinstellung des niederösterreichischen Grundmaaßes.\n\n**Table Header:**\n| Culturart | Flächenmaß nach dem 30. Fuß, nebst zum Abriß zum Beispiel Joch. | | | | |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| | **Joch.** | **300** | **Kl.** | **□** | **□** |\n\n*(Note: The column headers for the last two columns are abbreviated symbols, likely representing percentage and Holznutzung/wood usage)*\n\n---\n\n**Table Rows:**\n\n| Culturart | Joch | 300 | Kl. | □ | □ |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| Wiesen | . | 39 | . | 95 | . | 6 |\n| *Daran von zugezogenen* | | | | | |\n| *Gülzen und Gülzerdungen* | . | 39 | . | . | . | 6 |\n\n---\n\n**Footer Text:**\nAnbemerkungen. Diese bei diesem Anwesen alle\nGülzen nicht gemessen, und zum Behuf deren beurtheilt\nbzw. bemerkt, wofür allhier dies zum Abschluß beigezogen\nwird.\n\n**Signatures:**\nBeglaubet den 9ten September 1833.\n\n[Signature:]\nJos: [unclear surname, possibly *Schlosser* or similar]\n[Title/Role, unclear]",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429540,
+  "id": "2026092621321451cc796f44c94724",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092621321451cc796f44c94724",
+  "usage": {
+    "completion_tokens": 362,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4475,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 4837
+  }
+}

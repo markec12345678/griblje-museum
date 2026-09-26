@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the visual evidence from the 1829/30 Austrian cadastral table for Grüble, here is the row-by-row transcription. The focus is on the **Flächen-Maas** (Area) columns, specifically the **Joch** and **□Klafter** values, including all crossed-out or corrected digits.\n\n**Legend:**\n*   `[crossed]` = Digit is crossed out/overwritten.\n*   `?` = Unclear digit.\n*   `.` = Empty cell.\n\n| Posten N° | CultursGattungen | Classe | Joch | □Klafter |\n| :--- | :--- | :--- | :--- | :--- |\n| 1 | Acker | I | 80 | 842 [crossed] |\n| 1 | Acker | II | 334 | 120 [crossed] |\n| 2 | Wiesen | I | 18 | 1594 |\n| 2 | Wiesen | II | 29 | 818 |\n| 3 | Kleine Gärten | C | 3 | 612 |\n| 4 | Größere Gärten | C | . | 105 |\n| 5 | Weingärten | C | 7 | 42 |\n| 6 | Hutweiden | C | 118 | 702 [crossed] |\n| 7 | Weiden mit Holzstückeln | C | 558 | 558 [crossed] |\n| 8 | Bauarea | . | 1 | 799 [crossed] |\n| **SUMMA** | **Suma** | **-** | **1152** | **495 [crossed]** |\n\n**Detailed Notes on Critical Values:**\n*   **Row 1 (Acker I):** The Klafter value is written as **842**, with the last two digits (**42**) appearing to be crossed out or heavily corrected.\n*   **Row 1 (Acker II):** The Joch value is **334**. The Klafter value is **120**, with the digits **20** crossed out.\n*   **Row 6 (Hutweiden):** The Joch value is **118**. The Klafter value is **702**, where the **02** part is crossed out.\n*   **Row 7 (Weiden...):** The Joch value is **558**. The Klafter value is **558**, which is entirely crossed out.\n*   **Row 8 (Bauarea):** The Joch column appears empty or has a dash. The Klafter value is **799**, with the **99** crossed out.\n*   **SUMMA Row:** The total Joch is **1152**. The total Klafter is **495**, which is crossed out (likely indicating a recalculation or adjustment noted in the \"Anmerkungen\" column).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429533,
+  "id": "202609262131538dbe3e7c3caa4394",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262131538dbe3e7c3caa4394",
+  "usage": {
+    "completion_tokens": 621,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6153,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6774
+  }
+}

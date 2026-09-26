@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the image provided, here is the transcription of the table **\"Zusammenstellung A\"** (Page 65) from the 1829/30 Austrian cadastral elaborat for the village of **Grüble**.\n\nThe table title is: **Samen-Cultur-Ernte und Drescher-, überhaupt sämmtlicher Bau-Ausgaben nach vorheriger Theilung zuerst pro Ruka des bauern Verhältnisses und dann mit auch Tabellen des Wirthschafts-Curses.**\n\n### Column Headers (Transcribed Left to Right)\n\n1.  **Nr.**\n2.  **Kultur-Gattung**\n3.  **Ruka-Nummer**\n4.  **Brutto-Geldertrag per Joch im Ganzen** (Sub-columns: *fl.*, *xr*)\n5.  **Samen** (Sub-columns: *Weizen*, *Korn*, *Gerste*, *Hafer*, *Weizen*, *Hirse*, *Mohnflieder*, *Erbsen*, *Bohnen*) -> *Note: Values are in Metzen/Pfund*\n6.  **Drescherlohn** (Sub-columns: *Weizen*, *Korn*, *Gerste*, *Hafer*, *Bohnen*, *Hülsen*)\n7.  **Zug** (Sub-column: *Arbeit* -> *mit Ochsen* [Days])\n8.  **Hand** (Sub-columns: *Jänner*, *Februar*)\n9.  **Bauschaffungen** (Sub-columns: *Dünger*, *Wegfuhre*, *Bund*)\n10. **Hutfrucht**\n11. **Dünger, Aufwand, Einnahme, Reinertrag** (Sub-columns: *Procente*, *fl.*, *xr.*)\n12. **Nach der Instruktion kommen jedoch anzuwenden** (Sub-columns: *Procente*, *mit fl.*, *xr.*)\n13. **Sohlen zeigt sich Rein-Ertrag** (Sub-columns: *fl.*, *xr.*)\n14. **Bemerkung**\n\n---\n\n### Data Rows\n\n| Nr. | Kultur-Gattung | Ruka | Brutto (fl/xr) | Samen (Metzen) | Drescherlohn | Zug (Tage) | Hand (Jan/Feb) | Bauschaffungen | Hutfrucht | Dünger/Aufwand (fl/xr) | Instr. (fl/xr) | Rein-Ertrag (fl/xr) | Bemerkung |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **1** | **Äcker** | **I** | **22 / 463** | **056 056**, **066 022 132 006**, **175**, **026 026**, **039 030 016 187**, **209 094** | ... | ... | ... | ... | **10 382 / 2024** | **15 / 12 30** | | |\n| | | II | **16 30 / 056 056** | **066 022 132 006**, **175**, **020 020**, **024 022 066 187**, **202 085** | ... | ... | ... | ... | **9 37 / 1668 35** | **8 57 / 7 35** | | |\n| | | III | **11 547 / 162** | **0744 032 0287 000**, **020**, **023 018 025 060 180**, **1680 039** | ... | ... | ... | ... | **8 27 / 63 05** | **7 405 / ? 10** | | |\n| **2** | **Wiesen** | **I** | **9 24** | ... | ... | ... | **50 / 14** | ... | **1 57 / 2074 20** | **1 320 / 130** | | |\n| | | II | **?** | ... | ... | ... | **22 / 2** | ... | **55 / 2294 25** | **? / -** | | |\n| **3** | **Obstbau** | **I/II** | **22 463 / 44** | ... | ... | ... | ... | ... | ... | **12 20 / 13 5** | | *Abholzung* |\n| **4** | **Gemeinde-Äcker**| **I/II** | **22 463 / 44** | ... | ... | ... | ... | ... | ... | **12 20 / 13 5** | | |\n| **5** | **Weingarten** | **I/II** | **27 50 / 39** | ... | ... | ... | **62 / 12**<br>**80 / 9**<br>**2000 / 3000** | ... | **20 26 / 68 7044**<br>**16 54 / 7044** | **19 15 / 18 408**<br>**8 / 7 10** | | *Weingarten*<br>*abholzung* |\n| **6** | **Gärten** | **I/II** | **? / ?** | ... | ... | ... | ... | ... | **132 / 2294 25** | **15 / - 435** | | *Garten abholzung*<br>*II Abholzung* |\n| **7** | **Almen und Weide**| **I/II** | **? / ?** | ... | ... | ... | ... | ... | **132 / 2294 25** | **15 / - 435** | | *Alpen*<br>*Schaftrieb* |\n| | *Schaftrieb* | **6** | ... | ... | ... | ... | ... | ... | ... | **6 / 51** | | |\n| | *Sauen* | **1 40** | ... | ... | ... | ... | ... | ... | ... | **15 / ?** | | *Sauengrün*<br>*Abholzung* |\n| **8** | **Baum-Lee** | **16 58 / 17** | ... | ... | ... | ... | ... | ... | ... | **7 35 / ?** | | |\n\n### Summary / Totals Row\n*(Located at the bottom of the table)*\n\n*   **Text:** Neunterhalt und Grundsteuer July 1829. L[...] Fassung.\n*   **Signature:** R[...]thaler\n\n---\n**Notes on Transcription:**\n*   **Currency:** `fl.` = Gulden (Florin), `xr.` = Kreuzer.\n*   **Area:** `Joch` (unit of area), `Klafter` (implied in some seed columns or as sub-units).\n*   **Unclear values:** Marked with `[?]` where the handwriting was illegible or faded.\n*   **Crossed values:** Several values in the \"Rein-Ertrag\" and \"Instr.\" columns appear to have correction lines or are part of a calculation strike-through, noted as per the visual evidence.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429628,
+  "id": "20260926213306a6e94e4b087244e8",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926213306a6e94e4b087244e8",
+  "usage": {
+    "completion_tokens": 1651,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6096,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 7747
+  }
+}

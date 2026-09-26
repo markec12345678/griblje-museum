@@ -516,7 +516,7 @@ export const ui = {
         "Hiše/družine: konskripcija hiš za to leto ni v vpisanih virih (stavbne parcele BP so davčne enote, ne konskripcija hiš).",
       absentFamilies: "Družine: družinska konskripcija za to leto ni v vpisanih virih.",
       absentPastureShare:
-        "Delež pašnikov: PZ Endresultat se ne zapira (F-PZ-04 OPEN, Δ 43.488 QKl) — deleži se ne objavljajo, dokler se vsota ne razreši (§14).",
+        "Delež pašnikov: zapisana Summa p67 (1152 J 495 K) je 3 J (4.800 QKl) nad vsoto vrstic 1–8 — F-PZ-04 ostaja OPEN (val 77 re-read), deleži v UI se ne objavljajo (§14).",
     },
     chronicle: {
       title: "Kronika vasi",
@@ -1925,7 +1925,7 @@ export const ui = {
       absentFamilies:
         "Families: a family conscription for this year is not among the entered sources.",
       absentPastureShare:
-        "Pasture share: the PZ Endresultat does not close (F-PZ-04 OPEN, Δ 43,488 QKl) — shares are not published until the sum is resolved (§14).",
+        "Pasture share: the written p67 Summa (1152 J 495 K) is 3 Joch (4,800 QKl) above the row sum — F-PZ-04 remains OPEN (val 77 re-read); shares stay unpublished in the UI (§14).",
     },
     chronicle: {
       title: "Village chronicle",
@@ -3328,7 +3328,7 @@ export const ui = {
       absentFamilies:
         "Obitelji: obiteljska konstrikcija za ovu godinu nije u upisanim izvorima.",
       absentPastureShare:
-        "Udio pašnjaka: PZ Endresultat se ne zatvara (F-PZ-04 OPEN, Δ 43.488 QKl) — udjeli se ne objavljuju dok se zbroj ne riješi (§14).",
+        "Udio pašnjaka: zapisana Summa p67 (1152 J 495 K) je 3 J (4.800 QKl) iznad zbroja redaka — F-PZ-04 ostaje OPEN (val 77 re-read), udjeli se ne objavljuju u UI (§14).",
     },
     chronicle: {
       title: "Kronika sela",
@@ -4732,7 +4732,7 @@ export const ui = {
       absentFamilies:
         "Familien: eine Familien-Konskription für dieses Jahr ist nicht unter den erfassten Quellen.",
       absentPastureShare:
-        "Weideanteil: das PZ-Endresultat schließt nicht (F-PZ-04 OPEN, Δ 43.488 QKl) — Anteile werden erst veröffentlicht, wenn die Summe geklärt ist (§14).",
+        "Weideanteil: die geschriebene p67-Summa (1152 J 495 K) liegt 3 Joch (4.800 QKl) über der Zeilensumme — F-PZ-04 bleibt OPEN (val 77 Nachlesen), Anteile bleiben in der UI unveröffentlicht (§14).",
     },
     chronicle: {
       title: "Dorfchronik",
@@ -6137,7 +6137,7 @@ export const ui = {
       absentFamilies:
         "Famiglie: una coscrizione delle famiglie per quest'anno non è tra le fonti registrate.",
       absentPastureShare:
-        "Quota pascoli: l'Endresultat PZ non si chiude (F-PZ-04 OPEN, Δ 43.488 QKl) — le quote non vengono pubblicate finché la somma non è risolta (§14).",
+        "Quota pascoli: la Summa scritta p67 (1152 J 495 K) è 3 J (4.800 QKl) sopra la somma delle righe — F-PZ-04 resta OPEN (rilettura val 77), le quote restano non pubblicate nella UI (§14).",
     },
     chronicle: {
       title: "Cronaca del villaggio",

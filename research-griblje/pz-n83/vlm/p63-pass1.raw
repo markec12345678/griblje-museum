@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Here is the complete transcription of the table from page 63 (Zusammenstellung B) of the 1829/30 Austrian cadastral elaborat for the village **Grüble**.\n\n### Table Headers\n\n| Column Group | Sub-Column |\n| :--- | :--- |\n| **Namen** | des Steuerbesitzers / der Gemeinde |\n| **Des Grundstückes** | Katastral-Parzelle Nr. |\n| | Gesetzliche Eigenschaft: domizial / rustical (Haus / Niederland) |\n| | Culturs Gattung |\n| | Flächen Inhalt (Joch / Klafter) |\n| | Classe |\n| **Nach den aufgefundnen Pachtverträgen** | Pachtschilling für die ganze Parzelle in M.M. (fl. / kr.) |\n| | Gleichzeitig übernommene Verbindlichkeit im Geldwerthe (fl. / kr.) |\n| | Summe des Pacht-Ertrages der ganzen Parzelle in M.M. (fl. / kr.) |\n| | Daher auf Ein N.O. Joch (fl. / kr.) |\n| **Anmerkungen!** | |\n\n---\n\n### Data Rows (Transcribed Digit by Digit)\n\n| Parz. | Name | Kat.-Nr. | Eig. | Culturs Gattung | Fläche Joch | Fläche Kft. | Cl. | Pacht fl. | Pacht kr. | Verb. fl. | Verb. kr. | Summe fl. | Summe kr. | auf 1 Joch fl. | auf 1 Joch kr. |\n| :---: | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n| **1** | | 115 | 1 | Acker | - | 457 | I | - | 22 | - | 23 | - | 24½ | 1 | 23½ |\n| **2** | | 292 | 1 | detto | - | 759 | I | 1 | 01 | - | 10 | 1 | 11 | 2 | 31½ |\n| **3** | | 293 | 1 | detto | - | 727 | I | 1 | 22 | - | 9 | 1 | 31 | 2 | 21½ |\n| **4** | | 786 | 1 | detto | - | 443 | I | 1 | 13 | - | 8 | 1 | 21 | 4 | 52½ |\n| **5** | | 299 | 1 | detto | - | 252 | I | 1 | 20 | - | 9 | 1 | 29 | [crossed: 6] | 58¼ |\n| | **Summe** | | | **Summe** | **1** | **1128** | **-** | **-** | **-** | **-** | **-** | **6** | **29½** | **20** | **[crossed: 11] 48¾** |\n| **6** | | 1031 | 1 | Acker | - | 68 | II | 1 | - | - | 6¼ | 1 | 6¼ | **28** | **[crossed: 46] 49** |\n| **7** | | 1037 | 1 | detto | - | 969 | II | 2 | 20 | - | 15½ | 2 | 35½ | 4 | 16½ |\n| **8** | | 1040 | 1 | detto | - | 289 | II | - | 45 | - | 5 | - | 50 | 4 | 42½ |\n| **9** | | 779 | 1 | detto | - | 400 | II | - | 30 | - | 2½ | - | 32½ | 2 | 15½ |\n| **10** | | 1205 | 1 | detto | - | 923 | II | 2 | 20 | - | 16½ | 2 | 46½ | 4 | 49½ |\n| **11** | | 702 | 1 | detto | - | 235 | II | - | 33 | - | 2½ | - | 36½ | 2 | 55 |\n| **12** | | 794 | 1 | detto | - | 275 | II | - | 20 | - | 3½ | - | 23½ | 2 | 14 |\n| | **Summe** | | | **Summe** | **2** | **52** | **-** | **-** | **-** | **-** | **-** | **9** | **21¼** | **4** | **26½** |\n| **13** | | 417 | 1 | Wiesen | - | 209 | II | 1 | 12 | - | - | 1 | 12 | 9 | 18½ |\n| **14** | | 1020 | 1 | Wiesen mit Weide | - | 594 | I* | 1 | - | - | - | 7 | - | **[crossed: 8]** | **[crossed: 19]** |\n\n---\n*Notes on specific values:*\n*   **Row 5, Column \"auf 1 Joch fl.\"**: The value `6` is crossed out.\n*   **Row 5, Column \"auf 1 Joch kr.\"**: The value appears as `58¼` (or possibly `58½`, but the fraction bar is distinct).\n*   **Summe Row 1 (after Row 5), Column \"auf 1 Joch fl.\"**: The value `11` is crossed out and replaced by `20`.\n*   **Row 6, Column \"auf 1 Joch fl.\"**: The value `28` is written in red ink.\n*   **Row 6, Column \"auf 1 Joch kr.\"**: The value `46` is crossed out; `49` is written next to it in red ink.\n*   **Row 14, Column \"auf 1 Joch\"**: Both values (`8` and `19`) are crossed out.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429586,
+  "id": "202609262132512c110030106a4865",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262132512c110030106a4865",
+  "usage": {
+    "completion_tokens": 1420,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5843,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 7263
+  }
+}

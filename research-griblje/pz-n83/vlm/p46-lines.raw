@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "| N° | Description | Area | Yield (fl/kr) |\n| :--- | :--- | :--- | :--- |\n| **Wiesen und Äcker** | | | |\n| **I. Clafse** | | | |\n| 1 | Acker zwischen mäßig besäet und mäßig, und gelben grünend Früchten, zu zwei Hayern a 3/8 zehenten gemind. | - | 14 fl 30 kr |\n| **II. Clafse** | | | |\n| 2 | Acker Abigen [?] frucht minderfrüchtig, und gelben grünen Früchten, zu Hayern | - | 8 fl 36 kr |\n| **Kleine Gärten Einige Clafse** | | | |\n| 9 | 9 große gemüse-gärten, die zum theil stüpflich vom Schmutzstiften und Lohnboden von dem Schloßweg, das zur mit poliertem gänsefuss umwandt. | Die nach 100 QKlf. angenommenen 6fl. 30kr. gemäß Zinßpunkten zirca gewöhnlich sondern abtheilung mäßig zum Lohnboden I<sup>te</sup> Clafse zugefallen | 9 |\n| **Weingärten Einige Clafse** | | | |\n| - | Acker hangt mit pflanzten Wein zu 2 Jahren im Mühlfeld I | - | Rein |\n| - | Rein | - | -12 |\n| **Huthweiden Einige Clafse** | | | |\n| - | Acker nichtfruchtbaren Aßern den 2<sup>ten</sup> Hayern Hayern rötig, abgetheiltem und wildem niederlich, können Ackergruben besseren find, und rießen zum gänzlich neuen Schlößchen zum mäßigen für solche Begründung kann für sich zur Befestigung... zum füttern (thier) den 2<sup>ten</sup> Hayern hiegen in dreyen jährl[ich]en ordnen und zehen Jahr so oft | - | 2 fl 36 kr |",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790430945,
+  "id": "2026092621552839a69f3bf2ba432c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092621552839a69f3bf2ba432c",
+  "usage": {
+    "completion_tokens": 498,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4515,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5013
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Weingärten | ROW=5 | CLASSE=C | JOCH=7 | KLAFTER=42 | BRUTO_ERTRAG_1=26 | BRUTO_ERTRAG_2=168 | ABZUG_1=27 | ABZUG_2=16 | ABZUG_3=48 | ABZUG_4=70 | NETTO_1=7 | NETTO_2=10 | NETTO_3=50 | NETTO_4=20⅞ | NETTO_5=50 | NETTO_6=20⅞\nNAME=Huthweiden | ROW=6 | CLASSE=C | JOCH=118 | KLAFTER=[crossed:702] 1 | BRUTO_ERTRAG_1=26 | BRUTO_ERTRAG_2=118 | ABZUG_1=- | ABZUG_2=15 | ABZUG_3=25 | NETTO_1=- | NETTO_2=45 | NETTO_3=88 | NETTO_4=24⅞ | NETTO_5=88 | NETTO_6=49⅞",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429770,
+  "id": "202609262136048c0c08a54149486e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262136048c0c08a54149486e",
+  "usage": {
+    "completion_tokens": 247,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2595
+  }
+}
