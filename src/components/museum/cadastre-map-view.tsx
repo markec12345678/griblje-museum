@@ -16,12 +16,22 @@ import { useLang } from "@/lib/i18n";
 import { AtlasStoryDialog, StoryButton } from "@/components/museum/atlas-story";
 import {
   bpNodeRef,
+  landUseBucketOf,
   matchesExploreQuery,
   modeAllowsTier,
+  parcelExploreCounts,
+  parcelLabel,
+  parcelMatchesQuery,
+  parcelVisible,
+  sortParcelsForBrowse,
   staticRowVisible,
   exploreTierOfStaticRow,
   exploreTierOfStatus,
+  LAND_USE_ORDER,
   type ExploreMode,
+  type ExploreParcel,
+  type LandUseBucket,
+  type LandUseFilter,
 } from "@/lib/atlas-explore";
 import cadastre from "@/data/cadastre-a01.json";
 
@@ -94,6 +104,9 @@ type KgMapData = {
   };
   layers: { map_objects: KgMapObject[]; houses: KgHouse[] };
 };
+
+/** Odgovor /api/atlas/map?layer=parcels (val 73 — register, brez geometrije §9). */
+type KgParcelPage = { ok: boolean; count: number; features: ExploreParcel[] };
 
 const data = cadastre as unknown as {
   meta: {
@@ -179,6 +192,14 @@ function InvalidateOnMount() {
   return null;
 }
 
+/** Barvni razred značke rabe (zemeljska paleta muzeja; neznanka vedno ločena). */
+function luBadgeClass(category: string | null | undefined): string {
+  const b = landUseBucketOf(category);
+  if (b === "UNKNOWN") return "bg-amber-500/10 text-amber-700";
+  if (b === "NONE") return "bg-muted text-muted-foreground";
+  return "bg-[#5d6e3f]/10 text-[#5d6e3f]";
+}
+
 export function CadastreMapView() {
   const { t, lang } = useLang();
   const k = t.kataster;
@@ -193,6 +214,25 @@ export function CadastreMapView() {
   const [exploreFilterMode, setExploreFilterMode] = React.useState<ExploreMode>("all");
   const [exploreQuery, setExploreQuery] = React.useState("");
   const exploreActive = tab === "explore";
+
+  /* --- parcelni sloj rabe (§19, val 73): lenar naložen šele ob izbiri Parcele --- */
+  const [listView, setListView] = React.useState<"entities" | "parcels">("entities");
+  const [parcels, setParcels] = React.useState<ExploreParcel[] | null>(null);
+  const [parcelState, setParcelState] = React.useState<"idle" | "loading" | "ready" | "error">("idle");
+  const [landUse, setLandUse] = React.useState<LandUseFilter>("all");
+  const parcelsRequested = React.useRef(false);
+  React.useEffect(() => {
+    if (!exploreActive || listView !== "parcels" || parcelsRequested.current) return;
+    parcelsRequested.current = true;
+    setParcelState("loading");
+    fetch("/api/atlas/map?layer=parcels")
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d: KgParcelPage) => {
+        setParcels(Array.isArray(d.features) ? d.features : []);
+        setParcelState("ready");
+      })
+      .catch(() => setParcelState("error"));
+  }, [exploreActive, listView]);
 
   /** Klik na toponim: razreši TOPONYM node prek evidence iskanja, nato zgodba. */
   const openToponymStory = React.useCallback((name: string) => {
@@ -278,7 +318,7 @@ export function CadastreMapView() {
   }, [exploreActive, kgHousesLocated, exploreFilterMode, exploreQuery]);
 
   const exploreCounts = React.useMemo(() => {
-    if (!exploreActive) return null;
+    if (!exploreActive || listView !== "entities") return null;
     const tiered = {
       DOKAZANO: 0,
       VERJETNO: 0,
@@ -296,6 +336,7 @@ export function CadastreMapView() {
     };
   }, [
     exploreActive,
+    listView,
     data.buildings,
     kgObjectsA01,
     kgHousesLocated,
@@ -303,6 +344,38 @@ export function CadastreMapView() {
     visibleKgObjects.length,
     visibleKgHouses.length,
   ]);
+
+  /* --- parcelni sloj (§19, val 73): filtri + deterministični vrstni red --- */
+  const visibleParcels = React.useMemo(() => {
+    if (!parcels) return [];
+    return sortParcelsForBrowse(
+      parcels.filter(
+        (p) =>
+          parcelVisible(p, exploreFilterMode, landUse) &&
+          parcelMatchesQuery(exploreQuery, p)
+      )
+    );
+  }, [parcels, exploreFilterMode, landUse, exploreQuery]);
+  const parcelCounts = React.useMemo(
+    () => (parcels ? parcelExploreCounts(parcels, exploreFilterMode, landUse, exploreQuery) : null),
+    [parcels, exploreFilterMode, landUse, exploreQuery]
+  );
+  const luLabel = React.useCallback(
+    (b: LandUseBucket) => {
+      switch (b) {
+        case "njiva": return s.luNjiva;
+        case "travnik": return s.luTravnik;
+        case "gozd": return s.luGozd;
+        case "vrt": return s.luVrt;
+        case "pašnik": return s.luPastnik;
+        case "drugo": return s.luDrugo;
+        case "UNKNOWN": return s.luUnknown;
+        case "NONE": return s.luNone;
+      }
+    },
+    [s]
+  );
+  const rowsAreParcels = exploreActive && listView === "parcels";
 
   const badge =
     "inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide";
@@ -361,9 +434,9 @@ export function CadastreMapView() {
         ) : null}
       </div>
 
-      <div className="grid gap-0 lg:grid-cols-[1fr_340px]">
+      <div className="grid min-w-0 gap-0 lg:grid-cols-[1fr_340px]">
         {/* ——— ZEMLJEVID ——— */}
-        <div className="relative h-[70vh] min-h-[420px] border-b border-border/70 lg:border-b-0 lg:border-r">
+        <div className="relative h-[70vh] min-h-[420px] min-w-0 border-b border-border/70 lg:border-b-0 lg:border-r">
           {tab !== "today" ? (
             <MapContainer
               key="kataster-sheet"
@@ -630,7 +703,7 @@ export function CadastreMapView() {
         </div>
 
         {/* ——— STRANSKI PANEL: register stavb ——— */}
-        <div className="flex max-h-[70vh] flex-col">
+        <div className="flex max-h-[70vh] min-w-0 flex-col">
           <div className="border-b border-border/70 p-4">
             <label className="relative block">
               <span className="sr-only">{k.search}</span>
@@ -644,9 +717,11 @@ export function CadastreMapView() {
               />
             </label>
             <p className="mt-2 text-[11px] text-muted-foreground">
-              {k.panelCounts
-                .replace("{labeled}", String(labeled.length))
-                .replace("{buildings}", String(data.buildings.length))}
+              {rowsAreParcels
+                ? null
+                : k.panelCounts
+                    .replace("{labeled}", String(labeled.length))
+                    .replace("{buildings}", String(data.buildings.length))}
             </p>
             {kgState === "ready" && kgData ? (
               <div className="mt-3 rounded-lg border border-border/70 bg-background/60 p-3">
@@ -702,7 +777,34 @@ export function CadastreMapView() {
                 <p className="text-[10px] font-semibold uppercase tracking-widest text-stone-500">
                   {s.filters}
                 </p>
-                {/* query filter (lastnik / BP / hiša) */}
+                {/* seznam: hiše & objekti | parcele (§19, val 73) */}
+                <div
+                  className="mt-2 flex rounded-lg border border-border/70 bg-background p-1"
+                  role="tablist"
+                  aria-label={s.listParcels}
+                >
+                  {(
+                    [
+                      ["entities", s.listEntities],
+                      ["parcels", s.listParcels],
+                    ] as const
+                  ).map(([id, label]) => (
+                    <button
+                      key={id}
+                      role="tab"
+                      aria-selected={listView === id}
+                      onClick={() => setListView(id)}
+                      className={`h-9 flex-1 rounded-md px-2 text-xs font-semibold transition-colors ${
+                        listView === id
+                          ? "bg-[#2f6f4f] text-white"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                {/* query filter (lastnik / BP / hiša / št. parcele / raba) */}
                 <input
                   type="search"
                   value={exploreQuery}
@@ -746,74 +848,179 @@ export function CadastreMapView() {
                       .replace("{total}", String(exploreCounts.total))}
                   </p>
                 ) : null}
-                {/* raba zemljišč — pošteno: parcelni sloj še ni na zemljevidu */}
-                <fieldset disabled className="mt-2" aria-describedby="explore-use-note">
-                  <legend className="text-[11px] font-semibold text-muted-foreground">
-                    {s.filterUse}
-                  </legend>
-                  <p id="explore-use-note" className="mt-1 text-[11px] leading-snug text-muted-foreground">
-                    {s.filterUseNote}
-                  </p>
-                </fieldset>
+                {/* parcelni sloj rabe (§19, val 73): filtri rabe + poštenost */}
+                {rowsAreParcels ? (
+                  <div className="mt-3 border-t border-[#2f6f4f]/20 pt-2">
+                    <p className="text-[11px] font-semibold text-muted-foreground">
+                      {s.filterUse}
+                    </p>
+                    {parcelState === "loading" ? (
+                      <p className="mt-1 text-[11px] text-muted-foreground" role="status">
+                        {s.parcelLoading}
+                      </p>
+                    ) : null}
+                    {parcelState === "error" ? (
+                      <p className="mt-1 text-[11px] text-muted-foreground">{s.parcelError}</p>
+                    ) : null}
+                    {parcelCounts ? (
+                      <div
+                        className="mt-1.5 flex flex-wrap gap-1.5"
+                        role="group"
+                        aria-label={s.filterUse}
+                      >
+                        <button
+                          onClick={() => setLandUse("all")}
+                          aria-pressed={landUse === "all"}
+                          className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition-colors ${
+                            landUse === "all"
+                              ? "border-[#2f6f4f] bg-[#2f6f4f] text-white"
+                              : "border-border/70 bg-background text-muted-foreground hover:text-foreground"
+                          }`}
+                        >
+                          {s.luAll} ({parcelCounts.total})
+                        </button>
+                        {LAND_USE_ORDER.map((b) => {
+                          const n = parcelCounts.buckets[b];
+                          if (n === 0) return null;
+                          return (
+                            <button
+                              key={b}
+                              onClick={() => setLandUse(b)}
+                              aria-pressed={landUse === b}
+                              className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition-colors ${
+                                landUse === b
+                                  ? "border-[#2f6f4f] bg-[#2f6f4f] text-white"
+                                  : "border-border/70 bg-background text-muted-foreground hover:text-foreground"
+                              }`}
+                            >
+                              {luLabel(b)} ({n})
+                            </button>
+                          );
+                        })}
+                      </div>
+                    ) : null}
+                    {parcelCounts ? (
+                      <p className="mt-2 text-[11px] text-muted-foreground">
+                        {s.parcelCounts
+                          .replace("{visible}", String(parcelCounts.visible))
+                          .replace("{total}", String(parcelCounts.total))}
+                      </p>
+                    ) : null}
+                    <p className="mt-2 text-[11px] leading-snug text-muted-foreground">
+                      {s.parcelGeometryNote}
+                    </p>
+                    <p className="mt-1 text-[11px] leading-snug text-muted-foreground">
+                      {s.filterUseNote}
+                    </p>
+                  </div>
+                ) : null}
                 <p className="mt-2 text-[11px] leading-snug text-muted-foreground">{s.exploreNote}</p>
               </div>
             ) : null}
           </div>
-          <ul className="min-h-0 flex-1 divide-y divide-border/50 overflow-y-auto" role="list">
-            {(exploreActive ? visibleBuildings : filtered).map((b) => (
-              <li key={`row-${b.bp}-${b.px}`} className="px-4 py-3">
-                <button
-                  className="w-full text-left"
-                  onClick={() => {
-                    setTarget(
-                      tab === "today"
-                        ? [b.lat, b.lng]
-                        : [data.overlay.px_size[1] - b.py, b.px]
-                    );
-                    if (exploreActive) setStoryRef(bpNodeRef(b.bp));
-                  }}
-                  aria-label={
-                    exploreActive
-                      ? `${s.storyOfHouse}: ${b.owner ?? `${k.bp} ${b.bp}`}`
-                      : undefined
-                  }
-                >
-                  <span className="flex items-center gap-2">
-                    <span
-                      className={`${badge} ${
-                        b.owner
-                          ? "bg-[#8b3a2e]/10 text-[#8b3a2e]"
-                          : "bg-muted text-muted-foreground"
-                      }`}
+          <ul className="min-h-0 min-w-0 flex-1 divide-y divide-border/50 overflow-x-hidden overflow-y-auto" role="list">
+            {rowsAreParcels
+              ? visibleParcels.map((p, idx) => {
+                  const use = landUseBucketOf(p.land_use_category);
+                  return (
+                    <li
+                      /* KLJUČ z indeksom: isti PS parcel_id se lahko pojavi v
+                       * več vrsticah registra (različna lastniška vezava —
+                       * PS-p005-j484: Breugl Georg h.18 / Urich Peter h.21).
+                       * node_id sam NI unikaten ključ → podvojeni ključi bi
+                       * pokvarili reconciliacijo seznama. */
+                      key={`${p.node_id}-${idx}`}
+                      className="px-4 py-3"
                     >
-                      {k.bp} {b.bp}
-                    </span>
-                    {b.house_no ? (
-                      <span className={`${badge} bg-[#3f5d3c]/10 text-[#3f5d3c]`}>
-                        {k.houseNo} {b.house_no}
+                      <button
+                        className="w-full text-left"
+                        onClick={() => setStoryRef(p.node_id)}
+                        aria-label={`${s.storyOfParcel}: ${parcelLabel(p)}`}
+                      >
+                        <span className="flex flex-wrap items-center gap-1.5">
+                          <span className={`${badge} bg-muted text-muted-foreground`}>
+                            {parcelLabel(p)}
+                          </span>
+                          <span className={`${badge} ${luBadgeClass(p.land_use_category)}`}>
+                            {luLabel(use)}
+                          </span>
+                          {p.co_referenced ? (
+                            <span className={`${badge} bg-[#8b3a2e]/10 text-[#8b3a2e]`}>
+                              {s.parcelCoRef}
+                            </span>
+                          ) : null}
+                        </span>
+                        {p.land_use_category === "UNKNOWN" && p.land_use_original ? (
+                          <span className="mt-1 block truncate text-xs text-muted-foreground">
+                            „{p.land_use_original}“
+                          </span>
+                        ) : null}
+                        {p.house_refs.length > 0 ? (
+                          <span className="mt-0.5 block truncate text-[11px] text-stone-500">
+                            {s.parcelHousesLabel}: {p.house_refs.join(" · ")}
+                          </span>
+                        ) : null}
+                      </button>
+                    </li>
+                  );
+                })
+              : (exploreActive ? visibleBuildings : filtered).map((b) => (
+                  <li key={`row-${b.bp}-${b.px}`} className="px-4 py-3">
+                    <button
+                      className="w-full text-left"
+                      onClick={() => {
+                        setTarget(
+                          tab === "today"
+                            ? [b.lat, b.lng]
+                            : [data.overlay.px_size[1] - b.py, b.px]
+                        );
+                        if (exploreActive) setStoryRef(bpNodeRef(b.bp));
+                      }}
+                      aria-label={
+                        exploreActive
+                          ? `${s.storyOfHouse}: ${b.owner ?? `${k.bp} ${b.bp}`}`
+                          : undefined
+                      }
+                    >
+                      <span className="flex items-center gap-2">
+                        <span
+                          className={`${badge} ${
+                            b.owner
+                              ? "bg-[#8b3a2e]/10 text-[#8b3a2e]"
+                              : "bg-muted text-muted-foreground"
+                          }`}
+                        >
+                          {k.bp} {b.bp}
+                        </span>
+                        {b.house_no ? (
+                          <span className={`${badge} bg-[#3f5d3c]/10 text-[#3f5d3c]`}>
+                            {k.houseNo} {b.house_no}
+                          </span>
+                        ) : null}
+                        {b.owner_status === "VERIFIED-2x" ? (
+                          <span className={`${badge} bg-[#3f5d3c]/10 text-[#3f5d3c]`}>2×</span>
+                        ) : b.owner ? (
+                          <span className={`${badge} bg-amber-500/10 text-amber-700`}>
+                            {k.review}
+                          </span>
+                        ) : null}
                       </span>
-                    ) : null}
-                    {b.owner_status === "VERIFIED-2x" ? (
-                      <span className={`${badge} bg-[#3f5d3c]/10 text-[#3f5d3c]`}>2×</span>
-                    ) : b.owner ? (
-                      <span className={`${badge} bg-amber-500/10 text-amber-700`}>
-                        {k.review}
+                      <span className="mt-1 block truncate text-sm font-medium">
+                        {b.owner ?? k.noOwner}
                       </span>
-                    ) : null}
-                  </span>
-                  <span className="mt-1 block truncate text-sm font-medium">
-                    {b.owner ?? k.noOwner}
-                  </span>
-                  {b.link_source ? (
-                    <span className="mt-0.5 block truncate text-[11px] text-stone-500">
-                      {b.link_source}
-                    </span>
-                  ) : null}
-                </button>
+                      {b.link_source ? (
+                        <span className="mt-0.5 block truncate text-[11px] text-stone-500">
+                          {b.link_source}
+                        </span>
+                      ) : null}
+                    </button>
+                  </li>
+                ))}
+            {(rowsAreParcels ? visibleParcels : exploreActive ? visibleBuildings : filtered)
+              .length === 0 && (
+              <li className="px-4 py-6 text-sm text-muted-foreground">
+                {parcelState === "loading" && rowsAreParcels ? s.parcelLoading : k.noResults}
               </li>
-            ))}
-            {(exploreActive ? visibleBuildings : filtered).length === 0 && (
-              <li className="px-4 py-6 text-sm text-muted-foreground">{k.noResults}</li>
             )}
           </ul>
         </div>

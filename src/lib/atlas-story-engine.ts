@@ -272,6 +272,16 @@ function nodeLabel(id: string): string {
   if (n.label) return n.label;
   if (n.name_original) return n.name_original;
   if (n.house_no_1825 !== undefined) return `Hiša št. ${n.house_no_1825}`;
+  /* Parcela (val 73): berljiva oznaka — PUA "parcela II/201", PS "parcela PS 913
+   * (str. 9)"; brez številke → node_id (varovalka). */
+  if (n.node_type === "PARCEL") {
+    const num = typeof n.parcel_number === "number" ? n.parcel_number : null;
+    if (n.origin === "PS" && num !== null)
+      return `parcela PS ${num}${typeof n.page === "number" ? ` (str. ${n.page})` : ""}`;
+    if (n.section_original && num !== null) return `parcela ${n.section_original}/${num}`;
+    if (num !== null) return `parcela ${num}`;
+    return n.node_id;
+  }
   return n.node_id;
 }
 
@@ -745,12 +755,20 @@ function genericSections(nodeId: string, node: (typeof kg.nodes)[number]): Story
   const relacije: StoryItem[] = [];
   for (const [type, arr] of [...byType.entries()].sort()) {
     const label = relationLabels.get(type) ?? type;
+    /* Smera branja (§17): pripovedna oznaka opisuje relacijo IZ stališča
+     * izvorne entitete. Če je fokus na ciljni entiteti (e.to_entity ===
+     * nodeId), je oznaka zavajajoča (parcela »ima parcelo«: hiša) — zato
+     * ekspliciten obrat za znane relacije; neznane ostanejo tehnične. */
+    const REVERSE_LABELS: Record<string, string> = {
+      HAS_PARCEL: "pripada hiši",
+    };
     const shown = arr.slice(0, MAX_LIST_ITEMS);
     for (const e of shown) {
       const other = e.from_entity === nodeId ? e.to_entity : e.from_entity;
+      const readLabel = e.to_entity === nodeId ? (REVERSE_LABELS[type] ?? label) : label;
       relacije.push(
         item(
-          `${label}: ${nodeLabel(other)}${e.date_period ? ` (${e.date_period})` : ""}`,
+          `${readLabel}: ${nodeLabel(other)}${e.date_period ? ` (${e.date_period})` : ""}`,
           e.evidence_status,
           e.source_ids ?? [],
           e.claim_ids ?? [],
