@@ -874,6 +874,12 @@ export function generateVillageStory(): VillageStory {
         ["C-00622"],
         ["TP-001", "TP-003"]
       ),
+      item(
+        `Prebivalstvo 1830 (PZ §3, p2 — Conscriptioins-Revisions-Resultate): 441 duš = 222 moških + 219 žensk (aritmetična vrata EXACT), v 70 hišah, 102 družin (Hofesgesessene) — prvi časovni korak za prihodnjo §20 časovno plast (val 75)`,
+        "TRANSCRIBED",
+        ["SRC-PZ"],
+        []
+      ),
     ],
   });
 
@@ -968,6 +974,12 @@ export function generateVillageStory(): VillageStory {
         ["SRC-PV"],
         []
       ),
+      item(
+        `PZ [373419] prepisan delno (val 75): Endresultat — 'Weiden mit Holznutzen' 558 J 846 K ≈ 3,224 km² kot lastna kategorija; ločenih 'Waldungen' v Endresultatu NI → napetost PV Wälder 0 vs PS 13 Wald parcel dobila razlago kategorij (gozdno-pašniška/silvopastoralna raba, F-PV-02); per-parcelni PS izrazi ostajajo nespremenjeni (§5)`,
+        "TRANSCRIBED",
+        ["SRC-PZ", "SRC-PV"],
+        []
+      ),
     ],
   });
 
@@ -1031,7 +1043,7 @@ export function generateVillageStory(): VillageStory {
     title: "10. Neznanke in raziskovalne vrzeli (§13)",
     items: [
       item(
-        `${kg.research_gaps.length} raziskovalnih vrzel (${gapsOpen} OPEN, ${kg.research_gaps.length - gapsOpen} razrešenih) — naslednji viri: PS p56–143, PT p7 re-read @300dpi, PR re-read`,
+        `${kg.research_gaps.length} raziskovalnih vrzel (${gapsOpen} OPEN, ${kg.research_gaps.length - gapsOpen} razrešenih) — naslednji viri: PS p56–143 vrstični prepis (F-PV-03), PZ celotni vrstični prepis (F-PZ-04 Summa), PT p7 re-read @300dpi, PR re-read`,
         "UNKNOWN",
         [],
         []

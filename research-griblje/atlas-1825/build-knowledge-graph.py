@@ -45,6 +45,7 @@ SRC_DOCS = [
      "coverage": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418"},
     {"source_id": "SRC-PZ", "label": "PZ — Konskripcija 1830", "uodid": 373419, "docid": 41784, "pages": 71,
+     "coverage": "TRANSCRIBED_PARTIAL (val 75): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + Endresultat p67 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K rdeči popravek); celotni vrstični prepis NE",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"},
     # KG-F05 (val 66): A01–A05 = ista označena družina listov (napis "Siche die
     # Reambullirungs Beimappe" na vseh 5, R-A01-title-full + T-pasi); A02–A05 nosijo
@@ -711,9 +712,9 @@ def main():
     }
 
     out = {
-        "val": 74,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat",
-        "title": "knowledge-graph-1825 v1.6",
+        "val": 75,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija (prebivalstvo 1830, §20 prvi korak)",
+        "title": "knowledge-graph-1825 v1.7",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -769,6 +770,13 @@ def main():
                 "statement": "GEOREF PASS v2 (#42 §10): skala val 52–71 ('320 Klafter = 277 px → 2,19 m/px') je mešala ločljivosti raster-ov — 277 px je merjeno na polni ločljivosti VAČ IIIF, delovni raster je ~3,3× manjši. Prava skala ≈ 0,7307 m/px (reka Kolpa: 351 točk, trim-RMS 38 m; validacija: v65 stavbe mediana 17 m, prior 20 m do sodobnih stavb). v1.5: MO-A01 lat/lng + georef_status preko v2 similaritete (skala + rotacija 0,88° + prevod); overlay prek robov rastra. Claims/edges/story atomi NESPREMENJENI (nič ID-jev se ne premakne); story_id se spremeni po §22 pogodbi (kg_sha256 spremenjen = podatek spremenjen = zgodba označena kot spremenjena).",
                 "status": "RESOLVED-V72 (odprta: F-GEO-03 hišne številke, F-GEO-04 listno merilo @300 dpi)",
                 "provenance": "research-griblje/atlas-1825/georef-1825.json + build-georef-1825.py (val 72); raw-web-val72-2026-10/ (Overpass 2026-09-26)",
+            },
+            {
+                "finding_id": "KG-F09",
+                "val": 75,
+                "statement": "PZ [373419] Konskripcija: TRANSCRIBED_PARTIAL — prebivalstvo 1830 (441 duš = 222 M + 219 Ž, aritmetična vrata EXACT; 70 hiš; 102 družin) = prvi podatkovni korak #42 §20; skupna površina rdeči popravek 1220 J 1493 K (PV 1221 J 1573 K, Δ 0,086 % = prečna validacija); Endresultat: 'Weiden mit Holznutzen' 558 J 846 K → F-PV-02 (gozd) razrešena na ravni kategorij (silvopastoralna raba; per-parcelni PS izrazi nespremenjeni §5). F-PZ-04 OPEN: Summa p67 (1132 J 495 K) ≠ vsota vrstic 1–8 (1159 J 783 K, Δ 43.488 QKl) — nič se ne vsiljuje. Nodes/edges/claims/ID-ji NESPREMENJENI; kg_sha256 se spremeni (§22 pogodba: podatek spremenjen = story_id spremenjen).",
+                "status": "RESOLVED-V75 (odprta: F-PZ-04 Summa; celotni PZ prepis; PS p56–143 za F-PV-03)",
+                "provenance": "research-griblje/atlas-1825/pz-konskripcija-1830.json + build-pz-1825.py (val 75); pz-n83/ (PDF + 71 nativnih skenov + dokazni izrezki)",
             },
         ],
         "provenance": {

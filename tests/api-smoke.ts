@@ -816,6 +816,28 @@ ok(
   `status=${cov74.status}`
 );
 
+/* --- 5q. PZ [373419] — Konskripcija 1830 (val 75, #42 §4/§20 prvi korak) --- */
+const storyVillage75 = await getJson("/api/atlas/story?scope=village");
+const s75txt = JSON.stringify(storyVillage75.body?.sections ?? []);
+ok(
+  "atlas story vasi: PZ prebivalstvo 1830 (441 = 222 M + 219 Ž) + Weiden mit Holznutzen (val 75)",
+  storyVillage75.status === 200 &&
+    s75txt.includes("441 duš = 222 moških + 219 žensk") &&
+    s75txt.includes("Weiden mit Holznutzen") &&
+    s75txt.includes("F-PV-02"),
+  `status=${storyVillage75.status}`
+);
+const cov75 = await getJson("/api/atlas/coverage?category=sources");
+ok(
+  "atlas coverage: viri 13 — SRC-PZ TRANSCRIBED_PARTIAL (val 75), 10 VERIFIED / 3 PARTIAL",
+  cov75.status === 200 &&
+    cov75.body?.category?.total === 13 &&
+    cov75.body?.category?.VERIFIED === 10 &&
+    cov75.body?.category?.PARTIAL === 3 &&
+    String(JSON.stringify(cov75.body)).includes("TRANSCRIBED_PARTIAL"),
+  `status=${cov75.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
