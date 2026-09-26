@@ -1,12 +1,12 @@
 {
- "val": 70,
+ "val": 72,
  "pass": "PASS 8",
  "issue": 42,
  "title": "Katastrski listi pokritost — A01–A05 (izpeljan iz inventarjev + KG)",
  "derived_from": [
   "a01-building-inventory-1825.json",
   "pass4b/a02-a05-building-inventory-1825.json",
-  "KG v1.4 coverage"
+  "KG v1.5 coverage"
  ],
  "deterministic": true,
  "sheets": {
@@ -15,7 +15,7 @@
    "role": "detaljni list vasi (~2.4× večje merilo)",
    "objects": 24,
    "prior_only_bp": 43,
-   "georef": "PROVIZORIČNO ±200–500 m (sidro + m/px)",
+   "georef": "GEOREF v2 — similariteta po reki Kolpi, ±38 m (val 72)",
    "coverage_matrix": {
     "objects_v65": 24,
     "objects_with_bp": 18,

@@ -40,7 +40,7 @@ describe("val65 — a01-building-inventory-1825 (PASS 4, §7)", () => {
       expect(o.px[1]).toBeLessThanOrEqual(RASTER_H);
       expect(Array.isArray(o.source_crops)).toBe(true);
       expect(o.source_crops.length).toBeGreaterThan(0);
-      expect(o.georef_status).toContain("PROVIZORIČNO");
+      expect(o.georef_status).toContain("GEOREF v2"); // val 72: reka Kolpa ±38 m
       expect(typeof o.lat).toBe("number");
       expect(typeof o.lng).toBe("number");
       expect(o.glyph_tier).not.toBe("UNKNOWN");
@@ -179,7 +179,7 @@ describe("val65 — KG v1.2 MAP_OBJECT integracija", () => {
     expect(fids).toContain("KG-F03");
     expect(fids).toContain("KG-F04");
     expect(kg.invariant_violations).toEqual([]);
-    expect(kg.val).toBe(68); // KG v1.4 (val 68: +C-00622, KG-F07)
+    expect(kg.val).toBe(72); // KG v1.5 (val 72: GEOREF v2 MO koordinate, KG-F08; +C-00622/KG-F07 nespremenjena)
     const moCat = kg.coverage.categories.find(
       (c: { category: string }) => c.category === "map_objects_a01",
     );

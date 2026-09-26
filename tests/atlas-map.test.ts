@@ -39,9 +39,9 @@ describe("atlas-map: listi (§11 coverage matrix)", () => {
     expect(by["A04"]).toBe(0);
   });
 
-  test("georef: A01 PROVIZORIČNO, A02–A05 UNKNOWN (KG-F05 — brez sidra)", () => {
+  test("georef: A01 GEOREF v2 (val 72 — reka Kolpa), A02–A05 UNKNOWN (KG-F05 — brez sidra)", () => {
     const sheets = mapSheets();
-    expect(sheets[0].georef_status).toContain("PROVIZORIČNO");
+    expect(sheets[0].georef_status).toContain("GEOREF v2");
     for (const s of sheets.slice(1)) {
       expect(s.georef_status).toContain("UNKNOWN");
     }
@@ -57,12 +57,12 @@ describe("atlas-map: MAP_OBJECT sloj", () => {
     expect(all.filter((m) => m.sheet === "A05").length).toBe(2);
   });
 
-  test("A01 objekti imajo px + lat/lng (PROVIZORIČNO); A02–A05 imajo px brez lat/lng", () => {
+  test("A01 objekti imajo px + lat/lng (GEOREF v2); A02–A05 imajo px brez lat/lng", () => {
     for (const m of mapObjectFeatures("A01")) {
       expect(m.px).not.toBeNull();
       expect(m.lat).not.toBeNull();
       expect(m.lng).not.toBeNull();
-      expect(m.georef_status).toContain("PROVIZORIČNO");
+      expect(m.georef_status).toContain("GEOREF v2");
     }
     for (const sheet of ["A02", "A05"]) {
       for (const m of mapObjectFeatures(sheet)) {
@@ -97,7 +97,7 @@ describe("atlas-map: MAP_OBJECT sloj", () => {
 });
 
 describe("atlas-map: HOUSE sloj (reševanje položaja prek BP)", () => {
-  test("hiša 40: locirana prek BP 94 → MO:MO-A01-002 (veriga val 64/65)", () => {
+  test("hiša 40: locirana prek BP 94 → MO:MO-A01-002 (veriga val 64/65, GEOREF v2)", () => {
     const h40 = houseFeatures().find((h) => h.node_id === "HOUSE:H-040");
     expect(h40).toBeDefined();
     expect(h40!.house_no_1825).toBe("40");
@@ -105,7 +105,7 @@ describe("atlas-map: HOUSE sloj (reševanje položaja prek BP)", () => {
     expect(h40!.position).not.toBeNull();
     expect(h40!.position!.via_bp).toBe(94);
     expect(h40!.position!.map_object).toBe("MO:MO-A01-002");
-    expect(h40!.position!.georef_status).toContain("PROVIZORIČNO");
+    expect(h40!.position!.georef_status).toContain("GEOREF v2");
     const ref94 = h40!.bp_refs.find((r) => r.bp === 94);
     expect(ref94!.final_status).toBe("CONFIRMED");
   });
@@ -171,8 +171,8 @@ describe("atlas-map: skupni mapData()", () => {
     expect(d.counts.houses_total).toBe(d.layers.houses.length);
     expect(d.counts.houses_located + d.counts.houses_not_located).toBe(d.counts.houses_total);
     expect(d.counts.toponyms).toBe(37);
-    expect(d.disclaimer).toContain("PROVIZORIČNA");
-    expect(d.disclaimer).toContain("NI zgodovinski dokaz");
+    expect(d.disclaimer).toContain("GEOREF v2");
+    expect(d.disclaimer).toContain("ni zgodovinski dokaz");
   });
 
   test("parcele nimajo geometrije (§9): v grafu NE obstaja parcel poligon", () => {

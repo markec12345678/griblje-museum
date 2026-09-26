@@ -4,12 +4,12 @@
  "title": "ATLAS 1825 — Story Graph v1 (pripovedni graf entitet in relacij)",
  "provenance": {
   "built_from": "knowledge-graph-1825.json",
-  "kg_sha256": "d2416428a5d7977cc32b37e669fa7f1a6a14671cd54c0e24e2bab22f595e6e02",
-  "kg_val": 68,
+  "kg_sha256": "cbf32c2ede0f06918f604eeda14c2762439ca02cb4575a5da619aab838a89da5",
+  "kg_val": 72,
   "deterministic": true,
   "generator": "atlas-1825/build-story-graph.py v1 (val 68)",
   "runtime_copy": "src/data/story-graph-1825.json (piše TA skript — prepovedano ročno urejanje, ena izhodna resnica)",
-  "regenerable": "python3 research-griblje/atlas-1825/build-story-graph.py ob KG 68 hash-u d2416428a5d7",
+  "regenerable": "python3 research-griblje/atlas-1825/build-story-graph.py ob KG 72 hash-u cbf32c2ede0f",
   "no_new_claims": "story graf NE uvaja novih trditev — projekcija KG (§42 §25: najprej podatki, šele nato zgodbe)"
  },
  "invariants_enforced": [
@@ -48434,7 +48434,7 @@
    "sheet": "A01",
    "bp_glyph": "24",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48450,7 +48450,7 @@
    "sheet": "A01",
    "bp_glyph": "94",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48466,7 +48466,7 @@
    "sheet": "A01",
    "bp_glyph": "91",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48482,7 +48482,7 @@
    "sheet": "A01",
    "bp_glyph": "98",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48498,7 +48498,7 @@
    "sheet": "A01",
    "bp_glyph": "89",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48514,7 +48514,7 @@
    "sheet": "A01",
    "bp_glyph": "86",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48530,7 +48530,7 @@
    "sheet": "A01",
    "bp_glyph": "82",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48546,7 +48546,7 @@
    "sheet": "A01",
    "bp_glyph": "71",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48562,7 +48562,7 @@
    "sheet": "A01",
    "bp_glyph": "56",
    "glyph_tier": "CLEAR",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48578,7 +48578,7 @@
    "sheet": "A01",
    "bp_glyph": "93",
    "glyph_tier": "PROBABLE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48594,7 +48594,7 @@
    "sheet": "A01",
    "bp_glyph": "100",
    "glyph_tier": "PROBABLE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48610,7 +48610,7 @@
    "sheet": "A01",
    "bp_glyph": "79",
    "glyph_tier": "PROBABLE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48626,7 +48626,7 @@
    "sheet": "A01",
    "bp_glyph": "87",
    "glyph_tier": "CANDIDATE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48642,7 +48642,7 @@
    "sheet": "A01",
    "bp_glyph": "88",
    "glyph_tier": "CANDIDATE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48658,7 +48658,7 @@
    "sheet": "A01",
    "bp_glyph": null,
    "glyph_tier": "UNRESOLVED",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 1
   },
   {
@@ -48674,7 +48674,7 @@
    "sheet": "A01",
    "bp_glyph": "42",
    "glyph_tier": "CANDIDATE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48690,7 +48690,7 @@
    "sheet": "A01",
    "bp_glyph": "42",
    "glyph_tier": "CANDIDATE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48706,7 +48706,7 @@
    "sheet": "A01",
    "bp_glyph": "52",
    "glyph_tier": "PROBABLE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48722,7 +48722,7 @@
    "sheet": "A01",
    "bp_glyph": "55",
    "glyph_tier": "PROBABLE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 2
   },
   {
@@ -48738,7 +48738,7 @@
    "sheet": "A01",
    "bp_glyph": null,
    "glyph_tier": "UNREADABLE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 1
   },
   {
@@ -48754,7 +48754,7 @@
    "sheet": "A01",
    "bp_glyph": null,
    "glyph_tier": "UNRESOLVED",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 1
   },
   {
@@ -48770,7 +48770,7 @@
    "sheet": "A01",
    "bp_glyph": null,
    "glyph_tier": "CANDIDATE",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 1
   },
   {
@@ -48786,7 +48786,7 @@
    "sheet": "A01",
    "bp_glyph": null,
    "glyph_tier": "UNIDENTIFIED",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 1
   },
   {
@@ -48802,7 +48802,7 @@
    "sheet": "A01",
    "bp_glyph": null,
    "glyph_tier": "UNIDENTIFIED",
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "degree": 1
   },
   {
@@ -103378,7 +103378,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-25T20:32:14Z",
+   "generated_at": "2026-09-26T07:30:00Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103400,7 +103400,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-09-25T20:32:14Z",
+   "generated_at": "2026-09-26T07:30:00Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103427,7 +103427,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-09-25T20:32:14Z",
+   "generated_at": "2026-09-26T07:30:00Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103454,7 +103454,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-25T20:32:14Z",
+   "generated_at": "2026-09-26T07:30:00Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }
