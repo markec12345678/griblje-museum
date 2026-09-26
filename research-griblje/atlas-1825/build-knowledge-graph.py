@@ -42,6 +42,7 @@ SRC_DOCS = [
     {"source_id": "SRC-PG", "label": "PG — Übersichtsskizze k.o. N83", "uodid": 373413, "docid": 41778, "pages": 1,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373413"},
     {"source_id": "SRC-PV", "label": "PV — Ausweis über die Benützungsart des Bodens", "uodid": 373418, "docid": 41783, "pages": 1,
+     "coverage": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418"},
     {"source_id": "SRC-PZ", "label": "PZ — Konskripcija 1830", "uodid": 373419, "docid": 41784, "pages": 71,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"},
@@ -710,9 +711,9 @@ def main():
     }
 
     out = {
-        "val": 72,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2",
-        "title": "knowledge-graph-1825 v1.5",
+        "val": 74,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat",
+        "title": "knowledge-graph-1825 v1.6",
         "findings": [
             {
                 "finding_id": "KG-F01",

@@ -8,7 +8,7 @@
  *   2. Transformacijska matematika: [E,N] = s·R(θ)·[x,−y]+[tx,ty] — povratna
  *      preverba na sidru, rotacija/skala rekonstruirana iz dveh točk.
  *   3. Konsistentnost podatkov: vse 56 stavb + 7 toponimov v cadastre-a01.json
- *      ima lat/lng znotraj overlay ; KG v1.5 MO-A01 koordinate = v2 (brez starih
+ *      ima lat/lng znotraj overlay ; KG v1.6 MO-A01 koordinate = v2 (brez starih
  *      2,19 m/px raztegov); a01-inventory georef blok v2.
  *   4. Zgodovinska-vs-sodobna označba (§10): disclaimer v map lib omenja reko,
  *      ±38 m in "ni zgodovinski dokaz"; i18n provisionalNote omenja ±38 m (vseh 5).
@@ -220,7 +220,7 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
     }
   });
 
-  test("KG v1.5: MO-A01 koordinate = v2, MO-A02/A05 brez koordinat (KG-F05)", () => {
+  test("KG v1.6: MO-A01 koordinate = v2, MO-A02/A05 brez koordinat (KG-F05)", () => {
     const kg = JSON.parse(
       readFileSync(join(REPO, "src", "data", "knowledge-graph-1825.json"), "utf-8")
     ) as {
@@ -229,8 +229,8 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       findings: { finding_id: string; val: number; status: string }[];
       nodes: { node_id: string; node_type: string; lat?: number; lng?: number; georef_status?: string }[];
     };
-    expect(kg.title).toBe("knowledge-graph-1825 v1.5");
-    expect(kg.val).toBe(72);
+    expect(kg.title).toBe("knowledge-graph-1825 v1.6");
+    expect(kg.val).toBe(74);
     expect(kg.findings.at(-1)!.finding_id).toBe("KG-F08");
     expect(kg.findings.at(-1)!.status).toContain("RESOLVED-V72");
     const moA01 = kg.nodes.filter((n) => n.node_id.startsWith("MO:MO-A01-"));
@@ -271,7 +271,7 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       val: number;
       quality_gate: { category_id: string; VERIFIED: number; PARTIAL: number; UNKNOWN: number; native: Record<string, unknown> }[];
     };
-    expect(rep.val).toBe(72);
+    expect(rep.val).toBe(74);
     const geo = rep.quality_gate.find((c) => c.category_id === "georeferencing")!;
     expect(geo.VERIFIED).toBe(1);
     expect(geo.PARTIAL).toBe(0);

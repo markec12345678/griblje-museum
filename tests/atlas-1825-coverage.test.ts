@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v1.5 (cbf32c2ede0f, val 72 — GEOREF v2) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("cbf32c2ede0f")).toBe(true);
+  test("provenanca kaže na KG v1.6 (val 74 — PV agregat prepisan) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("809ef581c7cf4cf3")).toBe(true);
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -216,11 +216,11 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(c.PARTIAL).toBe(26);
   });
 
-  test("viri: 13 SOURCE nodes (9 VERIFIED, 4 PARTIAL — PR/PG/PV/PZ-k.o. brez prepisa)", () => {
+  test("viri: 13 SOURCE nodes (10 VERIFIED, 3 PARTIAL — PR/PG/PZ brez prepisa; PV prepisan val 74)", () => {
     const c = byId("sources");
     expect(c.total).toBe(13);
-    expect(c.VERIFIED).toBe(9);
-    expect(c.PARTIAL).toBe(4);
+    expect(c.VERIFIED).toBe(10);
+    expect(c.PARTIAL).toBe(3);
   });
 
   test("konflikti: 113 (108 OPEN vidnih, 1 RESOLVED)", () => {
@@ -283,7 +283,8 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       expect(existsSync(p)).toBe(true);
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
-      expect(d.val).toBe(72);
+      // pv-land-use-1825.json (val 74) + drugi izpeljani artefakti nosijo svoj val
+      expect([72, 74]).toContain(d.val);
     }
   });
 

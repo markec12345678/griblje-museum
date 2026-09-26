@@ -795,6 +795,27 @@ ok(
   `status=${storyParc73.status} story=${storyParc73.body?.contract?.story_id}`
 );
 
+/* --- 5p. PV [373418] — izkaz rabe zemljišč (val 74, #42 §4/§14) ------------- */
+const storyVillage74 = await getJson("/api/atlas/story?scope=village");
+ok(
+  "atlas story vasi: PV prepisan (val 74) — agregat 1221 J 1573 K v besedilu, NI več 'čaka na prepis'",
+  storyVillage74.status === 200 &&
+    JSON.stringify(storyVillage74.body?.sections ?? []).includes("1221 J 1573 K") &&
+    JSON.stringify(storyVillage74.body?.sections ?? []).includes("val 74") &&
+    !JSON.stringify(storyVillage74.body?.sections ?? []).includes("čaka na prepis"),
+  `status=${storyVillage74.status}`
+);
+const cov74 = await getJson("/api/atlas/coverage?category=sources");
+ok(
+  "atlas coverage: viri 10 VERIFIED / 3 PARTIAL — SRC-PV VERIFIED (prepisan val 74)",
+  cov74.status === 200 &&
+    cov74.body?.category?.total === 13 &&
+    cov74.body?.category?.VERIFIED === 10 &&
+    cov74.body?.category?.PARTIAL === 3 &&
+    String(JSON.stringify(cov74.body)).includes("SRC-PV"),
+  `status=${cov74.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
