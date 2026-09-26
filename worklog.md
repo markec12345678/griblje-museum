@@ -3660,3 +3660,24 @@ Stage Summary:
 - GitHub main @ efa58ac = val 75 · Render ŽIV z val 75 · Vercel produkcija rate-limited (24 h; previewi zeleni, koda potrjena — sinhronizacija ob kvoti)
 - 466 testov + 97/97 dimnih; KG v1.7 (3.309/3.569/622, SRC-PZ TRANSCRIBED_PARTIAL, KG-F09, kg_sha256 b150db19…); viri 10/13 VERIFIED (nespremenjeno)
 - Naslednje: 1) §20 TIME SLIDER arhitektura (1825 ref + 1830 prvi korak; AWAITING_SOURCE za ostale); 2) PZ celotni vrstični prepis + Summa (F-PZ-04); 3) PS p56–143 (F-PV-03) ob kvoti; 4) PT p7 @300dpi; 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 36
+Agent: Z.ai Code (main orchestrator)
+Task: Val 76 — ISSUE #42 §20: TIME SLIDER — podatkovni model časovnih točk + API + UI (user: "odlicno nadaljuj")
+
+Work Log:
+- Kontinuiteta: val 75 mergan (main @ efa58ac, PR #63); naslednje po worklogu = §20 TIME SLIDER arhitektura (1825 ref + 1830 prvi korak; AWAITING_SOURCE za ostale); peskovnik že imel dev :3000 (museum, val 75 živ) — PG down, ne treba (atlas API-ji datotečni)
+- Podatkovni model: build-timeline-1825-1830.py (determinističen, fail-fast, idempotenten) → timeline-1825-1830.json (arhiv) + bajtno identična runtime kopija src/data/ — 8 točk: 1825 referenčna (kataster/PV: površina 1221 J 1573 K, pašniki 52,06 %, 2035 PUA + 432 PS parcel, 326 z rabo; prebivalstvo/hiše/družine IZRECNO absent — kataster ne popisuje ljudi, 167 PS entitet NI konskripcija hiš) + 1830 prvi dokumentiran korak (PZ: 441 duš = 222 M + 219 Ž vrata I1, 70 hiš, 102 družin, živina z 2 REVIEW, površina 1220 J 1493 K Δ 0,086 % vrata I2, vinogradi 7 J 42 K; pašniški delež absent — F-PZ-04 OPEN nič vsiljeno) + 6 pričakovanih popisnih letnic 1857–1910 izrecno AWAITING_SOURCE (0 metrik, 0 virov, expected_basis)
+- Pogodba §20: točka brez vira = AWAITING_SOURCE brez metrik · metriki se NIKOLI ne interpolirajo · manjkajoča metrika = izrecen absent_metrics blok · REVIEW ostaja viden · vsak source_id = KG SOURCE vozlišče; invarianti I1–I6 (I6 = KG zatiči PUA 2035/PS 432/raba 326+106); KG NESPREMENJEN (b150db19…) — val 76 je nov pogled na iste dokaze
+- API: GET /api/atlas/timeline (pregled / ?year= z 400 neštevilčno + 404 neznana / ?axis= samo os) — vzorec coverage poti (no-store, CORS, correlation id)
+- UI: 4. zavihek »ČAS 1825→« (AtlasTimelinePanel): os s proporcionalnimi pikami (dokumentirane polne z oznako pod, pričakovane črtkane nad), prejšnja/naslednja navigacija, metrične kartice (i18n oznake + display iz builderja + dokazi ↗ SRC-* + REVIEW značke + opombe), absent blok »V točki NI zabeleženo«, awaiting kartica, števec; stranski register v tem zavihku skrit; i18n +42 ključev × 5 (sl/en/hr/de/it)
+- F-TL-01 (ugojen v e2e, popravljen): 4. zavihek preširil zavihno vrstico na 390 px (desni rob aktivnega 399 px = 9 px preliva) → flex-wrap + w-full sm:w-auto na tablist; preliv 0/0 re-verificiran
+- QA: tests/atlas-timeline.test.ts 22 testov/194 expect (I1/I2 neodvisno iz surovih PZ/PV, živina surovi ključi 'Schafe gesamt'/'Lämmer[?]', absent bloka, vinogradi PV 11865 vs PZ 11242 QKlft s 1 J = 1600 QKlft potrjenim, bajtna identičnost, kg_sha256 re-hash, axisPosition meje/degenerirana os) → **488/488**; api-smoke +4 → **101/101** (pregled/1830/AWAITING 1857/400+404+axis); tsc čist; lint čist; verify-i18n **1074 × 5** zeleno
+- e2e (agent-browser): zavihek ČAS ✓ (1825 z odsotnim prebivalstvom ✓, 1830 = 441 duš/70 hiš/102 družin/SRC-PZ/1220 J 1493 K/REVIEW ✓, 1857 AWAITING ✓, navigacija ✓); regresija EXPLORE (filtri/parcele) + List A01 (106 markerjev) ✓; mobilno 390 px brez preliva ✓; lepljiva noga na dnu dokumenta ✓; konzola 0 napak; posnetek val76-timeline-1830-desktop.png
+- Dokumentacija: research-griblje/89-val76-time-slider.md; README 129. sklop; 00-KAZALO vnos 89; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825 §20 TIME SLIDER: arhitektura časovnih točk ŽIVA (1825 lastninska resnica + 1830 prebivalstveni korak + 6 izrecnih AWAITING_SOURCE); pogodba brez interpolacij deluje v API-ju in UI-ju
+- 488 testov + 101/101 dimnih; KG v1.7 nespremenjen (3.309/3.569/622, kg_sha256 b150db19…); viri 10/13 VERIFIED (nespremenjeno); +0 virov/+0 trditve/+0 KG
+- Naslednje: 1) PZ celotni vrstični prepis + Summa kontrola (F-PZ-04 → polni deleži 1830); 2) PS p56–143 vrstični prepis (F-PV-03 vinogradi) ob VAČ kvoti; 3) PT p7 @300dpi (F-GEO-03); 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli; 5) prva AWAITING točka se izpolni šele s prepisanim virom (pogodba stoji)
