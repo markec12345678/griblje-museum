@@ -45,7 +45,7 @@ SRC_DOCS = [
      "coverage": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418"},
     {"source_id": "SRC-PZ", "label": "PZ — Konskripcija 1830", "uodid": 373419, "docid": 41784, "pages": 71,
-     "coverage": "TRANSCRIBED_PARTIAL (val 77 PASS 2): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + odločilni re-read Endresultata p67 z vrati I4–I6 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K; deleži 1830 izpeljani); p43–47 vrstični prepis ZAVRJEN pošteno (F-PZ-12) — čaka @300 dpi",
+     "coverage": "TRANSCRIBED_PARTIAL (val 78 PASS 3): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z vrati I4–I6 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K; deleži 1830 izpeljani) + Rektifikacijski protokol p35–40: 7 per-parcelnih merilnih vnosov (3 TRANSCRIBED + 4 REVIEW; F-PZ-14 negativni rezultat kontrole F-PZ-04); p43–47 vrstični prepis ZAVRJEN pošteno (F-PZ-12) — čaka @300 dpi",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"},
     # KG-F05 (val 66): A01–A05 = ista označena družina listov (napis "Siche die
     # Reambullirungs Beimappe" na vseh 5, R-A01-title-full + T-pasi); A02–A05 nosijo
@@ -712,9 +712,9 @@ def main():
     }
 
     out = {
-        "val": 77,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija + PZ PASS 2 (re-read p67/§8, vrata I4–I6)",
-        "title": "knowledge-graph-1825 v1.8",
+        "val": 78,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija + PZ PASS 2 (re-read p67/§8, vrata I4–I6) + PZ PASS 3 (Rektifikacija p35–40, F-PZ-14)",
+        "title": "knowledge-graph-1825 v1.9",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -777,6 +777,13 @@ def main():
                 "statement": "PZ [373419] Konskripcija PASS 2 (val 77): odločilni re-read Endresultata p67 + §8 (p6) z izrezki celic in aritmetičnimi vrati I4–I6 popravlja val-75 branja — Summa 1152 J 495 K (prej 1132), GG 405 K (prej 105), Bauarea 1 J 1199 K (prej 1499), WmH Klf 558 (revizija nad prečrtano 846), Wiesen §8 45 J 812 K → Wiesen I = 5 J izpeljano. 6/6 kultur zapre §8 EXACT; vrstice 1–8 (1149 J 495 K) + unbenützbar (71 J 998 K izpeljano) = Total 1220 J 1493 K EXACT (PV-validirano). Strukturni deleži 1830: njive 33,96 % · pašniške 55,43 % · travniki 3,73 % · vinogradi 0,58 %. F-PZ-04 OSTAJA OPEN: zapisana Summa je 3 J (4.800 QKlft) nad vsoto vrstic (val 75: 43.488 na napačnih branjih) — Klf stolpec se zapira, pisarjevska nekonsistentnost; deleži v UI ostanejo absent (pogodba val 76). Prebivalstvo 1830 (441 duš; 70 hiš; 102 družin) in §20 time slider nespremenjena. Nodes/edges/claims/ID-ji NESPREMENJENI; kg_sha256 se spremeni (§22 pogodba).",
                 "status": "RESOLVED-V77 (odprta: F-PZ-04 Summa Δ 3 J; F-PZ-10 unbenützbar REVIEW; F-PZ-12 p43–47 vrstični prepis; PS p56–143 za F-PV-03)",
                 "provenance": "research-griblje/atlas-1825/pz-konskripcija-1830.json + build-pz-1825.py (val 77 PASS 2); pz-n83/ (PDF + 71 nativnih skenov + dokazni izrezki crops/p67-area, crops/p6-tab-*, crops/p6-zus-*)",
+            },
+            {
+                "finding_id": "KG-F10",
+                "val": 78,
+                "statement": "PZ [373419] PASS 3 (val 78): Rektifikacijski protokol 1830 (p35\u201340) strukturno prebran \u2014 narativni zapisi z 7 merilnimi vnosi per parcela ('Bei Messung wird die Auszelle H <\u0161t> mit <\u0161t> Joch <\u0161t> \u25a1Klf und <oseba> nach Gr\u00fcble ... zugewiesen'; 'Kempt Gr\u00fcble am 9. April 1830', p40 + pe\u010dat): 3 TRANSCRIBED (H 30 = 1 J 1082; H 594 = 1 J 591; H 1004 = 1 J 1010) + 4 REVIEW (H 738; H 2451 \u00d72; H 2475\u21921288). F-PZ-04 kontrola: Acker dodanki 3 J 2683 K \u2260 \u0394 3 J 0 K \u2192 razlika Summe p67 NE razlo\u017eena s per-parcelnimi vnosi; F-PZ-04 ostaja OPEN. p27 'Daran von zugezogenen Gr\u00fcnden und Grundverk\u00e4ufen' (REVIEW) potrjuje koncept dodankov. Osebe = sosednji posestniki brez identitetne preverbe \u2014 NI KG PERSON vozli\u0161\u010d (\u00a75); vnosi NE izpeljujejo per-parcelnih trditev o rabah (\u00a74). Nodes/edges/claims/ID-ji NESPREMENJENI; kg_sha256 se spremeni (\u00a722 pogodba).",
+                "status": "RESOLVED-V78 (odprta: F-PZ-04 Summa \u0394 3 J; F-PZ-10 unben\u00fctzbar REVIEW; F-PZ-12 p43\u201347; F-PZ-14 REVIEW vnosi; PS p56\u2013143 za F-PV-03)",
+                "provenance": "research-griblje/atlas-1825/pz-konskripcija-1830.json + build-pz-1825.py (val 78 PASS 3); pz-n83/crops/p35-40-rekt/ (dokazni izrezki 2\u20135\u00d7)",
             },
         ],
         "provenance": {

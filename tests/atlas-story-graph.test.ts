@@ -70,7 +70,7 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
   test("provenance: kg_sha256 + kg_val + deterministično + built_from = KG", () => {
     expect(graph.provenance.deterministic).toBe(true);
     expect(graph.provenance.built_from).toBe("knowledge-graph-1825.json");
-    expect(graph.provenance.kg_val).toBe(77); // KG v1.8 (val 77: PZ PASS 2 — re-read p67/§8, vrata I4–I6)
+    expect(graph.provenance.kg_val).toBe(78); // KG v1.9 (val 78: PZ PASS 3 — Rektifikacija p35–40, F-PZ-14)
     expect(graph.provenance.kg_sha256).toMatch(/^[a-f0-9]{64}$/);
   });
 

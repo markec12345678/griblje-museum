@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je transkripcija strani iz katastrskega ocenitvenega elaborata za občino Grüble (Griblje) iz leta 1830.\n\n**Opomba:** Na tej strani ni prisotnih vrstic s številskimi vzorci tipa „Nr. <št> mit <št> Joch“ ali „Auszelle Nr. ...“. Stran vsebuje **opisni tekst** (deklaracijo o kmetijskih zemljiščih – njivah in travnikih), naslov sekcije ter podpise z datumi. Vse ključne vrstice s števili (letnice, številke parcel, mere) so navedene v zahtevanem formatu na koncu.\n\n---\n\n### Transkripcija (originalni nemški besedilo)\n\n**II Wiesen**\n\n**Ein Wiesen, die sich auf dem Grunde**\n**befinden, Griblje sind zu 2 Classen.**\n\n**1te Classe**\n\n**Die Wiesen dieser Classe sind theils sehr fruchtbar, und geben zwei, theils drei**  \n**guten Durchschnitt, können preißwürdig als**  \n**weißbrot würdig, und halben durchgängig**  \n**nur dießjährigen fallen Liegenschaften**  \n**mit einigen Ausnahmen. Als Maßstab**  \n**wurden hier Pergälle *8138* mit *Joch 893* [?]**  \n**[?] Maaße Schätzung [?] Maaß [?] wird gleich**  \n**erfässig gewißet.**\n\n**Zweyte Classe**\n\n**Die Wiesen dieser Classe sind nur mäßig**  \n**güte, weder nie mit Güte = und Beschaffen-**  \n**heit bemerkenswerth abgestuft, sind, wie**  \n**solche foundlich eingefallen, oder Dürre-**  \n**Zeiten ausgesetzt sind diesem Stande**  \n**beyzufügen ungleich, und daher**  \n**3 bis 4 Gulden tief auf einem Entfernung**  \n**als maß, diesem dienst Wiesen künftig**  \n**Erg leidenden Schädigung dem zugeführten**  \n**Leimen wiederhergestellt wird, und übergeht**  \n**ist diesem Entfernung zufolge gering. Als**  \n**Pergmaß wurden hierin Pergälle *8245* [?] mit**  \n**– Joch *1515* [?] [?] [?] Maaß [?]**  \n**und Grüble *8544* [?] [?] erfässig ge-**  \n**wiesen.**\n\n---\n\n### Ključne vrstice s števili (v zahtevanem formatu)\n\n[Vrstica s prvo letnico] Nr. 8138 | Joch = 893 [ali 393?] | Maaße Schätzung ... wird gleich erfasstig gewisset.\n[Vrstica z drugo letnico] Nr. 8245 [ali 8215?] | Joch = 1515 [ali 1315?] | ... und Grüble 8544 [ali 3544?] ... erfaessig gewiesen.\n\n---\n\n### Struktura in opombe\n\n*   **Naslov sekcije:** **II Wiesen** (II. Travniki)\n*   **Podsekcija:** **1te Classe** (1. razred) in **Zweyte Classe** (2. razred)\n*   **Številke in dvoumnosti (Kurrent):**\n    *   **8138**: Številka je jasno zapisana kot 8-1-3-8 (čeprav bi lahko bila tudi 8178, glede na kontekst pergelskih gospodarskih enot).\n    *   **893 [?]**: Zadnja številka je v Kurrentu podobna '3' (zanka), vendar je v kontekstu merjenja (Joch) pogosteje '5' ali '3'. Če je '3', potem je **893**; če je '5', potem je **895**. Glede na obliko (zaprt zgoraj) je verjetneje **3**, vendar je možna tudi **5**.\n    *   **8245 [?]**: Tretja številka je nekoliko dvoumna med '4' in '1', vendar je oblika bližje '4'.\n    *   **1515 [?]**: Prva številka je jasno '1', druga '5' (ali morda '3'? Oblika kaže na '5'), tretja '1', četrta '5'. Možna varianta: **1315**.\n    *   **8544 [?]**: Prva številka '8', druga '5' (ali '3'?), tretja '4' (ali '1'?), četrta '4'. Možne variante: **8344**, **8514**, itd.\n*   **Podpisi/Datumi:** Na tej strani ni vidnih podpisov ali datumov (ti so navadno na koncu dokumenta ali na naslednjih straneh). Besedilo se konča z „gewiesen.“",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790449620,
+  "id": "20260927030613e64dd285b0d0493b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927030613e64dd285b0d0493b",
+  "usage": {
+    "completion_tokens": 1218,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3688,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4906
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je transkripcija strani iz katastrskega ocenitvenega elaborata za občino Grüble (Griblje) z leta 1830. Besedilo je v originalni nemščini (v Kurrent pisavi), komentarji in oblika izpisa pa so v slovenščini.\n\n**Opomba:** Na tej strani ni evidentiranih vrstic s številskimi podatki tipa „Nr. ... mit ... Joch“ (to je značilno za kasnejše strani elaborata, kjer so navedene parcele). Stran vsebuje uvodni opis zemljišč (Acker), njihovo lego in kakovost ter podpis ocenjevalca.\n\n---\n\n### Transkripcija\n\nDie vorliegende Parzellen in dem Grundbuche\nBuchführungen, sind nach dem Gesetze\nüber die Grundsteuer vom 6. August\n1830 angemessen worden.\n\n**I Acker**\n\n*(Sledi podpis/parafa: okrogla zanka)*\n\nEin Acker liegt im Grunde Grüble, wel-\ncher in fünfzehn Stücken, welche den Grundbesitzern\nzugehörten, liegen; dieselben sind in langen Streifen\n\n*Legende.*\n\nAuf denselben wird Weitzen, Gerste, Hanf,\nHülsen, Raps, und in geringerem Verhältniß\nKorn, Erbsen, flugs, zierlichen, Bohnen, Mohn,\nund hin und wieder auch mit Düngfrüchten ver-\nsehen. Auf demselben Jäger myßbauen Emd\ngenossen. Ein Düngplatz ist 1 mine\nbekommen pfundzym, drittheiligen plech\nLageboden, und ylnefnr Gudnymenden\nEinfahrendem einfahren fef in fünftige Abfe\nyaf, und in dem Abfuhr Kammeriza, und\nGrillwichta in dem abmeynu abdimeu, dem\nden Grundmiedern ausgegeben, als Weydorn\ngemacht werden, aber jedem Parrzellern 30\nmit 1 Jg[?] 1832 Abflötnen Murch Fleck\ndem Grüble zuförig, zugewiesen.\n\n*Joseph Pleyka.* *(podpis)*\n\nBei dem bekannten Riffe wurde durch\nDüngmittel Payme, und Entziehung von der\n\n---\n\n### Analiza številskih podatkov\n\nNa tej strani **ni bilo najdenih vrstic** z vzorcem `Nr. <št> mit <št> Joch <št>` ali `Auszelle Nr. <št>`. \n\nEdina številka, ki bi lahko bila dvoumna zaradi Kurrent pisave, je v predzadnji vrstici:\n\n*   **[Vrstica predzadnja]** Datum: **1832** (ali morda **1833**? – zadnja števila so jasno `1`, `8`, `3`, `2`; črka `2` ima značilen zavoj navzdol, `3` pa dva loka; vendar je v rokopisu `2` pogosto zapisana kot `z`-oblika, tukaj pa je videti kot `2`).\n    *   *Oblika:* `[Vrstica N]` Datum = 1 | 8 | 3 | [2 ali 3] | besedilo: „mit 1 Jg[?] 1832 Abflötnen...“\n\nDruga števila na strani:\n*   **1830** – leto zakona o davku na nepremičnine (jasno zapisano).\n*   **6. August** – datum zakona.\n*   **I** – rimska številka za prvi razdelek (Acker).\n*   **fünfzehn** (15) – število kosov (Stücke) zemljišča (zapisano besedilo).\n*   **30** – številka (verjetno količina ali oznaka), ki sledi besedam „jedem Parrzellern“.\n*   **1** – pred datuma („mit 1 Jg[?]“ – verjetno kratica za „Jahr“ ali podobno).\n\n### Naslovi sekcij\n*   **I Acker** (I. Oranje zemljišče / Polje)\n\n### Podpisi in datumi\n*   **Datum spisa:** 1830 (naveden v uvodu)\n*   **Datum ocene/delitve:** 1. Jg[?] 1832 (verjetno 1. julij 1832 ali 1. januar 1832; kratica „Jg“ je nejasna, morda „Jahr“, v kontekstu pa lahko gre tudi za napako pri branju „Jul.“)\n*   **Podpis:** Joseph Pleyka (ali Pleika/Pleika – priimek je zapisan v Kurrentu, končnica „a“ je jasna).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790449513,
+  "id": "20260927030455889e8c2462514e5e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927030455889e8c2462514e5e",
+  "usage": {
+    "completion_tokens": 1165,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3688,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 4853
+  }
+}

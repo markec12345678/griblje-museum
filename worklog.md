@@ -3723,3 +3723,29 @@ Stage Summary:
 - ATLAS 1825: PZ Endresultat p67 + §8 ODLOČILNO PREBRANA — 4 korekcije val-75 branj z izrezki + vrata I4–I6; Total vrata se zaprejo EXACT (vrstice + unbenützbar = 1220 J 1493 K); deleži 1830 izpeljani (data sloj); F-PZ-04 ožjan na Δ 3 J, ostaja OPEN pošteno
 - KG v1.8 (20ec8a0a; 3.309/3.569/622 stabilni); viri 10/13 VERIFIED (nespremenjeno); 494 testov + 101/101 dimnih; +0 virov/+0 trditve per-parcel
 - Naslednje: 1) Rektifikacija p35–40 per-parcelna kontrola (F-PZ-04: kje so 'izgubljeni' 3 Joch); 2) PS p56–143 vrstični prepis (F-PV-03 vinogradi) ob VAČ kvoti; 3) p30/p63/p65 2. prehod @300 dpi (F-PZ-12); 4) PT p7 @300dpi (F-GEO-03); 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 39 (VMESNO — delo v teku, izpad orodij)
+Agent: Z.ai Code (main orchestrator)
+Task: Val 78 — ISSUE #42 §4/§14: PZ N83 Rektifikacija p35–40 per-parcelna kontrola (F-PZ-04) — branja DOKONČANA, vgradnja sledi
+
+Work Log:
+- Kontinuiteta: main @ d0ca9d5 (val 77); naslednje po worklogu Task 38 = Rektifikacija p35–40 per-parcelna kontrola
+- PREHOD 1 (struktura): p35–40 = NARATIVNI Rektifikacijski protokol 1830 (ni tabel): opisi kultur + merilni vnosi vzorca 'Bei Messung wird die Auszelle H <št> mit <št> Joch <št> □Klf und <oseba> nach Grüble ... zugewiesen' + podpisi žirije + 'Kempt Grüble am 9. April 1830' + pečat (p40); sekcije: I Acker (p35–36), II Wiesen (p37), III/IV Gärten (p38), VI Hutweiden (p38–39), VII (p39); p36 rdeča nota 'Dritte Klasse'
+- Izrezki: research-griblje/pz-n83/crops/p35-40-rekt/ (32 datotek; vključno 5x tesni p35-nr30-5x, p36-nr594-5x, p36-nr1404-tall-4x, p37-nr738-5x, p37-nr2451-5x, p38-nr2451-5x, p39-nr2475-5x; + p27-header-4x, p27-table-3x, p27-nums-5x, p27-labels-5x)
+- VLM: prehod A na celih straneh p35–40 (vlm/p3x-passA.json — halucinacije, potrjen vzorec F-PZ-12); prehoda B+C na 7 tesnih izrezkih (vlm/rekt-*-B/C.json — nekonsistentni); prehoda B+C na p27 številke (vlm/rekt-p27-nums-B/C.json — ŠE NEPREBRANA, izpad orodij tik pred branjem)
+- ODLOČILNA BRANJA (direktni odtis avtorja na 4–5x izrezkih):
+  1. p35 I Acker: H 30 = 1 J 1082 (Moritz Fluchs[?]) — TRANSCRIBED
+  2. p36 I Acker: H 594 = 1 J 591 (Georg Kranjc, Hö.N.45) — TRANSCRIBED
+  3. p36 I Acker: H 1004 = 1 J 1010 (Moritz Brinz[?]) — TRANSCRIBED (prejšnja domneva 1404/700 NAPAČNA)
+  4. p37 II Wiesen: H 738 = – J 8?5 (Miklos/Müller[?]) — REVIEW
+  5. p37 II Wiesen: H 2451 = – J 1515/1575 (Moritz Plaberz[?]) — REVIEW
+  6. p38 IV Gärten: H 2451[?] = – J 260 (isti oseba) — REVIEW
+  7. p39 VI Hutweiden: H 2475→1288[?] = 1 J 589/549 (Georg Kranjc → Joseph Milavec[?]) — REVIEW
+  + p27: tabela z vrsticama 'Wiesen' in 'Daran von zugezogenen Gründen und Grundverkäufen', številke ~39 J + rdeči popravki — REVIEW
+- F-PZ-04 analiza: Acker dodanki = točno 3 J (1+1+1) — a K-stolpci (2683 K) ne ustrezajo Δ 3 J 0 K → NIČ vsiljeno (§4); F-PZ-04 OSTAJA OPEN; p27 'Daran von zugezogenen' = naslednja preveritvena pot
+- IZPAD ORODIJ: sredina vala 78 (~15 neuspešnih klicev); worklog zapisan šele zdaj po obnovitvi
+
+Stage Summary:
+- Val 78 branja DOKONČANA in shranjena (izrezki + VLM raw + odločilna branja zgoraj); vgradnja NEDOKONČANA
+- Naslednje: 1) preberi vlm/rekt-p27-nums-B/C.json + p27 analiza; 2) build-pz-1825.py PASS 3 (sekcija REKTIFIKACIJA_1830, 7 vnosov + evidence); 3) testi pz-konskripcija.test.ts; 4) push + PR + poročilo #42 + deploy verifikacija; 5) dokumentacija 91-val78

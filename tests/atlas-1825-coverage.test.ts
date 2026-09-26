@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v1.8 (val 77 — PZ PASS 2 re-read) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("20ec8a0a988aa9e8")).toBe(true);
+  test("provenanca kaže na KG v1.9 (val 78 — PZ PASS 3 Rektifikacija) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("9257606960ef0fa6")).toBe(true);
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -283,8 +283,8 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       expect(existsSync(p)).toBe(true);
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
-      // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 77) + izpeljani artefakti nosijo svoj val
-      expect([72, 74, 77]).toContain(d.val);
+      // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 77/78) + izpeljani artefakti nosijo svoj val
+      expect([72, 74, 77, 78]).toContain(d.val);
     }
   });
 

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi prepoznavanja pisave Kurrent (kjer je '3' dvojna zanka, '7' ima dolg spodnji rep, '5' zgornjo zanko, '6/0' zaokrožena) in upoštevanja rdečih popravkov (prečrtane vrednosti), so vsebne celice tabele:\n\n*   **Oznaka**=Wiesen\n*   **Klafter**=.[?]\n*   **QKlf**=77[?]\n*   **Joch**=.[?]\n*   **K**=05[?]\n*   **Joch**=.[?]\n*   **K**=6[?] *(rdeča črtica pod številko nakazuje popravek/prečrtano vrednost)*\n*   **Oznaka**=Daran von zugezogenen Gründen und Grundverkäufen\n*   **Klafter**=.[?]\n*   **QKlf**=77[?]\n*   **Joch**=.[?]\n*   **K**=.[?]\n*   **Joch**=.[?]\n*   **K**=6[?] *(rdeča črtica pod številko nakazuje popravek/prečrtano vrednost)*",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790450261,
+  "id": "2026092703173215191e69612c4b71",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092703173215191e69612c4b71",
+  "usage": {
+    "completion_tokens": 301,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4152,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4453
+  }
+}

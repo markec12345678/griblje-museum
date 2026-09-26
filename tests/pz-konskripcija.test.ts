@@ -104,6 +104,23 @@ type PzDoc = {
     [key: string]: unknown;
   };
   structure_map: { page: number; content: string }[];
+  rektifikacija_1830: {
+    title: string;
+    date: string;
+    entries: {
+      page: number;
+      section: string;
+      parcel_ref: string;
+      joch: number | null;
+      klafter: number | null;
+      person_read: string;
+      reading_status: string;
+      evidence: string;
+      note: string;
+    }[];
+    sum_check: { acker_entries_qklft: number; note: string; [key: string]: unknown };
+    p27_flaechenraum: { status: string; relevance: string; [key: string]: unknown };
+  };
   findings: PzFinding[];
   invariants_enforced: string[];
   invariant_violations: unknown[];
@@ -122,10 +139,10 @@ const kg = kgRaw as unknown as {
   findings: { finding_id: string; val: number; status: string }[];
 };
 
-describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
-  test("meta: uodid 373419 / docid 41784 / 71 strani / val 77 PASS 2", () => {
-    expect(pz.val).toBe(77);
-    expect(pz.pass).toContain("PASS 2");
+describe("val 78 — PZ PASS 3 dokumentna resnica [373419]", () => {
+  test("meta: uodid 373419 / docid 41784 / 71 strani / val 78 PASS 3", () => {
+    expect(pz.val).toBe(78);
+    expect(pz.pass).toContain("PASS 3");
     expect(pz.provenance.uodid).toBe(373419);
     expect(pz.provenance.docid).toBe(41784);
     expect(pz.provenance.pages).toBe(71);
@@ -272,6 +289,7 @@ describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
     expect(f).toBeDefined();
     expect(f!.status).toBe("OPEN");
     expect(f!.detail).toContain("1152");
+    expect(f!.detail).toContain("VAL 78 KONTROLA"); // Rektifikacija p35–40 kontrola dokumentirana
   });
 
   test("deleži 1830: vsota == Total EXACT, pogodbena poštenost (UI absent)", () => {
@@ -326,9 +344,9 @@ describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
     expect(joined).toContain("SPECIFISCHER AUSWEIS");
   });
 
-  test("najdbe: 13; nove F-PZ-10/11/12/13 z iskrenimi statusi", () => {
+  test("najdbe: 14; nove F-PZ-10/11/12/13/14 z iskrenimi statusi", () => {
     const byId = new Map(pz.findings.map((f) => [f.id, f]));
-    expect(pz.findings).toHaveLength(13);
+    expect(pz.findings).toHaveLength(14);
     expect(byId.get("F-PZ-01")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-02")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-06")!.status).toBe("RESOLVED");
@@ -336,6 +354,7 @@ describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
     expect(byId.get("F-PZ-09")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-11")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-13")!.status).toBe("RESOLVED");
+    expect(byId.get("F-PZ-14")!.status).toBe("RESOLVED"); // val 78: Rektifikacija kontrola (negativni rezultat)
     expect(byId.get("F-PZ-03")!.status).toBe("PARTIAL");
     expect(byId.get("F-PZ-05")!.status).toBe("REVIEW");
     expect(byId.get("F-PZ-10")!.status).toBe("REVIEW");
@@ -353,6 +372,60 @@ describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
     expect(pz.invariant_violations).toEqual([]);
   });
 
+  test("val 78 Rektifikacija: 7 vnosov, 3 TRANSCRIBED + 4 REVIEW, struktura", () => {
+    const r = pz.rektifikacija_1830;
+    expect(r.title).toContain("Rektifikations-Protokoll 1830");
+    expect(r.date).toContain("9. April 1830");
+    expect(r.entries).toHaveLength(7);
+    const t = r.entries.filter((e) => e.reading_status === "TRANSCRIBED");
+    const rev = r.entries.filter((e) => e.reading_status === "REVIEW");
+    expect(t).toHaveLength(3);
+    expect(rev).toHaveLength(4);
+    // vsak vnos: stran v obsegu, parcela, status, dokazni izrezek
+    for (const e of r.entries) {
+      expect(e.page).toBeGreaterThanOrEqual(35);
+      expect(e.page).toBeLessThanOrEqual(40);
+      expect(e.parcel_ref.length).toBeGreaterThan(0);
+      expect(e.evidence).toContain("crops/p35-40-rekt/");
+    }
+    // TRANSCRIBED vnosi imajo celoštevilčne površine
+    for (const e of t) {
+      expect(Number.isInteger(e.joch)).toBe(true);
+      expect(Number.isInteger(e.klafter)).toBe(true);
+    }
+  });
+
+  test("val 78 Rektifikacija: ključna branja (H 30 / H 594 / H 1004)", () => {
+    const r = pz.rektifikacija_1830;
+    const e30 = r.entries.find((e) => e.parcel_ref === "H 30")!;
+    expect(e30.joch).toBe(1);
+    expect(e30.klafter).toBe(1082);
+    const e594 = r.entries.find((e) => e.parcel_ref === "H 594")!;
+    expect(e594.joch).toBe(1);
+    expect(e594.klafter).toBe(591);
+    const e1004 = r.entries.find((e) => e.parcel_ref === "H 1004")!;
+    expect(e1004.joch).toBe(1);
+    expect(e1004.klafter).toBe(1010);
+    expect(e1004.note).toContain("popravek vmesne domneve 1404/700");
+  });
+
+  test("val 78 Rektifikacija F-PZ-04 kontrola: Acker dodanki 3 J 2683 K ≠ Δ 3 J 0 K — negativni rezultat", () => {
+    const r = pz.rektifikacija_1830;
+    const sc = r.sum_check;
+    // neodvisno v TS iz surovih vnosov (samo TRANSCRIBED Acker vnosi)
+    const acker = r.entries.filter((e) => e.section === "I Acker" && e.reading_status === "TRANSCRIBED");
+    expect(acker).toHaveLength(3);
+    const q = acker.reduce((s, e) => s + (e.joch as number) * 1600 + (e.klafter as number), 0);
+    expect(q).toBe(3 * 1600 + 1082 + 591 + 1010); // 3 J 2683 K = 7.483 QKlft
+    expect(sc.acker_entries_qklft).toBe(q);
+    // in NI enako Δ Summe (4.800 QKlft) — nič vsiljeno (§4)
+    expect(q).not.toBe(4800);
+    expect(sc.note).toContain("OSTAJA OPEN");
+    // p27 potrjuje koncept dodankov, ostaja REVIEW
+    expect(r.p27_flaechenraum.status).toBe("REVIEW");
+    expect(r.p27_flaechenraum.relevance).toContain("zugezogene");
+  });
+
   test("zavrnjena branja dokumentirana (F-PZ-12 — nič tihega)", () => {
     const m = pz.method;
     expect(m.rejected_reads).toContain("p43–47");
@@ -360,15 +433,17 @@ describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
   });
 });
 
-describe("val 77 — KG v1.8 + zgodba vasi", () => {
-  test("KG v1.8: SRC-PZ TRANSCRIBED_PARTIAL (val 77) + KG-F09 val 77; števci stabilni", () => {
-    expect(kg.val).toBe(77);
-    expect(kg.title).toContain("v1.8");
+describe("val 78 — KG v1.9 + zgodba vasi", () => {
+  test("KG v1.9: SRC-PZ TRANSCRIBED_PARTIAL (val 78) + KG-F09/KG-F10; števci stabilni", () => {
+    expect(kg.val).toBe(78);
+    expect(kg.title).toContain("v1.9");
     const srcPz = kg.nodes.find((n) => n.node_id === "SRC-PZ");
     expect(srcPz).toBeDefined();
     expect(srcPz!.coverage).toContain("TRANSCRIBED_PARTIAL");
-    expect(srcPz!.coverage).toContain("val 77");
+    expect(srcPz!.coverage).toContain("val 78");
+    expect(srcPz!.coverage).toContain("Rektifikacijski protokol p35–40");
     expect(kg.findings.some((f) => f.finding_id === "KG-F09" && f.val === 77)).toBe(true);
+    expect(kg.findings.some((f) => f.finding_id === "KG-F10" && f.val === 78)).toBe(true);
   });
 
   test("zgodba vasi: prebivalstvo 1830 + PZ Weiden mit Holznutzen (558 K) vidna; 10 sekcij", () => {

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Parcela=29 | Joch=– | Klafter=[?] | Oseba=Kameniza",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790449892,
+  "id": "202609270311306c82f0a5fea14d69",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609270311306c82f0a5fea14d69",
+  "usage": {
+    "completion_tokens": 23,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3438,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3461
+  }
+}
