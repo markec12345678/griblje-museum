@@ -179,7 +179,7 @@ describe("val65 — KG v1.2 MAP_OBJECT integracija", () => {
     expect(fids).toContain("KG-F03");
     expect(fids).toContain("KG-F04");
     expect(kg.invariant_violations).toEqual([]);
-    expect(kg.val).toBe(74); // KG v1.6 (val 74: PV agregat prepisan, SRC-PV TRANSCRIBED; koordinate/KG-F08 nespremenjeni)
+    expect(kg.val).toBe(75); // KG v1.7 (val 75: PZ Konskripcija — prebivalstvo 1830, SRC-PZ TRANSCRIBED_PARTIAL; koordinate/KG-F08 nespremenjeni)
     const moCat = kg.coverage.categories.find(
       (c: { category: string }) => c.category === "map_objects_a01",
     );

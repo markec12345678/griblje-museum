@@ -3614,3 +3614,32 @@ Stage Summary:
 - GitHub main @ 80596ee = val 74 · Vercel produkcija val 74 ŽIV · Render mirror val 74 ŽIV
 - 453 testov + 95/95 dimnih; KG v1.6 (3.309/3.569/622, SRC-PV TRANSCRIBED, kg_sha256 809ef581); viri 10/13 VERIFIED
 - Naslednje: 1) PZ Konskripcija 1830 [373419] — javno dostopen, razreši F-PV-02 + prebivalstvo 1830 (§20 time slider prvi korak); 2) PS p56–143 re-read (88 strani, F-PV-03 vinogradi); 3) PT p7 @300dpi; 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 34
+Agent: Z.ai Code (main orchestrator)
+Task: Val 75 — ISSUE #42 §4/§14 + §20: PZ N83 Katastral-Schätzungs-Elaborat (Konskripcija) [373419] — PREHOD 1 + ključna branja (user: "odlicno nadaljuj kjer si ostal")
+
+Work Log:
+- Kontinuiteta: val 74 zaključen v tej seji (PR #62 → main @ 80596ee + worklog Task 33 @ 0f13fad); naslednje po worklogu = PZ Konskripcija 1830 (razreši F-PV-02 + prebivalstvo 1830 = §20 prvi korak)
+- PRELOM DOSTOPA: VAČ je dosegljiv prek python urllib z unverified SSL context (nepopolna TLS veriga strežnika: python CA fail, curl zavrne povezavo); PZ [373419] prenesen: N083PZ.pdf 13.154.552 B, 71 strani (tifyPdfDownload uodid=373419&docid=41784) → research-griblje/pz-n83/ (README z vzorcem)
+- Ekstrakcija: 71 nativnih skenov (pymupdf, metoda val 56) — brez besedilne plasti; 8 kontaktnih plošč
+- PREHOD 1 (struktura): zemljevid 71/71 strani (naslovnica, §1–§14, klase + Natural-Ertrag, Kulturdienstreibung, Protokoli + Rektifikacija 1830, Einwands-Protokoll, Reinertragstabellen, Communications-Protokoll (rožnat), Verantwortlichung (zelen), Zusammenstelli­ngi A/B (ležeče), Specifischer Ausweis p66–67, Nachtrag 1829 p70–71)
+- PREHOD 2 (2 neodvisna prehoda, digit-by-digit 2,6×–5×, dokazni izrezki pz-n83/z-*.jpeg):
+  - §3 Bevölkerung 1830: 222 M + 219 Ž = 441 duš (vrata I1 EXACT), 70 hiš, 102 družin → F-PZ-02 RESOLVED (§20 prvi podatkovni korak)
+  - §4 Viehstand: 124 Ochsen / 20 [Kühe|Rosse REVIEW] / 30 Jungvieh / 150 Schafe / 30 [Lämmer REVIEW] → F-PZ-03 PARTIAL
+  - §1 površina: črno 1235 J 1516 K prečrtano → rdeči popravek 1220 J 1493 K = 1.953.493 QKlft; PV 1.955.173 → Δ 1.680 QKlft = 0,086 % → F-PZ-01 RESOLVED (vrata I2 < 1 %)
+  - Endresultat p67 (ležeča tabela, nativen orientation — 2 rotacijski poučni epizodi): Aecher I+II = 414 J 962 K (§8 skladen ✓; 2. prehod popravil 234→334); Weingärten 7 J 42 K (= PV Joch 7 ✓; §7 p21: Einzige Classe, Mustergrund N°2494[?], rdeča revizija 6 J 1059 K); Weiden mit Holznutzen 558 J 846 K; Summa 1132 J 495 K
+  - F-PZ-04 OPEN: vsota vrstic 1–8 = 1159 J 783 K ≠ Summa (Δ 43.488 QKl) — nič se ne vsiljuje (§4)
+  - F-PZ-08 RESOLVED: gozd = kategorija 'Weiden mit Holznutzen' (silvopastoralna raba) → napetost PV Wälder 0 vs PS 13 Wald parcel razložena na ravni kategorij; per-parcelni PS izrazi nespremenjeni (§5)
+  - F-PZ-09 RESOLVED: ps-n83/register.json pokriva SAMO p3–55 (1073 vrstic) — p56–143 brez vrstic → F-PV-03 ostaja OPEN (nepreverljiv brez VAČ); coverage besedilo popravljeno
+  - F-PZ-05 REVIEW meje (Kolpa, Adelschitz[?], Weidendorf[?], Tröbusche[?], Kreising[?]) · F-PZ-07 TO_VERIFY protokoli + žirija (imena, nič KG PERSON brez identitete)
+- Vgradnja: build-pz-1825.py → pz-konskripcija-1830.json (invarianti I1–I3 fail-fast; Summa = najdba ne invarianta) · KG v1.7 (SRC-PZ TRANSCRIBED_PARTIAL + KG-F09; nodes/edges/claims/ID-ji NESPREMENJENI 3.309/3.569/622; kg_sha256 b150db19… → story_id po §22) · coverage rebuild val 75 (transcription +PZ; opombe per vir v API-ju; next_reads posodobljeni) · story engine: vasi §18.1 prebivalstvo 1830 + §18.6 PZ gozd item (10 sekcij ohranjeno)
+- INFRA (peskovnik): PostgreSQL embedded (zonky) ŽIV iz prejšnje seje @ 5432 (ponovno uporabljen) · .env (DATABASE_URL/DIRECT_URL @ 127.0.0.1:5432) · db:push + seed z IZRECnim env (parent my-project/.env nalaga SQLite URL — poučna epizoda val 72 potrjena) · STARI dev strežnik iz prejšnje seje držal :3000 s starimi podatki (coverage val 74 kljub novim datotekam!) → ubit; svež dev @ :3000 iz /home/z/griblje-museum (stari klon /home/z/my-project/griblje-museum pobran — symlink v peskovniku ni dovoljen)
+- QA: +13 testov (tests/pz-konskripcija.test.ts: I1/I2/I3 neodvisno v TS, F-PZ-04 OPEN varovalka, struktura, KG v1.7, zgodba vasi) + posodobljeni (KG v1.7/val 75, KG-F09, sha b150db19, [72,74,75] vals) → **466/466**; api-smoke +2 → **97/97** (per-vir note v coverage API = nova poštenost); tsc/lint/verify-i18n (1032×5) čisti
+- Dokumentacija: research-griblje/88-val75-pz-konskripcija-1830.md; README 128. sklop; 00-KAZALO vnos 88; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825: PZ [373419] strukturno prebran (71/71) + ključna branja z vrati — prebivalstvo 1830 = 441 duš (§20 prvi korak), površina prečno validirana z PV na 0,086 %, F-PV-02 razrešena na ravni kategorij (silvopastoralna raba), F-PZ-04 OPEN pošteno dokumentiran
+- KG v1.7 (3.309/3.569/622, SRC-PZ TRANSCRIBED_PARTIAL, KG-F09); viri 10/13 VERIFIED (nespremenjeno); 466 testov + 97/97 dimnih; +0 virov/+0 trditve per-parcel
+- Naslednje: 1) §20 TIME SLIDER arhitektura (podatkovni model časovnih točk 1825 ref + 1830 prvi korak; API + UI; točke brez virov = AWAITING_SOURCE); 2) PZ celotni vrstični prepis + Summa kontrola (F-PZ-04); 3) PS p56–143 vrstični prepis (F-PV-03) ob VAČ kvoti; 4) PT p7 @300dpi; 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
