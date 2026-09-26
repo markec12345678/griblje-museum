@@ -975,7 +975,7 @@ export function generateVillageStory(): VillageStory {
         []
       ),
       item(
-        `PZ [373419] prepisan delno (val 75): Endresultat — 'Weiden mit Holznutzen' 558 J 846 K ≈ 3,224 km² kot lastna kategorija; ločenih 'Waldungen' v Endresultatu NI → napetost PV Wälder 0 vs PS 13 Wald parcel dobila razlago kategorij (gozdno-pašniška/silvopastoralna raba, F-PV-02); per-parcelni PS izrazi ostajajo nespremenjeni (§5)`,
+        `PZ [373419] re-read (val 77): Endresultat — 'Weiden mit Holznutzen' 558 J 558 K ≈ 3,213 km² (trenutna vrednost nad prečrtano 846) kot lastna kategorija; ločenih 'Waldungen' v Endresultatu NI → napetost PV Wälder 0 vs PS 13 Wald parcel dobila razlago kategorij (gozdno-pašniška/silvopastoralna raba, F-PV-02); per-parcelni PS izrazi ostajajo nespremenjeni (§5)`,
         "TRANSCRIBED",
         ["SRC-PZ", "SRC-PV"],
         []

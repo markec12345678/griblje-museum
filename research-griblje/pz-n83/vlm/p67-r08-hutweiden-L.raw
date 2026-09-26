@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Huthweiden CLASSE=C JOCH=1 1 8 KLAFTER=7 0 . 2 [crossed:2 4 3] OTHER: col1=1 ., col2=1 1 8, col3=6 [?] 6 [:], col4=-, col5=1 5, col6=2 5",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429929,
+  "id": "20260926213846aa3d39e024384780",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926213846aa3d39e024384780",
+  "usage": {
+    "completion_tokens": 83,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1582,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "total_tokens": 1665
+  }
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "II<sup>te</sup> Classe\nWirtschaftsklasse\nDie Acker liegen theils zusammen in 9 Stück\nGrundstückklasse: 2<sup>te</sup> 2<sup>te</sup> (bzw. 29)\n\n| Joch Ein | | |\n| :--- | :--- | :--- |\n| Zienung | Grundfläche | Steuer |\n\n| 1 | 1 | |\n| | | Gänß und 1<sup>ten</sup> Ackerschlägen. | |\n\nBewegung aufi Todt wird im\nund I<sup>ten</sup> Ackerschlägen.\n\nNatural Ertrags Tafel\nfür die Grundstücke\n\n| N° | Beschreibung | Fläche | Ertrag (Metze / Centner) |\n| :--- | :--- | :--- | :--- |\n| 1 | .. Hofstät und Maid | .18 | 20 Mfgz |\n| 2 | .. \" .. Häußgut | '9' | 10 \" |\n| 3 | .. \" .. Äcker | 30' | 410 [?] |\n| 4 | .. \" .. Häußgut | '9' | 10 Mfgz |\n| 5 | .. \" .. Äcker | '9' | 10 \" |\n| .. | .. Wiese. Gärten | 7' | 8 \" |\n| 6 | .. \" .. Grüz | 10' | 12 \" |\n| 7 | .. Leßgüte | 65 | 70 \" |\n| 8 | .. Äcker | '9' | 10 \" |\n| .. | .. Wiese. Gärten | 7' | 8 \" |\n| 9 | .. \" .. Grüz | 16 | 12 \" |",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790430913,
+  "id": "20260926215501daf47a8e28334a8e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926215501daf47a8e28334a8e",
+  "usage": {
+    "completion_tokens": 396,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4515,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4911
+  }
+}

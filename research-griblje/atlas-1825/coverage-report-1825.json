@@ -1,5 +1,5 @@
 {
- "val": 75,
+ "val": 77,
  "pass": "PASS 8",
  "issue": 42,
  "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "b150db193957e173ba3eadba0936449963a73b30c3d6da302329d9f5155ab6d5",
+  "kg_sha256": "20ec8a0a988aa9e8945ad594dc29a65c9414c5a577248748766d06ae11450c50",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -411,7 +411,7 @@
       "docid": 41784,
       "pages": 71,
       "status": "PARTIAL",
-      "note": "TRANSCRIBED_PARTIAL (val 75): struktura 71/71 + ključna branja (prebivalstvo 1830, površina, Endresultat p67); celotni vrstični prepis NE"
+      "note": "TRANSCRIBED_PARTIAL (val 77 PASS 2): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z aritmetičnimi vrati I4–I6 (deleži 1830 izpeljani); p43–47 vrstični prepis pošteno zavrnjen (F-PZ-12, čaka @300 dpi)"
      },
      {
       "source_id": "SRC-A01",

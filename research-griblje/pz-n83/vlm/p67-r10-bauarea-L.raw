@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Banarea CLASSE=... JOCH=1 KLAFTER=16 30/... OTHER: col1=1199 [crossed:1199] col2=79 [crossed:48] col3=58 [crossed:48] col4=9 col5=15/... [crossed:15/...] col6=55",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429934,
+  "id": "2026092621385111040be1a7994e64",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092621385111040be1a7994e64",
+  "usage": {
+    "completion_tokens": 78,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1582,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1660
+  }
+}

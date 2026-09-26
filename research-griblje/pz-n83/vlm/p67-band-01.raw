@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Aecker | ROW=1 | CULTURE=Aecker | CLASSE=I | JOCH=80 | KLAFTER=842 | COL5=22 | COL6=44 | BRUTO_ERTRAG_INT=1911 | BRUTO_ERTRAG_FRAC=9/12 | ABZUG_INT=10 | ABZUG_FRAC=110/115\nNAME=Aecker | ROW=2 | CULTURE=Aecker | CLASSE=II | JOCH=234 | KLAFTER=120 | COL5=16 | COL6=50 | BRUTO_ERTRAG_INT=5624 | BRUTO_ERTRAG_FRAC=59/12 | ABZUG_INT=9 | ABZUG_FRAC=152/55",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429756,
+  "id": "202609262135521d019aae4c864a24",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262135521d019aae4c864a24",
+  "usage": {
+    "completion_tokens": 168,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2516
+  }
+}
