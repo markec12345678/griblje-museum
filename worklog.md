@@ -3681,3 +3681,20 @@ Stage Summary:
 - ATLAS 1825 §20 TIME SLIDER: arhitektura časovnih točk ŽIVA (1825 lastninska resnica + 1830 prebivalstveni korak + 6 izrecnih AWAITING_SOURCE); pogodba brez interpolacij deluje v API-ju in UI-ju
 - 488 testov + 101/101 dimnih; KG v1.7 nespremenjen (3.309/3.569/622, kg_sha256 b150db19…); viri 10/13 VERIFIED (nespremenjeno); +0 virov/+0 trditve/+0 KG
 - Naslednje: 1) PZ celotni vrstični prepis + Summa kontrola (F-PZ-04 → polni deleži 1830); 2) PS p56–143 vrstični prepis (F-PV-03 vinogradi) ob VAČ kvoti; 3) PT p7 @300dpi (F-GEO-03); 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli; 5) prva AWAITING točka se izpolni šele s prepisanim virom (pogodba stoji)
+
+---
+Task ID: 37
+Agent: Z.ai Code (main orchestrator)
+Task: Push+merge val 76 (PR #64) + poročilo #42 + deploy verifikacija
+
+Work Log:
+- Push: feat/val76-time-slider @ f0f41f9 → PR #64 → CI: tipi+lint+enotni ✓ · dimni testi API-jev (živi strežnik + PostgreSQL) ✓ · Vercel = znani kvota artefakt ("rate limited — retry in 24 h", vzorec val 66/68/75 — NI problem kode)
+- MERGE: PR #64 → main @ d9a9e6d (merge commit, kot vzorec prejšnjih valov); main sinhroniziran lokalno+remote; branch izbrisan (remote 204 + lokalno)
+- Poročilo #42: comment-5846576075 (val 76: §20 TIME SLIDER — 8 točk = 2 DOCUMENTED + 6 AWAITING_SOURCE; pogodba nič interpolacij; API + UI 4. zavihek; F-TL-01; 488/488 + 101/101 + 1074×5)
+- DEPLOY VERIFIKACIJA: **Render ŽIV z val 76**: /api/atlas/timeline?axis=1 → 8 točk pravilnih statusov; ?year=1830 → DOCUMENTED, 441 duš / 70 hiš / 102 družin, 1 vir (SRC-PZ) (hladni zagon ~2,5 min) · **Vercel produkcija ŽIV z val 76**: ?axis=1 → 8 točk; ?year=1830 → 441/70, SRC-PZ (kvota artefakt se je razrešil — build prešel); coverage val 75 na obeh = pravilno (val 76 ni spreminjal KG/virov, coverage ostaja until val 75 resničen)
+- VSE TRI PLATFORME SINHRONIZIRANE z val 76: GitHub main @ d9a9e6d · Render mirror · Vercel produkcija
+
+Stage Summary:
+- ATLAS 1825 §20 TIME SLIDER ZAKLJUČEN IN ŽIV NA VSEH PLATFORMAH: arhitektura časovnih točk (1825 lastninska resnica + 1830 prebivalstveni korak + 6 izrecnih AWAITING_SOURCE 1857–1910) s pogodbo brez interpolacij
+- 488 testov + 101/101 dimnih; KG v1.7 nespremenjen (b150db19…); viri 10/13 VERIFIED; +0 virov/+0 trditve/+0 KG — nov pogled na iste dokaze
+- Naslednje: 1) PZ celotni vrstični prepis + Summa kontrola (F-PZ-04 → polni deleži 1830); 2) PS p56–143 vrstični prepis (F-PV-03 vinogradi) ob VAČ kvoti; 3) PT p7 @300dpi (F-GEO-03); 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli; 5) prva AWAITING točka se izpolni šele s prepisanim virom (pogodba stoji)
