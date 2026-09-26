@@ -15,9 +15,11 @@
  *     ne riše "lepih" parcel;
  *   - hiša brez dokazane BP↔MO veze ostaje NOT_LOCATED (ni dokaz neobstoja).
  *
- * Sloji (#42 §15): map_objects · houses · toponyms · sheets.
- * Parcels/Persons/Events/SoThey so dosegljivi prek evidence API-ja
- * (klikljivi do vira), koordinat pa še nimajo — zato jih ta plast ne izmišlja.
+ * Sloji (#42 §15 + §19 val 73): map_objects · houses · toponyms · parcels ·
+ * sheets. Parcele so REGISTER (brez geometrije, §9) — nosijo rabo zemljišč
+ * (PS: samo EXACT leksikalno, UNKNOWN z ohranjenim originalom; PUA: rabe ne
+ * zapisuje → null), povezave na hiše (HAS_PARCEL) in sledljivost do vira.
+ * Persons/Events/SoThey ostajajo prek evidence API-ja.
  */
 import kgRaw from "@/data/knowledge-graph-1825.json";
 
@@ -288,6 +290,63 @@ export function toponymFeatures(): ToponymFeature[] {
 }
 
 /* ------------------------------------------------------------------ *
+ * PARCEL sloj — register parcel z rabo (§19, val 73) — BREZ geometrije
+ * (§9: meje niso dokazane, 0/2467). Raba: samo dokazana leksikalno.
+ * ------------------------------------------------------------------ */
+
+export type ParcelFeature = {
+  node_id: string;
+  /** PUA (operat urbarialnih akcij, raba ne zapisana) | PS (prost, raba leksikalno). */
+  origin: string;
+  section: string | null;
+  parcel_number: number | null;
+  /** Dokazana raba. null = vir rabe ne zapisuje (PUA); "UNKNOWN" = PS termin
+   *  ni nedvoumen (Ried, Lehngut …) — original ohranjen (nikoli ne ugibaj). */
+  land_use_category: string | null;
+  land_use_original: string | null;
+  co_referenced: boolean;
+  /** Hiše povezane prek HAS_PARCEL (so-vlasništvo = značilnost katastra). */
+  house_refs: string[];
+  evidence_status: string;
+  source_ids: string[];
+  evidence_url: string;
+};
+
+/** Obratni indeks HAS_PARCEL: parcela → hiše (2865 vezav, zgrajen enkrat). */
+const parcelToHouses = (() => {
+  const m = new Map<string, string[]>();
+  for (const e of kg.edges) {
+    if (e.relation_type !== "HAS_PARCEL") continue;
+    const list = m.get(e.to_entity);
+    if (list) list.push(e.from_entity);
+    else m.set(e.to_entity, [e.from_entity]);
+  }
+  for (const list of m.values()) list.sort(); // deterministično
+  return m;
+})();
+
+export function parcelFeatures(): ParcelFeature[] {
+  return kg.nodes
+    .filter((n) => n.node_type === "PARCEL")
+    .map((n) => ({
+      node_id: n.node_id,
+      origin: String(n.origin ?? "UNKNOWN"),
+      section: (n.section_original as string | null) ?? null,
+      parcel_number:
+        typeof n.parcel_number === "number" ? n.parcel_number : null,
+      land_use_category: (n.land_use_category as string | null) ?? null,
+      land_use_original: (n.land_use_original as string | null) ?? null,
+      co_referenced: Boolean(n.co_referenced),
+      house_refs: parcelToHouses.get(n.node_id) ?? [],
+      evidence_status: (n.evidence_status as string) ?? "UNKNOWN",
+      source_ids: Array.isArray(n.source_ids)
+        ? (n.source_ids as string[]).slice()
+        : [],
+      evidence_url: evidenceUrl(n.node_id),
+    }));
+}
+
+/* ------------------------------------------------------------------ *
  * Skupni odgovor (meta + disclaimers, #42 §10)
  * ------------------------------------------------------------------ */
 
@@ -295,6 +354,7 @@ export function mapData() {
   const mapObjects = mapObjectFeatures();
   const houses = houseFeatures();
   const toponyms = toponymFeatures();
+  const parcels = parcelFeatures();
   return {
     ok: true,
     val: kg.val,
@@ -309,6 +369,16 @@ export function mapData() {
       houses_located: houses.filter((h) => h.located).length,
       houses_not_located: houses.filter((h) => !h.located).length,
       toponyms: toponyms.length,
+      parcels: parcels.length,
+      parcels_with_land_use: parcels.filter(
+        (p) => p.land_use_category !== null && p.land_use_category !== "UNKNOWN"
+      ).length,
+      parcels_land_use_unknown: parcels.filter(
+        (p) => p.land_use_category === "UNKNOWN"
+      ).length,
+      parcels_no_land_use_record: parcels.filter(
+        (p) => p.land_use_category === null
+      ).length,
       sheets: SHEET_ORDER.length,
     },
     sheets: mapSheets(),
@@ -316,6 +386,7 @@ export function mapData() {
       map_objects: mapObjects,
       houses,
       toponyms,
+      parcels,
     },
   };
 }
