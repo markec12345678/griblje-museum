@@ -5,19 +5,23 @@
   "survey_year": 1824,
   "correction_year": 1827,
   "source": "SI AS 176/N/N83/g/A01, Arhiv Republike Slovenije (VAČ IIIF, docid 10)",
-  "scale_note": "listno merilo: 320 Klafter = 277 px → ~2,19 m/px (±10–15 %)",
+  "scale_note": "skala v2: 0.7307 m/px (reka Kolpa + validacija stavb); stara nota '320 Klafter = 277 px → 2,19 m/px' je bila merjena na polni ločljivosti VAČ (F-GEO-01)",
   "georef": {
-   "method": "1 sidrna točka (središče vasi = centroid izluščenih stavb ↔ muzejska koordinata vasi) + sever-navzgor predpostavka",
-   "accuracy": "PROVIZORIČNO: ±200–500 m na robovih (rotacija lista ni rešena); kuratorska kontrola proti moderni podlagi = P2-E14",
+   "version": "v2 (val 72)",
+   "method": "robustna similariteta (skala+rotacija+prevod) po reki Kolpi — ICP-lite na 351 točkah; sodobna podlaga OSM way 39699026 (NI zgodovinski dokaz, §10)",
+   "accuracy": "A01 točkovna geometrija ±38 m (reaka trim-RMS 38 m; stavbe mediana 17 m) — izboljšava iz ±200–500 m (v resnici ±1–3 km na robovih zaradi F-GEO-01)",
+   "scale_m_per_px": 0.730675,
+   "rotation_deg": 0.8772,
    "anchor_px": [
     1851,
     1778
    ],
    "anchor_geo": [
-    45.57246,
-    15.29257
+    45.574544,
+    15.292363
    ],
-   "meters_per_px": 2.1909
+   "legacy_note": "val 52–71: 1 sidro + 2,1909 m/px (F-GEO-01: mešanica ločljivosti, ~3,3× preveč raztegnjeno)",
+   "finding": "F-GEO-01/02/03 — research-griblje/atlas-1825/georef-1825.json"
   },
   "building_numbers_note": "rdeče številke na listu = stavbne parcele (B.P., 'Nro. in der Mappe' iz PT protokola), ne hišne številke; veza hiša→B.P. iz PT p7 (dvojno branje) + PUA opomb",
   "missing_bp": "B.P. 1–29, 57–62, 80–81, 84, 87–88, 90–91, 96–97 niso izluščeni pri tej ločljivosti (drobne gospodarske stavbe) → P3"
@@ -29,8 +33,8 @@
    "py": 1976,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.568559,
-   "lng": 15.289445
+   "lat": 45.573225,
+   "lng": 15.29135
   },
   {
    "bp": "31",
@@ -38,8 +42,8 @@
    "py": 1956,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.568954,
-   "lng": 15.288911
+   "lat": 45.573355,
+   "lng": 15.291169
   },
   {
    "bp": "32",
@@ -47,8 +51,8 @@
    "py": 1979,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.5685,
-   "lng": 15.288067
+   "lat": 45.5732,
+   "lng": 15.290892
   },
   {
    "bp": "33",
@@ -56,8 +60,8 @@
    "py": 1883,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.570393,
-   "lng": 15.288995
+   "lat": 45.573837,
+   "lng": 15.291187
   },
   {
    "bp": "34",
@@ -65,8 +69,8 @@
    "py": 1915,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.569762,
-   "lng": 15.288742
+   "lat": 45.573625,
+   "lng": 15.291107
   },
   {
    "bp": "35",
@@ -74,8 +78,8 @@
    "py": 1932,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.569427,
-   "lng": 15.288461
+   "lat": 45.573512,
+   "lng": 15.291016
   },
   {
    "bp": "36",
@@ -83,8 +87,8 @@
    "py": 1935,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.569368,
-   "lng": 15.287814
+   "lat": 45.57349,
+   "lng": 15.290801
   },
   {
    "bp": "37",
@@ -92,8 +96,8 @@
    "py": 1923,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.569604,
-   "lng": 15.287168
+   "lat": 45.573567,
+   "lng": 15.290583
   },
   {
    "bp": "38",
@@ -101,8 +105,8 @@
    "py": 1914,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.569782,
-   "lng": 15.287477
+   "lat": 45.573627,
+   "lng": 15.290685
   },
   {
    "bp": "39",
@@ -110,8 +114,8 @@
    "py": 1895,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.570156,
-   "lng": 15.28773
+   "lat": 45.573754,
+   "lng": 15.290767
   },
   {
    "bp": "40",
@@ -119,8 +123,8 @@
    "py": 1992,
    "conf": "medium",
    "source": "q3",
-   "lat": 45.568244,
-   "lng": 15.29102
+   "lat": 45.573125,
+   "lng": 15.291878
   },
   {
    "bp": "41",
@@ -128,8 +132,8 @@
    "py": 1886,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.570334,
-   "lng": 15.28759
+   "lat": 45.573813,
+   "lng": 15.290719
   },
   {
    "bp": "42",
@@ -137,8 +141,8 @@
    "py": 1856,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.570925,
-   "lng": 15.287899
+   "lat": 45.574012,
+   "lng": 15.290818
   },
   {
    "bp": "43",
@@ -146,8 +150,8 @@
    "py": 1847,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.571103,
-   "lng": 15.288405
+   "lat": 45.574073,
+   "lng": 15.290985
   },
   {
    "bp": "44",
@@ -155,8 +159,8 @@
    "py": 1917,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.569723,
-   "lng": 15.290261
+   "lat": 45.573617,
+   "lng": 15.291614
   },
   {
    "bp": "45",
@@ -164,8 +168,8 @@
    "py": 1900,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.570058,
-   "lng": 15.290485
+   "lat": 45.573731,
+   "lng": 15.291687
   },
   {
    "bp": "46",
@@ -178,8 +182,8 @@
    "owner": "Widhann Georg häusler und Gärtner",
    "owner_status": "REVIEW",
    "owner_page": 21,
-   "lat": 45.569979,
-   "lng": 15.289923
+   "lat": 45.573702,
+   "lng": 15.2915
   },
   {
    "bp": "47",
@@ -187,8 +191,8 @@
    "py": 1891,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.570235,
-   "lng": 15.290036
+   "lat": 45.573788,
+   "lng": 15.291535
   },
   {
    "bp": "48",
@@ -196,8 +200,8 @@
    "py": 2027,
    "conf": "medium",
    "source": "q3",
-   "lat": 45.567554,
-   "lng": 15.287533
+   "lat": 45.572881,
+   "lng": 15.29072
   },
   {
    "bp": "49",
@@ -210,8 +214,8 @@
    "owner": "Widhann Georg häusler und Gärtner",
    "owner_status": "VERIFIED-2x",
    "owner_page": 21,
-   "lat": 45.570787,
-   "lng": 15.291441
+   "lat": 45.573978,
+   "lng": 15.292
   },
   {
    "bp": "50",
@@ -219,8 +223,8 @@
    "py": 1861,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.570827,
-   "lng": 15.290317
+   "lat": 45.573988,
+   "lng": 15.291625
   },
   {
    "bp": "51",
@@ -228,8 +232,8 @@
    "py": 1842,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.571201,
-   "lng": 15.290373
+   "lat": 45.574113,
+   "lng": 15.291641
   },
   {
    "bp": "52",
@@ -237,8 +241,8 @@
    "py": 1822,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.571595,
-   "lng": 15.290935
+   "lat": 45.574248,
+   "lng": 15.291825
   },
   {
    "bp": "53",
@@ -246,8 +250,8 @@
    "py": 1840,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.571241,
-   "lng": 15.28967
+   "lat": 45.574124,
+   "lng": 15.291406
   },
   {
    "bp": "54",
@@ -255,8 +259,8 @@
    "py": 1813,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.571773,
-   "lng": 15.289951
+   "lat": 45.574303,
+   "lng": 15.291496
   },
   {
    "bp": "55",
@@ -264,8 +268,8 @@
    "py": 1814,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.571753,
-   "lng": 15.290232
+   "lat": 45.574298,
+   "lng": 15.29159
   },
   {
    "bp": "56",
@@ -273,8 +277,8 @@
    "py": 1805,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.571931,
-   "lng": 15.290401
+   "lat": 45.574358,
+   "lng": 15.291645
   },
   {
    "bp": "63",
@@ -282,8 +286,8 @@
    "py": 1834,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.571359,
-   "lng": 15.293128
+   "lat": 45.574176,
+   "lng": 15.292558
   },
   {
    "bp": "64",
@@ -291,8 +295,8 @@
    "py": 1820,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.571635,
-   "lng": 15.293494
+   "lat": 45.57427,
+   "lng": 15.292678
   },
   {
    "bp": "65",
@@ -300,8 +304,8 @@
    "py": 1743,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.573153,
-   "lng": 15.291807
+   "lat": 45.574773,
+   "lng": 15.292105
   },
   {
    "bp": "66",
@@ -309,8 +313,8 @@
    "py": 1824,
    "conf": "medium",
    "source": "qcore-3x",
-   "lat": 45.571556,
-   "lng": 15.292594
+   "lat": 45.57424,
+   "lng": 15.292379
   },
   {
    "bp": "67",
@@ -318,8 +322,8 @@
    "py": 1790,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.572226,
-   "lng": 15.292454
+   "lat": 45.574464,
+   "lng": 15.292327
   },
   {
    "bp": "68",
@@ -327,8 +331,8 @@
    "py": 1775,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.572522,
-   "lng": 15.29265
+   "lat": 45.574564,
+   "lng": 15.292391
   },
   {
    "bp": "69",
@@ -336,8 +340,8 @@
    "py": 1901,
    "conf": "medium",
    "source": "q3",
-   "lat": 45.570038,
-   "lng": 15.295912
+   "lat": 45.573743,
+   "lng": 15.293496
   },
   {
    "bp": "70",
@@ -345,8 +349,8 @@
    "py": 1883,
    "conf": "medium",
    "source": "q3",
-   "lat": 45.570393,
-   "lng": 15.296362
+   "lat": 45.573864,
+   "lng": 15.293644
   },
   {
    "bp": "71",
@@ -354,8 +358,8 @@
    "py": 1861,
    "conf": "medium",
    "source": "q3",
-   "lat": 45.570827,
-   "lng": 15.295574
+   "lat": 45.574007,
+   "lng": 15.293378
   },
   {
    "bp": "72",
@@ -363,8 +367,8 @@
    "py": 1798,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.572069,
-   "lng": 15.294309
+   "lat": 45.574418,
+   "lng": 15.292947
   },
   {
    "bp": "73",
@@ -377,8 +381,8 @@
    "owner": "Penzig Stuffe Leuthold zu Grüble",
    "owner_status": "REVIEW-CONFLICT",
    "owner_page": 31,
-   "lat": 45.573035,
-   "lng": 15.293691
+   "lat": 45.57474,
+   "lng": 15.292734
   },
   {
    "bp": "74",
@@ -386,8 +390,8 @@
    "py": 1848,
    "conf": "high",
    "source": "q3",
-   "lat": 45.571083,
-   "lng": 15.297514
+   "lat": 45.574099,
+   "lng": 15.294023
   },
   {
    "bp": "75",
@@ -395,8 +399,8 @@
    "py": 1767,
    "conf": "medium",
    "source": "q3",
-   "lat": 45.57268,
-   "lng": 15.297486
+   "lat": 45.574634,
+   "lng": 15.294002
   },
   {
    "bp": "76",
@@ -409,8 +413,8 @@
    "owner": "Brincz Maria Bäuerin zu Grübln",
    "owner_status": "REVIEW-CONFLICT",
    "owner_page": 5,
-   "lat": 45.572561,
-   "lng": 15.294
+   "lat": 45.574582,
+   "lng": 15.29284
   },
   {
    "bp": "77",
@@ -418,8 +422,8 @@
    "py": 1742,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.573173,
-   "lng": 15.292875
+   "lat": 45.574783,
+   "lng": 15.292461
   },
   {
    "bp": "78",
@@ -427,8 +431,8 @@
    "py": 1743,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.573153,
-   "lng": 15.294281
+   "lat": 45.574782,
+   "lng": 15.29293
   },
   {
    "bp": "79",
@@ -436,8 +440,8 @@
    "py": 1725,
    "conf": "high",
    "source": "qcore-3x",
-   "lat": 45.573508,
-   "lng": 15.291132
+   "lat": 45.574889,
+   "lng": 15.291877
   },
   {
    "bp": "82",
@@ -447,8 +451,8 @@
    "source": "q1",
    "house_no": 45,
    "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
-   "lat": 45.575735,
-   "lng": 15.296811
+   "lat": 45.575656,
+   "lng": 15.293755
   },
   {
    "bp": "83",
@@ -458,8 +462,8 @@
    "source": "q1",
    "house_no": 45,
    "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
-   "lat": 45.57609,
-   "lng": 15.297458
+   "lat": 45.575777,
+   "lng": 15.293968
   },
   {
    "bp": "85",
@@ -472,8 +476,8 @@
    "owner": "Krischan / Peter / Bauer in Grübln",
    "owner_status": "VERIFIED-2x",
    "owner_page": 19,
-   "lat": 45.577175,
-   "lng": 15.297542
+   "lat": 45.576141,
+   "lng": 15.293988
   },
   {
    "bp": "86",
@@ -486,8 +490,8 @@
    "owner": "Krischan / Marla / Bauerin / zu Grübln",
    "owner_status": "REVIEW-CONFLICT",
    "owner_page": 18,
-   "lat": 45.576366,
-   "lng": 15.297992
+   "lat": 45.575872,
+   "lng": 15.294144
   },
   {
    "bp": "89",
@@ -500,8 +504,8 @@
    "owner": "Husitsch Maria Bauersleute / zu Grübln",
    "owner_status": "REVIEW",
    "owner_page": 11,
-   "lat": 45.577727,
-   "lng": 15.297795
+   "lat": 45.576327,
+   "lng": 15.294068
   },
   {
    "bp": "92",
@@ -514,8 +518,8 @@
    "owner": "Pöchinger Georg Leinwand Fabrikant",
    "owner_status": "REVIEW",
    "owner_page": 30,
-   "lat": 45.581571,
-   "lng": 15.299061
+   "lat": 45.57762,
+   "lng": 15.294462
   },
   {
    "bp": "93",
@@ -528,8 +532,8 @@
    "owner": "Pfarrer Rupert Sautter hiesig",
    "owner_status": "REVIEW",
    "owner_page": 29,
-   "lat": 45.575972,
-   "lng": 15.296052
+   "lat": 45.575733,
+   "lng": 15.2935
   },
   {
    "bp": "94",
@@ -542,8 +546,8 @@
    "owner": "Pfarrer Rupert Sautter hiesig",
    "owner_status": "VERIFIED-2x",
    "owner_page": 29,
-   "lat": 45.580467,
-   "lng": 15.298723
+   "lat": 45.577249,
+   "lng": 15.294358
   },
   {
    "bp": "95",
@@ -553,8 +557,8 @@
    "source": "q1",
    "house_no": 39,
    "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
-   "lat": 45.579954,
-   "lng": 15.297683
+   "lat": 45.577073,
+   "lng": 15.294015
   },
   {
    "bp": "98",
@@ -566,8 +570,8 @@
    "owner": "k.k. Zollamt",
    "owner_status": "VERIFIED-2x",
    "owner_page": 47,
-   "lat": 45.578771,
-   "lng": 15.298667
+   "lat": 45.57668,
+   "lng": 15.294351
   },
   {
    "bp": "99",
@@ -575,8 +579,8 @@
    "py": 1440,
    "conf": "high",
    "source": "q1",
-   "lat": 45.579126,
-   "lng": 15.298555
+   "lat": 45.576799,
+   "lng": 15.294311
   },
   {
    "bp": "100",
@@ -584,8 +588,8 @@
    "py": 1392,
    "conf": "high",
    "source": "q1",
-   "lat": 45.580073,
-   "lng": 15.299033
+   "lat": 45.577118,
+   "lng": 15.294464
   }
  ],
  "toponyms": [
@@ -594,66 +598,66 @@
    "px": 1670,
    "py": 1640,
    "source": "q1",
-   "lat": 45.575183,
-   "lng": 15.287477
+   "lat": 45.575438,
+   "lng": 15.290646
   },
   {
    "name": "na Kameniza",
    "px": 2343,
    "py": 1525,
    "source": "q2",
-   "lat": 45.577451,
-   "lng": 15.306399
+   "lat": 45.576265,
+   "lng": 15.296939
   },
   {
    "name": "Stupar Stih",
    "px": 2648,
    "py": 1420,
    "source": "q2",
-   "lat": 45.579521,
-   "lng": 15.314974
+   "lat": 45.57699,
+   "lng": 15.299784
   },
   {
    "name": "Zohlami",
    "px": 2015,
    "py": 2090,
    "source": "q3",
-   "lat": 45.566312,
-   "lng": 15.297177
+   "lat": 45.572499,
+   "lng": 15.293945
   },
   {
    "name": "Pod Griblani",
    "px": 1710,
    "py": 630,
    "source": "qtop",
-   "lat": 45.595095,
-   "lng": 15.288602
+   "lat": 45.582115,
+   "lng": 15.290876
   },
   {
    "name": "Lulischewki stz.",
    "px": 1750,
    "py": 880,
    "source": "qtop",
-   "lat": 45.590166,
-   "lng": 15.289726
+   "lat": 45.580467,
+   "lng": 15.291287
   },
   {
    "name": "Zohlanič",
    "px": 1913,
    "py": 1955,
    "source": "qcore",
-   "lat": 45.568973,
-   "lng": 15.294309
+   "lat": 45.573381,
+   "lng": 15.29297
   }
  ],
  "overlay": {
   "sw": [
-   45.562704,
-   15.240524
+   45.571086,
+   15.274753
   ],
   "ne": [
-   45.607515,
-   15.319979
+   45.58639,
+   15.301575
   ],
   "px_size": [
    2826,

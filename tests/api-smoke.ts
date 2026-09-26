@@ -409,24 +409,26 @@ ok(
 /* --- 5h. /api/atlas/map — PASS 5 podatkovni zemljevid (val 67, #42 §15) ------ */
 const atlasMap = await getJson("/api/atlas/map");
 ok(
-  "atlas map: layer=all — 34 MAP_OBJECT (24 A01 + 10 drugi listi), disclaimers (val 67)",
+  "atlas map: layer=all — 34 MAP_OBJECT (24 A01 + 10 drugi listi), GEOREF v2 disclaimer (val 72)",
   atlasMap.status === 200 &&
     atlasMap.body?.counts?.map_objects === 34 &&
     atlasMap.body?.counts?.map_objects_a01 === 24 &&
     atlasMap.body?.counts?.map_objects_other_sheets === 10 &&
-    String(atlasMap.body?.disclaimer).includes("PROVIZORIČNA"),
+    String(atlasMap.body?.disclaimer).includes("GEOREF v2") &&
+    String(atlasMap.body?.disclaimer).includes("±38 m"),
   `status=${atlasMap.status} objects=${atlasMap.body?.counts?.map_objects}`
 );
 const h40 = (atlasMap.body?.layers?.houses ?? []).find(
   (h: any) => h.node_id === "HOUSE:H-040"
 );
 ok(
-  "atlas map: hiša 40 locirana prek BP 94 → MO-A01-002, PROVIZORIČNO (val 67)",
+  "atlas map: hiša 40 locirana prek BP 94 → MO-A01-002, GEOREF v2 (val 72)",
   atlasMap.status === 200 &&
     h40?.located === true &&
     h40?.position?.via_bp === 94 &&
     h40?.position?.map_object === "MO:MO-A01-002" &&
-    typeof h40?.position?.lat === "number",
+    typeof h40?.position?.lat === "number" &&
+    String(h40?.position?.georef_status).includes("GEOREF v2"),
   `located=${h40?.located} via=${h40?.position?.via_bp}`
 );
 ok(
@@ -722,6 +724,33 @@ ok(
   "atlas story UI: nerešljiva referenta → 404 node_not_found (poštena napaka, ne izmišljotina)",
   stMissing.status === 404 && stMissing.body?.error === "node_not_found",
   `status=${stMissing.status}`
+);
+
+
+/* --- 5m. /api/atlas/georef — GEOREF PASS v2 (val 72, #42 §10) --------------- */
+const georefT = await getJson("/api/atlas/georef?transform=1");
+ok(
+  "atlas georef: transform=1 — skala 0,73 m/px + rotacija 0,88° + koordinatni okvir (§10)",
+  georefT.status === 200 &&
+    georefT.body?.ok === true &&
+    Math.abs(georefT.body?.transform?.scale_m_per_px - 0.730675) < 1e-5 &&
+    Math.abs(georefT.body?.transform?.rotation_deg - 0.8772) < 1e-3 &&
+    typeof georefT.body?.coordinate_frame?.lat0 === "number" &&
+    String(georefT.body?.disclaimer).includes("ni zgodovinski dokaz"),
+  `status=${georefT.status} scale=${georefT.body?.transform?.scale_m_per_px}`
+);
+const georefFull = await getJson("/api/atlas/georef");
+const gf = georefFull.body?.georef;
+ok(
+  "atlas georef: polni artefakt — findings F-GEO-01..04 + NEGATIVEN hišnoštevilski eksperiment + validacija 16,6 m",
+  georefFull.status === 200 &&
+    gf?.val === 72 &&
+    gf?.findings?.length === 4 &&
+    gf?.findings?.[0]?.id === "F-GEO-01" &&
+    String(gf?.findings?.[0]?.status).includes("RESOLVED-V72") &&
+    gf?.housenumber_experiment?.verdict === "NEGATIVE" &&
+    Math.abs(gf?.accuracy?.validation_v65_median_m - 16.6) < 0.05,
+  `status=${georefFull.status} findings=${gf?.findings?.length}`
 );
 
 /* --- izid ------------------------------------------------------------------ */

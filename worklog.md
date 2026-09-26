@@ -3525,3 +3525,28 @@ Stage Summary:
 - VSE TRI PLATFORME SINHRONIZIRANE z val 71: GitHub main @ cdbd312 · Vercel production (UI chunk dokazan) · Render mirror (chunk dokazan)
 - 400/400 testov + 88/88 dimnih + verify-i18n 1014 × 5; ATLAS 1825: podatkovni sklop (PASS 1–8) + UI zgodbe (§16/§19) = Definition of Done #42 V CELOTI IZPOLNJENA
 - Naslednje: georef PASS §10 · parcelni sloj rabe §19 · ob kvoti re-readi PS p56–143/PT p7 @300dpi/PR/PV · izven peskovnika šolski list/SA Podzemelj/SI AS 749/Zucchelli
+
+---
+Task ID: 30
+Agent: Z.ai Code (main orchestrator)
+Task: Val 72 — ISSUE #42 §10: GEOREF PASS v2 — reka Kolpa kot ravnalna črta (user: "analiziraj temeljito in preglej kje sem ostal in nadaljuj")
+
+Work Log:
+- Analiza stanja: main @ cdbd312 (val 71, Definition of Done #42 izpolnjena); worklog naslednje = georef §10 · parcelni sloj rabe §19 · ob kvoti re-readi · izven peskovnika viri; 400/400 testov baseline
+- RAZISKOVALNA FAZA: katasterjam.si nedosegljiv, mapire.eu plačljiv → sodobna podlaga = OSM prek Overpass mirrorja (maps.mail.ru); posnetki v research-griblje/raw-web-val72-2026-10/ (housenumbers 296, buildings+POI 800, reka Kolpa way 39699026, water poligoni) + README + verifikacijska slika
+- KLJUČNO ODKRITJE F-GEO-01: skala val 52–71 (~2,19 m/px) je MEŠALA LOČLJIVOSTI — 277 px merjeno na polni ločljivosti VAČ IIIF, delovni raster je ~3,3× manjši; reka je 523 m od sidra (OSM) = 750 px → prava skala ~0,69–0,73 m/px; VSE lat/lng val 52–71 raztegnjene do ±1–3 km na robovih (coverage val 70 »±200–500 m« preveč optimistično)
+- Hišnoštevilski eksperiment (potencialne kontrolne točke): 99 modernih številk v jedru vasi, 18 kandidatov prek BP↔hiša vezav, RANSAC-lite s skala-priorom → max konsenz 2/18 = NEGATIVE (F-GEO-03 OPEN — številčevanje spremenjeno ali PT branja napačna; resolucija PT p7 @300dpi; §14 nič skrito)
+- Builder build-georef-1825.py (determinističen, fail-fast, idempotenten): cool-mask sledenje reke (351 točk) ↔ centerline ICP-lite (trimirana 75 % MSE); 12 multi-startov z bounds (zaščita pred kolapsom s→0) + deterministična selekcija (vrata trimRMS ≤ 45 + validacija ≤ 40, min validacija — validacija SAMO izbira med kandidati, nikoli v loss-u); sidro val 52 = KONSTANTA v builderju (ujet bug ne-idempotence: builder je bral sidro iz datoteke, ki jo sam prepisuje — 2. zagon je dal drugo rešitev); I6 determinizem (re-fit identičen 1e-6)
+- REZULTAT: skala 0,7307 m/px · rotacija 0,88° (F-GEO-02 — list skoraj sever-navzgor) · trim-RMS ±38,2 m · neodvisna validacija: v65 stavbe (24) mediana 16,6 m, prior (43) mediana 20,3 m do najbližje sodobne stavbe · staro sidro premik 231 m
+- Posodobljeni izhodi: cadastre-a01.json (meta.georef v2 + scale_note + 56 stavb + 7 toponimov + overlay bbox čez 4 robove) · a01-building-inventory-1825.json (georef v2 blok + lat/lng) · KG v1.5 (MO-A01 koordinate + georef_status; claims/edges/ID-ji NESPREMENJENI; +KG-F08; kg_sha256 cbf32c2ede0f → story_id sprememba = §22 pogodba po predvideni poti) · story-graph + coverage val 72 (georeferencing: A01 VERIFIED — §10 minimum izpolnjen; A02–A05 še UNKNOWN) + 5 izpeljanih artefaktov
+- API: GET /api/atlas/georef (?transform=1) + runtime kopija src/data/georef-1825.json · atlas-map.ts: GEOREF_V2_A01 enotni status + disclaimer v2 (±38 m, zgodovinska geometrija ≠ sodobna podlaga §10)
+- UI: provisionalNote/overlayAlt/provisionalTitle/subtitle/mapAriaToday v vseh 5 jezikih (v2 poravnava, ±38 m, meja parcel se ne prikazuje §9) — verify-i18n 1014 × 5 zeleno
+- Popravki med razvojem: degeneriran multi-start kolaps (s→0) → bounds; selekcija trimRMS-alone nezanesljiva (reka ~36–43 m za različne (s,θ)) → validacijska vrata; overlay sw/ne iz 2 robovov pod rotacijo napačna → 4 robovi; idempotenca sidra (konstanta); Ne pid: builder prepisoval vhod ki ga bere
+- QA: tests/atlas-georef.test.ts 21 testov/451 expect (struktura, matematika: sidro roundtrip ±1 m + bbox f(s,θ,W,H) + staro sidro 231 m; konsistentnost vseh slojev; coverage; §10 označba i18n × 5; runtime=arhiv) → suite 421/421; tsc čist; lint čist; api-smoke 90/90 (+2 georef)
+- INFRA (peskovnik): griblje-museum dev :3000 (zamenjal scaffold); PostgreSQL = zonky embedded binaries (/tmp/pgdist, port 5432, baza postgres) ker @embedded-postgres rabi libicuuc.so.60 (ni na sistemu); .env + db:push + seed; POZOR: bun/Next nalaga PARENT /home/z/my-project/.env (SQLite URL) → env mora biti ekspliciten ob zagonu dev/seed
+- Dokumentacija: poročilo research-griblje/85-val72-atlas-1825-georef-pass2.md; README 125. sklop; 00-KAZALO vnos 85; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825 §10 GEOREF: A01 VERIFIED (±38 m, rotacija rešena, validirano na stavbah) · preostalo iz §10: A02–A05 sidro (cerkev @300dpi) + F-GEO-03 hišne številke + F-GEO-04 listno merilo
+- main bo @ merge val 72; 421 testov + 90/90 dimnih; KG v1.5 (3.309/3.569/622, koordinate v2); claims/ID-ji stabilni; +0 virov/+0 trditve/+0 UI (koordinatna resnica izboljšana, vsebina nespremenjena)
+- Naslednje: 1) push val 72 (žeton) + poročilo #42; 2) parcelni sloj rabe §19 (PS 432 parcel); 3) ob kvoti PS p56–143/PT p7 @300dpi/PR/PV; 4) izven peskovnika šolski list/SA Podzemelj/SI AS 749/Zucchelli

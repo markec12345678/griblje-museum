@@ -1,0 +1,10318 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-26T06:31:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 468486735,
+  "lat": 45.5893547,
+  "lon": 15.2772842,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "55",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "amenity": "restaurant",
+    "name": "Gostišče Kapušin",
+    "phone": "+386 (7) 369 91 50",
+    "ref:gurs:hs_mid": "13341729",
+    "source:addr": "GURS",
+    "tourism": "guest_house",
+    "website": "https://gostilna-kapusin.si/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133829,
+  "lat": 45.5751813,
+  "lon": 15.2614610,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2002-10-08"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133830,
+  "lat": 45.5761548,
+  "lon": 15.2646304,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "22",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133831,
+  "lat": 45.5778628,
+  "lon": 15.2653817,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "15",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133832,
+  "lat": 45.5742114,
+  "lon": 15.2645444,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "24A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2013-02-28"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133833,
+  "lat": 45.5767558,
+  "lon": 15.2654533,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133834,
+  "lat": 45.5774119,
+  "lon": 15.2657896,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133835,
+  "lat": 45.5757935,
+  "lon": 15.2652309,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133836,
+  "lat": 45.5740959,
+  "lon": 15.2639160,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "28",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133837,
+  "lat": 45.5751724,
+  "lon": 15.2653049,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2015-05-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133838,
+  "lat": 45.5782052,
+  "lon": 15.2651654,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "20",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133839,
+  "lat": 45.5750287,
+  "lon": 15.2652017,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133840,
+  "lat": 45.5748066,
+  "lon": 15.2639578,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133841,
+  "lat": 45.5746072,
+  "lon": 15.2646103,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "23",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133842,
+  "lat": 45.5763162,
+  "lon": 15.2610050,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2014-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133843,
+  "lat": 45.5762864,
+  "lon": 15.2622349,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133844,
+  "lat": 45.5761023,
+  "lon": 15.2640023,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133845,
+  "lat": 45.5754515,
+  "lon": 15.2613725,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133846,
+  "lat": 45.5764844,
+  "lon": 15.2621846,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133847,
+  "lat": 45.5772570,
+  "lon": 15.2666345,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "14",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133848,
+  "lat": 45.5756263,
+  "lon": 15.2636029,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "9",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133849,
+  "lat": 45.5740754,
+  "lon": 15.2649537,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133850,
+  "lat": 45.5766547,
+  "lon": 15.2663754,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "25",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133851,
+  "lat": 45.5767188,
+  "lon": 15.2658760,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "16",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133852,
+  "lat": 45.5756637,
+  "lon": 15.2629880,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "8",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133853,
+  "lat": 45.5755412,
+  "lon": 15.2614755,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "27",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133854,
+  "lat": 45.5745990,
+  "lon": 15.2642515,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "24",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133855,
+  "lat": 45.5763917,
+  "lon": 15.2672198,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "13",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133856,
+  "lat": 45.5765302,
+  "lon": 15.2618517,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133857,
+  "lat": 45.5760501,
+  "lon": 15.2671029,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "25B",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133858,
+  "lat": 45.5764554,
+  "lon": 15.2669510,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "12",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2000-03-09"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133859,
+  "lat": 45.5759976,
+  "lon": 15.2625667,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "26",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133860,
+  "lat": 45.5771418,
+  "lon": 15.2658395,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133861,
+  "lat": 45.5771154,
+  "lon": 15.2656088,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320254,
+  "lat": 45.5683871,
+  "lon": 15.2912546,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "20",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320255,
+  "lat": 45.5675029,
+  "lon": 15.2921596,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2009-05-11"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320256,
+  "lat": 45.5680807,
+  "lon": 15.2914196,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320257,
+  "lat": 45.5682244,
+  "lon": 15.2915612,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2013-11-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320258,
+  "lat": 45.5676099,
+  "lon": 15.2925445,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320259,
+  "lat": 45.5681247,
+  "lon": 15.2918426,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320260,
+  "lat": 45.5682964,
+  "lon": 15.2915232,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2014-01-28"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320261,
+  "lat": 45.5673924,
+  "lon": 15.2931711,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "16",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-12-27"
+  }
+},
+{
+  "type": "node",
+  "id": 4974226912,
+  "lat": 45.5722527,
+  "lon": 15.2927225,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "35B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974226914,
+  "lat": 45.5726614,
+  "lon": 15.2947490,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "69",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2013-10-24"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232422,
+  "lat": 45.5726154,
+  "lon": 15.2951331,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "69A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-10-07"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232425,
+  "lat": 45.5721848,
+  "lon": 15.2946184,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "68C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2015-01-23"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232427,
+  "lat": 45.5746741,
+  "lon": 15.2923892,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "74A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2004-05-17"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232428,
+  "lat": 45.5744008,
+  "lon": 15.2937075,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "78",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232429,
+  "lat": 45.5734028,
+  "lon": 15.2933819,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "72",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2014-04-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232430,
+  "lat": 45.5735280,
+  "lon": 15.2936773,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "71",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232431,
+  "lat": 45.5730279,
+  "lon": 15.2922012,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "63A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2008-12-04"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232432,
+  "lat": 45.5747272,
+  "lon": 15.2927354,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "75A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232433,
+  "lat": 45.5733498,
+  "lon": 15.2930101,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "66",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232434,
+  "lat": 45.5733508,
+  "lon": 15.2926129,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232435,
+  "lat": 45.5732076,
+  "lon": 15.2922918,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65D",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2015-05-18"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232436,
+  "lat": 45.5735047,
+  "lon": 15.2922549,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1996-10-30"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232437,
+  "lat": 45.5742398,
+  "lon": 15.2933350,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "76",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232438,
+  "lat": 45.5744310,
+  "lon": 15.2924520,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "74",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232439,
+  "lat": 45.5744978,
+  "lon": 15.2944639,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "80A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232440,
+  "lat": 45.5730712,
+  "lon": 15.2928677,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2014-06-13"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232441,
+  "lat": 45.5728003,
+  "lon": 15.2932122,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "67",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232442,
+  "lat": 45.5740705,
+  "lon": 15.2926679,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "73",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232443,
+  "lat": 45.5730325,
+  "lon": 15.2938925,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "68",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232444,
+  "lat": 45.5735782,
+  "lon": 15.2951510,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "70",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232445,
+  "lat": 45.5745196,
+  "lon": 15.2929906,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "75",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232446,
+  "lat": 45.5733795,
+  "lon": 15.2919212,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2000-10-09"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232447,
+  "lat": 45.5740318,
+  "lon": 15.2937055,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "77",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232448,
+  "lat": 45.5757426,
+  "lon": 15.2932916,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "85",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232449,
+  "lat": 45.5754199,
+  "lon": 15.2928287,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "84B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-04-28"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232450,
+  "lat": 45.5754207,
+  "lon": 15.2924827,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "83A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232451,
+  "lat": 45.5761448,
+  "lon": 15.2943444,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "89A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232452,
+  "lat": 45.5757936,
+  "lon": 15.2944451,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "90",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232453,
+  "lat": 45.5763898,
+  "lon": 15.2935513,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "87A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232454,
+  "lat": 45.5762976,
+  "lon": 15.2944093,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "89B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232455,
+  "lat": 45.5748422,
+  "lon": 15.2935304,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "79",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232456,
+  "lat": 45.5750060,
+  "lon": 15.2928009,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "83",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232457,
+  "lat": 45.5751481,
+  "lon": 15.2935448,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "81",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232458,
+  "lat": 45.5768303,
+  "lon": 15.2937074,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "86",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232459,
+  "lat": 45.5749490,
+  "lon": 15.2939666,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "80",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232460,
+  "lat": 45.5765676,
+  "lon": 15.2943851,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "88",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232461,
+  "lat": 45.5752356,
+  "lon": 15.2944934,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "91",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232462,
+  "lat": 45.5761799,
+  "lon": 15.2947034,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "89",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232463,
+  "lat": 45.5764094,
+  "lon": 15.2929235,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "93",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232464,
+  "lat": 45.5764070,
+  "lon": 15.2938589,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "87",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232465,
+  "lat": 45.5756812,
+  "lon": 15.2926635,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "84A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2004-11-12"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232466,
+  "lat": 45.5754366,
+  "lon": 15.2933029,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "84",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232467,
+  "lat": 45.5751397,
+  "lon": 15.2933013,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "82",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 9924963016,
+  "lat": 45.5939079,
+  "lon": 15.2840636,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "name": "Kamp Krasinec",
+    "tourism": "camp_site"
+  }
+},
+{
+  "type": "node",
+  "id": 9956722510,
+  "lat": 45.6043173,
+  "lon": 15.2762919,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "amenity": "restaurant",
+    "ref:gurs:hs_mid": "19999122"
+  }
+},
+{
+  "type": "node",
+  "id": 12091665450,
+  "lat": 45.5893544,
+  "lon": 15.2772297,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "55",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "amenity": "events_venue",
+    "ref:gurs:hs_mid": "13341729",
+    "source:addr": "GURS",
+    "website": "https://gostilna-kapusin.si/dogodki/"
+  }
+},
+{
+  "type": "way",
+  "id": 284839242,
+  "center": {
+    "lat": 45.5759648,
+    "lon": 15.2933097
+  },
+  "tags": {
+    "building": "shed"
+  }
+},
+{
+  "type": "way",
+  "id": 284839243,
+  "center": {
+    "lat": 45.5768523,
+    "lon": 15.2937222
+  },
+  "tags": {
+    "abandoned": "yes",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839244,
+  "center": {
+    "lat": 45.5765877,
+    "lon": 15.2943248
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839245,
+  "center": {
+    "lat": 45.5769591,
+    "lon": 15.2935749
+  },
+  "tags": {
+    "abandoned": "yes",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839247,
+  "center": {
+    "lat": 45.5751466,
+    "lon": 15.2933018
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "83",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839249,
+  "center": {
+    "lat": 45.5762242,
+    "lon": 15.2946787
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839251,
+  "center": {
+    "lat": 45.5763659,
+    "lon": 15.2943672
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839252,
+  "center": {
+    "lat": 45.5757514,
+    "lon": 15.2924393
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839253,
+  "center": {
+    "lat": 45.5754291,
+    "lon": 15.2932730
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "84",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839254,
+  "center": {
+    "lat": 45.5763866,
+    "lon": 15.2947628
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839256,
+  "center": {
+    "lat": 45.5756786,
+    "lon": 15.2926474
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839257,
+  "center": {
+    "lat": 45.5751782,
+    "lon": 15.2929661
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839258,
+  "center": {
+    "lat": 45.5752242,
+    "lon": 15.2931624
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839259,
+  "center": {
+    "lat": 45.5758503,
+    "lon": 15.2946833
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839261,
+  "center": {
+    "lat": 45.5751371,
+    "lon": 15.2926927
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839262,
+  "center": {
+    "lat": 45.5759012,
+    "lon": 15.2951553
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839263,
+  "center": {
+    "lat": 45.5758885,
+    "lon": 15.2937208
+  },
+  "tags": {
+    "building": "shed"
+  }
+},
+{
+  "type": "way",
+  "id": 284839264,
+  "center": {
+    "lat": 45.5749859,
+    "lon": 15.2927487
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839266,
+  "center": {
+    "lat": 45.5761394,
+    "lon": 15.2943430
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839267,
+  "center": {
+    "lat": 45.5754131,
+    "lon": 15.2924475
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839268,
+  "center": {
+    "lat": 45.5754692,
+    "lon": 15.2931213
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839269,
+  "center": {
+    "lat": 45.5755310,
+    "lon": 15.2947035
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839271,
+  "center": {
+    "lat": 45.5764877,
+    "lon": 15.2931017
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839272,
+  "center": {
+    "lat": 45.5756399,
+    "lon": 15.2944725
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839274,
+  "center": {
+    "lat": 45.5764093,
+    "lon": 15.2938790
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839276,
+  "center": {
+    "lat": 45.5758137,
+    "lon": 15.2944130
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839277,
+  "center": {
+    "lat": 45.5764080,
+    "lon": 15.2935133
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839279,
+  "center": {
+    "lat": 45.5764196,
+    "lon": 15.2929177
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839281,
+  "center": {
+    "lat": 45.5752808,
+    "lon": 15.2924008
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839282,
+  "center": {
+    "lat": 45.5752199,
+    "lon": 15.2937814
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839284,
+  "center": {
+    "lat": 45.5754176,
+    "lon": 15.2938266
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839286,
+  "center": {
+    "lat": 45.5753283,
+    "lon": 15.2944822
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839287,
+  "center": {
+    "lat": 45.5766699,
+    "lon": 15.2940724
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839289,
+  "center": {
+    "lat": 45.5753885,
+    "lon": 15.2946258
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839290,
+  "center": {
+    "lat": 45.5765763,
+    "lon": 15.2938557
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839291,
+  "center": {
+    "lat": 45.5750687,
+    "lon": 15.2937669
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839292,
+  "center": {
+    "lat": 45.5751425,
+    "lon": 15.2935668
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839293,
+  "center": {
+    "lat": 45.5755271,
+    "lon": 15.2941721
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839295,
+  "center": {
+    "lat": 45.5754410,
+    "lon": 15.2927890
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839298,
+  "center": {
+    "lat": 45.5757880,
+    "lon": 15.2933109
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "85",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841652,
+  "center": {
+    "lat": 45.5746010,
+    "lon": 15.2925604
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841653,
+  "center": {
+    "lat": 45.5744576,
+    "lon": 15.2924070
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841654,
+  "center": {
+    "lat": 45.5748933,
+    "lon": 15.2935582
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841655,
+  "center": {
+    "lat": 45.5746997,
+    "lon": 15.2933990
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841656,
+  "center": {
+    "lat": 45.5745338,
+    "lon": 15.2929912
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841657,
+  "center": {
+    "lat": 45.5747484,
+    "lon": 15.2938196
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841658,
+  "center": {
+    "lat": 45.5750106,
+    "lon": 15.2943020
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841659,
+  "center": {
+    "lat": 45.5749807,
+    "lon": 15.2939648
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841660,
+  "center": {
+    "lat": 45.5744578,
+    "lon": 15.2937049
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841661,
+  "center": {
+    "lat": 45.5746245,
+    "lon": 15.2936602
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841662,
+  "center": {
+    "lat": 45.5742218,
+    "lon": 15.2933423
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841663,
+  "center": {
+    "lat": 45.5747355,
+    "lon": 15.2923921
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841664,
+  "center": {
+    "lat": 45.5742362,
+    "lon": 15.2934884
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841665,
+  "center": {
+    "lat": 45.5746488,
+    "lon": 15.2941216
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841666,
+  "center": {
+    "lat": 45.5748551,
+    "lon": 15.2941822
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841667,
+  "center": {
+    "lat": 45.5746881,
+    "lon": 15.2927713
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841668,
+  "center": {
+    "lat": 45.5745453,
+    "lon": 15.2944349
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284841669,
+  "center": {
+    "lat": 45.5743357,
+    "lon": 15.2938447
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846637,
+  "center": {
+    "lat": 45.5730605,
+    "lon": 15.2915411
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846638,
+  "center": {
+    "lat": 45.5740232,
+    "lon": 15.2932969
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846639,
+  "center": {
+    "lat": 45.5735025,
+    "lon": 15.2926963
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846640,
+  "center": {
+    "lat": 45.5734111,
+    "lon": 15.2933750
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846641,
+  "center": {
+    "lat": 45.5733946,
+    "lon": 15.2937601
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846642,
+  "center": {
+    "lat": 45.5730331,
+    "lon": 15.2932248
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846643,
+  "center": {
+    "lat": 45.5735707,
+    "lon": 15.2936299
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846644,
+  "center": {
+    "lat": 45.5734291,
+    "lon": 15.2919410
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846645,
+  "center": {
+    "lat": 45.5730550,
+    "lon": 15.2930860
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846646,
+  "center": {
+    "lat": 45.5729917,
+    "lon": 15.2944970
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846647,
+  "center": {
+    "lat": 45.5731255,
+    "lon": 15.2941607
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846648,
+  "center": {
+    "lat": 45.5738356,
+    "lon": 15.2911348
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846649,
+  "center": {
+    "lat": 45.5732557,
+    "lon": 15.2930979
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846651,
+  "center": {
+    "lat": 45.5736014,
+    "lon": 15.2950943
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846652,
+  "center": {
+    "lat": 45.5736138,
+    "lon": 15.2940608
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846653,
+  "center": {
+    "lat": 45.5738948,
+    "lon": 15.2939025
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846655,
+  "center": {
+    "lat": 45.5733827,
+    "lon": 15.2926127
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846656,
+  "center": {
+    "lat": 45.5730405,
+    "lon": 15.2942318
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846657,
+  "center": {
+    "lat": 45.5740762,
+    "lon": 15.2926810
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846658,
+  "center": {
+    "lat": 45.5737470,
+    "lon": 15.2931193
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846660,
+  "center": {
+    "lat": 45.5731585,
+    "lon": 15.2916426
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846663,
+  "center": {
+    "lat": 45.5739427,
+    "lon": 15.2936217
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846665,
+  "center": {
+    "lat": 45.5733893,
+    "lon": 15.2930029
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846667,
+  "center": {
+    "lat": 45.5736824,
+    "lon": 15.2913224
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846669,
+  "center": {
+    "lat": 45.5733792,
+    "lon": 15.2927939
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846671,
+  "center": {
+    "lat": 45.5728619,
+    "lon": 15.2918933
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846674,
+  "center": {
+    "lat": 45.5734446,
+    "lon": 15.2931321
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846676,
+  "center": {
+    "lat": 45.5735638,
+    "lon": 15.2914237
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846678,
+  "center": {
+    "lat": 45.5737448,
+    "lon": 15.2925379
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846680,
+  "center": {
+    "lat": 45.5737143,
+    "lon": 15.2933007
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846682,
+  "center": {
+    "lat": 45.5736073,
+    "lon": 15.2929507
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846684,
+  "center": {
+    "lat": 45.5739004,
+    "lon": 15.2923358
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846686,
+  "center": {
+    "lat": 45.5732555,
+    "lon": 15.2922893
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846688,
+  "center": {
+    "lat": 45.5735701,
+    "lon": 15.2922779
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846690,
+  "center": {
+    "lat": 45.5730594,
+    "lon": 15.2938631
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846691,
+  "center": {
+    "lat": 45.5731634,
+    "lon": 15.2931459
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846692,
+  "center": {
+    "lat": 45.5735371,
+    "lon": 15.2942053
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846694,
+  "center": {
+    "lat": 45.5742439,
+    "lon": 15.2929629
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846696,
+  "center": {
+    "lat": 45.5740762,
+    "lon": 15.2937205
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846698,
+  "center": {
+    "lat": 45.5733553,
+    "lon": 15.2939925
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846700,
+  "center": {
+    "lat": 45.5741800,
+    "lon": 15.2927977
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846702,
+  "center": {
+    "lat": 45.5733239,
+    "lon": 15.2924745
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846704,
+  "center": {
+    "lat": 45.5732444,
+    "lon": 15.2928285
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846705,
+  "center": {
+    "lat": 45.5734249,
+    "lon": 15.2942459
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846707,
+  "center": {
+    "lat": 45.5733707,
+    "lon": 15.2912746
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846709,
+  "center": {
+    "lat": 45.5731062,
+    "lon": 15.2928525
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846712,
+  "center": {
+    "lat": 45.5730180,
+    "lon": 15.2912420
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846714,
+  "center": {
+    "lat": 45.5728490,
+    "lon": 15.2932167
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846717,
+  "center": {
+    "lat": 45.5735130,
+    "lon": 15.2909915
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846719,
+  "center": {
+    "lat": 45.5734053,
+    "lon": 15.2915096
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846721,
+  "center": {
+    "lat": 45.5737162,
+    "lon": 15.2938754
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846723,
+  "center": {
+    "lat": 45.5739705,
+    "lon": 15.2928895
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846725,
+  "center": {
+    "lat": 45.5729700,
+    "lon": 15.2947719
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846727,
+  "center": {
+    "lat": 45.5730317,
+    "lon": 15.2921868
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284846729,
+  "center": {
+    "lat": 45.5736824,
+    "lon": 15.2942251
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284847361,
+  "center": {
+    "lat": 45.5676711,
+    "lon": 15.2903638
+  },
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Sv. Vid",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 284847362,
+  "center": {
+    "lat": 45.5674787,
+    "lon": 15.2901134
+  },
+  "tags": {
+    "building": "chapel"
+  }
+},
+{
+  "type": "way",
+  "id": 284848381,
+  "center": {
+    "lat": 45.5680565,
+    "lon": 15.2907332
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848382,
+  "center": {
+    "lat": 45.5681050,
+    "lon": 15.2909400
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848383,
+  "center": {
+    "lat": 45.5683192,
+    "lon": 15.2921943
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848384,
+  "center": {
+    "lat": 45.5680773,
+    "lon": 15.2920228
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848385,
+  "center": {
+    "lat": 45.5678362,
+    "lon": 15.2912500
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848386,
+  "center": {
+    "lat": 45.5682750,
+    "lon": 15.2924802
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848387,
+  "center": {
+    "lat": 45.5681437,
+    "lon": 15.2914544
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848388,
+  "center": {
+    "lat": 45.5682549,
+    "lon": 15.2913378
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848389,
+  "center": {
+    "lat": 45.5676161,
+    "lon": 15.2925587
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848390,
+  "center": {
+    "lat": 45.5675092,
+    "lon": 15.2921091
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848391,
+  "center": {
+    "lat": 45.5683001,
+    "lon": 15.2915394
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848392,
+  "center": {
+    "lat": 45.5685711,
+    "lon": 15.2913930
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848393,
+  "center": {
+    "lat": 45.5684382,
+    "lon": 15.2912865
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848394,
+  "center": {
+    "lat": 45.5672959,
+    "lon": 15.2928099
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848395,
+  "center": {
+    "lat": 45.5685390,
+    "lon": 15.2909643
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848397,
+  "center": {
+    "lat": 45.5671634,
+    "lon": 15.2926864
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848398,
+  "center": {
+    "lat": 45.5673459,
+    "lon": 15.2924084
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848399,
+  "center": {
+    "lat": 45.5674783,
+    "lon": 15.2926797
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848400,
+  "center": {
+    "lat": 45.5680405,
+    "lon": 15.2912536
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848401,
+  "center": {
+    "lat": 45.5671682,
+    "lon": 15.2930216
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848402,
+  "center": {
+    "lat": 45.5674176,
+    "lon": 15.2931866
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284848403,
+  "center": {
+    "lat": 45.5681560,
+    "lon": 15.2918757
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850479,
+  "center": {
+    "lat": 45.5702074,
+    "lon": 15.2937138
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850480,
+  "center": {
+    "lat": 45.5691284,
+    "lon": 15.2948409
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850481,
+  "center": {
+    "lat": 45.5689262,
+    "lon": 15.2934402
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850482,
+  "center": {
+    "lat": 45.5693593,
+    "lon": 15.2941807
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850483,
+  "center": {
+    "lat": 45.5687749,
+    "lon": 15.2933636
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 284850484,
+  "center": {
+    "lat": 45.5694903,
+    "lon": 15.2935560
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "28",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850485,
+  "center": {
+    "lat": 45.5698385,
+    "lon": 15.2931464
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "29A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850486,
+  "center": {
+    "lat": 45.5703286,
+    "lon": 15.2946500
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30E",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850487,
+  "center": {
+    "lat": 45.5687990,
+    "lon": 15.2942177
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "24",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850488,
+  "center": {
+    "lat": 45.5694831,
+    "lon": 15.2939631
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "27",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850489,
+  "center": {
+    "lat": 45.5700406,
+    "lon": 15.2939913
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850490,
+  "center": {
+    "lat": 45.5700976,
+    "lon": 15.2942021
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850491,
+  "center": {
+    "lat": 45.5693013,
+    "lon": 15.2939552
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850492,
+  "center": {
+    "lat": 45.5692386,
+    "lon": 15.2936143
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "26",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850493,
+  "center": {
+    "lat": 45.5693335,
+    "lon": 15.2934491
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850494,
+  "center": {
+    "lat": 45.5691903,
+    "lon": 15.2940218
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850495,
+  "center": {
+    "lat": 45.5698598,
+    "lon": 15.2934085
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 284850496,
+  "center": {
+    "lat": 45.5698161,
+    "lon": 15.2940673
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850497,
+  "center": {
+    "lat": 45.5690093,
+    "lon": 15.2941223
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850498,
+  "center": {
+    "lat": 45.5688342,
+    "lon": 15.2944178
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850499,
+  "center": {
+    "lat": 45.5695705,
+    "lon": 15.2941570
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 284850500,
+  "center": {
+    "lat": 45.5702307,
+    "lon": 15.2942817
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850501,
+  "center": {
+    "lat": 45.5690251,
+    "lon": 15.2943513
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284851563,
+  "center": {
+    "lat": 45.5695854,
+    "lon": 15.2979084
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25D",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "amenity": "cafe",
+    "building": "yes",
+    "indoor_seating": "yes",
+    "name": "Pri Slapu",
+    "old_name": "Bar Breg",
+    "outdoor_seating": "terrace"
+  }
+},
+{
+  "type": "way",
+  "id": 284852343,
+  "center": {
+    "lat": 45.5707182,
+    "lon": 15.2895005
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284852346,
+  "center": {
+    "lat": 45.5708546,
+    "lon": 15.2889104
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284852347,
+  "center": {
+    "lat": 45.5708855,
+    "lon": 15.2885859
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284852348,
+  "center": {
+    "lat": 45.5700721,
+    "lon": 15.2887119
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284852349,
+  "center": {
+    "lat": 45.5702932,
+    "lon": 15.2886744
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284852350,
+  "center": {
+    "lat": 45.5703383,
+    "lon": 15.2889112
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284852351,
+  "center": {
+    "lat": 45.5706313,
+    "lon": 15.2890696
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866438,
+  "center": {
+    "lat": 45.5715093,
+    "lon": 15.2908050
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "46",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866439,
+  "center": {
+    "lat": 45.5710394,
+    "lon": 15.2907767
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 284866440,
+  "center": {
+    "lat": 45.5708458,
+    "lon": 15.2895888
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866441,
+  "center": {
+    "lat": 45.5718988,
+    "lon": 15.2900582
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866442,
+  "center": {
+    "lat": 45.5713459,
+    "lon": 15.2892351
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866443,
+  "center": {
+    "lat": 45.5729328,
+    "lon": 15.2895223
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "58",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866444,
+  "center": {
+    "lat": 45.5716661,
+    "lon": 15.2908641
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866445,
+  "center": {
+    "lat": 45.5722386,
+    "lon": 15.2906973
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 284866446,
+  "center": {
+    "lat": 45.5726684,
+    "lon": 15.2894277
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "55",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866447,
+  "center": {
+    "lat": 45.5709551,
+    "lon": 15.2900006
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866448,
+  "center": {
+    "lat": 45.5717622,
+    "lon": 15.2896265
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866449,
+  "center": {
+    "lat": 45.5714780,
+    "lon": 15.2905124
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866450,
+  "center": {
+    "lat": 45.5722103,
+    "lon": 15.2898065
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "57",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866451,
+  "center": {
+    "lat": 45.5714340,
+    "lon": 15.2916003
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "42",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866452,
+  "center": {
+    "lat": 45.5710855,
+    "lon": 15.2911093
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "48",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866453,
+  "center": {
+    "lat": 45.5724753,
+    "lon": 15.2910692
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "61A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866454,
+  "center": {
+    "lat": 45.5721805,
+    "lon": 15.2895192
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "56",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866455,
+  "center": {
+    "lat": 45.5710443,
+    "lon": 15.2901841
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "51",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866456,
+  "center": {
+    "lat": 45.5718403,
+    "lon": 15.2897984
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866457,
+  "center": {
+    "lat": 45.5716484,
+    "lon": 15.2903021
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "45",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866458,
+  "center": {
+    "lat": 45.5723857,
+    "lon": 15.2901114
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866459,
+  "center": {
+    "lat": 45.5713706,
+    "lon": 15.2909922
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 284866460,
+  "center": {
+    "lat": 45.5713119,
+    "lon": 15.2904571
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "50",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866461,
+  "center": {
+    "lat": 45.5719541,
+    "lon": 15.2895404
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866462,
+  "center": {
+    "lat": 45.5718114,
+    "lon": 15.2901988
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866463,
+  "center": {
+    "lat": 45.5711328,
+    "lon": 15.2899354
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866464,
+  "center": {
+    "lat": 45.5713733,
+    "lon": 15.2895947
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284866465,
+  "center": {
+    "lat": 45.5726134,
+    "lon": 15.2898561
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "60",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866466,
+  "center": {
+    "lat": 45.5713487,
+    "lon": 15.2906159
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "47",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866467,
+  "center": {
+    "lat": 45.5719471,
+    "lon": 15.2910737
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 285480701,
+  "center": {
+    "lat": 45.5652855,
+    "lon": 15.2935499
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480702,
+  "center": {
+    "lat": 45.5655399,
+    "lon": 15.2934793
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480703,
+  "center": {
+    "lat": 45.5657288,
+    "lon": 15.2926639
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480704,
+  "center": {
+    "lat": 45.5649583,
+    "lon": 15.2931583
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480705,
+  "center": {
+    "lat": 45.5652249,
+    "lon": 15.2932086
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480708,
+  "center": {
+    "lat": 45.5653934,
+    "lon": 15.2943038
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480710,
+  "center": {
+    "lat": 45.5653277,
+    "lon": 15.2950243
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480711,
+  "center": {
+    "lat": 45.5660934,
+    "lon": 15.2939308
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480712,
+  "center": {
+    "lat": 45.5656882,
+    "lon": 15.2928607
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480713,
+  "center": {
+    "lat": 45.5659310,
+    "lon": 15.2934554
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480714,
+  "center": {
+    "lat": 45.5654188,
+    "lon": 15.2926086
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480715,
+  "center": {
+    "lat": 45.5658966,
+    "lon": 15.2938696
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480717,
+  "center": {
+    "lat": 45.5658906,
+    "lon": 15.2932958
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480718,
+  "center": {
+    "lat": 45.5660387,
+    "lon": 15.2949109
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480720,
+  "center": {
+    "lat": 45.5660998,
+    "lon": 15.2926888
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480722,
+  "center": {
+    "lat": 45.5662925,
+    "lon": 15.2930809
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480723,
+  "center": {
+    "lat": 45.5652155,
+    "lon": 15.2941892
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480724,
+  "center": {
+    "lat": 45.5655841,
+    "lon": 15.2942332
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480725,
+  "center": {
+    "lat": 45.5665910,
+    "lon": 15.2931167
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480726,
+  "center": {
+    "lat": 45.5657566,
+    "lon": 15.2929906
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480727,
+  "center": {
+    "lat": 45.5657688,
+    "lon": 15.2946085
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480728,
+  "center": {
+    "lat": 45.5651566,
+    "lon": 15.2926436
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480729,
+  "center": {
+    "lat": 45.5651479,
+    "lon": 15.2924382
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480730,
+  "center": {
+    "lat": 45.5658027,
+    "lon": 15.2932546
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480732,
+  "center": {
+    "lat": 45.5656553,
+    "lon": 15.2939709
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480735,
+  "center": {
+    "lat": 45.5660888,
+    "lon": 15.2931279
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480738,
+  "center": {
+    "lat": 45.5653463,
+    "lon": 15.2938362
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480740,
+  "center": {
+    "lat": 45.5653924,
+    "lon": 15.2933313
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480741,
+  "center": {
+    "lat": 45.5664450,
+    "lon": 15.2941086
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480743,
+  "center": {
+    "lat": 45.5660811,
+    "lon": 15.2932542
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480746,
+  "center": {
+    "lat": 45.5659439,
+    "lon": 15.2931411
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480748,
+  "center": {
+    "lat": 45.5651326,
+    "lon": 15.2930033
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480750,
+  "center": {
+    "lat": 45.5656999,
+    "lon": 15.2942762
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480752,
+  "center": {
+    "lat": 45.5658746,
+    "lon": 15.2950650
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480754,
+  "center": {
+    "lat": 45.5655517,
+    "lon": 15.2937450
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480755,
+  "center": {
+    "lat": 45.5659962,
+    "lon": 15.2945957
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480756,
+  "center": {
+    "lat": 45.5661002,
+    "lon": 15.2952714
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480757,
+  "center": {
+    "lat": 45.5661981,
+    "lon": 15.2928593
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480758,
+  "center": {
+    "lat": 45.5663289,
+    "lon": 15.2927995
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285480759,
+  "center": {
+    "lat": 45.5657760,
+    "lon": 15.2935105
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484294,
+  "center": {
+    "lat": 45.5661508,
+    "lon": 15.2959987
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484295,
+  "center": {
+    "lat": 45.5665564,
+    "lon": 15.2973654
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484296,
+  "center": {
+    "lat": 45.5661674,
+    "lon": 15.2964629
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484298,
+  "center": {
+    "lat": 45.5669961,
+    "lon": 15.2970406
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484299,
+  "center": {
+    "lat": 45.5659026,
+    "lon": 15.2942650
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484300,
+  "center": {
+    "lat": 45.5661213,
+    "lon": 15.2969557
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484301,
+  "center": {
+    "lat": 45.5662737,
+    "lon": 15.2965235
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484302,
+  "center": {
+    "lat": 45.5660111,
+    "lon": 15.2942823
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484303,
+  "center": {
+    "lat": 45.5662567,
+    "lon": 15.2970108
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484304,
+  "center": {
+    "lat": 45.5662168,
+    "lon": 15.2961298
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484305,
+  "center": {
+    "lat": 45.5659523,
+    "lon": 15.2941354
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484306,
+  "center": {
+    "lat": 45.5658358,
+    "lon": 15.2941653
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484307,
+  "center": {
+    "lat": 45.5663050,
+    "lon": 15.2967761
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285484308,
+  "center": {
+    "lat": 45.5657538,
+    "lon": 15.2958434
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490840,
+  "center": {
+    "lat": 45.5727620,
+    "lon": 15.2952326
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490841,
+  "center": {
+    "lat": 45.5718770,
+    "lon": 15.2933072
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 285490842,
+  "center": {
+    "lat": 45.5714210,
+    "lon": 15.2943778
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "31A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490843,
+  "center": {
+    "lat": 45.5718410,
+    "lon": 15.2929552
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "35",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490845,
+  "center": {
+    "lat": 45.5718574,
+    "lon": 15.2949966
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490846,
+  "center": {
+    "lat": 45.5725791,
+    "lon": 15.2933388
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490847,
+  "center": {
+    "lat": 45.5717561,
+    "lon": 15.2916062
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490848,
+  "center": {
+    "lat": 45.5725934,
+    "lon": 15.2934876
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490849,
+  "center": {
+    "lat": 45.5722941,
+    "lon": 15.2917509
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490851,
+  "center": {
+    "lat": 45.5726430,
+    "lon": 15.2951169
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490852,
+  "center": {
+    "lat": 45.5713775,
+    "lon": 15.2940771
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "31B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490853,
+  "center": {
+    "lat": 45.5718086,
+    "lon": 15.2950965
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490856,
+  "center": {
+    "lat": 45.5716037,
+    "lon": 15.2925761
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490857,
+  "center": {
+    "lat": 45.5712664,
+    "lon": 15.2927451
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "37",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490858,
+  "center": {
+    "lat": 45.5726657,
+    "lon": 15.2919317
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490860,
+  "center": {
+    "lat": 45.5722031,
+    "lon": 15.2912937
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490861,
+  "center": {
+    "lat": 45.5719549,
+    "lon": 15.2914181
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490862,
+  "center": {
+    "lat": 45.5722950,
+    "lon": 15.2944432
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490863,
+  "center": {
+    "lat": 45.5726839,
+    "lon": 15.2947389
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490864,
+  "center": {
+    "lat": 45.5713350,
+    "lon": 15.2936846
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490865,
+  "center": {
+    "lat": 45.5715764,
+    "lon": 15.2928168
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "36",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490866,
+  "center": {
+    "lat": 45.5720874,
+    "lon": 15.2913344
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490867,
+  "center": {
+    "lat": 45.5717025,
+    "lon": 15.2927747
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490868,
+  "center": {
+    "lat": 45.5726425,
+    "lon": 15.2917802
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490869,
+  "center": {
+    "lat": 45.5721279,
+    "lon": 15.2915342
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490870,
+  "center": {
+    "lat": 45.5722176,
+    "lon": 15.2946176
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490872,
+  "center": {
+    "lat": 45.5713862,
+    "lon": 15.2932044
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "33",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490874,
+  "center": {
+    "lat": 45.5717166,
+    "lon": 15.2919700
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490875,
+  "center": {
+    "lat": 45.5724060,
+    "lon": 15.2915394
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "41",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490876,
+  "center": {
+    "lat": 45.5718107,
+    "lon": 15.2948834
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "31",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490877,
+  "center": {
+    "lat": 45.5716018,
+    "lon": 15.2921060
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "38",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490878,
+  "center": {
+    "lat": 45.5714934,
+    "lon": 15.2922888
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 285490879,
+  "center": {
+    "lat": 45.5718131,
+    "lon": 15.2952666
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490881,
+  "center": {
+    "lat": 45.5722572,
+    "lon": 15.2927174
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285490882,
+  "center": {
+    "lat": 45.5716497,
+    "lon": 15.2932438
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "34",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491626,
+  "center": {
+    "lat": 45.5709520,
+    "lon": 15.2943416
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 285491627,
+  "center": {
+    "lat": 45.5719887,
+    "lon": 15.2906968
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "43",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491628,
+  "center": {
+    "lat": 45.5710432,
+    "lon": 15.2939643
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285491629,
+  "center": {
+    "lat": 45.5710245,
+    "lon": 15.2941874
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285491630,
+  "center": {
+    "lat": 45.5718279,
+    "lon": 15.2906387
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "44",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491631,
+  "center": {
+    "lat": 45.5707337,
+    "lon": 15.2938789
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491632,
+  "center": {
+    "lat": 45.5706502,
+    "lon": 15.2942797
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "30A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491633,
+  "center": {
+    "lat": 45.5721348,
+    "lon": 15.2917908
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285491634,
+  "center": {
+    "lat": 45.5720074,
+    "lon": 15.2918128
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285491635,
+  "center": {
+    "lat": 45.5719115,
+    "lon": 15.2920644
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 285491636,
+  "center": {
+    "lat": 45.5719439,
+    "lon": 15.2905344
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 301458124,
+  "center": {
+    "lat": 45.5914768,
+    "lon": 15.2612732
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "30",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20029994",
+    "ref:gurs:sta_sid": "20021939",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 301458125,
+  "center": {
+    "lat": 45.5917149,
+    "lon": 15.2617010
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 454577611,
+  "center": {
+    "lat": 45.5772075,
+    "lon": 15.3012842
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577613,
+  "center": {
+    "lat": 45.5756448,
+    "lon": 15.3013845
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577614,
+  "center": {
+    "lat": 45.5763139,
+    "lon": 15.3014824
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577615,
+  "center": {
+    "lat": 45.5773567,
+    "lon": 15.3011882
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577617,
+  "center": {
+    "lat": 45.5698423,
+    "lon": 15.2998906
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577618,
+  "center": {
+    "lat": 45.5700140,
+    "lon": 15.2999558
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577619,
+  "center": {
+    "lat": 45.5698718,
+    "lon": 15.3002555
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577623,
+  "center": {
+    "lat": 45.5697026,
+    "lon": 15.3001680
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577624,
+  "center": {
+    "lat": 45.5754955,
+    "lon": 15.3010786
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577625,
+  "center": {
+    "lat": 45.5755304,
+    "lon": 15.3012811
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577626,
+  "center": {
+    "lat": 45.5755405,
+    "lon": 15.3011428
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577628,
+  "center": {
+    "lat": 45.5700415,
+    "lon": 15.3003276
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577629,
+  "center": {
+    "lat": 45.5702059,
+    "lon": 15.3003487
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577630,
+  "center": {
+    "lat": 45.5756730,
+    "lon": 15.3009458
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577631,
+  "center": {
+    "lat": 45.5766295,
+    "lon": 15.3014490
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577632,
+  "center": {
+    "lat": 45.5766466,
+    "lon": 15.3012714
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577634,
+  "center": {
+    "lat": 45.5770208,
+    "lon": 15.3013472
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577635,
+  "center": {
+    "lat": 45.5761986,
+    "lon": 15.3010592
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577636,
+  "center": {
+    "lat": 45.5761833,
+    "lon": 15.3014208
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577637,
+  "center": {
+    "lat": 45.5762134,
+    "lon": 15.3013081
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577640,
+  "center": {
+    "lat": 45.5773205,
+    "lon": 15.3011098
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577641,
+  "center": {
+    "lat": 45.5774049,
+    "lon": 15.3012654
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577642,
+  "center": {
+    "lat": 45.5855476,
+    "lon": 15.2987402
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577643,
+  "center": {
+    "lat": 45.5854017,
+    "lon": 15.2989194
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577644,
+  "center": {
+    "lat": 45.5851593,
+    "lon": 15.2989783
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577645,
+  "center": {
+    "lat": 45.5852404,
+    "lon": 15.2988827
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577646,
+  "center": {
+    "lat": 45.5860564,
+    "lon": 15.2978638
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577647,
+  "center": {
+    "lat": 45.5859195,
+    "lon": 15.2981061
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577648,
+  "center": {
+    "lat": 45.5859361,
+    "lon": 15.2983309
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577649,
+  "center": {
+    "lat": 45.5857883,
+    "lon": 15.2982826
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577650,
+  "center": {
+    "lat": 45.5855744,
+    "lon": 15.2992434
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577651,
+  "center": {
+    "lat": 45.5856366,
+    "lon": 15.2993516
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577652,
+  "center": {
+    "lat": 45.5854391,
+    "lon": 15.2993237
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577653,
+  "center": {
+    "lat": 45.5855343,
+    "lon": 15.2999078
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577654,
+  "center": {
+    "lat": 45.5850111,
+    "lon": 15.2990855
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577655,
+  "center": {
+    "lat": 45.5851293,
+    "lon": 15.2992294
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577658,
+  "center": {
+    "lat": 45.5853064,
+    "lon": 15.2997243
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577659,
+  "center": {
+    "lat": 45.5851683,
+    "lon": 15.2994824
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577660,
+  "center": {
+    "lat": 45.5875735,
+    "lon": 15.2967310
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577661,
+  "center": {
+    "lat": 45.5864302,
+    "lon": 15.2976915
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577662,
+  "center": {
+    "lat": 45.5771612,
+    "lon": 15.3011524
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577676,
+  "center": {
+    "lat": 45.5784792,
+    "lon": 15.3007557
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577677,
+  "center": {
+    "lat": 45.5779943,
+    "lon": 15.3009096
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577678,
+  "center": {
+    "lat": 45.5781959,
+    "lon": 15.3012138
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577679,
+  "center": {
+    "lat": 45.5771078,
+    "lon": 15.3010696
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577683,
+  "center": {
+    "lat": 45.5776063,
+    "lon": 15.3009328
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577684,
+  "center": {
+    "lat": 45.5776944,
+    "lon": 15.3010715
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577686,
+  "center": {
+    "lat": 45.5772412,
+    "lon": 15.3010134
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577912,
+  "center": {
+    "lat": 45.5916996,
+    "lon": 15.2929263
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577913,
+  "center": {
+    "lat": 45.5917777,
+    "lon": 15.2929021
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577914,
+  "center": {
+    "lat": 45.5902887,
+    "lon": 15.2938289
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577915,
+  "center": {
+    "lat": 45.5911902,
+    "lon": 15.2929325
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577916,
+  "center": {
+    "lat": 45.5915758,
+    "lon": 15.2929046
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577917,
+  "center": {
+    "lat": 45.5915109,
+    "lon": 15.2930334
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577918,
+  "center": {
+    "lat": 45.5906835,
+    "lon": 15.2941378
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577919,
+  "center": {
+    "lat": 45.5898324,
+    "lon": 15.2949147
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577920,
+  "center": {
+    "lat": 45.5915312,
+    "lon": 15.2931904
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577921,
+  "center": {
+    "lat": 45.5912753,
+    "lon": 15.2931999
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577922,
+  "center": {
+    "lat": 45.5912946,
+    "lon": 15.2936477
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 454577923,
+  "center": {
+    "lat": 45.5905456,
+    "lon": 15.2935869
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058902,
+  "center": {
+    "lat": 45.5777724,
+    "lon": 15.2657567
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058903,
+  "center": {
+    "lat": 45.5752812,
+    "lon": 15.2611590
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058904,
+  "center": {
+    "lat": 45.5759137,
+    "lon": 15.2623805
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058905,
+  "center": {
+    "lat": 45.5767520,
+    "lon": 15.2652735
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058906,
+  "center": {
+    "lat": 45.5764918,
+    "lon": 15.2620270
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058907,
+  "center": {
+    "lat": 45.5758510,
+    "lon": 15.2646417
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058908,
+  "center": {
+    "lat": 45.5765623,
+    "lon": 15.2616616
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058909,
+  "center": {
+    "lat": 45.5752745,
+    "lon": 15.2649765
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058910,
+  "center": {
+    "lat": 45.5742196,
+    "lon": 15.2645359
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058911,
+  "center": {
+    "lat": 45.5767210,
+    "lon": 15.2658642
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058912,
+  "center": {
+    "lat": 45.5746127,
+    "lon": 15.2641218
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058913,
+  "center": {
+    "lat": 45.5757755,
+    "lon": 15.2631983
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058914,
+  "center": {
+    "lat": 45.5761737,
+    "lon": 15.2604340
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058915,
+  "center": {
+    "lat": 45.5758194,
+    "lon": 15.2635176
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058916,
+  "center": {
+    "lat": 45.5765638,
+    "lon": 15.2618716
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058917,
+  "center": {
+    "lat": 45.5775956,
+    "lon": 15.2659155
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058918,
+  "center": {
+    "lat": 45.5754050,
+    "lon": 15.2611201
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058919,
+  "center": {
+    "lat": 45.5765471,
+    "lon": 15.2626981
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058920,
+  "center": {
+    "lat": 45.5768778,
+    "lon": 15.2655027
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058921,
+  "center": {
+    "lat": 45.5764190,
+    "lon": 15.2617606
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058922,
+  "center": {
+    "lat": 45.5758294,
+    "lon": 15.2649147
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058923,
+  "center": {
+    "lat": 45.5762028,
+    "lon": 15.2606548
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058924,
+  "center": {
+    "lat": 45.5758409,
+    "lon": 15.2655830
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058925,
+  "center": {
+    "lat": 45.5759731,
+    "lon": 15.2626003
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058926,
+  "center": {
+    "lat": 45.5767793,
+    "lon": 15.2654370
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058927,
+  "center": {
+    "lat": 45.5758077,
+    "lon": 15.2643336
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058928,
+  "center": {
+    "lat": 45.5744536,
+    "lon": 15.2642899
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058929,
+  "center": {
+    "lat": 45.5755786,
+    "lon": 15.2613686
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058930,
+  "center": {
+    "lat": 45.5756083,
+    "lon": 15.2628024
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058931,
+  "center": {
+    "lat": 45.5748257,
+    "lon": 15.2639936
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058932,
+  "center": {
+    "lat": 45.5774197,
+    "lon": 15.2653356
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058933,
+  "center": {
+    "lat": 45.5751829,
+    "lon": 15.2614091
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058934,
+  "center": {
+    "lat": 45.5762473,
+    "lon": 15.2625481
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058935,
+  "center": {
+    "lat": 45.5770441,
+    "lon": 15.2659441
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058936,
+  "center": {
+    "lat": 45.5766607,
+    "lon": 15.2618117
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058937,
+  "center": {
+    "lat": 45.5747386,
+    "lon": 15.2658707
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058938,
+  "center": {
+    "lat": 45.5763247,
+    "lon": 15.2610199
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058939,
+  "center": {
+    "lat": 45.5751803,
+    "lon": 15.2653229
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058940,
+  "center": {
+    "lat": 45.5755551,
+    "lon": 15.2615088
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058941,
+  "center": {
+    "lat": 45.5771091,
+    "lon": 15.2664719
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058942,
+  "center": {
+    "lat": 45.5749194,
+    "lon": 15.2638284
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058943,
+  "center": {
+    "lat": 45.5750568,
+    "lon": 15.2652376
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058944,
+  "center": {
+    "lat": 45.5754232,
+    "lon": 15.2629028
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058945,
+  "center": {
+    "lat": 45.5765015,
+    "lon": 15.2622121
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058946,
+  "center": {
+    "lat": 45.5771067,
+    "lon": 15.2656336
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058947,
+  "center": {
+    "lat": 45.5752125,
+    "lon": 15.2610081
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058948,
+  "center": {
+    "lat": 45.5769282,
+    "lon": 15.2660493
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058949,
+  "center": {
+    "lat": 45.5764713,
+    "lon": 15.2615441
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058950,
+  "center": {
+    "lat": 45.5744841,
+    "lon": 15.2660566
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058951,
+  "center": {
+    "lat": 45.5764215,
+    "lon": 15.2671328
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058952,
+  "center": {
+    "lat": 45.5752327,
+    "lon": 15.2651071
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058953,
+  "center": {
+    "lat": 45.5760292,
+    "lon": 15.2670873
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058954,
+  "center": {
+    "lat": 45.5778640,
+    "lon": 15.2653796
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058955,
+  "center": {
+    "lat": 45.5748041,
+    "lon": 15.2650783
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058956,
+  "center": {
+    "lat": 45.5756839,
+    "lon": 15.2630168
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058957,
+  "center": {
+    "lat": 45.5755389,
+    "lon": 15.2610508
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058958,
+  "center": {
+    "lat": 45.5763107,
+    "lon": 15.2622691
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058959,
+  "center": {
+    "lat": 45.5783388,
+    "lon": 15.2653084
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058960,
+  "center": {
+    "lat": 45.5756816,
+    "lon": 15.2613329
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058961,
+  "center": {
+    "lat": 45.5772316,
+    "lon": 15.2661612
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058962,
+  "center": {
+    "lat": 45.5765109,
+    "lon": 15.2614621
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058963,
+  "center": {
+    "lat": 45.5762953,
+    "lon": 15.2672756
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058964,
+  "center": {
+    "lat": 45.5740860,
+    "lon": 15.2644236
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058965,
+  "center": {
+    "lat": 45.5748361,
+    "lon": 15.2654789
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058966,
+  "center": {
+    "lat": 45.5766280,
+    "lon": 15.2664755
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058967,
+  "center": {
+    "lat": 45.5749136,
+    "lon": 15.2652467
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058968,
+  "center": {
+    "lat": 45.5758085,
+    "lon": 15.2652296
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058969,
+  "center": {
+    "lat": 45.5758509,
+    "lon": 15.2628228
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058970,
+  "center": {
+    "lat": 45.5759386,
+    "lon": 15.2653568
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058971,
+  "center": {
+    "lat": 45.5755573,
+    "lon": 15.2613016
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058972,
+  "center": {
+    "lat": 45.5772921,
+    "lon": 15.2659735
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058973,
+  "center": {
+    "lat": 45.5760321,
+    "lon": 15.2635471
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058974,
+  "center": {
+    "lat": 45.5766566,
+    "lon": 15.2669610
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058975,
+  "center": {
+    "lat": 45.5741054,
+    "lon": 15.2639488
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058976,
+  "center": {
+    "lat": 45.5750686,
+    "lon": 15.2655481
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058977,
+  "center": {
+    "lat": 45.5746190,
+    "lon": 15.2646225
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058978,
+  "center": {
+    "lat": 45.5746867,
+    "lon": 15.2647588
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058980,
+  "center": {
+    "lat": 45.5761312,
+    "lon": 15.2640403
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058981,
+  "center": {
+    "lat": 45.5740439,
+    "lon": 15.2638232
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058982,
+  "center": {
+    "lat": 45.5771752,
+    "lon": 15.2653836
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058985,
+  "center": {
+    "lat": 45.5766181,
+    "lon": 15.2636505
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058987,
+  "center": {
+    "lat": 45.5772633,
+    "lon": 15.2666397
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058989,
+  "center": {
+    "lat": 45.5762667,
+    "lon": 15.2635612
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058990,
+  "center": {
+    "lat": 45.5767332,
+    "lon": 15.2661764
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058991,
+  "center": {
+    "lat": 45.5764587,
+    "lon": 15.2669632
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058992,
+  "center": {
+    "lat": 45.5764856,
+    "lon": 15.2655872
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058993,
+  "center": {
+    "lat": 45.5745971,
+    "lon": 15.2642773
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058994,
+  "center": {
+    "lat": 45.5747092,
+    "lon": 15.2649344
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058995,
+  "center": {
+    "lat": 45.5771712,
+    "lon": 15.2658647
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058996,
+  "center": {
+    "lat": 45.5739430,
+    "lon": 15.2639115
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058997,
+  "center": {
+    "lat": 45.5721534,
+    "lon": 15.2636635
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483058998,
+  "center": {
+    "lat": 45.5763346,
+    "lon": 15.2639020
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483058999,
+  "center": {
+    "lat": 45.5782782,
+    "lon": 15.2653188
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059000,
+  "center": {
+    "lat": 45.5771809,
+    "lon": 15.2662942
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059001,
+  "center": {
+    "lat": 45.5760379,
+    "lon": 15.2624046
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059002,
+  "center": {
+    "lat": 45.5765679,
+    "lon": 15.2662629
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059004,
+  "center": {
+    "lat": 45.5762239,
+    "lon": 15.2623490
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059005,
+  "center": {
+    "lat": 45.5766478,
+    "lon": 15.2651151
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059006,
+  "center": {
+    "lat": 45.5754713,
+    "lon": 15.2613881
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059007,
+  "center": {
+    "lat": 45.5742987,
+    "lon": 15.2643675
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059008,
+  "center": {
+    "lat": 45.5782009,
+    "lon": 15.2651658
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059009,
+  "center": {
+    "lat": 45.5747435,
+    "lon": 15.2631231
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059010,
+  "center": {
+    "lat": 45.5743573,
+    "lon": 15.2640582
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059011,
+  "center": {
+    "lat": 45.5759781,
+    "lon": 15.2653117
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059012,
+  "center": {
+    "lat": 45.5756550,
+    "lon": 15.2635894
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059013,
+  "center": {
+    "lat": 45.5784837,
+    "lon": 15.2649781
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059014,
+  "center": {
+    "lat": 45.5768843,
+    "lon": 15.2663681
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059015,
+  "center": {
+    "lat": 45.5760774,
+    "lon": 15.2631706
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059016,
+  "center": {
+    "lat": 45.5765763,
+    "lon": 15.2659155
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059017,
+  "center": {
+    "lat": 45.5763607,
+    "lon": 15.2624193
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059018,
+  "center": {
+    "lat": 45.5759854,
+    "lon": 15.2648446
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059019,
+  "center": {
+    "lat": 45.5761311,
+    "lon": 15.2646730
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059020,
+  "center": {
+    "lat": 45.5758720,
+    "lon": 15.2653955
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059021,
+  "center": {
+    "lat": 45.5745936,
+    "lon": 15.2648022
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059022,
+  "center": {
+    "lat": 45.5774099,
+    "lon": 15.2657879
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059023,
+  "center": {
+    "lat": 45.5742070,
+    "lon": 15.2637182
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059024,
+  "center": {
+    "lat": 45.5740230,
+    "lon": 15.2639422
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059025,
+  "center": {
+    "lat": 45.5740960,
+    "lon": 15.2649967
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059026,
+  "center": {
+    "lat": 45.5755722,
+    "lon": 15.2631433
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059027,
+  "center": {
+    "lat": 45.5759246,
+    "lon": 15.2639720
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059028,
+  "center": {
+    "lat": 45.5773585,
+    "lon": 15.2650114
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059029,
+  "center": {
+    "lat": 45.5769868,
+    "lon": 15.2665450
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059030,
+  "center": {
+    "lat": 45.5763101,
+    "lon": 15.2626905
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059031,
+  "center": {
+    "lat": 45.5738346,
+    "lon": 15.2647738
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059032,
+  "center": {
+    "lat": 45.5763138,
+    "lon": 15.2621009
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059033,
+  "center": {
+    "lat": 45.5761093,
+    "lon": 15.2649484
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059034,
+  "center": {
+    "lat": 45.5764323,
+    "lon": 15.2607939
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059035,
+  "center": {
+    "lat": 45.5757514,
+    "lon": 15.2654053
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059036,
+  "center": {
+    "lat": 45.5740051,
+    "lon": 15.2648608
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059037,
+  "center": {
+    "lat": 45.5772935,
+    "lon": 15.2654694
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059038,
+  "center": {
+    "lat": 45.5764568,
+    "lon": 15.2659128
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059039,
+  "center": {
+    "lat": 45.5749350,
+    "lon": 15.2640744
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059040,
+  "center": {
+    "lat": 45.5763833,
+    "lon": 15.2672365
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 483059041,
+  "center": {
+    "lat": 45.5760064,
+    "lon": 15.2629636
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 483059042,
+  "center": {
+    "lat": 45.5756388,
+    "lon": 15.2632207
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661733,
+  "center": {
+    "lat": 45.6045723,
+    "lon": 15.2686540
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022137"
+  }
+},
+{
+  "type": "way",
+  "id": 488661734,
+  "center": {
+    "lat": 45.6046931,
+    "lon": 15.2684497
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022130",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661735,
+  "center": {
+    "lat": 45.6046384,
+    "lon": 15.2690188
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022153"
+  }
+},
+{
+  "type": "way",
+  "id": 488661736,
+  "center": {
+    "lat": 45.6047837,
+    "lon": 15.2691393
+  },
+  "tags": {
+    "building": "barn"
+  }
+},
+{
+  "type": "way",
+  "id": 488661737,
+  "center": {
+    "lat": 45.6048430,
+    "lon": 15.2689842
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022151",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661738,
+  "center": {
+    "lat": 45.6046298,
+    "lon": 15.2693287
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022167"
+  }
+},
+{
+  "type": "way",
+  "id": 488661739,
+  "center": {
+    "lat": 45.6047392,
+    "lon": 15.2685714
+  },
+  "tags": {
+    "building": "barn",
+    "construction_date": "1920",
+    "ref:gurs:sta_sid": "20022135",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 488661740,
+  "center": {
+    "lat": 45.6049117,
+    "lon": 15.2695205
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661741,
+  "center": {
+    "lat": 45.6048099,
+    "lon": 15.2692623
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022166"
+  }
+},
+{
+  "type": "way",
+  "id": 488661742,
+  "center": {
+    "lat": 45.6047372,
+    "lon": 15.2688261
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022146",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661744,
+  "center": {
+    "lat": 45.6048572,
+    "lon": 15.2684157
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022125"
+  }
+},
+{
+  "type": "way",
+  "id": 488661745,
+  "center": {
+    "lat": 45.6042609,
+    "lon": 15.2762538
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022385",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661746,
+  "center": {
+    "lat": 45.6023548,
+    "lon": 15.2772522
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 488661747,
+  "center": {
+    "lat": 45.6031065,
+    "lon": 15.2767702
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 488661748,
+  "center": {
+    "lat": 45.6024119,
+    "lon": 15.2771888
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 488661749,
+  "center": {
+    "lat": 45.6031135,
+    "lon": 15.2768287
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 488661751,
+  "center": {
+    "lat": 45.5986518,
+    "lon": 15.2703700
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022216",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661752,
+  "center": {
+    "lat": 45.5984438,
+    "lon": 15.2705784
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "12",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332517",
+    "ref:gurs:sta_sid": "20022221",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 488661753,
+  "center": {
+    "lat": 45.5985533,
+    "lon": 15.2708497
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661754,
+  "center": {
+    "lat": 45.5985400,
+    "lon": 15.2702617
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "13",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332525",
+    "ref:gurs:sta_sid": "20022213",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 488661755,
+  "center": {
+    "lat": 45.5984225,
+    "lon": 15.2707948
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022224",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661756,
+  "center": {
+    "lat": 45.5986368,
+    "lon": 15.2685111
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022132",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 488661757,
+  "center": {
+    "lat": 45.5987410,
+    "lon": 15.2671493
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 488661759,
+  "center": {
+    "lat": 45.5986041,
+    "lon": 15.2682963
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332428",
+    "ref:gurs:sta_sid": "20022115",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 488661760,
+  "center": {
+    "lat": 45.5985678,
+    "lon": 15.2673939
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332436",
+    "ref:gurs:sta_sid": "20022074",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 488661761,
+  "center": {
+    "lat": 45.5986899,
+    "lon": 15.2670297
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022066",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750369,
+  "center": {
+    "lat": 45.6040937,
+    "lon": 15.2721946
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022263",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750370,
+  "center": {
+    "lat": 45.6042362,
+    "lon": 15.2717191
+  },
+  "tags": {
+    "building": "chapel"
+  }
+},
+{
+  "type": "way",
+  "id": 492750373,
+  "center": {
+    "lat": 45.6056549,
+    "lon": 15.2775709
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750375,
+  "center": {
+    "lat": 45.6039583,
+    "lon": 15.2722852
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022262"
+  }
+},
+{
+  "type": "way",
+  "id": 492750376,
+  "center": {
+    "lat": 45.6044109,
+    "lon": 15.2736081
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20033142",
+    "ref:gurs:sta_sid": "20022310",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750379,
+  "center": {
+    "lat": 45.6037535,
+    "lon": 15.2722653
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022261",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750380,
+  "center": {
+    "lat": 45.6042410,
+    "lon": 15.2729554
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022292",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750385,
+  "center": {
+    "lat": 45.6044996,
+    "lon": 15.2721836
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022259",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750386,
+  "center": {
+    "lat": 45.6055777,
+    "lon": 15.2772189
+  },
+  "tags": {
+    "amenity": "toilets",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750388,
+  "center": {
+    "lat": 45.5934764,
+    "lon": 15.2886449
+  },
+  "tags": {
+    "building": "roof",
+    "layer": "1",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750390,
+  "center": {
+    "lat": 45.5935229,
+    "lon": 15.2885791
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750392,
+  "center": {
+    "lat": 45.5944119,
+    "lon": 15.2834853
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022827",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750393,
+  "center": {
+    "lat": 45.5952405,
+    "lon": 15.2835113
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022829",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750395,
+  "center": {
+    "lat": 45.5940940,
+    "lon": 15.2836653
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341389",
+    "ref:gurs:sta_sid": "20022835",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750396,
+  "center": {
+    "lat": 45.5950616,
+    "lon": 15.2834085
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022826",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750397,
+  "center": {
+    "lat": 45.5951930,
+    "lon": 15.2839850
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022842",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750398,
+  "center": {
+    "lat": 45.5942158,
+    "lon": 15.2837784
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022838",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750399,
+  "center": {
+    "lat": 45.5938788,
+    "lon": 15.2834251
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341397",
+    "ref:gurs:sta_sid": "20022824",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750400,
+  "center": {
+    "lat": 45.5943551,
+    "lon": 15.2839732
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022841",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750401,
+  "center": {
+    "lat": 45.5945184,
+    "lon": 15.2832913
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022817",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750402,
+  "center": {
+    "lat": 45.5952039,
+    "lon": 15.2837118
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750403,
+  "center": {
+    "lat": 45.5944574,
+    "lon": 15.2840681
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750405,
+  "center": {
+    "lat": 45.5950811,
+    "lon": 15.2839211
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022840",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750406,
+  "center": {
+    "lat": 45.5950485,
+    "lon": 15.2836671
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "23",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341427",
+    "ref:gurs:sta_sid": "26055536",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750407,
+  "center": {
+    "lat": 45.5945418,
+    "lon": 15.2831140
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750408,
+  "center": {
+    "lat": 45.5945562,
+    "lon": 15.2837437
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022836",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750410,
+  "center": {
+    "lat": 45.5939906,
+    "lon": 15.2835238
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022830",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750411,
+  "center": {
+    "lat": 45.5945988,
+    "lon": 15.2835379
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "22",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341419",
+    "ref:gurs:sta_sid": "26055506",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750415,
+  "center": {
+    "lat": 45.5682846,
+    "lon": 15.2908519
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750416,
+  "center": {
+    "lat": 45.5690898,
+    "lon": 15.2925547
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750417,
+  "center": {
+    "lat": 45.5673846,
+    "lon": 15.2934788
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040609"
+  }
+},
+{
+  "type": "way",
+  "id": 492750419,
+  "center": {
+    "lat": 45.5675972,
+    "lon": 15.2923767
+  },
+  "tags": {
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 529380826,
+  "center": {
+    "lat": 45.5927145,
+    "lon": 15.2930639
+  },
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 558292424,
+  "center": {
+    "lat": 45.5823333,
+    "lon": 15.2414382
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "26058437"
+  }
+},
+{
+  "type": "way",
+  "id": 558292425,
+  "center": {
+    "lat": 45.5815849,
+    "lon": 15.2418381
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "21",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "ref:gurs:hs_mid": "11435378",
+    "ref:gurs:sta_sid": "22345866",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 558292426,
+  "center": {
+    "lat": 45.5824585,
+    "lon": 15.2406779
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 558292427,
+  "center": {
+    "lat": 45.5819169,
+    "lon": 15.2407090
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "23",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20010398",
+    "ref:gurs:sta_sid": "31839531",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 558292428,
+  "center": {
+    "lat": 45.5816783,
+    "lon": 15.2420386
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 558292429,
+  "center": {
+    "lat": 45.5824987,
+    "lon": 15.2412751
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 558292430,
+  "center": {
+    "lat": 45.5824809,
+    "lon": 15.2409951
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "26058440"
+  }
+},
+{
+  "type": "way",
+  "id": 558292431,
+  "center": {
+    "lat": 45.5823619,
+    "lon": 15.2409624
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "25",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "ref:gurs:hs_mid": "11435386",
+    "ref:gurs:sta_sid": "22345867",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 558292432,
+  "center": {
+    "lat": 45.5823164,
+    "lon": 15.2405889
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "26058442"
+  }
+},
+{
+  "type": "way",
+  "id": 625938696,
+  "center": {
+    "lat": 45.5978744,
+    "lon": 15.2696156
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022186"
+  }
+},
+{
+  "type": "way",
+  "id": 625938697,
+  "center": {
+    "lat": 45.5980880,
+    "lon": 15.2696847
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 625938698,
+  "center": {
+    "lat": 45.5979404,
+    "lon": 15.2699620
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022085"
+  }
+},
+{
+  "type": "way",
+  "id": 625938699,
+  "center": {
+    "lat": 45.5981181,
+    "lon": 15.2699957
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332479",
+    "ref:gurs:sta_sid": "20022208",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 625938700,
+  "center": {
+    "lat": 45.5990236,
+    "lon": 15.2688745
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022145"
+  }
+},
+{
+  "type": "way",
+  "id": 625938701,
+  "center": {
+    "lat": 45.5992487,
+    "lon": 15.2685962
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332410",
+    "ref:gurs:sta_sid": "20022138",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 625938702,
+  "center": {
+    "lat": 45.5992385,
+    "lon": 15.2689290
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022143"
+  }
+},
+{
+  "type": "way",
+  "id": 625938703,
+  "center": {
+    "lat": 45.5906282,
+    "lon": 15.2839549
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022843"
+  }
+},
+{
+  "type": "way",
+  "id": 625938704,
+  "center": {
+    "lat": 45.5909134,
+    "lon": 15.2838758
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022839"
+  }
+},
+{
+  "type": "way",
+  "id": 625938705,
+  "center": {
+    "lat": 45.5906361,
+    "lon": 15.2842258
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "26055537"
+  }
+},
+{
+  "type": "way",
+  "id": 625938706,
+  "center": {
+    "lat": 45.5908548,
+    "lon": 15.2836104
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022833"
+  }
+},
+{
+  "type": "way",
+  "id": 625938707,
+  "center": {
+    "lat": 45.5910695,
+    "lon": 15.2834039
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "28",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341478",
+    "ref:gurs:sta_sid": "20022821",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 625938708,
+  "center": {
+    "lat": 45.5910894,
+    "lon": 15.2836445
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022832"
+  }
+},
+{
+  "type": "way",
+  "id": 625938709,
+  "center": {
+    "lat": 45.5890639,
+    "lon": 15.2800150
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 625938710,
+  "center": {
+    "lat": 45.5890741,
+    "lon": 15.2801348
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "47",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341621",
+    "ref:gurs:sta_sid": "20022587",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 625938711,
+  "center": {
+    "lat": 45.5892207,
+    "lon": 15.2799710
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022566"
+  }
+},
+{
+  "type": "way",
+  "id": 625938712,
+  "center": {
+    "lat": 45.5893098,
+    "lon": 15.2801780
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022584"
+  }
+},
+{
+  "type": "way",
+  "id": 625938713,
+  "center": {
+    "lat": 45.5892706,
+    "lon": 15.2796815
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022548"
+  }
+},
+{
+  "type": "way",
+  "id": 625938714,
+  "center": {
+    "lat": 45.5893471,
+    "lon": 15.2798361
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 625938715,
+  "center": {
+    "lat": 45.5892566,
+    "lon": 15.2797827
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 625938716,
+  "center": {
+    "lat": 45.5894181,
+    "lon": 15.2798950
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022570"
+  }
+},
+{
+  "type": "way",
+  "id": 625938717,
+  "center": {
+    "lat": 45.5894260,
+    "lon": 15.2797071
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022551"
+  }
+},
+{
+  "type": "way",
+  "id": 634952099,
+  "center": {
+    "lat": 45.5927509,
+    "lon": 15.2814183
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341354",
+    "ref:gurs:sta_sid": "20022702",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 634952100,
+  "center": {
+    "lat": 45.5931152,
+    "lon": 15.2816541
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022727"
+  }
+},
+{
+  "type": "way",
+  "id": 634952102,
+  "center": {
+    "lat": 45.5928161,
+    "lon": 15.2815453
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022714"
+  }
+},
+{
+  "type": "way",
+  "id": 634952104,
+  "center": {
+    "lat": 45.5930658,
+    "lon": 15.2815063
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022707"
+  }
+},
+{
+  "type": "way",
+  "id": 634952105,
+  "center": {
+    "lat": 45.5932703,
+    "lon": 15.2815044
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "20",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341362",
+    "ref:gurs:sta_sid": "20022711",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 634952107,
+  "center": {
+    "lat": 45.5934058,
+    "lon": 15.2817461
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022737"
+  }
+},
+{
+  "type": "way",
+  "id": 634952108,
+  "center": {
+    "lat": 45.5914833,
+    "lon": 15.2816202
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022725"
+  }
+},
+{
+  "type": "way",
+  "id": 634952110,
+  "center": {
+    "lat": 45.5916108,
+    "lon": 15.2814406
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "25",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341443",
+    "ref:gurs:sta_sid": "20022704",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 634952112,
+  "center": {
+    "lat": 45.5916111,
+    "lon": 15.2816772
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022739"
+  }
+},
+{
+  "type": "way",
+  "id": 634952115,
+  "center": {
+    "lat": 45.5920085,
+    "lon": 15.2816758
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022729"
+  }
+},
+{
+  "type": "way",
+  "id": 634952118,
+  "center": {
+    "lat": 45.5920629,
+    "lon": 15.2819591
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022754"
+  }
+},
+{
+  "type": "way",
+  "id": 634952120,
+  "center": {
+    "lat": 45.5918183,
+    "lon": 15.2817706
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022743"
+  }
+},
+{
+  "type": "way",
+  "id": 634952123,
+  "center": {
+    "lat": 45.5917038,
+    "lon": 15.2815880
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022722"
+  }
+},
+{
+  "type": "way",
+  "id": 634952125,
+  "center": {
+    "lat": 45.5922652,
+    "lon": 15.2813913
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "24",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341435",
+    "ref:gurs:sta_sid": "20022693",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 677254034,
+  "center": {
+    "lat": 45.5872186,
+    "lon": 15.2716671
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "140",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20033053",
+    "ref:gurs:sta_sid": "20022240",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 677254035,
+  "center": {
+    "lat": 45.5866686,
+    "lon": 15.2716885
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022242"
+  }
+},
+{
+  "type": "way",
+  "id": 677254036,
+  "center": {
+    "lat": 45.5865822,
+    "lon": 15.2712163
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022231"
+  }
+},
+{
+  "type": "way",
+  "id": 677254037,
+  "center": {
+    "lat": 45.5865769,
+    "lon": 15.2708239
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022228"
+  }
+},
+{
+  "type": "way",
+  "id": 677254038,
+  "center": {
+    "lat": 45.5874641,
+    "lon": 15.2712163
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022232"
+  }
+},
+{
+  "type": "way",
+  "id": 677254039,
+  "center": {
+    "lat": 45.5874615,
+    "lon": 15.2708352
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022229"
+  }
+},
+{
+  "type": "way",
+  "id": 677254040,
+  "center": {
+    "lat": 45.5874656,
+    "lon": 15.2704485
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022219"
+  }
+},
+{
+  "type": "way",
+  "id": 702893640,
+  "center": {
+    "lat": 45.6077445,
+    "lon": 15.2746602
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "16B",
+    "addr:postcode": "8332",
+    "addr:street": "Podzemelj",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893642,
+  "center": {
+    "lat": 45.6075936,
+    "lon": 15.2750892
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17a",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893643,
+  "center": {
+    "lat": 45.6078237,
+    "lon": 15.2749772
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893644,
+  "center": {
+    "lat": 45.6077382,
+    "lon": 15.2752904
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893645,
+  "center": {
+    "lat": 45.6077001,
+    "lon": 15.2756706
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19b",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893646,
+  "center": {
+    "lat": 45.6075506,
+    "lon": 15.2757198
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893647,
+  "center": {
+    "lat": 45.6075200,
+    "lon": 15.2753690
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893648,
+  "center": {
+    "lat": 45.6079617,
+    "lon": 15.2755270
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893649,
+  "center": {
+    "lat": 45.6079869,
+    "lon": 15.2757502
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893651,
+  "center": {
+    "lat": 45.6080043,
+    "lon": 15.2761074
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17b",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893652,
+  "center": {
+    "lat": 45.6077051,
+    "lon": 15.2760248
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893653,
+  "center": {
+    "lat": 45.6076832,
+    "lon": 15.2762509
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19d",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893654,
+  "center": {
+    "lat": 45.6079788,
+    "lon": 15.2763717
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893655,
+  "center": {
+    "lat": 45.6079797,
+    "lon": 15.2766324
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18e",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893656,
+  "center": {
+    "lat": 45.6079823,
+    "lon": 15.2768229
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893657,
+  "center": {
+    "lat": 45.6076748,
+    "lon": 15.2764444
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893658,
+  "center": {
+    "lat": 45.6076883,
+    "lon": 15.2766167
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18d",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893659,
+  "center": {
+    "lat": 45.6076075,
+    "lon": 15.2767791
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18c",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893660,
+  "center": {
+    "lat": 45.6080493,
+    "lon": 15.2772181
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18a",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893672,
+  "center": {
+    "lat": 45.6075551,
+    "lon": 15.2739193
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "50",
+    "addr:postcode": "8332",
+    "addr:street": "Podzemelj",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 715561946,
+  "center": {
+    "lat": 45.6052661,
+    "lon": 15.2772928
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "caravans": "yes",
+    "check_date": "2026-06-26",
+    "fee": "yes",
+    "name": "Bela krajina",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+3867 30 69 572",
+    "static_caravans": "yes",
+    "tents": "yes",
+    "tourism": "camp_site",
+    "website": "https://www.kamp-podzemelj.si/en/"
+  }
+},
+{
+  "type": "way",
+  "id": 833539251,
+  "center": {
+    "lat": 45.5933558,
+    "lon": 15.2607671
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20021931"
+  }
+},
+{
+  "type": "way",
+  "id": 833539252,
+  "center": {
+    "lat": 45.5934029,
+    "lon": 15.2605424
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:postcode": "8332",
+    "building": "yes",
+    "ref:gurs:sta_sid": "20021922",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539253,
+  "center": {
+    "lat": 45.5935096,
+    "lon": 15.2609075
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331634",
+    "ref:gurs:sta_sid": "20021933",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539254,
+  "center": {
+    "lat": 45.5937629,
+    "lon": 15.2604642
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20021917"
+  }
+},
+{
+  "type": "way",
+  "id": 833539255,
+  "center": {
+    "lat": 45.5938654,
+    "lon": 15.2607014
+  },
+  "tags": {
+    "building": "yes",
+    "construction_date": "1965",
+    "ref:gurs:sta_sid": "20021929",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 833539257,
+  "center": {
+    "lat": 45.5937139,
+    "lon": 15.2613054
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "33158649"
+  }
+},
+{
+  "type": "way",
+  "id": 833539258,
+  "center": {
+    "lat": 45.5939265,
+    "lon": 15.2605225
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331642",
+    "ref:gurs:sta_sid": "20021920",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539259,
+  "center": {
+    "lat": 45.5936453,
+    "lon": 15.2604943
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20021919"
+  }
+},
+{
+  "type": "way",
+  "id": 833539260,
+  "center": {
+    "lat": 45.5937277,
+    "lon": 15.2615443
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20048212",
+    "ref:gurs:sta_sid": "33158651",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539261,
+  "center": {
+    "lat": 45.5940905,
+    "lon": 15.2613456
+  },
+  "tags": {
+    "building": "yes",
+    "construction_date": "1974",
+    "ref:gurs:sta_sid": "20021941",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 833539262,
+  "center": {
+    "lat": 45.5940106,
+    "lon": 15.2614833
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331677",
+    "ref:gurs:sta_sid": "20021942",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539263,
+  "center": {
+    "lat": 45.5935620,
+    "lon": 15.2620944
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 833539264,
+  "center": {
+    "lat": 45.5942817,
+    "lon": 15.2616869
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 833539265,
+  "center": {
+    "lat": 45.5941556,
+    "lon": 15.2618110
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4A",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "construction_date": "2001",
+    "ref:gurs:hs_mid": "20011653",
+    "ref:gurs:sta_sid": "20021948",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539266,
+  "center": {
+    "lat": 45.5943297,
+    "lon": 15.2621287
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 833539267,
+  "center": {
+    "lat": 45.5944635,
+    "lon": 15.2621022
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331685",
+    "ref:gurs:sta_sid": "20021951",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539268,
+  "center": {
+    "lat": 45.5945615,
+    "lon": 15.2624189
+  },
+  "tags": {
+    "building": "yes",
+    "construction_date": "1976",
+    "ref:gurs:sta_sid": "20021957",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 833539269,
+  "center": {
+    "lat": 45.5942518,
+    "lon": 15.2626261
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5a",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20025697",
+    "ref:gurs:sta_sid": "32390123",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539270,
+  "center": {
+    "lat": 45.5943456,
+    "lon": 15.2628021
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 833539272,
+  "center": {
+    "lat": 45.5939616,
+    "lon": 15.2622603
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4B",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20019638",
+    "ref:gurs:sta_sid": "26055478",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539273,
+  "center": {
+    "lat": 45.5940777,
+    "lon": 15.2622409
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 833539274,
+  "center": {
+    "lat": 45.5938291,
+    "lon": 15.2623656
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 833539275,
+  "center": {
+    "lat": 45.5945968,
+    "lon": 15.2627491
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20021962"
+  }
+},
+{
+  "type": "way",
+  "id": 833539276,
+  "center": {
+    "lat": 45.5947709,
+    "lon": 15.2628918
+  },
+  "tags": {
+    "building": "yes",
+    "construction_date": "1968",
+    "ref:gurs:sta_sid": "20021967",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 833539277,
+  "center": {
+    "lat": 45.5948032,
+    "lon": 15.2631838
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331693",
+    "ref:gurs:sta_sid": "20021975",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539278,
+  "center": {
+    "lat": 45.5949648,
+    "lon": 15.2630211
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "26055485"
+  }
+},
+{
+  "type": "way",
+  "id": 963948904,
+  "center": {
+    "lat": 45.6080637,
+    "lon": 15.2752453
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 963948905,
+  "center": {
+    "lat": 45.6080743,
+    "lon": 15.2749292
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "17",
+    "addr:postcode": "8332",
+    "addr:street": "Podzemelj",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "local",
+    "name": "Gostišče Veselič",
+    "phone": "+386 31 391 517",
+    "website": "https://www.belakrajina.si/sl/okusite/gostilne-restavracije/gostisce-veselic/"
+  }
+},
+{
+  "type": "way",
+  "id": 967285462,
+  "center": {
+    "lat": 45.6078381,
+    "lon": 15.2609879
+  },
+  "tags": {
+    "building": "barn",
+    "construction_date": "2015",
+    "ref:gurs:sta_sid": "32714799",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 967292789,
+  "center": {
+    "lat": 45.6070606,
+    "lon": 15.2738927
+  },
+  "tags": {
+    "amenity": "fire_station",
+    "building": "fire_station"
+  }
+},
+{
+  "type": "way",
+  "id": 967292790,
+  "center": {
+    "lat": 45.6073997,
+    "lon": 15.2738238
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 967292792,
+  "center": {
+    "lat": 45.6075511,
+    "lon": 15.2737487
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 967293977,
+  "center": {
+    "lat": 45.6067149,
+    "lon": 15.2739168
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 967294998,
+  "center": {
+    "lat": 45.6048518,
+    "lon": 15.2686205
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340846",
+    "ref:gurs:sta_sid": "20022133"
+  }
+},
+{
+  "type": "way",
+  "id": 967294999,
+  "center": {
+    "lat": 45.6050225,
+    "lon": 15.2677510
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340862",
+    "ref:gurs:sta_sid": "20022091"
+  }
+},
+{
+  "type": "way",
+  "id": 967295000,
+  "center": {
+    "lat": 45.6053111,
+    "lon": 15.2676730
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022086"
+  }
+},
+{
+  "type": "way",
+  "id": 967295001,
+  "center": {
+    "lat": 45.6051325,
+    "lon": 15.2682473
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340854",
+    "ref:gurs:sta_sid": "26055496"
+  }
+},
+{
+  "type": "way",
+  "id": 967295002,
+  "center": {
+    "lat": 45.6051064,
+    "lon": 15.2670767
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022069"
+  }
+},
+{
+  "type": "way",
+  "id": 967295003,
+  "center": {
+    "lat": 45.6051302,
+    "lon": 15.2667692
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 967295004,
+  "center": {
+    "lat": 45.6052287,
+    "lon": 15.2670877
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "8",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340927",
+    "ref:gurs:sta_sid": "20022067"
+  }
+},
+{
+  "type": "way",
+  "id": 967295005,
+  "center": {
+    "lat": 45.6051930,
+    "lon": 15.2664269
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 967295006,
+  "center": {
+    "lat": 45.6052797,
+    "lon": 15.2664351
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340897",
+    "ref:gurs:sta_sid": "20022049"
+  }
+},
+{
+  "type": "way",
+  "id": 967295007,
+  "center": {
+    "lat": 45.6051794,
+    "lon": 15.2660138
+  },
+  "tags": {
+    "building": "barn",
+    "ref:gurs:sta_sid": "20022035"
+  }
+},
+{
+  "type": "way",
+  "id": 967295356,
+  "center": {
+    "lat": 45.6055987,
+    "lon": 15.2664664
+  },
+  "tags": {
+    "building": "shed"
+  }
+},
+{
+  "type": "way",
+  "id": 1086591209,
+  "center": {
+    "lat": 45.5941876,
+    "lon": 15.2903246
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1086591210,
+  "center": {
+    "lat": 45.5942517,
+    "lon": 15.2901653
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1086591211,
+  "center": {
+    "lat": 45.5940108,
+    "lon": 15.2903841
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1086591212,
+  "center": {
+    "lat": 45.5940119,
+    "lon": 15.2898750
+  },
+  "tags": {
+    "building": "commercial"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030105,
+  "center": {
+    "lat": 45.6045048,
+    "lon": 15.2723828
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "19998797",
+    "ref:gurs:sta_sid": "20022268",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030106,
+  "center": {
+    "lat": 45.6041885,
+    "lon": 15.2733498
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022304"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030107,
+  "center": {
+    "lat": 45.6039887,
+    "lon": 15.2727402
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022283"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030108,
+  "center": {
+    "lat": 45.6043736,
+    "lon": 15.2729802
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030109,
+  "center": {
+    "lat": 45.6043471,
+    "lon": 15.2731055
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "house",
+    "ref:gurs:hs_mid": "13356653",
+    "ref:gurs:sta_sid": "20022299",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030110,
+  "center": {
+    "lat": 45.6046245,
+    "lon": 15.2726810
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022280"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030111,
+  "center": {
+    "lat": 45.6045496,
+    "lon": 15.2729986
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030739,
+  "center": {
+    "lat": 45.6042810,
+    "lon": 15.2727555
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022282",
+    "tourism": "guest_house"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030740,
+  "center": {
+    "lat": 45.6041259,
+    "lon": 15.2728075
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13356637",
+    "ref:gurs:sta_sid": "20022285",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030741,
+  "center": {
+    "lat": 45.6038011,
+    "lon": 15.2726089
+  },
+  "tags": {
+    "building": "yes",
+    "ref:gurs:sta_sid": "20022273"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030742,
+  "center": {
+    "lat": 45.6041331,
+    "lon": 15.2723976
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "construction_date": "1885",
+    "ref:gurs:hs_mid": "13356645",
+    "ref:gurs:sta_sid": "20022269",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128031886,
+  "center": {
+    "lat": 45.6047467,
+    "lon": 15.2729522
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20022949",
+    "ref:gurs:sta_sid": "32071340",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165744,
+  "center": {
+    "lat": 45.5716187,
+    "lon": 15.2907211
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165745,
+  "center": {
+    "lat": 45.5716724,
+    "lon": 15.2900836
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165746,
+  "center": {
+    "lat": 45.5715727,
+    "lon": 15.2900520
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "49",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165748,
+  "center": {
+    "lat": 45.5714423,
+    "lon": 15.2937511
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165749,
+  "center": {
+    "lat": 45.5721026,
+    "lon": 15.2934164
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165750,
+  "center": {
+    "lat": 45.5711372,
+    "lon": 15.2926192
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165751,
+  "center": {
+    "lat": 45.5718762,
+    "lon": 15.2938210
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165752,
+  "center": {
+    "lat": 45.5716154,
+    "lon": 15.2934549
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165753,
+  "center": {
+    "lat": 45.5716812,
+    "lon": 15.2933222
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165754,
+  "center": {
+    "lat": 45.5716673,
+    "lon": 15.2931178
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192167359,
+  "center": {
+    "lat": 45.5700033,
+    "lon": 15.2883106
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192168407,
+  "center": {
+    "lat": 45.5715525,
+    "lon": 15.2893486
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "54",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 1192168408,
+  "center": {
+    "lat": 45.5721636,
+    "lon": 15.2897311
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192239169,
+  "center": {
+    "lat": 45.5696601,
+    "lon": 15.2998346
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192239170,
+  "center": {
+    "lat": 45.5695270,
+    "lon": 15.3004233
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192239245,
+  "center": {
+    "lat": 45.5702127,
+    "lon": 15.3013994
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240360,
+  "center": {
+    "lat": 45.5689963,
+    "lon": 15.2935574
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240361,
+  "center": {
+    "lat": 45.5694539,
+    "lon": 15.2941092
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240362,
+  "center": {
+    "lat": 45.5698684,
+    "lon": 15.2941806
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240363,
+  "center": {
+    "lat": 45.5705815,
+    "lon": 15.2939490
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240364,
+  "center": {
+    "lat": 45.5700094,
+    "lon": 15.2941332
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240365,
+  "center": {
+    "lat": 45.5702579,
+    "lon": 15.2945185
+  },
+  "tags": {
+    "building": "garage"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240366,
+  "center": {
+    "lat": 45.5711551,
+    "lon": 15.2933014
+  },
+  "tags": {
+    "building": "yes"
+  }
+}
+
+  ]
+}

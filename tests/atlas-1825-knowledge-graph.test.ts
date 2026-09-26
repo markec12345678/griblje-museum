@@ -10,12 +10,12 @@ import { resolve } from "node:path";
 const BASE = resolve(import.meta.dir, "..", "research-griblje", "atlas-1825");
 const kg = JSON.parse(readFileSync(resolve(BASE, "knowledge-graph-1825.json"), "utf8"));
 
-describe("knowledge-graph-1825 v1.4 [val 68]", () => {
+describe("knowledge-graph-1825 v1.5 [val 72]", () => {
   test("struktura + velikosti (varovalke)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v1.4");
+    expect(kg.title).toBe("knowledge-graph-1825 v1.5");
     expect(kg.findings.map((f: { finding_id: string }) => f.finding_id)).toEqual([
-      "KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07",
-    ]);
+      "KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08",
+    ]); // KG-F08 (val 72): GEOREF v2 — MO koordinate preko similaritete po reki Kolpi
     // KG-F02: popravljen SRC katalog — PT = uodid 373416 (ne 227668 = A02)
     const pt = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PT");
     expect(pt.uodid).toBe(373416);

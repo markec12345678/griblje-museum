@@ -7,7 +7,8 @@
  * Čista, deterministična plast nad knowledge-graph-1825.json (piše
  * research-griblje/atlas-1825/build-knowledge-graph.py — ročno urejanje
  * prepovedano). Nič ne ugiba:
- *   - lat/lng STOJI samo tam, kjer ga graf že ima (A01 PROVIZORIČNO, 1 sidro);
+ *   - lat/lng STOJI samo tam, kjer ga graf že ima (A01 GEOREF v2, val 72:
+ *     similariteta po reki Kolpi, ±38 m — glej georef-1825.json / F-GEO-01);
  *   - A02–A05 objekti imajo georef UNKNOWN → brez koordinat (izračun bi bil
  *     izmišljotina, KG-F05/§12);
  *   - parcele imajo BREZ geometrije (§9: meje niso dokazane) — nikoli se
@@ -73,6 +74,9 @@ function sheetOfMo(mo: AtlasNode): string {
   return typeof mo.sheet === "string" && mo.sheet ? mo.sheet : "A01";
 }
 
+/** GEOREF v2 status A01 (val 72) — enotni niz za sloje (F-GEO-01/02). */
+export const GEOREF_V2_A01 = "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)";
+
 export function mapSheets(): MapSheet[] {
   const counts = new Map<string, { objects: number; georef: string }>();
   for (const n of kg.nodes) {
@@ -93,7 +97,7 @@ export function mapSheets(): MapSheet[] {
       label: (src.label as string) ?? src.node_id,
       vac_details_url: (src.vac_details_url as string) ?? null,
       map_objects: c.objects,
-      georef_status: sheet === "A01" ? "PROVIZORIČNO (1 sidro)" : "UNKNOWN (ni sidra)",
+      georef_status: sheet === "A01" ? GEOREF_V2_A01 : "UNKNOWN (ni sidra)",
       evidence_url: evidenceUrl(src.node_id),
     });
   }
@@ -112,7 +116,7 @@ export type MapObjectFeature = {
   bp_glyph: string | null;
   glyph_tier: string;
   px: [number, number] | null;
-  /** Samo A01 (PROVIZORIČNO, 1 sidro). A02–A05 = vedno null (§12/KG-F05). */
+  /** Samo A01 (GEOREF v2, val 72). A02–A05 = vedno null (§12/KG-F05). */
   lat: number | null;
   lng: number | null;
   georef_status: string;
@@ -237,7 +241,7 @@ export function houseFeatures(): HouseFeature[] {
           px: [mo.px[0], mo.px[1]],
           via_bp: withMo.bp,
           map_object: mo.node_id,
-          georef_status: "PROVIZORIČNO (1 sidro, sever-navzgor)",
+          georef_status: GEOREF_V2_A01,
         };
       }
     }
@@ -296,7 +300,7 @@ export function mapData() {
     val: kg.val,
     model: "atlas-1825 map data model v1 (issue #42 §15, PASS 5)",
     disclaimer:
-      "Georeferenca je PROVIZORIČNA (A01: 1 sidro, sever-navzgor). A02–A05: brez sidra — brez koordinat. Sodobni OSM/satelitski zemljevid NI zgodovinski dokaz (§10).",
+      "Georeferenca A01 = GEOREF v2 (val 72): robustna similariteta po reki Kolpi (351 točk, trim-RMS ±38 m; validacija na stavbah mediana 17 m) — zgodovinska geometrija je transformirana, sodobna OSM podlaga ni zgodovinski dokaz (§10). A02–A05: brez sidra — brez koordinat. Parcele: brez geometrije (§9).",
     counts: {
       map_objects: mapObjects.length,
       map_objects_a01: mapObjects.filter((m) => m.sheet === "A01").length,
