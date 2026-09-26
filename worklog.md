@@ -3791,3 +3791,20 @@ Stage Summary:
 Stage Summary:
 - ATLAS 1825 val 79 ŽIV na GitHub+Vercel; Render mirror sledi (dokumentirani vzorec)
 - Naslednje po worklogu Task 40: 1) VAČ II @300 dpi re-digitation (F-PZ-04 zadnja peskovniška pot + F-PZ-15 + F-PZ-10); 2) PZ celotni prepis @300 dpi (F-PZ-12); 3) PS p56–143 (F-PV-03); 4) PT p7 @300dpi; 5) izven peskovnika: zunanji Rektifikacijski protokol (vezava 1825→1830), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 39 (ZAKLJUČEK — kolizija z val 79, PR #69 zaprt brez merge-a)
+Agent: Z.ai Code (main orchestrator)
+Task: Val 78/79 — Rektifikacija p35–40 per-parcelna kontrola F-PZ-04 (konec: naloga že mergana kot val 79 / PR #68 s parallelne seje)
+
+Work Log:
+- Kontinuiteta: branja val 78 (Task 39 vmesni vnos) DOKONČANA med izpadom orodij; vgradnja PASS 3 uspešno izvedena (build-pz-1825.py rektifikacija_1830; 14 najdb; KG v1.9 sha 92576069; 497/497 · api-smoke 101/101 · i18n 1074×5 · e2e ✓) in push na vejo feat/val78-rektifikacija → PR #69
+- KOLIZIJA: med pripravo je main že absorbiral val 78 (PR #67, revizija §8 Zusammen; F-PZ-14/15) in val 79 (PR #68, Rektifikacija p35–42: Kultur-Beschreibung + 7 Muster-parcel + F-PZ-16; 503/503) od parallelnega izvajalca — PR #69 bi regreširal val 79 (oznaka vala, KG sha, nasprotujoča podatkovna sloja)
+- REŠITEV po poštnosti-dogovoru: PR #69 ZAPRT brez merge-a z razlago + komentar na #42 (neodvisno drugo branje, inter-bralčeva varianca dokumentirana); veja ostane na originu kot dokazni material (32 izrezkov crops/p35-40-rekt/ + VLM raw A/B/C)
+- INTER-BRALČEVA VARIANCA (7/7 ključnih celic, vse Kurrent-zamenjave 0↔3/5↔9/0↔7): №30 1382 vs 1082 · №594 531 vs 591 · №1099 700 vs №1004 1010 · №438|738 896 vs – J 395/895 · №2451 1515 vs 1515/1575 · №2491 260 = SOGLASJE · №1288 882/883 vs 589/549; SOGLASJA: struktura, revizijski vzorec (1288), rdeča nota, datum april 1830, F-PZ-04 OPEN
+- STANJE main po syncu: @ 9a3de7b (val 79; findings 16; KG v1.8 20ec8a0a nespremenjen; 503/503)
+
+Stage Summary:
+- Naloga Rektifikacija p35–40: ZAKLJUČENA na main (val 79) — moja veja ohranjena kot neodvisno drugo branje z eksPLICITNO dokumentirano varianco → najmočnejši argument za VAČ II @300 dpi re-digitation
+- Deploy verifikacija: Vercel + Render preverjena spodaj (val 79 sinhronizacija po vzorcu)
+- Naslednje: 1) VAČ II @300 dpi re-digitation (p30/p35–40/p43–47/p63/p65 — razreši F-PZ-12 + inter-bralčeve diskrepance + morebitno F-PZ-04); 2) PS p56–143 (F-PV-03); 3) PT p7 @300 dpi; 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
