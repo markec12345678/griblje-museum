@@ -91,7 +91,7 @@ describe("atlas-evidence resolver [val 64]", () => {
 
   test("overview (§10): brez umetnega procenta, vse ključne strukture", () => {
     const ov = overview();
-    expect(ov.title).toBe("knowledge-graph-1825 v1.5");
+    expect(ov.title).toBe("knowledge-graph-1825 v1.6");
     expect(ov.stats.nodes.HOUSE).toBe(167);
     expect(ov.stats.nodes.PERSON).toBe(488);
     expect(ov.stats.edges.OWNER_OF).toBe(254);

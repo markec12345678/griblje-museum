@@ -301,12 +301,15 @@ describe("generateVillageStory (§18)", () => {
     expect(documented!.tier).toBe("DOKAZANO");
     expect(documented!.source_ids).toContain("SRC-PS");
     expect(documented!.text).toContain("njiva");
-    // neznani del: 2141 parcel brez prepisa (vključno 106 UNKNOWN iz PS)
-    const unknown = raba!.items.find((i) => i.text.includes("NI še prepisana"));
+    // neznani del: 2141 parcel brez per-parcelnega zapisa (vključno 106 UNKNOWN iz PS)
+    const unknown = raba!.items.find((i) => i.text.includes("NI še dokumentirana po parceli"));
     expect(unknown).toBeDefined();
     expect(unknown!.tier).toBe("NEZNANO");
     expect(unknown!.source_ids).toContain("SRC-PV");
     expect(unknown!.text).toContain("2141");
+    // PV prepisan (val 74): agregatne površine v besedilu, NI per-parcelnega ugibanja
+    expect(unknown!.text).toContain("1221 J 1573 K");
+    expect(unknown!.text).toContain("val 74");
   });
 
   test("§18.10: neznanje je izrecno — RG, BP brez lokacije, konflikti", () => {

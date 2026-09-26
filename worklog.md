@@ -3574,3 +3574,25 @@ Stage Summary:
 - ATLAS 1825 §19: klik na parcelo + filtriranje rabe zemljišč IZPOLNJENA (sloj = register, nič geometrije, dve ločeni nezanki, smera branja zgodbe poštena)
 - +0 virov/+0 trditve/+0 KG — sloj je čista projekcija obstoječih dokazov; 440 testov + 93/93 dimnih
 - Naslednje: 1) push val 73 (žeton) + poročilo #42 + deploy verifikacija; 2) ob kvoti re-readi PS p56–143 / PT p7 @300dpi / PR / PV (PV = Ausweis über die Benützungsart [373418] — naslednji vir za rabo 2035 parcel); 3) parcelne meje §9; 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 32
+Agent: Z.ai Code (main orchestrator)
+Task: Val 74 — ISSUE #42 §4/§14: PV N83 IZKAZ RABE ZEMLJIŠČ [373418] — prepis z aritmetičnimi vrati (user: "odlicno nadaljuj")
+
+Work Log:
+- Analiza: main @ e9a36b1 (val 73); naslednje po worklogu = ob kvoti re-readi / PV; PRELOM: PV [373418] JE javno dostopen na VAČ (file?uodid=373418&id=41783) — za razliko od šolskega lista [4118864] (val 47: brez izpostavljenih datotek)
+- Prenos: N083PV.pdf (485 kB, 1 stran) + nativni sken 2139×1435 (pymupdf, metoda val 56) → research-griblje/pv-n83/
+- Branje: vir = "AUSWEIS über die Benützungsart des Bodens für die Gemeinde Grüble", Provinz Illyrien, Kreis Neustadtl, District Krupa, datirano "am 10ten Jänner 18[25]" (ISTI DAN kot PUA p49 zaključek — križna potrditev); 2 neodvisna prehoda (preview + nativni pasovi 2×–8×)
+- ARITMETIČNA VRATA odločila kurrentske števke (vsaka odločitev dokumentirana): Gemüse Klft 133 (ne 193), Wein Joch 7 (ne 5), Weg Klft 1127, Bau Klft 889, velika 1221 (ne 1225) → vsota I 1148|539, vsota II 73|1034, velika 1221|1573 — vse NATANČNO do 1 Klafterja
+- Rezultat: Area der ganzen Gemeinde 1221 J 1573 K = 1.956.373 QKlft ≈ 7,032 km²; pašniki 52,06 % (3,66 km²), njive 33,84 %, travniki 7,3 %, vinogradi 0,61 % (4,27 ha!)
+- Najdbe: F-PV-01 RESOLVED (vrata na 3 nivojih) · F-PV-02 OPEN gozdna napetost (PV Wälder 0 vs PS 13 Wald parcel — nič tiho razrešeno; resolucija PZ 1830 [373419, 71 strani, TUDI javno dostopen!]) · F-PV-03 falsifikabilna napoved (vinogradi 1825 obstajajo, v PS p1–55 nič → PS p56–143 morajo vsebovati Weingarten) · F-PV-04 Bau-Parzellen 4 J 889 K ≈ 26.216 m² uradni agregat stavbnih parcel · F-PV-05 kraška pašniška struktura
+- Vgradnja: build-pv-1825.py → pv-land-use-1825.json (invarianti I1–I4 fail-fast; pravilo: PV = agregat, NIKOLI per-parcelna raba §4) · KG v1.6 (SRC-PV TRANSCRIBED 1/1; nodes/edges/claims/ID-ji NESPREMENJENI 3.309/3.569/622; kg_sha256 809ef581 → story_id po §22 pogodbi) · coverage rebuild (viri 10 VERIFIED/3 PARTIAL; transcription +PV; next_reads posodobljeni) · story engine 3 besedila ("PV prepisan (val 74): agregatne površine, ne raba posamezne parcele")
+- QA: nov tests/pv-land-use.test.ts (13 testov; vrata I1–I4 neodvisno preverjena v TS) + posodobljeni (KG v1.6/val 74, viri 10/3, novo besedilo) → 453/453; api-smoke +2 → 95/95; tsc/lint/verify-i18n (1032×5) čisti
+- E2E: zgodba vasi dialog ✓ (1221 J 1573 K + val 74; stale tekst odsoten), 0 konzolnih napak
+- Dokumentacija: research-griblje/87-val74-pv-izkaz-rabe.md; README 127. sklop; 00-KAZALO vnos 87; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825: PV [373418] PREPISAN z aritmetičnimi vrati — uradni agregat rabe 1825 (7,032 km²; pašniki 52 %) je nov dokaz; viri: 10/13 VERIFIED
+- KG v1.6 (val 74); 453 testov + 95/95 dimnih; §22 pogodba deluje (story_id sprememba po kg_sha256)
+- Naslednje: 1) push val 74 + poročilo #42 + deploy verifikacija; 2) PS p56–143 re-read (88 strani, F-PV-03 vinogradi); 3) PZ Konskripcija 1830 [373419] — javno dostopen, razreši F-PV-02 + prebivalstvo 1830 (§20 time slider prvi korak); 4) PT p7 @300dpi; 5) izven peskovnika šolski list/SA Podzemelj/SI AS 749

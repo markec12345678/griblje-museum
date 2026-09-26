@@ -179,7 +179,7 @@ describe("val65 — KG v1.2 MAP_OBJECT integracija", () => {
     expect(fids).toContain("KG-F03");
     expect(fids).toContain("KG-F04");
     expect(kg.invariant_violations).toEqual([]);
-    expect(kg.val).toBe(72); // KG v1.5 (val 72: GEOREF v2 MO koordinate, KG-F08; +C-00622/KG-F07 nespremenjena)
+    expect(kg.val).toBe(74); // KG v1.6 (val 74: PV agregat prepisan, SRC-PV TRANSCRIBED; koordinate/KG-F08 nespremenjeni)
     const moCat = kg.coverage.categories.find(
       (c: { category: string }) => c.category === "map_objects_a01",
     );
