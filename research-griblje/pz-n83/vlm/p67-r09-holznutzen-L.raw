@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=mit Holznutzen CLASSE=C JOCH=1 KLAFTER=6 OTHER: col2=558, col3=[crossed:8][crossed:4][crossed:6], col4=614, col5=[crossed:i][crossed:r], col6=-, col7=15, col8=25",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429931,
+  "id": "20260926213849b44714586f2948fb",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926213849b44714586f2948fb",
+  "usage": {
+    "completion_tokens": 76,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2062,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2138
+  }
+}

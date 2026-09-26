@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Ackerland mit 2 Oefen\n1. Oefe\nWirthschaftsherrs\nDie Andern zween Oeffe wohnen in gütigen\nHülfsfälligkeiten bishero, und waren\n\n| N° | N° | Beschreibung / Gattung |\n| :--- | :--- | :--- |\n| 1 | 1 | Mähd. in 1ing |\n| | 2 | Daitgrund mit Klee |\n| 2 | 3 | Klee in 2 Mayßen |\n| | 4 | Daitgrund in 1ing |\n| | 5 | Borde mit Mußfle Ein |\n| 3 | 6 | Lujer |\n| | 7 | Ludighele in 1ing |\n| | 8 | Borde mit Mußfle Ein |\n| | 9 | Lujer |\n\n**Bewegung auf 1 Joch**\nzween nachläst alle 3 Oefen zu dem Mietbetrug\nund mit\nLudighe V mit 90 gewürgten Söhnen an 483fl\npound jafälst mit - - - - 720 fl\n\n| N° | Gattung | Reinertrag (Metzen) |\n| :--- | :--- | :--- |\n| 1 | Joch mit Mais | 26 |\n| 2 | m Daitgrund | 12 |\n| 3 | Klee in 2 Mayßen | 50 |\n| 4 | Daitgrund | 12 |\n| 5 | Borde | 12 |\n| 6 | Mußfle Einem | 10 |\n| 7 | Lujer | 15 |\n| 8 | Ludighele | 80 |\n| 9 | Borde | 12 |\n| 10 | Mußfle Einem | 10 |\n| 11 | Lujer | 15 |",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790430901,
+  "id": "20260926215441baa16fa6f50548e1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926215441baa16fa6f50548e1",
+  "usage": {
+    "completion_tokens": 416,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4515,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4931
+  }
+}

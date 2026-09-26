@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Bauarea | ROW=8 | CULTURE=Bauarea | CLASSE=1 | JOCH=[crossed:1199] | KLAFTER=16 50 | COL5=19 | COL6=[crossed:58] | COL7=9 | COL8=15 | COL9=55\nNAME=Pina | ROW=9 | CULTURE=Pina | CLASSE=1152 | JOCH=4 95 | KLAFTER=88 72 | COL5=3/4 | COL6=53\nSUMMA-ROW | TOTALS=4492.51 | DEDUCTION=crossed out text (likely \"Abzug\") and \"Abkommens-Halb\"",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429779,
+  "id": "2026092621361460461f7c71104ff3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092621361460461f7c71104ff3",
+  "usage": {
+    "completion_tokens": 157,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2505
+  }
+}

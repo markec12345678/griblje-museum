@@ -337,7 +337,7 @@ points = [
         "absent_metrics": [
             {
                 "metric_id": "pasture_share",
-                "reason": "PZ Endresultat (p67) poroča 'Weiden mit Holznutzen' 558 J 846 K, ampak Summa p67 se ne zapira (F-PZ-04 OPEN, Δ 43.488 QKl) — deleži se ne objavljajo, dokler se vsota ne razreši (§14: nič vsiljenega).",
+                "reason": "PZ Endresultat (p67, val 77 re-read): vrstice 1–8 = 1149 J 495 K, zapisana Summa 1152 J 495 K (Δ 3 J = 4.800 QKlft; val 75: 43.488 na napačnih branjih) — Summa se še ne zapira (F-PZ-04 OPEN, pisarjevska nekonsistentnost; strukturni deleži 1830 izpeljani v pz-konskripcija-1830.json), deleži v UI se ne objavljajo, dokler se vsota ne razreši (§14: nič vsiljenega).",
             },
         ],
         "note": "Dokument obsega 1828/29–1830 (Nachtrag 1829, protokoli 1830); prebivalstvo nosi referenco 1830. Živina: 2 vrsti REVIEW.",

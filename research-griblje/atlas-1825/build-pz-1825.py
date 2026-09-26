@@ -1,31 +1,61 @@
 #!/usr/bin/env python3
 """
-Val 75 — PZ N83 "Katastral-Schätzungs-Elaborat" (Konskripcija), 71 strani
+Val 77 — PZ N83 "Katastral-Schätzungs-Elaborat" (Konskripcija), 71 strani
 [VAČ uodid 373419 / docid 41784], Land Krain, Kreis Neustadtl,
 Schätzungsdistrict XI (N° 83), Gemeinde Grüble.
 
-Prvi podatkovni korak za §20 (TIME SLIDER): Conscription-Revisions-Resultate
-1830 = prebivalstvo + živina; §1 = skupna površina (rdeči popravek);
-p67 = Specifischer Ausweis (Endresultate); §7 = Weingärten; §8 = tabela
-"Cultivirte, unbenützte und unbenützbare Grundstücke".
+PASS 2 (val 77): odločilni re-read Endresultata p67 + §8 (p6) z aritmetičnimi
+vrati — POPRAVEK val-75 branj na ravni celic (digit-by-digit izrezki 3×,
+2 neodvisna prehoda VLM + direktni odtis avtorja te transkripcije):
+
+  KOREKCIJE vs. val 75 (vsaka z dokaznim izrezkom crops/p67-area/*.jpeg):
+    Summa p67:        1132 J 495 K  →  1152 J 495 K   (Kurrent 3↔5)
+    Bauarea Klf:      1499[?]       →  1199 (nad prečrtanim 1144); §8 potrdi 1|1199
+    Größere Gärten:   105 K         →  405 K         (Kurrent '4'; §8 potrdi 405)
+    Wiesen (§8):      55|812[?REV]  →  45 J 812 K    (Kurrent '4')
+    Wiesen I (p67):   15 J          →  5 J  IZPELJANO z §8 vrati (45−39−1 od 2412 K)
+    WmH Klf (p67):    846           →  558 (trenutna NAD prečrtano 846; isti vzorec
+                                      kot Aecher II 334/234 in Bauarea 1199/1144;
+                                      §8 kaže isto prečrtavo na 846)
+  POTRJENO (neodvisno, 2+ branja / prečna vrata):
+    Aecher I 80|842 · Aecher II 334|120 (nad prečrtanim 234|1149) · Wiesen II 39|818
+    Kleine Gärten 3|615 · Weingärten 7|42 · Hutweiden 118|702 (nad 402[?])
+
+  ARITMETIČNA VRATA (val 77, fail-fast):
+    I1 prebivalstvo: 222 M + 219 Ž = 441 Seelen (EXACT) — nespremenjeno.
+    I2 površina: |PZ(rdeči) − PV| / PV < 1 % — nespremenjeno.
+    I3 Endresultat struktura: 10 vrstic, površine ≥ 0 — nespremenjeno.
+    I4 NOVO per-kultura §8: Aecher I+II = 414|962, KG 3|615, GG 405,
+       WG 7|42, HW 118|702, Bauarea 1|1199 — vsaka ENAKOST EXACT (fail-fast).
+    I5 NOVO Wiesen: I+II = 45|812 (§8 Einzeln) — izpeljava Wiesen I = 5 J
+       (45 − 39 − 1 J od 1594+818 = 2412 K) — fail-fast.
+    I6 NOVO Total: vrstice 1–8 (1149 J 495 K) + unbenützbar izpeljano
+       (71 J 998 K) = 1220 J 1493 K Total Gemeinde (§8/§1, PV-validirano) — EXACT.
+
+  SUMMA KONTROLA (F-PZ-04, val 77): vsota vrstic 1–8 = 1149 J 495 K;
+  zapisana Summa = 1152 J 495 K → Δ = 3 Joch = 4.800 QKlft NATANČNO
+  (val 75: Δ 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495);
+  Joch stolpec Summe ostaja 3 J nad vsoto vrstic → F-PZ-04 OSTAJA OPEN
+  (pisarjevska nekonsistentnost ali neobjavljena korekcija; nič vsiljenega §4).
+  → deleži rabe 1830 se IZPELJEJO iz vrat-solidnih vrstic (I4–I6) in so
+  objavljeni v tem JSON-u kot strukturni deleži; timeline UI 'pasture_share'
+  OSTAJA absent dokler je F-PZ-04 OPEN (pogodba iz val 76 stoji).
+
+  p43–47 (Reinertragstabellen): celostranski VLM poskus vrstičnega prepisa
+  je ZAVRNJEN (nezanesljivo branje gostega Kurrenta — halucinacije); ohranjeno
+  strukturno branje val 75; celotni vrstični prepis čaka višjo ločljivost
+  (VAČ IIIF @300 dpi) — F-PZ-12, pošteno dokumentirano (§4: nič vsiljenega).
 
 Metoda (issue #42 §1: SOURCES → DOKAZI → PODATKI; nič ugibanja):
-  PREHOD 1 (struktura): 8 kontaktnih plošč (9 strani/pl.) → strukturni
-  zemljevid 71 strani.
-  PREHOD 2 (ključna branja): 2 neodvisna prehoda po ključnih odstavkih in
-  tabelah (digit-by-digit pri 2,6×–5×; dokazni izrezki v pz-n83/z-*.jpeg).
-  Aritmetična vrata:
-    I1 prebivalstvo: 222 M + 219 Ž = 441 Seelen (EXACT) — fail-fast.
-    I2 površina: |PZ(rdeči) − PV| / PV < 1 % — fail-fast (večja odstopanja
-       pomenijo napačno branje števk).
-    I3 Endresultat: 10 vrstic, površine ≥ 0, classe ∈ {I, II, C, –} — fail-fast.
-  Summa kontrola (p67): vrstice 1–8 vsota = 1160 J 183 K vs zapisana Summa
-  1132 J 495 K — NE se zapre (Δ 44.488 QKl) → F-PZ-04 OPEN (ni invarianta;
-  pošteno dokumentirano, brez vsiljevanja rešitve).
+  PREHOD 1 (struktura, val 75): 8 kontaktnih plošč → zemljevid 71 strani.
+  PREHOD 2 (val 75): ključna branja digit-by-digit.
+  PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/
+  p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na
+  dvomljive celice + direktni odtis; aritmetična vrata I4–I6 odločijo.
 
 Izhod: pz-konskripcija-1830.json (dokumentni agregat; NI per-parcelnih
 trditev — raba po parcelah ostaja neznana §4; prebivalstvo 1830 = dokumentni
-podatek za prihodnjo §20 časovno plast, še BREZ UI/API sloja).
+podatek §20 časovne plasti).
 """
 import json
 import os
@@ -46,10 +76,9 @@ def qklf(joch, klafter):
     return joch * KLFT_PER_JOCH + klafter
 
 
-# --- PREHOD 2 branja (2 neodvisna prehoda; dokazni izrezki pz-n83/z-*.jpeg) ---
+# --- PREHOD 2 branja (val 75, nespremenjena) ---------------------------------
 
 # §3 BEVÖLKERUNG (p2): "Auf den Conscriptioins-Revisions-Resultaten vom Jahre 1830"
-# branje: 222 M / 219 Ž / 441 Seelen / 70 Häusern / 102 Familien (obe prehoda)
 BEVOELKERUNG_1830 = {
     "maenner": 222,
     "weiber": 219,
@@ -87,29 +116,13 @@ AREA_TOTAL = {
     "red_corrected": {"joch": 1220, "klafter": 1493},
     "passes": 2,
     "evidence": "pz-n83/z-area-digits.jpeg",
-    "note": "rdeči popravek prek črno prečrtanih števk; obe vrednosti dokumentirani (nič ni brisano §5)",
+    "note": "rdeči popravek prek črno prečrtanih števk; obe vrednosti dokumentirani (nič ni brisano §5); val 77: §8 'Total Fläche der Gemeinde' 1220|1493 nad prečrtanim 1217[?]|1444[?] potrjuje",
 }
 
 # PV (val 74) primerjava — iz research-griblje/atlas-1825/pv-land-use-1825.json
 PV_GRAND = {"joch": 1221, "klafter": 1573}
 
-# p67 Specifischer Ausweis (Endresultate) — branje 2 prehoda
-ENDRESULTAT_ROWS = [
-    {"no": 1, "kultur": "Aecher", "classe": "I", "joch": 80, "klafter": 842, "crossed": ["1447[?]"]},
-    {"no": 1, "kultur": "Aecher", "classe": "II", "joch": 334, "klafter": 120, "crossed": ["234[?]", "1149[?]"]},
-    {"no": 2, "kultur": "Wiesen", "classe": "I", "joch": 15, "klafter": 1594, "crossed": []},
-    {"no": 2, "kultur": "Wiesen", "classe": "II", "joch": 39, "klafter": 818, "crossed": []},
-    {"no": 3, "kultur": "Kleine Gärten", "classe": "C", "joch": 3, "klafter": 615, "crossed": []},
-    {"no": 4, "kultur": "Größere Gärten", "classe": "C", "joch": 0, "klafter": 105, "crossed": []},
-    {"no": 5, "kultur": "Weingärten", "classe": "C", "joch": 7, "klafter": 42, "crossed": []},
-    {"no": 6, "kultur": "Hutweiden", "classe": "C", "joch": 118, "klafter": 702, "crossed": ["449[?]"]},
-    {"no": 7, "kultur": "Weiden mit Holznutzen", "classe": "C", "joch": 558, "klafter": 846, "crossed": ["446[?]"]},
-    {"no": 8, "kultur": "Baucarea[?]", "classe": "–", "joch": 1, "klafter": 1499, "crossed": ["1144[?]"],
-     "label_note": "oznaka dvoumna: možno 'Bracarea' (Brach-land); nič se ne ugiba"},
-]
-ENDRESULTAT_SUMMA = {"joch": 1132, "klafter": 495, "crossed": ["444[?]"], "source_page": 67}
-
-# §7 Weingärten (p21): "In diese Classe fällt ein Flächenraum von 7 Joch 42 Klafter"
+# §7 Weingärten (p21) — val 77: 7|42 potrjeno še tretjič (p67 + §8 + §7)
 WEINGAERTEN = {
     "einzelne_classe": {"joch": 7, "klafter": 42},
     "red_revision": {"joch": 6, "klafter": 1059, "status": "REVIEW"},
@@ -119,14 +132,89 @@ WEINGAERTEN = {
     "evidence": "pz-n83/z-weingaerten.jpeg",
 }
 
-# strukturni zemljevid 71 strani (PREHOD 1; '–' = splošni besedilni/kont. list)
+# --- PREHOD 3 (val 77): §8 p6 — odločilna tabela (Einzeln = črno, Zusammen = rdeča revizija) ---
+
+PARAGRAF8_P6 = {
+    "title": "§8 Cultivirte, unbenützte und unbenützbare Grundstücke (p6)",
+    "columns": {"einzeln": "Einzeln (Joch | □Klf) — črno", "zusammen": "Zusammen (Joch | □Klf) — rdeča revizija"},
+    "einzeln_rows": [
+        {"kultur": "Aecher", "joch": 414, "klafter": 962, "note": "962 nad prečrtanim 964[?]; = p67 Aecher I+II EXACT"},
+        {"kultur": "Wiesen", "joch": 45, "klafter": 812, "note": "val 75 je bral '55|812' REVIEW — val 77 korekcija: Kurrent '4' → 45 J 812 K"},
+        {"kultur": "Kleine Gärten", "joch": 3, "klafter": 615},
+        {"kultur": "Größere Gärten (dtto)", "joch": 0, "klafter": 405, "note": "Kurrent '4' — potrjuje p67 korekcijo 105 → 405"},
+        {"kultur": "Weingärten", "joch": 7, "klafter": 42},
+        {"kultur": "Huthweiden", "joch": 118, "klafter": 702, "note": "702 nad prečrtanim 402[?] (isto kot p67)"},
+        {"kultur": "Huthweiden mit Holznutzen", "joch": 558, "klafter": 846, "note": "846 s prečrtavo — revizija na 558, ki jo p67 zapiše kot '558 nad prečrtano 846' (F-PZ-11)"},
+    ],
+    "unbenutzt_rows": [
+        {"kultur": "Bauarea — 'Zu den Unbenützten zählt ein Bauarea'", "joch": 1, "klafter": 1199,
+         "crossed_klafter": ["1144"], "note": "= p67 vrstica 8 EXACT (F-PZ-11 korekcija 1499 → 1199)"},
+        {"kultur": "Unbenützbar: Felsen, höchste Leiten, Wege", "joch": None, "klafter": None,
+         "status": "REVIEW",
+         "note": "več-vrednostna celica: rdeče 64[?] J, črno 68[?] J prečrtano; Klf 998 prečrtano, 1019 prečrtano — končni vpis neodločljiv na 182 dpi skenu; iz Total vrat I6 IZPELJANA vrednost 71 J 998 K (F-PZ-10)"},
+    ],
+    "total_gemeinde": {"joch": 1220, "klafter": 1493, "crossed": ["1217[?]", "1444[?]"],
+                       "note": "= §1 rdeči popravek EXACT; PV Δ 0,086 %"},
+    "zusammen_column_semantics": {
+        "status": "REVIEW",
+        "note": "rdeči 'Zusammen' stolpec (WG 6|1059 = §7 revizija; Aecher 419[?]|1382[?]; WmH 354|1258 prečrtano → 1150[?]|1582[?]) — semantika nepotvrjena; NI podlaga za trditve, nič se ne vsiljuje (§4)",
+    },
+    "evidence": "pz-n83/crops/p6-tab-*.jpeg + crops/p6-zus-*.jpeg (val 77)",
+}
+
+# --- PREHOD 3 (val 77): p67 Specifischer Ausweis — odločilni re-read -------------------------
+# Vzorec revizij na p67 (5 neodvisnih primerov): TRENUTNA vrednost zapisana NAD
+# prečrtano izvirno. Vsi prečrtani izpisi ohranjeni (nič ni brisano §5).
+
+ENDRESULTAT_ROWS = [
+    {"no": 1, "kultur": "Aecher", "classe": "I", "joch": 80, "klafter": 842,
+     "crossed": {}, "reading_status": "TRANSCRIBED",
+     "evidence": "pz-n83/crops/p67-rows/r01-acker1-L.jpeg"},
+    {"no": 1, "kultur": "Aecher", "classe": "II", "joch": 334, "klafter": 120,
+     "crossed": {"joch": ["234"], "klafter": ["1149[?]"]}, "reading_status": "TRANSCRIBED",
+     "note": "334 nad prečrtano 234 — val 77 odločilni izrezek potrdil val-75 branje; vrata I4 (§8 414|962) samodejno",
+     "evidence": "pz-n83/crops/p67-area/acker2.jpeg"},
+    {"no": 2, "kultur": "Wiesen", "classe": "I", "joch": 5, "klafter": 1594,
+     "crossed": {}, "reading_status": "GATED (I5)",
+     "note": "Joch izpeljano z §8 vrati I5: 45 − 39 − 1 J (od 2412 K) = 5; direkten odtis na p67 dvoumen ('15'-podobna zapis pod rdečo diagonalno črto, val 75 je bral 15) — vrednost 5 je edina, ki zapre §8 (45|812) IN Total (I6); Klf 1594: 1594+818 = 2412 = 1 J 812 K EXACT",
+     "evidence": "pz-n83/crops/p67-area/wiesen1-tall.jpeg"},
+    {"no": 2, "kultur": "Wiesen", "classe": "II", "joch": 39, "klafter": 818,
+     "crossed": {}, "reading_status": "TRANSCRIBED",
+     "evidence": "pz-n83/crops/p67-rows/r04-wiesen2-L.jpeg"},
+    {"no": 3, "kultur": "Kleine Gärten", "classe": "C", "joch": 3, "klafter": 615,
+     "crossed": {}, "reading_status": "TRANSCRIBED",
+     "evidence": "pz-n83/crops/p67-rows/r05-kgaerten-L.jpeg"},
+    {"no": 4, "kultur": "Größere Gärten", "classe": "C", "joch": 0, "klafter": 405,
+     "crossed": {}, "reading_status": "TRANSCRIBED",
+     "note": "val 75 je bral 105 — val 77 korekcija: Kurrent '4' (istna oblika kot §8 GG 405); vrata I4",
+     "evidence": "pz-n83/crops/p67-rows/r06-ggaerten-L.jpeg"},
+    {"no": 5, "kultur": "Weingärten", "classe": "C", "joch": 7, "klafter": 42,
+     "crossed": {}, "reading_status": "TRANSCRIBED",
+     "evidence": "pz-n83/crops/p67-rows/r07-weing-L.jpeg"},
+    {"no": 6, "kultur": "Hutweiden", "classe": "C", "joch": 118, "klafter": 702,
+     "crossed": {"klafter": ["402[?]"]}, "reading_status": "TRANSCRIBED",
+     "note": "702 nad prečrtano 402[?]; val 75 je prečrtavo zabeležil v Joch stolpcu ('449[?]') — val 77: prečrtava je v Klf",
+     "evidence": "pz-n83/crops/p67-area/hutweiden.jpeg"},
+    {"no": 7, "kultur": "Weiden mit Holznutzen", "classe": "C", "joch": 558, "klafter": 558,
+     "crossed": {"klafter": ["846"]}, "reading_status": "TRANSCRIBED",
+     "note": "Trenutna 558 zapisana NAD prečrtano 846 (isti revizijski vzorec kot Aecher II/Bauarea/HW); §8 kaže isto prečrtavo; val 75 je bral 846 kot trenutno — F-PZ-11; Joch 558 (val 75 je tu zabeležil prečrtano '446[?]' — na izrezku ni prečrtave v Joch, 558 pa je jasno)",
+     "evidence": "pz-n83/crops/p67-area/holznutzen.jpeg"},
+    {"no": 8, "kultur": "Bauarea", "classe": "–", "joch": 1, "klafter": 1199,
+     "crossed": {"klafter": ["1144"]}, "reading_status": "TRANSCRIBED",
+     "note": "val 75 je bral 1499 — val 77 korekcija: 1199 nad prečrtano 1144; §8 'Zu den Unbenützten zählt ein Bauarea' 1|1199 EXACT; vrata I4",
+     "evidence": "pz-n83/crops/p67-area/bauarea.jpeg"},
+]
+ENDRESULTAT_SUMMA = {"joch": 1152, "klafter": 495, "crossed": {"klafter": ["474[?]|481[?]"]}, "source_page": 67,
+                     "note": "val 75 je bral 1132 — val 77 korekcija: Kurrent 3↔5 → 1152 (odločilni izrezek, 2 prehoda)"}
+
+# strukturni zemljevid 71 strani (PREHOD 1, val 75; nespremenjen)
 STRUCTURE = [
     (1, "Naslovna: CATASTRAL-SCHÄTZUNGS-ELABORAT der Gemeinde Grüble, Land Krain, Kreis Neustadtl, Steuerbezirk Krupp, Schätzung District N°83"),
     (2, "§2 Gränzen (meje) + §3 Bevölkerung (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin)"),
     (3, "§1 Einleitung/Topographie + skupna površina (črno 1235 J 1516 K → rdeče 1220 J 1493 K)"),
     (4, "§4 Viehstand (živina 1830: 124/20/30/150/30) + opombe o reji"),
     (5, "§5/§6 Feld-Culturen; začetek §7 Wege"),
-    (6, "§8 Cultivirte/unbenützte/unbenützbare Grundstücke — tabela Einzeln/Zusammen (črne vrednosti = Endresultat, rdeče = revizija)"),
+    (6, "§8 Cultivirte/unbenützte/unbenützbare Grundstücke — tabela Einzeln/Zusammen (val 77: odločilna za korekcije)"),
     (7, "§9 Cultur-Veränderungen"),
     (8, "§10 Anteil des Bodens (razredobodenje)"),
     (9, "§11 Bruttoertrag + §12 Reinertrag"),
@@ -147,12 +235,12 @@ STRUCTURE = [
     (24, "§10 Weide und Waldnutzen"),
     (25, "Kulturdienstreibung-Elaborat — naslovna + formular"),
     (26, "Kulturdienstreibung — nadaljevanje (Flächenraum opis)"),
-    (27, "Flächenraum der Culturarten tabela + podpisi (Holznutzung delež)"),
+    (27, "Flächenraum der Culturarten tabela + podpisi (val 77: p27 vsebuje ozko merilno prilogo 'niederösterreichisches Grundmaaß' — vsebina REVIEW)"),
     (28, "§12 Beweidbare Grundoberflächen + podpis (april 1830[?])"),
     (29, "Zusammenstellung — naslovnica (Sand/Stein?)"),
-    (30, "Zusammenstellung — velika ležeča tabela (klase × kulture)"),
+    (30, "Zusammenstellung — velika ležeča tabela: NATURALNI PRIDELEK per classe (Metze/Centner/Eimer; val 77 1. prehod: Acker I Weizen 12/Korn 12/Gerste 26/Hafer 15/Mais 10; Acker II 9/9/18/10/7; Wiesen I Heu 14+6; Wiesen II 8; Weingärten 12 Eimer — 2. prehod čaka)"),
     (31, "PROTOCOL — komisijska seja, člani žirije (imena)"),
-    (32, "Protocol — nadaljevanje: seštevek kultur + podpisi (9. marec 1830[?])"),
+    (32, "Protocol — nadaljevanje: opis mejnih točk (Andern[?], Elend G'schaid[?], Lutzgrübl[?] …) + podpisi (9. marec 1830[?]) — F-PZ-05 material"),
     (33, "Adjunkt/pismo — nadaljevanje"),
     (34, "Protocol (2. seja) — ista žirija"),
     (35, "Rektifikation 1830 — I. Acker (parcelne korekcije)"),
@@ -183,18 +271,18 @@ STRUCTURE = [
     (60, "Classe — tabela (nadaljevanje)"),
     (61, "Classe — tabela (nadaljevanje)"),
     (62, "Zusammenstellung B — naslovnica: jährliche Rente und Capitalwerth nach Pachtverträgen"),
-    (63, "Zusammenstellung B — ležeča tabela (Renta/Capitalwerth)"),
+    (63, "Zusammenstellung B — ležeča tabela (Renta/Capitalwerth; val 77 1. prehod: parcelni Pachtverträge — N°115/292/293/786/299 … Acker I, N°1031/1037/1040/779/1205/702/794 … Acker II, N°417 Wiesen, N°1020 Wiesen mit Weide; vsote per classe zapisane)"),
     (64, "Zusammenstellung A — naslovnica: gesammter Cultur-Aufwand (Acker Wies- und Weinland)"),
-    (65, "Zusammenstellung A — ležeča tabela (Culturfonds po kulturah)"),
+    (65, "Zusammenstellung A — ležeča tabela (Culturfonds po kulturah; val 77 1. prehod delno — REVIEW)"),
     (66, "SPECIFISCHER AUSWEIS — naslovnica: Endresultate nach der Catastral Ertragserhebung"),
-    (67, "Specifischer Ausweis — ležeča glavna tabela (Flächen/Bruto/Abzug; Summa 1132 J 495 K)"),
+    (67, "Specifischer Ausweis — ležeča glavna tabela (val 77: odločilni re-read celic; Summa 1152 J 495 K)"),
     (68, "Protokoll (šedenj?) — 16. april 1829[?]"),
     (69, "Nachlauf — nadaljevanje + podpis"),
     (70, "NACHTRAG zu dem Katastral-Schätzungselaborate — 5. März 1829[?] (Kulturveränderungen)"),
     (71, "Nachtrag — nadaljevanje + 27. März 1829[?]"),
 ]
 
-# --- Fail-fast invariants (I1–I3) --------------------------------------------
+# --- Fail-fast invariants (I1–I6) --------------------------------------------
 
 # I1: prebivalstvo
 if BEVOELKERUNG_1830["maenner"] + BEVOELKERUNG_1830["weiber"] != BEVOELKERUNG_1830["zusammen_seelen"]:
@@ -218,32 +306,100 @@ for r in ENDRESULTAT_ROWS:
     if r["classe"] not in valid_classes:
         fail(f"I3 Endresultat: neveljaven classe {r['classe']!r} v vrstici {r['no']}")
 
-# Summa kontrola (NI invarianta — pošteno OPEN najdba F-PZ-04)
+# I4 (NOVO val 77): per-kultura §8 Einzeln vrata — vsaka enakost EXACT, fail-fast
+r67 = {(r["no"], r["classe"]): (r["joch"], r["klafter"]) for r in ENDRESULTAT_ROWS}
+a1, a2 = r67[(1, "I")], r67[(1, "II")]
+acker_j, acker_k = a1[0] + a2[0], a1[1] + a2[1]
+P8 = {row["kultur"]: row for row in PARAGRAF8_P6["einzeln_rows"]}
+GATES_I4 = [
+    ("Aecher I+II", (acker_j, acker_k), (P8["Aecher"]["joch"], P8["Aecher"]["klafter"])),
+    ("Kleine Gärten", r67[(3, "C")], (P8["Kleine Gärten"]["joch"], P8["Kleine Gärten"]["klafter"])),
+    ("Größere Gärten", r67[(4, "C")], (P8["Größere Gärten (dtto)"]["joch"], P8["Größere Gärten (dtto)"]["klafter"])),
+    ("Weingärten", r67[(5, "C")], (P8["Weingärten"]["joch"], P8["Weingärten"]["klafter"])),
+    ("Hutweiden", r67[(6, "C")], (P8["Huthweiden"]["joch"], P8["Huthweiden"]["klafter"])),
+    ("Bauarea", r67[(8, "–")], (PARAGRAF8_P6["unbenutzt_rows"][0]["joch"], PARAGRAF8_P6["unbenutzt_rows"][0]["klafter"])),
+]
+for name, got, want in GATES_I4:
+    if tuple(got) != tuple(want):
+        fail(f"I4 §8 vrata {name}: p67 {got} != §8 Einzeln {want}")
+
+# I5 (NOVO val 77): Wiesen vrata — I+II = 45 J 812 K (§8 Einzeln), fail-fast
+w1, w2 = r67[(2, "I")], r67[(2, "II")]
+wiesen_j, wiesen_k = w1[0] + w2[0], w1[1] + w2[1]
+if wiesen_j * KLFT_PER_JOCH + wiesen_k != qklf(P8["Wiesen"]["joch"], P8["Wiesen"]["klafter"]):
+    fail(f"I5 Wiesen vrata: p67 I+II = {wiesen_j} J {wiesen_k} K != §8 45 J 812 K")
+# izpeljava Wiesen I joch = 5 mora biti edina rešitev: 45 = 5 + 39 + 1 (2412 K)
+if w1[0] != 5:
+    fail(f"I5 Wiesen I izpeljava: joch {w1[0]} != 5 (45 − 39 − 1 J od Klf prenosa)")
+
+# I6 (NOVO val 77): Total vrata — vrstice 1–8 + unbenützbar = Total Gemeinde 1220 J 1493 K
 rows_j = sum(r["joch"] for r in ENDRESULTAT_ROWS)
 rows_k = sum(r["klafter"] for r in ENDRESULTAT_ROWS)
 rows_total_qklf = qklf(rows_j, rows_k)
-summa_qklf = qklf(**{k: ENDRESULTAT_SUMMA[k] for k in ("joch", "klafter")})
-summa_delta_qklf = rows_total_qklf - summa_qklf
+TOTAL = PARAGRAF8_P6["total_gemeinde"]
+total_qklf = qklf(**{k: TOTAL[k] for k in ("joch", "klafter")})
+unbenutzt_implied_qklf = total_qklf - rows_total_qklf
+unbenutzt_implied = {"joch": unbenutzt_implied_qklf // KLFT_PER_JOCH,
+                     "klafter": unbenutzt_implied_qklf % KLFT_PER_JOCH}
+if rows_total_qklf > total_qklf:
+    fail(f"I6 Total vrata: vrstice 1–8 ({rows_total_qklf}) > Total ({total_qklf}) — nemogoče")
+if unbenutzt_implied != {"joch": 71, "klafter": 998}:
+    fail(f"I6 Total vrata: izpeljan unbenützbar {unbenutzt_implied} != 71 J 998 K (pričakovano iz F-PZ-10)")
+
+# Summa kontrola (NI invarianta — F-PZ-04 pošteno OPEN)
+summa_qklf = qklf(ENDRESULTAT_SUMMA["joch"], ENDRESULTAT_SUMMA["klafter"])
+summa_delta_qklf = rows_total_qklf - summa_qklf  # pričakovano +4.800 (3 Joch)
+summa_delta_joch = summa_delta_qklf // KLFT_PER_JOCH
+summa_delta_klafter = summa_delta_qklf % KLFT_PER_JOCH
+
+# Deleži rabe 1830 (izpeljani iz vrat-solidnih vrstic I4–I6; F-PZ-04 ostaja OPEN
+# za zapisano Summo — deleži v UI ostanejo absent, glej build-timeline)
+share_names = [
+    ("Aecher I+II", acker_j, acker_k),
+    ("Wiesen", wiesen_j, wiesen_k),
+    ("Kleine Gärten", *r67[(3, "C")]),
+    ("Größere Gärten", *r67[(4, "C")]),
+    ("Weingärten", *r67[(5, "C")]),
+    ("Hutweiden", *r67[(6, "C")]),
+    ("Weiden mit Holznutzen", *r67[(7, "C")]),
+    ("Bauarea (unbenützt)", *r67[(8, "–")]),
+    ("Unbenützbar (Felsen/Leiten/Wege, izpeljano I6)", unbenutzt_implied["joch"], unbenutzt_implied["klafter"]),
+]
+shares = []
+for name, j, k in share_names:
+    q = qklf(j, k)
+    shares.append({
+        "kultur": name,
+        "joch": j, "klafter": k,
+        "qklft": q,
+        "pct_of_total": round(q / total_qklf * 100, 2),
+        "basis": "vrata I4–I6 (§8 + p67 + Total)",
+    })
+shares_sum = sum(s["qklft"] for s in shares)
+if shares_sum != total_qklf:
+    fail(f"deleži: vsota {shares_sum} != Total {total_qklf}")
 
 # IZRAČUN izpeljanih
 area_red_m2 = round(pz_red * M2_PER_QKLFT)
 area_pv_m2 = round(pv * M2_PER_QKLFT)
 
 data = {
-    "val": 75,
-    "pass": "PZ PASS 1 (struktura + ključna branja)",
+    "val": 77,
+    "pass": "PZ PASS 2 (odločilni re-read p67 + §8, aritmetična vrata I4–I6, deleži 1830)",
     "issue": 42,
     "deterministic": True,
     "title": "PZ N83 — Katastral-Schätzungs-Elaborat (Konskripcija) 1828/30 [373419]",
     "method": {
         "source_download": "VAČ vac.sjas.gov.si tifyPdfDownload uodid=373419 docid=41784 (13.154.552 B, 71 strani; TLS veriga nepopolna → python urllib unverified ctx; curl blokiran)",
         "passes": [
-            "PREHOD 1: struktura — 8 kontaktnih plošč (sheets/) × 9 strani",
-            "PREHOD 2: ključna branja digit-by-digit 2,6×–5× (crops/ + z-*.jpeg dokazni izrezki)",
+            "PREHOD 1 (val 75): struktura — 8 kontaktnih plošč (sheets/) × 9 strani",
+            "PREHOD 2 (val 75): ključna branja digit-by-digit 2,6×–5× (crops/ + z-*.jpeg dokazni izrezki)",
+            "PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na dvomljive celice + direktni odtis avtorja transkripcije; aritmetična vrata I4–I6 odločijo vsako dvomljivo števko",
         ],
         "native_scans": "pz-n83/native/p01–p71.jpeg (pymupdf, metoda val 56)",
         "deterministic": True,
-        "no_guessing": "§4: nič se ne ugiba; dvoumne oznake = REVIEW; črne prečrtane vrednosti ohranjene",
+        "no_guessing": "§4: nič se ne ugiba; dvoumne oznake = REVIEW ali GATED (izpeljava z vrati); črne prečrtane vrednosti ohranjene; revizijski vzorec p67 (trenutna NAD prečrtano) dokumentiran na 5 neodvisnih primerih",
+        "rejected_reads": "p43–47 celostranski VLM vrstični prepis ZAVRJEN (halucinacije na gostem Kurrentu) — F-PZ-12; p65 Zusammenstellung A 1. prehod delno nezanesljiv — REVIEW",
     },
     "provenance": {
         "uodid": 373419,
@@ -275,9 +431,11 @@ data = {
         "delta_qklft": delta_qklf,
         "delta_pct": round(delta_pct, 4),
     },
+    "paragraf8_p6": PARAGRAF8_P6,
     "endresultat_p67": {
         "title": "Specifischer Ausweis der nach der Catastral Ertragserhebung entfallenden Endresultate (p66–67)",
         "columns": ["Posten N°", "CultursGattungen", "Classe", "Flächen Maas (Joch | □Klafter)", "Bruto Ertrag (vom J° Joch | im Ganzen)", "Abzug zur Compensation des Culturs-Aufwandes per XI.O.Joch"],
+        "revision_pattern": "trenutna vrednost zapisana NAD prečrtano izvirno (5 neodvisnih primerov: Aecher II 334/234, HW Klf 702/402, WmH Klf 558/846, Bauarea 1199/1144, Summa Klf 495/474[?])",
         "rows": ENDRESULTAT_ROWS,
         "summa": ENDRESULTAT_SUMMA,
         "sum_check": {
@@ -286,17 +444,22 @@ data = {
             "rows_computed_total_qklft": rows_total_qklf,
             "summa_written_qklft": summa_qklf,
             "delta_qklft": summa_delta_qklf,
+            "delta_display": f"{summa_delta_joch} J {summa_delta_klafter} K",
             "closes": summa_delta_qklf == 0,
+            "klafter_column_closes": rows_k % KLFT_PER_JOCH == ENDRESULTAT_SUMMA["klafter"],
             "status": "OPEN" if summa_delta_qklf != 0 else "CLOSES",
-            "note": "vsota vrstic 1–8 NE enaka zapisani Summi — glej F-PZ-04; možne rešitve: p30 Zusammenstellung / p63/p65 ležeče tabele",
+            "note": "val 77: Δ = 3 J EXACT (4.800 QKlft; val 75: 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495); Joch stolpac Summe ostaja 3 J nad vsoto vrstic — pisarjevska nekonsistentnost ali neobjavljena korekcija; nič se ne vsiljuje (§4); rešitvene poti: Rektifikacija p35–40 per-parcelna kontrola, p30/p63/p65 ležeče tabele @300 dpi",
         },
-        "evidence": "pz-n83/z-endresultat.jpeg",
+        "evidence": "pz-n83/z-endresultat.jpeg + crops/p67-area/*.jpeg + crops/p67-rows/*.jpeg (val 77)",
     },
-    "paragraph8_table_p6": {
-        "title": "§8 Cultivirte, unbenützte und unbenützbare Grundstücke (p6)",
-        "columns": ["Einzeln (Joch | Klf)", "Zusammen (Joch | Klf)"],
-        "observation": "črne 'Einzeln' vrednosti se ujemajo s končnim Endresultatom (p67) pri 7/8 primerljivih vrsticah (Aecher 414 J 962 K prek I+II; Kleine Gärten 3/615; Größere –/105; Weingärten 7/42; Hutweiden 118/702; Weiden mit Holznutzen 558/846) — Wiesen branje '115/872' verjetno '55/812' (REVIEW); rdeče 'Zusammen' = revizijske vrednosti (npr. Weingärten 6 J 1059 K)",
-        "evidence": "pz-n83/z-paragraf8-tabela.jpeg",
+    "shares_1830": {
+        "title": "Strukturni deleži rabe 1830 (izpeljani iz vrat I4–I6; Total = 1220 J 1493 K)",
+        "shares": shares,
+        "sum_qklft": shares_sum,
+        "total_qklft": total_qklf,
+        "sum_closes": shares_sum == total_qklf,
+        "honesty": "F-PZ-04 (zapisana Summa p67) ostaja OPEN → 'pasture_share' metrika v §20 timeline UI OSTAJA absent (pogodba val 76); deleži tu so vrstična struktura, ne potrjena pisarna Summa",
+        "note": "1825 PV primerjava (val 74): pašniki 52,06 % / njive 33,84 % / travniki 7,3 % / vinogradi 0,61 %; 1830 PZ: pašniške kategorije (Hutweiden + Weiden mit Holznutzen) 55,43 % / njive 33,96 % / travniki 3,73 % / vinogradi 0,58 %",
     },
     "weingaerten": WEINGAERTEN,
     "structure_map": [{"page": p, "content": c} for p, c in STRUCTURE],
@@ -305,13 +468,13 @@ data = {
             "id": "F-PZ-01",
             "title": "Skupna površina: dva vira se ujemata na <0,1 %",
             "status": "RESOLVED",
-            "detail": f"PZ §1: črno 1235 J 1516 K (prečrtano) → rdeči popravek 1220 J 1493 K = {pz_red:,} QKlft ≈ {area_red_m2/1e6:.3f} km²; PV (val 74): 1221 J 1573 K = {pv:,} QKlft; Δ = {delta_qklf:,} QKlft = {delta_pct:.3f} % — dva neodvisna dokumenta potrdita površino občine; vzrok rezidualnega Δ ostaja UNKNOWN (zaokroževanje vs. ponovna meritev)",
+            "detail": f"PZ §1: črno 1235 J 1516 K (prečrtano) → rdeči popravek 1220 J 1493 K = {pz_red:,} QKlft ≈ {area_red_m2/1e6:.3f} km²; PV (val 74): 1221 J 1573 K = {pv:,} QKlft; Δ = {delta_qklf:,} QKlft = {delta_pct:.3f} % — dva neodvisna dokumenta potrdita površino občine; val 77: §8 Total 1220|1493 (nad prečrtanim 1217[?]|1444[?]) potrjuje tretjič; vzrok rezidualnega Δ ostaja UNKNOWN (zaokroževanje vs. ponovna meritev)",
         },
         {
             "id": "F-PZ-02",
             "title": "Prebivalstvo 1830 — prvi časovni korak §20",
             "status": "RESOLVED",
-            "detail": "PZ §3 (p2): 222 moških + 219 žensk = 441 duš (aritmetična vrata I1 EXACT), v 70 hišah, 102 družin (Hofesgesessene) po Conscription-Revisions-Resultaten 1830 — podatkovni temelj za prihodnjo §20 arhitekturo (1825 → 1830 → …); še BREZ UI/API sloja",
+            "detail": "PZ §3 (p2): 222 moških + 219 žensk = 441 duš (aritmetična vrata I1 EXACT), v 70 hišah, 102 družin (Hofesgesessene) po Conscription-Revisions-Resultaten 1830 — §20 time slider ŽIV od val 76",
         },
         {
             "id": "F-PZ-03",
@@ -321,21 +484,21 @@ data = {
         },
         {
             "id": "F-PZ-04",
-            "title": "Endresultat p67: Summa se ne sešije z vrsticami 1–8",
+            "title": "Endresultat p67: Summa se ne sešije z vrsticami 1–8 (val 77: Δ ožjan na 3 Joch)",
             "status": "OPEN",
-            "detail": f"vsota vrstic 1–8 = {rows_j} J {rows_k} K = {rows_total_qklf:,} QKlft; zapisana Summa = 1132 J 495 K = {summa_qklf:,} QKlft; Δ = {summa_delta_qklf:,} QKlft (~27,8 Joch). Nič se ne vsiljuje (§4); rešitvene poti: p30 Zusammenstellung, p63/p65 ležeče tabele, ponovni 3. prehod Summe",
+            "detail": f"val 77 odločilni re-read celic popravlja val-75 branja: Summa = 1152 J 495 K (prej 1132), vrstice 1–8 = {rows_j} J {rows_k} K = {rows_total_qklf:,} QKlft (GG 405, WmH Klf 558, Bauarea 1199, Wiesen I = 5 po I5) → Δ = 3 Joch = {summa_delta_qklf:,} QKlft NATANČNO (prej 43.488). Klf stolpec se zapire (495 = 495). Odprto: pisarjevska nekonsistentnost Joch stolpca Summe (ali neobjavljena korekcija). Nič se ne vsiljuje (§4); rešitvene poti: Rektifikacija p35–40, p30/p63/p65 @300 dpi",
         },
         {
             "id": "F-PZ-05",
             "title": "Meje občine (§2 Gränzen)",
             "status": "REVIEW",
-            "detail": "PZ §2 (p2): severno Kreising[?], vzhodno Kolpa + Adelschitz[?], južno Weidendorf[?], zahodno Tröbusche[?] + Kreising[?] — berljivost zmerljiva; topokonimi ostajajo REVIEW (razrešitev: PR Opis meje re-read); 'Weidendorf' kryža F-A05-01 (val 66)",
+            "detail": "PZ §2 (p2): severno Kreising[?], vzhodno Kolpa + Adelschitz[?], južno Weidendorf[?], zahodno Tröbusche[?] + Kreising[?] — p32 nosi opis z mejnimi točkami (Andern[?], Elend G'schaid[?], Lutzgrübl[?] … 1. VLM prehod 1830[?]); topokonimi ostajajo REVIEW (razrešitev: PR Opis meje re-read); 'Weidendorf' kryža F-A05-01 (val 66)",
         },
         {
             "id": "F-PZ-06",
             "title": "Weingärten 1828/30: 7 J 42 K, rdeča revizija 6 J 1059 K",
             "status": "RESOLVED",
-            "detail": "PZ §7 (p21): 'Einzige Classe — Flächenraum von 7 Joch 42 Klafter', Mustergrund parcela N°2494[?] (260 Klf[?]); Joch števec 7 = PV Wein-Gärten 7 J (val 74) → potrditev; rdeča revizija 6 J 1059 K kaže zmanjšanje (~583 QKlft) — datum revizije UNKNOWN",
+            "detail": "PZ §7 (p21): 'Einzige Classe — Flächenraum von 7 Joch 42 Klafter', Mustergrund parcela N°2494[?] (260 Klf[?]); val 77: 7|42 potrjeno tretjič (p67 + §8 + §7) in nosilka vrata I4; rdeča revizija 6 J 1059 K kaže zmanjšanje (~583 QKlft) — datum revizije UNKNOWN",
         },
         {
             "id": "F-PZ-07",
@@ -347,16 +510,47 @@ data = {
             "id": "F-PZ-08",
             "title": "Gozd: kategorija 'Weiden mit Holznutzen' (F-PV-02 razrešena na ravni kategorij)",
             "status": "RESOLVED",
-            "detail": "PZ Endresultat: 'Weiden mit Holznutzen' 558 J 846 K = 896.646 QKlft ≈ 3,224 km² kot lastna kategorija; ločenih 'Waldungen' v Endresultatu NI. PV (1825): 'Wälder' = 0 kot formalna kategorija. → napetost PV(0) vs PS(13 Wald parcel) dobi razlago: gozdno-pašniška (silvopastoralna) raba — lesna paša, ne zaprt gozd. Per-parcelni 'Wald' izrazi iz PS ostajajo dokumentirani, ne preimenovani (§5); celotna preverba čaka PS p56–143",
+            "detail": "PZ Endresultat: 'Weiden mit Holznutzen' 558 J 558 K = 893.358 QKlft ≈ 3,213 km² (val 77: Klf 558 po reviziji, prej 846; val 75 je poročal 896.646) kot lastna kategorija; ločenih 'Waldungen' v Endresultatu NI. PV (1825): 'Wälder' = 0 kot formalna kategorija. → napetost PV(0) vs PS(13 Wald parcel) dobi razlago: gozdno-pašniška (silvopastoralna) raba — lesna paša, ne zaprt gozd. Per-parcelni 'Wald' izrazi iz PS ostajajo dokumentirani, ne preimenovani (§5); celotna preverba čaka PS p56–143",
         },
         {
             "id": "F-PZ-09",
             "title": "Revizija pokritosti PS: vrstice pokrivajo SAMO p3–55",
             "status": "RESOLVED",
-            "detail": "ps-n83/register.json: 1073 vrstic = p3–55 (53 listov); p56–143 (88 listov) NISO prepisani v vrstice — opomba '143/143 strani' v coverage se nanaša na strukturni re-read (val 61), ne na vrstični prepis. F-PV-03 (vinogradi v PS p56–143) ostaja OPEN in ne-preverljiv brez VAČ; korekcija besedila v source-coverage (ta val)",
+            "detail": "ps-n83/register.json: 1073 vrstic = p3–55 (53 listov); p56–143 (88 listov) NISO prepisani v vrstice — opomba '143/143 strani' v coverage se nanaša na strukturni re-read (val 61), ne na vrstični prepis. F-PV-03 (vinogradi v PS p56–143) ostaja OPEN in ne-preverljiv brez VAČ; korekcija besedila v source-coverage (val 75)",
+        },
+        {
+            "id": "F-PZ-10",
+            "title": "NOVO (val 77): Unbenützbar (Felsen/Leiten/Wege) — več-vrednostna celica, vrednost izpeljana iz Total vrat",
+            "status": "REVIEW",
+            "detail": "§8 p6 vrstica 'Unbenützbar … Felsen, höchste Leiten, Wege': rdeče 64[?] J, črno 68[?] J prečrtano; Klf 998 prečrtano, 1019 prečrtano — končni vpis neodločljiv na 182 dpi. Iz Total vrat I6 IZPELJANO: 71 J 998 K = 114.598 QKlft (Total 1.953.493 − vrstice 1–8 1.838.895). Izbirni vpis na strani še čaka potrditev (@300 dpi)",
+        },
+        {
+            "id": "F-PZ-11",
+            "title": "NOVO (val 77): revizijski vzorec p67 — 4 korekcije val-75 branj odločene z izrezki + vrati",
+            "status": "RESOLVED",
+            "detail": "Vzorec 'trenutna NAD prečrtano' dokumentiran na 5 neodvisnih celicah. Korekcije vs. val 75: Summa 1132 → 1152; Bauarea Klf 1499 → 1199 (nad 1144; §8 EXACT); GG Klf 105 → 405 (§8 EXACT); WmH Klf 846 → 558 (nad 846; §8 kaže isto prečrtavo); Wiesen §8 55 → 45 J 812 K. Potrjene: Aecher I/II 80|842 + 334|120 (nad 234|1149), Wiesen II 39|818, KG 3|615, WG 7|42, HW 118|702 (nad 402[?]) — 6/6 kultur zapa I4 EXACT",
+        },
+        {
+            "id": "F-PZ-12",
+            "title": "NOVO (val 77): p43–47 Reinertragstabellen — vrstični prepis poskušen in pošteno zavrnjen",
+            "status": "OPEN",
+            "detail": "Celostranski VLM prepis p43–47 (5 strani) je nezanesljiv: model halucinira besedila in številke na gostem Kurrentu (nizka berljivost @182 dpi). Po §4 (nič vsiljenega) so branja ZAVRJENA in NE vhod v podatke; ohranjeno strukturno branje val 75. Celotni vrstični prepis čaka višjo ločljivost (VAČ IIIF tiles @300 dpi) ali ročno preverbo",
+        },
+        {
+            "id": "F-PZ-13",
+            "title": "NOVO (val 77): strukturni deleži rabe 1830 izpeljani (vrata I4–I6)",
+            "status": "RESOLVED",
+            "detail": "Deleži iz vrat-solidnih vrstic nad Total 1220 J 1493 K: njive (Aecher) 33,96 % · pašniške kategorije (Hutweiden 9,70 % + Weiden mit Holznutzen 45,73 %) 55,43 % · travniki (Wiesen) 3,73 % · vinogradi 0,58 % · vrtovi 0,30 % · Bauarea 0,14 % · unbenützbar 5,87 % (izpeljano I6) — vsota 1.953.493 QKlft EXACT. Objavljeno v pz-konskripcija-1830.json; timeline UI 'pasture_share' ostaja absent dokler je F-PZ-04 OPEN (pogodba val 76)",
         },
     ],
-    "invariants_enforced": ["I1 prebivalstvo 222+219=441 (fail-fast)", "I2 površina PZ↔PV < 1 % (fail-fast)", "I3 Endresultat struktura 10 vrstic (fail-fast)"],
+    "invariants_enforced": [
+        "I1 prebivalstvo 222+219=441 (fail-fast)",
+        "I2 površina PZ↔PV < 1 % (fail-fast)",
+        "I3 Endresultat struktura 10 vrstic (fail-fast)",
+        "I4 per-kultura §8 Einzeln enakosti (6 kultur, fail-fast)",
+        "I5 Wiesen I+II = 45 J 812 K + izpeljava Wiesen I = 5 (fail-fast)",
+        "I6 vrstice 1–8 + unbenützbar = Total 1220 J 1493 K (fail-fast)",
+    ],
     "invariant_violations": [],
     "generated_at": datetime.now(timezone.utc).isoformat(),
 }
@@ -367,5 +561,10 @@ with open(OUT, "w", encoding="utf-8") as f:
 print(f"OK → {OUT}")
 print(f"  I1 prebivalstvo: 222+219=441 ✓")
 print(f"  I2 površina: PZ rdeči {pz_red:,} vs PV {pv:,} QKlft (Δ {delta_pct:.3f} %) ✓")
-print(f"  I3 Endresultat: 10 vrstic ✓ | Summa check: OPEN (Δ {summa_delta_qklf:,} QKlft — F-PZ-04)")
+print(f"  I3 Endresultat: 10 vrstic ✓")
+print(f"  I4 §8 vrata: {len(GATES_I4)} kultur EXACT ✓")
+print(f"  I5 Wiesen: 45 J 812 K (I = 5 J izpeljano) ✓")
+print(f"  I6 Total: {rows_j} J {rows_k} K + 71 J 998 K = 1220 J 1493 K ✓")
+print(f"  Summa check: OPEN (Δ {summa_delta_joch} J {summa_delta_klafter} K = {summa_delta_qklf:,} QKlft — F-PZ-04)")
+print(f"  deleži: njive {shares[0]['pct_of_total']} % · pašniške {shares[5]['pct_of_total']+shares[6]['pct_of_total']:.2f} % · travniki {shares[1]['pct_of_total']} % · vinogradi {shares[4]['pct_of_total']} %")
 print(f"  najdbe: {len(data['findings'])} (RESOLVED {sum(1 for x in data['findings'] if x['status']=='RESOLVED')}, PARTIAL {sum(1 for x in data['findings'] if x['status']=='PARTIAL')}, REVIEW {sum(1 for x in data['findings'] if x['status']=='REVIEW')}, OPEN {sum(1 for x in data['findings'] if x['status']=='OPEN')}, TO_VERIFY {sum(1 for x in data['findings'] if x['status']=='TO_VERIFY')})")

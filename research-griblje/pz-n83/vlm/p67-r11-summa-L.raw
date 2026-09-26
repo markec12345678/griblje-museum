@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Luma CLASSE=... JOCH=7 1 5 2 KLAFTER=4 9 5 [crossed:4 8 1] OTHER: col_1=8 8 7 2 [crossed:8 6 4 9] col_2=5 3/4 [crossed:4 3/4]",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429937,
+  "id": "20260926213854bb8f0f9011574663",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926213854bb8f0f9011574663",
+  "usage": {
+    "completion_tokens": 82,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1582,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1664
+  }
+}
