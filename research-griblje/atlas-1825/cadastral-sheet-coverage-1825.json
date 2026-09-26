@@ -1,0 +1,67 @@
+{
+ "val": 70,
+ "pass": "PASS 8",
+ "issue": 42,
+ "title": "Katastrski listi pokritost — A01–A05 (izpeljan iz inventarjev + KG)",
+ "derived_from": [
+  "a01-building-inventory-1825.json",
+  "pass4b/a02-a05-building-inventory-1825.json",
+  "KG v1.4 coverage"
+ ],
+ "deterministic": true,
+ "sheets": {
+  "A01": {
+   "uodid": 227666,
+   "role": "detaljni list vasi (~2.4× večje merilo)",
+   "objects": 24,
+   "prior_only_bp": 43,
+   "georef": "PROVIZORIČNO ±200–500 m (sidro + m/px)",
+   "coverage_matrix": {
+    "objects_v65": 24,
+    "objects_with_bp": 18,
+    "located_v65": 18,
+    "located_prior_only": 43,
+    "not_located_1_100": 40,
+    "red_glyphs": 8
+   }
+  },
+  "A02": {
+   "uodid": 227668,
+   "section_numeral": "II",
+   "objects": null,
+   "georef": "UNKNOWN (brez sidra)",
+   "bp_candidates": [
+    "12",
+    "20",
+    "22"
+   ]
+  },
+  "A03": {
+   "uodid": 227670,
+   "section_numeral": "III",
+   "objects": 0,
+   "georef": "UNKNOWN",
+   "negative": true
+  },
+  "A04": {
+   "uodid": 227671,
+   "section_numeral": "IV",
+   "objects": 0,
+   "georef": "UNKNOWN",
+   "negative": true
+  },
+  "A05": {
+   "uodid": 227673,
+   "section_numeral": "V",
+   "objects": null,
+   "georef": "UNKNOWN",
+   "boundary_points": 9
+  }
+ },
+ "title_inscription": "Siche die Reambullirungs Beimappe — ista označena družina (KG-F05 OPEN: izmera-vs-reambulacija = arhivsko vprašanje SI AS)",
+ "extraction_remaining": [
+  "georef sidra A02–A05",
+  "višji dpi: BP glife vasi A02 (sidro A01↔A02), koče A05, annotacije",
+  "PR re-read (mejne točke N°1–9 → Grenz-Beschreibung No.1–21)"
+ ]
+}
