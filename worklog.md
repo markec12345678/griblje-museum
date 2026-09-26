@@ -3779,3 +3779,15 @@ Stage Summary:
 - ATLAS 1825: Rektifikacijski odsek PZ ODLOČILNO PREBRAN — OPISNO (F-PZ-16 RESOLVED): per-parcelne korekcije ne obstajajo v [373419]; F-PZ-04 (Δ 3 J) ostaja OPEN z izčrpanimi peskovniškimi potmi — edina v-peskovniška rešitev je VAČ II @300 dpi re-digitation, per-parcelna vezava 1825→1830 pa zahteva zunanji Rektifikacijski protokol; 7 Muster-parcel + 1830/1832 protokoli strukturirani
 - KG v1.8 nespremenjen (20ec8a0a); viri 10/13 VERIFIED; 503 testov + 101/101 dimnih; +0 virov/+0 trditve per-parcel
 - Naslednje: 1) VAČ II. prikaz @300 dpi — re-digitation Summe/vrstic (zadnja peskovniška rešitvena pot F-PZ-04; tudi F-PZ-15 rdeči stolpec + F-PZ-10 celica); 2) PZ celotni vrstični prepis @300 dpi (F-PZ-12); 3) PS p56–143 (F-PV-03) ob VAČ kvoti; 4) PT p7 @300dpi (F-GEO-03/KG-F01); 5) izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (vezava 1825→1830), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+### Task 40 dodatek — push+merge val 79 (PR #68) + poročilo #42 + deploy verifikacija
+
+- Push: feat/val79-pz-rektifikacija @ 6b49b73 → PR #68 → CI 3/3 ZELENO (tipi+lint+enotni ✓ · dimni testi API-jev živi strežnik+PostgreSQL ✓ · Vercel Preview Comments ✓)
+- MERGE: PR #68 → main @ 9d22e22 (merge commit, vzorec prejšnjih valov); main sinhroniziran lokalno+remote; branch izbrisan (lokalno + remote 204)
+- Poročilo #42: comment-5848671113 (val 79: Rektifikacija p35–42 opisno — F-PZ-16 RESOLVED; 7 Muster-parcel REVIEW; renumeracija 4/7; datumi 9./29. april; p42 Einvernehmungs popravek; F-PZ-04 OPEN z izčrpanimi potmi; disciplina KG v1.8 nespremenjen; 503/503 + 101/101 + 1074×5)
+- DEPLOY VERIFIKACIJA: **Vercel produkcija ŽIV z val 79** (/api/atlas/coverage → val: 79) · **Render mirror še val 78** (sinhronizacija mirrorja po urniku — vzorec prejšnjih valov; koda potrjena s CI 3/3 + 503 testov; GitHub main @ 9d22e22 = val 79)
+- STANJE PLATFORM: GitHub main @ 9d22e22 = val 79 · Vercel = val 79 ŽIV · Render = val 78 (mirror pending)
+
+Stage Summary:
+- ATLAS 1825 val 79 ŽIV na GitHub+Vercel; Render mirror sledi (dokumentirani vzorec)
+- Naslednje po worklogu Task 40: 1) VAČ II @300 dpi re-digitation (F-PZ-04 zadnja peskovniška pot + F-PZ-15 + F-PZ-10); 2) PZ celotni prepis @300 dpi (F-PZ-12); 3) PS p56–143 (F-PV-03); 4) PT p7 @300dpi; 5) izven peskovnika: zunanji Rektifikacijski protokol (vezava 1825→1830), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
