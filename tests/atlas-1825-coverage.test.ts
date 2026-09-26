@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v1.4 (d2416428a5d7977c) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("d2416428a5d7977c")).toBe(true);
+  test("provenanca kaže na KG v1.5 (cbf32c2ede0f, val 72 — GEOREF v2) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("cbf32c2ede0f")).toBe(true);
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -202,11 +202,11 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(native.red_glyphs_catalog).toBe(8);
   });
 
-  test("katastrski listi: 5/5 inventariziranih, A03/A04 negativni = VERIFIED", () => {
+  test("katastrski listi: 5/5 inventariziranih; A01 georef v2 + A03/A04 negativni = VERIFIED", () => {
     const c = byId("cadastral_sheets");
     expect(c.total).toBe(5);
-    expect(c.VERIFIED).toBe(2);
-    expect(c.PARTIAL).toBe(3);
+    expect(c.VERIFIED).toBe(3);
+    expect(c.PARTIAL).toBe(2);
   });
 
   test("toponimi: 37 (11 VERIFIED_FORM / 26 PROVISIONAL)", () => {
@@ -236,12 +236,12 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(c.VERIFIED).toBe(13);
   });
 
-  test("georeferenca: A01 PARTIAL (±200–500 m), A02–A05 UNKNOWN", () => {
+  test("georeferenca: A01 VERIFIED (GEOREF v2 ±38 m, val 72), A02–A05 UNKNOWN", () => {
     const c = byId("georeferencing");
     expect(c.total).toBe(5);
-    expect(c.PARTIAL).toBe(1);
+    expect(c.PARTIAL).toBe(0);
     expect(c.UNKNOWN).toBe(4);
-    expect(c.VERIFIED).toBe(0);
+    expect(c.VERIFIED).toBe(1);
   });
 
   test("neznanke: prečni agregat vsakega vira natanko 1×", () => {
@@ -283,7 +283,7 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       expect(existsSync(p)).toBe(true);
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
-      expect(d.val).toBe(70);
+      expect(d.val).toBe(72);
     }
   });
 

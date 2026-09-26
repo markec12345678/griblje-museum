@@ -283,7 +283,7 @@ categories.append(cat(
     map_six,
     bp_a01_native,
     "v65 glifa CLEAR→VERIFIED; PROBABLE→PARTIAL; CANDIDATE/UNRESOLVED→UNKNOWN; prior-only val57 CONFLICT→CONFLICT, sicer PARTIAL; A02 kandidati 12/20/22 (bp_cross REVIEW, brez sidra A01↔A02)→UNKNOWN; ostali→NOT_FOUND",
-    ["research-griblje/atlas-1825/a01-building-inventory-1825.json", "pass4b/a02-a05-building-inventory-1825.json", "KG v1.4 CORRESPONDS_TO_BP (21 povezav)"],
+    ["research-griblje/atlas-1825/a01-building-inventory-1825.json", "pass4b/a02-a05-building-inventory-1825.json", "KG v1.5 CORRESPONDS_TO_BP (21 povezav)"],
     "NOT_FOUND ≠ dokaz neobstoja (issue #42 §3/§7) — BP brez kartografske glife v vseh prebranih listih; NI trditev, da objekt ni obstajal",
 ))
 
@@ -313,7 +313,7 @@ categories.append(cat(
     "Parcelne meje / geometrija (poligoni)",
     len(pua_parcels) + len(ps_parcels),
     {"VERIFIED": 0, "PARTIAL": 0, "CONFLICT": 0, "UNKNOWN": 0, "NOT_FOUND": len(pua_parcels) + len(ps_parcels)},
-    {"polygons_documented": 0, "raster_basis": "A01–A05 rastri val 42 (VAČ)", "georef": "PROVIZORIČNO ±200–500 m (A01 sidro)"},
+    {"polygons_documented": 0, "raster_basis": "A01–A05 rastri val 42 (VAČ)", "georef": "točkovna plast GEOREF v2 ±38 m (val 72); parcelne MEJE ostajajo nedigitalizirane (§9)"},
     "Nič ni izrisano — digitalizacija mej NI izvedena; 'lepe' parcele brez vira so prepovedane (issue #42 §9)",
     ["issue #42 §9", "a01-building-inventory-1825.json georef blok"],
     "NOT_FOUND ≠ dokaz neobstoja (issue #42 §3) — meje niso digitalizirane; Franciscejski kataster jih ponuja @višji dpi + georef PASS (nič 'lepih' parcel, §9)",
@@ -393,7 +393,7 @@ categories.append(cat(
 
 # --- 12. Katastrski listi (5) ----------------------------------------------------------
 sheet_status = {
-    "A01": "PARTIAL",  # detaljni list vasi; inventar 67 objektov; georef PROVIZORIČNO
+    "A01": "VERIFIED",  # detaljni list vasi; inventar 67 objektov; georef v2 (reka + validacija, val 72)
     "A02": "PARTIAL",  # 8 objektov + cerkev; 3 BP kandidati; brez sidra
     "A03": "VERIFIED",  # negativna = dokumentirano 0 objektov (2 prehoda)
     "A04": "VERIFIED",  # negativna = dokumentirano 0 objektov (2 prehoda)
@@ -411,11 +411,11 @@ categories.append(cat(
         "sheets": ["A01", "A02", "A03", "A04", "A05"],
         "inventoried": 5,
         "negative_sheets": ["A03", "A04"],
-        "georef": {"A01": "PROVIZORIČNO ±200–500 m", "A02–A05": "UNKNOWN (brez sidra)"},
+        "georef": {"A01": "GEOREF v2 ±38 m (val 72)", "A02–A05": "UNKNOWN (brez sidra)"},
         "title_inscription_family": "Siche die Reambullirungs Beimappe (KG-F05 OPEN)",
     },
-    "NEGATIVNA lista (A03/A04) z 2 prehodoma = VERIFIED dokumentacija 'ni objektov'; A01/A02/A05 inventarizirani v1 → PARTIAL (georef/brez sidra); KG-F05 arhivsko vprašanje (izmera-vs-reambulacija) OPEN",
-    ["pass4b/a02-a05-building-inventory-1825.json", "KG v1.4 KG-F05", "issue #42 §11"],
+    "NEGATIVNA lista (A03/A04) z 2 prehodoma = VERIFIED dokumentacija 'ni objektov'; A01/A02/A05 inventarizirani v1 → PARTIAL (georef: A01 v2 ±38 m val 72, A02–A05 brez sidra); KG-F05 arhivsko vprašanje (izmera-vs-reambulacija) OPEN",
+    ["pass4b/a02-a05-building-inventory-1825.json", "KG v1.5 KG-F05", "issue #42 §11"],
 ))
 
 # --- 13. Toponimi (37) -------------------------------------------------------------------
@@ -479,7 +479,7 @@ categories.append(cat(
     src_six,
     {"per_source": src_list, "note": "VERIFIED = prepisan/inventariziran; PARTIAL = identiteta (uodid/docid) potrjena, vsebina še ni prebrana"},
     "master transkripcija/inventar → VERIFIED; samo kataloška identiteta → PARTIAL; CONFLICT/UNKNOWN/NOT_FOUND: 0",
-    ["KG v1.4 SOURCE nodes (KG-F02 popravljena uodid mapa, val 64)", "VAČ vac_details_url na vsakem SOURCE node-u"],
+    ["KG v1.5 SOURCE nodes (KG-F02 popravljena uodid mapa, val 64)", "VAČ vac_details_url na vsakem SOURCE node-u"],
 ))
 
 # --- 15. Nerešeni konflikti (113) -------------------------------------------------------------
@@ -517,13 +517,13 @@ categories.append(cat(
     "georeferencing",
     "Georeferenca (sidra listov A01–A05)",
     5,
-    {"VERIFIED": 0, "PARTIAL": 1, "CONFLICT": 0, "UNKNOWN": 4, "NOT_FOUND": 0},
+    {"VERIFIED": 1, "PARTIAL": 0, "CONFLICT": 0, "UNKNOWN": 4, "NOT_FOUND": 0},
     {
-        "A01": {"anchor_px": a01_inv["georef"]["anchor_px"], "anchor_geo": a01_inv["georef"]["anchor_geo"], "meters_per_px": a01_inv["georef"]["meters_per_px"], "accuracy": a01_inv["georef"]["accuracy"]},
+        "A01": {"version": a01_inv["georef"]["version"], "scale_m_per_px": a01_inv["georef"]["scale_m_per_px"], "rotation_deg": a01_inv["georef"]["rotation_deg"], "accuracy": a01_inv["georef"]["accuracy"], "method": "reka Kolpa (351 točk, ICP-lite) + validacija na sodobnih stavbah (v65 mediana 17 m, prior 20 m) — georef-1825.json; §10 kontrolne točke ✓ transformacija ✓ primerjava ✓ error estimate ✓"},
         "A02–A05": "UNKNOWN — brez sidra; lat/lng bi bila izmišljotina (F-A02 georef UNKNOWN)",
     },
-    "A01: sidro + m/px → PARTIAL (PROVIZORIČNO, rotacija ni rešena, ±200–500 m); A02–A05: brez sidra → UNKNOWN; VERIFIED: 0 (kontrolne točke + error estimate = naslednji PASS)",
-    ["a01-building-inventory-1825.json georef blok", "issue #42 §10"],
+    "A01 → VERIFIED (§10 PASS v2, val 72: več kontrolnih točk = reka + validacija; transformacija = similariteta skala+rotacija+prevod; error estimate = trim-RMS 38 m / stavbe mediana 17 m; odprti refinements F-GEO-03 hišne št. + F-GEO-04 listno merilo @300 dpi — NE znižujejo §10 minimuma); A02–A05: brez sidra → UNKNOWN",
+    ["georef-1825.json (val 72)", "build-georef-1825.py", "issue #42 §10"],
 ))
 
 # --- 18. Neznanke (prečni pregled) ----------------------------------------------------------------------
@@ -572,8 +572,8 @@ def file_status(relpath, derived_from, note=None):
 manifest_sources = [
     "house-register-1825.json (val 59)", "parcel-register-1825.json (val 60/61)",
     "person-owner-register-1825.json (val 60)", "bp-house-reconciliation-1825.json (val 59)",
-    "a01-building-inventory-1825.json + pass4b (val 65/66)", "KG v1.4 (val 68)",
-    "story-graph-1825.json (val 68)", "conflict/negative/toponym registri (val 57/62)",
+    "a01-building-inventory-1825.json + pass4b (val 65/66)", "KG v1.5 (val 68)",
+    "story-graph-1825.json (val 72)", "conflict/negative/toponym registri (val 57/62)",
 ]
 outputs = [
     file_status("research-griblje/atlas-1825/house-register-1825.json", manifest_sources[:1], "§2 register hiš"),
@@ -583,12 +583,12 @@ outputs = [
     file_status("research-griblje/atlas-1825/a01-coverage-1825.json", manifest_sources[4:5], "§7 BP↔A01 matrica — IZPELJAN ta val"),
     file_status("research-griblje/atlas-1825/cadastral-sheet-coverage-1825.json", manifest_sources[4:5], "§11 matrica po listih — IZPELJAN ta val"),
     file_status("research-griblje/atlas-1825/toponym-register-1825.json", manifest_sources[7:8], "§12 toponimi"),
-    file_status("research-griblje/atlas-1825/source-coverage-1825.json", ["KG v1.4 SOURCE nodes + registri"], "§6/§14 pokritost virov — IZPELJAN ta val"),
+    file_status("research-griblje/atlas-1825/source-coverage-1825.json", ["KG v1.5 SOURCE nodes + registri"], "§6/§14 pokritost virov — IZPELJAN ta val"),
     file_status("research-griblje/atlas-1825/conflict-register-1825.json", manifest_sources[7:8], "§14 konflikti"),
     file_status("research-griblje/atlas-1825/negative-result-register-1825.json", manifest_sources[7:8], "§13 negativni rezultati"),
-    file_status("research-griblje/atlas-1825/atlas-map-data-model-1825.json", ["KG v1.4 + val 67 map sloj"], "§15 podatkovni model zemljevida — IZPELJAN ta val"),
-    file_status("research-griblje/atlas-1825/coverage-report-1825.json", ["vsi registri + KG v1.4"], "§23 QUALITY GATE — ta artefakt"),
-    file_status("research-griblje/atlas-1825/story-graph-1825.json", ["KG v1.4 (val 68)"], "§21 pripovedni graf"),
+    file_status("research-griblje/atlas-1825/atlas-map-data-model-1825.json", ["KG v1.5 + val 67 map sloj"], "§15 podatkovni model zemljevida — IZPELJAN ta val"),
+    file_status("research-griblje/atlas-1825/coverage-report-1825.json", ["vsi registri + KG v1.5"], "§23 QUALITY GATE — ta artefakt"),
+    file_status("research-griblje/atlas-1825/story-graph-1825.json", ["KG v1.5 (val 68)"], "§21 pripovedni graf"),
     file_status("research-griblje/atlas-1825/story-engine-spec-1825.json", ["val 69 story engine + §17/§19/§22"], "§16/§17/§22 pogodba zgodbonizacije — IZPELJAN ta val"),
 ]
 
@@ -597,11 +597,11 @@ outputs = [
 # ---------------------------------------------------------------------------
 # 3a) a01-coverage-1825 — BP↔A01 matrica po issue #42 §7
 a01_coverage = {
-    "val": 70,
+    "val": 72,
     "pass": "PASS 8",
     "issue": 42,
     "title": "A01/A02↔BP coverage 1825 — kartografska vezava (izpeljan iz inventarjev)",
-    "derived_from": ["a01-building-inventory-1825.json", "pass4b/a02-a05-building-inventory-1825.json", "KG v1.4"],
+    "derived_from": ["a01-building-inventory-1825.json", "pass4b/a02-a05-building-inventory-1825.json", "KG v1.5"],
     "deterministic": True,
     "bp_total": 100,
     "matrix": {bp: st for bp, st in sorted(bp_map_status.items(), key=lambda kv: int(kv[0]))},
@@ -616,17 +616,17 @@ a01_coverage = {
 sheet_cov = pass4b.get("counts") or {}
 a01_counts = a01_inv.get("counts") or {}
 cadastral = {
-    "val": 70,
+    "val": 72,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Katastrski listi pokritost — A01–A05 (izpeljan iz inventarjev + KG)",
-    "derived_from": ["a01-building-inventory-1825.json", "pass4b/a02-a05-building-inventory-1825.json", "KG v1.4 coverage"],
+    "derived_from": ["a01-building-inventory-1825.json", "pass4b/a02-a05-building-inventory-1825.json", "KG v1.5 coverage"],
     "deterministic": True,
     "sheets": {
         "A01": {
             "uodid": 227666, "role": "detaljni list vasi (~2.4× večje merilo)",
             "objects": len(a01_objects), "prior_only_bp": len(a01_prior),
-            "georef": "PROVIZORIČNO ±200–500 m (sidro + m/px)",
+            "georef": "GEOREF v2 — similariteta po reki Kolpi, ±38 m (val 72)",
             "coverage_matrix": a01_counts,
         },
         "A02": {"uodid": 227668, "section_numeral": "II", "objects": sheet_cov.get("A02"), "georef": "UNKNOWN (brez sidra)", "bp_candidates": a02_bp},
@@ -643,10 +643,10 @@ cadastral = {
 
 # 3c) source-coverage-1825 — pokritost virov (issue #42 §6/§14)
 source_coverage = {
-    "val": 70,
+    "val": 72,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.4 + registrov)",
+    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.5 + registrov)",
     "derived_from": ["knowledge-graph-1825.json SOURCE nodes", "pua/ps/pt registri", "a01/pass4b inventarja"],
     "deterministic": True,
     "sources": src_list,
@@ -664,10 +664,10 @@ source_coverage = {
 node_stats = kg.get("node_stats") or {}
 edge_stats = kg.get("edge_stats") or {}
 map_model = {
-    "val": 70,
+    "val": 72,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "Atlas map data model v1 — podatkovni zemljevid (izpeljan iz KG v1.4 + val 67 slojev)",
+    "title": "Atlas map data model v1 — podatkovni zemljevid (izpeljan iz KG v1.5 + val 67 slojev)",
     "derived_from": ["knowledge-graph-1825.json (v1.4)", "src/lib/atlas-map.ts (val 67)", "GET /api/atlas/map"],
     "deterministic": True,
     "entities": node_stats,
@@ -692,13 +692,13 @@ map_model = {
 
 # 3e) story-engine-spec-1825 — pogodba zgodbonizacije (issue #42 §16/§17/§22)
 story_engine = {
-    "val": 70,
+    "val": 72,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Story engine spec v1 — evidence-first zgodbonizacija (izpeljan iz val 69 izvedbe)",
     "derived_from": ["src/lib/atlas-story-engine.ts (val 69)", "GET /api/atlas/story", "story-graph-1825.json story_engine_contract", "issue #42 §16–§19, §22"],
     "deterministic": True,
-    "architecture": "100 % determinističen sestavljevalnik nad KG v1.4 — BREZ LLM (§17: 'AI ne sme zapolnjevati praznin z domišljijo'; §19: 'iz strukturiranih claims + sources')",
+    "architecture": "100 % determinističen sestavljevalnik nad KG v1.5 — BREZ LLM (§17: 'AI ne sme zapolnjevati praznin z domišljijo'; §19: 'iz strukturiranih claims + sources')",
     "tier_mapping_issue_17": {
         "DOKAZANO": "VERIFIED / VERIFIED_FORM / STABLE / FOUND statusi",
         "VERJETNO": "REVIEW / SINGLE_SOURCE / PARTIAL / PROVISIONAL / TRANSCRIBED_PARTIAL",
@@ -719,7 +719,7 @@ story_engine = {
 # 4. MASTER COVERAGE REPORT
 # ---------------------------------------------------------------------------
 quality_gate = {
-    "val": 70,
+    "val": 72,
     "pass": "PASS 8",
     "issue": 42,
     "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -759,7 +759,7 @@ quality_gate = {
     "definition_of_done_status": {
         "klik na hišo → kje/številka/lastnik/parcele/raba/BP/vir/osebe/dokazano/konfliktno/neznano": "IZPOLNJENO podatkovno-API (val 63–69: /api/atlas/evidence + /story) — UI sloj sledi",
         "zgodba vasi": "IZPOLNJENO podatkovno (/api/atlas/story?scope=village)",
-        "preostanek": ["UI 'Zgodba te hiše' klik-flux + EXPLORE 1825 (§19)", "georef PASS (kontrolne točke, error estimate)", "ob kvoti: PS p56–143 re-read, PT p7 @300dpi, PR re-read, PV prepis", "parcelne meje @višji dpi (§9)"],
+        "preostanek": ["georef: A02 sidro (cerkev sv. Vid @300dpi) + listno merilo F-GEO-04", "parcelni sloj rabe §19 (PS 432 parcel)", "ob kvoti: PS p56–143 re-read, PT p7 @300dpi, PR re-read, PV prepis", "parcelne meje @višji dpi (§9)"],
     },
 }
 

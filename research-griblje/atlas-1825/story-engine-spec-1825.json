@@ -1,5 +1,5 @@
 {
- "val": 70,
+ "val": 72,
  "pass": "PASS 8",
  "issue": 42,
  "title": "Story engine spec v1 — evidence-first zgodbonizacija (izpeljan iz val 69 izvedbe)",
@@ -10,7 +10,7 @@
   "issue #42 §16–§19, §22"
  ],
  "deterministic": true,
- "architecture": "100 % determinističen sestavljevalnik nad KG v1.4 — BREZ LLM (§17: 'AI ne sme zapolnjevati praznin z domišljijo'; §19: 'iz strukturiranih claims + sources')",
+ "architecture": "100 % determinističen sestavljevalnik nad KG v1.5 — BREZ LLM (§17: 'AI ne sme zapolnjevati praznin z domišljijo'; §19: 'iz strukturiranih claims + sources')",
  "tier_mapping_issue_17": {
   "DOKAZANO": "VERIFIED / VERIFIED_FORM / STABLE / FOUND statusi",
   "VERJETNO": "REVIEW / SINGLE_SOURCE / PARTIAL / PROVISIONAL / TRANSCRIBED_PARTIAL",

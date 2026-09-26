@@ -17,16 +17,24 @@
   ]
  },
  "georef": {
+  "version": "v2 (val 72)",
+  "method": "similariteta po reki Kolpi (351 točk, trim-RMS 38.2 m) — glej georef-1825.json",
+  "scale_m_per_px": 0.730675,
+  "rotation_deg": 0.8772,
   "anchor_px": [
    1851,
    1778
   ],
-  "anchor_geo": [
+  "anchor_geo_v2": [
+   45.574544,
+   15.292363
+  ],
+  "anchor_geo_legacy_v51": [
    45.57246,
    15.29257
   ],
-  "meters_per_px": 2.1909,
-  "accuracy": "PROVIZORIČNO: ±200–500 m na robovih (rotacija lista ni rešena)"
+  "accuracy": "A01 točkovna geometrija ±38 m (reaka trim-RMS 38 m; stavbe mediana 17 m) — izboljšava iz ±200–500 m (v resnici ±1–3 km na robovih zaradi F-GEO-01)",
+  "finding": "F-GEO-01/02/03 (georef-1825.json)"
  },
  "provenance": {
   "prior_extraction": "src/data/cadastre-a01.json (56 stavb, val 52+54+56, q1/q3/qcore-3x)",
@@ -103,9 +111,9 @@
     2189,
     1341
    ],
-   "lat": 45.581061,
-   "lng": 15.302073,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.577466,
+   "lng": 15.295469,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "PROBABLE",
@@ -137,9 +145,9 @@
     2176,
     1402
    ],
-   "lat": 45.57986,
-   "lng": 15.301708,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.577061,
+   "lng": 15.295356,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [
     {
      "house_id": "H-040",
@@ -192,9 +200,9 @@
     2164,
     1498
    ],
-   "lat": 45.577971,
-   "lng": 15.30137,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.576426,
+   "lng": 15.295257,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -225,9 +233,9 @@
     2132,
     1435
    ],
-   "lat": 45.579211,
-   "lng": 15.30047,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.576839,
+   "lng": 15.294948,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -272,9 +280,9 @@
     2134,
     1560
    ],
-   "lat": 45.57675,
-   "lng": 15.300527,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.576013,
+   "lng": 15.294985,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [
     {
      "house_id": "H-044",
@@ -325,9 +333,9 @@
     2088,
     1501
    ],
-   "lat": 45.577912,
-   "lng": 15.299233,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.576398,
+   "lng": 15.294545,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [
     {
      "house_id": "H-036",
@@ -378,9 +386,9 @@
     2124,
     1594
    ],
-   "lat": 45.576081,
-   "lng": 15.300246,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.575787,
+   "lng": 15.294896,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "UNRESOLVED",
@@ -425,9 +433,9 @@
     1986,
     1702
    ],
-   "lat": 45.573956,
-   "lng": 15.296366,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.57506,
+   "lng": 15.293618,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -471,9 +479,9 @@
     1873,
     1879
    ],
-   "lat": 45.570472,
-   "lng": 15.293189,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.573879,
+   "lng": 15.292584,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -518,9 +526,9 @@
     2167,
     1538
    ],
-   "lat": 45.577183,
-   "lng": 15.301455,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.576162,
+   "lng": 15.295291,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [
     {
      "house_id": "H-040",
@@ -563,9 +571,9 @@
     2112,
     1616
    ],
-   "lat": 45.575648,
-   "lng": 15.299908,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.575641,
+   "lng": 15.294787,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "PROBABLE",
@@ -616,9 +624,9 @@
     1917,
     1740
    ],
-   "lat": 45.573208,
-   "lng": 15.294426,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.574802,
+   "lng": 15.292976,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -660,9 +668,9 @@
     2109,
     1492
    ],
-   "lat": 45.578089,
-   "lng": 15.299824,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.57646,
+   "lng": 15.294741,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -699,9 +707,9 @@
     2079,
     1535
    ],
-   "lat": 45.577243,
-   "lng": 15.29898,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.576173,
+   "lng": 15.294466,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -731,9 +739,9 @@
     1936,
     1980
    ],
-   "lat": 45.568484,
-   "lng": 15.29496,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.573218,
+   "lng": 15.293189,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": null,
    "pua_parcel_cross": [],
@@ -759,9 +767,9 @@
     1829,
     1930
    ],
-   "lat": 45.569468,
-   "lng": 15.291951,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.573538,
+   "lng": 15.292178,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "PROBABLE",
@@ -797,9 +805,9 @@
     1746,
     1946
    ],
-   "lat": 45.569154,
-   "lng": 15.289618,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.573423,
+   "lng": 15.291402,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "PROBABLE",
@@ -833,9 +841,9 @@
     1852,
     1970
    ],
-   "lat": 45.568681,
-   "lng": 15.292598,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.573276,
+   "lng": 15.2924,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "CONFLICT",
@@ -878,9 +886,9 @@
     1902,
     1906
    ],
-   "lat": 45.569941,
-   "lng": 15.294004,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.573704,
+   "lng": 15.292859,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": {
     "status": "PROBABLE",
@@ -923,9 +931,9 @@
     1905,
     1902
    ],
-   "lat": 45.57002,
-   "lng": 15.294088,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.57373,
+   "lng": 15.292887,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": null,
    "pua_parcel_cross": [],
@@ -950,9 +958,9 @@
     2126,
     1864
    ],
-   "lat": 45.570767,
-   "lng": 15.300302,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.574004,
+   "lng": 15.294954,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": null,
    "pua_parcel_cross": [],
@@ -976,9 +984,9 @@
     1861,
     2020
    ],
-   "lat": 45.567697,
-   "lng": 15.292851,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.572946,
+   "lng": 15.292491,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": null,
    "pua_parcel_cross": [],
@@ -1002,9 +1010,9 @@
     1995,
     2144
    ],
-   "lat": 45.565257,
-   "lng": 15.296619,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.57214,
+   "lng": 15.293765,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": null,
    "pua_parcel_cross": [],
@@ -1029,9 +1037,9 @@
     1697,
     625
    ],
-   "lat": 45.595152,
-   "lng": 15.28824,
-   "georef_status": "PROVIZORIČNO (1 sidro, sever-navzgor)",
+   "lat": 45.582147,
+   "lng": 15.290753,
+   "georef_status": "GEOREF v2 (reka Kolpa, trim-RMS 38.2 m)",
    "related_houses": [],
    "val57_matrix": null,
    "pua_parcel_cross": [],
@@ -1290,8 +1298,8 @@
     1740,
     1976
    ],
-   "lat": 45.568563,
-   "lng": 15.289449,
+   "lat": 45.573225,
+   "lng": 15.29135,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1310,8 +1318,8 @@
     1721,
     1956
    ],
-   "lat": 45.568957,
-   "lng": 15.288915,
+   "lat": 45.573355,
+   "lng": 15.291169,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1330,8 +1338,8 @@
     1691,
     1979
    ],
-   "lat": 45.568504,
-   "lng": 15.288072,
+   "lat": 45.5732,
+   "lng": 15.290892,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1350,8 +1358,8 @@
     1724,
     1883
    ],
-   "lat": 45.570393,
-   "lng": 15.288999,
+   "lat": 45.573837,
+   "lng": 15.291187,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1370,8 +1378,8 @@
     1715,
     1915
    ],
-   "lat": 45.569764,
-   "lng": 15.288746,
+   "lat": 45.573625,
+   "lng": 15.291107,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1390,8 +1398,8 @@
     1705,
     1932
    ],
-   "lat": 45.569429,
-   "lng": 15.288465,
+   "lat": 45.573512,
+   "lng": 15.291016,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1410,8 +1418,8 @@
     1682,
     1935
    ],
-   "lat": 45.56937,
-   "lng": 15.287818,
+   "lat": 45.57349,
+   "lng": 15.290801,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1430,8 +1438,8 @@
     1659,
     1923
    ],
-   "lat": 45.569606,
-   "lng": 15.287172,
+   "lat": 45.573567,
+   "lng": 15.290583,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1450,8 +1458,8 @@
     1670,
     1914
    ],
-   "lat": 45.569783,
-   "lng": 15.287481,
+   "lat": 45.573627,
+   "lng": 15.290685,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1470,8 +1478,8 @@
     1679,
     1895
    ],
-   "lat": 45.570157,
-   "lng": 15.287734,
+   "lat": 45.573754,
+   "lng": 15.290767,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1490,8 +1498,8 @@
     1796,
     1992
    ],
-   "lat": 45.568248,
-   "lng": 15.291024,
+   "lat": 45.573125,
+   "lng": 15.291878,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1510,8 +1518,8 @@
     1674,
     1886
    ],
-   "lat": 45.570334,
-   "lng": 15.287594,
+   "lat": 45.573813,
+   "lng": 15.290719,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1530,8 +1538,8 @@
     1703,
     1847
    ],
-   "lat": 45.571102,
-   "lng": 15.288409,
+   "lat": 45.574073,
+   "lng": 15.290985,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1550,8 +1558,8 @@
     1769,
     1917
    ],
-   "lat": 45.569724,
-   "lng": 15.290265,
+   "lat": 45.573617,
+   "lng": 15.291614,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1570,8 +1578,8 @@
     1777,
     1900
    ],
-   "lat": 45.570059,
-   "lng": 15.290489,
+   "lat": 45.573731,
+   "lng": 15.291687,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1590,8 +1598,8 @@
     1757,
     1904
    ],
-   "lat": 45.56998,
-   "lng": 15.289927,
+   "lat": 45.573702,
+   "lng": 15.2915,
    "conf_prior": "high",
    "house_no_prior": 65,
    "link_source_prior": "PUA opomba (p21)",
@@ -1610,8 +1618,8 @@
     1761,
     1891
    ],
-   "lat": 45.570236,
-   "lng": 15.29004,
+   "lat": 45.573788,
+   "lng": 15.291535,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1630,8 +1638,8 @@
     1672,
     2027
    ],
-   "lat": 45.567559,
-   "lng": 15.287537,
+   "lat": 45.572881,
+   "lng": 15.29072,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1650,8 +1658,8 @@
     1811,
     1863
    ],
-   "lat": 45.570787,
-   "lng": 15.291445,
+   "lat": 45.573978,
+   "lng": 15.292,
    "conf_prior": "high",
    "house_no_prior": 66,
    "link_source_prior": "PUA opomba »B. P. 49. 50.« (no. 41, p21; val 54 preverjeno) + PT p5 konflikt (h61/62 ↔ 66, Kurrent 1↔6)",
@@ -1670,8 +1678,8 @@
     1771,
     1861
    ],
-   "lat": 45.570826,
-   "lng": 15.290321,
+   "lat": 45.573988,
+   "lng": 15.291625,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1690,8 +1698,8 @@
     1773,
     1842
    ],
-   "lat": 45.5712,
-   "lng": 15.290377,
+   "lat": 45.574113,
+   "lng": 15.291641,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1710,8 +1718,8 @@
     1748,
     1840
    ],
-   "lat": 45.57124,
-   "lng": 15.289674,
+   "lat": 45.574124,
+   "lng": 15.291406,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1730,8 +1738,8 @@
     1758,
     1813
    ],
-   "lat": 45.571771,
-   "lng": 15.289955,
+   "lat": 45.574303,
+   "lng": 15.291496,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1750,8 +1758,8 @@
     1871,
     1834
    ],
-   "lat": 45.571358,
-   "lng": 15.293132,
+   "lat": 45.574176,
+   "lng": 15.292558,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1770,8 +1778,8 @@
     1884,
     1820
    ],
-   "lat": 45.571633,
-   "lng": 15.293498,
+   "lat": 45.57427,
+   "lng": 15.292678,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1790,8 +1798,8 @@
     1824,
     1743
    ],
-   "lat": 45.573149,
-   "lng": 15.291811,
+   "lat": 45.574773,
+   "lng": 15.292105,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1810,8 +1818,8 @@
     1852,
     1824
    ],
-   "lat": 45.571555,
-   "lng": 15.292598,
+   "lat": 45.57424,
+   "lng": 15.292379,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1830,8 +1838,8 @@
     1847,
     1790
    ],
-   "lat": 45.572224,
-   "lng": 15.292458,
+   "lat": 45.574464,
+   "lng": 15.292327,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1850,8 +1858,8 @@
     1854,
     1775
    ],
-   "lat": 45.572519,
-   "lng": 15.292654,
+   "lat": 45.574564,
+   "lng": 15.292391,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1870,8 +1878,8 @@
     1970,
     1901
    ],
-   "lat": 45.570039,
-   "lng": 15.295916,
+   "lat": 45.573743,
+   "lng": 15.293496,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1890,8 +1898,8 @@
     1986,
     1883
    ],
-   "lat": 45.570393,
-   "lng": 15.296366,
+   "lat": 45.573864,
+   "lng": 15.293644,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1910,8 +1918,8 @@
     1913,
     1798
    ],
-   "lat": 45.572066,
-   "lng": 15.294313,
+   "lat": 45.574418,
+   "lng": 15.292947,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1930,8 +1938,8 @@
     1891,
     1749
    ],
-   "lat": 45.573031,
-   "lng": 15.293695,
+   "lat": 45.57474,
+   "lng": 15.292734,
    "conf_prior": "high",
    "house_no_prior": 60,
    "link_source_prior": "PUA opomba (p31)",
@@ -1950,8 +1958,8 @@
     2027,
     1848
    ],
-   "lat": 45.571082,
-   "lng": 15.297518,
+   "lat": 45.574099,
+   "lng": 15.294023,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1970,8 +1978,8 @@
     2026,
     1767
    ],
-   "lat": 45.572676,
-   "lng": 15.29749,
+   "lat": 45.574634,
+   "lng": 15.294002,
    "conf_prior": "medium",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -1990,8 +1998,8 @@
     1902,
     1773
    ],
-   "lat": 45.572558,
-   "lng": 15.294004,
+   "lat": 45.574582,
+   "lng": 15.29284,
    "conf_prior": "high",
    "house_no_prior": 28,
    "link_source_prior": "PUA opomba »B.P. 76. 79. 81/82. 93/84.« (no. 79, p39) KONFLIKT s PT (76→h.51, 2× STABLE) — kontrolo p39/p5 v polni ločljivosti",
@@ -2010,8 +2018,8 @@
     1862,
     1742
    ],
-   "lat": 45.573169,
-   "lng": 15.292879,
+   "lat": 45.574783,
+   "lng": 15.292461,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -2030,8 +2038,8 @@
     1912,
     1743
    ],
-   "lat": 45.573149,
-   "lng": 15.294285,
+   "lat": 45.574782,
+   "lng": 15.29293,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
@@ -2050,8 +2058,8 @@
     2025,
     1594
    ],
-   "lat": 45.576081,
-   "lng": 15.297462,
+   "lat": 45.575777,
+   "lng": 15.293968,
    "conf_prior": "high",
    "house_no_prior": 45,
    "link_source_prior": "PT p7 (dvojno branje: val 41 + val 52)",
@@ -2070,8 +2078,8 @@
     2028,
     1539
    ],
-   "lat": 45.577164,
-   "lng": 15.297546,
+   "lat": 45.576141,
+   "lng": 15.293988,
    "conf_prior": "high",
    "house_no_prior": 37,
    "link_source_prior": "PT p7 (dvojno branje val 41 + val 52: h.37) + PUA opomba »P.P. 85.« (no. 36, p19; val 54; B↔P dvom) — PT val 53: 45/37 konflikt",
@@ -2090,8 +2098,8 @@
     2082,
     1316
    ],
-   "lat": 45.581553,
-   "lng": 15.299065,
+   "lat": 45.57762,
+   "lng": 15.294462,
    "conf_prior": "high",
    "house_no_prior": 41,
    "link_source_prior": "PT p7 dvojno branje (val 41 + val 52: 41) + PUA no. 59 opomba nečitljiva (»19. Pp.«); PT zoom 92→h.44 (sum pomika vrstic)",
@@ -2110,8 +2118,8 @@
     2033,
     1398
    ],
-   "lat": 45.579939,
-   "lng": 15.297687,
+   "lat": 45.577073,
+   "lng": 15.294015,
    "conf_prior": "high",
    "house_no_prior": 39,
    "link_source_prior": "PT p7 (dvojno branje: val 41 + val 52)",
@@ -2130,8 +2138,8 @@
     2064,
     1440
    ],
-   "lat": 45.579112,
-   "lng": 15.298559,
+   "lat": 45.576799,
+   "lng": 15.294311,
    "conf_prior": "high",
    "house_no_prior": null,
    "link_source_prior": null,
