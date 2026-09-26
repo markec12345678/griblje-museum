@@ -7,12 +7,23 @@ import {
   exploreTierOfStatus,
   isConflictStatus,
   isNotFoundStatus,
+  landUseBucketOf,
   matchesExploreQuery,
   modeAllowsTier,
+  parcelExploreCounts,
+  parcelLabel,
+  parcelMatchesQuery,
+  parcelTier,
+  parcelVisible,
+  sortParcelsForBrowse,
   staticRowVisible,
+  LAND_USE_ORDER,
   type ExploreBuildingRow,
   type ExploreFilters,
+  type ExploreParcel,
+  type LandUseBucket,
 } from "../src/lib/atlas-explore";
+import { parcelFeatures } from "../src/lib/atlas-map";
 import { evidenceTier, generateEntityStory } from "../src/lib/atlas-story-engine";
 import kgRaw from "../src/data/knowledge-graph-1825.json";
 
@@ -186,6 +197,212 @@ describe("explore: i18n struktura atlasStory × 5 jezikov", () => {
       const s = ui[l].atlasStory;
       const modes = new Set([s.modeAll, s.modeEvidenced, s.modeConflicts, s.modeUnknown]);
       expect(modes.size).toBe(4);
+    }
+  });
+});
+
+/* ==================== val 73 — parcelni sloj rabe (§19) ==================== */
+
+const parcel = (over: Partial<ExploreParcel>): ExploreParcel => ({
+  node_id: "PARCEL:PUA-II-201",
+  origin: "PUA",
+  section: "II",
+  parcel_number: 201,
+  land_use_category: null,
+  land_use_original: null,
+  co_referenced: false,
+  house_refs: ["HOUSE:H-001"],
+  evidence_status: "TRANSCRIBED",
+  ...over,
+});
+
+describe("parcel sloj: vedra rabe (§4: nikoli ne ugibaj rabe)", () => {
+  test("null → NONE (PUA rabe ne zapisuje), UNKNOWN ostane UNKNOWN (PS TERM-UNCLEAR)", () => {
+    expect(landUseBucketOf(null)).toBe("NONE");
+    expect(landUseBucketOf(undefined)).toBe("NONE");
+    expect(landUseBucketOf("")).toBe("NONE");
+    expect(landUseBucketOf("UNKNOWN")).toBe("UNKNOWN");
+    expect(landUseBucketOf("njiva")).toBe("njiva");
+    expect(landUseBucketOf("pašnik")).toBe("pašnik");
+  });
+
+  test("varovalka: neznana kategorija NIKOLI tiho 'drugo' (drugo = dokazana mešanica)", () => {
+    expect(landUseBucketOf("SOME_NEW_USE")).toBe("UNKNOWN");
+    expect(landUseBucketOf("Ried")).toBe("UNKNOWN");
+  });
+
+  test("LAND_USE_ORDER: dokazana raba najprej, nezanki na koncu", () => {
+    expect(LAND_USE_ORDER[LAND_USE_ORDER.length - 1]).toBe("NONE");
+    expect(LAND_USE_ORDER[LAND_USE_ORDER.length - 2]).toBe("UNKNOWN");
+    expect(LAND_USE_ORDER).toHaveLength(8);
+  });
+});
+
+describe("parcel sloj: dokazni tir + oznake", () => {
+  test("PUA TRANSCRIBED → DOKAZANO, PS TRANSCRIBED_PARTIAL → VERJETNO (§17 pariteta)", () => {
+    expect(parcelTier(parcel({}))).toBe("DOKAZANO");
+    expect(parcelTier(parcel({ evidence_status: "TRANSCRIBED_PARTIAL" }))).toBe("VERJETNO");
+    expect(parcelTier(parcel({ evidence_status: "UNKNOWN" }))).toBe("NEZNANO");
+  });
+
+  test("parcelLabel: PUA 'II/201', PS 'PS 913', varovalka node_id", () => {
+    expect(parcelLabel(parcel({}))).toBe("II/201");
+    expect(parcelLabel(parcel({ node_id: "PARCEL:PS-p005-j913", origin: "PS", section: null, parcel_number: 913 }))).toBe("PS 913");
+    expect(parcelLabel(parcel({ section: null, parcel_number: null }))).toBe("PUA-II-201");
+  });
+});
+
+describe("parcel sloj: filtri (§19: način + raba + besedilo)", () => {
+  const parcels: ExploreParcel[] = [
+    parcel({}),
+    parcel({ node_id: "PARCEL:PS-p005-j913", origin: "PS", section: null, parcel_number: 913, land_use_category: "njiva", land_use_original: "Acker", evidence_status: "TRANSCRIBED_PARTIAL" }),
+    parcel({ node_id: "PARCEL:PS-p006-j100", origin: "PS", section: null, parcel_number: 100, land_use_category: "UNKNOWN", land_use_original: "Ried", evidence_status: "TRANSCRIBED_PARTIAL" }),
+  ];
+
+  test("filter rabe loči dokumentirano / neznano / brez zapisa", () => {
+    expect(parcels.filter((p) => parcelVisible(p, "all", "all"))).toHaveLength(3);
+    expect(parcels.filter((p) => parcelVisible(p, "all", "njiva"))).toHaveLength(1);
+    expect(parcels.filter((p) => parcelVisible(p, "all", "UNKNOWN"))).toHaveLength(1);
+    expect(parcels.filter((p) => parcelVisible(p, "all", "NONE"))).toHaveLength(1);
+  });
+
+  test("način dokazovanja velja tudi za parcele (Samo dokazano → PUA)", () => {
+    const vis = parcels.filter((p) => parcelVisible(p, "evidenced", "all"));
+    expect(vis).toHaveLength(1);
+    expect(vis[0].origin).toBe("PUA");
+  });
+
+  test("besedilni filter: št. parcele / raba original / hiša", () => {
+    expect(parcelMatchesQuery("913", parcels[1])).toBe(true);
+    expect(parcelMatchesQuery("acker", parcels[1])).toBe(true);
+    expect(parcelMatchesQuery("H-001", parcels[0])).toBe(true);
+    expect(parcelMatchesQuery("Ried", parcels[2])).toBe(true);
+    expect(parcelMatchesQuery("777", parcels[1])).toBe(false);
+  });
+});
+
+describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
+  test("parcelLandUseCounts čez KG = registrirane resnice val 60", () => {
+    const features = parcelFeatures();
+    expect(features).toHaveLength(2467);
+    const buckets = parcelExploreCounts(features as ExploreParcel[], "all", "all", "").buckets as Record<LandUseBucket, number>;
+    expect(buckets.njiva).toBe(230);
+    expect(buckets.travnik).toBe(60);
+    expect(buckets.gozd).toBe(13);
+    expect(buckets.vrt).toBe(10);
+    expect(buckets["pašnik"]).toBe(9);
+    expect(buckets.drugo).toBe(4);
+    expect(buckets.UNKNOWN).toBe(106);
+    expect(buckets.NONE).toBe(2035);
+  });
+
+  test("sortParcelsForBrowse: dokumentirana raba najprej, sekcije I–V, številke", () => {
+    const sorted = sortParcelsForBrowse([
+      parcel({ node_id: "PARCEL:PUA-IV-9", section: "IV", parcel_number: 9 }),
+      parcel({ node_id: "PARCEL:PS-p005-j913", origin: "PS", section: null, parcel_number: 913, land_use_category: "njiva" }),
+      parcel({ node_id: "PARCEL:PUA-I-2", section: "I", parcel_number: 2 }),
+    ]);
+    expect(sorted[0].node_id).toBe("PARCEL:PS-p005-j913"); // njiva (dokazana) prva
+    expect(sorted[1].node_id).toBe("PARCEL:PUA-I-2");
+    expect(sorted[2].node_id).toBe("PARCEL:PUA-IV-9");
+    // determinizem: isti vhod → isti vrstni red
+    const again = sortParcelsForBrowse([
+      parcel({ node_id: "PARCEL:PUA-IV-9", section: "IV", parcel_number: 9 }),
+      parcel({ node_id: "PARCEL:PS-p005-j913", origin: "PS", section: null, parcel_number: 913, land_use_category: "njiva" }),
+      parcel({ node_id: "PARCEL:PUA-I-2", section: "I", parcel_number: 2 }),
+    ]);
+    expect(again.map((p) => p.node_id)).toEqual(sorted.map((p) => p.node_id));
+  });
+
+  test("parcelExploreCounts spoštuje kombinacijo način + raba + besedilo", () => {
+    const features = parcelFeatures() as ExploreParcel[];
+    const all = parcelExploreCounts(features, "all", "all", "");
+    expect(all.visible).toBe(2467);
+    const njiva = parcelExploreCounts(features, "all", "njiva", "");
+    expect(njiva.visible).toBe(230);
+    const evidenced = parcelExploreCounts(features, "evidenced", "all", "");
+    expect(evidenced.visible).toBe(2035); // PUA TRANSCRIBED = DOKAZANO
+  });
+
+  test("parcela NIKOLI ne nosi koordinat (§9: brez geometrije)", () => {
+    const features = parcelFeatures() as Record<string, unknown>[];
+    for (const f of features.slice(0, 50)) {
+      expect(f).not.toHaveProperty("px");
+      expect(f).not.toHaveProperty("lat");
+      expect(f).not.toHaveProperty("lng");
+    }
+  });
+
+  test("HAS_PARCEL obratni indeks: PUA-II-201 pripada hišama 1 in 2 (so-vlascištvo)", () => {
+    const p201 = parcelFeatures().find((p) => p.node_id === "PARCEL:PUA-II-201");
+    expect(p201).toBeDefined();
+    expect(p201!.house_refs).toContain("HOUSE:H-001");
+    expect(p201!.house_refs).toContain("HOUSE:H-002");
+    expect(p201!.co_referenced).toBe(true);
+  });
+});
+
+describe("parcel sloj: zgodba parcele (§16/§17)", () => {
+  test("PARCEL:PUA-II-201 → PARTIAL_EVIDENCE z obrnjeno oznako 'pripada hiši'", () => {
+    const story = generateEntityStory("PARCEL:PUA-II-201");
+    expect(story).not.toBeNull();
+    expect(story!.focus.node_id).toBe("PARCEL:PUA-II-201");
+    expect(story!.contract.story_status).toBe("PARTIAL_EVIDENCE");
+    const texts = story!.sections.flatMap((s) => s.items.map((i) => i.text));
+    expect(texts.some((t) => t.startsWith("pripada hiši: Hiša št. 1"))).toBe(true);
+    // zavajajoča smer NIKOLI v zgodbi parcele
+    expect(texts.some((t) => t.startsWith("ima parcelo:"))).toBe(false);
+  });
+
+  test("PARCEL:PS-p005-j913 (njiva, EXACT) → objavljena zgodba z viri PS", () => {
+    const story = generateEntityStory("PARCEL:PS-p005-j913");
+    expect(story).not.toBeNull();
+    expect(story!.contract.story_status).toBe("PARTIAL_EVIDENCE");
+    expect(story!.contract.used_source_ids).toContain("SRC-PS");
+  });
+
+  test("berljiva oznaka parcele v zgodbi (headline), ne surovi node_id", () => {
+    const story = generateEntityStory("PARCEL:PS-p009-j1");
+    expect(story!.headline).toBe("Zgodba entitete: parcela PS 1");
+    const storyPua = generateEntityStory("PARCEL:PUA-II-201");
+    expect(storyPua!.headline).toBe("Zgodba entitete: parcela II/201");
+  });
+});
+
+describe("parcel sloj: i18n × 5 jezikov", () => {
+  const langs = ["sl", "en", "hr", "de", "it"] as const;
+
+  test("ključi parcelnega sloja obstajajo in niso prazni; {visible}/{total} ostanejo", () => {
+    const keys = [
+      "listEntities", "listParcels", "parcelCounts", "parcelLoading", "parcelError",
+      "parcelGeometryNote", "parcelHousesLabel", "parcelCoRef", "storyOfParcel",
+      "luAll", "luNjiva", "luTravnik", "luGozd", "luVrt", "luPastnik", "luDrugo",
+      "luUnknown", "luNone", "filterUseNote",
+    ] as const;
+    for (const l of langs) {
+      const s = ui[l].atlasStory;
+      for (const k of keys) {
+        expect(typeof s[k]).toBe("string");
+        expect((s[k] as string).length).toBeGreaterThan(0);
+      }
+      expect(s.parcelCounts).toContain("{visible}");
+      expect(s.parcelCounts).toContain("{total}");
+    }
+  });
+
+  test("8 oznak rabe je različnih znotraj jezika (UI ločljivost)", () => {
+    for (const l of langs) {
+      const s = ui[l].atlasStory;
+      const labels = new Set([s.luNjiva, s.luTravnik, s.luGozd, s.luVrt, s.luPastnik, s.luDrugo, s.luUnknown, s.luNone]);
+      expect(labels.size).toBe(8);
+    }
+  });
+
+  test("poštenost: filterUseNote v vseh jezikih omenja PS in prepoved ugibanja", () => {
+    for (const l of langs) {
+      const note = ui[l].atlasStory.filterUseNote.toLowerCase();
+      expect(note).toContain("ps");
+      expect(note.length).toBeGreaterThan(80);
     }
   });
 });

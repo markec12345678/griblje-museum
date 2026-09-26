@@ -3550,3 +3550,27 @@ Stage Summary:
 - ATLAS 1825 §10 GEOREF: A01 VERIFIED (±38 m, rotacija rešena, validirano na stavbah) · preostalo iz §10: A02–A05 sidro (cerkev @300dpi) + F-GEO-03 hišne številke + F-GEO-04 listno merilo
 - main bo @ merge val 72; 421 testov + 90/90 dimnih; KG v1.5 (3.309/3.569/622, koordinate v2); claims/ID-ji stabilni; +0 virov/+0 trditve/+0 UI (koordinatna resnica izboljšana, vsebina nespremenjena)
 - Naslednje: 1) push val 72 (žeton) + poročilo #42; 2) parcelni sloj rabe §19 (PS 432 parcel); 3) ob kvoti PS p56–143/PT p7 @300dpi/PR/PV; 4) izven peskovnika šolski list/SA Podzemelj/SI AS 749/Zucchelli
+
+---
+Task ID: 31
+Agent: Z.ai Code (main orchestrator)
+Task: Val 73 — ISSUE #42 §19: PARCELNI SLOJ RABE v1 (user: "odlicno nadaljuj")
+
+Work Log:
+- Analiza stanja: main @ 1306de3 (val 72), 421/421 testov, #42 brez novih komentarjev po poročilu val 72; worklog naslednje = parcelni sloj rabe §19
+- Podatkovno: KG v1.5 že ima vse 2467 PARCEL vozlišč (PUA 2035 + PS 432; raba leksikalno za PS) — manjkal je UI/API sloj; v EXPLORE panelu je bil filter rabe onemogočen fieldset
+- atlas-map.ts: parcelFeatures() (obratni indeks HAS_PARCEL 2865 vezav, BREZ koordinat §9) + ?layer=parcels + counts (326/106/2035)
+- atlas-explore.ts: čista logika parcel — LandUseBucket z DVEMA ločenima nezankama (UNKNOWN = PS TERM-UNCLEAR z originalom, NONE = PUA ne zapisuje), varovalka neznana kategorija ≠ "drugo", parcelTier (zrcalno TIER_EXACT), parcelLabel, filtri (način + raba + poizvedba), parcelLandUseCounts, sortParcelsForBrowse (determinističen), parcelExploreCounts
+- UI: preklopni seznam Hiše & objekti | Parcele, čipi rabe s števci, lenar sloja (fetch šele ob izbiri Parcele), vrstice registra z originalnim terminom + vezmi na hiše, klik → zgodba parcele
+- Story engine: POŠTEN POPRAVEK smera branja §17 — HAS_PARCEL na fokus-parceli prej bral "ima parcelo: Hiša 16" → zdaj "pripada hiši: Hiša 16" (REVERSE_LABELS); berljive oznake parcel ("parcela PS 1") v headline/relacijah
+- NAPAKA IZ RAZVOJA (fiksirana): podvojeni node_id v KG (PS-p005-j484 ×2: Breugl Georg h.18 / Urich Peter h.21 = prava so-referencirana vrstica iz vira, 432 vrstic / 412 unikatnih PS id) → key={node_id} podvojen ključ → React reconciliacija pokvarjena (state 2 vrstice, DOM 22!) — ključi zdaj node_id+idx, vrstice ostanejo ločene (§5 nič združevanja)
+- F-GRID-73: seznam parcel (nowrap dolgi seznami hiš) razširil grid na 390 px → min-w-0 + overflow-x-hidden → prelivi 0/0
+- i18n × 5: +18 ključev (preklop, čipi, poštene opombe, zgodba parcele) → verify-i18n 1032 × 5 zeleno
+- QA: +19 testov → 440/440; api-smoke +3 → 93/93; tsc/lint čisti
+- Agent-browser e2e: čipi s pravimi števci ✓, poizvedba "913" → 2 (PS 913 + III/1913) ✓, Samo dokazano → 2035 ✓, Neznana raba → 106 ✓, zgodba parcele (parcela PS 1 + pripada hiši + pogodba §22) ✓, mobilno 390 px celoten flux brez preliva ✓, konzola 0 napak, sticky footer ✓
+- Dokumentacija: research-griblje/86-val73-parcelni-sloj-rabe.md; README 126. sklop; 00-KAZALO vnos 86; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825 §19: klik na parcelo + filtriranje rabe zemljišč IZPOLNJENA (sloj = register, nič geometrije, dve ločeni nezanki, smera branja zgodbe poštena)
+- +0 virov/+0 trditve/+0 KG — sloj je čista projekcija obstoječih dokazov; 440 testov + 93/93 dimnih
+- Naslednje: 1) push val 73 (žeton) + poročilo #42 + deploy verifikacija; 2) ob kvoti re-readi PS p56–143 / PT p7 @300dpi / PR / PV (PV = Ausweis über die Benützungsart [373418] — naslednji vir za rabo 2035 parcel); 3) parcelne meje §9; 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
