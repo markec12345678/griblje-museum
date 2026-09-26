@@ -3511,3 +3511,17 @@ Stage Summary:
 - Definition of Done #42: UI sloj zgodbe IZPOLNJEN — klik na entiteto → zgodba iz dokazov (tire + konflikti + pogodba); EXPLORE 1825 z filtri; zgodba vasi
 - main bo @ merge val 71; 400 testov + 88/88 dimnih; KG v1.4 nespremenjen (3.309/3.569/622); zbirka 113/589/6; +0 virov/+0 trditve
 - Naslednje: 1) push val 71 (žeton) + poročilo #42; 2) georef PASS §10 ( dodatna sidra/rotacija); 3) parcelni sloj rabe §19; 4) ob kvoti re-readi PS/PT/PR/PV; 5) izven peskovnika šolski list/SA Podzemelj/SI AS 749/Zucchelli
+
+---
+Task ID: 29 (dodatek — push + merge + deploy)
+Agent: Z.ai Code (main orchestrator)
+
+Work Log:
+- Push: feat/val71-explore-ui @ 18c34a6 → PR #59 → CI 3/3 (Vercel preview ✓, tipi+lint+enotni ✓, dimni + PostgreSQL ✓) → MERGED @ cdbd312; main sinhroniziran, branch pobrisan (lokalno + remote)
+- Poročilo #42: comment-5843392456 (Definition of Done #42 izpolnjena)
+- DEPLOY: Vercel produkcija @ cdbd312 (deployment 05:06 UTC) — chunk 204ox90e418mv.js vsebuje "EXPLORE 1825" = UI val 71 ŽIV; Render: LASTNI build (chunk 1mz1aptm1pu3k.js, 285 KB) vsebuje "EXPLORE 1825" + "Povej mi zgodbo tega kraja" + notPublishedNote = UI val 71 ŽIV (zacetni 404-test z Vercelovim imenom chunka je bil napačna metoda — buildi med platformama nista identična; pravilna preverba = iskanje niza v Renderovem lastnem cadastre chunku); story API: Vercel village 10 sekcij EVIDENCED + Render BP:094 EVIDENCED ✓
+
+Stage Summary:
+- VSE TRI PLATFORME SINHRONIZIRANE z val 71: GitHub main @ cdbd312 · Vercel production (UI chunk dokazan) · Render mirror (chunk dokazan)
+- 400/400 testov + 88/88 dimnih + verify-i18n 1014 × 5; ATLAS 1825: podatkovni sklop (PASS 1–8) + UI zgodbe (§16/§19) = Definition of Done #42 V CELOTI IZPOLNJENA
+- Naslednje: georef PASS §10 · parcelni sloj rabe §19 · ob kvoti re-readi PS p56–143/PT p7 @300dpi/PR/PV · izven peskovnika šolski list/SA Podzemelj/SI AS 749/Zucchelli
