@@ -621,6 +621,62 @@ ok(
   `status=${seNotFound.status}`
 );
 
+/* --- 5i. /api/atlas/coverage — PASS 8 Quality Gate (val 70, #42 §23/§24) --- */
+
+const covOverview = await getJson("/api/atlas/coverage");
+const covHouses = (covOverview.body?.quality_gate ?? []).find(
+  (c: any) => c.category_id === "houses"
+);
+ok(
+  "atlas coverage: pregled — 18 kategorij §23 + 14 outputov §24 (val 70)",
+  covOverview.status === 200 &&
+    covOverview.body?.ok === true &&
+    covOverview.body?.summary?.categories === 18 &&
+    covOverview.body?.summary?.outputs === 14 &&
+    Array.isArray(covOverview.body?.invariants_enforced),
+  `status=${covOverview.status} categories=${covOverview.body?.summary?.categories}`
+);
+ok(
+  "atlas coverage: hiše 167 (49 CONFLICT / 73 UNKNOWN — brez procentov, #43 §10)",
+  covOverview.status === 200 &&
+    covHouses?.total === 167 &&
+    covHouses?.CONFLICT === 49 &&
+    covHouses?.UNKNOWN === 73 &&
+    typeof covHouses?.mapping_rule === "string",
+  `status=${covOverview.status} houses=${covHouses?.total}`
+);
+const covCat = await getJson("/api/atlas/coverage?category=bp_a01_binding");
+ok(
+  "atlas coverage: kategorija bp_a01_binding — 9 VERIFIED (CLEAR glife) + 37 NOT_FOUND z opombo",
+  covCat.status === 200 &&
+    covCat.body?.category?.VERIFIED === 9 &&
+    covCat.body?.category?.NOT_FOUND === 37 &&
+    (covCat.body?.category?.not_found_note ?? "").includes("dokaz neobstoja"),
+  `status=${covCat.status} VER=${covCat.body?.category?.VERIFIED} NF=${covCat.body?.category?.NOT_FOUND}`
+);
+const covOutputs = await getJson("/api/atlas/coverage?outputs=1");
+ok(
+  "atlas coverage: §24 manifest — 14 obveznih outputov EXISTS na disku",
+  covOutputs.status === 200 &&
+    covOutputs.body?.count === 14 &&
+    (covOutputs.body?.outputs ?? []).every((o: any) => o.status === "EXISTS"),
+  `status=${covOutputs.status} count=${covOutputs.body?.count}`
+);
+const covUnknowns = await getJson("/api/atlas/coverage?unknowns=1");
+ok(
+  "atlas coverage: prečne nezanke — agregat po mestu izvora (geometry 2467 + duplikati 161 …)",
+  covUnknowns.status === 200 &&
+    covUnknowns.body?.aggregate?.length === 9 &&
+    covUnknowns.body?.total > 3000,
+  `status=${covUnknowns.status} total=${covUnknowns.body?.total}`
+);
+const covBadCat = await getJson("/api/atlas/coverage?category=neobstaja");
+ok(
+  "atlas coverage: neznana kategorija → 404 unknown_category",
+  covBadCat.status === 404 && covBadCat.body?.error === "unknown_category",
+  `status=${covBadCat.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);

@@ -1,0 +1,151 @@
+{
+ "val": 70,
+ "pass": "PASS 8",
+ "issue": 42,
+ "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.4 + registrov)",
+ "derived_from": [
+  "knowledge-graph-1825.json SOURCE nodes",
+  "pua/ps/pt registri",
+  "a01/pass4b inventarja"
+ ],
+ "deterministic": true,
+ "sources": [
+  {
+   "source_id": "SRC-PUA",
+   "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer",
+   "uodid": 373417,
+   "docid": 41782,
+   "pages": 49,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-PS",
+   "label": "PS N83 — Protocol der Grund-Parcellen",
+   "uodid": 373415,
+   "docid": 41780,
+   "pages": 143,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-PT",
+   "label": "PT N083 — Protocoll der Bau Parcellen",
+   "uodid": 373416,
+   "docid": 41781,
+   "pages": 8,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-PR",
+   "label": "PR — Grenz-Beschreibung der Gemeinde GRÜBLE",
+   "uodid": 373414,
+   "docid": 41779,
+   "pages": 4,
+   "status": "PARTIAL"
+  },
+  {
+   "source_id": "SRC-PG",
+   "label": "PG — Übersichtsskizze k.o. N83",
+   "uodid": 373413,
+   "docid": 41778,
+   "pages": 1,
+   "status": "PARTIAL"
+  },
+  {
+   "source_id": "SRC-PV",
+   "label": "PV — Ausweis über die Benützungsart des Bodens",
+   "uodid": 373418,
+   "docid": 41783,
+   "pages": 1,
+   "status": "PARTIAL"
+  },
+  {
+   "source_id": "SRC-PZ",
+   "label": "PZ — Konskripcija 1830",
+   "uodid": 373419,
+   "docid": 41784,
+   "pages": 71,
+   "status": "PARTIAL"
+  },
+  {
+   "source_id": "SRC-A01",
+   "label": "A01 — katastrski list (detajlni list vasi)",
+   "uodid": 227666,
+   "docid": 10,
+   "pages": null,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-A02",
+   "label": "A02 — katastrski list (sekcija II)",
+   "uodid": 227668,
+   "docid": 10,
+   "pages": null,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-A03",
+   "label": "A03 — katastrski list (sekcija III)",
+   "uodid": 227670,
+   "docid": 10,
+   "pages": null,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-A04",
+   "label": "A04 — katastrski list (sekcija IV)",
+   "uodid": 227671,
+   "docid": 10,
+   "pages": null,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-A05",
+   "label": "A05 — katastrski list (sekcija V)",
+   "uodid": 227673,
+   "docid": 10,
+   "pages": null,
+   "status": "VERIFIED"
+  },
+  {
+   "source_id": "SRC-SIAS176",
+   "label": "SI AS 176 — fond Novomeška kresija (k.o. N83 [227663], 12 enot)",
+   "uodid": 227663,
+   "docid": null,
+   "pages": null,
+   "status": "VERIFIED"
+  }
+ ],
+ "transcription": {
+  "PUA": {
+   "pages": 49,
+   "rows": 98,
+   "passes": 2
+  },
+  "PS": {
+   "pages": 143,
+   "rows": 1073,
+   "passes": 2,
+   "note": "p56–143 re-read (val 61); PV prepis čaka (F-SE-01)"
+  },
+  "PT": {
+   "pages": 8,
+   "rows": 100,
+   "passes": 2,
+   "note": "+ p8 Musterstellung"
+  }
+ },
+ "six_status": {
+  "VERIFIED": 9,
+  "PARTIAL": 4,
+  "CONFLICT": 0,
+  "UNKNOWN": 0,
+  "NOT_FOUND": 0
+ },
+ "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
+ "next_reads": [
+  "PS p56–143 ponovna meritev ob kvoti",
+  "PT p7 @300dpi (KG-F01/F04)",
+  "PR Grenz-Beschreibung (mejne točke)",
+  "PV prepis rabe (2035 parcel)"
+ ]
+}
