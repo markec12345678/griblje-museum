@@ -838,6 +838,56 @@ ok(
   `status=${cov75.status}`
 );
 
+/* --- 5r. §20 TIME SLIDER (val 76, #42 §20) --------------------------------- */
+const tlAll = await getJson("/api/atlas/timeline");
+ok(
+  "atlas timeline: 8 točk (2 DOCUMENTED + 6 AWAITING_SOURCE), letnice naraščajoče, val 76",
+  tlAll.status === 200 &&
+    tlAll.body?.ok === true &&
+    tlAll.body?.val === 76 &&
+    tlAll.body?.summary?.points_total === 8 &&
+    tlAll.body?.summary?.documented === 2 &&
+    tlAll.body?.summary?.awaiting_source === 6 &&
+    JSON.stringify(tlAll.body?.summary?.years) ===
+      JSON.stringify([1825, 1830, 1857, 1869, 1880, 1890, 1900, 1910]),
+  `status=${tlAll.status} points=${tlAll.body?.summary?.points_total}`
+);
+const tl1830 = tlAll.body?.points?.find((p: { year: number }) => p.year === 1830);
+ok(
+  "atlas timeline 1830: prebivalstvo 441 (222+219), 70 hiš, 102 družin, vir SRC-PZ",
+  tl1830?.status === "DOCUMENTED" &&
+    tl1830?.metrics?.find((m: { metric_id: string }) => m.metric_id === "population_total")
+      ?.value === 441 &&
+    tl1830?.metrics?.find((m: { metric_id: string }) => m.metric_id === "houses")?.value === 70 &&
+    tl1830?.metrics?.find((m: { metric_id: string }) => m.metric_id === "families")?.value === 102 &&
+    tl1830?.source_ids?.includes("SRC-PZ"),
+  `status=${tlAll.status} metrics=${tl1830?.metrics?.length}`
+);
+const tlAwaiting = await getJson("/api/atlas/timeline?year=1857");
+ok(
+  "atlas timeline 1857: AWAITING_SOURCE — brez metrik in brez virov (pogodba §4)",
+  tlAwaiting.status === 200 &&
+    tlAwaiting.body?.point?.status === "AWAITING_SOURCE" &&
+    tlAwaiting.body?.point?.metrics?.length === 0 &&
+    tlAwaiting.body?.point?.source_ids?.length === 0,
+  `status=${tlAwaiting.status}`
+);
+const tlBadYear = await getJson("/api/atlas/timeline?year=abc");
+const tlUnknownYear = await getJson("/api/atlas/timeline?year=9999");
+const tlAxis = await getJson("/api/atlas/timeline?axis=1");
+ok(
+  "atlas timeline: poštene napake (400 neštevilčno leto / 404 neznana) + ?axis brez metrik",
+  tlBadYear.status === 400 &&
+    tlBadYear.body?.error === "invalid_year" &&
+    tlUnknownYear.status === 404 &&
+    tlUnknownYear.body?.error === "unknown_year" &&
+    tlAxis.status === 200 &&
+    tlAxis.body?.axis?.length === 8 &&
+    JSON.stringify(tlAxis.body).includes("status") === true &&
+    !("points" in (tlAxis.body ?? {})),
+  `400=${tlBadYear.status} 404=${tlUnknownYear.status} axis=${tlAxis.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
