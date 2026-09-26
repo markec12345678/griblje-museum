@@ -1,0 +1,756 @@
+{
+ "val": 70,
+ "pass": "PASS 8",
+ "issue": 42,
+ "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
+ "spec": "issue #42 §23: TOTAL / VERIFIED / PARTIAL / CONFLICT / UNKNOWN / NOT FOUND za vsako kategorijo",
+ "deterministic": true,
+ "regenerable": "ponovni zagon build-coverage-report.py ob spremembi registrov",
+ "provenance": {
+  "built_from": [
+   "research-griblje/atlas-1825/a01-building-inventory-1825.json",
+   "research-griblje/atlas-1825/bp-house-reconciliation-1825.json",
+   "research-griblje/atlas-1825/conflict-register-1825.json",
+   "research-griblje/atlas-1825/house-register-1825.json",
+   "research-griblje/atlas-1825/knowledge-graph-1825.json",
+   "research-griblje/atlas-1825/negative-result-register-1825.json",
+   "research-griblje/atlas-1825/parcel-register-1825.json",
+   "research-griblje/atlas-1825/pass4b/a02-a05-building-inventory-1825.json",
+   "research-griblje/atlas-1825/person-owner-register-1825.json",
+   "research-griblje/atlas-1825/story-graph-1825.json",
+   "research-griblje/atlas-1825/toponym-register-1825.json",
+   "research-griblje/ps-n83/register.json",
+   "research-griblje/pt-n83/register.json",
+   "research-griblje/pua-n83/register.json"
+  ],
+  "kg_sha256": "d2416428a5d7977cc32b37e669fa7f1a6a14671cd54c0e24e2bab22f595e6e02",
+  "runtime_copy": "src/data/atlas-coverage-report-1825.json",
+  "note": "ročno urejanje prepovedano — builder piše edino resnico"
+ },
+ "invariants_enforced": [
+  "I1: vsota šestih statusov == total za vsako kategorijo",
+  "I2: manifest pokrije točno §24 outpute 1–14, vsaka datoteka obstaja",
+  "I3: noben procent — umetna popolnost prepovedana (issue #43 §10)",
+  "I4: vsaka kategorija ima mapping_rule + evidence pointers",
+  "I5: NOT_FOUND ≠ dokaz neobstoja (opomba na vsaki kategoriji)"
+ ],
+ "quality_gate": [
+  {
+   "category_id": "pua_entries",
+   "title": "PUA N83 vnosi (Alphabetisches Verzeichniß, 1825)",
+   "total": 98,
+   "VERIFIED": 45,
+   "PARTIAL": 25,
+   "CONFLICT": 28,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "REVIEW": 25,
+    "REVIEW-CONFLICT": 28,
+    "VERIFIED-2x": 45
+   },
+   "mapping_rule": "VERIFIED-2x→VERIFIED (2 neodvisna prehoda skladna); REVIEW→PARTIAL (en preh. brez konzenza); REVIEW-CONFLICT→CONFLICT",
+   "evidence": [
+    "research-griblje/pua-n83/register.json",
+    "build val 48/51"
+   ]
+  },
+  {
+   "category_id": "houses",
+   "title": "Register hiš 1825",
+   "total": 167,
+   "VERIFIED": 0,
+   "PARTIAL": 45,
+   "CONFLICT": 49,
+   "UNKNOWN": 73,
+   "NOT_FOUND": 0,
+   "native": {
+    "CONFLICT": 49,
+    "SINGLE_SOURCE": 32,
+    "PARTIAL": 13,
+    "UNKNOWN_SEMANTICS": 73
+   },
+   "mapping_rule": "CONFLICT→CONFLICT; PARTIAL→PARTIAL; SINGLE_SOURCE→PARTIAL (dokazano iz enega vira, brez korooboracije); UNKNOWN_SEMANTICS→UNKNOWN (status vira jasno neuresničen)",
+   "evidence": [
+    "research-griblje/atlas-1825/house-register-1825.json",
+    "PASS 2 (val 59)"
+   ]
+  },
+  {
+   "category_id": "pt_rows",
+   "title": "PT N83 vrstice (Protocoll der Bau Parcellen, 1825)",
+   "total": 100,
+   "VERIFIED": 40,
+   "PARTIAL": 9,
+   "CONFLICT": 51,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "REVIEW": 9,
+    "STABLE": 40,
+    "REVIEW-CONFLICT": 51
+   },
+   "mapping_rule": "STABLE→VERIFIED (konzenzna branja brez dvomljivih besed); REVIEW→PARTIAL; REVIEW-CONFLICT→CONFLICT",
+   "evidence": [
+    "research-griblje/pt-n83/register.json",
+    "build val 53"
+   ]
+  },
+  {
+   "category_id": "bp_1_100",
+   "title": "BP 1–100 — obstoj in transkripcija stavčnih parcel",
+   "total": 100,
+   "VERIFIED": 40,
+   "PARTIAL": 9,
+   "CONFLICT": 51,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "REVIEW": 9,
+    "STABLE": 40,
+    "REVIEW-CONFLICT": 51
+   },
+   "mapping_rule": "Status vrstice v PT po bp_no (vsak BP ima točno 1 vrstico): STABLE→VERIFIED; REVIEW→PARTIAL; REVIEW-CONFLICT→CONFLICT",
+   "evidence": [
+    "research-griblje/pt-n83/register.json (bp_no 1–100)",
+    "PASS 4b (val 66) glifne kandidature"
+   ]
+  },
+  {
+   "category_id": "bp_house_binding",
+   "title": "BP ↔ hiša 1825 reconciliacija",
+   "total": 100,
+   "VERIFIED": 2,
+   "PARTIAL": 39,
+   "CONFLICT": 54,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 5,
+   "native": {
+    "UNCERTAIN": 39,
+    "CONFLICT": 54,
+    "NOT_FOUND": 5,
+    "FOUND": 2
+   },
+   "mapping_rule": "FOUND→VERIFIED; UNCERTAIN→PARTIAL (probable/unresolved vezava); CONFLICT→CONFLICT; NOT_FOUND→NOT_FOUND",
+   "evidence": [
+    "research-griblje/atlas-1825/bp-house-reconciliation-1825.json",
+    "PASS 2 (val 59)"
+   ],
+   "not_found_note": "NOT_FOUND ≠ dokaz neobstoja (issue #42 §3) — pomeni: v trenutnih virih ne najdeno"
+  },
+  {
+   "category_id": "bp_a01_binding",
+   "title": "BP ↔ A01/A02 kartografska vezava (glife)",
+   "total": 100,
+   "VERIFIED": 9,
+   "PARTIAL": 18,
+   "CONFLICT": 30,
+   "UNKNOWN": 6,
+   "NOT_FOUND": 37,
+   "native": {
+    "located_v65_unique": 17,
+    "located_prior_only_unique": 43,
+    "located_a02_candidates_unique": 3,
+    "glyph_tier_v65": {
+     "CLEAR": 9,
+     "PROBABLE": 5,
+     "CANDIDATE": 4
+    },
+    "prior_val57_status": {
+     "CONFLICT": 30,
+     "PROBABLE": 13
+    },
+    "located_unique_total": 63
+   },
+   "mapping_rule": "v65 glifa CLEAR→VERIFIED; PROBABLE→PARTIAL; CANDIDATE/UNRESOLVED→UNKNOWN; prior-only val57 CONFLICT→CONFLICT, sicer PARTIAL; A02 kandidati 12/20/22 (bp_cross REVIEW, brez sidra A01↔A02)→UNKNOWN; ostali→NOT_FOUND",
+   "evidence": [
+    "research-griblje/atlas-1825/a01-building-inventory-1825.json",
+    "pass4b/a02-a05-building-inventory-1825.json",
+    "KG v1.4 CORRESPONDS_TO_BP (21 povezav)"
+   ],
+   "not_found_note": "NOT_FOUND ≠ dokaz neobstoja (issue #42 §3/§7) — BP brez kartografske glife v vseh prebranih listih; NI trditev, da objekt ni obstajal"
+  },
+  {
+   "category_id": "parcels",
+   "title": "Parcelni register 1825 (PUA + PS)",
+   "total": 2467,
+   "VERIFIED": 907,
+   "PARTIAL": 1107,
+   "CONFLICT": 453,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "PUA/REVIEW": 675,
+    "PUA/REVIEW-CONFLICT": 453,
+    "PUA/VERIFIED-2x": 907,
+    "PS/SINGLE_SOURCE": 431,
+    "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 1
+   },
+   "mapping_rule": "PUA: VERIFIED-2x→VERIFIED, REVIEW→PARTIAL, REVIEW-CONFLICT→CONFLICT; PS: vse SINGLE_SOURCE→PARTIAL (1 z zastavico F14 ostaja PARTIAL z opombo)",
+   "evidence": [
+    "research-griblje/atlas-1825/parcel-register-1825.json",
+    "PASS 3 (val 60) + PS re-read (val 61)"
+   ]
+  },
+  {
+   "category_id": "parcel_geometry",
+   "title": "Parcelne meje / geometrija (poligoni)",
+   "total": 2467,
+   "VERIFIED": 0,
+   "PARTIAL": 0,
+   "CONFLICT": 0,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 2467,
+   "native": {
+    "polygons_documented": 0,
+    "raster_basis": "A01–A05 rastri val 42 (VAČ)",
+    "georef": "PROVIZORIČNO ±200–500 m (A01 sidro)"
+   },
+   "mapping_rule": "Nič ni izrisano — digitalizacija mej NI izvedena; 'lepe' parcele brez vira so prepovedane (issue #42 §9)",
+   "evidence": [
+    "issue #42 §9",
+    "a01-building-inventory-1825.json georef blok"
+   ],
+   "not_found_note": "NOT_FOUND ≠ dokaz neobstoja (issue #42 §3) — meje niso digitalizirane; Franciscejski kataster jih ponuja @višji dpi + georef PASS (nič 'lepih' parcel, §9)"
+  },
+  {
+   "category_id": "owners",
+   "title": "Lastniki 1825 (owner osebe: PUA + PS)",
+   "total": 488,
+   "VERIFIED": 140,
+   "PARTIAL": 198,
+   "CONFLICT": 150,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "REVIEW": 35,
+    "REVIEW-CONFLICT": 150,
+    "VERIFIED-2x": 45,
+    "SINGLE_SOURCE": 163,
+    "STABLE": 95
+   },
+   "mapping_rule": "VERIFIED-2x/STABLE→VERIFIED; REVIEW/SINGLE_SOURCE→PARTIAL; REVIEW-CONFLICT→CONFLICT",
+   "evidence": [
+    "research-griblje/atlas-1825/person-owner-register-1825.json (person_type owner*)",
+    "PASS 3 (val 60)"
+   ]
+  },
+  {
+   "category_id": "persons",
+   "title": "Osebe / akterji 1825 (vse osebe registra)",
+   "total": 488,
+   "VERIFIED": 140,
+   "PARTIAL": 198,
+   "CONFLICT": 150,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "REVIEW": 35,
+    "REVIEW-CONFLICT": 150,
+    "VERIFIED-2x": 45,
+    "SINGLE_SOURCE": 163,
+    "STABLE": 95
+   },
+   "mapping_rule": "VERIFIED-2x/STABLE→VERIFIED; REVIEW/SINGLE_SOURCE→PARTIAL; REVIEW-CONFLICT→CONFLICT; merge prepovedan brez dokaza (161 possible_duplicates NI združenih, §5)",
+   "evidence": [
+    "research-griblje/atlas-1825/person-owner-register-1825.json",
+    "possible_duplicates=161 NOT_MERGED"
+   ],
+   "note": "register oseb = register lastnikov (vseh 488 oseb je owner/owner-variant zapisov iz PUA/PT/PS — issue #42 §5: en register za obe vlogi)"
+  },
+  {
+   "category_id": "a01_buildings",
+   "title": "A01 stavbe (kartografski inventar)",
+   "total": 67,
+   "VERIFIED": 9,
+   "PARTIAL": 48,
+   "CONFLICT": 0,
+   "UNKNOWN": 10,
+   "NOT_FOUND": 0,
+   "native": {
+    "objects_v65": 24,
+    "glyph_tier": {
+     "CLEAR": 9,
+     "PROBABLE": 5,
+     "CANDIDATE": 5,
+     "UNRESOLVED": 2,
+     "UNREADABLE": 1,
+     "UNIDENTIFIED": 2
+    },
+    "prior_only_bp": 43,
+    "red_glyphs_catalog": 8
+   },
+   "mapping_rule": "v65 glifa: CLEAR→VERIFIED, PROBABLE→PARTIAL, CANDIDATE/UNRESOLVED/UNIDENTIFIED/UNREADABLE→UNKNOWN; prior-only (val 52–56)→PARTIAL; 8 rdečih glif = nizke številke 20–60 (njive, F-A01-04) — niso stavbe, katalog ločen",
+   "evidence": [
+    "research-griblje/atlas-1825/a01-building-inventory-1825.json",
+    "PASS 4 (val 65)"
+   ]
+  },
+  {
+   "category_id": "cadastral_sheets",
+   "title": "Katastrski listi, ki pokrivajo Griblje (A01–A05)",
+   "total": 5,
+   "VERIFIED": 2,
+   "PARTIAL": 3,
+   "CONFLICT": 0,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "sheets": [
+     "A01",
+     "A02",
+     "A03",
+     "A04",
+     "A05"
+    ],
+    "inventoried": 5,
+    "negative_sheets": [
+     "A03",
+     "A04"
+    ],
+    "georef": {
+     "A01": "PROVIZORIČNO ±200–500 m",
+     "A02–A05": "UNKNOWN (brez sidra)"
+    },
+    "title_inscription_family": "Siche die Reambullirungs Beimappe (KG-F05 OPEN)"
+   },
+   "mapping_rule": "NEGATIVNA lista (A03/A04) z 2 prehodoma = VERIFIED dokumentacija 'ni objektov'; A01/A02/A05 inventarizirani v1 → PARTIAL (georef/brez sidra); KG-F05 arhivsko vprašanje (izmera-vs-reambulacija) OPEN",
+   "evidence": [
+    "pass4b/a02-a05-building-inventory-1825.json",
+    "KG v1.4 KG-F05",
+    "issue #42 §11"
+   ]
+  },
+  {
+   "category_id": "toponyms",
+   "title": "Toponimi 1825 (krajinska imena)",
+   "total": 37,
+   "VERIFIED": 11,
+   "PARTIAL": 26,
+   "CONFLICT": 0,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "VERIFIED_FORM": 11,
+    "PROVISIONAL": 25,
+    "PROVISIONAL_MULTI — first word UNRESOLVED": 1
+   },
+   "mapping_rule": "VERIFIED_FORM→VERIFIED (oblika potrjena v virom); PROVISIONAL(_MULTI)→PARTIAL; moderna povezava: 0/37 (vse UNKNOWN, zgodovinska oblika ≠ moderna)",
+   "evidence": [
+    "research-griblje/atlas-1825/toponym-register-1825.json",
+    "PASS 4c (val 62)"
+   ]
+  },
+  {
+   "category_id": "sources",
+   "title": "Viri (katalog dokumentov SI AS 176/N/N83 + kartografija)",
+   "total": 13,
+   "VERIFIED": 9,
+   "PARTIAL": 4,
+   "CONFLICT": 0,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "per_source": [
+     {
+      "source_id": "SRC-PUA",
+      "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer",
+      "uodid": 373417,
+      "docid": 41782,
+      "pages": 49,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-PS",
+      "label": "PS N83 — Protocol der Grund-Parcellen",
+      "uodid": 373415,
+      "docid": 41780,
+      "pages": 143,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-PT",
+      "label": "PT N083 — Protocoll der Bau Parcellen",
+      "uodid": 373416,
+      "docid": 41781,
+      "pages": 8,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-PR",
+      "label": "PR — Grenz-Beschreibung der Gemeinde GRÜBLE",
+      "uodid": 373414,
+      "docid": 41779,
+      "pages": 4,
+      "status": "PARTIAL"
+     },
+     {
+      "source_id": "SRC-PG",
+      "label": "PG — Übersichtsskizze k.o. N83",
+      "uodid": 373413,
+      "docid": 41778,
+      "pages": 1,
+      "status": "PARTIAL"
+     },
+     {
+      "source_id": "SRC-PV",
+      "label": "PV — Ausweis über die Benützungsart des Bodens",
+      "uodid": 373418,
+      "docid": 41783,
+      "pages": 1,
+      "status": "PARTIAL"
+     },
+     {
+      "source_id": "SRC-PZ",
+      "label": "PZ — Konskripcija 1830",
+      "uodid": 373419,
+      "docid": 41784,
+      "pages": 71,
+      "status": "PARTIAL"
+     },
+     {
+      "source_id": "SRC-A01",
+      "label": "A01 — katastrski list (detajlni list vasi)",
+      "uodid": 227666,
+      "docid": 10,
+      "pages": null,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-A02",
+      "label": "A02 — katastrski list (sekcija II)",
+      "uodid": 227668,
+      "docid": 10,
+      "pages": null,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-A03",
+      "label": "A03 — katastrski list (sekcija III)",
+      "uodid": 227670,
+      "docid": 10,
+      "pages": null,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-A04",
+      "label": "A04 — katastrski list (sekcija IV)",
+      "uodid": 227671,
+      "docid": 10,
+      "pages": null,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-A05",
+      "label": "A05 — katastrski list (sekcija V)",
+      "uodid": 227673,
+      "docid": 10,
+      "pages": null,
+      "status": "VERIFIED"
+     },
+     {
+      "source_id": "SRC-SIAS176",
+      "label": "SI AS 176 — fond Novomeška kresija (k.o. N83 [227663], 12 enot)",
+      "uodid": 227663,
+      "docid": null,
+      "pages": null,
+      "status": "VERIFIED"
+     }
+    ],
+    "note": "VERIFIED = prepisan/inventariziran; PARTIAL = identiteta (uodid/docid) potrjena, vsebina še ni prebrana"
+   },
+   "mapping_rule": "master transkripcija/inventar → VERIFIED; samo kataloška identiteta → PARTIAL; CONFLICT/UNKNOWN/NOT_FOUND: 0",
+   "evidence": [
+    "KG v1.4 SOURCE nodes (KG-F02 popravljena uodid mapa, val 64)",
+    "VAČ vac_details_url na vsakem SOURCE node-u"
+   ]
+  },
+  {
+   "category_id": "unresolved_conflicts",
+   "title": "Konflikti (centralni register)",
+   "total": 113,
+   "VERIFIED": 1,
+   "PARTIAL": 4,
+   "CONFLICT": 108,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "OPEN": 108,
+    "DOCUMENTED": 2,
+    "PARTIALLY_RESOLVED": 2,
+    "RESOLVED": 1
+   },
+   "mapping_rule": "RESOLVED→VERIFIED; PARTIALLY_RESOLVED/DOCUMENTED→PARTIAL; OPEN→CONFLICT (ostaja vidno, merge prepovedan §14)",
+   "evidence": [
+    "research-griblje/atlas-1825/conflict-register-1825.json",
+    "what_would_resolve na vsakem zapisu"
+   ]
+  },
+  {
+   "category_id": "negative_results",
+   "title": "Negativni rezultati (iskano in ni najdeno)",
+   "total": 13,
+   "VERIFIED": 13,
+   "PARTIAL": 0,
+   "CONFLICT": 0,
+   "UNKNOWN": 0,
+   "NOT_FOUND": 0,
+   "native": {
+    "0 zadetkov": 1,
+    "6 opaženih ≈ 6,5 pričakovanih po naključju; 0 sekcija+številka": 1,
+    "prazen (OCR sloji neuporabni)": 1,
+    "0 znakov (sloj ne obstaja)": 1,
+    "ne obstajajo v nobenem viru (PS vrzel 70-78 = bloki čakajo p56+)": 1,
+    "ni lastniški vpis (samo omenjena)": 1,
+    "neusklajena (p26 nosi žig 'VI' — listi se ponavljajo po razprtjah)": 1,
+    "B.P. 222 izven BP 1-100 obsega vasi; pomen nejasen": 1,
+    "TO_COLLECT — dLib dostop iz peskovnika blokiran": 1,
+    "429 kvota (TO_COLLECT)": 1,
+    "0 — strukturno (F9 različni lastniški stanji), ne bralna napaka": 1,
+    "NOT FOUND — all Flurbezirk segments are numeric/roman (I–V sections + numbers); zero named districts": 1,
+    "NOT FOUND — wohnort_original is empty except 3× self-form 'Grüble' (p3/4/5)": 1
+   },
+   "mapping_rule": "Vsak negativni rezultat = dokumentiran postopek (iskano/kje/zakaj ni mogoče potrditi) → VERIFIED kot dokumentacija",
+   "evidence": [
+    "research-griblje/atlas-1825/negative-result-register-1825.json",
+    "issue #42 §13"
+   ]
+  },
+  {
+   "category_id": "georeferencing",
+   "title": "Georeferenca (sidra listov A01–A05)",
+   "total": 5,
+   "VERIFIED": 0,
+   "PARTIAL": 1,
+   "CONFLICT": 0,
+   "UNKNOWN": 4,
+   "NOT_FOUND": 0,
+   "native": {
+    "A01": {
+     "anchor_px": [
+      1851,
+      1778
+     ],
+     "anchor_geo": [
+      45.57246,
+      15.29257
+     ],
+     "meters_per_px": 2.1909,
+     "accuracy": "PROVIZORIČNO: ±200–500 m na robovih (rotacija lista ni rešena)"
+    },
+    "A02–A05": "UNKNOWN — brez sidra; lat/lng bi bila izmišljotina (F-A02 georef UNKNOWN)"
+   },
+   "mapping_rule": "A01: sidro + m/px → PARTIAL (PROVIZORIČNO, rotacija ni rešena, ±200–500 m); A02–A05: brez sidra → UNKNOWN; VERIFIED: 0 (kontrolne točke + error estimate = naslednji PASS)",
+   "evidence": [
+    "a01-building-inventory-1825.json georef blok",
+    "issue #42 §10"
+   ]
+  },
+  {
+   "category_id": "unknowns",
+   "title": "Neznanke — prečni pregled (izrecno štetje, brez procentov)",
+   "total": 3322,
+   "VERIFIED": 0,
+   "PARTIAL": 0,
+   "CONFLICT": 0,
+   "UNKNOWN": 3322,
+   "NOT_FOUND": 0,
+   "native": {
+    "aggregate": [
+     {
+      "item": "hiše UNKNOWN_SEMANTICS",
+      "count": 73,
+      "category": "houses"
+     },
+     {
+      "item": "PS parcele z raba UNKNOWN",
+      "count": 106,
+      "category": "parcels"
+     },
+     {
+      "item": "PS parcele cross_ref_to_pua UNKNOWN (namespace vprašanje F14)",
+      "count": 432,
+      "category": "parcels"
+     },
+     {
+      "item": "osebe possible_duplicates (NI združenih, §5)",
+      "count": 161,
+      "category": "persons"
+     },
+     {
+      "item": "toponimi brez moderne povezave",
+      "count": 37,
+      "category": "toponyms"
+     },
+     {
+      "item": "BP brez kartografske glife (map)",
+      "count": 37,
+      "category": "bp_a01_binding"
+     },
+     {
+      "item": "BP vezava NOT_FOUND (reconciliacija)",
+      "count": 5,
+      "category": "bp_house_binding"
+     },
+     {
+      "item": "parcele brez geometrije",
+      "count": 2467,
+      "category": "parcel_geometry"
+     },
+     {
+      "item": "listi A02–A05 brez sidra",
+      "count": 4,
+      "category": "georeferencing"
+     }
+    ],
+    "rule": "presek kategorij zgreši nič — vsaka neznanka se šteje natanko 1× na mestu izvora"
+   },
+   "mapping_rule": "Agregat: vsota izrecno naštetih neznank po kategorijah izvora; vsaka povezana na kategorijo; ni umetnega skupnega procenta (issue #43 §10)",
+   "evidence": [
+    "izpeljano iz registrov (glej kategorije)"
+   ]
+  }
+ ],
+ "outputs_manifest": {
+  "spec": "issue #42 §24 — obvezni outputi 1–14",
+  "count": 14,
+  "outputs": [
+   {
+    "name": "house-register-1825",
+    "file": "research-griblje/atlas-1825/house-register-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "house-register-1825.json (val 59)"
+    ],
+    "note": "§2 register hiš"
+   },
+   {
+    "name": "parcel-register-1825",
+    "file": "research-griblje/atlas-1825/parcel-register-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "parcel-register-1825.json (val 60/61)"
+    ],
+    "note": "§4 parcele"
+   },
+   {
+    "name": "person-owner-register-1825",
+    "file": "research-griblje/atlas-1825/person-owner-register-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "person-owner-register-1825.json (val 60)"
+    ],
+    "note": "§5 osebe"
+   },
+   {
+    "name": "bp-house-reconciliation-1825",
+    "file": "research-griblje/atlas-1825/bp-house-reconciliation-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "bp-house-reconciliation-1825.json (val 59)"
+    ],
+    "note": "§3 BP↔hiša"
+   },
+   {
+    "name": "a01-coverage-1825",
+    "file": "research-griblje/atlas-1825/a01-coverage-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "a01-building-inventory-1825.json + pass4b (val 65/66)"
+    ],
+    "note": "§7 BP↔A01 matrica — IZPELJAN ta val"
+   },
+   {
+    "name": "cadastral-sheet-coverage-1825",
+    "file": "research-griblje/atlas-1825/cadastral-sheet-coverage-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "a01-building-inventory-1825.json + pass4b (val 65/66)"
+    ],
+    "note": "§11 matrica po listih — IZPELJAN ta val"
+   },
+   {
+    "name": "toponym-register-1825",
+    "file": "research-griblje/atlas-1825/toponym-register-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "conflict/negative/toponym registri (val 57/62)"
+    ],
+    "note": "§12 toponimi"
+   },
+   {
+    "name": "source-coverage-1825",
+    "file": "research-griblje/atlas-1825/source-coverage-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "KG v1.4 SOURCE nodes + registri"
+    ],
+    "note": "§6/§14 pokritost virov — IZPELJAN ta val"
+   },
+   {
+    "name": "conflict-register-1825",
+    "file": "research-griblje/atlas-1825/conflict-register-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "conflict/negative/toponym registri (val 57/62)"
+    ],
+    "note": "§14 konflikti"
+   },
+   {
+    "name": "negative-result-register-1825",
+    "file": "research-griblje/atlas-1825/negative-result-register-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "conflict/negative/toponym registri (val 57/62)"
+    ],
+    "note": "§13 negativni rezultati"
+   },
+   {
+    "name": "atlas-map-data-model-1825",
+    "file": "research-griblje/atlas-1825/atlas-map-data-model-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "KG v1.4 + val 67 map sloj"
+    ],
+    "note": "§15 podatkovni model zemljevida — IZPELJAN ta val"
+   },
+   {
+    "name": "coverage-report-1825",
+    "file": "research-griblje/atlas-1825/coverage-report-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "vsi registri + KG v1.4"
+    ],
+    "note": "§23 QUALITY GATE — ta artefakt"
+   },
+   {
+    "name": "story-graph-1825",
+    "file": "research-griblje/atlas-1825/story-graph-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "KG v1.4 (val 68)"
+    ],
+    "note": "§21 pripovedni graf"
+   },
+   {
+    "name": "story-engine-spec-1825",
+    "file": "research-griblje/atlas-1825/story-engine-spec-1825.json",
+    "status": "EXISTS",
+    "derived_from": [
+     "val 69 story engine + §17/§19/§22"
+    ],
+    "note": "§16/§17/§22 pogodba zgodbonizacije — IZPELJAN ta val"
+   }
+  ]
+ },
+ "definition_of_done_status": {
+  "klik na hišo → kje/številka/lastnik/parcele/raba/BP/vir/osebe/dokazano/konfliktno/neznano": "IZPOLNJENO podatkovno-API (val 63–69: /api/atlas/evidence + /story) — UI sloj sledi",
+  "zgodba vasi": "IZPOLNJENO podatkovno (/api/atlas/story?scope=village)",
+  "preostanek": [
+   "UI 'Zgodba te hiše' klik-flux + EXPLORE 1825 (§19)",
+   "georef PASS (kontrolne točke, error estimate)",
+   "ob kvoti: PS p56–143 re-read, PT p7 @300dpi, PR re-read, PV prepis",
+   "parcelne meje @višji dpi (§9)"
+  ]
+ }
+}
