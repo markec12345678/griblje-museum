@@ -179,7 +179,7 @@ describe("val65 — KG v1.2 MAP_OBJECT integracija", () => {
     expect(fids).toContain("KG-F03");
     expect(fids).toContain("KG-F04");
     expect(kg.invariant_violations).toEqual([]);
-    expect(kg.val).toBe(77); // KG v1.8 (val 77: PZ PASS 2 — re-read p67/§8; koordinate/KG-F08 nespremenjeni)
+    expect(kg.val).toBe(78); // KG v1.9 (val 78: PZ PASS 3 — Rektifikacija p35–40; koordinate/KG-F08 nespremenjeni)
     const moCat = kg.coverage.categories.find(
       (c: { category: string }) => c.category === "map_objects_a01",
     );

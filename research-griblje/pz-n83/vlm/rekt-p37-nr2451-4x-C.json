@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Parcela=1515 | Joch=– | Klafter=[?] | Oseba=Grübl",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790449935,
+  "id": "2026092703121360c47948494c4fed",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092703121360c47948494c4fed",
+  "usage": {
+    "completion_tokens": 24,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4062,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4086
+  }
+}

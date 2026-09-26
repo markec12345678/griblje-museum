@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je transkripcija strani avstrijskega katastrskega ocenitvenega elaborata (Katastral-Schätzungs-Elaborat) za občino Grüble (Griblje) iz leta 1830.\n\n**Opomba:** Besedilo je v originalni nemščini (kot zahteva navodilo), komentarji in struktura pa so v slovenščini. Številke so prepisane natančno, kot so zapisane v kurentski pisavi, z označbo morebitnih dvoumnosti.\n\n---\n\n### **III Weingärten** (Vinogradi)\n\nZiegen sind sehr spärlich, welche in diesem Grunde nicht\nim Stande ihren Unterhalt, und in folge dessen\nEntfernung nicht besondert Elastizität [prečrtano: *Elastizität*] / *Eigenthum*\nfinden können in Plurimum zu – Procenten\nnicht sind abzunehmen, mithin auch keine Abgabe zu\nleisten zumeist werden muß.\n\n### **IV Wiesen** (Travniki)\n\nZiehen auch nur wenigen Ertrag.\n\nDerart vorhinigen Minderwerth leidet nunmehr\nweniger zusächlichem Wein bauern Gegend, haben\nvor Dürre Ähnlichkeit wegen öfters minderen\nErtrag, und mögen daher leicht verderben, und dann für\nlange Zeit unfruchtbar, und sollen nun in Rücksicht, da ein\nbeträchtlich, und sonst fügliche Anzahl befindet,\nzu minder rentiret. Ein solcher minder ertragene\nLust und Ertragniß, und Reichthum wird\nbestimmt. Als Maßverhältnis wurden den\nPurgallen 82494 mit 2/10 Abzug vom\nMundlochbezirk der Gemeinde 8844 zugehörig\ngemacht\n\n---\n\n**[Vrstica s ključnimi števili]**\n[Vrstica ~25] Purgallen **82494** | Abzug = **2/10** | vom Mundlochbezirk der Gemeinde **8844** zugehörig gemacht\n\n*Opombe k številom:*\n*   **82494**: Številka je jasno zapisana (8-2-4-9-4).\n*   **2/10**: Zapisano kot \"zwei Zehentel\" ali \"2/10\".\n*   **8844**: Prva številka (8) je jasna, naslednje tri (8-4-4) so tudi razločne, čeprav je pisava težavna.\n\n---\n\n### **VII Gebäude** (Stavbe)\n\nZiehen ebenfalls weniger Erträgniß nicht weniger\nmeist\n\n*[Podpis:]* Franz Plebn\n\nDurch Befreiung gebräuchlich weniger pflegen,\nwelches meist fortdauernd fehlt, oder wenig fähig\nmit Grund, und persönlichem Einkommen angemessen",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790449659,
+  "id": "202609270307082b576f9f67654338",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609270307082b576f9f67654338",
+  "usage": {
+    "completion_tokens": 691,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3688,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4379
+  }
+}

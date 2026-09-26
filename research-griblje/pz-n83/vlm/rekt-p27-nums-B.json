@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Na podlagi prepoznavanja pisave Kurrent (kjer je '3' dvojna zanka, '7' z repom, '4' kot '1' s prečko, '5' z gornjo zanko, '8' z dvema zankama) in upoštevanja rdečih popravkov (prečrtane vrednosti) so podatki v tabeli naslednji:\n\n**Vrstica 1: Wiesen**\n*   **Klafter** = . (prazno/točka)\n*   **QKlf** = 77 (ali 77½, glede na piko)\n*   **Joch** = . (prazno/točka)\n*   **K** = 05\n*   **Joch** = . (prazno/točka)\n*   **K** = 6 (rdeča črta nakazuje popravek/prečrtanje)\n\n**Vrstica 2: Daran von zugezogenen Gründen...**\n*   **Klafter** = 50\n*   **QKlf** = . (prazno/točka)\n*   **Joch** = 77 (ali 77½)\n*   **K** = . (prazno/točka)\n*   **Joch** = . (prazno/točka)\n*   **K** = 6 (rdeča črta nakazuje popravek/prečrtanje)\n\n**Seznam celic (Stolpec=vrednost):**\n\n1.  Klafter=.\n2.  QKlf=77\n3.  Joch=.\n4.  K=05\n5.  Joch=.\n6.  K=6[popravljeno/prečrtano]\n7.  Klafter=50\n8.  QKlf=.\n9.  Joch=77\n10. K=.\n11. Joch=.\n12. K=6[popravljeno/prečrtano]\n\n*Opomba: Vrednosti v zadnjem stolpcu (K) imajo rdeče podčrtaje, kar v kontekstu katastrskih elaboratov običajno pomeni, da so bile te vrednosti kasneje popravljene ali anulirane.*",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790450252,
+  "id": "2026092703171513968a93fac947d9",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092703171513968a93fac947d9",
+  "usage": {
+    "completion_tokens": 510,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4152,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4662
+  }
+}

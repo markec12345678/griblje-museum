@@ -1,8 +1,33 @@
 #!/usr/bin/env python3
 """
-Val 77 — PZ N83 "Katastral-Schätzungs-Elaborat" (Konskripcija), 71 strani
+Val 78 — PZ N83 "Katastral-Schätzungs-Elaborat" (Konskripcija), 71 strani
 [VAČ uodid 373419 / docid 41784], Land Krain, Kreis Neustadtl,
 Schätzungsdistrict XI (N° 83), Gemeinde Grüble.
+
+PASS 3 (val 78): Rektifikacijski protokol 1830 (p35–40) — per-parcelna
+kontrola F-PZ-04. Stran NE vsebuje tabel, ampak NARATIVNI protokol z
+merilnimi vnosi vzorca 'Bei Messung wird die Auszelle H <št> mit <št> Joch
+<št> □Klf und <oseba> nach Grüble ... zugewiesen' + podpisi žirije + pečat
+('Kempt Grüble am 9. April 1830', p40). 7 per-parcelnih vnosov prepisanih
+(3 TRANSCRIBED + 4 REVIEW; izrezki crops/p35-40-rekt/, 2 neodvisna VLM
+prehoda + direktni odtis avtorja):
+
+  p35 I Acker:        H 30   = 1 J 1082  (Moritz Fluchs[?])      TRANSCRIBED
+  p36 I Acker:        H 594  = 1 J 591   (Georg Kranjc, Hö.N.45) TRANSCRIBED
+  p36 I Acker:        H 1004 = 1 J 1010  (Moritz Brinz[?])       TRANSCRIBED
+  p37 II Wiesen:      H 738  = – J 8?5   (Miklos/Müller[?])      REVIEW
+  p37 II Wiesen:      H 2451 = – J 1515/1575 (Moritz Plaberz[?]) REVIEW
+  p38 IV Gärten:      H 2451[?] = – J 260 (isti oseba)            REVIEW
+  p39 VI Hutweiden:   H 2475→1288[?] = 1 J 589/549 (G. Kranjc →
+                      Joseph Milavec[?]; revizijski vzorec)        REVIEW
+  + p27 (Flächenraum): vrstici 'Wiesen' in 'Daran von zugezogenen Gründen
+  und Grundverkäufen' (~39 | 95 | 6 + rdeči popravki) — REVIEW.
+
+  F-PZ-04 REZULTAT: Acker dodanki (1+1+1 J = 3 J 2683 K) NISO Δ 3 J 0 K —
+  K-stolpci ne ustrezajo → per-parcelni vnosi NE razložijo razlike Summe;
+  F-PZ-04 OSTAJA OPEN, nič vsiljeno (§4). Novost: koncept 'zugezogene
+  Gründe' (dodanki sosednjim posestvom) dokumentiran na 2 mestih (p35–39
+  narativa + p27 tabelarna vrstica).
 
 PASS 2 (val 77): odločilni re-read Endresultata p67 + §8 (p6) z aritmetičnimi
 vrati — POPRAVEK val-75 branj na ravni celic (digit-by-digit izrezki 3×,
@@ -52,10 +77,14 @@ Metoda (issue #42 §1: SOURCES → DOKAZI → PODATKI; nič ugibanja):
   PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/
   p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na
   dvomljive celice + direktni odtis; aritmetična vrata I4–I6 odločijo.
+  PREHOD 4 (val 78): Rektifikacija p35–40 — strukturni pregled + izrezki
+  2–5× (crops/p35-40-rekt/), VLM prehoda A/B/C + direktni odtis; per-parcelni
+  vnosi prepisani; F-PZ-04 kontrola z negativnim rezultatom (pošteno, §4).
 
 Izhod: pz-konskripcija-1830.json (dokumentni agregat; NI per-parcelnih
 trditev — raba po parcelah ostaja neznana §4; prebivalstvo 1830 = dokumentni
-podatek §20 časovne plasti).
+podatek §20 časovne plasti; Rektifikacija 1830 = prepisani vnosi protokola,
+NE trditve o rabah parcel).
 """
 import json
 import os
@@ -207,6 +236,82 @@ ENDRESULTAT_ROWS = [
 ENDRESULTAT_SUMMA = {"joch": 1152, "klafter": 495, "crossed": {"klafter": ["474[?]|481[?]"]}, "source_page": 67,
                      "note": "val 75 je bral 1132 — val 77 korekcija: Kurrent 3↔5 → 1152 (odločilni izrezek, 2 prehoda)"}
 
+# --- PREHOD 4 (val 78): Rektifikacijski protokol 1830 (p35–40) ----------------
+# Narativni protokol z merilnimi vnosi per parcela ('Bei Messung wird die
+# Auszelle H <št> mit <št> Joch <št> □Klf und <oseba> nach Grüble ...').
+# Direktni odtis avtorja na 4–5× izrezkih (crops/p35-40-rekt/) + VLM prehoda
+# A/B/C kot pomožni preverjevalci (celostranski VLM halucinira — vzorec
+# F-PZ-12). Enota površine: □Klafter. Osebe = sosednji posestniki, od katerih
+# so parcele dodeljene občini — NI KG PERSON vozlišč (§5: brez identitetne
+# preverbe). VNOSI NE IZPELJUJEJO per-parcelnih trditev o rabah (§4).
+
+REKTIFIKACIJA_1830 = {
+    "title": "Rektifikations-Protokoll 1830 (p35–40) — merilni vnosi per parcela",
+    "date": "Kempt Grüble am 9. April 1830 (p40; val 78 direktni odtis; prej branje '5. april[?]')",
+    "note": "p35–40 NI tabel — narativni opisi kultur + merilni vnosi; podpisi žirije + pečat (p40); rdeča nota 'Dritte Klasse' (p36)",
+    "sections": [
+        {"no": "I", "kultur": "Acker", "pages": [35, 36]},
+        {"no": "II", "kultur": "Wiesen", "pages": [37]},
+        {"no": "III", "kultur": "Gärten (oznaka REVIEW)", "pages": [38]},
+        {"no": "IV", "kultur": "Gärten (oznaka REVIEW)", "pages": [38]},
+        {"no": "VI", "kultur": "Hutweiden", "pages": [38, 39]},
+        {"no": "VII", "kultur": "nadaljevanje (oznaka REVIEW)", "pages": [39]},
+    ],
+    "entries": [
+        {"page": 35, "section": "I Acker", "parcel_ref": "H 30", "joch": 1, "klafter": 1082,
+         "person_read": "Moritz Fluchs[?]", "reading_status": "TRANSCRIBED",
+         "evidence": "pz-n83/crops/p35-40-rekt/p35-nr30-5x.jpeg",
+         "note": "prvi vnos I. Acker; oklepaj [?] za priimkom"},
+        {"page": 36, "section": "I Acker", "parcel_ref": "H 594", "joch": 1, "klafter": 591,
+         "person_read": "Georg Kranjc", "reading_status": "TRANSCRIBED",
+         "evidence": "pz-n83/crops/p35-40-rekt/p36-nr594-5x.jpeg",
+         "note": "'nach Grüble Hö.N.45. zugehörig, zugewiesen'"},
+        {"page": 36, "section": "I Acker", "parcel_ref": "H 1004", "joch": 1, "klafter": 1010,
+         "person_read": "Moritz Brinz[?]", "reading_status": "TRANSCRIBED",
+         "evidence": "pz-n83/crops/p35-40-rekt/p36-nr1404-tall-4x.jpeg",
+         "note": "val 78: popravek vmesne domneve 1404/700 — 4× izrezek kaže 1004 / 1010"},
+        {"page": 37, "section": "II Wiesen", "parcel_ref": "H 738", "joch": 0, "klafter": None,
+         "person_read": "Miklos/Müller[?]", "reading_status": "REVIEW",
+         "evidence": "pz-n83/crops/p35-40-rekt/p37-nr738-5x.jpeg",
+         "note": "Klafter dvoumno (395/895[?]); parcela 738 jasna"},
+        {"page": 37, "section": "II Wiesen", "parcel_ref": "H 2451", "joch": 0, "klafter": None,
+         "person_read": "Moritz Plaberz[?]", "reading_status": "REVIEW",
+         "evidence": "pz-n83/crops/p35-40-rekt/p37-nr2451-5x.jpeg",
+         "note": "Klafter 1515/1575[?]; ista parcela kot vnos p38 (IV Gärten) — razdelitev rabe mogoča, ni vsiljena (§4)"},
+        {"page": 38, "section": "IV Gärten", "parcel_ref": "H 2451[?]", "joch": 0, "klafter": 260,
+         "person_read": "Moritz Plaberz[?]", "reading_status": "REVIEW",
+         "evidence": "pz-n83/crops/p35-40-rekt/p38-nr2451-5x.jpeg",
+         "note": "parcela 2451/2491[?]; Klafter 260 jasno"},
+        {"page": 39, "section": "VI Hutweiden", "parcel_ref": "H 2475→1288[?]", "joch": 1, "klafter": None,
+         "person_read": "Georg Kranjc → Joseph Milavec[?]", "reading_status": "REVIEW",
+         "evidence": "pz-n83/crops/p35-40-rekt/p39-nr2475-5x.jpeg",
+         "note": "revizijski vzorec: parcela 2475 prečrtana → 1288 zapisano nad; ime s popravkom; Klafter 589/549[?]"},
+    ],
+    "sum_check": {
+        "acker_entries_joch": 3,
+        "acker_entries_qklft": 3 * 1600 + 1082 + 591 + 1010,
+        "note": "Acker dodanki = 3 J 2683 K — NISO Δ 3 J 0 K F-PZ-04 (K-stolpci ne ustrezajo); per-parcelni vnosi NE razložijo razlike Summe → F-PZ-04 OSTAJA OPEN, nič vsiljeno (§4)",
+    },
+    "p27_flaechenraum": {
+        "title": "p27 — tabela z vrsticama 'Wiesen' + 'Daran von zugezogenen Gründen und Grundverkäufen'",
+        "status": "REVIEW",
+        "read": "številke ~39 | 95 | 6 v desnem delu + rdeči popravki (poševna rdeča črtica pod '6'); naslov in enote ostajajo nedoločeni @182 dpi",
+        "relevance": "vrstica 'Daran von zugezogenen …' potrjuje koncept dodankov (zugezogene Gründe) iz narativa p35–39; rešitev čaka @300 dpi",
+        "evidence": "pz-n83/crops/p35-40-rekt/p27-header-4x.jpeg + p27-table-3x.jpeg + p27-nums-4x.jpeg",
+    },
+}
+
+# fail-fast struktura Rektifikacije: 7 vnosov, števec statusov, strani v obsegu
+for _e in REKTIFIKACIJA_1830["entries"]:
+    if not (1 <= _e["page"] <= 71) or not _e["parcel_ref"] or _e["reading_status"] not in ("TRANSCRIBED", "REVIEW"):
+        fail(f"I-REKT struktura: napačen vnos {_e}")
+    if _e["reading_status"] == "TRANSCRIBED" and (_e["joch"] is None or _e["klafter"] is None):
+        fail(f"I-REKT: TRANSCRIBED vnos brez celih števil: {_e['parcel_ref']}")
+_rekt_t = sum(1 for _e in REKTIFIKACIJA_1830["entries"] if _e["reading_status"] == "TRANSCRIBED")
+_rekt_r = sum(1 for _e in REKTIFIKACIJA_1830["entries"] if _e["reading_status"] == "REVIEW")
+if (_rekt_t, _rekt_r) != (3, 4) or len(REKTIFIKACIJA_1830["entries"]) != 7:
+    fail(f"I-REKT števec: TRANSCRIBED {_rekt_t}/3, REVIEW {_rekt_r}/4, skupaj {len(REKTIFIKACIJA_1830['entries'])}/7")
+
 # strukturni zemljevid 71 strani (PREHOD 1, val 75; nespremenjen)
 STRUCTURE = [
     (1, "Naslovna: CATASTRAL-SCHÄTZUNGS-ELABORAT der Gemeinde Grüble, Land Krain, Kreis Neustadtl, Steuerbezirk Krupp, Schätzung District N°83"),
@@ -235,7 +340,7 @@ STRUCTURE = [
     (24, "§10 Weide und Waldnutzen"),
     (25, "Kulturdienstreibung-Elaborat — naslovna + formular"),
     (26, "Kulturdienstreibung — nadaljevanje (Flächenraum opis)"),
-    (27, "Flächenraum der Culturarten tabela + podpisi (val 77: p27 vsebuje ozko merilno prilogo 'niederösterreichisches Grundmaaß' — vsebina REVIEW)"),
+    (27, "Flächenraum tabela + podpisi (val 78: vrstici 'Wiesen' + 'Daran von zugezogenen Gründen und Grundverkäufen', številke ~39|95|6 + rdeči popravki — REVIEW; ozka merilna priloga 'niederösterreichisches Grundmaaß')"),
     (28, "§12 Beweidbare Grundoberflächen + podpis (april 1830[?])"),
     (29, "Zusammenstellung — naslovnica (Sand/Stein?)"),
     (30, "Zusammenstellung — velika ležeča tabela: NATURALNI PRIDELEK per classe (Metze/Centner/Eimer; val 77 1. prehod: Acker I Weizen 12/Korn 12/Gerste 26/Hafer 15/Mais 10; Acker II 9/9/18/10/7; Wiesen I Heu 14+6; Wiesen II 8; Weingärten 12 Eimer — 2. prehod čaka)"),
@@ -243,12 +348,12 @@ STRUCTURE = [
     (32, "Protocol — nadaljevanje: opis mejnih točk (Andern[?], Elend G'schaid[?], Lutzgrübl[?] …) + podpisi (9. marec 1830[?]) — F-PZ-05 material"),
     (33, "Adjunkt/pismo — nadaljevanje"),
     (34, "Protocol (2. seja) — ista žirija"),
-    (35, "Rektifikation 1830 — I. Acker (parcelne korekcije)"),
-    (36, "Rektifikation — Acker nadaljevanje"),
-    (37, "Rektifikation — II. Wiesen (+ Geory Brisko[?] podpis, pečat)"),
-    (38, "Rektifikation — III. Brach? Gärten / IV. Untere Gärten"),
-    (39, "Rektifikation — nadaljevanje (V/IX/XIV? sklici)"),
-    (40, "Rektifikacija zaključek — podpisi + pečat (5./28. april 1830[?])"),
+    (35, "Rektifikation 1830 — I. Acker: uvod + 1. merilni vnos H 30 = 1 J 1082 (val 78 TRANSCRIBED)"),
+    (36, "Rektifikation — I. Acker: H 594 = 1 J 591 + H 1004 = 1 J 1010 + rdeča nota 'Dritte Klasse' (val 78 TRANSCRIBED)"),
+    (37, "Rektifikation — II. Wiesen: H 738 + H 2451 (val 78 REVIEW) + podpis"),
+    (38, "Rektifikation — III/IV Gärten: H 2451[?] = – J 260 (val 78 REVIEW) + VI Hutweiden naslov"),
+    (39, "Rektifikation — VI Hutweiden: H 2475→1288 = 1 J 589/549 (val 78 REVIEW) + VII naslov"),
+    (40, "Rektifikacija zaključek — 'Kempt Grüble am 9. April 1830' (val 78) + podpisi žirije + pečat"),
     (41, "Podpisi (nadaljevanje) + datum"),
     (42, "EINWANDS-PROTOKOLL (ugovori) — pečat"),
     (43, "Kataster und Steuer Claffen — I. Classe Reinertragstabelle (parcele)"),
@@ -384,8 +489,8 @@ area_red_m2 = round(pz_red * M2_PER_QKLFT)
 area_pv_m2 = round(pv * M2_PER_QKLFT)
 
 data = {
-    "val": 77,
-    "pass": "PZ PASS 2 (odločilni re-read p67 + §8, aritmetična vrata I4–I6, deleži 1830)",
+    "val": 78,
+    "pass": "PZ PASS 3 (Rektifikacija p35–40 per-parcelna kontrola; F-PZ-04 negativni rezultat; deleži 1830 nespremenjeni)",
     "issue": 42,
     "deterministic": True,
     "title": "PZ N83 — Katastral-Schätzungs-Elaborat (Konskripcija) 1828/30 [373419]",
@@ -395,6 +500,7 @@ data = {
             "PREHOD 1 (val 75): struktura — 8 kontaktnih plošč (sheets/) × 9 strani",
             "PREHOD 2 (val 75): ključna branja digit-by-digit 2,6×–5× (crops/ + z-*.jpeg dokazni izrezki)",
             "PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na dvomljive celice + direktni odtis avtorja transkripcije; aritmetična vrata I4–I6 odločijo vsako dvomljivo števko",
+            "PREHOD 4 (val 78): Rektifikacija p35–40 — narativni protokol, 7 per-parcelnih merilnih vnosov (3 TRANSCRIBED + 4 REVIEW; crops/p35-40-rekt/), p27 Wiesen/zugezogene tabela REVIEW; F-PZ-04 kontrola: negativni rezultat, nič vsiljeno",
         ],
         "native_scans": "pz-n83/native/p01–p71.jpeg (pymupdf, metoda val 56)",
         "deterministic": True,
@@ -411,7 +517,7 @@ data = {
             "population_reference": 1830,
             "population_reference_source": "§3: 'Auf den Conscriptioins-Revisions-Resultaten vom Jahre 1830' (p2)",
             "nachtrag": "5. marec 1829[?] / 27. marec 1829[?] (p70–71)",
-            "protocols": "9. marec 1830[?] / 5. april 1830[?] / 28. april 1830[?] (p32/40/41); komuniciranje 1830 (p48)",
+            "protocols": "9. marec 1830[?] (p32); Rektifikacija 9. April 1830 (p40, val 78 direktni odtis — prej 5. april[?]); podpisi p41[?]; komuniciranje 1830 (p48)",
             "label": "Konskripcija 1830 (delovno po val 42/74); dokument obsega 1828/29–1830",
         },
     },
@@ -448,7 +554,7 @@ data = {
             "closes": summa_delta_qklf == 0,
             "klafter_column_closes": rows_k % KLFT_PER_JOCH == ENDRESULTAT_SUMMA["klafter"],
             "status": "OPEN" if summa_delta_qklf != 0 else "CLOSES",
-            "note": "val 77: Δ = 3 J EXACT (4.800 QKlft; val 75: 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495); Joch stolpac Summe ostaja 3 J nad vsoto vrstic — pisarjevska nekonsistentnost ali neobjavljena korekcija; nič se ne vsiljuje (§4); rešitvene poti: Rektifikacija p35–40 per-parcelna kontrola, p30/p63/p65 ležeče tabele @300 dpi",
+            "note": "val 77: Δ = 3 J EXACT (4.800 QKlft; val 75: 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495); Joch stolpec Summe ostaja 3 J nad vsoto vrstic — pisarjevska nekonsistentnost ali neobjavljena korekcija; nič se ne vsiljuje (§4). val 78: Rektifikacija p35–40 kontrola NE razloži Δ (Acker dodanki 3 J 2683 K ≠ 3 J 0 K); rešitvene poti: p30/p63/p65 ležeče tabele @300 dpi",
         },
         "evidence": "pz-n83/z-endresultat.jpeg + crops/p67-area/*.jpeg + crops/p67-rows/*.jpeg (val 77)",
     },
@@ -462,6 +568,7 @@ data = {
         "note": "1825 PV primerjava (val 74): pašniki 52,06 % / njive 33,84 % / travniki 7,3 % / vinogradi 0,61 %; 1830 PZ: pašniške kategorije (Hutweiden + Weiden mit Holznutzen) 55,43 % / njive 33,96 % / travniki 3,73 % / vinogradi 0,58 %",
     },
     "weingaerten": WEINGAERTEN,
+    "rektifikacija_1830": REKTIFIKACIJA_1830,
     "structure_map": [{"page": p, "content": c} for p, c in STRUCTURE],
     "findings": [
         {
@@ -486,7 +593,7 @@ data = {
             "id": "F-PZ-04",
             "title": "Endresultat p67: Summa se ne sešije z vrsticami 1–8 (val 77: Δ ožjan na 3 Joch)",
             "status": "OPEN",
-            "detail": f"val 77 odločilni re-read celic popravlja val-75 branja: Summa = 1152 J 495 K (prej 1132), vrstice 1–8 = {rows_j} J {rows_k} K = {rows_total_qklf:,} QKlft (GG 405, WmH Klf 558, Bauarea 1199, Wiesen I = 5 po I5) → Δ = 3 Joch = {summa_delta_qklf:,} QKlft NATANČNO (prej 43.488). Klf stolpec se zapire (495 = 495). Odprto: pisarjevska nekonsistentnost Joch stolpca Summe (ali neobjavljena korekcija). Nič se ne vsiljuje (§4); rešitvene poti: Rektifikacija p35–40, p30/p63/p65 @300 dpi",
+            "detail": f"val 77 odločilni re-read celic popravlja val-75 branja: Summa = 1152 J 495 K (prej 1132), vrstice 1–8 = {rows_j} J {rows_k} K = {rows_total_qklf:,} QKlft (GG 405, WmH Klf 558, Bauarea 1199, Wiesen I = 5 po I5) → Δ = 3 Joch = {summa_delta_qklf:,} QKlft NATANČNO (prej 43.488). Klf stolpec se zapire (495 = 495). Odprto: pisarjevska nekonsistentnost Joch stolpca Summe (ali neobjavljena korekcija). Nič se ne vsiljuje (§4). VAL 78 KONTROLA (Rektifikacija p35–40): 7 per-parcelnih merilnih vnosov prepisanih (3 TRANSCRIBED + 4 REVIEW); Acker dodanki = 3 J 2683 K (1 J 1082 + 1 J 591 + 1 J 1010) — NISO Δ 3 J 0 K → razlika Summe NI razložena s per-parcelnimi vnosi; p27 vrstica 'Daran von zugezogenen Gründen und Grundverkäufen' (REVIEW) potrjuje koncept dodankov; ostajajo p30/p63/p65 @300 dpi. F-PZ-04 OSTAJA OPEN",
         },
         {
             "id": "F-PZ-05",
@@ -542,6 +649,12 @@ data = {
             "status": "RESOLVED",
             "detail": "Deleži iz vrat-solidnih vrstic nad Total 1220 J 1493 K: njive (Aecher) 33,96 % · pašniške kategorije (Hutweiden 9,70 % + Weiden mit Holznutzen 45,73 %) 55,43 % · travniki (Wiesen) 3,73 % · vinogradi 0,58 % · vrtovi 0,30 % · Bauarea 0,14 % · unbenützbar 5,87 % (izpeljano I6) — vsota 1.953.493 QKlft EXACT. Objavljeno v pz-konskripcija-1830.json; timeline UI 'pasture_share' ostaja absent dokler je F-PZ-04 OPEN (pogodba val 76)",
         },
+        {
+            "id": "F-PZ-14",
+            "title": "NOVO (val 78): Rektifikacijski protokol 1830 (p35–40) — per-parcelna kontrola F-PZ-04, negativni rezultat",
+            "status": "RESOLVED",
+            "detail": "p35–40 = narativni Rektifikacijski protokol 1830 ('Kempt Grüble am 9. April 1830', p40 + pečat): opisi kultur po sekcijah I Acker / II Wiesen / III+IV Gärten / VI Hutweiden + 7 merilnih vnosov 'Bei Messung wird die Auszelle H <št> mit <št> Joch <št> □Klf und <oseba> nach Grüble ... zugewiesen'. Prepis (3 TRANSCRIBED + 4 REVIEW; izrezki crops/p35-40-rekt/ 2–5×, VLM A/B/C + direktni odtis): H 30 = 1 J 1082 (Moritz Fluchs[?]); H 594 = 1 J 591 (Georg Kranjc); H 1004 = 1 J 1010 (Moritz Brinz[?]); H 738 = – J 8?5[?] (Miklos/Müller[?]); H 2451 = – J 1515/1575[?] (M. Plaberz[?]); H 2451[?] = – J 260 (IV Gärten); H 2475→1288[?] = 1 J 589/549[?] (G. Kranjc → Joseph Milavec[?]). F-PZ-04 KONTROLA: Acker dodanki 3 J 2683 K ≠ Δ 3 J 0 K → razlika Summe NI razložena; F-PZ-04 OSTAJA OPEN. p27 'Daran von zugezogenen Gründen und Grundverkäufen' (REVIEW) potrjuje koncept dodankov. Osebe = sosednji posestniki — NI KG PERSON vozlišč (§5); vnosi NE izpeljujejo per-parcelnih trditev o rabah (§4)",
+        },
     ],
     "invariants_enforced": [
         "I1 prebivalstvo 222+219=441 (fail-fast)",
@@ -567,4 +680,5 @@ print(f"  I5 Wiesen: 45 J 812 K (I = 5 J izpeljano) ✓")
 print(f"  I6 Total: {rows_j} J {rows_k} K + 71 J 998 K = 1220 J 1493 K ✓")
 print(f"  Summa check: OPEN (Δ {summa_delta_joch} J {summa_delta_klafter} K = {summa_delta_qklf:,} QKlft — F-PZ-04)")
 print(f"  deleži: njive {shares[0]['pct_of_total']} % · pašniške {shares[5]['pct_of_total']+shares[6]['pct_of_total']:.2f} % · travniki {shares[1]['pct_of_total']} % · vinogradi {shares[4]['pct_of_total']} %")
+print(f"  Rektifikacija: 7 vnosov (3 TRANSCRIBED + 4 REVIEW); Acker dodanki 3 J 2683 K \u2260 \u0394 3 J 0 K \u2014 F-PZ-04 OPEN")
 print(f"  najdbe: {len(data['findings'])} (RESOLVED {sum(1 for x in data['findings'] if x['status']=='RESOLVED')}, PARTIAL {sum(1 for x in data['findings'] if x['status']=='PARTIAL')}, REVIEW {sum(1 for x in data['findings'] if x['status']=='REVIEW')}, OPEN {sum(1 for x in data['findings'] if x['status']=='OPEN')}, TO_VERIFY {sum(1 for x in data['findings'] if x['status']=='TO_VERIFY')})")

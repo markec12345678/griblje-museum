@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Tukaj je transkripcija strani iz katastrskega ocenitvenega elaborata za občino **Grüble (Griblje)**, leta **1830**.\n\n**Opomba:** Na tej strani ni prisotnih vrstic s številskimi podatki tipa *„Nr. X mit Y Joch Z“* ali *„Auszelle Nr. ...“*. Stran vsebuje zaključni zapis, seznam prisotnih (podpisnikov), potrditev komisije in podpise uradnikov.\n\n---\n\n### Transkripcija (originalno besedilo v nemščini)\n\n```\ni.P. und Einen den Einwohnern nosiborn\nneben zu mittheilen, wannin das Gme.\nscholl zusammen, und gezeichnet.\n\nKanzl Grüble am 9.ten Augußt 1830\n\nLorenz Robas Landwirth\n    Gmünd\nGeorg Poppay Gemeindigl.\nJohann Mallyfäß\nGeorg Brügger\nMichl Wurmb\nGeorg Stang\nMartin Paulitschig\nMatz. Juratschig\nLorenz Jauonig\nBartolomey Jamnik\n\nGegenwärt! und als Zeugen befunden!\nS.S. Schätzung-Commission in Grüble den 20.ten\n1830.\n\nOber Nenndorff\nS.S. Schätzungs-Direktor\n\nwiele Nachtrag\n```\n\n---\n\n### Slovenski prevod in pojasnilo struktur\n\n1.  **Zaključni stavek (vrhnji del):**\n    *   *„i.P. und Einen den Einwohnern nosiborn neben zu mittheilen, wannin das Gme. scholl zusammen, und gezeichnet.“*\n    *   Pomeni: Protokol (ali izvod) se preda/oznaničuje meščanom naselja **Nosiborn** (verjetno staro ime za Griblje ali bližnjo vas), ko se občina (*Gme.* = *Gemeinde*) skupaj zbira in (dokument) podpiše/označi.\n\n2.  **Datum in kraj izdelave:**\n    *   *„Kanzl Grüble am 9.ten Augußt 1830“* – Kancelarija Grüble, 9. avgust 1830.\n\n3.  **Seznam prisotnih meščanov/podpisnikov (z leve proti desni):**\n    *   Lorenz Robas, kmet (*Landwirth*) iz Gmunda\n    *   Georg Poppay, župan (*Gemeindigl.* = *Gemeindeglied* / občinski član)\n    *   Johann Mallyfaß\n    *   Georg Brügger\n    *   Michl Wurmb\n    *   Georg Stang\n    *   Martin Paulitschig\n    *   Matz (Matej) Juratschig\n    *   Lorenz Jauonig\n    *   Bartolomey Jamnik\n\n4.  **Potrditev komisije:**\n    *   *„Gegenwärt! und als Zeugen befunden! S.S. Schätzung-Commission in Grüble den 20.ten [August] 1830.“*\n    *   Prisotni in kot priče ugotovljeno! Komisija za ocenjevanje (katastrska) v Grüble, 20. [avgusta] 1830.\n\n5.  **Podpisi uradnikov:**\n    *   **Ober Nenndorff** – verjetno *Ober-Nenndorff* (priimek) ali *Obernenndorff*, funkcija ni navedena (verjetno član komisije).\n    *   **S.S. Schätzungs-Direktor** – Direktor ocenitvene komisije (podpisano kot *S.S.*, kar je verjetno kratica za ime, npr. *Simon/Sigmund Sch...*).\n\n6.  **Dodatek:**\n    *   *„wiele Nachtrag“ – velik dodatek / številni dodatki (napoved nadaljevanja na naslednjih straneh).\n\n---\n\n### Pregled številskih podatkov (po vaši zahtevi)\n\nNa tej strani **ni prisotnih** vrstic s parcelnimi števili (*Nr.*), merami za zemljo (*Joch*) ali dolžinskimi merami (*Klafter*). Edina števila so datumi:\n\n*   **[Vrstica 3]** Datum: **9** (deveti dan)\n*   **[Vrstica 16]** Letnica: **1830**\n*   **[Vrstica 17]** Datum: **20** (dvajseti dan)\n*   **[Vrstica 18]** Letnica: **1830**\n\nČe iščete podatke o parcelah (tabelarični del z *Joch* in *Klafter*), se najverjetneje nahajajo na **prejšnjih straneh** tega dokumenta (npr. sekcije I Acker, II Wiesen itd.). Ta stran je končna potrditvena stran (signatura).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790449753,
+  "id": "20260927030836bf4b45a87eb3495a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927030836bf4b45a87eb3495a",
+  "usage": {
+    "completion_tokens": 1227,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3688,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4915
+  }
+}
