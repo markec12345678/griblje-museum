@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v1.6 (val 74 — PV agregat prepisan) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("809ef581c7cf4cf3")).toBe(true);
+  test("provenanca kaže na KG v1.7 (val 75 — PZ Konskripcija delno prepisana) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("b150db193957e173")).toBe(true);
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -216,7 +216,7 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(c.PARTIAL).toBe(26);
   });
 
-  test("viri: 13 SOURCE nodes (10 VERIFIED, 3 PARTIAL — PR/PG/PZ brez prepisa; PV prepisan val 74)", () => {
+  test("viri: 13 SOURCE nodes (10 VERIFIED, 3 PARTIAL — PR/PG brez prepisa; PZ delni prepis val 75; PV prepisan val 74)", () => {
     const c = byId("sources");
     expect(c.total).toBe(13);
     expect(c.VERIFIED).toBe(10);
@@ -283,8 +283,8 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       expect(existsSync(p)).toBe(true);
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
-      // pv-land-use-1825.json (val 74) + drugi izpeljani artefakti nosijo svoj val
-      expect([72, 74]).toContain(d.val);
+      // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 75) + izpeljani artefakti nosijo svoj val
+      expect([72, 74, 75]).toContain(d.val);
     }
   });
 
