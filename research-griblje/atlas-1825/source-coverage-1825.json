@@ -1,5 +1,5 @@
 {
- "val": 72,
+ "val": 74,
  "pass": "PASS 8",
  "issue": 42,
  "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.5 + registrov)",
@@ -56,7 +56,7 @@
    "uodid": 373418,
    "docid": 41783,
    "pages": 1,
-   "status": "PARTIAL"
+   "status": "VERIFIED"
   },
   {
    "source_id": "SRC-PZ",
@@ -132,20 +132,26 @@
    "rows": 100,
    "passes": 2,
    "note": "+ p8 Musterstellung"
+  },
+  "PV": {
+   "pages": 1,
+   "rows": 19,
+   "passes": 2,
+   "note": "val 74: uradne agregatne površine po kulturah (1221 J 1573 K = 7,032 km²), aritmetična vrata I1–I4; NI raba po parcelah (§4)"
   }
  },
  "six_status": {
-  "VERIFIED": 9,
-  "PARTIAL": 4,
+  "VERIFIED": 10,
+  "PARTIAL": 3,
   "CONFLICT": 0,
   "UNKNOWN": 0,
   "NOT_FOUND": 0
  },
  "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
  "next_reads": [
-  "PS p56–143 ponovna meritev ob kvoti",
+  "PS p56–143 ponovna meritev ob kvoti (raba po parcelah; PV dokazuje vinograde 7 J 665 K — F-PV-03)",
   "PT p7 @300dpi (KG-F01/F04)",
   "PR Grenz-Beschreibung (mejne točke)",
-  "PV prepis rabe (2035 parcel)"
+  "PZ Konskripcija 1830 (razreši F-PV-02 gozd napetost)"
  ]
 }

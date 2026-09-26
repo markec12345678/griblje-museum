@@ -1,0 +1,438 @@
+{
+ "val": 74,
+ "pass": "PV-1",
+ "issue": "#42 §4/§14",
+ "title": "PV N83 — Izkaz rabe zemljišč (Ausweis über die Benützungsart des Bodens für die Gemeinde Grüble), 1825",
+ "method": {
+  "rules": [
+   "PV = uradni AGREGAT po kulturah za celotno k.o. Grüble — NIKOLI raba posamezne parcele (§4)",
+   "2 neodvisna bralna prehoda (preview + nativni sken 2139×1435); aritmetična vrata odločajo dvomljive kurrentske števke (dokumentirano)",
+   "prazne celice = tiskana pika ('.') → 0, NE neznano",
+   "fail-fast invarianti I1–I4: vsota I, vsota II, velika vsota, deleži = 100 %"
+  ],
+  "reading_passes": 2,
+  "arithmetic_gates": {
+   "gemuese_garten_klafter": "133 (ne 193) — sicer se vsota I ne zapre",
+   "wein_garten_joch": "7 (ne 5) — sicer se vsota I ne zapre",
+   "weg_parzellen_klafter": "1127; bau_parzellen_klafter: 889 — sicer se vsota II ne zapre",
+   "grand_total_joch": "1221 (ne 1225) — sicer se I+II ne zapre"
+  }
+ },
+ "provenance": {
+  "source": "SRC-PV (N083PV Izkaz rabe zemljišč)",
+  "uodid": 373418,
+  "docid": 41783,
+  "pages": 1,
+  "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418",
+  "page_stamp": "svinčnik 93, tisk 'III. O.' (zgoraj desno)",
+  "header": {
+   "provinz": "Illyrien",
+   "kreis": "Neustadtl",
+   "district": "Krupa",
+   "gemeinde": "Grüble",
+   "gemeinde_no_written": "4"
+  },
+  "date_written": "am 10ten Jänner 18[25] (kraj izdaje: kurrentni zapis UNCERTAIN, začetnica M/G — ni interpretirano)",
+  "cross_check_date": "PUA p49 'um 10. Januar 1825' (val 51/56) — isti dan",
+  "raw": "research-griblje/pv-n83/ (N083PV.pdf + PV-p1-native.jpeg 2139×1435 + izrezki)",
+  "reading_date": "2026-09-26"
+ },
+ "totals": {
+  "table1_written": {
+   "joch": 1148,
+   "klafter": 539,
+   "label": "Ganz-Aren der Gemeinde (tabela I: kulture)"
+  },
+  "table2_written": {
+   "joch": 73,
+   "klafter": 1034,
+   "label": "vsota tabela II (nerodovitno + posebno)"
+  },
+  "grand_written": {
+   "joch": 1221,
+   "klafter": 1573,
+   "label": "Area der ganzen Gemeinde"
+  },
+  "grand_quadrat_klafter": 1955173,
+  "grand_m2": 7032073.0,
+  "grand_km2": 7.032,
+  "conversion": {
+   "klafter_m": 1.8965,
+   "qklft_m2": 3.59665,
+   "joch_m2": 5754.64
+  }
+ },
+ "table1_kulturen": [
+  {
+   "key": "gemuese_garten",
+   "original": "Gemüse-Gärten",
+   "sl": "zelenjavni vrtovi",
+   "joch": 2,
+   "klafter": 133,
+   "quadrat_klafter": 3333,
+   "m2": 11987.6,
+   "share_pct": 0.17,
+   "transcribed": true
+  },
+  {
+   "key": "obst_garten",
+   "original": "Obst-Gärten",
+   "sl": "sadni vrtovi",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "zier_garten",
+   "original": "Zier-Gärten",
+   "sl": "okrasni vrtovi",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "wein_garten",
+   "original": "Wein-Gärten",
+   "sl": "vinogradi",
+   "joch": 7,
+   "klafter": 665,
+   "quadrat_klafter": 11865,
+   "m2": 42674.3,
+   "share_pct": 0.61,
+   "transcribed": true
+  },
+  {
+   "key": "hopfen_garten",
+   "original": "Hopfen-Gärten",
+   "sl": "hmeljišča",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "wiesen",
+   "original": "Wiesen",
+   "sl": "travniki",
+   "joch": 76,
+   "klafter": 1480,
+   "quadrat_klafter": 123080,
+   "m2": 442675.7,
+   "share_pct": 6.3,
+   "transcribed": true
+  },
+  {
+   "key": "wiesen_mit_obstgaerten",
+   "original": "Wiesen mit Obstgärten",
+   "sl": "travniki s sadnim drevjem",
+   "joch": 12,
+   "klafter": 328,
+   "quadrat_klafter": 19528,
+   "m2": 70235.4,
+   "share_pct": 1.0,
+   "transcribed": true
+  },
+  {
+   "key": "weiden",
+   "original": "Weiden",
+   "sl": "pašniki",
+   "joch": 636,
+   "klafter": 263,
+   "quadrat_klafter": 1017863,
+   "m2": 3660897.0,
+   "share_pct": 52.06,
+   "transcribed": true
+  },
+  {
+   "key": "sumpfe",
+   "original": "Sümpfe",
+   "sl": "močvirja",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "sumpfe_mit_rohrwuchs",
+   "original": "Sümpfe mit Rohrwuchs",
+   "sl": "močvirja s trstjem",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "aecher",
+   "original": "Äcker",
+   "sl": "njive",
+   "joch": 413,
+   "klafter": 870,
+   "quadrat_klafter": 661670,
+   "m2": 2379795.4,
+   "share_pct": 33.84,
+   "transcribed": true
+  },
+  {
+   "key": "aecher_mit_obstbaeumen",
+   "original": "Äcker mit Obstbäumen",
+   "sl": "njive s sadnim drevjem",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "aecher_mit_oelbaeumen",
+   "original": "Äcker mit Öl bäumen",
+   "sl": "njive z oljkami",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "aecher_mit_weinreben",
+   "original": "Äcker mit Weinreben",
+   "sl": "njive z vinsko trto",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "aecher_mit_baeumen_und_weinreben",
+   "original": "Äcker mit Bäumen und Weinreben",
+   "sl": "njive z drevjem in trto",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  }
+ ],
+ "table2_sonder": [
+  {
+   "key": "reisfelder",
+   "original": "Reisfelder",
+   "sl": "riževa polja",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "geestruecke",
+   "original": "Geestrücke",
+   "sl": "nerodovitna tla",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "waelder",
+   "original": "Wälder",
+   "sl": "gozdovi",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "schotter_und_sandgruben",
+   "original": "Schotter und Sandgruben",
+   "sl": "grušč in peskomerice",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "lehmgruben",
+   "original": "Lehmgruben",
+   "sl": "glinske jame",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "steinbrueche",
+   "original": "Steinbrüche",
+   "sl": "kamnolomi",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "torfstiche",
+   "original": "Torfstiche",
+   "sl": "šotne jame",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "nakte_felsen",
+   "original": "Nackte Felsen",
+   "sl": "gole skale",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "oedungen",
+   "original": "Ödungen",
+   "sl": "opuščena zemljišča",
+   "joch": 1,
+   "klafter": 476,
+   "quadrat_klafter": 2076,
+   "m2": 7466.6,
+   "share_pct": 0.11,
+   "transcribed": true
+  },
+  {
+   "key": "fluesse_oder_baeche",
+   "original": "Flüsse oder Bäche",
+   "sl": "reke ali potoki",
+   "joch": 21,
+   "klafter": 142,
+   "quadrat_klafter": 33742,
+   "m2": 121358.2,
+   "share_pct": 1.73,
+   "transcribed": true
+  },
+  {
+   "key": "seen_oder_teiche",
+   "original": "Seen oder Teiche",
+   "sl": "jezera ali ribniki",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "meer_salinen",
+   "original": "Meer, Salinen",
+   "sl": "morje, soline",
+   "joch": 0,
+   "klafter": 0,
+   "quadrat_klafter": 0,
+   "m2": 0.0,
+   "share_pct": 0.0,
+   "transcribed": false
+  },
+  {
+   "key": "weg_parzellen",
+   "original": "Weg-Parzellen",
+   "sl": "cestne parcele",
+   "joch": 46,
+   "klafter": 1127,
+   "quadrat_klafter": 74727,
+   "m2": 268766.9,
+   "share_pct": 3.82,
+   "transcribed": true
+  },
+  {
+   "key": "bau_parzellen",
+   "original": "Bau-Parzellen",
+   "sl": "stavbne parcele",
+   "joch": 4,
+   "klafter": 889,
+   "quadrat_klafter": 7289,
+   "m2": 26216.0,
+   "share_pct": 0.37,
+   "transcribed": true
+  }
+ ],
+ "summary": {
+  "documented_cells": 10,
+  "zero_cells": 19,
+  "top3_by_area": [
+   {
+    "key": "weiden",
+    "sl": "pašniki",
+    "share_pct": 52.06
+   },
+   {
+    "key": "aecher",
+    "sl": "njive",
+    "share_pct": 33.84
+   },
+   {
+    "key": "wiesen",
+    "sl": "travniki",
+    "share_pct": 6.3
+   }
+  ]
+ },
+ "findings": [
+  {
+   "id": "F-PV-01",
+   "status": "RESOLVED-V74",
+   "statement": "Transkripcija zaključena z aritmetičnimi vrati na vseh treh nivojih (vsota I 1148|539, vsota II 73|1034, velika 1221|1573 — vse točne)."
+  },
+  {
+   "id": "F-PV-02",
+   "status": "OPEN",
+   "statement": "NAPETOST (§14, ostaja vidna): PV poroča Wälder = 0, PS (delni 55/143) pa vsebuje 13 parcel z rabo 'Wald'. Razlaga ni dokazana (možne: Weidewald pod Weiden, majhne površine pod Ödungen, ali PS kontekst prepisa). NI tiho razrešeno; resolucija = PS p56–143 + PZ (Konskripcija 1830)."
+  },
+  {
+   "id": "F-PV-03",
+   "status": "DOKAZ-ZA-RE-READ",
+   "statement": "Vinogradi: PV dokazuje 7 J 665 K ≈ 4,27 ha (0,61 %) — v prepisanih PS p1–55 NI ENE 'Weingarten' parcele → PS p56–143 MORAJO vsebovati vinogradne parcele (napoved za re-read; falsifikabilna)."
+  },
+  {
+   "id": "F-PV-04",
+   "status": "NOVA-TRDA-STEVILKA",
+   "statement": "Bau-Parzellen 4 J 889 K ≈ 26.216 m² = uradni agregat stavbnih parcel k.o. Grüble 1825 (§15 model: brez geometrije, ampak uradna vsota obstaja)."
+  },
+  {
+   "id": "F-PV-05",
+   "status": "STRUKTURA",
+   "statement": "Weiden 636 J 263 K = 52,08 % površine Gemeinde (≈ 3,66 km²) — kraška pašniška struktura, skladna s PUA so-referenciranimi skupnimi parcelami (val 60: 417 parcel v več hišah)."
+  }
+ ],
+ "generated_at": "2026-09-26T09:44:12Z",
+ "deterministic": true
+}
