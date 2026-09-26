@@ -3596,3 +3596,21 @@ Stage Summary:
 - ATLAS 1825: PV [373418] PREPISAN z aritmetičnimi vrati — uradni agregat rabe 1825 (7,032 km²; pašniki 52 %) je nov dokaz; viri: 10/13 VERIFIED
 - KG v1.6 (val 74); 453 testov + 95/95 dimnih; §22 pogodba deluje (story_id sprememba po kg_sha256)
 - Naslednje: 1) push val 74 + poročilo #42 + deploy verifikacija; 2) PS p56–143 re-read (88 strani, F-PV-03 vinogradi); 3) PZ Konskripcija 1830 [373419] — javno dostopen, razreši F-PV-02 + prebivalstvo 1830 (§20 time slider prvi korak); 4) PT p7 @300dpi; 5) izven peskovnika šolski list/SA Podzemelj/SI AS 749
+
+---
+Task ID: 33
+Agent: Z.ai Code (main orchestrator)
+Task: Push+merge val 74 (PR #62) + poročilo #42 + deploy verifikacija (user: "odlicno nadaljuj kjer si ostal")
+
+Work Log:
+- Analiza stanja po resetu peskovnika: repo sveže kloniran; main @ e9a36b1 (val 73, PR #61 merged); branch feat/val74-pv-land-use @ 2c8e987 ŽE NA ORIGINU (vsebina vala 74 dokončana v prejšnji seji, worklog Task 32; PR še ni obstajal) — točka, kjer je bilo ostalo = worklog Task 32 "Naslednje 1) push val 74 + poročilo #42 + deploy verifikacija"
+- PR #62 ustvarjen (feat/val74-pv-land-use → main) — CI 3/3 ZELENO: dimni testi API-jev (živi strežnik + PostgreSQL) ✓ · tipi+lint+enotni ✓ · Vercel Preview ✓
+- MERGE: PR #62 → main @ 80596ee (merge commit, kot vzorec prejšnjih valov); main sinhroniziran lokalno+remote; branch feat/val74-pv-land-use izbrisan (remote 204)
+- Poročilo #42: comment-5845414736 (val 74: PV [373418] prepisan z aritmetičnimi vrati; 1221 J 1573 K ≈ 7,032 km²; pašniki 52,06 %; F-PV-01–05; KG v1.6; 453/453 testov; 95/95 dimnih)
+- DEPLOY VERIFIKACIJA: Vercel produkcija READY na 80596ee — /api/atlas/coverage → val: 74, pass: PASS 8, deterministic: true; ?category=sources → total 13, statusi {VERIFIED: 10, PARTIAL: 3}, SRC-PV (uodid 373418, docid 41783, pages 1) VERIFIED ✓; /api/atlas/story?scope=village vsebuje "PV [373418] prepisan (val 74): uradne agregatne površine po kulturah (skupaj 1221 J 1573 K" ✓; /api/health 200 — Render mirror (griblje-museum.onrender.com): /api/health 200, coverage val: 74 ✓, story village val 74 besedilo ✓ — VSE TRI PLATFORME SINHRONIZIRANE z val 74 (drugič zapored brez kvota gapa)
+- Metodološka opomba: API poročanje z grepom --data-urlencode nad JSON API-jem vrne 400 "Problems parsing JSON" — pošiljanje prek Python urllib z JSON payloadom (vzorec za prihodnje poročila)
+
+Stage Summary:
+- GitHub main @ 80596ee = val 74 · Vercel produkcija val 74 ŽIV · Render mirror val 74 ŽIV
+- 453 testov + 95/95 dimnih; KG v1.6 (3.309/3.569/622, SRC-PV TRANSCRIBED, kg_sha256 809ef581); viri 10/13 VERIFIED
+- Naslednje: 1) PZ Konskripcija 1830 [373419] — javno dostopen, razreši F-PV-02 + prebivalstvo 1830 (§20 time slider prvi korak); 2) PS p56–143 re-read (88 strani, F-PV-03 vinogradi); 3) PT p7 @300dpi; 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
