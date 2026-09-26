@@ -710,9 +710,9 @@ def main():
     }
 
     out = {
-        "val": 68,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6",
-        "title": "knowledge-graph-1825 v1.4",
+        "val": 72,
+        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2",
+        "title": "knowledge-graph-1825 v1.5",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -761,6 +761,13 @@ def main():
                 "statement": "PASS 6 invariant je ujel kršitev claim-first arhitekture: relacija IS_GEMEINDE_OF (TP-001 → TP-003) je bila brez claima, story atom SA-004 pa brez claim_ids (§43 §8/§11: zgodba brez claim povezav ni dovoljena). v1.4: dodan claim C-00622 (subject TP-001, IS_GEMEINDE_OF, TP-003, source SRC-A01; vire SRC-A01/PT/PS nosi relacija), SA-004 povezana nanj. Nič prejšnjih claim ID-jev se ne premakne (claim je zadnji v vrsti).",
                 "status": "RESOLVED-V68",
                 "provenance": "story-graph-1825.json invariant build (val 68); issue #43 §3/§8/§11",
+            },
+            {
+                "finding_id": "KG-F08",
+                "val": 72,
+                "statement": "GEOREF PASS v2 (#42 §10): skala val 52–71 ('320 Klafter = 277 px → 2,19 m/px') je mešala ločljivosti raster-ov — 277 px je merjeno na polni ločljivosti VAČ IIIF, delovni raster je ~3,3× manjši. Prava skala ≈ 0,7307 m/px (reka Kolpa: 351 točk, trim-RMS 38 m; validacija: v65 stavbe mediana 17 m, prior 20 m do sodobnih stavb). v1.5: MO-A01 lat/lng + georef_status preko v2 similaritete (skala + rotacija 0,88° + prevod); overlay prek robov rastra. Claims/edges/story atomi NESPREMENJENI (nič ID-jev se ne premakne); story_id se spremeni po §22 pogodbi (kg_sha256 spremenjen = podatek spremenjen = zgodba označena kot spremenjena).",
+                "status": "RESOLVED-V72 (odprta: F-GEO-03 hišne številke, F-GEO-04 listno merilo @300 dpi)",
+                "provenance": "research-griblje/atlas-1825/georef-1825.json + build-georef-1825.py (val 72); raw-web-val72-2026-10/ (Overpass 2026-09-26)",
             },
         ],
         "provenance": {

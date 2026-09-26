@@ -1,0 +1,5236 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-26T06:32:07Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 468486735,
+  "lat": 45.5893547,
+  "lon": 15.2772842,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "55",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "amenity": "restaurant",
+    "name": "Gostišče Kapušin",
+    "phone": "+386 (7) 369 91 50",
+    "ref:gurs:hs_mid": "13341729",
+    "source:addr": "GURS",
+    "tourism": "guest_house",
+    "website": "https://gostilna-kapusin.si/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133829,
+  "lat": 45.5751813,
+  "lon": 15.2614610,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2002-10-08"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133830,
+  "lat": 45.5761548,
+  "lon": 15.2646304,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "22",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133831,
+  "lat": 45.5778628,
+  "lon": 15.2653817,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "15",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133832,
+  "lat": 45.5742114,
+  "lon": 15.2645444,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "24A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2013-02-28"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133833,
+  "lat": 45.5767558,
+  "lon": 15.2654533,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133834,
+  "lat": 45.5774119,
+  "lon": 15.2657896,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133835,
+  "lat": 45.5757935,
+  "lon": 15.2652309,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133836,
+  "lat": 45.5740959,
+  "lon": 15.2639160,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "28",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133837,
+  "lat": 45.5751724,
+  "lon": 15.2653049,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2015-05-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133838,
+  "lat": 45.5782052,
+  "lon": 15.2651654,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "20",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133839,
+  "lat": 45.5750287,
+  "lon": 15.2652017,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133840,
+  "lat": 45.5748066,
+  "lon": 15.2639578,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133841,
+  "lat": 45.5746072,
+  "lon": 15.2646103,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "23",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133842,
+  "lat": 45.5763162,
+  "lon": 15.2610050,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3A",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2014-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133843,
+  "lat": 45.5762864,
+  "lon": 15.2622349,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133844,
+  "lat": 45.5761023,
+  "lon": 15.2640023,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133845,
+  "lat": 45.5754515,
+  "lon": 15.2613725,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133846,
+  "lat": 45.5764844,
+  "lon": 15.2621846,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133847,
+  "lat": 45.5772570,
+  "lon": 15.2666345,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "14",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133848,
+  "lat": 45.5756263,
+  "lon": 15.2636029,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "9",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133849,
+  "lat": 45.5740754,
+  "lon": 15.2649537,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133850,
+  "lat": 45.5766547,
+  "lon": 15.2663754,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "25",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133851,
+  "lat": 45.5767188,
+  "lon": 15.2658760,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "16",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133852,
+  "lat": 45.5756637,
+  "lon": 15.2629880,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "8",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133853,
+  "lat": 45.5755412,
+  "lon": 15.2614755,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "27",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133854,
+  "lat": 45.5745990,
+  "lon": 15.2642515,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "24",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133855,
+  "lat": 45.5763917,
+  "lon": 15.2672198,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "13",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133856,
+  "lat": 45.5765302,
+  "lon": 15.2618517,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133857,
+  "lat": 45.5760501,
+  "lon": 15.2671029,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "25B",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133858,
+  "lat": 45.5764554,
+  "lon": 15.2669510,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "12",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2000-03-09"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133859,
+  "lat": 45.5759976,
+  "lon": 15.2625667,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "26",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133860,
+  "lat": 45.5771418,
+  "lon": 15.2658395,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4758133861,
+  "lat": 45.5771154,
+  "lon": 15.2656088,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18",
+    "addr:postcode": "8332",
+    "addr:street": "Cerkvišče",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320254,
+  "lat": 45.5683871,
+  "lon": 15.2912546,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "20",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320255,
+  "lat": 45.5675029,
+  "lon": 15.2921596,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2009-05-11"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320256,
+  "lat": 45.5680807,
+  "lon": 15.2914196,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320257,
+  "lat": 45.5682244,
+  "lon": 15.2915612,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2013-11-29"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320258,
+  "lat": 45.5676099,
+  "lon": 15.2925445,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320259,
+  "lat": 45.5681247,
+  "lon": 15.2918426,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320260,
+  "lat": 45.5682964,
+  "lon": 15.2915232,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2014-01-28"
+  }
+},
+{
+  "type": "node",
+  "id": 4847320261,
+  "lat": 45.5673924,
+  "lon": 15.2931711,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "16",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-12-27"
+  }
+},
+{
+  "type": "node",
+  "id": 4974226912,
+  "lat": 45.5722527,
+  "lon": 15.2927225,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "35B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974226914,
+  "lat": 45.5726614,
+  "lon": 15.2947490,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "69",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2013-10-24"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232422,
+  "lat": 45.5726154,
+  "lon": 15.2951331,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "69A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-10-07"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232425,
+  "lat": 45.5721848,
+  "lon": 15.2946184,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "68C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2015-01-23"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232427,
+  "lat": 45.5746741,
+  "lon": 15.2923892,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "74A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2004-05-17"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232428,
+  "lat": 45.5744008,
+  "lon": 15.2937075,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "78",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232429,
+  "lat": 45.5734028,
+  "lon": 15.2933819,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "72",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2014-04-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232430,
+  "lat": 45.5735280,
+  "lon": 15.2936773,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "71",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232431,
+  "lat": 45.5730279,
+  "lon": 15.2922012,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "63A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2008-12-04"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232432,
+  "lat": 45.5747272,
+  "lon": 15.2927354,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "75A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232433,
+  "lat": 45.5733498,
+  "lon": 15.2930101,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "66",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232434,
+  "lat": 45.5733508,
+  "lon": 15.2926129,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232435,
+  "lat": 45.5732076,
+  "lon": 15.2922918,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65D",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2015-05-18"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232436,
+  "lat": 45.5735047,
+  "lon": 15.2922549,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1996-10-30"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232437,
+  "lat": 45.5742398,
+  "lon": 15.2933350,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "76",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232438,
+  "lat": 45.5744310,
+  "lon": 15.2924520,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "74",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232439,
+  "lat": 45.5744978,
+  "lon": 15.2944639,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "80A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232440,
+  "lat": 45.5730712,
+  "lon": 15.2928677,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2014-06-13"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232441,
+  "lat": 45.5728003,
+  "lon": 15.2932122,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "67",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232442,
+  "lat": 45.5740705,
+  "lon": 15.2926679,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "73",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232443,
+  "lat": 45.5730325,
+  "lon": 15.2938925,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "68",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232444,
+  "lat": 45.5735782,
+  "lon": 15.2951510,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "70",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232445,
+  "lat": 45.5745196,
+  "lon": 15.2929906,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "75",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232446,
+  "lat": 45.5733795,
+  "lon": 15.2919212,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "65A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2000-10-09"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232447,
+  "lat": 45.5740318,
+  "lon": 15.2937055,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "77",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232448,
+  "lat": 45.5757426,
+  "lon": 15.2932916,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "85",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232449,
+  "lat": 45.5754199,
+  "lon": 15.2928287,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "84B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-04-28"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232450,
+  "lat": 45.5754207,
+  "lon": 15.2924827,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "83A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232451,
+  "lat": 45.5761448,
+  "lon": 15.2943444,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "89A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232452,
+  "lat": 45.5757936,
+  "lon": 15.2944451,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "90",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232453,
+  "lat": 45.5763898,
+  "lon": 15.2935513,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "87A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232454,
+  "lat": 45.5762976,
+  "lon": 15.2944093,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "89B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232455,
+  "lat": 45.5748422,
+  "lon": 15.2935304,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "79",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232456,
+  "lat": 45.5750060,
+  "lon": 15.2928009,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "83",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232457,
+  "lat": 45.5751481,
+  "lon": 15.2935448,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "81",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232458,
+  "lat": 45.5768303,
+  "lon": 15.2937074,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "86",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232459,
+  "lat": 45.5749490,
+  "lon": 15.2939666,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "80",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232460,
+  "lat": 45.5765676,
+  "lon": 15.2943851,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "88",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232461,
+  "lat": 45.5752356,
+  "lon": 15.2944934,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "91",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232462,
+  "lat": 45.5761799,
+  "lon": 15.2947034,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "89",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232463,
+  "lat": 45.5764094,
+  "lon": 15.2929235,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "93",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2010-03-19"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232464,
+  "lat": 45.5764070,
+  "lon": 15.2938589,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "87",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2016-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232465,
+  "lat": 45.5756812,
+  "lon": 15.2926635,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "84A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "2004-11-12"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232466,
+  "lat": 45.5754366,
+  "lon": 15.2933029,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "84",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 4974232467,
+  "lat": 45.5751397,
+  "lon": 15.2933013,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "82",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "node",
+  "id": 9924963016,
+  "lat": 45.5939079,
+  "lon": 15.2840636,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "name": "Kamp Krasinec",
+    "tourism": "camp_site"
+  }
+},
+{
+  "type": "node",
+  "id": 9956722510,
+  "lat": 45.6043173,
+  "lon": 15.2762919,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "amenity": "restaurant",
+    "ref:gurs:hs_mid": "19999122"
+  }
+},
+{
+  "type": "node",
+  "id": 12091665450,
+  "lat": 45.5893544,
+  "lon": 15.2772297,
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "55",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "amenity": "events_venue",
+    "ref:gurs:hs_mid": "13341729",
+    "source:addr": "GURS",
+    "website": "https://gostilna-kapusin.si/dogodki/"
+  }
+},
+{
+  "type": "way",
+  "id": 284839247,
+  "center": {
+    "lat": 45.5751466,
+    "lon": 15.2933018
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "83",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839253,
+  "center": {
+    "lat": 45.5754291,
+    "lon": 15.2932730
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "84",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284839298,
+  "center": {
+    "lat": 45.5757880,
+    "lon": 15.2933109
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "85",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 284850479,
+  "center": {
+    "lat": 45.5702074,
+    "lon": 15.2937138
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850480,
+  "center": {
+    "lat": 45.5691284,
+    "lon": 15.2948409
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850484,
+  "center": {
+    "lat": 45.5694903,
+    "lon": 15.2935560
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "28",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850485,
+  "center": {
+    "lat": 45.5698385,
+    "lon": 15.2931464
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "29A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850486,
+  "center": {
+    "lat": 45.5703286,
+    "lon": 15.2946500
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30E",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850487,
+  "center": {
+    "lat": 45.5687990,
+    "lon": 15.2942177
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "24",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850488,
+  "center": {
+    "lat": 45.5694831,
+    "lon": 15.2939631
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "27",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850489,
+  "center": {
+    "lat": 45.5700406,
+    "lon": 15.2939913
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850492,
+  "center": {
+    "lat": 45.5692386,
+    "lon": 15.2936143
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "26",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850494,
+  "center": {
+    "lat": 45.5691903,
+    "lon": 15.2940218
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850496,
+  "center": {
+    "lat": 45.5698161,
+    "lon": 15.2940673
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "30B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284850497,
+  "center": {
+    "lat": 45.5690093,
+    "lon": 15.2941223
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284851563,
+  "center": {
+    "lat": 45.5695854,
+    "lon": 15.2979084
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "25D",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "amenity": "cafe",
+    "building": "yes",
+    "indoor_seating": "yes",
+    "name": "Pri Slapu",
+    "old_name": "Bar Breg",
+    "outdoor_seating": "terrace"
+  }
+},
+{
+  "type": "way",
+  "id": 284866438,
+  "center": {
+    "lat": 45.5715093,
+    "lon": 15.2908050
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "46",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866443,
+  "center": {
+    "lat": 45.5729328,
+    "lon": 15.2895223
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "58",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866446,
+  "center": {
+    "lat": 45.5726684,
+    "lon": 15.2894277
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "55",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866450,
+  "center": {
+    "lat": 45.5722103,
+    "lon": 15.2898065
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "57",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866451,
+  "center": {
+    "lat": 45.5714340,
+    "lon": 15.2916003
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "42",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866452,
+  "center": {
+    "lat": 45.5710855,
+    "lon": 15.2911093
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "48",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866453,
+  "center": {
+    "lat": 45.5724753,
+    "lon": 15.2910692
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "61A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866454,
+  "center": {
+    "lat": 45.5721805,
+    "lon": 15.2895192
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "56",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866455,
+  "center": {
+    "lat": 45.5710443,
+    "lon": 15.2901841
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "51",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866457,
+  "center": {
+    "lat": 45.5716484,
+    "lon": 15.2903021
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "45",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866460,
+  "center": {
+    "lat": 45.5713119,
+    "lon": 15.2904571
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "50",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866465,
+  "center": {
+    "lat": 45.5726134,
+    "lon": 15.2898561
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "60",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 284866466,
+  "center": {
+    "lat": 45.5713487,
+    "lon": 15.2906159
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "47",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490842,
+  "center": {
+    "lat": 45.5714210,
+    "lon": 15.2943778
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "31A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490843,
+  "center": {
+    "lat": 45.5718410,
+    "lon": 15.2929552
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "35",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490852,
+  "center": {
+    "lat": 45.5713775,
+    "lon": 15.2940771
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "31B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490857,
+  "center": {
+    "lat": 45.5712664,
+    "lon": 15.2927451
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "37",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490864,
+  "center": {
+    "lat": 45.5713350,
+    "lon": 15.2936846
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "1995-01-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285490865,
+  "center": {
+    "lat": 45.5715764,
+    "lon": 15.2928168
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "36",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490872,
+  "center": {
+    "lat": 45.5713862,
+    "lon": 15.2932044
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "33",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490875,
+  "center": {
+    "lat": 45.5724060,
+    "lon": 15.2915394
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "41",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490876,
+  "center": {
+    "lat": 45.5718107,
+    "lon": 15.2948834
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "31",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490877,
+  "center": {
+    "lat": 45.5716018,
+    "lon": 15.2921060
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "38",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285490882,
+  "center": {
+    "lat": 45.5716497,
+    "lon": 15.2932438
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "34",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491627,
+  "center": {
+    "lat": 45.5719887,
+    "lon": 15.2906968
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "43",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491628,
+  "center": {
+    "lat": 45.5710432,
+    "lon": 15.2939643
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285491629,
+  "center": {
+    "lat": 45.5710245,
+    "lon": 15.2941874
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32B",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "yes",
+    "source": "GURS",
+    "source:date": "2005-07-01"
+  }
+},
+{
+  "type": "way",
+  "id": 285491630,
+  "center": {
+    "lat": 45.5718279,
+    "lon": 15.2906387
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "44",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491631,
+  "center": {
+    "lat": 45.5707337,
+    "lon": 15.2938789
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "32C",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 285491632,
+  "center": {
+    "lat": 45.5706502,
+    "lon": 15.2942797
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "30A",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 301458124,
+  "center": {
+    "lat": 45.5914768,
+    "lon": 15.2612732
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "30",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20029994",
+    "ref:gurs:sta_sid": "20021939",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 488661752,
+  "center": {
+    "lat": 45.5984438,
+    "lon": 15.2705784
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "12",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332517",
+    "ref:gurs:sta_sid": "20022221",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 488661754,
+  "center": {
+    "lat": 45.5985400,
+    "lon": 15.2702617
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "13",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332525",
+    "ref:gurs:sta_sid": "20022213",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 488661759,
+  "center": {
+    "lat": 45.5986041,
+    "lon": 15.2682963
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332428",
+    "ref:gurs:sta_sid": "20022115",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 488661760,
+  "center": {
+    "lat": 45.5985678,
+    "lon": 15.2673939
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332436",
+    "ref:gurs:sta_sid": "20022074",
+    "source": "GURS",
+    "source:date": "20040223",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 492750376,
+  "center": {
+    "lat": 45.6044109,
+    "lon": 15.2736081
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20033142",
+    "ref:gurs:sta_sid": "20022310",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750395,
+  "center": {
+    "lat": 45.5940940,
+    "lon": 15.2836653
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341389",
+    "ref:gurs:sta_sid": "20022835",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750399,
+  "center": {
+    "lat": 45.5938788,
+    "lon": 15.2834251
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341397",
+    "ref:gurs:sta_sid": "20022824",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750406,
+  "center": {
+    "lat": 45.5950485,
+    "lon": 15.2836671
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "23",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341427",
+    "ref:gurs:sta_sid": "26055536",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 492750411,
+  "center": {
+    "lat": 45.5945988,
+    "lon": 15.2835379
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "22",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341419",
+    "ref:gurs:sta_sid": "26055506",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:date": "20040223"
+  }
+},
+{
+  "type": "way",
+  "id": 558292425,
+  "center": {
+    "lat": 45.5815849,
+    "lon": 15.2418381
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "21",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "ref:gurs:hs_mid": "11435378",
+    "ref:gurs:sta_sid": "22345866",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 558292427,
+  "center": {
+    "lat": 45.5819169,
+    "lon": 15.2407090
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "23",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20010398",
+    "ref:gurs:sta_sid": "31839531",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 558292431,
+  "center": {
+    "lat": 45.5823619,
+    "lon": 15.2409624
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "25",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "ref:gurs:hs_mid": "11435386",
+    "ref:gurs:sta_sid": "22345867",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 625938699,
+  "center": {
+    "lat": 45.5981181,
+    "lon": 15.2699957
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332479",
+    "ref:gurs:sta_sid": "20022208",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 625938701,
+  "center": {
+    "lat": 45.5992487,
+    "lon": 15.2685962
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13332410",
+    "ref:gurs:sta_sid": "20022138",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 625938707,
+  "center": {
+    "lat": 45.5910695,
+    "lon": 15.2834039
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "28",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341478",
+    "ref:gurs:sta_sid": "20022821",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 625938710,
+  "center": {
+    "lat": 45.5890741,
+    "lon": 15.2801348
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "47",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341621",
+    "ref:gurs:sta_sid": "20022587",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 634952099,
+  "center": {
+    "lat": 45.5927509,
+    "lon": 15.2814183
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341354",
+    "ref:gurs:sta_sid": "20022702",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 634952105,
+  "center": {
+    "lat": 45.5932703,
+    "lon": 15.2815044
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "20",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341362",
+    "ref:gurs:sta_sid": "20022711",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 634952110,
+  "center": {
+    "lat": 45.5916108,
+    "lon": 15.2814406
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "25",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341443",
+    "ref:gurs:sta_sid": "20022704",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 634952125,
+  "center": {
+    "lat": 45.5922652,
+    "lon": 15.2813913
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "24",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341435",
+    "ref:gurs:sta_sid": "20022693",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 677254034,
+  "center": {
+    "lat": 45.5872186,
+    "lon": 15.2716671
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "140",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20033053",
+    "ref:gurs:sta_sid": "20022240",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 702893640,
+  "center": {
+    "lat": 45.6077445,
+    "lon": 15.2746602
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "16B",
+    "addr:postcode": "8332",
+    "addr:street": "Podzemelj",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893642,
+  "center": {
+    "lat": 45.6075936,
+    "lon": 15.2750892
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17a",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893645,
+  "center": {
+    "lat": 45.6077001,
+    "lon": 15.2756706
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19b",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893651,
+  "center": {
+    "lat": 45.6080043,
+    "lon": 15.2761074
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17b",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893653,
+  "center": {
+    "lat": 45.6076832,
+    "lon": 15.2762509
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "19d",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893655,
+  "center": {
+    "lat": 45.6079797,
+    "lon": 15.2766324
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18e",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893658,
+  "center": {
+    "lat": 45.6076883,
+    "lon": 15.2766167
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18d",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893659,
+  "center": {
+    "lat": 45.6076075,
+    "lon": 15.2767791
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18c",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893660,
+  "center": {
+    "lat": 45.6080493,
+    "lon": 15.2772181
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18a",
+    "addr:place": "Podzemelj",
+    "addr:postcode": "8332",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 702893672,
+  "center": {
+    "lat": 45.6075551,
+    "lon": 15.2739193
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "50",
+    "addr:postcode": "8332",
+    "addr:street": "Podzemelj",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 715561946,
+  "center": {
+    "lat": 45.6052661,
+    "lon": 15.2772928
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "caravans": "yes",
+    "check_date": "2026-06-26",
+    "fee": "yes",
+    "name": "Bela krajina",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+3867 30 69 572",
+    "static_caravans": "yes",
+    "tents": "yes",
+    "tourism": "camp_site",
+    "website": "https://www.kamp-podzemelj.si/en/"
+  }
+},
+{
+  "type": "way",
+  "id": 833539253,
+  "center": {
+    "lat": 45.5935096,
+    "lon": 15.2609075
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331634",
+    "ref:gurs:sta_sid": "20021933",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539258,
+  "center": {
+    "lat": 45.5939265,
+    "lon": 15.2605225
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331642",
+    "ref:gurs:sta_sid": "20021920",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539260,
+  "center": {
+    "lat": 45.5937277,
+    "lon": 15.2615443
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20048212",
+    "ref:gurs:sta_sid": "33158651",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539262,
+  "center": {
+    "lat": 45.5940106,
+    "lon": 15.2614833
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331677",
+    "ref:gurs:sta_sid": "20021942",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539265,
+  "center": {
+    "lat": 45.5941556,
+    "lon": 15.2618110
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4A",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "construction_date": "2001",
+    "ref:gurs:hs_mid": "20011653",
+    "ref:gurs:sta_sid": "20021948",
+    "source": "GURS",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539267,
+  "center": {
+    "lat": 45.5944635,
+    "lon": 15.2621022
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331685",
+    "ref:gurs:sta_sid": "20021951",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539269,
+  "center": {
+    "lat": 45.5942518,
+    "lon": 15.2626261
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5a",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20025697",
+    "ref:gurs:sta_sid": "32390123",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539272,
+  "center": {
+    "lat": 45.5939616,
+    "lon": 15.2622603
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4B",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20019638",
+    "ref:gurs:sta_sid": "26055478",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 833539277,
+  "center": {
+    "lat": 45.5948032,
+    "lon": 15.2631838
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331693",
+    "ref:gurs:sta_sid": "20021975",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 963948905,
+  "center": {
+    "lat": 45.6080743,
+    "lon": 15.2749292
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "17",
+    "addr:postcode": "8332",
+    "addr:street": "Podzemelj",
+    "amenity": "restaurant",
+    "building": "yes",
+    "cuisine": "local",
+    "name": "Gostišče Veselič",
+    "phone": "+386 31 391 517",
+    "website": "https://www.belakrajina.si/sl/okusite/gostilne-restavracije/gostisce-veselic/"
+  }
+},
+{
+  "type": "way",
+  "id": 967294998,
+  "center": {
+    "lat": 45.6048518,
+    "lon": 15.2686205
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340846",
+    "ref:gurs:sta_sid": "20022133"
+  }
+},
+{
+  "type": "way",
+  "id": 967294999,
+  "center": {
+    "lat": 45.6050225,
+    "lon": 15.2677510
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340862",
+    "ref:gurs:sta_sid": "20022091"
+  }
+},
+{
+  "type": "way",
+  "id": 967295001,
+  "center": {
+    "lat": 45.6051325,
+    "lon": 15.2682473
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340854",
+    "ref:gurs:sta_sid": "26055496"
+  }
+},
+{
+  "type": "way",
+  "id": 967295004,
+  "center": {
+    "lat": 45.6052287,
+    "lon": 15.2670877
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "8",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340927",
+    "ref:gurs:sta_sid": "20022067"
+  }
+},
+{
+  "type": "way",
+  "id": 967295006,
+  "center": {
+    "lat": 45.6052797,
+    "lon": 15.2664351
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "house",
+    "ref:gurs:hs_mid": "13340897",
+    "ref:gurs:sta_sid": "20022049"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030105,
+  "center": {
+    "lat": 45.6045048,
+    "lon": 15.2723828
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "19998797",
+    "ref:gurs:sta_sid": "20022268",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030109,
+  "center": {
+    "lat": 45.6043471,
+    "lon": 15.2731055
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "house",
+    "ref:gurs:hs_mid": "13356653",
+    "ref:gurs:sta_sid": "20022299",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030740,
+  "center": {
+    "lat": 45.6041259,
+    "lon": 15.2728075
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13356637",
+    "ref:gurs:sta_sid": "20022285",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128030742,
+  "center": {
+    "lat": 45.6041331,
+    "lon": 15.2723976
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "construction_date": "1885",
+    "ref:gurs:hs_mid": "13356645",
+    "ref:gurs:sta_sid": "20022269",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1128031886,
+  "center": {
+    "lat": 45.6047467,
+    "lon": 15.2729522
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Škrilje",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20022949",
+    "ref:gurs:sta_sid": "32071340",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1192165746,
+  "center": {
+    "lat": 45.5715727,
+    "lon": 15.2900520
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "49",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 1192168407,
+  "center": {
+    "lat": 45.5715525,
+    "lon": 15.2893486
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "54",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 1192240812,
+  "center": {
+    "lat": 45.5688185,
+    "lon": 15.2935407
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:country": "SI",
+    "addr:housenumber": "23",
+    "addr:postcode": "8332",
+    "addr:street": "Griblje",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 1228228946,
+  "center": {
+    "lat": 45.5944891,
+    "lon": 15.2636911
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7A",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "area": "yes",
+    "building": "yes",
+    "ref:gurs:hs_mid": "20050004",
+    "ref:gurs:sta_sid": "34306710",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1228228947,
+  "center": {
+    "lat": 45.5947823,
+    "lon": 15.2636693
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "area": "yes",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13331707",
+    "ref:gurs:sta_sid": "20021985",
+    "source": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1228228948,
+  "center": {
+    "lat": 45.5953277,
+    "lon": 15.2636484
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "9",
+    "addr:postcode": "8332",
+    "addr:street": "Boginja vas",
+    "area": "yes",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/people/Residence-ANA/100064027056163/",
+    "phone": "+386 41 630 479",
+    "ref:gurs:hs_mid": "20046775",
+    "ref:gurs:sta_sid": "31655305",
+    "source": "GURS",
+    "source_dat": "2021",
+    "tourism": "apartment"
+  }
+},
+{
+  "type": "way",
+  "id": 1305532174,
+  "center": {
+    "lat": 45.5889833,
+    "lon": 15.2776786
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3b",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "amenity": "fire_station",
+    "building": "fire_station",
+    "ref:gurs:hs_mid": "13341150",
+    "ref:gurs:sta_sid": "20022451",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1305532177,
+  "center": {
+    "lat": 45.5891778,
+    "lon": 15.2774990
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "55a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "ref:gurs:hs_mid": "13341702",
+    "ref:gurs:sta_sid": "20022442",
+    "source:addr": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433028,
+  "center": {
+    "lat": 45.5943107,
+    "lon": 15.2833777
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "21b",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1900",
+    "ref:gurs:hs_mid": "16349780",
+    "ref:gurs:sta_sid": "20022822",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433029,
+  "center": {
+    "lat": 45.5933759,
+    "lon": 15.2741767
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1d",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1998",
+    "ref:gurs:hs_mid": "19999351",
+    "ref:gurs:sta_sid": "20022329",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433030,
+  "center": {
+    "lat": 45.5927068,
+    "lon": 15.2744169
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2000",
+    "ref:gurs:hs_mid": "20020059",
+    "ref:gurs:sta_sid": "20022339",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433031,
+  "center": {
+    "lat": 45.5922400,
+    "lon": 15.2744124
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1973",
+    "ref:gurs:hs_mid": "13341141",
+    "ref:gurs:sta_sid": "20022338",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433033,
+  "center": {
+    "lat": 45.5929862,
+    "lon": 15.2739982
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1800",
+    "ref:gurs:hs_mid": "13341133",
+    "ref:gurs:sta_sid": "20022320",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433034,
+  "center": {
+    "lat": 45.5925699,
+    "lon": 15.2741117
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1b",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1997",
+    "ref:gurs:hs_mid": "20024623",
+    "ref:gurs:sta_sid": "20022328",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433035,
+  "center": {
+    "lat": 45.5922739,
+    "lon": 15.2737901
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1c",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2019",
+    "ref:gurs:hs_mid": "20031794",
+    "ref:gurs:sta_sid": "34641740",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433038,
+  "center": {
+    "lat": 45.5927380,
+    "lon": 15.2807875
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "18",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1997",
+    "ref:gurs:hs_mid": "20028700",
+    "ref:gurs:sta_sid": "20022635",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433044,
+  "center": {
+    "lat": 45.5922617,
+    "lon": 15.2804387
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "17",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1981",
+    "ref:gurs:hs_mid": "13341338",
+    "ref:gurs:sta_sid": "20022604",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433048,
+  "center": {
+    "lat": 45.5918229,
+    "lon": 15.2804368
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "15",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1948",
+    "ref:gurs:hs_mid": "13341311",
+    "ref:gurs:sta_sid": "20022607",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433049,
+  "center": {
+    "lat": 45.5918175,
+    "lon": 15.2810219
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "16",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1900",
+    "ref:gurs:hs_mid": "13341320",
+    "ref:gurs:sta_sid": "20022662",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433057,
+  "center": {
+    "lat": 45.5915289,
+    "lon": 15.2807714
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "14",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1958",
+    "ref:gurs:hs_mid": "13341303",
+    "ref:gurs:sta_sid": "20022633",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433062,
+  "center": {
+    "lat": 45.5913557,
+    "lon": 15.2822339
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "26",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1982",
+    "ref:gurs:hs_mid": "13341451",
+    "ref:gurs:sta_sid": "20022776",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433064,
+  "center": {
+    "lat": 45.5913008,
+    "lon": 15.2805099
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "12",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1986",
+    "ref:gurs:hs_mid": "13341281",
+    "ref:gurs:sta_sid": "20022615",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433065,
+  "center": {
+    "lat": 45.5912973,
+    "lon": 15.2828948
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "27",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1988",
+    "ref:gurs:hs_mid": "13341460",
+    "ref:gurs:sta_sid": "20022806",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433071,
+  "center": {
+    "lat": 45.5911562,
+    "lon": 15.2823597
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "30",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1919",
+    "ref:gurs:hs_mid": "13341494",
+    "ref:gurs:sta_sid": "20022784",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433072,
+  "center": {
+    "lat": 45.5911205,
+    "lon": 15.2802181
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1850",
+    "ref:gurs:hs_mid": "13341273",
+    "ref:gurs:sta_sid": "20022591",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433075,
+  "center": {
+    "lat": 45.5910550,
+    "lon": 15.2818495
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "31",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1900",
+    "ref:gurs:hs_mid": "13341508",
+    "ref:gurs:sta_sid": "20022750",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433081,
+  "center": {
+    "lat": 45.5909218,
+    "lon": 15.2828283
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "29",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1978",
+    "ref:gurs:hs_mid": "13341486",
+    "ref:gurs:sta_sid": "20022803",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433085,
+  "center": {
+    "lat": 45.5908077,
+    "lon": 15.2803433
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "10",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2013",
+    "ref:gurs:hs_mid": "20029145",
+    "ref:gurs:sta_sid": "32422388",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433089,
+  "center": {
+    "lat": 45.5901005,
+    "lon": 15.2784834
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "61",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1997",
+    "ref:gurs:hs_mid": "19998835",
+    "ref:gurs:sta_sid": "20022500",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433093,
+  "center": {
+    "lat": 45.5898498,
+    "lon": 15.2764951
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1998",
+    "ref:gurs:hs_mid": "13341168",
+    "ref:gurs:sta_sid": "20022397",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433094,
+  "center": {
+    "lat": 45.5896740,
+    "lon": 15.2778687
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "56",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1992",
+    "ref:gurs:hs_mid": "13341737",
+    "ref:gurs:sta_sid": "20022465",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433095,
+  "center": {
+    "lat": 45.5896681,
+    "lon": 15.2751803
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1987",
+    "ref:gurs:hs_mid": "20034963",
+    "ref:gurs:sta_sid": "20022363",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433097,
+  "center": {
+    "lat": 45.5907562,
+    "lon": 15.2817391
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "35",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1965",
+    "ref:gurs:hs_mid": "13341524",
+    "ref:gurs:sta_sid": "20022735",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433108,
+  "center": {
+    "lat": 45.5904891,
+    "lon": 15.2810249
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "39",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1866",
+    "ref:gurs:hs_mid": "13341559",
+    "ref:gurs:sta_sid": "20022661",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433109,
+  "center": {
+    "lat": 45.5904668,
+    "lon": 15.2817426
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "36",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2001",
+    "ref:gurs:hs_mid": "13341532",
+    "ref:gurs:sta_sid": "20022738",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433110,
+  "center": {
+    "lat": 45.5904558,
+    "lon": 15.2828109
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "33",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1985",
+    "ref:gurs:hs_mid": "13341516",
+    "ref:gurs:sta_sid": "20022802",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433115,
+  "center": {
+    "lat": 45.5901363,
+    "lon": 15.2811018
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "40",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1850",
+    "ref:gurs:hs_mid": "13341567",
+    "ref:gurs:sta_sid": "20022675",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433116,
+  "center": {
+    "lat": 45.5901262,
+    "lon": 15.2796660
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "9",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1868",
+    "ref:gurs:hs_mid": "13341257",
+    "ref:gurs:sta_sid": "20022547",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433119,
+  "center": {
+    "lat": 45.5900329,
+    "lon": 15.2801636
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "9a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1990",
+    "ref:gurs:hs_mid": "19999360",
+    "ref:gurs:sta_sid": "20022586",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433120,
+  "center": {
+    "lat": 45.5899724,
+    "lon": 15.2808266
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "43",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1943",
+    "ref:gurs:hs_mid": "13341583",
+    "ref:gurs:sta_sid": "20022645",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433127,
+  "center": {
+    "lat": 45.5897054,
+    "lon": 15.2813090
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "42",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1967",
+    "ref:gurs:hs_mid": "13341575",
+    "ref:gurs:sta_sid": "20022695",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433129,
+  "center": {
+    "lat": 45.5896669,
+    "lon": 15.2810726
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "44",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1978",
+    "ref:gurs:hs_mid": "13341591",
+    "ref:gurs:sta_sid": "20022669",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433130,
+  "center": {
+    "lat": 45.5896558,
+    "lon": 15.2807866
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "44a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1992",
+    "ref:gurs:hs_mid": "20006790",
+    "ref:gurs:sta_sid": "20022641",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433132,
+  "center": {
+    "lat": 45.5895936,
+    "lon": 15.2817122
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "42a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2012",
+    "ref:gurs:hs_mid": "20024836",
+    "ref:gurs:sta_sid": "32231412",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433133,
+  "center": {
+    "lat": 45.5895926,
+    "lon": 15.2796876
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "8",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1988",
+    "ref:gurs:hs_mid": "20031735",
+    "ref:gurs:sta_sid": "20022550",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433137,
+  "center": {
+    "lat": 45.5922120,
+    "lon": 15.2870513
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "120",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2003",
+    "ref:gurs:hs_mid": "20022914",
+    "ref:gurs:sta_sid": "31395910",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433139,
+  "center": {
+    "lat": 45.5896967,
+    "lon": 15.2676322
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "150",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1979",
+    "ref:gurs:hs_mid": "20024003",
+    "ref:gurs:sta_sid": "20022089",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433140,
+  "center": {
+    "lat": 45.5894909,
+    "lon": 15.2790240
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1965",
+    "ref:gurs:hs_mid": "13341214",
+    "ref:gurs:sta_sid": "20022520",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433143,
+  "center": {
+    "lat": 45.5893863,
+    "lon": 15.2793558
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1985",
+    "ref:gurs:hs_mid": "13341222",
+    "ref:gurs:sta_sid": "20022532",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433148,
+  "center": {
+    "lat": 45.5894801,
+    "lon": 15.2753954
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1939",
+    "ref:gurs:hs_mid": "13341184",
+    "ref:gurs:sta_sid": "20022368",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433154,
+  "center": {
+    "lat": 45.5891027,
+    "lon": 15.2788469
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1978",
+    "ref:gurs:hs_mid": "13341206",
+    "ref:gurs:sta_sid": "20022513",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433155,
+  "center": {
+    "lat": 45.5892866,
+    "lon": 15.2809880
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "45",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1986",
+    "ref:gurs:hs_mid": "13341605",
+    "ref:gurs:sta_sid": "20022658",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433159,
+  "center": {
+    "lat": 45.5891740,
+    "lon": 15.2819282
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "75",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1976",
+    "ref:gurs:hs_mid": "20007842",
+    "ref:gurs:sta_sid": "20022759",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433162,
+  "center": {
+    "lat": 45.5890980,
+    "lon": 15.2815323
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "77",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2005",
+    "ref:gurs:hs_mid": "20017678",
+    "ref:gurs:sta_sid": "31452273",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433167,
+  "center": {
+    "lat": 45.5889381,
+    "lon": 15.2807006
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "46",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1983",
+    "ref:gurs:hs_mid": "13341613",
+    "ref:gurs:sta_sid": "20022631",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433169,
+  "center": {
+    "lat": 45.5888826,
+    "lon": 15.2799655
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "48",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1940",
+    "ref:gurs:hs_mid": "13341630",
+    "ref:gurs:sta_sid": "20022573",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433170,
+  "center": {
+    "lat": 45.5888822,
+    "lon": 15.2814397
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "79",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1975",
+    "ref:gurs:hs_mid": "20033215",
+    "ref:gurs:sta_sid": "20022712",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433171,
+  "center": {
+    "lat": 45.5888313,
+    "lon": 15.2793624
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "50",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1930",
+    "ref:gurs:hs_mid": "13341664",
+    "ref:gurs:sta_sid": "20022539",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433173,
+  "center": {
+    "lat": 45.5886043,
+    "lon": 15.2801117
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "47a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "2015",
+    "ref:gurs:hs_mid": "20028882",
+    "ref:gurs:sta_sid": "32659703",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433174,
+  "center": {
+    "lat": 45.5885466,
+    "lon": 15.2798310
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "49a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1988",
+    "ref:gurs:hs_mid": "13341648",
+    "ref:gurs:sta_sid": "20022560",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433175,
+  "center": {
+    "lat": 45.5884673,
+    "lon": 15.2794691
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "49",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1922",
+    "ref:gurs:hs_mid": "13341656",
+    "ref:gurs:sta_sid": "20022538",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433182,
+  "center": {
+    "lat": 45.5889471,
+    "lon": 15.2745298
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5a",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1986",
+    "ref:gurs:hs_mid": "13341192",
+    "ref:gurs:sta_sid": "20022345",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1339433186,
+  "center": {
+    "lat": 45.5867423,
+    "lon": 15.2810476
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "51",
+    "addr:postcode": "8332",
+    "addr:street": "Krasinec",
+    "building": "yes",
+    "construction_date": "1998",
+    "ref:gurs:hs_mid": "13341672",
+    "ref:gurs:sta_sid": "20022665",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449989929,
+  "center": {
+    "lat": 45.6071545,
+    "lon": 15.2430635
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Okljuka",
+    "building": "yes",
+    "construction_date": "1938",
+    "ref:gurs:hs_mid": "13351384",
+    "ref:gurs:sta_sid": "20021634",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449989930,
+  "center": {
+    "lat": 45.6049269,
+    "lon": 15.2410458
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Okljuka",
+    "building": "yes",
+    "construction_date": "1966",
+    "ref:gurs:hs_mid": "13351422",
+    "ref:gurs:sta_sid": "20021566",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449989934,
+  "center": {
+    "lat": 45.6035444,
+    "lon": 15.2415170
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Okljuka",
+    "building": "yes",
+    "construction_date": "1986",
+    "ref:gurs:hs_mid": "13351392",
+    "ref:gurs:sta_sid": "20021577",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449989938,
+  "center": {
+    "lat": 45.6032255,
+    "lon": 15.2410800
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Okljuka",
+    "building": "yes",
+    "construction_date": "1976",
+    "ref:gurs:hs_mid": "13351406",
+    "ref:gurs:sta_sid": "20021569",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449989942,
+  "center": {
+    "lat": 45.6025899,
+    "lon": 15.2415945
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Okljuka",
+    "building": "yes",
+    "construction_date": "1975",
+    "ref:gurs:hs_mid": "20034700",
+    "ref:gurs:sta_sid": "20021581",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449996534,
+  "center": {
+    "lat": 45.6051038,
+    "lon": 15.2674791
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "yes",
+    "construction_date": "1926",
+    "ref:gurs:hs_mid": "13340889",
+    "ref:gurs:sta_sid": "20022079",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449996536,
+  "center": {
+    "lat": 45.6050166,
+    "lon": 15.2688459
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "yes",
+    "construction_date": "1978",
+    "ref:gurs:hs_mid": "13340838",
+    "ref:gurs:sta_sid": "20022144",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449996539,
+  "center": {
+    "lat": 45.6049051,
+    "lon": 15.2663661
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "yes",
+    "construction_date": "1946",
+    "ref:gurs:hs_mid": "13340919",
+    "ref:gurs:sta_sid": "20022047",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1449996543,
+  "center": {
+    "lat": 45.6047456,
+    "lon": 15.2681940
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2a",
+    "addr:postcode": "8332",
+    "addr:street": "Kapljišče",
+    "building": "yes",
+    "construction_date": "2008",
+    "ref:gurs:hs_mid": "20045957",
+    "ref:gurs:sta_sid": "31595595",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451322205,
+  "center": {
+    "lat": 45.5985514,
+    "lon": 15.2615242
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Mlake",
+    "building": "yes",
+    "construction_date": "1975",
+    "ref:gurs:hs_mid": "20048107",
+    "ref:gurs:sta_sid": "20021945",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451322207,
+  "center": {
+    "lat": 45.5984407,
+    "lon": 15.2611100
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Mlake",
+    "building": "yes",
+    "construction_date": "1807",
+    "ref:gurs:hs_mid": "20030917",
+    "ref:gurs:sta_sid": "20021935",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451322210,
+  "center": {
+    "lat": 45.5981337,
+    "lon": 15.2612082
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Mlake",
+    "building": "yes",
+    "construction_date": "1978",
+    "ref:gurs:hs_mid": "13351376",
+    "ref:gurs:sta_sid": "20021938",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451322212,
+  "center": {
+    "lat": 45.5978250,
+    "lon": 15.2606910
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Mlake",
+    "building": "yes",
+    "construction_date": "1989",
+    "ref:gurs:hs_mid": "13351368",
+    "ref:gurs:sta_sid": "26055483",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451326747,
+  "center": {
+    "lat": 45.5801197,
+    "lon": 15.2405352
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "16",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "construction_date": "1999",
+    "ref:gurs:hs_mid": "11435319",
+    "ref:gurs:sta_sid": "26058455",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451326751,
+  "center": {
+    "lat": 45.5796859,
+    "lon": 15.2404678
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "15",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "construction_date": "1980",
+    "ref:gurs:hs_mid": "20020342",
+    "ref:gurs:sta_sid": "26058453",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451326764,
+  "center": {
+    "lat": 45.5766488,
+    "lon": 15.2400008
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "2",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "construction_date": "1950",
+    "ref:gurs:hs_mid": "11435416",
+    "ref:gurs:sta_sid": "22345870",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451326771,
+  "center": {
+    "lat": 45.5801167,
+    "lon": 15.2412672
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "14",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "construction_date": "1961",
+    "ref:gurs:hs_mid": "11435335",
+    "ref:gurs:sta_sid": "22345862",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451326778,
+  "center": {
+    "lat": 45.5829906,
+    "lon": 15.2438491
+  },
+  "tags": {
+    "addr:city": "Črnomelj",
+    "addr:housenumber": "28",
+    "addr:postcode": "8340",
+    "addr:street": "Pavičiči",
+    "building": "yes",
+    "construction_date": "1980",
+    "ref:gurs:hs_mid": "20011289",
+    "ref:gurs:sta_sid": "26058443",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342028,
+  "center": {
+    "lat": 45.5926618,
+    "lon": 15.2695511
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2a",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1987",
+    "ref:gurs:hs_mid": "13352330",
+    "ref:gurs:sta_sid": "20022191",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342031,
+  "center": {
+    "lat": 45.5921695,
+    "lon": 15.2685860
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "4",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "2000",
+    "ref:gurs:hs_mid": "13352364",
+    "ref:gurs:sta_sid": "26055502",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342032,
+  "center": {
+    "lat": 45.5920812,
+    "lon": 15.2670473
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "2001",
+    "ref:gurs:hs_mid": "20007648",
+    "ref:gurs:sta_sid": "20022065",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342038,
+  "center": {
+    "lat": 45.5923040,
+    "lon": 15.2690718
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1970",
+    "ref:gurs:hs_mid": "13352348",
+    "ref:gurs:sta_sid": "20022162",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342045,
+  "center": {
+    "lat": 45.5918708,
+    "lon": 15.2695313
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1850",
+    "ref:gurs:hs_mid": "13352321",
+    "ref:gurs:sta_sid": "20022193",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342048,
+  "center": {
+    "lat": 45.5917851,
+    "lon": 15.2688880
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "3",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1980",
+    "ref:gurs:hs_mid": "13352356",
+    "ref:gurs:sta_sid": "20022152",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342050,
+  "center": {
+    "lat": 45.5916425,
+    "lon": 15.2668107
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "10",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1986",
+    "ref:gurs:hs_mid": "13352445",
+    "ref:gurs:sta_sid": "20022060",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342052,
+  "center": {
+    "lat": 45.5915610,
+    "lon": 15.2670649
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "9",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1980",
+    "ref:gurs:hs_mid": "13352437",
+    "ref:gurs:sta_sid": "20022070",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342058,
+  "center": {
+    "lat": 45.5912244,
+    "lon": 15.2678073
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1956",
+    "ref:gurs:hs_mid": "13352372",
+    "ref:gurs:sta_sid": "20022094",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342062,
+  "center": {
+    "lat": 45.5911160,
+    "lon": 15.2664067
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "7",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1957",
+    "ref:gurs:hs_mid": "13352402",
+    "ref:gurs:sta_sid": "20022050",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451342074,
+  "center": {
+    "lat": 45.5907305,
+    "lon": 15.2671979
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Prilozje",
+    "building": "yes",
+    "construction_date": "1990",
+    "ref:gurs:hs_mid": "13352399",
+    "ref:gurs:sta_sid": "20022072",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343664,
+  "center": {
+    "lat": 45.6004164,
+    "lon": 15.2692752
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "15",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1955",
+    "ref:gurs:hs_mid": "13332541",
+    "ref:gurs:sta_sid": "20022172",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343665,
+  "center": {
+    "lat": 45.6003228,
+    "lon": 15.2690943
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "16",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1984",
+    "ref:gurs:hs_mid": "20050152",
+    "ref:gurs:sta_sid": "20022160",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343667,
+  "center": {
+    "lat": 45.5985849,
+    "lon": 15.2719995
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "14",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1975",
+    "ref:gurs:hs_mid": "13332533",
+    "ref:gurs:sta_sid": "20022250",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343668,
+  "center": {
+    "lat": 45.5985814,
+    "lon": 15.2692215
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2b",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "2013",
+    "ref:gurs:hs_mid": "20031786",
+    "ref:gurs:sta_sid": "32422431",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343671,
+  "center": {
+    "lat": 45.5982374,
+    "lon": 15.2707925
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "12a",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "2012",
+    "ref:gurs:hs_mid": "20027584",
+    "ref:gurs:sta_sid": "32434013",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343673,
+  "center": {
+    "lat": 45.5993493,
+    "lon": 15.2681113
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "1",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "2005",
+    "ref:gurs:hs_mid": "20027797",
+    "ref:gurs:sta_sid": "20022107",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343678,
+  "center": {
+    "lat": 45.5988032,
+    "lon": 15.2688712
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "2a",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "2013",
+    "ref:gurs:hs_mid": "20031778",
+    "ref:gurs:sta_sid": "32422433",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343679,
+  "center": {
+    "lat": 45.5980500,
+    "lon": 15.2682282
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "5",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1935",
+    "ref:gurs:hs_mid": "13332444",
+    "ref:gurs:sta_sid": "20022116",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343681,
+  "center": {
+    "lat": 45.5980218,
+    "lon": 15.2685844
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1984",
+    "ref:gurs:hs_mid": "13332452",
+    "ref:gurs:sta_sid": "20022136",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343686,
+  "center": {
+    "lat": 45.5979362,
+    "lon": 15.2693173
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6b",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "2006",
+    "ref:gurs:hs_mid": "20032561",
+    "ref:gurs:sta_sid": "32422427",
+    "source:addr": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343689,
+  "center": {
+    "lat": 45.5976365,
+    "lon": 15.2695899
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "9",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1906",
+    "ref:gurs:hs_mid": "13332487",
+    "ref:gurs:sta_sid": "20022190",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343690,
+  "center": {
+    "lat": 45.5975493,
+    "lon": 15.2701586
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "11",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1950",
+    "ref:gurs:hs_mid": "13332509",
+    "ref:gurs:sta_sid": "20022211",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343691,
+  "center": {
+    "lat": 45.5974903,
+    "lon": 15.2698029
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "10",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1905",
+    "ref:gurs:hs_mid": "13332495",
+    "ref:gurs:sta_sid": "20022204",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343695,
+  "center": {
+    "lat": 45.5971878,
+    "lon": 15.2699663
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "10a",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1980",
+    "ref:gurs:hs_mid": "19999246",
+    "ref:gurs:sta_sid": "26055500",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+},
+{
+  "type": "way",
+  "id": 1451343700,
+  "center": {
+    "lat": 45.5974567,
+    "lon": 15.2688921
+  },
+  "tags": {
+    "addr:city": "Gradac",
+    "addr:housenumber": "6a",
+    "addr:postcode": "8332",
+    "addr:street": "Boršt",
+    "building": "yes",
+    "construction_date": "1994",
+    "ref:gurs:hs_mid": "16550248",
+    "ref:gurs:sta_sid": "20022150",
+    "source": "GURS",
+    "source:construction_date": "GURS",
+    "source:geometry": "GURS",
+    "source_dat": "2021"
+  }
+}
+
+  ]
+}
