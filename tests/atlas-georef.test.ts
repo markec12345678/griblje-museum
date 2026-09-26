@@ -271,7 +271,7 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       val: number;
       quality_gate: { category_id: string; VERIFIED: number; PARTIAL: number; UNKNOWN: number; native: Record<string, unknown> }[];
     };
-    expect(rep.val).toBe(78);
+    expect(rep.val).toBe(79);
     const geo = rep.quality_gate.find((c) => c.category_id === "georeferencing")!;
     expect(geo.VERIFIED).toBe(1);
     expect(geo.PARTIAL).toBe(0);

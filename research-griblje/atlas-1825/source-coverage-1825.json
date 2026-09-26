@@ -1,5 +1,5 @@
 {
- "val": 78,
+ "val": 79,
  "pass": "PASS 8",
  "issue": 42,
  "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.5 + registrov)",
@@ -69,7 +69,7 @@
    "docid": 41784,
    "pages": 71,
    "status": "PARTIAL",
-   "note": "TRANSCRIBED_PARTIAL (val 77 PASS 2): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z aritmetičnimi vrati I4–I6 (deleži 1830 izpeljani); p43–47 vrstični prepis pošteno zavrnjen (F-PZ-12, čaka @300 dpi)"
+   "note": "TRANSCRIBED_PARTIAL (val 79 PASS 5): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z aritmetičnimi vrati I4–I6 (deleži 1830 izpeljani) + Rektifikacijski odsek p35–42 odločilno prebran — opisno, brez per-parcelnih korekcij (F-PZ-16, rešitvena pot F-PZ-04 zapreta); p43–47 vrstični prepis pošteno zavrnjen (F-PZ-12, čaka @300 dpi)"
   },
   {
    "source_id": "SRC-A01",
@@ -147,8 +147,8 @@
   "PZ": {
    "pages": 71,
    "rows": 0,
-   "passes": 4,
-   "note": "val 75+77+78: TRANSCRIBED_PARTIAL — struktura 71/71 + ključna branja (prebivalstvo 1830: 441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin; živina 124/20/30/150/30; površina §1 rdeči popravek 1220 J 1493 K, PV Δ 0,086 %) + val 77 odločilni re-read p67+§8 z vrati I4–I6 (Summa 1152 J 495 K; Δ 3 J — F-PZ-04 ožjan, ostaja OPEN; deleži 1830 F-PZ-13) + val 78 §8 rdeči stolpec 'Zusammen' strukturiran (post-revizijske površine, REVIEW — F-PZ-15) + rešitvene poti p26/p27/p30/p32/p63/p65 ovržene (F-PZ-14); celotni vrstični prepis NI"
+   "passes": 5,
+   "note": "val 75+77+78+79: TRANSCRIBED_PARTIAL — struktura 71/71 + ključna branja (prebivalstvo 1830: 441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin; živina 124/20/30/150/30; površina §1 rdeči popravek 1220 J 1493 K, PV Δ 0,086 %) + val 77 odločilni re-read p67+§8 z vrati I4–I6 (Summa 1152 J 495 K; Δ 3 J — F-PZ-04 ožjan, ostaja OPEN; deleži 1830 F-PZ-13) + val 78 §8 rdeči stolpec 'Zusammen' strukturiran (post-revizijske površine, REVIEW — F-PZ-15) + rešitvene poti p26/p27/p30/p32/p63/p65 ovržene (F-PZ-14) + val 79 Rektifikacijski odsek p35–42 odločilno prebran: OPISNO-KVALITATIVEN, per-parcelne korekcije NE obstajajo (F-PZ-16 RESOLVED; 7 Muster-parcel REVIEW; protokoli 9./29. april 1830 + 1832); celotni vrstični prepis NI"
   }
  },
  "six_status": {
@@ -160,10 +160,11 @@
  },
  "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
  "next_reads": [
-  "PS p56–143 vrstični prepis ob kvoti (raba po parcelah; F-PV-03 vinogradi ostaja OPEN)",
-  "PZ §8 rdeče števke re-digitation @višja ločljivost (VAČ II. prikaz — F-PZ-15 REVIEW)",
+  "PZ Summa/vrstice re-digitation @300 dpi (VAČ II. prikaz — zadnja peskovniška rešitvena pot F-PZ-04 Δ 3 J; tudi F-PZ-15 rdeči stolpec)",
   "PZ celotni vrstični prepis (66/71 strani brez strukturnega branja; F-PZ-12 zavrnjen VLM prepis čaka VAČ IIIF @300 dpi)",
+  "PS p56–143 vrstični prepis ob kvoti (raba po parcelah; F-PV-03 vinogradi ostaja OPEN)",
   "PT p7 @300dpi (KG-F01/F04)",
-  "PR Grenz-Beschreibung (mejne točke; tudi F-PZ-05 meje)"
+  "PR Grenz-Beschreibung (mejne točke; tudi F-PZ-05 meje)",
+  "izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (per-parcelna vezava 1825→1830, F-PZ-16 renumbering)"
  ]
 }

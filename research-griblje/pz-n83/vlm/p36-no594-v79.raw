@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Verbatim Transcription:**\n\n```\n594 und 1928 591 Rlaff imw Geerg Strayp\nneu Grable boll 45. ynfönig, zomvällt.\nDritte Klaffe: [crossed out] Smidn Plafn\n[red ink:] Verpfleter spenamtntripr Mllurumst inernd vmpfuntleny.\nEin Andern thirforn Plafn nommen neu und [unclear]\n```\n\n---\n\n### **Detailed Analysis of Requested Elements**\n\n#### **1. Parcel Numbers (№)**\n*   **First occurrence:** `1928` (or possibly `1923` — the final digit has a flat top consistent with **3** or **8** in this hand; the closed loop at bottom suggests **8**, but the flat top is more typical of **3**)\n*   **Second occurrence:** `591` (clear; the first digit is unambiguously **5** with a sharp top stroke, not **3**)\n\n> **Note:** The text reads `und 1928 591 Rlaff` — there is no explicit \"№\" symbol visible, but these appear to be parcel identifiers. No numbers are visibly crossed out with replacements above/below in this specific line.\n\n#### **2. Area Measurements (Joch / Square-Klafter)**\n*   **Visible measurement:** `45.` (followed by what appears to be an abbreviation or unit marker, possibly **Klafter** or **Joch** abbreviated as `J.` or similar, though the specific unit character after the dot is ambiguous — could be a period or a partially written `J`/`K`)\n*   **Digits:** **4** (clear, open top) and **5** (clear, sharp top angle). No ambiguity between 3 vs 5 here.\n*   **Context:** Preceded by `boll` (likely *bey* or *bei* = at/by) and followed by `ynfönig` (likely *einförmig* = uniform/single-form).\n\n#### **3. Dates**\n*   **No complete date** (day + month + year) appears on this line.\n*   The number **1830** (the document date you mentioned) is **not visible** in this crop; only the parcel numbers above are present.\n\n---\n\n### **Ambiguity Notes**\n| Digit/Feature | Reading | Alternative | Reason for Ambiguity |\n|---------------|---------|-------------|----------------------|\n| Final digit of `1928` | **8** | **3** | Has the flat top bar of a Kurrent **3**, but also the closed lower loop of an **8**. Given the context of cadastral numbering, both are plausible. |\n| First digit of `591` | **5** | — | Clearly **5** (sharp angular top), not **3** (rounded top). |\n| Digit `4` in `45` | **4** | — | Clear open-top **4**. |\n| Crossed-out word | **Smidn** (Schmidt?) | Could be **Smiden** or **Smidm** | The name is struck through with a bold X and underline; the final letter could be *n* or *m*. |\n\n**Additional observation:** The red ink annotation below (`Verpfleter...`) appears to be a later administrative note regarding a pledge/mortgage (*verpfändet*) and does not contain parcel numbers or areas in the visible portion.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445391,
+  "id": "202609270156107b460ddaee3d46f3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609270156107b460ddaee3d46f3",
+  "usage": {
+    "completion_tokens": 756,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2127,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2883
+  }
+}
