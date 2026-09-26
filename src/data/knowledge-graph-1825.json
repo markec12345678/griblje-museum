@@ -1,7 +1,7 @@
 {
- "val": 72,
- "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2",
- "title": "knowledge-graph-1825 v1.5",
+ "val": 74,
+ "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat",
+ "title": "knowledge-graph-1825 v1.6",
  "findings": [
   {
    "finding_id": "KG-F01",
@@ -123,6 +123,7 @@
     "uodid": 373418,
     "docid": 41783,
     "pages": 1,
+    "coverage": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4)",
     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418"
    },
    {
@@ -384,6 +385,7 @@
    "uodid": 373418,
    "docid": 41783,
    "pages": 1,
+   "coverage": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4)",
    "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373418"
   },
   {
@@ -103576,7 +103578,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-26T07:30:00Z",
+   "generated_at": "2026-09-26T09:45:17Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103598,7 +103600,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-09-26T07:30:00Z",
+   "generated_at": "2026-09-26T09:45:17Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103625,7 +103627,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-09-26T07:30:00Z",
+   "generated_at": "2026-09-26T09:45:17Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103652,7 +103654,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-26T07:30:00Z",
+   "generated_at": "2026-09-26T09:45:17Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }

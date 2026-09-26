@@ -553,7 +553,7 @@ function houseSections(nodeId: string, node: (typeof kg.nodes)[number]): StorySe
     if (withLandUse === 0) {
       parcele.push(
         item(
-          `Raba zemljišča za ${parcelEdges.length} povezanih parcel NI dokumentirana v prepisanih virih (PV — Ausweis über die Benützungsart [373418] je naslednji vir za prepis)`,
+          `Raba zemljišča za ${parcelEdges.length} povezanih parcel NI dokumentirana po parceli — PV [373418] je prepisan (val 74): uradne AGREGATNE površine po kulturah (njive 413 J 870 K, pašniki 636 J 263 K, travniki 76 J 1480 K; skupaj 1221 J 1573 K), ne pa raba posamezne parcele (§4: ne ugibamo)`,
           "UNKNOWN",
           ["SRC-PV"],
           []
@@ -564,7 +564,7 @@ function houseSections(nodeId: string, node: (typeof kg.nodes)[number]): StorySe
         item(
           `Raba zemljišča dokumentirana za ${withLandUse} od ${parcelEdges.length} povezanih parcel — preostalih ${
             parcelEdges.length - withLandUse
-          } brez prepisa (PV — Ausweis über die Benützungsart [373418] je naslednji vir)`,
+          } brez zapisa po parceli (PV [373418] prepisan val 74: samo agregatne površine po kulturah; per-parcelna raba čaka PS p56–143)`,
           "UNKNOWN",
           ["SRC-PV"],
           []
@@ -959,11 +959,11 @@ export function generateVillageStory(): VillageStory {
       item(
         `Raba zemljišča za preostalih ${
           parcels.length - documentedUse.length
-        } parcel NI še prepisana${
+        } parcel NI še dokumentirana po parceli${
           landUseParcels.length > documentedUse.length
             ? ` (od tega ${landUseParcels.length - documentedUse.length} z neznano kategorijo iz PS)`
             : ""
-        } — vir PV — Ausweis über die Benützungsart des Bodens [373418] je dokumentiran in čaka na prepis; NIČ ne ugibamo (§9)`,
+        } — PV [373418] prepisan (val 74): uradne agregatne površine po kulturah (skupaj 1221 J 1573 K = 7,032 km²), ne pa per-parcelna raba; NIČ ne ugibamo (§9)`,
         "UNKNOWN",
         ["SRC-PV"],
         []

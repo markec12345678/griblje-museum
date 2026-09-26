@@ -1,5 +1,5 @@
 {
- "val": 72,
+ "val": 74,
  "pass": "PASS 8",
  "issue": 42,
  "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "cbf32c2ede0f06918f604eeda14c2762439ca02cb4575a5da619aab838a89da5",
+  "kg_sha256": "809ef581c7cf4cf39f6c655812a564e57e163f39b9a21b3e31d4d4a003d1162e",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -345,8 +345,8 @@
    "category_id": "sources",
    "title": "Viri (katalog dokumentov SI AS 176/N/N83 + kartografija)",
    "total": 13,
-   "VERIFIED": 9,
-   "PARTIAL": 4,
+   "VERIFIED": 10,
+   "PARTIAL": 3,
    "CONFLICT": 0,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -398,7 +398,7 @@
       "uodid": 373418,
       "docid": 41783,
       "pages": 1,
-      "status": "PARTIAL"
+      "status": "VERIFIED"
      },
      {
       "source_id": "SRC-PZ",
