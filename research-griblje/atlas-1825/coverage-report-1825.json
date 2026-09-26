@@ -1,5 +1,5 @@
 {
- "val": 74,
+ "val": 75,
  "pass": "PASS 8",
  "issue": 42,
  "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "809ef581c7cf4cf39f6c655812a564e57e163f39b9a21b3e31d4d4a003d1162e",
+  "kg_sha256": "b150db193957e173ba3eadba0936449963a73b30c3d6da302329d9f5155ab6d5",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -366,7 +366,8 @@
       "uodid": 373415,
       "docid": 41780,
       "pages": 143,
-      "status": "VERIFIED"
+      "status": "VERIFIED",
+      "note": "vrstični prepis p3–55 (1073 vrstic); p56–143 strukturni re-read brez vrstic (F-PZ-09, val 75)"
      },
      {
       "source_id": "SRC-PT",
@@ -382,7 +383,8 @@
       "uodid": 373414,
       "docid": 41779,
       "pages": 4,
-      "status": "PARTIAL"
+      "status": "PARTIAL",
+      "note": "identiteta (uodid) potrjena; Grenz-Beschreibung NE prebrana"
      },
      {
       "source_id": "SRC-PG",
@@ -390,7 +392,8 @@
       "uodid": 373413,
       "docid": 41778,
       "pages": 1,
-      "status": "PARTIAL"
+      "status": "PARTIAL",
+      "note": "identiteta (uodid) potrjena; vsebina NE prebrana"
      },
      {
       "source_id": "SRC-PV",
@@ -398,7 +401,8 @@
       "uodid": 373418,
       "docid": 41783,
       "pages": 1,
-      "status": "VERIFIED"
+      "status": "VERIFIED",
+      "note": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4) — agregat po kulturah"
      },
      {
       "source_id": "SRC-PZ",
@@ -406,7 +410,8 @@
       "uodid": 373419,
       "docid": 41784,
       "pages": 71,
-      "status": "PARTIAL"
+      "status": "PARTIAL",
+      "note": "TRANSCRIBED_PARTIAL (val 75): struktura 71/71 + ključna branja (prebivalstvo 1830, površina, Endresultat p67); celotni vrstični prepis NE"
      },
      {
       "source_id": "SRC-A01",
