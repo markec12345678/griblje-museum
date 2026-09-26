@@ -3698,3 +3698,28 @@ Stage Summary:
 - ATLAS 1825 §20 TIME SLIDER ZAKLJUČEN IN ŽIV NA VSEH PLATFORMAH: arhitektura časovnih točk (1825 lastninska resnica + 1830 prebivalstveni korak + 6 izrecnih AWAITING_SOURCE 1857–1910) s pogodbo brez interpolacij
 - 488 testov + 101/101 dimnih; KG v1.7 nespremenjen (b150db19…); viri 10/13 VERIFIED; +0 virov/+0 trditve/+0 KG — nov pogled na iste dokaze
 - Naslednje: 1) PZ celotni vrstični prepis + Summa kontrola (F-PZ-04 → polni deleži 1830); 2) PS p56–143 vrstični prepis (F-PV-03 vinogradi) ob VAČ kvoti; 3) PT p7 @300dpi (F-GEO-03); 4) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli; 5) prva AWAITING točka se izpolni šele s prepisanim virom (pogodba stoji)
+
+---
+Task ID: 38
+Agent: Z.ai Code (main orchestrator)
+Task: Val 77 — ISSUE #42 §4/§14: PZ N83 PASS 2 — odločilni re-read Endresultata p67 + §8 z aritmetičnimi vrati I4–I6 (user: "odlicno nadaljuj")
+
+Work Log:
+- Kontinuiteta: val 76 mergan (main @ df884b5, PR #64); naslednje po worklogu = PZ Summa kontrola (F-PZ-04 → polni deleži 1830); peskovnik po resetu: lokalni klon na feat/val74 → sync main @ df884b5
+- PREHOD 3 (metoda val 77): izrezki celic Joch/□Klafter p67 pri 3× (crops/p67-area/, 22 pasov crops/p67-rows/) + §8 per vrstica (crops/p6-tab-*, crops/p6-zus-*); 2 neodvisna VLM prehoda na dvomljive celice + direkten odtis; revizijski vzorec 'trenutna NAD prečrtano' dokumentiran na 5 neodvisnih celicah
+- 4 KOREKCIJE val-75 branj (vsaka z dokazom): Summa 1132 → 1152 J 495 K (Kurrent 3↔5) · Bauarea 1499 → 1 J 1199 K (§8 'Zu den Unbenützten' EXACT) · GG 105 → 405 K (§8 EXACT) · WmH Klf 846 → 558 (§8 prečrtava) · Wiesen §8 55 → 45 J 812 K → Wiesen I = 5 J izpeljano (GATED I5; 15 J aritmetično nemogoče)
+- Vrata I4–I6 (fail-fast, EXACT, neodvisno v TS): I4 6/6 kultur zapa §8 Einzeln; I5 Wiesen I+II = 45|812; I6 vrstice 1–8 (1149 J 495 K) + unbenützbar (71 J 998 K izpeljano = F-PZ-10 REVIEW) = 1220 J 1493 K Total (PV-validirano)
+- F-PZ-04 ožjan: Δ 43.488 → 3 J = 4.800 QKlft NATANČNO, OSTAJA OPEN (Klf stolpec se zapira 495=495; pisarjevska nekonsistentnost; nič vsiljeno §4)
+- Deleži rabe 1830 (F-PZ-13): njive 33,96 % · pašniške 55,43 % (HW 9,70 + WmH 45,73) · travniki 3,73 % · vinogradi 0,58 % — vsota EXACT nad Total; v data sloju; UI 'pasture_share' ostaja absent (pogodba val 76); absent besedilo posodobljeno (i18n × 5)
+- F-PZ-12: p43–47 celostranski VLM prepis pošteno ZAVRJEN (halucinacije na gostem Kurrentu @182 dpi; strukturno branje val 75 ohranjeno; čaka @300 dpi); p30 + p63 1. prehod v structure_map
+- Vgradnja: build-pz-1825.py PASS 2 (13 najdb) · KG v1.8 (KG-F09; 3.309/3.569/622 stabilni; kg_sha256 → 20ec8a0a → story_id po §22) · coverage rebuild · timeline re-derived (metrike 1830 nespremenjene) · story engine gozd item 558 J 558 K
+- INFRA: ubit star dev strežnik (/home/z/griblje-museum, val 76) — poučna epizoda: parent my-project/.env preglasil DATABASE_URL (val 72 vzorec) → zagon z IZRECnim env; PG embedded @ 5432 ponovno uporabljen
+- QA: tests/pz-konskripcija.test.ts 19 testov/174 expect → 494/494 · api-smoke 101/101 · tsc/lint čisti · verify-i18n 1074×5 · e2e (agent-browser): ČAS 1830 z novim absent besedilom ✓, EXPLORE filtri ✓, 390 px brez preliva ✓, noga na dnu ✓, konzola 0 napak
+- Push: feat/val77-pz-pass2 → PR #65 → CI 3/3 ZELENO (tudi Vercel Preview) → MERGE main @ 9bfe982; branch izbrisan (204 + lokalno)
+- Poročilo #42: comment-5847041821 · DEPLOY VERIFIKACIJA: **Vercel produkcija ŽIV z val 77** (coverage val 77; timeline 1830 absent reason '4.800' OK; story '558 J 558 K' ✓, stara '558 J 846 K' odsotna) · **Render mirror ŽIV z val 77** (iste preverbe OK) — VSE TRI PLATFORME SINHRONE
+- Dokumentacija: research-griblje/90-val77-pz-pass2-endresultat.md; README 130. sklop; 00-KAZALO vnos 90; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825: PZ Endresultat p67 + §8 ODLOČILNO PREBRANA — 4 korekcije val-75 branj z izrezki + vrata I4–I6; Total vrata se zaprejo EXACT (vrstice + unbenützbar = 1220 J 1493 K); deleži 1830 izpeljani (data sloj); F-PZ-04 ožjan na Δ 3 J, ostaja OPEN pošteno
+- KG v1.8 (20ec8a0a; 3.309/3.569/622 stabilni); viri 10/13 VERIFIED (nespremenjeno); 494 testov + 101/101 dimnih; +0 virov/+0 trditve per-parcel
+- Naslednje: 1) Rektifikacija p35–40 per-parcelna kontrola (F-PZ-04: kje so 'izgubljeni' 3 Joch); 2) PS p56–143 vrstični prepis (F-PV-03 vinogradi) ob VAČ kvoti; 3) p30/p63/p65 2. prehod @300 dpi (F-PZ-12); 4) PT p7 @300dpi (F-GEO-03); 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
