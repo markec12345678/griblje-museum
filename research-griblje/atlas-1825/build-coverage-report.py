@@ -608,7 +608,7 @@ outputs = [
 # ---------------------------------------------------------------------------
 # 3a) a01-coverage-1825 — BP↔A01 matrica po issue #42 §7
 a01_coverage = {
-    "val": 77,
+    "val": 78,
     "pass": "PASS 8",
     "issue": 42,
     "title": "A01/A02↔BP coverage 1825 — kartografska vezava (izpeljan iz inventarjev)",
@@ -627,7 +627,7 @@ a01_coverage = {
 sheet_cov = pass4b.get("counts") or {}
 a01_counts = a01_inv.get("counts") or {}
 cadastral = {
-    "val": 77,
+    "val": 78,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Katastrski listi pokritost — A01–A05 (izpeljan iz inventarjev + KG)",
@@ -654,7 +654,7 @@ cadastral = {
 
 # 3c) source-coverage-1825 — pokritost virov (issue #42 §6/§14)
 source_coverage = {
-    "val": 77,
+    "val": 78,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.5 + registrov)",
@@ -666,18 +666,18 @@ source_coverage = {
         "PS": {"pages": 143, "rows": len(ps_rows), "passes": 2, "note": "vrstični prepis pokriva SAMO p3–55 (1073 vrstic); p56–143 = strukturni re-read (val 61), vrstice NE (F-PZ-09, val 75); per-parcelna raba čaka (F-SE-01/F-PV-03)"},
         "PT": {"pages": 8, "rows": len(pt_rows), "passes": 2, "note": "+ p8 Musterstellung"},
         "PV": {"pages": 1, "rows": 19, "passes": 2, "note": "val 74: uradne agregatne površine po kulturah (1221 J 1573 K = 7,032 km²), aritmetična vrata I1–I4; NI raba po parcelah (§4)"},
-        "PZ": {"pages": 71, "rows": 0, "passes": 2, "note": "val 75: TRANSCRIBED_PARTIAL — struktura 71/71 (kontaktne plošče) + ključna branja: prebivalstvo 1830 (441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin), živina §4 (124/20/30/150/30), površina §1 (rdeči popravek 1220 J 1493 K; PV Δ 0,086 %), Weingärten §7 (7 J 42 K), Endresultat p67 (Summa OPEN — F-PZ-04); celotni vrstični prepis NI"},
+        "PZ": {"pages": 71, "rows": 0, "passes": 4, "note": "val 75+77+78: TRANSCRIBED_PARTIAL — struktura 71/71 + ključna branja (prebivalstvo 1830: 441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin; živina 124/20/30/150/30; površina §1 rdeči popravek 1220 J 1493 K, PV Δ 0,086 %) + val 77 odločilni re-read p67+§8 z vrati I4–I6 (Summa 1152 J 495 K; Δ 3 J — F-PZ-04 ožjan, ostaja OPEN; deleži 1830 F-PZ-13) + val 78 §8 rdeči stolpec 'Zusammen' strukturiran (post-revizijske površine, REVIEW — F-PZ-15) + rešitvene poti p26/p27/p30/p32/p63/p65 ovržene (F-PZ-14); celotni vrstični prepis NI"},
     },
     "six_status": src_six,
     "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
-    "next_reads": ["PS p56–143 vrstični prepis ob kvoti (raba po parcelah; F-PV-03 vinogradi ostaja OPEN — PZ potrdila vinograde na ravni kategorij, val 75)", "PZ celotni vrstični prepis (66/71 strani brez strukturnega branja; Summa p67 kontrola — F-PZ-04)", "PT p7 @300dpi (KG-F01/F04)", "PR Grenz-Beschreibung (mejne točke; tudi F-PZ-05 meje)"],
+    "next_reads": ["PS p56–143 vrstični prepis ob kvoti (raba po parcelah; F-PV-03 vinogradi ostaja OPEN)", "PZ §8 rdeče števke re-digitation @višja ločljivost (VAČ II. prikaz — F-PZ-15 REVIEW)", "PZ celotni vrstični prepis (66/71 strani brez strukturnega branja; F-PZ-12 zavrnjen VLM prepis čaka VAČ IIIF @300 dpi)", "PT p7 @300dpi (KG-F01/F04)", "PR Grenz-Beschreibung (mejne točke; tudi F-PZ-05 meje)"],
 }
 
 # 3d) atlas-map-data-model-1825 — podatkovni model zemljevida (issue #42 §15)
 node_stats = kg.get("node_stats") or {}
 edge_stats = kg.get("edge_stats") or {}
 map_model = {
-    "val": 77,
+    "val": 78,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Atlas map data model v1 — podatkovni zemljevid (izpeljan iz KG v1.5 + val 67 slojev)",
@@ -705,7 +705,7 @@ map_model = {
 
 # 3e) story-engine-spec-1825 — pogodba zgodbonizacije (issue #42 §16/§17/§22)
 story_engine = {
-    "val": 77,
+    "val": 78,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Story engine spec v1 — evidence-first zgodbonizacija (izpeljan iz val 69 izvedbe)",
@@ -732,7 +732,7 @@ story_engine = {
 # 4. MASTER COVERAGE REPORT
 # ---------------------------------------------------------------------------
 quality_gate = {
-    "val": 77,
+    "val": 78,
     "pass": "PASS 8",
     "issue": 42,
     "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
