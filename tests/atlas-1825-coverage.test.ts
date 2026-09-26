@@ -283,8 +283,8 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       expect(existsSync(p)).toBe(true);
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
-      // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 77) + izpeljani artefakti nosijo svoj val
-      expect([72, 74, 77]).toContain(d.val);
+      // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 78) + izpeljani artefakti nosijo svoj val
+      expect([72, 74, 78]).toContain(d.val);
     }
   });
 
