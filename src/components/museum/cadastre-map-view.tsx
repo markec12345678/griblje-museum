@@ -10,9 +10,19 @@ import {
   TileLayer,
   useMap,
 } from "react-leaflet";
-import { Search } from "lucide-react";
+import { BookOpen, Search } from "lucide-react";
 import { markerIcon } from "@/components/museum/leaflet-map";
 import { useLang } from "@/lib/i18n";
+import { AtlasStoryDialog, StoryButton } from "@/components/museum/atlas-story";
+import {
+  bpNodeRef,
+  matchesExploreQuery,
+  modeAllowsTier,
+  staticRowVisible,
+  exploreTierOfStaticRow,
+  exploreTierOfStatus,
+  type ExploreMode,
+} from "@/lib/atlas-explore";
 import cadastre from "@/data/cadastre-a01.json";
 
 /**
@@ -172,10 +182,27 @@ function InvalidateOnMount() {
 export function CadastreMapView() {
   const { t, lang } = useLang();
   const k = t.kataster;
-  const [tab, setTab] = React.useState<"sheet" | "today">("sheet");
+  const s = t.atlasStory;
+  const [tab, setTab] = React.useState<"sheet" | "today" | "explore">("sheet");
   const [query, setQuery] = React.useState("");
   const [opacity, setOpacity] = React.useState(0.55);
   const [target, setTarget] = React.useState<[number, number] | null>(null);
+
+  /* --- EXPLORE 1825 (§19): zgodba iz dokazov + filtri + dialog --- */
+  const [storyRef, setStoryRef] = React.useState<string | null>(null);
+  const [exploreFilterMode, setExploreFilterMode] = React.useState<ExploreMode>("all");
+  const [exploreQuery, setExploreQuery] = React.useState("");
+  const exploreActive = tab === "explore";
+
+  /** Klik na toponim: razreši TOPONYM node prek evidence iskanja, nato zgodba. */
+  const openToponymStory = React.useCallback((name: string) => {
+    fetch(`/api/atlas/evidence?q=${encodeURIComponent(name)}&type=TOPONYM`)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((d: { results?: { node_id?: string }[] }) => {
+        setStoryRef(d.results?.[0]?.node_id ?? `toponym:${name}`);
+      })
+      .catch(() => setStoryRef(`toponym:${name}`));
+  }, []);
 
   /* --- podatkovni sloji KG (PASS 5): naloži enkrat, prikaži z stikali --- */
   const [kgData, setKgData] = React.useState<KgMapData | null>(null);
@@ -222,6 +249,61 @@ export function CadastreMapView() {
     );
   }, [q]);
 
+  /* --- vidnost slojev v EXPLORE načinu (§19: samo dokazano / konflikti / neznano) --- */
+  const visibleBuildings = React.useMemo(() => {
+    if (!exploreActive) return data.buildings;
+    return data.buildings.filter(
+      (b) =>
+        staticRowVisible(b, exploreFilterMode) &&
+        matchesExploreQuery(exploreQuery, [b.bp, b.house_no, b.owner])
+    );
+  }, [exploreActive, data.buildings, exploreFilterMode, exploreQuery]);
+
+  const visibleKgObjects = React.useMemo(() => {
+    if (!exploreActive) return kgObjectsA01;
+    return kgObjectsA01.filter(
+      (m) =>
+        modeAllowsTier(exploreTierOfStatus(m.evidence_status), exploreFilterMode) &&
+        matchesExploreQuery(exploreQuery, [m.label, m.bp_glyph, m.node_id])
+    );
+  }, [exploreActive, kgObjectsA01, exploreFilterMode, exploreQuery]);
+
+  const visibleKgHouses = React.useMemo(() => {
+    if (!exploreActive) return kgHousesLocated;
+    return kgHousesLocated.filter(
+      (h) =>
+        modeAllowsTier(exploreTierOfStatus(h.evidence_status), exploreFilterMode) &&
+        matchesExploreQuery(exploreQuery, [h.house_no_1825, h.node_id])
+    );
+  }, [exploreActive, kgHousesLocated, exploreFilterMode, exploreQuery]);
+
+  const exploreCounts = React.useMemo(() => {
+    if (!exploreActive) return null;
+    const tiered = {
+      DOKAZANO: 0,
+      VERJETNO: 0,
+      KONFLIKTNO: 0,
+      NEZNANO: 0,
+    } as Record<string, number>;
+    for (const b of data.buildings) tiered[exploreTierOfStaticRow(b)] += 1;
+    for (const m of kgObjectsA01) tiered[exploreTierOfStatus(m.evidence_status)] += 1;
+    for (const h of kgHousesLocated) tiered[exploreTierOfStatus(h.evidence_status)] += 1;
+    return {
+      tiers: tiered,
+      visible:
+        visibleBuildings.length + visibleKgObjects.length + visibleKgHouses.length,
+      total: data.buildings.length + kgObjectsA01.length + kgHousesLocated.length,
+    };
+  }, [
+    exploreActive,
+    data.buildings,
+    kgObjectsA01,
+    kgHousesLocated,
+    visibleBuildings.length,
+    visibleKgObjects.length,
+    visibleKgHouses.length,
+  ]);
+
   const badge =
     "inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide";
 
@@ -249,6 +331,7 @@ export function CadastreMapView() {
             [
               ["sheet", k.tabSheet],
               ["today", k.tabToday],
+              ["explore", s.tabExplore],
             ] as const
           ).map(([id, label]) => (
             <button
@@ -267,12 +350,21 @@ export function CadastreMapView() {
             </button>
           ))}
         </div>
+        {exploreActive ? (
+          <button
+            onClick={() => setStoryRef("village")}
+            className="flex shrink-0 items-center gap-2 rounded-lg border border-[#2f6f4f]/40 bg-[#2f6f4f]/10 px-4 py-2.5 text-sm font-semibold text-[#2f6f4f] transition-colors hover:bg-[#2f6f4f]/20"
+          >
+            <BookOpen className="h-4 w-4" aria-hidden="true" />
+            {s.villageStory}
+          </button>
+        ) : null}
       </div>
 
       <div className="grid gap-0 lg:grid-cols-[1fr_340px]">
         {/* ——— ZEMLJEVID ——— */}
         <div className="relative h-[70vh] min-h-[420px] border-b border-border/70 lg:border-b-0 lg:border-r">
-          {tab === "sheet" ? (
+          {tab !== "today" ? (
             <MapContainer
               key="kataster-sheet"
               crs={CRS.Simple}
@@ -294,7 +386,7 @@ export function CadastreMapView() {
               <InvalidateOnMount />
               <FlyToTarget target={target} zoom={0} />
               {/* Stavbne parcele */}
-              {data.buildings.map((b) => {
+              {visibleBuildings.map((b) => {
                 const label = b.owner
                   ? `${k.bp} ${b.bp}${b.house_no ? ` · ${k.houseNo} ${b.house_no}` : ""} — ${b.owner}`
                   : `${k.bp} ${b.bp}`;
@@ -331,6 +423,13 @@ export function CadastreMapView() {
                             {k.evidence}: {b.link_source}
                           </p>
                         ) : null}
+                        <div>
+                          <StoryButton
+                            compact
+                            label={s.storyOfHouse}
+                            onClick={() => setStoryRef(bpNodeRef(b.bp))}
+                          />
+                        </div>
                       </div>
                     </Popup>
                   </Marker>
@@ -356,13 +455,20 @@ export function CadastreMapView() {
                         {k.toponym}
                       </p>
                       <p className="text-sm font-semibold">{tp.name}</p>
+                      <div className="mt-1.5">
+                        <StoryButton
+                          compact
+                          label={s.storyOfToponym}
+                          onClick={() => openToponymStory(tp.name)}
+                        />
+                      </div>
                     </div>
                   </Popup>
                 </Marker>
               ))}
               {/* KG sloj: kartografski objekti atlasa 1825 (val 65/66, §15) */}
               {kgState === "ready" && showKgObjects
-                ? kgObjectsA01.map((m) => {
+                ? visibleKgObjects.map((m) => {
                     if (!m.px) return null;
                     const label = `${m.label}${m.bp_glyph ? ` · BP ${m.bp_glyph}` : ""}`;
                     return (
@@ -384,14 +490,21 @@ export function CadastreMapView() {
                               {m.bp_glyph ? ` · BP ${m.bp_glyph}` : ""}
                             </p>
                             <p className="text-[11px] text-amber-700">{m.georef_status}</p>
-                            <a
-                              className="inline-block text-xs font-semibold text-[#2f6f4f] underline underline-offset-2"
-                              href={m.evidence_url}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {k.kgEvidence} ↗
-                            </a>
+                            <div className="flex flex-wrap items-center gap-2">
+                              <StoryButton
+                                compact
+                                label={s.storyOfEntity}
+                                onClick={() => setStoryRef(m.node_id)}
+                              />
+                              <a
+                                className="inline-block text-xs font-semibold text-[#2f6f4f] underline underline-offset-2"
+                                href={m.evidence_url}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {k.kgEvidence} ↗
+                              </a>
+                            </div>
                           </div>
                         </Popup>
                       </Marker>
@@ -400,7 +513,7 @@ export function CadastreMapView() {
                 : null}
               {/* KG sloj: hiše locirane prek dokazane verige BP → objekt */}
               {kgState === "ready" && showKgHouses
-                ? kgHousesLocated.map((h) => {
+                ? visibleKgHouses.map((h) => {
                     if (!h.position) return null;
                     const label = `${k.houseNo} ${h.house_no_1825} · ${k.kgViaBp.replace("{bp}", String(h.position.via_bp))}`;
                     return (
@@ -428,14 +541,21 @@ export function CadastreMapView() {
                                 BP: {h.bp_refs.map((r) => `${r.bp} (${r.final_status})`).join(" · ")}
                               </p>
                             ) : null}
-                            <a
-                              className="inline-block text-xs font-semibold text-[#2f6f4f] underline underline-offset-2"
-                              href={h.evidence_url}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {k.kgEvidence} ↗
-                            </a>
+                            <div className="flex flex-wrap items-center gap-2">
+                              <StoryButton
+                                compact
+                                label={s.storyOfHouse}
+                                onClick={() => setStoryRef(h.node_id)}
+                              />
+                              <a
+                                className="inline-block text-xs font-semibold text-[#2f6f4f] underline underline-offset-2"
+                                href={h.evidence_url}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {k.kgEvidence} ↗
+                              </a>
+                            </div>
                           </div>
                         </Popup>
                       </Marker>
@@ -577,18 +697,85 @@ export function CadastreMapView() {
             ) : (
               <p className="mt-3 text-[11px] text-muted-foreground">{k.kgError}</p>
             )}
+            {exploreActive ? (
+              <div className="mt-3 rounded-lg border border-[#2f6f4f]/30 bg-[#2f6f4f]/5 p-3">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-stone-500">
+                  {s.filters}
+                </p>
+                {/* query filter (lastnik / BP / hiša) */}
+                <input
+                  type="search"
+                  value={exploreQuery}
+                  onChange={(e) => setExploreQuery(e.target.value)}
+                  placeholder={s.searchPlaceholder}
+                  className="mt-2 h-10 w-full rounded-lg border border-border/70 bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+                  aria-label={s.searchPlaceholder}
+                />
+                {/* dokazni načini (§19): vse / samo dokazano / konflikti / neznano */}
+                <div
+                  className="mt-2 flex flex-wrap gap-1.5"
+                  role="group"
+                  aria-label={s.filters}
+                >
+                  {(
+                    [
+                      ["all", s.modeAll],
+                      ["evidenced", s.modeEvidenced],
+                      ["conflicts", s.modeConflicts],
+                      ["unknown", s.modeUnknown],
+                    ] as const
+                  ).map(([id, label]) => (
+                    <button
+                      key={id}
+                      onClick={() => setExploreFilterMode(id)}
+                      aria-pressed={exploreFilterMode === id}
+                      className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition-colors ${
+                        exploreFilterMode === id
+                          ? "border-[#2f6f4f] bg-[#2f6f4f] text-white"
+                          : "border-border/70 bg-background text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                {exploreCounts ? (
+                  <p className="mt-2 text-[11px] text-muted-foreground">
+                    {s.exploreCounts
+                      .replace("{visible}", String(exploreCounts.visible))
+                      .replace("{total}", String(exploreCounts.total))}
+                  </p>
+                ) : null}
+                {/* raba zemljišč — pošteno: parcelni sloj še ni na zemljevidu */}
+                <fieldset disabled className="mt-2" aria-describedby="explore-use-note">
+                  <legend className="text-[11px] font-semibold text-muted-foreground">
+                    {s.filterUse}
+                  </legend>
+                  <p id="explore-use-note" className="mt-1 text-[11px] leading-snug text-muted-foreground">
+                    {s.filterUseNote}
+                  </p>
+                </fieldset>
+                <p className="mt-2 text-[11px] leading-snug text-muted-foreground">{s.exploreNote}</p>
+              </div>
+            ) : null}
           </div>
           <ul className="min-h-0 flex-1 divide-y divide-border/50 overflow-y-auto" role="list">
-            {filtered.map((b) => (
+            {(exploreActive ? visibleBuildings : filtered).map((b) => (
               <li key={`row-${b.bp}-${b.px}`} className="px-4 py-3">
                 <button
                   className="w-full text-left"
-                  onClick={() =>
+                  onClick={() => {
                     setTarget(
-                      tab === "sheet"
-                        ? [data.overlay.px_size[1] - b.py, b.px]
-                        : [b.lat, b.lng]
-                    )
+                      tab === "today"
+                        ? [b.lat, b.lng]
+                        : [data.overlay.px_size[1] - b.py, b.px]
+                    );
+                    if (exploreActive) setStoryRef(bpNodeRef(b.bp));
+                  }}
+                  aria-label={
+                    exploreActive
+                      ? `${s.storyOfHouse}: ${b.owner ?? `${k.bp} ${b.bp}`}`
+                      : undefined
                   }
                 >
                   <span className="flex items-center gap-2">
@@ -625,7 +812,7 @@ export function CadastreMapView() {
                 </button>
               </li>
             ))}
-            {plain.length === filtered.length && filtered.length === 0 && (
+            {(exploreActive ? visibleBuildings : filtered).length === 0 && (
               <li className="px-4 py-6 text-sm text-muted-foreground">{k.noResults}</li>
             )}
           </ul>
@@ -647,6 +834,9 @@ export function CadastreMapView() {
           <p className="mt-1">{data.meta.scale_note} · {data.meta.missing_bp}</p>
         </div>
       </div>
+
+      {/* ——— ZGODBA (§16/§19): dialog iz dokazov ——— */}
+      <AtlasStoryDialog entity={storyRef} onClose={() => setStoryRef(null)} />
     </section>
   );
 }
