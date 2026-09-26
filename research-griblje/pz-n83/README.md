@@ -5,3 +5,4 @@
 - `N083PZ.pdf` — originalni PDF; `native/p01–p71.jpeg` — nativni skeni (pymupdf, metoda val 56)
 - `sheets/` — kontakne plošče (PREHOD 1: struktura); `crops/` — delovni izrezki; `z-*.jpeg` — dokazni izrezki (ključna branja, 2 prehoda)
 - Builder: `../atlas-1825/build-pz-1825.py` → `../atlas-1825/pz-konskripcija-1830.json` (invarianti I1–I3 fail-fast)
+- **Val 80 (F-PZ-17)**: VAČ topološka izčrpnost — `pdfPageImage` = fiksna 608px predogleda; session IIIF raster = ovitek 100×50; OCR sloj prazen; PDF = 1 rastri/stran (~150 dpi) → **nativi so maksimum portala**; nativna re-digitation variančnih celic: `../raw-web-val80-2026-10/` (crops-v80/, anchors.json, vlm/, redigitize-v80.mts)
