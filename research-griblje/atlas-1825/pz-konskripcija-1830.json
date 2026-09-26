@@ -1,6 +1,6 @@
 {
-  "val": 77,
-  "pass": "PZ PASS 2 (odločilni re-read p67 + §8, aritmetična vrata I4–I6, deleži 1830)",
+  "val": 78,
+  "pass": "PZ PASS 3 (val 78: §8 rdeči stolpec 'Zusammen' strukturiran + verifikacija rešitvenih poti; I4–I6 nespremenjeni)",
   "issue": 42,
   "deterministic": true,
   "title": "PZ N83 — Katastral-Schätzungs-Elaborat (Konskripcija) 1828/30 [373419]",
@@ -9,7 +9,8 @@
     "passes": [
       "PREHOD 1 (val 75): struktura — 8 kontaktnih plošč (sheets/) × 9 strani",
       "PREHOD 2 (val 75): ključna branja digit-by-digit 2,6×–5× (crops/ + z-*.jpeg dokazni izrezki)",
-      "PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na dvomljive celice + direktni odtis avtorja transkripcije; aritmetična vrata I4–I6 odločijo vsako dvomljivo števko"
+      "PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na dvomljive celice + direktni odtis avtorja transkripcije; aritmetična vrata I4–I6 odločijo vsako dvomljivo števko",
+      "PREHOD 4 (val 78, neodvisni prehod): §8 rdeči stolpec 'Zusammen' strukturiran (2 prehoda pri 6×–12×, crops-v78/, 33 izrezkov) + verifikacija rešitvenih poti p26/p27/p30/p32/p63/p65 — nobena ne vsebuje površin"
     ],
     "native_scans": "pz-n83/native/p01–p71.jpeg (pymupdf, metoda val 56)",
     "deterministic": true,
@@ -184,10 +185,102 @@
       "note": "= §1 rdeči popravek EXACT; PV Δ 0,086 %"
     },
     "zusammen_column_semantics": {
-      "status": "REVIEW",
-      "note": "rdeči 'Zusammen' stolpec (WG 6|1059 = §7 revizija; Aecher 419[?]|1382[?]; WmH 354|1258 prečrtano → 1150[?]|1582[?]) — semantika nepotvrjena; NI podlaga za trditve, nič se ne vsiljuje (§4)"
+      "status": "STRUCTURED-V78",
+      "note": "rdeči 'Zusammen' stolpec = post-revizijske površine (Rektifikacija 1830) — strukturiran in prebran v revision_1830_zusammen (val 78, 2 prehoda pri 6x-12x, crops-v78/)"
     },
     "evidence": "pz-n83/crops/p6-tab-*.jpeg + crops/p6-zus-*.jpeg (val 77)"
+  },
+  "revision_1830_zusammen": {
+    "title": "§8 (p6) rdeči stolpec 'Zusammen' — post-revizijske površine po kulturah (Rektifikacija 1830)",
+    "source_page": 6,
+    "evidence": "pz-n83/crops-v78/p6-red-col-8x.png + p6-red-*-10x.png + p6-weiden-subtotal-6x.png + p6-bottom-8x.png",
+    "passes": 2,
+    "rows": [
+      {
+        "kultur": "Aecher",
+        "joch": 419,
+        "klafter": 1382,
+        "reading_status": "REVIEW",
+        "note": "crno (val 77 I4) 414 J 962 K; rdece 419 J 1382 K — stevke 1/9 in 3/5 REVIEW (kurrentska dvoumnost)"
+      },
+      {
+        "kultur": "Wiesen",
+        "joch": 45,
+        "klafter": 167,
+        "reading_status": "REVIEW",
+        "note": "val 78 usklajeno s crno korekcijo val 77 (55->45 J): rdece joch 45[?] (prvotna branja '44/55' — 4/5 dvoumnost); rdeci klafter 162-167 dvoumen"
+      },
+      {
+        "kultur": "Kleine Gaerten",
+        "joch": 2,
+        "klafter": 1166,
+        "reading_status": "REVIEW",
+        "note": "crno 3 J 615 K; rdece 2 J 1166 K (ali 1266) — REVIEW"
+      },
+      {
+        "kultur": "Groessere Gaerten",
+        "joch": 0,
+        "klafter": 1460,
+        "reading_status": "REVIEW",
+        "note": "crno (val 77) - J 405 K; rdece - J 1460 K (ali 1480) — REVIEW"
+      },
+      {
+        "kultur": "Weingaerten",
+        "joch": 6,
+        "klafter": 1059,
+        "reading_status": "TRANSCRIBED",
+        "note": "krizno potrjeno: §7 p21 rdeca revizija 6 J 1059 K (F-PZ-06) = §8 rdeci stolpec — edina rdeca vrstica z neodvisno potrditvijo"
+      },
+      {
+        "kultur": "Huthweiden",
+        "joch": 121,
+        "klafter": 1190,
+        "reading_status": "REVIEW",
+        "note": "crno 118 J 702 K; rdece 121 J 1190 K — REVIEW"
+      },
+      {
+        "kultur": "Huthweiden mit Holznutzen",
+        "joch": 557,
+        "klafter": 1258,
+        "reading_status": "REVIEW",
+        "note": "crno (I4) 558 J 558 K; rdeci joch 557[?] / 354[?] (prva stevka 3/5 dvoumna, val 77 je videl 354 'precrtano') — REVIEW; klafter 1258"
+      }
+    ],
+    "subtotal_cultivirte": {
+      "joch": 1150,
+      "klafter": 1582,
+      "reading_status": "REVIEW",
+      "note": "rdeci subtotal vrstic 1-7 (pod crto); stevke REVIEW (val 77 je subtotal videl kot del WmH vrstice — lokacija v tabeli potrjena val 78)"
+    },
+    "unbenutzt_red": {
+      "bauarea": {
+        "joch": 1,
+        "klafter": 1199,
+        "reading_status": "TRANSCRIBED",
+        "note": "rdece aktivno nad crno precrtanim 1 J 1181 K; krizno = p67 Posten 8 aktiven 1199 (F-PZ-11)"
+      },
+      "unbenutzbar_voda": {
+        "joch": 68,
+        "klafter": 1019,
+        "reading_status": "REVIEW",
+        "note": "= vec-vrednostna celica F-PZ-10 (64[?]/68 J, 998/1019 K) — val 78 prebere aktivno 68 J 1019 K; ostaja REVIEW (skladno z I6 izpeljavo 71 J 998 K znotraj dvoumnosti)"
+      }
+    },
+    "total_flaeche": {
+      "joch": 1220,
+      "klafter": 1493,
+      "reading_status": "SOLID",
+      "note": "Total Flaeche der Gemeinde — EXACT enak §1 rdecemu popravku (1.953.493 QKlft; vrata I2/I6)"
+    },
+    "sum_check": {
+      "subtotal_plus_unbenutzt_qklft": 1954200,
+      "total_written_qklft": 1953493,
+      "delta_qklft": 707,
+      "delta_pct": 0.0364,
+      "closes": false,
+      "status": "OPEN-MICRO",
+      "note": "rdeca veriga subtotal+Bauarea+voda = 1.954.200 vs Total 1.953.493 (delta 707 QKlft = 0,036 %) — znotraj REVIEW negotovosti rdecih stevk (subtotal K / voda K); crni stolpec (I4-I6) se zapira EXACT — rdeci stolpec NI podlaga za deleze (F-PZ-15)"
+    }
   },
   "endresultat_p67": {
     "title": "Specifischer Ausweis der nach der Catastral Ertragserhebung entfallenden Endresultate (p66–67)",
@@ -813,6 +906,18 @@
       "title": "NOVO (val 77): strukturni deleži rabe 1830 izpeljani (vrata I4–I6)",
       "status": "RESOLVED",
       "detail": "Deleži iz vrat-solidnih vrstic nad Total 1220 J 1493 K: njive (Aecher) 33,96 % · pašniške kategorije (Hutweiden 9,70 % + Weiden mit Holznutzen 45,73 %) 55,43 % · travniki (Wiesen) 3,73 % · vinogradi 0,58 % · vrtovi 0,30 % · Bauarea 0,14 % · unbenützbar 5,87 % (izpeljano I6) — vsota 1.953.493 QKlft EXACT. Objavljeno v pz-konskripcija-1830.json; timeline UI 'pasture_share' ostaja absent dokler je F-PZ-04 OPEN (pogodba val 76)"
+    },
+    {
+      "id": "F-PZ-14",
+      "title": "NOVO (val 78): rešitvene poti F-PZ-04 iz val 75 preverjene — nobena ne vsebuje površin",
+      "status": "RESOLVED",
+      "detail": "Neodvisni prehod (2. seja) je prebral p26 (Verhältnisbestimmung, proza), p27 (Holznutzen razmerje), p30 (Resultate der benützten Behelfe — naravni pridelki: Metzen/Centner/Eimer po klasah), p32 (protokol: seštevek 7 kultur BREZ Bauarea + podpisi, 9. aprila 1830), p63 (Zusammenstellung B — Renta/Capitalwerth po Pachtverträgnih, dominikalne parcele), p65 (Zusammenstellung A — Culturfonds + Pro-cento odstotki Rein-Ertraga): nobena tabela NE vsebuje površin po kulturah — hipoteza val 75 ('možne rešitve: p30/p63/p65') dokončno ovržena; rešitev F-PZ-04 ostaja pri vrati I4–I6 (val 77) + pisarjevska nekonsistentnost Joch stolpca Summe"
+    },
+    {
+      "id": "F-PZ-15",
+      "title": "NOVO (val 78): §8 rdeči stolpec 'Zusammen' = post-revizijske površine — strukturiran (REVIEW, ni podlaga za deleže)",
+      "status": "REVIEW",
+      "detail": "Rdeči stolpec (Rektifikacija 1830) strukturiran v revision_1830_zusammen: Aecher 419 J 1382 K / Wiesen 45[?] J 167 K / KG 2 J 1166 K / GG – J 1460 K / Weingärten 6 J 1059 K (TRANSCRIBED — križno §7 p21, F-PZ-06) / HW 121 J 1190 K / WmH 557[?] J 1258 K; subtotal 1150 J 1582 K; Bauarea 1 J 1199 K (križno p67); voda 68 J 1019 K (= F-PZ-10 več-vrednostna celica); sidro Total 1220 J 1493 K = §1 EXACT (SOLID). Veriga subtotal+Bauarea+voda = 1.954.200 vs Total = Δ 707 QKlft (0,036 %) OPEN-MICRO — znotraj REVIEW negotovosti; URADNI deleži 1830 ostajajo iz F-PZ-13 (črni stolpec, vrata I4–I6 EXACT); rdeče števke čakajo re-digitation @višjo ločljivost (VAČ II. prikaz)"
     }
   ],
   "invariants_enforced": [
@@ -824,5 +929,5 @@
     "I6 vrstice 1–8 + unbenützbar = Total 1220 J 1493 K (fail-fast)"
   ],
   "invariant_violations": [],
-  "generated_at": "2026-09-26T14:04:39.649877+00:00"
+  "generated_at": "2026-09-26T15:59:34.643402+00:00"
 }

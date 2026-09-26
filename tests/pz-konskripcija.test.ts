@@ -71,6 +71,16 @@ type PzDoc = {
     total_gemeinde: { joch: number; klafter: number; crossed: string[] };
     zusammen_column_semantics: { status: string };
   };
+  revision_1830_zusammen: {
+    rows: { kultur: string; joch: number; klafter: number; reading_status: string }[];
+    subtotal_cultivirte: { joch: number; klafter: number; reading_status: string };
+    unbenutzt_red: {
+      bauarea: { joch: number; klafter: number; reading_status: string };
+      unbenutzbar_voda: { joch: number; klafter: number; reading_status: string };
+    };
+    total_flaeche: { joch: number; klafter: number; reading_status: string };
+    sum_check: { subtotal_plus_unbenutzt_qklft: number; total_written_qklft: number; delta_qklft: number; delta_pct: number; closes: boolean; status: string };
+  };
   endresultat_p67: {
     title: string;
     revision_pattern: string;
@@ -122,10 +132,10 @@ const kg = kgRaw as unknown as {
   findings: { finding_id: string; val: number; status: string }[];
 };
 
-describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
-  test("meta: uodid 373419 / docid 41784 / 71 strani / val 77 PASS 2", () => {
-    expect(pz.val).toBe(77);
-    expect(pz.pass).toContain("PASS 2");
+describe("val 78 — PZ PASS 3 dokumentna resnica [373419]", () => {
+  test("meta: uodid 373419 / docid 41784 / 71 strani / val 78 PASS 3", () => {
+    expect(pz.val).toBe(78);
+    expect(pz.pass).toContain("PASS 3");
     expect(pz.provenance.uodid).toBe(373419);
     expect(pz.provenance.docid).toBe(41784);
     expect(pz.provenance.pages).toBe(71);
@@ -296,7 +306,44 @@ describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
     expect(wiesen.note).toContain("val 77");
     const unbenutzbar = p8.unbenutzt_rows.find((r) => r.status === "REVIEW")!;
     expect(unbenutzbar.joch).toBeNull(); // več-vrednostna celica — nič vsiljeno
-    expect(p8.zusammen_column_semantics.status).toBe("REVIEW");
+    expect(p8.zusammen_column_semantics.status).toBe("STRUCTURED-V78");
+  });
+
+  test("§8 rdeči stolpec 'Zusammen' (F-PZ-15): 7 vrstic REVIEW/TRANSCRIBED, sidro Total = §1 EXACT, veriga Δ 707", () => {
+    const rev = pz.revision_1830_zusammen;
+    expect(rev.rows).toHaveLength(7);
+    // edina TRANSCRIBED vrstica = Weingärten 6 J 1059 K (križno §7 p21 = F-PZ-06)
+    const wg = rev.rows.find((r) => r.kultur === "Weingaerten");
+    expect(wg!.joch).toBe(6);
+    expect(wg!.klafter).toBe(1059);
+    expect(wg!.reading_status).toBe("TRANSCRIBED");
+    expect(wg!.joch * KLFT + wg!.klafter).toBe(10659);
+    // ostale vrstice REVIEW — deleži se NE izpeljejo iz rdečega stolpca (§14)
+    expect(rev.rows.filter((r) => r.reading_status === "REVIEW")).toHaveLength(6);
+    // sidro: Total = §1 rdeči popravek EXACT
+    expect(rev.total_flaeche.joch * KLFT + rev.total_flaeche.klafter).toBe(1953493);
+    expect(rev.total_flaeche.reading_status).toBe("SOLID");
+    // veriga: subtotal + Bauarea + voda = 1.954.200 (Δ 707 = 0,036 % — OPEN-MICRO)
+    const chain =
+      rev.subtotal_cultivirte.joch * KLFT + rev.subtotal_cultivirte.klafter +
+      rev.unbenutzt_red.bauarea.joch * KLFT + rev.unbenutzt_red.bauarea.klafter +
+      rev.unbenutzt_red.unbenutzbar_voda.joch * KLFT + rev.unbenutzt_red.unbenutzbar_voda.klafter;
+    expect(chain).toBe(1954200);
+    expect(rev.sum_check.delta_qklft).toBe(707);
+    expect(rev.sum_check.delta_pct).toBeLessThan(0.1);
+    expect(rev.sum_check.status).toBe("OPEN-MICRO");
+    expect(rev.sum_check.closes).toBe(false);
+    // Bauarea križno = p67 Posten 8 (F-PZ-11)
+    expect(rev.unbenutzt_red.bauarea.klafter).toBe(1199);
+    expect(rev.unbenutzt_red.bauarea.reading_status).toBe("TRANSCRIBED");
+  });
+
+  test("F-PZ-14/15: rešitvene poti ovržene (RESOLVED) + rdeči stolpec REVIEW — brez tihega reševanja", () => {
+    const byId = new Map(pz.findings.map((f) => [f.id, f]));
+    expect(byId.get("F-PZ-14")!.status).toBe("RESOLVED");
+    expect(byId.get("F-PZ-14")!.detail).toContain("p30");
+    expect(byId.get("F-PZ-15")!.status).toBe("REVIEW");
+    expect(byId.get("F-PZ-15")!.detail).toContain("URADNI deleži 1830 ostajajo iz F-PZ-13");
   });
 
   test("živina 1830: števci 124/20/30/150/30, vrste z iskrenimi statusi", () => {
@@ -326,9 +373,9 @@ describe("val 77 — PZ PASS 2 dokumentna resnica [373419]", () => {
     expect(joined).toContain("SPECIFISCHER AUSWEIS");
   });
 
-  test("najdbe: 13; nove F-PZ-10/11/12/13 z iskrenimi statusi", () => {
+  test("najdbe: 15; nove F-PZ-10/11/12/13/14/15 z iskrenimi statusi", () => {
     const byId = new Map(pz.findings.map((f) => [f.id, f]));
-    expect(pz.findings).toHaveLength(13);
+    expect(pz.findings).toHaveLength(15);
     expect(byId.get("F-PZ-01")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-02")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-06")!.status).toBe("RESOLVED");
