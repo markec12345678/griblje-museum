@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the transcription of the handwritten German Kurrent script, here is the analysis of the document:\n\n**(1) Section Heading**\n*   **III** (Roman numeral at the top of the page)\n    *   *Note: The text following the numeral describes the location/boundaries (e.g., \"in der Gemeinde...\"), but a specific \"culture name\" (field name) is not explicitly listed as a distinct header on this specific page; the text serves as the descriptive introduction to Section III.*\n\n**(2) Parcel Citations (Parzelle №...)**\n*   **This page has no parcel citations.** The text consists entirely of legal and boundary descriptions (metes and bounds) and does not list specific parcel numbers (Parzelle №...) or their areas in Joch and Klafter.\n\n**(3) Owner Names**\n*   No owner names are attached to specific parcels on this page. However, the text mentions:\n    *   **Herrn von Milchling** (referenced regarding a document or decree from 1786).\n\n**(4) Dates**\n*   **1786** (appears as \"1786\" with some strikethrough/correction marks around it)\n*   **1. Jg. [Jänner/January] 178[?]** (The year is partially obscured or corrected, likely 1787 or 1789, written as \"1 Jg 178x\").\n    *   *Context:* These dates refer to a \"Decree\" (Rescript) issued by Herrn von Milchling.\n\n**(5) Red-ink Annotations**\n*   **None.** There are no red-ink annotations visible on this page. All text and markings are in black or brown ink.\n\n---\n**Summary of Content for Context:**\nThe page is a textual description of the boundaries for Section III (\"III\"). It describes borders adjacent to \"Hutungen\" (pastures), \"Weg\" (paths), and \"Gemeindegrund\" (communal land). It references an official survey or decree from 1786/1787 to settle boundary disputes (\"Streitigkeiten\") and mentions that the land is subject to \"beyderseitiger Zehent\" (tithes to both sides). The Roman numerals **IV** and **V** appear in the margins or text body, indicating transitions to subsequent sections within the continuous text.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445303,
+  "id": "2026092701543487a767eeb8234abc",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092701543487a767eeb8234abc",
+  "usage": {
+    "completion_tokens": 497,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3806
+  }
+}

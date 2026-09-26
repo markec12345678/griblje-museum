@@ -96,7 +96,24 @@ type PzDoc = {
       closes: boolean;
       klafter_column_closes: boolean;
       status: string;
+      note: string;
     };
+  };
+  rektifikacija_beschreibung: {
+    title: string;
+    source_pages: number[];
+    passes: number;
+    structure: { klasse: string; page: number; clases_opisane?: string[]; content: string }[];
+    muster_parcel_citations: {
+      page: number; klasse: string; parcel_no: number; parcel_no_alt: number[];
+      joch: number; klafter: number; owner: string; reading_status: string;
+      pua_1825_match: boolean; ps_1825_match: boolean; note: string;
+    }[];
+    renumbering: { finding: string; interpretation: string; status: string };
+    protocol_p40: { dates: Record<string, string | number>; jury: string; commission: string; addendum: string };
+    post_1830_protocols: Record<string, string>;
+    conclusion: { f_pz_04_path: string; remaining_paths: string[]; f_pz_04_status: string };
+    reading_honesty: string;
   };
   shares_1830: {
     shares: { kultur: string; joch: number; klafter: number; qklft: number; pct_of_total: number; basis: string }[];
@@ -132,10 +149,10 @@ const kg = kgRaw as unknown as {
   findings: { finding_id: string; val: number; status: string }[];
 };
 
-describe("val 78 — PZ PASS 3 dokumentna resnica [373419]", () => {
-  test("meta: uodid 373419 / docid 41784 / 71 strani / val 78 PASS 3", () => {
-    expect(pz.val).toBe(78);
-    expect(pz.pass).toContain("PASS 3");
+describe("val 79 — PZ PASS 5 dokumentna resnica [373419]", () => {
+  test("meta: uodid 373419 / docid 41784 / 71 strani / val 79 PASS 5", () => {
+    expect(pz.val).toBe(79);
+    expect(pz.pass).toContain("PASS 5");
     expect(pz.provenance.uodid).toBe(373419);
     expect(pz.provenance.docid).toBe(41784);
     expect(pz.provenance.pages).toBe(71);
@@ -373,9 +390,9 @@ describe("val 78 — PZ PASS 3 dokumentna resnica [373419]", () => {
     expect(joined).toContain("SPECIFISCHER AUSWEIS");
   });
 
-  test("najdbe: 15; nove F-PZ-10/11/12/13/14/15 z iskrenimi statusi", () => {
+  test("najdbe: 16; nove F-PZ-10/11/12/13/14/15/16 z iskrenimi statusi", () => {
     const byId = new Map(pz.findings.map((f) => [f.id, f]));
-    expect(pz.findings).toHaveLength(15);
+    expect(pz.findings).toHaveLength(16);
     expect(byId.get("F-PZ-01")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-02")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-06")!.status).toBe("RESOLVED");
@@ -389,6 +406,7 @@ describe("val 78 — PZ PASS 3 dokumentna resnica [373419]", () => {
     expect(byId.get("F-PZ-07")!.status).toBe("TO_VERIFY");
     expect(byId.get("F-PZ-04")!.status).toBe("OPEN");
     expect(byId.get("F-PZ-12")!.status).toBe("OPEN"); // p43–47 pošteno zavrnjeno
+    expect(byId.get("F-PZ-16")!.status).toBe("RESOLVED"); // val 79: Rektifikacija opisna
     // vsaka najdba ima detail
     for (const f of pz.findings) expect(f.detail.length).toBeGreaterThan(30);
   });
@@ -436,5 +454,137 @@ describe("val 77 — KG v1.8 + zgodba vasi", () => {
     for (const i of pzItems) {
       expect(i.tier).toBeDefined();
     }
+  });
+});
+
+describe("val 79 — Rektifikacija p35–42 OPISNO-KVALITATIVNA (F-PZ-16)", () => {
+  test("sekcija obstaja, struktura: 5 razredov, 7 Muster-parcel, vse REVIEW", () => {
+    const rk = pz.rektifikacija_beschreibung as {
+      title: string;
+      source_pages: number[];
+      passes: number;
+      structure: { klasse: string; page: number }[];
+      muster_parcel_citations: {
+        page: number; klasse: string; parcel_no: number; parcel_no_alt: number[];
+        joch: number; klafter: number; owner: string; reading_status: string;
+        pua_1825_match: boolean; ps_1825_match: boolean; note: string;
+      }[];
+      protocol_p40: { dates: Record<string, string | number> };
+      conclusion: { f_pz_04_path: string; remaining_paths: string[]; f_pz_04_status: string };
+      reading_honesty: string;
+    };
+    expect(rk).toBeDefined();
+    expect(rk.passes).toBe(2);
+    expect(rk.source_pages).toEqual([35, 36, 37, 38, 39, 40, 41, 42]);
+    expect(rk.structure).toHaveLength(5);
+    // vsaka Muster-parcela: REVIEW, 1 Joch, owner, opomba
+    expect(rk.muster_parcel_citations).toHaveLength(7);
+    const seenPages = new Set(rk.muster_parcel_citations.map((m) => m.page));
+    expect(seenPages).toEqual(new Set([35, 36, 37, 38, 39]));
+    for (const m of rk.muster_parcel_citations) {
+      expect(m.reading_status).toBe("REVIEW");
+      expect(m.joch).toBe(1);
+      expect(m.owner.length).toBeGreaterThan(2);
+      expect(m.note.length).toBeGreaterThan(20);
+    }
+    // eye branja (direkten odtis)
+    const nos = rk.muster_parcel_citations.map((m) => m.parcel_no);
+    expect(nos).toEqual([30, 594, 1099, 438, 2451, 2491, 1288]);
+    // alternativa (VLM 2. prehod) samo pri 438/2491/1288
+    const withAlt = rk.muster_parcel_citations.filter((m) => m.parcel_no_alt.length > 0);
+    expect(withAlt.map((m) => m.parcel_no)).toEqual([438, 2491, 1288]);
+  });
+
+  test("križna kontrola: 4/7 Muster-parcel ne obstaja v 1825 PUA/PS registru (renumbering)", () => {
+    const rk = pz.rektifikacija_beschreibung as {
+      muster_parcel_citations: { parcel_no: number; pua_1825_match: boolean; ps_1825_match: boolean }[];
+      renumbering: { finding: string; status: string };
+    };
+    // neodvisna kontrola v TS: 30/594/1099 match PUA; 438 PS-only; 2451/2491/1288 noben
+    const byNo = new Map(rk.muster_parcel_citations.map((m) => [m.parcel_no, m]));
+    expect(byNo.get(30)!.pua_1825_match).toBe(true);
+    expect(byNo.get(30)!.ps_1825_match).toBe(true);
+    expect(byNo.get(594)!.pua_1825_match).toBe(true);
+    expect(byNo.get(1099)!.pua_1825_match).toBe(true);
+    expect(byNo.get(438)!.pua_1825_match).toBe(false);
+    expect(byNo.get(438)!.ps_1825_match).toBe(true);
+    expect(byNo.get(2451)!.pua_1825_match).toBe(false);
+    expect(byNo.get(2451)!.ps_1825_match).toBe(false);
+    expect(byNo.get(2491)!.pua_1825_match).toBe(false);
+    expect(byNo.get(1288)!.pua_1825_match).toBe(false);
+    const noMatch = rk.muster_parcel_citations.filter((m) => !m.pua_1825_match && !m.ps_1825_match);
+    expect(noMatch).toHaveLength(3);
+    expect(rk.renumbering.status).toBe("REVIEW");
+    expect(rk.renumbering.finding).toContain("4/7");
+  });
+
+  test("sklep: rešitvena pot F-PZ-04 per-parcelna ZAPRETA; F-PZ-16 RESOLVED", () => {
+    const rk = pz.rektifikacija_beschreibung as {
+      conclusion: { f_pz_04_path: string; remaining_paths: string[]; f_pz_04_status: string };
+      reading_honesty: string;
+      post_1830_protocols: Record<string, string>;
+    };
+    expect(rk.conclusion.f_pz_04_path).toContain("ZAPRETA");
+    expect(rk.conclusion.f_pz_04_status).toContain("OPEN");
+    expect(rk.conclusion.remaining_paths).toHaveLength(2);
+    expect(rk.conclusion.remaining_paths[0]).toContain("300 dpi");
+    expect(rk.conclusion.remaining_paths[1]).toContain("izven peskovnika");
+    // iskrenost branja: halucinacije dokumentirane (nič tihega §4)
+    expect(rk.reading_honesty).toContain("halucinacije");
+    expect(rk.reading_honesty).toContain("REVIEW");
+    // 1832 protokoli dokumentirani
+    expect(rk.post_1830_protocols["p42"]).toContain("Einvernehmungs-Protocoll");
+    expect(rk.post_1830_protocols["p42"]).toContain("1832");
+    // F-PZ-16 povezan s sklepo sekcije
+    const f16 = pz.findings.find((f) => f.id === "F-PZ-16")!;
+    expect(f16.status).toBe("RESOLVED");
+    expect(f16.detail).toContain("Muster");
+    expect(f16.detail).toContain("ZAPRETA");
+  });
+
+  test("protokol p40: datumi 9./29. april 1830 — val-75 ugib 5./28. OVRŽEN", () => {
+    const rk = pz.rektifikacija_beschreibung as {
+      protocol_p40: { dates: Record<string, string | number>; addendum: string };
+    };
+    const d = rk.protocol_p40.dates;
+    expect(d.year).toBe(1830);
+    expect(String(d.day1)).toContain("9");
+    expect(String(d.day2)).toContain("29");
+    expect(String(d.month)).toContain("REVIEW");
+    expect(String(d.previous_guess_val75)).toContain("OVRŽENO");
+    expect(rk.protocol_p40.addendum).toContain("vierte Nachtag");
+  });
+
+  test("structure_map: p35–42 + p48 nosijo val 79 popravke", () => {
+    const joined = pz.structure_map.map((s) => s.content).join(" ");
+    expect(joined).toContain("NE per-parcelne korekcije (val 79)");
+    expect(joined).toContain("Muster № 30 = 1 J 1382");
+    expect(joined).toContain("Einvernehmungs-Protocoll 6. dec. 1832");
+    expect(joined).not.toContain("EINWANDS-PROTOKOLL");
+    const p40 = pz.structure_map.find((s) => s.page === 40)!.content;
+    expect(p40).toContain("9. / 29. april 1830");
+    expect(p40).toContain("ovrženo");
+  });
+
+  test("F-PZ-04 ostaja OPEN z ožjim obsegom: poti v PZ izčrpane (val 78+79)", () => {
+    const f04 = pz.findings.find((f) => f.id === "F-PZ-04")!;
+    expect(f04.status).toBe("OPEN");
+    expect(f04.detail).toContain("ZAPRETA (val 79, F-PZ-16");
+    expect(f04.detail).toContain("izven peskovnika");
+    // Summa kontrola neodvisno v TS: Δ 3 J = 4.800 QKlft
+    const e = pz.endresultat_p67;
+    const rows = e.rows.reduce((acc, r) => acc + r.joch * KLFT + r.klafter, 0);
+    const summa = e.summa.joch * KLFT + e.summa.klafter;
+    expect(summa - rows).toBe(4800);
+    expect(e.sum_check.status).toBe("OPEN");
+    expect(e.sum_check.note).toContain("val 79 F-PZ-16");
+  });
+
+  test("prehod 5 v metodi; coverage val 79 (neodvisna datoteka)", () => {
+    expect((pz.method.passes as string[]).some((p) => p.startsWith("PREHOD 5 (val 79)"))).toBe(true);
+    const rep = JSON.parse(
+      readFileSync(join(REPO, "src", "data", "atlas-coverage-report-1825.json"), "utf-8")
+    ) as { val: number; quality_gate: { category_id: string; native: Record<string, unknown> }[] };
+    expect(rep.val).toBe(79);
   });
 });

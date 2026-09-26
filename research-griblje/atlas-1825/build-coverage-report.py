@@ -450,14 +450,14 @@ src_status_map = {
     "SRC-PR": "PARTIAL",     # identiteta (uodid) potrjena; vsebina (Grenz-Beschreibung) NE prebrana
     "SRC-PG": "PARTIAL",
     "SRC-PV": "VERIFIED",    # 1/1 stran prepisana (val 74, aritmetična vrata I1–I4) — AGREGAT po kulturah; raba po parcelah ostane neznana (§4)
-    "SRC-PZ": "PARTIAL",    # TRANSCRIBED_PARTIAL (val 77 PASS 2): struktura 71/71 + ključna branja + odločilni re-read p67 z vrati I4–I6; p43–47 vrstični prepis zavrnjen (F-PZ-12)
+    "SRC-PZ": "PARTIAL",    # TRANSCRIBED_PARTIAL (val 79 PASS 5): struktura 71/71 + ključna branja + odločilni re-read p67 z vrati I4–I6 + Rektifikacija p35–42 opisna (F-PZ-16); p43–47 vrstični prepis zavrnjen (F-PZ-12)
     "SRC-KO": "PARTIAL",     # k.o. konskripcija: identiteta, brez prepisa
     "SRC-SIAS176": "VERIFIED",  # fond SI AS 176 (k.o. N83, 12 enot) — popisana sestava, kataloška enota grafa
 }
 src_six = {"VERIFIED": 0, "PARTIAL": 0, "CONFLICT": 0, "UNKNOWN": 0, "NOT_FOUND": 0}
 src_notes = {
     "SRC-PV": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4) — agregat po kulturah",
-    "SRC-PZ": "TRANSCRIBED_PARTIAL (val 77 PASS 2): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z aritmetičnimi vrati I4–I6 (deleži 1830 izpeljani); p43–47 vrstični prepis pošteno zavrnjen (F-PZ-12, čaka @300 dpi)",
+    "SRC-PZ": "TRANSCRIBED_PARTIAL (val 79 PASS 5): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z aritmetičnimi vrati I4–I6 (deleži 1830 izpeljani) + Rektifikacijski odsek p35–42 odločilno prebran — opisno, brez per-parcelnih korekcij (F-PZ-16, rešitvena pot F-PZ-04 zapreta); p43–47 vrstični prepis pošteno zavrnjen (F-PZ-12, čaka @300 dpi)",
     "SRC-PS": "vrstični prepis p3–55 (1073 vrstic); p56–143 strukturni re-read brez vrstic (F-PZ-09, val 75)",
     "SRC-PR": "identiteta (uodid) potrjena; Grenz-Beschreibung NE prebrana",
     "SRC-PG": "identiteta (uodid) potrjena; vsebina NE prebrana",
@@ -608,7 +608,7 @@ outputs = [
 # ---------------------------------------------------------------------------
 # 3a) a01-coverage-1825 — BP↔A01 matrica po issue #42 §7
 a01_coverage = {
-    "val": 78,
+    "val": 79,
     "pass": "PASS 8",
     "issue": 42,
     "title": "A01/A02↔BP coverage 1825 — kartografska vezava (izpeljan iz inventarjev)",
@@ -627,7 +627,7 @@ a01_coverage = {
 sheet_cov = pass4b.get("counts") or {}
 a01_counts = a01_inv.get("counts") or {}
 cadastral = {
-    "val": 78,
+    "val": 79,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Katastrski listi pokritost — A01–A05 (izpeljan iz inventarjev + KG)",
@@ -654,7 +654,7 @@ cadastral = {
 
 # 3c) source-coverage-1825 — pokritost virov (issue #42 §6/§14)
 source_coverage = {
-    "val": 78,
+    "val": 79,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.5 + registrov)",
@@ -666,18 +666,18 @@ source_coverage = {
         "PS": {"pages": 143, "rows": len(ps_rows), "passes": 2, "note": "vrstični prepis pokriva SAMO p3–55 (1073 vrstic); p56–143 = strukturni re-read (val 61), vrstice NE (F-PZ-09, val 75); per-parcelna raba čaka (F-SE-01/F-PV-03)"},
         "PT": {"pages": 8, "rows": len(pt_rows), "passes": 2, "note": "+ p8 Musterstellung"},
         "PV": {"pages": 1, "rows": 19, "passes": 2, "note": "val 74: uradne agregatne površine po kulturah (1221 J 1573 K = 7,032 km²), aritmetična vrata I1–I4; NI raba po parcelah (§4)"},
-        "PZ": {"pages": 71, "rows": 0, "passes": 4, "note": "val 75+77+78: TRANSCRIBED_PARTIAL — struktura 71/71 + ključna branja (prebivalstvo 1830: 441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin; živina 124/20/30/150/30; površina §1 rdeči popravek 1220 J 1493 K, PV Δ 0,086 %) + val 77 odločilni re-read p67+§8 z vrati I4–I6 (Summa 1152 J 495 K; Δ 3 J — F-PZ-04 ožjan, ostaja OPEN; deleži 1830 F-PZ-13) + val 78 §8 rdeči stolpec 'Zusammen' strukturiran (post-revizijske površine, REVIEW — F-PZ-15) + rešitvene poti p26/p27/p30/p32/p63/p65 ovržene (F-PZ-14); celotni vrstični prepis NI"},
+        "PZ": {"pages": 71, "rows": 0, "passes": 5, "note": "val 75+77+78+79: TRANSCRIBED_PARTIAL — struktura 71/71 + ključna branja (prebivalstvo 1830: 441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin; živina 124/20/30/150/30; površina §1 rdeči popravek 1220 J 1493 K, PV Δ 0,086 %) + val 77 odločilni re-read p67+§8 z vrati I4–I6 (Summa 1152 J 495 K; Δ 3 J — F-PZ-04 ožjan, ostaja OPEN; deleži 1830 F-PZ-13) + val 78 §8 rdeči stolpec 'Zusammen' strukturiran (post-revizijske površine, REVIEW — F-PZ-15) + rešitvene poti p26/p27/p30/p32/p63/p65 ovržene (F-PZ-14) + val 79 Rektifikacijski odsek p35–42 odločilno prebran: OPISNO-KVALITATIVEN, per-parcelne korekcije NE obstajajo (F-PZ-16 RESOLVED; 7 Muster-parcel REVIEW; protokoli 9./29. april 1830 + 1832); celotni vrstični prepis NI"},
     },
     "six_status": src_six,
     "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
-    "next_reads": ["PS p56–143 vrstični prepis ob kvoti (raba po parcelah; F-PV-03 vinogradi ostaja OPEN)", "PZ §8 rdeče števke re-digitation @višja ločljivost (VAČ II. prikaz — F-PZ-15 REVIEW)", "PZ celotni vrstični prepis (66/71 strani brez strukturnega branja; F-PZ-12 zavrnjen VLM prepis čaka VAČ IIIF @300 dpi)", "PT p7 @300dpi (KG-F01/F04)", "PR Grenz-Beschreibung (mejne točke; tudi F-PZ-05 meje)"],
+    "next_reads": ["PZ Summa/vrstice re-digitation @300 dpi (VAČ II. prikaz — zadnja peskovniška rešitvena pot F-PZ-04 Δ 3 J; tudi F-PZ-15 rdeči stolpec)", "PZ celotni vrstični prepis (66/71 strani brez strukturnega branja; F-PZ-12 zavrnjen VLM prepis čaka VAČ IIIF @300 dpi)", "PS p56–143 vrstični prepis ob kvoti (raba po parcelah; F-PV-03 vinogradi ostaja OPEN)", "PT p7 @300dpi (KG-F01/F04)", "PR Grenz-Beschreibung (mejne točke; tudi F-PZ-05 meje)", "izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (per-parcelna vezava 1825→1830, F-PZ-16 renumbering)"],
 }
 
 # 3d) atlas-map-data-model-1825 — podatkovni model zemljevida (issue #42 §15)
 node_stats = kg.get("node_stats") or {}
 edge_stats = kg.get("edge_stats") or {}
 map_model = {
-    "val": 78,
+    "val": 79,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Atlas map data model v1 — podatkovni zemljevid (izpeljan iz KG v1.5 + val 67 slojev)",
@@ -705,7 +705,7 @@ map_model = {
 
 # 3e) story-engine-spec-1825 — pogodba zgodbonizacije (issue #42 §16/§17/§22)
 story_engine = {
-    "val": 78,
+    "val": 79,
     "pass": "PASS 8",
     "issue": 42,
     "title": "Story engine spec v1 — evidence-first zgodbonizacija (izpeljan iz val 69 izvedbe)",
@@ -732,7 +732,7 @@ story_engine = {
 # 4. MASTER COVERAGE REPORT
 # ---------------------------------------------------------------------------
 quality_gate = {
-    "val": 78,
+    "val": 79,
     "pass": "PASS 8",
     "issue": 42,
     "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",

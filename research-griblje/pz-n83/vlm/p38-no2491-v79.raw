@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the 4x zoom crop of the handwritten Kurrent line from the 1830 cadastral document, here is the verbatim transcription and analysis:\n\n**Transcription:**\n`PurgSTALLN № 249/1 und - zur Loosung vom Murner Ablösungs-Contract neu Gründle № 447 zugehörig`\n\n**Detailed Breakdown of Key Elements:**\n\n*   **Parcel Number (First):** `№ 249/1`\n    *   The symbol is clearly the \"Numero\" sign (`№`).\n    *   Digits: **2** - **4** - **9**. There are no crossed-out numbers or corrections visible above/below.\n    *   The suffix appears to be a slash followed by a **1** (or possibly a lowercase 'l' acting as a sub-number), written slightly smaller.\n\n*   **Parcel Number (Second):** `№ 447`\n    *   Digits: **4** - **4** - **7**. The final digit has a clear crossbar, distinguishing it as a **7** rather than a **1**.\n\n*   **Area in Joch / Square-Klafter:** **Not present** on this specific line. This line describes the *location* and *legal status* of the parcel (referencing a contract for redemption/separation) rather than its area measurements.\n\n*   **Dates:** **Not present** on this line. While the document context is circa 1830, no day/month/year date is written within this specific text segment.\n\n**Ambiguity Notes:**\n*   The first word could be read as `PurgSTALLN` (likely an abbreviation for *Purgstalln* or similar place name). The capitalization of `ST` is distinct in Kurrent script.\n*   The word `Loosung` (redemption/draw) is clearly legible despite the cursive connection to the preceding `zur`.\n*   The word `zugehörig` (belonging to) at the end is abbreviated with a flourish typical of Kurrent, but the letters `z-u-g-e-h-ö-r-i-g` are traceable.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445459,
+  "id": "20260927015725bc50f82ae2cb43f1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927015725bc50f82ae2cb43f1",
+  "usage": {
+    "completion_tokens": 461,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2252
+  }
+}

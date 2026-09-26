@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the transcription of the handwritten German Kurrent (cursive) text, here is the analysis of the document:\n\n**(1) Section Heading**\n*   **II. Minfen** (or *Minsen*)\n\n**(2) Parcel Citations**\nThis page contains **no parcel citations** (no \"Parzelle №...\" or \"№...\" with area measurements in Joch and Klafter). The text consists of a historical and descriptive introduction to the location.\n\n**(3) Owner Names**\nThe following names are mentioned in the context of ownership or possession:\n*   **Herrn Willibald** (mentioned as possessing the meadows/orchards in 1738).\n*   **Manse Bloberger** (mentioned in relation to the year 1815).\n\n**(4) Dates**\n*   **1738**\n*   **1815** (written as *1815*)\n*   **1830** (implied by the document context, though written as *1830* or similar at the bottom, partially obscured; looks like *1830* or *1829* with a correction, but clearly refers to the current survey date).\n\n**(5) Red-ink Annotations**\nThere are **no red-ink annotations** visible on this page. All text is written in black or brown ink. There is a large oval/circle drawn in ink at the beginning of the first paragraph, but it is not red.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445246,
+  "id": "202609270153543e16c336416b4e1d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609270153543e16c336416b4e1d",
+  "usage": {
+    "completion_tokens": 292,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3601
+  }
+}
