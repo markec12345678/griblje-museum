@@ -1,6 +1,6 @@
 {
-  "val": 79,
-  "pass": "PZ PASS 5 (val 79: Rektifikacijski odsek p35–42 odločilno prebran — OPISNO, brez per-parcelnih korekcij; rešitvena pot F-PZ-04 zapreta; 7 Muster-parcel + 1830/1832 protokoli dokumentirani; I4–I6 nespremenjeni)",
+  "val": 80,
+  "pass": "PZ PASS 6 (val 80: VAČ topološka izčrpnost — II. prikaz @300 dpi NE obstaja, F-PZ-17; nativna re-digitation 7 variančnih celic — 6/7 REŠENIH, inter-bralčeva varianca PR#69↔val 79 razrešena, sistemski pomlaj '– J' = 0 Joch; Muster-citati korigirani: 30=1082, 594=591, 1004=1010, 738=–J895, 2451=–J1515, 2491=–J260, 1288 REVIEW; I4–I6 nespremenjeni)",
   "issue": 42,
   "deterministic": true,
   "title": "PZ N83 — Katastral-Schätzungs-Elaborat (Konskripcija) 1828/30 [373419]",
@@ -11,12 +11,13 @@
       "PREHOD 2 (val 75): ključna branja digit-by-digit 2,6×–5× (crops/ + z-*.jpeg dokazni izrezki)",
       "PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na dvomljive celice + direktni odtis avtorja transkripcije; aritmetična vrata I4–I6 odločijo vsako dvomljivo števko",
       "PREHOD 4 (val 78, neodvisni prehod): §8 rdeči stolpec 'Zusammen' strukturiran (2 prehoda pri 6×–12×, crops-v78/, 33 izrezkov) + verifikacija rešitvenih poti p26/p27/p30/p32/p63/p65 — nobena ne vsebuje površin",
-      "PREHOD 5 (val 79): odločilni re-read Rektifikacijskega odseka p35–42 (+ p48) — celotne strani @2x + 10 izrezkov linij @4x (crops-v79/), 2 VLM prehoda + direkten odtis; struktura OPISNO-KVALITATIVNA (Kultur-Beschreibung + Muster-parcele), per-parcelne korekcije NE obstajajo → rešitvena pot F-PZ-04 zapreta"
+      "PREHOD 5 (val 79): odločilni re-read Rektifikacijskega odseka p35–42 (+ p48) — celotne strani @2x + 10 izrezkov linij @4x (crops-v79/), 2 VLM prehoda + direkten odtis; struktura OPISNO-KVALITATIVNA (Kultur-Beschreibung + Muster-parcele), per-parcelne korekcije NE obstajajo → rešitvena pot F-PZ-04 zapreta",
+      "PREHOD 6 (val 80): VAČ topološka izčrpnost (II. prikaz @300 dpi NE obstaja: pdfPageImage 608px fiksna, session raster = ovitek, OCR prazen; maksimum = PDF-native ~150 dpi) + nativna re-digitation 7 variančnih celic — FFT template-matching anchors + 3 neodvisna branja/celico (direkten odtis + VLM raw/norm + VLM x3); 6/7 REŠENIH, sistemski pomlaj odkrit; inter-bralčeva varianca PR#69↔val 79 razrešena (PR#69 pravilna na 30/594/1004; val 79 pravilna na 2451; struktura – J na 738/2451/2491)"
     ],
     "native_scans": "pz-n83/native/p01–p71.jpeg (pymupdf, metoda val 56)",
     "deterministic": true,
     "no_guessing": "§4: nič se ne ugiba; dvoumne oznake = REVIEW ali GATED (izpeljava z vrati); črne prečrtane vrednosti ohranjene; revizijski vzorec p67 (trenutna NAD prečrtano) dokumentiran na 5 neodvisnih primerih",
-    "rejected_reads": "p43–47 celostranski VLM vrstični prepis ZAVRJEN (halucinacije na gostem Kurrentu) — F-PZ-12; p65 Zusammenstellung A 1. prehod delno nezanesljiv — REVIEW"
+    "rejected_reads": "p43–47 celostranski VLM vrstični prepis ZAVRJEN (halucinacije na gostem Kurrentu) — F-PZ-12; val 80: band-metoda @nativno IZVEDLJIVA (8-pasovni test p43: glave + Kurs 1–6 + Düngung 90/120 čitljivi) — celoten prepis = naslednji val; p65 Zusammenstellung A 1. prehod delno nezanesljiv — REVIEW"
   },
   "provenance": {
     "uodid": 373419,
@@ -209,7 +210,7 @@
         "joch": 45,
         "klafter": 167,
         "reading_status": "REVIEW",
-        "note": "val 78 usklajeno s crno korekcijo val 77 (55->45 J): rdece joch 45[?] (prvotna branja '44/55' — 4/5 dvoumnost); rdeci klafter 162-167 dvoumen"
+        "note": "val 78 usklajeno s crno korekcijo val 77 (55->45 J); val 80 nativna re-digitation: 3 glasove berejo '41' (direkten odtis + VLM A×2), VLM Bx3 '44' — ampak aritmetika subtotala 1150 = 419+45+2+0+6+121+557 EXACT za 45 (za 41 bi Aecher moral biti 423) — VARIANCA 41/45 dokumentirana, ni odlocena §4; rdeci klafter 162-167 dvoumen"
       },
       {
         "kultur": "Kleine Gaerten",
@@ -244,7 +245,7 @@
         "joch": 557,
         "klafter": 1258,
         "reading_status": "REVIEW",
-        "note": "crno (I4) 558 J 558 K; rdeci joch 557[?] / 354[?] (prva stevka 3/5 dvoumna, val 77 je videl 354 'precrtano') — REVIEW; klafter 1258"
+        "note": "crno (I4) 558 J 558 K; val 80: joch 557 aritmeticno POTRJEN (subtotal 1150 EXACT: 419+45+2+0+6+121+557; 357 bi dalo 950≠1150) — dvoumnost 3/5 razresena; klafter 1258 potrjen 3× VLM + direkten odtis"
       }
     ],
     "subtotal_cultivirte": {
@@ -295,8 +296,8 @@
       41,
       42
     ],
-    "evidence": "pz-n83/crops-v79/p35–p42-full-2x.png + crops-v79/p35-parzelle-h30.png … p40-date2.png (10 izrezkov @4x)",
-    "passes": 2,
+    "evidence": "pz-n83/crops-v79/p35–p42-full-2x.png + crops-v79/p35-parzelle-h30.png … p40-date2.png (10 izrezkov @4x); val 80: raw-web-val80-2026-10/crops-v80/ (nativni pasovi raw/norm/x3, anchors.json, številčni izrezki x6–x8) + vlm/ (27 JSON+raw)",
+    "passes": 3,
     "structure": [
       {
         "klasse": "I. Aacker",
@@ -348,12 +349,12 @@
         "parcel_no": 30,
         "parcel_no_alt": [],
         "joch": 1,
-        "klafter": 1382,
-        "owner": "Mursko Fe[?] (Marusch Ferregi?)",
-        "reading_status": "REVIEW",
+        "klafter": 1082,
+        "owner": "Moritz Fleuchs[?]",
+        "reading_status": "TRANSCRIBED",
         "pua_1825_match": true,
         "ps_1825_match": true,
-        "note": "direkten odtis @4x; '1 Joch 1382 [Qft]'; VLM 1. prehod @2x ni videl citata, 2. prehod @4x napačno '1 Julj 1882' (Kurrent) — številka ostaja REVIEW po §4"
+        "note": "val 80 RESOLVED (nativni x6 izrezek p35-no30-digits-x6.png): '1 Joch 1082' — 2. številka čista zaprta '0' (ni '3': sosednja 8 ima jasen vrat); direkten odtis + VLM Bx3 1082; val-79 '1382' OVRŽENO; PR#69 branje 1082 POTRJENO"
       },
       {
         "page": 36,
@@ -361,53 +362,53 @@
         "parcel_no": 594,
         "parcel_no_alt": [],
         "joch": 1,
-        "klafter": 531,
-        "owner": "Georg Straup[?]",
-        "reading_status": "REVIEW",
+        "klafter": 591,
+        "owner": "Georg Kranjc[?] (Straup/Strauß)",
+        "reading_status": "TRANSCRIBED",
         "pua_1825_match": true,
         "ps_1825_match": false,
-        "note": "direkten odtis @4x; 'Parzellen № 594 mit 1 Joch 531'"
+        "note": "val 80 RESOLVED: '1 J 591' — direkten odtis (bowl+rep = 9) + VLM Araw 591; minoritetni '891' (Anorm) in val-79 '531' OVRŽENA; Hö.N. 45"
       },
       {
         "page": 36,
         "klasse": "Acker — Dritte Classe",
-        "parcel_no": 1099,
+        "parcel_no": 1004,
         "parcel_no_alt": [],
         "joch": 1,
-        "klafter": 700,
-        "owner": "Martin Bering[?]",
-        "reading_status": "REVIEW",
-        "pua_1825_match": true,
+        "klafter": 1010,
+        "owner": "Moritz Brincz[?] (Bring)",
+        "reading_status": "TRANSCRIBED",
+        "pua_1825_match": "token-hits-only",
         "ps_1825_match": false,
-        "note": "direkten odtis @4x; 'Parzellen № 1099 mit 1 Joch 700'; rdeči zapis 'Dritte Classe' na levem robu"
+        "note": "val 80 RESOLVED (nativni anchor _v-p36-no1099.png): 'Nro 1004 mit 1 Juch 1010 Rof' — jasno; val-79 '№1099 = 1 J 700' OVRŽENO na obeh (številka + površina); PR#69 branje №1004 = 1 J 1010 POTRJENO; PUA token-zadetki 4 vrstice (Brincz Maria h.28, Wurzer h.24, Sautter h.21, Pattle h.51) — neodločujoči"
       },
       {
         "page": 37,
         "klasse": "Wiesen — Erste Classen",
-        "parcel_no": 438,
+        "parcel_no": 738,
         "parcel_no_alt": [
-          738
+          438
         ],
-        "joch": 1,
-        "klafter": 896,
-        "owner": "Martin[?] Brinar[?]",
-        "reading_status": "REVIEW",
-        "pua_1825_match": false,
+        "joch": 0,
+        "klafter": 895,
+        "owner": "M. Brincz[?] | Micho Müller[?]",
+        "reading_status": "TRANSCRIBED-STRUCTURE",
+        "pua_1825_match": true,
         "ps_1825_match": true,
-        "note": "direkten odtis @4x: 438; VLM 2. prehod @4x bere 738 (kurrentska 4↔7 dvoumnost) — 438 obstaja v PS registru 1825 (Wiesen kandidatura), 738 v PUA; križna kontrola NE odloči, ostaja REVIEW"
+        "note": "val 80: STRUKTURA RESOLVED — 'mit – Juf 895' (POMLÁJ = 0 Joch!; val-79 '1 J 896' ovržena na obeh); številke: sredinska 9 (bowl+descender), končnica 5 (flag) → 895 best-read; PR#69 '395' ovržena; parcel_no 738 jasno na nativnem izrezku (val-79 alternativa 438 ostaja možna: 438 v PS, 738 v PUA)"
       },
       {
         "page": 37,
         "klasse": "Wiesen — Zweite Classen",
         "parcel_no": 2451,
         "parcel_no_alt": [],
-        "joch": 1,
+        "joch": 0,
         "klafter": 1515,
-        "owner": "Martin Blaznik[?]",
-        "reading_status": "REVIEW",
+        "owner": "M. Plaberz[?] (Blaznik)",
+        "reading_status": "TRANSCRIBED",
         "pua_1825_match": false,
         "ps_1825_match": false,
-        "note": "direkten odtis @4x; '№ 2451 mit 1 Joch 1515'; v 1825 registru NE obstaja → nova (rektifikacijska) numeracija"
+        "note": "val 80 RESOLVED: '№ 2451 mit – Juf 1515' — POMLÁJ (val-79 '1 J' ovržen) + 1515 jasno (PR#69 '1575' ovržena); v 1825 registru NE obstaja → rektifikacijska numeracija"
       },
       {
         "page": 38,
@@ -416,13 +417,13 @@
         "parcel_no_alt": [
           249
         ],
-        "joch": 1,
+        "joch": 0,
         "klafter": 260,
-        "owner": "Martin Kabatschnig[?]",
-        "reading_status": "REVIEW",
+        "owner": "Moritz Plabutsch[?]",
+        "reading_status": "TRANSCRIBED",
         "pua_1825_match": false,
         "ps_1825_match": false,
-        "note": "direkten odtis @4x: 2491; VLM 2. prehod bere '249/1' (razdelilnik) — 249 obstaja v PUA+PS; ali '249/1' ali rektifikacijska številka 2491 — REVIEW"
+        "note": "val 80: '№ 2491 mit – Juf 260' — POMLÁJ potrjen na nativnem izrezku (val-79 '1 J' ovržen), 260 = soglasje vseh bralcev; VLM '249/1' alternativa ostaja dokumentirana"
       },
       {
         "page": 39,
@@ -433,15 +434,23 @@
         ],
         "joch": 1,
         "klafter": 882,
-        "owner": "Ferencz Marusch[?]",
+        "owner": "Joseph Milavec[?]",
         "reading_status": "REVIEW",
         "pua_1825_match": false,
         "ps_1825_match": false,
-        "note": "direkten odtis @4x: '1288' zapisano NAD prečrtanim '2875' (isti revizijski vzorec kot p67!) — trenutna 1288, prečrtana 2875; VLM 2. prehod je prebral '188/873' (nezanesljivo); '1 Joch 882|883 [Qft]' — 2/3 dvoumna"
+        "note": "val 80: OSTAJA REVIEW — celica poškodovana/popravljena (prečrtani glifi + vstavki + subscript '943[?]'; nativni x6 izrezek p39-no1288-digits-x6.png): direkten odtis '1 J 8??' (številke pod prečrtavo delno nečitljive), VLM kaos (2245/2475/543/743 = halucinacije); kandidati: val-79 882|883 vs PR#69 589/549; Joch=1 strinjajo vsi prehodi"
       }
     ],
+    "val80_redigitation": {
+      "motivation": "inter-bralčeva varianca PR#69 vs val 79 na 7/7 ključnih celic (Kurrent 0↔3/5↔9/0↔7) + pričakovana rešitvena pot 'VAČ II @300 dpi'",
+      "vac_topology": "F-PZ-17: VAČ II. prikaz @300 dpi NE OBSTAJA — pdfPageImage = fiksna 608px predogleda (parametri ignorirani), session IIIF raster = ovitek 100×50 (info.json 404), per-page OCR AnnotationList = prazna, pdf-manifest canvasi = PDF točke; maksimum = PDF-native vgrajeni skeni ~150 dpi (1 rastri/stran, brez mask) — nativi že v pz-n83/native/ od val 75; pretekle @2x–@4x večave = interpolacija",
+      "method": "FFT template-matching (numpy NCC) val-79 izrezkov → anchors.json (vizualno verificirani pasovi) → 3 neodvisna branja/celico: C direkten odtis (nativni x6–x8 številčni izrezki), A VLM raw+norm (nativni piksli), B VLM x3 lanczos; surovinski izpisi vlm/*.raw; 27/27 klicev OK",
+      "adjudication": "6/7 REŠENIH (≥2 soglasna branja): №30 1082 (vs 1382) · №594 591 (vs 531) · №1004 1010 (vs №1099 700 — tudi številka!) · №738 – J 895 (vs 1 J 896) · №2451 – J 1515 (vs 1 J; 1515 vs 1575) · №2491 – J 260 (vs 1 J; soglasje) · №1288 REVIEW (poškodovana); sistemsko: '– J' = 0 Joch pri površinah < 1 Joch — val 79 sistemsko bral '1 J'",
+      "f_pz_04_impact": "NENIČ — Muster-parcele so vzorci kakovosti, ne seštevajo se v Endresultat; Δ 3 J ostaja; korekcije so izključno kvalitetne (pravilna branja citatov)",
+      "evidence": "raw-web-val80-2026-10/: crops-v80/ (nativni izrezki) + anchors.json + crops-manifest.json + vlm/ (27 JSON + 27 .raw) + redigitize-v80.mts"
+    },
     "renumbering": {
-      "finding": "4/7 Muster-parcel (2451, 2491, 1288, 2875) NE obstaja v 1825 PUA/PS registru; 30/594/1099 obsegovno sovpadajo; 438 = PS-only",
+      "finding": "4/7 Muster-parcel (2451, 2491, 1288, 2875) NE obstaja v 1825 PUA/PS registru; 30 (PUA+PS) / 594 (PUA) sovpadajo; 738 v PUA + 438 v PS (val 80: branje 738 jasno na nativnem izrezku); 1004 (val 80 popravek 1099) samo token-zadetki v PUA (4 vrstice — neodločujoči)",
       "interpretation": "Muster-parcele citirajo novo (rektifikacijsko) numeracijo po Rektifikaciji 1830 — 1825 franziscejska numeracija NI podlaga; per-parcelna vezava 1825→1830 ostaja UNKNOWN (zahteva Rektifikacijski protokol ali Habsburgisch-Katastrale Neuvermessung sezname)",
       "status": "REVIEW"
     },
@@ -465,12 +474,12 @@
     "conclusion": {
       "f_pz_04_path": "ZAPRETA — Rektifikacijski odsek v PZ [373419] NE vsebuje per-parcelnih površinskih korekcij: p35–40 so opisne klase + Muster-parcele (kakovost, ne količina), p41–42 so 1832 protokoli brez površin",
       "remaining_paths": [
-        "VAČ II. prikaz @300 dpi — re-digitation Summe/vrstic (peskovniško edina)",
-        "zunanji Rektifikacijski/Komunikacijski protokol (SI AS / ločena arhivska enota) — izven peskovnika"
+        "zunanji Rektifikacijski/Komunikacijski protokol (SI AS / ločena arhivska enota) — izven peskovnika",
+        "(VAČ II. prikaz @300 dpi OVRŽEN — ne obstaja, F-PZ-17 val 80)"
       ],
-      "f_pz_04_status": "OPEN (ožjan val 77 na Δ 3 J; rešitvene poti v PZ izčrpane val 78+79)"
+      "f_pz_04_status": "OPEN (ožjan val 77 na Δ 3 J; vse peskovniške rešitvene poti IZČRPANE: val 78 F-PZ-14 + val 79 F-PZ-16 + val 80 F-PZ-17)"
     },
-    "reading_honesty": "VLM številke na tem Kurrentu ostajajo nezanesljive tudi @4x (halucinacije dokumentirane: '1 Julj 1882' namesto '1 Joch 1382', '188/873' namesto '1288/2875') — vse številke REVIEW; strukturni sklep (OPISNO, brez per-parcelnih tabel) pa je konsistenten v 2 VLM prehodih + direktnem odtisu + aritmetičnih vhodih"
+    "reading_honesty": "val 80 nativna re-digitation (3 neodvisna branja na nativnih pikslih) razreši 6/7 Muster-citatov — prejšnje REVIEW oznake val 79 so bile posledica (a) sistemsko napačnega branja pomlaja ('– J' = 0 Joch brano kot '1 J') in (b) interpoliranih @4x večav namesto nativnih pikslov; VLM na nativnih pasovih še vedno variira (halucinacije (891/1070/637/743/2245/743) dokumentirane v vlm/*.raw) — vgrajena so samo soglasja ≥ 2 neodvisna branja; №1288 ostaja REVIEW (poškodovana celica)"
   },
   "endresultat_p67": {
     "title": "Specifischer Ausweis der nach der Catastral Ertragserhebung entfallenden Endresultate (p66–67)",
@@ -631,7 +640,7 @@
       "closes": false,
       "klafter_column_closes": true,
       "status": "OPEN",
-      "note": "val 77: Δ = 3 J EXACT (4.800 QKlft; val 75: 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495); Joch stolpac Summe ostaja 3 J nad vsoto vrstic — pisarjevska nekonsistentnost ali neobjavljena korekcija; nič se ne vsiljuje (§4); rešitvene poti v PZ izčrpane (val 78 F-PZ-14 + val 79 F-PZ-16) — ostata VAČ II @300 dpi re-digitation in zunanji Rektifikacijski protokol"
+      "note": "val 77: Δ = 3 J EXACT (4.800 QKlft; val 75: 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495); Joch stolpac Summe ostaja 3 J nad vsoto vrstic — pisarjevska nekonsistentnost ali neobjavljena korekcija; nič se ne vsiljuje (§4); rešitvene poti v PZ izčrpane (val 78 F-PZ-14 + val 79 F-PZ-16 + val 80 F-PZ-17: VAČ II @300 dpi ne obstaja) — ostaja samo zunanji Rektifikacijski protokol"
     },
     "evidence": "pz-n83/z-endresultat.jpeg + crops/p67-area/*.jpeg + crops/p67-rows/*.jpeg (val 77)"
   },
@@ -871,23 +880,23 @@
     },
     {
       "page": 35,
-      "content": "Rektifikacija 1830 — I. Aacker: Kultur-Beschreibung opisno (prvi klas, Kameniza; Muster № 30 = 1 J 1382) — NE per-parcelne korekcije (val 79)"
+      "content": "Rektifikacija 1830 — I. Aacker: Kultur-Beschreibung opisno (prvi klas, Kameniza; Muster № 30 = 1 J 1082 val 80) — NE per-parcelne korekcije (val 79/80)"
     },
     {
       "page": 36,
-      "content": "Rektifikacija — Acker nadaljevanje: 2./3. klas + rdeči zapis 'Dritte Classe'; Muster № 594 = 1 J 531, № 1099 = 1 J 700 (val 79)"
+      "content": "Rektifikacija — Acker nadaljevanje: 2./3. klas + rdeči zapis 'Dritte Classe'; Muster № 594 = 1 J 591, № 1004 = 1 J 1010 (val 80 popravek: 1099/700 ovrženo)"
     },
     {
       "page": 37,
-      "content": "Rektifikacija — II. Wiesen: opisno + Muster № 438 = 1 J 896, № 2451 = 1 J 1515 (val 79; pečat p41, NE tukaj)"
+      "content": "Rektifikacija — II. Wiesen: opisno + Muster № 738 = – J 895 (pomlaj!), № 2451 = – J 1515 (val 80 nativno; pečat p41, NE tukaj)"
     },
     {
       "page": 38,
-      "content": "Rektifikacija — III. Kleine Gärten / IV. Obere Gärten / VI. Holzgärten: opisno + Muster № 2491 = 1 J 260 (val 79)"
+      "content": "Rektifikacija — III. Kleine Gärten / IV. Obere Gärten / VI. Holzgärten: opisno + Muster № 2491 = – J 260 (val 80: pomlaj)"
     },
     {
       "page": 39,
-      "content": "Rektifikacija — weiden nadaljevanje: meje + Muster № 1288 (nad prečrtano 2875) = 1 J 882|883 (val 79)"
+      "content": "Rektifikacija — weiden nadaljevanje: meje + Muster № 1288 (nad prečrtano 2875) = 1 J 882|883 REVIEW (val 80: poškodovana celica, 589/549 alternativa)"
     },
     {
       "page": 40,
@@ -1041,7 +1050,7 @@
       "id": "F-PZ-04",
       "title": "Endresultat p67: Summa se ne sešije z vrsticami 1–8 (val 77: Δ ožjan na 3 Joch)",
       "status": "OPEN",
-      "detail": "val 77 odločilni re-read celic popravlja val-75 branja: Summa = 1152 J 495 K (prej 1132), vrstice 1–8 = 1145 J 6895 K = 1,838,895 QKlft (GG 405, WmH Klf 558, Bauarea 1199, Wiesen I = 5 po I5) → Δ = 3 Joch = -4,800 QKlft NATANČNO (prej 43.488). Klf stolpec se zapire (495 = 495). Odprto: pisarjevska nekonsistentnost Joch stolpca Summe (ali neobjavljena korekcija). Nič se ne vsiljuje (§4). Rešitvene poti: p26–p65 ovržene (val 78, F-PZ-14); Rektifikacija p35–40 ZAPRETA (val 79, F-PZ-16 — opisna, brez per-parcelnih površin); ostata samo VAČ II @300 dpi re-digitation in zunanji Rektifikacijski protokol (izven peskovnika)"
+      "detail": "val 77 odločilni re-read celic popravlja val-75 branja: Summa = 1152 J 495 K (prej 1132), vrstice 1–8 = 1145 J 6895 K = 1,838,895 QKlft (GG 405, WmH Klf 558, Bauarea 1199, Wiesen I = 5 po I5) → Δ = 3 Joch = -4,800 QKlft NATANČNO (prej 43.488). Klf stolpec se zapire (495 = 495). Odprto: pisarjevska nekonsistentnost Joch stolpca Summe (ali neobjavljena korekcija). Nič se ne vsiljuje (§4). Rešitvene poti: p26–p65 ovržene (val 78, F-PZ-14); Rektifikacija p35–40 ZAPRETA (val 79, F-PZ-16 — opisna, brez per-parcelnih površin); VAČ II @300 dpi OVRŽENA (val 80, F-PZ-17 — višja ločljivost na VAČ ne obstaja, maksimum = PDF-native ~150 dpi); val 80 nativna re-digitation Muster-citatov NE vpliva na Δ (vzorci kakovosti, ne seštevek); ostaja SAMO zunanji Rektifikacijski protokol (izven peskovnika)"
     },
     {
       "id": "F-PZ-05",
@@ -1087,9 +1096,9 @@
     },
     {
       "id": "F-PZ-12",
-      "title": "NOVO (val 77): p43–47 Reinertragstabellen — vrstični prepis poskušen in pošteno zavrnjen",
+      "title": "p43–47 Reinertragstabellen — celostranski prepis zavrnjen; val 80: band-metoda @nativno izvedljiva (pot @300 dpi ovržena)",
       "status": "OPEN",
-      "detail": "Celostranski VLM prepis p43–47 (5 strani) je nezanesljiv: model halucinira besedila in številke na gostem Kurrentu (nizka berljivost @182 dpi). Po §4 (nič vsiljenega) so branja ZAVRJENA in NE vhod v podatke; ohranjeno strukturno branje val 75. Celotni vrstični prepis čaka višjo ločljivost (VAČ IIIF tiles @300 dpi) ali ročno preverbo"
+      "detail": "Celostranski VLM prepis p43–47 (5 strani) je nezanesljiv: model halucinira besedila in številke na gostem Kurrentu (nizka berljivost @182 dpi). Po §4 (nič vsiljenega) so branja ZAVRJENA in NE vhod v podatke; ohranjeno strukturno branje val 75. val 80: (a) pot 'VAČ IIIF tiles @300 dpi' OVRŽENA — višja ločljivost na VAČ ne obstaja (F-PZ-17); (b) band-metoda @nativno IZVEDLJIVA — 8-pasovni test p43 čitljiv (glava 'Ackerland mit 2 Klassen', Wirthschaftskurs 1–6, 'Düngung auf 1 Joch … 3 Fuder … 90 … 120 Stück'); celoten vrstični prepis = izvedljiv naslednji val (40 klicev), ročna preverba ostaja alternativa"
     },
     {
       "id": "F-PZ-13",
@@ -1107,13 +1116,19 @@
       "id": "F-PZ-15",
       "title": "NOVO (val 78): §8 rdeči stolpec 'Zusammen' = post-revizijske površine — strukturiran (REVIEW, ni podlaga za deleže)",
       "status": "REVIEW",
-      "detail": "Rdeči stolpec (Rektifikacija 1830) strukturiran v revision_1830_zusammen: Aecher 419 J 1382 K / Wiesen 45[?] J 167 K / KG 2 J 1166 K / GG – J 1460 K / Weingärten 6 J 1059 K (TRANSCRIBED — križno §7 p21, F-PZ-06) / HW 121 J 1190 K / WmH 557[?] J 1258 K; subtotal 1150 J 1582 K; Bauarea 1 J 1199 K (križno p67); voda 68 J 1019 K (= F-PZ-10 več-vrednostna celica); sidro Total 1220 J 1493 K = §1 EXACT (SOLID). Veriga subtotal+Bauarea+voda = 1.954.200 vs Total = Δ 707 QKlft (0,036 %) OPEN-MICRO — znotraj REVIEW negotovosti; URADNI deleži 1830 ostajajo iz F-PZ-13 (črni stolpec, vrata I4–I6 EXACT); rdeče števke čakajo re-digitation @višjo ločljivost (VAČ II. prikaz)"
+      "detail": "Rdeči stolpec (Rektifikacija 1830) strukturiran v revision_1830_zusammen: Aecher 419 J 1382 K / Wiesen 45[?] J 167 K (val 80: varianca 41 vs 45 — 3 glasova 41, aritmetika subtotala 1150 EXACT za 45; ni odločeno §4) / KG 2 J 1166 K / GG – J 1460 K / Weingärten 6 J 1059 K (TRANSCRIBED — križno §7 p21, F-PZ-06) / HW 121 J 1190 K / WmH 557 J 1258 K (val 80: 557 aritmetično POTRJEN; 1258 potrjen 3×); subtotal 1150 J 1582 K; Bauarea 1 J 1199 K (križno p67); voda 68 J 1019 K (= F-PZ-10 več-vrednostna celica); sidro Total 1220 J 1493 K = §1 EXACT (SOLID). Veriga subtotal+Bauarea+voda = 1.954.200 vs Total = Δ 707 QKlft (0,036 %) OPEN-MICRO — znotraj REVIEW negotovosti; URADNI deleži 1830 ostajajo iz F-PZ-13 (črni stolpec, vrata I4–I6 EXACT); val 80 re-digitation rdečega stolpca (nativni pasovi): Total 1220|1493 potrjen 3×, WmH 557 aritmetično, KG/GG/WG/HW soglasno; ostata varianca Wiesen 41/45 + subtotal-K/veriga Δ 707 OPEN-MICRO"
     },
     {
       "id": "F-PZ-16",
       "title": "NOVO (val 79): Rektifikacijski odsek p35–40 je OPISNO-KVALITATIVEN — per-parcelne korekcije NE obstajajo v PZ [373419]",
       "status": "RESOLVED",
-      "detail": "Odločilni re-read (2 VLM prehoda @2x/@4x + direkten odtis, crops-v79/): p35–40 = Kultur-Beschreibung — opisne klase per kultur (I Aacker 3 klase, II Wiesen 2, III/IV vrtovi, VI Holzgärten, weiden meje) + zaključni protokol p40 (žirija Kappas + 9, k.k. Schätzungskommission, pečat; 9./29. april 1830 — mesec REVIEW; val-75 ugib '5./28.' ovržen). Edina numerika = 7 Muster-parcel per klas ('Als Muster dienen die Parzelle № X mit 1 Joch Y' — vzorci KAKOVOSTI, ne površinskih popravkov): № 30 = 1 J 1382 (p35), № 594 = 1 J 531 + № 1099 = 1 J 700 (p36), № 438|738 = 1 J 896 + № 2451 = 1 J 1515 (p37), № 2491|249/1 = 1 J 260 (p38), № 1288 nad prečrtano 2875 = 1 J 882|883 (p39). Rektifikacijska numeracija: 4/7 ni v 1825 PUA/PS registru (2451, 2491, 1288, 2875); p41–42 = 1832 protokoli (Nachsetzung/Vergleich; Einvernehmungs-Protocoll 6. dec. 1832 — popravek val-75 oznake 'Einwands-Protokoll'); p48 = Einvernehmung 5. aprila 1830, proza. → Rešitvena pot F-PZ-04 'per-parcelna kontrola p35–40' ZAPRETA: rešitev Δ 3 J ostaja pri VAČ II @300 dpi re-digitation ali zunanjem Rektifikacijskem protokolu (izven PZ in peskovnika)"
+      "detail": "Odločilni re-read (2 VLM prehoda @2x/@4x + direkten odtis, crops-v79/): p35–40 = Kultur-Beschreibung — opisne klase per kultur (I Aacker 3 klase, II Wiesen 2, III/IV vrtovi, VI Holzgärten, weiden meje) + zaključni protokol p40 (žirija Kappas + 9, k.k. Schätzungskommission, pečat; 9./29. april 1830 — mesec REVIEW; val-75 ugib '5./28.' ovržen). Edina numerika = 7 Muster-parcel per klas ('Als Muster dienen die Parzelle № X mit 1 Joch Y' — vzorci KAKOVOSTI, ne površinskih popravkov): № 30 = 1 J 1082 (p35; val 80 popravek 1382→1082), № 594 = 1 J 591 (val 80: 531→591) + № 1004 = 1 J 1010 (val 80 popravek: NE 1099/700) (p36), № 738 = – J 895 (pomlaj; val 80) + № 2451 = – J 1515 (pomlaj) (p37), № 2491|249/1 = – J 260 (pomlaj) (p38), № 1288 nad prečrtano 2875 = 1 J 882|883 REVIEW (p39). Rektifikacijska numeracija: 4/7 ni v 1825 PUA/PS registru (2451, 2491, 1288, 2875); p41–42 = 1832 protokoli (Nachsetzung/Vergleich; Einvernehmungs-Protocoll 6. dec. 1832 — popravek val-75 oznake 'Einwands-Protokoll'); p48 = Einvernehmung 5. aprila 1830, proza. → Rešitvena pot F-PZ-04 'per-parcelna kontrola p35–40' ZAPRETA: rešitev Δ 3 J ostaja pri VAČ II @300 dpi re-digitation ali zunanjem Rektifikacijskem protokolu (izven PZ in peskovnika; val 80: VAč pot ovržena, F-PZ-17)"
+    },
+    {
+      "id": "F-PZ-17",
+      "title": "NOVO (val 80): VAČ II. prikaz @300 dpi NE OBSTAJA — PDF-native ~150 dpi je maksimum portala za PZ [373419]; zadnja peskovniška rešitvena pot F-PZ-04 ovržena",
+      "status": "RESOLVED",
+      "detail": "Sistemska topološka preverba vseh VAČ (vac.sjas.gov.si) dostopnih poti za PZ docid 41784: (1) pdfPageImage = FIKSNA 608px predogleda — parametri size/width/zoom/dpi/scale ignorirani (200, isti odgovor); (2) session-vezani IIIF raster (Presentation 3 manifest, /vac/iiif/manifest?uodid&docid&seq — metoda grafičnih listov val 42) obstaja TUDI za PZ, ampak vsebuje SAMO ovitek 100×50 (seq-agnostičen; info.json 404); (3) per-page OCR AnnotationList (pdf-text) = prazna resources (enako pdf-raw-text, val 56); (4) pdf-manifest canvasi = PDF točke (608×1024 pt), ne piksli; (5) PDF vsebuje NATIVNO 1 rastri/stran brez mask (1268×2135 portret / ~2850×2380 ležeče; LuraDocument v2.16, 2006) — učinkovito ~150 dpi. Sklep: maksimum = PDF-native skeni (že v pz-n83/native/ od val 75); pretekle @2x–@4x 'večave' = interpolacija brez novih informacij. Vpliv: (a) F-PZ-04 — vse peskovniške rešitvene poti IZČRPANE (F-PZ-14/16/17), ostaja zunanji Rektifikacijski protokol; (b) F-PZ-12 — band-metoda @nativno izvedljiva (8-pasovni test p43 čitljiv); (c) metodološki standard za prihodnje valove: NATIVNI piksli + večav SAMO za VLM berljivost, nikoli kot vir detajlov"
     }
   ],
   "invariants_enforced": [
@@ -1125,5 +1140,5 @@
     "I6 vrstice 1–8 + unbenützbar = Total 1220 J 1493 K (fail-fast)"
   ],
   "invariant_violations": [],
-  "generated_at": "2026-09-26T18:04:05.849196+00:00"
+  "generated_at": "2026-09-26T20:52:54.576889+00:00"
 }
