@@ -3744,3 +3744,15 @@ Stage Summary:
 - ATLAS 1825: §8 rdeči stolpec »Zusammen« (post-revizijske površine Rektifikacije 1830) STRUKTURIRAN kot revision_1830_zusammen (7 vrstic + subtotal + unbenutzt_red; sidro Total = §1 EXACT; veriga Δ 707 OPEN-MICRO) — REVIEW, ni podlaga za deleže; F-PZ-14: rešitvene poti val 75 ovržene (p26–p65 brez površin); 15 najdb skupaj
 - KG v1.8 nespremenjen (20ec8a0a); viri 10/13 VERIFIED; 496 testov + 101/101 dimnih; +0 virov/+0 trditve per-parcel
 - Naslednje: 1) §8 rdeče števke re-digitation @višja ločljivost (VAČ II. prikaz — F-PZ-15) → potencialna ločljiva post-revizijska zgodba; 2) PZ celotni vrstični prepis (F-PZ-12 — čaka VAČ IIIF @300 dpi); 3) PS p56–143 (F-PV-03) ob VAČ kvoti; 4) PT p7 @300dpi (F-GEO-03/KG-F01); 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+### Task 39 dodatek — push+merge val 78 (PR #67) + poročilo #42 + deploy verifikacija
+
+- Push: feat/val78-pz-revision-zusammen → PR #67 → CI 2/2 ZELENO (tipi+lint+enotni ✓ · dimni testi API-jev živi strežnik+PostgreSQL ✓)
+- MERGE: PR #67 → main @ edd1269 (merge commit, vzorec prejšnjih valov); main sinhroniziran lokalno+remote; branch izbrisan (lokalno + remote 204)
+- Poročilo #42: comment-5847785781 (val 78: §8 rdeči stolpec strukturiran F-PZ-15 REVIEW; veriga Δ 707 OPEN-MICRO; F-PZ-14 rešitvene poti ovržene; disciplina KG v1.8 nespremenjen; 496/496 + 101/101 + 1074×5)
+- DEPLOY VERIFIKACIJA: **Render ŽIV z val 78**: /api/atlas/coverage → val: 78, kg_sha256 20ec8a0a ✓ · **Vercel produkcija še val 77** (build v čakalni vrsti / znani kvota artefakt val 66/68/75 — NI problem kode: CI 2/2 zeleno, 496 testov; produkcija se sinhronizira ob kvoti/ročnem triggerju uporabnika; /api/health 200, story vasi že kaže popravljen gozd item 558 J 558 K iz val 77 merge-a)
+- STANJE PLATFORM: GitHub main @ edd1269 = val 78 · Render = val 78 ŽIV · Vercel = val 77 (pending build)
+
+Stage Summary:
+- ATLAS 1825 val 78 ŽIV na GitHub+Render; Vercel v čakanju na kvoto (dokumentirani vzorec, koda potrjena s CI + 496 testov)
+- Naslednje po worklogu Task 39: 1) §8 rdeče števke re-digitation @višja ločljivost (VAČ II. prikaz — F-PZ-15); 2) PZ celotni vrstični prepis (F-PZ-12 — VAČ IIIF @300 dpi); 3) PS p56–143 (F-PV-03); 4) PT p7 @300dpi; 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
