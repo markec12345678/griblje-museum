@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the transcription of the handwritten German Kurrent document, here is the requested information:\n\n**(1) Section Heading**\n**I. Acker** (or **I. Äcker**)\n\n**(2) Parcel Citations (Parzelle №... / №...)**\n**This page contains no parcel citations (no \"Parzelle\" or \"№\" with area measurements in Joch and Klafter).** The text describes the general location, boundaries, and legal status of the cultural land (\"Acker\") but does not list individual parcels or their specific areas on this page.\n\n**(3) Owner Names Attached to Parcels**\nNone listed on this page (as there are no parcel entries).\n\n**(4) Dates**\n*   **1830** (appears near the top: *1830 vergrößert zugeschrieben*)\n*   **1 July 1882** (or **1. Juli 1882**) (appears in the lower portion of the text)\n\n**(5) Red-ink Annotations**\nThere are **no red-ink annotations** visible on this page; all text and markings appear to be in black or brown ink.\n\n---\n**Additional Context from Transcription:**\nThe text describes the location of the \"Acker\" (arable land) as being situated between the \"Gemeinde Grub\" (Grub municipality/community) and the \"Pfarrherrschaft\" (parish lordship), bordering properties belonging to individuals named **Lampert**, **Klaun**, **Bäurin**, **Fleisch**, **Zwischen**, **Benedikt**, **Müller**, etc. It mentions a \"Katastra\" (cadastral) context and notes that the land was \"vergrößert zugeschrieben\" (recorded as enlarged/increased) in 1830. The signatures at the bottom appear to be **[Josef/Georg] Pleyfn** (or similar surname).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445218,
+  "id": "20260927015322a1b0edcc3341483c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927015322a1b0edcc3341483c",
+  "usage": {
+    "completion_tokens": 413,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3722
+  }
+}

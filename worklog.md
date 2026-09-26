@@ -3756,3 +3756,26 @@ Stage Summary:
 Stage Summary:
 - ATLAS 1825 val 78 ŽIV na GitHub+Render; Vercel v čakanju na kvoto (dokumentirani vzorec, koda potrjena s CI + 496 testov)
 - Naslednje po worklogu Task 39: 1) §8 rdeče števke re-digitation @višja ločljivost (VAČ II. prikaz — F-PZ-15); 2) PZ celotni vrstični prepis (F-PZ-12 — VAČ IIIF @300 dpi); 3) PS p56–143 (F-PV-03); 4) PT p7 @300dpi; 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 40
+Agent: Z.ai Code (main orchestrator)
+Task: Val 79 — ISSUE #42 §4/§14: PZ Rektifikacija p35–42 odločilni re-read — per-parcelna kontrola (F-PZ-04) (user: "odlicno nadaljuj" / "nadaljuj kjer si ostal")
+
+Work Log:
+- Kontinuiteta: val 78 mergan (main @ edd1269, PR #67); naslednje po worklogu = 1) Rektifikacija p35–40 per-parcelna kontrola (F-PZ-04) — izbrana kot edina peskovniško izvedljiva naloga iz Task 39 "Naslednje" (ostale čakajo VAČ II @300 dpi / zunanje vire); peskovnik: dev :3000 ŽIV z val 78, PG embedded @ 5432
+- PREHOD 5 (metoda val 77/78): render p35–42 + p48 @2x (pymupdf, crops-v79/ 8 celotnih strani) + direkten odtis + 10 izrezkov linij @4x; 2 VLM prehoda (A strukturni @2x celotne strani; B številke @4x izrezki; surovi .raw v pz-n83/vlm/)
+- ODLOČILNA UGOTOVITEV (F-PZ-16 RESOLVED): Rektifikacijski odsek v PZ [373419] je OPISNO-KVALITATIVEN — p35–40 = Kultur-Beschreibung (I Aacker 3 klase, II Wiesen 2, III/IV vrtovi, VI Holzgärten, weiden meje) + protokol p40; per-parcelne numerične korekcije NE obstajajo; VLM prehoda A/B neodvisno potrjujeta (nobena tabela); VLM številke nezanesljive (halucinacije '1 Julj 1882' namesto '1 Joch 1382', '188/873' namesto '1288/2875' — dokumentirane, isti vzorec kot F-PZ-12)
+- 7 MUSTER-PARCEL (vzorci kakovosti per klas; vse REVIEW): № 30 = 1 J 1382 (p35 Acker I), № 594 = 1 J 531 (p36 Acker II), № 1099 = 1 J 700 (p36 Acker III), № 438|738 = 1 J 896 (p37 Wiesen I; 438 = PS-only podpora eye-branju), № 2451 = 1 J 1515 (p37 Wiesen II), № 2491|249/1 = 1 J 260 (p38 Obere Gärten), № 1288 nad prečrtano 2875 = 1 J 882|883 (p39 Weiden; isti revizijski vzorec 'trenutna NAD prečrtano' kot p67!)
+- RENUMERACIJA: križna kontrola vs PUA (2035) + PS (432) registri — 4/7 (2451, 2491, 1288, 2875) NE obstaja v 1825 → Muster-parcele v NOVI rektifikacijski numeraciji; per-parcelna vezava 1825→1830 UNKNOWN (zunanji protokol)
+- DATUMI p40 (popravek val-75): 'Kamm. Griblje am 9.' + 'k.k. Schätzungskommission den 29.' 1830 — val-75 ugib '5./28.' OVRŽEN; mesec April REVIEW (VLM A bral 'avgust'); 'vierte Nachtag'; p42 popravek 'Einvernehmungs-Protocoll' 6. dec. 1832 (NE Einwands-Protokoll); p41 = Nachsetzung/Vergleich 1832 (№ 1980/№ 88)
+- VGRADNJA: build-pz-1825.py val 79 PREHOD 5 — nov top-level odsek rektifikacija_beschreibung (struktura 5 razredov + 7 Muster-parcel + renumbering + protocol_p40 + post_1830_protocols + conclusion + reading_honesty); structure_map p35–42 + p48 popravljene; findings 15 → 16 (+F-PZ-16 RESOLVED); F-PZ-04 detail ožjan (poti v PZ izčrpane val 78+79; ostata VAČ II @300 dpi + zunanji protokol); I1–I6 vse EXACT (nespremenjene); coverage rebuild val 79 (PZ passes 5; next_reads: @300 dpi na 1. mesto + zunanji Rektifikacijski protokol; SRC-PZ opombe) + runtime kopija bajtno identična (md5 de95e3da…)
+- NESPREMENJENO (disciplina §22): KG v1.8 (20ec8a0a), timeline-1825-1830 (metrike nespremenjene), deleži F-PZ-13, i18n, I1–I6
+- QA: tests/pz-konskripcija.test.ts +7 val-79 varovalk (sekcija 7 Muster REVIEW, križna kontrola 3/7 no-match v TS, sklep ZAPRETA + remaining_paths, protokol 9./29. ovržen 5./28., structure_map pine, F-PZ-04 OPEN Δ 4.800 neodvisno v TS, prehod 5 + coverage val 79) + pine val 78 → 79 (pz meta, georef rep.val, coverage artefakti [72,74,79]) → **503/503 testov**; api-smoke **101/101**; tsc čist; lint čist; verify-i18n **1074×5** zeleno
+- e2e (agent-browser): naslovnica 0 konzolnih napak ✓; coverage API val 79 ✓; Atlas → ČAS 1825→ → točka 1830 = 441 duš / 222 M + 219 Ž / SRC-PZ povezave ✓; mobilno 390 px brez preliva ✓; posnetka val79-home.png + val79-timeline-1830.png v crops-v79/
+- Dokumentacija: research-griblje/92-val79-rektifikacija-beschreibung.md; README 132. sklop; 00-KAZALO vnos 92; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825: Rektifikacijski odsek PZ ODLOČILNO PREBRAN — OPISNO (F-PZ-16 RESOLVED): per-parcelne korekcije ne obstajajo v [373419]; F-PZ-04 (Δ 3 J) ostaja OPEN z izčrpanimi peskovniškimi potmi — edina v-peskovniška rešitev je VAČ II @300 dpi re-digitation, per-parcelna vezava 1825→1830 pa zahteva zunanji Rektifikacijski protokol; 7 Muster-parcel + 1830/1832 protokoli strukturirani
+- KG v1.8 nespremenjen (20ec8a0a); viri 10/13 VERIFIED; 503 testov + 101/101 dimnih; +0 virov/+0 trditve per-parcel
+- Naslednje: 1) VAČ II. prikaz @300 dpi — re-digitation Summe/vrstic (zadnja peskovniška rešitvena pot F-PZ-04; tudi F-PZ-15 rdeči stolpec + F-PZ-10 celica); 2) PZ celotni vrstični prepis @300 dpi (F-PZ-12); 3) PS p56–143 (F-PV-03) ob VAČ kvoti; 4) PT p7 @300dpi (F-GEO-03/KG-F01); 5) izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (vezava 1825→1830), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
