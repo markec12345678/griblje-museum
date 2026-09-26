@@ -1,0 +1,394 @@
+{
+  "val": 76,
+  "pass": "§20 PASS 1 (časovna os: 1825 referenčna + 1830 prvi dokumentiran korak)",
+  "issue": 42,
+  "deterministic": true,
+  "title": "ATLAS 1825 §20 — časovni drsnik: časovne točke vasi Griblje (1825 referenčna + 1830 prvi dokumentiran korak)",
+  "spec": "issue #42 §20: podatkovni model časovnih točk + API + UI; pošteno: točke brez virov = izrecno AWAITING_SOURCE, brez interpolacij (§4)",
+  "method": {
+    "built_from": [
+      "pz-konskripcija-1830.json (val 75)",
+      "pv-land-use-1825.json (val 74)",
+      "knowledge-graph-1825.json (v1.7)"
+    ],
+    "deterministic": true,
+    "no_guessing": "§4: metrika brez vira ne obstaja; manjkajoča metrika v dokumentirani točki = izrecen absent_metrics blok; AWAITING_SOURCE točke so prazne po pogodbi"
+  },
+  "contract": {
+    "statuses": {
+      "DOCUMENTED": "vsaj ena metrika z vpisanim virom (source_id + evidence)",
+      "AWAITING_SOURCE": "brez vpisanega vira → brez metrik in brez virov (nič trditev)"
+    },
+    "rules": [
+      "točka brez vpisanega vira = AWAITING_SOURCE in NE nosi metrik (§4: nič ne ugibamo)",
+      "metriki se NIKOLI ne interpolirajo med točkami — vsaka točka stoji samo na svojih virih",
+      "manjkajoča metrika v dokumentirani točki = izrecen absent_metrics blok (ni tihih presledkov)",
+      "REVIEW branja ostanejo označena (nikoli tiho dokazana)",
+      "vsak metric.source_id MORA obstajati kot SOURCE vozlišče v KG (I3)"
+    ],
+    "issue_22": "sprememba vhodnih podatkov (KG/PV/PZ) spremeni izhod in z njim UI resnico; nič se ne piše ročno"
+  },
+  "provenance": {
+    "built_from": [
+      "research-griblje/atlas-1825/pz-konskripcija-1830.json",
+      "research-griblje/atlas-1825/pv-land-use-1825.json",
+      "research-griblje/atlas-1825/knowledge-graph-1825.json"
+    ],
+    "kg_sha256": "b150db193957e173ba3eadba0936449963a73b30c3d6da302329d9f5155ab6d5",
+    "runtime_copy": "src/data/timeline-1825-1830.json",
+    "vac": {
+      "SRC-PV": "https://vac.sjas.gov.si/vac/search/details?id=373418",
+      "SRC-PZ": "https://vac.sjas.gov.si/vac/search/details?id=373419"
+    }
+  },
+  "invariants_enforced": [
+    "I1: prebivalstvo 1830 = aritmetika iz surovega PZ (222 M + 219 Ž = 441, EXACT)",
+    "I2: površina PZ ↔ PV prečno validirana (Δ < 1 %; dokumentirano 0,086 %)",
+    "I3: vsaka metrika DOCUMENTED točke ima source_id (KG SOURCE) + evidence + reading_status",
+    "I4: AWAITING_SOURCE točke imamo 0 metrik in 0 virov",
+    "I5: letnice strogo naraščajoče in unikatne; statusi samo DOCUMENTED | AWAITING_SOURCE",
+    "I6: KG zatiči pribiti (PUA 2035 / PS 432 / raba 326+106) — zaščita pred zdrsom grafa"
+  ],
+  "invariant_violations": [],
+  "summary": {
+    "points_total": 8,
+    "documented": 2,
+    "awaiting_source": 6,
+    "years": [
+      1825,
+      1830,
+      1857,
+      1869,
+      1880,
+      1890,
+      1900,
+      1910
+    ],
+    "expected_census_years": [
+      1857,
+      1869,
+      1880,
+      1890,
+      1900,
+      1910
+    ],
+    "note": "1825 = lastninska resnica (kataster, brez prebivalstva) · 1830 = prvi prebivalstveni korak (PZ) · 1857–1910 = pričakovane letnice brez virov"
+  },
+  "points": [
+    {
+      "year": 1825,
+      "status": "DOCUMENTED",
+      "label": "Kataster 1825 — izmera 1824, operati 1825, korekcije 1827",
+      "kind": "kataster_lastninska_resnica",
+      "source_ids": [
+        "SRC-PT",
+        "SRC-PS",
+        "SRC-PUA",
+        "SRC-PV"
+      ],
+      "metrics": [
+        {
+          "metric_id": "commune_area",
+          "value": 1955173,
+          "unit": "QKlft",
+          "display": "1221 J 1573 K (1.955.173 QKlft ≈ 7,032 km²)",
+          "source_id": "SRC-PV",
+          "evidence": "pv-n83/ (tabela I + II, aritmetična vrata val 74)",
+          "reading_status": "TRANSCRIBED",
+          "note": "Area der ganzen Gemeinde; vrata na 3 nivojih (vsota I, vsota II, velika)."
+        },
+        {
+          "metric_id": "pasture_share",
+          "value": 52.06,
+          "unit": "pct",
+          "display": "52,06 % površine (636 J 263 K)",
+          "source_id": "SRC-PV",
+          "evidence": "pv-n83/ (Weiden)",
+          "reading_status": "TRANSCRIBED",
+          "note": "kraška pašniška struktura (F-PV-05); gozd = kategorija 'Weiden mit Holznutzen' v PZ (F-PV-02 razrešena na ravni kategorij, val 75)."
+        },
+        {
+          "metric_id": "arable_share",
+          "value": 33.84,
+          "unit": "pct",
+          "display": "33,84 % površine (413 J 870 K)",
+          "source_id": "SRC-PV",
+          "evidence": "pv-n83/ (Äcker)",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "meadow_share",
+          "value": 6.3,
+          "unit": "pct",
+          "display": "6,3 % površine (76 J 1480 K)",
+          "source_id": "SRC-PV",
+          "evidence": "pv-n83/ (Wiesen)",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "orchard_meadow_share",
+          "value": 1.0,
+          "unit": "pct",
+          "display": "1,0 % površine (12 J 328 K)",
+          "source_id": "SRC-PV",
+          "evidence": "pv-n83/ (Wiesen mit Obstgärten)",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "vineyard_area",
+          "value": 11865,
+          "unit": "QKlft",
+          "display": "7 J 665 K (≈ 4,27 ha)",
+          "source_id": "SRC-PV",
+          "evidence": "pv-n83/ (Wein-Gärten)",
+          "reading_status": "TRANSCRIBED",
+          "note": "F-PV-03: v prepisanem delu PS p1–55 ni nobene Weingarten parcele — nasadi se omenjajo šele v PZ §7 (1830)."
+        },
+        {
+          "metric_id": "parcels_pua",
+          "value": 2035,
+          "unit": "count",
+          "display": "2035 parcel",
+          "source_id": "SRC-PUA",
+          "evidence": "knowledge-graph-1825.json (PARCEL origin=PUA)",
+          "reading_status": "TRANSCRIBED",
+          "note": "urbarialne akcije; vir rabe ne zapisuje (val 63 KG)."
+        },
+        {
+          "metric_id": "parcels_ps",
+          "value": 432,
+          "unit": "count",
+          "display": "432 parcel",
+          "source_id": "SRC-PS",
+          "evidence": "ps-n83/register.json (p3–55)",
+          "reading_status": "TRANSCRIBED",
+          "note": "prepis pokriva SAMO p3–55 od 143 strani (F-PZ-09); 412 unikatnih parcel, 20 so-referenciranih vrstic."
+        },
+        {
+          "metric_id": "parcels_with_land_use",
+          "value": 326,
+          "unit": "count",
+          "display": "326 parcel z leksikalno dokazano rabo (106 neznanka)",
+          "source_id": "SRC-PS",
+          "evidence": "ps-n83/register.json (njiva 230, travnik 60, gozd 13, pašnik 9, vrt 10, drugo 4)",
+          "reading_status": "TRANSCRIBED",
+          "note": "raba samo EXACT termini; neznanka = termin ni nedvoumen (original ohranjen, val 73)."
+        }
+      ],
+      "absent_metrics": [
+        {
+          "metric_id": "population_total",
+          "reason": "Katastrski operati popisujejo lastninska stanja, ne ljudi. Konskripcija prebivalstva za 1825 ni med 13 vpisanimi viri (ATLAS 1825)."
+        },
+        {
+          "metric_id": "houses",
+          "reason": "Številka hiš kot konskripcija (vzorec PZ §3) za 1825 ni v vpisanih virih; PT vodi stavbne parcele (BP = davčne enote), ne konskripcije hiš."
+        },
+        {
+          "metric_id": "families",
+          "reason": "Družinska konskripcija za 1825 ni v vpisanih virih."
+        }
+      ],
+      "note": "PS p3–55 omenja 167 hišnih entitet (delna pokritost p56–143 brez vrstic, F-PZ-09) — NI primerljivo s konskripcijo 70 hiš (1830) brez re-reada; zato tu ni metrike 'hiše'."
+    },
+    {
+      "year": 1830,
+      "status": "DOCUMENTED",
+      "label": "Konskripcija 1830 — PZ Katastral-Schätzungs-Elaborat [373419] §3/§4/§1/§7",
+      "kind": "konskripcija_prebivalstva",
+      "source_ids": [
+        "SRC-PZ"
+      ],
+      "metrics": [
+        {
+          "metric_id": "population_total",
+          "value": 441,
+          "unit": "count",
+          "display": "441 duš",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/z-bevoelkerung.jpeg (p2, §3)",
+          "reading_status": "TRANSCRIBED",
+          "note": "vrata I1 EXACT: 222 M + 219 Ž = 441; referenca 'Conscriptionis-Revisions-Resultaten vom Jahre 1830'."
+        },
+        {
+          "metric_id": "population_men",
+          "value": 222,
+          "unit": "count",
+          "display": "222 moških",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/z-bevoelkerung.jpeg",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "population_women",
+          "value": 219,
+          "unit": "count",
+          "display": "219 žensk",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/z-bevoelkerung.jpeg",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "houses",
+          "value": 70,
+          "unit": "count",
+          "display": "70 hiš",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/z-bevoelkerung.jpeg",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "families",
+          "value": 102,
+          "unit": "count",
+          "display": "102 družin",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/z-bevoelkerung.jpeg",
+          "reading_status": "TRANSCRIBED",
+          "note": "kontekstni izraz 'Hofesgesessene' delno nejasen; številka jasna v obeh prehodih."
+        },
+        {
+          "metric_id": "livestock_ochsen",
+          "value": 124,
+          "unit": "count",
+          "display": "124 Ochsen",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/ (§4 Viehstand, 2 prehoda)",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "livestock_kuehe_rosse",
+          "value": 20,
+          "unit": "count",
+          "display": "20 Kühe | Rosse",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/ (§4)",
+          "reading_status": "REVIEW",
+          "note": "rokopis dvoumen: krave ALI konji — ostaja odprto (F-PZ-03)."
+        },
+        {
+          "metric_id": "livestock_jungvieh",
+          "value": 30,
+          "unit": "count",
+          "display": "30 Jungvieh",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/ (§4)",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "livestock_schafe",
+          "value": 150,
+          "unit": "count",
+          "display": "150 Schafe",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/ (§4)",
+          "reading_status": "TRANSCRIBED"
+        },
+        {
+          "metric_id": "livestock_laemmer",
+          "value": 30,
+          "unit": "count",
+          "display": "30 Lämmer",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/ (§4)",
+          "reading_status": "REVIEW",
+          "note": "dvom v branje vrste (F-PZ-03)."
+        },
+        {
+          "metric_id": "commune_area",
+          "value": 1953493,
+          "unit": "QKlft",
+          "display": "1220 J 1493 K (1.953.493 QKlft ≈ 7,026 km²)",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/z-area-digits.jpeg (p1, §1)",
+          "reading_status": "TRANSCRIBED",
+          "note": "rdeči popravek prek prečrtanih 1235 J 1516 K; Δ 1680 QKlft = 0,086 % vs PV (vrata I2 < 1 %) = prečna validacija dveh virov."
+        },
+        {
+          "metric_id": "vineyard_area",
+          "value": 11242,
+          "unit": "QKlft",
+          "display": "7 J 42 K (§7, Einzige Classe)",
+          "source_id": "SRC-PZ",
+          "evidence": "pz-n83/z-weingaerten.jpeg (p21)",
+          "reading_status": "TRANSCRIBED",
+          "note": "Joch ujemanje s PV (7 J); Klafter različen (42 vs 665) — rdeča revizija 6 J 1059 K REVIEW; nič izenačeno brez virov."
+        }
+      ],
+      "absent_metrics": [
+        {
+          "metric_id": "pasture_share",
+          "reason": "PZ Endresultat (p67) poroča 'Weiden mit Holznutzen' 558 J 846 K, ampak Summa p67 se ne zapira (F-PZ-04 OPEN, Δ 43.488 QKl) — deleži se ne objavljajo, dokler se vsota ne razreši (§14: nič vsiljenega)."
+        }
+      ],
+      "note": "Dokument obsega 1828/29–1830 (Nachtrag 1829, protokoli 1830); prebivalstvo nosi referenco 1830. Živina: 2 vrsti REVIEW."
+    },
+    {
+      "year": 1857,
+      "status": "AWAITING_SOURCE",
+      "label": "Popisna letnica 1857 (cislajtanski popisi) — vir še ni vpisan",
+      "kind": "pričakovana_letnica",
+      "source_ids": [],
+      "metrics": [],
+      "absent_metrics": [],
+      "expected_basis": "Uradne popisne letnice cislajtanskih popisov (1857/1869/1880/1890/1900/1910). Ali (in kako) popis pokriva Griblje, ugotovimo ŠELE z virom — točka nosi nič trditev.",
+      "note": null
+    },
+    {
+      "year": 1869,
+      "status": "AWAITING_SOURCE",
+      "label": "Popisna letnica 1869 (cislajtanski popisi) — vir še ni vpisan",
+      "kind": "pričakovana_letnica",
+      "source_ids": [],
+      "metrics": [],
+      "absent_metrics": [],
+      "expected_basis": "Uradne popisne letnice cislajtanskih popisov (1857/1869/1880/1890/1900/1910). Ali (in kako) popis pokriva Griblje, ugotovimo ŠELE z virom — točka nosi nič trditev.",
+      "note": null
+    },
+    {
+      "year": 1880,
+      "status": "AWAITING_SOURCE",
+      "label": "Popisna letnica 1880 (cislajtanski popisi) — vir še ni vpisan",
+      "kind": "pričakovana_letnica",
+      "source_ids": [],
+      "metrics": [],
+      "absent_metrics": [],
+      "expected_basis": "Uradne popisne letnice cislajtanskih popisov (1857/1869/1880/1890/1900/1910). Ali (in kako) popis pokriva Griblje, ugotovimo ŠELE z virom — točka nosi nič trditev.",
+      "note": null
+    },
+    {
+      "year": 1890,
+      "status": "AWAITING_SOURCE",
+      "label": "Popisna letnica 1890 (cislajtanski popisi) — vir še ni vpisan",
+      "kind": "pričakovana_letnica",
+      "source_ids": [],
+      "metrics": [],
+      "absent_metrics": [],
+      "expected_basis": "Uradne popisne letnice cislajtanskih popisov (1857/1869/1880/1890/1900/1910). Ali (in kako) popis pokriva Griblje, ugotovimo ŠELE z virom — točka nosi nič trditev.",
+      "note": null
+    },
+    {
+      "year": 1900,
+      "status": "AWAITING_SOURCE",
+      "label": "Popisna letnica 1900 (cislajtanski popisi) — vir še ni vpisan",
+      "kind": "pričakovana_letnica",
+      "source_ids": [],
+      "metrics": [],
+      "absent_metrics": [],
+      "expected_basis": "Uradne popisne letnice cislajtanskih popisov (1857/1869/1880/1890/1900/1910). Ali (in kako) popis pokriva Griblje, ugotovimo ŠELE z virom — točka nosi nič trditev.",
+      "note": null
+    },
+    {
+      "year": 1910,
+      "status": "AWAITING_SOURCE",
+      "label": "Popisna letnica 1910 (cislajtanski popisi) — vir še ni vpisan",
+      "kind": "pričakovana_letnica",
+      "source_ids": [],
+      "metrics": [],
+      "absent_metrics": [],
+      "expected_basis": "Uradne popisne letnice cislajtanskih popisov (1857/1869/1880/1890/1900/1910). Ali (in kako) popis pokriva Griblje, ugotovimo ŠELE z virom — točka nosi nič trditev.",
+      "note": null
+    }
+  ],
+  "generated_at": "2026-09-26T13:00:40Z"
+}
