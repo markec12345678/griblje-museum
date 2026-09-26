@@ -122,7 +122,7 @@ function metricOf(year: number, metric_id: string): TimelineMetric {
   return m;
 }
 
-describe("val 76 — timeline §20: schema + pogodba", () => {
+describe("val 76+77 — timeline §20: schema + pogodba", () => {
   test("I5: letnice strogo naraščajoče in unikatne", () => {
     const years = tl.points.map((p) => p.year);
     const sorted = [...years].sort((a, b) => a - b);
@@ -171,14 +171,14 @@ describe("val 76 — timeline §20: schema + pogodba", () => {
   });
 
   test("val + determinizem + nič ročnega urejanja", () => {
-    expect(tl.val).toBe(76);
+    expect(tl.val).toBe(77);
     expect(tl.issue).toBe(42);
     expect(tl.deterministic).toBe(true);
     expect(tl.invariants_enforced.length).toBeGreaterThanOrEqual(6);
   });
 });
 
-describe("val 76 — vrata I1/I2 neodvisno iz surovih virov", () => {
+describe("val 76+77 — vrata I1/I2 neodvisno iz surovih virov", () => {
   test("I1: prebivalstvo 1830 = 222 M + 219 Ž = 441 (aritmetika iz PZ)", () => {
     expect(pz.bevoelkerung_1830.maenner + pz.bevoelkerung_1830.weiber).toBe(
       pz.bevoelkerung_1830.zusammen_seelen
@@ -236,7 +236,7 @@ describe("val 76 — vrata I1/I2 neodvisno iz surovih virov", () => {
   });
 });
 
-describe("val 76 — vrata I3/I6: sledljivost + KG zatiči", () => {
+describe("val 76+77 — vrata I3/I6: sledljivost + KG zatiči", () => {
   test("I3: vsaka metrika ima veljaven KG SOURCE, evidence in znan reading_status", () => {
     const sourceIds = new Set(
       kg.nodes.filter((n) => n.node_type === "SOURCE").map((n) => n.node_id)
@@ -274,9 +274,14 @@ describe("val 76 — vrata I3/I6: sledljivost + KG zatiči", () => {
     expect(pointOf(1825).metrics.find((m) => m.metric_id === "population_total")).toBeUndefined();
   });
 
-  test("1830: delež pašnikov izrecno absent (F-PZ-04 OPEN — nič vsiljeno)", () => {
+  test("1830: delež pašnikov izrecno absent (F-PZ-04 EXPLAINED-V77 — REVIEW števke, nič vsiljeno)", () => {
     const absent = pointOf(1830).absent_metrics.map((a) => a.metric_id);
     expect(absent).toContain("pasture_share");
+    const reason = pointOf(1830).absent_metrics.find(
+      (a) => a.metric_id === "pasture_share"
+    )?.reason;
+    expect(reason).toContain("EXPLAINED-V77");
+    expect(reason).toContain("§8");
     expect(pointOf(1830).metrics.find((m) => m.metric_id === "pasture_share")).toBeUndefined();
   });
 
@@ -292,7 +297,7 @@ describe("val 76 — vrata I3/I6: sledljivost + KG zatiči", () => {
   });
 });
 
-describe("val 76 — čista plast (src/lib/atlas-timeline.ts)", () => {
+describe("val 76+77 — čista plast (src/lib/atlas-timeline.ts)", () => {
   test("timelinePoint: 1830 najdena, neznana letnica null, neštevilčno null", () => {
     expect(timelinePoint(1830)?.status).toBe("DOCUMENTED");
     expect(timelinePoint(1824)).toBeNull();
@@ -309,7 +314,7 @@ describe("val 76 — čista plast (src/lib/atlas-timeline.ts)", () => {
   test("timelinePoints + overview skladni z dokumentom", () => {
     expect(timelinePoints()).toHaveLength(tl.points.length);
     const ov = timelineOverview();
-    expect(ov.val).toBe(76);
+    expect(ov.val).toBe(77);
     expect(ov.summary.documented).toBe(2);
     expect(ov.points).toHaveLength(8);
   });

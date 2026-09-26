@@ -34,7 +34,7 @@ ROOT = Path(__file__).resolve().parents[2]
 ATLAS = ROOT / "research-griblje" / "atlas-1825"
 SRC_DATA = ROOT / "src" / "data"
 
-VAL = 76
+VAL = 77
 PASS = "§20 PASS 1 (časovna os: 1825 referenčna + 1830 prvi dokumentiran korak)"
 
 
@@ -331,16 +331,16 @@ points = [
                 "7 J 42 K (§7, Einzige Classe)",
                 "SRC-PZ",
                 "pz-n83/z-weingaerten.jpeg (p21)",
-                note="Joch ujemanje s PV (7 J); Klafter različen (42 vs 665) — rdeča revizija 6 J 1059 K REVIEW; nič izenačeno brez virov.",
+                note="Joch ujemanje s PV (7 J); Klafter različen (42 vs 665); rdeča revizija 6 J 1059 K — val 77 križno potrjena v §8 rdečem stolpcu 'Zusammen' (TRANSCRIBED); nič izenačeno brez virov.",
             ),
         ],
         "absent_metrics": [
             {
                 "metric_id": "pasture_share",
-                "reason": "PZ Endresultat (p67) poroča 'Weiden mit Holznutzen' 558 J 846 K, ampak Summa p67 se ne zapira (F-PZ-04 OPEN, Δ 43.488 QKl) — deleži se ne objavljajo, dokler se vsota ne razreši (§14: nič vsiljenega).",
+                "reason": "F-PZ-04 EXPLAINED-V77: p67 Summa = zastala vmesna stopnja (Δ 42.900 QKlft nad aktivnimi vrsticami); post-revizijske površine 1830 so sedaj dokumentirane v §8 rdečem stolpcu 'Zusammen' (sidro Total 1220 J 1493 K = §1 EXACT), a števke vrstic ostajajo REVIEW (kurrentska dvoumnost) — delež pašnikov se ne objavlja, dokler branje ni zanesljivo (§14: nič vsiljenega).",
             },
         ],
-        "note": "Dokument obsega 1828/29–1830 (Nachtrag 1829, protokoli 1830); prebivalstvo nosi referenco 1830. Živina: 2 vrsti REVIEW.",
+        "note": "Dokument obsega 1828/29–1830 (Nachtrag 1829, protokoli 1830); prebivalstvo nosi referenco 1830. Živina: 2 vrsti REVIEW. Val 77: Endresultat popravljen (Weiden m.H. 558 J 558 K; Bauarea 1 J 1199 K) + §8 post-revizijske površine vgrajene kot dokumentni agregat.",
     },
 ]
 

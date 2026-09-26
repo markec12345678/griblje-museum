@@ -838,13 +838,13 @@ ok(
   `status=${cov75.status}`
 );
 
-/* --- 5r. §20 TIME SLIDER (val 76, #42 §20) --------------------------------- */
+/* --- 5r. §20 TIME SLIDER (val 76+77, #42 §20) ------------------------------- */
 const tlAll = await getJson("/api/atlas/timeline");
 ok(
-  "atlas timeline: 8 točk (2 DOCUMENTED + 6 AWAITING_SOURCE), letnice naraščajoče, val 76",
+  "atlas timeline: 8 točk (2 DOCUMENTED + 6 AWAITING_SOURCE), letnice naraščajoče, val 77",
   tlAll.status === 200 &&
     tlAll.body?.ok === true &&
-    tlAll.body?.val === 76 &&
+    tlAll.body?.val === 77 &&
     tlAll.body?.summary?.points_total === 8 &&
     tlAll.body?.summary?.documented === 2 &&
     tlAll.body?.summary?.awaiting_source === 6 &&
@@ -862,6 +862,16 @@ ok(
     tl1830?.metrics?.find((m: { metric_id: string }) => m.metric_id === "families")?.value === 102 &&
     tl1830?.source_ids?.includes("SRC-PZ"),
   `status=${tlAll.status} metrics=${tl1830?.metrics?.length}`
+);
+const tl1830Absent = tl1830?.absent_metrics?.find(
+  (a: { metric_id: string }) => a.metric_id === "pasture_share"
+);
+ok(
+  "atlas timeline 1830: pašniški delež izrecno absent z razlago F-PZ-04 EXPLAINED-V77 (val 77)",
+  tl1830Absent !== undefined &&
+    String(tl1830Absent?.reason ?? "").includes("EXPLAINED-V77") &&
+    String(tl1830Absent?.reason ?? "").includes("42.900"),
+  `absent=${tl1830Absent ? "present" : "missing"}`
 );
 const tlAwaiting = await getJson("/api/atlas/timeline?year=1857");
 ok(

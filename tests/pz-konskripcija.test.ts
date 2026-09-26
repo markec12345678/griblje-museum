@@ -5,12 +5,14 @@ import { generateVillageStory } from "../src/lib/atlas-story-engine";
 import kgRaw from "../src/data/knowledge-graph-1825.json";
 
 /**
- * Val 75 — PZ N83 "Katastral-Schätzungs-Elaborat" (Konskripcija) [373419]
+ * Val 75+77 — PZ N83 "Katastral-Schätzungs-Elaborat" (Konskripcija) [373419]
  * (issue #42 §4/§14 + §20 prvi podatkovni korak).
  *
- * 71 strani; PREHOD 1 struktura + PREHOD 2 ključna branja (2 prehoda).
+ * 71 strani; PREHOD 1 struktura + PREHOD 2 ključna branja (2 prehoda);
+ * PREHOD 3 (val 77): Summa kontrola p67 + §8 rdeči stolpec (2 prehoda).
  * Testi NE zaupajo builderju: aritmetična vrata I1 (prebivalstvo) in I2
- * (površina PZ↔PV) so preverjena neodvisno v TS iz surovih celic.
+ * (površina PZ↔PV) ter §8 veriga (subtotal+Bauarea+voda vs Total) so
+ * preverjena neodvisno v TS iz surovih celic.
  * PZ je dokumentni agregat — NIKOLI per-parcelne trditve (§4).
  */
 
@@ -62,6 +64,7 @@ type PzDoc = {
       classe: string;
       joch: number;
       klafter: number;
+      crossed?: string[];
     }[];
     summa: { joch: number; klafter: number };
     sum_check: {
@@ -79,6 +82,23 @@ type PzDoc = {
     mustergrund_parcel_no: string;
   };
   structure_map: { page: number; content: string }[];
+  revision_1830_p6: {
+    rows: { kultur: string; joch: number; klafter: number; reading_status: string }[];
+    unbenutzt: {
+      bauarea: { joch: number; klafter: number; reading_status: string };
+      wasser_fliessende_gruende: { joch: number; klafter: number; reading_status: string };
+    };
+    subtotal_cultivirte: { joch: number; klafter: number; reading_status: string };
+    total_flaeche: { joch: number; klafter: number; reading_status: string };
+    sum_check: {
+      subtotal_plus_unbenutzt_qklft: number;
+      total_written_qklft: number;
+      delta_qklft: number;
+      delta_pct: number;
+      closes: boolean;
+      status: string;
+    };
+  };
   findings: PzFinding[];
   invariants_enforced: string[];
   invariant_violations: unknown[];
@@ -97,9 +117,10 @@ const kg = kgRaw as unknown as {
   findings: { finding_id: string; val: number; status: string }[];
 };
 
-describe("val 75 — PZ dokumentna resnica [373419]", () => {
-  test("meta: uodid 373419 / docid 41784 / 71 strani / val 75", () => {
-    expect(pz.val).toBe(75);
+describe("val 75+77 — PZ dokumentna resnica [373419]", () => {
+  test("meta: uodid 373419 / docid 41784 / 71 strani / val 77 / PASS 2", () => {
+    expect(pz.val).toBe(77);
+    expect(pz.pass).toContain("PASS 2");
     expect(pz.provenance.uodid).toBe(373419);
     expect(pz.provenance.docid).toBe(41784);
     expect(pz.provenance.pages).toBe(71);
@@ -145,7 +166,7 @@ describe("val 75 — PZ dokumentna resnica [373419]", () => {
     }
   });
 
-  test("Endresultat: Weingärten 7 J 42 K = PV Joch števec + §7; Weiden mit Holznutzen 558 J 846 K", () => {
+  test("Endresultat: Weingärten 7 J 42 K = PV Joch števec + §7; Weiden mit Holznutzen 558 J 558 K (val 77 popravek)", () => {
     const rows = pz.endresultat_p67.rows;
     const wein = rows.find((r) => r.kultur === "Weingärten");
     expect(wein).toBeDefined();
@@ -154,7 +175,11 @@ describe("val 75 — PZ dokumentna resnica [373419]", () => {
     const holz = rows.find((r) => r.kultur === "Weiden mit Holznutzen");
     expect(holz).toBeDefined();
     expect(holz!.joch).toBe(558);
-    expect(holz!.klafter).toBe(846);
+    expect(holz!.klafter).toBe(558); // val 77: aktiven 558 nad prečrtanim 846 (val 75: 846 napačno kot aktiven)
+    expect(holz!.crossed).toContain("846");
+    const bauarea = rows.find((r) => r.kultur.startsWith("Baucarea"));
+    expect(bauarea!.klafter).toBe(1199); // val 77: aktiven 1199 nad prečrtanim 1144 (val 75: 1499[?] napačno)
+    expect(bauarea!.crossed).toContain("1144");
     // Aecher I + II = 414 J 962 K (§8 črne vrednosti)
     const aI = rows.find((r) => r.kultur === "Aecher" && r.classe === "I");
     const aII = rows.find((r) => r.kultur === "Aecher" && r.classe === "II");
@@ -162,20 +187,59 @@ describe("val 75 — PZ dokumentna resnica [373419]", () => {
     expect(aI!.klafter + aII!.klafter).toBe(962);
   });
 
-  test("F-PZ-04 OPEN: Summa se NE siluje v skladnost — vrata se ne zaprejo in to je dokumentirano", () => {
+  test("F-PZ-04 EXPLAINED-V77: Summa = stale — vrata neodvisno izračunana (Δ 42.900) in dokumentirana", () => {
     const e = pz.endresultat_p67;
     const rowsJ = e.rows.reduce((s, r) => s + r.joch, 0);
     const rowsK = e.rows.reduce((s, r) => s + r.klafter, 0);
     const rowsTotal = rowsJ * KLFT + rowsK;
     const summa = e.summa.joch * KLFT + e.summa.klafter;
     expect(summa).toBe(1811695); // 1132 J 495 K
-    expect(rowsTotal).not.toBe(summa);
+    expect(rowsJ).toBe(1155);
+    expect(rowsK).toBe(6595);
+    expect(rowsTotal).toBe(1854595); // val 77 popravek (val 75: 1855183 z napačnimi aktivnimi)
+    expect(rowsTotal - summa).toBe(42900);
     expect(e.sum_check.closes).toBe(false);
-    expect(e.sum_check.status).toBe("OPEN");
-    expect(e.sum_check.delta_qklft).toBe(rowsTotal - summa);
+    expect(e.sum_check.delta_qklft).toBe(42900);
     const f = pz.findings.find((x) => x.id === "F-PZ-04");
     expect(f).toBeDefined();
-    expect(f!.status).toBe("OPEN");
+    expect(f!.status).toBe("EXPLAINED-V77");
+    expect(f!.detail).toContain("zastala");
+    expect(f!.detail).toContain("§8 rdeči stolpec");
+  });
+
+  test("§8 revizija 1830 (rdeči stolpec): sidro Total = §1 EXACT, veriga Δ 707, Weingärten TRANSCRIBED", () => {
+    const rev = pz.revision_1830_p6;
+    expect(rev.rows).toHaveLength(7);
+    // SIDRO: Total Fläche = §1 rdeči popravek EXACT (neodvisno preverjeno)
+    expect(rev.total_flaeche.joch).toBe(1220);
+    expect(rev.total_flaeche.klafter).toBe(1493);
+    expect(rev.total_flaeche.joch * KLFT + rev.total_flaeche.klafter).toBe(
+      pz.area_total.red_corrected_qklft
+    );
+    expect(rev.total_flaeche.reading_status).toBe("SOLID");
+    // veriga: subtotal + Bauarea + voda vs Total (Δ 707 QKlft = 0,036 %)
+    const s = rev.subtotal_cultivirte;
+    const bau = rev.unbenutzt.bauarea;
+    const w = rev.unbenutzt.wasser_fliessende_gruende;
+    const chain = s.joch * KLFT + s.klafter + (bau.joch * KLFT + bau.klafter) + (w.joch * KLFT + w.klafter);
+    expect(chain).toBe(1954200);
+    expect(rev.sum_check.total_written_qklft).toBe(1953493);
+    expect(rev.sum_check.delta_qklft).toBe(707);
+    expect(rev.sum_check.delta_pct).toBeLessThan(0.1);
+    expect(rev.sum_check.closes).toBe(false);
+    expect(rev.sum_check.status).toBe("OPEN-MICRO");
+    // Weingärten 6 J 1059 K = edina TRANSCRIBED vrstica (križno p21 = F-PZ-06)
+    const wein = rev.rows.find((r) => r.kultur === "Weingärten");
+    expect(wein!.joch).toBe(6);
+    expect(wein!.klafter).toBe(1059);
+    expect(wein!.reading_status).toBe("TRANSCRIBED");
+    expect(wein!.joch * KLFT + wein!.klafter).toBe(10659);
+    // ostale vrstice REVIEW — deleži se ne objavljajo (§14)
+    const reviewRows = rev.rows.filter((r) => r.reading_status === "REVIEW");
+    expect(reviewRows.length).toBe(6);
+    // Bauarea križno = p67 Posten 8 aktiven 1199
+    expect(bau.klafter).toBe(1199);
+    expect(bau.reading_status).toBe("TRANSCRIBED");
   });
 
   test("živina 1830: števci 124/20/30/150/30, vrste z iskrenimi statusi", () => {
@@ -205,7 +269,7 @@ describe("val 75 — PZ dokumentna resnica [373419]", () => {
     expect(joined).toContain("SPECIFISCHER AUSWEIS");
   });
 
-  test("najdbe: F-PZ-01/02/06/08 RESOLVED, F-PZ-04 OPEN, brez tihega reševanja", () => {
+  test("najdbe: F-PZ-01/02/06/08 RESOLVED, F-PZ-04 EXPLAINED-V77, brez tihega reševanja", () => {
     const byId = new Map(pz.findings.map((f) => [f.id, f]));
     expect(byId.get("F-PZ-01")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-02")!.status).toBe("RESOLVED");
@@ -225,15 +289,18 @@ describe("val 75 — PZ dokumentna resnica [373419]", () => {
   });
 });
 
-describe("val 75 — KG v1.7 + zgodba vasi", () => {
-  test("KG v1.7: SRC-PZ z TRANSCRIBED_PARTIAL coverage + KG-F09; števci stabilni", () => {
-    expect(kg.val).toBe(75);
-    expect(kg.title).toContain("v1.7");
+describe("val 77 — KG v1.8 + zgodba vasi", () => {
+  test("KG v1.8: SRC-PZ z TRANSCRIBED_PARTIAL coverage (val 75+77) + KG-F09 val 77; števci stabilni", () => {
+    expect(kg.val).toBe(77);
+    expect(kg.title).toContain("v1.8");
     const srcPz = kg.nodes.find((n) => n.node_id === "SRC-PZ");
     expect(srcPz).toBeDefined();
     expect(srcPz!.coverage).toContain("TRANSCRIBED_PARTIAL");
-    expect(srcPz!.coverage).toContain("val 75");
-    expect(kg.findings.some((f) => f.finding_id === "KG-F09" && f.val === 75)).toBe(true);
+    expect(srcPz!.coverage).toContain("val 75+77");
+    expect(srcPz!.coverage).toContain("558 J 558 K");
+    expect(kg.findings.some((f) => f.finding_id === "KG-F09" && f.val === 77)).toBe(true);
+    const f09 = kg.findings.find((f) => f.finding_id === "KG-F09");
+    expect(f09!.status).toContain("RESOLVED-V77");
   });
 
   test("zgodba vasi: prebivalstvo 1830 + PZ Weiden mit Holznutzen vidna; 10 sekcij", () => {

@@ -1,5 +1,5 @@
 {
-  "val": 76,
+  "val": 77,
   "pass": "§20 PASS 1 (časovna os: 1825 referenčna + 1830 prvi dokumentiran korak)",
   "issue": 42,
   "deterministic": true,
@@ -34,7 +34,7 @@
       "research-griblje/atlas-1825/pv-land-use-1825.json",
       "research-griblje/atlas-1825/knowledge-graph-1825.json"
     ],
-    "kg_sha256": "b150db193957e173ba3eadba0936449963a73b30c3d6da302329d9f5155ab6d5",
+    "kg_sha256": "a22ba7ede421bbfcf12db14fcfef13331bd1cbd81add2c0159b32f080327ff31",
     "runtime_copy": "src/data/timeline-1825-1830.json",
     "vac": {
       "SRC-PV": "https://vac.sjas.gov.si/vac/search/details?id=373418",
@@ -312,16 +312,16 @@
           "source_id": "SRC-PZ",
           "evidence": "pz-n83/z-weingaerten.jpeg (p21)",
           "reading_status": "TRANSCRIBED",
-          "note": "Joch ujemanje s PV (7 J); Klafter različen (42 vs 665) — rdeča revizija 6 J 1059 K REVIEW; nič izenačeno brez virov."
+          "note": "Joch ujemanje s PV (7 J); Klafter različen (42 vs 665); rdeča revizija 6 J 1059 K — val 77 križno potrjena v §8 rdečem stolpcu 'Zusammen' (TRANSCRIBED); nič izenačeno brez virov."
         }
       ],
       "absent_metrics": [
         {
           "metric_id": "pasture_share",
-          "reason": "PZ Endresultat (p67) poroča 'Weiden mit Holznutzen' 558 J 846 K, ampak Summa p67 se ne zapira (F-PZ-04 OPEN, Δ 43.488 QKl) — deleži se ne objavljajo, dokler se vsota ne razreši (§14: nič vsiljenega)."
+          "reason": "F-PZ-04 EXPLAINED-V77: p67 Summa = zastala vmesna stopnja (Δ 42.900 QKlft nad aktivnimi vrsticami); post-revizijske površine 1830 so sedaj dokumentirane v §8 rdečem stolpcu 'Zusammen' (sidro Total 1220 J 1493 K = §1 EXACT), a števke vrstic ostajajo REVIEW (kurrentska dvoumnost) — delež pašnikov se ne objavlja, dokler branje ni zanesljivo (§14: nič vsiljenega)."
         }
       ],
-      "note": "Dokument obsega 1828/29–1830 (Nachtrag 1829, protokoli 1830); prebivalstvo nosi referenco 1830. Živina: 2 vrsti REVIEW."
+      "note": "Dokument obsega 1828/29–1830 (Nachtrag 1829, protokoli 1830); prebivalstvo nosi referenco 1830. Živina: 2 vrsti REVIEW. Val 77: Endresultat popravljen (Weiden m.H. 558 J 558 K; Bauarea 1 J 1199 K) + §8 post-revizijske površine vgrajene kot dokumentni agregat."
     },
     {
       "year": 1857,
@@ -390,5 +390,5 @@
       "note": null
     }
   ],
-  "generated_at": "2026-09-26T13:00:40Z"
+  "generated_at": "2026-09-26T15:27:03Z"
 }

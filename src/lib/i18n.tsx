@@ -516,7 +516,7 @@ export const ui = {
         "Hiše/družine: konskripcija hiš za to leto ni v vpisanih virih (stavbne parcele BP so davčne enote, ne konskripcija hiš).",
       absentFamilies: "Družine: družinska konskripcija za to leto ni v vpisanih virih.",
       absentPastureShare:
-        "Delež pašnikov: PZ Endresultat se ne zapira (F-PZ-04 OPEN, Δ 43.488 QKl) — deleži se ne objavljajo, dokler se vsota ne razreši (§14).",
+        "Delež pašnikov: post-revizijske površine 1830 (§8) imajo REVIEW števke — delež se ne objavlja, dokler branje ni zanesljivo (F-PZ-04 razložen val 77: zastala Summa; §14: nič vsiljenega).",
     },
     chronicle: {
       title: "Kronika vasi",
@@ -1925,7 +1925,7 @@ export const ui = {
       absentFamilies:
         "Families: a family conscription for this year is not among the entered sources.",
       absentPastureShare:
-        "Pasture share: the PZ Endresultat does not close (F-PZ-04 OPEN, Δ 43,488 QKl) — shares are not published until the sum is resolved (§14).",
+        "Pasture share: the 1830 post-revision areas (§8) carry REVIEW digits — the share is not published until the reading is reliable (F-PZ-04 explained in wave 77: stale Summa; §14: nothing forced).",
     },
     chronicle: {
       title: "Village chronicle",
@@ -3328,7 +3328,7 @@ export const ui = {
       absentFamilies:
         "Obitelji: obiteljska konstrikcija za ovu godinu nije u upisanim izvorima.",
       absentPastureShare:
-        "Udio pašnjaka: PZ Endresultat se ne zatvara (F-PZ-04 OPEN, Δ 43.488 QKl) — udjeli se ne objavljuju dok se zbroj ne riješi (§14).",
+        "Udio pašnjaka: porevizijeske površine 1830 (§8) imaju REVIEW brojeve — udio se ne objavljuje dok čitanje nije pouzdano (F-PZ-04 objašnjeno u valu 77: zastarjela suma; §14: ništa nametnuto).",
     },
     chronicle: {
       title: "Kronika sela",
@@ -4732,7 +4732,7 @@ export const ui = {
       absentFamilies:
         "Familien: eine Familien-Konskription für dieses Jahr ist nicht unter den erfassten Quellen.",
       absentPastureShare:
-        "Weideanteil: das PZ-Endresultat schließt nicht (F-PZ-04 OPEN, Δ 43.488 QKl) — Anteile werden erst veröffentlicht, wenn die Summe geklärt ist (§14).",
+        "Weideanteil: die nachrevisionierten Flächen 1830 (§8) tragen REVIEW-Ziffern — der Anteil wird erst veröffentlicht, wenn die Lesung zuverlässig ist (F-PZ-04 in Welle 77 erklärt: veraltete Summa; §14: nichts erzwungen).",
     },
     chronicle: {
       title: "Dorfchronik",
@@ -6137,7 +6137,7 @@ export const ui = {
       absentFamilies:
         "Famiglie: una coscrizione delle famiglie per quest'anno non è tra le fonti registrate.",
       absentPastureShare:
-        "Quota pascoli: l'Endresultat PZ non si chiude (F-PZ-04 OPEN, Δ 43.488 QKl) — le quote non vengono pubblicate finché la somma non è risolta (§14).",
+        "Quota pascoli: le superfici post-revisione 1830 (§8) hanno cifre REVIEW — la quota non viene pubblicata finché la lettura non è affidabile (F-PZ-04 spiegato nel val 77: somma superata; §14: nulla forzato).",
     },
     chronicle: {
       title: "Cronaca del villaggio",

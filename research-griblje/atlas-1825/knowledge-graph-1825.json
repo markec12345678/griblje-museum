@@ -1,7 +1,7 @@
 {
- "val": 75,
- "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija (prebivalstvo 1830, §20 prvi korak)",
- "title": "knowledge-graph-1825 v1.7",
+ "val": 77,
+ "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija (prebivalstvo 1830, §20 prvi korak) + val 77 Summa kontrola + §8 revizija 1830",
+ "title": "knowledge-graph-1825 v1.8",
  "findings": [
   {
    "finding_id": "KG-F01",
@@ -60,10 +60,10 @@
   },
   {
    "finding_id": "KG-F09",
-   "val": 75,
-   "statement": "PZ [373419] Konskripcija: TRANSCRIBED_PARTIAL — prebivalstvo 1830 (441 duš = 222 M + 219 Ž, aritmetična vrata EXACT; 70 hiš; 102 družin) = prvi podatkovni korak #42 §20; skupna površina rdeči popravek 1220 J 1493 K (PV 1221 J 1573 K, Δ 0,086 % = prečna validacija); Endresultat: 'Weiden mit Holznutzen' 558 J 846 K → F-PV-02 (gozd) razrešena na ravni kategorij (silvopastoralna raba; per-parcelni PS izrazi nespremenjeni §5). F-PZ-04 OPEN: Summa p67 (1132 J 495 K) ≠ vsota vrstic 1–8 (1159 J 783 K, Δ 43.488 QKl) — nič se ne vsiljuje. Nodes/edges/claims/ID-ji NESPREMENJENI; kg_sha256 se spremeni (§22 pogodba: podatek spremenjen = story_id spremenjen).",
-   "status": "RESOLVED-V75 (odprta: F-PZ-04 Summa; celotni PZ prepis; PS p56–143 za F-PV-03)",
-   "provenance": "research-griblje/atlas-1825/pz-konskripcija-1830.json + build-pz-1825.py (val 75); pz-n83/ (PDF + 71 nativnih skenov + dokazni izrezki)"
+   "val": 77,
+   "statement": "PZ [373419] Konskripcija: TRANSCRIBED_PARTIAL — prebivalstvo 1830 (441 duš = 222 M + 219 Ž, aritmetična vrata EXACT; 70 hiš; 102 družin) = prvi podatkovni korak #42 §20; skupna površina rdeči popravek 1220 J 1493 K (PV 1221 J 1573 K, Δ 0,086 % = prečna validacija); Endresultat: 'Weiden mit Holznutzen' 558 J 558 K (val 77 popravek: klafter 558 aktiven nad prečrtanim 846) ≈ 3,214 km² → F-PV-02 (gozd) razrešena na ravni kategorij (silvopastoralna raba; per-parcelni PS izrazi nespremenjeni §5). F-PZ-04 EXPLAINED-V77: p67 Summa (1132 J 495 K) = zastala vmesna stopnja — ne ustreza niti prvotnim niti popravljenim vrsticam (Δ 42.900 QKlft nad aktivnimi 1159 J 195 K); p30/p63/p65 preverjeni (pridelki/rente/Culturfonds — brez površin); avtoritativna post-revizijska resnica = §8 rdeči stolpec 'Zusammen' s sidrom Total = §1 EXACT (rdeča veriga Δ 707 QKlft = 0,036 % OPEN-MICRO; števke REVIEW razen Weingärten 6 J 1059 K). Nodes/edges/claims/ID-ji NESPREMENJENI; kg_sha256 se spremeni (§22 pogodba: podatek spremenjen = story_id spremenjen).",
+   "status": "RESOLVED-V77 (odprta: celotni PZ prepis; §8 rdeče števke re-digitation; PS p56–143 za F-PV-03)",
+   "provenance": "research-griblje/atlas-1825/pz-konskripcija-1830.json + build-pz-1825.py (val 75+77); pz-n83/ (PDF + 71 nativnih skenov + dokazni izrezki + crops-v77/)"
   }
  ],
  "provenance": {
@@ -139,7 +139,7 @@
     "uodid": 373419,
     "docid": 41784,
     "pages": 71,
-    "coverage": "TRANSCRIBED_PARTIAL (val 75): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + Endresultat p67 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K rdeči popravek); celotni vrstični prepis NE",
+    "coverage": "TRANSCRIBED_PARTIAL (val 75+77): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + Endresultat p67 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K rdeči popravek; val 77 popravek aktivnih vrednosti: Weiden m.H. 558 J 558 K, Bauarea 1 J 1199 K) + §8 rdeči stolpec 'Zusammen' = post-revizijske površine (sidro Total = §1 EXACT; števke REVIEW razen Weingärten 6 J 1059 K); celotni vrstični prepis NE",
     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"
    },
    {
@@ -403,7 +403,7 @@
    "uodid": 373419,
    "docid": 41784,
    "pages": 71,
-   "coverage": "TRANSCRIBED_PARTIAL (val 75): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + Endresultat p67 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K rdeči popravek); celotni vrstični prepis NE",
+   "coverage": "TRANSCRIBED_PARTIAL (val 75+77): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + Endresultat p67 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K rdeči popravek; val 77 popravek aktivnih vrednosti: Weiden m.H. 558 J 558 K, Bauarea 1 J 1199 K) + §8 rdeči stolpec 'Zusammen' = post-revizijske površine (sidro Total = §1 EXACT; števke REVIEW razen Weingärten 6 J 1059 K); celotni vrstični prepis NE",
    "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"
   },
   {
@@ -103587,7 +103587,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T15:24:54Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103609,7 +103609,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T15:24:54Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103636,7 +103636,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T15:24:54Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103663,7 +103663,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T15:24:54Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }

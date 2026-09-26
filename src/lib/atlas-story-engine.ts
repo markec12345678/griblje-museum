@@ -975,7 +975,7 @@ export function generateVillageStory(): VillageStory {
         []
       ),
       item(
-        `PZ [373419] prepisan delno (val 75): Endresultat — 'Weiden mit Holznutzen' 558 J 846 K ≈ 3,224 km² kot lastna kategorija; ločenih 'Waldungen' v Endresultatu NI → napetost PV Wälder 0 vs PS 13 Wald parcel dobila razlago kategorij (gozdno-pašniška/silvopastoralna raba, F-PV-02); per-parcelni PS izrazi ostajajo nespremenjeni (§5)`,
+        `PZ [373419] prepisan delno (val 75+77): Endresultat — 'Weiden mit Holznutzen' 558 J 558 K ≈ 3,214 km² kot lastna kategorija (val 77 popravek: klafter 558 aktiven nad prečrtanim 846); ločenih 'Waldungen' v Endresultatu NI → napetost PV Wälder 0 vs PS 13 Wald parcel dobila razlago kategorij (gozdno-pašniška/silvopastoralna raba, F-PV-02); per-parcelni PS izrazi ostajajo nespremenjeni (§5)`,
         "TRANSCRIBED",
         ["SRC-PZ", "SRC-PV"],
         []
@@ -1043,7 +1043,7 @@ export function generateVillageStory(): VillageStory {
     title: "10. Neznanke in raziskovalne vrzeli (§13)",
     items: [
       item(
-        `${kg.research_gaps.length} raziskovalnih vrzel (${gapsOpen} OPEN, ${kg.research_gaps.length - gapsOpen} razrešenih) — naslednji viri: PS p56–143 vrstični prepis (F-PV-03), PZ celotni vrstični prepis (F-PZ-04 Summa), PT p7 re-read @300dpi, PR re-read`,
+        `${kg.research_gaps.length} raziskovalnih vrzel (${gapsOpen} OPEN, ${kg.research_gaps.length - gapsOpen} razrešenih) — naslednji viri: PS p56–143 vrstični prepis (F-PV-03), PZ §8 rdeče števke re-digitation (F-PZ-04 razložen val 77 — stale Summa), PZ celotni vrstični prepis, PT p7 re-read @300dpi, PR re-read`,
         "UNKNOWN",
         [],
         []
