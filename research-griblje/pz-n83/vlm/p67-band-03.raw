@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Kleine Gärten | ROW=3 | NAME=Kleine Gärten | CLASSE=C | JOCH=3 | KLAFTER=613 | KLAFTER_FRAC=22 4/4 | BRUTO_ERTRAG_INT=80 | BRUTO_ERTRAG_FRAC=19 1/2 | ABZUG_1=10 | ABZUG_1_VAL=105 [crossed:115] | COL_9=13 | COL_10=5 | COL_11=114 | COL_12=162 | COL_13=114 | COL_14=162\n\nNAME=Größere Gärten | ROW=4 | NAME=Größere Gärten | CLASSE=C | JOCH=. | KLAFTER=405 | KLAFTER_FRAC=22 4/4 | BRUTO_ERTRAG_INT=6 | BRUTO_ERTRAG_FRAC=2 3/4 | ABZUG_1=10 | ABZUG_1_VAL=102 [crossed:113] | COL_9=13 | COL_10=5 | COL_11=3 | COL_12=183 | COL_13=3 | COL_14=183\n\nNAME=Weingärten | ROW=5 | NAME=Weingärten | CLASSE=C | JOCH=7 | KLAFTER=62 | KLAFTER_FRAC=21 | BRUTO_ERTRAG_INT=16 | BRUTO_ERTRAG_FRAC=? ? | ABZUG_1=16 | ABZUG_1_VAL=109 [crossed:?] | COL_9=7 | COL_10=10 | COL_11=10 | COL_12=202 | COL_13=50 | COL_14=202",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429764,
+  "id": "20260926213559df4a7d753fd64af4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926213559df4a7d753fd64af4",
+  "usage": {
+    "completion_tokens": 384,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2348,
+    "prompt_tokens_details": {
+      "cached_tokens": 136
+    },
+    "total_tokens": 2732
+  }
+}

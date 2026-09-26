@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Kleine Gärten CLASSE=C JOCH=3 KLAFTER=615 OTHER: col3=[?]2 col4=44 col5=80 col6=19[1/4] col7=10 col8=[crossed:1]10[crossed:5]5\n\nNAME=Größere Gärten CLASSE=C JOCH=- KLAFTER=605 OTHER: col3=22 col4=44 col5=6 col6=2/3 col7=10 col8=103 115",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429914,
+  "id": "202609262138314d10ee69d1d844c2",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262138314d10ee69d1d844c2",
+  "usage": {
+    "completion_tokens": 119,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1102,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1221
+  }
+}

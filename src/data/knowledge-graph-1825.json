@@ -1,7 +1,7 @@
 {
- "val": 75,
- "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija (prebivalstvo 1830, §20 prvi korak)",
- "title": "knowledge-graph-1825 v1.7",
+ "val": 77,
+ "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija + PZ PASS 2 (re-read p67/§8, vrata I4–I6)",
+ "title": "knowledge-graph-1825 v1.8",
  "findings": [
   {
    "finding_id": "KG-F01",
@@ -60,10 +60,10 @@
   },
   {
    "finding_id": "KG-F09",
-   "val": 75,
-   "statement": "PZ [373419] Konskripcija: TRANSCRIBED_PARTIAL — prebivalstvo 1830 (441 duš = 222 M + 219 Ž, aritmetična vrata EXACT; 70 hiš; 102 družin) = prvi podatkovni korak #42 §20; skupna površina rdeči popravek 1220 J 1493 K (PV 1221 J 1573 K, Δ 0,086 % = prečna validacija); Endresultat: 'Weiden mit Holznutzen' 558 J 846 K → F-PV-02 (gozd) razrešena na ravni kategorij (silvopastoralna raba; per-parcelni PS izrazi nespremenjeni §5). F-PZ-04 OPEN: Summa p67 (1132 J 495 K) ≠ vsota vrstic 1–8 (1159 J 783 K, Δ 43.488 QKl) — nič se ne vsiljuje. Nodes/edges/claims/ID-ji NESPREMENJENI; kg_sha256 se spremeni (§22 pogodba: podatek spremenjen = story_id spremenjen).",
-   "status": "RESOLVED-V75 (odprta: F-PZ-04 Summa; celotni PZ prepis; PS p56–143 za F-PV-03)",
-   "provenance": "research-griblje/atlas-1825/pz-konskripcija-1830.json + build-pz-1825.py (val 75); pz-n83/ (PDF + 71 nativnih skenov + dokazni izrezki)"
+   "val": 77,
+   "statement": "PZ [373419] Konskripcija PASS 2 (val 77): odločilni re-read Endresultata p67 + §8 (p6) z izrezki celic in aritmetičnimi vrati I4–I6 popravlja val-75 branja — Summa 1152 J 495 K (prej 1132), GG 405 K (prej 105), Bauarea 1 J 1199 K (prej 1499), WmH Klf 558 (revizija nad prečrtano 846), Wiesen §8 45 J 812 K → Wiesen I = 5 J izpeljano. 6/6 kultur zapre §8 EXACT; vrstice 1–8 (1149 J 495 K) + unbenützbar (71 J 998 K izpeljano) = Total 1220 J 1493 K EXACT (PV-validirano). Strukturni deleži 1830: njive 33,96 % · pašniške 55,43 % · travniki 3,73 % · vinogradi 0,58 %. F-PZ-04 OSTAJA OPEN: zapisana Summa je 3 J (4.800 QKlft) nad vsoto vrstic (val 75: 43.488 na napačnih branjih) — Klf stolpec se zapira, pisarjevska nekonsistentnost; deleži v UI ostanejo absent (pogodba val 76). Prebivalstvo 1830 (441 duš; 70 hiš; 102 družin) in §20 time slider nespremenjena. Nodes/edges/claims/ID-ji NESPREMENJENI; kg_sha256 se spremeni (§22 pogodba).",
+   "status": "RESOLVED-V77 (odprta: F-PZ-04 Summa Δ 3 J; F-PZ-10 unbenützbar REVIEW; F-PZ-12 p43–47 vrstični prepis; PS p56–143 za F-PV-03)",
+   "provenance": "research-griblje/atlas-1825/pz-konskripcija-1830.json + build-pz-1825.py (val 77 PASS 2); pz-n83/ (PDF + 71 nativnih skenov + dokazni izrezki crops/p67-area, crops/p6-tab-*, crops/p6-zus-*)"
   }
  ],
  "provenance": {
@@ -139,7 +139,7 @@
     "uodid": 373419,
     "docid": 41784,
     "pages": 71,
-    "coverage": "TRANSCRIBED_PARTIAL (val 75): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + Endresultat p67 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K rdeči popravek); celotni vrstični prepis NE",
+    "coverage": "TRANSCRIBED_PARTIAL (val 77 PASS 2): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + odločilni re-read Endresultata p67 z vrati I4–I6 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K; deleži 1830 izpeljani); p43–47 vrstični prepis ZAVRJEN pošteno (F-PZ-12) — čaka @300 dpi",
     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"
    },
    {
@@ -403,7 +403,7 @@
    "uodid": 373419,
    "docid": 41784,
    "pages": 71,
-   "coverage": "TRANSCRIBED_PARTIAL (val 75): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + Endresultat p67 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K rdeči popravek); celotni vrstični prepis NE",
+   "coverage": "TRANSCRIBED_PARTIAL (val 77 PASS 2): struktura 71/71 + ključna branja §1/§2/§3/§4/§7/§8 + odločilni re-read Endresultata p67 z vrati I4–I6 (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin; površina 1220 J 1493 K; deleži 1830 izpeljani); p43–47 vrstični prepis ZAVRJEN pošteno (F-PZ-12) — čaka @300 dpi",
    "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373419"
   },
   {
@@ -103587,7 +103587,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T14:06:35Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103609,7 +103609,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T14:06:35Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103636,7 +103636,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T14:06:35Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -103663,7 +103663,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-26T11:24:29Z",
+   "generated_at": "2026-09-26T14:06:35Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }

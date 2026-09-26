@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "RAW=614 (with 615 crossed out below it) FINAL=614 UNCERTAINTY=low\nPASS-B: Re-reading the cell confirms the top number is clearly \"614\". The bottom number is \"615\" with a horizontal strike-through line. The final current value is 614.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790430138,
+  "id": "20260926214212bacced9d15034c36",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926214212bacced9d15034c36",
+  "usage": {
+    "completion_tokens": 69,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1752,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1821
+  }
+}

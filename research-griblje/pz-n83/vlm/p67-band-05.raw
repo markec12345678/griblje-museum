@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "NAME=Weiden mit Holznutzen | ROW=7 | CLASSE=C | COL2=558 | COL3=[crossed:846] | Joch=1 | KLAFTER=6 | COL5=[crossed:646] | COL6=11 | COL7=- | COL8=13 | COL9=25 | COL10=- | COL11=51 | COL12=1174 | COL13=[crossed:353] | COL14=1174 | COL15=[crossed:353]",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790429773,
+  "id": "202609262136104e2aa30e45e44437",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262136104e2aa30e45e44437",
+  "usage": {
+    "completion_tokens": 115,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2348,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2463
+  }
+}

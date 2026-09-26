@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "III<sup>te</sup> Classe\n\n**Wirthschaftskataster**\n*mit Zubauß Stiegen, dörben mit 9 jährgen die*\n*Die*\n*nur mit gefälltem Zinssern*\n\n| N° | Gattung | Zins | Bemerkungen |\n| :--- | :--- | :--- | :--- |\n| 1 | 1 | | |\n| | | | *Gnädigst bewilligtes freies Zehentrecht* |\n\n*Rechnung auf 1 Joch, worin in der*\n*I = et II = Zehendpflichten.*\n\n**Natural Ertrag pro Joch**\n\n| N° | Beschreibung | Ertrag (Metzen) |\n| :--- | :--- | :--- |\n| [crossed:1] | *f. [crossed:Korn]* = *f. [crossed:Gerste] und Mait.* | *[crossed:15] Metz.* |\n| 2 | Weizengut | 8 \" |\n| 3 | *Eben dieselbe Maaß* | 30 \"[?]\" |\n| 4 | Weizengut | 8 \" |\n| 5 | Romen | 8 \" |\n| | *Muffel: Gersten* | 6 \" |\n| 6 | Linpr | 9 \" |\n| 7 | *Erdäpfel* | 60 \" |\n| 8 | Romen | 8 \" |\n| | *Muffel: Gersten* | 6 \" |\n| 9 | Linpr | 9 \" |\n\n*Anmerkung:*\n*Zb Waiz wird ausgestellt; davorüber aber*\n*dürfen fremd nicht pflanzt, da deren zumin Verhältnis*",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790430928,
+  "id": "202609262155132aa2ac558be549c9",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609262155132aa2ac558be549c9",
+  "usage": {
+    "completion_tokens": 393,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4515,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4908
+  }
+}

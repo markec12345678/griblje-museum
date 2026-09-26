@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the image provided, this page is **not a cadastral net yield table (Reinertragstabelle)**. It is a **handwritten administrative document** (likely a protocol, report, or record of a meeting) from the Austrian cadastral survey period (c. 1829/30).\n\nThe text contains:\n*   **Top section:** A sketch/diagram with place names (e.g., *Hallweiden*, *Niedrig*, *Klederwald*) and notes on field boundaries, yields, and measurements (mentioning *Joch*, *Klafter*, *Metzen*).\n*   **Middle section:** A narrative paragraph discussing the reliability of the land register (*Grundbuch*) and the need for verification, signed by an official (*M. Gmünd* or similar).\n*   **Bottom section:** A list of names (likely witnesses, commissioners, or property owners) with checkmarks/crosses next to them.\n\n**Transcription of the Document Content:**\n\n| Section | Transcription / Content |\n| :--- | :--- |\n| **Header/Title** | *ganz Niedrig*<br>*Hallweiden und Klederwald*<br>*Eigene Classe* |\n| **Diagram Notes** | *im gültig*<br>*Zahlungspflicht* [crossed out: *und 5*]<br>*Gemeinde pflicht*<br>*zum Gemeinde nutzigen Acker wird jährlich*<br>*im Jahr*<br>*Summe* [crossed out: *16*] *[unclear]* *zum Halbfuhrgeld.* |\n| **Narrative Text** | *Muthmaaßlich Richtigkeit vorgestellt zum besseren einzusehen sind,*<br>*Mindestens eine hinlängliche Begründung fehlt, wenn möglich zuzufügen, und allfällig*<br>*vorgeschrieben.*<br>*Actum ut supra.*<br>*Laden Burgau Districts-Büro.*<br>*(Signature)*<br>*M. Gmünd*<br>*Actuar* |\n| **List of Names** | *[+] Franz Pößl oder gemeldeten*<br>[+] *Johann Mairhofer*<br>[+] *Franz Dirrmoser*<br>[+] *Michl Laimer*<br>*Hieronymus Hieronimi*<br>*Cassian Amann probator* |\n\n**Note:** As this page contains no tabular data with parcel numbers (N°), areas (Joch/Klafter), or yield values (Metze/Centner) in a table format, a table transcription as requested cannot be generated from this specific image. The document appears to be the accompanying textual justification or minutes related to the survey work in the locality of *Hallweiden und Klederwald*.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790430967,
+  "id": "20260926215545253cddb5b62945ad",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260926215545253cddb5b62945ad",
+  "usage": {
+    "completion_tokens": 618,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4515,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5133
+  }
+}
