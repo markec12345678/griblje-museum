@@ -677,6 +677,53 @@ ok(
   `status=${covBadCat.status}`
 );
 
+/* --- 5n. EXPLORE 1825 UI klici (val 71, issue #42 §16/§19) ------------------ */
+
+const stMO = await getJson("/api/atlas/story?entity=" + encodeURIComponent("MO:MO-A01-002"));
+ok(
+  "atlas story UI: klik na kartografski objekt — MO:MO-A01-002 → EVIDENCED + pogodba §22",
+  stMO.status === 200 &&
+    stMO.body?.ok === true &&
+    stMO.body?.focus?.node_id === "MO:MO-A01-002" &&
+    stMO.body?.contract?.story_status === "EVIDENCED" &&
+    typeof stMO.body?.contract?.content_hash === "string" &&
+    stMO.body?.contract?.content_hash.length >= 8 &&
+    Array.isArray(stMO.body?.sections),
+  `status=${stMO.status} status_st=${stMO.body?.contract?.story_status}`
+);
+
+const stVillage = await getJson("/api/atlas/story?scope=village");
+ok(
+  "atlas story UI: 'Povej mi zgodbo tega kraja' — village → 10 sekcij + razporeditev tiri (§18)",
+  stVillage.status === 200 &&
+    stVillage.body?.ok === true &&
+    stVillage.body?.scope === "village" &&
+    stVillage.body?.sections?.length === 10 &&
+    typeof stVillage.body?.tier_breakdown === "object",
+  `status=${stVillage.status} sekcije=${stVillage.body?.sections?.length}`
+);
+
+const evToponym = await getJson(
+  "/api/atlas/evidence?q=" + encodeURIComponent("Zagorje") + "&type=TOPONYM"
+);
+ok(
+  "atlas evidence UI: klik na toponim — iskanje razreši TOPONYM node (npr. TP-029 Zagorje)",
+  evToponym.status === 200 &&
+    evToponym.body?.ok === true &&
+    evToponym.body?.count >= 1 &&
+    (evToponym.body?.results ?? []).every(
+      (r: any) => typeof r.node_id === "string" && r.node_id.startsWith("TP-")
+    ),
+  `status=${evToponym.status} count=${evToponym.body?.count}`
+);
+
+const stMissing = await getJson("/api/atlas/story?entity=toponym:NeobstojeciToponim");
+ok(
+  "atlas story UI: nerešljiva referenta → 404 node_not_found (poštena napaka, ne izmišljotina)",
+  stMissing.status === 404 && stMissing.body?.error === "node_not_found",
+  `status=${stMissing.status}`
+);
+
 /* --- izid ------------------------------------------------------------------ */
 
 const failed = checks.filter((c) => !c.pass);
