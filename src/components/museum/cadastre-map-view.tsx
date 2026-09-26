@@ -14,6 +14,7 @@ import { BookOpen, Search } from "lucide-react";
 import { markerIcon } from "@/components/museum/leaflet-map";
 import { useLang } from "@/lib/i18n";
 import { AtlasStoryDialog, StoryButton } from "@/components/museum/atlas-story";
+import { AtlasTimelinePanel } from "@/components/museum/atlas-timeline";
 import {
   bpNodeRef,
   landUseBucketOf,
@@ -204,7 +205,7 @@ export function CadastreMapView() {
   const { t, lang } = useLang();
   const k = t.kataster;
   const s = t.atlasStory;
-  const [tab, setTab] = React.useState<"sheet" | "today" | "explore">("sheet");
+  const [tab, setTab] = React.useState<"sheet" | "today" | "explore" | "time">("sheet");
   const [query, setQuery] = React.useState("");
   const [opacity, setOpacity] = React.useState(0.55);
   const [target, setTarget] = React.useState<[number, number] | null>(null);
@@ -396,7 +397,7 @@ export function CadastreMapView() {
           <p className="mt-2 text-sm text-muted-foreground">{k.subtitle}</p>
         </div>
         <div
-          className="flex shrink-0 rounded-lg border border-border/70 bg-background p-1"
+          className="flex w-full shrink-0 flex-wrap rounded-lg border border-border/70 bg-background p-1 sm:w-auto"
           role="tablist"
           aria-label={k.viewLabel}
         >
@@ -405,6 +406,7 @@ export function CadastreMapView() {
               ["sheet", k.tabSheet],
               ["today", k.tabToday],
               ["explore", s.tabExplore],
+              ["time", t.atlasTimeline.tab],
             ] as const
           ).map(([id, label]) => (
             <button
@@ -434,9 +436,13 @@ export function CadastreMapView() {
         ) : null}
       </div>
 
-      <div className="grid min-w-0 gap-0 lg:grid-cols-[1fr_340px]">
-        {/* ——— ZEMLJEVID ——— */}
-        <div className="relative h-[70vh] min-h-[420px] min-w-0 border-b border-border/70 lg:border-b-0 lg:border-r">
+      <div className={`grid min-w-0 gap-0 ${tab === "time" ? "" : "lg:grid-cols-[1fr_340px]"}`}>
+        {/* ——— ZEMLJEVID (ali ČAS 1825→ §20) ——— */}
+        <div className={`relative min-h-[420px] min-w-0 border-b border-border/70 lg:border-b-0 lg:border-r ${tab === "time" ? "h-auto" : "h-[70vh]"}`}>
+          {tab === "time" ? (
+            <AtlasTimelinePanel />
+          ) : (
+            <>
           {tab !== "today" ? (
             <MapContainer
               key="kataster-sheet"
@@ -700,9 +706,12 @@ export function CadastreMapView() {
               />
             </label>
           )}
+            </>
+          )}
         </div>
 
-        {/* ——— STRANSKI PANEL: register stavb ——— */}
+        {/* ——— STRANSKI PANEL: register stavb (skrit v ČAS 1825→ §20) ——— */}
+        {tab !== "time" ? (
         <div className="flex max-h-[70vh] min-w-0 flex-col">
           <div className="border-b border-border/70 p-4">
             <label className="relative block">
@@ -1024,6 +1033,7 @@ export function CadastreMapView() {
             )}
           </ul>
         </div>
+        ) : null}
       </div>
 
       {/* ——— SPODNJA OPOMBA: vir, merilo, omejitve ——— */}
