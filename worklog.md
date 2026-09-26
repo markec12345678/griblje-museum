@@ -3643,3 +3643,20 @@ Stage Summary:
 - ATLAS 1825: PZ [373419] strukturno prebran (71/71) + ključna branja z vrati — prebivalstvo 1830 = 441 duš (§20 prvi korak), površina prečno validirana z PV na 0,086 %, F-PV-02 razrešena na ravni kategorij (silvopastoralna raba), F-PZ-04 OPEN pošteno dokumentiran
 - KG v1.7 (3.309/3.569/622, SRC-PZ TRANSCRIBED_PARTIAL, KG-F09); viri 10/13 VERIFIED (nespremenjeno); 466 testov + 97/97 dimnih; +0 virov/+0 trditve per-parcel
 - Naslednje: 1) §20 TIME SLIDER arhitektura (podatkovni model časovnih točk 1825 ref + 1830 prvi korak; API + UI; točke brez virov = AWAITING_SOURCE); 2) PZ celotni vrstični prepis + Summa kontrola (F-PZ-04); 3) PS p56–143 vrstični prepis (F-PV-03) ob VAČ kvoti; 4) PT p7 @300dpi; 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 35
+Agent: Z.ai Code (main orchestrator)
+Task: Push+merge val 75 (PR #63) + poročilo #42 + deploy verifikacija
+
+Work Log:
+- PR #63 (feat/val75-pz-konskripcija @ daf86dd → main) — CI 3/3 ZELENO: dimni testi API-jev (živi strežnik + PostgreSQL) ✓ · tipi+lint+enotni ✓ · Vercel Preview ✓
+- MERGE: PR #63 → main @ efa58ac; main sinhroniziran lokalno+remote; branch izbrisan (remote 204)
+- Poročilo #42: comment-5846074021 (val 75: PZ Prehod 1 + ključna branja; prebivalstvo 1830 = 441 duš; površina Δ 0,086 % vs PV; F-PV-02 razrešena na ravni kategorij; F-PZ-04 OPEN; KG v1.7)
+- DEPLOY VERIFIKACIJA: **Vercel produkcija RATE LIMITED** ("Deployment rate limited — retry in 24 hours" @ 11:57 UTC) — znani vzorec val 66/68 (kvota artefakt, NI problem kode: CI previewi zeleni, 466 testov, 97/97 dimnih); produkcija bo sinhronizirana ob ponovnem poskusu (24 h) / ročnem triggerju uporabnika · **Render mirror ŽIV z val 75**: /api/health 200 (hladni start 86 s), coverage → val: 75, zgodba vasi = "441 duš" + "Weiden mit Holznutzen" + "F-PV-02" ✓
+- e2e (agent-browser, pred mergeom): naslovnica 0 napak; EXPLORE 1825 zavihek ✓; zgodba vasi dialog (441 duš ✓, Weiden mit Holznutzen ✓, F-PV-02 ✓, pogodba ✓); mobilno 390 px brez preliva; konzola čista
+
+Stage Summary:
+- GitHub main @ efa58ac = val 75 · Render ŽIV z val 75 · Vercel produkcija rate-limited (24 h; previewi zeleni, koda potrjena — sinhronizacija ob kvoti)
+- 466 testov + 97/97 dimnih; KG v1.7 (3.309/3.569/622, SRC-PZ TRANSCRIBED_PARTIAL, KG-F09, kg_sha256 b150db19…); viri 10/13 VERIFIED (nespremenjeno)
+- Naslednje: 1) §20 TIME SLIDER arhitektura (1825 ref + 1830 prvi korak; AWAITING_SOURCE za ostale); 2) PZ celotni vrstični prepis + Summa (F-PZ-04); 3) PS p56–143 (F-PV-03) ob kvoti; 4) PT p7 @300dpi; 5) izven peskovnika šolski list / SA Podzemelj / SI AS 749 / Zucchelli
