@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the transcription of the handwritten German Kurrent document, here is the detailed analysis:\n\n**(1) Section Heading**\n*   **Roman Numeral:** **IX** (or **9**, written as a Roman numeral)\n*   **Culture Name:** **Grüble** (also spelled **Greüble** or **Greible** in the text)\n\n**(2) Parcel Citations (Parzelle №...)**\nThis page contains **no parcel citations** (no \"Parzelle №...\" or \"№...\" with area measurements in Joch and Klafter). The page consists entirely of introductory legal text, a list of names, and signatures.\n\n**(3) Owner Names Attached to Parcels**\n*   None attached to specific parcels on this page. However, the following names are listed as parties involved in the document (likely owners or heirs):\n    *   **Lemur Robazlmüller** (or *Robazlmüllner*)\n    *   **Georg Pöppelbaumwirth**\n    *   **Johann Müllner**\n    *   **Georg Rimpfen**\n    *   **Nikl Gmeiner**\n    *   **Georg Lenz**\n    *   **Martha Pachinger**\n    *   **Maria Josepha Pöppel** (marked with an exclamation mark and the word *müssen!* - meaning \"must!\")\n    *   **Lemur Jaussnig** (or *Jaussenig*)\n    *   **Barbara Ymbigner**\n\n**(4) Dates**\n*   **9ten August 1830** (9th August 1830) - Date of the main protocol/entry.\n*   **20ten [Month] 1830** (20th [Month] 1830) - Date of a subsequent commission/inspection (*Commission*). The month name is abbreviated or difficult to decipher definitively but appears to be later in the year (possibly *September* or *October*, though only the day \"20\" and year \"1830\" are clearly legible).\n\n**(5) Red-ink Annotations**\n*   There are **no red-ink annotations** on this page. The text is written entirely in black/brown ink. There is a large **red wax seal** at the bottom left, but no written annotations in red ink.\n\n**Additional Notes on Ambiguities:**\n*   The numeral for the section is clearly a Roman **IX**.\n*   The spelling of the location name varies slightly within the text between **Grüble**, **Greüble**, and **Greible**.\n*   The name \"Lemur\" appears twice; it may be a given name or a title/role (possibly a variant of *Lehner* or similar, though it looks like *Lemur*).\n*   The signature at the bottom right appears to be **\"wie Nachbay\"** (meaning \"like Nachbay\" or \"same as Nachbay\"), indicating the signatory is signing in the manner of or on behalf of someone named Nachbay.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445321,
+  "id": "20260927015503356ba95341b14802",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927015503356ba95341b14802",
+  "usage": {
+    "completion_tokens": 641,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3950
+  }
+}

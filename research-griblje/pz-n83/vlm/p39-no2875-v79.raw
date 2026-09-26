@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the 4x zoom crop of the handwritten Kurrent line (from an 1830 cadastral document), here is the verbatim transcription with detailed analysis of the requested elements:\n\n**Verbatim Transcription:**\n> **Kommunion. Als Baß Kommunion zusammen mit**\n> **Kommunion A<sup>188</sup><sub>873</sub> und 1 Juchst<sup>843</sup><sub>D A 3</sub>,**\n> **von Gassner's Domofl's Gründle Stöf-**\n> **feidum miliuy**\n> **zergliedert zsmukst.**\n\n**Detailed Analysis of Key Elements:**\n\n1.  **Parcel Number (№):**\n    *   The text contains the reference **\"A¹⁸⁸₈₇₃\"** (or \"A 188/873\").\n    *   **Digits:** The superscript clearly reads **1, 8, 8**. The subscript appears to read **8, 7, 3**, though the first digit of the subscript (the 8) is somewhat compressed and could potentially be a **3** or a **5** in some interpretations (ambiguity noted).\n    *   **Correction/Strikethrough:** There is no explicit strikethrough on this number; however, the format (superscript/subscript) suggests a correction or reference to two different numbering systems (e.g., old vs. new parcel numbers). The primary number appears to be **A 188**.\n\n2.  **Area (Joch and square-Klafter):**\n    *   The text reads **\"1 Juchst⁸⁴³₍D A 3₎\"**.\n    *   **Joch:** Clearly written as **1**.\n    *   **Square-Klafter (Klafter):** Written as a superscript **843**.\n        *   **Digit Ambiguities:** The first digit looks like an **8** (or possibly a **3** with a flat top). The second digit is unambiguously a **4**. The third digit is unambiguously a **3**.\n        *   **Subscript/Annotation:** Below \"Juchst\" and the number 843, there are small letters/numbers that appear to be **\"D A 3\"** or possibly **\"DA 3\"**. This likely denotes a specific sub-unit or calculation note (e.g., \"Drittel A 3\" or similar).\n\n3.  **Date (Day + Month + Year):**\n    *   **No date is present in this specific line.** The document context mentions 1830, but this line contains only the parcel reference \"A 188\" (which may be misinterpreted as a year but is clearly a parcel identifier here) and area measurements.\n\n**Summary of Digits Found:**\n*   **Parcel:** A **1** **8** **8** (sub: **8**/**3** **7** **3**)\n*   **Area:** **1** Joch, **8**/**3** **4** **3** square-Klafter (sub: **D** **A** **3**)",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445481,
+  "id": "20260927015739d7ef846d73354c04",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927015739d7ef846d73354c04",
+  "usage": {
+    "completion_tokens": 694,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2127,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2821
+  }
+}

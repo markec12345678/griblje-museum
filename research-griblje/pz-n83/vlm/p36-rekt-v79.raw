@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the transcription of the handwritten German Kurrent document, here is the analysis of the page:\n\n**(1) Section Heading**\n*   **II** (Roman numeral at top center)\n    *   *Note: The text below describes \"zweyten Pflanzen\" (second plantings/crops), but no specific culture name (e.g., \"Wiesen\", \"Äcker\") is explicitly written as a sub-heading.*\n\n**(2) Parcel Citations**\n*   **This page has NO parcel citations.** There are no instances of \"Parzelle №...\" or \"№...\" with area measurements in Joch and Klafter. The text is descriptive, discussing boundaries, rights, and legal references.\n\n**(3) Owner Names Attached to Parcels**\n*   **None listed on this page.**\n\n**(4) Dates**\n*   **1928 591** (or possibly **1923 591** – the fourth digit is ambiguous between a 3 with a flat top or an 8; context suggests a year/protocol number)\n*   **1 Jun 1810** (or possibly **1 Jur 1810** – the month abbreviation looks like *Jun* or *Jur*, likely June)\n*   **1004** (referenced as a year or protocol number)\n\n**(5) Red-Ink Annotations**\n*   **Dritte Klasse.** (Third Class)\n*   **Verliehen gegen...** (Leased against...) – followed by cursive text that appears to read something like \"...Zahlung\" (payment) or similar terms regarding conditions.\n*   A signature or name in red ink below the main text block, which appears to be **Andreas Plank** (or similar spelling).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445234,
+  "id": "2026092701533832c8de1e9b154af6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092701533832c8de1e9b154af6",
+  "usage": {
+    "completion_tokens": 361,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3670
+  }
+}

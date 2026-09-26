@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Transcription:**\n\n1 Jul 1820 № 881 (or 887) [text continues: *...und Mursch Bering, neue Grenze gezogen*]\n\n---\n\n### Detailed Analysis of Key Elements:\n\n| Element | Transcription | Ambiguities / Notes |\n| :--- | :--- | :--- |\n| **Date** | **1 Jul 1820** | Day is clearly **\"1\"**. Month is **\"Jul\"** (standard 19th‑c. abbreviation for Juli). Year is **\"1820\"**: the first digit looks like a \"1\", the second like an \"8\" (two stacked loops), the third like a \"2\" (with a flat base), and the fourth like a \"0\". |\n| **Parcel Number** | **№ 881** (alt. **887**) | The symbol is a clear **№** (Numero). The digits are **8-8-1**. The final digit could theoretically be read as a **7** if the top stroke were interpreted as a crossbar, but the shape (a single downstroke with a small hook) is more consistent with a Kurrent **1** in this hand. No crossed-out numbers are visible above or below. |\n| **Area (Joch/Klafter)** | *(Not present on this line)* | This line contains no measurement in Joch or square-Klafter; it appears to be a boundary description or legal note referring to a date and parcel number. |\n\n**Full line (with context):**\n> … *den Döringmühlen* **1 Jul 1820** **№ 881** *und Mursch Bering, neue Grenze gezogen*\n\n*(Note: The text preceding the date reads approximately “Ald Döringmühlen wussten den Döringmühlen” or similar; the word before “Jul” is clearly the day “1”.)*",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445407,
+  "id": "20260927015631530dfb88bde74182",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260927015631530dfb88bde74182",
+  "usage": {
+    "completion_tokens": 408,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2199
+  }
+}

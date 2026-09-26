@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Verbatim Transcription:**\n\n> **Aemt Grißle und 9t August 1830**\n\n---\n\n### Detailed Analysis of Key Elements\n\n| Element | Text | Notes / Ambiguities |\n| :--- | :--- | :--- |\n| **Parcel Number (№)** | *(None present)* | The line contains no parcel number (`№`) or area measurements. It is a signature/date line. |\n| **Area (Joch/Klafter)** | *(None present)* | No land-area figures appear in this line. |\n| **Date** | **9t August 1830** | • **Day:** `9` (clearly a 9; the superscript `t` is the standard Kurrent abbreviation for *ten*/*-ten*, i.e., *neunten* = \"9th\").<br>• **Month:** `August` (clearly legible).<br>• **Year:** `1830` (digits are unambiguous: **1**, **8**, **3**, **0**). |\n\n---\n\n### Full Line Breakdown\n\n1.  **Aemt** – Kurrent capital **A**, followed by *e-m-t*. This is an abbreviated form of *Amt* (office/district), likely referring to the local administrative authority.\n2.  **Grißle** – Capital **G**, followed by *r-i-ß-l-e* (the ß is written as a tall *s*-like loop with a descender, typical for this period).\n3.  **und** – Standard word meaning \"and\".\n4.  **9t** – The number **9** with a small raised **t** (abbreviation for *-ten*).\n5.  **August** – Clearly written month name.\n6.  **1830** – Year. All four digits (**1-8-3-0**) are distinct and show no ambiguity between similar-looking numbers (e.g., no confusion with 5, 7, or 2).\n\n**Note:** The first partial line above (*...voll gegründet ...*) is cut off at the top edge and does not contain complete data elements to transcribe per your specific constraints.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445491,
+  "id": "2026092701580127ed89d50f0e43cd",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092701580127ed89d50f0e43cd",
+  "usage": {
+    "completion_tokens": 460,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1455,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1915
+  }
+}

@@ -178,6 +178,88 @@ REVISION_1830_ZUSAMMEN = {
 
 # --- PREHOD 3 (val 77): §8 p6 — odločilna tabela (Einzeln = črno, Zusammen = rdeča revizija) ---
 
+# --- Val 79: Rektifikacijski odsek p35–42 (+ p48) — OPISNO-KVALITATEN --------
+# PREHOD 5 (val 79): odločilni re-read p35–40 (strukturna hipoteza val 75/77
+# 'parcelne korekcije' ovržena) + p41/p42/p48 (1832 protokoli; Einvernehmung).
+# Metoda: 2 VLM prehoda (celotne strani @2x + izrezki linij @4x, crops-v79/)
+# + direkten odtis avtorja; VLM številke ostajajo nezanesljive (isti vzorec
+# kot F-PZ-12) — Muster-citate nosi direkten odtis, VLM prehoda sta neodvisni
+# strukturni potrditvi (nobena ne najde per-parcelnih tabel).
+REKTIFIKACIJA_BESCHREIBUNG = {
+    "title": "Rektifikacija 1830 — Kultur-Beschreibung (p35–40) + 1832 protokoli (p41–42) — opisno-kvalitativen odsek",
+    "source_pages": [35, 36, 37, 38, 39, 40, 41, 42],
+    "evidence": "pz-n83/crops-v79/p35–p42-full-2x.png + crops-v79/p35-parzelle-h30.png … p40-date2.png (10 izrezkov @4x)",
+    "passes": 2,
+    "structure": [
+        {"klasse": "I. Aacker", "page": 35, "clases_opisane": ["Erste Classen (p35)", "Zweyte Classen (p36)", "Dritte Classe (p36, rdeča zapis)"],
+         "content": "kvaliteta tal per klas (prst, vlaga, položaj; Kameniza prvi klas); brez površin"},
+        {"klasse": "II. Wiesen", "page": 37, "clases_opisane": ["Erste Classen", "Zweite Classen"],
+         "content": "kvaliteta travnikov (redki, posamezni kosi; boljši kos ob Kolpi); brez površin"},
+        {"klasse": "III. Kleine Gärten / IV. Obere Gärten", "page": 38, "clases_opisane": ["III", "IV", "VI. Holzgärten"],
+         "content": "kvaliteta vrtov + holzgärten; brez površin"},
+        {"klasse": "nadaljevanje (V/VI …)", "page": 39, "clases_opisane": ["Weiden (kontinuiteta)"],
+         "content": "meje/lokalitete weiden; brez površin"},
+        {"klasse": "zaključni protokol", "page": 40,
+         "content": "žirija (Georg Kappas Gemeindevorsteher + 9 članov) + k.k. Schätzungskommission; pečat; 'vierte Nachtag'"},
+    ],
+    # Muster-parcele: edina numerika v odseku — 'Als Muster dienen die Parzelle
+    # № X mit 1 Joch Y [Qft] dem Z zuständig' — vzorčni kos per klas za
+    # kakovost, NE korekcije površin (nobena ne površinski popravek).
+    "muster_parcel_citations": [
+        {"page": 35, "klasse": "Acker — Erste Classen", "parcel_no": 30, "parcel_no_alt": [],
+         "joch": 1, "klafter": 1382, "owner": "Mursko Fe[?] (Marusch Ferregi?)", "reading_status": "REVIEW",
+         "pua_1825_match": True, "ps_1825_match": True,
+         "note": "direkten odtis @4x; '1 Joch 1382 [Qft]'; VLM 1. prehod @2x ni videl citata, 2. prehod @4x napačno '1 Julj 1882' (Kurrent) — številka ostaja REVIEW po §4"},
+        {"page": 36, "klasse": "Acker — Zweyte Classen", "parcel_no": 594, "parcel_no_alt": [],
+         "joch": 1, "klafter": 531, "owner": "Georg Straup[?]", "reading_status": "REVIEW",
+         "pua_1825_match": True, "ps_1825_match": False,
+         "note": "direkten odtis @4x; 'Parzellen № 594 mit 1 Joch 531'"},
+        {"page": 36, "klasse": "Acker — Dritte Classe", "parcel_no": 1099, "parcel_no_alt": [],
+         "joch": 1, "klafter": 700, "owner": "Martin Bering[?]", "reading_status": "REVIEW",
+         "pua_1825_match": True, "ps_1825_match": False,
+         "note": "direkten odtis @4x; 'Parzellen № 1099 mit 1 Joch 700'; rdeči zapis 'Dritte Classe' na levem robu"},
+        {"page": 37, "klasse": "Wiesen — Erste Classen", "parcel_no": 438, "parcel_no_alt": [738],
+         "joch": 1, "klafter": 896, "owner": "Martin[?] Brinar[?]", "reading_status": "REVIEW",
+         "pua_1825_match": False, "ps_1825_match": True,
+         "note": "direkten odtis @4x: 438; VLM 2. prehod @4x bere 738 (kurrentska 4↔7 dvoumnost) — 438 obstaja v PS registru 1825 (Wiesen kandidatura), 738 v PUA; križna kontrola NE odloči, ostaja REVIEW"},
+        {"page": 37, "klasse": "Wiesen — Zweite Classen", "parcel_no": 2451, "parcel_no_alt": [],
+         "joch": 1, "klafter": 1515, "owner": "Martin Blaznik[?]", "reading_status": "REVIEW",
+         "pua_1825_match": False, "ps_1825_match": False,
+         "note": "direkten odtis @4x; '№ 2451 mit 1 Joch 1515'; v 1825 registru NE obstaja → nova (rektifikacijska) numeracija"},
+        {"page": 38, "klasse": "Obere Gärten", "parcel_no": 2491, "parcel_no_alt": [249],
+         "joch": 1, "klafter": 260, "owner": "Martin Kabatschnig[?]", "reading_status": "REVIEW",
+         "pua_1825_match": False, "ps_1825_match": False,
+         "note": "direkten odtis @4x: 2491; VLM 2. prehod bere '249/1' (razdelilnik) — 249 obstaja v PUA+PS; ali '249/1' ali rektifikacijska številka 2491 — REVIEW"},
+        {"page": 39, "klasse": "Weiden (nadaljevanje)", "parcel_no": 1288, "parcel_no_alt": [2875],
+         "joch": 1, "klafter": 882, "owner": "Ferencz Marusch[?]", "reading_status": "REVIEW",
+         "pua_1825_match": False, "ps_1825_match": False,
+         "note": "direkten odtis @4x: '1288' zapisano NAD prečrtanim '2875' (isti revizijski vzorec kot p67!) — trenutna 1288, prečrtana 2875; VLM 2. prehod je prebral '188/873' (nezanesljivo); '1 Joch 882|883 [Qft]' — 2/3 dvoumna"},
+    ],
+    "renumbering": {
+        "finding": "4/7 Muster-parcel (2451, 2491, 1288, 2875) NE obstaja v 1825 PUA/PS registru; 30/594/1099 obsegovno sovpadajo; 438 = PS-only",
+        "interpretation": "Muster-parcele citirajo novo (rektifikacijsko) numeracijo po Rektifikaciji 1830 — 1825 franziscejska numeracija NI podlaga; per-parcelna vezava 1825→1830 ostaja UNKNOWN (zahteva Rektifikacijski protokol ali Habsburgisch-Katastrale Neuvermessung sezname)",
+        "status": "REVIEW",
+    },
+    "protocol_p40": {
+        "dates": {"day1": "9. (Kamm. Griblje)", "day2": "29. (k.k. Schätzungskommission)", "month": "April[?] — REVIEW (VLM 1. prehod bral 'avgust'; eye+val 75 kontekst: april)",
+                  "year": 1830, "previous_guess_val75": "5./28. april 1830[?] — OVRŽENO (odločilni re-read)"},
+        "jury": "Georg Kappas Gemeindevorsteher + Jacob Mulauzich + Georg Kaeiper + Matthias Pfeinersch + Georg Klancz + Mursko Pertlswang + Matr. Schlabbrisch + Ludwig [?] + Margaretha Frankiner[?] (REVIEW — identitetna dela NI izvedena §5)",
+        "commission": "Aladar Manrera[?] k.k. Schätzungs-Commission Steuer-Bezirk + pečat (vosk)",
+        "addendum": "'vierte Nachtag' — 4. priloga (p40)",
+    },
+    "post_1830_protocols": {
+        "p41": "Nachsetzung (Parzelle № 1980 / № 88; 12. avgust 1832[?]) + Vergleich (4. junij 1832[?]) — 1832 dogodki, brez površin",
+        "p42": "Einvernehmungs-Protocoll, Kreis Neustadtl / Schätzungsdistrict XI / Steuerbezirk Krupp, Griblje am 6. Dezember 1832 — Natural-Brutto-Ertrag (popravek val-75 oznake 'EINWANDS-PROTOKOLL' — odločilni re-read: naslov je 'Einvernehmungs-Protocoll')",
+        "p48": "Einvernehmungs-Protocoll 5. aprila 1830 (rožnat papir): vzroki poškodb/vrtnin[?] — proza, brez per-parcelnih tabel",
+    },
+    "conclusion": {
+        "f_pz_04_path": "ZAPRETA — Rektifikacijski odsek v PZ [373419] NE vsebuje per-parcelnih površinskih korekcij: p35–40 so opisne klase + Muster-parcele (kakovost, ne količina), p41–42 so 1832 protokoli brez površin",
+        "remaining_paths": ["VAČ II. prikaz @300 dpi — re-digitation Summe/vrstic (peskovniško edina)", "zunanji Rektifikacijski/Komunikacijski protokol (SI AS / ločena arhivska enota) — izven peskovnika"],
+        "f_pz_04_status": "OPEN (ožjan val 77 na Δ 3 J; rešitvene poti v PZ izčrpane val 78+79)",
+    },
+    "reading_honesty": "VLM številke na tem Kurrentu ostajajo nezanesljive tudi @4x (halucinacije dokumentirane: '1 Julj 1882' namesto '1 Joch 1382', '188/873' namesto '1288/2875') — vse številke REVIEW; strukturni sklep (OPISNO, brez per-parcelnih tabel) pa je konsistenten v 2 VLM prehodih + direktnem odtisu + aritmetičnih vhodih",
+}
+
 PARAGRAF8_P6 = {
     "title": "§8 Cultivirte, unbenützte und unbenützbare Grundstücke (p6)",
     "columns": {"einzeln": "Einzeln (Joch | □Klf) — črno", "zusammen": "Zusammen (Joch | □Klf) — rdeča revizija"},
@@ -287,20 +369,20 @@ STRUCTURE = [
     (32, "Protocol — nadaljevanje: opis mejnih točk (Andern[?], Elend G'schaid[?], Lutzgrübl[?] …) + podpisi (9. marec 1830[?]) — F-PZ-05 material"),
     (33, "Adjunkt/pismo — nadaljevanje"),
     (34, "Protocol (2. seja) — ista žirija"),
-    (35, "Rektifikation 1830 — I. Acker (parcelne korekcije)"),
-    (36, "Rektifikation — Acker nadaljevanje"),
-    (37, "Rektifikation — II. Wiesen (+ Geory Brisko[?] podpis, pečat)"),
-    (38, "Rektifikation — III. Brach? Gärten / IV. Untere Gärten"),
-    (39, "Rektifikation — nadaljevanje (V/IX/XIV? sklici)"),
-    (40, "Rektifikacija zaključek — podpisi + pečat (5./28. april 1830[?])"),
-    (41, "Podpisi (nadaljevanje) + datum"),
-    (42, "EINWANDS-PROTOKOLL (ugovori) — pečat"),
+    (35, "Rektifikacija 1830 — I. Aacker: Kultur-Beschreibung opisno (prvi klas, Kameniza; Muster № 30 = 1 J 1382) — NE per-parcelne korekcije (val 79)"),
+    (36, "Rektifikacija — Acker nadaljevanje: 2./3. klas + rdeči zapis 'Dritte Classe'; Muster № 594 = 1 J 531, № 1099 = 1 J 700 (val 79)"),
+    (37, "Rektifikacija — II. Wiesen: opisno + Muster № 438 = 1 J 896, № 2451 = 1 J 1515 (val 79; pečat p41, NE tukaj)"),
+    (38, "Rektifikacija — III. Kleine Gärten / IV. Obere Gärten / VI. Holzgärten: opisno + Muster № 2491 = 1 J 260 (val 79)"),
+    (39, "Rektifikacija — weiden nadaljevanje: meje + Muster № 1288 (nad prečrtano 2875) = 1 J 882|883 (val 79)"),
+    (40, "Rektifikacija zaključek — podpisi žirije (Kappas + 9) + k.k. Schätzungskommission + pečat (9. / 29. april 1830 — mesec REVIEW; val 75: 5./28. ovrženo) + 'vierte Nachtag' (val 79)"),
+    (41, "Nachsetzung (№ 1980 / № 88; 12. avg. 1832[?]) + Vergleich (4. jun. 1832[?]) + podpisi — 1832, brez površin (val 79)"),
+    (42, "Einvernehmungs-Protocoll 6. dec. 1832 — Natural-Brutto-Ertrag (poprava: NE 'Einwands-Protokoll'; val 79)"),
     (43, "Kataster und Steuer Claffen — I. Classe Reinertragstabelle (parcele)"),
     (44, "II. Classe Reinertragstabelle"),
     (45, "IIa. Classe (2 parcele: N°96 in N°311, QKlf 334[?])"),
     (46, "III. Classe + Kleine Gärten/Weingärten/Hutweiden Ertrags Classe"),
     (47, "Wald und Ödland? Erste Classe + podpisi (16. julij 1829[?])"),
-    (48, "COMMUNICATIONS-PROTOKOLL (rožnat papir) — 1830"),
+    (48, "Einvernehmungs-Protocoll 5. aprila 1830 (rožnat papir): proza o gojitvi/vrtninah[?] — brez per-parcelnih tabel (val 79 re-read)"),
     (49, "Communications-Protokoll — nadaljevanje + podpisi"),
     (50, "VERANTWORTLICHUNG des Cultural-Ausweises (zelen papir) — §1 Acker, Darstellung des Rein Ertrages"),
     (51, "Campus nach Rektifizierung — ležeča tabela"),
@@ -428,8 +510,8 @@ area_red_m2 = round(pz_red * M2_PER_QKLFT)
 area_pv_m2 = round(pv * M2_PER_QKLFT)
 
 data = {
-    "val": 78,
-    "pass": "PZ PASS 3 (val 78: §8 rdeči stolpec 'Zusammen' strukturiran + verifikacija rešitvenih poti; I4–I6 nespremenjeni)",
+    "val": 79,
+    "pass": "PZ PASS 5 (val 79: Rektifikacijski odsek p35–42 odločilno prebran — OPISNO, brez per-parcelnih korekcij; rešitvena pot F-PZ-04 zapreta; 7 Muster-parcel + 1830/1832 protokoli dokumentirani; I4–I6 nespremenjeni)",
     "issue": 42,
     "deterministic": True,
     "title": "PZ N83 — Katastral-Schätzungs-Elaborat (Konskripcija) 1828/30 [373419]",
@@ -440,6 +522,7 @@ data = {
             "PREHOD 2 (val 75): ključna branja digit-by-digit 2,6×–5× (crops/ + z-*.jpeg dokazni izrezki)",
             "PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na dvomljive celice + direktni odtis avtorja transkripcije; aritmetična vrata I4–I6 odločijo vsako dvomljivo števko",
             "PREHOD 4 (val 78, neodvisni prehod): §8 rdeči stolpec 'Zusammen' strukturiran (2 prehoda pri 6×–12×, crops-v78/, 33 izrezkov) + verifikacija rešitvenih poti p26/p27/p30/p32/p63/p65 — nobena ne vsebuje površin",
+            "PREHOD 5 (val 79): odločilni re-read Rektifikacijskega odseka p35–42 (+ p48) — celotne strani @2x + 10 izrezkov linij @4x (crops-v79/), 2 VLM prehoda + direkten odtis; struktura OPISNO-KVALITATIVNA (Kultur-Beschreibung + Muster-parcele), per-parcelne korekcije NE obstajajo → rešitvena pot F-PZ-04 zapreta",
         ],
         "native_scans": "pz-n83/native/p01–p71.jpeg (pymupdf, metoda val 56)",
         "deterministic": True,
@@ -478,6 +561,7 @@ data = {
     },
     "paragraf8_p6": PARAGRAF8_P6,
     "revision_1830_zusammen": REVISION_1830_ZUSAMMEN,
+    "rektifikacija_beschreibung": REKTIFIKACIJA_BESCHREIBUNG,
     "endresultat_p67": {
         "title": "Specifischer Ausweis der nach der Catastral Ertragserhebung entfallenden Endresultate (p66–67)",
         "columns": ["Posten N°", "CultursGattungen", "Classe", "Flächen Maas (Joch | □Klafter)", "Bruto Ertrag (vom J° Joch | im Ganzen)", "Abzug zur Compensation des Culturs-Aufwandes per XI.O.Joch"],
@@ -494,7 +578,7 @@ data = {
             "closes": summa_delta_qklf == 0,
             "klafter_column_closes": rows_k % KLFT_PER_JOCH == ENDRESULTAT_SUMMA["klafter"],
             "status": "OPEN" if summa_delta_qklf != 0 else "CLOSES",
-            "note": "val 77: Δ = 3 J EXACT (4.800 QKlft; val 75: 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495); Joch stolpac Summe ostaja 3 J nad vsoto vrstic — pisarjevska nekonsistentnost ali neobjavljena korekcija; nič se ne vsiljuje (§4); rešitvene poti: Rektifikacija p35–40 per-parcelna kontrola, p30/p63/p65 ležeče tabele @300 dpi",
+            "note": "val 77: Δ = 3 J EXACT (4.800 QKlft; val 75: 43.488 na napačnih branjih). Klf stolpec se zapire (495 = 495); Joch stolpac Summe ostaja 3 J nad vsoto vrstic — pisarjevska nekonsistentnost ali neobjavljena korekcija; nič se ne vsiljuje (§4); rešitvene poti v PZ izčrpane (val 78 F-PZ-14 + val 79 F-PZ-16) — ostata VAČ II @300 dpi re-digitation in zunanji Rektifikacijski protokol",
         },
         "evidence": "pz-n83/z-endresultat.jpeg + crops/p67-area/*.jpeg + crops/p67-rows/*.jpeg (val 77)",
     },
@@ -532,7 +616,7 @@ data = {
             "id": "F-PZ-04",
             "title": "Endresultat p67: Summa se ne sešije z vrsticami 1–8 (val 77: Δ ožjan na 3 Joch)",
             "status": "OPEN",
-            "detail": f"val 77 odločilni re-read celic popravlja val-75 branja: Summa = 1152 J 495 K (prej 1132), vrstice 1–8 = {rows_j} J {rows_k} K = {rows_total_qklf:,} QKlft (GG 405, WmH Klf 558, Bauarea 1199, Wiesen I = 5 po I5) → Δ = 3 Joch = {summa_delta_qklf:,} QKlft NATANČNO (prej 43.488). Klf stolpec se zapire (495 = 495). Odprto: pisarjevska nekonsistentnost Joch stolpca Summe (ali neobjavljena korekcija). Nič se ne vsiljuje (§4); rešitvene poti: Rektifikacija p35–40, p30/p63/p65 @300 dpi",
+            "detail": f"val 77 odločilni re-read celic popravlja val-75 branja: Summa = 1152 J 495 K (prej 1132), vrstice 1–8 = {rows_j} J {rows_k} K = {rows_total_qklf:,} QKlft (GG 405, WmH Klf 558, Bauarea 1199, Wiesen I = 5 po I5) → Δ = 3 Joch = {summa_delta_qklf:,} QKlft NATANČNO (prej 43.488). Klf stolpec se zapire (495 = 495). Odprto: pisarjevska nekonsistentnost Joch stolpca Summe (ali neobjavljena korekcija). Nič se ne vsiljuje (§4). Rešitvene poti: p26–p65 ovržene (val 78, F-PZ-14); Rektifikacija p35–40 ZAPRETA (val 79, F-PZ-16 — opisna, brez per-parcelnih površin); ostata samo VAČ II @300 dpi re-digitation in zunanji Rektifikacijski protokol (izven peskovnika)",
         },
         {
             "id": "F-PZ-05",
@@ -599,6 +683,12 @@ data = {
             "title": "NOVO (val 78): §8 rdeči stolpec 'Zusammen' = post-revizijske površine — strukturiran (REVIEW, ni podlaga za deleže)",
             "status": "REVIEW",
             "detail": "Rdeči stolpec (Rektifikacija 1830) strukturiran v revision_1830_zusammen: Aecher 419 J 1382 K / Wiesen 45[?] J 167 K / KG 2 J 1166 K / GG – J 1460 K / Weingärten 6 J 1059 K (TRANSCRIBED — križno §7 p21, F-PZ-06) / HW 121 J 1190 K / WmH 557[?] J 1258 K; subtotal 1150 J 1582 K; Bauarea 1 J 1199 K (križno p67); voda 68 J 1019 K (= F-PZ-10 več-vrednostna celica); sidro Total 1220 J 1493 K = §1 EXACT (SOLID). Veriga subtotal+Bauarea+voda = 1.954.200 vs Total = Δ 707 QKlft (0,036 %) OPEN-MICRO — znotraj REVIEW negotovosti; URADNI deleži 1830 ostajajo iz F-PZ-13 (črni stolpec, vrata I4–I6 EXACT); rdeče števke čakajo re-digitation @višjo ločljivost (VAČ II. prikaz)",
+        },
+        {
+            "id": "F-PZ-16",
+            "title": "NOVO (val 79): Rektifikacijski odsek p35–40 je OPISNO-KVALITATIVEN — per-parcelne korekcije NE obstajajo v PZ [373419]",
+            "status": "RESOLVED",
+            "detail": "Odločilni re-read (2 VLM prehoda @2x/@4x + direkten odtis, crops-v79/): p35–40 = Kultur-Beschreibung — opisne klase per kultur (I Aacker 3 klase, II Wiesen 2, III/IV vrtovi, VI Holzgärten, weiden meje) + zaključni protokol p40 (žirija Kappas + 9, k.k. Schätzungskommission, pečat; 9./29. april 1830 — mesec REVIEW; val-75 ugib '5./28.' ovržen). Edina numerika = 7 Muster-parcel per klas ('Als Muster dienen die Parzelle № X mit 1 Joch Y' — vzorci KAKOVOSTI, ne površinskih popravkov): № 30 = 1 J 1382 (p35), № 594 = 1 J 531 + № 1099 = 1 J 700 (p36), № 438|738 = 1 J 896 + № 2451 = 1 J 1515 (p37), № 2491|249/1 = 1 J 260 (p38), № 1288 nad prečrtano 2875 = 1 J 882|883 (p39). Rektifikacijska numeracija: 4/7 ni v 1825 PUA/PS registru (2451, 2491, 1288, 2875); p41–42 = 1832 protokoli (Nachsetzung/Vergleich; Einvernehmungs-Protocoll 6. dec. 1832 — popravek val-75 oznake 'Einwands-Protokoll'); p48 = Einvernehmung 5. aprila 1830, proza. → Rešitvena pot F-PZ-04 'per-parcelna kontrola p35–40' ZAPRETA: rešitev Δ 3 J ostaja pri VAČ II @300 dpi re-digitation ali zunanjem Rektifikacijskem protokolu (izven PZ in peskovnika)",
         },
     ],
     "invariants_enforced": [

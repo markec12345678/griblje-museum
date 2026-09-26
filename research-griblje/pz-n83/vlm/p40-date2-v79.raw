@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Gegenwärtig! und also beyfand befunden!\nd.i. die Abtheilung Konfission in Greüble den 23.ten\n1830.\nOttobon Mairinger",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790445496,
+  "id": "2026092701581161c43a7b9c4c4d28",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092701581161c43a7b9c4c4d28",
+  "usage": {
+    "completion_tokens": 46,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2127,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2173
+  }
+}
