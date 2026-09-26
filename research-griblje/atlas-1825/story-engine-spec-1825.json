@@ -1,0 +1,41 @@
+{
+ "val": 70,
+ "pass": "PASS 8",
+ "issue": 42,
+ "title": "Story engine spec v1 — evidence-first zgodbonizacija (izpeljan iz val 69 izvedbe)",
+ "derived_from": [
+  "src/lib/atlas-story-engine.ts (val 69)",
+  "GET /api/atlas/story",
+  "story-graph-1825.json story_engine_contract",
+  "issue #42 §16–§19, §22"
+ ],
+ "deterministic": true,
+ "architecture": "100 % determinističen sestavljevalnik nad KG v1.4 — BREZ LLM (§17: 'AI ne sme zapolnjevati praznin z domišljijo'; §19: 'iz strukturiranih claims + sources')",
+ "tier_mapping_issue_17": {
+  "DOKAZANO": "VERIFIED / VERIFIED_FORM / STABLE / FOUND statusi",
+  "VERJETNO": "REVIEW / SINGLE_SOURCE / PARTIAL / PROVISIONAL / TRANSCRIBED_PARTIAL",
+  "KONFLIKTNO": "CONFLICT / REVIEW-CONFLICT (prej kot FOUND — varovalo)",
+  "NEZNANO": "UNKNOWN / NOT_FOUND / neobstoječ status — nikoli tiho dokazano"
+ },
+ "api": {
+  "entity": "GET /api/atlas/story?entity=HOUSE:H-040 (§16 'Zgodba te hiše': 8 sekcij)",
+  "village": "GET /api/atlas/story?scope=village (§18: 10 sekcij)"
+ },
+ "contract_issue_22": [
+  "story_id (SE-hash od kg_sha256)",
+  "input_entity_ids",
+  "used_claim_ids",
+  "used_source_ids",
+  "generation_timestamp",
+  "prompt_version",
+  "story_status",
+  "content_hash"
+ ],
+ "reproducibility_rule": "sprememba podatkov ⇒ sprememba story_id (§22)",
+ "publication_rule": "zgodba brez claims+sources = NOT_PUBLISHED (170 nedotaknjenih parcel)",
+ "findings": [
+  "F-SE-01: raba zemljišča delno dokumentirana (326 PS-parcel, 2035 čaka PV prepis)",
+  "F-SE-02: TRANSCRIBED_PARTIAL → VERJETNO (nerazrešena vezaba ≠ dokaz)",
+  "F-SE-04: A01 MO sheet izpeljan iz node_id predpone"
+ ]
+}

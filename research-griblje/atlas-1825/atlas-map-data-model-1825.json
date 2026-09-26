@@ -1,0 +1,99 @@
+{
+ "val": 70,
+ "pass": "PASS 8",
+ "issue": 42,
+ "title": "Atlas map data model v1 — podatkovni zemljevid (izpeljan iz KG v1.4 + val 67 slojev)",
+ "derived_from": [
+  "knowledge-graph-1825.json (v1.4)",
+  "src/lib/atlas-map.ts (val 67)",
+  "GET /api/atlas/map"
+ ],
+ "deterministic": true,
+ "entities": {
+  "SOURCE": 13,
+  "HOUSE": 167,
+  "PERSON": 488,
+  "PARCEL": 2467,
+  "BP": 100,
+  "TOPONYM": 37,
+  "EVENT": 3,
+  "MAP_OBJECT": 34
+ },
+ "relations": {
+  "DEPICTED_ON": 34,
+  "CORRESPONDS_TO_BP": 21,
+  "OWNER_OF": 254,
+  "OWNER_VARIANT_OF": 224,
+  "BP_BOUND_TO_HOUSE": 119,
+  "HAS_PARCEL": 2865,
+  "RESIDENCE_DOCUMENTED_AT": 10,
+  "AFFECTS_HOUSE": 3,
+  "DOCUMENTED_IN": 38,
+  "IS_GEMEINDE_OF": 1
+ },
+ "entity_minima_issue_15": {
+  "House": [
+   "house_id",
+   "house_no_1825",
+   "owner",
+   "BP",
+   "parcels",
+   "coordinates",
+   "evidence"
+  ],
+  "Parcel": [
+   "parcel_id",
+   "parcel_no",
+   "owner",
+   "land_use",
+   "geometry",
+   "house/BP",
+   "evidence"
+  ],
+  "Person": [
+   "person_id",
+   "name",
+   "houses",
+   "parcels",
+   "relations",
+   "evidence"
+  ],
+  "Place/Toponym": [
+   "place_id",
+   "historical_name",
+   "location",
+   "type",
+   "evidence"
+  ],
+  "Event": [
+   "event_id",
+   "date",
+   "place",
+   "people",
+   "house",
+   "source"
+  ],
+  "Source": [
+   "source_id",
+   "archive",
+   "document",
+   "page",
+   "image",
+   "URL",
+   "citation"
+  ]
+ },
+ "layers_val67": [
+  "map_objects",
+  "houses",
+  "toponyms",
+  "sheets"
+ ],
+ "binding_rules": [
+  "reševanje hiš SAMO po dokazni verigi z status-rangom (val 67)",
+  "KG-F05 varovalka: A02 brez sidra ne proizvaja koordinat",
+  "vsak objekt klikljiv in sledljiv do vira (vac_details_url)",
+  "UNKNOWN/NOT_FOUND/CONFLICT ločeni, nikoli združeni"
+ ],
+ "geometry_status": "parcelne meje NE izrisane (nič 'lepih' parcel, §9)"
+}
