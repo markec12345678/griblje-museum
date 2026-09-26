@@ -204,3 +204,159 @@ export function modeAllowsTier(tier: ExploreTier, mode: ExploreMode): boolean {
       return true;
   }
 }
+
+/* ==================================================================== *
+ * PARCELNI SLOJ RABE (§19, val 73) — parcele kot REGISTER (§9: brez
+ * geometrije). Raba: samo dokazana leksikalno; dve ločeni »nezanki«:
+ *  - UNKNOWN = PS termin ni nedvoumen (Ried, Lehngut …) — original ohranjen,
+ *  - NONE    = vir rabe ne zapisuje (PUA).
+ * Nikoli ne ugibaj rabe zemljišča (§4 železno pravilo).
+ * ==================================================================== */
+
+/** Raba iz /api/atlas/map layers.parcels (atlas-map.ParcelFeature). */
+export type ExploreParcel = {
+  node_id: string;
+  origin: string;
+  section: string | null;
+  parcel_number: number | null;
+  land_use_category: string | null;
+  land_use_original: string | null;
+  co_referenced: boolean;
+  house_refs: string[];
+  evidence_status: string;
+};
+
+/** Vedro rabe: kategorije + UNKNOWN (PS TERM-UNCLEAR) + NONE (PUA brez zapisa). */
+export type LandUseBucket =
+  | "njiva"
+  | "travnik"
+  | "gozd"
+  | "vrt"
+  | "pašnik"
+  | "drugo"
+  | "UNKNOWN"
+  | "NONE";
+
+/** Zaporedje vedier za filtre in sortiranje (dokazana raba najprej). */
+export const LAND_USE_ORDER: LandUseBucket[] = [
+  "njiva",
+  "travnik",
+  "gozd",
+  "vrt",
+  "pašnik",
+  "drugo",
+  "UNKNOWN",
+  "NONE",
+];
+
+/** Filter rabe: "all" ali določeno vedro. */
+export type LandUseFilter = "all" | LandUseBucket;
+
+/** Kategorija/ null → vedro. Neznana kategorija → NONE? Ne — varovalka: */
+export function landUseBucketOf(category: string | null | undefined): LandUseBucket {
+  if (category === null || category === undefined || category === "") return "NONE";
+  const c = String(category).trim().toLowerCase();
+  if ((LAND_USE_ORDER as string[]).includes(c)) return c as LandUseBucket;
+  if (c === "unknown") return "UNKNOWN";
+  // Neznana kategorija NI vedro "drugo" (drugo = dokazana mešanica iz registra) —
+  // varovalka: obravnavaj kot UNKNOWN, nikoli tiho kot dokazano.
+  return "UNKNOWN";
+}
+
+/** Dokazni tir parcele = tir njenega evidence_statusa (zrcalno TIER_EXACT). */
+export function parcelTier(parcel: ExploreParcel): ExploreTier {
+  return exploreTierOfStatus(parcel.evidence_status);
+}
+
+/** Kratek prikaz parcele: PUA "II/201", PS "PS 913", varovalka = node_id. */
+export function parcelLabel(
+  p: Pick<ExploreParcel, "node_id" | "origin" | "section" | "parcel_number">
+): string {
+  if (p.origin === "PS") return `PS ${p.parcel_number ?? "?"}`;
+  if (p.section && p.parcel_number !== null) return `${p.section}/${p.parcel_number}`;
+  return p.node_id.replace("PARCEL:", "");
+}
+
+/** Besedilni filter za parcele: št. parcele, sekcija, raba (original + kategorija), hiše, node_id. */
+export function parcelMatchesQuery(query: string, parcel: ExploreParcel): boolean {
+  return matchesExploreQuery(query, [
+    parcel.node_id,
+    parcel.section,
+    parcel.parcel_number,
+    parcel.land_use_category,
+    parcel.land_use_original,
+    ...parcel.house_refs,
+  ]);
+}
+
+/** Ali parcela pade v izbrani način prikaza + filter rabe (§19). */
+export function parcelVisible(
+  parcel: ExploreParcel,
+  mode: ExploreMode,
+  landUse: LandUseFilter
+): boolean {
+  if (!modeAllowsTier(parcelTier(parcel), mode)) return false;
+  if (landUse !== "all" && landUseBucketOf(parcel.land_use_category) !== landUse) return false;
+  return true;
+}
+
+/** Števec vedier rabe (za čipe filtra) — determinističen zapis. */
+export function parcelLandUseCounts(
+  parcels: ExploreParcel[]
+): Record<LandUseBucket, number> {
+  const counts = {
+    njiva: 0,
+    travnik: 0,
+    gozd: 0,
+    vrt: 0,
+    "pašnik": 0,
+    drugo: 0,
+    UNKNOWN: 0,
+    NONE: 0,
+  } as Record<LandUseBucket, number>;
+  for (const p of parcels) counts[landUseBucketOf(p.land_use_category)] += 1;
+  return counts;
+}
+
+/** Romanske sekcije I–V v naravnem redu; nejasne variante na konec (po nizu). */
+const ROMAN_RANK: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5 };
+
+/** Determinističen vrstni red brskanja: dokazana raba najprej (LAND_USE_ORDER),
+ *  nato sekcija I–V, številka parcele, node_id. */
+export function sortParcelsForBrowse(parcels: ExploreParcel[]): ExploreParcel[] {
+  return [...parcels].sort((a, b) => {
+    const bucketDiff =
+      LAND_USE_ORDER.indexOf(landUseBucketOf(a.land_use_category)) -
+      LAND_USE_ORDER.indexOf(landUseBucketOf(b.land_use_category));
+    if (bucketDiff !== 0) return bucketDiff;
+    const secA = a.section ?? "";
+    const secB = b.section ?? "";
+    const rankA = ROMAN_RANK[secA] ?? 99;
+    const rankB = ROMAN_RANK[secB] ?? 99;
+    if (rankA !== rankB) return rankA - rankB;
+    if (secA !== secB) return secA.localeCompare(secB, "en");
+    const numA = a.parcel_number ?? Number.MAX_SAFE_INTEGER;
+    const numB = b.parcel_number ?? Number.MAX_SAFE_INTEGER;
+    if (numA !== numB) return numA - numB;
+    return a.node_id.localeCompare(b.node_id, "en");
+  });
+}
+
+/** Povzetek parcelnega sloja za panel (vidne / vse + števec vedier). */
+export function parcelExploreCounts(
+  parcels: ExploreParcel[],
+  mode: ExploreMode,
+  landUse: LandUseFilter,
+  query: string
+): { visible: number; total: number; buckets: Record<LandUseBucket, number> } {
+  let visible = 0;
+  for (const p of parcels) {
+    if (
+      parcelVisible(p, mode, landUse) &&
+      parcelMatchesQuery(query, p)
+    ) {
+      visible += 1;
+    }
+  }
+  return { visible, total: parcels.length, buckets: parcelLandUseCounts(parcels) };
+}
