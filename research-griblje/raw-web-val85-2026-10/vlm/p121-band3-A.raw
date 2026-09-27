@@ -1,0 +1,64 @@
+```json
+{
+  "sheet_visible": null,
+  "rows": [
+    {
+      "no_blatt": null,
+      "haus_no": "",
+      "name": "",
+      "stand": "",
+      "wohnort": "",
+      "kultur": "2/3[?] Acker",
+      "jaethe": "1",
+      "klafter": "780",
+      "classe": "",
+      "ertrag_fl": "",
+      "ertrag_kr": "",
+      "capital_fl": "",
+      "capital_kr": "",
+      "anmerkung": "Dalle [rot]",
+      "row_cut": true
+    },
+    {
+      "no_blatt": 1,
+      "haus_no": "10",
+      "name": "Widpatschka Josef",
+      "stand": "",
+      "wohnort": "",
+      "kultur": "Leimwand",
+      "jaethe": "1",
+      "klafter": "226",
+      "classe": "",
+      "ertrag_fl": "",
+      "ertrag_kr": "",
+      "capital_fl": "",
+      "capital_kr": "",
+      "anmerkung": "",
+      "row_cut": false
+    },
+    {
+      "no_blatt": null,
+      "haus_no": "",
+      "name": "~",
+      "stand": "",
+      "wohnort": "",
+      "kultur": "Wurzag",
+      "jaethe": "17",
+      "klafter": "1048",
+      "classe": "",
+      "ertrag_fl": "",
+      "ertrag_kr": "",
+      "capital_fl": "",
+      "capital_kr": "",
+      "anmerkung": "",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "row 1 kultur: '2/3' is a guess for the fraction",
+    "row 1 kultur: 'Acker' is inferred from context"
+  ],
+  "observations": "Red ink numbers (1795, 1820, 1794, 1226, 121048) appear above or next to the main entries, likely representing updated values or references. The first row's top and the last row's bottom are cut off by the image edge. The fold is visible in the center between the owner and parcel columns."
+}
+```

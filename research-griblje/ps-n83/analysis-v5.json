@@ -1,0 +1,118 @@
+{
+ "title": "PS N83 pasovni/zoom re-read s kolonskimi sidri — PILOT (vzorec val 80/81)",
+ "val": 85,
+ "date": "2026-09-27",
+ "issue": "#42 §4/§14 + #43",
+ "method": {
+  "vlm_calls": 46,
+  "errors": 0,
+  "rate_429": 0,
+  "faza_A": "4 pasovi/stran (h=328, korak=298, 30 px preklop — shema val 80/81) × 8 strani, norm, 32 klicev",
+  "faza_R": "2 kolonska trakova/stran (name/kultur+Flächen) celotna višina, x2.5 lanczos, sidra iz izmerjenih vertikalnih pravil, 14 klicev, 7 strani (p143 izpuščen)",
+  "avtor": "direkten odtis 32 pasov (pred VLM) + 14 trakov (pred fazo R) — neodvisen 1. bralec",
+  "vzorec": [
+   58,
+   59,
+   84,
+   98,
+   109,
+   121,
+   133,
+   143
+  ],
+  "vzorec_pravilo": "kvantili full_agree/rows1 (reread-v83/comparison.json) 0/25/50/75/100 + p98 + p121 + p59"
+ },
+ "method_result": {
+  "pasovi": {
+   "rows_pass1": 144,
+   "rows_pass2": 144,
+   "rows_band_merged": 172,
+   "verdikt": "NESTABILNO — VLM razbija vrstice na reznih robovih (172 vs 144); sekvenčna poravnava neuporabna → pasovi v tej obliki zavrgljeni za PS tabele"
+  },
+  "kolonski_trakovi": {
+   "entries_vs_rows1": {
+    "58": {
+     "trak": 21,
+     "rows1": 19
+    },
+    "59": {
+     "trak": 20,
+     "rows1": 21
+    },
+    "84": {
+     "trak": 20,
+     "rows1": 21
+    },
+    "98": {
+     "trak": 20,
+     "rows1": 20
+    },
+    "109": {
+     "trak": 20,
+     "rows1": 20
+    },
+    "121": {
+     "trak": 20,
+     "rows1": 20
+    },
+    "133": {
+     "trak": 16,
+     "rows1": 20
+    }
+   },
+   "verdikt": "STABILNO (±1–2) + stolpčna dodelitev J↔K REŠENA; ampak x2.5 trak VLM downscale → glifе slabšе (imena/kultur na traku slabša od pasov)"
+  },
+  "naslednja_iteracija": "KOLONSKI TILE-i: stolpčna skupina × pasovna višina (h=328) @nativno + x2 — hibrid sheme val 80/81 in kolonskih sider (val 86)"
+ },
+ "findings": {
+  "F-PV-05": {
+   "id_note": "NOVA NAJDBA (val 85) — sistemski pomik J→K v celostranskem prepisu",
+   "status": "DOKUMENTIRANA (merjeno na vzorcu; korekcija na izvoru = val 86)",
+   "meritev": {
+    "rows": 140,
+    "enotna_vrednost_v_JAETHE_polju": {
+     "pass1": "98/140 = 70.0%",
+     "pass2": "111/140 = 79.3%",
+     "kolonski_trak": "0/140 = 0.0%"
+    },
+    "samo_KLAFTER": {
+     "pass1": "19.3%",
+     "pass2": "2.9%",
+     "kolonski_trak": "85.0%"
+    },
+    "izrecno_J_in_K": {
+     "pass1": 13,
+     "pass2": 6,
+     "kolonski_trak": 21
+    }
+   },
+   "statement": "Fizikalno (avtorski odtis pravila J|K na trakovih p058/p084/p098) so enotne vrednosti v stolpcu Quad. Kläfter; obe celostranski prehoda (val 82/83) ju sistemsko vpisujeta v polje jaethe. Soglasji val 83 (jaethe 71,9 %, klafter 68,4 %) sta soglasji na skupno napačni dodelitvi. QKlft sane pravilo val 83 se generalizira.",
+   "implikacija": "register.json p56–143 (v82-native-pass1) jaethe/klafter polja so PROVISIONAL tudi po 2 prehodih; per-parcelna uporaba brez kolonske korekcije NEVELJAVNA (okrepa NR-14). §22: register NESPREMENJEN."
+  },
+  "F-PV-04": {
+   "status": "REŠITVENA POT VALIDIRANA-V85 (pilot) — kolonski tile-i, ne horizontalni pasovi",
+   "meritev": "pasovi nestabilni (172 vs 144 vrstic); trakovi stabilni (±1–2) in rešujejo J/K; tile-i (kolona × h=328) so naslednja iteracija"
+  },
+  "F-PV-03": {
+   "status": "OPEN (pilot NI dvignil na 2×) — p98: pasovni VLM tretjič dokazano SKRAJŠA kultur (1/22 Reb/Weing omemb); avtorski trak odtis kaže dvostropične opise z Weing na vseh ~20 vrstah [?] — kvantitativa s PV (7 J 665 K) čaka kolonske tile-e"
+  },
+  "F11": {
+   "status": "DELNO POTRJENO-V85 — Fürtrag veriga na vzorcu prebrana (pasovi + trakovi + avtor, soglasje ≥ 2 kjer obstaja): p58 = 56. Fürtrag 6 J 1009 + rdeče 1306 · p59 = 57. F. 9 J 1085 + rdeče 762 · p84 = 92. F. 7 J 1135 → rdeče 636 · p98 = 96. F. 11 J 835 · p109 = 109. F. 10 J 1056 · p121 = 119. F. 17 J 266 → rdeče 12 1046 · p133 = 137. F. 7 J 934 → rdeče 5 1311. Monotona kontrola čaka val 86.",
+   "qklft_anomalija": "val 83 \"J=1725\" (p121) = dejansko \"17 J 266\" z rdečo korekturo 12 1046 — na traku vidno, sane pravilo potrjeno"
+  },
+  "F15": {
+   "status": "REPRODUCIRANO-V85 — p133 = posebna sekcija brez osebnih imen (kolonska branja: trak \"Waldung\"[?] vs avtor \"Weg\"[?] — vsebina REVIEW); no_blatt = Uebersetzung zaporedje 2661+; rimski oznaki IV/V v no_blatt"
+  }
+ },
+ "inputs": {
+  "surovine": "research-griblje/raw-web-val85-2026-10/ (skripti, manifesti, author-notes.json, vlm/ 46 JSON+raw; pasovi/trakovi regenerabilni — gitignored)",
+  "primerjave": "research-griblje/ps-n83/band-v85/ (compare-v85.json pasovi, compare-strips-v85.json trakovi)"
+ },
+ "next_reads": [
+  "val 86 — KOLONSKI TILE-i p56–143: stolpčna skupina (name; kultur+Flächen) × pasovna višina h=328 @nativno+x2, sidra iz crops-manifest-v85.json; vgradnja J→K korekcije + imena/kultur s soglasjem ≥ 2",
+  "Fürtrag monotona kontrola (F11) po val 86",
+  "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)",
+  "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)",
+  "izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04), šolski list / SA Podzemelj / SI AS 749 / Zucchelli"
+ ]
+}

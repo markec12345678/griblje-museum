@@ -1,0 +1,4938 @@
+{
+ "meta": {
+  "val": 85,
+  "generated_by": "build-compare-strips-v85.py"
+ },
+ "summary": {
+  "sample": [
+   58,
+   59,
+   84,
+   98,
+   109,
+   121,
+   133
+  ],
+  "method": "kolonski trakovi x2.5 (merska sidra, celotna višina) vs celostranski pass1/pass2; indeksna poravnava (zgornja→spodnja)",
+  "fields": {
+   "name_raw": {
+    "p1_p2": 21.6,
+    "p1_t": 1.5,
+    "p2_t": 3.0,
+    "three": 1.5,
+    "total": 134
+   },
+   "surname": {
+    "p1_p2": 28.4,
+    "p1_t": 6.0,
+    "p2_t": 15.7,
+    "three": 3.7,
+    "total": 134
+   },
+   "stand": {
+    "p1_p2": 14.9,
+    "p1_t": 0.7,
+    "p2_t": 0.7,
+    "three": 0.7,
+    "total": 134
+   },
+   "wohnort": {
+    "p1_p2": 2.2,
+    "p1_t": 0.0,
+    "p2_t": 0.0,
+    "three": 0.0,
+    "total": 134
+   },
+   "kultur_first": {
+    "p1_p2": 50.7,
+    "p1_t": 24.3,
+    "p2_t": 22.9,
+    "three": 21.4,
+    "total": 140
+   },
+   "kultur": {
+    "p1_p2": 37.9,
+    "p1_t": 10.7,
+    "p2_t": 9.3,
+    "three": 8.6,
+    "total": 140
+   },
+   "jaethe": {
+    "p1_p2": 50.0,
+    "p1_t": 2.1,
+    "p2_t": 2.1,
+    "three": 0.0,
+    "total": 140
+   },
+   "klafter": {
+    "p1_p2": 1.4,
+    "p1_t": 1.4,
+    "p2_t": 0.7,
+    "three": 0.0,
+    "total": 140
+   }
+  },
+  "tiebreak_3rd_voice": {
+   "total": 723,
+   "track_third": 475,
+   "track_empty": 212,
+   "track_p1": 12,
+   "track_p2": 24
+  }
+ },
+ "pages": [
+  {
+   "page": 58,
+   "rows1": 19,
+   "rows2": 20,
+   "strip_name_n": 21,
+   "strip_kultur_n": 20,
+   "count_delta": {
+    "name": 2,
+    "kultur": 1
+   },
+   "fields": {
+    "jaethe_p1_p2": 18,
+    "jaethe_total": 19,
+    "klafter_total": 19,
+    "kultur_first_p1_p2": 8,
+    "kultur_first_p1_t": 3,
+    "kultur_first_p2_t": 2,
+    "kultur_first_three": 2,
+    "kultur_first_total": 19,
+    "kultur_p1_p2": 8,
+    "kultur_p1_t": 3,
+    "kultur_p2_t": 2,
+    "kultur_three": 2,
+    "kultur_total": 19,
+    "name_raw_p1_p2": 4,
+    "name_raw_total": 19,
+    "stand_p1_p2": 18,
+    "stand_total": 19,
+    "surname_p1_p2": 8,
+    "surname_total": 19,
+    "wohnort_total": 19
+   },
+   "jk_distribution_track": {
+    "only_k": 17,
+    "both": 2
+   }
+  },
+  {
+   "page": 59,
+   "rows1": 21,
+   "rows2": 21,
+   "strip_name_n": 20,
+   "strip_kultur_n": 21,
+   "count_delta": {
+    "name": -1,
+    "kultur": 0
+   },
+   "fields": {
+    "jaethe_p1_p2": 15,
+    "jaethe_total": 21,
+    "klafter_p1_p2": 2,
+    "klafter_total": 21,
+    "kultur_first_p1_p2": 11,
+    "kultur_first_p1_t": 9,
+    "kultur_first_p2_t": 10,
+    "kultur_first_three": 9,
+    "kultur_first_total": 21,
+    "kultur_p1_p2": 11,
+    "kultur_p1_t": 9,
+    "kultur_p2_t": 10,
+    "kultur_three": 9,
+    "kultur_total": 21,
+    "name_raw_p2_t": 2,
+    "name_raw_total": 20,
+    "stand_total": 20,
+    "surname_p1_p2": 1,
+    "surname_p1_t": 2,
+    "surname_p2_t": 5,
+    "surname_three": 1,
+    "surname_total": 20,
+    "wohnort_total": 20
+   },
+   "jk_distribution_track": {
+    "only_k": 19,
+    "both": 2
+   }
+  },
+  {
+   "page": 84,
+   "rows1": 21,
+   "rows2": 21,
+   "strip_name_n": 20,
+   "strip_kultur_n": 22,
+   "count_delta": {
+    "name": -1,
+    "kultur": 1
+   },
+   "fields": {
+    "jaethe_p1_p2": 12,
+    "jaethe_total": 21,
+    "klafter_total": 21,
+    "kultur_first_p1_p2": 14,
+    "kultur_first_p1_t": 3,
+    "kultur_first_p2_t": 1,
+    "kultur_first_three": 1,
+    "kultur_first_total": 21,
+    "kultur_p1_p2": 14,
+    "kultur_p1_t": 3,
+    "kultur_p2_t": 1,
+    "kultur_three": 1,
+    "kultur_total": 21,
+    "name_raw_p1_p2": 2,
+    "name_raw_total": 20,
+    "stand_p1_p2": 1,
+    "stand_p1_t": 1,
+    "stand_p2_t": 1,
+    "stand_three": 1,
+    "stand_total": 20,
+    "surname_p1_p2": 1,
+    "surname_p1_t": 1,
+    "surname_p2_t": 1,
+    "surname_three": 1,
+    "surname_total": 20,
+    "wohnort_p1_p2": 2,
+    "wohnort_total": 20
+   },
+   "jk_distribution_track": {
+    "both": 1,
+    "only_k": 20
+   }
+  },
+  {
+   "page": 98,
+   "rows1": 20,
+   "rows2": 20,
+   "strip_name_n": 20,
+   "strip_kultur_n": 20,
+   "count_delta": {
+    "name": 0,
+    "kultur": 0
+   },
+   "fields": {
+    "jaethe_total": 20,
+    "klafter_p1_t": 2,
+    "klafter_total": 20,
+    "kultur_first_p1_p2": 18,
+    "kultur_first_p1_t": 19,
+    "kultur_first_p2_t": 19,
+    "kultur_first_three": 18,
+    "kultur_first_total": 20,
+    "kultur_total": 20,
+    "name_raw_p1_p2": 3,
+    "name_raw_total": 20,
+    "stand_total": 20,
+    "surname_p1_p2": 7,
+    "surname_p1_t": 3,
+    "surname_p2_t": 14,
+    "surname_three": 3,
+    "surname_total": 20,
+    "wohnort_total": 20
+   },
+   "jk_distribution_track": {
+    "only_k": 18,
+    "both": 2
+   }
+  },
+  {
+   "page": 109,
+   "rows1": 20,
+   "rows2": 19,
+   "strip_name_n": 20,
+   "strip_kultur_n": 20,
+   "count_delta": {
+    "name": 0,
+    "kultur": 0
+   },
+   "fields": {
+    "jaethe_p1_t": 3,
+    "jaethe_total": 19,
+    "klafter_total": 19,
+    "kultur_first_total": 19,
+    "kultur_total": 19,
+    "name_raw_p1_p2": 1,
+    "name_raw_total": 19,
+    "stand_total": 19,
+    "surname_p1_p2": 3,
+    "surname_p1_t": 1,
+    "surname_p2_t": 1,
+    "surname_total": 19,
+    "wohnort_p1_p2": 1,
+    "wohnort_total": 19
+   },
+   "jk_distribution_track": {
+    "both": 7,
+    "only_k": 12
+   }
+  },
+  {
+   "page": 121,
+   "rows1": 20,
+   "rows2": 20,
+   "strip_name_n": 20,
+   "strip_kultur_n": 20,
+   "count_delta": {
+    "name": 0,
+    "kultur": 0
+   },
+   "fields": {
+    "jaethe_p1_p2": 8,
+    "jaethe_p2_t": 3,
+    "jaethe_total": 20,
+    "klafter_p2_t": 1,
+    "klafter_total": 20,
+    "kultur_first_total": 20,
+    "kultur_total": 20,
+    "name_raw_p1_p2": 3,
+    "name_raw_p1_t": 2,
+    "name_raw_p2_t": 2,
+    "name_raw_three": 2,
+    "name_raw_total": 20,
+    "stand_p1_p2": 1,
+    "stand_total": 20,
+    "surname_p1_p2": 2,
+    "surname_p1_t": 1,
+    "surname_total": 20,
+    "wohnort_total": 20
+   },
+   "jk_distribution_track": {
+    "only_k": 16,
+    "both": 4
+   }
+  },
+  {
+   "page": 133,
+   "rows1": 20,
+   "rows2": 20,
+   "strip_name_n": 16,
+   "strip_kultur_n": 21,
+   "count_delta": {
+    "name": -4,
+    "kultur": 1
+   },
+   "fields": {
+    "jaethe_p1_p2": 17,
+    "jaethe_total": 20,
+    "klafter_total": 20,
+    "kultur_first_p1_p2": 20,
+    "kultur_first_total": 20,
+    "kultur_p1_p2": 20,
+    "kultur_total": 20,
+    "name_raw_p1_p2": 16,
+    "name_raw_total": 16,
+    "stand_total": 16,
+    "surname_p1_p2": 16,
+    "surname_total": 16,
+    "wohnort_total": 16
+   },
+   "jk_distribution_track": {
+    "only_k": 17,
+    "both": 3
+   }
+  }
+ ],
+ "verdict_rows": [
+  {
+   "page": 58,
+   "row": 0,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "Gewürze",
+   "p2": "Gemeinde",
+   "track": "Bauer"
+  },
+  {
+   "page": 58,
+   "row": 1,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Hannß Gregor",
+   "p2": "Heinrich Jerg",
+   "track": "~"
+  },
+  {
+   "page": 58,
+   "row": 1,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Gregor",
+   "p2": "Jerg",
+   "track": "Pitter"
+  },
+  {
+   "page": 58,
+   "row": 2,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Hannß Gregor",
+   "p2": "Christoph Jerg",
+   "track": "Hlabačar Georg"
+  },
+  {
+   "page": 58,
+   "row": 2,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Gregor",
+   "p2": "Jerg",
+   "track": "Georg"
+  },
+  {
+   "page": 58,
+   "row": 3,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Wolbathar Pöllan",
+   "p2": "Cholothaker Pöllan",
+   "track": "Stemugl Georg"
+  },
+  {
+   "page": 58,
+   "row": 6,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Wolbathar Gregor",
+   "p2": "Cholothaker Jerg",
+   "track": "Ulrich Pitter"
+  },
+  {
+   "page": 58,
+   "row": 6,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Gregor",
+   "p2": "Jerg",
+   "track": "Pitter"
+  },
+  {
+   "page": 58,
+   "row": 8,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schinig Jandl",
+   "p2": "Schimig Jandl",
+   "track": "Ulrich Pitter"
+  },
+  {
+   "page": 58,
+   "row": 9,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Wolbathar Gregor",
+   "p2": "Cholothaker Jerg",
+   "track": "Schimerag Jhan"
+  },
+  {
+   "page": 58,
+   "row": 9,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Gregor",
+   "p2": "Jerg",
+   "track": "Jhan"
+  },
+  {
+   "page": 58,
+   "row": 10,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Hannß Pöllan",
+   "p2": "Heinrich Pöllan",
+   "track": "Hlobutshar Georg"
+  },
+  {
+   "page": 58,
+   "row": 11,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schinig Pöllan",
+   "p2": "Schimig Pöllan",
+   "track": "Schimeg Pitter"
+  },
+  {
+   "page": 58,
+   "row": 12,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Wolbathar Mache",
+   "p2": "Cholothaker Mardl",
+   "track": "Schimeg Jatta"
+  },
+  {
+   "page": 58,
+   "row": 12,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mache",
+   "p2": "Mardl",
+   "track": "Jatta"
+  },
+  {
+   "page": 58,
+   "row": 13,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pachog Wipfler",
+   "p2": "Cholothaker Mardl",
+   "track": "Hlobutshar Marda"
+  },
+  {
+   "page": 58,
+   "row": 13,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Wipfler",
+   "p2": "Mardl",
+   "track": "Marda"
+  },
+  {
+   "page": 58,
+   "row": 14,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schinig Pöllan",
+   "p2": "Pachog Wipflerl",
+   "track": "Hlobutshar Marde"
+  },
+  {
+   "page": 58,
+   "row": 14,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Pöllan",
+   "p2": "Wipflerl",
+   "track": "Marde"
+  },
+  {
+   "page": 58,
+   "row": 15,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pachog Wipfler",
+   "p2": "Schimig Pöllan",
+   "track": "Poscheg Michael"
+  },
+  {
+   "page": 58,
+   "row": 15,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Wipfler",
+   "p2": "Pöllan",
+   "track": "Michael"
+  },
+  {
+   "page": 58,
+   "row": 16,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pachog Mühlo",
+   "p2": "Pachog Wipflerl",
+   "track": "Schimeg Pitter"
+  },
+  {
+   "page": 58,
+   "row": 16,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mühlo",
+   "p2": "Wipflerl",
+   "track": "Pitter"
+  },
+  {
+   "page": 58,
+   "row": 17,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pachog Mühlo",
+   "p2": "Pachog Wipflerl",
+   "track": "Poscheg Michael"
+  },
+  {
+   "page": 58,
+   "row": 17,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mühlo",
+   "p2": "Wipflerl",
+   "track": "Michael"
+  },
+  {
+   "page": 58,
+   "row": 18,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pachog Mühlo",
+   "p2": "Pachog Mutho",
+   "track": "Poscheg Meifuel"
+  },
+  {
+   "page": 58,
+   "row": 18,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mühlo",
+   "p2": "Mutho",
+   "track": "Meifuel"
+  },
+  {
+   "page": 58,
+   "row": 0,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "338"
+  },
+  {
+   "page": 58,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "track_p1",
+   "p1": "acker",
+   "p2": "wald",
+   "track": "acker"
+  },
+  {
+   "page": 58,
+   "row": 1,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "384"
+  },
+  {
+   "page": 58,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "hutweide",
+   "track": "shupa"
+  },
+  {
+   "page": 58,
+   "row": 2,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "24"
+  },
+  {
+   "page": 58,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "hutweide",
+   "track": "shupa"
+  },
+  {
+   "page": 58,
+   "row": 3,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "649 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 4,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "740 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "hutweide",
+   "track": "shupa"
+  },
+  {
+   "page": 58,
+   "row": 5,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "163"
+  },
+  {
+   "page": 58,
+   "row": 6,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "674 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 7,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "577"
+  },
+  {
+   "page": 58,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "hutweide",
+   "track": "shupa"
+  },
+  {
+   "page": 58,
+   "row": 8,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "113"
+  },
+  {
+   "page": 58,
+   "row": 9,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "56 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 10,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1038 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 11,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "874 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "plachl",
+   "p2": "wald",
+   "track": "shubh"
+  },
+  {
+   "page": 58,
+   "row": 12,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "118 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "hutweide",
+   "track": "shupa"
+  },
+  {
+   "page": 58,
+   "row": 13,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "282 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "plachl",
+   "p2": "wald",
+   "track": "shubh"
+  },
+  {
+   "page": 58,
+   "row": 14,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "173"
+  },
+  {
+   "page": 58,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "hutweide",
+   "track": "shupa"
+  },
+  {
+   "page": 58,
+   "row": 15,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "114 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 16,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "134"
+  },
+  {
+   "page": 58,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiesenpl",
+   "p2": "hutweide",
+   "track": "shupamul"
+  },
+  {
+   "page": 58,
+   "row": 17,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1015 [gestrichen]"
+  },
+  {
+   "page": 58,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "hutweide",
+   "track": "shupa"
+  },
+  {
+   "page": 58,
+   "row": 18,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "543 [gestrichen]"
+  },
+  {
+   "page": 59,
+   "row": 0,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič Mijoš, Lovro Gajšek",
+   "p2": "Pachlög Witsch Lorenz Göttler",
+   "track": "Pachlög Michael"
+  },
+  {
+   "page": 59,
+   "row": 0,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Gajšek",
+   "p2": "Göttler",
+   "track": "Michael"
+  },
+  {
+   "page": 59,
+   "row": 0,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "Bauer"
+  },
+  {
+   "page": 59,
+   "row": 1,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič Miha",
+   "p2": "~",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 1,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Göttler",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 1,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 2,
+   "field": "name_raw",
+   "voice": "track_p2",
+   "p1": "Pavšič Mijoš",
+   "p2": "Pachlög Michael",
+   "track": "Pachlög Michael"
+  },
+  {
+   "page": 59,
+   "row": 2,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Mijoš",
+   "p2": "Michael",
+   "track": "Michael"
+  },
+  {
+   "page": 59,
+   "row": 2,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 3,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič Miha",
+   "p2": "~",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 3,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michael",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 3,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 4,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič Miha",
+   "p2": "Pachlög Michel",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 4,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michel",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 4,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 5,
+   "field": "name_raw",
+   "voice": "track_p2",
+   "p1": "Pavšič Mijoš",
+   "p2": "Pachlög Michael",
+   "track": "Pachlög Michael"
+  },
+  {
+   "page": 59,
+   "row": 5,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Mijoš",
+   "p2": "Michael",
+   "track": "Michael"
+  },
+  {
+   "page": 59,
+   "row": 5,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 6,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič M. Št.",
+   "p2": "~",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 6,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Št.",
+   "p2": "Michael",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 6,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 7,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič Mijoš",
+   "p2": "~",
+   "track": "Pachlög Michael"
+  },
+  {
+   "page": 59,
+   "row": 7,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Mijoš",
+   "p2": "Michael",
+   "track": "Michael"
+  },
+  {
+   "page": 59,
+   "row": 7,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 8,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavlič Miha",
+   "p2": "~",
+   "track": "Pachlög mihlo"
+  },
+  {
+   "page": 59,
+   "row": 8,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michael",
+   "track": "mihlo"
+  },
+  {
+   "page": 59,
+   "row": 8,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 9,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavlič Miha",
+   "p2": "~",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 9,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michael",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 9,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 10,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič Mijoš",
+   "p2": "~",
+   "track": "Gschleg Michael"
+  },
+  {
+   "page": 59,
+   "row": 10,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Mijoš",
+   "p2": "Michael",
+   "track": "Michael"
+  },
+  {
+   "page": 59,
+   "row": 10,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 11,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Hanzel Gregor",
+   "p2": "~",
+   "track": "Staudig Gregor"
+  },
+  {
+   "page": 59,
+   "row": 11,
+   "field": "surname",
+   "voice": "track_p1",
+   "p1": "Gregor",
+   "p2": "Michael",
+   "track": "Gregor"
+  },
+  {
+   "page": 59,
+   "row": 11,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 12,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Podobnik Gregor",
+   "p2": "Hanß Gregor",
+   "track": "Staudig Gregor"
+  },
+  {
+   "page": 59,
+   "row": 12,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 13,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavlič Miha",
+   "p2": "~",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 13,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Gregor",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 13,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 14,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavlič Miha",
+   "p2": "Pachlög Michel",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 14,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michel",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 14,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 15,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavšič Mijoš",
+   "p2": "~",
+   "track": "Pachlög Michael"
+  },
+  {
+   "page": 59,
+   "row": 15,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mijoš",
+   "p2": "Michel",
+   "track": "Michael"
+  },
+  {
+   "page": 59,
+   "row": 15,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 16,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavlič Miha",
+   "p2": "Pachlög Michael",
+   "track": "Gochlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 16,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michael",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 16,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 17,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavlič Miha",
+   "p2": "Pachlög Michel",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 17,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michel",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 17,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 18,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavlič Miha",
+   "p2": "~",
+   "track": "Hubler Mathäus"
+  },
+  {
+   "page": 59,
+   "row": 18,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Miha",
+   "p2": "Michel",
+   "track": "Mathäus"
+  },
+  {
+   "page": 59,
+   "row": 18,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 19,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Hudales Matija",
+   "p2": "Hubaleus Mathäus",
+   "track": "Pachlög Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 19,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Matija",
+   "p2": "Mathäus",
+   "track": "Mihlo"
+  },
+  {
+   "page": 59,
+   "row": 19,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 59,
+   "row": 0,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "459"
+  },
+  {
+   "page": 59,
+   "row": 1,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "989"
+  },
+  {
+   "page": 59,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "lhota",
+   "p2": "lhütte",
+   "track": "lohig"
+  },
+  {
+   "page": 59,
+   "row": 2,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1946"
+  },
+  {
+   "page": 59,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "lhota",
+   "p2": "lhütte",
+   "track": "lohig"
+  },
+  {
+   "page": 59,
+   "row": 3,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1293"
+  },
+  {
+   "page": 59,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "lhota",
+   "p2": "lhütte",
+   "track": "lohigo"
+  },
+  {
+   "page": 59,
+   "row": 5,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "722"
+  },
+  {
+   "page": 59,
+   "row": 6,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "611"
+  },
+  {
+   "page": 59,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "lhota",
+   "p2": "güten",
+   "track": "acker"
+  },
+  {
+   "page": 59,
+   "row": 7,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1062"
+  },
+  {
+   "page": 59,
+   "row": 8,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1085"
+  },
+  {
+   "page": 59,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "track_p2",
+   "p1": "lhota",
+   "p2": "acker",
+   "track": "acker"
+  },
+  {
+   "page": 59,
+   "row": 9,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "969"
+  },
+  {
+   "page": 59,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "acker",
+   "p2": "rhine",
+   "track": "lohig"
+  },
+  {
+   "page": 59,
+   "row": 10,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "50"
+  },
+  {
+   "page": 59,
+   "row": 11,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "691"
+  },
+  {
+   "page": 59,
+   "row": 12,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1108"
+  },
+  {
+   "page": 59,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "lhota",
+   "p2": "acker",
+   "track": "lohigo"
+  },
+  {
+   "page": 59,
+   "row": 13,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "426"
+  },
+  {
+   "page": 59,
+   "row": 14,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "877"
+  },
+  {
+   "page": 59,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "lhota",
+   "p2": "lhütte",
+   "track": "lohigo"
+  },
+  {
+   "page": 59,
+   "row": 15,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "246"
+  },
+  {
+   "page": 59,
+   "row": 16,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "994"
+  },
+  {
+   "page": 59,
+   "row": 17,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "358"
+  },
+  {
+   "page": 59,
+   "row": 18,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "361"
+  },
+  {
+   "page": 59,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "lhota",
+   "p2": "lhütte",
+   "track": "lohig"
+  },
+  {
+   "page": 59,
+   "row": 20,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "st",
+   "p2": "summa",
+   "track": "lohig"
+  },
+  {
+   "page": 59,
+   "row": 20,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "360"
+  },
+  {
+   "page": 84,
+   "row": 0,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schmiedt Malfs",
+   "p2": "Schmiedt Maria",
+   "track": "Schemidlak Matja"
+  },
+  {
+   "page": 84,
+   "row": 0,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malfs",
+   "p2": "Maria",
+   "track": "Matja"
+  },
+  {
+   "page": 84,
+   "row": 1,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malfs",
+   "p2": "Maria",
+   "track": "Matja"
+  },
+  {
+   "page": 84,
+   "row": 2,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Hofp[?]er Handl[?]",
+   "p2": "Höpfel Georg",
+   "track": "Hojde Janko"
+  },
+  {
+   "page": 84,
+   "row": 2,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Handl[?]",
+   "p2": "Georg",
+   "track": "Janko"
+  },
+  {
+   "page": 84,
+   "row": 4,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schmiedt Malfs",
+   "p2": "Schmiedt Maria",
+   "track": "Schedlak Matja"
+  },
+  {
+   "page": 84,
+   "row": 4,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malfs",
+   "p2": "Maria",
+   "track": "Matja"
+  },
+  {
+   "page": 84,
+   "row": 4,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 5,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Ravnik Mardi",
+   "p2": "Ravbar Marija",
+   "track": "Nanal Mihelič"
+  },
+  {
+   "page": 84,
+   "row": 5,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mardi",
+   "p2": "Marija",
+   "track": "Mihelič"
+  },
+  {
+   "page": 84,
+   "row": 5,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "'"
+  },
+  {
+   "page": 84,
+   "row": 6,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Malti",
+   "p2": "Pohlwischl Maria",
+   "track": "Lukmanitak Marko"
+  },
+  {
+   "page": 84,
+   "row": 6,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malti",
+   "p2": "Maria",
+   "track": "Marko"
+  },
+  {
+   "page": 84,
+   "row": 6,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "."
+  },
+  {
+   "page": 84,
+   "row": 7,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Michl",
+   "p2": "Lahffeldt Jacob",
+   "track": "Schafstaklak Nikolai"
+  },
+  {
+   "page": 84,
+   "row": 7,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Michl",
+   "p2": "Jacob",
+   "track": "Nikolai"
+  },
+  {
+   "page": 84,
+   "row": 7,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "."
+  },
+  {
+   "page": 84,
+   "row": 8,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lutzig Malfs",
+   "p2": "Eberly Maria",
+   "track": "Penzig Matja"
+  },
+  {
+   "page": 84,
+   "row": 8,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malfs",
+   "p2": "Maria",
+   "track": "Matja"
+  },
+  {
+   "page": 84,
+   "row": 8,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 9,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "F. Ravl Malti",
+   "p2": "F. Pohl Maria",
+   "track": "F. Lah Miklo"
+  },
+  {
+   "page": 84,
+   "row": 9,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malti",
+   "p2": "Maria",
+   "track": "Miklo"
+  },
+  {
+   "page": 84,
+   "row": 9,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 10,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Strobl Malti",
+   "p2": "F. Pohl Maria",
+   "track": "Stilah Mil."
+  },
+  {
+   "page": 84,
+   "row": 10,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malti",
+   "p2": "Maria",
+   "track": "Mil."
+  },
+  {
+   "page": 84,
+   "row": 10,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 11,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Mallety Georg",
+   "p2": "Hölty Johann",
+   "track": "Hlebetz Jhan"
+  },
+  {
+   "page": 84,
+   "row": 11,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Georg",
+   "p2": "Johann",
+   "track": "Jhan"
+  },
+  {
+   "page": 84,
+   "row": 11,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "'"
+  },
+  {
+   "page": 84,
+   "row": 12,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Mallety Georg",
+   "p2": "Hölty Johann",
+   "track": "Hlebetz Jhan"
+  },
+  {
+   "page": 84,
+   "row": 12,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Georg",
+   "p2": "Johann",
+   "track": "Jhan"
+  },
+  {
+   "page": 84,
+   "row": 13,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Malti",
+   "p2": "Schmiedt Maria",
+   "track": "Lukmanitak Marko"
+  },
+  {
+   "page": 84,
+   "row": 13,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malti",
+   "p2": "Maria",
+   "track": "Marko"
+  },
+  {
+   "page": 84,
+   "row": 14,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Mardo",
+   "p2": "Pohlwischl Maria",
+   "track": "Lukmanitak Man."
+  },
+  {
+   "page": 84,
+   "row": 14,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mardo",
+   "p2": "Maria",
+   "track": "Man."
+  },
+  {
+   "page": 84,
+   "row": 14,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 15,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Malti",
+   "p2": "Lahffeldt Maria",
+   "track": "Schaffstalak Matja"
+  },
+  {
+   "page": 84,
+   "row": 15,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malti",
+   "p2": "Maria",
+   "track": "Matja"
+  },
+  {
+   "page": 84,
+   "row": 15,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "."
+  },
+  {
+   "page": 84,
+   "row": 16,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Malti",
+   "p2": "Lahffeldt Barbara",
+   "track": "Schaffstalak Matja"
+  },
+  {
+   "page": 84,
+   "row": 16,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malti",
+   "p2": "Barbara",
+   "track": "Matja"
+  },
+  {
+   "page": 84,
+   "row": 16,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 17,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Valen",
+   "p2": "Lahffeldt Robert",
+   "track": "Schaffstalak Nikolai"
+  },
+  {
+   "page": 84,
+   "row": 17,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Valen",
+   "p2": "Robert",
+   "track": "Nikolai"
+  },
+  {
+   "page": 84,
+   "row": 17,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 18,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Robel",
+   "p2": "Lahffeldt Michael",
+   "track": "Schaffstalak Nikolai"
+  },
+  {
+   "page": 84,
+   "row": 18,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Robel",
+   "p2": "Michael",
+   "track": "Nikolai"
+  },
+  {
+   "page": 84,
+   "row": 18,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 84,
+   "row": 19,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lahitschek Valen",
+   "p2": "Lahffeldt Michael",
+   "track": "Kaindl Gregor"
+  },
+  {
+   "page": 84,
+   "row": 19,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Valen",
+   "p2": "Michael",
+   "track": "Gregor"
+  },
+  {
+   "page": 84,
+   "row": 19,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "."
+  },
+  {
+   "page": 84,
+   "row": 0,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1239",
+   "p2": "1231",
+   "track": "1024"
+  },
+  {
+   "page": 84,
+   "row": 1,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "32",
+   "track": "1321"
+  },
+  {
+   "page": 84,
+   "row": 2,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "23"
+  },
+  {
+   "page": 84,
+   "row": 3,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "650"
+  },
+  {
+   "page": 84,
+   "row": 4,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "237"
+  },
+  {
+   "page": 84,
+   "row": 5,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "182"
+  },
+  {
+   "page": 84,
+   "row": 6,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1279"
+  },
+  {
+   "page": 84,
+   "row": 7,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "2213"
+  },
+  {
+   "page": 84,
+   "row": 8,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "944",
+   "track": "1373"
+  },
+  {
+   "page": 84,
+   "row": 9,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "916"
+  },
+  {
+   "page": 84,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "gartn",
+   "track": "alm"
+  },
+  {
+   "page": 84,
+   "row": 10,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "469"
+  },
+  {
+   "page": 84,
+   "row": 11,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "469",
+   "track": "996"
+  },
+  {
+   "page": 84,
+   "row": 12,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "519"
+  },
+  {
+   "page": 84,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "gartn",
+   "track": "alm"
+  },
+  {
+   "page": 84,
+   "row": 13,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1251"
+  },
+  {
+   "page": 84,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiese",
+   "p2": "gartn",
+   "track": "alm"
+  },
+  {
+   "page": 84,
+   "row": 14,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1493"
+  },
+  {
+   "page": 84,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "track_p1",
+   "p1": "wiese",
+   "p2": "gartn",
+   "track": "wiese"
+  },
+  {
+   "page": 84,
+   "row": 15,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "408"
+  },
+  {
+   "page": 84,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "track_p1",
+   "p1": "wiese",
+   "p2": "gartn",
+   "track": "wiese"
+  },
+  {
+   "page": 84,
+   "row": 16,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "56"
+  },
+  {
+   "page": 84,
+   "row": 17,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "50"
+  },
+  {
+   "page": 84,
+   "row": 18,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "946"
+  },
+  {
+   "page": 84,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "wiesen",
+   "p2": "wiese",
+   "track": "alm"
+  },
+  {
+   "page": 84,
+   "row": 19,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "118",
+   "track": "231"
+  },
+  {
+   "page": 84,
+   "row": 20,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "gefällte",
+   "p2": "gefällde",
+   "track": "wiese"
+  },
+  {
+   "page": 84,
+   "row": 20,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "418"
+  },
+  {
+   "page": 98,
+   "row": 0,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening. Malfel",
+   "p2": "Bering Wolf",
+   "track": "Pessig Wolf"
+  },
+  {
+   "page": 98,
+   "row": 0,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Malfel",
+   "p2": "Wolf",
+   "track": "Wolf"
+  },
+  {
+   "page": 98,
+   "row": 0,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "Leimer. Gärtler",
+   "p2": "Leimer Gärtler",
+   "track": "Bauer"
+  },
+  {
+   "page": 98,
+   "row": 1,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Michelbauer Jörg",
+   "p2": "Wolfschlaeger",
+   "track": "Staudacher Georg"
+  },
+  {
+   "page": 98,
+   "row": 1,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Jörg",
+   "p2": "Wolfschlaeger",
+   "track": "Georg"
+  },
+  {
+   "page": 98,
+   "row": 1,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Benzing Jörgen",
+   "p2": "Stroffigen",
+   "track": "Strauß Georg"
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Jörgen",
+   "p2": "Stroffigen",
+   "track": "Georg"
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 3,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Dietrichl Marfe",
+   "p2": "Dietrich Wolf",
+   "track": "Deutliskah Wolf"
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Marfe",
+   "p2": "Wolf",
+   "track": "Wolf"
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 5,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Khüney Peterl",
+   "p2": "Klunig Peter",
+   "track": "Schinig Peter"
+  },
+  {
+   "page": 98,
+   "row": 5,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Peterl",
+   "p2": "Peter",
+   "track": "Peter"
+  },
+  {
+   "page": 98,
+   "row": 5,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Weyand",
+   "p2": "Bering Weyand",
+   "track": "Bining Michael"
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Marfel",
+   "p2": "Bering Wolf",
+   "track": "Bining Wolf"
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Marfel",
+   "p2": "Wolf",
+   "track": "Wolf"
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 8,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lafzig Georg",
+   "p2": "Safing Georg",
+   "track": "Pößing Georg"
+  },
+  {
+   "page": 98,
+   "row": 8,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 9,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Michael",
+   "p2": "Bering Michael",
+   "track": "Bining Michael"
+  },
+  {
+   "page": 98,
+   "row": 9,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Michel",
+   "p2": "Bening Michl",
+   "track": "Bining Michl"
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Michel",
+   "p2": "Michl",
+   "track": "Michl"
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 11,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Michel",
+   "p2": "Bening Michl",
+   "track": "Bining Michl"
+  },
+  {
+   "page": 98,
+   "row": 11,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Michel",
+   "p2": "Michl",
+   "track": "Michl"
+  },
+  {
+   "page": 98,
+   "row": 11,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "~",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 12,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "~",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 13,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Michel",
+   "p2": "Bening Michl",
+   "track": "Bining Michl"
+  },
+  {
+   "page": 98,
+   "row": 13,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Michel",
+   "p2": "Michl",
+   "track": "Michl"
+  },
+  {
+   "page": 98,
+   "row": 13,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "~",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 14,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "~",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Michel",
+   "p2": "Bening Michl",
+   "track": "Bining Michl"
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Michel",
+   "p2": "Michl",
+   "track": "Michl"
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "~",
+   "track": "."
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Bening Michel",
+   "p2": "Bening Wolf",
+   "track": "Bining Wolf"
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Michel",
+   "p2": "Wolf",
+   "track": "Wolf"
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "~",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Sinz Marfa",
+   "p2": "Bening Wolf",
+   "track": "Bining Wolf"
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Marfa",
+   "p2": "Wolf",
+   "track": "Wolf"
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "~",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Happachl Marfe",
+   "p2": "Höppner Wolf",
+   "track": "Happler Wolf"
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Marfe",
+   "p2": "Wolf",
+   "track": "Wolf"
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Malleischladel Josef",
+   "p2": "Wolfschläger Josef",
+   "track": "Mallwitsch Johann"
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 98,
+   "row": 0,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "524",
+   "p2": "",
+   "track": "324"
+  },
+  {
+   "page": 98,
+   "row": 1,
+   "field": "klafter",
+   "voice": "track_p1",
+   "p1": "490",
+   "p2": "",
+   "track": "490"
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "track_p1",
+   "p1": "acker",
+   "p2": "hutweide",
+   "track": "acker"
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "952",
+   "p2": "",
+   "track": "352"
+  },
+  {
+   "page": 98,
+   "row": 3,
+   "field": "klafter",
+   "voice": "track_p1",
+   "p1": "1536",
+   "p2": "",
+   "track": "1536"
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1922",
+   "p2": "",
+   "track": "9902"
+  },
+  {
+   "page": 98,
+   "row": 5,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "73",
+   "p2": "",
+   "track": "9931"
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "1 73",
+   "track": "1"
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "737",
+   "p2": "",
+   "track": "73"
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "389",
+   "p2": "",
+   "track": "737"
+  },
+  {
+   "page": 98,
+   "row": 8,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "661",
+   "p2": "",
+   "track": "389"
+  },
+  {
+   "page": 98,
+   "row": 9,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1188",
+   "p2": "",
+   "track": "664"
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "558",
+   "p2": "",
+   "track": "1688"
+  },
+  {
+   "page": 98,
+   "row": 11,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "558"
+  },
+  {
+   "page": 98,
+   "row": 12,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1278",
+   "p2": "",
+   "track": "1250"
+  },
+  {
+   "page": 98,
+   "row": 13,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "171",
+   "p2": "",
+   "track": "1278"
+  },
+  {
+   "page": 98,
+   "row": 14,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "1 171",
+   "track": "1"
+  },
+  {
+   "page": 98,
+   "row": 14,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1287",
+   "p2": "",
+   "track": "171"
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1209",
+   "p2": "",
+   "track": "1387"
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "594",
+   "p2": "",
+   "track": "1209"
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1163",
+   "p2": "",
+   "track": "596"
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "868",
+   "p2": "",
+   "track": "463"
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "track_p2",
+   "p1": "",
+   "p2": "acker",
+   "track": "acker"
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "835",
+   "p2": "",
+   "track": "568"
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Stephan Malfg",
+   "p2": "Stephan Malfß",
+   "track": "Hugl von Malfg"
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "surname",
+   "voice": "track_p1",
+   "p1": "Malfg",
+   "p2": "Malfß",
+   "track": "Malfg"
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "Bauer"
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "~",
+   "p2": "Lappary Malf",
+   "track": "Lappary Mälo"
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malfg",
+   "p2": "Malf",
+   "track": "Mälo"
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 2,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lappary Malf",
+   "p2": "Schimerz Johan",
+   "track": "Schimey Pidlo"
+  },
+  {
+   "page": 109,
+   "row": 2,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malf",
+   "p2": "Johan",
+   "track": "Pidlo"
+  },
+  {
+   "page": 109,
+   "row": 2,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 3,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schimerz Johan",
+   "p2": "Hofstätter Marx",
+   "track": "StColatschak Greg"
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Johan",
+   "p2": "Marx",
+   "track": "Greg"
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 5,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Höbatschak Marik",
+   "p2": "Hoffig Gregor",
+   "track": "StColatschak Mälo"
+  },
+  {
+   "page": 109,
+   "row": 5,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Marik",
+   "p2": "Gregor",
+   "track": "Mälo"
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Höbatschak Marik",
+   "p2": "Koschkan Wenzl",
+   "track": "Shimey Greg"
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Marik",
+   "p2": "Wenzl",
+   "track": "Greg"
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 7,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Kosirakar Wenzl",
+   "p2": "Bruder Malf",
+   "track": "Kreuschan Mälo"
+  },
+  {
+   "page": 109,
+   "row": 7,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Wenzl",
+   "p2": "Malf",
+   "track": "Mälo"
+  },
+  {
+   "page": 109,
+   "row": 7,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 8,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Ravbar Malf",
+   "p2": "Koschkan Malf",
+   "track": "Brudla Mälo"
+  },
+  {
+   "page": 109,
+   "row": 8,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 9,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Kovatschar Malf",
+   "p2": "Lappary Malf",
+   "track": "Kreuschan Malfg"
+  },
+  {
+   "page": 109,
+   "row": 9,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lappary Malf",
+   "p2": "Hofstätter Johan",
+   "track": "Lappary Mälo"
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malf",
+   "p2": "Johan",
+   "track": "Mälo"
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 11,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Kosirakar Johan",
+   "p2": "Schimerz Marx",
+   "track": "Kreuschan Pidla"
+  },
+  {
+   "page": 109,
+   "row": 11,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Johan",
+   "p2": "Marx",
+   "track": "Pidla"
+  },
+  {
+   "page": 109,
+   "row": 11,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schimerz Malf",
+   "p2": "Pechlig Malfa",
+   "track": "Shimey Mälo"
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malf",
+   "p2": "Malfa",
+   "track": "Mälo"
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 13,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pavsic Malfa",
+   "p2": "Huckstetter Marx",
+   "track": "Poidig Malfg"
+  },
+  {
+   "page": 109,
+   "row": 13,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malfa",
+   "p2": "Marx",
+   "track": "Malfg"
+  },
+  {
+   "page": 109,
+   "row": 13,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Höbatschak Marik",
+   "p2": "Schimerz Johan",
+   "track": "Huntelsch Mälo"
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Marik",
+   "p2": "Johan",
+   "track": "Mälo"
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 15,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schimerz Johan",
+   "p2": "Wernig Malf",
+   "track": "Shimer Jhau"
+  },
+  {
+   "page": 109,
+   "row": 15,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Johan",
+   "p2": "Malf",
+   "track": "Jhau"
+  },
+  {
+   "page": 109,
+   "row": 15,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 16,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Ravbar Malf",
+   "p2": "Löffler Gregor",
+   "track": "Brinig Mälo"
+  },
+  {
+   "page": 109,
+   "row": 16,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Malf",
+   "p2": "Gregor",
+   "track": "Mälo"
+  },
+  {
+   "page": 109,
+   "row": 16,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 17,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Kopitar Gregor",
+   "p2": "Kapfer Malfa",
+   "track": "Sofsig Greg"
+  },
+  {
+   "page": 109,
+   "row": 17,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Gregor",
+   "p2": "Malfa",
+   "track": "Greg"
+  },
+  {
+   "page": 109,
+   "row": 17,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 18,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Kopitar Malfg",
+   "p2": "Grapel Malfa",
+   "track": "Hap la Malfa"
+  },
+  {
+   "page": 109,
+   "row": 18,
+   "field": "surname",
+   "voice": "track_p2",
+   "p1": "Malfg",
+   "p2": "Malfa",
+   "track": "Malfa"
+  },
+  {
+   "page": 109,
+   "row": 18,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1"
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1044"
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "field": "jaethe",
+   "voice": "track_p1",
+   "p1": "1",
+   "p2": "",
+   "track": "1"
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "900",
+   "p2": "",
+   "track": "1187"
+  },
+  {
+   "page": 109,
+   "row": 2,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "437",
+   "p2": "",
+   "track": "792"
+  },
+  {
+   "page": 109,
+   "row": 3,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1"
+  },
+  {
+   "page": 109,
+   "row": 3,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "795",
+   "p2": "",
+   "track": "183"
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "jaethe",
+   "voice": "track_p1",
+   "p1": "1",
+   "p2": "",
+   "track": "1"
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "102",
+   "p2": "",
+   "track": "38"
+  },
+  {
+   "page": 109,
+   "row": 5,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "39",
+   "p2": "",
+   "track": "710"
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "710",
+   "p2": "",
+   "track": "1070"
+  },
+  {
+   "page": 109,
+   "row": 7,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1270",
+   "p2": "",
+   "track": "1192"
+  },
+  {
+   "page": 109,
+   "row": 8,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1192",
+   "p2": "",
+   "track": "1025"
+  },
+  {
+   "page": 109,
+   "row": 9,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "1050",
+   "p2": "",
+   "track": "790"
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "928",
+   "p2": "",
+   "track": "781"
+  },
+  {
+   "page": 109,
+   "row": 11,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "786",
+   "p2": "",
+   "track": "811"
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "818",
+   "p2": "",
+   "track": "811"
+  },
+  {
+   "page": 109,
+   "row": 13,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "811",
+   "p2": "",
+   "track": "829"
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1"
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "800",
+   "p2": "",
+   "track": "891"
+  },
+  {
+   "page": 109,
+   "row": 15,
+   "field": "jaethe",
+   "voice": "track_p1",
+   "p1": "1",
+   "p2": "",
+   "track": "1"
+  },
+  {
+   "page": 109,
+   "row": 15,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "234",
+   "p2": "",
+   "track": "970"
+  },
+  {
+   "page": 109,
+   "row": 16,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "476",
+   "p2": "",
+   "track": "975"
+  },
+  {
+   "page": 109,
+   "row": 17,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1"
+  },
+  {
+   "page": 109,
+   "row": 17,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "973",
+   "p2": "",
+   "track": "151"
+  },
+  {
+   "page": 109,
+   "row": 18,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "151",
+   "p2": "",
+   "track": "1072"
+  },
+  {
+   "page": 121,
+   "row": 0,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Lorenz Mio",
+   "p2": "Konal Mio",
+   "track": "Kral Mic"
+  },
+  {
+   "page": 121,
+   "row": 0,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "Bauer Gruble",
+   "p2": "Land Gruble",
+   "track": "Bauer"
+  },
+  {
+   "page": 121,
+   "row": 1,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "~",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 2,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Knal Ramus",
+   "p2": "Konal Ranner",
+   "track": "Kral Anus"
+  },
+  {
+   "page": 121,
+   "row": 2,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Ramus",
+   "p2": "Ranner",
+   "track": "Anus"
+  },
+  {
+   "page": 121,
+   "row": 2,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 2,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 3,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Ramus",
+   "p2": "Ranner",
+   "track": "Raus"
+  },
+  {
+   "page": 121,
+   "row": 3,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 3,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 4,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schinig Joha",
+   "p2": "Kining Jela",
+   "track": "Schimig John"
+  },
+  {
+   "page": 121,
+   "row": 4,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Joha",
+   "p2": "Jela",
+   "track": "John"
+  },
+  {
+   "page": 121,
+   "row": 4,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 4,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 5,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Joha",
+   "p2": "Jela",
+   "track": "John"
+  },
+  {
+   "page": 121,
+   "row": 5,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 5,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 6,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Schinig Peter",
+   "p2": "Skunig P[?]",
+   "track": "Schamay Mihre"
+  },
+  {
+   "page": 121,
+   "row": 6,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Peter",
+   "p2": "P[?]",
+   "track": "Mihre"
+  },
+  {
+   "page": 121,
+   "row": 6,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 6,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 7,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pessing Maria",
+   "p2": "Pesdny Maja",
+   "track": "Pessirig Malye"
+  },
+  {
+   "page": 121,
+   "row": 7,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Maria",
+   "p2": "Maja",
+   "track": "Malye"
+  },
+  {
+   "page": 121,
+   "row": 7,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 7,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 8,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "~",
+   "p2": "Pesdny Maja",
+   "track": "Pessirig Malye"
+  },
+  {
+   "page": 121,
+   "row": 8,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Maria",
+   "p2": "Maja",
+   "track": "Malye"
+  },
+  {
+   "page": 121,
+   "row": 8,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 8,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 9,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Fisclin Maria",
+   "p2": "Fridin Marjn",
+   "track": "Pessirig Malye"
+  },
+  {
+   "page": 121,
+   "row": 9,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Maria",
+   "p2": "Marjn",
+   "track": "Malye"
+  },
+  {
+   "page": 121,
+   "row": 9,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 9,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 10,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Pessing Maria",
+   "p2": "Pesdny Maja",
+   "track": "Pessirig Malye"
+  },
+  {
+   "page": 121,
+   "row": 10,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Maria",
+   "p2": "Maja",
+   "track": "Malye"
+  },
+  {
+   "page": 121,
+   "row": 10,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 10,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 11,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Wurich Peter",
+   "p2": "Wosch Pela",
+   "track": "Uroich Peda"
+  },
+  {
+   "page": 121,
+   "row": 11,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Peter",
+   "p2": "Pela",
+   "track": "Peda"
+  },
+  {
+   "page": 121,
+   "row": 11,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 11,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Wurich Peter",
+   "p2": "Wosch Pela",
+   "track": "Uroich Peda"
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Peter",
+   "p2": "Pela",
+   "track": "Peda"
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 13,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Leistutok Wolf",
+   "p2": "Lobstotek Wlfy",
+   "track": "Hleustitek Wolf"
+  },
+  {
+   "page": 121,
+   "row": 13,
+   "field": "surname",
+   "voice": "track_p1",
+   "p1": "Wolf",
+   "p2": "Wlfy",
+   "track": "Wolf"
+  },
+  {
+   "page": 121,
+   "row": 14,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Trappitsch Peter",
+   "p2": "Tragusch Pela",
+   "track": "Dragasch Peda"
+  },
+  {
+   "page": 121,
+   "row": 14,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Peter",
+   "p2": "Pela",
+   "track": "Peda"
+  },
+  {
+   "page": 121,
+   "row": 14,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 14,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 15,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Sleppotsch Georg",
+   "p2": "Sleppotsky gey",
+   "track": "Sleppetle Greg"
+  },
+  {
+   "page": 121,
+   "row": 15,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Georg",
+   "p2": "gey",
+   "track": "Greg"
+  },
+  {
+   "page": 121,
+   "row": 15,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 15,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 16,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "~",
+   "p2": "Sleppotsky gey",
+   "track": "Sleppetle Greg"
+  },
+  {
+   "page": 121,
+   "row": 16,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Georg",
+   "p2": "gey",
+   "track": "Greg"
+  },
+  {
+   "page": 121,
+   "row": 16,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 16,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 17,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Skuditar Maria",
+   "p2": "Kneidhan Wlfy",
+   "track": "Skvishan Muly"
+  },
+  {
+   "page": 121,
+   "row": 17,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Maria",
+   "p2": "Wlfy",
+   "track": "Muly"
+  },
+  {
+   "page": 121,
+   "row": 17,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "Gruble",
+   "p2": "Grube",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Leistutok Wolf",
+   "p2": "Lubstetek Wlfy",
+   "track": "Hleustitek Mily"
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Wolf",
+   "p2": "Wlfy",
+   "track": "Mily"
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 19,
+   "field": "name_raw",
+   "voice": "track_third",
+   "p1": "Leistutok Mathes",
+   "p2": "Lubstetek Walese",
+   "track": "Hleustitek Miklos"
+  },
+  {
+   "page": 121,
+   "row": 19,
+   "field": "surname",
+   "voice": "track_third",
+   "p1": "Mathes",
+   "p2": "Walese",
+   "track": "Miklos"
+  },
+  {
+   "page": 121,
+   "row": 19,
+   "field": "stand",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 19,
+   "field": "wohnort",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "\""
+  },
+  {
+   "page": 121,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "schind",
+   "track": "lohwald"
+  },
+  {
+   "page": 121,
+   "row": 0,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "990"
+  },
+  {
+   "page": 121,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "schind",
+   "track": "lohwald"
+  },
+  {
+   "page": 121,
+   "row": 1,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "261"
+  },
+  {
+   "page": 121,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "schind",
+   "track": "lohwald"
+  },
+  {
+   "page": 121,
+   "row": 2,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1088"
+  },
+  {
+   "page": 121,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "schind",
+   "track": "lohwald"
+  },
+  {
+   "page": 121,
+   "row": 3,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "92"
+  },
+  {
+   "page": 121,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "schind",
+   "track": "lohwald"
+  },
+  {
+   "page": 121,
+   "row": 4,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "90"
+  },
+  {
+   "page": 121,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "schind",
+   "track": "lohwald"
+  },
+  {
+   "page": 121,
+   "row": 5,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "122"
+  },
+  {
+   "page": 121,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindel",
+   "p2": "schuhhald",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 6,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "915"
+  },
+  {
+   "page": 121,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "schind",
+   "track": "lohwald"
+  },
+  {
+   "page": 121,
+   "row": 7,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "201"
+  },
+  {
+   "page": 121,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "gartn",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 8,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "991"
+  },
+  {
+   "page": 121,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "laumert",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 9,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "158"
+  },
+  {
+   "page": 121,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 10,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "312"
+  },
+  {
+   "page": 121,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "laumert",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 11,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "490"
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "schindl",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "field": "jaethe",
+   "voice": "track_p2",
+   "p1": "810",
+   "p2": "11",
+   "track": "11"
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "810",
+   "track": "811"
+  },
+  {
+   "page": 121,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "laumert",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 13,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "434"
+  },
+  {
+   "page": 121,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "gartn",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 14,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "742"
+  },
+  {
+   "page": 121,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "laumert",
+   "p2": "laden",
+   "track": "lohwiese"
+  },
+  {
+   "page": 121,
+   "row": 15,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "944"
+  },
+  {
+   "page": 121,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "ebne",
+   "p2": "eden",
+   "track": "ebene"
+  },
+  {
+   "page": 121,
+   "row": 16,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "630"
+  },
+  {
+   "page": 121,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "gartn",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 17,
+   "field": "jaethe",
+   "voice": "track_p2",
+   "p1": "672",
+   "p2": "1",
+   "track": "1"
+  },
+  {
+   "page": 121,
+   "row": 17,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "672",
+   "track": "872"
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "laumert",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "field": "jaethe",
+   "voice": "track_p2",
+   "p1": "209",
+   "p2": "1",
+   "track": "1"
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "field": "klafter",
+   "voice": "track_p2",
+   "p1": "",
+   "p2": "209",
+   "track": "209"
+  },
+  {
+   "page": 121,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "track_third",
+   "p1": "reben",
+   "p2": "ladigrat",
+   "track": "lohpülkühl"
+  },
+  {
+   "page": 121,
+   "row": 19,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1273"
+  },
+  {
+   "page": 133,
+   "row": 0,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "648"
+  },
+  {
+   "page": 133,
+   "row": 1,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "384"
+  },
+  {
+   "page": 133,
+   "row": 2,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "102"
+  },
+  {
+   "page": 133,
+   "row": 3,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "305"
+  },
+  {
+   "page": 133,
+   "row": 4,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "290"
+  },
+  {
+   "page": 133,
+   "row": 5,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "544"
+  },
+  {
+   "page": 133,
+   "row": 6,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "412"
+  },
+  {
+   "page": 133,
+   "row": 7,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "166"
+  },
+  {
+   "page": 133,
+   "row": 8,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "262 [gestrichen]"
+  },
+  {
+   "page": 133,
+   "row": 9,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "240 [gestrichen]"
+  },
+  {
+   "page": 133,
+   "row": 10,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "1.499 / 1.517",
+   "p2": "1.499 / 517",
+   "track": "1"
+  },
+  {
+   "page": 133,
+   "row": 10,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "494 [gestrichen]"
+  },
+  {
+   "page": 133,
+   "row": 11,
+   "field": "jaethe",
+   "voice": "track_third",
+   "p1": "1.175",
+   "p2": "1.275",
+   "track": "1"
+  },
+  {
+   "page": 133,
+   "row": 11,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "217"
+  },
+  {
+   "page": 133,
+   "row": 12,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "248"
+  },
+  {
+   "page": 133,
+   "row": 13,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "310"
+  },
+  {
+   "page": 133,
+   "row": 14,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "292"
+  },
+  {
+   "page": 133,
+   "row": 15,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "242"
+  },
+  {
+   "page": 133,
+   "row": 16,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "426"
+  },
+  {
+   "page": 133,
+   "row": 17,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "464"
+  },
+  {
+   "page": 133,
+   "row": 18,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1262"
+  },
+  {
+   "page": 133,
+   "row": 19,
+   "field": "klafter",
+   "voice": "track_third",
+   "p1": "",
+   "p2": "",
+   "track": "1185"
+  }
+ ]
+}

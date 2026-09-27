@@ -1,0 +1,2429 @@
+{
+ "meta": {
+  "val": 85,
+  "generated_by": "build-compare-v85.py",
+  "sample_rule": "kvantili full_agree/rows1 (reread-v83/comparison.json) + p98 + p121 + p59"
+ },
+ "summary": {
+  "sample": [
+   58,
+   59,
+   84,
+   98,
+   109,
+   121,
+   133,
+   143
+  ],
+  "method": "troje-glasovna: pass1 (v82 celostransko) x pass2 (v83 celostransko) x pasovi (v85, 4/stran @nativno); poravnava sekvenčni zip (identno v83)",
+  "rows": {
+   "pass1": 144,
+   "pass2": 144,
+   "band": 172,
+   "p1_eq_band_pages": 0,
+   "p2_eq_band_pages": 0
+  },
+  "no_blatt_alignment": {
+   "rows_total": 143,
+   "band_nb_match": 6
+  },
+  "fields": {
+   "no_blatt": {
+    "pair12": 12.59,
+    "pair1b": 4.2,
+    "pair2b": 2.8,
+    "three": 2.8,
+    "total": 143
+   },
+   "haus_no": {
+    "pair12": 59.44,
+    "pair1b": 18.88,
+    "pair2b": 19.58,
+    "three": 18.18,
+    "total": 143
+   },
+   "name_raw": {
+    "pair12": 25.17,
+    "pair1b": 1.4,
+    "pair2b": 2.1,
+    "three": 1.4,
+    "total": 143
+   },
+   "surname": {
+    "pair12": 31.47,
+    "pair1b": 2.1,
+    "pair2b": 2.1,
+    "three": 0.7,
+    "total": 143
+   },
+   "stand": {
+    "pair12": 16.08,
+    "pair1b": 2.8,
+    "pair2b": 2.8,
+    "three": 2.8,
+    "total": 143
+   },
+   "wohnort": {
+    "pair12": 2.1,
+    "pair1b": 0.7,
+    "pair2b": 1.4,
+    "three": 0.7,
+    "total": 143
+   },
+   "kultur": {
+    "pair12": 37.06,
+    "pair1b": 13.99,
+    "pair2b": 19.58,
+    "three": 11.19,
+    "total": 143
+   },
+   "kultur_first": {
+    "pair12": 49.65,
+    "pair1b": 25.17,
+    "pair2b": 27.27,
+    "three": 23.78,
+    "total": 143
+   },
+   "jaethe": {
+    "pair12": 48.95,
+    "pair1b": 9.09,
+    "pair2b": 6.99,
+    "three": 3.5,
+    "total": 143
+   },
+   "klafter": {
+    "pair12": 1.4,
+    "pair1b": 2.8,
+    "pair2b": 0.7,
+    "three": 0.7,
+    "total": 143
+   },
+   "classe": {
+    "pair12": 1.4,
+    "pair1b": 0.0,
+    "pair2b": 0.0,
+    "three": 0.0,
+    "total": 143
+   },
+   "ertrag_fl": {
+    "pair12": 2.1,
+    "pair1b": 0.7,
+    "pair2b": 0.7,
+    "three": 0.7,
+    "total": 143
+   },
+   "ertrag_kr": {
+    "pair12": 3.5,
+    "pair1b": 0.0,
+    "pair2b": 0.0,
+    "three": 0.0,
+    "total": 143
+   },
+   "capital_fl": {
+    "pair12": 2.1,
+    "pair1b": 0.0,
+    "pair2b": 0.0,
+    "three": 0.0,
+    "total": 143
+   },
+   "capital_kr": {
+    "pair12": 1.4,
+    "pair1b": 0.0,
+    "pair2b": 0.0,
+    "three": 0.0,
+    "total": 143
+   }
+  },
+  "tiebreak_3rd_voice": {
+   "total": 581,
+   "band_p1": 19,
+   "band_p2": 25,
+   "band_third": 387,
+   "band_empty": 150
+  },
+  "totals_chain": [
+   {
+    "page": 58,
+    "pass1": [
+     "Stückzahl=56",
+     "=6 / 1000",
+     "=1 / 300"
+    ],
+    "pass2": [
+     "56 Flurstücke=1 3000"
+    ],
+    "band": [
+     "Fürtrag="
+    ],
+    "p1_eq_p2": false,
+    "band_eq_p1": false,
+    "band_eq_p2": false
+   },
+   {
+    "page": 59,
+    "pass1": [
+     "Summa Jaethe=9 1188",
+     "Summa Quad. Kläfter=2 702"
+    ],
+    "pass2": [
+     "Summa=9 1188 / 2 702"
+    ],
+    "band": [],
+    "p1_eq_p2": false,
+    "band_eq_p1": false,
+    "band_eq_p2": false
+   },
+   {
+    "page": 84,
+    "pass1": [
+     "Summa=7-1123",
+     "Fürtrags=5-086"
+    ],
+    "pass2": [
+     "Fürträg=7 1123",
+     "=5 086"
+    ],
+    "band": [
+     "Fürtrags="
+    ],
+    "p1_eq_p2": false,
+    "band_eq_p1": false,
+    "band_eq_p2": false
+   },
+   {
+    "page": 98,
+    "pass1": [
+     "Findrag=11 835"
+    ],
+    "pass2": [
+     "Findrag=11 835"
+    ],
+    "band": [
+     "Fürtrag=11.8355"
+    ],
+    "p1_eq_p2": true,
+    "band_eq_p1": false,
+    "band_eq_p2": false
+   },
+   {
+    "page": 109,
+    "pass1": [
+     "107 Verläge:=16 1036"
+    ],
+    "pass2": [
+     "107 Verzehg.=16 1056"
+    ],
+    "band": [
+     "Fürtrag.=10. 1056"
+    ],
+    "p1_eq_p2": false,
+    "band_eq_p1": false,
+    "band_eq_p2": false
+   },
+   {
+    "page": 121,
+    "pass1": [
+     "Summe=17 206",
+     "Summe=12 1046"
+    ],
+    "pass2": [
+     "Summa=17.206 / 12.1046"
+    ],
+    "band": [],
+    "p1_eq_p2": false,
+    "band_eq_p1": false,
+    "band_eq_p2": false
+   },
+   {
+    "page": 133,
+    "pass1": [],
+    "pass2": [],
+    "band": [
+     "=2-295",
+     "131 Fürtrag=7.934",
+     "=5.011 [rot]"
+    ],
+    "p1_eq_p2": true,
+    "band_eq_p1": false,
+    "band_eq_p2": false
+   },
+   {
+    "page": 143,
+    "pass1": [],
+    "pass2": [],
+    "band": [],
+    "p1_eq_p2": true,
+    "band_eq_p1": true,
+    "band_eq_p2": true
+   }
+  ]
+ },
+ "pages": [
+  {
+   "page": 58,
+   "rows1": 19,
+   "rows2": 20,
+   "rows_band": 25,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [],
+   "per_band": [
+    {
+     "cell": "p058-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p058-band1",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p058-band2",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p058-band3",
+     "rows": 3,
+     "totals": 1
+    }
+   ],
+   "fields": {
+    "capital_fl_total": 19,
+    "capital_kr_total": 19,
+    "classe_pair12": 1,
+    "classe_total": 19,
+    "ertrag_fl_total": 19,
+    "ertrag_kr_pair12": 1,
+    "ertrag_kr_total": 19,
+    "haus_no_total": 19,
+    "jaethe_pair12": 18,
+    "jaethe_pair1b": 3,
+    "jaethe_pair2b": 3,
+    "jaethe_three": 3,
+    "jaethe_total": 19,
+    "klafter_total": 19,
+    "kultur_first_pair12": 8,
+    "kultur_first_pair1b": 3,
+    "kultur_first_pair2b": 6,
+    "kultur_first_three": 3,
+    "kultur_first_total": 19,
+    "kultur_pair12": 8,
+    "kultur_pair1b": 3,
+    "kultur_pair2b": 6,
+    "kultur_three": 3,
+    "kultur_total": 19,
+    "name_raw_pair12": 4,
+    "name_raw_total": 19,
+    "no_blatt_pair12": 1,
+    "no_blatt_pair1b": 1,
+    "no_blatt_pair2b": 1,
+    "no_blatt_three": 1,
+    "no_blatt_total": 19,
+    "stand_pair12": 18,
+    "stand_pair1b": 3,
+    "stand_pair2b": 3,
+    "stand_three": 3,
+    "stand_total": 19,
+    "surname_pair12": 8,
+    "surname_total": 19,
+    "wohnort_total": 19
+   },
+   "tiebreak": {
+    "band_p1": 0,
+    "band_p2": 6,
+    "band_third": 43,
+    "band_empty": 19
+   }
+  },
+  {
+   "page": 59,
+   "rows1": 21,
+   "rows2": 21,
+   "rows_band": 24,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [
+    {
+     "cell": "21",
+     "merged_into_next": true
+    }
+   ],
+   "per_band": [
+    {
+     "cell": "p059-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p059-band1",
+     "rows": 10,
+     "totals": 0
+    },
+    {
+     "cell": "p059-band2",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p059-band3",
+     "rows": 2,
+     "totals": 0
+    }
+   ],
+   "fields": {
+    "capital_fl_total": 21,
+    "capital_kr_total": 21,
+    "classe_total": 21,
+    "ertrag_fl_total": 21,
+    "ertrag_kr_pair12": 1,
+    "ertrag_kr_total": 21,
+    "haus_no_pair12": 16,
+    "haus_no_pair1b": 11,
+    "haus_no_pair2b": 11,
+    "haus_no_three": 10,
+    "haus_no_total": 21,
+    "jaethe_pair12": 15,
+    "jaethe_pair1b": 3,
+    "jaethe_pair2b": 2,
+    "jaethe_three": 2,
+    "jaethe_total": 21,
+    "klafter_pair12": 2,
+    "klafter_pair1b": 1,
+    "klafter_pair2b": 1,
+    "klafter_three": 1,
+    "klafter_total": 21,
+    "kultur_first_pair12": 11,
+    "kultur_first_pair1b": 5,
+    "kultur_first_pair2b": 6,
+    "kultur_first_three": 5,
+    "kultur_first_total": 21,
+    "kultur_pair12": 11,
+    "kultur_pair1b": 5,
+    "kultur_pair2b": 6,
+    "kultur_three": 5,
+    "kultur_total": 21,
+    "name_raw_pair2b": 1,
+    "name_raw_total": 21,
+    "no_blatt_pair12": 1,
+    "no_blatt_total": 21,
+    "stand_total": 21,
+    "surname_pair12": 1,
+    "surname_total": 21,
+    "wohnort_total": 21
+   },
+   "tiebreak": {
+    "band_p1": 1,
+    "band_p2": 3,
+    "band_third": 61,
+    "band_empty": 21
+   }
+  },
+  {
+   "page": 84,
+   "rows1": 21,
+   "rows2": 21,
+   "rows_band": 24,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [],
+   "per_band": [
+    {
+     "cell": "p084-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p084-band1",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p084-band2",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p084-band3",
+     "rows": 2,
+     "totals": 1
+    }
+   ],
+   "fields": {
+    "capital_fl_total": 21,
+    "capital_kr_total": 21,
+    "classe_total": 21,
+    "ertrag_fl_pair12": 2,
+    "ertrag_fl_pair1b": 1,
+    "ertrag_fl_pair2b": 1,
+    "ertrag_fl_three": 1,
+    "ertrag_fl_total": 21,
+    "ertrag_kr_pair12": 2,
+    "ertrag_kr_total": 21,
+    "haus_no_pair12": 16,
+    "haus_no_pair1b": 5,
+    "haus_no_pair2b": 5,
+    "haus_no_three": 5,
+    "haus_no_total": 21,
+    "jaethe_pair12": 12,
+    "jaethe_total": 21,
+    "klafter_total": 21,
+    "kultur_first_pair12": 14,
+    "kultur_first_pair1b": 10,
+    "kultur_first_pair2b": 8,
+    "kultur_first_three": 8,
+    "kultur_first_total": 21,
+    "kultur_pair12": 14,
+    "kultur_pair1b": 10,
+    "kultur_pair2b": 8,
+    "kultur_three": 8,
+    "kultur_total": 21,
+    "name_raw_pair12": 3,
+    "name_raw_pair1b": 1,
+    "name_raw_pair2b": 1,
+    "name_raw_three": 1,
+    "name_raw_total": 21,
+    "no_blatt_total": 21,
+    "stand_pair12": 1,
+    "stand_pair1b": 1,
+    "stand_pair2b": 1,
+    "stand_three": 1,
+    "stand_total": 21,
+    "surname_pair12": 2,
+    "surname_total": 21,
+    "wohnort_pair12": 2,
+    "wohnort_pair1b": 1,
+    "wohnort_pair2b": 1,
+    "wohnort_three": 1,
+    "wohnort_total": 21
+   },
+   "tiebreak": {
+    "band_p1": 4,
+    "band_p2": 0,
+    "band_third": 59,
+    "band_empty": 18
+   }
+  },
+  {
+   "page": 98,
+   "rows1": 20,
+   "rows2": 20,
+   "rows_band": 22,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [],
+   "per_band": [
+    {
+     "cell": "p098-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p098-band1",
+     "rows": 8,
+     "totals": 0
+    },
+    {
+     "cell": "p098-band2",
+     "rows": 8,
+     "totals": 0
+    },
+    {
+     "cell": "p098-band3",
+     "rows": 2,
+     "totals": 1
+    }
+   ],
+   "fields": {
+    "capital_fl_total": 20,
+    "capital_kr_total": 20,
+    "classe_total": 20,
+    "ertrag_fl_total": 20,
+    "ertrag_kr_total": 20,
+    "haus_no_pair12": 13,
+    "haus_no_pair1b": 3,
+    "haus_no_pair2b": 3,
+    "haus_no_three": 3,
+    "haus_no_total": 20,
+    "jaethe_pair2b": 3,
+    "jaethe_total": 20,
+    "klafter_total": 20,
+    "kultur_first_pair12": 18,
+    "kultur_first_pair1b": 18,
+    "kultur_first_pair2b": 19,
+    "kultur_first_three": 18,
+    "kultur_first_total": 20,
+    "kultur_pair1b": 2,
+    "kultur_pair2b": 8,
+    "kultur_total": 20,
+    "name_raw_pair12": 3,
+    "name_raw_total": 20,
+    "no_blatt_pair12": 1,
+    "no_blatt_pair1b": 1,
+    "no_blatt_pair2b": 1,
+    "no_blatt_three": 1,
+    "no_blatt_total": 20,
+    "stand_total": 20,
+    "surname_pair12": 7,
+    "surname_total": 20,
+    "wohnort_total": 20
+   },
+   "tiebreak": {
+    "band_p1": 2,
+    "band_p2": 12,
+    "band_third": 59,
+    "band_empty": 19
+   }
+  },
+  {
+   "page": 109,
+   "rows1": 20,
+   "rows2": 19,
+   "rows_band": 22,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [],
+   "per_band": [
+    {
+     "cell": "p109-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p109-band1",
+     "rows": 8,
+     "totals": 0
+    },
+    {
+     "cell": "p109-band2",
+     "rows": 8,
+     "totals": 0
+    },
+    {
+     "cell": "p109-band3",
+     "rows": 2,
+     "totals": 1
+    }
+   ],
+   "fields": {
+    "capital_fl_total": 19,
+    "capital_kr_total": 19,
+    "classe_total": 19,
+    "ertrag_fl_total": 19,
+    "ertrag_kr_total": 19,
+    "haus_no_pair12": 4,
+    "haus_no_pair1b": 2,
+    "haus_no_pair2b": 2,
+    "haus_no_three": 2,
+    "haus_no_total": 19,
+    "jaethe_pair1b": 6,
+    "jaethe_total": 19,
+    "klafter_pair1b": 3,
+    "klafter_total": 19,
+    "kultur_first_total": 19,
+    "kultur_total": 19,
+    "name_raw_pair12": 1,
+    "name_raw_total": 19,
+    "no_blatt_pair12": 1,
+    "no_blatt_total": 19,
+    "stand_total": 19,
+    "surname_pair12": 3,
+    "surname_pair1b": 1,
+    "surname_pair2b": 3,
+    "surname_three": 1,
+    "surname_total": 19,
+    "wohnort_pair12": 1,
+    "wohnort_total": 19
+   },
+   "tiebreak": {
+    "band_p1": 9,
+    "band_p2": 2,
+    "band_third": 76,
+    "band_empty": 23
+   }
+  },
+  {
+   "page": 121,
+   "rows1": 20,
+   "rows2": 20,
+   "rows_band": 25,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [],
+   "per_band": [
+    {
+     "cell": "p121-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p121-band1",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p121-band2",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p121-band3",
+     "rows": 3,
+     "totals": 0
+    }
+   ],
+   "fields": {
+    "capital_fl_total": 20,
+    "capital_kr_total": 20,
+    "classe_total": 20,
+    "ertrag_fl_pair12": 1,
+    "ertrag_fl_total": 20,
+    "ertrag_kr_pair12": 1,
+    "ertrag_kr_total": 20,
+    "haus_no_pair12": 16,
+    "haus_no_pair1b": 2,
+    "haus_no_pair2b": 3,
+    "haus_no_three": 2,
+    "haus_no_total": 20,
+    "jaethe_pair12": 8,
+    "jaethe_pair1b": 1,
+    "jaethe_pair2b": 2,
+    "jaethe_total": 20,
+    "klafter_total": 20,
+    "kultur_first_total": 20,
+    "kultur_total": 20,
+    "name_raw_pair12": 3,
+    "name_raw_pair1b": 1,
+    "name_raw_pair2b": 1,
+    "name_raw_three": 1,
+    "name_raw_total": 20,
+    "no_blatt_pair12": 14,
+    "no_blatt_pair1b": 4,
+    "no_blatt_pair2b": 2,
+    "no_blatt_three": 2,
+    "no_blatt_total": 20,
+    "stand_pair12": 1,
+    "stand_total": 20,
+    "surname_pair12": 2,
+    "surname_pair1b": 2,
+    "surname_total": 20,
+    "wohnort_total": 20
+   },
+   "tiebreak": {
+    "band_p1": 3,
+    "band_p2": 2,
+    "band_third": 86,
+    "band_empty": 16
+   }
+  },
+  {
+   "page": 133,
+   "rows1": 20,
+   "rows2": 20,
+   "rows_band": 23,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [],
+   "per_band": [
+    {
+     "cell": "p133-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p133-band1",
+     "rows": 8,
+     "totals": 1
+    },
+    {
+     "cell": "p133-band2",
+     "rows": 9,
+     "totals": 0
+    },
+    {
+     "cell": "p133-band3",
+     "rows": 2,
+     "totals": 2
+    }
+   ],
+   "fields": {
+    "capital_fl_pair12": 3,
+    "capital_fl_total": 20,
+    "capital_kr_pair12": 2,
+    "capital_kr_total": 20,
+    "classe_pair12": 1,
+    "classe_total": 20,
+    "ertrag_fl_total": 20,
+    "ertrag_kr_total": 20,
+    "haus_no_pair12": 20,
+    "haus_no_pair1b": 4,
+    "haus_no_pair2b": 4,
+    "haus_no_three": 4,
+    "haus_no_total": 20,
+    "jaethe_pair12": 17,
+    "jaethe_total": 20,
+    "klafter_total": 20,
+    "kultur_first_pair12": 20,
+    "kultur_first_total": 20,
+    "kultur_pair12": 20,
+    "kultur_total": 20,
+    "name_raw_pair12": 20,
+    "name_raw_total": 20,
+    "no_blatt_total": 20,
+    "stand_total": 20,
+    "surname_pair12": 20,
+    "surname_total": 20,
+    "wohnort_pair2b": 1,
+    "wohnort_total": 20
+   },
+   "tiebreak": {
+    "band_p1": 0,
+    "band_p2": 0,
+    "band_third": 3,
+    "band_empty": 20
+   }
+  },
+  {
+   "page": 143,
+   "rows1": 3,
+   "rows2": 3,
+   "rows_band": 7,
+   "rowcount_p1_eq_band": false,
+   "rowcount_p2_eq_band": false,
+   "band_skipped_cuts": [],
+   "per_band": [
+    {
+     "cell": "p143-band0",
+     "rows": 4,
+     "totals": 0
+    },
+    {
+     "cell": "p143-band1",
+     "rows": 1,
+     "totals": 0
+    },
+    {
+     "cell": "p143-band2",
+     "rows": 0,
+     "totals": 0
+    },
+    {
+     "cell": "p143-band3",
+     "rows": 2,
+     "totals": 0
+    }
+   ],
+   "fields": {
+    "capital_fl_total": 3,
+    "capital_kr_total": 3,
+    "classe_total": 3,
+    "ertrag_fl_total": 3,
+    "ertrag_kr_total": 3,
+    "haus_no_total": 3,
+    "jaethe_total": 3,
+    "klafter_total": 3,
+    "kultur_first_total": 3,
+    "kultur_total": 3,
+    "name_raw_pair12": 2,
+    "name_raw_total": 3,
+    "no_blatt_total": 3,
+    "stand_pair12": 3,
+    "stand_total": 3,
+    "surname_pair12": 2,
+    "surname_total": 3,
+    "wohnort_total": 3
+   },
+   "tiebreak": {
+    "band_p1": 0,
+    "band_p2": 0,
+    "band_third": 0,
+    "band_empty": 14
+   }
+  }
+ ],
+ "verdict_rows": [
+  {
+   "page": 58,
+   "row": 0,
+   "no_blatt_band": "11",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 1,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "kultur_first": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "kultur_first": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 3,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_p2",
+    "kultur_first": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 4,
+   "no_blatt_band": "1",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 5,
+   "no_blatt_band": "1",
+   "fields": {
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 6,
+   "no_blatt_band": "1",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 7,
+   "no_blatt_band": "1",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 8,
+   "no_blatt_band": "1",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 9,
+   "no_blatt_band": "1",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 10,
+   "no_blatt_band": "1",
+   "fields": {
+    "name_raw": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 11,
+   "no_blatt_band": "1",
+   "fields": {
+    "name_raw": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 12,
+   "no_blatt_band": "1",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 13,
+   "no_blatt_band": "146",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 14,
+   "no_blatt_band": "147",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 15,
+   "no_blatt_band": "147",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 16,
+   "no_blatt_band": "148",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 17,
+   "no_blatt_band": "149",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 58,
+   "row": 18,
+   "no_blatt_band": "150",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 0,
+   "no_blatt_band": "11",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 1,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 3,
+   "no_blatt_band": "1144",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 4,
+   "no_blatt_band": "1145",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third"
+   }
+  },
+  {
+   "page": 59,
+   "row": 5,
+   "no_blatt_band": "1146",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 6,
+   "no_blatt_band": "1147",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 7,
+   "no_blatt_band": "1148",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 8,
+   "no_blatt_band": "1149",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 9,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_p2",
+    "surname": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 10,
+   "no_blatt_band": "1150",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 11,
+   "no_blatt_band": "1151",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_p1",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 12,
+   "no_blatt_band": "1152",
+   "fields": {
+    "name_raw": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 13,
+   "no_blatt_band": "1103",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "kultur_first": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 14,
+   "no_blatt_band": "1107",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 15,
+   "no_blatt_band": "1124",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 16,
+   "no_blatt_band": "1125",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 17,
+   "no_blatt_band": "1146",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 18,
+   "no_blatt_band": "1157",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 59,
+   "row": 19,
+   "no_blatt_band": "1173",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third"
+   }
+  },
+  {
+   "page": 59,
+   "row": 20,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 0,
+   "no_blatt_band": "11",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 84,
+   "row": 1,
+   "no_blatt_band": "",
+   "fields": {
+    "surname": "band_third",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 84,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 84,
+   "row": 3,
+   "no_blatt_band": "",
+   "fields": {
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 84,
+   "row": 4,
+   "no_blatt_band": "164",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 5,
+   "no_blatt_band": "165",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 6,
+   "no_blatt_band": "166",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 7,
+   "no_blatt_band": "167",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 8,
+   "no_blatt_band": "168",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 84,
+   "row": 9,
+   "no_blatt_band": "169",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 10,
+   "no_blatt_band": "170",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 11,
+   "no_blatt_band": "171",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 12,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 13,
+   "no_blatt_band": "1",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 14,
+   "no_blatt_band": "2",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 15,
+   "no_blatt_band": "3",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p1",
+    "kultur_first": "band_p1",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 16,
+   "no_blatt_band": "4",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p1",
+    "kultur_first": "band_p1",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 17,
+   "no_blatt_band": "5",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 18,
+   "no_blatt_band": "6",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 19,
+   "no_blatt_band": "7",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 84,
+   "row": 20,
+   "no_blatt_band": "8",
+   "fields": {
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 0,
+   "no_blatt_band": "111",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p1",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 1,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p1",
+    "jaethe": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 3,
+   "no_blatt_band": "",
+   "fields": {
+    "kultur": "band_third",
+    "jaethe": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 5,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 8,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 9,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 11,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_p2",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 98,
+   "row": 12,
+   "no_blatt_band": "901",
+   "fields": {
+    "kultur": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 13,
+   "no_blatt_band": "902",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 14,
+   "no_blatt_band": "903",
+   "fields": {
+    "kultur": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "no_blatt_band": "904",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "no_blatt_band": "905",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "no_blatt_band": "906",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "no_blatt_band": "907",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "no_blatt_band": "908",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_p2",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "no_blatt_band": "11",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p1",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 3,
+   "no_blatt_band": "",
+   "fields": {
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "no_blatt_band": "204",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_p1",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 5,
+   "no_blatt_band": "205",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_p2",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_p1",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "no_blatt_band": "206",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_p1"
+   }
+  },
+  {
+   "page": 109,
+   "row": 7,
+   "no_blatt_band": "207",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_p1"
+   }
+  },
+  {
+   "page": 109,
+   "row": 8,
+   "no_blatt_band": "208",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 9,
+   "no_blatt_band": "209",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "no_blatt_band": "210",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 11,
+   "no_blatt_band": "211",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "no_blatt_band": "2132",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_p1"
+   }
+  },
+  {
+   "page": 109,
+   "row": 13,
+   "no_blatt_band": "2133",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_p2",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "no_blatt_band": "2134",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 15,
+   "no_blatt_band": "2135",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p1",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 16,
+   "no_blatt_band": "2136",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p1",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 17,
+   "no_blatt_band": "2137",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 109,
+   "row": 18,
+   "no_blatt_band": "2138",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p1",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 121,
+   "row": 0,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 1,
+   "no_blatt_band": "",
+   "fields": {
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p2",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 3,
+   "no_blatt_band": "",
+   "fields": {
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 4,
+   "no_blatt_band": "17",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_p1",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 5,
+   "no_blatt_band": "56",
+   "fields": {
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 6,
+   "no_blatt_band": "56",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 7,
+   "no_blatt_band": "49",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 8,
+   "no_blatt_band": "50",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 9,
+   "no_blatt_band": "50",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 10,
+   "no_blatt_band": "50",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 11,
+   "no_blatt_band": "50",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 12,
+   "no_blatt_band": "51",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_p1",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 121,
+   "row": 13,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 121,
+   "row": 14,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_p1",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 121,
+   "row": 15,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 121,
+   "row": 16,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 121,
+   "row": 17,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 121,
+   "row": 18,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_empty",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 121,
+   "row": 19,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_third",
+    "surname": "band_third",
+    "kultur": "band_third",
+    "kultur_first": "band_third",
+    "jaethe": "band_third",
+    "klafter": "band_third"
+   }
+  },
+  {
+   "page": 133,
+   "row": 0,
+   "no_blatt_band": "114",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 1,
+   "no_blatt_band": "5",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 3,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 4,
+   "no_blatt_band": "23",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 5,
+   "no_blatt_band": "24",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 6,
+   "no_blatt_band": "25",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 7,
+   "no_blatt_band": "26",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 8,
+   "no_blatt_band": "27",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 9,
+   "no_blatt_band": "28",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 10,
+   "no_blatt_band": "29",
+   "fields": {
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 11,
+   "no_blatt_band": "30",
+   "fields": {
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 12,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 13,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 14,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 15,
+   "no_blatt_band": "",
+   "fields": {
+    "jaethe": "band_third",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 16,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 17,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 18,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 133,
+   "row": 19,
+   "no_blatt_band": "",
+   "fields": {
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 143,
+   "row": 0,
+   "no_blatt_band": "",
+   "fields": {
+    "name_raw": "band_empty",
+    "surname": "band_empty",
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 143,
+   "row": 1,
+   "no_blatt_band": "",
+   "fields": {
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_empty"
+   }
+  },
+  {
+   "page": 143,
+   "row": 2,
+   "no_blatt_band": "",
+   "fields": {
+    "kultur": "band_empty",
+    "kultur_first": "band_empty",
+    "jaethe": "band_empty",
+    "klafter": "band_empty"
+   }
+  }
+ ]
+}
