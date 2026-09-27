@@ -1,0 +1,407 @@
+{
+ "title": "PS N83 analiza v3 — val 82: transkripcija DOKONČANA (143/143), F-PV-03 kvalitativno potrjena, F-PV-02 razširjena, F15 generalizirana",
+ "val": "82",
+ "date": "2026-09-27",
+ "method": {
+  "transcription": "val 57 prompt VERBATIM (ps-transcribe-v82.mts), enojni VLM prehod @nativno (~1200×1020), resumable",
+  "previous_state": "val 57: p1–55 (1073 vrstic); p56–143 blokirana kvota (val 58/61)",
+  "val_82": "p56–143: 48 novih strani (+40 iz parallelne seje) = 88 strani, 0 trajnih napak, 1 retry (p121)",
+  "reading_honesty": "enojni VLM prehod → vse vrstice p56–143 = PROVISIONAL (reading_pass=v82-native-pass1); §4: per-parcelne trditve ostajajo NIČ; KG v1.8 / story_id / timeline NESPREMENJENI (§22)",
+  "independent_spot_check": "avtorski odtis na p100 (nativni JPG): imena se skladata (Brünig klastер 15+ vrstic); KULTUR stolpec = dvovrstični opisi, VLM SKRAJŠA (npr. 'Ackerland und Wieswachs...' → 'Ackerland'); no_blatt '111' = rimska III (F15); številke @nativno neodločljive — kvantitativna uskladitev čaka re-read"
+ },
+ "inputs": {
+  "ps_rows_total": 2871,
+  "ps_rows_p1_55": 1073,
+  "ps_rows_p56_143": 1798,
+  "pages_read": 143,
+  "pages_read_before": 55,
+  "qa_flags": 19,
+  "errors": 0
+ },
+ "kultur_aggregates": {
+  "p1_55_top": [
+   [
+    "acker",
+    516
+   ],
+   [
+    "wiese",
+    112
+   ],
+   [
+    "wald",
+    83
+   ],
+   [
+    "wiesen",
+    23
+   ],
+   [
+    "hutweide",
+    20
+   ],
+   [
+    "lehngut",
+    17
+   ],
+   [
+    "gartn",
+    17
+   ],
+   [
+    "žitno",
+    16
+   ],
+   [
+    "ried",
+    15
+   ],
+   [
+    "riedl",
+    13
+   ],
+   [
+    "riden",
+    11
+   ],
+   [
+    "grund",
+    10
+   ]
+  ],
+  "p56_143_top": [
+   [
+    "acker",
+    452
+   ],
+   [
+    "?",
+    371
+   ],
+   [
+    "wiese",
+    207
+   ],
+   [
+    "ackerland",
+    77
+   ],
+   [
+    "hutweide",
+    62
+   ],
+   [
+    "lößig",
+    61
+   ],
+   [
+    "wald",
+    49
+   ],
+   [
+    "gartn",
+    46
+   ],
+   [
+    "wey",
+    38
+   ],
+   [
+    "lipiza",
+    21
+   ],
+   [
+    "gärten",
+    18
+   ],
+   [
+    "jäthn",
+    16
+   ]
+  ],
+  "note": "agregati = kvalitativni (enojni prehod, dvovrstični kultur opisi skrajšani — deleži NE primerljivi s PV brez re-reada)"
+ },
+ "findings": {
+  "F-PV-02": {
+   "status": "OPEN (razširjena evidencia)",
+   "wald_rows_p1_55": 88,
+   "wald_rows_p56_143": 54,
+   "wald_rows_total": 142,
+   "wald_pages_p56_143": [
+    56,
+    68,
+    72,
+    77,
+    78,
+    81,
+    82,
+    88,
+    90,
+    92,
+    98,
+    101,
+    111,
+    112,
+    130,
+    142
+   ],
+   "statement": "PV Wälder = 0; PS (sedaj 143/143) vsebuje Wald rabo na številnih parcelah v obeh delih protokola. Napetost dokument-vs-dokument OSTAJA — kvantitativna razlaga (Weidewald/Ödungen kontekst) čaka re-read; nič tiho razrešeno."
+  },
+  "F-PV-03": {
+   "status": "KVALITATIVNO-POTRJENO-V82",
+   "reb_rows_old": 5,
+   "reb_rows_new": 14,
+   "reb_rows": [
+    {
+     "page": 98,
+     "haus_no": "26",
+     "owner": "Bening Michel",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "",
+     "klafter": "",
+     "anmerkung": ""
+    },
+    {
+     "page": 98,
+     "haus_no": "24",
+     "owner": "Bening Weyand",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "",
+     "klafter": "1278",
+     "anmerkung": ""
+    },
+    {
+     "page": 98,
+     "haus_no": "25",
+     "owner": "Bening Michel",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "1",
+     "klafter": "171",
+     "anmerkung": ""
+    },
+    {
+     "page": 98,
+     "haus_no": "24",
+     "owner": "Bening Michael",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "",
+     "klafter": "1287",
+     "anmerkung": ""
+    },
+    {
+     "page": 98,
+     "haus_no": "27",
+     "owner": "Bening Michel",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "",
+     "klafter": "1209",
+     "anmerkung": ""
+    },
+    {
+     "page": 98,
+     "haus_no": "29",
+     "owner": "Bening Michel",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "",
+     "klafter": "594",
+     "anmerkung": ""
+    },
+    {
+     "page": 98,
+     "haus_no": "92",
+     "owner": "Sinz Marfa",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "",
+     "klafter": "1163",
+     "anmerkung": ""
+    },
+    {
+     "page": 98,
+     "haus_no": "33",
+     "owner": "Happachl Marfe",
+     "kultur": "Acker, Wiese, Reb, Hofraithen",
+     "jaethe": "",
+     "klafter": "868",
+     "anmerkung": ""
+    },
+    {
+     "page": 101,
+     "haus_no": "26",
+     "owner": "Lorenz Wölfl",
+     "kultur": "Reben",
+     "jaethe": "",
+     "klafter": "1379",
+     "anmerkung": ""
+    },
+    {
+     "page": 101,
+     "haus_no": "28",
+     "owner": "Lorenz Grugl",
+     "kultur": "Reben",
+     "jaethe": "",
+     "klafter": "265",
+     "anmerkung": ""
+    },
+    {
+     "page": 111,
+     "haus_no": "5",
+     "owner": "Jure Schusterisch",
+     "kultur": "Reb",
+     "jaethe": "",
+     "klafter": "892",
+     "anmerkung": ""
+    },
+    {
+     "page": 121,
+     "haus_no": "10",
+     "owner": "Leistutok Mathes",
+     "kultur": "Reben Laumen",
+     "jaethe": "1725",
+     "klafter": "",
+     "anmerkung": "alte [rot]"
+    },
+    {
+     "page": 124,
+     "haus_no": "63",
+     "owner": "Pech w[?] Jhane",
+     "kultur": "Reb",
+     "jaethe": "",
+     "klafter": "1617",
+     "anmerkung": ""
+    },
+    {
+     "page": 124,
+     "haus_no": "3",
+     "owner": "Zambosch Jhelen",
+     "kultur": "Reb",
+     "jaethe": "1",
+     "klafter": "551",
+     "anmerkung": ""
+    }
+   ],
+   "statement": "FALZIFIKABILNA NAPOVED val 74 POTRJENA: vinogradne parcele obstajajo v PS p56–143 (Reb/Reben: p98 ×8 v sestavljenih kulturnih blokih 'Acker, Wiese, Reb, Hofraithen', p101 ×2 'Reben', p111, p121 'Reben Laumen' [rot: 'alte'], p124 ×2). KVANTITATIVNA uskladitev s PV (7 J 665 K) NI izvedljiva iz enojnega prehoda (jaethe/klafter razporeditve nezanesljive, npr. p121 J='1725' brez K) → čaka neodvisen re-read; per-parcelne trditve ostajajo NIČ (§4)."
+  },
+  "F15": {
+   "status": "GENERALIZIRANA (vzorec potrjen na novih straneh)",
+   "f15_pages_new": [
+    96,
+    100
+   ],
+   "no_blatt_gt1000_rows": 379,
+   "statement": "'Nro. des Blattes' semantika ostaja nezanesljiva čez celoten PS: rimske številke → števke (III → 111 na p96/p100), Uebersetzung zaporedja (971–999, 2007+) → no_blatt. Vse vrednosti hranjene KOT PREBRANE (REVIEW); nič popravljenih tiho."
+  },
+  "F11": {
+   "status": "VERIGA PODALJŠANA (surova, neverificirana)",
+   "totals_p56_143_count": 123,
+   "totals_sample": [
+    {
+     "page": 56,
+     "label": "Summa Jaethe",
+     "value": "8"
+    },
+    {
+     "page": 56,
+     "label": "Summa Quad. Kläfter",
+     "value": "11059"
+    },
+    {
+     "page": 57,
+     "label": "55 Feldzähle",
+     "value": "5'1808"
+    },
+    {
+     "page": 57,
+     "label": "",
+     "value": "1'994"
+    },
+    {
+     "page": 58,
+     "label": "Stückzahl",
+     "value": "56"
+    },
+    {
+     "page": 58,
+     "label": "",
+     "value": "6 / 1000"
+    },
+    {
+     "page": 58,
+     "label": "",
+     "value": "1 / 300"
+    },
+    {
+     "page": 59,
+     "label": "Summa Jaethe",
+     "value": "9 1188"
+    },
+    {
+     "page": 59,
+     "label": "Summa Quad. Kläfter",
+     "value": "2 702"
+    },
+    {
+     "page": 60,
+     "label": "Summe",
+     "value": "2 / 1402"
+    },
+    {
+     "page": 60,
+     "label": "Summe",
+     "value": "1 / 1434"
+    },
+    {
+     "page": 61,
+     "label": "Summe",
+     "value": "6 / 1935"
+    },
+    {
+     "page": 62,
+     "label": "60 Rurung",
+     "value": "4 1200"
+    },
+    {
+     "page": 62,
+     "label": "",
+     "value": "5 174"
+    },
+    {
+     "page": 63,
+     "label": "Summa Jaethen",
+     "value": "6226"
+    },
+    {
+     "page": 65,
+     "label": "Fürtrag",
+     "value": "9 359"
+    },
+    {
+     "page": 66,
+     "label": "Summa Jaethe",
+     "value": "2"
+    },
+    {
+     "page": 66,
+     "label": "Summa Quadr. Kläfter",
+     "value": "1719"
+    },
+    {
+     "page": 67,
+     "label": "Summa Jaethe",
+     "value": "6 10316"
+    },
+    {
+     "page": 67,
+     "label": "Summa (red)",
+     "value": "6 10316"
+    }
+   ],
+   "statement": "Summa/Fürtrag vsote iz p56–143 izluščene kot surov material (npr. p100 '28 curig 16|49' + rdeča '13|673'); monotona veriga NISO preverjene (enojni prehod) — aritmetična kontrola proti 13-točkovni verigi val 61 čaka re-read."
+  }
+ },
+ "next_reads": [
+  "PS p56–143 neodvisen re-read (2. prehod) — prioriteta za kvantitativne agregate (Reb vsote, Wald, Fürtrag veriga)",
+  "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B)",
+  "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)",
+  "izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04)"
+ ]
+}
