@@ -3914,3 +3914,24 @@ Stage Summary:
 - ATLAS 1825: PS p56–143 NEODVISNO PREBRANO 2× — celostranski re-read POTRDI strukturo (1798≈1797) in numerično hrbtenico (classe/ertrag/capital ≥ 92 %, Wald 54=54), NE pa imen (19,6 %), kultur kategorij (47,3 %) in absolutnih površin (stolpčna dodelitev variira) — per-parcelne trditve ostajajo PROVISIONAL (§4); F-PV-04 + NR-14 dokumentirata metodični mej; rešitvena pot = pasovni/zoom re-read s kolonskimi sidri
 - findings 18 (F-PZ-01..17 + F-PV-02/03/04 + F11/F15 + NR-14); KG v1.8 nespremenjen (20ec8a0a); viri 10/13 VERIFIED; 534 testov; runtime src/data nespremenjen
 - Naslednje: 1) PS p56–143 pasovni/zoom re-read s kolonskimi sidri (imena, kultur, jaethe/klafter, Fürtrag — NR-14); 2) PZ p48–65 2. prehod; 3) KG v1.9 rebuild (SRC-PS vozlišče + kaskada story_id); 4) PT p7 @300dpi; 5) PR Grenz-Beschreibung (F-PZ-05); izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+---
+Task ID: 45
+Agent: Z.ai Code (main orchestrator)
+Task: Val 84 — ISSUE #43 §1/§12 + §22: KG v1.9 rebuild — SRC-PS vozlišče po val 82/83 + kaskada story_id (user: "odlicno imas issue preberi in implementiraj po logiki")
+
+Work Log:
+- Kontinuiteta: val 83 mergan (PR #74); po worklogu 'Naslednje' = izbrana točka 3 (KG v1.9) — edina deterministična (VLM kvota neobremenjena); audit: prebrana issues #42/#43/#72 v celoti + komentarji (val 63/64 poročili) + zadnja poročila (89-val76, 96-val83) → ugotovljeno, da je #43 podatkovno-API sloj že izveden (val 63/64/71), ostaja natanko worklogova točka 3
+- KG builder: SRC-PS coverage 'PARTIAL 55/143 (val 57/61)' → TRANSCRIBED 143/143 (2.871 vrstic; p56–143 re-read 2× val 83; PROVISIONAL F-PV-04/NR-14); val 84 + title v1.9 + issue pole + NOV KG-F10 (RESOLVED-V84, s provenanco na source-coverage val 83 + analysis-v4 + comparison.json)
+- Latentni I3 kršitvi odkriti ob prvem ponovnem zagonu build-coverage-report.py (od val 81 ne-zaganjan): (1) NR-14 brez 'status' → dolgi result s procenti postane ključ native mape → I3 padel; fix: NR-14 + status PARTIAL (result neokrnjen, varovalka); (2) SRC-PS opomba v quality_gate s % → preformulirana po val-81 vzorcu (natančne vrednosti v transcription/source-coverage sekciji; kategorialna opomba z izrecno razliko 'merjeno soglasje, ne umetni procent popolnosti')
+- DVE izhodni resnici odpravljeni: build-coverage-report.py je imel trd val-81 SRC-PS note/transcription.PS/next_reads — re-run bi POVOZIL val-83 source-coverage; val-83 stanje vzorčno prenešeno v builder (note dobesedno, QKlft vrednosti prebrane iz comparison.json — p1 pure 6.304 / p2 pure 216 / PV 11.865), next_reads brez izvedenega KG v1.9 vnosa
+- KASKADA §22: KG → story-graph (kg_val 84, sha 526482d2, entitete/relacije/atomov identno) → timeline (sha osvežen; 2 zastareli F-PZ-09 opombi osveženi — PS pokritost zdaj 143/143; točke/metrike/vrata I1/I2/I6 NIČ spremenjene) → coverage report (val 84, negative_results 13→14 VERIFIED, ostale 17 kategorij identno) → source-coverage (val 84, naslov/derived_from KG v1.9)
+- DIFF VERIFIKACIJA proti snapshotu: KG samo title/val/issue/findings/SRC-PS coverage + story_atomi generated_at; števci/ID-ji R-00001..R-03569, C-00001..C-00622, SA-001..004 zadržani; h.40 konflikt (PUA Sautter / PS Muster) viden; runtime kopije bitno == arhivskim
+- Testi: NOVO tests/val84-kg-v19-srcps.test.ts (10/63: vozlišče dejstva, stara oznaka izginjena, števci/ID stabilnost, §11 atomi, kaskada sha == sha256 KG arhiv+runtime, NR-14 PARTIAL, source-coverage val 84) + osveženih 9 pin datotek (KG v1.8/val 77 → v1.9/val 84, nov sha 526482d2, negativi 13→14, artefakt val-i [72,74,81,83,84])
+- QA: 547 pass / 11 skip / 0 fail (558 testov) · tsc čist · lint čist · verify-i18n 1074×5 zeleno (UI nič — čista podatkovna plast)
+- Dokumentacija: research-griblje/97-val84-kg-v19-rebuild.md; KAZALO vnos 97; README 137. sklop; worklog (ta vnos)
+
+Stage Summary:
+- ATLAS 1825: KG v1.9 (val 84, 526482d2) — SRC-PS vozlišče nosi dejansko stanje po val 82/83 (143/143 prepisano, per-parcelno PROVISIONAL do pasovnega re-reada); findings 19 (KG-F01..10 + F-PZ/PV + NR-14); §22 kaskada zaključena brez premika enega ID-ja; dve izhodni resnici združeni (coverage builder zdaj regenerabilen brez regresije)
+- Stanje: main = val 84; viri 10/13 VERIFIED; 547 testov; runtime src/data regeneriran
+- Naslednje: 1) PS p56–143 pasovni/zoom re-read s kolonskimi sidri (NR-14/F-PV-04 — imena, kultur, jaethe/klafter, Fürtrag); 2) PZ p48–65 2. prehod; 3) PT p7 @300dpi (KG-F01/F04); 4) PR Grenz-Beschreibung (F-PZ-05); izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04), šolski list / SA Podzemelj / SI AS 749 / Zucchelli

@@ -440,7 +440,7 @@ categories.append(cat(
 src_nodes = [n for n in kg["nodes"] if n["node_id"].startswith("SRC-")]
 src_status_map = {
     "SRC-PUA": "VERIFIED",   # 49/49 strani, 98 vnosov, 2 prehoda
-    "SRC-PS": "VERIFIED",    # 143/143 strani, 1073 vrstice (p56–143 re-read val 61)
+    "SRC-PS": "VERIFIED",    # 143/143 strani, 2.871 vrstic (p1–55 val 57/61 + p56–143 val 82; re-read 2× val 83 — NR-14)
     "SRC-PT": "VERIFIED",    # 8/8 strani + p8 Musterstellung, 2 prehoda
     "SRC-A01": "VERIFIED",   # inventariziran (val 65)
     "SRC-A02": "VERIFIED",   # inventariziran (val 66)
@@ -458,7 +458,7 @@ src_six = {"VERIFIED": 0, "PARTIAL": 0, "CONFLICT": 0, "UNKNOWN": 0, "NOT_FOUND"
 src_notes = {
     "SRC-PV": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4) — agregat po kulturah",
     "SRC-PZ": "TRANSCRIBED_PARTIAL (val 81 PASS 7): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z aritmetičnimi vrati I4–I6 (deleži 1830 izpeljani) + Rektifikacijski odsek p35–42 odločilno prebran — opisno, brez per-parcelnih korekcij (F-PZ-16) + val 80 nativna re-digitation 7 variančnih celic — 6/7 REŠENIH, sistemski pomlaj ('– J' = 0 Joch), inter-bralčeva varianca PR#69↔val 79 razrešena; VAČ topološka izčrpnost: maksimum = PDF-native ~150 dpi (F-PZ-17) + val 81 band-transkripcija p43–47 (F-PZ-12 RESOLVED): 40 pasov + 14 zoomov + 54 VLM klicev + direkten odtis — struktura 43–47 korigirana (Wirthschafts Kurse + Düngung + Natural Ertrag pro Joch; NE per-parcelne tabele), številke s soglasjem ≥ 2, proza delno REVIEW",
-    "SRC-PS": "vrstični prepis p3–55 (1073 vrstic); p56–143 strukturni re-read brez vrstic (F-PZ-09, val 75)",
+    "SRC-PS": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL → pasovni/zoom re-read (F-PV-04, NR-14); kolizije = variant fields (reread-v83/comparison.json), nič tiho popravljeno",
     "SRC-PR": "identiteta (uodid) potrjena; Grenz-Beschreibung NE prebrana",
     "SRC-PG": "identiteta (uodid) potrjena; vsebina NE prebrana",
     "SRC-KO": "identiteta (k.o. konskripcija); brez prepisa",
@@ -654,23 +654,28 @@ cadastral = {
 
 # 3c) source-coverage-1825 — pokritost virov (issue #42 §6/§14)
 source_coverage = {
-    "val": 81,
+    "val": 84,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.5 + registrov)",
-    "derived_from": ["knowledge-graph-1825.json SOURCE nodes", "pua/ps/pt registri", "a01/pass4b inventarja"],
+    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.9 + registrov)",
+    "derived_from": ["knowledge-graph-1825.json (v1.9) SOURCE nodes", "pua/ps/pt registri", "a01/pass4b inventarja"],
     "deterministic": True,
     "sources": src_list,
     "transcription": {
         "PUA": {"pages": 49, "rows": len(pua), "passes": 2},
-        "PS": {"pages": 143, "rows": len(ps_rows), "passes": 2, "note": "vrstični prepis pokriva SAMO p3–55 (1073 vrstic); p56–143 = strukturni re-read (val 61), vrstice NE (F-PZ-09, val 75); per-parcelna raba čaka (F-SE-01/F-PV-03)"},
+        "PS": {"pages": 143, "rows": 2871, "passes": 2, "note": ("p1–55: val 57 pass1 + val 61 crop re-read; p56–143: val 82 pass1 (PROVISIONAL) + "
+             "val 83 celostranski neodvisen re-read — struktura in numerična hrbtenica (classe/ertrag/"
+             "capital ≥ 92 %, Wald raba 54=54) potrjeni; imena 19,6 % / kultur 47,3 % / no_blatt 49 % "
+             "pod pragom → celice s soglasjem ≥ 2 potrjene, ostalo PROVISIONAL; Reb kvantitativa "
+             "neizvedljiva celostransko (pass2 skrajša omembe 14→6; sane vsote p1 pure 6.304 "
+             "vs p2 pure 216 QKlft vs PV 11.865 QKlft)"),},
         "PT": {"pages": 8, "rows": len(pt_rows), "passes": 2, "note": "+ p8 Musterstellung"},
         "PV": {"pages": 1, "rows": 19, "passes": 2, "note": "val 74: uradne agregatne površine po kulturah (1221 J 1573 K = 7,032 km²), aritmetična vrata I1–I4; NI raba po parcelah (§4)"},
         "PZ": {"pages": 71, "rows": 0, "passes": 7, "note": "val 75+77+78+79+80+81: TRANSCRIBED_PARTIAL — struktura 71/71 + ključna branja (prebivalstvo 1830: 441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin; živina 124/20/30/150/30; površina §1 rdeči popravek 1220 J 1493 K, PV Δ 0,086 %) + val 77 odločilni re-read p67+§8 z vrati I4–I6 (Summa 1152 J 495 K; Δ 3 J — F-PZ-04 ožjan, ostaja OPEN; deleži 1830 F-PZ-13) + val 78 §8 rdeči stolpec 'Zusammen' strukturiran (post-revizijske površine, REVIEW — F-PZ-15) + rešitvene poti p26/p27/p30/p32/p63/p65 ovržene (F-PZ-14) + val 79 Rektifikacijski odsek p35–42 odločilno prebran: OPISNO-KVALITATIVEN, per-parcelne korekcije NE obstajajo (F-PZ-16 RESOLVED; 7 Muster-parcel) + val 80 nativna re-digitation: 6/7 Muster celic REŠENIH (30=1082, 594=591, 1004=1010, 738=–J895, 2451=–J1515, 2491=–J260; 1288 REVIEW), sistemski pomlaj '– J' = 0 Joch, inter-bralčeva varianca PR#69↔val 79 razrešena + F-PZ-17 VAČ maksimum = PDF-native @~150 dpi + val 81 band-transkripcija p43–47 (F-PZ-12 RESOLVED: Wirthschafts Kurse + Düngung 3 Fuder 90/120 + Natural Ertrag pro Joch per klasa — klasni koeficienti, NE per-parcelno; struktura 43–47 korigirana vs val 75)"},
     },
     "six_status": src_six,
     "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
-    "next_reads": ["PS p56–143 vrstični prepis ob kvoti (raba po parcelah; F-PV-03 vinogradi ostaja OPEN)", "PT p7 @300dpi (KG-F01/F04)", "PR Grenz-Beschreibung (mejne točke; tudi F-PZ-05 meje)", "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)", "izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (per-parcelna vezava 1825→1830 = zadnja rešitvena pot F-PZ-04 Δ 3 J po val 80 F-PZ-17)", "izven peskovnika: šolski list / SA Podzemelj / SI AS 749 / Zucchelli"],
+    "next_reads": ["PS p56–143 pasovni/zoom re-read s kolonskimi sidri (vzorec val 80/81) — imena, kultur kategorije, jaethe/klafter, Fürtrag veriga (F-PV-04/NR-14)", "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)", "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)", "izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (per-parcelna vezava 1825→1830 = zadnja rešitvena pot F-PZ-04 Δ 3 J po val 80 F-PZ-17)", "izven peskovnika: šolski list / SA Podzemelj / SI AS 749 / Zucchelli"],
 }
 
 # 3d) atlas-map-data-model-1825 — podatkovni model zemljevida (issue #42 §15)
@@ -732,7 +737,7 @@ story_engine = {
 # 4. MASTER COVERAGE REPORT
 # ---------------------------------------------------------------------------
 quality_gate = {
-    "val": 81,
+    "val": 84,
     "pass": "PASS 8",
     "issue": 42,
     "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",

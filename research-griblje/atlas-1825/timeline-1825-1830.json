@@ -34,7 +34,7 @@
       "research-griblje/atlas-1825/pv-land-use-1825.json",
       "research-griblje/atlas-1825/knowledge-graph-1825.json"
     ],
-    "kg_sha256": "20ec8a0a988aa9e8945ad594dc29a65c9414c5a577248748766d06ae11450c50",
+    "kg_sha256": "526482d22a003ca321508f56408e4d4743482befb5d0d478f6019c02059115af",
     "runtime_copy": "src/data/timeline-1825-1830.json",
     "vac": {
       "SRC-PV": "https://vac.sjas.gov.si/vac/search/details?id=373418",
@@ -160,9 +160,9 @@
           "unit": "count",
           "display": "432 parcel",
           "source_id": "SRC-PS",
-          "evidence": "ps-n83/register.json (p3–55)",
+          "evidence": "parcel-register-1825.json (origin=PS, hišno vezane)",
           "reading_status": "TRANSCRIBED",
-          "note": "prepis pokriva SAMO p3–55 od 143 strani (F-PZ-09); 412 unikatnih parcel, 20 so-referenciranih vrstic."
+          "note": "PS vrstični prepis 143/143 (val 82: 2.871 vrstic; re-read 2× val 83) — kuriranih 432 parcel z hišno vezavo; per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14)."
         },
         {
           "metric_id": "parcels_with_land_use",
@@ -189,7 +189,7 @@
           "reason": "Družinska konskripcija za 1825 ni v vpisanih virih."
         }
       ],
-      "note": "PS p3–55 omenja 167 hišnih entitet (delna pokritost p56–143 brez vrstic, F-PZ-09) — NI primerljivo s konskripcijo 70 hiš (1830) brez re-reada; zato tu ni metrike 'hiše'."
+      "note": "PS N83 omenja 167 hišnih entitet (lastniška struktura iz PUA/PT, ne konskripcija hiš; pokritost zdaj 143/143 strani — val 82/83) — NI primerljivo s konskripcijo 70 hiš (1830); zato tu ni metrike 'hiše'."
     },
     {
       "year": 1830,
@@ -390,5 +390,5 @@
       "note": null
     }
   ],
-  "generated_at": "2026-09-26T14:06:59Z"
+  "generated_at": "2026-09-27T17:57:31Z"
 }

@@ -469,11 +469,11 @@ describe("val 83 — PS N83 neodvisen re-read p56–143 (2. prehod, analysis-v4)
     expect(psPages.filter((p) => p.page > 55).every((p) => p.reading_pass === "v82-native-pass1")).toBe(true);
   });
 
-  it("source-coverage: val 83 + SRC-PS opomba z re-read rezultatom (§22)", () => {
+  it("source-coverage: val 84 (regeneriran ob KG v1.9) + SRC-PS opomba z re-read rezultatom (§22)", () => {
     const sc = JSON.parse(
       readFileSync(join(RG, "atlas-1825", "source-coverage-1825.json"), "utf8"),
     ) as { val: number; sources: { source_id: string; note: string }[]; transcription: { PS: { rows: number; passes: number } } };
-    expect(sc.val).toBe(83);
+    expect(sc.val).toBe(84);
     expect(sc.transcription.PS.rows).toBe(2871);
     expect(sc.transcription.PS.passes).toBe(2);
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
