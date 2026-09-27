@@ -3861,3 +3861,11 @@ Stage Summary:
 - ATLAS 1825: F-PZ-12 RESOLVED — p43–47 Reinertrag celotno prebran prek band-metode @nativno (40 pasov + 14 zoomov + 54 VLM klicev + neodvisen odtis); struktura korigirana vs val 75: NE per-parcelne tabele ampak Kultur-Beschreibung klasni Natural-Ertrag koeficienti (Wirthschafts Kurse 9-jähriger Wechsel + Düngung 3 Fuder 90/120 + Ertrag per klasa; p45 IIIte cel list X prečrtan; p47 naslov+proza X prečrtana); per-parcelne trditve ostajajo NIČ (§4) — I1–I6/KG v1.8/timeline/deleži NESPREMENJENI (§22); F-PZ-04 ostaja OPEN (zunanji protokol = edina pot)
 - findings 17 (RESOLVED 11 · PARTIAL 1 · REVIEW 3 · OPEN 1 · TO_VERIFY 1); KG v1.8 nespremenjen (20ec8a0a); viri 10/13 VERIFIED; +0 virov/+0 trditve per-parcel
 - Naslednje: 1) PS p56–143 vrstični prepis (F-PV-03 vinogradi; raba po parcelah); 2) PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW); 3) PT p7 @300dpi (KG-F01/F04); 4) PR Grenz-Beschreibung (mejne točke; F-PZ-05); 5) izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (zadnja rešitvena pot F-PZ-04 Δ 3 J), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+### Task 42 zaključek — push+merge val 81 (PR #71) + poročilo #42 + deploy verifikacija
+
+- Push: feat/val81-pz-reinertrag-band @ d62931b (228 datotek; 26 MB dokaznih surovin po vzorcu valov) → PR #71 → CI 3/3 ZELENO (tipi+lint+enotni ✓ · dimni testi API-jev živi strežnik+PostgreSQL ✓ · Vercel Preview Comments ✓)
+- MERGE: PR #71 → main @ ca3cf01 (merge commit, vzorec prejšnjih valov); main sinhroniziran lokalno+remote; branch izbrisan (lokalno + remote 204)
+- Poročilo #42: comment-5853586495 (band-metoda tabela + struktura 43–47 korigirana + kolizije + poštenost branja + §22 disciplina + QA)
+- DEPLOY VERIFIKACIJA: **Vercel produkcija ŽIV z val 81** (/api/atlas/coverage → val: 81, PASS 8) · **Render mirror ŽIV z val 81** (val: 81) — obe platformi sinhronizirani (vzorec)
+- STANJE PLATFORM: GitHub main @ ca3cf01 = val 81 · Vercel = val 81 ŽIV · Render = val 81 ŽIV
