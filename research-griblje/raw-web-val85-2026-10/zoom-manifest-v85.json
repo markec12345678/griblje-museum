@@ -1,0 +1,177 @@
+{
+ "meta": {
+  "zoom": 2.5,
+  "kernel": "lanczos3",
+  "rule_source": "crops-manifest-v85.json rules"
+ },
+ "zooms": [
+  {
+   "cell": "p058-z-name",
+   "page": 58,
+   "strip": "name",
+   "x0": 359,
+   "x1": 591,
+   "fields": "haus_no,name,stand,wohnort",
+   "rule_measured": [
+    true,
+    true
+   ]
+  },
+  {
+   "cell": "p058-z-kultur",
+   "page": 58,
+   "strip": "kultur",
+   "x0": 681,
+   "x1": 967,
+   "fields": "kultur,jaethe,klafter",
+   "rule_measured": [
+    true,
+    true
+   ]
+  },
+  {
+   "cell": "p059-z-name",
+   "page": 59,
+   "strip": "name",
+   "x0": 342,
+   "x1": 569,
+   "fields": "haus_no,name,stand,wohnort",
+   "rule_measured": [
+    true,
+    true
+   ]
+  },
+  {
+   "cell": "p059-z-kultur",
+   "page": 59,
+   "strip": "kultur",
+   "x0": 651,
+   "x1": 936,
+   "fields": "kultur,jaethe,klafter",
+   "rule_measured": [
+    true,
+    false
+   ]
+  },
+  {
+   "cell": "p084-z-name",
+   "page": 84,
+   "strip": "name",
+   "x0": 341,
+   "x1": 597,
+   "fields": "haus_no,name,stand,wohnort",
+   "rule_measured": [
+    false,
+    false
+   ]
+  },
+  {
+   "cell": "p084-z-kultur",
+   "page": 84,
+   "strip": "kultur",
+   "x0": 675,
+   "x1": 944,
+   "fields": "kultur,jaethe,klafter",
+   "rule_measured": [
+    false,
+    false
+   ]
+  },
+  {
+   "cell": "p098-z-name",
+   "page": 98,
+   "strip": "name",
+   "x0": 343,
+   "x1": 600,
+   "fields": "haus_no,name,stand,wohnort",
+   "rule_measured": [
+    false,
+    false
+   ]
+  },
+  {
+   "cell": "p098-z-kultur",
+   "page": 98,
+   "strip": "kultur",
+   "x0": 686,
+   "x1": 979,
+   "fields": "kultur,jaethe,klafter",
+   "rule_measured": [
+    true,
+    true
+   ]
+  },
+  {
+   "cell": "p109-z-name",
+   "page": 109,
+   "strip": "name",
+   "x0": 357,
+   "x1": 606,
+   "fields": "haus_no,name,stand,wohnort",
+   "rule_measured": [
+    true,
+    false
+   ]
+  },
+  {
+   "cell": "p109-z-kultur",
+   "page": 109,
+   "strip": "kultur",
+   "x0": 697,
+   "x1": 958,
+   "fields": "kultur,jaethe,klafter",
+   "rule_measured": [
+    true,
+    true
+   ]
+  },
+  {
+   "cell": "p121-z-name",
+   "page": 121,
+   "strip": "name",
+   "x0": 344,
+   "x1": 603,
+   "fields": "haus_no,name,stand,wohnort",
+   "rule_measured": [
+    false,
+    false
+   ]
+  },
+  {
+   "cell": "p121-z-kultur",
+   "page": 121,
+   "strip": "kultur",
+   "x0": 682,
+   "x1": 974,
+   "fields": "kultur,jaethe,klafter",
+   "rule_measured": [
+    false,
+    true
+   ]
+  },
+  {
+   "cell": "p133-z-name",
+   "page": 133,
+   "strip": "name",
+   "x0": 345,
+   "x1": 581,
+   "fields": "haus_no,name,stand,wohnort",
+   "rule_measured": [
+    true,
+    true
+   ]
+  },
+  {
+   "cell": "p133-z-kultur",
+   "page": 133,
+   "strip": "kultur",
+   "x0": 659,
+   "x1": 956,
+   "fields": "kultur,jaethe,klafter",
+   "rule_measured": [
+    true,
+    false
+   ]
+  }
+ ]
+}

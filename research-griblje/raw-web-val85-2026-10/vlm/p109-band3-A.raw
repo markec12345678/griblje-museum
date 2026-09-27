@@ -1,0 +1,52 @@
+```json
+{
+  "sheet_visible": null,
+  "rows": [
+    {
+      "no_blatt": null,
+      "haus_no": "",
+      "name": "Kupc en Malya",
+      "stand": "",
+      "wohnort": "",
+      "kultur": "Hutweide",
+      "jaethe": "1",
+      "klafter": "1273",
+      "classe": "",
+      "ertrag_fl": "",
+      "ertrag_kr": "",
+      "capital_fl": "",
+      "capital_kr": "",
+      "anmerkung": "",
+      "row_cut": true
+    },
+    {
+      "no_blatt": null,
+      "haus_no": "30",
+      "name": "Kupc en Malya",
+      "stand": "",
+      "wohnort": "",
+      "kultur": "Wiese",
+      "jaethe": "1",
+      "klafter": "1174",
+      "classe": "2",
+      "ertrag_fl": "",
+      "ertrag_kr": "",
+      "capital_fl": "",
+      "capital_kr": "",
+      "anmerkung": "",
+      "row_cut": false
+    }
+  ],
+  "totals": [
+    {
+      "label": "Fürtrag.",
+      "value": "10. 1056"
+    }
+  ],
+  "unclear": [
+    "Row 1: name (Kupc en Malya - handwriting interpretation)",
+    "Row 2: name (Kupc en Malya - handwriting interpretation)"
+  ],
+  "observations": "The image shows a horizontal band cut from a double-page spread with the fold visible in the middle. The top and bottom of the first row are cut off (row_cut: true). The owner names appear to be 'Kupc en Malya' or similar, written in Kurrent script. The 'Fürtrag.' total line is visible at the bottom right."
+}
+```
