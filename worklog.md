@@ -3881,3 +3881,12 @@ Stage Summary:
 - QA: +10 val-82 varovalk v tests/ps-n83-analysis.test.ts (števci, reading_pass, page-records 143, F-PV-03 strani 98/101/111/121/124, F-PV-02 142, F15 379, F11 123, korekcije 38/39/45, skripte) → **519/519 testov** · tsc čist · lint čist · verify-i18n 1074×5 zeleno · api-smoke: **DB-odvisni preverbi blokirani s strani okolja** (globalni DATABASE_URL = file: scaffolda, ni lokalnega Postgresa — /api/health 503; blokada env, ne kode); ročno: atlas coverage/evidence/story/map/georef/timeline = 200, coverage val: 81; polni smoke teče v CI na PR
 - Dokumentacija: research-griblje/95-val82-ps-transkripcija-dokoncanje.md; README 135. sklop; 00-KAZALO vnos 95; worklog (ta vnos)
 - Naslednje: 1) PS p56–143 neodvisen re-read (2. prehod — kvantitativni agregati, takrat šele SRC-PS coverage §22); 2) PZ p48–65 2. prehod; 3) PT p7 @300dpi (KG-F01/F04); 4) PR Grenz-Beschreibung (F-PZ-05); 5) izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
+
+### Task 43 zaključek — push+merge val 82 (PR #73 @ c035043, merge 4f72a29) + poročilo #42 + deploy verifikacija
+
+- Push: feat/val82-ps-transkripcija @ c035043 (102 datoteke: register 2.871 vrstic, analysis-v3, builderja, 89 ps-vlm JSON surovin, testi, dokumentacija) → **PR #73** (številko #72 vzela parallelna seja) → CI **3/3 ZELENO** (tipi+lint+enotni 519/519 ✓ · dimni testi API-jev živi strežnik+PostgreSQL ✓ · Vercel Preview Comments ✓)
+- MERGE: PR #73 → main @ 4f72a29 (merge commit, vzorec prejšnjih valov); main sinhroniziran lokalno+remote; branch izbrisan (lokalno + remote)
+- Poročilo #42: komentar (tabela 143/143 + F-PV-03 dokazi p98/101/111/121/124 + poštenost branja PROVISIONAL + §22 disciplina + QA 519/519 + api-smoke peskovniška blokada (env) s CI potrditvijo)
+- DEPLOY VERIFIKACIJA: **Vercel produkcija ŽIV** (HTTP 200; /api/atlas/coverage → val 81 = POGODBA §22 — val 82 namenoma ni spreminjal runtime podatkovne plasti; SRC-PS coverage posodobitev šele ob re-readu s soglasjem ≥ 2) · **Render mirror ŽIV** (HTTP 200)
+- Stanje platform: GitHub main @ 4f72a29 = val 82 · Vercel ŽIV · Render ŽIV
+- Naslednje: 1) PS p56–143 neodvisen re-read (2. prehod — kvantitativni agregati: Reb vs PV 7 J 665 K, Wald 142, Fürtrag veriga 123 točk; takrat šele SRC-PS coverage §22); 2) PZ p48–65 2. prehod; 3) PT p7 @300dpi (KG-F01/F04); 4) PR Grenz-Beschreibung (F-PZ-05); 5) izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04), šolski list / SA Podzemelj / SI AS 749 / Zucchelli
