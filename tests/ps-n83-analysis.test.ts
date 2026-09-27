@@ -2,6 +2,7 @@
  * Val 61 — PS N83 analiza v2 (re-read 2026-10: verifikirana Fürtrag veriga, imenske variante, no_blatt)
  * Varovalke: 13-točkovna strogo monotona veriga; popravki p12 (Strauß/Schimerz); variant branja ohranjene;
  *            F9-F16 sodbe. Vir: research-griblje/ps-n83/analysis-v2.json (+ reread-2026-10/*)
+ * Val 82 — DOKONČANJE transkripcije p56–143: analysis-v3 varovalke (F-PV-02/03, F15, reading honesty)
  */
 import { describe, it, expect } from "bun:test";
 import { readFileSync, existsSync } from "fs";
@@ -63,7 +64,26 @@ const psRegister = JSON.parse(readFileSync(join(RG, "ps-n83", "register.json"), 
   owner_original: string;
   owner_original_v57?: string;
   name_review?: string;
+  reading_pass?: string;
 }[];
+
+const psPages = JSON.parse(readFileSync(join(RG, "ps-n83", "page-records.json"), "utf8")) as {
+  page: number;
+  status: string;
+  reading_pass?: string;
+}[];
+
+const analysisV3 = JSON.parse(readFileSync(join(RG, "ps-n83", "analysis-v3.json"), "utf8")) as {
+  val: string;
+  inputs: { ps_rows_total: number; ps_rows_p1_55: number; ps_rows_p56_143: number; pages_read: number; pages_read_before: number; errors: number; qa_flags: number };
+  findings: {
+    "F-PV-02": { status: string; wald_rows_p1_55: number; wald_rows_p56_143: number; wald_rows_total: number };
+    "F-PV-03": { status: string; reb_rows_old: number; reb_rows_new: number; reb_rows: { page: number; kultur: string }[] };
+    "F15": { status: string; f15_pages_new: number[]; no_blatt_gt1000_rows: number };
+    "F11": { status: string; totals_p56_143_count: number };
+  };
+  method: { reading_honesty: string };
+};
 
 describe("val 61 — PS N83 analysis v2 (re-read 2026-10)", () => {
   it("obstaja in je val 61", () => {
@@ -214,5 +234,76 @@ describe("val 61 — PS N83 analysis v2 (re-read 2026-10)", () => {
     expect(existsSync(join(RG, "ps-n83", "reread-2026-10", "totals-reread.json"))).toBe(true);
     expect(existsSync(join(RG, "ps-n83", "reread-2026-10", "name-variants-p11-p12.json"))).toBe(true);
     expect(existsSync(join(RG, "71-val58-ps-n83-analysis-v1.md"))).toBe(true);
+  });
+});
+
+describe("val 82 — PS N83 transkripcija DOKONČANA (p56–143, analysis-v3)", () => {
+  it("obstaja in je val 82", () => {
+    expect(analysisV3.val).toBe("82");
+  });
+
+  it("vhod: register 2.871 vrstic (1.073 p1–55 nespremenjeno + 1.798 p56–143), 143/143 strani, 0 napak", () => {
+    expect(analysisV3.inputs.ps_rows_total).toBe(2871);
+    expect(analysisV3.inputs.ps_rows_p1_55).toBe(1073);
+    expect(analysisV3.inputs.ps_rows_p56_143).toBe(1798);
+    expect(analysisV3.inputs.pages_read).toBe(143);
+    expect(analysisV3.inputs.pages_read_before).toBe(55);
+    expect(analysisV3.inputs.errors).toBe(0);
+  });
+
+  it("varovalka: p1–55 vrstice v registru NESPREMENJENE (števec + re-read korekcije 38/39/45)", () => {
+    const old = psRegister.filter((r) => r.page <= 55);
+    expect(old.length).toBe(1073);
+    const patched = psRegister.filter((r) => r.name_review === "reread-2026-10-corrected");
+    expect(patched.map((r) => r.haus_no).sort()).toEqual(["38", "39", "45"]);
+  });
+
+  it("varovalka: nove vrstice p56–143 nosijo reading_pass v82-native-pass1 (PROVISIONAL po §4)", () => {
+    const fresh = psRegister.filter((r) => r.page > 55);
+    expect(fresh.length).toBe(1798);
+    expect(fresh.every((r) => r.reading_pass === "v82-native-pass1")).toBe(true);
+    expect(analysisV3.method.reading_honesty).toContain("PROVISIONAL");
+    expect(analysisV3.method.reading_honesty).toContain("KG v1.8");
+  });
+
+  it("varovalka: page-records 143/143 READ, p56–143 z reading_pass", () => {
+    expect(psPages.length).toBe(143);
+    expect(psPages.filter((p) => p.status === "READ").length).toBe(143);
+    expect(psPages.filter((p) => p.page > 55).every((p) => p.reading_pass === "v82-native-pass1")).toBe(true);
+  });
+
+  it("F-PV-03: falsifikabilna napoved val 74 POTRJENA kvalitativno — Reb na p98/101/111/121/124", () => {
+    const f = analysisV3.findings["F-PV-03"];
+    expect(f.status).toContain("KVALITATIVNO-POTRJENO");
+    expect(f.reb_rows_new).toBe(14);
+    expect(f.reb_rows_old).toBe(5);
+    const pages = [...new Set(f.reb_rows.map((r) => r.page))].sort((a, b) => a - b);
+    expect(pages).toEqual([98, 101, 111, 121, 124]);
+  });
+
+  it("F-PV-02: Wald napetost razširjena (142 vrstic), status ostaja OPEN", () => {
+    const f = analysisV3.findings["F-PV-02"];
+    expect(f.status).toContain("OPEN");
+    expect(f.wald_rows_p1_55).toBe(88);
+    expect(f.wald_rows_p56_143).toBe(54);
+    expect(f.wald_rows_total).toBe(142);
+  });
+
+  it("F15 generalizirana: rimske številke + Uebersetzung zaporedja ostajajo REVIEW (brez tihh popravkov)", () => {
+    const f = analysisV3.findings["F15"];
+    expect(f.f15_pages_new).toEqual([96, 100]);
+    expect(f.no_blatt_gt1000_rows).toBe(379);
+  });
+
+  it("F11: Fürtrag/totals material izluščen (123 vnosov), NISO preverjeni", () => {
+    const f = analysisV3.findings["F11"];
+    expect(f.totals_p56_143_count).toBe(123);
+    expect(f.status).toContain("neverificirana");
+  });
+
+  it("deterministična skripta val 82 obstajajo", () => {
+    expect(existsSync(join(RG, "ps-n83", "build-register-v82.py"))).toBe(true);
+    expect(existsSync(join(RG, "ps-n83", "build-analysis-v3.py"))).toBe(true);
+    expect(existsSync(join(RG, "raw-web-val82-2026-10", "ps-transcribe-v82.mts"))).toBe(true);
   });
 });
