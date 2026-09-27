@@ -37,7 +37,8 @@ NOVA NAJDBA F-PV-05 (sistemski pomik J→K v celostranskem prepisu):
 """
 import json, os, re, collections
 
-REPO = '/home/z/griblje-museum'
+# repo koren = dve ravni nad ps-n83/ (deluje lokalno in na CI — brez trdih poti)
+REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 OUTD = f'{REPO}/research-griblje/ps-n83'
 BD = f'{REPO}/research-griblje/raw-web-val85-2026-10'
 SAMPLE = [58, 59, 84, 98, 109, 121, 133, 143]

@@ -17,7 +17,8 @@ Izhod: research-griblje/ps-n83/band-v85/compare-strips-v85.json (COMMITTED).
 """
 import json, os, re, collections
 
-REPO = '/home/z/griblje-museum'
+# repo koren = dve ravni nad ps-n83/ (deluje lokalno in na CI — brez trdih poti)
+REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 P1 = f'{REPO}/research-griblje/raw-web-val82-2026-10/ps-vlm'
 P2 = f'{REPO}/research-griblje/raw-web-val83-2026-10/ps-vlm'
 BAND_DIR = f'{REPO}/research-griblje/raw-web-val85-2026-10'
