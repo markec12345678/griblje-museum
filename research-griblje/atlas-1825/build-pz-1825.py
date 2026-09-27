@@ -41,10 +41,17 @@ vrati — POPRAVEK val-75 branj na ravni celic (digit-by-digit izrezki 3×,
   objavljeni v tem JSON-u kot strukturni deleži; timeline UI 'pasture_share'
   OSTAJA absent dokler je F-PZ-04 OPEN (pogodba iz val 76 stoji).
 
-  p43–47 (Reinertragstabellen): celostranski VLM poskus vrstičnega prepisa
-  je ZAVRNJEN (nezanesljivo branje gostega Kurrenta — halucinacije); ohranjeno
-  strukturno branje val 75; celotni vrstični prepis čaka višjo ločljivost
-  (VAČ IIIF @300 dpi) — F-PZ-12, pošteno dokumentirano (§4: nič vsiljenega).
+  p43–47 (Reinertragstabellen, PREHOD 7 = val 81): celotni vrstični prepis
+  IZVEDEN prek band-metode @nativno (F-PZ-12 RESOLVED): 40 pasov (5 strani ×
+  8 pasov, shema val 80: h=328, korak=298, 30px preklop) + 14 x3 zoom re-
+  readov dvomljivih regij; 54 VLM klicev + direkten odtis avtorja (40 pasov
+  prebranih NEODVISNO pred VLM). Rezultat: p43–47 NISO per-parcelne tabele
+  (val 75 struktura korigirana!) — to je Kultur-Beschreibung Reinertrag:
+  Wirthschafts-Kurse (9-jähriger Wechsel, 3 skupine × 3 kurse), Düngung
+  (3 Fuder, 90/120) in Natural-Ertrag-per-Joch tabele (Metzen/Centner) per
+  klasa + Wiesen/KG/WG/HW odsek + prečrtan III. classe list + podpisi p47.
+  Številčne vrednosti vgrajene samo s soglasjem ≥ 2 neodvisna branja; proza
+  ostaja delno REVIEW (Kurrent halucinacije ostajajo — številke ne).
 
 Metoda (issue #42 §1: SOURCES → DOKAZI → PODATKI; nič ugibanja):
   PREHOD 1 (struktura, val 75): 8 kontaktnih plošč → zemljevid 71 strani.
@@ -52,6 +59,10 @@ Metoda (issue #42 §1: SOURCES → DOKAZI → PODATKI; nič ugibanja):
   PREHOD 3 (val 77): odločilni re-read p67 + p6 — izrezki celic (crops/
   p67-area/, crops/p6-tab-*, crops/p6-zus-*), 2 neodvisna VLM prehoda na
   dvomljive celice + direktni odtis; aritmetična vrata I4–I6 odločijo.
+  PREHOD 7 (val 81): band-metoda p43–47 @nativno (raw-web-val81-2026-09/) —
+  direkten odtis (Read, neodvisen 1. bralec) + VLM prehod A (40 pasov, norm)
+  + prehod R (14 x3 zoom re-readov); kolizije odločene 2:1 ali x3 odtisom;
+  struktura 43–47 korigirana vs. val 75 (F-PZ-12 RESOLVED).
 
 Izhod: pz-konskripcija-1830.json (dokumentni agregat; NI per-parcelnih
 trditev — raba po parcelah ostaja neznana §4; prebivalstvo 1830 = dokumentni
@@ -353,7 +364,110 @@ ENDRESULTAT_ROWS = [
 ENDRESULTAT_SUMMA = {"joch": 1152, "klafter": 495, "crossed": {"klafter": ["474[?]|481[?]"]}, "source_page": 67,
                      "note": "val 75 je bral 1132 — val 77 korekcija: Kurrent 3↔5 → 1152 (odločilni izrezek, 2 prehoda)"}
 
-# strukturni zemljevid 71 strani (PREHOD 1, val 75; nespremenjen)
+# --- PREHOD 7 (val 81): p43–47 Reinertrag — band-metoda @nativno -------------
+# 40 pasov (5 strani × 8; h=328, korak=298, 30px preklop — shema val 80 testa)
+# + 14 x3 zoom re-readov; 54 VLM klicev; direkten odtis avtorja NEODVISNO pred
+# VLM (40 pasov prebranih s Read orodjem). Vrednosti = soglasje ≥ 2 neodvisna
+# branja (odkopane kolizije: p43 item2 12-vs-72, p45 item1 15-vs-114/19,
+# p45 item7 60-vs-6, p45 Kart#1 6-vs-8, p46 Wiesen II lomec 8 3/8). Proza =
+# delno REVIEW (Kurrent halucinacije ostajajo na besedilu, ne na številkah).
+REINERTRAG_P43_47 = {
+    "title": "p43–47 Reinertrag (Kultur-Beschreibung št. 2) — band-transkripcija @nativno (val 81)",
+    "source_pages": [43, 44, 45, 46, 47],
+    "method": {
+        "name": "band-metoda @nativno",
+        "bands": "5 strani × 8 pasov (h=328, korak=298, 30px preklop; shema val 80 testa p43)",
+        "readers": "3 neodvisni glasovi: direkten odtis avtorja (40 pasov, PRED VLM) + VLM prehod A (norm) + VLM prehod R (14 x3 zoom dvomljivih regij)",
+        "calls": "54 VLM klicev (40 A + 14 R); surovinski izpisi vlm/*.json + *.raw (raw-web-val81-2026-09/)",
+        "admission_rule": "vgrajeno samo soglasje ≥ 2 neodvisna branja; kolizije odločene 2:1 ali direktnim odtisom na x3/x4 izrezku; dvoumne enote/črke = [?] / REVIEW",
+        "resolution": "F-PZ-12 RESOLVED — celostranski VLM prepis (val 75 zavrnjen) zamenjan z band-metodo; VAČ @300 dpi pot ne obstaja (F-PZ-17)",
+    },
+    "structure_correction_vs_val75": [
+        "p43: NE 'I. Classe Reinertragstabelle (parcele)' — je 1te Classe Wirthschafts Kurse + Düngung + Natural Ertrag pro Joch",
+        "p44: IIte Classe — isti Kurse kot I. Classe + Düngung = I. + Natural Ertrag z razponi",
+        "p45: NE 'IIa. Classe (2 parcele N°96/311)' — je IIIte Classe (Kurse = I. et II.; Natural Ertrag CEL LIST X PREČRTAN + Anmerkung)",
+        "p46: NE 'III. Classe + KG/WG/HW Ertrags Classe' — začne se z 'Wiesen mit 2 Classen' (I: zusammen 14; II: 8 3/8) + KG + WG + Hutweiden",
+        "p47: NE 'Wald und Ödland? Erste Classe' — je 'Huthweiden mit [supra: ganz=|Holz=] Nutznießung und Niederwald — Einzige Classe' (X prečrtano) + proza + podpisi",
+    ],
+    "acker_wirthschafts_kurse": {
+        "system": "9-jähriger Wechsel (9 kursov); p43 tabela: 3 skupine (Bestellung) × 3 kurse — skupina 1 → kurse 1–3, 2 → 4–6, 3 → 7–9",
+        "classen": {
+            "I": {"page": 43, "heading": "Ackerland mit [gestrichen, supra 2] Classen — 1te Classe",
+                  "kurse": "lastna tabela (1–9)", "duengung": "alle 3 Fuder; 90 [Fuhren?]; 120 [Stück] — številke 3× potrjene, enote delno REVIEW",
+                  "natural_ertrag_pro_joch": [
+                      {"item": 1, "produkt": "Felder mit Mais", "wert": 26, "enota": "Metzen"},
+                      {"item": 2, "produkt": "Hafer[?]", "wert": 12, "enota": "Metzen", "note": "kolizija 12-vs-72 odločena 2:1 (odtis + R vs A)"},
+                      {"item": 3, "produkt": "Klee in 2 Maißland[?]", "wert": 50, "enota": "Centner"},
+                      {"item": 4, "produkt": "Hafergrund", "wert": 12, "enota": "Metzen"},
+                      {"item": 5, "produkt": "Brand", "wert": 12, "enota": "ditto"},
+                      {"item": None, "produkt": "Kartoffel-Gärten", "wert": 10, "enota": "ditto", "note": "nenumerirana vstavljenost po item 5"},
+                      {"item": 6, "produkt": "Brache", "wert": 15, "enota": "ditto"},
+                      {"item": 7, "produkt": "Brandstücke", "wert": 80, "enota": "ditto"},
+                      {"item": 8, "produkt": "Brand", "wert": 12, "enota": "ditto"},
+                      {"item": None, "produkt": "Kartoffel-Gärten", "wert": 10, "enota": "ditto"},
+                      {"item": 9, "produkt": "Brache", "wert": 15, "enota": "ditto"},
+                  ]},
+            "II": {"page": 44, "heading": "IIte Classe",
+                   "kurse": "'Gleiche Kurs als in Iten Acker Classen' (ista tabela 1|1)",
+                   "duengung": "'wie in I[te]n Acker Classe[n]'",
+                   "natural_ertrag_pro_joch": [
+                       {"item": 1, "produkt": "Felder mit Mais", "wert": "18–20", "enota": "Metzen", "note": "razpon; VLM prehod A prazen, odločil direkten odtis + R"},
+                       {"item": 2, "produkt": "Hafer", "wert": "9–10", "enota": "ditto"},
+                       {"item": 3, "produkt": "Klee[?]", "wert": "30–40", "enota": "Centner"},
+                       {"item": 4, "produkt": "Hafergrund", "wert": "9–10", "enota": "Metzen"},
+                       {"item": 5, "produkt": "Brand", "wert": "9–10", "enota": "ditto"},
+                       {"item": None, "produkt": "Kartoffel-Gärten", "wert": "7–8", "enota": "ditto"},
+                       {"item": 6, "produkt": "Brache", "wert": "10–12", "enota": "ditto"},
+                       {"item": 7, "produkt": "Brandstücke", "wert": "65–70", "enota": "ditto"},
+                       {"item": 8, "produkt": "Brand", "wert": "9–10", "enota": "ditto"},
+                       {"item": None, "produkt": "Kartoffel-Gärten", "wert": "7–8", "enota": "ditto"},
+                       {"item": 9, "produkt": "Brache", "wert": "10–12", "enota": "ditto"},
+                   ]},
+            "III": {"page": 45, "heading": "IIIte Classe (val 75: napačno 'IIa' — korigirano)",
+                    "kurse": "'Gleich Kurs den I= et II= Ackerclassen' (tabela 1|1); proza 'Man behandelt diesen Acker in 9 jährigen Wechsel, mit folgenden Feldfrüchten' PREČRTANA",
+                    "duengung": "'wie in den I= et II= Ackerclas[sen]'",
+                    "natural_ertrag_pro_joch": [
+                        {"item": 1, "produkt": "Felder mit Mais", "wert": 15, "enota": "Metzen", "note": "kolizija 15-vs-114/19 odločena direktnim odtisom na x3"},
+                        {"item": 2, "produkt": "Hafer[?]", "wert": 8, "enota": "ditto"},
+                        {"item": 3, "produkt": "Klee[?]", "wert": 30, "enota": "Centner"},
+                        {"item": 4, "produkt": "Hafergrund", "wert": 8, "enota": "Metzen"},
+                        {"item": 5, "produkt": "Brand", "wert": 8, "enota": "ditto"},
+                        {"item": None, "produkt": "Kartoffel-Gärten", "wert": 6, "enota": "ditto", "note": "kolizija 6-vs-8 odločena direktnim odtisom na x4"},
+                        {"item": 6, "produkt": "Brache", "wert": 9, "enota": "ditto"},
+                        {"item": 7, "produkt": "Brandstücke", "wert": 60, "enota": "ditto", "note": "kolizija 60-vs-6 odločena 2:1 (odtis + R)"},
+                        {"item": 8, "produkt": "Brand", "wert": 8, "enota": "ditto"},
+                        {"item": None, "produkt": "Kartoffel-Gärten", "wert": 6, "enota": "ditto"},
+                        {"item": 9, "produkt": "Brache", "wert": 9, "enota": "ditto"},
+                    ],
+                    "crossed": "CEL Natural-Ertrag LIST X PREČRTAN (velik X čez vse postavke) — III. classe Ertrag opuščen; list zaključi 'Anmerkung' (proza REVIEW)"},
+        },
+    },
+    "wiesen_kg_wg_hw": {
+        "page": 46,
+        "wiesen": {
+            "heading": "Wiesen mit 2 Classen",
+            "classe_I": "proza [REVIEW]: '… mittelmäßig[?] … geben jährlich [2 Schnitte?] … à 3[?]. zusammen 14' — vrednost 14 potrjena 3×, enota 'Fth|fl' REVIEW",
+            "classe_II": "'… unmittelbar[?] …, und geben … im Ganzen 8 3/8' — lomec potrjen (A 8 2/5 ovržen, R+odtis x3 8 3/8; števec 3-vs-5 ostaja REVIEW)",
+        },
+        "kleine_gaerten": {"heading": "Kleine Gärten — Einzige Classe", "note": "+ prečrtan vstavek 'große Gemüse=Gärten'; proza 'Ein … 800 QKlf[?] …' REVIEW"},
+        "weingaerten": {"heading": "Weingärten — Einzige Classe",
+                        "yield": "'zu M[?]bac[?] … 9 [Eimer?] / Wein … 12' — 12 potrjena 2× (A+R); 9 z [?]; prose REVIEW",
+                        "cross_check": "p30 Zusammenstellung (val 77): Weingärten 12 Eimer — SROGLASJE"},
+        "hutweiden": {"heading": "Hutweiden — Einzige Classe",
+                      "yield": "'… mit Pflügen für so viel … 2 3/8' (Fuder[?]) — A+R soglasje 2 3/8; odtis brez lomca (1. branje) — potrjeno s 2 glasovi"},
+    },
+    "huthweiden_holznutzung": {
+        "page": 47,
+        "heading": "Huthweiden mit [supra: ganz=|Holz=] Nutznießung und Niederwald — Einzige Classe — CEL NASLOV + uvodna proza X PREČRTANA",
+        "prosa": "[REVIEW]: 'Zusammenstellung[?] aus 5/6[?] …' (prečrtano) + '… ohne Holzcultur … Trinkwasser … Wild …' (meni/reka?)",
+        "actum": "'Actum ut supra[?]' + podpisi — datum povezan z val 75 opombo '16. julij 1829[?]'",
+        "signatures": "Kappas (Weis[?]/Gemeinde[?]) + 6 prič s + : Georg H[olz]inger[?] (gemainde Richter[?]), Jakob Malešek[?], Georg Adrijan[?], Miha Menart[?], Hieronym[us] Čeglar[?], Kajetan Nermann[?] — vsa imena REVIEW (Kurrent)",
+        "cross_impact": "prečrtava NE vpliva na §8/p67 (Weiden mit Holznutzen 557 J obstaja kot kultura) — gre za opuščen osnutek odseka",
+    },
+    "reading_honesty": "številke = soglasje ≥ 2 neodvisna branja (54 klicev + odtis); proza = delno REVIEW (Kurrent halucinacije dokumentirane v vlm/*.raw); vrednosti NISO per-parcelne trditve — to so klasni Natural-Ertrag koeficienti (metzensko/centnersko na 1 Joch), rabne/površinske posledice NIČ (§4/§22)",
+}
+
+# --- strukturni zemljevid 71 strani (PREHOD 1, val 75; 43–47 korigirano val 81) ---
 STRUCTURE = [
     (1, "Naslovna: CATASTRAL-SCHÄTZUNGS-ELABORAT der Gemeinde Grüble, Land Krain, Kreis Neustadtl, Steuerbezirk Krupp, Schätzung District N°83"),
     (2, "§2 Gränzen (meje) + §3 Bevölkerung (prebivalstvo 1830: 441/222/219, 70 hiš, 102 družin)"),
@@ -397,11 +511,11 @@ STRUCTURE = [
     (40, "Rektifikacija zaključek — podpisi žirije (Kappas + 9) + k.k. Schätzungskommission + pečat (9. / 29. april 1830 — mesec REVIEW; val 75: 5./28. ovrženo) + 'vierte Nachtag' (val 79)"),
     (41, "Nachsetzung (№ 1980 / № 88; 12. avg. 1832[?]) + Vergleich (4. jun. 1832[?]) + podpisi — 1832, brez površin (val 79)"),
     (42, "Einvernehmungs-Protocoll 6. dec. 1832 — Natural-Brutto-Ertrag (poprava: NE 'Einwands-Protokoll'; val 79)"),
-    (43, "Kataster und Steuer Claffen — I. Classe Reinertragstabelle (parcele)"),
-    (44, "II. Classe Reinertragstabelle"),
-    (45, "IIa. Classe (2 parcele: N°96 in N°311, QKlf 334[?])"),
-    (46, "III. Classe + Kleine Gärten/Weingärten/Hutweiden Ertrags Classe"),
-    (47, "Wald und Ödland? Erste Classe + podpisi (16. julij 1829[?])"),
+    (43, "Ackerland mit 2 Classen — 1te Classe: Wirthschafts Kurse (9-jähriger Wechsel; skupine 1–3 × kurse 1–9) + Düngung auf 1 Joch (3 Fuder; 90/120) + Natural Ertrag pro Joch (1–9: 26/12/50/12/12/[10]/15/80/12/[10]/15 M|Ctl) — val 81 prepis (korekcija val 75: NE per-parcelna tabela)"),
+    (44, "IIte Classe: Wirthschafts Kurse = I. Classe ('Gleiche Kurs als in Iten Acker Classen') + Düngung = I. + Natural Ertrag pro Joch z RAZPONI (18–20/9–10/30–40/9–10/9–10/[7–8]/10–12/65–70/9–10/[7–8]/10–12) — val 81 prepis"),
+    (45, "IIIte Classe: Wirthschafts Kurse ('Gleich Kurs den I= et II= Ackerclassen') + Düngung = I. et II. + Natural Ertrag pro Joch (15/8/30/8/8/[6]/9/60/8/[6]/9) — CEL LIST X PREČRTAN + Anmerkung — val 81 prepis (korekcija val 75: NE 'IIa + parcele 96/311')"),
+    (46, "Wiesen mit 2 Classen (I: zusammen 14 [Fth|fl REVIEW]; II: im Ganzen 8 3/8) + Kleine Gärten Einzige Classe (+ prečrtano 'große Gemüse=Gärten') + Weingärten Einzige Classe (zu M[?]… 9 [?] / Wein 12) + Hutweiden Einzige Classe (2 3/8) — val 81 prepis"),
+    (47, "Huthweiden mit [supra: ganz=|Holz=] Nutznießung und Niederwald — Einzige Classe (CEL NASLOV X PREČRTAN) + proza (Holz/Ödland, Trinkwasser) + Actum ut supra (16. julij 1829[?]) + podpisi: Kappas + 6 prič (imena REVIEW) — val 81 prepis"),
     (48, "Einvernehmungs-Protocoll 5. aprila 1830 (rožnat papir): proza o gojitvi/vrtninah[?] — brez per-parcelnih tabel (val 79 re-read)"),
     (49, "Communications-Protokoll — nadaljevanje + podpisi"),
     (50, "VERANTWORTLICHUNG des Cultural-Ausweises (zelen papir) — §1 Acker, Darstellung des Rein Ertrages"),
@@ -530,8 +644,8 @@ area_red_m2 = round(pz_red * M2_PER_QKLFT)
 area_pv_m2 = round(pv * M2_PER_QKLFT)
 
 data = {
-    "val": 80,
-    "pass": "PZ PASS 6 (val 80: VAČ topološka izčrpnost — II. prikaz @300 dpi NE obstaja, F-PZ-17; nativna re-digitation 7 variančnih celic — 6/7 REŠENIH, inter-bralčeva varianca PR#69↔val 79 razrešena, sistemski pomlaj '– J' = 0 Joch; Muster-citati korigirani: 30=1082, 594=591, 1004=1010, 738=–J895, 2451=–J1515, 2491=–J260, 1288 REVIEW; I4–I6 nespremenjeni)",
+    "val": 81,
+    "pass": "PZ PASS 7 (val 81: band-transkripcija p43–47 @nativno — F-PZ-12 RESOLVED; 40 pasov + 14 x3 zoomov + 54 VLM klicev + direkten odtis; struktura 43–47 korigirana vs val 75 — NE per-parcelne tabele, ampak Wirthschafts Kurse + Düngung + Natural Ertrag pro Joch per klasa; kolizije odločene s soglasjem ≥ 2; I1–I6 nespremenjeni; val 80 PASS 6: VAČ topološka izčrpnost F-PZ-17 + nativna re-digitation 6/7 Muster celic)",
     "issue": 42,
     "deterministic": True,
     "title": "PZ N83 — Katastral-Schätzungs-Elaborat (Konskripcija) 1828/30 [373419]",
@@ -544,11 +658,12 @@ data = {
             "PREHOD 4 (val 78, neodvisni prehod): §8 rdeči stolpec 'Zusammen' strukturiran (2 prehoda pri 6×–12×, crops-v78/, 33 izrezkov) + verifikacija rešitvenih poti p26/p27/p30/p32/p63/p65 — nobena ne vsebuje površin",
             "PREHOD 5 (val 79): odločilni re-read Rektifikacijskega odseka p35–42 (+ p48) — celotne strani @2x + 10 izrezkov linij @4x (crops-v79/), 2 VLM prehoda + direkten odtis; struktura OPISNO-KVALITATIVNA (Kultur-Beschreibung + Muster-parcele), per-parcelne korekcije NE obstajajo → rešitvena pot F-PZ-04 zapreta",
         "PREHOD 6 (val 80): VAČ topološka izčrpnost (II. prikaz @300 dpi NE obstaja: pdfPageImage 608px fiksna, session raster = ovitek, OCR prazen; maksimum = PDF-native ~150 dpi) + nativna re-digitation 7 variančnih celic — FFT template-matching anchors + 3 neodvisna branja/celico (direkten odtis + VLM raw/norm + VLM x3); 6/7 REŠENIH, sistemski pomlaj odkrit; inter-bralčeva varianca PR#69↔val 79 razrešena (PR#69 pravilna na 30/594/1004; val 79 pravilna na 2451; struktura – J na 738/2451/2491)",
+            "PREHOD 7 (val 81): band-transkripcija p43–47 @nativno — 5 strani × 8 pasov (h=328, korak=298, 30px preklop; shema val 80 testa) + 14 x3 zoom re-readov; 54 VLM klicev + direkten odtis avtorja (40 pasov NEODVISNO pred VLM); vrednosti = soglasje ≥ 2 neodvisna branja, kolizije 2:1 ali x3 odtisom; struktura 43–47 korigirana vs val 75 — F-PZ-12 RESOLVED (reinertrag_p43_47)",
         ],
         "native_scans": "pz-n83/native/p01–p71.jpeg (pymupdf, metoda val 56)",
         "deterministic": True,
         "no_guessing": "§4: nič se ne ugiba; dvoumne oznake = REVIEW ali GATED (izpeljava z vrati); črne prečrtane vrednosti ohranjene; revizijski vzorec p67 (trenutna NAD prečrtano) dokumentiran na 5 neodvisnih primerih",
-        "rejected_reads": "p43–47 celostranski VLM vrstični prepis ZAVRJEN (halucinacije na gostem Kurrentu) — F-PZ-12; val 80: band-metoda @nativno IZVEDLJIVA (8-pasovni test p43: glave + Kurs 1–6 + Düngung 90/120 čitljivi) — celoten prepis = naslednji val; p65 Zusammenstellung A 1. prehod delno nezanesljiv — REVIEW",
+        "rejected_reads": "p43–47 celostranski VLM vrstični prepis ZAVRJEN (halucinacije na gostem Kurrentu) — nadomeščeno z band-metodo val 81 (PREHOD 7, F-PZ-12 RESOLVED: 40 pasov + 14 zoomov + 54 VLM klicev + direkten odtis; številke s soglasjem ≥ 2, proza delno REVIEW); p65 Zusammenstellung A 1. prehod delno nezanesljiv — REVIEW",
     },
     "provenance": {
         "uodid": 373419,
@@ -583,6 +698,7 @@ data = {
     "paragraf8_p6": PARAGRAF8_P6,
     "revision_1830_zusammen": REVISION_1830_ZUSAMMEN,
     "rektifikacija_beschreibung": REKTIFIKACIJA_BESCHREIBUNG,
+    "reinertrag_p43_47": REINERTRAG_P43_47,
     "endresultat_p67": {
         "title": "Specifischer Ausweis der nach der Catastral Ertragserhebung entfallenden Endresultate (p66–67)",
         "columns": ["Posten N°", "CultursGattungen", "Classe", "Flächen Maas (Joch | □Klafter)", "Bruto Ertrag (vom J° Joch | im Ganzen)", "Abzug zur Compensation des Culturs-Aufwandes per XI.O.Joch"],
@@ -683,9 +799,9 @@ data = {
         },
         {
             "id": "F-PZ-12",
-            "title": "p43–47 Reinertragstabellen — celostranski prepis zavrnjen; val 80: band-metoda @nativno izvedljiva (pot @300 dpi ovržena)",
-            "status": "OPEN",
-            "detail": "Celostranski VLM prepis p43–47 (5 strani) je nezanesljiv: model halucinira besedila in številke na gostem Kurrentu (nizka berljivost @182 dpi). Po §4 (nič vsiljenega) so branja ZAVRJENA in NE vhod v podatke; ohranjeno strukturno branje val 75. val 80: (a) pot 'VAČ IIIF tiles @300 dpi' OVRŽENA — višja ločljivost na VAČ ne obstaja (F-PZ-17); (b) band-metoda @nativno IZVEDLJIVA — 8-pasovni test p43 čitljiv (glava 'Ackerland mit 2 Klassen', Wirthschaftskurs 1–6, 'Düngung auf 1 Joch … 3 Fuder … 90 … 120 Stück'); celoten vrstični prepis = izvedljiv naslednji val (40 klicev), ročna preverba ostaja alternativa",
+            "title": "RESOLVED (val 81): p43–47 Reinertrag — celotni vrstični prepis izveden prek band-metode @nativno (40 pasov + 14 zoomov + 54 VLM klicev + direkten odtis)",
+            "status": "RESOLVED",
+            "detail": "val 75: celostranski VLM prepis ZAVRJEN (halucinacije @182 dpi). val 80: pot 'VAČ @300 dpi' OVRŽENA (F-PZ-17); 8-pasovni test p43 pokazal, da je band-metoda @nativno čitljiva. val 81: PREHOD 7 izveden — 5 strani × 8 pasov (h=328, korak=298, shema val 80) + 14 x3 zoom re-readov dvomljivih regij; 3 neodvisni glasovi (direkten odtis avtorja PRED VLM + VLM prehod A norm + VLM prehod R x3); 54 VLM klicev, surovine raw-web-val81-2026-09/ (crops-v81/ 40 pasov raw/norm + 15 zoom izrezkov, vlm/ 54 JSON+raw, bandread-v81.mts). REZULTATI: (a) struktura 43–47 KORIGIRANA vs val 75 — p43 = 1te Classe Wirthschafts Kurse + Düngung (3 Fuder; 90/120) + Natural Ertrag pro Joch (1–9: 26/12/50/12/12/[10]/15/80/12/[10]/15); p44 = IIte Classe (isti Kurse; Ertrag z razponi 18–20/9–10/30–40/…/65–70); p45 = IIIte Classe (NE 'IIa 2 parcele'!) — Ertrag list 15/8/30/8/8/[6]/9/60/8/[6]/9 CEL X PREČRTAN + Anmerkung; p46 = Wiesen 2 Classen (I: zusammen 14 [enota REVIEW]; II: 8 3/8) + KG + WG (9[?]/12 — sroglasje s p30 'Weingärten 12 Eimer') + Hutweiden 2 3/8; p47 = Huthweiden mit [Holz=|ganz=] Nutznießung und Niederwald (X prečrtano) + podpisi Kappas + 6 prič; (b) NISU per-parcelne tabele — p43–47 so klasni Natural-Ertrag koeficienti; per-parcelne trditve ostajajo NIČ (§4); (c) kolizije odločene 2:1 ali x3 odtisom: p43 item2 12 (ne 72), p45 item1 15 (ne 114/19), p45 item7 60 (ne 6), p45 Kart#1 6 (ne 8), p43 Kart#2 10 (ne 20); (d) proza ostaja delno REVIEW (Kurrent halucinacije na besedilu — številke ne). Vpliv na I1–I6/KG/deleže: NIČ (§22)",
         },
         {
             "id": "F-PZ-13",

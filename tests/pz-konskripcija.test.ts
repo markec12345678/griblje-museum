@@ -115,6 +115,32 @@ type PzDoc = {
     conclusion: { f_pz_04_path: string; remaining_paths: string[]; f_pz_04_status: string };
     reading_honesty: string;
   };
+  reinertrag_p43_47: {
+    title: string;
+    source_pages: number[];
+    method: { name: string; bands: string; readers: string; calls: string; admission_rule: string; resolution: string };
+    structure_correction_vs_val75: string[];
+    acker_wirthschafts_kurse: {
+      system: string;
+      classen: Record<
+        string,
+        {
+          page: number; heading: string; kurse: string; duengung: string;
+          natural_ertrag_pro_joch: { item: number | null; produkt: string; wert: number | string; enota: string; note?: string }[];
+          crossed?: string;
+        }
+      >;
+    };
+    wiesen_kg_wg_hw: {
+      page: number;
+      wiesen: { heading: string; classe_I: string; classe_II: string };
+      kleine_gaerten: { heading: string; note: string };
+      weingaerten: { heading: string; yield: string; cross_check: string };
+      hutweiden: { heading: string; yield: string };
+    };
+    huthweiden_holznutzung: { page: number; heading: string; prosa: string; actum: string; signatures: string; cross_impact: string };
+    reading_honesty: string;
+  };
   shares_1830: {
     shares: { kultur: string; joch: number; klafter: number; qklft: number; pct_of_total: number; basis: string }[];
     sum_qklft: number;
@@ -149,10 +175,10 @@ const kg = kgRaw as unknown as {
   findings: { finding_id: string; val: number; status: string }[];
 };
 
-describe("val 80 — PZ PASS 6 dokumentna resnica [373419]", () => {
-  test("meta: uodid 373419 / docid 41784 / 71 strani / val 80 PASS 6", () => {
-    expect(pz.val).toBe(80);
-    expect(pz.pass).toContain("PASS 6");
+describe("val 81 — PZ PASS 7 dokumentna resnica [373419]", () => {
+  test("meta: uodid 373419 / docid 41784 / 71 strani / val 81 PASS 7", () => {
+    expect(pz.val).toBe(81);
+    expect(pz.pass).toContain("PASS 7");
     expect(pz.provenance.uodid).toBe(373419);
     expect(pz.provenance.docid).toBe(41784);
     expect(pz.provenance.pages).toBe(71);
@@ -405,7 +431,7 @@ describe("val 80 — PZ PASS 6 dokumentna resnica [373419]", () => {
     expect(byId.get("F-PZ-10")!.status).toBe("REVIEW");
     expect(byId.get("F-PZ-07")!.status).toBe("TO_VERIFY");
     expect(byId.get("F-PZ-04")!.status).toBe("OPEN");
-    expect(byId.get("F-PZ-12")!.status).toBe("OPEN"); // p43–47 pošteno zavrnjeno
+    expect(byId.get("F-PZ-12")!.status).toBe("RESOLVED"); // val 81: band-transkripcija p43–47 izvedena
     expect(byId.get("F-PZ-16")!.status).toBe("RESOLVED"); // val 79: Rektifikacija opisna
     // vsaka najdba ima detail
     for (const f of pz.findings) expect(f.detail.length).toBeGreaterThan(30);
@@ -418,10 +444,11 @@ describe("val 80 — PZ PASS 6 dokumentna resnica [373419]", () => {
     expect(pz.invariant_violations).toEqual([]);
   });
 
-  test("zavrnjena branja dokumentirana (F-PZ-12 — nič tihega)", () => {
+  test("zavrnjena branja dokumentirana (F-PZ-12 — nič tihega; val 81: nadomeščeno z band-metodo)", () => {
     const m = pz.method;
     expect(m.rejected_reads).toContain("p43–47");
     expect(m.rejected_reads).toContain("ZAVRJEN");
+    expect(m.rejected_reads).toContain("band-metodo val 81");
   });
 });
 
@@ -597,13 +624,14 @@ describe("val 79 — Rektifikacija p35–42 OPISNO-KVALITATIVNA (F-PZ-16)", () =
     expect(e.sum_check.note).toContain("val 79 F-PZ-16");
   });
 
-  test("prehod 5+6 v metodi; coverage val 80 (neodvisna datoteka)", () => {
+  test("prehod 5+6+7 v metodi; coverage val 81 (neodvisna datoteka)", () => {
     expect((pz.method.passes as string[]).some((p) => p.startsWith("PREHOD 5 (val 79)"))).toBe(true);
     expect((pz.method.passes as string[]).some((p) => p.startsWith("PREHOD 6 (val 80)"))).toBe(true);
+    expect((pz.method.passes as string[]).some((p) => p.startsWith("PREHOD 7 (val 81)"))).toBe(true);
     const rep = JSON.parse(
       readFileSync(join(REPO, "src", "data", "atlas-coverage-report-1825.json"), "utf-8")
     ) as { val: number; quality_gate: { category_id: string; native: Record<string, unknown> }[] };
-    expect(rep.val).toBe(80);
+    expect(rep.val).toBe(81);
   });
 
   test("val 80 — nativna re-digitation: odločilna miza 6/7 + val80_redigitation sekcija", () => {
@@ -651,5 +679,80 @@ describe("val 79 — Rektifikacija p35–42 OPISNO-KVALITATIVNA (F-PZ-16)", () =
     // neodvisna aritmetika v TS: 419+45+2+0+6+121+557 = 1150 EXACT
     const sum = zus.rows.reduce((a, r) => a + r.joch, 0);
     expect(sum).toBe(zus.subtotal_cultivirte.joch); // 1150
+  });
+
+  test("val 81 — F-PZ-12 RESOLVED: band-transkripcija p43–47 @nativno", () => {
+    const f12 = pz.findings.find((f) => f.id === "F-PZ-12")!;
+    expect(f12).toBeDefined();
+    expect(f12.status).toBe("RESOLVED");
+    expect(f12.detail).toContain("band-metoda");
+    expect(f12.detail).toContain("54 VLM klicev");
+    expect(f12.detail).toContain("IIIte Classe");
+    expect(f12.detail).toContain("NE 'IIa 2 parcele'");
+    expect(f12.detail).toContain("Vpliv na I1–I6/KG/deleže: NIČ (§22)");
+  });
+
+  test("val 81 — reinertrag_p43_47: struktura korigirana + Ertrag koeficienti (soglasje ≥ 2)", () => {
+    const re = pz.reinertrag_p43_47 as unknown as {
+      method: { readers: string; calls: string; admission_rule: string };
+      structure_correction_vs_val75: string[];
+      acker_wirthschafts_kurse: {
+        classen: Record<
+          string,
+          { page: number; natural_ertrag_pro_joch: { item: number | null; produkt: string; wert: number | string }[] }
+        >;
+      };
+      wiesen_kg_wg_hw: { wiesen: { classe_I: string; classe_II: string }; weingaerten: { cross_check: string }; hutweiden: { yield: string } };
+      huthweiden_holznutzung: { heading: string; cross_impact: string };
+    };
+    // metoda: 3 glasovi + pravilo soglasja
+    expect(re.method.readers).toContain("direkten odtis avtorja (40 pasov, PRED VLM)");
+    expect(re.method.calls).toContain("54 VLM klicev");
+    expect(re.method.admission_rule).toContain("soglasje ≥ 2 neodvisna branja");
+    // struktura 43–47 korigirana vs val 75 (5 popravkov)
+    expect(re.structure_correction_vs_val75).toHaveLength(5);
+    expect(re.structure_correction_vs_val75.join(" ")).toContain("NE 'IIa. Classe (2 parcele N°96/311)'");
+    expect(re.structure_correction_vs_val75.join(" ")).toContain("Wiesen mit 2 Classen");
+    // p43 Ertrag: item1=26, item2=12 (kolizija 12-vs-72), item3=50, item7=80
+    const cI = re.acker_wirthschafts_kurse.classen["I"].natural_ertrag_pro_joch;
+    expect(cI.find((x) => x.item === 1)!.wert).toBe(26);
+    expect(cI.find((x) => x.item === 2)!.wert).toBe(12);
+    expect(cI.find((x) => x.item === 3)!.wert).toBe(50);
+    expect(cI.find((x) => x.item === 7)!.wert).toBe(80);
+    expect(cI).toHaveLength(11); // 9 kursov + 2 nenumberirana Kartoffel-Gärten
+    // p44 razponi: 18–20 / 65–70
+    const cII = re.acker_wirthschafts_kurse.classen["II"].natural_ertrag_pro_joch;
+    expect(cII.find((x) => x.item === 1)!.wert).toBe("18–20");
+    expect(cII.find((x) => x.item === 7)!.wert).toBe("65–70");
+    // p45: item1=15, item7=60, cel list prečrtan
+    const cIII = re.acker_wirthschafts_kurse.classen["III"].natural_ertrag_pro_joch;
+    expect(cIII.find((x) => x.item === 1)!.wert).toBe(15);
+    expect(cIII.find((x) => x.item === 7)!.wert).toBe(60);
+    expect(re.acker_wirthschafts_kurse.classen["III"].page).toBe(45);
+    // p46: Wiesen I = 14, II = 8 3/8; WG križna kontrola s p30; HW 2 3/8
+    expect(re.wiesen_kg_wg_hw.wiesen.classe_I).toContain("zusammen 14");
+    expect(re.wiesen_kg_wg_hw.wiesen.classe_II).toContain("8 3/8");
+    expect(re.wiesen_kg_wg_hw.weingaerten.cross_check).toContain("Weingärten 12 Eimer");
+    expect(re.wiesen_kg_wg_hw.hutweiden.yield).toContain("2 3/8");
+    // p47: naslov prečrtan; nič vpliva na §8
+    expect(re.huthweiden_holznutzung.heading).toContain("Nutznießung und Niederwald");
+    expect(re.huthweiden_holznutzung.cross_impact).toContain("NE vpliva");
+  });
+
+  test("val 81 — structure_map p43–47 korigirana (val 75 hipoteze ovržene)", () => {
+    const p45 = pz.structure_map.find((s) => s.page === 45)!.content;
+    expect(p45).toContain("IIIte Classe");
+    expect(p45).toContain("CEL LIST X PREČRTAN");
+    expect(p45).toContain("NE 'IIa + parcele 96/311'");
+    const p46 = pz.structure_map.find((s) => s.page === 46)!.content;
+    expect(p46).toContain("Wiesen mit 2 Classen");
+    expect(p46).toContain("8 3/8");
+    const p47 = pz.structure_map.find((s) => s.page === 47)!.content;
+    expect(p47).toContain("Nutznießung und Niederwald");
+    expect(p47).toContain("X PREČRTAN");
+    // p43 glava: 'Ackerland mit 2 Classen' z gestrichen/supra oznako
+    const p43 = pz.structure_map.find((s) => s.page === 43)!.content;
+    expect(p43).toContain("Wirthschafts Kurse");
+    expect(p43).toContain("Düngung auf 1 Joch");
   });
 });
