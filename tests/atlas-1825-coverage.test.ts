@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v1.8 (val 77 — PZ PASS 2 re-read) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("20ec8a0a988aa9e8")).toBe(true);
+  test("provenanca kaže na KG v1.9 (val 84 — SRC-PS vozlišče po val 82/83) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("526482d22a003ca3")).toBe(true);
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -230,10 +230,10 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(c.VERIFIED).toBe(1);
   });
 
-  test("negativni rezultati: 13, vsi dokumentirani", () => {
+  test("negativni rezultati: 14 (NR-14 val 83 s statusom PARTIAL), vsi dokumentirani", () => {
     const c = byId("negative_results");
-    expect(c.total).toBe(13);
-    expect(c.VERIFIED).toBe(13);
+    expect(c.total).toBe(14);
+    expect(c.VERIFIED).toBe(14);
   });
 
   test("georeferenca: A01 VERIFIED (GEOREF v2 ±38 m, val 72), A02–A05 UNKNOWN", () => {
@@ -283,8 +283,8 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       expect(existsSync(p)).toBe(true);
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
-      // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 81) + source-coverage (val 83) + izpeljani artefakti nosijo svoj val
-      expect([72, 74, 81, 83]).toContain(d.val);
+      // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 81) + source-coverage (val 84) + izpeljani artefakti nosijo svoj val
+      expect([72, 74, 81, 83, 84]).toContain(d.val);
     }
   });
 

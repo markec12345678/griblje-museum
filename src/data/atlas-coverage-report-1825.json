@@ -1,5 +1,5 @@
 {
- "val": 81,
+ "val": 84,
  "pass": "PASS 8",
  "issue": 42,
  "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "20ec8a0a988aa9e8945ad594dc29a65c9414c5a577248748766d06ae11450c50",
+  "kg_sha256": "526482d22a003ca321508f56408e4d4743482befb5d0d478f6019c02059115af",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -367,7 +367,7 @@
       "docid": 41780,
       "pages": 143,
       "status": "VERIFIED",
-      "note": "vrstični prepis p3–55 (1073 vrstic); p56–143 strukturni re-read brez vrstic (F-PZ-09, val 75)"
+      "note": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL → pasovni/zoom re-read (F-PV-04, NR-14); kolizije = variant fields (reread-v83/comparison.json), nič tiho popravljeno"
      },
      {
       "source_id": "SRC-PT",
@@ -494,8 +494,8 @@
   {
    "category_id": "negative_results",
    "title": "Negativni rezultati (iskano in ni najdeno)",
-   "total": 13,
-   "VERIFIED": 13,
+   "total": 14,
+   "VERIFIED": 14,
    "PARTIAL": 0,
    "CONFLICT": 0,
    "UNKNOWN": 0,
@@ -513,7 +513,8 @@
     "429 kvota (TO_COLLECT)": 1,
     "0 — strukturno (F9 različni lastniški stanji), ne bralna napaka": 1,
     "NOT FOUND — all Flurbezirk segments are numeric/roman (I–V sections + numbers); zero named districts": 1,
-    "NOT FOUND — wohnort_original is empty except 3× self-form 'Grüble' (p3/4/5)": 1
+    "NOT FOUND — wohnort_original is empty except 3× self-form 'Grüble' (p3/4/5)": 1,
+    "PARTIAL": 1
    },
    "mapping_rule": "Vsak negativni rezultat = dokumentiran postopek (iskano/kje/zakaj ni mogoče potrditi) → VERIFIED kot dokumentacija",
    "evidence": [

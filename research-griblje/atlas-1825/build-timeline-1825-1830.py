@@ -235,8 +235,8 @@ points = [
                 "count",
                 f"{ps_count} parcel",
                 "SRC-PS",
-                "ps-n83/register.json (p3–55)",
-                note="prepis pokriva SAMO p3–55 od 143 strani (F-PZ-09); 412 unikatnih parcel, 20 so-referenciranih vrstic.",
+                "parcel-register-1825.json (origin=PS, hišno vezane)",
+                note="PS vrstični prepis 143/143 (val 82: 2.871 vrstic; re-read 2× val 83) — kuriranih 432 parcel z hišno vezavo; per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14).",
             ),
             metric(
                 "parcels_with_land_use",
@@ -262,7 +262,7 @@ points = [
                 "reason": "Družinska konskripcija za 1825 ni v vpisanih virih.",
             },
         ],
-        "note": "PS p3–55 omenja 167 hišnih entitet (delna pokritost p56–143 brez vrstic, F-PZ-09) — NI primerljivo s konskripcijo 70 hiš (1830) brez re-reada; zato tu ni metrike 'hiše'.",
+        "note": "PS N83 omenja 167 hišnih entitet (lastniška struktura iz PUA/PT, ne konskripcija hiš; pokritost zdaj 143/143 strani — val 82/83) — NI primerljivo s konskripcijo 70 hiš (1830); zato tu ni metrike 'hiše'.",
     },
     {
         "year": 1830,

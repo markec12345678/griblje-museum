@@ -157,16 +157,16 @@ describe("PV 1825: dokazna disciplina (§4/§14)", () => {
   });
 });
 
-describe("PV 1825: integracija v KG v1.8 + engine + coverage", () => {
+describe("PV 1825: integracija v KG v1.9 + engine + coverage", () => {
   const kg = kgRaw as unknown as {
     val: number;
     title: string;
     nodes: { node_id: string; node_type: string; coverage?: string; uodid?: number }[];
   };
 
-  test("KG v1.8 (val 77): SRC-PV = TRANSCRIBED 1/1; ID-ji/stanja stabilni", () => {
-    expect(kg.val).toBe(77);
-    expect(kg.title).toBe("knowledge-graph-1825 v1.8");
+  test("KG v1.9 (val 84): SRC-PV = TRANSCRIBED 1/1; ID-ji/stanja stabilni", () => {
+    expect(kg.val).toBe(84);
+    expect(kg.title).toBe("knowledge-graph-1825 v1.9");
     const pvNode = kg.nodes.find((n) => n.node_id === "SRC-PV")!;
     expect(pvNode.coverage).toContain("TRANSCRIBED 1/1");
     expect(pvNode.coverage).toContain("val 74");
