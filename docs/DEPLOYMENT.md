@@ -18,8 +18,12 @@ Zgodovina prehoda: SQLite `db/custom.db` → shema preklopljena na `postgresql`
 (migracija `20260924105426_init`), podatki prenešeni z
 `scripts/migrate-data-sqlite-to-postgres.ts` (113 zapisov · 588 virov · 9
 dogodkov · 6 zgodb · 6 vpisov · 10 spominov · 132 statističnih dni — števci
-preverjeni na obeh straneh). Stara SQLite datoteka ostaja v repozitoriju kot
-zgodovinski vir podatkov; aplikacija je ne uporablja več.
+preverjeni na obeh straneh). Zapuščinska SQLite datoteka je od tod
+**odstranjena iz repozitorija** (`.gitignore`: `/db/custom.db`; datoteka
+ostane samo v lokalni kopiji) — **enoten vir resnice je Neon PostgreSQL**,
+zgodovinski posnetek pa pokrivajo varnostne kopije ([BACKUP-RESTORE](./BACKUP-RESTORE.md)).
+Aplikacija je ne bere več; migracijska skripta je ohranjena kot
+zgodovinski zapis postopka.
 
 ## 2. Okoljske spremenljivke (Vercel + lokalno `.env`)
 
@@ -29,6 +33,7 @@ zgodovinski vir podatkov; aplikacija je ne uporablja več.
 | `DIRECT_URL` | Vercel env + `.env` | direkt endpoint — izključno `prisma migrate` (shadow DB ne sme skozi pooler) |
 | `NEXT_PUBLIC_SITE_URL` | Vercel env | canonical domena sitemap/robots (sicer privzeta iz `lib/site.ts`) |
 | `ZAI_CONFIG` ali `ELEVENLABS_API_KEY` | Vercel env | TTS/AI kustos (brez: ti poti vračajo 503, ostalo deluje) |
+| `RATE_LIMIT_STORE` | Vercel env (opcijsko) | `postgres` = kvota AI kustosa in TTS skupna vsem primerkom (tabela `RateLimitHit`); brez nastavitve: pomnilnik primerka (vedenje nespremenjeno) |
 
 Oblika niza: `postgresql://<uporabnik>:<geslo>@<host>/<baza>?sslmode=require`.
 
