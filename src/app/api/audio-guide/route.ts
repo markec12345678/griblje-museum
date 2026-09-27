@@ -3,7 +3,7 @@ import { db } from "@/lib/db";
 import { getMinuteStory } from "@/lib/minute-stories";
 import { synthesizeSpeech, type SynthResult } from "@/lib/tts";
 import { MAX_CHARS, prepareForTts, splitIntoChunks } from "@/lib/audio-chunks";
-import { clientIpOf, rateLimited } from "@/lib/rate-limit";
+import { clientIpOf, rateLimitedGlobal } from "@/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 // Sinteza TTS lahko traja več kot privzetih 10 s (hladen klic ~20 s) —
@@ -183,8 +183,9 @@ export async function GET(req: NextRequest) {
     let audio = entry.audio[chunk];
     if (!audio) {
       // Varčevanje s kreditom TTS: omejimo samo DEJANSKE sinteze na IP
-      // (ogret posnetek iz predpomnilnika ni omejen).
-      if (rateLimited("tts", clientIpOf(req))) {
+      // (ogret posnetek iz predpomnilnika ni omejen). Kvota: pomnilniško
+      // vedro, opt-in skupna prek baze (RATE_LIMIT_STORE=postgres).
+      if (await rateLimitedGlobal("tts", clientIpOf(req))) {
         return NextResponse.json({ error: "rate-limited" }, { status: 429 });
       }
       // Hkratne enake zahteve delijo obljubo — brez dvojne sinteze.

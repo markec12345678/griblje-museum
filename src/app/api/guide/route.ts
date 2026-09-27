@@ -5,7 +5,7 @@ import {
   guideProviderTrail,
   type GuideMessage,
 } from "@/lib/guide";
-import { clientIpOf, rateLimited } from "@/lib/rate-limit";
+import { clientIpOf, rateLimitedGlobal } from "@/lib/rate-limit";
 import { GUIDE_LIMITS } from "@/lib/guide-limits";
 import { openRouterQuotaOf } from "@/lib/openrouter-llm";
 
@@ -52,7 +52,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "invalid-request" }, { status: 400 });
     }
 
-    if (rateLimited("guide", clientIpOf(req))) {
+    // Kvota: pomnilniško vedro, opt-in skupna prek baze (RATE_LIMIT_STORE=postgres).
+    if (await rateLimitedGlobal("guide", clientIpOf(req))) {
       return NextResponse.json({ error: "rate-limited" }, { status: 429 });
     }
 

@@ -424,3 +424,19 @@ model StatDay {
   @@index([day, kind])
   @@index([kind, key])
 }
+
+// --- Skupna kvota hitrosti (opt-in globalni način rate-limita) ---
+// Ena vrstica = en zabeležen zadetek (drseče okno). Privzeti način limiterja
+// ostane pomnilnik primerka (src/lib/rate-limit.ts); tabelo uporablja samo
+// RATE_LIMIT_STORE=postgres — kvota je takrat skupna vsem primerkom
+// (serverless), sicer pa ostane strežniško-primerniška. Vrstice brez
+// zadetkov v oknu počisti vzdrževalno brisanje v limiterju.
+model RateLimitHit {
+  id     String   @id @default(uuid())
+  scope  String // RATE_RULES ključ: guide | contributions | tts | reports
+  bucket String // vedro (IP ali drug ključ naročnika)
+  hitAt  DateTime @default(now())
+
+  @@index([scope, bucket, hitAt])
+  @@index([hitAt])
+}
