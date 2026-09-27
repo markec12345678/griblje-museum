@@ -1,6 +1,11 @@
 /**
  * Podatkovna migracija SQLite → Neon PostgreSQL (issue #27/A1, dopolnilo T).
  *
+ * ZGODOVINSKA SKRIPTA — enkratni prehod je izveden in validiran; ostaja v
+ * repozitoriju kot zapis postopka. Datoteka `db/custom.db` ni več del
+ * repozitorija (`.gitignore`); skripta jo po potrebi prebere iz lokalne
+ * kopije ali prek `--sqlite <pot>`.
+ *
  * Branje: db/custom.db (stari SQLite vir, bun:sqlite — brez odvisnosti od
  *         Prisma odjemalca, ker je shema že preklopljena na postgresql).
  * Pisanje: DATABASE_URL / DIRECT_URL (PostgreSQL, prek pg).

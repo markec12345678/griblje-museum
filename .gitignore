@@ -74,3 +74,8 @@ research-griblje/ps-n83/reread-crops/
 research-griblje/a01/reread-crops/
 research-griblje/atlas-1825/__pycache__/
 research-griblje/atlas-1825/pass4b/crops/
+
+# Zapuščinska SQLite baza (pred prehodom A1) — ni več del repozitorija.
+# Enoten vir resnice: Neon PostgreSQL (docs/DEPLOYMENT.md §1); zgodovinski
+# posnetek ostane v lokalni kopiji in varnostnih kopijah (docs/BACKUP-RESTORE.md).
+/db/custom.db
