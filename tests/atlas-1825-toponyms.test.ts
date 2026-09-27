@@ -162,7 +162,7 @@ describe("toponym-register-1825 v1 [val 62]", () => {
     expect(ids).toContain("NR-13");
     expect(ids.filter((i: string) => i === "NR-12").length).toBe(1);
     expect(ids.filter((i: string) => i === "NR-13").length).toBe(1);
-    expect(neg.negatives_total).toBe(13);
+    expect(neg.negatives_total).toBe(14); // + NR-14 (val 83: celostranski re-read meji)
     const nr12 = neg.negatives.find((n: { neg_id: string }) => n.neg_id === "NR-12");
     expect(nr12.result).toContain("NOT FOUND");
     expect(nr12.next_source).toContain("p56");
