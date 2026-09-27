@@ -16,12 +16,20 @@
  *
  * Obseg pomnilnika: strežniško-primerek (razvoj, Vercel funkcija). V
  * serverless okolju je kvota razpetih primerkov vsota kvot primerkov —
- * izrecno dokumentirano omejitev; nadaljnja razširitev (skupna baza kvot)
- * bi bila ločen infrastrukturni korak, ne te module.
+ * izrecno dokumentirano omejitev.
+ *
+ * GLOBALNI NAČIN (opt-in, ločen infrastrukturni korak): z
+ * `RATE_LIMIT_STORE=postgres` drago kritične poti (AI kustos, TTS) beleže
+ * zadetke v tabelo `RateLimitHit` — kvota je takrat skupna vsem primerkom.
+ * Pomnilniški limiter ostane vedno v roli varovalke (hitri prvi preverbi
+ * in odpadna pot, če baza ni dosegljiva — fail-open, da izpad baze ne
+ * ugasi muzeja). Privzeto (brez spremenljivke) se vedenje NE spremeni.
  *
  * Puščanje pomnilnika: vedra brez zadetkov v oknu se ob vzdrževalnem
  * pragu izločijo (stare implementacije so vedra hranile večno).
  */
+
+import { db } from "@/lib/db";
 
 /** Pravilo: dovoljeno število zadetkov v drsečem oknu. */
 export type RateRule = { readonly count: number; readonly windowMs: number };
@@ -86,4 +94,63 @@ export function clientIpOf(request: Request): string {
   const fwd = request.headers.get("x-forwarded-for");
   if (fwd) return fwd.split(",")[0]!.trim();
   return request.headers.get("x-real-ip") ?? "local";
+}
+
+/* --- Globalna kvota (opt-in: RATE_LIMIT_STORE=postgres) ------------------- */
+
+/** Shramba zadetkov: prek Prisme (produkcija) ali vbrizgana (testi). */
+export type RateLimitDeps = {
+  recordHit: (scope: RateScope, bucket: string, hitAt: Date) => Promise<void>;
+  countHits: (scope: RateScope, bucket: string, since: Date) => Promise<number>;
+  deleteStale: (olderThan: Date) => Promise<void>;
+};
+
+const prismaDeps: RateLimitDeps = {
+  recordHit: (scope, bucket, hitAt) =>
+    db.rateLimitHit.create({ data: { scope, bucket, hitAt } }).then(() => undefined),
+  countHits: (scope, bucket, since) =>
+    db.rateLimitHit.count({ where: { scope, bucket, hitAt: { gte: since } } }),
+  deleteStale: (olderThan) =>
+    db.rateLimitHit.deleteMany({ where: { hitAt: { lt: olderThan } } }).then(() => undefined),
+};
+
+/** Privzeta shramba: pomnilnik, razen če je izrecno zahtevan postgres. */
+function globalStore(): "memory" | "postgres" {
+  return process.env.RATE_LIMIT_STORE === "postgres" ? "postgres" : "memory";
+}
+
+/** Najdaljše okno med pravili — prag vzdrževalnega brisanja tabele. */
+const MAX_WINDOW_MS = Math.max(...Object.values(RATE_RULES).map((r) => r.windowMs));
+
+/**
+ * Kvota, vidna VSEM primerkom (serverless). V pomnilniškem načinu je
+ * vedno enakovredna rateLimited(); v postgres načinu zadetek zabeleži v
+ * bazo in šteje drseče okno po tabeli — pomnilniška kvota pa ostane
+ * varovalka: če baza pade, nadaljujemo z njo (fail-open, izpad baze ne
+ * ugasi muzeja; strošek modela je cenejši od nedelujočega vodnika).
+ */
+export async function rateLimitedGlobal(
+  scope: RateScope,
+  ip: string,
+  now = Date.now(),
+  opts: { deps?: RateLimitDeps; store?: "memory" | "postgres" } = {},
+): Promise<boolean> {
+  const store = opts.store ?? globalStore();
+  if (store === "memory") return rateLimited(scope, ip, now);
+
+  const deps = opts.deps ?? prismaDeps;
+  const rule = RATE_RULES[scope];
+  try {
+    await deps.recordHit(scope, ip, new Date(now));
+    const count = await deps.countHits(scope, ip, new Date(now - rule.windowMs));
+    if (count > rule.count) return true;
+    // Vzdrževanje: redko in stransko — zastarele vrstice prek najdaljšega okna.
+    if (Math.random() < 0.02) {
+      await deps.deleteStale(new Date(now - MAX_WINDOW_MS - 60_000)).catch(() => undefined);
+    }
+    return false;
+  } catch {
+    // Baza ni dosegljiva: pomnilniška kvota kot varovalka (nikoli ne vržemo napake v ruta).
+    return rateLimited(scope, ip, now);
+  }
 }

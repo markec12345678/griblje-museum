@@ -29,6 +29,7 @@ zgodovinski vir podatkov; aplikacija je ne uporablja več.
 | `DIRECT_URL` | Vercel env + `.env` | direkt endpoint — izključno `prisma migrate` (shadow DB ne sme skozi pooler) |
 | `NEXT_PUBLIC_SITE_URL` | Vercel env | canonical domena sitemap/robots (sicer privzeta iz `lib/site.ts`) |
 | `ZAI_CONFIG` ali `ELEVENLABS_API_KEY` | Vercel env | TTS/AI kustos (brez: ti poti vračajo 503, ostalo deluje) |
+| `RATE_LIMIT_STORE` | Vercel env (opcijsko) | `postgres` = kvota AI kustosa in TTS skupna vsem primerkom (tabela `RateLimitHit`); brez nastavitve: pomnilnik primerka (vedenje nespremenjeno) |
 
 Oblika niza: `postgresql://<uporabnik>:<geslo>@<host>/<baza>?sslmode=require`.
 
