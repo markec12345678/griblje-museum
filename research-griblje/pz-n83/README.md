@@ -6,3 +6,4 @@
 - `sheets/` — kontakne plošče (PREHOD 1: struktura); `crops/` — delovni izrezki; `z-*.jpeg` — dokazni izrezki (ključna branja, 2 prehoda)
 - Builder: `../atlas-1825/build-pz-1825.py` → `../atlas-1825/pz-konskripcija-1830.json` (invarianti I1–I3 fail-fast)
 - **Val 80 (F-PZ-17)**: VAČ topološka izčrpnost — `pdfPageImage` = fiksna 608px predogleda; session IIIF raster = ovitek 100×50; OCR sloj prazen; PDF = 1 rastri/stran (~150 dpi) → **nativi so maksimum portala**; nativna re-digitation variančnih celic: `../raw-web-val80-2026-10/` (crops-v80/, anchors.json, vlm/, redigitize-v80.mts)
+- **Val 81 (F-PZ-12 RESOLVED)**: band-transkripcija p43–47 @nativno — 40 pasov (5 strani × 8, h=328/korak=298/30 px preklop) + 14 x3 zoomov + 54 VLM klicev + direkten odtis; soglasje ≥ 2 neodvisna branja; struktura 43–47 korigirana (klasni Ertrag koeficienti, NE per-parcelno): `../raw-web-val81-2026-09/` (crops-v81/ 95 datotek, vlm/ 54 JSON+54 raw, bandread-v81.mts, zoom-manifest.json)
