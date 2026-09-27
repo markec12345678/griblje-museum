@@ -1,0 +1,33 @@
+# Git LFS — samo za prihodnje datoteke (issue: arhivska higiena)
+#
+# Ozadje: research-griblje/ je zrasla na ~780 MB (posnetki listov, PDF,
+# fotografije arhivskih enot). Zgodovine NE prepisujemo (to bi bilo
+# destruktivno in bi zahtevalo vsiljen ponovni klon vsem sodelavcem);
+# namesto tega od zdaj naprej vse nove binarne raziskovalne datoteke
+# usmerjamo v Git LFS, da rast zgodovine ostane linearna in majhna.
+#
+# Obstoječe datoteke ostanejo navadni bloobi — pretvorba obstoječih v LFS
+# (`git lfs migrate import --no-rewrite` ali `--everything`) je ločena
+# odločitev: za 780 MB je treba pretehtati kvote GitHub LFS (shranjevanje
+# in pasovna širina) glej CONTRIBUTING.md in PR opis.
+#
+# Poizvedbe (JSON artefakti, primerjave, registri) ostanejo navadna
+# besedila — diffi in pregledi morajo ostati berljivi, testi pa jih
+# berejo neposredno.
+
+# Raziskovalni posnetki listov in fotografije (največja rast)
+research-griblje/**/*.png filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.tif filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.tiff filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.webp filter=lfs diff=lfs merge=lfs -text
+
+# Skenirani arhivski dokumenti
+research-griblje/**/*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Arhivi in zvočni posnetki ustnih pričevanj
+research-griblje/**/*.zip filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.tar.gz filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+research-griblje/**/*.wav filter=lfs diff=lfs merge=lfs -text
