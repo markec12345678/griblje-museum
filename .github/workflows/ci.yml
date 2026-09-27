@@ -43,7 +43,7 @@ jobs:
       DIRECT_URL: postgresql://museum:museum@localhost:5432/museum
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: oven-sh/setup-bun@v2
         with:
@@ -89,7 +89,7 @@ jobs:
       DIRECT_URL: postgresql://museum:museum@localhost:5432/museum
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: oven-sh/setup-bun@v2
         with:
