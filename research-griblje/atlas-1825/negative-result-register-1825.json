@@ -8,7 +8,7 @@
   "ps": "ps-n83/register.json (1.073 vrstic / 55-143 strani, val 57)",
   "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original"
  },
- "negatives_total": 13,
+ "negatives_total": 14,
  "negatives": [
   {
    "neg_id": "NR-01",
@@ -126,6 +126,15 @@
    "result": "NOT FOUND — wohnort_original is empty except 3× self-form 'Grüble' (p3/4/5)",
    "why": "PT records building parcels of local owners; external owners appear in PS/PUA, not PT",
    "next_source": "none — negative is structural"
+  },
+  {
+   "neg_id": "NR-14",
+   "searched": "soglasje ≥ 2 pri celostranskem nativnem VLM re-readu PS p56–143 (imena, kultur kategorije, površine, Fürtrag verige)",
+   "source": "PS N83 (pass1 val 82 vs pass2 val 83, 88+88 klicev)",
+   "pages": "p56-p143",
+   "result": "DELO: struktura 1798≈1797 + classe/ertrag/capital ≥ 92 % + Wald 54=54 + stand 82 % / wohnort 86 %; NE DOSEŽENO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide, Acker↔Wald), no_blatt 49 %, jaethe 71,9 % / klafter 68,4 % (numeq), stolpčna dodelitev Jaethe↔Klafter variira, Fürtrag soglasje 18/100, Reb omembe 14→6",
+   "why": "celostranski nativni JPG (~1200×1020): Kurrent kurziva imen in dvovrstičnih kultur opisov pod resolucijo; stolpčni sidri manjkajo — val 80/81 je dokazal, da pasovni/zoom izrezki dvignejo zanesljost",
+   "next_source": "pasovni/zoom re-read s kolonskimi sidri (vzorec val 80/81) — analysis-v4 F-PV-04 + next_reads"
   }
  ]
 }
