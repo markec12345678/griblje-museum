@@ -307,3 +307,188 @@ describe("val 82 — PS N83 transkripcija DOKONČANA (p56–143, analysis-v3)", 
     expect(existsSync(join(RG, "raw-web-val82-2026-10", "ps-transcribe-v82.mts"))).toBe(true);
   });
 });
+
+const analysisV4 = JSON.parse(
+  readFileSync(join(RG, "ps-n83", "analysis-v4.json"), "utf8"),
+) as {
+  val: string;
+  inputs: {
+    pages_reread: number;
+    rows_pass1: number;
+    rows_pass2: number;
+    rowcount_mismatch_pages: number;
+    full_agree_rows: number;
+    partial_rows: number;
+    conflicts_high: number;
+    conflicts_medium: number;
+    conflicts_format: number;
+    totals_pairs: number;
+    totals_agree: number;
+    field_agreement: Record<string, { exact_pct: number | null; numeq_pct: number | null; total: number }>;
+    kultur_first_token_agree_pct: number;
+    kultur_swap_top: { pair: string; count: number }[];
+  };
+  findings: {
+    "F-PV-03": { status: string; reb_rows_pass1: number; reb_pass2_reproduced: number; reb_pass2_rows: number; reb_qklft_pass1_pure: number; reb_qklft_pass2_pure: number; reb_qklft_pv_target: number };
+    "F-PV-02": { status: string; wald_rows_pass1_p56_143: number; wald_rows_pass2: number };
+    "F15": { status: string; no_blatt_exact_pct: number; no_blatt_gt1000_pass1: number; no_blatt_gt1000_pass2: number };
+    "F11": { status: string; totals_pairs: number; totals_agree: number };
+    "F-PV-04": { status: string; strong_fields: Record<string, number>; weak_fields: Record<string, number> };
+  };
+  next_reads: string[];
+};
+
+const comparisonV83 = JSON.parse(
+  readFileSync(join(RG, "ps-n83", "reread-v83", "comparison.json"), "utf8"),
+) as {
+  meta: { val: string; honesty: string };
+  global: {
+    rows1_total: number;
+    rows2_total: number;
+    rowcount_mismatch_pages: number;
+    extra_rows_pass1: number;
+    extra_rows_pass2: number;
+    full_agree_rows: number;
+    partial_rows: number;
+    quant_confirmed_rows: number;
+    conflicts_high: number;
+    conflicts_medium: number;
+    conflicts_format: number;
+    field_agreement: Record<string, { exact_pct: number | null; numeq_pct: number | null; total: number }>;
+    totals_pairs: number;
+    totals_agree: number;
+  };
+  reb: { pass1_rows: number; pass1_reproduced_by_pass2: number; qklft_pass1_pure: number; qklft_pass2_pure: number; qklft_pv_target: number };
+  pages: { page: number; rows1: number; rows2: number; full_agree: number; quant_confirmed: number }[];
+  conflicts: { page: number; row_idx: number; field: string; severity: string; pass1: string; pass2: string }[];
+};
+
+describe("val 83 — PS N83 neodvisen re-read p56–143 (2. prehod, analysis-v4)", () => {
+  it("obstaja in je val 83", () => {
+    expect(analysisV4.val).toBe("83");
+    expect(comparisonV83.meta.val).toBe("83");
+  });
+
+  it("88/88 strani prebranih 2×, surovine brez ERROR (guard konsistenca)", () => {
+    expect(analysisV4.inputs.pages_reread).toBe(88);
+    expect(comparisonV83.pages.length).toBe(88);
+    for (let pg = 56; pg <= 143; pg++) {
+      const d = JSON.parse(
+        readFileSync(join(RG, "raw-web-val83-2026-10", "ps-vlm", `p${String(pg).padStart(3, "0")}.json`), "utf8"),
+      ) as { ERROR?: string; rows: unknown[] };
+      expect(d.ERROR).toBeUndefined();
+      expect(Array.isArray(d.rows)).toBe(true);
+    }
+  });
+
+  it("struktura neodvisno reproducirana: 1798 vs 1797 vrstic, 23 strani ±1", () => {
+    expect(comparisonV83.global.rows1_total).toBe(1798);
+    expect(comparisonV83.global.rows2_total).toBe(1797);
+    expect(comparisonV83.global.rowcount_mismatch_pages).toBe(23);
+    // full_agree + partial pokrije vsak matched par (Σ min(n1,n2) = 1779; extras dokumentirani)
+    const matched = comparisonV83.pages.reduce((s, p) => s + Math.min(p.rows1, p.rows2), 0);
+    expect(comparisonV83.global.full_agree_rows + comparisonV83.global.partial_rows).toBe(matched);
+    expect(comparisonV83.global.extra_rows_pass1).toBe(19);
+    expect(comparisonV83.global.extra_rows_pass2).toBe(18);
+  });
+
+  it("soglasje matrika: numerična hrbtenica ≥ 92 % (classe/ertrag/capital), imena 19,6 %, kultur 47,3 %", () => {
+    const fa = comparisonV83.global.field_agreement;
+    expect(fa["classe"].exact_pct).toBeGreaterThanOrEqual(95);
+    expect(fa["ertrag_fl"].exact_pct).toBeGreaterThanOrEqual(95);
+    expect(fa["ertrag_kr"].exact_pct).toBeGreaterThanOrEqual(92);
+    expect(fa["capital_fl"].exact_pct).toBeGreaterThanOrEqual(95);
+    expect(fa["capital_kr"].exact_pct).toBeGreaterThanOrEqual(96);
+    expect(fa["name_raw"].exact_pct).toBeLessThan(25);
+    expect(fa["kultur"].exact_pct).toBeLessThan(50);
+    expect(fa["no_blatt"].exact_pct).toBeLessThan(55);
+    expect(fa["jaethe"].numeq_pct).toBeGreaterThan(70);
+    expect(fa["klafter"].numeq_pct).toBeGreaterThan(68);
+  });
+
+  it("kategorije zamenjav kultur dokumentirane (Wiese↔Hutweide, Acker↔Wald) — nič tiho popravljeno", () => {
+    const pairs = analysisV4.inputs.kultur_swap_top.map((s) => s.pair);
+    expect(pairs.some((p) => p.includes("wiese") && p.includes("hutweide"))).toBe(true);
+    expect(pairs.some((p) => p.includes("acker") && p.includes("wiese"))).toBe(true);
+    expect(comparisonV83.meta.honesty).toContain("NIČ tiho popravljenih");
+  });
+
+  it("F-PV-03: re-read NI dvignil na 2× — pass2 skrajša omembe 14→6, kvantitativa neizvedljiva", () => {
+    const f = analysisV4.findings["F-PV-03"];
+    expect(f.status).toContain("KVALITATIVNO-POTRJENO-V82");
+    expect(f.reb_rows_pass1).toBe(14);
+    expect(f.reb_pass2_rows).toBe(6);
+    expect(f.reb_qklft_pv_target).toBe(11865);
+    expect(f.reb_qklft_pass1_pure).toBe(6304);
+    expect(f.status).toContain("NI dvignil");
+  });
+
+  it("F-PV-02: Wald raba reproducirana 54=54 (obstoj 2× dokumentiran), status OPEN", () => {
+    const f = analysisV4.findings["F-PV-02"];
+    expect(f.wald_rows_pass1_p56_143).toBe(54);
+    expect(f.wald_rows_pass2).toBe(54);
+    expect(f.status).toContain("OPEN");
+  });
+
+  it("F15: no_blatt semantika nezanesljiva v OBEH prehodih (pass2: 445 vrstic > 1000)", () => {
+    const f = analysisV4.findings["F15"];
+    expect(f.no_blatt_gt1000_pass1).toBe(379);
+    expect(f.no_blatt_gt1000_pass2).toBe(445);
+    expect(f.no_blatt_exact_pct).toBeLessThan(55);
+    expect(f.status).toContain("REVIEW");
+  });
+
+  it("F11: Fürtrag veriga ŠIBKO reproducirana celostransko (18/100), ostaja surova", () => {
+    const f = analysisV4.findings["F11"];
+    expect(f.totals_pairs).toBe(100);
+    expect(f.totals_agree).toBe(18);
+    expect(f.status).toContain("ŠIBKO");
+  });
+
+  it("F-PV-04 (nova): metodični meji celostranskega re-reada dokumentirana", () => {
+    const f = analysisV4.findings["F-PV-04"];
+    expect(f.status).toContain("NR-14");
+    expect(f.strong_fields["classe"]).toBeGreaterThanOrEqual(95);
+    expect(f.weak_fields["name_raw"]).toBeLessThan(25);
+  });
+
+  it("NR-14 v negativnem registru (negatives_total 14)", () => {
+    const nr = JSON.parse(
+      readFileSync(join(RG, "atlas-1825", "negative-result-register-1825.json"), "utf8"),
+    ) as { negatives_total: number; negatives: { neg_id: string; next_source: string }[] };
+    expect(nr.negatives_total).toBe(14);
+    const nr14 = nr.negatives.find((n) => n.neg_id === "NR-14");
+    expect(nr14).toBeDefined();
+    expect(nr14!.next_source).toContain("pasovni/zoom");
+  });
+
+  it("varovalka: register + page-records BIT-PO-BIT (p56–143 še v82-native-pass1)", () => {
+    const fresh = psRegister.filter((r) => r.page > 55);
+    expect(fresh.length).toBe(1798);
+    expect(fresh.every((r) => r.reading_pass === "v82-native-pass1")).toBe(true);
+    expect(psPages.filter((p) => p.page > 55).every((p) => p.reading_pass === "v82-native-pass1")).toBe(true);
+  });
+
+  it("source-coverage: val 83 + SRC-PS opomba z re-read rezultatom (§22)", () => {
+    const sc = JSON.parse(
+      readFileSync(join(RG, "atlas-1825", "source-coverage-1825.json"), "utf8"),
+    ) as { val: number; sources: { source_id: string; note: string }[]; transcription: { PS: { rows: number; passes: number } } };
+    expect(sc.val).toBe(83);
+    expect(sc.transcription.PS.rows).toBe(2871);
+    expect(sc.transcription.PS.passes).toBe(2);
+    const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
+    expect(ps.note).toContain("val 83");
+    expect(ps.note).toContain("nič tiho popravljeno");
+  });
+
+  it("next_reads: pasovni/zoom re-read na 1. mestu (NR-14 rešitvena pot)", () => {
+    expect(analysisV4.next_reads[0]).toContain("PASOVNI/ZOOM");
+  });
+
+  it("deterministična skripta val 83 obstajajo", () => {
+    expect(existsSync(join(RG, "raw-web-val83-2026-10", "ps-transcribe-v83.mts"))).toBe(true);
+    expect(existsSync(join(RG, "ps-n83", "build-compare-v83.py"))).toBe(true);
+    expect(existsSync(join(RG, "ps-n83", "build-analysis-v4.py"))).toBe(true);
+    expect(existsSync(join(RG, "ps-n83", "build-coverage-v83.py"))).toBe(true);
+  });
+});

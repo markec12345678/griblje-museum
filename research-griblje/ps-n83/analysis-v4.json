@@ -1,0 +1,205 @@
+{
+ "title": "PS N83 analiza v4 — val 83: neodvisen re-read p56–143 (celostranski) — soglasje matrika po poljih; struktura + numerična hrbtenica potrjeni, imena/kultur/površine ostajajo PROVISIONAL",
+ "val": "83",
+ "date": "2026-09-27",
+ "method": {
+  "protocol": "2. neodvisen prehod: 88 svežih VLM klicev @nativno (ps-transcribe-v83.mts, prompt VERBATIM val 57/82; 0 napak, 0 retry, 0×429) → build-compare-v83.py v2 (deterministična primerjava RAW obeh prehodov, match po indeksu strani)",
+  "independence": "prompt ne vsebuje ničesar iz pass1 (isti generični prompt); svež klic = neodvisen glas (vzorec val 80)",
+  "agreement_levels": "EXACT (strip + belina) in NUMEQ (samo števke — format artefakti '+ 56' = '+56'); soglasje ≥ 2 = EXACT ali NUMEQ pri numeričnih poljih",
+  "reading_honesty": "kolizije = variant vrednosti pass2 (reread-v83/comparison.json) — NIČ tiho popravljeno; register.json/page-records.json BIT-PO-BIT; runtime src/data NESPREMENJEN",
+  "kg_impact": "KG v1.8 (20ec8a0a) / story_id / timeline / deleži NESPREMENJENI; SRC-PS coverage posodobitev v research artefaktu (build-coverage-v83.py); KG vozlišče 'PARTIAL 55/143' opomba čaka KG v1.9 rebuild (kaskada story_id — ločen val)",
+  "method_limit": "CELOSTRANSKI nativni re-read: dovolj za strukturo + numerično hrbtenico; NE dovolj za imena (19,6 %), kultur kategorije (47,3 %) in absolutne površine (stolpčna dodelitev variira) → rešitvena pot = pasovni/zoom re-read po vzorcu val 80/81 (kolonsko sidrani izrezki)"
+ },
+ "inputs": {
+  "pages_reread": 88,
+  "rows_pass1": 1798,
+  "rows_pass2": 1797,
+  "rowcount_mismatch_pages": 23,
+  "extra_rows_pass1": 19,
+  "extra_rows_pass2": 18,
+  "full_agree_rows": 40,
+  "partial_rows": 1739,
+  "rows_conflict_high": 1362,
+  "conflicts_high": 2337,
+  "conflicts_medium": 5053,
+  "conflicts_format": 15,
+  "totals_pairs": 100,
+  "totals_agree": 18,
+  "field_agreement": {
+   "no_blatt": {
+    "exact_pct": 49.02,
+    "numeq_pct": 49.02,
+    "total": 1779
+   },
+   "haus_no": {
+    "exact_pct": 69.48,
+    "numeq_pct": 69.48,
+    "total": 1779
+   },
+   "name_raw": {
+    "exact_pct": 19.62,
+    "numeq_pct": 19.62,
+    "total": 1779
+   },
+   "name_resolved": {
+    "exact_pct": 15.63,
+    "numeq_pct": 15.63,
+    "total": 1779
+   },
+   "stand": {
+    "exact_pct": 82.12,
+    "numeq_pct": 82.12,
+    "total": 1779
+   },
+   "wohnort": {
+    "exact_pct": 86.0,
+    "numeq_pct": 86.0,
+    "total": 1779
+   },
+   "kultur": {
+    "exact_pct": 47.27,
+    "numeq_pct": 47.27,
+    "total": 1779
+   },
+   "jaethe": {
+    "exact_pct": 71.61,
+    "numeq_pct": 71.89,
+    "total": 1779
+   },
+   "klafter": {
+    "exact_pct": 68.18,
+    "numeq_pct": 68.41,
+    "total": 1779
+   },
+   "classe": {
+    "exact_pct": 95.84,
+    "numeq_pct": 95.84,
+    "total": 1779
+   },
+   "ertrag_fl": {
+    "exact_pct": 95.11,
+    "numeq_pct": 95.11,
+    "total": 1779
+   },
+   "ertrag_kr": {
+    "exact_pct": 92.52,
+    "numeq_pct": 92.86,
+    "total": 1779
+   },
+   "capital_fl": {
+    "exact_pct": 95.0,
+    "numeq_pct": 95.0,
+    "total": 1779
+   },
+   "capital_kr": {
+    "exact_pct": 96.35,
+    "numeq_pct": 96.35,
+    "total": 1779
+   }
+  },
+  "kultur_first_token_agree_pct": 39.07,
+  "kultur_swap_top": [
+   {
+    "pair": "acker ↔ wiese",
+    "count": 27
+   },
+   {
+    "pair": "jflur ↔ jäthn",
+    "count": 16
+   },
+   {
+    "pair": "acker ↔ gärten",
+    "count": 16
+   },
+   {
+    "pair": "schwingst ↔ schwingstätten",
+    "count": 15
+   },
+   {
+    "pair": "hutweide ↔ wiese",
+    "count": 14
+   },
+   {
+    "pair": "schiniguthe ↔ schinnguthe",
+    "count": 14
+   },
+   {
+    "pair": "gartn ↔ gfällig",
+    "count": 12
+   },
+   {
+    "pair": "ackerland ↔ gebüsch",
+    "count": 12
+   },
+   {
+    "pair": "gartn ↔ jahinga",
+    "count": 11
+   },
+   {
+    "pair": "eidt ↔ eldrich",
+    "count": 11
+   }
+  ]
+ },
+ "findings": {
+  "F-PV-03": {
+   "status": "KVALITATIVNO-POTRJENO-V82 (re-read NI dvignil na 2× — pass2 reproducira 6/14 Reb omemb)",
+   "reb_rows_pass1": 14,
+   "reb_pass2_reproduced": 0,
+   "reb_pass2_rows": 6,
+   "reb_qklft_pass1_pure": 6304,
+   "reb_qklft_pass2_pure": 216,
+   "reb_qklft_pv_target": 11865,
+   "statement": "Pass2 celostransko še AGRESIVNEJE SKRAJŠA kultur stolpec (p98: 'Acker, Wiese, Reb, Hofraithen' → 'Acker') — Reb omembe 14 (pass1) → 6 (pass2), reproduciranih 0/14 v QUANT-CONFIRMED preseku. Kvantitativna uskladitev s PV (7 J 665 K) NI IZVEDLJIVA na celostranski ravni: stolpčna dodelitev Jaethe↔Klafter variira med prehodi (p98: K='524' ↔ J='324') + števk varianca (5↔3, 0↔7). EKISTENCA vinogradnih parcel ostaja potrjena (pass1 + avtorski odtis + napoved val 74), kvantitativa pa čaka PASOVNI/ZOOM re-read s kolonskimi sidri (vzorec val 80/81). Nič tiho razrešeno (§4)."
+  },
+  "F-PV-02": {
+   "status": "OPEN (re-read: Wald obstoj v pass2 reproduciran)",
+   "wald_rows_pass1_p56_143": 54,
+   "wald_rows_pass2": 54,
+   "wald_rows_total_pass1": 142,
+   "statement": "Pass2 neodvisno reproducira Wald rabo (54 vrstic vs 54 v pass1) — obstoj Wald rabe v PS 1825 je 2× dokumentiran; napetost proti PV (Wälder = 0) OSTAJA OPEN. Kvantitativna razlaga (Weidewald/Ödungen kontekst) čaka pasovni re-read; nič tiho razrešeno."
+  },
+  "F15": {
+   "status": "GENERALIZIRANA + RE-READ: vzorec ostaja REVIEW",
+   "no_blatt_exact_pct": 49.02,
+   "no_blatt_gt1000_pass1": 379,
+   "no_blatt_gt1000_pass2": 445,
+   "f15_page_96_100_conflicts": 19,
+   "statement": "'Nro. des Blattes' soglasje med prehodoma le 49.02 % (rimske III → 111, Uebersetzung zaporedja > 1000; pass2 neodvisno najde 445 takih vrstic vs 379 v pass1) — semantika stolpca ostaja NEZANESLJIVA v obeh prehodih; vse vrednosti KOT PREBRANE (REVIEW); p96/p100 kolizije: 19. Nič popravljenih tiho."
+  },
+  "F11": {
+   "status": "RE-READ: vsote ŠIBKO reproducirane na celostranski ravni",
+   "totals_pairs": 100,
+   "totals_agree": 18,
+   "totals_disagree": 82,
+   "statement": "Summa/Fürtrag vsote p56–143: soglasje label+value le 18/100 vnosov — celostranski nativni prehod NE zadostuje za verifikacijo verige (vzorec val 61 za p1–55 je bil crop-based). Veriga ostaja SUROVA; preverba čaka pasovni re-read."
+  },
+  "F-PV-04": {
+   "id_note": "NOVA NAJDBA (val 83) — metodični meji celostranskega re-reada",
+   "status": "DOKUMENTIRANA (negative-result NR-14)",
+   "strong_fields": {
+    "classe": 95.84,
+    "ertrag_fl": 95.11,
+    "ertrag_kr": 92.52,
+    "capital_fl": 95.0,
+    "capital_kr": 96.35
+   },
+   "weak_fields": {
+    "name_raw": 19.62,
+    "kultur": 47.27,
+    "kultur_first_token_pct": 39.07,
+    "no_blatt": 49.02,
+    "jaethe_numeq_pct": 71.89,
+    "klafter_numeq_pct": 68.41
+   },
+   "statement": "Celostranski nativni VLM re-read (2× pass) ZADOSKAŽE: strukturo (1798≈1797 vrstic, 23 strani ±1) in numerično hrbtenico (classe/ertrag/capital ≥ 92 % soglasja; stand 82 %, wohnort 86 %) — NE pa imen (19,6 %; Kurrent + ditto ojačanje), kultur kategorij (47,3 % EXACT; sistemske zamenjave Wiese↔Hutweide, Acker↔Wald) in absolutnih površin (stolpčna dodelitev variira). Per-parcelne trditve po §4: samo polja/celice s soglasjem ≥ 2; ostalo čaka pasovni/zoom re-read (NR-14 → next_reads)."
+  }
+ },
+ "next_reads": [
+  "PS p56–143 PASOVNI/ZOOM re-read s kolonskimi sidri (vzorec val 80/81) — imena, kultur kategorije, jaethe/klafter stolpčna dodelitev, Fürtrag veriga (NR-14)",
+  "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)",
+  "KG v1.9 rebuild: SRC-PS vozlišče (PARTIAL 55/143 → TRANSCRIBED 143/143) + kaskada story_id (§22) — ločen val",
+  "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)",
+  "izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04), šolski list / SA Podzemelj / SI AS 749 / Zucchelli"
+ ]
+}
