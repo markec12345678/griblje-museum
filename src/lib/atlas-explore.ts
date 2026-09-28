@@ -83,7 +83,8 @@ const TIER_EXACT: Record<string, ExploreTier> = {
   SINGLE_SOURCE: "VERJETNO",
   PROVISIONAL: "VERJETNO",
   PARTIAL: "VERJETNO",
-  TRANSCRIBED_PARTIAL: "VERJETNO",
+  TRANSCRIBED_PARTIAL: "VERJETNO", // legačni KG sloji (< val 89)
+  TRANSCRIBED_PROVISIONAL: "VERJETNO", // val 89: prepis 143/143, branja PROVISIONAL (F-PV-04/NR-14)
   UNKNOWN_SEMANTICS: "VERJETNO",
   CONFLICT: "KONFLIKTNO",
   "REVIEW-CONFLICT": "KONFLIKTNO",
@@ -233,6 +234,8 @@ export type LandUseBucket =
   | "gozd"
   | "vrt"
   | "pašnik"
+  | "dvorišče"
+  | "vinograd"
   | "drugo"
   | "UNKNOWN"
   | "NONE";
@@ -244,6 +247,8 @@ export const LAND_USE_ORDER: LandUseBucket[] = [
   "gozd",
   "vrt",
   "pašnik",
+  "dvorišče", // val 89: 1 parcela (Hofraithe) — projekcija 143/143 je pokazala novo kategorijo
+  "vinograd", // val 89: 1 parcela (Reb/Weingarten)
   "drugo",
   "UNKNOWN",
   "NONE",
@@ -310,6 +315,8 @@ export function parcelLandUseCounts(
     gozd: 0,
     vrt: 0,
     "pašnik": 0,
+    "dvorišče": 0, // val 89
+    "vinograd": 0, // val 89
     drugo: 0,
     UNKNOWN: 0,
     NONE: 0,

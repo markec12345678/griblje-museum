@@ -164,16 +164,16 @@ describe("PV 1825: integracija v KG v2.0 + engine + coverage", () => {
     nodes: { node_id: string; node_type: string; coverage?: string; uodid?: number }[];
   };
 
-  test("KG v2.0 (val 86): SRC-PV = TRANSCRIBED 1/1; ID-ji/stanja stabilni", () => {
-    expect(kg.val).toBe(86);
-    expect(kg.title).toBe("knowledge-graph-1825 v2.0");
+  test("KG v2.1 (val 89): SRC-PV = TRANSCRIBED 1/1; ID-ji/stanja stabilni", () => {
+    expect(kg.val).toBe(89);
+    expect(kg.title).toBe("knowledge-graph-1825 v2.1");
     const pvNode = kg.nodes.find((n) => n.node_id === "SRC-PV")!;
     expect(pvNode.coverage).toContain("TRANSCRIBED 1/1");
     expect(pvNode.coverage).toContain("val 74");
     expect(pvNode.uodid).toBe(373418);
     // stabilnost: nič novih/odstranjenih entitet
     const parcels = kg.nodes.filter((n) => n.node_type === "PARCEL");
-    expect(parcels.length).toBe(2467);
+    expect(parcels.length).toBe(2965);
   });
 
   test("zgodba vasi §18 omenja PV agregat (1221 J 1573 K) brez per-parcelnega ugibanja", () => {

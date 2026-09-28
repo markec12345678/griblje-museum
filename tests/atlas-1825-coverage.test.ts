@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v2.0 (val 86 — F-PV-05 vgradnja) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("6fb6fae8")).toBe(true); // val 86 KG v2.0
+  test("provenanca kaže na KG v2.1 (val 89 — projekcija 143/143) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("b4f5011c")).toBe(true); // val 89 KG v2.1
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -164,18 +164,18 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(native.located_a02_candidates_unique).toBe(3);
   });
 
-  test("parcele: 2467 = PUA 2035 (907 VER / 675 PART / 453 CONF) + PS 432 PARTIAL", () => {
+  test("parcele: 2965 = PUA 2035 (907 VER / 675 PART / 453 CONF) + PS 930 PARTIAL (projekcija 143/143, val 89)", () => {
     const c = byId("parcels");
-    expect(c.total).toBe(2467);
+    expect(c.total).toBe(2965);
     expect(c.VERIFIED).toBe(907);
-    expect(c.PARTIAL).toBe(1107); // PUA REVIEW 675 + PS 432
+    expect(c.PARTIAL).toBe(1605); // PUA REVIEW 675 + PS 930 (926 + 4 flag >3000)
     expect(c.CONFLICT).toBe(453);
   });
 
   test("parcelna geometrija: 0 dokumentiranih meja (nič 'lepih' parcel, §9)", () => {
     const c = byId("parcel_geometry");
-    expect(c.total).toBe(2467);
-    expect(c.NOT_FOUND).toBe(2467);
+    expect(c.total).toBe(2965);
+    expect(c.NOT_FOUND).toBe(2965);
     expect(c.VERIFIED).toBe(0);
   });
 
@@ -284,7 +284,7 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
       // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 81) + source-coverage (val 84) + izpeljani artefakti nosijo svoj val
-      expect([72, 74, 81, 83, 84, 86]).toContain(d.val);
+      expect([72, 74, 81, 83, 84, 86, 89]).toContain(d.val);
     }
   });
 
@@ -371,7 +371,7 @@ describe("uskladjenost z KG v1.4", () => {
     const kgf = kg as unknown as { node_stats: Record<string, number>; provenance: { kg_sha256?: string } };
     expect(kgf.node_stats.HOUSE).toBe(167);
     expect(kgf.node_stats.PERSON).toBe(488);
-    expect(kgf.node_stats.PARCEL).toBe(2467);
+    expect(kgf.node_stats.PARCEL).toBe(2965);
     expect(kgf.node_stats.BP).toBe(100);
     expect(kgf.node_stats.TOPONYM).toBe(37);
     expect(kgf.node_stats.SOURCE).toBe(13);

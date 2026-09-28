@@ -369,6 +369,8 @@ export function CadastreMapView() {
         case "gozd": return s.luGozd;
         case "vrt": return s.luVrt;
         case "pašnik": return s.luPastnik;
+        case "dvorišče": return s.luDvorisce;
+        case "vinograd": return s.luVinograd;
         case "drugo": return s.luDrugo;
         case "UNKNOWN": return s.luUnknown;
         case "NONE": return s.luNone;

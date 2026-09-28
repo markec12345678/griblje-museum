@@ -70,13 +70,13 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
   test("provenance: kg_sha256 + kg_val + deterministično + built_from = KG", () => {
     expect(graph.provenance.deterministic).toBe(true);
     expect(graph.provenance.built_from).toBe("knowledge-graph-1825.json");
-    expect(graph.provenance.kg_val).toBe(86); // KG v2.0 (val 86 vgradnja — kaskada story_id §22)
+    expect(graph.provenance.kg_val).toBe(89); // KG v2.1 (val 89 projekcija 143/143 — kaskada story_id §22)
     expect(graph.provenance.kg_sha256).toMatch(/^[a-f0-9]{64}$/);
   });
 
-  test("entitete po vrsti ujemajo KG (3.309 skupaj)", () => {
+  test("entitete po vrsti ujemajo KG (3.807 skupaj)", () => {
     const by = graph.stats.entities_by_type;
-    expect(by["PARCEL"]).toBe(2467);
+    expect(by["PARCEL"]).toBe(2965);
     expect(by["PERSON"]).toBe(488);
     expect(by["HOUSE"]).toBe(167);
     expect(by["BP"]).toBe(100);
@@ -118,9 +118,9 @@ describe("story-graph: §21 invarianti relacij", () => {
     expect(used.size).toBe(kgFile.claims.length);
   });
 
-  test("relacije po tipu: HAS_PARCEL 2.865, OWNER_OF 254, BP_BOUND_TO_HOUSE 119 …", () => {
+  test("relacije po tipu: HAS_PARCEL 3.187, OWNER_OF 254, BP_BOUND_TO_HOUSE 119 …", () => {
     const by = graph.stats.relations_by_type;
-    expect(by["HAS_PARCEL"]).toBe(2865);
+    expect(by["HAS_PARCEL"]).toBe(3187);
     expect(by["OWNER_OF"]).toBe(254);
     expect(by["OWNER_VARIANT_OF"]).toBe(224);
     expect(by["BP_BOUND_TO_HOUSE"]).toBe(119);
@@ -252,7 +252,7 @@ describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
     const ov = storyGraphOverview();
     expect(ov.ok).toBe(true);
     expect(ov.val).toBe(68);
-    expect(ov.stats.entities).toBe(3309);
+    expect(ov.stats.entities).toBe(3807);
     expect(ov.stats.story_atoms).toBe(4);
     const contract = ov.story_engine_contract as { required_fields: string[] };
     for (const f of ["story_id", "input_entity_ids", "used_claim_ids", "used_source_ids", "generation_timestamp", "prompt_version", "story_status"]) {

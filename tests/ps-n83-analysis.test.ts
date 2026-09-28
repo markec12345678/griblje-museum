@@ -473,11 +473,11 @@ describe("val 83 — PS N83 neodvisen re-read p56–143 (2. prehod, analysis-v4)
     expect(psPages.filter((p) => p.status === "READ").length).toBe(143);
   });
 
-  it("source-coverage: val 86 (regeneriran ob KG v2.0) + SRC-PS opomba z re-read + tile rezultatom (§22)", () => {
+  it("source-coverage: val 89 (regeneriran ob KG v2.1) + SRC-PS opomba z re-read + tile rezultatom (§22)", () => {
     const sc = JSON.parse(
       readFileSync(join(RG, "atlas-1825", "source-coverage-1825.json"), "utf8"),
     ) as { val: number; sources: { source_id: string; note: string }[]; transcription: { PS: { rows: number; passes: number } } };
-    expect(sc.val).toBe(86);
+    expect(sc.val).toBe(89); // val 89 regeneracija (vsebina bloka nespremenjena od val 86)
     expect(sc.transcription.PS.rows).toBe(2871);
     expect(sc.transcription.PS.passes).toBe(3);
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;

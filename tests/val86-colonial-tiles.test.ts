@@ -10,8 +10,8 @@
  *  3. vgradnja: register 2.871; 808 vrstic reading_pass v86-colonial-tiles;
  *     vsak popravek nosi snimko jaethe/klafter_pass1_v82 + jk_review;
  *     p1–55 + p143 NESPREMENJENA; 287 jk + 43 arbitraž + 3 N|K razdelitve
- *  4. §22 kaskada: KG v2.0 (sha 6fb6fae8) → story/timeline/coverage držijo isti sha;
- *     ID-ji entitet NESPREMENJENI (3.309/3.569/622/8/4)
+ *  4. §22 kaskada: KG v2.1 (val 89; prej v2.0 sha 6fb6fae8) → story/timeline/coverage držijo isti sha;
+ *     ID-ji entitet pri val 89: 3.807/3.891/622/8/4 (PS parcele 432→930)
  *  5. analysis-v6 determinističen (re-run byte-identno)
  *  6. Fürtrag kandidati zbrani (F11 — monotona kontrola čaka celotno verigo)
  */
@@ -199,15 +199,15 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
   });
 });
 
-describe("val 86 — §22 kaskada (KG v2.0 → story/timeline/coverage)", () => {
-  test("KG v2.0: naslov + val 86 + invariante čiste + ID-ji stabilni (3.309/3.569)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.0");
-    expect(kg.val).toBe(86);
+describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodobitev števcev)", () => {
+  test("KG v2.1: naslov + val 89 + invariante čiste + ID-ji (3.807/3.891)", () => {
+    expect(kg.title).toBe("knowledge-graph-1825 v2.1");
+    expect(kg.val).toBe(89);
     expect(kg.invariant_violations).toEqual([]);
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3309);
+    expect(nodes).toBe(3807);
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3569);
+    expect(edges).toBe(3891);
   });
 
   test("kaskada: story-graph/timeline držijo isti KG sha (pogodba §22)", () => {
@@ -230,11 +230,11 @@ describe("val 86 — §22 kaskada (KG v2.0 → story/timeline/coverage)", () => 
     expect(sha256(join(process.cwd(), "src", "data", "knowledge-graph-1825.json"))).toBe(kgSha);
   });
 
-  test("coverage: val 86 + PS 3 prehoda + SRC-PS opomba z vgradnjo", () => {
+  test("coverage: val 89 regeneracija (PS 3 prehoda + SRC-PS opomba z vgradnjo, val 86 vsebina)", () => {
     const sc = JSON.parse(readFileSync(join(ATLAS, "source-coverage-1825.json"), "utf8")) as {
       val: number; transcription: { PS: { rows: number; passes: number; note: string } };
     };
-    expect(sc.val).toBe(86);
+    expect(sc.val).toBe(89); // val 89 regeneracija (vsebina PS bloka nespremenjena od val 86)
     expect(sc.transcription.PS.rows).toBe(2871);
     expect(sc.transcription.PS.passes).toBe(3);
     expect(sc.transcription.PS.note).toContain("F-PV-05");

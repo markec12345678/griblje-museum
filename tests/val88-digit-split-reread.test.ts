@@ -14,9 +14,9 @@
  *  4. pravilo vrednosti: '|' = izraziti j|k, sicer klafter:=v88 + jaethe:=''
  *     (page-level F-PV-05: pisar piše Kläfter); snimki pass1 + v88 glasovi ohranjeni
  *  5. UNRESOLVED (2): vrednosti ostajajo pass1 + marker + opomba (p63 r13; p121 r0 = F-PV-03)
- *  6. §4/§22: p1–55 + p143 nedotaknjena; KG sha 6fb6fae8 (v86) NESPREMENJEN —
- *     kaskada val 88 NE pride do KG (j|k vrednosti niso KG polja); parcelni register
- *     ostane na val 61 stanju (projekcija 143/143 = ločen naslednji val, brez tihe rasti)
+ *  6. §4/§22: p1–55 + p143 nedotaknjena (v88 sloj); KG je bil ob valu 88 še na v86 stanju
+ *     (sha 6fb6fae8) — projekcija 143/143 jo je nasledila v valu 89 (KG v2.1, parcelni
+ *     register 930, KG kaskada v pravilnem vrstnem redu KG→story→timeline→coverage)
  *  7. F11 (val 86b): veriga/monotonost/veznost/aritmetika verdikti NESPREMENJENI ob v88
  *     vrednostih; artefakt regeneriran iz v88 registra (re-run byte-identno)
  */
@@ -218,15 +218,18 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
     }
   });
 
-  test("KG ostane na val 86 stanju (sha 6fb6fae8…) — j|k vrednosti niso KG polja", () => {
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^6fb6fae8/);
+  test("KG nosi val 89 projekcijo (v2.1) — j|k vrednosti ostajajo izven KG polj", () => {
+    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 je izvedel projekcijo 143/143
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^b4f5011c/);
   });
 
-  test("parcelni register + negative-result register ostajata na prejšnjem stanju (val 61/85 — projekcija 143/143 = ločen val)", () => {
+  test("parcelni register nosi projekcijo 143/143 (val 89: 432 → 930); negative register ostaja 14", () => {
     const pr = JSON.parse(readFileSync(join(ATLAS, "parcel-register-1825.json"), "utf8")) as {
       ps_parcels_total: number;
+      val: string;
     };
-    expect(pr.ps_parcels_total).toBe(432);
+    expect(pr.ps_parcels_total).toBe(930);
+    expect(pr.val).toBe("89");
     const nr = JSON.parse(readFileSync(join(ATLAS, "negative-result-register-1825.json"), "utf8")) as {
       negatives_total: number;
       negatives: { neg_id: string }[];

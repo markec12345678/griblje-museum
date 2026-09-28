@@ -179,7 +179,7 @@ describe("val65 — KG v1.2 MAP_OBJECT integracija", () => {
     expect(fids).toContain("KG-F03");
     expect(fids).toContain("KG-F04");
     expect(kg.invariant_violations).toEqual([]);
-    expect(kg.val).toBe(86); // KG v2.0 (val 86 vgradnja; koordinate/KG-F08 nespremenjeni)
+    expect(kg.val).toBe(89); // KG v2.0 (val 86 vgradnja; koordinate/KG-F08 nespremenjeni)
     const moCat = kg.coverage.categories.find(
       (c: { category: string }) => c.category === "map_objects_a01",
     );

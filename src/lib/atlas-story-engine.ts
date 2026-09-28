@@ -237,7 +237,8 @@ const TIER_EXACT: Record<string, EvidenceTier> = {
   SINGLE_SOURCE: "VERJETNO",
   PROVISIONAL: "VERJETNO",
   PARTIAL: "VERJETNO",
-  TRANSCRIBED_PARTIAL: "VERJETNO",
+  TRANSCRIBED_PARTIAL: "VERJETNO", // legačni KG sloji (< val 89)
+  TRANSCRIBED_PROVISIONAL: "VERJETNO", // val 89: prepis 143/143, branja PROVISIONAL (F-PV-04/NR-14)
   UNKNOWN_SEMANTICS: "VERJETNO",
   CONFLICT: "KONFLIKTNO",
   "REVIEW-CONFLICT": "KONFLIKTNO",
@@ -564,7 +565,7 @@ function houseSections(nodeId: string, node: (typeof kg.nodes)[number]): StorySe
         item(
           `Raba zemljišča dokumentirana za ${withLandUse} od ${parcelEdges.length} povezanih parcel — preostalih ${
             parcelEdges.length - withLandUse
-          } brez zapisa po parceli (PV [373418] prepisan val 74: samo agregatne površine po kulturah; per-parcelna raba čaka PS p56–143)`,
+          } brez zapisa po parceli (PV [373418] prepisan val 74: samo agregatne površine po kulturah; per-parcelna raba čaka pasovni re-read PS p56–143, F-PV-04/NR-14)`,
           "UNKNOWN",
           ["SRC-PV"],
           []

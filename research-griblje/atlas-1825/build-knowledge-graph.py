@@ -254,8 +254,8 @@ def main():
                 "origin": "PS",
             },
             source_ids=["SRC-PS"],
-            evidence_status="TRANSCRIBED_PARTIAL",
-            notes=None,
+            evidence_status="TRANSCRIBED_PROVISIONAL",
+            notes="pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada",
         )
 
     # ---------- BP ----------
@@ -525,8 +525,8 @@ def main():
         if not hid:
             continue
         G.edge(hid, "HAS_PARCEL", f"PARCEL:{p['parcel_id']}", "1825 (PS)", ["SRC-PS"],
-               "TRANSCRIBED_PARTIAL", "medium",
-               notes="cross_ref_to_pua UNKNOWN (F14)")
+               "TRANSCRIBED_PROVISIONAL", "medium",
+               notes="cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)")
 
     # ---- RESIDENCE_DOCUMENTED_AT (PERSON → TOPONYM; samo field-level viri) ----
     topo_by_form = {"Zogwitsche": "TP-032", "Schönboden": "TP-033", "Waidhofen": "TP-034",
@@ -716,9 +716,9 @@ def main():
     }
 
     out = {
-        "val": 86,
-        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121)",
-        "title": "knowledge-graph-1825 v2.0",
+        "val": 89,
+        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL: pokritost popolna, branja ostajajo PROVISIONAL po F-PV-04/NR-14)",
+        "title": "knowledge-graph-1825 v2.1",
         "findings": [
             {
                 "finding_id": "KG-F01",

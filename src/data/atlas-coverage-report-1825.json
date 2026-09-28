@@ -1,5 +1,5 @@
 {
- "val": 86,
+ "val": 89,
  "pass": "PASS 8",
  "issue": 42,
  "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "6fb6fae8ff2b4276a5506578fe607a3d929b78b74f0efd429f9c33a76d318573",
+  "kg_sha256": "b4f5011cf43bbf2cd989b479be2ae7e506d10e7278144b454b3521029e3f2023",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -173,9 +173,9 @@
   {
    "category_id": "parcels",
    "title": "Parcelni register 1825 (PUA + PS)",
-   "total": 2467,
+   "total": 2965,
    "VERIFIED": 907,
-   "PARTIAL": 1107,
+   "PARTIAL": 1605,
    "CONFLICT": 453,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -183,24 +183,24 @@
     "PUA/REVIEW": 675,
     "PUA/REVIEW-CONFLICT": 453,
     "PUA/VERIFIED-2x": 907,
-    "PS/SINGLE_SOURCE": 431,
-    "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 1
+    "PS/SINGLE_SOURCE": 926,
+    "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 4
    },
    "mapping_rule": "PUA: VERIFIED-2x→VERIFIED, REVIEW→PARTIAL, REVIEW-CONFLICT→CONFLICT; PS: vse SINGLE_SOURCE→PARTIAL (1 z zastavico F14 ostaja PARTIAL z opombo)",
    "evidence": [
     "research-griblje/atlas-1825/parcel-register-1825.json",
-    "PASS 3 (val 60) + PS re-read (val 61)"
+    "PASS 3 (val 60 logika; val 89 projekcija 143/143)"
    ]
   },
   {
    "category_id": "parcel_geometry",
    "title": "Parcelne meje / geometrija (poligoni)",
-   "total": 2467,
+   "total": 2965,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
    "UNKNOWN": 0,
-   "NOT_FOUND": 2467,
+   "NOT_FOUND": 2965,
    "native": {
     "polygons_documented": 0,
     "raster_basis": "A01–A05 rastri val 42 (VAČ)",
@@ -551,11 +551,11 @@
   {
    "category_id": "unknowns",
    "title": "Neznanke — prečni pregled (izrecno štetje, brez procentov)",
-   "total": 3322,
+   "total": 4545,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
-   "UNKNOWN": 3322,
+   "UNKNOWN": 4545,
    "NOT_FOUND": 0,
    "native": {
     "aggregate": [
@@ -566,12 +566,12 @@
      },
      {
       "item": "PS parcele z raba UNKNOWN",
-      "count": 106,
+      "count": 333,
       "category": "parcels"
      },
      {
       "item": "PS parcele cross_ref_to_pua UNKNOWN (namespace vprašanje F14)",
-      "count": 432,
+      "count": 930,
       "category": "parcels"
      },
      {
@@ -596,7 +596,7 @@
      },
      {
       "item": "parcele brez geometrije",
-      "count": 2467,
+      "count": 2965,
       "category": "parcel_geometry"
      },
      {
@@ -631,7 +631,7 @@
     "file": "research-griblje/atlas-1825/parcel-register-1825.json",
     "status": "EXISTS",
     "derived_from": [
-     "parcel-register-1825.json (val 60/61)"
+     "parcel-register-1825.json (val 60/89)"
     ],
     "note": "§4 parcele"
    },
@@ -750,8 +750,8 @@
   "zgodba vasi": "IZPOLNJENO podatkovno (/api/atlas/story?scope=village)",
   "preostanek": [
    "georef: A02 sidro (cerkev sv. Vid @300dpi) + listno merilo F-GEO-04",
-   "parcelni sloj rabe §19 (PS 432 parcel)",
-   "ob kvoti: PS p56–143 re-read, PT p7 @300dpi, PR re-read, PV prepis",
+   "parcelni sloj rabe §19 (PS 930 parcel, projekcija 143/143 val 89)",
+   "ob kvoti: PS p95–142 tile re-read, PT p7 @300dpi, PR re-read, PV prepis",
    "parcelne meje @višji dpi (§9)"
   ]
  }

@@ -234,14 +234,15 @@ describe("parcel sloj: vedra rabe (§4: nikoli ne ugibaj rabe)", () => {
   test("LAND_USE_ORDER: dokazana raba najprej, nezanki na koncu", () => {
     expect(LAND_USE_ORDER[LAND_USE_ORDER.length - 1]).toBe("NONE");
     expect(LAND_USE_ORDER[LAND_USE_ORDER.length - 2]).toBe("UNKNOWN");
-    expect(LAND_USE_ORDER).toHaveLength(8);
+    expect(LAND_USE_ORDER).toHaveLength(10); // val 89: + dvorišče, vinograd
   });
 });
 
 describe("parcel sloj: dokazni tir + oznake", () => {
-  test("PUA TRANSCRIBED → DOKAZANO, PS TRANSCRIBED_PARTIAL → VERJETNO (§17 pariteta)", () => {
+  test("PUA TRANSCRIBED → DOKAZANO, PS TRANSCRIBED_PROVISIONAL → VERJETNO (§17 pariteta, val 89; legačni TRANSCRIBED_PARTIAL ostane VERJETNO)", () => {
     expect(parcelTier(parcel({}))).toBe("DOKAZANO");
-    expect(parcelTier(parcel({ evidence_status: "TRANSCRIBED_PARTIAL" }))).toBe("VERJETNO");
+    expect(parcelTier(parcel({ evidence_status: "TRANSCRIBED_PROVISIONAL" }))).toBe("VERJETNO");
+    expect(parcelTier(parcel({ evidence_status: "TRANSCRIBED_PARTIAL" }))).toBe("VERJETNO"); // legačni statusi
     expect(parcelTier(parcel({ evidence_status: "UNKNOWN" }))).toBe("NEZNANO");
   });
 
@@ -282,18 +283,20 @@ describe("parcel sloj: filtri (§19: način + raba + besedilo)", () => {
 });
 
 describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
-  test("parcelLandUseCounts čez KG = registrirane resnice val 60", () => {
+  test("parcelLandUseCounts čez KG = registrirane resnice val 89 (projekcija 143/143)", () => {
     const features = parcelFeatures();
-    expect(features).toHaveLength(2467);
+    expect(features).toHaveLength(2965);
     const buckets = parcelExploreCounts(features as ExploreParcel[], "all", "all", "").buckets as Record<LandUseBucket, number>;
-    expect(buckets.njiva).toBe(230);
-    expect(buckets.travnik).toBe(60);
-    expect(buckets.gozd).toBe(13);
-    expect(buckets.vrt).toBe(10);
-    expect(buckets["pašnik"]).toBe(9);
-    expect(buckets.drugo).toBe(4);
-    expect(buckets.UNKNOWN).toBe(106);
-    expect(buckets.NONE).toBe(2035);
+    expect(buckets.njiva).toBe(297);
+    expect(buckets.travnik).toBe(97);
+    expect(buckets.gozd).toBe(16);
+    expect(buckets.vrt).toBe(16);
+    expect(buckets["pašnik"]).toBe(22);
+    expect(buckets["dvorišče"]).toBe(1); // val 89: nova EXACT kategorija (Hofraithe)
+    expect(buckets["vinograd"]).toBe(1); // val 89: nova EXACT kategorija (Reb/Weingarten)
+    expect(buckets.drugo).toBe(11);
+    expect(buckets.UNKNOWN).toBe(333);
+    expect(buckets.NONE).toBe(2171); // 2035 PUA + 136 PS brez kultur zapisa
   });
 
   test("sortParcelsForBrowse: dokumentirana raba najprej, sekcije I–V, številke", () => {
@@ -317,9 +320,9 @@ describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
   test("parcelExploreCounts spoštuje kombinacijo način + raba + besedilo", () => {
     const features = parcelFeatures() as ExploreParcel[];
     const all = parcelExploreCounts(features, "all", "all", "");
-    expect(all.visible).toBe(2467);
+    expect(all.visible).toBe(2965);
     const njiva = parcelExploreCounts(features, "all", "njiva", "");
-    expect(njiva.visible).toBe(230);
+    expect(njiva.visible).toBe(297);
     const evidenced = parcelExploreCounts(features, "evidenced", "all", "");
     expect(evidenced.visible).toBe(2035); // PUA TRANSCRIBED = DOKAZANO
   });
@@ -390,11 +393,14 @@ describe("parcel sloj: i18n × 5 jezikov", () => {
     }
   });
 
-  test("8 oznak rabe je različnih znotraj jezika (UI ločljivost)", () => {
+  test("10 oznak rabe je različnih znotraj jezika (UI ločljivost; val 89: + dvorišče/vinograd)", () => {
     for (const l of langs) {
       const s = ui[l].atlasStory;
-      const labels = new Set([s.luNjiva, s.luTravnik, s.luGozd, s.luVrt, s.luPastnik, s.luDrugo, s.luUnknown, s.luNone]);
-      expect(labels.size).toBe(8);
+      const labels = new Set([
+        s.luNjiva, s.luTravnik, s.luGozd, s.luVrt, s.luPastnik,
+        s.luDvorisce, s.luVinograd, s.luDrugo, s.luUnknown, s.luNone,
+      ]);
+      expect(labels.size).toBe(10);
     }
   });
 
