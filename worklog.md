@@ -4127,3 +4127,27 @@ Stage Summary:
 - Kresna pesem 1888 = najstarejši doslej znani natisnjeni sled kresne pesmi, izrecno vezane na Griblje (starejši od zvezka Katarine Županič 1894–95 in objav Nika Županiča 1930s) — zbirka 114 zapisov
 - Poštenost: »Pevana v Gribljah« dokazuje peto-v-Gribljah 1888, NE nastanka; avtorstvo anonimno; povezava z Matičkovim/Barletovim zapisom = REVIEW (hipoteza, ne dejstvo — odloči besedilo); Fr. Lampe brez osebnostne identifikacije
 - Naslednje: branje polnega besedila (TXT @ dLib / NUK Č 79/II 33565) → razrešitev REVIEW; vsebinska poročila kod (2012–2014 + 21-0141); DOZA/1468; Memento 2026; 86b 2. del (kvota)
+
+---
+Task ID: 2
+Agent: Z.ai Code (glavna seja, val 94)
+Task: ISSUE #72, točki 17/22 — DOZA/1468 — prva podnaloga razrešena: okrajšava DOZA = Deutschordenszentralarchiv, Dunaj; listina 21. 9. 1468 identificirana; vir SAZU 2025 na MVG-002 (user: "odlicno nadaljuj")
+
+Work Log:
+- Rekonstrukcija stanja: main @ 9fd8aba = val 93 (PR #95 mergan); worklogova »naslednje«: 1) polno besedilo Kresne pesmi, 2) vsebinska poročila kod, 3) DOZA/1468, 4) Memento 2026 → izbira DOZA/1468 (deterministično izvedljiva; ostale dve zahtevata dosego nejavno dostopnih izvornikov — pošteno odloženo)
+- Branje issue #72 v celoti (433 vrstic telesa, točke 1–24) + vseh 54 komentarjev; kontekst točk 17/22 (Höfler, »Griblach, 1468 21/9; DOZA«) in val 24 (Arnold regest 3971, GStAPK Ordensbriefarchiv 28955 = urbar 1490, ne listina)
+- NOVA POT: sistory PDF 2. izd. = 403 Cloudflare (curl + brskalniški UA); zgodovinskicasopis.si = 000; agent-browser na monasterium.net ne preide JS izziva; **DiRROS dostopen** → zapis 28428: **Höfler 2025 = peer-reviewirana monografija SAZU** (Razprave I. razreda 44, recenzenta Bratož/Štih, DOI 10.3986/9789612681135, open access) → **Dokument.php?id=42074 = PDF 394 str. (4,6 MB) prenešen in prebran v celoti** (pdftotext + lociranje strani 21/367/380/381)
+- PRELOM 1 (str. 21): **DOZA = Deutschordenszentralarchiv, Dunaj/Wien** — centralni arhiv nemškega viteškega reda, »posnetki listin dosegljivi na internetni bazi MOM« — izrecen odgovor na prvo podnalogo točke 17
+- PRELOM 2 (str. 380–381): Höflerjeva konvencija podružnic loči oklepaj (prva omemba KRAJA: »Griblach, 1468 21/9; DOZA«) od vrstice letnic (omembe CERKVE: 1526, 1689, 1753, 1771) → muzej ne dviga cerkve v 1468; cerkev ostaja 1526 (petstoletnica MVG-013 zvesta), 1468 dobi točen datum + arhiv
+- Kontekst (str. 367): listina 1468 21/9 = ustanovitev beneficij pri oltarjih sv. Jakoba/sv. Jurija/»kot tudi pri olt. sv. Andreja« pri sv. Nikolaju v Metliki (DOZA; IMK 1896, 228) = isti ustanovni akt kot Arnoldov regest 3971 (val 24: Katter, pet hub v Gribljah, mlin na Kolpi) → **istovetnost = REVIEW** (odloči prepis listine); (str. 380): župnija Podzemelj 1268 16/1 posredno prek Črnomlja inkorporirana nemškemu viteškemu redu v Ljubljani = razlog za dunajski arhiv
+- Signatura izvornika TO_COLLECT: MOM/monasterium.net 403 + agent-browser ne preide izziva + indeksi brez zadetkov (vzorec Leksikon 1937)
+- Vgradnja: MVG-002 + vir `sazu-histtop-2025` (objava, open access, DOI; opomba sl+en: str. 21/367/380/381, IMK 1896, REVIEW + TO_COLLECT) + nov odstavek zgodbe sl+en; MVG-001 opomba `weiss-2018-castite-vas` + dopolnilo 94. val (datum + DOZA; podroben vir samo na MVG-002 — brez podvajanja)
+- Izrecen prehod števca: +0 zapisov (114) / +1 vir (608 → 609) / +1 identiteta (487 → 488) / deljenih 68; readme-sync zeleno (/api/opendata 114/609); ATLAS §22 NEIZMENJAN (nov vir izključno na MVG-002 — pin)
+- **POUK SEJE (napaka + popravek):** med čiščenjem val86 artefaktov zagnan `git checkout -- .` → trije urejeni datoteki (museum-content.ts, README, KAZALO) vrnjeni na HEAD → prvi push (dc71efa) imel samo nova dokumenta, CI rdeč (val94 testi brez vsebine) → urejanja obnovljena iz seje, amend (ccc350f), force-push → CI 2/2 zeleno. Precejšna disciplina: nikoli `git checkout -- .` med delom; val86 deterministični re-run znotraj bun test regenerira analysis-v6.json (vnaprej obstoječa nestabilnost v polnem zagonu, posamično zelen — ni povezana z valom 94)
+- Push feat/val94-issue72-doza1468-hofler2025 → PR #96 → CI (tipi+lint+enotni · dimni+PostgreSQL · Vercel) → MERGE @ ae649e7 → veja izbrisana → komentar na issue #72
+
+Stage Summary:
+- ISSUE #72 prioritetna naloga »DOZA / 1468«: prva podnaloga (»kaj pomeni DOZA«) RAZREŠENA + arhiv identificiran + točen datum potrjen + tiskana tradicija zapisa (Arnold 3971 / IMK 1896, 228 / Höfler 2017/2025) dokumentirana; signatura ostaja TO_COLLECT
+- Separacija omemb po Höflerjevi strukturi vgrajena izrecno: 1468 21/9 = prva omemba vasi (z arhivom), 1526 = prva omemba cerkve — petstoletnica ostaja zvesta, dvig v 1468 NE opravljen (poštenost)
+- Zbirka: 114 zapisov / 609 virov / 488 identitet / 68 deljenih
+- Naslednje: signatura listine v DOZA prek MOM (zahteva brskalniški dostop izven peskovnika) → dvig REVIEW identifikacije; polno besedilo Kresne pesmi (dLib seja-vezan); vsebinska poročila kod (2012–2014 + 21-0141); Memento 2026; 86b 2. del (kvota); F14 glava @300 dpi
