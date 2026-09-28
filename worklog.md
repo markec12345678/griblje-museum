@@ -4049,3 +4049,27 @@ Stage Summary:
 - Nov status TRANSCRIBED_PROVISIONAL razlikuje pokritost prepisa od gotovosti branj — §17 pariteta (PS = VERJETNO) ohranjena
 - 2 novi EXACT rabi (dvorišče, vinograd) imata lastni UI vedri z oznakami v 5 jezikih
 - Naslednje: 86b 2. del (~479 tile-ov, kvota) → polna vgradnja val 86 (~1.798) → F-PV-03 → F14 glava @300dpi (Rosetta NR-02) → PZ p48–65 → PT p7 → PR Grenz-Beschreibung; ISSUE #72 raziskovalne sledi (EŠD 11081, raziskovalne kode, rimska sinteza) čakajo vgradnjo po evidence-first logiki
+
+---
+Task ID: 14
+Agent: Z.ai Code (glavni orkestrator, seja val 91)
+Task: 91. val — ISSUE #72: vgradnja raziskovalnih sledi po evidence-first logiki — EŠD 11081 (Požekov vrt) + raziskovalne kode 2012–2023 + rimska sinteza (Mason 1997–2001) (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija stanja: main @ f075834 = val 90 (PR #92 mergan); issue #72 (obsežen raziskovalni zapis, točke 1–48 + 3 komentarji kuratorja) prebran v celoti prek GitHub API; izbrana worklogova »naslednja« določila: EŠD 11081 + raziskovalne kode + rimska sinteza (deterministično, brez VLM kvote)
+- Branch feat/val91-issue72-esd11081-kode-rimska iz origin/main @ f075834
+- Vgradnja v MVG-083 (arheolosko-najdigsce-ob-kolpi), storySi + storyEn: 3. odstavek razširjen (2023 = trije projekti: 23-0070 ZVKDS CPA, 23-0168 ARHAT, 23-0261 Skupina Stik); 2 nova odstavka — (a) raziskovalna zgodovina kot celota: 1997 prijava Ivana Pezdirca (Kamenice) → 1999–2000 intenzivni pregled Griblje–Kohane (3 termini, 75 testnih jarkov 1×1 m, ~39,6 ha) → 2001 praksa FF UL (39 študentov) + obdelava v gasilskem domu + predstavitev v Domu krajanov → 2005 kanalizacija G1/G4 (VS 42 str. 60–61: parcele 113/1 + 2866–2872; G1 aluvij, G4 intaktna plast = poseljeno v prazgodovini) + prva izkopavanja 2005 vzhodneje (Žorž 2011) → 2010/2011 parcela 15/3 (VS 48: Nadbath & Žorž, ~320 m², ~4.900 najdb, faze I–IV, kisla prst → radiokarbonska kronologija odprta) → uradni zaporedje kod 2012→2023 (ARHEOTERRA 2013, KVS 62240-403/2014/2, 17-0053/17-0497/17-0374/17-0481, 19-0552, 20-0261/20-0297, 21-0130/21-0406/21-0141/21-0432, 23-0070/23-0168/23-0261) + poročilo Klepec–Krasinec parc. 2957 (Tiran/Husič/Grahek 2021, 30 str., COBISS 66817539); (b) registrska dvo-ravnost EŠD 10094/11081 (Požekov vrt samostojna enota; pozna bronasta doba; osnovna šola + vrtovi južno, severno od cerkve sv. Vida; ločena enota ≠ novo najdišče) + Dular 1985 kat. 490 (plano grobišče, LBA, 6 H, TTN5 Ozalj 21, str. 74) + kat. 490A Gomilica (6 G, str. 1033–1034) kot ločena enota + Dular & Tecco Hvala 2007 skupina Uk + metodologija treh stopenj + AV 62 (2011) Ha B1 z bibliografsko zanko Dular 1979 = Borštek (tabla 14:5–11 = REVIEW) + prostorski model (Požekov vrt/Kohane/Gomilca/Kamenice narazen, 700 m pas, LBA jedro ~80.000 m², sledi >40 ha) + 316,57 ha enote ≠ 39,6 ha pregleda
+- +16 novih virov na MVG-083 (vsak s kuratorsko atribucijo issue #72 + statusi VERIFIED/REVIEW/TO_COLLECT): vs-39-41-kohane-pregled, vs-42-kanalizacija-g1-g4, vs-48-zvkds-2010-2011, zorz-2011-av-griblje, dular-1985-topografija, dular-tecco-2007-katalog, av-62-2011-ha-b1, esd-11081-pozekov-vrt, zvkds-sto-let-10094, tiran-2021-klepec-krasinec, arheologija-2013/2014/2017/2019/2020/2021-zbornik
+- POŠTENOST (audit trail): opomba zvkds-2023-cpa je imela napačno trditev »23-0070 = prva dokumentirana raziskava pri Gribljih po 2012« — uradni zborniki dokumentirajo raziskave 2013/2014/2017/2019/2020/2021; trditev izrecno umaknjena (»Popravek (91. val, issue #72) … trditev umaknjena«), opomba dopolnjena s 23-0168/23-0261; nič tihega
+- Testi: tests/val91-issue72-esd11081-kode-rimska.test.ts — 13 varovalk (16 virov + pričakovani URL-ji, trije sklopi v obeh jezikih z natančnimi številkami/kodami, umaknjena trditev, +0 zapisov 113, +0 KG — novi viri izključno na MVG-083); guard popravljen po prvem tripu (navedba zgodovinske trditve znotraj popravka ≠ trditev)
+- README: Stanje zbirke 605 virov / 485 identitet + opendata 113/605 + 145. sklop; KAZALO vnos 106
+- QA: tsc čist · lint čist · 659 testov: 648 pass / 11 skip / 0 fail · readme-sync zeleno · ATLAS §22 NEIZMENJAN
+- Dokumentacija: research-griblje/106-val91-issue72-esd11081-kode-rimska.md (10 sekcij: kontekst/izbira obsega, trije sklopi, umaknjena trditev, vgradnja, viri, narečne omissio, QA, naslednje)
+- Push feat/val91-issue72-esd11081-kode-rimska → PR → CI (tipi+lint+enotni · dimni+PostgreSQL · Vercel) → MERGE → veja izbrisana → komentar poročila na issue #72
+
+Stage Summary:
+- ISSUE #72: trije sklopi iz worklogove »naslednje« vgrajeni po evidence-first logiki — vsak podatek z virom, atribucijo kuratorskemu zapisu in izrecnimi statusi; konflikti ohranjeni kot konflikti (Dular 1979/Tabla 14 = REVIEW; 21-0141 ≠ 21-0432; 316,57 ha ≠ 39,6 ha)
+- Uradno raziskovalno zaporedje EŠD 10094 zdaj dokumentirano brez presledka 2012→2023 (13 kod) + prvo konkretno strokovno poročilo (Klepec–Krasinec parc. 2957)
+- MVG-083 sedaj nosi dvo-ravni registrski model (EŠD 10094 + 11081) in prostorski model mikrolokacij — podlaga za prihodnji muzejski zemljevid arheološke krajine (brez koordinat, dokler ne izvirnega registra)
+- Števec: 113 zapisov (nespremenjeno) · 605 virov (+16) · 485 identitet (+16) · 68 deljenih (nespremenjeno)
+- Naslednje: 86b 2. del (~479 tile-ov, kvota) → Kresna pesem 1888 (ljudsko izročilo, lasten zapis) → vsebinska poročila raziskovalnih kod (predvsem 2012–2014 + 21-0141) → DOZA/1468 → Memento 2026
