@@ -183,8 +183,10 @@ describe("val91 — poštenost in pogodbe (+0 / umaknjena trditev)", () => {
     expect(s!.noteEn).toContain("the claim is withdrawn");
   });
 
-  test("+0 zapisov (113) — vsebinska plast, ne nova enota", () => {
-    expect(seedExhibits.length).toBe(113);
+  test("števec zapisov: val 91 je nosil +0 (113); zrasel na 114 šele v 93. valu (lasten zapis MVG-114, Kresna pesem 1888)", () => {
+    // varovalka vala 91 je zahtevala 113; val 93 je po protokolu issue-ja #72
+    // (točka 26 — ljudsko izročilo, lasten zapis) zbirko zakonito povečal na 114.
+    expect(seedExhibits.length).toBeGreaterThanOrEqual(113);
   });
 
   test("+0 KG: ATLAS artefakti ne citirajo novih virov (muzejska plast)", () => {

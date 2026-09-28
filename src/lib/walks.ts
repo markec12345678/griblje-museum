@@ -856,6 +856,13 @@ export const WALKS: Walk[] = [
           "We close summer with fire: the bonfire on St. John's eve, with the song Griblje's Matiček saved. A custom that leaves no object — a song and a memory remain.",
       },
       {
+        exhibitSlug: "kresna-pesem-1888",
+        noteSi:
+          "In sled, ki jo je tisk rešil še prej, kot je Matiček pisal: leta 1888 je Dom in svet natisnil »Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki« — najstarejši doslej znani natisnjeni zapis kresne pesmi teh vasi. Naslov je vir sam; besedilo čaka svoje branje.",
+        noteEn:
+          "And a trace that print saved even before Matiček wrote: in 1888 Dom in svet printed 'Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki' — the oldest known printed record of the bonfire song of these villages. The title is the source itself; the text awaits its reading.",
+      },
+      {
         exhibitSlug: "belokranjska-nosa",
         noteSi:
           "In ko se leto zavrti do praznika, se obleče bela ruta: belokranjska noša s pečo, pokrivalom, ki se veže z rožo na čelu. V njej so hodile te šege — in v nji še hodijo.",
