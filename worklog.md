@@ -4073,3 +4073,32 @@ Stage Summary:
 - MVG-083 sedaj nosi dvo-ravni registrski model (EŠD 10094 + 11081) in prostorski model mikrolokacij — podlaga za prihodnji muzejski zemljevid arheološke krajine (brez koordinat, dokler ne izvirnega registra)
 - Števec: 113 zapisov (nespremenjeno) · 605 virov (+16) · 485 identitet (+16) · 68 deljenih (nespremenjeno)
 - Naslednje: 86b 2. del (~479 tile-ov, kvota) → Kresna pesem 1888 (ljudsko izročilo, lasten zapis) → vsebinska poročila raziskovalnih kod (predvsem 2012–2014 + 21-0141) → DOZA/1468 → Memento 2026
+
+---
+Task ID: 15
+Agent: Z.ai Code (glavni orkestrator, seja val 92)
+Task: 92. val — ISSUE #43 §1/§10 + #42 §4: PS N83 F14 pilot — Benennung des Flures / Nro. der Parzelle — strukturni model + aritmetika (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija stanja: main @ 1dbaf83 = val 91 (PR #93 mergan); worklogova »naslednje« točka 3 za #43/#42 = »Flurbezirk glava @300 dpi (F14) — ključ do Rosette NR-02« → val 92 pilot (determinističen, 0 VLM — instrument val 61)
+- Branch feat/val92-ps-f14-flurbezirk iz origin/main @ 1dbaf83
+- Logistika: N083PS.pdf (56 MB) peskovniško prepočasen → 12 vzorčnih strani prenešenih prek pdfPageImage (predogledna ločljivost do ~1310 px) → crops 2×/3× (PIL LANCZOS)
+- Branje (direktni vid): p2 (naslovna »Grundparzellen Protocol der Gemeinde Grüble« + tiskana glava), p3 (2 neodvisna prehoda), p20, p45, p58 (2 prehoda: 1× + 3×), p59, p84, p133
+- PRELOM 1 — glava popravljen: analiza v1 (val 58) je brala »Flurbezirk / Jaethe« — dejansko: leva = Nro. des Blattes / Benennung des Flures / Nro. der Parzelle / Gstlzzeige (Dominical|Rustical) / Haus Nro. / Vor und Zuname / Stand / Wohnort; desna = Cultura Gattung / Flächen Inhalt (N.° | Joch | Quad. Klafter) / Classe / Reinertrag / Capital Werth / Anmerkung; vzrok napake: izpuščena vodilna »1« štirimestnih številk + ločnica stolpcev pri 1×
+- PRELOM 2 — strukturni model: p3 = Flure 1–20; p4–p143 = Parzelle 21→~2820 (~20/razprede; first = 21+20·(p−4)); potrjeno na 6 točkah: p20=341–360, p45=841–860, p58=1101–1120 (1× prehod NAPAČNO 101–120 → 3× popravek — pouk o ločljivosti), p59=1121–1140, p84=1621–1640 (dvoumno 6xx/16xx → model), p133=2601–2620; budget 20+139×20=2800 (+Fürtrag→2871 ✓) → celoten PS vesoljec ≈ 2800 parcel, 930 = podmnožica (vrstice z ujeto površino/kultur)
+- PRELOM 3 — površinska semantika: jaethe = Joch (cela), klafter = Quad. Klafter; vzorec p3 »1-1348« = 1 J 1348 QKl → C4 prostor J·1600+QKl (val 90) = LITERALNA površina (1 J = 1600 QKl)
+- NR-02 v1 = kategorijska napaka: primerjala je PS jaethe VREDNOSTI (površine) s PUA ŠTEVILKAMI; prava PS ključna kolona = Nro. der Parzelle (NIKOLI prepisana v register.json)
+- Pošten popravek lastne statistične napake: vpogled »p59 20/20 v PUA-I, P=1,3e-12« (pri globalni gostoti 25 %) je pri lokalni gostoti PUA-I (76–96 % v nizkih rangih) NIGNEDOKAZLJIV — P(20/20) ≈ 0,44 pri naključju; pokritostni test PS↔PUA-I brez ločevalne moči; Rosetta = TO-RESOLVE (celotna transkripcija + meje Bezirkov + 300 dpi); izrecno v artefaktu (honest_negative)
+- p133 Gemeinde sekcija: stolpec 1 = navpično ime Bezirka (TO-READ @300 dpi), stolpec 2 = Parzelle 2601–2620, vsi lastniki = Gemeinde → model dveh vrst vpisov (številčeni Flure vs imenovani Bezirki); meje sekcij = ključ do vezave PS page-ranges ↔ PUA sekcije I–V
+- Artefakti: research-griblje/ps-n83/f14-flurbezirk/pilot-parzelle-v92.json (glava, model, 7 točk, verdikti, readings, next_steps, invariants) + build-pilot-parzelle-v92.py (deterministični verifikator; popravek off-by-one last(p) po prvem zagonu; re-run byte-identno)
+- Testi: tests/val92-f14-parzelle-pilot.test.ts — 13 varovalk (glava-popravek, model izpeljan ne trdo kodiran, p58 1×→3× popravek, pošten negativ 0,44, determinizem verifikatorja, +0 pogodbe)
+- Dokumentacija: research-griblje/107-val92-ps-f14-parzelle-pilot.md + KAZALO 107 + README 146. sklop + worklog
+- QA: tsc čist · lint čist · 672 testov (661 pass / 11 skip / 0 fail) · readme-sync zeleno (113/605/485 nespremenjeno) · ATLAS §22 NEIZMENJAN
+- Push feat/val92-ps-f14-flurbezirk → PR → CI (tipi+lint+enotni · dimni+PostgreSQL · Vercel) → MERGE → veja izbrisana → komentarja na #43 in #42
+
+Stage Summary:
+- F14 preliminary struktura RAZREŠENA (ni še Rosetta): PS nosi dve številski koloni (Benennung des Flures + Nro. der Parzelle), ki ju register NIKOLI ni prepisal; Parzelle 21→~2820 zvezno ~20/razprede (model potrjen na 6 točkah vključno z off-by-one-testiranim p58 pri 3×)
+- Celoten PS vesoljec ≈ 2800 parcel (ne 930) — 930 = podmnožica s površino/kultur
+- C4 sklepa vala 90 (»metrika TO-DECODE«) dobi razlago: prostor J·1600+QKl je doslovna površina v QKl
+- NR-02 v1 umaknjen kot kategorijska napaka + popravljen lasten lažno-pomemben pokritostni vpogled (lokalna gostota!) — Rosetta ostaja TO-RESOLVE brez ugibanja
+- Naslednje: 300 dpi osnova → celotna transkripcija številskih stolpcev (~2871 vrstic, resumable) → meje Bezirkov (navpična imena) → F14 rešitev + Rosetta v3; 86b 2. del (kvota); ISSUE #72 sledi (Kresna pesem 1888, vsebinska poročila, DOZA/1468, Memento 2026)
