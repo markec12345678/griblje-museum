@@ -3981,3 +3981,23 @@ Stage Summary:
 - NOVA F-PV-06: glava stolpcev = obvezen del sheme izrezkov (brez nje kolonske skupine izgubijo sidro J↔K)
 - Metodološko: per-row poravnava ±1 nestabilna → page-level kolonska korekcija + per-row diagnostika; števke = 2-glasne; kultur/owner = variant fields
 - main @ 425d7b4 = val 86, CI zelen; naslednje: 86b (`tile-read-v86.mts ALL` → vgradnja 808 → 1.798) → Fürtrag monotona kontrola + 139 digit-split ročni re-read → PZ p48–65 → PT p7 @300dpi → PR Grenz-Beschreibung
+
+---
+Task ID: 11
+Agent: Z.ai Code (glavni orkestrator)
+Task: 87. val — ISSUE #72: vgradnja dveh kuratorskih raziskovalnih zapisov (Andrič 2011 poznoglacialno + Grošelj 1972 etimologija) (user: "odlicno nadaljuj")
+
+Work Log:
+- Rekonstrukcija stanja: main @ 9ca43a0 = 86b 1. del (PR #88); issue #72 nosi DVA nova kuratorska zapisa z 27. 9. 2026 (14:22/14:24 UTC) brez odgovora; tile-read-v86 kvota 429 (log 06:13 UTC, proces ne teče; 201/696) → ATLAS 86b 2. del NI izvedljiv → izbran #72 (determinističen, brez VLM)
+- Preverba obstoječega stanja: Andrič 2011 = vir registriran (andric-2011-lateglacial, bibliografija 35. val), podrobnosti NE v vsebini; Grošelj 1972 = popolnoma vgrajen (28. val), a kategorično (»razlaga iz groblja ni pravilna«) — kurator zahteva »predmet jezikoslovne razprave« + statusi
+- Neodvisna verifikacija PRED vgradnjo: Grošelj 1972 Crossref (»Griblje«, Linguistica 12, p. 101, 1972, Univ. Ljubljana) + OpenAlex (OA) + **OA PDF prebran v celoti** (46 kB): SAZU listek za toponim, literatura na njem izpeljuje iz »groblja«, teza «Nomen loci slov. Griblje proprie areolam, particulam terrae cultae significat«, Lexicon latinitatis I p. 519 »areola, particula terrae cultae: lijeha, komadić obrađene zemlje«, primera a. 1373 (in gribiliis) / a. 1499 (in gribglia), vprašanje sg./pl.; Andrič 2011 COBISS.SI-ID 32431917 (naslovi, str. 235–249, zbornik ob Turkovem jubileju, **soavtorica Tamara Korošec** po COBISS); OpenAlex title 0; ZRC polno besedilo nedostopno (500/404) → vsebina po kuratorskem zapisu, REVIEW ostaja
+- VGRADNJA (4 datoteke, sl+en): MVG-083 story + polna poznoglacialna kronologija (14.300 / 13.800 / mlajši drijas 12.600–11.500 / upad hrasta-lipe-bresta 12.250 cal BP — nekaj stoletij pozneje kot pri Blejskem jezeru) + opozorili (nelinearna sedimentacija → radiokarbonska kontrola; požari naravni ALI antropogeni — muzej ne sklepa) + raziskovalna os (okolje → mokrišče → vegetacija → požari → možna, vendar še nedokazana človekova prisotnost → holocen → neolit → bronasta doba); vir andric-2011-lateglacial + COBISS url + identiteta + statusi VERIFIED/REVIEW/NOT FOUND; MVG-068 summary+story preformulirana (izvor imena = predmet razprave; gribljati = najrazširjena razlaga; groblje = starejša razlaga z literaturo na SAZU listku; dokončna etimologija = REVIEW, prva znana oblika 1468) + vir groselj-1972 + statusi + wiki-griblje-ime omehčana; doslednost: minute-stories.ts (sl+en) + object-biographies.ts (timeline 1468, sl+en)
+- TS napaka ob prvem tsc (narekovaj »obdelana zemlja"« porušil string) — popravljeno na »obdelana zemlja«
+- QA: tsc čist · lint čist · **597 pass / 11 skip / 0 fail (608 testov)** · readme-sync zeleno (113 zapisov / 588 virov NESPREMENJENO — +0 virov/+0 zapisov/+0 KG/+0 UI); verify-i18n NI obremenjen (UI ključi nič); ATLAS §22 NEIZMENJAN
+- Push feat/val87-issue72-lateglacial-etimologija @ dcf4a0c → PR #89 → CI 3/3 ZELENO (tipi+lint+enotni · dimni+PostgreSQL · Vercel preview) → MERGE API @ bf0b615 → veja izbrisana (lokalno+remote)
+- Dokumentacija: research-griblje/102-val87-issue72-lateglacial-etimologija.md + KAZALO 102 + README 141. sklop + poročilo na #72 (comment-5865067558)
+
+Stage Summary:
+- ISSUE #72: oba kuratorska zapisa vgrajena po logiki (evidence-first): Andrič 2011 = podrobnosti v vsebino s statusi in atribucijo »kuratorski zapis« (polno besedilo TO_COLLECT); Grošelj 1972 = previdna formulacija + nov dokazni trak (polno prebrana opomba: SAZU listek, Lexicon citat, primera 1373/1499, sg./pl.)
+- Metodološko: bibliografska identiteta potrjena 3 kanali (Crossref/OpenAlex/COBISS) pred vgradnjo; stopnje gotovosti izrecno v virih; kategoriznost iz 28. vala korigirana brez izgube pripovedi
+- main @ bf0b615 = 87. val, CI zelen; naslednje: 86b 2. del ATLASA (spravilo ~479 tile-ov, resumable, čaka kvoto) → vgradnja 808 → ~1.798 vrstic + §22 kaskada; 139 digit-split ročni re-read; polno besedilo Andrič 2011; najstarejše pisane oblike imena (1468)
