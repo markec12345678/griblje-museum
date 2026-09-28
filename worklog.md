@@ -4001,3 +4001,24 @@ Stage Summary:
 - ISSUE #72: oba kuratorska zapisa vgrajena po logiki (evidence-first): Andrič 2011 = podrobnosti v vsebino s statusi in atribucijo »kuratorski zapis« (polno besedilo TO_COLLECT); Grošelj 1972 = previdna formulacija + nov dokazni trak (polno prebrana opomba: SAZU listek, Lexicon citat, primera 1373/1499, sg./pl.)
 - Metodološko: bibliografska identiteta potrjena 3 kanali (Crossref/OpenAlex/COBISS) pred vgradnjo; stopnje gotovosti izrecno v virih; kategoriznost iz 28. vala korigirana brez izgube pripovedi
 - main @ bf0b615 = 87. val, CI zelen; naslednje: 86b 2. del ATLASA (spravilo ~479 tile-ov, resumable, čaka kvoto) → vgradnja 808 → ~1.798 vrstic + §22 kaskada; 139 digit-split ročni re-read; polno besedilo Andrič 2011; najstarejše pisane oblike imena (1468)
+
+---
+Task ID: 12
+Agent: Z.ai Code (glavni orkestrator, seja val 88)
+Task: 88. val — ISSUE #42 §4/§14 + #43: PS N83 digit-split re-read — 139 vrstic rešenih z direktnim branjem (dokončanje vala, ki ga je prejšnja seja pustila v delu) (user: "odlicno nadaljuj")
+
+Work Log:
+- Rekonstrukcija stanja: main @ 16cfe4a = val 87 (PR #89); lokalna veja feat/val88-digitsplit-reread z NESCOMMITANIM delom — pipeline val 88 do 10:43 UTC (targets/passA/adjudication 139 → build-register vgradnja → kaskada), brez poročila/testov/PR-ja
+- Revidirana kaskada — ZAZNANE REGRESIJE zastarelih builderjev: re-run build-pass3.py (val 60) bi negative-register izgubil NR-12/13/14 (14→11) in parcelni register razširil 432→930 z zastarelmi provenancami (»PARTIAL 55/143«, »1.073 vrstic«); re-run build-pass4.py (val 65) bi a01 georef v2 (val 72, ±38 m reka-trim) degradiral na provizorično 1 sidro; vse tri datoteke + KG/story/timeline/coverage/pv/pz + src/data zrcala OBNOVLJENA na comitano stanje (KG 6fb6fae8 ohranjen — j|k vrednosti niso KG polja)
+- Rešeni 2 UNRESOLVED vrstici z direktnim branjem 5× povečav: gi 1226 (p63 r13) rdeče prečrtan zapis + nejasen popravek; gi 2384 (p121 r0) = F-PV-03 (QKlft anomalija) — ostajata UNRESOLVED z markerjem + opombo (brez ugibanja, §4)
+- Determinizem: align-slots-v88.py re-run byte-identno; build-targets-v88.py fail-fast guard (pravilno zavrača re-run po vgradnji — enkratni korak); build-register-v88.py vgradnja preverjena programska 1:1 (register ↔ changes ↔ adjudication ↔ targets, 139/139/139/139); pravilo vrednosti 0 kršitev (9× izraziti j|k, npr. gi 1152 = 9 J 1128 QKl)
+- F11 regeneriran nad v88 registrom: verdikti NESPREMENJENI (5 kršitev monotonosti, veznost p54=52→p58=56 delta 4 OK, 38 strani 3-glas REVIEW, aritmetika 0/76/12, sidra 3/7); re-run byte-identno (dvakrat: bun test + ročno)
+- Posodobljeni val 86 varovalki po predlogi »guard sproščen«: snimke 333+139=472 (jk_review dovoljuje v88 markerje); 139 digit-split promoviranih (137 RESOLVED + 2 UNRESOLVED, revizija val 86 nespremenjena)
+- Novi testi: tests/val88-digit-split-reread.test.ts (20 varovalk: artefakti/skripte, množice 139=139=139, tally 25/37/75/2, pravilo vrednosti, U vrstici, §4/§22 — KG sha + parcelni register 432 + NR-14, F11 verdikti + determinizem)
+- Dokumentacija: research-griblje/103-val88-digit-split-reread.md (metoda, tally, F11, §5 pouk o zastarelih builderjih, val 89 predlog) + 00-KAZALO vnos 100 + README 142. sklop; .gitignore raw-web-val88 (rowcrops 534 MB regenerabilni)
+- QA: tsc čist · lint čist · 628 testov (617 pass / 11 skip / 0 fail; novi val88 +20) · +0 virov / +0 zapisov / +0 KG / +0 UI
+
+Stage Summary:
+- Val 88 zaključen in mergan: 139 digit-split vrstic iz REVIEW → rešene z direktnim branjem (25 P1 + 37 P2 + 75 T3 + 2 U); register p56–94+121 nosi v88 vrednosti s polnim audit trailom (snimke + glasovi); F11 potrjeno nespremenjeno
+- Pouk vala (dokumentiran v poročilu §5): re-run val-60/65 builderjev = destruktiven brez vgradnje poznejših slojev — val 89 mora najprej popraviti provenance + NR sloje v build-pass3.py, šele nato projekcija parcel 432→930 + KG kaskada v pravilnem vrstnem redu
+- Naslednje: val 89 (parcelni register 143/143) → 86b 2. del (~479 tile-ov, kvota) → F-PV-03/p121 → PZ p48–65 → PT p7 → PR Grenz-Beschreibung

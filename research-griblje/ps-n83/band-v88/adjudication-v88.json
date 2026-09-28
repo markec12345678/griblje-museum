@@ -1,0 +1,1400 @@
+{
+ "meta": {
+  "val": 88,
+  "method": "agent direktno branje (protokol val 61): pass A polstrani x4 + pass B listi x8 (5-vrsticna okna) + pass C posamezni izrezki x10; 2+ neodvisna prehoda; vrednostna poravnava proti pass1/pass2 kontekstu",
+  "statuses": "P1=pas1 potrjen, P2=pas2 potrjen, T3=tretja vrednost (oba pasa napacna), U=unresolved"
+ },
+ "adjudications": [
+  {
+   "global_idx": 1087,
+   "page": 56,
+   "page_row": 14,
+   "p1": "1494",
+   "p2": "1444",
+   "tile_diag": "429",
+   "v88": "1491",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1088,
+   "page": 56,
+   "page_row": 15,
+   "p1": "566",
+   "p2": "568",
+   "tile_diag": "688",
+   "v88": "568",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1089,
+   "page": 56,
+   "page_row": 16,
+   "p1": "74",
+   "p2": "24",
+   "tile_diag": "494",
+   "v88": "94",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1091,
+   "page": 56,
+   "page_row": 18,
+   "p1": "542",
+   "p2": "582",
+   "tile_diag": "34",
+   "v88": "842",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1097,
+   "page": 57,
+   "page_row": 4,
+   "p1": "1045",
+   "p2": "10455",
+   "tile_diag": "260",
+   "v88": "1048",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1111,
+   "page": 57,
+   "page_row": 18,
+   "p1": "222",
+   "p2": "232",
+   "tile_diag": "28",
+   "v88": "232",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1112,
+   "page": 57,
+   "page_row": 19,
+   "p1": "326",
+   "p2": "280",
+   "tile_diag": "80",
+   "v88": "320",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1125,
+   "page": 58,
+   "page_row": 12,
+   "p1": "778",
+   "p2": "478",
+   "tile_diag": "914",
+   "v88": "118",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1138,
+   "page": 59,
+   "page_row": 6,
+   "p1": "654",
+   "p2": "644",
+   "tile_diag": "1111",
+   "v88": "644",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1143,
+   "page": 59,
+   "page_row": 11,
+   "p1": "674",
+   "p2": "672",
+   "tile_diag": "677",
+   "v88": "674",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1144,
+   "page": 59,
+   "page_row": 12,
+   "p1": "1108",
+   "p2": "1408",
+   "tile_diag": "1108",
+   "v88": "1108",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1149,
+   "page": 59,
+   "page_row": 17,
+   "p1": "755",
+   "p2": "758",
+   "tile_diag": "1690",
+   "v88": "238",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1152,
+   "page": 59,
+   "page_row": 20,
+   "p1": "26",
+   "p2": "9 1188",
+   "tile_diag": "428",
+   "v88": "9|1128",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1193,
+   "page": 62,
+   "page_row": 0,
+   "p1": "697",
+   "p2": "691",
+   "tile_diag": "691",
+   "v88": "691",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1194,
+   "page": 62,
+   "page_row": 1,
+   "p1": "785",
+   "p2": "735",
+   "tile_diag": "785",
+   "v88": "785",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1202,
+   "page": 62,
+   "page_row": 9,
+   "p1": "75",
+   "p2": "78",
+   "tile_diag": "60",
+   "v88": "78",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1203,
+   "page": 62,
+   "page_row": 10,
+   "p1": "295",
+   "p2": "395",
+   "tile_diag": "78",
+   "v88": "396",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1204,
+   "page": 62,
+   "page_row": 11,
+   "p1": "285",
+   "p2": "288",
+   "tile_diag": "995",
+   "v88": "285",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1205,
+   "page": 62,
+   "page_row": 12,
+   "p1": "224",
+   "p2": "204",
+   "tile_diag": "246",
+   "v88": "204",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1211,
+   "page": 62,
+   "page_row": 18,
+   "p1": "275",
+   "p2": "395",
+   "tile_diag": "820",
+   "v88": "395",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1215,
+   "page": 63,
+   "page_row": 2,
+   "p1": "217",
+   "p2": "247",
+   "tile_diag": "267",
+   "v88": "157",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1217,
+   "page": 63,
+   "page_row": 4,
+   "p1": "217",
+   "p2": "247",
+   "tile_diag": "287",
+   "v88": "187",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1218,
+   "page": 63,
+   "page_row": 5,
+   "p1": "245",
+   "p2": "246",
+   "tile_diag": "246",
+   "v88": "326",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1221,
+   "page": 63,
+   "page_row": 8,
+   "p1": "177",
+   "p2": "147",
+   "tile_diag": "147",
+   "v88": "177",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1224,
+   "page": 63,
+   "page_row": 11,
+   "p1": "144",
+   "p2": "274",
+   "tile_diag": "274",
+   "v88": "278",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1225,
+   "page": 63,
+   "page_row": 12,
+   "p1": "877",
+   "p2": "377",
+   "tile_diag": "174",
+   "v88": "377",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1226,
+   "page": 63,
+   "page_row": 13,
+   "p1": "529",
+   "p2": "329",
+   "tile_diag": "374",
+   "v88": null,
+   "status": "U"
+  },
+  {
+   "global_idx": 1227,
+   "page": 63,
+   "page_row": 14,
+   "p1": "1124",
+   "p2": "1134",
+   "tile_diag": "50",
+   "v88": "1134",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1229,
+   "page": 63,
+   "page_row": 16,
+   "p1": "154",
+   "p2": "157",
+   "tile_diag": "175",
+   "v88": "151",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1230,
+   "page": 63,
+   "page_row": 17,
+   "p1": "112",
+   "p2": "142",
+   "tile_diag": "171",
+   "v88": "112",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1232,
+   "page": 63,
+   "page_row": 19,
+   "p1": "629",
+   "p2": "69",
+   "tile_diag": "108",
+   "v88": "63",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1297,
+   "page": 67,
+   "page_row": 4,
+   "p1": "373",
+   "p2": "375",
+   "tile_diag": "138",
+   "v88": "375",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1298,
+   "page": 67,
+   "page_row": 5,
+   "p1": "484",
+   "p2": "464",
+   "tile_diag": "375",
+   "v88": "464",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1301,
+   "page": 67,
+   "page_row": 8,
+   "p1": "291",
+   "p2": "297",
+   "tile_diag": "316",
+   "v88": "291",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1303,
+   "page": 67,
+   "page_row": 10,
+   "p1": "132",
+   "p2": "252",
+   "tile_diag": "1040",
+   "v88": "252",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1307,
+   "page": 67,
+   "page_row": 14,
+   "p1": "1050",
+   "p2": "1046",
+   "tile_diag": "840",
+   "v88": "1046",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1310,
+   "page": 67,
+   "page_row": 17,
+   "p1": "325",
+   "p2": "323",
+   "tile_diag": "66",
+   "v88": "326",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1386,
+   "page": 71,
+   "page_row": 12,
+   "p1": "848",
+   "p2": "818",
+   "tile_diag": "534",
+   "v88": "814",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1387,
+   "page": 71,
+   "page_row": 13,
+   "p1": "252",
+   "p2": "292",
+   "tile_diag": "136",
+   "v88": "292",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1389,
+   "page": 71,
+   "page_row": 15,
+   "p1": "165",
+   "p2": "166",
+   "tile_diag": "814",
+   "v88": "165",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1440,
+   "page": 74,
+   "page_row": 4,
+   "p1": "127",
+   "p2": "123",
+   "tile_diag": "137",
+   "v88": "137",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1441,
+   "page": 74,
+   "page_row": 5,
+   "p1": "516",
+   "p2": "316",
+   "tile_diag": "124",
+   "v88": "316",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1451,
+   "page": 74,
+   "page_row": 15,
+   "p1": "+ 668",
+   "p2": "+ 686",
+   "tile_diag": "788",
+   "v88": "668",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1454,
+   "page": 74,
+   "page_row": 18,
+   "p1": "+ 247",
+   "p2": "+ 284",
+   "tile_diag": "1144",
+   "v88": "1|327",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1456,
+   "page": 74,
+   "page_row": 20,
+   "p1": "12",
+   "p2": "790",
+   "tile_diag": "997",
+   "v88": "790",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1457,
+   "page": 75,
+   "page_row": 0,
+   "p1": "1266",
+   "p2": "1236",
+   "tile_diag": "1226",
+   "v88": "1226",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1468,
+   "page": 75,
+   "page_row": 11,
+   "p1": "1896",
+   "p2": "1596",
+   "tile_diag": "145",
+   "v88": "1596",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1498,
+   "page": 77,
+   "page_row": 1,
+   "p1": "33",
+   "p2": "83",
+   "tile_diag": "88",
+   "v88": "83",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1500,
+   "page": 77,
+   "page_row": 3,
+   "p1": "113",
+   "p2": "183",
+   "tile_diag": "113",
+   "v88": "113",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1502,
+   "page": 77,
+   "page_row": 5,
+   "p1": "358",
+   "p2": "338",
+   "tile_diag": "49",
+   "v88": "388",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1505,
+   "page": 77,
+   "page_row": 8,
+   "p1": "282",
+   "p2": "382",
+   "tile_diag": "32",
+   "v88": "382",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1509,
+   "page": 77,
+   "page_row": 12,
+   "p1": "729",
+   "p2": "785",
+   "tile_diag": "946",
+   "v88": "705",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1511,
+   "page": 77,
+   "page_row": 14,
+   "p1": "560",
+   "p2": "360",
+   "tile_diag": "735",
+   "v88": "366",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1512,
+   "page": 77,
+   "page_row": 15,
+   "p1": "1156",
+   "p2": "1186",
+   "tile_diag": "299",
+   "v88": "1186",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1542,
+   "page": 79,
+   "page_row": 5,
+   "p1": "857",
+   "p2": "657",
+   "tile_diag": "724",
+   "v88": "451",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1543,
+   "page": 79,
+   "page_row": 6,
+   "p1": "1 25",
+   "p2": "1 85",
+   "tile_diag": "160",
+   "v88": "2|35",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1544,
+   "page": 79,
+   "page_row": 7,
+   "p1": "3 716",
+   "p2": "2 716",
+   "tile_diag": "36",
+   "v88": "2|76",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1548,
+   "page": 79,
+   "page_row": 11,
+   "p1": "1 482",
+   "p2": "1 422",
+   "tile_diag": "21130",
+   "v88": "1|422",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1549,
+   "page": 79,
+   "page_row": 12,
+   "p1": "1482",
+   "p2": "1488",
+   "tile_diag": "440",
+   "v88": "1482",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1550,
+   "page": 79,
+   "page_row": 13,
+   "p1": "1 1332",
+   "p2": "1 1333",
+   "tile_diag": "38",
+   "v88": "1|455",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1551,
+   "page": 79,
+   "page_row": 14,
+   "p1": "1424",
+   "p2": "1444",
+   "tile_diag": "1112",
+   "v88": "1244",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1553,
+   "page": 79,
+   "page_row": 16,
+   "p1": "1488",
+   "p2": "448",
+   "tile_diag": "1482",
+   "v88": "448",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1555,
+   "page": 79,
+   "page_row": 18,
+   "p1": "192",
+   "p2": "182",
+   "tile_diag": "1244",
+   "v88": "783",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1588,
+   "page": 81,
+   "page_row": 11,
+   "p1": "638",
+   "p2": "688",
+   "tile_diag": "512",
+   "v88": "488",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1597,
+   "page": 82,
+   "page_row": 0,
+   "p1": "7/1",
+   "p2": "391",
+   "tile_diag": "591",
+   "v88": "591",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1599,
+   "page": 82,
+   "page_row": 2,
+   "p1": "1/1",
+   "p2": "168",
+   "tile_diag": "618",
+   "v88": "618",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1600,
+   "page": 82,
+   "page_row": 3,
+   "p1": "2/3",
+   "p2": "111",
+   "tile_diag": "111",
+   "v88": "111",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1601,
+   "page": 82,
+   "page_row": 4,
+   "p1": "2/9",
+   "p2": "263",
+   "tile_diag": "353",
+   "v88": "263",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1602,
+   "page": 82,
+   "page_row": 5,
+   "p1": "1/1",
+   "p2": "269",
+   "tile_diag": "252",
+   "v88": "269",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1603,
+   "page": 82,
+   "page_row": 6,
+   "p1": "5/3",
+   "p2": "192",
+   "tile_diag": "269",
+   "v88": "491",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1604,
+   "page": 82,
+   "page_row": 7,
+   "p1": "1/9",
+   "p2": "535",
+   "tile_diag": "191",
+   "v88": "535",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1605,
+   "page": 82,
+   "page_row": 8,
+   "p1": "3/1",
+   "p2": "179",
+   "tile_diag": "535",
+   "v88": "179",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1606,
+   "page": 82,
+   "page_row": 9,
+   "p1": "1/3",
+   "p2": "351",
+   "tile_diag": "179",
+   "v88": "351",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1607,
+   "page": 82,
+   "page_row": 10,
+   "p1": "1/3",
+   "p2": "135",
+   "tile_diag": "351",
+   "v88": "128",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1608,
+   "page": 82,
+   "page_row": 11,
+   "p1": "2/1",
+   "p2": "148",
+   "tile_diag": "135",
+   "v88": "48",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1609,
+   "page": 82,
+   "page_row": 12,
+   "p1": "2/2",
+   "p2": "254",
+   "tile_diag": "46",
+   "v88": "351",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1610,
+   "page": 82,
+   "page_row": 13,
+   "p1": "2/0",
+   "p2": "252",
+   "tile_diag": "",
+   "v88": "252",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1611,
+   "page": 82,
+   "page_row": 14,
+   "p1": "1/6",
+   "p2": "270",
+   "tile_diag": "254",
+   "v88": "270",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1612,
+   "page": 82,
+   "page_row": 15,
+   "p1": "1/6",
+   "p2": "116",
+   "tile_diag": "232",
+   "v88": "14",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1613,
+   "page": 82,
+   "page_row": 16,
+   "p1": "1/1",
+   "p2": "116",
+   "tile_diag": "210",
+   "v88": "16",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1614,
+   "page": 82,
+   "page_row": 17,
+   "p1": "1/3",
+   "p2": "161",
+   "tile_diag": "116",
+   "v88": "147",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1615,
+   "page": 82,
+   "page_row": 18,
+   "p1": "40/3",
+   "p2": "183",
+   "tile_diag": "116",
+   "v88": "183",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1616,
+   "page": 82,
+   "page_row": 19,
+   "p1": "5/6",
+   "p2": "40.03",
+   "tile_diag": "1167",
+   "v88": "1005",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1618,
+   "page": 83,
+   "page_row": 1,
+   "p1": "164",
+   "p2": "124",
+   "tile_diag": "124",
+   "v88": "164",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1619,
+   "page": 83,
+   "page_row": 2,
+   "p1": "59",
+   "p2": "39",
+   "tile_diag": "164",
+   "v88": "59",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1629,
+   "page": 83,
+   "page_row": 12,
+   "p1": "526",
+   "p2": "528",
+   "tile_diag": "290",
+   "v88": "538",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1632,
+   "page": 83,
+   "page_row": 15,
+   "p1": "56",
+   "p2": "54",
+   "tile_diag": "12",
+   "v88": "64",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1633,
+   "page": 83,
+   "page_row": 16,
+   "p1": "1256",
+   "p2": "56",
+   "tile_diag": "538",
+   "v88": "1256",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1634,
+   "page": 83,
+   "page_row": 17,
+   "p1": "399",
+   "p2": "1256",
+   "tile_diag": "8",
+   "v88": "399",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1635,
+   "page": 83,
+   "page_row": 18,
+   "p1": "649",
+   "p2": "399",
+   "tile_diag": "341",
+   "v88": "849",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1636,
+   "page": 83,
+   "page_row": 19,
+   "p1": "39",
+   "p2": "849",
+   "tile_diag": "16",
+   "v88": "39",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1641,
+   "page": 84,
+   "page_row": 3,
+   "p1": "237",
+   "p2": "231",
+   "tile_diag": "137",
+   "v88": "237",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1642,
+   "page": 84,
+   "page_row": 4,
+   "p1": "187",
+   "p2": "182",
+   "tile_diag": "737",
+   "v88": "182",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1643,
+   "page": 84,
+   "page_row": 5,
+   "p1": "1220",
+   "p2": "1229",
+   "tile_diag": "182",
+   "v88": "1279",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1645,
+   "page": 84,
+   "page_row": 7,
+   "p1": "1373",
+   "p2": "1312",
+   "tile_diag": "2230",
+   "v88": "1373",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1658,
+   "page": 84,
+   "page_row": 20,
+   "p1": "1476",
+   "p2": "1478",
+   "tile_diag": "23",
+   "v88": "1246",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1662,
+   "page": 85,
+   "page_row": 3,
+   "p1": "709",
+   "p2": "799",
+   "tile_diag": "199",
+   "v88": "799",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1663,
+   "page": 85,
+   "page_row": 4,
+   "p1": "721",
+   "p2": "784",
+   "tile_diag": "107",
+   "v88": "784",
+   "status": "P2"
+  },
+  {
+   "global_idx": 1664,
+   "page": 85,
+   "page_row": 5,
+   "p1": "756",
+   "p2": "714",
+   "tile_diag": "707",
+   "v88": "186",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1665,
+   "page": 85,
+   "page_row": 6,
+   "p1": "717",
+   "p2": "706",
+   "tile_diag": "736",
+   "v88": "714",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1666,
+   "page": 85,
+   "page_row": 7,
+   "p1": "706",
+   "p2": "1490",
+   "tile_diag": "711",
+   "v88": "700",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1667,
+   "page": 85,
+   "page_row": 8,
+   "p1": "1 499",
+   "p2": "1483",
+   "tile_diag": "766",
+   "v88": "1|990",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1668,
+   "page": 85,
+   "page_row": 9,
+   "p1": "1 473",
+   "p2": "752",
+   "tile_diag": "1999",
+   "v88": "1|693",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1669,
+   "page": 85,
+   "page_row": 10,
+   "p1": "763",
+   "p2": "246",
+   "tile_diag": "1699",
+   "v88": "483",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1670,
+   "page": 85,
+   "page_row": 11,
+   "p1": "746",
+   "p2": "268",
+   "tile_diag": "783",
+   "v88": "910",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1671,
+   "page": 85,
+   "page_row": 12,
+   "p1": "785",
+   "p2": "662",
+   "tile_diag": "946",
+   "v88": "208",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1672,
+   "page": 85,
+   "page_row": 13,
+   "p1": "962",
+   "p2": "1088",
+   "tile_diag": "",
+   "v88": "963",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1673,
+   "page": 85,
+   "page_row": 14,
+   "p1": "1003",
+   "p2": "794",
+   "tile_diag": "708",
+   "v88": "1003",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1674,
+   "page": 85,
+   "page_row": 15,
+   "p1": "794",
+   "p2": "509",
+   "tile_diag": "749",
+   "v88": "494",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1675,
+   "page": 85,
+   "page_row": 16,
+   "p1": "809",
+   "p2": "496",
+   "tile_diag": "1003",
+   "v88": "609",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1676,
+   "page": 85,
+   "page_row": 17,
+   "p1": "798",
+   "p2": "577",
+   "tile_diag": "794",
+   "v88": "706",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1677,
+   "page": 85,
+   "page_row": 18,
+   "p1": "577",
+   "p2": "277",
+   "tile_diag": "769",
+   "v88": "514",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1678,
+   "page": 85,
+   "page_row": 19,
+   "p1": "277",
+   "p2": "1485",
+   "tile_diag": "796",
+   "v88": "514",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1706,
+   "page": 87,
+   "page_row": 7,
+   "p1": "827",
+   "p2": "1 827",
+   "tile_diag": "446",
+   "v88": "447",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1708,
+   "page": 87,
+   "page_row": 9,
+   "p1": "473",
+   "p2": "478",
+   "tile_diag": "446",
+   "v88": "429",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1710,
+   "page": 87,
+   "page_row": 11,
+   "p1": "403",
+   "p2": "483",
+   "tile_diag": "429",
+   "v88": "498",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1714,
+   "page": 87,
+   "page_row": 15,
+   "p1": "183",
+   "p2": "1813",
+   "tile_diag": "248",
+   "v88": "38",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1749,
+   "page": 89,
+   "page_row": 10,
+   "p1": "348",
+   "p2": "948",
+   "tile_diag": "1687",
+   "v88": "348",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1750,
+   "page": 89,
+   "page_row": 11,
+   "p1": "595",
+   "p2": "5904",
+   "tile_diag": "348",
+   "v88": "348",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1751,
+   "page": 89,
+   "page_row": 12,
+   "p1": "1036",
+   "p2": "1057",
+   "tile_diag": "694",
+   "v88": "1036",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1752,
+   "page": 89,
+   "page_row": 13,
+   "p1": "1115",
+   "p2": "1426",
+   "tile_diag": "904",
+   "v88": "1036",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1753,
+   "page": 89,
+   "page_row": 14,
+   "p1": "1116",
+   "p2": "1115",
+   "tile_diag": "1445",
+   "v88": "615",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1754,
+   "page": 89,
+   "page_row": 15,
+   "p1": "349",
+   "p2": "1116",
+   "tile_diag": "1026615",
+   "v88": "349",
+   "status": "P1"
+  },
+  {
+   "global_idx": 1755,
+   "page": 89,
+   "page_row": 16,
+   "p1": "1074",
+   "p2": "349",
+   "tile_diag": "114",
+   "v88": "549",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1756,
+   "page": 89,
+   "page_row": 17,
+   "p1": "68",
+   "p2": "1071",
+   "tile_diag": "549",
+   "v88": "1277",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1757,
+   "page": 89,
+   "page_row": 18,
+   "p1": "643",
+   "p2": "68",
+   "tile_diag": "1277",
+   "v88": "48",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1848,
+   "page": 94,
+   "page_row": 7,
+   "p1": "1120",
+   "p2": "1126",
+   "tile_diag": "1124",
+   "v88": "1124",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1849,
+   "page": 94,
+   "page_row": 8,
+   "p1": "716",
+   "p2": "746",
+   "tile_diag": "748",
+   "v88": "742",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1854,
+   "page": 94,
+   "page_row": 13,
+   "p1": "86",
+   "p2": "84",
+   "tile_diag": "54",
+   "v88": "54",
+   "status": "T3"
+  },
+  {
+   "global_idx": 1856,
+   "page": 94,
+   "page_row": 15,
+   "p1": "192",
+   "p2": "792",
+   "tile_diag": "793",
+   "v88": "792",
+   "status": "P2"
+  },
+  {
+   "global_idx": 2384,
+   "page": 121,
+   "page_row": 0,
+   "p1": "9/80",
+   "p2": "990",
+   "tile_diag": "90",
+   "v88": null,
+   "status": "U"
+  },
+  {
+   "global_idx": 2385,
+   "page": 121,
+   "page_row": 1,
+   "p1": "2/61",
+   "p2": "201",
+   "tile_diag": "201",
+   "v88": "201",
+   "status": "P2"
+  },
+  {
+   "global_idx": 2386,
+   "page": 121,
+   "page_row": 2,
+   "p1": "1/68",
+   "p2": "1058",
+   "tile_diag": "1008",
+   "v88": "1058",
+   "status": "P2"
+  },
+  {
+   "global_idx": 2387,
+   "page": 121,
+   "page_row": 3,
+   "p1": "92",
+   "p2": "97",
+   "tile_diag": "92",
+   "v88": "92",
+   "status": "P1"
+  },
+  {
+   "global_idx": 2388,
+   "page": 121,
+   "page_row": 4,
+   "p1": "90",
+   "p2": "99",
+   "tile_diag": "90",
+   "v88": "90",
+   "status": "P1"
+  },
+  {
+   "global_idx": 2390,
+   "page": 121,
+   "page_row": 6,
+   "p1": "8/65",
+   "p2": "815",
+   "tile_diag": "122",
+   "v88": "915",
+   "status": "T3"
+  },
+  {
+   "global_idx": 2398,
+   "page": 121,
+   "page_row": 14,
+   "p1": "740",
+   "p2": "744",
+   "tile_diag": "810",
+   "v88": "654",
+   "status": "T3"
+  },
+  {
+   "global_idx": 2399,
+   "page": 121,
+   "page_row": 15,
+   "p1": "964",
+   "p2": "494",
+   "tile_diag": "649",
+   "v88": "763",
+   "status": "T3"
+  },
+  {
+   "global_idx": 2403,
+   "page": 121,
+   "page_row": 19,
+   "p1": "1725",
+   "p2": "1723",
+   "tile_diag": "472",
+   "v88": "1|269",
+   "status": "T3"
+  }
+ ],
+ "missing": []
+}

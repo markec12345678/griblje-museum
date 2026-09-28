@@ -1,0 +1,2498 @@
+{
+ "meta": {
+  "val": 88,
+  "generated_by": "build-register-v88.py",
+  "method": "direktno branje izrezkov (instrument val 61) — 139 digit-split vrstic",
+  "source": "band-v88/adjudication-v88.json"
+ },
+ "tally": {
+  "resolved-P1": 25,
+  "resolved-P2": 37,
+  "resolved-T3": 75,
+  "unresolved": 2
+ },
+ "changes": [
+  {
+   "global_idx": 1087,
+   "page": 56,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1494",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1491"
+   },
+   "p1": "1494",
+   "p2": "1444",
+   "tile_diag": "429"
+  },
+  {
+   "global_idx": 1088,
+   "page": 56,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "566",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "568"
+   },
+   "p1": "566",
+   "p2": "568",
+   "tile_diag": "688"
+  },
+  {
+   "global_idx": 1089,
+   "page": 56,
+   "row": 16,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "74",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "94"
+   },
+   "p1": "74",
+   "p2": "24",
+   "tile_diag": "494"
+  },
+  {
+   "global_idx": 1091,
+   "page": 56,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "542",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "842"
+   },
+   "p1": "542",
+   "p2": "582",
+   "tile_diag": "34"
+  },
+  {
+   "global_idx": 1097,
+   "page": 57,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1045",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1048"
+   },
+   "p1": "1045",
+   "p2": "10455",
+   "tile_diag": "260"
+  },
+  {
+   "global_idx": 1111,
+   "page": 57,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "222",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "232"
+   },
+   "p1": "222",
+   "p2": "232",
+   "tile_diag": "28"
+  },
+  {
+   "global_idx": 1112,
+   "page": 57,
+   "row": 19,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "326",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "320"
+   },
+   "p1": "326",
+   "p2": "280",
+   "tile_diag": "80"
+  },
+  {
+   "global_idx": 1125,
+   "page": 58,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "778",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "118"
+   },
+   "p1": "778",
+   "p2": "478",
+   "tile_diag": "914"
+  },
+  {
+   "global_idx": 1138,
+   "page": 59,
+   "row": 6,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "654",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "644"
+   },
+   "p1": "654",
+   "p2": "644",
+   "tile_diag": "1111"
+  },
+  {
+   "global_idx": 1143,
+   "page": 59,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "674",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "674"
+   },
+   "p1": "674",
+   "p2": "672",
+   "tile_diag": "677"
+  },
+  {
+   "global_idx": 1144,
+   "page": 59,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "1108",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1108"
+   },
+   "p1": "1108",
+   "p2": "1408",
+   "tile_diag": "1108"
+  },
+  {
+   "global_idx": 1149,
+   "page": 59,
+   "row": 17,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "755",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "238"
+   },
+   "p1": "755",
+   "p2": "758",
+   "tile_diag": "1690"
+  },
+  {
+   "global_idx": 1152,
+   "page": 59,
+   "row": 20,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "26",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "9",
+    "klafter": "1128"
+   },
+   "p1": "26",
+   "p2": "9 1188",
+   "tile_diag": "428"
+  },
+  {
+   "global_idx": 1193,
+   "page": 62,
+   "row": 0,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "697",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "691"
+   },
+   "p1": "697",
+   "p2": "691",
+   "tile_diag": "691"
+  },
+  {
+   "global_idx": 1194,
+   "page": 62,
+   "row": 1,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "785",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "785"
+   },
+   "p1": "785",
+   "p2": "735",
+   "tile_diag": "785"
+  },
+  {
+   "global_idx": 1202,
+   "page": 62,
+   "row": 9,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "75",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "78"
+   },
+   "p1": "75",
+   "p2": "78",
+   "tile_diag": "60"
+  },
+  {
+   "global_idx": 1203,
+   "page": 62,
+   "row": 10,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "295",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "396"
+   },
+   "p1": "295",
+   "p2": "395",
+   "tile_diag": "78"
+  },
+  {
+   "global_idx": 1204,
+   "page": 62,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "285",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "285"
+   },
+   "p1": "285",
+   "p2": "288",
+   "tile_diag": "995"
+  },
+  {
+   "global_idx": 1205,
+   "page": 62,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "224",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "204"
+   },
+   "p1": "224",
+   "p2": "204",
+   "tile_diag": "246"
+  },
+  {
+   "global_idx": 1211,
+   "page": 62,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "275",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "395"
+   },
+   "p1": "275",
+   "p2": "395",
+   "tile_diag": "820"
+  },
+  {
+   "global_idx": 1215,
+   "page": 63,
+   "row": 2,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "217",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "157"
+   },
+   "p1": "217",
+   "p2": "247",
+   "tile_diag": "267"
+  },
+  {
+   "global_idx": 1217,
+   "page": 63,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "217",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "187"
+   },
+   "p1": "217",
+   "p2": "247",
+   "tile_diag": "287"
+  },
+  {
+   "global_idx": 1218,
+   "page": 63,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "245",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "326"
+   },
+   "p1": "245",
+   "p2": "246",
+   "tile_diag": "246"
+  },
+  {
+   "global_idx": 1221,
+   "page": 63,
+   "row": 8,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "177",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "177"
+   },
+   "p1": "177",
+   "p2": "147",
+   "tile_diag": "147"
+  },
+  {
+   "global_idx": 1224,
+   "page": 63,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "144",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "278"
+   },
+   "p1": "144",
+   "p2": "274",
+   "tile_diag": "274"
+  },
+  {
+   "global_idx": 1225,
+   "page": 63,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "877",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "377"
+   },
+   "p1": "877",
+   "p2": "377",
+   "tile_diag": "174"
+  },
+  {
+   "global_idx": 1226,
+   "page": 63,
+   "row": 13,
+   "type": "v88_unresolved",
+   "p1": "529",
+   "p2": "329"
+  },
+  {
+   "global_idx": 1227,
+   "page": 63,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1124",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1134"
+   },
+   "p1": "1124",
+   "p2": "1134",
+   "tile_diag": "50"
+  },
+  {
+   "global_idx": 1229,
+   "page": 63,
+   "row": 16,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "154",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "151"
+   },
+   "p1": "154",
+   "p2": "157",
+   "tile_diag": "175"
+  },
+  {
+   "global_idx": 1230,
+   "page": 63,
+   "row": 17,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "112",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "112"
+   },
+   "p1": "112",
+   "p2": "142",
+   "tile_diag": "171"
+  },
+  {
+   "global_idx": 1232,
+   "page": 63,
+   "row": 19,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "629",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "63"
+   },
+   "p1": "629",
+   "p2": "69",
+   "tile_diag": "108"
+  },
+  {
+   "global_idx": 1297,
+   "page": 67,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "373",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "375"
+   },
+   "p1": "373",
+   "p2": "375",
+   "tile_diag": "138"
+  },
+  {
+   "global_idx": 1298,
+   "page": 67,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "484",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "464"
+   },
+   "p1": "484",
+   "p2": "464",
+   "tile_diag": "375"
+  },
+  {
+   "global_idx": 1301,
+   "page": 67,
+   "row": 8,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "291",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "291"
+   },
+   "p1": "291",
+   "p2": "297",
+   "tile_diag": "316"
+  },
+  {
+   "global_idx": 1303,
+   "page": 67,
+   "row": 10,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "132",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "252"
+   },
+   "p1": "132",
+   "p2": "252",
+   "tile_diag": "1040"
+  },
+  {
+   "global_idx": 1307,
+   "page": 67,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1050",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1046"
+   },
+   "p1": "1050",
+   "p2": "1046",
+   "tile_diag": "840"
+  },
+  {
+   "global_idx": 1310,
+   "page": 67,
+   "row": 17,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "325",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "326"
+   },
+   "p1": "325",
+   "p2": "323",
+   "tile_diag": "66"
+  },
+  {
+   "global_idx": 1386,
+   "page": 71,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "848",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "814"
+   },
+   "p1": "848",
+   "p2": "818",
+   "tile_diag": "534"
+  },
+  {
+   "global_idx": 1387,
+   "page": 71,
+   "row": 13,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "252",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "292"
+   },
+   "p1": "252",
+   "p2": "292",
+   "tile_diag": "136"
+  },
+  {
+   "global_idx": 1389,
+   "page": 71,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "165",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "165"
+   },
+   "p1": "165",
+   "p2": "166",
+   "tile_diag": "814"
+  },
+  {
+   "global_idx": 1440,
+   "page": 74,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "127",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "137"
+   },
+   "p1": "127",
+   "p2": "123",
+   "tile_diag": "137"
+  },
+  {
+   "global_idx": 1441,
+   "page": 74,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "516",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "316"
+   },
+   "p1": "516",
+   "p2": "316",
+   "tile_diag": "124"
+  },
+  {
+   "global_idx": 1451,
+   "page": 74,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "+ 668",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "668"
+   },
+   "p1": "+ 668",
+   "p2": "+ 686",
+   "tile_diag": "788"
+  },
+  {
+   "global_idx": 1454,
+   "page": 74,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "+ 247",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "327"
+   },
+   "p1": "+ 247",
+   "p2": "+ 284",
+   "tile_diag": "1144"
+  },
+  {
+   "global_idx": 1456,
+   "page": 74,
+   "row": 20,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "12",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "790"
+   },
+   "p1": "12",
+   "p2": "790",
+   "tile_diag": "997"
+  },
+  {
+   "global_idx": 1457,
+   "page": 75,
+   "row": 0,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1266",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1226"
+   },
+   "p1": "1266",
+   "p2": "1236",
+   "tile_diag": "1226"
+  },
+  {
+   "global_idx": 1468,
+   "page": 75,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1896",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1596"
+   },
+   "p1": "1896",
+   "p2": "1596",
+   "tile_diag": "145"
+  },
+  {
+   "global_idx": 1498,
+   "page": 77,
+   "row": 1,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "33",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "83"
+   },
+   "p1": "33",
+   "p2": "83",
+   "tile_diag": "88"
+  },
+  {
+   "global_idx": 1500,
+   "page": 77,
+   "row": 3,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "113",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "113"
+   },
+   "p1": "113",
+   "p2": "183",
+   "tile_diag": "113"
+  },
+  {
+   "global_idx": 1502,
+   "page": 77,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "358",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "388"
+   },
+   "p1": "358",
+   "p2": "338",
+   "tile_diag": "49"
+  },
+  {
+   "global_idx": 1505,
+   "page": 77,
+   "row": 8,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "282",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "382"
+   },
+   "p1": "282",
+   "p2": "382",
+   "tile_diag": "32"
+  },
+  {
+   "global_idx": 1509,
+   "page": 77,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "729",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "705"
+   },
+   "p1": "729",
+   "p2": "785",
+   "tile_diag": "946"
+  },
+  {
+   "global_idx": 1511,
+   "page": 77,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "560",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "366"
+   },
+   "p1": "560",
+   "p2": "360",
+   "tile_diag": "735"
+  },
+  {
+   "global_idx": 1512,
+   "page": 77,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1156",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1186"
+   },
+   "p1": "1156",
+   "p2": "1186",
+   "tile_diag": "299"
+  },
+  {
+   "global_idx": 1542,
+   "page": 79,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "857",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "451"
+   },
+   "p1": "857",
+   "p2": "657",
+   "tile_diag": "724"
+  },
+  {
+   "global_idx": 1543,
+   "page": 79,
+   "row": 6,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1 25",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "35"
+   },
+   "p1": "1 25",
+   "p2": "1 85",
+   "tile_diag": "160"
+  },
+  {
+   "global_idx": 1544,
+   "page": 79,
+   "row": 7,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "3 716",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "76"
+   },
+   "p1": "3 716",
+   "p2": "2 716",
+   "tile_diag": "36"
+  },
+  {
+   "global_idx": 1548,
+   "page": 79,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1 482",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "422"
+   },
+   "p1": "1 482",
+   "p2": "1 422",
+   "tile_diag": "21130"
+  },
+  {
+   "global_idx": 1549,
+   "page": 79,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "1482",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1482"
+   },
+   "p1": "1482",
+   "p2": "1488",
+   "tile_diag": "440"
+  },
+  {
+   "global_idx": 1550,
+   "page": 79,
+   "row": 13,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1 1332",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "455"
+   },
+   "p1": "1 1332",
+   "p2": "1 1333",
+   "tile_diag": "38"
+  },
+  {
+   "global_idx": 1551,
+   "page": 79,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1424",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1244"
+   },
+   "p1": "1424",
+   "p2": "1444",
+   "tile_diag": "1112"
+  },
+  {
+   "global_idx": 1553,
+   "page": 79,
+   "row": 16,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1488",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "448"
+   },
+   "p1": "1488",
+   "p2": "448",
+   "tile_diag": "1482"
+  },
+  {
+   "global_idx": 1555,
+   "page": 79,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "192",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "783"
+   },
+   "p1": "192",
+   "p2": "182",
+   "tile_diag": "1244"
+  },
+  {
+   "global_idx": 1588,
+   "page": 81,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "638",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "488"
+   },
+   "p1": "638",
+   "p2": "688",
+   "tile_diag": "512"
+  },
+  {
+   "global_idx": 1597,
+   "page": 82,
+   "row": 0,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "7/1",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "591"
+   },
+   "p1": "7/1",
+   "p2": "391",
+   "tile_diag": "591"
+  },
+  {
+   "global_idx": 1599,
+   "page": 82,
+   "row": 2,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1/1",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "618"
+   },
+   "p1": "1/1",
+   "p2": "168",
+   "tile_diag": "618"
+  },
+  {
+   "global_idx": 1600,
+   "page": 82,
+   "row": 3,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "2/3",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "111"
+   },
+   "p1": "2/3",
+   "p2": "111",
+   "tile_diag": "111"
+  },
+  {
+   "global_idx": 1601,
+   "page": 82,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "2/9",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "263"
+   },
+   "p1": "2/9",
+   "p2": "263",
+   "tile_diag": "353"
+  },
+  {
+   "global_idx": 1602,
+   "page": 82,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1/1",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "269"
+   },
+   "p1": "1/1",
+   "p2": "269",
+   "tile_diag": "252"
+  },
+  {
+   "global_idx": 1603,
+   "page": 82,
+   "row": 6,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "5/3",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "491"
+   },
+   "p1": "5/3",
+   "p2": "192",
+   "tile_diag": "269"
+  },
+  {
+   "global_idx": 1604,
+   "page": 82,
+   "row": 7,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1/9",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "535"
+   },
+   "p1": "1/9",
+   "p2": "535",
+   "tile_diag": "191"
+  },
+  {
+   "global_idx": 1605,
+   "page": 82,
+   "row": 8,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "3/1",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "179"
+   },
+   "p1": "3/1",
+   "p2": "179",
+   "tile_diag": "535"
+  },
+  {
+   "global_idx": 1606,
+   "page": 82,
+   "row": 9,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1/3",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "351"
+   },
+   "p1": "1/3",
+   "p2": "351",
+   "tile_diag": "179"
+  },
+  {
+   "global_idx": 1607,
+   "page": 82,
+   "row": 10,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1/3",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "128"
+   },
+   "p1": "1/3",
+   "p2": "135",
+   "tile_diag": "351"
+  },
+  {
+   "global_idx": 1608,
+   "page": 82,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "2/1",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "48"
+   },
+   "p1": "2/1",
+   "p2": "148",
+   "tile_diag": "135"
+  },
+  {
+   "global_idx": 1609,
+   "page": 82,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "2/2",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "351"
+   },
+   "p1": "2/2",
+   "p2": "254",
+   "tile_diag": "46"
+  },
+  {
+   "global_idx": 1610,
+   "page": 82,
+   "row": 13,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "2/0",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "252"
+   },
+   "p1": "2/0",
+   "p2": "252",
+   "tile_diag": ""
+  },
+  {
+   "global_idx": 1611,
+   "page": 82,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1/6",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "270"
+   },
+   "p1": "1/6",
+   "p2": "270",
+   "tile_diag": "254"
+  },
+  {
+   "global_idx": 1612,
+   "page": 82,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1/6",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "14"
+   },
+   "p1": "1/6",
+   "p2": "116",
+   "tile_diag": "232"
+  },
+  {
+   "global_idx": 1613,
+   "page": 82,
+   "row": 16,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1/1",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "16"
+   },
+   "p1": "1/1",
+   "p2": "116",
+   "tile_diag": "210"
+  },
+  {
+   "global_idx": 1614,
+   "page": 82,
+   "row": 17,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1/3",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "147"
+   },
+   "p1": "1/3",
+   "p2": "161",
+   "tile_diag": "116"
+  },
+  {
+   "global_idx": 1615,
+   "page": 82,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "40/3",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "183"
+   },
+   "p1": "40/3",
+   "p2": "183",
+   "tile_diag": "116"
+  },
+  {
+   "global_idx": 1616,
+   "page": 82,
+   "row": 19,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "5/6",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1005"
+   },
+   "p1": "5/6",
+   "p2": "40.03",
+   "tile_diag": "1167"
+  },
+  {
+   "global_idx": 1618,
+   "page": 83,
+   "row": 1,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "164",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "164"
+   },
+   "p1": "164",
+   "p2": "124",
+   "tile_diag": "124"
+  },
+  {
+   "global_idx": 1619,
+   "page": 83,
+   "row": 2,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "59",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "59"
+   },
+   "p1": "59",
+   "p2": "39",
+   "tile_diag": "164"
+  },
+  {
+   "global_idx": 1629,
+   "page": 83,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "526",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "538"
+   },
+   "p1": "526",
+   "p2": "528",
+   "tile_diag": "290"
+  },
+  {
+   "global_idx": 1632,
+   "page": 83,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "56",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "64"
+   },
+   "p1": "56",
+   "p2": "54",
+   "tile_diag": "12"
+  },
+  {
+   "global_idx": 1633,
+   "page": 83,
+   "row": 16,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "1256",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1256"
+   },
+   "p1": "1256",
+   "p2": "56",
+   "tile_diag": "538"
+  },
+  {
+   "global_idx": 1634,
+   "page": 83,
+   "row": 17,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "399",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "399"
+   },
+   "p1": "399",
+   "p2": "1256",
+   "tile_diag": "8"
+  },
+  {
+   "global_idx": 1635,
+   "page": 83,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "649",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "849"
+   },
+   "p1": "649",
+   "p2": "399",
+   "tile_diag": "341"
+  },
+  {
+   "global_idx": 1636,
+   "page": 83,
+   "row": 19,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "39",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "39"
+   },
+   "p1": "39",
+   "p2": "849",
+   "tile_diag": "16"
+  },
+  {
+   "global_idx": 1641,
+   "page": 84,
+   "row": 3,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "237",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "237"
+   },
+   "p1": "237",
+   "p2": "231",
+   "tile_diag": "137"
+  },
+  {
+   "global_idx": 1642,
+   "page": 84,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "187",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "182"
+   },
+   "p1": "187",
+   "p2": "182",
+   "tile_diag": "737"
+  },
+  {
+   "global_idx": 1643,
+   "page": 84,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1220",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1279"
+   },
+   "p1": "1220",
+   "p2": "1229",
+   "tile_diag": "182"
+  },
+  {
+   "global_idx": 1645,
+   "page": 84,
+   "row": 7,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "1373",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1373"
+   },
+   "p1": "1373",
+   "p2": "1312",
+   "tile_diag": "2230"
+  },
+  {
+   "global_idx": 1658,
+   "page": 84,
+   "row": 20,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1476",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1246"
+   },
+   "p1": "1476",
+   "p2": "1478",
+   "tile_diag": "23"
+  },
+  {
+   "global_idx": 1662,
+   "page": 85,
+   "row": 3,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "709",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "799"
+   },
+   "p1": "709",
+   "p2": "799",
+   "tile_diag": "199"
+  },
+  {
+   "global_idx": 1663,
+   "page": 85,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "721",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "784"
+   },
+   "p1": "721",
+   "p2": "784",
+   "tile_diag": "107"
+  },
+  {
+   "global_idx": 1664,
+   "page": 85,
+   "row": 5,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "756",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "186"
+   },
+   "p1": "756",
+   "p2": "714",
+   "tile_diag": "707"
+  },
+  {
+   "global_idx": 1665,
+   "page": 85,
+   "row": 6,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "717",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "714"
+   },
+   "p1": "717",
+   "p2": "706",
+   "tile_diag": "736"
+  },
+  {
+   "global_idx": 1666,
+   "page": 85,
+   "row": 7,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "706",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "700"
+   },
+   "p1": "706",
+   "p2": "1490",
+   "tile_diag": "711"
+  },
+  {
+   "global_idx": 1667,
+   "page": 85,
+   "row": 8,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1 499",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "990"
+   },
+   "p1": "1 499",
+   "p2": "1483",
+   "tile_diag": "766"
+  },
+  {
+   "global_idx": 1668,
+   "page": 85,
+   "row": 9,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1 473",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "693"
+   },
+   "p1": "1 473",
+   "p2": "752",
+   "tile_diag": "1999"
+  },
+  {
+   "global_idx": 1669,
+   "page": 85,
+   "row": 10,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "763",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "483"
+   },
+   "p1": "763",
+   "p2": "246",
+   "tile_diag": "1699"
+  },
+  {
+   "global_idx": 1670,
+   "page": 85,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "746",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "910"
+   },
+   "p1": "746",
+   "p2": "268",
+   "tile_diag": "783"
+  },
+  {
+   "global_idx": 1671,
+   "page": 85,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "785",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "208"
+   },
+   "p1": "785",
+   "p2": "662",
+   "tile_diag": "946"
+  },
+  {
+   "global_idx": 1672,
+   "page": 85,
+   "row": 13,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "962",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "963"
+   },
+   "p1": "962",
+   "p2": "1088",
+   "tile_diag": ""
+  },
+  {
+   "global_idx": 1673,
+   "page": 85,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "1003",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1003"
+   },
+   "p1": "1003",
+   "p2": "794",
+   "tile_diag": "708"
+  },
+  {
+   "global_idx": 1674,
+   "page": 85,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "794",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "494"
+   },
+   "p1": "794",
+   "p2": "509",
+   "tile_diag": "749"
+  },
+  {
+   "global_idx": 1675,
+   "page": 85,
+   "row": 16,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "809",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "609"
+   },
+   "p1": "809",
+   "p2": "496",
+   "tile_diag": "1003"
+  },
+  {
+   "global_idx": 1676,
+   "page": 85,
+   "row": 17,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "798",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "706"
+   },
+   "p1": "798",
+   "p2": "577",
+   "tile_diag": "794"
+  },
+  {
+   "global_idx": 1677,
+   "page": 85,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "577",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "514"
+   },
+   "p1": "577",
+   "p2": "277",
+   "tile_diag": "769"
+  },
+  {
+   "global_idx": 1678,
+   "page": 85,
+   "row": 19,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "277",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "514"
+   },
+   "p1": "277",
+   "p2": "1485",
+   "tile_diag": "796"
+  },
+  {
+   "global_idx": 1706,
+   "page": 87,
+   "row": 7,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "827",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "447"
+   },
+   "p1": "827",
+   "p2": "1 827",
+   "tile_diag": "446"
+  },
+  {
+   "global_idx": 1708,
+   "page": 87,
+   "row": 9,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "473",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "429"
+   },
+   "p1": "473",
+   "p2": "478",
+   "tile_diag": "446"
+  },
+  {
+   "global_idx": 1710,
+   "page": 87,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "403",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "498"
+   },
+   "p1": "403",
+   "p2": "483",
+   "tile_diag": "429"
+  },
+  {
+   "global_idx": 1714,
+   "page": 87,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "183",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "38"
+   },
+   "p1": "183",
+   "p2": "1813",
+   "tile_diag": "248"
+  },
+  {
+   "global_idx": 1749,
+   "page": 89,
+   "row": 10,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "348",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "348"
+   },
+   "p1": "348",
+   "p2": "948",
+   "tile_diag": "1687"
+  },
+  {
+   "global_idx": 1750,
+   "page": 89,
+   "row": 11,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "595",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "348"
+   },
+   "p1": "595",
+   "p2": "5904",
+   "tile_diag": "348"
+  },
+  {
+   "global_idx": 1751,
+   "page": 89,
+   "row": 12,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "1036",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1036"
+   },
+   "p1": "1036",
+   "p2": "1057",
+   "tile_diag": "694"
+  },
+  {
+   "global_idx": 1752,
+   "page": 89,
+   "row": 13,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "1115",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1036"
+   },
+   "p1": "1115",
+   "p2": "1426",
+   "tile_diag": "904"
+  },
+  {
+   "global_idx": 1753,
+   "page": 89,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1116",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "615"
+   },
+   "p1": "1116",
+   "p2": "1115",
+   "tile_diag": "1445"
+  },
+  {
+   "global_idx": 1754,
+   "page": 89,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "349",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "349"
+   },
+   "p1": "349",
+   "p2": "1116",
+   "tile_diag": "1026615"
+  },
+  {
+   "global_idx": 1755,
+   "page": 89,
+   "row": 16,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1074",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "549"
+   },
+   "p1": "1074",
+   "p2": "349",
+   "tile_diag": "114"
+  },
+  {
+   "global_idx": 1756,
+   "page": 89,
+   "row": 17,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "68",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1277"
+   },
+   "p1": "68",
+   "p2": "1071",
+   "tile_diag": "549"
+  },
+  {
+   "global_idx": 1757,
+   "page": 89,
+   "row": 18,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "643",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "48"
+   },
+   "p1": "643",
+   "p2": "68",
+   "tile_diag": "1277"
+  },
+  {
+   "global_idx": 1848,
+   "page": 94,
+   "row": 7,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1120",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1124"
+   },
+   "p1": "1120",
+   "p2": "1126",
+   "tile_diag": "1124"
+  },
+  {
+   "global_idx": 1849,
+   "page": 94,
+   "row": 8,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "716",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "742"
+   },
+   "p1": "716",
+   "p2": "746",
+   "tile_diag": "748"
+  },
+  {
+   "global_idx": 1854,
+   "page": 94,
+   "row": 13,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "86",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "54"
+   },
+   "p1": "86",
+   "p2": "84",
+   "tile_diag": "54"
+  },
+  {
+   "global_idx": 1856,
+   "page": 94,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "192",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "792"
+   },
+   "p1": "192",
+   "p2": "792",
+   "tile_diag": "793"
+  },
+  {
+   "global_idx": 2384,
+   "page": 121,
+   "row": 0,
+   "type": "v88_unresolved",
+   "p1": "9/80",
+   "p2": "990"
+  },
+  {
+   "global_idx": 2385,
+   "page": 121,
+   "row": 1,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "2/61",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "201"
+   },
+   "p1": "2/61",
+   "p2": "201",
+   "tile_diag": "201"
+  },
+  {
+   "global_idx": 2386,
+   "page": 121,
+   "row": 2,
+   "type": "v88_resolution",
+   "status": "P2",
+   "old": {
+    "jaethe": "1/68",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1058"
+   },
+   "p1": "1/68",
+   "p2": "1058",
+   "tile_diag": "1008"
+  },
+  {
+   "global_idx": 2387,
+   "page": 121,
+   "row": 3,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "92",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "92"
+   },
+   "p1": "92",
+   "p2": "97",
+   "tile_diag": "92"
+  },
+  {
+   "global_idx": 2388,
+   "page": 121,
+   "row": 4,
+   "type": "v88_resolution",
+   "status": "P1",
+   "old": {
+    "jaethe": "90",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "90"
+   },
+   "p1": "90",
+   "p2": "99",
+   "tile_diag": "90"
+  },
+  {
+   "global_idx": 2390,
+   "page": 121,
+   "row": 6,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "8/65",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "915"
+   },
+   "p1": "8/65",
+   "p2": "815",
+   "tile_diag": "122"
+  },
+  {
+   "global_idx": 2398,
+   "page": 121,
+   "row": 14,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "740",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "654"
+   },
+   "p1": "740",
+   "p2": "744",
+   "tile_diag": "810"
+  },
+  {
+   "global_idx": 2399,
+   "page": 121,
+   "row": 15,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "964",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "763"
+   },
+   "p1": "964",
+   "p2": "494",
+   "tile_diag": "649"
+  },
+  {
+   "global_idx": 2403,
+   "page": 121,
+   "row": 19,
+   "type": "v88_resolution",
+   "status": "T3",
+   "old": {
+    "jaethe": "1725",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "269"
+   },
+   "p1": "1725",
+   "p2": "1723",
+   "tile_diag": "472"
+  }
+ ]
+}

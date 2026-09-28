@@ -1,0 +1,1059 @@
+{
+ "meta": {
+  "val": 88,
+  "pass": "A",
+  "method": "polstrani x4 + kontekstna poravnava proti pass1/pass2; odmik = ladder_slot - pass_row"
+ },
+ "pages": {
+  "57": {
+   "offset": 1,
+   "verified_by": "360/128/225/54/611/220/92/90/469/398/28/80 vse OK"
+  },
+  "58": {
+   "offset": 1,
+   "anchors": "338,384,740,674,577,113,1|56,1038,1|944,179,134,1075,549"
+  },
+  "59": {
+   "offset": 0,
+   "anchors": "989,50,870,246,1|694,261"
+  },
+  "62": {
+   "offset": 1,
+   "anchors": "600,370,56,61,60,282,27,743,820,616"
+  },
+  "63": {
+   "offset": 1,
+   "anchors": "1275,260,175,1108"
+  },
+  "67": {
+   "offset": 1,
+   "anchors": "326,195,458,314,291,1040,326,66,1140,196"
+  },
+  "71": {
+   "offset": 1,
+   "anchors": "462,690,1|1196,561,584,520,1|201,1120,268 (mreza zadrgne 2 vrstici v slot 1 — vrednostno poravnano)",
+   "note": "ladder merge —slots nezanesljivi, branje po vrednostih"
+  },
+  "74": {
+   "offset": 1,
+   "anchors": "787,329,128,203,1261,966,1193,678,1017,1141,1|997,965",
+   "note": "r20: p1=12 je verjetno Summa jaethe — fizicna vrstica = 190/790?"
+  },
+  "75": {
+   "offset": 1,
+   "anchors": "717,711,789,211,116,66,1|261,1206,907"
+  },
+  "77": {
+   "offset": 1,
+   "anchors": "819,49,268,32,299,42"
+  },
+  "79": {
+   "offset": 0,
+   "anchors": "745@1,1560@2,440@9,1080@19,Summa 18|1103+2|180",
+   "note": "x4 branja nezanesljiva (rdece precrke) — vse 9 ciljev Pass B"
+  },
+  "81": {
+   "offset": 1,
+   "anchors": "999,901,246,544,359,1|328,1002,203,78,48"
+  },
+  "82": {
+   "offset": 1,
+   "anchors": "12,111,263,269,535,179,351,148,252,270,116,183 (vse = p2!); p1 vrednosti na tej strani so smeti"
+  },
+  "83": {
+   "offset": 2,
+   "anchors": "164@r1,59@r2,261@r4,25@r5,527@r6,9@r7,14@r8,36,22,8,399,39 (ladder vsebuje 2 glavni pravili)"
+  },
+  "84": {
+   "offset": 1,
+   "anchors": "650,396,56,50,944"
+  },
+  "85": {
+   "offset": 1,
+   "anchors": "296,1003,794,577 (tezek: rdece precrke — x4 nezanesljivo)",
+   "note": "vseh 17 ciljev Pass B"
+  },
+  "87": {
+   "offset": 0,
+   "anchors": "699,1332,698,625,493,1319,38,27,18,12 (spodnje vrstice komprimirane)",
+   "note": "8 v x4 pogosto izgleda kot 4 — Pass B odloca"
+  },
+  "89": {
+   "offset": 1,
+   "anchors": "191,754,281,58,348 (r12: precrkana 1375 + 1036)"
+  },
+  "94": {
+   "offset": 0,
+   "anchors": "210,876,226,1206,1160,1056,288"
+  },
+  "121": {
+   "offset": 1,
+   "anchors": "122,158 (spodnji del: r14-r19 dvomljivo — mogoce manjkajoca vrstica)",
+   "note": "r14,r15,r19 Pass B; spodnji del moti"
+  },
+  "56": {
+   "offset": 1,
+   "anchors": "155@4,558@12,568@16 (vrednostno); 944@1,818@7,831@8"
+  }
+ },
+ "targets": {
+  "1097": {
+   "page": 57,
+   "row": 4,
+   "read": "1048",
+   "strike": "red",
+   "note": "zadnja stevilka 8 vs 5 — dvom; p1=1045 p2=10455",
+   "old_key": "1097"
+  },
+  "1111": {
+   "page": 57,
+   "row": 18,
+   "read": "232",
+   "note": "= p2; rdec udarec",
+   "old_key": "1111"
+  },
+  "1112": {
+   "page": 57,
+   "row": 19,
+   "read": "320",
+   "note": "bliznje: p1=326 p2=280; zadnja stevilka pod rdeco — Pass B",
+   "old_key": "1112"
+  },
+  "1125": {
+   "page": 58,
+   "row": 12,
+   "read": "118?",
+   "note": "x4 nezanesljivo: kandidati p1=778 p2=478; PASS B",
+   "old_key": "1125"
+  },
+  "1138": {
+   "page": 59,
+   "row": 6,
+   "read": "644",
+   "note": "= p2; rdec udarec; Pass B potrditev",
+   "old_key": "1138"
+  },
+  "1143": {
+   "page": 59,
+   "row": 11,
+   "read": "671?",
+   "note": "srednja 7; zadnja 4/2/1 — PASS B",
+   "old_key": "1143"
+  },
+  "1144": {
+   "page": 59,
+   "row": 12,
+   "read": "?",
+   "note": "x4 neberljivo (126?) — PASS B",
+   "old_key": "1144"
+  },
+  "1149": {
+   "page": 59,
+   "row": 17,
+   "read": "258?",
+   "note": "~ p2 758 (7≈2 pri x4) — PASS B",
+   "old_key": "1149"
+  },
+  "1152": {
+   "page": 59,
+   "row": 20,
+   "read": "260?",
+   "note": "~ p1 26; Pass B",
+   "old_key": "1152"
+  },
+  "1193": {
+   "page": 62,
+   "row": 0,
+   "read": "691",
+   "note": "= p2; solid",
+   "old_key": "1193"
+  },
+  "1194": {
+   "page": 62,
+   "row": 1,
+   "read": "785?",
+   "note": "kandidata 785/735 — PASS B",
+   "old_key": "1194"
+  },
+  "1202": {
+   "page": 62,
+   "row": 9,
+   "read": "78",
+   "note": "= p2; solid",
+   "old_key": "1202"
+  },
+  "1203": {
+   "page": 62,
+   "row": 10,
+   "read": "395/396?",
+   "note": "~ p2 395; zadnja — PASS B",
+   "old_key": "1203"
+  },
+  "1204": {
+   "page": 62,
+   "row": 11,
+   "read": "288?",
+   "note": "~ p2 288; PASS B",
+   "old_key": "1204"
+  },
+  "1205": {
+   "page": 62,
+   "row": 12,
+   "read": "204",
+   "note": "= p2; solid",
+   "old_key": "1205"
+  },
+  "1211": {
+   "page": 62,
+   "row": 18,
+   "read": "395?",
+   "note": "~ p2 395; PASS B",
+   "old_key": "1211"
+  },
+  "1215": {
+   "page": 63,
+   "row": 2,
+   "read": "157?",
+   "note": "x4 slabo — PASS B (p1=217 p2=247)",
+   "old_key": "1215"
+  },
+  "1217": {
+   "page": 63,
+   "row": 4,
+   "read": "187?",
+   "note": "x4 slabo — PASS B",
+   "old_key": "1217"
+  },
+  "1218": {
+   "page": 63,
+   "row": 5,
+   "read": "326?",
+   "note": "x4 slabo — PASS B (p1=245 p2=246)",
+   "old_key": "1218"
+  },
+  "1221": {
+   "page": 63,
+   "row": 8,
+   "read": "117?",
+   "note": "x4 slabo — PASS B (p1=177 p2=147)",
+   "old_key": "1221"
+  },
+  "1224": {
+   "page": 63,
+   "row": 11,
+   "read": "278?",
+   "note": "~ p2 274 — PASS B",
+   "old_key": "1224"
+  },
+  "1225": {
+   "page": 63,
+   "row": 12,
+   "read": "377?",
+   "note": "~ p2 377 — PASS B",
+   "old_key": "1225"
+  },
+  "1226": {
+   "page": 63,
+   "row": 13,
+   "read": "?69",
+   "note": "x4 slabо (prepisan) — PASS B (p1=529 p2=329)",
+   "old_key": "1226"
+  },
+  "1227": {
+   "page": 63,
+   "row": 14,
+   "read": "1134?",
+   "note": "~ p2 1134 — PASS B",
+   "old_key": "1227"
+  },
+  "1229": {
+   "page": 63,
+   "row": 16,
+   "read": "151?",
+   "note": "~ p1/p2 — PASS B (p1=154 p2=157)",
+   "old_key": "1229"
+  },
+  "1230": {
+   "page": 63,
+   "row": 17,
+   "read": "112?",
+   "note": "= p1? — PASS B",
+   "old_key": "1230"
+  },
+  "1232": {
+   "page": 63,
+   "row": 19,
+   "read": "63?",
+   "note": "x4 slabо — PASS B (p1=629 p2=69)",
+   "old_key": "1232"
+  },
+  "1297": {
+   "page": 67,
+   "row": 4,
+   "read": "375",
+   "note": "= p2; jasno",
+   "old_key": "1237"
+  },
+  "1298": {
+   "page": 67,
+   "row": 5,
+   "read": "464",
+   "note": "= p2; jasno",
+   "old_key": "1238"
+  },
+  "1301": {
+   "page": 67,
+   "row": 8,
+   "read": "291",
+   "note": "= p1; jasno",
+   "old_key": "1241"
+  },
+  "1303": {
+   "page": 67,
+   "row": 10,
+   "read": "252",
+   "note": "= p2; jasno",
+   "old_key": "1243"
+  },
+  "1307": {
+   "page": 67,
+   "row": 14,
+   "read": "1040?",
+   "note": "srednja 4 jasna; zadnja 0/6 — PASS B (p1=1050 p2=1046)",
+   "old_key": "1247"
+  },
+  "1310": {
+   "page": 67,
+   "row": 17,
+   "read": "324?",
+   "note": "srednja 2 jasna; zadnja 5/4/3 — PASS B (p1=325 p2=323)",
+   "old_key": "1250"
+  },
+  "1386": {
+   "page": 71,
+   "row": 12,
+   "read": "814?",
+   "note": "x4 dvom — PASS B (p1=848 p2=818)",
+   "old_key": "1255"
+  },
+  "1387": {
+   "page": 71,
+   "row": 13,
+   "read": "292",
+   "note": "= p2; Pass B potrditev",
+   "old_key": "1256"
+  },
+  "1389": {
+   "page": 71,
+   "row": 15,
+   "read": "165",
+   "note": "= p1; jasno",
+   "old_key": "1258"
+  },
+  "1440": {
+   "page": 74,
+   "row": 4,
+   "read": "137?",
+   "note": "x4 dvom — PASS B (p1=127 p2=123; tile=137)",
+   "old_key": "1265"
+  },
+  "1441": {
+   "page": 74,
+   "row": 5,
+   "read": "316",
+   "note": "= p2; jasno",
+   "old_key": "1266"
+  },
+  "1451": {
+   "page": 74,
+   "row": 15,
+   "read": "668",
+   "note": "= p1 (jaethe stroke + 668); PASS B potrditev (p2=686)",
+   "old_key": "1278"
+  },
+  "1454": {
+   "page": 74,
+   "row": 18,
+   "read": "?27?",
+   "note": "x4 slabо — PASS B (p1=247 p2=284)",
+   "old_key": "1281"
+  },
+  "1456": {
+   "page": 74,
+   "row": 20,
+   "read": "190/790?",
+   "note": "x4 dvom — PASS B (p1=12? p2=790)",
+   "old_key": "1283"
+  },
+  "1457": {
+   "page": 75,
+   "row": 0,
+   "read": "1226?",
+   "note": "x4 dvom — PASS B (p1=1266 p2=1236)",
+   "old_key": "1288"
+  },
+  "1468": {
+   "page": 75,
+   "row": 11,
+   "read": "1596",
+   "note": "= p2; PASS B potrditev (p1=1896)",
+   "old_key": "1299"
+  },
+  "1498": {
+   "page": 77,
+   "row": 1,
+   "read": "88?",
+   "note": "x4 dvom — PASS B (p1=33 p2=83)",
+   "old_key": "1305"
+  },
+  "1500": {
+   "page": 77,
+   "row": 3,
+   "read": "113",
+   "note": "= p1; PASS B potrditev (p2=183)",
+   "old_key": "1306"
+  },
+  "1502": {
+   "page": 77,
+   "row": 5,
+   "read": "388?",
+   "note": "x4 slabо — PASS B (p1=358 p2=338)",
+   "old_key": "1308"
+  },
+  "1505": {
+   "page": 77,
+   "row": 8,
+   "read": "382",
+   "note": "= p2; PASS B potrditev",
+   "old_key": "1311"
+  },
+  "1509": {
+   "page": 77,
+   "row": 12,
+   "read": "705?",
+   "note": "x4 slabо — PASS B (p1=729 p2=785)",
+   "old_key": "1315"
+  },
+  "1511": {
+   "page": 77,
+   "row": 14,
+   "read": "266?",
+   "note": "x4 slabо — PASS B (p1=560 p2=360)",
+   "old_key": "1317"
+  },
+  "1512": {
+   "page": 77,
+   "row": 15,
+   "read": "1164?",
+   "note": "x4 slabо — PASS B (p1=1156 p2=1186)",
+   "old_key": "1318"
+  },
+  "1588": {
+   "page": 81,
+   "row": 11,
+   "read": "488?",
+   "note": "x4 dvom — PASS B (p1=638 p2=688)",
+   "old_key": "1321"
+  },
+  "1597": {
+   "page": 82,
+   "row": 0,
+   "read": "591?",
+   "note": "~ tile 591; PASS B (p1=7/1 p2=391)",
+   "old_key": "1336"
+  },
+  "1599": {
+   "page": 82,
+   "row": 2,
+   "read": "618/168?",
+   "note": "PASS B (p1=1/1 p2=168)",
+   "old_key": "1338"
+  },
+  "1600": {
+   "page": 82,
+   "row": 3,
+   "read": "111",
+   "note": "= p2; jasno",
+   "old_key": "1339"
+  },
+  "1601": {
+   "page": 82,
+   "row": 4,
+   "read": "263",
+   "note": "= p2; jasno",
+   "old_key": "1340"
+  },
+  "1602": {
+   "page": 82,
+   "row": 5,
+   "read": "269",
+   "note": "= p2; jasno",
+   "old_key": "1341"
+  },
+  "1603": {
+   "page": 82,
+   "row": 6,
+   "read": "491?",
+   "note": "PASS B (p1=5/3 p2=192)",
+   "old_key": "1342"
+  },
+  "1604": {
+   "page": 82,
+   "row": 7,
+   "read": "535",
+   "note": "= p2; jasno",
+   "old_key": "1343"
+  },
+  "1605": {
+   "page": 82,
+   "row": 8,
+   "read": "179",
+   "note": "= p2; jasno",
+   "old_key": "1344"
+  },
+  "1606": {
+   "page": 82,
+   "row": 9,
+   "read": "351",
+   "note": "= p2; jasno",
+   "old_key": "1345"
+  },
+  "1607": {
+   "page": 82,
+   "row": 10,
+   "read": "128?",
+   "note": "PASS B (p1=1/3 p2=135)",
+   "old_key": "1346"
+  },
+  "1608": {
+   "page": 82,
+   "row": 11,
+   "read": "148",
+   "note": "= p2; jasno",
+   "old_key": "1347"
+  },
+  "1609": {
+   "page": 82,
+   "row": 12,
+   "read": "254?",
+   "note": "x4 = 351?? — PASS B (p1=2/2 p2=254)",
+   "old_key": "1348"
+  },
+  "1610": {
+   "page": 82,
+   "row": 13,
+   "read": "252",
+   "note": "= p2; jasno",
+   "old_key": "1349"
+  },
+  "1611": {
+   "page": 82,
+   "row": 14,
+   "read": "270",
+   "note": "= p2; jasno",
+   "old_key": "1350"
+  },
+  "1612": {
+   "page": 82,
+   "row": 15,
+   "read": "116",
+   "note": "= p2; jasno",
+   "old_key": "1351"
+  },
+  "1613": {
+   "page": 82,
+   "row": 16,
+   "read": "116",
+   "note": "= p2; jasno",
+   "old_key": "1352"
+  },
+  "1614": {
+   "page": 82,
+   "row": 17,
+   "read": "167?",
+   "note": "PASS B (p1=1/3 p2=161)",
+   "old_key": "1353"
+  },
+  "1615": {
+   "page": 82,
+   "row": 18,
+   "read": "183",
+   "note": "= p2; jasno",
+   "old_key": "1354"
+  },
+  "1616": {
+   "page": 82,
+   "row": 19,
+   "read": "1005?",
+   "note": "PASS B (p1=5/6 p2=40.03)",
+   "old_key": "1355"
+  },
+  "1618": {
+   "page": 83,
+   "row": 1,
+   "read": "164",
+   "note": "= p1; PASS B potrditev (p2=124)",
+   "old_key": "1333"
+  },
+  "1619": {
+   "page": 83,
+   "row": 2,
+   "read": "59",
+   "note": "= p1; PASS B potrditev (p2=39)",
+   "old_key": "1334"
+  },
+  "1641": {
+   "page": 84,
+   "row": 3,
+   "read": "237",
+   "note": "= p1; PASS B potrditev (p2=231)",
+   "old_key": "1362"
+  },
+  "1642": {
+   "page": 84,
+   "row": 4,
+   "read": "182",
+   "note": "= p2; PASS B potrditev (p1=187)",
+   "old_key": "1363"
+  },
+  "1643": {
+   "page": 84,
+   "row": 5,
+   "read": "1279?",
+   "note": "PASS B (p1=1220 p2=1229)",
+   "old_key": "1364"
+  },
+  "1645": {
+   "page": 84,
+   "row": 7,
+   "read": "1373",
+   "note": "= p1; PASS B potrditev (p2=1312)",
+   "old_key": "1366"
+  },
+  "1658": {
+   "page": 84,
+   "row": 20,
+   "read": "1246?",
+   "note": "PASS B (p1=1476 p2=1478)",
+   "old_key": "1379"
+  },
+  "1662": {
+   "page": 85,
+   "row": 3,
+   "read": "199?",
+   "note": "PASS B (p1=709 p2=799)",
+   "old_key": "1381"
+  },
+  "1663": {
+   "page": 85,
+   "row": 4,
+   "read": "707?",
+   "note": "PASS B (p1=721 p2=784)",
+   "old_key": "1382"
+  },
+  "1664": {
+   "page": 85,
+   "row": 5,
+   "read": "186?",
+   "note": "PASS B (p1=756 p2=714)",
+   "old_key": "1383"
+  },
+  "1665": {
+   "page": 85,
+   "row": 6,
+   "read": "714?",
+   "note": "PASS B (p1=717 p2=706)",
+   "old_key": "1384"
+  },
+  "1666": {
+   "page": 85,
+   "row": 7,
+   "read": "700?",
+   "note": "PASS B (p1=706 p2=1490)",
+   "old_key": "1385"
+  },
+  "1667": {
+   "page": 85,
+   "row": 8,
+   "read": "1|990?",
+   "note": "PASS B (p1=1|499 p2=1483)",
+   "old_key": "1386"
+  },
+  "1668": {
+   "page": 85,
+   "row": 9,
+   "read": "1|693?",
+   "note": "PASS B (p1=1|473 p2=752)",
+   "old_key": "1387"
+  },
+  "1669": {
+   "page": 85,
+   "row": 10,
+   "read": "783?",
+   "note": "PASS B (p1=763 p2=246)",
+   "old_key": "1388"
+  },
+  "1670": {
+   "page": 85,
+   "row": 11,
+   "read": "246?",
+   "note": "PASS B (p1=746 p2=268)",
+   "old_key": "1389"
+  },
+  "1671": {
+   "page": 85,
+   "row": 12,
+   "read": "205?",
+   "note": "PASS B (p1=785 p2=662)",
+   "old_key": "1390"
+  },
+  "1672": {
+   "page": 85,
+   "row": 13,
+   "read": "368?",
+   "note": "PASS B (p1=962 p2=1088)",
+   "old_key": "1391"
+  },
+  "1673": {
+   "page": 85,
+   "row": 14,
+   "read": "1003",
+   "note": "note:= p1; PASS B potrditev (p2=794)",
+   "old_key": "1392"
+  },
+  "1674": {
+   "page": 85,
+   "row": 15,
+   "read": "794",
+   "note": "note:= p1; PASS B potrditev (p2=509)",
+   "old_key": "1393"
+  },
+  "1675": {
+   "page": 85,
+   "row": 16,
+   "read": "669?",
+   "note": "PASS B (p1=809 p2=496)",
+   "old_key": "1394"
+  },
+  "1676": {
+   "page": 85,
+   "row": 17,
+   "read": "705?",
+   "note": "PASS B (p1=798 p2=577)",
+   "old_key": "1395"
+  },
+  "1677": {
+   "page": 85,
+   "row": 18,
+   "read": "577",
+   "note": "note:= p1; PASS B potrditev (p2=277)",
+   "old_key": "1396"
+  },
+  "1678": {
+   "page": 85,
+   "row": 19,
+   "read": "577?",
+   "note": "PASS B (p1=277 p2=1485)",
+   "old_key": "1397"
+  },
+  "1706": {
+   "page": 87,
+   "row": 7,
+   "read": "447?",
+   "note": "PASS B — ali je 8 odprto (p1=827 p2=1|827)?",
+   "old_key": "1408"
+  },
+  "1708": {
+   "page": 87,
+   "row": 9,
+   "read": "429?",
+   "note": "PASS B (p1=473 p2=478)",
+   "old_key": "1410"
+  },
+  "1710": {
+   "page": 87,
+   "row": 11,
+   "read": "498?",
+   "note": "PASS B (p1=403 p2=483)",
+   "old_key": "1412"
+  },
+  "1714": {
+   "page": 87,
+   "row": 15,
+   "read": "419?",
+   "note": "PASS B (p1=183 p2=1813)",
+   "old_key": "1416"
+  },
+  "1749": {
+   "page": 89,
+   "row": 10,
+   "read": "348",
+   "note": "= p1; jasno (p2=948)",
+   "old_key": "1421"
+  },
+  "1750": {
+   "page": 89,
+   "row": 11,
+   "read": "504?",
+   "note": "PASS B (p1=595 p2=5904)",
+   "old_key": "1422"
+  },
+  "1751": {
+   "page": 89,
+   "row": 12,
+   "read": "1036",
+   "note": "= p1; precrkana 1375 zgoraj — PASS B potrditev (p2=1057)",
+   "old_key": "1423"
+  },
+  "1753": {
+   "page": 89,
+   "row": 14,
+   "read": "415?",
+   "note": "PASS B (p1=1116 p2=1115)",
+   "old_key": "1425"
+  },
+  "1754": {
+   "page": 89,
+   "row": 15,
+   "read": "114?",
+   "note": "PASS B (p1=349 p2=1116)",
+   "old_key": "1426"
+  },
+  "1755": {
+   "page": 89,
+   "row": 16,
+   "read": "549?",
+   "note": "~ p1 349 (3≈5) — PASS B (p2=349?? ne: p2=1074... glej ref)",
+   "old_key": "1427"
+  },
+  "1756": {
+   "page": 89,
+   "row": 17,
+   "read": "1277?",
+   "note": "PASS B (p1=68 p2=1071)",
+   "old_key": "1428"
+  },
+  "1757": {
+   "page": 89,
+   "row": 18,
+   "read": "48?",
+   "note": "~ p2 68 (6≈4) — PASS B (p1=643)",
+   "old_key": "1429"
+  },
+  "1848": {
+   "page": 94,
+   "row": 7,
+   "read": "1121?",
+   "note": "PASS B (p1=1120 p2=1126)",
+   "old_key": "1432"
+  },
+  "1849": {
+   "page": 94,
+   "row": 8,
+   "read": "742?",
+   "note": "PASS B (p1=716 p2=746)",
+   "old_key": "1433"
+  },
+  "1854": {
+   "page": 94,
+   "row": 13,
+   "read": "54?",
+   "note": "8≈5 — PASS B (p1=86 p2=84)",
+   "old_key": "1438"
+  },
+  "1856": {
+   "page": 94,
+   "row": 15,
+   "read": "792",
+   "note": "= p2; jasno (p1=192)",
+   "old_key": "1440"
+  },
+  "2384": {
+   "page": 121,
+   "row": 0,
+   "read": "990?",
+   "note": "PASS B (p1=9/80 p2=990)",
+   "old_key": "1453"
+  },
+  "2385": {
+   "page": 121,
+   "row": 1,
+   "read": "201",
+   "note": "= p2; jasno (p1=2/61)",
+   "old_key": "1454"
+  },
+  "2386": {
+   "page": 121,
+   "row": 2,
+   "read": "1058",
+   "note": "= p2?; PASS B potrditev (p1=1/68)",
+   "old_key": "1455"
+  },
+  "2387": {
+   "page": 121,
+   "row": 3,
+   "read": "92",
+   "note": "= p1; jasno (p2=97)",
+   "old_key": "1456"
+  },
+  "2388": {
+   "page": 121,
+   "row": 4,
+   "read": "90",
+   "note": "= p1; jasno (p2=99)",
+   "old_key": "1457"
+  },
+  "2390": {
+   "page": 121,
+   "row": 6,
+   "read": "915/815?",
+   "note": "PASS B (p1=8/65 p2=815)",
+   "old_key": "1459"
+  },
+  "2398": {
+   "page": 121,
+   "row": 14,
+   "read": "763?",
+   "note": "PASS B (p1=740 p2=744)",
+   "old_key": "1467"
+  },
+  "2399": {
+   "page": 121,
+   "row": 15,
+   "read": "946/763?",
+   "note": "PASS B (p1=964 p2=494)",
+   "old_key": "1468"
+  },
+  "2403": {
+   "page": 121,
+   "row": 19,
+   "read": "1269?",
+   "note": "PASS B (p1=1725 p2=1723)",
+   "old_key": "1472"
+  },
+  "1087": {
+   "page": 56,
+   "row": 14,
+   "read": "1191?",
+   "note": "PASS B (p1=1494 p2=1444)",
+   "old_key": "1090"
+  },
+  "1088": {
+   "page": 56,
+   "row": 15,
+   "read": "568",
+   "note": "= p2; PASS B potrditev (p1=566)",
+   "old_key": "1091"
+  },
+  "1089": {
+   "page": 56,
+   "row": 16,
+   "read": "94?",
+   "note": "PASS B (p1=74 p2=24)",
+   "old_key": "1092"
+  },
+  "1091": {
+   "page": 56,
+   "row": 18,
+   "read": "842?",
+   "note": "PASS B (p1=542 p2=582)",
+   "old_key": "1094"
+  },
+  "1542": {
+   "page": 79,
+   "row": 5,
+   "read": "?",
+   "note": "PASS B (p1=857 p2=657)"
+  },
+  "1543": {
+   "page": 79,
+   "row": 6,
+   "read": "?",
+   "note": "PASS B (p1=1|25 p2=1|85)"
+  },
+  "1544": {
+   "page": 79,
+   "row": 7,
+   "read": "?",
+   "note": "PASS B (p1=3|716 p2=2|716)"
+  },
+  "1548": {
+   "page": 79,
+   "row": 11,
+   "read": "?",
+   "note": "PASS B (p1=1|482 p2=1|422)"
+  },
+  "1549": {
+   "page": 79,
+   "row": 12,
+   "read": "?",
+   "note": "PASS B (p1=1482 p2=1488)"
+  },
+  "1550": {
+   "page": 79,
+   "row": 13,
+   "read": "?",
+   "note": "PASS B (p1=1|1332 p2=1|1333)"
+  },
+  "1551": {
+   "page": 79,
+   "row": 14,
+   "read": "?",
+   "note": "PASS B (p1=1424 p2=1444)"
+  },
+  "1553": {
+   "page": 79,
+   "row": 16,
+   "read": "?",
+   "note": "PASS B (p1=1488 p2=448)"
+  },
+  "1555": {
+   "page": 79,
+   "row": 18,
+   "read": "?",
+   "note": "PASS B (p1=192 p2=182)"
+  },
+  "1629": {
+   "page": 83,
+   "row": 12,
+   "read": "538?",
+   "note": "PASS B (p1=526 p2=528)"
+  },
+  "1632": {
+   "page": 83,
+   "row": 15,
+   "read": "84?",
+   "note": "PASS B (p1=56 p2=54)"
+  },
+  "1633": {
+   "page": 83,
+   "row": 16,
+   "read": "456?",
+   "note": "PASS B (p1=1256 p2=56)"
+  },
+  "1634": {
+   "page": 83,
+   "row": 17,
+   "read": "399",
+   "note": "= p1; jasno (p2=1256)"
+  },
+  "1635": {
+   "page": 83,
+   "row": 18,
+   "read": "869?",
+   "note": "PASS B (p1=649 p2=399)"
+  },
+  "1636": {
+   "page": 83,
+   "row": 19,
+   "read": "39",
+   "note": "= p1; jasno (p2=849)"
+  },
+  "1752": {
+   "page": 89,
+   "row": 13,
+   "read": "?",
+   "note": "PASS B (p1=1115 p2=1426)"
+  }
+ }
+}
