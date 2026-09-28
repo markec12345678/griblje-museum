@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "796",
+      "row_cut": false
+    },
+    {
+      "kultur": "~",
+      "jaethe": "",
+      "klafter": "29",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wiese",
+      "jaethe": "",
+      "klafter": "88",
+      "row_cut": false
+    },
+    {
+      "kultur": "Hutweide",
+      "jaethe": "",
+      "klafter": "347",
+      "row_cut": false
+    },
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "458 [rot]",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 4, kultur: 'Hutweide' (first letter looks like 'H' or 'K')",
+    "Row 5, klafter: last digit cut off"
+  ],
+  "observations": "The value in the last row's 'Quad. Kläfter' column is written in red ink. The first column contains land use types (Kultur Gattung) and the second area block only has values in the right sub-column (Quad. Kläfter)."
+}

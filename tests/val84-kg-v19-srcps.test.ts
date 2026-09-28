@@ -33,10 +33,10 @@ const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "ut
 const sha256 = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
 const kgSha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
 
-describe("val 84 — KG v1.9: SRC-PS vozlišče po val 82/83", () => {
+describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradnja)", () => {
   test("naslov + val + KG-F10 (RESOLVED-V84)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v1.9");
-    expect(kg.val).toBe(84);
+    expect(kg.title).toBe("knowledge-graph-1825 v2.0"); // val 86: naslov povišan, SRC-PS vozlišče vsebine ohranjene
+    expect(kg.val).toBe(86); // val 86 rebuild (vsebina vozlišč val 84 ohranjena)
     const f10 = kg.findings.find((f) => f.finding_id === "KG-F10")!;
     expect(f10).toBeDefined();
     expect(f10.val).toBe(84);
@@ -106,7 +106,7 @@ describe("val 84 — kaskada story_id (§22): pinned kg_sha256 = sha256 izhodneg
     const runtime = JSON.parse(readFileSync(resolve(REPO, "src/data/story-graph-1825.json"), "utf8")) as {
       provenance: { kg_val: number; kg_sha256: string };
     };
-    expect(archive.provenance.kg_val).toBe(84);
+    expect(archive.provenance.kg_val).toBe(86);
     expect(archive.provenance.kg_sha256).toBe(kgSha);
     expect(runtime.provenance).toEqual(archive.provenance);
   });
@@ -131,7 +131,7 @@ describe("val 84 — kaskada story_id (§22): pinned kg_sha256 = sha256 izhodneg
     const runtime = JSON.parse(readFileSync(resolve(REPO, "src/data/atlas-coverage-report-1825.json"), "utf8")) as {
       provenance: { kg_sha256: string };
     };
-    expect(archive.val).toBe(84);
+    expect(archive.val).toBe(86);
     expect(archive.provenance.kg_sha256).toBe(kgSha);
     expect(runtime.provenance.kg_sha256).toBe(kgSha);
     const neg = archive.quality_gate.find((c) => c.category_id === "negative_results");
@@ -161,17 +161,17 @@ describe("val 84 — register negativnih rezultatov + source-coverage", () => {
       sources: { source_id: string; note: string; status?: string }[];
       transcription: { PS: { pages: number; rows: number; passes: number } };
     };
-    expect(sc.val).toBe(84);
+    expect(sc.val).toBe(86);
     expect(sc.transcription.PS.pages).toBe(143);
     expect(sc.transcription.PS.rows).toBe(2871);
-    expect(sc.transcription.PS.passes).toBe(2);
+    expect(sc.transcription.PS.passes).toBe(3); // val 86 2. prehod (kolonski tile-i)
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
     expect(ps.status).toBe("VERIFIED");
     expect(ps.note).toContain("nič tiho popravljeno");
     expect(ps.note).toContain("PROVISIONAL");
     // next_reads: KG v1.9 vnos ODSTRANJEN (izveden v tem valu), pasovni re-read na 1. mestu
     const scFull = sc as unknown as { next_reads: string[] };
-    expect(scFull.next_reads[0]).toContain("pasovni/zoom");
+    expect(scFull.next_reads[0]).toContain("val 86b");
     expect(scFull.next_reads.join(" ")).not.toContain("KG v1.9 rebuild");
   });
 });

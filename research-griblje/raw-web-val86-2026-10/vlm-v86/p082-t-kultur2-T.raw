@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "kultur": "Wiese und\nAcker",
+      "jaethe": "",
+      "klafter": "254",
+      "row_cut": false
+    },
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "232",
+      "row_cut": false
+    },
+    {
+      "kultur": "Alm",
+      "jaethe": "",
+      "klafter": "210",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wiese",
+      "jaethe": "",
+      "klafter": "116",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wiese",
+      "jaethe": "",
+      "klafter": "116",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wiese",
+      "jaethe": "",
+      "klafter": "1167",
+      "row_cut": false
+    },
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "1333",
+      "row_cut": false
+    },
+    {
+      "kultur": "Alm",
+      "jaethe": "",
+      "klafter": "1003",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 1 kultur: first word looks like 'Wiese' but is crossed out, second line 'Acker' is clear"
+  ],
+  "observations": "First row: The land use entry appears to be two lines. The top line ('Wiese' or similar) is crossed out with a horizontal strike-through, and the bottom line reads 'Acker'. All area values are written in the right-hand sub-column (Quad. Kläfter); the left sub-column (N.º Jaethe.) is empty for all visible rows."
+}

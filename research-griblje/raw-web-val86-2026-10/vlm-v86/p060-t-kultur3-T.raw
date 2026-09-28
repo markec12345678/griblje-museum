@@ -1,0 +1,27 @@
+```json
+{
+  "rows": [
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "1/16",
+      "row_cut": false
+    },
+    {
+      "kultur": "28. Feuerweg",
+      "jaethe": "2",
+      "klafter": "1143",
+      "row_cut": false
+    },
+    {
+      "kultur": "",
+      "jaethe": "1",
+      "klafter": "1439",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [],
+  "observations": "The value '2' in the Jaethe column and '1143' in the Kläfter column for row 2 are crossed out. The value '1' in the Jaethe column of row 3 is written in red ink."
+}
+```

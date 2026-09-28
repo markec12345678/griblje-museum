@@ -1,0 +1,59 @@
+{
+ "rows": [
+  {
+   "kultur": "Grün",
+   "jaethe": "",
+   "klafter": "33",
+   "row_cut": false
+  },
+  {
+   "kultur": "Äcker und\nWiesen",
+   "jaethe": "",
+   "klafter": "774",
+   "row_cut": false
+  },
+  {
+   "kultur": "Äcker und\nGärten und\nWiesen",
+   "jaethe": "",
+   "klafter": "469",
+   "row_cut": false
+  },
+  {
+   "kultur": "Wiesen",
+   "jaethe": "",
+   "klafter": "622",
+   "row_cut": false
+  },
+  {
+   "kultur": "Wald",
+   "jaethe": "",
+   "klafter": "768",
+   "row_cut": false
+  },
+  {
+   "kultur": "Äcker und\nGärten und\nWiesen",
+   "jaethe": "",
+   "klafter": "239",
+   "row_cut": false
+  },
+  {
+   "kultur": "Äcker und\nGärten und\nWiesen",
+   "jaethe": "",
+   "klafter": "724",
+   "row_cut": false
+  },
+  {
+   "kultur": "Äcker und\nGärten und\nWiesen",
+   "jaethe": "",
+   "klafter": "974",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 1 kultur: Grün (unclear if Gras or Grün)",
+  "Row 2 kultur: Äcker und Wiesen (second word looks like Wiesen)",
+  "Row 3 kultur: third line Wiesen is very faint"
+ ],
+ "observations": "Several area values in the Kläfter column are written in red ink (rows 2, 4, 5, 6, 8). The bottom row is cut off by the image edge. The 'Kultur Gattung' entries for rows 2-4 and 6-8 span multiple lines."
+}

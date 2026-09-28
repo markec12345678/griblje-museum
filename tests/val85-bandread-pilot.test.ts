@@ -236,16 +236,17 @@ describe("val 85 — najdbe", () => {
 });
 
 describe("val 85 — poštenost §4 + §22 (nič ne beži v runtime)", () => {
-  test("register.json NESPREMENJEN: 2.871 vrstic, 1.798 z reading_pass v82-native-pass1", () => {
+  test("register.json 2.871 vrstic; val 86 vgradnja: 808 v86-colonial-tiles + 990 v82-native-pass1 (p56–143)", () => {
     expect(register).toHaveLength(2871);
-    expect(register.filter((r) => r.reading_pass === "v82-native-pass1")).toHaveLength(1798);
+    expect(register.filter((r) => r.reading_pass === "v82-native-pass1")).toHaveLength(990);
+    expect(register.filter((r) => r.reading_pass === "v86-colonial-tiles")).toHaveLength(808);
   });
 
-  test("KG v1.9 nespremenjen: sha 526482d2… + metapodatki (pin val 84)", () => {
-    expect(kgSha.startsWith("526482d2")).toBe(true);
+  test("KG v2.0 (val 86 kaskada): sha 6fb6fae8… + metapodatki", () => {
+    expect(kgSha.startsWith("6fb6fae8")).toBe(true); // val 86 KG v2.0 (§22 kaskada)
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as { val: number; title: string };
-    expect(kg.val).toBe(84);
-    expect(kg.title).toBe("knowledge-graph-1825 v1.9");
+    expect(kg.val).toBe(86); // val 86: naslov povišan, merjenja val 85 v analysis-v5.json ohranjena
+    expect(kg.title).toBe("knowledge-graph-1825 v2.0");
   });
 
   test("kaskada §22 nespremenjena: story-graph/timeline/coverage (arhiv + runtime) držijo isti KG sha", () => {

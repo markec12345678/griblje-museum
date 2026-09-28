@@ -1,0 +1,31 @@
+{
+  "rows": [
+    {
+      "kultur": "Acker",
+      "jaethe": "1",
+      "klafter": "1024\n1321",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wiese",
+      "jaethe": "",
+      "klafter": "33",
+      "row_cut": false
+    },
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "650",
+      "row_cut": false
+    },
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "137",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [],
+  "observations": "First row (Acker) has two area values in the Kläfter column, likely representing different sub-parcels or a correction. Red ink mark visible in the rightmost column on the last row."
+}

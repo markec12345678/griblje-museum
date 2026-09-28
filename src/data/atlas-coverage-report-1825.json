@@ -1,5 +1,5 @@
 {
- "val": 84,
+ "val": 86,
  "pass": "PASS 8",
  "issue": 42,
  "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "526482d22a003ca321508f56408e4d4743482befb5d0d478f6019c02059115af",
+  "kg_sha256": "6fb6fae8ff2b4276a5506578fe607a3d929b78b74f0efd429f9c33a76d318573",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -367,7 +367,7 @@
       "docid": 41780,
       "pages": 143,
       "status": "VERIFIED",
-      "note": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL → pasovni/zoom re-read (F-PV-04, NR-14); kolizije = variant fields (reread-v83/comparison.json), nič tiho popravljeno"
+      "note": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL; val 86 kolonski tile-i (z glavo): F-PV-05 J→K vgrajena na p56–94+121 (808 vrstic; 287+43+3 popravkov s snimkami, only_j 0,0 %), kultur/owner variante 637/153; kolizije = variant fields, nič tiho popravljeno"
      },
      {
       "source_id": "SRC-PT",

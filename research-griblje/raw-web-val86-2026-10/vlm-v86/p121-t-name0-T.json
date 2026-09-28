@@ -1,0 +1,37 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Skal Mio",
+   "stand": "Bauer",
+   "wohnort": "Gr[...]",
+   "row_cut": true
+  },
+  {
+   "haus_no": "",
+   "name": "Skal Mio",
+   "stand": "~",
+   "wohnort": "~",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Skal Ruaß",
+   "stand": "~",
+   "wohnort": "~",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Skal Ruaß",
+   "stand": "~",
+   "wohnort": "~",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 1 wohnort: cut off"
+ ],
+ "observations": "The first row's 'Wohnort' value is cut off at the right edge. The header 'Des Eigenthümers' and column headers are visible at the top but not transcribed as per instructions."
+}

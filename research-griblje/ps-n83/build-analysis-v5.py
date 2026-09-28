@@ -49,7 +49,9 @@ for f in (f'{OUTD}/band-v85/compare-v85.json', f'{OUTD}/band-v85/compare-strips-
 reg = json.load(open(f'{OUTD}/register.json'))
 assert len(reg) == 2871, 'guard: register'
 new_reg = [r for r in reg if r['page'] > 55]
-assert all(r.get('reading_pass') == 'v82-native-pass1' for r in new_reg), 'guard: reading_pass spremenjen'
+# val 86 je na teh vrsticah legitimno vgradil v86-colonial-tiles (F-PV-05); merjenja val 85
+# (F-PV-05 iz surovin val 82/83/85) so NEODVISNA od registra — guard sprejme obe stanji.
+assert all(r.get('reading_pass') in ('v82-native-pass1', 'v86-colonial-tiles') for r in new_reg), 'guard: nepoznan reading_pass'
 
 comp_bands = json.load(open(f'{OUTD}/band-v85/compare-v85.json'))
 comp_strips = json.load(open(f'{OUTD}/band-v85/compare-strips-v85.json'))

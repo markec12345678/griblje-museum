@@ -1,0 +1,43 @@
+{
+  "rows": [
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "648",
+      "row_cut": false
+    },
+    {
+      "kultur": "~",
+      "jaethe": "",
+      "klafter": "156",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wiese",
+      "jaethe": "",
+      "klafter": "226",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wald",
+      "jaethe": "",
+      "klafter": "356",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wald",
+      "jaethe": "",
+      "klafter": "411 [angeschnitten]",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 1 kultur: Acker (Kurrent script)",
+    "Row 2 kultur: ditto mark (,,)",
+    "Row 3 kultur: Wiese (Kurrent script)",
+    "Row 4 kultur: Wald (Kurrent script)",
+    "Row 5 kultur: Wald (Kurrent script)"
+  ],
+  "observations": "All area values are located in the 'Quad. Kläfter' column; the 'N.º Joche' (Jaethe) column is empty for all visible rows. The last row is cut off at the bottom of the image."
+}

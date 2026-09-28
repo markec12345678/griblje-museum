@@ -1,0 +1,157 @@
+{
+ "title": "PS N83 kolonski tile-i (kompozitni, z glavo) — 2. prehod p56–142 + vgradnja J→K (F-PV-05)",
+ "val": 86,
+ "date": "2026-09-27",
+ "issue": "#42 §4/§14 + #43",
+ "method": {
+  "vlm_calls": 201,
+  "errors": 0,
+  "rate_429_retries": "glej tile-read-v86.log (gitignored)",
+  "permanent_failures": "glej tile-read-v86.log (gitignored)",
+  "tiles_total": 696,
+  "tiles_read": 201,
+  "faza_K": "kultur tile-i (kultur+jaethe+klafter ~0.53–0.73·W) × 4 pasovi (h=328, shema val 80/81/85) + glava, x2, vse strani 56–142",
+  "faza_N": "name tile-i (haus+name+stand+wohnort ~0.27–0.46·W) — po kvoti; manjkajoči glas ostaja 2-glasen (PROVISIONAL)",
+  "glava": "izmerjen top_rule po strani (prvo horizontalno pravilo v [30,120], fallback 50); pas 0 glavo že vsebuje",
+  "sidra": "x = detectRules VERBATIM make-bands-v85.mts; GUARD 8/8 proti crops-manifest-v85.json"
+ },
+ "method_result": {
+  "tiles_vs_rows1": {
+   "56": {
+    "tile_kultur": 25,
+    "rows1": 20,
+    "dedupe": 0
+   },
+   "57": {
+    "tile_kultur": 25,
+    "rows1": 20,
+    "dedupe": 0
+   },
+   "58": {
+    "tile_kultur": 24,
+    "rows1": 19,
+    "dedupe": 1
+   },
+   "59": {
+    "tile_kultur": 25,
+    "rows1": 21,
+    "dedupe": 0
+   },
+   "60": {
+    "tile_kultur": 25,
+    "rows1": 20,
+    "dedupe": 1
+   },
+   "61": {
+    "tile_kultur": 24,
+    "rows1": 20,
+    "dedupe": 0
+   },
+   "62": {
+    "tile_kultur": 24,
+    "rows1": 20,
+    "dedupe": 0
+   },
+   "63": {
+    "tile_kultur": 23,
+    "rows1": 20,
+    "dedupe": 1
+   },
+   "64": {
+    "tile_kultur": 23,
+    "rows1": 20,
+    "dedupe": 1
+   },
+   "65": {
+    "tile_kultur": 23,
+    "rows1": 20,
+    "dedupe": 1
+   },
+   "66": {
+    "tile_kultur": 26,
+    "rows1": 20,
+    "dedupe": 0
+   },
+   "67": {
+    "tile_kultur": 21,
+    "rows1": 20,
+    "dedupe": 1
+   }
+  },
+  "jk_distribution_tiles_all": {
+   "only_k": 846,
+   "both": 116,
+   "none": 27
+  },
+  "verdikt": "kompozitni tile-i (z glavo) = stabilna struktura (dedupe rezov) + pravilna dodelitev J↔K (only_j ~0 %)"
+ },
+ "findings": {
+  "F-PV-05": {
+   "id_note": "val 85 nova najdba — sistemski pomik J→K; val 86 = VGRADNJA korekcije na izvor",
+   "status": "VGRADJENA (register.json p56–142; snimke *_pass1_v82 + review oznake)",
+   "meritev": {
+    "tile_only_j_vseh_strani": "0/989 = 0.0%",
+    "tile_only_k": "846/989 = 85.5%",
+    "tile_both": "116/989 = 11.7%"
+   },
+   "vgradnja": {
+    "jk_popravki": 287,
+    "razdelitve_N_K": 3,
+    "arbitrirani_razkoli": 43,
+    "marker_razdelitev_izrecno": 77,
+    "marker_review_razlike": 139,
+    "razlike_v_stevilkah_flag": 248
+   }
+  },
+  "F-PV-04": {
+   "id_note": "rešitvena pot za imena/kultur/površine (NR-14)",
+   "status": "DELNO IZVEDENA (val 86): kultur tile-i na vseh straneh; name tile-i po kvoti",
+   "soglasje_3glasu": {
+    "jaethe": {
+     "p1_p2": 42.1,
+     "p1_t": 2.5,
+     "p2_t": 3.0,
+     "three": 2.4,
+     "total": 806
+    },
+    "klafter": {
+     "p1_p2": 25.9,
+     "p1_t": 2.9,
+     "p2_t": 3.2,
+     "three": 2.5,
+     "total": 806
+    },
+    "kultur": {
+     "p1_p2": 43.5,
+     "p1_t": 20.2,
+     "p2_t": 19.9,
+     "three": 17.7,
+     "total": 806
+    },
+    "kultur_first": {
+     "p1_p2": 49.1,
+     "p1_t": 24.6,
+     "p2_t": 25.4,
+     "three": 21.5,
+     "total": 806
+    }
+   }
+  },
+  "F11": {
+   "id_note": "Fürtrag veriga — monotona kontrola po val 86",
+   "status": "DOKUMENTIRANA (tile glas; veriga v compare-tiles-v86.json → fuertrag)",
+   "vzorec": {}
+  }
+ },
+ "inputs": {
+  "surovine": "research-griblje/raw-web-val86-2026-10/ (make-tiles-v86.mts, tile-read-v86.mts, tiles-manifest-v86.json, vlm-v86/; crops-v86 regenerabilno — gitignored)",
+  "primerjave": "research-griblje/ps-n83/band-v86/ (compare-tiles-v86.json, register-v86-changes.json)"
+ },
+ "next_reads": [
+  "name tile-i preostale strani (faza N, ko kvota dovoli) → imena/stand/wohnort 3. glas + owner_tile_v86 variante",
+  "Fürtrag monotona kontrola čez celo verigo (13-točkovna val 61 + v85 + v86)",
+  "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)",
+  "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)",
+  "izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04 Δ 3 J), šolski list / SA Podzemelj / SI AS 749 / Zucchelli"
+ ]
+}

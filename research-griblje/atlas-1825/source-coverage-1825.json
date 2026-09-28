@@ -1,12 +1,13 @@
 {
- "val": 84,
+ "val": 86,
  "pass": "PASS 8",
  "issue": 42,
- "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v1.9 + registrov)",
+ "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.0 + registrov)",
  "derived_from": [
-  "knowledge-graph-1825.json (v1.9) SOURCE nodes",
+  "knowledge-graph-1825.json (v2.0) SOURCE nodes",
   "pua/ps/pt registri",
-  "a01/pass4b inventarja"
+  "a01/pass4b inventarja",
+  "ps-n83/band-v86/ (val 86 kolonski tile-i)"
  ],
  "deterministic": true,
  "sources": [
@@ -25,7 +26,7 @@
    "docid": 41780,
    "pages": 143,
    "status": "VERIFIED",
-   "note": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL → pasovni/zoom re-read (F-PV-04, NR-14); kolizije = variant fields (reread-v83/comparison.json), nič tiho popravljeno"
+   "note": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL; val 86 kolonski tile-i (z glavo): F-PV-05 J→K vgrajena na p56–94+121 (808 vrstic; 287+43+3 popravkov s snimkami, only_j 0,0 %), kultur/owner variante 637/153; kolizije = variant fields, nič tiho popravljeno"
   },
   {
    "source_id": "SRC-PT",
@@ -129,8 +130,8 @@
   "PS": {
    "pages": 143,
    "rows": 2871,
-   "passes": 2,
-   "note": "p1–55: val 57 pass1 + val 61 crop re-read; p56–143: val 82 pass1 (PROVISIONAL) + val 83 celostranski neodvisen re-read — struktura in numerična hrbtenica (classe/ertrag/capital ≥ 92 %, Wald raba 54=54) potrjeni; imena 19,6 % / kultur 47,3 % / no_blatt 49 % pod pragom → celice s soglasjem ≥ 2 potrjene, ostalo PROVISIONAL; Reb kvantitativa neizvedljiva celostransko (pass2 skrajša omembe 14→6; sane vsote p1 pure 6.304 vs p2 pure 216 QKlft vs PV 11.865 QKlft)"
+   "passes": 3,
+   "note": "p1–55: val 57 pass1 + val 61 crop re-read; p56–143: val 82 pass1 + val 83 celostranski neodvisen re-read; val 86 kolonski tile-i (kompozit z glavo stolpcev, x2) = 2. prehod na 40 straneh (p56–94 + p121; 808 vrstic — kvota 429, obnovljivo z tile-read-v86.mts): F-PV-05 (sistemski pomik J→K) VGRADJENA — 287 jk popravkov + 43 arbitraž + 3 N|K razdelitve, vsak popravek s snimko jaethe/klafter_pass1_v82 + jk_review; 139 vrstic z razliko števk med prehodoma → marker v86-review-pass-digit-split (brez spremembe); kultur/owner tile različice = variant fields (637/153), nič tiho prepisano; per-row tile poravnava je ±1 nestabilna (p56 dokazano) → kolonska korekcija na nivoju strani (only_j 0,0 %), tile vrednosti = diagnostika; p95–98 delno + p99–142 (987 vrstic) ostaja reading_pass v82-native-pass1; Reb kvantitativa čaka name tile-e; audit: ps-n83/band-v86/register-v86-changes.json"
   },
   "PT": {
    "pages": 8,
@@ -160,7 +161,7 @@
  },
  "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
  "next_reads": [
-  "PS p56–143 pasovni/zoom re-read s kolonskimi sidri (vzorec val 80/81) — imena, kultur kategorije, jaethe/klafter, Fürtrag veriga (F-PV-04/NR-14)",
+  "PS val 86b: name tile-i (8/87 strani) + kultur tile-i p95–142 (obnovljivo — tile-read-v86.mts ALL); nato Fürtrag monotona kontrola (F11) čez celo verigo",
   "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)",
   "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)",
   "izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (per-parcelna vezava 1825→1830 = zadnja rešitvena pot F-PZ-04 Δ 3 J po val 80 F-PZ-17)",

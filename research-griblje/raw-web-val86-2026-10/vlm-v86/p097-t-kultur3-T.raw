@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "kultur": "Acker\nWiese",
+      "jaethe": "",
+      "klafter": "837",
+      "row_cut": false
+    },
+    {
+      "kultur": "Hutweide",
+      "jaethe": "",
+      "klafter": "547",
+      "row_cut": false
+    },
+    {
+      "kultur": "~",
+      "jaethe": "11",
+      "klafter": "178",
+      "row_cut": false
+    }
+  ],
+  "totals": [
+    {
+      "label": "Fürtrag",
+      "value": ""
+    }
+  ],
+  "unclear": [],
+  "observations": "The first row's 'Kultur' entry spans two lines (Acker/Wiese). The third data row contains a value '11' in the Jaethe column and '178' in the Kläfter column. The final visible line is a 'Fürtrag' (total) row."
+}

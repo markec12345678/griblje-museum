@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v1.9 (val 84 — SRC-PS vozlišče po val 82/83) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("526482d22a003ca3")).toBe(true);
+  test("provenanca kaže na KG v2.0 (val 86 — F-PV-05 vgradnja) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("6fb6fae8")).toBe(true); // val 86 KG v2.0
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -284,7 +284,7 @@ describe("outputs_manifest — §24 obvezni outputi 1–14", () => {
       const d = JSON.parse(readFileSync(p, "utf-8"));
       expect(d.deterministic).toBe(true);
       // pv-land-use-1825.json (val 74) + pz-konskripcija-1830.json (val 81) + source-coverage (val 84) + izpeljani artefakti nosijo svoj val
-      expect([72, 74, 81, 83, 84]).toContain(d.val);
+      expect([72, 74, 81, 83, 84, 86]).toContain(d.val);
     }
   });
 

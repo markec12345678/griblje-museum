@@ -258,10 +258,14 @@ describe("val 82 — PS N83 transkripcija DOKONČANA (p56–143, analysis-v3)", 
     expect(patched.map((r) => r.haus_no).sort()).toEqual(["38", "39", "45"]);
   });
 
-  it("varovalka: nove vrstice p56–143 nosijo reading_pass v82-native-pass1 (PROVISIONAL po §4)", () => {
+  it("varovalka: p56–143 = 808 vrstic v86-colonial-tiles (val 86 2. prehod) + 990 v82-native-pass1 (PROVISIONAL)", () => {
     const fresh = psRegister.filter((r) => r.page > 55);
     expect(fresh.length).toBe(1798);
-    expect(fresh.every((r) => r.reading_pass === "v82-native-pass1")).toBe(true);
+    const v86 = fresh.filter((r) => r.reading_pass === "v86-colonial-tiles");
+    const v82 = fresh.filter((r) => r.reading_pass === "v82-native-pass1");
+    expect(v86.length).toBe(808); // p56–94 + p121 (kolonski tile-i, 4/4 pasovi)
+    expect(v82.length).toBe(990); // p95–142 (kvota 429, obnovljivo) + p143 (rdeči povzetek)
+    expect(v86.every((r) => r.page >= 56 && r.page <= 142)).toBe(true);
     expect(analysisV3.method.reading_honesty).toContain("PROVISIONAL");
     expect(analysisV3.method.reading_honesty).toContain("KG v1.8");
   });
@@ -462,20 +466,20 @@ describe("val 83 — PS N83 neodvisen re-read p56–143 (2. prehod, analysis-v4)
     expect(nr14!.next_source).toContain("pasovni/zoom");
   });
 
-  it("varovalka: register + page-records BIT-PO-BIT (p56–143 še v82-native-pass1)", () => {
-    const fresh = psRegister.filter((r) => r.page > 55);
-    expect(fresh.length).toBe(1798);
-    expect(fresh.every((r) => r.reading_pass === "v82-native-pass1")).toBe(true);
-    expect(psPages.filter((p) => p.page > 55).every((p) => p.reading_pass === "v82-native-pass1")).toBe(true);
+  it("varovalka: p1–55 BIT-PO-BIT v82 (val 86 se neže dotika); page-records 143/143 READ", () => {
+    const old = psRegister.filter((r) => r.page <= 55);
+    expect(old.every((r) => r.reading_pass !== "v86-colonial-tiles")).toBe(true);
+    expect(old.every((r) => !("jaethe_pass1_v82" in r) && !("jk_review" in r))).toBe(true);
+    expect(psPages.filter((p) => p.status === "READ").length).toBe(143);
   });
 
-  it("source-coverage: val 84 (regeneriran ob KG v1.9) + SRC-PS opomba z re-read rezultatom (§22)", () => {
+  it("source-coverage: val 86 (regeneriran ob KG v2.0) + SRC-PS opomba z re-read + tile rezultatom (§22)", () => {
     const sc = JSON.parse(
       readFileSync(join(RG, "atlas-1825", "source-coverage-1825.json"), "utf8"),
     ) as { val: number; sources: { source_id: string; note: string }[]; transcription: { PS: { rows: number; passes: number } } };
-    expect(sc.val).toBe(84);
+    expect(sc.val).toBe(86);
     expect(sc.transcription.PS.rows).toBe(2871);
-    expect(sc.transcription.PS.passes).toBe(2);
+    expect(sc.transcription.PS.passes).toBe(3);
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
     expect(ps.note).toContain("val 83");
     expect(ps.note).toContain("nič tiho popravljeno");
