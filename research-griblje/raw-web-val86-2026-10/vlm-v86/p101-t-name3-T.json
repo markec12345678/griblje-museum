@@ -1,0 +1,31 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Majer",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": true
+  },
+  {
+   "haus_no": "",
+   "name": "Urban Gregor",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 1 name: Majer[?]",
+  "Row 2 name: Urban Gregor[?]"
+ ],
+ "observations": "Only the right half of the owner columns (Name, Stand) is visible; the Haus No. and Wohnort columns are cut off on the left. The header 'Des Eigenthümers' is visible at the top."
+}

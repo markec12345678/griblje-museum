@@ -458,7 +458,7 @@ src_six = {"VERIFIED": 0, "PARTIAL": 0, "CONFLICT": 0, "UNKNOWN": 0, "NOT_FOUND"
 src_notes = {
     "SRC-PV": "TRANSCRIBED 1/1 (val 74, aritmetična vrata I1–I4) — agregat po kulturah",
     "SRC-PZ": "TRANSCRIBED_PARTIAL (val 81 PASS 7): struktura 71/71 + ključna branja + odločilni re-read Endresultata p67 z aritmetičnimi vrati I4–I6 (deleži 1830 izpeljani) + Rektifikacijski odsek p35–42 odločilno prebran — opisno, brez per-parcelnih korekcij (F-PZ-16) + val 80 nativna re-digitation 7 variančnih celic — 6/7 REŠENIH, sistemski pomlaj ('– J' = 0 Joch), inter-bralčeva varianca PR#69↔val 79 razrešena; VAČ topološka izčrpnost: maksimum = PDF-native ~150 dpi (F-PZ-17) + val 81 band-transkripcija p43–47 (F-PZ-12 RESOLVED): 40 pasov + 14 zoomov + 54 VLM klicev + direkten odtis — struktura 43–47 korigirana (Wirthschafts Kurse + Düngung + Natural Ertrag pro Joch; NE per-parcelne tabele), številke s soglasjem ≥ 2, proza delno REVIEW",
-    "SRC-PS": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL; val 86 kolonski tile-i (z glavo): F-PV-05 J→K vgrajena na p56–94+121 (808 vrstic; 287+43+3 popravkov s snimkami, only_j 0,0 %), kultur/owner variante 637/153; kolizije = variant fields, nič tiho popravljeno",
+    "SRC-PS": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL; val 86 kolonski tile-i (z glavo): F-PV-05 J→K vgrajena na p56–94+121 (808 vrstic; 287+43+3 popravkov s snimkami, only_j 0,0 %); val 98 (86b del 2) razširitev na p95–109 (+301 vrstic → 1.109; +14 jk + 87 arbitraž s snimkami, owner/kultur variante 1.063/896); kolizije = variant fields, nič tiho popravljeno",
     "SRC-PR": "identiteta (uodid) potrjena; Grenz-Beschreibung NE prebrana",
     "SRC-PG": "identiteta (uodid) potrjena; vsebina NE prebrana",
     "SRC-KO": "identiteta (k.o. konskripcija); brez prepisa",
@@ -654,11 +654,11 @@ cadastral = {
 
 # 3c) source-coverage-1825 — pokritost virov (issue #42 §6/§14)
 source_coverage = {
-    "val": 89,
+    "val": 98,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.1 + registrov; regeneriran val 89)",
-    "derived_from": ["knowledge-graph-1825.json (v2.0) SOURCE nodes", "pua/ps/pt registri", "a01/pass4b inventarja", "ps-n83/band-v86/ (val 86 kolonski tile-i)"],
+    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.2 + registrov; regeneriran val 98, 86b del 2)",
+    "derived_from": ["knowledge-graph-1825.json (v2.2) SOURCE nodes", "pua/ps/pt registri", "a01/pass4b inventarja", "ps-n83/band-v86/ (val 86 + val 98 kolonski tile-i)"],
     "deterministic": True,
     "sources": src_list,
     "transcription": {
@@ -671,14 +671,18 @@ source_coverage = {
              "kultur/owner tile različice = variant fields (637/153), nič tiho prepisano; per-row tile poravnava je ±1 "
              "nestabilna (p56 dokazano) → kolonska korekcija na nivoju strani (only_j 0,0 %), tile vrednosti = diagnostika; "
              "p95–98 delno + p99–142 (987 vrstic) ostaja reading_pass v82-native-pass1; Reb kvantitativa čaka name tile-e; "
-             "audit: ps-n83/band-v86/register-v86-changes.json"),},
+             "audit: ps-n83/band-v86/register-v86-changes.json + register-v86b-changes.json (val 98); "
+             "VAL 98 (86b del 2): tile 3. glas razširjen na p95–109 (+301 vrstic → 1.109 s reading_pass v86-colonial-tiles): "
+             "14 jk + 87 arbitraž + 52 izrecnih N|K + 7 novih digit-split REVIEW na novih straneh, owner_tile_v86 variante 910 "
+             "(p63–109), kultur_tile_v86 259 (skupaj 1.063/896); v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); "
+             "p110–142 (~250 tile-ov) ostaja obnovljivo ob kvoti (resumable, vzorec val 86)"),},
         "PT": {"pages": 8, "rows": len(pt_rows), "passes": 2, "note": "+ p8 Musterstellung"},
         "PV": {"pages": 1, "rows": 19, "passes": 2, "note": "val 74: uradne agregatne površine po kulturah (1221 J 1573 K = 7,032 km²), aritmetična vrata I1–I4; NI raba po parcelah (§4)"},
         "PZ": {"pages": 71, "rows": 0, "passes": 7, "note": "val 75+77+78+79+80+81: TRANSCRIBED_PARTIAL — struktura 71/71 + ključna branja (prebivalstvo 1830: 441 = 222 M + 219 Ž, vrata I1; 70 hiš; 102 družin; živina 124/20/30/150/30; površina §1 rdeči popravek 1220 J 1493 K, PV Δ 0,086 %) + val 77 odločilni re-read p67+§8 z vrati I4–I6 (Summa 1152 J 495 K; Δ 3 J — F-PZ-04 ožjan, ostaja OPEN; deleži 1830 F-PZ-13) + val 78 §8 rdeči stolpec 'Zusammen' strukturiran (post-revizijske površine, REVIEW — F-PZ-15) + rešitvene poti p26/p27/p30/p32/p63/p65 ovržene (F-PZ-14) + val 79 Rektifikacijski odsek p35–42 odločilno prebran: OPISNO-KVALITATIVEN, per-parcelne korekcije NE obstajajo (F-PZ-16 RESOLVED; 7 Muster-parcel) + val 80 nativna re-digitation: 6/7 Muster celic REŠENIH (30=1082, 594=591, 1004=1010, 738=–J895, 2451=–J1515, 2491=–J260; 1288 REVIEW), sistemski pomlaj '– J' = 0 Joch, inter-bralčeva varianca PR#69↔val 79 razrešena + F-PZ-17 VAČ maksimum = PDF-native @~150 dpi + val 81 band-transkripcija p43–47 (F-PZ-12 RESOLVED: Wirthschafts Kurse + Düngung 3 Fuder 90/120 + Natural Ertrag pro Joch per klasa — klasni koeficienti, NE per-parcelno; struktura 43–47 korigirana vs val 75)"},
     },
     "six_status": src_six,
     "uodid_map_corrected": "KG-F02 (val 64): PUA=373417, PS=373415, PT=373416, PR=373414, PG=373413, PV=373418, PZ=373419, A01–A05=227666/68/70/71/73, k.o.=227663",
-    "next_reads": ["PS val 86b: name tile-i (8/87 strani) + kultur tile-i p95–142 (obnovljivo — tile-read-v86.mts ALL); nato Fürtrag monotona kontrola (F11) čez celo verigo", "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)", "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)", "izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (per-parcelna vezava 1825→1830 = zadnja rešitvena pot F-PZ-04 Δ 3 J po val 80 F-PZ-17)", "izven peskovnika: šolski list / SA Podzemelj / SI AS 749 / Zucchelli"],
+    "next_reads": ["PS 86b zaključek: ~250 tile-ov p110–142 (obnovljivo ob kvoti — bun tile-read-v98.mts; nato ponovna vgradnja po pravilih val 86/98); F11 čez celo verigo ob polni pokritosti", "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)", "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)", "izven peskovnika: zunanji Rektifikacijski/Komunikacijski protokol (per-parcelna vezava 1825→1830 = zadnja rešitvena pot F-PZ-04 Δ 3 J po val 80 F-PZ-17)", "izven peskovnika: šolski list / SA Podzemelj / SI AS 749 / Zucchelli"],
 }
 
 # 3d) atlas-map-data-model-1825 — podatkovni model zemljevida (issue #42 §15)
@@ -740,10 +744,10 @@ story_engine = {
 # 4. MASTER COVERAGE REPORT
 # ---------------------------------------------------------------------------
 quality_gate = {
-    "val": 89,
+    "val": 98,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
+    "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE; regeneriran val 98, 86b del 2)",
     "spec": "issue #42 §23: TOTAL / VERIFIED / PARTIAL / CONFLICT / UNKNOWN / NOT FOUND za vsako kategorijo",
     "deterministic": True,
     "regenerable": "ponovni zagon build-coverage-report.py ob spremembi registrov",
@@ -780,7 +784,7 @@ quality_gate = {
     "definition_of_done_status": {
         "klik na hišo → kje/številka/lastnik/parcele/raba/BP/vir/osebe/dokazano/konfliktno/neznano": "IZPOLNJENO podatkovno-API (val 63–69: /api/atlas/evidence + /story) — UI sloj sledi",
         "zgodba vasi": "IZPOLNJENO podatkovno (/api/atlas/story?scope=village)",
-        "preostanek": ["georef: A02 sidro (cerkev sv. Vid @300dpi) + listno merilo F-GEO-04", "parcelni sloj rabe §19 (PS 930 parcel, projekcija 143/143 val 89)", "ob kvoti: PS p95–142 tile re-read, PT p7 @300dpi, PR re-read, PV prepis", "parcelne meje @višji dpi (§9)"],
+        "preostanek": ["georef: A02 sidro (cerkev sv. Vid @300dpi) + listno merilo F-GEO-04", "parcelni sloj rabe §19 (PS 898 parcel, projekcija 143/143 + val 98 F-PV-05 korekcije)", "ob kvoti: PS p110–142 tile re-read (~250 tile-ov, resumable), PT p7 @300dpi, PR re-read, PV prepis", "parcelne meje @višji dpi (§9)"],
     },
 }
 

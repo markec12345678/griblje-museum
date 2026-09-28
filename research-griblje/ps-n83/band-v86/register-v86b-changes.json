@@ -1,0 +1,7404 @@
+{
+ "val": "98 (86b del 2)",
+ "source": "tile-read-v86/vlm-v86 (3. glas, kolonski tile-i z glavo)",
+ "rules": "1:1 build-register-v86.py page-level F-PV-05; nove strani p95–120+p122–142; owner variante p63–94; v88 nedotaknjeno",
+ "tally": {
+  "owner_variant": 910,
+  "v86-review-pass-digit-split": 7,
+  "kultur_variant": 259,
+  "v86-explicit-jk-kept": 52,
+  "v86-kept-k-k": 136,
+  "v86-tiles-arbitrated": 87,
+  "v86-review-col-split": 2,
+  "v86-no-value": 2,
+  "v86-tiles-jk": 14,
+  "alignment_short": 1
+ },
+ "digit_mismatch_total": 12,
+ "owner_variant_new": 910,
+ "page_jk": {
+  "95": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 6,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "96": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 1,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "97": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 4,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "98": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 24,
+   "both": 2,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "99": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 3,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "100": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 26,
+   "both": 7,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "101": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 24,
+   "both": 6,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "102": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 4,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "103": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 21,
+   "both": 5,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "104": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 24,
+   "both": 5,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "105": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 2,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "106": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 25,
+   "both": 3,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "107": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 3,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  },
+  "108": {
+   "only_j": 1,
+   "klafter_vkljeno_both": 21,
+   "both": 6,
+   "only_j_pct": 4.5,
+   "qualifies": true
+  },
+  "109": {
+   "only_j": 0,
+   "klafter_vkljeno_both": 23,
+   "both": 9,
+   "only_j_pct": 0.0,
+   "qualifies": true
+  }
+ },
+ "changes": [
+  {
+   "page": 63,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Babler David",
+   "p1": "Maller Danly"
+  },
+  {
+   "page": 63,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Maltschitsch Jg",
+   "p1": "Müllerich[?]ly"
+  },
+  {
+   "page": 63,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Brincig Hlase",
+   "p1": "Brinny Jergen"
+  },
+  {
+   "page": 63,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Michl Mioz",
+   "p1": "Brinny Märci"
+  },
+  {
+   "page": 63,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Alois Gnoy",
+   "p1": "Staudt Ignozy"
+  },
+  {
+   "page": 63,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Hildebrandgmay",
+   "p1": "Hölzlechner Jany"
+  },
+  {
+   "page": 63,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Joseph Mioz",
+   "p1": "Pudilag Greis"
+  },
+  {
+   "page": 63,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Nikolaus Gnoy",
+   "p1": "Weidichal Ignocy"
+  },
+  {
+   "page": 63,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Hildebrandgmay",
+   "p1": "Hölzlechner Ignoy"
+  },
+  {
+   "page": 63,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Michael Mioz",
+   "p1": "Weidichal Greis"
+  },
+  {
+   "page": 63,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Heidhanel Gregor",
+   "p1": "Weidichal Greis"
+  },
+  {
+   "page": 63,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Prinçy Urban",
+   "p1": "Weidichal Ignocy"
+  },
+  {
+   "page": 63,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Prinçy Ursula",
+   "p1": "Brinny Märci"
+  },
+  {
+   "page": 63,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Volkstätter Wolf",
+   "p1": "Breunig Märcia"
+  },
+  {
+   "page": 63,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Ludlery Gregor",
+   "p1": "Pöllitzer Jodtz"
+  },
+  {
+   "page": 63,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Schimpf Gregor",
+   "p1": "Pöllitzig Ignocy"
+  },
+  {
+   "page": 63,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Pöcklery Gregor",
+   "p1": "Johannig Ignocy"
+  },
+  {
+   "page": 63,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Schmidt Marx",
+   "p1": "Pöllitzig Ignocy"
+  },
+  {
+   "page": 63,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Pachler Mies",
+   "p1": "Schönig Märcia"
+  },
+  {
+   "page": 64,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Millea Vincenz",
+   "p1": "Müller Wenzel"
+  },
+  {
+   "page": 64,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Millea Vincenz",
+   "p1": "Müller Wenzel"
+  },
+  {
+   "page": 64,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Gavhega Miha",
+   "p1": "Gaudineg Wenzl"
+  },
+  {
+   "page": 64,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Caudheg gregory",
+   "p1": "Gaudineg Georgy"
+  },
+  {
+   "page": 64,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Brünig andreas",
+   "p1": "Breinig Wenzlgf[?]"
+  },
+  {
+   "page": 64,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Brünig andreas",
+   "p1": "Breinig Wenzlgf[?]"
+  },
+  {
+   "page": 64,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Lütschandl hofy",
+   "p1": "Hirschegger Wenzl"
+  },
+  {
+   "page": 64,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Caudheg gregory",
+   "p1": "Gaudineg Georgy"
+  },
+  {
+   "page": 64,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Schimeg gregory",
+   "p1": "Schlenig Georgy"
+  },
+  {
+   "page": 64,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Caudheg andreas",
+   "p1": "Gaudineg Wenzlgf[?]"
+  },
+  {
+   "page": 64,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Caudheg niclas",
+   "p1": "Gaudineg Wenzl"
+  },
+  {
+   "page": 64,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Pavlič Matija",
+   "p1": "Pölling Wenzlgf[?]"
+  },
+  {
+   "page": 64,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Pavla Mico",
+   "p1": "Brada Wenzl"
+  },
+  {
+   "page": 64,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Štehaj Jerej[?]",
+   "p1": "Schober Jörg[?]"
+  },
+  {
+   "page": 64,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Starih Gregor",
+   "p1": "Hülth Georgy"
+  },
+  {
+   "page": 64,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Bricij Mavc[?]",
+   "p1": "Breinig Wenzlo"
+  },
+  {
+   "page": 64,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Ullak Mico",
+   "p1": "Tillak Wenzl"
+  },
+  {
+   "page": 64,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Tilah Mico",
+   "p1": "Tillak Wenzl"
+  },
+  {
+   "page": 64,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Mussengut",
+   "p1": "Heinschegg Georgy"
+  },
+  {
+   "page": 64,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Ch. Veldtscherer",
+   "p1": "Vierbl[?]/Vierbl[?]/Vierbl[?]"
+  },
+  {
+   "page": 65,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Krähenbogen",
+   "p1": "Kriechham Gregor"
+  },
+  {
+   "page": 65,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Tillak Matziz",
+   "p1": "Tillek Wolfgey"
+  },
+  {
+   "page": 65,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Hladnik Charmanie",
+   "p1": "Tillek Wolfgey"
+  },
+  {
+   "page": 65,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Eichblöck Joseph",
+   "p1": "Wolfsloch Wolfgey"
+  },
+  {
+   "page": 65,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Eichblöck Mattäy",
+   "p1": "Wolfsloch Wolfgey"
+  },
+  {
+   "page": 65,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Kriechbaum Georg",
+   "p1": "Kriechham Gregor"
+  },
+  {
+   "page": 65,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Werkleins Mathäy",
+   "p1": "Wolfsloch Wolfgey"
+  },
+  {
+   "page": 65,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Ering Jerand",
+   "p1": "Prinzig Franze"
+  },
+  {
+   "page": 65,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Kriechbaum Georg",
+   "p1": "Kriechham Gregor"
+  },
+  {
+   "page": 65,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Philipp Jörig",
+   "p1": "Eichle Joseph"
+  },
+  {
+   "page": 65,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Mang Jergan",
+   "p1": "Mally Franze"
+  },
+  {
+   "page": 65,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Brudla Mize",
+   "p1": "Pomella Mize"
+  },
+  {
+   "page": 65,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Lappary Cineš",
+   "p1": "Czuparz Peter"
+  },
+  {
+   "page": 65,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Schimeg Bužon",
+   "p1": "Scheinz Brigitte"
+  },
+  {
+   "page": 65,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Cerdig Jernei",
+   "p1": "Gosling Franze"
+  },
+  {
+   "page": 65,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Vrtehan Matija",
+   "p1": "Kriechham Wolfgey"
+  },
+  {
+   "page": 65,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Hafneršak Mihe",
+   "p1": "Hofstetter Franze"
+  },
+  {
+   "page": 65,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Nemec Mihael",
+   "p1": "Staudt Mauzelin"
+  },
+  {
+   "page": 65,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Breny Brugand",
+   "p1": "Prinzig Brigitte"
+  },
+  {
+   "page": 65,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Breny Brugand",
+   "p1": "Prinzig Brigitte"
+  },
+  {
+   "page": 66,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Primus Winklmann",
+   "p1": "Brünig Wenzel"
+  },
+  {
+   "page": 66,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Primz Primo",
+   "p1": "Brünig Wenzel"
+  },
+  {
+   "page": 66,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Primz Primo",
+   "p1": "Brünig Wenzel"
+  },
+  {
+   "page": 66,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Pudwey Urzine",
+   "p1": "Puchler Wenzel"
+  },
+  {
+   "page": 66,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Lobnig Jörg",
+   "p1": "Scholz Josef"
+  },
+  {
+   "page": 66,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Pudwey Ursine",
+   "p1": "Ludwig Wenzel"
+  },
+  {
+   "page": 66,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Wintschun Gregor",
+   "p1": "Wieschank Georg"
+  },
+  {
+   "page": 66,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Witschard Georg",
+   "p1": "Wieschank Georg"
+  },
+  {
+   "page": 66,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Preing Lorenz",
+   "p1": "Brünig Franz"
+  },
+  {
+   "page": 66,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Waldschmidt",
+   "p1": "Höfelschmied"
+  },
+  {
+   "page": 66,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Tillah Mied",
+   "p1": "Tillak Michl"
+  },
+  {
+   "page": 66,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Preinig Mied",
+   "p1": "Tillak Michl"
+  },
+  {
+   "page": 66,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Preinig Mied",
+   "p1": "Brünig Franz"
+  },
+  {
+   "page": 66,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Reichmann Gregor",
+   "p1": "Tillak Michl"
+  },
+  {
+   "page": 66,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Rupf Gregor",
+   "p1": "Wieschank Georg"
+  },
+  {
+   "page": 66,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Hölblacher Maria",
+   "p1": "Baußl Georg"
+  },
+  {
+   "page": 66,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Hölblacher Georg",
+   "p1": "Höfelschmied Michl"
+  },
+  {
+   "page": 66,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Joseph Wyssag",
+   "p1": "Machlor Georg"
+  },
+  {
+   "page": 66,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Schellkopf",
+   "p1": "Baußl Georg"
+  },
+  {
+   "page": 67,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Tillach Mio",
+   "p1": "C: Stellmach Gründ"
+  },
+  {
+   "page": 67,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Ulrich Mißo",
+   "p1": "C: Urich Gründ"
+  },
+  {
+   "page": 67,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Ulrich Gnoyag",
+   "p1": "C: Urich Anzenig"
+  },
+  {
+   "page": 67,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Pavlič Gregor",
+   "p1": "C: Urich Spunig"
+  },
+  {
+   "page": 67,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Schmieg Georg",
+   "p1": "C: Schiring Gründ"
+  },
+  {
+   "page": 67,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Pavlič Gregor",
+   "p1": "C: Cusilag Spunig"
+  },
+  {
+   "page": 67,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Pavlič Gregor",
+   "p1": "C: Cusilag Spunig"
+  },
+  {
+   "page": 67,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Nouak Andrej",
+   "p1": "A: Moadh Brundlois"
+  },
+  {
+   "page": 67,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Nouak Amata",
+   "p1": "A: Moadh Brundlois"
+  },
+  {
+   "page": 67,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Witschon Georg",
+   "p1": "C: Witschau Brundl"
+  },
+  {
+   "page": 67,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Heidhann Kudle",
+   "p1": "C: Witschau Brundl"
+  },
+  {
+   "page": 67,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Heidhann Kudle",
+   "p1": "C: Witschau Brundl"
+  },
+  {
+   "page": 67,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Heidhann Mütze",
+   "p1": "C: Witschau Brundl"
+  },
+  {
+   "page": 67,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Anderl Ortner",
+   "p1": "C: Witschau Metzger"
+  },
+  {
+   "page": 67,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Preinig Jörgen",
+   "p1": "C: Sautler Metzger"
+  },
+  {
+   "page": 67,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Preinig Bärbl",
+   "p1": "C: Breinig Jäger"
+  },
+  {
+   "page": 67,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Preinig Michl",
+   "p1": "C: Breinig Gründ"
+  },
+  {
+   "page": 67,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Breznigg Jos.",
+   "p1": "C: Breinig Gründ"
+  },
+  {
+   "page": 67,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Breznigg Jörgen",
+   "p1": "C: Breinig Jäger"
+  },
+  {
+   "page": 68,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Bruinz Mancio",
+   "p1": "Püchling Emanuel"
+  },
+  {
+   "page": 68,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Bruinz Mancio",
+   "p1": "Püchling Emanuel"
+  },
+  {
+   "page": 68,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Scheinz Johan.",
+   "p1": "Schönig f."
+  },
+  {
+   "page": 68,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Loppary Mico",
+   "p1": "Lappary Mrio"
+  },
+  {
+   "page": 68,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Pudlery Franz",
+   "p1": "Püchling fmand"
+  },
+  {
+   "page": 68,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Pudling Franz",
+   "p1": "Püchling fman"
+  },
+  {
+   "page": 68,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Pudlery Joan",
+   "p1": "Pöcklberg fman"
+  },
+  {
+   "page": 68,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Vichlstedt Michl",
+   "p1": "Widhölzl hofy"
+  },
+  {
+   "page": 68,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Pichry Franz",
+   "p1": "Püchling fmanl"
+  },
+  {
+   "page": 68,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Lopparz Mico",
+   "p1": "Lappary Grin"
+  },
+  {
+   "page": 68,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Mallwitschd Franz",
+   "p1": "Mallwitsch fmanl"
+  },
+  {
+   "page": 68,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Hriechan Matz",
+   "p1": "Küchen hofyl"
+  },
+  {
+   "page": 68,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Ueith Mies",
+   "p1": "Urich Mrio"
+  },
+  {
+   "page": 68,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Ueith Gnoy",
+   "p1": "Urich Gmonoy"
+  },
+  {
+   "page": 68,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Araufel Gnoy",
+   "p1": "Arangf Gmong"
+  },
+  {
+   "page": 68,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Glabekhar Mies",
+   "p1": "Hochholdorhami"
+  },
+  {
+   "page": 68,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Glabekhar Gnoy",
+   "p1": "Machleder Gmony"
+  },
+  {
+   "page": 68,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Mullag fons",
+   "p1": "Uridley fmon"
+  },
+  {
+   "page": 68,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Lorenz G[?]or[?]",
+   "p1": "Püchling Gmony"
+  },
+  {
+   "page": 68,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Pavlin Bortz",
+   "p1": "Püchling Guste"
+  },
+  {
+   "page": 69,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Kriechham Pater",
+   "p1": "Heidrich Peter"
+  },
+  {
+   "page": 69,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Kriechham Pater",
+   "p1": "Müller Andrej"
+  },
+  {
+   "page": 69,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Meller Martin",
+   "p1": "Hochleitner Jörgen"
+  },
+  {
+   "page": 69,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Grullestisch Jörg",
+   "p1": "Schönig Franz"
+  },
+  {
+   "page": 69,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Schönig Johann",
+   "p1": "Schönig Peter"
+  },
+  {
+   "page": 69,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Schönig Jakob",
+   "p1": "Schönig Peter"
+  },
+  {
+   "page": 69,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Schönig Marianne",
+   "p1": "Pechlitz Franz"
+  },
+  {
+   "page": 69,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Paulitsch Franz",
+   "p1": "Lampreht Mihael"
+  },
+  {
+   "page": 69,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Zupancich Mihael",
+   "p1": "Tillek Mathej"
+  },
+  {
+   "page": 69,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Tillel Mathäus",
+   "p1": "Tillak Mathej"
+  },
+  {
+   "page": 69,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Tillak Anton",
+   "p1": "Würih Franze[?]"
+  },
+  {
+   "page": 69,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Urlich Simon",
+   "p1": "Hochleitner Maltge"
+  },
+  {
+   "page": 69,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Völltschitschuge",
+   "p1": "Würih Peter"
+  },
+  {
+   "page": 69,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Urlich Goto",
+   "p1": "Würih Peter"
+  },
+  {
+   "page": 69,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Urlich Goto",
+   "p1": "Pechlitz Andrej"
+  },
+  {
+   "page": 69,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Pavlinz Jostgen",
+   "p1": "Pechlitz Andrej"
+  },
+  {
+   "page": 69,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Gottlieb Mattig",
+   "p1": "Schönig Franz"
+  },
+  {
+   "page": 69,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Schinagz ferner",
+   "p1": "Schönig Peter"
+  },
+  {
+   "page": 69,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Schinagz Goto",
+   "p1": "Schönig Franz"
+  },
+  {
+   "page": 69,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Schönig Johann",
+   "p1": "Schönig Peter"
+  },
+  {
+   "page": 69,
+   "row": 20,
+   "type": "owner_variant",
+   "tile": "Schönig Peter",
+   "p1": ""
+  },
+  {
+   "page": 70,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Schimeg Filho",
+   "p1": "Dienz' Pellen"
+  },
+  {
+   "page": 70,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Schimeg Gau",
+   "p1": "Schimerz' Franl"
+  },
+  {
+   "page": 70,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Lapparg Mihlo",
+   "p1": "Lappeny' Michl"
+  },
+  {
+   "page": 70,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Lappitzig Miko",
+   "p1": "Lappeny' Michl"
+  },
+  {
+   "page": 70,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Hanßl gnoy",
+   "p1": "Hanf' gnoy"
+  },
+  {
+   "page": 70,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Riediger Han.",
+   "p1": "Poldi'g'hanl"
+  },
+  {
+   "page": 70,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Ferdinand Hanl",
+   "p1": "Ferdig' Jhanl"
+  },
+  {
+   "page": 70,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Hanßl Groy",
+   "p1": "Hanf' gnoy"
+  },
+  {
+   "page": 70,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Hanßl gnoy",
+   "p1": "Hanf' g'noy"
+  },
+  {
+   "page": 70,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Wohatschak hieße",
+   "p1": "Khaldetschar hanse"
+  },
+  {
+   "page": 70,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Grüßl Georg",
+   "p1": "Khaldetschar hanse"
+  },
+  {
+   "page": 70,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Hölblacher Gregor",
+   "p1": "Hanf' gnoy"
+  },
+  {
+   "page": 70,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Knafli Gregor",
+   "p1": "Khaldetschär gnoy"
+  },
+  {
+   "page": 70,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Hölblacher Barbara",
+   "p1": "Hanf' gnoy"
+  },
+  {
+   "page": 70,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Hölblacher Gregor",
+   "p1": "Khaldetschar hanse"
+  },
+  {
+   "page": 70,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Kitschian Martin",
+   "p1": "Khaldetschar gnoy"
+  },
+  {
+   "page": 70,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Heisschani Gregor",
+   "p1": "Kheuthan bies"
+  },
+  {
+   "page": 70,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Meyr Juras",
+   "p1": "Kheuthan gnoy"
+  },
+  {
+   "page": 70,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Meyr Marx",
+   "p1": "Dienz' Pieren"
+  },
+  {
+   "page": 71,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Breinig Franz",
+   "p1": "Schmieg Franz"
+  },
+  {
+   "page": 71,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Breinig Franz",
+   "p1": "Schmieg Franz"
+  },
+  {
+   "page": 71,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Waldstöcher Carl",
+   "p1": "Schmieg Franz"
+  },
+  {
+   "page": 71,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Kleitscher Grubj.",
+   "p1": "Waldscheck Wolfgo"
+  },
+  {
+   "page": 71,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Kleitscher Grubj",
+   "p1": "Waldscheck Wolfgo"
+  },
+  {
+   "page": 71,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Kleitscher Mühlg.",
+   "p1": "Waldscheck Wolfgo"
+  },
+  {
+   "page": 71,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Heinrichen Müllg.",
+   "p1": "Waldscheckerhut"
+  },
+  {
+   "page": 71,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Hieftlach Brunn?",
+   "p1": "Waldscheck Wolfgo"
+  },
+  {
+   "page": 71,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Hieftlach Brunn?",
+   "p1": "Hirscham Wolfgo"
+  },
+  {
+   "page": 71,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Hieftlach Brunn?",
+   "p1": "Kupfelsch Franz"
+  },
+  {
+   "page": 71,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Schimig Mario",
+   "p1": "Kupfelsch Franz"
+  },
+  {
+   "page": 71,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Schimy Mario",
+   "p1": "Kupfelsch Franz"
+  },
+  {
+   "page": 71,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Lauder Georg",
+   "p1": "Schmieg Franz"
+  },
+  {
+   "page": 71,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Laudher Georg",
+   "p1": "Schmieg Franz"
+  },
+  {
+   "page": 71,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Eulennick Molly",
+   "p1": "Bruckop Gregor"
+  },
+  {
+   "page": 71,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Narath Muster",
+   "p1": "Catharina Gregor"
+  },
+  {
+   "page": 71,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Fadlerig Pretta",
+   "p1": "Eidenitsch Wolfgo"
+  },
+  {
+   "page": 71,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Matthäus Mörten",
+   "p1": "Sarael Brusatin"
+  },
+  {
+   "page": 71,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Matthäus Mörten",
+   "p1": "Pachlery Wolfgo"
+  },
+  {
+   "page": 71,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Johann Gnanoy",
+   "p1": "Pachlery Wolfgo"
+  },
+  {
+   "page": 72,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Schmitz Georg Laurin",
+   "p1": "Johann Franz Ivanca Grubler"
+  },
+  {
+   "page": 72,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Noah Imotli",
+   "p1": "Noah Mautin"
+  },
+  {
+   "page": 72,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Noah Imotli",
+   "p1": "Noah Mautin"
+  },
+  {
+   "page": 72,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Noval Bravtin",
+   "p1": "Noah Mautin"
+  },
+  {
+   "page": 72,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Noval Mavtina",
+   "p1": "Noah Mautin"
+  },
+  {
+   "page": 72,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Mittnig Jergann",
+   "p1": "Mittag Jergan"
+  },
+  {
+   "page": 72,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Mittnig Jergann",
+   "p1": "Mittag Jergan"
+  },
+  {
+   "page": 72,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Baltog Jergan",
+   "p1": "Mittag Jergan"
+  },
+  {
+   "page": 72,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Baltog Jergan",
+   "p1": "Mittag Jergan"
+  },
+  {
+   "page": 72,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Baltog Jergann",
+   "p1": "Mittag Jergan"
+  },
+  {
+   "page": 72,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Pavlič Jozsef",
+   "p1": "Mittag Jergan"
+  },
+  {
+   "page": 72,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Bucella Mič",
+   "p1": "Mittag Jergan"
+  },
+  {
+   "page": 72,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Bucella Mič",
+   "p1": "Breslla Wies"
+  },
+  {
+   "page": 72,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Bucella Mič",
+   "p1": "Breslla Wies"
+  },
+  {
+   "page": 72,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Bucella Mič",
+   "p1": "Breslla Wies"
+  },
+  {
+   "page": 72,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Pavlichi Matthäus",
+   "p1": "Breslla Wies"
+  },
+  {
+   "page": 72,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Pavlichi Rudolf",
+   "p1": "Paulberg Martin"
+  },
+  {
+   "page": 72,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Pavlichi Rudolf",
+   "p1": "Paulberg Rupf"
+  },
+  {
+   "page": 72,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "J. [?]ohl",
+   "p1": "Paulberg Rupf"
+  },
+  {
+   "page": 72,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Stauderig Smolz",
+   "p1": "Paulberg Rupf"
+  },
+  {
+   "page": 73,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Wolfsbacher Baulen",
+   "p1": "Valentin Wulfy"
+  },
+  {
+   "page": 73,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Büller Stueven",
+   "p1": "Willy Wurian"
+  },
+  {
+   "page": 73,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Prinz Miß",
+   "p1": "Breinig Priß"
+  },
+  {
+   "page": 73,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Christian Grgon",
+   "p1": "Krieschanl Groyg"
+  },
+  {
+   "page": 73,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Matthäus Humerl",
+   "p1": "Willy Wurian"
+  },
+  {
+   "page": 73,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Matschitsch Fg.",
+   "p1": "Mallwitsch Fg."
+  },
+  {
+   "page": 73,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Matschitsch Jg.",
+   "p1": "Mallwitsch Fg."
+  },
+  {
+   "page": 73,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Schiller Paulig",
+   "p1": "Maller Mally"
+  },
+  {
+   "page": 73,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Kleiner Schölzer",
+   "p1": "Maller Mally"
+  },
+  {
+   "page": 73,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Breinig Wido",
+   "p1": "Breinig Priß"
+  },
+  {
+   "page": 73,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Krischan Grieß",
+   "p1": "Breinig Priß"
+  },
+  {
+   "page": 73,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Krischan Grieß",
+   "p1": "Krieschanl Grieß"
+  },
+  {
+   "page": 73,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Budla Grieß",
+   "p1": "Krieschanl Priß"
+  },
+  {
+   "page": 73,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Leban Stochhübl",
+   "p1": "Bratla Priß"
+  },
+  {
+   "page": 73,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Breny gretly.",
+   "p1": "Schlanhotz Mally"
+  },
+  {
+   "page": 73,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Brenig gregore",
+   "p1": "Breinig Mally"
+  },
+  {
+   "page": 73,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Högepely Juran",
+   "p1": "Breinig Jergane"
+  },
+  {
+   "page": 73,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Kreemennig",
+   "p1": "Hiegenpety Jorgn"
+  },
+  {
+   "page": 73,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Freiholdpfg",
+   "p1": "Krieschanl Mally"
+  },
+  {
+   "page": 74,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Milley Hannal",
+   "p1": "Höllyg Hamel"
+  },
+  {
+   "page": 74,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Milley Hanul",
+   "p1": "Höllyg Hamel"
+  },
+  {
+   "page": 74,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Kristan Gregor",
+   "p1": "Scheubang Georg"
+  },
+  {
+   "page": 74,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Preßig Mardl",
+   "p1": "Brügg Maria"
+  },
+  {
+   "page": 74,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Stipshann Gvang",
+   "p1": "Brügg Maria"
+  },
+  {
+   "page": 74,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Preßig Mardl",
+   "p1": "Brügg Maria"
+  },
+  {
+   "page": 74,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Varbiderer Matzj",
+   "p1": "Verbitzer Wolfp"
+  },
+  {
+   "page": 74,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Varbiderer Hanz",
+   "p1": "Verbitzer Wolfp"
+  },
+  {
+   "page": 74,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Gölding Matzj",
+   "p1": "Schimetz Chalip"
+  },
+  {
+   "page": 74,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Leidig Gvang",
+   "p1": "Ederig Georg"
+  },
+  {
+   "page": 74,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Varbiderer Matzj",
+   "p1": "Verbitzer Wolfp"
+  },
+  {
+   "page": 74,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Michal Hulup",
+   "p1": "Scheubang Helfp"
+  },
+  {
+   "page": 74,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Schimet Hulup",
+   "p1": "Schimetz Chalip"
+  },
+  {
+   "page": 74,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Blaž Seifert",
+   "p1": "Brügg Michael"
+  },
+  {
+   "page": 74,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Robothar Baloh",
+   "p1": "Robothauser Mathä"
+  },
+  {
+   "page": 74,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Robothar Baloh",
+   "p1": "Robothauser Mathä"
+  },
+  {
+   "page": 74,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Schimet Hulup",
+   "p1": "Schimetz Wolfp"
+  },
+  {
+   "page": 74,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Franz Prgomy",
+   "p1": "Krampl[?] Georg"
+  },
+  {
+   "page": 74,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Mussig",
+   "p1": "Hölby Anna"
+  },
+  {
+   "page": 74,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Hiebl Johann",
+   "p1": "Hölby Anna"
+  },
+  {
+   "page": 75,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Pavlič Mihael",
+   "p1": "Pavšič Gregor"
+  },
+  {
+   "page": 75,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Pavlič Mihe",
+   "p1": "Pavšič Urša"
+  },
+  {
+   "page": 75,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Pavlič Mihael",
+   "p1": "Pavšič Urša"
+  },
+  {
+   "page": 75,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Schimig Gnoy",
+   "p1": "Koharig Simon"
+  },
+  {
+   "page": 75,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Schimig Gmido",
+   "p1": "Koharig Simon"
+  },
+  {
+   "page": 75,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Pouchag Mio",
+   "p1": "Pavšič Urša"
+  },
+  {
+   "page": 75,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Pouchag Miggane",
+   "p1": "Pavšič Gregor"
+  },
+  {
+   "page": 75,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Pouchag Mio",
+   "p1": "Pavšič Urša"
+  },
+  {
+   "page": 75,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Ulich Bilo",
+   "p1": "Vidic Urša"
+  },
+  {
+   "page": 75,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Ulich Mio",
+   "p1": "Vidic Urša"
+  },
+  {
+   "page": 75,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Veit Gvony",
+   "p1": "Schellko Josef"
+  },
+  {
+   "page": 75,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Veit Gvony",
+   "p1": "Vidic Simon"
+  },
+  {
+   "page": 75,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Novak Marten",
+   "p1": "Vidic Simon"
+  },
+  {
+   "page": 75,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Novak marton",
+   "p1": "Novak Maruša"
+  },
+  {
+   "page": 75,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Lubanitsch Martin",
+   "p1": "Novak Maruša"
+  },
+  {
+   "page": 75,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Lehenstock Jürgen",
+   "p1": "Lahovnik Matija"
+  },
+  {
+   "page": 75,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Pachlitz Andrez",
+   "p1": "Lenardič Jurij"
+  },
+  {
+   "page": 75,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Vedrung Georg",
+   "p1": "Pavšič Anton"
+  },
+  {
+   "page": 75,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Novak Mathäus",
+   "p1": "Pavšič Simon"
+  },
+  {
+   "page": 76,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Emericich von Gailhoven",
+   "p1": "Scheiblacher Wirthsleute"
+  },
+  {
+   "page": 76,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Michael Munte",
+   "p1": "Kießlich Brawo"
+  },
+  {
+   "page": 76,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Kristofl poto",
+   "p1": "Kießlich Peter"
+  },
+  {
+   "page": 76,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Hüffeldach Gregor",
+   "p1": "Kießlich Maria"
+  },
+  {
+   "page": 76,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Griedhan Georg",
+   "p1": "Kießlich Georg"
+  },
+  {
+   "page": 76,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Küchleran Georg",
+   "p1": "Kießlich Georg"
+  },
+  {
+   "page": 76,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Küchleran Georg",
+   "p1": "Kießlich Georg"
+  },
+  {
+   "page": 76,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Lidahl Briesi",
+   "p1": "Löbl Prisca"
+  },
+  {
+   "page": 76,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Klöttlar Gregor",
+   "p1": "Kießlicher Brawo"
+  },
+  {
+   "page": 76,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Griedhan Briesi",
+   "p1": "Kießlich Brüs"
+  },
+  {
+   "page": 76,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Melsichlar Georg",
+   "p1": "Schloibichler Georg"
+  },
+  {
+   "page": 76,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Hochstetter Martin",
+   "p1": "Schloibichler Maria"
+  },
+  {
+   "page": 76,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Hochstetter Gregor",
+   "p1": "Schloibicher[?] Georg"
+  },
+  {
+   "page": 76,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Urlich Peter",
+   "p1": "Veit Peter"
+  },
+  {
+   "page": 76,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Lehner Wenzl",
+   "p1": "Lienig Weygand"
+  },
+  {
+   "page": 76,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Deckelbach Wenzl",
+   "p1": "Peuschelisch Marthe"
+  },
+  {
+   "page": 76,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Deckelbach Wenzl",
+   "p1": "Peuschelisch Marthe"
+  },
+  {
+   "page": 76,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Deckelbach Wenzl",
+   "p1": "Peuschelisch Marthen"
+  },
+  {
+   "page": 76,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Mencinger f[?]",
+   "p1": "Vechliboch[?] Marthe"
+  },
+  {
+   "page": 76,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Schmieg f[?]",
+   "p1": "Schemig Peter"
+  },
+  {
+   "page": 77,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Scheing, Golo",
+   "p1": "Schinig Johan"
+  },
+  {
+   "page": 77,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Scheing, Golo",
+   "p1": "Schinig Johan"
+  },
+  {
+   "page": 77,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Scheing, Golo",
+   "p1": "Schinig Johan"
+  },
+  {
+   "page": 77,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Schimig Georg",
+   "p1": "Schinig Juran"
+  },
+  {
+   "page": 77,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Breinig Josef",
+   "p1": "Breunig Grieß"
+  },
+  {
+   "page": 77,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Breinig Josef",
+   "p1": "Breunig Grieß"
+  },
+  {
+   "page": 77,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Breinßfgerand",
+   "p1": "Breunig[?] Juran"
+  },
+  {
+   "page": 77,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Breinig Johann",
+   "p1": "Breunig Juran"
+  },
+  {
+   "page": 77,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Streng Jona",
+   "p1": "Breunig Juran"
+  },
+  {
+   "page": 77,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Ulrich Jako",
+   "p1": "Breunig Juran"
+  },
+  {
+   "page": 77,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Marth Primož",
+   "p1": "Mairich Johan"
+  },
+  {
+   "page": 77,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Urban Schmid",
+   "p1": "Novak Wenzel"
+  },
+  {
+   "page": 77,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Schelle Georg",
+   "p1": "Schwarzenbog"
+  },
+  {
+   "page": 77,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Heinrich Bric",
+   "p1": "Stillele[?] Josef"
+  },
+  {
+   "page": 77,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Tillak Bric",
+   "p1": "Preissler Grieß"
+  },
+  {
+   "page": 77,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Zillan M.",
+   "p1": "Tittlak Miße"
+  },
+  {
+   "page": 77,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Zillan V.",
+   "p1": "Tittlak Grieß"
+  },
+  {
+   "page": 78,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Tillak Jno.",
+   "p1": "Tschakl Jako"
+  },
+  {
+   "page": 78,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Tillak Jfn",
+   "p1": "Tschakl Jako"
+  },
+  {
+   "page": 78,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Paulloig Pawlen",
+   "p1": "Riedler Georg"
+  },
+  {
+   "page": 78,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Michl Gollo",
+   "p1": "Ulrich Jako"
+  },
+  {
+   "page": 78,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Tscholl Grill",
+   "p1": "Tschakl Grieß"
+  },
+  {
+   "page": 78,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Schmugy Jolo",
+   "p1": "Schimig Jako"
+  },
+  {
+   "page": 78,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Schmugtz Jost",
+   "p1": "Scheunzberger"
+  },
+  {
+   "page": 78,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Schmugy Jolo",
+   "p1": "Schimig Jako"
+  },
+  {
+   "page": 78,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Krauß Georg",
+   "p1": "Maurer Georg"
+  },
+  {
+   "page": 78,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Khunetzhampuy",
+   "p1": "Kobaltshofer[?]"
+  },
+  {
+   "page": 78,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Hudetschmanns",
+   "p1": "Höchenbauerin"
+  },
+  {
+   "page": 78,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Gellach Uric",
+   "p1": "Tschakl Grieß"
+  },
+  {
+   "page": 78,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Schinig Olo",
+   "p1": "Schimig Jako"
+  },
+  {
+   "page": 78,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Urich P.",
+   "p1": "Ulrich Jako"
+  },
+  {
+   "page": 78,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Urich P.",
+   "p1": "Ulrich Jako"
+  },
+  {
+   "page": 78,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Grieschan Uric",
+   "p1": "Streichan Grieß"
+  },
+  {
+   "page": 78,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Luharitschmagg",
+   "p1": "Eblanzerhofer[?]"
+  },
+  {
+   "page": 78,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Luharitschmagg",
+   "p1": "Schwanzerhofer[?]"
+  },
+  {
+   "page": 78,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Donač Martin",
+   "p1": "Nomal Maurer"
+  },
+  {
+   "page": 78,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Gilleh Mičo",
+   "p1": "Tschakl Grieß"
+  },
+  {
+   "page": 79,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Pedlitz Peter",
+   "p1": "Paulin Purgar"
+  },
+  {
+   "page": 79,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Lehele Georg",
+   "p1": "Paulin Purgar"
+  },
+  {
+   "page": 79,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Schinz Michael",
+   "p1": "Paulin Purgar"
+  },
+  {
+   "page": 79,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Schöring Johann",
+   "p1": "Schöning Jergon"
+  },
+  {
+   "page": 79,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Schöring David",
+   "p1": "Schöning Johan"
+  },
+  {
+   "page": 79,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Strohlik Georg",
+   "p1": "Schöning Martin"
+  },
+  {
+   "page": 79,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Schöring Joseph",
+   "p1": "Schöning Georg"
+  },
+  {
+   "page": 79,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Mausch Georg",
+   "p1": "Pumpf Gregor"
+  },
+  {
+   "page": 79,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Zirall Anton",
+   "p1": "Hiebl Urslin"
+  },
+  {
+   "page": 79,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Schöring Jakob",
+   "p1": "Schöning Peter"
+  },
+  {
+   "page": 79,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Schöring Jakob",
+   "p1": "Schöning Paul"
+  },
+  {
+   "page": 79,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Virant Thomas",
+   "p1": "Hiebl Thomas"
+  },
+  {
+   "page": 79,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Weidl Thomas",
+   "p1": "Hiebl Roman"
+  },
+  {
+   "page": 79,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Schöring Johan",
+   "p1": "Schöning Stefan"
+  },
+  {
+   "page": 79,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Schöring Jergen",
+   "p1": "Schöning Jergon"
+  },
+  {
+   "page": 79,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Schöring Joseph",
+   "p1": "Schöning Gregor"
+  },
+  {
+   "page": 79,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Veidl Gregor",
+   "p1": "Hiebl Georg"
+  },
+  {
+   "page": 79,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Veidl Peter",
+   "p1": "Hiebl Ursin"
+  },
+  {
+   "page": 79,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Tillak Mäde",
+   "p1": "Paulin Purgar"
+  },
+  {
+   "page": 80,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Krischan Mlin",
+   "p1": "Christian Mlin"
+  },
+  {
+   "page": 80,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Krischan Gnoy",
+   "p1": "Christian Gnoy"
+  },
+  {
+   "page": 80,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Udal Rinner",
+   "p1": "Vidal Sturm"
+  },
+  {
+   "page": 80,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Schmieg Gregor",
+   "p1": "Schmieg Jungel"
+  },
+  {
+   "page": 80,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Ulrich Peter",
+   "p1": "Ulrich Pulte"
+  },
+  {
+   "page": 80,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Visintin Miha",
+   "p1": "Christian Mlin"
+  },
+  {
+   "page": 80,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Schmieg Martin",
+   "p1": "Schmieg Brügin"
+  },
+  {
+   "page": 80,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Ulrich Miha",
+   "p1": "Ulrich Griz"
+  },
+  {
+   "page": 80,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Ullich Gregor",
+   "p1": "Ulrich Gnoy"
+  },
+  {
+   "page": 80,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Pavlicek Matjaž",
+   "p1": "Pavlicek Brügin"
+  },
+  {
+   "page": 80,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Schmieg Jerej",
+   "p1": "Schmieg Jungel"
+  },
+  {
+   "page": 80,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Lipavz Mihe",
+   "p1": "Vopnary Griz"
+  },
+  {
+   "page": 80,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Johann Peter",
+   "p1": "Schmieg Juleb"
+  },
+  {
+   "page": 80,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Goritzig Matja",
+   "p1": "Pavlicek Brügin"
+  },
+  {
+   "page": 80,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Tillak Mihe",
+   "p1": "Tillak Mlin"
+  },
+  {
+   "page": 80,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Goritzig Matja",
+   "p1": "Pavlicek Brügin"
+  },
+  {
+   "page": 80,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Stuparitsch Matija",
+   "p1": "Hupmanetsch Brügin"
+  },
+  {
+   "page": 80,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Hlad Mihe",
+   "p1": "Chroll Griz"
+  },
+  {
+   "page": 80,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Gemeinde",
+   "p1": "Tillak Mlin"
+  },
+  {
+   "page": 80,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Thalab Bries",
+   "p1": "Tillak Mlin"
+  },
+  {
+   "page": 81,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Khall Dirsou",
+   "p1": "Vidil Dremec"
+  },
+  {
+   "page": 81,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Schimig Jntn",
+   "p1": "Vidil Dremec"
+  },
+  {
+   "page": 81,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Schimig Jntn",
+   "p1": "Vidil Dremec"
+  },
+  {
+   "page": 81,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Lapizar Gregor",
+   "p1": "Leppajz Josip"
+  },
+  {
+   "page": 81,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Goschitz Georg",
+   "p1": "Podlezig Jurez"
+  },
+  {
+   "page": 81,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Schimig Ignaz",
+   "p1": "Schimig Jungert"
+  },
+  {
+   "page": 81,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Höll Rumer",
+   "p1": "Vidil Dremec"
+  },
+  {
+   "page": 81,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Höll Blasius",
+   "p1": "Hroll Griez"
+  },
+  {
+   "page": 81,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Dragosch Peter",
+   "p1": "Dragosich Jobe"
+  },
+  {
+   "page": 81,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Schimig Peter",
+   "p1": "Schimig Jobe"
+  },
+  {
+   "page": 81,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Albrechtsb. Matj.",
+   "p1": "Dragosich Omeze"
+  },
+  {
+   "page": 81,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Lahintzschb. Matj.",
+   "p1": "Schlinschek Matz"
+  },
+  {
+   "page": 81,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Albrechtsch. Wendlg",
+   "p1": "Schlinschek Joby"
+  },
+  {
+   "page": 81,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Dragowitsch Urslin",
+   "p1": "Schlinschek Welye"
+  },
+  {
+   "page": 81,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Dragowitsch Jost",
+   "p1": "Dragosich Omeze"
+  },
+  {
+   "page": 81,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Lehentschb. Matj.",
+   "p1": "Dragosich Jobe"
+  },
+  {
+   "page": 81,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Lehentschb. Matj.",
+   "p1": "Schlinschek Matz"
+  },
+  {
+   "page": 81,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Flappelfger",
+   "p1": "Schlinschek Matz"
+  },
+  {
+   "page": 81,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Sickleng",
+   "p1": "Leppajz Josip"
+  },
+  {
+   "page": 82,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Hanne Miganne",
+   "p1": "Hans Brugant Leime Chille"
+  },
+  {
+   "page": 82,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Hanne Miganne",
+   "p1": "Hans Brugant Leime Chille"
+  },
+  {
+   "page": 82,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Gmainerin",
+   "p1": "Grunwaldin"
+  },
+  {
+   "page": 82,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Lichtenst. [?]",
+   "p1": "Schindlerlch Brünn"
+  },
+  {
+   "page": 82,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Hirschhan Poldy",
+   "p1": "Vitscheran Budyg"
+  },
+  {
+   "page": 82,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Hirschhan Poldy",
+   "p1": "Vitscheran Budyg"
+  },
+  {
+   "page": 82,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Klopetyf. [?] fraw",
+   "p1": "Hlopetz fawer"
+  },
+  {
+   "page": 82,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Schunidt. [?] Poldy",
+   "p1": "Schumacher Budyg"
+  },
+  {
+   "page": 82,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Klopetyf. [?] fraw",
+   "p1": "Hlopetz fawer"
+  },
+  {
+   "page": 82,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Schunidt. [?] Poldy",
+   "p1": "Schunzig Budyg"
+  },
+  {
+   "page": 82,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Klopety Janez",
+   "p1": "Hlopetz fawer"
+  },
+  {
+   "page": 82,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Hancböckh Janez",
+   "p1": "Hlopetz fawer"
+  },
+  {
+   "page": 82,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Brugel Janez",
+   "p1": "Zandtlertch fawer"
+  },
+  {
+   "page": 82,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Kantigel Janez",
+   "p1": "Arnegger fawer"
+  },
+  {
+   "page": 82,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Gaidofschik Janez",
+   "p1": "Arnegger fawer"
+  },
+  {
+   "page": 82,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Klepety Janez",
+   "p1": "Zaispürlich fawer"
+  },
+  {
+   "page": 82,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Klepaty Janez",
+   "p1": "Hlopetz fawer"
+  },
+  {
+   "page": 82,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Schwery Pros[?]",
+   "p1": "Hlopetz fawer"
+  },
+  {
+   "page": 82,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Hlopetz Georg",
+   "p1": "Scheuring Budyg"
+  },
+  {
+   "page": 83,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Hlebtz Ghan",
+   "p1": "Hille ly Shaw"
+  },
+  {
+   "page": 83,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Hlebtz Ghan",
+   "p1": "Hille ly Shaw"
+  },
+  {
+   "page": 83,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Daniel Ank",
+   "p1": "Kunickl Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Heldt Johann",
+   "p1": "Hille ly Shaw"
+  },
+  {
+   "page": 83,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Schumichl Maria",
+   "p1": "Kunickl Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Kuschan Maria",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Koschan Maria",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Leuschan Maria",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Louschan Maria",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Stelzer Johann",
+   "p1": "Hille ly Shaw"
+  },
+  {
+   "page": 83,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Leonhard Wolf",
+   "p1": "Kunickl Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Leonhard Wolf",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Leonhard Wolf",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Leonhard Wolf",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Albert Gnad",
+   "p1": "Kunickl Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Fidel Spiegl",
+   "p1": "Hille ly Shaw"
+  },
+  {
+   "page": 83,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Leonhard Wolf",
+   "p1": "Hille ly Shaw"
+  },
+  {
+   "page": 83,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Narischon Pfeife",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 83,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Narischon Pfeife",
+   "p1": "Kunickan Wöpfe"
+  },
+  {
+   "page": 84,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Schumetsh. Matja",
+   "p1": "Schmiedt Malfs"
+  },
+  {
+   "page": 84,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Schumetsh. Matja",
+   "p1": "Schmiedt Malfs"
+  },
+  {
+   "page": 84,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Hoječ Ivan",
+   "p1": "Hofp[?]er Handl[?]"
+  },
+  {
+   "page": 84,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Dragosch Gregor",
+   "p1": "Brugnol Gregor"
+  },
+  {
+   "page": 84,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Drekonitsch Wulf",
+   "p1": "Schmiedt Malfs"
+  },
+  {
+   "page": 84,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Dovak Michl",
+   "p1": "Ravnik Mardi"
+  },
+  {
+   "page": 84,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Lukowitsch Marx",
+   "p1": "Lahitschek Malti"
+  },
+  {
+   "page": 84,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Lukowitsch Michel",
+   "p1": "Lahitschek Michl"
+  },
+  {
+   "page": 84,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Gawaz Wulf",
+   "p1": "Lutzig Malfs"
+  },
+  {
+   "page": 84,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "F. Kahl Michl.",
+   "p1": "F. Ravl Malti"
+  },
+  {
+   "page": 84,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Hölzly Johand",
+   "p1": "Strobl Malti"
+  },
+  {
+   "page": 84,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Hölzty Johan",
+   "p1": "Mallety Georg"
+  },
+  {
+   "page": 84,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Schneidt Marth",
+   "p1": "Mallety Georg"
+  },
+  {
+   "page": 84,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "2. Münsterl Marth",
+   "p1": "Lahitschek Malti"
+  },
+  {
+   "page": 84,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Lahffschitdl Rupf",
+   "p1": "Lahitschek Mardo"
+  },
+  {
+   "page": 84,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Lahffschitdl Rupf",
+   "p1": "Lahitschek Malti"
+  },
+  {
+   "page": 84,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Lahffschitdl Niclas",
+   "p1": "Lahitschek Malti"
+  },
+  {
+   "page": 84,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Johann Peter L[?] [gestrichen]",
+   "p1": "Lahitschek Valen"
+  },
+  {
+   "page": 84,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Lindner Georg",
+   "p1": "Lahitschek Robel"
+  },
+  {
+   "page": 85,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Stilian Mlin",
+   "p1": "Stroh Mäda"
+  },
+  {
+   "page": 85,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Stefan Mlin",
+   "p1": "Leutnerl Mäda"
+  },
+  {
+   "page": 85,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Schinig Mlin[?]",
+   "p1": "Schinig Mägd[?]"
+  },
+  {
+   "page": 85,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Bering Hofpaur",
+   "p1": "Bering Mägd[?]"
+  },
+  {
+   "page": 85,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Mairich Mule",
+   "p1": "Wurth Mäda"
+  },
+  {
+   "page": 85,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Melling Hofpaur",
+   "p1": "Müllig Jägerl"
+  },
+  {
+   "page": 85,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Stumpf g'sess",
+   "p1": "Graupner Georg"
+  },
+  {
+   "page": 85,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Schumegg Meßner",
+   "p1": "Schinig Mägd[?]"
+  },
+  {
+   "page": 85,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Pötsching Mühle",
+   "p1": "Pössing Mägde"
+  },
+  {
+   "page": 85,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Joach. Mule",
+   "p1": "Stroh Mäda"
+  },
+  {
+   "page": 85,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Schimig [?] Gschiel",
+   "p1": "Kneidl Wenzel"
+  },
+  {
+   "page": 85,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Kosel Romuald",
+   "p1": "Schinig Pötsch"
+  },
+  {
+   "page": 85,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Stelzle Andre",
+   "p1": "Kneidl Wenzel"
+  },
+  {
+   "page": 85,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "L. Heinrich Paul",
+   "p1": "Stroh Mäda"
+  },
+  {
+   "page": 85,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Lindl Romuald",
+   "p1": "L Werneth Marxo"
+  },
+  {
+   "page": 85,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Kosel Martin",
+   "p1": "Kneidl Wenzel"
+  },
+  {
+   "page": 85,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Sauterl [?] Jörg",
+   "p1": "Nowak Wenzel"
+  },
+  {
+   "page": 85,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Lud[?]f[?]einsch[?]gerl",
+   "p1": "Sautner Joh."
+  },
+  {
+   "page": 85,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Bartle M[?]",
+   "p1": "Laßfels Joseph"
+  },
+  {
+   "page": 86,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Lauffstecher Maly",
+   "p1": "Löblflecksthaler Wipfl"
+  },
+  {
+   "page": 86,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Lauffstecher Maly",
+   "p1": "Löblflecksthaler Witschadl"
+  },
+  {
+   "page": 86,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Leinig Gorgy",
+   "p1": "Radway g'sang"
+  },
+  {
+   "page": 86,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Andre Mifsud",
+   "p1": "Kuere Rupfer"
+  },
+  {
+   "page": 86,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Benedikt Schmid",
+   "p1": "Hantel f'land"
+  },
+  {
+   "page": 86,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "lo Ruprechtlich Schmid",
+   "p1": "Löblflecksthaler f'land"
+  },
+  {
+   "page": 86,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Lothar Mifsud",
+   "p1": "Kraschand Wipfl"
+  },
+  {
+   "page": 86,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Leonhard Mifsud",
+   "p1": "Wanschera Wipfl"
+  },
+  {
+   "page": 86,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Leonhard Pfeiff",
+   "p1": "Kraschand Wipfl"
+  },
+  {
+   "page": 86,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "lo Ruprechtlich Schmid",
+   "p1": "Löblflecksthaler f'land"
+  },
+  {
+   "page": 86,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Hanž Jere",
+   "p1": "Hantel f'land"
+  },
+  {
+   "page": 86,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Lorenz Rupf",
+   "p1": "Kuere Rupfer"
+  },
+  {
+   "page": 86,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "D. Wenzl Mauhc",
+   "p1": "Löblflecksthaler Wands"
+  },
+  {
+   "page": 86,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Noand Maudl",
+   "p1": "Woschak Matheul"
+  },
+  {
+   "page": 86,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Wenzhawn Malfs",
+   "p1": "Wanschera Wipfl"
+  },
+  {
+   "page": 86,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Laurenz Rupf",
+   "p1": "Löblflecksthaler Wipfl"
+  },
+  {
+   "page": 86,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Hannß Jetter",
+   "p1": "Stemzig Feller"
+  },
+  {
+   "page": 86,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Schinig Malfs",
+   "p1": "Scheinzig Wipfl"
+  },
+  {
+   "page": 86,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Andreas Hofmann",
+   "p1": "Ravny H'grun"
+  },
+  {
+   "page": 86,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Andreas Hofmann",
+   "p1": "Radway g'sang"
+  },
+  {
+   "page": 87,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Staudt Schmid",
+   "p1": "Kunstel Johann"
+  },
+  {
+   "page": 87,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Deutitsch Wolf",
+   "p1": "Rupitsch Wolf"
+  },
+  {
+   "page": 87,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Häußlerisch Schmid",
+   "p1": "Wolfschläger Johann"
+  },
+  {
+   "page": 87,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Hans Wopfert",
+   "p1": "Hans Stupfel"
+  },
+  {
+   "page": 87,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Lorenz Hüppe",
+   "p1": "Rupitsch Wolf"
+  },
+  {
+   "page": 87,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Dragosch Jörg",
+   "p1": "Bergjohann Georg"
+  },
+  {
+   "page": 87,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "H. Georg Mauth",
+   "p1": "Hassele Amandus"
+  },
+  {
+   "page": 87,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "L. Hoffstätter Michel",
+   "p1": "Wolfschläger Michael"
+  },
+  {
+   "page": 87,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "M. Hoffstätter Hans",
+   "p1": "Wolfschläger Johann"
+  },
+  {
+   "page": 87,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Hantlfl Hans",
+   "p1": "Kunstel Johann"
+  },
+  {
+   "page": 87,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Schwintlich Marx",
+   "p1": "Anna Mahrin"
+  },
+  {
+   "page": 87,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Hiegl Jhann",
+   "p1": "Schwabitsch Maria"
+  },
+  {
+   "page": 87,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Schwintlich Jhann",
+   "p1": "Kunstel Johann"
+  },
+  {
+   "page": 87,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Moserl Christine",
+   "p1": "Wolfschläger Johann"
+  },
+  {
+   "page": 87,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Schwintlich Marus",
+   "p1": "Mandl Anton"
+  },
+  {
+   "page": 87,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Hieglty Jhann",
+   "p1": "Löblich Maria"
+  },
+  {
+   "page": 87,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Schwintlich Philipp",
+   "p1": "Widitz Johann"
+  },
+  {
+   "page": 87,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Gemeinde",
+   "p1": "Chumstetl Wolfgo"
+  },
+  {
+   "page": 87,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Michl to Mitter",
+   "p1": "Gemeinde"
+  },
+  {
+   "page": 88,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Hlebety Jhan",
+   "p1": "Hiebl z'st'hand"
+  },
+  {
+   "page": 88,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Hlebety Jhan",
+   "p1": "Dreimüthl G'sund"
+  },
+  {
+   "page": 88,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Hronitek Jhan",
+   "p1": "Landolt Bajfe"
+  },
+  {
+   "page": 88,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Leutichan Mufa",
+   "p1": "Kandlbau Bajfe"
+  },
+  {
+   "page": 88,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Lorenz Dan Wighl",
+   "p1": "Hiebl z'st'hand"
+  },
+  {
+   "page": 88,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Ufco St. Ghand",
+   "p1": "Kaufstättel Bajfe"
+  },
+  {
+   "page": 88,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Lohoffeld. Wighl",
+   "p1": "Penzing g'sung"
+  },
+  {
+   "page": 88,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Gandl. Gnoy",
+   "p1": "Haurle M'g'sund"
+  },
+  {
+   "page": 88,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Laure. Maifodl",
+   "p1": "G'meinden"
+  },
+  {
+   "page": 88,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Gmainerin",
+   "p1": "Hantel f'her"
+  },
+  {
+   "page": 88,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Hantel. Gher.",
+   "p1": "Kaufstättel Schöbel"
+  },
+  {
+   "page": 88,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Urbanstot Muehlb",
+   "p1": "Dreimüthl M'chel"
+  },
+  {
+   "page": 88,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Io Höffstaedtler Hans",
+   "p1": "Kaufstättel J'hen"
+  },
+  {
+   "page": 88,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Urbanstot Hans",
+   "p1": "Landolt f'her"
+  },
+  {
+   "page": 88,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Pauritsch Georg",
+   "p1": "Penzing g'sung"
+  },
+  {
+   "page": 88,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Io Höffstaedtler M[?]",
+   "p1": "z'st'f'ttel Bajfe"
+  },
+  {
+   "page": 88,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Urbanstot Hans",
+   "p1": "Hantel f'her"
+  },
+  {
+   "page": 88,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Grünwaldt",
+   "p1": "G'meinden"
+  },
+  {
+   "page": 88,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Jo. Waffler",
+   "p1": "Kaufstättel Schöbel"
+  },
+  {
+   "page": 88,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Wafflersche Wittib.",
+   "p1": "Kaufstättel Schöbel"
+  },
+  {
+   "page": 89,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "J. Waffstetl Nibl",
+   "p1": "Schöffstätzel Math"
+  },
+  {
+   "page": 89,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Johann Waffstetl Nibl",
+   "p1": "Schöffstätzel Math"
+  },
+  {
+   "page": 89,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Franzl Jha",
+   "p1": "Hauptl Joh"
+  },
+  {
+   "page": 89,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Hofstätter Johann",
+   "p1": "Schöffstätzel Johann"
+  },
+  {
+   "page": 89,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Koschil Marija",
+   "p1": "Narath Martin"
+  },
+  {
+   "page": 89,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Kralj Maruša",
+   "p1": "Kunst Thomas"
+  },
+  {
+   "page": 89,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Lukintzler Mathe",
+   "p1": "Leinweber Martha"
+  },
+  {
+   "page": 89,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Kralj Maruša",
+   "p1": "Kunst Thomas"
+  },
+  {
+   "page": 89,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Koschil Marija",
+   "p1": "Narath Martin"
+  },
+  {
+   "page": 89,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Stautel Jura",
+   "p1": "Hauptl Joh"
+  },
+  {
+   "page": 89,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Hofstätter Johann",
+   "p1": "Schöffstätzel Johann"
+  },
+  {
+   "page": 89,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Valentin Kramar",
+   "p1": "Schöffstätzel Johann"
+  },
+  {
+   "page": 89,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Matthäus",
+   "p1": "Hauptl Joh"
+  },
+  {
+   "page": 89,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Nanasch Marko",
+   "p1": "Narath Martin"
+  },
+  {
+   "page": 89,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Nanasch Wernak",
+   "p1": "Narath Martin"
+  },
+  {
+   "page": 89,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "L. Hantek Marko",
+   "p1": "Leinweber Martha"
+  },
+  {
+   "page": 89,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "J. Hantek Marko",
+   "p1": "Leinweber Martha"
+  },
+  {
+   "page": 89,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Nanasch Wernak",
+   "p1": "Narath Martin"
+  },
+  {
+   "page": 89,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Staudt Joh.",
+   "p1": "Narath Martin"
+  },
+  {
+   "page": 89,
+   "row": 19,
+   "type": "owner_variant",
+   "tile": "Staudt Joh.",
+   "p1": "Hauptl Joh"
+  },
+  {
+   "page": 90,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Jo Naftetnikh Hans",
+   "p1": "Steffltertitsch Hand"
+  },
+  {
+   "page": 90,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Jo Naftetnikh Hans",
+   "p1": "Steffltertitsch Hand"
+  },
+  {
+   "page": 90,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Jo Naftetnikh Hans",
+   "p1": "Steffltertitsch Hand"
+  },
+  {
+   "page": 90,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Michl Jung",
+   "p1": "Steffltertitsch Hand"
+  },
+  {
+   "page": 90,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Urlich Mule",
+   "p1": "Heinrich Jangg"
+  },
+  {
+   "page": 90,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Widibald v. Mayr",
+   "p1": "Heinrich Mühlo"
+  },
+  {
+   "page": 90,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Thomas Mule",
+   "p1": "Hörbetsch Mühlg"
+  },
+  {
+   "page": 90,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Lorenz Jung",
+   "p1": "Krems Mühlo"
+  },
+  {
+   "page": 90,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Chriostan Pfeifer",
+   "p1": "Heinehan Jangg"
+  },
+  {
+   "page": 90,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Nikolaus Pfeifer",
+   "p1": "Heinehan Mühlg"
+  },
+  {
+   "page": 90,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Heinrich Wolf",
+   "p1": "Heinehan Mühlg"
+  },
+  {
+   "page": 90,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Heinrich Wolf",
+   "p1": "Heinehan Mühlg"
+  },
+  {
+   "page": 90,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Heinrich Wolf",
+   "p1": "Heinehan Mühlg"
+  },
+  {
+   "page": 90,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Heinrich Wolf",
+   "p1": "Heinehan Mühlg"
+  },
+  {
+   "page": 90,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Albrecht Ghan",
+   "p1": "Heinehan Mühlg"
+  },
+  {
+   "page": 90,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Albrecht Ghan",
+   "p1": "Höberty Hand"
+  },
+  {
+   "page": 90,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Huntelk Wolf",
+   "p1": "Höberty Hand"
+  },
+  {
+   "page": 90,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Hlebsch Strobl",
+   "p1": "Höberty Hand"
+  },
+  {
+   "page": 90,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Kreuchenbauer",
+   "p1": "Höberty Hand"
+  },
+  {
+   "page": 91,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Kristian Wolf",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Kristian Wolf",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Kristian Wolf",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Lorenz Puffe",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Lorenz Puffe",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Elisabetha Glaud",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Heinrich Puffe",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Lorenz Puffe",
+   "p1": "Elisabeth Gorn[?]"
+  },
+  {
+   "page": 91,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Lorenz Puffe",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Lorenz Puffe",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Khunertshofe",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Pritscherhofe",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Unlich Mühle",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Unlich Mühle",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Krukenhofe",
+   "p1": "Schmidt Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Unlich Mühle",
+   "p1": "Schmidt Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Unlich Gerg",
+   "p1": "Kristan Hüpf"
+  },
+  {
+   "page": 91,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Wendt Groy",
+   "p1": "Urlich Mihö"
+  },
+  {
+   "page": 91,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Wendt Groy",
+   "p1": "Urlich Mihö"
+  },
+  {
+   "page": 92,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Knob Georg",
+   "p1": "Rudolf Jerey"
+  },
+  {
+   "page": 92,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Schimeg Marigo",
+   "p1": "Schinigz Wilga"
+  },
+  {
+   "page": 92,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Schimeg Kilga",
+   "p1": "Schinigz Wilga"
+  },
+  {
+   "page": 92,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Schmitz Wolf",
+   "p1": "Schinigz Wilga"
+  },
+  {
+   "page": 92,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Schmitz Wolf",
+   "p1": "Schinigz Wilga"
+  },
+  {
+   "page": 92,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Schmitz Johann",
+   "p1": "Schinigz Jerey"
+  },
+  {
+   "page": 92,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Laubstätten Wolf",
+   "p1": "Laubentholz Wilga"
+  },
+  {
+   "page": 92,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Deutstätt Wolf",
+   "p1": "Dobretsholz Wilga"
+  },
+  {
+   "page": 92,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Deutstätt Wolf",
+   "p1": "Dobretsholz Wilga"
+  },
+  {
+   "page": 92,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Kandl Thomas",
+   "p1": "Kunel Rumer"
+  },
+  {
+   "page": 92,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Kreischb. Mühle",
+   "p1": "Laubentholz Machei"
+  },
+  {
+   "page": 92,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Draugach Mühle",
+   "p1": "Hainzbach Wilga"
+  },
+  {
+   "page": 92,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Schmied Fetterl",
+   "p1": "Dorgatsch Machei"
+  },
+  {
+   "page": 92,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Veidl Fetterl",
+   "p1": "Schinigz Jetterl"
+  },
+  {
+   "page": 92,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Eisdl Fetterl",
+   "p1": "Ehart Jetterl"
+  },
+  {
+   "page": 92,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Knall Mühle",
+   "p1": "Ehart Jetterl"
+  },
+  {
+   "page": 92,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Knall Mühle?",
+   "p1": "Kunel Mule"
+  },
+  {
+   "page": 92,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Michl Mache",
+   "p1": "Kunel Mule"
+  },
+  {
+   "page": 92,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Nikol Mache",
+   "p1": "Kunel Mule"
+  },
+  {
+   "page": 93,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Strauß Georg",
+   "p1": "Franz Gregor"
+  },
+  {
+   "page": 93,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Strauß Georg",
+   "p1": "Franz Gregor"
+  },
+  {
+   "page": 93,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Verbitzcher Mift.",
+   "p1": "Valentin Kofol"
+  },
+  {
+   "page": 93,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Bleibtreu, Marbi [gestrichen]",
+   "p1": "Georg Marko"
+  },
+  {
+   "page": 93,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Albrecht, Simon",
+   "p1": "Philipp Greszmann[?]"
+  },
+  {
+   "page": 93,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Hanschitz, Marl.",
+   "p1": "Nikolaus Markl"
+  },
+  {
+   "page": 93,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Kunzhard, Marbl.",
+   "p1": "Nikolaus Markl"
+  },
+  {
+   "page": 93,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Poidig, Wolfga",
+   "p1": "Peter Pulfia"
+  },
+  {
+   "page": 93,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Dichl, Wolf, Wolf",
+   "p1": "Valentin Wolf"
+  },
+  {
+   "page": 93,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Dichtl, Wolf, Wolf",
+   "p1": "Valentin Wolf"
+  },
+  {
+   "page": 93,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Kunihand Wolf [gestrichen]",
+   "p1": "Georg Mlinar"
+  },
+  {
+   "page": 93,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Matheis Fankhant [gestrichen]",
+   "p1": "Nikolaus Wolf"
+  },
+  {
+   "page": 93,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Bartl Gspan [gestrichen]",
+   "p1": "Michel Strohfeind"
+  },
+  {
+   "page": 93,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Eliasch Grausy",
+   "p1": "Georg Jerman"
+  },
+  {
+   "page": 93,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Leopold Handl",
+   "p1": "Eliasch Gregor"
+  },
+  {
+   "page": 93,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Filleb Pfilge",
+   "p1": "Franz Jerman"
+  },
+  {
+   "page": 93,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Schmeyr Jhanl",
+   "p1": "Felix Wolf"
+  },
+  {
+   "page": 93,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Jappn [?] [gestrichen]",
+   "p1": "Schinig Johann"
+  },
+  {
+   "page": 93,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Bavari [?] Glan [?]",
+   "p1": "Lapornic Michl"
+  },
+  {
+   "page": 94,
+   "row": 0,
+   "type": "owner_variant",
+   "tile": "Pessirig Muffo",
+   "p1": "Pawlin Wolf"
+  },
+  {
+   "page": 94,
+   "row": 1,
+   "type": "owner_variant",
+   "tile": "Pessirig Muffo",
+   "p1": "Pawlin Wolf"
+  },
+  {
+   "page": 94,
+   "row": 2,
+   "type": "owner_variant",
+   "tile": "Pessigfchul",
+   "p1": "Pawlin Wolf"
+  },
+  {
+   "page": 94,
+   "row": 3,
+   "type": "owner_variant",
+   "tile": "Poppmayr Mathäus",
+   "p1": "Stephan Wolf"
+  },
+  {
+   "page": 94,
+   "row": 4,
+   "type": "owner_variant",
+   "tile": "Schneer Johann",
+   "p1": "Schinzel[?]"
+  },
+  {
+   "page": 94,
+   "row": 5,
+   "type": "owner_variant",
+   "tile": "Fellner Maria",
+   "p1": "Fülloch Wolf"
+  },
+  {
+   "page": 94,
+   "row": 6,
+   "type": "owner_variant",
+   "tile": "Schneer Jettchen",
+   "p1": "Schinzel[?] Kotho"
+  },
+  {
+   "page": 94,
+   "row": 7,
+   "type": "owner_variant",
+   "tile": "Schneer Johann",
+   "p1": "Schinzel[?]"
+  },
+  {
+   "page": 94,
+   "row": 8,
+   "type": "owner_variant",
+   "tile": "Schneer Johann",
+   "p1": "Schinzel[?]"
+  },
+  {
+   "page": 94,
+   "row": 9,
+   "type": "owner_variant",
+   "tile": "Poppmayr Matthäus",
+   "p1": "Paulin Wolf"
+  },
+  {
+   "page": 94,
+   "row": 10,
+   "type": "owner_variant",
+   "tile": "Müller Jörgl",
+   "p1": "Matthäus[?]"
+  },
+  {
+   "page": 94,
+   "row": 11,
+   "type": "owner_variant",
+   "tile": "Pavlinig Mißgl",
+   "p1": "Mittig Schmid"
+  },
+  {
+   "page": 94,
+   "row": 12,
+   "type": "owner_variant",
+   "tile": "Pavlinig Georg",
+   "p1": "Paulin Wolf"
+  },
+  {
+   "page": 94,
+   "row": 13,
+   "type": "owner_variant",
+   "tile": "Pavlinig Matjo",
+   "p1": "Seuz Georg"
+  },
+  {
+   "page": 94,
+   "row": 14,
+   "type": "owner_variant",
+   "tile": "Heinrich Ritschl [gestrichen]",
+   "p1": "Paulin Wolf"
+  },
+  {
+   "page": 94,
+   "row": 15,
+   "type": "owner_variant",
+   "tile": "Schelle Jörgl",
+   "p1": "Kunzhard Wolf"
+  },
+  {
+   "page": 94,
+   "row": 16,
+   "type": "owner_variant",
+   "tile": "Ravnik Miguell",
+   "p1": "Matthäus[?]"
+  },
+  {
+   "page": 94,
+   "row": 17,
+   "type": "owner_variant",
+   "tile": "Ludwig Wolfgr.",
+   "p1": "Raimund Wolf"
+  },
+  {
+   "page": 94,
+   "row": 18,
+   "type": "owner_variant",
+   "tile": "Ludwig Wolfgr.",
+   "p1": "Paulin Wolf"
+  },
+  {
+   "page": 98,
+   "row": 0,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "524"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "524"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "524"
+    ],
+    "p2": [
+     "324",
+     ""
+    ],
+    "tile": [
+     "",
+     "524"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 1,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "490"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "490"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "490"
+    ],
+    "p2": [
+     "490",
+     ""
+    ],
+    "tile": [
+     "",
+     "490"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "952"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "952"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "952"
+    ],
+    "p2": [
+     "352",
+     ""
+    ],
+    "tile": [
+     "",
+     "352"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 3,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1536"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1536"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1536"
+    ],
+    "p2": [
+     "1536",
+     ""
+    ],
+    "tile": [
+     "",
+     "1536 [angeschnitten]"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1922"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1922"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1922"
+    ],
+    "p2": [
+     "942",
+     ""
+    ],
+    "tile": [
+     "",
+     "1536"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "737"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "737"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "737"
+    ],
+    "p2": [
+     "1 73",
+     ""
+    ],
+    "tile": [
+     "",
+     "931"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "389"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "389"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "389"
+    ],
+    "p2": [
+     "737",
+     ""
+    ],
+    "tile": [
+     "1",
+     "79"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 8,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "661"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "661"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "661"
+    ],
+    "p2": [
+     "389",
+     ""
+    ],
+    "tile": [
+     "",
+     "737"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 9,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1188"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1188"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1188"
+    ],
+    "p2": [
+     "661",
+     ""
+    ],
+    "tile": [
+     "",
+     "389"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "558"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "558"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "558"
+    ],
+    "p2": [
+     "1188",
+     ""
+    ],
+    "tile": [
+     "",
+     "661"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 12,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1278"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1278"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1278"
+    ],
+    "p2": [
+     "1050",
+     ""
+    ],
+    "tile": [
+     "",
+     "160 [angeschnitten]"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 14,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1287"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1287"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1287"
+    ],
+    "p2": [
+     "1 171",
+     ""
+    ],
+    "tile": [
+     "",
+     "486"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1209"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1209"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1209"
+    ],
+    "p2": [
+     "1287",
+     ""
+    ],
+    "tile": [
+     "",
+     "678"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "594"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "594"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "594"
+    ],
+    "p2": [
+     "1209",
+     ""
+    ],
+    "tile": [
+     "",
+     "1 774"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1163"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1163"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1163"
+    ],
+    "p2": [
+     "596",
+     ""
+    ],
+    "tile": [
+     "",
+     "1387"
+    ]
+   }
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "868"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "868"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "868"
+    ],
+    "p2": [
+     "1163",
+     ""
+    ],
+    "tile": [
+     "",
+     "1209"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 0,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "654"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "654"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "654"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "654"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 1,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "375"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "375"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "375"
+    ],
+    "p2": [
+     "634",
+     ""
+    ],
+    "tile": [
+     ".",
+     "375"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 2,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "168"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "168"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "168"
+    ],
+    "p2": [
+     "375",
+     ""
+    ],
+    "tile": [
+     "",
+     "168"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 3,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "2 1160"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "2 1160"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "2 1160"
+    ],
+    "p2": [
+     "168",
+     ""
+    ],
+    "tile": [
+     "",
+     "2 1160 [angeschnitten]"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 4,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "3 1520"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "3 1520"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "3 1520"
+    ],
+    "p2": [
+     "2 1160",
+     ""
+    ],
+    "tile": [
+     "2",
+     "1160"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 5,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1 332"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1 332"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1 332"
+    ],
+    "p2": [
+     "3 1520",
+     ""
+    ],
+    "tile": [
+     "3",
+     "1520"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 6,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1379"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1379"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1379"
+    ],
+    "p2": [
+     "1 332",
+     ""
+    ],
+    "tile": [
+     "1",
+     "838"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 7,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "666"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "666"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "666"
+    ],
+    "p2": [
+     "1379",
+     ""
+    ],
+    "tile": [
+     "",
+     "1379"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 8,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "39"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "39"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "39"
+    ],
+    "p2": [
+     "666",
+     ""
+    ],
+    "tile": [
+     "",
+     "666"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 9,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1084"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1084"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1084"
+    ],
+    "p2": [
+     "39",
+     ""
+    ],
+    "tile": [
+     "",
+     "39"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 10,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "87"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "87"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "87"
+    ],
+    "p2": [
+     "1084",
+     ""
+    ],
+    "tile": [
+     "",
+     "1086"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 11,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1245"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1245"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1245"
+    ],
+    "p2": [
+     "57",
+     ""
+    ],
+    "tile": [
+     "",
+     "87"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 12,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1383"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1383"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1383"
+    ],
+    "p2": [
+     "1245",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 13,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "265"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "265"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "265"
+    ],
+    "p2": [
+     "1383",
+     ""
+    ],
+    "tile": [
+     "",
+     "1248"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 14,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "311"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "311"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "311"
+    ],
+    "p2": [
+     "263",
+     ""
+    ],
+    "tile": [
+     "",
+     "1353"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 15,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "587"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "587"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "587"
+    ],
+    "p2": [
+     "311",
+     ""
+    ],
+    "tile": [
+     "",
+     "268"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 16,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "546"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "546"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "546"
+    ],
+    "p2": [
+     "577",
+     ""
+    ],
+    "tile": [
+     "",
+     "311"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 17,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "670"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "670"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "670"
+    ],
+    "p2": [
+     "546",
+     ""
+    ],
+    "tile": [
+     "",
+     "537 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 101,
+   "row": 18,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1235"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1235"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1235"
+    ],
+    "p2": [
+     "570",
+     ""
+    ],
+    "tile": [
+     "",
+     "540 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 2,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1399"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1399"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1399"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 3,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "66"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "66"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "66"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 4,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "129"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "129"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "129"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "660"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 5,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "112"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "112"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "112"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "129"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 6,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "746"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "746"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "746"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "112"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 7,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1029"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1029"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1029"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "346 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 9,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "157"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "157"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "157"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "1",
+     "1348 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 10,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "196"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "196"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "196"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "154"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 11,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "124"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "124"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "124"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "196"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 12,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "108"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "108"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "108"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "101 [angeschnitten]"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 13,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "124"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "124"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "124"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "124"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 14,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "186"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "186"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "186"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "108"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 15,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "235"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "235"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "235"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "134"
+    ]
+   }
+  },
+  {
+   "page": 103,
+   "row": 16,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "296"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "296"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "296"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "186"
+    ]
+   }
+  },
+  {
+   "page": 104,
+   "row": 0,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "723"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "723"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "723"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "175"
+    ]
+   }
+  },
+  {
+   "page": 104,
+   "row": 2,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "724"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "724"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "724"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "224 [rot]"
+    ]
+   }
+  },
+  {
+   "page": 104,
+   "row": 3,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "725"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "725"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "725"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "123 [rot]"
+    ]
+   }
+  },
+  {
+   "page": 104,
+   "row": 17,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "297"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "297"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "297"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 104,
+   "row": 18,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "194"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "194"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "194"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "1",
+     "82"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 0,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "894",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "894"
+   },
+   "voices": {
+    "p1": [
+     "894",
+     ""
+    ],
+    "p2": [
+     "",
+     "894"
+    ],
+    "tile": [
+     "",
+     "594 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 1,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "870",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "370"
+   },
+   "voices": {
+    "p1": [
+     "870",
+     ""
+    ],
+    "p2": [
+     "",
+     "370"
+    ],
+    "tile": [
+     "",
+     "870 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 2,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "737",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "737"
+   },
+   "voices": {
+    "p1": [
+     "737",
+     ""
+    ],
+    "p2": [
+     "",
+     "737"
+    ],
+    "tile": [
+     "",
+     "737 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 3,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "865",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "265"
+   },
+   "voices": {
+    "p1": [
+     "865",
+     ""
+    ],
+    "p2": [
+     "",
+     "265"
+    ],
+    "tile": [
+     "",
+     "865 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 4,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "77",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "77"
+   },
+   "voices": {
+    "p1": [
+     "77",
+     ""
+    ],
+    "p2": [
+     "",
+     "77"
+    ],
+    "tile": [
+     "",
+     "265"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 5,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "216",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "216"
+   },
+   "voices": {
+    "p1": [
+     "216",
+     ""
+    ],
+    "p2": [
+     "",
+     "216"
+    ],
+    "tile": [
+     "",
+     "77"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 6,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "235",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "235"
+   },
+   "voices": {
+    "p1": [
+     "235",
+     ""
+    ],
+    "p2": [
+     "",
+     "235"
+    ],
+    "tile": [
+     "",
+     "216"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 7,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "294",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "294"
+   },
+   "voices": {
+    "p1": [
+     "294",
+     ""
+    ],
+    "p2": [
+     "",
+     "294"
+    ],
+    "tile": [
+     "",
+     "235"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 8,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "479",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "479"
+   },
+   "voices": {
+    "p1": [
+     "479",
+     ""
+    ],
+    "p2": [
+     "",
+     "479"
+    ],
+    "tile": [
+     "",
+     "244"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 9,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "432",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "632"
+   },
+   "voices": {
+    "p1": [
+     "432",
+     ""
+    ],
+    "p2": [
+     "",
+     "632"
+    ],
+    "tile": [
+     "",
+     "199"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 10,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "502",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "302"
+   },
+   "voices": {
+    "p1": [
+     "502",
+     ""
+    ],
+    "p2": [
+     "",
+     "302"
+    ],
+    "tile": [
+     "",
+     "195"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 11,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "704",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "704"
+   },
+   "voices": {
+    "p1": [
+     "704",
+     ""
+    ],
+    "p2": [
+     "",
+     "704"
+    ],
+    "tile": [
+     "",
+     "202"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 12,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "238",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "938"
+   },
+   "voices": {
+    "p1": [
+     "238",
+     ""
+    ],
+    "p2": [
+     "",
+     "938"
+    ],
+    "tile": [
+     "",
+     "[?]"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 13,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "335",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "335"
+   },
+   "voices": {
+    "p1": [
+     "335",
+     ""
+    ],
+    "p2": [
+     "",
+     "335"
+    ],
+    "tile": [
+     "",
+     "704"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 14,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "1243",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1245"
+   },
+   "voices": {
+    "p1": [
+     "1243",
+     ""
+    ],
+    "p2": [
+     "",
+     "1245"
+    ],
+    "tile": [
+     "",
+     "248"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 15,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "648",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "648"
+   },
+   "voices": {
+    "p1": [
+     "648",
+     ""
+    ],
+    "p2": [
+     "",
+     "648"
+    ],
+    "tile": [
+     "",
+     "355"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 16,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "1100",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1160"
+   },
+   "voices": {
+    "p1": [
+     "1100",
+     ""
+    ],
+    "p2": [
+     "",
+     "1160"
+    ],
+    "tile": [
+     "",
+     "1345"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 18,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "682",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "608"
+   },
+   "voices": {
+    "p1": [
+     "682",
+     ""
+    ],
+    "p2": [
+     "",
+     "608"
+    ],
+    "tile": [
+     "1",
+     "107 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 105,
+   "row": 19,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "1126",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1126"
+   },
+   "voices": {
+    "p1": [
+     "1126",
+     ""
+    ],
+    "p2": [
+     "",
+     "1126"
+    ],
+    "tile": [
+     "1",
+     "1149 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 0,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "652",
+   "p2": "652",
+   "tile": "632"
+  },
+  {
+   "page": 107,
+   "row": 0,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "652",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "652"
+   },
+   "voices": {
+    "p1": [
+     "652",
+     ""
+    ],
+    "p2": [
+     "652",
+     ""
+    ],
+    "tile": [
+     "",
+     "632"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 1,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "682",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "682"
+   },
+   "voices": {
+    "p1": [
+     "682",
+     ""
+    ],
+    "p2": [
+     "682",
+     ""
+    ],
+    "tile": [
+     "",
+     "682"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 2,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "706",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "706"
+   },
+   "voices": {
+    "p1": [
+     "706",
+     ""
+    ],
+    "p2": [
+     "706",
+     ""
+    ],
+    "tile": [
+     "",
+     "706"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 4,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "1 939",
+   "p2": "1 939",
+   "tile": "1206"
+  },
+  {
+   "page": 107,
+   "row": 4,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "1 939",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1 939"
+   },
+   "voices": {
+    "p1": [
+     "1 939",
+     ""
+    ],
+    "p2": [
+     "1 939",
+     ""
+    ],
+    "tile": [
+     "",
+     "1206"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 5,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "1 838",
+   "p2": "1 838",
+   "tile": "989"
+  },
+  {
+   "page": 107,
+   "row": 5,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "1 838",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1 838"
+   },
+   "voices": {
+    "p1": [
+     "1 838",
+     ""
+    ],
+    "p2": [
+     "1 838",
+     ""
+    ],
+    "tile": [
+     "1",
+     "989"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 6,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "672",
+   "p2": "672",
+   "tile": "528"
+  },
+  {
+   "page": 107,
+   "row": 6,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "672",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "672"
+   },
+   "voices": {
+    "p1": [
+     "672",
+     ""
+    ],
+    "p2": [
+     "672",
+     ""
+    ],
+    "tile": [
+     "1",
+     "528"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 7,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "944",
+   "p2": "944",
+   "tile": "677"
+  },
+  {
+   "page": 107,
+   "row": 7,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "944",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "944"
+   },
+   "voices": {
+    "p1": [
+     "944",
+     ""
+    ],
+    "p2": [
+     "944",
+     ""
+    ],
+    "tile": [
+     "",
+     "677"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 8,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "1 355",
+   "p2": "1 355",
+   "tile": "304"
+  },
+  {
+   "page": 107,
+   "row": 8,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "1 355",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1 355"
+   },
+   "voices": {
+    "p1": [
+     "1 355",
+     ""
+    ],
+    "p2": [
+     "1 355",
+     ""
+    ],
+    "tile": [
+     "",
+     "304"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 9,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "114",
+   "p2": "114",
+   "tile": "333"
+  },
+  {
+   "page": 107,
+   "row": 9,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "114",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "114"
+   },
+   "voices": {
+    "p1": [
+     "114",
+     ""
+    ],
+    "p2": [
+     "114",
+     ""
+    ],
+    "tile": [
+     "1",
+     "333"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 11,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "669",
+   "p2": "669",
+   "tile": "259"
+  },
+  {
+   "page": 107,
+   "row": 11,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "669",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "669"
+   },
+   "voices": {
+    "p1": [
+     "669",
+     ""
+    ],
+    "p2": [
+     "669",
+     ""
+    ],
+    "tile": [
+     "",
+     "259"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 15,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "+ 746",
+   "p2": "+ 746",
+   "tile": "380 [gestrichen]"
+  },
+  {
+   "page": 107,
+   "row": 15,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "+ 746",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "+ 746"
+   },
+   "voices": {
+    "p1": [
+     "+ 746",
+     ""
+    ],
+    "p2": [
+     "+ 746",
+     ""
+    ],
+    "tile": [
+     "",
+     "380 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 17,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "164",
+   "p2": "164",
+   "tile": "1.176 [gestrichen]"
+  },
+  {
+   "page": 107,
+   "row": 17,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "164",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "164"
+   },
+   "voices": {
+    "p1": [
+     "164",
+     ""
+    ],
+    "p2": [
+     "164",
+     ""
+    ],
+    "tile": [
+     "",
+     "1.176 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 18,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "60",
+   "p2": "60",
+   "tile": "1.329 [gestrichen]"
+  },
+  {
+   "page": 107,
+   "row": 18,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "60",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "60"
+   },
+   "voices": {
+    "p1": [
+     "60",
+     ""
+    ],
+    "p2": [
+     "60",
+     ""
+    ],
+    "tile": [
+     "",
+     "1.329 [gestrichen]"
+    ]
+   }
+  },
+  {
+   "page": 107,
+   "row": 19,
+   "type": "digit_mismatch",
+   "field": "klafter",
+   "p1": "92",
+   "p2": "92",
+   "tile": "764"
+  },
+  {
+   "page": 107,
+   "row": 19,
+   "type": "jk_correction",
+   "rule": "v86-tiles-jk",
+   "old": {
+    "jaethe": "92",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "92"
+   },
+   "voices": {
+    "p1": [
+     "92",
+     ""
+    ],
+    "p2": [
+     "92",
+     ""
+    ],
+    "tile": [
+     "",
+     "764"
+    ]
+   }
+  },
+  {
+   "page": 108,
+   "row": 0,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "490"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "490"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "490"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "190"
+    ]
+   }
+  },
+  {
+   "page": 108,
+   "row": 1,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "459"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "459"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "459"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "429"
+    ]
+   }
+  },
+  {
+   "page": 108,
+   "row": 3,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "39"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "39"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "39"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "11",
+     "39"
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 3,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "795"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "795"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "795"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "1",
+     "1035 [?]"
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "710"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "710"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "710"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "1",
+     "35"
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 7,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1270"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1270"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1270"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 8,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1192"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1192"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1192"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "710"
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 9,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "1050"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1050"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "1050"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "928"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "928"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "928"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "1170"
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 11,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "786"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "786"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "786"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "818"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "818"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "818"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "1192"
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 13,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "811"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "811"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "811"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "800"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "800"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "800"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     "1250"
+    ]
+   }
+  },
+  {
+   "page": 109,
+   "row": 17,
+   "type": "jk_correction",
+   "rule": "v86-tiles-arbitrated",
+   "old": {
+    "jaethe": "",
+    "klafter": "973"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "973"
+   },
+   "voices": {
+    "p1": [
+     "",
+     "973"
+    ],
+    "p2": [
+     "",
+     ""
+    ],
+    "tile": [
+     "",
+     ""
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Lauffstecher Maly",
+   "stand": "Bauer",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "~",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Leinig Gorgy",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 1 name: Lauffstecher Maly (first name could be Maly or similar)",
+  "Row 2 name: Lauffstecher [?]"
+ ],
+ "observations": "The 'Haus Nro.' column is not visible in this slice. The header row 'DesEigenthümers' and sub-headers are printed. Row 1: Name appears to be 'Lauffstecher Maly' with status 'Bauer'. Row 2: Ditto marks for both name and status, but the first name is written out again as 'Lauffstecher' followed by an unclear surname. Row 3: Name is 'Leinig Gorgy' (or Georg) with ditto for status. Row 4: Only the bottom edge is visible showing a ditto mark in the status column."
+}

@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "haus_no": "29",
+      "name": "Millea Vincenz",
+      "stand": "L[?]",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "29",
+      "name": "Millea Vincenz",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "21",
+      "name": "Gavhega Miha",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "64",
+      "name": "Gavhega Gregor",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "0 stand: L[?] (likely 'Lien' or 'Lium', cut off)",
+    "1 name: 'Vincenz' is a reading of the Kurrent script, could be 'Vincenç'"
+  ],
+  "observations": "The 'Stand' column for row 0 appears to start with an 'L' but is cut off by the right edge. Rows 1-3 use ditto marks (small dashes) in the 'Stand' column. The image cuts off after house number 64."
+}

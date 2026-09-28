@@ -1,0 +1,67 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Khunertshofe",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Pritscherhofe",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Unlich Mühle",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Unlich Mühle",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Krukenhofe",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Unlich Mühle",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Unlich Gerg",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Unlich Gorg",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 1 name: Khunertshofe (spelling of first part unclear)",
+  "Row 2 name: Pritscherhofe (first letter could be D or P)",
+  "Row 7-8 name: Unlich Gerg/Gorg (surname spelling unclear)"
+ ],
+ "observations": "Columns 'Stand.' and 'Wohnort' are empty in all visible rows. The 'Haus Nro.' column is not visible in this slice. Names appear to be farm/property names (indicated by '-hofe', 'Mühle'). Last row is cut off at the bottom."
+}
