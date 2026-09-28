@@ -3658,9 +3658,9 @@ export const OBJECT_BIOGRAPHIES: ObjectBiography[] = [
         yearLabelEn: "1468",
         sortYear: 1468,
         textSi:
-          "Prva pisana omemba vasi; ime iz staroslovanskega gribljati — brazdati, orati: spomin na prvi plug skozi gozd.",
+          "Prva pisana omemba vasi; ime, ki ga najrazširjena razlaga izpeljuje iz staroslovanskega gribljati — brazdati, orati: spomin na prvi plug skozi gozd (izvor imena je predmet jezikoslovne razprave).",
         textEn:
-          "The first written mention of the village; the name from the Old Slavic gribljati — to furrow, to plough: the memory of the first plough through the forest.",
+          "The first written mention of the village; the name that the most widespread explanation derives from the Old Slavic gribljati — to furrow, to plough: the memory of the first plough through the forest (the origin of the name is the subject of a linguistic debate).",
         evidenceStatus: "DOCUMENTED",
         sourceIndex: 0,
       },
