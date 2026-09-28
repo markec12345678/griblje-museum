@@ -7,7 +7,7 @@
   "anchors_v61": 13,
   "anchors_v85": 7,
   "joch_qkl": 1600,
-  "tile_full_pages": 40
+  "tile_full_pages": 55
  },
  "chain": [
   {
@@ -260,13 +260,17 @@
   },
   {
    "page": 102,
-   "strict": [],
-   "n_strict_voices": 0
+   "strict": [
+    100
+   ],
+   "n_strict_voices": 1
   },
   {
    "page": 103,
-   "strict": [],
-   "n_strict_voices": 0
+   "strict": [
+    101
+   ],
+   "n_strict_voices": 1
   },
   {
    "page": 104,
@@ -500,7 +504,7 @@
   {
    "page": 108,
    "counter": 16,
-   "prev_strict": 90
+   "prev_strict": 101
   },
   {
    "page": 118,
@@ -1119,6 +1123,21 @@
    "verdict": "REVIEW"
   },
   {
+   "page": 98,
+   "voices_qkl": {
+    "p1": [
+     18435
+    ],
+    "p2": [
+     18435
+    ],
+    "tile": [
+     18455
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
    "page": 99,
    "voices_qkl": {
     "p1": [
@@ -1126,6 +1145,9 @@
     ],
     "p2": [
      18606
+    ],
+    "tile": [
+     19306
     ]
    },
    "verdict": "REVIEW"
@@ -1151,6 +1173,27 @@
     "p2": [
      191,
      997
+    ],
+    "tile": [
+     21697
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 103,
+   "voices_qkl": {
+    "p1": [
+     7756,
+     16168
+    ],
+    "p2": [
+     7936,
+     16168
+    ],
+    "tile": [
+     4859,
+     7980
     ]
    },
    "verdict": "REVIEW"
@@ -1163,6 +1206,9 @@
     ],
     "p2": [
      7840
+    ],
+    "tile": [
+     11396
     ]
    },
    "verdict": "REVIEW"
@@ -1188,6 +1234,24 @@
     "p2": [
      11751,
      15440
+    ],
+    "tile": [
+     12051
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 107,
+   "voices_qkl": {
+    "p1": [
+     19571
+    ],
+    "p2": [
+     19571
+    ],
+    "tile": [
+     19171
     ]
    },
    "verdict": "REVIEW"
@@ -1200,6 +1264,9 @@
     ],
     "p2": [
      24932
+    ],
+    "tile": [
+     24953
     ]
    },
    "verdict": "REVIEW"
@@ -1212,6 +1279,9 @@
     ],
     "p2": [
      26656
+    ],
+    "tile": [
+     1036
     ]
    },
    "verdict": "REVIEW"
@@ -2284,7 +2354,7 @@
    "register_qkl_total": 17978,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      1529
@@ -2305,7 +2375,7 @@
    "register_qkl_total": 12754,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      20104
@@ -2328,7 +2398,7 @@
    "register_qkl_total": 13718,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      29398
@@ -2349,13 +2419,16 @@
    "register_qkl_total": 16448,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      18435
     ],
     "p2": [
      18435
+    ],
+    "tile": [
+     18455
     ]
    },
    "register_by_kultur": {
@@ -2371,13 +2444,16 @@
    "register_qkl_total": 12170,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      10006
     ],
     "p2": [
      18606
+    ],
+    "tile": [
+     19306
     ]
    },
    "register_by_kultur": {
@@ -2392,7 +2468,7 @@
    "register_qkl_total": 13663,
    "gestrichen_rows": 0,
    "rows": 21,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      24479
@@ -2414,7 +2490,7 @@
    "register_qkl_total": 64706,
    "gestrichen_rows": 0,
    "rows": 19,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      6139,
@@ -2444,7 +2520,7 @@
    "register_qkl_total": 13819,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      897
@@ -2452,6 +2528,9 @@
     "p2": [
      191,
      997
+    ],
+    "tile": [
+     21697
     ]
    },
    "register_by_kultur": {
@@ -2459,8 +2538,8 @@
     "hutweide": 764,
     "wiese": 127
    },
-   "best_voice": "p2",
-   "best_diff": 12822,
+   "best_voice": "tile",
+   "best_diff": 7878,
    "verdict": "REVIEW"
   },
   {
@@ -2468,7 +2547,7 @@
    "register_qkl_total": 9549,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      7756,
@@ -2477,13 +2556,17 @@
     "p2": [
      7936,
      16168
+    ],
+    "tile": [
+     4859,
+     7980
     ]
    },
    "register_by_kultur": {
     "?": 9549
    },
-   "best_voice": "p2",
-   "best_diff": 1613,
+   "best_voice": "tile",
+   "best_diff": 1569,
    "verdict": "REVIEW"
   },
   {
@@ -2491,28 +2574,31 @@
    "register_qkl_total": 12815,
    "gestrichen_rows": 0,
    "rows": 21,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      22666
     ],
     "p2": [
      7840
+    ],
+    "tile": [
+     11396
     ]
    },
    "register_by_kultur": {
     "?": 12815
    },
-   "best_voice": "p2",
-   "best_diff": 4975,
+   "best_voice": "tile",
+   "best_diff": 1419,
    "verdict": "REVIEW"
   },
   {
    "page": 105,
-   "register_qkl_total": 12826,
+   "register_qkl_total": 12414,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      16964
@@ -2522,10 +2608,10 @@
     ]
    },
    "register_by_kultur": {
-    "?": 12826
+    "?": 12414
    },
    "best_voice": "p2",
-   "best_diff": 4135,
+   "best_diff": 4547,
    "verdict": "REVIEW"
   },
   {
@@ -2533,7 +2619,7 @@
    "register_qkl_total": 16914,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      17402
@@ -2541,6 +2627,9 @@
     "p2": [
      11751,
      15440
+    ],
+    "tile": [
+     12051
     ]
    },
    "register_by_kultur": {
@@ -2555,20 +2644,23 @@
    "register_qkl_total": 15185,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      19571
     ],
     "p2": [
      19571
+    ],
+    "tile": [
+     19171
     ]
    },
    "register_by_kultur": {
     "?": 15185
    },
-   "best_voice": "p1",
-   "best_diff": 4386,
+   "best_voice": "tile",
+   "best_diff": 3986,
    "verdict": "REVIEW"
   },
   {
@@ -2576,13 +2668,16 @@
    "register_qkl_total": 14199,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      24952
     ],
     "p2": [
      24932
+    ],
+    "tile": [
+     24953
     ]
    },
    "register_by_kultur": {
@@ -2600,20 +2695,23 @@
    "register_qkl_total": 13752,
    "gestrichen_rows": 0,
    "rows": 20,
-   "tile_full": false,
+   "tile_full": true,
    "voices_qkl_total": {
     "p1": [
      26636
     ],
     "p2": [
      26656
+    ],
+    "tile": [
+     1036
     ]
    },
    "register_by_kultur": {
     "?": 13752
    },
-   "best_voice": "p1",
-   "best_diff": 12884,
+   "best_voice": "tile",
+   "best_diff": 12716,
    "verdict": "REVIEW"
   },
   {

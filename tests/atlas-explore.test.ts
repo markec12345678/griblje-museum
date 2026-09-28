@@ -285,7 +285,7 @@ describe("parcel sloj: filtri (§19: način + raba + besedilo)", () => {
 describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
   test("parcelLandUseCounts čez KG = registrirane resnice val 89 (projekcija 143/143)", () => {
     const features = parcelFeatures();
-    expect(features).toHaveLength(2965);
+    expect(features).toHaveLength(2933);
     const buckets = parcelExploreCounts(features as ExploreParcel[], "all", "all", "").buckets as Record<LandUseBucket, number>;
     expect(buckets.njiva).toBe(297);
     expect(buckets.travnik).toBe(97);
@@ -296,7 +296,7 @@ describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
     expect(buckets["vinograd"]).toBe(1); // val 89: nova EXACT kategorija (Reb/Weingarten)
     expect(buckets.drugo).toBe(11);
     expect(buckets.UNKNOWN).toBe(333);
-    expect(buckets.NONE).toBe(2171); // 2035 PUA + 136 PS brez kultur zapisa
+    expect(buckets.NONE).toBe(2139); // 2035 PUA + 104 PS brez kultur zapisa (val 98: 136→104)
   });
 
   test("sortParcelsForBrowse: dokumentirana raba najprej, sekcije I–V, številke", () => {
@@ -320,7 +320,7 @@ describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
   test("parcelExploreCounts spoštuje kombinacijo način + raba + besedilo", () => {
     const features = parcelFeatures() as ExploreParcel[];
     const all = parcelExploreCounts(features, "all", "all", "");
-    expect(all.visible).toBe(2965);
+    expect(all.visible).toBe(2933);
     const njiva = parcelExploreCounts(features, "all", "njiva", "");
     expect(njiva.visible).toBe(297);
     const evidenced = parcelExploreCounts(features, "evidenced", "all", "");

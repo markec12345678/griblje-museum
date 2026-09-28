@@ -1,0 +1,40 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Schimeg Filho",
+   "stand": "Bauer",
+   "wohnort": "",
+   "row_cut": true
+  },
+  {
+   "haus_no": "",
+   "name": "Schimeg Gau",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Lapparg Mihlo",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Lapparg Mihlo",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "1 name: Schimeg Filho (first name could be Schimeg or similar)",
+  "2 name: Schimeg Gau (first name could be Schimeg or similar)",
+  "3 name: Lapparg Mihlo (surname could be Lapparg or Lappatz)",
+  "4 name: Lapparg Mihlo (surname could be Lapparg or Lappatz)"
+ ],
+ "observations": "The 'Stand' column uses ditto marks (\" and ') for rows 2-4. Row 1 is cut at the bottom. Row 4 is cut at the bottom. The header row 'Des Eigenthümers' with sub-headers 'Vor und Zuname' and 'Stand.' is visible at the top but not transcribed as a data row."
+}

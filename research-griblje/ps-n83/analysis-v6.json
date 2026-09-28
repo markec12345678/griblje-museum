@@ -1,15 +1,15 @@
 {
- "title": "PS N83 kolonski tile-i (kompozitni, z glavo) — 2. prehod p56–142 + vgradnja J→K (F-PV-05)",
- "val": 86,
- "date": "2026-09-27",
+ "title": "PS N83 kolonski tile-i (kompozitni, z glavo) — 2. prehod p56–142 + vgradnja J→K (F-PV-05) — val 86 (p56–94+121) + val 98/86b del 2 (p95–109; p110–142 obnovljivo ob kvoti)",
+ "val": 98,
+ "date": "2026-09-28",
  "issue": "#42 §4/§14 + #43",
  "method": {
-  "vlm_calls": 201,
+  "vlm_calls": 446,
   "errors": 0,
   "rate_429_retries": "glej tile-read-v86.log (gitignored)",
   "permanent_failures": "glej tile-read-v86.log (gitignored)",
   "tiles_total": 696,
-  "tiles_read": 201,
+  "tiles_read": 446,
   "faza_K": "kultur tile-i (kultur+jaethe+klafter ~0.53–0.73·W) × 4 pasovi (h=328, shema val 80/81/85) + glava, x2, vse strani 56–142",
   "faza_N": "name tile-i (haus+name+stand+wohnort ~0.27–0.46·W) — po kvoti; manjkajoči glas ostaja 2-glasen (PROVISIONAL)",
   "glava": "izmerjen top_rule po strani (prvo horizontalno pravilo v [30,120], fallback 50); pas 0 glavo že vsebuje",
@@ -79,9 +79,10 @@
    }
   },
   "jk_distribution_tiles_all": {
-   "only_k": 846,
-   "both": 116,
-   "none": 27
+   "only_k": 1129,
+   "both": 182,
+   "none": 50,
+   "only_j": 1
   },
   "verdikt": "kompozitni tile-i (z glavo) = stabilna struktura (dedupe rezov) + pravilna dodelitev J↔K (only_j ~0 %)"
  },
@@ -90,50 +91,50 @@
    "id_note": "val 85 nova najdba — sistemski pomik J→K; val 86 = VGRADNJA korekcije na izvor",
    "status": "VGRADJENA (register.json p56–142; snimke *_pass1_v82 + review oznake)",
    "meritev": {
-    "tile_only_j_vseh_strani": "0/989 = 0.0%",
-    "tile_only_k": "846/989 = 85.5%",
-    "tile_both": "116/989 = 11.7%"
+    "tile_only_j_vseh_strani": "1/1362 = 0.1%",
+    "tile_only_k": "1129/1362 = 82.9%",
+    "tile_both": "182/1362 = 13.4%"
    },
    "vgradnja": {
-    "jk_popravki": 287,
+    "jk_popravki": 301,
     "razdelitve_N_K": 3,
-    "arbitrirani_razkoli": 43,
-    "marker_razdelitev_izrecno": 77,
-    "marker_review_razlike": 139,
-    "razlike_v_stevilkah_flag": 248
+    "arbitrirani_razkoli": 130,
+    "marker_razdelitev_izrecno": 129,
+    "marker_review_razlike": 148,
+    "razlike_v_stevilkah_flag": 260
    }
   },
   "F-PV-04": {
    "id_note": "rešitvena pot za imena/kultur/površine (NR-14)",
-   "status": "DELNO IZVEDENA (val 86): kultur tile-i na vseh straneh; name tile-i po kvoti",
+   "status": "DELNO IZVEDENA (val 86 + val 98): kultur tile-i na 55/87 straneh; name tile-i na 56/87; p110–142 ob kvoti",
    "soglasje_3glasu": {
     "jaethe": {
-     "p1_p2": 42.1,
-     "p1_t": 2.5,
-     "p2_t": 3.0,
-     "three": 2.4,
-     "total": 806
+     "p1_p2": 35.0,
+     "p1_t": 3.3,
+     "p2_t": 3.4,
+     "three": 2.9,
+     "total": 1106
     },
     "klafter": {
-     "p1_p2": 25.9,
-     "p1_t": 2.9,
-     "p2_t": 3.2,
-     "three": 2.5,
-     "total": 806
+     "p1_p2": 29.4,
+     "p1_t": 3.8,
+     "p2_t": 4.0,
+     "three": 2.7,
+     "total": 1106
     },
     "kultur": {
-     "p1_p2": 43.5,
-     "p1_t": 20.2,
-     "p2_t": 19.9,
-     "three": 17.7,
-     "total": 806
+     "p1_p2": 33.8,
+     "p1_t": 15.2,
+     "p2_t": 15.0,
+     "three": 12.9,
+     "total": 1106
     },
     "kultur_first": {
-     "p1_p2": 49.1,
-     "p1_t": 24.6,
-     "p2_t": 25.4,
-     "three": 21.5,
-     "total": 806
+     "p1_p2": 43.9,
+     "p1_t": 21.6,
+     "p2_t": 22.1,
+     "three": 18.6,
+     "total": 1106
     }
    }
   },
@@ -148,8 +149,8 @@
   "primerjave": "research-griblje/ps-n83/band-v86/ (compare-tiles-v86.json, register-v86-changes.json)"
  },
  "next_reads": [
-  "name tile-i preostale strani (faza N, ko kvota dovoli) → imena/stand/wohnort 3. glas + owner_tile_v86 variante",
-  "Fürtrag monotona kontrola čez celo verigo (13-točkovna val 61 + v85 + v86)",
+  "86b zaključek: ~250 tile-ov p110–142 (bun tile-read-v98.mts ob kvoti; nato ponovna vgradnja po pravilih val 86/98 — build-register-v86c ali razširitev)",
+  "Fürtrag monotona kontrola čez celo verigo ob POLNI pokritosti; ročni re-read 146 digit-split vrstic (139 v88 rešenih + 7 novih)",
   "PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)",
   "PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)",
   "izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04 Δ 3 J), šolski list / SA Podzemelj / SI AS 749 / Zucchelli"

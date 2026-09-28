@@ -1,0 +1,39 @@
+{
+  "rows": [
+    {
+      "haus_no": "10",
+      "name": "J. Waffstetl Nibl",
+      "stand": "Bau",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "10",
+      "name": "Johann Waffstetl Nibl",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "6°",
+      "name": "Franzl Jha",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "6",
+      "name": "Johann Waffstetl",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "1 name: 'Nibl' or 'Mibl'?",
+    "2 name: 'Nibl' or 'Mibl'?",
+    "3 name: 'Jha' or 'Iha'?"
+  ],
+  "observations": "Row 2 and Row 4 have ditto marks (double quotes) in the Stand column, indicating same status as row above. The header 'Des Eigenthümers' is visible at top but not transcribed per rules."
+}

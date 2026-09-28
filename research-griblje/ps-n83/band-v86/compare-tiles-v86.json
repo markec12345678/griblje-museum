@@ -8,72 +8,72 @@
   "method": "kompozitni kolonski tile-i (glava + h=328, x2) — 3. glas; zlivanje 4 pasov z dedupe rezov; indeksna poravnava (zgornja→spodnja)",
   "fields": {
    "name_raw": {
-    "p1_p2": 14.6,
-    "p1_t": 2.5,
-    "p2_t": 1.9,
-    "three": 1.3,
-    "total": 157
+    "p1_p2": 16.2,
+    "p1_t": 1.6,
+    "p2_t": 1.6,
+    "three": 1.0,
+    "total": 1098
    },
    "surname": {
-    "p1_p2": 26.8,
-    "p1_t": 7.6,
-    "p2_t": 8.9,
-    "three": 5.7,
-    "total": 157
+    "p1_p2": 27.0,
+    "p1_t": 6.4,
+    "p2_t": 6.2,
+    "three": 4.0,
+    "total": 1098
    },
    "stand": {
-    "p1_p2": 13.4,
-    "p1_t": 2.5,
-    "p2_t": 1.9,
-    "three": 1.9,
-    "total": 157
+    "p1_p2": 15.8,
+    "p1_t": 4.1,
+    "p2_t": 5.6,
+    "three": 3.5,
+    "total": 1098
    },
    "wohnort": {
-    "p1_p2": 0.6,
+    "p1_p2": 4.9,
     "p1_t": 0.0,
     "p2_t": 0.0,
     "three": 0.0,
-    "total": 157
+    "total": 1098
    },
    "kultur_first": {
-    "p1_p2": 49.1,
-    "p1_t": 24.6,
-    "p2_t": 25.4,
-    "three": 21.5,
-    "total": 806
+    "p1_p2": 43.9,
+    "p1_t": 21.6,
+    "p2_t": 22.1,
+    "three": 18.6,
+    "total": 1106
    },
    "kultur": {
-    "p1_p2": 43.5,
-    "p1_t": 20.2,
-    "p2_t": 19.9,
-    "three": 17.7,
-    "total": 806
+    "p1_p2": 33.8,
+    "p1_t": 15.2,
+    "p2_t": 15.0,
+    "three": 12.9,
+    "total": 1106
    },
    "jaethe": {
-    "p1_p2": 42.1,
-    "p1_t": 2.5,
-    "p2_t": 3.0,
-    "three": 2.4,
-    "total": 806
+    "p1_p2": 35.0,
+    "p1_t": 3.3,
+    "p2_t": 3.4,
+    "three": 2.9,
+    "total": 1106
    },
    "klafter": {
-    "p1_p2": 25.9,
-    "p1_t": 2.9,
-    "p2_t": 3.2,
-    "three": 2.5,
-    "total": 806
+    "p1_p2": 29.4,
+    "p1_t": 3.8,
+    "p2_t": 4.0,
+    "three": 2.7,
+    "total": 1106
    }
   },
   "tiebreak_3rd_voice": {
-   "total": 1474,
-   "tile_third": 937,
-   "tile_p1": 29,
-   "tile_empty": 465,
-   "tile_p2": 43
+   "total": 2121,
+   "tile_third": 1281,
+   "tile_p1": 49,
+   "tile_empty": 733,
+   "tile_p2": 58
   },
   "missing_tiles": {
-   "name": 79,
-   "kultur": 47
+   "kultur": 32,
+   "name": 31
   }
  },
  "pages": [
@@ -236,7 +236,7 @@
    "page": 63,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 23,
    "per_band_kultur": [
     4,
@@ -246,7 +246,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 3
    },
    "jk_distribution_tiles": {
@@ -258,7 +258,7 @@
    "page": 64,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 23,
    "per_band_kultur": [
     4,
@@ -268,7 +268,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 3
    },
    "jk_distribution_tiles": {
@@ -280,7 +280,7 @@
    "page": 65,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 23,
    "per_band_kultur": [
     5,
@@ -290,7 +290,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 3
    },
    "jk_distribution_tiles": {
@@ -302,7 +302,7 @@
    "page": 66,
    "rows1": 20,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     5,
@@ -312,7 +312,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 6
    },
    "jk_distribution_tiles": {
@@ -325,7 +325,7 @@
    "page": 67,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 21,
    "per_band_kultur": [
     4,
@@ -335,7 +335,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 1
    },
    "jk_distribution_tiles": {
@@ -346,7 +346,7 @@
    "page": 68,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 25,
    "per_band_kultur": [
     5,
@@ -356,7 +356,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -369,7 +369,7 @@
    "page": 69,
    "rows1": 21,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 21,
    "tiles_kultur_n": 25,
    "per_band_kultur": [
     4,
@@ -379,7 +379,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
+    "name": 0,
     "kultur": 4
    },
    "jk_distribution_tiles": {
@@ -392,7 +392,7 @@
    "page": 70,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 25,
    "per_band_kultur": [
     4,
@@ -402,7 +402,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -414,7 +414,7 @@
    "page": 71,
    "rows1": 21,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     5,
@@ -424,7 +424,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
+    "name": -1,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -437,7 +437,7 @@
    "page": 72,
    "rows1": 21,
    "rows2": 22,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     4,
@@ -447,7 +447,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
+    "name": -1,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -459,7 +459,7 @@
    "page": 73,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 23,
    "per_band_kultur": [
     4,
@@ -469,7 +469,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 3
    },
    "jk_distribution_tiles": {
@@ -481,7 +481,7 @@
    "page": 74,
    "rows1": 21,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 27,
    "per_band_kultur": [
     5,
@@ -491,7 +491,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
+    "name": -1,
     "kultur": 6
    },
    "jk_distribution_tiles": {
@@ -504,7 +504,7 @@
    "page": 75,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     4,
@@ -514,7 +514,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 6
    },
    "jk_distribution_tiles": {
@@ -526,7 +526,7 @@
    "page": 76,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 25,
    "per_band_kultur": [
     5,
@@ -536,7 +536,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -549,7 +549,7 @@
    "page": 77,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 24,
    "per_band_kultur": [
     4,
@@ -559,7 +559,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 4
    },
    "jk_distribution_tiles": {
@@ -571,7 +571,7 @@
    "page": 78,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     5,
@@ -581,7 +581,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 6
    },
    "jk_distribution_tiles": {
@@ -593,7 +593,7 @@
    "page": 79,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 22,
    "tiles_kultur_n": 27,
    "per_band_kultur": [
     5,
@@ -603,7 +603,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 2,
     "kultur": 7
    },
    "jk_distribution_tiles": {
@@ -616,7 +616,7 @@
    "page": 80,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     5,
@@ -626,7 +626,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 6
    },
    "jk_distribution_tiles": {
@@ -639,7 +639,7 @@
    "page": 81,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 25,
    "per_band_kultur": [
     4,
@@ -649,7 +649,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -661,7 +661,7 @@
    "page": 82,
    "rows1": 20,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 24,
    "per_band_kultur": [
     5,
@@ -671,7 +671,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 4
    },
    "jk_distribution_tiles": {
@@ -684,7 +684,7 @@
    "page": 83,
    "rows1": 21,
    "rows2": 22,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 27,
    "per_band_kultur": [
     5,
@@ -694,7 +694,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
+    "name": -1,
     "kultur": 6
    },
    "jk_distribution_tiles": {
@@ -707,7 +707,7 @@
    "page": 84,
    "rows1": 21,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     4,
@@ -717,7 +717,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
+    "name": -2,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -730,7 +730,7 @@
    "page": 85,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 26,
    "per_band_kultur": [
     5,
@@ -740,7 +740,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 6
    },
    "jk_distribution_tiles": {
@@ -753,7 +753,7 @@
    "page": 86,
    "rows1": 20,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 24,
    "per_band_kultur": [
     4,
@@ -763,7 +763,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 4
    },
    "jk_distribution_tiles": {
@@ -776,7 +776,7 @@
    "page": 87,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 23,
    "per_band_kultur": [
     4,
@@ -786,7 +786,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 3
    },
    "jk_distribution_tiles": {
@@ -798,7 +798,7 @@
    "page": 88,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 21,
    "tiles_kultur_n": 24,
    "per_band_kultur": [
     4,
@@ -808,7 +808,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 1,
     "kultur": 4
    },
    "jk_distribution_tiles": {
@@ -820,7 +820,7 @@
    "page": 89,
    "rows1": 20,
    "rows2": 21,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 25,
    "per_band_kultur": [
     4,
@@ -830,7 +830,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": 0,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -842,7 +842,7 @@
    "page": 90,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 23,
    "per_band_kultur": [
     4,
@@ -852,7 +852,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 3
    },
    "jk_distribution_tiles": {
@@ -865,7 +865,7 @@
    "page": 91,
    "rows1": 23,
    "rows2": 22,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 24,
    "per_band_kultur": [
     5,
@@ -875,7 +875,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -23,
+    "name": -4,
     "kultur": 1
    },
    "jk_distribution_tiles": {
@@ -888,7 +888,7 @@
    "page": 92,
    "rows1": 19,
    "rows2": 19,
-   "tiles_name_n": 0,
+   "tiles_name_n": 20,
    "tiles_kultur_n": 24,
    "per_band_kultur": [
     5,
@@ -898,7 +898,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -19,
+    "name": 1,
     "kultur": 5
    },
    "jk_distribution_tiles": {
@@ -911,7 +911,7 @@
    "page": 93,
    "rows1": 20,
    "rows2": 19,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 29,
    "per_band_kultur": [
     4,
@@ -921,7 +921,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 9
    },
    "jk_distribution_tiles": {
@@ -934,7 +934,7 @@
    "page": 94,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 22,
    "per_band_kultur": [
     4,
@@ -944,7 +944,7 @@
    ],
    "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": 2
    },
    "jk_distribution_tiles": {
@@ -957,292 +957,348 @@
    "page": 95,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 21,
+   "tiles_kultur_n": 23,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    8,
+    9,
+    2
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 1,
+    "kultur": 3
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 17,
+    "both": 6
+   }
   },
   {
    "page": 96,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 21,
+   "tiles_kultur_n": 24,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    8,
+    3
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 1,
+    "kultur": 4
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 22,
+    "none": 1,
+    "both": 1
+   }
   },
   {
    "page": 97,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 23,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    8,
+    8,
+    3
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 0,
+    "kultur": 3
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 19,
+    "both": 4
+   }
   },
   {
    "page": 98,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 19,
+   "tiles_kultur_n": 24,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    8,
+    3
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": -1,
+    "kultur": 4
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 22,
+    "both": 2
+   }
   },
   {
    "page": 99,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 24,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    9,
+    2
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 0,
+    "kultur": 4
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 20,
+    "both": 3,
+    "none": 1
+   }
   },
   {
    "page": 100,
    "rows1": 21,
    "rows2": 21,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 26,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    5,
+    8,
+    9,
+    4
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
-    "kultur": -21
+    "name": -1,
+    "kultur": 5
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "both": 7,
+    "only_k": 19
+   }
   },
   {
    "page": 101,
    "rows1": 19,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 25,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    8,
+    4
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -19,
-    "kultur": -19
+    "name": 1,
+    "kultur": 6
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 18,
+    "both": 6,
+    "none": 1
+   }
   },
   {
    "page": 102,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 23,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    10,
+    8,
+    2
    ],
-   "dedupe_kultur": 0,
+   "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 0,
+    "kultur": 3
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "both": 4,
+    "only_k": 19
+   }
   },
   {
    "page": 103,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 19,
+   "tiles_kultur_n": 24,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    8,
+    3
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": -1,
+    "kultur": 4
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 16,
+    "none": 3,
+    "both": 5
+   }
   },
   {
    "page": 104,
    "rows1": 21,
    "rows2": 21,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 21,
+   "tiles_kultur_n": 29,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    14,
+    8,
+    3
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -21,
-    "kultur": -21
+    "name": 0,
+    "kultur": 8
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 19,
+    "both": 5,
+    "none": 5
+   }
   },
   {
    "page": 105,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 24,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    8,
+    3
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 0,
+    "kultur": 4
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 21,
+    "none": 1,
+    "both": 2
+   }
   },
   {
    "page": 106,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 26,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    10,
+    9,
+    3
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 0,
+    "kultur": 6
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 22,
+    "none": 1,
+    "both": 3
+   }
   },
   {
    "page": 107,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 20,
+   "tiles_kultur_n": 25,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    10,
+    3
    ],
-   "dedupe_kultur": 0,
+   "dedupe_kultur": 1,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 0,
+    "kultur": 5
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 20,
+    "both": 3,
+    "none": 2
+   }
   },
   {
    "page": 108,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 21,
+   "tiles_kultur_n": 23,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    9,
+    8,
+    2
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": 1,
+    "kultur": 3
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "only_k": 15,
+    "both": 6,
+    "only_j": 1,
+    "none": 1
+   }
   },
   {
    "page": 109,
    "rows1": 20,
    "rows2": 19,
-   "tiles_name_n": 0,
-   "tiles_kultur_n": 0,
+   "tiles_name_n": 19,
+   "tiles_kultur_n": 30,
    "per_band_kultur": [
-    null,
-    null,
-    null,
-    null
+    4,
+    15,
+    9,
+    2
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
-    "kultur": -20
+    "name": -1,
+    "kultur": 10
    },
-   "jk_distribution_tiles": {}
+   "jk_distribution_tiles": {
+    "both": 9,
+    "only_k": 14,
+    "none": 7
+   }
   },
   {
    "page": 110,
    "rows1": 20,
    "rows2": 20,
-   "tiles_name_n": 0,
+   "tiles_name_n": 19,
    "tiles_kultur_n": 0,
    "per_band_kultur": [
     null,
@@ -1252,7 +1308,7 @@
    ],
    "dedupe_kultur": 0,
    "count_delta": {
-    "name": -20,
+    "name": -1,
     "kultur": -20
    },
    "jk_distribution_tiles": {}
@@ -10574,6 +10630,3417 @@
    "tile": "wiese"
   },
   {
+   "page": 95,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "ackerland",
+   "tile": "lößig"
+  },
+  {
+   "page": 95,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1919"
+  },
+  {
+   "page": 95,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wiese",
+   "tile": "leichte"
+  },
+  {
+   "page": 95,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "leichte"
+  },
+  {
+   "page": 95,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "1915",
+   "p2": "1215",
+   "tile": "1215"
+  },
+  {
+   "page": 95,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "leichte"
+  },
+  {
+   "page": 95,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1723",
+   "p2": "1123",
+   "tile": "1128"
+  },
+  {
+   "page": 95,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wald",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 4,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 95,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hutweide",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "242",
+   "p2": "742",
+   "tile": "294"
+  },
+  {
+   "page": 95,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hofraithe",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "gartn",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 7,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 95,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "829",
+   "p2": "859",
+   "tile": "1196"
+  },
+  {
+   "page": 95,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "reb",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 9,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "214",
+   "p2": "314",
+   "tile": "597"
+  },
+  {
+   "page": 95,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "283",
+   "p2": "293",
+   "tile": "216"
+  },
+  {
+   "page": 95,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hutweide",
+   "tile": "garten"
+  },
+  {
+   "page": 95,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wald",
+   "tile": "acker"
+  },
+  {
+   "page": 95,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_p2",
+   "p1": "",
+   "p2": "acker",
+   "tile": "acker"
+  },
+  {
+   "page": 95,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1844",
+   "p2": "1847",
+   "tile": "10.40"
+  },
+  {
+   "page": 95,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wald",
+   "tile": "acker"
+  },
+  {
+   "page": 95,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "708",
+   "p2": "765",
+   "tile": "1301"
+  },
+  {
+   "page": 95,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_p2",
+   "p1": "",
+   "p2": "acker",
+   "tile": "acker"
+  },
+  {
+   "page": 95,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "tile_p2",
+   "p1": "",
+   "p2": "acker",
+   "tile": "acker"
+  },
+  {
+   "page": 95,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "wald"
+  },
+  {
+   "page": 95,
+   "row": 17,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "771",
+   "p2": "777",
+   "tile": "51"
+  },
+  {
+   "page": 95,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "hutweide"
+  },
+  {
+   "page": 95,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "hutweide"
+  },
+  {
+   "page": 96,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "334",
+   "p2": "324",
+   "tile": "899"
+  },
+  {
+   "page": 96,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "ackerland",
+   "tile": "hofraithe"
+  },
+  {
+   "page": 96,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "ackerland",
+   "tile": "gartn"
+  },
+  {
+   "page": 96,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "924",
+   "p2": "324",
+   "tile": "90"
+  },
+  {
+   "page": 96,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "wiese",
+   "p2": "ackerland",
+   "tile": "wiese"
+  },
+  {
+   "page": 96,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1614",
+   "p2": "1644",
+   "tile": "324"
+  },
+  {
+   "page": 96,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1266",
+   "p2": "1264",
+   "tile": "1621"
+  },
+  {
+   "page": 96,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "ackerland",
+   "tile": "hutweide"
+  },
+  {
+   "page": 96,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "ackerland",
+   "tile": "hutweide"
+  },
+  {
+   "page": 97,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 97,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 97,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 97,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 97,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "406",
+   "p2": "404",
+   "tile": "40[?]"
+  },
+  {
+   "page": 97,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1649",
+   "p2": "164",
+   "tile": "166"
+  },
+  {
+   "page": 97,
+   "row": 11,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "2"
+  },
+  {
+   "page": 97,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 97,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 97,
+   "row": 13,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 97,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "663",
+   "p2": "669",
+   "tile": "811"
+  },
+  {
+   "page": 97,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 97,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "178",
+   "p2": "738",
+   "tile": "663"
+  },
+  {
+   "page": 97,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wald"
+  },
+  {
+   "page": 97,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "gartn"
+  },
+  {
+   "page": 97,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "rebberg"
+  },
+  {
+   "page": 97,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 97,
+   "row": 18,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 97,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "687",
+   "p2": "887",
+   "tile": "1029"
+  },
+  {
+   "page": 97,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 98,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "524",
+   "p2": "",
+   "tile": "524"
+  },
+  {
+   "page": 98,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "490",
+   "p2": "",
+   "tile": "490"
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "acker",
+   "p2": "hutweide",
+   "tile": "acker"
+  },
+  {
+   "page": 98,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "952",
+   "p2": "",
+   "tile": "352"
+  },
+  {
+   "page": 98,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "1536",
+   "p2": "",
+   "tile": "1536 [angeschnitten]"
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1922",
+   "p2": "",
+   "tile": "1536"
+  },
+  {
+   "page": 98,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "73",
+   "p2": "",
+   "tile": "992"
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "737",
+   "p2": "",
+   "tile": "931"
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "737",
+   "tile": "1"
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "389",
+   "p2": "",
+   "tile": "79"
+  },
+  {
+   "page": 98,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "661",
+   "p2": "",
+   "tile": "737"
+  },
+  {
+   "page": 98,
+   "row": 9,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1188",
+   "p2": "",
+   "tile": "389"
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "558",
+   "p2": "",
+   "tile": "661"
+  },
+  {
+   "page": 98,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1288"
+  },
+  {
+   "page": 98,
+   "row": 12,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1278",
+   "p2": "",
+   "tile": "160 [angeschnitten]"
+  },
+  {
+   "page": 98,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "171",
+   "p2": "",
+   "tile": "856"
+  },
+  {
+   "page": 98,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1287",
+   "p2": "",
+   "tile": "486"
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1209",
+   "p2": "",
+   "tile": "678"
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "594",
+   "p2": "",
+   "tile": "1 774"
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1163",
+   "p2": "",
+   "tile": "1387"
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "868",
+   "p2": "",
+   "tile": "1209"
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_p2",
+   "p1": "",
+   "p2": "acker",
+   "tile": "acker"
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "835",
+   "p2": "",
+   "tile": "996"
+  },
+  {
+   "page": 99,
+   "row": 5,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 99,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "694",
+   "p2": "696",
+   "tile": "380"
+  },
+  {
+   "page": 99,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1429",
+   "p2": "1421",
+   "tile": "689"
+  },
+  {
+   "page": 99,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "26",
+   "p2": "24",
+   "tile": "392"
+  },
+  {
+   "page": 99,
+   "row": 16,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 99,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1392",
+   "p2": "1393",
+   "tile": "120"
+  },
+  {
+   "page": 100,
+   "row": 5,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 100,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "859",
+   "p2": "829",
+   "tile": "244"
+  },
+  {
+   "page": 100,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "ackerland",
+   "tile": "acker"
+  },
+  {
+   "page": 100,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "990",
+   "p2": "490",
+   "tile": "724"
+  },
+  {
+   "page": 100,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "586",
+   "p2": "561",
+   "tile": "1067"
+  },
+  {
+   "page": 101,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "brache"
+  },
+  {
+   "page": 101,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "654",
+   "p2": "",
+   "tile": "654"
+  },
+  {
+   "page": 101,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "",
+   "tile": "brache"
+  },
+  {
+   "page": 101,
+   "row": 1,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "634",
+   "tile": "."
+  },
+  {
+   "page": 101,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "375",
+   "p2": "",
+   "tile": "375"
+  },
+  {
+   "page": 101,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hutweide",
+   "p2": "",
+   "tile": "grasln"
+  },
+  {
+   "page": 101,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "168",
+   "p2": "",
+   "tile": "168"
+  },
+  {
+   "page": 101,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wald",
+   "p2": "",
+   "tile": "brache"
+  },
+  {
+   "page": 101,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "2 1160",
+   "p2": "",
+   "tile": "2 1160 [angeschnitten]"
+  },
+  {
+   "page": 101,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hofraithen",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 101,
+   "row": 4,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "2 1160",
+   "tile": "2"
+  },
+  {
+   "page": 101,
+   "row": 4,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "3 1520",
+   "p2": "",
+   "tile": "1160"
+  },
+  {
+   "page": 101,
+   "row": 5,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "3 1520",
+   "tile": "3"
+  },
+  {
+   "page": 101,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1 332",
+   "p2": "",
+   "tile": "1520"
+  },
+  {
+   "page": 101,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "reben",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 101,
+   "row": 6,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "1 332",
+   "tile": "1"
+  },
+  {
+   "page": 101,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1379",
+   "p2": "",
+   "tile": "838"
+  },
+  {
+   "page": 101,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 101,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "666",
+   "p2": "",
+   "tile": "1379"
+  },
+  {
+   "page": 101,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 101,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "39",
+   "p2": "",
+   "tile": "666"
+  },
+  {
+   "page": 101,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hutweide",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 101,
+   "row": 9,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1084",
+   "p2": "",
+   "tile": "39"
+  },
+  {
+   "page": 101,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wald",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 101,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "87",
+   "p2": "",
+   "tile": "1086"
+  },
+  {
+   "page": 101,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hofraithen",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 101,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1245",
+   "p2": "",
+   "tile": "87"
+  },
+  {
+   "page": 101,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "gartn",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 101,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "reben",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 101,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "265",
+   "p2": "",
+   "tile": "1248"
+  },
+  {
+   "page": 101,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "acker",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 101,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "311",
+   "p2": "",
+   "tile": "1353"
+  },
+  {
+   "page": 101,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 101,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "587",
+   "p2": "",
+   "tile": "268"
+  },
+  {
+   "page": 101,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hutweide",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 101,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "546",
+   "p2": "",
+   "tile": "311"
+  },
+  {
+   "page": 101,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wald",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 101,
+   "row": 17,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "670",
+   "p2": "",
+   "tile": "537 [gestrichen]"
+  },
+  {
+   "page": 101,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hofraithen",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 101,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1235",
+   "p2": "",
+   "tile": "540 [gestrichen]"
+  },
+  {
+   "page": 102,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hutweide",
+   "p2": "wiese",
+   "tile": "wiesen"
+  },
+  {
+   "page": 102,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1462",
+   "p2": "1262",
+   "tile": "1269"
+  },
+  {
+   "page": 102,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "tile_p2",
+   "p1": "hutweide",
+   "p2": "acker",
+   "tile": "acker"
+  },
+  {
+   "page": 102,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "wiese",
+   "p2": "acker",
+   "tile": "wiese"
+  },
+  {
+   "page": 102,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "127",
+   "p2": "727",
+   "tile": "1150 [gestrichen]"
+  },
+  {
+   "page": 102,
+   "row": 10,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 102,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "446",
+   "p2": "246",
+   "tile": "904"
+  },
+  {
+   "page": 103,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 103,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "64 [rot]"
+  },
+  {
+   "page": 103,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 103,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1332",
+   "p2": "",
+   "tile": "1 1232 [rot]"
+  },
+  {
+   "page": 103,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 103,
+   "row": 4,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "129",
+   "p2": "",
+   "tile": "660"
+  },
+  {
+   "page": 103,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 103,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "112",
+   "p2": "",
+   "tile": "129"
+  },
+  {
+   "page": 103,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 103,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "746",
+   "p2": "",
+   "tile": "112"
+  },
+  {
+   "page": 103,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wald"
+  },
+  {
+   "page": 103,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1029",
+   "p2": "",
+   "tile": "346 [gestrichen]"
+  },
+  {
+   "page": 103,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hofraithe"
+  },
+  {
+   "page": 103,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1544",
+   "p2": "",
+   "tile": "127 [gestrichen]"
+  },
+  {
+   "page": 103,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "gartn"
+  },
+  {
+   "page": 103,
+   "row": 9,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 103,
+   "row": 9,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "157",
+   "p2": "",
+   "tile": "1348 [gestrichen]"
+  },
+  {
+   "page": 103,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "reb"
+  },
+  {
+   "page": 103,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "196",
+   "p2": "",
+   "tile": "154"
+  },
+  {
+   "page": 103,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "124",
+   "p2": "",
+   "tile": "196"
+  },
+  {
+   "page": 103,
+   "row": 12,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "108",
+   "p2": "",
+   "tile": "101 [angeschnitten]"
+  },
+  {
+   "page": 103,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "124",
+   "p2": "",
+   "tile": "124"
+  },
+  {
+   "page": 103,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "186",
+   "p2": "",
+   "tile": "108"
+  },
+  {
+   "page": 103,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "235",
+   "p2": "",
+   "tile": "134"
+  },
+  {
+   "page": 103,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "296",
+   "p2": "",
+   "tile": "186"
+  },
+  {
+   "page": 103,
+   "row": 17,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "194",
+   "p2": "",
+   "tile": "285"
+  },
+  {
+   "page": 103,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "60",
+   "p2": "",
+   "tile": "236"
+  },
+  {
+   "page": 103,
+   "row": 19,
+   "field": "jaethe",
+   "voice": "tile_p1",
+   "p1": "1",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 103,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1507",
+   "p2": "",
+   "tile": "194"
+  },
+  {
+   "page": 104,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "723",
+   "p2": "",
+   "tile": "175"
+  },
+  {
+   "page": 104,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "707",
+   "p2": "107",
+   "tile": "107"
+  },
+  {
+   "page": 104,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "724",
+   "p2": "",
+   "tile": "224 [rot]"
+  },
+  {
+   "page": 104,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "725",
+   "p2": "",
+   "tile": "123 [rot]"
+  },
+  {
+   "page": 104,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 104,
+   "row": 4,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "759",
+   "p2": "259",
+   "tile": "729 [gestrichen]"
+  },
+  {
+   "page": 104,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 104,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "750",
+   "p2": "790",
+   "tile": "270"
+  },
+  {
+   "page": 104,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "854",
+   "p2": "824",
+   "tile": "244 [gestrichen]"
+  },
+  {
+   "page": 104,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1.862",
+   "p2": "832",
+   "tile": "570"
+  },
+  {
+   "page": 104,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "466",
+   "p2": "460",
+   "tile": "822"
+  },
+  {
+   "page": 104,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 14,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 104,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 16,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "2"
+  },
+  {
+   "page": 104,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 104,
+   "row": 18,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 104,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "194",
+   "p2": "",
+   "tile": "82"
+  },
+  {
+   "page": 104,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 104,
+   "row": 19,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "3"
+  },
+  {
+   "page": 104,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "266",
+   "p2": "261",
+   "tile": "36"
+  },
+  {
+   "page": 104,
+   "row": 20,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 105,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "lohpfühlgen"
+  },
+  {
+   "page": 105,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "894",
+   "tile": "594 [gestrichen]"
+  },
+  {
+   "page": 105,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wiese",
+   "tile": "lohpfühlgen"
+  },
+  {
+   "page": 105,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "370",
+   "tile": "870 [gestrichen]"
+  },
+  {
+   "page": 105,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hutweide",
+   "tile": "lohpfühlgen"
+  },
+  {
+   "page": 105,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "",
+   "p2": "737",
+   "tile": "737 [gestrichen]"
+  },
+  {
+   "page": 105,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hofraithen",
+   "tile": "lohpfühlgen"
+  },
+  {
+   "page": 105,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "265",
+   "tile": "865 [gestrichen]"
+  },
+  {
+   "page": 105,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "gartn",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 4,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "77",
+   "tile": "265"
+  },
+  {
+   "page": 105,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "reb",
+   "tile": "wiese"
+  },
+  {
+   "page": 105,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "216",
+   "tile": "77"
+  },
+  {
+   "page": 105,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hofraithen",
+   "tile": "hutweide"
+  },
+  {
+   "page": 105,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "235",
+   "tile": "216"
+  },
+  {
+   "page": 105,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wiese",
+   "tile": "wald"
+  },
+  {
+   "page": 105,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "294",
+   "tile": "235"
+  },
+  {
+   "page": 105,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hutweide",
+   "tile": "hofraithe"
+  },
+  {
+   "page": 105,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "479",
+   "tile": "244"
+  },
+  {
+   "page": 105,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "gartn"
+  },
+  {
+   "page": 105,
+   "row": 9,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "632",
+   "tile": "199"
+  },
+  {
+   "page": 105,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wiese",
+   "tile": "reb"
+  },
+  {
+   "page": 105,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "302",
+   "tile": "195"
+  },
+  {
+   "page": 105,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hutweide",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "704",
+   "tile": "202"
+  },
+  {
+   "page": 105,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "acker",
+   "tile": "wiese"
+  },
+  {
+   "page": 105,
+   "row": 12,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "938",
+   "tile": "[?]"
+  },
+  {
+   "page": 105,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hutweide",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "335",
+   "tile": "704"
+  },
+  {
+   "page": 105,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hofraithen",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "1245",
+   "tile": "248"
+  },
+  {
+   "page": 105,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wiese",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "648",
+   "tile": "355"
+  },
+  {
+   "page": 105,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "1160",
+   "tile": "1345"
+  },
+  {
+   "page": 105,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_p2",
+   "p1": "",
+   "p2": "acker",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 17,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "646"
+  },
+  {
+   "page": 105,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "wiese",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 18,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "682",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 105,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "608",
+   "tile": "107 [gestrichen]"
+  },
+  {
+   "page": 105,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "hutweide",
+   "tile": "acker"
+  },
+  {
+   "page": 105,
+   "row": 19,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "1126",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 105,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "1126",
+   "tile": "1149 [gestrichen]"
+  },
+  {
+   "page": 106,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 106,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 106,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 106,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 106,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "74",
+   "p2": "76",
+   "tile": "76"
+  },
+  {
+   "page": 106,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "981",
+   "p2": "981 354",
+   "tile": "74"
+  },
+  {
+   "page": 106,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "612",
+   "p2": "618",
+   "tile": "951"
+  },
+  {
+   "page": 106,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "436",
+   "p2": "936",
+   "tile": "468"
+  },
+  {
+   "page": 106,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 106,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1221",
+   "p2": "1227",
+   "tile": "236"
+  },
+  {
+   "page": 106,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "315",
+   "p2": "316",
+   "tile": "1249"
+  },
+  {
+   "page": 106,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 106,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 106,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 106,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1468",
+   "p2": "1168",
+   "tile": "187"
+  },
+  {
+   "page": 107,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "mitter"
+  },
+  {
+   "page": 107,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "632"
+  },
+  {
+   "page": 107,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "mitter"
+  },
+  {
+   "page": 107,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "682"
+  },
+  {
+   "page": 107,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "mitter"
+  },
+  {
+   "page": 107,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "706"
+  },
+  {
+   "page": 107,
+   "row": 3,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "mitter"
+  },
+  {
+   "page": 107,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "706"
+  },
+  {
+   "page": 107,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 4,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1206"
+  },
+  {
+   "page": 107,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 107,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "989"
+  },
+  {
+   "page": 107,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "528"
+  },
+  {
+   "page": 107,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "677"
+  },
+  {
+   "page": 107,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 107,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "304"
+  },
+  {
+   "page": 107,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 9,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "333"
+  },
+  {
+   "page": 107,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 107,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "114"
+  },
+  {
+   "page": 107,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 107,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "259"
+  },
+  {
+   "page": 107,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "669"
+  },
+  {
+   "page": 107,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "635"
+  },
+  {
+   "page": 107,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "380 [gestrichen]"
+  },
+  {
+   "page": 107,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "993"
+  },
+  {
+   "page": 107,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 17,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1.176 [gestrichen]"
+  },
+  {
+   "page": 107,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1.329 [gestrichen]"
+  },
+  {
+   "page": 107,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 107,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "764"
+  },
+  {
+   "page": 108,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "wiesenaht"
+  },
+  {
+   "page": 108,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "490",
+   "p2": "",
+   "tile": "190"
+  },
+  {
+   "page": 108,
+   "row": 1,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "",
+   "tile": "wiesenaht"
+  },
+  {
+   "page": 108,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "459",
+   "p2": "",
+   "tile": "429"
+  },
+  {
+   "page": 108,
+   "row": 2,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "hutweide",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 108,
+   "row": 3,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "11"
+  },
+  {
+   "page": 108,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_p1",
+   "p1": "39",
+   "p2": "",
+   "tile": "39"
+  },
+  {
+   "page": 108,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hofraithen",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 5,
+   "field": "jaethe",
+   "voice": "tile_p2",
+   "p1": "",
+   "p2": "1",
+   "tile": "1"
+  },
+  {
+   "page": 108,
+   "row": 5,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "765",
+   "p2": "1150",
+   "tile": "1150"
+  },
+  {
+   "page": 108,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "169",
+   "p2": "765",
+   "tile": "765"
+  },
+  {
+   "page": 108,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 7,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "2100",
+   "p2": "169",
+   "tile": "169"
+  },
+  {
+   "page": 108,
+   "row": 8,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hutweide",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "782",
+   "p2": "2100",
+   "tile": "720"
+  },
+  {
+   "page": 108,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 9,
+   "field": "klafter",
+   "voice": "tile_p2",
+   "p1": "179",
+   "p2": "782",
+   "tile": "782"
+  },
+  {
+   "page": 108,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "wiese",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "963",
+   "p2": "1799",
+   "tile": "779"
+  },
+  {
+   "page": 108,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 11,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "216",
+   "p2": "968",
+   "tile": "925"
+  },
+  {
+   "page": 108,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "hofraithen",
+   "p2": "",
+   "tile": "ackerland"
+  },
+  {
+   "page": 108,
+   "row": 12,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "339",
+   "p2": "226",
+   "tile": "[angeschnitten]"
+  },
+  {
+   "page": 108,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "acker",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 108,
+   "row": 13,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 108,
+   "row": 13,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "147",
+   "p2": "929",
+   "tile": "226"
+  },
+  {
+   "page": 108,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 108,
+   "row": 14,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 108,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "105",
+   "p2": "147",
+   "tile": "299"
+  },
+  {
+   "page": 108,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 108,
+   "row": 15,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "989",
+   "p2": "1085",
+   "tile": "187"
+  },
+  {
+   "page": 108,
+   "row": 16,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "acker",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 108,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "996",
+   "p2": "989",
+   "tile": "478"
+  },
+  {
+   "page": 108,
+   "row": 17,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 108,
+   "row": 17,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1282",
+   "p2": "996",
+   "tile": "989 [gestrichen]"
+  },
+  {
+   "page": 108,
+   "row": 18,
+   "field": "kultur_first",
+   "voice": "tile_p1",
+   "p1": "acker",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 108,
+   "row": 19,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "acker",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 108,
+   "row": 19,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "908",
+   "p2": "1282",
+   "tile": "1842"
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 109,
+   "row": 0,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1000"
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "field": "jaethe",
+   "voice": "tile_p1",
+   "p1": "1",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 109,
+   "row": 1,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "900",
+   "p2": "",
+   "tile": "187"
+  },
+  {
+   "page": 109,
+   "row": 2,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "437",
+   "p2": "",
+   "tile": "792"
+  },
+  {
+   "page": 109,
+   "row": 3,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 109,
+   "row": 3,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "795",
+   "p2": "",
+   "tile": "1035 [?]"
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "jaethe",
+   "voice": "tile_p1",
+   "p1": "1",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 109,
+   "row": 4,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "102",
+   "p2": "",
+   "tile": "165"
+  },
+  {
+   "page": 109,
+   "row": 5,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "field": "jaethe",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "1"
+  },
+  {
+   "page": 109,
+   "row": 6,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "710",
+   "p2": "",
+   "tile": "35"
+  },
+  {
+   "page": 109,
+   "row": 7,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wald"
+  },
+  {
+   "page": 109,
+   "row": 8,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "1192",
+   "p2": "",
+   "tile": "710"
+  },
+  {
+   "page": 109,
+   "row": 9,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "acker"
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wiese"
+  },
+  {
+   "page": 109,
+   "row": 10,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "928",
+   "p2": "",
+   "tile": "1170"
+  },
+  {
+   "page": 109,
+   "row": 11,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hutweide"
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "wald"
+  },
+  {
+   "page": 109,
+   "row": 12,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "818",
+   "p2": "",
+   "tile": "1192"
+  },
+  {
+   "page": 109,
+   "row": 13,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "gartn"
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "rebberg"
+  },
+  {
+   "page": 109,
+   "row": 14,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "800",
+   "p2": "",
+   "tile": "1250"
+  },
+  {
+   "page": 109,
+   "row": 15,
+   "field": "kultur_first",
+   "voice": "tile_third",
+   "p1": "",
+   "p2": "",
+   "tile": "hofraithe"
+  },
+  {
+   "page": 109,
+   "row": 16,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "476",
+   "p2": "",
+   "tile": "950"
+  },
+  {
+   "page": 109,
+   "row": 18,
+   "field": "klafter",
+   "voice": "tile_third",
+   "p1": "151",
+   "p2": "",
+   "tile": "780"
+  },
+  {
    "page": 121,
    "row": 0,
    "field": "kultur_first",
@@ -12223,6 +15690,13 @@
   },
   {
    "page": 95,
+   "band": 3,
+   "label": "72 Futterg.",
+   "value": "14 1529",
+   "voice": "tile_row"
+  },
+  {
+   "page": 95,
    "label": "Fuitrag",
    "value": "19",
    "voice": "p1"
@@ -12247,6 +15721,13 @@
   },
   {
    "page": 96,
+   "band": 3,
+   "label": "(brez)",
+   "value": "12 906",
+   "voice": "tile_row"
+  },
+  {
+   "page": 96,
    "label": "90 Fußtrag",
    "value": "12 904",
    "voice": "p1"
@@ -12256,6 +15737,69 @@
    "label": "90 Fürtrag",
    "value": "12 Jaethe 904 Kläfter",
    "voice": "p2"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "706",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "464",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "398",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "109",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "166",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "447",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "879",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 1,
+   "label": "(brez)",
+   "value": "2 1231",
+   "voice": "tile_row"
+  },
+  {
+   "page": 97,
+   "band": 3,
+   "label": "~",
+   "value": "11 178",
+   "voice": "tile_row"
   },
   {
    "page": 97,
@@ -12271,6 +15815,90 @@
   },
   {
    "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "1536",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "992",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "931",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "1 79",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "737",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "389",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "661",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "1288",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "label": "(brez)",
+   "value": "160 [angeschnitten]",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1 774",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 3,
+   "label": "(brez)",
+   "value": "868",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
+   "band": 3,
+   "label": "Fürtrag",
+   "value": "11 855",
+   "voice": "tile_row"
+  },
+  {
+   "page": 98,
    "label": "Findrag",
    "value": "11 835",
    "voice": "p1"
@@ -12280,6 +15908,13 @@
    "label": "Findrag",
    "value": "11 835",
    "voice": "p2"
+  },
+  {
+   "page": 99,
+   "band": 3,
+   "label": "(brez)",
+   "value": "1 478",
+   "voice": "tile_row"
   },
   {
    "page": 99,
@@ -12301,6 +15936,34 @@
   },
   {
    "page": 100,
+   "band": 0,
+   "label": "~ ~",
+   "value": "1045",
+   "voice": "tile_row"
+  },
+  {
+   "page": 100,
+   "band": 3,
+   "label": "~",
+   "value": "1 58",
+   "voice": "tile_row"
+  },
+  {
+   "page": 100,
+   "band": 3,
+   "label": "~",
+   "value": "18 42 [gestrichen]",
+   "voice": "tile_row"
+  },
+  {
+   "page": 100,
+   "band": 3,
+   "label": "(brez)",
+   "value": "13 679 [rot]",
+   "voice": "tile_row"
+  },
+  {
+   "page": 100,
    "label": "Summa",
    "value": "15 479",
    "voice": "p1"
@@ -12310,6 +15973,41 @@
    "label": "Summa",
    "value": "13 673",
    "voice": "p2"
+  },
+  {
+   "page": 101,
+   "band": 1,
+   "label": "(brez)",
+   "value": "3 1520",
+   "voice": "tile_row"
+  },
+  {
+   "page": 101,
+   "band": 3,
+   "label": "1.) D. Hümer 915. - . . .",
+   "value": "1237",
+   "voice": "tile_row"
+  },
+  {
+   "page": 101,
+   "band": 3,
+   "label": "915. - . . .",
+   "value": "9 1339",
+   "voice": "tile_row"
+  },
+  {
+   "page": 101,
+   "band": 3,
+   "label": "99) Würthg.",
+   "value": "19 306",
+   "voice": "tile_row"
+  },
+  {
+   "page": 101,
+   "band": 3,
+   "label": "(brez)",
+   "value": "17 479",
+   "voice": "tile_row"
   },
   {
    "page": 101,
@@ -12373,6 +16071,83 @@
   },
   {
    "page": 103,
+   "band": 1,
+   "label": "~ ~",
+   "value": "196",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 1,
+   "label": "(brez)",
+   "value": "101 [angeschnitten]",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "124",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "108",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "134",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "186",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "285",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "236",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1 194",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1 60",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
+   "band": 3,
+   "label": "~",
+   "value": "1 1507",
+   "voice": "tile_row"
+  },
+  {
+   "page": 103,
    "label": "101 Klufter.",
    "value": "10.168",
    "voice": "p1"
@@ -12397,6 +16172,27 @@
   },
   {
    "page": 104,
+   "band": 0,
+   "label": "~ Haug zl. Weiden",
+   "value": "2 107",
+   "voice": "tile_row"
+  },
+  {
+   "page": 104,
+   "band": 0,
+   "label": "~ Haug zl. Weiden",
+   "value": "224 [rot]",
+   "voice": "tile_row"
+  },
+  {
+   "page": 104,
+   "band": 0,
+   "label": "~ Haugg. Weid.",
+   "value": "123 [rot]",
+   "voice": "tile_row"
+  },
+  {
+   "page": 104,
    "label": "Summa",
    "value": "14 Jaethe 266",
    "voice": "p1"
@@ -12415,6 +16211,20 @@
   },
   {
    "page": 105,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1345",
+   "voice": "tile_row"
+  },
+  {
+   "page": 105,
+   "band": 3,
+   "label": "[illegible] [illegible]",
+   "value": "1 1/16k.",
+   "voice": "tile_row"
+  },
+  {
+   "page": 105,
    "label": "Summa",
    "value": "10 964",
    "voice": "p1"
@@ -12424,6 +16234,13 @@
    "label": "No. Vurtheil.",
    "value": "10.961",
    "voice": "p2"
+  },
+  {
+   "page": 106,
+   "band": 3,
+   "label": "10 Würthäuser",
+   "value": "9 1010",
+   "voice": "tile_row"
   },
   {
    "page": 106,
@@ -12445,6 +16262,27 @@
   },
   {
    "page": 107,
+   "band": 1,
+   "label": "(brez)",
+   "value": "677",
+   "voice": "tile_row"
+  },
+  {
+   "page": 107,
+   "band": 3,
+   "label": "~",
+   "value": "12",
+   "voice": "tile_row"
+  },
+  {
+   "page": 107,
+   "band": 3,
+   "label": "(brez)",
+   "value": "3",
+   "voice": "tile_row"
+  },
+  {
+   "page": 107,
    "label": "Vürrag:",
    "value": "11 1971",
    "voice": "p1"
@@ -12457,6 +16295,20 @@
   },
   {
    "page": 108,
+   "band": 0,
+   "label": "(brez)",
+   "value": "11 39",
+   "voice": "tile_row"
+  },
+  {
+   "page": 108,
+   "band": 3,
+   "label": "Furtrag.",
+   "value": "15 953",
+   "voice": "tile_row"
+  },
+  {
+   "page": 108,
    "label": "16 Fürtrg.",
    "value": "15 952",
    "voice": "p1"
@@ -12466,6 +16318,111 @@
    "label": "16 Fürtrg:",
    "value": "15 932",
    "voice": "p2"
+  },
+  {
+   "page": 109,
+   "band": 0,
+   "label": "~ ~",
+   "value": "1 187",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 0,
+   "label": "~ ~",
+   "value": "792",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 0,
+   "label": "~ ~",
+   "value": "1 1035 [?]",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 1,
+   "label": "(brez)",
+   "value": "710",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 1,
+   "label": "(brez)",
+   "value": "950",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 1,
+   "label": "(brez)",
+   "value": "780",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "811",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "810",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "839",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1 230",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1 470",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "970",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1 181",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 2,
+   "label": "(brez)",
+   "value": "1272",
+   "voice": "tile_row"
+  },
+  {
+   "page": 109,
+   "band": 3,
+   "label": "~",
+   "value": "1 401",
+   "voice": "tile_row"
   },
   {
    "page": 109,

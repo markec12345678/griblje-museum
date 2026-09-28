@@ -34,10 +34,11 @@ SRC_DOCS = [
     {"source_id": "SRC-PUA", "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer", "uodid": 373417, "docid": 41782, "pages": 49,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373417"},
     {"source_id": "SRC-PS", "label": "PS N83 — Protocol der Grund-Parcellen", "uodid": 373415, "docid": 41780, "pages": 143,
-     # KG v2.0 (val 86): pokritost po val 82/83 + val 86 kolonski tile-i 2. prehod (delna pokritost,
-    # F-PV-05 J→K vgrajena) — glej source-coverage-1825.json val 86 + ps-n83/band-v86/ + KG-F10.
+     # KG v2.0 (val 86) + KG v2.2 (val 98, 86b del 2): kolonski tile-i 2. prehod zdaj na
+    # 55/87 straneh p56–142 (p56–94+121 val 86 + p95–109 val 98; p110–142 obnovljivo ob
+    # kvoti, resumable — vzorec val 86) — glej source-coverage + ps-n83/band-v86/ + KG-F11.
      # Per-parcelne trditve ostajajo PROVISIONAL (§4 val 83); pasovni/zoom re-read (NR-14) še čaka.
-     "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic; F-PV-05 J→K vgrajena: 287+43+3 popravkov s snimkami *_pass1_v82, only_j 0,0 %; kultur/owner variante 637/153 = variant fields); p95–142 obnovljivo (kvota); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14) → name tile-i čakajo",
+     "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic) + val 98 (86b del 2) na p95–109 (+301 vrstic → 1.109 skupaj; F-PV-05 J→K vgrajena: 287+43+3+14+87 popravkov s snimkami *_pass1_v82, only_j ~0 %; kultur/owner variante 896/1.063 = variant fields); p110–142 obnovljivo ob kvoti (resumable, vzorec val 86); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373415"},
     {"source_id": "SRC-PT", "label": "PT N083 — Protocoll der Bau Parcellen", "uodid": 373416, "docid": 41781, "pages": 8,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373416"},
@@ -716,9 +717,9 @@ def main():
     }
 
     out = {
-        "val": 89,
-        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL: pokritost popolna, branja ostajajo PROVISIONAL po F-PV-04/NR-14)",
-        "title": "knowledge-graph-1825 v2.1",
+        "val": 98,
+        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno, p110–142 obnovljivo ob kvoti)",
+        "title": "knowledge-graph-1825 v2.2",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -788,6 +789,13 @@ def main():
                 "statement": "KG v1.9 (issue #43 §1): SRC-PS vozlišče coverage posodobljeno iz 'PARTIAL 55/143 (val 57/61)' na dejansko stanje po val 82/83 — vrstični prepis 143/143 (2.871 vrstic; p1–55 val 57/61 + p56–143 val 82) + neodvisen re-read p56–143 (val 83, 88 klicev, 0 napak): struktura reproducirana (1798≈1797), numerična hrbtenica ≥ 92 % (classe/capital/ertrag), imena 19,6 % / kultur 47,3 % / absolutne površine stolpčno variirajo → per-parcelne trditve ostajajo PROVISIONAL (§4) do pasovnega/zoom re-reada s kolonskimi sidri (F-PV-04, NR-14). Nodes/edges/claims/ID-ji/story_atomi NESPREMENJENI (števci 3.309/3.569/622/4 zadržani); kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage report regenerirani (kaskada story_id).",
                 "status": "RESOLVED-V84 (odprta: F-PV-04 pasovni re-read; F11 Fürtrag; F15 no_blatt)",
                 "provenance": "research-griblje/atlas-1825/source-coverage-1825.json val 83 (SRC-PS note) + ps-n83/analysis-v4.json + ps-n83/reread-v83/comparison.json (val 83); worklog Task 44 'Naslednje' #3",
+            },
+            {
+                "finding_id": "KG-F11",
+                "val": 98,
+                "statement": "KG v2.2 (86b del 2): kolonski tile-i (kompozit z glavo, F-PV-06) 2. prehod razširjen s p56–94+121 na p95–109 (+15 strani, +301 vrstic s reading_pass v86-colonial-tiles → 1.109 od 2.871); vgradnja 1:1 pravila val 86 (page-level F-PV-05, snimke *_pass1_v82): 14 v86-tiles-jk + 87 v86-tiles-arbitrated + 7 novih digit-split REVIEW + 52 izrecnih N|K na novih straneh; owner_tile_v86 variante 910 (p63–109), kultur_tile_v86 259 (skupaj 1.063/896); digit_mismatch 12; v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p1–55 + p143 nedotaknjeno; p110–142 ostaja obnovljivo ob kvoti (resumable, vzorec val 86 — čaka ~250 tile-ov). PS parcele v parcelnem registru 930 → 898 (F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Quad. Kläfter; brez kultur zapisa 136 → 104). Nodes/edges/claims/ID-ji stabilni; kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage regenerirani.",
+                "status": "RESOLVED-V98 (odprta: p110–142 tile-i ob kvoti; F-PV-04; F11 REVIEW raven; F-PV-03)",
+                "provenance": "research-griblje/raw-web-val86-2026-10/ (tile-read-v86.mts + tile-read-v98.mts, vlm-v86/ 446/696 tile-ov) + ps-n83/band-v86/register-v86b-changes.json + build-register-v86b.py (val 98)",
             },
         ],
         "provenance": {

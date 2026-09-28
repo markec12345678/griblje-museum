@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-"""Val 86 — PS N83 analysis v6: KOLONSKI TILE-i (kompozitni, z glavo) — 2. prehod p56–142
-+ VGRADNJA J→K korekcije (F-PV-05) v register.json.
+"""Val 98 (86b del 2) — PS N83 analysis v6: KOLONSKI TILE-i (kompozitni, z glavo) —
+2. prehod p56–142 + VGRADNJA J→K korekcije (F-PV-05) v register.json.
+
+Stanje po val 98: tile 3. glas na 55/87 straneh (p56–94+121 val 86; p95–109 val 98),
+vgradnja 808 → 1.109 vrstic z reading_pass v86-colonial-tiles; p110–142 obnovljivo ob
+kvoti (resumable, vzorec val 86).
 
 METODA (dopolnitev val 85 pilota):
   - kolonski tile-i: stolpčna skupina (name ~0.27–0.46·W; kultur+Flächen ~0.53–0.73·W)
@@ -25,7 +29,7 @@ OUTD = f'{REPO}/research-griblje/ps-n83'
 BD = f'{REPO}/research-griblje/raw-web-val86-2026-10'
 
 # ---------- GUARDS ----------
-for f in (f'{OUTD}/band-v86/compare-tiles-v86.json', f'{OUTD}/band-v86/register-v86-changes.json'):
+for f in (f'{OUTD}/band-v86/compare-tiles-v86.json', f'{OUTD}/band-v86/register-v86-changes.json', f'{OUTD}/band-v86/register-v86b-changes.json'):
     assert os.path.exists(f), f'guard: manjka {f}'
 reg = json.load(open(f'{OUTD}/register.json'))
 assert len(reg) == 2871, 'guard: register'
@@ -69,6 +73,16 @@ jk_marker_explicit = tally.get('v86-explicit-jk-kept', 0)
 jk_conf = tally.get('v86-confirmed-3x', 0)
 digit_mm = chg['meta'].get('digit_mismatch', 0)
 
+# val 98 (86b del 2): drugi changes file + tally združen
+chg2 = json.load(open(f'{OUTD}/band-v86/register-v86b-changes.json'))
+t2 = chg2.get('tally', {})
+jk_corr += t2.get('v86-tiles-jk', 0)
+jk_split += t2.get('v86-pass2-split', 0) + t2.get('v86-pass1-split', 0)
+jk_arb += t2.get('v86-tiles-arbitrated', 0)
+jk_marker_review += t2.get('v86-review-pass-digit-split', 0) + t2.get('v86-review-col-split', 0)
+jk_marker_explicit += t2.get('v86-explicit-jk-kept', 0)
+digit_mm += chg2.get('digit_mismatch_total', 0)
+
 # J/K razporeditev tile-ov po vseh straneh (merjeno)
 jk_sum = collections.Counter()
 for p in comp['pages']:
@@ -86,9 +100,9 @@ for f in comp.get('fuertrag', []):
         f_by_page[f['page']] = f"{f['label']}: {f['value']}"
 
 analysis = {
-    'title': 'PS N83 kolonski tile-i (kompozitni, z glavo) — 2. prehod p56–142 + vgradnja J→K (F-PV-05)',
-    'val': 86,
-    'date': '2026-09-27',
+    'title': 'PS N83 kolonski tile-i (kompozitni, z glavo) — 2. prehod p56–142 + vgradnja J→K (F-PV-05) — val 86 (p56–94+121) + val 98/86b del 2 (p95–109; p110–142 obnovljivo ob kvoti)',
+    'val': 98,
+    'date': '2026-09-28',
     'issue': '#42 §4/§14 + #43',
     'method': {
         'vlm_calls': ok_calls,
@@ -122,7 +136,7 @@ analysis = {
         },
         'F-PV-04': {
             'id_note': 'rešitvena pot za imena/kultur/površine (NR-14)',
-            'status': 'DELNO IZVEDENA (val 86): kultur tile-i na vseh straneh; name tile-i po kvoti',
+            'status': 'DELNO IZVEDENA (val 86 + val 98): kultur tile-i na 55/87 straneh; name tile-i na 56/87; p110–142 ob kvoti',
             'soglasje_3glasu': {f: stats[f] for f in ('jaethe', 'klafter', 'kultur', 'kultur_first') if stats.get(f, {}).get('total')},
         },
         'F11': {
@@ -136,8 +150,8 @@ analysis = {
         'primerjave': 'research-griblje/ps-n83/band-v86/ (compare-tiles-v86.json, register-v86-changes.json)',
     },
     'next_reads': [
-        'name tile-i preostale strani (faza N, ko kvota dovoli) → imena/stand/wohnort 3. glas + owner_tile_v86 variante',
-        'Fürtrag monotona kontrola čez celo verigo (13-točkovna val 61 + v85 + v86)',
+        '86b zaključek: ~250 tile-ov p110–142 (bun tile-read-v98.mts ob kvoti; nato ponovna vgradnja po pravilih val 86/98 — build-register-v86c ali razširitev)',
+        'Fürtrag monotona kontrola čez celo verigo ob POLNI pokritosti; ročni re-read 146 digit-split vrstic (139 v88 rešenih + 7 novih)',
         'PZ p48–65 2. prehod (protokoli + Zusammenstellung A/B — p65 REVIEW)',
         'PT p7 @300dpi (KG-F01/F04); PR Grenz-Beschreibung (F-PZ-05)',
         'izven peskovnika: zunanji Rektifikacijski protokol (F-PZ-04 Δ 3 J), šolski list / SA Podzemelj / SI AS 749 / Zucchelli',

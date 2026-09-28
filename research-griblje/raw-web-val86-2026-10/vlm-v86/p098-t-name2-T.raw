@@ -1,0 +1,67 @@
+{
+  "rows": [
+    {
+      "haus_no": "6",
+      "name": "Gering Mühle",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "4",
+      "name": "Gering Wipfel",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "6",
+      "name": "Gering Mühle",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "4",
+      "name": "Gering Wipferl",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "2",
+      "name": "Gering Mühle",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "3",
+      "name": "Gering Wolf",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "2",
+      "name": "Gering Häußler",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "3",
+      "name": "Stappler Wolf",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 1 name: Gering Mühle [?]",
+    "Row 3 name: Gering Mühle [?]",
+    "Row 5 name: Gering Mühle [?]"
+  ],
+  "observations": "The 'Stand' and 'Wohnort' columns are empty for all visible rows. The house numbers appear to be repeated (e.g., 6, 4, 6, 4), suggesting these might be parcel or sub-plot identifiers rather than unique dwelling numbers. Names are variations of 'Gering' followed by a descriptor (Mühle/Wipfel/Wolf) and one entry for 'Stappler'."
+}

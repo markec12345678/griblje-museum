@@ -158,9 +158,9 @@ describe("val 90 — reprodukcija in usklajenost (K7, K8)", () => {
 });
 
 describe("val 90 — konfunda F-PV-05 (K9) + opazovalni register (K10)", () => {
-  test("K9 pin: atribucija 100–1599 v jaethe = 323 (p1–55) / 242 (p56–143) — vsotno NEUTRALNA", () => {
+  test("K9 pin: atribucija 100–1599 v jaethe = 323 (p1–55) / 214 (p56–143; val 90: 242 → val 98: 214, mehanski premik z 101 F-PV-05 korekcijo na p95–109 — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
     expect(art["K9_konfunda_F-PV-05"].p1_55_val57["jaethe_plain_100_1599"]).toBe(323);
-    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(242);
+    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(214);
   });
 
   test("K9 pin: vsotno-relevantni razredi majhni (gt1599 29/69; jk_format 1/7)", () => {

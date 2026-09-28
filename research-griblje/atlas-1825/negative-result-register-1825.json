@@ -1,8 +1,8 @@
 {
- "val": "89",
+ "val": "98",
  "pass": 3,
  "issue": "#42 §13",
- "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi (NR-12/13/14 vgrajeni; val89 re-checki na NR-01/02/05/12)",
+ "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi (NR-12/13/14 vgrajeni; val89 re-checki na NR-01/02/05/12; regeneriran val 98)",
  "provenance": {
   "pua": "pua-n83/register.json (98 vpisov / 2.645 parcelnih referenc, val 51+57)",
   "ps": "ps-n83/register.json (2.871 vrstic / str. 3-143, val 57→61→82/83→88; 139 digit-split vrstic z v88 vrednostmi)",
@@ -34,7 +34,7 @@
    "next_source": "PS 143/143 + glava @300 dpi → ponovni deterministični test",
    "val89_recheck": {
     "pages": "s. 3-143 (celoten register)",
-    "result": "356 številčno skupnih vrednosti (od 504 unikatnih PS jaethe × 1517 unikatnih PUA števil); 0 sekcija+številka",
+    "result": "347 številčno skupnih vrednosti (od 487 unikatnih PS jaethe × 1517 unikatnih PUA števil); 0 sekcija+številka",
     "verdict": "OSTAJA NEPOTRJENO — številka sama ne nese sekcije; brez dekodiranega Flurbezirk (F14) nobeno posamezno ujemanje ni dokazljivo (ocena pričakovanja po naključju je nestabilna glede na izbrani številski prostor)"
    }
   },
@@ -134,7 +134,7 @@
    "next_source": "PS p56–p143 once VLM quota restores",
    "val89_recheck": {
     "pages": "p3–p143 (celoten register, 2.871 vrstic)",
-    "result": "NOT FOUND — 79 neštevilskih jaethe zapisov, 0 s črkovnimi imeni (možnimi toponimi); vsi so mehanske/nominalne oblike (npr. 17½, ganz, N/N)",
+    "result": "NOT FOUND — 75 neštevilskih jaethe zapisov, 0 s črkovnimi imeni (možnimi toponimi); vsi so mehanske/nominalne oblike (npr. 17½, ganz, N/N)",
     "verdict": "POTRJENO pri 143/143 — omenjeni Flurbezirki ne obstajajo"
    }
   },

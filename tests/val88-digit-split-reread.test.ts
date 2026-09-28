@@ -196,7 +196,7 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
     }
   });
 
-  test("števci markerjev: 137 RESOLVED + 2 UNRESOLVED; v86-review-pass-digit-split = 0 (vsi promovirani)", () => {
+  test("števci markerjev: 137 RESOLVED + 2 UNRESOLVED; v86-review-pass-digit-split = 7 (FRESH part-2 markerji val 98 na p95–109, part-1 vsi promovirani)", () => {
     const cnt = new Map<string, number>();
     for (const r of register) {
       const m = String(r.jk_review ?? "");
@@ -204,7 +204,10 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
     }
     expect(cnt.get("v88-digit-split-RESOLVED")).toBe(137);
     expect(cnt.get("v88-digit-split-UNRESOLVED")).toBe(2);
-    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split")).toHaveLength(0);
+    // val 98 (86b del 2): 7 novih part-2 digit-split markerjev (p95–109, čaka re-read vzorec val 88);
+    // vseh 139 part-1 markerjev je še vedno promoviranih
+    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split" && (r.page as number) <= 94)).toHaveLength(0);
+    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split")).toHaveLength(7);
   });
 });
 
@@ -218,18 +221,18 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
     }
   });
 
-  test("KG nosi val 89 projekcijo (v2.1) — j|k vrednosti ostajajo izven KG polj", () => {
-    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 je izvedel projekcijo 143/143
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^b4f5011c/);
+  test("KG nosi val 98 stanje (v2.2) — j|k vrednosti ostajajo izven KG polj", () => {
+    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad)
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^2b16acad/);
   });
 
-  test("parcelni register nosi projekcijo 143/143 (val 89: 432 → 930); negative register ostaja 14", () => {
+  test("parcelni register nosi projekcijo 143/143 + F-PV-05 korekcije (val 98: 930 → 898); negative register ostaja 14", () => {
     const pr = JSON.parse(readFileSync(join(ATLAS, "parcel-register-1825.json"), "utf8")) as {
       ps_parcels_total: number;
       val: string;
     };
-    expect(pr.ps_parcels_total).toBe(930);
-    expect(pr.val).toBe("89");
+    expect(pr.ps_parcels_total).toBe(898);
+    expect(pr.val).toBe("98");
     const nr = JSON.parse(readFileSync(join(ATLAS, "negative-result-register-1825.json"), "utf8")) as {
       negatives_total: number;
       negatives: { neg_id: string }[];
@@ -265,8 +268,8 @@ describe("val 88 — F11 (val 86b) ob v88 vrednostih", () => {
     expect(f11.link_p54_p56.first_strict_counter).toBe(56);
   });
 
-  test("3-glas REVIEW strani + aritmetika + sidra: 38 / 0 OK + 76 REVIEW / 3 od 7", () => {
-    expect(f11.voice_review.filter((v) => v.verdict === "REVIEW")).toHaveLength(38);
+  test("3-glas REVIEW strani + aritmetika + sidra: 41 / 0 OK + 76 REVIEW / 3 od 7 (val 98: 38 → 41 strani, aritmetika nespremenjena)", () => {
+    expect(f11.voice_review.filter((v) => v.verdict === "REVIEW")).toHaveLength(41);
     const ok = f11.arithmetic.filter((a) => a.verdict === "OK").length;
     const review = f11.arithmetic.filter((a) => a.verdict === "REVIEW").length;
     expect(ok).toBe(0);
