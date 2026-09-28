@@ -1,0 +1,40 @@
+{
+ "rows": [
+  {
+   "kultur": "Dürfe",
+   "jaethe": "1",
+   "klafter": "1115",
+   "row_cut": false
+  },
+  {
+   "kultur": "Steingaden",
+   "jaethe": "",
+   "klafter": "124",
+   "row_cut": false
+  },
+  {
+   "kultur": "Steingaden",
+   "jaethe": "",
+   "klafter": "164",
+   "row_cut": false
+  },
+  {
+   "kultur": "Dürfe",
+   "jaethe": "",
+   "klafter": "39",
+   "row_cut": false
+  },
+  {
+   "kultur": "Dürfe",
+   "jaethe": "",
+   "klafter": "18[?]",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 4, klafter: 39 (could be 3'9 or 39)",
+  "Row 5, klafter: 18 (last digit cut off)"
+ ],
+ "observations": "The first row has a value '1' in the Jaethe column and '1115' in the Kläfter column. All other visible rows only have values in the Kläfter column. The last row is cut off at the bottom of the image."
+}

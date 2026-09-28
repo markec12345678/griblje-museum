@@ -34,9 +34,10 @@ SRC_DOCS = [
     {"source_id": "SRC-PUA", "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer", "uodid": 373417, "docid": 41782, "pages": 49,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373417"},
     {"source_id": "SRC-PS", "label": "PS N83 — Protocol der Grund-Parcellen", "uodid": 373415, "docid": 41780, "pages": 143,
-     # KG v1.9 (val 84): pokritost po val 82/83 — glej source-coverage-1825.json val 83 + KG-F10.
+     # KG v2.0 (val 86): pokritost po val 82/83 + val 86 kolonski tile-i 2. prehod (delna pokritost,
+    # F-PV-05 J→K vgrajena) — glej source-coverage-1825.json val 86 + ps-n83/band-v86/ + KG-F10.
      # Per-parcelne trditve ostajajo PROVISIONAL (§4 val 83); pasovni/zoom re-read (NR-14) še čaka.
-     "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 neodvisno re-brano 2× (val 83): struktura 1798≈1797, numerika ≥ 92 %, imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14) → pasovni/zoom re-read s kolonskimi sidri čaka",
+     "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic; F-PV-05 J→K vgrajena: 287+43+3 popravkov s snimkami *_pass1_v82, only_j 0,0 %; kultur/owner variante 637/153 = variant fields); p95–142 obnovljivo (kvota); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14) → name tile-i čakajo",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373415"},
     {"source_id": "SRC-PT", "label": "PT N083 — Protocoll der Bau Parcellen", "uodid": 373416, "docid": 41781, "pages": 8,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373416"},
@@ -715,9 +716,9 @@ def main():
     }
 
     out = {
-        "val": 84,
-        "issue": "#43 §1 KG + §2/§6 Evidence Explorer + §3 claim-first + §8 story atoms + §9 research gaps + #42 §7 PASS 4/4b + §21 PASS 6 + §10 GEOREF v2 + §4 PV agregat + PZ Konskripcija + PZ PASS 2 (re-read p67/§8, vrata I4–I6) + KG v1.9 (SRC-PS vozlišče po val 82/83)",
-        "title": "knowledge-graph-1825 v1.9",
+        "val": 86,
+        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121)",
+        "title": "knowledge-graph-1825 v2.0",
         "findings": [
             {
                 "finding_id": "KG-F01",

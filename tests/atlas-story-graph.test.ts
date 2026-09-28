@@ -70,7 +70,7 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
   test("provenance: kg_sha256 + kg_val + deterministično + built_from = KG", () => {
     expect(graph.provenance.deterministic).toBe(true);
     expect(graph.provenance.built_from).toBe("knowledge-graph-1825.json");
-    expect(graph.provenance.kg_val).toBe(84); // KG v1.9 (val 84: SRC-PS vozlišče po val 82/83 — kaskada story_id)
+    expect(graph.provenance.kg_val).toBe(86); // KG v2.0 (val 86 vgradnja — kaskada story_id §22)
     expect(graph.provenance.kg_sha256).toMatch(/^[a-f0-9]{64}$/);
   });
 

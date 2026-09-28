@@ -452,10 +452,10 @@ describe("val 81 — PZ PASS 7 dokumentna resnica [373419]", () => {
   });
 });
 
-describe("val 77/84 — KG v1.9 + zgodba vasi", () => {
-  test("KG v1.9: SRC-PZ TRANSCRIBED_PARTIAL (val 77) + KG-F09 val 77 + KG-F10 val 84; števci stabilni", () => {
-    expect(kg.val).toBe(84);
-    expect(kg.title).toContain("v1.9");
+describe("val 77/86 — KG v2.0 + zgodba vasi", () => {
+  test("KG v2.0: SRC-PZ TRANSCRIBED_PARTIAL (val 77) + KG-F09 val 77 + KG-F10 val 84; števci stabilni", () => {
+    expect(kg.val).toBe(86);
+    expect(kg.title).toContain("v2.0");
     const srcPz = kg.nodes.find((n) => n.node_id === "SRC-PZ");
     expect(srcPz).toBeDefined();
     expect(srcPz!.coverage).toContain("TRANSCRIBED_PARTIAL");
@@ -631,7 +631,7 @@ describe("val 79 — Rektifikacija p35–42 OPISNO-KVALITATIVNA (F-PZ-16)", () =
     const rep = JSON.parse(
       readFileSync(join(REPO, "src", "data", "atlas-coverage-report-1825.json"), "utf-8")
     ) as { val: number; quality_gate: { category_id: string; native: Record<string, unknown> }[] };
-    expect(rep.val).toBe(84); // coverage report regeneriran ob KG v1.9 (val 84)
+    expect(rep.val).toBe(86); // coverage report regeneriran ob KG v2.0 (val 86)
   });
 
   test("val 80 — nativna re-digitation: odločilna miza 6/7 + val80_redigitation sekcija", () => {

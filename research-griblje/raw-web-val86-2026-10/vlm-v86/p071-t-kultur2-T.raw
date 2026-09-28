@@ -1,0 +1,64 @@
+{
+  "rows": [
+    {
+      "kultur": "Gartn.\nund\nHofraithe",
+      "jaethe": "",
+      "klafter": "814",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wiese und\nWeide",
+      "jaethe": "",
+      "klafter": "292",
+      "row_cut": false
+    },
+    {
+      "kultur": "Hofraithe\nLainwiesen",
+      "jaethe": "",
+      "klafter": "520",
+      "row_cut": false
+    },
+    {
+      "kultur": "Acker",
+      "jaethe": "",
+      "klafter": "166",
+      "row_cut": false
+    },
+    {
+      "kultur": "Hofraithe\nWiese",
+      "jaethe": "1",
+      "klafter": "101",
+      "row_cut": false
+    },
+    {
+      "kultur": "Hofraithe\nGartn.",
+      "jaethe": "",
+      "klafter": "1120",
+      "row_cut": false
+    },
+    {
+      "kultur": "Lehner",
+      "jaethe": "",
+      "klafter": "156",
+      "row_cut": false
+    },
+    {
+      "kultur": "Wald und\nLainwiesen",
+      "jaethe": "",
+      "klafter": "268",
+      "row_cut": false
+    },
+    {
+      "kultur": "Hofraite\nund Wiesen",
+      "jaethe": "",
+      "klafter": "130",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 1 kultur: Gartn. (first word is a guess)",
+    "Row 6 kultur: Gartn. (second word is a guess)"
+  ],
+  "observations": "The value '1' in row 5 is clearly in the Jaethen column, while the '101' is in the Kläfter column. The bottom row is cut off at the image edge."
+}

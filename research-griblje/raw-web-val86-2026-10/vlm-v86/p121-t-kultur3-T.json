@@ -1,0 +1,27 @@
+{
+ "rows": [
+  {
+   "kultur": "Acker\nStumfeld",
+   "jaethe": "",
+   "klafter": "1.971",
+   "row_cut": false
+  },
+  {
+   "kultur": "Wiese",
+   "jaethe": "11",
+   "klafter": "260",
+   "row_cut": false
+  },
+  {
+   "kultur": "Vortrag",
+   "jaethe": "12",
+   "klafter": "1046",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 1 kultur: 'Stumfeld' is a best guess for the second line of the land name"
+ ],
+ "observations": "The value '11' in the Jaethe column and '260' in the Kläfter column are written in red ink. The row for 'Vortrag' (total) is cut off at the bottom of the image."
+}
