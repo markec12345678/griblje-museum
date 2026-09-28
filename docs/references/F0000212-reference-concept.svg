@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f4f1e8"/>
+<text x="60" y="65" font-family="Arial" font-size="34" font-weight="700" fill="#1d2935">GRIBLJE — REFERENČNI OBJEKT F0000212</text>
+<text x="60" y="102" font-family="Arial" font-size="21" fill="#4d5963">Vizualni cilj: zgodovinski vir → hiša → kataster → lokacija → 3D → mobilni AR</text>
+<g font-family="Arial">
+  <rect x="55" y="145" width="350" height="285" rx="18" fill="#fff" stroke="#68737d" stroke-width="3"/>
+  <circle cx="90" cy="180" r="25" fill="#263746"/><text x="82" y="189" font-size="23" fill="#fff">1</text>
+  <text x="130" y="187" font-size="24" font-weight="700">ORIGINALNI VIR</text>
+  <rect x="80" y="215" width="300" height="155" fill="#ddd5c5"/>
+  <path d="M115 330 L145 285 L205 250 L300 275 L350 330 Z" fill="#81786c" stroke="#493f35" stroke-width="4"/>
+  <path d="M145 285 L205 250 L300 275" fill="none" stroke="#493f35" stroke-width="5"/>
+  <rect x="190" y="305" width="35" height="55" fill="#75614e"/><rect x="255" y="305" width="35" height="35" fill="#4c5d64"/>
+  <text x="80" y="403" font-size="18" fill="#246b4b">VERIFIED · SEM F0000212</text>
+
+  <rect x="430" y="145" width="350" height="285" rx="18" fill="#fff" stroke="#68737d" stroke-width="3"/>
+  <circle cx="465" cy="180" r="25" fill="#263746"/><text x="457" y="189" font-size="23" fill="#fff">2</text>
+  <text x="505" y="187" font-size="24" font-weight="700">IDENTIFIKACIJA HIŠE</text>
+  <line x1="475" y1="250" x2="720" y2="250" stroke="#b33" stroke-width="5"/>
+  <path d="M515 350 L545 300 L605 270 L690 295 L720 350" fill="none" stroke="#b33" stroke-width="5"/>
+  <text x="485" y="395" font-size="20" fill="#a65d00">REVIEW · hišna št. še dokazati</text>
+
+  <rect x="805" y="145" width="350" height="285" rx="18" fill="#fff" stroke="#68737d" stroke-width="3"/>
+  <circle cx="840" cy="180" r="25" fill="#263746"/><text x="832" y="189" font-size="23" fill="#fff">3</text>
+  <text x="880" y="187" font-size="24" font-weight="700">ZGODOVINSKI KATASTER</text>
+  <path d="M845 230 L1115 215 L1090 380 L825 350 Z" fill="#e5d9a8" stroke="#877b55" stroke-width="3"/>
+  <path d="M900 230 L910 360 M1000 220 L990 370 M845 300 L1105 285" stroke="#a18f62" stroke-width="2"/>
+  <rect x="940" y="270" width="65" height="55" fill="#9b8c72" stroke="#493f35" stroke-width="3"/>
+  <text x="835" y="395" font-size="20" fill="#a65d00">TO_COLLECT · parcela + odtis</text>
+
+  <rect x="1180" y="145" width="365" height="285" rx="18" fill="#fff" stroke="#68737d" stroke-width="3"/>
+  <circle cx="1215" cy="180" r="25" fill="#263746"/><text x="1207" y="189" font-size="23" fill="#fff">4</text>
+  <text x="1255" y="187" font-size="24" font-weight="700">DANAŠNJA LOKACIJA</text>
+  <rect x="1215" y="215" width="295" height="155" fill="#b9d0a3"/>
+  <path d="M1215 335 Q1300 285 1380 330 T1510 280" fill="none" stroke="#fff" stroke-width="18"/>
+  <circle cx="1360" cy="300" r="14" fill="#c33"/><path d="M1360 314 L1360 350" stroke="#c33" stroke-width="5"/>
+  <text x="1215" y="395" font-size="20" fill="#a65d00">TO_COLLECT · koordinata + CRS</text>
+
+  <path d="M405 285 L430 285 M780 285 L805 285 M1155 285 L1180 285" stroke="#263746" stroke-width="6"/>
+  <path d="M420 275 L435 285 L420 295 M795 275 L810 285 L795 295 M1170 275 L1185 285 L1170 295" fill="none" stroke="#263746" stroke-width="6"/>
+
+  <rect x="55" y="480" width="700" height="350" rx="18" fill="#203241"/>
+  <text x="85" y="525" font-size="26" font-weight="700" fill="#fff">5 · 3D ZGODOVINSKA REKONSTRUKCIJA</text>
+  <path d="M130 760 L190 660 L300 600 L525 640 L620 760 Z" fill="#d8c7a3" stroke="#fff" stroke-width="5"/>
+  <path d="M190 660 L300 600 L525 640" fill="none" stroke="#fff" stroke-width="7"/>
+  <path d="M300 600 L330 700 L620 760" fill="none" stroke="#fff" stroke-width="4"/>
+  <rect x="285" y="705" width="55" height="75" fill="#755b45" stroke="#fff" stroke-width="4"/>
+  <rect x="410" y="690" width="50" height="45" fill="#526875" stroke="#fff" stroke-width="4"/>
+  <text x="95" y="805" font-size="18" fill="#d9e5ec">Vsak del modela: DOKAZAN / IZMERJEN / REKONSTRUIRAN / NEGOTOV</text>
+
+  <rect x="790" y="480" width="755" height="350" rx="18" fill="#fff" stroke="#68737d" stroke-width="3"/>
+  <text x="820" y="525" font-size="26" font-weight="700" fill="#1d2935">6 · MOBILNI AR PRIKAZ</text>
+  <rect x="865" y="565" width="250" height="210" rx="24" fill="#202b35"/>
+  <rect x="885" y="585" width="210" height="170" fill="#a9c68f"/>
+  <path d="M900 720 L945 655 L1010 625 L1065 650 L1080 720 Z" fill="#d6c5a0" stroke="#584b3d" stroke-width="3"/>
+  <path d="M945 655 L1010 625 L1065 650" fill="none" stroke="#584b3d" stroke-width="4"/>
+  <circle cx="1005" cy="625" r="7" fill="#d33"/>
+  <text x="1145" y="600" font-size="22" font-weight="700">Telefon vidi:</text>
+  <text x="1145" y="635" font-size="19">• današnjo lokacijo</text>
+  <text x="1145" y="665" font-size="19">• zgodovinsko hišo</text>
+  <text x="1145" y="695" font-size="19">• 3D model</text>
+  <text x="1145" y="725" font-size="19">• vir in dokazila</text>
+  <text x="1145" y="755" font-size="19">• zgodovinsko obdobje</text>
+  <text x="820" y="805" font-size="19" fill="#246b4b">Cilj: GPS → georeferenciranje → 3D → AR anchor → kamera</text>
+</g>
+</svg>
