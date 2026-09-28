@@ -126,14 +126,22 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
     expect(register.filter((r) => (r.page as number) === 143).every((r) => r.reading_pass === "v82-native-pass1")).toBe(true);
   });
 
-  test("vsak v86 popravek nosi snimko jaethe/klafter_pass1_v82 (nič tihega prepisovanja)", () => {
+  test("vsak v86/v88 popravek nosi snimko jaethe/klafter_pass1_v82 (nič tihega prepisovanja)", () => {
     const v86 = register.filter((r) => r.reading_pass === "v86-colonial-tiles");
     const corrected = v86.filter((r) => "jaethe_pass1_v82" in r);
-    expect(corrected.length).toBe(287 + 43 + 3); // jk + arbitraže + N|K razdelitve
+    // val 88: 139 digit-split vrstic je dobilo snimke + v88 polja (re-read direktno branje)
+    expect(corrected.length).toBe(287 + 43 + 3 + 139); // jk + arbitraže + N|K razdelitve + v88 digit-split
     for (const r of corrected) {
       expect(typeof r.jaethe_pass1_v82).toBe("string");
       expect(typeof r.klafter_pass1_v82).toBe("string");
-      expect(["v86-tiles-jk", "v86-tiles-arbitrated", "v86-pass2-split", "v86-pass1-split"]).toContain(String(r.jk_review));
+      expect([
+        "v86-tiles-jk",
+        "v86-tiles-arbitrated",
+        "v86-pass2-split",
+        "v86-pass1-split",
+        "v88-digit-split-RESOLVED",
+        "v88-digit-split-UNRESOLVED",
+      ]).toContain(String(r.jk_review));
     }
   });
 
@@ -148,14 +156,27 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
     expect(row.jk_review).toBe("v86-tiles-jk");
   });
 
-  test("REVIEW markerji: 139 digit-split + 77 izrecnih N|K — brez spremembe vrednosti", () => {
-    expect(changes.tally["v86-review-pass-digit-split"]).toBe(139);
+  test("REVIEW markerji: 139 digit-split promoviranih v val 88 (137 RESOLVED + 2 UNRESOLVED) + 77 izrecnih N|K", () => {
+    expect(changes.tally["v86-review-pass-digit-split"]).toBe(139); // revizija val 86 nespremenjena
     expect(changes.tally["v86-explicit-jk-kept"]).toBe(77);
-    const reviewRows = register.filter((r) => r.jk_review === "v86-review-pass-digit-split");
-    expect(reviewRows.length).toBe(139);
-    for (const r of reviewRows) {
-      // vrednosti NESPREMENJENE: jaethe == snimka (če snimka obstaja — markerji brez popravkov je nimajo)
-      if ("jaethe_pass1_v82" in r) expect(String(r.jaethe)).toBe(String(r.jaethe_pass1_v82));
+    // val 88: vseh 139 digit-split vrstic promoviranih iz v86-review-pass-digit-split
+    const resolved = register.filter((r) => r.jk_review === "v88-digit-split-RESOLVED");
+    const unresolved = register.filter((r) => r.jk_review === "v88-digit-split-UNRESOLVED");
+    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split").length).toBe(0);
+    expect(resolved.length).toBe(137);
+    expect(unresolved.length).toBe(2);
+    for (const r of resolved) {
+      // v88 vrednost = novo stanje (pravilo F-PV-05: klafter:=v88, jaethe:=''; '|' = izraziti j|k);
+      // snimki pass1 + v88 glasovi ohranjeni (nič tihega prepisovanja)
+      expect(String(r.jaethe)).toBe(String(r.jaethe_v88));
+      expect(String(r.klafter)).toBe(String(r.klafter_v88));
+      expect(["P1", "P2", "T3"]).toContain(String(r.v88_status));
+    }
+    for (const r of unresolved) {
+      // UNRESOLVED: vrednosti ostajajo pass1, marker + opomba (brez ugibanja; p121 r0 = F-PV-03)
+      expect(String(r.jaethe)).toBe(String(r.jaethe_pass1_v82));
+      expect(String(r.klafter)).toBe(String(r.klafter_pass1_v82));
+      expect(String(r.v88_note)).toContain("nejasen");
     }
   });
 
