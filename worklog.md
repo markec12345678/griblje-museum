@@ -4242,6 +4242,7 @@ Work Log:
 - c4-metrika-v90.json deterministično regenerirana ob novem registru (K9 242 → 214; K1–K8+K10 verdikti NESPREMENJENI; vhodni sha256 v meta) — vzorec val 88 §4, izrecno dokumentirano
 - Testi: +13 varovalk (tests/val98-issue42-86b-part2.test.ts: fail-fast marker, točno p95–109/301, kvalifikacija 15/15, snimke+glasovi, v88 nedotaknjeno, 910 owner variant + idempotenca, p1–55/p143 guard, resumable 446/696 + 0 napak + preostanek ≥ p110, prehod 898/104, KG v2.2 + KG-F11 vsebina, kaskada sha, §4 PROVISIONAL ne-dvignjen) + izrecen prehod pinov v 20 testnih datotekah (val82/83/84/85/86/88/89/90/65/76/77/79, atlas knowledge-graph/explore/map/story-graph/story-engine/evidence-api/georef/coverage/timeline/pass3/pv/pz)
 - QA: **767 testov: 756 pass / 11 skip / 0 fail** · bunx tsc --noEmit čist · eslint src čist (celoten lint OOM v peskovniku — vzorec val 95) · muzejska zbirka NESPREMENJENA (114/622/499/68 — ATLAS §22 kaskada gre preko registrov, ne MVG)
+- Push feat/val98-issue42-86b-part2 → **PR #101** → CI (1. zagon: dimni testi ujeli 2 zastarela api-smoke pina 2965/2171/3807/3891 — popravljena v 2. commitu 53c69f8) → **3/3 zeleno** → **MERGE @fece43c** → brisanje veje (lokalno + remote) → komentarja na #42 in #43
 - Docs: research-griblje/113-val98-86b-part2-tiles-p95-109-kaskada.md + 00-KAZALO 113 + README 152. sklop + worklog
 
 Stage Summary:
