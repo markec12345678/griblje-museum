@@ -35,8 +35,8 @@ const kgSha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
 
 describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradnja)", () => {
   test("naslov + val + KG-F10 (RESOLVED-V84)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.0"); // val 86: naslov povišan, SRC-PS vozlišče vsebine ohranjene
-    expect(kg.val).toBe(86); // val 86 rebuild (vsebina vozlišč val 84 ohranjena)
+    expect(kg.title).toBe("knowledge-graph-1825 v2.1"); // val 86: naslov povišan, SRC-PS vozlišče vsebine ohranjene
+    expect(kg.val).toBe(89); // val 86 rebuild (vsebina vozlišč val 84 ohranjena)
     const f10 = kg.findings.find((f) => f.finding_id === "KG-F10")!;
     expect(f10).toBeDefined();
     expect(f10.val).toBe(84);
@@ -64,18 +64,18 @@ describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradn
     expect(JSON.stringify(kg.nodes)).not.toContain("PARTIAL 55/143");
   });
 
-  test("števci in ID-ji stabilni (3309/3569/622/8/4) — nič se ne premakne (§12)", () => {
+  test("števci in ID-ji (val 89: 3807/3891/622/8/4; PS parcele 432→930 = izrecna projekcija, ne zdrs)", () => {
     expect(kg.node_stats).toEqual({
-      SOURCE: 13, HOUSE: 167, PERSON: 488, PARCEL: 2467, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
+      SOURCE: 13, HOUSE: 167, PERSON: 488, PARCEL: 2965, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
     });
-    expect(kg.nodes.length).toBe(3309);
-    expect(kg.edges.length).toBe(3569);
+    expect(kg.nodes.length).toBe(3807);
+    expect(kg.edges.length).toBe(3891);
     expect(kg.claims.length).toBe(622);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.map((a) => a.story_id)).toEqual(["SA-001", "SA-002", "SA-003", "SA-004"]);
     // ID stabilnost: prvi/zadnji relation + claim
     expect(kg.edges[0].relation_id).toBe("R-00001");
-    expect(kg.edges.at(-1)!.relation_id).toBe("R-03569");
+    expect(kg.edges.at(-1)!.relation_id).toBe("R-03891");
     expect(kg.claims[0].claim_id).toBe("C-00001");
     expect(kg.claims.at(-1)!.claim_id).toBe("C-00622");
   });
@@ -106,7 +106,7 @@ describe("val 84 — kaskada story_id (§22): pinned kg_sha256 = sha256 izhodneg
     const runtime = JSON.parse(readFileSync(resolve(REPO, "src/data/story-graph-1825.json"), "utf8")) as {
       provenance: { kg_val: number; kg_sha256: string };
     };
-    expect(archive.provenance.kg_val).toBe(86);
+    expect(archive.provenance.kg_val).toBe(89); // val 89 projekcija (kaskada §22; pri valu 84 je bilo 84)
     expect(archive.provenance.kg_sha256).toBe(kgSha);
     expect(runtime.provenance).toEqual(archive.provenance);
   });
@@ -131,7 +131,7 @@ describe("val 84 — kaskada story_id (§22): pinned kg_sha256 = sha256 izhodneg
     const runtime = JSON.parse(readFileSync(resolve(REPO, "src/data/atlas-coverage-report-1825.json"), "utf8")) as {
       provenance: { kg_sha256: string };
     };
-    expect(archive.val).toBe(86);
+    expect(archive.val).toBe(89);
     expect(archive.provenance.kg_sha256).toBe(kgSha);
     expect(runtime.provenance.kg_sha256).toBe(kgSha);
     const neg = archive.quality_gate.find((c) => c.category_id === "negative_results");
@@ -155,16 +155,16 @@ describe("val 84 — register negativnih rezultatov + source-coverage", () => {
     expect(nr14.result).toContain("NE DOSEŽENO");
   });
 
-  test("source-coverage val 84 + SRC-PS opomba ohrani val-83 dejstva", () => {
+  test("source-coverage regeneracija (val 89) + SRC-PS opomba ohrani val-83 dejstva", () => {
     const sc = JSON.parse(readFileSync(join(ATLAS, "source-coverage-1825.json"), "utf8")) as {
       val: number;
       sources: { source_id: string; note: string; status?: string }[];
       transcription: { PS: { pages: number; rows: number; passes: number } };
     };
-    expect(sc.val).toBe(86);
+    expect(sc.val).toBe(89);
     expect(sc.transcription.PS.pages).toBe(143);
     expect(sc.transcription.PS.rows).toBe(2871);
-    expect(sc.transcription.PS.passes).toBe(3); // val 86 2. prehod (kolonski tile-i)
+    expect(sc.transcription.PS.passes).toBe(3); // val 86 2. prehod (kolonski tile-i) — vsebina bloka nespremenjena od val 86
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
     expect(ps.status).toBe("VERIFIED");
     expect(ps.note).toContain("nič tiho popravljeno");

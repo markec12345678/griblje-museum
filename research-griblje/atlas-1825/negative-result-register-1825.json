@@ -1,11 +1,11 @@
 {
- "val": "60",
+ "val": "89",
  "pass": 3,
  "issue": "#42 §13",
- "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi",
+ "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi (NR-12/13/14 vgrajeni; val89 re-checki na NR-01/02/05/12)",
  "provenance": {
   "pua": "pua-n83/register.json (98 vpisov / 2.645 parcelnih referenc, val 51+57)",
-  "ps": "ps-n83/register.json (1.073 vrstic / 55-143 strani, val 57)",
+  "ps": "ps-n83/register.json (2.871 vrstic / str. 3-143, val 57→61→82/83→88; 139 digit-split vrstic z v88 vrednostmi)",
   "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original"
  },
  "negatives_total": 14,
@@ -17,7 +17,12 @@
    "pages": "s. 1-55 (vsi prebrani)",
    "result": "0 zadetkov",
    "why": "B.P. opombe so domena PUA/PT (parcelni protokol jih ne ponavlja)",
-   "next_source": "PS s. 56-143 (ko kvota); PT/PUA ostajajo edini B.P. viri"
+   "next_source": "PS s. 56-143 (ko kvota); PT/PUA ostajajo edini B.P. viri",
+   "val89_recheck": {
+    "pages": "s. 3-143 (celoten register, 2.871 vrstic)",
+    "result": "0 zadetkov (0 vrstic z B.P./Zoll v anmerkung)",
+    "verdict": "POTRJENO pri 143/143 — B.P. opombe ostajajo domena PUA/PT"
+   }
   },
   {
    "neg_id": "NR-02",
@@ -26,7 +31,12 @@
    "pages": "vse prebrane",
    "result": "6 opaženih ≈ 6,5 pričakovanih po naključju; 0 sekcija+številka",
    "why": "delna pokritost (39 % strani) + Flurbezirk stolpec ne-dekodiran (val 58 F14)",
-   "next_source": "PS 143/143 + glava @300 dpi → ponovni deterministični test"
+   "next_source": "PS 143/143 + glava @300 dpi → ponovni deterministični test",
+   "val89_recheck": {
+    "pages": "s. 3-143 (celoten register)",
+    "result": "356 številčno skupnih vrednosti (od 504 unikatnih PS jaethe × 1517 unikatnih PUA števil); 0 sekcija+številka",
+    "verdict": "OSTAJA NEPOTRJENO — številka sama ne nese sekcije; brez dekodiranega Flurbezirk (F14) nobeno posamezno ujemanje ni dokazljivo (ocena pričakovanja po naključju je nestabilna glede na izbrani številski prostor)"
+   }
   },
   {
    "neg_id": "NR-03",
@@ -53,7 +63,12 @@
    "pages": "vse prebrane",
    "result": "ne obstajajo v nobenem viru (PS vrzel 70-78 = bloki čakajo p56+)",
    "why": "delna PS pokritost; ni dokaza o obstoju ali ne-obstoju",
-   "next_source": "PS s. 56-143 — odločilno"
+   "next_source": "PS s. 56-143 — odločilno",
+   "val89_recheck": {
+    "pages": "s. 3-143 (celoten register, polje haus_no)",
+    "result": "razčlenjeno: 72 → p65 (2 vrstic); 74 → p65/69/122 (4 vrstic); 76 → p115 (1 vrstic) — dokumentirane; 70, 71, 73, 75, 77, 78 → 0 vrstic v celotnem PS",
+    "verdict": "DELO OSVEŽENO — negativ ostaja za [70, 71, 73, 75, 77, 78]; hiše [72, 74, 76] — izven izpita vala 60 (73–78) — so sedaj dokumentirane (PS p56–143)"
+   }
   },
   {
    "neg_id": "NR-06",
@@ -116,7 +131,12 @@
    "pages": "p1–p55",
    "result": "NOT FOUND — all Flurbezirk segments are numeric/roman (I–V sections + numbers); zero named districts",
    "why": "the Gemeinde divides land into numbered Flurbezirke, not named ones (at least in the transcribed half)",
-   "next_source": "PS p56–p143 once VLM quota restores"
+   "next_source": "PS p56–p143 once VLM quota restores",
+   "val89_recheck": {
+    "pages": "p3–p143 (celoten register, 2.871 vrstic)",
+    "result": "NOT FOUND — 79 neštevilskih jaethe zapisov, 0 s črkovnimi imeni (možnimi toponimi); vsi so mehanske/nominalne oblike (npr. 17½, ganz, N/N)",
+    "verdict": "POTRJENO pri 143/143 — omenjeni Flurbezirki ne obstajajo"
+   }
   },
   {
    "neg_id": "NR-13",

@@ -291,7 +291,7 @@ export function toponymFeatures(): ToponymFeature[] {
 
 /* ------------------------------------------------------------------ *
  * PARCEL sloj — register parcel z rabo (§19, val 73) — BREZ geometrije
- * (§9: meje niso dokazane, 0/2467). Raba: samo dokazana leksikalno.
+ * (§9: meje niso dokazane, 0/2965). Raba: samo dokazana leksikalno.
  * ------------------------------------------------------------------ */
 
 export type ParcelFeature = {

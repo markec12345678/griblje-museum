@@ -80,11 +80,11 @@ ps_unknown_use = sum(
     for n in parcels
     if n.get("origin") == "PS" and n.get("land_use_category") == "UNKNOWN"
 )
-if (pua_count, ps_count) != (2035, 432):
-    fail(f"parcelni zatiči zamaknjeni: PUA {pua_count} (pričakovano 2035), PS {ps_count} (432)")
-if (ps_with_use, ps_unknown_use) != (326, 106):
+if (pua_count, ps_count) != (2035, 930):
+    fail(f"parcelni zatiči zamaknjeni: PUA {pua_count} (pričakovano 2035), PS {ps_count} (930 — projekcija 143/143, val 89)")
+if (ps_with_use, ps_unknown_use) != (461, 333):
     fail(
-        f"raba PS zamaknjena: z rabo {ps_with_use} (326), neznana {ps_unknown_use} (106)"
+        f"raba PS zamaknjena: z rabo {ps_with_use} (461), neznana {ps_unknown_use} (333)"
     )
 
 
@@ -236,7 +236,7 @@ points = [
                 f"{ps_count} parcel",
                 "SRC-PS",
                 "parcel-register-1825.json (origin=PS, hišno vezane)",
-                note="PS vrstični prepis 143/143 (val 82: 2.871 vrstic; re-read 2× val 83) — kuriranih 432 parcel z hišno vezavo; per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14).",
+                note="projekcija 143/143 (val 89, iz reka val 88 §5): 2.871 vrstic → 930 parcel (v88 pravilo: digit-split vrstice s prazno jaethe in klafter vrednostjo niso parcele, F-PV-05); per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14); F14 namespace (PS↔PUA) ostaja odprt.",
             ),
             metric(
                 "parcels_with_land_use",
@@ -244,8 +244,8 @@ points = [
                 "count",
                 f"{ps_with_use} parcel z leksikalno dokazano rabo ({ps_unknown_use} neznanka)",
                 "SRC-PS",
-                "ps-n83/register.json (njiva 230, travnik 60, gozd 13, pašnik 9, vrt 10, drugo 4)",
-                note="raba samo EXACT termini; neznanka = termin ni nedvoumen (original ohranjen, val 73).",
+                "ps-n83/register.json (njiva 297, travnik 97, pašnik 22, vrt 16, gozd 16, drugo 11, dvorišče 1, vinograd 1)",
+                note="raba samo EXACT termini; neznanka = termin ni nedvoumen (original ohranjen, val 73); 136 parcel brez kultur zapisa (None) ostaja izven obeh števcev.",
             ),
         ],
         "absent_metrics": [
@@ -432,7 +432,7 @@ out = {
         "I3: vsaka metrika DOCUMENTED točke ima source_id (KG SOURCE) + evidence + reading_status",
         "I4: AWAITING_SOURCE točke imamo 0 metrik in 0 virov",
         "I5: letnice strogo naraščajoče in unikatne; statusi samo DOCUMENTED | AWAITING_SOURCE",
-        "I6: KG zatiči pribiti (PUA 2035 / PS 432 / raba 326+106) — zaščita pred zdrsom grafa",
+        "I6: KG zatiči pribiti (PUA 2035 / PS 930 / raba 461+333) — zaščita pred zdrsom grafa (val 89: projekcija 143/143)",
     ],
     "invariant_violations": [],
     "summary": {

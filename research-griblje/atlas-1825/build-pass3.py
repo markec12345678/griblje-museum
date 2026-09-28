@@ -1,15 +1,25 @@
 #!/usr/bin/env python3
 """
-Val 60 — ATLAS 1825 PASS 3 v1: Parcelni register (§4) + negative-result register (§13)
-Lokalna, deterministična pretvorba obstoječih virov:
-  1. parcel-register-1825.json         (§4 — PUA 2.645 referenc + PS (55/143) parcelni kandidati)
-  2. negative-result-register-1825.json (§13 — dokumentirane negativne rezultate)
+Val 89 — ATLAS 1825 PASS 3 v2: Parcelni register (§4) + negative-result register (§13)
+Projekcija 143/143 (iz reka val 88 §5): isti deterministični logik kot val 60, vgrajeni
+poznejši sloji, da re-run ni več destruktiven (pouk val 88):
+  1. parcel-register-1825.json         (§4 — PUA 2.035 referenc + PS (143/143) parcelni kandidati)
+  2. negative-result-register-1825.json (§13 — 11 × val 60 + NR-12/13 (val 62) + NR-14 (val 83),
+      + val89 re-checki: NR-01, NR-02, NR-05, NR-12 nad polnim registrom)
 
-Pravila:
+Pravila (nespremenjena od val 60):
   - raba zemljišča: SAMO eksplicitno leksikalno določene kategorije; vse ostalo UNKNOWN + original
-  - parcela v več hišah (417 v PUA) = so-referenca (značilnost franciscejskega katastra), NE konflikt
+  - parcela v več hišah (PUA) = so-referenca (značilnost franciscejskega katastra), NE konflikt
   - PUA in PS parcelni identifikatorji se NE združujejo (val 58 F14: namespace vprašanje odprto)
+  - PS jaethe = vir parcelne številke; v88 pravilo (val 88): digit-split vrstice s klafter-vrednostjo
+    in prazno jaethe NISO parcele (pisar piše Kläfter, F-PV-05 page-level)
   - vsak zapis s source/page provenanco
+
+Spremembe proti val 60 (vse dokumentirane v research-griblje/104-val89-parcelni-register-143.md):
+  - provenanca PS: 1.073 vrstic / 55–143 (val 57) → 2.871 vrstic / 3–143 (val 57→61→82/83→88)
+  - source labela PS parcel: "PS N83 (PARTIAL 55/143)" → "PS N83 (143/143)"
+  - NR-12/13/14 vgrajeni v builder (prej ročno v artefakt — re-run jih je izgubil)
+  - val89 re-checki nad polnim registrom (izračunano živo, deterministično)
 """
 import json, re, os
 from collections import Counter, defaultdict
@@ -102,7 +112,7 @@ for e in pua:
         })
 
 # ---------------------------------------------------------------
-# 2) PS parcele (partial 55/143)
+# 2) PS parcele (projekcija 143/143 — val 89; logika 1:1 val 60)
 # ---------------------------------------------------------------
 ps_parcels = []
 for r in ps:
@@ -128,7 +138,7 @@ for r in ps:
         "land_use_mapping": conf,
         "klafter": (r.get("klafter") or "").strip() or None,
         "owner_original": (r.get("owner_original") or "").strip(),
-        "source": "PS N83 (PARTIAL 55/143)",
+        "source": "PS N83 (143/143)",
         "page": r["page"],
         "no_blatt": r.get("no_blatt"),
         "cross_ref_to_pua": "UNKNOWN — namespace vprašanje odprto (val 58 F14)",
@@ -137,19 +147,62 @@ for r in ps:
     })
 
 # ---------------------------------------------------------------
-# 3) negative-result register (§13)
+# 3) negative-result register (§13) — NR-01..NR-11 (val 60) + NR-12/13 (val 62) + NR-14 (val 83)
+#    val 89: vse vgrajene v builder (re-run varno) + živi re-checki nad polnim registrom
 # ---------------------------------------------------------------
+
+# --- val89 re-check inputs (deterministično iz polnega registra) ---
+import re as _re
+_bp_zoll = _re.compile(r"B\.?\s*P\.?|Zoll", _re.I)
+bp_zoll_hits = [r for r in ps if r.get("anmerkung") and _bp_zoll.search(r["anmerkung"])]
+
+_ps_nums = set()
+_other_jaethe = []
+for r in ps:
+    _j = (r.get("jaethe") or "").strip()
+    if _re.match(r"^\d{1,4}$", _j):
+        _ps_nums.add(int(_j))
+    elif _j:
+        _other_jaethe.append(_j)
+_pua_nums = set()
+for _e in pua:
+    for _p in (_e.get("parcels") or []):
+        _num = str(_p.get("parcel_number") or "").strip()
+        if _num.isdigit():
+            _pua_nums.add(int(_num))
+_rosetta_overlap = sorted(_ps_nums & _pua_nums)
+_named_flur = [_o for _o in _other_jaethe if _re.search(r"[A-Za-zÀ-ž]{3,}", _re.sub(r"ganz|halb", "", _o))]
+
+_houses_70_78 = {h: sorted({r["page"] for r in ps if str(r.get("haus_no") or "").strip() == str(h)}) for h in range(70, 79)}
+_houses_in_ps = sorted(h for h, pgs in _houses_70_78.items() if pgs)
+_houses_absent = sorted(h for h, pgs in _houses_70_78.items() if not pgs)
+_houses_detail = "; ".join(
+    f"{h} → p{'/'.join(str(x) for x in pgs)} ({sum(1 for r in ps if str(r.get('haus_no') or '').strip() == str(h))} vrstic)"
+    for h, pgs in _houses_70_78.items() if pgs
+)
+
 negatives = [
     {"neg_id": "NR-01", "searched": "B.P. / Zollamt sklici v PS Anmerkung stolpcu",
      "source": "PS N83", "pages": "s. 1-55 (vsi prebrani)",
      "result": "0 zadetkov",
      "why": "B.P. opombe so domena PUA/PT (parcelni protokol jih ne ponavlja)",
-     "next_source": "PS s. 56-143 (ko kvota); PT/PUA ostajajo edini B.P. viri"},
+     "next_source": "PS s. 56-143 (ko kvota); PT/PUA ostajajo edini B.P. viri",
+     "val89_recheck": {
+         "pages": "s. 3-143 (celoten register, 2.871 vrstic)",
+         "result": f"0 zadetkov ({len(bp_zoll_hits)} vrstic z B.P./Zoll v anmerkung)",
+         "verdict": "POTRJENO pri 143/143 — B.P. opombe ostajajo domena PUA/PT"}},
     {"neg_id": "NR-02", "searched": "ujemanje PS jaethe ↔ PUA parcelnih števil (Rosetta kontrola)",
      "source": "PS (55/143) + PUA", "pages": "vse prebrane",
      "result": "6 opaženih ≈ 6,5 pričakovanih po naključju; 0 sekcija+številka",
      "why": "delna pokritost (39 % strani) + Flurbezirk stolpec ne-dekodiran (val 58 F14)",
-     "next_source": "PS 143/143 + glava @300 dpi → ponovni deterministični test"},
+     "next_source": "PS 143/143 + glava @300 dpi → ponovni deterministični test",
+     "val89_recheck": {
+         "pages": "s. 3-143 (celoten register)",
+         "result": (f"{len(_rosetta_overlap)} številčno skupnih vrednosti (od {len(_ps_nums)} unikatnih PS jaethe "
+                    f"× {len(_pua_nums)} unikatnih PUA števil); 0 sekcija+številka"),
+         "verdict": "OSTAJA NEPOTRJENO — številka sama ne nese sekcije; brez dekodiranega Flurbezirk (F14) "
+                    "nobeno posamezno ujemanje ni dokazljivo (ocena pričakovanja po naključju je nestabilna "
+                    "glede na izbrani številski prostor)"}},
     {"neg_id": "NR-03", "searched": "PS OCR besedilni sloj",
      "source": "vac.sjas.gov.si /vac/iiif/pdf-raw-text", "pages": "celoten PDF",
      "result": "prazen (OCR sloji neuporabni)",
@@ -163,7 +216,13 @@ negatives = [
      "source": "PUA + PS (55/143) + PT + A01", "pages": "vse prebrane",
      "result": "ne obstajajo v nobenem viru (PS vrzel 70-78 = bloki čakajo p56+)",
      "why": "delna PS pokritost; ni dokaza o obstoju ali ne-obstoju",
-     "next_source": "PS s. 56-143 — odločilno"},
+     "next_source": "PS s. 56-143 — odločilno",
+     "val89_recheck": {
+         "pages": "s. 3-143 (celoten register, polje haus_no)",
+         "result": (f"razčlenjeno: {_houses_detail} — dokumentirane; "
+                    f"{', '.join(str(h) for h in _houses_absent)} → 0 vrstic v celotnem PS"),
+         "verdict": (f"DELO OSVEŽENO — negativ ostaja za {_houses_absent}; hiše {_houses_in_ps} — izven izpita "
+                     "vala 60 (73–78) — so sedaj dokumentirane (PS p56–143)")}},
     {"neg_id": "NR-06", "searched": "Waldweide kot lastniški vpis (negative result val 57)",
      "source": "PUA", "pages": "vseh 49", "result": "ni lastniški vpis (samo omenjena)",
      "why": "terminološko: Waldweide = raba, ne lastnik", "next_source": "—"},
@@ -188,7 +247,44 @@ negatives = [
      "result": "0 — strukturno (F9 različni lastniški stanji), ne bralna napaka",
      "why": "PUA = pripravljalno stanje, PS = končno; prehodi dokumentirani (pfand opombe p12)",
      "next_source": "PS 143/143: ali se AGREE pojavi kje (npr. nespremenjene hiše)"},
+    # --- NR-12/13: val 62 (prej ročno v artefakt; val 89 vgrajeno) ---
+    {"neg_id": "NR-12", "searched": "named Flurbezirke (toponymic district names) in PS jaethe column",
+     "source": "PS N83 pages 1–55 (55/143 transcribed)",
+     "pages": "p1–p55",
+     "result": "NOT FOUND — all Flurbezirk segments are numeric/roman (I–V sections + numbers); zero named districts",
+     "why": "the Gemeinde divides land into numbered Flurbezirke, not named ones (at least in the transcribed half)",
+     "next_source": "PS p56–p143 once VLM quota restores",
+     "val89_recheck": {
+         "pages": "p3–p143 (celoten register, 2.871 vrstic)",
+         "result": (f"NOT FOUND — {len(_other_jaethe)} neštevilskih jaethe zapisov, {len(_named_flur)} s črkovnimi "
+                    "imeni (možnimi toponimi); vsi so mehanske/nominalne oblike (npr. 17½, ganz, N/N)"),
+         "verdict": "POTRJENO pri 143/143 — omenjeni Flurbezirki ne obstajajo"}},
+    {"neg_id": "NR-13", "searched": "non-local residences in PT wohnort_original",
+     "source": "PT N83 (100 rows)",
+     "pages": "p1–p8",
+     "result": "NOT FOUND — wohnort_original is empty except 3× self-form 'Grüble' (p3/4/5)",
+     "why": "PT records building parcels of local owners; external owners appear in PS/PUA, not PT",
+     "next_source": "none — negative is structural"},
+    # --- NR-14: val 83 (prej ročno v artefakt; val 89 vgrajeno) ---
+    {"neg_id": "NR-14", "status": "PARTIAL",
+     "searched": "soglasje ≥ 2 pri celostranskem nativnem VLM re-readu PS p56–143 (imena, kultur kategorije, površine, Fürtrag verige)",
+     "source": "PS N83 (pass1 val 82 vs pass2 val 83, 88+88 klicev)",
+     "pages": "p56-p143",
+     "result": "DELO: struktura 1798≈1797 + classe/ertrag/capital ≥ 92 % + Wald 54=54 + stand 82 % / wohnort 86 %; NE DOSEŽENO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide, Acker↔Wald), no_blatt 49 %, jaethe 71,9 % / klafter 68,4 % (numeq), stolpčna dodelitev Jaethe↔Klafter variira, Fürtrag soglasje 18/100, Reb omembe 14→6",
+     "why": "celostranski nativni JPG (~1200×1020): Kurrent kurziva imen in dvovrstičnih kultur opisov pod resolucijo; stolpčni sidri manjkajo — val 80/81 je dokazal, da pasovni/zoom izrezki dvignejo zanesljost",
+     "next_source": "pasovni/zoom re-read s kolonskimi sidri (vzorec val 80/81) — analysis-v4 F-PV-04 + next_reads"},
 ]
+
+# ---------------------------------------------------------------
+# fail-fast varovalke (val 89 — re-run je dovoljen SAMO nad poznejšimi sloji)
+# ---------------------------------------------------------------
+if len(ps) != 2871:
+    raise SystemExit(f"GUARD: PS register ima {len(ps)} vrstic, pričakovano 2.871 (val 88 stanje) — ne zaganjaj nad zastarelim registrom")
+_v88_rows = [r for r in ps if r.get("v88_status") in ("P1", "P2", "T3") or r.get("v88_note")]
+if len(_v88_rows) != 139:
+    raise SystemExit(f"GUARD: PS register ima {len(_v88_rows)} v88 vrstic (137 rešenih + 2 UNRESOLVED z v88_note), pričakovano 139 — v88 sloj manjka")
+if len(negatives) != 14:
+    raise SystemExit(f"GUARD: {len(negatives)} negativnih rezultatov, pričakovano 14 (NR-01..NR-14)")
 
 # ---------------------------------------------------------------
 # izhod
@@ -198,7 +294,7 @@ lu_conf = Counter(p["land_use_mapping"] for p in ps_parcels)
 co_ref = [p for p in pua_parcels if p["co_referenced"]]
 provenance = {
     "pua": "pua-n83/register.json (98 vpisov / 2.645 parcelnih referenc, val 51+57)",
-    "ps": "ps-n83/register.json (1.073 vrstic / 55-143 strani, val 57)",
+    "ps": "ps-n83/register.json (2.871 vrstic / str. 3-143, val 57→61→82/83→88; 139 digit-split vrstic z v88 vrednostmi)",
     "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original",
 }
 
@@ -209,14 +305,15 @@ def write(name, obj):
     print(f"{name}: {os.path.getsize(path)} B")
 
 write("parcel-register-1825.json", {
-    "val": "60", "pass": 3, "issue": "#42 §4",
-    "title": "PARCEL REGISTER 1825 — v1: PUA reference + PS kandidati (ločeni, ne-združeni)",
+    "val": "89", "pass": 3, "issue": "#42 §4",
+    "title": "PARCEL REGISTER 1825 — v2 (val 89): PUA reference + PS kandidati pri 143/143 (ločeni, ne-združeni)",
     "method": {
         "rules": [
             "PUA in PS parcelni identifikatorji se NE združujejo (F14 namespace odprt)",
             "so-referenca parcele v >1 hiši = značilnost katastra (so-vlasništvo), NE konflikt",
             "raba: samo EXACT leksikalno mapiranje; vse drugo UNKNOWN + original + mapping flag",
             "PS jaethe >3000 = flag (možna zmes stolpcev), ne izključitev",
+            "v88 pravilo (val 88): digit-split vrstice s prazno jaethe in klafter vrednostjo NISO parcele (F-PV-05)",
         ],
         "land_use_exact_lexicon": LU_EXACT,
     },
@@ -231,8 +328,8 @@ write("parcel-register-1825.json", {
 })
 
 write("negative-result-register-1825.json", {
-    "val": "60", "pass": 3, "issue": "#42 §13",
-    "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi",
+    "val": "89", "pass": 3, "issue": "#42 §13",
+    "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi (NR-12/13/14 vgrajeni; val89 re-checki na NR-01/02/05/12)",
     "provenance": provenance,
     "negatives_total": len(negatives),
     "negatives": negatives,

@@ -229,8 +229,8 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       findings: { finding_id: string; val: number; status: string }[];
       nodes: { node_id: string; node_type: string; lat?: number; lng?: number; georef_status?: string }[];
     };
-    expect(kg.title).toBe("knowledge-graph-1825 v2.0");
-    expect(kg.val).toBe(86);
+    expect(kg.title).toBe("knowledge-graph-1825 v2.1");
+    expect(kg.val).toBe(89);
     expect(kg.findings.at(-1)!.finding_id).toBe("KG-F10");
     expect(kg.findings.at(-1)!.status).toContain("RESOLVED-V84");
     const moA01 = kg.nodes.filter((n) => n.node_id.startsWith("MO:MO-A01-"));
@@ -271,7 +271,7 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       val: number;
       quality_gate: { category_id: string; VERIFIED: number; PARTIAL: number; UNKNOWN: number; native: Record<string, unknown> }[];
     };
-    expect(rep.val).toBe(86);
+    expect(rep.val).toBe(89);
     const geo = rep.quality_gate.find((c) => c.category_id === "georeferencing")!;
     expect(geo.VERIFIED).toBe(1);
     expect(geo.PARTIAL).toBe(0);

@@ -12,7 +12,7 @@ const kg = JSON.parse(readFileSync(resolve(BASE, "knowledge-graph-1825.json"), "
 
 describe("knowledge-graph-1825 v2.0 [val 86]", () => {
   test("struktura + velikosti (varovalke)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.0");
+    expect(kg.title).toBe("knowledge-graph-1825 v2.1");
     expect(kg.findings.map((f: { finding_id: string }) => f.finding_id)).toEqual([
       "KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08", "KG-F09", "KG-F10",
     ]); // KG-F08 (val 72): GEOREF v2 — MO koordinate preko similaritete po reki Kolpi; KG-F09 (val 77): PZ Konskripcija PASS 2; KG-F10 (val 84): SRC-PS vozlišče po val 82/83
@@ -22,20 +22,20 @@ describe("knowledge-graph-1825 v2.0 [val 86]", () => {
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3309);
-    expect(kg.edges.length).toBe(3569);
+    expect(kg.nodes.length).toBe(3807);
+    expect(kg.edges.length).toBe(3891);
     expect(kg.claims.length).toBe(622);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.length).toBe(4);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2467 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 66)", () => {
+  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2965 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 89)", () => {
     expect(kg.node_stats).toEqual({
       SOURCE: 13,
       HOUSE: 167,
       PERSON: 488,
-      PARCEL: 2467,
+      PARCEL: 2965,
       BP: 100,
       TOPONYM: 37,
       EVENT: 3,
@@ -235,7 +235,7 @@ describe("knowledge-graph-1825 v2.0 [val 86]", () => {
   test("coverage: brez umetnega procenta, kategorije z dejanskim stanjem", () => {
     expect(kg.coverage.note).toContain("brez umetnega skupnega procenta");
     const parcels = kg.coverage.categories.find((c: { category: string }) => c.category === "parcels")!;
-    expect(parcels.total).toBe(2467);
+    expect(parcels.total).toBe(2965);
     expect(parcels.breakdown.geometry).toBe("NOT AVAILABLE");
   });
 });

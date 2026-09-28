@@ -4022,3 +4022,30 @@ Stage Summary:
 - Val 88 zaključen in mergan: 139 digit-split vrstic iz REVIEW → rešene z direktnim branjem (25 P1 + 37 P2 + 75 T3 + 2 U); register p56–94+121 nosi v88 vrednosti s polnim audit trailom (snimke + glasovi); F11 potrjeno nespremenjeno
 - Pouk vala (dokumentiran v poročilu §5): re-run val-60/65 builderjev = destruktiven brez vgradnje poznejših slojev — val 89 mora najprej popraviti provenance + NR sloje v build-pass3.py, šele nato projekcija parcel 432→930 + KG kaskada v pravilnem vrstnem redu
 - Naslednje: val 89 (parcelni register 143/143) → 86b 2. del (~479 tile-ov, kvota) → F-PV-03/p121 → PZ p48–65 → PT p7 → PR Grenz-Beschreibung
+
+---
+Task ID: 13
+Agent: Z.ai Code (glavni orkestrator, seja val 89)
+Task: Zaključek vala 88 (CI → merge PR #90) + 89. val — ISSUE #42 §4/§13/§22: PS parcelni register 143/143 projekcija (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Zaključek vala 88: CI 3/3 zeleno (tipi+lint+enotni · dimni+PostgreSQL · Vercel preview) → MERGE PR #90 API @ f4194a9 → veja feat/val88-digitsplit-reread izbrisana (lokalno + remote)
+- Val 89 izveden po izrečenem predlogu poročila val 88 §5: branch feat/val89-parcelni-register-143 iz main
+- Analiza: build-pass3.py (val 60) ima 1:1 logiko ekstrakcije, a zastareli sloji (provenanca 55/143, NR-12/13/14 samo v artefaktu); register 2.871 vrstic → 924 raw čistoštevkovnih jaethe; napoved 930 preverjena
+- build-pass3.py v2: provenanca + labela PS N83 (143/143) + NR-12/13/14 vgrajeni (verbatim val 62/83) + 4 živi val89 re-checki (NR-01: B.P./Zoll 0 POTRJENO; NR-02: 356 številčnih prekrivanj, NEPOTRJENO brez F14; NR-05: hiše 72/74/76 dokumentirane p65/69/122, 70/71/73/75/77/78 brez; NR-12: 0 imenskih Flurbezirkov POTRJENO) + fail-fast varovalke (2.871 / 139 v88 / 14 NR; UNRESOLVED = v88_note brez statusa — guard popravljen po prvem tripu)
+- Re-run pass3: PS parcele 432 → 930 (napoved vala 88 točna); razčlen 924 + 6 strnjenih z presledkom (`1 837` → 1837); land use: njiva 297 / travnik 97 / UNKNOWN 333 / vrt 16 / pašnik 22 / gozd 16 / drugo 11 / None 136 / dvorišče 1 / vinograd 1; 4 flag >3000
+- KG builder: PS parcelni status TRANSCRIBED_PARTIAL → NOVI TRANSCRIBED_PROVISIONAL (pokritost 143/143 + branja PROVISIONAL F-PV-04/NR-14; vozlišče nosi izrecno opombo); KG v2.1 (val 89)
+- Kaskada v pravilnem vrstnem redu: pass3 → KG (PARCEL 2.965, HAS_PARCEL 3.187, vozlišča 3.807, vezi 3.891, invariante 0) → story (b4f5011c) → timeline (I6 posodobljen: 930 / 461+333; metrike parcels_ps + raba + provenanca + I6 zatiči) → coverage (parcels 2.965 = 907 VER/1605 PART/453 CONF; unknowns F14 930 — zdaj iz registra; source-coverage + quality gate val 89; §24 14/14) → map model avtomatsko
+- UI sloj: +2 vedri dvorišče/vinograd (LAND_USE_ORDER 8→10, counts init, tip) + i18n oznake ×5 (sl/en/hr/de/it) + luLabel switch + filterUseNote ×5 (55/143 → 143/143 val 89) — verify-i18n 1076 × 5 zeleno
+- atlas-explore/atlas-story-engine: TRANSCRIBED_PROVISIONAL → VERJETNO v obeh TIER_EXACT (legačni TRANSCRIBED_PARTIAL ohranjen); stale besedilo "per-parcelna raba čaka PS p56–143" dopolnjeno (F-PV-04/NR-14)
+- Testi: izrecen prehod števcev — 24 testnih datotek osveženih (pass3 +3 varovalke; coverage/timeline/KG/story-graph/story-engine/explore/map/evidence/georef/pz/pv/val84/85/86/88/api-smoke); a01 georef v2 in PUA plast preverjena nespremenjena
+- QA: 631 testov (620 pass / 11 skip / 0 fail) · tsc čist · lint čist · verify-i18n 1076×5
+- Dokumentacija: research-griblje/104-val89-parcelni-register-143.md (9 sekcij, točno razčlen množic) + 00-KAZALO vnos 104 + README 143. sklop
+- Push feat/val89-parcelni-register-143 → PR #91 → CI (tipi+lint+enotni · dimni+PostgreSQL · Vercel) → MERGE → veja izbrisana (lokalno + remote; SHA-ji v git logu)
+
+Stage Summary:
+- §4 ATLAS 1825 zdaj nosi POLNO projekcijo 143/143: 2.965 parcel (PUA 2.035 + PS 930), vse z 143/143 provenanco; napoved vala 88 (930) zadeta na enoto
+- Pouk vala 88 utrjen v kodo: NR sloji so sedaj V BUILDERJU (re-run ne more izgubiti), fail-fast varovalke branijo sloje, kaskada poteka v pravilnem vrstnem redu
+- Nov status TRANSCRIBED_PROVISIONAL razlikuje pokritost prepisa od gotovosti branj — §17 pariteta (PS = VERJETNO) ohranjena
+- 2 novi EXACT rabi (dvorišče, vinograd) imata lastni UI vedri z oznakami v 5 jezikih
+- Naslednje: 86b 2. del (~479 tile-ov, kvota) → polna vgradnja val 86 (~1.798) → F-PV-03 → F14 glava @300dpi (Rosetta NR-02) → PZ p48–65 → PT p7 → PR Grenz-Beschreibung; ISSUE #72 raziskovalne sledi (EŠD 11081, raziskovalne kode, rimska sinteza) čakajo vgradnjo po evidence-first logiki

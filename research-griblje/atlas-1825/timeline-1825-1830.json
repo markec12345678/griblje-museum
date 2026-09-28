@@ -34,7 +34,7 @@
       "research-griblje/atlas-1825/pv-land-use-1825.json",
       "research-griblje/atlas-1825/knowledge-graph-1825.json"
     ],
-    "kg_sha256": "6fb6fae8ff2b4276a5506578fe607a3d929b78b74f0efd429f9c33a76d318573",
+    "kg_sha256": "b4f5011cf43bbf2cd989b479be2ae7e506d10e7278144b454b3521029e3f2023",
     "runtime_copy": "src/data/timeline-1825-1830.json",
     "vac": {
       "SRC-PV": "https://vac.sjas.gov.si/vac/search/details?id=373418",
@@ -47,7 +47,7 @@
     "I3: vsaka metrika DOCUMENTED točke ima source_id (KG SOURCE) + evidence + reading_status",
     "I4: AWAITING_SOURCE točke imamo 0 metrik in 0 virov",
     "I5: letnice strogo naraščajoče in unikatne; statusi samo DOCUMENTED | AWAITING_SOURCE",
-    "I6: KG zatiči pribiti (PUA 2035 / PS 432 / raba 326+106) — zaščita pred zdrsom grafa"
+    "I6: KG zatiči pribiti (PUA 2035 / PS 930 / raba 461+333) — zaščita pred zdrsom grafa (val 89: projekcija 143/143)"
   ],
   "invariant_violations": [],
   "summary": {
@@ -156,23 +156,23 @@
         },
         {
           "metric_id": "parcels_ps",
-          "value": 432,
+          "value": 930,
           "unit": "count",
-          "display": "432 parcel",
+          "display": "930 parcel",
           "source_id": "SRC-PS",
           "evidence": "parcel-register-1825.json (origin=PS, hišno vezane)",
           "reading_status": "TRANSCRIBED",
-          "note": "PS vrstični prepis 143/143 (val 82: 2.871 vrstic; re-read 2× val 83) — kuriranih 432 parcel z hišno vezavo; per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14)."
+          "note": "projekcija 143/143 (val 89, iz reka val 88 §5): 2.871 vrstic → 930 parcel (v88 pravilo: digit-split vrstice s prazno jaethe in klafter vrednostjo niso parcele, F-PV-05); per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14); F14 namespace (PS↔PUA) ostaja odprt."
         },
         {
           "metric_id": "parcels_with_land_use",
-          "value": 326,
+          "value": 461,
           "unit": "count",
-          "display": "326 parcel z leksikalno dokazano rabo (106 neznanka)",
+          "display": "461 parcel z leksikalno dokazano rabo (333 neznanka)",
           "source_id": "SRC-PS",
-          "evidence": "ps-n83/register.json (njiva 230, travnik 60, gozd 13, pašnik 9, vrt 10, drugo 4)",
+          "evidence": "ps-n83/register.json (njiva 297, travnik 97, pašnik 22, vrt 16, gozd 16, drugo 11, dvorišče 1, vinograd 1)",
           "reading_status": "TRANSCRIBED",
-          "note": "raba samo EXACT termini; neznanka = termin ni nedvoumen (original ohranjen, val 73)."
+          "note": "raba samo EXACT termini; neznanka = termin ni nedvoumen (original ohranjen, val 73); 136 parcel brez kultur zapisa (None) ostaja izven obeh števcev."
         }
       ],
       "absent_metrics": [
@@ -390,5 +390,5 @@
       "note": null
     }
   ],
-  "generated_at": "2026-09-27T23:37:21Z"
+  "generated_at": "2026-09-28T11:51:36Z"
 }

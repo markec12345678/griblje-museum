@@ -242,11 +242,11 @@ describe("val 85 — poštenost §4 + §22 (nič ne beži v runtime)", () => {
     expect(register.filter((r) => r.reading_pass === "v86-colonial-tiles")).toHaveLength(808);
   });
 
-  test("KG v2.0 (val 86 kaskada): sha 6fb6fae8… + metapodatki", () => {
-    expect(kgSha.startsWith("6fb6fae8")).toBe(true); // val 86 KG v2.0 (§22 kaskada)
+  test("KG v2.1 (val 89 kaskada): sha b4f5011c… + metapodatki", () => {
+    expect(kgSha.startsWith("b4f5011c")).toBe(true); // val 89 KG v2.1 (§22 kaskada) — val 85 pilot je bil na v86 (6fb6fae8)
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as { val: number; title: string };
-    expect(kg.val).toBe(86); // val 86: naslov povišan, merjenja val 85 v analysis-v5.json ohranjena
-    expect(kg.title).toBe("knowledge-graph-1825 v2.0");
+    expect(kg.val).toBe(89); // val 86: naslov povišan, merjenja val 85 v analysis-v5.json ohranjena
+    expect(kg.title).toBe("knowledge-graph-1825 v2.1");
   });
 
   test("kaskada §22 nespremenjena: story-graph/timeline/coverage (arhiv + runtime) držijo isti KG sha", () => {

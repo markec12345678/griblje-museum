@@ -304,7 +304,7 @@ categories.append(cat(
     counts_to_six(par_native, par_native_map),
     par_native,
     "PUA: VERIFIED-2x→VERIFIED, REVIEW→PARTIAL, REVIEW-CONFLICT→CONFLICT; PS: vse SINGLE_SOURCE→PARTIAL (1 z zastavico F14 ostaja PARTIAL z opombo)",
-    ["research-griblje/atlas-1825/parcel-register-1825.json", "PASS 3 (val 60) + PS re-read (val 61)"],
+    ["research-griblje/atlas-1825/parcel-register-1825.json", "PASS 3 (val 60 logika; val 89 projekcija 143/143)"],
 ))
 
 # --- 8. Parcelna geometrija ----------------------------------------------------
@@ -541,7 +541,7 @@ categories.append(cat(
 unknowns_aggregate = [
     {"item": "hiše UNKNOWN_SEMANTICS", "count": house_status.get("UNKNOWN_SEMANTICS", 0), "category": "houses"},
     {"item": "PS parcele z raba UNKNOWN", "count": parcel_reg["ps_land_use_coverage"].get("UNKNOWN", 0), "category": "parcels"},
-    {"item": "PS parcele cross_ref_to_pua UNKNOWN (namespace vprašanje F14)", "count": 432, "category": "parcels"},
+    {"item": "PS parcele cross_ref_to_pua UNKNOWN (namespace vprašanje F14)", "count": parcel_reg["ps_parcels_total"], "category": "parcels"},
     {"item": "osebe possible_duplicates (NI združenih, §5)", "count": person_reg.get("possible_duplicates", 0), "category": "persons"},
     {"item": "toponimi brez moderne povezave", "count": toponym_reg["coverage"]["by_review_status"] and len(toponyms), "category": "toponyms"},
     {"item": "BP brez kartografske glife (map)", "count": map_six["NOT_FOUND"], "category": "bp_a01_binding"},
@@ -581,7 +581,7 @@ def file_status(relpath, derived_from, note=None):
 
 
 manifest_sources = [
-    "house-register-1825.json (val 59)", "parcel-register-1825.json (val 60/61)",
+    "house-register-1825.json (val 59)", "parcel-register-1825.json (val 60/89)",
     "person-owner-register-1825.json (val 60)", "bp-house-reconciliation-1825.json (val 59)",
     "a01-building-inventory-1825.json + pass4b (val 65/66)", "KG v1.5 (val 68)",
     "story-graph-1825.json (val 72)", "conflict/negative/toponym registri (val 57/62)",
@@ -654,10 +654,10 @@ cadastral = {
 
 # 3c) source-coverage-1825 — pokritost virov (issue #42 §6/§14)
 source_coverage = {
-    "val": 86,
+    "val": 89,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.0 + registrov)",
+    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.1 + registrov; regeneriran val 89)",
     "derived_from": ["knowledge-graph-1825.json (v2.0) SOURCE nodes", "pua/ps/pt registri", "a01/pass4b inventarja", "ps-n83/band-v86/ (val 86 kolonski tile-i)"],
     "deterministic": True,
     "sources": src_list,
@@ -740,7 +740,7 @@ story_engine = {
 # 4. MASTER COVERAGE REPORT
 # ---------------------------------------------------------------------------
 quality_gate = {
-    "val": 86,
+    "val": 89,
     "pass": "PASS 8",
     "issue": 42,
     "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE)",
@@ -780,7 +780,7 @@ quality_gate = {
     "definition_of_done_status": {
         "klik na hišo → kje/številka/lastnik/parcele/raba/BP/vir/osebe/dokazano/konfliktno/neznano": "IZPOLNJENO podatkovno-API (val 63–69: /api/atlas/evidence + /story) — UI sloj sledi",
         "zgodba vasi": "IZPOLNJENO podatkovno (/api/atlas/story?scope=village)",
-        "preostanek": ["georef: A02 sidro (cerkev sv. Vid @300dpi) + listno merilo F-GEO-04", "parcelni sloj rabe §19 (PS 432 parcel)", "ob kvoti: PS p56–143 re-read, PT p7 @300dpi, PR re-read, PV prepis", "parcelne meje @višji dpi (§9)"],
+        "preostanek": ["georef: A02 sidro (cerkev sv. Vid @300dpi) + listno merilo F-GEO-04", "parcelni sloj rabe §19 (PS 930 parcel, projekcija 143/143 val 89)", "ob kvoti: PS p95–142 tile re-read, PT p7 @300dpi, PR re-read, PV prepis", "parcelne meje @višji dpi (§9)"],
     },
 }
 
