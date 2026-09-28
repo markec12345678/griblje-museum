@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "val": 92,
+    "issue": "#43 (§1/§10) + #42 §4 — F14 Flurbezirk/Parzelle pilot",
+    "title": "PS N83 pilot: Benennung des Flures / Nro. der Parzelle — strukturni model + aritmetika",
+    "method": "direktno branje prenosov pdfPageImage (1265–1305 px razpreda) + 2x/3x izrezi PIL LANCZOS; agentov vid (instrument val 61), 0 VLM",
+    "source_document": "SI AS 176/N/N83/s/PS — VAČ docid 41780 (uodid 373415)",
+    "raw_dir": "research-griblje/raw-web-val92-2026-10/",
+    "generated_by": "agent (Z.ai Code), 2026-09-28",
+    "passes": "p3: 2 neodvisna prehoda (1. prehod pri 1x je dal delno napačne vrednosti — pouk dokumentiran); p58: 2 prehoda (1x napačno 101–120 → 3x popravljeno 1101–1120); ostali vzorci: 1 prehod, PROVISIONAL",
+    "resolution_limit": "pdfPageImage prenosi so PREDOGLEDNA ločljivost (do ~1310 px); 3–4 mestna gotovost zahteva 300 dpi (val 56 pot: pymupdf iz N083PS.pdf — PDF tokrat peskovniško prepočasen, samo vzorčne strani prenešene)"
+  },
+  "glava": {
+    "printed_head_left": ["Nro. des Blattes", "Benennung des Flures", "Nro. der Parzelle", "Gstlzzeige. Eigen. (Gebäude des Grundstücks): Dominical | Rustical", "Haus Nro.", "Vor und Zuname", "Stand", "Wohnort"],
+    "printed_head_right": ["Cultura Gattung", "Flächen Inhalt: N.° | Joch | Quad. Klafter", "Classe", "Reinertrag Ertrag (fl. | kr.)", "Capital Werth p. Cmt (fl. | kr.)", "Anmerkung"],
+    "title_page_p002": "Grundparzellen Protocol der Gemeinde Grüble",
+    "note": "analiza v1 (val 58) je glavo povzela kot »Flurbezirk / Jaethe« — popravljeno: »Benennung des Flures« + »Nro. der Parzelle« (leva) in »N.° Joch / Quad. Klafter« (desna); pri 1x ločljivosti je vodilna »1« štirimestnih številk in ločnica med stolpcema padla"
+  },
+  "structure_model": {
+    "page_to_parzelle": "p3 = seznam FLURE 1–20 (stolpec Benennung des Flures); p4–p143 = zaporedne PARCELLE 21–~2820 (~20/razpredeno): first = 21 + 20*(page-4), last = 40 + 20*(page-4) (= first + 19)",
+    "confirmation_points": [
+      {"page": 3, "expected": "Flure 1–20", "read": "1–20 (2 prehoda; 1. prehod 1x je zadnjih 6 vrstic prebral kot 16/29/34/33/39/40 — pri 2x jasno 15–20)", "status": "CONFIRMED"},
+      {"page": 20, "expected": "341–360", "read": "341–360", "status": "CONFIRMED"},
+      {"page": 45, "expected": "841–860", "read": "841–860", "status": "CONFIRMED"},
+      {"page": 58, "expected": "1101–1120", "read": "1101–1120 (1. prehod 1x: 101–120 NAPAČNO — izpustil vodilno 1; 3x potrjeno)", "status": "CONFIRMED"},
+      {"page": 59, "expected": "1121–1140", "read": "1121–1140 (1 prehod; 1x prehod je branil 121–140)", "status": "PROVISIONAL"},
+      {"page": 84, "expected": "1621–1640", "read": "16xx (1 prehod; 1x prehod je branil 6xx/16xx dvoumno)", "status": "PROVISIONAL"},
+      {"page": 133, "expected": "2601–2620", "read": "2601–2620 + stolpec 1 = navpično ime Bezirka + vsi lastniki = Gemeinde", "status": "CONFIRMED"}
+    ],
+    "row_budget": "2871 registrskih vrstic ≈ 20/razpredeno × 143 + Fürtrag/povzetki vrstice — skladno",
+    "implication": "celoten vesoljec PS parcel = ~2800 (ne 930); 930 = vrstice z ujeto površino/kultur (podmnožica)"
+  },
+  "p133_gemeinde_section": {
+    "parzelle": "2601–2620 (zvezno)",
+    "benennung_des_flures": "navpično napisano ime (delno brano: »…se re kno 2 e-tzo…« — TO-READ pri 300 dpi)",
+    "owner": "Gemeinde (vseh 20 vrstic)",
+    "haus_no": "— (prazno)",
+    "note": "sekcija občinskih zemljišč: stolpec 1 = ime območja, stolpec 2 = Parzelle — model dveh vrst vpisov (številčeni Flure vs imenovani Bezirki)"
+  },
+  "f14_verdict": {
+    "previous_state": "F14: PUA parcelne številke (2–9978) in PS jaethe (1–9116) v isti rangi; p002 potrjuje tiskano glavo; cross_ref_to_pua UNKNOWN na 930",
+    "correction_1": "NR-02 v1 (356 ujemanj) je primerjal PS jaethe VREDNOSTI (površine v Joch/QKl) s PUA ŠTEVILKAMI = kategorijska napaka (površine ≠ številke); prava PS ključna kolona = Nro. der Parzelle (NIKOLI prepisana)",
+    "correction_2": "Površinska semantika zdaj potrjena: jaethe = Joch (cela), klafter = Quad. Klafter; 1 J = 1600 QKl → C4 prostor J·1600+QKl (val 90) = LITERALNA površina v kvadratnih klafterjih — vzorec p3: »1-1348« = 1 J 1348 QKl",
+    "rosetta_status": "TO-RESOLVE: PS Parzelle (21–~2820, zvezno) ↔ PUA (sekcija I–V, vsaka svoja številčna prostor) — vezava zahteva (a) celotno transkripcijo številčnih stolpcev, (b) identifikacijo meja sekcij (navpična imena Bezirkov, vzorec p133), (c) 300 dpi. Članski test pokritosti (PS številke v PUA-I) NIMA ločevalne moči: lokalna gostota PUA-I v nizkih rangih 76–96 % → P(20/20) ≈ 0,44 pri naključju — izrecno zabeleženo, brez lažne potrditve",
+    "honest_negative": "predhodni vpogled »p59 20/20 v PUA-I (P=1,3e-12)« je bil pri globalni gostoti 25 % navidezno zelo pomemben, a pri lokalni gostoti 96 % NIGNEDOKAZLJIV — popravek lastne statistične napake (vzporednik NR-02)"
+  },
+  "readings": {
+    "pass_rules": "vsaka vrednost nosi page, row (1–20 z leve), pass človeškega branja, confidence; UNCERTAIN = potreben 300 dpi",
+    "p003_flure_pass2": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    "p003_uncertain_rows": [],
+    "p020_parzelle": {"first": 341, "last": 360, "count": 20, "status": "CONFIRMED", "owners_sample": ["Krischan Franz h.63", "Schimaz Johann h.33", "Krischan Matthias h.36", "Krischan Jakob h.37", "Tillak Jakob h.35", "Haregina Johann h.28 (Prelosie)"]},
+    "p045_parzelle": {"first": 841, "last": 860, "count": 20, "status": "CONFIRMED", "owners_sample": ["Schaffaschick M. h.6", "Doleischitsch Matthias h.12/1", "Dragosch Greg h.5", "Navath Martin h.4", "Hren Michael h.10"]},
+    "p058_parzelle": {"first": 1101, "last": 1120, "count": 20, "status": "CONFIRMED (3x popravek 1x branja)", "owners_sample": ["Pedingz Jottes h.52", "Stauß Georg h.45", "Klebatschar h.46", "Schimiz Peter h.51", "Poscheg Michael h.20"]},
+    "p059_parzelle": {"first": 1121, "last": 1140, "count": 20, "status": "PROVISIONAL (1 prehod)", "owners_sample": ["Pascheg Michael h.20", "Pascheg Miko h.21", "Stangl Greg h.45", "Fodrig Greg h.41", "Kabler Matthias h.30"]},
+    "p084_parzelle": {"first": 1621, "last": 1640, "count": 20, "status": "PROVISIONAL (dvoumno 6xx/16xx pri 3x; model daje 1621–1640)", "owners_sample": ["Schamitsch Matthias h.1", "Heidele Johannes h.2", "Dragosch Greg h.5", "Navalt Martin h.4", "Krischand Greg h.62"]},
+    "p133_parzelle": {"first": 2601, "last": 2620, "count": 20, "status": "CONFIRMED", "owner": "Gemeinde", "benennung_col": "navpično ime Bezirka (TO-READ @300dpi)"}
+  },
+  "next_steps": [
+    "prenesti N083PS.pdf @ peskovniško sprejemljivi hitrosti ali po straneh 300 dpi (pdfPageImage = predogled, zadošča za strukturo, ne za 4-mestno gotovost)",
+    "celotna transkripcija stolpcev Benennung des Flures / Nro. der Parzelle čez 143 razpred (≈2871 vrstic) — determinističen instrument val 61, resumable",
+    "identifikacija meja Flurbezirkov (navpična imena, vzorec p133) → vezava PS page-ranges ↔ PUA sekcije I–V",
+    "šele nato: cross_ref_to_pua dvig UNKNOWN → specific (F14 rešitev) + Rosetta NR-02 v3 nad pravim imenskim prostorom"
+  ],
+  "invariants": {
+    "no_museum_content_change": "+0 zapisov / +0 virov / +0 KG / +0 UI",
+    "atlas_22": "NESPREMENJEN — pilot je diagnostični sloj (vzorec val 86b/90)",
+    "no_guessing": "vse UNCERTAIN vrednosti ostajajo oznake, nič rešeno z ugibanjem"
+  }
+}

@@ -92,3 +92,8 @@ research-griblje/raw-web-val86-2026-10/crops-v86/
 # val 88 — digit-split re-read izrezki (regenerabilno iz make-rowcrops-v88.py,
 # make-sheets-v88.py, make-sheetsB-v88.py; precedens val 85/86)
 research-griblje/raw-web-val88-2026-10/
+
+# val 92 — F14 Parzelle pilot: prenos pdfPageImage + izrezi (regenerabilni
+# iz URL-jev v artefaktu pilot-parzelle-v92.json; precedens val 85/86/88;
+# .gitattributes usmerja jpg/png v LFS, peskovnik nima git-lfs)
+research-griblje/raw-web-val92-2026-10/
