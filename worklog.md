@@ -4102,3 +4102,28 @@ Stage Summary:
 - C4 sklepa vala 90 (»metrika TO-DECODE«) dobi razlago: prostor J·1600+QKl je doslovna površina v QKl
 - NR-02 v1 umaknjen kot kategorijska napaka + popravljen lasten lažno-pomemben pokritostni vpogled (lokalna gostota!) — Rosetta ostaja TO-RESOLVE brez ugibanja
 - Naslednje: 300 dpi osnova → celotna transkripcija številskih stolpcev (~2871 vrstic, resumable) → meje Bezirkov (navpična imena) → F14 rešitev + Rosetta v3; 86b 2. del (kvota); ISSUE #72 sledi (Kresna pesem 1888, vsebinska poročila, DOZA/1468, Memento 2026)
+
+## Task 44 — val 93: ISSUE #72 točka 26 — Kresna pesem (1888) → lasten zapis MVG-114 — PR v pripravi
+
+---
+Task ID: 1
+Agent: Z.ai Code (glavna seja)
+Task: ISSUE #72, točka 26 — »Kresna pesem« 1888 vgrajena po evidence-first logiki kot lasten zapis MVG-114 (worklogova »naslednja« po valu 92: »ISSUE #72 sledi (Kresna pesem 1888, vsebinska poročila, DOZA/1468, Memento 2026)«)
+
+Work Log:
+- Branje details strani dLib.si za URN:NBN:SI:doc-ZP4FER74 (page_reader; direktni curl peskovniško blokiran) — vsa bibliografska polja potrjena + 3 NOVI podatki nad kuratorski zapis: avtor »Anonimno, Janko« (dLibova konvencija za anonimna dela), signatura Č 79/II 33565, DS II 64464, DS II 71008, RR, točen datum izida številke 20. 6. 1888 (zbirni zapis »celotna številka«)
+- Polno besedilo (TXT 5 kB / PDF 402 kB) nepridobljivo brez seje — dLib /stream/ preusmerja na details; pošteno dokumentirano kot TO_COLLECT (vzorec Leksikon 1937, 98. sklop — muzej ne obhodi pravil digitalne knjižnice); preizkušeni tudi: Wikivir (ni prepisa), Europeana (wrapper brez OCR), Wayback (brez arhiva)
+- Kontekst revije preverjen: sl.Wikivir »Dom in svet … 1888–1944« (curl 200) → letnik 1 = prvi letnik; MVG-065 (kresovanje/Matiček/Barle) prebran za brez-podvajanje
+- MVG-114 `kresna-pesem-1888` v src/lib/museum-content.ts: kategorija sege, DOCUMENTED, 1888/1888, koordinata ≈ jedro vasi (coordsApprox, vzorec MVG-109), brez slike; zgodba 4 odstavki sl+en (dejstvo → vrednost → odprto vprašanje povezave REVIEW → meja trditve + muzej išče)
+- 3 viri: dlib-kresna-pesem-1888 (VERIFIED bibliografija / TO_COLLECT vsebina, seja-vezan), wikisource-dom-in-svet (VERIFIED, CC BY-SA 4.0), odeon-totter-kres (deljen z MVG-065 — status povezave REVIEW; vir je bil deljen že prej → deljenih ostaja 68)
+- Nova postaja sprehoda »Vas in njeni ljudje« za kresovanjem (pokritost 1:1 ohranjena)
+- Izrecen prehod števca: 113 → 114 zapisov, 605 → 608 virov, 485 → 487 identitet; i18n ×5 (27 nizov: hero + walks coverNote + guide + visual-search + advent, vseh 5 jezikov)
+- Varovalke: tests/val93-issue72-kresna-pesem-1888.test.ts — 15 testov (bibliografija + URN/COBISS/signatura/Fr.Lampe, poštenost »ne dokazuje nastanka« sl+en, REVIEW hipoteza, brez podvajanja, +0 KG pin, deljeni vir 4 zapisi, i18n 114 + varovalka prot zastaranju \b113\b, pokritost sprehodov za kresovanjem); val91 pin 113 → >=113 z opombo o zakonitem prehodu
+- Dokumentacija: research-griblje/108-val93-issue72-kresna-pesem-1888.md + KAZALO 108 + README 147. sklop + Stanje zbirke 114/608/487/68 + worklog
+- QA: tsc čist · lint čist · readme-sync zeleno · ATLAS §22 NEIZMENJAN (novi viri izključno na MVG-114)
+- Push feat/val93-issue72-kresna-pesem-1888 → PR → CI → MERGE → brisanje veje → komentar na #72
+
+Stage Summary:
+- Kresna pesem 1888 = najstarejši doslej znani natisnjeni sled kresne pesmi, izrecno vezane na Griblje (starejši od zvezka Katarine Županič 1894–95 in objav Nika Županiča 1930s) — zbirka 114 zapisov
+- Poštenost: »Pevana v Gribljah« dokazuje peto-v-Gribljah 1888, NE nastanka; avtorstvo anonimno; povezava z Matičkovim/Barletovim zapisom = REVIEW (hipoteza, ne dejstvo — odloči besedilo); Fr. Lampe brez osebnostne identifikacije
+- Naslednje: branje polnega besedila (TXT @ dLib / NUK Č 79/II 33565) → razrešitev REVIEW; vsebinska poročila kod (2012–2014 + 21-0141); DOZA/1468; Memento 2026; 86b 2. del (kvota)

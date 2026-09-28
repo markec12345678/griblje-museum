@@ -9605,6 +9605,69 @@ export const seedExhibits: SeedExhibit[] = [
       },
     ],
   },
+  {
+    slug: "kresna-pesem-1888",
+    museumNo: "MVG-114",
+    addedAt: "2026-09-28",
+    category: "sege",
+    titleSi: "Kresna pesem (1888) — najstarejši natisnjeni sled pesmi, pevane v Gribljah",
+    titleEn: "The Bonfire Song (1888) — the oldest printed trace of a song sung in Griblje",
+    featured: false,
+    periodSi: "20. junij 1888 · Dom in svet, letnik 1, številka 6, Ljubljana (Katoliško tiskovno društvo)",
+    periodEn: "20 June 1888 · Dom in svet, volume 1, number 6, Ljubljana (Katoliško tiskovno društvo — the Catholic Printing Society)",
+    summarySi:
+      "Sredi junija 1888 je ljubljanski literarni mesečnik Dom in svet natisnil »Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki« — najstarejši doslej znani natisnjeni sled kresne pesmi, izrecno vezane na Griblje, šest let starejši od zvezka Katarine Županič. Naslov je vir sam: zaenkrat je dokazano, da je bila pesem leta 1888 objavljena kot pesem, pevana v Gribljih.",
+    summaryEn:
+      "In mid-June 1888 the Ljubljana literary monthly Dom in svet printed 'Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki' — the oldest known printed trace of a bonfire song explicitly tied to Griblje, six years older than Katarina Županič's notebook. The title is the source itself: for now it is proven that the song was published in 1888 as a song sung in Griblje.",
+    storySi:
+      "Dne 20. junija 1888 je ljubljanski literarni mesečnik Dom in svet — »literarni mesečnik, ki je izhajal v Ljubljani med 1888 in 1944«, kakor pravi Wikivir, leta 1888 pa je nosil prvi letnik — v šestem zvezku prvega letnika natisnil kratek naslov, ki je za ta muzej že dokument: »Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki«. Naslov pove, kar muzej ve, in točno toliko: pesem je bila po navedbi naslova pevana v Gribljah, vasi pa označene z natančnostjo, kakršno poznajo poštne torbe — »tri četrt ure od Podzemlja pri Metliki«. Zapis je anonimen — dLib.si ga vodi pod konvencijo »Anonimno, Janko«, svojo oznako za dela brez imena — in je izšel pri Katoliškem tiskovnem društvu z opombo uredništva, ki jo dLib opisuje kot »Z opombo uredništva (Fr.Lampe)«. Narodna in univerzitetna knjižnica hrani izvor pod signaturo Č 79/II 33565 (DS II 64464, DS II 71008, RR) in ga ponuja v prostem dostopu — PDF (402 kB) in TXT (5 kB); digitalna knjižnica zapis vodi pod URN:NBN:SI:doc-ZP4FER74 in COBISS.SI-ID 31722241.\n\nZa zbirko je to najstarejši doslej znani natisnjeni sled kresne pesmi, izrecno vezane na Griblje — starejši od zvezka Katarine Županič, ki je ljudsko gradivo iz Gribelj zapisovala 1894–1895 (MVG-043), in od vseh objav Nika Županiča iz tridesetih let 20. stoletja. Kres je šega, ki ne pusti predmeta: ostanejo pepel, pesem in spomin (MVG-065). Vsak zapis iz 19. stoletja je zato zlato, ta pa je hkrati tudi dokaz, da je gribeljska kresna pesem prišla do ljubljanskega tiska — sredi junija, tik pred večerom sv. Janeza, na katerega kres pripada.\n\nZapis ima tudi vprašanje, ki ga muzej pušča odprto. Kresovanje (MVG-065) pripoveduje, da je gribeljski Matija Totter — Jandreč Matiček — po navodilu prijatelja Janka Barleta zapisal običaj kresovanja in besedilo kresne pesmi za pozemeljsko faro, ki je obsegala tudi Griblje, Barle pa je gradivo objavil; po Radio Odeonu se je Matičku zahvalil prav v Domu in svetu. Ista revija, prvi letnik, ista šega, isto župnijsko območje: ali je leta 1888 natisnjena »Kresna pesem« natisnjena sled tistega zapisa? Brez polnega besedila muzej tega ne more odločiti in piše to kot REVIEW — povezava je hipoteza, ne dejstvo; odločitev dobi besedilo.\n\nMuzej tukaj piše tudi mejo, ki jo določa vir: »Pevana v Gribljah« dokazuje, da je bila pesem leta 1888 objavljena kot pesem, pevana v Gribljih — ne dokazuje, da je nastala v Gribljih; avtorstvo je anonimno; vsebina — besedilo pesmi, opomba Fr. Lampeta, narečne značilnosti, morebitne lokalne osebe, kraji in običaji — ostaja TO_COLLECT, ker je dLib-ov strežnik za polna besedila seja-vezan (isti vzorec kot pri Leksikonu 1937: muzej ne obhodi pravil digitalne knjižnice). Besedilo je vseeno na dosegu roke: PDF in TXT na dLib.si, signatura pa pove, kje stoji tisk. Muzej išče: prvo branje besedila — in z njim razrešitev REVIEW vprašanja o povezavi z Matičkovim zapisom — domačinski spomin na kresne pesmi teh gričev ter odgovor na vprašanje, ki ga postavlja MVG-065: ali so imele Griblje svojo kitico kresne pesmi?",
+    storyEn:
+      "On 20 June 1888 the Ljubljana literary monthly Dom in svet — 'the literary monthly published in Ljubljana between 1888 and 1944', as Wikisource puts it; 1888 was its first volume — printed, in the sixth instalment of volume one, a short title that is already a document for this museum: 'Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki' (The Bonfire Song; Sung in Griblje, three quarters of an hour from Podzemelj near Metlika). The title says exactly what the museum knows and no more: by the title's own statement the song was sung in Griblje, and the village is marked with the precision of a postal address — 'three quarters of an hour from Podzemelj near Metlika'. The record is anonymous — dLib.si keeps it under the convention 'Anonimno, Janko', its label for works without a name — and it was published by the Katoliško tiskovno društvo (the Catholic Printing Society) with an editorial note, which dLib describes as 'Z opombo uredništva (Fr.Lampe)' (with a note by the editorial board, Fr. Lampe). The National and University Library keeps the item under signature Č 79/II 33565 (DS II 64464, DS II 71008, RR) and offers it in open access — PDF (402 kB) and TXT (5 kB); the digital library carries the record under URN:NBN:SI:doc-ZP4FER74 and COBISS.SI-ID 31722241.\n\nFor the collection this is the oldest known printed trace of a bonfire song explicitly tied to Griblje — older than the notebook of Katarina Županič, who gathered folk material from Griblje in 1894–1895 (MVG-043), and older than all of Niko Županič's publications of the 1930s. A bonfire is a custom that leaves no object behind: ash, a song and a memory remain (MVG-065). Every record from the 19th century is gold, and this one is at the same time proof that the bonfire song of these villages reached the Ljubljana press — in mid-June, just before the eve of St. John, to which the bonfire belongs.\n\nThe record also carries a question the museum leaves open. The record Kresovanje (MVG-065) tells that Griblje's Matija Totter — Jandreč Matiček — at the instruction of his friend Janko Barle wrote down the bonfire custom and the text of the bonfire song for the Podzemelj parish, which included Griblje, and that Barle published the material; by Radio Odeon, he thanked Matiček precisely in Dom in svet. The same journal, the first volume, the same custom, the same parish territory: is the 'Kresna pesem' printed in 1888 the printed trace of that recording? Without the full text the museum cannot decide and writes this as REVIEW — the connection is a hypothesis, not a fact; the text will decide.\n\nThe museum also writes the boundary the source itself sets: 'Pevana v Gribljah' proves that the song was published in 1888 as a song sung in Griblje — it does not prove that it was created in Griblje; the authorship is anonymous; the content — the song's text, the note of Fr. Lampe, dialectal features, possible local persons, places and customs — remains TO_COLLECT, because dLib's server for full texts is session-bound (the same pattern as the 1937 Leksikon: the museum does not bypass the digital library's rules). The text is nevertheless within reach: PDF and TXT on dLib.si, and the signature says where the print stands. The museum seeks: the first reading of the text — and with it the resolution of the REVIEW question about the link with Matiček's recording — domestic memories of the bonfire songs of these hills, and the answer to the question MVG-065 asks: did Griblje have its own verse of the bonfire song?",
+    evidenceStatus: "DOCUMENTED",
+    lat: 45.57246,
+    lng: 15.29257,
+    coordsApprox: true,
+    yearFrom: 1888,
+    yearTo: 1888,
+    sources: [
+      {
+        key: "dlib-kresna-pesem-1888",
+        nameSi: "Anonimno: Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki — Dom in svet (Ljubljana), letnik 1, številka 6 (1888); digitaliziran zapis dLib.si",
+        nameEn: "Anonymous: Kresna pesem; Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki — Dom in svet (Ljubljana), volume 1, number 6 (1888); digitised record of dLib.si",
+        sourceType: "objava",
+        license: "javna last (anonimno delo iz leta 1888) — prost dostop dLib.si / public domain (anonymous work of 1888) — open access dLib.si",
+        url: "https://dlib.si/?URN=URN:NBN:SI:doc-ZP4FER74",
+        noteSi:
+          "Bibliografski zapis preverjen na dLib.si (93. val, issue #72, točka 26): naslov z izrecno lokalizacijo »Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki«; vir Dom in svet (Ljubljana), letnik 1, številka 6, leto 1888; založnik Katoliško tiskovno društvo; izvor Narodna in univerzitetna knjižnica; opis »Z opombo uredništva (Fr.Lampe)«; avtor v vodenju »Anonimno, Janko« (dLibova konvencija za anonimna dela); URN:NBN:SI:doc-ZP4FER74; COBISS.SI-ID 31722241; signatura Č 79/II 33565, DS II 64464, DS II 71008, RR; PDF (402 kB) + TXT (5 kB); prost dostop; celotna številka zbirnega zapisa datirana 20. 6. 1888. Status: VERIFIED — bibliografija in obstoj digitalnega vira; vsebina polnega besedila TO_COLLECT (dLib-ov strežnik za polna besedila seja-vezan — muzej ne obhodi pravil knjižnice; vzorec Leksikon 1937, 98. sklop).",
+        noteEn:
+          "The bibliographic record verified on dLib.si (wave 93, issue #72, item 26): the title with the explicit localisation 'Pevana v Gribljah, tri četrt ure od Podzemlja pri Metliki'; source Dom in svet (Ljubljana), volume 1, number 6, year 1888; publisher Katoliško tiskovno društvo (the Catholic Printing Society); origin the National and University Library; description 'Z opombo uredništva (Fr.Lampe)' (with a note by the editorial board, Fr. Lampe); the author kept as 'Anonimno, Janko' (dLib's convention for anonymous works); URN:NBN:SI:doc-ZP4FER74; COBISS.SI-ID 31722241; signature Č 79/II 33565, DS II 64464, DS II 71008, RR; PDF (402 kB) + TXT (5 kB); open access; the whole issue of the umbrella record dated 20 June 1888. Status: VERIFIED — the bibliography and the existence of the digital item; the content of the full text TO_COLLECT (dLib's full-text server is session-bound — the museum does not bypass the library's rules; the pattern of the 1937 Leksikon, collection stage 98).",
+      },
+      {
+        key: "wikisource-dom-in-svet",
+        nameSi: "Wikivir: Dom in svet — literarni mesečnik, Ljubljana 1888–1944",
+        nameEn: "Wikisource: Dom in svet — the literary monthly, Ljubljana 1888–1944",
+        sourceType: "spletni-vir",
+        license: "CC BY-SA 4.0",
+        url: "https://sl.wikisource.org/wiki/Dom_in_svet",
+        noteSi:
+          "Kontekst revije (VERIFIED, 93. val): »Literarni mesečnik Dom in svet je izhajal v Ljubljani med 1888 in 1944.« — potrdilo, da je letnik 1, v katerem je izšla »Kresna pesem«, prvi letnik revije. Prepisa pesmi na Wikiviru ni (preverjeno 93. vala); letna kazala revije ostajajo ena od poti do prihodnjega branja besedila.",
+        noteEn:
+          "Context of the journal (VERIFIED, wave 93): 'Literarni mesečnik Dom in svet je izhajal v Ljubljani med 1888 in 1944' (The literary monthly Dom in svet was published in Ljubljana between 1888 and 1944) — confirming that volume 1, in which the 'Kresna pesem' appeared, is the journal's first volume. The song has no transcription on Wikisource (verified in wave 93); the journal's year indexes remain one of the paths to a future reading of the text.",
+      },
+      {
+        key: "odeon-totter-kres",
+        nameSi: "Radio Odeon — Ljudje ob Kolpi: Matija Totter (kresovanje, kresna pesem, Adlešiška fara)",
+        nameEn: "Radio Odeon — People by the Kolpa: Matija Totter (the bonfire custom, the bonfire song, the Adlešiči parish)",
+        sourceType: "objava",
+        license: "avtorsko delo / copyrighted (navedba)",
+        url: "https://www.radio-odeon.com/novice/ljudje-ob-kolpi-matija-totter/",
+        noteSi:
+          "Kontekstni vir povezave — status povezave REVIEW: po Odeonu je Matija Totter — Jandreč Matiček — zapisal običaj kresovanja in besedilo kresne pesmi za pozemeljsko faro, ki je obsegala tudi Griblje, gradivo pa objavil Janko Barle (zahvala Matičku v Domu in svetu). Ista revija, prvi letnik, ista šega, isto župnijsko območje — identiteta besedila iz leta 1888 z Matičkovim zapisom pa ni dokazana (polno besedilo TO_COLLECT; nič ugibanja). Deljen vir z MVG-065.",
+        noteEn:
+          "The context source of the connection — the connection's status REVIEW: by Radio Odeon, Matija Totter — Jandreč Matiček — wrote down the bonfire custom and the text of the bonfire song for the Podzemelj parish, which included Griblje, and Janko Barle published the material (his thanks to Matiček in Dom in svet). The same journal, the first volume, the same custom, the same parish territory — but the identity of the 1888 text with Matiček's recording is not proven (the full text TO_COLLECT; no guessing). A source shared with MVG-065.",
+      },
+    ],
+  },
 ];
 
 export const seedStories: Omit<StoryDTO, "id">[] = [
