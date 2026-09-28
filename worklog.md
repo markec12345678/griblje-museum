@@ -4178,3 +4178,27 @@ Stage Summary:
 - Memento 2026 (točka 8): bibliografska identiteta VERIFIED (ISBN + PGD Griblje) + prva javno dostopna knjižnična lokacija (SSMULJ čitalnica) — naloga »pridobiti izvod« ima zdaj konkreten naslov
 - Zbirka: 114 zapisov / 616 virov / 495 identitet / 68 deljenih
 - Naslednje: eSDE prijava izven peskovnika (ID-ji prvih poročil 21-0130/21-0141/21-0432/23-0070/23-0168/23-0261) → dvigi REVIEW vsebin; vsebine šestih novih poročil prek RESCLJ čitalnice (Poljanska cesta 40, Ljubljana) in SAZU; Memento kazalo poglavij (SŠM čitalnica ali PGD/KS Griblje); DOZA/1468 signatura (MOM); Kresna pesem polno besedilo (dLib seja)
+
+---
+Task ID: 1
+Agent: Z.ai Code (glavna seja, val 96)
+Task: ISSUE #72, točka 21 — Uradni list RS 39/1996 (št. 2565): hidromelioracija/namakanje — 19 gribeljskih domačij s hišnimi številkami in parcelami — pozno časovno sidro vgrajeno na MVG-008 (user: "odlicno nadaljuj")
+
+Work Log:
+- Rekonstrukcija stanja: main @ 97f0d67 = val 95 (PR #97 mergan); »naslednje« val 95 vseh 4 točk vezane na dostop izven peskovnika (eSDE, RESCLJ/SŠM čitalnice, dLib seja) → izbira iz lastnega vrstnega reda issue-ja #72 (prioriteta #6): 1996 parcele kot pozno časovno sidro — javno dostopen uradni vir
+- PDF UL RS 39/1996 prenešen z uradnega portala (733 kB, 128 str.); odredba locirana na PDF str. 104–105 = tiskane str. 3500–3501
+- **Metodološki prelom:** besedilni plasti (pdftotext -layout in plain) sta pare ime–parcela vezali NEKONZISTENTNO (dvostolpčna postavitev; 2805 ↔ Brinc/Lukač) → vsi pari VIZUALNO POTRJENI na 300 dpi (pdftoppm + branje slike + izrez 2× za anomalijo) — pravilo: dvostolpčni uradni seznam = vizualna kontrola obvezna
+- Identiteta: št. 2565, ODREDBA o uvedbi hidromelioracijskega postopka na območju Občine Črnomelj; minister dr. Jože Osterc; Št. 355-03/28/96, 22. 7. 1996; 101. člen ZKZ; naslednja št. 2566 (agromelioracija Črnomelj I) = k. o. Zastava/Loka, brez Gribelj
+- Rezultat nad issue: program (5. člen) izrecno (črpališče ob Kolpi, akumulacija, primarni cevovod s hidranti, sekundarno omrežje; program agrarnih operacij 1995–2000); **19 domačij** (issue je navajal 4: Filak 11a z 8 parcelami, Šimec 66, J. Štrucelj 85, J. Križan 81) + 4 lastniki izven vasi na k. o. Griblje; natisnjena anomalija »9424/4« (A. Totter) transkribirana kakor natisnjena z opombo
+- Protokol issue izrecno v opombi in zgodbi: VERIFIED; sidro okoli 1996 (oseba → hišna št. → parcela → raba); brez prenosa lastništva nazaj v 1825; **hišne št. ≠ parcela izkopavanj** (Brodarič 72 ≠ 67/3 — kontekst val 95); odredba uvede postopek, ne zgrajenega omrežja (TO_COLLECT: fotografije črpališča, spomini)
+- Vgradnja: vir `ul-1996-hidromelioracija` (objava, javni pravni vir; URL uradni PDF) izključno na **MVG-008** (suša → namakanje) + nov odstavek zgodbe sl+en (kronološko med 1952 vodostajno serijo in 2022 ekstremi); brez podvajanja — vir NE citiran na osebnih zapisih (Filak/Križan/Štrucelj/Totter/Brinc)
+- Izrecen prehod števca: +0 zapisov (114) / +1 vir (616 → 617) / +1 identiteta (495 → 496) / deljenih ostaja 68 — readme-sync zeleno (/api/opendata 114/617); ATLAS §22 NEIZMENJAN (eno-zapisni vir — pin v testu)
+- +13 varovalk (tests/val96: identiteta dokumenta, program, 4 imena iz issue-ja, 19 domačij + anomalija 9424/4, 4 nezaselezenci, protokol, TO_COLLECT, zgodbe sl+en, kronološka umestitev, prehod števcev, eno-zapisni pin); val95 številčna varovalka 616/495 → >= z opombo (vzorec val94→93)
+- QA: tsc čist · testi val96 13/13 · (polni bun test po meri: glej CI) · docs: research-griblje/111-val96-issue72-ul1996-hidromelioracija.md + 00-KAZALO 111 + README 150. sklop + worklog
+
+Stage Summary:
+- ISSUE #72 prioriteta #6 »1996 parcele« izrecno izvedena: uradni presek vasi okoli 1996 (19 domačij + 4 nezaselezenci, hišne št. + parcele) je zdaj v muzeju kot VERIFIED pozno časovno sidro na MVG-008 — z izrecno mejo: brez prenosa nazaj, hišne št. niso identifikatorji izkopavanj
+- Nova metodološka pravila zabeležena: (a) dvostolpčni uradni seznami zahtevajo vizualno kontrolo par (besedilna plast ne zveže zanesljivo); (b) anomalije natisa se transkribirajo kakor natisnjene z opombo
+- Gospodarska zgodovina vasi dobi novo poglavje: namakanje iz Kolpe (črpališče, akumulacija, hidranti) kot uradni odgovor na sušo — zgrajenost omrežja ostaja TO_COLLECT
+- Zbirka: 114 zapisov / 617 virov / 496 identitet / 68 deljenih
+- Naslednje: eSDE prijava (ID-ji prvih poročil) → dvigi vsebin; RESCLJ čitalnica; Memento kazalo; DOZA/1468; Kresna pesem; fotografije črpališča (TO_COLLECT)
