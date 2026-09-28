@@ -3956,3 +3956,28 @@ Stage Summary:
 - Trajna dokumentacija: 98-issue84-3d-ar-raziskava-2026-09.md + KAZALO 98 + surovine; runtime aplikacije §22 NESPREMENJEN (čista raziskovalna plast)
 - Realizabilnost brez nabave: teren (GURS, 0 USD) + footprints (OSM, atribucija) + fotogrametrija (0 USD pod pogoji) + AR (model-viewer 0 USD) + vodič (obstoječi TTS/RAG sklad)
 - Naslednje (po protokolu issue-ja): 1) Street View/GKOT pokritost k.o. Griblje; 2) georeferenciranje katastrskega lista Griblje; 3) P1 prototip na izbrani lokaciji (odločitev muzeja); 4) polni citat Vindolanda študije; 5) RealityCapture licenčni prehod (5/2026)
+
+---
+Task ID: 10
+Agent: Z.ai Code (glavni orkestrator)
+Task: ISSUE #42 §4/§14 + #43 — val 86: PS N83 KOLONSKI TILE-i (kompozitni, z glavo stolpcev) — 2. prehod p56–142 + VGRADNJA F-PV-05 (J→K) (user: "odlicno nadaljuj")
+
+Work Log:
+- Rekonstrukcija stanja: worklog Task 9 → naslednji korak = val 86 kolonski tile-i (sidra iz crops-manifest-v85.json); prebrani 99-val85-ps-bandread-pilot.md + infrastruktura val 85 (make-bands/make-zooms/bandread + 2 compare builderja + patch-register-reread precedens)
+- make-tiles-v86.mts: kompozitni tile-i = stolpčna skupina (name 0,27–0,46·W; kultur 0,53–0,73·W) × h=328 (y-mreža VERBATIM val 85) @nativno+x2; detectRules VERBATIM + GUARD 8/8 proti crops-manifest-v85.json (p143 izpuščen, precedens val 85); tiles-manifest-v86.json committed (696 tile-ov)
+- PILOT NAPAKA + POPRAVEK (F-PV-06): tile-i BREZ glave izgubijo sidro Jaethe↔Kläfter — p121: 9× only_j (napačno; resnica v Kläther — trakovi val 85 + x4 zoom + Fürtrag 17|266); popravek = glava stolpcev na vsakem tile-u ([top_rule, top_rule+110] po izmerjenih horizontalnih pravilih, fallback 50; pas 0 že vsebuje) → p121 only_j = 0, p58 = 0 → pilot zeleno
+- Kvota 429 (201 prebranih / 146 zadržkov / 0 napak): pokritost p56–94 + p121 (40 strani, 806 vrstic + 2 alignment_short); p95–98 delne (izločene), p99–142 ostaja pass1; tile-read-v86.mts resumable (2 delavca, group filter) — 86b nadaljuje z `ALL`
+- Kopanje v surovine: odkrit per-row ±1 premik poravnave (p56: tile r7 = p1 r6) → **kolonska korekcija PAGE-LEVEL** (only_j < 10 % po strani; agregat 0,0 %); tile vrednosti = diagnostika (248 digit_mismatch), števke = 2-glasne; register dvx revertan in vgrajeno s končnimi pravili (v3)
+- VGRADNJA (build-register-v86.py, fail-fast, val 61 disciplina): 287 v86-tiles-jk + 43 arbitraž + 3 N|K razdelitve = 333 korekcij s snimkami jaethe/klafter_pass1_v82 + jk_review; 139 digit-split → marker REVIEW brez spremembe; 77 izrecnih N|K marker; 257 že prav; kultur/owner variante 637/153 = variant fields; 808 vrstic reading_pass v86-colonial-tiles; p1–55 + p143 NESPREMENJENI; audit band-v86/register-v86-changes.json (581 vnosov)
+- Compare (build-compare-tiles-v86.py): 3-glasna matrika po poljih + J/K distribucije po straneh + dedupe rezov (all-bands page guard) + Fürtrag kandidati 326 (tile_row + pass totals) → band-v86/compare-tiles-v86.json
+- §22 kaskada: build-knowledge-graph.py → **KG v2.0** (SRC-PS coverage dopolnjen; ID-ji stabilni 3.309/3.569/622/8/4; invariante čiste; 526482d2 → 6fb6fae8) → story-graph/timeline/coverage/source-coverage regenerirani (runtime = atlas resnica); build-analysis-v5.py guard sprošen (byte-identen); **analysis-v6.json** (build-analysis-v6.py; re-run byte-identno tudi na CI — 2. commit odstranil odvisnost od gitignored loga)
+- Testi: NOVO tests/val86-colonial-tiles.test.ts (19 varovalk) + osveženi pini (val84/val85/atlas-*/pv/pz/georef/evidence/coverage na KG v2.0, 808+990 reading_pass, PS passes 3); analysis-v5 determinizem ohranjen
+- QA: 596/0 testov · tsc čist · lint čist · api-smoke **101/101** (lokalni PostgreSQL 18.4 @5433 — embedded v /tmp, repo nespremenjen; prej peskovniška blokada brez baze) · brskalnik: domača/Kronika (34 kartic)/Zemljevid ČAS 1830 ✓, konzola čista, mobilno 390 px ✓
+- Push feat/val86-colonial-tiles → PR #87 → CI fail (analysis-v6 log odvisnost) → fix commit 4ad843c → CI 3/3 zeleno → MERGE @ 425d7b4 → veja izbrisana; komentarji na #43 (5861114642) in #42 (5861116894)
+- Dokumentacija: research-griblje/100-val86-colonial-tiles.md + KAZALO vnos 100 + README 139. sklop + .gitignore crops-v86/
+
+Stage Summary:
+- F-PV-05 VGRAJENA NA IZVOR: jaethe/klafter dodelitev korigirana na 808 vrsticah (333 korekcij s snimkami, 139 digit-split oznčenih za ročni re-read); register p56–94+121 = v86-colonial-tiles, ostalo PROVISIONAL v82 (kvota, resumable)
+- NOVA F-PV-06: glava stolpcev = obvezen del sheme izrezkov (brez nje kolonske skupine izgubijo sidro J↔K)
+- Metodološko: per-row poravnava ±1 nestabilna → page-level kolonska korekcija + per-row diagnostika; števke = 2-glasne; kultur/owner = variant fields
+- main @ 425d7b4 = val 86, CI zelen; naslednje: 86b (`tile-read-v86.mts ALL` → vgradnja 808 → 1.798) → Fürtrag monotona kontrola + 139 digit-split ročni re-read → PZ p48–65 → PT p7 @300dpi → PR Grenz-Beschreibung

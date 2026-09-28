@@ -1,0 +1,3476 @@
+{
+ "meta": {
+  "val": "86b",
+  "generated_by": "build-f11-fuertrag-v86.py",
+  "method": "F11 monotona kontrola čez celo verigo: stroga števčna veriga (fuzzy Fürtrag oznaka) + sumniki + 3-glasovno QKl soglasje + aritmetika vs register; NIČ sprememb podatkov (§4/§22)",
+  "pages": "56-143",
+  "anchors_v61": 13,
+  "anchors_v85": 7,
+  "joch_qkl": 1600,
+  "tile_full_pages": 40
+ },
+ "chain": [
+  {
+   "page": 56,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 57,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 58,
+   "strict": [
+    56
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 59,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 60,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 61,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 62,
+   "strict": [
+    60
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 63,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 64,
+   "strict": [
+    62
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 65,
+   "strict": [
+    65
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 66,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 67,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 68,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 69,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 70,
+   "strict": [
+    68
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 71,
+   "strict": [
+    69
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 72,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 73,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 74,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 75,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 76,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 77,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 78,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 79,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 80,
+   "strict": [
+    18
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 81,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 82,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 83,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 84,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 85,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 86,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 87,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 88,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 89,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 90,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 91,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 92,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 93,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 94,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 95,
+   "strict": [
+    92
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 96,
+   "strict": [
+    90
+   ],
+   "n_strict_voices": 2
+  },
+  {
+   "page": 97,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 98,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 99,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 100,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 101,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 102,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 103,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 104,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 105,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 106,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 107,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 108,
+   "strict": [
+    16
+   ],
+   "n_strict_voices": 2
+  },
+  {
+   "page": 109,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 110,
+   "strict": [
+    108
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 111,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 112,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 113,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 114,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 115,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 116,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 117,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 118,
+   "strict": [
+    16
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 119,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 120,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 121,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 122,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 123,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 124,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 125,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 126,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 127,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 128,
+   "strict": [
+    106
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 129,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 130,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 131,
+   "strict": [
+    119
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 132,
+   "strict": [
+    130
+   ],
+   "n_strict_voices": 2
+  },
+  {
+   "page": 133,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 134,
+   "strict": [
+    192
+   ],
+   "n_strict_voices": 1
+  },
+  {
+   "page": 135,
+   "strict": [
+    130
+   ],
+   "n_strict_voices": 2
+  },
+  {
+   "page": 136,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 137,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 138,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 139,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 140,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 141,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 142,
+   "strict": [],
+   "n_strict_voices": 0
+  },
+  {
+   "page": 143,
+   "strict": [],
+   "n_strict_voices": 0
+  }
+ ],
+ "counter_monotone": "5 kršitev",
+ "counter_violations": [
+  {
+   "page": 80,
+   "counter": 18,
+   "prev_strict": 69
+  },
+  {
+   "page": 96,
+   "counter": 90,
+   "prev_strict": 92
+  },
+  {
+   "page": 108,
+   "counter": 16,
+   "prev_strict": 90
+  },
+  {
+   "page": 118,
+   "counter": 16,
+   "prev_strict": 108
+  },
+  {
+   "page": 135,
+   "counter": 130,
+   "prev_strict": 192
+  }
+ ],
+ "counter_suspects": [
+  {
+   "page": 57,
+   "suspects": [
+    {
+     "voice": "p2",
+     "counter": 55,
+     "label": "55 Feldzähle"
+    }
+   ]
+  },
+  {
+   "page": 58,
+   "suspects": [
+    {
+     "voice": "p2",
+     "counter": 56,
+     "label": "56 Flurstücke"
+    }
+   ]
+  },
+  {
+   "page": 62,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 60,
+     "label": "60 Rurung"
+    }
+   ]
+  },
+  {
+   "page": 70,
+   "suspects": [
+    {
+     "voice": "p2",
+     "counter": 68,
+     "label": "68 Fürsäge"
+    }
+   ]
+  },
+  {
+   "page": 71,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 69,
+     "label": "69 Stück"
+    },
+    {
+     "voice": "p2",
+     "counter": 69,
+     "label": "69 Stück"
+    }
+   ]
+  },
+  {
+   "page": 72,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 70,
+     "label": "70 Fürstg"
+    },
+    {
+     "voice": "p2",
+     "counter": 70,
+     "label": "70 Einträge"
+    }
+   ]
+  },
+  {
+   "page": 81,
+   "suspects": [
+    {
+     "voice": "tile",
+     "counter": 79,
+     "label": ""
+    }
+   ]
+  },
+  {
+   "page": 102,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 100,
+     "label": "100 Jaethe"
+    },
+    {
+     "voice": "p2",
+     "counter": 100,
+     "label": "100 Fürste"
+    }
+   ]
+  },
+  {
+   "page": 103,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 101,
+     "label": "101 Klufter."
+    },
+    {
+     "voice": "p2",
+     "counter": 101,
+     "label": "101 Kärntner"
+    }
+   ]
+  },
+  {
+   "page": 109,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 107,
+     "label": "107 Verläge:"
+    },
+    {
+     "voice": "p2",
+     "counter": 107,
+     "label": "107 Verzehg."
+    }
+   ]
+  },
+  {
+   "page": 112,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 110,
+     "label": "110 Fürstbg."
+    },
+    {
+     "voice": "p2",
+     "counter": 110,
+     "label": "110 Fürstg."
+    }
+   ]
+  },
+  {
+   "page": 113,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 111,
+     "label": "111 Vering"
+    }
+   ]
+  },
+  {
+   "page": 116,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 114,
+     "label": "114 Fürstbg."
+    },
+    {
+     "voice": "p2",
+     "counter": 114,
+     "label": "114 Fürstbg."
+    }
+   ]
+  },
+  {
+   "page": 119,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 177,
+     "label": "177 Flurstücke"
+    },
+    {
+     "voice": "p2",
+     "counter": 177,
+     "label": "177 Fussreg."
+    }
+   ]
+  },
+  {
+   "page": 122,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 120,
+     "label": "120 Fürbaß"
+    },
+    {
+     "voice": "p2",
+     "counter": 120,
+     "label": "120 Fürstehe"
+    }
+   ]
+  },
+  {
+   "page": 125,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 125,
+     "label": "125 Wirthsch."
+    },
+    {
+     "voice": "p2",
+     "counter": 125,
+     "label": "125 Viertelg"
+    }
+   ]
+  },
+  {
+   "page": 126,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 110,
+     "label": "110. Urtheil"
+    }
+   ]
+  },
+  {
+   "page": 127,
+   "suspects": [
+    {
+     "voice": "p2",
+     "counter": 145,
+     "label": "145 Vorträge"
+    }
+   ]
+  },
+  {
+   "page": 128,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 106,
+     "label": "106 Fussreg:"
+    }
+   ]
+  },
+  {
+   "page": 131,
+   "suspects": [
+    {
+     "voice": "p2",
+     "counter": 119,
+     "label": "119 Ertrags:"
+    }
+   ]
+  },
+  {
+   "page": 136,
+   "suspects": [
+    {
+     "voice": "p1",
+     "counter": 134,
+     "label": "134 Fussreg"
+    }
+   ]
+  }
+ ],
+ "link_p54_p56": {
+  "p54_counter": 52,
+  "first_strict_page": 58,
+  "first_strict_counter": 56,
+  "delta": 4,
+  "ok": true
+ },
+ "voice_review": [
+  {
+   "page": 56,
+   "voices_qkl": {
+    "p1": [
+     11059
+    ],
+    "p2": [
+     23329
+    ],
+    "tile": [
+     13953
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 58,
+   "voices_qkl": {
+    "p1": [
+     1900,
+     10600
+    ],
+    "p2": [
+     4600
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 61,
+   "voices_qkl": {
+    "p1": [
+     11535
+    ],
+    "p2": [
+     11535
+    ],
+    "tile": [
+     8185
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 63,
+   "voices_qkl": {
+    "p1": [
+     6226
+    ],
+    "p2": [
+     16636
+    ],
+    "tile": [
+     1926
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 65,
+   "voices_qkl": {
+    "p1": [
+     14759
+    ],
+    "p2": [
+     14759
+    ],
+    "tile": [
+     14659
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 66,
+   "voices_qkl": {
+    "p1": [
+     1719
+    ],
+    "p2": [
+     13110
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 67,
+   "voices_qkl": {
+    "p1": [
+     19916
+    ],
+    "p2": [
+     10186,
+     18918
+    ],
+    "tile": [
+     10919,
+     11518
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 68,
+   "voices_qkl": {
+    "p1": [
+     11160,
+     17947
+    ],
+    "p2": [
+     25200,
+     30527
+    ],
+    "tile": [
+     1897
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 70,
+   "voices_qkl": {
+    "p1": [
+     5834
+    ],
+    "p2": [
+     1369,
+     5834
+    ],
+    "tile": [
+     6399,
+     18040
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 72,
+   "voices_qkl": {
+    "p1": [
+     9214
+    ],
+    "p2": [
+     9214
+    ],
+    "tile": [
+     3487
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 74,
+   "voices_qkl": {
+    "p2": [
+     13133,
+     19464
+    ],
+    "tile": [
+     19997
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 76,
+   "voices_qkl": {
+    "p1": [
+     1052,
+     417822
+    ],
+    "p2": [
+     1052,
+     117822
+    ],
+    "tile": [
+     10642,
+     18522
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 77,
+   "voices_qkl": {
+    "p1": [
+     9264
+    ],
+    "p2": [
+     1264
+    ],
+    "tile": [
+     9200
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 78,
+   "voices_qkl": {
+    "p1": [
+     24989
+    ],
+    "p2": [
+     29789
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 80,
+   "voices_qkl": {
+    "p1": [
+     4736,
+     26791
+    ],
+    "p2": [
+     564,
+     1036
+    ],
+    "tile": [
+     26736
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 81,
+   "voices_qkl": {
+    "p1": [
+     3526
+    ],
+    "p2": [
+     17226
+    ],
+    "tile": [
+     10476
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 84,
+   "voices_qkl": {
+    "p1": [
+     12323
+    ],
+    "p2": [
+     12323
+    ],
+    "tile": [
+     4971
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 85,
+   "voices_qkl": {
+    "p1": [
+     236,
+     18096
+    ],
+    "p2": [
+     236,
+     18086
+    ],
+    "tile": [
+     2398
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 87,
+   "voices_qkl": {
+    "p1": [
+     12357,
+     61809
+    ],
+    "p2": [
+     2858,
+     11409
+    ],
+    "tile": [
+     11149,
+     12437
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 92,
+   "voices_qkl": {
+    "p1": [
+     4973,
+     31578
+    ],
+    "p2": [
+     30572
+    ],
+    "tile": [
+     4995
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 93,
+   "voices_qkl": {
+    "p1": [
+     53238
+    ],
+    "p2": [
+     19678
+    ],
+    "tile": [
+     19310,
+     25168
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 97,
+   "voices_qkl": {
+    "p1": [
+     29398
+    ],
+    "p2": [
+     19393
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 99,
+   "voices_qkl": {
+    "p1": [
+     10006
+    ],
+    "p2": [
+     18606
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 100,
+   "voices_qkl": {
+    "p1": [
+     24479
+    ],
+    "p2": [
+     21473
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 102,
+   "voices_qkl": {
+    "p1": [
+     897
+    ],
+    "p2": [
+     191,
+     997
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 104,
+   "voices_qkl": {
+    "p1": [
+     22666
+    ],
+    "p2": [
+     7840
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 105,
+   "voices_qkl": {
+    "p1": [
+     16964
+    ],
+    "p2": [
+     16961
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 106,
+   "voices_qkl": {
+    "p1": [
+     17402
+    ],
+    "p2": [
+     11751,
+     15440
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 108,
+   "voices_qkl": {
+    "p1": [
+     24952
+    ],
+    "p2": [
+     24932
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 109,
+   "voices_qkl": {
+    "p1": [
+     26636
+    ],
+    "p2": [
+     26656
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 114,
+   "voices_qkl": {
+    "p1": [
+     8366,
+     31094
+    ],
+    "p2": [
+     5666
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 120,
+   "voices_qkl": {
+    "p1": [
+     39346
+    ],
+    "p2": [
+     33946
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 123,
+   "voices_qkl": {
+    "p1": [
+     931,
+     13721
+    ],
+    "p2": [
+     933,
+     14727
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 124,
+   "voices_qkl": {
+    "p1": [
+     23003,
+     25300
+    ],
+    "p2": [
+     25309
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 125,
+   "voices_qkl": {
+    "p1": [
+     14202
+    ],
+    "p2": [
+     1402
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 128,
+   "voices_qkl": {
+    "p1": [
+     3057
+    ],
+    "p2": [
+     16457
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 135,
+   "voices_qkl": {
+    "p1": [
+     8475,
+     10268
+    ],
+    "p2": [
+     8473
+    ]
+   },
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 137,
+   "voices_qkl": {
+    "p1": [
+     18120
+    ],
+    "p2": [
+     14987,
+     34120
+    ]
+   },
+   "verdict": "REVIEW"
+  }
+ ],
+ "arithmetic": [
+  {
+   "page": 56,
+   "register_qkl_total": 13317,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     11059
+    ],
+    "p2": [
+     23329
+    ],
+    "tile": [
+     13953
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 10770,
+    "hutweide": 1543,
+    "wald": 930,
+    "ödung": 74
+   },
+   "best_voice": "tile",
+   "best_diff": 636,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 57,
+   "register_qkl_total": 8366,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p2": [
+     2594,
+     10008
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 6445,
+    "wiese": 924,
+    "hutweide": 550,
+    "garten": 447
+   },
+   "best_voice": "p2",
+   "best_diff": 1642,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 58,
+   "register_qkl_total": 9578,
+   "gestrichen_rows": 0,
+   "rows": 19,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     1900,
+     10600
+    ],
+    "p2": [
+     4600
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 3847,
+    "wiese": 3699,
+    "wiesenpl[?]": 1075,
+    "plachl": 957
+   },
+   "best_voice": "p1",
+   "best_diff": 1022,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 59,
+   "register_qkl_total": 31888,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     3902,
+     15588
+    ],
+    "p2": [
+     3902,
+     15588
+    ]
+   },
+   "register_by_kultur": {
+    "lhota": 22192,
+    "acker": 9670,
+    "st[?]": 26
+   },
+   "best_voice": "p1",
+   "best_diff": 16300,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 60,
+   "register_qkl_total": 4104,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     3034,
+     4602
+    ],
+    "p2": [
+     3034,
+     4602
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 1999,
+    "gebüsch": 1510,
+    "wiese": 595
+   },
+   "best_voice": "p1",
+   "best_diff": 498,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 61,
+   "register_qkl_total": 6438,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     11535
+    ],
+    "p2": [
+     11535
+    ],
+    "tile": [
+     8185
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 6101,
+    "wiese": 259,
+    "hutweide": 78
+   },
+   "best_voice": "tile",
+   "best_diff": 1747,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 62,
+   "register_qkl_total": 7053,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     7600,
+     8174
+    ],
+    "p2": [
+     7600,
+     8179
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 6572,
+    "wiese": 481
+   },
+   "best_voice": "p1",
+   "best_diff": 547,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 63,
+   "register_qkl_total": 8392,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     6226
+    ],
+    "p2": [
+     16636
+    ],
+    "tile": [
+     1926
+    ]
+   },
+   "register_by_kultur": {
+    "wiese": 4269,
+    "acker": 3618,
+    "heu": 260,
+    "l.": 245
+   },
+   "best_voice": "p1",
+   "best_diff": 2166,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 64,
+   "register_qkl_total": 8744,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "lflzck": 5587,
+    "acker": 2034,
+    "dienstbod[?]": 429,
+    "u.": 360,
+    "wiese": 183,
+    "lflzgn": 146,
+    "62": 5
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 65,
+   "register_qkl_total": 17537,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     14759
+    ],
+    "p2": [
+     14759
+    ],
+    "tile": [
+     14659
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 16748,
+    "wiese": 789
+   },
+   "best_voice": "p1",
+   "best_diff": 2778,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 66,
+   "register_qkl_total": 14152,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     1719
+    ],
+    "p2": [
+     13110
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 7453,
+    "wiese": 6699
+   },
+   "best_voice": "p2",
+   "best_diff": 1042,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 67,
+   "register_qkl_total": 10032,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     19916
+    ],
+    "p2": [
+     10186,
+     18918
+    ],
+    "tile": [
+     10919,
+     11518
+    ]
+   },
+   "register_by_kultur": {
+    "jäthn": 8562,
+    "gärten": 1236,
+    "jäthng": 234
+   },
+   "best_voice": "p2",
+   "best_diff": 154,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 68,
+   "register_qkl_total": 27784,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     11160,
+     17947
+    ],
+    "p2": [
+     25200,
+     30527
+    ],
+    "tile": [
+     1897
+    ]
+   },
+   "register_by_kultur": {
+    "wiese": 13033,
+    "gartn": 7799,
+    "acker": 2820,
+    "wald": 2454,
+    "ackerland": 1678
+   },
+   "best_voice": "p2",
+   "best_diff": 2584,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 69,
+   "register_qkl_total": 1905639,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": true,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "hofraithe": 1894597,
+    "wiese": 5745,
+    "acker": 5222,
+    "hutweide": 75
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 70,
+   "register_qkl_total": 12040,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     5834
+    ],
+    "p2": [
+     1369,
+     5834
+    ],
+    "tile": [
+     6399,
+     18040
+    ]
+   },
+   "register_by_kultur": {
+    "lphue": 4236,
+    "hofraith": 3624,
+    "68": 1414,
+    "lphuen": 1282,
+    "linhut": 1242,
+    "lind.": 202,
+    "hutweide,": 40
+   },
+   "best_voice": "tile",
+   "best_diff": 5641,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 71,
+   "register_qkl_total": 12232,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     16901
+    ],
+    "p2": [
+     16901
+    ]
+   },
+   "register_by_kultur": {
+    "lipiza": 12232
+   },
+   "best_voice": "p1",
+   "best_diff": 4669,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 72,
+   "register_qkl_total": 19776,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     9214
+    ],
+    "p2": [
+     9214
+    ],
+    "tile": [
+     3487
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 8406,
+    "lögen": 5649,
+    "gartn": 2491,
+    "wiese": 1298,
+    "wald": 1046,
+    "hutweide": 626,
+    "dito": 260
+   },
+   "best_voice": "p1",
+   "best_diff": 10562,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 73,
+   "register_qkl_total": 18641,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "acker": 9421,
+    "hutweide": 9118,
+    "wiese": 102
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 74,
+   "register_qkl_total": 15510,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p2": [
+     13133,
+     19464
+    ],
+    "tile": [
+     19997
+    ]
+   },
+   "register_by_kultur": {
+    "gartn": 11634,
+    "leinwand": 1720,
+    "ackerland": 1299,
+    "hutweide": 516,
+    "schupfend": 329,
+    "summa": 12
+   },
+   "best_voice": "p2",
+   "best_diff": 2377,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 75,
+   "register_qkl_total": 13984,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     12034,
+     17910
+    ],
+    "p2": [
+     12024,
+     17910
+    ]
+   },
+   "register_by_kultur": {
+    "?": 13984
+   },
+   "best_voice": "p1",
+   "best_diff": 1950,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 76,
+   "register_qkl_total": 37954,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     1052,
+     417822
+    ],
+    "p2": [
+     1052,
+     117822
+    ],
+    "tile": [
+     10642,
+     18522
+    ]
+   },
+   "register_by_kultur": {
+    "?": 37954
+   },
+   "best_voice": "tile",
+   "best_diff": 19432,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 77,
+   "register_qkl_total": 8591,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     9264
+    ],
+    "p2": [
+     1264
+    ],
+    "tile": [
+     9200
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 6960,
+    "wald": 819,
+    "wiese": 424,
+    "hutweide": 388
+   },
+   "best_voice": "tile",
+   "best_diff": 609,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 78,
+   "register_qkl_total": 12221,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     24989
+    ],
+    "p2": [
+     29789
+    ]
+   },
+   "register_by_kultur": {
+    "gartn": 8638,
+    "acker": 1646,
+    "waldgrund": 1025,
+    "jahinga": 912
+   },
+   "best_voice": "p1",
+   "best_diff": 12768,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 79,
+   "register_qkl_total": 51574,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     3330,
+     30282
+    ],
+    "p2": [
+     3330,
+     30202
+    ]
+   },
+   "register_by_kultur": {
+    "?": 51574
+   },
+   "best_voice": "p1",
+   "best_diff": 21292,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 80,
+   "register_qkl_total": 23132,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     4736,
+     26791
+    ],
+    "p2": [
+     564,
+     1036
+    ],
+    "tile": [
+     26736
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 17837,
+    "lehn": 3486,
+    "weintraub": 808,
+    "wiese": 733,
+    "hutweide": 175,
+    "lehng": 93
+   },
+   "best_voice": "tile",
+   "best_diff": 3604,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 81,
+   "register_qkl_total": 17925,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     3526
+    ],
+    "p2": [
+     17226
+    ],
+    "tile": [
+     10476
+    ]
+   },
+   "register_by_kultur": {
+    "wald": 10720,
+    "19": 6876,
+    "steingr.": 203,
+    "p.": 78,
+    "schmieggrube": 48
+   },
+   "best_voice": "p2",
+   "best_diff": 699,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 82,
+   "register_qkl_total": 864,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     100
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 525,
+    "wiesen": 149,
+    "wiese": 106,
+    "wald": 71,
+    "brachzehend": 13
+   },
+   "best_voice": "p1",
+   "best_diff": 764,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 83,
+   "register_qkl_total": 7768,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": true,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "acker": 2831,
+    "g'sandt": 2590,
+    "dörf": 887,
+    "39": 703,
+    "steinbruch": 526,
+    "abtragsb.": 164,
+    "saugst.": 59,
+    "apfeln": 8
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 84,
+   "register_qkl_total": 14669,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     12323
+    ],
+    "p2": [
+     12323
+    ],
+    "tile": [
+     4971
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 9527,
+    "wiese": 3548,
+    "gefällte": 1476,
+    "wiesen": 118
+   },
+   "best_voice": "p1",
+   "best_diff": 2346,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 85,
+   "register_qkl_total": 15998,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     236,
+     18096
+    ],
+    "p2": [
+     236,
+     18086
+    ],
+    "tile": [
+     2398
+    ]
+   },
+   "register_by_kultur": {
+    "gärten": 11235,
+    "acker": 4763
+   },
+   "best_voice": "p2",
+   "best_diff": 2088,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 86,
+   "register_qkl_total": 3446,
+   "gestrichen_rows": 6,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     867
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 1910,
+    "a": 732,
+    "oben": 645,
+    "jäger": 120,
+    "brüden": 33,
+    "wiese": 6
+   },
+   "best_voice": "p1",
+   "best_diff": 2579,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 87,
+   "register_qkl_total": 10965,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     12357,
+     61809
+    ],
+    "p2": [
+     2858,
+     11409
+    ],
+    "tile": [
+     11149,
+     12437
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 10870,
+    "hofraite": 77,
+    "weidey": 18
+   },
+   "best_voice": "tile",
+   "best_diff": 184,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 88,
+   "register_qkl_total": 13351,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     7363,
+     12603
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 12027,
+    "wald": 917,
+    "hofraite": 190,
+    "hutweide": 119,
+    "wiese": 72,
+    "hofraithe": 26
+   },
+   "best_voice": "p1",
+   "best_diff": 748,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 89,
+   "register_qkl_total": 22230,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "acker": 9098,
+    "furtrang[?]": 8160,
+    "wiesen": 4972
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 90,
+   "register_qkl_total": 10629,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     20379
+    ],
+    "p2": [
+     3448,
+     20379
+    ],
+    "tile": [
+     20379
+    ]
+   },
+   "register_by_kultur": {
+    "alm": 3273,
+    "acker": 3163,
+    "stifts": 1539,
+    "gartn": 1138,
+    "wald": 1006,
+    "wiese": 510
+   },
+   "best_voice": "p2",
+   "best_diff": 7181,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 91,
+   "register_qkl_total": 72154,
+   "gestrichen_rows": 0,
+   "rows": 23,
+   "tile_full": true,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "acker": 65562,
+    "wiese": 2801,
+    "weide": 2049,
+    "gartn": 1596,
+    "weg": 109,
+    "hofraithe": 37,
+    "?": 0
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 92,
+   "register_qkl_total": 14949,
+   "gestrichen_rows": 0,
+   "rows": 19,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     4973,
+     31578
+    ],
+    "p2": [
+     30572
+    ],
+    "tile": [
+     4995
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 3602,
+    "weidwuchs": 2893,
+    "weidwachs": 2503,
+    "wiese": 2387,
+    "weidwuchs,": 1982,
+    "lauben": 1057,
+    "lauben,": 477,
+    "wiesen": 48
+   },
+   "best_voice": "tile",
+   "best_diff": 9954,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 93,
+   "register_qkl_total": 28170,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     53238
+    ],
+    "p2": [
+     19678
+    ],
+    "tile": [
+     19310,
+     25168
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 26021,
+    "[gestrichen]": 1464,
+    "dienstboten[?]": 685
+   },
+   "best_voice": "tile",
+   "best_diff": 3002,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 94,
+   "register_qkl_total": 19627,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     19207
+    ],
+    "p2": [
+     19207
+    ]
+   },
+   "register_by_kultur": {
+    "?": 19627
+   },
+   "best_voice": "p1",
+   "best_diff": 420,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 95,
+   "register_qkl_total": 17978,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     1529
+    ],
+    "p2": [
+     1529
+    ]
+   },
+   "register_by_kultur": {
+    "?": 17978
+   },
+   "best_voice": "p1",
+   "best_diff": 16449,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 96,
+   "register_qkl_total": 12754,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     20104
+    ],
+    "p2": [
+     20104
+    ]
+   },
+   "register_by_kultur": {
+    "ackerland": 7040,
+    "wiese": 5240,
+    "hutweide": 474
+   },
+   "best_voice": "p1",
+   "best_diff": 7350,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 97,
+   "register_qkl_total": 13718,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     29398
+    ],
+    "p2": [
+     19393
+    ]
+   },
+   "register_by_kultur": {
+    "?": 13718
+   },
+   "best_voice": "p2",
+   "best_diff": 5675,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 98,
+   "register_qkl_total": 16448,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     18435
+    ],
+    "p2": [
+     18435
+    ]
+   },
+   "register_by_kultur": {
+    "acker,": 15602,
+    "?": 846
+   },
+   "best_voice": "p1",
+   "best_diff": 1987,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 99,
+   "register_qkl_total": 12170,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     10006
+    ],
+    "p2": [
+     18606
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 12170
+   },
+   "best_voice": "p1",
+   "best_diff": 2164,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 100,
+   "register_qkl_total": 13663,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     24479
+    ],
+    "p2": [
+     21473
+    ]
+   },
+   "register_by_kultur": {
+    "ackerland": 12180,
+    "wiese": 1483
+   },
+   "best_voice": "p2",
+   "best_diff": 7810,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 101,
+   "register_qkl_total": 64706,
+   "gestrichen_rows": 0,
+   "rows": 19,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     6139,
+     27679,
+     29006
+    ],
+    "p2": [
+     27679,
+     29003
+    ]
+   },
+   "register_by_kultur": {
+    "hofraithen": 34000,
+    "wald": 21917,
+    "gartn": 2715,
+    "hutweide": 1798,
+    "reben": 1644,
+    "acker": 1631,
+    "wiese": 1001
+   },
+   "best_voice": "p1",
+   "best_diff": 35700,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 102,
+   "register_qkl_total": 13819,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     897
+    ],
+    "p2": [
+     191,
+     997
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 12928,
+    "hutweide": 764,
+    "wiese": 127
+   },
+   "best_voice": "p2",
+   "best_diff": 12822,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 103,
+   "register_qkl_total": 9549,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     7756,
+     16168
+    ],
+    "p2": [
+     7936,
+     16168
+    ]
+   },
+   "register_by_kultur": {
+    "?": 9549
+   },
+   "best_voice": "p2",
+   "best_diff": 1613,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 104,
+   "register_qkl_total": 12815,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     22666
+    ],
+    "p2": [
+     7840
+    ]
+   },
+   "register_by_kultur": {
+    "?": 12815
+   },
+   "best_voice": "p2",
+   "best_diff": 4975,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 105,
+   "register_qkl_total": 12826,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     16964
+    ],
+    "p2": [
+     16961
+    ]
+   },
+   "register_by_kultur": {
+    "?": 12826
+   },
+   "best_voice": "p2",
+   "best_diff": 4135,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 106,
+   "register_qkl_total": 16914,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     17402
+    ],
+    "p2": [
+     11751,
+     15440
+    ]
+   },
+   "register_by_kultur": {
+    "?": 16914
+   },
+   "best_voice": "p1",
+   "best_diff": 488,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 107,
+   "register_qkl_total": 15185,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     19571
+    ],
+    "p2": [
+     19571
+    ]
+   },
+   "register_by_kultur": {
+    "?": 15185
+   },
+   "best_voice": "p1",
+   "best_diff": 4386,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 108,
+   "register_qkl_total": 14199,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     24952
+    ],
+    "p2": [
+     24932
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 7568,
+    "wiese": 3522,
+    "hutweide": 1618,
+    "hofraithen": 1491
+   },
+   "best_voice": "p2",
+   "best_diff": 10733,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 109,
+   "register_qkl_total": 13752,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     26636
+    ],
+    "p2": [
+     26656
+    ]
+   },
+   "register_by_kultur": {
+    "?": 13752
+   },
+   "best_voice": "p1",
+   "best_diff": 12884,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 110,
+   "register_qkl_total": 7327,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     10634,
+     12008
+    ],
+    "p2": [
+     10634,
+     12008
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 5543,
+    "wiese": 730,
+    "hofraith": 665,
+    "gartn": 226,
+    "ebnet": 138,
+    "ebne": 25
+   },
+   "best_voice": "p1",
+   "best_diff": 3307,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 111,
+   "register_qkl_total": 15384,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "wiese": 3372,
+    "acker": 3285,
+    "hutweide": 2763,
+    "hofraithen": 2450,
+    "wald": 1849,
+    "reb": 892,
+    "gartn": 773
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 112,
+   "register_qkl_total": 12958,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     9725,
+     10834
+    ],
+    "p2": [
+     9725,
+     10834
+    ]
+   },
+   "register_by_kultur": {
+    "ackerland": 11234,
+    "wald": 1330,
+    "hutweide": 316,
+    "wiese": 78
+   },
+   "best_voice": "p1",
+   "best_diff": 2124,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 113,
+   "register_qkl_total": 16665,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     10389,
+     22447
+    ],
+    "p2": [
+     10389,
+     21847
+    ]
+   },
+   "register_by_kultur": {
+    "?": 16665
+   },
+   "best_voice": "p2",
+   "best_diff": 5182,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 114,
+   "register_qkl_total": 22381,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     8366,
+     31094
+    ],
+    "p2": [
+     5666
+    ]
+   },
+   "register_by_kultur": {
+    "?": 22381
+   },
+   "best_voice": "p1",
+   "best_diff": 8713,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 115,
+   "register_qkl_total": 0,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "?": 0
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 116,
+   "register_qkl_total": 12703,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     10377,
+     31512
+    ],
+    "p2": [
+     10377,
+     31512
+    ]
+   },
+   "register_by_kultur": {
+    "ackerland": 10022,
+    "baumgart": 1401,
+    "baumeria": 1056,
+    "einsaue": 127,
+    "allee": 51,
+    "wiese": 46
+   },
+   "best_voice": "p1",
+   "best_diff": 2326,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 117,
+   "register_qkl_total": 19711,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "ackerland": 17376,
+    "wiese": 1553,
+    "hofraith": 782
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 118,
+   "register_qkl_total": 11608,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     16732,
+     18500
+    ],
+    "p2": [
+     16753,
+     18500
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 6125,
+    "wiese": 4209,
+    "wiestat": 1274
+   },
+   "best_voice": "p1",
+   "best_diff": 5124,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 119,
+   "register_qkl_total": 11662,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     21489
+    ],
+    "p2": [
+     21489
+    ]
+   },
+   "register_by_kultur": {
+    "eldrich": 6822,
+    "lobisch": 2976,
+    "elnich": 1181,
+    "elnis": 667,
+    "elnid": 16
+   },
+   "best_voice": "p1",
+   "best_diff": 9827,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 120,
+   "register_qkl_total": 17079,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     39346
+    ],
+    "p2": [
+     33946
+    ]
+   },
+   "register_by_kultur": {
+    "lehend": 13314,
+    "acker": 2415,
+    "wiese": 1350
+   },
+   "best_voice": "p2",
+   "best_diff": 16867,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 121,
+   "register_qkl_total": 10676,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": true,
+   "voices_qkl_total": {
+    "p1": [
+     20246,
+     27406
+    ],
+    "p2": [
+     20246,
+     27406
+    ],
+    "tile": [
+     20246
+    ]
+   },
+   "register_by_kultur": {
+    "schindl": 3127,
+    "laumert": 2445,
+    "gartn": 2404,
+    "reben": 1725,
+    "schindel": 865,
+    "ebne": 110
+   },
+   "best_voice": "p1",
+   "best_diff": 9570,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 122,
+   "register_qkl_total": 12676,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     584,
+     22699
+    ],
+    "p2": [
+     584,
+     22699
+    ]
+   },
+   "register_by_kultur": {
+    "?": 12676
+   },
+   "best_voice": "p1",
+   "best_diff": 10023,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 123,
+   "register_qkl_total": 0,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     931,
+     13721
+    ],
+    "p2": [
+     933,
+     14727
+    ]
+   },
+   "register_by_kultur": {
+    "?": 0
+   },
+   "best_voice": "p1",
+   "best_diff": 931,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 124,
+   "register_qkl_total": 13869,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     23003,
+     25300
+    ],
+    "p2": [
+     25309
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 3041,
+    "hutweide": 2981,
+    "hofraith": 2582,
+    "reb": 2169,
+    "gartn": 1604,
+    "wiese": 1492
+   },
+   "best_voice": "p1",
+   "best_diff": 9134,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 125,
+   "register_qkl_total": 14259,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     14202
+    ],
+    "p2": [
+     1402
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 8666,
+    "wiese": 4352,
+    "hofraith": 1158,
+    "lehen": 83
+   },
+   "best_voice": "p1",
+   "best_diff": 57,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 126,
+   "register_qkl_total": 8466,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     16999
+    ]
+   },
+   "register_by_kultur": {
+    "wiese": 5834,
+    "gartn": 1564,
+    "acker": 846,
+    "eibe": 111,
+    "hutweide": 111
+   },
+   "best_voice": "p1",
+   "best_diff": 8533,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 127,
+   "register_qkl_total": 6601,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p2": [
+     152,
+     5799
+    ]
+   },
+   "register_by_kultur": {
+    "schinggraben": 2457,
+    "lobita": 1170,
+    "lobiten": 1038,
+    "145": 1002,
+    "lb.": 934
+   },
+   "best_voice": "p2",
+   "best_diff": 802,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 128,
+   "register_qkl_total": 4044,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     3057
+    ],
+    "p2": [
+     16457
+    ]
+   },
+   "register_by_kultur": {
+    "schinnguthe": 3556,
+    "lähfa": 488
+   },
+   "best_voice": "p1",
+   "best_diff": 987,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 129,
+   "register_qkl_total": 7129,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     4056,
+     121378
+    ],
+    "p2": [
+     4056,
+     121376
+    ]
+   },
+   "register_by_kultur": {
+    "schwingst.": 5740,
+    "burgstall": 490,
+    "rhipe": 431,
+    "eichnat": 199,
+    "(schwingst.)": 172,
+    "lohpe": 97
+   },
+   "best_voice": "p1",
+   "best_diff": 3073,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 130,
+   "register_qkl_total": 7490,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p2": [
+     4253
+    ]
+   },
+   "register_by_kultur": {
+    "wiese": 4282,
+    "hutweide": 2484,
+    "wald": 724
+   },
+   "best_voice": "p2",
+   "best_diff": 3237,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 131,
+   "register_qkl_total": 3697,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     5160
+    ],
+    "p2": [
+     5160
+    ]
+   },
+   "register_by_kultur": {
+    "ehaid": 1581,
+    "shingast": 1125,
+    "ribo": 350,
+    "lida": 239,
+    "lofa": 137,
+    "shingat": 90,
+    "edwa": 89,
+    "ehain": 86
+   },
+   "best_voice": "p1",
+   "best_diff": 1463,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 132,
+   "register_qkl_total": 7508,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     5480
+    ],
+    "p2": [
+     5480
+    ]
+   },
+   "register_by_kultur": {
+    "lößfeld": 4291,
+    "lehng": 1546,
+    "schlagwandl": 1218,
+    "abfall": 453
+   },
+   "best_voice": "p1",
+   "best_diff": 2028,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 133,
+   "register_qkl_total": 15000901,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "lößig": 15000901
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 134,
+   "register_qkl_total": 19705,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p2": [
+     5106,
+     24346
+    ]
+   },
+   "register_by_kultur": {
+    "lößig": 10954,
+    "192": 8751
+   },
+   "best_voice": "p2",
+   "best_diff": 4641,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 135,
+   "register_qkl_total": 17573,
+   "gestrichen_rows": 0,
+   "rows": 21,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     8475,
+     10268
+    ],
+    "p2": [
+     8473
+    ]
+   },
+   "register_by_kultur": {
+    "lößig": 17573
+   },
+   "best_voice": "p1",
+   "best_diff": 7305,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 136,
+   "register_qkl_total": 11723,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     13036,
+     13736
+    ]
+   },
+   "register_by_kultur": {
+    "wey": 11723
+   },
+   "best_voice": "p1",
+   "best_diff": 1313,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 137,
+   "register_qkl_total": 14920,
+   "gestrichen_rows": 0,
+   "rows": 19,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     18120
+    ],
+    "p2": [
+     14987,
+     34120
+    ]
+   },
+   "register_by_kultur": {
+    "wey": 13063,
+    "steinig": 1857
+   },
+   "best_voice": "p2",
+   "best_diff": 67,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 138,
+   "register_qkl_total": 13587,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     101,
+     2530
+    ],
+    "p2": [
+     101,
+     253
+    ]
+   },
+   "register_by_kultur": {
+    "?": 11732,
+    "acker": 1405,
+    "wiese": 450
+   },
+   "best_voice": "p1",
+   "best_diff": 11057,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 139,
+   "register_qkl_total": 15202,
+   "gestrichen_rows": 0,
+   "rows": 20,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     162,
+     189,
+     347,
+     1228
+    ],
+    "p2": [
+     162,
+     189,
+     447,
+     1328
+    ]
+   },
+   "register_by_kultur": {
+    "88": 1791,
+    "91": 1677,
+    "93": 1343,
+    "92": 1318,
+    "85": 1311,
+    "97": 1017,
+    "94": 1006,
+    "86": 975,
+    "81/82?": 874,
+    "100": 716,
+    "98": 692,
+    "83": 691,
+    "84": 591,
+    "96": 391,
+    "99": 366,
+    "95": 184,
+    "90": 156,
+    "87": 66,
+    "89": 37
+   },
+   "best_voice": "p2",
+   "best_diff": 13874,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 140,
+   "register_qkl_total": 0,
+   "gestrichen_rows": 0,
+   "rows": 15,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     52032
+    ]
+   },
+   "register_by_kultur": {
+    "?": 0,
+    "antheil": 0,
+    "lammat": 0,
+    "griessfellner": 0,
+    "area": 0
+   },
+   "best_voice": "p1",
+   "best_diff": 52032,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 141,
+   "register_qkl_total": 28693,
+   "gestrichen_rows": 0,
+   "rows": 44,
+   "tile_full": false,
+   "voices_qkl_total": {
+    "p1": [
+     102,
+     4221
+    ]
+   },
+   "register_by_kultur": {
+    "acker": 27718,
+    "wiese": 705,
+    "hutweide": 270
+   },
+   "best_voice": "p1",
+   "best_diff": 24472,
+   "verdict": "REVIEW"
+  },
+  {
+   "page": 142,
+   "register_qkl_total": 356,
+   "gestrichen_rows": 0,
+   "rows": 40,
+   "tile_full": false,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "wiese": 154,
+    "wald": 150,
+    "acker": 38,
+    "gartn": 14,
+    "raidig": 0
+   },
+   "verdict": "NO_FURTRAG"
+  },
+  {
+   "page": 143,
+   "register_qkl_total": 0,
+   "gestrichen_rows": 0,
+   "rows": 3,
+   "tile_full": false,
+   "voices_qkl_total": {},
+   "register_by_kultur": {
+    "?": 0
+   },
+   "verdict": "NO_FURTRAG"
+  }
+ ],
+ "anchors_v85_check": [
+  {
+   "page": 58,
+   "expect": {
+    "counter": 56,
+    "j": 6,
+    "qkl": 1009
+   },
+   "voices_hit": [
+    "p2",
+    "tile"
+   ],
+   "any_voice_match": true
+  },
+  {
+   "page": 59,
+   "expect": {
+    "counter": 57,
+    "j": 9,
+    "qkl": 1085
+   },
+   "voices_hit": [],
+   "any_voice_match": false
+  },
+  {
+   "page": 84,
+   "expect": {
+    "counter": 92,
+    "j": 7,
+    "qkl": 1135
+   },
+   "voices_hit": [],
+   "any_voice_match": false
+  },
+  {
+   "page": 98,
+   "expect": {
+    "counter": 96,
+    "j": 11,
+    "qkl": 835
+   },
+   "voices_hit": [
+    "p1",
+    "p2"
+   ],
+   "any_voice_match": true
+  },
+  {
+   "page": 109,
+   "expect": {
+    "counter": 109,
+    "j": 10,
+    "qkl": 1056
+   },
+   "voices_hit": [
+    "p2"
+   ],
+   "any_voice_match": true
+  },
+  {
+   "page": 121,
+   "expect": {
+    "counter": 119,
+    "j": 17,
+    "qkl": 266
+   },
+   "voices_hit": [],
+   "any_voice_match": false
+  },
+  {
+   "page": 133,
+   "expect": {
+    "counter": 137,
+    "j": 7,
+    "qkl": 934
+   },
+   "voices_hit": [],
+   "any_voice_match": false
+  }
+ ]
+}
