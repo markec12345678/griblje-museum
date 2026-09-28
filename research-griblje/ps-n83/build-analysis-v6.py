@@ -46,19 +46,18 @@ assert all(r.get('reading_pass') != 'v86-colonial-tiles' for r in reg if r['page
 comp = json.load(open(f'{OUTD}/band-v86/compare-tiles-v86.json'))
 chg = json.load(open(f'{OUTD}/band-v86/register-v86-changes.json'))
 
-# VLM statistika iz loga (določa kvota realnosti, nič polepševanja)
-log = open(f'{BD}/tile-read-v86.log').read().splitlines()
-ok_calls = sum(1 for l in log if re.search(r': OK \(try', l))
-retry_429 = sum(1 for l in log if '429' in l)
-perm_fail = sum(1 for l in log if 'FAILED permanently' in l)
+# VLM statistika IZ COMITTANIH artefaktov (log je gitignored — *.log):
+# število prebranih tile-ov = vlm-v86/*.json; napake = ERROR vnosi; OK klici ≈ št. JSON
+# (resumable skripta: ena datoteka = en uspešen klic; 429 zadržki so v logu, ne tu).
 tiles_total = len(json.load(open(f'{BD}/tiles-manifest-v86.json'))['tiles'])
-tiles_read = len([f for f in os.listdir(f'{BD}/vlm-v86') if f.endswith('.json')])
-# ERROR branja
+json_files = sorted(f for f in os.listdir(f'{BD}/vlm-v86') if f.endswith('.json'))
+ok_calls = len(json_files)
+tiles_read = len(json_files)
 errors = 0
-for f in os.listdir(f'{BD}/vlm-v86'):
-    if f.endswith('.json'):
-        j = json.load(open(f'{BD}/vlm-v86/{f}'))
-        if 'ERROR' in j: errors += 1
+for f in json_files:
+    j = json.load(open(f'{BD}/vlm-v86/{f}'))
+    if 'ERROR' in j: errors += 1
+retry_429 = -1  # ni rekonstruiran iz comittanih artefaktov (glej tile-read-v86.log lokalno)
 
 stats = comp['summary']['fields']
 tally = chg['tally']
@@ -94,8 +93,8 @@ analysis = {
     'method': {
         'vlm_calls': ok_calls,
         'errors': errors,
-        'rate_429_retries': retry_429,
-        'permanent_failures': perm_fail,
+        'rate_429_retries': retry_429 if retry_429 >= 0 else 'glej tile-read-v86.log (gitignored)',
+        'permanent_failures': 'glej tile-read-v86.log (gitignored)',
         'tiles_total': tiles_total,
         'tiles_read': tiles_read,
         'faza_K': 'kultur tile-i (kultur+jaethe+klafter ~0.53–0.73·W) × 4 pasovi (h=328, shema val 80/81/85) + glava, x2, vse strani 56–142',
@@ -147,4 +146,4 @@ analysis = {
 
 with open(f'{OUTD}/analysis-v6.json', 'w') as fh:
     json.dump(analysis, fh, ensure_ascii=False, indent=1)
-print(f'analysis-v6: vlm {ok_calls} OK / {retry_429}×429 / {errors} napak; jk popravki {jk_corr}, razdelitve {jk_split}, arbitraže {jk_arb}, potrjeno 3x {jk_conf}; only_j {only_j_pct}%')
+print(f'analysis-v6: vlm {ok_calls} prebranih tile-ov / {errors} napak; jk popravki {jk_corr}, razdelitve {jk_split}, arbitraže {jk_arb}, potrjeno 3x {jk_conf}; only_j {only_j_pct}%')
