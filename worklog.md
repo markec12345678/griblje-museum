@@ -4396,3 +4396,32 @@ Stage Summary:
 - Popravek vala 102 razrešen v praksi (13-0078 = ID 26367, prebrano v celoti)
 - Zbirka: 114 zapisov / 651 virov / 527 identitet / 69 deljenih
 - Naslednje: nove raziskave = novi vpisi (26-0326, 26-0379); Dular 1972 vsebina (CONFLICT 1972/1973) — izven peskovnika; BM Metlika (Vavpotič zbirka) — izven peskovnika; 86b del 3 ob VLM kvoti; PZ p48–65; PT p7; PR Grenz-Beschreibung; VS 48 v celoti
+
+---
+Task ID: 105
+Agent: Z.ai Code (glavna seja, val 105)
+Task: ISSUE #72 — zvezek Varstvo spomenikov, Poročila 48 prebran v celoti (javni PDF zvkds.si): bibliografska identiteta (muzej 2011 vs referenca 2013) RAZREŠENA + vsebinske primarno potrditve; bonus: VS 42 najden javno (sken brez besedilne plasti); register eArheologija re-check v živo (user: "odlicno nadaljuj")
+
+Work Log:
+- Sinhronizacija (user zahteva "pushaj sinhroniziraj kode readme"): main @ 87519cf (val 104, PR #108), 0 naprej/0 za, delovno drevo čisto; readme-sync 7/7 zeleno; CI na main zeleno (2/2)
+- Stanje #72 po valu 104 potrjeno: pokritost prvih poročil registra 24/24; izrecne čakajoče točke VLM (86b del 3, PZ/PT/PR, re-readi) + VS 48 letnica REVIEW + register re-check
+- 86b del 3 poskus: crops-v86 regeneriran (696 tile-ov × nat+x2 = 1392; GUARD v85 8/8); 2 chunk-a tile-read-v98 (540 s) → TRDO 429 na vseh klicih, 0 prebranih tile-ov (446/696 nespremenjeno); resumable za val 106
+- Register eArheologija re-check v živo (sloj 3692, EID LIKE %10094%): 26 zapisov — 26-0326 še brez URL_POROCILO1 (»2 - arheološko neopredeljeno«), 26-0379 še napredita — NESPREMENJENO
+- VS 48 (11,3 MB, 165 str.) javno prenešen s zvkds.si (sha256 a501f7dc…); kolofon: »Varstvo spomenikov, Poročila 48«, Ljubljana 2013, ISSN 1580-5166, urednica Biserka Ribnikar; zvezek zajema poročila o delih 2010 in 2011 → REVIEW letnica RAZREŠENA (»2011« = izkopavanja, »2013« = izida; združljivi)
+- Kazalo: vnos 30 = EŠD 10094 »Griblje – arheološko najdišče ob Kolpi« str. 74 (sami vnos o Gribljih; sosednja Podzemlja Kučar 202 + Podzemelj 203)
+- Razpenjane strani (PDF 38–39 = natisnjene 74–77) ekstrahirane kolonsko (6 stolpcev × 2 strani) za dobesedne verifikacije; -layout izvleček stisnjen (presledki) in hashiran
+- Članek vnos 30 (str. 74–76, podpis Alja Žorž) polno prebran: tipologija keramike = virovitiška kulturna skupina (bronasta doba) + vzhodnoneolitske in vučedolske skupine (eneolitik) — NOVO nad kuratorskim zapisom (kultura, ki jo 23-0070 piše »vitovitiška«, tu »virovitiška«); sektor 1, 320 m², skoraj 5.000 najdb; stratigrafija I–IV + IIa/IIb (SE 105); kamnina: brusi/žrmlje peščenjak/konglomerat + večja fino retuširana klina in sveder iz finozrnatih rožencev, malo odpadka = orodje le dodelano na mestu; sledi rimske dobe in zgodnjega srednjega veka; širjenje naselbine severno+vzhodno od izkopnega polja; etimologija Snoj 2009, 153 (griblja »brazda (na njivi)« / griva »s travo poraslo območje«); citat Mason 2009 (~700 m pas); pliokvartarni sedimenti Kolpe; foto faz II a/II b str. 76; POŠTENOST: dobesedno »…z arheološko metodo trajno odstranili in uničili del skupne kulturne dediščine«
+- VS 42 (45,8 MB) najden javno (042_2006_varstvo_spomenikov_porocila-1.pdf; sonda URL vzorca 404 → odkritje prek iskanja po strani zvkds.si): Acrobat Image Conversion 2016 = ČISTI SKEN, pdftotext 0 vrstic → vsebina G1/G4 čaka OCR/VLM; ime datoteke = KAZALNIK letnice (2006), ne kolofon → letnica ostaja REVIEW (pošten negativ, sha256 404dbb07…)
+- Vgradnja (add-only, 0 novih virov): 4 dopolnjene opombe — vs-48-zvkds-2010-2011 (doplnilo 105. vala: kolofon + razrešitev + vsebinske potrditve; status VERIFIED polno branje), vs-42-kanalizacija-g1-g4 (najden javno, sken brez besedilne plasti, REVIEW ostaja), 23-0168 note (RAZREŠENO sl+en), Žerjal/Pintér/Mason 2010 note (izida VS 48 = 2013 sl+en) + odstavek zgodbe MVG-083 sl+en + doplnilo pri »Muzej išče« sl+en; pouk vala 97 upoštevan (deterministični literal-replace z unikatnimi sidri, vgradnja-val105.py artefakt)
+- Izrecen prehod števca: +0 zapisov (114) / +0 virov (651) / +0 identitet (527) / deljenih 69 — NESPREMENJENO; ATLAS §22 NEIZMENJAN; veriga #100 §8 NEIZMENJANA
+- Testi: +20 varovalk (tests/val105: razrešitev letnice/kolofon/ISSN/vnos 30, tipologija virovitiška+vučedolska, kamnina, etimologija, širjenje, dobesedna izjava sl+en, VS 42 REVIEW ostaja + kazalnik ≠ kolofon, register nespremenjen, števci 114/651/527/69, artefakti sha256 + dobesedni nizi, README 159. sklop, docs 120)
+- QA: bunx tsc --noEmit čist · eslint na spremenjenih datotekah čist (testi v ignore listi — konvencija repo) · celotna testa: 909 pass / 11 skip / 0 fail (920 testov)
+- Docs: research-griblje/120-val105-vs48-zvezek-prebran.md + KAZALO 120 + README 159. sklop + worklog; surovine raw-web-val105-2026-10/ (vs48-full.txt stisnjen 165 str. + v48-p38/p39-c1..c6 kolonska ekstrakcija + griblje-article-p1 + vgradnja-val105.py + sha256.txt + summary.json; velika PDF hashirana/izbrisana: vs48 11,3 MB + vs42 45,8 MB)
+
+Stage Summary:
+- ISSUE #72: bibliografska identiteta VS 48 RAZREŠENA s primarnim virom (kolofon Ljubljana 2013, poročila o delih 2010/2011) — muzej ne izbira med letnicama: »2011« je leto izkopavanj, »2013« leto izida; neskladje vala 102 zaprto z dokazom
+- Nova tipološka potrditev izkopavanj 2011 (parcela 15/3): virovitiška kulturna skupina (bronasta doba) + vzhodnoneolitske in vučedolske skupine (eneolitik) — povezava na 23-0070 (vitovitiška, Bd C–D, parcela 67/3) kot poimenovanji istega sklopa
+- VS 42 najden javno — prva konkretna pot do vsebine G1/G4 (sken brez besedilne plasti → OCR/VLM ob kvoti); letnica zvezka ostaja REVIEW (kazalnik ≠ kolofon)
+- Register raziskav v živo nespremenjen (26-0326 oddano v pregled, 26-0379 napredita za okt./nov. 2026)
+- Zbirka: 114 zapisov / 651 virov / 527 identitet / 69 deljenih (nespremenjeno)
+- Naslednje: 86b del 3 (250 tile-ov p110–142, resumable — trdo 429 v tem valu); VS 42 OCR/VLM; PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; re-read 7+2 markerjev; Dular 1972 vsebina (izven peskovnika); BM Metlika (izven peskovnika)

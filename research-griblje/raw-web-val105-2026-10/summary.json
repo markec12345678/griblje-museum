@@ -1,0 +1,116 @@
+{
+  "val": 105,
+  "task": "ISSUE #72 — zvezek Varstvo spomenikov, Poročila 48 prebran v celoti (javni PDF zvkds.si): bibliografska identiteta (letnica muzej 2011 vs referenca 2013) RAZREŠENA + vsebinske primarno potrditve (virovitiška/vučedolska tipologija); bonus: zvezek VS 42 najden javno (sken brez besedilne plasti); register raziskav eArheologija ponovno preverjen v živo (nespremenjen)",
+  "datum": "2026-09-29",
+  "reprodukcija": "oba PDF prenešena z javnih URL (zvkds.si); sha256 zabeleženi v sha256.txt (tudi izbrisanih PDF); VS 48 besedilo izvedeno z pdftotext -layout + kolonska ekstrakcija (6 stolpcev × 2 razpenjani strani, PDF str. 38–39 = natisnjene str. 74–77); po stiskanju presledkov ponovno hashirano",
+  "kvota": {
+    "web_search": "ni klicano (0 klicev)",
+    "vlm": "429 trdo — 2 chunk-a tile-read-v98 (86b del 3) brez uspešnih klicev, 0 prebranih tile-ov; vsa dela vala 105 brez AI klicev (curl + pdftotext)",
+    "bypass": "deterministični curl na javne URL zvkds.si + pdftotext; VLM-neodvisna pot"
+  },
+  "metoda": [
+    "sonda: vs42/vs44/vs46/vs50 URL vzorec vs48_w_0-1.pdf = 404; spletno iskanje po strani zvkds.si razkrije datoteko 042_2006_varstvo_spomenikov_porocila-1.pdf (VS 42)",
+    "VS 48 (11,3 MB) javno prenešen; kolofon: Varstvo spomenikov, Poročila 48, Ljubljana 2013, ISSN 1580-5166, izdal ZVKDS, urednica Biserka Ribnikar",
+    "kazalo: vnos 30 = EŠD 10094, Griblje, »Griblje – arheološko najdišče ob Kolpi«, str. 74 (sami vnos o Gribljih v zvezku; sosednja Podzemlja = Kučar 202 + Podzemelj 203)",
+    "razpenjane strani: PDF str. 38–39 = natisnjene 74–77; kolonska ekstrakcija pdftotext -x/-W (6 stolpcev/stran) za dobesedno verifikacijo; skupni -layout izvleček stisnjen (presledki) in hashiran",
+    "VS 42 (45,8 MB) prenešen: Acrobat Image Conversion (2016) — pdftotext = 0 vrstic (čisti sken brez besedilne plasti) → vsebina čaka OCR/VLM; sha256 zabeležen, PDF izbrisan (nadmere konvencija)",
+    "register sloj 3692 (geohub.gov.si/ags/rest/services/MK/MK_ARHEO/MapServer/3692/query) ponovno poizveden v živo: EID LIKE %10094% = 26 značil; 26-0326 še brez URL_POROCILO1 (rezultat '2 - arheološko neopredeljeno'), 26-0379 še brez podatkov (napredita) — STANJE NESPREMENJENO glede valov 102/104"
+  ],
+  "vs48_zvezek": {
+    "datoteka": "vs48_w_0-1.pdf",
+    "url": "https://www.zvkds.si/wp-content/uploads/2024/03/vs48_w_0-1.pdf",
+    "sha256_pdf": "a501f7dc8e6fc173e6603b1a7ed09a30088891102e919df7e674335df5838088",
+    "strani_pdf": 165,
+    "kolofon": "Varstvo spomenikov, Poročila 48; Ljubljana 2013; ISSN 1580-5166; izdal in založil ZVKDS; urednica Biserka Ribnikar",
+    "zvezek_zajema": "poročila o delih leta 2010 in 2011",
+    "clanek": {
+      "vnos": 30,
+      "strani": "74–76",
+      "esd": "10094",
+      "naselje": "Griblje",
+      "obcina": "Črnomelj",
+      "ime": "Griblje – arheološko najdišče ob Kolpi",
+      "podrocje": "A",
+      "obdobje_glava": "mlajša kamena doba, bakrena doba, bronasta doba, starejša železna doba, zgodnje rimsko obdobje",
+      "podpis": "Alja Žorž (besedilo omenja vodstvo Barbare Nadbath in Alje Žorž)",
+      "fotografija": "str. 76: »Griblje, pogled na ostaline iz faz II a in II b – neolitik/eneolitik (foto: A. Žorž)«",
+      "kljucne_ugotovitve": [
+        "REVIEW letnica RAZREŠENA: izida 2013, izkopavanja 2011 — obe letnici muzeja združljivi (muzej je citiral »2011« = leto raziskave; poročilo 23-0168 navaja »2013« = leto izida)",
+        "predhodni terenski pregled 2010 → na parc. 15/3 potrjena prazgodovinska ostalina; izkopavanja junij–julij 2011; sektor 1 = približno 320 m²; skoraj 5.000 najdb",
+        "tipološka analiza keramike: virovitiška kulturna skupina (bronasta doba), vzhodnoneolitske in vučedolske skupine (eneolitik) — dobesedno iz članka; primerjava: poročilo 23-0070 (2023, parcela 67/3) piše »vitovitiška« — isti kulturni sklop, drugačno poimenovanje istega sklopa",
+        "stratigrafija v štirih fazah (I sterilne plasti/geološka podlaga — rečni sedimenti; II najstarejše, močno poškodovane — drsenje, vetri nanašanja, bioturbacija, moderna poselitev; IIb jame za kole + naselbinske jame vkopane v kulturno plast SE 105, IIa pod njo; III bron: redke jamice/stojke nadzemnih struktur — vsaj dva naselbinska objekta v osrednjem delu; večja jama z obilico odlomkov lončenine)",
+        "kamnina: obdelani peščenjaki in konglomerati (brusi, žrmlje) + retuširano orodje iz finozrnatih rožencev — izstopata večja fino retuširana klina in sveder; majhna količina odpadnega materiala → orodje tu le dodelano/izboljšano, le redko izdelano od začetka",
+        "nekateri odlomki lončenine in opeke → ljudje tudi v rimskem obdobju in zgodnjem srednjem veku",
+        "koncentracija ostalin v osrednjem in vzhodnem delu izkopnega polja → naselbina se je širila severno in vzhodno od raziskanega območja (skladno s prejšnjimi raziskavami)",
+        "širši prostor: poselitev ~700 m širok pas ob robu prve terase Kolpe (citat Mason 2009); odkritje iz raziskav 1999–2001 ob kanalizacijskem omrežju Griblje–Krasinec",
+        "etimologija po Snoj 2009, 153: hrvaška griblja »brazda (na njivi)« ali griva »s travo poraslo območje«",
+        "geološka podlaga: poplavne ravnice in rečne terase, pliokvartarni sedimenti Kolpe (gramoz, konglomerati, kvarcni peski, gline)",
+        "kisla prst → organske surovine nič, skoraj popolno pomanjkanje večjih kosov oglja/kosti/zob; le manjše količine ob mokrem sejanju → radiokarbonska kronologija struktur ostaja odprta",
+        "POŠTENOST poročila (dobesedno): »Vseeno pa moramo poudariti, da smo z arheološko metodo trajno odstranili in uničili del skupne kulturne dediščine.«"
+      ]
+    }
+  },
+  "vs42_zvezek": {
+    "status": "NAJDEN JAVNO / BREZ BESEDILNE PLASTI",
+    "url": "https://www.zvkds.si/wp-content/uploads/2024/03/042_2006_varstvo_spomenikov_porocila-1.pdf",
+    "sha256_pdf": "404dbb070745386c5f8ed4a7c1c77d9af611aed8364084d84a32d889b01985fe",
+    "velikost": "45,8 MB",
+    "pdf_izdelovalec": "Adobe Acrobat 10.1.16 Image Conversion Plug-in (2016-12-22) = čisti sken",
+    "besedilna_plast": "NI (pdftotext = 0 vrstic)",
+    "imes_datoteke_kazalnik": "042_2006_varstvo_spomenikov_porocila → zvezek 42 = kazalnik letnice 2006 (ime datoteke, NE kolofon — kolofon še nepreverjen)",
+    "naprej": "vsebina članka G1/G4 (Mason, Vareško, Pintér, str. 60–61) čaka OCR/VLM branje; točna bibliografska identiteta ostaja REVIEW"
+  },
+  "register_recheck": {
+    "metoda": "živa poizvedba sloj 3692 (EID LIKE %10094%)",
+    "rezultat": "26 zapisov — STANJE NESPREMENJENO glede valov 102/103/104",
+    "26-0326": "rezultat »2 - arheološko neopredeljeno« (poročilo oddano v pregled), URL_POROCILO1 še brez",
+    "26-0379": "brez podatkov (terenska raziskava napovedana za okt./nov. 2026)"
+  },
+  "vgradnja": {
+    "novi_viri": [],
+    "dopolnjeni_viri": [
+      "vs-48-zvkds-2010-2011 (noteSi/noteEn: Doplnilo 105. vala — zvezek prebran v celoti, identiteta razrešena, vsebinske potrditve)",
+      "vs-42-kanalizacija-g1-g4 (noteSi/noteEn: zvezek najden javno, sken brez besedilne plasti, REVIEW ostaja)",
+      "Žorž/Černe/Kramberger poročilo 23-0168 (noteSi/noteEn: Doplnilo 105. vala — REVIEW letnica RAZREŠENO)",
+      "zerjal-pinter-mason-2010-parcela-15-3 (noteSi/noteEn: Doplnilo 105. vala — izida VS 48 = 2013, poročila o delih 2010/2011)"
+    ],
+    "story": "MVG-083 storySi + odstavek »105. val je prebral zvezek…« / storyEn + odstavek »Wave 105 has read the volume…«",
+    "muzej_isce_doplnilo": "Doplnilo 105. vala pri »Muzej išče: vsebinska poročila raziskovalnih kod« (sl+en)",
+    "prehod_stevcev": "+0 zapisov (114) / +0 virov (651) / +0 identitet (527) / deljenih 69 — NESPREMENJENO"
+  },
+  "brez_podvajanja": [
+    "rg kontrola pred vgradnjo: virovitiško/vučedolsk/Snoj 2009/Ljubljana 2013/Poročila 48 = 0 zadetkov v src/lib/museum-content.ts pred valom 105",
+    "vsak finding ima status (RAZREŠENA / VERIFIED polno branje / NAJDEN JAVNO brez besedilne plasti / REVIEW ostaja)",
+    "poštenost: neskladje letnic razrešeno z dokazom (kolofon »Ljubljana 2013«), ne utišano; poročilova lastna izjava o uničenju dediščine zapisana z enako težo; VS 42 = pošten negativ (sken brez besedilne plasti); muzej ne izbira med letnicama — razlaga razrešuje obe"
+  ],
+  "fairness": [
+    "REVIEW letnica razrešena s primarnim virom (kolofon), ne z ugibanjem",
+    "VS 42: ime datoteke je KAZALNIK, ne kolofon — letnica ostaja REVIEW dokler naslovnica",
+    "»vitovitiška« vs »virovitiška« = poimenovanji istega kulturnega sklopa, zapisana kot primerjava, ne kot zlivanje trditev",
+    "poročilova izjava o uničenju dediščine zapisana dobesedno in z enako težo",
+    "26-0326/26-0379: register v živo ponovno preverjen — nič novega za vgradnjo, pošteno zapisano"
+  ],
+  "artefakti": {
+    "mapa": "research-griblje/raw-web-val105-2026-10/",
+    "komittani": [
+      "vs48-full.txt (polni pdftotext -layout izvleček, 165 strani, stisnjeni presledki)",
+      "v48-p38-c1..c6.txt + v48-p39-c1..c6.txt (kolonska ekstrakcija razpenjanih strani 74–77)",
+      "griblje-article-p1.txt (posredni izvleček članka)",
+      "vgradnja-val105.py (deterministična vgradnja — dobesedne zamenjave z unikatnimi sidri)",
+      "sha256.txt (vsi artefakti + izbrisani PDF)",
+      "summary.json (ta datoteka)"
+    ],
+    "hashirani_izbrisani": [
+      "vs48_w_0-1.pdf (11,3 MB)",
+      "vs42_2006.pdf (45,8 MB)"
+    ]
+  },
+  "docs": [
+    "research-griblje/120-val105-vs48-zvezek-prebran.md",
+    "research-griblje/00-KAZALO.md → 120",
+    "README.md → 159. sklop",
+    "worklog.md → Task ID 105"
+  ],
+  "testi": "tests/val105-issue72-vs48-zvezek.test.ts — varovalke: razrešitev letnice (kolofon), tipologija, poštenost, VS 42 sken, števci 114/651/527/69, artefakti sha256, muzej-išče doplnilo, brez podvajanja",
+  "86b_del_3": "preostanek 250 tile-ov p110–142 RESUMABLE (vlm-v86: 446/696); 2 chunk-a v tem valu brez uspešnih klicev (trdo 429); nadaljevanje ob kvoti: bun tile-read-v98.mts (izvoz crops-v86 regeneriran: bun make-tiles-v86.mts)"
+}
