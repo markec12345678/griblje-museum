@@ -4425,3 +4425,26 @@ Stage Summary:
 - Register raziskav v živo nespremenjen (26-0326 oddano v pregled, 26-0379 napredita za okt./nov. 2026)
 - Zbirka: 114 zapisov / 651 virov / 527 identitet / 69 deljenih (nespremenjeno)
 - Naslednje: 86b del 3 (250 tile-ov p110–142, resumable — trdo 429 v tem valu); VS 42 OCR/VLM; PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; re-read 7+2 markerjev; Dular 1972 vsebina (izven peskovnika); BM Metlika (izven peskovnika)
+
+---
+Task ID: 106
+Agent: Z.ai Code (glavna seja, val 106)
+Task: ISSUE #72 — zvezek Varstvo spomenikov, Poročila 42 prebran v celoti z OCR skena (kolofon razrešen december 2006) + dva članka o Gribljih: vnos 59 (izkopavanja 2005 — NOV primarni vir, TO_COLLECT razrešen) + vnos 60 (vrednotenje G1/G4 — popravek strani) (user: "odlicno nadaljuj")
+
+Work Log:
+- Nadaljevanje pripravljene veje feat/val106-issue72-vs42-ocr (iz origin/main @ e183484, val 105): OCR izpisi že prisotni v raw-web-val106-2026-10/ (10 TXT), vgradnja v museum-content.ts že delana (+1 vir, 2 dopolnjena, zgodba sl+en, muzej-išče doplnilo), pini val101–105 posodobljeni 651/527 → 652/528
+- Manjkajoče dopolnjeno v tej seji: docs research-griblje/121-val106-vs42-ocr-prebran.md + KAZALO 121 (vrh) + README 160. sklop + Stanje zbirke 114/652/528/69 + /api/opendata 114/652 + val105 README-pin popravljen (651/527 → 652/528) + tests/val106-issue72-vs42-ocr.test.ts (+26 varovalk)
+- Metoda vala (potrjena iz summary.json + surovin): tesseract 5, tessdata slv+deu, pdftoppm 150/300 dpi, psm 1; foliji PDF 49/50/51 = natisnjene 49/50/51 vizualno potrjeni (mapping 1:1 — v nasprotju z VS 48 razpenjanimi 2:1); rdeča vnosna številka nad glavo = vnos članka; kazalo (PDF 204–205) = Griblje pod vnos 59 + 60; 0 VLM / 0 spletnega iskanja
+- Kolofon VS 42: Ljubljana, december 2006, ISSN 1580-5166, urednica Biserka Ribnikar, naklada 600; zvezek zajema poročila o posegih 2005 → REVIEW letnice RAZREŠEN (ime datoteke 042_2006 potrjeno s kolofonom)
+- Vnos 59 (str. 49–50, Mason/Vareško/Pintér): izkopavanja 21. 3.–7. 4. 2005, parcele 2852/2, 2863, 2864, 2865, 2886; tri sonde (S:1+S:2 10 × 3 m, S:3 profil 20 m na paleostrugi Kolpe, predvidena čistilna naprava); stratigrafija S:1/S:2 9 faz (neolitska hodna površina SE 106 — obrtna dejavnost iz kremena; eneolitske jame za stojke → vsaj en objekt; postprazgodovinski aluvij z rimskimi/srednjeveškimi najdbami; srednjeveška jama + drenažni jarek + kolovoz; komasacija 1985 + vrednotenje 2004); sklep: najdišče okvirno neolitik + eneolitik, prostor uporabljen tudi rimsko + srednjeveško; večina intaktnih plasti na platoju verjetno NI poškodovana; poselitev zahodno od trase + močna erozija; NOV PRIMARNI VIR mason-varesko-pinter-2006-izkopavanja (VERIFIED) — TO_COLLECT prek Žorž 2011 razrešen
+- Vnos 60 (str. 51): vrednotenje G1/G4 potrjeno + POPRAVEK STRANI (kuratorski zapis je navajal 60–61; pravilno 51 — rdeča vnosna številka, foliji 1:1); 11 TJ (6 G1 + 5 G4), preostanek G4 ni bil izvedljiv (strnjeno naselje); G1 aluvialni nanosi (2 fazi), G4 intaktna kulturna plast brez struktur; koluvij težko ločljiv od intaktnih plasti; vs-42 REVIEW → VERIFIED + popravek sl+en; zorz-2011 TO_COLLECT razrešen
+- Nejasnost kazala (vnosa uvrščena v »rimsko obdobje«) zapisana, ni kritična; OCR napake ostanejo v surovinah, dvomi rešeni iz konteksta z zapisom
+- QA: bunx tsc --noEmit čist · eslint čist (testi v ignore listi — konvencija repo) · 946 testov: 935 pass / 11 skip / 0 fail; CI popratek: TS18048 noteSi opcijsko (?.) v varovalki brez podvajanja
+- Potek: push → PR #110 → CI (1. run: fail tipi — TS18048; popratek f30395d) → CI 3/3 ZELENO → merge (main @ 6ce7d2a) → izbris veje (oddaljena 204 + lokalna) → komentar na #72 (issuecomment-5894022275) → worklog
+- Docs: 121-val106 + KAZALO 121 + README 160. sklop + Stanje zbirke 114/652/528/69 + /api/opendata 114/652; surovine raw-web-val106-2026-10/ (10 OCR TXT + sha256.txt + summary.json; PDF 45,8 MB hashiran/izbrisan; tessdata izbrisana — javno preneisljiva)
+
+Stage Summary:
+- ISSUE #72: VS 42 (G1/G4) polno prebran z OCR — bibliografska identiteta RAZREŠENA (december 2006) + strani POPRAVLJENE (51, ne 60–61) + NOV PRIMARNI VIR za izkopavanja 2005 (vnos 59) — vse z javno ponovljivo metodo brez AI klicev
+- Nova zgodovinska plast: izkopavanja 2005 (fezalna kanalizacija) zdaj primarno dokumentirana — tri sonde, 9 faz, neolitska hodna površina z obrtno dejavnostjo (kremen), eneolitske jame za stojke; prva dokumentirana izkopavanja prazgodovinske naselbine na širšem območju
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih
+- Naslednje: 86b del 3 (250 tile-ov p110–142, resumable — trdo 429 v valih 105/86b2); PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; re-read 7+2 markerjev; Dular 1972 vsebina (izven peskovnika); BM Metlika (izven peskovnika); register: 26-0326 (oddano v pregled) + 26-0379 (napredita okt./nov. 2026)
