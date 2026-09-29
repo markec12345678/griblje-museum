@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "haus_no": "",
+      "name": "Herrseichner",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Bauer, Erben",
+      "stand": "~",
+      "wohnort": "~",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Berg, Wirthschaft",
+      "stand": "~",
+      "wohnort": "~",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Pölling, Wirthschaft",
+      "stand": "~",
+      "wohnort": "~",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 1 name: Herrseichner[?]",
+    "Row 2 name: Bauer, Erben[?]",
+    "Row 3 name: Berg, Wirthschaft[?]",
+    "Row 4 name: Pölling, Wirthschaft[?]"
+  ],
+  "observations": "The image shows the top portion of a handwritten table with printed column headers. The first entry 'Herrseichner' is written in large script across the header area. Subsequent rows show names followed by status and residence fields that appear to contain ditto marks (represented as short dashes or abbreviations). The bottom row is cut off by the edge of the image."
+}

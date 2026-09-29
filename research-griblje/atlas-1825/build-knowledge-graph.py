@@ -34,11 +34,12 @@ SRC_DOCS = [
     {"source_id": "SRC-PUA", "label": "PUA N83 — Alphabetisches Verzeichniß der Grund-Eigenthümer", "uodid": 373417, "docid": 41782, "pages": 49,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373417"},
     {"source_id": "SRC-PS", "label": "PS N83 — Protocol der Grund-Parcellen", "uodid": 373415, "docid": 41780, "pages": 143,
-     # KG v2.0 (val 86) + KG v2.2 (val 98, 86b del 2): kolonski tile-i 2. prehod zdaj na
-    # 55/87 straneh p56–142 (p56–94+121 val 86 + p95–109 val 98; p110–142 obnovljivo ob
-    # kvoti, resumable — vzorec val 86) — glej source-coverage + ps-n83/band-v86/ + KG-F11.
+     # KG v2.0 (val 86) + KG v2.2 (val 98, 86b del 2) + KG v2.3 (val 107, 86b del 3): kolonski
+    # tile-i 2. prehod zdaj na 86/87 straneh p56–142 (p56–94+121 val 86 + p95–109 val 98 +
+    # p110–120+p122–141 val 107; p142 obnovljivo ob kvoti — 1 tile — resumable, vzorec val 86)
+    # — glej source-coverage + ps-n83/band-v86/ + KG-F12.
      # Per-parcelne trditve ostajajo PROVISIONAL (§4 val 83); pasovni/zoom re-read (NR-14) še čaka.
-     "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic) + val 98 (86b del 2) na p95–109 (+301 vrstic → 1.109 skupaj; F-PV-05 J→K vgrajena: 287+43+3+14+87 popravkov s snimkami *_pass1_v82, only_j ~0 %; kultur/owner variante 896/1.063 = variant fields); p110–142 obnovljivo ob kvoti (resumable, vzorec val 86); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14)",
+     "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic) + val 98 (86b del 2) na p95–109 (+301 → 1.109 skupaj) + val 107 (86b del 3) na p110–120+p122–141 (+646 vrstic → 1.755 skupaj; F-PV-05 J→K vgrajena: 287+43+3+14+87+117+36+1 popravkov s snimkami *_pass1_v82, only_j ~0 %; kultur/owner variante 1.402/1.615 = variant fields); p142 obnovljivo ob kvoti (1 tile, resumable, vzorec val 86); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14)",
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373415"},
     {"source_id": "SRC-PT", "label": "PT N083 — Protocoll der Bau Parcellen", "uodid": 373416, "docid": 41781, "pages": 8,
      "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373416"},
@@ -717,9 +718,9 @@ def main():
     }
 
     out = {
-        "val": 98,
-        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno, p110–142 obnovljivo ob kvoti)",
-        "title": "knowledge-graph-1825 v2.2",
+        "val": 107,
+        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno) + KG v2.3 (val 107, 86b del 3: tile 3. glas zaključen na p110–120+p122–141 — PS parcele 898→779 po F-PV-05 korekcijah na izvoru, owner variante p63–141, v88 nedotaknjeno, p142 obnovljivo ob kvoti — 1 tile)",
+        "title": "knowledge-graph-1825 v2.3",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -796,6 +797,13 @@ def main():
                 "statement": "KG v2.2 (86b del 2): kolonski tile-i (kompozit z glavo, F-PV-06) 2. prehod razširjen s p56–94+121 na p95–109 (+15 strani, +301 vrstic s reading_pass v86-colonial-tiles → 1.109 od 2.871); vgradnja 1:1 pravila val 86 (page-level F-PV-05, snimke *_pass1_v82): 14 v86-tiles-jk + 87 v86-tiles-arbitrated + 7 novih digit-split REVIEW + 52 izrecnih N|K na novih straneh; owner_tile_v86 variante 910 (p63–109), kultur_tile_v86 259 (skupaj 1.063/896); digit_mismatch 12; v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p1–55 + p143 nedotaknjeno; p110–142 ostaja obnovljivo ob kvoti (resumable, vzorec val 86 — čaka ~250 tile-ov). PS parcele v parcelnem registru 930 → 898 (F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Quad. Kläfter; brez kultur zapisa 136 → 104). Nodes/edges/claims/ID-ji stabilni; kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage regenerirani.",
                 "status": "RESOLVED-V98 (odprta: p110–142 tile-i ob kvoti; F-PV-04; F11 REVIEW raven; F-PV-03)",
                 "provenance": "research-griblje/raw-web-val86-2026-10/ (tile-read-v86.mts + tile-read-v98.mts, vlm-v86/ 446/696 tile-ov) + ps-n83/band-v86/register-v86b-changes.json + build-register-v86b.py (val 98)",
+            },
+            {
+                "finding_id": "KG-F12",
+                "val": 107,
+                "statement": "KG v2.3 (86b del 3): kolonski tile-i (kompozit z glavo, F-PV-06) 2. prehod zaključen na p110–120 + p122–141 (+31 strani, +646 vrstic s reading_pass v86-colonial-tiles → 1.755 od 2.871); vgradnja 1:1 pravila val 86/98 (page-level F-PV-05, snimke *_pass1_v82): 117 v86-tiles-jk + 36 v86-tiles-arbitrated + 1 v86-pass2-split + 56 novih digit-split REVIEW + 14 col-split + 116 izrecnih N|K + 201 kept-k-k + 59 no-value + 30 page-not-qualified na novih straneh; owner_tile_v86 variante 552 (skupaj 1.615), kultur_tile_v86 506 (skupaj 1.402); digit_mismatch 98; v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p1–55 + p143 nedotaknjeno; p142 ostaja obnovljivo ob kvoti (1 tile — p142-t-kultur2, trdo 429; fail-fast page pravilo p142 drži v82-native-pass1). PS parcele v parcelnem registru 898 → 779 (F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Quad. Kläfter; brez kultur zapisa 104 → 92; raba: explicit 461 → 438, UNKNOWN 333 → 249). Nodes/edges/claims/ID-ji stabilni; kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage regenerirani.",
+                "status": "RESOLVED-V107 (odprta: p142-t-kultur2 ob kvoti; F-PV-04 pasovni re-read; F11 REVIEW raven; F-PV-03)",
+                "provenance": "research-griblje/raw-web-val86-2026-10/ (tile-read-v98.mts, vlm-v86/ 695/696 tile-ov; p113-t-kultur0 + p126-t-kultur0 reparerana iz .raw — literal newline v stringih) + ps-n83/band-v86/register-v107-changes.json + build-register-v107.py (val 107)",
             },
         ],
         "provenance": {

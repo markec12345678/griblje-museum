@@ -1,0 +1,74 @@
+{
+ "rows": [
+  {
+   "haus_no": "97",
+   "name": "17 235.",
+   "stand": "2. 18.",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "98",
+   "name": "16 199.",
+   "stand": "2. 17.",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "6 902.",
+   "stand": "2. 13.",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "99",
+   "name": "1½ 745.",
+   "stand": "2. 7.",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "1/8 1157.",
+   "stand": "2. 15.",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "100",
+   "name": "1/4 1157.",
+   "stand": "3. 11.",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "Summe",
+   "name": "420 1145.",
+   "stand": "206 58.",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "~",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": true
+  },
+  {
+   "haus_no": "89",
+   "name": "78",
+   "stand": "10.5 18.",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 0 name: 17 235. [?]",
+  "Row 3 name: 1½ 745. [?]",
+  "Row 6 haus_no: Summe [?]"
+ ],
+ "observations": "The image shows a vertical slice of the 'Des Eigenthümers' (Owner) section of the table. The header row is visible at the top but not transcribed per instructions. Row 6 appears to be a summary or total line (labeled 'Summe' in the house number column). Rows 7 and 8 are cut off at the bottom edge (row_cut: true). Several values in the 'Stand' and 'Name' columns appear to be written in red ink."
+}

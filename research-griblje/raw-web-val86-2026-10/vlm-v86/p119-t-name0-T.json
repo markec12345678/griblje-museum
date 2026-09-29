@@ -1,0 +1,40 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Seuntz Glou",
+   "stand": "Land",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Joh. Offenstadl Glou",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Aledizy Glou",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Gosdizy Gmoy",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "row 1 name: Seuntz Glou [?]",
+  "row 2 name: Joh. Offenstadl Glou [?]",
+  "row 3 name: Aledizy Glou [?]",
+  "row 4 name: Gosdizy Gmoy [?]"
+ ],
+ "observations": "The 'Haus Nro.' and 'Wohnort' columns are empty in this slice. The 'Stand' column uses ditto marks (\" or ~) for rows 2-4."
+}

@@ -1,13 +1,13 @@
 {
- "val": 98,
+ "val": 107,
  "pass": "PASS 8",
  "issue": 42,
- "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.2 + registrov; regeneriran val 98, 86b del 2)",
+ "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.3 + registrov; regeneriran val 107, 86b del 3)",
  "derived_from": [
-  "knowledge-graph-1825.json (v2.2) SOURCE nodes",
+  "knowledge-graph-1825.json (v2.3) SOURCE nodes",
   "pua/ps/pt registri",
   "a01/pass4b inventarja",
-  "ps-n83/band-v86/ (val 86 + val 98 kolonski tile-i)"
+  "ps-n83/band-v86/ (val 86 + val 98 + val 107 kolonski tile-i)"
  ],
  "deterministic": true,
  "sources": [
@@ -26,7 +26,7 @@
    "docid": 41780,
    "pages": 143,
    "status": "VERIFIED",
-   "note": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL; val 86 kolonski tile-i (z glavo): F-PV-05 J→K vgrajena na p56–94+121 (808 vrstic; 287+43+3 popravkov s snimkami, only_j 0,0 %); val 98 (86b del 2) razširitev na p95–109 (+301 vrstic → 1.109; +14 jk + 87 arbitraž s snimkami, owner/kultur variante 1.063/896); kolizije = variant fields, nič tiho popravljeno"
+   "note": "vrstični prepis 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 (1.798 vrstic) neodvisno prebrano z 2. prehodom (val 83, 88 klicev, 0 napak) — soglasje po poljih: struktura 1798≈1797 vrstic; numerična hrbtenica (classe/ertrag/capital) 92 % in več, stand 82 %, wohnort 86 %, jaethe 71,9 %, klafter 68,4 % (numeq); NIZKO: imena 19,6 %, kultur 47,3 % (zamenjave Wiese↔Hutweide), no_blatt 49 % (F15) — vrednosti so merjeno soglasje po poljih, ne umetni procent popolnosti; per-parcelne površine in imena ostajajo PROVISIONAL; val 86 kolonski tile-i (z glavo): F-PV-05 J→K vgrajena na p56–94+121 (808 vrstic; 287+43+3 popravkov s snimkami, only_j 0,0 %); val 98 (86b del 2) razširitev na p95–109 (+301 vrstic → 1.109; +14 jk + 87 arbitraž s snimkami, owner/kultur variante 1.063/896); val 107 (86b del 3) zaključek na p110–120+p122–141 (+646 vrstic → 1.755; +117 jk + 36 arbitraž + 1 pass2-split s snimkami, owner/kultur variante 1.615/1.402); kolizije = variant fields, nič tiho popravljeno"
   },
   {
    "source_id": "SRC-PT",
@@ -131,7 +131,7 @@
    "pages": 143,
    "rows": 2871,
    "passes": 3,
-   "note": "p1–55: val 57 pass1 + val 61 crop re-read; p56–143: val 82 pass1 + val 83 celostranski neodvisen re-read; val 86 kolonski tile-i (kompozit z glavo stolpcev, x2) = 2. prehod na 40 straneh (p56–94 + p121; 808 vrstic — kvota 429, obnovljivo z tile-read-v86.mts): F-PV-05 (sistemski pomik J→K) VGRADJENA — 287 jk popravkov + 43 arbitraž + 3 N|K razdelitve, vsak popravek s snimko jaethe/klafter_pass1_v82 + jk_review; 139 vrstic z razliko števk med prehodoma → marker v86-review-pass-digit-split (brez spremembe); kultur/owner tile različice = variant fields (637/153), nič tiho prepisano; per-row tile poravnava je ±1 nestabilna (p56 dokazano) → kolonska korekcija na nivoju strani (only_j 0,0 %), tile vrednosti = diagnostika; p95–98 delno + p99–142 (987 vrstic) ostaja reading_pass v82-native-pass1; Reb kvantitativa čaka name tile-e; audit: ps-n83/band-v86/register-v86-changes.json + register-v86b-changes.json (val 98); VAL 98 (86b del 2): tile 3. glas razširjen na p95–109 (+301 vrstic → 1.109 s reading_pass v86-colonial-tiles): 14 jk + 87 arbitraž + 52 izrecnih N|K + 7 novih digit-split REVIEW na novih straneh, owner_tile_v86 variante 910 (p63–109), kultur_tile_v86 259 (skupaj 1.063/896); v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p110–142 (~250 tile-ov) ostaja obnovljivo ob kvoti (resumable, vzorec val 86)"
+   "note": "p1–55: val 57 pass1 + val 61 crop re-read; p56–143: val 82 pass1 + val 83 celostranski neodvisen re-read; val 86 kolonski tile-i (kompozit z glavo stolpcev, x2) = 2. prehod na 40 straneh (p56–94 + p121; 808 vrstic — kvota 429, obnovljivo z tile-read-v86.mts): F-PV-05 (sistemski pomik J→K) VGRADJENA — 287 jk popravkov + 43 arbitraž + 3 N|K razdelitve, vsak popravek s snimko jaethe/klafter_pass1_v82 + jk_review; 139 vrstic z razliko števk med prehodoma → marker v86-review-pass-digit-split (brez spremembe); kultur/owner tile različice = variant fields (637/153), nič tiho prepisano; per-row tile poravnava je ±1 nestabilna (p56 dokazano) → kolonska korekcija na nivoju strani (only_j 0,0 %), tile vrednosti = diagnostika; p95–109 val 98 + p110–120+p122–141 val 107 s reading_pass v86-colonial-tiles; p142 (1 tile) ostaja v82-native-pass1; Reb kvantitativa čaka name tile-e; audit: ps-n83/band-v86/register-v86-changes.json + register-v86b-changes.json (val 98) + register-v107-changes.json (val 107); VAL 98 (86b del 2): tile 3. glas razširjen na p95–109 (+301 vrstic → 1.109 s reading_pass v86-colonial-tiles): 14 jk + 87 arbitraž + 52 izrecnih N|K + 7 novih digit-split REVIEW na novih straneh, owner_tile_v86 variante 910 (p63–109), kultur_tile_v86 259 (skupaj 1.063/896); v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); VAL 107 (86b del 3): tile 3. glas ZAKLJUČEN na p110–120+p122–141 (+646 vrstic → 1.755 s reading_pass v86-colonial-tiles): 117 jk + 36 arbitraž + 1 pass2-split + 56 novih digit-split REVIEW + 14 col-split + 116 izrecnih N|K + 30 page-not-qualified na novih straneh, owner_tile_v86 variante 552 (skupaj 1.615), kultur_tile_v86 506 (skupaj 1.402); v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p142 ostaja obnovljivo ob kvoti (1 tile — p142-t-kultur2, resumable, vzorec val 86)"
   },
   "PT": {
    "pages": 8,

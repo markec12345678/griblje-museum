@@ -1,7 +1,7 @@
 {
- "val": 98,
- "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno, p110–142 obnovljivo ob kvoti)",
- "title": "knowledge-graph-1825 v2.2",
+ "val": 107,
+ "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno) + KG v2.3 (val 107, 86b del 3: tile 3. glas zaključen na p110–120+p122–141 — PS parcele 898→779 po F-PV-05 korekcijah na izvoru, owner variante p63–141, v88 nedotaknjeno, p142 obnovljivo ob kvoti — 1 tile)",
+ "title": "knowledge-graph-1825 v2.3",
  "findings": [
   {
    "finding_id": "KG-F01",
@@ -78,6 +78,13 @@
    "statement": "KG v2.2 (86b del 2): kolonski tile-i (kompozit z glavo, F-PV-06) 2. prehod razširjen s p56–94+121 na p95–109 (+15 strani, +301 vrstic s reading_pass v86-colonial-tiles → 1.109 od 2.871); vgradnja 1:1 pravila val 86 (page-level F-PV-05, snimke *_pass1_v82): 14 v86-tiles-jk + 87 v86-tiles-arbitrated + 7 novih digit-split REVIEW + 52 izrecnih N|K na novih straneh; owner_tile_v86 variante 910 (p63–109), kultur_tile_v86 259 (skupaj 1.063/896); digit_mismatch 12; v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p1–55 + p143 nedotaknjeno; p110–142 ostaja obnovljivo ob kvoti (resumable, vzorec val 86 — čaka ~250 tile-ov). PS parcele v parcelnem registru 930 → 898 (F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Quad. Kläfter; brez kultur zapisa 136 → 104). Nodes/edges/claims/ID-ji stabilni; kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage regenerirani.",
    "status": "RESOLVED-V98 (odprta: p110–142 tile-i ob kvoti; F-PV-04; F11 REVIEW raven; F-PV-03)",
    "provenance": "research-griblje/raw-web-val86-2026-10/ (tile-read-v86.mts + tile-read-v98.mts, vlm-v86/ 446/696 tile-ov) + ps-n83/band-v86/register-v86b-changes.json + build-register-v86b.py (val 98)"
+  },
+  {
+   "finding_id": "KG-F12",
+   "val": 107,
+   "statement": "KG v2.3 (86b del 3): kolonski tile-i (kompozit z glavo, F-PV-06) 2. prehod zaključen na p110–120 + p122–141 (+31 strani, +646 vrstic s reading_pass v86-colonial-tiles → 1.755 od 2.871); vgradnja 1:1 pravila val 86/98 (page-level F-PV-05, snimke *_pass1_v82): 117 v86-tiles-jk + 36 v86-tiles-arbitrated + 1 v86-pass2-split + 56 novih digit-split REVIEW + 14 col-split + 116 izrecnih N|K + 201 kept-k-k + 59 no-value + 30 page-not-qualified na novih straneh; owner_tile_v86 variante 552 (skupaj 1.615), kultur_tile_v86 506 (skupaj 1.402); digit_mismatch 98; v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p1–55 + p143 nedotaknjeno; p142 ostaja obnovljivo ob kvoti (1 tile — p142-t-kultur2, trdo 429; fail-fast page pravilo p142 drži v82-native-pass1). PS parcele v parcelnem registru 898 → 779 (F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Quad. Kläfter; brez kultur zapisa 104 → 92; raba: explicit 461 → 438, UNKNOWN 333 → 249). Nodes/edges/claims/ID-ji stabilni; kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage regenerirani.",
+   "status": "RESOLVED-V107 (odprta: p142-t-kultur2 ob kvoti; F-PV-04 pasovni re-read; F11 REVIEW raven; F-PV-03)",
+   "provenance": "research-griblje/raw-web-val86-2026-10/ (tile-read-v98.mts, vlm-v86/ 695/696 tile-ov; p113-t-kultur0 + p126-t-kultur0 reparerana iz .raw — literal newline v stringih) + ps-n83/band-v86/register-v107-changes.json + build-register-v107.py (val 107)"
   }
  ],
  "provenance": {
@@ -111,7 +118,7 @@
     "uodid": 373415,
     "docid": 41780,
     "pages": 143,
-    "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic) + val 98 (86b del 2) na p95–109 (+301 vrstic → 1.109 skupaj; F-PV-05 J→K vgrajena: 287+43+3+14+87 popravkov s snimkami *_pass1_v82, only_j ~0 %; kultur/owner variante 896/1.063 = variant fields); p110–142 obnovljivo ob kvoti (resumable, vzorec val 86); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14)",
+    "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic) + val 98 (86b del 2) na p95–109 (+301 → 1.109 skupaj) + val 107 (86b del 3) na p110–120+p122–141 (+646 vrstic → 1.755 skupaj; F-PV-05 J→K vgrajena: 287+43+3+14+87+117+36+1 popravkov s snimkami *_pass1_v82, only_j ~0 %; kultur/owner variante 1.402/1.615 = variant fields); p142 obnovljivo ob kvoti (1 tile, resumable, vzorec val 86); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14)",
     "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373415"
    },
    {
@@ -251,10 +258,10 @@
    },
    {
     "category": "parcels",
-    "total": 2933,
+    "total": 2814,
     "breakdown": {
      "PUA": 2035,
-     "PS": 898,
+     "PS": 779,
      "geometry": "NOT AVAILABLE"
     }
    },
@@ -313,7 +320,7 @@
   "SOURCE": 13,
   "HOUSE": 167,
   "PERSON": 488,
-  "PARCEL": 2933,
+  "PARCEL": 2814,
   "BP": 100,
   "TOPONYM": 37,
   "EVENT": 3,
@@ -325,7 +332,7 @@
   "OWNER_OF": 254,
   "OWNER_VARIANT_OF": 224,
   "BP_BOUND_TO_HOUSE": 119,
-  "HAS_PARCEL": 3155,
+  "HAS_PARCEL": 3091,
   "RESIDENCE_DOCUMENTED_AT": 10,
   "AFFECTS_HOUSE": 3,
   "DOCUMENTED_IN": 38,
@@ -341,7 +348,7 @@
   "UNCERTAIN": 40,
   "FOUND": 2,
   "TRANSCRIBED": 2502,
-  "TRANSCRIBED_PROVISIONAL": 653,
+  "TRANSCRIBED_PROVISIONAL": 589,
   "VERIFIED_FORM": 24,
   "PROVISIONAL_MULTI — first word UNRESOLVED": 1
  },
@@ -370,7 +377,7 @@
    "uodid": 373415,
    "docid": 41780,
    "pages": 143,
-   "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic) + val 98 (86b del 2) na p95–109 (+301 vrstic → 1.109 skupaj; F-PV-05 J→K vgrajena: 287+43+3+14+87 popravkov s snimkami *_pass1_v82, only_j ~0 %; kultur/owner variante 896/1.063 = variant fields); p110–142 obnovljivo ob kvoti (resumable, vzorec val 86); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14)",
+   "coverage": "TRANSCRIBED 143/143 (2.871 vrstic: p1–55 val 57/61 + p56–143 val 82); p56–143 re-brano 2× (val 83) + val 86 kolonski tile-i (kompozit z glavo) 2. prehod na p56–94+121 (808 vrstic) + val 98 (86b del 2) na p95–109 (+301 → 1.109 skupaj) + val 107 (86b del 3) na p110–120+p122–141 (+646 vrstic → 1.755 skupaj; F-PV-05 J→K vgrajena: 287+43+3+14+87+117+36+1 popravkov s snimkami *_pass1_v82, only_j ~0 %; kultur/owner variante 1.402/1.615 = variant fields); p142 obnovljivo ob kvoti (1 tile, resumable, vzorec val 86); imena/kultur/absolutne površine PROVISIONAL (F-PV-04, NR-14)",
    "vac_details_url": "https://vac.sjas.gov.si/vac/search/details?id=373415"
   },
   {
@@ -46198,96 +46205,6 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p113-j1096",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1096,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j1021",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1021,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j69",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 69,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j1028",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1028,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j290",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 290,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j218",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 218,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p113-j1044",
    "node_type": "PARCEL",
    "section_original": null,
@@ -46333,55 +46250,10 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p113-j270",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 270,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j1186",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1186,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p113-j1089",
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 1089,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j110",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 110,
    "co_referenced": false,
    "land_use_category": null,
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -46427,36 +46299,6 @@
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 1050,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j146",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 146,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p113-j1247",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1247,
    "co_referenced": false,
    "land_use_category": null,
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -46633,10 +46475,10 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p114-j1239",
+   "node_id": "PARCEL:PS-p114-j1",
    "node_type": "PARCEL",
    "section_original": null,
-   "parcel_number": 1239,
+   "parcel_number": 1,
    "co_referenced": false,
    "land_use_category": null,
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -46757,21 +46599,6 @@
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 23,
-   "co_referenced": false,
-   "land_use_category": null,
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p114-j747",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 747,
    "co_referenced": false,
    "land_use_category": null,
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -47143,36 +46970,6 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p120-j157",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 157,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j128",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 128,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p120-j1253",
    "node_type": "PARCEL",
    "section_original": null,
@@ -47188,102 +46985,12 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p120-j280",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 280,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j199",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 199,
-   "co_referenced": false,
-   "land_use_category": "njiva",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j878",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 878,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j472",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 472,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p120-j237",
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 237,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j83",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 83,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j70",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 70,
-   "co_referenced": false,
-   "land_use_category": "njiva",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
    "origin": "PS",
    "source_ids": [
@@ -47342,36 +47049,6 @@
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 1,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j401",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 401,
-   "co_referenced": false,
-   "land_use_category": "njiva",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p120-j97",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 97,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -47743,96 +47420,6 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p128-j200",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 200,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j86",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 86,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j180",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 180,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j238",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 238,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j1001",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1001,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j18",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 18,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p128-j114",
    "node_type": "PARCEL",
    "section_original": null,
@@ -47863,21 +47450,6 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p128-j100",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 100,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p128-j299",
    "node_type": "PARCEL",
    "section_original": null,
@@ -47893,85 +47465,10 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p128-j69",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 69,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j84",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 84,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p128-j196",
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 196,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j199",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 199,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j62",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 62,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j117",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 117,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -48002,276 +47499,6 @@
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 82,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j138",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 138,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p128-j222",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 222,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j705",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 705,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j94",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 94,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j97",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 97,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j116",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 116,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j225",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 225,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j156",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 156,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j172",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 172,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j250",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 250,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j51",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 51,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j97",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 97,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j2971",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 2971,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j320",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 320,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j174",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 174,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j221",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 221,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j41",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 41,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p129-j25",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 25,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -48343,280 +47570,10 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p129-j83",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 83,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j1920",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1920,
-   "co_referenced": false,
-   "land_use_category": "pašnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j35",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 35,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j90",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 90,
-   "co_referenced": false,
-   "land_use_category": "pašnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j132",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 132,
-   "co_referenced": false,
-   "land_use_category": "pašnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j117",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 117,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j150",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 150,
-   "co_referenced": false,
-   "land_use_category": "pašnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j100",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 100,
-   "co_referenced": false,
-   "land_use_category": "pašnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j92",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 92,
-   "co_referenced": false,
-   "land_use_category": "pašnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j246",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 246,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j372",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 372,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j746",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 746,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j521",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 521,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j235",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 235,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p130-j639",
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 639,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j410",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 410,
-   "co_referenced": false,
-   "land_use_category": "gozd",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j197",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 197,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j65",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 65,
-   "co_referenced": false,
-   "land_use_category": "travnik",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j92",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 92,
    "co_referenced": false,
    "land_use_category": "travnik",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -48634,21 +47591,6 @@
    "parcel_number": 314,
    "co_referenced": false,
    "land_use_category": "gozd",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p130-j210",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 210,
-   "co_referenced": false,
-   "land_use_category": "travnik",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
    "origin": "PS",
    "source_ids": [
@@ -48688,280 +47630,10 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p133-j645",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 645,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j356",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 356,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j102",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 102,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j305",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 305,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j290",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 290,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j332",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 332,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j212",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 212,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j108",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 108,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j482",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 482,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j248",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 248,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j230",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 230,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j292",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 292,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j242",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 242,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p133-j146",
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 146,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j444",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 444,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j1282",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1282,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j1183",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1183,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p133-j710",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 710,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p134-j1",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -49037,201 +47709,6 @@
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 11,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j38",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 38,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j352",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 352,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j291",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 291,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j428",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 428,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j840",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 840,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j228",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 228,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j1404",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1404,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j433",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 433,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j1166",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1166,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j301",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 301,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j966",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 966,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j332",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 332,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p135-j890",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 890,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -49363,66 +47840,6 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p136-j358",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 358,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j196",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 196,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j210",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 210,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j220",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 220,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p136-j1699",
    "node_type": "PARCEL",
    "section_original": null,
@@ -49438,115 +47855,10 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p136-j130",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 130,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j445",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 445,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j165",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 165,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j63",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 63,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j338",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 338,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p136-j886",
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 886,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j1388",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 1388,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j240",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 240,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -49633,51 +47945,6 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p136-j874",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 874,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p136-j411",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 411,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p137-j400",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 400,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p137-j182",
    "node_type": "PARCEL",
    "section_original": null,
@@ -49693,55 +47960,10 @@
    "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
   },
   {
-   "node_id": "PARCEL:PS-p137-j786",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 786,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
    "node_id": "PARCEL:PS-p137-j459",
    "node_type": "PARCEL",
    "section_original": null,
    "parcel_number": 459,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p137-j538",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 538,
-   "co_referenced": false,
-   "land_use_category": "UNKNOWN",
-   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
-   "origin": "PS",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
-  },
-  {
-   "node_id": "PARCEL:PS-p137-j928",
-   "node_type": "PARCEL",
-   "section_original": null,
-   "parcel_number": 928,
    "co_referenced": false,
    "land_use_category": "UNKNOWN",
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
@@ -102569,84 +100791,6 @@
   },
   {
    "relation_id": "R-03651",
-   "from_entity": "HOUSE:H-059",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j1096",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03652",
-   "from_entity": "HOUSE:H-034",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j1021",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03653",
-   "from_entity": "HOUSE:H-035",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j69",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03654",
-   "from_entity": "HOUSE:H-016",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j1028",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03655",
-   "from_entity": "HOUSE:H-062",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j290",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03656",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j218",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03657",
    "from_entity": "HOUSE:H-081",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1044",
@@ -102659,7 +100803,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03658",
+   "relation_id": "R-03652",
    "from_entity": "HOUSE:H-018",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1038",
@@ -102672,33 +100816,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03659",
-   "from_entity": "HOUSE:H-051",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j270",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03660",
-   "from_entity": "HOUSE:H-010",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j1186",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03661",
+   "relation_id": "R-03653",
    "from_entity": "HOUSE:H-051",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1089",
@@ -102711,20 +100829,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03662",
-   "from_entity": "HOUSE:H-050",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j110",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03663",
+   "relation_id": "R-03654",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1200",
@@ -102737,7 +100842,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03664",
+   "relation_id": "R-03655",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1109",
@@ -102750,7 +100855,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03665",
+   "relation_id": "R-03656",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1050",
@@ -102763,33 +100868,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03666",
-   "from_entity": "HOUSE:H-011",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j146",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03667",
-   "from_entity": "HOUSE:H-005",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p113-j1247",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03668",
+   "relation_id": "R-03657",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1190",
@@ -102802,7 +100881,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03669",
+   "relation_id": "R-03658",
    "from_entity": "HOUSE:H-069",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1168",
@@ -102815,7 +100894,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03670",
+   "relation_id": "R-03659",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1046",
@@ -102828,7 +100907,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03671",
+   "relation_id": "R-03660",
    "from_entity": "HOUSE:H-006",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j7207",
@@ -102841,7 +100920,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03672",
+   "relation_id": "R-03661",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j946",
@@ -102854,7 +100933,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03673",
+   "relation_id": "R-03662",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j749",
@@ -102867,7 +100946,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03674",
+   "relation_id": "R-03663",
    "from_entity": "HOUSE:H-008",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1400",
@@ -102880,7 +100959,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03675",
+   "relation_id": "R-03664",
    "from_entity": "HOUSE:H-013",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1100",
@@ -102893,7 +100972,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03676",
+   "relation_id": "R-03665",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j115",
@@ -102906,7 +100985,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03677",
+   "relation_id": "R-03666",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j516",
@@ -102919,7 +100998,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03678",
+   "relation_id": "R-03667",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j6",
@@ -102932,10 +101011,10 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03679",
+   "relation_id": "R-03668",
    "from_entity": "HOUSE:H-061",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p114-j1239",
+   "to_entity": "PARCEL:PS-p114-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -102945,7 +101024,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03680",
+   "relation_id": "R-03669",
    "from_entity": "HOUSE:H-056",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j800",
@@ -102958,7 +101037,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03681",
+   "relation_id": "R-03670",
    "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1044",
@@ -102971,7 +101050,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03682",
+   "relation_id": "R-03671",
    "from_entity": "HOUSE:H-062",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j10",
@@ -102984,7 +101063,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03683",
+   "relation_id": "R-03672",
    "from_entity": "HOUSE:H-061",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1249",
@@ -102997,7 +101076,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03684",
+   "relation_id": "R-03673",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1074",
@@ -103010,7 +101089,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03685",
+   "relation_id": "R-03674",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1190",
@@ -103023,7 +101102,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03686",
+   "relation_id": "R-03675",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1274",
@@ -103036,7 +101115,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03687",
+   "relation_id": "R-03676",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j23",
@@ -103049,20 +101128,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03688",
-   "from_entity": "HOUSE:H-016",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p114-j747",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03689",
+   "relation_id": "R-03677",
    "from_entity": "HOUSE:H-149",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
@@ -103075,7 +101141,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03690",
+   "relation_id": "R-03678",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
@@ -103088,7 +101154,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03691",
+   "relation_id": "R-03679",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
@@ -103101,7 +101167,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03692",
+   "relation_id": "R-03680",
    "from_entity": "HOUSE:H-013",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
@@ -103114,7 +101180,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03693",
+   "relation_id": "R-03681",
    "from_entity": "HOUSE:H-069",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
@@ -103127,7 +101193,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03694",
+   "relation_id": "R-03682",
    "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -103140,7 +101206,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03695",
+   "relation_id": "R-03683",
    "from_entity": "HOUSE:H-050",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -103153,7 +101219,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03696",
+   "relation_id": "R-03684",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -103166,7 +101232,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03697",
+   "relation_id": "R-03685",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -103179,7 +101245,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03698",
+   "relation_id": "R-03686",
    "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j2",
@@ -103192,7 +101258,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03699",
+   "relation_id": "R-03687",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j2",
@@ -103205,7 +101271,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03700",
+   "relation_id": "R-03688",
    "from_entity": "HOUSE:H-013",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j2",
@@ -103218,7 +101284,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03701",
+   "relation_id": "R-03689",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -103231,7 +101297,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03702",
+   "relation_id": "R-03690",
    "from_entity": "HOUSE:H-007",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -103244,7 +101310,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03703",
+   "relation_id": "R-03691",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p118-j1",
@@ -103257,7 +101323,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03704",
+   "relation_id": "R-03692",
    "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p118-j1",
@@ -103270,7 +101336,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03705",
+   "relation_id": "R-03693",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p118-j2",
@@ -103283,7 +101349,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03706",
+   "relation_id": "R-03694",
    "from_entity": "HOUSE:H-069",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p119-j1",
@@ -103296,7 +101362,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03707",
+   "relation_id": "R-03695",
    "from_entity": "HOUSE:H-049",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p119-j1",
@@ -103309,7 +101375,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03708",
+   "relation_id": "R-03696",
    "from_entity": "HOUSE:H-056",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p119-j1",
@@ -103322,7 +101388,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03709",
+   "relation_id": "R-03697",
    "from_entity": "HOUSE:H-049",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p119-j3",
@@ -103335,7 +101401,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03710",
+   "relation_id": "R-03698",
    "from_entity": "HOUSE:H-059",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j7344",
@@ -103348,7 +101414,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03711",
+   "relation_id": "R-03699",
    "from_entity": "HOUSE:H-055",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j492",
@@ -103361,33 +101427,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03712",
-   "from_entity": "HOUSE:H-055",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j157",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03713",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j128",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03714",
+   "relation_id": "R-03700",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j1253",
@@ -103400,59 +101440,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03715",
-   "from_entity": "HOUSE:H-005",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j280",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03716",
-   "from_entity": "HOUSE:H-001",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j199",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03717",
-   "from_entity": "HOUSE:H-003",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j878",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03718",
-   "from_entity": "HOUSE:H-002",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j472",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03719",
+   "relation_id": "R-03701",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j237",
@@ -103465,33 +101453,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03720",
-   "from_entity": "HOUSE:H-002",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j83",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03721",
-   "from_entity": "HOUSE:H-015",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j70",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03722",
+   "relation_id": "R-03702",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j2",
@@ -103504,7 +101466,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03723",
+   "relation_id": "R-03703",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j3",
@@ -103517,7 +101479,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03724",
+   "relation_id": "R-03704",
    "from_entity": "HOUSE:H-056",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j1",
@@ -103530,7 +101492,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03725",
+   "relation_id": "R-03705",
    "from_entity": "HOUSE:H-055",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j1",
@@ -103543,33 +101505,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03726",
-   "from_entity": "HOUSE:H-055",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j401",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03727",
-   "from_entity": "HOUSE:H-055",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j97",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03728",
+   "relation_id": "R-03706",
    "from_entity": "HOUSE:H-049",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j2",
@@ -103582,7 +101518,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03729",
+   "relation_id": "R-03707",
    "from_entity": "HOUSE:H-049",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j3",
@@ -103595,7 +101531,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03730",
+   "relation_id": "R-03708",
    "from_entity": "HOUSE:H-051",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j11",
@@ -103608,7 +101544,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03731",
+   "relation_id": "R-03709",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j1",
@@ -103621,7 +101557,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03732",
+   "relation_id": "R-03710",
    "from_entity": "HOUSE:H-008",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j1",
@@ -103634,7 +101570,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03733",
+   "relation_id": "R-03711",
    "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j1",
@@ -103647,7 +101583,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03734",
+   "relation_id": "R-03712",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
@@ -103660,7 +101596,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03735",
+   "relation_id": "R-03713",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
@@ -103673,7 +101609,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03736",
+   "relation_id": "R-03714",
    "from_entity": "HOUSE:H-008",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
@@ -103686,7 +101622,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03737",
+   "relation_id": "R-03715",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
@@ -103699,7 +101635,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03738",
+   "relation_id": "R-03716",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
@@ -103712,7 +101648,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03739",
+   "relation_id": "R-03717",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
@@ -103725,7 +101661,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03740",
+   "relation_id": "R-03718",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
@@ -103738,7 +101674,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03741",
+   "relation_id": "R-03719",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
@@ -103751,7 +101687,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03742",
+   "relation_id": "R-03720",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
@@ -103764,7 +101700,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03743",
+   "relation_id": "R-03721",
    "from_entity": "HOUSE:H-056",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j2",
@@ -103777,7 +101713,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03744",
+   "relation_id": "R-03722",
    "from_entity": "HOUSE:H-065",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
@@ -103790,7 +101726,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03745",
+   "relation_id": "R-03723",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
@@ -103803,7 +101739,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03746",
+   "relation_id": "R-03724",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p125-j1",
@@ -103816,7 +101752,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03747",
+   "relation_id": "R-03725",
    "from_entity": "HOUSE:H-006",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p126-j1",
@@ -103829,7 +101765,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03748",
+   "relation_id": "R-03726",
    "from_entity": "HOUSE:H-006",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p126-j2",
@@ -103842,7 +101778,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03749",
+   "relation_id": "R-03727",
    "from_entity": "HOUSE:H-019",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p126-j1",
@@ -103855,7 +101791,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03750",
+   "relation_id": "R-03728",
    "from_entity": "HOUSE:H-032",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p126-j1",
@@ -103868,7 +101804,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03751",
+   "relation_id": "R-03729",
    "from_entity": "HOUSE:H-052",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p127-j3",
@@ -103881,33 +101817,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03752",
-   "from_entity": "HOUSE:H-080",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p128-j86",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03753",
-   "from_entity": "HOUSE:H-087",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p128-j180",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03754",
+   "relation_id": "R-03730",
    "from_entity": "HOUSE:H-080",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p128-j114",
@@ -103920,7 +101830,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03755",
+   "relation_id": "R-03731",
    "from_entity": "HOUSE:H-081",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p128-j419",
@@ -103933,20 +101843,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03756",
-   "from_entity": "HOUSE:H-082",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p128-j100",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03757",
+   "relation_id": "R-03732",
    "from_entity": "HOUSE:H-087",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p128-j299",
@@ -103959,33 +101856,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03758",
-   "from_entity": "HOUSE:H-007",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p128-j69",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03759",
-   "from_entity": "HOUSE:H-080",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p128-j117",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03760",
+   "relation_id": "R-03733",
    "from_entity": "HOUSE:H-087",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p128-j220",
@@ -103998,241 +101869,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03761",
-   "from_entity": "HOUSE:H-110",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p128-j138",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03762",
-   "from_entity": "HOUSE:H-004",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p128-j222",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03763",
-   "from_entity": "HOUSE:H-052",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j705",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03764",
-   "from_entity": "HOUSE:H-051",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j94",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03765",
-   "from_entity": "HOUSE:H-036",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j97",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03766",
-   "from_entity": "HOUSE:H-037",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j116",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03767",
-   "from_entity": "HOUSE:H-036",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j225",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03768",
-   "from_entity": "HOUSE:H-001",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j156",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03769",
-   "from_entity": "HOUSE:H-021",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j172",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03770",
-   "from_entity": "HOUSE:H-021",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j250",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03771",
-   "from_entity": "HOUSE:H-001",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j51",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03772",
-   "from_entity": "HOUSE:H-019",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j97",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03773",
-   "from_entity": "HOUSE:H-031",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j2971",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03774",
-   "from_entity": "HOUSE:H-030",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j320",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03775",
-   "from_entity": "HOUSE:H-040",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j174",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03776",
-   "from_entity": "HOUSE:H-051",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j221",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03777",
-   "from_entity": "HOUSE:H-052",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j41",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03778",
-   "from_entity": "HOUSE:H-052",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j25",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03779",
+   "relation_id": "R-03734",
    "from_entity": "HOUSE:H-052",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p129-j490",
@@ -104245,7 +101882,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03780",
+   "relation_id": "R-03735",
    "from_entity": "HOUSE:H-014",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p129-j199",
@@ -104258,7 +101895,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03781",
+   "relation_id": "R-03736",
    "from_entity": "HOUSE:H-018",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p129-j262",
@@ -104271,7 +101908,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03782",
+   "relation_id": "R-03737",
    "from_entity": "HOUSE:H-018",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p129-j380",
@@ -104284,189 +101921,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03783",
-   "from_entity": "HOUSE:H-055",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p129-j83",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03784",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j1920",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03785",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j35",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03786",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j90",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03787",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j132",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03788",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j117",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03789",
-   "from_entity": "HOUSE:H-165",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j150",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03790",
-   "from_entity": "HOUSE:H-055",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j100",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03791",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j92",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03792",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j246",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03793",
-   "from_entity": "HOUSE:H-051",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j372",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03794",
-   "from_entity": "HOUSE:H-012",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j746",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03795",
-   "from_entity": "HOUSE:H-032",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j521",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03796",
-   "from_entity": "HOUSE:H-068",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j235",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03797",
+   "relation_id": "R-03738",
    "from_entity": "HOUSE:H-060",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p130-j639",
@@ -104479,59 +101934,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03798",
-   "from_entity": "HOUSE:H-060",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j410",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03799",
-   "from_entity": "HOUSE:H-060",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j197",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03800",
-   "from_entity": "HOUSE:H-060",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j65",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03801",
-   "from_entity": "HOUSE:H-050",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j92",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03802",
+   "relation_id": "R-03739",
    "from_entity": "HOUSE:H-050",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p130-j314",
@@ -104544,20 +101947,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03803",
-   "from_entity": "HOUSE:H-050",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p130-j210",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03804",
+   "relation_id": "R-03740",
    "from_entity": "HOUSE:H-011",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p130-j807",
@@ -104570,7 +101960,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03805",
+   "relation_id": "R-03741",
    "from_entity": "HOUSE:H-006",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p131-j1",
@@ -104583,7 +101973,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03806",
+   "relation_id": "R-03742",
    "from_entity": "HOUSE:H-087",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p139-j4",
@@ -104596,7 +101986,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03807",
+   "relation_id": "R-03743",
    "from_entity": "HOUSE:H-165",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p139-j17",
@@ -104609,7 +101999,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03808",
+   "relation_id": "R-03744",
    "from_entity": "PER-0027",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-032",
@@ -104622,7 +102012,7 @@
    "notes": "residence_original: Zogwitsche."
   },
   {
-   "relation_id": "R-03809",
+   "relation_id": "R-03745",
    "from_entity": "PER-0028",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-032",
@@ -104635,7 +102025,7 @@
    "notes": "residence_original: Zogwitsche"
   },
   {
-   "relation_id": "R-03810",
+   "relation_id": "R-03746",
    "from_entity": "PER-0030",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-033",
@@ -104648,7 +102038,7 @@
    "notes": "residence_original: zu Schönboden"
   },
   {
-   "relation_id": "R-03811",
+   "relation_id": "R-03747",
    "from_entity": "PER-0047",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-036",
@@ -104661,7 +102051,7 @@
    "notes": "residence_original: zu Grublh. in Höchsthal."
   },
   {
-   "relation_id": "R-03812",
+   "relation_id": "R-03748",
    "from_entity": "PER-0068",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-035",
@@ -104674,7 +102064,7 @@
    "notes": "residence_original: Gräving."
   },
   {
-   "relation_id": "R-03813",
+   "relation_id": "R-03749",
    "from_entity": "PER-0074",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-034",
@@ -104687,7 +102077,7 @@
    "notes": "residence_original: zu Waidhofen"
   },
   {
-   "relation_id": "R-03814",
+   "relation_id": "R-03750",
    "from_entity": "PER-0125",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-030",
@@ -104700,7 +102090,7 @@
    "notes": "wohnort: Gradiše"
   },
   {
-   "relation_id": "R-03815",
+   "relation_id": "R-03751",
    "from_entity": "PER-0164",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-029",
@@ -104713,7 +102103,7 @@
    "notes": "wohnort: Zagorje"
   },
   {
-   "relation_id": "R-03816",
+   "relation_id": "R-03752",
    "from_entity": "PER-0100",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-029",
@@ -104726,7 +102116,7 @@
    "notes": "wohnort: Zagorje"
   },
   {
-   "relation_id": "R-03817",
+   "relation_id": "R-03753",
    "from_entity": "PER-0122",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-031",
@@ -104739,7 +102129,7 @@
    "notes": "wohnort: Dragole"
   },
   {
-   "relation_id": "R-03818",
+   "relation_id": "R-03754",
    "from_entity": "EVT-001",
    "relation_type": "AFFECTS_HOUSE",
    "to_entity": "HOUSE:H-043",
@@ -104755,7 +102145,7 @@
    ]
   },
   {
-   "relation_id": "R-03819",
+   "relation_id": "R-03755",
    "from_entity": "EVT-001",
    "relation_type": "AFFECTS_HOUSE",
    "to_entity": "HOUSE:H-045",
@@ -104771,7 +102161,7 @@
    ]
   },
   {
-   "relation_id": "R-03820",
+   "relation_id": "R-03756",
    "from_entity": "EVT-001",
    "relation_type": "AFFECTS_HOUSE",
    "to_entity": "HOUSE:H-046",
@@ -104787,7 +102177,7 @@
    ]
   },
   {
-   "relation_id": "R-03821",
+   "relation_id": "R-03757",
    "from_entity": "EVT-002",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104799,7 +102189,7 @@
    "confidence": "low"
   },
   {
-   "relation_id": "R-03822",
+   "relation_id": "R-03758",
    "from_entity": "EVT-003",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -104811,7 +102201,7 @@
    "confidence": "high"
   },
   {
-   "relation_id": "R-03823",
+   "relation_id": "R-03759",
    "from_entity": "TP-002",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-A01",
@@ -104823,7 +102213,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03824",
+   "relation_id": "R-03760",
    "from_entity": "TP-003",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-SIAS176",
@@ -104835,7 +102225,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03825",
+   "relation_id": "R-03761",
    "from_entity": "TP-004",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104847,7 +102237,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03826",
+   "relation_id": "R-03762",
    "from_entity": "TP-005",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104859,7 +102249,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03827",
+   "relation_id": "R-03763",
    "from_entity": "TP-006",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104871,7 +102261,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03828",
+   "relation_id": "R-03764",
    "from_entity": "TP-007",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104883,7 +102273,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03829",
+   "relation_id": "R-03765",
    "from_entity": "TP-008",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104895,7 +102285,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03830",
+   "relation_id": "R-03766",
    "from_entity": "TP-009",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104907,7 +102297,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03831",
+   "relation_id": "R-03767",
    "from_entity": "TP-010",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104919,7 +102309,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03832",
+   "relation_id": "R-03768",
    "from_entity": "TP-011",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104931,7 +102321,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03833",
+   "relation_id": "R-03769",
    "from_entity": "TP-012",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104943,7 +102333,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03834",
+   "relation_id": "R-03770",
    "from_entity": "TP-013",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104955,7 +102345,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03835",
+   "relation_id": "R-03771",
    "from_entity": "TP-014",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104967,7 +102357,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03836",
+   "relation_id": "R-03772",
    "from_entity": "TP-015",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104979,7 +102369,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03837",
+   "relation_id": "R-03773",
    "from_entity": "TP-016",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -104991,7 +102381,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03838",
+   "relation_id": "R-03774",
    "from_entity": "TP-017",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -105003,7 +102393,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03839",
+   "relation_id": "R-03775",
    "from_entity": "TP-018",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -105015,7 +102405,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03840",
+   "relation_id": "R-03776",
    "from_entity": "TP-019",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -105027,7 +102417,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03841",
+   "relation_id": "R-03777",
    "from_entity": "TP-020",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -105039,7 +102429,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03842",
+   "relation_id": "R-03778",
    "from_entity": "TP-021",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -105051,7 +102441,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03843",
+   "relation_id": "R-03779",
    "from_entity": "TP-022",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -105063,7 +102453,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03844",
+   "relation_id": "R-03780",
    "from_entity": "TP-023",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -105075,7 +102465,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03845",
+   "relation_id": "R-03781",
    "from_entity": "TP-024",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -105087,7 +102477,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03846",
+   "relation_id": "R-03782",
    "from_entity": "TP-025",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -105099,7 +102489,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03847",
+   "relation_id": "R-03783",
    "from_entity": "TP-026",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -105111,7 +102501,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03848",
+   "relation_id": "R-03784",
    "from_entity": "TP-027",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -105123,7 +102513,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03849",
+   "relation_id": "R-03785",
    "from_entity": "TP-028",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -105135,7 +102525,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03850",
+   "relation_id": "R-03786",
    "from_entity": "TP-029",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PS",
@@ -105147,7 +102537,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03851",
+   "relation_id": "R-03787",
    "from_entity": "TP-030",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PS",
@@ -105159,7 +102549,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03852",
+   "relation_id": "R-03788",
    "from_entity": "TP-031",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PS",
@@ -105171,7 +102561,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03853",
+   "relation_id": "R-03789",
    "from_entity": "TP-032",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -105183,7 +102573,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03854",
+   "relation_id": "R-03790",
    "from_entity": "TP-033",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -105195,7 +102585,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03855",
+   "relation_id": "R-03791",
    "from_entity": "TP-034",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -105207,7 +102597,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03856",
+   "relation_id": "R-03792",
    "from_entity": "TP-035",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -105219,7 +102609,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03857",
+   "relation_id": "R-03793",
    "from_entity": "TP-036",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -105231,7 +102621,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03858",
+   "relation_id": "R-03794",
    "from_entity": "TP-037",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-A05",
@@ -105243,7 +102633,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03859",
+   "relation_id": "R-03795",
    "from_entity": "TP-001",
    "relation_type": "IS_GEMEINDE_OF",
    "to_entity": "TP-003",
@@ -114793,7 +112183,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-28T22:02:45Z",
+   "generated_at": "2026-09-29T19:47:27Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -114815,7 +112205,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-09-28T22:02:45Z",
+   "generated_at": "2026-09-29T19:47:27Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -114842,7 +112232,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-09-28T22:02:45Z",
+   "generated_at": "2026-09-29T19:47:27Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -114869,7 +112259,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-28T22:02:45Z",
+   "generated_at": "2026-09-29T19:47:27Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }

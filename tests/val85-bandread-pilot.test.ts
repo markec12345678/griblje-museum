@@ -236,17 +236,17 @@ describe("val 85 — najdbe", () => {
 });
 
 describe("val 85 — poštenost §4 + §22 (nič ne beži v runtime)", () => {
-  test("register.json 2.871 vrstic; val 86 + val 98 vgradnja: 1.109 v86-colonial-tiles + 689 v82-native-pass1 (p56–143)", () => {
+  test("register.json 2.871 vrstic; val 86 + 98 + 107 vgradnja: 1.755 v86-colonial-tiles + 43 v82-native-pass1 (p56–143)", () => {
     expect(register).toHaveLength(2871);
-    expect(register.filter((r) => r.reading_pass === "v82-native-pass1")).toHaveLength(689);
-    expect(register.filter((r) => r.reading_pass === "v86-colonial-tiles")).toHaveLength(1109);
+    expect(register.filter((r) => r.reading_pass === "v82-native-pass1")).toHaveLength(43); // val 98: 689 → val 107: 43 (p142 + p143)
+    expect(register.filter((r) => r.reading_pass === "v86-colonial-tiles")).toHaveLength(1755); // val 98: 1109 → val 107: 1755
   });
 
-  test("KG v2.2 (val 98 kaskada): sha 2b16acad… + metapodatki", () => {
-    expect(kgSha.startsWith("2b16acad")).toBe(true); // val 98 KG v2.2 (§22 kaskada) — val 89 je bil v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8)
+  test("KG v2.3 (val 107 kaskada): sha 23a2ae50… + metapodatki", () => {
+    expect(kgSha.startsWith("23a2ae50")).toBe(true); // val 107 KG v2.3 (§22 kaskada) — val 89 je bil v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad)
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as { val: number; title: string };
-    expect(kg.val).toBe(98); // val 98: 86b del 2 — tile 3. glas p95–109
-    expect(kg.title).toBe("knowledge-graph-1825 v2.2");
+    expect(kg.val).toBe(107); // val 107: 86b del 3 — tile 3. glas p110–141
+    expect(kg.title).toBe("knowledge-graph-1825 v2.3");
   });
 
   test("kaskada §22 nespremenjena: story-graph/timeline/coverage (arhiv + runtime) držijo isti KG sha", () => {

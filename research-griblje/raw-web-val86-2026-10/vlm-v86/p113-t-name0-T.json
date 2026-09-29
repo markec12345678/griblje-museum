@@ -1,0 +1,38 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Georg Jhau",
+   "stand": "Bauer",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Lappary Mihlo",
+   "stand": "~",
+   "wohnort": "~",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Fillah Peter",
+   "stand": "~",
+   "wohnort": "~",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Fillah Mihlo",
+   "stand": "~",
+   "wohnort": "~",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "Row 1 name: 'Georg Jhau' (surname unclear, could be 'Jhau' or similar)",
+  "Row 1 stand: 'Bauer' (partially cut off at right edge)"
+ ],
+ "observations": "The first row shows the full name and status; subsequent rows use ditto marks (double commas) for Stand and Wohnort columns. The image is a vertical slice showing only part of the table width. The header row 'Des Eigenthümers' with sub-headers is visible but not transcribed per instructions."
+}
