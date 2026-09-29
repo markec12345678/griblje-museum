@@ -1,0 +1,226 @@
+{
+  "val": 104,
+  "task": "ISSUE #72 — vseh 10 preostalih poročil raziskav z javnimi prenosi prebranih v celoti (13-0078, 17-0374, 17-0481, 17-0497, 19-0552, 20-0261, 20-0297, 21-0130, 21-0406, 23-0261) — pokritost prvih poročil registra ZAKLJUČENA: 24/24 prebranih (14 val 102+103 + 10 val 104); brez prenosa le 26-0326 (oddano v pregled) in 26-0379 (napredita raziskava)",
+  "datum": "2026-09-29",
+  "reprodukcija": "vsi PDF artefakti prenešeni prek istega javnega eSDE API-ja (ised.gov.si) s poročilnimi ID-ji iz registra sloja 3692 (val 102); sha256 zabeleženi v porocila/sha256-pdf.txt (vseh 10 PDF, tudi izbrisanih velikih); TXT izvedeni z pdftotext -layout",
+  "kvota": {
+    "web_search": "ni klicano (0 klicev)",
+    "vlm": "ni klicano (0 klicev)",
+    "bypass": "deterministični curl na javni eSDE endpoint (ID-ji iz polja URL_POROCILO1 registra vala 102) + pdftotext"
+  },
+  "metoda": [
+    "iz registra sloj 3692 (val 102) izvedeni vsi URL_POROCILO1 preostalih 10 raziskav: 13-0078 (26367), 17-0374 (27872), 17-0481 (27960), 17-0497 (28017), 19-0552 (28678), 20-0261 (28828), 20-0297 (28855), 21-0130 (29027), 21-0406 (29176), 23-0261 (43689)",
+    "10 poročil prenešenih (HTTP 200 ×10; 21-0406 dvakrat — prvi prenos okvarjen, xref tabela nepreberljiva, ponovni prenos celoten), pdftotext -layout, polno branje podatkovnih blokov, povzetkov, ugotovitev in sklepov",
+    "5 večjih PDF hashiranih in izbrisanih (vzorec val 102/103): 13-0078 (8,1 MB), 20-0261 (9,5 MB), 20-0297 (7,6 MB), 21-0406 (26,6 MB), 23-0261 (20,5 MB); 5 komittanih (17-0374 2,7, 17-0481 3,1, 17-0497 3,1, 19-0552 4,6, 21-0130 5,7 MB)",
+    "popravek vala 102 razrešen v praksi: 13-0078 z ID 26367 je javno dostopno poročilo (2013) — najstarejše prebrano na najdišču"
+  ],
+  "porocila_prebrana": [
+    {
+      "koda": "13-0078",
+      "datoteka": "porocila/13-0078.pdf",
+      "strani": 37,
+      "sha256_pdf": "ec13a7df5e227d34349eff38faec17176da8d8d00045a24b5505d5c4e7979880",
+      "esde_id": 26367,
+      "kljucne_ugotovitve": [
+        "vodovodni sistem v občini Črnomelj, območje Dobliče–Žilje; parcele 667, 668, 681, 2973, 2974, 2975, 2977, 2978, 2976, 2979 — južni rob, linija vzporedno s poljsko cesto (umaknjena od obstoječega vodovoda po dogovoru z ZVKDS)",
+        "soglasje 62240-105/2013/2; terensko 7.–8.6.2013; Arheoterra d.o.o.; vodja in avtor Otmar Kovač, nadzorka Tina Britovšek (ZVKDS OE Novo mesto)",
+        "11 ročnih testnih jarkov 1 x 2 m (22 m²) čez cca. 260 m linije",
+        "rezultat: brez struktur — v zgornjih 20–30 cm koluvija (SE 002) 17 odlomkov keramike: 7 prazgodovinskih (preliminarno pozna bronasta doba; TJ 1 in 11), 3 srednjeveški, 4 mlajšedobni, 3 moderni; skupaj 41 predmetov, pretežno sodobna opeka/plastika/kost",
+        "sekundarna lega; najdbe potrjujejo prisotnost arheoloških ostalin na širšem območju najdišča; TJ 11 premešana plast (SE 010) z 1 atipičnim odlomkom prazg. keramike, ni v primarni legi",
+        "hramba arhiva: prostori Arheoterra d.o.o. (začasna)"
+      ],
+      "txt_sha256": "4ab0c9c8cd41bbfd814efb82b51ea82a15f70b89390ffd2e605edb303869cec4"
+    },
+    {
+      "koda": "17-0374",
+      "datoteka": "porocila/17-0374.pdf",
+      "strani": 22,
+      "sha256_pdf": "16aeaea78242f9e7b1322619c7679396b8b09e3733630a43596dc124a3035952",
+      "esde_id": 27872,
+      "kljucne_ugotovitve": [
+        "dva montažna silosa; parceli *43 in 653, k.o. 1544 Griblje; lastnik Peter Šegina, Griblje 43",
+        "soglasje 62240-260/2017/2 z dne 28.8.2017 (KVP 35105-0236/2017/2 z dne 24.5.2017); terensko 8.7.2017 (1 dan)",
+        "Filipidis d.o.o., Koblarji 15; vodja Enej Filipidis, namestnik Gojko Tica, sodelavec Bogo Klezin, nadzorka Tina Britovšek",
+        "8 ročnih testnih sond 1 x 1 m (8 m²; 0,87 % pokritost)",
+        "rezultat NEGATIVEN: antropoloških struktur ni; najdbe v nasutjih (SE 002, 007, 008) in kultiviranem koluviju (SE 003) — sekundarna, premeščena lega; vse novega veka razen treh najverjetneje zgodnjesrednjeveških odlomkov",
+        "kontekst: na JZ robu porušena hiša Griblje 59 (silaža na porušenem delu); hramba arhiva: Koblarji 15 (začasna)"
+      ],
+      "txt_sha256": "4884a5d921c439803591b6711ee1a19c9c9ab2ba90e7cddddc19275ca5f0e921"
+    },
+    {
+      "koda": "17-0481",
+      "datoteka": "porocila/17-0481.pdf",
+      "strani": 19,
+      "sha256_pdf": "a6e1ad6955b92ab94d2af31d9c5d202fe48cdb134835a13179d482bf74159987",
+      "esde_id": 27960,
+      "kljucne_ugotovitve": [
+        "gradnja hleva in zbiralnika gnojnice; lokacija Griblje – Brodarič; parceli *79, 94, 106/1, k.o. 1544 Griblje",
+        "soglasje 62240-395/2017/2 z dne 13.11.2017 (KVP 35105-0331/2017/2 z dne 31.7.2017); terensko 21.11.2017",
+        "ARHOS d.o.o., poročilo št. 34/2017; vodja mag. Alenka Jovanović, avtor Slobodan Olić, nadzorka Tina Britovšek",
+        "strojni testni izkop; stratigrafija: recentno nasutje s smetmi → koluvij brez najdb → geološka osnova",
+        "rezultat NEGATIVEN: »nismo odkrili ostankov, ki bi nakazovali na obstoj arheološkega najdišča«",
+        "neskladje znotraj poročila: naslov/podatki navedejo parcelo *79, sklep pa *76 — zapisano, ne rešeno; hramba arhiva: ARHOS d.o.o."
+      ],
+      "txt_sha256": "3cfdf6197f0604b04f8dbb3a21e4fb21722b15cc47526a09d7382c3edd33b833"
+    },
+    {
+      "koda": "17-0497",
+      "datoteka": "porocila/17-0497.pdf",
+      "strani": 17,
+      "sha256_pdf": "c0a5cec6dca9e8d49bbf98d1c41cc11f742123ccd6354db108e055f8ab4ab807",
+      "esde_id": 28017,
+      "kljucne_ugotovitve": [
+        "gradnja kmečke lope; Šterk – Griblje; parcela 657/3, k.o. Griblje",
+        "KVP 35105-0457/2017/2 z dne 30.10.2017; soglasje 62240-486/2017/3 z dne 21.11.2017; terensko 16.11.2017 (1 dan) — pet dni pred datumom soglasja na naslovnici (neskladje zapisano)",
+        "ARHAT; vodja Matevž Lavrinc, avtor Aleš Tiran, nadzornik mag. Uroš Bavec",
+        "dve testni jami 1 x 1 m ob nasutem dovozu; zgornja nasutja strojno, nižje plasti ročno (dogovor z ZVKDS)",
+        "rezultat NEGATIVEN: v nobeni testni jami materialnih ostankov ali struktur; stratigrafija: ruša → nasutji SE 002/003 → hodna površina SE 004 → sterilni koluvij SE 005 (do 95 cm) → geološka osnova SE 006",
+        "neskladje znotraj poročila: podatkovni blok navede občino Gradac, čeprav Griblje ležijo v občini Črnomelj — zapisano; hramba arhiva: sedež ARHAT"
+      ],
+      "txt_sha256": "6400e62aa27179dceca2bf8f7d978ed88dab7169fcd3c05e718d08100ec8ee6e"
+    },
+    {
+      "koda": "19-0552",
+      "datoteka": "porocila/19-0552.pdf",
+      "strani": 18,
+      "sha256_pdf": "8d3d6de9124fdb6c5595b30b43f124d8dc1fc4e27ac08fee219e06d682d04bef",
+      "esde_id": 28678,
+      "kljucne_ugotovitve": [
+        "novogradnja nadstrešnice in drvarnice; Krajnc – Griblje; parceli 162 in 160/4, k.o. Griblje; lastnica Vida Krajnc",
+        "soglasje 62240-501/2019/2 z dne 10.12.2019 (KVP 35105-0412/2019/4 z dne 19.11.2019); terensko 20.12.2019 (1 dan)",
+        "ARHAT; vodja Aleš Tiran, sodelavec Kristjan Husič, nadzornik mag. Uroš Bavec",
+        "2 ročni testni jami 1 x 1 m; območje ob gradnji stanovanjske hiše nasuto in izravnano (nasutje SE 002)",
+        "rezultat NEGATIVEN: v nasutju (SE 002) in plasti meljaste gline (SE 003) le sodobni material (keramika, železo); v TJ 1 podtalnica od cca. 70 cm",
+        "hramba arhiva: sedež ARHAT"
+      ],
+      "txt_sha256": "121f6e57b7952b1fee9ecef05b2e2b9fd62622d14eb6a730fc3f379a0b8d3c3b"
+    },
+    {
+      "koda": "20-0261",
+      "datoteka": "porocila/20-0261.pdf",
+      "strani": 20,
+      "sha256_pdf": "20a44876a09f47d130cc327a232314f15fcbd86fcbd11425bc4dea169063245e",
+      "esde_id": 28828,
+      "kljucne_ugotovitve": [
+        "dozidava gostinskega objekta — dva nadstreška in letna kuhinja; Griblje – Pezdirc; parcela 810, k.o. Griblje; lastnik Jožef Pezdirc, Griblje 70",
+        "soglasje 62240-244/2020/2 z dne 24.6.2020 (KVP 35105-0107/2020/2 istega datuma); terensko 13.7.2020 (1 dan)",
+        "ARHAT; vodja Aleš Tiran, sodelavec Kristjan Husič, nadzornik mag. Uroš Bavec",
+        "2 ročni testni jami 2 x 1 m; lastnik: zemljišče v preteklosti ni bilo kmetijsko obdelano",
+        "rezultat NEGATIVEN: le recentne najdbe v vrhnjih premešanih plasteh (pločevinke, steklenice); geološka osnova prod/prodnati pesek (TJ 1 ~120 cm; TJ 2 ~80 cm, poglobljeno do 110 cm)",
+        "hramba arhiva: sedež ARHAT"
+      ],
+      "txt_sha256": "fce348b59814dea0330d610eda9861a80bd0f2f569e8553b8b7382b451d91f59"
+    },
+    {
+      "koda": "20-0297",
+      "datoteka": "porocila/20-0297.pdf",
+      "strani": 30,
+      "sha256_pdf": "4b7383934684e655ebe30c7fce5a81f14686a006c59036edc9e607a6421b5b14",
+      "esde_id": 28855,
+      "kljucne_ugotovitve": [
+        "novogradnja enodružinske stanovanjske hiše s pripadajočo infrastrukturo in dovozno potjo; hiša Griblje 30; parcele 791/4, 792/4, 790/3, k.o. 1544 Griblje",
+        "soglasje 62240-293/2020/2 z dne 28.7.2020; terensko 13.8.2020",
+        "Avgusta d.o.o., Idrija; vodja Ines Klokočovnik, avtor Gregor Gruden, nadzornik mag. Uroš Bavec",
+        "4 ročne testne jame 2 x 1 m; identična stratigrafija: ruša SE 1 → pol metra ornica SE 2 → do 30 cm plast verjetno koluvialnega nastanka SE 3 → geološka podlaga zbita glina (~80 cm)",
+        "rezultat pozitiven omejeno: 23 najdb / 289 g — 5 sodobnih, 12 novoveških (v ornici), 6 odlomkov prazgodovinske lončenine (20 g; ostenja, do 4 cm) v SE 3 v TJ 2 in TJ 3; zaobljenost robov → sekundarno z izpiranjem z bližnjega višjeležečega najdišča (domneva)",
+        "struktur ni; nadaljevanje na istih parcelah 21-0130 (2021); hramba arhiva: Avgusta d.o.o., Arkova ulica 1, Ljubljana"
+      ],
+      "txt_sha256": "1cd6015a984bedf95f8a7607f0dbdd40489ecb2194a5bb3c94ad735f62166ad5"
+    },
+    {
+      "koda": "21-0130",
+      "datoteka": "porocila/21-0130.pdf",
+      "strani": 42,
+      "sha256_pdf": "79a0125670bb515fce37e367e520ae806f44f916cc60ca4ddf1b8f54c064cf79",
+      "esde_id": 29027,
+      "kljucne_ugotovitve": [
+        "arheološke raziskave ob gradnji — izkop gradbene jame 22 x 10 m (230,3 m²) z ravno bagersko žlico; Griblje – Šimec; ISTIH parcel 791/4, 792/4, 790/3 (nadgradnja raziskave 20-0297)",
+        "soglasje 62240-122/2021/2 z dne 25.3.2021; terensko 9.4.2021",
+        "Avgusta d.o.o.; vodja Ines Klokočovnik, avtorja Gregor Gruden in Manca Omahen, nadzornik mag. Uroš Bavec",
+        "rezultat pozitiven omejeno: 95 najdb / 665 g — 86 odlomkov prazgodovinske lončenine (568 g) + 2 kosa hišnega lepa (30 g), pretežno v plasti SE 3 neposredno nad geološko podlago",
+        "najzgodnejše verjetno eneolitske: fragment z rdečim premazom (najdba 7, kv. B2; starejše najdbe savska skupina, mlajše lasinjska skupina; Velušček 2013), verjetno eneolitsko odebeljeno ustje sklede (Gradec pri Mirni, Turnišče)",
+        "lonec s kratkim izvihanim ustjem — konec bronaste dobe / starohalštatsko obdobje (Veliki Nerajec grobovi 1, 5, 7 — Podzemelj 1; Kučar prva faza po Grahek 2020; Ljubljana Ib); 2 paličasta ročaja (morda pekve), trakasti ročaj, trikotno rebro",
+        "5 kosov rimskodobne lončenine (42 g): 4 posnetki italske sigilate, 3 istega ustja — oblika 7.1.1 (srednje/pozno avgustejsko; južnogalska Dragendorff 33); 1 košček verjetno srednjeveške/novoveške lončenine (3 g) + železo (22 g) v ornici",
+        "TRI VKOPI ZA KOLE na nivoju geološke podlage: SE 5/6 (premer 44 cm, globina 12 cm), SE 7/8 (43 cm, 11 cm) — kv. C1; SE 9/10 (30 cm, 10 cm) — kv. B2; po presoji poročila »morda bi šlo lahko za ostanke lesene stavbe« — domneva; vkopi brez najdb, datacije ne omogočajo",
+        "hramba arhiva: Avgusta d.o.o., Arkova ulica 1, Ljubljana"
+      ],
+      "txt_sha256": "721ddc63b2d7d1a5295b76e6694ab8f49acb4ba03ceee1359414295b9a776e7b"
+    },
+    {
+      "koda": "21-0406",
+      "datoteka": "porocila/21-0406.pdf",
+      "strani": 59,
+      "sha256_pdf": "2ae2a33ab14d38b8d8bd95010a1d94d6a88c4610ebde16da21a4d4fab898aaad",
+      "esde_id": 29176,
+      "kljucne_ugotovitve": [
+        "javna razsvetljava Griblje–Brinsko selo; vzhodni del vasi (»Brinsko selo«) in JZ rob; naročnik Občina Črnomelj; parcela 2681/3, 738/1, 738/2, *31/2, 2706, *52, 74/3, 666, 737/2, 1008/3, 737/1, 661, 2689/6, 2689/7, 676/3, 673/2 (+ 1/3 v uvodu; neskladje seznamov zapisano)",
+        "soglasje 62240-403/2021/2 z dne 16.8.2021 (KVP 35105-0162/2021/2 z dne 26.3.2021; uvod navaja še KVP 35105-0300/2014/4 — neskladje zapisano); jarek cca. 940 m; terensko 11.8.–7.9.2021",
+        "Skupina STIK v sodelovanju z ARHAT, Aleš Tiran s.p.; vodja Samo Hvalec, namestnik Aleš Tiran, sodelavec Jaka Dragoš (stalna prisotnost), nadzornik mag. Uroš Bavec; avtorji Dragoš, Tiran, Hvalec",
+        "rezultat NEGATIVEN za starejša obdobja: večina trase po odstranjeni asfaltni cesti; nasutja cestišča (SE 004, 005); robne kdaj ornice (SE 007) s sodobno zdrobljeno opeko; sodobna in novoveška keramika na P12, P20, P24; na zahodnem delu novodobno nasutje SE 017 + koluvij SE 018",
+        "»starejših materialnih ostankov ali struktur, ki bi kazali na uporabo prostora v starejših zgodovinskih obdobjih, med raziskavo nismo odkrili«",
+        "hramba arhiva: sedež Skupine STIK, Ljubljana"
+      ],
+      "txt_sha256": "fe4a022537a79b322f373e08d7370b8c62bdeb6f5b6e9d1bcc509c1ecca790a3"
+    },
+    {
+      "koda": "23-0261",
+      "datoteka": "porocila/23-0261.pdf",
+      "strani": 50,
+      "sha256_pdf": "09f13b9a445a24a68bf3c32d2d1d97202f056b20b5ae3d0692a8e4dcb1ce8508",
+      "esde_id": 43689,
+      "kljucne_ugotovitve": [
+        "javna razsvetljava z vkopom kablovoda in postavitvijo svetilk — »Dolnje Griblje« (23-0261 Griblje – javna razsvetljava ARG); TRETJI projekt 2023 v vasi — po ZVKDS CPA (23-0070) in ARHAT (23-0168) zdaj potrjena tudi njegova vsebina",
+        "soglasje 62240-273/2023-3340-2 z dne 30.6.2023; terensko 7.7.–8.9.2023; izkop 700 x 0,60 m, globina 0,6–1,14 m",
+        "Skupina STIK; vodji Matej Draksler in Rok Klasinc, namestnica Mojca Fras, sodelavca Anja Ipavec in Davor Pečar, nadzorka Tina Britovšek; avtorji Pižmoht, Magdič, Pavković, Klasinc, Draksler",
+        "rezultat ARHEOLOŠKO POZITIVNO: 67 najdb / 1.248 g v 24 enotah DIS — lončenina 43 (350 g), gradbeni material 12 (357 g), pečnice 2 (34 g), železo 5 (462 g), žlindra 2 (24 g), zlitina 1, nedoločljiva keramika 1, premog 1; kronološko: prazgodovina 22 (133 g), rimska doba 2 (21 g), novi vek 33 (1.009 g), sodoben 1, nedoločeno 9 (86 g)",
+        "prazgodovinska lončenina (grobozrnata masa z grogom) v koluvijih SE 1007/1008 (ZE 7/8) in SE 1012 (ZE 11/13) sonde 1001 ter SE 1005 sonde 1002; 2 rimska gradbena odlomka",
+        "STRUKTURNI PRISPEVEK: dve novoveški cesti iz prodnikov pod današnjo asfaltno cesto (SE 1017 + SE 1021, sonda 1002) z obcestnim jarkom (SE 1016) in prodnata utrditev SE 1012 — verjetneje novoveški kolovoz; prvi cestni ostanki dokumentirani v raziskavah vasi",
+        "poštenost: SE 1005 na terenu napačno interpretirana kot geološka osnova — v poročilu izrecno popravljena v koluvij; naslov navede 19 parcel, podatkovni blok 2698/2, 2699/1, 2702 — neskladje zapisano, ne rešeno",
+        "trajna hramba arhiva: Belokranjski muzej Metlika, Trg svobode 4"
+      ],
+      "txt_sha256": "95cfd7f472a8eb3aab08b909cce46ae1014bc2615bf9386238bbc113c60edcc3"
+    }
+  ],
+  "odkritje_vala": {
+    "raziskave_z_javnim_prenosom": 24,
+    "raziskave_skupaj": 26,
+    "prebranih_do_vala_103": 14,
+    "prebranih_do_vala_104": 24,
+    "pokritost_porocil_zakljucena": true,
+    "brez_prenosa": ["26-0326 (poročilo oddano v pregled)", "26-0379 (raziskava šele napredita)"]
+  },
+  "vgradnja": {
+    "novi_viri": [
+      "kovac-2013-vodovod-667-2979",
+      "filipidis-2017-silosa-43-653",
+      "olic-2017-brodaric-79-94-106-1",
+      "tiran-2017-sterk-657-3",
+      "tiran-2019-krajnc-162-160-4",
+      "gruden-2020-hisa-griblje-30",
+      "gruden-omahen-2021-griblje-30",
+      "tiran-2020-pezdirc-810",
+      "hvalec-2021-razsvetljava-brinsko-selo",
+      "draksler-klasinc-2023-razsvetljava-dolnje-griblje"
+    ],
+    "dopolnjeni_viri": [],
+    "prehod_stevcev": "izrecen prehod 114 zapisov / 641 → 651 virov / 517 → 527 identitet / 69 deljenih"
+  },
+  "brez_podvajanja": [
+    "10 kod (13-0078, 17-0374, 17-0481, 17-0497, 19-0552, 20-0261, 20-0297, 21-0130, 21-0406, 23-0261) ima pred vgradnjo v vire muzeja 0 zadetkov — v zgodbi MVG-083 omenjene le kot neprebrane kode registra",
+    "vsi viri add-only, izključno na MVG-083; nobena obstoječa trditev ni spremenjena",
+    "ATLAS §22 in veriga #100 §8 NEIZMENJANA (eno-zapisni viri — pini v testu)"
+  ],
+  "fairness": [
+    "negativni rezultati z enako težo: 13-0078 (brez struktur), 17-0374, 17-0481, 17-0497, 19-0552, 20-0261, 21-0406 (7 od 10 poročil negativnih)",
+    "sekundarne lege izrecno: 13-0078 (koluvij, zgornjih 20–30 cm), 17-0374 (premeščena lega), 20-0297 (izpiranje z višjeležečega najdišča — domneva), 23-0261 (koluviji)",
+    "domneve prenašane kot domneve: lesena stavba pri vkopih za kole (21-0130), izpiranje z bližnjega najdišča (20-0297), novoveški kolovoz (23-0261)",
+    "neskladja zapisana, ne rešena: parcela *79 vs *76 (17-0481); občina Gradac (17-0497); terensko 5 dni pred datumom soglasja (17-0497); dva KVP-ja (21-0406); naslov 19 parcel vs podatkovni blok 3 parcele (23-0261); SE 1005 na terenu geološka osnova, v poročilu koluvij (23-0261 — popravek v samem poročilu)",
+    "trajna hramba arhiva: Belokranjski muzej Metlika izrecna v 23-0261 (skupno vsaj 4 poročila od vala 102); starejša poročila (2013–2021) navajajo le začasne hrambe (ARHAT, Arheoterra, ARHOS, Avgusta, STIK, Filipidis)"
+  ],
+  "artefakti": {
+    "mapa": "research-griblje/val104/",
+    "porocila": "porocila/ — 10 TXT (pdftotext -layout) + 5 PDF komittanih (17-0374, 17-0481, 17-0497, 19-0552, 21-0130) + sha256.txt + sha256-pdf.txt (hashi vseh 10 PDF, tudi izbrisanih velikih)",
+    "izbrisani_veliki_pdf": "13-0078 (8,1 MB), 20-0261 (9,5 MB), 20-0297 (7,6 MB), 21-0406 (26,6 MB), 23-0261 (20,5 MB) — hashirani v sha256-pdf.txt",
+    "note": "21-0406: prvi prenos okvarjen (nepreberljiva xref tabela), ponovljen prenos celoten in validiran s pdftotext"
+  }
+}
