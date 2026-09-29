@@ -4448,3 +4448,27 @@ Stage Summary:
 - Nova zgodovinska plast: izkopavanja 2005 (fezalna kanalizacija) zdaj primarno dokumentirana — tri sonde, 9 faz, neolitska hodna površina z obrtno dejavnostjo (kremen), eneolitske jame za stojke; prva dokumentirana izkopavanja prazgodovinske naselbine na širšem območju
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih
 - Naslednje: 86b del 3 (250 tile-ov p110–142, resumable — trdo 429 v valih 105/86b2); PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; re-read 7+2 markerjev; Dular 1972 vsebina (izven peskovnika); BM Metlika (izven peskovnika); register: 26-0326 (oddano v pregled) + 26-0379 (napredita okt./nov. 2026)
+
+---
+Task ID: 107
+Agent: Z.ai Code (glavna seja, val 107)
+Task: ISSUE #42 §4/§14 + #43 — 86b DEL 3 (ZAKLJUČEK): PS N83 kolonski tile-i p110–120 + p122–141 (31 novih strani, +646 vrstic → 1.755) + vgradnja + kaskada KG v2.3; sinhronizacija main (user: "odlicno nadaljuj")
+
+Work Log:
+- Sinhronizacija: main @ cc1831b (val 106), 0 naprej/0 za, delovno drevo čisto — push/readme brez lokalnih sprememb; veja feat/val107-issue72-86b-part3 iz origin/main
+- Branja: 250 manjkajočih tile-ov (p110–142) prebranih prek resumable tile-read-v98.mts v ~12 koščkih (~100 min, 2 delavca, pace 500 ms) — 249/696 skupaj (99,9 %); urna kvota 429 = kapljanje; edini manjkajoči = p142-t-kultur2 (trdo 429: 7 poskusov + 2 ločena klica) — resumable za val 108
+- Reparacija: p113-t-kultur0 + p126-t-kultur0 ERROR (»Unterminated string«) — VLM vrnil literale \n v JSON stringih; deterministični stanjski stroj nad .raw (0 novih VLM klicev) → 4 + 5 vrstic; surovini ohranjeni
+- Vgradnja: build-register-v107.py (nov, 1:1 v86b pravila, fail-fast; PART1 = p56–109 + p121) — +646 vrstic v86-colonial-tiles (1.109 → 1.755); tally: 117 jk + 36 arbitraž + 1 pass2-split + 56 digit-split REVIEW + 14 col-split + 116 explicit N|K + 201 kept-k-k + 59 no-value + 30 page-not-qualified; owner/kultur variante +552/+506 (1.615/1.402); digit_mismatch 98; snimke 727; v88 (139) vrednostno nedotaknjeno; p142 fail-fast (v82 ostaja); p141 page-not-qualified (honest)
+- Kaskada: pass3 (PS parcele 898 → 779; land use njiva 294/travnik 84/UNKNOWN 249/pašnik 16/gozd 15/vrt 16/drugo 11/dvorišče 1/vinograd 1/None 92) → KG v2.3 23a2ae50 (PARCEL 2.814, HAS_PARCEL 3.091, vozlišča 3.656, vezi 3.795, claims 622, invariante 0 + KG-F12 RESOLVED-V107) → story → timeline (I6 2035/779/438+249 ✓) → coverage (2.814 = 907/1.454/453, §24 14/14) → runtime kopije src/data
+- F11 regeneriran: 9 kršitev (5→9), veznost p54→p58 delta 4 OK, REVIEW 52 strani (41→52), aritmetika 0/79/9, sidra 3/7 — REVIEW raven (NR-14)
+- analysis-v6: tiles_read 446→695, 0 napak; c4-metrika: K7 0/79/9, K9 214→120 (vsotno NEUTRALNA), K10 nespremenjen
+- Testi: +14 varovalk (tests/val107-issue42-86b-part3.test.ts) + izrecen prehod pinov v 20 testnih datotekah (register/parcele/KG/variante/F11/c4/sha/R-ID/KG-F12/story-engine/api-smoke); QA: bunx tsc --noEmit čist, eslint čist (testi v ignore listi — konvencija), 960 testov: 949 pass / 11 skip / 0 fail
+- Potek: push → PR #111 → CI 2/2 ZELENO → merge (main @ 605de66) → izbris veje (oddaljena + lokalna) → komentar na #42 (5897781459) → worklog
+- Docs: research-griblje/122-val107-86b-part3-zakljucek.md + KAZALO 122 + README 161. sklop; surovine v raw-web-val86-2026-10/vlm-v86/ (695 parov JSON+RAW); register-v107-changes.json (audit trail dela 3)
+
+Stage Summary:
+- ISSUE #42 §4/§14: 2. prehod kolonskih tile-ov PRAKTIČNO ZAPRT — 695/696 (99,9 %); vir resnice F-PV-05 na 86/87 straneh p56–142; edini preostanek = 1 tile (p142-t-kultur2, resumable)
+- Nova zgodovinska plast: jk korekcije na p110–141 zdaj 3-glasovno — 154 popravkov s snimkami; p141 izrecno NE kvalificirana (only_j ≥ 10 %) — nič ugibanja
+- PS parcele 898 → 779 (930 → 898 → 779); raba 438 explicit + 249 UNKNOWN + 92 None; per-parcelne trditve ostajajo PROVISIONAL (F-PV-04/NR-14)
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
+- Naslednje: p142-t-kultur2 ob kvoti → re-read 70 FRESH markerjev (56 digit-split + 14 col-split, vzorec val 88) → F-PV-03/F-PV-04; PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; Dular 1972 + BM Metlika (izven peskovnika); register: 26-0326 + 26-0379 (okt./nov. 2026)
