@@ -1,0 +1,69 @@
+{
+  "val": 101,
+  "task": "ISSUE #72 — vsebina Iglič 2006 (prioriteta #4: Miko Županič + Apfaltrerni 1903) + §3 Draganić ~1630 (Vurnik 1936) + §2/prioriteta #2 Vavpotičevi portreti družine Županič + Dular 1972 4. bibliografska potrditev",
+  "datum": "2026-09-29",
+  "blokade": [
+    "VLM kvota: trdo 429 (sonda 07:2x UTC — dnevna kvota, vzorec val 99/100) → vse VLM točke (86b del 3, re-readi, PZ p48–65, PT p7, PR Grenz-Beschreibung) ostajajo resumable",
+    "web_search: 429 (dnevna kvota, vzorec val 100)",
+    "dLib.si, eZKN, eProstorunki, sistory, monasterium: blokirani (sliki val 95–100)"
+  ],
+  "izbira": "Dve točki issue #72, katerih viri so javno dostopni brez prijave in brez VLM: (a) Iglič 2006 — URL izrecno podan v issue §1 (physics.fe.uni-lj.si, HTTP 200); (b) Vurnik 1936 Belokranjica — URL izrecno podan v issue §3 (etno-muzej.si, HTTP 200)",
+  "viri": [
+    {
+      "key_vir": "iglic-2006-niko-zupanic",
+      "url": "https://physics.fe.uni-lj.si/members/iglic/history/NikoZupanic.pdf",
+      "http": 200,
+      "velikost_b": 581995,
+      "strani": 11,
+      "naslov_po_pdf": "Ob 130 letnici rojstva slovenskega etnologa, antropologa, zgodovinarja in diplomata dr. Nika Zupaniča (1876-1961)",
+      "avtor": "dr. Aleš Iglič",
+      "bibliografska_oznaka": "PDF nima založniške oznake; repozitorsko kazalo virov (research-griblje/01) URL vodi kot »Iglič (Traditiones 2006)« pri URL z »TR351 247-255 Iglic.pdf« → Traditiones 35/1 (2006), str. 247–255 (po lastnem katalogu; v PDF ne potrjeno — iskrena opomba)",
+      "pdf_meta": "Microsoft Word - etnolog_kette_zupanic.doc; Acrobat Distiller 7; ustvarjen 28. 2. 2006",
+      "sha256": "2269b417e915663b507b19f48a0d787414cbd97aeb06e4fb64a7183ed3c8cf49",
+      "vsebina_potrjena": [
+        "Miko Zupanič (1841-1911), posestnik, trgovec ter gostilničar iz Gribelj v Beli krajini, v zadnjem desetletju 19. stoletja s posojanjem denarja postal zelo premožen — EXACT issue #72 §1",
+        "1903 ponujen nakup posestva z gradovi baronov Apfaltrernov (Krupa, Pobrežje, Pusti gradec); za nakup se ni odločil — EXACT issue §1 + NOVO: razlog »ker ni imel smisla za velike finančne transakcije«",
+        "NOVO: »Ugodne gmotne razmere Mika Zupaniča so Niku Zupaniču omogočile študij«",
+        "NOVO: oče je »zaradi vinske krize izgubil precejšen del premoženja« (okoli 1906, Zupanič takrat prefekt v Terezijanski gimnaziji na Dunaju)",
+        "NOVO (§3): predniki se preselili iz Draganičev v Belo krajino leta 1630; tisto leto so grofje Erdödy napadli in oropali Draganiće (svobodna občina iz srednjega veka); svobodnjaki, med njimi Zupaniči, umaknili na Kranjsko, »v podzemljsko župnijo«",
+        "NOVO (§2/prioriteta #2): Slika 1 — Miko Zupanič (1841-1911), relief kiparja A. Repiča",
+        "NOVO (prioriteta #2): Slika 2 — Katarina Zupanič (1855-1921), mati Nika; portret v naravni velikosti I. Vavpotiča hrani Belokranjski muzej (darilo dr. N. Zupaniča)",
+        "NOVO (prioriteta #2): Slika 3 — »Minister dr. Niko Zupanič«, portret v naravni velikosti I. Vavpotiča iz leta 1924, hrani Belokranjski muzej (darilo dr. N. Zupaniča)",
+        "NOVO: Slika 5 — prva soproga Helena Papp Zupanič, portret I. Vavpotiča (iz zbirke Veronika Zupanič Kralj); Slika 6 — hčerka s psom Kaletom, portret I. Vavpotiča (iz zbirke V. Zupanič Kralj)",
+        "NOVO: Slika 7 — Dragotin Kette, olje I. Vavpotiča naslikano po naročilu dr. Nika Zupaniča leta 1940; pred Nemci rešila Veronika Zupanič Kralj",
+        "NOVO: Nikovi spomini na Ketteja (spisano l. 1950): prijateljstvo od jeseni 1896 do pomladi 1899 (Kette VII., Zupanič VIII. razred realne gimnazije Novo mesto); zadnje srečanje sredi marca 1899 v Ljubljani, Zupanič na poti z Dunaja v Belo Krajino na velikonočne počitnice",
+        "Viri št. 4: Dular 1972 — »Dr. Niko Zupanič, ob okritju njegove spominske plošče v Gribljah v Beli krajini, urednik: Dular J., 1-54, Belokranjsko muzejsko društvo v Metliki, ČGP Delo, Ljubljana, 1972« — 4. neodvisna bibliografska potrditev + dopolnitev soizdajatelj ČGP Delo"
+      ]
+    },
+    {
+      "key_vir": "vurnik-1936-belokranjica",
+      "url": "https://www.etno-muzej.si/files/etnolog/pdf/etnolog_8_9_1936_vurnik_belokranjica.pdf",
+      "http": 200,
+      "velikost_b": 1156994,
+      "naslov": "Stane Vurnik: Belokranjica (Etnolog 8/9, 1936) — URL izrecno podan v issue #72 §3",
+      "sha256": "45744277b3131183fa842a7aadafc404ea0fdd3ea0953feefa9445ae68cd53f3",
+      "vsebina_potrjena": [
+        "Opomba 2: »V gradu Pobrežje pri Adlešičih so živeli Lenkovići iz Like; v Gradcu Gusiči prav tako Ličani po poreklu; na Svibniku pri Črnomlju in v Gribljah žive še danes Kukarji; na Vranovičah in v Gradcu Beličiči, Županiči, Šimuniči, Pašiči itd., ki so zelo verjetno prišli okr. 1630. iz Draganića pri Karlovcu.« — EXACT issue #72 §3 + NOVO: Lenkovići (Pobrežje) in Gusiči (Gradac) iz Like",
+        "slika = Katarina Županič de Griblje, mati ministra dr. Nika Županiča (1855–1921), v narodni noši podzemeljsko-metliške župnije (francoski del: »paroisse de Podzemelj«)"
+      ]
+    }
+  ],
+  "brez_podvajanja": {
+    "kontrola": "rg po src/lib/museum-content.ts pred vgradnjo",
+    "NikoZupanic|Erdödy|podzemljska|Draganić|Pusti gradec": 0,
+    "Apfaltrer": "6 zadetkov že obstoječih (val 97: grajščina Pobrežje na MVG-018, story) — trditev o ponudbi nakupa 1903 NI pokrita, ni podvajanja"
+  },
+  "vgradnja": {
+    "novi_viri": ["iglic-2006-niko-zupanic (MVG-010)", "vurnik-1936-belokranjica (MVG-010 + uskoki-in-vojna-krajina)"],
+    "posodobitve": ["dular-1972-zupanic note: 4. katalog/objava + ČGP Delo (sl+en)"],
+    "zgodbe": ["MVG-010: odstavek sl+en (gospodarska podoba očeta + vinska kriza + Draganić + Vavpotičevi portreti družine + Kette spomini)", "uskoki-in-vojna-krajina: odstavek sl+en (Draganić 1630 migracijska sled)"],
+    "prehod_stevcev": "virov 625 → 628 (+2 nova + 1 citat deljenega vurnik), identitet 502 → 504, deljenih 68 → 69"
+  },
+  "artefakti": ["iglic2006.pdf", "iglic2006-fulltext.txt", "vurnik1936.pdf", "vurnik1936.txt", "sha256.txt", "summary.json"],
+  "fairness": [
+    "Iglič 2006: status vir = VERIFIED (vsebina prebrana iz dostopnega PDF); bibliografska oznaka revije po lastnem kazalu (ne dvigujemo)",
+    "Vurnik 1936: »zelo verjetno« se prenaša kakor napisano — migracija Draganić ~1630 ostaja REVIEW/migracijska sled, ne dvignjena na dejstvo",
+    "Vavpotičevi portreti: hramba v Belokranjskem muzeju po navedbi članka 2006 — današnje stanje zbirke TO_COLLECT; slike NE vnašamo kot digitalni predmeti",
+    "Nič ne dvignjeno v identitetni verigi #100 §8 (F0000212 = št. 73 ostaja INFERRED)"
+  ]
+}
