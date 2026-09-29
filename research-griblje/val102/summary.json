@@ -1,0 +1,135 @@
+{
+  "val": 102,
+  "task": "ISSUE #72 — izvorna registrska enota EŠD 11081/10094 po uradnem GISKD API-ju + register raziskav eArheologija (26 zapisov, 2013–2026) + javni eSDE prenosi prvih poročil — 6 poročil prebranih v celoti",
+  "datum": "2026-09-29",
+  "reprodukcija": "vsi artefakti dvakrat prenešeni (pred in po resetu peskovnika) — sha256 identični; poizvedbe deterministične",
+  "kvota": {
+    "web_search": "429 (trdo, celoten val)",
+    "vlm": "429 (ni klicano)",
+    "bypass": "deterministični curl na uradne ArcGIS REST endpointe geohub.gov.si (0 AI klicev za najdbe)"
+  },
+  "metoda": [
+    "sonda dosegljivosti domen: gov.si/zvkds.si/javnipodatki.si/kamra.si/slov.si/etno-muzej.si = 200; sistory 403; dlib.si 000; NUK 000; books.google 429; belakrajina.si 200 vendar zahteva JS-izziv (agent-browser: 'One moment, please...' ne preide — pošten negativ)",
+    "odkritje uradnega ArcGIS servisa iz aplikacije GISKD (config.json → MK/MK_RNPD in MK/MK_ARHEO MapServer)",
+    "poizvedbe: sloj 3650 »Arheološka najdišča« (EID 1-11081 in 1-10094), sloj 3692 »Vrste izvedenih arheoloških raziskav« (EID LIKE 10094/11081)",
+    "javni eSDE prenos prvih poročil: https://ised.gov.si/api/javna/neavtoriziran/arheo/prvo_porocilo/files/{ID}/download (razrešitev vala 95: »ID zahteva eSDE prijavo« — ID-ji so v polju URL_POROCILO1 registra)",
+    "pdftotext vseh 6 poročil; branje podatkovnih blokov, povzetkov in sklepov"
+  ],
+  "register_enote": {
+    "EID_1-11081": {
+      "ime": "Griblje - Arheološko najdišče Požekov vrt",
+      "status_enote": "VPISANA",
+      "datum_vpisa": "30.10.2001",
+      "datum_zadnje_spremembe": "01.08.2022",
+      "povrsina_ha": 11.3,
+      "meja": "območje ni določeno",
+      "koordinate": "N: 5047532, E: 5523155, Z: 159 m (točkovna lega, GK5)",
+      "datacije": "pozna bronasta doba",
+      "pristojna_oe": "ZVKDS OE Novo mesto",
+      "raziskovalni_zapisi_na_enoti": 0
+    },
+    "EID_1-10094": {
+      "ime": "Griblje - Arheološko najdišče ob Kolpi",
+      "status_enote": "VPISANA",
+      "datum_vpisa": "20.08.2002",
+      "datum_zadnje_spremembe": "01.08.2022",
+      "povrsina_ha": 316.57,
+      "meja": "meja je določena na DKN",
+      "koordinate": "N: 5048402, E: 5523378, Z: 147 m (točkovna lega, GK5)",
+      "datacije": "mlajši neolitik, bakrena doba, pozna bronasta doba, starejša železna doba, zgodnja rimska doba",
+      "sinonimi": "Kohane, Požekov vrt, Krasinec - Vrh",
+      "pristojna_oe": "ZVKDS OE Novo mesto",
+      "raziskovalni_zapisi_na_enoti": 26
+    },
+    "primerjava_issue72": "samostojna enota 11081 (2001) ima točkovno lego, 11,3 ha, brez poligona in brez lastnih raziskovalnih zapisov; širša enota 10094 (2002) ima mejo na DKN in vse 26 raziskav — ločena registrska enota je raven evidentiranja zgodnjih 2000-ih, ne ločenega najdišča"
+  },
+  "earheologija_nove_kode": [
+    { "koda": "13-0078", "izvajalec": "ARHEOTERRA d.o.o.", "vodja": "Otmar Kovač", "trajanje": "7.–8. 6. 2013", "parcele": "2973–2979, 681, 667, 668 k.o. 1544", "opomba": "koda za raziskavo, ki jo muzej citira po zborniku 2013" },
+    { "koda": "14-0456", "izvajalec": "ARHAT Aleš Tiran s.p.", "vodja": "Matevž Lavrinc", "trajanje": "19. 12. 2014", "parcele": "750/3 k.o. 1544", "rezultat": "končana", "porocilo_id": 26989 },
+    { "koda": "15-0081", "izvajalec": "ARHAT Aleš Tiran s.p.", "vodja": "Matevž Lavrinc", "trajanje": "5.–19. 5. 2015", "parcele": "818–831 k.o. 1544", "rezultat": "končana; EID tudi 1-19861 Dragoši", "porocilo_id": 27072 },
+    { "koda": "16-0021", "izvajalec": "ARHAT Aleš Tiran s.p.", "vodja": "Matevž Lavrinc", "trajanje": "1.–2. 2. 2016", "parcele": "2698/2, 2886–2890, 146/1, 289 k.o. 1544", "rezultat": "končana", "porocilo_id": 27357 },
+    { "koda": "16-0141", "izvajalec": "ARHAT Aleš Tiran s.p.", "vodja": "Matevž Lavrinc", "trajanje": "6. 6.–21. 7. 2016", "parcele": "2698/2, 2692, 2697, 2891/1–2 k.o. 1544", "rezultat": "končana", "porocilo_id": 27403 },
+    { "koda": "19-0007", "izvajalec": "ZVKDS CPA", "vodja": "Tadeja Mulh", "trajanje": "27. 2.–19. 6. 2019", "parcele": "—", "rezultat": "končana; EID tudi 1-19860 Fučkovci + 1-01595 Adlešiči", "porocilo_id": 28369 },
+    { "koda": "22-0169", "izvajalec": "ZVKDS CPA", "vodja": "Mija Černe", "trajanje": "25. 5.–7. 6. 2022", "parcele": "67/3 k.o. 1544", "rezultat": "končana", "porocilo_id": 29324 },
+    { "koda": "23-0047", "izvajalec": "Matevž Lavrinc s.p.", "vodja": "Matevž Lavrinc", "trajanje": "28. 2.–12. 3. 2023", "parcele": "2957, 201/1 k.o. 1543 Krasinec", "rezultat": "1 - arheološko pozitivno", "porocilo_id": 33076 },
+    { "koda": "25-0350", "izvajalec": "AVGUSTA d.o.o.", "vodja": "Gregor Gruden", "trajanje": "1.–3. 10. 2025", "parcele": "15/4 k.o. 1544", "rezultat": "1 - arheološko pozitivno", "porocilo_id": 77952 },
+    { "koda": "25-0556", "izvajalec": "Skupina STIK", "vodja": "Rene Masaryk, Mojca Fras", "trajanje": "15.–16. 4. 2026", "parcele": "668/1 k.o. 1543", "rezultat": "0 - arheološko negativno", "porocilo_id": 87431 },
+    { "koda": "26-0036", "izvajalec": "ZVKDS CPA", "vodja": "Katarina Udovč, Blaž Orehek", "trajanje": "23. 3.–2. 4. 2026", "parcele": "15/4 k.o. 1544", "rezultat": "1 - arheološko pozitivno", "porocilo_id": 89129 },
+    { "koda": "26-0326", "izvajalec": "AVGUSTA d.o.o.", "vodja": "Tina Nanut, Gregor Gruden", "trajanje": "4.–9. 9. 2026", "parcele": "5214 k.o. 1544", "rezultat": "2 - arheološko neopredeljeno (poročilo oddano v pregled)" },
+    { "koda": "26-0379", "izvajalec": "ARHEOTERRA d.o.o.", "vodja": "Lucija Grahek, Otmar Kovač", "trajanje": "2. 10.–7. 11. 2026 (napovedano)", "parcele": "2799 k.o. 1544", "rezultat": "terenska raziskava napovedana" }
+  ],
+  "porocila_prebrana": [
+    {
+      "koda": "21-0141",
+      "datoteka": "porocila/21-0141-klepec-krasinec-2957.pdf",
+      "strani": 32,
+      "sha256_pdf": "317bb81699f095f7d66be79f1196bd8074e30a6b43615ef1454af5666d5be9fd",
+      "esde_id": 29033,
+      "kljucne_ugotovitve": ["strojni testni jarek 8 × 1,2 m = 9,6 m²", "hodna površina SE 003 z več skupki keramike na ~50 cm + 2 stojki v liniji", "naselbinske najdbe z začetka pozne bronaste dobe, še pred gradiščno poselitvijo (Ha B)", "fragment nažlebljene keramike kaže na Ha A", "elementov stajnje Oloris–Podsmreka v jarku NI", "soglasje 62240-130/2021/2 z dne 31. 3. 2021; terensko 15. 4. 2021"]
+    },
+    {
+      "koda": "21-0432",
+      "datoteka": "porocila/21-0432-avgusta-668.txt (PDF 14.9 MB prenešen+hashiran, ni komittan)",
+      "strani": 62,
+      "sha256_pdf": "b8cb27463b4602714c69d7568402ac72b52101785bd61a3bf1b1f1318419d4f1",
+      "esde_id": 40880,
+      "kljucne_ugotovitve": ["prazgodovinska kulturna plast + 2 kole jami + dvojna shrambno-odpadna jama SE 23/24", "265 najdb (96 % prazgodovina): 241 lončine, 10 hišnega lepa, 4 kamniti predmeti (2 žrmlji)", "kultura Kisapostag, zgodnja bronasta doba (ustja z vrezi, vrvičast okras, črne polirane posode)", "19.–30. 11. 2021, Avgusta d.o.o., vodja Ines Klokočovnik", "FK 1824: parcela 668 že njiva"]
+    },
+    {
+      "koda": "23-0047",
+      "datoteka": "porocila/23-0047-lavrinc-2023.txt (PDF 22.3 MB prenešen+hashiran, ni komittan)",
+      "strani": 32,
+      "sha256_pdf": "250519a00d13577cb0993eb11848fe37415152206bf36125b6ad1935f4f4bf23",
+      "esde_id": 33076,
+      "kljucne_ugotovitve": ["5 ročnih testnih jam na parc. 2957 + 201/1 k.o. Krasinec", "brez starejših struktur — 37 kosov prazgodovinske lončenine + 9 ožgane gline v koluvijalnih plasteh SE 006/007 (50–145 cm)", "srednjeveška + novodobna lončenina v ornici", "zgodovinski kontekst ledine Vrh po Dular 1985, 75–76 (najdbe 1930/1935/1957)", "hramba arhiva: Belokranjski muzej Metlika", "register 28. 2.–12. 3. 2023; podatkovni blok poročila: 12. 3. 2023"]
+    },
+    {
+      "koda": "23-0070",
+      "datoteka": "porocila/23-0070-brodaric-67-3.txt (PDF 31.6 MB prenešen+hashiran, ni komittan)",
+      "strani": 96,
+      "sha256_pdf": "e237eb8fcbab7f0ca495195357af7a11dd96bce3f558dfb1b01664dcbd9c3923",
+      "esde_id": 39824,
+      "kljucne_ugotovitve": ["ime projekta »22-0033 Brodarič, ARG«; koda 23-0070; trajanje 6.–15. 6. 2023 (podatkovni blok + register; sklep poročila napačno piše »julija 2023«)", "vkopi za kole/stojke + sledi kurišča", "najstarejše jame: horizont Oloris–Podsmreka / vitovitiška skupina, Bd C–Bd D", "lončenina savske skupine lengyelske kulture ~4800/4700–4350 pr. n. št. v sekundarni legi — pozni neolitik", "rekonstruirana skodelica srednje/zgodnje pozne bronaste dobe (kat. 68); votli cilindrični nogi (kat. 22, 37)", "vodji Udovč + Jerina; namestnica Černe; odgovorna Nadbath; sodelavec Kramberger", "poročilo 161615619 (Udovč, Černe, Kramberger 2023) = ISTA raziskava 23-0070 — popravek vala 95 (»četrta raziskava 2023«)", "FK 1824 na lokaciji; hramba arhiva: Belokranjski muzej Metlika"]
+    },
+    {
+      "koda": "23-0168",
+      "datoteka": "porocila/23-0168-arhat-2023.pdf",
+      "strani": 18,
+      "sha256_pdf": "f09f0a3eaeff6da25e3f563fb7fd0478c6a149d9084fea9c37a028b30f327b78",
+      "esde_id": 40022,
+      "kljucne_ugotovitve": ["raziskava NEGATIVNA — ni arheološko relevantnih plasti, struktur ali artefaktov (parc. 798/14 + *140, Griblje – Piškurič)", "24. 7. 2023, ARHAT, vodji Lorber + Tiran, nadzornik mag. Uroš Bavec", "hramba arhiva: Belokranjski muzej Metlika, Trg svobode 4", "reference navajajo: Žorž, A. 2013, Griblje – arheološko najdišče ob Kolpi, Varstvo spomenikov 48 (poročila), 74–76 — leto izida 2013 (muzej doslej VS 48 = 2011; REVIEW)"]
+    },
+    {
+      "koda": "26-0036",
+      "datoteka": "porocila/26-0036-mahmoutovic-15-4.txt (PDF 54.2 MB prenešen+hashiran, ni komittan)",
+      "strani": 100,
+      "sha256_pdf": "99b4fc5b769ab5c3691eb54105d5f4794a7811832843a63649ff02b0c84cf8bd",
+      "esde_id": 89129,
+      "kljucne_ugotovitve": ["projekt »26-0008 Mahmutović«; parcela 15/4; 23. 3.–2. 4. 2026; ZVKDS CPA; vodja Udovč + Orehek", "pozitivno: vkopi za stojke in pitos + naselbinska plast SE 056, zgoščeno na terasi (zahodni rob — najdišče se nadaljuje proti zahodu)", "savska skupina lengyelske kulture (pozni neolitik): najširši obod lonca z vzporednimi poševnimi vrezi + linijo vbodov", "srednja in zgodnja pozna bronasta doba potrjena tudi na tem delu", "pozni srednji vek + novi vek (gnojenje/smetenje)"]
+    }
+  ],
+  "brez_podvajanja": {
+    "rg_kontrola_pred_vgradnjo": ["Kisapostag", "lengyel", "vitovitišk", "22-0169", "23-0047", "25-0350", "25-0556", "26-0036", "26-0326", "26-0379", "14-0456", "15-0081", "16-0021", "16-0141", "19-0007", "DKN", "eArheologija", "geohub.gov.si/ags"],
+    "rezultat": "0 zadetkov v src/ + research-griblje/ (izjema: 1 zadetek ised.gov.si/api/javna v opombi vala 95 — brez ID-jev)"
+  },
+  "vgradnja": {
+    "novi_viri": ["rnkd-giskd-units-10094-11081", "earheologija-raziskave-10094", "avgusta-2021-krasinec-668", "lavrinc-2023-krasinec-2957-201-1", "lorber-tiran-2023-piskuric-798-14", "udovc-orehek-2026-mahmoutovic-15-4"],
+    "posodobitve_vir_o": ["esd-11081-pozekov-vrt (izvorna registrska enota prebrana)", "tiran-2021-klepec-krasinec (vsebina prebrana; REVIEW → VERIFIED)", "zvkds-cerne-2022-brodaric (koda 22-0169 + datumi)", "zvkds-udovc-2023-brodaric (popravek: = 23-0070; vsebina prebrana)"],
+    "zgodbe": ["MVG-083 nov odstavek sl+en: poročila prebrana, register raziskav 2013–2026, datumi vpisov obeh enot, BM Metlika kot hramba arhivov"],
+    "prehod_stevcev": "114 zapisov / 628 → 634 citati / 504 → 510 identitet / 69 deljenih"
+  },
+  "fairness": [
+    "rezultati raziskav (pozitivno/neopredeljeno/negativno) prenašani po zapisih registra in poročil — negativni rezultat 23-0168 zapisan z enako težo",
+    "register daje za EŠD 11081 samo točkovno lego (MEJA: območje ni določeno) — muzej ne ustvarja poligonov ali koordinat najdišča",
+    "trajna hramba arhivov (BM Metlika) po navedbah poročil ZVKDS/ARHAT/Lavrinc — dokumentirana dejstva poročil, ne obiska muzeja",
+    "neskladje datumov 23-0070 (junij v podatkovnem bloku + register; »julij« v sklepu poročila) izrecno zapisano",
+    "neskladje letnice VS 48 (muzej 2011 vs referenca poročila 2013) = REVIEW, ne utišano",
+    "popravek vala 95 (Udovč 2023 = 23-0070, ni četrtih raziskav 2023) z izrecnim audit trailom",
+    "vsebina Dularjeve knjižice 1972 ostaja TO_COLLECT; današnje stanje BM zbirke (Vavpotič) ostaja TO_COLLECT (belakrajina.si za JS-izzivom — pošten negativ); ATLAS §22 neizmenjan; veriga #100 §8 nespremenjena"
+  ],
+  "artefakti": {
+    "komittani": ["arheo-3692-10094.json", "arheo-3692-11081.json", "arheo-svc.json", "giskd-app.html", "giskd-config.json", "rnpd-10094-query.json", "rnpd-11081-query.json", "rnpd-3650.json", "rnpd-svc.json", "bm-home.html", "porocila/ (2 PDF ≤ 8 MB + 6 TXT)", "sha256.txt"],
+    "neasni": "4 velika PDF (14.9–54.2 MB) prenešena, hashirana, izbrisana — vsebina ohranjena v .txt (vrstica v sha256.txt)",
+    "opomba_bm": "bm-home.html = dokaz o JS-izzivu strani belakrajina.si (pošten negativ runde BM)"
+  }
+}

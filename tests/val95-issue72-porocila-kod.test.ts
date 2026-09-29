@@ -169,9 +169,11 @@ describe("val95 — dopolnilo vira 21-0141 (Klepec–Krasinec): COBISS + ised po
     expect(s.noteEn).toContain("requires a login to the professional eSDE portal");
   });
 
-  test("REVIEW vsebina ostaja; CONTENT NOT FOUND ostaja; URL vira je še vedno ZRC IZA", () => {
-    expect(s.noteSi).toContain("REVIEW vsebina 30-stranskega poročila");
-    expect(s.noteSi).toContain("CONTENT NOT FOUND");
+  test("102. val: vsebina PREBRANA (REVIEW razrešen); URL vira ostaja ZRC IZA (bibliografski izvor) [pin posodobljen 102. val]", () => {
+    // 102. val: poročilo 21-0141 prebrano v celoti (javni eSDE prenos 29033) — status REVIEW vsebina → VERIFIED vsebina
+    expect(s.noteSi).toContain("Doplnilo 102. vala");
+    expect(s.noteSi).toContain("PREBRANO v celoti");
+    expect(s.noteSi).not.toContain("CONTENT NOT FOUND");
     expect(s.url).toBe("https://iza2.zrc-sazu.si/sites/default/files/2021%20IZA.pdf");
   });
 });
@@ -267,12 +269,14 @@ describe("val95 — izrecen prehod števcev (ne tih)", () => {
     expect(uM.exhibits.every((e) => e.slug === "petstoletnica-2026")).toBe(true);
   });
 
-  test("pošten negativ: vključno z dopolnjenim 21-0141 ni tržena nobena najdba/datacija iz vsebin", () => {
+  test("102. val: vsebina 21-0141 prebrana — najdbe zapisane po poročilu, ne ugibane [pin posodobljen 102. val]", () => {
     const naj = byMuseumNo("MVG-083");
     const s = naj.sources.find((x) => x.key === "tiran-2021-klepec-krasinec")!;
-    expect(s.noteSi).toContain("ne ugibati najdb");
-    // ised ID-ji niso izumljeni: opomba omenja sistem, ne nobenega konkretnega številčnega ID-ja datoteke
-    expect(s.noteSi).toMatch(/ised\.gov\.si/);
-    expect(s.noteSi).not.toMatch(/files\/\d+\/download/);
+    // 102. val: vsebina prebrana — najdbe prihajajo iz poročila, ne ugibanja
+    expect(s.noteSi).toContain("PREBRANO v celoti");
+    expect(s.noteSi).toContain("hodna površina SE 003");
+    expect(s.noteSi).toContain("Ha A");
+    // ised ID je zdaj dokumentiran: javni prenos brez prijave (vrzel vala 95 razrešena)
+    expect(s.noteSi).toMatch(/29033\/download/);
   });
 });
