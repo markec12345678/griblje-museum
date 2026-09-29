@@ -204,12 +204,12 @@ describe("val101 · zgodbe sl+en", () => {
 });
 
 describe("val101 · izrecen prehod števcev", () => {
-  test("114 zapisov / 651 virov / 527 identitet / 69 deljenih [pin posodobljen 104. val: +10 virov na MVG-083]", () => {
+  test("114 zapisov / 652 virov / 528 identitet / 69 deljenih [pin posodobljen 106. val: +1 vir (mason-varesko-pinter-2006-izkopavanja) na MVG-083]", () => {
     const virov = seedExhibits.reduce((a, e) => a + (e.sources?.length ?? 0), 0);
     const deljenih = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length > 1).length;
     expect(seedExhibits.length).toBe(114);
-    expect(virov).toBe(651);
-    expect(SOURCE_USAGE.size).toBe(527);
+    expect(virov).toBe(652);
+    expect(SOURCE_USAGE.size).toBe(528);
     expect(deljenih).toBe(69);
   });
 

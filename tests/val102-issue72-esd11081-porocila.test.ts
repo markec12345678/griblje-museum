@@ -235,14 +235,14 @@ describe("val102 · zgodba MVG-083 (sl+en)", () => {
 });
 
 describe("val102 · števci + artefakti + docs", () => {
-  test("številni prehod: 114 zapisov / 651 citati / 527 identitet / 69 deljenih [pin posodobljen 104. val: +10 virov na MVG-083]", () => {
+  test("številni prehod: 114 zapisov / 652 citati / 528 identitet / 69 deljenih [pin posodobljen 106. val: +1 vir (mason-varesko-pinter-2006-izkopavanja) na MVG-083]", () => {
     let cit = 0;
     for (const e of seedExhibits) cit += e.sources.length;
     const keys = [...SOURCE_USAGE.entries()];
     const shared = keys.filter(([, u]) => u.exhibits.length > 1).length;
     expect(seedExhibits.length).toBe(114);
-    expect(cit).toBe(651);
-    expect(keys.length).toBe(527);
+    expect(cit).toBe(652);
+    expect(keys.length).toBe(528);
     expect(shared).toBe(69);
   });
 

@@ -1,0 +1,17 @@
+# VS 42 — artefakti 106. vala (sha256)
+# vir: raw-web-val105-2026-10/vs42_2006.pdf (pnešen v valu 105, OCR obdelan v valu 106)
+404dbb070745386c5f8ed4a7c1c77d9af611aed8364084d84a32d889b01985fe  vs42_2006.pdf
+# tessdata (uporabljeno za OCR slv+deu, po konvenciji izbrisano — javno ponovno preneisljivo: github.com/tesseract-ocr/tessdata_fast/full)
+b937632c17ce5fdf20535d25feec044da10a0c4c8234f4302d5606fd671cf60d  slv.traineddata
+19d219bbb6672c869d20a9636c6816a81eb9a71796cb93ebe0cb1530e2cdb22d  deu.traineddata
+# artefakti (tesseract 5, -l slv, 150/300 dpi psm 1):
+4d35abfd09b9226d9b28cf208f333f0616c9e054b6f9853fcedb4fff64bc2f5a  vs42-p002-kolofon.txt
+d1db97308c4b4fd21607fcfd115be75eb23890e24ca5bd4dbf9f56c7db90d7bb  vs42-p005-uvodnik.txt
+2094dda169ef09ef50cd32e9a706c89f68893eb0aa9a9732eafba87da78cbb72  vs42-p006-vsebinska-navodila.txt
+8d412251f909fa1dadb12e474277e7f6e3b53d768190f3f0b706923e8c4cfc99  vs42-p049-griblje-izkopavanja.txt
+0bc931fbf6fff432748b0c9b7efa57f43c6b89b74356e99db4c7ae0d7f048ed5  vs42-p050-griblje-izkopavanja.txt
+8bf7f0e215aaa5c6e9e6795908e7396296cf46bca96f433ccefc5d02b56e255c  vs42-p051-griblje-vrednotenje.txt
+9d87d392ac07fd746bf73a5902dac6ffc0b64c36298e4a02468179940e10fc4f  vs42-p204-kazalo.txt
+acc3164b9e60eaff3b40224242f3f3e2486550181e4277e052040d0fca144dfd  vs42-p205-kazalo.txt
+de0987eb712609df12776d872685697ff9bf120b7173ee1225747736513d432a  vs42-p210-kazalo-kratic-seznam-avtorjev.txt
+165419a2ff9174c123bdf99dbd4afc4f0ea9daea6936fa028e2e7ec466278dcc  vs42-p211-seznam-avtorjev.txt

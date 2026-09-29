@@ -1,0 +1,80 @@
+{
+  "val": 106,
+  "datum": "2026-09-29",
+  "issue": 72,
+  "tema": "VS 42 (Varstvo spomenikov, Poročila 42) prebran z OCR skena — kolofon razrešen (december 2006) + VNAJ DVA članka o Gribljih: vnos 59 (izkopavanja fekalna kanalizacija 2005, str. 49–50 — poročilo o izkopavanjih 2005, doslej TO_COLLECT) + vnos 60 (vrednotenje kanalov G1/G4, str. 51 — kuratorski zapis potrjen in popravljen: ne str. 60–61)",
+  "metoda": {
+    "vlm_klicev": 0,
+    "spletno_iskanje": 0,
+    "ocr": "tesseract 5, tessdata slv+deu (repo raw-web-val105-2026-10/tessdata), pdftoppm 150/300 dpi, psm 1",
+    "vir_pdf": "raw-web-val105-2026-10/vs42_2006.pdf (pnešen v valu 105; sha256 404dbb07…)",
+    "folio_preverba": "vizualna kontrola folijev na 300 dpi: PDF 49 = folio 49, PDF 50 = folio 50, PDF 51 = folio 51 → mapping PDF : natisnjena stran = 1:1",
+    "vnos_resevanje": "rdeča številka nad glavo članka = VNOS članka (isti sistem kot vnos 30 v VS 48, val 105); kazalo (PDF 204–205) vpiše Griblje pod vnos 59 + vnos 60 — torej kazalni stolpec = vnos, ne EŠD in ne stran"
+  },
+  "zvezek": {
+    "kolofon": "Ljubljana, december 2006; ISSN 1580-5166; izdaja ZVKDS, zanj dr. Robert Peskar; urednica Biserka Ribnikar; naklada 600",
+    "uvodnik": "4. številka Poročil kot samostojne publikacije; poročila o posegih, opravljenih v veliki meri v letu 2005; 3. zvezek Poročil izdan julija 2006 (pokrival posege 2000–2004)",
+    "letnica_status": "REVIEW RAZREŠEN — ime datoteke 042_2006 potrjeno s kolofonom (december 2006)",
+    "strani_pdf": 212,
+    "besedilna_plast": "brez (čisti sken, Acrobat Image Conversion 2016; pdftotext = 0 vrstic) — branje z OCR"
+  },
+  "vnos_59_izkopavanja": {
+    "strani": "49–50",
+    "glava": "EŠD 10094; Naselje Griblje; Občina Črnomelj; Ime: Griblje — arheološko najdišče ob Kolpi; Področje: A; Obdobje: neolitik, eneolitik, rimsko obdobje, srednji vek; Vrsta dela: 6, 7",
+    "podpis": "Philip Mason, Niko Vareško, Ildiko Pinter",
+    "izkopavanja": "21. 3.–7. 4. 2005; ekipa ZVKDS OE Novo mesto pod vodstvom doc. dr. Philipa Masona in Nika Vareška (absolvent arheologije)",
+    "parcele": "2852/2, 2863, 2864, 2865, 2886 k.o. Griblje",
+    "sonde": "S:1 (10 × 3 m; parc. 2863, 2864, 2886; manjši platoj na robu prve terase Kolpe); S:2 (10 × 3 m; parc. 2864, 2865; ob robu prve terase); S:3 (profil 20 m; parc. 2852/2; poplavna ravnina, predvidena lokacija čistilne naprave, paleostruga Kolpe)",
+    "faze_S1_S2": "1 pleistocenski aluvij (SE 121/SE 219); 2 koluvialni nanos + neolitska hodna površina (SE 106; od višje ležečega terena iz smeri današnjega naselja; višji predeli že poseljeni; možnost obrtne dejavnosti — izdelovanje orodja in orožja iz kremena); 3 starejši eneolitik (vkop SE 114, namembnost nejasna — sledovi eneolitskega objekta?, precej fragmentov eneolitske keramike); 4 mlajši eneolitik (številni vkopi jam za stojke → vsaj en objekt; verjetno razširitev naselbine); 5 postprazgodovinski aluvij (SE 105/SE 213; v S:2 precej najdb rimske dobe in srednjega veka = indici bližnje poselitve); 6 srednjeveška faza (samo S:2: jama + drenažni jarek → domnevni bližnji objekt ali drenaža za poljedelstvo; v uvodu omenjen še kolovoz v S:2); 7 koluviacija mlajših obdobij (SE 102/SE 202); 8–9 recentno (poljedelstvo, parcelacija in komasacija 1985, arheološko vrednotenje 2004)",
+    "faze_S3": "1 najstarejši aluvij (brez najdb); 2 rimskodobni/postrimski sedimenti (najdbe iz prazgodovinske in rimske dobe); 3 srednjeveški sedimenti (najdbe rimske dobe in srednjega veka); 4 recentno (travniška ruša + ornicas)",
+    "sklep": "najdišče okvirno neolitik + eneolitik, prostor uporabljen tudi v rimski dobi in srednjem veku; strukture se širijo vzhodno (manjši platoj); verjetno večina intaktnih plasti in struktur prazgodovinske poselitve na platoju ni bila poškodovana z gradnjo kanalizacije; prazgodovinske najdbe v mlajših plasteh → poselitev zahodno od trase (prva ali druga terasa) + močna erozija naselbinskih plasti v mlajših obdobjih; S:2 ostanki struktur srednjega in novega veka; starejše najdbe v nanosih S:2 → poselitev v neposredni bližini v prazgodovinskem in rimskem obdobju",
+    "vrednotenje_fekalne_trase": "2004 (faza 8–9) — potrdilo najdbe, plasti IN strukture → ZVKDS OE Novo mesto ustavil gradbena dela in določil obseg izkopavanj",
+    "pomen": "PRIMARNO POROČILO O IZKOPAVANJIH 2005 — doslej znano le posredno prek Žorž 2011 (TO_COLLECT); prva dokumentirana izkopavanja prazgodovinske naselbine na širšem območju"
+  },
+  "vnos_60_vrednotenje_G1_G4": {
+    "strani": "51",
+    "glava": "EŠD 10094; Ime: Griblje — arheološko najdišče ob Kolpi; Področje: A; Obdobje: prazgodovina, rimsko obdobje, srednji vek; Vrsta dela: 6, 7",
+    "podpis": "Philip Mason, Niko Vareško, Ildiko Pinter",
+    "vodja": "Niko Vareško (absolvent), nadzor doc. dr. Philip Mason — potrjeno kuratorsko",
+    "parcele": "113/1 (kanal G4); 2866–2872 (kanal G1)",
+    "tj": "skupno 11 TJ: 6 TJ kanala G1 (povprečno 2 × 2 × 1,5 m) + 5 TJ kanala G4 (povprečno 1 × 1 × 1 m)",
+    "porazdelitev": "enakomerno po celotni trasi G1 + prvih 100 m G4; preostanek trase G4 zaradi strnjenega naselja NI BIL IZVEDLJIV",
+    "lego": "travnate površine prve terase in poplavne ravnine Kolpe ob V robu naselja; G4 = pliokvartarni sedimenti, G1 = holocenski nanosi",
+    "ugotovitve": "1: večina TJ z najdbami (ožgana glina, przg./rimska/srednjeveška/novoveška keramika, oglje); 2: G1 — przg. keramika + ožgana glina iz aluvialnih nanosov; G4 — przg. keramika + ožgana glina + oglje iz INTAKTNE kulturne plasti, brez sledov struktur; 3: plasti z najdbami = aluvialni (G1, dve fazi: mlajša rimskodobno+srednjeveško, starejša prazgodovinska) ali koluvialni (prazgodovinski; na G4 iz postprazgodovinskega obdobja — težko ločljivi od intaktnih); 4: geološka osnova G1 ~1,4 m, G4 1 m (različna konfiguracija terena: G1 poplavna ravnina, del G4 prva terasa)",
+    "sklep": "lokacija poseljena v prazgodovini (G4) ali v bližini človekova dejavnost v prazgodovinskem, rimskodobnem in srednjeveškem obdobju (G1); strojni izkop G1 bi uničil aluvialne nanose z najdbami v enakem obsegu kot izgradnja prvega dela trase G1; na G4 bi uničili intaktne prazgodovinske plasti in postprazgodovinske koluvialne nanose s prazgodovinskim materialom na prvi terasi",
+    "popravek_strani": "kuratorski zapis (val 95/issue #72) je navajal str. 60–61 — branje zvezka s folijem: str. 51 (vnos 60); popravek z dobesednim dokazom"
+  },
+  "kazalo": {
+    "strani": "204–205",
+    "griblje_vnosi": [59, 60],
+    "opomba": "kazalni stolpec = vnos (rdeče številke v besedilu), ne EŠD in ne stran; obe gribeljski vnosi kazalo uvrsti v sklop »rimsko obdobje«, čeprav glavi člankov navajata neolitik/eneolitik oziroma prazgodovino — nejasnost kazala zapisana, ni kritična"
+  },
+  "vgradnja": {
+    "novi_viri": ["mason-varesko-pinter-2006-izkopavanja"],
+    "dopolnjeni_viri": [
+      "vs-42-kanalizacija-g1-g4 (kolofon razrešen, polno branje, popravek str. 51, vsebinske dopolnitve)",
+      "zorz-2011-av-griblje (TO_COLLECT poročilo o izkopavanjih 2005 = identificirano + prebrano)"
+    ],
+    "zgodba": "odstavek 106. vala sl+en na MVG-083 + doplnilo pri »Muzej išče« sl+en + popravek str. 60–61 → 51 v zgodbi sl+en",
+    "prehod_stevcev": "+0 zapisov (114) / +1 vir (651 → 652) / +1 identiteta (527 → 528) / deljenih 69"
+  },
+  "artefakti": {
+    "sha256_txt": "sha256.txt",
+    "pdf_bajtov": 45826752,
+    "pdf_sha256": "404dbb070745386c5f8ed4a7c1c77d9af611aed8364084d84a32d889b01985fe",
+    "veliki_pdf_po_valu": "izbrisan po konvenciji (hash zabeležen)",
+    "tessdata": "izbrisano po konvenciji (slv b937632c…, deu 19d219bb…; javno ponovno preneisljivo)",
+    "teksti": [
+      "vs42-p002-kolofon.txt",
+      "vs42-p005-uvodnik.txt",
+      "vs42-p006-vsebinska-navodila.txt",
+      "vs42-p049-griblje-izkopavanja.txt",
+      "vs42-p050-griblje-izkopavanja.txt",
+      "vs42-p051-griblje-vrednotenje.txt",
+      "vs42-p204-kazalo.txt",
+      "vs42-p205-kazalo.txt",
+      "vs42-p210-kazalo-kratic-seznam-avtorjev.txt",
+      "vs42-p211-seznam-avtorjev.txt"
+    ]
+  }
+}

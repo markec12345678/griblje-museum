@@ -285,14 +285,14 @@ describe("val104 · poštenost", () => {
 });
 
 describe("val104 · števci + artefakti + docs", () => {
-  test("številni prehod: 114 zapisov / 651 citati / 527 identitet / 69 deljenih", () => {
+  test("številni prehod: 114 zapisov / 652 citati / 528 identitet / 69 deljenih [pin posodobljen 106. val: +1 vir (mason-varesko-pinter-2006-izkopavanja) na MVG-083]", () => {
     let cit = 0;
     for (const e of seedExhibits) cit += e.sources.length;
     const keys = [...SOURCE_USAGE.entries()];
     const shared = keys.filter(([, u]) => u.exhibits.length > 1).length;
     expect(seedExhibits.length).toBe(114);
-    expect(cit).toBe(651);
-    expect(keys.length).toBe(527);
+    expect(cit).toBe(652);
+    expect(keys.length).toBe(528);
     expect(shared).toBe(69);
   });
 
@@ -421,7 +421,7 @@ describe("val104 · števci + artefakti + docs", () => {
     const readme = readFileSync("README.md", "utf8");
     expect(readme).toContain("158. sklop");
     expect(readme).toContain("24/24 POROČIL Z JAVNIMI PRENOSI PREBRANIH — POKRITOST ZAKLJUČENA");
-    expect(readme).toContain("114 zapisov (MVG-001–114), 651 virov, 527 identitet, 69 deljenih");
+    expect(readme).toContain("114 zapisov (MVG-001–114), 652 virov, 528 identitet, 69 deljenih");
     // zgodovinski posnetek starejšega sklopa ostaja (namerno nespremenjen)
     expect(readme).toContain("113 zapisov · 588 virov");
   });
