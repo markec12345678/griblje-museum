@@ -158,14 +158,14 @@ describe("val105 · poštenost", () => {
 });
 
 describe("val105 · števci + artefakti + docs", () => {
-  test("števci nespremenjeni: 114 zapisov / 651 virov / 527 identitet / 69 deljenih", () => {
+  test("števci: 114 zapisov / 652 virov / 528 identitet / 69 deljenih [pin posodobljen 106. val: +1 vir (mason-varesko-pinter-2006-izkopavanja) na MVG-083]", () => {
     let cit = 0;
     for (const e of seedExhibits) cit += e.sources.length;
     const keys = [...SOURCE_USAGE.entries()];
     const shared = keys.filter(([, u]) => u.exhibits.length > 1).length;
     expect(seedExhibits.length).toBe(114);
-    expect(cit).toBe(651);
-    expect(keys.length).toBe(527);
+    expect(cit).toBe(652);
+    expect(keys.length).toBe(528);
     expect(shared).toBe(69);
   });
 
@@ -214,7 +214,7 @@ describe("val105 · števci + artefakti + docs", () => {
   test("README: 159. sklop + nespremenjeno stanje zbirke", () => {
     const readme = readFileSync(join(process.cwd(), "README.md"), "utf8");
     expect(readme).toContain("159. sklop");
-    expect(readme).toContain("114 zapisov (MVG-001–114), 651 virov, 527 identitet, 69 deljenih");
+    expect(readme).toContain("114 zapisov (MVG-001–114), 652 virov, 528 identitet, 69 deljenih");
   });
 
   test("docs: raziskovalni zapis 120 + KAZALO", () => {
