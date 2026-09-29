@@ -1,0 +1,155 @@
+{
+ "val": "100",
+ "issue": "100",
+ "title": "ISSUE #100 — runda 3: poznejši viri za hišo št. 73 — SEM fototeka po fondih (struktura izčrpno preskanjana), F0000212 popolna objektna dokumentacija (avtor/datum NOT_PUBLIC + izvirni posnetek ohranjen), nova SEM fotografija F0003143 (Vahtar 1928), dve bibliografsko potrjeni knjigi o Županiču z zalogami (COBISS)",
+ "deterministic": true,
+ "method": {
+  "vlm_calls": 0,
+  "web_search_calls": 0,
+  "network": "direktni curl na dosegljive portale (SEM 200, Wikipedia 200, Kamra 200, COBISS legacy 200); blokirano v peskovniku: .gov.si (eZKN, eProstorunki, gis.gov.si = 000), dlib.si (000), researchgate.net (403), kataster.fgg (000)",
+  "no_duplication": "MVG-010 že citira F0000212/83 8 + 5-predmetno enumeracijo lokacijske strani; ta runda DODA samo: prazni avtor/datum F0000212, izvirni posnetek + sha256, F0003143 (še necitirana), 2 COBISS viri, fond-strukturo pot (NOT_PUBLIC)"
+ },
+ "sem_f0000212_object_page": {
+  "url": "https://www.etno-muzej.si/sl/digitalne-zbirke/zbirka-starih-fotografij/f0000212",
+  "zbirka": "Zbirka starih fotografij",
+  "avtor": "(prazno — javni zapis ne navaja)",
+  "datum": "(prazno — javni zapis ne navaja)",
+  "klasifikacija": ["Hiša", "Praznična noša in noša ob posebnih priložnostih", "Etnologi"],
+  "lokacija": "Griblje",
+  "pravice": "SEM, dokumentarno gradivo: miha.spicek@etno-muzej.si; filmsko: nadja.valentincic@etno-muzej.si",
+  "status_public_page": "VERIFIED",
+  "avtor_datum_status": "NOT_PUBLIC (javni zapis prazen; dokumentacijsko gradivo SEM = pot)",
+  "digitalna_slika": {
+   "predstavljena": "737x480 JPEG (section_image stil)",
+   "izvirna_prenašena": "1200x782 JPEG (files/oc/f0000212.jpg, brez stilske transformacije)",
+   "sha256_orig": "1ea3ec271afc72a5547e0447c183fb2fcbe9535d6f9ddc3bad9649ac5e27dc92",
+   "sha256_737": "a76a38aade40075bfbf095dc3b24d244cf14424bd110a154118e64f10a3673de",
+   "vizualna_kontrola_1200x782": "dvonadstropna apneničeno bela hiša s krito streho, zgornja lesena galerija (gank), moški na klopci ob levem vogalu, druga oseba na sveže razžaganih hlodih desno, vozna pot desno z manjšo hišo, dve visoki topoli, gospodarsko poslopje levo; HIŠNA ŠTEVILKA NA POSNETKU NI VIDLJIVA"
+  },
+  "en_verzija": "404 (objekt ni preveden)"
+ },
+ "sem_fond_struktura": {
+  "zbirke_fotografij_online": 18,
+  "zbirke_seznam": ["Terenske fotografije", "Ameriške poroke", "Karol Holynski", "Individualne terenske raziskave kustosov SEM", "Joža Kozak", "Vekoslav Kramarič", "Rado Kregar", "Matija Murko", "Peter Naglič", "Veno Pilon", "Slavko Smolej", "Anton Šušteršič", "Jernej Šušteršič", "Tiskovni urad", "Togo Album", "Fran Vesel", "Zbirka starih fotografij", "Zbirka športnih fotografij Marka Račiča"],
+  "fond_zupanic_vurnik_1930_online": false,
+  "fond_zupanic_vurnik_status": "NOT_PUBLIC (ni med 18 javno dostopnimi zbirkami; fototeka SEM ima 70.000+ enot, javno je izbor)",
+  "terenske_fotografije_lokacije": 32,
+  "terenske_fotografije_bela_krajina": false,
+  "drasici_fond": {
+   "fond": "F0000022 = Teren 22 — Drašiči, Bela Krajina",
+   "avtor_potrjen_na_vrstici": "Fanči Šarf",
+   "datum_potrjen_na_vrstici": "4.10.1965 (teren 4–10.10.1965)",
+   "primer_potrjen": "F0000022/114 (vogal lesene hiše, Drašiči 24, lastnik Jurij Simonič, Čurili pri Metliki)",
+   "items_online": 250,
+   "griblje_omembe": 0
+  },
+  "kljucna_beseda_etnologi": {
+   "items": 202,
+   "gribljski_objekti": ["F0000212 (edini gribeljski)"],
+   "ostali_stari_fotografiji": ["F0033963 portret Borisa Orla"]
+  },
+  "lokacija_griblje": ["F0000182", "F0000183", "F0000212", "F0000838", "F0001407"],
+  "lokacija_griblje_count": 5,
+  "lokacija_krasinec": ["F0000201", "F0000225"],
+  "lokacija_bela_krajina_count": 24,
+  "lokacija_crnomelj_count": 13,
+  "lokacija_podzemelj_count": 3
+ },
+ "nova_sem_fotografija": {
+  "id": "F0003143",
+  "url": "https://www.etno-muzej.si/sl/digitalne-zbirke/zbirka-starih-fotografij/f0003143",
+  "avtor": "Drago Vahtar (isti fotograf kot F0001407 »Hiša, Griblje«, 1928)",
+  "datum": "1.1.1928",
+  "klasifikacija": ["Praznična noša in noša ob posebnih priložnostih"],
+  "lokacija": "Bela krajina (ne Griblje — zato ni na lokacijski strani Griblje)",
+  "opis_sem": "Dr. Županičeve sorodnice na dan Sv. Ilije v vasi čez Kolpo na hrvatski strani nasproti Gribljam, Bela krajina. (Tri snahe imajo na glavi značilne »rubce«...)",
+  "pomen": "šesta poznana SEM fotografija povezana z Griblji (širše: družinsko okolje Županičevih) + potrjuje Vahtarjevo kampanjo 1928, v kateri je nastala tudi F0001407 »Hiša, Griblje«",
+  "status": "VERIFIED (stran + slika 1200x833 ohranjena)",
+  "sha256_slika": "177f61e2f7f0117e453b38fd560b6e0fcbae8221ef934cef83e68597b7774615"
+ },
+ "bibliografija_nova": [
+  {
+   "key": "mursic-hudelja-2009",
+   "zapis": "Muršič, Rajko & Hudelja, Mihaela (ur.): Niko Zupanič, njegovo delo, čas in prostor — spominski zbornik ob 130. obletnici rojstva dr. Nika Zupaniča. Ljubljana: Znanstvena založba Filozofske fakultete, 2009",
+   "isbn": "978-961-237-367-2",
+   "cobiss": "COBISS.SI-ID 251673088",
+   "vrsta": "znanstvena monografija",
+   "zaloge": "FF osrednja humanistična knjižnica (6 izv., 1 v čitalnico), MKL (5 izv.), Goriška knjižnica ...",
+   "relevanca_verige_100": "spominski zbornik = konkreten kandidat za študijo o domačiji/rojstni hiši (vsebina TO_COLLECT)",
+   "status": "VERIFIED bibliografija / TO_COLLECT vsebina"
+  },
+  {
+   "key": "iglic-kralj-iglic-2006",
+   "zapis": "Županič, Niko: Izbrana dela iz historične etnologije in antropologije (ob 130. obletnici avtorjevega rojstva). Ur. Aleš Iglič, Veronika Kralj-Iglič. Ljubljana: Filozofska fakulteta, Oddelek za etnologijo in kulturno antropologijo, 2006",
+   "isbn": "961-237-177-6; 978-961-237-177-7",
+   "cobiss": "COBISS.SI-ID 230068736",
+   "vrsta": "zbornik",
+   "zaloge": "FFLJ (3 izv. + 1 čitalnica), SAZU (2), ODKLJ, FERLJ, MKL",
+   "relevanca_verige_100": "izbrana dela = biografska/etnološka baza (vsebina TO_COLLECT)",
+   "status": "VERIFIED bibliografija / TO_COLLECT vsebina"
+  }
+ ],
+ "wikipedia": {
+  "niko_zupanic": "VERIFIED (rojstvo 1.12.1876 Griblje; oče Nikolaj (Miko) Zupanič kmet in trgovec; hišna številka NI omenjena)",
+  "griblje_vas": "VERIFIED (koordinati 45.5754472N 15.2927611E; omemba Županiča + Gaspari/Vavpotič slike; bibliografija: Iglič–Kralj-Iglič 2006, Muršič–Hudelja 2009, Sv. Vid spominska knjiga 2008, Priročni krajevni leksikon 1997)",
+  "status": "vir se ne dviguje — brez hišne številke"
+ },
+ "kamra": {
+  "iskanje": "2 zadetka Griblje/Županič — oba že citirana v repozitoriju (plošča mm-elementi + spomenik)",
+  "nove_fotografije": 0
+ },
+ "blokade_peskovnika": {
+  "ezkn_gov_si": "000 (2. franciscejska izmera ~1867–69 — NEIZVEDLJIVO v peskovniku, naslednji korak izven njega)",
+  "eprostorunki_gov_si": "000",
+  "gis_gov_si": "000",
+  "dlib_si": "000 (val 98)",
+  "researchgate": "403 (članek Promitzer 298577189 — URL ohranjen iz runde 1)",
+  "kataster_fgg": "000",
+  "zemljiski_knjin vpisi": "NOT_PUBLIC (samo na kraju samem, ZK k.u.k. ne obstaja online)"
+ },
+ "veriga_s8_po_rundi_3": {
+  "originalna_fotografija_F0000212": "VERIFIED (+ slika 1200x782 ohranjena kot artefakt; avtor/datum NOT_PUBLIC)",
+  "identiteta_F0000212 = st_73": "INFERRED (nespremenjeno — enoten izrekovalni vir še manjka; runda 3 nič ne dvigne)",
+  "hisna_st_73_miko_kupil_1873": "VERIFIED (nespremenjeno)",
+  "hisa_73_v_1825": "NOT_FOUND (nespremenjeno)",
+  "zgodovinska_parcela": "TO_COLLECT (2. izmera/eZKN — blokada peskovnika; pot izven njega)",
+  "danasnja_parcela_koordinata": "TO_COLLECT (eZKN blokada)",
+  "3D_model": "TO_COLLECT (runda 1 pravilo: ne prehajati pred identiteto)",
+  "AR_anchor": "TO_COLLECT",
+  "nove_poti": ["SEM dokumentacija (miha.spicek@etno-muzej.si) — avtor/datum F0000212 + fond Županič–Vurnik 1930 (70.000+ enot, javno samo izbor 843 starih fotografij)", "Muršič–Hudelja 2009 (FFLJ/MKL zaloga)", "Iglič–Kralj-Iglič 2006 (FFLJ/SAZU zaloga)", "2. franciscejska izmera / eZKN izven peskovnika"]
+ },
+ "artefakti": {
+  "sem-f0000212.html": "2e0d955c4455d5a9f3fc7796156069134293fc52a5ece2e27cf49bdf4d0783a2",
+  "sem-f0000212-en.html": "be7957b4e253be90ddcc4987d19d30d6759129cb8aad75f2777db59904af6e41",
+  "sem-f0000838.html": "10915e39a9dc42177fd5d63efe42ce7b4704910224647a9ae44b368045926177",
+  "sem-f0003143.html": "4ecbb349147523fb66cfa25d2f6012538ce04f46cdc8dc10a699aeda5ab5d07d",
+  "sem-f22-114.html": "5b67b7eef8446ff11a32cd44f79c666df795f89219afb77c15ba58dda9375caf",
+  "sem-griblje-r3.html": "449fbbac19a53503828e9c860e744080cdf838792551cc906ccad460df021037",
+  "sem-kljucna-etnologi.html": "f58357f6ce43fabed3989ec6692e4c28ebbc9a7c4fcff2636f148fe1a932b16f",
+  "sem-zbirke-fotografij.html": "ca101d041d845e4df835a9700d85ae6216889fc3412be2152ff38a1f407b9cb5",
+  "sem-terenske.html": "8b72918b0441348b8572583d5cce58fb43a30f21d3ef2b6602813077f20bd120",
+  "sem-lok-bk.html": "8eef8a53becdb5dc699b2e85bae7bdad7b2fe3e5b421a8c7340d10ef628c41ff",
+  "sem-lok-krasinec.html": "a0dd05e718b5b7c0e248a8f8e36cce03ae1f40439f0f911ae1465963295a4533",
+  "sem-drasici.html": "11c62d014d1e48221aadf0bbe06f3e7116011121dc800e776727070ae7fe67bb",
+  "sem-murko.html": "461557b5a2c849e308e11b1737c96cb79cb3a1e54e801b1975122208a5ebba55",
+  "sem-fototeka.html": "26f2c108f96d690018247754876f0e3105664fa203cb13a9dc69040c03388565",
+  "sem-search-vurnik.html": "950bc4982622589403e162a5bf4f828303d77c381e4a8a246361d4170b40b902",
+  "f0000212-orig.jpg": "1ea3ec271afc72a5547e0447c183fb2fcbe9535d6f9ddc3bad9649ac5e27dc92",
+  "f0000212.jpg": "a76a38aade40075bfbf095dc3b24d244cf14424bd110a154118e64f10a3673de",
+  "f0003143.jpg": "177f61e2f7f0117e453b38fd560b6e0fcbae8221ef934cef83e68597b7774615",
+  "cobiss-bib-251673088.html": "e42df2508c4d9e27cc24822b409dbed68f6dae60774dcc2e8e682419a6fb31e2",
+  "cobiss-bib-230068736.html": "9be88707c4418c1f34d06dfc9e0acebf001579ce0920278a0921da7a7c57d071",
+  "cobiss-mursic.html": "c3bcba8b4c59333e314f296d8c4ff3f8f2548f6db0cd1afb8f780953dfc3977a",
+  "cobiss-iglic2.html": "1efe8c6977a92da07b7e948896419b26973e29fc43eff57ec503f321a2e940e8",
+  "wiki-zupanic.html": "67165eb39047258c6ed73e7f2248cfb6db95855d4dcf94e03fe1764f95c45326",
+  "wiki-griblje.html": "2f3a06f633b9eec6aace7067fa6886bdf45e787d834e9f126277c6d2ddfc0d7e",
+  "kamra-search-griblje.html": "8e96c60ef1c608c351376abe7dd4d9d3f357da5569e1e56233cf134e249c68ed"
+ },
+ "next_steps": [
+  "SEM dokumentacija (miha.spicek@etno-muzej.si): avtor/datum F0000212 + fond Županič–Vurnik 1930 (hišna imena 1930/31 = potencialni enoten izrekovalni vir identitete)",
+  "Muršič–Hudelja 2009 vsebina (FFLJ čitalnica / MKL) — študije o domačiji",
+  "2. franciscejska izmera (~1867–69) / eZKN izven peskovnika — hiša 73 → stavbni odtis + parcela",
+  "ZK vpisi k. apl. Griblje (izven peskovnika) — prenos 73 na Mika ~1873",
+  "86b del 3 (p110–142, ~250 tile-ov) ob kvoti; re-read 7+2 fresh markerjev; PZ p48–65; PT p7; PR Grenz-Beschreibung"
+ ]
+}
