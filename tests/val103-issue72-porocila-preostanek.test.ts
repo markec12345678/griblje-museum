@@ -18,7 +18,7 @@
  *  4. POŠTENOST: negativni z enako težo; sekundarne lege izrecno;
  *     domneve kot domneve; k. o. Krasinec pošteno zapisano; BM Metlika =
  *     trajna hramba (2 nova poročili).
- *  5. ŠTEVCI: izrecen prehod 114 / 641 / 517 / 69.
+ *  5. ŠTEVCI: izrecen prehod 114 / 641 / 517 / 69 (pin posodobljen 104. val).
  *
  * Protokol issue #72: brez podvajanja (rg kontrola pred vgradnjo),
  * vsak finding s statusom, add-only izključno na MVG-083.
@@ -231,14 +231,14 @@ describe("val103 · poštenost", () => {
 });
 
 describe("val103 · števci + artefakti + docs", () => {
-  test("številni prehod: 114 zapisov / 641 citati / 517 identitet / 69 deljenih", () => {
+  test("številni prehod: 114 zapisov / 651 citati / 527 identitet / 69 deljenih [pin posodobljen 104. val: +10 virov na MVG-083]", () => {
     let cit = 0;
     for (const e of seedExhibits) cit += e.sources.length;
     const keys = [...SOURCE_USAGE.entries()];
     const shared = keys.filter(([, u]) => u.exhibits.length > 1).length;
     expect(seedExhibits.length).toBe(114);
-    expect(cit).toBe(641);
-    expect(keys.length).toBe(517);
+    expect(cit).toBe(651);
+    expect(keys.length).toBe(527);
     expect(shared).toBe(69);
   });
 
@@ -343,7 +343,8 @@ describe("val103 · števci + artefakti + docs", () => {
     const readme = readFileSync("README.md", "utf8");
     expect(readme).toContain("157. sklop");
     expect(readme).toContain("14/26 RAZISKAV E-ARHEOLOGIJE PREBRANIH");
-    expect(readme).toContain("114 zapisov (MVG-001–114), 641 virov, 517 identitet, 69 deljenih");
+    // živi številni prehod README posodobljen v 104. valu (varuje ga test vala 104)
+    // zgodovinski posnetek sklopa 157 ostaja (namerno nespremenjen); trenutni številni prehod varuje test vala 104
     // zgodovinski posnetek starejšega sklopa ostaja (namerno nespremenjen)
     expect(readme).toContain("113 zapisov · 588 virov");
   });
