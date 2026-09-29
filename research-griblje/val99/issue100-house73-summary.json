@@ -1,0 +1,536 @@
+{
+ "val": "99",
+ "issue": "100",
+ "title": "ISSUE #100 — F0000212 identitetna veriga: hiša št. 73 v 1825 virih NE obstaja; SEM + Šopek (1937–39) re-verified; F0000212 ≈ št. 73 = INFERRED",
+ "deterministic": true,
+ "method": {
+  "in_repo": "ps-n83/register.json (2.871 vrstic, str. 3–143) + pua-n83/register.json (98) + atlas-1825/house-register-1825.json (167 hiš) + atlas-1825/a01-building-inventory-1825.json (24 objektov)",
+  "external": "3 artefakti v val99/ (SEM ×2 + Šopek PDF), prenešena, tu samo deterministična preverba vsebine + sha256",
+  "vlm_calls": 0,
+  "no_duplication": "NR-05 (negative register, val 89) NE podvajamo — ta skripta samo izčrpno potrdi in doda sosesko 1825 + zunanje vire"
+ },
+ "in_repo_1825": {
+  "ps_rows_total": 2871,
+  "ps_pages": "3–143 (141 strani, polna pokritost)",
+  "house_73": {
+   "ps_rows": 0,
+   "pua_rows": 0,
+   "house_register": 0,
+   "a01_bp_73": 0
+  },
+  "neighborhood_65_80": [
+   {
+    "house_no": 65,
+    "ps_rows": 18,
+    "ps_pages": [
+     7,
+     8,
+     16,
+     36,
+     43,
+     62,
+     63,
+     70,
+     79,
+     90,
+     93,
+     96,
+     105,
+     109,
+     122,
+     124
+    ],
+    "ps_owners": [
+     "Bening Wald",
+     "Bering Manko",
+     "Breunig Märcia",
+     "Georg Marko",
+     "Koschitz gerg",
+     "Krems Mühlo",
+     "Krishan Mihelj",
+     "Kunig Mandle",
+     "Schimec Ivan",
+     "Schimeczkhanl",
+     "Schimeg Hanß",
+     "Schimerz Johan",
+     "Schimerz' Franl",
+     "Schöning Jergon",
+     "Schönnig Leon",
+     "Shimey Jhan",
+     "Wernig Martin"
+    ],
+    "ps_kultur": [
+     "A.Bau",
+     "Acker",
+     "Acker und Wiese",
+     "Acker und Wiesen",
+     "Ackerland",
+     "Gartn",
+     "Lehngut Hfl.",
+     "Lind.",
+     "Riedl",
+     "Rohr",
+     "Wald",
+     "Wiese"
+    ],
+    "pua_rows": 1,
+    "in_house_register": true
+   },
+   {
+    "house_no": 66,
+    "ps_rows": 28,
+    "ps_pages": [
+     4,
+     6,
+     8,
+     17,
+     36,
+     56,
+     62,
+     63,
+     65,
+     66,
+     70,
+     74,
+     75,
+     90,
+     100,
+     101,
+     105
+    ],
+    "ps_owners": [
+     "Blomuscher Franz",
+     "Brügg Maria",
+     "Christan Würgl",
+     "Dienz' Pellen",
+     "Dienz' Pieren",
+     "Fellner Michl",
+     "Griesbacher Jung",
+     "Heinehan Jangg",
+     "Hunolt Georg",
+     "Kriechham Gregor",
+     "Krischan Gregor",
+     "Lorbltcher Hauffl",
+     "Lorenz Grugl",
+     "Puchegger Georg",
+     "Reing Marda",
+     "Reuschard Franz",
+     "Schellko Josef",
+     "Scheubang Georg",
+     "Schimeg Hanue[?]",
+     "V. Hronzginen",
+     "Weidichal Ignocy",
+     "Wieschank Georg"
+    ],
+    "ps_kultur": [
+     "Acker",
+     "Ackerland Wiese Gärten",
+     "Hofraithen",
+     "Leinwand",
+     "Linhut",
+     "Lphue",
+     "Läuger",
+     "Lößl",
+     "Riedl",
+     "Schupfend",
+     "Stifts und Gemeindewald",
+     "Wald",
+     "Wiese"
+    ],
+    "pua_rows": 2,
+    "in_house_register": true
+   },
+   {
+    "house_no": 67,
+    "ps_rows": 14,
+    "ps_pages": [
+     8,
+     27,
+     28,
+     29,
+     30,
+     36,
+     38,
+     96,
+     98,
+     99,
+     109
+    ],
+    "ps_owners": [
+     "Fepfeg Gregor",
+     "Hrabotar Marha",
+     "Kopitar Gregor",
+     "Lafzig Georg",
+     "Pachegg Georg",
+     "Paching Georg",
+     "Pavlic Georg",
+     "Pavlič Georg",
+     "Pichler Georg",
+     "Popp gerg",
+     "Puchegg Georg"
+    ],
+    "ps_kultur": [
+     "Acker",
+     "Acker und Wiesen",
+     "Acker und Wiesen, Hofraithen",
+     "Acker, Wiese, Wald, Hofraithen",
+     "Grund / Garten",
+     "Lehngut / Acker",
+     "Riedl",
+     "Wald.",
+     "Wiese"
+    ],
+    "pua_rows": 0,
+    "in_house_register": true
+   },
+   {
+    "house_no": 68,
+    "ps_rows": 26,
+    "ps_pages": [
+     17,
+     23,
+     30,
+     31,
+     34,
+     35,
+     43,
+     56,
+     64,
+     70,
+     71,
+     73,
+     75,
+     90,
+     115,
+     127,
+     130
+    ],
+    "ps_owners": [
+     "Breinig Wenzlo",
+     "Dienz' Pieren bo",
+     "Eberl, Michl",
+     "Ehrlich Wenzl",
+     "Heinehan Mühlg",
+     "Hoch Balth",
+     "Hunolt Mito",
+     "Häusler Mache",
+     "Kheuthan gnoy",
+     "Krieschanl Grieß",
+     "Krieschanl Groyg",
+     "Krieschanl Priß",
+     "Muth Peter",
+     "Paching Georg",
+     "Schmieg Franz",
+     "Ulrich Michl",
+     "Unlich Mito",
+     "Vidic Urša",
+     "Witsch Miko",
+     "Wurich Mihlo",
+     "Wurich Wirthö"
+    ],
+    "ps_kultur": [
+     "68 Fürsteg.",
+     "Acker",
+     "Hofraith und Gartn, Lehmgrube",
+     "Hutweide",
+     "Hutweide\nWiese",
+     "Lflzck",
+     "Lipiza",
+     "Lohigg",
+     "Löhing",
+     "Schinggraben",
+     "Schupfer",
+     "Wiese"
+    ],
+    "pua_rows": 2,
+    "in_house_register": true
+   },
+   {
+    "house_no": 69,
+    "ps_rows": 35,
+    "ps_pages": [
+     4,
+     5,
+     16,
+     43,
+     45,
+     47,
+     48,
+     50,
+     83,
+     88,
+     90,
+     100,
+     113,
+     115,
+     116,
+     118,
+     119,
+     122,
+     123
+    ],
+    "ps_owners": [
+     "Christan Bräutig",
+     "Christan Mäthel",
+     "Christan Mäthel..",
+     "Debelak Matthäus",
+     "Gregor Gregor",
+     "Heinehan Mühlg",
+     "Hirschegger Walburg",
+     "Horechan Michl",
+     "Kaindlhan Matfz",
+     "Kandlbau Bajfe",
+     "Kaspar Mäthe",
+     "Khristian Kofza",
+     "Koritshan Wolf",
+     "Kreuschan Wolf",
+     "Krishan Mihelj",
+     "Krishanr Wölfl",
+     "Kumahen Georg",
+     "Kunickan Wöpfe",
+     "Leischar Gregor",
+     "Linden matte",
+     "Lorenz Grubla",
+     "Pawitsch Mathäus",
+     "Schimey Wenzel",
+     "Weidner Mathä.",
+     "Winkler mathäus"
+    ],
+    "ps_kultur": [
+     "Acker",
+     "Acker und Wiesen",
+     "Ackerland Wiese Gärten",
+     "Alm",
+     "Apfeln",
+     "Dörf",
+     "Einsaue",
+     "Eldrich",
+     "Hütstürg",
+     "Ladisch",
+     "Lohg",
+     "Waldg",
+     "WiesTat",
+     "Wiese",
+     "Wird",
+     "Wisd"
+    ],
+    "pua_rows": 3,
+    "in_house_register": true
+   },
+   {
+    "house_no": 70,
+    "ps_rows": 0,
+    "ps_pages": [],
+    "ps_owners": [],
+    "ps_kultur": [],
+    "pua_rows": 1,
+    "in_house_register": true
+   },
+   {
+    "house_no": 71,
+    "ps_rows": 0,
+    "ps_pages": [],
+    "ps_owners": [],
+    "ps_kultur": [],
+    "pua_rows": 1,
+    "in_house_register": true
+   },
+   {
+    "house_no": 72,
+    "ps_rows": 2,
+    "ps_pages": [
+     65
+    ],
+    "ps_owners": [
+     "Wolfsloch Wolfgey"
+    ],
+    "ps_kultur": [
+     "Acker"
+    ],
+    "pua_rows": 1,
+    "in_house_register": true
+   },
+   {
+    "house_no": 74,
+    "ps_rows": 4,
+    "ps_pages": [
+     65,
+     69,
+     122
+    ],
+    "ps_owners": [
+     "Heidrich Peter",
+     "Kauc Miheljz",
+     "Tillek Wolfgey"
+    ],
+    "ps_kultur": [
+     "Acker"
+    ],
+    "pua_rows": 0,
+    "in_house_register": false
+   },
+   {
+    "house_no": 76,
+    "ps_rows": 1,
+    "ps_pages": [
+     115
+    ],
+    "ps_owners": [
+     "Gritsch Mihlo"
+    ],
+    "ps_kultur": [],
+    "pua_rows": 0,
+    "in_house_register": false
+   },
+   {
+    "house_no": 79,
+    "ps_rows": 1,
+    "ps_pages": [
+     50
+    ],
+    "ps_owners": [
+     "Lehning Michael"
+    ],
+    "ps_kultur": [
+     "Acker"
+    ],
+    "pua_rows": 0,
+    "in_house_register": true
+   },
+   {
+    "house_no": 80,
+    "ps_rows": 14,
+    "ps_pages": [
+     7,
+     10,
+     15,
+     34,
+     75,
+     94,
+     127,
+     128
+    ],
+    "ps_owners": [
+     "Gauding Johan",
+     "Gauding Wolf",
+     "Pauling Walfja",
+     "Pavling Johan",
+     "Pavšič Gregor",
+     "Pawlin Wolf",
+     "Peders Marbl",
+     "Peodig Wolf",
+     "Peodig Wolf Leandl",
+     "Piber, Matthel",
+     "Preßker Georg"
+    ],
+    "ps_kultur": [
+     "Acker",
+     "Lb. St.",
+     "Lehngut Hfl.",
+     "Lobita",
+     "Lähfa",
+     "Schinggraben",
+     "Schinnguthe"
+    ],
+    "pua_rows": 0,
+    "in_house_register": true
+   }
+  ]
+ },
+ "external_evidence": {
+  "sopek_1937_39": {
+   "claim": "Miko Županič se je okrog 1873 preselil v Griblje in kupil hišo št. 73 + posestvo (rojen Krasinec h.š. 18, 28. 12. 1841)",
+   "quote": "se je rodil na Krasincu h. št. 18. dne 28. decembra 1841 ter se je okrog 1. 1873. preselil v Griblje, kjer si je kupil hišo št. 73 in posestvo",
+   "source": "Katarina Županič: Šopek poljskih cvetlic iz Gribelj v Beli Krajini, Etnolog 10–11 (1937–1939), Ljubljana — odsek »Miko Zupanič (1841—1911)«, str. PDF razpürtja 9/0-based",
+   "url": "https://www.etno-muzej.si/files/etnolog/pdf/etnolog_10_11_1937_1939_sopek.pdf",
+   "artefact": "sopek-1937-1939.pdf + sopek-fulltext.txt",
+   "quote_present": true,
+   "sha256": "d728fb1f0c33de87c4ff0eecd54e5f5bbb1a594508f539d8fac90730e6066a79",
+   "status": "VERIFIED"
+  },
+  "sem_f0000212": {
+   "claim": "SEM F0000212 — »Enonadstropna hiša na pero, rojstna hiša dr. Nika Županiča.« (Griblje)",
+   "quote": "F0000212 Enonadstropna hiša na pero, rojstna hiša dr. Nika Županiča.",
+   "source": "SEM digitalne zbirke — lokacija Griblje",
+   "url": "https://www.etno-muzej.si/sl/digitalne-zbirke/lokacije/griblje",
+   "artefact": "sem-griblje-lokacije.html",
+   "quote_present": true,
+   "sha256": "449fbbac19a53503828e9c860e744080cdf838792551cc906ccad460df021037",
+   "status": "VERIFIED"
+  },
+  "sem_rojstvo": {
+   "claim": "Dr. Niko Županič rojen v Gribljah, 1. 12. 1876 (umrl Ljubljana 11. 9. 1961)",
+   "quote": "Dr. Niko Zupanič (Griblje, 1. 12. 1876 – Ljubljana, 11. 9. 1961)",
+   "source": "SEM razstava »Svetovljan iz Gribelj«",
+   "url": "https://www.etno-muzej.si/sl/razstave/svetovljan-iz-gribelj",
+   "artefact": "sem-svetovljan.html",
+   "quote_present": true,
+   "sha256": "5558212ddcb95df5608fcd157b09fc83d78d737fe7d28796d50a87e8094fcadf",
+   "status": "VERIFIED"
+  }
+ },
+ "chain_100": [
+  {
+   "link": "Originalna fotografija — F0000212",
+   "status": "VERIFIED",
+   "evidence": "SEM zbirka (runda 1 + val 99 re-check); javna stran je izbor — fototeka 70.000 enot čaka fond",
+   "source": "sem-griblje-lokacije.html"
+  },
+  {
+   "link": "Identiteta hiše (rojstna hiša Nika Županiča)",
+   "status": "VERIFIED",
+   "evidence": "SEM poimenuje F0000212 kot rojstno hišo; SEM razstava: Niko rojen Griblje 1. 12. 1876",
+   "source": "sem-griblje-lokacije.html + sem-svetovljan.html"
+  },
+  {
+   "link": "Hišna številka 73 (Miko Županič kupil ~1873)",
+   "status": "VERIFIED",
+   "evidence": "Šopek (Etnolog 10–11, 1937–1939): točen citat pridobljen in re-verified (val 99)",
+   "source": "sopek-1937-1939.pdf"
+  },
+  {
+   "link": "F0000212 = hiša št. 73",
+   "status": "INFERRED",
+   "evidence": "konvergenca 2 neodvisnih virov: SEM (rojstna hiša Nika, rojen 1876 v Gribljah) + Šopek (oče Miko kupil št. 73 ~1873, družina tam gospodarila); NI ŠE enotnega vira, ki bi izrekoval identiteto; hiša 73 NE obstaja v 1825 virih (PS 3–143, PUA, house-register, A01) → številčenje/izgradnja po 1825 — zato 1825 atlas identitete NE more potrditi",
+   "source": "issue100-house73-summary.json (ta artefakt)"
+  },
+  {
+   "link": "Hišna št. 73 v 1825 virih",
+   "status": "NOT_FOUND",
+   "evidence": "NR-05 (val 89 re-check, PS 3–143) + val 99 izčrpna preverba: PS 0 vrstic, PUA 0, house-register nič, A01 nič; soseska 1825: 72 = Wolfsloch Wolfgey (p65), 74 = Tillek Wolfgey (p65) / Heidrich Peter (p69) / Kauc Miheljz (p122), 76 = Gritsch Mihlo (p115)",
+   "source": "NR-05 + issue100-house73-summary.json"
+  },
+  {
+   "link": "Zgodovinska parcela (1825 kataster)",
+   "status": "TO_COLLECT",
+   "evidence": "ker št. 73 v 1825 ne obstaja, je treba iskati POZNE vir (2. franciscejska izmera ~1867–69, zemljiška knjiga)",
+   "source": "—"
+  },
+  {
+   "link": "Današnja parcela / koordinata",
+   "status": "TO_COLLECT",
+   "evidence": "šele po dokazani prostorski identifikaciji (pogojno: obe hiši 72 in 74 sta v PS, kar omogoča prihodnjo triangulacijo)",
+   "source": "—"
+  },
+  {
+   "link": "3D model",
+   "status": "TO_COLLECT",
+   "evidence": "šele po dokazani geometriji (runda 1: »ne iščemo 3D modela na pamet«)",
+   "source": "—"
+  },
+  {
+   "link": "AR anchor / mobilni AR prikaz",
+   "status": "TO_COLLECT",
+   "evidence": "šele po georeferenciranem objektu",
+   "source": "—"
+  }
+ ],
+ "nr05_reference": "research-griblje/atlas-1825/negative-result-register-1825.json — NR-05 (hiše 70–78: 73, 70, 71, 75, 77, 78 → 0 vrstic v celotnem PS; hiše 72/74/76 dokumentirane)",
+ "next_steps": [
+  "2. franciscejska izmera (KM ~1867–69) / eZKN: hiša št. 73 → stavbni odtis + parcela",
+  "zemljiškoknjižni vpisi (nekdanje k. apl. Griblje): prenos št. 73 na Mika Županiča (~1873)",
+  "SEM fototeka: fond po avtorjih Županič/Vurnik (terenska fotografija 1930) — morda foto hiše 73",
+  "občinski/matricularni zapisi Griblje: hišno ime družine Županič",
+  "šele potem: prostorska identifikacija (triangulacija s sosesko 1825: 72 = Wolfsloch, 74 = Tillek/Heidrich/Kauc)"
+ ]
+}
