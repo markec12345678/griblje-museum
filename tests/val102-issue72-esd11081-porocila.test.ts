@@ -18,7 +18,7 @@
  *     neskladje datumov 23-0070 (junij vs »julij«); neskladje letnice
  *     VS 48 (2011 vs 2013) = REVIEW; BM Metlika = hramba arhivov po
  *     navedbah poročil; Dular 1972 + BM zbirka ostajata TO_COLLECT.
- *  6. ŠTEVCI: izrecen prehod 114 / 634 / 510 / 69.
+ *  6. ŠTEVCI: izrecen prehod 114 / 634 / 510 / 69 (pin posodobljen 103. val).
  *
  * Protokol issue #72: brez podvajanja (rg kontrola = 0 zadetkov za nove
  * kode/kulture pred vgradnjo), vsak finding s statusom.
@@ -235,14 +235,14 @@ describe("val102 · zgodba MVG-083 (sl+en)", () => {
 });
 
 describe("val102 · števci + artefakti + docs", () => {
-  test("številni prehod: 114 zapisov / 634 citati / 510 identitet / 69 deljenih", () => {
+  test("številni prehod: 114 zapisov / 641 citati / 517 identitet / 69 deljenih [pin posodobljen 103. val: +7 virov na MVG-083]", () => {
     let cit = 0;
     for (const e of seedExhibits) cit += e.sources.length;
     const keys = [...SOURCE_USAGE.entries()];
     const shared = keys.filter(([, u]) => u.exhibits.length > 1).length;
     expect(seedExhibits.length).toBe(114);
-    expect(cit).toBe(634);
-    expect(keys.length).toBe(510);
+    expect(cit).toBe(641);
+    expect(keys.length).toBe(517);
     expect(shared).toBe(69);
   });
 

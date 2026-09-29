@@ -1,0 +1,209 @@
+{
+  "val": 103,
+  "task": "ISSUE #72 — vseh 8 preostalih poročil raziskav z javnimi prenosi prebranih v celoti (14-0456, 15-0081, 16-0021, 16-0141, 19-0007, 22-0169, 25-0350, 25-0556) + odkritje: register vpiše 24/26 raziskav z javnimi prenosi (10 ostaja za val 104)",
+  "datum": "2026-09-29",
+  "reprodukcija": "vsi PDF artefakti prenešeni prek istega javnega eSDE API-ja (ised.gov.si) s poročilnimi ID-ji iz registra sloja 3692 (val 102); sha256 zabeleženi v porocila/sha256-pdf.txt; TXT izvedeni z pdftotext -layout",
+  "kvota": {
+    "web_search": "ni klicano (0 klicev)",
+    "vlm": "ni klicano (0 klicev)",
+    "bypass": "deterministični curl na javni eSDE endpoint (ID-ji iz polja URL_POROCILO1 registra vala 102) + pdftotext"
+  },
+  "metoda": [
+    "iz registra sloj 3692 (val 102) izvedeni vsi URL_POROCILO1: 24/26 raziskav ima javni prenos — izčrpen seznam",
+    "8 preostalih poročil prenešenih (HTTP 200 ×8), pdftotext -layout, polno branje podatkovnih blokov, povzetkov, ugotovitev in sklepov",
+    "3 večji PDF (19-0007 32,4 MB, 22-0169 7,4 MB, 25-0350 14,5 MB) hashirana in izbrisana (vzorec val 102); 5 komittanih (14-0456 4,0, 15-0081 5,0, 16-0021 1,9, 16-0141 2,0, 25-0556 5,6 MB)",
+    "opomba: val 102 summary zapisal 13-0078 brez porocilo_id — register vpiše ID 26367; popravek zapisan (poročilo ostaja za val 104)"
+  ],
+  "porocila_prebrana": [
+    {
+      "koda": "14-0456",
+      "datoteka": "porocila/14-0456.pdf",
+      "strani": 17,
+      "sha256_pdf": "87c310cadac5e925eb5dca518188dc1986902ed2704efc58d15f1624d7251bec",
+      "esde_id": 26989,
+      "kljucne_ugotovitve": [
+        "Klepec - Griblje, parc. 750/3; razlog: gradnja drvarnice 6 x 4 m; lastnik Branko Klepec, Griblje 32c",
+        "soglasje 62240-403/2014/2 z dne 20.11.2014 (KVP 35105-0393/2014/2 z dne 17.9.2014); terensko 19.12.2014 (1 dan)",
+        "ARHAT; vodja Matevž Lavrinc, namestnica Jerca Brečič, nadzornik mag. Uroš Bavec, avtor Aleš Tiran",
+        "STJ 3 x 2 m do 1,25 m: pod rušo ~30 cm premešano nasutje (SE 002, novodobna opeka zavrgljena) — umetna izravnava z materialom gradbene jame hiše 1998 (pričevanje lastnika); ornica (SE 003); od 80 cm sterilni rdeči aluvij (SE 004)",
+        "rezultat NEGATIVEN — ni materialnih ostankov ali struktur",
+        "FK 1823–1869: parcela takrat njiva v mali izmeri (karta SI AS 176N83/g/A02); hramba arhiva: sedež ARHAT"
+      ],
+      "txt_sha256": "021f2636b2b7aa0903fde8d6bc74b9b5d55e52a31e46ce4f9c880acd3883c915"
+    },
+    {
+      "koda": "15-0081",
+      "datoteka": "porocila/15-0081.pdf",
+      "strani": 24,
+      "sha256_pdf": "f48542bc150c88f2f11731ab2e074c0966939099a4392c4ef71ed17fc7f6891e",
+      "esde_id": 27072,
+      "kljucne_ugotovitve": [
+        "Agromelioracija Griblje - Cerkvišče (komasacija); parc. 828/1, 2680, 2353 k.o. Griblje; EŠD 10094 + 19861 Dragoši",
+        "soglasje 62240-88/2015/2 z dne 12.5.2015 (KVP 35105-0076/2012/4 z dne 5.9.2014); terensko 5.–19.5.2015",
+        "ARHAT; vodja Matevž Lavrinc, namestnica Jerica Brečić, nadzornik mag. Uroš Bavec",
+        "trije posegi poljskih poti: PNG 3 (828/1, 83 m x 2,5 m), ROP 12 (2680, 280 m x 2,5 m, 10–140 cm), PNZ 2 (2353, 119 m — zaščiteno območje Dragoši)",
+        "rezultat NEGATIVEN na vseh treh — ni najdb ali struktur; stratigrafija: ruša, ornica, rumenkasta ilovica s sledmi železovih oksidov",
+        "Dragoši EŠD 19861 odkrito z ekstenzivnim pregledom trase OTK LC Krasinec–LC Adlešiči 2002; hramba arhiva: sedež ARHAT"
+      ],
+      "txt_sha256": "fd924387002ffc88fe791c4dfd8e10f914fdf918a72da8efdaf5e8fca4498c8f"
+    },
+    {
+      "koda": "16-0021",
+      "datoteka": "porocila/16-0021.pdf",
+      "strani": 41,
+      "sha256_pdf": "4b65d70bb247e4d70d084e25277ae05deaeafacf28f8fcdd5e1a17021d2c3d6d",
+      "esde_id": 27357,
+      "kljucne_ugotovitve": [
+        "Kanalizacija Griblje — fekalna kanalizacija, kanala G7 in G8 (investitor Občina Črnomelj); parcele 2698/2, 2886, 2853, 146/1, 2887–2890, 2891/1–2 — SEV rob vasi (Dolnje Griblje)",
+        "soglasje 62240-434/2015/4 z dne 18.1.2016 (KVP 35105-0300/2014/2 z dne 17.12.2015); terensko 1.–2.2.2016; 19 strojnih testnih jam 5 x 2 m",
+        "ARHAT; vodja Matevž Lavrinc; avtor poročila Jerica Brečič",
+        "rezultat pozitiven omejeno: v Stj 5 v koluviju (SE 009) pod pokopanimi tlemi rimskodobni material — 2 kosa opeke, fragment keramike, kamniti brus, košček železove žlindre; material obrušen/zaobljen = transportiran, sekundarna lega, »nedvomno naselbinskega izvora«",
+        "žlindra: »daje slutiti, da je morda v bližini v preteklosti obstajala metalurška delavnica« (domneva poročila, prenašana kot domneva)",
+        "jama banjaste oblike Stj 3 (SE 005/006, premer 54 cm, globina ~25 cm, drobci oglja) — namembnost neznana; Stj 4 novoveška keramika + železen predmet; Stj 5/19 erozijsko zasutje vrtač, kopanje do 1,6 m (geološke podlage niso dosegli)"
+      ],
+      "txt_sha256": "8ea175771a5a9b535a4a493e40a88a136c98e9d942568045abc4d802b3eaf368"
+    },
+    {
+      "koda": "16-0141",
+      "datoteka": "porocila/16-0141.pdf",
+      "strani": 41,
+      "sha256_pdf": "5dc85a4bb038e01b58f5494e17dcdbf096286289bbd5a060d1dd84c6a511bcf5",
+      "esde_id": 27403,
+      "kljucne_ugotovitve": [
+        "Kanalizacija Griblje — kanala G7, G7.1 in G7.2 (investitor Občina Črnomelj); parcele 2698/2, 2692, 2697 + follow-up 60 m na 2891/1–2",
+        "soglasje 62240-434/2015/7 z dne 21.4.2016 (KVP 35105-0300/2014/4 z dne 17.12.2015); terensko 6.6.–21.7.2016; trasa ~270 m dokumentiranja ob gradnji",
+        "ARHAT; vodja Matevž Lavrinc, namestnica Jerica Brečić, nadzornika mag. Uroš Bavec + Katarina Udovč, avtor Aleš Tiran",
+        "follow-up na 2891 izrecno zaradi rimskodobnega materiala v Stj 5 raziskave 16-0021 (Tiran 2016 citiran) — možnost detekcije kulturnih ostalin",
+        "rezultat NEGATIVEN za starejša obdobja: samo sodobni gradbeni material (nasutja cestišča) + sodobno kurišče v ornici (P19, SE 016/018); ornica in koluvij sterilni",
+        "hramba arhiva: sedež ARHAT"
+      ],
+      "txt_sha256": "c870433debbb751d0cac2498aa28c209e05a2076f0c39598bcac799c03625767"
+    },
+    {
+      "koda": "19-0007",
+      "datoteka": "porocila/19-0007.txt (PDF 32,4 MB prenešen+hashiran, ni komittan)",
+      "strani": 151,
+      "sha256_pdf": "ed442a54a6e7c888540b40aa3b023c08112ed4414e022d30c0d4b544ab6f967b",
+      "esde_id": 28369,
+      "kljucne_ugotovitve": [
+        "TK kabelska kanalizacija Griblje, Fučkovci, Adlešiči (projekt 18-0086 Telekom Adlešiči); EŠD 10094 + 19861 Dragoši",
+        "soglasje MK 62240-517/2018/2 z dne 3.1.2019 (KVP 35105-0462/2017/3 z dne 13.11.2017); terensko februar–junij 2019",
+        "ZVKDS Center za preventivno arheologijo; vodja Tadeja Mulh; avtorji poročila Blaž Orehek, Tomaž Jerina, Mija Černe, Metka Šajn",
+        "7 testnih sond (6 ročnih TS 2–7 + strojna TS 1 1,5 x 1,5 m) + raziskave ob gradnji (jarek ~0,7 m, jaški do 1,2 m); trasa večinoma po obstoječi telefonski infrastrukturi",
+        "rezultat: NI intaktnih kulturnih plasti ali struktur; prazgodovinska lončenina v koluvijih (TS 2 SE 203, TS 6 SE 602) in ornici (TS 4 SE 403); posamezne rimskodobne najdbe (TS 2, TS 6 v ornici gradbeni material)",
+        "POZNOSREDNJEVEŠKA ustja v koluviju TS 3 (SE 302) in zapolnitvi kotanje TS 5 (SE 505): ustje sklede 13./14. stol. (Klokočovnik 2010, tip 3) + ustje lonca 12.–14. stol. (Klokočovnik I4a) oz. 14.–16. stol. po Štularju (2007, tip 11A) — prvi konkretno datirani srednjeveški odlomki ustij iz sond na najdišču",
+        "TS 1 ob parc. 752: vkopana jama = APNENICA (SE 104/105) — po pripovedi domačina še pred 40 leti žgali in gasili apno za lastne potrebe",
+        "reference na starejše raziskave na gradbenih parcelah v vasi: Sakara Sučević, Mason 2008; Mason 2009 (parc. 64/2 — že odkrite strukture s prazgodovinskim gradivom); Mason, Udovč 2009 (TS 7); TS 5 parc. 73/1 — kotanja zasuta z materialom iz izkopa pri žagi v Gradcu; hramba arhiva: ZVKDS CPA"
+      ],
+      "txt_sha256": "b8906ef3fcc25e1bc2ac76619ad6f97d5e6a0432213f7aa67856c54c2fbd7da3"
+    },
+    {
+      "koda": "22-0169",
+      "datoteka": "porocila/22-0169.txt (PDF 7,4 MB prenešen+hashiran, ni komittan)",
+      "strani": 38,
+      "sha256_pdf": "6cc78095e470c1c6ecd1802c3654cfea54258b35053bc764ccab6741bd0cba58",
+      "esde_id": 29324,
+      "kljucne_ugotovitve": [
+        "22-0033 Brodarič, parcela 67/3 — faza 1 (predhodne raziskave, ročni izkop); naslov poročila: »Poročilo o izvedenih predhodnih arheoloških raziskavah na območju predvidene gradnje nove stanovanje hiše Brodarič, Griblje« (št. 05-0033/2022-MiČ-2022-27, Ljubljana, junij 2022)",
+        "soglasje 62240-172/2022-3340-6 z dne 29.3.2022; terensko maj–junij 2022 (register: 25.5.–7.6.2022); financiranje Ministrstvo za kulturo",
+        "ZVKDS CPA; vodja Mija Černe, namestnica Nika Veršnik, odgovorna Barbara Nadbath, sodelavec Robert Krempuš, nadzorka Tina Britovšek",
+        "6 ročnih testnih sond (TS 1–6); arheoloških struktur NI; geološka podlaga od 0,46 m",
+        "440 najdb: 227 lončenina, 75 gradbeni material, 52 železo, 47 steklo, 19 plastika, 11 ožgana glina, 6 kamnitih, 3 živalske kosti — premešano iz ruše, ornice in deponije; prazgodovina: 209 odlomkov lončenine + 11 ožgane gline + 3 odbitki + 3 obdelana kamna",
+        "med najstarejšimi ostenja z rdečim glinenim premazom → neolitik (analogije Drulovka I, Čatež–Sredno Polje); zgodnji srednji vek: ustje lonca luknjičave keramike; pozni srednji + zgodnji novi vek: ustje pokrova trde glinene",
+        "historična analiza: Kohane grobišče umestili v rimsko obdobje (Mason 2001; Mason 2006); kanalizacija 2004/2005 potrdila prazgodovinske naselbine (Mason et al 2006); izkopavanja 2005: prazgodovinski objekti + velika količina kamnitih izdelkov → možna delavnica (Mason 2006); gasilski dom 2011: eneolitska + bronastodobna naselbina (Žorž, Leghissa 2011); pas poselitve ~700 m ob prvi terasi (Mason 2006); poznobronastodobna naselbina ~8 ha (Mason 2009)",
+        "neskladje znotraj poročila: povzetek »v vseh šestih testnih sondah«, ugotovitve »v vseh petih« — zapisano, ne rešeno",
+        "faza 2 istega projekta 22-0033 = izkop 23-0070 (2023, val 102); hramba arhiva: ZVKDS CPA"
+      ],
+      "txt_sha256": "3ad11c5f39e6085ad23d063338e2c18f000609343b8e435a487c7948a63ab759"
+    },
+    {
+      "koda": "25-0350",
+      "datoteka": "porocila/25-0350.txt (PDF 14,5 MB prenešen+hashiran, ni komittan)",
+      "strani": 43,
+      "sha256_pdf": "011ed2b34e9f81c4d2d312dc8f9a1e3edccb9034beaee73e9ff85bdd27d2d18e",
+      "esde_id": 77952,
+      "kljucne_ugotovitve": [
+        "novogradnja enostanovanjske stavbe, parc. 15/4 k.o. 1544 Griblje — tretja raziskava na isti parceli (2019 TS 2 raziskave 19-0007; 2026 izkop 26-0036)",
+        "soglasje 62240-376/2025-3340-2 z dne 18.8.2025 (PP 35105-0321/2025/2 s 24.6.2025); terensko 1.–3.10.2025",
+        "AVGUSTA d.o.o. Idrija; vodja Gregor Gruden, namestnica Tina Nanut, sodelavca dr. Uroš Košir + Klement Mal, odgovorna oseba Gregor Zupančič, nadzorka Tina Britovšek",
+        "8 ročnih testnih jarkov 2 x 1 m; rezultat POZITIVEN: 213 najdb / 2.271 g — prazgodovina 164 kosov (82 %, bronasta doba), novi vek 34 (17 %), recentno 3 (1 %)",
+        "vse v koluvialnih plasteh — BREZ vkopov (nobenih kolev, odpadnih ali shrambnih jam, hodnih površin) na prostoru novogradnje; največ v TJ 1 zahodno od objekta; roženčev odbitek (SE 003)",
+        "kontekst poročila: 2011 sosednja parcela 15/3 — neolitska/eneolitska + bronastodobna naselbina (Žorž, Leghissa 2011, 80–81); 2023 parcela 67/3 — zgodnja in srednja bronasta doba (Udovč et al. 2023, 26); FK 1824: njive",
+        "hramba arhiva: začasna Avgusta (Ljubljana-Šentvid); TRAJNA: Belokranjski muzej Metlika, Trg svobode 4"
+      ],
+      "txt_sha256": "f350f82e6c0aa4a924a522f889f1a2fd5dfbe9d9216ec578ae3b18ed0e2cdcf5"
+    },
+    {
+      "koda": "25-0556",
+      "datoteka": "porocila/25-0556.pdf",
+      "strani": 26,
+      "sha256_pdf": "5606d82915c47f7c160a3a1e5484e90865fdfc1ace01f811cb033076e0f51d98",
+      "esde_id": 87431,
+      "kljucne_ugotovitve": [
+        "rekonstrukcija nizkonapetostnega omrežja Krasinec (naročnik Elektro Ljubljana d.d.); parc. 668/1 k.o. 1543 Krasinec, znotraj EID 1-10094 — k.o. Krasinec, ne Griblje (pošteno zapisano)",
+        "soglasje 62240-585/2025-3340-2 z dne 18.12.2025 (KVP 35105-0475/2025/2 z dne 1.10.2025); terensko 15.–16.4.2026",
+        "zavod Skupina STIK; vodji Mojca Fras + Rene Masaryk, namestnik Rok Klasinc, izvedla Zvonka Janežič, nadzorka Tina Britovšek",
+        "rezultat NEGATIVEN — preprosta stratigrafija: ruša, sodobno nasutje, ornica, dva nivoja nekdanje ornice/paleotla, aluvialni plasti, rdečkasta glina",
+        "sosednja raziskava 21-0432 (2021, parc. 668/2–4 Jakofčič, Avgusta) = ista skupina parcel Krasinec; hramba arhiva: TRAJNA Belokranjski muzej Metlika"
+      ],
+      "txt_sha256": "09d90d60fa0c4cf75e6e23f29e25d5e4c62e1a31ffa94ecfa0d1ae49a9590947"
+    }
+  ],
+  "odkritje_vala": {
+    "raziskave_z_javnim_prenosom": 24,
+    "raziskave_skupaj": 26,
+    "prebranih_do_vala_103": 14,
+    "ostalo_za_val_104": [
+      "17-0374 (27872)",
+      "17-0481 (27960)",
+      "17-0497 (28017)",
+      "19-0552 (28678)",
+      "13-0078 (26367 — popravek vala 102: ID OBSTAJA)",
+      "20-0297 (28855)",
+      "21-0130 (29027)",
+      "20-0261 (28828)",
+      "21-0406 (29176)",
+      "23-0261 (43689)"
+    ],
+    "brez_prenosa": [
+      "26-0326 (poročilo oddano v pregled)",
+      "26-0379 (raziskava šele napredita)"
+    ]
+  },
+  "vgradnja": {
+    "novi_viri": [
+      "tiran-2015-klepec-750-3",
+      "lavrinc-2015-agromelioracija-cerkvisce",
+      "brecic-2016-kanalizacija-g7-g8",
+      "tiran-2016-kanalizacija-g7-1-g7-2",
+      "mulh-2019-tk-kabelska-kanalizacija",
+      "gruden-2025-novogradnja-15-4",
+      "fras-masaryk-2026-nno-krasinec-668-1"
+    ],
+    "dopolnjeni_viri": [
+      "zvkds-cerne-2022-brodaric (22-0169 vsebina prebrana, 103. val)"
+    ],
+    "prehod_stevcev": "+0 zapisov (114) / +7 citati (634 → 641) / +7 identitet (510 → 517) / deljenih 69"
+  },
+  "brez_podvajanja": [
+    "kontrola rg pred vgradnjo: apnenica/brusni kamni/klokočovnik/štular/vrtač/15/4 kombinacije — ni obstoječih virov s to vsebino",
+    "nova koda 16-0021 ločena od obstoječega vs-42-kanalizacija-g1-g4 (Mason/Vareško/Pintér 2005 = kanala G1/G4, ne G7/G8)",
+    "25-0556 ločen od avgusta-2021-krasinec-668 (21-0432: parcele 668/2–4, 2021, Avgusta; 25-0556: 668/1, 2026, Skupina STIK)"
+  ],
+  "fairness": [
+    "negativni rezultati (14-0456, 15-0081, 16-0141, 25-0556) zapisani z enako težo kot pozitivni",
+    "sekundarne lege izrecno: rimskodobni material 16-0021 v koluviju (transportiran), prazgodovinska keramika 25-0350 v koluviju brez vkopov, 22-0169 premešano gradivo",
+    "domneve prenašane kot domneve: »metalurška delavnica« (16-0021), gnojenje/smetenje (26-0036, val 102)",
+    "popravek vala 102 izrecen: 13-0078 IMA javni prenos (ID 26367) — summary vala 102 ga je zapisal brez ID",
+    "neskladja zapisana: pet/šest sond (22-0169), letnica VS 48 (ostaja REVIEW iz vala 102)"
+  ],
+  "artefakti": {
+    "mapa": "research-griblje/val103/",
+    "vsebina": "porocila/ (5 PDF komittanih + 8 TXT + sha256.txt + sha256-pdf.txt z hashi izbrisanih velikih PDF) + summary.json",
+    "veliki_pdf_hashirani_izbrisani": [
+      "19-0007.pdf (32,4 MB, ed442a54…)",
+      "22-0169.pdf (7,4 MB, 6cc78095…)",
+      "25-0350.pdf (14,5 MB, 011ed2b3…)"
+    ]
+  }
+}

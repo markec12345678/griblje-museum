@@ -11,7 +11,7 @@
  *     podzemljska župnija; Vavpotičevi portreti Katarine + Niko 1924 v
  *     Belokranjskem muzeju; Kette spomini 1950; ČGP Delo v Dularjevi knjižici).
  *  3. ZGODBE: nov odstavek sl+en na MVG-010 in na uskoškem zapisu.
- *  4. ŠTEVCI: izrecen prehod 114 / 628 / 504 / 69.
+ *  4. ŠTEVCI: izrecen prehod 114 / 628 / 504 / 69 (pin posodobljen 102./103. val).
  *  5. POŠTENOST: »zelo verjetno« prenašano kakor napisano (migracijska sled);
  *     današnje stanje BM zbirke TO_COLLECT; bibliografska oznaka revije po
  *     repozitorskem kazalu (PDF brez kolofona — iskrena opomba); veriga #100
@@ -204,12 +204,12 @@ describe("val101 · zgodbe sl+en", () => {
 });
 
 describe("val101 · izrecen prehod števcev", () => {
-  test("114 zapisov / 634 virov / 510 identitet / 69 deljenih [pin posodobljen 102. val: +6 virov na MVG-083]", () => {
+  test("114 zapisov / 641 virov / 517 identitet / 69 deljenih [pin posodobljen 103. val: +7 virov na MVG-083]", () => {
     const virov = seedExhibits.reduce((a, e) => a + (e.sources?.length ?? 0), 0);
     const deljenih = [...SOURCE_USAGE.values()].filter((u) => u.exhibits.length > 1).length;
     expect(seedExhibits.length).toBe(114);
-    expect(virov).toBe(634);
-    expect(SOURCE_USAGE.size).toBe(510);
+    expect(virov).toBe(641);
+    expect(SOURCE_USAGE.size).toBe(517);
     expect(deljenih).toBe(69);
   });
 
