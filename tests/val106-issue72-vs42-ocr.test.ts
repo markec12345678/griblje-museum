@@ -216,7 +216,7 @@ describe("val106 · zgodba + muzej išče + poštenost", () => {
     expect(nov.nameSi).toContain("str. 49–50, vnos 59");
     expect(vs42.noteSi).toContain("rdeča vnosna številka 60");
     // vs-42 zapis citira vnos 60 (vrednotenje); vnos 59 živi izključno v novem viru
-    expect(vs42.noteSi.includes("vnos 59 (EŠD 10094")).toBe(false);
+    expect(vs42.noteSi?.includes("vnos 59 (EŠD 10094")).toBe(false);
   });
 });
 
