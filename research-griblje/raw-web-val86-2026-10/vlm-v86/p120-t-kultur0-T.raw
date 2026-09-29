@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "kultur": "Zwischmatt\nbeimwald",
+      "jaethe": "",
+      "klafter": "1297",
+      "row_cut": false
+    },
+    {
+      "kultur": "dahin",
+      "jaethe": "",
+      "klafter": "192",
+      "row_cut": false
+    },
+    {
+      "kultur": "dahin",
+      "jaethe": "",
+      "klafter": "157",
+      "row_cut": false
+    },
+    {
+      "kultur": "dahin",
+      "jaethe": "",
+      "klafter": "106[angeschnitten]",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 1 kultur: Zwischmatt (first word slightly unclear)",
+    "Row 4 klafter: last digit cut off"
+  ],
+  "observations": "The first entry 'Zwischmatt' spans two lines. Rows 2-4 use ditto marks ('dahin') for the kultur column, referring back to the first entry. All area values are in the Kläfter column; the Jaethe column is empty for all visible rows."
+}

@@ -133,12 +133,12 @@ describe("val 90 — ovržbe konvencij (K1–K4, K6)", () => {
 });
 
 describe("val 90 — reprodukcija in usklajenost (K7, K8)", () => {
-  test("K7 = C4 val 86b natanko: 0 OK / 76 REVIEW / 12 brez; 0 neskladij vsot vrstic", () => {
+  test("K7 = C4 val 86b natanko: 0 OK / 79 REVIEW / 9 brez (val 98: 0/76/12 → val 107 polna pokritost); 0 neskladij vsot vrstic", () => {
     const k7 = art.K7_c4_reprodukcija;
     expect(k7.pages).toBe(88);
     expect(k7.OK).toBe(0);
-    expect(k7.REVIEW).toBe(76);
-    expect(k7.NO_FURTRAG).toBe(12);
+    expect(k7.REVIEW).toBe(79);
+    expect(k7.NO_FURTRAG).toBe(9);
     expect(k7.register_sum_mismatches).toEqual([]);
   });
 
@@ -158,16 +158,16 @@ describe("val 90 — reprodukcija in usklajenost (K7, K8)", () => {
 });
 
 describe("val 90 — konfunda F-PV-05 (K9) + opazovalni register (K10)", () => {
-  test("K9 pin: atribucija 100–1599 v jaethe = 323 (p1–55) / 214 (p56–143; val 90: 242 → val 98: 214, mehanski premik z 101 F-PV-05 korekcijo na p95–109 — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
+  test("K9 pin: atribucija 100–1599 v jaethe = 323 (p1–55) / 120 (p56–143; val 90: 242 → val 98: 214 → val 107: 120, mehanski premik z F-PV-05 korekcijami — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
     expect(art["K9_konfunda_F-PV-05"].p1_55_val57["jaethe_plain_100_1599"]).toBe(323);
-    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(214);
+    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(120);
   });
 
   test("K9 pin: vsotno-relevantni razredi majhni (gt1599 29/69; jk_format 1/7)", () => {
     const p1 = art["K9_konfunda_F-PV-05"].p1_55_val57;
     const p2 = art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji;
     expect((p1["jaethe_plain_gt1599"] ?? 0) + (p1["klafter_plain_gt1599"] ?? 0)).toBe(29);
-    expect((p2["jaethe_plain_gt1599"] ?? 0) + (p2["klafter_plain_gt1599"] ?? 0)).toBe(69);
+    expect((p2["jaethe_plain_gt1599"] ?? 0) + (p2["klafter_plain_gt1599"] ?? 0)).toBe(70); // val 98: 69 → val 107: 70
     expect(p1["any_jk_format"]).toBe(1);
     expect(p2["any_jk_format"]).toBe(7);
   });

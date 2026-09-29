@@ -229,11 +229,11 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       findings: { finding_id: string; val: number; status: string }[];
       nodes: { node_id: string; node_type: string; lat?: number; lng?: number; georef_status?: string }[];
     };
-    expect(kg.title).toBe("knowledge-graph-1825 v2.2");
-    expect(kg.val).toBe(98);
-    expect(kg.findings.at(-1)!.finding_id).toBe("KG-F11"); // val 98 (86b del 2) — KG-F10 ohranjen na mestu 10
-    expect(kg.findings.at(-2)!.finding_id).toBe("KG-F10");
-    expect(kg.findings.at(-2)!.status).toContain("RESOLVED-V84");
+    expect(kg.title).toBe("knowledge-graph-1825 v2.3");
+    expect(kg.val).toBe(107);
+    expect(kg.findings.at(-1)!.finding_id).toBe("KG-F12"); // val 107 (86b del 3) — KG-F10/F11 ohranjena
+    expect(kg.findings.at(-2)!.finding_id).toBe("KG-F11");
+    expect(kg.findings.at(-3)!.status).toContain("RESOLVED-V84"); // KG-F10 (val 84) ohranjen na mestu 10
     const moA01 = kg.nodes.filter((n) => n.node_id.startsWith("MO:MO-A01-"));
     expect(moA01.length).toBe(24);
     for (const n of moA01) {
@@ -272,7 +272,7 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       val: number;
       quality_gate: { category_id: string; VERIFIED: number; PARTIAL: number; UNKNOWN: number; native: Record<string, unknown> }[];
     };
-    expect(rep.val).toBe(98);
+    expect(rep.val).toBe(107);
     const geo = rep.quality_gate.find((c) => c.category_id === "georeferencing")!;
     expect(geo.VERIFIED).toBe(1);
     expect(geo.PARTIAL).toBe(0);

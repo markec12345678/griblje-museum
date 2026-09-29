@@ -70,13 +70,13 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
   test("provenance: kg_sha256 + kg_val + deterministično + built_from = KG", () => {
     expect(graph.provenance.deterministic).toBe(true);
     expect(graph.provenance.built_from).toBe("knowledge-graph-1825.json");
-    expect(graph.provenance.kg_val).toBe(98); // KG v2.2 (val 98 — 86b del 2, kaskada story_id §22)
+    expect(graph.provenance.kg_val).toBe(107); // KG v2.3 (val 107 — 86b del 3, kaskada story_id §22)
     expect(graph.provenance.kg_sha256).toMatch(/^[a-f0-9]{64}$/);
   });
 
-  test("entitete po vrsti ujemajo KG (3.775 skupaj)", () => {
+  test("entitete po vrsti ujemajo KG (3.656 skupaj)", () => {
     const by = graph.stats.entities_by_type;
-    expect(by["PARCEL"]).toBe(2933);
+    expect(by["PARCEL"]).toBe(2814); // val 98: 2933 → val 107: 2814
     expect(by["PERSON"]).toBe(488);
     expect(by["HOUSE"]).toBe(167);
     expect(by["BP"]).toBe(100);
@@ -120,7 +120,7 @@ describe("story-graph: §21 invarianti relacij", () => {
 
   test("relacije po tipu: HAS_PARCEL 3.155, OWNER_OF 254, BP_BOUND_TO_HOUSE 119 …", () => {
     const by = graph.stats.relations_by_type;
-    expect(by["HAS_PARCEL"]).toBe(3155);
+    expect(by["HAS_PARCEL"]).toBe(3091); // val 98: 3155 → val 107: 3091
     expect(by["OWNER_OF"]).toBe(254);
     expect(by["OWNER_VARIANT_OF"]).toBe(224);
     expect(by["BP_BOUND_TO_HOUSE"]).toBe(119);
@@ -252,7 +252,7 @@ describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
     const ov = storyGraphOverview();
     expect(ov.ok).toBe(true);
     expect(ov.val).toBe(68);
-    expect(ov.stats.entities).toBe(3775);
+    expect(ov.stats.entities).toBe(3656); // val 98: 3775 → val 107: 3656
     expect(ov.stats.story_atoms).toBe(4);
     const contract = ov.story_engine_contract as { required_fields: string[] };
     for (const f of ["story_id", "input_entity_ids", "used_claim_ids", "used_source_ids", "generation_timestamp", "prompt_version", "story_status"]) {

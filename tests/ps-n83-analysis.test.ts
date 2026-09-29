@@ -258,13 +258,13 @@ describe("val 82 — PS N83 transkripcija DOKONČANA (p56–143, analysis-v3)", 
     expect(patched.map((r) => r.haus_no).sort()).toEqual(["38", "39", "45"]);
   });
 
-  it("varovalka: p56–143 = 1.109 vrstic v86-colonial-tiles (val 86 + val 98 2. prehod) + 689 v82-native-pass1 (PROVISIONAL)", () => {
+  it("varovalka: p56–143 = 1.755 vrstic v86-colonial-tiles (val 86 + 98 + 107 2. prehod) + 43 v82-native-pass1 (PROVISIONAL)", () => {
     const fresh = psRegister.filter((r) => r.page > 55);
     expect(fresh.length).toBe(1798);
     const v86 = fresh.filter((r) => r.reading_pass === "v86-colonial-tiles");
     const v82 = fresh.filter((r) => r.reading_pass === "v82-native-pass1");
-    expect(v86.length).toBe(1109); // p56–109 + p121 (kolonski tile-i, 4/4 pasovi; val 86: 808 + val 98: 301)
-    expect(v82.length).toBe(689); // p110–142 (kvota 429, obnovljivo) + p143 (rdeči povzetek)
+    expect(v86.length).toBe(1755); // p56–141 (kolonski tile-i, 4/4 pasovi; val 86: 808 + val 98: 301 + val 107: 646)
+    expect(v82.length).toBe(43); // p142 (kvota 429 — 1 tile, obnovljivo) + p143 (rdeči povzetek)
     expect(v86.every((r) => r.page >= 56 && r.page <= 142)).toBe(true);
     expect(analysisV3.method.reading_honesty).toContain("PROVISIONAL");
     expect(analysisV3.method.reading_honesty).toContain("KG v1.8");
@@ -473,11 +473,11 @@ describe("val 83 — PS N83 neodvisen re-read p56–143 (2. prehod, analysis-v4)
     expect(psPages.filter((p) => p.status === "READ").length).toBe(143);
   });
 
-  it("source-coverage: val 98 (regeneriran ob KG v2.2) + SRC-PS opomba z re-read + tile rezultatom (§22)", () => {
+  it("source-coverage: val 107 (regeneriran ob KG v2.3) + SRC-PS opomba z re-read + tile rezultatom (§22)", () => {
     const sc = JSON.parse(
       readFileSync(join(RG, "atlas-1825", "source-coverage-1825.json"), "utf8"),
     ) as { val: number; sources: { source_id: string; note: string }[]; transcription: { PS: { rows: number; passes: number } } };
-    expect(sc.val).toBe(98); // val 98 regeneracija (86b del 2 — blok razširjen)
+    expect(sc.val).toBe(107); // val 107 regeneracija (86b del 3 — blok zaključen)
     expect(sc.transcription.PS.rows).toBe(2871);
     expect(sc.transcription.PS.passes).toBe(3);
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;

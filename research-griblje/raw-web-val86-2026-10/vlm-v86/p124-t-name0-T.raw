@@ -1,0 +1,37 @@
+{
+  "rows": [
+    {
+      "haus_no": "16",
+      "name": "Novak Mardi",
+      "stand": "Bauer [?]",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "7",
+      "name": "Lubenstahl Matko",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "11",
+      "name": "Pavlicz greg",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "2",
+      "name": "Kaucihar Wolf",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 1 stand: 'Bauer' is a best guess, the word is abbreviated and slightly unclear"
+  ],
+  "observations": "The 'Stand' column uses ditto marks (double commas) for rows 2-4. The 'Wohnort' column is not visible in this slice. The bottom row (Haus No. 2) is cut off at the bottom edge."
+}

@@ -1,0 +1,77 @@
+{
+ "rows": [
+  {
+   "haus_no": "",
+   "name": "Ravnik Peter",
+   "stand": "~",
+   "wohnort": "Gr",
+   "row_cut": true
+  },
+  {
+   "haus_no": "",
+   "name": "Prodaničl Miha",
+   "stand": "~",
+   "wohnort": "Hr",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Prodaničl Miha",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Podsižg Joh.",
+   "stand": "~",
+   "wohnort": "Ga",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Camerda",
+   "stand": "",
+   "wohnort": "Tele",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Prodaničl Miha",
+   "stand": "~",
+   "wohnort": "Ho",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Prodaničl Miha",
+   "stand": "~",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Habeshigat Jos.",
+   "stand": "~",
+   "wohnort": "Kr",
+   "row_cut": false
+  },
+  {
+   "haus_no": "",
+   "name": "Hatteschinig Jos.",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "1 wohnort: Gr [angeschnitten]",
+  "2 wohnort: Hr [angeschnitten]",
+  "4 wohnort: Ga [angeschnitten]",
+  "5 wohnort: Tele [angeschnitten]",
+  "6 wohnort: Ho [angeschnitten]",
+  "8 wohnort: Kr [angeschnitten]"
+ ],
+ "observations": "The first column (Haus Nro.) is not visible in this slice. The 'Stand' column contains ditto marks ('') for most entries, indicating the status is the same as the row above. The 'Wohnort' column is partially cut off on the right edge for all visible rows."
+}

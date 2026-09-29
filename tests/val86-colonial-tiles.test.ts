@@ -116,13 +116,13 @@ describe("val 86 — pilot pravilnosti (F-PV-06 pouk: glava = sidro stolpcev)", 
 });
 
 describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review oznake)", () => {
-  test("register 2.871 vrstic; 1.109 v86-colonial-tiles (p56–109 + p121: val 86 + val 98), 689 v82, p1–55 + p143 nedotaknjeni", () => {
+  test("register 2.871 vrstic; 1.755 v86-colonial-tiles (p56–141: val 86 + 98 + 107), p142 v82, p1–55 + p143 nedotaknjeni", () => {
     expect(register).toHaveLength(2871);
     const v86 = register.filter((r) => r.reading_pass === "v86-colonial-tiles");
-    expect(v86).toHaveLength(1109);
+    expect(v86).toHaveLength(1755);
     expect(v86.every((r) => (r.page as number) >= 56 && (r.page as number) <= 142)).toBe(true);
     const v82 = register.filter((r) => r.reading_pass === "v82-native-pass1");
-    expect(v82).toHaveLength(689);
+    expect(v82).toHaveLength(43); // p142 (40) + p143 (3) — val 107: p110–141 prešlo v v86
     expect(register.filter((r) => (r.page as number) <= 55).every((r) => !("jk_review" in r))).toBe(true);
     expect(register.filter((r) => (r.page as number) === 143).every((r) => r.reading_pass === "v82-native-pass1")).toBe(true);
   });
@@ -131,7 +131,7 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
     const v86 = register.filter((r) => r.reading_pass === "v86-colonial-tiles");
     const corrected = v86.filter((r) => "jaethe_pass1_v82" in r);
     // val 88: 139 digit-split vrstic je dobilo snimke + v88 polja; val 98: +101 (14 jk + 87 arbitraž) na p95–109
-    expect(corrected.length).toBe(287 + 43 + 3 + 139 + 14 + 87);
+    expect(corrected.length).toBe(287 + 43 + 3 + 139 + 14 + 87 + 117 + 36 + 1); // val 107: +154 na p110–141
     for (const r of corrected) {
       expect(typeof r.jaethe_pass1_v82).toBe("string");
       expect(typeof r.klafter_pass1_v82).toBe("string");
@@ -163,8 +163,8 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
     // val 88: vseh 139 part-1 digit-split vrstic promoviranih; val 98: 7 FRESH part-2 markerjev ostaja (čaka re-read)
     const resolved = register.filter((r) => r.jk_review === "v88-digit-split-RESOLVED");
     const unresolved = register.filter((r) => r.jk_review === "v88-digit-split-UNRESOLVED");
-    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split").length).toBe(7);
-    expect(register.filter((r) => r.jk_review === "v86-review-col-split").length).toBe(2);
+    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split").length).toBe(7 + 56); // val 107: +56 na p110–141
+    expect(register.filter((r) => r.jk_review === "v86-review-col-split").length).toBe(2 + 14); // val 107: +14
     expect(resolved.length).toBe(137);
     expect(unresolved.length).toBe(2);
     for (const r of resolved) {
@@ -182,13 +182,13 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
     }
   });
 
-  test("kultur/owner tile različice = variant fields (val 86: 637/153 + val 98: 259/910 = 896/1.063), kultur polje NIKOLI prepisano", () => {
+  test("kultur/owner tile različice = variant fields (val 86: 637/153 + val 98: 259/910 + val 107: 506/552 = 1.402/1.615), kultur polje NIKOLI prepisano", () => {
     expect(changes.tally["kultur_variant"]).toBe(637); // del 1 (val 86)
     expect(changes.tally["owner_variant"]).toBe(153); // del 1 (val 86)
     const variants = register.filter((r) => "kultur_tile_v86" in r);
-    expect(variants).toHaveLength(896); // 637 + 259 (del 2, val 98)
+    expect(variants).toHaveLength(1402); // 637 + 259 (del 2, val 98) + 506 (del 3, val 107)
     for (const r of variants) expect(typeof r.kultur_tile_v86).toBe("string");
-    expect(register.filter((r) => "owner_tile_v86" in r)).toHaveLength(1063); // 153 + 910
+    expect(register.filter((r) => "owner_tile_v86" in r)).toHaveLength(1615); // 153 + 910 + 552
   });
 
   test("audit trail: vsak popravek v register-v86-changes.json s glasovi (+ val 98: register-v86b-changes.json)", () => {
@@ -219,14 +219,14 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
 });
 
 describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodobitev števcev)", () => {
-  test("KG v2.2: naslov + val 98 + invariante čiste + ID-ji (3.775/3.859; PARCEL 2.933)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.2");
-    expect(kg.val).toBe(98);
+  test("KG v2.3: naslov + val 107 + invariante čiste + ID-ji (3.656/3.795; PARCEL 2.814 — val 98 je bil v2.2/98/3.775/3.859/2.933)", () => {
+    expect(kg.title).toBe("knowledge-graph-1825 v2.3");
+    expect(kg.val).toBe(107);
     expect(kg.invariant_violations).toEqual([]);
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3775);
+    expect(nodes).toBe(3656);
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3859);
+    expect(edges).toBe(3795);
     expect(kg.findings.some((f) => f.finding_id === "KG-F11" && f.val === 98)).toBe(true);
   });
 
@@ -254,7 +254,7 @@ describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodo
     const sc = JSON.parse(readFileSync(join(ATLAS, "source-coverage-1825.json"), "utf8")) as {
       val: number; transcription: { PS: { rows: number; passes: number; note: string } };
     };
-    expect(sc.val).toBe(98); // val 98 regeneracija (86b del 2)
+    expect(sc.val).toBe(107); // val 107 regeneracija (86b del 3)
     expect(sc.transcription.PS.rows).toBe(2871);
     expect(sc.transcription.PS.passes).toBe(3);
     expect(sc.transcription.PS.note).toContain("F-PV-05");

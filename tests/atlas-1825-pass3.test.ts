@@ -39,7 +39,7 @@ const nr = JSON.parse(readFileSync(join(A, "negative-result-register-1825.json")
 
 describe("val 89 — ATLAS 1825 PASS 3 v2 (projekcija 143/143)", () => {
   it("val/pass označena", () => {
-    expect(pr.val).toBe("98");
+    expect(pr.val).toBe("107");
     expect(pr.pass).toBe(3);
   });
 
@@ -70,14 +70,14 @@ describe("val 89 — ATLAS 1825 PASS 3 v2 (projekcija 143/143)", () => {
     });
   });
 
-  describe("§4 PS parcele (projekcija 143/143 + F-PV-05 korekcije, val 98)", () => {
-    it("898 kandidatov (432 → 930 val 89 → 898 val 98: F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Kläfter; v88 pravilo: prazna jaethe s klafter vrednostjo ni parcela); land use pokritost brez ugibanja", () => {
-      expect(pr.ps_parcels_total).toBe(898);
-      expect(pr.ps_land_use_coverage["njiva"]).toBe(297);
-      expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(333);
-      expect(pr.ps_land_use_coverage["null"]).toBe(104); // brez kultur zapisa — izven obeh števcev (val 98: 136→104)
-      expect(pr.ps_land_use_mapping_confidence["EXACT"]).toBe(450);
-      expect(pr.ps_land_use_mapping_confidence["TERM-UNCLEAR"]).toBe(333);
+  describe("§4 PS parcele (projekcija 143/143 + F-PV-05 korekcije, val 107)", () => {
+    it("779 kandidatov (432 → 930 val 89 → 898 val 98 → 779 val 107: F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Kläfter; v88 pravilo: prazna jaethe s klafter vrednostjo ni parcela); land use pokritost brez ugibanja", () => {
+      expect(pr.ps_parcels_total).toBe(779);
+      expect(pr.ps_land_use_coverage["njiva"]).toBe(294);
+      expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(249);
+      expect(pr.ps_land_use_coverage["null"]).toBe(92); // brez kultur zapisa — izven obeh števcev (val 98: 136→104; val 107: 104→92)
+      expect(pr.ps_land_use_mapping_confidence["EXACT"]).toBe(427);
+      expect(pr.ps_land_use_mapping_confidence["TERM-UNCLEAR"]).toBe(249);
       expect(pr.ps_land_use_mapping_confidence["EXACT-MIXED"]).toBe(11);
       // snimka val 60 stanja (delna pokritost 55/143): 432 kandidatov, njiva 230, UNKNOWN 106
       // — dokumentirano v research-griblje/104-val89-parcelni-register-143.md

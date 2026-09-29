@@ -1,0 +1,72 @@
+{
+ "rows": [
+  {
+   "haus_no": "1",
+   "name": "Schimoz Mägd",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "2",
+   "name": "Wenzl Gregor",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "3",
+   "name": "Schimoz Mihael",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "4",
+   "name": "Idolft Schkolb[?]",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "5",
+   "name": "Schimoz Hanß",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "6",
+   "name": "Schmorg Jela",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "7",
+   "name": "Schmorg Jela",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "8",
+   "name": "Comenda",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "9",
+   "name": "Comenda",
+   "stand": "",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [],
+ "unclear": [
+  "4 name"
+ ],
+ "observations": "Columns 'Stand' and 'Wohnort' are empty in this slice. The 'Stand' column header is printed, but the 'Wohnort' column header is cut off at the right edge."
+}

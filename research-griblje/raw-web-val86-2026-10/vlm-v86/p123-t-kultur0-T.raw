@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "kultur": "Heide\nPozig i Bannwald",
+      "jaethe": "",
+      "klafter": "466 [rot]",
+      "row_cut": false
+    },
+    {
+      "kultur": "Heide und Gras\nPozig i Bannwald",
+      "jaethe": "",
+      "klafter": "903 [rot]",
+      "row_cut": false
+    },
+    {
+      " kultur": "Heide\nPozig i Bannwald",
+      " jaethe": "1",
+      " klafter": "227 [rot]",
+      " row_cut": false
+    },
+    {
+      " kultur": "Heide und Gras\nPozig i Bannwald",
+      " jaethe": "",
+      " klafter": "946 [rot]",
+      " row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [
+    "Row 3, jaethe: The number '1' is written in the Jaethe column but is partially obscured by the red line and the following number in the Kläfter column."
+  ],
+  "observations": "All values in the 'Quad. Kläfter' column are written in red ink. The first column ('Kultur Gattung') contains two-line entries for each row. Row 4 is cut off at the bottom of the image."
+}

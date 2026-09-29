@@ -1,0 +1,68 @@
+{
+ "rows": [
+  {
+   "haus_no": "73",
+   "name": "",
+   "stand": "4",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "74",
+   "name": "",
+   "stand": "6",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "75",
+   "name": "",
+   "stand": "8",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "76",
+   "name": "",
+   "stand": "4",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "77",
+   "name": "",
+   "stand": "2",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "78",
+   "name": "",
+   "stand": "2",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "79",
+   "name": "",
+   "stand": "5",
+   "wohnort": "",
+   "row_cut": false
+  },
+  {
+   "haus_no": "80",
+   "name": "",
+   "stand": "3",
+   "wohnort": "",
+   "row_cut": true
+  }
+ ],
+ "totals": [
+  {
+   "label": "",
+   "value": "125"
+  }
+ ],
+ "unclear": [],
+ "observations": "The 'Vor und Zuname' and 'Wohnort' columns are empty in this slice. The 'Stand' column contains single digits (likely status codes). A total sum of 125 is written at the bottom in the 'Stand' column."
+}

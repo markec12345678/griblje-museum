@@ -459,11 +459,11 @@ ok(
 /* --- 5i. /api/atlas/story-graph — PASS 6 pripovedni graf (val 68, #42 §21) --- */
 const sgOverview = await getJson("/api/atlas/story-graph");
 ok(
-  "atlas story-graph: pregled — 3.775 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 98)",
+  "atlas story-graph: pregled — 3.656 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 107)",
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
-    sgOverview.body?.stats?.entities === 3775 &&
-    sgOverview.body?.stats?.relations === 3859 &&
+    sgOverview.body?.stats?.entities === 3656 &&
+    sgOverview.body?.stats?.relations === 3795 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
   `status=${sgOverview.status} entities=${sgOverview.body?.stats?.entities}`
@@ -666,7 +666,7 @@ ok(
 );
 const covUnknowns = await getJson("/api/atlas/coverage?unknowns=1");
 ok(
-  "atlas coverage: prečne nezanke — agregat po mestu izvora (geometry 2933 + duplikati 161 …)",
+  "atlas coverage: prečne nezanke — agregat po mestu izvora (geometry 2814 + duplikati 161 …)",
   covUnknowns.status === 200 &&
     covUnknowns.body?.aggregate?.length === 9 &&
     covUnknowns.body?.total > 3000,
@@ -756,14 +756,14 @@ ok(
 /* --- 5o. /api/atlas/map?layer=parcels — parcelni sloj rabe (val 73, #42 §19) --- */
 const mapAll73 = await getJson("/api/atlas/map");
 ok(
-  "atlas map: counts.parcels = 2933 z razčlenjeno rabo (461 dokumentiranih / 333 neznanih / 2139 brez zapisa) — projekcija 143/143 + F-PV-05 korekcije (val 98: 930→898)",
+  "atlas map: counts.parcels = 2814 z razčlenjeno rabo (438 dokumentiranih / 249 neznanih / 2127 brez zapisa) — projekcija 143/143 + F-PV-05 korekcije (val 98: 930→898 + val 107: 898→779)",
   mapAll73.status === 200 &&
-    mapAll73.body?.counts?.parcels === 2933 &&
-    mapAll73.body?.counts?.parcels_with_land_use === 461 &&
-    mapAll73.body?.counts?.parcels_land_use_unknown === 333 &&
-    mapAll73.body?.counts?.parcels_no_land_use_record === 2139 &&
+    mapAll73.body?.counts?.parcels === 2814 &&
+    mapAll73.body?.counts?.parcels_with_land_use === 438 &&
+    mapAll73.body?.counts?.parcels_land_use_unknown === 249 &&
+    mapAll73.body?.counts?.parcels_no_land_use_record === 2127 &&
     Array.isArray(mapAll73.body?.layers?.parcels) &&
-    mapAll73.body?.layers?.parcels?.length === 2933,
+    mapAll73.body?.layers?.parcels?.length === 2814,
   `status=${mapAll73.status} parcels=${mapAll73.body?.counts?.parcels}`
 );
 const parcels73 = await getJson("/api/atlas/map?layer=parcels");
@@ -774,7 +774,7 @@ const p201 = (parcels73.body?.features ?? []).find(
 ok(
   "atlas map parcels: register brez geometrije (§9) + obratni indeks HAS_PARCEL + sledljivost",
   parcels73.status === 200 &&
-    parcels73.body?.count === 2933 &&
+    parcels73.body?.count === 2814 &&
     typeof p73f?.node_id === "string" &&
     p73f?.node_id?.startsWith("PARCEL:") === true &&
     p73f !== undefined && !("px" in p73f) && !("lat" in p73f) && !("lng" in p73f) &&

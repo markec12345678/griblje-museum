@@ -1,0 +1,30 @@
+```json
+{
+  "rows": [
+    {
+      "haus_no": "",
+      "name": "Pos Dir. Malfz Laurl",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Pos Dir. Margt",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Comenda",
+      "stand": "",
+      "wohnort": "",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": ["1 name", "2 name", "3 name"],
+  "observations": "The 'Haus Nro.' column is empty or cut off on the left edge. The 'Stand' and 'Wohnort' columns are cut off on the right edge. The first two names appear to be prefixed with an abbreviation (possibly 'Pos Dir.' for 'Possessor Direktus')."
+}
+```

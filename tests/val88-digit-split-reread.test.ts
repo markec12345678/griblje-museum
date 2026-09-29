@@ -207,7 +207,7 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
     // val 98 (86b del 2): 7 novih part-2 digit-split markerjev (p95–109, čaka re-read vzorec val 88);
     // vseh 139 part-1 markerjev je še vedno promoviranih
     expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split" && (r.page as number) <= 94)).toHaveLength(0);
-    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split")).toHaveLength(7);
+    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split")).toHaveLength(63); // val 98: 7 → val 107: 63 (+56 na p110–141)
   });
 });
 
@@ -221,18 +221,18 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
     }
   });
 
-  test("KG nosi val 98 stanje (v2.2) — j|k vrednosti ostajajo izven KG polj", () => {
-    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad)
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^2b16acad/);
+  test("KG nosi val 107 stanje (v2.3) — j|k vrednosti ostajajo izven KG polj", () => {
+    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad); val 107 86b del 3 (23a2ae50)
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^23a2ae50/);
   });
 
-  test("parcelni register nosi projekcijo 143/143 + F-PV-05 korekcije (val 98: 930 → 898); negative register ostaja 14", () => {
+  test("parcelni register nosi projekcijo 143/143 + F-PV-05 korekcije (val 107: 930 → 898 → 779); negative register ostaja 14", () => {
     const pr = JSON.parse(readFileSync(join(ATLAS, "parcel-register-1825.json"), "utf8")) as {
       ps_parcels_total: number;
       val: string;
     };
-    expect(pr.ps_parcels_total).toBe(898);
-    expect(pr.val).toBe("98");
+    expect(pr.ps_parcels_total).toBe(779);
+    expect(pr.val).toBe("107");
     const nr = JSON.parse(readFileSync(join(ATLAS, "negative-result-register-1825.json"), "utf8")) as {
       negatives_total: number;
       negatives: { neg_id: string }[];
@@ -260,20 +260,20 @@ describe("val 88 — F11 (val 86b) ob v88 vrednostih", () => {
     anchors_v85_check: { any_voice_match: boolean }[];
   };
 
-  test("verdikti verige nespremenjeni: 5 kršitev monotonosti, veznost p54→p58 delta 4 OK", () => {
-    expect(f11.counter_violations).toHaveLength(5);
+  test("verdikti verige: 9 kršitev monotonosti (val 98: 5 → val 107: 9 — novi v86 sumniki na p110–141), veznost p54→p58 delta 4 OK", () => {
+    expect(f11.counter_violations).toHaveLength(9);
     expect(f11.link_p54_p56.delta).toBe(4);
     expect(f11.link_p54_p56.ok).toBe(true);
     expect(f11.link_p54_p56.p54_counter).toBe(52);
     expect(f11.link_p54_p56.first_strict_counter).toBe(56);
   });
 
-  test("3-glas REVIEW strani + aritmetika + sidra: 41 / 0 OK + 76 REVIEW / 3 od 7 (val 98: 38 → 41 strani, aritmetika nespremenjena)", () => {
-    expect(f11.voice_review.filter((v) => v.verdict === "REVIEW")).toHaveLength(41);
+  test("3-glas REVIEW strani + aritmetika + sidra: 52 / 0 OK + 79 REVIEW / 3 od 7 (val 98: 38→41, val 107: 41→52 strani)", () => {
+    expect(f11.voice_review.filter((v) => v.verdict === "REVIEW")).toHaveLength(52);
     const ok = f11.arithmetic.filter((a) => a.verdict === "OK").length;
     const review = f11.arithmetic.filter((a) => a.verdict === "REVIEW").length;
     expect(ok).toBe(0);
-    expect(review).toBe(76);
+    expect(review).toBe(79);
     expect(f11.anchors_v85_check.filter((a) => a.any_voice_match)).toHaveLength(3);
   });
 

@@ -35,8 +35,8 @@ const kgSha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
 
 describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradnja)", () => {
   test("naslov + val + KG-F10 (RESOLVED-V84)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.2"); // val 98: naslov povišan (86b del 2), SRC-PS vozlišče vsebine ohranjene
-    expect(kg.val).toBe(98); // val 98 rebuild (vsebina vozlišč val 84/86 ohranjena)
+    expect(kg.title).toBe("knowledge-graph-1825 v2.3"); // val 107: naslov povišan (86b del 3), SRC-PS vozlišče vsebine ohranjene
+    expect(kg.val).toBe(107); // val 107 rebuild (vsebina vozlišč val 84/86 ohranjena)
     const f10 = kg.findings.find((f) => f.finding_id === "KG-F10")!;
     expect(f10).toBeDefined();
     expect(f10.val).toBe(84);
@@ -64,18 +64,18 @@ describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradn
     expect(JSON.stringify(kg.nodes)).not.toContain("PARTIAL 55/143");
   });
 
-  test("števci in ID-ji (val 98: 3775/3859/622/8/4; PS parcele 432→930→898 = izrecna projekcija + F-PV-05 korekcije, ne zdrs)", () => {
+  test("števci in ID-ji (val 107: 3656/3795/622/8/4; PS parcele 432→930→898→779 = izrecna projekcija + F-PV-05 korekcije, ne zdrs)", () => {
     expect(kg.node_stats).toEqual({
-      SOURCE: 13, HOUSE: 167, PERSON: 488, PARCEL: 2933, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
+      SOURCE: 13, HOUSE: 167, PERSON: 488, PARCEL: 2814, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
     });
-    expect(kg.nodes.length).toBe(3775);
-    expect(kg.edges.length).toBe(3859);
+    expect(kg.nodes.length).toBe(3656); // val 98: 3775 → val 107: 3656
+    expect(kg.edges.length).toBe(3795); // val 98: 3859 → val 107: 3795
     expect(kg.claims.length).toBe(622);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.map((a) => a.story_id)).toEqual(["SA-001", "SA-002", "SA-003", "SA-004"]);
     // ID stabilnost: prvi/zadnji relation + claim
     expect(kg.edges[0].relation_id).toBe("R-00001");
-    expect(kg.edges.at(-1)!.relation_id).toBe("R-03859");
+    expect(kg.edges.at(-1)!.relation_id).toBe("R-03795"); // val 98: R-03859 → val 107: R-03795
     expect(kg.claims[0].claim_id).toBe("C-00001");
     expect(kg.claims.at(-1)!.claim_id).toBe("C-00622");
   });
@@ -106,7 +106,7 @@ describe("val 84 — kaskada story_id (§22): pinned kg_sha256 = sha256 izhodneg
     const runtime = JSON.parse(readFileSync(resolve(REPO, "src/data/story-graph-1825.json"), "utf8")) as {
       provenance: { kg_val: number; kg_sha256: string };
     };
-    expect(archive.provenance.kg_val).toBe(98); // val 98 kaskada (§22; pri valu 84 je bilo 84)
+    expect(archive.provenance.kg_val).toBe(107); // val 107 kaskada (§22; pri valu 84 je bilo 84)
     expect(archive.provenance.kg_sha256).toBe(kgSha);
     expect(runtime.provenance).toEqual(archive.provenance);
   });
@@ -131,7 +131,7 @@ describe("val 84 — kaskada story_id (§22): pinned kg_sha256 = sha256 izhodneg
     const runtime = JSON.parse(readFileSync(resolve(REPO, "src/data/atlas-coverage-report-1825.json"), "utf8")) as {
       provenance: { kg_sha256: string };
     };
-    expect(archive.val).toBe(98);
+    expect(archive.val).toBe(107);
     expect(archive.provenance.kg_sha256).toBe(kgSha);
     expect(runtime.provenance.kg_sha256).toBe(kgSha);
     const neg = archive.quality_gate.find((c) => c.category_id === "negative_results");
@@ -161,7 +161,7 @@ describe("val 84 — register negativnih rezultatov + source-coverage", () => {
       sources: { source_id: string; note: string; status?: string }[];
       transcription: { PS: { pages: number; rows: number; passes: number } };
     };
-    expect(sc.val).toBe(98);
+    expect(sc.val).toBe(107);
     expect(sc.transcription.PS.pages).toBe(143);
     expect(sc.transcription.PS.rows).toBe(2871);
     expect(sc.transcription.PS.passes).toBe(3); // val 86 2. prehod (kolonski tile-i) — vsebina bloka nespremenjena od val 86

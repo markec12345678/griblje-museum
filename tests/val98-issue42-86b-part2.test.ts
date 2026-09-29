@@ -103,11 +103,11 @@ describe("val 98 — 86b del 2: vgradnja po pravilih val 86 na novih straneh", (
     }
   });
 
-  test("owner variante: 910 novih (p63–109); p56–62 idempotentno (iste vrednosti kot val 86)", () => {
+  test("owner variante: 910 novih (p63–109); p56–62 idempotentno (iste vrednosti kot val 86); skupaj 1.615 z delom 3 (val 107)", () => {
     expect(chg2.owner_variant_new).toBe(910);
     const withVariant = register.filter((r) => "owner_tile_v86" in r);
-    expect(withVariant.length).toBe(153 + 910); // del 1 + del 2
-    // vse variante na straneh z name tile pokritostjo (56–109 + 121), nikoli na p1–55/p143
+    expect(withVariant.length).toBe(153 + 910 + 552); // del 1 + del 2 + del 3 (val 107)
+    // vse variante na straneh z name tile pokritostjo (56–141 + 121), nikoli na p1–55/p143
     for (const r of withVariant) {
       expect(r.page as number).toBeGreaterThanOrEqual(56);
       expect(r.page as number).toBeLessThanOrEqual(142);
@@ -124,9 +124,9 @@ describe("val 98 — 86b del 2: vgradnja po pravilih val 86 na novih straneh", (
     }
   });
 
-  test("resumable: 446/696 tile-ov prebranih, 0 trajnih napak; preostanek p110–142", () => {
+  test("resumable: 695/696 tile-ov prebranih (val 98: 446 → val 107: 695), 0 trajnih napak; preostanek p142", () => {
     const read = manifest.tiles.filter((t) => existsSync(join(V86, "vlm-v86", `${t.cell}-T.json`)));
-    expect(read.length).toBe(446);
+    expect(read.length).toBe(695);
     expect(manifest.tiles.length).toBe(696);
     for (const t of read) {
       const j = JSON.parse(readFileSync(join(V86, "vlm-v86", `${t.cell}-T.json`), "utf8"));
@@ -138,30 +138,30 @@ describe("val 98 — 86b del 2: vgradnja po pravilih val 86 na novih straneh", (
 });
 
 describe("val 98 — prehod števcev (izrecen, testno voden)", () => {
-  test("PS parcele 930 → 898; land use None 136 → 104; kategorije nespremenjene", () => {
-    expect(pr.val).toBe("98");
-    expect(pr.ps_parcels_total).toBe(898);
-    expect(pr.ps_land_use_coverage["null"]).toBe(104);
-    expect(pr.ps_land_use_coverage["njiva"]).toBe(297);
-    expect(pr.ps_land_use_coverage["travnik"]).toBe(97);
-    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(333);
-    expect(pr.ps_land_use_coverage["pašnik"]).toBe(22);
+  test("PS parcele 930 → 898 → 779; land use None 136 → 104 → 92; kategorije (val 107: F-PV-05 del 3)", () => {
+    expect(pr.val).toBe("107");
+    expect(pr.ps_parcels_total).toBe(779);
+    expect(pr.ps_land_use_coverage["null"]).toBe(92);
+    expect(pr.ps_land_use_coverage["njiva"]).toBe(294);
+    expect(pr.ps_land_use_coverage["travnik"]).toBe(84);
+    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(249);
+    expect(pr.ps_land_use_coverage["pašnik"]).toBe(16);
     expect(pr.ps_land_use_coverage["vrt"]).toBe(16);
-    expect(pr.ps_land_use_coverage["gozd"]).toBe(16);
+    expect(pr.ps_land_use_coverage["gozd"]).toBe(15);
     expect(pr.ps_land_use_coverage["drugo"]).toBe(11);
     expect(pr.ps_land_use_coverage["dvorišče"]).toBe(1);
     expect(pr.ps_land_use_coverage["vinograd"]).toBe(1);
   });
 
-  test("KG v2.2: PARCEL 2.933, HAS_PARCEL 3.155, vozlišča 3.775, vezi 3.859, invariante čiste", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.2");
-    expect(kg.val).toBe(98);
-    expect(kg.node_stats.PARCEL).toBe(2933);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(3155);
+  test("KG v2.3: PARCEL 2.814, HAS_PARCEL 3.091, vozlišča 3.656, vezi 3.795, invariante čiste (val 98: 2.933/3.155/3.775/3.859)", () => {
+    expect(kg.title).toBe("knowledge-graph-1825 v2.3");
+    expect(kg.val).toBe(107);
+    expect(kg.node_stats.PARCEL).toBe(2814);
+    expect(kg.edge_stats.HAS_PARCEL).toBe(3091);
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3775);
+    expect(nodes).toBe(3656);
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3859);
+    expect(edges).toBe(3795);
     expect(kg.invariant_violations).toEqual([]);
   });
 
@@ -177,8 +177,8 @@ describe("val 98 — prehod števcev (izrecen, testno voden)", () => {
     expect(f11!.status).toContain("p110–142 tile-i ob kvoti");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha 2b16acad…", () => {
-    expect(kgSha).toMatch(/^2b16acad/);
+  test("kaskada: runtime kopije držijo isti KG sha 23a2ae50… (val 107; val 98 je bil 2b16acad)", () => {
+    expect(kgSha).toMatch(/^23a2ae50/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),
@@ -198,7 +198,7 @@ describe("val 98 — prehod števcev (izrecen, testno voden)", () => {
       nodes: { node_id: string; node_type: string; origin?: string; evidence_status?: string }[];
     };
     const psParcels = nodes.nodes.filter((n) => n.node_type === "PARCEL" && n.origin === "PS");
-    expect(psParcels.length).toBe(898);
+    expect(psParcels.length).toBe(779);
     for (const p of psParcels) {
       expect(p.evidence_status).toBe("TRANSCRIBED_PROVISIONAL");
     }

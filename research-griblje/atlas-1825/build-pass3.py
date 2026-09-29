@@ -305,8 +305,8 @@ def write(name, obj):
     print(f"{name}: {os.path.getsize(path)} B")
 
 write("parcel-register-1825.json", {
-    "val": "98", "pass": 3, "issue": "#42 §4",
-    "title": "PARCEL REGISTER 1825 — v2 (val 98): PUA reference + PS kandidati pri 143/143 (ločeni, ne-združeni; F-PV-05 korekcije val 86 + 98 vgrajene — 930 → 898)",
+    "val": "107", "pass": 3, "issue": "#42 §4",
+    "title": "PARCEL REGISTER 1825 — v2 (val 107): PUA reference + PS kandidati pri 143/143 (ločeni, ne-združeni; F-PV-05 korekcije val 86 + 98 + 107 vgrajene — 930 → 898 → 779)",
     "method": {
         "rules": [
             "PUA in PS parcelni identifikatorji se NE združujejo (F14 namespace odprt)",
@@ -328,8 +328,8 @@ write("parcel-register-1825.json", {
 })
 
 write("negative-result-register-1825.json", {
-    "val": "98", "pass": 3, "issue": "#42 §13",
-    "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi (NR-12/13/14 vgrajeni; val89 re-checki na NR-01/02/05/12; regeneriran val 98)",
+    "val": "107", "pass": 3, "issue": "#42 §13",
+    "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi (NR-12/13/14 vgrajeni; val89 re-checki na NR-01/02/05/12; regeneriran val 107)",
     "provenance": provenance,
     "negatives_total": len(negatives),
     "negatives": negatives,

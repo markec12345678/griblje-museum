@@ -1,0 +1,37 @@
+```json
+{
+  "rows": [
+    {
+      "haus_no": "",
+      "name": "Martin Gaberl",
+      "stand": "Bauer [gestrichen]",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Georg Mally",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Jakobak ar Muhle",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": false
+    },
+    {
+      "haus_no": "",
+      "name": "Georg Gnoy",
+      "stand": "~",
+      "wohnort": "",
+      "row_cut": true
+    }
+  ],
+  "totals": [],
+  "unclear": [],
+  "observations": "The first entry in the 'Stand' column ('Bauer') is crossed out with a red line. The subsequent entries in that column use ditto marks (double commas). The name in the third row appears to be 'Jakobak ar Muhle' (or similar). The last row is cut off at the bottom of the image."
+}
+```
