@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 19,
+  "scope": "vrednostni re-read (z3) — STRUKTURNAL NAJDBA: pomik vrstic; vgradnja odlozena val 114",
+  "method": "agentov direktni vid: z3 sklad; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p19.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/z3-p19-vals.png",
+  "fpv07": "split notacija: baseline ze ima '1 1301' (r2), '1 659' (r9), '1 182' (r10) s presledkom — val 57 je tu split ze zapisal",
+  "findings_structural": [
+   "POMIK VRSTIC (F2-analog): 7 sidrnih ujemanj z +1 zamikom (moj band N = register vrstica N-1): 440=r1, 1|1301=r2, 637=r5, 1|182=r10, 205=r13, 192=r14, 1169=r18",
+   "register r0=432 ni viden v mojih bandih (bandi se zacnejo pri r1) — prva vrstica nad detektiranim pravilom",
+   "moj r11=704 vs register r12='1164' — vecje razhajanje, potreben zoom",
+   "moj r15=179 vs register r16='1329' — mozno 1|329 split ali pomik",
+   "FUR: 10|517 + nadaljnja crta pod (druga revizija?)",
+   "ertrag/capital: r8 ef 5|14, r12 cf 1459 (baseline) — audit val 114",
+   "SKLEP: stran potrebuje poln strukturni re-read s persko vrsticno poravnavo (val 114) — NI vgradnje v val 113"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "verdict": "NI VGRADNJE — pomik vrstic, val 114"
+  }
+ },
+ "furtrag": "10|517 (10 v Joch koloni) + nadaljnja crta",
+ "register_actions_planned": [
+  "brez vgradnje — strukturni pomik, val 114"
+ ]
+}

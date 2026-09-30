@@ -198,22 +198,25 @@ describe("generateEntityStory — vsebina (§16/§17)", () => {
     expect(mo!.text).toContain("A01");
   });
 
-  test("žive parcele: H-040 ima 120 povezanih parcel — seznam capped, raba delno dokumentirana (val 112: F-PV-07 p5/p7/p12)", () => {
+  test("žive parcele: H-040 ima 115 povezanih parcel — seznam capped, raba delno dokumentirana (val 113: F-PV-07 p17/p18/p21-p24)", () => {
     const parcele = story.sections.find((s) => s.title === "Parcele in raba zemljišča");
     expect(parcele).toBeDefined();
     expect(parcele!.items.length).toBeGreaterThan(1);
     const landUse = parcele!.items.find((i) => i.text.includes("Raba zemljišča"));
     expect(landUse).toBeDefined();
-    // 6 od 120 parcel ima dokumentirano rabo (PS prepis 143/143; val 112: F-PV-07 premestitve p5/p7/p12 zmanjšale PS projekcijo) — preostale izrecno NEZNANE
-    expect(landUse!.text).toContain("6 od 120");
+    // 1 od 115 parcel ima dokumentirano rabo (PS prepis 143/143; val 113: F-PV-07 p17/p18/p21-p24 + SPLIT pravilo zmanjšalo PS projekcijo) — preostale izrecno NEZNANE
+    expect(landUse!.text).toContain("1 od 115");
     expect(landUse!.tier).toBe("NEZNANO");
     expect(landUse!.source_ids).toContain("SRC-PV");
-    // parcele z dokumentirano rabo jo nosijo v besedilu (claim-first sledljivost);
-    // PS parcele nosijo TRANSCRIBED_PROVISIONAL (val 89: prepis 143/143; branja PROVISIONAL — F-PV-04/NR-14) → 🟡 VERJETNO
+    // val 113: H-040 dokumentirana njiva je izpadla iz PS projekcije (F-PV-07
+    // p17/p18/p21-p24 + SPLIT pravilo) → per-parcelnih "raba: njiva" itemov ni več;
+    // PS parcele nosijo TRANSCRIBED_PROVISIONAL + UNKNOWN rabo → 🟡 VERJETNO
     const njiva = parcele!.items.find((i) => i.text.includes("raba: njiva"));
-    expect(njiva).toBeDefined();
-    expect(njiva!.tier).toBe("VERJETNO");
-    expect(njiva!.status).toBe("TRANSCRIBED_PROVISIONAL");
+    expect(njiva).toBeUndefined();
+    const psUnknown = parcele!.items.find((i) => i.text.includes("raba: UNKNOWN"));
+    expect(psUnknown).toBeDefined();
+    expect(psUnknown!.tier).toBe("VERJETNO");
+    expect(psUnknown!.status).toBe("TRANSCRIBED_PROVISIONAL");
   });
 });
 
@@ -282,11 +285,11 @@ describe("generateVillageStory (§18)", () => {
     expect(story.sections[9].title).toContain("Neznanke");
   });
 
-  test("številke prihajajo iz grafa: 167 hiš, 488 oseb, 2711 parcel, 34 objektov, 5 listov (val 112)", () => {
+  test("številke prihajajo iz grafa: 167 hiš, 488 oseb, 2612 parcel, 34 objektov, 5 listov (val 112)", () => {
     const allText = story.sections.flatMap((s) => s.items.map((i) => i.text)).join(" ");
     expect(allText).toContain("167 hiš");
     expect(allText).toContain("488 oseb");
-    expect(allText).toContain("2711 parcel");
+    expect(allText).toContain("2612 parcel");
     expect(allText).toContain("34 MAP_OBJECT");
     const listi = story.sections[1].items;
     expect(listi.length).toBe(5);
@@ -296,7 +299,7 @@ describe("generateVillageStory (§18)", () => {
     const raba = story.sections.find((s) => s.title.includes("Raba zemljišča"));
     expect(raba).toBeDefined();
     // dokumentirani del (PS prepis 143/143, val 89→112): 391 parcel z znano rabo
-    const documented = raba!.items.find((i) => i.text.includes("dokumentirana za 391"));
+    const documented = raba!.items.find((i) => i.text.includes("dokumentirana za 292"));
     expect(documented).toBeDefined();
     expect(documented!.tier).toBe("DOKAZANO");
     expect(documented!.source_ids).toContain("SRC-PS");

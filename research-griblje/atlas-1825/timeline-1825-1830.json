@@ -34,7 +34,7 @@
       "research-griblje/atlas-1825/pv-land-use-1825.json",
       "research-griblje/atlas-1825/knowledge-graph-1825.json"
     ],
-    "kg_sha256": "e574df037753d8224acb6cb29f492283a839d0d883d9d9365135f35497893c9d",
+    "kg_sha256": "5ae52bd87887937b03be3b90217f1a8c014013ac7e39beb8c4733502e0aad97c",
     "runtime_copy": "src/data/timeline-1825-1830.json",
     "vac": {
       "SRC-PV": "https://vac.sjas.gov.si/vac/search/details?id=373418",
@@ -47,7 +47,7 @@
     "I3: vsaka metrika DOCUMENTED točke ima source_id (KG SOURCE) + evidence + reading_status",
     "I4: AWAITING_SOURCE točke imamo 0 metrik in 0 virov",
     "I5: letnice strogo naraščajoče in unikatne; statusi samo DOCUMENTED | AWAITING_SOURCE",
-    "I6: KG zatiči pribiti (PUA 2035 / PS 676 / raba po val 112) — zaščita pred zdrsom grafa (val 112: F-PV-07 premestitve p5/p7/p12, 735→676; val 108: 779→735)"
+    "I6: KG zatiči pribiti (PUA 2035 / PS 577 / raba po val 113) — zaščita pred zdrsom grafa (val 113: F-PV-07 p17/p18/p21–p24 + SPLIT pravilo, 676→577; val 112: 735→676)"
   ],
   "invariant_violations": [],
   "summary": {
@@ -156,19 +156,19 @@
         },
         {
           "metric_id": "parcels_ps",
-          "value": 676,
+          "value": 577,
           "unit": "count",
-          "display": "676 parcel",
+          "display": "577 parcel",
           "source_id": "SRC-PS",
           "evidence": "parcel-register-1825.json (origin=PS, hišno vezane)",
           "reading_status": "TRANSCRIBED",
-          "note": "projekcija 143/143 (val 89, iz reka val 88 §5) + val 98 (86b del 2) + val 107 (86b del 3) + val 112: 2.871 vrstic → 676 parcel (v88 pravilo: digit-split vrstice s prazno jaethe in klafter vrednostjo niso parcele, F-PV-05; val 98 F-PV-05 korekcije na p95–109 → 930→898; val 107 na p110–120+p122–141 → 898→779; val 108 re-read 14 strani (p95–137) → 779→735; val 112 F-PV-07 premestitve p5/p7/p12 — 59 vrednosti jaethe→klafter izpadijo iz projekcije → 735→676); per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14); F14 namespace (PS↔PUA) ostaja odprt."
+          "note": "projekcija 143/143 (val 89, iz reka val 88 §5) + val 98 (86b del 2) + val 107 (86b del 3) + val 113: F-PV-07 premestitve p17/p18/p21–p24 (89x) + F-PV-07-SPLIT izključitveno pravilo (11 Joch|Klafter vrstic, val 57 jih je zlil) → 676→577; val 112: 735→676 (v88 pravilo: digit-split vrstice s prazno jaethe in klafter vrednostjo niso parcele, F-PV-05; val 98 F-PV-05 korekcije na p95–109 → 930→898; val 107 na p110–120+p122–141 → 898→779; val 108 re-read 14 strani (p95–137) → 779→735; val 112 F-PV-07 premestitve p5/p7/p12 → 735→676); per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14); F14 namespace (PS↔PUA) ostaja odprt."
         },
         {
           "metric_id": "parcels_with_land_use",
-          "value": 391,
+          "value": 292,
           "unit": "count",
-          "display": "391 parcel z leksikalno dokazano rabo (209 neznanka)",
+          "display": "292 parcel z leksikalno dokazano rabo (209 neznanka)",
           "source_id": "SRC-PS",
           "evidence": "ps-n83/register.json (njiva 294, travnik 84, pašnik 16, vrt 16, gozd 15, drugo 11, dvorišče 1, vinograd 1)",
           "reading_status": "TRANSCRIBED",
@@ -390,5 +390,5 @@
       "note": null
     }
   ],
-  "generated_at": "2026-09-30T15:14:50Z"
+  "generated_at": "2026-09-30T18:00:04Z"
 }

@@ -1,0 +1,167 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 18,
+  "scope": "vrednostni re-read (z3 + diag x10); imena/haus/kultur/ertrag -> val 114",
+  "method": "agentov direktni vid: z3 sklad + p18-diag-zoom x10 (7 celic) + joche-strip; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p18.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/ (z3-p18-vals.png, p18-diag-zoom.png, p18-joche-strip.png)",
+  "fpv07": "SPLIT-TEZKA STRAN: vec vrstic ima legitimen Joch v joche koloni + Klafter v QK (r4, r5, r6, r11, r12, r15, r16, r17 potrjeni na x10); r0-r3 možen split (neodločeno)",
+  "split_finding": "val 57 je zlil splite: r4 '1|243'->'1912'(?), r15 '1|28'->'28' (Joch izgubljen), r16 '1|122'->'622', r17 '1|130'->'620'; FUR 10|275 podpira Joch vsoto",
+  "findings_structural": [
+   "FUR: 10|275 (10 v Joch koloni)",
+   "r9 brez vrednosti (owner 'Hoffnung')",
+   "r12: superscript '8' ob vrednosti (popravek/dodatek?)",
+   "blatt sekvence nadaljevanje p17 (301-320 pričakovano)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "?",
+   "k": "89[?]",
+   "old_j": "109",
+   "old_k": "",
+   "verdict": "razhajanje 109 vs 1|89[?] — odprto (možen split)"
+  },
+  "r1": {
+   "j": "?",
+   "k": "20[?]",
+   "old_j": "220",
+   "old_k": "",
+   "verdict": "razhajanje: 220 all-klafter ali split 2|20 — odprto"
+  },
+  "r2": {
+   "j": "?",
+   "k": "283[?]",
+   "old_j": "273",
+   "old_k": "",
+   "verdict": "razhajanje 273 vs 283[?] (ali split 2|83) — odprto"
+  },
+  "r3": {
+   "j": "?",
+   "k": "37[?]|57[?]",
+   "old_j": "257",
+   "old_k": "",
+   "verdict": "razhajanje: 257 (=2|57) vs 2|37[?] — odprto"
+  },
+  "r4": {
+   "j": "1",
+   "k": "243",
+   "old_j": "1912",
+   "old_k": "",
+   "verdict": "SPLIT POPRAVEK: jae '1912'->'1', kla ''->'243' (x10 jasno)"
+  },
+  "r5": {
+   "j": "1",
+   "k": "343[?]",
+   "old_j": "1943",
+   "old_k": "",
+   "verdict": "razhajanje 1943 (=1|943) vs 1|343[?] — odprto (3/9)"
+  },
+  "r6": {
+   "j": "1",
+   "k": "1082[?]",
+   "old_j": "1002",
+   "old_k": "",
+   "verdict": "razhajanje 1002 vs 1|1082[?] — odprto"
+  },
+  "r7": {
+   "j": "",
+   "k": "927",
+   "old_j": "937",
+   "old_k": "",
+   "verdict": "POPRAVEK 937->927 + move"
+  },
+  "r8": {
+   "j": "",
+   "k": "473",
+   "old_j": "873",
+   "old_k": "",
+   "verdict": "POPRAVEK 873->473 + move (4/8)"
+  },
+  "r9": {
+   "j": "",
+   "k": "",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "soglasje (prazno; owner Hoffnung)"
+  },
+  "r10": {
+   "j": "",
+   "k": "1157",
+   "old_j": "1157",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r11": {
+   "j": "1",
+   "k": "50",
+   "old_j": "30",
+   "old_k": "",
+   "verdict": "SPLIT POPRAVEK: jae '30'->'1', kla ''->'50' (x10 jasno)"
+  },
+  "r12": {
+   "j": "1",
+   "k": "098[?]",
+   "old_j": "1498",
+   "old_k": "",
+   "verdict": "razhajanje 1498 (=1|498) vs 1|098[?] — odprto; superscript 8"
+  },
+  "r13": {
+   "j": "",
+   "k": "539",
+   "old_j": "529",
+   "old_k": "",
+   "verdict": "POPRAVEK 529->539 + move"
+  },
+  "r14": {
+   "j": "",
+   "k": "931[?]",
+   "old_j": "391",
+   "old_k": "",
+   "verdict": "razhajanje 391 vs 931[?] — odprto (vrstni red 9/3)"
+  },
+  "r15": {
+   "j": "1",
+   "k": "28",
+   "old_j": "28",
+   "old_k": "",
+   "verdict": "SPLIT POPRAVEK: jae '28'->'1', kla ''->'28'"
+  },
+  "r16": {
+   "j": "1",
+   "k": "122",
+   "old_j": "622",
+   "old_k": "",
+   "verdict": "SPLIT POPRAVEK: jae '622'->'1', kla ''->'122' (x10: 1|122)"
+  },
+  "r17": {
+   "j": "1",
+   "k": "130",
+   "old_j": "620",
+   "old_k": "",
+   "verdict": "SPLIT POPRAVEK: jae '620'->'1', kla ''->'130' (x10: 1|130)"
+  },
+  "r18": {
+   "j": "",
+   "k": "585",
+   "old_j": "585",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "539[?]",
+   "old_j": "599",
+   "old_k": "",
+   "verdict": "razhajanje 599 vs 539[?] — odprto"
+  }
+ },
+ "furtrag": "10|275 — 10 v Joch koloni, 275 v QK",
+ "register_actions_planned": [
+  "SPLIT POPRAVEK: r4, r11, r15, r16, r17 (jasni na x10)",
+  "POPRAVEK: r7 927, r8 473, r13 539",
+  "razhajanja odprta: r0, r1, r2, r3, r5, r6, r12, r14, r19",
+  "F-PV-07 move za all-klafter vrstice (r7-r10, r13, r18)"
+ ]
+}
