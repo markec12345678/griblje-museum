@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "val": 112,
+    "scope": "p7 re-read: F-PV-07 premestitve (20x jaethe->klafter) + vrednostni/kulturni audit + r20 fantom-Furtrag; imenski pass = val 113",
+    "method": "agentov direktni vid: stacked zuomi ×5 + bottom-zoom ×4; 0 VLM klicev",
+    "source": "raw-web-val56-2026-10/n083ps-pages/p07.jpg",
+    "row_bands_y": "r0 160-201, r1 201-240, r2 240-277, r3 277-317, r4 317-355, r5 355-395, r6 395-432, r7 432-471, r8 471-509, r9 509-548, r10 548-586, r11 586-625, r12 625-663, r13 663-702, r14 702-740, r15 740-778, r16 778-816, r17 816-854, r18 854-893, r19 893-931, Fürtrag@931-969",
+    "findings_structural": [
+      "F-PV-07 POTRJENA NA p7: vse vrednosti v QK podstolpcu, Joche prazen (dito crtice) — 20 premestitev.",
+      "MNOZICNE RDECE PRECRTE VREDNOSTI (revizija): r8 169RS, r9 138RS[?], r11 54RS, r12 32RS, r13 44RS, r14 321RS, r15 315RS, r16 262RS, r17 397RS, r18 180RS, r19 110RS. Register v57 vrednosti = v57 branja precrtanih (nekatera soglasja: 54, 315, 58?, 110; ostali digitski varianti). NIC vrednostnih popravkov — revizijski kontekst dvoumen, vse dokumentirano.",
+      "r19 TROJNA OZNAKA: '110' (precrto rdece, visoko) + par '7 | 575' (precrto rdece, nizko — edini J|QK par na strani!) + svinca '1' in '1147' (poznejši pripis?) — interpretacija ODPRTA, register ostaja (jaethe 110 -> klafter po F-PV-07) + obsezen anmerkung.",
+      "r20 = FANTOM-FURTRAG: pas r20 vsebuje '5 Furtrag.' + '2|687' (precrto rdece) + rdece '1140' — NI podatkovne vrstice. v57 je brezelensko zapisal r20 (owner 'Strauss Georg' = rep r19 imena, ki pada v Furtrag pas; vrednosti prazne). POPRAVEK: owner r20 -> '' (snapshot) + anmerkung.",
+      "KULTUR poravnava 1:1 (r0-r9): Acker/Lehengrund-Odt/Lehengrund-Odt/Wiesen/Leh-Odt/Leh-Odt/Gemeind-Gartn/Acker/... — register 'Lehngut Hfl.' ~ vid 'Lehengrund Ödt' (soglasje terminov); r8 vid 'Acker[?]' vs register 'Wiese' — razhajanje zabelezeno, ni korekcije; r9 vid 'Gemeind Gartn[?]' vs register 'Gartn Gartn' — razhajanje (Gemeind!) zabelezeno, ni korekcije.",
+      "Vrednostni vid r0-r10 (necrtani): 977[?] vs register 774 (prva stevka 9/7 neodlocena); 187 OK; 342[?] vs 283; 160 OK; 54[?] vs 241; 261[?] vs 19; 19[?] vs 31; 31[?] vs 169 — NIZKA ZAVEZANOST vid/register na r4-r9 (pasovna preslikava vrednosti dvoumna zaradi nizkega pisanja + precrt); vsi vidiki v JSON, nic popravkov."
+    ]
+  },
+  "register_actions_planned": [
+    "F-PV-07: 20x premestitev jaethe->klafter + anmerkung marker",
+    "r20: owner_original 'Strauss Georg' -> '' (snapshot; fantom-Furtrag) + anmerkung",
+    "anmerkung add-only: 11 precrtanih vrednosti, r19 trojna oznaka + svinca 1147, Furtrag 2|687 -> rdece 1140, kulturni razhajanja r8/r9"
+  ]
+}

@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "9f856d2896b401661a19d5665074ecef070d3d2a526d94638060644e8f1f18a5",
+  "kg_sha256": "e574df037753d8224acb6cb29f492283a839d0d883d9d9365135f35497893c9d",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -173,9 +173,9 @@
   {
    "category_id": "parcels",
    "title": "Parcelni register 1825 (PUA + PS)",
-   "total": 2770,
+   "total": 2711,
    "VERIFIED": 907,
-   "PARTIAL": 1410,
+   "PARTIAL": 1351,
    "CONFLICT": 453,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -183,7 +183,7 @@
     "PUA/REVIEW": 675,
     "PUA/REVIEW-CONFLICT": 453,
     "PUA/VERIFIED-2x": 907,
-    "PS/SINGLE_SOURCE": 733,
+    "PS/SINGLE_SOURCE": 674,
     "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 2
    },
    "mapping_rule": "PUA: VERIFIED-2x→VERIFIED, REVIEW→PARTIAL, REVIEW-CONFLICT→CONFLICT; PS: vse SINGLE_SOURCE→PARTIAL (1 z zastavico F14 ostaja PARTIAL z opombo)",
@@ -195,12 +195,12 @@
   {
    "category_id": "parcel_geometry",
    "title": "Parcelne meje / geometrija (poligoni)",
-   "total": 2770,
+   "total": 2711,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
    "UNKNOWN": 0,
-   "NOT_FOUND": 2770,
+   "NOT_FOUND": 2711,
    "native": {
     "polygons_documented": 0,
     "raster_basis": "A01–A05 rastri val 42 (VAČ)",
@@ -551,11 +551,11 @@
   {
    "category_id": "unknowns",
    "title": "Neznanke — prečni pregled (izrecno štetje, brez procentov)",
-   "total": 4043,
+   "total": 3913,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
-   "UNKNOWN": 4043,
+   "UNKNOWN": 3913,
    "NOT_FOUND": 0,
    "native": {
     "aggregate": [
@@ -566,12 +566,12 @@
      },
      {
       "item": "PS parcele z raba UNKNOWN",
-      "count": 221,
+      "count": 209,
       "category": "parcels"
      },
      {
       "item": "PS parcele cross_ref_to_pua UNKNOWN (namespace vprašanje F14)",
-      "count": 735,
+      "count": 676,
       "category": "parcels"
      },
      {
@@ -596,7 +596,7 @@
      },
      {
       "item": "parcele brez geometrije",
-      "count": 2770,
+      "count": 2711,
       "category": "parcel_geometry"
      },
      {

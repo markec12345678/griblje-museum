@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "val": 112,
+  "scope": "p8 poln re-read: vrednostni audit (stran zmasovno rdece precrtana) + r14 prazna + r19 strukturna opamba + Furtrag",
+  "method": "agentov direktni vid: skladovni zuomi vrednostne kolone x7/x8 + tarcni zuomi x11–x16 (zoom-values-v112.py + vlozeni skripti); 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p08.jpg"
+ },
+ "value_audit": {
+  "r0": [
+   "26 (R)",
+   "26",
+   "soglasje"
+  ],
+  "r1": [
+   "217 (R)",
+   "217",
+   "soglasje"
+  ],
+  "r2": [
+   "42 (R)",
+   "42",
+   "soglasje"
+  ],
+  "r3": [
+   "348 (R)",
+   "343",
+   "POPRAVEK 343->348"
+  ],
+  "r4": [
+   "161 (R)",
+   "147",
+   "POPRAVEK 147->161"
+  ],
+  "r5": [
+   "162 (R)",
+   "162",
+   "soglasje"
+  ],
+  "r6": [
+   "222 (R)",
+   "232",
+   "POPRAVEK 232->222"
+  ],
+  "r7": [
+   "192 (R)",
+   "192",
+   "soglasje"
+  ],
+  "r8": [
+   "204 (R)",
+   "224",
+   "POPRAVEK 224->204"
+  ],
+  "r9": [
+   "464",
+   "464",
+   "soglasje"
+  ],
+  "r10": [
+   "461 (R)",
+   "561",
+   "POPRAVEK 561->461"
+  ],
+  "r11": [
+   "452 (R)",
+   "432",
+   "POPRAVEK 432->452"
+  ],
+  "r12": [
+   "457 (R)",
+   "447",
+   "POPRAVEK 447->457"
+  ],
+  "r13": [
+   "440",
+   "440",
+   "soglasje"
+  ],
+  "r14": [
+   "PRAZNO",
+   "397",
+   "POPRAVEK 397->'' (celica prazna — val57 halucinacija)"
+  ],
+  "r15": [
+   "399 (R)",
+   "632",
+   "POPRAVEK 632->399"
+  ],
+  "r16": [
+   "682 + rdeca puscsca",
+   "597",
+   "POPRAVEK 597->682"
+  ],
+  "r17": [
+   "397 (R)",
+   "517",
+   "POPRAVEK 517->397"
+  ],
+  "r18": [
+   "511 (R)",
+   "351",
+   "POPRAVEK 351->511"
+  ],
+  "r19": [
+   "glej struktura",
+   "6 Eintrag. 3|1941",
+   "glej struktura"
+  ]
+ },
+ "struktura": "Stran ima 20 vnosnih vrstic + Furtrag. Registr r19 = val57 je na mesto r19 zapisal povzetek '6 Eintrag.'; dejanska vrstica r19 na strani = normalni vnos (Wald, 364 R precrtan, ime Klobetisher Gregor). Furtrag: crno '6 Eintrag. 3|1941' (R) -> rdece '1|454' (R) -> rdece '682'. Vrstica 364 NI v registru (manjka) — dodajanje vrstice odlozeno (kaskada), anmerkung.",
+ "register_actions_planned": [
+  "11 vrednostnih popravkov (r3,r4,r6,r8,r10,r11,r12,r15,r16,r17,r18) s snimkami",
+  "r14: klafter -> '' + anmerkung 'prazna celica'",
+  "r19: anmerkung add-only (364 + Furtrag revizije)",
+  "anmerkung add-only: R precrtani na r0,r1,r2,r5,r7,r9,r13"
+ ]
+}

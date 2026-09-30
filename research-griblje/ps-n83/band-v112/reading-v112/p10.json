@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "val": 112,
+    "scope": "p10 poln re-read: vrednostni audit + svinenikova ertrag opamba r19 + Furtrag",
+    "method": "agentov direktni vid: skladovni zuomi vrednostne kolone x7/x8 + tarcni zuomi x11–x16 (zoom-values-v112.py + vlozeni skripti); 0 VLM klicev",
+    "source": "raw-web-val56-2026-10/n083ps-pages/p10.jpg"
+  },
+  "value_audit": {
+    "r0": [
+      "1092 (rdeca puscsca)",
+      "10.92",
+      "NORMALIZACIJA '10.92'->'1092' (mogoce '10|92' J|QK — ni doma, opomba)"
+    ],
+    "r1": [
+      "166 (R)",
+      "166",
+      "soglasje"
+    ],
+    "r2": [
+      "247",
+      "237",
+      "POPRAVEK 237->247"
+    ],
+    "r3": [
+      "429 (R)",
+      "469",
+      "POPRAVEK 469->429"
+    ],
+    "r4": [
+      "501",
+      "507",
+      "POPRAVEK 507->501"
+    ],
+    "r5": [
+      "1148 (R)",
+      "1118",
+      "POPRAVEK 1118->1148"
+    ],
+    "r6": [
+      "228 (R)",
+      "928",
+      "POPRAVEK 928->228"
+    ],
+    "r7": [
+      "221 (R)",
+      "227",
+      "POPRAVEK 227->221"
+    ],
+    "r8": [
+      "467 (R)",
+      "447",
+      "POPRAVEK 447->467"
+    ],
+    "r9": [
+      "49 (R)",
+      "49",
+      "soglasje"
+    ],
+    "r10": [
+      "313 (R)",
+      "273",
+      "POPRAVEK 273->313"
+    ],
+    "r11": [
+      "24",
+      "24",
+      "soglasje (Gartn)"
+    ],
+    "r12": [
+      "49",
+      "62",
+      "POPRAVEK 62->49"
+    ],
+    "r13": [
+      "394",
+      "394",
+      "soglasje"
+    ],
+    "r14": [
+      "29 (R)",
+      "89",
+      "POPRAVEK 89->29"
+    ],
+    "r15": [
+      "24",
+      "24",
+      "soglasje (Lehge)"
+    ],
+    "r16": [
+      "289 (R)",
+      "239",
+      "POPRAVEK 239->289"
+    ],
+    "r17": [
+      "202",
+      "202",
+      "soglasje"
+    ],
+    "r18": [
+      "1038 (R)",
+      "1017",
+      "POPRAVEK 1017->1038"
+    ],
+    "r19": [
+      "262 (R)",
+      "92",
+      "POPRAVEK 92->262; ertrag ostane efl 3 / ekr 49/10 (ulomek neberljiv); svinenik '3|49[?]' v E. coni"
+    ]
+  },
+  "furtrag": "crno '4|803' (R) -> rdece '1|408' (R) -> rdece '1|209'",
+  "register_actions_planned": [
+    "13 vrednostnih popravkov (r0,r2,r3,r4,r5,r6,r7,r8,r10,r12,r14,r16,r18,r19) s snimkami",
+    "r19: anmerkung svinenikova ertrag opamba",
+    "anmerkung add-only: R precrtani"
+  ]
+}

@@ -4,7 +4,7 @@
   "generated_by": "build-c4-metrika-v90.py",
   "method": "C4 metrika: izčrpna deterministična preverba konvencij na sidrih val 61 (K1–K6) + reprodukcija C4 val 86b (K7) + usklajenost vnosov (K8) + konfunda F-PV-05 (K9) + opazovalni register (K10); NIČ VLM, NIČ spleta; NIČ sprememb podatkov (§4/§22)",
   "inputs": {
-   "register.json": "2ae915fddd4e3bb24e79024b6d5cf10569294672f1038d41770f1258113571a3",
+   "register.json": "696af7daaf6f4c13f8e108dac171e269df6197949328483950ccd5d334f022c1",
    "totals-reread.json": "5866a457d2cd102267bcf37f3cf8b87d19fcb58aa5aa2f035f41f9b828fe31aa",
    "f11-fuertrag-v86.json": "bd9877766d486e328321c3d5e422ccf2a636ef016a58794da1d3640bc060e5ee"
   },
@@ -20,7 +20,7 @@
    "K8_anchor_equals_chain": 12,
    "K8_anchor_equals_red": 1
   },
-  "K5_input_reliability": "NEZANESLJIV VHOD — owner_was_ditto označen samo na 233/2871 vrstic (8.1 %), bloki = 2562 (povprečno 1.1 vrstic/blok); holdingi (Jaethe) iz trenutnega registra NE rekonstruirani → K5 je NEDEDOKAZLJIVO z obstoječimi podatki, ne ovraženo; odločilno šele po imenskem re-readu (kvota)",
+  "K5_input_reliability": "NEZANESLJIV VHOD — owner_was_ditto označen samo na 233/2871 vrstic (8.1 %), bloki = 2580 (povprečno 1.1 vrstic/blok); holdingi (Jaethe) iz trenutnega registra NE rekonstruirani → K5 je NEDEDOKAZLJIVO z obstoječimi podatki, ne ovraženo; odločilno šele po imenskem re-readu (kvota)",
   "verdict": "KONVENCIJA \"vsota tekoče strani\" (val 61 §2.2 confirmed) ARITMETIČNO NEPOTRJENA — ne ustreza na nobenem od 13 sidrih; metrika ostaja TO-DECODE; odločilna kontrola = re-read p1–55 stolpcev (F-PV-05) po 86b 2. delu"
  },
  "konvencije_sidra": [
@@ -31,9 +31,9 @@
    "crossed": true,
    "red_line": "3|906",
    "rows": 20,
-   "K1_page_sum_excl": 15632,
+   "K1_page_sum_excl": 14128,
    "K1_match": false,
-   "K2_page_sum_incl": 15632,
+   "K2_page_sum_incl": 14128,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -43,11 +43,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 5706,
-    "page_sum_excl": 15632,
-    "page_sum_incl": 15632,
+    "page_sum_excl": 14128,
+    "page_sum_incl": 14128,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 9926
+    "diff_excl": 8422
    },
    "K6_match": false,
    "agent_notes": "števec 2 potrjen @7x (Kurrent 2 z ravnim dnom); vrednost 1459 (ne 14357 — VLM je staknil števke); rdeča 3|906"
@@ -59,9 +59,9 @@
    "crossed": true,
    "red_line": "81",
    "rows": 23,
-   "K1_page_sum_excl": 6311,
+   "K1_page_sum_excl": 4031,
    "K1_match": false,
-   "K2_page_sum_incl": 6311,
+   "K2_page_sum_incl": 4031,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -71,8 +71,8 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": null,
-    "page_sum_excl": 6311,
-    "page_sum_incl": 6311,
+    "page_sum_excl": 4031,
+    "page_sum_incl": 4031,
     "match_excl": false,
     "match_incl": false,
     "diff_excl": null
@@ -115,9 +115,9 @@
    "crossed": true,
    "red_line": "6|77",
    "rows": 20,
-   "K1_page_sum_excl": 10175,
+   "K1_page_sum_excl": 9635,
    "K1_match": false,
-   "K2_page_sum_incl": 10175,
+   "K2_page_sum_incl": 9635,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -127,11 +127,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 9677,
-    "page_sum_excl": 10175,
-    "page_sum_incl": 10175,
+    "page_sum_excl": 9635,
+    "page_sum_incl": 9635,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 498
+    "diff_excl": -42
    },
    "K6_match": false,
    "agent_notes": "števec 12 — VLM oznako '12. Fürtrag.' prebral kot 'Summa Jaethen'; vrednost 1088 (ne 10808); rdeča 6|77 — 'Summa Quadrat-Klafter 6/77' iz v58 je bila ta rdeča vrstica"
@@ -143,9 +143,9 @@
    "crossed": false,
    "red_line": "",
    "rows": 20,
-   "K1_page_sum_excl": 9926,
+   "K1_page_sum_excl": 7891,
    "K1_match": false,
-   "K2_page_sum_incl": 9926,
+   "K2_page_sum_incl": 7891,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -155,8 +155,8 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": null,
-    "page_sum_excl": 9926,
-    "page_sum_incl": 9926,
+    "page_sum_excl": 7891,
+    "page_sum_incl": 7891,
     "match_excl": false,
     "match_incl": false,
     "diff_excl": null
@@ -544,21 +544,18 @@
  ],
  "K9_konfunda_F-PV-05": {
   "p1_55_val57": {
-   "any_jk_format": 1,
-   "both_filled": 39,
-   "jaethe_empty": 623,
-   "jaethe_gt1599_plain": 11,
+   "both_filled": 38,
+   "jaethe_empty": 682,
+   "jaethe_gt1599_plain": 10,
    "jaethe_nonnumeric": 1,
-   "jaethe_plain_100_1599": 323,
-   "jaethe_plain_gt1599": 11,
-   "jaethe_plain_le99": 115,
-   "klafter_empty": 426,
-   "klafter_gt1599_plain": 18,
-   "klafter_jk_format": 1,
-   "klafter_nonnumeric": 1,
-   "klafter_plain_100_1599": 522,
-   "klafter_plain_gt1599": 18,
-   "klafter_plain_le99": 105
+   "jaethe_plain_100_1599": 275,
+   "jaethe_plain_gt1599": 10,
+   "jaethe_plain_le99": 105,
+   "klafter_empty": 369,
+   "klafter_gt1599_plain": 15,
+   "klafter_plain_100_1599": 575,
+   "klafter_plain_gt1599": 15,
+   "klafter_plain_le99": 114
   },
   "p56_143_v82_plus_sloji": {
    "any_jk_format": 6,

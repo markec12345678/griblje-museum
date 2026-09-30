@@ -22,20 +22,20 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3612); // val 98: 3775 → val 107: 3612
-    expect(kg.edges.length).toBe(3776); // val 98: 3859 → val 107: 3776
+    expect(kg.nodes.length).toBe(3553); // val 98: 3775 → val 107: 3612 → val 112: 3553 (F-PV-07 p5/p7/p12)
+    expect(kg.edges.length).toBe(3717); // val 98: 3859 → val 107: 3776 → val 112: 3717
     expect(kg.claims.length).toBe(622);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.length).toBe(4);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2770 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 108: PS parcele 779→735 po F-PV-05 korekcijah 86b del 3)", () => {
+  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2711 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 112: F-PV-07 premestitve p5/p7/p12 — 59 vrednosti jaethe→klafter izpadijo iz projekcije, 2770→2711)", () => {
     expect(kg.node_stats).toEqual({
       SOURCE: 13,
       HOUSE: 167,
       PERSON: 488,
-      PARCEL: 2770,
+      PARCEL: 2711,
       BP: 100,
       TOPONYM: 37,
       EVENT: 3,
@@ -235,7 +235,7 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
   test("coverage: brez umetnega procenta, kategorije z dejanskim stanjem", () => {
     expect(kg.coverage.note).toContain("brez umetnega skupnega procenta");
     const parcels = kg.coverage.categories.find((c: { category: string }) => c.category === "parcels")!;
-    expect(parcels.total).toBe(2770); // val 98: 2933 → val 107: 2770
+    expect(parcels.total).toBe(2711); // val 98: 2933 → val 107: 2770 → val 112: 2711
     expect(parcels.breakdown.geometry).toBe("NOT AVAILABLE");
   });
 });

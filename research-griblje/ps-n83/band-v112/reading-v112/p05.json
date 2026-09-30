@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "val": 112,
+    "scope": "p5 re-read: F-PV-07 premestitve (20x jaethe->klafter) + vrednostni audit + haus fill (20) + imenski repair delni; imenski pass p6-p16 = val 113",
+    "method": "agentov direktni vid: stacked zuomi vrednostnih celic ×5–×10 + standardni izrezki; 0 VLM klicev",
+    "source": "raw-web-val56-2026-10/n083ps-pages/p05.jpg",
+    "row_bands_y": "r0 160-193, r1 193-231, r2 231-269, r3 269-309, r4 309-345, r5 345-385, r6 385-424, r7 424-462, r8 462-501, r9 501-540, r10 540-578, r11 578-618, r12 618-656, r13 656-694, r14 694-733, r15 733-771, r16 771-809, r17 809-847, r18 847-886, r19 886-926 + Fürtrag",
+    "findings_structural": [
+      "F-PV-07 POTRJENA NA p5 (vseh 20 celic ×5): vse vrednosti v DESNEM podstolpcu (Quad. Klafter); podstolpec N.o Joche = ditto crticice (prazen). Premestitev jaethe->klafter upravicena za vse 20 vrstic.",
+      "RDECE PRECRTANE VREDNOSTI (revizija): r3 548RS, r4 395RS, r5 466RS, r6 354RS, r11 1253RS, r16 1142RS, r19 877RS — register v57 vrednosti (484, 495, 484, 954, 1353, 1142, 877) = v57 branja precrtanih (r16/r19 se ujemata, ostale = digitske zmešnjave). Ostanejo z opombo (ni korekcije).",
+      "r0 DVOJNA VREDNOST: '913' (visoko) + '543[?]' (nizko, ista celica) — interpretacija odprta (korekcija? dve parceli?), register ostaja 913 + opomba.",
+      "r15 NEUJEMLJIVO: vid '625[?]' vs register 1350 — razhajanje odprto, ni korekcije (vrednost dvomljivo berljiva).",
+      "Digitski popravki (×10 potrjeni, necrtani): 682->683 (r2), 642->242 (r7), 272->222 (r8), 858->458 (r10), 771->171 (r12), 170->110 (r13); (×5, verjetni): 563->565 (r17), 461->464 (r18).",
+      "HAUS PAR (1|NN) — NOVI FILLI (v57 p5 haus = prazni!): 16[?], 16[?], 35, 18[?], 56[?], 51, 6, 51, 7[?], 4[?], 38[?], 61, 60, 62, 22, 68[?], 56, 68[?], 61, 56 — nekateri negotovi (x3 vidi), fill z [?].",
+      "IMENA: v57 r0-r9 delno halucinirana (r3 'Breugl Georg' vs vid 'Strauß Georg[?]', r4 'Schimatz Mathes' vs 'Schimey Kandra[?]', r6 'Stoffel Michael' vs dolgo ime 'Jakaftschitsch Michael[?]', r9 'Morath Maurize' vs 'Novak Matvie[?]'); r10-r19 vecinoma soglasje (Kirschan/Urich/Schimey). Imenski repair p5: SAMO jasna razhajanja se popravijo, dvomi z [?]."
+    ]
+  },
+  "values_page_vs_register": {
+    "r0": ["913 + 543[?]", "913", "dvojna vrednost — opomba"],
+    "r1": ["222", "222", "OK"],
+    "r2": ["683", "682", "POPRAVEK 682->683 (x10)"],
+    "r3": ["548 PRECRTANO RDECE", "484", "ostane + opomba"],
+    "r4": ["395 PRECRTANO RDECE", "495", "ostane + opomba"],
+    "r5": ["466 PRECRTANO RDECE", "484", "ostane + opomba"],
+    "r6": ["354 PRECRTANO RDECE", "954", "ostane + opomba"],
+    "r7": ["242", "642", "POPRAVEK 642->242 (x10)"],
+    "r8": ["222", "272", "POPRAVEK 272->222 (x5 cisto)"],
+    "r9": ["248[?]", "2245", "razhajanje — vid '248?' vs 2245; ni jasnega popravka (vrednost slabo berljiva), opomba"],
+    "r10": ["458", "858", "POPRAVEK 858->458 (x10: prva stevka 4)"],
+    "r11": ["1253 PRECRTANO RDECE", "1353", "ostane + opomba"],
+    "r12": ["171", "771", "POPRAVEK 771->171 (x10: prva stevka 1)"],
+    "r13": ["110", "170", "POPRAVEK 170->110 (x10)"],
+    "r14": ["694", "694", "OK"],
+    "r15": ["625[?]", "1350", "NEUJEMLJIVO — razhajanje odprto, opomba (ni korekcije)"],
+    "r16": ["1142 PRECRTANO RDECE", "1142", "soglasje s precrtano — opomba"],
+    "r17": ["565", "563", "POPRAVEK 563->565 (x10)"],
+    "r18": ["464", "461", "POPRAVEK 461->464 (x5)"],
+    "r19": ["877 PRECRTANO RDECE", "877", "soglasje s precrtano — opomba"]
+  },
+  "furtrag": "Fürtrag: 6 (precrano) | 1459 (precrano) -> rdece 3|906",
+  "register_actions_planned": [
+    "F-PV-07: 20x premestitev jaethe->klafter (vrednosti ostanejo, polje se zamenja) + anmerkung marker",
+    "8 vrednostnih popravkov (683, 242, 222, 458, 171, 110, 565, 464) s snimkami",
+    "20 haus fillov z [?] po potrebi",
+    "~8 imenskih popravkov (samo jasna razhajanja)",
+    "anmerkung add-only: 7 precrtanih vrednosti, r0 dvojna vrednost, r15 razhajanje, r9 razhajanje, Fürtrag"
+  ]
+}

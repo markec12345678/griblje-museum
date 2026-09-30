@@ -173,7 +173,7 @@ describe("PV 1825: integracija v KG v2.0 + engine + coverage", () => {
     expect(pvNode.uodid).toBe(373418);
     // stabilnost: nič novih/odstranjenih entitet
     const parcels = kg.nodes.filter((n) => n.node_type === "PARCEL");
-    expect(parcels.length).toBe(2770); // val 98: 2933 → val 107: 2770
+    expect(parcels.length).toBe(2711); // val 98: 2933 → val 107: 2770 → val 112: 2711
   });
 
   test("zgodba vasi §18 omenja PV agregat (1221 J 1573 K) brez per-parcelnega ugibanja", () => {
