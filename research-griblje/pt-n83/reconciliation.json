@@ -92,7 +92,7 @@
   "PT p4 vrstice 24/25 (h.1) vs PUA h.1 opomba 'B.P. ca. 10'",
   "PUA p18 (no. 35 'b. P. 56. 38.') — bp 86 povezava",
   "PUA p30 (no. 59 '19. Pp.') — bp 92 povezava",
-  "PT p7 rep 90-100 (pomik vrstic + Zollamt)"
+  "PT p7 rep 90-100 — RESOLVED-V110 (nativni re-read val 110; VLM 3. glas resumable ob kvoti)"
  ],
  "val56": {
   "date": "2026-09-25",
@@ -183,5 +183,17 @@
    "history": "val 51 2×: 'Philipp De Giammo Zucchelli'",
    "verdict": "IME ostaja REVIEW (Giannuto vs Giammo — ni rešeno z ugibanjem); parcela 2700, zaključna formula 'Ich Amtl[ich] bestätige', podpisa 'Mumppen' + 'v Hillmayer', 'Zeugen:'"
   }
+ },
+ "val110": {
+  "date": "2026-09-30",
+  "trigger": "open_for_full_res: 'PT p7 rep 90-100 (pomik vrstic + Zollamt)' + vala 107/109 popusta kvota → direkti odtis (0 VLM)",
+  "method": "PDF-native skeni (pymupdf): N083PT.pdf 2.898.721 B (8 str., sha256 f7b68454fd8fd819) + N083PR.pdf 1.017.944 B (4 str., sha256 18280dae40af21ec); nativni p7 2727x2117 (2,1x pripogleda val 41 1308x1016); kontaktnе table + izrezki 3x-8x; 0 VLM klicev (429 dnevna kvota, vzorec val 109)",
+  "f2_resolved": "F2 POMIK VRSTIC RESOLVED-V110: val41 + val53-zoom2x glasovi na p7 nosita +1 pomik (register h[bp] = nativno h[bp-1] za bp 85-97; '39' pri bp 98 = pomik iz bp 97); val52 + val53-p7 glasovi in nativni odtis se strinjajo na vseh 16 spornih vrsticah",
+  "bp98_zollamt": "bp 98 = h.70 (nativni odtis 4x) — '20' (val52+val53) = 7->2 zamenjava pri 667px; vezava Zollamt<->bp 98<->h.70 zdaj trojna: PUA no. 95 h.70 + 'B.P. 98.' (val 56 nativno 2x) + PT nativni odtis h.70 + A01 no. 7 h.70; PT register ostaja REVIEW (PT-notranji glasovi se ne strinjajo), vezava v cadastre VERIFIED-2x (val 56) nespremenjena",
+  "bp90_bonus": "bp 90 = h.43 nativno — korooborira verigo PUA p6 no. 7 h.43 + opomba 'B.P. 90.' (val 56); vezava no. 7 ostaja neusklajena (F val56), ampak h.43<->bp 90 zdaj 2-source",
+  "phantoms": "bp 99/100 = FANTOMSKA vrstica (nativno prazni; Nro neostevilčen): 'Alois Pollandt' h.50 / h.5 'Futterg[?]' + 'Bruckmühle' = korelirane napake vsotne vrstice ('5 | Eintrags.') + diagonalnih zapiskov; mlin ostaja vezan izključno na PR/A01/PUA dokaze",
+  "red_crossings": "rdeča revizija (12 vrstic: 81, 82, 85, 90-98) = nov strukturni signal; kontekst morda korekcija meja sept. 1827 (A01 naslovnica) — REVIEW",
+  "pr_second_pass": "PR Grenz-Beschreibung 2. prehod (nativno, direktni odtis): rokopisni naslov 'Definitive Grenzbeschreibung der Gemeinde Grüble'; mere E-W 1028 Klafter (jasno) x N-S 1[3/8]54 Klafter (predbitno); Grenzsteine No. 1-9 z razdaljami v Klafterih; potok 'Mlinščica' (odtis 'Melinschi Bach') — SOGLASJE z val 42; sosede: odtis 'Krasinz[?]' + 'Königreich Croatiens' + 'Adleischitz[?]' (Adlešiči) + 'Weitendorf[?]' (p2+p3) — NEUSKLADNO z val 42 ('Weichselberg/Hochsteg/Schönbach/Stadelbach/Dolga vas') — geografsko verjetneje odtis (Krasinec/Adlešiči/Kolpa), ampak NI dokaz; specializiran prepis ostaja TO_COLLECT; datum rokopisa: 'Neustadtl am 8ten April 1825' (jasno) + podpisa (komisar + Geometer); 'definitivna' opredelitev pred septembrsko korekcijo 1827",
+  "honesty": "TRANSCRIBED=0 VLM glasov — celoten val z direktnim odtisom + rekonstrukcijo glasov iz surovin val 41/52/53; izrezki in nativni skeni komitirani za resumable 3. glas ob kvoti"
  }
 }
