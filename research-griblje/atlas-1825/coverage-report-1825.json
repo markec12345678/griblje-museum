@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "8f8039527e089e82c365206b257225a608f320b1bb7b06cb65c421ef7825a85c",
+  "kg_sha256": "9f856d2896b401661a19d5665074ecef070d3d2a526d94638060644e8f1f18a5",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -80,15 +80,15 @@
    "category_id": "pt_rows",
    "title": "PT N83 vrstice (Protocoll der Bau Parcellen, 1825)",
    "total": 100,
-   "VERIFIED": 40,
-   "PARTIAL": 9,
-   "CONFLICT": 51,
+   "VERIFIED": 52,
+   "PARTIAL": 11,
+   "CONFLICT": 37,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
    "native": {
-    "REVIEW": 9,
-    "STABLE": 40,
-    "REVIEW-CONFLICT": 51
+    "REVIEW": 11,
+    "STABLE": 52,
+    "REVIEW-CONFLICT": 37
    },
    "mapping_rule": "STABLE→VERIFIED (konzenzna branja brez dvomljivih besed); REVIEW→PARTIAL; REVIEW-CONFLICT→CONFLICT",
    "evidence": [
@@ -100,15 +100,15 @@
    "category_id": "bp_1_100",
    "title": "BP 1–100 — obstoj in transkripcija stavčnih parcel",
    "total": 100,
-   "VERIFIED": 40,
-   "PARTIAL": 9,
-   "CONFLICT": 51,
+   "VERIFIED": 52,
+   "PARTIAL": 11,
+   "CONFLICT": 37,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
    "native": {
-    "REVIEW": 9,
-    "STABLE": 40,
-    "REVIEW-CONFLICT": 51
+    "REVIEW": 11,
+    "STABLE": 52,
+    "REVIEW-CONFLICT": 37
    },
    "mapping_rule": "Status vrstice v PT po bp_no (vsak BP ima točno 1 vrstico): STABLE→VERIFIED; REVIEW→PARTIAL; REVIEW-CONFLICT→CONFLICT",
    "evidence": [

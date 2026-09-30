@@ -1,0 +1,204 @@
+{
+ "meta": {
+  "val": 111,
+  "scope": "p3 (1. del polnega re-reada p1-55; imenski pass odlozen na naslednji val)",
+  "method": "agentov direktni vid (instrument val 61/88/108): pasovi ×2-3 + ultra zoomi ×7-12 za negotove števke; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p03.jpg (1272x1023, nativni sken razpona)",
+  "crops": "raw-web-val111-2026-10/crops-v111/ (make-crops-v111.py) + test-p05/ zoomi (zoom log spodaj)",
+  "zoom_log": [
+   "half-top/half-bot (x2)",
+   "p03-nums-top/bot (x3)",
+   "p03-flaeche-top/bot (x3)",
+   "p03-ertrag-bot (x2)",
+   "num-band0/1/2 (x7, st. stolpec 765-870)",
+   "kult-band0/2 (x7, kultur 628-765)",
+   "u-r3 (x10, y290-338)",
+   "u-r13 (x10)",
+   "u-r18 (x10)",
+   "u-r20 (x10)",
+   "u-tail (x8, y795-980, celoten rep)",
+   "u2-r3 (x12)",
+   "u2-r13 (x12)",
+   "u-kult-r5-r6 (x10)",
+   "z-r0-row (x4)",
+   "z-names-top/bot (x3, odmik - levo porezano)",
+   "p03-bottom-sliver (x2, y880-1021)",
+   "p11-haus-pair-zoom (x6) + p11-header (kalibracija stolpcev)",
+   "p05: half-top, zoom-r0-r3 (x4), zoom-r0-r4-subcols (x7), hdr-flaeche, hdr-plus-rows (x5)"
+  ],
+  "findings": [
+   "F-PV-07 (NOVO): na p1-55 scribere piše območje v DESNI podstolpec 'Quad. Klafter' (N.o Joche prazen); val 57 je te vrednosti vnesel v polje jaethe (p4-55) — sistemska prerazporeditev, skupna vsota invariantna. Na p3 vrednosti vgrajene direktno v klafter.",
+   "p3 val 57 shema = 'qm' (edina stran!) — register p3 je ostal BREZ območij; ta val jih vgradi (16 vrednosti).",
+   "Števkovne napake val 57 qm (nikoli v register, audit): r13 qm=609 (v111: 409, 4 jasno odprta oblika ×12), r15 qm=158 (v111: 184, dvojna zanka 8 jasna), r20 qm=46 (v111: 96, zaprta zanka 9 jasna).",
+   "r3: val57 qm=769; v111 ×12: zadnja števka 9/2 neodločena — ostaja 769[?] (ni korekcije).",
+   "Fürtrag p3: oznaka '1 Fürtrag.', črno 3|574 prečrtano rdeče, rdeča korekcija 2|1495 (2 J | 1495 QK).",
+   "r11: obstoječ zapis številke prečrtan (X), prek njega 99; r14: kultur prečrtan rdeče, vrednost 679 prečrtana rdeče, ostane 663; r0: vrstica močno prečrtana (brez številke).",
+   "Kapital/ertrag nizi '1−1348' (r10), '1−602' (r16), '22' (r19) = neražčlenjeni formati fl|kr|pf — dekodiranje odloženo (register v57 vrednosti ostajajo).",
+   "Stolpna kalibracija (F15 val 61 potrjena): kolona 1 = 'Nro. des Blattes' (rimska I + ditto), kolona z zaporedjem 1-21 = Uebersetzung/Ried števec (na p11 prečrtan rdeče 161-170), par '1|NN' = konstanta 1 + Haus Nro (semantika konstante odprta).",
+   "Imena/stand/wohnort p3: izrezki z x-odmikom (levo porezano) — ločen imenski pass v naslednjem valu; register vrednosti ostanejo prazne (nič ugibanja)."
+  ],
+  "sum_control": {
+   "note": "F11 C4 vzorec (sistematično neničelno) — surovo dejstvo, brez interpretacije",
+   "rows_r1_r20_sum_QK": 6916,
+   "fuertrag_red": "2|1495",
+   "fuertrag_red_total_QK": 4695,
+   "delta": 2221,
+   "vkljucno_prečrtanih_679_in_99": "7116+679+99 = 7894 ≈ 4|1495 = 7895 (delta 1) — hipoteza 'Fürtrag vključuje prečrtane' izrecno NEODLOČENA (rdeči J = 2 ali 4 dvom)",
+   "note_with_val57_values": "z val57 qm vrednostmi (609/158/46) bi bila vsota 7116 — ta števec ohranjen v zgodovini auditnih zapiskov"
+  }
+ },
+ "rows": {
+  "0": {
+   "j": "",
+   "k": "",
+   "kultur_seen": "Wiese[?] (prečrtano)",
+   "note": "vrstica močno prečrtana (črno), brez območja; ime nečitljivo ('...s Gewinn[?]')"
+  },
+  "1": {
+   "j": "",
+   "k": "116",
+   "kultur_seen": "Acker",
+   "name_seen": "Verbl?bcher Hauff[?] + Lausr?[?] stand + Grüble wohnort",
+   "note": ""
+  },
+  "2": {
+   "j": "",
+   "k": "325",
+   "kultur_seen": "Acker",
+   "name_seen": "?chan Georg (Deitschan?[?])",
+   "note": ""
+  },
+  "3": {
+   "j": "",
+   "k": "769[?]",
+   "kultur_seen": "Acker",
+   "name_seen": "?chan Miho[?]",
+   "note": "zadnja števka 9/2 dvom (×12); val57 qm=769 — soglasje ohranimo z [?]"
+  },
+  "4": {
+   "j": "",
+   "k": "44",
+   "kultur_seen": "Acker",
+   "name_seen": "?chan Mida[?]",
+   "note": ""
+  },
+  "5": {
+   "j": "",
+   "k": "307",
+   "kultur_seen": "Lhügwind?[?] / Ödt?[?] (dvovrstično)",
+   "name_seen": "?chan Georg[?]",
+   "note": "kultur dvom: register 'Abhang[?]' ostaja; druga vrstica jasno Ödt-podobna"
+  },
+  "6": {
+   "j": "",
+   "k": "374",
+   "kultur_seen": "Lhügwind?[?] / Ödt?[?] (dvovrstično)",
+   "name_seen": "?chan Miho[?]",
+   "note": "isti dvom kultur kot r5"
+  },
+  "7": {
+   "j": "",
+   "k": "203",
+   "kultur_seen": "Lhüga?[?]",
+   "name_seen": "?ch Mida[?]",
+   "note": "rdeče priskribe med r7-r10 (f.1852/f.1853/f.1860 sklici)"
+  },
+  "8": {
+   "j": "",
+   "k": "488",
+   "kultur_seen": "Acker",
+   "name_seen": "?ak Mida[?]",
+   "note": ""
+  },
+  "9": {
+   "j": "",
+   "k": "802",
+   "kultur_seen": "Acker",
+   "name_seen": "?ak Mida[?]",
+   "note": ""
+  },
+  "10": {
+   "j": "",
+   "k": "729",
+   "kultur_seen": "Lhügwind?[?] / Ödt?[?]",
+   "name_seen": "?eg Muster?[?]",
+   "note": "ertrag/kapital niz '1−1348' — format za dekodirati"
+  },
+  "11": {
+   "j": "",
+   "k": "99",
+   "kultur_seen": "Lhüga?[?]",
+   "name_seen": "?an Mardo[?]",
+   "note": "prejšnji zapis številke prečrtan (X), prek njega 99"
+  },
+  "12": {
+   "j": "",
+   "k": "758",
+   "kultur_seen": "Acker",
+   "name_seen": "?g Stanne[?]",
+   "note": ""
+  },
+  "13": {
+   "j": "",
+   "k": "409",
+   "kultur_seen": "Acker",
+   "name_seen": "?ng Mifael[?]",
+   "note": "val57 qm=609 — 4 jasno odprta oblika (×12); korekcija vs val57 audit"
+  },
+  "14": {
+   "j": "",
+   "k": "663",
+   "kultur_seen": "Acker (prečrtan rdeče)",
+   "name_seen": "?ng Muster[?]",
+   "note": "679 prečrtano rdeče v isti celici; rdeča opomba 2-vrstična ('...1844...') — natančna transkripcija odložena; val57 kultur='Wiese' ne drži"
+  },
+  "15": {
+   "j": "",
+   "k": "184",
+   "kultur_seen": "Acker",
+   "name_seen": "?emeine?[?]",
+   "note": "val57 qm=158 — 8 (dvojna zanka) jasna; korekcija vs val57 audit"
+  },
+  "16": {
+   "j": "",
+   "k": "",
+   "kultur_seen": "Acker?[?] (val57: Wiese)",
+   "name_seen": "",
+   "note": "celica območja prazna ✓; kapital niz '1−602'"
+  },
+  "17": {
+   "j": "",
+   "k": "214",
+   "kultur_seen": "Acker",
+   "name_seen": "?ion Muster?[?]",
+   "note": ""
+  },
+  "18": {
+   "j": "",
+   "k": "274",
+   "kultur_seen": "Ödn?[?] (val57: Acker)",
+   "name_seen": "Gemeinde (jasno, dno strani)",
+   "note": ""
+  },
+  "19": {
+   "j": "",
+   "k": "62",
+   "kultur_seen": "Acker?[?] (val57: Gart)",
+   "name_seen": "?ion Muster?[?]",
+   "note": "kapital niz '22' (val57: 27) — nedoločljivo, register ostaja"
+  },
+  "20": {
+   "j": "",
+   "k": "96",
+   "kultur_seen": "Acker",
+   "name_seen": "",
+   "note": "val57 qm=46 — 9 (zaprta zanka) jasna (×8 u-tail); korekcija vs val57 audit"
+  }
+ },
+ "fuertrag": {
+  "label": "1 Fürtrag.",
+  "black_crossed": "3|574",
+  "red": "2|1495",
+  "note": "rdeča korekcija čez prečrtano črno; J-glyph rdeč = 2 (4 dvom pri vsotni hipotezi)"
+ }
+}

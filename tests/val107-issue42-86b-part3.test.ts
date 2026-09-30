@@ -10,7 +10,7 @@
  *  3. p141 = NE kvalificirana stran (only_j ≥ 10 %) — reading_pass vgrajen, jk vrednosti
  *     nedotaknjene (v86-page-not-qualified), owner/kultur variante vrednostno neodvisne,
  *  4. PS parcele 779 → 735 z izrecnim, testno vodenim prehodom števcev,
- *  5. KG v2.3 / KG-F12 + kaskada (sha 8f803952) + timeline I6 (PS 779, raba 438+249),
+ *  5. KG v2.3 / KG-F12 + kaskada (sha 9f856d28) + timeline I6 (PS 779, raba 438+249),
  *  6. §4 poštenost: per-parcelne trditve ostajajo PROVISIONAL — noben v107 popravek
  *     ne dviguje evidence statusov.
  *
@@ -213,8 +213,8 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
     expect(f12!.status).toContain("RESOLVED-V107");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha 8f803952… (val 108; val 98 je bil 2b16acad)", () => {
-    expect(kgSha).toMatch(/^8f803952/);
+  test("kaskada: runtime kopije držijo isti KG sha 9f856d28… (val 108; val 98 je bil 2b16acad)", () => {
+    expect(kgSha).toMatch(/^9f856d28/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),

@@ -1,0 +1,361 @@
+{
+ "meta": {
+  "val": "111",
+  "source": "agentov vid (reading-v111/p03.json)",
+  "method": "1:1 val 108; p3 vgradnja območij (val57 qm-shema nikoli vgrajena); vrednosti v klafter (F-PV-07); anmerkung add-only; imenski pass odložen",
+  "findings": [
+   "F-PV-07 (NOVO): na p1-55 scribere piše območje v DESNI podstolpec 'Quad. Klafter' (N.o Joche prazen); val 57 je te vrednosti vnesel v polje jaethe (p4-55) — sistemska prerazporeditev, skupna vsota invariantna. Na p3 vrednosti vgrajene direktno v klafter.",
+   "p3 val 57 shema = 'qm' (edina stran!) — register p3 je ostal BREZ območij; ta val jih vgradi (16 vrednosti).",
+   "Števkovne napake val 57 qm (nikoli v register, audit): r13 qm=609 (v111: 409, 4 jasno odprta oblika ×12), r15 qm=158 (v111: 184, dvojna zanka 8 jasna), r20 qm=46 (v111: 96, zaprta zanka 9 jasna).",
+   "r3: val57 qm=769; v111 ×12: zadnja števka 9/2 neodločena — ostaja 769[?] (ni korekcije).",
+   "Fürtrag p3: oznaka '1 Fürtrag.', črno 3|574 prečrtano rdeče, rdeča korekcija 2|1495 (2 J | 1495 QK).",
+   "r11: obstoječ zapis številke prečrtan (X), prek njega 99; r14: kultur prečrtan rdeče, vrednost 679 prečrtana rdeče, ostane 663; r0: vrstica močno prečrtana (brez številke).",
+   "Kapital/ertrag nizi '1−1348' (r10), '1−602' (r16), '22' (r19) = neražčlenjeni formati fl|kr|pf — dekodiranje odloženo (register v57 vrednosti ostajajo).",
+   "Stolpna kalibracija (F15 val 61 potrjena): kolona 1 = 'Nro. des Blattes' (rimska I + ditto), kolona z zaporedjem 1-21 = Uebersetzung/Ried števec (na p11 prečrtan rdeče 161-170), par '1|NN' = konstanta 1 + Haus Nro (semantika konstante odprta).",
+   "Imena/stand/wohnort p3: izrezki z x-odmikom (levo porezano) — ločen imenski pass v naslednjem valu; register vrednosti ostanejo prazne (nič ugibanja)."
+  ]
+ },
+ "tally": {
+  "filled_klafter": 19,
+  "anmerkung_addonly": 3
+ },
+ "changes": [
+  {
+   "page": 3,
+   "row": 0,
+   "type": "v111_empty_cell",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "kultur_seen": "Wiese[?] (prečrtano)",
+   "note": "vrstica močno prečrtana (črno), brez območja; ime nečitljivo ('...s Gewinn[?]')"
+  },
+  {
+   "page": 3,
+   "row": 0,
+   "type": "v111_anmerkung_addonly",
+   "new_anmerkung": "[vrstica prečrtana — val 111]"
+  },
+  {
+   "page": 3,
+   "row": 1,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "116"
+   },
+   "kultur_seen": "Acker",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 2,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "325"
+   },
+   "kultur_seen": "Acker",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 3,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "769"
+   },
+   "kultur_seen": "Acker",
+   "note": "zadnja števka 9/2 dvom (×12); val57 qm=769 — soglasje ohranimo z [?]; val57 qm=769 (nikoli v register) — v111 glas različen/potrjen",
+   "val57_qm_never_imported": "769"
+  },
+  {
+   "page": 3,
+   "row": 4,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "44"
+   },
+   "kultur_seen": "Acker",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 5,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "307"
+   },
+   "kultur_seen": "Lhügwind?[?] / Ödt?[?] (dvovrstično)",
+   "note": "kultur dvom: register 'Abhang[?]' ostaja; druga vrstica jasno Ödt-podobna"
+  },
+  {
+   "page": 3,
+   "row": 6,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "374"
+   },
+   "kultur_seen": "Lhügwind?[?] / Ödt?[?] (dvovrstično)",
+   "note": "isti dvom kultur kot r5"
+  },
+  {
+   "page": 3,
+   "row": 7,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "203"
+   },
+   "kultur_seen": "Lhüga?[?]",
+   "note": "rdeče priskribe med r7-r10 (f.1852/f.1853/f.1860 sklici)"
+  },
+  {
+   "page": 3,
+   "row": 8,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "488"
+   },
+   "kultur_seen": "Acker",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 9,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "802"
+   },
+   "kultur_seen": "Acker",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 10,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "729"
+   },
+   "kultur_seen": "Lhügwind?[?] / Ödt?[?]",
+   "note": "ertrag/kapital niz '1−1348' — format za dekodirati"
+  },
+  {
+   "page": 3,
+   "row": 11,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "99"
+   },
+   "kultur_seen": "Lhüga?[?]",
+   "note": "prejšnji zapis številke prečrtan (X), prek njega 99"
+  },
+  {
+   "page": 3,
+   "row": 11,
+   "type": "v111_anmerkung_addonly",
+   "new_anmerkung": "[prej zapisana številka prečrtana, prek nje 99 — val 111]"
+  },
+  {
+   "page": 3,
+   "row": 12,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "758"
+   },
+   "kultur_seen": "Acker",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 13,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "409"
+   },
+   "kultur_seen": "Acker",
+   "note": "val57 qm=609 — 4 jasno odprta oblika (×12); korekcija vs val57 audit; val57 qm=609 (nikoli v register) — v111 glas različen/potrjen",
+   "val57_qm_never_imported": "609"
+  },
+  {
+   "page": 3,
+   "row": 14,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "663"
+   },
+   "kultur_seen": "Acker (prečrtan rdeče)",
+   "note": "679 prečrtano rdeče v isti celici; rdeča opomba 2-vrstična ('...1844...') — natančna transkripcija odložena; val57 kultur='Wiese' ne drži"
+  },
+  {
+   "page": 3,
+   "row": 14,
+   "type": "v111_anmerkung_addonly",
+   "new_anmerkung": "Joh. Winkler[?] 640; [679 prečrtano rdeče; kultur prečrtan rdeče; rdeča opomba …1844… — val 111]"
+  },
+  {
+   "page": 3,
+   "row": 15,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "184"
+   },
+   "kultur_seen": "Acker",
+   "note": "val57 qm=158 — 8 (dvojna zanka) jasna; korekcija vs val57 audit; val57 qm=158 (nikoli v register) — v111 glas različen/potrjen",
+   "val57_qm_never_imported": "158"
+  },
+  {
+   "page": 3,
+   "row": 16,
+   "type": "v111_empty_cell",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "kultur_seen": "Acker?[?] (val57: Wiese)",
+   "note": "celica območja prazna ✓; kapital niz '1−602'"
+  },
+  {
+   "page": 3,
+   "row": 17,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "214"
+   },
+   "kultur_seen": "Acker",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 18,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "274"
+   },
+   "kultur_seen": "Ödn?[?] (val57: Acker)",
+   "note": ""
+  },
+  {
+   "page": 3,
+   "row": 19,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "62"
+   },
+   "kultur_seen": "Acker?[?] (val57: Gart)",
+   "note": "kapital niz '22' (val57: 27) — nedoločljivo, register ostaja"
+  },
+  {
+   "page": 3,
+   "row": 20,
+   "type": "v111_fill_klafter",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "96"
+   },
+   "kultur_seen": "Acker",
+   "note": "val57 qm=46 — 9 (zaprta zanka) jasna (×8 u-tail); korekcija vs val57 audit; val57 qm=46 (nikoli v register) — v111 glas različen/potrjen",
+   "val57_qm_never_imported": "46"
+  }
+ ]
+}
