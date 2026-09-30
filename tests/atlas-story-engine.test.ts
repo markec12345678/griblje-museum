@@ -198,14 +198,14 @@ describe("generateEntityStory — vsebina (§16/§17)", () => {
     expect(mo!.text).toContain("A01");
   });
 
-  test("žive parcele: H-040 ima 115 povezanih parcel — seznam capped, raba delno dokumentirana (val 113: F-PV-07 p17/p18/p21-p24)", () => {
+  test("žive parcele: H-040 ima 114 povezanih parcel — seznam capped, raba delno dokumentirana (val 114: F-PV-07 p25–p55)", () => {
     const parcele = story.sections.find((s) => s.title === "Parcele in raba zemljišča");
     expect(parcele).toBeDefined();
     expect(parcele!.items.length).toBeGreaterThan(1);
     const landUse = parcele!.items.find((i) => i.text.includes("Raba zemljišča"));
     expect(landUse).toBeDefined();
-    // 1 od 115 parcel ima dokumentirano rabo (PS prepis 143/143; val 113: F-PV-07 p17/p18/p21-p24 + SPLIT pravilo zmanjšalo PS projekcijo) — preostale izrecno NEZNANE
-    expect(landUse!.text).toContain("1 od 115");
+    // 0 od 114 parcel ima dokumentirano rabo (val 114: F-PV-07 p25–p55 + SPLIT markerji zmanjšalo PS projekcijo 577->401) — vse izrecno NEZNANE
+    expect(landUse!.text).toContain("za 114 povezanih parcel NI dokumentirana"); // val 114: zadnja dokumentirana H-040 njiva izpadla iz projekcije (577->396)
     expect(landUse!.tier).toBe("NEZNANO");
     expect(landUse!.source_ids).toContain("SRC-PV");
     // val 113: H-040 dokumentirana njiva je izpadla iz PS projekcije (F-PV-07
@@ -213,10 +213,11 @@ describe("generateEntityStory — vsebina (§16/§17)", () => {
     // PS parcele nosijo TRANSCRIBED_PROVISIONAL + UNKNOWN rabo → 🟡 VERJETNO
     const njiva = parcele!.items.find((i) => i.text.includes("raba: njiva"));
     expect(njiva).toBeUndefined();
+    // val 114: H-040 povezane PS parcele izpadle iz projekcije (F-PV-07 p25–p55 +
+    // SPLIT markerji, 577->401) → per-parcelnih "raba: UNKNOWN" itemov ni več;
+    // raba ostane izrecno NEZNANA prek PV agregatnega itema (zgornji landUse)
     const psUnknown = parcele!.items.find((i) => i.text.includes("raba: UNKNOWN"));
-    expect(psUnknown).toBeDefined();
-    expect(psUnknown!.tier).toBe("VERJETNO");
-    expect(psUnknown!.status).toBe("TRANSCRIBED_PROVISIONAL");
+    expect(psUnknown).toBeUndefined();
   });
 });
 
@@ -285,11 +286,11 @@ describe("generateVillageStory (§18)", () => {
     expect(story.sections[9].title).toContain("Neznanke");
   });
 
-  test("številke prihajajo iz grafa: 167 hiš, 488 oseb, 2612 parcel, 34 objektov, 5 listov (val 112)", () => {
+  test("številke prihajajo iz grafa: 167 hiš, 488 oseb, 2428 parcel, 34 objektov, 5 listov (val 114)", () => {
     const allText = story.sections.flatMap((s) => s.items.map((i) => i.text)).join(" ");
     expect(allText).toContain("167 hiš");
     expect(allText).toContain("488 oseb");
-    expect(allText).toContain("2612 parcel");
+    expect(allText).toContain("2426 parcel");
     expect(allText).toContain("34 MAP_OBJECT");
     const listi = story.sections[1].items;
     expect(listi.length).toBe(5);
@@ -299,7 +300,7 @@ describe("generateVillageStory (§18)", () => {
     const raba = story.sections.find((s) => s.title.includes("Raba zemljišča"));
     expect(raba).toBeDefined();
     // dokumentirani del (PS prepis 143/143, val 89→112): 391 parcel z znano rabo
-    const documented = raba!.items.find((i) => i.text.includes("dokumentirana za 292"));
+    const documented = raba!.items.find((i) => i.text.includes("dokumentirana za 173")); // val 114: 292 -> 173
     expect(documented).toBeDefined();
     expect(documented!.tier).toBe("DOKAZANO");
     expect(documented!.source_ids).toContain("SRC-PS");
@@ -309,7 +310,7 @@ describe("generateVillageStory (§18)", () => {
     expect(unknown).toBeDefined();
     expect(unknown!.tier).toBe("NEZNANO");
     expect(unknown!.source_ids).toContain("SRC-PV");
-    expect(unknown!.text).toContain("2320");
+    expect(unknown!.text).toContain("2253"); // val 114: 2320 -> 2253
     // PV prepisan (val 74): agregatne površine v besedilu, NI per-parcelnega ugibanja
     expect(unknown!.text).toContain("1221 J 1573 K");
     expect(unknown!.text).toContain("val 74");

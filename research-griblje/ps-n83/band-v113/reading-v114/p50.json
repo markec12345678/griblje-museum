@@ -1,0 +1,175 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 50,
+  "scope": "vrednostni re-read (z3 + ciljani x9 zoomi + FUR wide)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p50.jpg",
+  "instrument_files": "crops-v113/z3-p50-vals.png; /tmp p50w-*, p50-r20wide",
+  "fpv07": "vrednosti v JOCHE koloni (v57 pravilen stolpec) — brez premestitev",
+  "findings_structural": [
+   "20 vrednostnih vrstic + FUR \"48 Fürtrag: 4|386\"",
+   "v57 r20 (jae=4, klf=prazno) = FANTOM: v57 je FUR-ov Joch \"4\" vpisal kot vrstico — pocistiti",
+   "v57 1<->7 zamenjava se nadaljuje (r1 876->816, r15 751->131)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "418",
+   "k": "",
+   "old_j": "418",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r1": {
+   "j": "816",
+   "k": "",
+   "old_j": "876",
+   "old_k": "",
+   "verdict": "POPRAVEK 876->816 (srednja 1 — enostavni cram, ni 7)"
+  },
+  "r2": {
+   "j": "509",
+   "k": "",
+   "old_j": "509",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "395",
+   "k": "",
+   "old_j": "395",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "353",
+   "k": "",
+   "old_j": "352",
+   "old_k": "",
+   "verdict": "POPRAVEK 352->353 (zadnja 3 — dva skodelica)"
+  },
+  "r5": {
+   "j": "673",
+   "k": "",
+   "old_j": "673",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "205",
+   "k": "",
+   "old_j": "205",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "81",
+   "k": "",
+   "old_j": "81",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "269",
+   "k": "",
+   "old_j": "249",
+   "old_k": "",
+   "verdict": "POPRAVEK 249->269 (srednja 6 z dvigelnikom, ni 4)"
+  },
+  "r9": {
+   "j": "270",
+   "k": "",
+   "old_j": "270",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "358",
+   "k": "",
+   "old_j": "358",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "587",
+   "k": "",
+   "old_j": "587",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "125",
+   "k": "",
+   "old_j": "125",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "j": "104",
+   "k": "",
+   "old_j": "106",
+   "old_k": "",
+   "verdict": "POPRAVEK 106->104 (zadnja 4 z zanko, ni 6)"
+  },
+  "r14": {
+   "j": "400",
+   "k": "",
+   "old_j": "400",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "131",
+   "k": "",
+   "old_j": "751",
+   "old_k": "",
+   "verdict": "POPRAVEK 751->131 (prva 1 — ni 7; srednja 3 — dva skodelica, ni 5)"
+  },
+  "r16": {
+   "j": "442",
+   "k": "",
+   "old_j": "442",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "j": "45",
+   "k": "",
+   "old_j": "45",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "528",
+   "k": "",
+   "old_j": "520",
+   "old_k": "",
+   "verdict": "POPRAVEK 520->528 (zadnja 8 — dve zanki, ni 0)"
+  },
+  "r19": {
+   "j": "117",
+   "k": "",
+   "old_j": "117",
+   "old_k": "",
+   "verdict": "soglasje"
+  },
+  "r20": {
+   "j": "",
+   "k": "",
+   "old_j": "4",
+   "old_k": "",
+   "verdict": "PRAZNO na strani — v57 jae \"4\" = FUR Joch, fantomski vnos; pocistiti + anmerkung"
+  }
+ },
+ "furtrag": {
+  "j": "4",
+  "k": "386",
+  "note": "FUR \"48 Fürtrag: 4|386\" — v57 ni zabeležil kot Furtrag"
+ },
+ "register_actions_planned": [
+  "POPRAVEK: r1 816, r4 353, r8 269, r13 104, r15 131, r18 528",
+  "r20: jae 4 -> prazno (fantom FUR) + anmerkung",
+  "page_observations_v114: FUR 4|386"
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 40,
+  "scope": "vrednostni re-read + STRUKTURNA forenzika (collapse vrstice)",
+  "method": "agentov direktni vid: z3 + polna vrednostna regija + nums/names kolone + ciljani x9-x12 zoomi + primerjalni trakovi števk; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p40.jpg",
+  "instrument_files": "crops-v113/z3-p40-vals.png, z-p40-vals-0/1/2; crops-v114diag/p40-bottom, p40-r3-r10; /tmp ciljani",
+  "fpv07": "r0-r10 vrednosti v QK pod-koloni (v57 jae=napacen stolpec za vseh 11 vrstic!); r11/r13/r14 split notacija 1|599, 1|65, 4|860",
+  "findings_structural": [
+   "STRUKTURA: stran ima 21 fizicnih vrstic (tekoce stevilke 721-740 + 739 1/2), v57 je zabelezil 20 — ena vrstica izpuscena",
+   "p12 (tekač 733, Wunderling, velika U-floura v imenu): vrednostna celica PRAZNA — v57 je tu prisel \"4 - 65\"",
+   "p13 (tekač 734 RDECE precrtan, Nro 21, Pechley Mich°, vrednost 1|65 z rdece precrtanim Joch=1): v57 NI ustvaril lastne vrstice — njegovo vrednost je ZLIL v vrstico r12 (Wunderling) kot \"4 - 65\"",
+   "Posledica: v57 r13-r19 = fizicne p14-p20 (dokaz: haus Nro r13=20=p14, r14=22=p15, r15=66=p16, r16=65=p17, r17=65=p18, vrednosti 768/976/38/1280 natanko na p16/p18/p19/p20) — vsebina vrstic je INTERNORE konsistentna (lastnik+haus+vrednost iz iste fizicne vrstice)",
+   "3 rdece precrte vrstice: tekača 734/735/736 + vrednosti 1|65, 4|860, 529 — pisar je reviziral",
+   "Imena p18/p20: \"Wöring Martheo/Martha[?]\" (v57: Michael / Joseph — dvom, imenski pass); p19: \"Weichselbaum MathÄ[?]\" (v57: Nißl)",
+   "FUR: crno 16|1149[?] precrto + RDECA revizija 10|298; vsotna kontrola odprta (precrte vrstice + revizija)",
+   "VGRADNJA: brez vstavljanja nove vrstice (2871 guard) — popravki v okviru obstojecega mapiranja + page_observations_v114; vstavljanje preklicane vrstice p13 = odprta strukturna odlocba (posebna val)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "411",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move jae->klf (F-PV-07; v57 je 411 dala v jae) + soglasje vrednosti"
+  },
+  "r1": {
+   "j": "",
+   "k": "775",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "300",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "255",
+   "old_j": "",
+   "old_k": "355",
+   "verdict": "move + POPRAVEK 355->255 [? dvom prva stevilka (2/8/9) — zaprta vrhnja zanka, zagotovo NI 3; srednja/zadnja 5-5 jasni]"
+  },
+  "r4": {
+   "j": "2",
+   "k": "422",
+   "old_j": "2 422",
+   "old_k": "",
+   "verdict": "soglasje — split notacija ze pravilno v v57 (\"2 422\"); marker SPLIT za pass3 izkljucitev"
+  },
+  "r5": {
+   "j": "",
+   "k": "1223",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 1229->1223 (zadnja 3, odprti skodelici)"
+  },
+  "r6": {
+   "j": "",
+   "k": "1365",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 1363->1365 (zadnja 5 z zastavico)"
+  },
+  "r7": {
+   "j": "",
+   "k": "510",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "427",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "919",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "998",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r11": {
+   "j": "1",
+   "k": "599",
+   "old_j": "599",
+   "old_k": "",
+   "verdict": "SPLIT 1|599 — v57 je 599 dala v jae in izpustila Joch=1; + haus Nro 31->21 (jasno 2-1)"
+  },
+  "r12": {
+   "j": "",
+   "k": "",
+   "old_j": "4 - 65",
+   "old_k": "",
+   "verdict": "PRAZNO na strani (p12 celica prazna) — v57 \"4 - 65\" = zlitje s preklicano p13 (1|65 rdece); pocistiti + anmerkung"
+  },
+  "r13": {
+   "j": "4",
+   "k": "860",
+   "old_j": "4 - 660",
+   "old_k": "",
+   "verdict": "preko mapiranja r13=p14: split 4|860 (v57 \"4 - 660\" — 8 misli za 6); RDECE precrtano (tekač 735); v57 je 4|660 dala v jae niz"
+  },
+  "r14": {
+   "j": "",
+   "k": "529",
+   "old_j": "",
+   "old_k": "589",
+   "verdict": "preko mapiranja r14=p15: POPRAVEK 589->529 (srednja 2 z zanko); RDECE precrtano (tekač 736)"
+  },
+  "r15": {
+   "j": "",
+   "k": "768",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje (p16)"
+  },
+  "r16": {
+   "j": "",
+   "k": "849",
+   "old_j": "",
+   "old_k": "989",
+   "verdict": "preko mapiranja r16=p17: POPRAVEK 989->849 [? dvom prva (8/2/9) — ista oblika kot r3 prva; srednja ZAGOTOVO 4 (v57 je imela 8 — nemogoce)]"
+  },
+  "r17": {
+   "j": "",
+   "k": "976",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje (p18; ime rdece precrto)"
+  },
+  "r18": {
+   "j": "",
+   "k": "38",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje (p19); haus Nro 69->64 (4 z dvigelnikom)"
+  },
+  "r19": {
+   "j": "",
+   "k": "1280",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "move + soglasje (p20); haus Nro 68->65"
+  }
+ },
+ "furtrag": {
+  "j": "16[?]",
+  "k": "1149[?]",
+  "note": "crno 16|1149[?] precrto + rdeca revizija 10|298; vsotna kontrola odprta"
+ },
+ "register_actions_planned": [
+  "p40 r0-r11,r15,r17-r19: F-PV-07 move jae->klf (14x) — v57 je vse vrednosti dala v jae",
+  "SPLIT markerji: r4 (2|422, ze v v57), r11 (1|599), r13 (4|860)",
+  "POPRAVEK: r3 255[?], r5 1223, r6 1365, r14 529, r16 849[?]; r12 -> prazno + anmerkung (zlita preklicana p13)",
+  "haus popravki: r11 21, r18 64, r19 65",
+  "page_observations_v114: polna strukturna forenzika (21 vrstic, prazna p12, preklicana p13, mapiranje r13+ = p14+) — VSTAVLJANJE VRSTICE ODPRTO (posebna val)",
+  "anmerkung add-only: imena p18/p20 Martheo[?], p19 MathÄ[?] — imenski pass"
+ ]
+}

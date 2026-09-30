@@ -1,0 +1,178 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 39,
+  "scope": "vrednostni re-read (z3 sklad + diag izrezki + ciljani x10/x12/x14 zoomi)",
+  "method": "agentov direktni vid: z3-p39-vals + diag p39-r0-zoom/top/r1-r10/r11-r13/bottom/uebertrag + /tmp ciljani; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p39.jpg",
+  "instrument_files": "crops-v113/z3-p39-vals.png, z-p39-vals-0/1/2, p39-ertrag-top; crops-v114diag/p39-*",
+  "fpv07": "vrednosti v QK koloni (Joche prazna razen r0; r0 jae=201 je tekoča številka levega stolpca, ne Joche)",
+  "findings_structural": [
+   "r0 KLJUČNA NAJDBA: klafter celica vsebuje DVE zloženi številki 761 (zgornja) + 774 (spodnja); v57 je zbral \"1774\"; ertrag_fl 1535 = 761+774 NATANČNO (skladna dvo-parcelna interpretacija)",
+   "r0 jae \"201\" = zaporedna številka levega stolpca (tekač 201/202/203...), NI Joche — počistiti",
+   "r12 vrednost 59 zapisana VISOKO (prečka zgornjo pravilo) — z3 \"39\" artifakt; soglasje z v57",
+   "ertrag/capital r1–r20: le bledi preboji/otiski — ni transkribiranja (§4 TRANSCRIBED=0)",
+   "FUR: 4 | 1009 (Joch 4, Klafter 1009)",
+   "r20: nad vrednostjo v imenskem stolpcu zapis \"Schlung[?]\" — imenski pass"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "774",
+   "old_j": "201",
+   "old_k": "1774",
+   "verdict": "POPRAVEK jae 201->prazno (tekač levega stolpca) + klf 1774->774 (celica ima 761+774 zloženo; v57 zbral) + ertrag_fl 1535 (jasen črnilo, = 761+774)"
+  },
+  "r1": {
+   "j": "",
+   "k": "744",
+   "old_j": "",
+   "old_k": "754",
+   "verdict": "POPRAVEK 754->744 (4-4, ne 5-4)"
+  },
+  "r2": {
+   "j": "",
+   "k": "703",
+   "old_j": "",
+   "old_k": "702",
+   "verdict": "POPRAVEK 702->703"
+  },
+  "r3": {
+   "j": "",
+   "k": "741",
+   "old_j": "",
+   "old_k": "741",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "564",
+   "old_j": "",
+   "old_k": "564",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "526",
+   "old_j": "",
+   "old_k": "526",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "21",
+   "old_j": "",
+   "old_k": "21",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "1035",
+   "old_j": "",
+   "old_k": "1035",
+   "verdict": "soglasje (1+0 ligatura)"
+  },
+  "r8": {
+   "j": "",
+   "k": "31",
+   "old_j": "",
+   "old_k": "31",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "32",
+   "old_j": "",
+   "old_k": "32",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "342",
+   "old_j": "",
+   "old_k": "342",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "449",
+   "old_j": "",
+   "old_k": "489",
+   "verdict": "POPRAVEK 489->449 (srednja številka 4, ne 8 — primerjano z r14 pravim 8)"
+  },
+  "r12": {
+   "j": "",
+   "k": "59",
+   "old_j": "",
+   "old_k": "59",
+   "verdict": "soglasje (zapisano visoko; z3 39 artifakt)"
+  },
+  "r13": {
+   "j": "",
+   "k": "82",
+   "old_j": "",
+   "old_k": "82",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "489",
+   "old_j": "",
+   "old_k": "789",
+   "verdict": "POPRAVEK 789->489 (srednja jasno 8 — dve zanki)"
+  },
+  "r15": {
+   "j": "",
+   "k": "260",
+   "old_j": "",
+   "old_k": "260",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "38",
+   "old_j": "",
+   "old_k": "38",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "55",
+   "old_j": "",
+   "old_k": "55",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "1185",
+   "old_j": "",
+   "old_k": "1185",
+   "verdict": "soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "232",
+   "old_j": "",
+   "old_k": "232",
+   "verdict": "soglasje"
+  },
+  "r20": {
+   "j": "",
+   "k": "26",
+   "old_j": "",
+   "old_k": "26",
+   "verdict": "soglasje"
+  }
+ },
+ "furtrag": {
+  "j": "4",
+  "k": "1009",
+  "note": "Fürtrag vrstica: Joch 4, Klafter 1009 (v57 ni zabeležil?)"
+ },
+ "register_actions_planned": [
+  "p39 r0: jae 201->prazno; klf 1774->774; anmerkung [761+774 v celici, v57 zbral 1774; ertrag 1535 = vsota]; ertrag_fl 1535",
+  "POPRAVEK: r1 744, r2 703, r11 449, r14 489",
+  "reading_pass v114-ps-reread za p39; page_observations_v114"
+ ]
+}

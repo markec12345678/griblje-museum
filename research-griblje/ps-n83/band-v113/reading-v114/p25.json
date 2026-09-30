@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 25,
+  "scope": "vrednostni re-read (z3 sklad + detail thirds)",
+  "method": "agentov direktni vid: z3-p25-vals + z-p25-vals-0/2 detail; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p25.jpg",
+  "instrument_files": "crops-v113/z3-p25-vals.png, z-p25-vals-0.png, z-p25-vals-2.png",
+  "fpv07": "vrednosti v QK koloni (baseline klf=20 ze pravilno polje); r12 legitimni split 1|729",
+  "findings_structural": [
+   "stran CISTA — pozicijsko poravnana, brez pomika",
+   "FUR: crno 10485 precrtano (kot split 10|485) + RDECA revizija 8|1336 (precrtano) + rdece 6|62 — interpretacija odprta",
+   "r18 tanka crta skozi 367",
+   "2 popravka stevk (r3, r18)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "r0",
+   "old_j": "",
+   "old_k": "747",
+   "verdict": "soglasje (crta v header-prekrivanju — celica cista)"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "526",
+   "verdict": "soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "379",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "292",
+   "verdict": "POPRAVEK 292->392 (prva stevilka dvokrivuljni 3)"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "667",
+   "verdict": "soglasje; precrtano rdece (baseline [rot])"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "675",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "774",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "359",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "1000",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "569",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "387",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "337",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "1",
+   "k": "r12",
+   "old_j": "1",
+   "old_k": "729",
+   "verdict": "SPLIT jae=1+kla=729 — legitimno ze val 57; soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "697",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "868",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "1036",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "706",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "467",
+   "verdict": "soglasje; precrtano (baseline [rot])"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "287",
+   "verdict": "POPRAVEK 287->367 (jasen 3); tanka crta — pripis"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "10485",
+   "verdict": "PRAZNO vrstica; FUR spodaj"
+  }
+ },
+ "furtrag": "10485 precrtano + rdece 8|1336 + rdece 6|62",
+ "register_actions_planned": [
+  "POPRAVEK: r3 292->392, r18 287->367",
+  "r12 brez spremembe",
+  "FUR ostaja 10485 + anmerkung rdece revizije"
+ ]
+}

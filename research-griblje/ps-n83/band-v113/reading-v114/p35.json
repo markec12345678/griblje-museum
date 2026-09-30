@@ -1,0 +1,164 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 35,
+  "scope": "vrednostni re-read (z3 sklad + diag)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p35.jpg",
+  "instrument_files": "crops-v113/z3-p35-vals.png, crops-v114diag/p35-r10-r19.png",
+  "fpv07": "vrednosti v QK (baseline jae — premestitve)",
+  "findings_structural": [
+   "3 popravki: r10 770->773, r12 80->30, r19 31->71",
+   "stran CISTA, brez pomika; r4 prazna (Wier Grunigman), r6 Gemeinde",
+   "FUR: 718 (razmejitev Joch/Klafter nejasna) — vsota se ne zapira — odprto"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "r0",
+   "old_j": "",
+   "old_k": "328",
+   "verdict": "soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "379",
+   "verdict": "soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "678",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "21",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "soglasje (prazna; Wier Grunigman)"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "380",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "26",
+   "verdict": "soglasje (Gemeinde)"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "100",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "75",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "193",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "770",
+   "verdict": "POPRAVEK 770->773 (zadnja 3)"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "164",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "r12",
+   "old_j": "",
+   "old_k": "80",
+   "verdict": "POPRAVEK 80->30 (dvobumpni 3)"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "252",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "230",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "26",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "324",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "93",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "48",
+   "verdict": "soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "31",
+   "verdict": "POPRAVEK 31->71 (7 s crtico)"
+  }
+ },
+ "furtrag": "718 (Joch/Klafter dvom)",
+ "register_actions_planned": [
+  "PREMESTITVE jae->klf: vse vrednosti",
+  "POPRAVEK x3: r10, r12, r19",
+  "FUR odprto"
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 29,
+  "scope": "vrednostni re-read (z3 sklad + diag + široki prerezi)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p29.jpg",
+  "instrument_files": "crops-v113/z3-p29-vals.png, crops-v114diag/p29-*.png",
+  "fpv07": "vrednosti v KLAFTER sub-koloni (Joche prazna) — val 57 jih imel v jae polju: mehanska premestitev + POPRAVKI ulomkov",
+  "findings_structural": [
+   "ANOMALNA STRAN: vrednosti 16½–60½ z ulomki ½/¼ (dvignjeni mali glifi, videti kot 5/8/9/4/0) — enota (Joch z ulomki?) ostaja odprta",
+   "FUR: 27 Fürtrag | 2 | 432 — se ne uskladi s vsoto strani (~447) — strukturno odprto (analog p19/p20)",
+   "r5: crta nad vrednostjo + rdec kljuk",
+   "r19: crta zgoraj + vrednost nizko 6h9 — razhajanje z 8½",
+   "vgradnja: mehanske premestitve jae->klf + cisti POPRAVKI (r0); r5/r19 odprti"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "r0",
+   "old_j": "",
+   "old_k": "16",
+   "verdict": "POPRAVEK: val 57 izpustil ulomek — videno 16½ (dvignjeni glif) + move"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "17½",
+   "verdict": "soglasje + move"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "18¼",
+   "verdict": "soglasje + move"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "18½",
+   "verdict": "soglasje + move"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "16½",
+   "verdict": "soglasje + move"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "21½",
+   "verdict": "razhajanje: videno 37 + dvignjeni glif (8-liki = ¾[?]); register 21½ — POPRAVEK kandidat, frakcija odprta"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "16",
+   "verdict": "soglasje + move"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "36",
+   "verdict": "soglasje + move"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "32",
+   "verdict": "soglasje + move"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "18",
+   "verdict": "soglasje + move"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "23½",
+   "verdict": "soglasje + move"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "10½",
+   "verdict": "soglasje + move"
+  },
+  "r12": {
+   "j": "",
+   "k": "r12",
+   "old_j": "",
+   "old_k": "16½",
+   "verdict": "soglasje + move"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "23½",
+   "verdict": "soglasje + move"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "22",
+   "verdict": "soglasje + move"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "28",
+   "verdict": "soglasje + move"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "25½",
+   "verdict": "soglasje + move (dvignjeni glif kot 0 pri nizki ločljivosti)"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "60½",
+   "verdict": "soglasje + move (dvignjeni glif kot 4)"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "60",
+   "verdict": "soglasje + move"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "8½",
+   "verdict": "razhajanje: videno 6h9 (nizko, crta zgoraj) — 649? 64½? — register 8½; odprto"
+  }
+ },
+ "furtrag": "27 Fürtrag | 2 | 432",
+ "register_actions_planned": [
+  "PREMESTITVE jae->klf: vse vrstice z vrednostjo (19)",
+  "POPRAVEK: r0 dodan ulomek 16½",
+  "odprti: r5 (frakcija), r19 (6h9 vs 8½), FUR enota"
+ ]
+}

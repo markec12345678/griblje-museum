@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na aktualni KG (5ae52bd8, val 112 kaskada) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("5ae52bd8")).toBe(true); // val 112 KG (val 108: 9f856d28; val 98: 2b16acad)
+  test("provenanca kaže na aktualni KG (376e2b27, val 114 kaskada) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("376e2b27")).toBe(true); // val 114 KG (val 112: 5ae52bd8; val 108: 9f856d28)
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -164,18 +164,18 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(native.located_a02_candidates_unique).toBe(3);
   });
 
-  test("parcele: 2612 = PUA 2035 (907 VER / 675 PART / 453 CONF) + PS 577 PARTIAL (projekcija 143/143 + F-PV-05/07 korekcije val 98: 930→898 + val 107: 779→735 + val 112: 735→676)", () => {
+  test("parcele: 2436 = PUA 2035 (907 VER / 675 PART / 453 CONF) + PS 391 PARTIAL (val 114: 577→391; projekcija 143/143 + F-PV-05/07 korekcije)", () => {
     const c = byId("parcels");
-    expect(c.total).toBe(2612);
+    expect(c.total).toBe(2426);
     expect(c.VERIFIED).toBe(907);
-    expect(c.PARTIAL).toBe(1252); // PUA REVIEW 675 + PS 577 (val 113: 1351 -> 1252)
+    expect(c.PARTIAL).toBe(1066); // PUA REVIEW 675 + PS 401 (val 114: 1252 -> 1076)
     expect(c.CONFLICT).toBe(453);
   });
 
   test("parcelna geometrija: 0 dokumentiranih meja (nič 'lepih' parcel, §9)", () => {
     const c = byId("parcel_geometry");
-    expect(c.total).toBe(2612);
-    expect(c.NOT_FOUND).toBe(2612);
+    expect(c.total).toBe(2426);
+    expect(c.NOT_FOUND).toBe(2426);
     expect(c.VERIFIED).toBe(0);
   });
 
@@ -371,7 +371,7 @@ describe("uskladjenost z KG v1.4", () => {
     const kgf = kg as unknown as { node_stats: Record<string, number>; provenance: { kg_sha256?: string } };
     expect(kgf.node_stats.HOUSE).toBe(167);
     expect(kgf.node_stats.PERSON).toBe(488);
-    expect(kgf.node_stats.PARCEL).toBe(2612); // val 108: 2770 → val 112: 2711 → val 113: 2612
+    expect(kgf.node_stats.PARCEL).toBe(2426); // val 108: 2770 → val 112: 2711 → val 113: 2612 → val 114: 2426
     expect(kgf.node_stats.BP).toBe(100);
     expect(kgf.node_stats.TOPONYM).toBe(37);
     expect(kgf.node_stats.SOURCE).toBe(13);

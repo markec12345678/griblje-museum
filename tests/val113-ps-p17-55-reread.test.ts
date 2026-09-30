@@ -219,36 +219,36 @@ describe("val 113 — kaskada (izrecna)", () => {
     edges: unknown[];
   };
 
-  test("pass3: PS parcele 676 → 577 (F-PV-07-SPLIT izključitveno pravilo v build-pass3.py)", () => {
+  test("pass3: PS parcele 577 → 393 (val 114: F-PV-07 premestitve p25–p55 + p28–p37 + SPLIT markerji ze-obstojecih parov)", () => {
     const s = readFileSync(join(ATLAS, "build-pass3.py"), "utf8");
     expect(s).toContain("F-PV-07-SPLIT val 113");
-    expect(pr.ps_parcels_total).toBe(577);
-    expect(pr.ps_land_use_coverage["njiva"]).toBe(198);
-    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(209);
+    expect(pr.ps_parcels_total).toBe(391);
+    expect(pr.ps_land_use_coverage["njiva"]).toBe(105);
+    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(142);
     expect(pr.ps_land_use_coverage["null"]).toBe(76);
   });
 
-  test("KG: PARCEL 2612, HAS_PARCEL 2914, vozlišča 3454, vezi 3618", () => {
-    expect(kg.node_stats.PARCEL).toBe(2612);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2914);
-    expect(kg.nodes.length).toBe(3454);
-    expect(kg.edges.length).toBe(3618);
+  test("KG: PARCEL 2436, HAS_PARCEL 2775, vozlišča 3278, vezi 3479 (val 114 kaskada)", () => {
+    expect(kg.node_stats.PARCEL).toBe(2426);
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
+    expect(kg.nodes.length).toBe(3268);
+    expect(kg.edges.length).toBe(3477);
   });
 
-  test("timeline I6 zatiči: PUA 2035 / PS 577 / raba 292+209", () => {
+  test("timeline I6 zatiči: PUA 2035 / PS 391 / raba 173+142 (val 114)", () => {
     const tl = JSON.parse(readFileSync(join(ROOT, "src/data/timeline-1825-1830.json"), "utf8")) as {
       points: { year: number; metrics: { metric_id: string; value: number }[] }[];
     };
     const m = (id: string, y: number) =>
       tl.points.find((p) => p.year === y)?.metrics.find((x) => x.metric_id === id)?.value;
-    expect(m("parcels_ps", 1825)).toBe(577);
-    expect(m("parcels_with_land_use", 1825)).toBe(292);
+    expect(m("parcels_ps", 1825)).toBe(391);
+    expect(m("parcels_with_land_use", 1825)).toBe(173);
   });
 
-  test("coverage: PARTIAL 1252 (PUA 675 + PS 577)", () => {
+  test("coverage: PARTIAL 1068 (PUA 675 + PS 393, val 114)", () => {
     const c = JSON.parse(readFileSync(join(ROOT, "src/data/atlas-coverage-report-1825.json"), "utf8")) as {
       quality_gate: { PARTIAL: number }[];
     };
-    expect((c.quality_gate ?? []).some((g) => g.PARTIAL === 1252)).toBe(true);
+    expect((c.quality_gate ?? []).some((g) => g.PARTIAL === 1066)).toBe(true);
   });
 });

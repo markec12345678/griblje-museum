@@ -4,7 +4,7 @@
   "generated_by": "build-c4-metrika-v90.py",
   "method": "C4 metrika: izčrpna deterministična preverba konvencij na sidrih val 61 (K1–K6) + reprodukcija C4 val 86b (K7) + usklajenost vnosov (K8) + konfunda F-PV-05 (K9) + opazovalni register (K10); NIČ VLM, NIČ spleta; NIČ sprememb podatkov (§4/§22)",
   "inputs": {
-   "register.json": "ff8b7a842f890ab92dbc713ca4ca09aab93625bc9ed79e434d2809ddbe7bf24f",
+   "register.json": "e254840fb319b121f3852e4f949798a0345310632e40e5cfe480e3e9316b142c",
    "totals-reread.json": "5866a457d2cd102267bcf37f3cf8b87d19fcb58aa5aa2f035f41f9b828fe31aa",
    "f11-fuertrag-v86.json": "bd9877766d486e328321c3d5e422ccf2a636ef016a58794da1d3640bc060e5ee"
   },
@@ -171,9 +171,9 @@
    "crossed": false,
    "red_line": "",
    "rows": 20,
-   "K1_page_sum_excl": 11800,
+   "K1_page_sum_excl": 11500,
    "K1_match": false,
-   "K2_page_sum_incl": 11800,
+   "K2_page_sum_incl": 11500,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -183,8 +183,8 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": null,
-    "page_sum_excl": 11800,
-    "page_sum_incl": 11800,
+    "page_sum_excl": 11500,
+    "page_sum_incl": 11500,
     "match_excl": false,
     "match_incl": false,
     "diff_excl": null
@@ -227,9 +227,9 @@
    "crossed": true,
    "red_line": "3|265",
    "rows": 20,
-   "K1_page_sum_excl": 10419,
+   "K1_page_sum_excl": 10275,
    "K1_match": false,
-   "K2_page_sum_incl": 10419,
+   "K2_page_sum_incl": 10275,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -239,11 +239,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 5065,
-    "page_sum_excl": 10419,
-    "page_sum_incl": 10419,
+    "page_sum_excl": 10275,
+    "page_sum_incl": 10275,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 5354
+    "diff_excl": 5210
    },
    "K6_match": false,
    "agent_notes": "števec 30 (ne 26!) — @7x jasno 3+0; vrednost 1244 (ne 1944); rdeča 3|265 ✓ se ujema z VLM drugo vrednostjo"
@@ -255,9 +255,9 @@
    "crossed": false,
    "red_line": "",
    "rows": 20,
-   "K1_page_sum_excl": 4198,
+   "K1_page_sum_excl": 4191,
    "K1_match": false,
-   "K2_page_sum_incl": 4198,
+   "K2_page_sum_incl": 4191,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -267,8 +267,8 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": null,
-    "page_sum_excl": 4198,
-    "page_sum_incl": 4198,
+    "page_sum_excl": 4191,
+    "page_sum_incl": 4191,
     "match_excl": false,
     "match_incl": false,
     "diff_excl": null
@@ -283,9 +283,9 @@
    "crossed": true,
    "red_line": "3|349",
    "rows": 20,
-   "K1_page_sum_excl": 5589,
+   "K1_page_sum_excl": 5618,
    "K1_match": false,
-   "K2_page_sum_incl": 5589,
+   "K2_page_sum_incl": 5618,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -295,11 +295,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 5149,
-    "page_sum_excl": 5589,
-    "page_sum_incl": 5589,
+    "page_sum_excl": 5618,
+    "page_sum_incl": 5618,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 440
+    "diff_excl": 469
    },
    "K6_match": false,
    "agent_notes": "števec 38 (ne 36!) — med 3 in 8 je tuj potez ('3/8'); VLM oznaka 'Grundst.' napačna; vrednost 2|1578 (druga štefka 5/6 negotova; VLM 8790 popolnoma napačno); rdeča 3|349"
@@ -311,9 +311,9 @@
    "crossed": true,
    "red_line": "1|815",
    "rows": 21,
-   "K1_page_sum_excl": 14113,
+   "K1_page_sum_excl": 14253,
    "K1_match": false,
-   "K2_page_sum_incl": 14113,
+   "K2_page_sum_incl": 14253,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -323,11 +323,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 2415,
-    "page_sum_excl": 14113,
-    "page_sum_incl": 14113,
+    "page_sum_excl": 14253,
+    "page_sum_incl": 14253,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 11698
+    "diff_excl": 11838
    },
    "K6_match": false,
    "agent_notes": "števec 39 (ne 20!) — @7x jasno 3+9; VLM oznaka 'Stück' napačna; vrednost 7|365 (ne 362); rdeča 1|815 (ne 1876)"
@@ -339,9 +339,9 @@
    "crossed": true,
    "red_line": "4|1030",
    "rows": 20,
-   "K1_page_sum_excl": 9033,
+   "K1_page_sum_excl": 9037,
    "K1_match": false,
-   "K2_page_sum_incl": 9033,
+   "K2_page_sum_incl": 9037,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -351,11 +351,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 7430,
-    "page_sum_excl": 9033,
-    "page_sum_incl": 9033,
+    "page_sum_excl": 9037,
+    "page_sum_incl": 9037,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 1603
+    "diff_excl": 1607
    },
    "K6_match": false,
    "agent_notes": "števec 42 ✓; glavna vrednost 6|255 prečrtana (VLM je izpustil 255), rdeča 4|1030 ✓"
@@ -544,17 +544,17 @@
  ],
  "K9_konfunda_F-PV-05": {
   "p1_55_val57": {
-   "both_filled": 44,
-   "jaethe_empty": 772,
-   "jaethe_gt1599_plain": 4,
-   "jaethe_plain_100_1599": 192,
-   "jaethe_plain_gt1599": 4,
-   "jaethe_plain_le99": 105,
-   "klafter_empty": 273,
-   "klafter_gt1599_plain": 18,
-   "klafter_plain_100_1599": 659,
-   "klafter_plain_gt1599": 18,
-   "klafter_plain_le99": 123
+   "both_filled": 46,
+   "jaethe_empty": 943,
+   "jaethe_gt1599_plain": 2,
+   "jaethe_plain_100_1599": 69,
+   "jaethe_plain_gt1599": 2,
+   "jaethe_plain_le99": 59,
+   "klafter_empty": 104,
+   "klafter_gt1599_plain": 14,
+   "klafter_plain_100_1599": 783,
+   "klafter_plain_gt1599": 14,
+   "klafter_plain_le99": 172
   },
   "p56_143_v82_plus_sloji": {
    "any_jk_format": 6,

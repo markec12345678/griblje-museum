@@ -1,0 +1,169 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 55,
+  "scope": "vrednostni re-read (z3 + ciljani x9 zoomi) — ZADNJA stran pasu p17-55",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p55.jpg",
+  "instrument_files": "crops-v113/z3-p55-vals.png; /tmp p55z-*",
+  "fpv07": "vrednosti v QK pod-koloni (v57 jae=napacen stolpec za vseh 20 vrstic!) — 19 premestitev; r17 split 1|329",
+  "findings_structural": [
+   "20 vrstic 1:1; kot p40/p41: v57 je vse vrednosti vpisala v jae, stran pise v QK pod-kolono",
+   "r17: split 1|329 (Joch 1 v pod-koloni, Klafter 329)",
+   "precrti: r4/r6 dvomne, r11 in r19 jasne; FUR crno 7|1067[?] precrto + rdeca revizija 7|979",
+   "4 odprta razhjanja (r2, r10, r14, r18) — prva/zadnja stevilka pri nizki locevljivosti"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "29",
+   "old_j": "29",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "100",
+   "old_j": "100",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "877",
+   "old_j": "870",
+   "old_k": "",
+   "verdict": "move + razhajanje 870 vs 877[?] — odprto (zadnja 0/7)"
+  },
+  "r3": {
+   "j": "",
+   "k": "147",
+   "old_j": "147",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "769",
+   "old_j": "769",
+   "old_k": "",
+   "verdict": "move + soglasje; precrta dvomna"
+  },
+  "r5": {
+   "j": "",
+   "k": "273",
+   "old_j": "273",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "739",
+   "old_j": "739",
+   "old_k": "",
+   "verdict": "move + soglasje; precrta dvomna"
+  },
+  "r7": {
+   "j": "",
+   "k": "857",
+   "old_j": "857",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "769",
+   "old_j": "769",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "765",
+   "old_j": "765",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "831",
+   "old_j": "231",
+   "old_k": "",
+   "verdict": "move + razhajanje 231 vs 831[?] — odprto (prva 2/8)"
+  },
+  "r11": {
+   "j": "",
+   "k": "777",
+   "old_j": "777",
+   "old_k": "",
+   "verdict": "move + soglasje; precrzano rdece"
+  },
+  "r12": {
+   "j": "",
+   "k": "102",
+   "old_j": "102",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "620",
+   "old_j": "620",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "767",
+   "old_j": "769",
+   "old_k": "",
+   "verdict": "move + razhajanje 769 vs 767[?] — odprto (zadnja 9/7)"
+  },
+  "r15": {
+   "j": "",
+   "k": "854",
+   "old_j": "854",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "1276",
+   "old_j": "1276",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r17": {
+   "j": "1",
+   "k": "329",
+   "old_j": "329",
+   "old_k": "",
+   "verdict": "SPLIT 1|329 (v57 je 329 dala v jae, Joch=1 izpustila) + SPLIT marker"
+  },
+  "r18": {
+   "j": "",
+   "k": "48",
+   "old_j": "18",
+   "old_k": "",
+   "verdict": "move + razhajanje 18 vs 48[?] — odprto (prva 1/4)"
+  },
+  "r19": {
+   "j": "",
+   "k": "994",
+   "old_j": "994",
+   "old_k": "",
+   "verdict": "move + soglasje; precrzano rdece"
+  }
+ },
+ "furtrag": {
+  "j": "7[?]",
+  "k": "1067[?]",
+  "note": "crno 7|1067[?] precrto + rdeca revizija 7|979"
+ },
+ "register_actions_planned": [
+  "19 F-PV-07 move jae->klf (r0-r16, r18, r19) + r17 SPLIT (jae=1, klf=329) + marker",
+  "anmerkung add-only: 4 odprta razhjanja (r2, r10, r14, r18) + precrtne + FUR revizija",
+  "page_observations_v114"
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 42,
+  "scope": "vrednostni re-read — tezka stran: masovna rdeca revizija + nestandarna visina vrstic",
+  "method": "agentov direktni vid: polni stolpicni trakovi s ravilom (y 150-620 / 620-1055) + ciljani zoomi; z3 sklad ZAVRZEN (drift)",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p42.jpg",
+  "instrument_files": "/tmp p42-ruler/ruler2/strip-top/strip-bot + ciljani; crops-v113/z3-p42-vals (NEzanesljiv)",
+  "fpv07": "vrednosti ze v QK koloni (v57 pravilen stolpec) — brez premestitev",
+  "findings_structural": [
+   "21 vrstic, 1:1 poravnana z v57 (imena+kultur se ujemajo po vrstah) — brez pomika",
+   "VISINA VRSTIC ~42px (ne 38.65 kot predpostavlja z3) -> z3 bandi zdrsi do ~2.5 vrstice do r20 — z3 za to stran NEUPORABEN, branje iz direktnih trakov",
+   "MASOVNA RDECA REVIZIJA: precrtani r5, r6, r7, r8, r9, r10, r11, r14, r15, r16, r17, r18, r19, r20 + FUR crna vrstica (le r12, r13 clean med r12-r20)",
+   "FUR: crna 7|365[?] precrtana + RDECA revizija 1|818",
+   "6 odprtih razhjanj na precrtanih vrednostih (r9, r10, r14, r16, r18, r20) — v57 in moje branje medsebojno neskladni, rdeca precrta onemogoca zanesljivo odlocitev",
+   "bleed \"s 1148\" v ertrag koloni pri r20 — ni transkribirano (§4)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "444",
+   "old_j": "",
+   "old_k": "444",
+   "verdict": "soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "410",
+   "old_j": "",
+   "old_k": "470",
+   "verdict": "POPRAVEK 470->410 (srednja 1, ni 7)"
+  },
+  "r2": {
+   "j": "",
+   "k": "329",
+   "old_j": "",
+   "old_k": "329",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "604",
+   "old_j": "",
+   "old_k": "604",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "409",
+   "old_j": "",
+   "old_k": "409",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "903",
+   "old_j": "",
+   "old_k": "903",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r6": {
+   "j": "",
+   "k": "637",
+   "old_j": "",
+   "old_k": "637",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r7": {
+   "j": "",
+   "k": "354",
+   "old_j": "",
+   "old_k": "354",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r8": {
+   "j": "",
+   "k": "383",
+   "old_j": "",
+   "old_k": "383",
+   "verdict": "soglasje; precrzano rdece (v57 ni opomnil)"
+  },
+  "r9": {
+   "j": "",
+   "k": "464",
+   "old_j": "",
+   "old_k": "447",
+   "verdict": "razhajanje 447 vs 464[?] — odprto; precrzano rdece, slaba berljivost"
+  },
+  "r10": {
+   "j": "",
+   "k": "433",
+   "old_j": "",
+   "old_k": "1322",
+   "verdict": "razhajanje 1322 vs 433 — odprto; precrzano rdece; v57 4-gafcno, stran 3-gafcno stevilo"
+  },
+  "r11": {
+   "j": "",
+   "k": "504",
+   "old_j": "",
+   "old_k": "504",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r12": {
+   "j": "",
+   "k": "1394",
+   "old_j": "",
+   "old_k": "1294",
+   "verdict": "POPRAVEK 1294->1394 (srednja 3 — odprta skodelica; v57 2 ima spodnjo zanko — dvom nizak, a zapisan)"
+  },
+  "r13": {
+   "j": "",
+   "k": "219",
+   "old_j": "",
+   "old_k": "219",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "450",
+   "old_j": "",
+   "old_k": "1270",
+   "verdict": "razhajanje 1270 vs 450 — odprto; precrzano rdece"
+  },
+  "r15": {
+   "j": "",
+   "k": "644",
+   "old_j": "",
+   "old_k": "544",
+   "verdict": "POPRAVEK 544->644 (prva 6 z zanko + dvigelnik, ni 5); precrzano rdece"
+  },
+  "r16": {
+   "j": "",
+   "k": "126",
+   "old_j": "",
+   "old_k": "476",
+   "verdict": "razhajanje 476 vs 126[?] — odprto; precrzano rdece (prva 1/4 dvom)"
+  },
+  "r17": {
+   "j": "",
+   "k": "747",
+   "old_j": "",
+   "old_k": "747",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r18": {
+   "j": "",
+   "k": "113",
+   "old_j": "",
+   "old_k": "483",
+   "verdict": "razhajanje 483 vs 113[?] — odprto; precrzano rdece (4/1 in 8/1 dvom pod precrto)"
+  },
+  "r19": {
+   "j": "",
+   "k": "400",
+   "old_j": "",
+   "old_k": "400",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r20": {
+   "j": "",
+   "k": "1313",
+   "old_j": "",
+   "old_k": "1874",
+   "verdict": "razhajanje 1874 vs 1313[?] — odprto; precrzano rdece"
+  }
+ },
+ "furtrag": {
+  "j": "7[?]",
+  "k": "365",
+  "note": "crna 7|365[?] precrtana + rdeca revizija 1|818"
+ },
+ "register_actions_planned": [
+  "POPRAVEK: r1 410, r12 1394, r15 644",
+  "anmerkung add-only: precrte r5-r11, r14-r20; odprta razhajanja r9, r10, r14, r16, r18, r20",
+  "page_observations_v114: masovna rdeca revizija + FUR 1|818 rdeca + visina vrstic 42px (z3 drift opomba)"
+ ]
+}

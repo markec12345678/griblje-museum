@@ -1,0 +1,168 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 53,
+  "scope": "vrednostni re-read (z3 + spodnji trak s ravilom)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p53.jpg",
+  "instrument_files": "crops-v113/z3-p53-vals.png; /tmp p53-bot",
+  "fpv07": "vrednosti ze v QK koloni (r2/r3/r6 split 1|...) — brez premestitev",
+  "findings_structural": [
+   "20 vrstic 1:1; mnogo rdecih pre crt (r4 dvom, r8, r12, r14, r16, r17, r18, r19, FUR)",
+   "FUR: crno 9|1027[?] precrto + rdeca revizija 7|960",
+   "5 odprtih razhjanj na precrtanih (r13, r14, r17, r18, r19)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "71",
+   "old_j": "",
+   "old_k": "71",
+   "verdict": "soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "51",
+   "old_j": "",
+   "old_k": "51",
+   "verdict": "soglasje"
+  },
+  "r2": {
+   "j": "1",
+   "k": "1128",
+   "old_j": "1",
+   "old_k": "1128",
+   "verdict": "soglasje (split ze v v57) + SPLIT marker"
+  },
+  "r3": {
+   "j": "1",
+   "k": "1040",
+   "old_j": "1",
+   "old_k": "1040",
+   "verdict": "soglasje (split ze v v57) + SPLIT marker"
+  },
+  "r4": {
+   "j": "",
+   "k": "1194",
+   "old_j": "",
+   "old_k": "1194",
+   "verdict": "soglasje; precrta dvomna"
+  },
+  "r5": {
+   "j": "",
+   "k": "337",
+   "old_j": "",
+   "old_k": "337",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "1",
+   "k": "928",
+   "old_j": "1",
+   "old_k": "928",
+   "verdict": "soglasje (split ze v v57) + SPLIT marker"
+  },
+  "r7": {
+   "j": "",
+   "k": "449",
+   "old_j": "",
+   "old_k": "849",
+   "verdict": "POPRAVEK 849->449 (prva 4 z zanko — ena zanka, 8 ima dve)"
+  },
+  "r8": {
+   "j": "",
+   "k": "26",
+   "old_j": "",
+   "old_k": "26",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r9": {
+   "j": "",
+   "k": "1063",
+   "old_j": "",
+   "old_k": "1063",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "519",
+   "old_j": "",
+   "old_k": "519",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "492",
+   "old_j": "",
+   "old_k": "492",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "927",
+   "old_j": "",
+   "old_k": "927",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r13": {
+   "j": "",
+   "k": "31",
+   "old_j": "",
+   "old_k": "51",
+   "verdict": "razhajanje 51 vs 31[?] — odprto (prva 3/5)"
+  },
+  "r14": {
+   "j": "",
+   "k": "319",
+   "old_j": "",
+   "old_k": "349",
+   "verdict": "razhajanje 349 vs 319[?] — odprto; precrzano rdece (srednja 1/4)"
+  },
+  "r15": {
+   "j": "",
+   "k": "60",
+   "old_j": "",
+   "old_k": "60",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "66",
+   "old_j": "",
+   "old_k": "66",
+   "verdict": "soglasje; precrzano rdece"
+  },
+  "r17": {
+   "j": "",
+   "k": "50",
+   "old_j": "",
+   "old_k": "87",
+   "verdict": "razhajanje 87 vs 50[?] — odprto; precrzano rdece (popolnoma razlicni zapisi)"
+  },
+  "r18": {
+   "j": "",
+   "k": "201",
+   "old_j": "",
+   "old_k": "274",
+   "verdict": "razhajanje 274 vs 201[?] — odprto; precrzano rdece"
+  },
+  "r19": {
+   "j": "",
+   "k": "74",
+   "old_j": "",
+   "old_k": "76",
+   "verdict": "razhajanje 76 vs 74[?] — odprto; precrzano rdece (zadnja 4/6)"
+  }
+ },
+ "furtrag": {
+  "j": "9[?]",
+  "k": "1027[?]",
+  "note": "crno 9|1027[?] precrto + rdeca revizija 7|960"
+ },
+ "register_actions_planned": [
+  "POPRAVEK: r7 449",
+  "anmerkung add-only: 5 odprtih razhjanj (r13, r14, r17, r18, r19) + precrtne + FUR revizija",
+  "page_observations_v114"
+ ]
+}

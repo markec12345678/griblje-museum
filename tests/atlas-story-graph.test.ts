@@ -76,7 +76,7 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
 
   test("entitete po vrsti ujemajo KG (3.553 skupaj)", () => {
     const by = graph.stats.entities_by_type;
-    expect(by["PARCEL"]).toBe(2612); // val 98: 2933 → val 107: 2770 → val 112: 2711
+    expect(by["PARCEL"]).toBe(2426); // val 98: 2933 → val 107: 2770 → val 112: 2711 → val 114: 2426
     expect(by["PERSON"]).toBe(488);
     expect(by["HOUSE"]).toBe(167);
     expect(by["BP"]).toBe(100);
@@ -120,7 +120,7 @@ describe("story-graph: §21 invarianti relacij", () => {
 
   test("relacije po tipu: HAS_PARCEL 3.013, OWNER_OF 254, BP_BOUND_TO_HOUSE 119 …", () => {
     const by = graph.stats.relations_by_type;
-    expect(by["HAS_PARCEL"]).toBe(2914); // val 98: 3155 → val 107: 3072 → val 112: 3013
+    expect(by["HAS_PARCEL"]).toBe(2773); // val 98: 3155 → val 107: 3072 → val 112: 3013 → val 114: 2773
     expect(by["OWNER_OF"]).toBe(254);
     expect(by["OWNER_VARIANT_OF"]).toBe(224);
     expect(by["BP_BOUND_TO_HOUSE"]).toBe(119);
@@ -252,7 +252,7 @@ describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
     const ov = storyGraphOverview();
     expect(ov.ok).toBe(true);
     expect(ov.val).toBe(68);
-    expect(ov.stats.entities).toBe(3454); // val 98: 3775 → val 107: 3612 → val 112: 3553
+    expect(ov.stats.entities).toBe(3268); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 114: 3268
     expect(ov.stats.story_atoms).toBe(4);
     const contract = ov.story_engine_contract as { required_fields: string[] };
     for (const f of ["story_id", "input_entity_ids", "used_claim_ids", "used_source_ids", "generation_timestamp", "prompt_version", "story_status"]) {

@@ -1,0 +1,164 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 27,
+  "scope": "vrednostni re-read (z3 sklad + diag)",
+  "method": "agentov direktni vid: z3-p27-vals + diag r0/r10/r3-4/r19 + FUR zoom; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p27.jpg",
+  "instrument_files": "crops-v113/z3-p27-vals.png, crops-v114diag/p27-*.png",
+  "fpv07": "vrednosti v QK; r0 ima Joch 1",
+  "findings_structural": [
+   "r0 celica z DVEMA vrednostima: 317 visoko (par z Joch 1) + 592 nizko; register 1|474 ne ustreza nobeni",
+   "FUR: 7|1172 (Joch 7 + 1172) — vsotna kontrola se NE zapira z nobeno kombinacijo r0 (317/592, spliti r7/r8) — strukturni re-read potreben (analog p19/p20)",
+   "vgradnja val 114: samo cisti popravki (r3, r4, r10); r0 + FUR ostajata",
+   "Nro zaporedje na strani: 23, 26, ..., 27, 30, 26, ..., 24, 9, 24 — nestandardno"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "1",
+   "k": "r0",
+   "old_j": "1",
+   "old_k": "474",
+   "verdict": "razhajanje: celica vsebuje 317 (visoko, par z Joch 1) IN 592 (nizko); register 1|474 ne ustreza — POPRAVEK kandidat 1|592; strukturno odprto"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "716",
+   "verdict": "soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "soglasje (prazna)"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "353",
+   "verdict": "POPRAVEK 353->352 (baza 2)"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "364",
+   "verdict": "POPRAVEK 364->369 (zanka 9)"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "428",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "soglasje (prazna; Ho. 25. Jirgan)"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "1813",
+   "verdict": "soglasje; mozno split 1|813 — odprto"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "1478",
+   "verdict": "soglasje; mozno split 1|478 — odprto"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "912",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "519",
+   "verdict": "POPRAVEK 519->510 (nula, ne 9)"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "398",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "r12",
+   "old_j": "",
+   "old_k": "795",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "337",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "286",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "617",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "574",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "716",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "368",
+   "verdict": "soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "742",
+   "verdict": "soglasje"
+  }
+ },
+ "furtrag": "7|1172 (Joch 7, dash, 1172)",
+ "register_actions_planned": [
+  "POPRAVEK: r3 353->352, r4 364->369, r10 519->510",
+  "r0 + FUR: strukturno odprto, brez vsiljevanja"
+ ]
+}

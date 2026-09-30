@@ -285,18 +285,18 @@ describe("parcel sloj: filtri (§19: način + raba + besedilo)", () => {
 describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
   test("parcelLandUseCounts čez KG = registrirane resnice val 89 (projekcija 143/143)", () => {
     const features = parcelFeatures();
-    expect(features).toHaveLength(2612); // val 98: 2933 → val 107: 2770 → val 112: 2711
+    expect(features).toHaveLength(2426); // val 98: 2933 → val 107: 2770 → val 112: 2711 → val 114: 2426
     const buckets = parcelExploreCounts(features as ExploreParcel[], "all", "all", "").buckets as Record<LandUseBucket, number>;
-    expect(buckets.njiva).toBe(198); // val 98: 297 → val 107: 294 → val 108: 295 → val 112: 258 → val 113: 198
-    expect(buckets.travnik).toBe(47); // val 98: 97 → val 107: 84 → val 112: 77 → val 113: 47
-    expect(buckets.gozd).toBe(11); // val 98: 16 → val 107: 15 → val 108: 14 → val 113: 11
-    expect(buckets.vrt).toBe(9); // val 108: 16 → val 112: 14 → val 113: 9
-    expect(buckets["pašnik"]).toBe(14); // val 98: 22 → val 107: 16 → val 112: 15 → val 113: 14
+    expect(buckets.njiva).toBe(105); // val 98: 297 → val 107: 294 → val 108: 295 → val 112: 258 → val 113: 198 → val 114: 106
+    expect(buckets.travnik).toBe(38); // val 98: 97 → val 107: 84 → val 112: 77 → val 113: 47 → val 114: 40
+    expect(buckets.gozd).toBe(3); // val 98: 16 → val 107: 15 → val 108: 14 → val 113: 11 → val 114: 3
+    expect(buckets.vrt).toBe(6); // val 108: 16 → val 112: 14 → val 113: 9 → val 114: 6
+    expect(buckets["pašnik"]).toBe(12); // val 98: 22 → val 107: 16 → val 112: 15 → val 113: 14 → val 114: 12
     expect(buckets["dvorišče"]).toBe(1); // val 89: nova EXACT kategorija (Hofraithe)
     expect(buckets["vinograd"]).toBe(1); // val 89: nova EXACT kategorija (Reb/Weingarten)
-    expect(buckets.drugo).toBe(11);
-    expect(buckets.UNKNOWN).toBe(209); // val 98: 333 → val 107: 249 → val 108: 221 → val 112: 209
-    expect(buckets.NONE).toBe(2111); // 2035 PUA + 76 PS brez kultur zapisa (val 98: 136→104; val 107: 104→92; val 108: 92→76)
+    expect(buckets.drugo).toBe(7); // val 114: 11 -> 7
+    expect(buckets.UNKNOWN).toBe(142); // val 98: 333 → val 107: 249 → val 108: 221 → val 112: 209 → val 114: 142
+    expect(buckets.NONE).toBe(2111); // 2035 PUA + 76 PS brez kultur zapisa (nespremenjeno do val 114 — PS 401 = 179 + 146 + 76)
   });
 
   test("sortParcelsForBrowse: dokumentirana raba najprej, sekcije I–V, številke", () => {
@@ -320,9 +320,9 @@ describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
   test("parcelExploreCounts spoštuje kombinacijo način + raba + besedilo", () => {
     const features = parcelFeatures() as ExploreParcel[];
     const all = parcelExploreCounts(features, "all", "all", "");
-    expect(all.visible).toBe(2612); // val 108: 2770 → val 112: 2711
+    expect(all.visible).toBe(2426); // val 108: 2770 → val 112: 2711 → val 114: 2426
     const njiva = parcelExploreCounts(features, "all", "njiva", "");
-    expect(njiva.visible).toBe(198); // val 98: 297 → val 107: 294 → val 108: 295 → val 112: 258 → val 113: 198
+    expect(njiva.visible).toBe(105); // val 98: 297 → val 107: 294 → val 108: 295 → val 112: 258 → val 113: 198 → val 114: 106
     const evidenced = parcelExploreCounts(features, "evidenced", "all", "");
     expect(evidenced.visible).toBe(2035); // PUA TRANSCRIBED = DOKAZANO
   });
