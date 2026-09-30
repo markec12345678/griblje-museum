@@ -467,6 +467,217 @@ REINERTRAG_P43_47 = {
     "reading_honesty": "številke = soglasje ≥ 2 neodvisna branja (54 klicev + odtis); proza = delno REVIEW (Kurrent halucinacije dokumentirane v vlm/*.raw); vrednosti NISO per-parcelne trditve — to so klasni Natural-Ertrag koeficienti (metzensko/centnersko na 1 Joch), rabne/površinske posledice NIČ (§4/§22)",
 }
 
+# --- PREHOD 8 (val 109): p48–65 2. prehod — protokoli + Verantwortlichung §1–§8 + Zus A/B --
+# Metoda: karte strani preslikane z direktnim odtisom (full-2x + secnum/row zoomi, 0 VLM)
+# PRED VLM; VLM glasovi prek read-v109.mts (manifest-v109.json, 45 izrezkov, resumable
+# koščki). DEJANSKO STANJE: val 109 zaključen BREZ VLM glasov — 429 kvota (dnevni značaj,
+# izčrpna z val 107/108 branj; 2,5 h kontinuiranih 429 kljub ponovitvam) — glasovi ODLOŽENI
+# ob kvoti (vzorec p142-t-kultur2); 45 izrezkov ostane resumable. Aritmetični model I7
+# (potrjen EXACT na p57/p59, blizu na p52):
+# Anschlag im Gelde = Roh-Ertrag × Taxa%; Rein-Ertrag = Roh − Anschlag.
+# Strukturna korekcija p50–61 (F-PZ-18): § številke monotone 1–8 — val 75 oznake
+# ('§5 Kleine Gärten', '§6 Größere', '§7 Weingärten', '§8 Hutweiden', '§9 Wiesen/Hutweiden',
+# 'Dritte/Vierte Classe', 'Campus nach Rektifizierung', 'nadaljevanje') VSE korigirane.
+# p61 = prazna tiskana predloga + p62/p64 tiskani naslovnici — brez VLM (direktni odtis).
+PROTOKOLLE_P48_49 = {
+    "title": "Einvernehmungs-Protocoll 5. aprila 1830 (p48–49) — proza + podpisi (val 109 prepis)",
+    "source_pages": [48, 49],
+    "paper": "rožnat papir (val 75 opomba potrjena — p48–49 vizualno drugačni od § strani)",
+    "datum": "5. April 1830",
+    "naslov": "Einvernehmungs-Protocoll (p48); nadaljevanje brez lastnega naslova (p49) — NE samostojen 'Communications-Protokoll' (val 75 korigirano)",
+    "uvod": "[REVIEW proza]: 'Nachstehend über dem Protocoll deren[?] Gemeinde Steuerbezirks Amt eingelaufenen[?] Besitzer der Gemeinde Grüble um den Verhandlungen beizuwohnen' — uvedba na srečanje občanov pred k.k. Steuerbezirksamt",
+    "prisotni": {
+        "status": "REVIEW (Kurrent imena)",
+        "list": "Gemeinde Ausgeschoss[?]: Georg Kappas[?] (Gemeinde Vorsteher[?]), Johann Müller[?] (Gemeinde Richter[?]), Johann Konšlak[?], Miko Krainz[?] — 4 imena s podpisi na p49; +ALA Wais[?] (2. stran, REVIEW)",
+        "evidence": "raw-web-val109-2026-09/crops-v109/p48-half-a.png + p49-half-b.png",
+    },
+    "vsebina": [
+        "[REVIEW proza]: Vortrag občanov — pritožba/obrazložitev glede odmerjenega Cultural-Ausweises (obveznosti pri gojenju/vrtninah[?]); omemba Gärten in 8–15 [Klafter robov?]; odgovor komisije; zaključek 'Zu Urkund dessen … Unterschrift gegeben' (p49)",
+        "per-parcelnih tabel NI (skladno z val 79 re-read)",
+    ],
+    "signatures": "p49: 4 × podpis z + (Kappas[?], Müller[?], Konšlak[?], Krainz[?]) + uradnik [REVIEW]",
+    "reading_honesty": "struktura/datum = direktni odtis (večkrat); proza + imena = REVIEW; val 109 zaključen BREZ VLM glasov (429 kvota) — read-v109 izrezki p48-half-a/b + p49-half-a/b ostanejo resumable, glasovi jih prilagodijo ob kvoti (2. mikroprehod, vzorec p142-t-kultur2)",
+}
+
+VERANTWORTLICHUNG_P50_61 = {
+    "title": "Veranschlagung des Cultur-Aufwandes und Darstellung des Rein-Ertrages (p50–61) — §1–§8 per klasa (val 109 2. prehod)",
+    "source_pages": [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61],
+    "method": {
+        "name": "karte + izrezki @nativno (metoda val 80/81) + VLM glasovi",
+        "crops": "45 izrezkov (raw-web-val109-2026-09/crops-v109/): 18 full-2x (diagnostika) + 45 manifest celic (proza/table/begr po § strani; p63/p65 pasovi + desni blok; p48/49 polovici; p50 naslov)",
+        "readers": "glas #1 = direktni odtis avtorja (full-2x + row-zoom 2x–4x, PRED VLM, direct-reads-v109.md); glas #2/#3 = VLM read-v109.mts; odloča soglasje ≥ 2 ali aritmetični model I7",
+        "admission_rule": "vrednosti s soglasjem ≥ 2 → TRANSCRIBED; kolizija 1:1 → REVIEW; model I7 (EXACT) dvigne potrditev; nič se ne ugiba (§4)",
+    },
+    "structure_correction_vs_val75": [
+        "p50: NE 'VERANTWORTLICHUNG' — je 'Veranschlagung des Cultur-Aufwandes und Darstellung des Rein-Ertrages. §. 1. Ackerland' (Erste Classe)",
+        "p51: NE 'Campus nach Rektifizierung ležeča tabela' — je nadaljevanje Begründung §1 (proza) + prazna tiskana predloga + bleed-through s p50",
+        "p52: NE 'Dritte Classe' — je §1 Ackerland II.te Classe",
+        "p53: NE 'Dritte Classe' — je §2 Wiesenland I.te Classe",
+        "p54: NE 'Vierte Classe' — je §2 Wiesenland II.te Classe",
+        "p55: NE '§5 Kleine Gärten' — je §3 Kleine Gärten (einzige Classe)",
+        "p56: NE '§6 Größere Gärten' — je §4 Größere Gärten (einzige Classe)",
+        "p57: NE '§7 Weingärten' — je §5 Weingärten (einzige Classe); '7 parcel 1,2,4,5,6,8,11' iz val 75 je p63 vsebina (Zus B), NE p57",
+        "p58: NE '§8 Hutweiden' — je §6 Weiden (einzige Classe)",
+        "p59: NE '§9 Wiesen/Hutweiden' — je §7 Weiden mit Holznutzung (einzige Classe; 2 vrstici + vsota)",
+        "p60: NE 'Classe tabela nadaljevanje' — je §8 Bau-Area + podpis (Neustadtl 18.1.1831[?] Josef Scheram[?]) + rdeče 'revaluiert'",
+        "p61: NE 'nadaljevanje' — je prazna tiskana predloga (proza brez vrednosti, prazna tabela, prazna Begründung)",
+    ],
+    "table_schema": "Classe | Roh-Ertrag pr. n.Ö. Joch (fl|kr) | Summarischer Cultur-Aufwand (fl|kr) | Taxa percent | Ansschlag desselben im Gelde (fl|kr) | Rein-Ertrag (fl|kr)",
+    "arithmetic_model": {
+        "id": "I7",
+        "rule": "Anschlag im Gelde = Roh-Ertrag × Taxa% ; Rein-Ertrag = Roh-Ertrag − Anschlag",
+        "status": "POTRJEN EXACT na p57 (24×70%=16|48; 24−16.8=7|12) in p59 (1×25%=—|15; 45 kr; vsota 51=45+6); blizu na p52 (16|50½×55%=9|15¾ vs branje 9|12¾[?])",
+        "meaning": "'Taxa percent' = odstotek Roh-Ertraga, dodeljen kot nadomestilo za Culturaufwand (Instrukcija); Rein = Roh − nadomestilo",
+    },
+    "sections": [
+        {"sec": "§1", "name": "Ackerland", "page_i": 50, "page_ii": 52, "begr_page": 51,
+         "classes": [
+            {"classe": "I.te", "page": 50,
+             "roh": {"fl": "23", "kr": "40 1/10[?]", "status": "REVIEW"},
+             "aufwand": {"fl": "10", "kr": "18 3/4[?]", "status": "REVIEW"},
+             "taxa": {"wert": "45", "note": "proza '43 39/100' + rdeča korekcija [45/100]? — REVIEW", "status": "REVIEW"},
+             "anschlag": {"fl": "10", "kr": "40 2/3[?]", "status": "REVIEW"},
+             "rein": {"fl": "13", "kr": "3[5?]", "status": "REVIEW"},
+             "prosa_roh": "23 fl 44 kr [REVIEW — model pričakuje 23|44; zoom p50-roh-zoom odloča]",
+             "prosa_percent": "Dies sind 43 39/100 [rot 45/100?] Percente der Reinnutzung … zusammengenommen 115 Percente … mit 10 fl 40 3/4[?] kr abzüglich [REVIEW]",
+             "begr": "[REVIEW proza] Begründung se nadaljuje na p51 (Ackerklassen skupna obravnava, Wiesenklass povezava)",
+             },
+            {"classe": "II.te", "page": 52,
+             "roh": {"fl": "16", "kr": "50 1/2", "status": "TRANSCRIBED-odtis"},
+             "aufwand": {"fl": "9", "kr": "31", "status": "TRANSCRIBED-odtis"},
+             "taxa": {"wert": "55", "note": "rdeča priznamka nad 55 [REVIEW natančnost]", "status": "REVIEW"},
+             "anschlag": {"fl": "9", "kr": "15 3/4[12 3/4?]", "status": "REVIEW — model I7: 16.8417×0.55=9|15.8"},
+             "rein": {"fl": "7", "kr": "35", "status": "TRANSCRIBED-odtis (model: 7|34.7 ✓)"},
+             "prosa_roh": "16 fl 50 1/2 kr",
+             "prosa_percent": "Dies sind 56 83/100 [rot 55?/100] … 55 Percente … 9 fl 15 3/4 kr [REVIEW]",
+             },
+         ]},
+        {"sec": "§2", "name": "Wiesenland", "page_i": 53, "page_ii": 54,
+         "classes": [
+            {"classe": "I.te", "page": 53,
+             "roh": {"fl": "9", "kr": "24", "status": "TRANSCRIBED-odtis"},
+             "aufwand": {"fl": "1", "kr": "37 1/2", "status": "TRANSCRIBED-odtis"},
+             "taxa": {"wert": "20", "note": "rdeči pripis [REVIEW]", "status": "REVIEW"},
+             "anschlag": {"fl": "1", "kr": "52 4/5[32 3/4?]", "status": "REVIEW — model I7: 9.4×0.20=1|52.8"},
+             "rein": {"fl": "7", "kr": "30[31 1/5?]", "status": "REVIEW — model: 7|31.2"},
+             "prosa_roh": "9 fl 24 kr",
+             "prosa_percent": "Dies sind 20 34/100 [rot] … 20 Percente …",
+             "cross_check": "p65 Zus A Wiesen I Rein = 7|30 (1. prehod val 77) — SROGLASJE z 7|30"},
+            {"classe": "II.te", "page": 54,
+             "roh": {"fl": "14[11?]", "kr": "—", "status": "REVIEW — Kurrent 1+4/1+1"},
+             "aufwand": {"fl": "—", "kr": "55[?]", "status": "REVIEW"},
+             "taxa": {"wert": "25", "status": "TRANSCRIBED-odtis"},
+             "anschlag": {"fl": "1[11?]", "kr": "—", "status": "REVIEW — model I7 NE zapira (14×0.25=3.5≠1; 11×0.25=2.75≠1) — edina § vrstica brez I7 pokritosti; morda poseben režim (Drusch/Nutzen)",
+                          "note": "F-PZ-20 dokumentira odprto kolizijo — nič se ne vsiljuje"},
+             "rein": {"fl": "3", "kr": "—", "status": "TRANSCRIBED-odtis; p65 Zus A Wiesen II Rein = 3|— SROGLASJE"},
+             "prosa_roh": "[REVIEW]",
+             },
+         ]},
+        {"sec": "§3", "name": "Kleine Gärten", "page_einz": 55,
+         "classes": [
+            {"classe": "Einzige", "page": 55,
+             "roh": {"fl": "23", "kr": "44", "status": "TRANSCRIBED-odtis (proza '23 fl 44 kr' + tabela)"},
+             "aufwand": {"fl": "10", "kr": "18 3/4", "status": "TRANSCRIBED-odtis"},
+             "taxa": {"wert": "45", "status": "TRANSCRIBED-odtis"},
+             "anschlag": {"fl": "10", "kr": "40 2/3[4/5?]", "status": "REVIEW — model I7: 23.7333×0.45=10|40.8"},
+             "rein": {"fl": "13", "kr": "3[5?]", "status": "REVIEW — model: 13|3.2"},
+             }],
+        },
+        {"sec": "§4", "name": "Größere Gärten", "page_einz": 56,
+         "classes": [
+            {"classe": "Einzige", "page": 56,
+             "roh": {"fl": "23", "kr": "44", "status": "TRANSCRIBED-odtis (identno §3)"},
+             "aufwand": {"fl": "10", "kr": "18 3/4", "status": "TRANSCRIBED-odtis"},
+             "taxa": {"wert": "45", "status": "TRANSCRIBED-odtis"},
+             "anschlag": {"fl": "10", "kr": "40 2/3[4/5?]", "status": "REVIEW — model I7: 10|40.8"},
+             "rein": {"fl": "13", "kr": "3[5?]", "status": "REVIEW — model: 13|3.2"},
+             }],
+        },
+        {"sec": "§5", "name": "Weingärten", "page_einz": 57,
+         "classes": [
+            {"classe": "Einzige", "page": 57,
+             "roh": {"fl": "24", "kr": "—", "status": "TRANSCRIBED-odtis"},
+             "aufwand": {"fl": "16", "kr": "54", "status": "TRANSCRIBED-odtis"},
+             "taxa": {"wert": "70", "status": "TRANSCRIBED-odtis (proza '70 46/100' — REVIEW decimalka)"},
+             "anschlag": {"fl": "16", "kr": "48", "status": "TRANSCRIBED-odtis — model I7 EXACT (24×0.70=16.8=16|48)"},
+             "rein": {"fl": "7", "kr": "10[12?]", "status": "REVIEW — model: 7|12 (EXACT); pisana oblika 7|10[?]",
+                      "note": "če piše 7|10: pisarjevska zaokrožitev 7.2 fl; nič se ne vsiljuje"},
+             }],
+        },
+        {"sec": "§6", "name": "Weiden", "page_einz": 58,
+         "classes": [
+            {"classe": "Einzige", "page": 58,
+             "roh": {"fl": "1", "kr": "—", "status": "TRANSCRIBED-odtis"},
+             "aufwand": {"fl": "—", "kr": "132[?]", "status": "REVIEW — nenavadna oblika (VLM zoom odloča: 13 2/3? 1 32/100?)"},
+             "taxa": {"wert": "25", "status": "TRANSCRIBED-odtis (proza '22 21/100' + 25 — REVIEW)"},
+             "anschlag": {"fl": "—", "kr": "15", "status": "TRANSCRIBED-odtis — model I7 EXACT (1×0.25=0.25 fl=15 kr)"},
+             "rein": {"fl": "—", "kr": "45", "status": "TRANSCRIBED-odtis — model EXACT"},
+             }],
+        },
+        {"sec": "§7", "name": "Weiden mit Holznutzung", "page_einz": 59,
+         "classes": [
+            {"classe": "Weide", "page": 59,
+             "roh": {"fl": "1", "kr": "—", "status": "TRANSCRIBED-odtis"},
+             "aufwand": {"fl": "—", "kr": "132[?]", "status": "REVIEW (kot §6)"},
+             "taxa": {"wert": "25", "status": "TRANSCRIBED-odtis"},
+             "anschlag": {"fl": "—", "kr": "15", "status": "TRANSCRIBED-odtis — model EXACT"},
+             "rein": {"fl": "—", "kr": "45", "status": "TRANSCRIBED-odtis — model EXACT"}},
+            {"classe": "Holznutzung", "page": 59,
+             "roh": {"fl": "—", "kr": "6", "status": "TRANSCRIBED-odtis"},
+             "rein": {"fl": "—", "kr": "6", "status": "TRANSCRIBED-odtis"},
+             "note": "vsi vmesni stolpci prazni — lesna paša brez odmika (skladno F-PZ-08 silvopastoralna raba)"},
+            {"classe": "Summa", "page": 59,
+             "roh": {"fl": "1", "kr": "6"}, "rein": {"fl": "—", "kr": "51"},
+             "note": "45 + 6 = 51 EXACT — aritmetika vsote zaprta (odtis: prej zmotno '57')"},
+         ]},
+        {"sec": "§8", "name": "Bau-Area", "page_einz": 60,
+         "classes": [
+            {"classe": "Classe (brez oznake)", "page": 60,
+             "roh": {"fl": "16", "kr": "30 1/2", "status": "TRANSCRIBED-odtis"},
+             "aufwand": {"fl": "9", "kr": "31[?]", "status": "REVIEW"},
+             "taxa": {"wert": "55[?]", "status": "REVIEW"},
+             "anschlag": {"fl": "9", "kr": "15[?]", "status": "REVIEW — model: 16.5083×0.55=9|15.8"},
+             "rein": {"fl": "7", "kr": "35", "status": "TRANSCRIBED-odtis — model: 7|34.7 ✓"},
+             "note": "identno §1 II.te (16|30½→7|35) — Bau-Area cenjena kot Acker II. klase; rdeče 'revaluiert' + podpis"}],
+         },
+    ],
+    "p61_empty_template": {
+        "page": 61,
+        "content": "tiskana predloga: proza (fl/kr prazna) + prazna Darstellung tabela + prazna Begründung",
+        "status": "TRANSCRIBED-direktni odtis (brez VLM — nič za prebrati)",
+    },
+    "red_notes": "vsaka § stran: levo rdeče 'Bei der [?] gemischte[n] Ackerwirtschaft[?]-Vorstellung[?]' [REVIEW — identna formulacija na p50–60]",
+    "cross_check_p65": "p65 Zus A Rein-Ertrag stolpec (val 109 pasovi) križno preverja § vrednosti — glej zusammenstellung_ab_p62_65",
+    "reading_honesty": "glas #1 (direkten odtis) vsi številki okviri; § vrstice s 'TRANSCRIBED-odtis' = stabilne na 2x–4x; '[?]' = nestabilne števkе; val 109 zaključen BREZ VLM glasov (429 kvota — dnevni značaj) — vse vrednosti ostajajo glas-1 raven (REVIEW/odtis), VLM glasovi read-v109.mts (45 izrezkov, resumable) jih dvignejo ob kvoti; model I7 NE nastopa kot glas (samo kontrola); per-parcelne trditve NIČ (§4)",
+}
+
+ZUS_AB_P62_65 = {
+    "title": "Zusammenstellung A + B (p62–65) — 2. prehod (val 109)",
+    "source_pages": [62, 63, 64, 65],
+    "p62_naslovnica": {"status": "TRANSCRIBED-direktni odtis",
+                       "text": "B. Zusammenstellung über die jährliche Rente und den Capitalwerth der Grundstücke in der Gemeinde Grüble nach den aufgefundenen Pachtverträgen — Land Krain, Kreis Neustadtl, XI ter Schätzungsbezirk (tiskano)"},
+    "p64_naslovnica": {"status": "TRANSCRIBED-direktni odtis",
+                       "text": "A. Zusammenstellung des gesammten Cultur-Aufwandes beim Acker, Wies- und Weinlande in der obigen Gemeinde Grüble — Steuerbezirk Krupp, Gemeinde Grüble, XI ter Schätzungsbezirk (tiskano)"},
+    "p63_zusammenstellung_b": {
+        "schema": "No | Namen (Steuerbezirk Krupp / Gemeinde Grüble) | Des Grundstückes (Catastral-Parzellen Nro | Gesetzliche Eigenschaft dominical/Haus/rustical/Überland | Culturs Gattung | Flächen Inhalt Joch|Klafter) | Classe | Pachtungen (Pachtschilling fl|kr | Verbindlichkeit fl|kr | Summe fl|kr | Daher auf Ein N.Ö. Joch fl|kr) | Anmerkungen",
+        "pasovi": "4 pasovi (glava / vrstice 1–5 + Summe / 6–12 + Summe / 13–14) — read-v109 p63-band*",
+        "glas_val77": "vlm/p63-pass1.raw (1. prehod, celostranski) — strukturirano v raw-web-val109-2026-09/p63-v77-structured.json (16 zapisov; PROVISIONAL)",
+        "rows": "[ODLOŽENO OB KVOTI — band re-read + VLM glasovi odločajo; val 77 glas = kolizija vir, sam po sebi NE zadosten za vrstice (delno nezanesljiv 1. prehod)]",
+        "status": "ODLOŽENO-VLM (429 dnevna kvota izčrpna; p63-band* izrezki resumable — vrstice ob kvoti, vzorec p142-t-kultur2)",
+    },
+    "p65_zusammenstellung_a": {
+        "schema": "No | Kultur-Gattung | Veranlagungs Classe | Brutto-Geldertrag per Joch im Ganzen fl|kr | Samen (8 podstolpcev, Metzen) | Drescherlohn | Zug/Arbeit (Ochsen 2/4, eigene/erheürte, Tage) | Hand | Bauschaffungen | Dresch-lieferamt | Nach der Instruction (Procente | fl | kr) | Es zeigt sich Rein-Ertrag fl|kr | Anmerkung",
+        "pasovi": "4 pasovi + desni blok zoom (read-v109 p65-band* + p65-desni-zoom)",
+        "rows_direct": [
+            {"no": 1, "kultur": "Ackerland", "brutto_i": "22|463[?] — vs §1 23|44 (F-PZ-20 kolizija)", "rein_i": "13|30[?] vs §1 13|3/5", "status": "REVIEW"},
+            {"no": 2, "kultur": "Wiesen", "rein_ii": "3|—", "status": "soglasje s §2 II.te"},
+            {"no": 8, "kultur": "Bau-Area", "brutto": "16|30 1/2", "rein": "7|35", "status": "soglasje s §8"},
+        ],
+        "status": "DELNO REŠENO (val 109: struktura + 3 direktne vrstice + I7 križni pregled; polne vrstice čakajo VLM glasove — 429 dnevna kvota; F-PZ-19 PARTIAL)",
+    },
+    "datum_podpis_p65": "Neustadtl am 6ten July 1831[?] + podpis [REVIEW] — mlajši od § strani (1830/31)",
+}
+
 # --- strukturni zemljevid 71 strani (PREHOD 1, val 75; 43–47 korigirano val 81) ---
 STRUCTURE = [
     (1, "Naslovna: CATASTRAL-SCHÄTZUNGS-ELABORAT der Gemeinde Grüble, Land Krain, Kreis Neustadtl, Steuerbezirk Krupp, Schätzung District N°83"),
@@ -516,24 +727,24 @@ STRUCTURE = [
     (45, "IIIte Classe: Wirthschafts Kurse ('Gleich Kurs den I= et II= Ackerclassen') + Düngung = I. et II. + Natural Ertrag pro Joch (15/8/30/8/8/[6]/9/60/8/[6]/9) — CEL LIST X PREČRTAN + Anmerkung — val 81 prepis (korekcija val 75: NE 'IIa + parcele 96/311')"),
     (46, "Wiesen mit 2 Classen (I: zusammen 14 [Fth|fl REVIEW]; II: im Ganzen 8 3/8) + Kleine Gärten Einzige Classe (+ prečrtano 'große Gemüse=Gärten') + Weingärten Einzige Classe (zu M[?]… 9 [?] / Wein 12) + Hutweiden Einzige Classe (2 3/8) — val 81 prepis"),
     (47, "Huthweiden mit [supra: ganz=|Holz=] Nutznießung und Niederwald — Einzige Classe (CEL NASLOV X PREČRTAN) + proza (Holz/Ödland, Trinkwasser) + Actum ut supra (16. julij 1829[?]) + podpisi: Kappas + 6 prič (imena REVIEW) — val 81 prepis"),
-    (48, "Einvernehmungs-Protocoll 5. aprila 1830 (rožnat papir): proza o gojitvi/vrtninah[?] — brez per-parcelnih tabel (val 79 re-read)"),
-    (49, "Communications-Protokoll — nadaljevanje + podpisi"),
-    (50, "VERANTWORTLICHUNG des Cultural-Ausweises (zelen papir) — §1 Acker, Darstellung des Rein Ertrages"),
-    (51, "Campus nach Rektifizierung — ležeča tabela"),
-    (52, "Zweite Classe — Darstellung des Rein Ertrages"),
-    (53, "Dritte Classe — Darstellung"),
-    (54, "Vierte Classe — Darstellung"),
-    (55, "§5 Kleine Gärten — Erste Classe + red. Rektifikations-merkovka"),
-    (56, "§6 Größere Gärten — Erste Classe"),
-    (57, "§7 Weingärten — Erste Classe (7 parcel: 1,2,4,5,6,8,11?)"),
-    (58, "§8 Hutweiden — Erste Classe"),
-    (59, "§9 Wiesen/Hutweiden — Classe + podpis (28. april 1831[?])"),
-    (60, "Classe — tabela (nadaljevanje)"),
-    (61, "Classe — tabela (nadaljevanje)"),
+    (48, "Einvernehmungs-Protocoll 5. aprila 1830 (rožnat papir) — proza: uvedba + Gemeinde Ausgeschoss + Vortrag (vsebina = val 109 prepis, REVIEW proza)"),
+    (49, "Protokoll — nadaljevanje (proza o obveznostih, vsebina = val 109 prepis) + podpisi (imena = val 109 prepis) — val 109 korekcija (NE samostojen 'Communications-Protokoll')"),
+    (50, "VERANSCHLAGUNG des Cultur-Aufwandes und Darstellung des Rein-Ertrages — §1 Ackerland, I.te Classe (proza + tabela 1 vrstica + Begründung začetek) — val 109 prepis + korekcija (NE 'VERANTWORTLICHUNG')"),
+    (51, "§1 Ackerland — nadaljevanje Begründung (proza na zgornji tretjini; preostanek prazna predloga + bleed-through s p50) — val 109 korekcija (val 75 'Campus nach Rektifizierung ležeča tabela' OVRŽENO)"),
+    (52, "§1 Ackerland — II.te Classe (tabela II.to + Begründung + rdeči pripis) — val 109 korekcija (NE 'Dritte Classe')"),
+    (53, "§2 Wiesenland — I.te Classe (tabela I.to: 9|24 → 7|30) — val 109 korekcija (NE 'Dritte/Vierte')"),
+    (54, "§2 Wiesenland — II.te Classe (tabela II.to) — val 109 korekcija (NE 'Vierte')"),
+    (55, "§3 Kleine Gärten — einzige Classe — val 109 korekcija (NE '§5 Erste Classe')"),
+    (56, "§4 Größere Gärten — einzige Classe — val 109 korekcija (NE '§6')"),
+    (57, "§5 Weingärten — einzige Classe — val 109 korekcija (NE '§7'; NE '7 parcel 1,2,4,5,6,8,11' — to je p63 vsebina)"),
+    (58, "§6 Weiden — einzige Classe — val 109 korekcija (NE '§8 Hutweiden')"),
+    (59, "§7 Weiden mit Holznutzung — einzige Classe (2 vrstici: Weide + Holznutzung + vsota) — val 109 korekcija (NE '§9 Wiesen/Hutweiden')"),
+    (60, "§8 Bau-Area — Classe + podpis (Neustadtl am 18. Jenner 1831[?], Josef Scheram k.k. Schätz-Bezirks-Kommissär + rdeči revaluiert pripis) — val 109 korekcija"),
+    (61, "prazna tiskana predloga (proza brez vrednosti + prazna tabela Darstellung + prazna Begründung) — val 109 korekcija (NE 'nadaljevanje'); BREZ VLM (direktni odtis)"),
     (62, "Zusammenstellung B — naslovnica: jährliche Rente und Capitalwerth nach Pachtverträgen"),
     (63, "Zusammenstellung B — ležeča tabela (Renta/Capitalwerth; val 77 1. prehod: parcelni Pachtverträge — N°115/292/293/786/299 … Acker I, N°1031/1037/1040/779/1205/702/794 … Acker II, N°417 Wiesen, N°1020 Wiesen mit Weide; vsote per classe zapisane)"),
     (64, "Zusammenstellung A — naslovnica: gesammter Cultur-Aufwand (Acker Wies- und Weinland)"),
-    (65, "Zusammenstellung A — ležeča tabela (Culturfonds po kulturah; val 77 1. prehod delno — REVIEW)"),
+    (65, "Zusammenstellung A — ležeča tabela (Samen-Cultur-Ernte- und Drescher- überhaupt sämmtlicher Bau-Aufschaffungen; val 109 2. prehod: pasovi + desni blok — F-PZ-19)"),
     (66, "SPECIFISCHER AUSWEIS — naslovnica: Endresultate nach der Catastral Ertragserhebung"),
     (67, "Specifischer Ausweis — ležeča glavna tabela (val 77: odločilni re-read celic; Summa 1152 J 495 K)"),
     (68, "Protokoll (šedenj?) — 16. april 1829[?]"),
@@ -606,6 +817,75 @@ if rows_total_qklf > total_qklf:
 if unbenutzt_implied != {"joch": 71, "klafter": 998}:
     fail(f"I6 Total vrata: izpeljan unbenützbar {unbenutzt_implied} != 71 J 998 K (pričakovano iz F-PZ-10)")
 
+# I7 (NOVO val 109): Veranschlagung §1–§8 — strukturna vrata + aritmetični model
+# (Anschlag im Gelde = Roh-Ertrag × Taxa%; Rein-Ertrag = Roh − Anschlag).
+# Fail-fast le na STRUKTURI (8 sekcij, 12 vrstic p50–61); aritmetika = kontrola
+# po vrstici (rezultat gre v i7_checks, vrstice brez pokritosti ostajajo REVIEW — §4).
+def _flkr(s):
+    """'23' | '40 1/2' | '—' | '.' | '3[5?]' -> (float, nestabilno?) ali None (manjka).
+    '—' / '.' / '' = prazna celica = 0.0; '[?]' = nestabilna števka (ne blokira računa, označi status)."""
+    import re as _re
+    s = str(s)
+    unstable = "[?]" in s
+    s = _re.sub(r"\[[^\]]*\]", "", s).strip()
+    if s in ("", "—", "."):
+        return (0.0, unstable) if s else None
+    total = 0.0
+    for part in s.split():
+        if "/" in part:
+            a, b = part.split("/")
+            total += float(a) / float(b)
+        else:
+            total += float(part)
+    return (total, unstable)
+
+if len(VERANTWORTLICHUNG_P50_61["sections"]) != 8:
+    fail(f"I7 Veranschlagung: pričakovanih 8 sekcij §1–§8, prebranih {len(VERANTWORTLICHUNG_P50_61['sections'])}")
+_i7_rows = [c_ for s_ in VERANTWORTLICHUNG_P50_61["sections"] for c_ in s_["classes"] if c_["classe"] != "Summa"]
+if len(_i7_rows) != 11:
+    fail(f"I7 Veranschlagung: pričakovanih 11 vrstic (12 p50–61 − p61 prazna; p59 ima 2), prebranih {len(_i7_rows)}")
+
+i7_checks = []
+for s_ in VERANTWORTLICHUNG_P50_61["sections"]:
+    for c_ in s_["classes"]:
+        if c_["classe"] == "Summa":
+            continue
+        if "taxa" not in c_:
+            i7_checks.append({"sec": s_["sec"], "classe": c_["classe"], "status": "BREZ-MODELA",
+                              "note": "posebna vrstica brez Taxa/odmika (Holznutzung: Roh 6 = Rein 6) — direktni odtis"})
+            continue
+        roh = _flkr(c_['roh']['fl']), _flkr(c_['roh']['kr'])
+        taxa = _flkr(c_["taxa"]["wert"])
+        anschlag = _flkr(c_["anschlag"]["fl"]), _flkr(c_["anschlag"]["kr"])
+        rein = _flkr(c_["rein"]["fl"]), _flkr(c_["rein"]["kr"])
+        if None in roh or taxa is None:
+            i7_checks.append({"sec": s_["sec"], "classe": c_["classe"], "status": "NEPOTRJENO-branje", "note": "Roh/Taxa nestabilna števka ([?]) — model ne naslavlja"})
+            continue
+        roh_unstable = bool(roh[0][1] if roh[0] else False) or bool(roh[1][1] if roh[1] else False) or bool(taxa[1]) \
+            or bool(anschlag[0][1] if anschlag[0] else False) or bool(anschlag[1][1] if anschlag[1] else False) \
+            or bool(rein[0][1] if rein[0] else False) or bool(rein[1][1] if rein[1] else False)
+        roh_fl = roh[0][0] + roh[1][0] / 60.0
+        taxa_val = taxa[0]
+        ansl_exp = roh_fl * taxa_val / 100.0
+        rein_exp = roh_fl - ansl_exp
+        row = {"sec": s_["sec"], "classe": c_["classe"], "roh_fl": round(roh_fl, 4),
+               "taxa_pct": taxa_val, "anschlag_exp_fl": round(ansl_exp, 4),
+               "rein_exp_fl": round(rein_exp, 4), "unstable_digits": roh_unstable}
+        ansl_fl = (anschlag[0][0] if anschlag[0] else 0) + (anschlag[1][0] if anschlag[1] else 0) / 60.0 if (anschlag[0] or anschlag[1]) else None
+        rein_fl = (rein[0][0] if rein[0] else 0) + (rein[1][0] if rein[1] else 0) / 60.0 if (rein[0] or rein[1]) else None
+        if ansl_fl is not None:
+            row["anschlag_written_fl"] = round(ansl_fl, 4)
+            row["anschlag_closes"] = abs(ansl_fl - ansl_exp) <= 0.05
+        if rein_fl is not None:
+            row["rein_written_fl"] = round(rein_fl, 4)
+            row["rein_closes"] = abs(rein_fl - rein_exp) <= 0.05
+        if roh_unstable:
+            row["status"] = "REVIEW (branje [?])" if (row.get("anschlag_closes") and row.get("rein_closes")) else "REVIEW"
+        else:
+            row["status"] = "I7-EXACT" if (row.get("anschlag_closes") and row.get("rein_closes")) else "REVIEW (model ne zapira)"
+        i7_checks.append(row)
+VERANTWORTLICHUNG_P50_61["i7_checks"] = i7_checks
+
 # Summa kontrola (NI invarianta — F-PZ-04 pošteno OPEN)
 summa_qklf = qklf(ENDRESULTAT_SUMMA["joch"], ENDRESULTAT_SUMMA["klafter"])
 summa_delta_qklf = rows_total_qklf - summa_qklf  # pričakovano +4.800 (3 Joch)
@@ -644,8 +924,8 @@ area_red_m2 = round(pz_red * M2_PER_QKLFT)
 area_pv_m2 = round(pv * M2_PER_QKLFT)
 
 data = {
-    "val": 81,
-    "pass": "PZ PASS 7 (val 81: band-transkripcija p43–47 @nativno — F-PZ-12 RESOLVED; 40 pasov + 14 x3 zoomov + 54 VLM klicev + direkten odtis; struktura 43–47 korigirana vs val 75 — NE per-parcelne tabele, ampak Wirthschafts Kurse + Düngung + Natural Ertrag pro Joch per klasa; kolizije odločene s soglasjem ≥ 2; I1–I6 nespremenjeni; val 80 PASS 6: VAČ topološka izčrpnost F-PZ-17 + nativna re-digitation 6/7 Muster celic)",
+    "val": 109,
+    "pass": "PZ PASS 8 (val 109: 2. prehod p48–65 — protokoli + Verantwortlichung §1–§8 + Zus A/B; strukturna korekcija § števk F-PZ-18 — monotono §1–§8; aritmetični model I7 (Anschlag = Roh × Taxa %, Rein = Roh − Anschlag) potrjen EXACT na p57/p59; p65 Zus A band re-read — F-PZ-19 PARTIAL; p61 = prazna predloga; BREZ VLM glasov — 429 dnevna kvota, 45 izrezkov resumable ob kvoti; I1–I6 nespremenjeni; val 81 PASS 7: band-transkripcija p43–47 — F-PZ-12 RESOLVED; val 80 PASS 6: VAČ topološka izčrpnost F-PZ-17 + nativna re-digitation 6/7 Muster celic)",
     "issue": 42,
     "deterministic": True,
     "title": "PZ N83 — Katastral-Schätzungs-Elaborat (Konskripcija) 1828/30 [373419]",
@@ -659,11 +939,12 @@ data = {
             "PREHOD 5 (val 79): odločilni re-read Rektifikacijskega odseka p35–42 (+ p48) — celotne strani @2x + 10 izrezkov linij @4x (crops-v79/), 2 VLM prehoda + direkten odtis; struktura OPISNO-KVALITATIVNA (Kultur-Beschreibung + Muster-parcele), per-parcelne korekcije NE obstajajo → rešitvena pot F-PZ-04 zapreta",
         "PREHOD 6 (val 80): VAČ topološka izčrpnost (II. prikaz @300 dpi NE obstaja: pdfPageImage 608px fiksna, session raster = ovitek, OCR prazen; maksimum = PDF-native ~150 dpi) + nativna re-digitation 7 variančnih celic — FFT template-matching anchors + 3 neodvisna branja/celico (direkten odtis + VLM raw/norm + VLM x3); 6/7 REŠENIH, sistemski pomlaj odkrit; inter-bralčeva varianca PR#69↔val 79 razrešena (PR#69 pravilna na 30/594/1004; val 79 pravilna na 2451; struktura – J na 738/2451/2491)",
             "PREHOD 7 (val 81): band-transkripcija p43–47 @nativno — 5 strani × 8 pasov (h=328, korak=298, 30px preklop; shema val 80 testa) + 14 x3 zoom re-readov; 54 VLM klicev + direkten odtis avtorja (40 pasov NEODVISNO pred VLM); vrednosti = soglasje ≥ 2 neodvisna branja, kolizije 2:1 ali x3 odtisom; struktura 43–47 korigirana vs val 75 — F-PZ-12 RESOLVED (reinertrag_p43_47)",
+            "PREHOD 8 (val 109): 2. prehod p48–65 — protokoli (p48/49) + Veranschlagung/Darstellung §1–§8 (p50–61) + Zusammenstellung A/B (p62–65); karte + 45 izrezkov @nativno (crops-v109) z direktnim odtisom PRED VLM; VLM glasovi read-v109.mts NE IZVEDENI (429 dnevna kvota izčrpna z val 107/108 — 2,5 h kontinuiranih 429) — zaključeno z glasom #1 (direktni odtis) + modelom I7, vse REVIEW/odtis, izrezki resumable ob kvoti (vzorec p142-t-kultur2); struktura p50–61 KORIGIRANA (F-PZ-18: monotono §1–§8, 12 strani); aritmetični model I7 potrjen EXACT (p57/p59); p65 Zus A band re-read delno (F-PZ-19 PARTIAL); p61 prazna predloga + p62/p64 naslovnici brez VLM",
         ],
         "native_scans": "pz-n83/native/p01–p71.jpeg (pymupdf, metoda val 56)",
         "deterministic": True,
         "no_guessing": "§4: nič se ne ugiba; dvoumne oznake = REVIEW ali GATED (izpeljava z vrati); črne prečrtane vrednosti ohranjene; revizijski vzorec p67 (trenutna NAD prečrtano) dokumentiran na 5 neodvisnih primerih",
-        "rejected_reads": "p43–47 celostranski VLM vrstični prepis ZAVRJEN (halucinacije na gostem Kurrentu) — nadomeščeno z band-metodo val 81 (PREHOD 7, F-PZ-12 RESOLVED: 40 pasov + 14 zoomov + 54 VLM klicev + direkten odtis; številke s soglasjem ≥ 2, proza delno REVIEW); p65 Zusammenstellung A 1. prehod delno nezanesljiv — REVIEW",
+        "rejected_reads": "p43–47 celostranski VLM vrstični prepis ZAVRJEN (halucinacije na gostem Kurrentu) — nadomeščeno z band-metodo val 81 (PREHOD 7, F-PZ-12 RESOLVED: 40 pasov + 14 zoomov + 54 VLM klicev + direkten odtis; številke s soglasjem ≥ 2, proza delno REVIEW); p65 Zusammenstellung A 1. prehod celostranski delno nezanesljiv — ZAVRJEN kot vir resnice, val 109 pasovi + desni blok (PREHOD 8, F-PZ-19); p63 celostranski 1. prehod (val 77) ohranjen kot glas, NE kot vir resnice — val 109 band re-read odloča",
     },
     "provenance": {
         "uodid": 373419,
@@ -699,6 +980,9 @@ data = {
     "revision_1830_zusammen": REVISION_1830_ZUSAMMEN,
     "rektifikacija_beschreibung": REKTIFIKACIJA_BESCHREIBUNG,
     "reinertrag_p43_47": REINERTRAG_P43_47,
+    "protokolle_p48_49": PROTOKOLLE_P48_49,
+    "verantwortlichung_p50_61": VERANTWORTLICHUNG_P50_61,
+    "zusammenstellung_ab_p62_65": ZUS_AB_P62_65,
     "endresultat_p67": {
         "title": "Specifischer Ausweis der nach der Catastral Ertragserhebung entfallenden Endresultate (p66–67)",
         "columns": ["Posten N°", "CultursGattungen", "Classe", "Flächen Maas (Joch | □Klafter)", "Bruto Ertrag (vom J° Joch | im Ganzen)", "Abzug zur Compensation des Culturs-Aufwandes per XI.O.Joch"],
@@ -833,6 +1117,24 @@ data = {
             "status": "RESOLVED",
             "detail": "Sistemska topološka preverba vseh VAČ (vac.sjas.gov.si) dostopnih poti za PZ docid 41784: (1) pdfPageImage = FIKSNA 608px predogleda — parametri size/width/zoom/dpi/scale ignorirani (200, isti odgovor); (2) session-vezani IIIF raster (Presentation 3 manifest, /vac/iiif/manifest?uodid&docid&seq — metoda grafičnih listov val 42) obstaja TUDI za PZ, ampak vsebuje SAMO ovitek 100×50 (seq-agnostičen; info.json 404); (3) per-page OCR AnnotationList (pdf-text) = prazna resources (enako pdf-raw-text, val 56); (4) pdf-manifest canvasi = PDF točke (608×1024 pt), ne piksli; (5) PDF vsebuje NATIVNO 1 rastri/stran brez mask (1268×2135 portret / ~2850×2380 ležeče; LuraDocument v2.16, 2006) — učinkovito ~150 dpi. Sklep: maksimum = PDF-native skeni (že v pz-n83/native/ od val 75); pretekle @2x–@4x 'večave' = interpolacija brez novih informacij. Vpliv: (a) F-PZ-04 — vse peskovniške rešitvene poti IZČRPANE (F-PZ-14/16/17), ostaja zunanji Rektifikacijski protokol; (b) F-PZ-12 — band-metoda @nativno izvedljiva (8-pasovni test p43 čitljiv); (c) metodološki standard za prihodnje valove: NATIVNI piksli + večav SAMO za VLM berljivost, nikoli kot vir detajlov",
         },
+        {
+            "id": "F-PZ-18",
+            "title": "NOVO (val 109): strukturna korekcija p50–61 — Veranschlagung des Cultur-Aufwandes in Darstellung des Rein-Ertrages, monotono §1–§8 (12 strani)",
+            "status": "RESOLVED",
+            "detail": "Val 75 struktura p50–61 je bila sistemsko zmotna (oznake brez branja § števk): p50 = §1 Ackerland I.te Classe (NE 'VERANTWORTLICHUNG'), p51 = nadaljevanje Begrüning §1 + prazna predloga (NE 'Campus nach Rektifizierung ležeča tabela'), p52 = §1 II.te (NE 'Dritte'), p53 = §2 Wiesenland I.te, p54 = §2 II.te (NE 'Dritte/Vierte'), p55 = §3 Kleine Gärten (NE '§5'), p56 = §4 Größere Gärten (NE '§6'), p57 = §5 Weingärten (NE '§7'; val-75 opomba '7 parcel 1,2,4,5,6,8,11' je p63 Zus B vsebina), p58 = §6 Weiden (NE '§8 Hutweiden'), p59 = §7 Weiden mit Holznutzung (NE '§9'), p60 = §8 Bau-Area + podpis (NE 'nadaljevanje'), p61 = prazna tiskana predloga (NE 'nadaljevanje'). Dokaz: secnum zoomi p55–p60 (Kurrent § številke, direkten odtis 2×) + naslovni blok p50 + mreža §/Classe/verstic — drevesna struktura §1 (2 klasi + Begrüning nadaljevanje), §2 (2 klasi), §3–§8 (einzige; §7 = Weide + Holznutzung + vsota). Vpliv: izboljša navigacijo/lastnosti, NIČ na I1–I6/p67 (§22)",
+        },
+        {
+            "id": "F-PZ-19",
+            "title": "NOVO (val 109): Zusammenstellung A (p65) — band re-read z desnim blokom (Nach der Instruction / Rein-Ertrag)",
+            "status": "PARTIAL",
+            "detail": "1. prehod (val 77, celostranski) je bil delno nezanesljiv (REVIEW). Val 109: 4 pasovi + desni blok zoom @nativno (read-v109 p65-band* + p65-desni-zoom) + direkten odtis; struktura tabele potrjena (8 postenk: Ackerland I/II/III, Wiesen I/II, Kl.G, Gr.G, Weing, Weiden, W.m.Holzn. + Summa, Bau-Area; desni blok 'Nach der Instruction kommen jedoch anzuwenden' + 'Es zeigt sich Rein-Ertrag'); križni pregled z §1–§8 (I7): Wiesen II Rein 3|— SROGLASJE, Bau-Area 16|30½→7|35 SROGLASJE; Ackerland I Brutto '22|463[?]' vs §1 '23|44' ostaja KOLIZIJA (F-PZ-20) — nič se ne vsiljuje; podpis 'Neustadtl am 6ten July 1831[?]'. RAVEN: PARTIAL — polne vrstice p65 + p63 čakajo VLM glasove (read-v109 p63-band*/p65-band* + p65-desni-zoom, 45 izrezkov resumable); val 109 zaključen brez VLM (429 dnevna kvota) — glasovi ob kvoti (vzorec p142-t-kultur2)",
+        },
+        {
+            "id": "F-PZ-20",
+            "title": "NOVO (val 109): aritmetični model I7 — Anschlag = Roh × Taxa %, Rein = Roh − Anschlag (EXACT na p57/p59) + odprte kolizije",
+            "status": "PARTIAL",
+            "detail": "Model potrjen EXACT: p57 Weingärten 24 fl × 70 % = 16 fl 48 kr = Anschlag (EXACT), Rein 24 − 16.8 = 7|12 (pisano 7|10[?]); p59 Weide 1 × 25 % = —|15 (EXACT), Rein —|45 (EXACT), vsota 51 = 45+6 (EXACT); p52 blizu (16.8417×0.55 = 9|15.8 vs pisano 9|12¾[?]; Rein 7|35 ✓); p53/p55/p56 v rangu modela ob alternativnih branjih [?]. ODPRTE kolizije (nič se ne vsiljuje — §4): (a) p54 Wiesen II — Anschlag 1|— in Rein 3|— se NE ujemata z modelom (14×0.25 = 3.5; 11×0.25 = 2.75) — morda poseben režim (Drusch/Nutzen po Instrukciji), reši p65 Zus A desni blok; (b) p65 Zus A Acker I Brutto '22|463[?]' vs §1 '23|44' — Kurrent 22/23 + decimalka; (c) '132[?]' v Aufwand kr Weiden (§6/§7) — nenavadna oblika. i7_checks po vrstici v verantwortlichung_p50_61 — raven: kontrola, NE vrata. RAVEN: PARTIAL — odprte kolizije (a)–(c) ter nerešene dileme 1/2/7 iz direct-reads-v109.md čakajo VLM glasove (read-v109.mts, 45 izrezkov resumable — val 109 zaključen brez VLM, 429 dnevna kvota; glasovi ob kvoti)",
+        },
     ],
     "invariants_enforced": [
         "I1 prebivalstvo 222+219=441 (fail-fast)",
@@ -841,6 +1143,7 @@ data = {
         "I4 per-kultura §8 Einzeln enakosti (6 kultur, fail-fast)",
         "I5 Wiesen I+II = 45 J 812 K + izpeljava Wiesen I = 5 (fail-fast)",
         "I6 vrstice 1–8 + unbenützbar = Total 1220 J 1493 K (fail-fast)",
+        "I7 Veranschlagung §1–§8: 8 sekcij / 11 vrstic p50–61 (fail-fast); aritmetični model (Anschlag = Roh × Taxa %, Rein = Roh − Anschlag) = kontrola po vrstici i7_checks — NE vrata (F-PZ-20)",
     ],
     "invariant_violations": [],
     "generated_at": datetime.now(timezone.utc).isoformat(),
