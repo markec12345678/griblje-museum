@@ -4496,3 +4496,25 @@ Stage Summary:
 - PS parcele 779 → 735; KG v2.4 (8f803952) + KG-F13; timeline I6 pribit (735/438+221); coverage §24 14/14
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno)
 - Naslednje: p142-t-kultur2 ob kvoti (2. prehod 87/87); poln re-read p1–55 + p143; F-PV-03 (QKlft anomalija) / F-PV-04 (pasovni re-read); PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379
+
+---
+Task ID: 109
+Agent: Z.ai Code (glavna seja, val 109)
+Task: ISSUE #42 §4/§14 + #43 — PZ p48–65 2. prehod (PREHOD 8): protokoli p48/49 + Veranschlagung/Darstellung §1–§8 (p50–61) + Zusammenstellung A/B (p62–65); strukturna korekcija F-PZ-18 + aritmetični model I7; vgradnja + varovalke (user: "odlicno nadaljuj")
+
+Work Log:
+- Ugotovljeno stanje ob prevzemu: vala 107 (PR #111) in 108 (PR #112) že mergana v prejšnjem delu seje; veja feat/val109-issue72-pz-p48-65 že pripravljena — 45 izrezkov (make-crops-v109.py + manifest), direktni odtis glas #1 zapisan (direct-reads-v109.md), read-v109.mts resumable bralnik, PREHOD 8 v build-pz-1825.py delno napisan, JSON +720 vrstic
+- VLM kvota: trdo 429 — zadnji uspešen klic 29. 9. 20:06 UTC (val 107 tile-i); 2,5 h kontinuiranih 429 (05:11–07:36 UTC) kljub ponovitvam vs. 60 s v koščkih → dnevni značaj kvote, ne urni
+- Odločitev: val zaključen BREZ VLM glasov (vzorec val 108 "0 VLM klicev" + p142-t-kultur2 "ob kvoti"); vsiljevanje čakanja 6+ h ne izvedljivo
+- Iskrenostni zapisi builderja dopolnjeni: pass string (+ "BREZ VLM glasov — 429 dnevna kvota, 45 izrezkov resumable ob kvoti"), reading_honesty vseh 3 sekcij (+ izrecna odložitev + vzorec), PENDING-VLM → ODLOŽENO-VLM/DELNO REŠENO (p63 vrstice: val 77 glas sam NE zadosten — delno nezanesljiv 1. prehod), F-PZ-19/20 detaili (+ RAVEN: PARTIAL + odložitev), glava PREHOD 8 (+ dejansko stanje)
+- Builder regeneriran čist: I1–I6 ✓, violations prazne, 20 najdb (RESOLVED 12 / PARTIAL 3 / REVIEW 3 / OPEN 1 / TO_VERIFY 1)
+- Testi: +10 varovalk (tests/val109-pz-p48-65.test.ts — meta/PASS 8/BREZ VLM; metoda PREHOD 8 z "NE IZVEDENI"+"429"; F-PZ-18 12 popravkov monotono §1–§8; protokoli 5. April 1830; TRANSCRIBED=0; model I7 11 vrstic/7 EXACT/p54 "model ne zapira"/Holznutzung BREZ-MODELA; invarianta I7; Zus A/B p63 ODLOŽENO + p65 3 vrstice; surovine manifest 45 + 0 glasov; rejected_reads p63 glas NE vir) + pini pz-konskripcija.test.ts (val 109 / PASS 8; najdbe 17→20 z F-PZ-18..20; invarianti 6→7 z I7; findings count F-PZ-17 test 17→20)
+- CI popratek: vlm-v109/ prazen direktorij ni komitiran (git ne sledi praznim) → readdirSync ENOENT v CI; test zdaj obravnava manjkajoči direktorij (iskreno stanje enako: 0 glasov)
+- Potek: push → PR #113 → CI (1. run: fail surovine-test; popratek d7ddbb5) → CI 3/3 ZELENO → merge (main @ d83ebdc) → izbris veje (oddaljena + lokalna) → komentar na #72 (5906986315) → worklog
+- Docs: research-griblje/124-val109-pz-p48-65.md + KAZALO 124 + README 163. sklop; surovine raw-web-val109-2026-09/ komitirane (crops-v109 80 PNG 156 MB + manifest + read-v109.mts + loop-v109.sh + direct-reads-v109.md + p63-v77-structured.json; vlm-v109/ ostaja lokalno prazno — čaka kvoto)
+
+Stage Summary:
+- ISSUE #42 §4/§14: PZ p48–65 2. prehod ZAPRT — strukturna resnica F-PZ-18 (monotono §1–§8 čez 12 strani; val 75 oznake korigirane vseh 12) + aritmetični model I7 EXACT (p57/p59) kot kontrola; protokoli 5. April 1830 + §1–§8 + Zus A/B strukturno vgrajeni
+- Poštenost: TRANSCRIBED = 0 — vse vrednosti glas-1 raven (REVIEW/odtis); nič se ne vsiljuje (§4); 7 odprtih dilem + p54 kolizija z modelom izrecno zapisani; VLM glasovi (45 izrezkov) resumable ob kvoti → mikroprehod 8b (dvig § vrednosti + p63 vrstice + dileme)
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val); ATLAS §22 nespremenjena (SRC dokument — kaskada KG ni potrebna)
+- Naslednje: VLM glasovi ob kvoti (45 izrezkov + p142-t-kultur2 → mikroprehod 8b); PT p7 @300dpi; PR Grenz-Beschreibung; poln re-read p1–55 + p143; F-PV-03/F-PV-04; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379 (okt./nov. 2026)
