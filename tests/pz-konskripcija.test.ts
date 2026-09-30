@@ -175,10 +175,10 @@ const kg = kgRaw as unknown as {
   findings: { finding_id: string; val: number; status: string }[];
 };
 
-describe("val 81 — PZ PASS 7 dokumentna resnica [373419]", () => {
-  test("meta: uodid 373419 / docid 41784 / 71 strani / val 81 PASS 7", () => {
-    expect(pz.val).toBe(81);
-    expect(pz.pass).toContain("PASS 7");
+describe("val 109 — PZ PASS 8 dokumentna resnica [373419]", () => {
+  test("meta: uodid 373419 / docid 41784 / 71 strani / val 109 PASS 8", () => {
+    expect(pz.val).toBe(109);
+    expect(pz.pass).toContain("PASS 8");
     expect(pz.provenance.uodid).toBe(373419);
     expect(pz.provenance.docid).toBe(41784);
     expect(pz.provenance.pages).toBe(71);
@@ -416,9 +416,9 @@ describe("val 81 — PZ PASS 7 dokumentna resnica [373419]", () => {
     expect(joined).toContain("SPECIFISCHER AUSWEIS");
   });
 
-  test("najdbe: 17; nove F-PZ-10..17 z iskrenimi statusi", () => {
+  test("najdbe: 20; nove F-PZ-18..20 (val 109) z iskrenimi statusi", () => {
     const byId = new Map(pz.findings.map((f) => [f.id, f]));
-    expect(pz.findings).toHaveLength(17);
+    expect(pz.findings).toHaveLength(20);
     expect(byId.get("F-PZ-01")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-02")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-06")!.status).toBe("RESOLVED");
@@ -433,14 +433,18 @@ describe("val 81 — PZ PASS 7 dokumentna resnica [373419]", () => {
     expect(byId.get("F-PZ-04")!.status).toBe("OPEN");
     expect(byId.get("F-PZ-12")!.status).toBe("RESOLVED"); // val 81: band-transkripcija p43–47 izvedena
     expect(byId.get("F-PZ-16")!.status).toBe("RESOLVED"); // val 79: Rektifikacija opisna
+    expect(byId.get("F-PZ-18")!.status).toBe("RESOLVED"); // val 109: strukturna korekcija p50–61 (monotono §1–§8)
+    expect(byId.get("F-PZ-19")!.status).toBe("PARTIAL"); // val 109: p65 Zus A brez VLM glasov (429 kvota)
+    expect(byId.get("F-PZ-20")!.status).toBe("PARTIAL"); // val 109: model I7 EXACT p57/p59 + odprte kolizije
     // vsaka najdba ima detail
     for (const f of pz.findings) expect(f.detail.length).toBeGreaterThan(30);
   });
 
-  test("builder invarianti: 6 zapisanih (I1–I6), kršitve prazne", () => {
-    expect(pz.invariants_enforced).toHaveLength(6);
+  test("builder invarianti: 7 zapisanih (I1–I7), kršitve prazne", () => {
+    expect(pz.invariants_enforced).toHaveLength(7);
     expect(pz.invariants_enforced.join(" ")).toContain("I4");
     expect(pz.invariants_enforced.join(" ")).toContain("I6");
+    expect(pz.invariants_enforced.join(" ")).toContain("I7"); // val 109: Veranschlagung §1–§8 + model I7 kontrola
     expect(pz.invariant_violations).toEqual([]);
   });
 
@@ -659,8 +663,8 @@ describe("val 79 — Rektifikacija p35–42 OPISNO-KVALITATIVNA (F-PZ-16)", () =
     expect(f17.detail).toContain("608px");
     expect(f17.detail).toContain("~150 dpi");
     expect(f17.detail).toContain("IZČRPANE");
-    // findings 17 (F-PZ-01..17)
-    expect(pz.findings).toHaveLength(17);
+    // findings 20 (F-PZ-01..20; val 109 doda F-PZ-18..20)
+    expect(pz.findings).toHaveLength(20);
     // F-PZ-04: vse tri poti dokumentirane
     const f04 = pz.findings.find((f) => f.id === "F-PZ-04")!;
     expect(f04.detail).toContain("F-PZ-17");
