@@ -4489,6 +4489,7 @@ Work Log:
 - F11: 9 kršitev (nespremenjeno), veznost p54→p58 OK, REVIEW 52 strani, aritmetika 0/79/9, sidra 3/7 — REVIEW raven (NR-14); c4-metrika: K9 120→49, K10 70→60, jk_format 7→6
 - Testi: +18 varovalk (tests/val108-re-read-79.test.ts) + prehod pinov v ~30 testnih datotekah (KG 2.814/3.091/3.656/3.795 → 2.770/3.072/3.612/3.776; sha 23a2ae50 → 8f803952; R-03795 → R-03776; parcele 779 → 735; markerji 63/16 → 0 (v108-re-read 148); K9 120 → 49; K10 70 → 60 / 7 → 6; PARTIAL 1454 → 1410; NONE 2127 → 2111; val76 I6 898/461+333 → 735/438+221) — 960 testov: 949 pass / 11 skip / 0 fail; tsc čist
 - Docs: research-griblje/123-val108 + KAZALO 123 + README 162. sklop + worklog; surovine raw-web-val108-2026-10/ (pagebands 59, sheets 79, sheetsB 79, rowcrops 184) + band-v108/ (targets/slots/reading/changes)
+- Potek: push → PR #112 → CI popratek (dimni testi API-jev: map parcels 2814→2770/unknown 221/no-record 2111, story overview 3612/relations 3776) → CI 3/3 ZELENO → merge (main @ 93c8b65) → izbris veje (oddaljena 204 + lokalna) → komentar na #72 (5902086172) → worklog
 
 Stage Summary:
 - ISSUE #42 §4/§14: SISTEMSKA napaka P1 (val 82) odkrita in dokumentirana — off-by-one (p98 r5+), col-split spoji, halucinacije; 148 vrednostnih popravkov s snimkami; register jk vrednosti na 14 straneh zdaj 2-prehod + direktni vid (instrument val 61/88)
