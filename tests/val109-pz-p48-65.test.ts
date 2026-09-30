@@ -168,7 +168,11 @@ describe("val 109 — PZ p48–65 2. prehod (PREHOD 8) [124-val109]", () => {
       crops: { cell: string }[];
     };
     expect(manifest.crops).toHaveLength(45);
-    const done = readdirSync(join(dir, "vlm-v109")).filter((f) => f.endsWith(".json"));
+    // vlm-v109/ je prazen (git ne komitira praznih direktorijev) → obravnavaj manjkajočega:
+    const vlmDir = join(dir, "vlm-v109");
+    const done = existsSync(vlmDir)
+      ? readdirSync(vlmDir).filter((f) => f.endsWith(".json"))
+      : [];
     expect(done).toHaveLength(0); // brez VLM glasov — 429 dnevna kvota
     expect(existsSync(join(dir, "direct-reads-v109.md"))).toBe(true);
     const direct = readFileSync(join(dir, "direct-reads-v109.md"), "utf8");
