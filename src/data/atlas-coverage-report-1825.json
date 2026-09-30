@@ -1,8 +1,8 @@
 {
- "val": 107,
+ "val": 108,
  "pass": "PASS 8",
  "issue": 42,
- "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE; regeneriran val 107, 86b del 3)",
+ "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE; regeneriran val 108, re-read 14 strani)",
  "spec": "issue #42 §23: TOTAL / VERIFIED / PARTIAL / CONFLICT / UNKNOWN / NOT FOUND za vsako kategorijo",
  "deterministic": true,
  "regenerable": "ponovni zagon build-coverage-report.py ob spremembi registrov",
@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "23a2ae50babb628cdf01b1efddac7b4669afa698ebc4ac377c503e326beb9571",
+  "kg_sha256": "8f8039527e089e82c365206b257225a608f320b1bb7b06cb65c421ef7825a85c",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -173,9 +173,9 @@
   {
    "category_id": "parcels",
    "title": "Parcelni register 1825 (PUA + PS)",
-   "total": 2814,
+   "total": 2770,
    "VERIFIED": 907,
-   "PARTIAL": 1454,
+   "PARTIAL": 1410,
    "CONFLICT": 453,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -183,8 +183,8 @@
     "PUA/REVIEW": 675,
     "PUA/REVIEW-CONFLICT": 453,
     "PUA/VERIFIED-2x": 907,
-    "PS/SINGLE_SOURCE": 775,
-    "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 4
+    "PS/SINGLE_SOURCE": 733,
+    "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 2
    },
    "mapping_rule": "PUA: VERIFIED-2x→VERIFIED, REVIEW→PARTIAL, REVIEW-CONFLICT→CONFLICT; PS: vse SINGLE_SOURCE→PARTIAL (1 z zastavico F14 ostaja PARTIAL z opombo)",
    "evidence": [
@@ -195,12 +195,12 @@
   {
    "category_id": "parcel_geometry",
    "title": "Parcelne meje / geometrija (poligoni)",
-   "total": 2814,
+   "total": 2770,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
    "UNKNOWN": 0,
-   "NOT_FOUND": 2814,
+   "NOT_FOUND": 2770,
    "native": {
     "polygons_documented": 0,
     "raster_basis": "A01–A05 rastri val 42 (VAČ)",
@@ -551,11 +551,11 @@
   {
    "category_id": "unknowns",
    "title": "Neznanke — prečni pregled (izrecno štetje, brez procentov)",
-   "total": 4159,
+   "total": 4043,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
-   "UNKNOWN": 4159,
+   "UNKNOWN": 4043,
    "NOT_FOUND": 0,
    "native": {
     "aggregate": [
@@ -566,12 +566,12 @@
      },
      {
       "item": "PS parcele z raba UNKNOWN",
-      "count": 249,
+      "count": 221,
       "category": "parcels"
      },
      {
       "item": "PS parcele cross_ref_to_pua UNKNOWN (namespace vprašanje F14)",
-      "count": 779,
+      "count": 735,
       "category": "parcels"
      },
      {
@@ -596,7 +596,7 @@
      },
      {
       "item": "parcele brez geometrije",
-      "count": 2814,
+      "count": 2770,
       "category": "parcel_geometry"
      },
      {

@@ -285,18 +285,18 @@ describe("parcel sloj: filtri (§19: način + raba + besedilo)", () => {
 describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
   test("parcelLandUseCounts čez KG = registrirane resnice val 89 (projekcija 143/143)", () => {
     const features = parcelFeatures();
-    expect(features).toHaveLength(2814); // val 98: 2933 → val 107: 2814
+    expect(features).toHaveLength(2770); // val 98: 2933 → val 107: 2770
     const buckets = parcelExploreCounts(features as ExploreParcel[], "all", "all", "").buckets as Record<LandUseBucket, number>;
-    expect(buckets.njiva).toBe(294); // val 98: 297 → val 107: 294
+    expect(buckets.njiva).toBe(295); // val 98: 297 → val 107: 294 → val 108: 295
     expect(buckets.travnik).toBe(84); // val 98: 97 → val 107: 84
-    expect(buckets.gozd).toBe(15); // val 98: 16 → val 107: 15
+    expect(buckets.gozd).toBe(14); // val 98: 16 → val 107: 15 → val 108: 14
     expect(buckets.vrt).toBe(16);
     expect(buckets["pašnik"]).toBe(16); // val 98: 22 → val 107: 16
     expect(buckets["dvorišče"]).toBe(1); // val 89: nova EXACT kategorija (Hofraithe)
     expect(buckets["vinograd"]).toBe(1); // val 89: nova EXACT kategorija (Reb/Weingarten)
     expect(buckets.drugo).toBe(11);
-    expect(buckets.UNKNOWN).toBe(249); // val 98: 333 → val 107: 249
-    expect(buckets.NONE).toBe(2127); // 2035 PUA + 92 PS brez kultur zapisa (val 98: 136→104; val 107: 104→92)
+    expect(buckets.UNKNOWN).toBe(221); // val 98: 333 → val 107: 249 → val 108: 221
+    expect(buckets.NONE).toBe(2111); // 2035 PUA + 76 PS brez kultur zapisa (val 98: 136→104; val 107: 104→92; val 108: 92→76)
   });
 
   test("sortParcelsForBrowse: dokumentirana raba najprej, sekcije I–V, številke", () => {
@@ -320,9 +320,9 @@ describe("parcel sloj: števci + determinističen vrstni red brskanja", () => {
   test("parcelExploreCounts spoštuje kombinacijo način + raba + besedilo", () => {
     const features = parcelFeatures() as ExploreParcel[];
     const all = parcelExploreCounts(features, "all", "all", "");
-    expect(all.visible).toBe(2814);
+    expect(all.visible).toBe(2770);
     const njiva = parcelExploreCounts(features, "all", "njiva", "");
-    expect(njiva.visible).toBe(294); // val 98: 297 → val 107: 294
+    expect(njiva.visible).toBe(295); // val 98: 297 → val 107: 294 → val 108: 295
     const evidenced = parcelExploreCounts(features, "evidenced", "all", "");
     expect(evidenced.visible).toBe(2035); // PUA TRANSCRIBED = DOKAZANO
   });

@@ -654,10 +654,10 @@ cadastral = {
 
 # 3c) source-coverage-1825 — pokritost virov (issue #42 §6/§14)
 source_coverage = {
-    "val": 107,
+    "val": 108,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.3 + registrov; regeneriran val 107, 86b del 3)",
+    "title": "Pokritost virov — SI AS 176/N/N83 + kartografija (izpeljan iz KG v2.4 + registrov; regeneriran val 108, re-read 14 strani)",
     "derived_from": ["knowledge-graph-1825.json (v2.3) SOURCE nodes", "pua/ps/pt registri", "a01/pass4b inventarja", "ps-n83/band-v86/ (val 86 + val 98 + val 107 kolonski tile-i)"],
     "deterministic": True,
     "sources": src_list,
@@ -747,10 +747,10 @@ story_engine = {
 # 4. MASTER COVERAGE REPORT
 # ---------------------------------------------------------------------------
 quality_gate = {
-    "val": 107,
+    "val": 108,
     "pass": "PASS 8",
     "issue": 42,
-    "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE; regeneriran val 107, 86b del 3)",
+    "title": "ATLAS 1825 — FINAL COVERAGE REPORT (issue #42 §23 QUALITY GATE; regeneriran val 108, re-read 14 strani)",
     "spec": "issue #42 §23: TOTAL / VERIFIED / PARTIAL / CONFLICT / UNKNOWN / NOT FOUND za vsako kategorijo",
     "deterministic": True,
     "regenerable": "ponovni zagon build-coverage-report.py ob spremembi registrov",

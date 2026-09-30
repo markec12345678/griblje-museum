@@ -10,32 +10,32 @@ import { resolve } from "node:path";
 const BASE = resolve(import.meta.dir, "..", "research-griblje", "atlas-1825");
 const kg = JSON.parse(readFileSync(resolve(BASE, "knowledge-graph-1825.json"), "utf8"));
 
-describe("knowledge-graph-1825 v2.3 [val 107]", () => {
+describe("knowledge-graph-1825 v2.4 [val 108]", () => {
   test("struktura + velikosti (varovalke)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.3");
+    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
     expect(kg.findings.map((f: { finding_id: string }) => f.finding_id)).toEqual([
-      "KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08", "KG-F09", "KG-F10", "KG-F11", "KG-F12",
-    ]); // KG-F08 (val 72): GEOREF v2 — MO koordinate preko similaritete po reki Kolpi; KG-F09 (val 77): PZ Konskripcija PASS 2; KG-F10 (val 84): SRC-PS vozlišče po val 82/83; KG-F11 (val 98): 86b del 2 — tile 3. glas p95–109; KG-F12 (val 107): 86b del 3 — tile 3. glas zaključen p110–141
+      "KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08", "KG-F09", "KG-F10", "KG-F11", "KG-F13", "KG-F12",
+    ]); // KG-F08 (val 72): GEOREF v2 — MO koordinate preko similaritete po reki Kolpi; KG-F09 (val 77): PZ Konskripcija PASS 2; KG-F10 (val 84): SRC-PS vozlišče po val 82/83; KG-F11 (val 98): 86b del 2 — tile 3. glas p95–109; KG-F12 (val 108): 86b del 3 — tile 3. glas zaključen p110–141
     // KG-F02: popravljen SRC katalog — PT = uodid 373416 (ne 227668 = A02)
     const pt = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PT");
     expect(pt.uodid).toBe(373416);
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3656); // val 98: 3775 → val 107: 3656
-    expect(kg.edges.length).toBe(3795); // val 98: 3859 → val 107: 3795
+    expect(kg.nodes.length).toBe(3612); // val 98: 3775 → val 107: 3612
+    expect(kg.edges.length).toBe(3776); // val 98: 3859 → val 107: 3776
     expect(kg.claims.length).toBe(622);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.length).toBe(4);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2814 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 107: PS parcele 898→779 po F-PV-05 korekcijah 86b del 3)", () => {
+  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2770 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 108: PS parcele 779→735 po F-PV-05 korekcijah 86b del 3)", () => {
     expect(kg.node_stats).toEqual({
       SOURCE: 13,
       HOUSE: 167,
       PERSON: 488,
-      PARCEL: 2814,
+      PARCEL: 2770,
       BP: 100,
       TOPONYM: 37,
       EVENT: 3,
@@ -235,7 +235,7 @@ describe("knowledge-graph-1825 v2.3 [val 107]", () => {
   test("coverage: brez umetnega procenta, kategorije z dejanskim stanjem", () => {
     expect(kg.coverage.note).toContain("brez umetnega skupnega procenta");
     const parcels = kg.coverage.categories.find((c: { category: string }) => c.category === "parcels")!;
-    expect(parcels.total).toBe(2814); // val 98: 2933 → val 107: 2814
+    expect(parcels.total).toBe(2770); // val 98: 2933 → val 107: 2770
     expect(parcels.breakdown.geometry).toBe("NOT AVAILABLE");
   });
 });

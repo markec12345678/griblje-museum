@@ -1,0 +1,2471 @@
+{
+ "meta": {
+  "val": "108",
+  "source": "agentov vid (reading-v108.json)",
+  "method": "1:1 val 88; v108 glas primarni; popravki s snimkami; [g]=gestrichen rot marker v anmerkung",
+  "discovery": "ODKRITJE: P1 (val 82) ima na p98 od r5 naprej SISTEMSKI off-by-one (vrednost iz naslednje vrstice) + na večini ostalih strani col-split spoje (j=1 + 0xx v klafter jebral kot 10xx v jaethe) + posamezne halucinacije — zato val 108 razširjen na poln re-read 14 strani (p95,98,105,107,113,114,120,128,129,130,133,135,136,137), ne samo 79 markerjev"
+ },
+ "tally": {
+  "agree": 52,
+  "corrected": 148
+ },
+ "changes": [
+  {
+   "page": 95,
+   "row": 0,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "2379",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1919"
+   },
+   "note": "REG 2379=halucinacija; tile_diag 1919 soglasen",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 95,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1",
+    "klafter": "1723"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "1122"
+   },
+   "note": "REG 1723, P2 1123 — vid ×9: 1122",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 95,
+   "row": 5,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "242"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "782"
+   },
+   "note": "REG 242, P2 742 — vid ×9: 782 (5 ima prečko, 8 dve zanki)",
+   "gestrichen": false
+  },
+  {
+   "page": 95,
+   "row": 6,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1",
+    "klafter": "1141"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "1146"
+   },
+   "note": "REG/P1/P2 1141 — zadnja=6 (zanka+rep), ne 1",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 98,
+   "row": 4,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1922"
+   },
+   "new": {
+    "jaethe": "9",
+    "klafter": "902"
+   },
+   "note": "REG 1922=spoj 9+902 (col-split)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 5,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1",
+    "klafter": "73"
+   },
+   "new": {
+    "jaethe": "9",
+    "klafter": "901"
+   },
+   "note": "REG 1|73 = vrednost r6 — P1 off-by-one od r5",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 98,
+   "row": 6,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "737"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "73"
+   },
+   "note": "REG 737 = vrednost r7",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "389"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "737"
+   },
+   "note": "REG 389 = vrednost r8",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 8,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "661"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "389"
+   },
+   "note": "REG 661 = vrednost r9",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 9,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1188"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "661"
+   },
+   "note": "REG 1188 = vrednost r10",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "558"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1188"
+   },
+   "note": "REG 558 = vrednost r11; hiša 25 — vid r10/r11: 1188=r10, 558=r11",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 11,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "558"
+   },
+   "note": "REG prazno — 558 pripada hiši 26 (r11); tile_diag 1288≈1278 od r12",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 98,
+   "row": 12,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1278"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1250"
+   },
+   "note": "REG 1278 ✗ — vid: 1250",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1",
+    "klafter": "171"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1278"
+   },
+   "note": "REG 1|171 = vrednost r14",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 98,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1287"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "171"
+   },
+   "note": "REG 1287 = vrednost r15",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1209"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1287"
+   },
+   "note": "REG 1209 = vrednost r16",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "594"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1209"
+   },
+   "note": "REG 594 = vrednost r17",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1163"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "594"
+   },
+   "note": "REG 1163 = vrednost r18",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "868"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1163"
+   },
+   "note": "REG 868 = vrednost r19",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 98,
+   "row": 19,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "11",
+    "klafter": "835"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "868"
+   },
+   "note": "REG 11|835 = Fürtrag (posebna vrstica); hiša 27",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 105,
+   "row": 0,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "894"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "596"
+   },
+   "note": "REG 894 ✗",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 1,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 2,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "265"
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "865"
+   },
+   "note": "REG |265 ✗ — vid: j=2 (lok+rep), k=865 (8=dve zanki)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 4,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "77"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "97"
+   },
+   "note": "REG 77 ✗ — prvi=9 (zanka+rep)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 5,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 6,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "294"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "291"
+   },
+   "note": "REG 294 ✗ — zadnja=1 (rep)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 8,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 9,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "632"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "892"
+   },
+   "note": "REG 632 ✗",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "302"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "262"
+   },
+   "note": "REG 302 ✗",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 11,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 12,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "938"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "238"
+   },
+   "note": "REG 938 ✗ — vid: 238 (2-lok,3-dva loka,8-dve zanki)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "335"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "395"
+   },
+   "note": "REG 335 ✗ — srednji=9 (zanka+rep)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 14,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 15,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1160"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "60"
+   },
+   "note": "REG 1160=spoj 1+60 (col-split)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 105,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1149",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "149"
+   },
+   "note": "REG 1149| jaethe=spoj 1+149 (col-split) — TARGET g2079; tile 646=halucinacija",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 105,
+   "row": 18,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "",
+   "new_anmerkung": "[gestrichen rot — val 108]"
+  },
+  {
+   "page": 105,
+   "row": 19,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1126"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "264"
+   },
+   "note": "REG 1126 ✗ — vid: 1|264 (4=b-oblika)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 107,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1006",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1206"
+   },
+   "note": "REG 1006| ✗ — vid: 1206 (4 znaki v klafter)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 107,
+   "row": 4,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1 939"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "989"
+   },
+   "note": "REG 1|939 ✗ — srednji=8 (dve zaprti zanki) ×9",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 107,
+   "row": 5,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1 838"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "528"
+   },
+   "note": "REG 1|838 ✗ — vid: 528 (5 prečka, 2 lok, 8 dve zanki)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 107,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "944"
+   },
+   "new": {
+    "jaethe": "3",
+    "klafter": "164"
+   },
+   "note": "REG 944| ✗ — vid: 3|164 (delilnik med 3 in 164)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 107,
+   "row": 8,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1 355"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "555"
+   },
+   "note": "REG 1|355 ✗ — srednji=5 (prečka) ×9",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 107,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "859",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "259"
+   },
+   "note": "REG 859| ✗ — prvi=2 (lok+rep brez zank)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 107,
+   "row": 12,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "655",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "635"
+   },
+   "note": "REG 655| ✗ — srednji=3 (dva loka brez prečke) ×9",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 107,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "850",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "350"
+   },
+   "note": "REG 850| ✗ — prvi=3 (dva odprta loka)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 107,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "593",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "593"
+   },
+   "note": "REG 593| ✗ — col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 107,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "+ 746"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "46"
+   },
+   "note": "REG +746 ✗ — vid: 1|46 (dvom 46/746)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 107,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "+ 589",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "939"
+   },
+   "note": "REG 589| ✗ — vid: 1|939 (srednji=3)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 1,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1021"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "421"
+   },
+   "note": "REG 1021 ✗ — vid ×12: 421 (3 znaki)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 113,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1028"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "028"
+   },
+   "note": "REG 1028| ✗ — vid: 1|028 (col-split)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 113,
+   "row": 5,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "218"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "216"
+   },
+   "note": "REG 218 ✗ — zadnja=6 (ena zanka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 113,
+   "row": 6,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1044",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1044"
+   },
+   "note": "REG 1044| ✗ col-split + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1038",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "038"
+   },
+   "note": "REG 1038| ✗ col-split + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 8,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1096",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "096"
+   },
+   "note": "REG 1096| ✗ col-split + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 9,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "alto [rot]",
+   "new_anmerkung": "alto [rot]; [gestrichen rot — val 108]"
+  },
+  {
+   "page": 113,
+   "row": 10,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "alto [rot]",
+   "new_anmerkung": "alto [rot]; [gestrichen rot — val 108]"
+  },
+  {
+   "page": 113,
+   "row": 11,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1089",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1089"
+   },
+   "note": "REG 1089| ✗ col-split + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1200",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1200"
+   },
+   "note": "REG 1200| ✗ col-split + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1109",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1109"
+   },
+   "note": "REG 1109| ✗ col-split + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1050",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1080"
+   },
+   "note": "REG 1050 ✗ — tretja=8 (dve zanki) ×12; marker dvom",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 16,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "Bank fopfbllggen 1811 [rot]",
+   "new_anmerkung": "Bank fopfbllggen 1811 [rot]; [gestrichen rot — val 108]"
+  },
+  {
+   "page": 113,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1247"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "247"
+   },
+   "note": "REG 1247| ✗ col-split + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 113,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1190",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1194"
+   },
+   "note": "REG 1190| ✗ — zadnja=4 (b-oblika)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 113,
+   "row": 19,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1168",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1462"
+   },
+   "note": "REG 1168| ✗ col-split + vrednost + prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 114,
+   "row": 0,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1046",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1046"
+   },
+   "note": "REG 1046| ✗ col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 1,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "7207",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "961"
+   },
+   "note": "REG 7207| ✗ halucinacija — vid: 961",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 2,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "946",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "946"
+   },
+   "note": "REG 946| ✗ col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "749",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "749"
+   },
+   "note": "REG 749| ✗ col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 4,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1400",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1128"
+   },
+   "note": "REG 1400| ✗ — vid: 1128 (zadnja=8 dve zanki)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 5,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1100",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "115"
+   },
+   "note": "REG 1100| ✗ — vid: 115 (3 znaki)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 6,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "115",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "815"
+   },
+   "note": "REG 115| ✗ — vid: 815 (prvi=8 dve zanki)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "516",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "6",
+    "klafter": "526"
+   },
+   "note": "REG 516| ✗ — vid: 6|526 (Jaethe=6 jasno)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 8,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "6",
+    "klafter": "46"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "1229"
+   },
+   "note": "REG 6|46 ✗ — vid: 1|1229",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 114,
+   "row": 9,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1",
+    "klafter": "1239"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1239"
+   },
+   "note": "REG 1|1239 ✗ j — vid: 1239 v klafter",
+   "gestrichen": true,
+   "prev_jk_review": "v86-pass2-split"
+  },
+  {
+   "page": 114,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "800",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1104"
+   },
+   "note": "REG 800| ✗ — vid: 1104",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 11,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1044",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "48"
+   },
+   "note": "REG 1044| ✗ col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 114,
+   "row": 12,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "10",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "239"
+   },
+   "note": "REG 10| ✗ — vid: 1|239",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 114,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1249",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1249"
+   },
+   "note": "REG 1249| ✗ col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 114,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1074",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1109"
+   },
+   "note": "REG 1074| ✗ — vid: 1109",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1190",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1198"
+   },
+   "note": "REG 1190| ✗ — vid: 1198 (zadnja=8)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1274",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "23"
+   },
+   "note": "REG 1274| ✗ — vid: 1|23",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 114,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "23",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "133"
+   },
+   "note": "REG 23| ✗ — vid: 133",
+   "gestrichen": true,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 114,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "702"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "660"
+   },
+   "note": "REG 702 ✗ — vid: 660",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-arbitrated"
+  },
+  {
+   "page": 114,
+   "row": 19,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "600",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "18",
+    "klafter": "239"
+   },
+   "note": "REG 600| ✗ — vid: 18|239 (Jaethe=18!) + Summa 4|406 [g] posebna",
+   "gestrichen": true,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 120,
+   "row": 0,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "7344",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "293"
+   },
+   "note": "REG 7344| ✗ — vid: 1|293",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 120,
+   "row": 1,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "492",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "93"
+   },
+   "note": "REG 492| ✗ — vid: 1|93",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 120,
+   "row": 2,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "157"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "59"
+   },
+   "note": "REG 157 ✗ — vid: 1|59 (zadnja=9)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "128"
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "44"
+   },
+   "note": "REG 128 ✗ — vid: 2|44",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 4,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1253",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "9",
+    "klafter": "80"
+   },
+   "note": "REG 1253| ✗ — vid: 9|80",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 120,
+   "row": 5,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "280"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "49"
+   },
+   "note": "REG 280 ✗ — vid: 1|49",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 6,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "199"
+   },
+   "new": {
+    "jaethe": "5",
+    "klafter": "78"
+   },
+   "note": "REG 199 ✗ — vid: 5|78",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "878"
+   },
+   "new": {
+    "jaethe": "4",
+    "klafter": "72"
+   },
+   "note": "REG 878| ✗ — vid: 4|72",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 8,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "472"
+   },
+   "new": {
+    "jaethe": "4",
+    "klafter": "72"
+   },
+   "note": "REG 472| ✗ — vid: 4|72 (duplikat r7!)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 9,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "237",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "53"
+   },
+   "note": "REG 237| ✗ — vid: 2|53 (delilnik med 2 in 53)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 120,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "83"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "88"
+   },
+   "note": "REG 83 ✗ — vid: 88 (dve zanki)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 11,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "70"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "80"
+   },
+   "note": "REG 70 ✗ — vid: 80 (8=dve zanki)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 12,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "2",
+    "klafter": "832"
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "333"
+   },
+   "note": "REG 2|832 ✗ — vid: 2|333 (trije=dva loka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 120,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "3",
+    "klafter": "289"
+   },
+   "new": {
+    "jaethe": "3",
+    "klafter": "259"
+   },
+   "note": "REG 3|289 ✗ — vid: 3|259",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 120,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1",
+    "klafter": "1234"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "1364"
+   },
+   "note": "REG 1|1234 ✗ — vid: 1|1364 (6=zanka, 4=b-oblika)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 120,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "401"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1111"
+   },
+   "note": "REG 401 ✗ — vid: 1111 (štirje repi)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 120,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "2",
+    "klafter": "891"
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "291"
+   },
+   "note": "REG 2|891 ✗ — vid: 2|291 (srednji=9)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 120,
+   "row": 19,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "3",
+    "klafter": "707"
+   },
+   "new": {
+    "jaethe": "2",
+    "klafter": "439"
+   },
+   "note": "REG 3|707| ✗ — vid: 2|439 (dvomi)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-explicit-jk-kept"
+  },
+  {
+   "page": 128,
+   "row": 0,
+   "type": "gestrichen_marker",
+   "old_anmerkung": "auf Veitern Schätzung [rot] brann ein [?] Jahr 1860 [rot]",
+   "new_anmerkung": "auf Veitern Schätzung [rot] brann ein [?] Jahr 1860 [rot]; [gestrichen rot — val 108]"
+  },
+  {
+   "page": 128,
+   "row": 2,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "180"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "130"
+   },
+   "note": "REG 180 ✗ — srednji=3 (dva loka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "238"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "328"
+   },
+   "note": "REG 238| ✗ — vid: 328 (prvi=3 dva loka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 4,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "1001"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "100"
+   },
+   "note": "REG 1001| ✗ — vid: 100",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 6,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "114",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "114"
+   },
+   "note": "REG 114| ✗ col-split — vid: 114 v klafter",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 128,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "419",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1119"
+   },
+   "note": "REG 419| ✗ — vid: 1119 (trije repi + 9)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 128,
+   "row": 8,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "100"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "106"
+   },
+   "note": "REG 100 ✗ — zadnja=6 (zanka+rep)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 9,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "299",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "229"
+   },
+   "note": "REG 299| ✗ — srednji=2 (lok brez zanke)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 128,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "69"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "65"
+   },
+   "note": "REG 69 ✗ — zadnja=5 (prečka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 11,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "84"
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "84"
+   },
+   "note": "REG 84| ✗ col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 12,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "196",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "136"
+   },
+   "note": "REG 196| ✗ — srednji=3",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 128,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "199"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "129"
+   },
+   "note": "REG 199| ✗ — srednji=2 (lok)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "62"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "92"
+   },
+   "note": "REG 62 ✗ — prvi=9 (rep dol)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 128,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "220",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "928"
+   },
+   "note": "REG 220| ✗ — dvom 928/228",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 128,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "082",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "843"
+   },
+   "note": "REG 082| ✗ — dvom 843/043",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 129,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "490",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "272"
+   },
+   "note": "REG 490| ✗ — vid: 272",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 129,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "199",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "149"
+   },
+   "note": "REG 199| ✗ — srednji=4 (b-oblika)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-col-split"
+  },
+  {
+   "page": 129,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "262",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "263"
+   },
+   "note": "REG 262| ✗ — zadnja=3 (dva loka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 129,
+   "row": 19,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "380",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "30"
+   },
+   "note": "REG 380| ✗ — vid: 30 (8 neviden)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 129,
+   "row": 20,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "",
+    "klafter": "83"
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "85"
+   },
+   "note": "REG 83 ✗ — zadnja=5 (prečka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-tiles-jk"
+  },
+  {
+   "page": 130,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "639",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "553"
+   },
+   "note": "REG 639| ✗ — vid: 553 (dva 5=prečka, 3=dva loka)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 130,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "314",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "214"
+   },
+   "note": "REG 314| ✗ — prvi=2 (lok+rep)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 130,
+   "row": 20,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "807",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "814"
+   },
+   "note": "REG 807| ✗ — dvom 814/014",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 133,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1.499 / 1.517",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "100"
+   },
+   "note": "REG 1.499/1.517 (dvoumni zapis) ✗ — vid: 100 prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 133,
+   "row": 11,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1.175",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "499"
+   },
+   "note": "REG 1.175| ✗ — vid: 1|499",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 133,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "146",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "212"
+   },
+   "note": "REG 146| ✗ — vid: 212 (srednji=1 rep)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1114",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "114"
+   },
+   "note": "REG 1114| ✗ — vid: 114 (dvom j=1,k=14)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1475",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1745"
+   },
+   "note": "REG 1475| ✗ — vid: 1745",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1400",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "115"
+   },
+   "note": "REG 1400| ✗ — vid: 115",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1290",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "160"
+   },
+   "note": "REG 1290| ✗ — vid: 160",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "956",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1116"
+   },
+   "note": "REG 956| ✗ — vid: 1116 (trije repi + 6)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1116",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "874"
+   },
+   "note": "REG 1116| ✗ — vid: 874 prečrtano (dvom)",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 19,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "674",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1049"
+   },
+   "note": "REG 674| ✗ — vid: 1049 (dvom)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 135,
+   "row": 20,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1879",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "8",
+    "klafter": "473"
+   },
+   "note": "REG 1879| ✗ — vid: 8|473 (Jaethe=8 jasno) + Summa [g] posebna",
+   "gestrichen": false
+  },
+  {
+   "page": 136,
+   "row": 4,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1699",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "920"
+   },
+   "note": "REG 1699| ✗ — vid: 920 (prvi=9 zanka+rep)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 136,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "886",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "328"
+   },
+   "note": "REG 886| ✗ — vid: 328 (zadnja=8 dve zanki)",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 136,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "701",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "940"
+   },
+   "note": "REG 701| ✗ — vid: 940",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 136,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1588",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "195"
+   },
+   "note": "REG 1588| ✗ — vid: 1|195",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 136,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "22",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1518"
+   },
+   "note": "REG 22 ✗ — vid: 1518",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 136,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "781",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "600"
+   },
+   "note": "REG 781| ✗ — vid: 600 prečrtano",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 136,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1008",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "80"
+   },
+   "note": "REG 1008| ✗ — vid: 1|80",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 1,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "182",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "182"
+   },
+   "note": "REG 182| ✗ col-split",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 3,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "459",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "786"
+   },
+   "note": "REG 459| ✗ — vid: 786",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 6,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1218",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "528"
+   },
+   "note": "REG 1218| ✗ — vid: 528",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 7,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1394",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1245"
+   },
+   "note": "REG 1394| ✗ — vid: 1245",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 8,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1590",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "131"
+   },
+   "note": "REG 1590| ✗ — vid: 1|131",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 9,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1033",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1504"
+   },
+   "note": "REG 1033| ✗ — vid: 1504",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 10,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "220",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1590"
+   },
+   "note": "REG 220| ✗ — vid: 1590",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 11,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "676",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "1035"
+   },
+   "note": "REG 676| ✗ — vid: 1035",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 12,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "940",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "228"
+   },
+   "note": "REG 940 ✗ — vid: 228",
+   "gestrichen": true,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 13,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "134",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "660"
+   },
+   "note": "REG 134 ✗ — vid: 660",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 14,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "269",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "340"
+   },
+   "note": "REG 269 ✗ — vid: 340",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 15,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "100",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "954"
+   },
+   "note": "REG 100 ✗ — vid: 954",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 16,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "226",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "269"
+   },
+   "note": "REG 226| ✗ — vid: 1|269",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 17,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1970",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "",
+    "klafter": "100"
+   },
+   "note": "REG 1970 ✗ — vid: 100",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  },
+  {
+   "page": 137,
+   "row": 18,
+   "type": "v108_correction",
+   "old": {
+    "jaethe": "1857",
+    "klafter": ""
+   },
+   "new": {
+    "jaethe": "1",
+    "klafter": "226"
+   },
+   "note": "REG 1857 ✗ — vid: 1|226",
+   "gestrichen": false,
+   "prev_jk_review": "v86-review-pass-digit-split"
+  }
+ ]
+}

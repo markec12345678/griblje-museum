@@ -4,9 +4,9 @@
   "generated_by": "build-c4-metrika-v90.py",
   "method": "C4 metrika: izčrpna deterministična preverba konvencij na sidrih val 61 (K1–K6) + reprodukcija C4 val 86b (K7) + usklajenost vnosov (K8) + konfunda F-PV-05 (K9) + opazovalni register (K10); NIČ VLM, NIČ spleta; NIČ sprememb podatkov (§4/§22)",
   "inputs": {
-   "register.json": "9c5af4971971771c7a5f10bfdddbb7cda6e76d84f88440cf58a070d5e2edfd0e",
+   "register.json": "253fa7d723dcf02eb5cae3cd48b70e414f4b6e45f69aedc7ef25a76e72ec04e1",
    "totals-reread.json": "5866a457d2cd102267bcf37f3cf8b87d19fcb58aa5aa2f035f41f9b828fe31aa",
-   "f11-fuertrag-v86.json": "ff4583ad9d787ba6f7376c944567ff362b0b94d2aab895f5e61b33c86040c71a"
+   "f11-fuertrag-v86.json": "bd9877766d486e328321c3d5e422ccf2a636ef016a58794da1d3640bc060e5ee"
   },
   "anchors": 13,
   "joch_qkl": 1600,
@@ -561,21 +561,20 @@
    "klafter_plain_le99": 101
   },
   "p56_143_v82_plus_sloji": {
-   "any_jk_format": 7,
-   "both_filled": 248,
-   "jaethe_empty": 1397,
-   "jaethe_gt1599_plain": 10,
-   "jaethe_jk_format": 1,
+   "any_jk_format": 6,
+   "both_filled": 285,
+   "jaethe_empty": 1444,
+   "jaethe_gt1599_plain": 2,
    "jaethe_nonnumeric": 20,
-   "jaethe_plain_100_1599": 120,
-   "jaethe_plain_gt1599": 10,
-   "jaethe_plain_le99": 250,
-   "klafter_empty": 221,
-   "klafter_gt1599_plain": 60,
+   "jaethe_plain_100_1599": 49,
+   "jaethe_plain_gt1599": 2,
+   "jaethe_plain_le99": 283,
+   "klafter_empty": 136,
+   "klafter_gt1599_plain": 58,
    "klafter_jk_format": 6,
-   "klafter_plain_100_1599": 1278,
-   "klafter_plain_gt1599": 60,
-   "klafter_plain_le99": 233
+   "klafter_plain_100_1599": 1348,
+   "klafter_plain_gt1599": 58,
+   "klafter_plain_le99": 250
   }
  },
  "K10_opazovalni_register": {

@@ -242,11 +242,11 @@ describe("val 85 — poštenost §4 + §22 (nič ne beži v runtime)", () => {
     expect(register.filter((r) => r.reading_pass === "v86-colonial-tiles")).toHaveLength(1755); // val 98: 1109 → val 107: 1755
   });
 
-  test("KG v2.3 (val 107 kaskada): sha 23a2ae50… + metapodatki", () => {
-    expect(kgSha.startsWith("23a2ae50")).toBe(true); // val 107 KG v2.3 (§22 kaskada) — val 89 je bil v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad)
+  test("KG v2.4 (val 108 kaskada): sha 8f803952… + metapodatki", () => {
+    expect(kgSha.startsWith("8f803952")).toBe(true); // val 107 KG v2.3 (§22 kaskada) — val 89 je bil v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad)
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as { val: number; title: string };
-    expect(kg.val).toBe(107); // val 107: 86b del 3 — tile 3. glas p110–141
-    expect(kg.title).toBe("knowledge-graph-1825 v2.3");
+    expect(kg.val).toBe(108); // val 107: 86b del 3 — tile 3. glas p110–141
+    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
   });
 
   test("kaskada §22 nespremenjena: story-graph/timeline/coverage (arhiv + runtime) držijo isti KG sha", () => {
