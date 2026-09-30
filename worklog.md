@@ -4608,3 +4608,27 @@ Work Log:
 - Priporočilo: p17–p26 re-read izvesti v GLAVNI seji (val 111/112 sta tam opravili direktna branja; isti proces, isti izrezki) ali v sub-agentu z omogočenimi sličicami
 - Spremembe v repo: SAMO ta worklog apendix; reading-v113/ direktorij ustanovljen (prazen), ostalo nedotaknjeno; 0 VLM klicev
 
+---
+Task ID: 113
+Agent: Z.ai Code (glavna seja, val 113)
+Task: ISSUE #42 §4/§14 — poln re-read PS 2. del: p17–p24 vrednostni audit + NOVO F-PV-07-SPLIT + kultur pass p11 r0–r8; pomik vrstic p19/p20 dokumentiran, vgradnja odložena val 114; 0 VLM klicev (user: "odlicno nadaljuj kjer si ostal")
+
+Work Log:
+- Prevzem: vala 111 (PR #115) in 112 (PR #116) že mergana; main @ 07eb4ec; kvota VLM 429 → metoda val 61/88/108/111/112 (agentov vid, 0 VLM)
+- Infrastruktura: 4 brančni subagenti NEUSPEŠNI (platformska omejitev: sub-agent kontekst NE prikazuje slik — "[images are not available in sub-agent context]"; 2× context canceled/deadline + 1 blokada-poročilo z OCR zavračitvijo) → branje v glavni seji; make-crops-v113.py (429 izrezkov: nums/names/flaeche/ertrag ×3 top/bot + z-vals ×8) + make-z3-v113.py (z3 skladovni izrezki z IZMERJENIMI horizontalnimi pravili, detekcija prag 178–210 + truncate na baseline + fallback mreža) + baseline-val57.json (787 vrstic p17–p55)
+- Ključna diagnostika: kalibracijski odmik ±5px + pisar piše nizko → off-by-one atribucija sredi strani (p17 g1: r11/r12/r13 zamaknjene); diag ×10 na izmerjenih pravilih razrešilo; NOVO F-PV-07-SPLIT: pisar piše "N Joch | Q Klafter" notacijo, v57 je pare ZLIL (p17 r15 1|400→jae 1400; p18 r4 1|243→1912, r16 1|122→622, r17 1|130→620; p21 r9 3|1248→"3 1268")
+- Vgradnja build-register-v113.py (fail-fast 2871/139/1755/265 + changes guard): p17 (18 moves + SPLIT r15 + popravki 650→690/189→129/526→556/833→553 + 6 odprtih), p18 (14 moves + 5 SPLIT + popravki 937→927/873→473/529→539 + 9 odprtih + r9 Hoffnung brez vrednosti), p21 (18 moves + SPLIT r9/r10 + popravki 273→573/464→484/839→859/1306→1302[?]/948→448), p22 (20 moves + popravki 208→308/668→665/524→824/589→889/852→352 + 9 odprtih — v57 sistematsko večje vrednosti), p23 (19 moves + SPLIT r14 jae=1 + popravki 217→317/1087→1081/1162→1163/470→770/705→715), p24 (7 popravkov + ocistka jae "." + 8 prečrtanih rdeče — v57 že pravilen stolpec); FUR zapisi: 6|795, 10|275, 13|1108, 6|444+320[?], 10|172(R)→7|1143, 8|710(R)→1|919(R)
+- POMIK VRSTIC (F2-analog): p19 = 7 sidrnih ujemanj z +1 zamikom (440=r1, 1|1301=r2, 637=r5, 1|182=r10, 205=r13, 192=r14, 1169=r18); p20 delni pomik v spodnji polovici; vgradnja izrecno ODLOŽENA val 114 — samo page_observations_v113
+- Kultur pass p11 r0–r8 (odložen iz val 112): halucinacija v57 DOKAZANA — ponovljeni zapisi ("Lhugar und Boll[?]" 5× + 2 ditto; "Rosig[?]/Ruked[?]" 2×) vs 4 generični terme v57; anmerkung add-only (§4 TRANSCRIBED=0), besedilo val 114
+- Kaskada (izrecna): pass3 novo F-PV-07-SPLIT izključitveno pravilo (marker v anmerkung; analog v88) — PS parcele 676→577 (−99); land use njiva 258→198, travnik 77→47, gozd 14→11, pašnik 15→14, vrt 14→9, EXACT 380→281; KG PARCEL 2612/HAS_PARCEL 2914/3454/3618 (sha 5ae52bd8); timeline I6 PUA 2035/PS 577/raba 292+209 (3 pini posodobljeni); coverage PARTIAL 1252; c4 K9 192, gt1599 22; api-smoke 2612 (292/209/2111) + story 3454/3618; runtime kopije pišejo builderji
+- Testi: +22 varovalk (tests/val113-ps-p17-55-reread.test.ts — gardele, SPLIT, premestitve/popravki, odprta razhajanja ≥30, kultur p11, pomik p19/p20, kaskada) + pini prehodov 108→113 v 14 testnih datotekah (val84/85/86/88/98/107/112, atlas-kg/pass3/coverage/explore/map/timeline/story-engine, pv-land-use, api-smoke, c4 K9); H-040 test pošteno prepisan (documented njiva izpadla iz projekcije → "1 od 115", ni več "6 od 120"); 1055 testov: 1044 pass / 11 skip / 0 fail; tsc čist; eslint čist
+- Docs: research-griblje/128-val113-ps-p17-24-values-split-f-pv07.md + KAZALO 128 + .gitignore crops-v113 (regenerabilno)
+- Potek: push → PR #117 → CI 2/2 ZELENO → merge (main @ 58664e2) → izbris veje (oddaljena 204 + lokalna) → komentar na #72 (5917206260) → worklog
+
+Stage Summary:
+- ISSUE #42 §4/§14: poln re-read pasu p17–p55 v teku — p17–p24 vgrajeno (194 sprememb: 89 F-PV-07 premestitev + 9 SPLIT razcepov + 16 popravkov + 63 opomb); p25–p55 instrumenti pripravljeni (429 crops + z3 + baseline), vgradnja val 114
+- NOVO F-PV-07-SPLIT (sistemska napaka v57): zlitje "N Joch | Q Klafter" par; pass3 izključitveno pravilo; p19 POMIK VRSTIC (+1, 7 sidrov) — F2-analog na PS straneh
+- Iskrenost: TRANSCRIBED = 0; 34 odprtih razhajanj izrecno zapisanih; p19/p20 brez vgradnje (strukturni re-read val 114); nič ne dvignjeno
+- Kaskada dosledna: PS parcele 676→577, KG 2612/2914/3454/3618 (sha 5ae52bd8), I6 raba 292+209, coverage 1252, K9 192
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
+- Naslednje: val 114 = p25–p55 vrednostni re-read + p19/p20 strukturni re-read (pomik) + imenski pass p17–p55 + finalni kultur besedili p11/p4; VLM glasovi ob kvoti (45 izrezkov PZ → mikroprehod 8b + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7); poln re-read p143; F-PV-03/F-PV-04; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379 (okt./nov. 2026)
