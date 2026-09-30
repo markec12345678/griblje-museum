@@ -1,0 +1,163 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 38,
+  "scope": "vrednostni re-read (z3 sklad + diag 2x)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p38.jpg",
+  "instrument_files": "crops-v113/z3-p38-vals.png, crops-v114diag/p38-*.png",
+  "fpv07": "vrednosti v KLAFTER sub-koloni (baseline klf=19)",
+  "findings_structural": [
+   "8 popravkov: r1, r5, r9, r11, r12, r14, r16, r19 — val 57 napake 1/4, 1/7, 8/5, 2/3, 4/6, 3/5, 8/5, 4/6",
+   "stran CISTA (brez pomika), r15 prazna",
+   "FUR: 4|456 — vsota odprta"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "r0",
+   "old_j": "",
+   "old_k": "469",
+   "verdict": "soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "185",
+   "verdict": "POPRAVEK 185->485 (4 h-oblika)"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "741",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "258",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "256",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "210",
+   "verdict": "POPRAVEK 210->270 (7 s crtico)"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "375",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "346",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "309",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "308",
+   "verdict": "POPRAVEK 308->305 (5)"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "320",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "269",
+   "verdict": "POPRAVEK 269->349 (3+4)"
+  },
+  "r12": {
+   "j": "",
+   "k": "r12",
+   "old_j": "",
+   "old_k": "346",
+   "verdict": "POPRAVEK 346->366 (6-6)"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "334",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "373",
+   "verdict": "POPRAVEK 373->573 (5 z zastavico)"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "soglasje (prazna; Vilip[?]züanja)"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "168",
+   "verdict": "POPRAVEK 168->165 (5)"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "300",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "304",
+   "verdict": "soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "741",
+   "verdict": "POPRAVEK 741->761 (6)"
+  }
+ },
+ "furtrag": "4|456",
+ "register_actions_planned": [
+  "POPRAVEK x8",
+  "FUR 4|456"
+ ]
+}

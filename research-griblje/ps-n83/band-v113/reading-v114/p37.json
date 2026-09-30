@@ -1,0 +1,164 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 37,
+  "scope": "vrednostni re-read (z3 sklad + diag r0/r1)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p37.jpg",
+  "instrument_files": "crops-v113/z3-p37-vals.png, crops-v114diag/p37-r0-r1.png",
+  "fpv07": "vrednosti v QK (baseline jae — premestitve)",
+  "findings_structural": [
+   "stran CISTA od r1 naprej (18 soglasij)",
+   "r0 pas: 761 (visoko) + 774 (nizko) — dvojna vrednost, odprto",
+   "FUR: 4|1009[?] — vsota se ne zapira — odprto"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "774[?]",
+   "old_j": "761",
+   "old_k": "",
+   "verdict": "struktura: pas vsebuje 761 (visoko) IN 774 (nizko); register 761 — 774 = POPRAVEK kandidat ali Uebertrag — odprto"
+  },
+  "r1": {
+   "j": "",
+   "k": "744",
+   "old_j": "744",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "703",
+   "old_j": "703",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "741",
+   "old_j": "741",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "564",
+   "old_j": "564",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "526",
+   "old_j": "526",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "21",
+   "old_j": "21",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "435",
+   "old_j": "435",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "31",
+   "old_j": "31",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "32",
+   "old_j": "32",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "348",
+   "old_j": "348",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "449",
+   "old_j": "449",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "59",
+   "old_j": "59",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "87",
+   "old_j": "87",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "789",
+   "old_j": "789",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "260",
+   "old_j": "260",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "38",
+   "old_j": "38",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "55",
+   "old_j": "55",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "1185",
+   "old_j": "1185",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "232",
+   "old_j": "232",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  }
+ },
+ "furtrag": "4|1009[?]",
+ "register_actions_planned": [
+  "PREMESTITVE jae->klf: vse",
+  "r0 odprt",
+  "FUR odprt"
+ ]
+}

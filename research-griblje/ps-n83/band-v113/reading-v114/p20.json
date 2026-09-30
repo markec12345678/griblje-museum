@@ -1,0 +1,170 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 20,
+  "scope": "STRUKTURNA forenzika pomika + vrednostni re-read (imensko-vrednostni trak + ciljani zoomi)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p20.jpg",
+  "instrument_files": "/tmp p20-names-vals, p20z-*, p20f-*, p20g-*",
+  "fpv07": "vrednosti ze v QK koloni — brez premestitev",
+  "findings_structural": [
+   "KLJUCNO: \"delni pomik\" iz val 113 OVRZEN — 1:1 poravnava z 5 sidri na ISTIH indeksih (703=r0, 950=r6, 535=r9, 444=r11 + FUR 6|1183); z3 pomik r9-r11 = grid artifakt (kot p19)",
+   "2 potrjena POPRAVEK prve stevilke (r2 736->336, r5 237->337 — oba ze val 113 sum, zdaj direktno potrjena)",
+   "r10-r19: pravila strani zamaknjena +/-20px (nagnjen tisk) — vrsticno branje ob nizki locevljivosti; v57 vrednosti ohranjene razen izrecno navedenih; ponovni pregled ob visji locevljivosti ostaja odprt",
+   "FUR 6|1183 potrjen"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "703",
+   "old_j": "",
+   "old_k": "703",
+   "verdict": "soglasje (sidro)"
+  },
+  "r1": {
+   "j": "",
+   "k": "568",
+   "old_j": "",
+   "old_k": "648",
+   "verdict": "razhajanje 648 vs 568[?] — odprto (prvi dve stevilki 5/6 in 6/4 dvom)"
+  },
+  "r2": {
+   "j": "",
+   "k": "336",
+   "old_j": "",
+   "old_k": "736",
+   "verdict": "POPRAVEK 736->336 (prva 3 — dva skodelica; potrditev val 113 sidra 336/736)"
+  },
+  "r3": {
+   "j": "",
+   "k": "963",
+   "old_j": "",
+   "old_k": "963",
+   "verdict": "soglasje (zoom potrdil — trak bral 263 napacno)"
+  },
+  "r4": {
+   "j": "",
+   "k": "602",
+   "old_j": "",
+   "old_k": "602",
+   "verdict": "soglasje (zoom potrdil)"
+  },
+  "r5": {
+   "j": "",
+   "k": "337",
+   "old_j": "",
+   "old_k": "237",
+   "verdict": "POPRAVEK 237->337 (prva 3; potrditev val 113 sidra 337/237)"
+  },
+  "r6": {
+   "j": "",
+   "k": "950",
+   "old_j": "",
+   "old_k": "950",
+   "verdict": "soglasje (sidro)"
+  },
+  "r7": {
+   "j": "",
+   "k": "876",
+   "old_j": "",
+   "old_k": "876",
+   "verdict": "soglasje (zoom potrdil)"
+  },
+  "r8": {
+   "j": "",
+   "k": "631",
+   "old_j": "",
+   "old_k": "687",
+   "verdict": "razhajanje 687 vs 631[?] — odprto (srednja 3, zadnja 1 — v57 8/7 nepojasnjeno)"
+  },
+  "r9": {
+   "j": "",
+   "k": "535",
+   "old_j": "",
+   "old_k": "535",
+   "verdict": "soglasje (sidro — pomik r9 OVRZEN)"
+  },
+  "r10": {
+   "j": "",
+   "k": "465",
+   "old_j": "",
+   "old_k": "465",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57, glej page_obs)"
+  },
+  "r11": {
+   "j": "",
+   "k": "444",
+   "old_j": "",
+   "old_k": "444",
+   "verdict": "soglasje (sidro)"
+  },
+  "r12": {
+   "j": "",
+   "k": "179",
+   "old_j": "",
+   "old_k": "179",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57)"
+  },
+  "r13": {
+   "j": "",
+   "k": "462",
+   "old_j": "",
+   "old_k": "462",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57)"
+  },
+  "r14": {
+   "j": "",
+   "k": "430",
+   "old_j": "",
+   "old_k": "430",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57; trak 435/480 dvomni)"
+  },
+  "r15": {
+   "j": "",
+   "k": "487",
+   "old_j": "",
+   "old_k": "487",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57)"
+  },
+  "r16": {
+   "j": "",
+   "k": "135",
+   "old_j": "",
+   "old_k": "135",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57)"
+  },
+  "r17": {
+   "j": "",
+   "k": "605",
+   "old_j": "",
+   "old_k": "605",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57)"
+  },
+  "r18": {
+   "j": "",
+   "k": "854",
+   "old_j": "",
+   "old_k": "854",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57)"
+  },
+  "r19": {
+   "j": "",
+   "k": "802",
+   "old_j": "",
+   "old_k": "802",
+   "verdict": "soglasje (nizka locevljivost — ohranjeno v57)"
+  }
+ },
+ "furtrag": {
+  "j": "6",
+  "k": "1183",
+  "note": "FUR 6|1183 — soglasje z v57"
+ },
+ "register_actions_planned": [
+  "VAL 113 PAGE_OBS KOREKCIJA: delni pomik p20 OVRZEN — page_observations_v114 s 5 sidri",
+  "POPRAVEK: r2 336, r5 337",
+  "anmerkung add-only: odprti razhajanji r1, r8",
+  "reading_pass v114-ps-reread za p20"
+ ]
+}

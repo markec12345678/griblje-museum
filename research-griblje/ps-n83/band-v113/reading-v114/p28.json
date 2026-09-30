@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 28,
+  "scope": "vrednostni re-read (z3 sklad + diag + precizni prerezi)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p28.jpg",
+  "instrument_files": "crops-v113/z3-p28-vals.png, crops-v114diag/p28-*.png",
+  "fpv07": "STRAN S VREDNOSTMI V JOCHE sub-koloni po baseline (jae=20) — vse premestitve v klf; 3+ spliti ze legitimni",
+  "findings_structural": [
+   "4 redne premstitve + 6 popravkov + 3 revizije s precrtanji (r7, r11, r12) — stran močno revidirana",
+   "r11: 666->691 (obe precrtani) brez finalne vrednosti",
+   "pravila detekcija: 2 lažni pravili (debele crtи r7/r11) — z3 truncate rešil",
+   "FUR: rdece 10|211 (precrtano) + rdece 2|448 — 2|448 verjetno Übertrag na p29 (preveriti)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "r0",
+   "old_j": "",
+   "old_k": "514",
+   "verdict": "POPRAVEK 514->544 + move (dve '4'; F-PV-07)"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "529",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "572",
+   "verdict": "move + soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "683",
+   "verdict": "move + soglasje"
+  },
+  "r4": {
+   "j": "3",
+   "k": "r4",
+   "old_j": "3",
+   "old_k": "1570",
+   "verdict": "SPLIT legitimno ze val 57; soglasje"
+  },
+  "r5": {
+   "j": "1",
+   "k": "r5",
+   "old_j": "1",
+   "old_k": "1119",
+   "verdict": "SPLIT legitimno ze val 57; soglasje; rdeca crta (anm. Rupf. Kaufbrief)"
+  },
+  "r6": {
+   "j": "1",
+   "k": "r6",
+   "old_j": "1",
+   "old_k": "106",
+   "verdict": "SPLIT legitimno ze val 57; soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "2143",
+   "verdict": "REVIZIJA: debela crta prek vrednostne celice (delecija originala, verjetno zlito 2|143) + 744 pod crto; POPRAVEK 2143->744 + move"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "1533",
+   "verdict": "move + soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "187",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "100",
+   "verdict": "move + soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "66",
+   "verdict": "celica: 666 (visoko, debelo precrtano) + 691 (nizko, rdece precrtano); register 66 = val 57 odsek — odprto, brez finala"
+  },
+  "r12": {
+   "j": "2",
+   "k": "r12",
+   "old_j": "2",
+   "old_k": "644",
+   "verdict": "razhajanje 644 vs 641[?] — rdece precrtano; odprto"
+  },
+  "r13": {
+   "j": "1",
+   "k": "r13",
+   "old_j": "1",
+   "old_k": "997",
+   "verdict": "soglasje vrednosti; rdece precrtano"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "136",
+   "verdict": "move + soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "770",
+   "verdict": "POPRAVEK 770->170 + move (simple vertikalni 1)"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "132",
+   "verdict": "move + soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "104",
+   "verdict": "move + soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "1148",
+   "verdict": "POPRAVEK 1148->748 + move (7 z zgornjo crtico)"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "293",
+   "verdict": "razhajanje 293 vs 295[?] + move"
+  }
+ },
+ "furtrag": "rdece 10|211 precrtano + rdece 2|448",
+ "register_actions_planned": [
+  "PREMESTITVE jae->klf: r0,r1,r2,r3,r8,r9,r10,r14,r16,r17",
+  "POPRAVEK: r0 514->544, r7 2143->744 (revizija), r15 770->170, r18 1148->748",
+  "odprte: r11, r12, r19"
+ ]
+}

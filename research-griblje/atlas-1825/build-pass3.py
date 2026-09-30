@@ -13,7 +13,7 @@ Pravila (nespremenjena od val 60):
   - PUA in PS parcelni identifikatorji se NE združujejo (val 58 F14: namespace vprašanje odprto)
   - PS jaethe = vir parcelne številke; v88 pravilo (val 88): digit-split vrstice s klafter-vrednostjo
     in prazno jaethe NISO parcele (pisar piše Kläfter, F-PV-05 page-level)
-  - val 113 F-PV-07-SPLIT pravilo: Joch|Klafter notacija (marker 'F-PV-07-SPLIT val 113'
+  - val 113/114 F-PV-07-SPLIT pravilo: Joch|Klafter notacija (marker 'F-PV-07-SPLIT val 113/114'
     v anmerkung) NISO parcele — jae je Joch števec, ne parcelna številka
   - vsak zapis s source/page provenanco
 
@@ -123,7 +123,7 @@ for r in ps:
     if not m: continue
     # val 113 F-PV-07-SPLIT pravilo: vrstice z Joch|Klafter notacijo (jae = Joch
     # stevec, marker v anmerkung) NISO parcele — analog v88 pravilu (F-PV-05)
-    if "F-PV-07-SPLIT val 113" in (r.get("anmerkung") or ""):
+    if "F-PV-07-SPLIT val 113" in (r.get("anmerkung") or "") or "F-PV-07-SPLIT val 114" in (r.get("anmerkung") or ""):
         continue
     num = int(m.group(1))
     if num > 3000:  # val 58: >3000 = sumljivi vnos (možna zmes stolpcev) -> flag, ne izključitev

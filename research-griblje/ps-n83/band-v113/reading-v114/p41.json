@@ -1,0 +1,169 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 41,
+  "scope": "vrednostni re-read (z3 + ciljani x8/x9 zoomi)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p41.jpg",
+  "instrument_files": "crops-v113/z3-p41-vals.png, z-p41-vals-0/1/2; /tmp ciljani r0/r3/r5/r6/r7/r9/r11/r18",
+  "fpv07": "vrednosti v QK pod-koloni (v57 jae=napacen stolpec, kot p40) — 19 premestitev; r16 split 1|77",
+  "findings_structural": [
+   "stran pozicijsko poravnana (20 vrstic, brez pomika); vrednosti pisar pisal NIZKO (vecina precka spodnje pravilo) — bandi z3 so pravilno celicno pripisani (preverjeno na r0/r3/r18 s sosednjimi vrednostmi)",
+   "r5: ena vrednost 1774 (z3 je \"1776+1774\" bral kot dve vrstici — dejansko 7-7 ligatura ene stevilke); v57 1576 = obe napaki",
+   "FUR: 6 | 990 (Joch 6, Klafter 990)",
+   "8 popravkov vrednosti — v57 sistemsko znacilnost: srednje/prve stevilke (3/5/1 za 5/7/2/4)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "532",
+   "old_j": "522",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 522->532 (srednja 3 — dva skodelica)"
+  },
+  "r1": {
+   "j": "",
+   "k": "439",
+   "old_j": "439",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "448",
+   "old_j": "448",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "459",
+   "old_j": "439",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 439->459 (srednja 5 z zastavico)"
+  },
+  "r4": {
+   "j": "",
+   "k": "859",
+   "old_j": "859",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "1774",
+   "old_j": "1576",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 1576->1774 (7-7 ligatura, zadnja 4; v57 5..6 obe napacni)"
+  },
+  "r6": {
+   "j": "",
+   "k": "209",
+   "old_j": "207",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 207->209 (zadnja 9 s prepustom, ni 7)"
+  },
+  "r7": {
+   "j": "",
+   "k": "28",
+   "old_j": "78",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 78->28 (prva 2 s spodnjo zanko, ni 7)"
+  },
+  "r8": {
+   "j": "",
+   "k": "703",
+   "old_j": "703",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "674",
+   "old_j": "614",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 614->674 (srednja 7, ni 1)"
+  },
+  "r10": {
+   "j": "",
+   "k": "513",
+   "old_j": "513",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "246",
+   "old_j": "346",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 346->246 (prva 2, ni 3)"
+  },
+  "r12": {
+   "j": "",
+   "k": "247",
+   "old_j": "247",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "438",
+   "old_j": "438",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "263",
+   "old_j": "263",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "266",
+   "old_j": "266",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r16": {
+   "j": "1",
+   "k": "77",
+   "old_j": "1 / 77",
+   "old_k": "",
+   "verdict": "SPLIT formalizacija: jae=1, klf=77 (v57 string \"1 / 77\" v jae) + SPLIT marker"
+  },
+  "r17": {
+   "j": "",
+   "k": "448",
+   "old_j": "448",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "478",
+   "old_j": "178",
+   "old_k": "",
+   "verdict": "move + POPRAVEK 178->478 (prva 4 z zanko; z3 \"473\" — zadnja je 8, dve zanki)"
+  },
+  "r19": {
+   "j": "",
+   "k": "270",
+   "old_j": "270",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  }
+ },
+ "furtrag": {
+  "j": "6",
+  "k": "990",
+  "note": "Fürtrag: Joch 6, Klafter 990"
+ },
+ "register_actions_planned": [
+  "p41: 19 F-PV-07 move jae->klf + r16 SPLIT (jae=1, klf=77) + marker",
+  "POPRAVEK: r0 532, r3 459, r5 1774, r6 209, r7 28, r9 674, r11 246, r18 478",
+  "reading_pass v114-ps-reread; page_observations_v114; FUR 6|990"
+ ]
+}

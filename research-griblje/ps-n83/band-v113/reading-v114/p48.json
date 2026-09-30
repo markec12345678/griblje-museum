@@ -1,0 +1,170 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 48,
+  "scope": "vrednostni re-read + strukturna forenzika (izpuscena vrstica)",
+  "method": "agentov direktni vid: imensko-vrednostni trak s ravilom + z3 sekvenca + ciljani zoomi; 0 VLM",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p48.jpg",
+  "instrument_files": "crops-v113/z3-p48-vals.png; /tmp p48-names-top, p48w-*, p48z-*",
+  "fpv07": "vrednosti v JOCHE koloni (v57 pravilen stolpec) — brez premestitev",
+  "findings_structural": [
+   "STRUKTURA: stran ima 21 vrstic, v57 je zabelezil 20 — v57 je IZPUSTIL vrstico p2 (vrednost \"12\", lastno ime ~\"Schmipa[?]\", NI prazna!) in vse od r2 naprej zamaknil za +1",
+   "DOKAZ zamika: 10 natankih ujemanj vrednosti pod mapiranjem v57 rN = p(N+1) (439, 533, 16, 941, 621, 565, 1490, 153, 163, 280); v57 r2 \"753\" = p3 \"733\" (5/3), v57 r3 \"70\" = p4 \"10\" (7/1 ponavljajoca zamenjava)",
+   "p7 (16): velika diagonalna crta cez celico (pocistka/kljukica)",
+   "FUR: 5|58[?]",
+   "VGRADNJA: brez vstavljanja vrstice (2871 guard) — popravki preko mapiranja + page_observations_v114; vstavljanje p2 = odprta strukturna odlocba (skupaj s p40 p13)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "1904",
+   "k": "",
+   "old_j": "1904",
+   "old_k": "",
+   "verdict": "soglasje (p0)"
+  },
+  "r1": {
+   "j": "279",
+   "k": "",
+   "old_j": "279",
+   "old_k": "",
+   "verdict": "soglasje (p1)"
+  },
+  "r2": {
+   "j": "733",
+   "k": "",
+   "old_j": "753",
+   "old_k": "",
+   "verdict": "preko mapiranja r2=p3: POPRAVEK 753->733 (srednja 3, ni 5); p2 (\"12\") izpuscena v v57"
+  },
+  "r3": {
+   "j": "10",
+   "k": "",
+   "old_j": "70",
+   "old_k": "",
+   "verdict": "preko mapiranja r3=p4: POPRAVEK 70->10 (prva 1 — enostavni cram; 7 ima zanko)"
+  },
+  "r4": {
+   "j": "439",
+   "k": "",
+   "old_j": "439",
+   "old_k": "",
+   "verdict": "soglasje (p5, natanko)"
+  },
+  "r5": {
+   "j": "533",
+   "k": "",
+   "old_j": "533",
+   "old_k": "",
+   "verdict": "soglasje (p6, natanko)"
+  },
+  "r6": {
+   "j": "16",
+   "k": "",
+   "old_j": "16",
+   "old_k": "",
+   "verdict": "soglasje (p7); diagonalna crta cez celico"
+  },
+  "r7": {
+   "j": "29",
+   "k": "",
+   "old_j": "39",
+   "old_k": "",
+   "verdict": "preko mapiranja r7=p8: POPRAVEK 39->29 (prva 2 s spodnjo zanko)"
+  },
+  "r8": {
+   "j": "941",
+   "k": "",
+   "old_j": "941",
+   "old_k": "",
+   "verdict": "soglasje (p9, natanko)"
+  },
+  "r9": {
+   "j": "621",
+   "k": "",
+   "old_j": "621",
+   "old_k": "",
+   "verdict": "soglasje (p10, natanko)"
+  },
+  "r10": {
+   "j": "591",
+   "k": "",
+   "old_j": "597",
+   "old_k": "",
+   "verdict": "preko mapiranja r10=p11: POPRAVEK 597->591 (zadnja 1, ni 7)"
+  },
+  "r11": {
+   "j": "565",
+   "k": "",
+   "old_j": "565",
+   "old_k": "",
+   "verdict": "soglasje (p12, natanko)"
+  },
+  "r12": {
+   "j": "1490",
+   "k": "",
+   "old_j": "1490",
+   "old_k": "",
+   "verdict": "soglasje (p13, natanko)"
+  },
+  "r13": {
+   "j": "1269",
+   "k": "",
+   "old_j": "1059",
+   "old_k": "",
+   "verdict": "preko mapiranja r13=p14: POPRAVEK 1059->1269 (2 z zanko, 6 z dvigelnikom)"
+  },
+  "r14": {
+   "j": "678",
+   "k": "",
+   "old_j": "610",
+   "old_k": "",
+   "verdict": "preko mapiranja r14=p15: POPRAVEK 610->678 (7 z zastavico, 8 z dvema zankama)"
+  },
+  "r15": {
+   "j": "185",
+   "k": "",
+   "old_j": "165",
+   "old_k": "",
+   "verdict": "preko mapiranja r15=p16: POPRAVEK 165->185 (srednja 8)"
+  },
+  "r16": {
+   "j": "153",
+   "k": "",
+   "old_j": "153",
+   "old_k": "",
+   "verdict": "soglasje (p17, natanko)"
+  },
+  "r17": {
+   "j": "189",
+   "k": "",
+   "old_j": "159",
+   "old_k": "",
+   "verdict": "preko mapiranja r17=p18: POPRAVEK 159->189 (srednja 8)"
+  },
+  "r18": {
+   "j": "163",
+   "k": "",
+   "old_j": "163",
+   "old_k": "",
+   "verdict": "soglasje (p19, natanko)"
+  },
+  "r19": {
+   "j": "280",
+   "k": "",
+   "old_j": "280",
+   "old_k": "",
+   "verdict": "soglasje (p20, natanko)"
+  }
+ },
+ "furtrag": {
+  "j": "5[?]",
+  "k": "58[?]",
+  "note": "FUR 5|58[?] — nizko dvomljivo"
+ },
+ "register_actions_planned": [
+  "POPRAVEK (preko mapiranja): r2 733, r3 10, r7 29, r10 591, r13 1269, r14 678, r15 185, r17 189",
+  "page_observations_v114: polna strukturna forenzika (21 vrstic, izpuscena p2 \"12\")",
+  "anmerkung add-only: opomba o izpusceni vrstici na r1/r2"
+ ]
+}

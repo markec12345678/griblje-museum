@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 34,
+  "scope": "vrednostni re-read (z3 sklad + direktni prerezi + imena-bot)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p34.jpg",
+  "instrument_files": "crops-v113/z3-p34-vals.png, crops-v113/p34-names-bot.png, crops-v114diag/p34-*.png",
+  "fpv07": "vrednosti v QK (baseline jae — premestitve za r0-r14)",
+  "findings_structural": [
+   "POMIK VRSTIC (F2-analog p19): od r15 vrednosti piše eno vrstico VISOKE — pas r15:397, r16:87, r17:1088, r18:273, r19:60; imena ostajajo poravnana (names-bot preverjeno)",
+   "val 57 je vrednosti r15-r19 priradil eno vrstico NIZJE + r15=185 ni na strani (artefakt)",
+   "vgradnja pomika ODLOZENA (analog p19/p20 v113) — samo page_observations; r0-r14 cisti",
+   "FUR: 32 Fürtrag | 1?1 | 1447 (Joch glif dvom: 11/H/4) — vsota se ne zapira — odprto",
+   "r4: 666[?] vs 664 — odprto"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "r0",
+   "old_j": "",
+   "old_k": "1450",
+   "verdict": "soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "266",
+   "verdict": "soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "243",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "560",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "664",
+   "verdict": "razhajanje: zadnja stevilka 6 vs 4 (flourish moti) — odprto"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "406",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "273",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "389",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "400",
+   "verdict": "soglasje (4 = h-oblika)"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "508",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "526",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "646",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "r12",
+   "old_j": "",
+   "old_k": "1108",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "224",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "285",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "185",
+   "verdict": "POMIK: vrednosti od r15 eno vrstico VISOKE glede na imena (F2-analog p19); val 57 r15=185 ni vidna na strani"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "397",
+   "verdict": "POMIK (vidi r15)"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "87",
+   "verdict": "POMIK; v pasu r17 videno 1088 — register r18=1038 (0-8-8 vs 0-3-8)"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "1038",
+   "verdict": "POMIK"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "273",
+   "verdict": "POMIK; v pasu r19 videno 60"
+  }
+ },
+ "furtrag": "32 Fürtrag | 1?1 | 1447",
+ "register_actions_planned": [
+  "PREMESTITVE jae->klf: r0-r14 (15 vrstic)",
+  "r4 razhajanje odprto",
+  "POMIK r15-r19: vgradnja odlozena (struktur)"
+ ]
+}

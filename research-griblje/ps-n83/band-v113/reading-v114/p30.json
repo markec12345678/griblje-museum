@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 30,
+  "scope": "vrednostni re-read (z3 sklad + diag + spodnji prerez)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p30.jpg",
+  "instrument_files": "crops-v113/z3-p30-vals.png, crops-v114diag/p30-bottom.png, p30-r19.png",
+  "fpv07": "vrednosti v KLAFTER sub-koloni (Joche prazna) — 20 premestitev jae->klf",
+  "findings_structural": [
+   "r19: 1024 (4 z dvižnikom) — POPRAVEK 1022",
+   "FUR: 28 Fürtrag | 5 | 1057 (Joch 5) — vsota strani 8919/8921 se ne zapira z 5|1057=8257 (delta ~662) — odprto",
+   "rdeci pripisi r2 '4-2657', r3 '1-1752', r4 '3-1305' (v anmerkung val 57) — neberljiva vloga, ostajajo",
+   "rdeci robni kljuki pri r0-r4 (kontrola)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "648",
+   "old_j": "648",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "735",
+   "old_j": "735",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "816",
+   "old_j": "816",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "756",
+   "old_j": "756",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "628",
+   "old_j": "628",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "14",
+   "old_j": "14",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "21",
+   "old_j": "21",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "606",
+   "old_j": "606",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "229",
+   "old_j": "229",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "9",
+   "old_j": "9",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "16",
+   "old_j": "16",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "498",
+   "old_j": "498",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "481",
+   "old_j": "481",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "52",
+   "old_j": "52",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "31",
+   "old_j": "31",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "628",
+   "old_j": "628",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "1007",
+   "old_j": "1007",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "25",
+   "old_j": "25",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "697",
+   "old_j": "697",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "1024",
+   "old_j": "1022",
+   "old_k": "",
+   "verdict": "POPRAVEK 1022->1024 + move (4 z dvižnikom, ne 2)"
+  }
+ },
+ "furtrag": "28 Fürtrag | 5 | 1057",
+ "register_actions_planned": [
+  "PREMESTITVE jae->klf: vseh 20 vrstic",
+  "POPRAVEK: r19 1022->1024",
+  "FUR 5|1057 + vsotna kontrola odprta"
+ ]
+}

@@ -176,15 +176,15 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
 describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
   test("PS parcele 779 → 735 → 676; land use None 104 → 76 → 76; kategorije (val 112: F-PV-07 premestitve p5/p7/p12 — 59 vrednosti jaethe→klafter izpadijo iz projekcije)", () => {
     expect(pr.val).toBe("108");
-    expect(pr.ps_parcels_total).toBe(577); // val 108: 735 → val 112: 676 → val 113: 577
+    expect(pr.ps_parcels_total).toBe(391); // val 108: 735 → val 112: 676 → val 113: 577 → val 114: 391
     expect(pr.ps_land_use_coverage["null"]).toBe(76);
-    expect(pr.ps_land_use_coverage["njiva"]).toBe(198); // val 108: 295 → val 112: 258 → val 113: 198
-    expect(pr.ps_land_use_coverage["travnik"]).toBe(47); // val 108: 84 → val 112: 77 → val 113: 47
-    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(209); // val 108: 221 → val 112: 209
-    expect(pr.ps_land_use_coverage["pašnik"]).toBe(14); // val 108: 16 → val 112: 15 → val 113: 14
-    expect(pr.ps_land_use_coverage["vrt"]).toBe(9); // val 108: 16 → val 112: 14 → val 113: 9
-    expect(pr.ps_land_use_coverage["gozd"]).toBe(11); // val 113: 14 -> 11
-    expect(pr.ps_land_use_coverage["drugo"]).toBe(11);
+    expect(pr.ps_land_use_coverage["njiva"]).toBe(105); // val 108: 295 → val 112: 258 → val 113: 198 → val 114: 105
+    expect(pr.ps_land_use_coverage["travnik"]).toBe(38); // val 108: 84 → val 112: 77 → val 113: 47 → val 114: 40
+    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(142); // val 114 // val 108: 221 → val 112: 209
+    expect(pr.ps_land_use_coverage["pašnik"]).toBe(12); // val 108: 16 → val 112: 15 → val 113: 14 → val 114: 12
+    expect(pr.ps_land_use_coverage["vrt"]).toBe(6); // val 108: 16 → val 112: 14 → val 113: 9 → val 114: 6
+    expect(pr.ps_land_use_coverage["gozd"]).toBe(3); // val 113: 14 -> 11 -> val 114: 3
+    expect(pr.ps_land_use_coverage["drugo"]).toBe(7); // val 114: 11 -> 7
     expect(pr.ps_land_use_coverage["dvorišče"]).toBe(1);
     expect(pr.ps_land_use_coverage["vinograd"]).toBe(1);
   });
@@ -192,12 +192,12 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
   test("KG v2.3: PARCEL 2.612, HAS_PARCEL 2.914, vozlišča 3.454, vezi 3.618, invariante čiste (val 113: F-PV-07 p17/p18/p21-p24 + SPLIT pravilo; val 112 je bil 2.711/3.013/3.553/3.717)", () => {
     expect(kg.title).toBe("knowledge-graph-1825 v2.4");
     expect(kg.val).toBe(108);
-    expect(kg.node_stats.PARCEL).toBe(2612); // val 108: 2770 → val 112: 2711 → val 113: 2612
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2914); // val 108: 3072 → val 112: 3013 → val 113: 2914
+    expect(kg.node_stats.PARCEL).toBe(2426); // val 108: 2770 → val 112: 2711 → val 113: 2612 → val 114: 2426
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2773); // val 108: 3072 → val 112: 3013 → val 113: 2914 → val 114: 2773
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3454); // val 108: 3612 → val 112: 3553 → val 113: 3454
+    expect(nodes).toBe(3268); // val 108: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3618); // val 108: 3776 → val 112: 3717 → val 113: 3618
+    expect(edges).toBe(3477); // val 108: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
     expect(kg.invariant_violations).toEqual([]);
   });
 
@@ -213,8 +213,8 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
     expect(f12!.status).toContain("RESOLVED-V107");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha 5ae52bd8… (val 112; val 108 je bil 9f856d28)", () => {
-    expect(kgSha).toMatch(/^5ae52bd8/);
+  test("kaskada: runtime kopije držijo isti KG sha 376e2b27… (val 114; val 112 je bil 5ae52bd8, val 108 9f856d28)", () => {
+    expect(kgSha).toMatch(/^376e2b27/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),
@@ -232,7 +232,7 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
       nodes: { node_id: string; node_type: string; origin?: string; evidence_status?: string }[];
     };
     const psParcels = nodes.nodes.filter((n) => n.node_type === "PARCEL" && n.origin === "PS");
-    expect(psParcels.length).toBe(577); // val 108: 735 → val 112: 676 → val 113: 577
+    expect(psParcels.length).toBe(391); // val 108: 735 → val 112: 676 → val 113: 577 → val 114: 391
     for (const p of psParcels) {
       expect(p.evidence_status).toBe("TRANSCRIBED_PROVISIONAL");
     }

@@ -1,0 +1,173 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 47,
+  "scope": "vrednostni re-read (polni stolpec + ciljani x9 zoomi)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p47.jpg",
+  "instrument_files": "crops-v113/z3-p47-vals.png; /tmp p47-full, p47z-*",
+  "fpv07": "vrednosti ze v QK koloni (r0/r20 split notacija) — brez premestitev",
+  "findings_structural": [
+   "21 vrstic 1:1; r20 split 1|695 (Joch 1, ditto-stil)",
+   "FUR vrstica (crtkana pravila) PRAZNA — brez zapisa",
+   "r17: rdeci znaki v marginu (ertrag kolona), vrednost ni precrta"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "97",
+   "k": "993",
+   "old_j": "97",
+   "old_k": "993",
+   "verdict": "soglasje (split notacija ze v v57)"
+  },
+  "r1": {
+   "j": "",
+   "k": "1163",
+   "old_j": "",
+   "old_k": "1165",
+   "verdict": "razhajanje 1165 vs 1163[?] — odprto (zadnja crka_oblika 3/5; vrednost nizko, mokra)"
+  },
+  "r2": {
+   "j": "",
+   "k": "283",
+   "old_j": "",
+   "old_k": "283",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "44",
+   "old_j": "",
+   "old_k": "44",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "45",
+   "old_j": "",
+   "old_k": "45",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "349",
+   "old_j": "",
+   "old_k": "349",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "229",
+   "old_j": "",
+   "old_k": "239",
+   "verdict": "POPRAVEK 239->229 (srednja 2 — identicna prvi stevilki; 3 ima dva skodelica)"
+  },
+  "r7": {
+   "j": "",
+   "k": "396",
+   "old_j": "",
+   "old_k": "396",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "68",
+   "old_j": "",
+   "old_k": "68",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "226",
+   "old_j": "",
+   "old_k": "226",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "357",
+   "old_j": "",
+   "old_k": "357",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "187",
+   "old_j": "",
+   "old_k": "187",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "438",
+   "old_j": "",
+   "old_k": "438",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "364",
+   "old_j": "",
+   "old_k": "344",
+   "verdict": "POPRAVEK 344->364 (srednja 6 z dvigelnikom, ni 4)"
+  },
+  "r14": {
+   "j": "",
+   "k": "406",
+   "old_j": "",
+   "old_k": "406",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "25",
+   "old_j": "",
+   "old_k": "25",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "670",
+   "old_j": "",
+   "old_k": "670",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "543",
+   "old_j": "",
+   "old_k": "663",
+   "verdict": "POPRAVEK 663->543 (5 z zastavico, 4 z zanko, 3 — jasno pri x9)"
+  },
+  "r18": {
+   "j": "",
+   "k": "80",
+   "old_j": "",
+   "old_k": "80",
+   "verdict": "soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "241",
+   "old_j": "",
+   "old_k": "241",
+   "verdict": "soglasje"
+  },
+  "r20": {
+   "j": "1",
+   "k": "695",
+   "old_j": "1",
+   "old_k": "692",
+   "verdict": "POPRAVEK 692->695 (zadnja 5 z zastavico, ni 2) + SPLIT marker (jae=1)"
+  }
+ },
+ "furtrag": {
+  "note": "Fürtrag vrstica (crtkana pravila) PRAZNA — brez zapisa"
+ },
+ "register_actions_planned": [
+  "POPRAVEK: r6 229, r13 364, r17 543, r20 695; SPLIT marker r20",
+  "anmerkung add-only: r1 razhajanje 1165/1163 odprto",
+  "page_observations_v114: FUR prazna"
+ ]
+}

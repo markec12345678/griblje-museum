@@ -1,0 +1,169 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 52,
+  "scope": "vrednostni re-read (z3 + ciljani x9 zoomi)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p52.jpg",
+  "instrument_files": "crops-v113/z3-p52-vals.png; /tmp p52z-*",
+  "fpv07": "vrednosti ze v QK koloni (r1 split 1|182) — brez premestitev",
+  "findings_structural": [
+   "20 vrstic 1:1; r0 prazna (soglasje z v57)",
+   "r19: v57 \"10|7817\" = velika napaka — stran jasno \"245\" (brez Joch); izvor v57 zapisa nepojasnjen",
+   "FUR: 6|1217",
+   "r11 precrto (roznato); r5 dvomna crta/zapis"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "",
+   "old_j": "",
+   "old_k": "",
+   "verdict": "soglasje (obe prazni)"
+  },
+  "r1": {
+   "j": "1",
+   "k": "182",
+   "old_j": "1",
+   "old_k": "182",
+   "verdict": "soglasje (split ze v v57) + SPLIT marker"
+  },
+  "r2": {
+   "j": "",
+   "k": "162",
+   "old_j": "",
+   "old_k": "162",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "249",
+   "old_j": "",
+   "old_k": "249",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "52",
+   "old_j": "",
+   "old_k": "52",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "39",
+   "old_j": "",
+   "old_k": "339",
+   "verdict": "razhajanje 339 vs 39[?] — odprto (crta/floura onemogoca zanesljivo branje srednje stevilke)"
+  },
+  "r6": {
+   "j": "",
+   "k": "122",
+   "old_j": "",
+   "old_k": "122",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "277",
+   "old_j": "",
+   "old_k": "277",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "99",
+   "old_j": "",
+   "old_k": "99",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "232",
+   "old_j": "",
+   "old_k": "232",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "367",
+   "old_j": "",
+   "old_k": "367",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "392",
+   "old_j": "",
+   "old_k": "292",
+   "verdict": "razhajanje 292 vs 392[?] — odprto; precrzano roznato (prva 2/3)"
+  },
+  "r12": {
+   "j": "",
+   "k": "329",
+   "old_j": "",
+   "old_k": "329",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "541",
+   "old_j": "",
+   "old_k": "541",
+   "verdict": "soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "185",
+   "old_j": "",
+   "old_k": "185",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "510",
+   "old_j": "",
+   "old_k": "510",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "1205",
+   "old_j": "",
+   "old_k": "1208",
+   "verdict": "POPRAVEK 1208->1205 (zadnja 5 z zastavico, ni 8)"
+  },
+  "r17": {
+   "j": "",
+   "k": "712",
+   "old_j": "",
+   "old_k": "712",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "589",
+   "old_j": "",
+   "old_k": "389",
+   "verdict": "POPRAVEK 389->589 (prva 5 z zastavico, ni 3)"
+  },
+  "r19": {
+   "j": "",
+   "k": "245",
+   "old_j": "10",
+   "old_k": "7817",
+   "verdict": "POPRAVEK 10|7817 -> 245 (stran jasno 2-4-5, brez Joch; v57 zapis nepojasnjen — velika napaka)"
+  }
+ },
+ "furtrag": {
+  "j": "6",
+  "k": "1217",
+  "note": "FUR 6|1217"
+ },
+ "register_actions_planned": [
+  "POPRAVEK: r16 1205, r18 589, r19 245 (jae 10 -> prazno, klf 7817 -> 245)",
+  "anmerkung add-only: r5/r11 odprta razhajanja; r11 precrto; r19 opomba o v57 napaki",
+  "page_observations_v114: FUR 6|1217"
+ ]
+}

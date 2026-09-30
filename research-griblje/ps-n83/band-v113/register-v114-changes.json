@@ -1,0 +1,3313 @@
+{
+ "val": 114,
+ "stats": {
+  "moves": 167,
+  "split_markers": 31,
+  "value_fixes": 111,
+  "anmerkung_adds": 124,
+  "haus_fixes": 3,
+  "clears": 2,
+  "pages_covered": [
+   "p19",
+   "p20",
+   "p25",
+   "p26",
+   "p27",
+   "p28",
+   "p29",
+   "p30",
+   "p31",
+   "p32",
+   "p33",
+   "p34",
+   "p35",
+   "p36",
+   "p37",
+   "p38",
+   "p39",
+   "p40",
+   "p41",
+   "p42",
+   "p43",
+   "p44",
+   "p45",
+   "p46",
+   "p47",
+   "p48",
+   "p49",
+   "p50",
+   "p51",
+   "p52",
+   "p53",
+   "p54",
+   "p55",
+   "p19-struktura",
+   "p20-struktura",
+   "p40-struktura",
+   "p48-struktura",
+   "p49-struktura",
+   "p34-struktura"
+  ]
+ },
+ "changes": [
+  {
+   "index": 329,
+   "page": 19,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "392",
+   "new": "582"
+  },
+  {
+   "index": 332,
+   "page": 19,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 316 vs 585 — odprto (v57 nepojasnljiv; stran jasno 5-8-5)]"
+  },
+  {
+   "index": 333,
+   "page": 19,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "496",
+   "new": "196"
+  },
+  {
+   "index": 334,
+   "page": 19,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "378",
+   "new": "318"
+  },
+  {
+   "index": 335,
+   "page": 19,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "1 659",
+   "new": "1 639",
+   "note": "srednja 3 (dva skodelca), ni 5 — split \"1|639\""
+  },
+  {
+   "index": 338,
+   "page": 19,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1164 vs 744[?] — odprto; dolga precrtna crta cez vrstico (v57 4-mestno, stran 3-mestno)]"
+  },
+  {
+   "index": 342,
+   "page": 19,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1329 vs 779[?] — odprto (v57 4-mestno, stran 3-mestno 7-7-9)]"
+  },
+  {
+   "index": 343,
+   "page": 19,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "236",
+   "new": "234"
+  },
+  {
+   "index": 345,
+   "page": 19,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 832 vs 802[?] — odprto (zadnja 2/8 dvom)]"
+  },
+  {
+   "index": 347,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 648 vs 568[?] — odprto (prvi dve stevilki 5/6 in 6/4 dvom)]"
+  },
+  {
+   "index": 348,
+   "page": 20,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "736",
+   "new": "336"
+  },
+  {
+   "index": 351,
+   "page": 20,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "237",
+   "new": "337"
+  },
+  {
+   "index": 354,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 687 vs 631[?] — odprto (srednja 3, zadnja 1 — v57 8/7 nepojasnjeno)]"
+  },
+  {
+   "index": 449,
+   "page": 25,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "292",
+   "new": "392"
+  },
+  {
+   "index": 464,
+   "page": 25,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "287",
+   "new": "367"
+  },
+  {
+   "index": 465,
+   "page": 25,
+   "type": "v114_ocistka",
+   "field": "klafter",
+   "old": "10485",
+   "new": "",
+   "note": "PRAZNO vrstica; FUR spodaj"
+  },
+  {
+   "index": 465,
+   "page": 25,
+   "type": "anmerkung_add",
+   "text": "[v114: PRAZNO vrstica; FUR spodaj]"
+  },
+  {
+   "index": 466,
+   "page": 26,
+   "type": "v114_ocistka",
+   "field": "klafter",
+   "old": "911",
+   "new": "",
+   "note": "PRAZNO (precrtano rdece, stevilke neberljive — register 911;"
+  },
+  {
+   "index": 466,
+   "page": 26,
+   "type": "anmerkung_add",
+   "text": "[v114: PRAZNO (precrtano rdece, stevilke neberljive — register 911; anm. Rupf fällig beygm 1821)]"
+  },
+  {
+   "index": 467,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "296",
+   "new": "396"
+  },
+  {
+   "index": 470,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "240",
+   "new": "740"
+  },
+  {
+   "index": 472,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "214",
+   "new": "744"
+  },
+  {
+   "index": 475,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "610",
+   "new": "619"
+  },
+  {
+   "index": 477,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "460",
+   "new": "480"
+  },
+  {
+   "index": 479,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "574",
+   "new": "586"
+  },
+  {
+   "index": 481,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "248",
+   "new": "748"
+  },
+  {
+   "index": 482,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "577",
+   "new": "511"
+  },
+  {
+   "index": 485,
+   "page": 26,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "371",
+   "new": "311"
+  },
+  {
+   "index": 486,
+   "page": 27,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje: celica vsebuje 317 (visoko, par z Joch 1) IN 592 (nizko); register 1|474 ne ustreza — POPRAVEK kandidat 1|592; struktu]"
+  },
+  {
+   "index": 489,
+   "page": 27,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "353",
+   "new": "352"
+  },
+  {
+   "index": 490,
+   "page": 27,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "364",
+   "new": "369"
+  },
+  {
+   "index": 493,
+   "page": 27,
+   "type": "anmerkung_add",
+   "text": "[v114: soglasje; mozno split 1|813 — odprto]"
+  },
+  {
+   "index": 494,
+   "page": 27,
+   "type": "anmerkung_add",
+   "text": "[v114: soglasje; mozno split 1|478 — odprto]"
+  },
+  {
+   "index": 496,
+   "page": 27,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "519",
+   "new": "510"
+  },
+  {
+   "index": 506,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "514",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 506,
+   "page": 28,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "514",
+   "new": "544"
+  },
+  {
+   "index": 507,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "529",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 508,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "572",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 509,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "683",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 513,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "2143",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 513,
+   "page": 28,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "2143",
+   "new": "744"
+  },
+  {
+   "index": 513,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[v114: REVIZIJA: debela crta prek vrednostne celice (delecija originala, verjetno zlito 2|143) + 744 pod crto; POPRAVEK 2143->7]"
+  },
+  {
+   "index": 514,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1533",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 515,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "187",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 516,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "100",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 517,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "66",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 517,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[v114: celica: 666 (visoko, debelo precrtano) + 691 (nizko, rdece precrtano); register 66 = val 57 odsek — odprto, brez finala]"
+  },
+  {
+   "index": 518,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 644 vs 641[?] — rdece precrtano; odprto]"
+  },
+  {
+   "index": 520,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "136",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 521,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "770",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 521,
+   "page": 28,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "770",
+   "new": "170"
+  },
+  {
+   "index": 522,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "132",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 523,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "104",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 524,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1148",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 524,
+   "page": 28,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "1148",
+   "new": "748"
+  },
+  {
+   "index": 525,
+   "page": 28,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "293",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 525,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 293 vs 295[?] + move]"
+  },
+  {
+   "index": 526,
+   "page": 29,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "16½",
+   "note": "val 57 izpustil ulomek — dvignjeni glif ½"
+  },
+  {
+   "index": 526,
+   "page": 29,
+   "type": "anmerkung_add",
+   "text": "[v114: videno 16½ (dvignjeni glif); v57 \"16\"]"
+  },
+  {
+   "index": 527,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "17½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 528,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "18¼",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 529,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "18½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 530,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "16½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 531,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "21½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 531,
+   "page": 29,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje: videno 37 + dvignjeni glif (8-liki = ¾[?]); register 21½ — POPRAVEK kandidat, frakcija odprta]"
+  },
+  {
+   "index": 532,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "16",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 533,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "36",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 534,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "32",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 535,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "18",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 536,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "23½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 537,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "10½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 538,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "16½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 539,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "23½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 540,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "22",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 541,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "28",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 542,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "25½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 543,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "60½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 544,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "60",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 545,
+   "page": 29,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "8½",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 545,
+   "page": 29,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje: videno 6h9 (nizko, crta zgoraj) — 649? 64½? — register 8½; odprto]"
+  },
+  {
+   "index": 546,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "648",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 547,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "735",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 548,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "816",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 549,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "756",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 550,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "628",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 551,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "14",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 552,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "21",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 553,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "606",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 554,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "229",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 555,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "9",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 556,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "16",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 557,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "498",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 558,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "481",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 559,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "52",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 560,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "31",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 561,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "628",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 562,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1007",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 563,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "25",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 564,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "697",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 565,
+   "page": 30,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1022",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 565,
+   "page": 30,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "1022",
+   "new": "1024"
+  },
+  {
+   "index": 566,
+   "page": 31,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje: videno 1305 (visoko, par z Joch 3); register 1785 (3↔7, 0↔8 napaki val 57?) — POPRAVEK kandidat, odprto]"
+  },
+  {
+   "index": 573,
+   "page": 31,
+   "type": "anmerkung_add",
+   "text": "[v114: stack videl '16' — diag r7 ni jasno ločil; ostaja 76 z opombo (verificirati)]"
+  },
+  {
+   "index": 579,
+   "page": 31,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "289",
+   "new": "983"
+  },
+  {
+   "index": 583,
+   "page": 31,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "381",
+   "new": "386"
+  },
+  {
+   "index": 584,
+   "page": 31,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "206",
+   "new": "200"
+  },
+  {
+   "index": 586,
+   "page": 32,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje: videno 144 (glif z zastavico = 1) ali 744; register 1144 — odprto]"
+  },
+  {
+   "index": 589,
+   "page": 32,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "236",
+   "new": "256"
+  },
+  {
+   "index": 590,
+   "page": 32,
+   "type": "anmerkung_add",
+   "text": "[v114: stack 331; register 371 — odprto (stack nezanesljiv za 3/7)]"
+  },
+  {
+   "index": 591,
+   "page": 32,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "430",
+   "new": "484"
+  },
+  {
+   "index": 592,
+   "page": 32,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "622",
+   "new": "522"
+  },
+  {
+   "index": 599,
+   "page": 32,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "- 331",
+   "new": "531"
+  },
+  {
+   "index": 600,
+   "page": 32,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "653",
+   "new": "633"
+  },
+  {
+   "index": 601,
+   "page": 32,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "1890",
+   "new": "1595"
+  },
+  {
+   "index": 605,
+   "page": 32,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "55",
+   "new": "52"
+  },
+  {
+   "index": 619,
+   "page": 33,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "322",
+   "new": "123"
+  },
+  {
+   "index": 620,
+   "page": 33,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "383",
+   "new": "983"
+  },
+  {
+   "index": 622,
+   "page": 33,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "258",
+   "new": "238"
+  },
+  {
+   "index": 624,
+   "page": 33,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "31",
+   "new": "34"
+  },
+  {
+   "index": 627,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1450",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 628,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "266",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 629,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "243",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 630,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "560",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 631,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "664",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 631,
+   "page": 34,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje: zadnja stevilka 6 vs 4 (flourish moti) — odprto]"
+  },
+  {
+   "index": 632,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "406",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 633,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "273",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 634,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "389",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 635,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "400",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 636,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "508",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 637,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "526",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 638,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "646",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 639,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1108",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 640,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "224",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 641,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "285",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 642,
+   "page": 34,
+   "type": "anmerkung_add",
+   "text": "[v114: pomik val 113 ovržen — vrstica 1:1, vrednost vidna]"
+  },
+  {
+   "index": 642,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "185",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 643,
+   "page": 34,
+   "type": "anmerkung_add",
+   "text": "[v114: pomik val 113 ovržen — vrstica 1:1, vrednost vidna]"
+  },
+  {
+   "index": 643,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "397",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 644,
+   "page": 34,
+   "type": "anmerkung_add",
+   "text": "[v114: pomik val 113 ovržen — vrstica 1:1, vrednost vidna]"
+  },
+  {
+   "index": 644,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "87",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 645,
+   "page": 34,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1038 vs 1088[?] — odprto; pomik ovržen]"
+  },
+  {
+   "index": 645,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1038",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 646,
+   "page": 34,
+   "type": "anmerkung_add",
+   "text": "[v114: pomik val 113 ovržen — vrstica 1:1, vrednost vidna]"
+  },
+  {
+   "index": 646,
+   "page": 34,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "273",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 647,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "328",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 648,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "379",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 649,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "678",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 650,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "21",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 652,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "380",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 653,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "26",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 654,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "100",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 655,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "75",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 656,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "193",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 657,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "770",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 657,
+   "page": 35,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "770",
+   "new": "773"
+  },
+  {
+   "index": 658,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "164",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 659,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "80",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 659,
+   "page": 35,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "80",
+   "new": "30"
+  },
+  {
+   "index": 660,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "252",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 661,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "230",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 662,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "26",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 663,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "324",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 664,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "93",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 665,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "48",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 666,
+   "page": 35,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "31",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 666,
+   "page": 35,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "31",
+   "new": "71"
+  },
+  {
+   "index": 667,
+   "page": 36,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje: zadnja stevilka 9 vs 7 (flourish) — odprto; split 1| ze val 57]"
+  },
+  {
+   "index": 669,
+   "page": 36,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "420",
+   "new": "421"
+  },
+  {
+   "index": 670,
+   "page": 36,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "33",
+   "new": "53"
+  },
+  {
+   "index": 674,
+   "page": 36,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "474",
+   "new": "494"
+  },
+  {
+   "index": 676,
+   "page": 36,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "196",
+   "new": "184"
+  },
+  {
+   "index": 687,
+   "page": 37,
+   "type": "anmerkung_add",
+   "text": "[v114: pas vsebuje 761 (visoko) IN 774 (nizko); register jae=\"701\" kla=\"774\" — neujemljivo; POPRAVEK kandidat ali Übertrag — odprto]"
+  },
+  {
+   "index": 688,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "754",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 689,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "705",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 690,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "741",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 691,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "564",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 692,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "526",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 693,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "21",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 694,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "405",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 695,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "31",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 696,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "32",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 697,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "342",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 698,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "489",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 699,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "59",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 700,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "85",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 701,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "959",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 702,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "260",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 703,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "38",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 704,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "33",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 705,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1485",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 706,
+   "page": 37,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "232",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 708,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "185",
+   "new": "485"
+  },
+  {
+   "index": 712,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "210",
+   "new": "270"
+  },
+  {
+   "index": 716,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "308",
+   "new": "305"
+  },
+  {
+   "index": 718,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "269",
+   "new": "349"
+  },
+  {
+   "index": 719,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "346",
+   "new": "366"
+  },
+  {
+   "index": 721,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "373",
+   "new": "573"
+  },
+  {
+   "index": 723,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "168",
+   "new": "165"
+  },
+  {
+   "index": 726,
+   "page": 38,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "741",
+   "new": "761"
+  },
+  {
+   "index": 727,
+   "page": 39,
+   "type": "v114_ocistka",
+   "field": "jaethe",
+   "old": "201",
+   "new": "",
+   "note": "tekač levega stolpca (201), ni Joche"
+  },
+  {
+   "index": 727,
+   "page": 39,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "1774",
+   "new": "774",
+   "note": "celica: 761+774 zloženo; v57 zbral \"1774\""
+  },
+  {
+   "index": 727,
+   "page": 39,
+   "type": "v114_ertrag_add",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1535",
+   "note": "jasen črnilo; 1535 = 761+774"
+  },
+  {
+   "index": 727,
+   "page": 39,
+   "type": "anmerkung_add",
+   "text": "[v114: dve vrednosti v celici 761+774; ertrag 1535 = vsota; v57 \"1774\" zlitje]"
+  },
+  {
+   "index": 728,
+   "page": 39,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "754",
+   "new": "744"
+  },
+  {
+   "index": 729,
+   "page": 39,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "702",
+   "new": "703"
+  },
+  {
+   "index": 738,
+   "page": 39,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "489",
+   "new": "449"
+  },
+  {
+   "index": 741,
+   "page": 39,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "789",
+   "new": "489"
+  },
+  {
+   "index": 748,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "411",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 749,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "775",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 750,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "300",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 751,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "255",
+   "note": "POPRAVEK 355->255 ob premestitvi"
+  },
+  {
+   "index": 753,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1223",
+   "note": "POPRAVEK 1229->1223 ob premestitvi"
+  },
+  {
+   "index": 754,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1365",
+   "note": "POPRAVEK 1363->1365 ob premestitvi"
+  },
+  {
+   "index": 755,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "510",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 756,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "427",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 757,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "919",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 758,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "998",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 759,
+   "page": 40,
+   "type": "v114_split_fix",
+   "field": "jaethe",
+   "old": "599",
+   "new": "1",
+   "note": "SPLIT 1|599; v57 599 v jae"
+  },
+  {
+   "index": 759,
+   "page": 40,
+   "type": "v114_split_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "599",
+   "note": "SPLIT 1|599"
+  },
+  {
+   "index": 759,
+   "page": 40,
+   "type": "v114_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 31",
+   "new": "1/21",
+   "note": "Nro jasno 21, ne 31"
+  },
+  {
+   "index": 759,
+   "page": 40,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 760,
+   "page": 40,
+   "type": "v114_ocistka",
+   "field": "jaethe",
+   "old": "4 - 65",
+   "new": "",
+   "note": "celica na strani PRAZNA; \"4 - 65\" = zlitje s preklicano p13"
+  },
+  {
+   "index": 760,
+   "page": 40,
+   "type": "anmerkung_add",
+   "text": "[v114: v57 \"4 - 65\" = preklicana vrstica p13 (1|65 rdeče prečrtana) — p12 (Wunderling) je prazna]"
+  },
+  {
+   "index": 761,
+   "page": 40,
+   "type": "v114_split_fix",
+   "field": "jaethe",
+   "old": "4 - 660",
+   "new": "4",
+   "note": "SPLIT 4|860"
+  },
+  {
+   "index": 761,
+   "page": 40,
+   "type": "v114_split_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "860",
+   "note": "8 za 6 (v57 660)"
+  },
+  {
+   "index": 761,
+   "page": 40,
+   "type": "anmerkung_add",
+   "text": "[v114: preklicana vrstica p13 — tekač 734 + vrednost rdeče prečrtana; v57 je vrstico izpustil in zlil z r12]"
+  },
+  {
+   "index": 761,
+   "page": 40,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 762,
+   "page": 40,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "529",
+   "note": "preko mapiranja r14=p15: 589->529 (srednja 2 z zanko) + move"
+  },
+  {
+   "index": 762,
+   "page": 40,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece (tekač 735)]"
+  },
+  {
+   "index": 763,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "768",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 764,
+   "page": 40,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "849",
+   "note": "preko mapiranja r16=p17: 989->849 [? dvom prva; srednja ZAGOTOVO 4] + move"
+  },
+  {
+   "index": 765,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "976",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 766,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "38",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 766,
+   "page": 40,
+   "type": "v114_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 69",
+   "new": "1/64",
+   "note": "Nro 64, ne 69"
+  },
+  {
+   "index": 767,
+   "page": 40,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1280",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 767,
+   "page": 40,
+   "type": "v114_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 68",
+   "new": "1/65",
+   "note": "Nro 65, ne 68"
+  },
+  {
+   "index": 768,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "532",
+   "note": "POPRAVEK 522->532 ob premestitvi"
+  },
+  {
+   "index": 769,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "439",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 770,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "448",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 771,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "459",
+   "note": "POPRAVEK 439->459 ob premestitvi"
+  },
+  {
+   "index": 772,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "859",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 773,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1774",
+   "note": "POPRAVEK 1576->1774 ob premestitvi"
+  },
+  {
+   "index": 774,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "209",
+   "note": "POPRAVEK 207->209 ob premestitvi"
+  },
+  {
+   "index": 775,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "28",
+   "note": "POPRAVEK 78->28 ob premestitvi"
+  },
+  {
+   "index": 776,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "703",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 777,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "674",
+   "note": "POPRAVEK 614->674 ob premestitvi"
+  },
+  {
+   "index": 778,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "513",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 779,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "246",
+   "note": "POPRAVEK 346->246 ob premestitvi"
+  },
+  {
+   "index": 780,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "247",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 781,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "438",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 782,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "263",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 783,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "266",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 784,
+   "page": 41,
+   "type": "v114_split_fix",
+   "field": "jaethe",
+   "old": "1 / 77",
+   "new": "1",
+   "note": "SPLIT formalizacija 1|77"
+  },
+  {
+   "index": 784,
+   "page": 41,
+   "type": "v114_split_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "77",
+   "note": "SPLIT formalizacija 1|77"
+  },
+  {
+   "index": 784,
+   "page": 41,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 785,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "448",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 786,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "478",
+   "note": "POPRAVEK 178->478 ob premestitvi"
+  },
+  {
+   "index": 787,
+   "page": 41,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "270",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 789,
+   "page": 42,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "470",
+   "new": "410"
+  },
+  {
+   "index": 793,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 794,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 795,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 796,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece (v57 ni opomnil)]"
+  },
+  {
+   "index": 797,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 447 vs 464[?] — odprto; precrzano rdece, slaba berljivost]"
+  },
+  {
+   "index": 798,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1322 vs 433 — odprto; precrzano rdece; v57 4-gafcno, stran 3-gafcno stevilo]"
+  },
+  {
+   "index": 799,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 800,
+   "page": 42,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "1294",
+   "new": "1394"
+  },
+  {
+   "index": 802,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1270 vs 450 — odprto; precrzano rdece]"
+  },
+  {
+   "index": 803,
+   "page": 42,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "544",
+   "new": "644"
+  },
+  {
+   "index": 803,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 804,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 476 vs 126[?] — odprto; precrzano rdece (prva 1/4 dvom)]"
+  },
+  {
+   "index": 805,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 806,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 483 vs 113[?] — odprto; precrzano rdece (4/1 in 8/1 dvom pod precrto)]"
+  },
+  {
+   "index": 807,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 808,
+   "page": 42,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1874 vs 1313[?] — odprto; precrzano rdece]"
+  },
+  {
+   "index": 811,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 854 vs 856[?] — odprto (zadnja 4/6 pod kotom)]"
+  },
+  {
+   "index": 817,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 273 vs 313 — odprto; precrzano rdece (v57 srednja 7, stran 1)]"
+  },
+  {
+   "index": 818,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 98 vs 32 — odprto; precrzano rdece (stran jasno 3-2)]"
+  },
+  {
+   "index": 819,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 156 vs 462 — odprto; precrzano rdece (popolnoma razlicni zapisi)]"
+  },
+  {
+   "index": 820,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 729 vs 229 — odprto; precrzano rdece (prva 7/2)]"
+  },
+  {
+   "index": 822,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 398 vs 309[?] — odprto; precrzano rdece]"
+  },
+  {
+   "index": 823,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 242 vs 542 — odprto; precrzano rdece (prva 2/5)]"
+  },
+  {
+   "index": 824,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 825,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 718 vs 316[?] — odprto; precrzano rdece]"
+  },
+  {
+   "index": 827,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 828,
+   "page": 43,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 4731 vs 1|1977[?] — odprto; precrzano rdece; split notacija 1|1977 (Joch 1)]"
+  },
+  {
+   "index": 835,
+   "page": 44,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "116",
+   "new": "148"
+  },
+  {
+   "index": 836,
+   "page": 44,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 476 vs 970[?] — odprto; precrzano (roznato)]"
+  },
+  {
+   "index": 843,
+   "page": 44,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "242",
+   "new": "247"
+  },
+  {
+   "index": 844,
+   "page": 44,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "732",
+   "new": "733"
+  },
+  {
+   "index": 845,
+   "page": 44,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "186",
+   "new": "150"
+  },
+  {
+   "index": 847,
+   "page": 44,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1152 vs 1155[?] — odprto; precrzano rdece]"
+  },
+  {
+   "index": 848,
+   "page": 44,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "166",
+   "new": "168"
+  },
+  {
+   "index": 859,
+   "page": 45,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "663",
+   "new": "443"
+  },
+  {
+   "index": 866,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 867,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 869,
+   "page": 46,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "739",
+   "new": "139"
+  },
+  {
+   "index": 870,
+   "page": 46,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "789",
+   "new": "189"
+  },
+  {
+   "index": 871,
+   "page": 46,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "792",
+   "new": "192"
+  },
+  {
+   "index": 872,
+   "page": 46,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "770",
+   "new": "170"
+  },
+  {
+   "index": 877,
+   "page": 46,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "368",
+   "new": "362"
+  },
+  {
+   "index": 879,
+   "page": 46,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 882,
+   "page": 46,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "468",
+   "new": "487"
+  },
+  {
+   "index": 884,
+   "page": 46,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "339",
+   "new": "381"
+  },
+  {
+   "index": 890,
+   "page": 47,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1165 vs 1163[?] — odprto (zadnja crka_oblika 3/5; vrednost nizko, mokra)]"
+  },
+  {
+   "index": 895,
+   "page": 47,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "239",
+   "new": "229"
+  },
+  {
+   "index": 902,
+   "page": 47,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "344",
+   "new": "364"
+  },
+  {
+   "index": 906,
+   "page": 47,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "663",
+   "new": "543"
+  },
+  {
+   "index": 909,
+   "page": 47,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "692",
+   "new": "695",
+   "note": "zadnja 5 z zastavico, ni 2"
+  },
+  {
+   "index": 909,
+   "page": 47,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 912,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "753",
+   "new": "733"
+  },
+  {
+   "index": 913,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "70",
+   "new": "10"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "39",
+   "new": "29"
+  },
+  {
+   "index": 920,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "597",
+   "new": "591"
+  },
+  {
+   "index": 923,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "1059",
+   "new": "1269"
+  },
+  {
+   "index": 924,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "610",
+   "new": "678"
+  },
+  {
+   "index": 925,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "165",
+   "new": "185"
+  },
+  {
+   "index": 927,
+   "page": 48,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "159",
+   "new": "189"
+  },
+  {
+   "index": 933,
+   "page": 49,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "391",
+   "new": "591"
+  },
+  {
+   "index": 934,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano roznato]"
+  },
+  {
+   "index": 935,
+   "page": 49,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "4553",
+   "new": "1553"
+  },
+  {
+   "index": 935,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano roznato]"
+  },
+  {
+   "index": 936,
+   "page": 49,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "472",
+   "new": "412"
+  },
+  {
+   "index": 952,
+   "page": 50,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "876",
+   "new": "816"
+  },
+  {
+   "index": 955,
+   "page": 50,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "352",
+   "new": "353"
+  },
+  {
+   "index": 959,
+   "page": 50,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "249",
+   "new": "269"
+  },
+  {
+   "index": 964,
+   "page": 50,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "106",
+   "new": "104"
+  },
+  {
+   "index": 966,
+   "page": 50,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "751",
+   "new": "131"
+  },
+  {
+   "index": 969,
+   "page": 50,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "520",
+   "new": "528"
+  },
+  {
+   "index": 971,
+   "page": 50,
+   "type": "v114_ocistka",
+   "field": "jaethe",
+   "old": "4",
+   "new": "",
+   "note": "fantom: v57 je FUR Joch 4 vpisal kot vrstico"
+  },
+  {
+   "index": 971,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v114: r20 fantom — FUR \"48 Fürtrag: 4|386\"; v57 Joch 4 kot vrstica]"
+  },
+  {
+   "index": 972,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 974,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 236 vs 288[?] — odprto; precrzano rdece (8-8 z dvema zankama)]"
+  },
+  {
+   "index": 975,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 74 vs 52[?] — odprto; precrzano rdece]"
+  },
+  {
+   "index": 976,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 979,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 980,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 981,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1146 vs 1186[?] — odprto; precrzano rdece (tretja 8/4)]"
+  },
+  {
+   "index": 991,
+   "page": 51,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "22",
+   "new": "92"
+  },
+  {
+   "index": 997,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 339 vs 39[?] — odprto (crta/floura onemogoca zanesljivo branje srednje stevilke)]"
+  },
+  {
+   "index": 1003,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 292 vs 392[?] — odprto; precrzano roznato (prva 2/3)]"
+  },
+  {
+   "index": 1008,
+   "page": 52,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "1208",
+   "new": "1205"
+  },
+  {
+   "index": 1010,
+   "page": 52,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "389",
+   "new": "589"
+  },
+  {
+   "index": 1011,
+   "page": 52,
+   "type": "v114_value_fix",
+   "field": "jaethe",
+   "old": "10",
+   "new": "",
+   "note": "stran nima Joch"
+  },
+  {
+   "index": 1011,
+   "page": 52,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "7817",
+   "new": "245",
+   "note": "stran jasno 245; v57 \"10|7817\" nepojasnjena napaka"
+  },
+  {
+   "index": 1011,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v114: v57 \"10|7817\" = nepojasnjena napaka; stran jasno 245]"
+  },
+  {
+   "index": 1019,
+   "page": 53,
+   "type": "v114_value_fix",
+   "field": "klafter",
+   "old": "849",
+   "new": "449"
+  },
+  {
+   "index": 1020,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 1024,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 1025,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 51 vs 31[?] — odprto (prva 3/5)]"
+  },
+  {
+   "index": 1026,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 349 vs 319[?] — odprto; precrzano rdece (srednja 1/4)]"
+  },
+  {
+   "index": 1028,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 1029,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 87 vs 50[?] — odprto; precrzano rdece (popolnoma razlicni zapisi)]"
+  },
+  {
+   "index": 1030,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 274 vs 201[?] — odprto; precrzano rdece]"
+  },
+  {
+   "index": 1031,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 76 vs 74[?] — odprto; precrzano rdece (zadnja 4/6)]"
+  },
+  {
+   "index": 1032,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 1033,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 1827 vs 1877[?] — odprto; precrzano rdece (srednja 2/7)]"
+  },
+  {
+   "index": 1040,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 73 vs 78[?] — odprto (zadnja 3/8 pri nizki locevljivosti)]"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 716 vs 74/714[?] — odprto (nizka berljivost)]"
+  },
+  {
+   "index": 1051,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v114: razhajanje 425 vs 908 — odprto (popolnoma razlicna zapisa, stran jasno 9-0-8)]"
+  },
+  {
+   "index": 1053,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "29",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1054,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "100",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1055,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "870",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1056,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "147",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1057,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "769",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1058,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "273",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1059,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "739",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1060,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "857",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1061,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "769",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1062,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "765",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1063,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "231",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1064,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "777",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1064,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 1065,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "102",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1066,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "620",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1067,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "769",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1068,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "854",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1069,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1276",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1070,
+   "page": 55,
+   "type": "v114_split_fix",
+   "field": "jaethe",
+   "old": "329",
+   "new": "1",
+   "note": "SPLIT 1|329"
+  },
+  {
+   "index": 1070,
+   "page": 55,
+   "type": "v114_split_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "329",
+   "note": "SPLIT 1|329"
+  },
+  {
+   "index": 1070,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 1071,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "18",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1072,
+   "page": 55,
+   "type": "v114_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "994",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 1072,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v114: precrzano rdece]"
+  },
+  {
+   "index": 458,
+   "page": 25,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 476,
+   "page": 26,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 486,
+   "page": 27,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 510,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 511,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 512,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 518,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 519,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 752,
+   "page": 40,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 566,
+   "page": 31,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 599,
+   "page": 32,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 622,
+   "page": 33,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 626,
+   "page": 33,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 667,
+   "page": 36,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 686,
+   "page": 36,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 889,
+   "page": 47,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 930,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 932,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 981,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 982,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 993,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 1014,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 1015,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 1018,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 1037,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "index": 1047,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]"
+  },
+  {
+   "page": 19,
+   "type": "page_observations_v114",
+   "text": "v114: POMIK iz v113 OVRŽEN — z3 grid artifakt (\"bandi se začnejo pri r1\" = mreza zamaknjena); imensko-vrednostni trak: 11 sidrov na ISTIH indeksih (432=r0, 440=r1, 1|1301=r2, 808=r4, 637=r5, 1|182=r10, 716=r11, 205=r13, 192=r14, 776=r15, 1169=r18); FUR 10|517 soglasje; POPRAVEK r3 582, r7 196[?], r8 318, r9 1 639, r17 234; odprta: r6 (316 vs 585), r12 (1164 vs 744, prečrtano), r16 (1329 vs 779), r19 (832 vs 802)"
+  },
+  {
+   "page": 20,
+   "type": "page_observations_v114",
+   "text": "v114: \"delni pomik\" iz v113 OVRŽEN — 5 sidrov 1:1 (703=r0, 950=r6, 535=r9, 444=r11, FUR 6|1183); POPRAVEK r2 736->336, r5 237->337 (potrditev v113 sidrov); odprta: r1 (648 vs 568[?]), r8 (687 vs 631[?]); r10–r19 nagnjen tisk ±20px — ponovni pregled ob višji ločljivosti odprt"
+  },
+  {
+   "page": 40,
+   "type": "page_observations_v114",
+   "text": "v114 STRUKTURA: stran 21 vrstic (tekač 721–740 + 739½), v57 20 — v57 izpustil PRAZNO vrstico p12 (Wunderling) in zlil preklicano p13 (1|65, tekač 734 rdeče) v r12; v57 r13–r19 = p14–p20 (dokaz: Nro 20/22/66/65/65 + vrednosti 768/976/38/1280 natanko); rdeče prečrtani p13/p14/p15 (tekača 734/735/736); FUR crno 6|255 prečrtano + rdeča revizija 4|1030; VSTAVLJANJE IZPUŠČENE VRSTICE = odprta strukturna odločitev"
+  },
+  {
+   "page": 48,
+   "type": "page_observations_v114",
+   "text": "v114 STRUKTURA: stran 21 vrstic, v57 20 — v57 izpustil p2 (vrednost \"12\", lastno ime ~\"Schmipa[?]\", ni prazna!) in zamaknil r2+ za +1; dokaz: 10 natanko ujemanj pod mapiranjem (439, 533, 16, 941, 621, 565, 1490, 153, 163, 280); popravki preko mapiranja vgrajeni; FUR 5|58[?]; VSTAVLJANJE = odprta odločitev (skupaj s p40)"
+  },
+  {
+   "page": 49,
+   "type": "page_observations_v114",
+   "text": "v114 STRUKTURA: stran 21 vrednostnih vrstic + FUR 7|1075; v57 20 (r20 prazna) — izpustil PREČRTANO vrstico p2 (\"2|973\", kultur Acker) in zamaknil r2+ za +1; dokaz: 14 natanko ujemanj (1415, 381, 281, 97, 92, 821, 56, 295, 975, 556, 376, 606, 658, 398); p5 1415 + p6 1553 rožnato prečrtani; VSTAVLJANJE = odprta odločitev"
+  },
+  {
+   "page": 34,
+   "type": "page_observations_v114",
+   "text": "v114 STRUKTURA: pomik iz v113 (r15–r19) OVRŽEN — vrednosti 185/397/87/1038/273 vidne na svojih indeksih (imensko-vrednostni trak); stran ima 21. vrstico pred Fürtragom (~\"70\", ime ~\"Hurich/Lohingr Mich.[?]\") — v57 je ne ima; FUR 4|1447[?]; r18 razhajanje 1038 vs 1088[?] odprto; VSTAVLJANJE = odprta odločitev"
+  }
+ ]
+}

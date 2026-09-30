@@ -1,0 +1,172 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 33,
+  "scope": "vrednostni re-read (z3 sklad + diag + rep)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p33.jpg",
+  "instrument_files": "crops-v113/z3-p33-vals.png, crops-v114diag/p33-*.png",
+  "fpv07": "vrednosti v QK; r16 split 1|, r20 split 3/4|",
+  "findings_structural": [
+   "21-vrsticna stran",
+   "4 popravki: r13 322->123, r14 383->983, r16 258->238, r18 31->34",
+   "FUR: 4|1297 (crno) + rdeca revizija spodaj: precrtano 136? + 4|885 (v oklepaju)",
+   "r0-r2 precrtane vrstice (anm. Pößlbergern/Celle)",
+   "vsotna kontrola odprta"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "r0",
+   "old_j": "",
+   "old_k": "47",
+   "verdict": "soglasje; precrtano (anm. bey Pößlbergern 1830)"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "70",
+   "verdict": "soglasje; precrtano rdece (Celle [rot])"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "285",
+   "verdict": "soglasje; precrtano rdece (Celle [rot])"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "12",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "33",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "200",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "1149",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "677",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "286",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "126",
+   "verdict": "soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "128",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "205",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "r12",
+   "old_j": "",
+   "old_k": "118",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "322",
+   "verdict": "POPRAVEK 322->123 (1-2-3 jasno)"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "383",
+   "verdict": "POPRAVEK 383->983 (9 z zanko)"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "657",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "1",
+   "k": "r16",
+   "old_j": "1",
+   "old_k": "258",
+   "verdict": "POPRAVEK 258->238 (split 1|238; srednja 3)"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "24",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "31",
+   "verdict": "POPRAVEK 31->34 (4 z dvižnikom)"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "1014",
+   "verdict": "soglasje"
+  },
+  "r20": {
+   "j": "3/4",
+   "k": "r20",
+   "old_j": "3/4",
+   "old_k": "376",
+   "verdict": "soglasje (split 3/4|376 ze val 57); svinčnik 452 v ertrag področju"
+  }
+ },
+ "furtrag": "4|1297 + rdeca revizija 4|885 (s precrtanim 136?)",
+ "register_actions_planned": [
+  "POPRAVEK x4: r13, r14, r16, r18",
+  "FUR 4|1297 + anmerkung rdeca revizija"
+ ]
+}

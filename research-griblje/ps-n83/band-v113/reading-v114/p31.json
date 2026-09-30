@@ -1,0 +1,164 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 31,
+  "scope": "vrednostni re-read (z3 sklad + diag + spodnji široki prerez)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p31.jpg",
+  "instrument_files": "crops-v113/z3-p31-vals.png, crops-v114diag/p31-*.png",
+  "fpv07": "vrednosti v QK; r0 split Joch 3",
+  "findings_structural": [
+   "r0: 1305 visoko (par z Joch 3) — register 1785 odstopa v dveh stevkah",
+   "r13: 983 jasno — register 289 popacen; rdec pripis 6-1228",
+   "FUR: 29 Fürtrag | 4 | 625 — vsota se ne zapira (r1-r19=7341 + r0) — odprto",
+   "rdec robni kljuki r15-r19"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "3",
+   "k": "r0",
+   "old_j": "3",
+   "old_k": "1785",
+   "verdict": "razhajanje: videno 1305 (visoko, par z Joch 3); register 1785 (3↔7, 0↔8 napaki val 57?) — POPRAVEK kandidat, odprto"
+  },
+  "r1": {
+   "j": "",
+   "k": "r1",
+   "old_j": "",
+   "old_k": "391",
+   "verdict": "soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "r2",
+   "old_j": "",
+   "old_k": "429",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "r3",
+   "old_j": "",
+   "old_k": "24",
+   "verdict": "soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "r4",
+   "old_j": "",
+   "old_k": "27",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "r5",
+   "old_j": "",
+   "old_k": "378",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "j": "",
+   "k": "r6",
+   "old_j": "",
+   "old_k": "292",
+   "verdict": "soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "r7",
+   "old_j": "",
+   "old_k": "76",
+   "verdict": "stack videl '16' — diag r7 ni jasno ločil; ostaja 76 z opombo (verificirati)"
+  },
+  "r8": {
+   "j": "",
+   "k": "r8",
+   "old_j": "",
+   "old_k": "52",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "j": "",
+   "k": "r9",
+   "old_j": "",
+   "old_k": "700",
+   "verdict": "soglasje; mozen split 1|700 — odprto"
+  },
+  "r10": {
+   "j": "",
+   "k": "r10",
+   "old_j": "",
+   "old_k": "485",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "r11",
+   "old_j": "",
+   "old_k": "18",
+   "verdict": "soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "r12",
+   "old_j": "",
+   "old_k": "68",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "r13",
+   "old_j": "",
+   "old_k": "289",
+   "verdict": "POPRAVEK kandidat 289->983 (jasno 9-8-3); rdec pripis '6-1228' v anmerkung — odprto"
+  },
+  "r14": {
+   "j": "",
+   "k": "r14",
+   "old_j": "",
+   "old_k": "916",
+   "verdict": "soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "r15",
+   "old_j": "",
+   "old_k": "1078",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "r16",
+   "old_j": "",
+   "old_k": "606",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "r17",
+   "old_j": "",
+   "old_k": "381",
+   "verdict": "POPRAVEK 381->386 (zanka 6)"
+  },
+  "r18": {
+   "j": "",
+   "k": "r18",
+   "old_j": "",
+   "old_k": "206",
+   "verdict": "POPRAVEK 206->200 (nula brez zanke)"
+  },
+  "r19": {
+   "j": "",
+   "k": "r19",
+   "old_j": "",
+   "old_k": "232",
+   "verdict": "soglasje"
+  }
+ },
+ "furtrag": "29 Fürtrag | 4 | 625",
+ "register_actions_planned": [
+  "POPRAVEK: r13 289->983, r17 381->386, r18 206->200",
+  "odprti: r0 (1305 vs 1785), r7 (76), r9 split, FUR"
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 19,
+  "scope": "STRUKTURNA forenzika pomika + vrednostni re-read (imensko-vrednostni trak + hi-res polovici)",
+  "method": "agentov direktni vid; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p19.jpg",
+  "instrument_files": "/tmp p19-names-vals, p19-hi-top, p19-hi-bot, p19z-*",
+  "fpv07": "vrednosti ze v QK koloni (r2/r9/r10 split notacijo ze v v57) — brez premestitev",
+  "findings_structural": [
+   "KLJUCNO: POMIK VRSTIC iz val 113 OVRZEN — z3 grid artifakt (val 113: \"bandi se zacnejo pri r1\" = mreza zamaknjena, ne stran). Imensko-vrednostni trak dokaze 1:1 poravnavo: 11 natankih sidrov na ISTIH indeksih (432=r0, 440=r1, 1|1301=r2, 808=r4, 637=r5, 1|182=r10, 716=r11, 205=r13, 192=r14, 776=r15, 1169=r18)",
+   "FUR 10|517 potrjen (soglasje z v57)",
+   "4 popravki + 4 odprta razhjanja (glej value_audit); r12 ima dolgo precrtno crto cez vrstico"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "432",
+   "old_j": "",
+   "old_k": "432",
+   "verdict": "soglasje (sidro)"
+  },
+  "r1": {
+   "j": "",
+   "k": "440",
+   "old_j": "",
+   "old_k": "440",
+   "verdict": "soglasje (sidro)"
+  },
+  "r2": {
+   "j": "1",
+   "k": "1301",
+   "old_j": "1",
+   "old_k": "1 1301",
+   "verdict": "soglasje (sidro; split ze v v57)"
+  },
+  "r3": {
+   "j": "",
+   "k": "582",
+   "old_j": "",
+   "old_k": "392",
+   "verdict": "POPRAVEK 392->582 (5 z zastavico, 8 z dvema zankama — v57 3/9 obe napacni)"
+  },
+  "r4": {
+   "j": "",
+   "k": "808",
+   "old_j": "",
+   "old_k": "808",
+   "verdict": "soglasje (sidro)"
+  },
+  "r5": {
+   "j": "",
+   "k": "637",
+   "old_j": "",
+   "old_k": "637",
+   "verdict": "soglasje (sidro)"
+  },
+  "r6": {
+   "j": "",
+   "k": "585",
+   "old_j": "",
+   "old_k": "316",
+   "verdict": "razhajanje 316 vs 585 — odprto (v57 nepojasnljiv; stran jasno 5-8-5)"
+  },
+  "r7": {
+   "j": "",
+   "k": "196",
+   "old_j": "",
+   "old_k": "496",
+   "verdict": "POPRAVEK 496->196 [? prva 1/4 — ponavljajoca v57 zamenjava 1/4/7]"
+  },
+  "r8": {
+   "j": "",
+   "k": "318",
+   "old_j": "",
+   "old_k": "378",
+   "verdict": "POPRAVEK 378->318 (srednja 1, ni 7 — ponavljajoca zamenjava)"
+  },
+  "r9": {
+   "j": "1",
+   "k": "639",
+   "old_j": "1",
+   "old_k": "1 659",
+   "verdict": "POPRAVEK 659->639 (srednja 3 — dva skodelica, ni 5; split 1| oboje)"
+  },
+  "r10": {
+   "j": "1",
+   "k": "182",
+   "old_j": "1",
+   "old_k": "1 182",
+   "verdict": "soglasje (sidro)"
+  },
+  "r11": {
+   "j": "",
+   "k": "716",
+   "old_j": "",
+   "old_k": "716",
+   "verdict": "soglasje (sidro)"
+  },
+  "r12": {
+   "j": "",
+   "k": "744",
+   "old_j": "",
+   "old_k": "1164",
+   "verdict": "razhajanje 1164 vs 744[?] — odprto; dolga precrtna crta cez vrstico (v57 4-mestno, stran 3-mestno)"
+  },
+  "r13": {
+   "j": "",
+   "k": "205",
+   "old_j": "",
+   "old_k": "205",
+   "verdict": "soglasje (sidro)"
+  },
+  "r14": {
+   "j": "",
+   "k": "192",
+   "old_j": "",
+   "old_k": "192",
+   "verdict": "soglasje (sidro)"
+  },
+  "r15": {
+   "j": "",
+   "k": "776",
+   "old_j": "",
+   "old_k": "776",
+   "verdict": "soglasje (sidro)"
+  },
+  "r16": {
+   "j": "",
+   "k": "779",
+   "old_j": "",
+   "old_k": "1329",
+   "verdict": "razhajanje 1329 vs 779[?] — odprto (v57 4-mestno, stran 3-mestno 7-7-9)"
+  },
+  "r17": {
+   "j": "",
+   "k": "234",
+   "old_j": "",
+   "old_k": "236",
+   "verdict": "POPRAVEK 236->234 (zadnja 4 z zanko, ni 6)"
+  },
+  "r18": {
+   "j": "",
+   "k": "1169",
+   "old_j": "",
+   "old_k": "1169",
+   "verdict": "soglasje (sidro)"
+  },
+  "r19": {
+   "j": "",
+   "k": "802",
+   "old_j": "",
+   "old_k": "832",
+   "verdict": "razhajanje 832 vs 802[?] — odprto (zadnja 2/8 dvom)"
+  }
+ },
+ "furtrag": {
+  "j": "10",
+  "k": "517",
+  "note": "FUR 10|517 — soglasje z v57 (val 113 ze zabelezen)"
+ },
+ "register_actions_planned": [
+  "VAL 113 PAGE_OBS KOREKCIJA: pomik p19 OVRZEN — v page_observations_v114 izrecno dokazano s 11 sidri",
+  "POPRAVEK: r3 582, r7 196[?], r8 318, r9 639, r17 234",
+  "anmerkung add-only: odprta razhajanja r6, r12, r16, r19",
+  "reading_pass v114-ps-reread za p19"
+ ]
+}

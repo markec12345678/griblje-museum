@@ -225,9 +225,9 @@ describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodo
     expect(kg.val).toBe(108);
     expect(kg.invariant_violations).toEqual([]);
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3454); // val 108: 3612 → val 112: 3553 → val 113: 3454
+    expect(nodes).toBe(3268); // val 108: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3618); // val 108: 3776 → val 112: 3717 → val 113: 3618
+    expect(edges).toBe(3477); // val 108: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
     expect(kg.findings.some((f) => f.finding_id === "KG-F11" && f.val === 98)).toBe(true);
   });
 

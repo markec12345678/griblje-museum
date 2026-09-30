@@ -1,0 +1,170 @@
+{
+ "meta": {
+  "val": 114,
+  "page": 49,
+  "scope": "vrednostni re-read + strukturna forenzika (izpuscena precrta vrstica)",
+  "method": "agentov direktni vid: kultur-vrednostni trak s ravilom + z3 sekvenca; 0 VLM",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p49.jpg",
+  "instrument_files": "crops-v113/z3-p49-vals.png; /tmp p49-strip",
+  "fpv07": "vrednosti ze v QK koloni (r0/r2 split notacija) — brez premestitev",
+  "findings_structural": [
+   "STRUKTURA: stran ima 21 vrednostnih vrstic + FUR; v57 je zabelezil 20 (r20 prazna) — izpuscil je PRECRTANO vrstico p2 (\"2|973\" — cela vrednost precrta, kultur Acker) in zamaknil r2+ za +1",
+   "DOKAZ: 14 natankih ujemanj pod mapiranjem v57 rN = p(N+1) za N>=3 (1415, 381, 281, 97, 92, 821, 56, 295, 975, 556, 376, 606, 658, 398)",
+   "p5 (1415) in p6 (1553) precrteni (roznato) — vsebina ohranjena",
+   "FUR: 7|1075 (v57 r20 je prazna vrstica — FUR ni zabelezen)",
+   "VGRADNJA: brez vstavljanja; popravki preko mapiranja; vstavljanje preklicane p2 = odprta strukturna odlocba (skupaj s p40/p48)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "2",
+   "k": "714",
+   "old_j": "2",
+   "old_k": "714",
+   "verdict": "soglasje (p0, split ze v v57)"
+  },
+  "r1": {
+   "j": "",
+   "k": "277",
+   "old_j": "",
+   "old_k": "277",
+   "verdict": "soglasje (p1)"
+  },
+  "r2": {
+   "j": "1",
+   "k": "11",
+   "old_j": "1",
+   "old_k": "11",
+   "verdict": "soglasje vrednosti (p3); NAD p2: precrta vrstica \"2|973\" izpuscena v v57 — page_obs"
+  },
+  "r3": {
+   "j": "",
+   "k": "591",
+   "old_j": "",
+   "old_k": "391",
+   "verdict": "preko mapiranja r3=p4: POPRAVEK 391->591 (prva 5 z zastavico, ni 3)"
+  },
+  "r4": {
+   "j": "",
+   "k": "1415",
+   "old_j": "",
+   "old_k": "1415",
+   "verdict": "soglasje (p5, natanko); precrzano roznato"
+  },
+  "r5": {
+   "j": "",
+   "k": "1553",
+   "old_j": "",
+   "old_k": "4553",
+   "verdict": "preko mapiranja r5=p6: POPRAVEK 4553->1553 [? prva 1/4 pod precrtо]; precrzano roznato"
+  },
+  "r6": {
+   "j": "",
+   "k": "412",
+   "old_j": "",
+   "old_k": "472",
+   "verdict": "preko mapiranja r6=p7: POPRAVEK 472->412 (srednja 1, ni 7)"
+  },
+  "r7": {
+   "j": "",
+   "k": "381",
+   "old_j": "",
+   "old_k": "381",
+   "verdict": "soglasje (p8, natanko)"
+  },
+  "r8": {
+   "j": "",
+   "k": "281",
+   "old_j": "",
+   "old_k": "281",
+   "verdict": "soglasje (p9)"
+  },
+  "r9": {
+   "j": "",
+   "k": "97",
+   "old_j": "",
+   "old_k": "97",
+   "verdict": "soglasje (p10)"
+  },
+  "r10": {
+   "j": "",
+   "k": "92",
+   "old_j": "",
+   "old_k": "92",
+   "verdict": "soglasje (p11)"
+  },
+  "r11": {
+   "j": "",
+   "k": "821",
+   "old_j": "",
+   "old_k": "821",
+   "verdict": "soglasje (p12)"
+  },
+  "r12": {
+   "j": "",
+   "k": "56",
+   "old_j": "",
+   "old_k": "56",
+   "verdict": "soglasje (p13)"
+  },
+  "r13": {
+   "j": "",
+   "k": "295",
+   "old_j": "",
+   "old_k": "295",
+   "verdict": "soglasje (p14)"
+  },
+  "r14": {
+   "j": "",
+   "k": "975",
+   "old_j": "",
+   "old_k": "975",
+   "verdict": "soglasje (p15)"
+  },
+  "r15": {
+   "j": "",
+   "k": "556",
+   "old_j": "",
+   "old_k": "556",
+   "verdict": "soglasje (p16)"
+  },
+  "r16": {
+   "j": "",
+   "k": "376",
+   "old_j": "",
+   "old_k": "376",
+   "verdict": "soglasje (p17)"
+  },
+  "r17": {
+   "j": "",
+   "k": "606",
+   "old_j": "",
+   "old_k": "606",
+   "verdict": "soglasje (p18)"
+  },
+  "r18": {
+   "j": "",
+   "k": "658",
+   "old_j": "",
+   "old_k": "658",
+   "verdict": "soglasje (p19)"
+  },
+  "r19": {
+   "j": "",
+   "k": "398",
+   "old_j": "",
+   "old_k": "398",
+   "verdict": "soglasje (p20)"
+  }
+ },
+ "furtrag": {
+  "j": "7",
+  "k": "1075",
+  "note": "FUR 7|1075 — v57 ni zabeležil (r20 prazna)"
+ },
+ "register_actions_planned": [
+  "POPRAVEK (preko mapiranja): r3 591, r5 1553[?], r6 412",
+  "anmerkung add-only: r4/r5 precrto; opomba izpuscene precrte vrstice p2 (2|973)",
+  "page_observations_v114: strukturna forenzika + FUR 7|1075"
+ ]
+}
