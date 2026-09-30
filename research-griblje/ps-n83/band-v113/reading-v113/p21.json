@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 21,
+  "scope": "vrednostni re-read (z3); imena/haus/kultur/ertrag -> val 114",
+  "method": "agentov direktni vid: z3 sklad; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p21.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/z3-p21-vals.png",
+  "fpv07": "vrednosti v QK koloni (joche prazna); r9 in r10 imata legitimen Joch (split notacija: 3|1248, 1|457)",
+  "findings_structural": [
+   "FUR: 13|1108 (13 v Joch koloni)",
+   "stran CISTA — vseh 20 vrstic pozicijsko poravnanih, brez pomika",
+   "blatt nadaljevanje"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "573",
+   "old_j": "273",
+   "old_k": "",
+   "verdict": "POPRAVEK 273->573 + move"
+  },
+  "r1": {
+   "j": "",
+   "k": "492",
+   "old_j": "492",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "484",
+   "old_j": "464",
+   "old_k": "",
+   "verdict": "POPRAVEK 464->484 + move"
+  },
+  "r3": {
+   "j": "",
+   "k": "382",
+   "old_j": "382",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "859",
+   "old_j": "859",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "859",
+   "old_j": "839",
+   "old_k": "",
+   "verdict": "POPRAVEK 839->859 + move"
+  },
+  "r6": {
+   "j": "",
+   "k": "505",
+   "old_j": "505",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "469",
+   "old_j": "469",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "11",
+   "old_j": "11",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r9": {
+   "j": "3",
+   "k": "1248",
+   "old_j": "3 1268",
+   "old_k": "",
+   "verdict": "SPLIT formalizacija: jae=3, kla 1268->1248"
+  },
+  "r10": {
+   "j": "1",
+   "k": "457[?]",
+   "old_j": "1 837",
+   "old_k": "",
+   "verdict": "razhajanje 837 vs 457[?] — odprto; split jae=1 soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "1387[?]",
+   "old_j": "1840",
+   "old_k": "",
+   "verdict": "razhajanje 1840 vs 1387[?] — odprto"
+  },
+  "r12": {
+   "j": "",
+   "k": "946",
+   "old_j": "946",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "610",
+   "old_j": "610",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "798",
+   "old_j": "798",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r15": {
+   "j": "",
+   "k": "748",
+   "old_j": "748",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r16": {
+   "j": "",
+   "k": "1555",
+   "old_j": "1555",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "1381",
+   "old_j": "1381",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "1302[?]",
+   "old_j": "1306",
+   "old_k": "",
+   "verdict": "POPRAVEK 1306->1302[?] + move"
+  },
+  "r19": {
+   "j": "",
+   "k": "448",
+   "old_j": "948",
+   "old_k": "",
+   "verdict": "POPRAVEK 948->448 + move"
+  }
+ },
+ "furtrag": "13|1108 — 13 v Joch koloni, 1108 v QK",
+ "register_actions_planned": [
+  "F-PV-07 move vseh all-klafter vrstic",
+  "SPLIT formalizacija r9 (3|1248), r10 (1|457[?])",
+  "POPRAVEK: r0 573, r2 484, r5 859, r9 1248, r18 1302[?], r19 448",
+  "odprta: r10, r11"
+ ]
+}

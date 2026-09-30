@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "e574df037753d8224acb6cb29f492283a839d0d883d9d9365135f35497893c9d",
+  "kg_sha256": "5ae52bd87887937b03be3b90217f1a8c014013ac7e39beb8c4733502e0aad97c",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -173,9 +173,9 @@
   {
    "category_id": "parcels",
    "title": "Parcelni register 1825 (PUA + PS)",
-   "total": 2711,
+   "total": 2612,
    "VERIFIED": 907,
-   "PARTIAL": 1351,
+   "PARTIAL": 1252,
    "CONFLICT": 453,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -183,8 +183,8 @@
     "PUA/REVIEW": 675,
     "PUA/REVIEW-CONFLICT": 453,
     "PUA/VERIFIED-2x": 907,
-    "PS/SINGLE_SOURCE": 674,
-    "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 2
+    "PS/SINGLE_SOURCE": 576,
+    "PS/SINGLE_SOURCE (flag: vrednost >3000 — možna zmes stolpcev (val 58 F14); needs re-read)": 1
    },
    "mapping_rule": "PUA: VERIFIED-2x→VERIFIED, REVIEW→PARTIAL, REVIEW-CONFLICT→CONFLICT; PS: vse SINGLE_SOURCE→PARTIAL (1 z zastavico F14 ostaja PARTIAL z opombo)",
    "evidence": [
@@ -195,12 +195,12 @@
   {
    "category_id": "parcel_geometry",
    "title": "Parcelne meje / geometrija (poligoni)",
-   "total": 2711,
+   "total": 2612,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
    "UNKNOWN": 0,
-   "NOT_FOUND": 2711,
+   "NOT_FOUND": 2612,
    "native": {
     "polygons_documented": 0,
     "raster_basis": "A01–A05 rastri val 42 (VAČ)",
@@ -551,11 +551,11 @@
   {
    "category_id": "unknowns",
    "title": "Neznanke — prečni pregled (izrecno štetje, brez procentov)",
-   "total": 3913,
+   "total": 3715,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
-   "UNKNOWN": 3913,
+   "UNKNOWN": 3715,
    "NOT_FOUND": 0,
    "native": {
     "aggregate": [
@@ -571,7 +571,7 @@
      },
      {
       "item": "PS parcele cross_ref_to_pua UNKNOWN (namespace vprašanje F14)",
-      "count": 676,
+      "count": 577,
       "category": "parcels"
      },
      {
@@ -596,7 +596,7 @@
      },
      {
       "item": "parcele brez geometrije",
-      "count": 2711,
+      "count": 2612,
       "category": "parcel_geometry"
      },
      {

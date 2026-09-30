@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 22,
+  "scope": "vrednostni re-read (z3); imena/haus/kultur/ertrag -> val 114",
+  "method": "agentov direktni vid: z3 sklad; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p22.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/z3-p22-vals.png",
+  "fpv07": "vrednosti v QK koloni (joche prazna); brez splitov vidnih",
+  "findings_structural": [
+   "FUR: 6|444 + rdeca revizija '320'[?] pod",
+   "6 sidrnih ujemanj (r0, r1, r3, r7, r9, r13) — poravnava brez pomika",
+   "NEVARNO: 7 velikih razhajanj (r2, r5, r8, r11, r15, r16, r19) — val 57 vrednosti sistematsko.vecje; potreben zoom val 114",
+   "r19 baseline '9116' sumljivo (mozno 9|116 ali napaka)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "507",
+   "old_j": "507",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "1086",
+   "old_j": "1086",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "244",
+   "old_j": "348",
+   "old_k": "",
+   "verdict": "razhajanje 348 vs 244 — odprto"
+  },
+  "r3": {
+   "j": "",
+   "k": "25",
+   "old_j": "25",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "308",
+   "old_j": "208",
+   "old_k": "",
+   "verdict": "POPRAVEK 208->308 + move"
+  },
+  "r5": {
+   "j": "",
+   "k": "443",
+   "old_j": "1148",
+   "old_k": "",
+   "verdict": "razhajanje 1148 vs 443 — odprto"
+  },
+  "r6": {
+   "j": "",
+   "k": "443[?]",
+   "old_j": "448",
+   "old_k": "",
+   "verdict": "razhajanje 448 vs 443[?] — odprto"
+  },
+  "r7": {
+   "j": "",
+   "k": "134",
+   "old_j": "134",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r8": {
+   "j": "",
+   "k": "165",
+   "old_j": "785",
+   "old_k": "",
+   "verdict": "razhajanje 785 vs 165 — odprto"
+  },
+  "r9": {
+   "j": "",
+   "k": "399",
+   "old_j": "399",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "665",
+   "old_j": "668",
+   "old_k": "",
+   "verdict": "POPRAVEK 668->665 + move"
+  },
+  "r11": {
+   "j": "",
+   "k": "453",
+   "old_j": "782",
+   "old_k": "",
+   "verdict": "razhajanje 782 vs 453 — odprto"
+  },
+  "r12": {
+   "j": "",
+   "k": "723[?]",
+   "old_j": "712",
+   "old_k": "",
+   "verdict": "razhajanje 712 vs 723[?] — odprto"
+  },
+  "r13": {
+   "j": "",
+   "k": "600",
+   "old_j": "600",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "824",
+   "old_j": "524",
+   "old_k": "",
+   "verdict": "POPRAVEK 524->824 + move"
+  },
+  "r15": {
+   "j": "",
+   "k": "616",
+   "old_j": "276",
+   "old_k": "",
+   "verdict": "razhajanje 276 vs 616 — odprto"
+  },
+  "r16": {
+   "j": "",
+   "k": "443",
+   "old_j": "1162",
+   "old_k": "",
+   "verdict": "razhajanje 1162 vs 443 — odprto (3. '443' na strani — sumljivo, zoom val 114)"
+  },
+  "r17": {
+   "j": "",
+   "k": "889",
+   "old_j": "589",
+   "old_k": "",
+   "verdict": "POPRAVEK 589->889 + move"
+  },
+  "r18": {
+   "j": "",
+   "k": "352",
+   "old_j": "852",
+   "old_k": "",
+   "verdict": "POPRAVEK 852->352 + move"
+  },
+  "r19": {
+   "j": "",
+   "k": "474",
+   "old_j": "9116",
+   "old_k": "",
+   "verdict": "razhajanje 9116 vs 474 — odprto"
+  }
+ },
+ "furtrag": "6|444 + rdeca revizija '320'[?]",
+ "register_actions_planned": [
+  "F-PV-07 move vseh",
+  "POPRAVEK: r4 308, r10 665, r14 824, r17 889, r18 352",
+  "odprta (zoom val 114): r2, r5, r6, r8, r11, r12, r15, r16, r19"
+ ]
+}

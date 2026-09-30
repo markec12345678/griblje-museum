@@ -4,7 +4,7 @@
   "generated_by": "build-c4-metrika-v90.py",
   "method": "C4 metrika: izčrpna deterministična preverba konvencij na sidrih val 61 (K1–K6) + reprodukcija C4 val 86b (K7) + usklajenost vnosov (K8) + konfunda F-PV-05 (K9) + opazovalni register (K10); NIČ VLM, NIČ spleta; NIČ sprememb podatkov (§4/§22)",
   "inputs": {
-   "register.json": "696af7daaf6f4c13f8e108dac171e269df6197949328483950ccd5d334f022c1",
+   "register.json": "ff8b7a842f890ab92dbc713ca4ca09aab93625bc9ed79e434d2809ddbe7bf24f",
    "totals-reread.json": "5866a457d2cd102267bcf37f3cf8b87d19fcb58aa5aa2f035f41f9b828fe31aa",
    "f11-fuertrag-v86.json": "bd9877766d486e328321c3d5e422ccf2a636ef016a58794da1d3640bc060e5ee"
   },
@@ -199,9 +199,9 @@
    "crossed": true,
    "red_line": "1|919",
    "rows": 20,
-   "K1_page_sum_excl": 12678,
+   "K1_page_sum_excl": 12543,
    "K1_match": false,
-   "K2_page_sum_incl": 12678,
+   "K2_page_sum_incl": 12543,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -211,11 +211,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 2519,
-    "page_sum_excl": 12678,
-    "page_sum_incl": 12678,
+    "page_sum_excl": 12543,
+    "page_sum_incl": 12543,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 10159
+    "diff_excl": 10024
    },
    "K6_match": false,
    "agent_notes": "števec 22 ✓; vrednost 1310 (ne 1240) @7x; rdeča 1|919 (VLM '/ 1919' — vodilna 1 je bila v stolpcu Joch)"
@@ -544,18 +544,17 @@
  ],
  "K9_konfunda_F-PV-05": {
   "p1_55_val57": {
-   "both_filled": 38,
-   "jaethe_empty": 682,
-   "jaethe_gt1599_plain": 10,
-   "jaethe_nonnumeric": 1,
-   "jaethe_plain_100_1599": 275,
-   "jaethe_plain_gt1599": 10,
+   "both_filled": 44,
+   "jaethe_empty": 772,
+   "jaethe_gt1599_plain": 4,
+   "jaethe_plain_100_1599": 192,
+   "jaethe_plain_gt1599": 4,
    "jaethe_plain_le99": 105,
-   "klafter_empty": 369,
-   "klafter_gt1599_plain": 15,
-   "klafter_plain_100_1599": 575,
-   "klafter_plain_gt1599": 15,
-   "klafter_plain_le99": 114
+   "klafter_empty": 273,
+   "klafter_gt1599_plain": 18,
+   "klafter_plain_100_1599": 659,
+   "klafter_plain_gt1599": 18,
+   "klafter_plain_le99": 123
   },
   "p56_143_v82_plus_sloji": {
    "any_jk_format": 6,

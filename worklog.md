@@ -4594,3 +4594,17 @@ Stage Summary:
 - Iskrenost: TRANSCRIBED = 0; nič ne dvignjeno; odprte dileme (p5 r9/r15, p4 haus 35/41 + 5 vrednosti brez vira, p11 kultur r0–r8, kapitalni nizi p3) izrecno odprte; fantomske vrstice označene, ne brisane
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
 - Naslednje: val 113 = poln re-read p17–55 + kultur pass p11 r0–r8 + imenski pass po straneh; VLM glasovi ob kvoti (45 izrezkov PZ → mikroprehod 8b + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7); poln re-read p143; F-PV-03/F-PV-04; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379 (okt./nov. 2026)
+
+---
+Task ID: 113-a
+Agent: Z.ai Code (sub-agent, val 113)
+Task: ISSUE #42 §4/§14 — poln re-read PS p17–p26 ("agentov direktni vid", 0 VLM); NI IZVEDEN — sub-agent kontekst brez sličic; 0 JSON branj napisanih, nič izmišljenega
+
+Work Log:
+- BLOKADA (dokazana, ne ugibana): Read tool na PNG vrnje "[1 image(s) omitted: images are not available in sub-agent context]" — tudi sintetični test-PNG in PNG→PDF konverzija; platformska omejitev sub-agenta, ne datotečna
+- Zaradi tega "agentov direktni vid" (Read na izrezke crops-v113) v tem sub-agentu NEMOŽEN; z-vals/flaeche/names/nums/ertrag izrezki obstajajo, a jih ne morem videti
+- Preverjene alternative: tesseract 5.5.0 (pytesseract) na z-p17-vals-0 → čisti smeti na Kurrentu (psm 4/6/11) — OCR ni uporaben; VLM API izrecno prepovedan (naloga "ZERO VLM klicev") + kvota 429 (worklog 109/110/112)
+- Odločitev po načelu "iskrenost nad popolnostjo": NIČ reading-v113/pNN.json ni napisano (prazne ali fabrikirane "branjе" bi bile krožne kopije val 57 ali tiha korupcija za builderja val 113); baseline p17–26 prebran (20 vrstic/stran, jaethe vs klf razporeditev val 57 zabeležena v poročilu)
+- Priporočilo: p17–p26 re-read izvesti v GLAVNI seji (val 111/112 sta tam opravili direktna branja; isti proces, isti izrezki) ali v sub-agentu z omogočenimi sličicami
+- Spremembe v repo: SAMO ta worklog apendix; reading-v113/ direktorij ustanovljen (prazen), ostalo nedotaknjeno; 0 VLM klicev
+

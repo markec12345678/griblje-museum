@@ -72,11 +72,11 @@ describe("val 89 — ATLAS 1825 PASS 3 v2 (projekcija 143/143)", () => {
 
   describe("§4 PS parcele (projekcija 143/143 + F-PV-05 korekcije, val 107)", () => {
     it("676 kandidatov (432 → 930 val 89 → 898 val 98 → 779 val 107 → 735 val 108 → 676 val 112: F-PV-05 korekcije + F-PV-07 premestitve p5/p7/p12 izpadejo iz projekcije; v88 pravilo: prazna jaethe s klafter vrednostjo ni parcela); land use pokritost brez ugibanja", () => {
-      expect(pr.ps_parcels_total).toBe(676);
-      expect(pr.ps_land_use_coverage["njiva"]).toBe(258); // val 108: 295 → val 112: 258
+      expect(pr.ps_parcels_total).toBe(577); // val 113: 676 -> 577 (F-PV-07 p17/p18/p21-p24 + SPLIT pravilo)
+      expect(pr.ps_land_use_coverage["njiva"]).toBe(198); // val 108: 295 → val 112: 258 → val 113: 198
       expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(209); // val 108: 221 → val 112: 209
       expect(pr.ps_land_use_coverage["null"]).toBe(76); // brez kultur zapisa — izven obeh števcev (val 98: 136→104; val 107: 104→92; val 108: 92→76)
-      expect(pr.ps_land_use_mapping_confidence["EXACT"]).toBe(380); // val 108: 427 → val 112: 380
+      expect(pr.ps_land_use_mapping_confidence["EXACT"]).toBe(281); // val 108: 427 → val 112: 380 → val 113: 281
       expect(pr.ps_land_use_mapping_confidence["TERM-UNCLEAR"]).toBe(209); // val 108: 221 → val 112: 209
       expect(pr.ps_land_use_mapping_confidence["EXACT-MIXED"]).toBe(11);
       // snimka val 60 stanja (delna pokritost 55/143): 432 kandidatov, njiva 230, UNKNOWN 106

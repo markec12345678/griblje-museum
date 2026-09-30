@@ -1,0 +1,17 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 20,
+  "scope": "vrednostni re-read (z3) — delni pomik vrstic; vgradnja odlozena val 114",
+  "method": "agentov direktni vid: z3 sklad; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p20.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/z3-p20-vals.png",
+  "fpv07": "vrednosti v QK koloni (baseline kla); brez splitov vidnih",
+  "findings_structural": [
+   "DELNI POMIK v spodnji polovici: sidri r0 707/703, r2 336/736, r5 337/237, r6 950/950, r12 444/444 (zgornja polovica poravnana); r9-r11 zamik (moj r10=535 = register r9)",
+   "val 57 napake: r0 703->707, r2 736->336, r5 237->337 (jasne); r1 648 vs 564, r3 963 vs 253, r4 602 vs 303, r7 876 vs prazno, r8 687 vs 846, r9 535 vs 637, r13 462 vs 439, r14 430 vs 482, r15 487 vs 480, r16 135 vs 457, r17 605 vs 505, r18 854 vs 858, r19 802 vs 403[?] — odprta, zoom val 114",
+   "vgradnja odlozena val 114 (potreben strukturni re-read s persko poravnavo, kot p19)",
+   "FUR: 6|1183"
+  ]
+ }
+}

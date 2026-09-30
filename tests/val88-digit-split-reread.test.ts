@@ -222,8 +222,8 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
   });
 
   test("KG nosi val 112 stanje (kaskada) — j|k vrednosti ostajajo izven KG polj", () => {
-    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad); val 107 86b del 3 (9f856d28); val 112 F-PV-07 p5/p7/p12 (e574df03)
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^e574df03/);
+    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad); val 107 86b del 3 (9f856d28); val 112 F-PV-07 p5/p7/p12 (5ae52bd8)
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^5ae52bd8/);
   });
 
   test("parcelni register nosi projekcija 143/143 + F-PV-05/07 korekcije (val 112: 735 → 676); negative register ostaja 14", () => {
@@ -231,7 +231,7 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
       ps_parcels_total: number;
       val: string;
     };
-    expect(pr.ps_parcels_total).toBe(676); // val 108: 735 → val 112: 676
+    expect(pr.ps_parcels_total).toBe(577); // val 108: 735 → val 112: 676 → val 113: 577
     expect(pr.val).toBe("108");
     const nr = JSON.parse(readFileSync(join(ATLAS, "negative-result-register-1825.json"), "utf8")) as {
       negatives_total: number;

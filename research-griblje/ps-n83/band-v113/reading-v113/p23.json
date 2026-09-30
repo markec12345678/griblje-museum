@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 23,
+  "scope": "vrednostni re-read (z3); imena/haus/kultur/ertrag -> val 114",
+  "method": "agentov direktni vid: z3 sklad; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p23.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/z3-p23-vals.png",
+  "fpv07": "vrednosti v QK koloni; r14 split 1|1048 (precrtan rdece)",
+  "findings_structural": [
+   "FUR: 10|172 precrto rdece -> rdeca revizija 7|1143",
+   "9 sidrnih ujemanj — poravnava brez pomika",
+   "r4 rdece oznake ob vrednosti",
+   "dvojna vrednost 884 (r9, r13) — realna ( baseline ujema oba)"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "397",
+   "old_j": "397",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "521[?]",
+   "old_j": "529",
+   "old_k": "",
+   "verdict": "POPRAVEK 529->521[?] + move"
+  },
+  "r2": {
+   "j": "",
+   "k": "189",
+   "old_j": "189",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "317",
+   "old_j": "217",
+   "old_k": "",
+   "verdict": "POPRAVEK 217->317 + move"
+  },
+  "r4": {
+   "j": "",
+   "k": "1081",
+   "old_j": "1087",
+   "old_k": "",
+   "verdict": "POPRAVEK 1087->1081 + move; rdece oznake"
+  },
+  "r5": {
+   "j": "",
+   "k": "1163",
+   "old_j": "1162",
+   "old_k": "",
+   "verdict": "POPRAVEK 1162->1163 + move"
+  },
+  "r6": {
+   "j": "",
+   "k": "1162",
+   "old_j": "1162",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r7": {
+   "j": "",
+   "k": "1448[?]",
+   "old_j": "1145",
+   "old_k": "",
+   "verdict": "razhajanje 1145 vs 1448[?] — odprto"
+  },
+  "r8": {
+   "j": "",
+   "k": "1427[?]",
+   "old_j": "1187",
+   "old_k": "",
+   "verdict": "razhajanje 1187 vs 1427[?] — odprto"
+  },
+  "r9": {
+   "j": "",
+   "k": "884",
+   "old_j": "884",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "770",
+   "old_j": "470",
+   "old_k": "",
+   "verdict": "POPRAVEK 470->770 + move"
+  },
+  "r11": {
+   "j": "",
+   "k": "1477",
+   "old_j": "1477",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r12": {
+   "j": "",
+   "k": "569",
+   "old_j": "569",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r13": {
+   "j": "",
+   "k": "884",
+   "old_j": "884",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "1",
+   "k": "1048[?]",
+   "old_j": "1168",
+   "old_k": "",
+   "verdict": "razhajanje 1168 vs 1|1048[?] — odprto; precrto rdece; split jae=1"
+  },
+  "r15": {
+   "j": "",
+   "k": "715",
+   "old_j": "705",
+   "old_k": "",
+   "verdict": "POPRAVEK 705->715 + move"
+  },
+  "r16": {
+   "j": "",
+   "k": "209",
+   "old_j": "209",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r17": {
+   "j": "",
+   "k": "102",
+   "old_j": "102",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "60",
+   "old_j": "60",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r19": {
+   "j": "",
+   "k": "182",
+   "old_j": "1025",
+   "old_k": "",
+   "verdict": "razhajanje 1025 vs 182 — odprto"
+  }
+ },
+ "furtrag": "10|172 precrto rdece -> rdece 7|1143",
+ "register_actions_planned": [
+  "F-PV-07 move vseh all-klafter",
+  "SPLIT r14 (1|1048[?], precrto)",
+  "POPRAVEK: r1 521[?], r3 317, r4 1081, r5 1163, r10 770, r15 715",
+  "odprta: r7, r8, r14, r19"
+ ]
+}

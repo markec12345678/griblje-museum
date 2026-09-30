@@ -1,0 +1,168 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 17,
+  "scope": "vrednostni re-read (z3, izmerjena pravila); imena/haus/kultur/ertrag podrobno -> val 114",
+  "method": "agentov direktni vid: z3 sklad z izmerjenimi pravili + diag x10; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p17.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/ (z3-p17-vals.png, diag-split-v113.png, p17-diag-doubts.png)",
+  "fpv07": "joche večinoma PRAZNA, vrednosti v Quad. Klafter; r15 in r19 imata legitimen Joch v joche koloni (split notacija) — MEŠANO",
+  "split_finding": "val 57 je ZLIL split notacijo: r15 '1|400' -> jae '1400', r16 '1|21' -> jae '121'; pravilna vgradnja = split (jae=Joch, kla=Klafter)",
+  "findings_structural": [
+   "rdeči diagonalni puščice v desnem robu ob r0-r6 (revizijski znaki)",
+   "r6, r7 vrednosti prečrtane rdeče",
+   "r11: rdeča vodoravna črta čez pas",
+   "FUR: 6|795 (6 v Joch koloni, 795 v QK)",
+   "blatt 281-300 sekvenco potrjena"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "87",
+   "old_j": "87",
+   "old_k": "",
+   "verdict": "F-PV-07 move + soglasje"
+  },
+  "r1": {
+   "j": "",
+   "k": "155[?]",
+   "old_j": "135",
+   "old_k": "",
+   "verdict": "razhajanje 135 vs 155[?] — odprto (3/5; možen tudi split 1|55)"
+  },
+  "r2": {
+   "j": "",
+   "k": "690",
+   "old_j": "650",
+   "old_k": "",
+   "verdict": "POPRAVEK 650->690 + move"
+  },
+  "r3": {
+   "j": "",
+   "k": "89",
+   "old_j": "89",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r4": {
+   "j": "",
+   "k": "90",
+   "old_j": "90",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r5": {
+   "j": "",
+   "k": "647[?]",
+   "old_j": "632",
+   "old_k": "",
+   "verdict": "razhajanje 632 vs 647[?] — odprto (srednja števka h-oblika)"
+  },
+  "r6": {
+   "j": "",
+   "k": "94[?]",
+   "old_j": "74",
+   "old_k": "",
+   "verdict": "razhajanje 74 vs 94[?] — odprto; prečrtano rdeče"
+  },
+  "r7": {
+   "j": "",
+   "k": "692",
+   "old_j": "692",
+   "old_k": "",
+   "verdict": "move + soglasje; prečrtano rdeče"
+  },
+  "r8": {
+   "j": "",
+   "k": "129",
+   "old_j": "189",
+   "old_k": "",
+   "verdict": "POPRAVEK 189->129 + move"
+  },
+  "r9": {
+   "j": "",
+   "k": "104",
+   "old_j": "104",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r10": {
+   "j": "",
+   "k": "628",
+   "old_j": "628",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "180[?]",
+   "old_j": "100",
+   "old_k": "",
+   "verdict": "razhajanje 100 vs 180[?] — odprto; možen split 1|80; rdeča črta čez vrstico"
+  },
+  "r12": {
+   "j": "",
+   "k": "585",
+   "old_j": "333",
+   "old_k": "",
+   "verdict": "razhajanje 333 vs 585 — odprto (585 konsistentno 3x viden)"
+  },
+  "r13": {
+   "j": "",
+   "k": "774",
+   "old_j": "774",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r14": {
+   "j": "",
+   "k": "395",
+   "old_j": "395",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r15": {
+   "j": "1",
+   "k": "400",
+   "old_j": "1400",
+   "old_k": "",
+   "verdict": "SPLIT POPRAVEK: jae '1400'->'1', kla ''->'400' (1|400; val57 zlil)"
+  },
+  "r16": {
+   "j": "1[?]",
+   "k": "121[?]",
+   "old_j": "121",
+   "old_k": "",
+   "verdict": "razhajanje: videno 1|121 ali 1|21 vs zlito 121 — odprto, potreben zoom"
+  },
+  "r17": {
+   "j": "",
+   "k": "911",
+   "old_j": "911",
+   "old_k": "",
+   "verdict": "move + soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "556",
+   "old_j": "526",
+   "old_k": "",
+   "verdict": "POPRAVEK 526->556 + move"
+  },
+  "r19": {
+   "j": "1",
+   "k": "553",
+   "old_j": "1",
+   "old_k": "833",
+   "verdict": "POPRAVEK 833->553 (5 jasna na x10); jae=1 soglasje"
+  }
+ },
+ "furtrag": "6|795 — 6 v Joch koloni, 795 v QK; pod debelim dvojnim pravilom",
+ "register_actions_planned": [
+  "F-PV-07 move 17x (r0-r14, r17, r18)",
+  "SPLIT: r15 (1|400), r19 ze split",
+  "POPRAVEK: r2 690, r8 129, r18 556, r19 553",
+  "razhajanja odprta: r1, r5, r6, r11, r12, r16"
+ ]
+}

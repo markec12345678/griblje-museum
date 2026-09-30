@@ -1,0 +1,28 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 11,
+  "scope": "kultur pass r0-r8 (odlozen iz val 112); vrednosti p11 ze v v112",
+  "method": "agentov direktni vid: kultur sklad x8 (p11-kultur-0/1) + wide kontekst; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p11.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/ (p11-kultur-0.png, p11-kultur-1.png, p11-names-kultur-wide.png)",
+  "findings_structural": [
+   "KULTUR HALUCINACIJA val 57: dejanski zapisi se PONOVLJO — 'Lhugar und Boll[?]' r0/r3/r4/r5/r8 (+ ditto r1/r6), 'Rosig[?]/Ruked[?]' r2/r7; v57 je zapisal 4 razlicne genericne terme ('Liegend. Baul.'/'Wiese'/'Hutweide'/'Schindel. Wald'/'Wald') ki NE drzijo",
+   "transkripcija ni dovolj jasna za direktno vgradnjo (§4: TRANSCRIBED=0) — anmerkung add-only; zoom val 114 za finalno besedilo"
+  ]
+ },
+ "kultur_reads": {
+  "r0": "Lhugar und Boll[?]",
+  "r1": "ditto r0",
+  "r2": "Rosig[?]/Ruked[?]",
+  "r3": "Lhugar und Boll[?]",
+  "r4": "Lhugar und Boll[?]",
+  "r5": "Lhugar und Boll[?]",
+  "r6": "ditto r5",
+  "r7": "Rosig[?]/Ruked[?]",
+  "r8": "Lhugar und Boll[?]"
+ },
+ "register_actions_planned": [
+  "anmerkung add-only r0-r8: kultur re-read najdba (ponovljen zapis, v57 terme ne drzijo), korekcija besedila val 114"
+ ]
+}

@@ -273,8 +273,8 @@ describe("val 112 — kaskada (izrecna)", () => {
     const pr = JSON.parse(
       readFileSync(join(root, "research-griblje/atlas-1825/parcel-register-1825.json"), "utf8"),
     ) as { ps_parcels_total: number; ps_land_use_coverage: Record<string, number> };
-    expect(pr.ps_parcels_total).toBe(676);
-    expect(pr.ps_land_use_coverage["njiva"]).toBe(258);
+    expect(pr.ps_parcels_total).toBe(577); // val 113: 676 -> 577
+    expect(pr.ps_land_use_coverage["njiva"]).toBe(198); // val 113: 258 -> 198
     expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(209);
     expect(pr.ps_land_use_coverage["null"]).toBe(76);
     // p5/p7/p12 nimajo več nobene numerične jaethe
@@ -294,19 +294,19 @@ describe("val 112 — kaskada (izrecna)", () => {
       claims: unknown[];
       invariant_violations: unknown[];
     };
-    expect(kg.node_stats.PARCEL).toBe(2711);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(3013);
-    expect(kg.nodes.length).toBe(3553);
-    expect(kg.edges.length).toBe(3717);
+    expect(kg.node_stats.PARCEL).toBe(2612); // val 113
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2914); // val 113
+    expect(kg.nodes.length).toBe(3454); // val 113
+    expect(kg.edges.length).toBe(3618); // val 113
     expect(kg.claims.length).toBe(622);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha e574df03… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha 5ae52bd8… (pogodba §22)", () => {
     const { createHash } = require("node:crypto") as typeof import("node:crypto");
     const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
     const kgSha = sha(join(root, "research-griblje/atlas-1825/knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^e574df03/);
+    expect(kgSha).toMatch(/^5ae52bd8/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
@@ -318,14 +318,14 @@ describe("val 112 — kaskada (izrecna)", () => {
     }
   });
 
-  test("timeline I6 zatiči: PUA 2035 / PS 676 / raba 391+209", () => {
+  test("timeline I6 zatiči: PUA 2035 / PS 577 / raba 292+209 (val 113)", () => {
     const tl = JSON.parse(
       readFileSync(join(root, "research-griblje/atlas-1825/timeline-1825-1830.json"), "utf8"),
     ) as { points: { year: number; metrics: { metric_id: string; value: number }[] }[] };
     const m = (id: string, y: number) => tl.points.find((p) => p.year === y)?.metrics.find((x) => x.metric_id === id);
     expect(m("parcels_pua", 1825)?.value).toBe(2035);
-    expect(m("parcels_ps", 1825)?.value).toBe(676);
-    expect(m("parcels_with_land_use", 1825)?.value).toBe(391);
+    expect(m("parcels_ps", 1825)?.value).toBe(577);
+    expect(m("parcels_with_land_use", 1825)?.value).toBe(292);
   });
 });
 

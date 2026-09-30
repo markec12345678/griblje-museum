@@ -80,11 +80,11 @@ ps_unknown_use = sum(
     for n in parcels
     if n.get("origin") == "PS" and n.get("land_use_category") == "UNKNOWN"
 )
-if (pua_count, ps_count) != (2035, 676):
-    fail(f"parcelni zatiči zamaknjeni: PUA {pua_count} (pričakovano 2035), PS {ps_count} (676 — val 112: F-PV-07 premestitve p5/p7/p12 — 59 vrednosti jaethe→klafter izpadijo iz projekcije; val 108: re-read 79 FRESH markerjev + poln pregled 14 strani, 779→735)")
-if (ps_with_use, ps_unknown_use) != (391, 209):
+if (pua_count, ps_count) != (2035, 577):
+    fail(f"parcelni zatiči zamaknjeni: PUA {pua_count} (pričakovano 2035), PS {ps_count} (577 — val 113: F-PV-07 premestitve p17/p18/p21–p24 (89) + SPLIT notacija izključena (11 markerjev, F-PV-07-SPLIT pravilo) — 99 vrednosti izpade iz projekcije; val 112: 735→676; val 108: 779→735)")
+if (ps_with_use, ps_unknown_use) != (292, 209):
     fail(
-        f"raba PS zamaknjena: z rabo {ps_with_use} (391), neznana {ps_unknown_use} (209 — val 112: F-PV-07 premestitve p5/p7/p12; val 108 re-read)"
+        f"raba PS zamaknjena: z rabo {ps_with_use} (292), neznana {ps_unknown_use} (209 — val 113: F-PV-07 p17/p18/p21–p24, 676→577; val 112: 391/209)"
     )
 
 
@@ -236,7 +236,7 @@ points = [
                 f"{ps_count} parcel",
                 "SRC-PS",
                 "parcel-register-1825.json (origin=PS, hišno vezane)",
-                note="projekcija 143/143 (val 89, iz reka val 88 §5) + val 98 (86b del 2) + val 107 (86b del 3) + val 112: 2.871 vrstic → 676 parcel (v88 pravilo: digit-split vrstice s prazno jaethe in klafter vrednostjo niso parcele, F-PV-05; val 98 F-PV-05 korekcije na p95–109 → 930→898; val 107 na p110–120+p122–141 → 898→779; val 108 re-read 14 strani (p95–137) → 779→735; val 112 F-PV-07 premestitve p5/p7/p12 — 59 vrednosti jaethe→klafter izpadijo iz projekcije → 735→676); per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14); F14 namespace (PS↔PUA) ostaja odprt.",
+                note="projekcija 143/143 (val 89, iz reka val 88 §5) + val 98 (86b del 2) + val 107 (86b del 3) + val 113: F-PV-07 premestitve p17/p18/p21–p24 (89x) + F-PV-07-SPLIT izključitveno pravilo (11 Joch|Klafter vrstic, val 57 jih je zlil) → 676→577; val 112: 735→676 (v88 pravilo: digit-split vrstice s prazno jaethe in klafter vrednostjo niso parcele, F-PV-05; val 98 F-PV-05 korekcije na p95–109 → 930→898; val 107 na p110–120+p122–141 → 898→779; val 108 re-read 14 strani (p95–137) → 779→735; val 112 F-PV-07 premestitve p5/p7/p12 → 735→676); per-parcelne vezave ostajajo PROVISIONAL do pasovnega re-reada (F-PV-04, NR-14); F14 namespace (PS↔PUA) ostaja odprt.",
             ),
             metric(
                 "parcels_with_land_use",
@@ -432,7 +432,7 @@ out = {
         "I3: vsaka metrika DOCUMENTED točke ima source_id (KG SOURCE) + evidence + reading_status",
         "I4: AWAITING_SOURCE točke imamo 0 metrik in 0 virov",
         "I5: letnice strogo naraščajoče in unikatne; statusi samo DOCUMENTED | AWAITING_SOURCE",
-        "I6: KG zatiči pribiti (PUA 2035 / PS 676 / raba po val 112) — zaščita pred zdrsom grafa (val 112: F-PV-07 premestitve p5/p7/p12, 735→676; val 108: 779→735)",
+        "I6: KG zatiči pribiti (PUA 2035 / PS 577 / raba po val 113) — zaščita pred zdrsom grafa (val 113: F-PV-07 p17/p18/p21–p24 + SPLIT pravilo, 676→577; val 112: 735→676)",
     ],
     "invariant_violations": [],
     "summary": {

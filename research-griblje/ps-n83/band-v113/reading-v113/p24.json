@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 113,
+  "page": 24,
+  "scope": "vrednostni re-read (z3); imena/haus/kultur/ertrag -> val 114",
+  "method": "agentov direktni vid: z3 sklad; 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p24.jpg",
+  "instrument_files": "raw-web-val111-2026-10/crops-v113/z3-p24-vals.png",
+  "fpv07": "vrednosti ze v QK (val 57 tu ze pravilno); r8, r15 split 1|905, 1|772 potrjen",
+  "findings_structural": [
+   "MASOVNO rdece precrtanje: r3, r4, r5, r9, r12, r13, r14, r16 vrednosti precrtane rdece (revizija)",
+   "FUR: 8|710 (R) precrto -> rdece 1|919 (R)",
+   "10 sidrnih ujemanj — poravnava brez pomika",
+   "baseline r0 jae='.' (pik marka) — lahko ocistimo"
+  ]
+ },
+ "value_audit": {
+  "r0": {
+   "j": "",
+   "k": "736",
+   "old_j": ".",
+   "old_k": "756",
+   "verdict": "POPRAVEK 756->736; jae '.' -> '' (ocistka)"
+  },
+  "r1": {
+   "j": "",
+   "k": "111",
+   "old_j": "",
+   "old_k": "711",
+   "verdict": "soglasje"
+  },
+  "r2": {
+   "j": "",
+   "k": "687",
+   "old_j": "",
+   "old_k": "687",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "j": "",
+   "k": "1183",
+   "old_j": "",
+   "old_k": "479",
+   "verdict": "razhajanje 479 vs 1183 — odprto; precrto rdece"
+  },
+  "r4": {
+   "j": "",
+   "k": "330",
+   "old_j": "",
+   "old_k": "570",
+   "verdict": "razhajanje 570 vs 330 — odprto; precrto rdece"
+  },
+  "r5": {
+   "j": "",
+   "k": "1096",
+   "old_j": "",
+   "old_k": "1494",
+   "verdict": "razhajanje 1494 vs 1096 — odprto; precrto rdece"
+  },
+  "r6": {
+   "j": "",
+   "k": "480[?]",
+   "old_j": "",
+   "old_k": "437",
+   "verdict": "razhajanje 437 vs 480[?] — odprto"
+  },
+  "r7": {
+   "j": "",
+   "k": "577",
+   "old_j": "",
+   "old_k": "677",
+   "verdict": "POPRAVEK 677->577"
+  },
+  "r8": {
+   "j": "1",
+   "k": "905",
+   "old_j": "1",
+   "old_k": "908",
+   "verdict": "POPRAVEK 908->905; split jae=1 soglasje; precrto rdece"
+  },
+  "r9": {
+   "j": "",
+   "k": "630",
+   "old_j": "",
+   "old_k": "680",
+   "verdict": "POPRAVEK 680->630; precrto rdece"
+  },
+  "r10": {
+   "j": "",
+   "k": "475",
+   "old_j": "",
+   "old_k": "475",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "j": "",
+   "k": "544",
+   "old_j": "",
+   "old_k": "546",
+   "verdict": "POPRAVEK 546->544"
+  },
+  "r12": {
+   "j": "",
+   "k": "430",
+   "old_j": "",
+   "old_k": "430",
+   "verdict": "soglasje; precrto rdece"
+  },
+  "r13": {
+   "j": "",
+   "k": "1189",
+   "old_j": "",
+   "old_k": "1189",
+   "verdict": "soglasje; precrto rdece"
+  },
+  "r14": {
+   "j": "",
+   "k": "277",
+   "old_j": "",
+   "old_k": "277",
+   "verdict": "soglasje; precrto rdece"
+  },
+  "r15": {
+   "j": "1",
+   "k": "772",
+   "old_j": "1",
+   "old_k": "772",
+   "verdict": "soglasje (split ze v val 57)"
+  },
+  "r16": {
+   "j": "",
+   "k": "543",
+   "old_j": "",
+   "old_k": "543",
+   "verdict": "soglasje; precrto rdece"
+  },
+  "r17": {
+   "j": "",
+   "k": "314",
+   "old_j": "",
+   "old_k": "314",
+   "verdict": "soglasje"
+  },
+  "r18": {
+   "j": "",
+   "k": "428",
+   "old_j": "",
+   "old_k": "488",
+   "verdict": "POPRAVEK 488->428"
+  },
+  "r19": {
+   "j": "",
+   "k": "343",
+   "old_j": "",
+   "old_k": "243",
+   "verdict": "POPRAVEK 243->343"
+  }
+ },
+ "furtrag": "8|710 (R) precrto rdece -> rdece 1|919 (R)",
+ "register_actions_planned": [
+  "POPRAVEK: r0 736 + ocistka '.', r7 577, r8 905, r9 630, r11 544, r18 428, r19 343",
+  "splits r8/r15 potrjeni",
+  "odprta: r3, r4, r5, r6 (precrto rdece)",
+  "anmerkung add: 8 precrtanih + FUR revizija"
+ ]
+}
