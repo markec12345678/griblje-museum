@@ -4472,3 +4472,26 @@ Stage Summary:
 - PS parcele 898 → 779 (930 → 898 → 779); raba 438 explicit + 249 UNKNOWN + 92 None; per-parcelne trditve ostajajo PROVISIONAL (F-PV-04/NR-14)
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
 - Naslednje: p142-t-kultur2 ob kvoti → re-read 70 FRESH markerjev (56 digit-split + 14 col-split, vzorec val 88) → F-PV-03/F-PV-04; PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; Dular 1972 + BM Metlika (izven peskovnika); register: 26-0326 + 26-0379 (okt./nov. 2026)
+
+---
+Task ID: 108
+Agent: Z.ai Code (glavna seja, val 108)
+Task: ISSUE #42 §4/§14 + #43 — re-read 79 FRESH markerjev, razširjeno na poln pregled 14 strani (p95–137); odkritje P1 off-by-one + col-split spojev; vgradnja + kaskada (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Ugotovljeno stanje: val 107 že mergan (PR #111, main @ 605de66) v prejšnjem delu seje; veja feat/val108-issue72-re-read-79 že pripravljena s skriptami (build-targets, align-slots, make-rowcrops, make-target-crops; band-v108 targets/slots/manifesti; 79 target crops)
+- Kontrole poravnave: pikseljski/visualni pregledi p95/p98/p105/p133/p137 — ugotovljeni per-page ladder tipi (lad[0]=zgornja/spodnja meja r0) + QA zanka proti p1/p2/tile trojcu
+- ODKRITJE: P1 (val 82) ima na p98 od r5 naprej SISTEMSKI off-by-one (vrednost iz naslednje vrstice; dokaz: hišno/no_blatt identifikacija, NIZKO pisanje vrednosti, Fürtrag kot posebna vrstica, direktni vid r10/r11: 1188=hiša 25, 558=hiša 26) + col-split spoji (p105 r3 9|902→1922, r16/r17/r19 1|60→1160, 1|149→1149, 1|264→1126; p107 r3, r12...) + halucinacije (p95 r0 2379, r5 242; p114 r1 7207; p120 r0 7344)
+- Odločitev: val 108 razširjen na poln pregled 14 strani (ne samo 79 markerjev) — make-pagebands-v108.py (59 pasovnih slik) + make-sheets/sheetsB + ×6/×9/×12 celice; identifikacija prek owner kolone; 0 VLM klicev
+- Branje: vseh 14 strani (p95, 98, 105, 107, 113, 114, 120, 128, 129, 130, 133, 135, 136, 137) — reading-v108.json (determinističen audit trail)
+- Vgradnja: build-register-v108.py — 200 vrstic (52 soglasij + 148 popravkov s snimkami *_pre_v108, jk_review := v108-re-read); [gestrichen rot] markerji v anmerkung (p105 celotna stran); v88 (139) nedotaknjeno; p1–55 + p143 nedotaknjeno; fail-fast guard changes datoteke
+- Kaskada: pass3 (PS 779 → 735; None 92→76, UNKNOWN 249→221, njiva 294→295, gozd 15→14; mapping EXACT 427/TERM-UNCLEAR 221/EXACT-MIXED 11/None 76) → KG v2.4 8f803952 (PARCEL 2.770, HAS_PARCEL 3.072, vozlišča 3.612, vezi 3.776, claims 622, invariante 0 + KG-F13 RESOLVED-V108) → story → timeline (I6 2035/735/438+221 ✓) → coverage (PASS 8, §24 14/14) → runtime kopije src/data (4)
+- F11: 9 kršitev (nespremenjeno), veznost p54→p58 OK, REVIEW 52 strani, aritmetika 0/79/9, sidra 3/7 — REVIEW raven (NR-14); c4-metrika: K9 120→49, K10 70→60, jk_format 7→6
+- Testi: +18 varovalk (tests/val108-re-read-79.test.ts) + prehod pinov v ~30 testnih datotekah (KG 2.814/3.091/3.656/3.795 → 2.770/3.072/3.612/3.776; sha 23a2ae50 → 8f803952; R-03795 → R-03776; parcele 779 → 735; markerji 63/16 → 0 (v108-re-read 148); K9 120 → 49; K10 70 → 60 / 7 → 6; PARTIAL 1454 → 1410; NONE 2127 → 2111; val76 I6 898/461+333 → 735/438+221) — 960 testov: 949 pass / 11 skip / 0 fail; tsc čist
+- Docs: research-griblje/123-val108 + KAZALO 123 + README 162. sklop + worklog; surovine raw-web-val108-2026-10/ (pagebands 59, sheets 79, sheetsB 79, rowcrops 184) + band-v108/ (targets/slots/reading/changes)
+
+Stage Summary:
+- ISSUE #42 §4/§14: SISTEMSKA napaka P1 (val 82) odkrita in dokumentirana — off-by-one (p98 r5+), col-split spoji, halucinacije; 148 vrednostnih popravkov s snimkami; register jk vrednosti na 14 straneh zdaj 2-prehod + direktni vid (instrument val 61/88)
+- PS parcele 779 → 735; KG v2.4 (8f803952) + KG-F13; timeline I6 pribit (735/438+221); coverage §24 14/14
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno)
+- Naslednje: p142-t-kultur2 ob kvoti (2. prehod 87/87); poln re-read p1–55 + p143; F-PV-03 (QKlft anomalija) / F-PV-04 (pasovni re-read); PZ p48–65; PT p7 @300dpi; PR Grenz-Beschreibung; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379

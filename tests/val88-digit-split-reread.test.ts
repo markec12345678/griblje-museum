@@ -207,7 +207,7 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
     // val 98 (86b del 2): 7 novih part-2 digit-split markerjev (p95–109, čaka re-read vzorec val 88);
     // vseh 139 part-1 markerjev je še vedno promoviranih
     expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split" && (r.page as number) <= 94)).toHaveLength(0);
-    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split")).toHaveLength(63); // val 98: 7 → val 107: 63 (+56 na p110–141)
+    expect(register.filter((r) => r.jk_review === "v86-review-pass-digit-split")).toHaveLength(0); // val 108 re-read: vseh 63 promoviranih v v108-re-read
   });
 });
 
@@ -221,18 +221,18 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
     }
   });
 
-  test("KG nosi val 107 stanje (v2.3) — j|k vrednosti ostajajo izven KG polj", () => {
-    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad); val 107 86b del 3 (23a2ae50)
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^23a2ae50/);
+  test("KG nosi val 108 stanje (v2.4) — j|k vrednosti ostajajo izven KG polj", () => {
+    // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad); val 107 86b del 3 (8f803952)
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^8f803952/);
   });
 
-  test("parcelni register nosi projekcijo 143/143 + F-PV-05 korekcije (val 107: 930 → 898 → 779); negative register ostaja 14", () => {
+  test("parcelni register nosi projekcija 143/143 + F-PV-05 korekcije (val 108: 779 → 735); negative register ostaja 14", () => {
     const pr = JSON.parse(readFileSync(join(ATLAS, "parcel-register-1825.json"), "utf8")) as {
       ps_parcels_total: number;
       val: string;
     };
-    expect(pr.ps_parcels_total).toBe(779);
-    expect(pr.val).toBe("107");
+    expect(pr.ps_parcels_total).toBe(735);
+    expect(pr.val).toBe("108");
     const nr = JSON.parse(readFileSync(join(ATLAS, "negative-result-register-1825.json"), "utf8")) as {
       negatives_total: number;
       negatives: { neg_id: string }[];

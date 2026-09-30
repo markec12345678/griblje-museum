@@ -158,18 +158,18 @@ describe("val 90 — reprodukcija in usklajenost (K7, K8)", () => {
 });
 
 describe("val 90 — konfunda F-PV-05 (K9) + opazovalni register (K10)", () => {
-  test("K9 pin: atribucija 100–1599 v jaethe = 323 (p1–55) / 120 (p56–143; val 90: 242 → val 98: 214 → val 107: 120, mehanski premik z F-PV-05 korekcijami — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
+  test("K9 pin: atribucija 100–1599 v jaethe = 323 (p1–55) / 49 (p56–143; val 90: 242 → val 98: 214 → val 107: 120 → val 108: 49, mehanski premik z F-PV-05 korekcijami in re-readom — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
     expect(art["K9_konfunda_F-PV-05"].p1_55_val57["jaethe_plain_100_1599"]).toBe(323);
-    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(120);
+    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(49);
   });
 
-  test("K9 pin: vsotno-relevantni razredi majhni (gt1599 29/69; jk_format 1/7)", () => {
+  test("K9 pin: vsotno-relevantni razredi majhni (gt1599 29/60; jk_format 1/6)", () => {
     const p1 = art["K9_konfunda_F-PV-05"].p1_55_val57;
     const p2 = art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji;
     expect((p1["jaethe_plain_gt1599"] ?? 0) + (p1["klafter_plain_gt1599"] ?? 0)).toBe(29);
-    expect((p2["jaethe_plain_gt1599"] ?? 0) + (p2["klafter_plain_gt1599"] ?? 0)).toBe(70); // val 98: 69 → val 107: 70
+    expect((p2["jaethe_plain_gt1599"] ?? 0) + (p2["klafter_plain_gt1599"] ?? 0)).toBe(60); // val 98: 69 → val 107: 70 → val 108: 60
     expect(p1["any_jk_format"]).toBe(1);
-    expect(p2["any_jk_format"]).toBe(7);
+    expect(p2["any_jk_format"]).toBe(6); // val 108 re-read razrešil jk formate
   });
 
   test("K10: anchor 3998 (2|798) na dveh straneh [11, 35]; p56 glas p1 == p5 anchor", () => {

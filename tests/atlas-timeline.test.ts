@@ -251,7 +251,7 @@ describe("val 76 — vrata I3/I6: sledljivost + KG zatiči", () => {
     }
   });
 
-  test("I6: KG zatiči PUA 2035 / PS 898 / raba 461+333 = vrednosti metrik (val 98: 930→898)", () => {
+  test("I6: KG zatiči PUA 2035 / PS 735 / raba 438+221 = vrednosti metrik (val 108: re-read 14 strani)", () => {
     const parcels = kg.nodes.filter((n) => n.node_type === "PARCEL");
     const pua = parcels.filter((n) => n.origin === "PUA").length;
     const ps = parcels.filter((n) => n.origin === "PS").length;
@@ -259,8 +259,8 @@ describe("val 76 — vrata I3/I6: sledljivost + KG zatiči", () => {
       (n) => n.origin === "PS" && n.land_use_category !== null && n.land_use_category !== "UNKNOWN"
     ).length;
     expect(pua).toBe(2035);
-    expect(ps).toBe(779); // val 98: 898 → val 107: 779
-    expect(psUse).toBe(438); // val 98: 461 → val 107: 438
+    expect(ps).toBe(735); // val 98: 898 → val 107: 779 → val 108: 735
+    expect(psUse).toBe(438); // val 98: 461 → val 107: 438 → val 108: 438
     expect(metricOf(1825, "parcels_pua").value).toBe(pua);
     expect(metricOf(1825, "parcels_ps").value).toBe(ps);
     expect(metricOf(1825, "parcels_with_land_use").value).toBe(psUse);

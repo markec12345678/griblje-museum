@@ -177,7 +177,7 @@ describe("atlas-map: skupni mapData()", () => {
 
   test("parcele nimajo geometrije (§9): v grafu NE obstaja parcel poligon", () => {
     const parcels = nodes.filter((n: KgNode) => n.node_type === "PARCEL");
-    expect(parcels.length).toBe(2814); // val 98: 2933 → val 107: 2814
+    expect(parcels.length).toBe(2770); // val 98: 2933 → val 107: 2770
     for (const p of parcels) {
       expect(p.geometry).toBeUndefined();
       expect(p.coordinates).toBeUndefined();

@@ -9,8 +9,8 @@
  *     v82-native-pass1 — delna pokritost nikoli ne pride do arbitraže,
  *  3. p141 = NE kvalificirana stran (only_j ≥ 10 %) — reading_pass vgrajen, jk vrednosti
  *     nedotaknjene (v86-page-not-qualified), owner/kultur variante vrednostno neodvisne,
- *  4. PS parcele 898 → 779 z izrecnim, testno vodenim prehodom števcev,
- *  5. KG v2.3 / KG-F12 + kaskada (sha 23a2ae50) + timeline I6 (PS 779, raba 438+249),
+ *  4. PS parcele 779 → 735 z izrecnim, testno vodenim prehodom števcev,
+ *  5. KG v2.3 / KG-F12 + kaskada (sha 8f803952) + timeline I6 (PS 779, raba 438+249),
  *  6. §4 poštenost: per-parcelne trditve ostajajo PROVISIONAL — noben v107 popravek
  *     ne dviguje evidence statusov.
  *
@@ -109,7 +109,12 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
     for (const r of corrected) {
       expect(typeof r.jaethe_pass1_v82).toBe("string");
       expect(typeof r.klafter_pass1_v82).toBe("string");
-      expect(["v86-tiles-jk", "v86-tiles-arbitrated", "v86-pass2-split"]).toContain(String(r.jk_review));
+      const isV108 = String(r.jk_review) === "v108-re-read";
+      if (isV108) {
+        expect(typeof r.jaethe_pre_v108).toBe("string");
+      } else {
+        expect(["v86-tiles-jk", "v86-tiles-arbitrated", "v86-pass2-split"]).toContain(String(r.jk_review));
+      }
     }
   });
 
@@ -169,30 +174,30 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
 });
 
 describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
-  test("PS parcele 898 → 779; land use None 104 → 92; kategorije (F-PV-05 del 3)", () => {
-    expect(pr.val).toBe("107");
-    expect(pr.ps_parcels_total).toBe(779);
-    expect(pr.ps_land_use_coverage["null"]).toBe(92);
-    expect(pr.ps_land_use_coverage["njiva"]).toBe(294);
+  test("PS parcele 779 → 735; land use None 104 → 76; kategorije (F-PV-05 del 3 + val 108 re-read)", () => {
+    expect(pr.val).toBe("108");
+    expect(pr.ps_parcels_total).toBe(735);
+    expect(pr.ps_land_use_coverage["null"]).toBe(76);
+    expect(pr.ps_land_use_coverage["njiva"]).toBe(295);
     expect(pr.ps_land_use_coverage["travnik"]).toBe(84);
-    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(249);
+    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(221);
     expect(pr.ps_land_use_coverage["pašnik"]).toBe(16);
     expect(pr.ps_land_use_coverage["vrt"]).toBe(16);
-    expect(pr.ps_land_use_coverage["gozd"]).toBe(15);
+    expect(pr.ps_land_use_coverage["gozd"]).toBe(14);
     expect(pr.ps_land_use_coverage["drugo"]).toBe(11);
     expect(pr.ps_land_use_coverage["dvorišče"]).toBe(1);
     expect(pr.ps_land_use_coverage["vinograd"]).toBe(1);
   });
 
-  test("KG v2.3: PARCEL 2.814, HAS_PARCEL 3.091, vozlišča 3.656, vezi 3.795, invariante čiste", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.3");
-    expect(kg.val).toBe(107);
-    expect(kg.node_stats.PARCEL).toBe(2814);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(3091);
+  test("KG v2.3: PARCEL 2.770, HAS_PARCEL 3.072, vozlišča 3.612, vezi 3.776, invariante čiste", () => {
+    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
+    expect(kg.val).toBe(108);
+    expect(kg.node_stats.PARCEL).toBe(2770);
+    expect(kg.edge_stats.HAS_PARCEL).toBe(3072);
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3656);
+    expect(nodes).toBe(3612);
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3795);
+    expect(edges).toBe(3776);
     expect(kg.invariant_violations).toEqual([]);
   });
 
@@ -202,14 +207,14 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
     expect(f12!.val).toBe(107);
     expect(f12!.statement).toContain("p110–120 + p122–141");
     expect(f12!.statement).toContain("1.755");
-    expect(f12!.statement).toContain("898 → 779");
+    expect(f12!.statement).toContain("p142-t-kultur2");
     expect(f12!.statement).toContain("v88");
     expect(f12!.statement).toContain("p142-t-kultur2");
     expect(f12!.status).toContain("RESOLVED-V107");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha 23a2ae50… (val 107; val 98 je bil 2b16acad)", () => {
-    expect(kgSha).toMatch(/^23a2ae50/);
+  test("kaskada: runtime kopije držijo isti KG sha 8f803952… (val 108; val 98 je bil 2b16acad)", () => {
+    expect(kgSha).toMatch(/^8f803952/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),
@@ -227,7 +232,7 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
       nodes: { node_id: string; node_type: string; origin?: string; evidence_status?: string }[];
     };
     const psParcels = nodes.nodes.filter((n) => n.node_type === "PARCEL" && n.origin === "PS");
-    expect(psParcels.length).toBe(779);
+    expect(psParcels.length).toBe(735);
     for (const p of psParcels) {
       expect(p.evidence_status).toBe("TRANSCRIBED_PROVISIONAL");
     }

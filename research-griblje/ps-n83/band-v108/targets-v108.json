@@ -1,0 +1,3167 @@
+{
+ "meta": {
+  "val": 108,
+  "generated_by": "build-targets-v108.py",
+  "method": "inverzija merge_tiles (build-register-v107.py 1:1 v Python); tile glas = DIAGNOSTIKA; resnica = direktno branje izrezkov (instrument val 61/88); obseg: 79 FRESH markerjev (56+14 val 107, 7+2 val 98 — doc 113 §9.2)"
+ },
+ "targets": [
+  {
+   "global_idx": 1861,
+   "page": 95,
+   "page_row": 0,
+   "marker": "v86-review-pass-digit-split",
+   "band": 0,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "2379",
+   "p1_klafter": "",
+   "p2_jaethe": "2/19",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1919",
+   "tile_kultur": "Lößig und Lehmerde,",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1919",
+   "p1_raw": "2379",
+   "p2_raw": "219",
+   "geo": {
+    "x0": 691,
+    "x1": 981,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 1932,
+   "page": 98,
+   "page_row": 11,
+   "marker": "v86-review-col-split",
+   "band": 1,
+   "flat_idx": 7,
+   "row_cut": false,
+   "p1_jaethe": "",
+   "p1_klafter": "",
+   "p2_jaethe": "558",
+   "p2_klafter": "",
+   "p1_col": "none",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1288",
+   "tile_kultur": "",
+   "p1_kultur": "Acker, Wiese, Reb, Hofraithen",
+   "reg_kultur": "Acker, Wiese, Reb, Hofraithen",
+   "tile_raw_number": "1288",
+   "p1_raw": "",
+   "p2_raw": "558",
+   "geo": {
+    "x0": 686,
+    "x1": 979,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 24
+   }
+  },
+  {
+   "global_idx": 2079,
+   "page": 105,
+   "page_row": 17,
+   "marker": "v86-review-col-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "1149",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "646",
+   "tile_kultur": "Acker",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "646",
+   "p1_raw": "1149",
+   "p2_raw": "",
+   "geo": {
+    "x0": 663,
+    "x1": 953,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 24
+   }
+  },
+  {
+   "global_idx": 2105,
+   "page": 107,
+   "page_row": 3,
+   "marker": "v86-review-pass-digit-split",
+   "band": 0,
+   "flat_idx": 3,
+   "row_cut": true,
+   "p1_jaethe": "1006",
+   "p1_klafter": "",
+   "p2_jaethe": "706",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "706",
+   "tile_kultur": "Mitter mittig ganz gut Wiesen",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "706",
+   "p1_raw": "1006",
+   "p2_raw": "706",
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2112,
+   "page": 107,
+   "page_row": 10,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "859",
+   "p1_klafter": "",
+   "p2_jaethe": "359",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "114",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "114",
+   "p1_raw": "859",
+   "p2_raw": "359",
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2114,
+   "page": 107,
+   "page_row": 12,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "655",
+   "p1_klafter": "",
+   "p2_jaethe": "635",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "",
+   "tile_kultur": "Acker und Wiese",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "",
+   "p1_raw": "655",
+   "p2_raw": "635",
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2115,
+   "page": 107,
+   "page_row": 13,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "850",
+   "p1_klafter": "",
+   "p2_jaethe": "354",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "669",
+   "tile_kultur": "Acker und Wiese",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "669",
+   "p1_raw": "850",
+   "p2_raw": "354",
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2116,
+   "page": 107,
+   "page_row": 14,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "593",
+   "p1_klafter": "",
+   "p2_jaethe": "592",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "635",
+   "tile_kultur": "Acker und Wiese",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "635",
+   "p1_raw": "593",
+   "p2_raw": "592",
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2118,
+   "page": 107,
+   "page_row": 16,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "+ 589",
+   "p1_klafter": "",
+   "p2_jaethe": "+ 339",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "993",
+   "tile_kultur": "Acker und Wiese",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "993",
+   "p1_raw": "589",
+   "p2_raw": "339",
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2228,
+   "page": 113,
+   "page_row": 6,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "1044",
+   "p1_klafter": "",
+   "p2_jaethe": "1494",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "218",
+   "tile_kultur": "Hutweide Thon",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "218",
+   "p1_raw": "1044",
+   "p2_raw": "1494",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2229,
+   "page": 113,
+   "page_row": 7,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "1038",
+   "p1_klafter": "",
+   "p2_jaethe": "1338",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1494 [rot]",
+   "tile_kultur": "Wald Thon",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1494",
+   "p1_raw": "1038",
+   "p2_raw": "1338",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2230,
+   "page": 113,
+   "page_row": 8,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "1096",
+   "p1_klafter": "",
+   "p2_jaethe": "1496",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "1",
+   "tile_klafter": "818",
+   "tile_kultur": "Hofraithe Thon",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "818",
+   "p1_raw": "1096",
+   "p2_raw": "1496",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2233,
+   "page": 113,
+   "page_row": 11,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 7,
+   "row_cut": true,
+   "p1_jaethe": "1089",
+   "p1_klafter": "",
+   "p2_jaethe": "1499",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "1",
+   "tile_klafter": "196 [rot]",
+   "tile_kultur": "Acker Thon",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "196",
+   "p1_raw": "1089",
+   "p2_raw": "1499",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2235,
+   "page": 113,
+   "page_row": 13,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "1200",
+   "p1_klafter": "",
+   "p2_jaethe": "1280",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "910",
+   "tile_kultur": "",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "910",
+   "p1_raw": "1200",
+   "p2_raw": "1280",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2236,
+   "page": 113,
+   "page_row": 14,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "1109",
+   "p1_klafter": "",
+   "p2_jaethe": "1480",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1780 [gestrichen]",
+   "tile_kultur": "",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1780",
+   "p1_raw": "1109",
+   "p2_raw": "1480",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2237,
+   "page": 113,
+   "page_row": 15,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "1050",
+   "p1_klafter": "",
+   "p2_jaethe": "1020",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "192 [gestrichen]",
+   "tile_kultur": "",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "192",
+   "p1_raw": "1050",
+   "p2_raw": "1020",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2240,
+   "page": 113,
+   "page_row": 18,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "1190",
+   "p1_klafter": "",
+   "p2_jaethe": "1194",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1 237 [rot]",
+   "tile_kultur": "",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1237",
+   "p1_raw": "1190",
+   "p2_raw": "1194",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2241,
+   "page": 113,
+   "page_row": 19,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 7,
+   "row_cut": false,
+   "p1_jaethe": "1168",
+   "p1_klafter": "",
+   "p2_jaethe": "1482",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "",
+   "tile_kultur": "",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "",
+   "p1_raw": "1168",
+   "p2_raw": "1482",
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 22
+   }
+  },
+  {
+   "global_idx": 2242,
+   "page": 114,
+   "page_row": 0,
+   "marker": "v86-review-col-split",
+   "band": 0,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "1046",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "1056 [rot]",
+   "tile_kultur": "Ldhäusl Spitzäckerl b.",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1056",
+   "p1_raw": "1046",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2243,
+   "page": 114,
+   "page_row": 1,
+   "marker": "v86-review-col-split",
+   "band": 0,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "7207",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "115. [rot]",
+   "tile_kultur": "Ldhäuslgut Parzga und bl.",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "115",
+   "p1_raw": "7207",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2244,
+   "page": 114,
+   "page_row": 2,
+   "marker": "v86-review-col-split",
+   "band": 0,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "946",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "9/6",
+   "tile_kultur": "Ldhäusl mit Parzga bin",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "96",
+   "p1_raw": "946",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2245,
+   "page": 114,
+   "page_row": 3,
+   "marker": "v86-review-col-split",
+   "band": 0,
+   "flat_idx": 3,
+   "row_cut": true,
+   "p1_jaethe": "749",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "",
+   "tile_kultur": "Ldhäusl mit [?]",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "",
+   "p1_raw": "749",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2246,
+   "page": 114,
+   "page_row": 4,
+   "marker": "v86-review-col-split",
+   "band": 1,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "1400",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "244",
+   "tile_kultur": "Acker",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "244",
+   "p1_raw": "1400",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2247,
+   "page": 114,
+   "page_row": 5,
+   "marker": "v86-review-col-split",
+   "band": 1,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "1100",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "449",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "449",
+   "p1_raw": "1100",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2248,
+   "page": 114,
+   "page_row": 6,
+   "marker": "v86-review-col-split",
+   "band": 1,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "115",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "1120",
+   "tile_kultur": "Acker",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1120",
+   "p1_raw": "115",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2249,
+   "page": 114,
+   "page_row": 7,
+   "marker": "v86-review-col-split",
+   "band": 1,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "516",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "118",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "118",
+   "p1_raw": "516",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2252,
+   "page": 114,
+   "page_row": 10,
+   "marker": "v86-review-col-split",
+   "band": 1,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "800",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "540",
+   "tile_kultur": "Acker",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "540",
+   "p1_raw": "800",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2256,
+   "page": 114,
+   "page_row": 14,
+   "marker": "v86-review-col-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "1074",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "1",
+   "tile_klafter": "20",
+   "tile_kultur": "Hutweide",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "20",
+   "p1_raw": "1074",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2257,
+   "page": 114,
+   "page_row": 15,
+   "marker": "v86-review-col-split",
+   "band": 2,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "1190",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "1244",
+   "tile_kultur": "Wald",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1244",
+   "p1_raw": "1190",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2258,
+   "page": 114,
+   "page_row": 16,
+   "marker": "v86-review-col-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "1274",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "1544",
+   "tile_kultur": "Acker",
+   "p1_kultur": "",
+   "reg_kultur": "",
+   "tile_raw_number": "1544",
+   "p1_raw": "1274",
+   "p2_raw": "",
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 27
+   }
+  },
+  {
+   "global_idx": 2364,
+   "page": 120,
+   "page_row": 0,
+   "marker": "v86-review-pass-digit-split",
+   "band": 0,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "7344",
+   "p1_klafter": "",
+   "p2_jaethe": "734",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1297",
+   "tile_kultur": "Zwischmatt beimwald",
+   "p1_kultur": "Lehend / Wiesend",
+   "reg_kultur": "Lehend / Wiesend",
+   "tile_raw_number": "1297",
+   "p1_raw": "7344",
+   "p2_raw": "734",
+   "geo": {
+    "x0": 681,
+    "x1": 904,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2365,
+   "page": 120,
+   "page_row": 1,
+   "marker": "v86-review-pass-digit-split",
+   "band": 0,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "492",
+   "p1_klafter": "",
+   "p2_jaethe": "472",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "192",
+   "tile_kultur": "dahin",
+   "p1_kultur": "Acker",
+   "reg_kultur": "Acker",
+   "tile_raw_number": "192",
+   "p1_raw": "492",
+   "p2_raw": "472",
+   "geo": {
+    "x0": 681,
+    "x1": 904,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2368,
+   "page": 120,
+   "page_row": 4,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "1253",
+   "p1_klafter": "",
+   "p2_jaethe": "1233",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1.24",
+   "tile_kultur": "Acker",
+   "p1_kultur": "Acker",
+   "reg_kultur": "Acker",
+   "tile_raw_number": "124",
+   "p1_raw": "1253",
+   "p2_raw": "1233",
+   "geo": {
+    "x0": 681,
+    "x1": 904,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2373,
+   "page": 120,
+   "page_row": 9,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 5,
+   "row_cut": false,
+   "p1_jaethe": "237",
+   "p1_klafter": "",
+   "p2_jaethe": "233",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1/12",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lehend",
+   "reg_kultur": "Lehend",
+   "tile_raw_number": "112",
+   "p1_raw": "237",
+   "p2_raw": "233",
+   "geo": {
+    "x0": 681,
+    "x1": 904,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2532,
+   "page": 128,
+   "page_row": 6,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "114",
+   "p1_klafter": "",
+   "p2_jaethe": "1114",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "18",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Schinnguthe",
+   "reg_kultur": "Schinnguthe",
+   "tile_raw_number": "18",
+   "p1_raw": "114",
+   "p2_raw": "1114",
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2533,
+   "page": 128,
+   "page_row": 7,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "419",
+   "p1_klafter": "",
+   "p2_jaethe": "1019",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "114",
+   "tile_kultur": "Schwingwiesen",
+   "p1_kultur": "Schinnguthe",
+   "reg_kultur": "Schinnguthe",
+   "tile_raw_number": "114",
+   "p1_raw": "419",
+   "p2_raw": "1019",
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2535,
+   "page": 128,
+   "page_row": 9,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 5,
+   "row_cut": false,
+   "p1_jaethe": "299",
+   "p1_klafter": "",
+   "p2_jaethe": "899",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "104",
+   "tile_kultur": "Schwingwiesen",
+   "p1_kultur": "Schinnguthe",
+   "reg_kultur": "Schinnguthe",
+   "tile_raw_number": "104",
+   "p1_raw": "299",
+   "p2_raw": "899",
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2538,
+   "page": 128,
+   "page_row": 12,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 8,
+   "row_cut": true,
+   "p1_jaethe": "196",
+   "p1_klafter": "",
+   "p2_jaethe": "1206",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "4[?]",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Schinnguthe",
+   "reg_kultur": "Schinnguthe",
+   "tile_raw_number": "4",
+   "p1_raw": "196",
+   "p2_raw": "1206",
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2542,
+   "page": 128,
+   "page_row": 16,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "220",
+   "p1_klafter": "",
+   "p2_jaethe": "920",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "92",
+   "tile_kultur": "Lehfe",
+   "p1_kultur": "Schinnguthe",
+   "reg_kultur": "Schinnguthe",
+   "tile_raw_number": "92",
+   "p1_raw": "220",
+   "p2_raw": "920",
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2543,
+   "page": 128,
+   "page_row": 17,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "082",
+   "p1_klafter": "",
+   "p2_jaethe": "682",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "117",
+   "tile_kultur": "Lehfe",
+   "p1_kultur": "Schinnguthe",
+   "reg_kultur": "Schinnguthe",
+   "tile_raw_number": "117",
+   "p1_raw": "082",
+   "p2_raw": "682",
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2562,
+   "page": 129,
+   "page_row": 16,
+   "marker": "v86-review-col-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "490",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "11",
+   "tile_kultur": "Schwingstätten",
+   "p1_kultur": "Burgstall",
+   "reg_kultur": "Burgstall",
+   "tile_raw_number": "11",
+   "p1_raw": "490",
+   "p2_raw": "",
+   "geo": {
+    "x0": 686,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 21,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2563,
+   "page": 129,
+   "page_row": 17,
+   "marker": "v86-review-col-split",
+   "band": 2,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "199",
+   "p1_klafter": "",
+   "p2_jaethe": "",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "none",
+   "tile_jaethe": "",
+   "tile_klafter": "25",
+   "tile_kultur": "Schwingstätten",
+   "p1_kultur": "Eichnat",
+   "reg_kultur": "Eichnat",
+   "tile_raw_number": "25",
+   "p1_raw": "199",
+   "p2_raw": "",
+   "geo": {
+    "x0": 686,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 21,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2564,
+   "page": 129,
+   "page_row": 18,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "262",
+   "p1_klafter": "",
+   "p2_jaethe": "252",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "374",
+   "tile_kultur": "Im Gartl",
+   "p1_kultur": "Schwingst.",
+   "reg_kultur": "Schwingst.",
+   "tile_raw_number": "374",
+   "p1_raw": "262",
+   "p2_raw": "252",
+   "geo": {
+    "x0": 686,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 21,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2565,
+   "page": 129,
+   "page_row": 19,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 5,
+   "row_cut": false,
+   "p1_jaethe": "380",
+   "p1_klafter": "",
+   "p2_jaethe": "320",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "199",
+   "tile_kultur": "Stadel",
+   "p1_kultur": "Rhipe",
+   "reg_kultur": "Rhipe",
+   "tile_raw_number": "199",
+   "p1_raw": "380",
+   "p2_raw": "320",
+   "geo": {
+    "x0": 686,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 21,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2580,
+   "page": 130,
+   "page_row": 13,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 8,
+   "row_cut": true,
+   "p1_jaethe": "639",
+   "p1_klafter": "",
+   "p2_jaethe": "539",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "200[angeschnitten]",
+   "tile_kultur": "Stief",
+   "p1_kultur": "Wiese",
+   "reg_kultur": "Wiese",
+   "tile_raw_number": "200",
+   "p1_raw": "639",
+   "p2_raw": "539",
+   "geo": {
+    "x0": 670,
+    "x1": 959,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 21,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2585,
+   "page": 130,
+   "page_row": 18,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "314",
+   "p1_klafter": "",
+   "p2_jaethe": "214",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "62",
+   "tile_kultur": "Ebend",
+   "p1_kultur": "Wald",
+   "reg_kultur": "Wald",
+   "tile_raw_number": "62",
+   "p1_raw": "314",
+   "p2_raw": "214",
+   "geo": {
+    "x0": 670,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 21,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2587,
+   "page": 130,
+   "page_row": 20,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "807",
+   "p1_klafter": "",
+   "p2_jaethe": "897",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "311",
+   "tile_kultur": "Ebend",
+   "p1_kultur": "Wiese",
+   "reg_kultur": "Wiese",
+   "tile_raw_number": "311",
+   "p1_raw": "807",
+   "p2_raw": "897",
+   "geo": {
+    "x0": 670,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 21,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2638,
+   "page": 133,
+   "page_row": 10,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "1.499 / 1.517",
+   "p1_klafter": "",
+   "p2_jaethe": "1.499 / 517",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "330 [rot] [gestrichen]",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "330",
+   "p1_raw": "14991517",
+   "p2_raw": "1499517",
+   "geo": {
+    "x0": 659,
+    "x1": 956,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 24
+   }
+  },
+  {
+   "global_idx": 2639,
+   "page": 133,
+   "page_row": 11,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 7,
+   "row_cut": false,
+   "p1_jaethe": "1.175",
+   "p1_klafter": "",
+   "p2_jaethe": "1.275",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "7",
+   "tile_klafter": "395 [rot] [gestrichen]",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "395",
+   "p1_raw": "1175",
+   "p2_raw": "1275",
+   "geo": {
+    "x0": 659,
+    "x1": 956,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 24
+   }
+  },
+  {
+   "global_idx": 2643,
+   "page": 133,
+   "page_row": 15,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "146",
+   "p1_klafter": "",
+   "p2_jaethe": "406",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "310",
+   "tile_kultur": "Lobig",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "310",
+   "p1_raw": "146",
+   "p2_raw": "406",
+   "geo": {
+    "x0": 659,
+    "x1": 956,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 20,
+    "merged": 24
+   }
+  },
+  {
+   "global_idx": 2682,
+   "page": 135,
+   "page_row": 13,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "1114",
+   "p1_klafter": "",
+   "p2_jaethe": "114",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "311",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "311",
+   "p1_raw": "1114",
+   "p2_raw": "114",
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2683,
+   "page": 135,
+   "page_row": 14,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "1475",
+   "p1_klafter": "",
+   "p2_jaethe": "745",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "890",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "890",
+   "p1_raw": "1475",
+   "p2_raw": "745",
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2684,
+   "page": 135,
+   "page_row": 15,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "1400",
+   "p1_klafter": "",
+   "p2_jaethe": "790",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "144 [gestrichen]",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "144",
+   "p1_raw": "1400",
+   "p2_raw": "790",
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2685,
+   "page": 135,
+   "page_row": 16,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "1290",
+   "p1_klafter": "",
+   "p2_jaethe": "926",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1/4 [gestrichen]",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "14",
+   "p1_raw": "1290",
+   "p2_raw": "926",
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2686,
+   "page": 135,
+   "page_row": 17,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "956",
+   "p1_klafter": "",
+   "p2_jaethe": "1116",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1190",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "1190",
+   "p1_raw": "956",
+   "p2_raw": "1116",
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2687,
+   "page": 135,
+   "page_row": 18,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 5,
+   "row_cut": false,
+   "p1_jaethe": "1116",
+   "p1_klafter": "",
+   "p2_jaethe": "674",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "436 [gestrichen]",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "436",
+   "p1_raw": "1116",
+   "p2_raw": "674",
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2688,
+   "page": 135,
+   "page_row": 19,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "674",
+   "p1_klafter": "",
+   "p2_jaethe": "1879",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1116",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Lößig",
+   "reg_kultur": "Lößig",
+   "tile_raw_number": "1116",
+   "p1_raw": "674",
+   "p2_raw": "1879",
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 21,
+    "p1": 21,
+    "p2": 20,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2694,
+   "page": 136,
+   "page_row": 4,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "1699",
+   "p1_klafter": "",
+   "p2_jaethe": "1059",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "340",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "340",
+   "p1_raw": "1699",
+   "p2_raw": "1059",
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 21,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2700,
+   "page": 136,
+   "page_row": 10,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "886",
+   "p1_klafter": "",
+   "p2_jaethe": "856",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "338",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "338",
+   "p1_raw": "886",
+   "p2_raw": "856",
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 21,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2703,
+   "page": 136,
+   "page_row": 13,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "701",
+   "p1_klafter": "",
+   "p2_jaethe": "791",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "798",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "798",
+   "p1_raw": "701",
+   "p2_raw": "791",
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 21,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2704,
+   "page": 136,
+   "page_row": 14,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "1588",
+   "p1_klafter": "",
+   "p2_jaethe": "1548",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "240",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "240",
+   "p1_raw": "1588",
+   "p2_raw": "1548",
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 21,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2705,
+   "page": 136,
+   "page_row": 15,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "22",
+   "p1_klafter": "",
+   "p2_jaethe": "224",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "1",
+   "tile_klafter": "950",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "950",
+   "p1_raw": "22",
+   "p2_raw": "224",
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 21,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2706,
+   "page": 136,
+   "page_row": 16,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "781",
+   "p1_klafter": "",
+   "p2_jaethe": "789",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "198",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "198",
+   "p1_raw": "781",
+   "p2_raw": "789",
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 21,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2707,
+   "page": 136,
+   "page_row": 17,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "1008",
+   "p1_klafter": "",
+   "p2_jaethe": "1068",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "604",
+   "tile_kultur": "Wiese",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "604",
+   "p1_raw": "1008",
+   "p2_raw": "1068",
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 20,
+    "p1": 20,
+    "p2": 21,
+    "merged": 23
+   }
+  },
+  {
+   "global_idx": 2711,
+   "page": 137,
+   "page_row": 1,
+   "marker": "v86-review-pass-digit-split",
+   "band": 0,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "182",
+   "p1_klafter": "",
+   "p2_jaethe": "112",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "442",
+   "tile_kultur": "Wey",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "442",
+   "p1_raw": "182",
+   "p2_raw": "112",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2713,
+   "page": 137,
+   "page_row": 3,
+   "marker": "v86-review-pass-digit-split",
+   "band": 0,
+   "flat_idx": 3,
+   "row_cut": true,
+   "p1_jaethe": "459",
+   "p1_klafter": "",
+   "p2_jaethe": "450",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "[angeschnitten]",
+   "tile_kultur": "Wey",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "",
+   "p1_raw": "459",
+   "p2_raw": "450",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 0,
+    "y1": 328
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2716,
+   "page": 137,
+   "page_row": 6,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "1218",
+   "p1_klafter": "",
+   "p2_jaethe": "1212",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "328",
+   "tile_kultur": "Wiesy",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "328",
+   "p1_raw": "1218",
+   "p2_raw": "1212",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2717,
+   "page": 137,
+   "page_row": 7,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "1394",
+   "p1_klafter": "",
+   "p2_jaethe": "1334",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1125",
+   "tile_kultur": "Wiesy",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "1125",
+   "p1_raw": "1394",
+   "p2_raw": "1334",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2718,
+   "page": 137,
+   "page_row": 8,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "1590",
+   "p1_klafter": "",
+   "p2_jaethe": "1504",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "1 [rot]",
+   "tile_klafter": "194 [rot]",
+   "tile_kultur": "Wiesy",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "194",
+   "p1_raw": "1590",
+   "p2_raw": "1504",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2719,
+   "page": 137,
+   "page_row": 9,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 5,
+   "row_cut": false,
+   "p1_jaethe": "1033",
+   "p1_klafter": "",
+   "p2_jaethe": "1390",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1500",
+   "tile_kultur": "Wiesy",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "1500",
+   "p1_raw": "1033",
+   "p2_raw": "1390",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2720,
+   "page": 137,
+   "page_row": 10,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "220",
+   "p1_klafter": "",
+   "p2_jaethe": "1035",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1500",
+   "tile_kultur": "Wiesy",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "1500",
+   "p1_raw": "220",
+   "p2_raw": "1035",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2721,
+   "page": 137,
+   "page_row": 11,
+   "marker": "v86-review-pass-digit-split",
+   "band": 1,
+   "flat_idx": 7,
+   "row_cut": true,
+   "p1_jaethe": "676",
+   "p1_klafter": "",
+   "p2_jaethe": "220",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1055",
+   "tile_kultur": "Wiesy",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "1055",
+   "p1_raw": "676",
+   "p2_raw": "220",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2722,
+   "page": 137,
+   "page_row": 12,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 0,
+   "row_cut": false,
+   "p1_jaethe": "940",
+   "p1_klafter": "",
+   "p2_jaethe": "676",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "1035",
+   "tile_kultur": "Wing",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "1035",
+   "p1_raw": "940",
+   "p2_raw": "676",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2723,
+   "page": 137,
+   "page_row": 13,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 1,
+   "row_cut": false,
+   "p1_jaethe": "134",
+   "p1_klafter": "",
+   "p2_jaethe": "340",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "246 [rot] [gestrichen]",
+   "tile_kultur": "Wing",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "246",
+   "p1_raw": "134",
+   "p2_raw": "340",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2724,
+   "page": 137,
+   "page_row": 14,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 2,
+   "row_cut": false,
+   "p1_jaethe": "269",
+   "p1_klafter": "",
+   "p2_jaethe": "334",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "676",
+   "tile_kultur": "Wing",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "676",
+   "p1_raw": "269",
+   "p2_raw": "334",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2725,
+   "page": 137,
+   "page_row": 15,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 3,
+   "row_cut": false,
+   "p1_jaethe": "100",
+   "p1_klafter": "",
+   "p2_jaethe": "209",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "940",
+   "tile_kultur": "Wing",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "940",
+   "p1_raw": "100",
+   "p2_raw": "209",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2726,
+   "page": 137,
+   "page_row": 16,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 4,
+   "row_cut": false,
+   "p1_jaethe": "226",
+   "p1_klafter": "",
+   "p2_jaethe": "100",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "2.91 [gestrichen]",
+   "tile_kultur": "Wing",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "291",
+   "p1_raw": "226",
+   "p2_raw": "100",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2727,
+   "page": 137,
+   "page_row": 17,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 5,
+   "row_cut": false,
+   "p1_jaethe": "1970",
+   "p1_klafter": "",
+   "p2_jaethe": "226",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "1",
+   "tile_klafter": "289 [gestrichen]",
+   "tile_kultur": "Wing",
+   "p1_kultur": "Wey",
+   "reg_kultur": "Wey",
+   "tile_raw_number": "289",
+   "p1_raw": "1970",
+   "p2_raw": "226",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  },
+  {
+   "global_idx": 2728,
+   "page": 137,
+   "page_row": 18,
+   "marker": "v86-review-pass-digit-split",
+   "band": 2,
+   "flat_idx": 6,
+   "row_cut": false,
+   "p1_jaethe": "1857",
+   "p1_klafter": "",
+   "p2_jaethe": "1170",
+   "p2_klafter": "",
+   "p1_col": "j",
+   "p2_col": "j",
+   "tile_jaethe": "",
+   "tile_klafter": "100 [gestrichen]",
+   "tile_kultur": "Wing",
+   "p1_kultur": "Steinig",
+   "reg_kultur": "Steinig",
+   "tile_raw_number": "100",
+   "p1_raw": "1857",
+   "p2_raw": "1170",
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "mapping_note": {
+    "reg": 19,
+    "p1": 19,
+    "p2": 20,
+    "merged": 25
+   }
+  }
+ ],
+ "bands": [
+  {
+   "page": 95,
+   "band": 0,
+   "geo": {
+    "x0": 691,
+    "x1": 981,
+    "y0": 0,
+    "y1": 328
+   },
+   "targets": [
+    1861
+   ]
+  },
+  {
+   "page": 98,
+   "band": 1,
+   "geo": {
+    "x0": 686,
+    "x1": 979,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    1932
+   ]
+  },
+  {
+   "page": 105,
+   "band": 2,
+   "geo": {
+    "x0": 663,
+    "x1": 953,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2079
+   ]
+  },
+  {
+   "page": 107,
+   "band": 0,
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 0,
+    "y1": 328
+   },
+   "targets": [
+    2105
+   ]
+  },
+  {
+   "page": 107,
+   "band": 1,
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2112
+   ]
+  },
+  {
+   "page": 107,
+   "band": 2,
+   "geo": {
+    "x0": 686,
+    "x1": 950,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2114,
+    2115,
+    2116,
+    2118
+   ]
+  },
+  {
+   "page": 113,
+   "band": 1,
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2228,
+    2229,
+    2230,
+    2233
+   ]
+  },
+  {
+   "page": 113,
+   "band": 2,
+   "geo": {
+    "x0": 693,
+    "x1": 954,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2235,
+    2236,
+    2237,
+    2240,
+    2241
+   ]
+  },
+  {
+   "page": 114,
+   "band": 0,
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 0,
+    "y1": 328
+   },
+   "targets": [
+    2242,
+    2243,
+    2244,
+    2245
+   ]
+  },
+  {
+   "page": 114,
+   "band": 1,
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2246,
+    2247,
+    2248,
+    2249,
+    2252
+   ]
+  },
+  {
+   "page": 114,
+   "band": 2,
+   "geo": {
+    "x0": 703,
+    "x1": 990,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2256,
+    2257,
+    2258
+   ]
+  },
+  {
+   "page": 120,
+   "band": 0,
+   "geo": {
+    "x0": 681,
+    "x1": 904,
+    "y0": 0,
+    "y1": 328
+   },
+   "targets": [
+    2364,
+    2365
+   ]
+  },
+  {
+   "page": 120,
+   "band": 1,
+   "geo": {
+    "x0": 681,
+    "x1": 904,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2368,
+    2373
+   ]
+  },
+  {
+   "page": 128,
+   "band": 1,
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2532,
+    2533,
+    2535,
+    2538
+   ]
+  },
+  {
+   "page": 128,
+   "band": 2,
+   "geo": {
+    "x0": 677,
+    "x1": 962,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2542,
+    2543
+   ]
+  },
+  {
+   "page": 129,
+   "band": 2,
+   "geo": {
+    "x0": 686,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2562,
+    2563,
+    2564,
+    2565
+   ]
+  },
+  {
+   "page": 130,
+   "band": 1,
+   "geo": {
+    "x0": 670,
+    "x1": 959,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2580
+   ]
+  },
+  {
+   "page": 130,
+   "band": 2,
+   "geo": {
+    "x0": 670,
+    "x1": 959,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2585,
+    2587
+   ]
+  },
+  {
+   "page": 133,
+   "band": 1,
+   "geo": {
+    "x0": 659,
+    "x1": 956,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2638,
+    2639
+   ]
+  },
+  {
+   "page": 133,
+   "band": 2,
+   "geo": {
+    "x0": 659,
+    "x1": 956,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2643
+   ]
+  },
+  {
+   "page": 135,
+   "band": 2,
+   "geo": {
+    "x0": 690,
+    "x1": 979,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2682,
+    2683,
+    2684,
+    2685,
+    2686,
+    2687,
+    2688
+   ]
+  },
+  {
+   "page": 136,
+   "band": 1,
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2694,
+    2700
+   ]
+  },
+  {
+   "page": 136,
+   "band": 2,
+   "geo": {
+    "x0": 670,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2703,
+    2704,
+    2705,
+    2706,
+    2707
+   ]
+  },
+  {
+   "page": 137,
+   "band": 0,
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 0,
+    "y1": 328
+   },
+   "targets": [
+    2711,
+    2713
+   ]
+  },
+  {
+   "page": 137,
+   "band": 1,
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 298,
+    "y1": 626
+   },
+   "targets": [
+    2716,
+    2717,
+    2718,
+    2719,
+    2720,
+    2721
+   ]
+  },
+  {
+   "page": 137,
+   "band": 2,
+   "geo": {
+    "x0": 661,
+    "x1": 958,
+    "y0": 596,
+    "y1": 924
+   },
+   "targets": [
+    2722,
+    2723,
+    2724,
+    2725,
+    2726,
+    2727,
+    2728
+   ]
+  }
+ ]
+}
