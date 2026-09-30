@@ -4545,3 +4545,30 @@ Stage Summary:
 - Iskrenost: TRANSCRIBED = 0 (0 VLM klicev); bp 98 ostaja REVIEW do 3. glasu; areal/lastnik p7 re-adjudikacija odložena (dokumentirani pomik tudi v teh poljih); nič ne dvignjeno (§4)
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val); ATLAS §22 nespremenjena
 - Naslednje: VLM glasovi ob kvoti (45 izrezkov PZ → mikroprehod 8b + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7); poln re-read p1–55 + p143; F-PV-03/F-PV-04; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379 (okt./nov. 2026)
+
+---
+Task ID: 111
+Agent: Z.ai Code (glavna seja, val 111)
+Task: ISSUE #42 §4/§14 — poln re-read PS p1–55, 1. del: p3 (vgradnja območij + F-PV-07) + orodje regeneracije p142-t-kultur2 izrezka; 0 VLM klicev (user: "odlicno nadaljuj")
+
+Work Log:
+- Prevzem: vala 109 (PR #113) in 110 (PR #114) že mergana; kvota VLM še 429 (test v koščkih 10:30–10:47 UTC) → metoda val 61/88/108 (agentov vid, 0 VLM)
+- Resumable VLM: p142-t-kultur2 edini preostali tile (695/696); crops-v86/ počiščen → napisan regen-missing-crop-v99.mts (deterministična regeneracija iz manifestnih koordinat, sharp/lanczos3 1:1 make-tiles-v86); izrezek regeneriran (301×438 nat, 602 x2); VLM branje ob kvoti (429 v koščkih)
+- Odločitev obsega: poln re-read p1–55 začet s p3 — ugotovljeno, da je p3 NAJHUJŠA vrzel: edina stran val 57 z 'qm' shemo; register-builder je qm/rente PRESKOČIL → 21 vrstic p3 brez območij, brez lastnikov (samo kultur + 1 kapital)
+- F-PV-07 (NOVO): testni izrezki p05 (glava+vrstice v eni sliki ×5–7) dokazujejo — območja p1–55 piše v DESNI podstolpec "Quad. Klafter" (N.o Joche prazen; pravili ~791/~862 px), val 57 pa jih je vnesel v polje jaethe (p4–55); skupna vsota invariantna (j=0); p3 vrednosti vgrajene direktno v klafter
+- Infrastruktura: make-crops-v111.py (140 determinističnih izrezkov p03–p16: polovi ×2, nums/names/flaeche ×3, ertrag ×2) + ~20 ultra zoomov ×4–12 (p03) + kalibracija p11/p05 (kolone: rimska I lista, Uebersetzung/Ried števec 1–21, par "1|NN")
+- Branje p03 (21 vrstic, vse kolone glej reading-v111/p03.json): 19 vrednosti vgrajenih; r0 prečrtana vrstica brez številke; r16 dejansko prazna celica; r11 prej zapis prečrtan (X) → 99; r14 kultur prečrtan rdeče (val57 "Wiese" ne drži) + 679 prečrtano rdeče (ostane 663) + rdeča opomba "…1844…"; Fürtrag: črno 3|574 prečrtano rdeče → RDEČA KOREKCIJA 2|1495
+- Audit vs val57 qm (nikoli v register): r13 609→409 (4 odprta oblika ×12), r15 158→184 (dvojna zanka), r20 46→96 (zaprta zanka); r3 = 769[?] (9/2 neodločeno — ni korekcije); kultur dvomi r5/r6 (dvovrstično "Lhügwind?/Ödt?" vs "Abhang[?]"), r16/r18/r19 — NI korekcij kultur (nič ugibanja)
+- Vsotna kontrola (C4-vzorec, neodločeno): Σ r1–r20 = 6916 QK vs rdeči Fürtrag 4695 (delta 2221); vključno s prečrtanimi (679+99): 7694 ≈ 4|1495 = 7895 (delta 1!) — hipoteza "Fürtrag vključuje prečrtane / rdeči J=4" izrecno NEODLOČENA
+- Kapitalni nizi "1−1348" (r10), "1−602" (r16), "22" (r19) = neražčlenjeni fl|kr|pf formati — dekodiranje odloženo (register v57 ostaja); imenski pass p3 ODLOŽEN (names izrezki z x-odmikom) — lastniki ostajajo prazni
+- Vgradnja: build-register-v111.py (fail-fast 2871 + 139 v88 + changes guard; 1:1 val 108): 19 fills + 3 anmerkung add-only + 2 empty-cell zapisa; reading_pass := v111-ps-reread (21); page_observations p3 (Fürtrag, F-PV-07, odprti formati)
+- Kaskada: pass3 — PS parcele 735 NESPREMENJENE (p3 brez lastniške identitete ne steče v vezavo); KG vsebina nespremenjena (2770/3072/622; samo generated_at → sha 8f803952 → 9f856d28); story/timeline I6 (2035/735/438+221 ✓); coverage §24 14/14 — pt_rows OSVRŽENA na val 110 stanje (40/9/51 → 52/11/37; v HEAD zastarela, števec preverjen direktno nad pt register)
+- Testi: +16 varovalk (tests/val111-ps-p3-reread.test.ts: vgradnja, F-PV-07, audit razhajanja, Fürtrag, vsotna kontrola, iskrenost, regen-orodje) + pini: KG sha 9f856d28 v 5 datotekah, pt_rows 52/11/37 — 1005 testov: 994 pass / 11 skip / 0 fail; tsc čist; eslint čist
+- Docs: research-griblje/126-val111-ps-p3-reread-f-pv-07.md + KAZALO 126 + README 165. sklop; .gitignore +val111 (crops-v111, test-p05 regenerabilna)
+- Potek: push → PR → CI → merge → izbris veje → worklog (ta zapis)
+
+Stage Summary:
+- ISSUE #42 §4/§14: poln re-read p1–55 ODPRT — p3 vgradnja 19 območij (qm-shema val 57 nikoli vgrajena) + F-PV-07 (sistemska sub-stolpec prerazporeditev p4–55, prestavitve po straneh v naslednjih valih); Fürtrag p3 rdeča korekcija 2|1495; audit 3 števkovnih napak val 57
+- PS parcele 735 / KG vsebina / pokritost §24 — vse konsistentno; pt_rows pokritost osvežena na 52/11/37 (val 110 stanje)
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno)
+- Naslednje: val 112 = p4–p16 re-read + imenski pass p3 + F-PV-07 prestavitve; VLM glasovi ob kvoti (45 izrezkov PZ + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7); poln re-read p17–55 + p143; F-PV-03/F-PV-04; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379 (okt./nov. 2026)

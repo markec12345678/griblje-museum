@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na KG v2.1 (val 89 — projekcija 143/143) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("8f803952")).toBe(true); // val 107 KG v2.3 (val 98: 2b16acad)
+  test("provenanca kaže na aktualni KG (9f856d28, val 111 kaskada) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("9f856d28")).toBe(true); // val 107 KG v2.3 (val 98: 2b16acad)
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -135,13 +135,13 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(c.VERIFIED).toBe(0);
   });
 
-  test("PT vrstice + BP 1–100: 100 (40 STABLE / 9 REVIEW / 51 REVIEW-CONFLICT)", () => {
+  test("PT vrstice + BP 1–100: 100 (52 STABLE / 11 REVIEW / 37 REVIEW-CONFLICT; val 110 stanje — pokritost osvežena v val 111)", () => {
     for (const id of ["pt_rows", "bp_1_100"]) {
       const c = byId(id);
       expect(c.total).toBe(100);
-      expect(c.VERIFIED).toBe(40);
-      expect(c.PARTIAL).toBe(9);
-      expect(c.CONFLICT).toBe(51);
+      expect(c.VERIFIED).toBe(52);
+      expect(c.PARTIAL).toBe(11);
+      expect(c.CONFLICT).toBe(37);
     }
   });
 
