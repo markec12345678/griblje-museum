@@ -4565,7 +4565,7 @@ Work Log:
 - Kaskada: pass3 — PS parcele 735 NESPREMENJENE (p3 brez lastniške identitete ne steče v vezavo); KG vsebina nespremenjena (2770/3072/622; samo generated_at → sha 8f803952 → 9f856d28); story/timeline I6 (2035/735/438+221 ✓); coverage §24 14/14 — pt_rows OSVRŽENA na val 110 stanje (40/9/51 → 52/11/37; v HEAD zastarela, števec preverjen direktno nad pt register)
 - Testi: +16 varovalk (tests/val111-ps-p3-reread.test.ts: vgradnja, F-PV-07, audit razhajanja, Fürtrag, vsotna kontrola, iskrenost, regen-orodje) + pini: KG sha 9f856d28 v 5 datotekah, pt_rows 52/11/37 — 1005 testov: 994 pass / 11 skip / 0 fail; tsc čist; eslint čist
 - Docs: research-griblje/126-val111-ps-p3-reread-f-pv-07.md + KAZALO 126 + README 165. sklop; .gitignore +val111 (crops-v111, test-p05 regenerabilna)
-- Potek: push → PR → CI → merge → izbris veje → worklog (ta zapis)
+- Potek: push → PR #115 → CI 3/3 ZELENO (dimni + tipi/lint/testi + Vercel) → merge (main @ 8dcfd31) → izbris veje (oddaljena + lokalna) → komentar na #72 (5910640185) → worklog
 
 Stage Summary:
 - ISSUE #42 §4/§14: poln re-read p1–55 ODPRT — p3 vgradnja 19 območij (qm-shema val 57 nikoli vgrajena) + F-PV-07 (sistemska sub-stolpec prerazporeditev p4–55, prestavitve po straneh v naslednjih valih); Fürtrag p3 rdeča korekcija 2|1495; audit 3 števkovnih napak val 57
