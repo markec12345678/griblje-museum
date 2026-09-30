@@ -1,0 +1,536 @@
+{
+ "built": "2026-09-30T10:02:39Z",
+ "val": 110,
+ "task": "PT p7 nativni re-read (@PDF-native 2727x2117) + PR Grenz-Beschreibung 2. prehod",
+ "baseline": {
+  "p7_conflict": 14,
+  "p7_stable": 5,
+  "p7_review": 1
+ },
+ "changes": [
+  {
+   "bp_no": "81",
+   "pre": {
+    "house_no": "45",
+    "house_no_votes": "1/1",
+    "review_status": "REVIEW",
+    "owner_original": "Krauß Georg",
+    "stand_original": "Landwirthschaft[?]",
+    "wohnort_original": "",
+    "gattung_original": "Wohnhaus",
+    "areal_original": "11",
+    "annotation_original": "Hofstattgebäude / Hofplatz 1841"
+   },
+   "post": {
+    "house_no": "45",
+    "house_no_votes": "3/3",
+    "review_status": "STABLE",
+    "owner_original": "Krauß Georg",
+    "stand_original": "Landwirthschaft[?]",
+    "wohnort_original": "",
+    "gattung_original": "Wohnhaus",
+    "areal_original": "11",
+    "annotation_original": "Hofstattgebäude / Hofplatz 1841"
+   }
+  },
+  {
+   "bp_no": "82",
+   "pre": {
+    "house_no": "45",
+    "house_no_votes": "2/2",
+    "review_status": "STABLE",
+    "owner_original": "Hans Georg",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "292",
+    "annotation_original": ""
+   },
+   "post": {
+    "house_no": "45",
+    "house_no_votes": "3/3",
+    "review_status": "STABLE",
+    "owner_original": "Hans Georg",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "292",
+    "annotation_original": ""
+   }
+  },
+  {
+   "bp_no": "83",
+   "pre": {
+    "house_no": "45",
+    "house_no_votes": "2/2",
+    "review_status": "STABLE",
+    "owner_original": "Hans Georg",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "21",
+    "annotation_original": ""
+   },
+   "post": {
+    "house_no": "45",
+    "house_no_votes": "3/3",
+    "review_status": "STABLE",
+    "owner_original": "Hans Georg",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "21",
+    "annotation_original": ""
+   }
+  },
+  {
+   "bp_no": "84",
+   "pre": {
+    "house_no": "45",
+    "house_no_votes": "2/2",
+    "review_status": "STABLE",
+    "owner_original": "Hans Georg / Lenz Gansb[?]",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "44",
+    "annotation_original": "Hofp[?] Gießfällhügel / Hofp[?] [nečitljivo]"
+   },
+   "post": {
+    "house_no": "45",
+    "house_no_votes": "3/3",
+    "review_status": "STABLE",
+    "owner_original": "Hans Georg / Lenz Gansb[?]",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "44",
+    "annotation_original": "Hofp[?] Gießfällhügel / Hofp[?] [nečitljivo]"
+   }
+  },
+  {
+   "bp_no": "85",
+   "pre": {
+    "house_no": "45",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Hans Georg",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Abtheilung",
+    "areal_original": "52",
+    "annotation_original": "418"
+   },
+   "post": {
+    "house_no": "37",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Hans Georg",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Abtheilung",
+    "areal_original": "52",
+    "annotation_original": "418"
+   }
+  },
+  {
+   "bp_no": "86",
+   "pre": {
+    "house_no": "37",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Christian Pichl[?]",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "76",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "36",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Christian Pichl[?]",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "76",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "87",
+   "pre": {
+    "house_no": "36",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Christian Pichl[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "26",
+    "annotation_original": ""
+   },
+   "post": {
+    "house_no": "44",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Christian Pichl[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "26",
+    "annotation_original": ""
+   }
+  },
+  {
+   "bp_no": "88",
+   "pre": {
+    "house_no": "44",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Christen Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "28",
+    "annotation_original": "316"
+   },
+   "post": {
+    "house_no": "36",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Christen Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "28",
+    "annotation_original": "316"
+   }
+  },
+  {
+   "bp_no": "89",
+   "pre": {
+    "house_no": "36",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Christian Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "91",
+    "annotation_original": ""
+   },
+   "post": {
+    "house_no": "44",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Christian Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "91",
+    "annotation_original": ""
+   }
+  },
+  {
+   "bp_no": "90",
+   "pre": {
+    "house_no": "44",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Christen Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "192",
+    "annotation_original": "418"
+   },
+   "post": {
+    "house_no": "43",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Christen Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "192",
+    "annotation_original": "418"
+   }
+  },
+  {
+   "bp_no": "91",
+   "pre": {
+    "house_no": "40",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Achaz Pichl[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "88",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "44",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Achaz Pichl[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "88",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "92",
+   "pre": {
+    "house_no": "44",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Christen Mache[?]",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "168",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "41",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Christen Mache[?]",
+    "stand_original": "\"",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "168",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "93",
+   "pre": {
+    "house_no": "41",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Georg Georg",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "239",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "40",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Georg Georg",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "239",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "94",
+   "pre": {
+    "house_no": "40",
+    "house_no_votes": "2/2",
+    "review_status": "STABLE",
+    "owner_original": "Georg Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "12",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "40",
+    "house_no_votes": "3/3",
+    "review_status": "STABLE",
+    "owner_original": "Georg Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "12",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "95",
+   "pre": {
+    "house_no": "40",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Georg Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "181",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "39",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Georg Mache[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hofplatz",
+    "areal_original": "181",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "96",
+   "pre": {
+    "house_no": "39",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Schim[?]er Pichl[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "91",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "38",
+    "house_no_votes": "2/3",
+    "review_status": "STABLE",
+    "owner_original": "Schim[?]er Pichl[?]",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "91",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "97",
+   "pre": {
+    "house_no": "38",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Schim[?]er Georg",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "90",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "39",
+    "house_no_votes": "2/4",
+    "review_status": "STABLE",
+    "owner_original": "Schim[?]er Georg",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "90",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "98",
+   "pre": {
+    "house_no": "39",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Schim[?]er Mache[?]",
+    "stand_original": "Bauer[?]",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "8",
+    "annotation_original": "180"
+   },
+   "post": {
+    "house_no": "70",
+    "house_no_votes": "0/4",
+    "review_status": "REVIEW",
+    "owner_original": "Schim[?]er Mache[?]",
+    "stand_original": "Bauer[?]",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung",
+    "areal_original": "8",
+    "annotation_original": "180"
+   }
+  },
+  {
+   "bp_no": "99",
+   "pre": {
+    "house_no": "50",
+    "house_no_votes": "1/2",
+    "review_status": "REVIEW-CONFLICT",
+    "owner_original": "Alois Pollandt",
+    "stand_original": "Bordier[?]",
+    "wohnort_original": "",
+    "gattung_original": "Abtheilung / Hof",
+    "areal_original": "102",
+    "annotation_original": "Hofp[?] Gießfällhügel 180"
+   },
+   "post": {
+    "house_no": "",
+    "house_no_votes": "0/3",
+    "review_status": "REVIEW",
+    "owner_original": "",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "",
+    "areal_original": "",
+    "annotation_original": ""
+   }
+  },
+  {
+   "bp_no": "100",
+   "pre": {
+    "house_no": "5",
+    "house_no_votes": "2/2",
+    "review_status": "STABLE",
+    "owner_original": "",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "Futterg[?]",
+    "areal_original": "1 77 / 609",
+    "annotation_original": "Bruckmühle / und Garten"
+   },
+   "post": {
+    "house_no": "",
+    "house_no_votes": "0/4",
+    "review_status": "REVIEW",
+    "owner_original": "",
+    "stand_original": "",
+    "wohnort_original": "",
+    "gattung_original": "",
+    "areal_original": "",
+    "annotation_original": ""
+   }
+  }
+ ],
+ "post_tally": {
+  "p7": {
+   "STABLE": 17,
+   "REVIEW": 3,
+   "REVIEW-CONFLICT": 0
+  },
+  "house_changed": [
+   "85",
+   "86",
+   "87",
+   "88",
+   "89",
+   "90",
+   "91",
+   "92",
+   "93",
+   "95",
+   "96",
+   "97",
+   "98",
+   "99",
+   "100"
+  ]
+ }
+}
