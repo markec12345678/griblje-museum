@@ -459,10 +459,10 @@ ok(
 /* --- 5i. /api/atlas/story-graph — PASS 6 pripovedni graf (val 68, #42 §21) --- */
 const sgOverview = await getJson("/api/atlas/story-graph");
 ok(
-  "atlas story-graph: pregled — 3.454 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 113: F-PV-07 p17/p18/p21-p24 + SPLIT pravilo)",
+  "atlas story-graph: pregled — 3.268 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 114: F-PV-07 p25–p55 + p28–p37 + SPLIT markerji)",
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
-    sgOverview.body?.stats?.entities === 3454 &&
+    sgOverview.body?.stats?.entities === 3268 &&
     sgOverview.body?.stats?.relations === 3618 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
