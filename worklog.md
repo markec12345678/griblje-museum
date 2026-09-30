@@ -4572,3 +4572,25 @@ Stage Summary:
 - PS parcele 735 / KG vsebina / pokritost §24 — vse konsistentno; pt_rows pokritost osvežena na 52/11/37 (val 110 stanje)
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno)
 - Naslednje: val 112 = p4–p16 re-read + imenski pass p3 + F-PV-07 prestavitve; VLM glasovi ob kvoti (45 izrezkov PZ + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7); poln re-read p17–55 + p143; F-PV-03/F-PV-04; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379 (okt./nov. 2026)
+
+---
+Task ID: 112
+Agent: Z.ai Code (glavna seja, val 112)
+Task: ISSUE #42 §4/§14 — poln re-read PS: p3 imenski pass + p4–p16 vrednostni audit + F-PV-07 premestitve (p5/p7/p12); 0 VLM klicev (429 dnevna kvota) (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Prevzem: vala 110 (PR #114) in 111 (PR #115) že mergana; veja feat/val112-issue72-ps-p4-16-reread že obstajala z reading JSON p03–p16 + builderjem prejšnje seje; kvota VLM še 429 → metoda val 61/88/108/111 (agentov vid, 0 VLM)
+- Pre-flight: gardele ujemajo (2871 vrstic / 139 v88 / 1755 v86; p3=21, p4–p16 vrstice; value_audit format) — p10 r19 vnos imel napačno serializiran en-elementni array → popravljen na kanonsko 3-elementno obliko ["262 (R)","92","POPRAVEK …"]
+- Builder teka 1: IndexError na e[2] (p10 r19) — poprava reading JSON; teka 2: OK (269 sprememb), a page_obs p10 trdila normalizacijo '10.92'→'1092', ki je NI bila vgrajena (value_audit r0 = NORMALIZACIJA, builder obravnaval samo POPRAVEK) → builder razširjen (NORMALIZACIJA = formatni popravek), register revert na HEAD, changes izbrisani, ČIST re-run: 270 sprememb / 93 value_fixes / 59 fpv07_moves / 265 reading_pass v112
+- Vgradnja: p3 imenski pass (19 lastnikov [?] + 19 haus_no + wohnort 'Gruble' + r16 fantom + r19 capital_kr 27→22); F-PV-07 p5/p7/p12 (20+20+19 premestitev + 8 popravkov p5 + p7 r20 fantom-Fürtrag počiščen + p12 r16 '-'); audit p4 (6+10 haus+13 imen+8 kultur) / p6 (Ertrag-Capital r19→r20, 104/934) / p8 (r14 prazna, r19 Fürtrag 3|1941→1|454→682) / p9 / p10 (r0 '10.92'→'1092') / p11 (r22 FANTOM) / p13 / p14 (r17 1000→290) / p15 / p16 (r14 1852→482); vse s snimkami pre_v112 + page_observations_v112
+- Kaskada (izrecna): pass3 — PS parcele 735→676 (−59 = 20+20+19; F-PV-07 vrednosti so območja, ne parcelne številke → izpad iz numerične jaethe projekcije; preverjeno per-page: samo p5/p7/p12 se spremenijo); KG: PARCEL 2711 / HAS_PARCEL 3013 / 3553 / 3717, sha e574df03; story-graph, timeline (I6 (2035,676)+(391,209) — builder posodobljen izrecno), coverage (2.711 = 907/1.351/453), c4-metrika-v90 (K9 275/25/0 — jk_format izgine po normalizaciji) regenerirani; runtime kopije pišejo builderji
+- Testi: +28 varovalk (tests/val112-ps-p4-16-reread.test.ts) + pini prehodov val 108→112 v 12 testnih datotekah (val84/85/86/88/90/98/107/111, atlas-kg/pass3/coverage/map/timeline/explore/story-engine/story-graph, pv-land-use) + api-smoke (3.553/2.711/391/209) — prvi CI tek: dimni testi padli na 3 zastarelih živih števcih → popravljeno, 2. tek zelen; val 111 "imenski pass odložen" test pošteno prepisan (imenski pass zdaj opravljen z [?]); 1033 testov: 1022 pass / 11 skip / 0 fail; tsc čist; eslint čist
+- Docs: research-griblje/127-val112-ps-p4-16-reread-f-pv-07.md + KAZALO 127 + README 166. sklop; .gitignore +crops-v112 (219 MB, regenerabilno iz zoom-values-v112.py)
+- Potek: push → PR #116 → CI padel (api-smoke) → poprava → CI 3/3 ZELENO → merge (main @ 9d1503c) → izbris veje (oddaljena + lokalna) → komentar na #72 (5914563204) → worklog
+
+Stage Summary:
+- ISSUE #42 §4/§14: poln re-read pasu p3–p16 ZAPRT v treh slojih — p3 imenski pass (odložen v 111, zdaj opravljen z [?]), F-PV-07 premestitve na p5/p7/p12 (59×), vrednostni audit p4–p16 (93 popravkov, vključno 2 fantoma + 1 prazna celica val 57 + 1 normalizacija formata)
+- Kaskada dosledna in izrecna: PS parcele 735→676, raba 391+209, KG 2711/3013/3553/3717 (sha e574df03), timeline I6, coverage, c4 K9 — vsi prehodi testno vodeni z zgodovino
+- Iskrenost: TRANSCRIBED = 0; nič ne dvignjeno; odprte dileme (p5 r9/r15, p4 haus 35/41 + 5 vrednosti brez vira, p11 kultur r0–r8, kapitalni nizi p3) izrecno odprte; fantomske vrstice označene, ne brisane
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
+- Naslednje: val 113 = poln re-read p17–55 + kultur pass p11 r0–r8 + imenski pass po straneh; VLM glasovi ob kvoti (45 izrezkov PZ → mikroprehod 8b + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7); poln re-read p143; F-PV-03/F-PV-04; Dular 1972 + BM Metlika (izven peskovnika); register 26-0326 + 26-0379 (okt./nov. 2026)
