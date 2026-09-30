@@ -174,30 +174,30 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
 });
 
 describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
-  test("PS parcele 779 → 735; land use None 104 → 76; kategorije (F-PV-05 del 3 + val 108 re-read)", () => {
+  test("PS parcele 779 → 735 → 676; land use None 104 → 76 → 76; kategorije (val 112: F-PV-07 premestitve p5/p7/p12 — 59 vrednosti jaethe→klafter izpadijo iz projekcije)", () => {
     expect(pr.val).toBe("108");
-    expect(pr.ps_parcels_total).toBe(735);
+    expect(pr.ps_parcels_total).toBe(676); // val 108: 735 → val 112: 676
     expect(pr.ps_land_use_coverage["null"]).toBe(76);
-    expect(pr.ps_land_use_coverage["njiva"]).toBe(295);
-    expect(pr.ps_land_use_coverage["travnik"]).toBe(84);
-    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(221);
-    expect(pr.ps_land_use_coverage["pašnik"]).toBe(16);
-    expect(pr.ps_land_use_coverage["vrt"]).toBe(16);
+    expect(pr.ps_land_use_coverage["njiva"]).toBe(258); // val 108: 295 → val 112: 258
+    expect(pr.ps_land_use_coverage["travnik"]).toBe(77); // val 108: 84 → val 112: 77
+    expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(209); // val 108: 221 → val 112: 209
+    expect(pr.ps_land_use_coverage["pašnik"]).toBe(15); // val 108: 16 → val 112: 15
+    expect(pr.ps_land_use_coverage["vrt"]).toBe(14); // val 108: 16 → val 112: 14
     expect(pr.ps_land_use_coverage["gozd"]).toBe(14);
     expect(pr.ps_land_use_coverage["drugo"]).toBe(11);
     expect(pr.ps_land_use_coverage["dvorišče"]).toBe(1);
     expect(pr.ps_land_use_coverage["vinograd"]).toBe(1);
   });
 
-  test("KG v2.3: PARCEL 2.770, HAS_PARCEL 3.072, vozlišča 3.612, vezi 3.776, invariante čiste", () => {
+  test("KG v2.3: PARCEL 2.711, HAS_PARCEL 3.013, vozlišča 3.553, vezi 3.717, invariante čiste (val 112: F-PV-07; val 108 je bil 2.770/3.072/3.612/3.776)", () => {
     expect(kg.title).toBe("knowledge-graph-1825 v2.4");
     expect(kg.val).toBe(108);
-    expect(kg.node_stats.PARCEL).toBe(2770);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(3072);
+    expect(kg.node_stats.PARCEL).toBe(2711); // val 108: 2770 → val 112: 2711
+    expect(kg.edge_stats.HAS_PARCEL).toBe(3013); // val 108: 3072 → val 112: 3013
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3612);
+    expect(nodes).toBe(3553); // val 108: 3612 → val 112: 3553
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3776);
+    expect(edges).toBe(3717); // val 108: 3776 → val 112: 3717
     expect(kg.invariant_violations).toEqual([]);
   });
 
@@ -213,8 +213,8 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
     expect(f12!.status).toContain("RESOLVED-V107");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha 9f856d28… (val 108; val 98 je bil 2b16acad)", () => {
-    expect(kgSha).toMatch(/^9f856d28/);
+  test("kaskada: runtime kopije držijo isti KG sha e574df03… (val 112; val 108 je bil 9f856d28)", () => {
+    expect(kgSha).toMatch(/^e574df03/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),
@@ -227,12 +227,12 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
     }
   });
 
-  test("§4 poštenost: v107 popravki NE dvignejo evidence statusov (PROVISIONAL ostaja)", () => {
+  test("§4 poštenost: v107/v112 popravki NE dvignejo evidence statusov (PROVISIONAL ostaja)", () => {
     const nodes = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       nodes: { node_id: string; node_type: string; origin?: string; evidence_status?: string }[];
     };
     const psParcels = nodes.nodes.filter((n) => n.node_type === "PARCEL" && n.origin === "PS");
-    expect(psParcels.length).toBe(735);
+    expect(psParcels.length).toBe(676); // val 108: 735 → val 112: 676
     for (const p of psParcels) {
       expect(p.evidence_status).toBe("TRANSCRIBED_PROVISIONAL");
     }

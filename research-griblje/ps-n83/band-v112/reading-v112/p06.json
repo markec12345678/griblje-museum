@@ -1,0 +1,147 @@
+{
+ "meta": {
+  "val": 112,
+  "scope": "p6 poln re-read: vrednostni audit + ertrag/capital marginalni zapisi + Furtrag; F-PV-07 potrjena (vrednosti ze v klafter — val57 tu zapisal v klafter, ne jaethe)",
+  "method": "agentov direktni vid: skladovni zuomi vrednostne kolone x7/x8 + tarcni zuomi x11–x16 (zoom-values-v112.py + vlozeni skripti); 0 VLM klicev",
+  "source": "raw-web-val56-2026-10/n083ps-pages/p06.jpg",
+  "borders_klafter_subcol": "795-832, Classe 832-868, E.fl 868-919, E.kr 919-945, Cap.fl 945-1001 (programsko detektirano)"
+ },
+ "value_audit": {
+  "r0": [
+   "28 (R precrtan)",
+   "74",
+   "POPRAVEK 74->28"
+  ],
+  "r1": [
+   "105 (R)",
+   "105",
+   "soglasje + R opomba"
+  ],
+  "r2": [
+   "70 (R)",
+   "70",
+   "soglasje + R opomba"
+  ],
+  "r3": [
+   "1198",
+   "1498",
+   "POPRAVEK 1498->1198"
+  ],
+  "r4": [
+   "146 (R)",
+   "146",
+   "soglasje + R opomba"
+  ],
+  "r5": [
+   "175",
+   "1752",
+   "POPRAVEK 1752->175 (3 stevilke, zadnja 5)"
+  ],
+  "r6": [
+   "677 (R)",
+   "677",
+   "soglasje + R opomba"
+  ],
+  "r7": [
+   "403 (R)",
+   "403",
+   "soglasje + R opomba"
+  ],
+  "r8": [
+   "203",
+   "203",
+   "soglasje"
+  ],
+  "r9": [
+   "204",
+   "204",
+   "soglasje"
+  ],
+  "r10": [
+   "136",
+   "126",
+   "POPRAVEK 126->136 (srednja 3)"
+  ],
+  "r11": [
+   "190",
+   "190",
+   "soglasje"
+  ],
+  "r12": [
+   "1039",
+   "1030",
+   "POPRAVEK 1030->1039 (rep descender = 9)"
+  ],
+  "r13": [
+   "794",
+   "794",
+   "soglasje"
+  ],
+  "r14": [
+   "55",
+   "55",
+   "soglasje"
+  ],
+  "r15": [
+   "36",
+   "36",
+   "soglasje"
+  ],
+  "r16": [
+   "63",
+   "63",
+   "soglasje (crna crta skozi)"
+  ],
+  "r17": [
+   "110 (rdeca puscsca z desne)",
+   "110",
+   "soglasje + rdeca puscsica"
+  ],
+  "r18": [
+   "170",
+   "170",
+   "soglasje"
+  ],
+  "r19": [
+   "389",
+   "819",
+   "POPRAVEK 819->389"
+  ],
+  "r20": [
+   "418 + svinenik? '1|1106' ob strani",
+   "1013",
+   "POPRAVEK 1013->418"
+  ]
+ },
+ "ertrag_capital": {
+  "r11": [
+   "E.fl '1' + crta (E.kr) + '104' (Cap.fl)",
+   "efl 1 / ekr -104",
+   "POPRAVEK: ekr '' , cfl '104'; crta v E.kr = locilo/minus NEODLOCENO"
+  ],
+  "r15": [
+   "'934' (Cap.fl)",
+   "ekr 734",
+   "POPRAVEK: ekr '', cfl '934' (prva stevka 9)"
+  ],
+  "r19": [
+   "(nic)",
+   "efl 1 / ekr 1109 / cfl 1477",
+   "ZABRISI — zapis pripada r20"
+  ],
+  "r20": [
+   "'1' (E.fl) + '1106' (E.fl) + '477' (Cap.fl)",
+   "(prazno)",
+   "VGRADI: efl '1', ekr '1106', cfl '477' — val57 jih je pripisal r19 kot 1|1109|1477 (napacna vrstica + stevke)"
+  ]
+ },
+ "furtrag": "crno '4|85' (R precrtano) -> rdece '2|585' (2x zapisano)",
+ "register_actions_planned": [
+  "7 vrednostnih popravkov (r0,r3,r5,r10,r12,r19,r20) s snimkami",
+  "r11: ekr -104->'' + cfl '104'",
+  "r15: ekr 734->'' + cfl '934'",
+  "r19: bris efl/ekr/cfl",
+  "r20: efl '1', ekr '1106', cfl '477' + anmerkung",
+  "anmerkung add-only: R precrtani (r0,r1,r2,r4,r6,r7), rdeca puscsca r17, Furtrag revizija"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "val": 112,
+    "scope": "p4 poln re-read: vrednosti + lastniki + haus + kultur + rdece revizije — VELIKA POPRAVILA val 57 (cirkularne halucinacije imen/haus)",
+    "method": "agentov direktni vid: banded izrezki + programski zuomi vrednostnih/imenskih/haus celic ×4–×10; 0 VLM klicev",
+    "source": "raw-web-val56-2026-10/n083ps-pages/p04.jpg (1272x1023)",
+    "instrument_files": "raw-web-val111-2026-10/crops-v112/ (w-p4-*) + crops-v111 standardni",
+    "row_bands_y": "r0 160-197, r1 197-236, r2 236-274, r3 274-313, r4 313-350, r5 350-390, r6 390-428, r7 428-466, r8 466-505, r9 505-545, r10 545-582, r11 582-621, r12 621-660, r13 660-698, r14 698-736, r15 736-774, r16 774-812, r17 812-851, r18 851-888, r19 888-927 + Fürtrag ~935-970",
+    "findings_structural": [
+      "STEVEC (Uebersetzung/Ried): r0-r18 = 22-40; r19 BREZ stevca. Rdece precrte stevca: 29 (r7), 30 (r8), 31 (r9), 32 (r10), 35 (r13), 36 (r14), 38 (r16), 40 (r18). Rdeci zavoji + marginalije 'Diefer Aus?… wird … 9: J: 1817[?]' ob r13-r14, r16, r17-r18 (extract-opombe; natancna transkripcija odlozena).",
+      "PISAR PISE NIZKO: vse vrednosti/pari/imena so napisani na dnu svoje celice in preckajo mejo — poravnava po sredinskem prekrivanju pasu, ki je potrjena za vrednosti in hišne pare.",
+      "V57 HALUCINACIJE (GLAVNA NAJDBA): register imena r9-r19 so cirkularne kopije prejsnjih vrstic (Pogacar Michl/Pechl Joann/Schimey Wenzel/Urbas Peter/Reuschard Franz/Lorbltcher Hauffl/Reing Marda/'Pechl hauptl') — stran prikazuje DRUGA imena (Prian Masko, Fillal Putlrd, Pedian Georg, Pedian Matrlh, Fring Masko, Kerbitacher Masfa, Kirschan Georg). Enako haus r8-r19 (58,59,69,35,41,16,66,66,6,66,66,66 = kopije) — stran: 18,59,65,36,41,44,65,63,64,64,66,(—).",
+      "RDECE PRECRTANE VREDNOSTI (revizija): 976 (r8), 205 (r9), 198 (r10), 42 (r11), 173 (r15) — register v57 vrednosti (944, 293, 194, 46, 473) NE ustrezajo precrtanim in nimajo vidnega vira na strani (svincenih korekcij NI — contrast-stretch preverjen). Ostajajo z anmerkung opombo (ni korekcije brez vira).",
+      "Razhajanja vrednosti = digitske napake v57: 1224->1204 (r2), 525->825 (r6), 76->16 (r12), 190->194 (r17), 483->468 (r18), 410->412 (r19).",
+      "KULTUR: v57 ima 'Acker' na vseh r9-r19; stran prikazuje 'Lhaid[?]' (8x: r9-r13, r15, r16, r18) + Acker (r14, r17, r19). Termin neznan -> TERM-UNCLEAR v pass3 (UNKNOWN + original)."
+    ]
+  },
+  "rows": [
+    {"r": 0, "stevec": 22, "haus_seen": "1|0", "owner_seen": "Gemeinde", "stand_seen": "—", "wohnort_seen": "Gruble", "kultur_seen": "Wald", "value_seen": "76", "soglasje": "vse OK"},
+    {"r": 1, "stevec": 23, "haus_seen": "1|6", "owner_seen": "Kerbitacher Masfa[?] (v57: 'Lorbltcher Hauffl' — RAZHAJANJE)", "stand_seen": "Bauerd[?]?", "kultur_seen": "Acker", "value_seen": "272", "soglasje": "vrednost OK; ime razhajanje (vid ×4)"},
+    {"r": 2, "stevec": 24, "haus_seen": "1|66", "owner_seen": "Kirschan Georg[?] ('Kerichar Gaorg') (v57: 'Reuschard Franz' — RAZHAJANJE)", "kultur_seen": "Acker", "value_seen": "1204", "soglasje": "vrednost POPRAVEK 1224->1204; ime razhajanje"},
+    {"r": 3, "stevec": 25, "haus_seen": "1|58", "owner_seen": "Pogachar Michl (v57 'Pogacar Michl' OK)", "kultur_seen": "Acker", "value_seen": "442", "soglasje": "OK"},
+    {"r": 4, "stevec": 26, "haus_seen": "1|59", "owner_seen": "Pedian Svan[?] (v57: 'Pechl[?] Joann' — RAZHAJANJE)", "kultur_seen": "Acker", "value_seen": "394", "soglasje": "vrednost OK; ime razhajanje"},
+    {"r": 5, "stevec": 27, "haus_seen": "1|69", "owner_seen": "Schimey Mufsal[?] (v57: 'Schimey Wenzel' — priimek RAZHAJANJE)", "kultur_seen": "Acker", "value_seen": "451", "soglasje": "vrednost OK"},
+    {"r": 6, "stevec": 28, "haus_seen": "1|51", "owner_seen": "Ursch Petro[?] (v57: 'Urbas Peter' — blizu)", "kultur_seen": "Acker", "value_seen": "825", "soglasje": "vrednost POPRAVEK 525->825"},
+    {"r": 7, "stevec": "29 RDECE PRECRTAN", "haus_seen": "1|64", "owner_seen": "Urban Pangugal (v57 'Urban Pankrazgall' OK)", "kultur_seen": "Wiese[?]", "value_seen": "(PRAZNO)", "soglasje": "vrednost OK (''); stevec precrpan rdece"},
+    {"r": 8, "stevec": "30 RDECE PRECRTAN", "haus_seen": "1|18", "owner_seen": "Schimay Jeklr[?] (v57: 'Pogacar Michl' — HALUCINACIJA)", "kultur_seen": "Acker", "value_seen": "976 PRECRTANO RDECE", "soglasje": "vrednost: register 944 brez vidnega vira — OSTANE + opomba; haus POPRAVEK 58->18; ime POPRAVEK"},
+    {"r": 9, "stevec": "31 RDECE PRECRTAN", "haus_seen": "1|59", "owner_seen": "Pedian Svian[?] (v57: 'Pechl[?] Joann' — HALUCINACIJA)", "kultur_seen": "Lhaid[?]", "value_seen": "205 PRECRTANO RDECE", "soglasje": "vrednost: register 293 brez vira — OSTANE + opomba; haus 59 OK (nakljocno soglasje? v57 je kopiral r4); ime POPRAVEK; kultur POPRAVEK Acker->Lhaid[?]"},
+    {"r": 10, "stevec": "32 RDECE PRECRTAN", "haus_seen": "1|65", "owner_seen": "Prian Masko[?] (v57: 'Pogacar Michl' — HALUCINACIJA)", "kultur_seen": "Lhaid[?]", "value_seen": "198 PRECRTANO RDECE", "soglasje": "vrednost: register 194 brez vira — OSTANE + opomba; haus POPRAVEK 59->65; ime POPRAVEK; kultur POPRAVEK"},
+    {"r": 11, "stevec": 33, "haus_seen": "1|36", "owner_seen": "Fillal Putlrd[?] (v57: 'Pechl[?] Joann' — HALUCINACIJA)", "kultur_seen": "Lhaid[?]", "value_seen": "42 PRECRTANO RDECE (zelena bljunja ob)", "soglasje": "vrednost: register 46 brez vira — OSTANE + opomba; haus POPRAVEK 69->36; ime POPRAVEK; kultur POPRAVEK"},
+    {"r": 12, "stevec": 34, "haus_seen": "1|44", "owner_seen": "Pesian Georg[?] ('Pedian Grocg') (v57: 'Urbas Peter' — HALUCINACIJA)", "kultur_seen": "Lhaid[?]", "value_seen": "16", "soglasje": "vrednost POPRAVEK 76->16; haus POPRAVEK 35->41; ime POPRAVEK; kultur POPRAVEK"},
+    {"r": 13, "stevec": "35 RDECE PRECRTAN", "haus_seen": "1|65", "owner_seen": "Pedian Matrlh[?] ('Pesian Fratlh') (v57: 'Reuschard Franz' — HALUCINACIJA)", "kultur_seen": "Lhild[?]", "value_seen": "4", "soglasje": "vrednost OK; haus POPRAVEK 41->44; ime POPRAVEK; kultur POPRAVEK; rdeca marginalija zgoraj"},
+    {"r": 14, "stevec": "36 RDECE PRECRTAN", "haus_seen": "1|63", "owner_seen": "Fring Masko[?] (v57: 'Pechl[?] hauptl' — HALUCINACIJA)", "kultur_seen": "Acker", "value_seen": "172", "soglasje": "vrednost OK; haus POPRAVEK 16->63; ime POPRAVEK"},
+    {"r": 15, "stevec": 37, "haus_seen": "1|64", "owner_seen": "Kerbitacher Masfa[?] ('Kerbilcher Malfa') (v57: 'Reing Marda' — HALUCINACIJA)", "kultur_seen": "Lhaid[?]", "value_seen": "173 PRECRTANO RDECE", "soglasje": "vrednost: register 473 brez vira — OSTANE + opomba; haus POPRAVEK 66->64; ime POPRAVEK; kultur POPRAVEK; rdeci zavoj"},
+    {"r": 16, "stevec": "38 RDECE PRECRTAN", "haus_seen": "1|64", "owner_seen": "Kerbitacher Masfa[?] (v57: 'Reing Marda' — HALUCINACIJA)", "kultur_seen": "Lhaid[?]", "value_seen": "206", "soglasje": "vrednost OK; haus POPRAVEK 66->64; ime POPRAVEK; kultur POPRAVEK; rdeca marginalija zgoraj"},
+    {"r": 17, "stevec": 39, "haus_seen": "1|66", "owner_seen": "Kirschan Georg[?] ('Kerichar Grocg') (v57: 'Lorbltcher Hauffl' — HALUCINACIJA)", "kultur_seen": "Acker", "value_seen": "194", "soglasje": "vrednost POPRAVEK 190->194; haus POPRAVEK 6->64?? — VID: 1|66 jasno (haus POPRAVEK 6->66); ime POPRAVEK; rdeca marginalija 'et.'?"},
+    {"r": 18, "stevec": "40 RDECE PRECRTAN", "haus_seen": "1|66", "owner_seen": "Kirschan Georg[?] (v57: 'Lorbltcher Hauffl' — HALUCINACIJA)", "kultur_seen": "Lhild[?]", "value_seen": "468", "soglasje": "vrednost POPRAVEK 483->468; haus 66 OK; ime POPRAVEK; kultur POPRAVEK; rdeca marginalija zgoraj"},
+    {"r": 19, "stevec": "(brez)", "haus_seen": "(ni para — pas prazen)", "owner_seen": "(delno — rep vrstice; cf. 'Kirschan Georg[?]')", "kultur_seen": "Acker", "value_seen": "412", "soglasje": "vrednost POPRAVEK 410->412; haus: v57 66 = negotovo (pas brez para) — OSTANE + opomba; ime: v57 'Reuschard Franz' halucinacija — ostaja negotovo, opomba"}
+  ],
+  "furtrag": "2 Fürtrag. | 4 (precrpano rdece?) | 987 -> rdece 3|1447 (branje: crno 4|987, rdeca korekcija 3|1447)",
+  "register_actions_planned": [
+    "vrednosti: 6 popravkov (1204, 825, 16, 194, 468, 412) s snimkami; 5 precrtanih ostaja z opombo (944/205RS, 293/205RS, 194/198RS, 46/42RS, 473/173RS)",
+    "imena: 13 popravkov (r1, r2, r4, r5, r6, r8-r19) s snimkami — vse z [?]",
+    "haus: 9 popravkov (r8=18, r10=65, r11=36, r12=41, r13=44, r14=63, r15=64, r16=64, r17=66) + r19 opomba negotovost",
+    "kultur: 8 popravkov Acker->'Lhaid[?]' (r9-r13, r15, r16, r18)",
+    "anmerkung add-only: rdece precrtani steveci (8), rdece precrtane vrednosti (5), rdece marginalije (3), Fürtrag, Lhaid termin neznan",
+    "page_observations p4: revizija (precrani steveci 29-32/35/36/38/40 + vrednosti), 'Diefer Auszug' marginalije, Fürtrag 2|987 -> rdece 3|1447"
+  ]
+}

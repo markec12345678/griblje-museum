@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "val": 112,
+    "scope": "p3 imenski pass (lastniki + haus) + strukturni audit razpona (fantomska vrstica) + kapitalni/kulturni opombe",
+    "method": "agentov direktni vid (instrument val 61/88/108/111): banded izrezki z programskimi mejami vrstic + zuomi ×4–×10; 0 VLM klicev (429 dnevna kvota, test 12:07–12:09 UTC)",
+    "source": "raw-web-val56-2026-10/n083ps-pages/p03.jpg (1272x1023)",
+    "instrument_files": "raw-web-val111-2026-10/crops-v112/ (w-* zuomi + p03-haus-zoom-* + p03-names-wide-*) + crops-v111 (standardni izrezki)",
+    "row_bands_y": "r0 155-198, r1 198-236, r2 236-274, r3 274-314, r4 314-351, r5 351-391, r6 391-429, r7 429-467, r8 467-506, r9 506-545, r10 545-583, r11 583-623, r12 623-660, r13 660-700, r14 700-738, r15 738-776, r16 776-815, r17 815-853, r18 853-892, r19 892-930, r20(register fantom) / Fürtrag 968-1013",
+    "findings_structural": [
+      "P3 RAZPON: leva polovica lista = Nro./Benennung/Dominical-Rustical/Haus + Vor- und Zuname/Stand/Wohnort; desna polovica = Kultur + Flächen Inhalt (N.o Joche | Quad. Klafter) + Classe + Ertrag + Capital + Anmerkung. Vrstica se razteza prek celotne sirine.",
+      "STROKTURNI AUDIT (NOVO, F-PV-08 kandidat): stran p3 ima 20 podatkovnih vrstic (stolpec Uebersetzung/Ried stevec 1-20 + Fürtrag). Register v57 ima 21 vrstic (r0-r20) — r16 je FANTOMSKA prazna vrstica (v57 je vstavil dodatno vrstico; vrednosti 214/274/62/96 so na strani v pasovih r16-r19 = stevec 17-20).",
+      "PORAVNAVA: register r0-r15 = stran r0-r15 (stevec 1-16) 1:1; register r16 = fantom; register r17-r20 = stran r16-r19 (stevec 17-20) po VREDNOSTI (214/274/62/95 soZe v registru na r17-r20). Lastniki se vgrajujejo po VREDNOSTNI povezavi (r17<-stevec 17 Bring Michael itd.), ne po bandu.",
+      "FLAECHE PISAVA: vrednosti pisar piše NIZKO v svojo celico (preckajo mejo v naslednji pas) — vrednostni pasovi so zato zanesljivi (184@r15, 214@r16, 274@r17, 62@r18, 96@r19 + Fürtrag).",
+      "KAPITALI: pisava VARIABILNO visoko/nizko (1-602 visoko v pasu r16; 22 v pasu r18; 1-1398[?] v pasu r9). Dodelitev kapitalov vrsticam ni varna — dekodiranje ostaja odlozeno (princip val 111). Edina izjema: '22' lezi v pasu r18 = vrstica 62 (register r19 po vrednostni povezavi) — register r19 capital_kr '27' je napaka stevke (2->7?), popravek na '22'.",
+      "STOLPEC 1 (nums) = rimska I + ditto (F15); stevec 1-20 = Uebersetzung/Ried stevec (ne hyasna st.); par '1|NN' = konstanta 1 + hišna st. (semantika konstante 1 odprta, F16).",
+      "Rdece marginalije ob r7-r9: '... N 61 ...', '... 1853/1860 ...' (fragm., natancna transkripcija odlozena); rdeca opomba ob r14 v anmerkung (val 111: '...1844...')."
+    ]
+  },
+  "rows": [
+    {"r": 0, "stevec": 1, "haus_seen": "1|60 (60 precrpan crno)", "owner_seen": "(moCno precrpano, nepreberljivo — cf. 'Albr.?..[?]')", "kultur_seen": "Acker[?]", "vrednost_seen": "(pas precrpan)", "soglasje_register": "r0 precrpana vrstica (val 111) — ni sprememb"},
+    {"r": 1, "stevec": 2, "haus_seen": "1|61", "owner_seen": "Krbitschan Mahs[?] (×5; cf. 'Vrtischan')", "stand_seen": "(precrpano/rjava obloga — neberljivo)", "wohnort_seen": "Gruble (jasno; istocrkovanje kot p4 r0)", "register_klafter": "116", "page_klafter": "116", "soglasje": "vrednost OK"},
+    {"r": 2, "stevec": 3, "haus_seen": "1|62", "owner_seen": "Kirschan Georg[?] ('Kerichan Gaorg')", "stand_seen": "ditto", "wohnort_seen": "ditto", "register_klafter": "325", "page_klafter": "325", "soglasje": "vrednost OK"},
+    {"r": 3, "stevec": 4, "haus_seen": "1|62", "owner_seen": "Kirschan Mihel[?] ('Krischan Mihlo')", "register_klafter": "769[?]", "page_klafter": "76x (9/2 neodloceno — val 111)", "soglasje": "ostaja 769[?]"},
+    {"r": 4, "stevec": 5, "haus_seen": "1|62", "owner_seen": "Kirschan Mihel[?] ('Kirschan Mihlo')", "register_klafter": "44", "page_klafter": "44", "soglasje": "OK"},
+    {"r": 5, "stevec": 6, "haus_seen": "1|63", "owner_seen": "Kirschan Georg[?]", "register_klafter": "307", "page_klafter": "307", "soglasje": "OK; kultur vid 'Abhang?/Ödt?' (val 111) — ni korekcije"},
+    {"r": 6, "stevec": 7, "haus_seen": "1|62", "owner_seen": "Kirschan Mäda[?] ('Krischan Mada')", "register_klafter": "374", "page_klafter": "374", "soglasje": "OK"},
+    {"r": 7, "stevec": 8, "haus_seen": "1|61", "owner_seen": "Fillah Mäda[?] ('Fillah Mada')", "register_klafter": "203", "page_klafter": "203", "soglasje": "OK; kultur 'Abhang?' vid (register Wiese) — ni korekcije"},
+    {"r": 8, "stevec": 9, "haus_seen": "1|61", "owner_seen": "Fillah Mäda[?]", "register_klafter": "488", "page_klafter": "488", "soglasje": "OK"},
+    {"r": 9, "stevec": 10, "haus_seen": "1|60", "owner_seen": "Schello Gay[?] ('Schellofay?')", "register_klafter": "802", "page_klafter": "802", "soglasje": "OK"},
+    {"r": 10, "stevec": 11, "haus_seen": "1|60", "owner_seen": "Mhelhadapes[?] ('Mhelhadayd?')", "register_klafter": "729", "page_klafter": "729", "soglasje": "OK"},
+    {"r": 11, "stevec": 12, "haus_seen": "1|60", "owner_seen": "Shello Gay[?]/Mhell Gay[?]", "register_klafter": "99", "page_klafter": "99 (prej zapis precrpan X)", "soglasje": "OK"},
+    {"r": 12, "stevec": 13, "haus_seen": "1|66", "owner_seen": "Kirschan Georg[?]", "register_klafter": "758", "page_klafter": "758", "soglasje": "OK"},
+    {"r": 13, "stevec": 14, "haus_seen": "1|65", "owner_seen": "Bring Mäda[?] ('Gring Mada')", "register_klafter": "409 (v111 korekcija iz 609)", "page_klafter": "409", "soglasje": "OK"},
+    {"r": 14, "stevec": 15, "haus_seen": "1|31[?]", "owner_seen": "Kirichan Mäda[?] ('Kirlichan Masd')", "register_klafter": "663", "page_klafter": "663 (679 precrpano rdece)", "soglasje": "OK"},
+    {"r": 15, "stevec": 16, "haus_seen": "1|29", "owner_seen": "Milleg Hans[?] ('Milleg Hanss')", "register_klafter": "184 (v111 korekcija iz 158)", "page_klafter": "184", "soglasje": "OK"},
+    {"r": 16, "stevec": "(fantom)", "haus_seen": "(pas r16: par NE obstaja kot lastna vrstica — pas vsebuje 214+1-602 stevec 17)", "owner_seen": "(—)", "register_klafter": "(prazno)", "soglasje": "FANTOMSKA VRSTICA: stran nima vrstice med 184 in 214; register v57 vstavil prazno r16"},
+    {"r": 17, "stevec": 17, "haus_seen": "1|26", "owner_seen": "Bring Michael[?] ('Bring Mifuel')", "register_klafter": "214", "page_klafter": "214", "soglasje": "OK po vrednostni povezavi; kapital strani '1-602' (register r16 '1|−6' — dekodiranje odlozeno, asociacija opombena)"},
+    {"r": 18, "stevec": 18, "haus_seen": "1|23", "owner_seen": "Bring Mase[?] ('Bring Musfa')", "register_klafter": "274", "page_klafter": "274", "soglasje": "OK po vrednostni povezavi"},
+    {"r": 19, "stevec": 19, "haus_seen": "1|0", "owner_seen": "Gemeinde", "register_klafter": "62", "page_klafter": "62", "soglasje": "OK po vrednostni povezavi; kultur vid 'Ödt[?]' (register Gart — ni korekcije, princip val 111); kapital '22' v pasu r18 -> register r19 capital_kr '27' NAPAKA -> popravek '22'"},
+    {"r": 20, "stevec": 20, "haus_seen": "1|50", "owner_seen": "Fesdian Musfa[?] ('Fesdian/Lesdar Musfa')", "register_klafter": "96", "page_klafter": "96", "soglasje": "OK po vrednostni povezavi; kapital: zavoj (dito?) — neodloceno"}
+  ],
+  "furtrag": "1 Fürtrag. | 3 (precrpano rdece) | 574 (precrpano) -> rdece 2|1495 (val 111 potrjeno, banded pregled 112 se ujema)",
+  "register_actions_planned": [
+    "fill owner_original r1-r15, r17-r20 (11 + 4 vrednosti, vse z [?] po potrebi) — snapshot",
+    "fill haus_no r1-r15 (61,62,62,62,63,62,61,61,60,60,60,66,65,31,29), r17-r20 (26,23,0,50) — snapshot",
+    "r16: anmerkung add-only fantom marker",
+    "r19: capital_kr '27' -> '22' (snapshot)",
+    "r1: wohnort fill 'Gruble' (stand neberljiv — opomba); r2-r19 stand/wohnort ditto — ne razresujemo (vzorec val 57: samo prva vrstica)",
+    "ni popravkov kultur, ni popravkov no_blatt (F15), ni premestitev kapitalov (dekodiranje odlozeno)"
+  ]
+}

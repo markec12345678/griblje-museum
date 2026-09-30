@@ -1,0 +1,2464 @@
+{
+ "val": 112,
+ "stats": {
+  "fpv07_moves": 59,
+  "value_fixes": 93,
+  "owner_fills": 33,
+  "haus_fills": 25,
+  "kultur_fills": 8,
+  "ertrag_capital": 10,
+  "anmerkung_adds": 29,
+  "pages_covered": [
+   "p3-names",
+   "p5",
+   "p7",
+   "p12",
+   "p4",
+   "p6",
+   "p8",
+   "p9",
+   "p10",
+   "p11",
+   "p13",
+   "p14",
+   "p15",
+   "p16"
+  ]
+ },
+ "changes": [
+  {
+   "index": 1,
+   "page": 3,
+   "row_in_page": 1,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "61"
+  },
+  {
+   "index": 1,
+   "page": 3,
+   "row_in_page": 1,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Krbitschan Mahs[?]"
+  },
+  {
+   "index": 1,
+   "page": 3,
+   "row_in_page": 1,
+   "type": "v112_wohnort_fill",
+   "field": "wohnort",
+   "old": "",
+   "new": "Gruble"
+  },
+  {
+   "index": 1,
+   "page": 3,
+   "type": "anmerkung_add",
+   "text": "[stand močno prečrtan/neberljiv — val 112]"
+  },
+  {
+   "index": 2,
+   "page": 3,
+   "row_in_page": 2,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "62"
+  },
+  {
+   "index": 2,
+   "page": 3,
+   "row_in_page": 2,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Kirschan Georg[?]"
+  },
+  {
+   "index": 3,
+   "page": 3,
+   "row_in_page": 3,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "62"
+  },
+  {
+   "index": 3,
+   "page": 3,
+   "row_in_page": 3,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Kirschan Mihel[?]"
+  },
+  {
+   "index": 4,
+   "page": 3,
+   "row_in_page": 4,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "62"
+  },
+  {
+   "index": 4,
+   "page": 3,
+   "row_in_page": 4,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Kirschan Mihel[?]"
+  },
+  {
+   "index": 5,
+   "page": 3,
+   "row_in_page": 5,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "63"
+  },
+  {
+   "index": 5,
+   "page": 3,
+   "row_in_page": 5,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Kirschan Georg[?]"
+  },
+  {
+   "index": 6,
+   "page": 3,
+   "row_in_page": 6,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "62"
+  },
+  {
+   "index": 6,
+   "page": 3,
+   "row_in_page": 6,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Kirschan Mäda[?]"
+  },
+  {
+   "index": 7,
+   "page": 3,
+   "row_in_page": 7,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "61"
+  },
+  {
+   "index": 7,
+   "page": 3,
+   "row_in_page": 7,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Fillah Mäda[?]"
+  },
+  {
+   "index": 8,
+   "page": 3,
+   "row_in_page": 8,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "61"
+  },
+  {
+   "index": 8,
+   "page": 3,
+   "row_in_page": 8,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Fillah Mäda[?]"
+  },
+  {
+   "index": 9,
+   "page": 3,
+   "row_in_page": 9,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "60"
+  },
+  {
+   "index": 9,
+   "page": 3,
+   "row_in_page": 9,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Schello Gay[?]"
+  },
+  {
+   "index": 10,
+   "page": 3,
+   "row_in_page": 10,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "60"
+  },
+  {
+   "index": 10,
+   "page": 3,
+   "row_in_page": 10,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Mhelhadapes[?]"
+  },
+  {
+   "index": 11,
+   "page": 3,
+   "row_in_page": 11,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "60"
+  },
+  {
+   "index": 11,
+   "page": 3,
+   "row_in_page": 11,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Shello Gay[?]/Mhell Gay[?]"
+  },
+  {
+   "index": 12,
+   "page": 3,
+   "row_in_page": 12,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "66"
+  },
+  {
+   "index": 12,
+   "page": 3,
+   "row_in_page": 12,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Kirschan Georg[?]"
+  },
+  {
+   "index": 13,
+   "page": 3,
+   "row_in_page": 13,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "65"
+  },
+  {
+   "index": 13,
+   "page": 3,
+   "row_in_page": 13,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Bring Mäda[?]"
+  },
+  {
+   "index": 14,
+   "page": 3,
+   "row_in_page": 14,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "31"
+  },
+  {
+   "index": 14,
+   "page": 3,
+   "row_in_page": 14,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Kirichan Mäda[?]"
+  },
+  {
+   "index": 15,
+   "page": 3,
+   "row_in_page": 15,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "29"
+  },
+  {
+   "index": 15,
+   "page": 3,
+   "row_in_page": 15,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Milleg Hans[?]"
+  },
+  {
+   "index": 16,
+   "page": 3,
+   "type": "anmerkung_add",
+   "text": "[fantomski pas: vrstica brez lastnega para; vsebuje 214+1-602 števec 17 — val 112]"
+  },
+  {
+   "index": 17,
+   "page": 3,
+   "row_in_page": 17,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "26"
+  },
+  {
+   "index": 17,
+   "page": 3,
+   "row_in_page": 17,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Bring Michael[?]"
+  },
+  {
+   "index": 18,
+   "page": 3,
+   "row_in_page": 18,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "23"
+  },
+  {
+   "index": 18,
+   "page": 3,
+   "row_in_page": 18,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Bring Mase[?]"
+  },
+  {
+   "index": 19,
+   "page": 3,
+   "row_in_page": 19,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "0"
+  },
+  {
+   "index": 19,
+   "page": 3,
+   "row_in_page": 19,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Gemeinde"
+  },
+  {
+   "index": 19,
+   "page": 3,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "capital_kr",
+   "old": "27",
+   "new": "22",
+   "note": "kapitalni niz — zadnja števka 2"
+  },
+  {
+   "index": 20,
+   "page": 3,
+   "row_in_page": 20,
+   "type": "v112_haus_fill",
+   "field": "haus_no",
+   "old": "",
+   "new": "50"
+  },
+  {
+   "index": 20,
+   "page": 3,
+   "row_in_page": 20,
+   "type": "v112_owner_fill",
+   "field": "owner_original",
+   "old": "",
+   "new": "Fesdian Musfa[?]"
+  },
+  {
+   "page": 3,
+   "type": "page_observations_v112",
+   "text": "v112 imenski pass: 19 lastnikov + 19 haus_no fill (vse [?] dvomi ohranjeni); r16 fantom; r19 capital_kr 27->22; brez kultur/no_blatt sprememb"
+  },
+  {
+   "index": 41,
+   "page": 5,
+   "row_in_page": 0,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "913",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 41,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[dvojna vrednost 913 + 543[?] — val 112]"
+  },
+  {
+   "index": 42,
+   "page": 5,
+   "row_in_page": 1,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "222",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 43,
+   "page": 5,
+   "row_in_page": 2,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "682",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 43,
+   "page": 5,
+   "row_in_page": 2,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "682",
+   "new": "683"
+  },
+  {
+   "index": 44,
+   "page": 5,
+   "row_in_page": 3,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "484",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 44,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[vrednost prečrtana rdeče (548) — val 112]"
+  },
+  {
+   "index": 45,
+   "page": 5,
+   "row_in_page": 4,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "495",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 45,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[vrednost prečrtana rdeče (395) — val 112]"
+  },
+  {
+   "index": 46,
+   "page": 5,
+   "row_in_page": 5,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "484",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 46,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[vrednost prečrtana rdeče (466) — val 112]"
+  },
+  {
+   "index": 47,
+   "page": 5,
+   "row_in_page": 6,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "954",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 47,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[vrednost prečrtana rdeče (354) — val 112]"
+  },
+  {
+   "index": 48,
+   "page": 5,
+   "row_in_page": 7,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "642",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 48,
+   "page": 5,
+   "row_in_page": 7,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "642",
+   "new": "242"
+  },
+  {
+   "index": 49,
+   "page": 5,
+   "row_in_page": 8,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "272",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 49,
+   "page": 5,
+   "row_in_page": 8,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "272",
+   "new": "222"
+  },
+  {
+   "index": 50,
+   "page": 5,
+   "row_in_page": 9,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "2245",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 50,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[razhajanje 248[?] vs 2245 — odprto, val 112]"
+  },
+  {
+   "index": 51,
+   "page": 5,
+   "row_in_page": 10,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "858",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 51,
+   "page": 5,
+   "row_in_page": 10,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "858",
+   "new": "458"
+  },
+  {
+   "index": 52,
+   "page": 5,
+   "row_in_page": 11,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1353",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 52,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[vrednost prečrtana rdeče (1253) — val 112]"
+  },
+  {
+   "index": 53,
+   "page": 5,
+   "row_in_page": 12,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "771",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 53,
+   "page": 5,
+   "row_in_page": 12,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "771",
+   "new": "171"
+  },
+  {
+   "index": 54,
+   "page": 5,
+   "row_in_page": 13,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "170",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 54,
+   "page": 5,
+   "row_in_page": 13,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "170",
+   "new": "110"
+  },
+  {
+   "index": 55,
+   "page": 5,
+   "row_in_page": 14,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "694",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 56,
+   "page": 5,
+   "row_in_page": 15,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1350",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 56,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[neujemljivo 625[?] vs 1350 — odprto, val 112]"
+  },
+  {
+   "index": 57,
+   "page": 5,
+   "row_in_page": 16,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "1142",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 57,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[soglasje s prečrtano (1142) — val 112]"
+  },
+  {
+   "index": 58,
+   "page": 5,
+   "row_in_page": 17,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "563",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 58,
+   "page": 5,
+   "row_in_page": 17,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "563",
+   "new": "565"
+  },
+  {
+   "index": 59,
+   "page": 5,
+   "row_in_page": 18,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "461",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 59,
+   "page": 5,
+   "row_in_page": 18,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "461",
+   "new": "464"
+  },
+  {
+   "index": 60,
+   "page": 5,
+   "row_in_page": 19,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "877",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 60,
+   "page": 5,
+   "type": "anmerkung_add",
+   "text": "[soglasje s prečrtano (877) — val 112]"
+  },
+  {
+   "page": 5,
+   "type": "page_observations_v112",
+   "text": "v112: F-PV-07 20x premestitev jaethe->klafter; 8 vrednostnih popravkov (683/242/222/458/171/110/565/464) s snimkami; Fürtrag 6|1459 prečrtan -> rdeče 3|906; haus/imena fill ZA PODATKOM (odloženo val 113 — reading actions brez row-level vrednosti)"
+  },
+  {
+   "index": 82,
+   "page": 7,
+   "row_in_page": 0,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "774",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 83,
+   "page": 7,
+   "row_in_page": 1,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "187",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 84,
+   "page": 7,
+   "row_in_page": 2,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "283",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 85,
+   "page": 7,
+   "row_in_page": 3,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "160",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 86,
+   "page": 7,
+   "row_in_page": 4,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "241",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 87,
+   "page": 7,
+   "row_in_page": 5,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "19",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 88,
+   "page": 7,
+   "row_in_page": 6,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "31",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 89,
+   "page": 7,
+   "row_in_page": 7,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "169",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 90,
+   "page": 7,
+   "row_in_page": 8,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "103",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 91,
+   "page": 7,
+   "row_in_page": 9,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "36",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 92,
+   "page": 7,
+   "row_in_page": 10,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "54",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 93,
+   "page": 7,
+   "row_in_page": 11,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "52",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 94,
+   "page": 7,
+   "row_in_page": 12,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "44",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 95,
+   "page": 7,
+   "row_in_page": 13,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "224",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 96,
+   "page": 7,
+   "row_in_page": 14,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "315",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 97,
+   "page": 7,
+   "row_in_page": 15,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "945",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 98,
+   "page": 7,
+   "row_in_page": 16,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "297",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 99,
+   "page": 7,
+   "row_in_page": 17,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "187",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 100,
+   "page": 7,
+   "row_in_page": 18,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "58",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 101,
+   "page": 7,
+   "row_in_page": 19,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "110",
+   "note": "jaethe->klafter (F-PV-07)"
+  },
+  {
+   "index": 102,
+   "page": 7,
+   "row_in_page": 20,
+   "type": "v112_value_fix",
+   "field": "owner_original",
+   "old": "Strauß Georg",
+   "new": "",
+   "note": "fantom-Furtrag vrstica (brez para) — val 112"
+  },
+  {
+   "index": 102,
+   "page": 7,
+   "type": "anmerkung_add",
+   "text": "[fantomski rep: vrstica brez kultur/vrednosti; Furtrag 2|687 prečrtan -> rdeče 1140 — val 112]"
+  },
+  {
+   "page": 7,
+   "type": "page_observations_v112",
+   "text": "v112: F-PV-07 20x premestitev jaethe->klafter; r20 fantom-Furtrag počiščen (owner bris); 11 prečrtanih vrednosti + r19 trojna oznaka/svinčev 1147 + kulturni razhajanja r8/r9 — detalji v reading p07.json (row-level oznake odložene)"
+  },
+  {
+   "index": 186,
+   "page": 12,
+   "row_in_page": 0,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "297",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 187,
+   "page": 12,
+   "row_in_page": 1,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "554",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 188,
+   "page": 12,
+   "row_in_page": 2,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "494",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 189,
+   "page": 12,
+   "row_in_page": 3,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "470",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 190,
+   "page": 12,
+   "row_in_page": 4,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "376",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 191,
+   "page": 12,
+   "row_in_page": 5,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "396",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 192,
+   "page": 12,
+   "row_in_page": 6,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "135",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 193,
+   "page": 12,
+   "row_in_page": 7,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "279",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 194,
+   "page": 12,
+   "row_in_page": 8,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "374",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 195,
+   "page": 12,
+   "row_in_page": 9,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "305",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 196,
+   "page": 12,
+   "row_in_page": 10,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "311",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 197,
+   "page": 12,
+   "row_in_page": 11,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "628",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 198,
+   "page": 12,
+   "row_in_page": 12,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "868",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 199,
+   "page": 12,
+   "row_in_page": 13,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "260",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 200,
+   "page": 12,
+   "row_in_page": 14,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "359",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 201,
+   "page": 12,
+   "row_in_page": 15,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "650",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 202,
+   "page": 12,
+   "row_in_page": 16,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "-",
+   "new": "78",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 203,
+   "page": 12,
+   "row_in_page": 17,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "82",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "index": 204,
+   "page": 12,
+   "row_in_page": 18,
+   "type": "v112_fpv07_move",
+   "field": "klafter",
+   "old": "",
+   "new": "65",
+   "note": "jaethe->klafter (F-PV-07; klafter '-' = prazni marker)"
+  },
+  {
+   "page": 12,
+   "type": "page_observations_v112",
+   "text": "v112: F-PV-07 19x premestitev jaethe->klafter (r16 klafter '-' nadomeščen); 5 prečrtanih vrednosti + dvomni r4/r8 + rep-strani pomik-dilema r16–r19 — detalji v reading p12.json"
+  },
+  {
+   "index": 23,
+   "page": 4,
+   "row_in_page": 2,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1224",
+   "new": "1204"
+  },
+  {
+   "index": 23,
+   "page": 4,
+   "row_in_page": 2,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Reuschard Franz",
+   "new": "Kirschan Georg[?]"
+  },
+  {
+   "index": 27,
+   "page": 4,
+   "row_in_page": 6,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "525",
+   "new": "825"
+  },
+  {
+   "index": 27,
+   "page": 4,
+   "row_in_page": 6,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Urbas Peter",
+   "new": "Ursch Petro[?]"
+  },
+  {
+   "index": 29,
+   "page": 4,
+   "row_in_page": 8,
+   "type": "v112_haus_fix",
+   "field": "haus_no",
+   "old": "58",
+   "new": "18"
+  },
+  {
+   "index": 29,
+   "page": 4,
+   "row_in_page": 8,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Pogacar Michl",
+   "new": "Schimay Jeklr[?]"
+  },
+  {
+   "index": 29,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[vrednost 944 brez vidnega vira — ostane, val 112]"
+  },
+  {
+   "index": 30,
+   "page": 4,
+   "row_in_page": 9,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Pechl[?] Joann",
+   "new": "Pedian Svian[?]"
+  },
+  {
+   "index": 30,
+   "page": 4,
+   "row_in_page": 9,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhaid[?]"
+  },
+  {
+   "index": 30,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[vrednost 293 brez vira — ostane, val 112]"
+  },
+  {
+   "index": 31,
+   "page": 4,
+   "row_in_page": 10,
+   "type": "v112_haus_fix",
+   "field": "haus_no",
+   "old": "69",
+   "new": "65"
+  },
+  {
+   "index": 31,
+   "page": 4,
+   "row_in_page": 10,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Schimey Wenzel",
+   "new": "Prian Masko[?]"
+  },
+  {
+   "index": 31,
+   "page": 4,
+   "row_in_page": 10,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhaid[?]"
+  },
+  {
+   "index": 31,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[vrednost 194 brez vira — ostane, val 112]"
+  },
+  {
+   "index": 32,
+   "page": 4,
+   "row_in_page": 11,
+   "type": "v112_haus_fix",
+   "field": "haus_no",
+   "old": "35",
+   "new": "36"
+  },
+  {
+   "index": 32,
+   "page": 4,
+   "row_in_page": 11,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Urbas Peter",
+   "new": "Fillal Putlrd[?]"
+  },
+  {
+   "index": 32,
+   "page": 4,
+   "row_in_page": 11,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhaid[?]"
+  },
+  {
+   "index": 32,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[vrednost 46 brez vira — ostane, val 112]"
+  },
+  {
+   "index": 33,
+   "page": 4,
+   "row_in_page": 12,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "76",
+   "new": "16"
+  },
+  {
+   "index": 33,
+   "page": 4,
+   "row_in_page": 12,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Reuschard Franz",
+   "new": "Pesian Georg[?]"
+  },
+  {
+   "index": 33,
+   "page": 4,
+   "row_in_page": 12,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhaid[?]"
+  },
+  {
+   "index": 33,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[haus 35: stran namig 41/44 — negotovo, potreben obisk — val 112]"
+  },
+  {
+   "index": 34,
+   "page": 4,
+   "row_in_page": 13,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Pechl[?] hauptl",
+   "new": "Pedian Matrlh[?]"
+  },
+  {
+   "index": 34,
+   "page": 4,
+   "row_in_page": 13,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhild[?]"
+  },
+  {
+   "index": 34,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[haus 41: stran namig 44/65 — negotovo, potreben obisk — val 112]"
+  },
+  {
+   "index": 35,
+   "page": 4,
+   "row_in_page": 14,
+   "type": "v112_haus_fix",
+   "field": "haus_no",
+   "old": "66",
+   "new": "63"
+  },
+  {
+   "index": 35,
+   "page": 4,
+   "row_in_page": 14,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Reing Marda",
+   "new": "Fring Masko[?]"
+  },
+  {
+   "index": 36,
+   "page": 4,
+   "row_in_page": 15,
+   "type": "v112_haus_fix",
+   "field": "haus_no",
+   "old": "66",
+   "new": "64"
+  },
+  {
+   "index": 36,
+   "page": 4,
+   "row_in_page": 15,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Reing Marda",
+   "new": "Kerbitacher Masfa[?]"
+  },
+  {
+   "index": 36,
+   "page": 4,
+   "row_in_page": 15,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhaid[?]"
+  },
+  {
+   "index": 36,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[vrednost 473 brez vira — ostane, val 112]"
+  },
+  {
+   "index": 37,
+   "page": 4,
+   "row_in_page": 16,
+   "type": "v112_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "64"
+  },
+  {
+   "index": 37,
+   "page": 4,
+   "row_in_page": 16,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Lorbltcher Hauffl",
+   "new": "Kerbitacher Masfa[?]"
+  },
+  {
+   "index": 37,
+   "page": 4,
+   "row_in_page": 16,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhaid[?]"
+  },
+  {
+   "index": 38,
+   "page": 4,
+   "row_in_page": 17,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "190",
+   "new": "194"
+  },
+  {
+   "index": 38,
+   "page": 4,
+   "row_in_page": 17,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Lorbltcher Hauffl",
+   "new": "Kirschan Georg[?]"
+  },
+  {
+   "index": 38,
+   "page": 4,
+   "type": "anmerkung_add",
+   "text": "[haus v57 6 = napačen par; 1|66 jasno — val 112]"
+  },
+  {
+   "index": 39,
+   "page": 4,
+   "row_in_page": 18,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "483",
+   "new": "468"
+  },
+  {
+   "index": 39,
+   "page": 4,
+   "row_in_page": 18,
+   "type": "v112_owner_fix",
+   "field": "owner_original",
+   "old": "Reuschard Franz",
+   "new": "Kirschan Georg[?]"
+  },
+  {
+   "index": 39,
+   "page": 4,
+   "row_in_page": 18,
+   "type": "v112_kultur_fix",
+   "field": "kultur",
+   "old": "Acker",
+   "new": "Lhild[?]"
+  },
+  {
+   "index": 40,
+   "page": 4,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "410",
+   "new": "412"
+  },
+  {
+   "page": 4,
+   "type": "page_observations_v112",
+   "text": "v112 poln re-read p4: 6 vrednostnih popravkov (1204/825/16/194/468/412), 10 haus popravkov, 13 imenskih popravkov (vse [?]), 8 kultur Acker->Lhaid[?]; 5 vrednosti brez vira ostanejo; cirkularne halucinacij imen/haus val 57 popravljene"
+  },
+  {
+   "index": 61,
+   "page": 6,
+   "row_in_page": 0,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "74",
+   "new": "28",
+   "note": "POPRAVEK 74->28"
+  },
+  {
+   "index": 61,
+   "page": 6,
+   "type": "anmerkung_add",
+   "text": "[vrednost prečrtana rdeče (28) — val 112]"
+  },
+  {
+   "index": 64,
+   "page": 6,
+   "row_in_page": 3,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1498",
+   "new": "1198",
+   "note": "POPRAVEK 1498->1198"
+  },
+  {
+   "index": 66,
+   "page": 6,
+   "row_in_page": 5,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1752",
+   "new": "175",
+   "note": "POPRAVEK 1752->175 (3 stevilke, zadnja 5)"
+  },
+  {
+   "index": 71,
+   "page": 6,
+   "row_in_page": 10,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "126",
+   "new": "136",
+   "note": "POPRAVEK 126->136 (srednja 3)"
+  },
+  {
+   "index": 73,
+   "page": 6,
+   "row_in_page": 12,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1030",
+   "new": "1039",
+   "note": "POPRAVEK 1030->1039 (rep descender = 9)"
+  },
+  {
+   "index": 80,
+   "page": 6,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "819",
+   "new": "389",
+   "note": "POPRAVEK 819->389"
+  },
+  {
+   "index": 81,
+   "page": 6,
+   "row_in_page": 20,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1013",
+   "new": "418",
+   "note": "POPRAVEK 1013->418"
+  },
+  {
+   "index": 72,
+   "page": 6,
+   "row_in_page": 11,
+   "type": "v112_value_fix",
+   "field": "ertrag_kr",
+   "old": "-104",
+   "new": "",
+   "note": "crta med '1' in '104' = locilo/minus NEODLOCENO"
+  },
+  {
+   "index": 72,
+   "page": 6,
+   "row_in_page": 11,
+   "type": "v112_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "104",
+   "note": "104 pisano v Cap.fl (945-1001 px)"
+  },
+  {
+   "index": 76,
+   "page": 6,
+   "row_in_page": 15,
+   "type": "v112_value_fix",
+   "field": "ertrag_kr",
+   "old": "734",
+   "new": "",
+   "note": "'934' pisano v Cap.fl (prva stevka 9)"
+  },
+  {
+   "index": 76,
+   "page": 6,
+   "row_in_page": 15,
+   "type": "v112_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "934",
+   "note": "934 pisano v Cap.fl"
+  },
+  {
+   "index": 80,
+   "page": 6,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "ertrag_fl",
+   "old": "1",
+   "new": "",
+   "note": "zapis pripada r20"
+  },
+  {
+   "index": 80,
+   "page": 6,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "ertrag_kr",
+   "old": "1109",
+   "new": "",
+   "note": "zapis pripada r20"
+  },
+  {
+   "index": 81,
+   "page": 6,
+   "row_in_page": 20,
+   "type": "v112_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1",
+   "note": "'1' v E.fl coni"
+  },
+  {
+   "index": 81,
+   "page": 6,
+   "row_in_page": 20,
+   "type": "v112_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "1106",
+   "note": "'1106' v E.fl coni — kolonka neodlocena"
+  },
+  {
+   "index": 81,
+   "page": 6,
+   "row_in_page": 20,
+   "type": "v112_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "477",
+   "note": "'477' v Cap.fl"
+  },
+  {
+   "index": 81,
+   "page": 6,
+   "type": "anmerkung_add",
+   "text": "[svincnik?/crnilo zapis '1  1106' + '477' desno od 418; val57 jih je pripisal r19 kot 1|1109|1477 — val 112]"
+  },
+  {
+   "page": 6,
+   "type": "page_observations_v112",
+   "text": "v112: marginalni zapisi Ertrag/Capital premesteni r19->r20 + popravki stevk (1109->1106, 1477->477); Furtrag crno 4|85 (R) -> rdece 2|585"
+  },
+  {
+   "index": 106,
+   "page": 8,
+   "row_in_page": 3,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "343",
+   "new": "348",
+   "note": "POPRAVEK 343->348"
+  },
+  {
+   "index": 107,
+   "page": 8,
+   "row_in_page": 4,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "147",
+   "new": "161",
+   "note": "POPRAVEK 147->161"
+  },
+  {
+   "index": 109,
+   "page": 8,
+   "row_in_page": 6,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "232",
+   "new": "222",
+   "note": "POPRAVEK 232->222"
+  },
+  {
+   "index": 111,
+   "page": 8,
+   "row_in_page": 8,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "224",
+   "new": "204",
+   "note": "POPRAVEK 224->204"
+  },
+  {
+   "index": 113,
+   "page": 8,
+   "row_in_page": 10,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "561",
+   "new": "461",
+   "note": "POPRAVEK 561->461"
+  },
+  {
+   "index": 114,
+   "page": 8,
+   "row_in_page": 11,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "432",
+   "new": "452",
+   "note": "POPRAVEK 432->452"
+  },
+  {
+   "index": 115,
+   "page": 8,
+   "row_in_page": 12,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "447",
+   "new": "457",
+   "note": "POPRAVEK 447->457"
+  },
+  {
+   "index": 117,
+   "page": 8,
+   "row_in_page": 14,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "397",
+   "new": "",
+   "note": "POPRAVEK 397->'' (celica prazna — val57 halucinacija)"
+  },
+  {
+   "index": 118,
+   "page": 8,
+   "row_in_page": 15,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "632",
+   "new": "399",
+   "note": "POPRAVEK 632->399"
+  },
+  {
+   "index": 119,
+   "page": 8,
+   "row_in_page": 16,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "597",
+   "new": "682",
+   "note": "POPRAVEK 597->682"
+  },
+  {
+   "index": 120,
+   "page": 8,
+   "row_in_page": 17,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "517",
+   "new": "397",
+   "note": "POPRAVEK 517->397"
+  },
+  {
+   "index": 121,
+   "page": 8,
+   "row_in_page": 18,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "351",
+   "new": "511",
+   "note": "POPRAVEK 351->511"
+  },
+  {
+   "index": 117,
+   "page": 8,
+   "type": "anmerkung_add",
+   "text": "[celica PRAZNA na strani — val57 vnesel 397 brez vira — val 112]"
+  },
+  {
+   "index": 122,
+   "page": 8,
+   "type": "anmerkung_add",
+   "text": "[stran: vrstica r19 = normalni vnos (Wald, 364 R precrtan, Klobetisher Gregor) pred \"6 Eintrag.\"; Furtrag 3|1941 (R) -> 1|454 (R) -> 682; vrstica 364 ni v registru — dodajanje odlozeno (kaskada) — val 112]"
+  },
+  {
+   "page": 8,
+   "type": "page_observations_v112",
+   "text": "v112: 11 vrednostnih popravkov + r14 prazna + r19 strukturna opamba; stran masovno rdece precrtana; F-PV-07 potrjena (vrednosti ze v klafter)"
+  },
+  {
+   "index": 127,
+   "page": 9,
+   "row_in_page": 4,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "168",
+   "new": "668",
+   "note": "POPRAVEK 168->668"
+  },
+  {
+   "index": 128,
+   "page": 9,
+   "row_in_page": 5,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1429",
+   "new": "1439",
+   "note": "POPRAVEK 1429->1439 (tretja 3)"
+  },
+  {
+   "index": 138,
+   "page": 9,
+   "row_in_page": 15,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "434",
+   "new": "454",
+   "note": "POPRAVEK 434->454 (srednja 5)"
+  },
+  {
+   "index": 142,
+   "page": 9,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "2111",
+   "new": "971",
+   "note": "POPRAVEK 2111->971"
+  },
+  {
+   "page": 9,
+   "type": "page_observations_v112",
+   "text": "v112: 4 vrednostni popravki (668/1439/454/971); Furtrag crno 6|471 (R) -> rdece 6|265; r16 jae 1 legitimen (N.o Joche)"
+  },
+  {
+   "index": 143,
+   "page": 10,
+   "row_in_page": 0,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "10.92",
+   "new": "1092",
+   "note": "NORMALIZACIJA '10.92'->'1092' (mogoce '10|92' J|QK — ni doma, opomba)"
+  },
+  {
+   "index": 145,
+   "page": 10,
+   "row_in_page": 2,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "237",
+   "new": "247",
+   "note": "POPRAVEK 237->247"
+  },
+  {
+   "index": 146,
+   "page": 10,
+   "row_in_page": 3,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "469",
+   "new": "429",
+   "note": "POPRAVEK 469->429"
+  },
+  {
+   "index": 147,
+   "page": 10,
+   "row_in_page": 4,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "507",
+   "new": "501",
+   "note": "POPRAVEK 507->501"
+  },
+  {
+   "index": 148,
+   "page": 10,
+   "row_in_page": 5,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1118",
+   "new": "1148",
+   "note": "POPRAVEK 1118->1148"
+  },
+  {
+   "index": 149,
+   "page": 10,
+   "row_in_page": 6,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "928",
+   "new": "228",
+   "note": "POPRAVEK 928->228"
+  },
+  {
+   "index": 150,
+   "page": 10,
+   "row_in_page": 7,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "227",
+   "new": "221",
+   "note": "POPRAVEK 227->221"
+  },
+  {
+   "index": 151,
+   "page": 10,
+   "row_in_page": 8,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "447",
+   "new": "467",
+   "note": "POPRAVEK 447->467"
+  },
+  {
+   "index": 153,
+   "page": 10,
+   "row_in_page": 10,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "273",
+   "new": "313",
+   "note": "POPRAVEK 273->313"
+  },
+  {
+   "index": 155,
+   "page": 10,
+   "row_in_page": 12,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "62",
+   "new": "49",
+   "note": "POPRAVEK 62->49"
+  },
+  {
+   "index": 157,
+   "page": 10,
+   "row_in_page": 14,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "89",
+   "new": "29",
+   "note": "POPRAVEK 89->29"
+  },
+  {
+   "index": 159,
+   "page": 10,
+   "row_in_page": 16,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "239",
+   "new": "289",
+   "note": "POPRAVEK 239->289"
+  },
+  {
+   "index": 161,
+   "page": 10,
+   "row_in_page": 18,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1017",
+   "new": "1038",
+   "note": "POPRAVEK 1017->1038"
+  },
+  {
+   "index": 162,
+   "page": 10,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "92",
+   "new": "262",
+   "note": "POPRAVEK 92->262; ertrag ostane efl 3 / ekr 49/10 (ulomek neberljiv); svinenik '3|49[?]' v E. coni"
+  },
+  {
+   "index": 162,
+   "page": 10,
+   "type": "anmerkung_add",
+   "text": "[svinenik '3|49[?]' (ulomek neberljiv) v E. coni — val 112]"
+  },
+  {
+   "page": 10,
+   "type": "page_observations_v112",
+   "text": "v112: 14 vrednostnih popravkov + r0 normalizacija '10.92'->'1092' (mogoce 10|92 J|QK — ni doma); Furtrag crno 4|803 (R) -> rdece 1|408 (R) -> rdece 1|209"
+  },
+  {
+   "index": 167,
+   "page": 11,
+   "row_in_page": 4,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "207",
+   "new": "201",
+   "note": "POPRAVEK 207->201"
+  },
+  {
+   "index": 170,
+   "page": 11,
+   "row_in_page": 7,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "42",
+   "new": "40",
+   "note": "POPRAVEK 42->40"
+  },
+  {
+   "index": 178,
+   "page": 11,
+   "row_in_page": 15,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "352",
+   "new": "382",
+   "note": "POPRAVEK 352->382"
+  },
+  {
+   "index": 180,
+   "page": 11,
+   "row_in_page": 17,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "76",
+   "new": "78",
+   "note": "POPRAVEK 76->78"
+  },
+  {
+   "index": 182,
+   "page": 11,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "715",
+   "new": "115",
+   "note": "POPRAVEK 715->115"
+  },
+  {
+   "index": 183,
+   "page": 11,
+   "row_in_page": 20,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "247",
+   "new": "211",
+   "note": "POPRAVEK 247->211"
+  },
+  {
+   "index": 184,
+   "page": 11,
+   "row_in_page": 21,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1853",
+   "new": "185",
+   "note": "POPRAVEK 1853->185"
+  },
+  {
+   "index": 181,
+   "page": 11,
+   "type": "anmerkung_add",
+   "text": "[zadnja stevka 1/4 — nizka locljivost — val 112]"
+  },
+  {
+   "index": 184,
+   "page": 11,
+   "type": "anmerkung_add",
+   "text": "[svinenik '2|777[?]' ob vrstici — val 112]"
+  },
+  {
+   "index": 185,
+   "page": 11,
+   "type": "anmerkung_add",
+   "text": "[FANTOMSKA vrstica: na strani ne obstaja (22 vnosnih + Furtrag); Furtrag '9 Furtrag 2|798' (R) + rdeca '81[?]' — val 112]"
+  },
+  {
+   "page": 11,
+   "type": "page_observations_v112",
+   "text": "v112: 7 vrednostnih popravkov + r22 fantom; sistemski kultur dvom r0-r8 (Lehnguart und Obft / Liegend.Baul. / Schindel.Wald) — kultur pass odlozen val 113"
+  },
+  {
+   "index": 214,
+   "page": 13,
+   "row_in_page": 8,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "272",
+   "new": "273",
+   "note": "POPRAVEK 272->273"
+  },
+  {
+   "index": 221,
+   "page": 13,
+   "row_in_page": 15,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "94",
+   "new": "34",
+   "note": "POPRAVEK 94->34"
+  },
+  {
+   "page": 13,
+   "type": "page_observations_v112",
+   "text": "v112: 2 vrednostna popravka (273/34) — najcistejsa stran; Furtrag 4|451 brez rdece revizije"
+  },
+  {
+   "index": 227,
+   "page": 14,
+   "row_in_page": 1,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "602",
+   "new": "402",
+   "note": "POPRAVEK 602->402"
+  },
+  {
+   "index": 228,
+   "page": 14,
+   "row_in_page": 2,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "432",
+   "new": "433",
+   "note": "POPRAVEK 432->433"
+  },
+  {
+   "index": 231,
+   "page": 14,
+   "row_in_page": 5,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "467",
+   "new": "469",
+   "note": "POPRAVEK 467->469"
+  },
+  {
+   "index": 232,
+   "page": 14,
+   "row_in_page": 6,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "349",
+   "new": "549",
+   "note": "POPRAVEK 349->549"
+  },
+  {
+   "index": 233,
+   "page": 14,
+   "row_in_page": 7,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "464",
+   "new": "961",
+   "note": "POPRAVEK 464->961"
+  },
+  {
+   "index": 234,
+   "page": 14,
+   "row_in_page": 8,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "462",
+   "new": "443",
+   "note": "POPRAVEK 462->443"
+  },
+  {
+   "index": 235,
+   "page": 14,
+   "row_in_page": 9,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "638",
+   "new": "438",
+   "note": "POPRAVEK 638->438"
+  },
+  {
+   "index": 238,
+   "page": 14,
+   "row_in_page": 12,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "246",
+   "new": "266",
+   "note": "POPRAVEK 246->266"
+  },
+  {
+   "index": 240,
+   "page": 14,
+   "row_in_page": 14,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "281",
+   "new": "251",
+   "note": "POPRAVEK 281->251"
+  },
+  {
+   "index": 242,
+   "page": 14,
+   "row_in_page": 16,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "101",
+   "new": "401",
+   "note": "POPRAVEK 101->401"
+  },
+  {
+   "index": 243,
+   "page": 14,
+   "row_in_page": 17,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1000",
+   "new": "290",
+   "note": "POPRAVEK 1000->290"
+  },
+  {
+   "index": 244,
+   "page": 14,
+   "row_in_page": 18,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "276",
+   "new": "278",
+   "note": "POPRAVEK 276->278"
+  },
+  {
+   "index": 245,
+   "page": 14,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "828",
+   "new": "425",
+   "note": "POPRAVEK 828->425"
+  },
+  {
+   "page": 14,
+   "type": "page_observations_v112",
+   "text": "v112: 13 vrednostnih popravkov (r17 1000->290!); Furtrag crno 6|1008 (R) -> rdece 6|77"
+  },
+  {
+   "index": 247,
+   "page": 15,
+   "row_in_page": 1,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1427",
+   "new": "1407",
+   "note": "POPRAVEK 1427->1407"
+  },
+  {
+   "index": 249,
+   "page": 15,
+   "row_in_page": 3,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "28",
+   "new": "54",
+   "note": "POPRAVEK 28->54"
+  },
+  {
+   "index": 250,
+   "page": 15,
+   "row_in_page": 4,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "681",
+   "new": "661",
+   "note": "POPRAVEK 681->661"
+  },
+  {
+   "index": 254,
+   "page": 15,
+   "row_in_page": 8,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "692",
+   "new": "682",
+   "note": "POPRAVEK 692->682"
+  },
+  {
+   "index": 255,
+   "page": 15,
+   "row_in_page": 9,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "575",
+   "new": "573",
+   "note": "POPRAVEK 575->573"
+  },
+  {
+   "index": 256,
+   "page": 15,
+   "row_in_page": 10,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "706",
+   "new": "704",
+   "note": "POPRAVEK 706->704"
+  },
+  {
+   "index": 259,
+   "page": 15,
+   "row_in_page": 13,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "166",
+   "new": "468",
+   "note": "POPRAVEK 166->468"
+  },
+  {
+   "index": 260,
+   "page": 15,
+   "row_in_page": 14,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "424",
+   "new": "434",
+   "note": "POPRAVEK 424->434"
+  },
+  {
+   "index": 261,
+   "page": 15,
+   "row_in_page": 15,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "413",
+   "new": "412",
+   "note": "POPRAVEK 413->412"
+  },
+  {
+   "index": 262,
+   "page": 15,
+   "row_in_page": 16,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "498",
+   "new": "494",
+   "note": "POPRAVEK 498->494"
+  },
+  {
+   "index": 263,
+   "page": 15,
+   "row_in_page": 17,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "481",
+   "new": "451",
+   "note": "POPRAVEK 481->451"
+  },
+  {
+   "index": 265,
+   "page": 15,
+   "row_in_page": 19,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "30",
+   "new": "50",
+   "note": "POPRAVEK 30->50"
+  },
+  {
+   "page": 15,
+   "type": "page_observations_v112",
+   "text": "v112: 12 vrednostnih popravkov; r12 jae 1 / kla prazno potrjeno; Furtrag '7[?]|1288' (format neujemljiv z vsoto — opomba)"
+  },
+  {
+   "index": 266,
+   "page": 16,
+   "row_in_page": 0,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "622",
+   "new": "612",
+   "note": "POPRAVEK 622->612"
+  },
+  {
+   "index": 270,
+   "page": 16,
+   "row_in_page": 4,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "878",
+   "new": "873",
+   "note": "POPRAVEK 878->873"
+  },
+  {
+   "index": 271,
+   "page": 16,
+   "row_in_page": 5,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "42",
+   "new": "92",
+   "note": "POPRAVEK 42->92"
+  },
+  {
+   "index": 276,
+   "page": 16,
+   "row_in_page": 10,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "891",
+   "new": "491",
+   "note": "POPRAVEK 891->491"
+  },
+  {
+   "index": 280,
+   "page": 16,
+   "row_in_page": 14,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "1852",
+   "new": "482",
+   "note": "POPRAVEK 1852->482"
+  },
+  {
+   "index": 283,
+   "page": 16,
+   "row_in_page": 17,
+   "type": "v112_value_fix",
+   "field": "klafter",
+   "old": "856",
+   "new": "556",
+   "note": "POPRAVEK 856->556"
+  },
+  {
+   "page": 16,
+   "type": "page_observations_v112",
+   "text": "v112: 6 vrednostnih popravkov (r14 1852->482); Furtrag 5|811"
+  }
+ ]
+}

@@ -133,8 +133,16 @@ describe("val 111 — iskrenost + audit trail", () => {
     expect(reading.meta.zoom_log.join(" ")).toMatch(/x10|x12|×10|×12/);
   });
 
-  test("imenski pass odložen: p3 lastniki ostajajo prazni (nič ugibanja, §4)", () => {
-    for (const r of p3) expect(r.owner_original ?? "").toBe("");
+  test("imenski pass opravljen v val 112: p3 lastniki zapolnjeni z [?] dvomi (nič ugibanja brez oznake, §4)", () => {
+    // val 111 je imenski pass odložil (lastniki prazni); val 112 ga je opravil —
+    // vse imena nosijo eksplicitni [?] dvom, r19 = Gemeinde, r0/r16 brez imena
+    const filled = p3.filter((r) => (r.owner_original ?? "").length > 0);
+    expect(filled.length).toBe(19); // 21 vrstic − r0 (prečrtana) − r16 (fantom)
+    for (const r of filled) {
+      if ((r.owner_original ?? "") !== "Gemeinde") {
+        expect(r.owner_original).toMatch(/\[\?\]/); // vsak dvom ekspliciten
+      }
+    }
   });
 
   test("p142-t-kultur2 regeneracijsko orodje obstaja (resumable ob kvoti)", () => {

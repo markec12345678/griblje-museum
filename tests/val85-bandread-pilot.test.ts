@@ -242,8 +242,8 @@ describe("val 85 — poštenost §4 + §22 (nič ne beži v runtime)", () => {
     expect(register.filter((r) => r.reading_pass === "v86-colonial-tiles")).toHaveLength(1755); // val 98: 1109 → val 107: 1755
   });
 
-  test("KG v2.4 (val 108 kaskada): sha 9f856d28… + metapodatki", () => {
-    expect(kgSha.startsWith("9f856d28")).toBe(true); // val 107 KG v2.3 (§22 kaskada) — val 89 je bil v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad)
+  test("KG v2.4 (val 112 kaskada): sha e574df03… + metapodatki", () => {
+    expect(kgSha.startsWith("e574df03")).toBe(true); // val 112 KG (§22 kaskada) — val 108 je bil v2.4 (9f856d28), val 89 v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad)
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as { val: number; title: string };
     expect(kg.val).toBe(108); // val 107: 86b del 3 — tile 3. glas p110–141
     expect(kg.title).toBe("knowledge-graph-1825 v2.4");

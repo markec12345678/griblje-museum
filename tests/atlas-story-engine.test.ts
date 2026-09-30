@@ -198,14 +198,14 @@ describe("generateEntityStory — vsebina (§16/§17)", () => {
     expect(mo!.text).toContain("A01");
   });
 
-  test("žive parcele: H-040 ima 121 povezanih parcel — seznam capped, raba delno dokumentirana (9 iz PS)", () => {
+  test("žive parcele: H-040 ima 120 povezanih parcel — seznam capped, raba delno dokumentirana (val 112: F-PV-07 p5/p7/p12)", () => {
     const parcele = story.sections.find((s) => s.title === "Parcele in raba zemljišča");
     expect(parcele).toBeDefined();
     expect(parcele!.items.length).toBeGreaterThan(1);
     const landUse = parcele!.items.find((i) => i.text.includes("Raba zemljišča"));
     expect(landUse).toBeDefined();
-    // 8 od 123 parcel ima dokumentirano rabo (PS prepis 143/143, val 89→107: F-PV-05 del 3) — preostale izrecno NEZNANE
-    expect(landUse!.text).toContain("9 od 123");
+    // 6 od 120 parcel ima dokumentirano rabo (PS prepis 143/143; val 112: F-PV-07 premestitve p5/p7/p12 zmanjšale PS projekcijo) — preostale izrecno NEZNANE
+    expect(landUse!.text).toContain("6 od 120");
     expect(landUse!.tier).toBe("NEZNANO");
     expect(landUse!.source_ids).toContain("SRC-PV");
     // parcele z dokumentirano rabo jo nosijo v besedilu (claim-first sledljivost);
@@ -282,11 +282,11 @@ describe("generateVillageStory (§18)", () => {
     expect(story.sections[9].title).toContain("Neznanke");
   });
 
-  test("številke prihajajo iz grafa: 167 hiš, 488 oseb, 2770 parcel, 34 objektov, 5 listov (val 108)", () => {
+  test("številke prihajajo iz grafa: 167 hiš, 488 oseb, 2711 parcel, 34 objektov, 5 listov (val 112)", () => {
     const allText = story.sections.flatMap((s) => s.items.map((i) => i.text)).join(" ");
     expect(allText).toContain("167 hiš");
     expect(allText).toContain("488 oseb");
-    expect(allText).toContain("2770 parcel");
+    expect(allText).toContain("2711 parcel");
     expect(allText).toContain("34 MAP_OBJECT");
     const listi = story.sections[1].items;
     expect(listi.length).toBe(5);
@@ -295,18 +295,18 @@ describe("generateVillageStory (§18)", () => {
   test("§18.6: raba zemljišča — dokumentirano ločeno od neznanega (nič ugibanja, §9)", () => {
     const raba = story.sections.find((s) => s.title.includes("Raba zemljišča"));
     expect(raba).toBeDefined();
-    // dokumentirani del (PS prepis 143/143, val 89→107): 438 parcel z znano rabo
-    const documented = raba!.items.find((i) => i.text.includes("dokumentirana za 438"));
+    // dokumentirani del (PS prepis 143/143, val 89→112): 391 parcel z znano rabo
+    const documented = raba!.items.find((i) => i.text.includes("dokumentirana za 391"));
     expect(documented).toBeDefined();
     expect(documented!.tier).toBe("DOKAZANO");
     expect(documented!.source_ids).toContain("SRC-PS");
     expect(documented!.text).toContain("njiva");
-    // neznani del: 2332 parcel brez per-parcelnega zapisa (vključno 221 UNKNOWN iz PS; val 108: 2472→2376→2332, PS 779→735)
+    // neznani del: 2320 parcel brez per-parcelnega zapisa (vključno 209 UNKNOWN iz PS; val 112: 2472→2376→2332→2320, PS 779→735→676)
     const unknown = raba!.items.find((i) => i.text.includes("NI še dokumentirana po parceli"));
     expect(unknown).toBeDefined();
     expect(unknown!.tier).toBe("NEZNANO");
     expect(unknown!.source_ids).toContain("SRC-PV");
-    expect(unknown!.text).toContain("2332");
+    expect(unknown!.text).toContain("2320");
     // PV prepisan (val 74): agregatne površine v besedilu, NI per-parcelnega ugibanja
     expect(unknown!.text).toContain("1221 J 1573 K");
     expect(unknown!.text).toContain("val 74");

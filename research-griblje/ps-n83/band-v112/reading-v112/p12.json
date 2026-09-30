@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "val": 112,
+    "scope": "p12 re-read: F-PV-07 premestitve (19x jaethe->klafter) + vrednostni audit; imenski pass = val 113",
+    "method": "agentov direktni vid: stacked zuomi ×5; 0 VLM klicev",
+    "source": "raw-web-val56-2026-10/n083ps-pages/p12.jpg",
+    "row_bands_y": "r0 160-200, r1 200-239, r2 239-278, r3 278-316, r4 316-353, r5 353-393, r6 393-431, r7 431-468, r8 468-508, r9 508-547, r10 547-585, r11 585-624, r12 624-663, r13 663-701, r14 701-739, r15 739-777, r16 777-815, r17 815-854, r18 854-892, r19 892-929 + Fürtrag",
+    "findings_structural": [
+      "F-PV-07 POTRJENA NA p12: vse vrednosti v QK podstolpcu — 19 premestitev (r19 prazen).",
+      "RDECE PRECRTE: r0 (delna, zgoraj), r1 554RS, r2 496RS[?], r13 360RS, r15 650RS — register v57 = branja precrtanih (r1/r15 soglasje, r2 494 vs vid 496, r13 260 vs vid 360). Nic popravkov (revizijski kontekst).",
+      "SOGLASJA (necrtano): r3 470, r5 396, r6 135, r7 279, r9 305, r10 311, r11 628, r12 868, r14 359 — register v57 vrednosti potrjene.",
+      "DVOUMNA RAZHAJANJA (nic popravkov): r4 vid '364/384[?]' vs register 376; r8 vid '314[?]' vs 376?? — register 374 (1/7 dvom); r16-r19 REP STRANI: vid [126?[r16], 78[r17], 82?[r18], 65[r19]] vs register [78, 82, 65, ''] — MOZEN VAL 57 POMIK +1 v repu (register r16-r18 = page r17-r19; register r19 = Furtrag-vrstica brez vrednosti) ALI napaka pasovne preslikave (manjkajoca crta ~815) — ODPRTA dilema, dokumentirano, nic popravkov.",
+      "r19 register ('Poldi Gnoy', brez vrednosti) = verjetno Furtrag-vrstica artefakt (cf. p7 r20) — ni popravka brez jasnega vida Furtrag pasu (odlozeno val 113 z imenskim passom)."
+    ]
+  },
+  "register_actions_planned": [
+    "F-PV-07: 19x premestitev jaethe->klafter + anmerkung marker",
+    "anmerkung add-only: 5 precrtanih vrednosti, dvomni r4/r8, rep-strani pomik-dilema r16-r19"
+  ]
+}
