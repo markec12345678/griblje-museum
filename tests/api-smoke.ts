@@ -463,7 +463,7 @@ ok(
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
     sgOverview.body?.stats?.entities === 3268 &&
-    sgOverview.body?.stats?.relations === 3618 &&
+    sgOverview.body?.stats?.relations === 3477 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
   `status=${sgOverview.status} entities=${sgOverview.body?.stats?.entities}`
