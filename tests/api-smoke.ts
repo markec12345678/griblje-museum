@@ -459,10 +459,10 @@ ok(
 /* --- 5i. /api/atlas/story-graph — PASS 6 pripovedni graf (val 68, #42 §21) --- */
 const sgOverview = await getJson("/api/atlas/story-graph");
 ok(
-  "atlas story-graph: pregled — 3.656 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 107)",
+  "atlas story-graph: pregled — 3.612 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 108)",
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
-    sgOverview.body?.stats?.entities === 3656 &&
+    sgOverview.body?.stats?.entities === 3612 &&
     sgOverview.body?.stats?.relations === 3795 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
@@ -774,7 +774,7 @@ const p201 = (parcels73.body?.features ?? []).find(
 ok(
   "atlas map parcels: register brez geometrije (§9) + obratni indeks HAS_PARCEL + sledljivost",
   parcels73.status === 200 &&
-    parcels73.body?.count === 2814 &&
+    parcels73.body?.count === 2770 &&
     typeof p73f?.node_id === "string" &&
     p73f?.node_id?.startsWith("PARCEL:") === true &&
     p73f !== undefined && !("px" in p73f) && !("lat" in p73f) && !("lng" in p73f) &&
