@@ -756,14 +756,14 @@ ok(
 /* --- 5o. /api/atlas/map?layer=parcels — parcelni sloj rabe (val 73, #42 §19) --- */
 const mapAll73 = await getJson("/api/atlas/map");
 ok(
-  "atlas map: counts.parcels = 2612 z razčlenjeno rabo (292 dokumentiranih / 209 neznanih / 2111 brez zapisa) — projekcija 143/143 + F-PV-05/07 korekcije (val 98: 930→898 + val 107: 898→779 + val 108: 779→735 + val 112: 735→676 + val 113: 676→577)",
+  "atlas map: counts.parcels = 2426 z razčlenjeno rabo (173 dokumentiranih / 142 neznanih / 2111 brez zapisa) — projekcija 143/143 + F-PV-05/07 korekcije (val 98: 930→898 + val 107: 898→779 + val 108: 779→735 + val 112: 735→676 + val 113: 676→577 + val 114: 577→391)",
   mapAll73.status === 200 &&
-    mapAll73.body?.counts?.parcels === 2612 &&
-    mapAll73.body?.counts?.parcels_with_land_use === 292 &&
-    mapAll73.body?.counts?.parcels_land_use_unknown === 209 &&
+    mapAll73.body?.counts?.parcels === 2426 &&
+    mapAll73.body?.counts?.parcels_with_land_use === 173 &&
+    mapAll73.body?.counts?.parcels_land_use_unknown === 142 &&
     mapAll73.body?.counts?.parcels_no_land_use_record === 2111 &&
     Array.isArray(mapAll73.body?.layers?.parcels) &&
-    mapAll73.body?.layers?.parcels?.length === 2612,
+    mapAll73.body?.layers?.parcels?.length === 2426,
   `status=${mapAll73.status} parcels=${mapAll73.body?.counts?.parcels}`
 );
 const parcels73 = await getJson("/api/atlas/map?layer=parcels");
@@ -774,7 +774,7 @@ const p201 = (parcels73.body?.features ?? []).find(
 ok(
   "atlas map parcels: register brez geometrije (§9) + obratni indeks HAS_PARCEL + sledljivost",
   parcels73.status === 200 &&
-    parcels73.body?.count === 2612 &&
+    parcels73.body?.count === 2426 &&
     typeof p73f?.node_id === "string" &&
     p73f?.node_id?.startsWith("PARCEL:") === true &&
     p73f !== undefined && !("px" in p73f) && !("lat" in p73f) && !("lng" in p73f) &&
