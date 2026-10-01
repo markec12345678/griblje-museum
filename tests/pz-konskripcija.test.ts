@@ -175,10 +175,10 @@ const kg = kgRaw as unknown as {
   findings: { finding_id: string; val: number; status: string }[];
 };
 
-describe("val 109 — PZ PASS 8 dokumentna resnica [373419]", () => {
-  test("meta: uodid 373419 / docid 41784 / 71 strani / val 109 PASS 8", () => {
-    expect(pz.val).toBe(109);
-    expect(pz.pass).toContain("PASS 8");
+describe("val 109/117 — PZ PASS 8/8b dokumentna resnica [373419]", () => {
+  test("meta: uodid 373419 / docid 41784 / 71 strani / val 117 PASS 8b (mikroprehod 8b)", () => {
+    expect(pz.val).toBe(117);
+    expect(pz.pass).toContain("PASS 8b");
     expect(pz.provenance.uodid).toBe(373419);
     expect(pz.provenance.docid).toBe(41784);
     expect(pz.provenance.pages).toBe(71);
@@ -418,7 +418,7 @@ describe("val 109 — PZ PASS 8 dokumentna resnica [373419]", () => {
 
   test("najdbe: 20; nove F-PZ-18..20 (val 109) z iskrenimi statusi", () => {
     const byId = new Map(pz.findings.map((f) => [f.id, f]));
-    expect(pz.findings).toHaveLength(20);
+    expect(pz.findings).toHaveLength(22); // val 117: F-PZ-21/22
     expect(byId.get("F-PZ-01")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-02")!.status).toBe("RESOLVED");
     expect(byId.get("F-PZ-06")!.status).toBe("RESOLVED");
@@ -664,7 +664,7 @@ describe("val 79 — Rektifikacija p35–42 OPISNO-KVALITATIVNA (F-PZ-16)", () =
     expect(f17.detail).toContain("~150 dpi");
     expect(f17.detail).toContain("IZČRPANE");
     // findings 20 (F-PZ-01..20; val 109 doda F-PZ-18..20)
-    expect(pz.findings).toHaveLength(20);
+    expect(pz.findings).toHaveLength(22); // val 117: F-PZ-21/22
     // F-PZ-04: vse tri poti dokumentirane
     const f04 = pz.findings.find((f) => f.id === "F-PZ-04")!;
     expect(f04.detail).toContain("F-PZ-17");

@@ -1,199 +1,225 @@
 {
- "built": "val 54 (faza 2 usklajevanja — naročilo: najprej pobrati, potem usklajevati)",
- "method": "PT STABLE (40) klasificirani proti PUA (94 vpisov); 11 zemljevidnih vezav reviziranih proti PUA opombam + PT val53; nič ugibanja",
- "headline_findings": [
-  "F1 SISTEMSKO: PT lastniška imena NEZANESLJIVA (isti bp med prehodi dobi 3-4 različna imena: bp 82-84 = Hunziker Marcel / Hraupf Georg / Hans Georg / Krauß Georg) — slaba kakovost skena; PUA = edina lastniška avtoriteta; PT uporaben LEKO strukturno (bp↔h)",
-  "F2 POMIK VRSTIC: p7-rep zoom branja ima +1 pomik vrstic (90-97); večinski glasovi (val41+val52+PUA opombe) razrešijo",
-  "F3 ZEMLJEVID bp 98 NEPODPRTO: opomba 'B.P. 98' ne obstaja — no. 7 (h.70, Grübler Maria Leutnerin) ima 'B.P. 90.', Zollamt (no. 95) brez opombe, PT bp 98 = h.20/39/50; verjetna zmeda 90↔98 pri val 52; popravek v zemljevid (VERIFIED-2x → REVIEW-CONFLICT)",
-  "F4 KURRENT 3↔5: PT 46/48→'h.63' 2× STABLE, a PUA opomba h.65='B.P. 46. 48.' + zoom 47→65 → 63 je verjetno napačno branje 65",
-  "F5 KURRENT 2↔3: PUA h.29 opomba 'B.P. 95. 97.' vs PT 95→h.39/40, 97→h.35/38 — 29↔39 dvom",
-  "F6 bp 76 KONFLIKT: PT 76→h.51 (2× STABLE) vs PUA opomba h.28 vključuje '76.' — zemljevid spuščen na REVIEW-CONFLICT",
-  "F7 bp 86 ŠIBKO: opomba 'b. P. 56. 38.' ne vsebuje 86; PT 86→h.37 konflikt → REVIEW-CONFLICT",
-  "F8 NAJMOČNEJŠA VEZ: bp 94→h.40 = 3 neodvisni viri (val41+52+53) + PUA no. 38 → nadgrajena na VERIFIED-2x"
- ],
- "pt_stable_vs_pua": {
-  "n": 40,
-  "name_match": 0,
-  "name_mismatch": 39,
-  "owner_empty": 1,
-  "interpretation": "0/39 imenskih soglasij = sistemski dokaz F1 (imena neuporabna za korooboracijo); strukturne povezave bp→h ostajajo veljavne neodvisno od imen"
- },
- "map_links_audit": [
-  {
-   "bp": "46",
-   "owner": "Widhann Georg (h.65)",
-   "verdict": "OK",
-   "evidence": "PUA no. 40 opomba 'B. P. 46. 48.' (p21); PT 63≈65 Kurrent"
+  "built": "val 54 (faza 2 usklajevanja — naročilo: najprej pobrati, potem usklajevati)",
+  "method": "PT STABLE (40) klasificirani proti PUA (94 vpisov); 11 zemljevidnih vezav reviziranih proti PUA opombam + PT val53; nič ugibanja",
+  "headline_findings": [
+    "F1 SISTEMSKO: PT lastniška imena NEZANESLJIVA (isti bp med prehodi dobi 3-4 različna imena: bp 82-84 = Hunziker Marcel / Hraupf Georg / Hans Georg / Krauß Georg) — slaba kakovost skena; PUA = edina lastniška avtoriteta; PT uporaben LEKO strukturno (bp↔h)",
+    "F2 POMIK VRSTIC: p7-rep zoom branja ima +1 pomik vrstic (90-97); večinski glasovi (val41+val52+PUA opombe) razrešijo",
+    "F3 ZEMLJEVID bp 98 NEPODPRTO: opomba 'B.P. 98' ne obstaja — no. 7 (h.70, Grübler Maria Leutnerin) ima 'B.P. 90.', Zollamt (no. 95) brez opombe, PT bp 98 = h.20/39/50; verjetna zmeda 90↔98 pri val 52; popravek v zemljevid (VERIFIED-2x → REVIEW-CONFLICT)",
+    "F4 KURRENT 3↔5: PT 46/48→'h.63' 2× STABLE, a PUA opomba h.65='B.P. 46. 48.' + zoom 47→65 → 63 je verjetno napačno branje 65",
+    "F5 KURRENT 2↔3: PUA h.29 opomba 'B.P. 95. 97.' vs PT 95→h.39/40, 97→h.35/38 — 29↔39 dvom",
+    "F6 bp 76 KONFLIKT: PT 76→h.51 (2× STABLE) vs PUA opomba h.28 vključuje '76.' — zemljevid spuščen na REVIEW-CONFLICT",
+    "F7 bp 86 ŠIBKO: opomba 'b. P. 56. 38.' ne vsebuje 86; PT 86→h.37 konflikt → REVIEW-CONFLICT",
+    "F8 NAJMOČNEJŠA VEZ: bp 94→h.40 = 3 neodvisni viri (val41+52+53) + PUA no. 38 → nadgrajena na VERIFIED-2x"
+  ],
+  "pt_stable_vs_pua": {
+    "n": 40,
+    "name_match": 0,
+    "name_mismatch": 39,
+    "owner_empty": 1,
+    "interpretation": "0/39 imenskih soglasij = sistemski dokaz F1 (imena neuporabna za korooboracijo); strukturne povezave bp→h ostajajo veljavne neodvisno od imen"
   },
-  {
-   "bp": "49",
-   "owner": "Widhann Georg (h.66)",
-   "verdict": "OK — popravljen pageRef 6→21",
-   "evidence": "PUA no. 41 opomba 'B. P. 49. 50.' (p21); PT 49→h61/62 konflikt (1↔6)"
+  "map_links_audit": [
+    {
+      "bp": "46",
+      "owner": "Widhann Georg (h.65)",
+      "verdict": "OK",
+      "evidence": "PUA no. 40 opomba 'B. P. 46. 48.' (p21); PT 63≈65 Kurrent"
+    },
+    {
+      "bp": "49",
+      "owner": "Widhann Georg (h.66)",
+      "verdict": "OK — popravljen pageRef 6→21",
+      "evidence": "PUA no. 41 opomba 'B. P. 49. 50.' (p21); PT 49→h61/62 konflikt (1↔6)"
+    },
+    {
+      "bp": "73",
+      "owner": "Penzig (h.60)",
+      "verdict": "OK (REVIEW-CONFLICT obstoječi)",
+      "evidence": "PUA no. 61 'B.P. 73.' (p31); PT 74→h.60 STABLE — sosednja vrstica, 73/74 dvom"
+    },
+    {
+      "bp": "76",
+      "owner": "Brincz Maria (h.28)",
+      "verdict": "SPUŠČEN na REVIEW-CONFLICT",
+      "evidence": "opomba h.28 vključuje '76.', a PT 76→h.51 2× STABLE"
+    },
+    {
+      "bp": "85",
+      "owner": "Krischan Peter (h.37)",
+      "verdict": "OK",
+      "evidence": "PT dual (41+52: 37) + PUA no. 36 opomba 'P.P. 85.' (B↔P); PT 53: 45/37 konflikt"
+    },
+    {
+      "bp": "86",
+      "owner": "Krischan Marla (h.36)",
+      "verdict": "SPUŠČEN na REVIEW-CONFLICT",
+      "evidence": "opomba 'b. P. 56. 38.' ne vsebuje 86; PT 86→h.37"
+    },
+    {
+      "bp": "89",
+      "owner": "Husitsch Maria (h.44)",
+      "verdict": "OK (REVIEW)",
+      "evidence": "PT dual 87/89/91→h.44; PUA no. 19 h.44 (p11)"
+    },
+    {
+      "bp": "92",
+      "owner": "Pöchinger Georg (h.41)",
+      "verdict": "SPUŠČEN na REVIEW",
+      "evidence": "PT dual 41 + zoom 44 (pomik); PUA opomba nečitljiva '19. Pp.'"
+    },
+    {
+      "bp": "93",
+      "owner": "Sautter (h.40)",
+      "verdict": "OK (REVIEW)",
+      "evidence": "PT dual 40 + PUA no. 38; zoom 41 (pomik)"
+    },
+    {
+      "bp": "94",
+      "owner": "Sautter (h.40)",
+      "verdict": "NADGRAJEN na VERIFIED-2x",
+      "evidence": "3 viri (41+52+53 obe) + PUA no. 38"
+    },
+    {
+      "bp": "98",
+      "owner": "k.k. Zollamt",
+      "verdict": "NEPODPRTO — SPUŠČEN na REVIEW-CONFLICT",
+      "evidence": "noben vir ne veže Zollamt na bp 98; no. 7 'B.P. 90.'; verjetna zmeda 90↔98 (val 52)"
+    }
+  ],
+  "open_for_full_res": [
+    "PUA p6 (no. 7 'B.P. 90.') in p47 (Zollamt no. 95) — reši bp 90/98 vprašanje",
+    "PT p5 vrstice 46-48 (h.63 vs 65) in 76 (h.51 vs 28)",
+    "PT p4 vrstice 24/25 (h.1) vs PUA h.1 opomba 'B.P. ca. 10'",
+    "PUA p18 (no. 35 'b. P. 56. 38.') — bp 86 povezava",
+    "PUA p30 (no. 59 '19. Pp.') — bp 92 povezava",
+    "PT p7 rep 90-100 — RESOLVED-V110 (nativni re-read val 110; VLM 3. glas resumable ob kvoti) → REŠENO-delno-v117 (areal pomik +1 r6–r18 vgrajen; r1 kolizija + vsotna REVIEW; imena F1 politika)"
+  ],
+  "val56": {
+    "date": "2026-09-25",
+    "trigger": "VAČ preseljen arhiv.si (NXDOMAIN) → vac.sjas.gov.si; vse končne ločljivosti dostopne",
+    "method": "PDF-native ekstrakcija (pymupdf) iz N083PUA.pdf (6.9 MB, 49 str.) + N083PT.pdf (2.9 MB, 8 str.); pasovni izrezi 300 dpi; 2 neodvisna branja za sporne točke (z-ai vision, serial+backoff)",
+    "readings": {
+      "PUA_p47_no95_Zollamt": {
+        "native": "95 | III | h.70 | Zollamt k.k. Merial/Merarial in Gräbln | (nadaljevalna vrstica) B.P. 98.",
+        "band_A": "95 | 70 | Zollamt S.S. Merarial in Gräbln | B.P. 98. (dno pasu)",
+        "band_B": "(samo) B. P. 98.",
+        "verdict": "2× branja strinjajo: Zollamt (no. 95) @ h.70 z opombo B.P. 98. — STARE branje (val 52/54: 'brez opombe') je bilo napačno (opomba v nadaljevalni vrstici vpisa je bila izpuščena pri 667px)"
+      },
+      "PUA_p6_no7": {
+        "native_1": "7 | h.43 | Brulla Maria Laura von Grubla | B.P. 90",
+        "native_2": "neusklajeno (pomik vrstic: 6/7/8 → h.43/h.63/h.0)",
+        "band_A": "vpis z h.43 (Brulla Mäds Buunhausgütl) s končnico B.P. 90. + parcelni seznami I/II/III/IV",
+        "band_B": "no. 8 h.63 Bringmann Lorenz 'B.P. go.' [verjetno 90]; no. 9 Commenda Tschornembl 'B.P. 31. 32.'",
+        "verdict": "opomba 'B.P. 90.' zagotovo obstaja na p6 (3. potrditev), vezava na Nro. 7 vs 8 OSTAJA NEUSKLAJENA (pomik vrstic med prehodi) → bp 90 lastnik ostaja REVIEW"
+      },
+      "PT_p5_46_48_76": {
+        "native": "46→h.63, 47→h.62, 48→h.62, 76→h.68 (Michael Grouy×3, Ulrich Miko)",
+        "puo_pomoč": "PUA h.65 opomba 'B.P. 46. 48.' (val 54) → 46/48 pričakovano h.65; 76: val53 h.51, možnost h.28",
+        "verdict": "3-kratno nesoglasje (63/65/62; 68/51/28) — Kurrent 2↔3↔5↔6 zmeda ostaja → REVIEW-CONFLICT obdržan, NIČ ne rešeno z ugibanjem"
+      },
+      "PT_p4_24_25": {
+        "native": "24→h.1 Schumidt Malfa, 25→h.1 Schumidt Malfn",
+        "verdict": "potrjeno h.1 (skladno z val 53); PUA h.1 'B.P. ca. 10' — kompatibilno (ca. 10 vključuje 24/25)"
+      },
+      "PUA_p18_no35": {
+        "native": "35 | h.36 | Krischan Muffl Leinwand Güßbl | b. P. 56. 38. (znak po znak)",
+        "verdict": "opomba NE vsebuje 86 → bp 86 REVIEW-CONFLICT utemeljen (val 54 potrjen)"
+      },
+      "PUA_p30_no59": {
+        "native": "59 | h.41 | Gestor Georg Buian, Hof Gülbla | 19. Pp. (znak po znak)",
+        "verdict": "opomba NE vsebuje 92 → bp 92 REVIEW utemeljen (val 54 potrjen)"
+      },
+      "PT_p7_90_100": {
+        "native": "90→h.49, 91→h.44, 92→h.41, 93→h.40, 94→h.40, 95→h.39, 96→h.38, 97→h.39, 98→h.20 'A. Zollamt', 99-100 prazno",
+        "verdict": "Zollamt kot lastnik bp 98 potrjen tudi v PT; hišna št. h.20 (PT) vs h.70 (PUA) → hišna vezava ostaja REVIEW-CONFLICT"
+      },
+      "PUA_p49": {
+        "native": "vpis 97 | V | 2700 | podpis 'Bürgermeister'; 'M. Cny[?]will um 10. Januar 1825'",
+        "verdict": "datum '10. Januar 1825' korooborira val 51 '10. Jänner 1825' (2 vira → mesec POTRJEN)"
+      }
+    },
+    "materials": {
+      "ps_n83": "143/143 strani prenešenih (n083ps-pages/, download-log.json) + identificirano: 'Protocol der Grund-Parcellen der Gemeinde Gruble' (p1 naslov, p2 glave stolpcev: N.º., Kultur Gattung, Flurbezirk Zone, Quadrat Meter, Rente jährlicher Ertrag, Capital Werth, Anmerkung)",
+      "p26_p42": "PDF-native popolni strani (1391×2145 / 1400×2151) — P3-E12 prenos REŠEN; p26 = glava + začetek vpisa 52, p42 = vpisa 85/86 (aritmetika val 48 potrjena)",
+      "a01_a05": "obstoječi rastri A01–A05 (2826px) so že maksimalna IIIF raven — P2-E13/E14 ostajata BRALNA nalogi, brez novih prenosov"
+    }
   },
-  {
-   "bp": "73",
-   "owner": "Penzig (h.60)",
-   "verdict": "OK (REVIEW-CONFLICT obstoječi)",
-   "evidence": "PUA no. 61 'B.P. 73.' (p31); PT 74→h.60 STABLE — sosednja vrstica, 73/74 dvom"
+  "val57": {
+    "date": "2026-09-25",
+    "trigger": "Issue #42 PASS 1 (PUA COMPLETE COVERAGE AUDIT) + kontrolne točke uporabnika (bp 90 Nro. 7/8, PT p5 Kurrent, Zucchelli)",
+    "method": "Tarčne neodvisne VLM brane iz PDF-native/300dpi pasov (val 57): PUA p6-top/midband/bot + p47-top/bot + p49-native/closing-zoom + p26/p42 native; PT p5-top/bot + p7-top/bot + p7 bp89-91 pas. Vsa ključna branja digit-by-digit z opisi oblik števk.",
+    "readings": {
+      "PT_p7_bp89_91": {
+        "native_300dpi_band": "89→h.44 Flaustakl Marx[?]; 90→h.43 Knaller Niklo[?]; 91→h.44 Flaustakl Manlo[?]; 92→h.41 Gredig Georg[?]",
+        "digit_notes": "bp90: 'first digit 4 (open top, crossbar); second 3 (flat top, rounded lower curve) — not 44/51/28'",
+        "verdict": "PT p7 spodnji blok ostane INSTABILEN med kampanjami (val53: 36/44/40/44; val57: 44/43/44/41; imena popolnoma različna) → 89-92 ostajajo REVIEW-CONFLICT RAZEN bp 90 (spodaj)"
+      },
+      "PT_bp90_vs_PUA": {
+        "PUA_no7": "h.43 digit-by-digit (val 56 native + val 57 p06-top) + opomba 'B.P. 90.' pod parcelnim seznamom no.7 (val 51/54/56 + val 57 midband 'centered below the parcel list of entry No. 7')",
+        "PT": "bp 90 → h.43 (val 57 digit-by-digit) proti h.44 (val 53, 1/2 glasov)",
+        "verdict": "BP 90 ↔ h.43 = DVE neodvisni viri se strinjata (PUA no.7 + PT bp90), oba digit-by-digit pri nativni ločljivosti → dvignjeno iz REVIEW-CONFLICT v CONFIRMED-2x. Uporabnikovo vprašanje 'Nro. 7 vs 8' razrešeno: opomba pripada no.7 (midband lega)."
+      },
+      "PT_p5_46_48": {
+        "val57_digit_by_digit": "46→h.63 ('3 flat rounded top, no sharp angle'); 47→h.65 ('5 sharp horizontal top stroke'); 48→h.62 ('2 flat/wavy top')",
+        "history": "val53: 63/65/63; val56: 63/65/62; val57: 63/65/62",
+        "verdict": "PT p5 bere 63/65/62 konsistentno v 3 kampanjah; PUA opomba (no.40 h.65 'B.P. 46. 48.') trdi obe na h.65 → SISTEMSKI KONFLIKT ostaja (PUA opomba vs PT stolpec); bp 46/48 ostajata REVIEW-CONFLICT, bp 47→h.65 CONFIRMED. Kurrent 2↔3↔5↔6 dokumentiran z opisi oblik."
+      },
+      "PT_bp98": {
+        "val57": "h.50 'A. Zöllamt' ('5 distinctive top curve and bottom loop, 0 oval — does not resemble 2/3/9')",
+        "history": "PT hišna št. za bp 98: val52 '20', val53 '39' (1/2), val57 '50' — TRETJE različno branje",
+        "verdict": "PT hišni stolpec za bp 98 = NERAZREŠLJIV iz obstoječih skenov (20/39/50). PUA stran: no.95 h.70 digit-by-digit 3× (val51 pass3 + val56 native 2× + val57) + 'B.P. 98.' opomba → BP 98 = Zollamt @ h.70 ostane CONFIRMED po PUA; PT hišna vezava UNRESOLVED. Dodatni primarni dokaz: PS (val 57 transkripcija — iskanje 'Zoll' po Anmerkung/Haus Nro.)."
+      },
+      "PT_p5_bp55": {
+        "val57": "bp 55 se pojavita 2× (drugič '55¹' z nadpisano enico) = Abtheilung marker",
+        "verdict": "NOVA NAJDBA: PT ima nadpisane delitvene oznake (55¹) — vezava bp→h mora šteti samo prvo vrstico; hišne št. p5-bot v tej branji nečitljive (polovična resolucija pasu)"
+      }
+    },
+    "PUA_p49_datum": {
+      "val57_closing_zoom": "leta št. digit-by-digit: '1825' — zadnja '5': 'sharp horizontal top stroke, open bowl; lacks the closed bottom loop of a 6'",
+      "verdict": "10. Jänner 1825 (3:1 proti 1826) — potrjeno; register no.97 posodobljen"
+    },
+    "PUA_p49_ime": {
+      "val57": "letter-by-letter 'Philipp De Giannuto Zucchelli'",
+      "history": "val 51 2×: 'Philipp De Giammo Zucchelli'",
+      "verdict": "IME ostaja REVIEW (Giannuto vs Giammo — ni rešeno z ugibanjem); parcela 2700, zaključna formula 'Ich Amtl[ich] bestätige', podpisa 'Mumppen' + 'v Hillmayer', 'Zeugen:'"
+    }
   },
-  {
-   "bp": "76",
-   "owner": "Brincz Maria (h.28)",
-   "verdict": "SPUŠČEN na REVIEW-CONFLICT",
-   "evidence": "opomba h.28 vključuje '76.', a PT 76→h.51 2× STABLE"
+  "val110": {
+    "date": "2026-09-30",
+    "trigger": "open_for_full_res: 'PT p7 rep 90-100 (pomik vrstic + Zollamt)' + vala 107/109 popusta kvota → direkti odtis (0 VLM)",
+    "method": "PDF-native skeni (pymupdf): N083PT.pdf 2.898.721 B (8 str., sha256 f7b68454fd8fd819) + N083PR.pdf 1.017.944 B (4 str., sha256 18280dae40af21ec); nativni p7 2727x2117 (2,1x pripogleda val 41 1308x1016); kontaktnе table + izrezki 3x-8x; 0 VLM klicev (429 dnevna kvota, vzorec val 109)",
+    "f2_resolved": "F2 POMIK VRSTIC RESOLVED-V110: val41 + val53-zoom2x glasovi na p7 nosita +1 pomik (register h[bp] = nativno h[bp-1] za bp 85-97; '39' pri bp 98 = pomik iz bp 97); val52 + val53-p7 glasovi in nativni odtis se strinjajo na vseh 16 spornih vrsticah",
+    "bp98_zollamt": "bp 98 = h.70 (nativni odtis 4x) — '20' (val52+val53) = 7->2 zamenjava pri 667px; vezava Zollamt<->bp 98<->h.70 zdaj trojna: PUA no. 95 h.70 + 'B.P. 98.' (val 56 nativno 2x) + PT nativni odtis h.70 + A01 no. 7 h.70; PT register ostaja REVIEW (PT-notranji glasovi se ne strinjajo), vezava v cadastre VERIFIED-2x (val 56) nespremenjena",
+    "bp90_bonus": "bp 90 = h.43 nativno — korooborira verigo PUA p6 no. 7 h.43 + opomba 'B.P. 90.' (val 56); vezava no. 7 ostaja neusklajena (F val56), ampak h.43<->bp 90 zdaj 2-source",
+    "phantoms": "bp 99/100 = FANTOMSKA vrstica (nativno prazni; Nro neostevilčen): 'Alois Pollandt' h.50 / h.5 'Futterg[?]' + 'Bruckmühle' = korelirane napake vsotne vrstice ('5 | Eintrags.') + diagonalnih zapiskov; mlin ostaja vezan izključno na PR/A01/PUA dokaze",
+    "red_crossings": "rdeča revizija (12 vrstic: 81, 82, 85, 90-98) = nov strukturni signal; kontekst morda korekcija meja sept. 1827 (A01 naslovnica) — REVIEW",
+    "pr_second_pass": "PR Grenz-Beschreibung 2. prehod (nativno, direktni odtis): rokopisni naslov 'Definitive Grenzbeschreibung der Gemeinde Grüble'; mere E-W 1028 Klafter (jasno) x N-S 1[3/8]54 Klafter (predbitno); Grenzsteine No. 1-9 z razdaljami v Klafterih; potok 'Mlinščica' (odtis 'Melinschi Bach') — SOGLASJE z val 42; sosede: odtis 'Krasinz[?]' + 'Königreich Croatiens' + 'Adleischitz[?]' (Adlešiči) + 'Weitendorf[?]' (p2+p3) — NEUSKLADNO z val 42 ('Weichselberg/Hochsteg/Schönbach/Stadelbach/Dolga vas') — geografsko verjetneje odtis (Krasinec/Adlešiči/Kolpa), ampak NI dokaz; specializiran prepis ostaja TO_COLLECT; datum rokopisa: 'Neustadtl am 8ten April 1825' (jasno) + podpisa (komisar + Geometer); 'definitivna' opredelitev pred septembrsko korekcijo 1827",
+    "honesty": "TRANSCRIBED=0 VLM glasov — celoten val z direktnim odtisom + rekonstrukcijo glasov iz surovin val 41/52/53; izrezki in nativni skeni komitirani za resumable 3. glas ob kvoti"
   },
-  {
-   "bp": "85",
-   "owner": "Krischan Peter (h.37)",
-   "verdict": "OK",
-   "evidence": "PT dual (41+52: 37) + PUA no. 36 opomba 'P.P. 85.' (B↔P); PT 53: 45/37 konflikt"
-  },
-  {
-   "bp": "86",
-   "owner": "Krischan Marla (h.36)",
-   "verdict": "SPUŠČEN na REVIEW-CONFLICT",
-   "evidence": "opomba 'b. P. 56. 38.' ne vsebuje 86; PT 86→h.37"
-  },
-  {
-   "bp": "89",
-   "owner": "Husitsch Maria (h.44)",
-   "verdict": "OK (REVIEW)",
-   "evidence": "PT dual 87/89/91→h.44; PUA no. 19 h.44 (p11)"
-  },
-  {
-   "bp": "92",
-   "owner": "Pöchinger Georg (h.41)",
-   "verdict": "SPUŠČEN na REVIEW",
-   "evidence": "PT dual 41 + zoom 44 (pomik); PUA opomba nečitljiva '19. Pp.'"
-  },
-  {
-   "bp": "93",
-   "owner": "Sautter (h.40)",
-   "verdict": "OK (REVIEW)",
-   "evidence": "PT dual 40 + PUA no. 38; zoom 41 (pomik)"
-  },
-  {
-   "bp": "94",
-   "owner": "Sautter (h.40)",
-   "verdict": "NADGRAJEN na VERIFIED-2x",
-   "evidence": "3 viri (41+52+53 obe) + PUA no. 38"
-  },
-  {
-   "bp": "98",
-   "owner": "k.k. Zollamt",
-   "verdict": "NEPODPRTO — SPUŠČEN na REVIEW-CONFLICT",
-   "evidence": "noben vir ne veže Zollamt na bp 98; no. 7 'B.P. 90.'; verjetna zmeda 90↔98 (val 52)"
+  "val117": {
+    "date": "2026-10-01",
+    "trigger": "re-adjudikacija areal/lastnik p7 (izključitev val110-areal-owner; napovedana val 110 §3d, glasovi val 116/117)",
+    "method": "native-p07 (2727×2117, PDF-native maksimum F-PZ-17) + IZMERJENA horizontalna pravila (20 vrstic 379–2013 + vsotna 2013–2111) + agentov vid (vezava bp Nro) + 9 VLM glasov (read-pt7-v117.mts: 4 areal bandi + vsotna + 4 lastnik bandi); admission: vrednostna soglasja vid+vlm/nizko-loč. → TRANSCRIBED, kolizija → REVIEW",
+    "areal_pomik": {
+      "finding": "F3-analog: register areal stolpec p7 je +1 zamaknjen za r6–r18 (register bp n = nativno bp n−1)",
+      "pairs_verified": 13,
+      "top_rows": "r2–r5 posamezno zmešane (nizko-loč.); r1 kolizija 14/44/11",
+      "f2_analog": "val 110 F2 za hišne številke (bp 85–97); val 117 zaključi analog za areale"
+    },
+    "popravki": 17,
+    "kolizije": 1,
+    "vsotna_areal": {
+      "status": "REVIEW artefakt (večslojni zapis)",
+      "vid": "1[?]|77[?] prečrtano + rdeče 62[?]",
+      "vlm": "7 7/62 (rdeči imenovalec)",
+      "opomba": "vsota nativnih klafter = 1701 = 1 joch 101 klafter — se ne zaključi z nobeno prebrano obliko; aritmetična vrzel dokumentirana"
+    },
+    "owner_voices_v117": {
+      "status": "ARTEFAKTI — NIČ sprememb imen (F1: PUA = avtoriteta; 4. glas Kurrent garbled)",
+      "primerjava": "vlm 'Strauß Georg' vs register 'Krauß Georg'/'Hans Georg' — kolizije zabeležene v register.json v117_native",
+      "prestrike": "bp 81, 82, 85, 90(?), 96, 98 rdeče prečrtani lastniki (skladno z val 110 red_crossings 12 vrstic)"
+    },
+    "honesty": "TRANSCRIBED = 'tako je zapisano na p7' (merjena pravila + vid + VLM/nizko-loč. vrednostna soglasja); bp81 ostaja REVIEW (3 branja); vsotna REVIEW; imena nespremenjena; PUA kaskada NI potrebna (PT areali ne hranijo PS/PUA/KG); TRANSCRIBED=0 na imenskih poljih",
+    "open_for_full_res_update": "val110-areal-owner → REŠENO-delno (areal r6–r18 + r98; r1 kolizija + vsotna ostajata REVIEW; lastniška imena = F1 politika, ne re-adjudikacija)"
   }
- ],
- "open_for_full_res": [
-  "PUA p6 (no. 7 'B.P. 90.') in p47 (Zollamt no. 95) — reši bp 90/98 vprašanje",
-  "PT p5 vrstice 46-48 (h.63 vs 65) in 76 (h.51 vs 28)",
-  "PT p4 vrstice 24/25 (h.1) vs PUA h.1 opomba 'B.P. ca. 10'",
-  "PUA p18 (no. 35 'b. P. 56. 38.') — bp 86 povezava",
-  "PUA p30 (no. 59 '19. Pp.') — bp 92 povezava",
-  "PT p7 rep 90-100 — RESOLVED-V110 (nativni re-read val 110; VLM 3. glas resumable ob kvoti)"
- ],
- "val56": {
-  "date": "2026-09-25",
-  "trigger": "VAČ preseljen arhiv.si (NXDOMAIN) → vac.sjas.gov.si; vse končne ločljivosti dostopne",
-  "method": "PDF-native ekstrakcija (pymupdf) iz N083PUA.pdf (6.9 MB, 49 str.) + N083PT.pdf (2.9 MB, 8 str.); pasovni izrezi 300 dpi; 2 neodvisna branja za sporne točke (z-ai vision, serial+backoff)",
-  "readings": {
-   "PUA_p47_no95_Zollamt": {
-    "native": "95 | III | h.70 | Zollamt k.k. Merial/Merarial in Gräbln | (nadaljevalna vrstica) B.P. 98.",
-    "band_A": "95 | 70 | Zollamt S.S. Merarial in Gräbln | B.P. 98. (dno pasu)",
-    "band_B": "(samo) B. P. 98.",
-    "verdict": "2× branja strinjajo: Zollamt (no. 95) @ h.70 z opombo B.P. 98. — STARE branje (val 52/54: 'brez opombe') je bilo napačno (opomba v nadaljevalni vrstici vpisa je bila izpuščena pri 667px)"
-   },
-   "PUA_p6_no7": {
-    "native_1": "7 | h.43 | Brulla Maria Laura von Grubla | B.P. 90",
-    "native_2": "neusklajeno (pomik vrstic: 6/7/8 → h.43/h.63/h.0)",
-    "band_A": "vpis z h.43 (Brulla Mäds Buunhausgütl) s končnico B.P. 90. + parcelni seznami I/II/III/IV",
-    "band_B": "no. 8 h.63 Bringmann Lorenz 'B.P. go.' [verjetno 90]; no. 9 Commenda Tschornembl 'B.P. 31. 32.'",
-    "verdict": "opomba 'B.P. 90.' zagotovo obstaja na p6 (3. potrditev), vezava na Nro. 7 vs 8 OSTAJA NEUSKLAJENA (pomik vrstic med prehodi) → bp 90 lastnik ostaja REVIEW"
-   },
-   "PT_p5_46_48_76": {
-    "native": "46→h.63, 47→h.62, 48→h.62, 76→h.68 (Michael Grouy×3, Ulrich Miko)",
-    "puo_pomoč": "PUA h.65 opomba 'B.P. 46. 48.' (val 54) → 46/48 pričakovano h.65; 76: val53 h.51, možnost h.28",
-    "verdict": "3-kratno nesoglasje (63/65/62; 68/51/28) — Kurrent 2↔3↔5↔6 zmeda ostaja → REVIEW-CONFLICT obdržan, NIČ ne rešeno z ugibanjem"
-   },
-   "PT_p4_24_25": {
-    "native": "24→h.1 Schumidt Malfa, 25→h.1 Schumidt Malfn",
-    "verdict": "potrjeno h.1 (skladno z val 53); PUA h.1 'B.P. ca. 10' — kompatibilno (ca. 10 vključuje 24/25)"
-   },
-   "PUA_p18_no35": {
-    "native": "35 | h.36 | Krischan Muffl Leinwand Güßbl | b. P. 56. 38. (znak po znak)",
-    "verdict": "opomba NE vsebuje 86 → bp 86 REVIEW-CONFLICT utemeljen (val 54 potrjen)"
-   },
-   "PUA_p30_no59": {
-    "native": "59 | h.41 | Gestor Georg Buian, Hof Gülbla | 19. Pp. (znak po znak)",
-    "verdict": "opomba NE vsebuje 92 → bp 92 REVIEW utemeljen (val 54 potrjen)"
-   },
-   "PT_p7_90_100": {
-    "native": "90→h.49, 91→h.44, 92→h.41, 93→h.40, 94→h.40, 95→h.39, 96→h.38, 97→h.39, 98→h.20 'A. Zollamt', 99-100 prazno",
-    "verdict": "Zollamt kot lastnik bp 98 potrjen tudi v PT; hišna št. h.20 (PT) vs h.70 (PUA) → hišna vezava ostaja REVIEW-CONFLICT"
-   },
-   "PUA_p49": {
-    "native": "vpis 97 | V | 2700 | podpis 'Bürgermeister'; 'M. Cny[?]will um 10. Januar 1825'",
-    "verdict": "datum '10. Januar 1825' korooborira val 51 '10. Jänner 1825' (2 vira → mesec POTRJEN)"
-   }
-  },
-  "materials": {
-   "ps_n83": "143/143 strani prenešenih (n083ps-pages/, download-log.json) + identificirano: 'Protocol der Grund-Parcellen der Gemeinde Gruble' (p1 naslov, p2 glave stolpcev: N.º., Kultur Gattung, Flurbezirk Zone, Quadrat Meter, Rente jährlicher Ertrag, Capital Werth, Anmerkung)",
-   "p26_p42": "PDF-native popolni strani (1391×2145 / 1400×2151) — P3-E12 prenos REŠEN; p26 = glava + začetek vpisa 52, p42 = vpisa 85/86 (aritmetika val 48 potrjena)",
-   "a01_a05": "obstoječi rastri A01–A05 (2826px) so že maksimalna IIIF raven — P2-E13/E14 ostajata BRALNA nalogi, brez novih prenosov"
-  }
- },
- "val57": {
-  "date": "2026-09-25",
-  "trigger": "Issue #42 PASS 1 (PUA COMPLETE COVERAGE AUDIT) + kontrolne točke uporabnika (bp 90 Nro. 7/8, PT p5 Kurrent, Zucchelli)",
-  "method": "Tarčne neodvisne VLM brane iz PDF-native/300dpi pasov (val 57): PUA p6-top/midband/bot + p47-top/bot + p49-native/closing-zoom + p26/p42 native; PT p5-top/bot + p7-top/bot + p7 bp89-91 pas. Vsa ključna branja digit-by-digit z opisi oblik števk.",
-  "readings": {
-   "PT_p7_bp89_91": {
-    "native_300dpi_band": "89→h.44 Flaustakl Marx[?]; 90→h.43 Knaller Niklo[?]; 91→h.44 Flaustakl Manlo[?]; 92→h.41 Gredig Georg[?]",
-    "digit_notes": "bp90: 'first digit 4 (open top, crossbar); second 3 (flat top, rounded lower curve) — not 44/51/28'",
-    "verdict": "PT p7 spodnji blok ostane INSTABILEN med kampanjami (val53: 36/44/40/44; val57: 44/43/44/41; imena popolnoma različna) → 89-92 ostajajo REVIEW-CONFLICT RAZEN bp 90 (spodaj)"
-   },
-   "PT_bp90_vs_PUA": {
-    "PUA_no7": "h.43 digit-by-digit (val 56 native + val 57 p06-top) + opomba 'B.P. 90.' pod parcelnim seznamom no.7 (val 51/54/56 + val 57 midband 'centered below the parcel list of entry No. 7')",
-    "PT": "bp 90 → h.43 (val 57 digit-by-digit) proti h.44 (val 53, 1/2 glasov)",
-    "verdict": "BP 90 ↔ h.43 = DVE neodvisni viri se strinjata (PUA no.7 + PT bp90), oba digit-by-digit pri nativni ločljivosti → dvignjeno iz REVIEW-CONFLICT v CONFIRMED-2x. Uporabnikovo vprašanje 'Nro. 7 vs 8' razrešeno: opomba pripada no.7 (midband lega)."
-   },
-   "PT_p5_46_48": {
-    "val57_digit_by_digit": "46→h.63 ('3 flat rounded top, no sharp angle'); 47→h.65 ('5 sharp horizontal top stroke'); 48→h.62 ('2 flat/wavy top')",
-    "history": "val53: 63/65/63; val56: 63/65/62; val57: 63/65/62",
-    "verdict": "PT p5 bere 63/65/62 konsistentno v 3 kampanjah; PUA opomba (no.40 h.65 'B.P. 46. 48.') trdi obe na h.65 → SISTEMSKI KONFLIKT ostaja (PUA opomba vs PT stolpec); bp 46/48 ostajata REVIEW-CONFLICT, bp 47→h.65 CONFIRMED. Kurrent 2↔3↔5↔6 dokumentiran z opisi oblik."
-   },
-   "PT_bp98": {
-    "val57": "h.50 'A. Zöllamt' ('5 distinctive top curve and bottom loop, 0 oval — does not resemble 2/3/9')",
-    "history": "PT hišna št. za bp 98: val52 '20', val53 '39' (1/2), val57 '50' — TRETJE različno branje",
-    "verdict": "PT hišni stolpec za bp 98 = NERAZREŠLJIV iz obstoječih skenov (20/39/50). PUA stran: no.95 h.70 digit-by-digit 3× (val51 pass3 + val56 native 2× + val57) + 'B.P. 98.' opomba → BP 98 = Zollamt @ h.70 ostane CONFIRMED po PUA; PT hišna vezava UNRESOLVED. Dodatni primarni dokaz: PS (val 57 transkripcija — iskanje 'Zoll' po Anmerkung/Haus Nro.)."
-   },
-   "PT_p5_bp55": {
-    "val57": "bp 55 se pojavita 2× (drugič '55¹' z nadpisano enico) = Abtheilung marker",
-    "verdict": "NOVA NAJDBA: PT ima nadpisane delitvene oznake (55¹) — vezava bp→h mora šteti samo prvo vrstico; hišne št. p5-bot v tej branji nečitljive (polovična resolucija pasu)"
-   }
-  },
-  "PUA_p49_datum": {
-   "val57_closing_zoom": "leta št. digit-by-digit: '1825' — zadnja '5': 'sharp horizontal top stroke, open bowl; lacks the closed bottom loop of a 6'",
-   "verdict": "10. Jänner 1825 (3:1 proti 1826) — potrjeno; register no.97 posodobljen"
-  },
-  "PUA_p49_ime": {
-   "val57": "letter-by-letter 'Philipp De Giannuto Zucchelli'",
-   "history": "val 51 2×: 'Philipp De Giammo Zucchelli'",
-   "verdict": "IME ostaja REVIEW (Giannuto vs Giammo — ni rešeno z ugibanjem); parcela 2700, zaključna formula 'Ich Amtl[ich] bestätige', podpisa 'Mumppen' + 'v Hillmayer', 'Zeugen:'"
-  }
- },
- "val110": {
-  "date": "2026-09-30",
-  "trigger": "open_for_full_res: 'PT p7 rep 90-100 (pomik vrstic + Zollamt)' + vala 107/109 popusta kvota → direkti odtis (0 VLM)",
-  "method": "PDF-native skeni (pymupdf): N083PT.pdf 2.898.721 B (8 str., sha256 f7b68454fd8fd819) + N083PR.pdf 1.017.944 B (4 str., sha256 18280dae40af21ec); nativni p7 2727x2117 (2,1x pripogleda val 41 1308x1016); kontaktnе table + izrezki 3x-8x; 0 VLM klicev (429 dnevna kvota, vzorec val 109)",
-  "f2_resolved": "F2 POMIK VRSTIC RESOLVED-V110: val41 + val53-zoom2x glasovi na p7 nosita +1 pomik (register h[bp] = nativno h[bp-1] za bp 85-97; '39' pri bp 98 = pomik iz bp 97); val52 + val53-p7 glasovi in nativni odtis se strinjajo na vseh 16 spornih vrsticah",
-  "bp98_zollamt": "bp 98 = h.70 (nativni odtis 4x) — '20' (val52+val53) = 7->2 zamenjava pri 667px; vezava Zollamt<->bp 98<->h.70 zdaj trojna: PUA no. 95 h.70 + 'B.P. 98.' (val 56 nativno 2x) + PT nativni odtis h.70 + A01 no. 7 h.70; PT register ostaja REVIEW (PT-notranji glasovi se ne strinjajo), vezava v cadastre VERIFIED-2x (val 56) nespremenjena",
-  "bp90_bonus": "bp 90 = h.43 nativno — korooborira verigo PUA p6 no. 7 h.43 + opomba 'B.P. 90.' (val 56); vezava no. 7 ostaja neusklajena (F val56), ampak h.43<->bp 90 zdaj 2-source",
-  "phantoms": "bp 99/100 = FANTOMSKA vrstica (nativno prazni; Nro neostevilčen): 'Alois Pollandt' h.50 / h.5 'Futterg[?]' + 'Bruckmühle' = korelirane napake vsotne vrstice ('5 | Eintrags.') + diagonalnih zapiskov; mlin ostaja vezan izključno na PR/A01/PUA dokaze",
-  "red_crossings": "rdeča revizija (12 vrstic: 81, 82, 85, 90-98) = nov strukturni signal; kontekst morda korekcija meja sept. 1827 (A01 naslovnica) — REVIEW",
-  "pr_second_pass": "PR Grenz-Beschreibung 2. prehod (nativno, direktni odtis): rokopisni naslov 'Definitive Grenzbeschreibung der Gemeinde Grüble'; mere E-W 1028 Klafter (jasno) x N-S 1[3/8]54 Klafter (predbitno); Grenzsteine No. 1-9 z razdaljami v Klafterih; potok 'Mlinščica' (odtis 'Melinschi Bach') — SOGLASJE z val 42; sosede: odtis 'Krasinz[?]' + 'Königreich Croatiens' + 'Adleischitz[?]' (Adlešiči) + 'Weitendorf[?]' (p2+p3) — NEUSKLADNO z val 42 ('Weichselberg/Hochsteg/Schönbach/Stadelbach/Dolga vas') — geografsko verjetneje odtis (Krasinec/Adlešiči/Kolpa), ampak NI dokaz; specializiran prepis ostaja TO_COLLECT; datum rokopisa: 'Neustadtl am 8ten April 1825' (jasno) + podpisa (komisar + Geometer); 'definitivna' opredelitev pred septembrsko korekcijo 1827",
-  "honesty": "TRANSCRIBED=0 VLM glasov — celoten val z direktnim odtisom + rekonstrukcijo glasov iz surovin val 41/52/53; izrezki in nativni skeni komitirani za resumable 3. glas ob kvoti"
- }
 }

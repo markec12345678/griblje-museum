@@ -1,0 +1,577 @@
+{
+  "val": 117,
+  "pass": "PZ mikroprehod 8b",
+  "changes_count": 50,
+  "changes": [
+    {
+      "path": "§1.I.te.roh",
+      "old": "23|40 1/10[?]",
+      "new": "23|44",
+      "method": "POPRAVEK soglasje-3",
+      "voices": {
+        "odtis": "23|40 1/10[?]+proza 23|44",
+        "vlm": "28|44",
+        "vid": "23|44",
+        "i7": "10|40.8"
+      }
+    },
+    {
+      "path": "§1.I.te.aufwand",
+      "old": "10|18 3/4[?]",
+      "new": "10|18 3/4",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "10|18¾[?]",
+        "vlm": "10|18 3/4",
+        "vid": "10|18¾"
+      }
+    },
+    {
+      "path": "§1.I.te.taxa",
+      "old": "45 [REVIEW]",
+      "new": "45",
+      "method": "soglasje-2",
+      "voices": {
+        "odtis": "45",
+        "vlm": "45",
+        "rdeča": "43 39/100 → 45/100"
+      }
+    },
+    {
+      "path": "§1.I.te.anschlag",
+      "old": "10|40 2/3[?]",
+      "new": "REVIEW (⅔/¾/⅘)",
+      "method": "kolizija",
+      "voices": {
+        "odtis": "⅔[?]",
+        "vlm": "¾",
+        "vid": "~⅔",
+        "i7": "40.8"
+      }
+    },
+    {
+      "path": "§1.I.te.rein",
+      "old": "13|3[5?]",
+      "new": "13|5",
+      "method": "POPRAVEK soglasje-3 + model-divergenca",
+      "voices": {
+        "odtis": "5[3?]",
+        "vlm": "5",
+        "vid": "5",
+        "i7": "3.2"
+      }
+    },
+    {
+      "path": "§1.II.te.roh.kr",
+      "old": "50 1/2 [TRANSCRIBED-odtis]",
+      "new": "REVIEW (½ vs ¼)",
+      "method": "kolizija-2:2",
+      "voices": {
+        "odtis": "½ (tabela+proza)",
+        "vlm": "¼",
+        "vid": "~¼",
+        "i7": "oba zapirata"
+      }
+    },
+    {
+      "path": "§1.II.te.aufwand",
+      "old": "9|31 [TRANSCRIBED-odtis]",
+      "new": "9|31 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "9|31",
+        "vlm": "9|31",
+        "vid": "9|31"
+      }
+    },
+    {
+      "path": "§1.II.te.taxa",
+      "old": "55 [REVIEW]",
+      "new": "55",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "55",
+        "vlm": "55",
+        "vlm-proza": "55"
+      }
+    },
+    {
+      "path": "§1.II.te.anschlag",
+      "old": "9|15 3/4[12 3/4?]",
+      "new": "9|15 3/4",
+      "method": "vlm+model-EXACT",
+      "voices": {
+        "odtis": "12¾[?]/15¾",
+        "vlm": "15",
+        "vid": "15¾",
+        "i7": "15.776"
+      }
+    },
+    {
+      "path": "§1.II.te.rein",
+      "old": "7|35 [TRANSCRIBED-odtis]",
+      "new": "7|35 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "7|35",
+        "vlm": "7|35",
+        "vid": "7|35",
+        "i7": "7.579"
+      }
+    },
+    {
+      "path": "§2.I.te.roh",
+      "old": "9|24 [TRANSCRIBED-odtis]",
+      "new": "9|24 TRANSCRIBED",
+      "method": "soglasje-4",
+      "voices": {
+        "odtis": "9|24",
+        "vlm": "9|24",
+        "vlm-proza": "9|24",
+        "vid": "9|24"
+      }
+    },
+    {
+      "path": "§2.I.te.aufwand",
+      "old": "1|37 1/2",
+      "new": "1|57 1/2",
+      "method": "POPRAVEK soglasje-3",
+      "voices": {
+        "odtis": "37½",
+        "vlm": "57½",
+        "vlm-proza": "57¾",
+        "vid": "57½"
+      }
+    },
+    {
+      "path": "§2.I.te.taxa",
+      "old": "20 [REVIEW]",
+      "new": "20",
+      "method": "soglasje-2",
+      "voices": {
+        "odtis": "20",
+        "vlm": "20",
+        "vlm-proza": "rdeča 23 [artefakt]",
+        "i7": "9.4×0.20=1|52.8 ✓"
+      }
+    },
+    {
+      "path": "§2.I.te.anschlag",
+      "old": "1|52 4/5[32 3/4?]",
+      "new": "1|52 4/5",
+      "method": "model-EXACT dvigne",
+      "voices": {
+        "odtis": "52⅘ (prim.)",
+        "vlm": "32¾",
+        "vid": "52 4/5",
+        "i7": "52.8 EXACT"
+      }
+    },
+    {
+      "path": "§2.I.te.rein",
+      "old": "7|30[31 1/5?]",
+      "new": "7|30",
+      "method": "soglasje-3 + model-divergenca",
+      "voices": {
+        "odtis": "30 (31⅕ alt.)",
+        "vlm": "30",
+        "vid": "30",
+        "i7": "31.2"
+      }
+    },
+    {
+      "path": "§2.II.te.roh",
+      "old": "14[11?]|—",
+      "new": "4|—",
+      "method": "POPRAVEK model-EXACT + 2×vlm/vid",
+      "voices": {
+        "odtis": "14[1?]",
+        "vlm": "4",
+        "vid": "4",
+        "p65-band1": "4",
+        "i7": "2×EXACT pri 4"
+      }
+    },
+    {
+      "path": "§2.II.te.aufwand",
+      "old": "—|55[?]",
+      "new": "—|55",
+      "method": "soglasje-2",
+      "voices": {
+        "odtis": "55[?]",
+        "vid": "55",
+        "vlm": "prazno [artefakt]"
+      }
+    },
+    {
+      "path": "§2.II.te.taxa",
+      "old": "25 [TRANSCRIBED-odtis]",
+      "new": "25 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "25",
+        "vlm": "25 [rot]",
+        "vid": "25"
+      }
+    },
+    {
+      "path": "§2.II.te.anschlag",
+      "old": "1[11?]|—",
+      "new": "1|—",
+      "method": "soglasje-3 + model-EXACT",
+      "voices": {
+        "odtis": "1[11?]",
+        "vlm": "1",
+        "vid": "1",
+        "i7": "1.0 EXACT"
+      }
+    },
+    {
+      "path": "§2.II.te.rein",
+      "old": "3|— [TRANSCRIBED-odtis]",
+      "new": "3|— TRANSCRIBED",
+      "method": "soglasje-4 + model-EXACT",
+      "voices": {
+        "odtis": "3",
+        "vlm": "3",
+        "vid": "3",
+        "p65": "3|—",
+        "i7": "3.0 EXACT"
+      }
+    },
+    {
+      "path": "§3.Einzige.roh",
+      "old": "23|44",
+      "new": "23|44 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "23|44",
+        "vlm-table": "25 (Kurrent artefakt)",
+        "vlm-proza": "23|44 (§3) / 23 (§4)",
+        "vid": "23|44"
+      }
+    },
+    {
+      "path": "§3.Einzige.aufwand",
+      "old": "10|18 3/4",
+      "new": "10|18 3/4 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "10|18¾",
+        "vlm": "10|18 3/4",
+        "vid": "10|18¾"
+      }
+    },
+    {
+      "path": "§3.Einzige.taxa",
+      "old": "45",
+      "new": "45 TRANSCRIBED",
+      "method": "soglasje-2",
+      "voices": {
+        "odtis": "45",
+        "vid": "45",
+        "vlm": "4/5 (§3) / 45 (§4)"
+      }
+    },
+    {
+      "path": "§3.Einzige.anschlag",
+      "old": "10|40 2/3[4/5?]",
+      "new": "REVIEW (⅔/¾/½)",
+      "method": "kolizija",
+      "voices": {
+        "odtis": "⅔[?]",
+        "vlm": "¾",
+        "vid": "~⅔",
+        "i7": "40.8"
+      }
+    },
+    {
+      "path": "§3.Einzige.rein",
+      "old": "13|3[5?]",
+      "new": "13|5",
+      "method": "POPRAVEK soglasje-4 + model-divergenca",
+      "voices": {
+        "odtis": "5[3?]",
+        "vlm": "5",
+        "vlm-proza": "5",
+        "vid": "5",
+        "i7": "3.2"
+      }
+    },
+    {
+      "path": "§4.Einzige.roh",
+      "old": "23|44",
+      "new": "23|44 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "23|44",
+        "vlm-table": "20 (Kurrent artefakt)",
+        "vlm-proza": "23|44 (§3) / 23 (§4)",
+        "vid": "23|44"
+      }
+    },
+    {
+      "path": "§4.Einzige.aufwand",
+      "old": "10|18 3/4",
+      "new": "10|18 3/4 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "10|18¾",
+        "vlm": "10|18 3/4",
+        "vid": "10|18¾"
+      }
+    },
+    {
+      "path": "§4.Einzige.taxa",
+      "old": "45",
+      "new": "45 TRANSCRIBED",
+      "method": "soglasje-2",
+      "voices": {
+        "odtis": "45",
+        "vid": "45",
+        "vlm": "4/5 (§3) / 45 (§4)"
+      }
+    },
+    {
+      "path": "§4.Einzige.anschlag",
+      "old": "10|40 2/3[4/5?]",
+      "new": "REVIEW (⅔/¾/½)",
+      "method": "kolizija",
+      "voices": {
+        "odtis": "⅔[?]",
+        "vlm": "½",
+        "vid": "~⅔",
+        "i7": "40.8"
+      }
+    },
+    {
+      "path": "§4.Einzige.rein",
+      "old": "13|3[5?]",
+      "new": "13|5",
+      "method": "POPRAVEK soglasje-4 + model-divergenca",
+      "voices": {
+        "odtis": "5[3?]",
+        "vlm": "5",
+        "vlm-proza": "5",
+        "vid": "5",
+        "i7": "3.2"
+      }
+    },
+    {
+      "path": "§5.Einzige.rein",
+      "old": "7|10[12?]",
+      "new": "7|10",
+      "method": "soglasje-3 + model-divergenca (zaokrožitev)",
+      "voices": {
+        "odtis": "10[12?]",
+        "vlm": "10",
+        "vlm-proza": "10",
+        "i7": "12"
+      }
+    },
+    {
+      "path": "§5.Einzige.roh/aufwand/taxa/anschlag",
+      "old": "TRANSCRIBED-odtis",
+      "new": "TRANSCRIBED (3 glasa)",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "24|—, 16|54, 70, 16|48",
+        "vlm": "enako",
+        "vlm-proza": "enako"
+      }
+    },
+    {
+      "path": "§6.Einzige.aufwand.kr",
+      "old": "132[?]",
+      "new": "13 1/2",
+      "method": "POPRAVEK soglasje-2",
+      "voices": {
+        "odtis": "132[?]",
+        "vlm": "13 1/2",
+        "vid": "13 1/2"
+      }
+    },
+    {
+      "path": "§6.Einzige.anschlag",
+      "old": "—|15 [TRANSCRIBED-odtis]",
+      "new": "—|15 TRANSCRIBED",
+      "method": "soglasje-2 + model-EXACT",
+      "voices": {
+        "odtis": "15",
+        "vid": "15",
+        "vlm": "13 [artefakt]",
+        "i7": "15 EXACT"
+      }
+    },
+    {
+      "path": "§6.Einzige.roh/taxa/rein",
+      "old": "TRANSCRIBED-odtis",
+      "new": "TRANSCRIBED (3 glasa)",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "1|—, 25, —|45",
+        "vlm": "enako",
+        "vid": "enako"
+      }
+    },
+    {
+      "path": "§7.Weide.aufwand.kr",
+      "old": "132[?]",
+      "new": "13 1/2",
+      "method": "POPRAVEK vid+sestrska-p58",
+      "voices": {
+        "odtis": "132[?]",
+        "vlm": "neznanesljivo",
+        "vid": "13 1/2",
+        "p58": "13 1/2 (vlm+vid)"
+      }
+    },
+    {
+      "path": "§7.Weide.roh/taxa/anschlag/rein",
+      "old": "TRANSCRIBED-odtis",
+      "new": "TRANSCRIBED (odtis+vid+model)",
+      "method": "soglasje-2 + model-EXACT",
+      "voices": {
+        "odtis": "1|—, 25, —|15, —|45",
+        "vid": "enako",
+        "vlm": "neznanesljiva [artefakt]"
+      }
+    },
+    {
+      "path": "§7.Holznutzung.roh/rein",
+      "old": "—|6 TRANSCRIBED-odtis",
+      "new": "—|6 TRANSCRIBED",
+      "method": "soglasje + identiteta",
+      "voices": {
+        "odtis": "6",
+        "vlm": "6 / 5f[?]",
+        "vid": "6"
+      }
+    },
+    {
+      "path": "§7.Summa.roh/rein",
+      "old": "1|6, —|51",
+      "new": "TRANSCRIBED (odtis+vid+model)",
+      "method": "soglasje-2 + model",
+      "voices": {
+        "odtis": "1|6, —|51",
+        "vid": "enako",
+        "i7": "51 EXACT"
+      }
+    },
+    {
+      "path": "§8.Classe.roh.kr",
+      "old": "30 1/2",
+      "new": "50 1/2",
+      "method": "POPRAVEK vid+model-2×EXACT",
+      "voices": {
+        "odtis": "30½",
+        "vlm": "80½",
+        "vid": "50 1/2 (črno)",
+        "rdeči-sloj": "38 4/10 [rot]",
+        "i7": "2×EXACT pri 50½"
+      }
+    },
+    {
+      "path": "§8.Classe.aufwand",
+      "old": "9|31[?]",
+      "new": "9|31",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "31[?]",
+        "vlm": "31",
+        "vid": "31",
+        "vlm-proza": "34/28½ [sloji]"
+      }
+    },
+    {
+      "path": "§8.Classe.taxa",
+      "old": "55[?]",
+      "new": "55",
+      "method": "soglasje-4",
+      "voices": {
+        "odtis": "55[?]",
+        "vlm": "55",
+        "vlm-proza": "55",
+        "vid": "55"
+      }
+    },
+    {
+      "path": "§8.Classe.anschlag",
+      "old": "9|15[?]",
+      "new": "9|15 3/4",
+      "method": "POPRAVEK vid+vlm-proza+model-EXACT",
+      "voices": {
+        "odtis": "15[?]",
+        "vlm-tabela": "prazno",
+        "vlm-proza": "15¾",
+        "vid": "15¾",
+        "i7": "15.776"
+      }
+    },
+    {
+      "path": "§8.Classe.rein",
+      "old": "7|35 TRANSCRIBED-odtis",
+      "new": "7|35 TRANSCRIBED",
+      "method": "soglasje-3",
+      "voices": {
+        "odtis": "7|35",
+        "vlm": "7|35",
+        "vid": "7|35",
+        "i7": "7.579"
+      }
+    },
+    {
+      "path": "verantwortlichung.i7_checks",
+      "old": "11 vrstic (val 109)",
+      "new": "11 vrstic (val 117: p54 zdaj EXACT pri 4; p60 EXACT pri 50½; p50/p53/p55/p56/p57 rein-divergence dokumentirane)",
+      "method": "rekalkulacija",
+      "voices": {}
+    },
+    {
+      "path": "p63_zusammenstellung_b.rows",
+      "old": "[ODLOŽENO OB KVOTI — band re-read + VLM glasovi odločajo; val 77 glas = kolizija vir, sam po sebi NE zadosten za vrstice (delno nezanesljiv 1. prehod)]",
+      "new": "16 strukturiranih vrstic (8× TRANSCRIBED / 8× REVIEW)",
+      "method": "integracija 3 glasov",
+      "voices": {
+        "v77": "16 zapisov",
+        "vlm": "band0-3",
+        "vid": "band1/3 zoomi"
+      }
+    },
+    {
+      "path": "p65_zusammenstellung_a",
+      "old": "3 direktne vrstice (val 109)",
+      "new": "+ vlm_v117 blok (križne potrditve, razkol REALEN, desni blok)",
+      "method": "integracija",
+      "voices": {
+        "vlm": "band0-3 + desni zoom",
+        "odtis": "rows_direct"
+      }
+    },
+    {
+      "path": "protokolle_p48_49",
+      "old": "4 podpisi REVIEW (odtis)",
+      "new": "+ vlm_v117 artefakti (datum ✓, 5 podpisnih variant, omemba mlinu)",
+      "method": "artefakti",
+      "voices": {
+        "vlm": "p48-half-a/b + p49-half-a/b",
+        "odtis": "val 109"
+      }
+    },
+    {
+      "path": "dileme_v117",
+      "old": "7 odprtih (val 109)",
+      "new": "4 REŠENE + 2 DELNO + 1 RAZKOL-DOKUMENTIRAN",
+      "method": "adjudikacija",
+      "voices": {}
+    },
+    {
+      "path": "findings",
+      "old": 20,
+      "new": 22,
+      "method": "F-PZ-21/22",
+      "voices": {}
+    }
+  ]
+}
