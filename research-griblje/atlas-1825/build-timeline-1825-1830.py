@@ -80,8 +80,8 @@ ps_unknown_use = sum(
     for n in parcels
     if n.get("origin") == "PS" and n.get("land_use_category") == "UNKNOWN"
 )
-if (pua_count, ps_count) != (2035, 391):
-    fail(f"parcelni zatiči zamaknjeni: PUA {pua_count} (pričakovano 2035), PS {ps_count} (391 — val 114: F-PV-07 premestitve p25–p55 + p28–p37 (163) + SPLIT markerji ze-obstojecih Joch|Klafter parov (25, val 113/114 pravilo) — 181 vrednost izpade iz projekcije; val 113: 676→577; val 112: 735→676; val 108: 779→735)")
+if (pua_count, ps_count) != (2035, 392):
+    fail(f"parcelni zatiči zamaknjeni: PUA {pua_count} (pričakovano 2035), PS {ps_count} (392 — val 115: +1 vstavljena vrstica p48 \"12\" (~Schmipa[?], brez haus_no) = edina nova parcela; vstavljena p40 1|65 in p49 2|973 izpadli kot F-PV-07-SPLIT val 115; val 114: F-PV-07 premestitve p25–p55 + p28–p37 (163) + SPLIT markerji ze-obstojecih Joch|Klafter parov (25, val 113/114 pravilo) — 181 vrednost izpade iz projekcije; val 113: 676→577; val 112: 735→676; val 108: 779→735)")
 if (ps_with_use, ps_unknown_use) != (173, 142):
     fail(
         f"raba PS zamaknjena: z rabo {ps_with_use} (173), neznana {ps_unknown_use} (142 — val 114: 577→401; val 113: 292/209, 676→577; val 112: 391/209)"

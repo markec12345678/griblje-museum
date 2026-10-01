@@ -32,7 +32,7 @@ BD = f'{REPO}/research-griblje/raw-web-val86-2026-10'
 for f in (f'{OUTD}/band-v86/compare-tiles-v86.json', f'{OUTD}/band-v86/register-v86-changes.json', f'{OUTD}/band-v86/register-v86b-changes.json'):
     assert os.path.exists(f), f'guard: manjka {f}'
 reg = json.load(open(f'{OUTD}/register.json'))
-assert len(reg) == 2871, 'guard: register'
+assert len(reg) == 2875, 'guard: register (val 115: 2871 + 4 vstavljene)'
 v86 = [r for r in reg if r.get('reading_pass') == 'v86-colonial-tiles']
 assert all(r['page'] >= 56 and r['page'] <= 142 for r in v86), 'guard: v86 obseg'
 # pokritost = strani z vsaj enim kultur tile branjem (deterministično iz vlm-v86/)

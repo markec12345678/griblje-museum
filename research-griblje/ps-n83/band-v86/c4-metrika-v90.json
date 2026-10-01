@@ -4,7 +4,7 @@
   "generated_by": "build-c4-metrika-v90.py",
   "method": "C4 metrika: izčrpna deterministična preverba konvencij na sidrih val 61 (K1–K6) + reprodukcija C4 val 86b (K7) + usklajenost vnosov (K8) + konfunda F-PV-05 (K9) + opazovalni register (K10); NIČ VLM, NIČ spleta; NIČ sprememb podatkov (§4/§22)",
   "inputs": {
-   "register.json": "e254840fb319b121f3852e4f949798a0345310632e40e5cfe480e3e9316b142c",
+   "register.json": "826b8604ce546752ebd47ba37675a87e2fbe440e9fc064ae39c7d25f26eab506",
    "totals-reread.json": "5866a457d2cd102267bcf37f3cf8b87d19fcb58aa5aa2f035f41f9b828fe31aa",
    "f11-fuertrag-v86.json": "bd9877766d486e328321c3d5e422ccf2a636ef016a58794da1d3640bc060e5ee"
   },
@@ -20,7 +20,7 @@
    "K8_anchor_equals_chain": 12,
    "K8_anchor_equals_red": 1
   },
-  "K5_input_reliability": "NEZANESLJIV VHOD — owner_was_ditto označen samo na 233/2871 vrstic (8.1 %), bloki = 2580 (povprečno 1.1 vrstic/blok); holdingi (Jaethe) iz trenutnega registra NE rekonstruirani → K5 je NEDEDOKAZLJIVO z obstoječimi podatki, ne ovraženo; odločilno šele po imenskem re-readu (kvota)",
+  "K5_input_reliability": "NEZANESLJIV VHOD — owner_was_ditto označen samo na 233/2875 vrstic (8.1 %), bloki = 2583 (povprečno 1.1 vrstic/blok); holdingi (Jaethe) iz trenutnega registra NE rekonstruirani → K5 je NEDEDOKAZLJIVO z obstoječimi podatki, ne ovraženo; odločilno šele po imenskem re-readu (kvota)",
   "verdict": "KONVENCIJA \"vsota tekoče strani\" (val 61 §2.2 confirmed) ARITMETIČNO NEPOTRJENA — ne ustreza na nobenem od 13 sidrih; metrika ostaja TO-DECODE; odločilna kontrola = re-read p1–55 stolpcev (F-PV-05) po 86b 2. delu"
  },
  "konvencije_sidra": [
@@ -544,17 +544,17 @@
  ],
  "K9_konfunda_F-PV-05": {
   "p1_55_val57": {
-   "both_filled": 46,
-   "jaethe_empty": 943,
+   "both_filled": 48,
+   "jaethe_empty": 944,
    "jaethe_gt1599_plain": 2,
    "jaethe_plain_100_1599": 69,
    "jaethe_plain_gt1599": 2,
-   "jaethe_plain_le99": 59,
-   "klafter_empty": 104,
+   "jaethe_plain_le99": 62,
+   "klafter_empty": 105,
    "klafter_gt1599_plain": 14,
-   "klafter_plain_100_1599": 783,
+   "klafter_plain_100_1599": 784,
    "klafter_plain_gt1599": 14,
-   "klafter_plain_le99": 172
+   "klafter_plain_le99": 174
   },
   "p56_143_v82_plus_sloji": {
    "any_jk_format": 6,

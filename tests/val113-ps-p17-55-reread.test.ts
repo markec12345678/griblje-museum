@@ -40,8 +40,8 @@ const rowsOf = (pg: number) => byPage(pg);
 const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 
 describe("val 113 — gardele in infrastruktura", () => {
-  test("register: 2871 vrstic, 139 v88, 1755 v86-colonial-tiles — nedotaknjeno", () => {
-    expect(REG.length).toBe(2871);
+  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1755 v86-colonial-tiles — nedotaknjeno", () => {
+    expect(REG.length).toBe(2875);
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
     const v86 = REG.filter((r) => r["reading_pass"] === "v86-colonial-tiles");
@@ -222,33 +222,33 @@ describe("val 113 — kaskada (izrecna)", () => {
   test("pass3: PS parcele 577 → 393 (val 114: F-PV-07 premestitve p25–p55 + p28–p37 + SPLIT markerji ze-obstojecih parov)", () => {
     const s = readFileSync(join(ATLAS, "build-pass3.py"), "utf8");
     expect(s).toContain("F-PV-07-SPLIT val 113");
-    expect(pr.ps_parcels_total).toBe(391);
+    expect(pr.ps_parcels_total).toBe(392); // val 115: 391 → 392 (vstavljena vrstica p48 "12")
     expect(pr.ps_land_use_coverage["njiva"]).toBe(105);
     expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(142);
-    expect(pr.ps_land_use_coverage["null"]).toBe(76);
+    expect(pr.ps_land_use_coverage["null"]).toBe(77); // val 115: 76 → 77
   });
 
   test("KG: PARCEL 2436, HAS_PARCEL 2775, vozlišča 3278, vezi 3479 (val 114 kaskada)", () => {
-    expect(kg.node_stats.PARCEL).toBe(2426);
+    expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
-    expect(kg.nodes.length).toBe(3268);
-    expect(kg.edges.length).toBe(3477);
+    expect(kg.nodes.length).toBe(3269); // val 115: 3268 → 3269 (nova parcela brez haus_no)
+    expect(kg.edges.length).toBe(3477); // val 115: nespremenjeno
   });
 
-  test("timeline I6 zatiči: PUA 2035 / PS 391 / raba 173+142 (val 114)", () => {
+  test("timeline I6 zatiči: PUA 2035 / PS 392 / raba 173+142 (val 115)", () => {
     const tl = JSON.parse(readFileSync(join(ROOT, "src/data/timeline-1825-1830.json"), "utf8")) as {
       points: { year: number; metrics: { metric_id: string; value: number }[] }[];
     };
     const m = (id: string, y: number) =>
       tl.points.find((p) => p.year === y)?.metrics.find((x) => x.metric_id === id)?.value;
-    expect(m("parcels_ps", 1825)).toBe(391);
+    expect(m("parcels_ps", 1825)).toBe(392); // val 115: 391 → 392
     expect(m("parcels_with_land_use", 1825)).toBe(173);
   });
 
-  test("coverage: PARTIAL 1068 (PUA 675 + PS 393, val 114)", () => {
+  test("coverage: PARTIAL 1067 (PUA 675 + PS 392, val 115)", () => {
     const c = JSON.parse(readFileSync(join(ROOT, "src/data/atlas-coverage-report-1825.json"), "utf8")) as {
       quality_gate: { PARTIAL: number }[];
     };
-    expect((c.quality_gate ?? []).some((g) => g.PARTIAL === 1066)).toBe(true);
+    expect((c.quality_gate ?? []).some((g) => g.PARTIAL === 1067)).toBe(true);
   });
 });

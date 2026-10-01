@@ -34,7 +34,7 @@
       "research-griblje/atlas-1825/pv-land-use-1825.json",
       "research-griblje/atlas-1825/knowledge-graph-1825.json"
     ],
-    "kg_sha256": "376e2b271d08fdf0c0fe926755edd203828f0a43527dc855decf06119ab37e37",
+    "kg_sha256": "ca0aeb58ee6e27209bd845ac0844edffbffe154067dd57f23036eb6492094305",
     "runtime_copy": "src/data/timeline-1825-1830.json",
     "vac": {
       "SRC-PV": "https://vac.sjas.gov.si/vac/search/details?id=373418",
@@ -156,9 +156,9 @@
         },
         {
           "metric_id": "parcels_ps",
-          "value": 391,
+          "value": 392,
           "unit": "count",
-          "display": "391 parcel",
+          "display": "392 parcel",
           "source_id": "SRC-PS",
           "evidence": "parcel-register-1825.json (origin=PS, hišno vezane)",
           "reading_status": "TRANSCRIBED",
@@ -390,5 +390,5 @@
       "note": null
     }
   ],
-  "generated_at": "2026-09-30T22:20:25Z"
+  "generated_at": "2026-10-01T06:24:04Z"
 }

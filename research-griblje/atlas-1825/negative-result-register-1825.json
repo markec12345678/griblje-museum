@@ -5,7 +5,7 @@
  "title": "NEGATIVE-RESULT REGISTER 1825 — kaj je iskano in zakaj ni bilo mogoče potrditi (NR-12/13/14 vgrajeni; val89 re-checki na NR-01/02/05/12; regeneriran val 107)",
  "provenance": {
   "pua": "pua-n83/register.json (98 vpisov / 2.645 parcelnih referenc, val 51+57)",
-  "ps": "ps-n83/register.json (2.871 vrstic / str. 3-143, val 57→61→82/83→88; 139 digit-split vrstic z v88 vrednostmi)",
+  "ps": "ps-n83/register.json (2.875 vrstic / str. 3-143, val 57→61→82/83→88→113/114→115: +4 vstavljene vrstice p34/p40/p48/p49; 139 digit-split vrstic z v88 vrednostmi)",
   "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original"
  },
  "negatives_total": 14,
@@ -19,7 +19,7 @@
    "why": "B.P. opombe so domena PUA/PT (parcelni protokol jih ne ponavlja)",
    "next_source": "PS s. 56-143 (ko kvota); PT/PUA ostajajo edini B.P. viri",
    "val89_recheck": {
-    "pages": "s. 3-143 (celoten register, 2.871 vrstic)",
+    "pages": "s. 3-143 (celoten register, 2.875 vrstic — val 115: +4 vstavljene)",
     "result": "0 zadetkov (0 vrstic z B.P./Zoll v anmerkung)",
     "verdict": "POTRJENO pri 143/143 — B.P. opombe ostajajo domena PUA/PT"
    }
@@ -133,7 +133,7 @@
    "why": "the Gemeinde divides land into numbered Flurbezirke, not named ones (at least in the transcribed half)",
    "next_source": "PS p56–p143 once VLM quota restores",
    "val89_recheck": {
-    "pages": "p3–p143 (celoten register, 2.871 vrstic)",
+    "pages": "p3–p143 (celoten register, 2.875 vrstic — val 115: +4 vstavljene)",
     "result": "NOT FOUND — 54 neštevilskih jaethe zapisov, 0 s črkovnimi imeni (možnimi toponimi); vsi so mehanske/nominalne oblike (npr. 17½, ganz, N/N)",
     "verdict": "POTRJENO pri 143/143 — omenjeni Flurbezirki ne obstajajo"
    }

@@ -116,8 +116,8 @@ describe("val 86 — pilot pravilnosti (F-PV-06 pouk: glava = sidro stolpcev)", 
 });
 
 describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review oznake)", () => {
-  test("register 2.871 vrstic; 1.755 v86-colonial-tiles (p56–141: val 86 + 98 + 107), p142 v82, p1–55 + p143 nedotaknjeni", () => {
-    expect(register).toHaveLength(2871);
+  test("register 2.875 vrstic (val 115: +4 vstavljene); 1.755 v86-colonial-tiles (p56–141: val 86 + 98 + 107), p142 v82, p1–55 + p143 nedotaknjeni", () => {
+    expect(register).toHaveLength(2875);
     const v86 = register.filter((r) => r.reading_pass === "v86-colonial-tiles");
     expect(v86).toHaveLength(1755);
     expect(v86.every((r) => (r.page as number) >= 56 && (r.page as number) <= 142)).toBe(true);
@@ -225,7 +225,7 @@ describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodo
     expect(kg.val).toBe(108);
     expect(kg.invariant_violations).toEqual([]);
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3268); // val 108: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268
+    expect(nodes).toBe(3269); // val 108: 3612 → … → val 114: 3268 → val 115: 3269
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
     expect(edges).toBe(3477); // val 108: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
     expect(kg.findings.some((f) => f.finding_id === "KG-F11" && f.val === 98)).toBe(true);
@@ -256,7 +256,7 @@ describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodo
       val: number; transcription: { PS: { rows: number; passes: number; note: string } };
     };
     expect(sc.val).toBe(108); // val 108 regeneracija (re-read 14 strani)
-    expect(sc.transcription.PS.rows).toBe(2871);
+    expect(sc.transcription.PS.rows).toBe(2875); // val 115: 2871 + 4 vstavljene
     expect(sc.transcription.PS.passes).toBe(3);
     expect(sc.transcription.PS.note).toContain("F-PV-05");
     expect(sc.transcription.PS.note).toContain("nič tiho prepisano");

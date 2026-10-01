@@ -62,7 +62,7 @@ describe("val 90 — meta + disciplina §4", () => {
     expect(art.meta.verdict).toContain("TO-DECODE");
   });
 
-  test("vhodi so comittani artefakti (sha256 zabeleženi; register 2.871 vrstic = val 89 stanje)", () => {
+  test("vhodi so comittani artefakti (sha256 zabeleženi; register 2.875 vrstic = val 115 stanje: 2871 + 4 vstavljene)", () => {
     expect(Object.keys(art.meta.inputs).sort()).toEqual(
       ["f11-fuertrag-v86.json", "register.json", "totals-reread.json"]
     );
@@ -76,10 +76,10 @@ describe("val 90 — meta + disciplina §4", () => {
     }
   });
 
-  test("K5 izrecno označen kot NEDEDOKAZLJIVO (dito 233/2.871 = 8,1 %; bloki ~1,1 vrstic)", () => {
+  test("K5 izrecno označen kot NEDEDOKAZLJIVO (dito 233/2.875 = 8,1 %; bloki ~1,1 vrstic; val 115: +4 vstavljene vrstice)", () => {
     expect(art.meta.K5_input_reliability).toContain("NEZANESLJIV VHOD");
     expect(art.meta.K5_input_reliability).toContain("NEDEDOKAZLJIVO");
-    expect(art.meta.K5_input_reliability).toContain("233/2871");
+    expect(art.meta.K5_input_reliability).toContain("233/2875");
   });
 });
 

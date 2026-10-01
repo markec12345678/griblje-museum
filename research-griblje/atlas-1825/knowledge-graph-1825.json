@@ -265,10 +265,10 @@
    },
    {
     "category": "parcels",
-    "total": 2426,
+    "total": 2427,
     "breakdown": {
      "PUA": 2035,
-     "PS": 391,
+     "PS": 392,
      "geometry": "NOT AVAILABLE"
     }
    },
@@ -327,7 +327,7 @@
   "SOURCE": 13,
   "HOUSE": 167,
   "PERSON": 488,
-  "PARCEL": 2426,
+  "PARCEL": 2427,
   "BP": 100,
   "TOPONYM": 37,
   "EVENT": 3,
@@ -38403,6 +38403,21 @@
    "parcel_number": 279,
    "co_referenced": false,
    "land_use_category": "travnik",
+   "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
+   "origin": "PS",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "notes": "pokritost prepisa 143/143 (val 89); branja PROVISIONAL (F-PV-04, NR-14) do pasovnega re-reada"
+  },
+  {
+   "node_id": "PARCEL:PS-p048-j12",
+   "node_type": "PARCEL",
+   "section_original": null,
+   "parcel_number": 12,
+   "co_referenced": false,
+   "land_use_category": null,
    "cross_ref_to_pua": "UNKNOWN (F14 namespace vprašanje odprto)",
    "origin": "PS",
    "source_ids": [
@@ -102236,7 +102251,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-30T22:19:45Z",
+   "generated_at": "2026-10-01T06:22:46Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -102258,7 +102273,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-09-30T22:19:45Z",
+   "generated_at": "2026-10-01T06:22:46Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -102285,7 +102300,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-09-30T22:19:45Z",
+   "generated_at": "2026-10-01T06:22:46Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -102312,7 +102327,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-09-30T22:19:45Z",
+   "generated_at": "2026-10-01T06:22:46Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }
