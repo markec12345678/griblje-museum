@@ -76,8 +76,8 @@ describe("val 114 — gardele in infrastruktura", () => {
     }
   });
 
-  test("reading_pass v114-ps-reread: 647 vrstic (p20+p25–p55; p19 = 20 prevzetih v118-names, val 118)", () => {
-    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(487);
+  test("reading_pass v114-ps-reread: 366 vrstic (p25–p55 minus p32–p37 po val 119 del 2b; p19 = 20 prevzetih v118-names, val 118)", () => {
+    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(366);
   });
 });
 
@@ -391,9 +391,9 @@ describe("val 114 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 4bb6a974… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
+  test("kaskadni artefakti držijo isti KG sha b5d3ae93… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^4bb6a974/);
+    expect(kgSha).toMatch(/^b5d3ae93/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

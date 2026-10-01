@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2b",
+  "page": 34,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-pXX-g0..2 + zz-/gz-pXX-rNN x22-x30 + diag x14 + tall prerezi s Blatt sidri + medstranski hišni preseki (h39 Schimer, h41/42 Pöching, h43 Brulla, h45 Strauß, h23-h28 Ring, h47/48 Hladnikhar, h29 Müllner, h64/67 Puchey, h27 Malwischly) + PUA presek + PT (house-register-1825) varianti + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a",
+  "register_rows": 21,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "zz-p34-r00..r20 (x24)",
+   "gz-p34-* (x26-x30 izbrani)",
+   "tall prerezi p34 (x3.4, Blatt sidra)"
+  ],
+  "note": "p34 = format \"Priimek, Krstno\" (druga pisarska roka); \"Piber\" ×5 = črnilo 'Ponter[?]' (P-o-n-t-er; brez PT/PUA preseka za h140-143); h68 'Eberl' = Ulrich Michel.[?] (E/U glyf; cf. del 2a p31-r14 'H?ich Mieö' isti h68 — oblika odprto vprašanje); Ring-familija potrjena: h28 ×2 Ring Michl + h26 ×2 Ring Johann (del 2a grozda); h14 haus POPRAVEK 26->28 (par struktura); h27 'Muhldorfer' = Mulschitsch[?]; h31 'Bruschatz' = Witschan[?] (K/W dvom); r20 (v115 vstavljena) = imenska celica PRAZNA — razhajanje odprto; 2 ditto ovrženih"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "142",
+   "seen_name": "Ponter, Mathl.[?]",
+   "old_haus": "142",
+   "old_name": "Piber, Matthel",
+   "verdict": "ime POPRAVEK Piber, Matthel -> Ponter, Mathl.[?] (x30: w1 'Ponter' — P + o + n + t + er, 5-6 minimov, ne \"Piber\"; brez PT/PUA preseka za h140-143 — [?]; w2 kratica Mathl., v57 Matthel = različica)"
+  },
+  "r1": {
+   "seen_haus": "80",
+   "seen_name": "Ponter, Mathl.[?]",
+   "old_haus": "80",
+   "old_name": "Piber, Matthel",
+   "verdict": "ime POPRAVEK Piber, Matthel -> Ponter, Mathl.[?] (h80 par z r0) + ditto ovržen: črnilo piše polno ime"
+  },
+  "r2": {
+   "seen_haus": "140",
+   "seen_name": "Ponter, Mathl.[?]",
+   "old_haus": "140",
+   "old_name": "Piber, Matthel",
+   "verdict": "ime POPRAVEK Piber, Matthel -> Ponter, Mathl.[?] (isti w1 kot r0/r1) + ditto ovržen: črnilo piše polno ime"
+  },
+  "r3": {
+   "seen_haus": "141",
+   "seen_name": "Ponter, Gorgy.[?]",
+   "old_haus": "141",
+   "old_name": "Piber, Georg",
+   "verdict": "ime POPRAVEK Piber, Georg -> Ponter, Gorgy.[?] (isti w1; w2 Gorgy = del-2a forma)"
+  },
+  "r4": {
+   "seen_haus": "142",
+   "seen_name": "Ponter, Martin.[?]",
+   "old_haus": "142",
+   "old_name": "Piber, Martin",
+   "verdict": "ime POPRAVEK Piber, Martin -> Ponter, Martin.[?] (h142 par z r0; rdeči pripis 'Postella[?]' + v114 razhajanje 6/4 ostajata)"
+  },
+  "r5": {
+   "seen_haus": "143",
+   "seen_name": "Ravella, Michl",
+   "old_haus": "143",
+   "old_name": "Ravella, Michl",
+   "verdict": "soglasje (w1 'Ravella[?]' ≈ v57 — P/R glyf-dvom opomba; w2 Michl ✓)"
+  },
+  "r6": {
+   "seen_haus": "18",
+   "seen_name": "Ulrich Michel.[?]",
+   "old_haus": "18",
+   "old_name": "Wurich, Albert",
+   "verdict": "ime POPRAVEK Wurich, Albert -> Ulrich Michel.[?] (w2 'Michel.' jasno ≠ Albert; w1 'Ulrich[?]/Urich[?]' — U/E, brez W — [?]; haus 18 potrjen x24: 1 + 8)"
+  },
+  "r7": {
+   "seen_haus": "32",
+   "seen_name": "Ulrich Georg.[?]",
+   "old_haus": "32",
+   "old_name": "Wurich, Georg",
+   "verdict": "ime POPRAVEK Wurich, Georg -> Ulrich Georg.[?] (h32 ×3; w2 'Georg.' jasno — p35-r8/r9 isti h32 'Ulrich Georg' potrjuje; w1 [?])"
+  },
+  "r8": {
+   "seen_haus": "68",
+   "seen_name": "Ulrich Michel.[?]",
+   "old_haus": "68",
+   "old_name": "Eberl, Michl",
+   "verdict": "ime POPRAVEK Eberl, Michl -> Ulrich Michel.[?] (x30: w1 'Elrich/Ulrich' — E/U glyf dvom; w2 Miehl[?]/Michel[?] dvom; cf. del 2a p31-r14 \"68 | H?ich Mieö\" -> 'Hoch Mito[?]' — isti h68, oblika odprto vprašanje, dvom izrecen)"
+  },
+  "r9": {
+   "seen_haus": "32",
+   "seen_name": "Ulrich Georg.[?]",
+   "old_haus": "32",
+   "old_name": "Wurich, Georg",
+   "verdict": "ime POPRAVEK Wurich, Georg -> Ulrich Georg.[?] (h32 par z r7)"
+  },
+  "r10": {
+   "seen_haus": "27",
+   "seen_name": "Mulschitsch Johann.[?]",
+   "old_haus": "27",
+   "old_name": "Muhldorfer, Johann",
+   "verdict": "ime POPRAVEK Muhldorfer, Johann -> Mulschitsch Johann.[?] (v57 'Muhldorfer' ne obstaja v črnilu — page-singleton; w1 'Mulschitsch[?]/Malwischly[?]' dvom — cf. p35-r12/r13 + p37-r17/r18 isti h27)"
+  },
+  "r11": {
+   "seen_haus": "30",
+   "seen_name": "Dappler, Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Dappler, Mathä",
+   "verdict": "ime POPRAVEK Dappler, Mathä -> Dappler, Mathl.[?] (w1 soglasna forma — '-len/-er' dvom opomba; w2 kratica Mathl., v57 Mathä = ekspanzija)"
+  },
+  "r12": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.",
+   "old_haus": "28",
+   "old_name": "Wuring, Michl",
+   "verdict": "ime POPRAVEK Wuring, Michl -> Ring Michl. (h28 = Ring hiša — del 2a grozda h23-h28; R-glyf; v57 \"Wuring\" = isto črnilo z W-namesto R)"
+  },
+  "r13": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "Wuring, Johann",
+   "verdict": "ime POPRAVEK Wuring, Johann -> Ring Johann. (h26 = Ring Johann — del 2a: p27-r1/r5, p29, p30)"
+  },
+  "r14": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.",
+   "old_haus": "26",
+   "old_name": "Wuring, Albert",
+   "verdict": "haus POPRAVEK 26->28 (x24 jasno; h28 par z r12 — parna struktura) + ime POPRAVEK Wuring, Albert -> Ring Michl. (isti zapis kot r12)"
+  },
+  "r15": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "Wuring, Johann",
+   "verdict": "ime POPRAVEK Wuring, Johann -> Ring Johann. (h26 par z r13)"
+  },
+  "r16": {
+   "seen_haus": "31",
+   "seen_name": "Witschan Martin.[?]",
+   "old_haus": "31",
+   "old_name": "Bruschatz, Martin",
+   "verdict": "ime POPRAVEK Bruschatz, Martin -> Witschan Martin.[?] (w1 'Witschan[?]/Krischan[?]' — K/W dvom; cf. p33-r15, p35-r10 isti h31; cf. p46 \"Witschkan\"; v57 Bruschatz fabriirana)"
+  },
+  "r17": {
+   "seen_haus": "31",
+   "seen_name": "Witschan Miche.[?]",
+   "old_haus": "31",
+   "old_name": "Bruschatz, Michl",
+   "verdict": "ime POPRAVEK Bruschatz, Michl -> Witschan Miche.[?] (h31 par z r16; w2 Miche[?]/Michl[?] dvom)"
+  },
+  "r18": {
+   "seen_haus": "32",
+   "seen_name": "Ulrich Georg.[?]",
+   "old_haus": "32",
+   "old_name": "Wurich, Georg",
+   "verdict": "ime POPRAVEK Wurich, Georg -> Ulrich Georg.[?] (h32 ×3 z r7/r9; v114 razhajanje 1038/1088 ostaja)"
+  },
+  "r19": {
+   "seen_haus": "68",
+   "seen_name": "Ulrich Mich.[?]",
+   "old_haus": "68",
+   "old_name": "Eberl, Michl",
+   "verdict": "ime POPRAVEK Eberl, Michl -> Ulrich Mich.[?] (h68 par z r8; w2 krajša forma Mich.[?]/Miehl[?] dvom)"
+  },
+  "r20": {
+   "seen_haus": "",
+   "seen_name": "(prazno)",
+   "old_haus": "",
+   "old_name": "Hurich/Lohingr Mich.[?]",
+   "verdict": "razhajanje odprto: v115 vstavljena vrstica (kla 70, kultur Lubya) — imenska celica črnila PRAZNA na pričakovani poziciji (med r19 in Fürtragom, x8 autocontrast); v115 'Hurich/Lohingr Mich.[?]' ni potrjena ne ovržena — v115 vrednost ostaja"
+  }
+ }
+}

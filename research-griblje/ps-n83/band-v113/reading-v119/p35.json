@@ -1,0 +1,159 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2b",
+  "page": 35,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-pXX-g0..2 + zz-/gz-pXX-rNN x22-x30 + diag x14 + tall prerezi s Blatt sidri + medstranski hišni preseki (h39 Schimer, h41/42 Pöching, h43 Brulla, h45 Strauß, h23-h28 Ring, h47/48 Hladnikhar, h29 Müllner, h64/67 Puchey, h27 Malwischly) + PUA presek + PT (house-register-1825) varianti + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "zz-p35-r00..r19 (x24)",
+   "gz-p35-* (x26-x30 izbrani)",
+   "tall prerezi p35 (x3.4, Blatt sidra)"
+  ],
+  "note": "p35: \"Witsch\" ×6 = fabriirana (črnilo Ulrich/Stüllach/Deuwaldich/Krischan/Dappler/Ring); h68 ×2 = Ulrich Michel (presek p34); h34 ×2 = Stüllach Mathl (presek p33); h32 ×2 = Ulrich Georg (rešuje p34 h32 w2 = Georg, ne Grangy); h20 = Deuwaldich (presek p33); h31 = Krischan Marko; h30 ×3 = Dappler Mathl (presek p34-r11); h26 ×2 = Ring Johann; h28 ×2 = Ring (Michl/Milo); h27 ×2 Malwischly soglasje; h1 Wier Grunigman + h\"k\" Gemein[e] soglasje; brez haus POPRAVEK, brez ditto"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "68",
+   "seen_name": "Ulrich Michel.[?]",
+   "old_haus": "68",
+   "old_name": "Witsch Miko",
+   "verdict": "ime POPRAVEK Witsch Miko -> Ulrich Michel.[?] (h68 presek p34-r8/r19; v57 fabriirana)"
+  },
+  "r1": {
+   "seen_haus": "35",
+   "seen_name": "Killach Mathl.[?]",
+   "old_haus": "35",
+   "old_name": "Pirih Matheu",
+   "verdict": "ime POPRAVEK Pirih Matheu -> Killach Mathl.[?] (x24: w1 'Killach[?]' — K-inicial, cf. h34 Stüllach druga družina; rdeči pripis na vrstici ostaja; w2 kratica Mathl.)"
+  },
+  "r2": {
+   "seen_haus": "34",
+   "seen_name": "Stüllach Mathl.[?]",
+   "old_haus": "34",
+   "old_name": "Witsch Mathä",
+   "verdict": "ime POPRAVEK Witsch Mathä -> Stüllach Mathl.[?] (h34 presek p33-r4/r5/r7; w1 St-forma jasna; w2 'Mathl.[?]/Mathe[?]')"
+  },
+  "r3": {
+   "seen_haus": "34",
+   "seen_name": "Stüllach Mathl.[?]",
+   "old_haus": "34",
+   "old_name": "Witsch Mathä",
+   "verdict": "ime POPRAVEK Witsch Mathä -> Stüllach Mathl.[?] (h34 par z r2)"
+  },
+  "r4": {
+   "seen_haus": "1",
+   "seen_name": "Wier Grunigman",
+   "old_haus": "1",
+   "old_name": "Wier Grunigman",
+   "verdict": "soglasje (w1 'Wier[?]' + w2 'Grunigman[?]' ≈ v57 — oblika nejasna pri x24, [?]; PUA h.1 \"Schinig Major\" nezadosten presek)"
+  },
+  "r5": {
+   "seen_haus": "20",
+   "seen_name": "Deuwaldich Mathl.[?]",
+   "old_haus": "20",
+   "old_name": "Drucklhofer Matheu",
+   "verdict": "ime POPRAVEK Drucklhofer Matheu -> Deuwaldich Mathl.[?] (h20 presek p33-r6/r16; v57 fabriirana)"
+  },
+  "r6": {
+   "seen_haus": "k",
+   "seen_name": "Gemeinde",
+   "old_haus": "k",
+   "old_name": "Gemeinde",
+   "verdict": "soglasje (črnilo \"Gemeinde\" jasno; haus \"k\" kot v57)"
+  },
+  "r7": {
+   "seen_haus": "68",
+   "seen_name": "Ulrich Michel.[?]",
+   "old_haus": "68",
+   "old_name": "Witsch Miko",
+   "verdict": "ime POPRAVEK Witsch Miko -> Ulrich Michel.[?] (h68 par z r0)"
+  },
+  "r8": {
+   "seen_haus": "32",
+   "seen_name": "Ulrich Georg.",
+   "old_haus": "32",
+   "old_name": "Witsch Georg",
+   "verdict": "ime POPRAVEK Witsch Georg -> Ulrich Georg. (h32 presek p34-r7/r9/r18; w2 Georg jasno — popravlja tudi p34 h32 w2 branja)"
+  },
+  "r9": {
+   "seen_haus": "32",
+   "seen_name": "Ulrich Georg.",
+   "old_haus": "32",
+   "old_name": "Witsch Georg",
+   "verdict": "ime POPRAVEK Witsch Georg -> Ulrich Georg. (h32 par z r8)"
+  },
+  "r10": {
+   "seen_haus": "31",
+   "seen_name": "Krischan Marko.[?]",
+   "old_haus": "31",
+   "old_name": "Mikoschich Matheo",
+   "verdict": "ime POPRAVEK Mikoschich Matheo -> Krischan Marko.[?] (h31 presek p33-r15 + p34-r16/r17; w1 K/W dvom; w2 'Marko[?]/Marto[?]' dvom)"
+  },
+  "r11": {
+   "seen_haus": "30",
+   "seen_name": "Dappler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Leupold Matheo",
+   "verdict": "ime POPRAVEK Leupold Matheo -> Dappler Mathl.[?] (h30 presek p34-r11; isti w1)"
+  },
+  "r12": {
+   "seen_haus": "27",
+   "seen_name": "Malwischly Johann.[?]",
+   "old_haus": "27",
+   "old_name": "Malwischly Johann",
+   "verdict": "soglasje (w1 'Malwischly[?]/Malleschily[?]' ≈ v57 Mallwitsch-familija — forma-dvom opomba; h27 presek p34-r10 Mulschitsch[?] — oblika odprta) "
+  },
+  "r13": {
+   "seen_haus": "27",
+   "seen_name": "Malwischly Johann.[?]",
+   "old_haus": "27",
+   "old_name": "Malwischly Johann",
+   "verdict": "soglasje (h27 par z r12; isti opombi)"
+  },
+  "r14": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "Pirig Johand",
+   "verdict": "ime POPRAVEK Pirig Johand -> Ring Johann. (h26 presek p34-r13/r15 + del 2a; R-glyf z zanko)"
+  },
+  "r15": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "Pirig Johand",
+   "verdict": "ime POPRAVEK Pirig Johand -> Ring Johann. (h26 par z r14)"
+  },
+  "r16": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.",
+   "old_haus": "28",
+   "old_name": "Piring Miko",
+   "verdict": "ime POPRAVEK Piring Miko -> Ring Michl. (h28 presek p34-r12/r14)"
+  },
+  "r17": {
+   "seen_haus": "30",
+   "seen_name": "Dappler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Frugel Matheo",
+   "verdict": "ime POPRAVEK Frugel Matheo -> Dappler Mathl.[?] (h30 ×3 z r11/r18)"
+  },
+  "r18": {
+   "seen_haus": "30",
+   "seen_name": "Dappler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Leupold Matheo",
+   "verdict": "ime POPRAVEK Leupold Matheo -> Dappler Mathl.[?] (h30 par z r11/r17)"
+  },
+  "r19": {
+   "seen_haus": "28",
+   "seen_name": "Ring Milo.[?]",
+   "old_haus": "28",
+   "old_name": "Piring Miko",
+   "verdict": "ime POPRAVEK Piring Miko -> Ring Milo.[?] (h28 par z r16; w2 'Milo[?]/Michl[?]' dvom — cf. del 2a \"Ring Mito[?]\")"
+  }
+ }
+}
