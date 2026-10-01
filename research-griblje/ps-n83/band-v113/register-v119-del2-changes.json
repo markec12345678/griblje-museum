@@ -1,0 +1,1178 @@
+{
+ "val": "119-del2",
+ "stats": {
+  "owner_fixes": 71,
+  "haus_fixes": 30,
+  "anmerkung_adds": 6,
+  "ditto_clears": 7,
+  "open_discrepancies": 5,
+  "cross_val_fixes": 1,
+  "pages_covered": [
+   "p26",
+   "p27",
+   "p28",
+   "p29",
+   "p30",
+   "p31"
+  ],
+  "rows_covered": 120
+ },
+ "changes": [
+  {
+   "index": 410,
+   "page": 23,
+   "row_in_page": 4,
+   "type": "v119d2_owner_cross_val_fix",
+   "field": "owner_original",
+   "old": "Krause Gorgy",
+   "new": "Strauß Gorgy",
+   "note": "val 119 del 2 cross-val fix: x16 primerjava črnila p23-r4 s p28-r9 (isti h15) pokaže identičen niz \"Strauffs\" s t-prečko = Strauß; val 119 del 1 jebral \"Krause\" (brez t-prečke = h45 Krause na p23-r14, ki ostaja); h15 = Strauß hiša (p23-r4 + p28-r9)"
+  },
+  {
+   "index": 410,
+   "page": 23,
+   "type": "anmerkung_add",
+   "text": "[v119 del 2: popravek lastnika — črnilo = Strauß (x16 p23-r4≡p28-r9, isti h15); \"Krause\" ostaja za h45 p23-r14/r18]"
+  },
+  {
+   "index": 467,
+   "page": 26,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michelkorn Michel",
+   "new": "Michelkorn Peter[?]",
+   "note": "ime POPRAVEK Michelkorn Michel -> Michelkorn Peter[?] (x20: druga beseda P-e-t-e-r z dolgim zaključnim dvigom = r; NI 'Michel'); ditto ovržen: črnilo piše polno ime, ne d° (v57 'Ditto [rot]' pobrisan); končnica -r/[?] negotova brez druge instance; haus soglasje 46"
+  },
+  {
+   "index": 472,
+   "page": 26,
+   "row_in_page": 6,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "38",
+   "new": "28",
+   "note": "haus POPRAVEK 38->28 (x20: okrogla 2-forma identična r5/r9, NI dvokotljasta 3 kot r13; 8 z dolgim repom); ime soglasje"
+  },
+  {
+   "index": 475,
+   "page": 26,
+   "row_in_page": 9,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "36",
+   "new": "26",
+   "note": "haus POPRAVEK 36->26 (x20: okrogla 2-forma identična r5; r4 je edini 3-glijf med Ring-Johann vrsticami); ime soglasje"
+  },
+  {
+   "index": 478,
+   "page": 26,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stangl Georg",
+   "new": "Pobezy Georg",
+   "note": "ime POPRAVEK Stangl Georg -> Pobezy Georg (x20: isti priimek-glijf kot r11 'Pobezy' — P-začetnica + enaka končnica -zy; 'Stangl' ima S-dolg zank, črnilo ga NIMA); haus soglasje 41"
+  },
+  {
+   "index": 481,
+   "page": 26,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wurzel Michl",
+   "new": "Brulla Michl[?]",
+   "note": "ime POPRAVEK Wurzel Michl -> Brulla Michl[?] (x24: začetnica ℬ = Kurrent B — navpično steblo + 3-zanka, NI 𝒲 dvojni V kot bi zahteval 'Wurzel'; telo B-r-u-l-l-a, brez z-spuščnika in brez končnega -l; cf. 'Brullat Michl' p6 h162 = ista družina, tu brez -t; [?] na -a/-t končnici); haus soglasje 43"
+  },
+  {
+   "index": 483,
+   "page": 26,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "35",
+   "new": "25",
+   "note": "haus POPRAVEK 35->25 (x20: okrogla 2-forma + 5 z zastavico, NI 3); ime soglasje (R-glijf = velika skleda z notranjo zanko, identična p27-r1 referenci)"
+  },
+  {
+   "index": 484,
+   "page": 26,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pirn Michael",
+   "new": "Ring Michael",
+   "note": "ime POPRAVEK Pirn Michael -> Ring Michael + haus POPRAVEK 214->24 (x20: R-glijf = velika skleda z notranjo zanko = p27-r1 'Ring' referenca; g-spuščnik sred besede IZKLJUČUJE 'Pirn' (brez spuščnika); haus dve števki 2+4 (A-oblika 4 kot r14 '44'), sredinske 1 NI — v57 '214' fabriirana vstavljanje; PUA h.214 prazen vnos = brez opore)"
+  },
+  {
+   "index": 484,
+   "page": 26,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "214",
+   "new": "24",
+   "note": "ime POPRAVEK Pirn Michael -> Ring Michael + haus POPRAVEK 214->24 (x20: R-glijf = velika skleda z notranjo zanko = p27-r1 'Ring' referenca; g-spuščnik sred besede IZKLJUČUJE 'Pirn' (brez spuščnika); haus dve števki 2+4 (A-oblika 4 kot r14 '44'), sredinske 1 NI — v57 '214' fabriirana vstavljanje; PUA h.214 prazen vnos = brez opore)"
+  },
+  {
+   "index": 485,
+   "page": 26,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stangl Georg",
+   "new": "Pavlicz Georg[?]",
+   "note": "ime POPRAVEK Stangl Georg -> Pavlicz Georg[?] + haus POPRAVEK 64->67 (x20: P/R-začetnica z veliko skledo, NI S 'Stangl'; telo -a-u/n-l-s/e-y → najboljši ujemalec 'Pavlicz' (register p13 ×7); [?] na črkovanju; križni presek: h67 = 'Pavlič Georg' p27-r11 + 'Pavlic Georg' p28-r3/r9 — ISTA hiša, isti lastnik; haus x12: 6-zanka + 7-dvig, NI A-oblika 4)"
+  },
+  {
+   "index": 485,
+   "page": 26,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "64",
+   "new": "67",
+   "note": "ime POPRAVEK Stangl Georg -> Pavlicz Georg[?] + haus POPRAVEK 64->67 (x20: P/R-začetnica z veliko skledo, NI S 'Stangl'; telo -a-u/n-l-s/e-y → najboljši ujemalec 'Pavlicz' (register p13 ×7); [?] na črkovanju; križni presek: h67 = 'Pavlič Georg' p27-r11 + 'Pavlic Georg' p28-r3/r9 — ISTA hiša, isti lastnik; haus x12: 6-zanka + 7-dvig, NI A-oblika 4)"
+  },
+  {
+   "page": 26,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2) p26: 10 sprememb; p26 = 2↔3 šum v smeri 3→2 (v57 je 3× prebrala 2 kot 3: r6 38→28, r9 36→26, r17 35→25; r4 36 je PRAV — glijf kompaktni curl-zigzag = 3-varianta, jasno ločljiv od r5/r9 okrogle 2). v57 r18 'Pirn Michael' h214 = dvojna napaka: črnilo 'Ring Michael' h24 (R-glijf = velika skleda z notranjo zanko, identična p27-r1 'Ring' referenci x24; g-spuščnik sred besede izključuje 'Pirn'; brez sredinske 1 v haus). "
+  },
+  {
+   "index": 486,
+   "page": 27,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Widmann Michael",
+   "new": "Brünig[?] Mathä[?]",
+   "note": "ime POPRAVEK Widmann Michael -> Brünig[?] Mathä[?] (x20/x24: ℬ-začetnica = Kurrent B, IZKLJUČUJE 'Widmann' 𝒲; telo priimka B-r/i-ü/i-n-a + spuščni rep — najboljša ujemanja 'Brünig' (p66 ×14) / 'Brinny' (p63 ×3), [?]; krstno M-a-th-ä z dvigovalko — 'Mathä' forma na isti strani (r12/r15) + 'Brünig Matthäus' p66 ×3; rdeča podčrtja skozi ime); haus soglasje 23"
+  },
+  {
+   "index": 488,
+   "page": 27,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Hantspa?ig an[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 490,
+   "page": 27,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kreuker Michael",
+   "new": "Kreuker Mäthel[?]",
+   "note": "ime POPRAVEK Kreuker Michael -> Kreuker Mäthel[?] (x20: krstno M-ä/th-e-l — brez i-c-h zveze; cf. 'Mäthel' forma p30 (Zachter/Bulter/Andres Mäthel) + 'Mathl' p30-r16/17; [?] ä/e); haus soglasje 30"
+  },
+  {
+   "index": 492,
+   "page": 27,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"M?assga?ungan[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 494,
+   "page": 27,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hauschild Mathä",
+   "new": "Haischan[?] Mathä",
+   "note": "ime POPRAVEK Hauschild Mathä -> Haischan[?] Mathä (x20: telo H-a/i-s/c-h-a-n — brez '-child' zveze; v57 'Hauschild' = EDINA instanca v 2875 vrsticah = brez opore; krstno 'Mathä' jasno; PUA h.5 = Dragosch/Brugt — druga plast, brez opore za 'Hauschild'); haus soglasje 5"
+  },
+  {
+   "index": 496,
+   "page": 27,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "23",
+   "new": "25",
+   "note": "haus POPRAVEK 23->25 (x20: okrogla 2 + 5 s zastavico — jasno ne 3); ime soglasje"
+  },
+  {
+   "index": 499,
+   "page": 27,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "24",
+   "note": "haus POPRAVEK 26->24 (x20: 2 + A-oblika 4 kot p26-r18/r14 '44'); ime soglasje"
+  },
+  {
+   "index": 500,
+   "page": 27,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "25",
+   "note": "haus POPRAVEK 26->25 (x12: '25' jasno); ime soglasje"
+  },
+  {
+   "index": 501,
+   "page": 27,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "33",
+   "new": "23",
+   "note": "haus POPRAVEK 33->23 (x20: okrogla 2 + dvokotljasta 3 — desetice 3→2); ime soglasje"
+  },
+  {
+   "index": 503,
+   "page": 27,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Leue Michael",
+   "new": "Ring Michl",
+   "note": "ime POPRAVEK Leue Michael -> Ring Michl (x16: jasno 'Ring Michl.' — R-skleda + Michl s piko; v57 'Leue' NE obstaja v črnilu — fabriirano, edina instanca v registru); haus soglasje 24"
+  },
+  {
+   "index": 505,
+   "page": 27,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ring Michael",
+   "new": "Ring Mathä",
+   "note": "ime POPRAVEK Ring Michael -> Ring Mathä + haus POPRAVEK 33->23 (x16: krstno 'Mathä.' s piko — NI 'Michael'; haus rdeče črnilo '23': 2 + dvokotljasta 3, desetice 3→2)"
+  },
+  {
+   "index": 505,
+   "page": 27,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "33",
+   "new": "23",
+   "note": "ime POPRAVEK Ring Michael -> Ring Mathä + haus POPRAVEK 33->23 (x16: krstno 'Mathä.' s piko — NI 'Michael'; haus rdeče črnilo '23': 2 + dvokotljasta 3, desetice 3→2)"
+  },
+  {
+   "page": 27,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2) p27: 10 sprememb; p27 = v57 imenska plast mešanica: 'Widmann Michael' (r0) fabriirano (črnilo ℬ = 'Brünig[?] Mathä[?]', cf. Brünig p66 ×14 + Mathä-forma r12/r15); 'Kreuker Michael' (r4) = črnilo 'Mäthel[?]' (brez i-c-h; cf. p30 Mäthel-forma); 'Hauschild' (r8) = edina instanca v registru, črnilo 'Haischan[?]' brez '-child' zveze; 'Leue Michael' (r17) = fabriirano (črnilo jasno 'Ring Michl'); r19 'Ring Michael' = črn"
+  },
+  {
+   "index": 506,
+   "page": 28,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Müllig Samuel",
+   "new": "Müllag Johann",
+   "note": "ime POPRAVEK Müllig Samuel -> Müllag Johann (x16: krstno 'Johann.' jasno z piko — NI 'Samuel'; priimek M-ü/l-l-a-g z g-repom; cf. 'Mullag' p26-r16 v57 + 'Müller' p29/p31 v57 — ista družina, spelling variante); haus soglasje 29"
+  },
+  {
+   "index": 507,
+   "page": 28,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michael",
+   "new": "Ring Michael",
+   "note": "ime POPRAVEK Wernig Michael -> Ring Michael (x16: R-glijf = velika skleda z notranjo zanko = p27-r1 referenca; NI 𝒲 'Wernig'; h24 = ISTA hiša kot p26-r18 + p27-r9 'Ring Michael' — trojni presek); haus soglasje 24"
+  },
+  {
+   "index": 508,
+   "page": 28,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michl",
+   "new": "Ring Mito",
+   "note": "ime POPRAVEK Wernig Michl -> Ring Mito (x16: R-glijf + krstno M-i-t-o — t-prečka + o-zanka, NI 'Michl'; h25 = ISTA hiša kot p27-r10/r14/r18 'Ring Mito' — štirikotni presek); haus soglasje 25"
+  },
+  {
+   "index": 510,
+   "page": 28,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stadtpfarrkirche[?]",
+   "new": "Jakobschitsch Mathä[?]",
+   "note": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (x16: črnilo = osebno ime J-začetnik s spuščnikom + '-?fschitsch' telo + krstno 'Mathä.'; v57 'Stadtpfarrkirche' = fabriirana institucija — črnilo se NE ujema (začetnica + dolžina); PUA h.9 'Jakoffitschek' = ista družina (druga dokumentarna plast); [?] na sredini priimka (k/f/b dvom); haus soglasje 8"
+  },
+  {
+   "index": 511,
+   "page": 28,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "12",
+   "new": "13",
+   "note": "razhajanje odprto (ime) + haus POPRAVEK 12->13 (x20: 1 + dvokotljasta 3): črnilo = dolgo sklenjeno ime 'Jak?fschitschkri?gelaung[?]' (x24 deli berljivi, celota NE) — v57 'Stadtpfarrkirche[?]' utemeljeno zavrnjeno (različna struktura), a nadomestek ni varno berljiv za POPRAVEK; anmerkung zabeležen"
+  },
+  {
+   "index": 511,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Jakobschitschkri?gelaung[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 512,
+   "page": 28,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stadtpfarrkirche[?]",
+   "new": "Jakobschitsch Mathä[?]",
+   "note": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (x16: isti niz kot r4 — isti h8, isti lastnik)"
+  },
+  {
+   "index": 513,
+   "page": 28,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Blaschke Georg",
+   "new": "Blakutscher Georg[?]",
+   "note": "ime POPRAVEK Blaschke Georg -> Blakutscher Georg[?] (x16: telo B-l-a-?-u-t-s-ch-e-r — daljše od v57 'Blaschke' (brez -u-ts- zveze v v57); [?] na sredinskih zlogih (k/b, t/s dvom); PUA h.48 'Höchsthaler' ne ujema — druga plast); haus soglasje 48"
+  },
+  {
+   "index": 514,
+   "page": 28,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Novakl Martinl",
+   "new": "Novach Martinl[?]",
+   "note": "ime POPRAVEK Novakl Martinl -> Novach Martinl[?] (x16: po 'Nova' prekrižani ch-par — NI k+l zveze; krstno 'Martinl' soglasje; [?]); haus soglasje 4"
+  },
+  {
+   "index": 515,
+   "page": 28,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pavlic Georg",
+   "new": "Strauß Georg",
+   "note": "ime POPRAVEK Pavlic Georg -> Strauß Georg (x24: S-začetnica + t-prečka + '-rauff' = ß — 'Strauß'; NI P 'Pavlic'; h15 = ISTA hiša kot p23-r4, kjer je val 119 del 1 zapisal 'Krause Gorgy' — x16 obeh izrezov pokaže identično 'Strauffs' črnilo z t-prečko; p23-r14 h45 'Krause' ostaja prav (brez t-prečke) → popravek p23-r4 'Krause Gorgy' -> 'Strauß Gorgy' izrecno v delu 2 build skripti kot cross-val fix)"
+  },
+  {
+   "index": 516,
+   "page": 28,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stadtpfarrkirche[?]",
+   "new": "Jakobschitsch Mathä[?]",
+   "note": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (isti niz kot r4/r6 — h8 parcela)"
+  },
+  {
+   "index": 517,
+   "page": 28,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pavlic Georg",
+   "new": "Strauß Georg",
+   "note": "ime POPRAVEK Pavlic Georg -> Strauß Georg (x16: isti 'Strauffs' niz z t-prečko kot r9; h13 = 2. parcela istega lastnika)"
+  },
+  {
+   "index": 518,
+   "page": 28,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stadtpfarrkirche[?]",
+   "new": "Jakobschitsch Mathä[?]",
+   "note": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (isti niz kot r4 — h9 parcela; PUA h.9 'Jakoffitschek' presek najmočnejši prav tu)"
+  },
+  {
+   "index": 519,
+   "page": 28,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "12",
+   "new": "13",
+   "note": "razhajanje odprto (ime) + haus POPRAVEK 12->13 (x20: '13' jasno): črnilo = dolgo sklenjeno ime (x14: '?ak?fschilchk?ühelaung' — konec '-elaung', sredina neprepričljiva) — v57 'Stadtpfarrkirche[?]' zavrnjena, nadomestek neberljiv do konca; anmerkung"
+  },
+  {
+   "index": 519,
+   "page": 28,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Jakobschitschkühelaung[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 520,
+   "page": 28,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stadtpfarrkirche[?]",
+   "new": "Jakobschitsch Nicolaus[?]",
+   "note": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Nicolaus[?] (x14: krstno 'Nie'olaus' = Nicolaus — N + -ie-ol-aus; [?] na priimku kot pri r4)"
+  },
+  {
+   "index": 521,
+   "page": 28,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stadtpfarrkirche[?]",
+   "new": "Jakobschitsch Nicolaus[?]",
+   "note": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Nicolaus[?] (isti niz kot r14 — h13 parcela)"
+  },
+  {
+   "index": 522,
+   "page": 28,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stadtpfarrkirche[?]",
+   "new": "Jakobschitsch Mathä[?]",
+   "note": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (isti niz kot r4/r12 — h9 parcela)"
+  },
+  {
+   "index": 523,
+   "page": 28,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michl",
+   "new": "Ring Mito",
+   "note": "ime POPRAVEK Wernig Michl -> Ring Mito (x14: R-glijf + 'Mie'o' = Mito; h25 presek p27+p28-r2)"
+  },
+  {
+   "index": 524,
+   "page": 28,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michael",
+   "new": "Ring Michael",
+   "note": "ime POPRAVEK Wernig Michael -> Ring Michael (x14: h24 presek p26-r18/p27-r9/p28-r1)"
+  },
+  {
+   "index": 525,
+   "page": 28,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michael",
+   "new": "Ring Mathä",
+   "note": "ime POPRAVEK Wernig Michael -> Ring Mathä + haus POPRAVEK 20->23 (x14: krstno 'Mathä.' z piko; haus 2 + dvokotljasta 3; h23 = ISTA hiša kot p27-r15 'Ring Mathä' — dvojni presek)"
+  },
+  {
+   "index": 525,
+   "page": 28,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "20",
+   "new": "23",
+   "note": "ime POPRAVEK Wernig Michael -> Ring Mathä + haus POPRAVEK 20->23 (x14: krstno 'Mathä.' z piko; haus 2 + dvokotljasta 3; h23 = ISTA hiša kot p27-r15 'Ring Mathä' — dvojni presek)"
+  },
+  {
+   "page": 28,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2) p28: 20 sprememb; p28 = NAJHUJŠA v57 imenska stran doslej: (1) vseh 5 'Wernig' vrstic (r1/r2/r17/r18/r19) = črnilo 'Ring' (R-glijf z notranjo zanko, identičen p27-r1 referenci; 'Wernig' 𝒲 NE obstaja v črnilu) — h24 Ring Michael, h25 Ring Mito, h23 Ring Mathä, vsi z medstranskimi preseki; (2) vseh 7 'Stadtpfarrkirche[?]' vrstic (r4/r5/r6/r10/r12/r13/r14/r15/r16) = črnilo OSEBNA IMENA: 'Jak?fschitsch Mathä' (r4/r6/r1"
+  },
+  {
+   "index": 527,
+   "page": 29,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Johann",
+   "new": "Ring Johann",
+   "note": "ime POPRAVEK Preinig Johann -> Ring Johann (x16: R-glijf z notranjo zanko = p27-r1 referenca; h26 = ISTA hiša kot p27-r1/r5 'Ring Johann'); haus soglasje 26"
+  },
+  {
+   "index": 528,
+   "page": 29,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Michl",
+   "new": "Ring Mito",
+   "note": "ime POPRAVEK Preinig Michl -> Ring Mito (x16: R-glijf + krstno M-i-t-o — t-prečka + o-zanka, NI 'Michl'); haus soglasje 26"
+  },
+  {
+   "index": 529,
+   "page": 29,
+   "row_in_page": 3,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "24",
+   "new": "27",
+   "note": "haus POPRAVEK 24->27 (x16: 2 + 7-dvig, NI A-oblika 4; h27 = Matschitsch hiša konsistentno r8/r15/r16); ime soglasje (črnilo 'Malleschildch[?]' = ista oblika kot p27-r3/r7)"
+  },
+  {
+   "index": 530,
+   "page": 29,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stuker Michl",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] (x16: krstno M-ä/th-l — brez i-ch zveze; priimek po v57 'Stuker' — črnilo '?tukl-er' z mejo berljivosti, [?]); haus soglasje 30"
+  },
+  {
+   "index": 532,
+   "page": 29,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Georg",
+   "new": "Ring Georg",
+   "note": "ime POPRAVEK Preinig Georg -> Ring Georg (R-glijf; cf. p26-r12 'Pobezy Georg' h41 ne — tu lastni Georg Ring h26)"
+  },
+  {
+   "index": 533,
+   "page": 29,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Michl",
+   "new": "Ring Mito",
+   "note": "ime POPRAVEK Preinig Michl -> Ring Mito (x16: R-glijf + Mito-forma; h28)"
+  },
+  {
+   "index": 535,
+   "page": 29,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stuker Michl",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] (isti niz kot r4 — h30 parcela)"
+  },
+  {
+   "index": 536,
+   "page": 29,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Michael",
+   "new": "Ring Michael",
+   "note": "ime POPRAVEK Preinig Michael -> Ring Michael (R-glijf; h24 = ISTA hiša kot p26-r18/p27-r9/p28-r1/r18 'Ring Michael' — peterostruki presek)"
+  },
+  {
+   "index": 537,
+   "page": 29,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Mier",
+   "new": "Ring Mito",
+   "note": "ime POPRAVEK Preinig Mier -> Ring Mito (R-glijf + Mito; h25 = ISTA hiša kot p27-r10/r14/r18 + p28-r2/r17 — šestersotruki presek; v57 'Mier' = zgrešeno 'Mito')"
+  },
+  {
+   "index": 538,
+   "page": 29,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Müller Daniel",
+   "new": "Müller Johann",
+   "note": "ime POPRAVEK Müller Daniel -> Müller Johann (x16: krstno J-spuščnik = Johann, NI D kot r0; cf. p31 'Müller Hannes' h29 — Johann/Hannes ista oseba); haus soglasje 29"
+  },
+  {
+   "index": 539,
+   "page": 29,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stuker Michl",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] (isti niz kot r4 — h30 parcela)"
+  },
+  {
+   "index": 540,
+   "page": 29,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stuker Michl",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] + haus POPRAVEK 00->30 (x16: haus '30' jasno — v57 '00' = odpadek; h30 = 4. Stuker parcela)"
+  },
+  {
+   "index": 540,
+   "page": 29,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "00",
+   "new": "30",
+   "note": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] + haus POPRAVEK 00->30 (x16: haus '30' jasno — v57 '00' = odpadek; h30 = 4. Stuker parcela)"
+  },
+  {
+   "index": 542,
+   "page": 29,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Matschitsch Johani",
+   "new": "Matschitsch Johann",
+   "note": "ime POPRAVEK Matschitsch Johani -> Matschitsch Johann (črnilo 'Johann' — v57 'Johani' = odpadek; h27 parcela)"
+  },
+  {
+   "index": 543,
+   "page": 29,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Johann",
+   "new": "Ring Johann",
+   "note": "ime POPRAVEK Preinig Johann -> Ring Johann (R-glijf; h26 parcela)"
+  },
+  {
+   "index": 544,
+   "page": 29,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Johann",
+   "new": "Ring Johann",
+   "note": "ime POPRAVEK Preinig Johann -> Ring Johann (R-glijf; h26 parcela)"
+  },
+  {
+   "index": 545,
+   "page": 29,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preinig Mier",
+   "new": "Ring Mito",
+   "note": "ime POPRAVEK Preinig Mier -> Ring Mito (R-glijf + Mito; v57 'Mier' = zgrešeno 'Mito'; h28 parcela)"
+  },
+  {
+   "page": 29,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2) p29: 17 sprememb; p29 = vseh 9 'Preinig' vrstic (r1/r2/r6/r7/r10/r11/r17/r18/r19) = črnilo 'Ring' (R-glijf z notranjo zanko = p27-r1 referenca; 'Preinig' P-r-: črnilo NIMA P) — Ring-grozda h23(Mathä)/h24(Michael)/h25(Mito)/h26(Johann+Mito)/h28(Mito+Georg) se nadaljuje s p26/p27/p28; v57 'Preinig' = page-level fabriakcija (priimek NE obstaja v črnilu te strani). 'Stuker Michl' ×4 (r4/r9/r13/r14) = črnilo 'Stuker Mat"
+  },
+  {
+   "index": 546,
+   "page": 30,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Andreas Muffel",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Andreas Muffel -> Stuker Mathl[?] (nz-g0: črnilo '?tukler Mathl.' = isti niz kot p29-r4/r9/r13/r14 — h30 Stuker hiša; 'Andreas Muffel' ne obstaja v črnilu)"
+  },
+  {
+   "index": 548,
+   "page": 30,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Brung Kasparl",
+   "new": "Ring Johann",
+   "note": "ime POPRAVEK Brung Kasparl -> Ring Johann (nz-g0: R-glijf + 'Johann'; h26 = Ring Johann hiša — 6. presek); haus soglasje 26"
+  },
+  {
+   "index": 549,
+   "page": 30,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pring Michl",
+   "new": "Ring Mito",
+   "note": "ime POPRAVEK Pring Michl -> Ring Mito (nz-g0: R-glijf + Mito; h28 presek p29-r7/r19; v57 'Pring' ≈ zgrešeni R)"
+  },
+  {
+   "index": 550,
+   "page": 30,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Zachter Mäthel",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Zachter Mäthel -> Stuker Mathl[?] (isti niz kot r0 — h30 parcela)"
+  },
+  {
+   "index": 551,
+   "page": 30,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Bulter Mäthel",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Bulter Mäthel -> Stuker Mathl[?] (isti niz kot r0 — h30 parcela)"
+  },
+  {
+   "index": 554,
+   "page": 30,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Brung Kasparl",
+   "new": "Ring Johann",
+   "note": "ime POPRAVEK Brung Kasparl -> Ring Johann (nz-g1: R-glijf + Johann; h26 parcela)"
+  },
+  {
+   "index": 555,
+   "page": 30,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Brung Kasparl",
+   "new": "Ring Johann",
+   "note": "ime POPRAVEK Brung Kasparl -> Ring Johann (nz-g1; h26 parcela)"
+  },
+  {
+   "index": 556,
+   "page": 30,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "87",
+   "new": "27",
+   "note": "haus POPRAVEK 87->27 (nz-g1: okrogla 2-forma + 7, NI 8-dvojna zanka; h27 Mattheitsch sekvencia r1/r6/r7/r10); ime soglasje"
+  },
+  {
+   "index": 557,
+   "page": 30,
+   "row_in_page": 11,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "87",
+   "new": "27",
+   "note": "haus POPRAVEK 87->27 (isti glijf kot r10; rdeča opomba 'n: J: 1855' pod vrstico ne moti); ime soglasje"
+  },
+  {
+   "index": 558,
+   "page": 30,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Andres Mäthel",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Andres Mäthel -> Stuker Mathl[?] (isti niz kot r0 — h30 parcela)"
+  },
+  {
+   "index": 559,
+   "page": 30,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Bulter Mäthel",
+   "new": "Stuker Mathl[?]",
+   "note": "ime POPRAVEK Bulter Mäthel -> Stuker Mathl[?] (isti niz kot r0 — h30 parcela)"
+  },
+  {
+   "index": 560,
+   "page": 30,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "68",
+   "new": "67",
+   "note": "haus POPRAVEK 68->67 (x20: 6-zanka + 7-dvig; h67 = pavška hiša p26-p29); ime soglasje (črnilo 'Pacheag[?]' — spelling varianta, cf. h67 anmerkung p26-r19)"
+  },
+  {
+   "index": 562,
+   "page": 30,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Brung Mathl",
+   "new": "Ring Mathä",
+   "note": "ime POPRAVEK Brung Mathl -> Ring Mathä + haus POPRAVEK 22->23 (x20 haus: okrogla 2 + dvokotljasta 3; ime: R-glijf + 'Mathä.'; h23 = Ring Mathä hiša — 3. presek p27-r15/p28-r19)"
+  },
+  {
+   "index": 562,
+   "page": 30,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "22",
+   "new": "23",
+   "note": "ime POPRAVEK Brung Mathl -> Ring Mathä + haus POPRAVEK 22->23 (x20 haus: okrogla 2 + dvokotljasta 3; ime: R-glijf + 'Mathä.'; h23 = Ring Mathä hiša — 3. presek p27-r15/p28-r19)"
+  },
+  {
+   "index": 563,
+   "page": 30,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Brung Mathl",
+   "new": "Ring Mathä",
+   "note": "ime POPRAVEK Brung Mathl -> Ring Mathä (nz-g2: R-glijf + Mathä; h23 parcela)"
+  },
+  {
+   "index": 564,
+   "page": 30,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Nillig Bannl",
+   "new": "Müller Johann",
+   "note": "ime POPRAVEK Nillig Bannl -> Müller Johann (nz-g2: 'Müll?g J?anne' — J-spuščnik = Johann; h29 = Müller hiša p29-r0/r12); haus soglasje 29"
+  },
+  {
+   "index": 565,
+   "page": 30,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Michael",
+   "new": "Ring Michael",
+   "note": "ime POPRAVEK König Michael -> Ring Michael (nz-g2: R-glijf + 'Michael.'; h24 = Ring Michael hiša — 6. presek; v57 'König' = fabriirano)"
+  },
+  {
+   "page": 30,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2) p30: 17 sprememb; p30 = v57 imenska plast skoraj v celoti fabriirana (kakor p28): 'Andreas Muffel' (r0), 'Zachter Mäthel' (r4), 'Bulter Mäthel' (r5/r13), 'Andres Mäthel' (r12) = črnilo 'Stuker Mathl[?]' (h30 = Stuker hiša s 4 parcelami na p29); 'Brung Kasparl' ×4 (r2/r8/r9) + 'Pring Michl' (r3) = črnilo 'Ring Johann' / 'Ring Mito' (R-glijf; h26/h28 preseki); 'Brung Mathl' ×2 (r16/r17) = črnilo 'Ring Mathä' (h23 pre"
+  },
+  {
+   "index": 566,
+   "page": 31,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wurzen Michl",
+   "new": "Ring Mito[?]",
+   "note": "ime POPRAVEK Wurzen Michl -> Ring Mito[?] (x16: R-glijf + 'Mieö' = Mito-forma; 'Wurzen' 𝒲 NE obstaja v črnilu; h25 = Ring Mito hiša — 8. presek p27-p30; [?] na krstnem)"
+  },
+  {
+   "index": 568,
+   "page": 31,
+   "row_in_page": 2,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 569,
+   "page": 31,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Puchey Georg",
+   "new": "Ring Mathä",
+   "note": "ime POPRAVEK Puchey Georg -> Ring Mathä + haus POPRAVEK 64->23 (tall x7: jasno '23 | Ring Mathä.'; v57 r3 = FANTOMSKA ditto-vrstica — prepis shifted za 1 od tu naprej; h23 = Ring Mathä hiša — 4. presek; ditto-zastava ugasi — vrstica sploh ni ditto)"
+  },
+  {
+   "index": 569,
+   "page": 31,
+   "row_in_page": 3,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "64",
+   "new": "23",
+   "note": "ime POPRAVEK Puchey Georg -> Ring Mathä + haus POPRAVEK 64->23 (tall x7: jasno '23 | Ring Mathä.'; v57 r3 = FANTOMSKA ditto-vrstica — prepis shifted za 1 od tu naprej; h23 = Ring Mathä hiša — 4. presek; ditto-zastava ugasi — vrstica sploh ni ditto)"
+  },
+  {
+   "index": 569,
+   "page": 31,
+   "row_in_page": 3,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 570,
+   "page": 31,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Prinz Michl",
+   "new": "Ring Mathä",
+   "note": "ime POPRAVEK Prinz Michl -> Ring Mathä (tall x7: R-glijf + 'Mathä'; v57 'Prinz' = zgrešeni R + Mathä; h23 ✓)"
+  },
+  {
+   "index": 571,
+   "page": 31,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Prinz Michl",
+   "new": "Müller Hannes",
+   "note": "ime POPRAVEK Prinz Michl -> Müller Hannes + haus POPRAVEK 23->29 (tall x7: '29 | Müller Hänne.'; shift-dokaz)"
+  },
+  {
+   "index": 571,
+   "page": 31,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "23",
+   "new": "29",
+   "note": "ime POPRAVEK Prinz Michl -> Müller Hannes + haus POPRAVEK 23->29 (tall x7: '29 | Müller Hänne.'; shift-dokaz)"
+  },
+  {
+   "index": 571,
+   "page": 31,
+   "row_in_page": 5,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 573,
+   "page": 31,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Müller Hannes",
+   "new": "Ring Michael",
+   "note": "ime POPRAVEK Müller Hannes -> Ring Michael + haus POPRAVEK 29->24 (tall x7: '24 | Ring Michael'; h24 = Ring Michael hiša — 7. presek; v57 ditto-zastava ovržena — črnilo polno ime, poleg tega drug lastnik)"
+  },
+  {
+   "index": 573,
+   "page": 31,
+   "row_in_page": 7,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "29",
+   "new": "24",
+   "note": "ime POPRAVEK Müller Hannes -> Ring Michael + haus POPRAVEK 29->24 (tall x7: '24 | Ring Michael'; h24 = Ring Michael hiša — 7. presek; v57 ditto-zastava ovržena — črnilo polno ime, poleg tega drug lastnik)"
+  },
+  {
+   "index": 573,
+   "page": 31,
+   "row_in_page": 7,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 574,
+   "page": 31,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Prinz Michl",
+   "new": "Ring Michl",
+   "note": "ime POPRAVEK Prinz Michl -> Ring Michl (tall x7: '24 | Ring Michl' — kratka forma Michael-a; h24 ✓)"
+  },
+  {
+   "index": 575,
+   "page": 31,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Prinz Michl",
+   "new": "Ring Mito[?]",
+   "note": "ime POPRAVEK Prinz Michl -> Ring Mito[?] + haus POPRAVEK 24->25 (tall x7: '25 | Ring Mieö' = Mito; h25 presek; ditto ovržen)"
+  },
+  {
+   "index": 575,
+   "page": 31,
+   "row_in_page": 9,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "24",
+   "new": "25",
+   "note": "ime POPRAVEK Prinz Michl -> Ring Mito[?] + haus POPRAVEK 24->25 (tall x7: '25 | Ring Mieö' = Mito; h25 presek; ditto ovržen)"
+  },
+  {
+   "index": 575,
+   "page": 31,
+   "row_in_page": 9,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 576,
+   "page": 31,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wurzen Michl",
+   "new": "Ring Mito[?]",
+   "note": "ime POPRAVEK Wurzen Michl -> Ring Mito[?] (tall x7: '25 | Ring Mito'; h25 parcela; 'Wurzen' fabriirano)"
+  },
+  {
+   "index": 577,
+   "page": 31,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wurzen Michl",
+   "new": "Schelle Jank[?]",
+   "note": "ime POPRAVEK Wurzen Michl -> Schelle Jank[?] + haus POPRAVEK 25->60 (x16: '60 | Schelbo/Schelle Jayk[?]' — priimek 'Schelle' forma, krstno 'Jank[?]' (y/k dvom); v57-r11 = premaknjen vpis; ditto ovržen)"
+  },
+  {
+   "index": 577,
+   "page": 31,
+   "row_in_page": 11,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "25",
+   "new": "60",
+   "note": "ime POPRAVEK Wurzen Michl -> Schelle Jank[?] + haus POPRAVEK 25->60 (x16: '60 | Schelbo/Schelle Jayk[?]' — priimek 'Schelle' forma, krstno 'Jank[?]' (y/k dvom); v57-r11 = premaknjen vpis; ditto ovržen)"
+  },
+  {
+   "index": 577,
+   "page": 31,
+   "row_in_page": 11,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 578,
+   "page": 31,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schelle Janns",
+   "new": "Schelle Jank[?]",
+   "note": "ime POPRAVEK Schelle Janns -> Schelle Jank[?] (x16: isti niz kot r11 — h60 parcela; v57 'Janns' = odpadek)"
+  },
+  {
+   "index": 579,
+   "page": 31,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schelle Janns",
+   "new": "Hoch Georg",
+   "note": "ime POPRAVEK Schelle Janns -> Hoch Georg + haus POPRAVEK 60->32 (tall x7: '32 | H?ich Georg'; v57 ditto ovržena — vrstica ni ditto; h32 = Hoch hiša)"
+  },
+  {
+   "index": 579,
+   "page": 31,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "60",
+   "new": "32",
+   "note": "ime POPRAVEK Schelle Janns -> Hoch Georg + haus POPRAVEK 60->32 (tall x7: '32 | H?ich Georg'; v57 ditto ovržena — vrstica ni ditto; h32 = Hoch hiša)"
+  },
+  {
+   "index": 579,
+   "page": 31,
+   "row_in_page": 13,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 580,
+   "page": 31,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hoch Georg",
+   "new": "Hoch Mito[?]",
+   "note": "ime POPRAVEK Hoch Georg -> Hoch Mito[?] + haus POPRAVEK 32->68 (tall x7: '68 | H?ich Mieö' — krstno M-forma = Mito[?]; v57 'Balth' NE obstaja v črnilu; h68)"
+  },
+  {
+   "index": 580,
+   "page": 31,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "32",
+   "new": "68",
+   "note": "ime POPRAVEK Hoch Georg -> Hoch Mito[?] + haus POPRAVEK 32->68 (tall x7: '68 | H?ich Mieö' — krstno M-forma = Mito[?]; v57 'Balth' NE obstaja v črnilu; h68)"
+  },
+  {
+   "index": 581,
+   "page": 31,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hoch Balth",
+   "new": "Hoch Georg",
+   "note": "ime POPRAVEK Hoch Balth -> Hoch Georg + haus POPRAVEK 68->32 (tall x7: '32 | H?ich Georg.'; h32 = 2. parcela)"
+  },
+  {
+   "index": 581,
+   "page": 31,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "68",
+   "new": "32",
+   "note": "ime POPRAVEK Hoch Balth -> Hoch Georg + haus POPRAVEK 68->32 (tall x7: '32 | H?ich Georg.'; h32 = 2. parcela)"
+  },
+  {
+   "index": 582,
+   "page": 31,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hoch Georg",
+   "new": "Wächter Mathä",
+   "note": "ime POPRAVEK Hoch Georg -> Wächter Mathä + haus POPRAVEK 32->50 (x16: '50 | ?ardi?r/Wächter Mathä.' — priimek po v57 'Wächter' (črnilo skladno z mejo), krstno 'Mathä.' kratka forma; v57 'Mathäus' = normalizacija)"
+  },
+  {
+   "index": 582,
+   "page": 31,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "32",
+   "new": "50",
+   "note": "ime POPRAVEK Hoch Georg -> Wächter Mathä + haus POPRAVEK 32->50 (x16: '50 | ?ardi?r/Wächter Mathä.' — priimek po v57 'Wächter' (črnilo skladno z mejo), krstno 'Mathä.' kratka forma; v57 'Mathäus' = normalizacija)"
+  },
+  {
+   "index": 583,
+   "page": 31,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wächter Mathäus",
+   "new": "Pichler[?] Georg",
+   "note": "ime POPRAVEK Wächter Mathäus -> Pichler[?] Georg + haus POPRAVEK 50->41 (x16: '41 | P?ckler/Pichler Georg.' — telo P-i/ch-l-e-r → 'Pichler[?]'; v57 'Wächter' = premaknjen vpis iz r16)"
+  },
+  {
+   "index": 583,
+   "page": 31,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "50",
+   "new": "41",
+   "note": "ime POPRAVEK Wächter Mathäus -> Pichler[?] Georg + haus POPRAVEK 50->41 (x16: '41 | P?ckler/Pichler Georg.' — telo P-i/ch-l-e-r → 'Pichler[?]'; v57 'Wächter' = premaknjen vpis iz r16)"
+  },
+  {
+   "index": 584,
+   "page": 31,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pucher Georg",
+   "new": "Pichler[?] Mathl[?]",
+   "note": "ime POPRAVEK Pucher Georg -> Pichler[?] Mathl[?] + haus POPRAVEK 41->40 (x16: '40 | P?ckler/Pichler M?thl' — isti priimek kot r17 + krstno 'Mathl[?]'; v57 'Pucher Georg' = premaknjen vpis iz r17)"
+  },
+  {
+   "index": 584,
+   "page": 31,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "41",
+   "new": "40",
+   "note": "ime POPRAVEK Pucher Georg -> Pichler[?] Mathl[?] + haus POPRAVEK 41->40 (x16: '40 | P?ckler/Pichler M?thl' — isti priimek kot r17 + krstno 'Mathl[?]'; v57 'Pucher Georg' = premaknjen vpis iz r17)"
+  },
+  {
+   "index": 585,
+   "page": 31,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"R?b?ang P?ening[?]\", v57 ohranjeno]"
+  },
+  {
+   "page": 31,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2) p31: 34 sprememb; p31 = STRUKTURNA odkritje: v57 prepis je SHIFTED za 1 vrstico od r3 naprej — register r_N (N>=3) nosi vsebino črnila r_{N-1}. Dokaz: haus-sekvenca register (r3..r19: 64,23,23,29,29,24,24,25,25,60,60,32,68,32,50,41,40) = črnilo (r2..r18: 64,23,23,29,29,24,24,25,25,60,60,32,68,32,50,41,40) 1:1; v57 r3 'Puchey Georg DITTO' = FANTOMSKA vrstica (črnilo r3 = '23 Ring Mathä'), črnilo r19 pa je fragment b"
+  }
+ ]
+}

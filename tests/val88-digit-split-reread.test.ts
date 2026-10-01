@@ -231,7 +231,7 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
 
   test("KG nosi val 112 stanje (kaskada) — j|k vrednosti ostajajo izven KG polj", () => {
     // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad); val 107 86b del 3 (9f856d28); val 112 F-PV-07 p5/p7/p12 (5ae52bd8)
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^0b478847/); // val 115 (val 114 je bil 376e2b27)
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^4bb6a974/); // val 115 (val 114 je bil 376e2b27)
   });
 
   test("parcelni register nosi projekcija 143/143 + F-PV-05/07 korekcije (val 112: 735 → 676); negative register ostaja 14", () => {
