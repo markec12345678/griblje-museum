@@ -1,0 +1,878 @@
+{
+ "val": 118,
+ "stats": {
+  "owner_fixes": 51,
+  "haus_fixes": 23,
+  "anmerkung_adds": 6,
+  "ditto_clears": 7,
+  "pages_covered": [
+   "p17",
+   "p18",
+   "p19"
+  ],
+  "rows_covered": 60
+ },
+ "changes": [
+  {
+   "index": 286,
+   "page": 17,
+   "row_in_page": 0,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "14",
+   "new": "62",
+   "note": "haus POPRAVEK 14->62 (x12 jasno 62); ime soglasje — pisar piše 'Christian', registerjeva normalizacija 'Christan' ohranjena (obs, ne množični popravek)"
+  },
+  {
+   "index": 287,
+   "page": 17,
+   "row_in_page": 1,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Häusler Mache",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK Häusler Mache -> Christan Mache (x12: isti niz kot r0, ni H-beseda); haus soglasje"
+  },
+  {
+   "index": 288,
+   "page": 17,
+   "row_in_page": 2,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Würgl",
+   "new": "Christan Malfg",
+   "note": "haus POPRAVEK 36->26 (x16: 2 z ravno bazo + 6 z zankastim ascendingom); ime POPRAVEK Würgl -> Malfg (x14-x24: M + a + l + f s prečko + g-spuščanje)"
+  },
+  {
+   "index": 288,
+   "page": 17,
+   "row_in_page": 2,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "36",
+   "new": "26",
+   "note": "haus POPRAVEK 36->26 (x16: 2 z ravno bazo + 6 z zankastim ascendingom); ime POPRAVEK Würgl -> Malfg (x14-x24: M + a + l + f s prečko + g-spuščanje)"
+  },
+  {
+   "index": 289,
+   "page": 17,
+   "row_in_page": 3,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Würgl",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK Würgl -> Malfg; ditto flag ostaja; haus soglasje"
+  },
+  {
+   "index": 289,
+   "page": 17,
+   "row_in_page": 3,
+   "type": "v118_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše ime izrecno — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 291,
+   "page": 17,
+   "row_in_page": 5,
+   "type": "v118_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše ime izrecno — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 294,
+   "page": 17,
+   "row_in_page": 8,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Würgl",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK Würgl -> Malfg; haus soglasje"
+  },
+  {
+   "index": 296,
+   "page": 17,
+   "row_in_page": 10,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Fitsch Würgl",
+   "new": "Fitsch Piber",
+   "note": "haus POPRAVEK 36->35 (x16 nizko zapisano 35); ime POPRAVEK Würgl -> Piber (x12 jasno Piber z P-zanko)"
+  },
+  {
+   "index": 296,
+   "page": 17,
+   "row_in_page": 10,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "36",
+   "new": "35",
+   "note": "haus POPRAVEK 36->35 (x16 nizko zapisano 35); ime POPRAVEK Würgl -> Piber (x12 jasno Piber z P-zanko)"
+  },
+  {
+   "index": 297,
+   "page": 17,
+   "row_in_page": 11,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Fitsch Würgl",
+   "new": "Fitsch Malfg",
+   "note": "ime POPRAVEK Würgl -> Malfg; haus soglasje; rdeča črta pod (eingeschafft kontekst, že v113)"
+  },
+  {
+   "index": 298,
+   "page": 17,
+   "row_in_page": 12,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Fitsch Würgl",
+   "new": "Fitsch Malfg",
+   "note": "ime POPRAVEK Würgl -> Malfg; haus soglasje"
+  },
+  {
+   "index": 299,
+   "page": 17,
+   "row_in_page": 13,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Würgl",
+   "new": "Christan Malfg",
+   "note": "haus POPRAVEK 66->36 (pravila-strip: 36 med pravili 663/702); ime POPRAVEK Würgl -> Malfg"
+  },
+  {
+   "index": 299,
+   "page": 17,
+   "row_in_page": 13,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "66",
+   "new": "36",
+   "note": "haus POPRAVEK 66->36 (pravila-strip: 36 med pravili 663/702); ime POPRAVEK Würgl -> Malfg"
+  },
+  {
+   "index": 301,
+   "page": 17,
+   "row_in_page": 15,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Häusler Mache",
+   "new": "Husitsch Maria",
+   "note": "haus POPRAVEK 68->44 (pravila-strip: 44 pod pravilom 741); ime POPRAVEK Häusler Mache -> Husitsch Maria (PUA h.44: 'Husitsch Maria Bauersleute zu Grübln' — dva neodvisna vira; 2. beseda brez visokega h = Maria, ne Mache)"
+  },
+  {
+   "index": 301,
+   "page": 17,
+   "row_in_page": 15,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "68",
+   "new": "44",
+   "note": "haus POPRAVEK 68->44 (pravila-strip: 44 pod pravilom 741); ime POPRAVEK Häusler Mache -> Husitsch Maria (PUA h.44: 'Husitsch Maria Bauersleute zu Grübln' — dva neodvisna vira; 2. beseda brez visokega h = Maria, ne Mache)"
+  },
+  {
+   "index": 301,
+   "page": 17,
+   "type": "anmerkung_add",
+   "text": "[ime potrjeno s PUA h.44 \"Husitsch Maria Bauersleute zu Grübln\" — val 118]"
+  },
+  {
+   "index": 303,
+   "page": 17,
+   "row_in_page": 17,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Würgl",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK Würgl -> Gorgy (x12: G-okrogla inicialka + o + r + g/y spuščanje; Gorgy znan s p19 r5/r10); haus soglasje"
+  },
+  {
+   "index": 304,
+   "page": 17,
+   "row_in_page": 18,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Piber",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK Piber -> Mache (x12: M-hrbti + ache, ni P-zanka); haus soglasje"
+  },
+  {
+   "index": 305,
+   "page": 17,
+   "row_in_page": 19,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Häusler Mache",
+   "new": "Husitsch Maria",
+   "note": "haus POPRAVEK 14->44 (x18: dve 4-ki); ime POPRAVEK Häusler Mache -> Husitsch Maria (x20 beseda2: Maria brez visokega h; PUA h.44)"
+  },
+  {
+   "index": 305,
+   "page": 17,
+   "row_in_page": 19,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "14",
+   "new": "44",
+   "note": "haus POPRAVEK 14->44 (x18: dve 4-ki); ime POPRAVEK Häusler Mache -> Husitsch Maria (x20 beseda2: Maria brez visokega h; PUA h.44)"
+  },
+  {
+   "index": 305,
+   "page": 17,
+   "type": "anmerkung_add",
+   "text": "[ime potrjeno s PUA h.44 \"Husitsch Maria Bauersleute zu Grübln\" — val 118]"
+  },
+  {
+   "page": 17,
+   "type": "page_observations_v118",
+   "text": "v118 imenski pass p17: 18 sprememb; p17 = najslabsa v57 imenska stran: 'Würgl' (8x) in 'Häusler' (3x) sta v57 halucinaciji — priimka ne obstajata nikjer drugje v registru (2875 vrstic). Pravo: 'Malfg' (M-a-l-f-g, f s prečko + g-spuščanje; ista črka-obelika kot v57 'Malfg' na p21 in PUA 'Malfa'; x15-x24 masovna primerjava 11 instanc p17/p18/p19/p21) in 'Husitsch Maria' (= PUA h.44 'Husitsch Maria Bauersleute zu Grübln')."
+  },
+  {
+   "index": 306,
+   "page": 18,
+   "row_in_page": 0,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Muth",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK (fabriciran 'Wendelin Muth' -> 'Christan Mache'); haus POPRAVEK 63->62 (x12: 2 z ravno bazo)"
+  },
+  {
+   "index": 306,
+   "page": 18,
+   "row_in_page": 0,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "63",
+   "new": "62",
+   "note": "ime POPRAVEK (fabriciran 'Wendelin Muth' -> 'Christan Mache'); haus POPRAVEK 63->62 (x12: 2 z ravno bazo)"
+  },
+  {
+   "index": 307,
+   "page": 18,
+   "row_in_page": 1,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Muth",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK -> 'Christan Gorgy' (x14 primerjava 6 G-instanc: G + o + r + g-spuščanje + y-rep; v57 'Groyz' tukaj ne obstaja); haus soglasje"
+  },
+  {
+   "index": 307,
+   "page": 18,
+   "row_in_page": 1,
+   "type": "v118_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše ime izrecno — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 308,
+   "page": 18,
+   "row_in_page": 2,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Muth",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (kalibracija: dominikalni 308 = ista 3-glyfa)"
+  },
+  {
+   "index": 308,
+   "page": 18,
+   "row_in_page": 2,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "36",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (kalibracija: dominikalni 308 = ista 3-glyfa)"
+  },
+  {
+   "index": 308,
+   "page": 18,
+   "row_in_page": 2,
+   "type": "v118_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše ime izrecno — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 309,
+   "page": 18,
+   "row_in_page": 3,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Muth",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 309,
+   "page": 18,
+   "row_in_page": 3,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "27",
+   "new": "37",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 309,
+   "page": 18,
+   "row_in_page": 3,
+   "type": "v118_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše ime izrecno — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 310,
+   "page": 18,
+   "row_in_page": 4,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Muth",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36"
+  },
+  {
+   "index": 310,
+   "page": 18,
+   "row_in_page": 4,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "36",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36"
+  },
+  {
+   "index": 310,
+   "page": 18,
+   "row_in_page": 4,
+   "type": "v118_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše ime izrecno — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 311,
+   "page": 18,
+   "row_in_page": 5,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Muth",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37 (g0 sklad)"
+  },
+  {
+   "index": 311,
+   "page": 18,
+   "row_in_page": 5,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "27",
+   "new": "37",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37 (g0 sklad)"
+  },
+  {
+   "index": 311,
+   "page": 18,
+   "row_in_page": 5,
+   "type": "v118_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše ime izrecno — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 312,
+   "page": 18,
+   "row_in_page": 6,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Christof Muth",
+   "new": "Husitsch Maria",
+   "note": "ime POPRAVEK -> 'Husitsch Maria' (x12: H-beseda brez visokega h v 2. besedi = Maria; = PUA h.44 'Husitsch Maria Bauersleute zu Grübln'; isti h.44 blok kot p17 r15/r19)"
+  },
+  {
+   "index": 313,
+   "page": 18,
+   "row_in_page": 7,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Wulfj",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (kalibracija r7: dominikalni 308 ob haus 36 v istem izrezu)"
+  },
+  {
+   "index": 313,
+   "page": 18,
+   "row_in_page": 7,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "36",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (kalibracija r7: dominikalni 308 ob haus 36 v istem izrezu)"
+  },
+  {
+   "index": 314,
+   "page": 18,
+   "row_in_page": 8,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Puhon",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 314,
+   "page": 18,
+   "row_in_page": 8,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "27",
+   "new": "37",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 315,
+   "page": 18,
+   "row_in_page": 9,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Hoffnung",
+   "new": "Hof-Besizungen[?]",
+   "note": "ime POPRAVEK -> 'Hof-Besizungen[?]' (x12: fraza 'Hof-Besizungen' = dominikalni posest, NE osebno ime; v57 'Hoffnung' = skrajšana izmišljena varianta; haus ostaja prazen, vrednost prazna = konsistentno)"
+  },
+  {
+   "index": 315,
+   "page": 18,
+   "type": "anmerkung_add",
+   "text": "[ne-osebni zapis \"Hof-Besizungen[?]\" = dominikalni posest; v57 \"Hoffnung\" zgrešeno — val 118]"
+  },
+  {
+   "index": 316,
+   "page": 18,
+   "row_in_page": 10,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Groyz",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK -> 'Christan Gorgy'; haus soglasje"
+  },
+  {
+   "index": 317,
+   "page": 18,
+   "row_in_page": 11,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Mutho",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK -> 'Christan Mache'; haus soglasje"
+  },
+  {
+   "index": 318,
+   "page": 18,
+   "row_in_page": 12,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Groyz",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK -> 'Christan Gorgy'; haus POPRAVEK 62->63 (g1 sklad)"
+  },
+  {
+   "index": 318,
+   "page": 18,
+   "row_in_page": 12,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "62",
+   "new": "63",
+   "note": "ime POPRAVEK -> 'Christan Gorgy'; haus POPRAVEK 62->63 (g1 sklad)"
+  },
+  {
+   "index": 319,
+   "page": 18,
+   "row_in_page": 13,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Puhon",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 319,
+   "page": 18,
+   "row_in_page": 13,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "27",
+   "new": "37",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 320,
+   "page": 18,
+   "row_in_page": 14,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Wulffj",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36"
+  },
+  {
+   "index": 320,
+   "page": 18,
+   "row_in_page": 14,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "36",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36"
+  },
+  {
+   "index": 321,
+   "page": 18,
+   "row_in_page": 15,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Vilter Wulffj",
+   "new": "Fitsch Malfg",
+   "note": "ime POPRAVEK -> 'Fitsch Malfg'; haus POPRAVEK 24->34"
+  },
+  {
+   "index": 321,
+   "page": 18,
+   "row_in_page": 15,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "24",
+   "new": "34",
+   "note": "ime POPRAVEK -> 'Fitsch Malfg'; haus POPRAVEK 24->34"
+  },
+  {
+   "index": 322,
+   "page": 18,
+   "row_in_page": 16,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Villibald Puhon",
+   "new": "Fitsch Piber",
+   "note": "ime POPRAVEK -> 'Fitsch Piber'; haus soglasje"
+  },
+  {
+   "index": 323,
+   "page": 18,
+   "row_in_page": 17,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Wendelin Puhon",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 323,
+   "page": 18,
+   "row_in_page": 17,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "27",
+   "new": "37",
+   "note": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  {
+   "index": 324,
+   "page": 18,
+   "row_in_page": 18,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Villibald Wulffj",
+   "new": "Fitsch Malfg",
+   "note": "ime POPRAVEK -> 'Fitsch Malfg'; haus POPRAVEK 24->34"
+  },
+  {
+   "index": 324,
+   "page": 18,
+   "row_in_page": 18,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "24",
+   "new": "34",
+   "note": "ime POPRAVEK -> 'Fitsch Malfg'; haus POPRAVEK 24->34"
+  },
+  {
+   "index": 325,
+   "page": 18,
+   "row_in_page": 19,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Villibald Puhon",
+   "new": "Fitsch Piber",
+   "note": "ime POPRAVEK -> 'Fitsch Piber'; haus soglasje"
+  },
+  {
+   "page": 18,
+   "type": "page_observations_v118",
+   "text": "v118 imenski pass p18: 33 sprememb; VELIKA NAJDBA val 118: v57 p18 imenska kolona je IZMIŠLJENA / motoviljena — vse 20 vrstic nosi 'Wendelin/Christof/Villibald Muth/Wulfj/Puhon/Groyz/Hoffnung' nabor, ki NE obstaja na strani (in nikjer drugje v dokumentu). Vrednostna in haus koloni sta s te strani (v113 je vrednosti potrdila), imena pa ne: stran nosi 'Christan Mache/Gorgy/Malfg/Piber + Fitsch Malfg/Piber + Husitsch Maria + Hof-Besizu"
+  },
+  {
+   "index": 326,
+   "page": 19,
+   "row_in_page": 0,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Wurff",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg' (M-beseda z f-prečko + g-spuščanjem, = p21 'Malfg' oblika); haus POPRAVEK 36->26 (dom-trak: 2-glyfa, dominikalni 321 ločeno)"
+  },
+  {
+   "index": 326,
+   "page": 19,
+   "row_in_page": 0,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "36",
+   "new": "26",
+   "note": "ime POPRAVEK -> 'Christan Malfg' (M-beseda z f-prečko + g-spuščanjem, = p21 'Malfg' oblika); haus POPRAVEK 36->26 (dom-trak: 2-glyfa, dominikalni 321 ločeno)"
+  },
+  {
+   "index": 327,
+   "page": 19,
+   "row_in_page": 1,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Piberl",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber' (v57 'Piberl' — ista črkovna oblika kot 'Piber' p17/p18, brez vidnega -l; enotno Piber + obs); haus soglasje"
+  },
+  {
+   "index": 327,
+   "page": 19,
+   "type": "anmerkung_add",
+   "text": "[v57 \"Piberl\" = ista črkovna oblika kot \"Piber\" p17/p18 — enotno Piber — val 118]"
+  },
+  {
+   "index": 328,
+   "page": 19,
+   "row_in_page": 2,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Hansel Munde",
+   "new": "Husitsch Maria[?]",
+   "note": "ime POPRAVEK -> 'Husitsch Maria[?]' (H-beseda + M-beseda; h.44 = isti blok kot p17 r15/r19; PUA h.44 'Husitsch Maria'; 2. beseda dvomna Mache[?]/Maria — brez jasne visoke h -> Maria, dvom izrecen)"
+  },
+  {
+   "index": 329,
+   "page": 19,
+   "row_in_page": 3,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Piberl",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  {
+   "index": 330,
+   "page": 19,
+   "row_in_page": 4,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Wurff",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'"
+  },
+  {
+   "index": 331,
+   "page": 19,
+   "row_in_page": 5,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Mache",
+   "new": "Christan Matho[?]",
+   "note": "ime POPRAVEK -> 'Christan Matho[?]' (M-beseda BREZ g-spuščanja, o-končnica — ločena od Malfg; PUA ima 'Matho' kot samostojen priimek; dvom izrecen)"
+  },
+  {
+   "index": 331,
+   "page": 19,
+   "type": "anmerkung_add",
+   "text": "[Matho[?] po PUA (samostojen priimek) — ločeno od Malfg po g-spuščanju — val 118]"
+  },
+  {
+   "index": 332,
+   "page": 19,
+   "row_in_page": 6,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Gorgy",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK priimka soglasen (Gorgy ✓), vendar 'Heinrich'->'Christian'; haus POPRAVEK 62->63 (dom-trak: jasna 3-glyfa)"
+  },
+  {
+   "index": 332,
+   "page": 19,
+   "row_in_page": 6,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "62",
+   "new": "63",
+   "note": "ime POPRAVEK priimka soglasen (Gorgy ✓), vendar 'Heinrich'->'Christian'; haus POPRAVEK 62->63 (dom-trak: jasna 3-glyfa)"
+  },
+  {
+   "index": 333,
+   "page": 19,
+   "row_in_page": 7,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Piberl",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  {
+   "index": 334,
+   "page": 19,
+   "row_in_page": 8,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Wurff",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; rdeči robni pripis zgoraj (že v114 kontekst)"
+  },
+  {
+   "index": 335,
+   "page": 19,
+   "row_in_page": 9,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Hansel Munde",
+   "new": "Husitsch Maria[?]",
+   "note": "ime POPRAVEK -> 'Husitsch Maria[?]'"
+  },
+  {
+   "index": 336,
+   "page": 19,
+   "row_in_page": 10,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "61",
+   "new": "41",
+   "note": "ime SOGLASJE (edina v57-usklajena vrstica na p19 — x12 'Georg Gorgy' ✓); haus POPRAVEK 61->41 (4-glyfa = kot '44' v r9/r18; dvom 4/6 izrecen v obs)"
+  },
+  {
+   "index": 336,
+   "page": 19,
+   "type": "anmerkung_add",
+   "text": "[haus 41: dvom 4/6; v57 61 — val 118]"
+  },
+  {
+   "index": 337,
+   "page": 19,
+   "row_in_page": 11,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Piberl",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  {
+   "index": 338,
+   "page": 19,
+   "row_in_page": 12,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Wurff",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'"
+  },
+  {
+   "index": 339,
+   "page": 19,
+   "row_in_page": 13,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Wurff",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'"
+  },
+  {
+   "index": 340,
+   "page": 19,
+   "row_in_page": 14,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Piberl",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  {
+   "index": 341,
+   "page": 19,
+   "row_in_page": 15,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Piberl",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  {
+   "index": 342,
+   "page": 19,
+   "row_in_page": 16,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Wurff",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (dom-trak: jasna 3-glyfa)"
+  },
+  {
+   "index": 342,
+   "page": 19,
+   "row_in_page": 16,
+   "type": "v118_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "36",
+   "note": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (dom-trak: jasna 3-glyfa)"
+  },
+  {
+   "index": 343,
+   "page": 19,
+   "row_in_page": 17,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Piberl",
+   "new": "Christan Piber",
+   "note": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  {
+   "index": 344,
+   "page": 19,
+   "row_in_page": 18,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Hansel Munde",
+   "new": "Husitsch Maria[?]",
+   "note": "ime POPRAVEK -> 'Husitsch Maria[?]'"
+  },
+  {
+   "index": 345,
+   "page": 19,
+   "row_in_page": 19,
+   "type": "v118_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Mache",
+   "new": "Christan Malfg",
+   "note": "ime POPRAVEK -> 'Christan Malfg'"
+  },
+  {
+   "page": 19,
+   "type": "page_observations_v118",
+   "text": "v118 imenski pass p19: 51 sprememb; v57 p19 imenska kolona = 'Heinrich X' vzorec (Heinrich Wurff/Piberl/Mache + Hansel Munde), ki na strani ne obstaja — pisar piše 'Christian' (z i-piko). IZJEMA r10: 'Georg Gorgy' = edina v57-usklajena vrstica (potrjena x12). Haus kolona: 2↔3 šum (r0 36->26, r16 26->36 — obe smeri!, r6 62->63), r10 61->41 (4-glyfa = kot '44' v r9/r18)."
+  }
+ ]
+}
