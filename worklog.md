@@ -4766,3 +4766,21 @@ Stage Summary:
 - Val 119 del 1 zaključen: p20–p25 imensko prebrani in vgrajeni; "Johan" najdba pomeni, da je tudi p10 "Priškar Jelen" ×3 sumljiv (izven obsega — p1–p16 plast)
 - main @ aae3bb5 CI zeleno; zbirka 114/625/502/68 (tehnični val)
 - Naslednje: val 119 del 2 = p26–p55 (611 vrstic; riziko-tabele + 126 diag p44–p49 pripravljeni; p28 "Stadtpfarrkirche[?]×9", p37 "Piringer uibio×8", p38 "König×8", p47 "Mäthel×8" vs PUA h.69 "Brandl") → nato PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379
+
+---
+Task ID: 119-del2a
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2a)
+Task: ISSUE #72/#42 §4/§14 (griblje-museum) — 119. val, del 2a: imenski pass PS p26–p31 (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija: prihajajoči povzetek seje opisoval zastarel val 113 — disk + worklog pokazala, da so vali 113–119 del 1 mergani (main @ 9641414); dejansko nadaljevanje = val 119 del 2 (p26–p55) po val-118 protokolu 133
+- Branje v glavni seji (sub-agenti slikno slepi — 5× potrjeno v delu 1): p26–p31 = 120 vrstic, nz-skladi + diag x12–x24; nov make-rowzoom-v119b.py s prostim per-page dy (p27–p31 pravila +5..7px nizje od grida); p31 = 2 tall-sliki (r2–r7, r10–r19, x7) za strukturno analizo
+- NAJDBE: Ring-grozda h23–h28 (v57 "Wernig/Prinz/Wurzen/Brung/Pring/König/Preinig" ×24 vsi fabriirani); p28 "Stadtpfarrkirche[?]×7" = osebe Jakobschitsch Mathä/Nicolaus (PUA h.9 "Jakoffitschek"); "Pavlic"×2 = Strauß Georg (S+t-prečka+ff=ß) → cross-val fix p23-r4 "Krause Gorgy"→"Strauß Gorgy" (x16 identiteta z p28-r9, isti h15; h45 "Krause" ostaja — brez t-prečke); p29 "Preinig"×9→Ring; "Stuker Michl"×4→Mathl[?]; p30 skoraj vse fabriirano; p31 STRUKTURNO: v57 prepis shifted za 1 vrstico od r3 (fantomska Puchey-ditto r3, črnilo r19 = fragment; vsi 7 ditto ovrženih)
+- build-register-v119-del2.py (fail-fast, guard 120 v119-names iz dela 1) → 71 owner + 30 haus + 7 ditto + 6 anmerkung + 1 cross-val = 121 sprememb; kaskada izrecna: pass3 392/173+142 identično, KG 3269/3477/2427/2773 identično, sha 0b478847→4bb6a974, K5 222→215, K9 69, analysis-v5/v6 identni; +runtime kopije src/data
+- pini: sha ×11 testnih datotek, K5 ×3, v114 607→487 ×4, v119 120→240, razhajanja 28→33, p23-r4 popravek; 1187 testov: 1176 pass / 11 skip / 0 fail; tsc napake = predfestirane (scripts/prisma, nedotaknjene)
+- PR #124 → CI 3/3 → MERGE @ e392ed2 → veja izbrisana (tudi ostala del-1 lokalna); docs 135 + KAZALO (vnos 135) + README 172. sklop
+
+Stage Summary:
+- Val 119 del 2a (p26–p31) ZAKLJUČEN in mergan; main @ e392ed2
+- TRANSCRIBED=0, nič ne dvignjeno; 5 odprtih razhajanj (fragmenti p27-r2/r6, p28-r5/r13, p31-r19); [?] dvomi ohranjeni v imenih
+- Naslednje: val 119 del 2b = p32–p37 (riziko-tabele pripravljene: p33/p34 = 21 vrstic, ditto-zemljevid, p28-tip sumi na p38 "König×8"/"Höring×9", p47 "Christan Mäthel"×10 vs PUA h.69 "Brandl", 126 diag p44–p49 že generiranih) → del 2c p38–p43 → del 2d p44–p49 → del 2e p50–p55
