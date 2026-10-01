@@ -4802,3 +4802,23 @@ Stage Summary:
 - Val 119 del 2b (p32–p37) ZAKLJUČEN in mergan; main @ cd7f59b (107 owner + 19 haus + 7 ditto + 2 razhajanja; Ring-grozda h23–h28 DOKONČANA; p37 haus-haos 11 popravkov + swap r4/r5; Pöching vs Pölling; p34 druga roka "Ponter,[?]")
 - plasti: v114 366 / v115 3 / v118 60 / v119-names 362; K5 208; sha b5d3ae93; TRANSCRIBED=0, nič ne dvignjeno
 - Naslednje: val 119 del 2c = p38–p43 (PUA presek pripravljen v 1-d zapisu; "König×8"/"Höring×9" p38/p39 vzorci) → del 2d p44–p49 (126 diag pripravljenih) → del 2e p50–p55; nato PUA↔PS sinhronizacija (F-PV-03/04)
+
+---
+Task ID: 119-del2c
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2c)
+Task: ISSUE #72/#42 §4/§14 (griblje-museum) — 119. val, del 2c: imenski pass PS p38–p43 (user: "odlicno nadaljuj" / "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija: prihajajoči povzetek seje opisoval zastarel val 113 (39 reading JSONov p17–p55) — disk + worklog pokazala, da so vali 113–119 del 2b vsi mergani (main @ fcb9c97); dejansko nadaljevanje = val 119 del 2c (p38–p43) po protokolu 133; reading-v113 nosi 9 datotek (p11-kultur + p17–p24) — konsistentno z merganimi vali
+- Branje v glavni seji (0 VLM): 123 vrstic p38–p43; NOVA metodoločna lekcija — **tall prerezi z r-markerji obvezni**: pisarjev ritem lokalno stisnjen (p39 r5/r5.5 dvojniki, kot p37!) in vrstice sedejo per-page VISOKO/NIZKO (p42 dy −8, p43 dy +14); nov rowzoom-x-v119c.py (X-pas v imenu, ne prepiše diag-)
+- NAJDBE: p39 = črnilovrstna dvojčica p37 (identična 21-vrstična sekvenca) → cross-val p37-r6 20→25 (del-2b '20' zgrešil 5-glyfo; gz dy12 + p39-r5/r6 '25''/'25.'); Ring-grozda razširjena: p38 ×10 + p39 ×13 + p40 ×7; NOVA Ring hiša h65 (Martho ×4, Dorothea[?], Jakob[?]); p42-r10 dvojni fabriirani v57 ('Fleissig Marianne' + haus 62 → Ring Martho.[?] h65); h49 = Schimetz Michael ×3 medstranski presek (p42-r14 '1 / 59'->49, p43-r3 '149' = Blatt-artefakt '1|49'); p41 druga roka: 'Gyomandl' = Gemeinde (haus '1 / 6'->0), 'Baron v. Zallant' = Baronial Zallant[?], Krischan-glyf ×6, Tillach h61 ×2; p40-r12 ne-osebna poteza + PRAZEN haus v črnilu (razhajanje, p34-r20 precedens); Malleschick/Mattheitsch/Mallwitsch page-forme (h27); Krischan-glyf = PUA 'Brinczhan/Christian' orient.
+- build-register-v119-del2c.py (fail-fast, guard plasti 366/3/60/362 + 208 ditto) → 146 sprememb (118 owner + 18 haus + 1 crossval + 2 anm + 1 ditto + 6 page_obs); kaskada izrecna: pass3 392 identično (parcel-register byte-identen), KG 3269/3477/2427/2773 identično — **KG vsebina IDENTIČNA (normalizirano preverjeno), sha b5d3ae93→745a9cdd = timestamp-only** (osebni sloj = pass2 PUA artefakt F-PV-03/04 — tudi del-2b 'owner/haus nizi' claim je bil v resnici timestamp), K5 208→207 (bloki 2609), K9 69; analysis-v5/v6 identni; runtime kopije src/data (4)
+- Pini: sha 745a9cdd ×12 testnih datotek, K5 207 ×4, v119 485 + v114 244 + v115 2 ×5, razhajanja 37 ×2, val114 sidri p40-r13 ('Pöching Michl.[?]' v119-names) + p40-r14 ('Pöching Michael'); 1248 testov: 1237 pass / 11 skip / 0 fail; lint čist; tsc napake predfestirane (prisma)
+- PR #126 → CI 3/3 zeleno → MERGE @ c120620 → veja izbrisana (lokalno + remote)
+- docs 137 + KAZALO-raziskav (vnos 137) + README 174. sklop; ta worklog commit
+
+Stage Summary:
+- Val 119 del 2c (p38–p43) ZAKLJUČEN in mergan; main @ c120620
+- TRANSCRIBED=0, nič ne dvignjeno; 2 odprti razhajanjı (p38-r15 nerešljiva beseda, p40-r12 ne-osebna poteza); 3 orientacijske napetosti zabeležene (h65 Ring vs PUA Widhann, h69 Krischan vs PUA Brandl, p41-r15 h32 vs h52-p43)
+- plasti: v114 244 / v115 2 / v118 60 / v119-names 485; K5 207; sha 745a9cdd (timestamp); TRANSCRIBED=0
+- Naslednje: val 119 del 2d = p44–p49 (126 diag že generiranih; riziko-tabele: p47 'Christan Mäthel'×10 vs PUA h.69 'Brandl') → del 2e p50–p55 → nato PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379
