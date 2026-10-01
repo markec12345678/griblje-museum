@@ -4655,3 +4655,23 @@ Stage Summary:
 - Strukturna forenzika: 4 strani z izpuščenimi vrsticami (p40/p48/p49/p34) — izrecno dokumentirane, vstavljanje odprto; POMIK v113 ovržen z direktnim dokazom (z3 instrument poučen: grid artifakt)
 - Kaskada dosledna: PS parcele 577→391, KG 2426/2773/3268/3477 (sha 376e2b27), I6 173+142, coverage 1066, K9 69
 - Naslednje: vstavljanje izpuščenih vrstic (poseben strukturni val, 2871→2875) → imenski pass p25–p55 → 44 odprtih razhjanj ob višji ločljivosti/multispektralno (izven peskovnika) → VLM glasovi ob kvoti (45 izrezkov PZ, p142-t-kultur2, 3. PT glas bp 98) → poln re-read p143 → F-PV-03/F-PV-04 → register 26-0326 + 26-0379 (okt./nov. 2026)
+
+---
+Task ID: 115
+Agent: Z.ai Code (glavna seja, val 115)
+Task: ISSUE #42 §4/§14 — PS strukturni val: VSTAVLJANJE IZPUŠČENIH VRSTIC p34/p40/p48/p49 (register 2871→2875); izvedba odločitve iz v113/v114; 0 VLM klicev (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Prevzem: val 114 mergan (PR #118, main @ 1e821fc); veja feat/val115-issue72-ps-insert-missed-rows; build-register-v115.py + register-v115-changes.json že pripravljena iz prejšnje seje (builder tekel: register 2875) — preverjeno: 4 vstavitve na indeksih 932/912/761/647 (p49/p48/p40/p34), 4 page_observations_v115, vsa sidra držijo
+- Vstavitve: p49 gi 932 preklicana "2|973" (Joch|Klafter, kultur Acker) · p48 gi 912 "12" (~Schmipa[?], EDINA z numerično jaethe) · p40 gi 761 tekač 734 Nro 21 Pechley Mich° 1|65 (celotna vrstica rdeče prečrtana) · p34 gi 647 21. vrstica ~70 (~Hurich/Lohingr Mich.[?], izrecna aproksimacija); reading_pass v115-insert = nova plast, v57–v114 + snimke NEZROTALJENE; F-PV-07-SPLIT val 115 markerji na p40/p49
+- Kaskada (izrecna): build-pass3.py — izključitveno pravilo + "F-PV-07-SPLIT val 115", guard 2875, NR naslovi "2.875 vrstic", provenanca → PS parcele 391→392 (+1 p048-j12 brez haus_no; p40-j1 in p49-j2 izpadla kot marker), land use None 76→77, ostalo identično (105/38/3/12/6/7/1/1, UNKNOWN 142, EXACT 166, MIXED 7) · KG → PARCEL 2426→2427, vozlišča 3268→3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no = brez vezi; edini node diff PARCEL:PS-p048-j12), sha 376e2b27→ca0aeb58 · story-graph 3269/3477 · timeline — guard 391→392 z izrecno val-115 opombo, I6 2035/392/173+142, kg_sha ca0aeb58 · coverage — rows 2871→2875, PARTIAL 1066→1067 (PS/SINGLE_SOURCE 390→391) · c4-metrika-v90 re-run — K9 p1–55: jaethe_plain_100_1599 69 NESPREMENJEN, nove oblike pincirane (jae_le99 59→62, klf_le99 172→174, klf_100_1599 783→784, both 46→48, jae_empty 943→944, klf_empty 104→105), K5 "233/2875", p56–143 identično · analysis-v5/v6 re-run byte-identno (p56–143 agregati) · runtime kopije pišejo builderji
+- Testi: +15 varovalk (tests/val115-ps-insert-missed-rows.test.ts — plasti gardele, changes audit padajoči indeksi, števila vrstic 21/21/21/22, obs_v115, vsebine 4 vstavljenih s sidri, iskrenost, kaskada) + pini 114→115 v 20 testnih datotekah (pass3 392/77, KG 2427/3269, story-graph, timeline 392, coverage 1067/2427, map/explore/pv 2427/2112, story-engine "2427 parcel"/"2254", api-smoke 3269/3477/2427/2112, val82 1073→1077, val85–val114 register 2875, v88 gi→gi115 preslikava (647/761/912/932 pragovi), KG sha ca0aeb58 v 6 datotekah, val90 K5 2875)
+- Lokalna baza: čisti main = 7 fail + 7 errors (peskovniški modulni errorji next/server, @prisma/client, zod, react/jsx-dev-runtime — "Cannot find module"; tsc/enotni testi v peskovniku nedostopni istemu vzroku) — po val 115: 1015 pass / 7 fail / 7 errors = IDENTIČNA baza, neto novih napak 0; CI 3/3 ZELENO (dimni + tipi/lint/testi + Vercel)
+- Docs: research-griblje/130-val115-ps-insert-missed-rows.md + KAZALO 130 + README 167. sklop
+- Potek: commit a488bf1 → push → PR #119 → CI 3/3 ZELENO → merge (main @ 6f41455) → izbris veje (oddaljena 204 + lokalna) → worklog → poročilo na #72
+
+Stage Summary:
+- ISSUE #42 §4/§14: strukturna forenzika vala 114 IZVEDENA — 4 izpuščene vrstice vstavljene, register 2871→2875; vrnjene vrstice vsebinsko nespremenjene (v114 mapiranja zdaj tudi po indeksih); plasti ločene, TRANSCRIBED=0, nič ne dvignjeno, [?]/~ markerji
+- Kaskada dosledna in minimalna: edina nova parcela PS-p048-j12 (brez haus_no → brez vezi), KG sha ca0aeb58, I6 392, coverage 1067, K9 69
+- Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
+- Naslednje: imenski pass p25–p55 → 44 odprtih razhjanj ob višji ločljivosti/multispektralno (izven peskovnika) → VLM glasovi ob kvoti (45 izrezkov PZ → mikroprehod 8b + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7) → poln re-read p143 → F-PV-03/F-PV-04 → register 26-0326 + 26-0379 (okt./nov. 2026)
