@@ -1,0 +1,154 @@
+{
+ "meta": {
+  "val": 119,
+  "page": 20,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p20-g0..2 + diag rowzoomi x12-x22 (make-rowzoom-v118.py + tight word crops) + PUA presek + dominikalna kalibracija + pravila-detekcija (grid poravnan, ink +5px nizko)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p20-r00..r19 x12/x20", "wz-p20-rNN x16", "fwz-p20-rNN x22", "cmp3-johan-jelen", "cmp4-h37"],
+  "note": "p20 = najbolj poškodovana v57 imenska stran: 'Kristan Jerey' ×4 (r0/r1/r5/r9) je pattern-fill — črnilo r0/r5/r9 = 'Gorgy' (x20 identično p18-r10 Gorgy-referenci), r1 pa 'Thomas Johan' h55 (Johan-oblika = p22-r0 referenca; isto črnilo nosi p21 'Jelen' vrstice — v57 'Jelen' = zgrešen 'Johan', cmp3 3-kratna identiteta). h37 vrstice (r3/r6/r10) nosijo 2×ascender '-en' strukturo (kandidat Gulden[?]) — NI Johan/Piber/Peter, razhajanje odprto. v57 'Kristan' = K/C zgrešena inicialka (črnilo 'Christian' → normalizacija 'Christan' po val 118). v57 'Hörle' (r4) in 'Hannß Mache' (r19) fabriirani. Pravila-detekcija: grid 1:1 (ink +5px nizko — +6 kalibracija OK). FUR: imenska celica prazna (v113 'FUR 6|1183' = vrednosti brez imena). PUA: h.44 Husitsch Maria, h.37 dva lastnika (Peter/Balda), h.63 Brincz Leutnerin — PUA priimki se ne ujemajo s PS črnilom (različna dokumentarna plasti), uporabljen samo kot orientacija."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "63",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "63",
+   "old_name": "Kristan Jerey",
+   "verdict": "ime POPRAVEK Kristan Jerey -> Christan Gorgy (x12+x20: G-oblika = p18-r10 Gorgy-referenca; v57 'Jerey' ne obstaja drugje v registru; 'Kristan' = K/C zgrešena inicialka, črnilo 'Christian' → normalizacija 'Christan' po val 118); haus soglasje 63"
+  },
+  "r1": {
+   "seen_haus": "55",
+   "seen_name": "Thomas Johan",
+   "old_haus": "63",
+   "old_name": "Kristan Jerey",
+   "verdict": "ime POPRAVEK Kristan Jerey -> Thomas Johan + haus POPRAVEK 63->55 (x12 jasno h55; x22: 'Thomas Johan' — Johan-oblika identična p22-r0 referenci in p21-r14); ditto ovržen: črnilo piše polno ime, ne d°; h55 = ista oseba kot p21 'Thomas Jelen' vrstice (v57 'Jelen' = zgrešen Johan — popravek sledi v p21 passu val 119)"
+  },
+  "r2": {
+   "seen_haus": "36",
+   "seen_name": "Christan Mache",
+   "old_haus": "56",
+   "old_name": "Christan Matz",
+   "verdict": "ime POPRAVEK Christan Matz -> Christan Mache (x12: M-a-c-h-e, isti niz kot r7/r8/r15) + haus POPRAVEK 56->36 (x12: 3 = dve skodelici brez ascending zanke, jasno ne 5; ista h36-Mache skupina kot r7/r15)"
+  },
+  "r3": {
+   "seen_haus": "37",
+   "seen_name": "Christian Gulden[?]",
+   "old_haus": "37",
+   "old_name": "Kristan Peter",
+   "verdict": "razhajanje odprto: črnilo = cap G/J + u + 2×ascender + -en (x16/x22, cmp4 A) — kandidat 'Gulden[?]', NI Peter (1 ascender + r-rep), NI Johan (1 ascender + -an), NI Piber (v57-p17 'Piber' = nevredificiran v57 niz; struktura ne ujema); brez POPRAVEK (črkovanje negotovo); haus soglasje 37"
+  },
+  "r4": {
+   "seen_haus": "62",
+   "seen_name": "Christan Mache",
+   "old_haus": "62",
+   "old_name": "Kristan Hörle",
+   "verdict": "ime POPRAVEK Kristan Hörle -> Christan Mache (x12: M-a-c-h-e isti niz kot r7/r8; 'Hörle' ne obstaja drugje — v57 fabriakcija); haus soglasje 62"
+  },
+  "r5": {
+   "seen_haus": "63",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "63",
+   "old_name": "Kristan Jerey",
+   "verdict": "ime POPRAVEK Kristan Jerey -> Christan Gorgy (x20 identično p18-r10 Gorgy-referenci); haus soglasje 63"
+  },
+  "r6": {
+   "seen_haus": "37",
+   "seen_name": "Christian Gulden[?]",
+   "old_haus": "37",
+   "old_name": "Kristan Peter",
+   "verdict": "razhajanje odprto: isti 2×ascender '-en' niz kot r3 (cmp4 B); kandidat 'Gulden[?]'; brez POPRAVEK; haus soglasje 37"
+  },
+  "r7": {
+   "seen_haus": "36",
+   "seen_name": "Christan Mache",
+   "old_haus": "36",
+   "old_name": "Kristan Mache",
+   "verdict": "ime POPRAVEK Kristan Mache -> Christan Mache (normalizacija K->C, črnilo 'Christian' z i-piko x12); haus soglasje 36"
+  },
+  "r8": {
+   "seen_haus": "62",
+   "seen_name": "Christan Mache",
+   "old_haus": "62",
+   "old_name": "Kristan Mache",
+   "verdict": "ime POPRAVEK Kristan Mache -> Christan Mache (normalizacija K->C); haus soglasje 62"
+  },
+  "r9": {
+   "seen_haus": "63",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "63",
+   "old_name": "Kristan Jerey",
+   "verdict": "ime POPRAVEK Kristan Jerey -> Christan Gorgy (x20 identično p18-r10 referenci); haus soglasje 63"
+  },
+  "r10": {
+   "seen_haus": "37",
+   "seen_name": "Christian Gulden[?]",
+   "old_haus": "37",
+   "old_name": "Kristan Peter",
+   "verdict": "razhajanje odprto: isti 2×ascender '-en' niz kot r3/r6 (cmp4 C); kandidat 'Gulden[?]'; brez POPRAVEK; haus soglasje 37"
+  },
+  "r11": {
+   "seen_haus": "35",
+   "seen_name": "Julian[?] Johan",
+   "old_haus": "35",
+   "old_name": "Peter Albert",
+   "verdict": "razhajanje odprto: 2. beseda = Johan (cmp x22, identična cmp3 referenci); 1. beseda dvom — 'Julian[?]' (cap-zanka + u + ascender + i + a + n) proti v57 'Peter Albert' (jasno ovržen: ni P-beseda); brez POPRAVEK (1. beseda negotova); haus soglasje 35"
+  },
+  "r12": {
+   "seen_haus": "34",
+   "seen_name": "Julian[?] Matz",
+   "old_haus": "64",
+   "old_name": "Christof Matz",
+   "verdict": "razhajanje odprto (ime): 2. beseda 'Matz' JASNO (t-prečka + z-spuščanje, x20); 1. beseda dvom 'Julian[?]' (isti niz kot r11/r16) proti v57 'Christof' (ovržen); haus POPRAVEK 64->34 (x12/nz: 3 = brez ascending zanke, jasno ne 6)"
+  },
+  "r13": {
+   "seen_haus": "35",
+   "seen_name": "Julian[?] Johan",
+   "old_haus": "35",
+   "old_name": "Peter Peter",
+   "verdict": "razhajanje odprto: isti niz kot r11 (x12); 2. beseda Johan; 1. beseda 'Julian[?]' dvom; v57 'Peter Peter' ovržen; brez POPRAVEK; haus soglasje 35"
+  },
+  "r14": {
+   "seen_haus": "37",
+   "seen_name": "Christian Johan[?]",
+   "old_haus": "37",
+   "old_name": "Kristan Peter",
+   "verdict": "razhajanje odprto: črnilo = J + u + 1×ascender + n + flourish (cmp4 D) — kandidat 'Johan[?]' (najbližje cmp3 E referenci), razlika do r3/r6/r10 2×ascender niza izrecna; v57 'Peter' ovržen; brez POPRAVEK; haus soglasje 37"
+  },
+  "r15": {
+   "seen_haus": "36",
+   "seen_name": "Christan Mache",
+   "old_haus": "36",
+   "old_name": "Kristan Mache",
+   "verdict": "ime POPRAVEK Kristan Mache -> Christan Mache (normalizacija K->C); haus soglasje 36"
+  },
+  "r16": {
+   "seen_haus": "34",
+   "seen_name": "Julian[?] Matz",
+   "old_haus": "34",
+   "old_name": "Villa[?] Rothmayer",
+   "verdict": "razhajanje odprto (ime): 2. beseda 'Matz' jasno (x20: t-prečka + z); 1. beseda dvom 'Julian[?]' — v57 'Villa[?]' = njihov neuspel poskus istega niza, 'Rothmayer' pa ne obstaja v črnilu (8-črkovna beseda vs 4-črkovna struktura); brez POPRAVEK (1. beseda); haus soglasje 34"
+  },
+  "r17": {
+   "seen_haus": "35",
+   "seen_name": "Julian[?] Johan",
+   "old_haus": "36",
+   "old_name": "Kristan Peter",
+   "verdict": "razhajanje odprto (ime): isti niz kot r11/r13; 2. beseda Johan, 1. 'Julian[?]' dvom; v57 'Kristan Peter' ovržen; haus POPRAVEK 36->35 (nz/x20: 5 s zastavico, ne 6 z zanko; blok h35 z r11/r13)"
+  },
+  "r18": {
+   "seen_haus": "33",
+   "seen_name": "Regina Juran[?]",
+   "old_haus": "33",
+   "old_name": "Regina Yourn",
+   "verdict": "razhajanje odprto: 1. beseda 'Regina' soglasje; 2. beseda = J-cap + u/o + r + a + n (x12) — kandidat 'Juran[?]' (brez jasne h-vzdignjenke, zato NI potrjen Johan; v57 'Yourn' ovržen — ni Y-oblike); PUA h.33 = Pfarrer Johann Leopold (Pfarrhof — Regina = članica župnijskega gospodinjstva); brez POPRAVEK; haus soglasje 33"
+  },
+  "r19": {
+   "seen_haus": "44",
+   "seen_name": "Husitsch Maria[?]",
+   "old_haus": "44",
+   "old_name": "Hannß Mache",
+   "verdict": "ime POPRAVEK Hannß Mache -> Husitsch Maria[?] (x12: 1. beseda 'Husitsch' jasno; 2. beseda 'Mache'-oblika — ista dvom-oblika kot val 118 p17 r15/r19; PUA h.44 'Husitsch Maria Bauersleute zu Grübln'; enotno 'Husitsch Maria[?]' po val 118 precedensu); haus soglasje 44"
+  }
+ }
+}

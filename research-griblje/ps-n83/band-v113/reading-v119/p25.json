@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "val": 119,
+  "page": 25,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p25-g0..2 + diag r07/r15/r19 x12 + Habschider/Schimer/Krause referenčne primerjave",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p25-r07", "diag-p25-r15", "diag-p25-r19"],
+  "note": "p25: 'Einsle Georg' (r0/r18) = fabriiran — črnilo '?raus Georg' = Krause (h45 = Krause hiša s p23-r14/r18 in p24-r0; K/S-glyf dvom izrecen). 'Schime' (r4/r5/r10/r14) = črnilo 'Schimer' (z r; PUA h.28 'Schimer' neodvisen presek). 'Michelbacher' (r17/r19) = fabriiran — črnilo = Habschider Marth h47 / Habschider Georg h48 (Habschider par s p24-r12..r19 — konsistentno!). r13 haus 10->40 (Rödig blok h40). r15: 'Pavolle stich' ovržen ('Prulla Miko[?]' h43). r19: v114 anmerkung 'PRAZNO vrstica' se NANAŠA na vrednostne celice, ne na ime — imenska celica nosi polno črnilo (agent 1-a ink-analiza n=1190 potrjena). r3 'Bresniko' = dvom (črnilo daljša beseda 'Brustolleko[?]'). r7: 2. beseda 'Guathel[?]' — v57 'Andre' ovržen. FUR: prazno."
+ },
+ "names_audit": {
+  "r0": {"seen_haus": "45", "seen_name": "Krause Georg", "old_haus": "45", "old_name": "Einsle Georg", "verdict": "ime POPRAVEK Einsle Georg -> Krause Georg (nz: '?raus Georg' — isti niz kot p24-r0 x12 in p23-r14/r18; K/S-glyf dvom, Krause po konsistentnosti h45; 'Einsle' ne obstaja v crnilu); haus soglasje 45"},
+  "r1": {"seen_haus": "50", "seen_name": "Rödig Matthl.", "old_haus": "50", "old_name": "Rödig Matthl.", "verdict": "soglasje (nz: 'Roedig Matthe' — v57 crkovanje ohranjeno)"},
+  "r2": {"seen_haus": "42", "seen_name": "Rödig Matthl.", "old_haus": "42", "old_name": "Rödig Matthl.", "verdict": "soglasje (nz)"},
+  "r3": {"seen_haus": "43", "seen_name": "Brustolleko[?]", "old_haus": "43", "old_name": "Bresniko", "verdict": "razhajanje odprto: crnilo = dolga beseda 'B-r-u-st-o-l-l-e-k-o[?]' (nz x6) — v57 'Bresniko' premajhna za crnilo; brez POPRAVEK (bez x12); haus soglasje 43"},
+  "r4": {"seen_haus": "38", "seen_name": "Schimer Georg", "old_haus": "38", "old_name": "Schime Georg", "verdict": "ime POPRAVEK Schime Georg -> Schimer Georg (nz: '-mer' z r; PUA h.28 'Schimer' neodvisen presek); haus soglasje 38"},
+  "r5": {"seen_haus": "39", "seen_name": "Schimer Martho", "old_haus": "39", "old_name": "Schime Martho", "verdict": "ime POPRAVEK Schime Martho -> Schimer Martho (nz: r-dodatek; 2. beseda k/th dvom, v57 'Martho' ohranjeno); haus soglasje 39"},
+  "r6": {"seen_haus": "50", "seen_name": "Rödig Matthl.", "old_haus": "50", "old_name": "Rödig Matthl.", "verdict": "soglasje (nz)"},
+  "r7": {"seen_haus": "40", "seen_name": "Röding Guathel[?]", "old_haus": "40", "old_name": "Röding Andre", "verdict": "razhajanje odprto (2. beseda, x12): 'G/O-uath-el[?]' — v57 'Andre' ovrzen (ni A-n-d-r-e strukture); 1. beseda Röding soglasje; brez POPRAVEK; haus soglasje 40"},
+  "r8": {"seen_haus": "40", "seen_name": "Röding georg", "old_haus": "40", "old_name": "Röding georg", "verdict": "soglasje (nz: 'Roeding Georg.')"},
+  "r9": {"seen_haus": "40", "seen_name": "Röding marthe", "old_haus": "40", "old_name": "Röding marthe", "verdict": "soglasje (nz)"},
+  "r10": {"seen_haus": "39", "seen_name": "Schimer Marthe", "old_haus": "39", "old_name": "Schime Marthe", "verdict": "ime POPRAVEK Schime Marthe -> Schimer Marthe (nz: r-dodatek; isti niz kot r5)"},
+  "r11": {"seen_haus": "50", "seen_name": "Rödig mathe", "old_haus": "50", "old_name": "Rödig mathe", "verdict": "soglasje (nz)"},
+  "r12": {"seen_haus": "40", "seen_name": "Rödig georg", "old_haus": "40", "old_name": "Rödig georg", "verdict": "soglasje (nz; F-PV-07-SPLIT v113 vrednostno)"},
+  "r13": {"seen_haus": "40", "seen_name": "Rödig matthl", "old_haus": "10", "old_name": "Rödig matthl", "verdict": "haus POPRAVEK 10->40 (nz g1: '40' jasno; Rödig blok h40 = r7/r8/r9/r12; 1 bi bila osamljena); ime soglasje"},
+  "r14": {"seen_haus": "38", "seen_name": "Schimer Georg", "old_haus": "38", "old_name": "Schime georg", "verdict": "ime POPRAVEK Schime georg -> Schimer Georg (nz: r-dodatek; cf. r4)"},
+  "r15": {"seen_haus": "43", "seen_name": "Prulla Miko[?]", "old_haus": "49", "old_name": "Pavolle stich", "verdict": "razhajanje odprto (ime, x12): 'P-rulla M-iko[?]' — v57 'Pavolle stich' ovrzen ('stich' ni v crnilu, 2. beseda = M-niz); brez POPRAVEK; haus POPRAVEK 49->43 (x12: 4+3 jasno)"},
+  "r16": {"seen_haus": "42", "seen_name": "Rödig matthi", "old_haus": "42", "old_name": "Rödig matthi", "verdict": "soglasje (nz)"},
+  "r17": {"seen_haus": "47", "seen_name": "Habschider Marth", "old_haus": "47", "old_name": "Michelbacher marthl", "verdict": "ime POPRAVEK Michelbacher marthl -> Habschider Marth (nz: 'N-absch-ar Marthe' — Habschider niz, cf. p24-r13/r16/r18 h47 — konsistentno; 'Michelbacher' ne obstaja v crnilu); haus soglasje 47"},
+  "r18": {"seen_haus": "45", "seen_name": "Krause Georg", "old_haus": "45", "old_name": "Einsle georg", "verdict": "ime POPRAVEK Einsle georg -> Krause Georg (nz: isti niz kot r0; h45 = Krause hisa); haus soglasje 45"},
+  "r19": {"seen_haus": "48", "seen_name": "Habschider Georg", "old_haus": "48", "old_name": "Michelbacher (Georg)", "verdict": "ime POPRAVEK Michelbacher (Georg) -> Habschider Georg (x12: 'H-absch-der Georg.' jasno; Habschider par s p24; v114 'PRAZNO' anmerkung se nanasa na vrednosti, ne ime — crnilo polno); haus soglasje 48"}
+ }
+}

@@ -68,9 +68,9 @@ describe("val 113 — gardele in infrastruktura", () => {
     }
   });
 
-  test("reading_pass: 80 vrstic v113-ps-reread (p21–p24; p17/p18 = 40 prevzetih v118-names, val 118)", () => {
+  test("reading_pass: 0 vrstic v113-ps-reread (p20–p24 prevzeti v119-names, val 119 del 1; p17/p18 = 40 v118-names, val 118)", () => {
     const n = REG.filter((r) => r["reading_pass"] === "v113-ps-reread").length;
-    expect(n).toBe(80);
+    expect(n).toBe(0);
     for (const pg of [19, 20]) {
       for (const r of byPage(pg)) expect(r["reading_pass"]).not.toBe("v113-ps-reread");
     }
