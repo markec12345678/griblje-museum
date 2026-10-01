@@ -4784,3 +4784,21 @@ Stage Summary:
 - Val 119 del 2a (p26–p31) ZAKLJUČEN in mergan; main @ e392ed2
 - TRANSCRIBED=0, nič ne dvignjeno; 5 odprtih razhajanj (fragmenti p27-r2/r6, p28-r5/r13, p31-r19); [?] dvomi ohranjeni v imenih
 - Naslednje: val 119 del 2b = p32–p37 (riziko-tabele pripravljene: p33/p34 = 21 vrstic, ditto-zemljevid, p28-tip sumi na p38 "König×8"/"Höring×9", p47 "Christan Mäthel"×10 vs PUA h.69 "Brandl", 126 diag p44–p49 že generiranih) → del 2c p38–p43 → del 2d p44–p49 → del 2e p50–p55
+
+---
+Task ID: 119-del2b
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2b)
+Task: ISSUE #72/#42 §4/§14 (griblje-museum) — 119. val, del 2b: imenski pass PS p32–p37 (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija: prejšnja seja je prebrala p32–p37 (122 vrstic), napisala reading JSONe + build skripto + test, pognala build in kaskado — vse NEKOMITIRANO na disku; povzetek seje (val 113) bil zastarel; disk = edina resnica: reading-v119/p{32..37}.json (122 vrstic, meta+names_audit, vlm_calls=0), build-register-v119-del2b.py (fail-fast, guard plasti), register-v119-del2b-changes.json (141 vnosov), register.json s 362 × v119-names, kaskada (KG sha b5d3ae93, K5 208, K9 69, pass3 392 identično)
+- Sistemična reconciliacija reading JSON ↔ register: 0 neskladij na vseh 122 vrsticah (build brez napak); testna datoteka val119-del2b pa imela 8 ročno napačnih pinov (v114 365→366, v115 4→3 zaradi p34 r20; Pöching ×5→×7 p32 / ×5→×6 p33; Müllner brez pik; Ring ×7→×12, Bruckler ×4→×5; h27 Mallwitsch soglasje + Mulschitsch p34; p34 r20 '(prazno)') — popravljeno na osnovi reading ground truth
+- Pini posodobljeni v val114/115/118/119-del1 testih (366 / 3 / p34 r20 → v119-names); TS popravki (Number(r.page), stats Record<string,unknown>) po CI tsc neuspehu 8d1e13d
+- 1216 testov: 1205 pass / 11 skip / 0 fail; lint čist
+- PR #125 → CI 2/2 (popravek @ 7554cac) → MERGE @ cd7f59b → veja izbrisana (lokalno + remote)
+- docs 136 + KAZALO-raziskav + README 173. sklop; ta worklog commit
+
+Stage Summary:
+- Val 119 del 2b (p32–p37) ZAKLJUČEN in mergan; main @ cd7f59b (107 owner + 19 haus + 7 ditto + 2 razhajanja; Ring-grozda h23–h28 DOKONČANA; p37 haus-haos 11 popravkov + swap r4/r5; Pöching vs Pölling; p34 druga roka "Ponter,[?]")
+- plasti: v114 366 / v115 3 / v118 60 / v119-names 362; K5 208; sha b5d3ae93; TRANSCRIBED=0, nič ne dvignjeno
+- Naslednje: val 119 del 2c = p38–p43 (PUA presek pripravljen v 1-d zapisu; "König×8"/"Höring×9" p38/p39 vzorci) → del 2d p44–p49 (126 diag pripravljenih) → del 2e p50–p55; nato PUA↔PS sinhronizacija (F-PV-03/04)
