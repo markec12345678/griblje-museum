@@ -1,0 +1,174 @@
+{
+ "meta": {
+  "val": 118,
+  "page": 17,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p17-g0..2 imenski skladi (X 280-610, Y-grid VY0=158 VSTEP=38.65, x6 LANCZOS+Contrast1.25+Sharpness1.6) + diag enovrstični x12-x20 (X 230-615, +6px pisar-piše-nizko) + horizontalna pravila-detekcija (X 290-600, prag 0.45) + PUA registar kot neodvisen presek",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "note": "p17 = najslabsa v57 imenska stran: 'Würgl' (8x) in 'Häusler' (3x) sta v57 halucinaciji — priimka ne obstajata nikjer drugje v registru (2875 vrstic). Pravo: 'Malfg' (M-a-l-f-g, f s prečko + g-spuščanje; ista črka-obelika kot v57 'Malfg' na p21 in PUA 'Malfa'; x15-x24 masovna primerjava 11 instanc p17/p18/p19/p21) in 'Husitsch Maria' (= PUA h.44 'Husitsch Maria Bauersleute zu Grübln')."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "62",
+   "seen_name": "Christan Mache",
+   "old_haus": "14",
+   "old_name": "Christan Mache",
+   "verdict": "haus POPRAVEK 14->62 (x12 jasno 62); ime soglasje — pisar piše 'Christian', registerjeva normalizacija 'Christan' ohranjena (obs, ne množični popravek)"
+  },
+  "r1": {
+   "seen_haus": "44",
+   "seen_name": "Christan Mache",
+   "old_haus": "44",
+   "old_name": "Häusler Mache",
+   "verdict": "ime POPRAVEK Häusler Mache -> Christan Mache (x12: isti niz kot r0, ni H-beseda); haus soglasje"
+  },
+  "r2": {
+   "seen_haus": "26",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Christan Würgl",
+   "verdict": "haus POPRAVEK 36->26 (x16: 2 z ravno bazo + 6 z zankastim ascendingom); ime POPRAVEK Würgl -> Malfg (x14-x24: M + a + l + f s prečko + g-spuščanje)"
+  },
+  "r3": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Christan Würgl",
+   "verdict": "ime POPRAVEK Würgl -> Malfg; ditto flag ostaja; haus soglasje"
+  },
+  "r4": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Christan Piber",
+   "verdict": "soglasje"
+  },
+  "r5": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Christan Piber",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Christan Piber",
+   "verdict": "soglasje; rdeči robni zapisi (že v113 anmerkung)"
+  },
+  "r7": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Christan Piber",
+   "verdict": "soglasje; rdeči pripis zgoraj"
+  },
+  "r8": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Christan Würgl",
+   "verdict": "ime POPRAVEK Würgl -> Malfg; haus soglasje"
+  },
+  "r9": {
+   "seen_haus": "35",
+   "seen_name": "Fitsch Piber",
+   "old_haus": "35",
+   "old_name": "Fitsch Piber",
+   "verdict": "soglasje; diagonalna poteza skozi celico iz rdečega zapisa zgoraj (potek, ne prečrtanje)"
+  },
+  "r10": {
+   "seen_haus": "35",
+   "seen_name": "Fitsch Piber",
+   "old_haus": "36",
+   "old_name": "Fitsch Würgl",
+   "verdict": "haus POPRAVEK 36->35 (x16 nizko zapisano 35); ime POPRAVEK Würgl -> Piber (x12 jasno Piber z P-zanko)"
+  },
+  "r11": {
+   "seen_haus": "34",
+   "seen_name": "Fitsch Malfg",
+   "old_haus": "34",
+   "old_name": "Fitsch Würgl",
+   "verdict": "ime POPRAVEK Würgl -> Malfg; haus soglasje; rdeča črta pod (eingeschafft kontekst, že v113)"
+  },
+  "r12": {
+   "seen_haus": "34",
+   "seen_name": "Fitsch Malfg",
+   "old_haus": "34",
+   "old_name": "Fitsch Würgl",
+   "verdict": "ime POPRAVEK Würgl -> Malfg; haus soglasje"
+  },
+  "r13": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "66",
+   "old_name": "Christan Würgl",
+   "verdict": "haus POPRAVEK 66->36 (pravila-strip: 36 med pravili 663/702); ime POPRAVEK Würgl -> Malfg"
+  },
+  "r14": {
+   "seen_haus": "27",
+   "seen_name": "Christan Piber",
+   "old_haus": "27",
+   "old_name": "Christan Piber",
+   "verdict": "soglasje (pravila-strip potrdil: 27|Piber med 663-741)"
+  },
+  "r15": {
+   "seen_haus": "44",
+   "seen_name": "Husitsch Maria",
+   "old_haus": "68",
+   "old_name": "Häusler Mache",
+   "verdict": "haus POPRAVEK 68->44 (pravila-strip: 44 pod pravilom 741); ime POPRAVEK Häusler Mache -> Husitsch Maria (PUA h.44: 'Husitsch Maria Bauersleute zu Grübln' — dva neodvisna vira; 2. beseda brez visokega h = Maria, ne Mache)"
+  },
+  "r16": {
+   "seen_haus": "62",
+   "seen_name": "Christan Mache",
+   "old_haus": "62",
+   "old_name": "Christan Mache",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "seen_haus": "60",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "60",
+   "old_name": "Christan Würgl",
+   "verdict": "ime POPRAVEK Würgl -> Gorgy (x12: G-okrogla inicialka + o + r + g/y spuščanje; Gorgy znan s p19 r5/r10); haus soglasje"
+  },
+  "r18": {
+   "seen_haus": "62",
+   "seen_name": "Christan Mache",
+   "old_haus": "62",
+   "old_name": "Christan Piber",
+   "verdict": "ime POPRAVEK Piber -> Mache (x12: M-hrbti + ache, ni P-zanka); haus soglasje"
+  },
+  "r19": {
+   "seen_haus": "44",
+   "seen_name": "Husitsch Maria",
+   "old_haus": "14",
+   "old_name": "Häusler Mache",
+   "verdict": "haus POPRAVEK 14->44 (x18: dve 4-ki); ime POPRAVEK Häusler Mache -> Husitsch Maria (x20 beseda2: Maria brez visokega h; PUA h.44)"
+  }
+ },
+ "furtrag_names": {
+  "seen_haus": "44",
+  "seen_name": "Husitsch Maria",
+  "note": "FUR vrstica (spodnja, Y~935-975 — grid 20.8 jo obreže; prebrano s celostrani + r19-vzorca): h.44 + ista H-beseda; PUA-konsistentno; v57 ni imela imena za FUR (samo 6|795 vrednost)"
+ },
+ "register_actions_planned": [
+  "r0 haus_no 14->62 (snimka haus_no_pre_v118)",
+  "r1 owner_original 'Häusler Mache'->'Christan Mache' (snimka owner_original_pre_v118)",
+  "r2 haus_no 36->26; owner_original 'Christan Würgl'->'Christan Malfg'",
+  "r3 owner_original 'Christan Würgl'->'Christan Malfg'",
+  "r8 owner_original 'Christan Würgl'->'Christan Malfg'",
+  "r10 haus_no 36->35; owner_original 'Fitsch Würgl'->'Fitsch Piber'",
+  "r11 owner_original 'Fitsch Würgl'->'Fitsch Malfg'",
+  "r12 owner_original 'Fitsch Würgl'->'Fitsch Malfg'",
+  "r13 haus_no 66->36; owner_original 'Christan Würgl'->'Christan Malfg'",
+  "r15 haus_no 68->44; owner_original 'Häusler Mache'->'Husitsch Maria'",
+  "r17 owner_original 'Christan Würgl'->'Christan Gorgy'",
+  "r18 owner_original 'Christan Piber'->'Christan Mache'",
+  "r19 haus_no 14->44; owner_original 'Häusler Mache'->'Husitsch Maria'",
+  "page_observations_v118: 'Christan' normalizacija ohranjena (pisar piše 'Christian' z i-piko — 18× ista črka, v57 konsistentna izbira); stand/wohnort koloni ostajajo izven obsega (r0: 'Dominil[?]'/«Gribl[?]», dalje ditto)"
+ ]
+}

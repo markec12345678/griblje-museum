@@ -76,10 +76,10 @@ describe("val 90 — meta + disciplina §4", () => {
     }
   });
 
-  test("K5 izrecno označen kot NEDEDOKAZLJIVO (dito 233/2.875 = 8,1 %; bloki ~1,1 vrstic; val 115: +4 vstavljene vrstice)", () => {
+  test("K5 izrecno označen kot NEDEDOKAZLJIVO (dito 226/2.875 = 7,9 %; bloki ~1,1 vrstic; val 115: +4 vstavljene vrstice)", () => {
     expect(art.meta.K5_input_reliability).toContain("NEZANESLJIV VHOD");
     expect(art.meta.K5_input_reliability).toContain("NEDEDOKAZLJIVO");
-    expect(art.meta.K5_input_reliability).toContain("233/2875");
+    expect(art.meta.K5_input_reliability).toContain("226/2875");
   });
 });
 

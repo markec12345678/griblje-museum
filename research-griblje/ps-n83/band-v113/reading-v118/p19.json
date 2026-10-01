@@ -1,0 +1,163 @@
+{
+ "meta": {
+  "val": 118,
+  "page": 19,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p19-g0..2 skladi + dom+haus trakova (X 55-360, x6, r0-r7 in r8-r19) + diag enovrstični x12-x16 (r0, r5, r10) + kalibracija 2↔3 z dominikalno sekvenco 321-340",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "note": "v57 p19 imenska kolona = 'Heinrich X' vzorec (Heinrich Wurff/Piberl/Mache + Hansel Munde), ki na strani ne obstaja — pisar piše 'Christian' (z i-piko). IZJEMA r10: 'Georg Gorgy' = edina v57-usklajena vrstica (potrjena x12). Haus kolona: 2↔3 šum (r0 36->26, r16 26->36 — obe smeri!, r6 62->63), r10 61->41 (4-glyfa = kot '44' v r9/r18)."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "26",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Heinrich Wurff",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg' (M-beseda z f-prečko + g-spuščanjem, = p21 'Malfg' oblika); haus POPRAVEK 36->26 (dom-trak: 2-glyfa, dominikalni 321 ločeno)"
+  },
+  "r1": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Heinrich Piberl",
+   "verdict": "ime POPRAVEK -> 'Christan Piber' (v57 'Piberl' — ista črkovna oblika kot 'Piber' p17/p18, brez vidnega -l; enotno Piber + obs); haus soglasje"
+  },
+  "r2": {
+   "seen_haus": "44",
+   "seen_name": "Husitsch Maria[?]",
+   "old_haus": "44",
+   "old_name": "Hansel Munde",
+   "verdict": "ime POPRAVEK -> 'Husitsch Maria[?]' (H-beseda + M-beseda; h.44 = isti blok kot p17 r15/r19; PUA h.44 'Husitsch Maria'; 2. beseda dvomna Mache[?]/Maria — brez jasne visoke h -> Maria, dvom izrecen)"
+  },
+  "r3": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Heinrich Piberl",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  "r4": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Heinrich Wurff",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'"
+  },
+  "r5": {
+   "seen_haus": "62",
+   "seen_name": "Christan Matho[?]",
+   "old_haus": "62",
+   "old_name": "Heinrich Mache",
+   "verdict": "ime POPRAVEK -> 'Christan Matho[?]' (M-beseda BREZ g-spuščanja, o-končnica — ločena od Malfg; PUA ima 'Matho' kot samostojen priimek; dvom izrecen)"
+  },
+  "r6": {
+   "seen_haus": "63",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "62",
+   "old_name": "Heinrich Gorgy",
+   "verdict": "ime POPRAVEK priimka soglasen (Gorgy ✓), vendar 'Heinrich'->'Christian'; haus POPRAVEK 62->63 (dom-trak: jasna 3-glyfa)"
+  },
+  "r7": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Heinrich Piberl",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  "r8": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Heinrich Wurff",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'; rdeči robni pripis zgoraj (že v114 kontekst)"
+  },
+  "r9": {
+   "seen_haus": "44",
+   "seen_name": "Husitsch Maria[?]",
+   "old_haus": "44",
+   "old_name": "Hansel Munde",
+   "verdict": "ime POPRAVEK -> 'Husitsch Maria[?]'"
+  },
+  "r10": {
+   "seen_haus": "41",
+   "seen_name": "Georg Gorgy",
+   "old_haus": "61",
+   "old_name": "Georg Gorgy",
+   "verdict": "ime SOGLASJE (edina v57-usklajena vrstica na p19 — x12 'Georg Gorgy' ✓); haus POPRAVEK 61->41 (4-glyfa = kot '44' v r9/r18; dvom 4/6 izrecen v obs)"
+  },
+  "r11": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Heinrich Piberl",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  "r12": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Heinrich Wurff",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'"
+  },
+  "r13": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "36",
+   "old_name": "Heinrich Wurff",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'"
+  },
+  "r14": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Heinrich Piberl",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  "r15": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Heinrich Piberl",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  "r16": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "26",
+   "old_name": "Heinrich Wurff",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (dom-trak: jasna 3-glyfa)"
+  },
+  "r17": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "37",
+   "old_name": "Heinrich Piberl",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'"
+  },
+  "r18": {
+   "seen_haus": "44",
+   "seen_name": "Husitsch Maria[?]",
+   "old_haus": "44",
+   "old_name": "Hansel Munde",
+   "verdict": "ime POPRAVEK -> 'Husitsch Maria[?]'"
+  },
+  "r19": {
+   "seen_haus": "62",
+   "seen_name": "Christan Malfg",
+   "old_haus": "62",
+   "old_name": "Heinrich Mache",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'"
+  }
+ },
+ "furtrag_names": {
+  "seen_haus": "",
+  "seen_name": "",
+  "note": "FUR vrstica: imenska celica PRAZNA (g2 sklad); vrednost pri v114 že vir resnice"
+ },
+ "register_actions_planned": [
+  "19 owner_original POPRAVKOV (vse razen r10) s snimkami owner_original_pre_v118",
+  "r0 haus 36->26, r6 62->63, r10 61->41, r16 26->36 (snimke haus_no_pre_v118)",
+  "page_observations_v118: 'Heinrich X' v57 vzorec = pattern-fill, na strani piše 'Christian'; Piber/Piberl normalizacija (v57 p19 'Piberl' = ista oblika kot 'Piber' p17/p18); Matho/Malfg ločena priimka (g-spuščanje kot diskriminator); r10 = edina v57-usklajena vrstica"
+ ]
+}

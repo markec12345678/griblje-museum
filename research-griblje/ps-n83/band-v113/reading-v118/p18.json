@@ -1,0 +1,163 @@
+{
+ "meta": {
+  "val": 118,
+  "page": 18,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p18-g0..2 skladi + diag enovrstični x12-x24 (r0-r6, r9, r14) + pravila-detekcija (pravila 155/239/432/470/509/548/624/662/739/818) + kalibracija 2↔3 z dominikalno sekvenco (301-320: ista 3-glyfa kot haus) + FUR izrez (ime PRAZNO)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "note": "VELIKA NAJDBA val 118: v57 p18 imenska kolona je IZMIŠLJENA / motoviljena — vse 20 vrstic nosi 'Wendelin/Christof/Villibald Muth/Wulfj/Puhon/Groyz/Hoffnung' nabor, ki NE obstaja na strani (in nikjer drugje v dokumentu). Vrednostna in haus koloni sta s te strani (v113 je vrednosti potrdila), imena pa ne: stran nosi 'Christan Mache/Gorgy/Malfg/Piber + Fitsch Malfg/Piber + Husitsch Maria + Hof-Besizungen' — isti lastniški nabor kot p17 (isti Geländebezirk, dominikalna št. 301-320 nadaljuje p17 281-300). Dokaz: vrednostna celica r0 '1|89' (v113 odprto razhajanje) sede v ISTO vrstico kot '62 | Christan Mache'."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "62",
+   "seen_name": "Christan Mache",
+   "old_haus": "63",
+   "old_name": "Wendelin Muth",
+   "verdict": "ime POPRAVEK (fabriciran 'Wendelin Muth' -> 'Christan Mache'); haus POPRAVEK 63->62 (x12: 2 z ravno bazo)"
+  },
+  "r1": {
+   "seen_haus": "62",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "62",
+   "old_name": "Wendelin Muth",
+   "verdict": "ime POPRAVEK -> 'Christan Gorgy' (x14 primerjava 6 G-instanc: G + o + r + g-spuščanje + y-rep; v57 'Groyz' tukaj ne obstaja); haus soglasje"
+  },
+  "r2": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "26",
+   "old_name": "Wendelin Muth",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (kalibracija: dominikalni 308 = ista 3-glyfa)"
+  },
+  "r3": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "27",
+   "old_name": "Wendelin Muth",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  "r4": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "26",
+   "old_name": "Wendelin Muth",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36"
+  },
+  "r5": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "27",
+   "old_name": "Wendelin Muth",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37 (g0 sklad)"
+  },
+  "r6": {
+   "seen_haus": "44",
+   "seen_name": "Husitsch Maria",
+   "old_haus": "44",
+   "old_name": "Christof Muth",
+   "verdict": "ime POPRAVEK -> 'Husitsch Maria' (x12: H-beseda brez visokega h v 2. besedi = Maria; = PUA h.44 'Husitsch Maria Bauersleute zu Grübln'; isti h.44 blok kot p17 r15/r19)"
+  },
+  "r7": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "26",
+   "old_name": "Wendelin Wulfj",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36 (kalibracija r7: dominikalni 308 ob haus 36 v istem izrezu)"
+  },
+  "r8": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "27",
+   "old_name": "Wendelin Puhon",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  "r9": {
+   "seen_haus": "",
+   "seen_name": "Hof-Besizungen[?]",
+   "old_haus": "",
+   "old_name": "Hoffnung",
+   "verdict": "ime POPRAVEK -> 'Hof-Besizungen[?]' (x12: fraza 'Hof-Besizungen' = dominikalni posest, NE osebno ime; v57 'Hoffnung' = skrajšana izmišljena varianta; haus ostaja prazen, vrednost prazna = konsistentno)"
+  },
+  "r10": {
+   "seen_haus": "63",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "63",
+   "old_name": "Wendelin Groyz",
+   "verdict": "ime POPRAVEK -> 'Christan Gorgy'; haus soglasje"
+  },
+  "r11": {
+   "seen_haus": "62",
+   "seen_name": "Christan Mache",
+   "old_haus": "62",
+   "old_name": "Wendelin Mutho",
+   "verdict": "ime POPRAVEK -> 'Christan Mache'; haus soglasje"
+  },
+  "r12": {
+   "seen_haus": "63",
+   "seen_name": "Christan Gorgy",
+   "old_haus": "62",
+   "old_name": "Wendelin Groyz",
+   "verdict": "ime POPRAVEK -> 'Christan Gorgy'; haus POPRAVEK 62->63 (g1 sklad)"
+  },
+  "r13": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "27",
+   "old_name": "Wendelin Puhon",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  "r14": {
+   "seen_haus": "36",
+   "seen_name": "Christan Malfg",
+   "old_haus": "26",
+   "old_name": "Wendelin Wulffj",
+   "verdict": "ime POPRAVEK -> 'Christan Malfg'; haus POPRAVEK 26->36"
+  },
+  "r15": {
+   "seen_haus": "34",
+   "seen_name": "Fitsch Malfg",
+   "old_haus": "24",
+   "old_name": "Vilter Wulffj",
+   "verdict": "ime POPRAVEK -> 'Fitsch Malfg'; haus POPRAVEK 24->34"
+  },
+  "r16": {
+   "seen_haus": "35",
+   "seen_name": "Fitsch Piber",
+   "old_haus": "35",
+   "old_name": "Villibald Puhon",
+   "verdict": "ime POPRAVEK -> 'Fitsch Piber'; haus soglasje"
+  },
+  "r17": {
+   "seen_haus": "37",
+   "seen_name": "Christan Piber",
+   "old_haus": "27",
+   "old_name": "Wendelin Puhon",
+   "verdict": "ime POPRAVEK -> 'Christan Piber'; haus POPRAVEK 27->37"
+  },
+  "r18": {
+   "seen_haus": "34",
+   "seen_name": "Fitsch Malfg",
+   "old_haus": "24",
+   "old_name": "Villibald Wulffj",
+   "verdict": "ime POPRAVEK -> 'Fitsch Malfg'; haus POPRAVEK 24->34"
+  },
+  "r19": {
+   "seen_haus": "35",
+   "seen_name": "Fitsch Piber",
+   "old_haus": "35",
+   "old_name": "Villibald Puhon",
+   "verdict": "ime POPRAVEK -> 'Fitsch Piber'; haus soglasje"
+  }
+ },
+ "furtrag_names": {
+  "seen_haus": "",
+  "seen_name": "",
+  "note": "FUR vrstica: imenska celica PRAZNA (izrez Y 930-985), vrednost 10|275 (v113 že potrdila)"
+ },
+ "register_actions_planned": [
+  "vseh 20 vrstic: owner_original POPRAVEK s snimko owner_original_pre_v118",
+  "r0 haus 63->62, r2 haus 26->36, r3 27->37, r4 26->36, r5 27->37, r7 26->36, r8 27->37, r12 62->63, r13 27->37, r14 26->36, r15 24->34, r17 27->37, r18 24->34 (snimke haus_no_pre_v118)",
+  "page_observations_v118: v57 p18 imenska kolona = fabricirana (nabor 'Wendelin/Christof/Villibald Muth/Wulfj/Puhon' ne obstaja na strani); 2↔3 haus šum v57 rešen s dominikalno kalibracijo; 'Hof-Besizungen[?]' = ne-osebni zapis (dominikalni posest); priimki: Mache/Piber/Gorgy/Malfg/Fitsch — 'Malfg' identiteta potrjena z v57-p21 in PUA 'Malfa'"
+ ]
+}

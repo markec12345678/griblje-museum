@@ -45,13 +45,13 @@ const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
 
 describe("val 114 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1795 v86 (val 116: p142 +40), 265 v112, 120 v113 — nedotaknjeno", () => {
+  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1795 v86 (val 116: p142 +40), 265 v112, 80 v113 (val 118: p17/p18 -> v118-names) — nedotaknjeno", () => {
     expect(REG.length).toBe(2875);
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
     expect(REG.filter((r) => r["reading_pass"] === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
     expect(REG.filter((r) => r["reading_pass"] === "v112-ps-reread").length).toBe(265);
-    expect(REG.filter((r) => r["reading_pass"] === "v113-ps-reread").length).toBe(120);
+    expect(REG.filter((r) => r["reading_pass"] === "v113-ps-reread").length).toBe(80);
   });
 
   test("changes audit: val 114, 417 sprememb (167 moves + 111 popravkov + 31 split markerjev + 124 opomb + 3 haus + 2 pocistki)", () => {
@@ -76,8 +76,8 @@ describe("val 114 — gardele in infrastruktura", () => {
     }
   });
 
-  test("reading_pass v114-ps-reread: 667 vrstic (p19+p20+p25–p55)", () => {
-    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(667);
+  test("reading_pass v114-ps-reread: 647 vrstic (p20+p25–p55; p19 = 20 prevzetih v118-names, val 118)", () => {
+    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(647);
   });
 });
 
@@ -391,9 +391,9 @@ describe("val 114 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 2790d893… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
+  test("kaskadni artefakti držijo isti KG sha 69038f63… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^2790d893/);
+    expect(kgSha).toMatch(/^69038f63/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
