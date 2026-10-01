@@ -263,8 +263,8 @@ describe("val 82 — PS N83 transkripcija DOKONČANA (p56–143, analysis-v3)", 
     expect(fresh.length).toBe(1798);
     const v86 = fresh.filter((r) => r.reading_pass === "v86-colonial-tiles");
     const v82 = fresh.filter((r) => r.reading_pass === "v82-native-pass1");
-    expect(v86.length).toBe(1755); // p56–141 (kolonski tile-i, 4/4 pasovi; val 86: 808 + val 98: 301 + val 107: 646)
-    expect(v82.length).toBe(43); // p142 (kvota 429 — 1 tile, obnovljivo) + p143 (rdeči povzetek)
+    expect(v86.length).toBe(1795); // p56–142 (kolonski tile-i, 4/4 pasovi; val 86: 808 + val 98: 301 + val 107: 646 + val 116: 40 p142)
+    expect(v82.length).toBe(3); // p143 (rdeči povzetek) — val 116: p142 prešlo v v86
     expect(v86.every((r) => r.page >= 56 && r.page <= 142)).toBe(true);
     expect(analysisV3.method.reading_honesty).toContain("PROVISIONAL");
     expect(analysisV3.method.reading_honesty).toContain("KG v1.8");

@@ -162,18 +162,18 @@ describe("val 109 — PZ p48–65 2. prehod (PREHOD 8) [124-val109]", () => {
     expect(f19.detail).toContain("p142-t-kultur2");
   });
 
-  test("surovine: manifest 45 izrezkov, 0 VLM glasov (iskreno stanje vala), direktni odtis zapisan", () => {
+  test("surovine: manifest 45 izrezkov, 45 VLM glasov (val 116: kvota prosta — zajeti vsi; integracija = mikroprehod 8b, val 117), direktni odtis zapisan", () => {
     const dir = join(root, "research-griblje/raw-web-val109-2026-09");
     const manifest = JSON.parse(readFileSync(join(dir, "manifest-v109.json"), "utf8")) as {
       crops: { cell: string }[];
     };
     expect(manifest.crops).toHaveLength(45);
-    // vlm-v109/ je prazen (git ne komitira praznih direktorijev) → obravnavaj manjkajočega:
+    // val 116: vseh 45 glasov zajetih (read-v109.mts ob prosti kvoti); integracija v PZ = val 117
     const vlmDir = join(dir, "vlm-v109");
     const done = existsSync(vlmDir)
       ? readdirSync(vlmDir).filter((f) => f.endsWith(".json"))
       : [];
-    expect(done).toHaveLength(0); // brez VLM glasov — 429 dnevna kvota
+    expect(done).toHaveLength(45); // val 116: 45/45 glasov (prej 0 — 429 kvota)
     expect(existsSync(join(dir, "direct-reads-v109.md"))).toBe(true);
     const direct = readFileSync(join(dir, "direct-reads-v109.md"), "utf8");
     expect(direct).toContain("glas #1");

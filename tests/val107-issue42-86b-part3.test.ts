@@ -5,7 +5,7 @@
  * Kaj ta datoteka varuje (prejšnje teste ne pokrijejo):
  *  1. vgradnja dela 3: register-v107-changes.json — fail-fast marker, pravila 1:1 v86b,
  *     page-level F-PV-05, snimke samo na novih korekcijah, v88 nedotaknjeno,
- *  2. fail-fast page pravilo: p142 (1 manjkajoči tile — p142-t-kultur2, trdo 429) ostaja
+ *  2. fail-fast page pravilo: p142 (1 manjkajoči tile — p142-t-kultur2, trdo 429) je OSTAL v82 do val 116 (tile prebran ob kvoti — 2. prehod zaključen)
  *     v82-native-pass1 — delna pokritost nikoli ne pride do arbitraže,
  *  3. p141 = NE kvalificirana stran (only_j ≥ 10 %) — reading_pass vgrajen, jk vrednosti
  *     nedotaknjene (v86-page-not-qualified), owner/kultur variante vrednostno neodvisne,
@@ -133,11 +133,11 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
     }
   });
 
-  test("owner/kultur variante: +552/+506 (del 3) → skupaj 1.615/1.402; vse na p56–142", () => {
+  test("owner/kultur variante: +552/+506 (del 3) → skupaj 1.615/1.402; val 116: +37/+34 (p142) → 1.652/1.436; vse na p56–142", () => {
     expect(chg3.owner_variant_new).toBe(552);
     expect(chg3.tally["kultur_variant"]).toBe(506);
-    expect(register.filter((r) => "owner_tile_v86" in r)).toHaveLength(1615);
-    expect(register.filter((r) => "kultur_tile_v86" in r)).toHaveLength(1402);
+    expect(register.filter((r) => "owner_tile_v86" in r)).toHaveLength(1652); // 153 + 910 + 552 + 37 (val 116, p142)
+    expect(register.filter((r) => "kultur_tile_v86" in r)).toHaveLength(1436); // 1402 + 34 (val 116, p142)
     const variantPages = register
       .filter((r) => "owner_tile_v86" in r)
       .map((r) => r.page as number);
@@ -145,12 +145,12 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
     expect(Math.max(...variantPages)).toBeLessThanOrEqual(142);
   });
 
-  test("fail-fast page pravilo: p142 (1 tile manjka) OSTAJA v82-native-pass1; p1–55 + p143 nedotaknjeni", () => {
+  test("val 116: p142 tile prebran (kvota prosta) — 2. prehod ZAKLJUČEN (v86-colonial-tiles, 25 review-col-split markerjev, variant polja, 0 vrednostnih popravkov); p1–55 + p143 nedotaknjeni", () => {
     const p142 = register.filter((r) => r.page === 142);
     expect(p142.length).toBe(40);
-    expect(p142.every((r) => r.reading_pass === "v82-native-pass1")).toBe(true);
-    expect(p142.every((r) => !("owner_tile_v86" in r))).toBe(true);
-    expect(p142.every((r) => !("jk_review" in r))).toBe(true);
+    expect(p142.every((r) => r.reading_pass === "v86-colonial-tiles")).toBe(true); // val 116: prehod zaključen
+    expect(p142.filter((r) => r.jk_review === "v86-review-col-split").length).toBe(25); // p1/p2 razkol = REVIEW, nič tiho
+    expect(p142.every((r) => !("jaethe_pass1_v82" in r))).toBe(true); // 0 vrednostnih popravkov
     const old = register.filter((r) => (r.page as number) <= 55 || (r.page as number) === 143);
     for (const r of old) {
       expect("owner_tile_v86" in r).toBe(false);
@@ -160,16 +160,16 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
     }
   });
 
-  test("resumable: 695/696 tile-ov prebranih, 0 trajnih napak; edini manjkajoči = p142-t-kultur2", () => {
+  test("resumable: 696/696 tile-ov prebranih, 0 trajnih napak (val 116: p142-t-kultur2 prebran)", () => {
     const read = manifest.tiles.filter((t) => existsSync(join(V86, "vlm-v86", `${t.cell}-T.json`)));
-    expect(read.length).toBe(695);
+    expect(read.length).toBe(696);
     expect(manifest.tiles.length).toBe(696);
     for (const t of read) {
       const j = JSON.parse(readFileSync(join(V86, "vlm-v86", `${t.cell}-T.json`), "utf8"));
       expect("ERROR" in j, t.cell).toBe(false);
     }
     const missing = manifest.tiles.filter((t) => !existsSync(join(V86, "vlm-v86", `${t.cell}-T.json`)));
-    expect(missing.map((t) => t.cell)).toEqual(["p142-t-kultur2"]);
+    expect(missing).toEqual([]); // val 116: p142-t-kultur2 prebran — 696/696
   });
 });
 
@@ -213,8 +213,8 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
     expect(f12!.status).toContain("RESOLVED-V107");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha ca0aeb58… (val 115; val 114 je bil 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
-    expect(kgSha).toMatch(/^ca0aeb58/);
+  test("kaskada: runtime kopije držijo isti KG sha 2790d893… (val 116; val 115 je bil 2790d893, val 114 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
+    expect(kgSha).toMatch(/^2790d893/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),
