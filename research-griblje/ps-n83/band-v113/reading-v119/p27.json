@@ -1,0 +1,155 @@
+{
+ "meta": {
+  "val": 119,
+  "del": 2,
+  "page": 27,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p27-g0..2 + diag rowzoomi x12-x24 (make-rowzoom-v119b.py, per-page dy=+26 — p27 grid nizje od VY0+6) + R-glijf referenca (r1 'Ring' x24: velika skleda z notranjo zanko) + 2↔3 kalibracija (r15 '23': 3 = dvokotljasta; r16 '29') + registarski presek (Brünig p66 ×14, h67 Pavlič p27-r11 + p28, h24 Ring p26-r18)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p27-r00 (x20×3, x24)", "diag-p27-r01 (x24×3, dy kalibracija)", "diag-p27-r02 (x12)", "diag-p27-r03 (x20×2)", "diag-p27-r04 (x20)", "diag-p27-r06 (x12+x20)", "diag-p27-r07 (x20)", "diag-p27-r08 (x20)", "diag-p27-r10 (x20×2)", "diag-p27-r11 (x20×2)", "diag-p27-r13 (x20)", "diag-p27-r14 (x12)", "diag-p27-r15 (x20)", "diag-p27-r16 (x16)", "diag-p27-r17 (x16)", "diag-p27-r18 (x16)", "diag-p27-r19 (x16)"],
+  "note": "p27 = v57 imenska plast mešanica: 'Widmann Michael' (r0) fabriirano (črnilo ℬ = 'Brünig[?] Mathä[?]', cf. Brünig p66 ×14 + Mathä-forma r12/r15); 'Kreuker Michael' (r4) = črnilo 'Mäthel[?]' (brez i-c-h; cf. p30 Mäthel-forma); 'Hauschild' (r8) = edina instanca v registru, črnilo 'Haischan[?]' brez '-child' zveze; 'Leue Michael' (r17) = fabriirano (črnilo jasno 'Ring Michl'); r19 'Ring Michael' = črnilo 'Ring Mathä.' (Mathä-period). Haus kolona: sistemski v57 šum — r10 23→25, r13 26→24, r14 26→25, r15 33→23 (2↔3 v DESCOVICI + zamenjave), r19 33→23 (rdeče črnilo). r2/r6 = odpadkovni v57 nizi ('Hantschig und' / 'Ho. 25. Jirgan') brez haus/kultur/vrednosti — črnilo = nepopolni fragmenti ('Hantspa?ig an[?]' / 'M?assga?ungan[?]'), razhajanje odprto, brez POPRAVEK. 'Pavlič Georg' r11 (h67) = črnilo 'Pavelich' — spelling varianta, soglasje (cf. p26-r19 Pavlicz[?] isti h67). Ditto-zastavice: nič (v57 r2/r6 brez ditto)."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "23",
+   "seen_name": "Brünig[?] Mathä[?]",
+   "old_haus": "23",
+   "old_name": "Widmann Michael",
+   "verdict": "ime POPRAVEK Widmann Michael -> Brünig[?] Mathä[?] (x20/x24: ℬ-začetnica = Kurrent B, IZKLJUČUJE 'Widmann' 𝒲; telo priimka B-r/i-ü/i-n-a + spuščni rep — najboljša ujemanja 'Brünig' (p66 ×14) / 'Brinny' (p63 ×3), [?]; krstno M-a-th-ä z dvigovalko — 'Mathä' forma na isti strani (r12/r15) + 'Brünig Matthäus' p66 ×3; rdeča podčrtja skozi ime); haus soglasje 23"
+  },
+  "r1": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann",
+   "old_haus": "26",
+   "old_name": "Ring Johann",
+   "verdict": "soglasje (x24: R-glijf = velika skleda z notranjo zanko — REFERENČNA instanca za p26-r17/r18)"
+  },
+  "r2": {
+   "seen_haus": "",
+   "seen_name": "Hantspa?ig an[?]",
+   "old_haus": "",
+   "old_name": "Hantschig und",
+   "verdict": "razhajanje odprto: v57 'Hantschig und' = odpadek (brez haus/kultur/vrednosti); črnilo = nepopolni fragment 'Hantspa?ig an[?]...' (x12, dolgi bugnar prečka celico) — nezadostno za POPRAVEK; anmerkung zabeležen"
+  },
+  "r3": {
+   "seen_haus": "27",
+   "seen_name": "Malleitsch Johann",
+   "old_haus": "27",
+   "old_name": "Malleitsch Johann",
+   "verdict": "soglasje (x20: črnilo 'Malleschildch[?]' — kompresirana 'itsch' zveza; v57 'Malleitsch' = normalizacija iste oblike; cf. r7 'Malleschitsch')"
+  },
+  "r4": {
+   "seen_haus": "30",
+   "seen_name": "Kreuker Mäthel[?]",
+   "old_haus": "30",
+   "old_name": "Kreuker Michael",
+   "verdict": "ime POPRAVEK Kreuker Michael -> Kreuker Mäthel[?] (x20: krstno M-ä/th-e-l — brez i-c-h zveze; cf. 'Mäthel' forma p30 (Zachter/Bulter/Andres Mäthel) + 'Mathl' p30-r16/17; [?] ä/e); haus soglasje 30"
+  },
+  "r5": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann",
+   "old_haus": "26",
+   "old_name": "Ring Johann",
+   "verdict": "soglasje"
+  },
+  "r6": {
+   "seen_haus": "",
+   "seen_name": "M?assga?ungan[?]",
+   "old_haus": "",
+   "old_name": "Ho. 25. Jirgan",
+   "verdict": "razhajanje odprto: v57 'Ho. 25. Jirgan' = odpadek (brez haus/kultur/vrednosti); črnilo = nepopolni fragment (x12/x20: M/W-začetnica + '-ssga?ungan' telo) — nezadostno za POPRAVEK; anmerkung zabeležen"
+  },
+  "r7": {
+   "seen_haus": "29",
+   "seen_name": "Malleitsch Johann",
+   "old_haus": "29",
+   "old_name": "Malleitsch[?] Johann",
+   "verdict": "soglasje (x20: črnilo 'Malleschitsch' — s-sredinska zveza jasna; v57 [?] odveč a nezškodljiv; isti priimek kot r3)"
+  },
+  "r8": {
+   "seen_haus": "5",
+   "seen_name": "Haischan[?] Mathä",
+   "old_haus": "5",
+   "old_name": "Hauschild Mathä",
+   "verdict": "ime POPRAVEK Hauschild Mathä -> Haischan[?] Mathä (x20: telo H-a/i-s/c-h-a-n — brez '-child' zveze; v57 'Hauschild' = EDINA instanca v 2875 vrsticah = brez opore; krstno 'Mathä' jasno; PUA h.5 = Dragosch/Brugt — druga plast, brez opore za 'Hauschild'); haus soglasje 5"
+  },
+  "r9": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael",
+   "old_haus": "24",
+   "old_name": "Ring Michael",
+   "verdict": "soglasje (ista hiša h24 kot p26-r18 'Ring Michael' — medstranski presek)"
+  },
+  "r10": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito",
+   "old_haus": "23",
+   "old_name": "Ring Mito",
+   "verdict": "haus POPRAVEK 23->25 (x20: okrogla 2 + 5 s zastavico — jasno ne 3); ime soglasje"
+  },
+  "r11": {
+   "seen_haus": "67",
+   "seen_name": "Pavlič Georg",
+   "old_haus": "67",
+   "old_name": "Pavlič Georg",
+   "verdict": "soglasje (x20: črnilo 'Pavelich' — spelling varianta; v57 'Pavlič' = normalizacija; h67 presek s p26-r19/p28)"
+  },
+  "r12": {
+   "seen_haus": "29",
+   "seen_name": "Ring Mathä",
+   "old_haus": "29",
+   "old_name": "Ring Mathä",
+   "verdict": "soglasje"
+  },
+  "r13": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael",
+   "old_haus": "26",
+   "old_name": "Ring Michael",
+   "verdict": "haus POPRAVEK 26->24 (x20: 2 + A-oblika 4 kot p26-r18/r14 '44'); ime soglasje"
+  },
+  "r14": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito",
+   "old_haus": "26",
+   "old_name": "Ring Mito",
+   "verdict": "haus POPRAVEK 26->25 (x12: '25' jasno); ime soglasje"
+  },
+  "r15": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä",
+   "old_haus": "33",
+   "old_name": "Ring Mathä",
+   "verdict": "haus POPRAVEK 33->23 (x20: okrogla 2 + dvokotljasta 3 — desetice 3→2); ime soglasje"
+  },
+  "r16": {
+   "seen_haus": "29",
+   "seen_name": "Mally Leonhard",
+   "old_haus": "29",
+   "old_name": "Mally Leonhard",
+   "verdict": "soglasje (x16: 'M?ally Leonard.' — v57 normalizacija 'Leonhard' ohranjena)"
+  },
+  "r17": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michl",
+   "old_haus": "24",
+   "old_name": "Leue Michael",
+   "verdict": "ime POPRAVEK Leue Michael -> Ring Michl (x16: jasno 'Ring Michl.' — R-skleda + Michl s piko; v57 'Leue' NE obstaja v črnilu — fabriirano, edina instanca v registru); haus soglasje 24"
+  },
+  "r18": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito",
+   "old_haus": "25",
+   "old_name": "Ring Mito",
+   "verdict": "soglasje (x16)"
+  },
+  "r19": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä",
+   "old_haus": "33",
+   "old_name": "Ring Michael",
+   "verdict": "ime POPRAVEK Ring Michael -> Ring Mathä + haus POPRAVEK 33->23 (x16: krstno 'Mathä.' s piko — NI 'Michael'; haus rdeče črnilo '23': 2 + dvokotljasta 3, desetice 3→2)"
+  }
+ }
+}
