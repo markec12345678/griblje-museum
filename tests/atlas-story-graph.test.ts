@@ -76,7 +76,7 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
 
   test("entitete po vrsti ujemajo KG (3.553 skupaj)", () => {
     const by = graph.stats.entities_by_type;
-    expect(by["PARCEL"]).toBe(2426); // val 98: 2933 → val 107: 2770 → val 112: 2711 → val 114: 2426
+    expect(by["PARCEL"]).toBe(2427); // val 98: 2933 → val 107: 2770 → val 112: 2711 → val 114: 2426 → val 115: 2427
     expect(by["PERSON"]).toBe(488);
     expect(by["HOUSE"]).toBe(167);
     expect(by["BP"]).toBe(100);
@@ -252,7 +252,7 @@ describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
     const ov = storyGraphOverview();
     expect(ov.ok).toBe(true);
     expect(ov.val).toBe(68);
-    expect(ov.stats.entities).toBe(3268); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 114: 3268
+    expect(ov.stats.entities).toBe(3269); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 114: 3268 → val 115: 3269
     expect(ov.stats.story_atoms).toBe(4);
     const contract = ov.story_engine_contract as { required_fields: string[] };
     for (const f of ["story_id", "input_entity_ids", "used_claim_ids", "used_source_ids", "generation_timestamp", "prompt_version", "story_status"]) {

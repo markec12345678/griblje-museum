@@ -45,8 +45,8 @@ const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
 
 describe("val 114 — gardele in infrastruktura", () => {
-  test("register: 2871 vrstic, 139 v88, 1755 v86, 265 v112, 120 v113 — nedotaknjeno", () => {
-    expect(REG.length).toBe(2871);
+  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1755 v86, 265 v112, 120 v113 — nedotaknjeno", () => {
+    expect(REG.length).toBe(2875);
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
     expect(REG.filter((r) => r["reading_pass"] === "v86-colonial-tiles").length).toBe(1755);
@@ -130,20 +130,20 @@ describe("val 114 — p19/p20: POMIK iz val 113 OVRŽEN", () => {
 });
 
 describe("val 114 — strukturna forenzika: izpuščene vrstice (brez vstavljanja)", () => {
-  test("p40: 21 vrstic — v57 izpustil prazno p12 + preklicano p13; r13–r19 = p14–p20", () => {
+  test("p40: 21 vrstic (v114 obs) — v57 izpustil prazno p12 + preklicano p13; val 115: +1 vstavljena p13 med r12 in r14 → 22 vrstic; p14–p20 zdaj r14–r20", () => {
     const obs = f(byPage(40)[0], "page_observations_v114");
     expect(obs).toContain("21 vrstic");
     expect(obs).toContain("721–740");
     expect(obs).toContain("VSTAVLJANJE");
-    // mapirani popravki vgrajeni
+    // mapirani popravki vgrajeni (indeksi val 115: +1 od r13 naprej)
     const rows = byPage(40);
     expect(f(rows[2], "klafter")).toBe("300"); // p2 aligned
     expect(f(rows[3], "klafter")).toBe("255"); // p3 (v57 355 -> 255)
-    expect(f(rows[13], "klafter")).toBe("860"); // p14
-    expect(f(rows[14], "klafter")).toBe("529"); // p15
+    expect(f(rows[14], "klafter")).toBe("860"); // p14 (val 115: r13 = vstavljena vrstica)
+    expect(f(rows[15], "klafter")).toBe("529"); // p15
   });
 
-  test("p40: r12 počiščeno (celica prazna na strani), r11 SPLIT 1|599 + haus popravki", () => {
+  test("p40: r12 počiščeno (celica prazna na strani), r11 SPLIT 1|599 + haus popravki; val 115: vstavljena r13 (Pechley Mich° 1|65)", () => {
     const rows = byPage(40);
     expect(f(rows[12], "jaethe")).toBe("");
     expect(f(rows[12], "anmerkung")).toContain("preklicana vrstica p13");
@@ -151,35 +151,47 @@ describe("val 114 — strukturna forenzika: izpuščene vrstice (brez vstavljanj
     expect(f(rows[11], "klafter")).toBe("599");
     expect(f(rows[11], "anmerkung")).toContain("F-PV-07-SPLIT val 114");
     expect(f(rows[11], "haus_no")).toBe("1/21");
-    expect(f(rows[18], "haus_no")).toBe("1/64");
-    expect(f(rows[19], "haus_no")).toBe("1/65");
+    // val 115 vstavljena vrstica na r13
+    expect(f(rows[13], "owner_original")).toBe("Pechley Mich°");
+    expect(f(rows[13], "jaethe")).toBe("1");
+    expect(f(rows[13], "klafter")).toBe("65");
+    expect(f(rows[13], "reading_pass")).toBe("v115-insert");
+    expect(f(rows[19], "haus_no")).toBe("1/64");
+    expect(f(rows[20], "haus_no")).toBe("1/65");
   });
 
-  test("p48: 21 vrstic — v57 izpustil p2 ('12'); mapirani popravki (733, 10, 1269, 678, 185, 189)", () => {
+  test("p48: 21 vrstic (v114 obs) — v57 izpustil p2 ('12'); val 115: +1 vstavljena p2 na r2 → 22 vrstic; mapirani popravki (733, 10, 1269, 678, 185, 189)", () => {
     const obs = f(byPage(48)[0], "page_observations_v114");
     expect(obs).toContain('p2 (vrednost "12"');
     const rows = byPage(48);
-    expect(f(rows[2], "jaethe")).toBe("733");
-    expect(f(rows[3], "jaethe")).toBe("10");
-    expect(f(rows[13], "jaethe")).toBe("1269");
-    expect(f(rows[14], "jaethe")).toBe("678");
-    expect(f(rows[15], "jaethe")).toBe("185");
-    expect(f(rows[17], "jaethe")).toBe("189");
+    // v115: vstavljena vrstica na r2 ("12", ~Schmipa[?])
+    expect(f(rows[2], "jaethe")).toBe("12");
+    expect(f(rows[2], "reading_pass")).toBe("v115-insert");
+    expect(f(rows[3], "jaethe")).toBe("733");
+    expect(f(rows[4], "jaethe")).toBe("10");
+    expect(f(rows[14], "jaethe")).toBe("1269");
+    expect(f(rows[15], "jaethe")).toBe("678");
+    expect(f(rows[16], "jaethe")).toBe("185");
+    expect(f(rows[18], "jaethe")).toBe("189");
     // sidri pod mapiranjem
-    expect(f(rows[4], "jaethe")).toBe("439");
-    expect(f(rows[12], "jaethe")).toBe("1490");
-    expect(f(rows[19], "jaethe")).toBe("280");
+    expect(f(rows[5], "jaethe")).toBe("439");
+    expect(f(rows[13], "jaethe")).toBe("1490");
+    expect(f(rows[20], "jaethe")).toBe("280");
   });
 
-  test("p49: 21 vrstic — v57 izpustil preklicano p2 ('2|973'); mapirani popravki (591, 1553, 412)", () => {
+  test("p49: 21 vrstic (v114 obs) — v57 izpustil preklicano p2 ('2|973'); val 115: +1 vstavljena p2 na r2 → 22 vrstic; mapirani popravki (591, 1553, 412)", () => {
     const obs = f(byPage(49)[0], "page_observations_v114");
     expect(obs).toContain("PREČRTANO vrstico p2");
     const rows = byPage(49);
-    expect(f(rows[3], "klafter")).toBe("591");
-    expect(f(rows[5], "klafter")).toBe("1553");
-    expect(f(rows[6], "klafter")).toBe("412");
-    expect(f(rows[4], "klafter")).toBe("1415"); // sidro
-    expect(f(rows[19], "klafter")).toBe("398"); // sidro
+    // v115: vstavljena vrstica na r2 (2|973, Acker, preklicana)
+    expect(f(rows[2], "jaethe")).toBe("2");
+    expect(f(rows[2], "klafter")).toBe("973");
+    expect(f(rows[2], "reading_pass")).toBe("v115-insert");
+    expect(f(rows[4], "klafter")).toBe("591");
+    expect(f(rows[6], "klafter")).toBe("1553");
+    expect(f(rows[7], "klafter")).toBe("412");
+    expect(f(rows[5], "klafter")).toBe("1415"); // sidro
+    expect(f(rows[20], "klafter")).toBe("398"); // sidro
   });
 
   test("p34: pomik r15–r19 OVRŽEN + 21. vrstica (~70) dokumentirana", () => {
@@ -361,27 +373,27 @@ describe("val 114 — kaskada (izrecna)", () => {
   test("pass3: PS parcele 577 → 393 (F-PV-07 p25–p55 + p28–p37 + SPLIT markerji)", () => {
     const s = readFileSync(join(ATLAS, "build-pass3.py"), "utf8");
     expect(s).toContain("F-PV-07-SPLIT val 114");
-    expect(pr.ps_parcels_total).toBe(391);
+    expect(pr.ps_parcels_total).toBe(392); // val 115: 391 → 392 (vstavljena vrstica p48 "12")
     expect(pr.ps_land_use_coverage["njiva"]).toBe(105);
     expect(pr.ps_land_use_coverage["UNKNOWN"]).toBe(142);
-    expect(pr.ps_land_use_coverage["null"]).toBe(76);
+    expect(pr.ps_land_use_coverage["null"]).toBe(77); // val 115: 76 → 77
     expect(pr.ps_land_use_mapping_confidence["EXACT"]).toBe(166);
     expect(pr.ps_land_use_mapping_confidence["TERM-UNCLEAR"]).toBe(142);
     expect(pr.ps_land_use_mapping_confidence["EXACT-MIXED"]).toBe(7);
   });
 
   test("KG: PARCEL 2436, HAS_PARCEL 2775, vozlišča 3278, vezi 3479, claims 622", () => {
-    expect(kg.node_stats.PARCEL).toBe(2426);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
-    expect(kg.nodes.length).toBe(3268);
-    expect(kg.edges.length).toBe(3477);
+    expect(kg.node_stats.PARCEL).toBe(2427); // val 115: 2426 → 2427
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2773); // val 115: nespremenjeno (nova parcela brez haus_no)
+    expect(kg.nodes.length).toBe(3269); // val 115: 3268 → 3269
+    expect(kg.edges.length).toBe(3477); // val 115: nespremenjeno
     expect(kg.claims.length).toBe(622);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 376e2b27… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha ca0aeb58… (pogodba §22; val 115)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^376e2b27/);
+    expect(kgSha).toMatch(/^ca0aeb58/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
@@ -393,21 +405,21 @@ describe("val 114 — kaskada (izrecna)", () => {
     }
   });
 
-  test("timeline I6 zatiči: PUA 2035 / PS 391 / raba 173+142 (val 114)", () => {
+  test("timeline I6 zatiči: PUA 2035 / PS 392 / raba 173+142 (val 115)", () => {
     const tl = JSON.parse(readFileSync(join(ROOT, "src/data/timeline-1825-1830.json"), "utf8")) as {
       points: { year: number; metrics: { metric_id: string; value: number }[] }[];
     };
     const m = (id: string, y: number) =>
       tl.points.find((p) => p.year === y)?.metrics.find((x) => x.metric_id === id)?.value;
     expect(m("parcels_pua", 1825)).toBe(2035);
-    expect(m("parcels_ps", 1825)).toBe(391);
+    expect(m("parcels_ps", 1825)).toBe(392); // val 115: 391 → 392
     expect(m("parcels_with_land_use", 1825)).toBe(173);
   });
 
-  test("coverage: PARTIAL 1066 (PUA 675 + PS 391)", () => {
+  test("coverage: PARTIAL 1067 (PUA 675 + PS 392, val 115)", () => {
     const c = JSON.parse(readFileSync(join(ROOT, "src/data/atlas-coverage-report-1825.json"), "utf8")) as {
       quality_gate: { PARTIAL: number }[];
     };
-    expect((c.quality_gate ?? []).some((g) => g.PARTIAL === 1066)).toBe(true);
+    expect((c.quality_gate ?? []).some((g) => g.PARTIAL === 1067)).toBe(true);
   });
 });

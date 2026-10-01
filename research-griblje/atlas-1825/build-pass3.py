@@ -13,12 +13,14 @@ Pravila (nespremenjena od val 60):
   - PUA in PS parcelni identifikatorji se NE združujejo (val 58 F14: namespace vprašanje odprto)
   - PS jaethe = vir parcelne številke; v88 pravilo (val 88): digit-split vrstice s klafter-vrednostjo
     in prazno jaethe NISO parcele (pisar piše Kläfter, F-PV-05 page-level)
-  - val 113/114 F-PV-07-SPLIT pravilo: Joch|Klafter notacija (marker 'F-PV-07-SPLIT val 113/114'
-    v anmerkung) NISO parcele — jae je Joch števec, ne parcelna številka
+  - val 113/114/115 F-PV-07-SPLIT pravilo: Joch|Klafter notacija (marker 'F-PV-07-SPLIT val 113/114/115'
+    v anmerkung) NISO parcele — jae je Joch števec, ne parcelna številka (val 115: vstavljene vrstice
+    p40 prečrtana 1|65 + p49 preklicana 2|973 nosita marker → izpada iz projekcije; vstavljena p48 "12"
+    je edina nova parcela 391→392)
   - vsak zapis s source/page provenanco
 
 Spremembe proti val 60 (vse dokumentirane v research-griblje/104-val89-parcelni-register-143.md):
-  - provenanca PS: 1.073 vrstic / 55–143 (val 57) → 2.871 vrstic / 3–143 (val 57→61→82/83→88)
+  - provenanca PS: 1.073 vrstic / 55–143 (val 57) → 2.871 vrstic / 3–143 (val 57→61→82/83→88) → 2.875 vrstic (val 115: +4 vstavljene vrstice p34/p40/p48/p49)
   - source labela PS parcel: "PS N83 (PARTIAL 55/143)" → "PS N83 (143/143)"
   - NR-12/13/14 vgrajeni v builder (prej ročno v artefakt — re-run jih je izgubil)
   - val89 re-checki nad polnim registrom (izračunano živo, deterministično)
@@ -123,7 +125,8 @@ for r in ps:
     if not m: continue
     # val 113 F-PV-07-SPLIT pravilo: vrstice z Joch|Klafter notacijo (jae = Joch
     # stevec, marker v anmerkung) NISO parcele — analog v88 pravilu (F-PV-05)
-    if "F-PV-07-SPLIT val 113" in (r.get("anmerkung") or "") or "F-PV-07-SPLIT val 114" in (r.get("anmerkung") or ""):
+    if ("F-PV-07-SPLIT val 113" in (r.get("anmerkung") or "") or "F-PV-07-SPLIT val 114" in (r.get("anmerkung") or "")
+            or "F-PV-07-SPLIT val 115" in (r.get("anmerkung") or "")):
         continue
     num = int(m.group(1))
     if num > 3000:  # val 58: >3000 = sumljivi vnos (možna zmes stolpcev) -> flag, ne izključitev
@@ -194,7 +197,7 @@ negatives = [
      "why": "B.P. opombe so domena PUA/PT (parcelni protokol jih ne ponavlja)",
      "next_source": "PS s. 56-143 (ko kvota); PT/PUA ostajajo edini B.P. viri",
      "val89_recheck": {
-         "pages": "s. 3-143 (celoten register, 2.871 vrstic)",
+         "pages": "s. 3-143 (celoten register, 2.875 vrstic — val 115: +4 vstavljene)",
          "result": f"0 zadetkov ({len(bp_zoll_hits)} vrstic z B.P./Zoll v anmerkung)",
          "verdict": "POTRJENO pri 143/143 — B.P. opombe ostajajo domena PUA/PT"}},
     {"neg_id": "NR-02", "searched": "ujemanje PS jaethe ↔ PUA parcelnih števil (Rosetta kontrola)",
@@ -261,7 +264,7 @@ negatives = [
      "why": "the Gemeinde divides land into numbered Flurbezirke, not named ones (at least in the transcribed half)",
      "next_source": "PS p56–p143 once VLM quota restores",
      "val89_recheck": {
-         "pages": "p3–p143 (celoten register, 2.871 vrstic)",
+         "pages": "p3–p143 (celoten register, 2.875 vrstic — val 115: +4 vstavljene)",
          "result": (f"NOT FOUND — {len(_other_jaethe)} neštevilskih jaethe zapisov, {len(_named_flur)} s črkovnimi "
                     "imeni (možnimi toponimi); vsi so mehanske/nominalne oblike (npr. 17½, ganz, N/N)"),
          "verdict": "POTRJENO pri 143/143 — omenjeni Flurbezirki ne obstajajo"}},
@@ -284,8 +287,8 @@ negatives = [
 # ---------------------------------------------------------------
 # fail-fast varovalke (val 89 — re-run je dovoljen SAMO nad poznejšimi sloji)
 # ---------------------------------------------------------------
-if len(ps) != 2871:
-    raise SystemExit(f"GUARD: PS register ima {len(ps)} vrstic, pričakovano 2.871 (val 88 stanje) — ne zaganjaj nad zastarelim registrom")
+if len(ps) != 2875:
+    raise SystemExit(f"GUARD: PS register ima {len(ps)} vrstic, pričakovano 2.875 (val 115: 2871 + 4 vstavljene p34/p40/p48/p49) — ne zaganjaj nad zastarelim registrom")
 _v88_rows = [r for r in ps if r.get("v88_status") in ("P1", "P2", "T3") or r.get("v88_note")]
 if len(_v88_rows) != 139:
     raise SystemExit(f"GUARD: PS register ima {len(_v88_rows)} v88 vrstic (137 rešenih + 2 UNRESOLVED z v88_note), pričakovano 139 — v88 sloj manjka")
@@ -300,7 +303,7 @@ lu_conf = Counter(p["land_use_mapping"] for p in ps_parcels)
 co_ref = [p for p in pua_parcels if p["co_referenced"]]
 provenance = {
     "pua": "pua-n83/register.json (98 vpisov / 2.645 parcelnih referenc, val 51+57)",
-    "ps": "ps-n83/register.json (2.871 vrstic / str. 3-143, val 57→61→82/83→88; 139 digit-split vrstic z v88 vrednostmi)",
+    "ps": "ps-n83/register.json (2.875 vrstic / str. 3-143, val 57→61→82/83→88→113/114→115: +4 vstavljene vrstice p34/p40/p48/p49; 139 digit-split vrstic z v88 vrednostmi)",
     "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original",
 }
 

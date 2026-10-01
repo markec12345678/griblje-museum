@@ -1,0 +1,155 @@
+{
+ "val": 115,
+ "stats": {
+  "inserts": 4,
+  "page_obs_adds": 4,
+  "pages": [
+   "p49",
+   "p48",
+   "p40",
+   "p34",
+   "p34-obs",
+   "p40-obs",
+   "p48-obs",
+   "p49-obs"
+  ]
+ },
+ "changes": [
+  {
+   "type": "insert",
+   "index": 932,
+   "page": 49,
+   "reading_pass": "v115-insert",
+   "row": {
+    "source": "SI AS 176/N/N83/s/PS",
+    "document_id": "VAČ docid 41780 (uodid 373415)",
+    "page": 49,
+    "sheet_visible": "II. N.",
+    "no_blatt": null,
+    "haus_no": "",
+    "owner_original": "",
+    "owner_was_ditto": false,
+    "stand": "",
+    "wohnort": "",
+    "kultur": "Acker",
+    "jaethe": "2",
+    "klafter": "973",
+    "classe": "",
+    "ertrag_fl": "",
+    "ertrag_kr": "",
+    "capital_fl": "",
+    "capital_kr": "",
+    "anmerkung": "[v115: VSTAVLJENA vrstica p2 — v57 jo je izpustil in zamaknil r2+ za +1 (dokaz: 14 natanko ujemanj vrednosti pod mapiranjem); cela vrednost prečrtana (pisarjeva revizija); F-PV-07-SPLIT val 115: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]",
+    "page_observations": "",
+    "reading_pass": "v115-insert"
+   }
+  },
+  {
+   "type": "insert",
+   "index": 912,
+   "page": 48,
+   "reading_pass": "v115-insert",
+   "row": {
+    "source": "SI AS 176/N/N83/s/PS",
+    "document_id": "VAČ docid 41780 (uodid 373415)",
+    "page": 48,
+    "sheet_visible": "III. N.",
+    "no_blatt": "1",
+    "haus_no": "",
+    "owner_original": "Schmipa[?]",
+    "owner_was_ditto": false,
+    "stand": "",
+    "wohnort": "",
+    "kultur": "",
+    "jaethe": "12",
+    "klafter": "",
+    "classe": "",
+    "ertrag_fl": "",
+    "ertrag_kr": "",
+    "capital_fl": "",
+    "capital_kr": "",
+    "anmerkung": "[v115: VSTAVLJENA vrstica p2 — v57 jo je izpustil in zamaknil r2+ za +1 (dokaz: 10 natanko ujemanj vrednosti pod mapiranjem); vrednost \"12\" v Joch koloni, ni prečrtana; ime ~Schmipa[?]; edina vstavljena vrstica z numerično jaethe → pass3 projekcija]",
+    "page_observations": "",
+    "reading_pass": "v115-insert"
+   }
+  },
+  {
+   "type": "insert",
+   "index": 761,
+   "page": 40,
+   "reading_pass": "v115-insert",
+   "row": {
+    "source": "SI AS 176/N/N83/s/PS",
+    "document_id": "VAČ docid 41780 (uodid 373415)",
+    "page": 40,
+    "sheet_visible": "11. N.",
+    "no_blatt": null,
+    "haus_no": "1 / 21",
+    "owner_original": "Pechley Mich°",
+    "owner_was_ditto": false,
+    "stand": "",
+    "wohnort": "",
+    "kultur": "",
+    "jaethe": "1",
+    "klafter": "65",
+    "classe": "",
+    "ertrag_fl": "",
+    "ertrag_kr": "",
+    "capital_fl": "",
+    "capital_kr": "",
+    "anmerkung": "[v115: VSTAVLJENA vrstica p13 (tekač 734, Nro 21) — v57 jo je izpustil in vrednost zlil v r12 (\"4 - 65\"); celotna vrstica rdeče prečrtana (pisarjeva revizija), Joch=1 rdeče prečrtan]; [F-PV-07-SPLIT val 115: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]",
+    "page_observations": "",
+    "reading_pass": "v115-insert"
+   }
+  },
+  {
+   "type": "insert",
+   "index": 647,
+   "page": 34,
+   "reading_pass": "v115-insert",
+   "row": {
+    "source": "SI AS 176/N/N83/s/PS",
+    "document_id": "VAČ docid 41780 (uodid 373415)",
+    "page": 34,
+    "sheet_visible": "III. N.",
+    "no_blatt": null,
+    "haus_no": "",
+    "owner_original": "Hurich/Lohingr Mich.[?]",
+    "owner_was_ditto": false,
+    "stand": "",
+    "wohnort": "",
+    "kultur": "",
+    "jaethe": "",
+    "klafter": "70",
+    "classe": "",
+    "ertrag_fl": "",
+    "ertrag_kr": "",
+    "capital_fl": "",
+    "capital_kr": "",
+    "anmerkung": "[v115: VSTAVLJENA 21. vrstica pred Fürtragom — v57 je ne ima; vrednost ~70 (aproksimacija — pisanje nizko pri robu celice), ime ~Hurich/Lohingr Mich.[?]; tekač nezabeležen; vrednost v QK stolpcu (F-PV-07 page-level p34)]",
+    "page_observations": "",
+    "reading_pass": "v115-insert"
+   }
+  },
+  {
+   "page": 34,
+   "type": "page_observations_v115",
+   "text": "v115: VSTAVLJENA 21. vrstica pred Fürtragom (~70, ime ~Hurich/Lohingr Mich.[?]; tekač nezabeležen) — v57 je ne ima; 20→21 vrstic; register 2871→2875"
+  },
+  {
+   "page": 40,
+   "type": "page_observations_v115",
+   "text": "v115: VSTAVLJENA fizična p13 (tekač 734, Nro 21, Pechley Mich°, 1|65 rdeče prečrtana) med Wunderling (p12) in Nro 20 (p14) — v57 jo je izpustil in zlil v r12; 20→21 vrstic; r13–r19 = p14–p20 zdaj tudi po indeksih; register 2871→2875"
+  },
+  {
+   "page": 48,
+   "type": "page_observations_v115",
+   "text": "v115: VSTAVLJENA fizična p2 (vrednost \"12\" v Joch koloni, ime ~Schmipa[?]) — v57 jo je izpustil; 20→21 vrstic; r3–r20 = p3–p20 zdaj tudi po indeksih; edina vstavljena vrstica v pass3 projekciji (391→392); register 2871→2875"
+  },
+  {
+   "page": 49,
+   "type": "page_observations_v115",
+   "text": "v115: VSTAVLJENA fizična p2 (preklicana \"2|973\", kultur Acker) — v57 jo je izpustil; 21→22 vrstic; r3–r20 = p3–p20 zdaj tudi po indeksih; register 2871→2875"
+  }
+ ]
+}

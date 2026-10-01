@@ -47,7 +47,7 @@ SAMPLE = [58, 59, 84, 98, 109, 121, 133, 143]
 for f in (f'{OUTD}/band-v85/compare-v85.json', f'{OUTD}/band-v85/compare-strips-v85.json'):
     assert os.path.exists(f), f'guard: manjka {f}'
 reg = json.load(open(f'{OUTD}/register.json'))
-assert len(reg) == 2871, 'guard: register'
+assert len(reg) == 2875, 'guard: register (val 115: 2871 + 4 vstavljene)'
 new_reg = [r for r in reg if r['page'] > 55]
 # val 86 je na teh vrsticah legitimno vgradil v86-colonial-tiles (F-PV-05); merjenja val 85
 # (F-PV-05 iz surovin val 82/83/85) so NEODVISNA od registra — guard sprejme obe stanji.

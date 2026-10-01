@@ -290,7 +290,7 @@ describe("generateVillageStory (§18)", () => {
     const allText = story.sections.flatMap((s) => s.items.map((i) => i.text)).join(" ");
     expect(allText).toContain("167 hiš");
     expect(allText).toContain("488 oseb");
-    expect(allText).toContain("2426 parcel");
+    expect(allText).toContain("2427 parcel");
     expect(allText).toContain("34 MAP_OBJECT");
     const listi = story.sections[1].items;
     expect(listi.length).toBe(5);
@@ -310,7 +310,7 @@ describe("generateVillageStory (§18)", () => {
     expect(unknown).toBeDefined();
     expect(unknown!.tier).toBe("NEZNANO");
     expect(unknown!.source_ids).toContain("SRC-PV");
-    expect(unknown!.text).toContain("2253"); // val 114: 2320 -> 2253
+    expect(unknown!.text).toContain("2254"); // val 114: 2320 -> 2253 → val 115: 2254 (2427 − 173)
     // PV prepisan (val 74): agregatne površine v besedilu, NI per-parcelnega ugibanja
     expect(unknown!.text).toContain("1221 J 1573 K");
     expect(unknown!.text).toContain("val 74");

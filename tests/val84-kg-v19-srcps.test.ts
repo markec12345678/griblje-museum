@@ -64,12 +64,12 @@ describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradn
     expect(JSON.stringify(kg.nodes)).not.toContain("PARTIAL 55/143");
   });
 
-  test("števci in ID-ji (val 114: 3268/3477/622/8/4; PS parcele 432→930→779→735→676→577→391 = izrecna projekcija + F-PV-05/07/SPLIT korekcije, ne zdrs)", () => {
+  test("števci in ID-ji (val 115: 3269/3477/622/8/4; PS parcele 432→930→779→735→676→577→391→392 = izrecna projekcija + F-PV-05/07/SPLIT korekcije + vstavljena vrstica, ne zdrs)", () => {
     expect(kg.node_stats).toEqual({
-      SOURCE: 13, HOUSE: 167, PERSON: 488, PARCEL: 2426, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
+      SOURCE: 13, HOUSE: 167, PERSON: 488, PARCEL: 2427, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
     });
-    expect(kg.nodes.length).toBe(3268); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268
-    expect(kg.edges.length).toBe(3477); // val 98: 3859 → val 107: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
+    expect(kg.nodes.length).toBe(3269); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 → val 115: 3269
+    expect(kg.edges.length).toBe(3477); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
     expect(kg.claims.length).toBe(622);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.map((a) => a.story_id)).toEqual(["SA-001", "SA-002", "SA-003", "SA-004"]);
@@ -163,7 +163,7 @@ describe("val 84 — register negativnih rezultatov + source-coverage", () => {
     };
     expect(sc.val).toBe(108);
     expect(sc.transcription.PS.pages).toBe(143);
-    expect(sc.transcription.PS.rows).toBe(2871);
+    expect(sc.transcription.PS.rows).toBe(2875); // val 115: 2871 + 4 vstavljene
     expect(sc.transcription.PS.passes).toBe(3); // val 86 2. prehod (kolonski tile-i) — vsebina bloka nespremenjena od val 86
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
     expect(ps.status).toBe("VERIFIED");

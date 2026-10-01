@@ -22,8 +22,8 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3268); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 (F-PV-07 p25–p55 + SPLIT markerji)
-    expect(kg.edges.length).toBe(3477); // val 98: 3859 → val 107: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
+    expect(kg.nodes.length).toBe(3269); // val 98: 3775 → … → val 114: 3268 → val 115: 3269 (vstavljena vrstica p48 "12" = nova PARCEL brez haus_no)
+    expect(kg.edges.length).toBe(3477); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
     expect(kg.claims.length).toBe(622);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.length).toBe(4);
@@ -35,7 +35,7 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
       SOURCE: 13,
       HOUSE: 167,
       PERSON: 488,
-      PARCEL: 2426,
+      PARCEL: 2427,
       BP: 100,
       TOPONYM: 37,
       EVENT: 3,
@@ -235,7 +235,7 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
   test("coverage: brez umetnega procenta, kategorije z dejanskim stanjem", () => {
     expect(kg.coverage.note).toContain("brez umetnega skupnega procenta");
     const parcels = kg.coverage.categories.find((c: { category: string }) => c.category === "parcels")!;
-    expect(parcels.total).toBe(2426); // val 98: 2933 → val 107: 2770 → val 112: 2711 → val 114: 2426
+    expect(parcels.total).toBe(2427); // val 98: 2933 → … → val 114: 2426 → val 115: 2427
     expect(parcels.breakdown.geometry).toBe("NOT AVAILABLE");
   });
 });

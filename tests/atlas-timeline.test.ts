@@ -259,7 +259,7 @@ describe("val 76 — vrata I3/I6: sledljivost + KG zatiči", () => {
       (n) => n.origin === "PS" && n.land_use_category !== null && n.land_use_category !== "UNKNOWN"
     ).length;
     expect(pua).toBe(2035);
-    expect(ps).toBe(391); // val 98: 898 → val 107: 779 → val 108: 735 → val 112: 676 → val 113: 577 → val 114: 391
+    expect(ps).toBe(392); // val 98: 898 → … → val 114: 391 → val 115: 392 (vstavljena vrstica p48 "12")
     expect(psUse).toBe(173); // val 98: 461 → val 107: 438 → val 112: 391 → val 113: 292 → val 114: 173
     expect(metricOf(1825, "parcels_pua").value).toBe(pua);
     expect(metricOf(1825, "parcels_ps").value).toBe(ps);

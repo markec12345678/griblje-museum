@@ -40,20 +40,20 @@
  },
  "provenance": {
   "pua": "pua-n83/register.json (98 vpisov / 2.645 parcelnih referenc, val 51+57)",
-  "ps": "ps-n83/register.json (2.871 vrstic / str. 3-143, val 57→61→82/83→88; 139 digit-split vrstic z v88 vrednostmi)",
+  "ps": "ps-n83/register.json (2.875 vrstic / str. 3-143, val 57→61→82/83→88→113/114→115: +4 vstavljene vrstice p34/p40/p48/p49; 139 digit-split vrstic z v88 vrednostmi)",
   "land_use_mapping": "leksikalni slovar (LU_EXACT) — samo nedvoumni termini; ostalo UNKNOWN + original"
  },
  "pua_parcels_total": 2035,
  "pua_co_referenced": 417,
- "ps_parcels_total": 391,
+ "ps_parcels_total": 392,
  "ps_land_use_coverage": {
   "UNKNOWN": 142,
   "njiva": 105,
   "travnik": 38,
   "pašnik": 12,
+  "null": 77,
   "gozd": 3,
   "vrt": 6,
-  "null": 76,
   "drugo": 7,
   "dvorišče": 1,
   "vinograd": 1
@@ -61,7 +61,7 @@
  "ps_land_use_mapping_confidence": {
   "TERM-UNCLEAR": 142,
   "EXACT": 166,
-  "null": 76,
+  "null": 77,
   "EXACT-MIXED": 7
  },
  "pua_parcels": [
@@ -40127,6 +40127,25 @@
    "source": "PS N83 (143/143)",
    "page": 48,
    "no_blatt": 1,
+   "cross_ref_to_pua": "UNKNOWN — namespace vprašanje odprto (val 58 F14)",
+   "evidence_status": "SINGLE_SOURCE",
+   "flag": null
+  },
+  {
+   "parcel_id": "PS-p048-j12",
+   "jaethe_original": "12",
+   "parcel_number": 12,
+   "section": null,
+   "house_ref": null,
+   "house_ref_original": null,
+   "land_use_category": null,
+   "land_use_original": null,
+   "land_use_mapping": null,
+   "klafter": null,
+   "owner_original": "Schmipa[?]",
+   "source": "PS N83 (143/143)",
+   "page": 48,
+   "no_blatt": "1",
    "cross_ref_to_pua": "UNKNOWN — namespace vprašanje odprto (val 58 F14)",
    "evidence_status": "SINGLE_SOURCE",
    "flag": null

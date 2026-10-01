@@ -459,10 +459,10 @@ ok(
 /* --- 5i. /api/atlas/story-graph — PASS 6 pripovedni graf (val 68, #42 §21) --- */
 const sgOverview = await getJson("/api/atlas/story-graph");
 ok(
-  "atlas story-graph: pregled — 3.268 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 114: F-PV-07 p25–p55 + p28–p37 + SPLIT markerji)",
+  "atlas story-graph: pregled — 3.269 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 115: vstavljene vrstice p34/p40/p48/p49, +1 PARCEL brez haus_no)",
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
-    sgOverview.body?.stats?.entities === 3268 &&
+    sgOverview.body?.stats?.entities === 3269 &&
     sgOverview.body?.stats?.relations === 3477 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
@@ -756,14 +756,14 @@ ok(
 /* --- 5o. /api/atlas/map?layer=parcels — parcelni sloj rabe (val 73, #42 §19) --- */
 const mapAll73 = await getJson("/api/atlas/map");
 ok(
-  "atlas map: counts.parcels = 2426 z razčlenjeno rabo (173 dokumentiranih / 142 neznanih / 2111 brez zapisa) — projekcija 143/143 + F-PV-05/07 korekcije (val 98: 930→898 + val 107: 898→779 + val 108: 779→735 + val 112: 735→676 + val 113: 676→577 + val 114: 577→391)",
+  "atlas map: counts.parcels = 2427 z razčlenjeno rabo (173 dokumentiranih / 142 neznanih / 2112 brez zapisa) — projekcija 143/143 + F-PV-05/07 korekcije (val 98: 930→898 + val 107: 898→779 + val 108: 779→735 + val 112: 735→676 + val 113: 676→577 + val 114: 577→391 + val 115: 391→392)",
   mapAll73.status === 200 &&
-    mapAll73.body?.counts?.parcels === 2426 &&
+    mapAll73.body?.counts?.parcels === 2427 &&
     mapAll73.body?.counts?.parcels_with_land_use === 173 &&
     mapAll73.body?.counts?.parcels_land_use_unknown === 142 &&
-    mapAll73.body?.counts?.parcels_no_land_use_record === 2111 &&
+    mapAll73.body?.counts?.parcels_no_land_use_record === 2112 &&
     Array.isArray(mapAll73.body?.layers?.parcels) &&
-    mapAll73.body?.layers?.parcels?.length === 2426,
+    mapAll73.body?.layers?.parcels?.length === 2427,
   `status=${mapAll73.status} parcels=${mapAll73.body?.counts?.parcels}`
 );
 const parcels73 = await getJson("/api/atlas/map?layer=parcels");
@@ -774,7 +774,7 @@ const p201 = (parcels73.body?.features ?? []).find(
 ok(
   "atlas map parcels: register brez geometrije (§9) + obratni indeks HAS_PARCEL + sledljivost",
   parcels73.status === 200 &&
-    parcels73.body?.count === 2426 &&
+    parcels73.body?.count === 2427 &&
     typeof p73f?.node_id === "string" &&
     p73f?.node_id?.startsWith("PARCEL:") === true &&
     p73f !== undefined && !("px" in p73f) && !("lat" in p73f) && !("lng" in p73f) &&
