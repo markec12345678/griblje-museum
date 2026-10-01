@@ -16,7 +16,7 @@
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { describe, expect, test } from "vitest";
+import { describe, expect, test } from "bun:test";
 
 const REPO = join(__dirname, "..");
 const REG = JSON.parse(
@@ -147,7 +147,7 @@ describe("val 118 — p19 'Heinrich X' vzorec (19/20 popravkov)", () => {
 
 describe("val 118 — iskrenost (§4)", () => {
   test("TRANSCRIBED = 0 vsiljenih; nič ne dvignjeno (statusi nespremenjeni)", () => {
-    const p17_19 = REG.filter((r) => r.page >= 17 && r.page <= 19);
+    const p17_19 = REG.filter((r) => Number(r.page) >= 17 && Number(r.page) <= 19);
     expect(p17_19.every((r) => r.review_status !== "TRANSCRIBED")).toBe(true);
   });
   test("izrecni dvomi ohranjeni v imenih ([?]) + PUA presek v anmerkung", () => {
@@ -166,8 +166,8 @@ describe("val 118 — iskrenost (§4)", () => {
     }
   });
   test("obseg: pilot p17–p19; p20–p55 ostaja za val 119 (dokumentirano)", () => {
-    expect(REG.filter((r) => r.reading_pass === "v118-names").every((r) => r.page <= 19)).toBe(true);
-    expect(REG.filter((r) => r.page >= 20 && r.page <= 55 && r.reading_pass === "v118-names").length).toBe(0);
+    expect(REG.filter((r) => r.reading_pass === "v118-names").every((r) => Number(r.page) <= 19)).toBe(true);
+    expect(REG.filter((r) => Number(r.page) >= 20 && Number(r.page) <= 55 && r.reading_pass === "v118-names").length).toBe(0);
   });
 });
 
