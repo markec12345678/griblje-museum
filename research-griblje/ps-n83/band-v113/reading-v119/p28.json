@@ -1,0 +1,155 @@
+{
+ "meta": {
+  "val": 119,
+  "del": 2,
+  "page": 28,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p28-g0..2 + diag rowzoomi x14-x24 (make-rowzoom-v119b.py, dy=+26/+10 per cilj) + R-glijf referenca (p27-r1) + 2↔3 kalibracija (r16 '9', r15/r14/r13 '13' dvokotljasta 3) + PUA presek (h.9 'Jakoffitschek' ↔ črnilo 'Jak?fschitsch') + medstranski presek (h24 Ring Michael: p26-r18+p27-r9+p28-r1/r18; h25 Ring Mito: p27-r10/r14/r18+p28-r2/r17; h23 Ring Mathä: p27-r15+p28-r19; h15 Strauß: p23-r4+p28-r9)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p28-r00 (x16)", "diag-p28-r01 (x16)", "diag-p28-r02 (x16)", "diag-p28-r04 (x16)", "diag-p28-r05 (x16+x24×2+x20)", "diag-p28-r06 (x16)", "diag-p28-r07 (x16)", "diag-p28-r08 (x16)", "diag-p28-r09 (x16+x24×3)", "diag-p28-r11 (x16)", "diag-p28-r13 (x14+x20)", "diag-p28-r14 (x14+x20)", "diag-p28-r15 (x14+x20)", "diag-p28-r16 (x16)", "diag-p28-r17 (x14)", "diag-p28-r18 (x14)", "diag-p28-r19 (x14)", "diag-p23-r04 (x16 — medstranska primerjava)", "diag-p23-r14 (x16 — K/S kontrast)"],
+  "note": "p28 = NAJHUJŠA v57 imenska stran doslej: (1) vseh 5 'Wernig' vrstic (r1/r2/r17/r18/r19) = črnilo 'Ring' (R-glijf z notranjo zanko, identičen p27-r1 referenci; 'Wernig' 𝒲 NE obstaja v črnilu) — h24 Ring Michael, h25 Ring Mito, h23 Ring Mathä, vsi z medstranskimi preseki; (2) vseh 7 'Stadtpfarrkirche[?]' vrstic (r4/r5/r6/r10/r12/r13/r14/r15/r16) = črnilo OSEBNA IMENA: 'Jak?fschitsch Mathä' (r4/r6/r10/r12/r16 — PUA h.9 'Jakoffitschek' presek), 'Jak?fschitsch Nicolaus' (r14/r15), 2 fragmenta (r5/r13); (3) r9/r11 'Pavlic' = črnilo 'Strauß Georg' (S+t-rauff; ff = ß; h15 presek s p23-r4 — VAL 119 DEL 1 je p23-r4 zapisal 'Krause Gorgy', x16 primerjava pokaže identično 'Strauffs' črnilo z t-prečko = popravek p23-r4 v delu 2 build skripti; p23-r14 h45 'Krause' je PRAV — brez t-prečke); (4) r0 'Müllig Samuel' = črnilo 'Müllag Johann.' (NI Samuel); (5) r7 'Blaschke' = črnilo 'Blakutscher[?]' (daljše telo); (6) r8 'Novakl' = črnilo 'Novach[?]' (prekrižani ch-par); (7) haus: r5/r13 12→13, r19 20→23 (dvokotljasta 3-referenca). Skupno: v57 plast p28 je page-level pattern-fill kot p18."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "29",
+   "seen_name": "Müllag Johann",
+   "old_haus": "29",
+   "old_name": "Müllig Samuel",
+   "verdict": "ime POPRAVEK Müllig Samuel -> Müllag Johann (x16: krstno 'Johann.' jasno z piko — NI 'Samuel'; priimek M-ü/l-l-a-g z g-repom; cf. 'Mullag' p26-r16 v57 + 'Müller' p29/p31 v57 — ista družina, spelling variante); haus soglasje 29"
+  },
+  "r1": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael",
+   "old_haus": "24",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Michael (x16: R-glijf = velika skleda z notranjo zanko = p27-r1 referenca; NI 𝒲 'Wernig'; h24 = ISTA hiša kot p26-r18 + p27-r9 'Ring Michael' — trojni presek); haus soglasje 24"
+  },
+  "r2": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito",
+   "old_haus": "25",
+   "old_name": "Wernig Michl",
+   "verdict": "ime POPRAVEK Wernig Michl -> Ring Mito (x16: R-glijf + krstno M-i-t-o — t-prečka + o-zanka, NI 'Michl'; h25 = ISTA hiša kot p27-r10/r14/r18 'Ring Mito' — štirikotni presek); haus soglasje 25"
+  },
+  "r3": {
+   "seen_haus": "67",
+   "seen_name": "Pavelich Georg",
+   "old_haus": "67",
+   "old_name": "Pavlic Georg",
+   "verdict": "soglasje (črnilo 'Pavelich' — spelling varianta, v57 'Pavlic' = normalizacija; h67 presek p26-r19/p27-r11)"
+  },
+  "r4": {
+   "seen_haus": "8",
+   "seen_name": "Jakobschitsch Mathä[?]",
+   "old_haus": "8",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (x16: črnilo = osebno ime J-začetnik s spuščnikom + '-?fschitsch' telo + krstno 'Mathä.'; v57 'Stadtpfarrkirche' = fabriirana institucija — črnilo se NE ujema (začetnica + dolžina); PUA h.9 'Jakoffitschek' = ista družina (druga dokumentarna plast); [?] na sredini priimka (k/f/b dvom); haus soglasje 8"
+  },
+  "r5": {
+   "seen_haus": "13",
+   "seen_name": "Jakobschitschkri?gelaung[?]",
+   "old_haus": "12",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "razhajanje odprto (ime) + haus POPRAVEK 12->13 (x20: 1 + dvokotljasta 3): črnilo = dolgo sklenjeno ime 'Jak?fschitschkri?gelaung[?]' (x24 deli berljivi, celota NE) — v57 'Stadtpfarrkirche[?]' utemeljeno zavrnjeno (različna struktura), a nadomestek ni varno berljiv za POPRAVEK; anmerkung zabeležen"
+  },
+  "r6": {
+   "seen_haus": "8",
+   "seen_name": "Jakobschitsch Mathä[?]",
+   "old_haus": "8",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (x16: isti niz kot r4 — isti h8, isti lastnik)"
+  },
+  "r7": {
+   "seen_haus": "48",
+   "seen_name": "Blakutscher Georg[?]",
+   "old_haus": "48",
+   "old_name": "Blaschke Georg",
+   "verdict": "ime POPRAVEK Blaschke Georg -> Blakutscher Georg[?] (x16: telo B-l-a-?-u-t-s-ch-e-r — daljše od v57 'Blaschke' (brez -u-ts- zveze v v57); [?] na sredinskih zlogih (k/b, t/s dvom); PUA h.48 'Höchsthaler' ne ujema — druga plast); haus soglasje 48"
+  },
+  "r8": {
+   "seen_haus": "4",
+   "seen_name": "Novach Martinl[?]",
+   "old_haus": "4",
+   "old_name": "Novakl Martinl",
+   "verdict": "ime POPRAVEK Novakl Martinl -> Novach Martinl[?] (x16: po 'Nova' prekrižani ch-par — NI k+l zveze; krstno 'Martinl' soglasje; [?]); haus soglasje 4"
+  },
+  "r9": {
+   "seen_haus": "15",
+   "seen_name": "Strauß Georg",
+   "old_haus": "15",
+   "old_name": "Pavlic Georg",
+   "verdict": "ime POPRAVEK Pavlic Georg -> Strauß Georg (x24: S-začetnica + t-prečka + '-rauff' = ß — 'Strauß'; NI P 'Pavlic'; h15 = ISTA hiša kot p23-r4, kjer je val 119 del 1 zapisal 'Krause Gorgy' — x16 obeh izrezov pokaže identično 'Strauffs' črnilo z t-prečko; p23-r14 h45 'Krause' ostaja prav (brez t-prečke) → popravek p23-r4 'Krause Gorgy' -> 'Strauß Gorgy' izrecno v delu 2 build skripti kot cross-val fix)"
+  },
+  "r10": {
+   "seen_haus": "8",
+   "seen_name": "Jakobschitsch Mathä[?]",
+   "old_haus": "8",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (isti niz kot r4/r6 — h8 parcela)"
+  },
+  "r11": {
+   "seen_haus": "13",
+   "seen_name": "Strauß Georg",
+   "old_haus": "13",
+   "old_name": "Pavlic Georg",
+   "verdict": "ime POPRAVEK Pavlic Georg -> Strauß Georg (x16: isti 'Strauffs' niz z t-prečko kot r9; h13 = 2. parcela istega lastnika)"
+  },
+  "r12": {
+   "seen_haus": "9",
+   "seen_name": "Jakobschitsch Mathä[?]",
+   "old_haus": "9",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (isti niz kot r4 — h9 parcela; PUA h.9 'Jakoffitschek' presek najmočnejši prav tu)"
+  },
+  "r13": {
+   "seen_haus": "13",
+   "seen_name": "Jakobschitschkühelaung[?]",
+   "old_haus": "12",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "razhajanje odprto (ime) + haus POPRAVEK 12->13 (x20: '13' jasno): črnilo = dolgo sklenjeno ime (x14: '?ak?fschilchk?ühelaung' — konec '-elaung', sredina neprepričljiva) — v57 'Stadtpfarrkirche[?]' zavrnjena, nadomestek neberljiv do konca; anmerkung"
+  },
+  "r14": {
+   "seen_haus": "13",
+   "seen_name": "Jakobschitsch Nicolaus[?]",
+   "old_haus": "13",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Nicolaus[?] (x14: krstno 'Nie'olaus' = Nicolaus — N + -ie-ol-aus; [?] na priimku kot pri r4)"
+  },
+  "r15": {
+   "seen_haus": "13",
+   "seen_name": "Jakobschitsch Nicolaus[?]",
+   "old_haus": "13",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Nicolaus[?] (isti niz kot r14 — h13 parcela)"
+  },
+  "r16": {
+   "seen_haus": "9",
+   "seen_name": "Jakobschitsch Mathä[?]",
+   "old_haus": "9",
+   "old_name": "Stadtpfarrkirche[?]",
+   "verdict": "ime POPRAVEK Stadtpfarrkirche[?] -> Jakobschitsch Mathä[?] (isti niz kot r4/r12 — h9 parcela)"
+  },
+  "r17": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito",
+   "old_haus": "25",
+   "old_name": "Wernig Michl",
+   "verdict": "ime POPRAVEK Wernig Michl -> Ring Mito (x14: R-glijf + 'Mie'o' = Mito; h25 presek p27+p28-r2)"
+  },
+  "r18": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael",
+   "old_haus": "24",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Michael (x14: h24 presek p26-r18/p27-r9/p28-r1)"
+  },
+  "r19": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä",
+   "old_haus": "20",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Mathä + haus POPRAVEK 20->23 (x14: krstno 'Mathä.' z piko; haus 2 + dvokotljasta 3; h23 = ISTA hiša kot p27-r15 'Ring Mathä' — dvojni presek)"
+  }
+ }
+}
