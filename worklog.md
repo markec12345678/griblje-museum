@@ -4747,3 +4747,22 @@ Stage Summary:
 - Dominikalna 2↔3 kalibracija = novo merjeno orodje (rešuje haus glyfe brez VLM); K5 dito 226/2875; KG vsebina spremenjena (sha 69038f63), osebni sloj še pass2 artefakt
 - main @ 6351840 CI zeleno; zbirka 114/625/502/68 (tehnični val)
 - Naslednje: val 119 = imenski pass p20–p55 (731 vrstic, protokol vala 118; p20 pilot kaže ISTI vzorec napak: "Kristan Jerey", "Thomas Matz") + dominikalne sekvence 341–460 → PUA↔PS osebna sinhronizacija (F-PV-03/04) → poln re-read p143 → PZ p65 polne vrstice + p63 r6–r12 ob višji ločljivosti (izven peskovnika) → register 26-0326 + 26-0379 (okt./nov. 2026)
+---
+Task ID: 119-del1
+Agent: Z.ai Code (glavna seja, val 119 del 1)
+Task: ISSUE #42 §4/§14 — 119. val (del 1): imenski pass PS p20–p25 po protokolu vala 118 (user: "github token ... in nadaljuj")
+
+Work Log:
+- Rekonstrukcija: main @ a770304 (val 118, PR #122); 6 sub-agentov (batchi A–F, p20–p55) = SLIKNO SLEPI ("images are not available in sub-agent context") — vsi iskreno blokirani, 0 fabriciranih vrednosti; prispevali: ink-analizo p20–p25 (ditto sumi, p25 r19), PUA preseke, riziko-tabele (p28/p37/p38/p47 pattern-fill sumi), 126 diag izrezkov p44–p49; VLM endpoint = text-only (napaka 1210) → branje v glavni seji
+- Branje p20–p25 (120 vrstic): nz-skladi + diag x12–x24 + tight word-crops x16–x22 + pravila-detekcija (p20 +5px, p24 +5..9px — grid 1:1, v113 "pomik" = artifakt) + medstranske referenčne primerjave (Gorgy = p18-r10, Johan = p22-r0, Malfg = p21-r0, cmp3/cmp4 listi)
+- VELIKA NAJDBA: v57 "Jelen" (p21 ×6) = zgrešeno "Johan" (cmp3 3-kratna identiteta); p20 "Kristan Jerey"×4 = pattern-fill (pravo Gorgy ×3 + Thomas Johan h55); p22 "Pustig Marjare"×3 = Peter Malfg h50 (Malfg hiša!); p24 "Kreutler/Schuster/Sagmeister/Hadschitsch/Striedel" fabriirani (pravo: Schlomnitz Peter h56, Schlomnitz Johan h55 = p23-r0, Habschider Georg ×5 h48 + Marth h47 par, Kruescher Peter h36); p25 "Einsle/Michelbacher" fabriirani (pravo: Krause Georg h45, Habschider par); "Schime"→"Schimer" ×4 (PUA h.28); p24 lekcija: nz-skladi zavajajoči (ink visoko) — diag 20/20 avtoritativno
+- Vgradnja: build-register-v119.py (fail-fast: 2875/139/1795/647/4/60 + prepoved dvojnega teka) — 47 owner + 14 haus popravkov, 4 ditto ovrženi, 28 anmerkung odprtih razhajanj, 99 sprememb s snimkami pre_v119; reading_pass v119-names 120
+- Kaskada izrecna: pass3 392 identično → KG 3269/3477/2427/2773 identično (sha 69038f63→0b478847) → story-graph → timeline (I6 2035/392) → coverage (§24 14/14) → c4 (K9 69, K5 222) → analysis-v5/v6 byte-identna + runtime kopije src/data (4)
+- Testi: +17 varovalk (tests/val119) + pini 118→119 (sha ×10, K5 ×3, plasti ×7 datotek); 1187 testov: 1176 pass / 11 skip / 0 fail
+- PR #123 → CI 3/3 zeleno → MERGE @ aae3bb5 → veja izbrisana → main @ aae3bb5
+- Docs: research-griblje/134-val119-del1-ps-names-p20-25.md + KAZALO 134 + README 171. sklop
+
+Stage Summary:
+- Val 119 del 1 zaključen: p20–p25 imensko prebrani in vgrajeni; "Johan" najdba pomeni, da je tudi p10 "Priškar Jelen" ×3 sumljiv (izven obsega — p1–p16 plast)
+- main @ aae3bb5 CI zeleno; zbirka 114/625/502/68 (tehnični val)
+- Naslednje: val 119 del 2 = p26–p55 (611 vrstic; riziko-tabele + 126 diag p44–p49 pripravljeni; p28 "Stadtpfarrkirche[?]×9", p37 "Piringer uibio×8", p38 "König×8", p47 "Mäthel×8" vs PUA h.69 "Brandl") → nato PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379
