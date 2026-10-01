@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2c",
+  "page": 40,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "tall prerezi z r-markerji + zz-/gz-pXX-rNN x22-x30 (per-page dy: p38/p39 +6, p41 +6..10, p42 -8, p43 +14; pisarjev ritem lokalno stisnjen na p39 r5.5) + medstranski hišni preseki (h23-h28 Ring, h29 Müllner, h30 Bruckler, h42/40/41 Pöching, h43 Brulla, h49 Schimetz, h51/52/68/81 Ulrich, h61 Tillach, h62/63/66 Krischan, h64 Veritschan, h65 Ring Martho/Dorothea/Jakob[?], h67 Puchey/Pöching) + PUA presek (h.61 Tillak, h.62 Brinczhan, h.64 Veritscher, h.65 Widhann, h.68 Urich Mattle, h.69 Christian Brandl) + PT + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a; 3-glyf brez zastavice (p41-r15 32, p43-r16 63), 4-glyf kot 61/64 (p42-r14 49), 8-glyf dvojna zanka (p41-r14 68)",
+  "register_rows": 21,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "tall-p40-names (x3, r-markerji)",
+   "zz-p40-r00..r20 (x22, dy po strani)",
+   "gz x24-x30 izbrani (dvomljive vrstice)"
+  ],
+  "note": "p40 = nova sekcija (Blatt 1/) z Ring-grozdo na vrhu + Pöching/Brulla/Krischan preseki + h65 Ring grozd (Dorothea/Martho/Jakob[?]): h23/h25/h24 Ring ×4, h29 Müllner Samuel, h12 Schaffschick, h43 Brulla ×2, h42/h40/h41 Pöching, h21 Pöching Michl ×2, h20 Pöching Michael, h22 Müllner Johann, h66 Krischan Georg, h65 Ring ×3, h64 Veritschan; 1 ditto ovržen (r1); r12 = ne-osebna poteza + prazen haus (razhajanje, v57 ohranjeno)"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "1 / 23",
+   "seen_name": "Ring Mathä.[?]",
+   "old_haus": "1 / 23",
+   "old_name": "Wernig Mathäus",
+   "verdict": "ime POPRAVEK Wernig Mathäus -> Ring Mathä.[?] (h23; glyf = Ring forma; v57 'Wernig' fabriirana — del-2a vzorec)"
+  },
+  "r1": {
+   "seen_haus": "1 / 25",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "1 / 25",
+   "old_name": "Wernig Mathäus",
+   "verdict": "ime POPRAVEK Wernig Mathäus -> Ring Michl.[?] (h25; glyf = Ring forma) + DITTO CLEAR: črnilo piše polno ime 'Ring Michl.' — v57 ditto-zastavica ovržena"
+  },
+  "r2": {
+   "seen_haus": "1 / 24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "1 / 24",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Michael. (h24; w2 'Michael.' jasno)"
+  },
+  "r3": {
+   "seen_haus": "1 / 29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "1 / 29",
+   "old_name": "Willing Johann",
+   "verdict": "ime POPRAVEK Willing Johann -> Müllner Samuel. (h29 konvencija; ink 'Milling Samuel.'; v57 obe besedi fabriirani)"
+  },
+  "r4": {
+   "seen_haus": "1 / 12",
+   "seen_name": "Schaffschick Mathl.[?]",
+   "old_haus": "1 / 12",
+   "old_name": "Schiffbauer Mathäus",
+   "verdict": "ime POPRAVEK Schiffbauer Mathäus -> Schaffschick Mathl.[?] (w1 'Schaffschick[?]' — ff jasno; h12 presek p45/p49 'Lukasitsch' alternativa; w2 'Mathl.[?]/Michl.[?]' dvom; v57 'Schiffbauer' fabriirana)"
+  },
+  "r5": {
+   "seen_haus": "1 / 43",
+   "seen_name": "Brulla Michl.[?]",
+   "old_haus": "1 / 43",
+   "old_name": "Rudolla Nißl",
+   "verdict": "ime POPRAVEK Rudolla Nißl -> Brulla Michl.[?] (h43 = p32 forma 'Brulla Michl[?]' ×2; glyf = p32/p37 Brulla forma; v57 fabriirana)"
+  },
+  "r6": {
+   "seen_haus": "1 / 42",
+   "seen_name": "Pöching. Mathel.[?]",
+   "old_haus": "1 / 42",
+   "old_name": "Pechley Mathäus",
+   "verdict": "ime POPRAVEK Pechley Mathäus -> Pöching. Mathel.[?] (h42 = p32 forma; w1 'Pöching' ch jasno; v57 'Pechley' fabriirana)"
+  },
+  "r7": {
+   "seen_haus": "1 / 40",
+   "seen_name": "Pöching Johann.",
+   "old_haus": "1 / 40",
+   "old_name": "Pechley Johann",
+   "verdict": "ime POPRAVEK Pechley Johann -> Pöching Johann. (h40; gz x26: w2 'Johann.' jasno — J-glyf; h40 = Pöching hiša)"
+  },
+  "r8": {
+   "seen_haus": "1 / 41",
+   "seen_name": "Pöching. Gorgy.[?]",
+   "old_haus": "1 / 41",
+   "old_name": "Pechley Georg",
+   "verdict": "ime POPRAVEK Pechley Georg -> Pöching. Gorgy.[?] (h41 = p32 forma 'Pöching. Gorgy.[?]')"
+  },
+  "r9": {
+   "seen_haus": "1 / 43",
+   "seen_name": "Brulla Michl.[?]",
+   "old_haus": "1 / 43",
+   "old_name": "Wundala nißl",
+   "verdict": "ime POPRAVEK Wundala nißl -> Brulla Michl.[?] (h43 par z r5)"
+  },
+  "r10": {
+   "seen_haus": "1 / 24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "1 / 24",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Michael. (h24 par z r2)"
+  },
+  "r11": {
+   "seen_haus": "1 / 21",
+   "seen_name": "Pöching Michl.[?]",
+   "old_haus": "1/21",
+   "old_name": "Pechley Nißl",
+   "verdict": "ime POPRAVEK Pechley Nißl -> Pöching Michl.[?] (h21 par z r13; PUA h.21 'Pfarrer Michael Sautter' orient.)"
+  },
+  "r12": {
+   "seen_haus": "1 / 31",
+   "seen_name": "Wunderling",
+   "old_haus": "1 / 31",
+   "old_name": "Wunderling",
+   "verdict": "razhajanje odprto: črnilo = ne-osebna poteza z dolgim repom (~'Ulrich-Gütl-zugehörig[?]'-fraza, nerešljiva), haus celica PRAZNA v črnilu (dy 0/6/14); v57 'Wunderling' + haus 31 ohranjena (p34-r20 precedens: vsebine praznih/vrstično vpršanih celic ne izpraznimo tiho); vrednostne celice prazne = konsistentno (v114 anm. že opisuje vrstico kot preklicano/prazno)"
+  },
+  "r13": {
+   "seen_haus": "1 / 21",
+   "seen_name": "Pöching Michl.[?]",
+   "old_haus": "1 / 21",
+   "old_name": "Pechley Mich°",
+   "verdict": "ime POPRAVEK Pechley Mich° -> Pöching Michl.[?] (h21 par z r11; v115 vstavljena vrstica (tekač 734), rdeče prečrtana — ime v črnilu jasno)"
+  },
+  "r14": {
+   "seen_haus": "1 / 20",
+   "seen_name": "Pöching Michael",
+   "old_haus": "1 / 20",
+   "old_name": "Pechley Michael",
+   "verdict": "ime POPRAVEK Pechley Michael -> Pöching Michael (gz x30: haus '20.' jasno — 0-glyf oval, NI 5; h20; 'tot [rot]' anm. ostaja)"
+  },
+  "r15": {
+   "seen_haus": "1 / 22",
+   "seen_name": "Müllner Johann",
+   "old_haus": "1 / 22",
+   "old_name": "Willing Johann",
+   "verdict": "ime POPRAVEK Willing Johann -> Müllner Johann (h22 = p36-r6/r7/r9 'Müllner Johann' precedens ×3; ink 'Milling Johann.')"
+  },
+  "r16": {
+   "seen_haus": "1 / 66",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1 / 66",
+   "old_name": "Weinhandl Georg",
+   "verdict": "ime POPRAVEK Weinhandl Georg -> Krischan Georg.[?] (h66 = p36-r4/r5 forma ×2; glyf = Krischan-forma)"
+  },
+  "r17": {
+   "seen_haus": "1 / 65",
+   "seen_name": "Ring Dorothea.[?]",
+   "old_haus": "1 / 65",
+   "old_name": "Wernig Dorothea",
+   "verdict": "ime POPRAVEK Wernig Dorothea -> Ring Dorothea.[?] (h65 — NOVA Ring hiša; w1 glyf = Ring forma; w2 'Dorothea[?]' po črnilu+v57)"
+  },
+  "r18": {
+   "seen_haus": "1 / 65",
+   "seen_name": "Ring Martho.[?]",
+   "old_haus": "1 / 65",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Martho.[?] (h65; gz x24: w2 'Martha/Martho.' = p36-r3 'Ring Martho.[?]' forma; v57 w2 fabriirana; rot-anm. 'Joh. Wernig[?] am 7. Jänner 1840' ostaja)"
+  },
+  "r19": {
+   "seen_haus": "1 / 64",
+   "seen_name": "Veritschan Mathl.[?]",
+   "old_haus": "1/64",
+   "old_name": "Weichselbaum Nißl",
+   "verdict": "ime POPRAVEK Weichselbaum Nißl -> Veritschan Mathl.[?] (h64; PUA h.64 'Veritscher' presek; v57 fabriirana)"
+  },
+  "r20": {
+   "seen_haus": "1 / 65",
+   "seen_name": "Ring Jakob.[?]",
+   "old_haus": "1/65",
+   "old_name": "Wernig Joseph",
+   "verdict": "ime POPRAVEK Wernig Joseph -> Ring Jakob.[?] (h65; w2 'Jakob.[?]/Joseph[?]' dvom — a-glyf naklonjeno Jakob; ink vrstica sede visoko (dy -14); v57 w1 fabriirana)"
+  }
+ }
+}

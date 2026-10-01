@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2c",
+  "page": 39,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "tall prerezi z r-markerji + zz-/gz-pXX-rNN x22-x30 (per-page dy: p38/p39 +6, p41 +6..10, p42 -8, p43 +14; pisarjev ritem lokalno stisnjen na p39 r5.5) + medstranski hišni preseki (h23-h28 Ring, h29 Müllner, h30 Bruckler, h42/40/41 Pöching, h43 Brulla, h49 Schimetz, h51/52/68/81 Ulrich, h61 Tillach, h62/63/66 Krischan, h64 Veritschan, h65 Ring Martho/Dorothea/Jakob[?], h67 Puchey/Pöching) + PUA presek (h.61 Tillak, h.62 Brinczhan, h.64 Veritscher, h.65 Widhann, h.68 Urich Mattle, h.69 Christian Brandl) + PT + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a; 3-glyf brez zastavice (p41-r15 32, p43-r16 63), 4-glyf kot 61/64 (p42-r14 49), 8-glyf dvojna zanka (p41-r14 68)",
+  "register_rows": 21,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "tall-p39-names (x3, r-markerji)",
+   "zz-p39-r00..r20 (x22, dy po strani)",
+   "gz x24-x30 izbrani (dvomljive vrstice)"
+  ],
+  "note": "p39 = črnilovrstna sekvenca IDENTIČNA p37 (21 vrstic, stisnjeni dvojniki r5/r5.5): 30 Bru, 29 MüS, 28 RM, 26 RJ, 23 RMa, 25 RMi ×2, 30 Bru ×2, 25 RMi, 28 RM, 24 RMichael ×2, 28 RM ×2, 30 Bru ×2, 27 Mall ×2, 28 RM ×2; 8 haus POPRAVEK (20->23, 23->25 ×2, 26->25, 26->30 ×2, 29->27 ×2); cross-page: p37-r6 (merged haus 20) nosi isto \"25.\"-glyfo kot p39 r5/r6 — dvom zabeležen"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Buchler Mathel",
+   "verdict": "ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?] (h30; = p37/p38 forma; v57 'Buchler' fabriirana B/R-glyf)"
+  },
+  "r1": {
+   "seen_haus": "29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "29",
+   "old_name": "Mally Samuel",
+   "verdict": "ime POPRAVEK Mally Samuel -> Müllner Samuel. (h29 konvencija del 2b; ink w1 'Milling[?]'; PUA h.29 'Milleg' orient.)"
+  },
+  "r2": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Höring Michl",
+   "verdict": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28; glyf = Ring forma; v57 'Höring' fabriirana — masovni vzorec)"
+  },
+  "r3": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "Höring Johann",
+   "verdict": "ime POPRAVEK Höring Johann -> Ring Johann. (h26; glyf = Ring forma)"
+  },
+  "r4": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä.[?]",
+   "old_haus": "20",
+   "old_name": "Höring Mathel",
+   "verdict": "haus POPRAVEK 20->23 (gz x26: 3-glyf jasna ob 'Ring Mathe.') + ime POPRAVEK Höring Mathel -> Ring Mathä.[?] (h23 par z r5-grozdo; v57 2↔3/0 šum)"
+  },
+  "r5": {
+   "seen_haus": "25",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "23",
+   "old_name": "Höring Michl",
+   "verdict": "haus POPRAVEK 23->25 (gz x26 dy0: 5-glyf z zastavico '25'') + ime POPRAVEK Höring Michl -> Ring Michl.[?] (h25 par z r6-stisnjenim dvojnikom)"
+  },
+  "r6": {
+   "seen_haus": "25",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "23",
+   "old_name": "Höring Michl",
+   "verdict": "haus POPRAVEK 23->25 (gz x26 dy12: stisnjeni dvojnik r5.5 '25.' jasno — pisarjev ritem kot p37 r5/r5.5) + ime POPRAVEK Höring Michl -> Ring Michl.[?]"
+  },
+  "r7": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Buchler Mathel",
+   "verdict": "ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?] (h30 par z r8)"
+  },
+  "r8": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Buchler Mathel",
+   "verdict": "ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?] (h30 par z r7)"
+  },
+  "r9": {
+   "seen_haus": "25",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "26",
+   "old_name": "Höring Michl",
+   "verdict": "haus POPRAVEK 26->25 (tall: '25'' jasno; h25 = Ring grozda) + ime POPRAVEK Höring Michl -> Ring Michl.[?]"
+  },
+  "r10": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Höring Michl",
+   "verdict": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28)"
+  },
+  "r11": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "Höring Johann L",
+   "verdict": "ime POPRAVEK Höring Johann L -> Ring Michael. (gz x26: w2 'Michael.' jasno — h24 = Ring Michael konvencija del 2a/2b; v57 'Johann L' fabriirana)"
+  },
+  "r12": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "Höring Michael",
+   "verdict": "ime POPRAVEK Höring Michael -> Ring Michael. (h24 par z r11)"
+  },
+  "r13": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Höring Michl",
+   "verdict": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r14)"
+  },
+  "r14": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Höring Michl",
+   "verdict": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r13)"
+  },
+  "r15": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "26",
+   "old_name": "Buchler Mathel",
+   "verdict": "haus POPRAVEK 26->30 (tall: '30' jasno; h30 = Bruckler) + ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?]"
+  },
+  "r16": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "26",
+   "old_name": "Buchler Mathl",
+   "verdict": "haus POPRAVEK 26->30 (tall: '30.' jasno; par z r15) + ime POPRAVEK Buchler Mathl -> Bruckler Mathl.[?]"
+  },
+  "r17": {
+   "seen_haus": "27",
+   "seen_name": "Malleschick Johann.[?]",
+   "old_haus": "29",
+   "old_name": "Mallerseb[?] Johann",
+   "verdict": "haus POPRAVEK 29->27 (tall: '27.' jasno; h27 = Malleschick/Mallwitsch) + ime POPRAVEK Mallerseb[?] Johann -> Malleschick Johann.[?] (v57 'Mallerseb[?]' fabriirana)"
+  },
+  "r18": {
+   "seen_haus": "27",
+   "seen_name": "Malleschick Johann.[?]",
+   "old_haus": "29",
+   "old_name": "Mallerseb[?] Johann",
+   "verdict": "haus POPRAVEK 29->27 (tall: '27.' jasno; par z r17) + ime POPRAVEK Mallerseb[?] Johann -> Malleschick Johann.[?]"
+  },
+  "r19": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Höring Michl",
+   "verdict": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r20)"
+  },
+  "r20": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Höring Michl",
+   "verdict": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r19)"
+  }
+ }
+}
