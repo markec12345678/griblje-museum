@@ -1,0 +1,155 @@
+{
+ "meta": {
+  "val": 119,
+  "del": 2,
+  "page": 29,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p29-g0..2 + diag rowzoomi x16 (make-rowzoom-v119b.py, dy=+26) + R-glijf referenca (p27-r1) + medstranski presek Ring-grozda h23-h28 (p26/p27/p28) + Stuker h30 presek (4 parcele) + Müller presek (p29-r0 Daniel / r12 Johann / p31 Hannes)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p29-r00 (x16)", "diag-p29-r01 (x16)", "diag-p29-r02 (x16)", "diag-p29-r03 (x16)", "diag-p29-r04 (x16)", "diag-p29-r07 (x16)", "diag-p29-r12 (x16)", "diag-p29-r14 (x16)"],
+  "note": "p29 = vseh 9 'Preinig' vrstic (r1/r2/r6/r7/r10/r11/r17/r18/r19) = črnilo 'Ring' (R-glijf z notranjo zanko = p27-r1 referenca; 'Preinig' P-r-: črnilo NIMA P) — Ring-grozda h23(Mathä)/h24(Michael)/h25(Mito)/h26(Johann+Mito)/h28(Mito+Georg) se nadaljuje s p26/p27/p28; v57 'Preinig' = page-level fabriakcija (priimek NE obstaja v črnilu te strani). 'Stuker Michl' ×4 (r4/r9/r13/r14) = črnilo 'Stuker Mathl[?]' (krstno brez i-ch; cf. p27-r4 Mäthel[?] + p30 v57 Mathl/Mäthel — ista Matheus-kratica); r14 haus 00→30 (edina '00' v57 napaka). r12 'Müller Daniel' = črnilo 'Müller Johann' (J-spuščnik, cf. p31 'Hannes'); r0 ostaja Daniel (D-brez-spuščnika). r3 haus 24→27 (Matschitsch h27 konsistentno ×4)."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "29",
+   "seen_name": "Müller Daniel",
+   "old_haus": "29",
+   "old_name": "Müller Daniel",
+   "verdict": "soglasje (x16: krstno 'Danne[?]' = kompresiran 'Daniel' — D brez spuščnika, za razliko od r12 J; priimek 'Müll?g' = Müller/Müllag forma)"
+  },
+  "r1": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann",
+   "old_haus": "26",
+   "old_name": "Preinig Johann",
+   "verdict": "ime POPRAVEK Preinig Johann -> Ring Johann (x16: R-glijf z notranjo zanko = p27-r1 referenca; h26 = ISTA hiša kot p27-r1/r5 'Ring Johann'); haus soglasje 26"
+  },
+  "r2": {
+   "seen_haus": "26",
+   "seen_name": "Ring Mito",
+   "old_haus": "26",
+   "old_name": "Preinig Michl",
+   "verdict": "ime POPRAVEK Preinig Michl -> Ring Mito (x16: R-glijf + krstno M-i-t-o — t-prečka + o-zanka, NI 'Michl'); haus soglasje 26"
+  },
+  "r3": {
+   "seen_haus": "27",
+   "seen_name": "Matschitsch Johann",
+   "old_haus": "24",
+   "old_name": "Matschitsch Johann",
+   "verdict": "haus POPRAVEK 24->27 (x16: 2 + 7-dvig, NI A-oblika 4; h27 = Matschitsch hiša konsistentno r8/r15/r16); ime soglasje (črnilo 'Malleschildch[?]' = ista oblika kot p27-r3/r7)"
+  },
+  "r4": {
+   "seen_haus": "30",
+   "seen_name": "Stuker Mathl[?]",
+   "old_haus": "30",
+   "old_name": "Stuker Michl",
+   "verdict": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] (x16: krstno M-ä/th-l — brez i-ch zveze; priimek po v57 'Stuker' — črnilo '?tukl-er' z mejo berljivosti, [?]); haus soglasje 30"
+  },
+  "r5": {
+   "seen_haus": "67",
+   "seen_name": "Pachegg Georg",
+   "old_haus": "67",
+   "old_name": "Pachegg Georg",
+   "verdict": "soglasje (črnilo 'Pachea/Pacheg' — h67 presek p26-r19 Pavlicz[?]/p27-r11 Pavelich/p28-r3 Pavelich — hmm, h67 = Pavlič hiša; črnilo tu 'Pachea Georg' — uglašeno po v57, dvom izrecen v anmerkungen p26)"
+  },
+  "r6": {
+   "seen_haus": "26",
+   "seen_name": "Ring Georg",
+   "old_haus": "26",
+   "old_name": "Preinig Georg",
+   "verdict": "ime POPRAVEK Preinig Georg -> Ring Georg (R-glijf; cf. p26-r12 'Pobezy Georg' h41 ne — tu lastni Georg Ring h26)"
+  },
+  "r7": {
+   "seen_haus": "28",
+   "seen_name": "Ring Mito",
+   "old_haus": "28",
+   "old_name": "Preinig Michl",
+   "verdict": "ime POPRAVEK Preinig Michl -> Ring Mito (x16: R-glijf + Mito-forma; h28)"
+  },
+  "r8": {
+   "seen_haus": "27",
+   "seen_name": "Matschitsch Johann",
+   "old_haus": "27",
+   "old_name": "Matschitsch Johann",
+   "verdict": "soglasje"
+  },
+  "r9": {
+   "seen_haus": "30",
+   "seen_name": "Stuker Mathl[?]",
+   "old_haus": "30",
+   "old_name": "Stuker Michl",
+   "verdict": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] (isti niz kot r4 — h30 parcela)"
+  },
+  "r10": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael",
+   "old_haus": "24",
+   "old_name": "Preinig Michael",
+   "verdict": "ime POPRAVEK Preinig Michael -> Ring Michael (R-glijf; h24 = ISTA hiša kot p26-r18/p27-r9/p28-r1/r18 'Ring Michael' — peterostruki presek)"
+  },
+  "r11": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito",
+   "old_haus": "25",
+   "old_name": "Preinig Mier",
+   "verdict": "ime POPRAVEK Preinig Mier -> Ring Mito (R-glijf + Mito; h25 = ISTA hiša kot p27-r10/r14/r18 + p28-r2/r17 — šestersotruki presek; v57 'Mier' = zgrešeno 'Mito')"
+  },
+  "r12": {
+   "seen_haus": "29",
+   "seen_name": "Müller Johann",
+   "old_haus": "29",
+   "old_name": "Müller Daniel",
+   "verdict": "ime POPRAVEK Müller Daniel -> Müller Johann (x16: krstno J-spuščnik = Johann, NI D kot r0; cf. p31 'Müller Hannes' h29 — Johann/Hannes ista oseba); haus soglasje 29"
+  },
+  "r13": {
+   "seen_haus": "30",
+   "seen_name": "Stuker Mathl[?]",
+   "old_haus": "30",
+   "old_name": "Stuker Michl",
+   "verdict": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] (isti niz kot r4 — h30 parcela)"
+  },
+  "r14": {
+   "seen_haus": "30",
+   "seen_name": "Stuker Mathl[?]",
+   "old_haus": "00",
+   "old_name": "Stuker Michl",
+   "verdict": "ime POPRAVEK Stuker Michl -> Stuker Mathl[?] + haus POPRAVEK 00->30 (x16: haus '30' jasno — v57 '00' = odpadek; h30 = 4. Stuker parcela)"
+  },
+  "r15": {
+   "seen_haus": "27",
+   "seen_name": "Matschitsch Johann",
+   "old_haus": "27",
+   "old_name": "Matschitsch Johann",
+   "verdict": "soglasje"
+  },
+  "r16": {
+   "seen_haus": "27",
+   "seen_name": "Matschitsch Johann",
+   "old_haus": "27",
+   "old_name": "Matschitsch Johani",
+   "verdict": "ime POPRAVEK Matschitsch Johani -> Matschitsch Johann (črnilo 'Johann' — v57 'Johani' = odpadek; h27 parcela)"
+  },
+  "r17": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann",
+   "old_haus": "26",
+   "old_name": "Preinig Johann",
+   "verdict": "ime POPRAVEK Preinig Johann -> Ring Johann (R-glijf; h26 parcela)"
+  },
+  "r18": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann",
+   "old_haus": "26",
+   "old_name": "Preinig Johann",
+   "verdict": "ime POPRAVEK Preinig Johann -> Ring Johann (R-glijf; h26 parcela)"
+  },
+  "r19": {
+   "seen_haus": "28",
+   "seen_name": "Ring Mito",
+   "old_haus": "28",
+   "old_name": "Preinig Mier",
+   "verdict": "ime POPRAVEK Preinig Mier -> Ring Mito (R-glijf + Mito; v57 'Mier' = zgrešeno 'Mito'; h28 parcela)"
+  }
+ }
+}
