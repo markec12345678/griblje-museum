@@ -1,0 +1,159 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2b",
+  "page": 37,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-pXX-g0..2 + zz-/gz-pXX-rNN x22-x30 + diag x14 + tall prerezi s Blatt sidri + medstranski hišni preseki (h39 Schimer, h41/42 Pöching, h43 Brulla, h45 Strauß, h23-h28 Ring, h47/48 Hladnikhar, h29 Müllner, h64/67 Puchey, h27 Malwischly) + PUA presek + PT (house-register-1825) varianti + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "zz-p37-r00..r19 (x24)",
+   "gz-p37-* (x26-x30 izbrani)",
+   "tall prerezi p37 (x3.4, Blatt sidra)"
+  ],
+  "note": "p37 = \"Piringer uibio\" ×8 + \"Bruckner\" ×5 = fabriirani; črnilo: Ring (h28 ×4? h26 ×1, h23, h25, h24 ×2, h20) + Müllner h29 + Bruckler h30 ×4 + Malwischly h27 ×2; 11 haus POPRAVEK (r4 25->23, r5 23->25 — v57 swap, r8 26->30, r9 28->25, r10 24->28, r12 28->24, r14 26->28, r15 28->30, r16 29->30, r18 28->27, r19 26->28) — parna struktura črnila (30×2, 24×2, 27×2, 28×3) dokazuje v57 haos; Ring-grozda h23-h28 s popolno pokritostjo"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Bruckner Mathl.",
+   "verdict": "ime POPRAVEK Bruckner Mathl. -> Bruckler Mathl.[?] (w1 'Bruckler[?]' — ck-l proti v57 ck-n, n/l glyf-dvom — [?]; w2 kratica Mathl.)"
+  },
+  "r1": {
+   "seen_haus": "29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "29",
+   "old_name": "Piringer Samuel",
+   "verdict": "ime POPRAVEK Piringer Samuel -> Müllner Samuel. (h29 = Müllner hiša — p36-r0/r1/r12 ×3; v57 fabriirana)"
+  },
+  "r2": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Piringer uibio",
+   "verdict": "ime POPRAVEK Piringer uibio -> Ring Michl.[?] (h28 = Ring hiša; w2 Michl[?]/Müchö[?]/Mülo[?] dvom)"
+  },
+  "r3": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "Piringer Johann",
+   "verdict": "ime POPRAVEK Piringer Johann -> Ring Johann. (h26 = Ring Johann hiša)"
+  },
+  "r4": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä.[?]",
+   "old_haus": "25",
+   "old_name": "Piringer Mathl.",
+   "verdict": "haus POPRAVEK 25->23 (x14: 3 z zastavico; h23 = Ring Mathä hiša) + ime POPRAVEK Piringer Mathl. -> Ring Mathä.[?] (v57 swap r4/r5: črnilo 23, register 25)"
+  },
+  "r5": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito.[?]",
+   "old_haus": "23",
+   "old_name": "Piringer uibio",
+   "verdict": "haus POPRAVEK 23->25 (h25 = Ring Mito hiša — del 2a; v57 swap) + ime POPRAVEK Piringer uibio -> Ring Mito.[?] (w2 Mito[?]/Mülo[?] dvom)"
+  },
+  "r6": {
+   "seen_haus": "20",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "20",
+   "old_name": "Piringer uibio",
+   "verdict": "ime POPRAVEK Piringer uibio -> Ring Michl.[?] (haus 20/26 glyf-dvom — v57 20 ohranjeno; w2 dvom)"
+  },
+  "r7": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Bruckner Mathl.",
+   "verdict": "ime POPRAVEK Bruckner Mathl. -> Bruckler Mathl.[?] (h30 par z r0)"
+  },
+  "r8": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "26",
+   "old_name": "Bruckner Mathl.",
+   "verdict": "haus POPRAVEK 26->30 (tall1: \"30\" jasno; h30 par z r7 — parna struktura) + ime POPRAVEK Bruckner Mathl. -> Bruckler Mathl.[?]"
+  },
+  "r9": {
+   "seen_haus": "25",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Piringer uibio",
+   "verdict": "haus POPRAVEK 28->25 (x14: 5 z zastavico — 5/8 dvom izrecen) + ime POPRAVEK Piringer uibio -> Ring Michl.[?] (w2 dvom)"
+  },
+  "r10": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "24",
+   "old_name": "Piringer uibio",
+   "verdict": "haus POPRAVEK 24->28 (x14: 8 z zankami jasna; h28 par z r13) + ime POPRAVEK Piringer uibio -> Ring Michl.[?]"
+  },
+  "r11": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "Piringer Michael[?]",
+   "verdict": "ime POPRAVEK Piringer Michael[?] -> Ring Michael. (h24 = Ring Michael hiša — del 2a; v57 [?] za Michael izpolnjen s Ring-formo)"
+  },
+  "r12": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "28",
+   "old_name": "Piringer uibio",
+   "verdict": "haus POPRAVEK 28->24 (h24 par z r11) + ime POPRAVEK Piringer uibio -> Ring Michael."
+  },
+  "r13": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "Piringer uibio",
+   "verdict": "ime POPRAVEK Piringer uibio -> Ring Michl.[?] (h28; anm \"9 [rot] 1209\" ostaja)"
+  },
+  "r14": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "26",
+   "old_name": "Bruckner Mathl.",
+   "verdict": "haus POPRAVEK 26->28 (h28 par z r13) + ime POPRAVEK Bruckner Mathl. -> Ring Michl.[?]"
+  },
+  "r15": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "28",
+   "old_name": "Bruckner Mathl.",
+   "verdict": "haus POPRAVEK 28->30 (tall2 jasno; h30 par z r16) + ime POPRAVEK Bruckner Mathl. -> Bruckler Mathl.[?]"
+  },
+  "r16": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "29",
+   "old_name": "Mallwitsch Johann",
+   "verdict": "haus POPRAVEK 29->30 (h30 par z r15) + ime POPRAVEK Mallwitsch Johann -> Bruckler Mathl.[?] (v57 Mallwitsch = h27 družina, tu h30 Bruckler)"
+  },
+  "r17": {
+   "seen_haus": "27",
+   "seen_name": "Malwischly Johann.[?]",
+   "old_haus": "27",
+   "old_name": "Mallwitsch Johann",
+   "verdict": "soglasje (w1 'Malleschily[?]/Malwischly[?]' ≈ v57 Mallwitsch — forma-dvom; h27 par z r18)"
+  },
+  "r18": {
+   "seen_haus": "27",
+   "seen_name": "Malwischly Johann.[?]",
+   "old_haus": "28",
+   "old_name": "Piringer uibio",
+   "verdict": "haus POPRAVEK 28->27 (h27 par z r17; anm \"790 [rot]\" ostaja) + ime POPRAVEK Piringer uibio -> Malwischly Johann.[?]"
+  },
+  "r19": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "26",
+   "old_name": "Piringer uiru",
+   "verdict": "haus POPRAVEK 26->28 (tall2: \"28\" z rdečo zastavico; h28) + ime POPRAVEK Piringer uiru -> Ring Michl.[?]"
+  }
+ }
+}

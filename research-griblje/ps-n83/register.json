@@ -14570,10 +14570,12 @@
   "ertrag_kr": "",
   "capital_fl": "",
   "capital_kr": "",
-  "anmerkung": "[v114: razhajanje: videno 144 (glif z zastavico = 1) ali 744; register 1144 — odprto]",
+  "anmerkung": "[v114: razhajanje: videno 144 (glif z zastavico = 1) ali 744; register 1144 — odprto]; [v119 imenski pass: razhajanje odprto — črnilo ~\"Nava Marlin[?]\", v57 ohranjeno]",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "anmerkung_pre_v114": "",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "anmerkung_pre_v119": "[v114: razhajanje: videno 144 (glif z zastavico = 1) ali 744; register 1144 — odprto]",
+  "page_observations_v119": "v119 imenski pass (del 2b) p32: 24 sprememb; p32 = masovni pattern-fill: v57 \"Paulin/Peter/Šimunc/Hladnikh/Gregor greg.\" nasproti črnilu Pöching./Schimer/Brulla/Hladnikhar/Strauß; strukturno: pari h43×2 (Brulla), h42×2 (Pöching Mathel), h41×2 (Pöching Gorgy), h38×2 (Schimer Georg), h45×2 (Strauß Georgy), h40×3 (Pöching Mathl), h47×3 + h48×2 (Hladnikhar); 5 haus POPRAVEK (42->43, 12->42 ×2, 40->43, 46->45); r0 'Nava Marlin[?]' = dvomljivo (ra"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14582,7 +14584,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "39",
-  "owner_original": "Valentin Marko",
+  "owner_original": "Schimer Mache[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14596,7 +14598,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Valentin Marko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14604,8 +14607,8 @@
   "page": 32,
   "sheet_visible": "11. N.",
   "no_blatt": null,
-  "haus_no": "42",
-  "owner_original": "Paulin Stelc",
+  "haus_no": "43",
+  "owner_original": "Brulla Michl[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14619,7 +14622,9 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Paulin Stelc",
+  "haus_no_pre_v119": "42"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14627,8 +14632,8 @@
   "page": 32,
   "sheet_visible": "11. N.",
   "no_blatt": null,
-  "haus_no": "12",
-  "owner_original": "Paulin Marko",
+  "haus_no": "42",
+  "owner_original": "Pöching. Mathel.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14643,7 +14648,9 @@
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "klafter_pre_v114": "236",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Paulin Marko",
+  "haus_no_pre_v119": "12"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14652,7 +14659,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "38",
-  "owner_original": "Šimunc Gregor",
+  "owner_original": "Schimer Georg.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14667,7 +14674,8 @@
   "anmerkung": "[v114: stack 331; register 371 — odprto (stack nezanesljiv za 3/7)]",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "anmerkung_pre_v114": "",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Šimunc Gregor"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14676,7 +14684,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "41",
-  "owner_original": "Peter Gregor",
+  "owner_original": "Pöching. Gorgy.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14691,7 +14699,8 @@
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "klafter_pre_v114": "430",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Peter Gregor"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14700,7 +14709,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "40",
-  "owner_original": "Paulin Marko",
+  "owner_original": "Pöching. Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14715,7 +14724,8 @@
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "klafter_pre_v114": "622",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Paulin Marko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14723,8 +14733,8 @@
   "page": 32,
   "sheet_visible": "11. N.",
   "no_blatt": null,
-  "haus_no": "40",
-  "owner_original": "Paulin Marko",
+  "haus_no": "43",
+  "owner_original": "Brulla Mich.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14738,7 +14748,9 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Paulin Marko",
+  "haus_no_pre_v119": "40"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14746,8 +14758,8 @@
   "page": 32,
   "sheet_visible": "11. N.",
   "no_blatt": null,
-  "haus_no": "12",
-  "owner_original": "Peter Marko",
+  "haus_no": "42",
+  "owner_original": "Pöching. Mathel.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14761,7 +14773,9 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Peter Marko",
+  "haus_no_pre_v119": "12"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14770,7 +14784,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "41",
-  "owner_original": "Peter Gregor",
+  "owner_original": "Pöching. Gorgy.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14784,7 +14798,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Peter Gregor"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14793,7 +14808,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "38",
-  "owner_original": "Šimunc Gregor",
+  "owner_original": "Schimer Georg.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14807,7 +14822,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Šimunc Gregor"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14816,7 +14832,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "48",
-  "owner_original": "Hladnikh[?] Gregor",
+  "owner_original": "Hladnikhar[?] Georg.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14830,7 +14846,8 @@
   "capital_kr": "",
   "anmerkung": "1916 [rot]",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Hladnikh[?] Gregor"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14839,7 +14856,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "47",
-  "owner_original": "Hladnikh[?] Marko",
+  "owner_original": "Hladnikhar[?] Marko",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14853,7 +14870,8 @@
   "capital_kr": "",
   "anmerkung": "1 - 845 [rot] 2 - 461 [rot]",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Hladnikh[?] Marko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14861,8 +14879,8 @@
   "page": 32,
   "sheet_visible": "11. N.",
   "no_blatt": null,
-  "haus_no": "46",
-  "owner_original": "Gregor greg.",
+  "haus_no": "45",
+  "owner_original": "Strauß Georgy.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14877,8 +14895,10 @@
   "anmerkung": "Rupf[?] aufgelassen im 1880 [rot]; [F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "klafter_pre_v114": "- 331",
-  "reading_pass": "v114-ps-reread",
-  "anmerkung_pre_v114": "Rupf[?] aufgelassen im 1880 [rot]"
+  "reading_pass": "v119-names",
+  "anmerkung_pre_v114": "Rupf[?] aufgelassen im 1880 [rot]",
+  "owner_original_pre_v119": "Gregor greg.",
+  "haus_no_pre_v119": "46"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14887,7 +14907,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "47",
-  "owner_original": "Hladnikh[?] Marko",
+  "owner_original": "Hladnikhar[?] Marko",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14902,7 +14922,8 @@
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "klafter_pre_v114": "653",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Hladnikh[?] Marko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14911,7 +14932,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "45",
-  "owner_original": "Lovrenc Gregor",
+  "owner_original": "Strauß Georgy.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14926,7 +14947,8 @@
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "klafter_pre_v114": "1890",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Lovrenc Gregor"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14935,7 +14957,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "47",
-  "owner_original": "Hladnikh[?] Marko",
+  "owner_original": "Hladnikhar[?] Marko",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14949,7 +14971,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Hladnikh[?] Marko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14958,7 +14981,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "48",
-  "owner_original": "Hladnikh[?] Gregor",
+  "owner_original": "Hladnikhar[?] Georg.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14972,7 +14995,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Hladnikh[?] Gregor"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -14981,7 +15005,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "40",
-  "owner_original": "Paulin Marko",
+  "owner_original": "Pöching. Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -14995,7 +15019,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Paulin Marko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15004,7 +15029,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "40",
-  "owner_original": "Paulin Marko",
+  "owner_original": "Pöching. Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "~",
@@ -15019,7 +15044,8 @@
   "anmerkung": "",
   "page_observations": "Columns 'Geistliche Eigenth.', 'Dominical', 'Rustical' are crossed out with X on the left side. The 'Classe' column has red diagonal lines (likely indicating empty or to be filled). Red ink notes appear in the 'Anmerkung' column for rows 13, 14, and 15. Row 15 (Gregor greg.) is crossed out in the 'Nro. des Blattes' column and has a red note about being given up in 1880. The totals at the bottom are written in red ink.",
   "klafter_pre_v114": "55",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Paulin Marko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15028,7 +15054,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 1,
   "haus_no": "43",
-  "owner_original": "Rudolf Maria",
+  "owner_original": "Brulla Maria.",
   "owner_was_ditto": false,
   "stand": "Leib Eigenth.",
   "wohnort": "",
@@ -15042,7 +15068,9 @@
   "capital_kr": "",
   "anmerkung": "bey Pößlbergern 1830 [rot]",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Rudolf Maria",
+  "page_observations_v119": "v119 imenski pass (del 2b) p33: 23 sprememb; p33: v57 \"Pölling\" ×5 = črnilo \"Pöching.\" (ch jasno na r1/r11/r12) — PUA h.41/42 Pöchinger presek; h48 \"Widhalden\" = Hladnikhar (presek p32); h34 \"Stüblach\" = Stüllach; h20/h7 \"Deuwaldsch/Lauhaldsch/Zellhamisch\" = Deuwaldich/Lauhaldich/Zellhamisch z Mathl kraticami; h43 Brulla Maria (r0) + h113 Brulla Maria (r20); 2 ditto ovrženih (r3, r5); brez haus POPRAVEK"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15051,7 +15079,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 2,
   "haus_no": "42",
-  "owner_original": "Pölling Michel",
+  "owner_original": "Pöching. Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15065,7 +15093,8 @@
   "capital_kr": "",
   "anmerkung": "Celle [rot]",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pölling Michel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15074,7 +15103,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 3,
   "haus_no": "48",
-  "owner_original": "Widhalden Georg",
+  "owner_original": "Hladnikhar[?] Georg.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15088,7 +15117,8 @@
   "capital_kr": "",
   "anmerkung": "Celle [rot]",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Widhalden Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15097,8 +15127,8 @@
   "sheet_visible": "11. N.",
   "no_blatt": 4,
   "haus_no": "48",
-  "owner_original": "Widhalden Georg",
-  "owner_was_ditto": true,
+  "owner_original": "Hladnikhar[?] Georg.",
+  "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
   "kultur": "Wiese",
@@ -15111,7 +15141,9 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Widhalden Georg",
+  "owner_was_ditto_pre_v119": true
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15120,7 +15152,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 5,
   "haus_no": "34",
-  "owner_original": "Stüblach Michel",
+  "owner_original": "Stüllach.[?] Michel.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15134,7 +15166,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Stüblach Michel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15143,8 +15176,8 @@
   "sheet_visible": "11. N.",
   "no_blatt": 6,
   "haus_no": "34",
-  "owner_original": "Stüblach Michel",
-  "owner_was_ditto": true,
+  "owner_original": "Stüllach.[?] Michel.",
+  "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
   "kultur": "Acker",
@@ -15157,7 +15190,9 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Stüblach Michel",
+  "owner_was_ditto_pre_v119": true
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15166,7 +15201,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 7,
   "haus_no": "20",
-  "owner_original": "Dewaltsch Michel",
+  "owner_original": "Deuwaldich Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15180,7 +15215,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Dewaltsch Michel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15189,7 +15225,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 8,
   "haus_no": "34",
-  "owner_original": "Stüblach Andreas",
+  "owner_original": "Stüllach.[?] Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15203,7 +15239,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Stüblach Andreas"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15212,7 +15249,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 9,
   "haus_no": "39",
-  "owner_original": "Schönig Maria",
+  "owner_original": "Schimer Mache[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15226,7 +15263,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Schönig Maria"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15235,7 +15273,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 10,
   "haus_no": "40",
-  "owner_original": "Pölling Maria",
+  "owner_original": "Pöching. Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15249,7 +15287,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pölling Maria"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15258,7 +15297,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 11,
   "haus_no": "41",
-  "owner_original": "Pölling Georg",
+  "owner_original": "Pöching. Gorgy.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15272,7 +15311,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pölling Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15281,7 +15321,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 12,
   "haus_no": "42",
-  "owner_original": "Pölling Michel",
+  "owner_original": "Pöching. Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15295,7 +15335,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pölling Michel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15304,7 +15345,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 13,
   "haus_no": "41",
-  "owner_original": "Pölling Georg",
+  "owner_original": "Pöching. Gorgy.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15318,7 +15359,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pölling Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15327,7 +15369,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 14,
   "haus_no": "7",
-  "owner_original": "Deuwaldsch Gabriel",
+  "owner_original": "Deuwaldich Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15342,7 +15384,8 @@
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
   "klafter_pre_v114": "322",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Deuwaldsch Gabriel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15351,7 +15394,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 15,
   "haus_no": "47",
-  "owner_original": "Widhalden Mathäus",
+  "owner_original": "Hladnikhar[?] Marko",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15366,7 +15409,8 @@
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
   "klafter_pre_v114": "383",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Widhalden Mathäus"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15375,7 +15419,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 16,
   "haus_no": "31",
-  "owner_original": "Witschak Mathäus",
+  "owner_original": "Krischan Mathä.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15389,7 +15433,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Witschak Mathäus"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15398,7 +15443,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 17,
   "haus_no": "20",
-  "owner_original": "Dewaltsch Michel",
+  "owner_original": "Deuwaldich Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15413,8 +15458,9 @@
   "anmerkung": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
   "klafter_pre_v114": "258",
-  "reading_pass": "v114-ps-reread",
-  "anmerkung_pre_v114": ""
+  "reading_pass": "v119-names",
+  "anmerkung_pre_v114": "",
+  "owner_original_pre_v119": "Dewaltsch Michel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15423,7 +15469,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 18,
   "haus_no": "7",
-  "owner_original": "Lauhaldsch Michel",
+  "owner_original": "Lauhaldich Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15437,7 +15483,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Lauhaldsch Michel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15446,7 +15493,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 19,
   "haus_no": "42",
-  "owner_original": "Hirzog Mathilde",
+  "owner_original": "Pöching. Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15461,7 +15508,8 @@
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
   "klafter_pre_v114": "31",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Hirzog Mathilde"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15470,7 +15518,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 20,
   "haus_no": "7",
-  "owner_original": "Zellhamisch Mathäus",
+  "owner_original": "Zellhamisch Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15484,7 +15532,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Zellhamisch Mathäus"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15493,7 +15542,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": 21,
   "haus_no": "113",
-  "owner_original": "Prunkl Maria",
+  "owner_original": "Brulla Maria.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -15507,8 +15556,9 @@
   "capital_kr": "",
   "anmerkung": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]",
   "page_observations": "Rows 5-8 (Nro. des Blattes) have the row numbers crossed out with red ink and rewritten or marked over. Row 6 (Nro. des Blattes) has a red ink note '1833' next to it. The 'Stand' column is mostly empty or illegible, showing only 'Leib Eigenth.' in the first row. Several rows on the left side have large cross-outs in the 'Nro. der Uebersetzung' column. The 'Kultur' column for row 18 looks like 'Hutweide' but is slightly unclear. Row 21 has '3/4' in the 'Jaethe' column.",
-  "reading_pass": "v114-ps-reread",
-  "anmerkung_pre_v114": ""
+  "reading_pass": "v119-names",
+  "anmerkung_pre_v114": "",
+  "owner_original_pre_v119": "Prunkl Maria"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15517,7 +15567,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 1,
   "haus_no": "142",
-  "owner_original": "Piber, Matthel",
+  "owner_original": "Ponter, Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "Lehner - Gärtler",
   "wohnort": "",
@@ -15533,9 +15583,11 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "1450",
-  "reading_pass": "v114-ps-reread",
+  "reading_pass": "v119-names",
   "page_observations_v114": "v114 STRUKTURA: pomik iz v113 (r15–r19) OVRŽEN — vrednosti 185/397/87/1038/273 vidne na svojih indeksih (imensko-vrednostni trak); stran ima 21. vrstico pred Fürtragom (~\"70\", ime ~\"Hurich/Lohingr Mich.[?]\") — v57 je ne ima; FUR 4|1447[?]; r18 razhajanje 1038 vs 1088[?] odprto; VSTAVLJANJE = odprta odločitev",
-  "page_observations_v115": "v115: VSTAVLJENA 21. vrstica pred Fürtragom (~70, ime ~Hurich/Lohingr Mich.[?]; tekač nezabeležen) — v57 je ne ima; 20→21 vrstic; register 2871→2875"
+  "page_observations_v115": "v115: VSTAVLJENA 21. vrstica pred Fürtragom (~70, ime ~Hurich/Lohingr Mich.[?]; tekač nezabeležen) — v57 je ne ima; 20→21 vrstic; register 2871→2875",
+  "owner_original_pre_v119": "Piber, Matthel",
+  "page_observations_v119": "v119 imenski pass (del 2b) p34: 22 sprememb; p34 = format \"Priimek, Krstno\" (druga pisarska roka); \"Piber\" ×5 = črnilo 'Ponter[?]' (P-o-n-t-er; brez PT/PUA preseka za h140-143); h68 'Eberl' = Ulrich Michel.[?] (E/U glyf; cf. del 2a p31-r14 'H?ich Mieö' isti h68 — oblika odprto vprašanje); Ring-familija potrjena: h28 ×2 Ring Michl + h26 ×2 Ring Johann (del 2a grozda); h14 haus POPRAVEK 26->28 (par struktura); h27 'Muhldorfer' = Mulschitsch[?]"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15544,8 +15596,8 @@
   "sheet_visible": "III. N.",
   "no_blatt": 2,
   "haus_no": "80",
-  "owner_original": "Piber, Matthel",
-  "owner_was_ditto": true,
+  "owner_original": "Ponter, Mathl.[?]",
+  "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
   "kultur": "Acker",
@@ -15560,7 +15612,9 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "266",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piber, Matthel",
+  "owner_was_ditto_pre_v119": true
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15569,8 +15623,8 @@
   "sheet_visible": "III. N.",
   "no_blatt": 3,
   "haus_no": "140",
-  "owner_original": "Piber, Matthel",
-  "owner_was_ditto": true,
+  "owner_original": "Ponter, Mathl.[?]",
+  "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
   "kultur": "Acker",
@@ -15585,7 +15639,9 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "243",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piber, Matthel",
+  "owner_was_ditto_pre_v119": true
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15594,7 +15650,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 4,
   "haus_no": "141",
-  "owner_original": "Piber, Georg",
+  "owner_original": "Ponter, Gorgy.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15610,7 +15666,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "560",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piber, Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15619,7 +15676,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 5,
   "haus_no": "142",
-  "owner_original": "Piber, Martin",
+  "owner_original": "Ponter, Martin.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15636,7 +15693,8 @@
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "664",
   "anmerkung_pre_v114": "",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piber, Martin"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15661,7 +15719,7 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "406",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15670,7 +15728,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 7,
   "haus_no": "18",
-  "owner_original": "Wurich, Albert",
+  "owner_original": "Ulrich Michel.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15686,7 +15744,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "273",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wurich, Albert"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15695,7 +15754,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 8,
   "haus_no": "32",
-  "owner_original": "Wurich, Georg",
+  "owner_original": "Ulrich Georg.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15711,7 +15770,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "389",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wurich, Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15720,7 +15780,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 9,
   "haus_no": "68",
-  "owner_original": "Eberl, Michl",
+  "owner_original": "Ulrich Michel.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15736,7 +15796,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "400",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Eberl, Michl"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15745,7 +15806,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 10,
   "haus_no": "32",
-  "owner_original": "Wurich, Georg",
+  "owner_original": "Ulrich Georg.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15761,7 +15822,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "508",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wurich, Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15770,7 +15832,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 11,
   "haus_no": "27",
-  "owner_original": "Muhldorfer, Johann",
+  "owner_original": "Mulschitsch Johann.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15786,7 +15848,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "526",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Muhldorfer, Johann"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15795,7 +15858,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 12,
   "haus_no": "30",
-  "owner_original": "Dappler, Mathä",
+  "owner_original": "Dappler, Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15811,7 +15874,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "646",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Dappler, Mathä"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15820,7 +15884,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 13,
   "haus_no": "28",
-  "owner_original": "Wuring, Michl",
+  "owner_original": "Ring Michl.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15836,7 +15900,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "1108",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wuring, Michl"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15845,7 +15910,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 14,
   "haus_no": "26",
-  "owner_original": "Wuring, Johann",
+  "owner_original": "Ring Johann.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15861,7 +15926,8 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "224",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wuring, Johann"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15869,8 +15935,8 @@
   "page": 34,
   "sheet_visible": "III. N.",
   "no_blatt": 15,
-  "haus_no": "26",
-  "owner_original": "Wuring, Albert",
+  "haus_no": "28",
+  "owner_original": "Ring Michl.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15886,7 +15952,9 @@
   "page_observations": "Rows 2-4 use ditto marks for owner name (Piber, Matthel). Rows 10 and 15 are duplicates of row 8 and 14 respectively in terms of owner/house number but represent different parcels. Red ink checkmarks or scribbles appear in the 'Ertrag' column area for rows 5-11 and 14-16. The 'Stand' column is mostly empty except for row 1. 'Classe' column is empty for all visible rows.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "285",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wuring, Albert",
+  "haus_no_pre_v119": "26"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15895,7 +15963,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 16,
   "haus_no": "26",
-  "owner_original": "Wuring, Johann",
+  "owner_original": "Ring Johann.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15912,7 +15980,8 @@
   "anmerkung_pre_v114": "",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "185",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wuring, Johann"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15921,7 +15990,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 17,
   "haus_no": "31",
-  "owner_original": "Bruschatz, Martin",
+  "owner_original": "Witschan Martin.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15938,7 +16007,8 @@
   "anmerkung_pre_v114": "",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "397",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Bruschatz, Martin"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15947,7 +16017,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 18,
   "haus_no": "31",
-  "owner_original": "Bruschatz, Michl",
+  "owner_original": "Witschan Miche.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15964,7 +16034,8 @@
   "anmerkung_pre_v114": "",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "87",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Bruschatz, Michl"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15973,7 +16044,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 19,
   "haus_no": "32",
-  "owner_original": "Wurich, Georg",
+  "owner_original": "Ulrich Georg.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -15990,7 +16061,8 @@
   "anmerkung_pre_v114": "",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "1038",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wurich, Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -15999,7 +16071,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 20,
   "haus_no": "68",
-  "owner_original": "Eberl, Michl",
+  "owner_original": "Ulrich Mich.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16016,7 +16088,8 @@
   "anmerkung_pre_v114": "",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "273",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Eberl, Michl"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16037,9 +16110,10 @@
   "ertrag_kr": "",
   "capital_fl": "",
   "capital_kr": "",
-  "anmerkung": "[v115: VSTAVLJENA 21. vrstica pred Fürtragom — v57 je ne ima; vrednost ~70 (aproksimacija — pisanje nizko pri robu celice), ime ~Hurich/Lohingr Mich.[?]; tekač nezabeležen; vrednost v QK stolpcu (F-PV-07 page-level p34)]",
+  "anmerkung": "[v115: VSTAVLJENA 21. vrstica pred Fürtragom — v57 je ne ima; vrednost ~70 (aproksimacija — pisanje nizko pri robu celice), ime ~Hurich/Lohingr Mich.[?]; tekač nezabeležen; vrednost v QK stolpcu (F-PV-07 page-level p34)]; [v119 imenski pass: razhajanje odprto — črnilo ~\"(prazno)\", v57 ohranjeno]",
   "page_observations": "",
-  "reading_pass": "v115-insert"
+  "reading_pass": "v119-names",
+  "anmerkung_pre_v119": "[v115: VSTAVLJENA 21. vrstica pred Fürtragom — v57 je ne ima; vrednost ~70 (aproksimacija — pisanje nizko pri robu celice), ime ~Hurich/Lohingr Mich.[?]; tekač nezabeležen; vrednost v QK stolpcu (F-PV-07 page-level p34)]"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16048,7 +16122,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": 1,
   "haus_no": "68",
-  "owner_original": "Witsch Miko",
+  "owner_original": "Ulrich Michel.[?]",
   "owner_was_ditto": false,
   "stand": "Landw.",
   "wohnort": "",
@@ -16064,7 +16138,9 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "328",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Witsch Miko",
+  "page_observations_v119": "v119 imenski pass (del 2b) p35: 16 sprememb; p35: \"Witsch\" ×6 = fabriirana (črnilo Ulrich/Stüllach/Deuwaldich/Krischan/Dappler/Ring); h68 ×2 = Ulrich Michel (presek p34); h34 ×2 = Stüllach Mathl (presek p33); h32 ×2 = Ulrich Georg (rešuje p34 h32 w2 = Georg, ne Grangy); h20 = Deuwaldich (presek p33); h31 = Krischan Marko; h30 ×3 = Dappler Mathl (presek p34-r11); h26 ×2 = Ring Johann; h28 ×2 = Ring (Michl/Milo); h27 ×2 Malwischly soglasje; h1"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16073,7 +16149,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "35",
-  "owner_original": "Pirih Matheu",
+  "owner_original": "Killach Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16089,7 +16165,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "379",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pirih Matheu"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16098,7 +16175,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "34",
-  "owner_original": "Witsch Mathä",
+  "owner_original": "Stüllach Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16114,7 +16191,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "678",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Witsch Mathä"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16123,7 +16201,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "34",
-  "owner_original": "Witsch Mathä",
+  "owner_original": "Stüllach Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16139,7 +16217,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "21",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Witsch Mathä"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16162,7 +16241,7 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16171,7 +16250,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "20",
-  "owner_original": "Drucklhofer Matheu",
+  "owner_original": "Deuwaldich Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16187,7 +16266,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "380",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Drucklhofer Matheu"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16212,7 +16292,7 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "26",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16221,7 +16301,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "68",
-  "owner_original": "Witsch Miko",
+  "owner_original": "Ulrich Michel.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16237,7 +16317,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "100",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Witsch Miko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16246,7 +16327,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "32",
-  "owner_original": "Witsch Georg",
+  "owner_original": "Ulrich Georg.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16262,7 +16343,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "75",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Witsch Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16271,7 +16353,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "32",
-  "owner_original": "Witsch Georg",
+  "owner_original": "Ulrich Georg.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16287,7 +16369,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "193",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Witsch Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16296,7 +16379,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "31",
-  "owner_original": "Mikoschich Matheo",
+  "owner_original": "Krischan Marko.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16312,7 +16395,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "770",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Mikoschich Matheo"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16321,7 +16405,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "30",
-  "owner_original": "Leupold Matheo",
+  "owner_original": "Dappler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16337,7 +16421,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "164",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Leupold Matheo"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16362,7 +16447,7 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "80",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16387,7 +16472,7 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "252",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16396,7 +16481,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "26",
-  "owner_original": "Pirig Johand",
+  "owner_original": "Ring Johann.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16412,7 +16497,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "230",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pirig Johand"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16421,7 +16507,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "26",
-  "owner_original": "Pirig Johand",
+  "owner_original": "Ring Johann.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16437,7 +16523,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "26",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Pirig Johand"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16446,7 +16533,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "28",
-  "owner_original": "Piring Miko",
+  "owner_original": "Ring Michl.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16462,7 +16549,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "324",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piring Miko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16471,7 +16559,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "30",
-  "owner_original": "Frugel Matheo",
+  "owner_original": "Dappler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16487,7 +16575,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "93",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Frugel Matheo"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16496,7 +16585,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "30",
-  "owner_original": "Leupold Matheo",
+  "owner_original": "Dappler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16512,7 +16601,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "48",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Leupold Matheo"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16521,7 +16611,7 @@
   "sheet_visible": "III. N.",
   "no_blatt": null,
   "haus_no": "28",
-  "owner_original": "Piring Miko",
+  "owner_original": "Ring Milo.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16537,7 +16627,8 @@
   "page_observations": "The columns 'Geistliche Eigenth./Dominical/Rustical' are crossed out with X. The 'Nro. des Blattes' column has a '1' in the first row, but subsequent rows are empty (indicated by ditto marks or dashes). The 'Stand' and 'Wohnort' columns are largely empty or illegible. The 'Classe' column is empty for all visible rows. The 'Capital Werth' column contains one value '1561' in the Kr column for row 7, and 'L 659' in the Ertrag Kr column for row 18. The sheet number 'III. N.' is printed at the top right.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "31",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piring Miko"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16561,7 +16652,8 @@
   "anmerkung": "[v114: razhajanje: zadnja stevilka 9 vs 7 (flourish) — odprto; split 1| ze val 57]; [F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
   "anmerkung_pre_v114": "",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "page_observations_v119": "v119 imenski pass (del 2b) p36: 18 sprememb; p36 = \"Wernig\" ×6 = črnilo RING (h24 ×3 Michael, h26 Johann, h25 Mito, h23 Mathä — del 2a grozda h23-h28 v celoti potrjena čez p37); Müllner hiša h29 (r0/r1/r12 + p37-r1); Krischan h66 ×2; Puchey h64/67; 2 haus POPRAVEK (r8 36->35 Tillach/Killach hiša, r17 64->67); 3 ditto ovrženih (r1, r5, r7); vrednostna kolona brez premika (klafter r8=263, r9=184, r10=37 sidro)"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16571,7 +16663,7 @@
   "no_blatt": null,
   "haus_no": "29",
   "owner_original": "Müllner Samuel",
-  "owner_was_ditto": true,
+  "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
   "kultur": "Riedl",
@@ -16584,7 +16676,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_was_ditto_pre_v119": true
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16593,7 +16686,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "24",
-  "owner_original": "Wernig Michael",
+  "owner_original": "Ring Michael.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16608,7 +16701,8 @@
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
   "klafter_pre_v114": "420",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wernig Michael"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16617,7 +16711,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "65",
-  "owner_original": "Wernig Martin",
+  "owner_original": "Ring Martho.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16632,7 +16726,8 @@
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
   "klafter_pre_v114": "33",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wernig Martin"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16641,7 +16736,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "66",
-  "owner_original": "Puchegger Georg",
+  "owner_original": "Krischan Georg.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16655,7 +16750,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Puchegger Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16664,8 +16760,8 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "66",
-  "owner_original": "Puchegger Georg",
-  "owner_was_ditto": true,
+  "owner_original": "Krischan Georg.[?]",
+  "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
   "kultur": "Lößl",
@@ -16678,7 +16774,9 @@
   "capital_kr": "864",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Puchegger Georg",
+  "owner_was_ditto_pre_v119": true
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16701,7 +16799,7 @@
   "capital_kr": "",
   "anmerkung": "Dingfeldsbesitz vom 1814 [rot]",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16711,7 +16809,7 @@
   "no_blatt": null,
   "haus_no": "22",
   "owner_original": "Müllner Johann",
-  "owner_was_ditto": true,
+  "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
   "kultur": "Riedl",
@@ -16725,7 +16823,8 @@
   "anmerkung": "Villa [rot]",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
   "klafter_pre_v114": "474",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_was_ditto_pre_v119": true
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16733,8 +16832,8 @@
   "page": 36,
   "sheet_visible": "11. N.",
   "no_blatt": null,
-  "haus_no": "36",
-  "owner_original": "Tischler Peter",
+  "haus_no": "35",
+  "owner_original": "Tillach Peter.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16748,7 +16847,9 @@
   "capital_kr": "",
   "anmerkung": "Gütlein [rot]",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Tischler Peter",
+  "haus_no_pre_v119": "36"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16772,7 +16873,7 @@
   "anmerkung": "Gütlein [rot]",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
   "klafter_pre_v114": "196",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16781,7 +16882,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "24",
-  "owner_original": "Wernig Michael",
+  "owner_original": "Ring Michael.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16795,7 +16896,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wernig Michael"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16804,7 +16906,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "20",
-  "owner_original": "Wernig Michael",
+  "owner_original": "Ring Mathä.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16818,7 +16920,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wernig Michael"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16841,7 +16944,7 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16850,7 +16953,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "26",
-  "owner_original": "Wernig Jakob",
+  "owner_original": "Ring Johann.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16864,7 +16967,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wernig Jakob"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16873,7 +16977,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "24",
-  "owner_original": "Wernig Michael",
+  "owner_original": "Ring Michael.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16887,7 +16991,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wernig Michael"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16896,7 +17001,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "25",
-  "owner_original": "Wernig Milt",
+  "owner_original": "Ring Mito.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16910,7 +17015,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Wernig Milt"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16919,7 +17025,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "23",
-  "owner_original": "Krengg Mathäus",
+  "owner_original": "Ring Mathä.[?]",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16933,7 +17039,8 @@
   "capital_kr": "991",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Krengg Mathäus"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16941,8 +17048,8 @@
   "page": 36,
   "sheet_visible": "11. N.",
   "no_blatt": null,
-  "haus_no": "64",
-  "owner_original": "Puchegg Georg",
+  "haus_no": "67",
+  "owner_original": "Puchey Georg.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16956,7 +17063,9 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Puchegg Georg",
+  "haus_no_pre_v119": "64"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -16965,7 +17074,7 @@
   "sheet_visible": "11. N.",
   "no_blatt": null,
   "haus_no": "67",
-  "owner_original": "Puchegg Georg",
+  "owner_original": "Puchey Georg.",
   "owner_was_ditto": false,
   "stand": "",
   "wohnort": "",
@@ -16979,7 +17088,8 @@
   "capital_kr": "",
   "anmerkung": "",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Puchegg Georg"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17002,7 +17112,7 @@
   "capital_kr": "",
   "anmerkung": "[F-PV-07-SPLIT val 114: Joch|Klafter notacija — jae=Joch stavec, ni parcelna stevilka]",
   "page_observations": "Several row numbers in the first column (Nro. des Blattes) are crossed out (e.g., rows 5-11). The column 'Geistliche Eigenth./Dominical/Rustical' is consistently crossed out with an X. Red ink notes appear in the 'Anmerkung' column for rows 7-10. The 'Capital Werth' values are only filled for a few rows (rows 3, 6, 17). The final row contains summary totals in red ink.",
-  "reading_pass": "v114-ps-reread",
+  "reading_pass": "v119-names",
   "anmerkung_pre_v114": ""
  },
  {
@@ -17012,7 +17122,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 701,
   "haus_no": "30",
-  "owner_original": "Bruckner Mathl.",
+  "owner_original": "Bruckler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "Land Gütler",
   "wohnort": "",
@@ -17027,7 +17137,9 @@
   "anmerkung": "[v114: pas vsebuje 761 (visoko) IN 774 (nizko); register jae=\"701\" kla=\"774\" — neujemljivo; POPRAVEK kandidat ali Übertrag — odprto]",
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "anmerkung_pre_v114": "",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Bruckner Mathl.",
+  "page_observations_v119": "v119 imenski pass (del 2b) p37: 30 sprememb; p37 = \"Piringer uibio\" ×8 + \"Bruckner\" ×5 = fabriirani; črnilo: Ring (h28 ×4? h26 ×1, h23, h25, h24 ×2, h20) + Müllner h29 + Bruckler h30 ×4 + Malwischly h27 ×2; 11 haus POPRAVEK (r4 25->23, r5 23->25 — v57 swap, r8 26->30, r9 28->25, r10 24->28, r12 28->24, r14 26->28, r15 28->30, r16 29->30, r18 28->27, r19 26->28) — parna struktura črnila (30×2, 24×2, 27×2, 28×3) dokazuje v57 haos; Ring-grozda "
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17036,7 +17148,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 702,
   "haus_no": "29",
-  "owner_original": "Piringer Samuel",
+  "owner_original": "Müllner Samuel.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17052,7 +17164,8 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "754",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer Samuel"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17061,7 +17174,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 703,
   "haus_no": "28",
-  "owner_original": "Piringer uibio",
+  "owner_original": "Ring Michl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17077,7 +17190,8 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "705",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17086,7 +17200,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 704,
   "haus_no": "26",
-  "owner_original": "Piringer Johann",
+  "owner_original": "Ring Johann.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17102,7 +17216,8 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "741",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer Johann"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17110,8 +17225,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 705,
-  "haus_no": "25",
-  "owner_original": "Piringer Mathl.",
+  "haus_no": "23",
+  "owner_original": "Ring Mathä.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17127,7 +17242,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "564",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer Mathl.",
+  "haus_no_pre_v119": "25"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17135,8 +17252,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 706,
-  "haus_no": "23",
-  "owner_original": "Piringer uibio",
+  "haus_no": "25",
+  "owner_original": "Ring Mito.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17152,7 +17269,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "526",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio",
+  "haus_no_pre_v119": "23"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17161,7 +17280,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 707,
   "haus_no": "20",
-  "owner_original": "Piringer uibio",
+  "owner_original": "Ring Michl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17177,7 +17296,8 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "21",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17186,7 +17306,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 708,
   "haus_no": "30",
-  "owner_original": "Bruckner Mathl.",
+  "owner_original": "Bruckler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17202,7 +17322,8 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "405",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Bruckner Mathl."
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17210,8 +17331,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 709,
-  "haus_no": "26",
-  "owner_original": "Bruckner Mathl.",
+  "haus_no": "30",
+  "owner_original": "Bruckler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17227,7 +17348,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "31",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Bruckner Mathl.",
+  "haus_no_pre_v119": "26"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17235,8 +17358,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 710,
-  "haus_no": "28",
-  "owner_original": "Piringer uibio",
+  "haus_no": "25",
+  "owner_original": "Ring Michl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17252,7 +17375,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "32",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio",
+  "haus_no_pre_v119": "28"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17260,8 +17385,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 711,
-  "haus_no": "24",
-  "owner_original": "Piringer uibio",
+  "haus_no": "28",
+  "owner_original": "Ring Michl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17277,7 +17402,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "342",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio",
+  "haus_no_pre_v119": "24"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17286,7 +17413,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 712,
   "haus_no": "24",
-  "owner_original": "Piringer Michael[?]",
+  "owner_original": "Ring Michael.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17302,7 +17429,8 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "489",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer Michael[?]"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17310,8 +17438,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 713,
-  "haus_no": "28",
-  "owner_original": "Piringer uibio",
+  "haus_no": "24",
+  "owner_original": "Ring Michael.",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17327,7 +17455,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "59",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio",
+  "haus_no_pre_v119": "28"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17336,7 +17466,7 @@
   "sheet_visible": "10. N.",
   "no_blatt": 714,
   "haus_no": "28",
-  "owner_original": "Piringer uibio",
+  "owner_original": "Ring Michl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17352,7 +17482,8 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "85",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17360,8 +17491,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 715,
-  "haus_no": "26",
-  "owner_original": "Bruckner Mathl.",
+  "haus_no": "28",
+  "owner_original": "Ring Michl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17377,7 +17508,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "959",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Bruckner Mathl.",
+  "haus_no_pre_v119": "26"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17385,8 +17518,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 716,
-  "haus_no": "28",
-  "owner_original": "Bruckner Mathl.",
+  "haus_no": "30",
+  "owner_original": "Bruckler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17402,7 +17535,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "260",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Bruckner Mathl.",
+  "haus_no_pre_v119": "28"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17410,8 +17545,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 717,
-  "haus_no": "29",
-  "owner_original": "Mallwitsch Johann",
+  "haus_no": "30",
+  "owner_original": "Bruckler Mathl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17427,7 +17562,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "38",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Mallwitsch Johann",
+  "haus_no_pre_v119": "29"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17452,7 +17589,7 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "33",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17460,8 +17597,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 719,
-  "haus_no": "28",
-  "owner_original": "Piringer uibio",
+  "haus_no": "27",
+  "owner_original": "Malwischly Johann.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17477,7 +17614,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "1485",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uibio",
+  "haus_no_pre_v119": "28"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",
@@ -17485,8 +17624,8 @@
   "page": 37,
   "sheet_visible": "10. N.",
   "no_blatt": 720,
-  "haus_no": "26",
-  "owner_original": "Piringer uiru",
+  "haus_no": "28",
+  "owner_original": "Ring Michl.[?]",
   "owner_was_ditto": false,
   "stand": "~",
   "wohnort": "",
@@ -17502,7 +17641,9 @@
   "page_observations": "The first column 'Nro. des Blattes' contains Roman numeral I for the first row, then ditto marks for subsequent rows. The 'Geistliche Eigenth./Dominical/Rustical' column is crossed out with Xs. The 'Stand' column is mostly empty or has ditto marks after the first entry. Several rows have red ink annotations in the 'Anmerkung' column on the right side. The handwriting uses Kurrent script. Some names appear to be abbreviated or use non-standard spellings (e.g., 'uibio', 'uiru', 'Mathl.' for Mathäus/Michael). The 'Kultur Gattung' column shows various land types including Acker, Güben, Wiese, Lößgrube, and Gruben.",
   "klafter_pre_v114": "",
   "jaethe_pre_v114": "232",
-  "reading_pass": "v114-ps-reread"
+  "reading_pass": "v119-names",
+  "owner_original_pre_v119": "Piringer uiru",
+  "haus_no_pre_v119": "26"
  },
  {
   "source": "SI AS 176/N/N83/s/PS",

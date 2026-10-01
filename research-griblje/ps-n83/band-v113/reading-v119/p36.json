@@ -1,0 +1,159 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2b",
+  "page": 36,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-pXX-g0..2 + zz-/gz-pXX-rNN x22-x30 + diag x14 + tall prerezi s Blatt sidri + medstranski hišni preseki (h39 Schimer, h41/42 Pöching, h43 Brulla, h45 Strauß, h23-h28 Ring, h47/48 Hladnikhar, h29 Müllner, h64/67 Puchey, h27 Malwischly) + PUA presek + PT (house-register-1825) varianti + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "zz-p36-r00..r19 (x24)",
+   "gz-p36-* (x26-x30 izbrani)",
+   "tall prerezi p36 (x3.4, Blatt sidra)"
+  ],
+  "note": "p36 = \"Wernig\" ×6 = črnilo RING (h24 ×3 Michael, h26 Johann, h25 Mito, h23 Mathä — del 2a grozda h23-h28 v celoti potrjena čez p37); Müllner hiša h29 (r0/r1/r12 + p37-r1); Krischan h66 ×2; Puchey h64/67; 2 haus POPRAVEK (r8 36->35 Tillach/Killach hiša, r17 64->67); 3 ditto ovrženih (r1, r5, r7); vrednostna kolona brez premika (klafter r8=263, r9=184, r10=37 sidro)"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "29",
+   "old_name": "Müllner Samuel",
+   "verdict": "soglasje (w1 'Müllner' jasno; w2 'Samuel[?]/Tramel[?]' dvom pri x24 — v57 ohranjeno)"
+  },
+  "r1": {
+   "seen_haus": "29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "29",
+   "old_name": "Müllner Samuel",
+   "verdict": "soglasje + ditto ovržen: črnilo piše polno ime (h29 par z r0)"
+  },
+  "r2": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Michael. (h24 = Ring Michael hiša — del 2a grozda; v57 \"Wernig\" ×5 na p28 že dokazano fabriirana)"
+  },
+  "r3": {
+   "seen_haus": "65",
+   "seen_name": "Ring Martho.[?]",
+   "old_haus": "65",
+   "old_name": "Wernig Martin",
+   "verdict": "ime POPRAVEK Wernig Martin -> Ring Martho.[?] (w1 Ring-forma; w2 'Martho[?]/Matho[?]/Martin[?]' dvom; h65 izven Ring-grozde h23-h28 — dvom izrecen)"
+  },
+  "r4": {
+   "seen_haus": "66",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "66",
+   "old_name": "Puchegger Georg",
+   "verdict": "ime POPRAVEK Puchegger Georg -> Krischan Georg.[?] (w1 '?rischar' — K/W dvom, Krischan forma; h66 par z r5; v57 fabriirana)"
+  },
+  "r5": {
+   "seen_haus": "66",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "66",
+   "old_name": "Puchegger Georg",
+   "verdict": "ime POPRAVEK Puchegger Georg -> Krischan Georg.[?] (h66 par z r4) + ditto ovržen: črnilo piše polno ime"
+  },
+  "r6": {
+   "seen_haus": "22",
+   "seen_name": "Müllner Johann.",
+   "old_haus": "22",
+   "old_name": "Müllner Johann",
+   "verdict": "soglasje (w1+w2 jasno; anm Dingfeldsbesitz/Villa/Gütlein ostajajo)"
+  },
+  "r7": {
+   "seen_haus": "22",
+   "seen_name": "Müllner Johann.",
+   "old_haus": "22",
+   "old_name": "Müllner Johann",
+   "verdict": "soglasje + ditto ovržen: črnilo piše polno ime"
+  },
+  "r8": {
+   "seen_haus": "35",
+   "seen_name": "Tillach Peter.[?]",
+   "old_haus": "36",
+   "old_name": "Tischler Peter",
+   "verdict": "haus POPRAVEK 36->35 (x14: 5 z zastavico; h35 = Killach hiša p35-r1) + ime POPRAVEK Tischler Peter -> Tillach Peter.[?] (w1 'Tillach[?]/Killach[?]' dvom — isti h35 družinski zapis; v57 \"Tischler\" = page-singleton; klafter 263 ostaja na vrstici)"
+  },
+  "r9": {
+   "seen_haus": "22",
+   "seen_name": "Müllner Johann.",
+   "old_haus": "22",
+   "old_name": "Müllner Johann",
+   "verdict": "soglasje (h22; črnilo polno ime)"
+  },
+  "r10": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Michael. (h24 ×3 z r2/r14)"
+  },
+  "r11": {
+   "seen_haus": "20",
+   "seen_name": "Ring Mathä.[?]",
+   "old_haus": "20",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Mathä.[?] (h20; w2 'Mathä[?]/Mathe[?]/Michael[?]' dvom — krajša forma kot r10)"
+  },
+  "r12": {
+   "seen_haus": "29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "29",
+   "old_name": "Müllner Samuel",
+   "verdict": "soglasje (h29 par z r0/r1)"
+  },
+  "r13": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "Wernig Jakob",
+   "verdict": "ime POPRAVEK Wernig Jakob -> Ring Johann. (h26 = Ring Johann hiša — del 2a)"
+  },
+  "r14": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "Wernig Michael",
+   "verdict": "ime POPRAVEK Wernig Michael -> Ring Michael. (h24 par z r10)"
+  },
+  "r15": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito.[?]",
+   "old_haus": "25",
+   "old_name": "Wernig Milt",
+   "verdict": "ime POPRAVEK Wernig Milt -> Ring Mito.[?] (h25 = Ring Mito hiša — del 2a p31; w2 Mito[?]/Mich[?] dvom)"
+  },
+  "r16": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä.[?]",
+   "old_haus": "23",
+   "old_name": "Krengg Mathäus",
+   "verdict": "ime POPRAVEK Krengg Mathäus -> Ring Mathä.[?] (h23 = Ring Mathä hiša — del 2a p27-r15, p28-r19, p30, p31)"
+  },
+  "r17": {
+   "seen_haus": "67",
+   "seen_name": "Puchey Georg.",
+   "old_haus": "64",
+   "old_name": "Puchegg Georg",
+   "verdict": "haus POPRAVEK 64->67 (tall2: \"67\" — 4/7 glyf-dvom izrecen; cf. h64 Puchey p31-r1/r2 = druga hiša iste družine) + ime POPRAVEK Puchegg Georg -> Puchey Georg. (del 2a forma — p31 \"Puchey Georg\" h64)"
+  },
+  "r18": {
+   "seen_haus": "67",
+   "seen_name": "Puchey Georg.",
+   "old_haus": "67",
+   "old_name": "Puchegg Georg",
+   "verdict": "ime POPRAVEK Puchegg Georg -> Puchey Georg. (h67 par z r17; del 2a forma)"
+  },
+  "r19": {
+   "seen_haus": "22",
+   "seen_name": "Müllner Johann.",
+   "old_haus": "22",
+   "old_name": "Müllner Johann",
+   "verdict": "soglasje (w1 'Müllig[?]/Müllner' forma-dvom opomba; kla 1307)"
+  }
+ }
+}

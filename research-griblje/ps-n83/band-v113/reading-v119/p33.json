@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2b",
+  "page": 33,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-pXX-g0..2 + zz-/gz-pXX-rNN x22-x30 + diag x14 + tall prerezi s Blatt sidri + medstranski hišni preseki (h39 Schimer, h41/42 Pöching, h43 Brulla, h45 Strauß, h23-h28 Ring, h47/48 Hladnikhar, h29 Müllner, h64/67 Puchey, h27 Malwischly) + PUA presek + PT (house-register-1825) varianti + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a",
+  "register_rows": 21,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "zz-p33-r00..r20 (x24)",
+   "gz-p33-* (x26-x30 izbrani)",
+   "tall prerezi p33 (x3.4, Blatt sidra)"
+  ],
+  "note": "p33: v57 \"Pölling\" ×5 = črnilo \"Pöching.\" (ch jasno na r1/r11/r12) — PUA h.41/42 Pöchinger presek; h48 \"Widhalden\" = Hladnikhar (presek p32); h34 \"Stüblach\" = Stüllach; h20/h7 \"Deuwaldsch/Lauhaldsch/Zellhamisch\" = Deuwaldich/Lauhaldich/Zellhamisch z Mathl kraticami; h43 Brulla Maria (r0) + h113 Brulla Maria (r20); 2 ditto ovrženih (r3, r5); brez haus POPRAVEK"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "43",
+   "seen_name": "Brulla Maria.",
+   "old_haus": "43",
+   "old_name": "Rudolf Maria",
+   "verdict": "ime POPRAVEK Rudolf Maria -> Brulla Maria. (x24 jasno; h43 Brulla presek p32-r2/r7 + p25/p26; v57 'Rudolf' fabriirana)"
+  },
+  "r1": {
+   "seen_haus": "42",
+   "seen_name": "Pöching. Mathl.[?]",
+   "old_haus": "42",
+   "old_name": "Pölling Michel",
+   "verdict": "ime POPRAVEK Pölling Michel -> Pöching. Mathl.[?] (x24: 'Pöching' s ch jasno; w2 'Mathl.' jasno ≠ Michel; PUA h.42)"
+  },
+  "r2": {
+   "seen_haus": "48",
+   "seen_name": "Hladnikhar[?] Georg.",
+   "old_haus": "48",
+   "old_name": "Widhalden Georg",
+   "verdict": "ime POPRAVEK Widhalden Georg -> Hladnikhar[?] Georg. (h48 presek p32-r11/r17; w1 Hladnikhar-forma, [?])"
+  },
+  "r3": {
+   "seen_haus": "48",
+   "seen_name": "Hladnikhar[?] Georg.",
+   "old_haus": "48",
+   "old_name": "Widhalden Georg",
+   "verdict": "ime POPRAVEK Widhalden Georg -> Hladnikhar[?] Georg. (h48 par z r2) + ditto ovržen: črnilo piše polno ime, ne d°"
+  },
+  "r4": {
+   "seen_haus": "34",
+   "seen_name": "Stüllach.[?] Michel.",
+   "old_haus": "34",
+   "old_name": "Stüblach Michel",
+   "verdict": "ime POPRAVEK Stüblach Michel -> Stüllach.[?] Michel. (x24: dve 'll' daljši, ne b; b/ll dvom izrecen — [?]; w2 Michel. ≈ v57)"
+  },
+  "r5": {
+   "seen_haus": "34",
+   "seen_name": "Stüllach.[?] Michel.",
+   "old_haus": "34",
+   "old_name": "Stüblach Michel",
+   "verdict": "ime POPRAVEK Stüblach Michel -> Stüllach.[?] Michel. (h34 par z r4) + ditto ovržen: črnilo piše polno ime"
+  },
+  "r6": {
+   "seen_haus": "20",
+   "seen_name": "Deuwaldich Mathl.[?]",
+   "old_haus": "20",
+   "old_name": "Dewaltsch Michel",
+   "verdict": "ime POPRAVEK Dewaltsch Michel -> Deuwaldich Mathl.[?] (w2 'Mathl.' jasno ≠ Michel; w1 'Deuwaldich[?]/Deubaldich[?]' dvom — h20 par z r16)"
+  },
+  "r7": {
+   "seen_haus": "34",
+   "seen_name": "Stüllach.[?] Mathl.[?]",
+   "old_haus": "34",
+   "old_name": "Stüblach Andreas",
+   "verdict": "ime POPRAVEK Stüblach Andreas -> Stüllach.[?] Mathl.[?] (w2 'Mathl.' jasno ≠ Andreas; h34 tretja vrstica — Michel ×2 + Mathl)"
+  },
+  "r8": {
+   "seen_haus": "39",
+   "seen_name": "Schimer Mache[?]",
+   "old_haus": "39",
+   "old_name": "Schönig Maria",
+   "verdict": "ime POPRAVEK Schönig Maria -> Schimer Mache[?] (x24: 'Schimer' jasno; h39 presek p32-r1 + PT H-039 'Schim[?]er Mache[?]'; v57 'Schönig' = PUA h.1 'Schinig' zmešnjava)"
+  },
+  "r9": {
+   "seen_haus": "40",
+   "seen_name": "Pöching. Mathl.[?]",
+   "old_haus": "40",
+   "old_name": "Pölling Maria",
+   "verdict": "ime POPRAVEK Pölling Maria -> Pöching. Mathl.[?] (h40 presek p32-r6/r18/r19 — isti lastnik; w2 'Mathl[?]/Michel[?]' dvom, Mathl skladnejše s h40-paroma)"
+  },
+  "r10": {
+   "seen_haus": "41",
+   "seen_name": "Pöching. Gorgy.[?]",
+   "old_haus": "41",
+   "old_name": "Pölling Georg",
+   "verdict": "ime POPRAVEK Pölling Georg -> Pöching. Gorgy.[?] (h41 presek p32-r5/r9; PUA h.41)"
+  },
+  "r11": {
+   "seen_haus": "42",
+   "seen_name": "Pöching. Mathl.[?]",
+   "old_haus": "42",
+   "old_name": "Pölling Michel",
+   "verdict": "ime POPRAVEK Pölling Michel -> Pöching. Mathl.[?] (h42; x24 ch jasno)"
+  },
+  "r12": {
+   "seen_haus": "41",
+   "seen_name": "Pöching. Gorgy.[?]",
+   "old_haus": "41",
+   "old_name": "Pölling Georg",
+   "verdict": "ime POPRAVEK Pölling Georg -> Pöching. Gorgy.[?] (h41 par z r10)"
+  },
+  "r13": {
+   "seen_haus": "7",
+   "seen_name": "Deuwaldich Mathl.[?]",
+   "old_haus": "7",
+   "old_name": "Deuwaldsch Gabriel",
+   "verdict": "ime POPRAVEK Deuwaldsch Gabriel -> Deuwaldich Mathl.[?] (w2 'Mathl.' jasno ≠ Gabriel; w1 dvom)"
+  },
+  "r14": {
+   "seen_haus": "47",
+   "seen_name": "Hladnikhar[?] Marko",
+   "old_haus": "47",
+   "old_name": "Widhalden Mathäus",
+   "verdict": "ime POPRAVEK Widhalden Mathäus -> Hladnikhar[?] Marko (h47 presek p32-r12/r14/r16 ×3; v57 fabriirana)"
+  },
+  "r15": {
+   "seen_haus": "31",
+   "seen_name": "Krischan Mathä.[?]",
+   "old_haus": "31",
+   "old_name": "Witschak Mathäus",
+   "verdict": "ime POPRAVEK Witschak Mathäus -> Krischan Mathä.[?] (w1 '?rischar' — K/W iniciální dvom, Krischan = PUA h.34/36/37 forma; cf. p34-r16/r17, p35-r10; w2 kratica Mathä; cf. p46 'Witschkan' riziko)"
+  },
+  "r16": {
+   "seen_haus": "20",
+   "seen_name": "Deuwaldich Mathl.[?]",
+   "old_haus": "20",
+   "old_name": "Dewaltsch Michel",
+   "verdict": "ime POPRAVEK Dewaltsch Michel -> Deuwaldich Mathl.[?] (h20 par z r6)"
+  },
+  "r17": {
+   "seen_haus": "7",
+   "seen_name": "Lauhaldich Mathl.[?]",
+   "old_haus": "7",
+   "old_name": "Lauhaldsch Michel",
+   "verdict": "ime POPRAVEK Lauhaldsch Michel -> Lauhaldich Mathl.[?] (w2 'Mathl.' jasno ≠ Michel; w1 ≈ v57 'Lauhaldsch' — ch/sch dvom)"
+  },
+  "r18": {
+   "seen_haus": "42",
+   "seen_name": "Pöching. Mathl.[?]",
+   "old_haus": "42",
+   "old_name": "Hirzog Mathilde",
+   "verdict": "ime POPRAVEK Hirzog Mathilde -> Pöching. Mathl.[?] (Blatt-619 tall: '42 | Pöching Mathl.' jasno; h42; v57 'Hirzog' fabriirana — ne obstaja v črnilu)"
+  },
+  "r19": {
+   "seen_haus": "7",
+   "seen_name": "Zellhamisch Mathl.[?]",
+   "old_haus": "7",
+   "old_name": "Zellhamisch Mathäus",
+   "verdict": "ime POPRAVEK Zellhamisch Mathäus -> Zellhamisch Mathl.[?] (Blatt-619 tall; w1 ≈ v57 — Z/L iniciální dvom; w2 = kratica Mathl, v57 Mathäus = ekspanzija)"
+  },
+  "r20": {
+   "seen_haus": "113",
+   "seen_name": "Brulla Maria.[?]",
+   "old_haus": "113",
+   "old_name": "Prunkl Maria",
+   "verdict": "ime POPRAVEK Prunkl Maria -> Brulla Maria.[?] (Blatt-620 tall: 'Brulla Maria' jasno — cf. h43 Brulla; h113 samostojna hiša; [?] na w2-akcentu)"
+  }
+ }
+}

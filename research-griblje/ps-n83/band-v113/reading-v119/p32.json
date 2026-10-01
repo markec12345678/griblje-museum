@@ -1,0 +1,159 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2b",
+  "page": 32,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-pXX-g0..2 + zz-/gz-pXX-rNN x22-x30 + diag x14 + tall prerezi s Blatt sidri + medstranski hišni preseki (h39 Schimer, h41/42 Pöching, h43 Brulla, h45 Strauß, h23-h28 Ring, h47/48 Hladnikhar, h29 Müllner, h64/67 Puchey, h27 Malwischly) + PUA presek + PT (house-register-1825) varianti + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "zz-p32-r00..r19 (x24)",
+   "gz-p32-* (x26-x30 izbrani)",
+   "tall prerezi p32 (x3.4, Blatt sidra)"
+  ],
+  "note": "p32 = masovni pattern-fill: v57 \"Paulin/Peter/Šimunc/Hladnikh/Gregor greg.\" nasproti črnilu Pöching./Schimer/Brulla/Hladnikhar/Strauß; strukturno: pari h43×2 (Brulla), h42×2 (Pöching Mathel), h41×2 (Pöching Gorgy), h38×2 (Schimer Georg), h45×2 (Strauß Georgy), h40×3 (Pöching Mathl), h47×3 + h48×2 (Hladnikhar); 5 haus POPRAVEK (42->43, 12->42 ×2, 40->43, 46->45); r0 'Nava Marlin[?]' = dvomljivo (razhajanje odprto, v57 'Matjaž Marnel' ohranjeno)"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "9.",
+   "seen_name": "Nava Marlin[?]",
+   "old_haus": "9.",
+   "old_name": "Matjaž Marnel",
+   "verdict": "razhajanje odprto: črnilo ~'Nava. Marlin.[?]' (w1 = 4-minim N-sweep 'Nava[?]'; 'Matz[?]' alternativa — N/M glyf-dvom tudi pri grayscale x26), v57 'Matjaž Marnel' ohranjeno (w2 'Marlin' ≈ 'Marnel' skladna); val57-VLM page-singleton — nobena beseda ne obstaja drugje v 2875 vrsticah"
+  },
+  "r1": {
+   "seen_haus": "39",
+   "seen_name": "Schimer Mache[?]",
+   "old_haus": "39",
+   "old_name": "Valentin Marko",
+   "verdict": "ime POPRAVEK Valentin Marko -> Schimer Mache[?] (x22+x30: 'Schimer' jasno; w2 'Mache[?]/Mathe[?]' dvom — ch/th nad hrupom; PT H-039 variant 'Schim[?]er Mache[?]' = meddokumentski presek; v57 obe besedi fabriirani — 'Valentin'/'Marko' ne obstajata v črnilu te strani)"
+  },
+  "r2": {
+   "seen_haus": "43",
+   "seen_name": "Brulla Michl[?]",
+   "old_haus": "42",
+   "old_name": "Paulin Stelc",
+   "verdict": "haus POPRAVEK 42->43 (x24: 3 z zastavico jasna) + ime POPRAVEK Paulin Stelc -> Brulla Michl[?] (h43 presek: p25-r15 'Prulla Miko[?]', p26-r15 'Brulla Michl[?]', PUA konflikt 'Brulla Mäda/Laura'; w2 mehko 'Mic?s' — [?] na obeh besedah)"
+  },
+  "r3": {
+   "seen_haus": "42",
+   "seen_name": "Pöching. Mathel.[?]",
+   "old_haus": "12",
+   "old_name": "Paulin Marko",
+   "verdict": "haus POPRAVEK 12->42 (x24: 4 + 2 z valovito bazo) + ime POPRAVEK Paulin Marko -> Pöching. Mathel.[?] (PUA h.42 'Pöchinger Malfa' VERIFIED-2x; h42 par z r8; w1 'ching' — p33-r12 jasno, tu ll/ch-dvom; w2 'Mathel[?]/Malfa[?]' dvom)"
+  },
+  "r4": {
+   "seen_haus": "38",
+   "seen_name": "Schimer Georg.",
+   "old_haus": "38",
+   "old_name": "Šimunc Gregor",
+   "verdict": "ime POPRAVEK Šimunc Gregor -> Schimer Georg. (x14 jasno; h38 par z r10; 'Schimer' = del-1/2a forma — p22 'Shimerz'->'Schimer' precedens; v57 'Šimunc' = slovenizirana oblika istega črnila)"
+  },
+  "r5": {
+   "seen_haus": "41",
+   "seen_name": "Pöching. Gorgy.[?]",
+   "old_haus": "41",
+   "old_name": "Peter Gregor",
+   "verdict": "ime POPRAVEK Peter Gregor -> Pöching. Gorgy.[?] (PUA h.41 'Pöchinger Georg' VERIFIED-2x; h41 par z r9; w1 bledše — Pöching[?]/Pasiner[?] dvom; w2 Gorgy = del-2a glyf-forma)"
+  },
+  "r6": {
+   "seen_haus": "40",
+   "seen_name": "Pöching. Mathl.[?]",
+   "old_haus": "40",
+   "old_name": "Paulin Marko",
+   "verdict": "ime POPRAVEK Paulin Marko -> Pöching. Mathl.[?] (h40 ×3 z r18/r19; w2 Mathl[?]/Markl[?] dvom pri x26 — Mathl skladnejše z r18/r19)"
+  },
+  "r7": {
+   "seen_haus": "43",
+   "seen_name": "Brulla Mich.[?]",
+   "old_haus": "40",
+   "old_name": "Paulin Marko",
+   "verdict": "haus POPRAVEK 40->43 (x14: 3 z zastavico jasna) + ime POPRAVEK Paulin Marko -> Brulla Mich.[?] (h43 par z r2; w1 'Brulla' po hišnem preseku, x14 '~Paull' dvom; w2 'Mich.' = kratica)"
+  },
+  "r8": {
+   "seen_haus": "42",
+   "seen_name": "Pöching. Mathel.[?]",
+   "old_haus": "12",
+   "old_name": "Peter Marko",
+   "verdict": "haus POPRAVEK 12->42 (x14: 4 + 2 jasna) + ime POPRAVEK Peter Marko -> Pöching. Mathel.[?] (h42 par z r3; PUA h.42)"
+  },
+  "r9": {
+   "seen_haus": "41",
+   "seen_name": "Pöching. Gorgy.[?]",
+   "old_haus": "41",
+   "old_name": "Peter Gregor",
+   "verdict": "ime POPRAVEK Peter Gregor -> Pöching. Gorgy.[?] (h41 par z r5; PUA h.41)"
+  },
+  "r10": {
+   "seen_haus": "38",
+   "seen_name": "Schimer Georg.",
+   "old_haus": "38",
+   "old_name": "Šimunc Gregor",
+   "verdict": "ime POPRAVEK Šimunc Gregor -> Schimer Georg. (h38 par z r4; x14 jasno)"
+  },
+  "r11": {
+   "seen_haus": "48",
+   "seen_name": "Hladnikhar[?] Georg.",
+   "old_haus": "48",
+   "old_name": "Hladnikh[?] Gregor",
+   "verdict": "ime POPRAVEK Hladnikh[?] Gregor -> Hladnikhar[?] Georg. (črnilo nosi '-ar' končnico na vseh 5 h47/h48 vrsticah; k/ch + i/u dvom — [?]; w2 Georg. po črnilu, v57 Gregor = različica)"
+  },
+  "r12": {
+   "seen_haus": "47",
+   "seen_name": "Hladnikhar[?] Marko",
+   "old_haus": "47",
+   "old_name": "Hladnikh[?] Marko",
+   "verdict": "ime POPRAVEK Hladnikh[?] Marko -> Hladnikhar[?] Marko (-ar končnica; [?])"
+  },
+  "r13": {
+   "seen_haus": "45",
+   "seen_name": "Strauß Georgy.[?]",
+   "old_haus": "46",
+   "old_name": "Gregor greg.",
+   "verdict": "haus POPRAVEK 46->45 (x30: 4 + 5 z zastavico; h45 par z r15) + ime POPRAVEK Gregor greg. -> Strauß Georgy.[?] (H-045 ps 'Strauß Georg' + pt 'Krauß Georg'; del 2a h15 cross-val 'Strauß Gorgy' precedens; w2 'Georgy[?]/Gorgy[?]' dvom; rdeča anm 'Rupf[?] aufgelassen im 1880' ostaja)"
+  },
+  "r14": {
+   "seen_haus": "47",
+   "seen_name": "Hladnikhar[?] Marko",
+   "old_haus": "47",
+   "old_name": "Hladnikh[?] Marko",
+   "verdict": "ime POPRAVEK Hladnikh[?] Marko -> Hladnikhar[?] Marko (-ar; [?])"
+  },
+  "r15": {
+   "seen_haus": "45",
+   "seen_name": "Strauß Georgy.[?]",
+   "old_haus": "45",
+   "old_name": "Lovrenc Gregor",
+   "verdict": "ime POPRAVEK Lovrenc Gregor -> Strauß Georgy.[?] (h45 par z r13; H-045; v57 'Lovrenc' fabriirana — ne obstaja v črnilu)"
+  },
+  "r16": {
+   "seen_haus": "47",
+   "seen_name": "Hladnikhar[?] Marko",
+   "old_haus": "47",
+   "old_name": "Hladnikh[?] Marko",
+   "verdict": "ime POPRAVEK Hladnikh[?] Marko -> Hladnikhar[?] Marko (-ar; [?])"
+  },
+  "r17": {
+   "seen_haus": "48",
+   "seen_name": "Hladnikhar[?] Georg.",
+   "old_haus": "48",
+   "old_name": "Hladnikh[?] Gregor",
+   "verdict": "ime POPRAVEK Hladnikh[?] Gregor -> Hladnikhar[?] Georg. (h48 par z r11)"
+  },
+  "r18": {
+   "seen_haus": "40",
+   "seen_name": "Pöching. Mathl.[?]",
+   "old_haus": "40",
+   "old_name": "Paulin Marko",
+   "verdict": "ime POPRAVEK Paulin Marko -> Pöching. Mathl.[?] (x24: 'Pöching' s ch jasno; w2 'Mathl.' jasno)"
+  },
+  "r19": {
+   "seen_haus": "40",
+   "seen_name": "Pöching. Mathl.[?]",
+   "old_haus": "40",
+   "old_name": "Paulin Marko",
+   "verdict": "ime POPRAVEK Paulin Marko -> Pöching. Mathl.[?] (h40 par z r18)"
+  }
+ }
+}
