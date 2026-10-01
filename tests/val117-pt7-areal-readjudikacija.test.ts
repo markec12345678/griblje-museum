@@ -157,14 +157,19 @@ describe("val 117 — PT p7 areal re-adjudikacija [build-register-v117-pt]", () 
     expect(p7rec.v117_areal!["prestrike_areal"]).toEqual([81, 82, 85, 90, 91, 92, 93, 94, 95, 96, 97]);
   });
 
-  test("surovine: 9 VLM glasov (4 areal + vsotna + 4 lastnik) + band izrezki + reader", () => {
+  test("surovine: 9 VLM glasov (4 areal + vsotna + 4 lastnik) + reader; band izrezki regenerabilni (gitignored)", () => {
     const dir = join(root, "research-griblje/raw-web-val110-2026-09/vlm-v117-pt7");
     const done = readdirSync(dir).filter((f) => f.endsWith(".json"));
     expect(done).toHaveLength(9);
     const base = join(root, "research-griblje/raw-web-val110-2026-09");
-    for (const f of ["pt7v117-areal-band1.png", "pt7v117-areal-band4.png", "pt7v117-owner-band1.png", "read-pt7-v117.mts"]) {
-      expect(existsSync(join(base, f))).toBe(true);
-    }
+    // reader komitiran:
+    expect(existsSync(join(base, "read-pt7-v117.mts"))).toBe(true);
+    // band izrezki pt7v117-*.png = gitignored (22 MB, regenerabilno iz native-p07.png +
+    // merjenih pravil 379–2013 — recept v 132-val117) — lokalno obstajajo, v CI ne smejo biti zahtevani:
+    const gitignore = readFileSync(join(root, ".gitignore"), "utf8");
+    expect(gitignore).toContain("pt7v117-*.png");
+    // vir regeneracije (nativni sken) komitiran/hashiran:
+    expect(existsSync(join(base, "native-p07.jpeg"))).toBe(true);
   });
 
   test("iskrenost: areal TRANSCRIBED = 'tako je zapisano'; brez dvigovanja; izključitev dokumentirana", () => {
