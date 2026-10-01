@@ -4716,7 +4716,7 @@ Work Log:
 - Kaskada: NI potrebna — PZ = SRC dokument (KG sha nespremenjen 2790d893), PT areali ne hranijo PS/PUA/KG; timeline/coverage/c4 nespremenjeni (testi potrjujejo)
 - Testi: +31 varovalk (tests/val117-pz-mikroprehod8b.test.ts ×20 + tests/val117-pt7-areal-readjudikacija.test.ts ×11) + pini prehoda 116→117 (tests/pz-konskripcija.test.ts val 117 + findings 22; tests/val109-pz-p48-65.test.ts PASS 8b / i7 10× EXACT / p63 16 vrstic / honesty; tests/val110-pt7-pr-grenzen.test.ts open_for_full_res v117); 1146 testov: 1135 pass / 11 skip / 0 fail; tsc čist (2 lastni tipovski napaki popravljena; Prisma napake preobstoječe peskovniške — preverjeno z git stash na main); lint čist
 - Docs: research-griblje/132-val117-pz-mikroprehod8b-pt7-areal.md + KAZALO 132 + README 169. sklop + .gitignore pt7v117-*.png (22 MB, regenerabilno iz native-p07 + merjenih pravil)
-- Potek: commit → push → PR → CI → merge → izbris veje → worklog → poročilo na #72
+- Potek: commit af1edae → push → PR #121 → CI padel (surovine varovalka zahtevala gitignored band izreze v svežem checkoutu) → popravek 1fa5883 → CI 2/2 ZELENO → merge (main @ fa99566) → izbris veje (oddaljena 204 + lokalna) → worklog → poročilo na #72 (5928599689)
 
 Stage Summary:
 - ISSUE #42 §4/§14: mikroprehod 8b ZAPRT — 45 PZ glasov integriranih po admission pravilih z agentovim vidom kot 3. glasom; 10 PZ popravkov (DILEMA 1 p54 roh=4 in DILEMA 3 "13 1/2" rešeni; p60 = 16|50½ + datum 1831); 7 dilem: 4 rešene + 2 delno + 1 razkol-dokumentiran; F-PZ-21/22; findings 22
