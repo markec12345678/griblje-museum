@@ -16,7 +16,7 @@ type Reg = Record<string, unknown>[];
 const REG = readJSON("research-griblje/ps-n83/register.json") as Reg;
 const CH = readJSON(
   "research-griblje/ps-n83/band-v113/register-v119-del2b-changes.json",
-) as { val: string; stats: Record<string, number>; changes: unknown[] };
+) as { val: string; stats: Record<string, unknown>; changes: unknown[] };
 
 const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 function rowsOn(page: number): Reg {
@@ -284,7 +284,7 @@ describe("val 119 del 2b — p37 (Ring popolna + 11 haus POPRAVEK)", () => {
   });
 
   test("Ring-grozda h23-h28 čez p32-p37: h23 Mathä, h24 Michael, h25 Mito/Michl, h26 Johann, h27 Malw(itsch/ischly) + Mulschitsch (p34), h28 Michl ×7", () => {
-    const block = REG.filter((r) => r.page >= 32 && r.page <= 37);
+    const block = REG.filter((r) => Number(r.page) >= 32 && Number(r.page) <= 37);
     const byHaus = (h: string) => block.filter((r) => f(r, "haus_no") === h);
     expect(byHaus("23").every((r) => f(r, "owner_original").startsWith("Ring"))).toBe(true);
     expect(byHaus("24").every((r) => f(r, "owner_original").startsWith("Ring"))).toBe(true);
@@ -303,7 +303,7 @@ describe("val 119 del 2b — p37 (Ring popolna + 11 haus POPRAVEK)", () => {
 
 describe("val 119 del 2b — iskrenost (§4)", () => {
   test("izrecni dvomi ostajajo v imenih ([?]); PUA/PT orientacijska; 0 VLM", () => {
-    const p32p37 = REG.filter((r) => r.page >= 32 && r.page <= 37);
+    const p32p37 = REG.filter((r) => Number(r.page) >= 32 && Number(r.page) <= 37);
     const withDoubt = p32p37.filter((r) => f(r, "owner_original").includes("[?]")).length;
     expect(withDoubt).toBeGreaterThan(40);
     for (let pg = 32; pg <= 37; pg++) {
@@ -317,8 +317,8 @@ describe("val 119 del 2b — iskrenost (§4)", () => {
   test("pre_v119 snimke na vseh spremenjenih vrsticah", () => {
     const changed = REG.filter(
       (r) =>
-        r.page >= 32 &&
-        r.page <= 37 &&
+        Number(r.page) >= 32 &&
+        Number(r.page) <= 37 &&
         (("owner_original_pre_v119" in r) || ("haus_no_pre_v119" in r)),
     );
     expect(changed.length).toBeGreaterThan(90);
