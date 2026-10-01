@@ -1,0 +1,1444 @@
+{
+ "val": "119-del2c",
+ "stats": {
+  "owner_fixes": 118,
+  "haus_fixes": 18,
+  "anmerkung_adds": 2,
+  "ditto_clears": 1,
+  "open_discrepancies": 2,
+  "crossval_fixes": 1,
+  "pages_covered": [
+   "p38",
+   "p39",
+   "p40",
+   "p41",
+   "p42",
+   "p43"
+  ],
+  "rows_covered": 123
+ },
+ "changes": [
+  {
+   "index": 694,
+   "page": 37,
+   "row_in_page": 6,
+   "type": "v119_crossval_haus_fix",
+   "field": "haus_no",
+   "old": "20",
+   "new": "25",
+   "note": "medstranski presek: p39-r5/r6 ista črnilovrstna sekvenca bere '25.'/'25'' (glyf z zastavico, NI 0-ovala); gz p37-r6 dy12 '25.' jasno — del-2b branje 20 je zgrešilo 5-glyfo"
+  },
+  {
+   "index": 708,
+   "page": 38,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Johann",
+   "new": "Ring Johann.",
+   "note": "ime POPRAVEK König Johann -> Ring Johann. (w1 glyf identičen p37-r02 'Ring' kalibra x30; h26 par z r10; v57 'König' fabriirana — glyf nima K-zastavice)"
+  },
+  {
+   "index": 709,
+   "page": 38,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK König Michl -> Ring Michl.[?] (h28 par z r9; glyf = Ring forma)"
+  },
+  {
+   "index": 710,
+   "page": 38,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mallwoschki Johann",
+   "new": "Malleschick Johann.[?]",
+   "note": "ime POPRAVEK Mallwoschki Johann -> Malleschick Johann.[?] (h27 trio z r11/r19; ink 'Malleschick/Malteoschick' — cf. p30 'Mattheitsch', p37 'Mallwitsch', PUA h.27 'Malleßthak[?]'; page-level forma z [?])"
+  },
+  {
+   "index": 711,
+   "page": 38,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Buttler Michael",
+   "new": "Bruckler Mathl.[?]",
+   "note": "ime POPRAVEK Buttler Michael -> Bruckler Mathl.[?] (h30 par z r12; w1 glyf = p37 'Bruckler' forma, w2 'Mathl.' kot p37 ×5; v57 'Buttler' fabriirana)"
+  },
+  {
+   "index": 712,
+   "page": 38,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pichler Georg",
+   "new": "Puchey Georg.",
+   "note": "ime POPRAVEK Pichler Georg -> Puchey Georg. (h67 par z r14; glyf = p36-r17 'Puchey Georg.' forma x26 identična; v57 'Pichler' fabriirana)"
+  },
+  {
+   "index": 713,
+   "page": 38,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Michael",
+   "new": "Ring Mathä.[?]",
+   "note": "haus POPRAVEK 25->23 (gz x26: 3-glyf jasna, cf. r13 '23'; v57 2↔3 šum) + ime POPRAVEK König Michael -> Ring Mathä.[?] (h23 par z r13; w2 'Mathe.' = Mathä)"
+  },
+  {
+   "index": 713,
+   "page": 38,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "25",
+   "new": "23",
+   "note": "haus POPRAVEK 25->23 (gz x26: 3-glyf jasna, cf. r13 '23'; v57 2↔3 šum) + ime POPRAVEK König Michael -> Ring Mathä.[?] (h23 par z r13; w2 'Mathe.' = Mathä)"
+  },
+  {
+   "index": 714,
+   "page": 38,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Michael",
+   "new": "Ring Michael.",
+   "note": "ime POPRAVEK König Michael -> Ring Michael. (h24 par z r17; w2 'Michael.' jasno)"
+  },
+  {
+   "index": 715,
+   "page": 38,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK König Michl -> Ring Michl.[?] (h25 par z r16; 5-glyf z zastavico)"
+  },
+  {
+   "index": 716,
+   "page": 38,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Millig Romuald",
+   "new": "Müllner Samuel.",
+   "note": "ime POPRAVEK Millig Romuald -> Müllner Samuel. (h29 par z r18; ink w1 'Milling[?]' = p37-r1 forma, normalizirano na 'Müllner' po del-2b h29 konvenciji; PUA h.29 'Milleg Hanu' orient.; v57 'Romuald' fabriirana — črnilo 'Samuel.')"
+  },
+  {
+   "index": 717,
+   "page": 38,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK König Michl -> Ring Michl.[?] (h28 par z r1)"
+  },
+  {
+   "index": 718,
+   "page": 38,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Johann",
+   "new": "Ring Johann.",
+   "note": "ime POPRAVEK König Johann -> Ring Johann. (h26 par z r0)"
+  },
+  {
+   "index": 719,
+   "page": 38,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mallwoschki Johann",
+   "new": "Malleschick Johann.[?]",
+   "note": "ime POPRAVEK Mallwoschki Johann -> Malleschick Johann.[?] (h27 trio)"
+  },
+  {
+   "index": 720,
+   "page": 38,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Buttler Michael",
+   "new": "Bruckler Mathl.[?]",
+   "note": "ime POPRAVEK Buttler Michael -> Bruckler Mathl.[?] (h30 par z r3)"
+  },
+  {
+   "index": 721,
+   "page": 38,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pongy Mathäus",
+   "new": "Ring Mathä.[?]",
+   "note": "ime POPRAVEK Pongy Mathäus -> Ring Mathä.[?] (h23 par z r5; v57 'Pongy' fabriirana — črnilo = Ring glyf + 'Mathe.')"
+  },
+  {
+   "index": 722,
+   "page": 38,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pichler Georg",
+   "new": "Puchey Georg.",
+   "note": "ime POPRAVEK Pichler Georg -> Puchey Georg. (h67 par z r4)"
+  },
+  {
+   "index": 723,
+   "page": 38,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Vilip[?]züanjanky\", v57 ohranjeno]"
+  },
+  {
+   "index": 724,
+   "page": 38,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Primz[?] Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Primz[?] Michl -> Ring Michl.[?] (h25 par z r7; v57 'Primz[?]' fabriirana)"
+  },
+  {
+   "index": 725,
+   "page": 38,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "König Michael",
+   "new": "Ring Michael.",
+   "note": "ime POPRAVEK König Michael -> Ring Michael. (h24 par z r6)"
+  },
+  {
+   "index": 726,
+   "page": 38,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Millig Romane",
+   "new": "Müllner Samuel.",
+   "note": "haus POPRAVEK 23->29 (gz x26: 9-glyf z zanko jasna; h29 par z r8) + ime POPRAVEK Millig Romane -> Müllner Samuel. (isti glyf kot r8; v57 'Romane' fabriirana)"
+  },
+  {
+   "index": 726,
+   "page": 38,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "23",
+   "new": "29",
+   "note": "haus POPRAVEK 23->29 (gz x26: 9-glyf z zanko jasna; h29 par z r8) + ime POPRAVEK Millig Romane -> Müllner Samuel. (isti glyf kot r8; v57 'Romane' fabriirana)"
+  },
+  {
+   "index": 727,
+   "page": 38,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mallwoschki Johann",
+   "new": "Malleschick Johann.[?]",
+   "note": "ime POPRAVEK Mallwoschki Johann -> Malleschick Johann.[?] (h27 trio)"
+  },
+  {
+   "page": 38,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2c) p38: 21 sprememb; p38 = nadaljevanje Ring-grozde + parna struktura (9 parov/trio + 1 nerešljiv r15): h26 Ring Johann ×2, h28 Ring Michl ×2, h27 Malleschick Johann ×3, h30 Bruckler Mathl ×2, h67 Puchey Georg ×2, h23 Ring Mathä ×2, h24 Ring Michael ×2, h25 Ring Michl ×2, h29 Müllner Samuel ×2; 2 haus POPRAVEK (25->23 r5, 23->29 r18); r15 = nerešljiva dolga beseda (razhajanje odprto, v57 'Vilip[?]züanjanky' ohranjeno,"
+  },
+  {
+   "index": 728,
+   "page": 39,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Buchler Mathel",
+   "new": "Bruckler Mathl.[?]",
+   "note": "ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?] (h30; = p37/p38 forma; v57 'Buchler' fabriirana B/R-glyf)"
+  },
+  {
+   "index": 729,
+   "page": 39,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mally Samuel",
+   "new": "Müllner Samuel.",
+   "note": "ime POPRAVEK Mally Samuel -> Müllner Samuel. (h29 konvencija del 2b; ink w1 'Milling[?]'; PUA h.29 'Milleg' orient.)"
+  },
+  {
+   "index": 730,
+   "page": 39,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28; glyf = Ring forma; v57 'Höring' fabriirana — masovni vzorec)"
+  },
+  {
+   "index": 731,
+   "page": 39,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Johann",
+   "new": "Ring Johann.",
+   "note": "ime POPRAVEK Höring Johann -> Ring Johann. (h26; glyf = Ring forma)"
+  },
+  {
+   "index": 732,
+   "page": 39,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Mathel",
+   "new": "Ring Mathä.[?]",
+   "note": "haus POPRAVEK 20->23 (gz x26: 3-glyf jasna ob 'Ring Mathe.') + ime POPRAVEK Höring Mathel -> Ring Mathä.[?] (h23 par z r5-grozdo; v57 2↔3/0 šum)"
+  },
+  {
+   "index": 732,
+   "page": 39,
+   "row_in_page": 4,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "20",
+   "new": "23",
+   "note": "haus POPRAVEK 20->23 (gz x26: 3-glyf jasna ob 'Ring Mathe.') + ime POPRAVEK Höring Mathel -> Ring Mathä.[?] (h23 par z r5-grozdo; v57 2↔3/0 šum)"
+  },
+  {
+   "index": 733,
+   "page": 39,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "haus POPRAVEK 23->25 (gz x26 dy0: 5-glyf z zastavico '25'') + ime POPRAVEK Höring Michl -> Ring Michl.[?] (h25 par z r6-stisnjenim dvojnikom)"
+  },
+  {
+   "index": 733,
+   "page": 39,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "23",
+   "new": "25",
+   "note": "haus POPRAVEK 23->25 (gz x26 dy0: 5-glyf z zastavico '25'') + ime POPRAVEK Höring Michl -> Ring Michl.[?] (h25 par z r6-stisnjenim dvojnikom)"
+  },
+  {
+   "index": 734,
+   "page": 39,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "haus POPRAVEK 23->25 (gz x26 dy12: stisnjeni dvojnik r5.5 '25.' jasno — pisarjev ritem kot p37 r5/r5.5) + ime POPRAVEK Höring Michl -> Ring Michl.[?]"
+  },
+  {
+   "index": 734,
+   "page": 39,
+   "row_in_page": 6,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "23",
+   "new": "25",
+   "note": "haus POPRAVEK 23->25 (gz x26 dy12: stisnjeni dvojnik r5.5 '25.' jasno — pisarjev ritem kot p37 r5/r5.5) + ime POPRAVEK Höring Michl -> Ring Michl.[?]"
+  },
+  {
+   "index": 735,
+   "page": 39,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Buchler Mathel",
+   "new": "Bruckler Mathl.[?]",
+   "note": "ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?] (h30 par z r8)"
+  },
+  {
+   "index": 736,
+   "page": 39,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Buchler Mathel",
+   "new": "Bruckler Mathl.[?]",
+   "note": "ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?] (h30 par z r7)"
+  },
+  {
+   "index": 737,
+   "page": 39,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "haus POPRAVEK 26->25 (tall: '25'' jasno; h25 = Ring grozda) + ime POPRAVEK Höring Michl -> Ring Michl.[?]"
+  },
+  {
+   "index": 737,
+   "page": 39,
+   "row_in_page": 9,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "25",
+   "note": "haus POPRAVEK 26->25 (tall: '25'' jasno; h25 = Ring grozda) + ime POPRAVEK Höring Michl -> Ring Michl.[?]"
+  },
+  {
+   "index": 738,
+   "page": 39,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28)"
+  },
+  {
+   "index": 739,
+   "page": 39,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Johann L",
+   "new": "Ring Michael.",
+   "note": "ime POPRAVEK Höring Johann L -> Ring Michael. (gz x26: w2 'Michael.' jasno — h24 = Ring Michael konvencija del 2a/2b; v57 'Johann L' fabriirana)"
+  },
+  {
+   "index": 740,
+   "page": 39,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michael",
+   "new": "Ring Michael.",
+   "note": "ime POPRAVEK Höring Michael -> Ring Michael. (h24 par z r11)"
+  },
+  {
+   "index": 741,
+   "page": 39,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r14)"
+  },
+  {
+   "index": 742,
+   "page": 39,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r13)"
+  },
+  {
+   "index": 743,
+   "page": 39,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Buchler Mathel",
+   "new": "Bruckler Mathl.[?]",
+   "note": "haus POPRAVEK 26->30 (tall: '30' jasno; h30 = Bruckler) + ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?]"
+  },
+  {
+   "index": 743,
+   "page": 39,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "30",
+   "note": "haus POPRAVEK 26->30 (tall: '30' jasno; h30 = Bruckler) + ime POPRAVEK Buchler Mathel -> Bruckler Mathl.[?]"
+  },
+  {
+   "index": 744,
+   "page": 39,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Buchler Mathl",
+   "new": "Bruckler Mathl.[?]",
+   "note": "haus POPRAVEK 26->30 (tall: '30.' jasno; par z r15) + ime POPRAVEK Buchler Mathl -> Bruckler Mathl.[?]"
+  },
+  {
+   "index": 744,
+   "page": 39,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "26",
+   "new": "30",
+   "note": "haus POPRAVEK 26->30 (tall: '30.' jasno; par z r15) + ime POPRAVEK Buchler Mathl -> Bruckler Mathl.[?]"
+  },
+  {
+   "index": 745,
+   "page": 39,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mallerseb[?] Johann",
+   "new": "Malleschick Johann.[?]",
+   "note": "haus POPRAVEK 29->27 (tall: '27.' jasno; h27 = Malleschick/Mallwitsch) + ime POPRAVEK Mallerseb[?] Johann -> Malleschick Johann.[?] (v57 'Mallerseb[?]' fabriirana)"
+  },
+  {
+   "index": 745,
+   "page": 39,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "29",
+   "new": "27",
+   "note": "haus POPRAVEK 29->27 (tall: '27.' jasno; h27 = Malleschick/Mallwitsch) + ime POPRAVEK Mallerseb[?] Johann -> Malleschick Johann.[?] (v57 'Mallerseb[?]' fabriirana)"
+  },
+  {
+   "index": 746,
+   "page": 39,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mallerseb[?] Johann",
+   "new": "Malleschick Johann.[?]",
+   "note": "haus POPRAVEK 29->27 (tall: '27.' jasno; par z r17) + ime POPRAVEK Mallerseb[?] Johann -> Malleschick Johann.[?]"
+  },
+  {
+   "index": 746,
+   "page": 39,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "29",
+   "new": "27",
+   "note": "haus POPRAVEK 29->27 (tall: '27.' jasno; par z r17) + ime POPRAVEK Mallerseb[?] Johann -> Malleschick Johann.[?]"
+  },
+  {
+   "index": 747,
+   "page": 39,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r20)"
+  },
+  {
+   "index": 748,
+   "page": 39,
+   "row_in_page": 20,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Höring Michl",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Höring Michl -> Ring Michl.[?] (h28 par z r19)"
+  },
+  {
+   "page": 39,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2c) p39: 29 sprememb; p39 = črnilovrstna sekvenca IDENTIČNA p37 (21 vrstic, stisnjeni dvojniki r5/r5.5): 30 Bru, 29 MüS, 28 RM, 26 RJ, 23 RMa, 25 RMi ×2, 30 Bru ×2, 25 RMi, 28 RM, 24 RMichael ×2, 28 RM ×2, 30 Bru ×2, 27 Mall ×2, 28 RM ×2; 8 haus POPRAVEK (20->23, 23->25 ×2, 26->25, 26->30 ×2, 29->27 ×2); cross-page: p37-r6 (merged haus 20) nosi isto \"25.\"-glyfo kot p39 r5/r6 — dvom zabeležen"
+  },
+  {
+   "index": 749,
+   "page": 40,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Mathäus",
+   "new": "Ring Mathä.[?]",
+   "note": "ime POPRAVEK Wernig Mathäus -> Ring Mathä.[?] (h23; glyf = Ring forma; v57 'Wernig' fabriirana — del-2a vzorec)"
+  },
+  {
+   "index": 750,
+   "page": 40,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Mathäus",
+   "new": "Ring Michl.[?]",
+   "note": "ime POPRAVEK Wernig Mathäus -> Ring Michl.[?] (h25; glyf = Ring forma) + DITTO CLEAR: črnilo piše polno ime 'Ring Michl.' — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 750,
+   "page": 40,
+   "row_in_page": 1,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 751,
+   "page": 40,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michael",
+   "new": "Ring Michael.",
+   "note": "ime POPRAVEK Wernig Michael -> Ring Michael. (h24; w2 'Michael.' jasno)"
+  },
+  {
+   "index": 752,
+   "page": 40,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Willing Johann",
+   "new": "Müllner Samuel.",
+   "note": "ime POPRAVEK Willing Johann -> Müllner Samuel. (h29 konvencija; ink 'Milling Samuel.'; v57 obe besedi fabriirani)"
+  },
+  {
+   "index": 753,
+   "page": 40,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schiffbauer Mathäus",
+   "new": "Schaffschick Mathl.[?]",
+   "note": "ime POPRAVEK Schiffbauer Mathäus -> Schaffschick Mathl.[?] (w1 'Schaffschick[?]' — ff jasno; h12 presek p45/p49 'Lukasitsch' alternativa; w2 'Mathl.[?]/Michl.[?]' dvom; v57 'Schiffbauer' fabriirana)"
+  },
+  {
+   "index": 754,
+   "page": 40,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Rudolla Nißl",
+   "new": "Brulla Michl.[?]",
+   "note": "ime POPRAVEK Rudolla Nißl -> Brulla Michl.[?] (h43 = p32 forma 'Brulla Michl[?]' ×2; glyf = p32/p37 Brulla forma; v57 fabriirana)"
+  },
+  {
+   "index": 755,
+   "page": 40,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechley Mathäus",
+   "new": "Pöching. Mathel.[?]",
+   "note": "ime POPRAVEK Pechley Mathäus -> Pöching. Mathel.[?] (h42 = p32 forma; w1 'Pöching' ch jasno; v57 'Pechley' fabriirana)"
+  },
+  {
+   "index": 756,
+   "page": 40,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechley Johann",
+   "new": "Pöching Johann.",
+   "note": "ime POPRAVEK Pechley Johann -> Pöching Johann. (h40; gz x26: w2 'Johann.' jasno — J-glyf; h40 = Pöching hiša)"
+  },
+  {
+   "index": 757,
+   "page": 40,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechley Georg",
+   "new": "Pöching. Gorgy.[?]",
+   "note": "ime POPRAVEK Pechley Georg -> Pöching. Gorgy.[?] (h41 = p32 forma 'Pöching. Gorgy.[?]')"
+  },
+  {
+   "index": 758,
+   "page": 40,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wundala nißl",
+   "new": "Brulla Michl.[?]",
+   "note": "ime POPRAVEK Wundala nißl -> Brulla Michl.[?] (h43 par z r5)"
+  },
+  {
+   "index": 759,
+   "page": 40,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michael",
+   "new": "Ring Michael.",
+   "note": "ime POPRAVEK Wernig Michael -> Ring Michael. (h24 par z r2)"
+  },
+  {
+   "index": 760,
+   "page": 40,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechley Nißl",
+   "new": "Pöching Michl.[?]",
+   "note": "ime POPRAVEK Pechley Nißl -> Pöching Michl.[?] (h21 par z r13; PUA h.21 'Pfarrer Michael Sautter' orient.)"
+  },
+  {
+   "index": 761,
+   "page": 40,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Wunderling\", v57 ohranjeno]"
+  },
+  {
+   "index": 762,
+   "page": 40,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechley Mich°",
+   "new": "Pöching Michl.[?]",
+   "note": "ime POPRAVEK Pechley Mich° -> Pöching Michl.[?] (h21 par z r11; v115 vstavljena vrstica (tekač 734), rdeče prečrtana — ime v črnilu jasno)"
+  },
+  {
+   "index": 763,
+   "page": 40,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechley Michael",
+   "new": "Pöching Michael",
+   "note": "ime POPRAVEK Pechley Michael -> Pöching Michael (gz x30: haus '20.' jasno — 0-glyf oval, NI 5; h20; 'tot [rot]' anm. ostaja)"
+  },
+  {
+   "index": 764,
+   "page": 40,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Willing Johann",
+   "new": "Müllner Johann",
+   "note": "ime POPRAVEK Willing Johann -> Müllner Johann (h22 = p36-r6/r7/r9 'Müllner Johann' precedens ×3; ink 'Milling Johann.')"
+  },
+  {
+   "index": 765,
+   "page": 40,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weinhandl Georg",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Weinhandl Georg -> Krischan Georg.[?] (h66 = p36-r4/r5 forma ×2; glyf = Krischan-forma)"
+  },
+  {
+   "index": 766,
+   "page": 40,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Dorothea",
+   "new": "Ring Dorothea.[?]",
+   "note": "ime POPRAVEK Wernig Dorothea -> Ring Dorothea.[?] (h65 — NOVA Ring hiša; w1 glyf = Ring forma; w2 'Dorothea[?]' po črnilu+v57)"
+  },
+  {
+   "index": 767,
+   "page": 40,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Michael",
+   "new": "Ring Martho.[?]",
+   "note": "ime POPRAVEK Wernig Michael -> Ring Martho.[?] (h65; gz x24: w2 'Martha/Martho.' = p36-r3 'Ring Martho.[?]' forma; v57 w2 fabriirana; rot-anm. 'Joh. Wernig[?] am 7. Jänner 1840' ostaja)"
+  },
+  {
+   "index": 768,
+   "page": 40,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weichselbaum Nißl",
+   "new": "Veritschan Mathl.[?]",
+   "note": "ime POPRAVEK Weichselbaum Nißl -> Veritschan Mathl.[?] (h64; PUA h.64 'Veritscher' presek; v57 fabriirana)"
+  },
+  {
+   "index": 769,
+   "page": 40,
+   "row_in_page": 20,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wernig Joseph",
+   "new": "Ring Jakob.[?]",
+   "note": "ime POPRAVEK Wernig Joseph -> Ring Jakob.[?] (h65; w2 'Jakob.[?]/Joseph[?]' dvom — a-glyf naklonjeno Jakob; ink vrstica sede visoko (dy -14); v57 w1 fabriirana)"
+  },
+  {
+   "page": 40,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2c) p40: 21 sprememb; p40 = nova sekcija (Blatt 1/) z Ring-grozdo na vrhu + Pöching/Brulla/Krischan preseki + h65 Ring grozd (Dorothea/Martho/Jakob[?]): h23/h25/h24 Ring ×4, h29 Müllner Samuel, h12 Schaffschick, h43 Brulla ×2, h42/h40/h41 Pöching, h21 Pöching Michl ×2, h20 Pöching Michael, h22 Müllner Johann, h66 Krischan Georg, h65 Ring ×3, h64 Veritschan; 1 ditto ovržen (r1); r12 = ne-osebna poteza + prazen haus (raz"
+  },
+  {
+   "index": 770,
+   "page": 41,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Michl.",
+   "new": "Krischan Michl.[?]",
+   "note": "ime POPRAVEK Witschak Michl. -> Krischan Michl.[?] (h62 par z r2; glyf = Krischan-forma (p36/p40 h66 kaliber); PUA h.62 'Brinczhan' orient.)"
+  },
+  {
+   "index": 771,
+   "page": 41,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Georg.",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h63 par z r3/r19)"
+  },
+  {
+   "index": 772,
+   "page": 41,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Michl.",
+   "new": "Krischan Michl.[?]",
+   "note": "ime POPRAVEK Witschak Michl. -> Krischan Michl.[?] (h62 par z r0)"
+  },
+  {
+   "index": 773,
+   "page": 41,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Georg.",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h63 par z r1)"
+  },
+  {
+   "index": 774,
+   "page": 41,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pritschak Andr.",
+   "new": "Tillach Michl.[?]",
+   "note": "ime POPRAVEK Pritschak Andr. -> Tillach Michl.[?] (h61 ×2 z r18; PUA h.61 'Tillak Nikla' presek; del-2b p36-r8 'Tillach Peter.[?]' forma; rdeča anm. 'widrig...' prek vrste; w2 'Michl.[?]' dvom)"
+  },
+  {
+   "index": 775,
+   "page": 41,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Baron Gustedt",
+   "new": "Baron Gustitsch.[?]",
+   "note": "ime POPRAVEK Baron Gustedt -> Baron Gustitsch.[?] (gz x30: 'Gustitsch' jasno; haus 0 jasno; h0 = ne-hišni vpis)"
+  },
+  {
+   "index": 776,
+   "page": 41,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Baron v. Zallant",
+   "new": "Baronial Zallant.[?]",
+   "note": "ime POPRAVEK Baron v. Zallant -> Baronial Zallant.[?] (gz x24 dy10: 'Baronial' jasno — ne-osebni Baronial-zapis; rdeča anm. 'übernommen zu E: 1850' prek haus celice — haus '100' ni preverljiv pod rdečim, ohranjeno)"
+  },
+  {
+   "index": 777,
+   "page": 41,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Gyomandl",
+   "new": "Gemeinde",
+   "note": "haus POPRAVEK '1 / 6'->0 (gz x24 dy10: compact-oval 0 = r5 'Baron' 0-forma; diagonalni tik = ditto-znak) + ime POPRAVEK Gyomandl -> Gemeinde (gz jasno 'Gemeinde' — občina, ne oseba; h0 skladno z r5)"
+  },
+  {
+   "index": 777,
+   "page": 41,
+   "row_in_page": 7,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 6",
+   "new": "0",
+   "note": "haus POPRAVEK '1 / 6'->0 (gz x24 dy10: compact-oval 0 = r5 'Baron' 0-forma; diagonalni tik = ditto-znak) + ime POPRAVEK Gyomandl -> Gemeinde (gz jasno 'Gemeinde' — občina, ne oseba; h0 skladno z r5)"
+  },
+  {
+   "index": 778,
+   "page": 41,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechly Mathes.",
+   "new": "Pöching. Mathel.[?]",
+   "note": "ime POPRAVEK Pechly Mathes. -> Pöching. Mathel.[?] (h50; glyf = Pöching forma)"
+  },
+  {
+   "index": 779,
+   "page": 41,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weiss Peter",
+   "new": "Ulrich Peter.[?]",
+   "note": "ime POPRAVEK Weiss Peter -> Ulrich Peter.[?] (h51; PUA h.51 'Urich Pattle' + p43 h51 Ulrich presek; w2 'Peter.' jasno)"
+  },
+  {
+   "index": 780,
+   "page": 41,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Georg.",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h66 precedens p36/p40; glyf = Krischan-forma)"
+  },
+  {
+   "index": 781,
+   "page": 41,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pechly Georg.",
+   "new": "Pöching. Gorgy.[?]",
+   "note": "ime POPRAVEK Pechly Georg. -> Pöching. Gorgy.[?] (h67; w1 'Pöching' ch jasno — cf. p36/p38 'Puchey' varianta istega h67, page-level forma)"
+  },
+  {
+   "index": 782,
+   "page": 41,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Von Witschak Andr.",
+   "new": "Veritschan Mathl.[?]",
+   "note": "ime POPRAVEK Von Witschak Andr. -> Veritschan Mathl.[?] (h64 par z r17; PUA h.64 'Veritscher'; cf. p40-r19 ista forma)"
+  },
+  {
+   "index": 783,
+   "page": 41,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schellko Jozeph.",
+   "new": "Schellko Joseph.",
+   "note": "ime POPRAVEK Schellko Jozeph. -> Schellko Joseph. (w2 'Joseph' po črnilu, v57 'Jozeph' = različica; PUA h.60 'Schelko Georg' orient.)"
+  },
+  {
+   "index": 784,
+   "page": 41,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weiss Michl.",
+   "new": "Ulrich Michl.",
+   "note": "haus POPRAVEK '1 / 64'->68 (gz x26: 8-glyf z dvojno zanko jasna — NI 4-glyfa; h68 = PUA 'Urich Mattle' + p43-r8 'Ulrich Michl' precedens) + ime POPRAVEK Weiss Michl. -> Ulrich Michl. (h68 precedens)"
+  },
+  {
+   "index": 784,
+   "page": 41,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 64",
+   "new": "1 / 68",
+   "note": "haus POPRAVEK '1 / 64'->68 (gz x26: 8-glyf z dvojno zanko jasna — NI 4-glyfa; h68 = PUA 'Urich Mattle' + p43-r8 'Ulrich Michl' precedens) + ime POPRAVEK Weiss Michl. -> Ulrich Michl. (h68 precedens)"
+  },
+  {
+   "index": 785,
+   "page": 41,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Georg.",
+   "new": "Ulrich Georg.[?]",
+   "note": "haus POPRAVEK '1 / 52'->32 (gz x30 dy10: 3-glyf brez zastavice jasna — NI 5-glyfe (cf. r8 '50', r9 '51' z zastavico); dvom: p43-r11 h52 'Ulrich Georg' precedens — alternativo beležimo v verdictu, črnilo = nosilec) + ime POPRAVEK Witschak Georg. -> Ulrich Georg.[?]"
+  },
+  {
+   "index": 785,
+   "page": 41,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 52",
+   "new": "1 / 32",
+   "note": "haus POPRAVEK '1 / 52'->32 (gz x30 dy10: 3-glyf brez zastavice jasna — NI 5-glyfe (cf. r8 '50', r9 '51' z zastavico); dvom: p43-r11 h52 'Ulrich Georg' precedens — alternativo beležimo v verdictu, črnilo = nosilec) + ime POPRAVEK Witschak Georg. -> Ulrich Georg.[?]"
+  },
+  {
+   "index": 786,
+   "page": 41,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Fleing Mano.",
+   "new": "Ring Martho.[?]",
+   "note": "ime POPRAVEK Fleing Mano. -> Ring Martho.[?] (h65 = p36-r3/p40-r18 forma ×2; glyf = Ring forma + 'Martho.'; v57 obe besedi fabriirani)"
+  },
+  {
+   "index": 787,
+   "page": 41,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Von Witschak Andr.",
+   "new": "Veritschan Mathl.[?]",
+   "note": "ime POPRAVEK Von Witschak Andr. -> Veritschan Mathl.[?] (h64 par z r12)"
+  },
+  {
+   "index": 788,
+   "page": 41,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pritschak Andr.",
+   "new": "Tillach Michl.[?]",
+   "note": "ime POPRAVEK Pritschak Andr. -> Tillach Michl.[?] (h61 par z r4)"
+  },
+  {
+   "index": 789,
+   "page": 41,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Georg.",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h63 par z r1/r3)"
+  },
+  {
+   "page": 41,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2c) p41: 23 sprememb; p41 = nova sekcija (druga roka): Krischan h62/h63/h66, Tillach h61, Baron h0/h100, Gemeinde h0, Pöching h50/51, Ulrich h51/68/32, Veritschan h64 ×2, Ring Martho h65; 3 haus POPRAVEK (\"1 / 6\"->0, \"1 / 64\"->68, \"1 / 52\"->32); rdeči anm. \"widrig... zu G: 1850\" + \"übernommen zu E: 1850\""
+  },
+  {
+   "index": 790,
+   "page": 42,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Stößl",
+   "new": "Krischan Michl.[?]",
+   "note": "ime POPRAVEK Christan Stößl -> Krischan Michl.[?] (h62; glyf = Krischan-forma; v57 'Stößl' fabriirana)"
+  },
+  {
+   "index": 791,
+   "page": 42,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Georg",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Christan Georg -> Krischan Georg.[?] (h66 precedens; v57 'Christan' = skoraj-glyf, normalizirano na del-2b 'Krischan' formo)"
+  },
+  {
+   "index": 792,
+   "page": 42,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Veit Blaschke seni[?]",
+   "new": "Veritschan Mathl.[?]",
+   "note": "ime POPRAVEK Veit Blaschke seni[?] -> Veritschan Mathl.[?] (h64 par z r4/r9; PUA h.64 'Veritscher'; v57 'Veit Blaschke' fabriirana)"
+  },
+  {
+   "index": 793,
+   "page": 42,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Georg",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Christan Georg -> Krischan Georg.[?] (h66 par z r1)"
+  },
+  {
+   "index": 794,
+   "page": 42,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Veit Blaschke senior",
+   "new": "Veritschan Mathl.[?]",
+   "note": "ime POPRAVEK Veit Blaschke senior -> Veritschan Mathl.[?] (h64 par z r2)"
+  },
+  {
+   "index": 795,
+   "page": 42,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Radling Georg",
+   "new": "Pöching. Georgy.[?]",
+   "note": "ime POPRAVEK Radling Georg -> Pöching. Georgy.[?] (h11; gz x26: w1 'Pöching' jasno — v57 'Radling' fabriirana; vrstica rdeče prečrtana + 'aufgepfählt bezügt 1819 [rot]')"
+  },
+  {
+   "index": 796,
+   "page": 42,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stößl Christl",
+   "new": "Tillach Michl.[?]",
+   "note": "ime POPRAVEK Stößl Christl -> Tillach Michl.[?] (h61 = p41-r4 forma; vrstica rdeče prečrtana + 'Stelle [rot]')"
+  },
+  {
+   "index": 797,
+   "page": 42,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Georg",
+   "new": "Krischan Georg.[?]",
+   "note": "ime POPRAVEK Christan Georg -> Krischan Georg.[?] (h62; vrstica rdeče prečrtana)"
+  },
+  {
+   "index": 798,
+   "page": 42,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Christl",
+   "new": "Krischan Michl.[?]",
+   "note": "ime POPRAVEK Christan Christl -> Krischan Michl.[?] (gz x24 dy-8: w2 'Miche/Michl.' jasno; vrstica rdeče prečrtana)"
+  },
+  {
+   "index": 799,
+   "page": 42,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Veit Blaschke seni[?]",
+   "new": "Veritschan Mathl.[?]",
+   "note": "ime POPRAVEK Veit Blaschke seni[?] -> Veritschan Mathl.[?] (h64 trio; gz-r08 dy6 potrjuje 'Veritschan Mathe' v r8/r9 coni; vrstica rdeče prečrtana)"
+  },
+  {
+   "index": 800,
+   "page": 42,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Fleissig Marianne",
+   "new": "Ring Martho.[?]",
+   "note": "haus POPRAVEK 62->65 (gz x24 dy-8: '65'' jasno) + ime POPRAVEK Fleissig Marianne -> Ring Martho.[?] (4. instanca h65 Ring Martho: p36-r3, p40-r18, p41-r16; glyf = Ring forma + 'Martha/Martho.'; v57 'Fleissig Marianne' fabriirana — take vrstice ni v črnilu)"
+  },
+  {
+   "index": 800,
+   "page": 42,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/62",
+   "new": "1/65",
+   "note": "haus POPRAVEK 62->65 (gz x24 dy-8: '65'' jasno) + ime POPRAVEK Fleissig Marianne -> Ring Martho.[?] (4. instanca h65 Ring Martho: p36-r3, p40-r18, p41-r16; glyf = Ring forma + 'Martha/Martho.'; v57 'Fleissig Marianne' fabriirana — take vrstice ni v črnilu)"
+  },
+  {
+   "index": 801,
+   "page": 42,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hirschman Maria",
+   "new": "Krischan Maria.[?]",
+   "note": "ime POPRAVEK Hirschman Maria -> Krischan Maria.[?] (h62; gz x24 dy-8: w2 'Maria[?]' — PUA h.62 'Brinczhan Witwe' orient.; vrstica rdeče prečrtana)"
+  },
+  {
+   "index": 802,
+   "page": 42,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stößl Maria",
+   "new": "Tillach Maria.[?]",
+   "note": "ime POPRAVEK Stößl Maria -> Tillach Maria.[?] (h61; vrstica rdeče prečrtana + 'Stelle [rot]')"
+  },
+  {
+   "index": 803,
+   "page": 42,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lupzina Maria",
+   "new": "Luppraz Maria.[?]",
+   "note": "ime POPRAVEK Lupzina Maria -> Luppraz Maria.[?] (h54; w1 'Luppraz[?]' — pp jasno; w2 brez ascenderjev -> 'Maria[?]' (cf. r8 'Miche' z ascenderji); v57 'Lupzina' fabriirana)"
+  },
+  {
+   "index": 804,
+   "page": 42,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimek Michael",
+   "new": "Schimetz Michael.",
+   "note": "haus POPRAVEK '1 / 59'->49 (gz x24 dy-8: 4-glyf jasna — NI 5-zastavice (cf. r13 '54'); h49 = p42-r14/r43-r3 'Schimetz Michael' presek!) + ime POPRAVEK Schimek Michael -> Schimetz Michael. (tz jasno; 'aufgepfählt bezügt 1820 [rot]')"
+  },
+  {
+   "index": 804,
+   "page": 42,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/59",
+   "new": "1/49",
+   "note": "haus POPRAVEK '1 / 59'->49 (gz x24 dy-8: 4-glyf jasna — NI 5-zastavice (cf. r13 '54'); h49 = p42-r14/r43-r3 'Schimetz Michael' presek!) + ime POPRAVEK Schimek Michael -> Schimetz Michael. (tz jasno; 'aufgepfählt bezügt 1820 [rot]')"
+  },
+  {
+   "index": 805,
+   "page": 42,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schumig Johann",
+   "new": "Schimetz Peter.[?]",
+   "note": "ime POPRAVEK Schumig Johann -> Schimetz Peter.[?] (h18 par z r16; gz x24 dy-8: w2 'Peter.' jasno — v57 w2 'Johann' fabriirana; vrstica rdeče prečrtana + 'Stelle [rot]')"
+  },
+  {
+   "index": 806,
+   "page": 42,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schumig Peter",
+   "new": "Schimetz Peter.[?]",
+   "note": "ime POPRAVEK Schumig Peter -> Schimetz Peter.[?] (h18 par z r15)"
+  },
+  {
+   "index": 807,
+   "page": 42,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Baron Gustedter",
+   "new": "Baron Gustitsch.[?]",
+   "note": "ime POPRAVEK Baron Gustedter -> Baron Gustitsch.[?] (haus prazen v obojem = soglasje; Wohnort 'Graz[?]'; glyf = p41-r5 'Baron Gustitsch' forma)"
+  },
+  {
+   "index": 808,
+   "page": 42,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stößl Christl",
+   "new": "Tillach Michl.[?]",
+   "note": "ime POPRAVEK Stößl Christl -> Tillach Michl.[?] (h61 par z r6)"
+  },
+  {
+   "index": 809,
+   "page": 42,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Chorll Maria",
+   "new": "Khall Marie.[?]",
+   "note": "ime POPRAVEK Chorll Maria -> Khall Marie.[?] (gz x30 dy-8: w1 'Khall[?]' — K/X-cap dvom; w2 'Marie[?]'; v57 'Chorll' fabriirana)"
+  },
+  {
+   "index": 810,
+   "page": 42,
+   "row_in_page": 20,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Khaull Joanne",
+   "new": "Khall Johanne.[?]",
+   "note": "ime POPRAVEK Khaull Joanne -> Khall Johanne.[?] (gz x30 dy-8: w2 'Johanne.' jasno (J-swash); w1 'Khall[?]')"
+  },
+  {
+   "page": 42,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2c) p42: 23 sprememb; p42 = nadaljevanje p41 sekcije (vrstice sedejo VISOKO, dy -8): Krischan h62 ×4 / h66 ×2 / h63, Veritschan h64 ×3, Tillach h61 ×3, Pöching h11, Ring Martho h65 (NOVO — v57 \"Fleissig Marianne\" fabriirana + haus 62 napaka), Luppraz h54, Schimetz h59?/h18 ×3, Baron h-, Khall h15/h17; 2 haus POPRAVEK (62->65, \"1 / 59\"->49); vrstice rdeče prečrtane (revizija) na r6-r12"
+  },
+  {
+   "index": 811,
+   "page": 43,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönnig Michael",
+   "new": "Schimetz Michel.[?]",
+   "note": "ime POPRAVEK Schönnig Michael -> Schimetz Michel.[?] (glyf = p42 'Schimetz' forma; v57 'Schönnig' fabriirana — Noben 'Schönnig' ni v črnilu)"
+  },
+  {
+   "index": 812,
+   "page": 43,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönnig Leon",
+   "new": "Schimetz Leon.[?]",
+   "note": "ime POPRAVEK Schönnig Leon -> Schimetz Leon.[?] (w2 'Leon.' jasno)"
+  },
+  {
+   "index": 813,
+   "page": 43,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönnig Peter",
+   "new": "Schimetz Peter.[?]",
+   "note": "ime POPRAVEK Schönnig Peter -> Schimetz Peter.[?] (w2 'Peter.' jasno)"
+  },
+  {
+   "index": 814,
+   "page": 43,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönnig Michael",
+   "new": "Schimetz Michael.",
+   "note": "haus POPRAVEK 149->49 (tall: '1|49' = Blatt '1' + haus '49' — v57 je zlil Blatt+haus; h49 = p42-r14 'Schimetz Michael' + r16-r1 'Thomas Hampel'-convergence) + ime POPRAVEK Schönnig Michael -> Schimetz Michael. (medstranski presek h49 Schimetz Michael ×3)"
+  },
+  {
+   "index": 814,
+   "page": 43,
+   "row_in_page": 3,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "149",
+   "new": "49",
+   "note": "haus POPRAVEK 149->49 (tall: '1|49' = Blatt '1' + haus '49' — v57 je zlil Blatt+haus; h49 = p42-r14 'Schimetz Michael' + r16-r1 'Thomas Hampel'-convergence) + ime POPRAVEK Schönnig Michael -> Schimetz Michael. (medstranski presek h49 Schimetz Michael ×3)"
+  },
+  {
+   "index": 815,
+   "page": 43,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ulrich Jakob",
+   "new": "Ulrich Parbna.[?]",
+   "note": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (w1 'Ulrich' soglasen; w2 'Parbna[?]/Parna[?]' — gz x30: P-glyf z descenderjem (NI J-glyf 'Jakob'); 'Barbara[?]' alternativa (B/P dvom); v57 w2 fabriirana)"
+  },
+  {
+   "index": 816,
+   "page": 43,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pauling Wenzel",
+   "new": "Pöching. Mathel.[?]",
+   "note": "ime POPRAVEK Pauling Wenzel -> Pöching. Mathel.[?] (h50 = p41-r8 forma ×2; glyf = Pöching forma; v57 'Pauling Wenzel' fabriirana)"
+  },
+  {
+   "index": 817,
+   "page": 43,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönnig Leon",
+   "new": "Schimetz Leon.[?]",
+   "note": "ime POPRAVEK Schönnig Leon -> Schimetz Leon.[?] (h65; par z r1)"
+  },
+  {
+   "index": 820,
+   "page": 43,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ulrich Jakob",
+   "new": "Ulrich Parbna.[?]",
+   "note": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (gz x30: w2 'Parna/Parbna[?]' — isti glyf kot r4; v57 w2 fabriirana)"
+  },
+  {
+   "index": 821,
+   "page": 43,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ulrich Jakob",
+   "new": "Ulrich Parbna.[?]",
+   "note": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (par z r4 h51)"
+  },
+  {
+   "index": 823,
+   "page": 43,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ulrich Jakob",
+   "new": "Ulrich Parbna.[?]",
+   "note": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (h81 par z r9)"
+  },
+  {
+   "index": 824,
+   "page": 43,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wittlich Martin",
+   "new": "Tillach Michl.[?]",
+   "note": "ime POPRAVEK Wittlich Martin -> Tillach Michl.[?] (h61 = p41/p42 forma ×5; gz x24 dy14; v57 'Wittlich' fabriirana)"
+  },
+  {
+   "index": 825,
+   "page": 43,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Fittkau Martin",
+   "new": "Tillach Michl.[?]",
+   "note": "ime POPRAVEK Fittkau Martin -> Tillach Michl.[?] (h61 par z r13; v57 'Fittkau' fabriirana)"
+  },
+  {
+   "index": 826,
+   "page": 43,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Horechan Michl",
+   "new": "Krischan Michl.[?]",
+   "note": "haus POPRAVEK 69->62 (gz x24 dy14: '62' jasno; v57 6↔9?) + ime POPRAVEK Horechan Michl -> Krischan Michl.[?] (glyf = Krischan-forma; PUA h.69 'Christian Brandl' orient. — del-2a odprto vprašanje p47 ostaja)"
+  },
+  {
+   "index": 826,
+   "page": 43,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "69",
+   "new": "62",
+   "note": "haus POPRAVEK 69->62 (gz x24 dy14: '62' jasno; v57 6↔9?) + ime POPRAVEK Horechan Michl -> Krischan Michl.[?] (glyf = Krischan-forma; PUA h.69 'Christian Brandl' orient. — del-2a odprto vprašanje p47 ostaja)"
+  },
+  {
+   "index": 827,
+   "page": 43,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschak Georg",
+   "new": "Krischan Georg.[?]",
+   "note": "haus POPRAVEK 62->63 (gz x24 dy14: 3-glyf brez zastavice jasna) + ime POPRAVEK Witschak Georg -> Krischan Georg.[?] (h63 par z r15-grozdo 62/63 kot p41-r0/r1)"
+  },
+  {
+   "index": 827,
+   "page": 43,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "62",
+   "new": "63",
+   "note": "haus POPRAVEK 62->63 (gz x24 dy14: 3-glyf brez zastavice jasna) + ime POPRAVEK Witschak Georg -> Krischan Georg.[?] (h63 par z r15-grozdo 62/63 kot p41-r0/r1)"
+  },
+  {
+   "index": 828,
+   "page": 43,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Vohfseheidler Mathäus",
+   "new": "Schaffschick Mathä.[?]",
+   "note": "ime POPRAVEK Vohfseheidler Mathäus -> Schaffschick Mathä.[?] (h13; w1 = p40-r4 'Schaffschick' forma; w2 'Mathä.[?]' po črnilu+v57; v57 w1 fabriirana)"
+  },
+  {
+   "index": 829,
+   "page": 43,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stahlfeldt Mathäus",
+   "new": "Schaffschick Mathä.[?]",
+   "note": "ime POPRAVEK Stahlfeldt Mathäus -> Schaffschick Mathä.[?] (h8 par z r19; v57 'Stahlfeldt' fabriirana; vrstica rdeče prečrtana)"
+  },
+  {
+   "index": 830,
+   "page": 43,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stahlfeldt Mathäus",
+   "new": "Schaffschick Mathä.[?]",
+   "note": "ime POPRAVEK Stahlfeldt Mathäus -> Schaffschick Mathä.[?] (h8 par z r18)"
+  },
+  {
+   "page": 43,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2c) p43: 20 sprememb; p43 = zaključek imenskega passa p38–p43 (vrstice sedejo NIZKO, dy +14): Schimetz h16/55/56/49/65 ×5, Ulrich h51/81/51/52/81 + Parbna[?] w2 ×4, Pöching h50, Strohschneid h14, Tillach h61 ×2, Krischan h62/h63, Schaffschick h13/h8 ×3; 3 haus POPRAVEK (149->49 Blatt-artefakt, 69->62, 62->63); medstranski presek h49 Schimetz Michael ×3 (p42-r14 + p43-r3)"
+  }
+ ]
+}

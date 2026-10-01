@@ -1,0 +1,159 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2c",
+  "page": 38,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "tall prerezi z r-markerji + zz-/gz-pXX-rNN x22-x30 (per-page dy: p38/p39 +6, p41 +6..10, p42 -8, p43 +14; pisarjev ritem lokalno stisnjen na p39 r5.5) + medstranski hišni preseki (h23-h28 Ring, h29 Müllner, h30 Bruckler, h42/40/41 Pöching, h43 Brulla, h49 Schimetz, h51/52/68/81 Ulrich, h61 Tillach, h62/63/66 Krischan, h64 Veritschan, h65 Ring Martho/Dorothea/Jakob[?], h67 Puchey/Pöching) + PUA presek (h.61 Tillak, h.62 Brinczhan, h.64 Veritscher, h.65 Widhann, h.68 Urich Mattle, h.69 Christian Brandl) + PT + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a; 3-glyf brez zastavice (p41-r15 32, p43-r16 63), 4-glyf kot 61/64 (p42-r14 49), 8-glyf dvojna zanka (p41-r14 68)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "tall-p38-names (x3, r-markerji)",
+   "zz-p38-r00..r19 (x22, dy po strani)",
+   "gz x24-x30 izbrani (dvomljive vrstice)"
+  ],
+  "note": "p38 = nadaljevanje Ring-grozde + parna struktura (9 parov/trio + 1 nerešljiv r15): h26 Ring Johann ×2, h28 Ring Michl ×2, h27 Malleschick Johann ×3, h30 Bruckler Mathl ×2, h67 Puchey Georg ×2, h23 Ring Mathä ×2, h24 Ring Michael ×2, h25 Ring Michl ×2, h29 Müllner Samuel ×2; 2 haus POPRAVEK (25->23 r5, 23->29 r18); r15 = nerešljiva dolga beseda (razhajanje odprto, v57 'Vilip[?]züanjanky' ohranjeno, haus 29 rjavi ink)"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "König Johann",
+   "verdict": "ime POPRAVEK König Johann -> Ring Johann. (w1 glyf identičen p37-r02 'Ring' kalibra x30; h26 par z r10; v57 'König' fabriirana — glyf nima K-zastavice)"
+  },
+  "r1": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "König Michl",
+   "verdict": "ime POPRAVEK König Michl -> Ring Michl.[?] (h28 par z r9; glyf = Ring forma)"
+  },
+  "r2": {
+   "seen_haus": "27",
+   "seen_name": "Malleschick Johann.[?]",
+   "old_haus": "27",
+   "old_name": "Mallwoschki Johann",
+   "verdict": "ime POPRAVEK Mallwoschki Johann -> Malleschick Johann.[?] (h27 trio z r11/r19; ink 'Malleschick/Malteoschick' — cf. p30 'Mattheitsch', p37 'Mallwitsch', PUA h.27 'Malleßthak[?]'; page-level forma z [?])"
+  },
+  "r3": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Buttler Michael",
+   "verdict": "ime POPRAVEK Buttler Michael -> Bruckler Mathl.[?] (h30 par z r12; w1 glyf = p37 'Bruckler' forma, w2 'Mathl.' kot p37 ×5; v57 'Buttler' fabriirana)"
+  },
+  "r4": {
+   "seen_haus": "67",
+   "seen_name": "Puchey Georg.",
+   "old_haus": "67",
+   "old_name": "Pichler Georg",
+   "verdict": "ime POPRAVEK Pichler Georg -> Puchey Georg. (h67 par z r14; glyf = p36-r17 'Puchey Georg.' forma x26 identična; v57 'Pichler' fabriirana)"
+  },
+  "r5": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä.[?]",
+   "old_haus": "25",
+   "old_name": "König Michael",
+   "verdict": "haus POPRAVEK 25->23 (gz x26: 3-glyf jasna, cf. r13 '23'; v57 2↔3 šum) + ime POPRAVEK König Michael -> Ring Mathä.[?] (h23 par z r13; w2 'Mathe.' = Mathä)"
+  },
+  "r6": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "König Michael",
+   "verdict": "ime POPRAVEK König Michael -> Ring Michael. (h24 par z r17; w2 'Michael.' jasno)"
+  },
+  "r7": {
+   "seen_haus": "25",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "25",
+   "old_name": "König Michl",
+   "verdict": "ime POPRAVEK König Michl -> Ring Michl.[?] (h25 par z r16; 5-glyf z zastavico)"
+  },
+  "r8": {
+   "seen_haus": "29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "29",
+   "old_name": "Millig Romuald",
+   "verdict": "ime POPRAVEK Millig Romuald -> Müllner Samuel. (h29 par z r18; ink w1 'Milling[?]' = p37-r1 forma, normalizirano na 'Müllner' po del-2b h29 konvenciji; PUA h.29 'Milleg Hanu' orient.; v57 'Romuald' fabriirana — črnilo 'Samuel.')"
+  },
+  "r9": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "28",
+   "old_name": "König Michl",
+   "verdict": "ime POPRAVEK König Michl -> Ring Michl.[?] (h28 par z r1)"
+  },
+  "r10": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann.",
+   "old_haus": "26",
+   "old_name": "König Johann",
+   "verdict": "ime POPRAVEK König Johann -> Ring Johann. (h26 par z r0)"
+  },
+  "r11": {
+   "seen_haus": "27",
+   "seen_name": "Malleschick Johann.[?]",
+   "old_haus": "27",
+   "old_name": "Mallwoschki Johann",
+   "verdict": "ime POPRAVEK Mallwoschki Johann -> Malleschick Johann.[?] (h27 trio)"
+  },
+  "r12": {
+   "seen_haus": "30",
+   "seen_name": "Bruckler Mathl.[?]",
+   "old_haus": "30",
+   "old_name": "Buttler Michael",
+   "verdict": "ime POPRAVEK Buttler Michael -> Bruckler Mathl.[?] (h30 par z r3)"
+  },
+  "r13": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä.[?]",
+   "old_haus": "23",
+   "old_name": "Pongy Mathäus",
+   "verdict": "ime POPRAVEK Pongy Mathäus -> Ring Mathä.[?] (h23 par z r5; v57 'Pongy' fabriirana — črnilo = Ring glyf + 'Mathe.')"
+  },
+  "r14": {
+   "seen_haus": "67",
+   "seen_name": "Puchey Georg.",
+   "old_haus": "67",
+   "old_name": "Pichler Georg",
+   "verdict": "ime POPRAVEK Pichler Georg -> Puchey Georg. (h67 par z r4)"
+  },
+  "r15": {
+   "seen_haus": "29",
+   "seen_name": "Vilip[?]züanjanky",
+   "old_haus": "29",
+   "old_name": "Vilip[?]züanjanky",
+   "verdict": "razhajanje odprto: črnilo = dolga beseda ~'Ruberstzünjunganky.[?]' (nerešljiva page-singleton — nobena beseda ne obstaja drugje v 2875 vrsticah; morda ne-osebni zapis/namig, ne ime), v57 'Vilip[?]züanjanky' ohranjeno; haus '29' rjavi ink (kasnejši vpis?) — skladen z r8/r18 Müllner-contextom, ohranjeno"
+  },
+  "r16": {
+   "seen_haus": "25",
+   "seen_name": "Ring Michl.[?]",
+   "old_haus": "25",
+   "old_name": "Primz[?] Michl",
+   "verdict": "ime POPRAVEK Primz[?] Michl -> Ring Michl.[?] (h25 par z r7; v57 'Primz[?]' fabriirana)"
+  },
+  "r17": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael.",
+   "old_haus": "24",
+   "old_name": "König Michael",
+   "verdict": "ime POPRAVEK König Michael -> Ring Michael. (h24 par z r6)"
+  },
+  "r18": {
+   "seen_haus": "29",
+   "seen_name": "Müllner Samuel.",
+   "old_haus": "23",
+   "old_name": "Millig Romane",
+   "verdict": "haus POPRAVEK 23->29 (gz x26: 9-glyf z zanko jasna; h29 par z r8) + ime POPRAVEK Millig Romane -> Müllner Samuel. (isti glyf kot r8; v57 'Romane' fabriirana)"
+  },
+  "r19": {
+   "seen_haus": "27",
+   "seen_name": "Malleschick Johann.[?]",
+   "old_haus": "27",
+   "old_name": "Mallwoschki Johann",
+   "verdict": "ime POPRAVEK Mallwoschki Johann -> Malleschick Johann.[?] (h27 trio)"
+  }
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2c",
+  "page": 41,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "tall prerezi z r-markerji + zz-/gz-pXX-rNN x22-x30 (per-page dy: p38/p39 +6, p41 +6..10, p42 -8, p43 +14; pisarjev ritem lokalno stisnjen na p39 r5.5) + medstranski hišni preseki (h23-h28 Ring, h29 Müllner, h30 Bruckler, h42/40/41 Pöching, h43 Brulla, h49 Schimetz, h51/52/68/81 Ulrich, h61 Tillach, h62/63/66 Krischan, h64 Veritschan, h65 Ring Martho/Dorothea/Jakob[?], h67 Puchey/Pöching) + PUA presek (h.61 Tillak, h.62 Brinczhan, h.64 Veritscher, h.65 Widhann, h.68 Urich Mattle, h.69 Christian Brandl) + PT + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a; 3-glyf brez zastavice (p41-r15 32, p43-r16 63), 4-glyf kot 61/64 (p42-r14 49), 8-glyf dvojna zanka (p41-r14 68)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "tall-p41-names (x3, r-markerji)",
+   "zz-p41-r00..r19 (x22, dy po strani)",
+   "gz x24-x30 izbrani (dvomljive vrstice)"
+  ],
+  "note": "p41 = nova sekcija (druga roka): Krischan h62/h63/h66, Tillach h61, Baron h0/h100, Gemeinde h0, Pöching h50/51, Ulrich h51/68/32, Veritschan h64 ×2, Ring Martho h65; 3 haus POPRAVEK (\"1 / 6\"->0, \"1 / 64\"->68, \"1 / 52\"->32); rdeči anm. \"widrig... zu G: 1850\" + \"übernommen zu E: 1850\""
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "1/62",
+   "seen_name": "Krischan Michl.[?]",
+   "old_haus": "1/62",
+   "old_name": "Witschak Michl.",
+   "verdict": "ime POPRAVEK Witschak Michl. -> Krischan Michl.[?] (h62 par z r2; glyf = Krischan-forma (p36/p40 h66 kaliber); PUA h.62 'Brinczhan' orient.)"
+  },
+  "r1": {
+   "seen_haus": "1 / 63",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1 / 63",
+   "old_name": "Witschak Georg.",
+   "verdict": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h63 par z r3/r19)"
+  },
+  "r2": {
+   "seen_haus": "1/62",
+   "seen_name": "Krischan Michl.[?]",
+   "old_haus": "1/62",
+   "old_name": "Witschak Michl.",
+   "verdict": "ime POPRAVEK Witschak Michl. -> Krischan Michl.[?] (h62 par z r0)"
+  },
+  "r3": {
+   "seen_haus": "1/63",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1/63",
+   "old_name": "Witschak Georg.",
+   "verdict": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h63 par z r1)"
+  },
+  "r4": {
+   "seen_haus": "1/61",
+   "seen_name": "Tillach Michl.[?]",
+   "old_haus": "1/61",
+   "old_name": "Pritschak Andr.",
+   "verdict": "ime POPRAVEK Pritschak Andr. -> Tillach Michl.[?] (h61 ×2 z r18; PUA h.61 'Tillak Nikla' presek; del-2b p36-r8 'Tillach Peter.[?]' forma; rdeča anm. 'widrig...' prek vrste; w2 'Michl.[?]' dvom)"
+  },
+  "r5": {
+   "seen_haus": "0",
+   "seen_name": "Baron Gustitsch.[?]",
+   "old_haus": "0",
+   "old_name": "Baron Gustedt",
+   "verdict": "ime POPRAVEK Baron Gustedt -> Baron Gustitsch.[?] (gz x30: 'Gustitsch' jasno; haus 0 jasno; h0 = ne-hišni vpis)"
+  },
+  "r6": {
+   "seen_haus": "1 / 100",
+   "seen_name": "Baronial Zallant.[?]",
+   "old_haus": "1 / 100",
+   "old_name": "Baron v. Zallant",
+   "verdict": "ime POPRAVEK Baron v. Zallant -> Baronial Zallant.[?] (gz x24 dy10: 'Baronial' jasno — ne-osebni Baronial-zapis; rdeča anm. 'übernommen zu E: 1850' prek haus celice — haus '100' ni preverljiv pod rdečim, ohranjeno)"
+  },
+  "r7": {
+   "seen_haus": "0",
+   "seen_name": "Gemeinde",
+   "old_haus": "1 / 6",
+   "old_name": "Gyomandl",
+   "verdict": "haus POPRAVEK '1 / 6'->0 (gz x24 dy10: compact-oval 0 = r5 'Baron' 0-forma; diagonalni tik = ditto-znak) + ime POPRAVEK Gyomandl -> Gemeinde (gz jasno 'Gemeinde' — občina, ne oseba; h0 skladno z r5)"
+  },
+  "r8": {
+   "seen_haus": "1 / 50",
+   "seen_name": "Pöching. Mathel.[?]",
+   "old_haus": "1 / 50",
+   "old_name": "Pechly Mathes.",
+   "verdict": "ime POPRAVEK Pechly Mathes. -> Pöching. Mathel.[?] (h50; glyf = Pöching forma)"
+  },
+  "r9": {
+   "seen_haus": "1 / 51",
+   "seen_name": "Ulrich Peter.[?]",
+   "old_haus": "1 / 51",
+   "old_name": "Weiss Peter",
+   "verdict": "ime POPRAVEK Weiss Peter -> Ulrich Peter.[?] (h51; PUA h.51 'Urich Pattle' + p43 h51 Ulrich presek; w2 'Peter.' jasno)"
+  },
+  "r10": {
+   "seen_haus": "1 / 61",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1 / 61",
+   "old_name": "Witschak Georg.",
+   "verdict": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h66 precedens p36/p40; glyf = Krischan-forma)"
+  },
+  "r11": {
+   "seen_haus": "1 / 67",
+   "seen_name": "Pöching. Gorgy.[?]",
+   "old_haus": "1 / 67",
+   "old_name": "Pechly Georg.",
+   "verdict": "ime POPRAVEK Pechly Georg. -> Pöching. Gorgy.[?] (h67; w1 'Pöching' ch jasno — cf. p36/p38 'Puchey' varianta istega h67, page-level forma)"
+  },
+  "r12": {
+   "seen_haus": "1 / 64",
+   "seen_name": "Veritschan Mathl.[?]",
+   "old_haus": "1 / 64",
+   "old_name": "Von Witschak Andr.",
+   "verdict": "ime POPRAVEK Von Witschak Andr. -> Veritschan Mathl.[?] (h64 par z r17; PUA h.64 'Veritscher'; cf. p40-r19 ista forma)"
+  },
+  "r13": {
+   "seen_haus": "1 / 60",
+   "seen_name": "Schellko Joseph.",
+   "old_haus": "1 / 60",
+   "old_name": "Schellko Jozeph.",
+   "verdict": "ime POPRAVEK Schellko Jozeph. -> Schellko Joseph. (w2 'Joseph' po črnilu, v57 'Jozeph' = različica; PUA h.60 'Schelko Georg' orient.)"
+  },
+  "r14": {
+   "seen_haus": "1 / 68",
+   "seen_name": "Ulrich Michl.",
+   "old_haus": "1 / 64",
+   "old_name": "Weiss Michl.",
+   "verdict": "haus POPRAVEK '1 / 64'->68 (gz x26: 8-glyf z dvojno zanko jasna — NI 4-glyfa; h68 = PUA 'Urich Mattle' + p43-r8 'Ulrich Michl' precedens) + ime POPRAVEK Weiss Michl. -> Ulrich Michl. (h68 precedens)"
+  },
+  "r15": {
+   "seen_haus": "1 / 32",
+   "seen_name": "Ulrich Georg.[?]",
+   "old_haus": "1 / 52",
+   "old_name": "Witschak Georg.",
+   "verdict": "haus POPRAVEK '1 / 52'->32 (gz x30 dy10: 3-glyf brez zastavice jasna — NI 5-glyfe (cf. r8 '50', r9 '51' z zastavico); dvom: p43-r11 h52 'Ulrich Georg' precedens — alternativo beležimo v verdictu, črnilo = nosilec) + ime POPRAVEK Witschak Georg. -> Ulrich Georg.[?]"
+  },
+  "r16": {
+   "seen_haus": "1 / 65",
+   "seen_name": "Ring Martho.[?]",
+   "old_haus": "1 / 65",
+   "old_name": "Fleing Mano.",
+   "verdict": "ime POPRAVEK Fleing Mano. -> Ring Martho.[?] (h65 = p36-r3/p40-r18 forma ×2; glyf = Ring forma + 'Martho.'; v57 obe besedi fabriirani)"
+  },
+  "r17": {
+   "seen_haus": "1 / 64",
+   "seen_name": "Veritschan Mathl.[?]",
+   "old_haus": "1 / 64",
+   "old_name": "Von Witschak Andr.",
+   "verdict": "ime POPRAVEK Von Witschak Andr. -> Veritschan Mathl.[?] (h64 par z r12)"
+  },
+  "r18": {
+   "seen_haus": "1 / 61",
+   "seen_name": "Tillach Michl.[?]",
+   "old_haus": "1 / 61",
+   "old_name": "Pritschak Andr.",
+   "verdict": "ime POPRAVEK Pritschak Andr. -> Tillach Michl.[?] (h61 par z r4)"
+  },
+  "r19": {
+   "seen_haus": "1 / 63",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1 / 63",
+   "old_name": "Witschak Georg.",
+   "verdict": "ime POPRAVEK Witschak Georg. -> Krischan Georg.[?] (h63 par z r1/r3)"
+  }
+ }
+}

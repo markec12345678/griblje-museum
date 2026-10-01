@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2c",
+  "page": 42,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "tall prerezi z r-markerji + zz-/gz-pXX-rNN x22-x30 (per-page dy: p38/p39 +6, p41 +6..10, p42 -8, p43 +14; pisarjev ritem lokalno stisnjen na p39 r5.5) + medstranski hišni preseki (h23-h28 Ring, h29 Müllner, h30 Bruckler, h42/40/41 Pöching, h43 Brulla, h49 Schimetz, h51/52/68/81 Ulrich, h61 Tillach, h62/63/66 Krischan, h64 Veritschan, h65 Ring Martho/Dorothea/Jakob[?], h67 Puchey/Pöching) + PUA presek (h.61 Tillak, h.62 Brinczhan, h.64 Veritscher, h.65 Widhann, h.68 Urich Mattle, h.69 Christian Brandl) + PT + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a; 3-glyf brez zastavice (p41-r15 32, p43-r16 63), 4-glyf kot 61/64 (p42-r14 49), 8-glyf dvojna zanka (p41-r14 68)",
+  "register_rows": 21,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "tall-p42-names (x3, r-markerji)",
+   "zz-p42-r00..r20 (x22, dy po strani)",
+   "gz x24-x30 izbrani (dvomljive vrstice)"
+  ],
+  "note": "p42 = nadaljevanje p41 sekcije (vrstice sedejo VISOKO, dy -8): Krischan h62 ×4 / h66 ×2 / h63, Veritschan h64 ×3, Tillach h61 ×3, Pöching h11, Ring Martho h65 (NOVO — v57 \"Fleissig Marianne\" fabriirana + haus 62 napaka), Luppraz h54, Schimetz h59?/h18 ×3, Baron h-, Khall h15/h17; 2 haus POPRAVEK (62->65, \"1 / 59\"->49); vrstice rdeče prečrtane (revizija) na r6-r12"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "1/62",
+   "seen_name": "Krischan Michl.[?]",
+   "old_haus": "1/62",
+   "old_name": "Christan Stößl",
+   "verdict": "ime POPRAVEK Christan Stößl -> Krischan Michl.[?] (h62; glyf = Krischan-forma; v57 'Stößl' fabriirana)"
+  },
+  "r1": {
+   "seen_haus": "1/66",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1/66",
+   "old_name": "Christan Georg",
+   "verdict": "ime POPRAVEK Christan Georg -> Krischan Georg.[?] (h66 precedens; v57 'Christan' = skoraj-glyf, normalizirano na del-2b 'Krischan' formo)"
+  },
+  "r2": {
+   "seen_haus": "1/64",
+   "seen_name": "Veritschan Mathl.[?]",
+   "old_haus": "1/64",
+   "old_name": "Veit Blaschke seni[?]",
+   "verdict": "ime POPRAVEK Veit Blaschke seni[?] -> Veritschan Mathl.[?] (h64 par z r4/r9; PUA h.64 'Veritscher'; v57 'Veit Blaschke' fabriirana)"
+  },
+  "r3": {
+   "seen_haus": "1/66",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1/66",
+   "old_name": "Christan Georg",
+   "verdict": "ime POPRAVEK Christan Georg -> Krischan Georg.[?] (h66 par z r1)"
+  },
+  "r4": {
+   "seen_haus": "1/64",
+   "seen_name": "Veritschan Mathl.[?]",
+   "old_haus": "1/64",
+   "old_name": "Veit Blaschke senior",
+   "verdict": "ime POPRAVEK Veit Blaschke senior -> Veritschan Mathl.[?] (h64 par z r2)"
+  },
+  "r5": {
+   "seen_haus": "1 / 11",
+   "seen_name": "Pöching. Georgy.[?]",
+   "old_haus": "1/11",
+   "old_name": "Radling Georg",
+   "verdict": "ime POPRAVEK Radling Georg -> Pöching. Georgy.[?] (h11; gz x26: w1 'Pöching' jasno — v57 'Radling' fabriirana; vrstica rdeče prečrtana + 'aufgepfählt bezügt 1819 [rot]')"
+  },
+  "r6": {
+   "seen_haus": "1/61",
+   "seen_name": "Tillach Michl.[?]",
+   "old_haus": "1/61",
+   "old_name": "Stößl Christl",
+   "verdict": "ime POPRAVEK Stößl Christl -> Tillach Michl.[?] (h61 = p41-r4 forma; vrstica rdeče prečrtana + 'Stelle [rot]')"
+  },
+  "r7": {
+   "seen_haus": "1/62",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "1/62",
+   "old_name": "Christan Georg",
+   "verdict": "ime POPRAVEK Christan Georg -> Krischan Georg.[?] (h62; vrstica rdeče prečrtana)"
+  },
+  "r8": {
+   "seen_haus": "1/62",
+   "seen_name": "Krischan Michl.[?]",
+   "old_haus": "1/62",
+   "old_name": "Christan Christl",
+   "verdict": "ime POPRAVEK Christan Christl -> Krischan Michl.[?] (gz x24 dy-8: w2 'Miche/Michl.' jasno; vrstica rdeče prečrtana)"
+  },
+  "r9": {
+   "seen_haus": "1/64",
+   "seen_name": "Veritschan Mathl.[?]",
+   "old_haus": "1/64",
+   "old_name": "Veit Blaschke seni[?]",
+   "verdict": "ime POPRAVEK Veit Blaschke seni[?] -> Veritschan Mathl.[?] (h64 trio; gz-r08 dy6 potrjuje 'Veritschan Mathe' v r8/r9 coni; vrstica rdeče prečrtana)"
+  },
+  "r10": {
+   "seen_haus": "1/65",
+   "seen_name": "Ring Martho.[?]",
+   "old_haus": "1/62",
+   "old_name": "Fleissig Marianne",
+   "verdict": "haus POPRAVEK 62->65 (gz x24 dy-8: '65'' jasno) + ime POPRAVEK Fleissig Marianne -> Ring Martho.[?] (4. instanca h65 Ring Martho: p36-r3, p40-r18, p41-r16; glyf = Ring forma + 'Martha/Martho.'; v57 'Fleissig Marianne' fabriirana — take vrstice ni v črnilu)"
+  },
+  "r11": {
+   "seen_haus": "1/62",
+   "seen_name": "Krischan Maria.[?]",
+   "old_haus": "1/62",
+   "old_name": "Hirschman Maria",
+   "verdict": "ime POPRAVEK Hirschman Maria -> Krischan Maria.[?] (h62; gz x24 dy-8: w2 'Maria[?]' — PUA h.62 'Brinczhan Witwe' orient.; vrstica rdeče prečrtana)"
+  },
+  "r12": {
+   "seen_haus": "1/61",
+   "seen_name": "Tillach Maria.[?]",
+   "old_haus": "1/61",
+   "old_name": "Stößl Maria",
+   "verdict": "ime POPRAVEK Stößl Maria -> Tillach Maria.[?] (h61; vrstica rdeče prečrtana + 'Stelle [rot]')"
+  },
+  "r13": {
+   "seen_haus": "1 / 54",
+   "seen_name": "Luppraz Maria.[?]",
+   "old_haus": "1/54",
+   "old_name": "Lupzina Maria",
+   "verdict": "ime POPRAVEK Lupzina Maria -> Luppraz Maria.[?] (h54; w1 'Luppraz[?]' — pp jasno; w2 brez ascenderjev -> 'Maria[?]' (cf. r8 'Miche' z ascenderji); v57 'Lupzina' fabriirana)"
+  },
+  "r14": {
+   "seen_haus": "1/49",
+   "seen_name": "Schimetz Michael.",
+   "old_haus": "1/59",
+   "old_name": "Schimek Michael",
+   "verdict": "haus POPRAVEK '1 / 59'->49 (gz x24 dy-8: 4-glyf jasna — NI 5-zastavice (cf. r13 '54'); h49 = p42-r14/r43-r3 'Schimetz Michael' presek!) + ime POPRAVEK Schimek Michael -> Schimetz Michael. (tz jasno; 'aufgepfählt bezügt 1820 [rot]')"
+  },
+  "r15": {
+   "seen_haus": "1 / 18",
+   "seen_name": "Schimetz Peter.[?]",
+   "old_haus": "1/18",
+   "old_name": "Schumig Johann",
+   "verdict": "ime POPRAVEK Schumig Johann -> Schimetz Peter.[?] (h18 par z r16; gz x24 dy-8: w2 'Peter.' jasno — v57 w2 'Johann' fabriirana; vrstica rdeče prečrtana + 'Stelle [rot]')"
+  },
+  "r16": {
+   "seen_haus": "1 / 18",
+   "seen_name": "Schimetz Peter.[?]",
+   "old_haus": "1/18",
+   "old_name": "Schumig Peter",
+   "verdict": "ime POPRAVEK Schumig Peter -> Schimetz Peter.[?] (h18 par z r15)"
+  },
+  "r17": {
+   "seen_haus": "",
+   "seen_name": "Baron Gustitsch.[?]",
+   "old_haus": "",
+   "old_name": "Baron Gustedter",
+   "verdict": "ime POPRAVEK Baron Gustedter -> Baron Gustitsch.[?] (haus prazen v obojem = soglasje; Wohnort 'Graz[?]'; glyf = p41-r5 'Baron Gustitsch' forma)"
+  },
+  "r18": {
+   "seen_haus": "1/61",
+   "seen_name": "Tillach Michl.[?]",
+   "old_haus": "1/61",
+   "old_name": "Stößl Christl",
+   "verdict": "ime POPRAVEK Stößl Christl -> Tillach Michl.[?] (h61 par z r6)"
+  },
+  "r19": {
+   "seen_haus": "1 / 15",
+   "seen_name": "Khall Marie.[?]",
+   "old_haus": "1/15",
+   "old_name": "Chorll Maria",
+   "verdict": "ime POPRAVEK Chorll Maria -> Khall Marie.[?] (gz x30 dy-8: w1 'Khall[?]' — K/X-cap dvom; w2 'Marie[?]'; v57 'Chorll' fabriirana)"
+  },
+  "r20": {
+   "seen_haus": "1 / 17",
+   "seen_name": "Khall Johanne.[?]",
+   "old_haus": "1/17",
+   "old_name": "Khaull Joanne",
+   "verdict": "ime POPRAVEK Khaull Joanne -> Khall Johanne.[?] (gz x30 dy-8: w2 'Johanne.' jasno (J-swash); w1 'Khall[?]')"
+  }
+ }
+}

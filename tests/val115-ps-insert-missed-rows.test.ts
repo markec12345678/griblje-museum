@@ -23,7 +23,7 @@
  *
  * KASKADA (izrecna, testno vodena): PS parcele 391 → 392 (+1 p048-j12 brez haus_no); land use
  * None 76 → 77; KG PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi/HAS_PARCEL NESPREMENJENI
- * 3477/2773 (nova parcela brez haus_no = brez vezi; sha b5d3ae93); timeline I6 PUA 2035 / PS 392 /
+ * 3477/2773 (nova parcela brez haus_no = brez vezi; sha 745a9cdd); timeline I6 PUA 2035 / PS 392 /
  * raba 173+142; coverage PARTIAL 1066 → 1067; c4 K9 jaethe_plain_100_1599 69 NESPREMENJENO
  * (12/1/2 ≤ 99), druge oblike izrecno pincirane.
  *
@@ -61,15 +61,15 @@ const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("
 const ATLAS = join(ROOT, "research-griblje", "atlas-1825");
 
 describe("val 115 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (2871 + 4 vstavljene); stare plasti nedotaknjene (139 v88, 1795 v86 po val 116: 1755 + 40 p142, 265 v112, 80 v113 + 366 v114 po val 119 del 2b (p32–p37 -> v119-names); v115 3 — p34 r20 prebrana v 2b)", () => {
+  test("register: 2875 vrstic (2871 + 4 vstavljene); stare plasti nedotaknjene (139 v88, 1795 v86 po val 116: 1755 + 40 p142, 265 v112, 80 v113 + 244 v114 po val 119 del 2c (p38–p43 -> v119-names); v115 2 — p34 r20 + p40 r13 prebrani)", () => {
     expect(REG.length).toBe(2875);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v115-insert").length).toBe(3);
+    expect(REG.filter((r) => f(r, "reading_pass") === "v115-insert").length).toBe(2); // val 119 del 2c: p34 r20 + p40 r13 prebrani
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
     expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
     expect(REG.filter((r) => f(r, "reading_pass") === "v112-ps-reread").length).toBe(265);
     expect(REG.filter((r) => f(r, "reading_pass") === "v113-ps-reread").length).toBe(0);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(366);
+    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(244); // val 119 del 2c
   });
 
   test("changes audit: val 115, 4 vstavitve + 4 page_obs (p49, p48, p40, p34 + obs)", () => {
@@ -125,20 +125,20 @@ describe("val 115 — vsebine vstavljenih vrstic (sidra v114)", () => {
     expect(f(rows[19], "klafter")).toBe("273");
   });
 
-  test("p40 r13: tekač 734, Nro 21, Pechley Mich°, 1|65 — celotna vrstica rdeče prečrtana + F-PV-07-SPLIT val 115", () => {
+  test("p40 r13: tekač 734, Nro 21, 1|65 — celotna vrstica rdeče prečrtana + F-PV-07-SPLIT val 115; val 119 del 2c: ime prebrano (Pöching Michl.[?], v119-names)", () => {
     const r = byPage(40)[13];
-    expect(f(r, "reading_pass")).toBe("v115-insert");
+    expect(f(r, "reading_pass")).toBe("v119-names"); // val 119 del 2c: v115 vrstica prebrana
     expect(f(r, "sheet_visible")).toBe("11. N.");
     expect(f(r, "no_blatt")).toBe("");
     expect(f(r, "haus_no")).toBe("1 / 21");
-    expect(f(r, "owner_original")).toBe("Pechley Mich°");
+    expect(f(r, "owner_original")).toBe("Pöching Michl.[?]"); // val 119 del 2c (v57 'Pechley Mich°' fabriirana)
     expect(f(r, "jaethe")).toBe("1");
     expect(f(r, "klafter")).toBe("65");
     expect(f(r, "anmerkung")).toContain("rdeče prečrtana");
     expect(f(r, "anmerkung")).toContain("F-PV-07-SPLIT val 115");
-    // sidri: r12 = Wunderling (prazna celica v57), r14 = Pechley Michael p14 (Nro 20)
+    // sidri: r12 = Wunderling (prazna celica v57 — razhajanje del 2c), r14 = Pöching Michael p14 (Nro 20; val 119 del 2c popravek iz v57 'Pechley Michael')
     expect(f(byPage(40)[12], "owner_original")).toBe("Wunderling");
-    expect(f(byPage(40)[14], "owner_original")).toBe("Pechley Michael");
+    expect(f(byPage(40)[14], "owner_original")).toBe("Pöching Michael");
     expect(f(byPage(40)[14], "klafter")).toBe("860");
   });
 
@@ -205,7 +205,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(pr.ps_parcels.some((p) => p.page === 49 && p.parcel_number === 2)).toBe(false);
   });
 
-  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha b5d3ae93", () => {
+  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha 745a9cdd", () => {
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
@@ -220,10 +220,10 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^b5d3ae93/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^745a9cdd/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha b5d3ae93… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha 745a9cdd… (pogodba §22)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",

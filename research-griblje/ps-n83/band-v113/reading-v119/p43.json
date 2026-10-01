@@ -1,0 +1,159 @@
+{
+ "meta": {
+  "val": 119,
+  "del": "2c",
+  "page": 43,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "tall prerezi z r-markerji + zz-/gz-pXX-rNN x22-x30 (per-page dy: p38/p39 +6, p41 +6..10, p42 -8, p43 +14; pisarjev ritem lokalno stisnjen na p39 r5.5) + medstranski hišni preseki (h23-h28 Ring, h29 Müllner, h30 Bruckler, h42/40/41 Pöching, h43 Brulla, h49 Schimetz, h51/52/68/81 Ulrich, h61 Tillach, h62/63/66 Krischan, h64 Veritschan, h65 Ring Martho/Dorothea/Jakob[?], h67 Puchey/Pöching) + PUA presek (h.61 Tillak, h.62 Brinczhan, h.64 Veritscher, h.65 Widhann, h.68 Urich Mattle, h.69 Christian Brandl) + PT + registarski presek; 2↔3/4↔1/5↔6 glyf-pravila del 2a; 3-glyf brez zastavice (p41-r15 32, p43-r16 63), 4-glyf kot 61/64 (p42-r14 49), 8-glyf dvojna zanka (p41-r14 68)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": [
+   "tall-p43-names (x3, r-markerji)",
+   "zz-p43-r00..r19 (x22, dy po strani)",
+   "gz x24-x30 izbrani (dvomljive vrstice)"
+  ],
+  "note": "p43 = zaključek imenskega passa p38–p43 (vrstice sedejo NIZKO, dy +14): Schimetz h16/55/56/49/65 ×5, Ulrich h51/81/51/52/81 + Parbna[?] w2 ×4, Pöching h50, Strohschneid h14, Tillach h61 ×2, Krischan h62/h63, Schaffschick h13/h8 ×3; 3 haus POPRAVEK (149->49 Blatt-artefakt, 69->62, 62->63); medstranski presek h49 Schimetz Michael ×3 (p42-r14 + p43-r3)"
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "16",
+   "seen_name": "Schimetz Michel.[?]",
+   "old_haus": "16",
+   "old_name": "Schönnig Michael",
+   "verdict": "ime POPRAVEK Schönnig Michael -> Schimetz Michel.[?] (glyf = p42 'Schimetz' forma; v57 'Schönnig' fabriirana — Noben 'Schönnig' ni v črnilu)"
+  },
+  "r1": {
+   "seen_haus": "55",
+   "seen_name": "Schimetz Leon.[?]",
+   "old_haus": "55",
+   "old_name": "Schönnig Leon",
+   "verdict": "ime POPRAVEK Schönnig Leon -> Schimetz Leon.[?] (w2 'Leon.' jasno)"
+  },
+  "r2": {
+   "seen_haus": "56",
+   "seen_name": "Schimetz Peter.[?]",
+   "old_haus": "56",
+   "old_name": "Schönnig Peter",
+   "verdict": "ime POPRAVEK Schönnig Peter -> Schimetz Peter.[?] (w2 'Peter.' jasno)"
+  },
+  "r3": {
+   "seen_haus": "49",
+   "seen_name": "Schimetz Michael.",
+   "old_haus": "149",
+   "old_name": "Schönnig Michael",
+   "verdict": "haus POPRAVEK 149->49 (tall: '1|49' = Blatt '1' + haus '49' — v57 je zlil Blatt+haus; h49 = p42-r14 'Schimetz Michael' + r16-r1 'Thomas Hampel'-convergence) + ime POPRAVEK Schönnig Michael -> Schimetz Michael. (medstranski presek h49 Schimetz Michael ×3)"
+  },
+  "r4": {
+   "seen_haus": "51",
+   "seen_name": "Ulrich Parbna.[?]",
+   "old_haus": "51",
+   "old_name": "Ulrich Jakob",
+   "verdict": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (w1 'Ulrich' soglasen; w2 'Parbna[?]/Parna[?]' — gz x30: P-glyf z descenderjem (NI J-glyf 'Jakob'); 'Barbara[?]' alternativa (B/P dvom); v57 w2 fabriirana)"
+  },
+  "r5": {
+   "seen_haus": "50",
+   "seen_name": "Pöching. Mathel.[?]",
+   "old_haus": "50",
+   "old_name": "Pauling Wenzel",
+   "verdict": "ime POPRAVEK Pauling Wenzel -> Pöching. Mathel.[?] (h50 = p41-r8 forma ×2; glyf = Pöching forma; v57 'Pauling Wenzel' fabriirana)"
+  },
+  "r6": {
+   "seen_haus": "65",
+   "seen_name": "Schimetz Leon.[?]",
+   "old_haus": "65",
+   "old_name": "Schönnig Leon",
+   "verdict": "ime POPRAVEK Schönnig Leon -> Schimetz Leon.[?] (h65; par z r1)"
+  },
+  "r7": {
+   "seen_haus": "14",
+   "seen_name": "M. Paul. Strohschneid",
+   "old_haus": "14",
+   "old_name": "M. Paul. Strohschneid",
+   "verdict": "soglasje (v57 blizu črnilu; ink '~M. Paul Strohschmid[?]' — w2 končnica schneid/schmid dvom ostaja; nič ne spreminjamo)"
+  },
+  "r8": {
+   "seen_haus": "68",
+   "seen_name": "Ulrich Michl",
+   "old_haus": "68",
+   "old_name": "Ulrich Michl",
+   "verdict": "soglasje (h68 = PUA 'Urich Mattle' + p41-r14 'Ulrich Michl.' precedens; v57 soglasna)"
+  },
+  "r9": {
+   "seen_haus": "81",
+   "seen_name": "Ulrich Parbna.[?]",
+   "old_haus": "81",
+   "old_name": "Ulrich Jakob",
+   "verdict": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (gz x30: w2 'Parna/Parbna[?]' — isti glyf kot r4; v57 w2 fabriirana)"
+  },
+  "r10": {
+   "seen_haus": "51",
+   "seen_name": "Ulrich Parbna.[?]",
+   "old_haus": "51",
+   "old_name": "Ulrich Jakob",
+   "verdict": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (par z r4 h51)"
+  },
+  "r11": {
+   "seen_haus": "52",
+   "seen_name": "Ulrich Georg",
+   "old_haus": "52",
+   "old_name": "Ulrich Georg",
+   "verdict": "soglasje (h52 precedens; v57 soglasna)"
+  },
+  "r12": {
+   "seen_haus": "81",
+   "seen_name": "Ulrich Parbna.[?]",
+   "old_haus": "81",
+   "old_name": "Ulrich Jakob",
+   "verdict": "ime POPRAVEK Ulrich Jakob -> Ulrich Parbna.[?] (h81 par z r9)"
+  },
+  "r13": {
+   "seen_haus": "61",
+   "seen_name": "Tillach Michl.[?]",
+   "old_haus": "61",
+   "old_name": "Wittlich Martin",
+   "verdict": "ime POPRAVEK Wittlich Martin -> Tillach Michl.[?] (h61 = p41/p42 forma ×5; gz x24 dy14; v57 'Wittlich' fabriirana)"
+  },
+  "r14": {
+   "seen_haus": "61",
+   "seen_name": "Tillach Michl.[?]",
+   "old_haus": "61",
+   "old_name": "Fittkau Martin",
+   "verdict": "ime POPRAVEK Fittkau Martin -> Tillach Michl.[?] (h61 par z r13; v57 'Fittkau' fabriirana)"
+  },
+  "r15": {
+   "seen_haus": "62",
+   "seen_name": "Krischan Michl.[?]",
+   "old_haus": "69",
+   "old_name": "Horechan Michl",
+   "verdict": "haus POPRAVEK 69->62 (gz x24 dy14: '62' jasno; v57 6↔9?) + ime POPRAVEK Horechan Michl -> Krischan Michl.[?] (glyf = Krischan-forma; PUA h.69 'Christian Brandl' orient. — del-2a odprto vprašanje p47 ostaja)"
+  },
+  "r16": {
+   "seen_haus": "63",
+   "seen_name": "Krischan Georg.[?]",
+   "old_haus": "62",
+   "old_name": "Witschak Georg",
+   "verdict": "haus POPRAVEK 62->63 (gz x24 dy14: 3-glyf brez zastavice jasna) + ime POPRAVEK Witschak Georg -> Krischan Georg.[?] (h63 par z r15-grozdo 62/63 kot p41-r0/r1)"
+  },
+  "r17": {
+   "seen_haus": "13",
+   "seen_name": "Schaffschick Mathä.[?]",
+   "old_haus": "13",
+   "old_name": "Vohfseheidler Mathäus",
+   "verdict": "ime POPRAVEK Vohfseheidler Mathäus -> Schaffschick Mathä.[?] (h13; w1 = p40-r4 'Schaffschick' forma; w2 'Mathä.[?]' po črnilu+v57; v57 w1 fabriirana)"
+  },
+  "r18": {
+   "seen_haus": "8",
+   "seen_name": "Schaffschick Mathä.[?]",
+   "old_haus": "8",
+   "old_name": "Stahlfeldt Mathäus",
+   "verdict": "ime POPRAVEK Stahlfeldt Mathäus -> Schaffschick Mathä.[?] (h8 par z r19; v57 'Stahlfeldt' fabriirana; vrstica rdeče prečrtana)"
+  },
+  "r19": {
+   "seen_haus": "8",
+   "seen_name": "Schaffschick Mathä.[?]",
+   "old_haus": "8",
+   "old_name": "Stahlfeldt Mathäus",
+   "verdict": "ime POPRAVEK Stahlfeldt Mathäus -> Schaffschick Mathä.[?] (h8 par z r18)"
+  }
+ }
+}

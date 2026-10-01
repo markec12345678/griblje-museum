@@ -35,13 +35,13 @@ describe("val 119 del 1 — gardele vhodov", () => {
     expect(CH.changes.length).toBe(99);
   });
 
-  test("reading_pass plasti: v119-names 362 (del 1+2a+2b); v113 0; v114 365; v118-names 60; v115-insert 4; v86 1795", () => {
+  test("reading_pass plasti: v119-names 485 (del 1+2a+2b+2c); v113 0; v114 365; v118-names 60; v115-insert 4; v86 1795", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(362); // del 1 (120) + del 2a (120) + del 2b (p32-p37 = 122)
+    expect(n("v119-names")).toBe(485); // del 1 (120) + del 2a (120) + del 2b (122) + del 2c (p38-p43 = 123)
     expect(n("v113-ps-reread")).toBe(0);
-    expect(n("v114-ps-reread")).toBe(366); // val 119 del 2b: p32–p37 (121 v114 vrstic) -> v119-names
+    expect(n("v114-ps-reread")).toBe(244); // val 119 del 2c: p38–p43 (122 v114 vrstic) -> v119-names
     expect(n("v118-names")).toBe(60);
-    expect(n("v115-insert")).toBe(3); // val 119 del 2b: p34 r20 prebrana -> v119-names
+    expect(n("v115-insert")).toBe(2); // val 119 del 2c: p40-r13 (v115) prebrana -> v119-names
     expect(n("v86-colonial-tiles")).toBe(1795);
   });
 
@@ -157,10 +157,10 @@ describe("val 119 del 1 — p25 (Schimer + Habschider par)", () => {
 });
 
 describe("val 119 del 1 — iskrenost (§4)", () => {
-  test("TRANSCRIBED = 0; review_status nedotaknjen; 35 odprtih razhajanj z anmerkung (del 1: 28 + del 2a: 5 + del 2b: 2)", () => {
+  test("TRANSCRIBED = 0; review_status nedotaknjen; 37 odprtih razhajanj z anmerkung (del 1: 28 + del 2a: 5 + del 2b: 2 + del 2c: 2)", () => {
     expect(REG.every((r) => r.review_status !== "TRANSCRIBED")).toBe(true);
     const withOpen = REG.filter((r) => String(r.anmerkung).includes("[v119 imenski pass: razhajanje odprto")).length;
-    expect(withOpen).toBe(35); // del 1: 28 + del 2a: 5 (p27-r2/r6, p28-r5/r13, p31-r19) + del 2b: 2 (p32-r0, p34-r20)
+    expect(withOpen).toBe(37); // del 1: 28 + del 2a: 5 + del 2b: 2 + del 2c: 2 (p38-r15, p40-r12)
   });
 
   test("normalizacija: 'Christian' črnilo -> 'Christan' register (val 118 precedens); 'Kristan' K-napaka popravljenja", () => {
@@ -171,8 +171,8 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha b5d3ae93 raznesen; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^b5d3ae93/);
+  test("KG sha 745a9cdd raznesen; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^745a9cdd/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];
@@ -183,13 +183,13 @@ describe("val 119 del 1 — kaskada (izrecna)", () => {
     expect(s.length).toBeGreaterThan(0);
   });
 
-  test("pass3 392 parcel + raba 105/142 identično; K5 dito 208; K9 69 nespremenjen", () => {
+  test("pass3 392 parcel + raba 105/142 identično; K5 dito 207; K9 69 nespremenjen", () => {
     const pr = readJSON("research-griblje/atlas-1825/parcel-register-1825.json") as Record<string, unknown>;
     expect(pr.ps_parcels_total).toBe(392);
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as {
       meta: Record<string, unknown>;
     };
-    expect(String(c4.meta.K5_input_reliability)).toContain("208/2875");
+    expect(String(c4.meta.K5_input_reliability)).toContain("207/2875");
     const k9 = JSON.stringify(c4);
     expect(k9).toContain('"jaethe_plain_100_1599":69');
   });

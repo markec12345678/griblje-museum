@@ -213,8 +213,8 @@ describe("val 107 — prehod števcev (izrecen, testno voden)", () => {
     expect(f12!.status).toContain("RESOLVED-V107");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha b5d3ae93… (val 116; val 115 je bil b5d3ae93, val 114 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
-    expect(kgSha).toMatch(/^b5d3ae93/);
+  test("kaskada: runtime kopije držijo isti KG sha 745a9cdd… (val 116; val 115 je bil 745a9cdd, val 114 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
+    expect(kgSha).toMatch(/^745a9cdd/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),
