@@ -1,0 +1,155 @@
+{
+ "meta": {
+  "val": 119,
+  "del": 2,
+  "page": 31,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p31-g0..2 + diag rowzoomi x14-x24 + DVE tall-sliki (r2-r7, r10-r19 — celotne vrstice z haus+imenom poravnano, x7) + pravilna-analiza pravil (p31 pravila = standard +5..7px) + R-glijf referenca + hišni preseki (h25 Ring Mito ×8 p27-p30, h24 Ring Michael, h23 Ring Mathä, h29 Müller, h60/h32/h68/h50/h41/h40)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p31-r00 (x16)", "diag-p31-r01 (x16)", "diag-p31-r02 (x14)", "diag-p31-r03 (x16)", "diag-p31-r04 (x14)", "diag-p31-r05 (x14)", "diag-p31-r06 (x14)", "diag-p31-r11 (x16)", "diag-p31-r16 (x16)", "diag-p31-r17 (x16)", "diag-p31-r18 (x16)", "diag-p31-r02-r07-tall (x7)", "diag-p31-r10-r19-tall (x7)"],
+  "note": "p31 = STRUKTURNA odkritje: v57 prepis je SHIFTED za 1 vrstico od r3 naprej — register r_N (N>=3) nosi vsebino črnila r_{N-1}. Dokaz: haus-sekvenca register (r3..r19: 64,23,23,29,29,24,24,25,25,60,60,32,68,32,50,41,40) = črnilo (r2..r18: 64,23,23,29,29,24,24,25,25,60,60,32,68,32,50,41,40) 1:1; v57 r3 'Puchey Georg DITTO' = FANTOMSKA vrstica (črnilo r3 = '23 Ring Mathä'), črnilo r19 pa je fragment brez haus-vpisa (kot p27-r2/r6) — v57 ga ni prepisal. Implikacije: (1) vseh 7 v57 ditto-zastavic ovrženih (črnilo povsod piše polno ime: r2, r5, r7, r9, r11, r13; r3-zastava ugasi s fantomom); (2) 'Prinz Michl' ×6 = črnilo 'Ring Mathä/Ring Michl/Ring Mito' (R-glijf; h23/h24/h25 preseki); (3) 'Wurzen Michl' ×3 = črnilo 'Ring Mito' (r0/r10; v57-r11 = črnilo 'Schelle Jank[?]' h60); (4) 'Schelle Janns' = črnilo 'Schelle Jank[?]'; (5) 'Hoch Balth' (r15) = črnilo 'Hoch Mito[?]' (h68); (6) 'Wächter Mathäus' (r17) = črnilo 'Pichler[?] Georg' (h41); (7) 'Pucher Georg' (r18) = črnilo 'Pichler[?] Mathl[?]' (h40); (8) r19 = fragment → razhajanje odprto. Hosuen: r2 haus = madež (64[?])."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito[?]",
+   "old_haus": "25",
+   "old_name": "Wurzen Michl",
+   "verdict": "ime POPRAVEK Wurzen Michl -> Ring Mito[?] (x16: R-glijf + 'Mieö' = Mito-forma; 'Wurzen' 𝒲 NE obstaja v črnilu; h25 = Ring Mito hiša — 8. presek p27-p30; [?] na krstnem)"
+  },
+  "r1": {
+   "seen_haus": "64",
+   "seen_name": "Puchey Georg",
+   "old_haus": "64",
+   "old_name": "Puchey Georg",
+   "verdict": "soglasje (črnilo 'Pacheag[?]' = spelling forma 'Puchey' — prekrižani ch + y-rep)"
+  },
+  "r2": {
+   "seen_haus": "64[?]",
+   "seen_name": "Puchey Georg",
+   "old_haus": "64",
+   "old_name": "Puchey Georg",
+   "verdict": "soglasje + ditto ovržen: črnilo piše polno 'Puchey Georg.' (x14); haus = debel madež (64[?])"
+  },
+  "r3": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä",
+   "old_haus": "64",
+   "old_name": "Puchey Georg",
+   "verdict": "ime POPRAVEK Puchey Georg -> Ring Mathä + haus POPRAVEK 64->23 (tall x7: jasno '23 | Ring Mathä.'; v57 r3 = FANTOMSKA ditto-vrstica — prepis shifted za 1 od tu naprej; h23 = Ring Mathä hiša — 4. presek; ditto-zastava ugasi — vrstica sploh ni ditto)"
+  },
+  "r4": {
+   "seen_haus": "23",
+   "seen_name": "Ring Mathä",
+   "old_haus": "23",
+   "old_name": "Prinz Michl",
+   "verdict": "ime POPRAVEK Prinz Michl -> Ring Mathä (tall x7: R-glijf + 'Mathä'; v57 'Prinz' = zgrešeni R + Mathä; h23 ✓)"
+  },
+  "r5": {
+   "seen_haus": "29",
+   "seen_name": "Müller Hannes",
+   "old_haus": "23",
+   "old_name": "Prinz Michl",
+   "verdict": "ime POPRAVEK Prinz Michl -> Müller Hannes + haus POPRAVEK 23->29 (tall x7: '29 | Müller Hänne.'; shift-dokaz)"
+  },
+  "r6": {
+   "seen_haus": "29",
+   "seen_name": "Müller Hannes",
+   "old_haus": "29",
+   "old_name": "Müller Hannes",
+   "verdict": "soglasje (tall x7: '29 | Müller Hann.')"
+  },
+  "r7": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael",
+   "old_haus": "29",
+   "old_name": "Müller Hannes",
+   "verdict": "ime POPRAVEK Müller Hannes -> Ring Michael + haus POPRAVEK 29->24 (tall x7: '24 | Ring Michael'; h24 = Ring Michael hiša — 7. presek; v57 ditto-zastava ovržena — črnilo polno ime, poleg tega drug lastnik)"
+  },
+  "r8": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michl",
+   "old_haus": "24",
+   "old_name": "Prinz Michl",
+   "verdict": "ime POPRAVEK Prinz Michl -> Ring Michl (tall x7: '24 | Ring Michl' — kratka forma Michael-a; h24 ✓)"
+  },
+  "r9": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito[?]",
+   "old_haus": "24",
+   "old_name": "Prinz Michl",
+   "verdict": "ime POPRAVEK Prinz Michl -> Ring Mito[?] + haus POPRAVEK 24->25 (tall x7: '25 | Ring Mieö' = Mito; h25 presek; ditto ovržen)"
+  },
+  "r10": {
+   "seen_haus": "25",
+   "seen_name": "Ring Mito[?]",
+   "old_haus": "25",
+   "old_name": "Wurzen Michl",
+   "verdict": "ime POPRAVEK Wurzen Michl -> Ring Mito[?] (tall x7: '25 | Ring Mito'; h25 parcela; 'Wurzen' fabriirano)"
+  },
+  "r11": {
+   "seen_haus": "60",
+   "seen_name": "Schelle Jank[?]",
+   "old_haus": "25",
+   "old_name": "Wurzen Michl",
+   "verdict": "ime POPRAVEK Wurzen Michl -> Schelle Jank[?] + haus POPRAVEK 25->60 (x16: '60 | Schelbo/Schelle Jayk[?]' — priimek 'Schelle' forma, krstno 'Jank[?]' (y/k dvom); v57-r11 = premaknjen vpis; ditto ovržen)"
+  },
+  "r12": {
+   "seen_haus": "60",
+   "seen_name": "Schelle Jank[?]",
+   "old_haus": "60",
+   "old_name": "Schelle Janns",
+   "verdict": "ime POPRAVEK Schelle Janns -> Schelle Jank[?] (x16: isti niz kot r11 — h60 parcela; v57 'Janns' = odpadek)"
+  },
+  "r13": {
+   "seen_haus": "32",
+   "seen_name": "Hoch Georg",
+   "old_haus": "60",
+   "old_name": "Schelle Janns",
+   "verdict": "ime POPRAVEK Schelle Janns -> Hoch Georg + haus POPRAVEK 60->32 (tall x7: '32 | H?ich Georg'; v57 ditto ovržena — vrstica ni ditto; h32 = Hoch hiša)"
+  },
+  "r14": {
+   "seen_haus": "68",
+   "seen_name": "Hoch Mito[?]",
+   "old_haus": "32",
+   "old_name": "Hoch Georg",
+   "verdict": "ime POPRAVEK Hoch Georg -> Hoch Mito[?] + haus POPRAVEK 32->68 (tall x7: '68 | H?ich Mieö' — krstno M-forma = Mito[?]; v57 'Balth' NE obstaja v črnilu; h68)"
+  },
+  "r15": {
+   "seen_haus": "32",
+   "seen_name": "Hoch Georg",
+   "old_haus": "68",
+   "old_name": "Hoch Balth",
+   "verdict": "ime POPRAVEK Hoch Balth -> Hoch Georg + haus POPRAVEK 68->32 (tall x7: '32 | H?ich Georg.'; h32 = 2. parcela)"
+  },
+  "r16": {
+   "seen_haus": "50",
+   "seen_name": "Wächter Mathä",
+   "old_haus": "32",
+   "old_name": "Hoch Georg",
+   "verdict": "ime POPRAVEK Hoch Georg -> Wächter Mathä + haus POPRAVEK 32->50 (x16: '50 | ?ardi?r/Wächter Mathä.' — priimek po v57 'Wächter' (črnilo skladno z mejo), krstno 'Mathä.' kratka forma; v57 'Mathäus' = normalizacija)"
+  },
+  "r17": {
+   "seen_haus": "41",
+   "seen_name": "Pichler[?] Georg",
+   "old_haus": "50",
+   "old_name": "Wächter Mathäus",
+   "verdict": "ime POPRAVEK Wächter Mathäus -> Pichler[?] Georg + haus POPRAVEK 50->41 (x16: '41 | P?ckler/Pichler Georg.' — telo P-i/ch-l-e-r → 'Pichler[?]'; v57 'Wächter' = premaknjen vpis iz r16)"
+  },
+  "r18": {
+   "seen_haus": "40",
+   "seen_name": "Pichler[?] Mathl[?]",
+   "old_haus": "41",
+   "old_name": "Pucher Georg",
+   "verdict": "ime POPRAVEK Pucher Georg -> Pichler[?] Mathl[?] + haus POPRAVEK 41->40 (x16: '40 | P?ckler/Pichler M?thl' — isti priimek kot r17 + krstno 'Mathl[?]'; v57 'Pucher Georg' = premaknjen vpis iz r17)"
+  },
+  "r19": {
+   "seen_haus": "",
+   "seen_name": "R?b?ang P?ening[?]",
+   "old_haus": "40",
+   "old_name": "Prinz Michl",
+   "verdict": "razhajanje odprto (struktura): črnilo r19 = nepopolni fragment brez haus-vpisa (tall x7: dolga zapeta črka 'R?b?ang P?ening[?]...' — kakor p27-r2/r6 odpadek); v57 'Prinz Michl' h40 = premaknjen vpis iz črnila r18 (shift-dokaz zadnje povezave); brez POPRAVEK — anmerkung z strukturno opombo"
+  }
+ }
+}
