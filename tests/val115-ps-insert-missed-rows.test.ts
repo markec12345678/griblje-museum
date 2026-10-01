@@ -23,7 +23,7 @@
  *
  * KASKADA (izrecna, testno vodena): PS parcele 391 → 392 (+1 p048-j12 brez haus_no); land use
  * None 76 → 77; KG PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi/HAS_PARCEL NESPREMENJENI
- * 3477/2773 (nova parcela brez haus_no = brez vezi; sha 0b478847); timeline I6 PUA 2035 / PS 392 /
+ * 3477/2773 (nova parcela brez haus_no = brez vezi; sha 4bb6a974); timeline I6 PUA 2035 / PS 392 /
  * raba 173+142; coverage PARTIAL 1066 → 1067; c4 K9 jaethe_plain_100_1599 69 NESPREMENJENO
  * (12/1/2 ≤ 99), druge oblike izrecno pincirane.
  *
@@ -69,7 +69,7 @@ describe("val 115 — gardele in infrastruktura", () => {
     expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
     expect(REG.filter((r) => f(r, "reading_pass") === "v112-ps-reread").length).toBe(265);
     expect(REG.filter((r) => f(r, "reading_pass") === "v113-ps-reread").length).toBe(0);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(607);
+    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(487);
   });
 
   test("changes audit: val 115, 4 vstavitve + 4 page_obs (p49, p48, p40, p34 + obs)", () => {
@@ -205,7 +205,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(pr.ps_parcels.some((p) => p.page === 49 && p.parcel_number === 2)).toBe(false);
   });
 
-  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha 0b478847", () => {
+  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha 4bb6a974", () => {
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
@@ -220,10 +220,10 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^0b478847/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^4bb6a974/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 0b478847… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha 4bb6a974… (pogodba §22)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",

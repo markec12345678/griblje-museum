@@ -37,9 +37,9 @@ describe("val 119 del 1 — gardele vhodov", () => {
 
   test("reading_pass plasti: v119-names 120 (p20–p25); v113 0; v114 607; v118-names 60; v115-insert 4; v86 1795", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(120);
+    expect(n("v119-names")).toBe(240); // del 1 (120) + del 2 (p26-p31)
     expect(n("v113-ps-reread")).toBe(0);
-    expect(n("v114-ps-reread")).toBe(607);
+    expect(n("v114-ps-reread")).toBe(487);
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(4);
     expect(n("v86-colonial-tiles")).toBe(1795);
@@ -118,11 +118,11 @@ describe("val 119 del 1 — p22 (Pustig Marjare fabriakcija)", () => {
 });
 
 describe("val 119 del 1 — p23/p24 (Schlomnitz + Habschider Georg)", () => {
-  test("p23: Schlomnitz Georg pattern-fill razbit (Johan/Peter); Krause Gorgy h15", () => {
+  test("p23: Schlomnitz Georg pattern-fill razbit (Johan/Peter); Strauß Gorgy h15 (del 2 cross-val fix)", () => {
     const p23 = rowsOn(23);
     expect(p23.filter((r) => r.owner_original === "Schlomnitz Georg").length).toBe(0);
     expect(p23.filter((r) => r.owner_original === "Schlomnitz Johan").length).toBe(3);
-    expect(p23[4].owner_original).toBe("Krause Gorgy");
+    expect(p23[4].owner_original).toBe("Strauß Gorgy"); // val 119 del 2: x16 p23-r4 ≡ p28-r9 (isti h15) — "Krause" brez t-prečke ostaja za h45
   });
 
   test("p24: Kreutler/Schuster/Sagmeister izginili; Habschider Georg ×4 h48; Kruescher Peter h36", () => {
@@ -157,10 +157,10 @@ describe("val 119 del 1 — p25 (Schimer + Habschider par)", () => {
 });
 
 describe("val 119 del 1 — iskrenost (§4)", () => {
-  test("TRANSCRIBED = 0; review_status nedotaknjen; 28 odprtih razhajanj z anmerkung", () => {
+  test("TRANSCRIBED = 0; review_status nedotaknjen; 33 odprtih razhajanj z anmerkung (del 1: 28 + del 2: 5)", () => {
     expect(REG.every((r) => r.review_status !== "TRANSCRIBED")).toBe(true);
     const withOpen = REG.filter((r) => String(r.anmerkung).includes("[v119 imenski pass: razhajanje odprto")).length;
-    expect(withOpen).toBe(28);
+    expect(withOpen).toBe(33); // del 1: 28 + del 2: 5 (p27-r2/r6, p28-r5/r13, p31-r19)
   });
 
   test("normalizacija: 'Christian' črnilo -> 'Christan' register (val 118 precedens); 'Kristan' K-napaka popravljenja", () => {
@@ -171,8 +171,8 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha 0b478847 raznesen; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^0b478847/);
+  test("KG sha 4bb6a974 raznesen; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^4bb6a974/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];
@@ -183,13 +183,13 @@ describe("val 119 del 1 — kaskada (izrecna)", () => {
     expect(s.length).toBeGreaterThan(0);
   });
 
-  test("pass3 392 parcel + raba 105/142 identično; K5 dito 222; K9 69 nespremenjen", () => {
+  test("pass3 392 parcel + raba 105/142 identično; K5 dito 215; K9 69 nespremenjen", () => {
     const pr = readJSON("research-griblje/atlas-1825/parcel-register-1825.json") as Record<string, unknown>;
     expect(pr.ps_parcels_total).toBe(392);
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as {
       meta: Record<string, unknown>;
     };
-    expect(String(c4.meta.K5_input_reliability)).toContain("222/2875");
+    expect(String(c4.meta.K5_input_reliability)).toContain("215/2875");
     const k9 = JSON.stringify(c4);
     expect(k9).toContain('"jaethe_plain_100_1599":69');
   });

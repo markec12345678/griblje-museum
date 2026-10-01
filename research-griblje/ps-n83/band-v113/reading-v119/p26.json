@@ -1,0 +1,155 @@
+{
+ "meta": {
+  "val": 119,
+  "del": 2,
+  "page": 26,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p26-g0..2 + diag rowzoomi x20-x24 (make-rowzoom-v118.py / make-rowzoom-v119b.py s per-page dy) + PUA presek + 2↔3 kalibracija (r13 '38' = 3-referenca: dvokotljasta z zastavico; 2 = okrogla zgornja zanka + valovita baza: r5/r9/r17) + registarski presek (Pavlicz p13, Brullat p6, h67 Pavlič p27/p28)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p26-r01 (x12+x20+x20)", "diag-p26-r04 (x12+x20)", "diag-p26-r05 (x20)", "diag-p26-r06 (x20)", "diag-p26-r09 (x20)", "diag-p26-r11 (x24)", "diag-p26-r12 (x12+x20×2)", "diag-p26-r13 (x20)", "diag-p26-r15 (x12+x20+x24×2)", "diag-p26-r17 (x12+x20×2)", "diag-p26-r18 (x12+x20+x20)", "diag-p26-r19 (x12+x20×3)"],
+  "note": "p26 = 2↔3 šum v smeri 3→2 (v57 je 3× prebrala 2 kot 3: r6 38→28, r9 36→26, r17 35→25; r4 36 je PRAV — glijf kompaktni curl-zigzag = 3-varianta, jasno ločljiv od r5/r9 okrogle 2). v57 r18 'Pirn Michael' h214 = dvojna napaka: črnilo 'Ring Michael' h24 (R-glijf = velika skleda z notranjo zanko, identična p27-r1 'Ring' referenci x24; g-spuščnik sred besede izključuje 'Pirn'; brez sredinske 1 v haus). v57 r12/r19 'Stangl' = fabriirano (črnilo P-priimka; r12 = isti priimek kot r11 'Pobezy', r19 = 'Pavlicz[?]' cf. h67 Pavlič/Pavlic p27-r11/p28 — isti h67). v57 r15 'Wurzel' = začetnica zgrešena (črnilo ℬ = Kurrent B z 3-zankó; cf. 'Brullat Michl' p6 h162). v57 r1 ditto ovržen (črnilo 'Michelkorn Peter[?]'). PUA h.46 = Lahodathar Wittib — PUA plast se ne ujema (samo orientacija). Kapitel: r13 'Johann Georg' = ime brez priimka (v57 soglasje)."
+ },
+ "names_audit": {
+  "r0": {
+   "seen_haus": "47",
+   "seen_name": "Michelkorn Michel",
+   "old_haus": "47",
+   "old_name": "Michelkorn Michel",
+   "verdict": "soglasje (nz-g0 x6: '47 Michelkorn Michel' jasno)"
+  },
+  "r1": {
+   "seen_haus": "46",
+   "seen_name": "Michelkorn Peter[?]",
+   "old_haus": "46",
+   "old_name": "Michelkorn Michel",
+   "verdict": "ime POPRAVEK Michelkorn Michel -> Michelkorn Peter[?] (x20: druga beseda P-e-t-e-r z dolgim zaključnim dvigom = r; NI 'Michel'); ditto ovržen: črnilo piše polno ime, ne d° (v57 'Ditto [rot]' pobrisan); končnica -r/[?] negotova brez druge instance; haus soglasje 46"
+  },
+  "r2": {
+   "seen_haus": "45",
+   "seen_name": "Stangl Georg",
+   "old_haus": "45",
+   "old_name": "Stangl Georg",
+   "verdict": "soglasje"
+  },
+  "r3": {
+   "seen_haus": "45",
+   "seen_name": "Stangl Georg",
+   "old_haus": "45",
+   "old_name": "Stangl Georg",
+   "verdict": "soglasje + ditto ovržen: črnilo piše polno 'Stangl Georg' (nz-g0 x6), ne d°"
+  },
+  "r4": {
+   "seen_haus": "36",
+   "seen_name": "Ring Johann",
+   "old_haus": "36",
+   "old_name": "Ring Johann",
+   "verdict": "soglasje (x20 haus: kompaktni curl-zigzag glijf = 3-varianta te strani, jasno različen od okroglih 2 r5/r9; NI 26)"
+  },
+  "r5": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann",
+   "old_haus": "26",
+   "old_name": "Ring Johann",
+   "verdict": "soglasje (x20: okrogla 2 z valovito bazo = 2-referenca strani)"
+  },
+  "r6": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl",
+   "old_haus": "38",
+   "old_name": "Ring Michl",
+   "verdict": "haus POPRAVEK 38->28 (x20: okrogla 2-forma identična r5/r9, NI dvokotljasta 3 kot r13; 8 z dolgim repom); ime soglasje"
+  },
+  "r7": {
+   "seen_haus": "27",
+   "seen_name": "Mullerkorn Johann",
+   "old_haus": "27",
+   "old_name": "Mullerkorn Johann",
+   "verdict": "soglasje"
+  },
+  "r8": {
+   "seen_haus": "30",
+   "seen_name": "Caputa[?] Michel",
+   "old_haus": "30",
+   "old_name": "Caputa[?] Michel",
+   "verdict": "soglasje (ink-blob čez haus glijfa; 3-forma + 0 še berljiva; v57 [?] pri priimku ohranjen)"
+  },
+  "r9": {
+   "seen_haus": "26",
+   "seen_name": "Ring Johann",
+   "old_haus": "36",
+   "old_name": "Ring Johann",
+   "verdict": "haus POPRAVEK 36->26 (x20: okrogla 2-forma identična r5; r4 je edini 3-glijf med Ring-Johann vrsticami); ime soglasje"
+  },
+  "r10": {
+   "seen_haus": "28",
+   "seen_name": "Ring Michl",
+   "old_haus": "28",
+   "old_name": "Ring Michl",
+   "verdict": "soglasje"
+  },
+  "r11": {
+   "seen_haus": "40",
+   "seen_name": "Pobezy Michel",
+   "old_haus": "40",
+   "old_name": "Pobezy Michel",
+   "verdict": "soglasje (x24: P-začetnica z zankó + spuščnikom; sredinske črke drobne — črkovanje po v57, dvom izrecno ne označen ker v57 oblika sovpada z glijfom)"
+  },
+  "r12": {
+   "seen_haus": "41",
+   "seen_name": "Pobezy Georg",
+   "old_haus": "41",
+   "old_name": "Stangl Georg",
+   "verdict": "ime POPRAVEK Stangl Georg -> Pobezy Georg (x20: isti priimek-glijf kot r11 'Pobezy' — P-začetnica + enaka končnica -zy; 'Stangl' ima S-dolg zank, črnilo ga NIMA); haus soglasje 41"
+  },
+  "r13": {
+   "seen_haus": "38",
+   "seen_name": "Johann Georg",
+   "old_haus": "38",
+   "old_name": "Johann Georg",
+   "verdict": "soglasje (x20 haus: 3-referenca strani — dvokotljasta z zastavico; ime brez priimka potrjeno)"
+  },
+  "r14": {
+   "seen_haus": "44",
+   "seen_name": "Poschinger Joseph",
+   "old_haus": "44",
+   "old_name": "Poschinger Joseph",
+   "verdict": "soglasje (rdeči predoriz čez vrstico — črnilo pod njim berljivo)"
+  },
+  "r15": {
+   "seen_haus": "43",
+   "seen_name": "Brulla Michl[?]",
+   "old_haus": "43",
+   "old_name": "Wurzel Michl",
+   "verdict": "ime POPRAVEK Wurzel Michl -> Brulla Michl[?] (x24: začetnica ℬ = Kurrent B — navpično steblo + 3-zanka, NI 𝒲 dvojni V kot bi zahteval 'Wurzel'; telo B-r-u-l-l-a, brez z-spuščnika in brez končnega -l; cf. 'Brullat Michl' p6 h162 = ista družina, tu brez -t; [?] na -a/-t končnici); haus soglasje 43"
+  },
+  "r16": {
+   "seen_haus": "29",
+   "seen_name": "Mullag Emanuel",
+   "old_haus": "29",
+   "old_name": "Mullag Emanuel",
+   "verdict": "soglasje"
+  },
+  "r17": {
+   "seen_haus": "25",
+   "seen_name": "Ring Michl",
+   "old_haus": "35",
+   "old_name": "Ring Michl",
+   "verdict": "haus POPRAVEK 35->25 (x20: okrogla 2-forma + 5 z zastavico, NI 3); ime soglasje (R-glijf = velika skleda z notranjo zanko, identična p27-r1 referenci)"
+  },
+  "r18": {
+   "seen_haus": "24",
+   "seen_name": "Ring Michael",
+   "old_haus": "214",
+   "old_name": "Pirn Michael",
+   "verdict": "ime POPRAVEK Pirn Michael -> Ring Michael + haus POPRAVEK 214->24 (x20: R-glijf = velika skleda z notranjo zanko = p27-r1 'Ring' referenca; g-spuščnik sred besede IZKLJUČUJE 'Pirn' (brez spuščnika); haus dve števki 2+4 (A-oblika 4 kot r14 '44'), sredinske 1 NI — v57 '214' fabriirana vstavljanje; PUA h.214 prazen vnos = brez opore)"
+  },
+  "r19": {
+   "seen_haus": "67",
+   "seen_name": "Pavlicz Georg[?]",
+   "old_haus": "64",
+   "old_name": "Stangl Georg",
+   "verdict": "ime POPRAVEK Stangl Georg -> Pavlicz Georg[?] + haus POPRAVEK 64->67 (x20: P/R-začetnica z veliko skledo, NI S 'Stangl'; telo -a-u/n-l-s/e-y → najboljši ujemalec 'Pavlicz' (register p13 ×7); [?] na črkovanju; križni presek: h67 = 'Pavlič Georg' p27-r11 + 'Pavlic Georg' p28-r3/r9 — ISTA hiša, isti lastnik; haus x12: 6-zanka + 7-dvig, NI A-oblika 4)"
+  }
+ }
+}

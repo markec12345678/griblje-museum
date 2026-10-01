@@ -12,7 +12,7 @@
  *  - novi priimki: Malfg (= v57-p21 oblika, PUA "Malfa"), Gorgy, Husitsch Maria,
  *    Matho[?], Hof-Besizungen[?] (ne-osebni zapis)
  *  - kaskada: pass3 (392, land-use identičen), KG števci identični 3269/3477,
- *    sha 2790d893 → 0b478847; K5 dito 233→226; TRANSCRIBED=0, nič ne dvignjeno
+ *    sha 2790d893 → 4bb6a974; K5 dito 233→226; TRANSCRIBED=0, nič ne dvignjeno
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -62,7 +62,7 @@ describe("val 118 — gardele vhodov", () => {
     expect(REG.filter((r) => r.reading_pass === "v118-names").length).toBe(60);
     expect(REG.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1795);
     // p19 je nosil v114-ps-reread (val 114: p19, p20, p25–p55 = 667) — 20 vrstic prevzetih
-    expect(REG.filter((r) => r.reading_pass === "v114-ps-reread").length).toBe(607);
+    expect(REG.filter((r) => r.reading_pass === "v114-ps-reread").length).toBe(487);
     // p17/p18 sta nosili v113-ps-reread (val 113: p17–p24 brez p19/p20 = 120) — 40 vrstic prevzetih
     expect(REG.filter((r) => r.reading_pass === "v113-ps-reread").length).toBe(0);
     expect(REG.filter((r) => r.reading_pass === "v115-insert").length).toBe(4);
@@ -182,13 +182,13 @@ describe("val 118 — kaskada (izrecna)", () => {
     expect(nodes).toBe(3269);
     expect(edges).toBe(3477);
   });
-  test("KG sha 0b478847 raznesen v kaskadne artefakte", () => {
+  test("KG sha 4bb6a974 raznesen v kaskadne artefakte", () => {
     for (const f of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ]) {
       const s = readFileSync(join(REPO, f), "utf8");
-      expect(s).toContain("0b478847");
+      expect(s).toContain("4bb6a974");
     }
   });
   test("pass3: PS parcele 392 + land-use identičen (vrednostna projekcija nespremenjena)", () => {
@@ -205,7 +205,7 @@ describe("val 118 — kaskada (izrecna)", () => {
     const c4 = JSON.parse(
       readFileSync(join(REPO, "research-griblje/ps-n83/band-v86/c4-metrika-v90.json"), "utf8"),
     ) as { meta: Record<string, unknown> };
-    expect(String(c4.meta.K5_input_reliability)).toContain("222/2875");
+    expect(String(c4.meta.K5_input_reliability)).toContain("215/2875"); // val 119 del 2: 222 - 7 (p31 ditto ovrženi)
   });
   test("timeline I6 (2035, 392) + raba (173, 142) nespremenjena", () => {
     const tl = readJSON("research-griblje/atlas-1825/timeline-1825-1830.json");
