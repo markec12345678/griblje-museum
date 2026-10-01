@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "val": 119,
+  "page": 21,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p21-g0..2 + diag rowzoomi x12-x22 + PUA presek + referenčne primerjave (Malfg p21-r0, Johan p22-r0)",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p21-r01..r19", "fwz-p21-r04/06/07/11/13", "cmp3-johan-jelen"],
+  "note": "VELIKA NAJDBA: v57 'Jelen' (6 vrstic p21) = zgrešeno črnilo 'Johan' — cmp3 3-kratna identiteta (p21-r14 = p22-r0 Johan-referenca = p20-r1); popravki r9/r10/r12/r14/r15/r17/r19. r4: v57 'Peter Grang' (D) = ovržen — črnilo 'Peter Malfg' (M-kapica + 2 descenderja f/g, x22) → ditto ovržen. Dittoti r1/r2 ovrženi (polna imena). r7: 1. beseda rep '-obis' (kandidat Jacobis[?]) — v57 'Peter' ovržen, razhajanje odprto. r13: 2. beseda 'Mampfaut[?]'-struktura — v57 'Hampel' ovržen (brez -el). Haus 3↔5 šum: r10 31→51, r11 30→50. FUR: imenska celica prazna. Malfg/Grang/Mache bloki = v57 Reference-stran (val 118) — soglasja potrjena z agentovim vidom."
+ },
+ "names_audit": {
+  "r0": {"seen_haus": "40", "seen_name": "Peter Malfg", "old_haus": "40", "old_name": "Peter Malfg", "verdict": "soglasje (x20: P-e-t-e-r + M-a-l-f-g z f-prečko in g-spuščanjem)"},
+  "r1": {"seen_haus": "40", "seen_name": "Peter Malfg", "old_haus": "40", "old_name": "Peter Malfg", "verdict": "soglasje ime+haus; ditto ovržen: črnilo piše polno ime (agent 1-a ink-analiza: n=996 full-range), ne d°"},
+  "r2": {"seen_haus": "40", "seen_name": "Peter Malfg", "old_haus": "40", "old_name": "Peter Malfg", "verdict": "soglasje ime+haus (x12); ditto ovržen: polno ime v črnilu (n=907 full-range)"},
+  "r3": {"seen_haus": "41", "seen_name": "Peter Grang", "old_haus": "41", "old_name": "Peter Grang", "verdict": "soglasje (x12: G-kapica odprta + -ang)"},
+  "r4": {"seen_haus": "41", "seen_name": "Peter Malfg", "old_haus": "41", "old_name": "Peter Grang", "verdict": "ime POPRAVEK Peter Grang -> Peter Malfg (x22: M-kapica, 2×descender f+g — Grang ima 1×descender + G-kapica); ditto ovržen: polno ime, poleg tega DRUGAČE od r3 (v57 D-naredba nemogoča); haus soglasje 41"},
+  "r5": {"seen_haus": "40", "seen_name": "Peter Malfg", "old_haus": "40", "old_name": "Peter Malfg", "verdict": "soglasje (x12)"},
+  "r6": {"seen_haus": "41", "seen_name": "Michel Grang", "old_haus": "41", "old_name": "Michel Grang", "verdict": "soglasje (x12: Michel + Grang jasno)"},
+  "r7": {"seen_haus": "40", "seen_name": "Jacobis[?] Malfg", "old_haus": "40", "old_name": "Peter Malfg", "verdict": "razhajanje odprto (1. beseda): rep '-obis' jasno (x20) — kandidat 'Jacobis[?]/Jacobus[?]'; v57 'Peter' ovržen (rep bi moral biti '-eter'); 2. beseda Malfg soglasje; brez POPRAVEK (glava besede negotova); haus soglasje 40"},
+  "r8": {"seen_haus": "41", "seen_name": "Peter Grang", "old_haus": "41", "old_name": "Peter Grang", "verdict": "soglasje (x12)"},
+  "r9": {"seen_haus": "32", "seen_name": "Peter Johan", "old_haus": "32", "old_name": "Peter Jelen", "verdict": "ime POPRAVEK Peter Jelen -> Peter Johan (x12: Johan-oblika = cmp3 referenca; 'Jelen' v57 = zgrešen Johan); haus soglasje 32; rdeči robni zapisi (v113 obs)"},
+  "r10": {"seen_haus": "51", "seen_name": "Ulrich Johan", "old_haus": "31", "old_name": "Ulrich Jelen", "verdict": "ime POPRAVEK Ulrich Jelen -> Ulrich Johan (Johan-oblika) + haus POPRAVEK 31->51 (x12: 5 z zastavico na vrhu, ne 3; blok h51 z r12/r17)"},
+  "r11": {"seen_haus": "50", "seen_name": "Peter Malfg", "old_haus": "30", "old_name": "Peter Malfg", "verdict": "haus POPRAVEK 30->50 (x12: 5 z zastavico + ovalna 0, jasno); ime soglasje (v113 vrednostno razhajanje 1840 ni predmet tega passa)"},
+  "r12": {"seen_haus": "51", "seen_name": "Ulrich Johan", "old_haus": "51", "old_name": "Ulrich Jelen", "verdict": "ime POPRAVEK Ulrich Jelen -> Ulrich Johan (Johan-oblika); haus soglasje 51"},
+  "r13": {"seen_haus": "49", "seen_name": "Thomas Mampfaut[?]", "old_haus": "49", "old_name": "Thomas Hampel", "verdict": "razhajanje odprto (2. beseda): 'Thomas' soglasje; priimek = M-kapica + am + f/a + au + d-zanka (x22) — kandidat 'Mampfaut[?]'; v57 'Hampel' ovržen (rep ni '-el'); brez POPRAVEK; haus soglasje 49"},
+  "r14": {"seen_haus": "55", "seen_name": "Thomas Johan", "old_haus": "55", "old_name": "Thomas Jelen", "verdict": "ime POPRAVEK Thomas Jelen -> Thomas Johan (x12: Johan-oblika, cmp3 identiteta z p22-r0); haus soglasje 55"},
+  "r15": {"seen_haus": "36", "seen_name": "Thomas Johan", "old_haus": "36", "old_name": "Thomas Jelen", "verdict": "ime POPRAVEK Thomas Jelen -> Thomas Johan (nz g2: Johan-oblika); haus soglasje 36"},
+  "r16": {"seen_haus": "19", "seen_name": "Thomas Malfg", "old_haus": "19", "old_name": "Thomas Malfg", "verdict": "soglasje (nz g2 + diag: Thomas + Malfg jasno)"},
+  "r17": {"seen_haus": "51", "seen_name": "Ulrich Johan", "old_haus": "51", "old_name": "Ulrich Jelen", "verdict": "ime POPRAVEK Ulrich Jelen -> Ulrich Johan (nz g2: Johan-oblika); haus soglasje 51"},
+  "r18": {"seen_haus": "50", "seen_name": "Peter Malfg", "old_haus": "50", "old_name": "Peter Malfg", "verdict": "soglasje (x12 jasno)"},
+  "r19": {"seen_haus": "55", "seen_name": "Thomas Johan", "old_haus": "55", "old_name": "Thomas Jelen", "verdict": "ime POPRAVEK Thomas Jelen -> Thomas Johan (x12: Johan-oblika); haus soglasje 55"}
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "val": 119,
+  "page": 23,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p23-g0..2 (x6) + diag r16 x12 + Johan/Georg/Gorgy/Mike reference primerjave",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["diag-p23-r00", "diag-p23-r16 x12"],
+  "note": "p23: v57 'Schlomnitz Georg' ×4 (r0/r2/r6/r8) = pattern-fill — črnilo: Johan (r0/r6/r8, J-kapica + h-ascender + -an, negeogljivo različna glifa od G) in Peter (r2, jasna P). 'Krause Georg' r4 (h15) = 'Gorgy'-oblika (kratka, y-rep = p18-r10 referenca), medtem ko r14/r18 (h45) nosita daljši 'Georg.'-niz — različni Krause-vpisi. r7/r17: 'Eppinger Anton' = fabriiran — črnilo 'Lapajner Miko/Mike' h54 (isti niz kot p22 r10/r19 x20-potrjen 'Mike'); r17 tudi haus 56->54. r9 'Pechy Georg' = ovržen ('Ulrich Gorgy[?]'); r11 'Augusta' = ovržen ('Sagth[?]'); r16 'Rudischer Georg' = ovržen ('Uraney[?] Johan'). FUR: prazno. Rdeče marginalije: 'auf Grundbuchs-Blatt 10111' (r4/r14), '1860' (r14/r15 regija)."
+ },
+ "names_audit": {
+  "r0": {"seen_haus": "55", "seen_name": "Schlomnitz Johan", "old_haus": "55", "old_name": "Schlomnitz Georg", "verdict": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Johan (nz x6: J-kapica + h-ascender + -an = Johan-oblika, glifno nemogoce 'Georg'); haus soglasje 55"},
+  "r1": {"seen_haus": "36", "seen_name": "Schlomnitz Peter", "old_haus": "36", "old_name": "Schlomnitz Peter", "verdict": "soglasje (nz: P-jasno)"},
+  "r2": {"seen_haus": "58", "seen_name": "Schlomnitz Peter", "old_haus": "58", "old_name": "Schlomnitz Georg", "verdict": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Peter (nz: P-kapica + -eter, jasno ne G-Georg); haus soglasje 58"},
+  "r3": {"seen_haus": "51", "seen_name": "Uranek Peter", "old_haus": "51", "old_name": "Uranek Peter", "verdict": "soglasje (nz: U-kapica + -nek)"},
+  "r4": {"seen_haus": "15", "seen_name": "Krause Gorgy", "old_haus": "15", "old_name": "Krause Georg", "verdict": "ime POPRAVEK Krause Georg -> Krause Gorgy (nz x6: kratka G-o-r-g-y oblika z y-repom = p18-r10 Gorgy-referenca; razlicno od dolgega 'Georg.'-niza r14/r18); haus soglasje 15; rdeca marginalija Grundbuch 10111"},
+  "r5": {"seen_haus": "16", "seen_name": "Schmiedt Peter", "old_haus": "16", "old_name": "Schmiedt Peter", "verdict": "soglasje (nz)"},
+  "r6": {"seen_haus": "53", "seen_name": "Schlomnitz Johan", "old_haus": "53", "old_name": "Schlomnitz Georg", "verdict": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Johan (nz: Johan-oblika, isti niz kot r0); haus soglasje 53"},
+  "r7": {"seen_haus": "54", "seen_name": "Lapajner Mike", "old_haus": "54", "old_name": "Eppinger Anton", "verdict": "ime POPRAVEK Eppinger Anton -> Lapajner Mike (nz g1: 'Lapajner M-iko' — isti niz kot p22 r10 x20-potrjen 'Mike' in p23 r17; v57 'Eppinger Anton' ne obstaja v crnilu); haus soglasje 54"},
+  "r8": {"seen_haus": "35", "seen_name": "Schlomnitz Johan", "old_haus": "35", "old_name": "Schlomnitz Georg", "verdict": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Johan (nz: Johan-oblika); haus soglasje 35"},
+  "r9": {"seen_haus": "32", "seen_name": "Ulrich Gorgy[?]", "old_haus": "32", "old_name": "Pechy Georg", "verdict": "razhajanje odprto: 1. beseda 'Ulrich' jasno (U-kapica + l-ascender + -ich); 2. beseda dvom 'Gorgy[?]' (nz); v57 'Pechy' ovrzen (P-kapica ni U); brez POPRAVEK (2. beseda pod x12); haus soglasje 32"},
+  "r10": {"seen_haus": "68", "seen_name": "Ulrich Miko[?]", "old_haus": "68", "old_name": "Muth Peter", "verdict": "razhajanje odprto: 1. beseda 'Ulrich' jasno; 2. beseda 'Miko/Mike[?]' (M-niz, cf. Lapajner-Mike); v57 'Muth Peter' ovrzen; brez POPRAVEK; haus soglasje 68"},
+  "r11": {"seen_haus": "60", "seen_name": "Schelle Sagth[?]", "old_haus": "60", "old_name": "Schelle Augusta", "verdict": "razhajanje odprto: 1. beseda 'Schelle' soglasje; 2. beseda = S/J-swoosh + a + g/y + th (nz) — kandidat 'Sagth[?]'; v57 'Augusta' ovrzen (ni A-kapice); brez POPRAVEK; haus soglasje 60"},
+  "r12": {"seen_haus": "48", "seen_name": "Hahnsdorfer Georg", "old_haus": "48", "old_name": "Hahnsdorfer Georg", "verdict": "soglasje (nz: H/N-kapica dvom, v57 crkovanje ohranjeno; Georg-dolgi niz)"},
+  "r13": {"seen_haus": "47", "seen_name": "Hahnsdorfer Alosche", "old_haus": "47", "old_name": "Hahnsdorfer Alosche", "verdict": "soglasje (nz)"},
+  "r14": {"seen_haus": "45", "seen_name": "Krause Georg", "old_haus": "45", "old_name": "Krause Georg", "verdict": "soglasje (nz g2: 'Kraus Georg.' — dolgi niz; v57 'Krause' crkovanje ohranjeno); rdeca marginalija 1860"},
+  "r15": {"seen_haus": "47", "seen_name": "Hahnsdorfer Alosche", "old_haus": "47", "old_name": "Hahnsdorfer Alosche", "verdict": "soglasje (nz g2)"},
+  "r16": {"seen_haus": "53", "seen_name": "Uraney[?] Johan", "old_haus": "53", "old_name": "Rudischer Georg", "verdict": "razhajanje odprto (x12): 1. beseda 'Uraney/Uranek[?]' (U/P-kapica + -ney/-nek); 2. beseda Johan jasno; v57 'Rudischer Georg' ovrzen (R-kapica ni U/P, Georg ni Johan); brez POPRAVEK (1. beseda); haus soglasje 53"},
+  "r17": {"seen_haus": "54", "seen_name": "Lapajner Mike", "old_haus": "56", "old_name": "Eppinger Anton", "verdict": "ime POPRAVEK Eppinger Anton -> Lapajner Mike + haus POPRAVEK 56->54 (nz g2: '54 Lapajner M-iko' — isti niz kot r7 in p22-r10; v57 Eppinger/Anton ne obstajata v crnilu)"},
+  "r18": {"seen_haus": "45", "seen_name": "Krause Georg", "old_haus": "45", "old_name": "Krause Georg", "verdict": "soglasje (nz g2)"},
+  "r19": {"seen_haus": "48", "seen_name": "Hahnsdorfer Georg", "old_haus": "48", "old_name": "Hahnsdorfer Georg", "verdict": "soglasje (nz g2)"}
+ }
+}

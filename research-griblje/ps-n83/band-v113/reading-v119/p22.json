@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "val": 119,
+  "page": 22,
+  "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+  "method": "nz-p22-g0..2 + diag x12 + tight word zoomi x20-x24 + Johan/Malfg/Mike referenčne primerjave",
+  "register_rows": 20,
+  "vlm_calls": 0,
+  "diag_generated": ["nz g0/g1/g2", "z-p22-r01/09/10/17/19-w2 x20", "z-p22-r05-full x12", "z-p22-r12-haus x24", "z-p22-r13-w1 x20"],
+  "note": "p22: v57 'Pustig Marjare' ×3 (r3/r7/r14) = pattern-fill fabriakcija — črnilo na vseh treh = 'Peter Malfg' h50 (h50 = Malfg hiša, ista kot p21 r11/r18 — konsistentno!). 'Lapajner Andre' r10/r19 = črnilo 'Lapajner Mike' (M+i-dot+k-ascender+e, x20 jasno); r6 pa res 'Andre'-oblika (A-kapica). 'Shimerz Marjare' r1/r9/r17: 2. beseda = 'Marjauk[?]'-struktura (j-descender + -auc rep) — v57 'Marjare' ovržen, razhajanje odprto. r13: 1. beseda 'Mamerz[?]' (M-kapica, ni S 'Shimerz'). Johan-referenca p22-r0 potrjena (= cmp3 E). Ditto-zastavice: p22 nima. FUR: prazno. Vrednostna razhajanja (v113) niso predmet tega passa."
+ },
+ "names_audit": {
+  "r0": {"seen_haus": "56", "seen_name": "Shimerz Johan", "old_haus": "56", "old_name": "Shimerz Johan", "verdict": "soglasje (x16 fwz: 'Shimey/Shimerz' + Johan — Johan-oblika referenčna; z/y rep ohranjen po v57)"},
+  "r1": {"seen_haus": "49", "seen_name": "Shimerz Marjauc[?]", "old_haus": "49", "old_name": "Shimerz Marjare", "verdict": "razhajanje odprto (2. beseda): x20 = M + ar + j-descender + ?auc — kandidat 'Marjauc[?]'; v57 'Marjare' ovržen (rep ni '-are', ni r-e); brez POPRAVEK; haus soglasje 49"},
+  "r2": {"seen_haus": "56", "seen_name": "Shimerz Johan", "old_haus": "56", "old_name": "Shimerz Johan", "verdict": "soglasje (nz jasno)"},
+  "r3": {"seen_haus": "50", "seen_name": "Peter Malfg", "old_haus": "50", "old_name": "Pustig Marjare", "verdict": "ime POPRAVEK Pustig Marjare -> Peter Malfg (x12: P-kapica + Malfg z f-prečko/g-spuščanjem, jasno; h50 = Malfg hiša po p21 r11/r18 — konsistentno); haus soglasje 50"},
+  "r4": {"seen_haus": "55", "seen_name": "Shimerz Johan", "old_haus": "55", "old_name": "Shimerz Johan", "verdict": "soglasje (nz jasno)"},
+  "r5": {"seen_haus": "53", "seen_name": "Pustig Johan", "old_haus": "53", "old_name": "Pustig Johan", "verdict": "soglasje (x12 full-row diag: Pustig + Johan jasno; nz-band branje '55 Shimerz' = r4 bleed, popravljeno s diag)"},
+  "r6": {"seen_haus": "54", "seen_name": "Lapajner Andre", "old_haus": "54", "old_name": "Lapajner Andre", "verdict": "soglasje (nz: A-kapica Andre-oblika; razlika do r10/r19 M-kapice izrecna)"},
+  "r7": {"seen_haus": "50", "seen_name": "Peter Malfg", "old_haus": "50", "old_name": "Pustig Marjare", "verdict": "ime POPRAVEK Pustig Marjare -> Peter Malfg (nz g1 jasno, isti niz kot r3); haus soglasje 50"},
+  "r8": {"seen_haus": "56", "seen_name": "Shimerz Johan", "old_haus": "56", "old_name": "Shimerz Johan", "verdict": "soglasje (nz jasno)"},
+  "r9": {"seen_haus": "49", "seen_name": "Shimerz Marjauc[?]", "old_haus": "49", "old_name": "Shimerz Marjare", "verdict": "razhajanje odprto: isti 2.-beseda niz kot r1 (nz g1); brez POPRAVEK; haus soglasje 49"},
+  "r10": {"seen_haus": "54", "seen_name": "Lapajner Mike", "old_haus": "54", "old_name": "Lapajner Andre", "verdict": "ime POPRAVEK Lapajner Andre -> Lapajner Mike (x20: M-kapica + i-pika + k-ascender + e = 'Mike' jasno; v57 'Andre' ovržen — ni A/D-glife); haus soglasje 54"},
+  "r11": {"seen_haus": "53", "seen_name": "Pustig Johan", "old_haus": "53", "old_name": "Pustig Johan", "verdict": "soglasje (nz g1 jasno)"},
+  "r12": {"seen_haus": "55[?]", "seen_name": "Shimerz Johan", "old_haus": "56", "old_name": "Shimerz Johan", "verdict": "razhajanje odprto (haus): nz predlaga 55, v57 56 — x24 haus-crop neodločen (ink mimo okna); 5/6 glyf dvom izrecen; ime soglasje (Shimerz Johan)"},
+  "r13": {"seen_haus": "56", "seen_name": "Mamerz[?] Johan", "old_haus": "56", "old_name": "Shimerz Johan", "verdict": "razhajanje odprto (1. beseda): x20 = M-kapica + am + r + z — kandidat 'Mamerz[?]'; ni jasen S 'Shimerz' (r0 referenca ima veliko S-zanko); 2. beseda Johan soglasje; brez POPRAVEK; haus soglasje 56"},
+  "r14": {"seen_haus": "50", "seen_name": "Peter Malfg", "old_haus": "50", "old_name": "Pustig Marjare", "verdict": "ime POPRAVEK Pustig Marjare -> Peter Malfg (nz g2 jasno, isti niz kot r3/r7); haus soglasje 50"},
+  "r15": {"seen_haus": "55", "seen_name": "Shimerz Johan", "old_haus": "55", "old_name": "Shimerz Johan", "verdict": "soglasje (nz g2 jasno)"},
+  "r16": {"seen_haus": "56", "seen_name": "Shimerz Johan", "old_haus": "56", "old_name": "Shimerz Johan", "verdict": "soglasje (nz g2 jasno)"},
+  "r17": {"seen_haus": "49", "seen_name": "Shimerz Marjauc[?]", "old_haus": "49", "old_name": "Shimerz Marjare", "verdict": "razhajanje odprto: isti 2.-beseda niz kot r1/r9 (nz g2); brez POPRAVEK; haus soglasje 49"},
+  "r18": {"seen_haus": "53", "seen_name": "Pustig Johan", "old_haus": "53", "old_name": "Pustig Johan", "verdict": "soglasje (nz g2 jasno)"},
+  "r19": {"seen_haus": "54", "seen_name": "Lapajner Mike", "old_haus": "54", "old_name": "Lapajner Andre", "verdict": "ime POPRAVEK Lapajner Andre -> Lapajner Mike (nz g2: isti M-niz kot r10 x20-potrjen); haus soglasje 54"}
+ }
+}

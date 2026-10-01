@@ -1,0 +1,869 @@
+{
+ "val": "119-del1",
+ "stats": {
+  "owner_fixes": 47,
+  "haus_fixes": 14,
+  "anmerkung_adds": 28,
+  "ditto_clears": 4,
+  "open_discrepancies": 28,
+  "pages_covered": [
+   "p20",
+   "p21",
+   "p22",
+   "p23",
+   "p24",
+   "p25"
+  ],
+  "rows_covered": 120
+ },
+ "changes": [
+  {
+   "index": 346,
+   "page": 20,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Jerey",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK Kristan Jerey -> Christan Gorgy (x12+x20: G-oblika = p18-r10 Gorgy-referenca; v57 'Jerey' ne obstaja drugje v registru; 'Kristan' = K/C zgrešena inicialka, črnilo 'Christian' → normalizacija 'Christan' po val 118); haus soglasje 63"
+  },
+  {
+   "index": 347,
+   "page": 20,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Jerey",
+   "new": "Thomas Johan",
+   "note": "ime POPRAVEK Kristan Jerey -> Thomas Johan + haus POPRAVEK 63->55 (x12 jasno h55; x22: 'Thomas Johan' — Johan-oblika identična p22-r0 referenci in p21-r14); ditto ovržen: črnilo piše polno ime, ne d°; h55 = ista oseba kot p21 'Thomas Jelen' vrstice (v57 'Jelen' = zgrešen Johan — popravek sledi v p21 passu val 119)"
+  },
+  {
+   "index": 347,
+   "page": 20,
+   "row_in_page": 1,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "63",
+   "new": "55",
+   "note": "ime POPRAVEK Kristan Jerey -> Thomas Johan + haus POPRAVEK 63->55 (x12 jasno h55; x22: 'Thomas Johan' — Johan-oblika identična p22-r0 referenci in p21-r14); ditto ovržen: črnilo piše polno ime, ne d°; h55 = ista oseba kot p21 'Thomas Jelen' vrstice (v57 'Jelen' = zgrešen Johan — popravek sledi v p21 passu val 119)"
+  },
+  {
+   "index": 347,
+   "page": 20,
+   "row_in_page": 1,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 348,
+   "page": 20,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Matz",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK Christan Matz -> Christan Mache (x12: M-a-c-h-e, isti niz kot r7/r8/r15) + haus POPRAVEK 56->36 (x12: 3 = dve skodelici brez ascending zanke, jasno ne 5; ista h36-Mache skupina kot r7/r15)"
+  },
+  {
+   "index": 348,
+   "page": 20,
+   "row_in_page": 2,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "56",
+   "new": "36",
+   "note": "ime POPRAVEK Christan Matz -> Christan Mache (x12: M-a-c-h-e, isti niz kot r7/r8/r15) + haus POPRAVEK 56->36 (x12: 3 = dve skodelici brez ascending zanke, jasno ne 5; ista h36-Mache skupina kot r7/r15)"
+  },
+  {
+   "index": 349,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Christian Gulden[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 350,
+   "page": 20,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Hörle",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK Kristan Hörle -> Christan Mache (x12: M-a-c-h-e isti niz kot r7/r8; 'Hörle' ne obstaja drugje — v57 fabriakcija); haus soglasje 62"
+  },
+  {
+   "index": 351,
+   "page": 20,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Jerey",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK Kristan Jerey -> Christan Gorgy (x20 identično p18-r10 Gorgy-referenci); haus soglasje 63"
+  },
+  {
+   "index": 352,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Christian Gulden[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 353,
+   "page": 20,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Mache",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK Kristan Mache -> Christan Mache (normalizacija K->C, črnilo 'Christian' z i-piko x12); haus soglasje 36"
+  },
+  {
+   "index": 354,
+   "page": 20,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Mache",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK Kristan Mache -> Christan Mache (normalizacija K->C); haus soglasje 62"
+  },
+  {
+   "index": 355,
+   "page": 20,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Jerey",
+   "new": "Christan Gorgy",
+   "note": "ime POPRAVEK Kristan Jerey -> Christan Gorgy (x20 identično p18-r10 referenci); haus soglasje 63"
+  },
+  {
+   "index": 356,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Christian Gulden[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 357,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Julian[?] Johan\", v57 ohranjeno]"
+  },
+  {
+   "index": 358,
+   "page": 20,
+   "row_in_page": 12,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "64",
+   "new": "34",
+   "note": "razhajanje odprto (ime): 2. beseda 'Matz' JASNO (t-prečka + z-spuščanje, x20); 1. beseda dvom 'Julian[?]' (isti niz kot r11/r16) proti v57 'Christof' (ovržen); haus POPRAVEK 64->34 (x12/nz: 3 = brez ascending zanke, jasno ne 6)"
+  },
+  {
+   "index": 358,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Julian[?] Matz\", v57 ohranjeno]"
+  },
+  {
+   "index": 359,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Julian[?] Johan\", v57 ohranjeno]"
+  },
+  {
+   "index": 360,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Christian Johan[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 361,
+   "page": 20,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kristan Mache",
+   "new": "Christan Mache",
+   "note": "ime POPRAVEK Kristan Mache -> Christan Mache (normalizacija K->C); haus soglasje 36"
+  },
+  {
+   "index": 362,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Julian[?] Matz\", v57 ohranjeno]"
+  },
+  {
+   "index": 363,
+   "page": 20,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "36",
+   "new": "35",
+   "note": "razhajanje odprto (ime): isti niz kot r11/r13; 2. beseda Johan, 1. 'Julian[?]' dvom; v57 'Kristan Peter' ovržen; haus POPRAVEK 36->35 (nz/x20: 5 s zastavico, ne 6 z zanko; blok h35 z r11/r13)"
+  },
+  {
+   "index": 363,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Julian[?] Johan\", v57 ohranjeno]"
+  },
+  {
+   "index": 364,
+   "page": 20,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Regina Juran[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 365,
+   "page": 20,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hannß Mache",
+   "new": "Husitsch Maria[?]",
+   "note": "ime POPRAVEK Hannß Mache -> Husitsch Maria[?] (x12: 1. beseda 'Husitsch' jasno; 2. beseda 'Mache'-oblika — ista dvom-oblika kot val 118 p17 r15/r19; PUA h.44 'Husitsch Maria Bauersleute zu Grübln'; enotno 'Husitsch Maria[?]' po val 118 precedensu); haus soglasje 44"
+  },
+  {
+   "page": 20,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass p20: 14 sprememb; p20 = najbolj poškodovana v57 imenska stran: 'Kristan Jerey' ×4 (r0/r1/r5/r9) je pattern-fill — črnilo r0/r5/r9 = 'Gorgy' (x20 identično p18-r10 Gorgy-referenci), r1 pa 'Thomas Johan' h55 (Johan-oblika = p22-r0 referenca; isto črnilo nosi p21 'Jelen' vrstice — v57 'Jelen' = zgrešen 'Johan', cmp3 3-kratna identiteta). h37 vrstice (r3/r6/r10) nosijo 2×ascender '-en' strukturo (kandidat Gulden[?]) — "
+  },
+  {
+   "index": 367,
+   "page": 21,
+   "row_in_page": 1,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 368,
+   "page": 21,
+   "row_in_page": 2,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 370,
+   "page": 21,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Peter Grang",
+   "new": "Peter Malfg",
+   "note": "ime POPRAVEK Peter Grang -> Peter Malfg (x22: M-kapica, 2×descender f+g — Grang ima 1×descender + G-kapica); ditto ovržen: polno ime, poleg tega DRUGAČE od r3 (v57 D-naredba nemogoča); haus soglasje 41"
+  },
+  {
+   "index": 370,
+   "page": 21,
+   "row_in_page": 4,
+   "type": "v119_ditto_clear",
+   "field": "owner_was_ditto",
+   "old": true,
+   "new": false,
+   "note": "črnilo piše polno ime — v57 ditto-zastavica ovržena"
+  },
+  {
+   "index": 373,
+   "page": 21,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Jacobis[?] Malfg\", v57 ohranjeno]"
+  },
+  {
+   "index": 375,
+   "page": 21,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Peter Jelen",
+   "new": "Peter Johan",
+   "note": "ime POPRAVEK Peter Jelen -> Peter Johan (x12: Johan-oblika = cmp3 referenca; 'Jelen' v57 = zgrešen Johan); haus soglasje 32; rdeči robni zapisi (v113 obs)"
+  },
+  {
+   "index": 376,
+   "page": 21,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ulrich Jelen",
+   "new": "Ulrich Johan",
+   "note": "ime POPRAVEK Ulrich Jelen -> Ulrich Johan (Johan-oblika) + haus POPRAVEK 31->51 (x12: 5 z zastavico na vrhu, ne 3; blok h51 z r12/r17)"
+  },
+  {
+   "index": 376,
+   "page": 21,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "31",
+   "new": "51",
+   "note": "ime POPRAVEK Ulrich Jelen -> Ulrich Johan (Johan-oblika) + haus POPRAVEK 31->51 (x12: 5 z zastavico na vrhu, ne 3; blok h51 z r12/r17)"
+  },
+  {
+   "index": 377,
+   "page": 21,
+   "row_in_page": 11,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "30",
+   "new": "50",
+   "note": "haus POPRAVEK 30->50 (x12: 5 z zastavico + ovalna 0, jasno); ime soglasje (v113 vrednostno razhajanje 1840 ni predmet tega passa)"
+  },
+  {
+   "index": 378,
+   "page": 21,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ulrich Jelen",
+   "new": "Ulrich Johan",
+   "note": "ime POPRAVEK Ulrich Jelen -> Ulrich Johan (Johan-oblika); haus soglasje 51"
+  },
+  {
+   "index": 379,
+   "page": 21,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Thomas Mampfaut[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 380,
+   "page": 21,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Thomas Jelen",
+   "new": "Thomas Johan",
+   "note": "ime POPRAVEK Thomas Jelen -> Thomas Johan (x12: Johan-oblika, cmp3 identiteta z p22-r0); haus soglasje 55"
+  },
+  {
+   "index": 381,
+   "page": 21,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Thomas Jelen",
+   "new": "Thomas Johan",
+   "note": "ime POPRAVEK Thomas Jelen -> Thomas Johan (nz g2: Johan-oblika); haus soglasje 36"
+  },
+  {
+   "index": 383,
+   "page": 21,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ulrich Jelen",
+   "new": "Ulrich Johan",
+   "note": "ime POPRAVEK Ulrich Jelen -> Ulrich Johan (nz g2: Johan-oblika); haus soglasje 51"
+  },
+  {
+   "index": 385,
+   "page": 21,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Thomas Jelen",
+   "new": "Thomas Johan",
+   "note": "ime POPRAVEK Thomas Jelen -> Thomas Johan (x12: Johan-oblika); haus soglasje 55"
+  },
+  {
+   "page": 21,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass p21: 10 sprememb; VELIKA NAJDBA: v57 'Jelen' (6 vrstic p21) = zgrešeno črnilo 'Johan' — cmp3 3-kratna identiteta (p21-r14 = p22-r0 Johan-referenca = p20-r1); popravki r9/r10/r12/r14/r15/r17/r19. r4: v57 'Peter Grang' (D) = ovržen — črnilo 'Peter Malfg' (M-kapica + 2 descenderja f/g, x22) → ditto ovržen. Dittoti r1/r2 ovrženi (polna imena). r7: 1. beseda rep '-obis' (kandidat Jacobis[?]) — v57 'Peter' ovržen, razhaj"
+  },
+  {
+   "index": 387,
+   "page": 22,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Shimerz Marjauc[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 389,
+   "page": 22,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pustig Marjare",
+   "new": "Peter Malfg",
+   "note": "ime POPRAVEK Pustig Marjare -> Peter Malfg (x12: P-kapica + Malfg z f-prečko/g-spuščanjem, jasno; h50 = Malfg hiša po p21 r11/r18 — konsistentno); haus soglasje 50"
+  },
+  {
+   "index": 393,
+   "page": 22,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pustig Marjare",
+   "new": "Peter Malfg",
+   "note": "ime POPRAVEK Pustig Marjare -> Peter Malfg (nz g1 jasno, isti niz kot r3); haus soglasje 50"
+  },
+  {
+   "index": 395,
+   "page": 22,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Shimerz Marjauc[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 396,
+   "page": 22,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lapajner Andre",
+   "new": "Lapajner Mike",
+   "note": "ime POPRAVEK Lapajner Andre -> Lapajner Mike (x20: M-kapica + i-pika + k-ascender + e = 'Mike' jasno; v57 'Andre' ovržen — ni A/D-glife); haus soglasje 54"
+  },
+  {
+   "index": 398,
+   "page": 22,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Shimerz Johan\", v57 ohranjeno]"
+  },
+  {
+   "index": 399,
+   "page": 22,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Mamerz[?] Johan\", v57 ohranjeno]"
+  },
+  {
+   "index": 400,
+   "page": 22,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pustig Marjare",
+   "new": "Peter Malfg",
+   "note": "ime POPRAVEK Pustig Marjare -> Peter Malfg (nz g2 jasno, isti niz kot r3/r7); haus soglasje 50"
+  },
+  {
+   "index": 403,
+   "page": 22,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Shimerz Marjauc[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 405,
+   "page": 22,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lapajner Andre",
+   "new": "Lapajner Mike",
+   "note": "ime POPRAVEK Lapajner Andre -> Lapajner Mike (nz g2: isti M-niz kot r10 x20-potrjen); haus soglasje 54"
+  },
+  {
+   "page": 22,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass p22: 5 sprememb; p22: v57 'Pustig Marjare' ×3 (r3/r7/r14) = pattern-fill fabriakcija — črnilo na vseh treh = 'Peter Malfg' h50 (h50 = Malfg hiša, ista kot p21 r11/r18 — konsistentno!). 'Lapajner Andre' r10/r19 = črnilo 'Lapajner Mike' (M+i-dot+k-ascender+e, x20 jasno); r6 pa res 'Andre'-oblika (A-kapica). 'Shimerz Marjare' r1/r9/r17: 2. beseda = 'Marjauk[?]'-struktura (j-descender + -auc rep) — v57 'Marjare' ovrže"
+  },
+  {
+   "index": 406,
+   "page": 23,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schlomnitz Georg",
+   "new": "Schlomnitz Johan",
+   "note": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Johan (nz x6: J-kapica + h-ascender + -an = Johan-oblika, glifno nemogoce 'Georg'); haus soglasje 55"
+  },
+  {
+   "index": 408,
+   "page": 23,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schlomnitz Georg",
+   "new": "Schlomnitz Peter",
+   "note": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Peter (nz: P-kapica + -eter, jasno ne G-Georg); haus soglasje 58"
+  },
+  {
+   "index": 410,
+   "page": 23,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Krause Georg",
+   "new": "Krause Gorgy",
+   "note": "ime POPRAVEK Krause Georg -> Krause Gorgy (nz x6: kratka G-o-r-g-y oblika z y-repom = p18-r10 Gorgy-referenca; razlicno od dolgega 'Georg.'-niza r14/r18); haus soglasje 15; rdeca marginalija Grundbuch 10111"
+  },
+  {
+   "index": 412,
+   "page": 23,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schlomnitz Georg",
+   "new": "Schlomnitz Johan",
+   "note": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Johan (nz: Johan-oblika, isti niz kot r0); haus soglasje 53"
+  },
+  {
+   "index": 413,
+   "page": 23,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Eppinger Anton",
+   "new": "Lapajner Mike",
+   "note": "ime POPRAVEK Eppinger Anton -> Lapajner Mike (nz g1: 'Lapajner M-iko' — isti niz kot p22 r10 x20-potrjen 'Mike' in p23 r17; v57 'Eppinger Anton' ne obstaja v crnilu); haus soglasje 54"
+  },
+  {
+   "index": 414,
+   "page": 23,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schlomnitz Georg",
+   "new": "Schlomnitz Johan",
+   "note": "ime POPRAVEK Schlomnitz Georg -> Schlomnitz Johan (nz: Johan-oblika); haus soglasje 35"
+  },
+  {
+   "index": 415,
+   "page": 23,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Ulrich Gorgy[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 416,
+   "page": 23,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Ulrich Miko[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 417,
+   "page": 23,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Schelle Sagth[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 422,
+   "page": 23,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Uraney[?] Johan\", v57 ohranjeno]"
+  },
+  {
+   "index": 423,
+   "page": 23,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Eppinger Anton",
+   "new": "Lapajner Mike",
+   "note": "ime POPRAVEK Eppinger Anton -> Lapajner Mike + haus POPRAVEK 56->54 (nz g2: '54 Lapajner M-iko' — isti niz kot r7 in p22-r10; v57 Eppinger/Anton ne obstajata v crnilu)"
+  },
+  {
+   "index": 423,
+   "page": 23,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "56",
+   "new": "54",
+   "note": "ime POPRAVEK Eppinger Anton -> Lapajner Mike + haus POPRAVEK 56->54 (nz g2: '54 Lapajner M-iko' — isti niz kot r7 in p22-r10; v57 Eppinger/Anton ne obstajata v crnilu)"
+  },
+  {
+   "page": 23,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass p23: 8 sprememb; p23: v57 'Schlomnitz Georg' ×4 (r0/r2/r6/r8) = pattern-fill — črnilo: Johan (r0/r6/r8, J-kapica + h-ascender + -an, negeogljivo različna glifa od G) in Peter (r2, jasna P). 'Krause Georg' r4 (h15) = 'Gorgy'-oblika (kratka, y-rep = p18-r10 referenca), medtem ko r14/r18 (h45) nosita daljši 'Georg.'-niz — različni Krause-vpisi. r7/r17: 'Eppinger Anton' = fabriiran — črnilo 'Lapajner Miko/Mike' h54 (i"
+  },
+  {
+   "index": 426,
+   "page": 24,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kreutler Gregor",
+   "new": "Krause Gorgy",
+   "note": "ime POPRAVEK Kreutler Gregor -> Krause Gorgy (x12: '?raus' + kratka Gorgy-oblika z y-repom = p23-r4; 'Kreutler' ne obstaja v crnilu; K/S-glyf dvom izrecen, Krause po konsistentnosti h15/h45 s p23); haus soglasje 45"
+  },
+  {
+   "index": 427,
+   "page": 24,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kreutler Gregor",
+   "new": "Schlomnitz Peter",
+   "note": "ime POPRAVEK Kreutler Gregor -> Schlomnitz Peter (x12 jasno; h56 = Schlomnitz hisa po p23-r1 — konsistentno); ditto ovržen: polno ime, v57 D-naredba na r0 nemogoča (r0 = Krause, druga oseba); haus soglasje 56"
+  },
+  {
+   "index": 428,
+   "page": 24,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schuster Peter",
+   "new": "Schlomnitz Johan",
+   "note": "ime POPRAVEK Schuster Peter -> Schlomnitz Johan (x12: S-ch-l-m + Johan-oblika; h55 = p23-r0 Schlomnitz Johan h55 — konsistentno; 'Schuster' ni v crnilu); haus soglasje 55"
+  },
+  {
+   "index": 429,
+   "page": 24,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Lapajner Miko[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 430,
+   "page": 24,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hadschitsch Gregor",
+   "new": "Habschider Georg",
+   "note": "ime POPRAVEK Hadschitsch Gregor -> Habschider Georg (x12: -bsch- klaster + dolgi 'Georg.' niz z piko; 'Hadschitsch' in 'Gregor' nista v crnilu); haus soglasje 48"
+  },
+  {
+   "index": 432,
+   "page": 24,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Strupl[?] Marthe[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 434,
+   "page": 24,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Kruescher Marko[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 437,
+   "page": 24,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schuster Peter",
+   "new": "Kruescher Peter",
+   "note": "ime POPRAVEK Schuster Peter -> Kruescher Peter (x12: K-ru-isch-er + Peter; 'Schuster' ni v crnilu; isti niz kot v57-r10 Kruescher — v57 ga je postavil na r10, prava vrstica pa je r11) + haus POPRAVEK 56->36 (x12: 3 brez zastavice + 6 z zanko)"
+  },
+  {
+   "index": 437,
+   "page": 24,
+   "row_in_page": 11,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "56",
+   "new": "36",
+   "note": "ime POPRAVEK Schuster Peter -> Kruescher Peter (x12: K-ru-isch-er + Peter; 'Schuster' ni v crnilu; isti niz kot v57-r10 Kruescher — v57 ga je postavil na r10, prava vrstica pa je r11) + haus POPRAVEK 56->36 (x12: 3 brez zastavice + 6 z zanko)"
+  },
+  {
+   "index": 438,
+   "page": 24,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Habschider Gregor",
+   "new": "Habschider Georg",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12: dolgi 'Georg.' z g-spuščanjem + pika, NI Gregor-brez-spuščanja) + haus POPRAVEK 44->48 (x12: 4 + 8; 8 = dve zanki)"
+  },
+  {
+   "index": 438,
+   "page": 24,
+   "row_in_page": 12,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "44",
+   "new": "48",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12: dolgi 'Georg.' z g-spuščanjem + pika, NI Gregor-brez-spuščanja) + haus POPRAVEK 44->48 (x12: 4 + 8; 8 = dve zanki)"
+  },
+  {
+   "index": 440,
+   "page": 24,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Habschider Gregor",
+   "new": "Habschider Georg",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12) + haus POPRAVEK 45->48 (x12: 4+8); izmenicni par Georg-48 / Marth-47 (r12..r19)"
+  },
+  {
+   "index": 440,
+   "page": 24,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "45",
+   "new": "48",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12) + haus POPRAVEK 45->48 (x12: 4+8); izmenicni par Georg-48 / Marth-47 (r12..r19)"
+  },
+  {
+   "index": 441,
+   "page": 24,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Lapajner Miko[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 443,
+   "page": 24,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Habschider Gregor",
+   "new": "Habschider Georg",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12) + haus POPRAVEK 45->48 (x12)"
+  },
+  {
+   "index": 443,
+   "page": 24,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "45",
+   "new": "48",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12) + haus POPRAVEK 45->48 (x12)"
+  },
+  {
+   "index": 445,
+   "page": 24,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Habschider Gregor",
+   "new": "Habschider Georg",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12: 'H-absch-der Georg.' jasno) + haus POPRAVEK 45->48 (x12)"
+  },
+  {
+   "index": 445,
+   "page": 24,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "45",
+   "new": "48",
+   "note": "ime POPRAVEK Habschider Gregor -> Habschider Georg (x12: 'H-absch-der Georg.' jasno) + haus POPRAVEK 45->48 (x12)"
+  },
+  {
+   "page": 24,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass p24: 14 sprememb; p24: v57 'Kreutler Gregor' (r0/r1) = fabriiran — črnilo r0 = 'Kraus(e) Gorgy' h45 (Krause hiša h15/h45 s p23!), r1 = 'Schlomnitz Peter' h56 (Schlomnitz hiša h36 s p23-r1!) + ditto ovržen. 'Schuster Peter' (r2/r11) = fabriiran — črnilo r2 = 'Schlomnitz Johan' h55 (= p23-r0!), r11 = 'Kruescher Peter' h36 (= v57 r10 Kruescher!). 'Habschider Gregor' (r12/r14/r17/r19) = črnilo 'Habschider Georg' h48 (G"
+  },
+  {
+   "index": 446,
+   "page": 25,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Einsle Georg",
+   "new": "Krause Georg",
+   "note": "ime POPRAVEK Einsle Georg -> Krause Georg (nz: '?raus Georg' — isti niz kot p24-r0 x12 in p23-r14/r18; K/S-glyf dvom, Krause po konsistentnosti h45; 'Einsle' ne obstaja v crnilu); haus soglasje 45"
+  },
+  {
+   "index": 449,
+   "page": 25,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Brustolleko[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 450,
+   "page": 25,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schime Georg",
+   "new": "Schimer Georg",
+   "note": "ime POPRAVEK Schime Georg -> Schimer Georg (nz: '-mer' z r; PUA h.28 'Schimer' neodvisen presek); haus soglasje 38"
+  },
+  {
+   "index": 451,
+   "page": 25,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schime Martho",
+   "new": "Schimer Martho",
+   "note": "ime POPRAVEK Schime Martho -> Schimer Martho (nz: r-dodatek; 2. beseda k/th dvom, v57 'Martho' ohranjeno); haus soglasje 39"
+  },
+  {
+   "index": 453,
+   "page": 25,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Röding Guathel[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 456,
+   "page": 25,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schime Marthe",
+   "new": "Schimer Marthe",
+   "note": "ime POPRAVEK Schime Marthe -> Schimer Marthe (nz: r-dodatek; isti niz kot r5)"
+  },
+  {
+   "index": 459,
+   "page": 25,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "10",
+   "new": "40",
+   "note": "haus POPRAVEK 10->40 (nz g1: '40' jasno; Rödig blok h40 = r7/r8/r9/r12; 1 bi bila osamljena); ime soglasje"
+  },
+  {
+   "index": 460,
+   "page": 25,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schime georg",
+   "new": "Schimer Georg",
+   "note": "ime POPRAVEK Schime georg -> Schimer Georg (nz: r-dodatek; cf. r4)"
+  },
+  {
+   "index": 461,
+   "page": 25,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "49",
+   "new": "43",
+   "note": "razhajanje odprto (ime, x12): 'P-rulla M-iko[?]' — v57 'Pavolle stich' ovrzen ('stich' ni v crnilu, 2. beseda = M-niz); brez POPRAVEK; haus POPRAVEK 49->43 (x12: 4+3 jasno)"
+  },
+  {
+   "index": 461,
+   "page": 25,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Prulla Miko[?]\", v57 ohranjeno]"
+  },
+  {
+   "index": 463,
+   "page": 25,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michelbacher marthl",
+   "new": "Habschider Marth",
+   "note": "ime POPRAVEK Michelbacher marthl -> Habschider Marth (nz: 'N-absch-ar Marthe' — Habschider niz, cf. p24-r13/r16/r18 h47 — konsistentno; 'Michelbacher' ne obstaja v crnilu); haus soglasje 47"
+  },
+  {
+   "index": 464,
+   "page": 25,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Einsle georg",
+   "new": "Krause Georg",
+   "note": "ime POPRAVEK Einsle georg -> Krause Georg (nz: isti niz kot r0; h45 = Krause hisa); haus soglasje 45"
+  },
+  {
+   "index": 465,
+   "page": 25,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michelbacher (Georg)",
+   "new": "Habschider Georg",
+   "note": "ime POPRAVEK Michelbacher (Georg) -> Habschider Georg (x12: 'H-absch-der Georg.' jasno; Habschider par s p24; v114 'PRAZNO' anmerkung se nanasa na vrednosti, ne ime — crnilo polno); haus soglasje 48"
+  },
+  {
+   "page": 25,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass p25: 10 sprememb; p25: 'Einsle Georg' (r0/r18) = fabriiran — črnilo '?raus Georg' = Krause (h45 = Krause hiša s p23-r14/r18 in p24-r0; K/S-glyf dvom izrecen). 'Schime' (r4/r5/r10/r14) = črnilo 'Schimer' (z r; PUA h.28 'Schimer' neodvisen presek). 'Michelbacher' (r17/r19) = fabriiran — črnilo = Habschider Marth h47 / Habschider Georg h48 (Habschider par s p24-r12..r19 — konsistentno!). r13 haus 10->40 (Rödig blok h4"
+  }
+ ]
+}
