@@ -4725,3 +4725,25 @@ Stage Summary:
 - Kaskada: nič — PZ/PT so SRC dokumenti izven KG grafa (sha nespremenjen)
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
 - Naslednje: imenski pass p25–p55 (agentov vid) → poln re-read p143 → F-PV-03/F-PV-04 → PZ p65 polne vrstice + p63 r6–r12 ob višji ločljivosti (izven peskovnika) → register 26-0326 + 26-0379 (okt./nov. 2026)
+
+---
+Task ID: 118
+Agent: Z.ai Code (glavna seja, val 118)
+Task: ISSUE #42 §4/§14 — IMENSKI PASS PILOT PS p17–p19: verifikacija v57 owner_original → odkritje sistemsko pokvarjene v57 imenske plasti; 51 owner + 23 haus popravkov + 7 ditto ovrženih (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Prevzem (nadaljevanje seje): vsebina vala 118 že komitirana (472dec3) in pushana, PR #122 že odprt, CI pa PADEL na "tipi + lint + enotni testi" — diagnoza po check-run logu: tests/val118 uvozil "vitest" (bun test samodejno aliasira na bun:test, tsc pa modula ne pozna; 6 TS napak: TS2307 + 5× TS18046 "r.page is of type 'unknown'") → popravek 824b4c6 (uvoz "bun:test" + Number(r.page) kasti; 24/24 testov zeleno lokalno, tsc čist, datoteka v eslint ignore vzorcu kot vse ostale teste)
+- CI 2/2 ZELENO (tipi+lint+testi ✓, dimni ✓) → PR #122 MERGAN (merge @ 6351840) → veja feat/val118-issue72-ps-names-p17-19 izbrisana (oddaljena + lokalna) → main osvežen
+- VSEBINA VALA (iz prejšnje seje, komitirana v 472dec3): VELIKA NAJDBA — v57 imenska kolona p17–p19 sistemsko pokvarjena: p17 "Würgl"×8 = halucinacija (pravo Malfg), "Häusler"×3 = pravo Husitsch Maria (PUA h.44); p18 20/20 imen fabriciranih (Wendelin/Christof/Villibald Muth/Wulfj/Puhon + Hoffnung ne obstajajo v 2875 vrsticah registra; pravo: Mache/Gorgy/Malfg/Piber + Husitsch Maria + Hof-Besizungen[?]); p19 "Heinrich X" vzorec 19/20 (r10 Georg Gorgy edina usklajena vrstica)
+- Metoda: agentov vid 0 VLM — nz-skladi ×6 (X 280–610, Y-grid 158/38.65, 117 izrezkov crops-v118/) + diag enovrstični ×12–×24 (make-rowzoom-v118.py) + pravila-detekcija + DOMINIKALNA 2↔3 KALIBRACIJA (znana sekvenca 281–340 kalibrira pisarjeve glyfe) + PUA abecedni register kot neodvisen presek; novi priimki: Malfg (= v57-p21 oblika, PUA "Malfa"), Gorgy, Husitsch Maria, Matho[?], Hof-Besizungen[?]
+- Popravki: 51 owner + 23 haus (2↔3 šum v obeh smereh; p19 r10 61→41) + 7 ditto-zastavic ovrženih (črnilo piše izrecno; K5 dito 233→226) + 6 anmerkung; register 2875 NESPREMENJEN (vstavljanj ni)
+- Kaskada (izrecna, builderji pognani): plasti v113 120→80 / v114 667→647 / v118-names 60; pass3 392 + land-use identičen; KG števci identični 3269/3477 (osebni sloj = pass2 artefakt — sinhronizacija ostaja odprta, F-PV-03/04), sha 2790d893→69038f63; story-graph/timeline/coverage identični; c4 K9 69 / K5 226; TRANSCRIBED = 0, nič ne dvignjeno, [?]/~ markerji
+- Testi: +24 varovalk (tests/val118) + pini 117→118 v 12 datotekah (KG sha ×9, K5, plasti); 1170 testov: 1155 pass / 11 skip / 0 fail
+- Docs: research-griblje/133-val118-ps-names-p17-19.md + KAZALO 133 + README 170. sklop; .gitignore +crops-v118 (525 MB, regenerabilno)
+- Potek: commit 472dec3 → push → PR #122 → CI padel (vitest import + r.page unknown) → popravek 824b4c6 → CI 2/2 ZELENO → merge (main @ 6351840) → izbris veje (oddaljena + lokalna) → worklog → poročilo na #72
+
+Stage Summary:
+- ISSUE #42 §4/§14: PILOTNI IMENSKI PASS p17–p19 ZAPRT — v57 imenska plast na teh straneh ni posamično napačna ampak SYSTEMSKO pokvarjena (page-level pattern-fill namesto branja); prava imenska struktura: Malfg/Gorgy/Mache/Piber/Husitsch Maria/Matho[?]/Hof-Besizungen[?] z x12–x24 dokazi + PUA presekom
+- Dominikalna 2↔3 kalibracija = novo merjeno orodje (rešuje haus glyfe brez VLM); K5 dito 226/2875; KG vsebina spremenjena (sha 69038f63), osebni sloj še pass2 artefakt
+- main @ 6351840 CI zeleno; zbirka 114/625/502/68 (tehnični val)
+- Naslednje: val 119 = imenski pass p20–p55 (731 vrstic, protokol vala 118; p20 pilot kaže ISTI vzorec napak: "Kristan Jerey", "Thomas Matz") + dominikalne sekvence 341–460 → PUA↔PS osebna sinhronizacija (F-PV-03/04) → poln re-read p143 → PZ p65 polne vrstice + p63 r6–r12 ob višji ločljivosti (izven peskovnika) → register 26-0326 + 26-0379 (okt./nov. 2026)
