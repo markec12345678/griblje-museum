@@ -45,11 +45,11 @@ const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
 
 describe("val 114 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1755 v86, 265 v112, 120 v113 — nedotaknjeno", () => {
+  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1795 v86 (val 116: p142 +40), 265 v112, 120 v113 — nedotaknjeno", () => {
     expect(REG.length).toBe(2875);
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
-    expect(REG.filter((r) => r["reading_pass"] === "v86-colonial-tiles").length).toBe(1755);
+    expect(REG.filter((r) => r["reading_pass"] === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
     expect(REG.filter((r) => r["reading_pass"] === "v112-ps-reread").length).toBe(265);
     expect(REG.filter((r) => r["reading_pass"] === "v113-ps-reread").length).toBe(120);
   });
@@ -391,9 +391,9 @@ describe("val 114 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha ca0aeb58… (pogodba §22; val 115)", () => {
+  test("kaskadni artefakti držijo isti KG sha 2790d893… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^ca0aeb58/);
+    expect(kgSha).toMatch(/^2790d893/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

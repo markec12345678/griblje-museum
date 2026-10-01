@@ -108,10 +108,10 @@ describe("val 98 — 86b del 2: vgradnja po pravilih val 86 na novih straneh", (
     }
   });
 
-  test("owner variante: 910 novih (p63–109); p56–62 idempotentno (iste vrednosti kot val 86); skupaj 1.615 z delom 3 (val 108)", () => {
+  test("owner variante: 910 novih (p63–109); p56–62 idempotentno (iste vrednosti kot val 86); skupaj 1.652 z delom 3 (val 108) + val 116 (p142 +37)", () => {
     expect(chg2.owner_variant_new).toBe(910);
     const withVariant = register.filter((r) => "owner_tile_v86" in r);
-    expect(withVariant.length).toBe(153 + 910 + 552); // del 1 + del 2 + del 3 (val 108)
+    expect(withVariant.length).toBe(153 + 910 + 552 + 37); // del 1 + del 2 + del 3 + val 116 (p142)
     // vse variante na straneh z name tile pokritostjo (56–141 + 121), nikoli na p1–55/p143
     for (const r of withVariant) {
       expect(r.page as number).toBeGreaterThanOrEqual(56);
@@ -129,16 +129,16 @@ describe("val 98 — 86b del 2: vgradnja po pravilih val 86 na novih straneh", (
     }
   });
 
-  test("resumable: 695/696 tile-ov prebranih (val 98: 446 → val 107: 695), 0 trajnih napak; preostanek p142", () => {
+  test("resumable: 696/696 tile-ov prebranih (val 98: 446 → val 107: 695 → val 116: 696), 0 trajnih napak; brez preostanka", () => {
     const read = manifest.tiles.filter((t) => existsSync(join(V86, "vlm-v86", `${t.cell}-T.json`)));
-    expect(read.length).toBe(695);
+    expect(read.length).toBe(696);
     expect(manifest.tiles.length).toBe(696);
     for (const t of read) {
       const j = JSON.parse(readFileSync(join(V86, "vlm-v86", `${t.cell}-T.json`), "utf8"));
       expect("ERROR" in j, t.cell).toBe(false);
     }
     const missing = manifest.tiles.filter((t) => !existsSync(join(V86, "vlm-v86", `${t.cell}-T.json`)));
-    expect(missing.every((t) => t.page >= 110)).toBe(true);
+    expect(missing).toEqual([]); // val 116: p142-t-kultur2 prebran
   });
 });
 
@@ -182,8 +182,8 @@ describe("val 98 — prehod števcev (izrecen, testno voden)", () => {
     expect(f11!.status).toContain("p110–142 tile-i ob kvoti");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha ca0aeb58… (val 115; val 114 je bil 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
-    expect(kgSha).toMatch(/^ca0aeb58/);
+  test("kaskada: runtime kopije držijo isti KG sha 2790d893… (val 116; val 115 je bil 2790d893, val 114 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
+    expect(kgSha).toMatch(/^2790d893/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),

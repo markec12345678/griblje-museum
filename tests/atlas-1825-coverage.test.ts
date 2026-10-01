@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na aktualni KG (ca0aeb58, val 115 kaskada) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("ca0aeb58")).toBe(true); // val 115 KG (+1 PARCEL; val 114: 376e2b27; val 112: 5ae52bd8; val 108: 9f856d28)
+  test("provenanca kaže na aktualni KG (2790d893, val 116 kaskada (samo generated_at)) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("2790d893")).toBe(true); // val 116 KG (p142 prehod; val 115: 2790d893; val 114: 376e2b27; val 112: 5ae52bd8; val 108: 9f856d28)
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });

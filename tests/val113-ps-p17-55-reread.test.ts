@@ -40,12 +40,12 @@ const rowsOf = (pg: number) => byPage(pg);
 const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 
 describe("val 113 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1755 v86-colonial-tiles — nedotaknjeno", () => {
+  test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1795 v86-colonial-tiles — nedotaknjeno (val 116: p142 +40)", () => {
     expect(REG.length).toBe(2875);
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
     const v86 = REG.filter((r) => r["reading_pass"] === "v86-colonial-tiles");
-    expect(v86.length).toBe(1755);
+    expect(v86.length).toBe(1795); // val 116: 1755 + 40 (p142)
   });
 
   test("changes audit: val 113, 194 sprememb, stats ujemajo (89 moves + 9 splits + 16 popravkov + 63 opomb)", () => {

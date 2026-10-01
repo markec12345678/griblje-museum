@@ -60,10 +60,10 @@ const changes = JSON.parse(
 const byPage = (p: number) => reg.filter((r) => r.page === p);
 
 describe("val 112 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (val 115: +4 vstavljene), 139 v88, 1755 v86-colonial-tiles — nedotaknjeno", () => {
+  test("register: 2875 vrstic (val 115: +4 vstavljene), 139 v88, 1795 v86-colonial-tiles — nedotaknjeno (val 116: p142 +40)", () => {
     expect(reg.length).toBe(2875);
     expect(reg.filter((r) => (r as { v88_status?: string }).v88_status !== undefined || (r as { jk_review?: string }).jk_review === "v88-digit-split-UNRESOLVED").length).toBe(139);
-    expect(reg.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1755);
+    expect(reg.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
   });
 
   test("changes audit: val 112, 270 sprememb, tally ujemajo", () => {
@@ -302,11 +302,11 @@ describe("val 112 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha ca0aeb58… (pogodba §22, val 115)", () => {
+  test("kaskadni artefakti držijo isti KG sha 2790d893… (pogodba §22, val 116)", () => {
     const { createHash } = require("node:crypto") as typeof import("node:crypto");
     const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
     const kgSha = sha(join(root, "research-griblje/atlas-1825/knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^ca0aeb58/);
+    expect(kgSha).toMatch(/^2790d893/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
