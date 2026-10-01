@@ -1,0 +1,220 @@
+{
+  "built": "2026-10-01T09:06:06.759804+00:00",
+  "val": 117,
+  "task": "PT p7 re-adjudikacija areal stolpca (F2-analog pomik +1)",
+  "baseline": "register.json areal_original pre-v117",
+  "changes": [
+    {
+      "bp": 81,
+      "old": "11",
+      "new": "14[?]",
+      "struck": true,
+      "status": "REVIEW",
+      "voices": {},
+      "method": "kolizija → REVIEW (vrednost nespremenjena)"
+    },
+    {
+      "bp": 82,
+      "old": "292",
+      "new": "52",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 83,
+      "old": "21",
+      "new": "292",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 84,
+      "old": "44",
+      "new": "21",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 85,
+      "old": "52",
+      "new": "76",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 86,
+      "old": "76",
+      "new": "26",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 87,
+      "old": "26",
+      "new": "28",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 88,
+      "old": "28",
+      "new": "91",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 89,
+      "old": "91",
+      "new": "192",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 90,
+      "old": "192",
+      "new": "88",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 91,
+      "old": "88",
+      "new": "168",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 92,
+      "old": "168",
+      "new": "239",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 93,
+      "old": "239",
+      "new": "12",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 94,
+      "old": "12",
+      "new": "181",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 95,
+      "old": "181",
+      "new": "91",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 96,
+      "old": "91",
+      "new": "90",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 97,
+      "old": "90",
+      "new": "8",
+      "struck": true,
+      "status": "TRANSCRIBED",
+      "voices": {
+        "rdeca_revizija": "celica rdeče prečrtana (val 110 red_crossings)"
+      },
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 98,
+      "old": "8",
+      "new": "102",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "POPRAVEK (nativno + merjena pravila; F2-analog areal pomik)"
+    },
+    {
+      "bp": 99,
+      "old": "",
+      "new": "",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "potrjeno"
+    },
+    {
+      "bp": 100,
+      "old": "",
+      "new": "",
+      "struck": false,
+      "status": "TRANSCRIBED",
+      "voices": {},
+      "method": "potrjeno"
+    },
+    {
+      "bp": "POMIK",
+      "old": "register areal r6–r18 = +1 zamik (F2-analog)",
+      "new": "13/13 parov potrjenih: register r{n} = nativno r{n−1} za n=86..98 ((86, '76', '76')…(98, '8', '8'))",
+      "method": "strukturni dokaz (merjena pravila + vid)",
+      "voices": {
+        "vid": "sekvenca + vezava bp Nro kontaktni prirezi",
+        "vlm": "vrednostna soglasja"
+      }
+    }
+  ],
+  "post_tally": {
+    "popravki": 17,
+    "review_kolizije": 1,
+    "fantomi_potrjeni": 2,
+    "transcribed_areal": 19
+  }
+}

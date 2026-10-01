@@ -36,15 +36,20 @@ const pz = JSON.parse(
     sections: { sec: string; name: string; page_i?: number; page_ii?: number; begr_page?: number; classes: { classe: string; page: number; roh: { status: string } }[] }[];
     p61_empty_template: { page: number; status: string };
     reading_honesty: string;
-    i7_checks: { sec: string; classe: string; status: string; anschlag_closes: boolean; rein_closes: boolean }[];
+    i7_checks: { sec: string; classe: string; status: string; note?: string; anschlag_closes: boolean; rein_closes: boolean }[];
   };
   zusammenstellung_ab_p62_65: {
     source_pages: number[];
     p62_naslovnica: { status: string; text: string };
     p64_naslovnica: { status: string; text: string };
-    p63_zusammenstellung_b: { rows: string; status: string };
-    p65_zusammenstellung_a: { rows_direct: { no: number; kultur: string; status: string }[]; status: string };
+    p63_zusammenstellung_b: {
+      rows: { no: string; kat_no: string; klafter: string; classe: string; status: string; voices?: Record<string, string> }[];
+      rows_val109_placeholder?: string;
+      status: string;
+    };
+    p65_zusammenstellung_a: { rows_direct: { no: number; kultur: string; status: string }[]; status: string; vlm_v117?: { razkol_acker_i: string } };
   };
+  dileme_v117?: { id: number; vprasanje: string; odgovor: string; status: string }[];
   findings: { id: string; status: string; detail: string }[];
   invariants_enforced: string[];
   invariant_violations: unknown[];
@@ -54,10 +59,11 @@ const ver = pz.verantwortlichung_p50_61;
 const zus = pz.zusammenstellung_ab_p62_65;
 
 describe("val 109 — PZ p48–65 2. prehod (PREHOD 8) [124-val109]", () => {
-  test("meta: val 109 / PASS 8 / issue 42 / deterministično", () => {
-    expect(pz.val).toBe(109);
-    expect(pz.pass).toContain("PASS 8");
-    expect(pz.pass).toContain("BREZ VLM");
+  test("meta: val 117 (mikroprehod 8b) / PASS 8b / issue 42 / deterministično — prehod iz val 109", () => {
+    expect(pz.val).toBe(117);
+    expect(pz.pass).toContain("PASS 8b");
+    expect(pz.pass).toContain("MIKROPREHOD 8b");
+    expect(pz.pass).toContain("45 VLM glasov");
     expect(pz.issue).toBe(42);
     expect(pz.deterministic).toBe(true);
   });
@@ -94,41 +100,44 @@ describe("val 109 — PZ p48–65 2. prehod (PREHOD 8) [124-val109]", () => {
     expect(s1.begr_page).toBe(51);
   });
 
-  test("protokoli p48/49: 5. April 1830, podpisi REVIEW, brez per-parcelnih tabel", () => {
+  test("protokoli p48/49: 5. April 1830 (potrjen val 117), podpisi REVIEW, brez per-parcelnih tabel", () => {
     const p = pz.protokolle_p48_49;
     expect(p.datum).toBe("5. April 1830");
     expect(p.prisotni.status).toContain("REVIEW");
     expect(p.prisotni.list).toContain("Kappas");
     expect(p.vsebina.some((v) => v.includes("per-parcelnih tabel NI"))).toBe(true);
-    expect(p.reading_honesty).toContain("BREZ VLM glasov");
+    // val 117: datum potrjen z 2. glasom VLM; podpisna imena kolizija odtis-vs-vlm → REVIEW
+    expect(p.reading_honesty).toContain("potrjen");
+    expect(p.reading_honesty).toContain("TRANSCRIBED imen NI");
   });
 
-  test("iskrenost: TRANSCRIBED=0 v novih sekcijah — vse vrednosti glas-1 raven (REVIEW/odtis)", () => {
+  test("iskrenost (prehod val 117): TRANSCRIBED dvigi dokumentirani, p61 prazna, honesty opisuje admission pravila", () => {
     const blob = JSON.stringify([pz.protokolle_p48_49, ver, zus]);
-    expect((blob.match(/"status": "TRANSCRIBED"/g) ?? []).length).toBe(0);
+    // val 117: 58 statusov na TRANSCRIBED ravni (50 § + 8 p63/p65/protokoli) — vsi z metodo (glasovi/model)
+    const transcribed = (blob.match(/"status":"TRANSCRIBED/g) ?? []).length;
+    expect(transcribed).toBeGreaterThanOrEqual(50);
+    expect(transcribed).toBeLessThanOrEqual(70);
     // p61 = prazna predloga (brez VLM — nič za prebrati):
     expect(ver.p61_empty_template.page).toBe(61);
     expect(ver.p61_empty_template.status).toContain("brez VLM");
-    // honesty zapisi izrecno omenjajo odložene glasove:
-    expect(ver.reading_honesty).toContain("BREZ VLM glasov");
-    expect(ver.reading_honesty).toContain("resumable");
+    // honesty zapisi opisujejo admission pravila val 117:
+    expect(ver.reading_honesty).toContain("model-EXACT lift");
+    expect(ver.reading_honesty).toContain("nič ne vsiljeno");
   });
 
-  test("model I7: 11 vrstic i7_checks; p57/p59 EXACT; kontrola NE vrata", () => {
+  test("model I7: 11 vrstic i7_checks; val 117: 10 EXACT (p54 in p60 zdaj zapirata); kontrola NE vrata", () => {
     expect(ver.i7_checks).toHaveLength(11);
     const exact = ver.i7_checks.filter((c) => c.status === "I7-EXACT");
-    expect(exact.length).toBe(7); // §1 II.te, §2 I.te, §3, §4, §5, §6, §7/Weide
+    expect(exact.length).toBe(10); // val 117: §1 I/II, §2 I/II, §3–§6, §7/Weide, §8 (prej 7 — p54 in p60 nova)
     // vsi EXACT zapirajo obe aritmetiki:
     for (const c of exact) {
       expect(c.anschlag_closes).toBe(true);
       expect(c.rein_closes).toBe(true);
     }
-    // p57 Weingärten EXACT (24 × 70 %):
-    const p57 = ver.i7_checks.find((c) => c.sec === "§5")!;
-    expect(p57.status).toBe("I7-EXACT");
-    // p54 Wiesen II se NE zapira z modelom (iskreno):
+    // p54 Wiesen II ZDAJ zapira z roh=4 (val 117 — prej 14.0 ne zapiralo):
     const p54 = ver.i7_checks.find((c) => c.sec === "§2" && c.classe === "II.te")!;
-    expect(p54.status).toContain("model ne zapira");
+    expect(p54.status).toBe("I7-EXACT");
+    expect(p54.note).toContain("2×EXACT");
     // §7 Holznutzung brez modela (—|6 brez taxa):
     const holz = ver.i7_checks.find((c) => c.classe === "Holznutzung")!;
     expect(holz.status).toBe("BREZ-MODELA");
@@ -143,23 +152,26 @@ describe("val 109 — PZ p48–65 2. prehod (PREHOD 8) [124-val109]", () => {
     expect(pz.invariant_violations).toEqual([]);
   });
 
-  test("Zus A/B: p62/p64 naslovnici tiskani; p63 ODLOŽENO-VLM; p65 3 direktne vrstice", () => {
+  test("Zus A/B (prehod val 117): p62/p64 naslovnici; p63 16 vrstic integriranih; p65 razkol REALEN", () => {
     expect(zus.source_pages).toEqual([62, 63, 64, 65]);
     expect(zus.p62_naslovnica.status).toContain("TRANSCRIBED-direktni odtis");
     expect(zus.p62_naslovnica.text).toContain("Zusammenstellung über die jährliche Rente");
     expect(zus.p64_naslovnica.text).toContain("Zusammenstellung des gesammten Cultur-Aufwandes");
-    // p63: vrstice čakajo VLM glasove (val 77 glas sam NE zadosten):
-    expect(zus.p63_zusammenstellung_b.status).toContain("ODLOŽENO-VLM");
-    expect(zus.p63_zusammenstellung_b.rows).toContain("ODLOŽENO OB KVOTI");
-    // p65: struktura + 3 direktne vrstice (Acker I kolizija iskreno REVIEW):
+    // p63 val 117: 16 strukturiranih vrstic (8× TRANSCRIBED, 8× REVIEW — band2 nezanesljiv):
+    const p63 = zus.p63_zusammenstellung_b;
+    expect(p63.rows).toHaveLength(16);
+    expect(p63.status).toContain("DELNO REŠENO (val 117)");
+    expect(p63.rows_val109_placeholder).toContain("ODLOŽENO OB KVOTI");
+    expect(p63.rows.filter((r) => r.status.startsWith("TRANSCRIBED"))).toHaveLength(5); // r2/r3/r4/r5/r13
+    expect(p63.rows.filter((r) => r.status.startsWith("REVIEW"))).toHaveLength(8); // r6–r12 + Summe 2 (band2 nezanesljiv)
+    expect(p63.rows.filter((r) => !r.status.startsWith("TRANSCRIBED") && !r.status.startsWith("REVIEW"))).toHaveLength(3); // r1 (kat kolizija) + Summe 1 + r14 (mešani)
+    // p65: struktura + 3 direktne vrstice + razkol Acker I REALEN:
     expect(zus.p65_zusammenstellung_a.rows_direct).toHaveLength(3);
-    expect(zus.p65_zusammenstellung_a.rows_direct[0].status).toBe("REVIEW");
-    expect(zus.p65_zusammenstellung_a.status).toContain("DELNO REŠENO");
-    // F-PZ-19 PARTIAL z izrecno odložitvijo:
+    expect(zus.p65_zusammenstellung_a.status).toContain("razkol Acker I REALEN");
+    expect(zus.p65_zusammenstellung_a.vlm_v117?.razkol_acker_i).toContain("2 glasa");
+    // F-PZ-19 PARTIAL (iskreno — polne vrstice p65 še ne):
     const f19 = pz.findings.find((f) => f.id === "F-PZ-19")!;
     expect(f19.status).toBe("PARTIAL");
-    expect(f19.detail).toContain("ob kvoti");
-    expect(f19.detail).toContain("p142-t-kultur2");
   });
 
   test("surovine: manifest 45 izrezkov, 45 VLM glasov (val 116: kvota prosta — zajeti vsi; integracija = mikroprehod 8b, val 117), direktni odtis zapisan", () => {

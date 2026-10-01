@@ -1,2954 +1,3130 @@
 {
- "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
- "docid": "VAČ docid 41781 (uodid 373416)",
- "built": "val 110 (p7 nativni re-read @2727x2117 — glasovi val41+val52+val53x2 + odtis v110; VLM glasovi NE IZVEDENI: 429 dnevna kvota, resumable ob kvoti; prej: val 53)",
- "exclusions": {
-  "val52-p5": "column-shifted reading (house numbers read as bp_no) — excluded from consensus, kept in raw",
-  "val52-p8": "bp 1-11 = column misassignment of Musterstellung sub-list — excluded",
-  "val53-p8": "bp 1-11 = column misassignment of Musterstellung sub-list — excluded",
-  "val53-p8-zoom2x": "bp 1-11 = column misassignment of Musterstellung sub-list — excluded",
-  "val110-areal-owner": "excluded from v110 overwrite: areal/gattung/annotation p7 ostanejo iz glasov val 41/52/53 — nativni odtisi (v110_native.areal_odtis) kažejo sistemski pomik tudi v teh poljih (npr. areal bp 99 v register = 102 = nativni bp 98); popolna re-adjudikacija areal/lastnik zahteva VLM glasove (ob kvoti) + PUA kaskado — dokumentirano v register-v110-changes.json"
- },
- "p8_musterstellung": {
-  "page_read": "Summary page of the building parcel protocol (Gebäude-Parzellen-Protokoll) from the Franciscan Cadastre (1825), containing the 'Musterstellung der Gebäude' (classification of buildings) with categories, counts, and area totals in square fathoms (Klafter).",
-  "summary_table": [
-   {
-    "category": "Wohngebäude",
-    "count": "4",
-    "area_or_remark": "869"
-   },
-   {
-    "category": "Nebengebäude",
-    "count": "4",
-    "area_or_remark": "112"
-   },
-   {
-    "category": "Zusammen",
-    "count": "8",
-    "area_or_remark": "981"
-   },
-   {
-    "category": "Hofraum",
-    "count": "",
-    "area_or_remark": "1241"
-   },
-   {
-    "category": "Insgesamt",
-    "count": "",
-    "area_or_remark": "2222"
-   }
-  ],
-  "signatures": [
-   "[nečitljivo]",
-   "[nečitljivo]"
-  ],
-  "header_note": "Des Hauseigenthümers | Der Häuser und Gebäude | No. | Ver und Zuname. | Stand. | Wohnort. | No. | Gattung & | Areahl Inhalt auf Hiebsgriff des Hofraums",
-  "uncertain_words": [
-   "Musterstellung",
-   "Wohngebäude",
-   "Nebengebäude",
-   "Hofraum"
-  ],
-  "confidence": "medium"
- },
- "register": [
-  {
-   "page": 3,
-   "bp_no": "1",
-   "house_no": "[nečitljivo]",
-   "house_no_votes": "1/2",
-   "owner_original": "St. Veith",
-   "owner_variants": [
-    "St Veith",
-    "St. Veith"
-   ],
-   "stand_original": "Land. Gütle[?]",
-   "wohnort_original": "Grüble",
-   "gattung_original": "Wigl[?]",
-   "areal_original": "77",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Bauer",
-    "Gattung",
-    "Gütle",
-    "Haus No.",
-    "Veith",
-    "Wigl"
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "2",
-   "house_no": "[nečitljivo]",
-   "house_no_votes": "1/2",
-   "owner_original": "St. Veith",
-   "owner_variants": [
-    "St. Veith"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stall[?]",
-   "areal_original": "15",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Haus No.",
-    "Stall",
-    "Veith"
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "3",
-   "house_no": "18",
-   "house_no_votes": "2/2",
-   "owner_original": "Thomas Johan[?]",
-   "owner_variants": [
-    "Schmieg Barbara",
-    "Thomas Johan[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnh.[?]",
-   "areal_original": "11",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Johan",
-    "Wohnh."
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "4",
-   "house_no": "19",
-   "house_no_votes": "2/2",
-   "owner_original": "Thomas Marfa[?]",
-   "owner_variants": [
-    "Schmieg Marthl",
-    "Thomas Marfa[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stallh.[?]",
-   "areal_original": "99",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Marfa",
-    "Marthl",
-    "Stallh."
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "5",
-   "house_no": "17",
-   "house_no_votes": "2/2",
-   "owner_original": "Nikol. Hannes[?]",
-   "owner_variants": [
-    "Kneel Hanse",
-    "Nikol. Hannes[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnh.[?]",
-   "areal_original": "182",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Hannes",
-    "Hanse",
-    "Kneel",
-    "Wohnh."
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "6",
-   "house_no": "16",
-   "house_no_votes": "2/2",
-   "owner_original": "Tillan Mih[?]",
-   "owner_variants": [
-    "Tillan Mih[?]",
-    "Tillein Math"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stallh.[?]",
-   "areal_original": "119",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Math",
-    "Mih",
-    "Stallh.",
-    "Tillan",
-    "Tillein"
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "7",
-   "house_no": "110",
-   "house_no_votes": "1/1",
-   "owner_original": "Leopold Mader[?]",
-   "owner_variants": [
-    "Leopold Mader[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnh.[?]",
-   "areal_original": "84",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Mader",
-    "Wohnh."
-   ],
-   "readings": [
-    "val53-p3-recovered"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "8",
-   "house_no": "11",
-   "house_no_votes": "1/2",
-   "owner_original": "Veitig Philipp[?]",
-   "owner_variants": [
-    "Lebring Math",
-    "Veitig Philipp[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnh.[?]",
-   "areal_original": "28",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Lebring",
-    "Math",
-    "Philipp",
-    "Veitig",
-    "Wohnh."
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "9",
-   "house_no": "10",
-   "house_no_votes": "2/2",
-   "owner_original": "Zu Hoffstättten Mih[?]",
-   "owner_variants": [
-    "Zu Hoffstättten Mih[?]",
-    "Zu Noftstätten Michl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Gärtn.[?]",
-   "areal_original": "14",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Gärtn.",
-    "Michl",
-    "Mih",
-    "Noftstätten"
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "10",
-   "house_no": "10",
-   "house_no_votes": "2/2",
-   "owner_original": "Zu Hoffstättten Mih[?]",
-   "owner_variants": [
-    "Zu Hoffstättten Mih[?]",
-    "Zu Noftstätten Michl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stallh.[?]",
-   "areal_original": "811",
-   "annotation_original": "028",
-   "uncertain_words": [
-    "Gattung",
-    "Michl",
-    "Mih",
-    "Noftstätten",
-    "Stallh."
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "11",
-   "house_no": "9",
-   "house_no_votes": "2/2",
-   "owner_original": "Zu Hoffstätten Marx[?]",
-   "owner_variants": [
-    "Zu Hoffstätten Marx[?]",
-    "Zu Noftstätten Marle"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stallh.[?]",
-   "areal_original": "91",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Marle",
-    "Marx",
-    "Noftstätten",
-    "Stallh."
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "12",
-   "house_no": "8",
-   "house_no_votes": "1/2",
-   "owner_original": "Zu Hoffstätten muke[?]",
-   "owner_variants": [
-    "Zu Hoffstätten muke[?]",
-    "Zu Noftstätten Marlo"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stallh.[?]",
-   "areal_original": "144",
-   "annotation_original": "084",
-   "uncertain_words": [
-    "Annotation",
-    "Gattung",
-    "Marlo",
-    "Noftstätten",
-    "Stallh.",
-    "muke"
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "13",
-   "house_no": "6",
-   "house_no_votes": "1/2",
-   "owner_original": "Zu Hoffstätten Ghan[?]",
-   "owner_variants": [
-    "Zu Hoffstätten Ghan[?]",
-    "Zu Noftstätten Buncha"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stallh.[?]",
-   "areal_original": "61",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Buncha",
-    "Gattung",
-    "Ghan",
-    "Noftstätten",
-    "Stallh."
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "14",
-   "house_no": "6",
-   "house_no_votes": "1/1",
-   "owner_original": "Zu Noftstätten Schur",
-   "owner_variants": [
-    "Zu Noftstätten Schur"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "[nečitljivo]",
-   "areal_original": "61",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Noftstätten",
-    "Schur"
-   ],
-   "readings": [
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "7½",
-   "house_no": "110",
-   "house_no_votes": "1/2",
-   "owner_original": "Georg mader[?]",
-   "owner_variants": [
-    "Georg mader[?]",
-    "Lebring Math"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stallh.[?]",
-   "areal_original": "112",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "Lebring",
-    "Math",
-    "Stallh.",
-    "mader"
-   ],
-   "readings": [
-    "val53-p3-recovered",
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "8½",
-   "house_no": "14",
-   "house_no_votes": "1/1",
-   "owner_original": "Lebring math.",
-   "owner_variants": [
-    "Lebring math."
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "[nečitljivo]",
-   "areal_original": "20",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gattung",
-    "math."
-   ],
-   "readings": [
-    "val53-p3-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 3,
-   "bp_no": "12½",
-   "house_no": "8",
-   "house_no_votes": "1/1",
-   "owner_original": "Zu Hoffstätten muke[?]",
-   "owner_variants": [
-    "Zu Hoffstätten muke[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Gärtn.[?]",
-   "areal_original": "46",
-   "annotation_original": "Abgel. Hoffstätten / Hof. 1004",
-   "uncertain_words": [
-    "Abgel.",
-    "Gärtn.",
-    "Hof.",
-    "Hoffstätten",
-    "muke"
-   ],
-   "readings": [
-    "val53-p3-recovered"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "21",
-   "house_no": "10",
-   "house_no_votes": "2/3",
-   "owner_original": "Hans Mayrl",
-   "owner_variants": [
-    "Hans Malfal",
-    "Hans Mayrl",
-    "Hans Muffel"
-   ],
-   "stand_original": "Landl",
-   "wohnort_original": "Grüble",
-   "gattung_original": "Häußig",
-   "areal_original": "87 / 28",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "22",
-   "house_no": "10",
-   "house_no_votes": "2/3",
-   "owner_original": "Hans Mayrl",
-   "owner_variants": [
-    "Hans Malfal",
-    "Hans Mayrl",
-    "Hans Muffel"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Ofen",
-   "areal_original": "19",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Häusl"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "23",
-   "house_no": "11",
-   "house_no_votes": "2/3",
-   "owner_original": "Nikolaus Groß",
-   "owner_variants": [
-    "Nikolaus Groß",
-    "Peter Gorg",
-    "Peter Gspan"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "101",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "24",
-   "house_no": "1",
-   "house_no_votes": "2/3",
-   "owner_original": "Achmüth Malfg.",
-   "owner_variants": [
-    "Achmüth Malfg.",
-    "Christof Malfal",
-    "Christof Muffel"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Ofen",
-   "areal_original": "23",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Häusl"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "25",
-   "house_no": "1",
-   "house_no_votes": "2/3",
-   "owner_original": "Achmüth Malfg.",
-   "owner_variants": [
-    "Achmüth Malfg.",
-    "Christof Malfa",
-    "Christof Muffel"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "39",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "26",
-   "house_no": "2",
-   "house_no_votes": "2/3",
-   "owner_original": "Hölzly Hanu",
-   "owner_variants": [
-    "Hlady Johann",
-    "Hölzly Hanu",
-    "Hölzly Johann"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "245",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Hanu[?]",
-    "Hölzly"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "27",
-   "house_no": "21",
-   "house_no_votes": "2/3",
-   "owner_original": "Seyfrid Miko",
-   "owner_variants": [
-    "Pepay Michle",
-    "Pepay Michlo",
-    "Seyfrid Miko"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "85",
-   "annotation_original": "Dieß ist Kaufschillings wegen / Seyfrid Hanu",
-   "uncertain_words": [
-    "Abfallung",
-    "Kaufschillings[?]",
-    "Michlo",
-    "Pepay",
-    "Seyfrid[?]",
-    "aufgebaut"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "28",
-   "house_no": "21",
-   "house_no_votes": "2/3",
-   "owner_original": "Seyfrid Miko",
-   "owner_variants": [
-    "Gepay Michle",
-    "Gorgy Michle",
-    "Seyfrid Miko"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Ofen",
-   "areal_original": "33",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Gorgy",
-    "Michle"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "29",
-   "house_no": "66",
-   "house_no_votes": "2/3",
-   "owner_original": "Nikolaus Groß",
-   "owner_variants": [
-    "Michan gorg",
-    "Michel gspan",
-    "Nikolaus Groß"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Ofen",
-   "areal_original": "15",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Michan"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "30",
-   "house_no": "6",
-   "house_no_votes": "1/3",
-   "owner_original": "Achmüth Groß",
-   "owner_variants": [
-    "Achmüth Groß",
-    "Lorber gorg",
-    "Lorenz gspan"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "68",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Lorber"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "31",
-   "house_no": "65",
-   "house_no_votes": "2/3",
-   "owner_original": "Brünig Mahe",
-   "owner_variants": [
-    "Bering Marx",
-    "Brinc Marko",
-    "Brünig Mahe"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Mühle",
-   "areal_original": "15",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Brinc",
-    "Mahe[?]"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "32",
-   "house_no": "65",
-   "house_no_votes": "2/3",
-   "owner_original": "Brünig Mahe",
-   "owner_variants": [
-    "Bering Marx",
-    "Brinc Michle",
-    "Brünig Mahe"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig",
-   "areal_original": "30",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Mahe[?]"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "33",
-   "house_no": "61",
-   "house_no_votes": "1/3",
-   "owner_original": "Verblühter Malfa",
-   "owner_variants": [
-    "Veithaler Malfa",
-    "Veitlacher Muffa",
-    "Verblühter Malfa"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "64",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Malfa[?]",
-    "Veitlacher",
-    "Verblühter[?]"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "34",
-   "house_no": "39",
-   "house_no_votes": "3/4",
-   "owner_original": "Mülleg Hanu",
-   "owner_variants": [
-    "Milly Hanns",
-    "Mülleg Hanu",
-    "Müller Hanns"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Mühle",
-   "areal_original": "46",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Hanu[?]",
-    "Mülleg[?]",
-    "Müller"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "35",
-   "house_no": "31",
-   "house_no_votes": "1/3",
-   "owner_original": "Brünig Mayrl",
-   "owner_variants": [
-    "Brünig Mayrl",
-    "Milly Hanns",
-    "Müller Hanns"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "56",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "36",
-   "house_no": "32",
-   "house_no_votes": "1/3",
-   "owner_original": "Mülleg Hanu",
-   "owner_variants": [
-    "Hans Malfal",
-    "Hans Muffel",
-    "Mülleg Hanu"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Mühle",
-   "areal_original": "164 / 40",
-   "annotation_original": "118 ?",
-   "uncertain_words": [
-    "Hanu[?]",
-    "Mülleg[?]"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "37",
-   "house_no": "20",
-   "house_no_votes": "1/3",
-   "owner_original": "Brünig Malfa",
-   "owner_variants": [
-    "Brünig Malfa",
-    "Milling Johann",
-    "Müller Johann"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "58",
-   "annotation_original": "dito",
-   "uncertain_words": [
-    "Malfa[?]",
-    "Milling"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "38",
-   "house_no": "20",
-   "house_no_votes": "1/3",
-   "owner_original": "Brönig Malfa",
-   "owner_variants": [
-    "Bering Malfa",
-    "Brinc Muffa",
-    "Brönig Malfa"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Ofen",
-   "areal_original": "21",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Brönig[?]",
-    "Malfa[?]"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "39",
-   "house_no": "35",
-   "house_no_votes": "1/3",
-   "owner_original": "Brünig Miko",
-   "owner_variants": [
-    "Bering Malfa",
-    "Brinc Michle",
-    "Brünig Miko"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Häußig / Ofen",
-   "areal_original": "39",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 4,
-   "bp_no": "40",
-   "house_no": "29",
-   "house_no_votes": "1/3",
-   "owner_original": "Brünig Malfa",
-   "owner_variants": [
-    "Bering Malfa",
-    "Brinc Muffa",
-    "Brünig Malfa"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Mühle",
-   "areal_original": "6",
-   "annotation_original": "163 / 136",
-   "uncertain_words": [
-    "Feuerh.",
-    "Malfa[?]"
-   ],
-   "readings": [
-    "val53-p4-zoom2x",
-    "val53-p4",
-    "val52-p4"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "41",
-   "house_no": "64",
-   "house_no_votes": "1/2",
-   "owner_original": "Josef Groß",
-   "owner_variants": [
-    "Josef Groß",
-    "Sepp Järgy"
-   ],
-   "stand_original": "bauer",
-   "wohnort_original": "Grüble",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "169 / 31",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "42",
-   "house_no": "26",
-   "house_no_votes": "2/2",
-   "owner_original": "Lorenz Glan",
-   "owner_variants": [
-    "Bartl Järgy",
-    "Lorenz Glan"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "64",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "43",
-   "house_no": "27",
-   "house_no_votes": "2/2",
-   "owner_original": "Nicolaus Glan",
-   "owner_variants": [
-    "Michel Bartl",
-    "Nicolaus Glan"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "109",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Glan[?]"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "44",
-   "house_no": "30",
-   "house_no_votes": "1/2",
-   "owner_original": "Andreas Muth",
-   "owner_variants": [
-    "Andreas Muth",
-    "Andres Mally"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "108",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "45",
-   "house_no": "28",
-   "house_no_votes": "2/2",
-   "owner_original": "Andreas Muth",
-   "owner_variants": [
-    "Andreas Muth",
-    "Bartl Aß[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "80",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Aß"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "46",
-   "house_no": "63",
-   "house_no_votes": "2/2",
-   "owner_original": "Nikolaus Groß",
-   "owner_variants": [
-    "Christoph Järgy",
-    "Nikolaus Groß"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall / Hofstadt",
-   "areal_original": "214",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "47",
-   "house_no": "65",
-   "house_no_votes": "1/2",
-   "owner_original": "Nikolaus Groß",
-   "owner_variants": [
-    "Christoph Järgy",
-    "Nikolaus Groß"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Hallen",
-   "areal_original": "7",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "48",
-   "house_no": "63",
-   "house_no_votes": "2/2",
-   "owner_original": "Nikolaus Groß",
-   "owner_variants": [
-    "Michel Järgy",
-    "Nikolaus Groß"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Hallen",
-   "areal_original": "14",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "49",
-   "house_no": "61",
-   "house_no_votes": "1/2",
-   "owner_original": "Nikolaus Muth",
-   "owner_variants": [
-    "Michel Mally",
-    "Nikolaus Muth"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Hallen",
-   "areal_original": "16",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "50",
-   "house_no": "60",
-   "house_no_votes": "1/2",
-   "owner_original": "Schilko Joppiß",
-   "owner_variants": [
-    "Schilko Joppiß",
-    "Schilko Jörgl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Hallen",
-   "areal_original": "9",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Joppiß[?]",
-    "Jörgl"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "51",
-   "house_no": "60",
-   "house_no_votes": "1/2",
-   "owner_original": "Schilko Joppiß",
-   "owner_variants": [
-    "Schilko Joppiß",
-    "Schilko Jörgl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall / Hofstadt",
-   "areal_original": "90",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Joppiß[?]",
-    "Jörgl"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "52",
-   "house_no": "62",
-   "house_no_votes": "1/2",
-   "owner_original": "Nikolaus Muth",
-   "owner_variants": [
-    "Michel Mally",
-    "Nikolaus Muth"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall / Hofstadt",
-   "areal_original": "87",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "53",
-   "house_no": "61",
-   "house_no_votes": "1/2",
-   "owner_original": "Nikolaus Muth",
-   "owner_variants": [
-    "Michel Mally",
-    "Nikolaus Muth"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "43",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "54",
-   "house_no": "30",
-   "house_no_votes": "1/2",
-   "owner_original": "Nikolaus Muth",
-   "owner_variants": [
-    "Christoph Marx",
-    "Nikolaus Muth"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall / Hofstadt",
-   "areal_original": "144",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Marx"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "55",
-   "house_no": "32",
-   "house_no_votes": "2/2",
-   "owner_original": "Ulrich Groß",
-   "owner_variants": [
-    "Ulrich Groß",
-    "Wenzel Järgy"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "60",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Wenzel"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "56",
-   "house_no": "60",
-   "house_no_votes": "1/2",
-   "owner_original": "Schilko Joppiß",
-   "owner_variants": [
-    "Schilko Joppiß",
-    "Schilko Jörgl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "45",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Joppiß[?]",
-    "Jörgl"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "57",
-   "house_no": "63",
-   "house_no_votes": "1/2",
-   "owner_original": "Ulrich Muth",
-   "owner_variants": [
-    "Ulrich Mally",
-    "Ulrich Muth"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall / Hofstadt",
-   "areal_original": "196",
-   "annotation_original": "1762 / 1742 / 1-244",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "58",
-   "house_no": "32",
-   "house_no_votes": "2/2",
-   "owner_original": "Ulrich Piberger",
-   "owner_variants": [
-    "Ulrich Järgy",
-    "Ulrich Piberger"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall / Hofstadt",
-   "areal_original": "253",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Piberger[?]"
-   ],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "59",
-   "house_no": "32",
-   "house_no_votes": "1/2",
-   "owner_original": "Ulrich Groß",
-   "owner_variants": [
-    "Ulrich Groß",
-    "Ulrich Järgy"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Hallen",
-   "areal_original": "15",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "60",
-   "house_no": "36",
-   "house_no_votes": "1/2",
-   "owner_original": "Simon Glan",
-   "owner_variants": [
-    "Simon Glan",
-    "Thomas Mally"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Hofstadt",
-   "areal_original": "10",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p5-zoom2x",
-    "val53-p5"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 5,
-   "bp_no": "61",
-   "house_no": "3",
-   "house_no_votes": "1/1",
-   "owner_original": "Thomas Mally",
-   "owner_variants": [
-    "Thomas Mally"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Futterh.[?]",
-   "areal_original": "1844 / 6½",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Futterh."
-   ],
-   "readings": [
-    "val53-p5"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "61",
-   "house_no": "50",
-   "house_no_votes": "1/3",
-   "owner_original": "Pauling Johan",
-   "owner_variants": [
-    "Pauling Johan",
-    "Sedivy Johann",
-    "Seidly John"
-   ],
-   "stand_original": "bauen gäcklen[?]",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?]",
-   "areal_original": "9",
-   "annotation_original": "T / 21",
-   "uncertain_words": [
-    "Apeind",
-    "gäcklen"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "62",
-   "house_no": "54",
-   "house_no_votes": "2/3",
-   "owner_original": "Lopparz Michl",
-   "owner_variants": [
-    "Loparz Michl",
-    "Lopparz Michl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?]",
-   "areal_original": "9",
-   "annotation_original": "V",
-   "uncertain_words": [
-    "Apeind",
-    "Häusl"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "63",
-   "house_no": "49",
-   "house_no_votes": "2/3",
-   "owner_original": "Schimey Michael",
-   "owner_variants": [
-    "Schimey Michael",
-    "Schloßhüter Michael"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?]",
-   "areal_original": "19",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Apeind",
-    "Schloßhüter"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "64",
-   "house_no": "55",
-   "house_no_votes": "2/3",
-   "owner_original": "Schimey Johan",
-   "owner_variants": [
-    "Schimey Johan",
-    "Schmiedt John",
-    "Sedivy Johann"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus / Stall",
-   "areal_original": "30",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "65",
-   "house_no": "53",
-   "house_no_votes": "2/3",
-   "owner_original": "Pauling Johan",
-   "owner_variants": [
-    "Pauling Johan",
-    "Sedivy Johann",
-    "Seidly John"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Stall",
-   "areal_original": "34",
-   "annotation_original": "166",
-   "uncertain_words": [
-    "Schuppen"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "66",
-   "house_no": "55",
-   "house_no_votes": "2/3",
-   "owner_original": "Schimey Johan",
-   "owner_variants": [
-    "Schimey Johan",
-    "Schimey Johann",
-    "Schmiedt John"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut",
-   "areal_original": "18",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Häusl"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "67",
-   "house_no": "54",
-   "house_no_votes": "2/3",
-   "owner_original": "Lopparz Michl",
-   "owner_variants": [
-    "Lopparz Michl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stall / Hofstatt[?]",
-   "areal_original": "84",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Hofstatt",
-    "Häusl",
-    "Stall"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "68",
-   "house_no": "43",
-   "house_no_votes": "1/3",
-   "owner_original": "Dicheltaler Marfa",
-   "owner_variants": [
-    "Dichatschek Muffel",
-    "Dicheltaler Marfa",
-    "Dichstaler Wolfgr"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Hofstatt[?]",
-   "areal_original": "192",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Dichstaler"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "69",
-   "house_no": "45",
-   "house_no_votes": "1/3",
-   "owner_original": "Fillek Johan",
-   "owner_variants": [
-    "Fellach John",
-    "Fellek Johann",
-    "Fillek Johan"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?]",
-   "areal_original": "15",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Apeind"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "70",
-   "house_no": "36",
-   "house_no_votes": "1/3",
-   "owner_original": "Fillek Peter",
-   "owner_variants": [
-    "Fellach John",
-    "Fellek Johann",
-    "Fillek Peter"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Stall",
-   "areal_original": "36",
-   "annotation_original": "785",
-   "uncertain_words": [
-    "Häusl",
-    "Hütte"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "71",
-   "house_no": "34",
-   "house_no_votes": "1/3",
-   "owner_original": "Fillek Marfa",
-   "owner_variants": [
-    "Fellach Wolfgr",
-    "Fellek Muffel",
-    "Fillek Marfa"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Stall / Hofstatt[?]",
-   "areal_original": "202",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Hofstatt",
-    "Häusl",
-    "Stall"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "72",
-   "house_no": "38",
-   "house_no_votes": "1/3",
-   "owner_original": "Tschermak Peter",
-   "owner_variants": [
-    "Kraler Anna",
-    "Kratz Anna",
-    "Tschermak Peter"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stall",
-   "areal_original": "[?]",
-   "annotation_original": "durch Verwilligung[?] getilgt[?]",
-   "uncertain_words": [
-    "1828",
-    "Klatzer",
-    "Mühle",
-    "Tschermak",
-    "Verwilligung",
-    "beyträgliche",
-    "getilgt"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "73",
-   "house_no": "41",
-   "house_no_votes": "1/3",
-   "owner_original": "Dicheltaler Marla[?]",
-   "owner_variants": [
-    "Dichatschek Muffel",
-    "Dicheltaler Marla[?]",
-    "Kobolthofer[?] Michl"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Hofstatt[?]",
-   "areal_original": "183",
-   "annotation_original": "getilgt[?]",
-   "uncertain_words": [
-    "Kobolthofer",
-    "Marla",
-    "getilgt"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "74",
-   "house_no": "60",
-   "house_no_votes": "2/3",
-   "owner_original": "Pauling Marfa",
-   "owner_variants": [
-    "Fellach Michl",
-    "Felley Michl",
-    "Pauling Marfa"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Stall",
-   "areal_original": "210",
-   "annotation_original": "447",
-   "uncertain_words": [
-    "Felley",
-    "Häusl",
-    "Stall"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "75",
-   "house_no": "51",
-   "house_no_votes": "1/3",
-   "owner_original": "Knapp Peter",
-   "owner_variants": [
-    "Ainöd Johann",
-    "Aurich John",
-    "Knapp Peter"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Stall / Hofstatt[?]",
-   "areal_original": "[?]",
-   "annotation_original": "neu",
-   "uncertain_words": [
-    "Ainöd",
-    "Hofstatt",
-    "Häusl",
-    "Stall"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "76",
-   "house_no": "51",
-   "house_no_votes": "2/3",
-   "owner_original": "Knapp Peter",
-   "owner_variants": [
-    "Ehrlich Peter",
-    "Einöder Peter",
-    "Knapp Peter"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?]",
-   "areal_original": "68",
-   "annotation_original": "neu",
-   "uncertain_words": [
-    "1800",
-    "Apeind",
-    "Einöder"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "77",
-   "house_no": "48",
-   "house_no_votes": "2/3",
-   "owner_original": "Steinle Georg",
-   "owner_variants": [
-    "Herrn Georg",
-    "Heuritsch Georg",
-    "Steinle Georg"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Stall",
-   "areal_original": "20",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Heuritsch",
-    "Hütte"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "78",
-   "house_no": "41",
-   "house_no_votes": "1/3",
-   "owner_original": "Pechtlhans[?]",
-   "owner_variants": [
-    "Dichatschek Muffel",
-    "Kobolthofer[?] Michl",
-    "Pechtlhans[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?]",
-   "areal_original": "14",
-   "annotation_original": "V / 191",
-   "uncertain_words": [
-    "Apeind",
-    "Kobolthofer",
-    "Pechtlhans"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "79",
-   "house_no": "41",
-   "house_no_votes": "1/3",
-   "owner_original": "Dicheltaler Martho",
-   "owner_variants": [
-    "Dichatschek Mardko",
-    "Dicheltaler Martho",
-    "Kobolthofer[?] Martin"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Stall / Hofstatt[?]",
-   "areal_original": "174",
-   "annotation_original": "860",
-   "uncertain_words": [
-    "Hofstatt",
-    "Häusl",
-    "Kobolthofer",
-    "Mardko",
-    "Martho",
-    "Stall"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "80",
-   "house_no": "41",
-   "house_no_votes": "1/3",
-   "owner_original": "Dicheltaler Martho",
-   "owner_variants": [
-    "Dicheltaler Martho",
-    "Herrn Georg",
-    "Heuritsch Georg"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Lehngut / Stall / Hofstatt[?]",
-   "areal_original": "86",
-   "annotation_original": "neu",
-   "uncertain_words": [
-    "Heuritsch",
-    "Hofstatt",
-    "Martho",
-    "Stall"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "81",
-   "house_no": "48",
-   "house_no_votes": "1/3",
-   "owner_original": "Steinle Georg",
-   "owner_variants": [
-    "Dichatschek Mardko",
-    "Kobolthofer[?][?] Michl",
-    "Steinle Georg"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?] / Wohnhaus[?]",
-   "areal_original": "100",
-   "annotation_original": "neu",
-   "uncertain_words": [
-    "Apeind",
-    "Kobolthofer",
-    "Wohnhaus"
-   ],
-   "readings": [
-    "val53-p6-zoom2x",
-    "val53-p6",
-    "val52-p6"
-   ],
-   "review_status": "REVIEW-CONFLICT",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 6,
-   "bp_no": "82",
-   "house_no": "41",
-   "house_no_votes": "1/1",
-   "owner_original": "Dicheltaker Marthe",
-   "owner_variants": [
-    "Dicheltaker Marthe"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Apeind[?]",
-   "areal_original": "44",
-   "annotation_original": "neu",
-   "uncertain_words": [
-    "Apeind",
-    "Dicheltaker",
-    "Marthe"
-   ],
-   "readings": [
-    "val53-p6-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)"
-  },
-  {
-   "page": 7,
-   "bp_no": "81",
-   "house_no": "45",
-   "house_no_votes": "3/3",
-   "owner_original": "Krauß Georg",
-   "owner_variants": [
-    "Krauß Georg"
-   ],
-   "stand_original": "Landwirthschaft[?]",
-   "wohnort_original": "",
-   "gattung_original": "Wohnhaus",
-   "areal_original": "11",
-   "annotation_original": "Hofstattgebäude / Hofplatz 1841",
-   "uncertain_words": [
-    "Landwirthschaft"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "45",
-    "areal_odtis": "14",
-    "owner_struck": true,
-    "struck_note": "prečrtan (barva mešana črno/rdeče); areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "82",
-   "house_no": "45",
-   "house_no_votes": "3/3",
-   "owner_original": "Hans Georg",
-   "owner_variants": [
-    "Hans Georg",
-    "Krauß Georg"
-   ],
-   "stand_original": "\"",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hof",
-   "areal_original": "292",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "45",
-    "areal_odtis": "92",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "83",
-   "house_no": "45",
-   "house_no_votes": "3/3",
-   "owner_original": "Hans Georg",
-   "owner_variants": [
-    "Hans Georg",
-    "Krauß Georg"
-   ],
-   "stand_original": "\"",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung",
-   "areal_original": "21",
-   "annotation_original": "",
-   "uncertain_words": [],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "45",
-    "areal_odtis": "892",
-    "owner_struck": false,
-    "struck_note": ""
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "84",
-   "house_no": "45",
-   "house_no_votes": "3/3",
-   "owner_original": "Hans Georg / Lenz Gansb[?]",
-   "owner_variants": [
-    "Hans Georg / Lenz Gansb[?]",
-    "Krauß Georg"
-   ],
-   "stand_original": "\"",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung",
-   "areal_original": "44",
-   "annotation_original": "Hofp[?] Gießfällhügel / Hofp[?] [nečitljivo]",
-   "uncertain_words": [
-    "Gansb",
-    "Garten",
-    "Hofp"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "45",
-    "areal_odtis": "21",
-    "owner_struck": false,
-    "struck_note": ""
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "85",
-   "house_no": "37",
-   "house_no_votes": "2/3",
-   "owner_original": "Hans Georg",
-   "owner_variants": [
-    "Hans Georg",
-    "Winkler Peter"
-   ],
-   "stand_original": "\"",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Abtheilung",
-   "areal_original": "52",
-   "annotation_original": "418",
-   "uncertain_words": [],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "37",
-    "areal_odtis": "46",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "86",
-   "house_no": "36",
-   "house_no_votes": "2/3",
-   "owner_original": "Christian Pichl[?]",
-   "owner_variants": [
-    "Christian Pichl[?]",
-    "Leopoldin Wulfin"
-   ],
-   "stand_original": "\"",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hofplatz",
-   "areal_original": "76",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Pichl",
-    "Wulfin"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "36",
-    "areal_odtis": "23",
-    "owner_struck": false,
-    "struck_note": ""
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "87",
-   "house_no": "44",
-   "house_no_votes": "2/3",
-   "owner_original": "Christian Pichl[?]",
-   "owner_variants": [
-    "Christian Pichl[?]",
-    "Musterer Marle"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung",
-   "areal_original": "26",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Marle",
-    "Pichl"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "44",
-    "areal_odtis": "28",
-    "owner_struck": false,
-    "struck_note": ""
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "88",
-   "house_no": "36",
-   "house_no_votes": "2/3",
-   "owner_original": "Christen Mache[?]",
-   "owner_variants": [
-    "Christen Mache[?]",
-    "Krischan Wolf"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung",
-   "areal_original": "28",
-   "annotation_original": "316",
-   "uncertain_words": [
-    "Krischan",
-    "Mache"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "36",
-    "areal_odtis": "91",
-    "owner_struck": false,
-    "struck_note": ""
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "89",
-   "house_no": "44",
-   "house_no_votes": "2/3",
-   "owner_original": "Christian Mache[?]",
-   "owner_variants": [
-    "Christian Mache[?]",
-    "Musterer Marle"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hofplatz",
-   "areal_original": "91",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Mache",
-    "Marle"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "44",
-    "areal_odtis": "149",
-    "owner_struck": false,
-    "struck_note": ""
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "90",
-   "house_no": "43",
-   "house_no_votes": "2/3",
-   "owner_original": "Christen Mache[?]",
-   "owner_variants": [
-    "Christen Mache[?]",
-    "Winkler Paul"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hofplatz",
-   "areal_original": "192",
-   "annotation_original": "418",
-   "uncertain_words": [
-    "Mache"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "43",
-    "areal_odtis": "88",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "91",
-   "house_no": "44",
-   "house_no_votes": "2/3",
-   "owner_original": "Achaz Pichl[?]",
-   "owner_variants": [
-    "Achaz Pichl[?]",
-    "Musterer Paul"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hof",
-   "areal_original": "88",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Pichl"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "44",
-    "areal_odtis": "119",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "92",
-   "house_no": "41",
-   "house_no_votes": "2/3",
-   "owner_original": "Christen Mache[?]",
-   "owner_variants": [
-    "Christen Mache[?]",
-    "Fischer Georg"
-   ],
-   "stand_original": "\"",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hof",
-   "areal_original": "168",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Mache"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "41",
-    "areal_odtis": "129",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "93",
-   "house_no": "40",
-   "house_no_votes": "2/3",
-   "owner_original": "Georg Georg",
-   "owner_variants": [
-    "Feiner Wolfi",
-    "Georg Georg"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hof",
-   "areal_original": "239",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Wolfi"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "40",
-    "areal_odtis": "48",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "94",
-   "house_no": "40",
-   "house_no_votes": "3/3",
-   "owner_original": "Georg Mache[?]",
-   "owner_variants": [
-    "Feiner Wolfi",
-    "Georg Mache[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung",
-   "areal_original": "12",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Mache",
-    "Wolfi"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "40",
-    "areal_odtis": "181",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "95",
-   "house_no": "39",
-   "house_no_votes": "2/3",
-   "owner_original": "Georg Mache[?]",
-   "owner_variants": [
-    "Almer Marle",
-    "Georg Mache[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hofplatz",
-   "areal_original": "181",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Almer",
-    "Mache",
-    "Marle"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "39",
-    "areal_odtis": "91",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "96",
-   "house_no": "38",
-   "house_no_votes": "2/3",
-   "owner_original": "Schim[?]er Pichl[?]",
-   "owner_variants": [
-    "Kumer Georg",
-    "Schim[?]er Pichl[?]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hof",
-   "areal_original": "91",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Pichl",
-    "Schim"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "38",
-    "areal_odtis": "90",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   }
-  },
-  {
-   "page": 7,
-   "bp_no": "97",
-   "house_no": "39",
-   "house_no_votes": "2/4",
-   "owner_original": "Schim[?]er Georg",
-   "owner_variants": [
-    "Schim[?]er Georg",
-    "Schimer Marle"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung / Hof",
-   "areal_original": "90",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Marle",
-    "Schim",
-    "Schimer"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "STABLE",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "39",
-    "areal_odtis": "9",
-    "owner_struck": true,
-    "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
-   },
-   "v110_note": "v110: 39 (izrezek 3x; 38/35 = šum 667px)"
-  },
-  {
-   "page": 7,
-   "bp_no": "98",
-   "house_no": "70",
-   "house_no_votes": "0/4",
-   "owner_original": "Schim[?]er Mache[?]",
-   "owner_variants": [
-    "A. Zöllner",
-    "Schim[?]er Mache[?]"
-   ],
-   "stand_original": "Bauer[?]",
-   "wohnort_original": "",
-   "gattung_original": "Abtheilung",
-   "areal_original": "8",
-   "annotation_original": "180",
-   "uncertain_words": [
-    "Bauer",
-    "Mache",
-    "Schim",
-    "Zöllner"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "70",
-    "areal_odtis": "102",
-    "owner_struck": true,
-    "struck_note": "A.H. Zollamt prečrtan + rdeči podpis 'siehe ganz ... nfs. 460'"
-   },
-   "v110_note": "v110 nativni odtis: 70 (4x jasno; '20' = 7->2 zamenjava pri 667px; '39' = pomik vrstic iz bp 97). Zunanja dvojna korooboracija: PUA no. 95 = Zollamt h.70 + opomba 'B.P. 98.' (val 56, nativno 2x) + A01 no. 7 = h.70. Vezava Zollamt<->bp 98<->h.70 trojno podprta; 3. PT glas (VLM) resumable ob kvoti"
-  },
-  {
-   "page": 7,
-   "bp_no": "99",
-   "house_no": "",
-   "house_no_votes": "0/3",
-   "owner_original": "",
-   "owner_variants": [
-    "Alois Pollandt",
-    "[nečitljivo]"
-   ],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "",
-   "areal_original": "",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Bordier",
-    "Hofp"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "",
-    "areal_odtis": "",
-    "owner_struck": null,
-    "struck_note": "vrstica PRAZNA (pomlaji); Nro neostevilčen"
-   },
-   "v110_note": "v110: vrstica PRAZNA — vnos val 41/53 ('Alois Pollandt', h.50) = fantom nizke ločljivosti (korelirana napaka, areal 102 = bp 98); 'Bruckmühle' ni na p7"
-  },
-  {
-   "page": 7,
-   "bp_no": "100",
-   "house_no": "",
-   "house_no_votes": "0/4",
-   "owner_original": "",
-   "owner_variants": [],
-   "stand_original": "",
-   "wohnort_original": "",
-   "gattung_original": "",
-   "areal_original": "",
-   "annotation_original": "",
-   "uncertain_words": [
-    "Bruckmühle",
-    "Futterg",
-    "Viertel"
-   ],
-   "readings": [
-    "v110-native-p7",
-    "val53-p7",
-    "val53-p7-zoom2x"
-   ],
-   "review_status": "REVIEW",
-   "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
-   "docid": "VAČ docid 41781 (uodid 373416)",
-   "v110_native": {
-    "no": "",
-    "areal_odtis": "",
-    "owner_struck": null,
-    "struck_note": "vrstica PRAZNA (pomlaji); rdeče '439' v desnem robu = aritmetika vsot, ne vsebina"
-   },
-   "v110_note": "v110: vrstica PRAZNA — vnos val 41/53 (h.5, 'Futterg[?]', areal '1 77/609') = fantom vsotne vrstice ('5 | Eintrags.') + diagonalnih zapiskov; mlin ostaja vezan na PR/A01/PUA dokaze"
-  }
- ]
+  "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+  "docid": "VAČ docid 41781 (uodid 373416)",
+  "built": "val 110 (p7 nativni re-read @2727x2117 — glasovi val41+val52+val53x2 + odtis v110; VLM glasovi NE IZVEDENI: 429 dnevna kvota, resumable ob kvoti; prej: val 53)",
+  "exclusions": {
+    "val52-p5": "column-shifted reading (house numbers read as bp_no) — excluded from consensus, kept in raw",
+    "val52-p8": "bp 1-11 = column misassignment of Musterstellung sub-list — excluded",
+    "val53-p8": "bp 1-11 = column misassignment of Musterstellung sub-list — excluded",
+    "val53-p8-zoom2x": "bp 1-11 = column misassignment of Musterstellung sub-list — excluded",
+    "val110-areal-owner": "excluded from v110 overwrite: areal/gattung/annotation p7 ostanejo iz glasov val 41/52/53 — nativni odtisi (v110_native.areal_odtis) kažejo sistemski pomik tudi v teh poljih (npr. areal bp 99 v register = 102 = nativni bp 98); popolna re-adjudikacija areal/lastnik zahteva VLM glasove (ob kvoti) + PUA kaskado — dokumentirano v register-v110-changes.json"
+  },
+  "p8_musterstellung": {
+    "page_read": "Summary page of the building parcel protocol (Gebäude-Parzellen-Protokoll) from the Franciscan Cadastre (1825), containing the 'Musterstellung der Gebäude' (classification of buildings) with categories, counts, and area totals in square fathoms (Klafter).",
+    "summary_table": [
+      {
+        "category": "Wohngebäude",
+        "count": "4",
+        "area_or_remark": "869"
+      },
+      {
+        "category": "Nebengebäude",
+        "count": "4",
+        "area_or_remark": "112"
+      },
+      {
+        "category": "Zusammen",
+        "count": "8",
+        "area_or_remark": "981"
+      },
+      {
+        "category": "Hofraum",
+        "count": "",
+        "area_or_remark": "1241"
+      },
+      {
+        "category": "Insgesamt",
+        "count": "",
+        "area_or_remark": "2222"
+      }
+    ],
+    "signatures": [
+      "[nečitljivo]",
+      "[nečitljivo]"
+    ],
+    "header_note": "Des Hauseigenthümers | Der Häuser und Gebäude | No. | Ver und Zuname. | Stand. | Wohnort. | No. | Gattung & | Areahl Inhalt auf Hiebsgriff des Hofraums",
+    "uncertain_words": [
+      "Musterstellung",
+      "Wohngebäude",
+      "Nebengebäude",
+      "Hofraum"
+    ],
+    "confidence": "medium"
+  },
+  "register": [
+    {
+      "page": 3,
+      "bp_no": "1",
+      "house_no": "[nečitljivo]",
+      "house_no_votes": "1/2",
+      "owner_original": "St. Veith",
+      "owner_variants": [
+        "St Veith",
+        "St. Veith"
+      ],
+      "stand_original": "Land. Gütle[?]",
+      "wohnort_original": "Grüble",
+      "gattung_original": "Wigl[?]",
+      "areal_original": "77",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Bauer",
+        "Gattung",
+        "Gütle",
+        "Haus No.",
+        "Veith",
+        "Wigl"
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "2",
+      "house_no": "[nečitljivo]",
+      "house_no_votes": "1/2",
+      "owner_original": "St. Veith",
+      "owner_variants": [
+        "St. Veith"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stall[?]",
+      "areal_original": "15",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Haus No.",
+        "Stall",
+        "Veith"
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "3",
+      "house_no": "18",
+      "house_no_votes": "2/2",
+      "owner_original": "Thomas Johan[?]",
+      "owner_variants": [
+        "Schmieg Barbara",
+        "Thomas Johan[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnh.[?]",
+      "areal_original": "11",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Johan",
+        "Wohnh."
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "4",
+      "house_no": "19",
+      "house_no_votes": "2/2",
+      "owner_original": "Thomas Marfa[?]",
+      "owner_variants": [
+        "Schmieg Marthl",
+        "Thomas Marfa[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stallh.[?]",
+      "areal_original": "99",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Marfa",
+        "Marthl",
+        "Stallh."
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "5",
+      "house_no": "17",
+      "house_no_votes": "2/2",
+      "owner_original": "Nikol. Hannes[?]",
+      "owner_variants": [
+        "Kneel Hanse",
+        "Nikol. Hannes[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnh.[?]",
+      "areal_original": "182",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Hannes",
+        "Hanse",
+        "Kneel",
+        "Wohnh."
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "6",
+      "house_no": "16",
+      "house_no_votes": "2/2",
+      "owner_original": "Tillan Mih[?]",
+      "owner_variants": [
+        "Tillan Mih[?]",
+        "Tillein Math"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stallh.[?]",
+      "areal_original": "119",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Math",
+        "Mih",
+        "Stallh.",
+        "Tillan",
+        "Tillein"
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "7",
+      "house_no": "110",
+      "house_no_votes": "1/1",
+      "owner_original": "Leopold Mader[?]",
+      "owner_variants": [
+        "Leopold Mader[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnh.[?]",
+      "areal_original": "84",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Mader",
+        "Wohnh."
+      ],
+      "readings": [
+        "val53-p3-recovered"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "8",
+      "house_no": "11",
+      "house_no_votes": "1/2",
+      "owner_original": "Veitig Philipp[?]",
+      "owner_variants": [
+        "Lebring Math",
+        "Veitig Philipp[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnh.[?]",
+      "areal_original": "28",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Lebring",
+        "Math",
+        "Philipp",
+        "Veitig",
+        "Wohnh."
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "9",
+      "house_no": "10",
+      "house_no_votes": "2/2",
+      "owner_original": "Zu Hoffstättten Mih[?]",
+      "owner_variants": [
+        "Zu Hoffstättten Mih[?]",
+        "Zu Noftstätten Michl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Gärtn.[?]",
+      "areal_original": "14",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Gärtn.",
+        "Michl",
+        "Mih",
+        "Noftstätten"
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "10",
+      "house_no": "10",
+      "house_no_votes": "2/2",
+      "owner_original": "Zu Hoffstättten Mih[?]",
+      "owner_variants": [
+        "Zu Hoffstättten Mih[?]",
+        "Zu Noftstätten Michl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stallh.[?]",
+      "areal_original": "811",
+      "annotation_original": "028",
+      "uncertain_words": [
+        "Gattung",
+        "Michl",
+        "Mih",
+        "Noftstätten",
+        "Stallh."
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "11",
+      "house_no": "9",
+      "house_no_votes": "2/2",
+      "owner_original": "Zu Hoffstätten Marx[?]",
+      "owner_variants": [
+        "Zu Hoffstätten Marx[?]",
+        "Zu Noftstätten Marle"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stallh.[?]",
+      "areal_original": "91",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Marle",
+        "Marx",
+        "Noftstätten",
+        "Stallh."
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "12",
+      "house_no": "8",
+      "house_no_votes": "1/2",
+      "owner_original": "Zu Hoffstätten muke[?]",
+      "owner_variants": [
+        "Zu Hoffstätten muke[?]",
+        "Zu Noftstätten Marlo"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stallh.[?]",
+      "areal_original": "144",
+      "annotation_original": "084",
+      "uncertain_words": [
+        "Annotation",
+        "Gattung",
+        "Marlo",
+        "Noftstätten",
+        "Stallh.",
+        "muke"
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "13",
+      "house_no": "6",
+      "house_no_votes": "1/2",
+      "owner_original": "Zu Hoffstätten Ghan[?]",
+      "owner_variants": [
+        "Zu Hoffstätten Ghan[?]",
+        "Zu Noftstätten Buncha"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stallh.[?]",
+      "areal_original": "61",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Buncha",
+        "Gattung",
+        "Ghan",
+        "Noftstätten",
+        "Stallh."
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "14",
+      "house_no": "6",
+      "house_no_votes": "1/1",
+      "owner_original": "Zu Noftstätten Schur",
+      "owner_variants": [
+        "Zu Noftstätten Schur"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "[nečitljivo]",
+      "areal_original": "61",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Noftstätten",
+        "Schur"
+      ],
+      "readings": [
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "7½",
+      "house_no": "110",
+      "house_no_votes": "1/2",
+      "owner_original": "Georg mader[?]",
+      "owner_variants": [
+        "Georg mader[?]",
+        "Lebring Math"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stallh.[?]",
+      "areal_original": "112",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "Lebring",
+        "Math",
+        "Stallh.",
+        "mader"
+      ],
+      "readings": [
+        "val53-p3-recovered",
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "8½",
+      "house_no": "14",
+      "house_no_votes": "1/1",
+      "owner_original": "Lebring math.",
+      "owner_variants": [
+        "Lebring math."
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "[nečitljivo]",
+      "areal_original": "20",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gattung",
+        "math."
+      ],
+      "readings": [
+        "val53-p3-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 3,
+      "bp_no": "12½",
+      "house_no": "8",
+      "house_no_votes": "1/1",
+      "owner_original": "Zu Hoffstätten muke[?]",
+      "owner_variants": [
+        "Zu Hoffstätten muke[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Gärtn.[?]",
+      "areal_original": "46",
+      "annotation_original": "Abgel. Hoffstätten / Hof. 1004",
+      "uncertain_words": [
+        "Abgel.",
+        "Gärtn.",
+        "Hof.",
+        "Hoffstätten",
+        "muke"
+      ],
+      "readings": [
+        "val53-p3-recovered"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "21",
+      "house_no": "10",
+      "house_no_votes": "2/3",
+      "owner_original": "Hans Mayrl",
+      "owner_variants": [
+        "Hans Malfal",
+        "Hans Mayrl",
+        "Hans Muffel"
+      ],
+      "stand_original": "Landl",
+      "wohnort_original": "Grüble",
+      "gattung_original": "Häußig",
+      "areal_original": "87 / 28",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "22",
+      "house_no": "10",
+      "house_no_votes": "2/3",
+      "owner_original": "Hans Mayrl",
+      "owner_variants": [
+        "Hans Malfal",
+        "Hans Mayrl",
+        "Hans Muffel"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Ofen",
+      "areal_original": "19",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Häusl"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "23",
+      "house_no": "11",
+      "house_no_votes": "2/3",
+      "owner_original": "Nikolaus Groß",
+      "owner_variants": [
+        "Nikolaus Groß",
+        "Peter Gorg",
+        "Peter Gspan"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "101",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "24",
+      "house_no": "1",
+      "house_no_votes": "2/3",
+      "owner_original": "Achmüth Malfg.",
+      "owner_variants": [
+        "Achmüth Malfg.",
+        "Christof Malfal",
+        "Christof Muffel"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Ofen",
+      "areal_original": "23",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Häusl"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "25",
+      "house_no": "1",
+      "house_no_votes": "2/3",
+      "owner_original": "Achmüth Malfg.",
+      "owner_variants": [
+        "Achmüth Malfg.",
+        "Christof Malfa",
+        "Christof Muffel"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "39",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "26",
+      "house_no": "2",
+      "house_no_votes": "2/3",
+      "owner_original": "Hölzly Hanu",
+      "owner_variants": [
+        "Hlady Johann",
+        "Hölzly Hanu",
+        "Hölzly Johann"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "245",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Hanu[?]",
+        "Hölzly"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "27",
+      "house_no": "21",
+      "house_no_votes": "2/3",
+      "owner_original": "Seyfrid Miko",
+      "owner_variants": [
+        "Pepay Michle",
+        "Pepay Michlo",
+        "Seyfrid Miko"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "85",
+      "annotation_original": "Dieß ist Kaufschillings wegen / Seyfrid Hanu",
+      "uncertain_words": [
+        "Abfallung",
+        "Kaufschillings[?]",
+        "Michlo",
+        "Pepay",
+        "Seyfrid[?]",
+        "aufgebaut"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "28",
+      "house_no": "21",
+      "house_no_votes": "2/3",
+      "owner_original": "Seyfrid Miko",
+      "owner_variants": [
+        "Gepay Michle",
+        "Gorgy Michle",
+        "Seyfrid Miko"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Ofen",
+      "areal_original": "33",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Gorgy",
+        "Michle"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "29",
+      "house_no": "66",
+      "house_no_votes": "2/3",
+      "owner_original": "Nikolaus Groß",
+      "owner_variants": [
+        "Michan gorg",
+        "Michel gspan",
+        "Nikolaus Groß"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Ofen",
+      "areal_original": "15",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Michan"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "30",
+      "house_no": "6",
+      "house_no_votes": "1/3",
+      "owner_original": "Achmüth Groß",
+      "owner_variants": [
+        "Achmüth Groß",
+        "Lorber gorg",
+        "Lorenz gspan"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "68",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Lorber"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "31",
+      "house_no": "65",
+      "house_no_votes": "2/3",
+      "owner_original": "Brünig Mahe",
+      "owner_variants": [
+        "Bering Marx",
+        "Brinc Marko",
+        "Brünig Mahe"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Mühle",
+      "areal_original": "15",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Brinc",
+        "Mahe[?]"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "32",
+      "house_no": "65",
+      "house_no_votes": "2/3",
+      "owner_original": "Brünig Mahe",
+      "owner_variants": [
+        "Bering Marx",
+        "Brinc Michle",
+        "Brünig Mahe"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig",
+      "areal_original": "30",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Mahe[?]"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "33",
+      "house_no": "61",
+      "house_no_votes": "1/3",
+      "owner_original": "Verblühter Malfa",
+      "owner_variants": [
+        "Veithaler Malfa",
+        "Veitlacher Muffa",
+        "Verblühter Malfa"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "64",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Malfa[?]",
+        "Veitlacher",
+        "Verblühter[?]"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "34",
+      "house_no": "39",
+      "house_no_votes": "3/4",
+      "owner_original": "Mülleg Hanu",
+      "owner_variants": [
+        "Milly Hanns",
+        "Mülleg Hanu",
+        "Müller Hanns"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Mühle",
+      "areal_original": "46",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Hanu[?]",
+        "Mülleg[?]",
+        "Müller"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "35",
+      "house_no": "31",
+      "house_no_votes": "1/3",
+      "owner_original": "Brünig Mayrl",
+      "owner_variants": [
+        "Brünig Mayrl",
+        "Milly Hanns",
+        "Müller Hanns"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "56",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "36",
+      "house_no": "32",
+      "house_no_votes": "1/3",
+      "owner_original": "Mülleg Hanu",
+      "owner_variants": [
+        "Hans Malfal",
+        "Hans Muffel",
+        "Mülleg Hanu"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Mühle",
+      "areal_original": "164 / 40",
+      "annotation_original": "118 ?",
+      "uncertain_words": [
+        "Hanu[?]",
+        "Mülleg[?]"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "37",
+      "house_no": "20",
+      "house_no_votes": "1/3",
+      "owner_original": "Brünig Malfa",
+      "owner_variants": [
+        "Brünig Malfa",
+        "Milling Johann",
+        "Müller Johann"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "58",
+      "annotation_original": "dito",
+      "uncertain_words": [
+        "Malfa[?]",
+        "Milling"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "38",
+      "house_no": "20",
+      "house_no_votes": "1/3",
+      "owner_original": "Brönig Malfa",
+      "owner_variants": [
+        "Bering Malfa",
+        "Brinc Muffa",
+        "Brönig Malfa"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Ofen",
+      "areal_original": "21",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Brönig[?]",
+        "Malfa[?]"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "39",
+      "house_no": "35",
+      "house_no_votes": "1/3",
+      "owner_original": "Brünig Miko",
+      "owner_variants": [
+        "Bering Malfa",
+        "Brinc Michle",
+        "Brünig Miko"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Häußig / Ofen",
+      "areal_original": "39",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 4,
+      "bp_no": "40",
+      "house_no": "29",
+      "house_no_votes": "1/3",
+      "owner_original": "Brünig Malfa",
+      "owner_variants": [
+        "Bering Malfa",
+        "Brinc Muffa",
+        "Brünig Malfa"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Mühle",
+      "areal_original": "6",
+      "annotation_original": "163 / 136",
+      "uncertain_words": [
+        "Feuerh.",
+        "Malfa[?]"
+      ],
+      "readings": [
+        "val53-p4-zoom2x",
+        "val53-p4",
+        "val52-p4"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "41",
+      "house_no": "64",
+      "house_no_votes": "1/2",
+      "owner_original": "Josef Groß",
+      "owner_variants": [
+        "Josef Groß",
+        "Sepp Järgy"
+      ],
+      "stand_original": "bauer",
+      "wohnort_original": "Grüble",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "169 / 31",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "42",
+      "house_no": "26",
+      "house_no_votes": "2/2",
+      "owner_original": "Lorenz Glan",
+      "owner_variants": [
+        "Bartl Järgy",
+        "Lorenz Glan"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "64",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "43",
+      "house_no": "27",
+      "house_no_votes": "2/2",
+      "owner_original": "Nicolaus Glan",
+      "owner_variants": [
+        "Michel Bartl",
+        "Nicolaus Glan"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "109",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Glan[?]"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "44",
+      "house_no": "30",
+      "house_no_votes": "1/2",
+      "owner_original": "Andreas Muth",
+      "owner_variants": [
+        "Andreas Muth",
+        "Andres Mally"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "108",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "45",
+      "house_no": "28",
+      "house_no_votes": "2/2",
+      "owner_original": "Andreas Muth",
+      "owner_variants": [
+        "Andreas Muth",
+        "Bartl Aß[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "80",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Aß"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "46",
+      "house_no": "63",
+      "house_no_votes": "2/2",
+      "owner_original": "Nikolaus Groß",
+      "owner_variants": [
+        "Christoph Järgy",
+        "Nikolaus Groß"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall / Hofstadt",
+      "areal_original": "214",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "47",
+      "house_no": "65",
+      "house_no_votes": "1/2",
+      "owner_original": "Nikolaus Groß",
+      "owner_variants": [
+        "Christoph Järgy",
+        "Nikolaus Groß"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Hallen",
+      "areal_original": "7",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "48",
+      "house_no": "63",
+      "house_no_votes": "2/2",
+      "owner_original": "Nikolaus Groß",
+      "owner_variants": [
+        "Michel Järgy",
+        "Nikolaus Groß"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Hallen",
+      "areal_original": "14",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "49",
+      "house_no": "61",
+      "house_no_votes": "1/2",
+      "owner_original": "Nikolaus Muth",
+      "owner_variants": [
+        "Michel Mally",
+        "Nikolaus Muth"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Hallen",
+      "areal_original": "16",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "50",
+      "house_no": "60",
+      "house_no_votes": "1/2",
+      "owner_original": "Schilko Joppiß",
+      "owner_variants": [
+        "Schilko Joppiß",
+        "Schilko Jörgl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Hallen",
+      "areal_original": "9",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Joppiß[?]",
+        "Jörgl"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "51",
+      "house_no": "60",
+      "house_no_votes": "1/2",
+      "owner_original": "Schilko Joppiß",
+      "owner_variants": [
+        "Schilko Joppiß",
+        "Schilko Jörgl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall / Hofstadt",
+      "areal_original": "90",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Joppiß[?]",
+        "Jörgl"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "52",
+      "house_no": "62",
+      "house_no_votes": "1/2",
+      "owner_original": "Nikolaus Muth",
+      "owner_variants": [
+        "Michel Mally",
+        "Nikolaus Muth"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall / Hofstadt",
+      "areal_original": "87",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "53",
+      "house_no": "61",
+      "house_no_votes": "1/2",
+      "owner_original": "Nikolaus Muth",
+      "owner_variants": [
+        "Michel Mally",
+        "Nikolaus Muth"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "43",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "54",
+      "house_no": "30",
+      "house_no_votes": "1/2",
+      "owner_original": "Nikolaus Muth",
+      "owner_variants": [
+        "Christoph Marx",
+        "Nikolaus Muth"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall / Hofstadt",
+      "areal_original": "144",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Marx"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "55",
+      "house_no": "32",
+      "house_no_votes": "2/2",
+      "owner_original": "Ulrich Groß",
+      "owner_variants": [
+        "Ulrich Groß",
+        "Wenzel Järgy"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "60",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Wenzel"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "56",
+      "house_no": "60",
+      "house_no_votes": "1/2",
+      "owner_original": "Schilko Joppiß",
+      "owner_variants": [
+        "Schilko Joppiß",
+        "Schilko Jörgl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "45",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Joppiß[?]",
+        "Jörgl"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "57",
+      "house_no": "63",
+      "house_no_votes": "1/2",
+      "owner_original": "Ulrich Muth",
+      "owner_variants": [
+        "Ulrich Mally",
+        "Ulrich Muth"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall / Hofstadt",
+      "areal_original": "196",
+      "annotation_original": "1762 / 1742 / 1-244",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "58",
+      "house_no": "32",
+      "house_no_votes": "2/2",
+      "owner_original": "Ulrich Piberger",
+      "owner_variants": [
+        "Ulrich Järgy",
+        "Ulrich Piberger"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall / Hofstadt",
+      "areal_original": "253",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Piberger[?]"
+      ],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "59",
+      "house_no": "32",
+      "house_no_votes": "1/2",
+      "owner_original": "Ulrich Groß",
+      "owner_variants": [
+        "Ulrich Groß",
+        "Ulrich Järgy"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Hallen",
+      "areal_original": "15",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "60",
+      "house_no": "36",
+      "house_no_votes": "1/2",
+      "owner_original": "Simon Glan",
+      "owner_variants": [
+        "Simon Glan",
+        "Thomas Mally"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Hofstadt",
+      "areal_original": "10",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p5-zoom2x",
+        "val53-p5"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 5,
+      "bp_no": "61",
+      "house_no": "3",
+      "house_no_votes": "1/1",
+      "owner_original": "Thomas Mally",
+      "owner_variants": [
+        "Thomas Mally"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Futterh.[?]",
+      "areal_original": "1844 / 6½",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Futterh."
+      ],
+      "readings": [
+        "val53-p5"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "61",
+      "house_no": "50",
+      "house_no_votes": "1/3",
+      "owner_original": "Pauling Johan",
+      "owner_variants": [
+        "Pauling Johan",
+        "Sedivy Johann",
+        "Seidly John"
+      ],
+      "stand_original": "bauen gäcklen[?]",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?]",
+      "areal_original": "9",
+      "annotation_original": "T / 21",
+      "uncertain_words": [
+        "Apeind",
+        "gäcklen"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "62",
+      "house_no": "54",
+      "house_no_votes": "2/3",
+      "owner_original": "Lopparz Michl",
+      "owner_variants": [
+        "Loparz Michl",
+        "Lopparz Michl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?]",
+      "areal_original": "9",
+      "annotation_original": "V",
+      "uncertain_words": [
+        "Apeind",
+        "Häusl"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "63",
+      "house_no": "49",
+      "house_no_votes": "2/3",
+      "owner_original": "Schimey Michael",
+      "owner_variants": [
+        "Schimey Michael",
+        "Schloßhüter Michael"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?]",
+      "areal_original": "19",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Apeind",
+        "Schloßhüter"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "64",
+      "house_no": "55",
+      "house_no_votes": "2/3",
+      "owner_original": "Schimey Johan",
+      "owner_variants": [
+        "Schimey Johan",
+        "Schmiedt John",
+        "Sedivy Johann"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus / Stall",
+      "areal_original": "30",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "65",
+      "house_no": "53",
+      "house_no_votes": "2/3",
+      "owner_original": "Pauling Johan",
+      "owner_variants": [
+        "Pauling Johan",
+        "Sedivy Johann",
+        "Seidly John"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Stall",
+      "areal_original": "34",
+      "annotation_original": "166",
+      "uncertain_words": [
+        "Schuppen"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "66",
+      "house_no": "55",
+      "house_no_votes": "2/3",
+      "owner_original": "Schimey Johan",
+      "owner_variants": [
+        "Schimey Johan",
+        "Schimey Johann",
+        "Schmiedt John"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut",
+      "areal_original": "18",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Häusl"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "67",
+      "house_no": "54",
+      "house_no_votes": "2/3",
+      "owner_original": "Lopparz Michl",
+      "owner_variants": [
+        "Lopparz Michl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stall / Hofstatt[?]",
+      "areal_original": "84",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Hofstatt",
+        "Häusl",
+        "Stall"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "68",
+      "house_no": "43",
+      "house_no_votes": "1/3",
+      "owner_original": "Dicheltaler Marfa",
+      "owner_variants": [
+        "Dichatschek Muffel",
+        "Dicheltaler Marfa",
+        "Dichstaler Wolfgr"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Hofstatt[?]",
+      "areal_original": "192",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Dichstaler"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "69",
+      "house_no": "45",
+      "house_no_votes": "1/3",
+      "owner_original": "Fillek Johan",
+      "owner_variants": [
+        "Fellach John",
+        "Fellek Johann",
+        "Fillek Johan"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?]",
+      "areal_original": "15",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Apeind"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "70",
+      "house_no": "36",
+      "house_no_votes": "1/3",
+      "owner_original": "Fillek Peter",
+      "owner_variants": [
+        "Fellach John",
+        "Fellek Johann",
+        "Fillek Peter"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Stall",
+      "areal_original": "36",
+      "annotation_original": "785",
+      "uncertain_words": [
+        "Häusl",
+        "Hütte"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "71",
+      "house_no": "34",
+      "house_no_votes": "1/3",
+      "owner_original": "Fillek Marfa",
+      "owner_variants": [
+        "Fellach Wolfgr",
+        "Fellek Muffel",
+        "Fillek Marfa"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Stall / Hofstatt[?]",
+      "areal_original": "202",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Hofstatt",
+        "Häusl",
+        "Stall"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "72",
+      "house_no": "38",
+      "house_no_votes": "1/3",
+      "owner_original": "Tschermak Peter",
+      "owner_variants": [
+        "Kraler Anna",
+        "Kratz Anna",
+        "Tschermak Peter"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stall",
+      "areal_original": "[?]",
+      "annotation_original": "durch Verwilligung[?] getilgt[?]",
+      "uncertain_words": [
+        "1828",
+        "Klatzer",
+        "Mühle",
+        "Tschermak",
+        "Verwilligung",
+        "beyträgliche",
+        "getilgt"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "73",
+      "house_no": "41",
+      "house_no_votes": "1/3",
+      "owner_original": "Dicheltaler Marla[?]",
+      "owner_variants": [
+        "Dichatschek Muffel",
+        "Dicheltaler Marla[?]",
+        "Kobolthofer[?] Michl"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Hofstatt[?]",
+      "areal_original": "183",
+      "annotation_original": "getilgt[?]",
+      "uncertain_words": [
+        "Kobolthofer",
+        "Marla",
+        "getilgt"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "74",
+      "house_no": "60",
+      "house_no_votes": "2/3",
+      "owner_original": "Pauling Marfa",
+      "owner_variants": [
+        "Fellach Michl",
+        "Felley Michl",
+        "Pauling Marfa"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Stall",
+      "areal_original": "210",
+      "annotation_original": "447",
+      "uncertain_words": [
+        "Felley",
+        "Häusl",
+        "Stall"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "75",
+      "house_no": "51",
+      "house_no_votes": "1/3",
+      "owner_original": "Knapp Peter",
+      "owner_variants": [
+        "Ainöd Johann",
+        "Aurich John",
+        "Knapp Peter"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Stall / Hofstatt[?]",
+      "areal_original": "[?]",
+      "annotation_original": "neu",
+      "uncertain_words": [
+        "Ainöd",
+        "Hofstatt",
+        "Häusl",
+        "Stall"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "76",
+      "house_no": "51",
+      "house_no_votes": "2/3",
+      "owner_original": "Knapp Peter",
+      "owner_variants": [
+        "Ehrlich Peter",
+        "Einöder Peter",
+        "Knapp Peter"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?]",
+      "areal_original": "68",
+      "annotation_original": "neu",
+      "uncertain_words": [
+        "1800",
+        "Apeind",
+        "Einöder"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "77",
+      "house_no": "48",
+      "house_no_votes": "2/3",
+      "owner_original": "Steinle Georg",
+      "owner_variants": [
+        "Herrn Georg",
+        "Heuritsch Georg",
+        "Steinle Georg"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Stall",
+      "areal_original": "20",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Heuritsch",
+        "Hütte"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "78",
+      "house_no": "41",
+      "house_no_votes": "1/3",
+      "owner_original": "Pechtlhans[?]",
+      "owner_variants": [
+        "Dichatschek Muffel",
+        "Kobolthofer[?] Michl",
+        "Pechtlhans[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?]",
+      "areal_original": "14",
+      "annotation_original": "V / 191",
+      "uncertain_words": [
+        "Apeind",
+        "Kobolthofer",
+        "Pechtlhans"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "79",
+      "house_no": "41",
+      "house_no_votes": "1/3",
+      "owner_original": "Dicheltaler Martho",
+      "owner_variants": [
+        "Dichatschek Mardko",
+        "Dicheltaler Martho",
+        "Kobolthofer[?] Martin"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Stall / Hofstatt[?]",
+      "areal_original": "174",
+      "annotation_original": "860",
+      "uncertain_words": [
+        "Hofstatt",
+        "Häusl",
+        "Kobolthofer",
+        "Mardko",
+        "Martho",
+        "Stall"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "80",
+      "house_no": "41",
+      "house_no_votes": "1/3",
+      "owner_original": "Dicheltaler Martho",
+      "owner_variants": [
+        "Dicheltaler Martho",
+        "Herrn Georg",
+        "Heuritsch Georg"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Lehngut / Stall / Hofstatt[?]",
+      "areal_original": "86",
+      "annotation_original": "neu",
+      "uncertain_words": [
+        "Heuritsch",
+        "Hofstatt",
+        "Martho",
+        "Stall"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "81",
+      "house_no": "48",
+      "house_no_votes": "1/3",
+      "owner_original": "Steinle Georg",
+      "owner_variants": [
+        "Dichatschek Mardko",
+        "Kobolthofer[?][?] Michl",
+        "Steinle Georg"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?] / Wohnhaus[?]",
+      "areal_original": "100",
+      "annotation_original": "neu",
+      "uncertain_words": [
+        "Apeind",
+        "Kobolthofer",
+        "Wohnhaus"
+      ],
+      "readings": [
+        "val53-p6-zoom2x",
+        "val53-p6",
+        "val52-p6"
+      ],
+      "review_status": "REVIEW-CONFLICT",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 6,
+      "bp_no": "82",
+      "house_no": "41",
+      "house_no_votes": "1/1",
+      "owner_original": "Dicheltaker Marthe",
+      "owner_variants": [
+        "Dicheltaker Marthe"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Apeind[?]",
+      "areal_original": "44",
+      "annotation_original": "neu",
+      "uncertain_words": [
+        "Apeind",
+        "Dicheltaker",
+        "Marthe"
+      ],
+      "readings": [
+        "val53-p6-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)"
+    },
+    {
+      "page": 7,
+      "bp_no": "81",
+      "house_no": "45",
+      "house_no_votes": "3/3",
+      "owner_original": "Krauß Georg",
+      "owner_variants": [
+        "Krauß Georg"
+      ],
+      "stand_original": "Landwirthschaft[?]",
+      "wohnort_original": "",
+      "gattung_original": "Wohnhaus",
+      "areal_original": "11",
+      "annotation_original": "Hofstattgebäude / Hofplatz 1841",
+      "uncertain_words": [
+        "Landwirthschaft"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "45",
+        "areal_odtis": "14",
+        "owner_struck": true,
+        "struck_note": "prečrtan (barva mešana črno/rdeče); areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "REVIEW — kolizija branja: vid 14[?] / vlm 44 [rot] / nizko-loč. glasovi 11; celica rdeče prečrtana (preklicana parcela?)",
+        "struck": true,
+        "voices": {
+          "vid": "14[?]",
+          "vlm": "44 [gestrichen] [rot]",
+          "register_lowres": "11"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "82",
+      "house_no": "45",
+      "house_no_votes": "3/3",
+      "owner_original": "Hans Georg",
+      "owner_variants": [
+        "Hans Georg",
+        "Krauß Georg"
+      ],
+      "stand_original": "\"",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hof",
+      "areal_original": "52",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "45",
+        "areal_odtis": "92",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + vlm — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "52",
+          "vlm_value_level": "52 [gestrichen] [rot]",
+          "register_lowres_pomik": "nizko-loč. zmešane vrstice 2–5 (to črnilo bral kot r85 = 292)"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "83",
+      "house_no": "45",
+      "house_no_votes": "3/3",
+      "owner_original": "Hans Georg",
+      "owner_variants": [
+        "Hans Georg",
+        "Krauß Georg"
+      ],
+      "stand_original": "\"",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung",
+      "areal_original": "292",
+      "annotation_original": "",
+      "uncertain_words": [],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "45",
+        "areal_odtis": "892",
+        "owner_struck": false,
+        "struck_note": ""
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + vlm — vezava po merjenih pravilih val 117)",
+        "struck": false,
+        "voices": {
+          "vid": "292",
+          "vlm_value_level": "292 [gestrichen] [rot]",
+          "register_lowres_pomik": "nizko-loč. zmešane vrstice 2–5 (to črnilo bral kot r86 = 21)"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "84",
+      "house_no": "45",
+      "house_no_votes": "3/3",
+      "owner_original": "Hans Georg / Lenz Gansb[?]",
+      "owner_variants": [
+        "Hans Georg / Lenz Gansb[?]",
+        "Krauß Georg"
+      ],
+      "stand_original": "\"",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung",
+      "areal_original": "21",
+      "annotation_original": "Hofp[?] Gießfällhügel / Hofp[?] [nečitljivo]",
+      "uncertain_words": [
+        "Gansb",
+        "Garten",
+        "Hofp"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "45",
+        "areal_odtis": "21",
+        "owner_struck": false,
+        "struck_note": ""
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": false,
+        "voices": {
+          "vid": "21",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. zmešane vrstice 2–5 (to črnilo bral kot r87 = 44)"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "85",
+      "house_no": "37",
+      "house_no_votes": "2/3",
+      "owner_original": "Hans Georg",
+      "owner_variants": [
+        "Hans Georg",
+        "Winkler Peter"
+      ],
+      "stand_original": "\"",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Abtheilung",
+      "areal_original": "76",
+      "annotation_original": "418",
+      "uncertain_words": [],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "37",
+        "areal_odtis": "46",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "76",
+          "vlm_value_level": "81 [artefakt — vid 76]",
+          "register_lowres_pomik": "nizko-loč. zmešane vrstice 2–5 (to črnilo bral kot r88 = 52)"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "86",
+      "house_no": "36",
+      "house_no_votes": "2/3",
+      "owner_original": "Christian Pichl[?]",
+      "owner_variants": [
+        "Christian Pichl[?]",
+        "Leopoldin Wulfin"
+      ],
+      "stand_original": "\"",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hofplatz",
+      "areal_original": "26",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Pichl",
+        "Wulfin"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "36",
+        "areal_odtis": "23",
+        "owner_struck": false,
+        "struck_note": ""
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": false,
+        "voices": {
+          "vid": "26",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r87 = 76"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "87",
+      "house_no": "44",
+      "house_no_votes": "2/3",
+      "owner_original": "Christian Pichl[?]",
+      "owner_variants": [
+        "Christian Pichl[?]",
+        "Musterer Marle"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung",
+      "areal_original": "28",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Marle",
+        "Pichl"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "44",
+        "areal_odtis": "28",
+        "owner_struck": false,
+        "struck_note": ""
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": false,
+        "voices": {
+          "vid": "28",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r88 = 26"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "88",
+      "house_no": "36",
+      "house_no_votes": "2/3",
+      "owner_original": "Christen Mache[?]",
+      "owner_variants": [
+        "Christen Mache[?]",
+        "Krischan Wolf"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung",
+      "areal_original": "91",
+      "annotation_original": "316",
+      "uncertain_words": [
+        "Krischan",
+        "Mache"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "36",
+        "areal_odtis": "91",
+        "owner_struck": false,
+        "struck_note": ""
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": false,
+        "voices": {
+          "vid": "91",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r89 = 28"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "89",
+      "house_no": "44",
+      "house_no_votes": "2/3",
+      "owner_original": "Christian Mache[?]",
+      "owner_variants": [
+        "Christian Mache[?]",
+        "Musterer Marle"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hofplatz",
+      "areal_original": "192",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Mache",
+        "Marle"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "44",
+        "areal_odtis": "149",
+        "owner_struck": false,
+        "struck_note": ""
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": false,
+        "voices": {
+          "vid": "192",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r90 = 91"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "90",
+      "house_no": "43",
+      "house_no_votes": "2/3",
+      "owner_original": "Christen Mache[?]",
+      "owner_variants": [
+        "Christen Mache[?]",
+        "Winkler Paul"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hofplatz",
+      "areal_original": "88",
+      "annotation_original": "418",
+      "uncertain_words": [
+        "Mache"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "43",
+        "areal_odtis": "88",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "88",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r91 = 192"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "91",
+      "house_no": "44",
+      "house_no_votes": "2/3",
+      "owner_original": "Achaz Pichl[?]",
+      "owner_variants": [
+        "Achaz Pichl[?]",
+        "Musterer Paul"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hof",
+      "areal_original": "168",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Pichl"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "44",
+        "areal_odtis": "119",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "168",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r92 = 88"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "92",
+      "house_no": "41",
+      "house_no_votes": "2/3",
+      "owner_original": "Christen Mache[?]",
+      "owner_variants": [
+        "Christen Mache[?]",
+        "Fischer Georg"
+      ],
+      "stand_original": "\"",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hof",
+      "areal_original": "239",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Mache"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "41",
+        "areal_odtis": "129",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "239",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r93 = 168"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "93",
+      "house_no": "40",
+      "house_no_votes": "2/3",
+      "owner_original": "Georg Georg",
+      "owner_variants": [
+        "Feiner Wolfi",
+        "Georg Georg"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hof",
+      "areal_original": "12",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Wolfi"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "40",
+        "areal_odtis": "48",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + vlm — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "12",
+          "vlm_value_level": "12 [gestrichen] [rot]",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r94 = 239"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "94",
+      "house_no": "40",
+      "house_no_votes": "3/3",
+      "owner_original": "Georg Mache[?]",
+      "owner_variants": [
+        "Feiner Wolfi",
+        "Georg Mache[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung",
+      "areal_original": "181",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Mache",
+        "Wolfi"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "40",
+        "areal_odtis": "181",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "181",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r95 = 12"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "95",
+      "house_no": "39",
+      "house_no_votes": "2/3",
+      "owner_original": "Georg Mache[?]",
+      "owner_variants": [
+        "Almer Marle",
+        "Georg Mache[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hofplatz",
+      "areal_original": "91",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Almer",
+        "Mache",
+        "Marle"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "39",
+        "areal_odtis": "91",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "91",
+          "vlm_value_level": "prazno/nezanesljivo (band2)",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r96 = 181"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "96",
+      "house_no": "38",
+      "house_no_votes": "2/3",
+      "owner_original": "Schim[?]er Pichl[?]",
+      "owner_variants": [
+        "Kumer Georg",
+        "Schim[?]er Pichl[?]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hof",
+      "areal_original": "90",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Pichl",
+        "Schim"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "38",
+        "areal_odtis": "90",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + vlm — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "90",
+          "vlm_value_level": "90 [gestrichen] [rot]",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r97 = 91"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "97",
+      "house_no": "39",
+      "house_no_votes": "2/4",
+      "owner_original": "Schim[?]er Georg",
+      "owner_variants": [
+        "Schim[?]er Georg",
+        "Schimer Marle"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung / Hof",
+      "areal_original": "8",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Marle",
+        "Schim",
+        "Schimer"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "STABLE",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "39",
+        "areal_odtis": "9",
+        "owner_struck": true,
+        "struck_note": "rdeče prečrtan; areal rdeče prečrtan"
+      },
+      "v110_note": "v110: 39 (izrezek 3x; 38/35 = šum 667px)",
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + vlm — vezava po merjenih pravilih val 117)",
+        "struck": true,
+        "voices": {
+          "vid": "8",
+          "vlm_value_level": "8 [gestrichen] [rot]",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r98 = 90"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "98",
+      "house_no": "70",
+      "house_no_votes": "0/4",
+      "owner_original": "Schim[?]er Mache[?]",
+      "owner_variants": [
+        "A. Zöllner",
+        "Schim[?]er Mache[?]"
+      ],
+      "stand_original": "Bauer[?]",
+      "wohnort_original": "",
+      "gattung_original": "Abtheilung",
+      "areal_original": "102",
+      "annotation_original": "180",
+      "uncertain_words": [
+        "Bauer",
+        "Mache",
+        "Schim",
+        "Zöllner"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "70",
+        "areal_odtis": "102",
+        "owner_struck": true,
+        "struck_note": "A.H. Zollamt prečrtan + rdeči podpis 'siehe ganz ... nfs. 460'"
+      },
+      "v110_note": "v110 nativni odtis: 70 (4x jasno; '20' = 7->2 zamenjava pri 667px; '39' = pomik vrstic iz bp 97). Zunanja dvojna korooboracija: PUA no. 95 = Zollamt h.70 + opomba 'B.P. 98.' (val 56, nativno 2x) + A01 no. 7 = h.70. Vezava Zollamt<->bp 98<->h.70 trojno podprta; 3. PT glas (VLM) resumable ob kvoti",
+      "areal_v117": {
+        "status": "TRANSCRIBED (vid + nizko-loč. glas iste črnila — vezava po merjenih pravilih val 117)",
+        "struck": false,
+        "voices": {
+          "vid": "102",
+          "vlm_value_level": "102 [rot] [artefakt — vid: črno, NE rdeče]",
+          "register_lowres_pomik": "nizko-loč. glas je bral to črnilo kot r99 = 8"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "99",
+      "house_no": "",
+      "house_no_votes": "0/3",
+      "owner_original": "",
+      "owner_variants": [
+        "Alois Pollandt",
+        "[nečitljivo]"
+      ],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "",
+      "areal_original": "",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Bordier",
+        "Hofp"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "",
+        "areal_odtis": "",
+        "owner_struck": null,
+        "struck_note": "vrstica PRAZNA (pomlaji); Nro neostevilčen"
+      },
+      "v110_note": "v110: vrstica PRAZNA — vnos val 41/53 ('Alois Pollandt', h.50) = fantom nizke ločljivosti (korelirana napaka, areal 102 = bp 98); 'Bruckmühle' ni na p7",
+      "areal_v117": {
+        "status": "TRANSCRIBED-prazno (fantom potrjen: val 110 nativno + val 117 vid prazno; vlm: 99 = rdeči scribble)",
+        "struck": false,
+        "voices": {
+          "vlm": "99: rdeči scribble / 100: prazno"
+        }
+      }
+    },
+    {
+      "page": 7,
+      "bp_no": "100",
+      "house_no": "",
+      "house_no_votes": "0/4",
+      "owner_original": "",
+      "owner_variants": [],
+      "stand_original": "",
+      "wohnort_original": "",
+      "gattung_original": "",
+      "areal_original": "",
+      "annotation_original": "",
+      "uncertain_words": [
+        "Bruckmühle",
+        "Futterg",
+        "Viertel"
+      ],
+      "readings": [
+        "v110-native-p7",
+        "val53-p7",
+        "val53-p7-zoom2x"
+      ],
+      "review_status": "REVIEW",
+      "source": "SI AS 176/N/N83/s/PT — Protocoll der Bau Parcellen, Gemeinde Grüble, 1825",
+      "docid": "VAČ docid 41781 (uodid 373416)",
+      "v110_native": {
+        "no": "",
+        "areal_odtis": "",
+        "owner_struck": null,
+        "struck_note": "vrstica PRAZNA (pomlaji); rdeče '439' v desnem robu = aritmetika vsot, ne vsebina"
+      },
+      "v110_note": "v110: vrstica PRAZNA — vnos val 41/53 (h.5, 'Futterg[?]', areal '1 77/609') = fantom vsotne vrstice ('5 | Eintrags.') + diagonalnih zapiskov; mlin ostaja vezan na PR/A01/PUA dokaze",
+      "areal_v117": {
+        "status": "TRANSCRIBED-prazno (fantom potrjen: val 110 nativno + val 117 vid prazno; vlm: 99 = rdeči scribble)",
+        "struck": false,
+        "voices": {
+          "vlm": "99: rdeči scribble / 100: prazno"
+        }
+      }
+    }
+  ]
 }

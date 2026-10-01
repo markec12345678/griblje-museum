@@ -182,10 +182,14 @@ describe("val 110 — page-records + reconciliation", () => {
     expect(rec.val110!["honesty"]).toContain("TRANSCRIBED=0");
   });
 
-  test("open_for_full_res: 'PT p7 rep' prešel v RESOLVED-V110", () => {
-    const resolved = rec.open_for_full_res.filter((x) => x.includes("PT p7 rep"));
+  test("open_for_full_res: 'PT p7 rep' RESOLVED-V110 → val 117 delna rešitev areal pomika", () => {
+    const resolved = rec.open_for_full_res.filter((x) => x.includes("PT p7"));
     expect(resolved.length).toBe(1);
-    expect(resolved[0]).toContain("RESOLVED-V110");
+    // val 117: areal pomik +1 (r6–r18) vgrajen; r1 kolizija + vsotna REVIEW; imena F1 politika
+    expect(resolved[0]).toContain("REŠENO-delno-v117");
+    expect(resolved[0]).toContain("r6–r18");
+    // val 110 sekcija ostaja ohranjena (zgodovina):
+    expect(rec.val110!["honesty"]).toContain("TRANSCRIBED=0");
   });
 });
 
