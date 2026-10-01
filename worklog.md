@@ -4675,3 +4675,27 @@ Stage Summary:
 - Kaskada dosledna in minimalna: edina nova parcela PS-p048-j12 (brez haus_no → brez vezi), KG sha ca0aeb58, I6 392, coverage 1067, K9 69
 - Zbirka: 114 zapisov / 652 virov / 528 identitet / 69 deljenih (nespremenjeno — tehnični val)
 - Naslednje: imenski pass p25–p55 → 44 odprtih razhjanj ob višji ločljivosti/multispektralno (izven peskovnika) → VLM glasovi ob kvoti (45 izrezkov PZ → mikroprehod 8b + p142-t-kultur2 + 3. PT glas bp 98 + areal/lastnik p7) → poln re-read p143 → F-PV-03/F-PV-04 → register 26-0326 + 26-0379 (okt./nov. 2026)
+
+---
+Task ID: 116
+Agent: Z.ai Code (glavna seja, val 116)
+Task: ISSUE #42 §4/§14 — KVOTA PROSTA: 52 VLM glasov zajetih + p142 zaključek 2. prehoda (696/696 tile-ov) (user: "odlicno nadaljuj")
+
+Work Log:
+- PRELOM: VLM sonda uspešna (prvič od vala 107 — 429 trdo) → izvedba čakalne vrste "VLM glasovi ob kvoti" (napovedana v valih 109–115); veja feat/val116-issue72-vlm-voices-mikroprehod-8b
+- Zajem glasov: **45/45 PZ izrezkov** (read-v109.mts kosovsko — SDK ni bil razrešljiv iz griblje-museum → node_modules symlink na peskovniško namestitev; 3 teki po ~5–9 min) → vlm-v109/ (45 JSON + raw): 8 tabel §1–§8 (p50–p60), proza/begr, p63 3 pasovi + glava, p65 4 pasovi + desni zoom, protokoli p48/49 · **p142-t-kultur2** (regen-missing-crop-v99.mts + tile-read-v98.mts) → **696/696 tile-ov** · **PT p7 6 glasov** (read-pt7-v116.mts NOVO; createVision — create zavrača image content) → vlm-v116/
+- KLJUČNA NAJDBA (PT bp 98 / Zollamt): VLM vidi v Nro celici zapisano **"70"** — v110 nativno branje trdilo "PRAZNO" → RAZKOL GLASOV izrecno zabeležen; vezava Zollamt↔bp98↔h.70 počiva na PUA no. 95 + A01 no. 7; **review_status ostaja REVIEW** (glas = artefakt, ne dvig); bp 96 Nro "38" ✓ in bp 97 "39" ✓ potrjujeta register; areals 1–5: 4× prečrtano rdeče (osnova za re-adjudikacijo)
+- p142 integracija (build-register-v116-p142.py, pravila 1:1 val 86 — kopirana logika, SAMO p142): 40 vrstic v82-native-pass1 → **v86-colonial-tiles (1795 skupaj; v82 ostaja 3 = p143)**; **0 vrednostnih popravkov** — p1/p2 sistemski razkol (frakcije ganz/1/4/1/2 v jaethe) → **25 × v86-review-col-split**; **34 kultur_tile_v86 + 37 owner_tile_v86** variant polj; page kvalifikacija drži (only_j 0 %); changes audit register-v116-p142-changes.json (changes 0, digit_mismatch 0)
+- Kaskada: pass3 NEIZMENJAN (392/77 — frakcije niso parcele); KG vsebina identična (samo generated_at → sha **ca0aeb58→2790d893**, §22 prehod) → story-graph (3269/3477), timeline (I6 2035/392/173+142), coverage (PARTIAL 1067; note p142 posodobljena: "zaključena v val 116") regenerirani; c4/analysis nespremenjeni
+- Iskrenost: TRANSCRIBED = 0; **mikroprehod 8b (PZ integracija 45 glasov: § vrednosti iz REVIEW po admission pravilih + model I7; p63 vs v77; 7 dilem) + PT p7 re-adjudikacija = val 117** (glasovi komitirani)
+- Testi: +11 varovalk (tests/val116-vlm-voices-p142.test.ts) + pini: 1755→1795 (6 datotek), v82 43→3 (2), variante 1402/1615→1436/1652 (3), tile-i 695→696 (3), v86-review-col-split 0→25 (1), val109 glasovi 0→45 (1), KG sha ca0aeb58→2790d893 (9 datotek)
+- Infrastruktura: **node_modules symlink** — razreši vse lokalne modulne napake (next/server, @prisma/client, zod, react/jsx-dev-runtime): **1115 testov: 1104 pass / 11 skip / 0 fail** (prej 7 fail + 7 errors = okoljski); tsc/lint lokalno zdaj pognljiva
+- Docs: research-griblje/131-val116-vlm-glasovi-p142.md + KAZALO 131 + README 168. sklop
+- Potek: commit 593ba57 → push → PR #120 → CI 3/3 ZELENO → merge (main @ c338f18) → izbris veje (oddaljena 204 + lokalna) → worklog → poročilo na #72
+
+Stage Summary:
+- ISSUE #42 §4/§14: čakalna vrsta VLM glasov IZČERPANA (52 = 45 PZ + 1 tile + 6 PT) — vsi resumable vирови iz valov 109–115 zdaj komitirani; p142 = ZADNJA stran 2. prehoda (p56–142 kolonski tile-i KOMPLETNI, 1795 vrstic)
+- p142: 0 vrednostnih popravkov, 25 REVIEW markerjev (pošteno), 71 variant polj; pass3/KG vsebina nespremenjena
+- PT bp 98: nov razkol glasov (nativno-prazno vs VLM-70) — izrecno odprt, status REVIEW
+- Infrastruktura: node_modules symlink — lokalna testna baza zdaj čista (0 fail / 0 errors)
+- Naslednje: val 117 = mikroprehod 8b (PZ integracija 45 glasov: § vrednosti iz REVIEW, p63, 7 dilem) + PT p7 re-adjudikacija (areal stolpec 20 vrstic + imena) → imenski pass p25–p55 → poln re-read p143 → F-PV-03/F-PV-04 → register 26-0326 + 26-0379
