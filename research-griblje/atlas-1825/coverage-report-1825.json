@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "c3932092f7e6db2c68064f3d4108b123c3506ab1885f80574724255bcf7e4dad",
+  "kg_sha256": "596c1ca74b0e7b896de175274464c58dd2d787233e85217643a4c673eb67caf3",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -59,18 +59,19 @@
    "category_id": "houses",
    "title": "Register hiš 1825",
    "total": 167,
-   "VERIFIED": 0,
+   "VERIFIED": 16,
    "PARTIAL": 45,
-   "CONFLICT": 49,
+   "CONFLICT": 33,
    "UNKNOWN": 73,
    "NOT_FOUND": 0,
    "native": {
-    "CONFLICT": 49,
+    "CONFLICT": 33,
     "SINGLE_SOURCE": 32,
+    "AGREE": 16,
     "PARTIAL": 13,
     "UNKNOWN_SEMANTICS": 73
    },
-   "mapping_rule": "CONFLICT→CONFLICT; PARTIAL→PARTIAL; SINGLE_SOURCE→PARTIAL (dokazano iz enega vira, brez korooboracije); UNKNOWN_SEMANTICS→UNKNOWN (status vira jasno neuresničen)",
+   "mapping_rule": "AGREE→VERIFIED (val 119 del 3: PUA+PS priimek ≥0.7, metoda B); CONFLICT→CONFLICT; PARTIAL→PARTIAL; SINGLE_SOURCE→PARTIAL (dokazano iz enega vira, brez korooboracije); UNKNOWN_SEMANTICS→UNKNOWN (status vira jasno neuresničen)",
    "evidence": [
     "research-griblje/atlas-1825/house-register-1825.json",
     "PASS 2 (val 59)"
@@ -216,9 +217,9 @@
   {
    "category_id": "owners",
    "title": "Lastniki 1825 (owner osebe: PUA + PS)",
-   "total": 488,
+   "total": 981,
    "VERIFIED": 140,
-   "PARTIAL": 198,
+   "PARTIAL": 691,
    "CONFLICT": 150,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -226,8 +227,8 @@
     "REVIEW": 35,
     "REVIEW-CONFLICT": 150,
     "VERIFIED-2x": 45,
-    "SINGLE_SOURCE": 163,
-    "STABLE": 95
+    "STABLE": 95,
+    "SINGLE_SOURCE": 656
    },
    "mapping_rule": "VERIFIED-2x/STABLE→VERIFIED; REVIEW/SINGLE_SOURCE→PARTIAL; REVIEW-CONFLICT→CONFLICT",
    "evidence": [
@@ -238,9 +239,9 @@
   {
    "category_id": "persons",
    "title": "Osebe / akterji 1825 (vse osebe registra)",
-   "total": 488,
+   "total": 981,
    "VERIFIED": 140,
-   "PARTIAL": 198,
+   "PARTIAL": 691,
    "CONFLICT": 150,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -248,8 +249,8 @@
     "REVIEW": 35,
     "REVIEW-CONFLICT": 150,
     "VERIFIED-2x": 45,
-    "SINGLE_SOURCE": 163,
-    "STABLE": 95
+    "STABLE": 95,
+    "SINGLE_SOURCE": 656
    },
    "mapping_rule": "VERIFIED-2x/STABLE→VERIFIED; REVIEW/SINGLE_SOURCE→PARTIAL; REVIEW-CONFLICT→CONFLICT; merge prepovedan brez dokaza (161 possible_duplicates NI združenih, §5)",
    "evidence": [
@@ -474,16 +475,16 @@
    "category_id": "unresolved_conflicts",
    "title": "Konflikti (centralni register)",
    "total": 113,
-   "VERIFIED": 1,
-   "PARTIAL": 4,
-   "CONFLICT": 108,
+   "VERIFIED": 5,
+   "PARTIAL": 16,
+   "CONFLICT": 92,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
    "native": {
-    "OPEN": 108,
-    "DOCUMENTED": 2,
-    "PARTIALLY_RESOLVED": 2,
-    "RESOLVED": 1
+    "OPEN": 92,
+    "PARTIALLY_RESOLVED": 14,
+    "RESOLVED": 5,
+    "DOCUMENTED": 2
    },
    "mapping_rule": "RESOLVED→VERIFIED; PARTIALLY_RESOLVED/DOCUMENTED→PARTIAL; OPEN→CONFLICT (ostaja vidno, merge prepovedan §14)",
    "evidence": [
@@ -551,11 +552,11 @@
   {
    "category_id": "unknowns",
    "title": "Neznanke — prečni pregled (izrecno štetje, brez procentov)",
-   "total": 3278,
+   "total": 3535,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
-   "UNKNOWN": 3278,
+   "UNKNOWN": 3535,
    "NOT_FOUND": 0,
    "native": {
     "aggregate": [
@@ -576,7 +577,7 @@
      },
      {
       "item": "osebe possible_duplicates (NI združenih, §5)",
-      "count": 161,
+      "count": 418,
       "category": "persons"
      },
      {

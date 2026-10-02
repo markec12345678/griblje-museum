@@ -161,6 +161,7 @@ categories.append(cat(
     "Register hiš 1825",
     len(houses),
     counts_to_six(dict(house_status), {
+        "AGREE": "VERIFIED",
         "CONFLICT": "CONFLICT",
         "PARTIAL": "PARTIAL",
         "SINGLE_SOURCE": "PARTIAL",
@@ -169,7 +170,7 @@ categories.append(cat(
         "UNKNOWN": "UNKNOWN",
     }),
     dict(house_status),
-    "CONFLICT→CONFLICT; PARTIAL→PARTIAL; SINGLE_SOURCE→PARTIAL (dokazano iz enega vira, brez korooboracije); UNKNOWN_SEMANTICS→UNKNOWN (status vira jasno neuresničen)",
+    "AGREE→VERIFIED (val 119 del 3: PUA+PS priimek ≥0.7, metoda B); CONFLICT→CONFLICT; PARTIAL→PARTIAL; SINGLE_SOURCE→PARTIAL (dokazano iz enega vira, brez korooboracije); UNKNOWN_SEMANTICS→UNKNOWN (status vira jasno neuresničen)",
     ["research-griblje/atlas-1825/house-register-1825.json", "PASS 2 (val 59)"],
 ))
 

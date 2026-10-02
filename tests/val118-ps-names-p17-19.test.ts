@@ -179,8 +179,8 @@ describe("val 118 — kaskada (izrecna)", () => {
     expect(kg.node_stats).toBeTruthy();
     const nodes = (kg.nodes as Array<Record<string, unknown>>).length;
     const edges = (kg.edges as Array<Record<string, unknown>>).length;
-    expect(nodes).toBe(3269);
-    expect(edges).toBe(3477);
+    expect(nodes).toBe(3762);
+    expect(edges).toBe(3471);
   });
   test("KG sha c3932092 raznesen v kaskadne artefakte", () => {
     for (const f of [
@@ -188,7 +188,7 @@ describe("val 118 — kaskada (izrecna)", () => {
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ]) {
       const s = readFileSync(join(REPO, f), "utf8");
-      expect(s).toContain("c3932092");
+      expect(s).toContain("596c1ca7");
     }
   });
   test("pass3: PS parcele 392 + land-use identičen (vrednostna projekcija nespremenjena)", () => {

@@ -1,6 +1,6 @@
 {
- "val": "59",
- "pass": 2,
+ "val": "119-del3",
+ "pass": "sync (PUA↔PS v119)",
  "issue": "#42 §2",
  "title": "HOUSE REGISTER 1825 — hiše Gribelj, združen pregled PUA/PS/PT/A01",
  "method": {
@@ -11,25 +11,28 @@
    "vsak podatek z virom/stranjo"
   ],
   "evidence_status_logic": {
-   "AGREE": "PUA+PS lastnik podoben (token LCS ≥0.7)",
-   "PARTIAL": "PUA+PS delno podoben (0.5–0.7) ALI ≥2 vira brez PUA+PS parice",
+   "AGREE": "PUA+PS priimek podoben (token surname-first LCS ≥0.7, metoda B)",
+   "PARTIAL": "PUA+PS priimek 0.5–0.7 Z exact token parom ALI ≥2 vira brez PUA+PS parice",
    "CONFLICT": "PUA+PS nesoglasje (F9 različni stanji — obe trditvi ohranjeni, cf. conflict register)",
    "SINGLE_SOURCE": "samo en vir",
    "UNKNOWN": "brez lastniškega dokaza",
    "UNKNOWN_SEMANTICS": "sestavljen '1 / N' sklic (F12 TO-DECODE)"
   },
-  "ps_coverage_warning": "PS bloki za hiše 70–78 (vključno Zollamt h.70) čakajo p56–p143"
+  "ps_coverage_warning": "PS bloki za hiše 70–78 (vključno Zollamt h.70) čakajo p56–p143",
+  "v119_sync_note": "val 119 del 3: pua_ps_name_sim = sim_concat_first (kontinuiteta val 58); pua_ps_name_sim_v119 = metoda B; evidence_status re-izveden po metodi B; owners.ps_distinct = nova add-only plast"
  },
  "provenance": {
   "pua": "pua-n83/register.json (98 vpisov, val 51+57)",
   "pt": "pt-n83/register.json (100 vrstic, val 53) + pt-n83/reconciliation.json (val 54+56+57)",
-  "ps": "ps-n83/register.json (1.073 vrstic, 55/143 strani, val 57) + ps-n83/analysis-v1.json (val 58)",
+  "ps": "ps-n83/register.json (1.077 vrstic p3–p55, val 119 del 1–2e dvojni sidr)",
   "bp_matrix": "raw-web-val57-2026-10/bp-house-matrix.json (100 vrstic, val 57)",
-  "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)"
+  "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)",
+  "sync": "atlas-1825/build-sync-v119-del3.py (val 119 del 3, 0 VLM)"
  },
  "coverage": {
-  "CONFLICT": 49,
+  "CONFLICT": 33,
   "SINGLE_SOURCE": 32,
+  "AGREE": 16,
   "PARTIAL": 13,
   "UNKNOWN_SEMANTICS": 73
  },
@@ -56,39 +59,78 @@
      "owner_original": "Gemeinde",
      "stand": null,
      "pages": [
+      3,
       4,
       12,
       41,
       47,
       48,
-      51,
-      55
+      51
      ],
-     "rows": 12,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Gemeinde",
+      "pages": [
+       3,
+       4,
+       12,
+       41,
+       51
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Baron Gustitsch.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Gemeinde.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": 0.37,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 13,
-    "ps_rows": 12,
+    "ps_rows": 9,
     "ps_kultur": {
+     "Gart": 1,
      "Wald": 1,
      "Wiese": 1,
      "Hutweide": 1,
-     "Acker": 6,
+     "Acker": 1,
      "Gartn": 1,
-     "Lohd": 1,
+     "Waldg": 1,
+     "Einhof": 1,
      "o. Rieg": 1
     }
    },
    "conflict_ids": [
     "CH-000-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Gemeinde",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
+   }
   },
   {
    "house_id": "H-000",
@@ -97,19 +139,21 @@
    "evidence_status": "SINGLE_SOURCE",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Stuker Michl",
      "stand": "~",
      "pages": [
       29
      ],
      "rows": 1,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
-   "pua_ps_name_sim": null,
+   "pua_ps_name_sim": 0.37,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
@@ -121,7 +165,16 @@
    "conflict_ids": [
     "CH-000-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Gemeinde",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
+   }
   },
   {
    "house_id": "H-001",
@@ -176,10 +229,9 @@
       45,
       47,
       48,
-      50,
       55
      ],
-     "rows": 12,
+     "rows": 13,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -197,7 +249,94 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Barbara Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wier Grunigman",
+      "pages": [
+       35
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleshitzkh Außin.[?]",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleshitzkh Marßfid.[?]",
+      "pages": [
+       45,
+       48
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Schimitlbeck Matthe.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimibek Matthe.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimitbek Matthe.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimilbeck Matthe.[?]",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimelbeck Matthe.[?]",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimilbeck Swan.[?]",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dragasch Jure.",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleschibek Malga[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.143,
    "bp_refs": [
@@ -212,20 +351,28 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 65,
-    "ps_rows": 12,
+    "ps_rows": 13,
     "ps_kultur": {
      "Schindel. Wald": 1,
-     "Acker": 5,
-     "Hüte": 1,
+     "Acker": 7,
+     "Lohg": 1,
      "Lohd": 1,
-     "Wiese": 2,
-     "Einhof": 1
+     "Wiese": 2
     }
    },
    "conflict_ids": [
     "CH-001-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Wier Grunigman",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 12
+   }
   },
   {
    "house_id": "H-002",
@@ -254,15 +401,13 @@
      }
     ],
     "ps": {
-     "owner_original": "Heideri Anna",
+     "owner_original": "Krischan Matthe.",
      "stand": null,
      "pages": [
-      45,
       47,
-      48,
-      55
+      48
      ],
-     "rows": 12,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -278,9 +423,34 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Matthe.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Stabelz Soan.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Stabelz Swan.[?]",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 5
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.326,
+   "pua_ps_name_sim": 0.304,
    "bp_refs": [
     {
      "bp": 26,
@@ -289,19 +459,29 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 49,
-    "ps_rows": 12,
+    "ps_rows": 9,
     "ps_kultur": {
-     "Wiese": 2,
-     "Lohd": 3,
-     "Acker": 5,
-     "Wise": 1,
-     "Einhof": 1
+     "Lohd": 2,
+     "Wisd": 1,
+     "Acker": 2,
+     "Lohg": 1,
+     "Einhof und Baumgarten": 1,
+     "Einhof": 2
     }
    },
    "conflict_ids": [
     "CH-002-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.429,
+    "sim_any": 0.6,
+    "best_ps_name": "Stabelz Soan.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
+   }
   },
   {
    "house_id": "H-003",
@@ -348,16 +528,18 @@
      }
     ],
     "ps": {
-     "owner_original": "Dragosch Georg",
+     "owner_original": "Dragasch Jure.",
      "stand": null,
      "pages": [
       45,
       47,
       48,
+      49,
       50,
+      54,
       55
      ],
-     "rows": 9,
+     "rows": 22,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -371,9 +553,70 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Dragasch Jure.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Heide Marko.",
+      "pages": [
+       45,
+       48,
+       49
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Olschewski Mathäus",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Matthe.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 9
+     },
+     {
+      "name": "Weidner Mathä.",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Weinchan Matthe[?]",
+      "pages": [
+       50
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Krischan Wortga[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Heide Marko",
+      "pages": [
+       55
+      ],
+      "rows": 4
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.381,
+   "pua_ps_name_sim": 0.29,
    "bp_refs": [
     {
      "bp": 22,
@@ -386,18 +629,30 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 56,
-    "ps_rows": 9,
+    "ps_rows": 22,
     "ps_kultur": {
-     "Acker": 5,
-     "Einhof und Baumgarten": 1,
+     "Acker": 13,
+     "Wiese": 3,
+     "Hüte": 1,
+     "Gartn": 1,
      "Hutweide": 1,
-     "Stöger": 2
+     "Stöger": 1,
+     "Lichtw.": 1
     }
    },
    "conflict_ids": [
     "CH-003-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Dragasch Jure.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 8
+   }
   },
   {
    "house_id": "H-004",
@@ -432,13 +687,43 @@
       14,
       28,
       45,
-      48
+      49
      ],
      "rows": 4,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Novak Mihelc",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novach Martinl[?]",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lubreschiby Maathe.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.237,
    "bp_refs": [],
@@ -455,13 +740,22 @@
    "conflict_ids": [
     "CH-004-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.455,
+    "sim_any": 0.545,
+    "best_ps_name": "Lubreschiby Maathe.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   }
   },
   {
    "house_id": "H-005",
    "house_no_1825": "5",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -484,16 +778,14 @@
      }
     ],
     "ps": {
-     "owner_original": "Hauschild Mathä",
+     "owner_original": "Haischan[?] Mathä",
      "stand": null,
      "pages": [
       27,
       49,
-      50,
-      51,
       55
      ],
-     "rows": 11,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -505,9 +797,67 @@
       7
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Haischan[?] Mathä",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leopold Gell",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleshitzkh Marßfid.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kourtzly Marolin.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin.",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin. [RED prečrtan] + 'Gmatze dne.[?]'",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin. [delno prečrtan] + 'Smatze dne.[?]'",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dragasch Jure",
+      "pages": [
+       55
+      ],
+      "rows": 2
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.333,
+   "pua_ps_name_sim": 0.271,
    "bp_refs": [
     {
      "bp": 100,
@@ -516,18 +866,25 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 59,
-    "ps_rows": 11,
+    "ps_rows": 9,
     "ps_kultur": {
      "Acker": 8,
-     "Wald": 1,
-     "48 Fürsteß": 1,
-     "Waldweg": 1
+     "Hutweide": 1
     }
    },
    "conflict_ids": [
     "CH-005-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.875,
+    "sim_any": 0.875,
+    "best_ps_name": "Dragasch Jure",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 8
+   }
   },
   {
    "house_id": "H-006",
@@ -596,7 +953,7 @@
       50,
       53
      ],
-     "rows": 18,
+     "rows": 14,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -618,7 +975,101 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Lorbltcher Hauffl",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stoffel Michael",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Baron Helfenburg",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tallapeschibek Dras.[?]",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leutnerl Eva",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ottopoldt Georg",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stefflpeckh Georg",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tallafschily Swan.[?]",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Tallafschily Jne.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tallafschibyet Jne.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stallpschübek Jne[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martin",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Gemeinde",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.327,
    "bp_refs": [
@@ -637,14 +1088,12 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 137,
-    "ps_rows": 18,
+    "ps_rows": 14,
     "ps_kultur": {
-     "Acker": 9,
+     "Acker": 8,
      "Läuger Hof": 1,
      "Wiese": 2,
-     "Lohg": 1,
-     "Einhof": 1,
-     "Hutweide": 2,
+     "Hutweide": 1,
      "Stöger": 1,
      "Weg": 1
     }
@@ -652,7 +1101,16 @@
    "conflict_ids": [
     "CH-006-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Baron Helfenburg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 13
+   }
   },
   {
    "house_id": "H-007",
@@ -705,14 +1163,57 @@
       5,
       14,
       33,
-      45,
-      49
+      45
      ],
-     "rows": 7,
+     "rows": 6,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Leibniz Mathäus",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "L. Dintar Matej",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deuwaldich Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lauhaldich Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Zellhamisch Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lubreschibek Maathe.[?]",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.345,
    "bp_refs": [
@@ -723,9 +1224,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 41,
-    "ps_rows": 7,
+    "ps_rows": 6,
     "ps_kultur": {
-     "Acker": 3,
+     "Acker": 2,
      "Žitno": 1,
      "Hutweide": 1,
      "Wiese": 2
@@ -734,7 +1235,16 @@
    "conflict_ids": [
     "CH-007-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.455,
+    "sim_any": 0.455,
+    "best_ps_name": "Zellhamisch Mathl.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 6
+   }
   },
   {
    "house_id": "H-008",
@@ -770,10 +1280,9 @@
       28,
       43,
       45,
-      48,
       49
      ],
-     "rows": 11,
+     "rows": 10,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -789,7 +1298,38 @@
       3
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Gemeinde",
+      "pages": [
+       6
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Jakobschitsch Mathä[?]",
+      "pages": [
+       28
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Schaffschick Mathä.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Dragasch Jure.",
+      "pages": [
+       45,
+       49
+      ],
+      "rows": 3
+     }
+    ]
    },
    "pua_ps_name_sim": 0.255,
    "bp_refs": [
@@ -804,9 +1344,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 29,
-    "ps_rows": 11,
+    "ps_rows": 10,
     "ps_kultur": {
-     "Acker": 5,
+     "Acker": 4,
      "G.Wiese": 1,
      "Lobising[?]": 1,
      "Lobing[?]": 1,
@@ -818,7 +1358,16 @@
    "conflict_ids": [
     "CH-008-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.444,
+    "sim_any": 0.444,
+    "best_ps_name": "Dragasch Jure.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   }
   },
   {
    "house_id": "H-009",
@@ -838,14 +1387,13 @@
      }
     ],
     "ps": {
-     "owner_original": "Stadtpfarrkirche[?]",
+     "owner_original": "Jakobschitsch Mathä[?]",
      "stand": null,
      "pages": [
       28,
-      45,
-      55
+      45
      ],
-     "rows": 4,
+     "rows": 3,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -860,9 +1408,25 @@
       3
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Jakobschitsch Mathä[?]",
+      "pages": [
+       28
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Gummersbach",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.273,
+   "pua_ps_name_sim": 0.478,
    "bp_refs": [
     {
      "bp": 11,
@@ -871,18 +1435,26 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 1,
-    "ps_rows": 4,
+    "ps_rows": 3,
     "ps_kultur": {
      "Lobing[?]\nGartn": 1,
      "Lobing[?]": 1,
-     "Hütung": 1,
-     "Acker": 1
+     "Hütung": 1
     }
    },
    "conflict_ids": [
     "CH-009-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.692,
+    "sim_any": 0.692,
+    "best_ps_name": "Jakobschitsch Mathä[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
+   }
   },
   {
    "house_id": "H-010",
@@ -911,16 +1483,15 @@
      }
     ],
     "ps": {
-     "owner_original": "Rödig matthl",
+     "owner_original": "Stefflpeckh Agath. Wilh.",
      "stand": null,
      "pages": [
-      25,
       45,
       49,
       50,
       55
      ],
-     "rows": 10,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -942,9 +1513,74 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Stefflpeckh Agath. Wilh.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Michael.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hunure Mathl.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hunure Melli.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pessing Georg",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kranz Michael",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martin",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleschibek Malga[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kranvel Michael[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.238,
+   "pua_ps_name_sim": 0.314,
    "bp_refs": [
     {
      "bp": 9,
@@ -965,9 +1601,8 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 60,
-    "ps_rows": 10,
+    "ps_rows": 9,
     "ps_kultur": {
-     "Ried": 1,
      "Acker": 8,
      "Wiese": 1
     }
@@ -975,7 +1610,16 @@
    "conflict_ids": [
     "CH-010-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.615,
+    "sim_any": 0.615,
+    "best_ps_name": "Pessing Georg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 9
+   }
   },
   {
    "house_id": "H-011",
@@ -1004,7 +1648,7 @@
       50,
       55
      ],
-     "rows": 9,
+     "rows": 7,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -1024,7 +1668,39 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pölling Georg",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peodvin Grany.",
+      "pages": [
+       45,
+       49
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Pessing Georg",
+      "pages": [
+       50,
+       55
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Kranvel Michael[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.308,
    "bp_refs": [
@@ -1039,18 +1715,26 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 9,
+    "ps_rows": 7,
     "ps_kultur": {
-     "Wiese": 1,
-     "Acker": 5,
-     "Gartn": 1,
+     "Wiese": 2,
+     "Acker": 3,
      "Hutweide": 2
     }
    },
    "conflict_ids": [
     "CH-011-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.333,
+    "sim_any": 0.545,
+    "best_ps_name": "Peodvin Grany.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   }
   },
   {
    "house_id": "H-012",
@@ -1070,38 +1754,74 @@
      }
     ],
     "ps": {
-     "owner_original": "Stadtpfarrkirche[?]",
+     "owner_original": "Lubreschibek Maathe.[?]",
      "stand": null,
      "pages": [
-      28,
-      32,
       45,
       48,
       49,
       55
      ],
-     "rows": 10,
+     "rows": 6,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Lubreschibek Maathe.[?]",
+      "pages": [
+       45,
+       48
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Lubreschitskh Maathe.",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lubreschitskh Matthe.",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lorentzthal Mergl",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.25,
+   "pua_ps_name_sim": 0.412,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 17,
-    "ps_rows": 10,
+    "ps_rows": 6,
     "ps_kultur": {
-     "Hutweide": 1,
-     "Lobing[?]\nGartn": 1,
-     "Acker": 4,
-     "Wiese": 4
+     "Wiese": 2,
+     "Acker": 4
     }
    },
    "conflict_ids": [
     "CH-012-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.583,
+    "sim_any": 0.583,
+    "best_ps_name": "Lubreschitskh Maathe.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   }
   },
   {
    "house_id": "H-013",
@@ -1111,28 +1831,68 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pavlic Georg",
+     "owner_original": "Stadtpfarrkirche[?]",
      "stand": null,
      "pages": [
       28,
       43,
+      54,
       55
      ],
-     "rows": 8,
+     "rows": 11,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Stadtpfarrkirche[?]",
+      "pages": [
+       28
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Strauß Georg",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Jakobschitsch Nicolaus[?]",
+      "pages": [
+       28
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Schaffschick Mathä.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stallpschibek Nikolaus[?]",
+      "pages": [
+       54,
+       55
+      ],
+      "rows": 5
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 8,
+    "ps_rows": 11,
     "ps_kultur": {
-     "Lobing[?]\nGartn": 1,
+     "Hutweide": 1,
+     "Lobing[?]\nGartn": 2,
      "Lobing[?]": 2,
-     "Acker": 4,
+     "Acker": 5,
      "Wiese / Waid": 1
     }
    },
@@ -1152,12 +1912,10 @@
      "pages": [
       5,
       13,
-      17,
       43,
-      49,
-      50
+      49
      ],
-     "rows": 9,
+     "rows": 4,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -1171,17 +1929,46 @@
       3
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ludwig Matzen",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlicz Mihajl",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "M. Paul. Strohschneid",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin.",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 9,
+    "ps_rows": 4,
     "ps_kultur": {
-     "Acker": 6,
-     "Hutweid": 1,
-     "Stöger": 2
+     "Acker": 3,
+     "Hutweid": 1
     }
    },
    "conflict_ids": [],
@@ -1203,22 +1990,52 @@
       28,
       54
      ],
-     "rows": 5,
+     "rows": 4,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Tillach Peter",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Strauß Gorgy",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Strauß Georg",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Onal Maido[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 5,
+    "ps_rows": 4,
     "ps_kultur": {
      "Acker": 1,
      "Wiese": 1,
      "Lobing[?]\nGartn": 1,
-     "Lichtw.": 2
+     "Lichtw.": 1
     }
    },
    "conflict_ids": [],
@@ -1251,7 +2068,7 @@
      }
     ],
     "ps": {
-     "owner_original": "Pechl[?] hauptl",
+     "owner_original": "Pedian Matrlh[?]",
      "stand": null,
      "pages": [
       4,
@@ -1261,7 +2078,7 @@
       43,
       54
      ],
-     "rows": 17,
+     "rows": 18,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -1276,9 +2093,116 @@
       3
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pedian Matrlh[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Feldt Mäda",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimatz Mathes",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Morath Maurize",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brusnigg Georg",
+      "pages": [
+       9
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Poldi Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poldy Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Eidlald Pirkh",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schmiedt Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimetz Michel.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Karl Mioß",
+      "pages": [
+       54
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Poiding Wolfgo",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poiding Maja",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Onal Maido[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Onal Naume[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.303,
+   "pua_ps_name_sim": 0.294,
    "bp_refs": [
     {
      "bp": 6,
@@ -1287,20 +2211,31 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 54,
-    "ps_rows": 17,
+    "ps_rows": 18,
     "ps_kultur": {
-     "Acker": 11,
+     "Lhild[?]": 1,
+     "Acker": 10,
      "~": 1,
      "Lohholz": 1,
      "Wald": 1,
      "Lichtw.": 2,
-     "Stagaz": 1
+     "Stagaz": 1,
+     "Hutweide": 1
     }
    },
    "conflict_ids": [
     "CH-016-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.462,
+    "sim_any": 0.462,
+    "best_ps_name": "Pedian Matrlh[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 15
+   }
   },
   {
    "house_id": "H-017",
@@ -1336,7 +2271,7 @@
       54,
       55
      ],
-     "rows": 7,
+     "rows": 6,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -1351,7 +2286,51 @@
       3
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Eidlald Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Johann Wurmer",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "David Wurmer",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Karl Wurmer",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Onal Naume[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Andreas Krumpe",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.364,
    "bp_refs": [
@@ -1362,25 +2341,33 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 40,
-    "ps_rows": 7,
+    "ps_rows": 6,
     "ps_kultur": {
      "Lohholz": 1,
      "Wiese": 1,
      "Hutweide": 3,
-     "Acker": 1,
-     "Lichtw.": 1
+     "Acker": 1
     }
    },
    "conflict_ids": [
     "CH-017-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.429,
+    "sim_any": 0.429,
+    "best_ps_name": "Eidlald Wurfl",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 6
+   }
   },
   {
    "house_id": "H-018",
    "house_no_1825": "18",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -1394,13 +2381,13 @@
      }
     ],
     "ps": {
-     "owner_original": "Breugl Georg",
-     "stand": "~",
+     "owner_original": "Schimay Jeklr[?]",
+     "stand": null,
      "pages": [
+      4,
       5,
       8,
-      34,
-      54
+      34
      ],
      "rows": 5,
      "coverage": "PARTIAL (55/143 strani)"
@@ -1417,9 +2404,46 @@
       3
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimay Jeklr[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Breugl Georg",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hrabotar Georg",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hrabotlar Georg",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Michel.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.279,
+   "pua_ps_name_sim": 0.409,
    "bp_refs": [
     {
      "bp": 3,
@@ -1430,16 +2454,24 @@
     "pua_parcels_total": 28,
     "ps_rows": 5,
     "ps_kultur": {
-     "Acker": 2,
+     "Acker": 3,
      "Grund / Garten": 1,
-     "6 Einträg.": 1,
-     "Lichtw.": 1
+     "6 Einträg.": 1
     }
    },
    "conflict_ids": [
     "CH-018-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.833,
+    "sim_any": 0.833,
+    "best_ps_name": "Schimay Jeklr[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 5
+   }
   },
   {
    "house_id": "H-019",
@@ -1480,7 +2512,23 @@
       3
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Thomas Malfg",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pessing Georg",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.242,
    "bp_refs": [
@@ -1500,7 +2548,16 @@
    "conflict_ids": [
     "CH-019-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.364,
+    "sim_any": 0.364,
+    "best_ps_name": "Thomas Malfg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
+   }
   },
   {
    "house_id": "H-020",
@@ -1534,15 +2591,12 @@
      "pages": [
       7,
       14,
-      28,
       33,
       35,
       36,
-      37,
-      39,
       54
      ],
-     "rows": 11,
+     "rows": 7,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -1562,7 +2616,45 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Lappary Marbl",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dekleva Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deuwaldich Mathl.[?]",
+      "pages": [
+       33,
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Mathä.[?]",
+      "pages": [
+       36
+      ],
+      "rows": 1
+     },
+     {
+      "name": "St. Veith",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.255,
    "bp_refs": [
@@ -1577,22 +2669,30 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 68,
-    "ps_rows": 11,
+    "ps_rows": 7,
     "ps_kultur": {
      "Lehngut Hfl.": 1,
      "Žitno": 1,
-     "Acker": 3,
-     "Wiese": 2,
+     "Wiese": 1,
+     "Acker": 1,
      "Wiese und": 1,
      "Lobig und Riedl": 1,
-     "Garten": 1,
      "Gartn.": 1
     }
    },
    "conflict_ids": [
     "CH-020-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Mathä.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 5
+   }
   },
   {
    "house_id": "H-021",
@@ -1627,7 +2727,7 @@
       5,
       54
      ],
-     "rows": 3,
+     "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -1646,7 +2746,23 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Urich Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Gemeinde",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.296,
    "bp_refs": [
@@ -1661,16 +2777,25 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 36,
-    "ps_rows": 3,
+    "ps_rows": 2,
     "ps_kultur": {
-     "Acker": 2,
+     "Acker": 1,
      "Lichtw.": 1
     }
    },
    "conflict_ids": [
     "CH-021-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.375,
+    "sim_any": 0.375,
+    "best_ps_name": "Urich Peter",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
+   }
   },
   {
    "house_id": "H-022",
@@ -1714,34 +2839,70 @@
       9,
       12,
       13,
-      30,
-      36,
-      54
+      36
      ],
-     "rows": 9,
+     "rows": 7,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Müller Johann",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Michl Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mittig Jofam",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müllner Johann",
+      "pages": [
+       36
+      ],
+      "rows": 4
+     }
+    ]
    },
    "pua_ps_name_sim": 0.263,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 96,
-    "ps_rows": 9,
+    "ps_rows": 7,
     "ps_kultur": {
-     "Acker": 3,
+     "Acker": 2,
      "Riden": 1,
      "Lobig und Riedl": 1,
      "Riedl": 2,
-     "Lobig": 1,
-     "Hutweide": 1
+     "Lobig": 1
     }
    },
    "conflict_ids": [
     "CH-022-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.571,
+    "sim_any": 0.571,
+    "best_ps_name": "Mittig Jofam",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   }
   },
   {
    "house_id": "H-023",
@@ -1751,11 +2912,13 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schimer Hans",
-     "stand": "~",
+     "owner_original": "Bring Mase[?]",
+     "stand": null,
      "pages": [
+      3,
       5,
       27,
+      28,
       30,
       31,
       36,
@@ -1763,25 +2926,67 @@
       38,
       39
      ],
-     "rows": 12,
+     "rows": 15,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Bring Mase[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimer Hans",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brünig[?] Mathä[?]",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Mathä",
+      "pages": [
+       27,
+       28,
+       30,
+       31
+      ],
+      "rows": 7
+     },
+     {
+      "name": "Ring Mathä.[?]",
+      "pages": [
+       36,
+       37,
+       38,
+       39
+      ],
+      "rows": 5
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 12,
+    "ps_rows": 15,
     "ps_kultur": {
-     "Acker": 5,
+     "Acker": 9,
      "Lohigg": 1,
      "Riedl": 1,
      "Güben": 1,
      "Wald.": 2,
-     "Garten": 1,
-     "Wiese": 1
+     "Garten": 1
     }
    },
    "conflict_ids": [],
@@ -1814,10 +3019,10 @@
      }
     ],
     "ps": {
-     "owner_original": "Vilter Wulffj",
-     "stand": null,
+     "owner_original": "Ring Michael",
+     "stand": "~",
      "pages": [
-      18,
+      26,
       27,
       28,
       29,
@@ -1828,24 +3033,58 @@
       38,
       39
      ],
-     "rows": 20,
+     "rows": 19,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ring Michael",
+      "pages": [
+       26,
+       27,
+       28,
+       29,
+       30,
+       31
+      ],
+      "rows": 8
+     },
+     {
+      "name": "Ring Michl",
+      "pages": [
+       27,
+       31
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Michael.",
+      "pages": [
+       36,
+       37,
+       38,
+       39
+      ],
+      "rows": 9
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.25,
+   "pua_ps_name_sim": 0.435,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 87,
-    "ps_rows": 20,
+    "ps_rows": 19,
     "ps_kultur": {
-     "Acker": 8,
-     "Wiese": 2,
+     "Wiesen": 1,
+     "Acker": 7,
+     "Wiese": 1,
      "Lhlo": 1,
      "Lobig": 1,
      "Riedl": 2,
-     "Gruben": 2,
+     "Gruben": 1,
+     "Lößgrube": 1,
      "Wald.": 2,
      "Reben": 1,
      "Läderg": 1
@@ -1854,7 +3093,16 @@
    "conflict_ids": [
     "CH-024-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michael",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
+   }
   },
   {
    "house_id": "H-025",
@@ -1874,46 +3122,103 @@
      }
     ],
     "ps": {
-     "owner_original": "Ring Mito",
-     "stand": null,
+     "owner_original": "Ring Michl",
+     "stand": "~",
      "pages": [
+      26,
       27,
       28,
       29,
       31,
       36,
       37,
-      38
+      38,
+      39
      ],
-     "rows": 12,
+     "rows": 19,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ring Michl",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Mito",
+      "pages": [
+       27,
+       28,
+       29
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Ring Mito[?]",
+      "pages": [
+       31
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Mito.[?]",
+      "pages": [
+       36,
+       37
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Michl.[?]",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 7
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.3,
+   "pua_ps_name_sim": 0.476,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 31,
-    "ps_rows": 12,
+    "ps_rows": 19,
     "ps_kultur": {
-     "Acker": 6,
-     "Wiese": 1,
+     "Wiesen": 1,
+     "Acker": 8,
+     "Wiese": 3,
      "Riedl": 1,
      "Güben": 1,
-     "Wald.": 3
+     "Lößgrube": 1,
+     "Wald.": 2,
+     "Garten": 1,
+     "Läderg": 1
     }
    },
    "conflict_ids": [
     "CH-025-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michl",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 5
+   }
   },
   {
    "house_id": "H-026",
    "house_no_1825": "26",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -1936,12 +3241,13 @@
      }
     ],
     "ps": {
-     "owner_original": "Feldt Peter",
-     "stand": "~",
+     "owner_original": "Bring Michael[?]",
+     "stand": null,
      "pages": [
+      3,
       5,
       7,
-      18,
+      17,
       19,
       26,
       27,
@@ -1954,7 +3260,7 @@
       38,
       39
      ],
-     "rows": 36,
+     "rows": 26,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -1969,9 +3275,76 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Bring Michael[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Feldt Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "(K)hanzl Valen",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Malfg",
+      "pages": [
+       17,
+       19
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Johann",
+      "pages": [
+       26,
+       27,
+       29,
+       30
+      ],
+      "rows": 10
+     },
+     {
+      "name": "Ring Mito",
+      "pages": [
+       29
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Georg",
+      "pages": [
+       29
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Johann.",
+      "pages": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39
+      ],
+      "rows": 9
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.114,
+   "pua_ps_name_sim": 0.486,
    "bp_refs": [
     {
      "bp": 42,
@@ -1980,35 +3353,41 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 49,
-    "ps_rows": 36,
+    "ps_rows": 26,
     "ps_kultur": {
-     "Acker": 18,
+     "Acker": 12,
      "Lehngut": 1,
-     "Wiesen": 1,
+     "Wiese": 1,
+     "Wiesen": 2,
      "Gübel": 1,
      "Läuige": 2,
      "Wald": 1,
      "Lohigg": 1,
      "Riedl": 1,
      "Güben": 1,
-     "Lößgrube": 1,
-     "Gruben": 2,
      "Wald.": 2,
-     "Garten": 1,
-     "Läderg": 2,
-     "Reben": 1
+     "Garten": 1
     }
    },
    "conflict_ids": [
     "CH-026-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.727,
+    "sim_any": 0.727,
+    "best_ps_name": "Bring Michael[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 8
+   }
   },
   {
    "house_id": "H-027",
    "house_no_1825": "27",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -2027,7 +3406,6 @@
      "pages": [
       16,
       17,
-      18,
       24,
       26,
       27,
@@ -2036,9 +3414,10 @@
       34,
       35,
       37,
-      38
+      38,
+      39
      ],
-     "rows": 24,
+     "rows": 25,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2053,7 +3432,94 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Hoschlar Peter",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Christan Piber",
+      "pages": [
+       17
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Maleschitz Johann",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mullerkorn Johann",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malleitsch Johann",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Matschitsch Johann",
+      "pages": [
+       29
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Mattheitsch Johann",
+      "pages": [
+       30
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Mulschitsch Johann.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malwischly Johann",
+      "pages": [
+       35
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Mallwitsch Johann",
+      "pages": [
+       37
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malwischly Johann.[?]",
+      "pages": [
+       37
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malleschick Johann.[?]",
+      "pages": [
+       38,
+       39
+      ],
+      "rows": 5
+     }
+    ]
    },
    "pua_ps_name_sim": 0.222,
    "bp_refs": [
@@ -2064,24 +3530,35 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 39,
-    "ps_rows": 24,
+    "ps_rows": 25,
     "ps_kultur": {
      "Stroh": 1,
      "Rohr": 1,
-     "Acker": 10,
-     "Wald": 3,
+     "Acker": 6,
+     "Wald": 4,
+     "Wiese": 2,
      "Läuige": 2,
-     "Wiese": 1,
-     "Lohigg": 1,
+     "Lohigg": 2,
      "Wiese und Acker": 1,
      "Lößgrube": 1,
-     "Wald.": 3
+     "Gruben": 1,
+     "Wald.": 3,
+     "Läderg": 1
     }
    },
    "conflict_ids": [
     "CH-027-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.737,
+    "sim_any": 0.737,
+    "best_ps_name": "Malleitsch Johann",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 12
+   }
   },
   {
    "house_id": "H-028",
@@ -2131,7 +3608,7 @@
       38,
       39
      ],
-     "rows": 21,
+     "rows": 22,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2153,6 +3630,47 @@
       "owner_status": "REVIEW-CONFLICT",
       "link_source": "PUA opomba »B.P. 76. 79. 81/82. 93/84.« (no. 79, p39) KONFLIKT s PT (76→h.51, 2× STABLE) — kontrolo p39/p5 v polni ločljivosti",
       "owner_page": 5
+     }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Ring Michl",
+      "pages": [
+       26
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Mito",
+      "pages": [
+       29,
+       30
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Michl.",
+      "pages": [
+       34,
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Milo.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Michl.[?]",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 13
      }
     ]
    },
@@ -2189,16 +3707,15 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 200,
-    "ps_rows": 21,
+    "ps_rows": 22,
     "ps_kultur": {
+     "Wald": 3,
      "Wiesen": 1,
      "Läuige": 1,
      "Wiese": 2,
-     "Wald": 2,
-     "Acker": 4,
+     "Acker": 5,
      "Güben": 1,
-     "Lößgrube": 2,
-     "Gruben": 3,
+     "Gruben": 4,
      "Wald.": 2,
      "Reben": 1,
      "Läderg": 2
@@ -2207,13 +3724,22 @@
    "conflict_ids": [
     "CH-028-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michl",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 5
+   }
   },
   {
    "house_id": "H-029",
    "house_no_1825": "29",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -2236,9 +3762,10 @@
      }
     ],
     "ps": {
-     "owner_original": "Feldt Margreth",
-     "stand": "~",
+     "owner_original": "Milleg Hans[?]",
+     "stand": null,
      "pages": [
+      3,
       5,
       15,
       26,
@@ -2252,7 +3779,7 @@
       38,
       39
      ],
-     "rows": 22,
+     "rows": 21,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2268,9 +3795,112 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Milleg Hans[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Feldt Margreth",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Thomaz Manha",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mullag Emanuel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malleitsch[?] Johann",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Mathä",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mally Leonhard",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müllag Johann",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müller Daniel",
+      "pages": [
+       29
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müller Johann",
+      "pages": [
+       29,
+       30
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Müller Hannes",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Müllner Samuel",
+      "pages": [
+       36
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Müllner Samuel.",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Vilip[?]züanjanky",
+      "pages": [
+       38
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.222,
+   "pua_ps_name_sim": 0.545,
    "bp_refs": [
     {
      "bp": 40,
@@ -2287,7 +3917,7 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 53,
-    "ps_rows": 22,
+    "ps_rows": 21,
     "ps_kultur": {
      "Acker": 9,
      "Wiesen": 1,
@@ -2297,22 +3927,29 @@
      "Lobig": 1,
      "Riedl": 2,
      "Güben": 1,
-     "Lößgrube": 1,
-     "Wald.": 2,
-     "Garten": 1,
-     "Läderg": 1
+     "Wald.": 3,
+     "Garten": 1
     }
    },
    "conflict_ids": [
     "CH-029-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Milleg Hans[?]",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 14
+   }
   },
   {
    "house_id": "H-030",
    "house_no_1825": "30",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -2330,7 +3967,6 @@
      "stand": null,
      "pages": [
       15,
-      21,
       24,
       26,
       27,
@@ -2342,7 +3978,7 @@
       38,
       39
      ],
-     "rows": 24,
+     "rows": 29,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2360,7 +3996,68 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Tillah Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Sagmeister Michl",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Caputa[?] Michel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kreuker Mäthel[?]",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stuker Mathl[?]",
+      "pages": [
+       29,
+       30
+      ],
+      "rows": 9
+     },
+     {
+      "name": "Dappler, Mathl.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dappler Mathl.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Bruckler Mathl.[?]",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 12
+     }
+    ]
    },
    "pua_ps_name_sim": 0.35,
    "bp_refs": [
@@ -2375,24 +4072,36 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 18,
-    "ps_rows": 24,
+    "ps_rows": 29,
     "ps_kultur": {
-     "Acker": 8,
+     "Acker": 7,
      "Wiesen": 1,
      "Wald": 3,
-     "Läuige": 1,
+     "Läuige": 2,
      "Wiese": 4,
      "Lohigg": 2,
      "Wiese und Acker": 1,
+     "Lößgrube": 2,
+     "Gruben": 1,
      "Wald.": 2,
      "Hutweide": 1,
-     "Läderg": 1
+     "Läderg": 2,
+     "Reben": 1
     }
    },
    "conflict_ids": [
     "CH-030-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.833,
+    "sim_any": 0.833,
+    "best_ps_name": "Tillah Walfja",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 8
+   }
   },
   {
    "house_id": "H-031",
@@ -2402,12 +4111,12 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schuchardt Wenzl",
+     "owner_original": "Kirichan Mäda[?]",
      "stand": null,
      "pages": [
+      3,
       9,
       12,
-      21,
       24,
       33,
       34,
@@ -2429,7 +4138,65 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Kirichan Mäda[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schuchardt Wenzl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kristof Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Striedel Marth",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Mathä.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Witschan Martin.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Witschan Miche.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Marko.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -2442,9 +4209,9 @@
     "pua_parcels_total": 0,
     "ps_rows": 8,
     "ps_kultur": {
+     "Wiese": 2,
      "Lohholz": 1,
-     "Acker": 4,
-     "Wiese": 1,
+     "Acker": 3,
      "Schlaget": 1,
      "Wiese und Acker": 1
     }
@@ -2504,7 +4271,51 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Wolitz Gregor",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Johan",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pechy Georg",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hoch Georg",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ulrich Georg.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ulrich Georg.",
+      "pages": [
+       35
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": 0.279,
    "bp_refs": [
@@ -2542,7 +4353,16 @@
    "conflict_ids": [
     "CH-032-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.471,
+    "sim_any": 0.471,
+    "best_ps_name": "Ulrich Georg.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 6
+   }
   },
   {
    "house_id": "H-033",
@@ -2566,30 +4386,54 @@
      "stand": null,
      "pages": [
       9,
-      20,
-      27
+      20
      ],
-     "rows": 5,
+     "rows": 3,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Beckhlach Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Regina Yourn",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.273,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 48,
-    "ps_rows": 5,
+    "ps_rows": 3,
     "ps_kultur": {
      "Lohholz": 1,
-     "Acker": 3,
+     "Acker": 1,
      "Wiese": 1
     }
    },
    "conflict_ids": [
     "CH-033-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.308,
+    "sim_any": 0.364,
+    "best_ps_name": "Regina Yourn",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
+   }
   },
   {
    "house_id": "H-034",
@@ -2615,11 +4459,12 @@
       9,
       15,
       17,
+      18,
       20,
       33,
       35
      ],
-     "rows": 11,
+     "rows": 14,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2635,7 +4480,66 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Eidlald Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Tillah Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fitsch Malfg",
+      "pages": [
+       17,
+       18
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Christof Matz",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Villa[?] Rothmayer",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stüllach.[?] Michel.",
+      "pages": [
+       33
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Stüllach.[?] Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stüllach Mathl.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": 0.3,
    "bp_refs": [
@@ -2650,10 +4554,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 23,
-    "ps_rows": 11,
+    "ps_rows": 14,
     "ps_kultur": {
      "Lohholz": 1,
-     "Acker": 6,
+     "Acker": 9,
      "Wiese": 2,
      "Wiese und": 1,
      "Weide": 1
@@ -2662,7 +4566,16 @@
    "conflict_ids": [
     "CH-034-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.571,
+    "sim_any": 0.6,
+    "best_ps_name": "Fitsch Malfg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 8
+   }
   },
   {
    "house_id": "H-035",
@@ -2672,10 +4585,9 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Urbas Peter",
+     "owner_original": "Schimez Hanl",
      "stand": null,
      "pages": [
-      4,
       7,
       9,
       10,
@@ -2684,10 +4596,10 @@
       18,
       20,
       23,
-      26,
-      35
+      35,
+      36
      ],
-     "rows": 13,
+     "rows": 14,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2703,7 +4615,87 @@
       4
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimez Hanl",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Thörring Wenzl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tillach Peter",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fellah Peter",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fitsch Piber",
+      "pages": [
+       17,
+       18
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Peter Albert",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Peter",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kristan Peter",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schlomnitz Johan",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Killach Mathl.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tillach Peter.[?]",
+      "pages": [
+       36
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -2714,15 +4706,16 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 13,
+    "ps_rows": 14,
     "ps_kultur": {
-     "Acker": 7,
      "Lehngut": 1,
      "Lohholz": 1,
+     "Acker": 7,
      "Rohr": 1,
+     "Wiese": 1,
      "Wald": 1,
-     "Wiesen": 1,
-     "Wiese und Weide": 1
+     "Wiese und Weide": 1,
+     "Riedl": 1
     }
    },
    "conflict_ids": [],
@@ -2732,7 +4725,7 @@
    "house_id": "H-036",
    "house_no_1825": "36",
    "house_no_type": "gruble_house",
-   "evidence_status": "PARTIAL",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -2746,23 +4739,25 @@
      }
     ],
     "ps": {
-     "owner_original": "Krishnar Wurfl",
+     "owner_original": "Fillal Putlrd[?]",
      "stand": null,
      "pages": [
+      4,
       9,
       10,
       11,
       13,
       16,
       17,
+      18,
       19,
       20,
       21,
       23,
-      26,
-      36
+      24,
+      26
      ],
-     "rows": 27,
+     "rows": 30,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2796,9 +4791,111 @@
       "link_source": "PUA opomba »b. P. 56. 38.« (no. 35, p18) — številke ne pokrivajo 86; PT p7 86→h.37 konflikt — kontrolo p18 v polni ločljivosti",
       "owner_page": 18
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Fillal Putlrd[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krishnar Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Bratula Mihael",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Priškar Mathej",
+      "pages": [
+       10
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Barthol Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lendandl Matjai",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lapshary Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kreuthaler Walth",
+      "pages": [
+       16
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Christan Malfg",
+      "pages": [
+       17,
+       18,
+       19
+      ],
+      "rows": 12
+     },
+     {
+      "name": "Christan Mache",
+      "pages": [
+       20
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Thomas Johan",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schlomnitz Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kruescher Peter",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Johann",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     }
     ]
    },
-   "pua_ps_name_sim": 0.537,
+   "pua_ps_name_sim": 0.25,
    "bp_refs": [
     {
      "bp": 38,
@@ -2827,31 +4924,39 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 39,
-    "ps_rows": 27,
+    "ps_rows": 30,
     "ps_kultur": {
-     "Acker": 13,
+     "Lhaid[?]": 1,
+     "Acker": 18,
      "Lehngut Obft": 1,
      "Wald": 1,
      "Riden": 1,
      "Gartn": 1,
      "Stroh": 1,
      "Rohr": 2,
-     "Wiese": 4,
-     "Riedgen": 1,
-     "Wiesen": 1,
-     "Riedl": 1
+     "Wiese": 3,
+     "Riedgen": 1
     }
    },
    "conflict_ids": [
     "CH-036-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.75,
+    "sim_any": 0.75,
+    "best_ps_name": "Krishnar Wurfl",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 14
+   }
   },
   {
    "house_id": "H-037",
    "house_no_1825": "37",
    "house_no_type": "gruble_house",
-   "evidence_status": "PARTIAL",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -2882,11 +4987,12 @@
       11,
       13,
       17,
+      18,
       19,
       20,
       24
      ],
-     "rows": 21,
+     "rows": 26,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2909,6 +5015,59 @@
       "link_source": "PT p7 (dvojno branje val 41 + val 52: h.37) + PUA opomba »P.P. 85.« (no. 36, p19; val 54; B↔P dvom) — PT val 53: 45/37 konflikt",
       "owner_page": 19
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Krishnar Peter",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Priškar Jelen",
+      "pages": [
+       10
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Fridrich Peter",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kovickan Peter",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Piber",
+      "pages": [
+       17,
+       18,
+       19
+      ],
+      "rows": 16
+     },
+     {
+      "name": "Kristan Peter",
+      "pages": [
+       20
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Kruescher Peter",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     }
     ]
    },
    "pua_ps_name_sim": 0.564,
@@ -2920,9 +5079,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 40,
-    "ps_rows": 21,
+    "ps_rows": 26,
     "ps_kultur": {
-     "Acker": 15,
+     "Acker": 20,
      "Lehngut Obft": 1,
      "Wald": 1,
      "Ride": 1,
@@ -2933,7 +5092,16 @@
    "conflict_ids": [
     "CH-037-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.8,
+    "sim_any": 1.0,
+    "best_ps_name": "Kristan Peter",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 7
+   }
   },
   {
    "house_id": "H-038",
@@ -2943,7 +5111,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Thomas Gnoy",
+     "owner_original": "Schimerz[?] Gnoy",
      "stand": null,
      "pages": [
       12,
@@ -2952,7 +5120,7 @@
       26,
       32
      ],
-     "rows": 8,
+     "rows": 7,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2972,7 +5140,44 @@
       7
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimerz[?] Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Urbas Gregor",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimer Georg",
+      "pages": [
+       25
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Johann Georg",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimer Georg.",
+      "pages": [
+       32
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -2987,12 +5192,12 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 8,
+    "ps_rows": 7,
     "ps_kultur": {
      "Acker": 4,
      "Riden": 1,
      "Ried": 1,
-     "Wald": 2
+     "Wald": 1
     }
    },
    "conflict_ids": [],
@@ -3039,7 +5244,59 @@
       7
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Wenzl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimerz Georg",
+      "pages": [
+       11
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Schimerz Martha",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimerz[?] Marko[?]",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimer Martho",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimer Marthe",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimer Mache[?]",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -3104,7 +5361,7 @@
       32,
       33
      ],
-     "rows": 34,
+     "rows": 35,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3139,6 +5396,149 @@
       "link_source": "PT 94→h.40 = 3 neodvisna viri (val 41 + val 52 + val 53 obe branji) + PUA h.40 (no. 38, p29) — najmočnejša vez",
       "owner_page": 29
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Peter Muster",
+      "pages": [
+       11
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Matthäus Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fidriz Martha",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poldi Muster",
+      "pages": [
+       12
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Benedikt Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlicz Mihajl",
+      "pages": [
+       13
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ederling Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Paulah Mutha",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Peter Malfg",
+      "pages": [
+       21
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Röding Andre",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Röding georg",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Röding marthe",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig georg",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig matthl",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pobezy Michel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pichler[?] Mathl[?]",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Prinz Michl",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pöching. Mathl.[?]",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
     ]
    },
    "pua_ps_name_sim": 0.432,
@@ -3158,7 +5558,7 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 112,
-    "ps_rows": 34,
+    "ps_rows": 35,
     "ps_kultur": {
      "Liegend. Baul.": 2,
      "Wiese": 1,
@@ -3170,7 +5570,7 @@
      "Riden": 1,
      "Žitno": 1,
      "Žl.b.d.": 1,
-     "Ried": 4,
+     "Ried": 5,
      "Wiesen": 1,
      "Ladgrd[?]": 1,
      "Gartn": 1
@@ -3179,13 +5579,22 @@
    "conflict_ids": [
     "CH-040-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.545,
+    "sim_any": 0.615,
+    "best_ps_name": "Peter Muster",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 20
+   }
   },
   {
    "house_id": "H-041",
    "house_no_1825": "41",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -3199,7 +5608,7 @@
      }
     ],
     "ps": {
-     "owner_original": "Reuschard Franz",
+     "owner_original": "Pesian Georg[?]",
      "stand": null,
      "pages": [
       4,
@@ -3208,13 +5617,14 @@
       13,
       14,
       15,
+      19,
       21,
       26,
       31,
       32,
       33
      ],
-     "rows": 23,
+     "rows": 24,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3253,9 +5663,124 @@
       "link_source": "PT p7 dvojno branje (val 41 + val 52: 41) + PUA no. 59 opomba nečitljiva (»19. Pp.«); PT zoom 92→h.44 (sum pomika vrstic)",
       "owner_page": 30
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Pesian Georg[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fidriz Georg",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peinig Georg",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poldi Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Pavlicz Gregor",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavčič Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling grozj",
+      "pages": [
+       15
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Georg Gorgy",
+      "pages": [
+       19
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Grang",
+      "pages": [
+       21
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Peter Malfg",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Michel Grang",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pobezy Georg",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pichler[?] Georg",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pöching. Gorgy.[?]",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
     ]
    },
-   "pua_ps_name_sim": 0.356,
+   "pua_ps_name_sim": 0.381,
    "bp_refs": [
     {
      "bp": 73,
@@ -3284,12 +5809,13 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 56,
-    "ps_rows": 23,
+    "ps_rows": 24,
     "ps_kultur": {
-     "Acker": 14,
+     "Lhaid[?]": 1,
      "Wald": 1,
      "Schindel. Wald": 1,
      "Gemeinde Grund": 1,
+     "Acker": 14,
      "Ride": 1,
      "Zemlja": 1,
      "Trava": 1,
@@ -3300,13 +5826,22 @@
    "conflict_ids": [
     "CH-041-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Georg Gorgy",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 16
+   }
   },
   {
    "house_id": "H-042",
    "house_no_1825": "42",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -3332,20 +5867,85 @@
       32,
       33
      ],
-     "rows": 13,
+     "rows": 14,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Peter Muster",
+      "pages": [
+       11
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Poldi Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlicz Mihajl",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig Matthl.",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig matthi",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pöching. Mathel.[?]",
+      "pages": [
+       32
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Pöching. Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 3
+     }
+    ]
    },
    "pua_ps_name_sim": 0.286,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 36,
-    "ps_rows": 13,
+    "ps_rows": 14,
     "ps_kultur": {
      "Wald": 2,
-     "Acker": 6,
+     "Acker": 7,
      "Riden": 1,
      "Žitno": 1,
      "Ried": 1,
@@ -3355,13 +5955,22 @@
    "conflict_ids": [
     "CH-042-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.875,
+    "sim_any": 0.875,
+    "best_ps_name": "Pöching. Mathel.[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 9
+   }
   },
   {
    "house_id": "H-043",
    "house_no_1825": "43",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "PARTIAL",
    "owners": {
     "pua": [
      {
@@ -3387,9 +5996,10 @@
       16,
       25,
       26,
+      32,
       33
      ],
-     "rows": 16,
+     "rows": 19,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3405,7 +6015,108 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ulrich Peter",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shumey Michael",
+      "pages": [
+       6
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Shumey Joan",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kunsthof Wenzl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Barbara Muster",
+      "pages": [
+       11
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Hansp[?] Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brusla Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Pavšič Janez",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leischar Gregor",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Bresniko",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavolle stich",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brulla Michl[?]",
+      "pages": [
+       26,
+       32
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Brulla Mich.[?]",
+      "pages": [
+       32
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brulla Maria.",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.4,
    "bp_refs": [
@@ -3420,30 +6131,39 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 40,
-    "ps_rows": 16,
+    "ps_rows": 19,
     "ps_kultur": {
      "Läuger": 1,
      "Grund Garten": 3,
-     "Acker": 3,
+     "Acker": 5,
      "Gemeinde Grund": 1,
      "Wald": 3,
      "Riden": 1,
      "Hutweid": 1,
      "Zemlja": 1,
      "Stroh": 1,
-     "Ried": 1
+     "Ried": 2
     }
    },
    "conflict_ids": [
     "CH-043-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.5,
+    "sim_any": 1.0,
+    "best_ps_name": "Brulla Maria.",
+    "exact_token": true,
+    "class": "PARTIAL",
+    "n_distinct": 14
+   }
   },
   {
    "house_id": "H-044",
    "house_no_1825": "44",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -3469,7 +6189,7 @@
       24,
       26
      ],
-     "rows": 13,
+     "rows": 14,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3496,6 +6216,66 @@
       "link_source": "PT p7 (dvojno branje: val 41 + val 52)",
       "owner_page": 11
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Matthäus Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hausleith Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Husarlt Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Mache",
+      "pages": [
+       17
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Husitsch Maria",
+      "pages": [
+       17,
+       18
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Husitsch Maria[?]",
+      "pages": [
+       19,
+       20
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Hantschitsch Marth",
+      "pages": [
+       24
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Poschinger Joseph",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     }
     ]
    },
    "pua_ps_name_sim": 0.391,
@@ -3515,11 +6295,11 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 31,
-    "ps_rows": 13,
+    "ps_rows": 14,
     "ps_kultur": {
      "Gemeinde Grund": 1,
      "Stroh": 2,
-     "Acker": 6,
+     "Acker": 7,
      "Wiese": 3,
      "Lehen": 1
     }
@@ -3527,7 +6307,16 @@
    "conflict_ids": [
     "CH-044-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Husitsch Maria",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 8
+   }
   },
   {
    "house_id": "H-045",
@@ -3549,7 +6338,7 @@
       26,
       32
      ],
-     "rows": 19,
+     "rows": 17,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3575,7 +6364,81 @@
       7
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Strauß Georg",
+      "pages": [
+       7,
+       12
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Pöllitzer Mathej",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlahotshar Mathej",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Preßker Georg",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krause Georg",
+      "pages": [
+       23,
+       25
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Krause Gorgy",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lopretz Michl",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Loppretz Michl",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stangl Georg",
+      "pages": [
+       26
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Strauß Georgy.[?]",
+      "pages": [
+       32
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -3606,9 +6469,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 19,
+    "ps_rows": 17,
     "ps_kultur": {
-     "Wiese": 5,
+     "Wiese": 3,
      "Lehngut Hfl.": 1,
      "Acker": 8,
      "Gartn": 1,
@@ -3645,30 +6508,68 @@
       7,
       12,
       26,
-      32,
       54
      ],
-     "rows": 6,
+     "rows": 5,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Strauß Georg",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kristof Muster",
+      "pages": [
+       12
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Michelkorn Peter[?]",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ajobatschar Pottra[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.263,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 5,
-    "ps_rows": 6,
+    "ps_rows": 5,
     "ps_kultur": {
      "Wiese": 1,
-     "Acker": 4,
+     "Acker": 3,
      "Wiesen": 1
     }
    },
    "conflict_ids": [
     "CH-046-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Ajobatschar Pottra[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   }
   },
   {
    "house_id": "H-047",
@@ -3707,7 +6608,88 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "(R)abitscher Marbl",
+      "pages": [
+       7
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Ursch Peter",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hrabotlar Marha",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlahotshar Georg",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlahotshar Mathej",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Khristofer Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlebšatar Miha",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hahnsdorfer Alosche",
+      "pages": [
+       23
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Habschider Marth",
+      "pages": [
+       24,
+       25
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Michelkorn Michel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hladnikhar[?] Marko",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
+    ]
    },
    "pua_ps_name_sim": 0.314,
    "bp_refs": [],
@@ -3726,7 +6708,16 @@
    "conflict_ids": [
     "CH-047-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.526,
+    "sim_any": 0.526,
+    "best_ps_name": "Hlahotshar Georg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 11
+   }
   },
   {
    "house_id": "H-048",
@@ -3759,7 +6750,7 @@
       32,
       33
      ],
-     "rows": 13,
+     "rows": 16,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3778,7 +6769,60 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "(R)abitscher Georg",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Khristofer Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hampel Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hahnsdorfer Georg",
+      "pages": [
+       23
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Habschider Georg",
+      "pages": [
+       24,
+       25
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Blakutscher Georg[?]",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hladnikhar[?] Georg.",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
+    ]
    },
    "pua_ps_name_sim": 0.383,
    "bp_refs": [
@@ -3793,12 +6837,12 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 34,
-    "ps_rows": 13,
+    "ps_rows": 16,
     "ps_kultur": {
      "Lehngut Hfl.": 1,
-     "Acker": 4,
+     "Acker": 5,
      "Žitno": 1,
-     "Wiese": 4,
+     "Wiese": 7,
      "Ried": 1,
      "Lobing[?]": 1
     }
@@ -3806,7 +6850,16 @@
    "conflict_ids": [
     "CH-048-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.476,
+    "sim_any": 1.0,
+    "best_ps_name": "Habschider Georg",
+    "exact_token": true,
+    "class": "MISMATCH",
+    "n_distinct": 7
+   }
   },
   {
    "house_id": "H-049",
@@ -3822,7 +6875,7 @@
       15,
       21,
       22,
-      25
+      43
      ],
      "rows": 8,
      "coverage": "PARTIAL (55/143 strani)"
@@ -3839,7 +6892,44 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Thomaz Majzel",
+      "pages": [
+       15
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Thimaz Majzel",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Thomas Hampel",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shimerz Marjare",
+      "pages": [
+       22
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Schimetz Michael.",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -3852,9 +6942,8 @@
     "pua_parcels_total": 0,
     "ps_rows": 8,
     "ps_kultur": {
-     "Acker": 5,
-     "Wiesen": 2,
-     "Ried": 1
+     "Acker": 6,
+     "Wiesen": 2
     }
    },
    "conflict_ids": [],
@@ -3868,9 +6957,10 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Poiding Matthl",
+     "owner_original": "Fesdian Musfa[?]",
      "stand": null,
      "pages": [
+      3,
       7,
       8,
       12,
@@ -3882,7 +6972,7 @@
       43,
       55
      ],
-     "rows": 15,
+     "rows": 17,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3902,7 +6992,87 @@
       7
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Fesdian Musfa[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poiding Matthl",
+      "pages": [
+       7
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Pechter Baltha[?]",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poldi Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Malfg",
+      "pages": [
+       21,
+       22
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Rödig Matthl.",
+      "pages": [
+       25
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Rödig mathe",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wächter Mathä",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pöching. Mathel.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pessing Malga[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -3917,12 +7087,12 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 15,
+    "ps_rows": 17,
     "ps_kultur": {
+     "Acker": 10,
      "Gartn Gartn": 1,
      "Lehngut": 1,
      "Grund / Garten": 1,
-     "Acker": 8,
      "Wiesen": 2,
      "Ried": 2
     }
@@ -3934,7 +7104,7 @@
    "house_id": "H-051",
    "house_no_1825": "51",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -3948,7 +7118,7 @@
      }
     ],
     "ps": {
-     "owner_original": "Urbas Peter",
+     "owner_original": "Ursch Petro[?]",
      "stand": null,
      "pages": [
       4,
@@ -3961,7 +7131,7 @@
       43,
       55
      ],
-     "rows": 12,
+     "rows": 13,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3980,9 +7150,74 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ursch Petro[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Urich Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shumey Peter",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Sinaucy Peter",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Michl Peter",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ulrich Johan",
+      "pages": [
+       21
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Uranek Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Parbna.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Heinrich Palle",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.353,
+   "pua_ps_name_sim": 0.412,
    "bp_refs": [
     {
      "bp": 75,
@@ -3995,9 +7230,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 56,
-    "ps_rows": 12,
+    "ps_rows": 13,
     "ps_kultur": {
-     "Acker": 6,
+     "Acker": 7,
      "Läuger": 1,
      "Wald": 2,
      "Stroh": 2,
@@ -4007,7 +7242,16 @@
    "conflict_ids": [
     "CH-051-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Urich Peter",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 9
+   }
   },
   {
    "house_id": "H-052",
@@ -4027,7 +7271,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pauling Johen",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Georg",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -4072,7 +7332,37 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Shumey Joan",
+      "pages": [
+       6
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Pustig Johan",
+      "pages": [
+       22
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Schlomnitz Johan",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rudischer Georg",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -4111,7 +7401,7 @@
       22,
       23
      ],
-     "rows": 7,
+     "rows": 8,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4127,7 +7417,38 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Lappary Marbl",
+      "pages": [
+       7
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Lappary Mihel",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lapajner Andre",
+      "pages": [
+       22
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lapajner Mike",
+      "pages": [
+       22,
+       23
+      ],
+      "rows": 4
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -4142,13 +7463,14 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 7,
+    "ps_rows": 8,
     "ps_kultur": {
      "Wiesen": 2,
      "Lehngut Hfl.": 1,
      "Gartn Gartn": 1,
      "Acker": 2,
-     "Wiese": 1
+     "Wiese": 1,
+     "Gartn": 1
     }
    },
    "conflict_ids": [],
@@ -4168,13 +7490,15 @@
       8,
       13,
       15,
+      20,
       21,
       22,
       23,
       24,
-      43
+      43,
+      55
      ],
-     "rows": 10,
+     "rows": 12,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4192,7 +7516,67 @@
       6
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimer Jacob",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Urbas Janez",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Thimaz John",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Thomas Johan",
+      "pages": [
+       20,
+       21
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Shimerz Johan",
+      "pages": [
+       22
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Schlomnitz Johan",
+      "pages": [
+       23,
+       24
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Schimetz Leon.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schiney Johan[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [
@@ -4207,10 +7591,11 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 10,
+    "ps_rows": 12,
     "ps_kultur": {
      "Wald": 2,
-     "Acker": 6,
+     "Acker": 7,
+     "Wiese": 1,
      "Gartn": 1,
      "Wiesen": 1
     }
@@ -4233,30 +7618,79 @@
       8,
       14,
       15,
-      20,
       22,
-      23,
       24,
       43
      ],
-     "rows": 15,
+     "rows": 12,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimay Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimer Peter",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Škofic Jakob",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Thimaz Johan",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shimerz Johan",
+      "pages": [
+       22
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Schlomnitz Peter",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimetz Peter.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 15,
+    "ps_rows": 12,
     "ps_kultur": {
-     "Acker": 6,
+     "Acker": 5,
      "Wald": 1,
      "Žitno": 1,
-     "Wiese": 3,
+     "Wiese": 2,
      "Wiesen": 2,
-     "Gartn": 2
+     "Gartn": 1
     }
    },
    "conflict_ids": [],
@@ -4279,7 +7713,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Križnar Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -4319,19 +7762,49 @@
       14,
       23
      ],
-     "rows": 5,
+     "rows": 4,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pogacar Michl",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlicz Janez",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlebšatar Janez",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schlomnitz Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.341,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 1,
-    "ps_rows": 5,
+    "ps_rows": 4,
     "ps_kultur": {
-     "Acker": 2,
+     "Acker": 1,
      "Wald": 2,
      "Žitno": 1
     }
@@ -4339,7 +7812,16 @@
    "conflict_ids": [
     "CH-058-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.444,
+    "sim_any": 0.444,
+    "best_ps_name": "Pavlicz Janez",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   }
   },
   {
    "house_id": "H-059",
@@ -4360,7 +7842,44 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pechl[?] Joann",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pedian Svian[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lappartt Mike",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poders Ivan",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Janez",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -4368,7 +7887,8 @@
     "pua_parcels_total": 0,
     "ps_rows": 5,
     "ps_kultur": {
-     "Acker": 2,
+     "Acker": 1,
+     "Lhaid[?]": 1,
      "Wald": 2,
      "Žitno": 1
     }
@@ -4412,9 +7932,10 @@
      }
     ],
     "ps": {
-     "owner_original": "Kirschan Georg",
-     "stand": "~",
+     "owner_original": "Schello Gay[?]",
+     "stand": null,
      "pages": [
+      3,
       5,
       6,
       14,
@@ -4424,7 +7945,7 @@
       23,
       31
      ],
-     "rows": 10,
+     "rows": 13,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4454,9 +7975,95 @@
       "link_source": "PUA opomba (p31)",
       "owner_page": 31
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Schello Gay[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mhelhadapes[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shello Gay[?]/Mhell Gay[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kirschan Georg",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schellko Joseph",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schellko Josef",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Miklavčič Lovrenc",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Husarlt Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Gorgy",
+      "pages": [
+       17
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schelle Augusta",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schelle Jank[?]",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     }
     ]
    },
-   "pua_ps_name_sim": 0.244,
+   "pua_ps_name_sim": 0.263,
    "bp_refs": [
     {
      "bp": 50,
@@ -4481,11 +8088,12 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 158,
-    "ps_rows": 10,
+    "ps_rows": 13,
     "ps_kultur": {
-     "Acker": 5,
+     "Acker": 6,
+     "Abhang[?]": 1,
+     "Wiese": 3,
      "Hutweide Hof": 1,
-     "Wiese": 2,
      "Žitno": 1,
      "Rohr": 1
     }
@@ -4493,13 +8101,22 @@
    "conflict_ids": [
     "CH-060-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.462,
+    "sim_any": 0.462,
+    "best_ps_name": "Pauling Walfja",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 12
+   }
   },
   {
    "house_id": "H-061",
    "house_no_1825": "61",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -4522,19 +8139,20 @@
      }
     ],
     "ps": {
-     "owner_original": "Feldt Mäda",
-     "stand": "~",
+     "owner_original": "Krbitschan Mahs[?]",
+     "stand": null,
      "pages": [
+      3,
       5,
       6,
       8,
       9,
       13,
       14,
-      19,
-      43
+      43,
+      54
      ],
-     "rows": 12,
+     "rows": 15,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4555,9 +8173,102 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krbitschan Mahs[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fillah Mäda[?]",
+      "pages": [
+       3
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Feldt Mäda",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Etrich Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shumey Peter",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Straupf Georg",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brusnigg Georg",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Eidlald Pirkh",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lovschan Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tschak Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Jerala Miha",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tillach Michl.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ulrich Pottra",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.171,
+   "pua_ps_name_sim": 0.2,
    "bp_refs": [
     {
      "bp": 33,
@@ -4574,10 +8285,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 42,
-    "ps_rows": 12,
+    "ps_rows": 15,
     "ps_kultur": {
-     "Wiese": 1,
-     "Acker": 5,
+     "Acker": 7,
+     "Wiese": 2,
      "Läuger": 1,
      "Wald": 2,
      "Riden": 2,
@@ -4587,13 +8298,22 @@
    "conflict_ids": [
     "CH-061-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.769,
+    "sim_any": 0.769,
+    "best_ps_name": "Tillach Michl.[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 13
+   }
   },
   {
    "house_id": "H-062",
    "house_no_1825": "62",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -4616,9 +8336,10 @@
      }
     ],
     "ps": {
-     "owner_original": "Kirschan Mäda",
-     "stand": "~",
+     "owner_original": "Kirschan Georg[?]",
+     "stand": null,
      "pages": [
+      3,
       5,
       13,
       14,
@@ -4629,7 +8350,7 @@
       20,
       43
      ],
-     "rows": 18,
+     "rows": 22,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4644,9 +8365,111 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Kirschan Georg[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kirschan Mihel[?]",
+      "pages": [
+       3
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Kirschan Mäda[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kirschan Mäda",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Urich Georg",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kovickan Miha",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Križnar Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pernig Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lenciklar Mihlo",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Christan Mache",
+      "pages": [
+       17,
+       18,
+       20
+      ],
+      "rows": 7
+     },
+     {
+      "name": "Christan Gorgy",
+      "pages": [
+       18
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Matho[?]",
+      "pages": [
+       19
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Malfg",
+      "pages": [
+       19
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Michl.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.293,
+   "pua_ps_name_sim": 0.381,
    "bp_refs": [
     {
      "bp": 52,
@@ -4655,9 +8478,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 64,
-    "ps_rows": 18,
+    "ps_rows": 22,
     "ps_kultur": {
-     "Acker": 12,
+     "Acker": 15,
+     "Abhang[?]": 1,
      "Riden": 1,
      "Žitno": 1,
      "Stroh": 1,
@@ -4668,7 +8492,16 @@
    "conflict_ids": [
     "CH-062-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.706,
+    "sim_any": 0.706,
+    "best_ps_name": "Krischan Michl.[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 14
+   }
   },
   {
    "house_id": "H-063",
@@ -4688,19 +8521,22 @@
      }
     ],
     "ps": {
-     "owner_original": "Poiding Hanl",
+     "owner_original": "Kirschan Georg[?]",
      "stand": null,
      "pages": [
+      3,
+      4,
       7,
       8,
       13,
       14,
       16,
       18,
+      19,
       20,
-      48
+      43
      ],
-     "rows": 17,
+     "rows": 19,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4720,9 +8556,76 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Kirschan Georg[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fring Masko[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poiding Hanl",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Braupf Hanns",
+      "pages": [
+       8
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Kovick Mihel",
+      "pages": [
+       13
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Javornik Martin",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leischar Gregor",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Gorgy",
+      "pages": [
+       18,
+       19,
+       20
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.256,
+   "pua_ps_name_sim": 0.341,
    "bp_refs": [
     {
      "bp": 46,
@@ -4739,8 +8642,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 32,
-    "ps_rows": 17,
+    "ps_rows": 19,
     "ps_kultur": {
+     "Abhang[?]": 1,
+     "Acker": 8,
      "Lehngut Hfl.": 1,
      "Wald": 2,
      "Grund / Garten": 2,
@@ -4748,21 +8653,28 @@
      "Riedn": 1,
      "Riden": 1,
      "Žitno": 1,
-     "Rohr": 1,
-     "Acker": 6,
-     "Wiese": 1
+     "Rohr": 1
     }
    },
    "conflict_ids": [
     "CH-063-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.545,
+    "sim_any": 0.545,
+    "best_ps_name": "Fring Masko[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 9
+   }
   },
   {
    "house_id": "H-064",
    "house_no_1825": "64",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -4783,12 +8695,9 @@
       9,
       14,
       16,
-      20,
-      26,
-      31,
-      36
+      31
      ],
-     "rows": 11,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4803,7 +8712,51 @@
       5
      ]
     },
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Urban Pankrazgall",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kerbitacher Masfa[?]",
+      "pages": [
+       4
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Herbstuter Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Miha",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kreutthaler Walth",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Puchey Georg",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": 0.267,
    "bp_refs": [
@@ -4814,21 +8767,29 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 30,
-    "ps_rows": 11,
+    "ps_rows": 9,
     "ps_kultur": {
      "Wiese": 1,
-     "Acker": 5,
+     "Lhaid[?]": 2,
+     "Acker": 3,
      "Žitno": 1,
      "Stroh": 1,
-     "Rohr": 1,
-     "Wiesen": 1,
-     "Lobig": 1
+     "Rohr": 1
     }
    },
    "conflict_ids": [
     "CH-064-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.762,
+    "sim_any": 0.762,
+    "best_ps_name": "Kerbitacher Masfa[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 6
+   }
   },
   {
    "house_id": "H-065",
@@ -4848,16 +8809,18 @@
      }
     ],
     "ps": {
-     "owner_original": "Schimeczkhanl",
-     "stand": "bauer Gruble",
+     "owner_original": "Bring Mäda[?]",
+     "stand": null,
      "pages": [
+      3,
+      4,
       7,
       8,
       16,
       36,
       43
      ],
-     "rows": 6,
+     "rows": 8,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4887,9 +8850,60 @@
       "link_source": "PUA opomba (p21)",
       "owner_page": 21
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Bring Mäda[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Prian Masko[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimeczkhanl",
+      "pages": [
+       7
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Schimec Ivan",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Bering Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Martho.[?]",
+      "pages": [
+       36
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimetz Leon.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
     ]
    },
-   "pua_ps_name_sim": 0.238,
+   "pua_ps_name_sim": 0.316,
    "bp_refs": [
     {
      "bp": 31,
@@ -4914,9 +8928,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 53,
-    "ps_rows": 6,
+    "ps_rows": 8,
     "ps_kultur": {
-     "Acker": 1,
+     "Acker": 2,
+     "Lhaid[?]": 1,
      "Lehngut Hfl.": 1,
      "Wald": 1,
      "Rohr": 1,
@@ -4927,13 +8942,22 @@
    "conflict_ids": [
     "CH-065-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.545,
+    "sim_any": 0.545,
+    "best_ps_name": "Bering Manko",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 7
+   }
   },
   {
    "house_id": "H-066",
    "house_no_1825": "66",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "PARTIAL",
    "owners": {
     "pua": [
      {
@@ -4956,16 +8980,16 @@
      }
     ],
     "ps": {
-     "owner_original": "Reuschard Franz",
+     "owner_original": "Kirschan Georg[?]",
      "stand": null,
      "pages": [
+      3,
       4,
       6,
       8,
-      17,
       36
      ],
-     "rows": 11,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4989,9 +9013,47 @@
       "link_source": "PUA opomba »B. P. 49. 50.« (no. 41, p21; val 54 preverjeno) + PT p5 konflikt (h61/62 ↔ 66, Kurrent 1↔6)",
       "owner_page": 21
      }
+    ],
+    "ps_distinct": [
+     {
+      "name": "Kirschan Georg[?]",
+      "pages": [
+       3,
+       4
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Blomuscher Franz",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fellner Michl",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "V. Hronzginen",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       36
+      ],
+      "rows": 2
+     }
     ]
    },
-   "pua_ps_name_sim": 0.326,
+   "pua_ps_name_sim": 0.429,
    "bp_refs": [
     {
      "bp": 29,
@@ -5008,9 +9070,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 96,
-    "ps_rows": 11,
+    "ps_rows": 9,
     "ps_kultur": {
-     "Acker": 7,
+     "Acker": 4,
+     "Lhild[?]": 1,
      "Läuger": 1,
      "Wald": 1,
      "Riedl": 1,
@@ -5020,7 +9083,16 @@
    "conflict_ids": [
     "CH-066-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.533,
+    "sim_any": 1.0,
+    "best_ps_name": "Kirschan Georg[?]",
+    "exact_token": true,
+    "class": "PARTIAL",
+    "n_distinct": 5
+   }
   },
   {
    "house_id": "H-067",
@@ -5034,6 +9106,7 @@
      "stand": null,
      "pages": [
       8,
+      26,
       27,
       28,
       29,
@@ -5041,22 +9114,77 @@
       36,
       38
      ],
-     "rows": 9,
+     "rows": 12,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Hrabotar Marha",
+      "pages": [
+       8
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Pavlicz Georg[?]",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlič Georg",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlic Georg",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pachegg Georg",
+      "pages": [
+       29
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Paching Georg",
+      "pages": [
+       30
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Puchey Georg.",
+      "pages": [
+       36,
+       38
+      ],
+      "rows": 4
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 9,
+    "ps_rows": 12,
     "ps_kultur": {
      "Lehngut / Acker": 1,
      "Grund / Garten": 1,
+     "Wiesen": 1,
      "Acker": 3,
      "Wiese": 2,
+     "Lohigg": 1,
+     "Lobig": 1,
      "Riedl": 1,
      "Wald.": 1
     }
@@ -5091,31 +9219,66 @@
      }
     ],
     "ps": {
-     "owner_original": "Häusler Mache",
-     "stand": null,
+     "owner_original": "Muth Peter",
+     "stand": "~",
      "pages": [
-      17,
       23,
-      30,
       31,
       34,
       35,
       43
      ],
-     "rows": 9,
+     "rows": 7,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Muth Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hoch Mito[?]",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Michel.[?]",
+      "pages": [
+       34,
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ulrich Mich.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Michl",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ]
    },
-   "pua_ps_name_sim": 0.324,
+   "pua_ps_name_sim": 0.294,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 80,
-    "ps_rows": 9,
+    "ps_rows": 7,
     "ps_kultur": {
-     "Wiese": 2,
-     "Lohigg": 1,
+     "Wiese": 1,
      "Acker": 4,
      "Löhing": 1,
      "Schupfer": 1
@@ -5124,13 +9287,22 @@
    "conflict_ids": [
     "CH-068-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.375,
+    "sim_any": 0.375,
+    "best_ps_name": "Muth Peter",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 5
+   }
   },
   {
    "house_id": "H-069",
    "house_no_1825": "69",
    "house_no_type": "gruble_house",
-   "evidence_status": "CONFLICT",
+   "evidence_status": "AGREE",
    "owners": {
     "pua": [
      {
@@ -5168,37 +9340,104 @@
       4,
       5,
       16,
-      43,
       45,
       47,
-      48,
-      50
+      48
      ],
-     "rows": 16,
+     "rows": 13,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimey Wenzel",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pawitsch Mathäus",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leischar Gregor",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hirschegger Walburg",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Linden matte",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Matthe.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Michely Soon",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Bräutig",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": 0.244,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 99,
-    "ps_rows": 16,
+    "ps_rows": 13,
     "ps_kultur": {
-     "Acker": 8,
+     "Acker": 5,
      "Wird": 1,
      "Ladisch": 1,
-     "Lohg": 2,
-     "Wisd": 2,
-     "Waldg": 1,
+     "Lohg": 1,
+     "Wisd": 1,
+     "Lohd": 2,
+     "Wise": 1,
      "Hütstürg": 1
     }
    },
    "conflict_ids": [
     "CH-069-01"
    ],
-   "notes": null
+   "notes": null,
+   "pua_ps_name_sim_v119": {
+    "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.941,
+    "sim_any": 0.941,
+    "best_ps_name": "Christan Bräutig",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 8
+   }
   },
   {
    "house_id": "H-070",
@@ -5305,17 +9544,19 @@
    "evidence_status": "SINGLE_SOURCE",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Lehning Michael",
      "stand": null,
      "pages": [
       50
      ],
      "rows": 1,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5349,7 +9590,37 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Peders Marbl",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Preßker Georg",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ponter, Mathl.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5382,7 +9653,30 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ulrich Peter",
+      "pages": [
+       6
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Shumey Peter",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Parbna.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5415,7 +9709,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pečnik Mathej",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5436,17 +9739,19 @@
    "evidence_status": "SINGLE_SOURCE",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Ihanz Jurey",
      "stand": null,
      "pages": [
       55
      ],
      "rows": 1,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5471,24 +9776,30 @@
      "owner_original": "Priškar Jelen",
      "stand": null,
      "pages": [
-      10,
-      30
+      10
      ],
-     "rows": 3,
+     "rows": 1,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Priškar Jelen",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 3,
+    "ps_rows": 1,
     "ps_kultur": {
-     "Lehge": 1,
-     "Lohigg": 1,
-     "Wald": 1
+     "Lehge": 1
     }
    },
    "conflict_ids": [],
@@ -5541,7 +9852,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Prunkl Maria",
+     "owner_original": "Brulla Maria.[?]",
      "stand": "~",
      "pages": [
       33
@@ -5550,7 +9861,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Brulla Maria.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5572,7 +9892,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Piber, Matthel",
+     "owner_original": "Ponter, Mathl.[?]",
      "stand": null,
      "pages": [
       34
@@ -5581,7 +9901,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ponter, Mathl.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5603,7 +9932,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Piber, Georg",
+     "owner_original": "Ponter, Gorgy.[?]",
      "stand": null,
      "pages": [
       34
@@ -5612,7 +9941,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ponter, Gorgy.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5644,7 +9982,30 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pölling Wolf",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ponter, Mathl.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ponter, Martin.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5677,7 +10038,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ravella, Michl",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5708,7 +10078,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Rudolf Mihael",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5739,7 +10118,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Hlahotshar Georg",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5764,23 +10152,30 @@
      "owner_original": "Bratula Mihael",
      "stand": null,
      "pages": [
-      10,
-      43
+      10
      ],
-     "rows": 2,
+     "rows": 1,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Bratula Mihael",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 2,
+    "ps_rows": 1,
     "ps_kultur": {
-     "Gartn": 1,
-     "Acker": 1
+     "Gartn": 1
     }
    },
    "conflict_ids": [],
@@ -5804,7 +10199,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Brullat Michl",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Straußfing Georg",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5836,7 +10247,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Hanefl Georg",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5867,7 +10287,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Urich Mäda",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5888,17 +10317,19 @@
    "evidence_status": "SINGLE_SOURCE",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Pirn Michael",
      "stand": "~",
      "pages": [
       26
      ],
      "rows": 1,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5929,7 +10360,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pölling Joan",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5951,7 +10391,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "De Costil de Malfis",
+     "owner_original": "Deleshitzkh Marßfid.[?]",
      "stand": "Landwirthschaft",
      "pages": [
       44
@@ -5960,7 +10400,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Deleshitzkh Marßfid.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -5982,7 +10431,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Hinde Mucko",
+     "owner_original": "Novak Michael.",
      "stand": null,
      "pages": [
       46
@@ -5991,7 +10440,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Novak Michael.",
+      "pages": [
+       46
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6013,7 +10471,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Baron v. Zallant",
+     "owner_original": "Baronial Zallant.[?]",
      "stand": "Gräbla",
      "pages": [
       41
@@ -6022,7 +10480,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Baronial Zallant.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6044,7 +10511,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pölling gzung.",
+     "owner_original": "Peodvin Grany.",
      "stand": null,
      "pages": [
       46
@@ -6053,7 +10520,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Peodvin Grany.",
+      "pages": [
+       46
+      ],
+      "rows": 4
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6076,7 +10552,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schiffbauer Mathäus",
+     "owner_original": "Schaffschick Mathl.[?]",
      "stand": null,
      "pages": [
       40,
@@ -6087,7 +10563,24 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schaffschick Mathl.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lubreschibek Maathe.[?]",
+      "pages": [
+       44,
+       46
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6110,7 +10603,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wundala nißl",
+     "owner_original": "Brulla Michl.[?]",
      "stand": null,
      "pages": [
       40,
@@ -6120,7 +10613,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Brulla Michl.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tallafschibek Nicholay.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6142,7 +10651,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Stelby (Thomas)",
+     "owner_original": "Hnall Scomne.[?]",
      "stand": null,
      "pages": [
       44
@@ -6151,7 +10660,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Hnall Scomne.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin.",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6173,7 +10698,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schönig (Peter)",
+     "owner_original": "Schimick Peter.[?]",
      "stand": "g'sellt",
      "pages": [
       44
@@ -6182,7 +10707,30 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimick Peter.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimek Peter.",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hnall Miho.",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6204,7 +10752,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Stelbpfennich (Mathey)",
+     "owner_original": "Tallafschibek Nübelz.[?]",
      "stand": null,
      "pages": [
       44
@@ -6213,7 +10761,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Tallafschibek Nübelz.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6235,7 +10792,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Witschkan Muhel",
+     "owner_original": "Huischan Matthe.[?]",
      "stand": "Laun. Grille",
      "pages": [
       46
@@ -6244,7 +10801,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Huischan Matthe.[?]",
+      "pages": [
+       46
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6266,7 +10832,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pechley Michael",
+     "owner_original": "Pöching Michael",
      "stand": null,
      "pages": [
       40
@@ -6275,7 +10841,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching Michael",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6297,22 +10872,39 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Leppanig (Michl)",
+     "owner_original": "Pöching Michl.[?]",
      "stand": null,
      "pages": [
+      40,
       44
      ],
-     "rows": 1,
+     "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching Michl.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leppanig (Michl)",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 1,
+    "ps_rows": 2,
     "ps_kultur": {
      "Acker": 1
     }
@@ -6328,7 +10920,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Willing Johann",
+     "owner_original": "Müllner Johann",
      "stand": null,
      "pages": [
       40
@@ -6337,7 +10929,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Müllner Johann",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6359,7 +10960,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wernig Mathäus",
+     "owner_original": "Ring Mathä.[?]",
      "stand": "Bauer gänzlich",
      "pages": [
       40,
@@ -6369,7 +10970,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ring Mathä.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schönig (Simon)",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6391,7 +11008,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wernig Michael",
+     "owner_original": "Ring Michael.",
      "stand": null,
      "pages": [
       40
@@ -6400,7 +11017,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ring Michael.",
+      "pages": [
+       40
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6422,7 +11048,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wernig Mathäus",
+     "owner_original": "Ring Michl.[?]",
      "stand": null,
      "pages": [
       40
@@ -6431,7 +11057,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ring Michl.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6453,7 +11088,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Willing Johann",
+     "owner_original": "Müllner Samuel.",
      "stand": null,
      "pages": [
       40
@@ -6462,7 +11097,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Müllner Samuel.",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6484,7 +11128,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Hödle (Marko)",
+     "owner_original": "Heide Marko.",
      "stand": null,
      "pages": [
       44,
@@ -6494,7 +11138,17 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Heide Marko.",
+      "pages": [
+       44,
+       46
+      ],
+      "rows": 5
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6518,48 +11172,25 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pechley Nißl",
+     "owner_original": "Wunderling",
      "stand": null,
      "pages": [
       40
-     ],
-     "rows": 2,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
-   },
-   "pua_ps_name_sim": null,
-   "bp_refs": [],
-   "parcel_refs": {
-    "pua_parcels_total": 0,
-    "ps_rows": 2,
-    "ps_kultur": {
-     "—": 1,
-     "Acker": 1
-    }
-   },
-   "conflict_ids": [],
-   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
-  },
-  {
-   "house_id": "H-1-32",
-   "house_no_1825": "1 / 32",
-   "house_no_type": "external_ref",
-   "evidence_status": "UNKNOWN_SEMANTICS",
-   "owners": {
-    "pua": null,
-    "ps": {
-     "owner_original": "Puch (Gregor)",
-     "stand": null,
-     "pages": [
-      44
      ],
      "rows": 1,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Wunderling",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6574,23 +11205,40 @@
    "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
   },
   {
-   "house_id": "H-1-4",
-   "house_no_1825": "1 / 4",
+   "house_id": "H-1-32",
+   "house_no_1825": "1 / 32",
    "house_no_type": "external_ref",
    "evidence_status": "UNKNOWN_SEMANTICS",
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Lahfenitsch (Georg)",
-     "stand": null,
+     "owner_original": "Ulrich Georg.[?]",
+     "stand": "~",
      "pages": [
+      41,
       44
      ],
      "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ulrich Georg.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Grany.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6605,6 +11253,46 @@
    "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
   },
   {
+   "house_id": "H-1-4",
+   "house_no_1825": "1 / 4",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Lubreschibek Draastho.[?]",
+     "stand": null,
+     "pages": [
+      44
+     ],
+     "rows": 1,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Lubreschibek Draastho.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
+    "ps_kultur": {
+     "Acker": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
    "house_id": "H-1-40",
    "house_no_1825": "1 / 40",
    "house_no_type": "external_ref",
@@ -6612,7 +11300,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pechley Johann",
+     "owner_original": "Pöching Johann.",
      "stand": null,
      "pages": [
       40
@@ -6621,7 +11309,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching Johann.",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6643,7 +11340,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pechley Georg",
+     "owner_original": "Pöching. Gorgy.[?]",
      "stand": null,
      "pages": [
       40
@@ -6652,7 +11349,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching. Gorgy.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6674,7 +11380,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pechley Mathäus",
+     "owner_original": "Pöching. Mathel.[?]",
      "stand": null,
      "pages": [
       40
@@ -6683,7 +11389,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching. Mathel.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6705,7 +11420,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Rudolla Nißl",
+     "owner_original": "Brulla Michl.[?]",
      "stand": null,
      "pages": [
       40
@@ -6714,7 +11429,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Brulla Michl.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6745,7 +11469,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Dragasch (Jure)",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dragasch (Jurij)",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6767,7 +11507,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pechly Mathes.",
+     "owner_original": "Pöching. Mathel.[?]",
      "stand": "~",
      "pages": [
       41
@@ -6776,7 +11516,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching. Mathel.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6798,7 +11547,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Weiss Peter",
+     "owner_original": "Ulrich Peter.[?]",
      "stand": "~",
      "pages": [
       41
@@ -6807,7 +11556,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ulrich Peter.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6828,17 +11586,19 @@
    "evidence_status": "UNKNOWN_SEMANTICS",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Witschak Georg.",
      "stand": "~",
      "pages": [
       41
      ],
      "rows": 1,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6860,7 +11620,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Bau Prug (Joan)",
+     "owner_original": "Peodvin Swan.[?]",
      "stand": null,
      "pages": [
       44
@@ -6869,7 +11629,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Peodvin Swan.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6890,17 +11659,19 @@
    "evidence_status": "UNKNOWN_SEMANTICS",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Gyomandl",
      "stand": "~",
      "pages": [
       41
      ],
      "rows": 1,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6922,7 +11693,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schellko Jozeph.",
+     "owner_original": "Schellko Joseph.",
      "stand": "~",
      "pages": [
       41
@@ -6931,7 +11702,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schellko Joseph.",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6953,7 +11733,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Witschak Georg.",
+     "owner_original": "Krischan Georg.[?]",
      "stand": "~",
      "pages": [
       41
@@ -6962,7 +11742,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tillach Michl.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -6984,7 +11780,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Witschak Georg.",
+     "owner_original": "Krischan Georg.[?]",
      "stand": "~",
      "pages": [
       41
@@ -6993,7 +11789,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7015,24 +11820,40 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pechly Georg.",
+     "owner_original": "Pöching. Gorgy.[?]",
      "stand": "~",
      "pages": [
       41
      ],
-     "rows": 4,
+     "rows": 3,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching. Gorgy.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Veritschan Mathl.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 4,
+    "ps_rows": 3,
     "ps_kultur": {
-     "Acker": 4
+     "Acker": 3
     }
    },
    "conflict_ids": [],
@@ -7046,7 +11867,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wernig Dorothea",
+     "owner_original": "Ring Dorothea.[?]",
      "stand": null,
      "pages": [
       40,
@@ -7056,7 +11877,24 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ring Dorothea.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Martho.[?]",
+      "pages": [
+       40,
+       41
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7079,7 +11917,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Weinhandl Georg",
+     "owner_original": "Krischan Georg.[?]",
      "stand": null,
      "pages": [
       40
@@ -7088,7 +11926,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7110,17 +11957,33 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wernig Joseph",
-     "stand": null,
+     "owner_original": "Ulrich Michl.",
+     "stand": "~",
      "pages": [
-      40,
+      41,
       44
      ],
      "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ulrich Michl.",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Miho.",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7128,8 +11991,7 @@
     "pua_parcels_total": 0,
     "ps_rows": 2,
     "ps_kultur": {
-     "Wiese": 1,
-     "Acker": 1
+     "Acker": 2
     }
    },
    "conflict_ids": [],
@@ -7142,17 +12004,19 @@
    "evidence_status": "UNKNOWN_SEMANTICS",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Weichselbaum Nißl",
      "stand": null,
      "pages": [
       40
      ],
      "rows": 1,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7174,7 +12038,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Lahfenitsch (Andreas)",
+     "owner_original": "Tallafschibek Draelte.[?]",
      "stand": null,
      "pages": [
       44
@@ -7183,7 +12047,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Tallafschibek Draelte.[?]",
+      "pages": [
+       44
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7214,7 +12087,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Jannowitz",
+      "pages": [
+       46
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7236,23 +12118,41 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wenzl Piberl",
+     "owner_original": "Kranvel Michael[?]",
      "stand": null,
      "pages": [
+      50,
       53
      ],
-     "rows": 1,
+     "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Kranvel Michael[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wenzl Piberl",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 1,
+    "ps_rows": 2,
     "ps_kultur": {
+     "Acker": 1,
      "Gartn": 1
     }
    },
@@ -7267,7 +12167,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Radling Georg",
+     "owner_original": "Pöching. Georgy.[?]",
      "stand": null,
      "pages": [
       42
@@ -7276,7 +12176,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pöching. Georgy.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7303,19 +12212,35 @@
      "pages": [
       52
      ],
-     "rows": 1,
+     "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Pirker Mühle",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pesding Miade[?]",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 1,
+    "ps_rows": 2,
     "ps_kultur": {
-     "Acker": 1
+     "Acker": 2
     }
    },
    "conflict_ids": [],
@@ -7329,7 +12254,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Chorll Maria",
+     "owner_original": "Khall Marie.[?]",
      "stand": null,
      "pages": [
       42,
@@ -7339,7 +12264,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Khall Marie.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wenzl Mitterp.",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7371,7 +12312,30 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Stallh. Mühle",
+      "pages": [
+       52
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Stallh. W. Mühle",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stallh Mičo[?]",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7395,7 +12359,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Khaull Joanne",
+     "owner_original": "Khall Johanne.[?]",
      "stand": null,
      "pages": [
       42
@@ -7404,7 +12368,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Khall Johanne.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7426,7 +12399,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schumig Johann",
+     "owner_original": "Schimetz Peter.[?]",
      "stand": null,
      "pages": [
       42,
@@ -7436,7 +12409,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimetz Peter.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Wenzl Piberl",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7460,23 +12449,50 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Wenzl Mitterp.",
+     "owner_original": "Schimey Michael",
      "stand": null,
      "pages": [
+      50,
+      51,
       53
      ],
-     "rows": 3,
+     "rows": 6,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimey Michael",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schiney Malga[?]",
+      "pages": [
+       51
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Wenzl Mitterp.",
+      "pages": [
+       53
+      ],
+      "rows": 3
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 3,
+    "ps_rows": 6,
     "ps_kultur": {
+     "Stöger": 1,
+     "Acker": 2,
      "Wiese": 2,
      "Garten": 1
     }
@@ -7492,16 +12508,25 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Hantzel Jhe.",
-     "stand": "~",
+     "owner_original": "Weinchan Matthe[?]",
+     "stand": null,
      "pages": [
-      52
+      50
      ],
      "rows": 1,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Weinchan Matthe[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7523,24 +12548,40 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schiffelbichl Barthol. Lorenz",
+     "owner_original": "Novak Martin",
      "stand": null,
      "pages": [
       50
      ],
-     "rows": 3,
+     "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Novak Martin",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Vallafschübl Matthe[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 3,
+    "ps_rows": 2,
     "ps_kultur": {
-     "Acker": 2,
+     "Acker": 1,
      "Wald": 1
     }
    },
@@ -7555,23 +12596,41 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Ludwig Muffel",
-     "stand": "~",
+     "owner_original": "Schimetz Michael.",
+     "stand": null,
      "pages": [
+      42,
       52
      ],
-     "rows": 1,
+     "rows": 2,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schimetz Michael.",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimey Michael",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 1,
+    "ps_rows": 2,
     "ps_kultur": {
+     "Wald": 1,
      "Acker": 1
     }
    },
@@ -7586,7 +12645,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Lupzina Maria",
+     "owner_original": "Luppraz Maria.[?]",
      "stand": null,
      "pages": [
       42
@@ -7595,7 +12654,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Luppraz Maria.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7617,42 +12685,10 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Ludwig Johann",
-     "stand": "~",
+     "owner_original": "Schiney Johan",
+     "stand": null,
      "pages": [
-      52,
-      53
-     ],
-     "rows": 2,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
-   },
-   "pua_ps_name_sim": null,
-   "bp_refs": [],
-   "parcel_refs": {
-    "pua_parcels_total": 0,
-    "ps_rows": 2,
-    "ps_kultur": {
-     "Acker": 1,
-     "Wiese": 1
-    }
-   },
-   "conflict_ids": [],
-   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
-  },
-  {
-   "house_id": "H-1-56",
-   "house_no_1825": "1/56",
-   "house_no_type": "external_ref",
-   "evidence_status": "UNKNOWN_SEMANTICS",
-   "owners": {
-    "pua": null,
-    "ps": {
-     "owner_original": "Johann Johann",
-     "stand": "~",
-     "pages": [
+      51,
       52,
       53
      ],
@@ -7660,7 +12696,30 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schiney Johan",
+      "pages": [
+       51
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimey Johan",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wenzl Gland",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7676,13 +12735,73 @@
    "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
   },
   {
+   "house_id": "H-1-56",
+   "house_no_1825": "1/56",
+   "house_no_type": "external_ref",
+   "evidence_status": "UNKNOWN_SEMANTICS",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Schiney Juba[?]",
+     "stand": null,
+     "pages": [
+      51,
+      52,
+      53
+     ],
+     "rows": 4,
+     "coverage": "PARTIAL (55/143 strani)"
+    },
+    "pt": null,
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schiney Juba[?]",
+      "pages": [
+       51
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimey Johan",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wenzl Piberl",
+      "pages": [
+       53
+      ],
+      "rows": 2
+     }
+    ]
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Acker": 3,
+     "Wiese": 1
+    }
+   },
+   "conflict_ids": [],
+   "notes": "sestavljena/nelokalna referenca — semantika TO-DECODE (val 58 F12)"
+  },
+  {
    "house_id": "H-1-59",
    "house_no_1825": "1/59",
    "house_no_type": "external_ref",
    "evidence_status": "UNKNOWN_SEMANTICS",
    "owners": {
     "pua": null,
-    "ps": {
+    "ps": null,
+    "pt": null,
+    "a01": null,
+    "ps_stale": {
      "owner_original": "Schimek Michael",
      "stand": null,
      "pages": [
@@ -7690,10 +12809,9 @@
       52
      ],
      "rows": 2,
-     "coverage": "PARTIAL (55/143 strani)"
-    },
-    "pt": null,
-    "a01": null
+     "coverage": "PARTIAL (55/143 strani)",
+     "stale_reason": "val 119 del 3: PS p3–p55 v119 re-read nima več vrstic z lastnikom pri tej hiši — pass2 (val 57) lastnik je bil del zamika vrstic / popravka hišnih števil (F-NA-01/02/03, del 2c–2e); glej register owner_original_pre_v119 + protokol 142"
+    }
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7716,23 +12834,49 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schmiedtisch Johann",
-     "stand": "~",
+     "owner_original": "Stallpschibed Svec[?]",
+     "stand": null,
      "pages": [
+      50,
       52
      ],
-     "rows": 1,
+     "rows": 3,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Stallpschibed Svec[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stallpschibek Grad[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stallpschübek Johan",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 1,
+    "ps_rows": 3,
     "ps_kultur": {
+     "Wald": 1,
+     "Stöger": 1,
      "Acker": 1
     }
    },
@@ -7747,7 +12891,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Pritschak Andr.",
+     "owner_original": "Tillach Michl.[?]",
      "stand": "~",
      "pages": [
       41,
@@ -7758,7 +12902,31 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Tillach Michl.[?]",
+      "pages": [
+       41,
+       42
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Tillach Maria.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stallh. Mühle",
+      "pages": [
+       52
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7783,27 +12951,58 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Witschak Michl.",
+     "owner_original": "Krischan Michl.[?]",
      "stand": "Land. Gräbler.",
      "pages": [
       41,
       42,
       52
      ],
-     "rows": 9,
+     "rows": 7,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Michl.[?]",
+      "pages": [
+       41,
+       42
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Maria.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Chrischan Miido[?]",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 9,
+    "ps_rows": 7,
     "ps_kultur": {
-     "Acker": 4,
-     "Wald": 5
+     "Acker": 2,
+     "Wald": 4
     }
    },
    "conflict_ids": [],
@@ -7817,26 +13016,57 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Witschak Georg.",
+     "owner_original": "Krischan Georg.[?]",
      "stand": "~",
      "pages": [
       41,
       52,
       53
      ],
-     "rows": 4,
+     "rows": 5,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wenzl. Mühle",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Honschak georg",
+      "pages": [
+       52
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Georg",
+      "pages": [
+       52,
+       53
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 4,
+    "ps_rows": 5,
     "ps_kultur": {
-     "Acker": 4
+     "Acker": 5
     }
    },
    "conflict_ids": [],
@@ -7850,27 +13080,52 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Veit Blaschke seni[?]",
+     "owner_original": "Veritschan Mathl.[?]",
      "stand": null,
      "pages": [
+      40,
       42,
       53
      ],
-     "rows": 5,
+     "rows": 6,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Veritschan Mathl.[?]",
+      "pages": [
+       40,
+       42
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Michl. Mich. Wf.",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Verblibten Wf.",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 5,
+    "ps_rows": 6,
     "ps_kultur": {
+     "Wiese": 2,
      "Wald": 2,
      "Wiesen": 1,
-     "Wiese": 1,
      "Acker": 1
     }
    },
@@ -7885,23 +13140,57 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Michel Gorg",
-     "stand": "Einsiedler",
+     "owner_original": "Ring Jakob.[?]",
+     "stand": null,
      "pages": [
+      40,
+      42,
       53
      ],
-     "rows": 2,
+     "rows": 4,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Ring Jakob.[?]",
+      "pages": [
+       40
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Martho.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Georg",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wenzl Wenzl.",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 2,
+    "ps_rows": 4,
     "ps_kultur": {
+     "Wiese": 1,
+     "Wald": 1,
      "Hutweide": 1,
      "Acker": 1
     }
@@ -7917,7 +13206,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Christan Georg",
+     "owner_original": "Krischan Georg.[?]",
      "stand": null,
      "pages": [
       42,
@@ -7927,7 +13216,23 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       42
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Krischan Georg",
+      "pages": [
+       53
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7951,7 +13256,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Olekschul Wulf",
+     "owner_original": "Deleshitzkh Marßfid.[?]",
      "stand": null,
      "pages": [
       46
@@ -7960,7 +13265,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Deleshitzkh Marßfid.[?]",
+      "pages": [
+       46
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -7983,7 +13297,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Tschokitsch Muhel",
+     "owner_original": "Tillach Miko.[?]",
      "stand": "Gruble",
      "pages": [
       46
@@ -7992,7 +13306,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Tillach Miko.[?]",
+      "pages": [
+       46
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8015,7 +13338,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Witschkan Muhel",
+     "owner_original": "Krischan Miko.[?]",
      "stand": null,
      "pages": [
       46
@@ -8024,7 +13347,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Miko.[?]",
+      "pages": [
+       46
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8047,7 +13379,7 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Witschkan gzung.",
+     "owner_original": "Krischan Grany.[?]",
      "stand": null,
      "pages": [
       46
@@ -8056,7 +13388,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Grany.[?]",
+      "pages": [
+       46
+      ],
+      "rows": 2
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8088,7 +13429,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Michaell Maier",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8119,7 +13469,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Wenzl Gland",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8150,7 +13509,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Theresia Mitterp.",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8181,7 +13549,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Matjaž Marnel",
+      "pages": [
+       32
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8212,7 +13589,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Schöffpoltzy Joan",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],
@@ -8243,7 +13629,16 @@
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
-    "a01": null
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Gemeinde",
+      "pages": [
+       35
+      ],
+      "rows": 1
+     }
+    ]
    },
    "pua_ps_name_sim": null,
    "bp_refs": [],

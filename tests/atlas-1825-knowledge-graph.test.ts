@@ -22,19 +22,19 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3269); // val 98: 3775 → … → val 114: 3268 → val 115: 3269 (vstavljena vrstica p48 "12" = nova PARCEL brez haus_no)
-    expect(kg.edges.length).toBe(3477); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
-    expect(kg.claims.length).toBe(622);
+    expect(kg.nodes.length).toBe(3762); // val 119 del 3 sync: PERSON 488→981 (98 PUA + 656 PS v119 + 227 PT); val 115: 3269
+    expect(kg.edges.length).toBe(3471); // OWNER_OF 254→246 (8 zastarelih PS OWNER_OF hiš prek ps_stale), RESIDENCE 10→12
+    expect(kg.claims.length).toBe(614);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.length).toBe(4);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 488 / PARCEL 2711 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 112: F-PV-07 premestitve p5/p7/p12 — 59 vrednosti jaethe→klafter izpadijo iz projekcije, 2770→2711)", () => {
+  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 981 / PARCEL 2427 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 119 del 3: osebna plast PUA↔PS sync)", () => {
     expect(kg.node_stats).toEqual({
       SOURCE: 13,
       HOUSE: 167,
-      PERSON: 488,
+      PERSON: 981,
       PARCEL: 2427,
       BP: 100,
       TOPONYM: 37,
@@ -64,14 +64,14 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
     }
   });
 
-  test("§11 INVARIANTA: osebe nikoli mergeane (possible_duplicate ohranja NOT_MERGED)", () => {
+  test("§11 INVARIANTA: osebe nikoli mergeane (possible_duplicate ohranja NOT_MERGED) — 981 (val 119 del 3)", () => {
     const persons = kg.nodes.filter((n) => n.node_type === "PERSON");
-    expect(persons.length).toBe(488);
+    expect(persons.length).toBe(981);
     for (const p of persons) {
       expect(p.merge_decision == null || p.merge_decision === "NOT_MERGED").toBe(true);
     }
     const dupCount = persons.filter((p) => p.possible_duplicate).length;
-    expect(dupCount).toBe(161);
+    expect(dupCount).toBe(418); // val 119 del 3: 656 PS oseb → več identnih normaliziranih imen čez hiše (dito/pattern-fill družine); prej 161
   });
 
   test("referenčna integriteta: vse edge/claim referenče kažejo na obstoječe node id-je", () => {
@@ -179,9 +179,9 @@ describe("knowledge-graph-1825 v2.4 [val 108]", () => {
     expect(e!.to_entity).toBe("TP-003");
   });
 
-  test("RESIDENCE_DOCUMENTED_AT: 10 field-level povezav (PUA+PS) — nič ugibanih", () => {
+  test("RESIDENCE_DOCUMENTED_AT: 12 field-level povezav (PUA+PS) — nič ugibanih (val 119 del 3: +2 prek natančnejšega (page,haus) joina na per-name osebah)", () => {
     const res = kg.edges.filter((e) => e.relation_type === "RESIDENCE_DOCUMENTED_AT");
-    expect(res.length).toBe(10);
+    expect(res.length).toBe(12);
     expect(res.every((e) => e.evidence_status === "VERIFIED_FORM")).toBe(true);
     const targets = new Set(res.map((e) => e.to_entity));
     expect(targets.has("TP-032")).toBe(true); // Zogwitsche

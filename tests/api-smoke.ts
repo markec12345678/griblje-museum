@@ -491,18 +491,18 @@ ok(
 
 const sgPersons = await getJson("/api/atlas/story-graph?type=PERSON&limit=5000");
 ok(
-  "atlas story-graph: 488 oseb (projekcija KG, nič novih trditev)",
-  sgPersons.status === 200 && sgPersons.body?.count === 488,
+  "atlas story-graph: 981 oseb (projekcija KG — val 119 del 3 PUA↔PS sync, prej 488 pass2)",
+  sgPersons.status === 200 && sgPersons.body?.count === 981,
   `count=${sgPersons.body?.count}`
 );
 
 const sgGemeinde = await getJson("/api/atlas/story-graph?relation=IS_GEMEINDE_OF");
 ok(
-  "atlas story-graph: IS_GEMEINDE_OF z claimom C-00622 (KG-F07 claim-first fix)",
+  "atlas story-graph: IS_GEMEINDE_OF z claimom C-00614 (KG-F07 claim-first fix; prej C-00622 @622 claimov)",
   sgGemeinde.status === 200 &&
     sgGemeinde.body?.count === 1 &&
     sgGemeinde.body?.relations?.[0]?.from_entity === "TP-001" &&
-    JSON.stringify(sgGemeinde.body?.relations?.[0]?.claim_ids) === '["C-00622"]' &&
+    JSON.stringify(sgGemeinde.body?.relations?.[0]?.claim_ids) === '["C-00614"]' &&
     typeof sgGemeinde.body?.relations?.[0]?.date_period === "string" &&
     sgGemeinde.body?.relations?.[0]?.source_ids?.length >= 3,
   `status=${sgGemeinde.status}`
@@ -514,7 +514,7 @@ ok(
   sgAtoms.status === 200 &&
     sgAtoms.body?.count === 4 &&
     (sgAtoms.body?.story_atoms ?? []).every((a: any) => a.provenance_complete === true) &&
-    (sgAtoms.body?.story_atoms ?? []).some((a: any) => a.story_id === "SA-004" && JSON.stringify(a.claim_ids) === '["C-00622"]'),
+    (sgAtoms.body?.story_atoms ?? []).some((a: any) => a.story_id === "SA-004" && JSON.stringify(a.claim_ids) === '["C-00614"]'),
   `status=${sgAtoms.status}`
 );
 
@@ -583,11 +583,11 @@ ok(
 
 const seVillage = await getJson("/api/atlas/story?scope=village");
 ok(
-  "atlas story: zgodba vasi (§18) — 10 sekcij + EVIDENCED + C-00622 + raba ločena",
+  "atlas story: zgodba vasi (§18) — 10 sekcij + EVIDENCED + C-00614 + raba ločena",
   seVillage.status === 200 &&
     seVillage.body?.sections?.length === 10 &&
     seVillage.body?.contract?.story_status === "EVIDENCED" &&
-    (seVillage.body?.contract?.used_claim_ids ?? []).includes("C-00622") &&
+    (seVillage.body?.contract?.used_claim_ids ?? []).includes("C-00614") &&
     (seVillage.body?.sections ?? []).some((s: any) => s.title.includes("Raba zemljišča") && s.items.length >= 2),
   `status=${seVillage.status} sections=${seVillage.body?.sections?.length}`
 );

@@ -400,15 +400,15 @@ describe("val 114 — kaskada (izrecna)", () => {
   test("KG: PARCEL 2436, HAS_PARCEL 2775, vozlišča 3278, vezi 3479, claims 622", () => {
     expect(kg.node_stats.PARCEL).toBe(2427); // val 115: 2426 → 2427
     expect(kg.edge_stats.HAS_PARCEL).toBe(2773); // val 115: nespremenjeno (nova parcela brez haus_no)
-    expect(kg.nodes.length).toBe(3269); // val 115: 3268 → 3269
-    expect(kg.edges.length).toBe(3477); // val 115: nespremenjeno
-    expect(kg.claims.length).toBe(622);
+    expect(kg.nodes.length).toBe(3762); // val 115: 3268 → 3269
+    expect(kg.edges.length).toBe(3471); // val 115: nespremenjeno
+    expect(kg.claims.length).toBe(614);
     expect(kg.invariant_violations).toEqual([]);
   });
 
   test("kaskadni artefakti držijo isti KG sha c3932092… (pogodba §22; val 119 del 2e — timestamp-only, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^c3932092/);
+    expect(kgSha).toMatch(/^596c1ca7/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

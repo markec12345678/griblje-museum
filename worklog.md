@@ -4919,3 +4919,25 @@ Stage Summary:
 - PS p25–p55 POKRITE imensko + vrednostno: v119-names 731 (731/2875), v114 0, v115 0; razhajanja 99 (vsa anmerkung); TRANSCRIBED=0, 0 VLM
 - KG vsebinsko IDENTIČNA (timestamp-only sha c3932092); K5 207 (bloki 2607), K9 53/1/52/961/85
 - Naslednje: PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379 → VLM 2. oči vzorec (NR-14) → F3 medstranska poravnava
+
+---
+Task ID: 119-del3
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 3)
+Task: griblje-museum — val 119 del 3: PUA↔PS osebna sinhronizacija (F-PV-03/04) + register eArheologija živa preverba + publikacijska kaskada (user: "odlicno nadaljuj")
+
+Work Log:
+- Rekonstrukcija: sejni povzetek opisoval del 2d-x3 kot naslednje — worklog + git pokazala, da sta del 2d-x3 (PR #128) IN del 2e (PR #129) že mergana (main @ eea2e02); dejansko naslednje = PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379 (protokol 141 §6)
+- Analiza: PUA register = 98 vpisov (val 51+57, 2× VLM); PS register p3–p55 = 1.077 vrstic (v119 dvojni sidr); pass2 (val 59) osebna plast = first-owner per hiša (163 oseb) na VAL 57 branjih; val 58 A_pua_vs_ps = 51 hiš / 49 MISMATCH / sim 0.114–0.564
+- F-SYNC-01: val 58 token_sim docstring ('LCS po tokenih') ne ustreza implementaciji — norm odstrani presledke → split() en token → LCS nad zlepljenima imenoma; kontinuitetni stolpec sim_concat_first ohranja staro metodo; nova primarna metoda B sim_surname (prvi token PS imena vs. vsi PUA tokeni; AGREE ≥0.7 / PARTIAL ≥0.5+exact token; F-SYNC-03: sim_any samo dokumentacija — h48 Höchsthaler↔Habschider prek 'Georg' = lažno soglasje, h40 muster↔sautter 0.615 brez exact tokena ostaja CONFLICT)
+- Rezultat: 0 → 16 AGREE hiš (5/18/26/27/29/30/36/37/41/42/44/51/61/62/64/69; h44 Husitsch Maria 1.0; h69 Christan Bräutig↔Christian Brandl 0.941; Ring↔Brincz h26; Milleg h29 1.0; Tillak↔Tillach h30/61; Pöchinger h41/42; Krischan↔Brinczhan h62 0.7), 2 PARTIAL (43/66), 33 MISMATCH; 16 izboljšanih vs val 58
+- build-sync-v119-del3.py (fail-fast guardi 2875/1077/1070/98/98+163+227/167/113/51): person-owner owner(ps) 163 → 656 per (hiša, ime) s stranmi (PUA 98 + PT 227 nedotaknjena), possible_dup 161 → 418 NOT_MERGED, osebe 488 → 981; house-register owners.ps + ps_distinct (do 20 so-živečih — Inleute/Wittiber/dediči), AGREE 0→16 / CONFLICT 49→33, F-SYNC-05: 8 zastarelih owners.ps → ps_stale ('00' Stuker Michl → h30 Stuker Mathl, '1/59' → h49 Schimek Micha, '1 / 6' Gyomandl → Gemeinde h0, ...); conflict-register CH: 4 RESOLVED (h18/26/29/30) + 12 PARTIALLY_RESOLVED + 35 OPEN, note_pass2 ohranjene, CB/CF nedotaknjeni, 113; analysis-v7 (F-SYNC-01..05)
+- Kaskada izrecna: KG rebuild 3269→3762 vozlišč (PERSON 981), 3477→3471 vezi (OWNER_OF 254→246 prek ps_stale; RESIDENCE 10→12 — TP-029 Zagorje 2→4 per-name osebe: Lubreschibek Maathe./Heide Marko./Krischan Matthe./Weidner Mathä.), claims 622→614 (CONFLICT 128→127, SINGLE_SOURCE 111→104), vrzeli 8 (join missi preprečeni), invariante []; sha 596c1ca7 = PRVA VSEBINSKA sprememba KG od val 117; story 3762/3471/4; timeline 8 točk (I1 441 ✓ I2 ✓ I6 ✓); coverage PASS 8 (houses VER 16/PART 45/CONF 33; persons 981; konflikti VER 5/PART 16/CONF 92); c4-metrika nespremenjena (register ni bil dotaknjen — K9 52/961/85)
+- Register eArheologija živa preverba (geohub.gov.si MK_ARHEO 3692, EID LIKE %10094%): 26 zapisov; ENA sprememba vs val 102 artefakt — 26-0379 STATUS 'terenska raziskava napovedana' → 'v teku' (parc. 2799, okno okt./nov. 2026 odprto); 26-0326 nespremenjen (oddano v pregled, brez URL_POROCILO1); 24/24 javnih prenosov; živi posnetek val119-del3/arheo-3692-10094-live-2026-10-04.json (sha aa4695cd)
+- Testi: nov tests/val119-del3-pua-ps-sync.test.ts (12) + pini v 26 datotekah (KG sha c3932092→596c1ca7, osebe 488→981, coverage AGREE 16/CONFLICT 33, CH statusi 4/12/35, claim re-id C-00622→C-00614, PER-0586 Peter Muster, api-smoke 981); tsc popravki (claim_b tip, reduce brez type-arg, RESIDENCE edge tipi); 1295 testov: 1284 pass / 11 skip / 0 fail; lint čist; tsc čist
+- Docs: protokol 142 (8 sekcij) + KAZALO vnos 142 + README 179. sklop; ta worklog
+
+Stage Summary:
+- Val 119 del 3 (PUA↔PS sinhronizacija) ZAKLJUČEN: osebna plast ni več 'pass2 PUA artefakt' (F-PV-03/04) — KG osebni sloj = v119 brane osebe; prva vsebinska sprememba KG od val 117
+- Metoda B dokumentirana (F-SYNC-01 popavek); 16 AGREE hiš z cross-val dokazi iz del 2b–2e; 8 zastarelih hiš ohranjeno (ps_stale); 4 CH RESOLVED + 12 PARTIALLY_RESOLVED brez brisanja dokazov
+- eArheologija: 26-0379 terenska raziskava V TEKU (okno okt./nov. 2026); 26-0326 še brez javnega poročila
+- Naslednje: VLM 2. oči vzorec (NR-14) → F3 medstranska poravnava → register 26-0326 + 26-0379 ob javnih poročilih → hiše 70–78 (PROVISIONAL h72/74/76) ločena odločitev
