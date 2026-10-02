@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "val": 119, "del": "2d-pre", "page": 49,
+    "status": "PREDANALIZA — strukturna forenzika, NI vgradnje (protokol 138 §2)",
+    "method": "parzelle-sidr 921–941 + klafter/joche sekvence + rdeči prečrti + rule-detekcija; agentov vid, 0 VLM",
+    "register_rows": 22, "ink_rows": 21, "vlm_calls": 0
+  },
+  "anchors": {
+    "parzelle_sequence_ink": "921–941 (21 vrstic, direktno prebrano iz kolone Nro. der Parzelle)",
+    "klafter_joche_sequence": "r0 jae=2 kl=714 ✓ ('Aiba 2|714' v črnilu), 277, 973 (preklic, temna prečrta), 11, 591, 1415 (RED), 1553, 412, 381, 281, 97, 92, 821, … = register r0–r12 1:1",
+    "row_grid": "tops ≈ 170.5 + 38.65k, k=0..20; pravila detektirana (170,211,249,287,326,364,403,442,480,518,558,595,633,672,711,749,788,827,864,902,941)"
+  },
+  "structural_findings": [
+    {"id": "F1", "finding": "reg r21 'Ploner Franzigen' h14 = FANTOMSKA vrstica: brez parcele (sekvenca se konča pri 941 = r20), imenska celica v črnilu PRAZNA (detekcija max 2 temna piksla), dno strani = prazne celice + Fürtrag", "proposal": "anmerkung + flag pri vgradnji; NE tiho brisanje (precedens p34-r20/p40-r12)"},
+    {"id": "F2", "finding": "reg r2 (v115-vstavljena 'preklicana, prazno ime', klafter 973) = REALNA preklicana vrstica (parcela 923) z imenom + hausom v črnilu: ime ≈ 'Heide Marko.[?]', haus ≈ 3/8 (x16 potrebna), klafter 973 s temno prečrto", "proposal": "imenski pass del 2d-x2 lahko ime DODA (fill, ne POPRAVEK); v115 vrednost 973 ostaja"},
+    {"id": "F3", "finding": "notranja poravnava imenske vs. vrednostne kolone na p49 je odprto vprašanje: r3 črnilo-ime ≈ 'Dragasch Jose.[?]' (ujema r4 ime+haus), črnilo-klafter pa 11 (ujema r3); podobno r0 ime ≈ 'Arguzl dne.[?]' (≈ r1 'Raguzl Janez') ob klafterju 714 (= r0)", "proposal": "5-smerna poravnava (parzelle+klafter+haus+red+ime) na x16–x24 v del 2d-x2"}
+  ],
+  "ink_name_sequence_draft": {
+    "k0_r0": "Arguzl dne.[?] (v57: Leopold Gell) — razhajanje odprto",
+    "k1_r1": "Raguzl Janez.[?] (v57: Raguzl Janez) — soglasje-ish",
+    "k2_r2": "Heide Marko.[?] (v115: prazno ime) — preklicana vrstica",
+    "k3_r3": "Dragasch Jose.[?] / Dragash Jare. (v57: Hößle Marie h8, kl 11) — razhajanje",
+    "k4_r4": "Dolorlikh Manzfid.[?] RED (v57: Dragosch Josef h5 kl 591 / r5 Dolenc RED kl 1415) — poravnava odprta",
+    "k5_r5": "Lubreschitskh Mathy.[?] (v57: Lukasitsch Mathäus ×2 na r6/r7) — forma soglasje-ish",
+    "k6_r6": "Lubreschiltskh Mathy.[?] — kot k5",
+    "k7_r7": "Peodvin Groany.[?] (v57: Pessing Georg ×3 r8–r10)",
+    "k8_r8": "Peodvin Groany.[?] (kot k7)",
+    "k9_r9": "Peodvin Groany.[?] RED-linija (kot k7)",
+    "k10_r10": "Hunure Mathl.[?] (v57: Hößle Michel h10)",
+    "k11_r11": "Hunure Melli.[?] (v57: Hauser Michel h10)",
+    "k12_r12": "Kourtzly Marudim.[?] (v57: Kunzel[?] Schumacher h6)",
+    "k13_r13": "Novak Martlin. + 'Satzpl dne.' nota — dvovrstični zapis (v57: Mandl Andreas h5)",
+    "k14_r14": "Novak Martlin. h14 (v57: Lukasitsch Maria h7 / Hornak Andreas h14) — poravnava odprta",
+    "k15_r15": "Tallaßchibily Aue.[?] (v57: Feldkircher Carl h6)",
+    "k16_r16": "Novak? Martin + 'Krankzel dne.' — dvovrstični, 1. vrstica rdeče prečrtana (v57: Feldkircher Carl h5)",
+    "k17_r17": "Tallaßchiblget Aue.[?] (v57: Schaffhauser Carl h5/6)",
+    "k18_r18": "Novall? Martin + 'Krantzpl dne.' — dvovrstični (v57: Arnold Hermann h5)",
+    "k19_r19": "Albomi G̈ruben[?] — velika poteza + rdeče (v57: Arnold Hermann / Ploner Franzigen h14) — poravnava odprta",
+    "k20_r20": "PRAZNO (v57: — ; reg r20 Arnold/r21 Ploner) — brez črnila"
+  },
+  "note": "Imenska branja = ORIENTACIJA za del 2d-x2 (x16–x24 per-row pass s parzelle-oznakami), NE končana branja. Iskrenost §4: nič ne fabricirano, register nedotaknjen."
+}

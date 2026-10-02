@@ -4822,3 +4822,23 @@ Stage Summary:
 - TRANSCRIBED=0, nič ne dvignjeno; 2 odprti razhajanjı (p38-r15 nerešljiva beseda, p40-r12 ne-osebna poteza); 3 orientacijske napetosti zabeležene (h65 Ring vs PUA Widhann, h69 Krischan vs PUA Brandl, p41-r15 h32 vs h52-p43)
 - plasti: v114 244 / v115 2 / v118 60 / v119-names 485; K5 207; sha 745a9cdd (timestamp); TRANSCRIBED=0
 - Naslednje: val 119 del 2d = p44–p49 (126 diag že generiranih; riziko-tabele: p47 'Christan Mäthel'×10 vs PUA h.69 'Brandl') → del 2e p50–p55 → nato PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379
+
+---
+Task ID: 119-del2d-pre
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2d — PREDANALIZA)
+Task: ISSUE #72/#42 §4/§14 (griblje-museum) — val 119 del 2d: predanaliza imenskega passa PS p44–p49 (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija: peskovnik resetiran (repo izgubljen) → re-klon main @ 9be809d; worklog pokazal, da je del 2c (p38–p43) že mergan (PR #126, main @ c120620) — sejni povzetek (zastarel val 113) ponovno zavrnjen; dejansko nadaljevanje = del 2d (p44–p49)
+- Regenerirana infrastruktura od nič (staro /tmp izgubljeno): 266+ diag izrezkov (tall/zz/dz/kan/duo) + programska detekcija pravil/vertikalk
+- FONOMEN: "ista imena" na p44/p45/p49 → forenzika → REŠITEV: kolona "Nro. der Parzelle" (X 155–235) = natančen vrstični sidr; sekvence 821–840 / 841–860 / 861–880 / 881–901 / 901–921 / 921–941 direktno prebrane → mapiranje ink↔register DIREKTNO 1:1 na vseh 6 straneh; dominikalna napoved 1-e sub-agenta (list 134) POTRJENA; klafter/joche sekvence potrdijo (p49 r0 = "Aiba 2|714" = jae 2 + kl 714 ✓✓)
+- p49 strukturni dvoj-najdbi: (1) reg r21 "Ploner Franzigen" h14 = FANTOM (brez parcele, imenska celica PRAZNA, dno = Fürtrag); (2) reg r2 (v115 "preklicana, prazno ime", kl 973) = realna preklicana vrstica 923 z imenom+hausom v črnilu (≈"Heide Marko.[?]")
+- p44 popolno branje 20/20 (parzelle 821–840, klafter ✓): soglasja Schönig Peter r4 / Schönig Michael r10 / Heide Marko r3; pattern-fill pari v črnilu (Stallpschibek r14/r15, Hnall r8/r9, Ulrich r12/r13); POPRAVEK-kandidati (Deleshitzkh Manbgfuhd r0, Ulrich Miho/Gorgy r12/r13, Novak Martlin r17); 7 vrstic z nizko glyf-zavestjo → x40 kontrola v del 2d-x2
+- p49 notranja poravnava imenska-vs.-vrednostna kolona = odprto vprašanje (r3: ime≈r4, klafter=r3) → 5-smerna poravnava (parzelle+klafter+haus+red+ime) v del 2d-x2
+- ISKRENOST (§4): register.json NEDOTAKNJEN (0 sprememb), 0 VLM klicev, ni build/kaskade/testov; p45–p48 imenska branja namerno NISO zaključena (grid premiki + količina > seja-kontekst); branjе zapisana kot ORIENTACIJA/draft, ne končana branja
+- Dokumentacija: research-griblje/138 + KAZALO (vnos 138) + README 175. sklop; skripte detect-grid-v119d.py + make-kan-v119d.py; drafts band-v113/predanaliza-v119d/ (p44-names-draft.json + p49-structural-findings.json)
+
+Stage Summary:
+- Val 119 del 2d-PRE ZAKLJUČEN kot predanaliza (0 vgradnje): parzelle-sidr metodologija vzpostavljena in dokumentirana — vsa prihodnja imenska dela na PS p44+ naj začnejo s parzelle-detekcijo (list 138 §1)
+- p44 branje 20/20 + p49 strukturne najdbe + p49 imenska orientacija (21 vrstic) zapisani kot drafts
+- Naslednje: del 2d-x2 = (a) p45–p48 parzelle-anchored branja (80 vrstic), (b) p49 r13–r20 x16–x24 pass + 5-smerna poravnava, (c) p44 x40 kontrola 7 vrstic; šele nato build-register-v119-del2d.py + kaskada + PR
