@@ -16,14 +16,12 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-const ROOT = "/home/z/griblje-museum";
 const RG = "research-griblje";
 
-const readJSON = (p: string): any =>
-  JSON.parse(readFileSync(join(ROOT, p), "utf8"));
+const readJSON = (p: string): any => JSON.parse(readFileSync(p, "utf8"));
 
 const sha256 = (p: string): string =>
-  createHash("sha256").update(readFileSync(join(ROOT, p))).digest("hex");
+  createHash("sha256").update(readFileSync(p)).digest("hex");
 
 const REG = readJSON("research-griblje/ps-n83/register.json") as any[];
 const rowsOf = (pg: number) => REG.filter((r) => r.page === pg);
