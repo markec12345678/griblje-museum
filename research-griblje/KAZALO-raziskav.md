@@ -1,4 +1,6 @@
-# Spletna raziskava vsebin o Gribljah — KAZALO
+#138. **[138-val119-del2d-predanaliza-parzelle-sidr.md](./138-val119-del2d-predanaliza-parzelle-sidr.md)** — 175. sklop: val 119 del 2d (PREDANALIZA, 0 vgradnje) — **parzelle-sidr 821–941 potrjen čez p44–p49** (kolona "Nro. der Parzelle" = natančen vrstični sidr; direktno 1:1 mapiranje ink↔register na vseh 6 straneh; dominikalna napoved 1-e sub-agenta z listom 134 POTRJENA); **p49 strukturni dvoj-najdbi**: reg r21 "Ploner Franzigen" = FANTOM (brez parcele/črnila), reg r2 (v115 "prazno ime") = realna preklicana vrstica 923 z imenom+hausom v črnilu; p44 popolno branje 20/20 (par: Stallpschibek r14/r15, Hnall r8/r9, Ulrich r12/r13; soglasja: Schönig Peter r4, Schönig Michael r10, Heide Marko r3); p44–p49 v57 = pattern-fill/misread mix, notranja poravnava imenske vs. vrednostne kolone na p49 = odprto vprašanje (5-smerna poravnava za del 2d-x2); skripte detect-grid/make-kan v119d; iskrenost §4: register nedotaknjen, 0 VLM — zapis 138
+
+ Spletna raziskava vsebin o Gribljah — KAZALO
 *Za digitalni vaški muzej Griblje (Turistično društvo Griblje) · 16. 9. 2026*
 
 ## Dokumenti

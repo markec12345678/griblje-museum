@@ -35,11 +35,11 @@ describe("val 119 del 1 — gardele vhodov", () => {
     expect(CH.changes.length).toBe(99);
   });
 
-  test("reading_pass plasti: v119-names 485 (del 1+2a+2b+2c); v113 0; v114 365; v118-names 60; v115-insert 4; v86 1795", () => {
+  test("reading_pass plasti: v119-names 545 (del 1+2a+2b+2c+2d-x2); v113 0; v114 184; v118-names 60; v115-insert 2; v86 1795", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(485); // del 1 (120) + del 2a (120) + del 2b (122) + del 2c (p38-p43 = 123)
+    expect(n("v119-names")).toBe(545); // del 1 (120) + 2a (120) + 2b (122) + 2c (123) + 2d-x2 (p44-p46 = 60)
     expect(n("v113-ps-reread")).toBe(0);
-    expect(n("v114-ps-reread")).toBe(244); // val 119 del 2c: p38–p43 (122 v114 vrstic) -> v119-names
+    expect(n("v114-ps-reread")).toBe(184); // 244 − 60 (del 2d-x2: p44-p46 -> v119-names)
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(2); // val 119 del 2c: p40-r13 (v115) prebrana -> v119-names
     expect(n("v86-colonial-tiles")).toBe(1795);
@@ -160,7 +160,7 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
   test("TRANSCRIBED = 0; review_status nedotaknjen; 37 odprtih razhajanj z anmerkung (del 1: 28 + del 2a: 5 + del 2b: 2 + del 2c: 2)", () => {
     expect(REG.every((r) => r.review_status !== "TRANSCRIBED")).toBe(true);
     const withOpen = REG.filter((r) => String(r.anmerkung).includes("[v119 imenski pass: razhajanje odprto")).length;
-    expect(withOpen).toBe(37); // del 1: 28 + del 2a: 5 + del 2b: 2 + del 2c: 2 (p38-r15, p40-r12)
+    expect(withOpen).toBe(55); // del 1: 28 + 2a: 5 + 2b: 2 + 2c: 2 + 2d-x2: 18 (p44-p46)
   });
 
   test("normalizacija: 'Christian' črnilo -> 'Christan' register (val 118 precedens); 'Kristan' K-napaka popravljenja", () => {
@@ -171,8 +171,8 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha 745a9cdd raznesen; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^745a9cdd/);
+  test("KG sha b660c0d1 raznesen; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^b660c0d1/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];

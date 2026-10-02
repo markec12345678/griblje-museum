@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "val": 119,
+    "del": "2d-x2",
+    "page": 48,
+    "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+    "method": "parzelle-sidr 901–921 (kan3 X150–620, top0=171.2/step 38.85, samonaznane vrstice); trio-ritem kot p47 (Krischan h3/h69 + Stabelz h2 + Schimelbeck h1 + Gemeinde h0); medstranski preseki: Heide Marko h3, Dragasch Jure h1, Deleshitzkh Marßfid h1, Lubreschibek h12, Tallafschily h6",
+    "register_rows": 21,
+    "vlm_calls": 0,
+    "diag_generated": [
+      "kan3-p48-seg0..2 (x4, parzelle-sidr)"
+    ],
+    "note": "r2 = v115 vstavljena vrstica ('Schmipa[?]') — sidr ujema črnilovrstico 903 ('Krischan Matthe' h3): ime+haus se dopolnita (fill); r20 (parzella 921) = črnilo PRAZNO, v114 'Schöffpoltzy Joan' brez glyfne podlage (anm, ohranjeno); rep p48 register (r12–r19) je v v114 branju zamaknjen — sidr popravlja",
+    "status": "DRAFT — NI vgradnje (protokol 139): register row-alignment p47-p49 je lokalno zamenjan (v114 imenska in vrednostna plast drugače zamaknjeni); potreben del 2d-x3 celoviti re-read (ime+vrednost skupaj, dvojni parzelle-sidr)",
+    "register_rows_mapping": "NEUREJENA — glej protokol 139 §2"
+  },
+  "names_audit": {
+    "r0": {
+      "seen_haus": "2",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "2",
+      "old_name": "Weidner Mathä.",
+      "verdict": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe. (trio-ritem cf p47; forma ×10)"
+    },
+    "r1": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "3",
+      "old_name": "Weidner Mathä.",
+      "verdict": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe. (par)"
+    },
+    "r2": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "",
+      "old_name": "Schmipa[?]",
+      "verdict": "ime POPRAVEK Schmipa[?] -> Krischan Matthe. (v115 vstavljena vrstica = črnilovrstica 903; fill); haus POPRAVEK '' -> 3 (cross-val Krischan h3 ×5)"
+    },
+    "r3": {
+      "seen_haus": "2",
+      "seen_name": "Stabelz Swan.[?]",
+      "old_haus": "3",
+      "old_name": "Weidner Mathä.",
+      "verdict": "ime POPRAVEK Weidner Mathä. -> Stabelz Swan.[?] (Stabelz trio r3/r4/r8); haus POPRAVEK 3 -> 2 (cross-val p47-r5/r11/r13 register h2)"
+    },
+    "r4": {
+      "seen_haus": "2",
+      "seen_name": "Stabelz Swan.[?]",
+      "old_haus": "2",
+      "old_name": "Hölby Joan",
+      "verdict": "ime POPRAVEK Hölby Joan -> Stabelz Swan.[?] (par z r3)"
+    },
+    "r5": {
+      "seen_haus": "1",
+      "seen_name": "Schimilbeck Matthe.[?]",
+      "old_haus": "2",
+      "old_name": "Hölby Joan",
+      "verdict": "ime POPRAVEK Hölby Joan -> Schimilbeck Matthe.[?] (Schim- trio r5/r6/r9); haus POPRAVEK 2 -> 1 (cross-val p47 r7/r10/r12)"
+    },
+    "r6": {
+      "seen_haus": "1",
+      "seen_name": "Schimelbeck Matthe.[?]",
+      "old_haus": "1",
+      "old_name": "Schimeck mathä.",
+      "verdict": "ime POPRAVEK Schimeck mathä. -> Schimelbeck Matthe.[?] (forma -lbeck; par z r5)"
+    },
+    "r7": {
+      "seen_haus": "0",
+      "seen_name": "Gemeinde.",
+      "old_haus": "1",
+      "old_name": "Schimeck mathä.",
+      "verdict": "ime POPRAVEK Schimeck mathä. -> Gemeinde. (jasni zapis; cf p47-r15); haus POPRAVEK 1 -> 0 (Gemeinde h0 cross-val p47-r15 register)"
+    },
+    "r8": {
+      "seen_haus": "2",
+      "seen_name": "Stabelz Swan.[?]",
+      "old_haus": "6",
+      "old_name": "Tomcitsch",
+      "verdict": "ime POPRAVEK Tomcitsch -> Stabelz Swan.[?] (trio); haus POPRAVEK 6 -> 2"
+    },
+    "r9": {
+      "seen_haus": "1",
+      "seen_name": "Schimilbeck Swan.[?]",
+      "old_haus": "2",
+      "old_name": "Hölby Joan",
+      "verdict": "ime POPRAVEK Hölby Joan -> Schimilbeck Swan.[?] (trio; 2. beseda Swan cf p47-r13/r17); haus POPRAVEK 2 -> 1"
+    },
+    "r10": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "1",
+      "old_name": "Schimeck Joan",
+      "verdict": "ime POPRAVEK Schimeck Joan -> Krischan Matthe.; haus POPRAVEK 1 -> 3 (cross-val r1/r2)"
+    },
+    "r11": {
+      "seen_haus": "6",
+      "seen_name": "Peving Mcundo.[?]",
+      "old_haus": "3",
+      "old_name": "Weidner Mathä.",
+      "verdict": "razhajanje odprto — črnilo ~'Peving Mcundo.[?]' (zelo nizka zavest), h črnilo ~6[?] (6/65 dvom) vs 3; v114 ohranjeno"
+    },
+    "r12": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "63",
+      "old_name": "Preuing Wenzela",
+      "verdict": "ime POPRAVEK Preuing Wenzela -> Krischan Matthe.; haus POPRAVEK 63 -> 3 (cross-val r1/r2/r10; v114 '63' = zamik repa)"
+    },
+    "r13": {
+      "seen_haus": "69",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "0",
+      "old_name": "Weidner Mathä.",
+      "verdict": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe.; haus POPRAVEK 0 -> 69 (cross-val p47 r1/r2/r4/r14/r15)"
+    },
+    "r14": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "69",
+      "old_name": "Weidner Mathä.",
+      "verdict": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe.; haus POPRAVEK 69 -> 3 (cross-val r1/r2/r10/r12)"
+    },
+    "r15": {
+      "seen_haus": "1",
+      "seen_name": "Deleshitzkh Marßfid.[?]",
+      "old_haus": "0",
+      "old_name": "Hudashan mathä.",
+      "verdict": "ime POPRAVEK Hudashan mathä. -> Deleshitzkh Marßfid.[?] (forma ×5); haus POPRAVEK 0 -> 1 (cross-val p44-r0, p45-r8, p46-r11/r12 — Deleshitzkh h1 črnilo vsaclih)"
+    },
+    "r16": {
+      "seen_haus": "12",
+      "seen_name": "Lubreschibek Maathe.[?]",
+      "old_haus": "4",
+      "old_name": "Deierlthaler Matz",
+      "verdict": "ime POPRAVEK Deierlthaler Matz -> Lubreschibek Maathe.[?] (forma ×9); haus POPRAVEK 4 -> 12 (cross-val Lubreschibek h12: p45-r2/r7, p46-r6, p49-r5/r6)"
+    },
+    "r17": {
+      "seen_haus": "1",
+      "seen_name": "Dragasch Jure.",
+      "old_haus": "12",
+      "old_name": "Schimeck mathä.",
+      "verdict": "ime POPRAVEK Schimeck mathä. -> Dragasch Jure. (forma ×5); haus POPRAVEK 12 -> 1 (črnilo '1/1' jasno; cf p45-r4 h~1)"
+    },
+    "r18": {
+      "seen_haus": "3",
+      "seen_name": "Heide Marko.",
+      "old_haus": "6",
+      "old_name": "Pragard Joan",
+      "verdict": "ime POPRAVEK Pragard Joan -> Heide Marko. (forma ×5); haus POPRAVEK 6 -> 3 (Heide Marko h3 cross-val ×5)"
+    },
+    "r19": {
+      "seen_haus": "6",
+      "seen_name": "Tallafschily Swan.[?]",
+      "old_haus": "8",
+      "old_name": "Pericla Matho.",
+      "verdict": "ime POPRAVEK Pericla Matho. -> Tallafschily Swan.[?] (cf p47-r17); haus POPRAVEK 8 -> 6 (cross-val p47-r17 črnilo h6)"
+    },
+    "r20": {
+      "seen_haus": "",
+      "seen_name": "",
+      "old_haus": "C",
+      "old_name": "Schöffpoltzy Joan",
+      "verdict": "razhajanje odprto — črnilovrstna celica parzelle 921 je PRAZNA; v114 'Schöffpoltzy Joan' h'C' brez glyfne podlage (morda prepis s sosednje vrstice); anmerkung + flag, vsebina ohranjena (precedens p34-r20/p40-r12)"
+    }
+  }
+}

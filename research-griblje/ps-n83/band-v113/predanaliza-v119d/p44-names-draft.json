@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "val": 119, "del": "2d-pre", "page": 44,
+    "status": "PREDANALIZA — draft, NI vgradnje (protokol 138 §5)",
+    "method": "agentov vid glavne seje, 0 VLM; parzelle-sidr 821–840 (list 138 §1); zz x22 + dz x32 izrezki; klafter ✓ (492/427/440/497…)",
+    "register_rows": 20, "vlm_calls": 0,
+    "note": "v57 p44 = mešanica pravilnih branj + pattern-fill parov; 7 vrstic z nizko glyf-zavestjo potrebuje x40 kontrolo pred vgradnjo"
+  },
+  "names_audit": {
+    "r0":  {"seen_name": "Deleshitzkh Manbgfuhd.[?]", "old_name": "De Costil de Malfis", "parzelle": 821, "confidence": "low", "verdict": "POPRAVEK-kandidat — x40 kontrola pred vgradnjo"},
+    "r1":  {"seen_name": "Lahfemibek Mathe.[?]", "old_name": "Lahfenitsch (Müller)", "parzelle": 822, "confidence": "medium", "verdict": "POPRAVEK-kandidat (forma ≈ r16/r18 družina)"},
+    "r2":  {"seen_name": "Dragash Sure./Jure", "old_name": "Dragasch (Jure)", "parzelle": 823, "confidence": "medium-high", "verdict": "soglasje-ish (forma)"},
+    "r3":  {"seen_name": "Heide Marko.", "old_name": "Hödle (Marko)", "parzelle": 824, "confidence": "high", "verdict": "soglasje (Hö/Hei glyf x16)"},
+    "r4":  {"seen_name": "Schönig Peter.", "old_name": "Schönig (Peter)", "parzelle": 825, "confidence": "high", "verdict": "SOGJASJE"},
+    "r5":  {"seen_name": "Lapmanig Michl.[?]", "old_name": "Leppanig (Michl)", "parzelle": 826, "confidence": "medium", "verdict": "soglasje-ish"},
+    "r6":  {"seen_name": "Bauqing Joan.[?]", "old_name": "Bau Prug (Joan)", "parzelle": 827, "confidence": "medium", "verdict": "razhajanje-kandidat (ena beseda v črnilu)"},
+    "r7":  {"seen_name": "Schimek Peter.[?]", "old_name": "Schönig (Peter)", "parzelle": 828, "confidence": "medium", "verdict": "pozor: parzelle 828 RED v črnilu + v114 rdeče anm na r7 — preveriti soisnost"},
+    "r8":  {"seen_name": "Hnall Miho.[?]", "old_name": "Hödle (Michl)", "parzelle": 829, "confidence": "low", "verdict": "razhajanje-kandidat (x40)"},
+    "r9":  {"seen_name": "Hnall Thomas.[?]", "old_name": "Stelby (Thomas)", "parzelle": 830, "confidence": "low", "verdict": "razhajanje-kandidat (isti priimek kot r8 — par)"},
+    "r10": {"seen_name": "Schönig Micha.", "old_name": "Schönig (Michael)", "parzelle": 831, "confidence": "high", "verdict": "soglasje"},
+    "r11": {"seen_name": "Schönig Smon.[?]", "old_name": "Schönig (Simon)", "parzelle": 832, "confidence": "medium-high", "verdict": "soglasje-ish"},
+    "r12": {"seen_name": "Ulrich Miho.", "old_name": "Urbas (Michl)", "parzelle": 833, "confidence": "medium-high", "verdict": "POPRAVEK-kandidat (Ulrich-glyf = p41/p43 h68 forma)"},
+    "r13": {"seen_name": "Ulrich Gorgy.[?]", "old_name": "Puch (Gregor)", "parzelle": 834, "confidence": "medium", "verdict": "POPRAVEK-kandidat (Gorgy = val 118 forma)"},
+    "r14": {"seen_name": "Stallpschibek Mathy.[?]", "old_name": "Stelbpfennich (Mathey)", "parzelle": 835, "confidence": "medium", "verdict": "POPRAVEK-kandidat (-schibek ≠ -pfennich)"},
+    "r15": {"seen_name": "Stallpschibek Wilhelmy.[?]", "old_name": "Lahfenitsch (Wolfgang)", "parzelle": 836, "confidence": "low-medium", "verdict": "POPRAVEK-kandidat (isti priimek kot r14 — par)"},
+    "r16": {"seen_name": "Lahfemibek Drastho.[?]", "old_name": "Lahfenitsch (Georg)", "parzelle": 837, "confidence": "low", "verdict": "dvom (druga beseda)"},
+    "r17": {"seen_name": "Novak Martlin.", "old_name": "Novak (Daniel)", "parzelle": 838, "confidence": "medium", "verdict": "POPRAVEK-kandidat (firstname cf. p49 Novak/Hornak Martlin)"},
+    "r18": {"seen_name": "Lahfemibek Omathe.[?]", "old_name": "Lahfenitsch (Andreas)", "parzelle": 839, "confidence": "low", "verdict": "dvom"},
+    "r19": {"seen_name": "Frowly al Sne.[?]", "old_name": "Dragasch (Jurij)", "parzelle": 840, "confidence": "very low", "verdict": "razhajanje-kandidat (x40 + dvovrstični format)"}
+  }
+}

@@ -4822,3 +4822,44 @@ Stage Summary:
 - TRANSCRIBED=0, nič ne dvignjeno; 2 odprti razhajanjı (p38-r15 nerešljiva beseda, p40-r12 ne-osebna poteza); 3 orientacijske napetosti zabeležene (h65 Ring vs PUA Widhann, h69 Krischan vs PUA Brandl, p41-r15 h32 vs h52-p43)
 - plasti: v114 244 / v115 2 / v118 60 / v119-names 485; K5 207; sha 745a9cdd (timestamp); TRANSCRIBED=0
 - Naslednje: val 119 del 2d = p44–p49 (126 diag že generiranih; riziko-tabele: p47 'Christan Mäthel'×10 vs PUA h.69 'Brandl') → del 2e p50–p55 → nato PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379
+
+---
+Task ID: 119-del2d-pre
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2d — PREDANALIZA)
+Task: ISSUE #72/#42 §4/§14 (griblje-museum) — val 119 del 2d: predanaliza imenskega passa PS p44–p49 (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija: peskovnik resetiran (repo izgubljen) → re-klon main @ 9be809d; worklog pokazal, da je del 2c (p38–p43) že mergan (PR #126, main @ c120620) — sejni povzetek (zastarel val 113) ponovno zavrnjen; dejansko nadaljevanje = del 2d (p44–p49)
+- Regenerirana infrastruktura od nič (staro /tmp izgubljeno): 266+ diag izrezkov (tall/zz/dz/kan/duo) + programska detekcija pravil/vertikalk
+- FONOMEN: "ista imena" na p44/p45/p49 → forenzika → REŠITEV: kolona "Nro. der Parzelle" (X 155–235) = natančen vrstični sidr; sekvence 821–840 / 841–860 / 861–880 / 881–901 / 901–921 / 921–941 direktno prebrane → mapiranje ink↔register DIREKTNO 1:1 na vseh 6 straneh; dominikalna napoved 1-e sub-agenta (list 134) POTRJENA; klafter/joche sekvence potrdijo (p49 r0 = "Aiba 2|714" = jae 2 + kl 714 ✓✓)
+- p49 strukturni dvoj-najdbi: (1) reg r21 "Ploner Franzigen" h14 = FANTOM (brez parcele, imenska celica PRAZNA, dno = Fürtrag); (2) reg r2 (v115 "preklicana, prazno ime", kl 973) = realna preklicana vrstica 923 z imenom+hausom v črnilu (≈"Heide Marko.[?]")
+- p44 popolno branje 20/20 (parzelle 821–840, klafter ✓): soglasja Schönig Peter r4 / Schönig Michael r10 / Heide Marko r3; pattern-fill pari v črnilu (Stallpschibek r14/r15, Hnall r8/r9, Ulrich r12/r13); POPRAVEK-kandidati (Deleshitzkh Manbgfuhd r0, Ulrich Miho/Gorgy r12/r13, Novak Martlin r17); 7 vrstic z nizko glyf-zavestjo → x40 kontrola v del 2d-x2
+- p49 notranja poravnava imenska-vs.-vrednostna kolona = odprto vprašanje (r3: ime≈r4, klafter=r3) → 5-smerna poravnava (parzelle+klafter+haus+red+ime) v del 2d-x2
+- ISKRENOST (§4): register.json NEDOTAKNJEN (0 sprememb), 0 VLM klicev, ni build/kaskade/testov; p45–p48 imenska branja namerno NISO zaključena (grid premiki + količina > seja-kontekst); branjе zapisana kot ORIENTACIJA/draft, ne končana branja
+- Dokumentacija: research-griblje/138 + KAZALO (vnos 138) + README 175. sklop; skripte detect-grid-v119d.py + make-kan-v119d.py; drafts band-v113/predanaliza-v119d/ (p44-names-draft.json + p49-structural-findings.json)
+
+Stage Summary:
+- Val 119 del 2d-PRE ZAKLJUČEN kot predanaliza (0 vgradnje): parzelle-sidr metodologija vzpostavljena in dokumentirana — vsa prihodnja imenska dela na PS p44+ naj začnejo s parzelle-detekcijo (list 138 §1)
+- p44 branje 20/20 + p49 strukturne najdbe + p49 imenska orientacija (21 vrstic) zapisani kot drafts
+- Naslednje: del 2d-x2 = (a) p45–p48 parzelle-anchored branja (80 vrstic), (b) p49 r13–r20 x16–x24 pass + 5-smerna poravnava, (c) p44 x40 kontrola 7 vrstic; šele nato build-register-v119-del2d.py + kaskada + PR
+
+---
+Task ID: 119-del2d-x2
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2d-x2)
+Task: griblje-museum — val 119 del 2d-x2: parzelle-sidr imenski pass PS p44–p49 (user: "nadaljuj"; nadaljevanje po blokadi push — žeton še vedno ni na voljo, delo lokalno)
+
+Work Log:
+- REKON: del 2d-pre @ c775f06 (neporinan); push še vedno blokiran (brez žetona) → izvedba del 2d-x2 lokalno po protokolu 138 §6
+- GRID FIX: kan2 markerji zdrsnili (+1/+2 vrstica) → make-kan3-v119d-x2.py z anchored top0 (p44 167.2, p45 180.2, p46 167.1, p47 170.5 popravljeno iz 209, p48 171.2, p49 202.0 popravljeno iz 172.2 — findings-170.5 je bil +1 zamaknjen); vsaka vrstica v izrezku samonaznana s parzelle-cifro (X150–620); p44/p49 overview-ruler kalibracija (1255×1024 spread!)
+- Branja 123 vrstic (p44–p49, 0 VLM): Deleshitzkh Marßfid ×5 (Enotna forma čez strani — 'Manbgfuhd' iz drafta = misread), Lubreschibek ×9, Tallafschibek ×8, Novak Martlin ×6, Heide Marko ×5 h3, Dragasch Jure ×5, Peodvin ×7 h11, Huischan/Krischan, Schimick/Schimek Peter h18 par, Schimek Micha h49 (cross-val del 2c), Ulrich h68, Tillach h61, Krischan h62/63, Gemeinde h0 ×2 jasno, tall-check x5 + zz x30/x40 kontrole (7 vrstic p44)
+- F2 POTRJEN: p49 preklicana 923 = 'Heide Marko.' h3 (kl 973 prečrtan); F1 POTRJEN: parzelle-sekvenca se konča pri 940 (941 PRAZNO)
+- NOVO F-NA-01: p47–p49 register row-alignment LOKALNO ZAMENJAN (v114 imenska plast od r5 swap/shift; klafter-dokazi: reg r15 kl975 ↔ črnilo 934, r16 kl556 ↔ 935, r18 kl606 ↔ 937 → shift −2 v repu; medstranska poravnava = F3 odprta) → p47–p49 vgradnja USTAVLJENA (name-only bi paril prava imena s tujimi vrednostmi); readings = DRAFT (reading-v119d/p{47,48,49}.json, meta.status)
+- VGRADNJA p44–p46: build-register-v119-del2d.py (guardi 2875/139/1795/244/2/60/485/207) → 47 owner + 3 haus (p44-r10 '1/14'→'1/49', p44-r17 '1/4'→'1/14', p45-r5 '2'→'3') + 18 anmerkung; v119-names 485→545, v114 244→184, razhajanja 37→55
+- Kaskada izrecna: c4-metrika + KG + story-graph + timeline + coverage — KG vsebina IDENTIČNA (3269/3477/2427/2773; sha 745a9cdd→b660c0d1 = timestamp-only), K5 207, K9 69
+- Testi: nov val119-del2d (8) + pini v 17 datotekah (sha ×13, plasti ×6, razhajanja ×3); 1167 pass / 0 realnih fail (7 skip-error = peskovnik brez node_modules); lint čist
+- Docs: protokol 139 + KAZALO 139 + README 176. sklop + worklog; skripti make-kan3-v119d-x2 + make-zoom-v119d-x2 (regenerabilno)
+- BLOKADA (še vedno): `git push` brez GitHub žetona — commit lokalno, PR/CI/merge ko žeton pride
+
+Stage Summary:
+- Del 2d-x2 KONČAN lokalno: p44–p46 vgrajeni (60 vrstic), p47–p49 temeljito prebrani ampak drvani v DRAFT zaradi F-NA-01 (register row-alignment)
+- Naslednje (del 2d-x3): celoviti re-read p47–p49 z DVOJNIM sidrom (ime+vrednost skupaj) → popravek obeh plasti + fantomi; nato del 2e (p50–p55); push/PR ko žeton pride

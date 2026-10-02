@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "val": 119, "del": "2d-x2", "page": 45,
+    "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+    "method": "parzelle-sidr 841–860 (kan3 X150–620, top0=180.2/step 38.85, vsaka vrstica samonaznana); medstranski preseki: Deleshitzkh Marßfid ×5, Lubreschibek ×9, Novak Martlin/Michael, Heide Marko, Dragasch Jure, Peodvin Grany, Huischan Matthe (par 858/859 rdeče prečrtani)",
+    "register_rows": 20, "vlm_calls": 0,
+    "diag_generated": ["kan3-p45-seg0..2 (x4, parzelle-sidr)"],
+    "note": "v114 p45 imena ('Stefflpeckh', 'Lukaschitsch', 'Pöbalkitsch'…) = realni poskusi brez sidra, vendar sistematicno odstopajo od sidr-anchored branja; 858+859 rdeče prečrtane parzelle (protokol 138 §1) potrjene; r10/r15 = prečrtan 2. besedi + korekcija"
+  },
+  "names_audit": {
+    "r0":  {"seen_haus": "6",  "seen_name": "Tallapeschibek Dras.[?]",        "old_haus": "6",  "old_name": "Stefflpeckh Joh. Jos.",   "verdict": "ime POPRAVEK Stefflpeckh Joh. Jos. -> Tallapeschibek Dras.[?] (Tallapeschibek forma; 2. beseda dvom)"},
+    "r1":  {"seen_haus": "13", "seen_name": "Tallafschibek Napl. Nübeg.[?]",  "old_haus": "10", "old_name": "Stefflpeckh Agath. Wilh.","verdict": "razhajanje odprto — črnilo ~'Tallafschibek Napl. Nübeg.[?]' (dvobesedni 2. del, nizka zavest), h črnilo ~13 vs 10; v114 ohranjeno"},
+    "r2":  {"seen_haus": "12", "seen_name": "Lubreschibek Maathe.[?]",        "old_haus": "12", "old_name": "Lukaschitsch Andre.",     "verdict": "ime POPRAVEK Lukaschitsch Andre. -> Lubreschibek Maathe.[?] (trio z r7/r12; forma cf p49-r5/r6)"},
+    "r3":  {"seen_haus": "1",  "seen_name": "Deleshitzkh Außin.[?]",          "old_haus": "1",  "old_name": "Pöbalkitsch Wolfp.",      "verdict": "ime POPRAVEK Pöbalkitsch Wolfp. -> Deleshitzkh Außin.[?] (Deleshitzkh forma; 2. beseda dvom; Wohnort 'Dragasch')"},
+    "r4":  {"seen_haus": "3",  "seen_name": "Dragasch Jure.",                 "old_haus": "3",  "old_name": "Dragosch Georg",          "verdict": "ime POPRAVEK Dragosch Georg -> Dragasch Jure. (forma ×5: p44-r2, p46?, p48-r17, p49-r1/r3; h črnilo ~1[?] vs 3 — v114 ohranjeno, glyf i/3)"},
+    "r5":  {"seen_haus": "3",  "seen_name": "Heide Marko.",                   "old_haus": "2",  "old_name": "Heideri Anna",            "verdict": "ime POPRAVEK Heideri Anna -> Heide Marko. (Heide Marko forma ×5); haus POPRAVEK 2 -> 3 (cross-val: Heide Marko h3 = p44-r3, p46-r7..r10 črnilo + register)"},
+    "r6":  {"seen_haus": "6",  "seen_name": "Dragasch Jure.",                 "old_haus": "8",  "old_name": "Snagatsch Georg",         "verdict": "ime POPRAVEK Snagatsch Georg -> Dragasch Jure. (par z r4); razhajanje odprto pri haus: črnilo ~6 vs 8, v114 ohranjeno"},
+    "r7":  {"seen_haus": "12", "seen_name": "Lubreschibek Maathe.[?]",        "old_haus": "12", "old_name": "Lukaschitsch Andre.",     "verdict": "ime POPRAVEK Lukaschitsch Andre. -> Lubreschibek Maathe.[?] (par z r2)"},
+    "r8":  {"seen_haus": "1",  "seen_name": "Deleshitzkh Marßfid.[?]",        "old_haus": "1",  "old_name": "Pöbalkitsch Wolfp.",      "verdict": "ime POPRAVEK Pöbalkitsch Wolfp. -> Deleshitzkh Marßfid.[?] (forma ×5, cf p44-r0)"},
+    "r9":  {"seen_haus": "5",  "seen_name": "Staubyl Sraw.[?]",               "old_haus": "6",  "old_name": "Leutnerl Eva",            "verdict": "razhajanje odprto — črnilo ~'Staubyl Sraw.[?]' (2. beseda dvom; cf p47 'Stabelz Soan' forme), h črnilo ~5 vs 6; v114 ohranjeno"},
+    "r10": {"seen_haus": "6",  "seen_name": "Tallapechily Gromy.[?]",         "old_haus": "6",  "old_name": "Ottopoldt Georg",         "verdict": "razhajanje odprto — črnilo ~'Tallapechily Gromy.[?]' (2. beseda prečrtana + medvrstična korekcija), v114 ohranjeno"},
+    "r11": {"seen_haus": "4",  "seen_name": "Novak Martlin.",                 "old_haus": "4",  "old_name": "Wunsch Marlin",           "verdict": "ime POPRAVEK Wunsch Marlin -> Novak Martlin. (forma ×6: p44-r17, p49-r12/r14; N vs W glyf)"},
+    "r12": {"seen_haus": "4",  "seen_name": "Lubreschibek Maathe.[?]",        "old_haus": "7",  "old_name": "Lukaschitsch Andre.",     "verdict": "ime POPRAVEK Lukaschitsch Andre. -> Lubreschibek Maathe.[?] (trio z r2/r7); razhajanje odprto pri haus: črnilo ~4[?] (y-glyf) vs 7, v114 ohranjeno"},
+    "r13": {"seen_haus": "0",  "seen_name": "Gemeinwisen.[?]",                "old_haus": "9",  "old_name": "Gummersbach",             "verdict": "razhajanje odprto — črnilo ~'Gemeinwisen.[?]' = 'Gemeinde[?]' (cf p47-r15 jasni 'Gemeinde.', p46-r19), h črnilo ~0[?] vs 9; v114 ohranjeno"},
+    "r14": {"seen_haus": "10", "seen_name": "Novak Michael.",                 "old_haus": "10", "old_name": "Wunsch Michael",          "verdict": "ime POPRAVEK Wunsch Michael -> Novak Michael. (cf p46-r2 'Novak Michael' h10 — ista forma+hiša)"},
+    "r15": {"seen_haus": "6",  "seen_name": "Tallapechily Gromy.[?]",         "old_haus": "6",  "old_name": "Stefflpeckh Georg",       "verdict": "razhajanje odprto — črnilo ~'Tallapechily Gromy.[?]' (2. beseda prečrtana + rdeči krog), par z r10; v114 ohranjeno"},
+    "r16": {"seen_haus": "11", "seen_name": "Peodvin Grany.",                 "old_haus": "11", "old_name": "Peinig Gregor.",          "verdict": "ime POPRAVEK Peinig Gregor. -> Peodvin Grany. (forma ×7: p46 ×4, p49 ×3)"},
+    "r17": {"seen_haus": "3",  "seen_name": "Huischan Matthe.[?]",            "old_haus": "3",  "old_name": "Olschewski Mathäus",      "verdict": "razhajanje odprto — črnilo ~'Huischan Matthe.[?]' (Huischan/Krischan forma cf p46-r15..r18), parzella 858 rdeče prečrtana; v114 ohranjeno"},
+    "r18": {"seen_haus": "69", "seen_name": "Huischan Matthe.[?]",            "old_haus": "69", "old_name": "Hirschegger Walburg",     "verdict": "razhajanje odprto — črnilo ~'Huischan Matthe.[?]', parzella 859 rdeče prečrtana; v114 ohranjeno"},
+    "r19": {"seen_haus": "69", "seen_name": "Huischan Matthe.[?]",            "old_haus": "69", "old_name": "Linden matte",            "verdict": "razhajanje odprto — črnilo ~'Huischan Matthe.[?]' (9-glyf z zanko), h 69 ✓; v114 ohranjeno"}
+  }
+}

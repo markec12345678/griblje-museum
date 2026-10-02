@@ -1,0 +1,640 @@
+{
+ "val": "119-del2d",
+ "stats": {
+  "owner_fixes": 47,
+  "haus_fixes": 3,
+  "anmerkung_adds": 18,
+  "open_discrepancies": 18,
+  "pages_covered": [
+   "p44",
+   "p45",
+   "p46"
+  ],
+  "rows_covered": 60
+ },
+ "changes": [
+  {
+   "index": 831,
+   "page": 44,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "De Costil de Malfis",
+   "new": "Deleshitzkh Marßfid.[?]",
+   "note": "ime POPRAVEK De Costil de Malfis -> Deleshitzkh Marßfid.[?] (forma ×5: p45-r8, p46-r11/r12, p48-r15, p49-r4; x40 w1 kontrola: D-e-l-e-s-h-i-t-(z)-k-h + Marßfid)"
+  },
+  {
+   "index": 832,
+   "page": 44,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lahfenitsch (Müller)",
+   "new": "Lubreschibek Maathe.[?]",
+   "note": "ime POPRAVEK Lahfenitsch (Müller) -> Lubreschibek Maathe.[?] (Lubreschibek forma ×9 čez p44–p49; cf p49-r5/r6 'Lubreschitskh')"
+  },
+  {
+   "index": 834,
+   "page": 44,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hödle (Marko)",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK Hödle (Marko) -> Heide Marko. (Heide forma ×5: p45-r5, p46-r7..r10; glyf e-i jasno)"
+  },
+  {
+   "index": 835,
+   "page": 44,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönig (Peter)",
+   "new": "Schimick Peter.[?]",
+   "note": "ime POPRAVEK Schönig (Peter) -> Schimick Peter.[?] (par z r7 'Schimek Peter' h18; Schim- forma, cf h49 Schimetz del 2c)"
+  },
+  {
+   "index": 837,
+   "page": 44,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Bau Prug (Joan)",
+   "new": "Peodvin Swan.[?]",
+   "note": "ime POPRAVEK Bau Prug (Joan) -> Peodvin Swan.[?] (Peodvin forma ×7; 'Swan' cf p47-r17/p48-r19); razhajanje odprto pri haus: črnilo ~59[?] vs 53 (9/3 glyf-dvom), v114 ohranjeno"
+  },
+  {
+   "index": 837,
+   "page": 44,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Peodvin Swan.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 838,
+   "page": 44,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönig (Peter)",
+   "new": "Schimek Peter.",
+   "note": "ime POPRAVEK Schönig (Peter) -> Schimek Peter. (par z r4; parzella 828 rdeče prečrtana = preklicana vrstica — flag, vsebina ohranjena; v114 anm 'Dorfgerichte [rot]' ostaja)"
+  },
+  {
+   "index": 839,
+   "page": 44,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hödle (Michl)",
+   "new": "Hnall Miho.",
+   "note": "ime POPRAVEK Hödle (Michl) -> Hnall Miho. (par z r9; x30 kontrola); razhajanje odprto pri haus: črnilo ~15 (oranžna pega) vs 18, v114 ohranjeno"
+  },
+  {
+   "index": 839,
+   "page": 44,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Hnall Miho.\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 840,
+   "page": 44,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stelby (Thomas)",
+   "new": "Hnall Scomne.[?]",
+   "note": "ime POPRAVEK Stelby (Thomas) -> Hnall Scomne.[?] (par z r8 'Hnall'; 2. beseda glyf-dvom Scomne/Scamme, x30 kontrola)"
+  },
+  {
+   "index": 841,
+   "page": 44,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schönig (Michael)",
+   "new": "Schimek Micha.[?]",
+   "note": "ime POPRAVEK Schönig (Michael) -> Schimek Micha.[?]; haus POPRAVEK 1 / 14 -> 1 / 49 (cross-val del 2c: h49 = Schimetz Michael ×3 presek, 4-glyf pravilo '49' — ista oseba/hiša)"
+  },
+  {
+   "index": 841,
+   "page": 44,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 14",
+   "new": "1 / 49",
+   "note": "ime POPRAVEK Schönig (Michael) -> Schimek Micha.[?]; haus POPRAVEK 1 / 14 -> 1 / 49 (cross-val del 2c: h49 = Schimetz Michael ×3 presek, 4-glyf pravilo '49' — ista oseba/hiša)"
+  },
+  {
+   "index": 842,
+   "page": 44,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Schimay Swan.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 843,
+   "page": 44,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Urbas (Michl)",
+   "new": "Ulrich Miho.",
+   "note": "ime POPRAVEK Urbas (Michl) -> Ulrich Miho. (Ulrich-glyf = p41/p43 h68 Ulrich forma, del 2c cross-val)"
+  },
+  {
+   "index": 844,
+   "page": 44,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Puch (Gregor)",
+   "new": "Ulrich Grany.[?]",
+   "note": "ime POPRAVEK Puch (Gregor) -> Ulrich Grany.[?] (Ulrich par z r12; 2. beseda Grany/Gorgy cf val 118 forma)"
+  },
+  {
+   "index": 845,
+   "page": 44,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stelbpfennich (Mathey)",
+   "new": "Tallafschibek Nübelz.[?]",
+   "note": "ime POPRAVEK Stelbpfennich (Mathey) -> Tallafschibek Nübelz.[?] (Tallafschibek forma ×8, par z r15); razhajanje odprto pri haus: črnilo ~13 vs 19 (3/9 glyf-dvom), v114 ohranjeno"
+  },
+  {
+   "index": 845,
+   "page": 44,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Tallafschibek Nübelz.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 846,
+   "page": 44,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lahfenitsch (Wolfgang)",
+   "new": "Tallafschibek Nicholay.[?]",
+   "note": "ime POPRAVEK Lahfenitsch (Wolfgang) -> Tallafschibek Nicholay.[?] (x30 kontrola: N-i-k-o-l-a-y jasno; par z r14 h13)"
+  },
+  {
+   "index": 847,
+   "page": 44,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lahfenitsch (Georg)",
+   "new": "Lubreschibek Draastho.[?]",
+   "note": "ime POPRAVEK Lahfenitsch (Georg) -> Lubreschibek Draastho.[?] (x30 kontrola; 2. beseda dvom)"
+  },
+  {
+   "index": 848,
+   "page": 44,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Novak (Daniel)",
+   "new": "Novak Martlin.",
+   "note": "ime POPRAVEK Novak (Daniel) -> Novak Martlin. (Martlin cf p45-r11, p49-r12/r14); haus POPRAVEK 1 / 4 -> 1 / 14 (cross-val: p49 i14 = 'Novak Martlin' h14, ista oseba-forma, črnilo '1/14' jasno na obeh straneh)"
+  },
+  {
+   "index": 848,
+   "page": 44,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1 / 4",
+   "new": "1 / 14",
+   "note": "ime POPRAVEK Novak (Daniel) -> Novak Martlin. (Martlin cf p45-r11, p49-r12/r14); haus POPRAVEK 1 / 4 -> 1 / 14 (cross-val: p49 i14 = 'Novak Martlin' h14, ista oseba-forma, črnilo '1/14' jasno na obeh straneh)"
+  },
+  {
+   "index": 849,
+   "page": 44,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lahfenitsch (Andreas)",
+   "new": "Tallafschibek Draelte.[?]",
+   "note": "ime POPRAVEK Lahfenitsch (Andreas) -> Tallafschibek Draelte.[?] (x30 kontrola; 2. beseda dvom Draelte/Oraelte)"
+  },
+  {
+   "index": 850,
+   "page": 44,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Fraukyl al dne.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "page": 44,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2d-x2, parzelle-sidr) p44: 18 sprememb; predanaliza-draft (del 2d-pre) je imel r4 'Schönig Peter SOGLASJE' — sidr-anchored read kaže 'Schimick Peter' h18 (POPRAVEK); r0 'Manbgfuhd' = misread, dejansko 'Marßfid' (ista forma kot na 4 drugih straneh); 825/828 = Schim[e]ck Peter h18 par"
+  },
+  {
+   "index": 851,
+   "page": 45,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stefflpeckh Joh. Jos.",
+   "new": "Tallapeschibek Dras.[?]",
+   "note": "ime POPRAVEK Stefflpeckh Joh. Jos. -> Tallapeschibek Dras.[?] (Tallapeschibek forma; 2. beseda dvom)"
+  },
+  {
+   "index": 852,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Tallafschibek Napl. Nübeg.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 853,
+   "page": 45,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lukaschitsch Andre.",
+   "new": "Lubreschibek Maathe.[?]",
+   "note": "ime POPRAVEK Lukaschitsch Andre. -> Lubreschibek Maathe.[?] (trio z r7/r12; forma cf p49-r5/r6)"
+  },
+  {
+   "index": 854,
+   "page": 45,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pöbalkitsch Wolfp.",
+   "new": "Deleshitzkh Außin.[?]",
+   "note": "ime POPRAVEK Pöbalkitsch Wolfp. -> Deleshitzkh Außin.[?] (Deleshitzkh forma; 2. beseda dvom; Wohnort 'Dragasch')"
+  },
+  {
+   "index": 855,
+   "page": 45,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Dragosch Georg",
+   "new": "Dragasch Jure.",
+   "note": "ime POPRAVEK Dragosch Georg -> Dragasch Jure. (forma ×5: p44-r2, p46?, p48-r17, p49-r1/r3; h črnilo ~1[?] vs 3 — v114 ohranjeno, glyf i/3)"
+  },
+  {
+   "index": 856,
+   "page": 45,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heideri Anna",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK Heideri Anna -> Heide Marko. (Heide Marko forma ×5); haus POPRAVEK 2 -> 3 (cross-val: Heide Marko h3 = p44-r3, p46-r7..r10 črnilo + register)"
+  },
+  {
+   "index": 856,
+   "page": 45,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "3",
+   "note": "ime POPRAVEK Heideri Anna -> Heide Marko. (Heide Marko forma ×5); haus POPRAVEK 2 -> 3 (cross-val: Heide Marko h3 = p44-r3, p46-r7..r10 črnilo + register)"
+  },
+  {
+   "index": 857,
+   "page": 45,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Snagatsch Georg",
+   "new": "Dragasch Jure.",
+   "note": "ime POPRAVEK Snagatsch Georg -> Dragasch Jure. (par z r4); razhajanje odprto pri haus: črnilo ~6 vs 8, v114 ohranjeno"
+  },
+  {
+   "index": 857,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Dragasch Jure.\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 858,
+   "page": 45,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lukaschitsch Andre.",
+   "new": "Lubreschibek Maathe.[?]",
+   "note": "ime POPRAVEK Lukaschitsch Andre. -> Lubreschibek Maathe.[?] (par z r2)"
+  },
+  {
+   "index": 859,
+   "page": 45,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pöbalkitsch Wolfp.",
+   "new": "Deleshitzkh Marßfid.[?]",
+   "note": "ime POPRAVEK Pöbalkitsch Wolfp. -> Deleshitzkh Marßfid.[?] (forma ×5, cf p44-r0)"
+  },
+  {
+   "index": 860,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Staubyl Sraw.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 861,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Tallapechily Gromy.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 862,
+   "page": 45,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wunsch Marlin",
+   "new": "Novak Martlin.",
+   "note": "ime POPRAVEK Wunsch Marlin -> Novak Martlin. (forma ×6: p44-r17, p49-r12/r14; N vs W glyf)"
+  },
+  {
+   "index": 863,
+   "page": 45,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lukaschitsch Andre.",
+   "new": "Lubreschibek Maathe.[?]",
+   "note": "ime POPRAVEK Lukaschitsch Andre. -> Lubreschibek Maathe.[?] (trio z r2/r7); razhajanje odprto pri haus: črnilo ~4[?] (y-glyf) vs 7, v114 ohranjeno"
+  },
+  {
+   "index": 863,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Lubreschibek Maathe.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 864,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Gemeinwisen.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 865,
+   "page": 45,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wunsch Michael",
+   "new": "Novak Michael.",
+   "note": "ime POPRAVEK Wunsch Michael -> Novak Michael. (cf p46-r2 'Novak Michael' h10 — ista forma+hiša)"
+  },
+  {
+   "index": 866,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Tallapechily Gromy.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 867,
+   "page": 45,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Peinig Gregor.",
+   "new": "Peodvin Grany.",
+   "note": "ime POPRAVEK Peinig Gregor. -> Peodvin Grany. (forma ×7: p46 ×4, p49 ×3)"
+  },
+  {
+   "index": 868,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Huischan Matthe.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 869,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Huischan Matthe.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 870,
+   "page": 45,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Huischan Matthe.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "page": 45,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2d-x2, parzelle-sidr) p45: 13 sprememb; v114 p45 imena ('Stefflpeckh', 'Lukaschitsch', 'Pöbalkitsch'…) = realni poskusi brez sidra, vendar sistematicno odstopajo od sidr-anchored branja; 858+859 rdeče prečrtane parzelle (protokol 138 §1) potrjene; r10/r15 = prečrtan 2. besedi + korekcija"
+  },
+  {
+   "index": 871,
+   "page": 46,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschkan Muhel",
+   "new": "Huischan Matthe.[?]",
+   "note": "ime POPRAVEK Witschkan Muhel -> Huischan Matthe.[?] (Huischan/Krischan forma; cf p45-r17..r19); razhajanje odprto pri haus: črnilo ~5[?] (5/3 dvom) vs 2, v114 ohranjeno"
+  },
+  {
+   "index": 871,
+   "page": 46,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Huischan Matthe.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 872,
+   "page": 46,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pölling gzung.",
+   "new": "Peodvin Grany.",
+   "note": "ime POPRAVEK Pölling gzung. -> Peodvin Grany. (×4 r1/r3/r4/r5; forma ×7)"
+  },
+  {
+   "index": 873,
+   "page": 46,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hinde Mucko",
+   "new": "Novak Michael.",
+   "note": "ime POPRAVEK Hinde Mucko -> Novak Michael. (cf p45-r14 'Novak Michael' h10 — ista forma+hiša)"
+  },
+  {
+   "index": 874,
+   "page": 46,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pölling gzung.",
+   "new": "Peodvin Grany.",
+   "note": "ime POPRAVEK Pölling gzung. -> Peodvin Grany. (par)"
+  },
+  {
+   "index": 875,
+   "page": 46,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pölling gzung.",
+   "new": "Peodvin Grany.",
+   "note": "ime POPRAVEK Pölling gzung. -> Peodvin Grany. (par)"
+  },
+  {
+   "index": 876,
+   "page": 46,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pölling gzung.",
+   "new": "Peodvin Grany.",
+   "note": "ime POPRAVEK Pölling gzung. -> Peodvin Grany. (par)"
+  },
+  {
+   "index": 877,
+   "page": 46,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ludwigschak Muhel",
+   "new": "Lubreschibek Maathe.[?]",
+   "note": "ime POPRAVEK Ludwigschak Muhel -> Lubreschibek Maathe.[?] (forma ×9)"
+  },
+  {
+   "index": 878,
+   "page": 46,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heide Mucko",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK Heide Mucko -> Heide Marko. (Mucko -> Marko glyf; forma ×5)"
+  },
+  {
+   "index": 879,
+   "page": 46,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heide Mucko",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK Heide Mucko -> Heide Marko. (par)"
+  },
+  {
+   "index": 880,
+   "page": 46,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heide Mucko",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK Heide Mucko -> Heide Marko. (par; parzella 870 rdeče prečrtana + rdeči interlinearni zapis — flag)"
+  },
+  {
+   "index": 881,
+   "page": 46,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "H de Mucko",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK H de Mucko -> Heide Marko. (par; parzella 871 prepisana cifra + rdeča nota — flag; v114 anm 'precrzano rdece' ostaja)"
+  },
+  {
+   "index": 882,
+   "page": 46,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Olekschul Wulf",
+   "new": "Deleshitzkh Marßfid.[?]",
+   "note": "ime POPRAVEK Olekschul Wulf -> Deleshitzkh Marßfid.[?] (forma ×5, par z r12; prefix '11 /' glyf-dvom 1/11, numerika haus 1 ✓)"
+  },
+  {
+   "index": 883,
+   "page": 46,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Olekschul Wulf",
+   "new": "Deleshitzkh Marßfid.[?]",
+   "note": "ime POPRAVEK Olekschul Wulf -> Deleshitzkh Marßfid.[?] (par z r11)"
+  },
+  {
+   "index": 884,
+   "page": 46,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Tschokitsch Muhel",
+   "new": "Tillach Miko.[?]",
+   "note": "ime POPRAVEK Tschokitsch Muhel -> Tillach Miko.[?] (del 2c cross-val: Tillach h61; par z r14)"
+  },
+  {
+   "index": 885,
+   "page": 46,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Tschokitsch Muhel",
+   "new": "Tillach Miko.[?]",
+   "note": "ime POPRAVEK Tschokitsch Muhel -> Tillach Miko.[?] (par z r13)"
+  },
+  {
+   "index": 886,
+   "page": 46,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschkan gzung.",
+   "new": "Krischan Grany.[?]",
+   "note": "ime POPRAVEK Witschkan gzung. -> Krischan Grany.[?] (del 2c Krischan-glyf ×6); razhajanje odprto pri haus: črnilo ~62 vs 63 (2/3 glyf), v114 ohranjeno"
+  },
+  {
+   "index": 886,
+   "page": 46,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Krischan Grany.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "index": 887,
+   "page": 46,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschkan gzung.",
+   "new": "Krischan Grany.[?]",
+   "note": "ime POPRAVEK Witschkan gzung. -> Krischan Grany.[?] (par)"
+  },
+  {
+   "index": 888,
+   "page": 46,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschkan Muhel",
+   "new": "Krischan Miko.[?]",
+   "note": "ime POPRAVEK Witschkan Muhel -> Krischan Miko.[?] (par z r18)"
+  },
+  {
+   "index": 889,
+   "page": 46,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Witschkan Muhel",
+   "new": "Krischan Miko.[?]",
+   "note": "ime POPRAVEK Witschkan Muhel -> Krischan Miko.[?] (par z r17)"
+  },
+  {
+   "index": 890,
+   "page": 46,
+   "type": "anmerkung_add",
+   "text": "[v119 imenski pass: razhajanje odprto — črnilo ~\"Gmainwisen.[?]\", v57/v114 ohranjeno]"
+  },
+  {
+   "page": 46,
+   "type": "page_observations_v119",
+   "text": "v119 imenski pass (del 2d-x2, parzelle-sidr) p46: 19 sprememb; parzella 870 rdeče prečrtana + rdeči interlinearni zapis (protokol 138 §1) potrjena; 871 = prepisana cifra + rdeča nota; hišni format registerja '1 / N' oziroma '11 / N' (r11–r18) — numerika se ujema s črnilom"
+  }
+ ]
+}
