@@ -1,0 +1,1452 @@
+{
+ "vals": [
+  {
+   "page": 17,
+   "method": "strip+cell x12-16, bottom-rule anchoring, calibrated 12 anchors",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "87",
+     "verdict": "register OK"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "155",
+     "verdict": "FIX 135->155 (razhajanje 135 vs 155 zaprto)"
+    },
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "690",
+     "verdict": "register OK"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "89",
+     "verdict": "register OK"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "90",
+     "verdict": "register OK"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "647",
+     "verdict": "FIX 632->647 (razhajanje 632 vs 647 zaprto)"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "94",
+     "verdict": "FIX 74->94 (razhajanje 74 vs 94 zaprto)"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "692",
+     "verdict": "register OK"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "129",
+     "verdict": "register OK"
+    },
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "104",
+     "verdict": "register OK"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "628",
+     "verdict": "register OK"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "180",
+     "verdict": "FIX 100->180 (razhajanje 100 vs 180 zaprto)"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "585",
+     "verdict": "FIX 333->585 (razhajanje 333 vs 585 zaprto)"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "794",
+     "verdict": "FIX 774->794 NOVA napaka (srednja 7/9, ni bilo razhajanja)"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "395",
+     "verdict": "register OK"
+    },
+    {
+     "r": 15,
+     "jae": "1",
+     "kl": "400",
+     "verdict": "register OK"
+    },
+    {
+     "r": 16,
+     "jae": "1",
+     "kl": "121",
+     "verdict": "FIX jae ''->1 (razhajanje 121 vs 1|121 zaprto: split 1|121)"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "911",
+     "verdict": "register OK"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "556",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "1",
+     "kl": "553",
+     "verdict": "register OK"
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "method": "split strips x12 + cell x16, bottom-rule anchoring",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "189",
+     "verdict": "FIX 109->189 NOVA (srednja 8, dvojna zanka)"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "220",
+     "verdict": "register OK (all-klafter, jae prazna — razhajanje zaprto)"
+    },
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "283",
+     "verdict": "FIX 273->283 (razhajanje zaprto; brez splita, jae prazna)"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "257",
+     "verdict": "register OK (razhajanje 257 vs 2|37 zaprto — jae prazna, srednja 5)"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "1243",
+     "verdict": "FIX jae 1->'', kl 243->1243 (vodilna 1 je V kl celici)"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "1343",
+     "verdict": "FIX 1943->1343 (razhajanje 1943 vs 1|343 zaprto: kl=1343, jae prazna)"
+    },
+    {
+     "r": 6,
+     "jae": "1",
+     "kl": "1082",
+     "verdict": "FIX jae ''->1, kl 1002->1082 (razhajanje 1002 vs 1|1082 zaprto)"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "957",
+     "verdict": "FIX 927->957 NOVA (srednja 5 z zastavico)"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "873",
+     "verdict": "FIX 473->873 NOVA (prva 8, dvojna zanka)"
+    },
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "",
+     "verdict": "register OK (prazna)"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "1159",
+     "verdict": "FIX 1157->1159 NOVA (zadnja 9 z zanko, ne 7)"
+    },
+    {
+     "r": 11,
+     "jae": "1",
+     "kl": "50",
+     "verdict": "register OK"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "1098",
+     "verdict": "FIX 1498->1098 (razhajanje zaprto; 8 visoko desno, jae prazna)"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "539",
+     "verdict": "register OK"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "931",
+     "verdict": "FIX 391->931 (razhajanje 391 vs 931 zaprto)"
+    },
+    {
+     "r": 15,
+     "jae": "1",
+     "kl": "28",
+     "verdict": "register OK"
+    },
+    {
+     "r": 16,
+     "jae": "1",
+     "kl": "122",
+     "verdict": "register OK"
+    },
+    {
+     "r": 17,
+     "jae": "1",
+     "kl": "130",
+     "verdict": "register OK"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "585",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "539",
+     "verdict": "FIX 599->539 (razhajanje 599 vs 539 zaprto; srednja 3)"
+    }
+   ]
+  },
+  {
+   "page": 19,
+   "method": "strips x12 + cells x16, bottom-rule anchoring",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "452",
+     "verdict": "FIX 432->452 NOVA (srednja 5 z zastavico)"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "440",
+     "verdict": "register OK"
+    },
+    {
+     "r": 2,
+     "jae": "1",
+     "kl": "1301",
+     "verdict": "register OK (split 1|1301)"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "582",
+     "verdict": "register OK"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "808",
+     "verdict": "register OK"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "637",
+     "verdict": "register OK"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "585",
+     "verdict": "FIX 316->585 (razhajanje 316 vs 585 zaprto)"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "196",
+     "verdict": "register OK"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "318",
+     "verdict": "register OK"
+    },
+    {
+     "r": 9,
+     "jae": "1",
+     "kl": "639",
+     "verdict": "register OK (split)"
+    },
+    {
+     "r": 10,
+     "jae": "1",
+     "kl": "182",
+     "verdict": "register OK (split)"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "716",
+     "verdict": "register OK"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "7144",
+     "verdict": "FIX 1164->7144 (razhajanje 1164 vs 744 zaprto: 4 stevke 7-1-4-4)"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "205",
+     "verdict": "register OK"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "192",
+     "verdict": "register OK"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "776",
+     "verdict": "register OK"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "1199",
+     "verdict": "FIX 1329->1199 (razhajanje 1329 vs 779 zaprto: 1-1-9-9)"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "234",
+     "verdict": "register OK"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "1469",
+     "verdict": "FIX 1169->1469 NOVA (druga 4 s precico)"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "805",
+     "verdict": "FIX 832->805 (razhajanje 832 vs 802 zaprto: zadnja 5)"
+    }
+   ]
+  },
+  {
+   "page": 20,
+   "method": "strips x12 + cells x16, bottom-rule anchoring",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "703",
+     "verdict": "register OK"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "568",
+     "verdict": "FIX 648->568 (razhajanje zaprto)"
+    },
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "336",
+     "verdict": "register OK"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "963",
+     "verdict": "register OK"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "602",
+     "verdict": "register OK"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "337",
+     "verdict": "register OK"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "950",
+     "verdict": "register OK"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "840",
+     "verdict": "FIX 876->840 NOVA (srednja 4, zadnja 0)"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "631",
+     "verdict": "FIX 687->631 (razhajanje zaprto)"
+    },
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "535",
+     "verdict": "register OK"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "425",
+     "verdict": "FIX 465->425 NOVA (srednja 2)"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "444",
+     "verdict": "register OK"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "459",
+     "verdict": "FIX 179->459 NOVA (4-5-9)"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "482",
+     "verdict": "FIX 462->482 NOVA (srednja 8)"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "480",
+     "verdict": "FIX 430->480 NOVA (srednja 8)"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "457",
+     "verdict": "FIX 487->457 NOVA (srednja 5)"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "435",
+     "verdict": "FIX 135->435 NOVA (prva 4 s precico)"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "605",
+     "verdict": "register OK"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "854",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "803",
+     "verdict": "FIX 802->803 NOVA (zadnja 3)"
+    }
+   ]
+  },
+  {
+   "page": 21,
+   "method": "strips x12 + cells x16, bottom-rule anchoring",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "573",
+     "verdict": "register OK"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "492",
+     "verdict": "register OK"
+    },
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "484",
+     "verdict": "register OK"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "382",
+     "verdict": "register OK"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "859",
+     "verdict": "register OK"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "859",
+     "verdict": "register OK"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "505",
+     "verdict": "register OK"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "469",
+     "verdict": "register OK"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "11",
+     "verdict": "register OK"
+    },
+    {
+     "r": 9,
+     "jae": "3",
+     "kl": "1248",
+     "verdict": "register OK (split 3|1248)"
+    },
+    {
+     "r": 10,
+     "jae": "1",
+     "kl": "457",
+     "verdict": "FIX kl ''->457 (razhajanje 837 vs 457 zaprto; jae 1 potrjena)"
+    },
+    {
+     "r": 11,
+     "jae": "1",
+     "kl": "1581",
+     "verdict": "FIX jae ''->1, kl 1840->1581 (razhajanje 1840 vs 1387 zaprto: 2. stevka 5 z zastavico, ne 3/8)"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "946",
+     "verdict": "register OK"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "610",
+     "verdict": "register OK"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "798",
+     "verdict": "register OK"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "748",
+     "verdict": "register OK"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "1555",
+     "verdict": "register OK"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "1381",
+     "verdict": "register OK (2. stevka 3 brez zastavice — kontrast z r11 5)"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "1302",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "448",
+     "verdict": "register OK"
+    }
+   ]
+  },
+  {
+   "page": 22,
+   "method": "strips x12 + cells x16, bottom-rule anchoring",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "507",
+     "verdict": "register OK"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "1086",
+     "verdict": "register OK"
+    },
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "344",
+     "verdict": "FIX 348->344 (razhajanje 348 vs 244 zaprto: prva 3, ne 2)"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "25",
+     "verdict": "register OK"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "308",
+     "verdict": "register OK"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "443",
+     "verdict": "FIX 1148->443 (razhajanje zaprto)"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "442",
+     "verdict": "FIX 448->442 NOVA vrednost (razhajanje 448 vs 443 zaprto: zadnja 2)"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "136",
+     "verdict": "FIX 134->136 NOVA (zadnja 6 z ascenderjem)"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "165",
+     "verdict": "FIX 785->165 (razhajanje zaprto)"
+    },
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "399",
+     "verdict": "register OK"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "665",
+     "verdict": "register OK"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "753",
+     "verdict": "FIX 782->753 NOVA vrednost (razhajanje 782 vs 453 zaprto)"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "723",
+     "verdict": "FIX 712->723 (razhajanje zaprto)"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "600",
+     "verdict": "register OK"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "824",
+     "verdict": "register OK"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "644",
+     "verdict": "FIX 276->644 NOVA vrednost (razhajanje 276 vs 616 zaprto)"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "443",
+     "verdict": "FIX 1162->443 (razhajanje zaprto)"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "889",
+     "verdict": "register OK"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "352",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "474",
+     "verdict": "FIX 9116->474 (razhajanje zaprto)"
+    }
+   ]
+  },
+  {
+   "page": 23,
+   "method": "strips x12 + cells x16, bottom-rule anchoring",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "397",
+     "verdict": "register OK"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "521",
+     "verdict": "register OK"
+    },
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "159",
+     "verdict": "FIX 189->159 NOVA (srednja 5 z zastavico)"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "217",
+     "verdict": "FIX 317->217 NOVA (prva 2 z zanko)"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "1081",
+     "verdict": "register OK"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "1163",
+     "verdict": "register OK"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "1162",
+     "verdict": "register OK"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "1445",
+     "verdict": "FIX 1145->1445 NOVA vrednost (razhajanje 1145 vs 1448 zaprto: 4-4-5)"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "1487",
+     "verdict": "FIX 1187->1487 NOVA vrednost (razhajanje 1187 vs 1427 zaprto: 1-4-8-7)"
+    },
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "884",
+     "verdict": "register OK"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "770",
+     "verdict": "register OK"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "1477",
+     "verdict": "register OK"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "569",
+     "verdict": "register OK"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "884",
+     "verdict": "register OK"
+    },
+    {
+     "r": 14,
+     "jae": "1",
+     "kl": "1048",
+     "verdict": "FIX kl ''->1048 (razhajanje 1168 vs 1|1048 zaprto; obe vrednosti rdece precrtani — anm)"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "715",
+     "verdict": "register OK"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "209",
+     "verdict": "register OK"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "102",
+     "verdict": "register OK"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "60",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "182",
+     "verdict": "FIX 1025->182 (razhajanje 1025 vs 182 zaprto)"
+    }
+   ]
+  },
+  {
+   "page": 24,
+   "method": "strips x12 + cells x16, bottom-rule anchoring (vecina vrednosti rdece precrtanih)",
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "736",
+     "verdict": "register OK"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "711",
+     "verdict": "register OK"
+    },
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "687",
+     "verdict": "register OK"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "1183",
+     "verdict": "FIX 479->1183 (razhajanje zaprto; rdece precrtano)"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "330",
+     "verdict": "FIX 570->330 (razhajanje zaprto; rdece precrtano)"
+    },
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "1094",
+     "verdict": "FIX 1494->1094 NOVA vrednost (razhajanje 1494 vs 1096 zaprto: 2. 0, zadnja 4; rdece precrtano)"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "480",
+     "verdict": "FIX 437->480 (razhajanje zaprto; rdece precrtano)"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "577",
+     "verdict": "register OK"
+    },
+    {
+     "r": 8,
+     "jae": "1",
+     "kl": "905",
+     "verdict": "register OK (rdece precrtano)"
+    },
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "630",
+     "verdict": "register OK"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "475",
+     "verdict": "register OK"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "544",
+     "verdict": "register OK"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "430",
+     "verdict": "register OK"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "1189",
+     "verdict": "register OK"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "277",
+     "verdict": "register OK"
+    },
+    {
+     "r": 15,
+     "jae": "1",
+     "kl": "772",
+     "verdict": "register OK"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "543",
+     "verdict": "register OK"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "314",
+     "verdict": "register OK"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "428",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "343",
+     "verdict": "register OK"
+    }
+   ]
+  },
+  {
+   "page": 42,
+   "method": "wide name-anchored crops + real tail rules (pinned linear zdrsi na repu)",
+   "rows": [
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "464",
+     "verdict": "FIX 447->464 (razhajanje 447 vs 464 zaprto; rdece precrtano)"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "433",
+     "verdict": "FIX 1322->433 (razhajanje 1322 vs 433 zaprto — 433 je r10, ne r9; rdece precrtano)"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "450",
+     "verdict": "FIX 1270->450 (razhajanje 1270 vs 450 zaprto; rdece precrtano)"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "544",
+     "verdict": "FIX 644->544 NOVA (prva 5 brez ascenderja; rdece precrtano)"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "126",
+     "verdict": "FIX 476->126 (razhajanje 476 vs 126 zaprto; rdece precrtano)"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "113",
+     "verdict": "FIX 483->113 (razhajanje 483 vs 113 zaprto; rdece precrtano)"
+    },
+    {
+     "r": 20,
+     "jae": "",
+     "kl": "1313",
+     "verdict": "FIX 1874->1313 (razhajanje 1874 vs 1313 zaprto; rdece precrtano)"
+    },
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "444",
+     "verdict": "register OK (kontrola imenskega sidra)"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "504",
+     "verdict": "register OK"
+    },
+    {
+     "r": 12,
+     "jae": "",
+     "kl": "1394",
+     "verdict": "register OK"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "219",
+     "verdict": "register OK"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "747",
+     "verdict": "register OK"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "400",
+     "verdict": "register OK"
+    }
+   ]
+  },
+  {
+   "page": 5,
+   "rows": [
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "245",
+     "verdict": "FIX 2245->245 (razhajanje 248 vs 2245 zaprto: 3 stevke 2-4-5, jae prazna; rreg50=p5 r9)"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "625",
+     "verdict": "FIX 1350->625 (neujemljivo 625 vs 1350 zaprto: 6-2-5 jasni glifi; rdeca crta)"
+    }
+   ]
+  },
+  {
+   "page": 28,
+   "rows": [
+    {
+     "r": 12,
+     "jae": "2",
+     "kl": "561",
+     "verdict": "FIX 644->561 (razhajanje 644 vs 641 zaprto: 5 z zastavico, 6 z ascenderjem, 1; rdece precrtano; obe prejsnji branji zavrnjeni)"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "",
+     "verdict": "FIX 66->'' value_clear (celica: 666 debelo precrtan + 691 rdece precrtan — brez finala; register 66 = delni odsek 666)"
+    }
+   ]
+  },
+  {
+   "page": 29,
+   "rows": [
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "649",
+     "verdict": "FIX 8½->649 (razhajanje 649 vs 64.5 zaprto: trije polni glifi 6-4-9; znak zgoraj = crta/mozn 1/2)"
+    }
+   ]
+  },
+  {
+   "page": 32,
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "744",
+     "verdict": "FIX 1144->744 (razhajanje 144 ali 744 zaprto: prvi glif ima zastavico + spustnik = 7, jae prazna)"
+    },
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "331",
+     "verdict": "FIX 371->331 (stack 331 potrjen: srednja 3 z dvema grbama, ne 7; rdece precrtano)"
+    }
+   ]
+  },
+  {
+   "page": 34,
+   "rows": [
+    {
+     "r": 4,
+     "jae": "",
+     "kl": "616",
+     "verdict": "FIX 664->616 (razhajanje zadnja 6 vs 4 zaprto: zadnja 6 z zanko; srednja 1 - flourish jo je povezoval z 6)"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "1088",
+     "verdict": "FIX 1038->1088 (razhajanje 1038 vs 1088 zaprto)"
+    }
+   ]
+  },
+  {
+   "page": 36,
+   "rows": [
+    {
+     "r": 0,
+     "jae": "1",
+     "kl": "657",
+     "verdict": "register OK — razhajanje zadnja 9 vs 7 NERESELJIVO (flourish); 7 ohranjena, 9 v anm"
+    }
+   ]
+  },
+  {
+   "page": 44,
+   "rows": [
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "970",
+     "verdict": "FIX 476->970 (razhajanje zaprto; rdece precrtano)"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "1155",
+     "verdict": "FIX 1152->1155 (razhajanje zaprto; rdece precrtano)"
+    }
+   ]
+  },
+  {
+   "page": 47,
+   "rows": [
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "1165",
+     "verdict": "register OK — zadnja stevilka POD MADEZEM; 1165 ohranjena, v113 1163 ne potrjena ne izkljucena"
+    }
+   ]
+  },
+  {
+   "page": 51,
+   "rows": [
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "288",
+     "verdict": "FIX 236->288 (razhajanje zaprto; rdece precrtano)"
+    },
+    {
+     "r": 3,
+     "jae": "",
+     "kl": "52",
+     "verdict": "FIX 72->52 (razhajanje 74 vs 52 zaprto: prva 5 z zastavico in bocjo, ne 7; v57 74 in del 2e 72 zavrnjena; rdece precrtano)"
+    },
+    {
+     "r": 9,
+     "jae": "1",
+     "kl": "1186",
+     "verdict": "FIX 1146->1186 (razhajanje zaprto; rdece precrtano)"
+    }
+   ]
+  },
+  {
+   "page": 52,
+   "rows": [
+    {
+     "r": 5,
+     "jae": "",
+     "kl": "39",
+     "verdict": "register 379 POTRJENA (razhajanje 339 vs 39 zastarelo: 7 visoko z zastavico — v57 339 in v113 39 napačni; del 2e 379 pravilna)"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "392",
+     "verdict": "FIX 292->392 (razhajanje zaprto; rdece precrtano)"
+    }
+   ]
+  },
+  {
+   "page": 53,
+   "rows": [
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "31",
+     "verdict": "register 31 POTRJENA (razhajanje 51 vs 31 zastarelo — del 2e je ze vgradil 31)"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "319",
+     "verdict": "register 319 POTRJENA (razhajanje 349 vs 319 zastarelo)"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "50",
+     "verdict": "register 50 POTRJENA (razhajanje 87 vs 50 zastarelo)"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "201",
+     "verdict": "register 201 POTRJENA (razhajanje 274 vs 201 zastarelo)"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "74",
+     "verdict": "register 74 POTRJENA (razhajanje 76 vs 74 zastarelo)"
+    }
+   ]
+  },
+  {
+   "page": 54,
+   "rows": [
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "1877",
+     "verdict": "FIX 1827->1877 (razhajanje zaprto: srednja 7 z zastavico; rdece precrtano)"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "78",
+     "verdict": "FIX 73->78 (razhajanje zaprto: zadnja 8 z dvojno zanko; rdece precrtano)"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "908",
+     "verdict": "register 908 POTRJENA — stari spor 716 vs 74/714 je zastarel (v114 napačna atribucija)"
+    },
+    {
+     "r": 19,
+     "jae": "",
+     "kl": "283",
+     "verdict": "register 283 POTRJENA — spor 425 vs 908: 908 je r18 vrednost, v114 zdrs}"
+    }
+   ]
+  },
+  {
+   "page": 31,
+   "rows": [
+    {
+     "r": 0,
+     "jae": "3",
+     "kl": "1305",
+     "verdict": "FIX 1785->1305 (razhajanje 1305 vs 1785 zaprto: 3 odprta krivulja, 0 enojna zanka; zz2-p31-r0-kl + kalibracija r1=391)"
+    }
+   ]
+  },
+  {
+   "page": 43,
+   "method": "tight bands + digitcmp; lokalna pravila kl-stolpca; imenski sidro r13-r19",
+   "rows": [
+    {
+     "r": 2,
+     "jae": "",
+     "kl": "854",
+     "verdict": "register OK (razhajanje 854 vs 856 zaprto: zadnja 4)"
+    },
+    {
+     "r": 8,
+     "jae": "",
+     "kl": "313",
+     "verdict": "FIX 273->313 (razhajanje 273 vs 313 zaprto: srednja 1)"
+    },
+    {
+     "r": 9,
+     "jae": "",
+     "kl": "32",
+     "verdict": "FIX 98->32 (razhajanje 98 vs 32 zaprto)"
+    },
+    {
+     "r": 10,
+     "jae": "",
+     "kl": "462",
+     "verdict": "FIX 156->462 (razhajanje 156 vs 462 zaprto: 4 s precico, 6 z ascenderjem)"
+    },
+    {
+     "r": 11,
+     "jae": "",
+     "kl": "229",
+     "verdict": "FIX 729->229 (razhajanje 729 vs 229 zaprto: prva 2)"
+    },
+    {
+     "r": 13,
+     "jae": "",
+     "kl": "309",
+     "verdict": "FIX 398->309 (razhajanje 398 vs 309 zaprto: 0 enojna zanka, 9 z zanko)"
+    },
+    {
+     "r": 14,
+     "jae": "",
+     "kl": "542",
+     "verdict": "FIX 242->542 (razhajanje 242 vs 542 zaprto: 5 z zastavico)"
+    },
+    {
+     "r": 15,
+     "jae": "",
+     "kl": "225",
+     "verdict": "register OK"
+    },
+    {
+     "r": 16,
+     "jae": "",
+     "kl": "315",
+     "verdict": "FIX 718->315 (razhajanje 718 vs 316 zaprto: 3-1-5, zadnja brez ascenderja)"
+    },
+    {
+     "r": 17,
+     "jae": "",
+     "kl": "814",
+     "verdict": "FIX 214->814 NOVA (prva 8 z dvojno zanko)"
+    },
+    {
+     "r": 18,
+     "jae": "",
+     "kl": "211",
+     "verdict": "register OK (rdece precrtano)"
+    },
+    {
+     "r": 19,
+     "jae": "1",
+     "kl": "1977",
+     "verdict": "FIX jae ''->1, kl 4731->1977 (razhajanje 4731 vs 1|1977 zaprto; vrednosti rdece precrtane; Furtrag blok: 7|862 precrtan + rdeca 1|1052)"
+    },
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "825",
+     "verdict": "register OK (anchor: r1 795 potrjena)"
+    },
+    {
+     "r": 1,
+     "jae": "",
+     "kl": "795",
+     "verdict": "register OK (anchor)"
+    },
+    {
+     "r": 6,
+     "jae": "",
+     "kl": "426",
+     "verdict": "register OK (anchor: 463 r7)"
+    },
+    {
+     "r": 7,
+     "jae": "",
+     "kl": "463",
+     "verdict": "register OK (anchor)"
+    }
+   ]
+  },
+  {
+   "page": 37,
+   "rows": [
+    {
+     "r": 0,
+     "jae": "",
+     "kl": "774",
+     "verdict": "FIX jae 701->'' (visoki 761 = Übertrag/vrednost iz predhodnega pasu, ne Joch; kl 774 ohranjena — nizko, na pravilu)"
+    }
+   ]
+  }
+ ],
+ "page_obs": [
+  {
+   "page": 42,
+   "obs": "Furtrag vrstica pod r20: crno (precrvano) ~7|365, rdeca koncna 1|318 — ni v register (n=21 parzelle 781-901); v page_observations"
+  },
+  {
+   "page": 43,
+   "obs": "Furtrag blok pod r19: precrtano 1|1977 (v pasu r19?? ne - v r19 pasu je 1|1977 precrtan) + 7|862 precrtan + rdeca koncna 1|1052; parzelle 820 rdece precrtana"
+  }
+ ]
+}

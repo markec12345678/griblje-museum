@@ -92,11 +92,11 @@ describe("val 114 — p19/p20: POMIK iz val 113 OVRŽEN", () => {
 
   test("p19 vrednosti na svojih indeksih (sidri)", () => {
     const rows = byPage(19);
-    expect(f(rows[0], "klafter")).toBe("432");
+    expect(f(rows[0], "klafter")).toBe("452"); // val 121: 432 → 452 (srednja 5 z zastavico)
     expect(f(rows[1], "klafter")).toBe("440");
     expect(f(rows[5], "klafter")).toBe("637");
     expect(f(rows[15], "klafter")).toBe("776");
-    expect(f(rows[18], "klafter")).toBe("1169");
+    expect(f(rows[18], "klafter")).toBe("1469"); // val 121: 1169 → 1469 (druga 4 s prečico)
   });
 
   test("p19 POPRAVEK: r3 582, r8 318, r17 234; split popavek r9 '1 639'", () => {
@@ -108,9 +108,10 @@ describe("val 114 — p19/p20: POMIK iz val 113 OVRŽEN", () => {
     expect(f(rows[3], "klafter_pre_v114")).toBe("392");
   });
 
-  test("p19 odprta razhajanja: r6, r12 (prečrtano), r16, r19", () => {
-    for (const i of [6, 12, 16, 19]) {
-      expect(f(byPage(19)[i], "anmerkung")).toContain("odprto");
+  test("p19 razhajanja r6, r12, r16, r19 ZAPRTA v val 121 (vrednosti: 585, 7144, 1199, 805)", () => {
+    for (const [i, v] of [[6, "585"], [12, "7144"], [16, "1199"], [19, "805"]] as const) {
+      expect(f(byPage(19)[i], "anmerkung")).toContain("ZAPRTO val 121");
+      expect(f(byPage(19)[i], "klafter")).toBe(v);
     }
     expect(f(byPage(19)[12], "anmerkung")).toMatch(/pre[cč]rt/);
   });
@@ -280,11 +281,11 @@ describe("val 114 — POPRAVEK vrednosti (v57 sistemske napake)", () => {
     expect(f(rows[14], "klafter")).toBe("489");
   });
 
-  test("p42: r1 410, r12 1394, r15 644 + masovne prečrte", () => {
+  test("p42: r1 410, r12 1394; r15 644→544 (val 121: prva 5 brez ascenderja) + masovne prečrte", () => {
     const rows = byPage(42);
     expect(f(rows[1], "klafter")).toBe("410");
     expect(f(rows[12], "klafter")).toBe("1394");
-    expect(f(rows[15], "klafter")).toBe("644");
+    expect(f(rows[15], "klafter")).toBe("544"); // val 121
     for (const i of [5, 6, 7, 8, 11, 17, 19]) {
       expect(f(rows[i], "anmerkung")).toMatch(/pre[cč]rt|precrz/);
     }
@@ -406,9 +407,9 @@ describe("val 114 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha c3932092… (pogodba §22; val 119 del 2e — timestamp-only, vsebina identična)", () => {
+  test("kaskadni artefakti držijo isti KG sha b3e9797e… (pogodba §22; val 119 del 2e — timestamp-only, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^596c1ca7/);
+    expect(kgSha).toMatch(/^b3e9797e/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

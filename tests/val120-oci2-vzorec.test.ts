@@ -67,16 +67,16 @@ describe("val 120 — 2. oči kontrola vzorca (NR-14)", () => {
     expect(p37[8].klafter).toBe("31"); // blind r7 je bral 31 — register r8
   });
 
-  it("F-OCI-05: vrednostna atribucija ostaja OPEN (NR-14) — kandidata p31 r0 + p43 r19", () => {
+  it("F-OCI-05: ZAPRT v val 121 — kandidata p31 r0 (1305) in p43 r19 (1|1977) razrešena s pasovnim re-readom", () => {
     const st = analysis.findings[4].statement;
-    expect(st).toContain("1785");
+    expect(st).toContain("1785"); // zgodovinski kandidati ostanejo v analysis-v1 (val 120 artefakt)
     expect(st).toContain("4731");
     expect(st).toContain("nič ne spreminjano");
-    // register vrednosti NESPREMENJENE (raziskovalni val §22)
+    // val 121: vrednosti vgrajene (F-OCI-05 zaprtje)
     const p31 = register.filter((r: any) => r.page === 31);
-    expect(p31[0].klafter).toBe("1785");
+    expect(p31[0].klafter).toBe("1305"); // 1785 → 1305
     const p43 = register.filter((r: any) => r.page === 43);
-    expect(p43[19].klafter).toBe("4731");
+    expect(p43[19].klafter).toBe("1977"); // 4731 → 1|1977 (rdeče prečrtan; Fürtrag 1|1052)
   });
 
   it("F-OCI-06: marginalije re-opazane (1-385, 1263, 3-364, 1-1367)", () => {
@@ -101,8 +101,9 @@ describe("val 120 — 2. oči kontrola vzorca (NR-14)", () => {
   });
 
   it("§22: register.json + KG + c4 metrika NESPREMENJENI (raziskovalni val)", () => {
-    // register sha nespremenjen od val 119 del 3 (54a6e52)
-    expect(sha256("research-griblje/ps-n83/register.json")).toBe(
+    // val 121: register vsebinsko spremenjen (pasovni vrednostni re-read, 89 kl + 6 jae sprememb)
+    const regSha = sha256("research-griblje/ps-n83/register.json");
+    expect(regSha).not.toBe(
       "fb439f80ce1591abea330d6d74e30a6dc814bc81bb5799aa38f0c9ee6786c699");
     // strukturne varovalke registra (2875 vrstic; plasti nespremenjene)
     expect(register.length).toBe(2875);

@@ -1,0 +1,1438 @@
+{
+ "changes": [
+  {
+   "page": 17,
+   "rreg": 287,
+   "haus": "44",
+   "owner": "Christan Mache",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "135",
+    "155"
+   ],
+   "verdict": "FIX 135->155 (razhajanje 135 vs 155 zaprto)"
+  },
+  {
+   "page": 17,
+   "rreg": 291,
+   "haus": "37",
+   "owner": "Christan Piber",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "632",
+    "647"
+   ],
+   "verdict": "FIX 632->647 (razhajanje 632 vs 647 zaprto)"
+  },
+  {
+   "page": 17,
+   "rreg": 292,
+   "haus": "37",
+   "owner": "Christan Piber",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "74",
+    "94"
+   ],
+   "verdict": "FIX 74->94 (razhajanje 74 vs 94 zaprto)"
+  },
+  {
+   "page": 17,
+   "rreg": 297,
+   "haus": "34",
+   "owner": "Fitsch Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "100",
+    "180"
+   ],
+   "verdict": "FIX 100->180 (razhajanje 100 vs 180 zaprto)"
+  },
+  {
+   "page": 17,
+   "rreg": 298,
+   "haus": "34",
+   "owner": "Fitsch Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "333",
+    "585"
+   ],
+   "verdict": "FIX 333->585 (razhajanje 333 vs 585 zaprto)"
+  },
+  {
+   "page": 17,
+   "rreg": 299,
+   "haus": "36",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "774",
+    "794"
+   ],
+   "verdict": "FIX 774->794 NOVA napaka (srednja 7/9, ni bilo razhajanja)"
+  },
+  {
+   "page": 17,
+   "rreg": 302,
+   "haus": "62",
+   "owner": "Christan Mache",
+   "jae": [
+    "",
+    "1"
+   ],
+   "kl": [
+    "121",
+    "121"
+   ],
+   "verdict": "FIX jae ''->1 (razhajanje 121 vs 1|121 zaprto: split 1|121)"
+  },
+  {
+   "page": 18,
+   "rreg": 306,
+   "haus": "62",
+   "owner": "Christan Mache",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "109",
+    "189"
+   ],
+   "verdict": "FIX 109->189 NOVA (srednja 8, dvojna zanka)"
+  },
+  {
+   "page": 18,
+   "rreg": 308,
+   "haus": "36",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "273",
+    "283"
+   ],
+   "verdict": "FIX 273->283 (razhajanje zaprto; brez splita, jae prazna)"
+  },
+  {
+   "page": 18,
+   "rreg": 310,
+   "haus": "36",
+   "owner": "Christan Malfg",
+   "jae": [
+    "1",
+    ""
+   ],
+   "kl": [
+    "243",
+    "1243"
+   ],
+   "verdict": "FIX jae 1->'', kl 243->1243 (vodilna 1 je V kl celici)"
+  },
+  {
+   "page": 18,
+   "rreg": 311,
+   "haus": "37",
+   "owner": "Christan Piber",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1943",
+    "1343"
+   ],
+   "verdict": "FIX 1943->1343 (razhajanje 1943 vs 1|343 zaprto: kl=1343, jae prazna)"
+  },
+  {
+   "page": 18,
+   "rreg": 312,
+   "haus": "44",
+   "owner": "Husitsch Maria",
+   "jae": [
+    "",
+    "1"
+   ],
+   "kl": [
+    "1002",
+    "1082"
+   ],
+   "verdict": "FIX jae ''->1, kl 1002->1082 (razhajanje 1002 vs 1|1082 zaprto)"
+  },
+  {
+   "page": 18,
+   "rreg": 313,
+   "haus": "36",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "927",
+    "957"
+   ],
+   "verdict": "FIX 927->957 NOVA (srednja 5 z zastavico)"
+  },
+  {
+   "page": 18,
+   "rreg": 314,
+   "haus": "37",
+   "owner": "Christan Piber",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "473",
+    "873"
+   ],
+   "verdict": "FIX 473->873 NOVA (prva 8, dvojna zanka)"
+  },
+  {
+   "page": 18,
+   "rreg": 316,
+   "haus": "63",
+   "owner": "Christan Gorgy",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1157",
+    "1159"
+   ],
+   "verdict": "FIX 1157->1159 NOVA (zadnja 9 z zanko, ne 7)"
+  },
+  {
+   "page": 18,
+   "rreg": 318,
+   "haus": "63",
+   "owner": "Christan Gorgy",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1498",
+    "1098"
+   ],
+   "verdict": "FIX 1498->1098 (razhajanje zaprto; 8 visoko desno, jae prazna)"
+  },
+  {
+   "page": 18,
+   "rreg": 320,
+   "haus": "36",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "391",
+    "931"
+   ],
+   "verdict": "FIX 391->931 (razhajanje 391 vs 931 zaprto)"
+  },
+  {
+   "page": 18,
+   "rreg": 325,
+   "haus": "35",
+   "owner": "Fitsch Piber",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "599",
+    "539"
+   ],
+   "verdict": "FIX 599->539 (razhajanje 599 vs 539 zaprto; srednja 3)"
+  },
+  {
+   "page": 19,
+   "rreg": 326,
+   "haus": "26",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "432",
+    "452"
+   ],
+   "verdict": "FIX 432->452 NOVA (srednja 5 z zastavico)"
+  },
+  {
+   "page": 19,
+   "rreg": 332,
+   "haus": "63",
+   "owner": "Christan Gorgy",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "316",
+    "585"
+   ],
+   "verdict": "FIX 316->585 (razhajanje 316 vs 585 zaprto)"
+  },
+  {
+   "page": 19,
+   "rreg": 338,
+   "haus": "36",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1164",
+    "7144"
+   ],
+   "verdict": "FIX 1164->7144 (razhajanje 1164 vs 744 zaprto: 4 stevke 7-1-4-4)"
+  },
+  {
+   "page": 19,
+   "rreg": 342,
+   "haus": "36",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1329",
+    "1199"
+   ],
+   "verdict": "FIX 1329->1199 (razhajanje 1329 vs 779 zaprto: 1-1-9-9)"
+  },
+  {
+   "page": 19,
+   "rreg": 344,
+   "haus": "44",
+   "owner": "Husitsch Maria[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1169",
+    "1469"
+   ],
+   "verdict": "FIX 1169->1469 NOVA (druga 4 s precico)"
+  },
+  {
+   "page": 19,
+   "rreg": 345,
+   "haus": "62",
+   "owner": "Christan Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "832",
+    "805"
+   ],
+   "verdict": "FIX 832->805 (razhajanje 832 vs 802 zaprto: zadnja 5)"
+  },
+  {
+   "page": 20,
+   "rreg": 347,
+   "haus": "55",
+   "owner": "Thomas Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "648",
+    "568"
+   ],
+   "verdict": "FIX 648->568 (razhajanje zaprto)"
+  },
+  {
+   "page": 20,
+   "rreg": 353,
+   "haus": "36",
+   "owner": "Christan Mache",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "876",
+    "840"
+   ],
+   "verdict": "FIX 876->840 NOVA (srednja 4, zadnja 0)"
+  },
+  {
+   "page": 20,
+   "rreg": 354,
+   "haus": "62",
+   "owner": "Christan Mache",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "687",
+    "631"
+   ],
+   "verdict": "FIX 687->631 (razhajanje zaprto)"
+  },
+  {
+   "page": 20,
+   "rreg": 356,
+   "haus": "37",
+   "owner": "Kristan Peter",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "465",
+    "425"
+   ],
+   "verdict": "FIX 465->425 NOVA (srednja 2)"
+  },
+  {
+   "page": 20,
+   "rreg": 358,
+   "haus": "34",
+   "owner": "Christof Matz",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "179",
+    "459"
+   ],
+   "verdict": "FIX 179->459 NOVA (4-5-9)"
+  },
+  {
+   "page": 20,
+   "rreg": 359,
+   "haus": "35",
+   "owner": "Peter Peter",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "462",
+    "482"
+   ],
+   "verdict": "FIX 462->482 NOVA (srednja 8)"
+  },
+  {
+   "page": 20,
+   "rreg": 360,
+   "haus": "37",
+   "owner": "Kristan Peter",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "430",
+    "480"
+   ],
+   "verdict": "FIX 430->480 NOVA (srednja 8)"
+  },
+  {
+   "page": 20,
+   "rreg": 361,
+   "haus": "36",
+   "owner": "Christan Mache",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "487",
+    "457"
+   ],
+   "verdict": "FIX 487->457 NOVA (srednja 5)"
+  },
+  {
+   "page": 20,
+   "rreg": 362,
+   "haus": "34",
+   "owner": "Villa[?] Rothmayer",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "135",
+    "435"
+   ],
+   "verdict": "FIX 135->435 NOVA (prva 4 s precico)"
+  },
+  {
+   "page": 20,
+   "rreg": 365,
+   "haus": "44",
+   "owner": "Husitsch Maria[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "802",
+    "803"
+   ],
+   "verdict": "FIX 802->803 NOVA (zadnja 3)"
+  },
+  {
+   "page": 21,
+   "rreg": 376,
+   "haus": "51",
+   "owner": "Ulrich Johan",
+   "jae": [
+    "1",
+    "1"
+   ],
+   "kl": [
+    "",
+    "457"
+   ],
+   "verdict": "FIX kl ''->457 (razhajanje 837 vs 457 zaprto; jae 1 potrjena)"
+  },
+  {
+   "page": 21,
+   "rreg": 377,
+   "haus": "50",
+   "owner": "Peter Malfg",
+   "jae": [
+    "",
+    "1"
+   ],
+   "kl": [
+    "1840",
+    "1581"
+   ],
+   "verdict": "FIX jae ''->1, kl 1840->1581 (razhajanje 1840 vs 1387 zaprto: 2. stevka 5 z zastavico, ne 3/8)"
+  },
+  {
+   "page": 22,
+   "rreg": 388,
+   "haus": "56",
+   "owner": "Shimerz Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "348",
+    "344"
+   ],
+   "verdict": "FIX 348->344 (razhajanje 348 vs 244 zaprto: prva 3, ne 2)"
+  },
+  {
+   "page": 22,
+   "rreg": 391,
+   "haus": "53",
+   "owner": "Pustig Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1148",
+    "443"
+   ],
+   "verdict": "FIX 1148->443 (razhajanje zaprto)"
+  },
+  {
+   "page": 22,
+   "rreg": 392,
+   "haus": "54",
+   "owner": "Lapajner Andre",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "448",
+    "442"
+   ],
+   "verdict": "FIX 448->442 NOVA vrednost (razhajanje 448 vs 443 zaprto: zadnja 2)"
+  },
+  {
+   "page": 22,
+   "rreg": 393,
+   "haus": "50",
+   "owner": "Peter Malfg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "134",
+    "136"
+   ],
+   "verdict": "FIX 134->136 NOVA (zadnja 6 z ascenderjem)"
+  },
+  {
+   "page": 22,
+   "rreg": 394,
+   "haus": "56",
+   "owner": "Shimerz Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "785",
+    "165"
+   ],
+   "verdict": "FIX 785->165 (razhajanje zaprto)"
+  },
+  {
+   "page": 22,
+   "rreg": 397,
+   "haus": "53",
+   "owner": "Pustig Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "782",
+    "753"
+   ],
+   "verdict": "FIX 782->753 NOVA vrednost (razhajanje 782 vs 453 zaprto)"
+  },
+  {
+   "page": 22,
+   "rreg": 398,
+   "haus": "56",
+   "owner": "Shimerz Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "712",
+    "723"
+   ],
+   "verdict": "FIX 712->723 (razhajanje zaprto)"
+  },
+  {
+   "page": 22,
+   "rreg": 401,
+   "haus": "55",
+   "owner": "Shimerz Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "276",
+    "644"
+   ],
+   "verdict": "FIX 276->644 NOVA vrednost (razhajanje 276 vs 616 zaprto)"
+  },
+  {
+   "page": 22,
+   "rreg": 402,
+   "haus": "56",
+   "owner": "Shimerz Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1162",
+    "443"
+   ],
+   "verdict": "FIX 1162->443 (razhajanje zaprto)"
+  },
+  {
+   "page": 22,
+   "rreg": 405,
+   "haus": "54",
+   "owner": "Lapajner Mike",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "9116",
+    "474"
+   ],
+   "verdict": "FIX 9116->474 (razhajanje zaprto)"
+  },
+  {
+   "page": 23,
+   "rreg": 408,
+   "haus": "58",
+   "owner": "Schlomnitz Peter",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "189",
+    "159"
+   ],
+   "verdict": "FIX 189->159 NOVA (srednja 5 z zastavico)"
+  },
+  {
+   "page": 23,
+   "rreg": 409,
+   "haus": "51",
+   "owner": "Uranek Peter",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "317",
+    "217"
+   ],
+   "verdict": "FIX 317->217 NOVA (prva 2 z zanko)"
+  },
+  {
+   "page": 23,
+   "rreg": 413,
+   "haus": "54",
+   "owner": "Lapajner Mike",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1145",
+    "1445"
+   ],
+   "verdict": "FIX 1145->1445 NOVA vrednost (razhajanje 1145 vs 1448 zaprto: 4-4-5)"
+  },
+  {
+   "page": 23,
+   "rreg": 414,
+   "haus": "35",
+   "owner": "Schlomnitz Johan",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1187",
+    "1487"
+   ],
+   "verdict": "FIX 1187->1487 NOVA vrednost (razhajanje 1187 vs 1427 zaprto: 1-4-8-7)"
+  },
+  {
+   "page": 23,
+   "rreg": 420,
+   "haus": "45",
+   "owner": "Krause Georg",
+   "jae": [
+    "1",
+    "1"
+   ],
+   "kl": [
+    "",
+    "1048"
+   ],
+   "verdict": "FIX kl ''->1048 (razhajanje 1168 vs 1|1048 zaprto; obe vrednosti rdece precrtani — anm)"
+  },
+  {
+   "page": 23,
+   "rreg": 425,
+   "haus": "48",
+   "owner": "Hahnsdorfer Georg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1025",
+    "182"
+   ],
+   "verdict": "FIX 1025->182 (razhajanje 1025 vs 182 zaprto)"
+  },
+  {
+   "page": 24,
+   "rreg": 429,
+   "haus": "45",
+   "owner": "Lopretz Michl",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "479",
+    "1183"
+   ],
+   "verdict": "FIX 479->1183 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 24,
+   "rreg": 430,
+   "haus": "48",
+   "owner": "Habschider Georg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "570",
+    "330"
+   ],
+   "verdict": "FIX 570->330 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 24,
+   "rreg": 431,
+   "haus": "44",
+   "owner": "Hantschitsch Marth",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1494",
+    "1094"
+   ],
+   "verdict": "FIX 1494->1094 NOVA vrednost (razhajanje 1494 vs 1096 zaprto: 2. 0, zadnja 4; rdece precrtano)"
+  },
+  {
+   "page": 24,
+   "rreg": 432,
+   "haus": "30",
+   "owner": "Sagmeister Michl",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "437",
+    "480"
+   ],
+   "verdict": "FIX 437->480 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 42,
+   "rreg": 799,
+   "haus": "1/64",
+   "owner": "Veritschan Mathl.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "447",
+    "464"
+   ],
+   "verdict": "FIX 447->464 (razhajanje 447 vs 464 zaprto; rdece precrtano)"
+  },
+  {
+   "page": 42,
+   "rreg": 800,
+   "haus": "1/65",
+   "owner": "Ring Martho.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1322",
+    "433"
+   ],
+   "verdict": "FIX 1322->433 (razhajanje 1322 vs 433 zaprto — 433 je r10, ne r9; rdece precrtano)"
+  },
+  {
+   "page": 42,
+   "rreg": 804,
+   "haus": "1/49",
+   "owner": "Schimetz Michael.",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1270",
+    "450"
+   ],
+   "verdict": "FIX 1270->450 (razhajanje 1270 vs 450 zaprto; rdece precrtano)"
+  },
+  {
+   "page": 42,
+   "rreg": 805,
+   "haus": "1/18",
+   "owner": "Schimetz Peter.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "644",
+    "544"
+   ],
+   "verdict": "FIX 644->544 NOVA (prva 5 brez ascenderja; rdece precrtano)"
+  },
+  {
+   "page": 42,
+   "rreg": 806,
+   "haus": "1/18",
+   "owner": "Schimetz Peter.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "476",
+    "126"
+   ],
+   "verdict": "FIX 476->126 (razhajanje 476 vs 126 zaprto; rdece precrtano)"
+  },
+  {
+   "page": 42,
+   "rreg": 808,
+   "haus": "1/61",
+   "owner": "Tillach Michl.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "483",
+    "113"
+   ],
+   "verdict": "FIX 483->113 (razhajanje 483 vs 113 zaprto; rdece precrtano)"
+  },
+  {
+   "page": 42,
+   "rreg": 810,
+   "haus": "1/17",
+   "owner": "Khall Johanne.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1874",
+    "1313"
+   ],
+   "verdict": "FIX 1874->1313 (razhajanje 1874 vs 1313 zaprto; rdece precrtano)"
+  },
+  {
+   "page": 5,
+   "rreg": 50,
+   "haus": "16",
+   "owner": "Morath Maurize",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "2245",
+    "245"
+   ],
+   "verdict": "FIX 2245->245 (razhajanje 248 vs 2245 zaprto: 3 stevke 2-4-5, jae prazna; rreg50=p5 r9)"
+  },
+  {
+   "page": 5,
+   "rreg": 56,
+   "haus": "168",
+   "owner": "Urich Mäda",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1350",
+    "625"
+   ],
+   "verdict": "FIX 1350->625 (neujemljivo 625 vs 1350 zaprto: 6-2-5 jasni glifi; rdeca crta)"
+  },
+  {
+   "page": 28,
+   "rreg": 518,
+   "haus": "9",
+   "owner": "Jakobschitsch Mathä[?]",
+   "jae": [
+    "2",
+    "2"
+   ],
+   "kl": [
+    "644",
+    "561"
+   ],
+   "verdict": "FIX 644->561 (razhajanje 644 vs 641 zaprto: 5 z zastavico, 6 z ascenderjem, 1; rdece precrtano; obe prejsnji branji zavrnjeni)"
+  },
+  {
+   "page": 28,
+   "rreg": 517,
+   "haus": "13",
+   "owner": "Strauß Georg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "66",
+    ""
+   ],
+   "verdict": "FIX 66->'' value_clear (celica: 666 debelo precrtan + 691 rdece precrtan — brez finala; register 66 = delni odsek 666)"
+  },
+  {
+   "page": 29,
+   "rreg": 545,
+   "haus": "28",
+   "owner": "Ring Mito",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "8½",
+    "649"
+   ],
+   "verdict": "FIX 8½->649 (razhajanje 649 vs 64.5 zaprto: trije polni glifi 6-4-9; znak zgoraj = crta/mozn 1/2)"
+  },
+  {
+   "page": 32,
+   "rreg": 586,
+   "haus": "9.",
+   "owner": "Matjaž Marnel",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1144",
+    "744"
+   ],
+   "verdict": "FIX 1144->744 (razhajanje 144 ali 744 zaprto: prvi glif ima zastavico + spustnik = 7, jae prazna)"
+  },
+  {
+   "page": 32,
+   "rreg": 590,
+   "haus": "38",
+   "owner": "Schimer Georg.",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "371",
+    "331"
+   ],
+   "verdict": "FIX 371->331 (stack 331 potrjen: srednja 3 z dvema grbama, ne 7; rdece precrtano)"
+  },
+  {
+   "page": 34,
+   "rreg": 631,
+   "haus": "142",
+   "owner": "Ponter, Martin.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "664",
+    "616"
+   ],
+   "verdict": "FIX 664->616 (razhajanje zadnja 6 vs 4 zaprto: zadnja 6 z zanko; srednja 1 - flourish jo je povezoval z 6)"
+  },
+  {
+   "page": 34,
+   "rreg": 645,
+   "haus": "32",
+   "owner": "Ulrich Georg.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1038",
+    "1088"
+   ],
+   "verdict": "FIX 1038->1088 (razhajanje 1038 vs 1088 zaprto)"
+  },
+  {
+   "page": 44,
+   "rreg": 838,
+   "haus": "1 / 18",
+   "owner": "Schimek Peter.",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "476",
+    "970"
+   ],
+   "verdict": "FIX 476->970 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 44,
+   "rreg": 849,
+   "haus": "1 / 8",
+   "owner": "Tallafschibek Draelte.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1152",
+    "1155"
+   ],
+   "verdict": "FIX 1152->1155 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 51,
+   "rreg": 978,
+   "haus": "",
+   "owner": "Stallpschibek Moorsl[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "236",
+    "288"
+   ],
+   "verdict": "FIX 236->288 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 51,
+   "rreg": 979,
+   "haus": "",
+   "owner": "Stallpschibek Nikolaus[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "72",
+    "52"
+   ],
+   "verdict": "FIX 72->52 (razhajanje 74 vs 52 zaprto: prva 5 z zastavico in bocjo, ne 7; v57 74 in del 2e 72 zavrnjena; rdece precrtano)"
+  },
+  {
+   "page": 51,
+   "rreg": 985,
+   "haus": "",
+   "owner": "Stallpschibek Malga[?]",
+   "jae": [
+    "1",
+    "1"
+   ],
+   "kl": [
+    "1146",
+    "1186"
+   ],
+   "verdict": "FIX 1146->1186 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 52,
+   "rreg": 1007,
+   "haus": "1/16",
+   "owner": "Stallh. Mühle",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "292",
+    "392"
+   ],
+   "verdict": "FIX 292->392 (razhajanje zaprto; rdece precrtano)"
+  },
+  {
+   "page": 54,
+   "rreg": 1037,
+   "haus": "46",
+   "owner": "Ajobatschar Pottra[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "1827",
+    "1877"
+   ],
+   "verdict": "FIX 1827->1877 (razhajanje zaprto: srednja 7 z zastavico; rdece precrtano)"
+  },
+  {
+   "page": 54,
+   "rreg": 1044,
+   "haus": "17",
+   "owner": "Karl Wurmer",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "73",
+    "78"
+   ],
+   "verdict": "FIX 73->78 (razhajanje zaprto: zadnja 8 z dvojno zanko; rdece precrtano)"
+  },
+  {
+   "page": 31,
+   "rreg": 566,
+   "haus": "25",
+   "owner": "Ring Mito[?]",
+   "jae": [
+    "3",
+    "3"
+   ],
+   "kl": [
+    "1785",
+    "1305"
+   ],
+   "verdict": "FIX 1785->1305 (razhajanje 1305 vs 1785 zaprto: 3 odprta krivulja, 0 enojna zanka; zz2-p31-r0-kl + kalibracija r1=391)"
+  },
+  {
+   "page": 43,
+   "rreg": 819,
+   "haus": "68",
+   "owner": "Ulrich Michl",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "273",
+    "313"
+   ],
+   "verdict": "FIX 273->313 (razhajanje 273 vs 313 zaprto: srednja 1)"
+  },
+  {
+   "page": 43,
+   "rreg": 820,
+   "haus": "81",
+   "owner": "Ulrich Parbna.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "98",
+    "32"
+   ],
+   "verdict": "FIX 98->32 (razhajanje 98 vs 32 zaprto)"
+  },
+  {
+   "page": 43,
+   "rreg": 821,
+   "haus": "51",
+   "owner": "Ulrich Parbna.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "156",
+    "462"
+   ],
+   "verdict": "FIX 156->462 (razhajanje 156 vs 462 zaprto: 4 s precico, 6 z ascenderjem)"
+  },
+  {
+   "page": 43,
+   "rreg": 822,
+   "haus": "52",
+   "owner": "Ulrich Georg",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "729",
+    "229"
+   ],
+   "verdict": "FIX 729->229 (razhajanje 729 vs 229 zaprto: prva 2)"
+  },
+  {
+   "page": 43,
+   "rreg": 824,
+   "haus": "61",
+   "owner": "Tillach Michl.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "398",
+    "309"
+   ],
+   "verdict": "FIX 398->309 (razhajanje 398 vs 309 zaprto: 0 enojna zanka, 9 z zanko)"
+  },
+  {
+   "page": 43,
+   "rreg": 825,
+   "haus": "61",
+   "owner": "Tillach Michl.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "242",
+    "542"
+   ],
+   "verdict": "FIX 242->542 (razhajanje 242 vs 542 zaprto: 5 z zastavico)"
+  },
+  {
+   "page": 43,
+   "rreg": 827,
+   "haus": "63",
+   "owner": "Krischan Georg.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "718",
+    "315"
+   ],
+   "verdict": "FIX 718->315 (razhajanje 718 vs 316 zaprto: 3-1-5, zadnja brez ascenderja)"
+  },
+  {
+   "page": 43,
+   "rreg": 828,
+   "haus": "13",
+   "owner": "Schaffschick Mathä.[?]",
+   "jae": [
+    "",
+    ""
+   ],
+   "kl": [
+    "214",
+    "814"
+   ],
+   "verdict": "FIX 214->814 NOVA (prva 8 z dvojno zanko)"
+  },
+  {
+   "page": 43,
+   "rreg": 830,
+   "haus": "8",
+   "owner": "Schaffschick Mathä.[?]",
+   "jae": [
+    "",
+    "1"
+   ],
+   "kl": [
+    "4731",
+    "1977"
+   ],
+   "verdict": "FIX jae ''->1, kl 4731->1977 (razhajanje 4731 vs 1|1977 zaprto; vrednosti rdece precrtane; Furtrag blok: 7|862 precrtan + rdeca 1|1052)"
+  },
+  {
+   "page": 37,
+   "rreg": 688,
+   "haus": "30",
+   "owner": "Bruckler Mathl.[?]",
+   "jae": [
+    "701",
+    ""
+   ],
+   "kl": [
+    "774",
+    "774"
+   ],
+   "verdict": "FIX jae 701->'' (visoki 761 = Übertrag/vrednost iz predhodnega pasu, ne Joch; kl 774 ohranjena — nizko, na pravilu)"
+  },
+  {
+   "page": 36,
+   "rreg": 668,
+   "haus": "29",
+   "owner": "Müllner Samuel",
+   "moot": true,
+   "verdict": "[v121: 657 ohranjena — zadnja 9/7 neresljiva (flourish); 9-moznost ostaja odprta v anm]"
+  },
+  {
+   "page": 47,
+   "rreg": 892,
+   "haus": "69",
+   "owner": "Krischan Matthe.",
+   "moot": true,
+   "verdict": "[v121: 1165 ohranjena — zadnja stevilka pod madezem; v113 1163 ne potrjena ne izkljucena]"
+  },
+  {
+   "page": 54,
+   "rreg": 1054,
+   "haus": "17",
+   "owner": "Onal Naume[?]",
+   "moot": true,
+   "verdict": "[v121: 908 potrjena — spor 716 vs 74/714 zastarel (v114 zdrs atribucije)}"
+  },
+  {
+   "page": 54,
+   "rreg": 1055,
+   "haus": "15",
+   "owner": "Onal Maido[?]",
+   "moot": true,
+   "verdict": "[v121: 283 potrjena — spor 425 vs 908: 908 je r18 vrednost (v114 zdrs)}"
+  },
+  {
+   "page": 53,
+   "rreg": 1029,
+   "haus": "16/17",
+   "owner": "Michaell Maier",
+   "confirm": true
+  },
+  {
+   "page": 53,
+   "rreg": 1030,
+   "haus": "1/15",
+   "owner": "Wenzl Mitterp.",
+   "confirm": true
+  },
+  {
+   "page": 53,
+   "rreg": 1033,
+   "haus": "1/10",
+   "owner": "Wenzl Piberl",
+   "confirm": true
+  },
+  {
+   "page": 53,
+   "rreg": 1034,
+   "haus": "1/19",
+   "owner": "Wenzl Mitterp.",
+   "confirm": true
+  },
+  {
+   "page": 53,
+   "rreg": 1035,
+   "haus": "1/18",
+   "owner": "Wenzl Piberl",
+   "confirm": true
+  }
+ ],
+ "count_fix": 91,
+ "count_total": 100
+}

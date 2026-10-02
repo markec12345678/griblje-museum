@@ -4991,3 +4991,25 @@ Work Log:
 Stage Summary:
 - Val 120 mergan main @ 8e95ad4 (worklog): 2. oči potrjuje imensko plast + strukturo — nič ne spreminjano
 - Naslednje: pasovni vrednostni re-read p3–p55 z bottom-rule anchoringom (F-OCI-05: p31 r0 / p43 r19 / p37 r2) → celicni-zoom 2. oči po potrebi → hiša 70–78 PROVISIONAL → register 26-0326/26-0379 ob javnih poročilih
+
+---
+Task ID: 121-valbands
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 121: pasovni vrednostni re-read PS p3–p55 (F-OCI-05 zaprtje); uporabnik: "nadaljuj kjer si ostal"
+
+Work Log:
+- Rekonstrukcija: main @ 3e30f13 (val 120 mergan); veja feat/val121-valbands-vrednostni-reread že ustvarjena z NEPOTRJENIM delom prejšnje seje (make-valbands-v121.py + crops/ — pasovi p3–p19 + kandidati p31/p37/p43/p49; readings NISO shranjene)
+- Metoda (F-VB infra-nauk): bottom-rule anchoring; 2 infra-lekciji — TOP0 = dno glave (p17: 201, ne 157; fit-lock na glavo), SKEW med stolpci 8–14 px (lokalna pravila stolpca, ne linearni TOP0+STEP na repu: p42/p47 dokaz); pri najhujših primerih IMENSKO SIDRO (p42 r9–r14 z imeni poravnano)
+- Orodja: make-valbands-v121.py (pasovi/trakti/zoom), adj-v121.py (robustno fitanje: maksimizacija zadetkov + snap + c-range fix), strip-v121.py (4-vrstični trakti ×12 s pravili), make-digitcmp-v121.py
+- Branja: 23 strani (p5, p17–p24, p28–p29, p31–p32, p34, p36–p37, p42–p44, p47, p51–p54), ~620 celic; kalibracija: jasne celice morajo brati register (12 anchorjev p17, r9/r10/r11/r13/r14 p19 …)
+- Vgradnja (build-register-v121.py + GUARD deklarirano-staro ≟ register): 91 popravkov (89 kl + 4 jae set + 2 jae clear) + 5 potrditev p53 (zastareli spori — del 2e že vgradil) + 4 ohranitve (p36 r0 flourish, p47 r1 madež, p54 r18/r19 v114 zdrs); 26 NOVA napak izven flaganih sporov (p20 8/20 vrstic napačnih!)
+- F-OCI-05 razrešen: p31 r0 1785→1305, p43 r19 4731→1|1977 (rdeče prečrtan; Fürtrag 7|862 → rdeča 1|1052), p37 r2 705 potrjen
+- SEJSKA NAPAKA + popravek: prva vgradnja za p5/p53 uporabila napačne vrstične indekse (r19 namesto r9; r3/r4/r7/r8 namesto r13/r14/r17/r18) — zaznano z auditom changes vs. disputes + GUARDOM, register povrnjen iz git, popravljeno, ponovno vgrajeno; sporno stanje ni bilo committano
+- Kaskada: c4 v90 (K9 both_filled 56, jaethe_empty 959, klafter_empty 84, gt1599 vsota 15→10) → KG b3e9797e (vsebinsko identična — 0 node/edge/claim difov; samo timestamp+provenance) → story 3762/3471/4 → timeline 8 (I1/I2/I6 ✓) → coverage PASS 8 (manifest 14/14) → runtime sinhronizirana
+- Testi: pini posodobljeni v 19 datotekah (KG sha 596c1ca7→…→b3e9797e, K9, p19/p20/p23/p42/p53 sidri, val120 F-OCI-05 OPEN→ZAPRT, val112 odprte dileme→zaprite) + nov tests/val121-valbands-vrednostni-reread.test.ts (12) — 1317 testov: 1306 pass / 11 skip / 0 fail; lint čist
+- Docs: protokol 144 + KAZALO 144 + README 181. sklop; ta worklog
+
+Stage Summary:
+- Val 121 VGRADJEN: vrednostna plast PS = največji posamezni popravek od val 113 (89 kl + 6 jae); F-OCI-05 ZAPRT (protokol 144); NR-14 ostaja za imena (črkovalnica)
+- KG vsebinsko identična (b3e9797e); TRANSCRIBED=0; register sha fb439f80 → novi (vgradnja)
+- Naslednje: hiša 70–78 (PROVISIONAL h72/74/76) → p3–p16 vrednostni sweep (nizka prioriteta) → register 26-0326/26-0379 ob javnih poročilih → črkovalna sodba imen (NR-14)

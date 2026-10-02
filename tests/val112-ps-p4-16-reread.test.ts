@@ -302,11 +302,11 @@ describe("val 112 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha c3932092… (pogodba §22, val 119 del 2e)", () => {
+  test("kaskadni artefakti držijo isti KG sha b3e9797e… (pogodba §22, val 119 del 2e)", () => {
     const { createHash } = require("node:crypto") as typeof import("node:crypto");
     const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
     const kgSha = sha(join(root, "research-griblje/atlas-1825/knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^596c1ca7/);
+    expect(kgSha).toMatch(/^b3e9797e/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
@@ -337,9 +337,11 @@ describe("val 112 — iskrenost §4", () => {
     expect(j.meta.method).toContain("agentov");
   });
 
-  test("odprte dileme ostajajo odprte (p5 r9 248[?] vs 2245, p5 r15 625[?] vs 1350, p4 haus 35/41)", () => {
-    expect(byPage(5)[9].anmerkung).toContain("razhajanje 248[?] vs 2245 — odprto");
-    expect(byPage(5)[15].anmerkung).toContain("neujemljivo 625[?] vs 1350 — odprto");
+  test("odprte dileme val 112/113 ZAPRTE v val 121 (pasovni re-read: p5 r9 245, p5 r15 625); p4 haus 35/41 ostajata odprti", () => {
+    expect(byPage(5)[9].anmerkung).toContain("— ZAPRTO val 121");
+    expect(byPage(5)[9].klafter).toBe("245");
+    expect(byPage(5)[15].anmerkung).toContain("— ZAPRTO val 121");
+    expect(byPage(5)[15].klafter).toBe("625");
     expect(byPage(4)[12].anmerkung).toContain("negotovo, potreben obisk");
     expect(byPage(4)[13].anmerkung).toContain("negotovo, potreben obisk");
   });
