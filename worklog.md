@@ -4899,3 +4899,23 @@ Stage Summary:
 - Val 119 del 2d-x3 MERGAN; main @ 89584bf; PR #128; F-NA-01 ZAPRT (protokol 140)
 - v119-names 545→609 (PS p44–p49 imensko + vrednostno pokrite: 124 vrstic), v114 122, v115 0; razhajanja 71 (vsa anmerkung); TRANSCRIBED=0, 0 VLM; KG vsebinsko stabilna (samo 2 RESIDENCE prevezavi), K5 207, K9 53
 - Naslednje: del 2e = p50–p55 (parzelle-sidr 942+, dvojni sidr metoda) → nato PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379 → VLM 2. oči vzorec (NR-14)
+
+---
+Task ID: 119-del2e
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2e)
+Task: griblje-museum — val 119 del 2e: celoviti re-read PS p50–p55 z DVOJNIM SIDROM (ime+vrednost), F-NA-03 + F-FÜRTRAG + publikacijska kaskada (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija: main @ ba4c845 (del 2d-x3 mergan @ 89584bf); veja feat/val119-del2e-ps-p50-55 že ustvarjena z NEPOTRJENIM delom prejšnje seje (odtekla ~16:52): readings p50–p55 že prebrani (x3, 0 VLM), build-register-v119-del2e.py že zagnan (register + changes JSON + c4-metrika sveži 16:52–16:53) — NISO bili: kaskada KG/story/timeline/coverage, testi, pini, docs, commit, publikacija
+- Verifikacija obstoječega dela: register invariante (2875; v119 731, v114 0, v115 0, v118 60, v86 1795, ditto 207), changes 316 (81 owner + 38 haus + 89 vrednosti + 100 anm; 122 vrstic p50–p55), vrednostni asserti v build skripti — vse konsistentno
+- Kaskada (izrecna): build-knowledge-graph (KG sha 62d8cfea → c3932092, vsebina IDENTIČNA — timestamp-only; builder bere iz ps-registra samo wohnort, ki del 2e ni dotaknil; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično; R-03433/R-03434 ostajata) → build-story-graph (3269/3477/4 atomi) → build-timeline (8 točk, I1/I2/I6 ✓) → build-coverage (PASS 8, vsebinsko identičen, PARTIAL 1067)
+- Nov test tests/val119-del2e-ps-names-p50-55.test.ts (14): guardi changes-audita (316 = 79 owner-fix + 36 haus-fix + 67 value-fix + 23 value-clear + 100 anm + 5 fürtrag-clear + 6 page_obs), plasti (731/0/0/60/1795/207), readings meta (0 VLM, 21/20/20/20/21/20), ključne vrstice vseh 6 strani (F-NA-03 rebuild p54, F-FÜRTRAG pasovi, ertrag 3-568/1-1377/1-600/—239/1-463, cfl@p55-r9 pociscen), imenska cross-val, snimke (530/26/72/20/23/12), razhajanja 99, KG/c4/story kaskada
+- Pini posodobljeni v 16 testnih datotekah: plasti (609→731 ×6, v114 122→0 ×5), KG sha 62d8cfea→c3932092 (×12), K9 (both_filled 52, jaethe_empty 961, klafter_empty 85, le99 62/179), K5 bloki 2607, razhajanja 99, snimke; val114 vsebinski re-sidrani (p50-r20 = Fürtrag jae 4|kl 386 — fantom-ime počiščen ostaja; p52-r16 1205→1305 s snimko; p55-r0 29→39 s snimko); prvi tek pokazal 4 fail (vsi val114 vsebinski pine) → popravki → 1282 testov: 1271 pass / 11 skip / 0 fail
+- Docs: protokol 141 (6 sekcij: struktura p50–p55 tabela, F-NA-03, imenska plast, vgradnja+kaskada, iskrenost, naslednje) + KAZALO vnos 141 + README 178. sklop
+- Kaskada: lint čist; commit 2d02982 → push (token) → PR #129 → CI 3/3 ZELENO na PRVEM TEKU (tipi+lint+enotni testi; dimni testi API-jev; Vercel Preview) → MERGE @ 8d18759 (merge commit) → remote veja izbrisana (204) + lokalna izbrisana → main sinhroniziran
+
+Stage Summary:
+- Val 119 del 2e MERGAN; main @ 8d18759; PR #129; CI 3/3 zeleno na prvem teku (brez popravkov)
+- PS p25–p55 POKRITE imensko + vrednostno: v119-names 731 (731/2875), v114 0, v115 0; razhajanja 99 (vsa anmerkung); TRANSCRIBED=0, 0 VLM
+- KG vsebinsko IDENTIČNA (timestamp-only sha c3932092); K5 207 (bloki 2607), K9 53/1/52/961/85
+- Naslednje: PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379 → VLM 2. oči vzorec (NR-14) → F3 medstranska poravnava
