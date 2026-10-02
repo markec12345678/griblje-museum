@@ -231,8 +231,8 @@ describe("val 113 — kaskada (izrecna)", () => {
   test("KG: PARCEL 2436, HAS_PARCEL 2775, vozlišča 3278, vezi 3479 (val 114 kaskada)", () => {
     expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
-    expect(kg.nodes.length).toBe(3269); // val 115: 3268 → 3269 (nova parcela brez haus_no)
-    expect(kg.edges.length).toBe(3477); // val 115: nespremenjeno
+    expect(kg.nodes.length).toBe(3762); // val 115: 3268 → 3269 (nova parcela brez haus_no)
+    expect(kg.edges.length).toBe(3471); // val 115: nespremenjeno
   });
 
   test("timeline I6 zatiči: PUA 2035 / PS 392 / raba 173+142 (val 115)", () => {

@@ -149,16 +149,16 @@ describe("generateEntityStory — vsebina (§16/§17)", () => {
     expect(sum).toBe(allItems.length);
   });
 
-  test("lastnistvo: dokumentirani lastniki iz PUA in PS (C-00083/C-00154)", () => {
+  test("lastnistvo: dokumentirani lastniki iz PUA in PS (C-00083/C-00153 — PS claim re-id @ val 119 del 3, 614 claimov)", () => {
     const ownership = story.sections.find((s) => s.title === "Lastništvo 1825");
     expect(ownership).toBeDefined();
     const claimIds = allItems.flatMap((i) => i.claim_ids);
     expect(claimIds).toContain("C-00083"); // PUA: Pfarrer Rupert Sautter
-    expect(claimIds).toContain("C-00154"); // PS: Peter Muster (CONFLICT)
-    // osebi sta razrešeni na osebni graf
+    expect(claimIds).toContain("C-00153"); // PS: Peter Muster (CONFLICT; prej C-00154 @622 claimov)
+    // osebi sta razrešeni na osebni graf (PER-0059 PUA + PER-0586 PS v119 sync; prej PER-0157 pass2)
     const entityIds = allItems.flatMap((i) => i.entity_ids ?? []);
     expect(entityIds).toContain("PER-0059");
-    expect(entityIds).toContain("PER-0157");
+    expect(entityIds).toContain("PER-0586");
   });
 
   test("BP vezave: 94 (CONFIRMED) dokazana, 91/95 konfliktni (§3)", () => {
@@ -171,8 +171,8 @@ describe("generateEntityStory — vsebina (§16/§17)", () => {
     expect(bp91!.tier).toBe("KONFLIKTNO");
     const bp95 = osnovni!.items.find((i) => i.text.includes("BP 95"));
     expect(bp95!.tier).toBe("KONFLIKTNO");
-    // claim traceability: C-00609 (BP:094 BP_BOUND_TO_HOUSE H-040)
-    expect(bp94!.claim_ids).toContain("C-00609");
+    // claim traceability: C-00601 (BP:094 BP_BOUND_TO_HOUSE H-040; prej C-00609 @622 claimov)
+    expect(bp94!.claim_ids).toContain("C-00601");
   });
 
   test("§17: 'Kaj še ne vemo' sekcija obstaja z izrecnim neznanjem", () => {
@@ -286,10 +286,10 @@ describe("generateVillageStory (§18)", () => {
     expect(story.sections[9].title).toContain("Neznanke");
   });
 
-  test("številke prihajajo iz grafa: 167 hiš, 488 oseb, 2428 parcel, 34 objektov, 5 listov (val 114)", () => {
+  test("številke prihajajo iz grafa: 167 hiš, 981 oseb, 2427 parcel, 34 objektov, 5 listov (val 119 del 3 sync)", () => {
     const allText = story.sections.flatMap((s) => s.items.map((i) => i.text)).join(" ");
     expect(allText).toContain("167 hiš");
-    expect(allText).toContain("488 oseb");
+    expect(allText).toContain("981 oseb");
     expect(allText).toContain("2427 parcel");
     expect(allText).toContain("34 MAP_OBJECT");
     const listi = story.sections[1].items;
@@ -327,9 +327,9 @@ describe("generateVillageStory (§18)", () => {
     expect(neznanka[2].text).toContain(`${conflictClaims} konfliktnih trditev`);
   });
 
-  test("contract: village zgodba EVIDENCED (ima C-00622 + source)", () => {
+  test("contract: village zgodba EVIDENCED (ima C-00614 + source; prej C-00622 @622 claimov)", () => {
     expect(story.contract.story_status).toBe("EVIDENCED");
-    expect(story.contract.used_claim_ids).toContain("C-00622");
+    expect(story.contract.used_claim_ids).toContain("C-00614");
     expect(story.contract.used_source_ids.length).toBeGreaterThan(3);
     expect(story.contract.input_entity_ids).toEqual([]);
     expect(story.contract.kg_sha256).toBe(sgf.provenance.kg_sha256);

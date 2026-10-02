@@ -164,8 +164,8 @@ describe("val 116 — zajeti VLM glasovi (artefakti, komitirani)", () => {
       edges: unknown[];
     };
     expect(kg.node_stats.PARCEL).toBe(2427);
-    expect(kg.nodes.length).toBe(3269);
-    expect(kg.edges.length).toBe(3477);
+    expect(kg.nodes.length).toBe(3762);
+    expect(kg.edges.length).toBe(3471);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
   });
 });

@@ -219,12 +219,12 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     };
     expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
-    expect(kg.nodes.length).toBe(3269);
-    expect(kg.edges.length).toBe(3477);
+    expect(kg.nodes.length).toBe(3762);
+    expect(kg.edges.length).toBe(3471);
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^c3932092/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^596c1ca7/);
   });
 
   test("kaskadni artefakti držijo isti KG sha c3932092… (pogodba §22)", () => {
@@ -259,8 +259,8 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     const sg = JSON.parse(readFileSync(join(ROOT, "src/data/story-graph-1825.json"), "utf8")) as {
       stats?: { entities?: number; relations?: number };
     };
-    expect(sg.stats?.entities).toBe(3269);
-    expect(sg.stats?.relations).toBe(3477);
+    expect(sg.stats?.entities).toBe(3762);
+    expect(sg.stats?.relations).toBe(3471);
   });
 
   test("c4 K9: jaethe_plain_100_1599 69 → 53 (val 119 del 2d-x3: p48 F-NA-02 rebuild — v114 jae = klafter); oblike premaknjene v klafter razrede", () => {

@@ -98,13 +98,13 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
 describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
   test("KG sha c3932092 raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> c3932092 @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
     const kg = sha256("src/data/knowledge-graph-1825.json").slice(0, 8);
-    expect(kg).toBe("c3932092");
+    expect(kg).toBe("596c1ca7");
     const sg = readJSON("src/data/story-graph-1825.json") as {
       entities: unknown[];
       relations: unknown[];
     };
-    expect(sg.entities.length).toBe(3269);
-    expect(sg.relations.length).toBe(3477);
+    expect(sg.entities.length).toBe(3762);
+    expect(sg.relations.length).toBe(3471);
   });
 
   test("pass3: PS vir nespremenjen; K5 dito 207; K9 69 nespremenjen", () => {

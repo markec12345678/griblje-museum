@@ -459,11 +459,11 @@ ok(
 /* --- 5i. /api/atlas/story-graph — PASS 6 pripovedni graf (val 68, #42 §21) --- */
 const sgOverview = await getJson("/api/atlas/story-graph");
 ok(
-  "atlas story-graph: pregled — 3.269 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 115: vstavljene vrstice p34/p40/p48/p49, +1 PARCEL brez haus_no)",
+  "atlas story-graph: pregled — 3.762 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 119 del 3 sync: osebna plast 981; prej 3.269 @ val 115)",
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
-    sgOverview.body?.stats?.entities === 3269 &&
-    sgOverview.body?.stats?.relations === 3477 &&
+    sgOverview.body?.stats?.entities === 3762 &&
+    sgOverview.body?.stats?.relations === 3471 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
   `status=${sgOverview.status} entities=${sgOverview.body?.stats?.entities}`
@@ -491,18 +491,18 @@ ok(
 
 const sgPersons = await getJson("/api/atlas/story-graph?type=PERSON&limit=5000");
 ok(
-  "atlas story-graph: 488 oseb (projekcija KG, nič novih trditev)",
-  sgPersons.status === 200 && sgPersons.body?.count === 488,
+  "atlas story-graph: 981 oseb (projekcija KG — val 119 del 3 PUA↔PS sync, prej 488 pass2)",
+  sgPersons.status === 200 && sgPersons.body?.count === 981,
   `count=${sgPersons.body?.count}`
 );
 
 const sgGemeinde = await getJson("/api/atlas/story-graph?relation=IS_GEMEINDE_OF");
 ok(
-  "atlas story-graph: IS_GEMEINDE_OF z claimom C-00622 (KG-F07 claim-first fix)",
+  "atlas story-graph: IS_GEMEINDE_OF z claimom C-00614 (KG-F07 claim-first fix; prej C-00622 @622 claimov)",
   sgGemeinde.status === 200 &&
     sgGemeinde.body?.count === 1 &&
     sgGemeinde.body?.relations?.[0]?.from_entity === "TP-001" &&
-    JSON.stringify(sgGemeinde.body?.relations?.[0]?.claim_ids) === '["C-00622"]' &&
+    JSON.stringify(sgGemeinde.body?.relations?.[0]?.claim_ids) === '["C-00614"]' &&
     typeof sgGemeinde.body?.relations?.[0]?.date_period === "string" &&
     sgGemeinde.body?.relations?.[0]?.source_ids?.length >= 3,
   `status=${sgGemeinde.status}`
@@ -514,7 +514,7 @@ ok(
   sgAtoms.status === 200 &&
     sgAtoms.body?.count === 4 &&
     (sgAtoms.body?.story_atoms ?? []).every((a: any) => a.provenance_complete === true) &&
-    (sgAtoms.body?.story_atoms ?? []).some((a: any) => a.story_id === "SA-004" && JSON.stringify(a.claim_ids) === '["C-00622"]'),
+    (sgAtoms.body?.story_atoms ?? []).some((a: any) => a.story_id === "SA-004" && JSON.stringify(a.claim_ids) === '["C-00614"]'),
   `status=${sgAtoms.status}`
 );
 
@@ -553,7 +553,7 @@ ok(
     seH40.body?.contract?.story_status === "EVIDENCED" &&
     seH40.body?.contract?.story_id?.startsWith("SE-") &&
     (seH40.body?.contract?.used_claim_ids ?? []).includes("C-00083") &&
-    (seH40.body?.contract?.used_claim_ids ?? []).includes("C-00154") &&
+    (seH40.body?.contract?.used_claim_ids ?? []).includes("C-00153") &&
     seH40.body?.tier_breakdown?.KONFLIKTNO > 0 &&
     seH40.body?.tier_breakdown?.NEZNANO > 0,
   `status=${seH40.status} story_id=${seH40.body?.contract?.story_id}`
@@ -583,11 +583,11 @@ ok(
 
 const seVillage = await getJson("/api/atlas/story?scope=village");
 ok(
-  "atlas story: zgodba vasi (§18) — 10 sekcij + EVIDENCED + C-00622 + raba ločena",
+  "atlas story: zgodba vasi (§18) — 10 sekcij + EVIDENCED + C-00614 + raba ločena",
   seVillage.status === 200 &&
     seVillage.body?.sections?.length === 10 &&
     seVillage.body?.contract?.story_status === "EVIDENCED" &&
-    (seVillage.body?.contract?.used_claim_ids ?? []).includes("C-00622") &&
+    (seVillage.body?.contract?.used_claim_ids ?? []).includes("C-00614") &&
     (seVillage.body?.sections ?? []).some((s: any) => s.title.includes("Raba zemljišča") && s.items.length >= 2),
   `status=${seVillage.status} sections=${seVillage.body?.sections?.length}`
 );
@@ -639,11 +639,12 @@ ok(
   `status=${covOverview.status} categories=${covOverview.body?.summary?.categories}`
 );
 ok(
-  "atlas coverage: hiše 167 (49 CONFLICT / 73 UNKNOWN — brez procentov, #43 §10)",
+  "atlas coverage: hiše 167 (33 CONFLICT / 73 UNKNOWN — brez procentov, #43 §10; val 119 del 3: +16 AGREE→VER)",
   covOverview.status === 200 &&
     covHouses?.total === 167 &&
-    covHouses?.CONFLICT === 49 &&
+    covHouses?.CONFLICT === 33 &&
     covHouses?.UNKNOWN === 73 &&
+    covHouses?.VERIFIED === 16 &&
     typeof covHouses?.mapping_rule === "string",
   `status=${covOverview.status} houses=${covHouses?.total}`
 );

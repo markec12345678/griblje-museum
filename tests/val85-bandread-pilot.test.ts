@@ -243,7 +243,7 @@ describe("val 85 — poštenost §4 + §22 (nič ne beži v runtime)", () => {
   });
 
   test("KG v2.4 (val 119 del 2e kaskada): sha c3932092… + metapodatki", () => {
-    expect(kgSha.startsWith("c3932092")).toBe(true); // val 119 del 2e KG (timestamp-only; val 2d-x3 je bil 62d8cfea, val 114 376e2b27, val 112 5ae52bd8, val 108 v2.4 (9f856d28), val 89 v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad))
+    expect(kgSha.startsWith("596c1ca7")).toBe(true); // val 119 del 2e KG (timestamp-only; val 2d-x3 je bil 62d8cfea, val 114 376e2b27, val 112 5ae52bd8, val 108 v2.4 (9f856d28), val 89 v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad))
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as { val: number; title: string };
     expect(kg.val).toBe(108); // val 107: 86b del 3 — tile 3. glas p110–141
     expect(kg.title).toBe("knowledge-graph-1825 v2.4");

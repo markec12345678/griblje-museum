@@ -263,9 +263,9 @@ describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", 
 
 describe("val 119 del 2e — kaskada (izrecna)", () => {
   test("KG sha c3932092: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^c3932092/);
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^596c1ca7/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^c3932092/,
+      /^596c1ca7/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -274,8 +274,8 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
       edge_stats: Record<string, number>;
       invariant_violations: unknown[];
     };
-    expect(kg.nodes.length).toBe(3269);
-    expect(kg.edges.length).toBe(3477);
+    expect(kg.nodes.length).toBe(3762);
+    expect(kg.edges.length).toBe(3471);
     expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
     expect(kg.invariant_violations).toEqual([]);
@@ -317,8 +317,8 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
       entities: unknown[];
       relations: unknown[];
     };
-    expect(sg.entities.length).toBe(3269);
-    expect(sg.relations.length).toBe(3477);
+    expect(sg.entities.length).toBe(3762);
+    expect(sg.relations.length).toBe(3471);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("src/data/timeline-1825-1830.json") as {
       provenance?: { kg_sha256?: string };

@@ -865,6 +865,9 @@ export function generateVillageStory(): VillageStory {
 
   /* 1. Pokrajina in kraj (§18.1) */
   const gemeinde = toponyms.find((t) => t.node_id === "TP-001");
+  // claim-first: IS_GEMEINDE_OF claim id se bere iz KG (C-00614 @614 trditev; prej C-00622 @622 — val 119 del 3)
+  const gemeindeClaimId =
+    kg.claims.find((c: { predicate: string }) => c.predicate === "IS_GEMEINDE_OF")?.claim_id ?? null;
   sections.push({
     title: "1. Pokrajina in kraj",
     items: [
@@ -872,7 +875,7 @@ export function generateVillageStory(): VillageStory {
         `Gemeinde GRÜBLE (Griblje) v Beli krajini, Illyrien — ${toponyms.length} registriranih toponimov 1825; meja občine dokumentirana v PR (Grenz-Beschreibung, točke No.1–21)`,
         gemeinde?.evidence_status ?? "VERIFIED_FORM",
         ["SRC-PR", "SRC-A01"],
-        ["C-00622"],
+        gemeindeClaimId ? [gemeindeClaimId] : [],
         ["TP-001", "TP-003"]
       ),
       item(
@@ -1007,7 +1010,7 @@ export function generateVillageStory(): VillageStory {
       breakdownItem(
         `${kg.claims.length} trditev in ${kg.edges.length} relacij v pripovednem grafu (§21: vsaka z virom + zaupanjem + obdobjem)`,
         claimPredicates,
-        ["C-00622"],
+        gemeindeClaimId ? [gemeindeClaimId] : [],
         []
       ),
     ],

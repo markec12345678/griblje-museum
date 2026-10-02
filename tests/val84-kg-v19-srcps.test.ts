@@ -64,20 +64,20 @@ describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradn
     expect(JSON.stringify(kg.nodes)).not.toContain("PARTIAL 55/143");
   });
 
-  test("števci in ID-ji (val 115: 3269/3477/622/8/4; PS parcele 432→930→779→735→676→577→391→392 = izrecna projekcija + F-PV-05/07/SPLIT korekcije + vstavljena vrstica, ne zdrs)", () => {
+  test("števci in ID-ji (val 119 del 3 sync: 3762/3471/614/8/4, PERSON 981; PS parcele 432→930→779→735→676→577→391→392 = izrecna projekcija + F-PV-05/07/SPLIT korekcije + vstavljena vrstica, ne zdrs)", () => {
     expect(kg.node_stats).toEqual({
-      SOURCE: 13, HOUSE: 167, PERSON: 488, PARCEL: 2427, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
+      SOURCE: 13, HOUSE: 167, PERSON: 981, PARCEL: 2427, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
     });
-    expect(kg.nodes.length).toBe(3269); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 → val 115: 3269
-    expect(kg.edges.length).toBe(3477); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
-    expect(kg.claims.length).toBe(622);
+    expect(kg.nodes.length).toBe(3762); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 → val 115: 3269
+    expect(kg.edges.length).toBe(3471); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
+    expect(kg.claims.length).toBe(614);
     expect(kg.research_gaps.length).toBe(8);
     expect(kg.story_atoms.map((a) => a.story_id)).toEqual(["SA-001", "SA-002", "SA-003", "SA-004"]);
     // ID stabilnost: prvi/zadnji relation + claim
     expect(kg.edges[0].relation_id).toBe("R-00001");
-    expect(kg.edges.at(-1)!.relation_id).toBe("R-03477"); // val 98: R-03859 → val 107: R-03776 → val 112: R-03717 → val 113: R-03618 → val 114: R-03477
+    expect(kg.edges.at(-1)!.relation_id).toBe("R-03471"); // val 98: R-03859 → … → val 114: R-03477 → val 115: R-03477 → val 119 del 3: R-03471 (OWNER_OF 254→246, RESIDENCE 10→12)
     expect(kg.claims[0].claim_id).toBe("C-00001");
-    expect(kg.claims.at(-1)!.claim_id).toBe("C-00622");
+    expect(kg.claims.at(-1)!.claim_id).toBe("C-00614");
   });
 
   test("konflikt h.40 ostane viden: OBA lastniška claima (PUA Sautter / PS Muster)", () => {

@@ -218,27 +218,28 @@ describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)
 });
 
 describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
-  test("KG sha c3932092 (62d8cfea @2d-x3 -> timestamp-only @2e; 2 RESIDENCE relaciji TP-029 ostajata prevezani: R-03433/R-03434); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^c3932092/);
+  test("KG sha 596c1ca7 (c3932092 @2e -> val 119 del 3 PUA↔PS sync: osebna plast 488→981; RESIDENCE TP-029 zdaj 4 per-name osebe: R-03425..R-03428); 3762/3471/2427/2773", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^596c1ca7/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^c3932092/,
+      /^596c1ca7/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
-      edges: { relation_id: string; from_entity: string }[];
+      edges: { relation_id: string; from_entity: string; relation_type?: string; to_entity?: string }[];
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
       invariant_violations: unknown[];
     };
-    expect(kg.nodes.length).toBe(3269);
-    expect(kg.edges.length).toBe(3477);
+    expect(kg.nodes.length).toBe(3762);
+    expect(kg.edges.length).toBe(3471);
     expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
     expect(kg.invariant_violations).toEqual([]);
-    const r433 = kg.edges.find((e) => e.relation_id === "R-03433");
-    const r434 = kg.edges.find((e) => e.relation_id === "R-03434");
-    expect(r433?.from_entity).toBe("PER-0177");
-    expect(r434?.from_entity).toBe("PER-0235");
+    // val 119 del 3: wohnort Zagorje vrstice se sedaj vežejo na per-name osebe iz tiste (page,haus) —
+    // Lubreschibek Maathe. / Heide Marko. / Krischan Matthe. / Weidner Mathä. (v119 imena; prej 2 hišni osebi PER-0177/PER-0235)
+    const zag = kg.edges.filter((e) => e.relation_type === "RESIDENCE_DOCUMENTED_AT" && e.to_entity === "TP-029");
+    expect(zag.length).toBe(4);
+    expect(zag.map((e) => e.from_entity).sort()).toEqual(["PER-0345", "PER-0347", "PER-0348", "PER-0402"]);
   });
 
   test("c4-metrika regenerirana: register sha sledi; K5 dito 207 (bloki 2608); K9 p1-55 jaethe_100_1599 69→53, gt1599 16→15", () => {
@@ -272,8 +273,8 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
       relations: unknown[];
       stats?: { entities?: number; relations?: number };
     };
-    expect(sg.entities.length).toBe(3269);
-    expect(sg.relations.length).toBe(3477);
+    expect(sg.entities.length).toBe(3762);
+    expect(sg.relations.length).toBe(3471);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("src/data/timeline-1825-1830.json") as {
       provenance?: { kg_sha256?: string };

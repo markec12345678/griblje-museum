@@ -74,10 +74,10 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
     expect(graph.provenance.kg_sha256).toMatch(/^[a-f0-9]{64}$/);
   });
 
-  test("entitete po vrsti ujemajo KG (3.553 skupaj)", () => {
+  test("entitete po vrsti ujemajo KG (3.762 skupaj — val 119 del 3: PERSON 981)", () => {
     const by = graph.stats.entities_by_type;
     expect(by["PARCEL"]).toBe(2427); // val 98: 2933 → val 107: 2770 → val 112: 2711 → val 114: 2426 → val 115: 2427
-    expect(by["PERSON"]).toBe(488);
+    expect(by["PERSON"]).toBe(981); // val 119 del 3 sync: 98 PUA + 656 PS v119 + 227 PT; prej 488
     expect(by["HOUSE"]).toBe(167);
     expect(by["BP"]).toBe(100);
     expect(by["TOPONYM"]).toBe(37);
@@ -118,10 +118,10 @@ describe("story-graph: §21 invarianti relacij", () => {
     expect(used.size).toBe(kgFile.claims.length);
   });
 
-  test("relacije po tipu: HAS_PARCEL 3.013, OWNER_OF 254, BP_BOUND_TO_HOUSE 119 …", () => {
+  test("relacije po tipu: HAS_PARCEL 2.773, OWNER_OF 246 (val 119 del 3: 254→246, 8 zastarelih PS OWNER_OF prek ps_stale), BP_BOUND_TO_HOUSE 119 …", () => {
     const by = graph.stats.relations_by_type;
     expect(by["HAS_PARCEL"]).toBe(2773); // val 98: 3155 → val 107: 3072 → val 112: 3013 → val 114: 2773
-    expect(by["OWNER_OF"]).toBe(254);
+    expect(by["OWNER_OF"]).toBe(246);
     expect(by["OWNER_VARIANT_OF"]).toBe(224);
     expect(by["BP_BOUND_TO_HOUSE"]).toBe(119);
     expect(by["CORRESPONDS_TO_BP"]).toBe(21);
@@ -150,11 +150,11 @@ describe("story-graph: story atomi (§43 §8/§11, §22)", () => {
     }
   });
 
-  test("SA-004 (KG-F07) ima povezan claim C-00622 (IS_GEMEINDE_OF TP-001→TP-003)", () => {
+  test("SA-004 (KG-F07) ima povezan claim C-00614 (IS_GEMEINDE_OF TP-001→TP-003; prej C-00622 @622 claimov)", () => {
     const sa4 = graph.story_atoms.find((a) => a.story_id === "SA-004")!;
-    expect(sa4.claim_ids).toEqual(["C-00622"]);
+    expect(sa4.claim_ids).toEqual(["C-00614"]);
     const rel = graph.relations.find((r) => r.relation_type === "IS_GEMEINDE_OF")!;
-    expect(rel.claim_ids).toEqual(["C-00622"]);
+    expect(rel.claim_ids).toEqual(["C-00614"]);
     expect(rel.from_entity).toBe("TP-001");
     expect(rel.to_entity).toBe("TP-003");
   });
@@ -217,8 +217,8 @@ describe("story-graph: lib — sosednost (vhod za Story Engine §16)", () => {
 });
 
 describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
-  test("storyEntities po vrsti + limit", () => {
-    expect(storyEntities("PERSON", 5000).length).toBe(488);
+  test("storyEntities po vrsti + limit (PERSON 981 @ val 119 del 3)", () => {
+    expect(storyEntities("PERSON", 5000).length).toBe(981);
     expect(storyEntities("HOUSE").length).toBe(167); // manj kot limit → vse
     expect(storyEntities("PERSON").length).toBe(200); // default limit kapira
     expect(storyEntities("EVENT", 10).length).toBe(3);
@@ -252,7 +252,7 @@ describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
     const ov = storyGraphOverview();
     expect(ov.ok).toBe(true);
     expect(ov.val).toBe(68);
-    expect(ov.stats.entities).toBe(3269); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 114: 3268 → val 115: 3269
+    expect(ov.stats.entities).toBe(3762); // val 119 del 3 sync: 981 oseb (prej 3269 @ val 115; 3553 @ val 112; 3612 @ val 107; 3775 @ val 98)
     expect(ov.stats.story_atoms).toBe(4);
     const contract = ov.story_engine_contract as { required_fields: string[] };
     for (const f of ["story_id", "input_entity_ids", "used_claim_ids", "used_source_ids", "generation_timestamp", "prompt_version", "story_status"]) {
