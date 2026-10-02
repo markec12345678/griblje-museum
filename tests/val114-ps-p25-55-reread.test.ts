@@ -76,8 +76,8 @@ describe("val 114 — gardele in infrastruktura", () => {
     }
   });
 
-  test("reading_pass v114-ps-reread: 184 vrstic (p25–p55 minus p32–p55 po val 119 del 2b+2c+2d-x2; p19 = 20 prevzetih v118-names, val 118)", () => {
-    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(184);
+  test("reading_pass v114-ps-reread: 122 vrstic (p25–p31 + p33–p39 + p41–p43 ostanejo; p32–p55 po val 119 del 2b+2c+2d-x2+2d-x3; p19 = 20 prevzetih v118-names, val 118)", () => {
+    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(122);
   });
 });
 
@@ -160,38 +160,49 @@ describe("val 114 — strukturna forenzika: izpuščene vrstice (brez vstavljanj
     expect(f(rows[20], "haus_no")).toBe("1/65");
   });
 
-  test("p48: 21 vrstic (v114 obs) — v57 izpustil p2 ('12'); val 115: +1 vstavljena p2 na r2 → 22 vrstic; mapirani popravki (733, 10, 1269, 678, 185, 189)", () => {
+  test("p48: 21 vrstic (v114 obs) — v57 izpustil p2 ('12'); val 115: +1 vstavljena p2 na r2; val 119 del 2d-x3 F-NA-02: v114 jae kolona = klafter zamaknjena +1 → rebuild (klafter kolona)", () => {
     const obs = f(byPage(48)[0], "page_observations_v114");
     expect(obs).toContain('p2 (vrednost "12"');
     const rows = byPage(48);
-    // v115: vstavljena vrstica na r2 ("12", ~Schmipa[?])
-    expect(f(rows[2], "jaethe")).toBe("12");
-    expect(f(rows[2], "reading_pass")).toBe("v115-insert");
-    expect(f(rows[3], "jaethe")).toBe("733");
-    expect(f(rows[4], "jaethe")).toBe("10");
-    expect(f(rows[14], "jaethe")).toBe("1269");
-    expect(f(rows[15], "jaethe")).toBe("678");
-    expect(f(rows[16], "jaethe")).toBe("185");
-    expect(f(rows[18], "jaethe")).toBe("189");
+    // x3: vstavljena vrstica r2 prebrana (v119-names); vrednostna plast popolnoma re-sidrana
+    expect(f(rows[2], "jaethe")).toBe(""); // F-NA-02: vse p48 jae pociscene
+    expect(f(rows[2], "klafter")).toBe("733");
+    expect(f(rows[2], "reading_pass")).toBe("v119-names");
+    // dokaz zamika +1: stare v114 'jaethe' vrednosti = x3 klafter za eno vrstico višje
+    expect(f(rows[2], "jaethe_pre_v119")).toBe("12"); // prava 912-vrstica = r1
+    expect(f(rows[1], "klafter")).toBe("12");
+    expect(f(rows[3], "klafter")).toBe("10");
+    expect(f(rows[4], "klafter")).toBe("439");
+    expect(f(rows[13], "klafter")).toBe("1269");
+    expect(f(rows[14], "klafter")).toBe("678");
+    expect(f(rows[15], "klafter")).toBe("155"); // x3 stevkni popravek (v114 185)
+    expect(f(rows[17], "klafter")).toBe("159"); // x3 stevkni popravek (v114 189)
     // sidri pod mapiranjem
-    expect(f(rows[5], "jaethe")).toBe("439");
-    expect(f(rows[13], "jaethe")).toBe("1490");
-    expect(f(rows[20], "jaethe")).toBe("280");
+    expect(f(rows[5], "klafter")).toBe("533");
+    expect(f(rows[12], "klafter")).toBe("1492"); // x3 stevkni popravek (v114 1490)
+    expect(f(rows[19], "klafter")).toBe("280");
+    expect(f(rows[20], "klafter")).toBe(""); // 901: visoko '1534' = opuščen poskus (anm), klafter ← 219 @ r0
   });
 
-  test("p49: 21 vrstic (v114 obs) — v57 izpustil preklicano p2 ('2|973'); val 115: +1 vstavljena p2 na r2 → 22 vrstic; mapirani popravki (591, 1553, 412)", () => {
+  test("p49: 21 vrstic (v114 obs) — v57 izpustil preklicano p2 ('2|973'); val 115: +1 vstavljena p2 na r2; val 119 del 2d-x3 F-NA-01: v114 vrednosti od r10 zamaknjene +1 → rebuild (poravnana cona r0–r8 identična)", () => {
     const obs = f(byPage(49)[0], "page_observations_v114");
     expect(obs).toContain("PREČRTANO vrstico p2");
     const rows = byPage(49);
-    // v115: vstavljena vrstica na r2 (2|973, Acker, preklicana)
+    // x3: vstavljena vrstica r2 = F2 fill ('Heide Marko.' h3, v119-names)
     expect(f(rows[2], "jaethe")).toBe("2");
     expect(f(rows[2], "klafter")).toBe("973");
-    expect(f(rows[2], "reading_pass")).toBe("v115-insert");
+    expect(f(rows[2], "reading_pass")).toBe("v119-names");
+    // poravnana cona (r0–r8) — vrednosti identične
     expect(f(rows[4], "klafter")).toBe("591");
     expect(f(rows[6], "klafter")).toBe("1553");
     expect(f(rows[7], "klafter")).toBe("412");
     expect(f(rows[5], "klafter")).toBe("1415"); // sidro
-    expect(f(rows[20], "klafter")).toBe("398"); // sidro
+    // F-NA-01 rešen: 22 pasov; r9 = polpas 929½ (F5, prazno), r19 = 939 (398; v114 @r20 = zamik)
+    expect(f(rows[9], "klafter")).toBe(""); // F5 polpas 929½
+    expect(f(rows[8], "klafter")).toBe("241"); // x20 popravek (v114 '381' @r8)
+    expect(f(rows[19], "klafter")).toBe("398"); // 939 (v114 @r20)
+    expect(f(rows[20], "klafter")).toBe(""); // 940 prazen
+    expect(f(rows[21], "klafter")).toBe(""); // r21 = Fürtrag pas (F6)
   });
 
   test("p34: pomik r15–r19 OVRŽEN + 21. vrstica (~70) dokumentirana", () => {
@@ -391,9 +402,9 @@ describe("val 114 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha b660c0d1… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
+  test("kaskadni artefakti držijo isti KG sha 62d8cfea… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^b660c0d1/);
+    expect(kgSha).toMatch(/^62d8cfea/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

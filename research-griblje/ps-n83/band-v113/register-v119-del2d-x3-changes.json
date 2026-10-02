@@ -1,0 +1,1959 @@
+{
+ "val": "119-del2d-x3",
+ "stats": {
+  "owner_changes": 59,
+  "haus_changes": 46,
+  "value_changes": 72,
+  "anmerkung_adds": 25,
+  "open_discrepancies": 16,
+  "pages_covered": [
+   "p47",
+   "p48",
+   "p49"
+  ],
+  "rows_covered": 64
+ },
+ "changes": [
+  {
+   "index": 891,
+   "page": 47,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (Krischan-glyf del 2c ×6; forma ×10 na p47/p48)"
+  },
+  {
+   "index": 892,
+   "page": 47,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (parzella 882 rdeče prečrtana + rdeča nota 'fiel gst. Grundflag' — preklicana vrstica, flag)"
+  },
+  {
+   "index": 893,
+   "page": 47,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (883 prečrtana + rdeča nota 'v: f. 1853' — flag)"
+  },
+  {
+   "index": 893,
+   "page": 47,
+   "row_in_page": 2,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "283",
+   "new": "253",
+   "note": "vrednost POPRAVEK 283 -> 253 (x14: flat-top 5 jasno; visok '2' = jae-glyf nad celico)"
+  },
+  {
+   "index": 894,
+   "page": 47,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Christan Mäthel -> Krischan Matthe.; razhajanje odprto pri haus: črnilo ~3 (par z r0 h3) vs 2, v114 ohranjeno"
+  },
+  {
+   "index": 894,
+   "page": 47,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"Krischan Matthe.\", v114 ohranjeno]"
+  },
+  {
+   "index": 895,
+   "page": 47,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (885 prečrtana + rdeči noti — flag)"
+  },
+  {
+   "index": 896,
+   "page": 47,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Stabelz Soan.[?]",
+   "note": "ime POPRAVEK Christan Mäthel -> Stabelz Soan.[?] (Stabelz trio r5/r11/r13; 2. beseda dvom Soan/Swan); haus POPRAVEK 69 -> 2 (cross-val: Stabelz h2 = p48 r3/r4/r8 register+črnilo ×4)"
+  },
+  {
+   "index": 896,
+   "page": 47,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "69",
+   "new": "2",
+   "note": "ime POPRAVEK Christan Mäthel -> Stabelz Soan.[?] (Stabelz trio r5/r11/r13; 2. beseda dvom Soan/Swan); haus POPRAVEK 69 -> 2 (cross-val: Stabelz h2 = p48 r3/r4/r8 register+črnilo ×4)"
+  },
+  {
+   "index": 897,
+   "page": 47,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michely Soon",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Michely Soon -> Krischan Matthe. (887 prečrtana + rdeči noti — flag); haus POPRAVEK 2 -> 69 (Krischan h69 ×5: r1/r2/r4/r15 register + črnilo)"
+  },
+  {
+   "index": 897,
+   "page": 47,
+   "row_in_page": 6,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "69",
+   "note": "ime POPRAVEK Michely Soon -> Krischan Matthe. (887 prečrtana + rdeči noti — flag); haus POPRAVEK 2 -> 69 (Krischan h69 ×5: r1/r2/r4/r15 register + črnilo)"
+  },
+  {
+   "index": 898,
+   "page": 47,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kaspar Mäthe",
+   "new": "Schimitlbeck Matthe.[?]",
+   "note": "ime POPRAVEK Kaspar Mäthe -> Schimitlbeck Matthe.[?] (Schim- trio r7/r10/r12; roza črta čez vrstico — flag); haus POPRAVEK 69 -> 1 (Schim- h1: p48 r6/r7 register+črnilo)"
+  },
+  {
+   "index": 898,
+   "page": 47,
+   "row_in_page": 7,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "69",
+   "new": "1",
+   "note": "ime POPRAVEK Kaspar Mäthe -> Schimitlbeck Matthe.[?] (Schim- trio r7/r10/r12; roza črta čez vrstico — flag); haus POPRAVEK 69 -> 1 (Schim- h1: p48 r6/r7 register+črnilo)"
+  },
+  {
+   "index": 899,
+   "page": 47,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimetschek stäble",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Schimetschek stäble -> Krischan Matthe.; haus POPRAVEK 1 -> 3 (Krischan h3: r0 register+črnilo, p48 r1/r2)"
+  },
+  {
+   "index": 899,
+   "page": 47,
+   "row_in_page": 8,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1",
+   "new": "3",
+   "note": "ime POPRAVEK Schimetschek stäble -> Krischan Matthe.; haus POPRAVEK 1 -> 3 (Krischan h3: r0 register+črnilo, p48 r1/r2)"
+  },
+  {
+   "index": 900,
+   "page": 47,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan stäble",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Christan stäble -> Krischan Matthe.; haus POPRAVEK 0 -> 3 (par z r8)"
+  },
+  {
+   "index": 900,
+   "page": 47,
+   "row_in_page": 9,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "0",
+   "new": "3",
+   "note": "ime POPRAVEK Christan stäble -> Krischan Matthe.; haus POPRAVEK 0 -> 3 (par z r8)"
+  },
+  {
+   "index": 901,
+   "page": 47,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Schimibek Matthe.[?]",
+   "note": "ime POPRAVEK Christan Mäthel -> Schimibek Matthe.[?] (trio); haus POPRAVEK 0 -> 1 (par z r7/r12)"
+  },
+  {
+   "index": 901,
+   "page": 47,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "0",
+   "new": "1",
+   "note": "ime POPRAVEK Christan Mäthel -> Schimibek Matthe.[?] (trio); haus POPRAVEK 0 -> 1 (par z r7/r12)"
+  },
+  {
+   "index": 902,
+   "page": 47,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimetschek stäble",
+   "new": "Stabelz Soan.[?]",
+   "note": "ime POPRAVEK Schimetschek stäble -> Stabelz Soan.[?] (trio); haus POPRAVEK 1 -> 2"
+  },
+  {
+   "index": 902,
+   "page": 47,
+   "row_in_page": 11,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1",
+   "new": "2",
+   "note": "ime POPRAVEK Schimetschek stäble -> Stabelz Soan.[?] (trio); haus POPRAVEK 1 -> 2"
+  },
+  {
+   "index": 903,
+   "page": 47,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michely Soon",
+   "new": "Schimitbek Matthe.[?]",
+   "note": "ime POPRAVEK Michely Soon -> Schimitbek Matthe.[?] (trio); haus POPRAVEK 2 -> 1"
+  },
+  {
+   "index": 903,
+   "page": 47,
+   "row_in_page": 12,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "1",
+   "note": "ime POPRAVEK Michely Soon -> Schimitbek Matthe.[?] (trio); haus POPRAVEK 2 -> 1"
+  },
+  {
+   "index": 903,
+   "page": 47,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "438",
+   "new": "436",
+   "note": "vrednost POPRAVEK 438 -> 436 (x20: enojna zanka = 6, ne 8)"
+  },
+  {
+   "index": 904,
+   "page": 47,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimetschek stäble",
+   "new": "Stabelz Swan.[?]",
+   "note": "ime POPRAVEK Schimetschek stäble -> Stabelz Swan.[?] (trio); haus POPRAVEK 1 -> 2"
+  },
+  {
+   "index": 904,
+   "page": 47,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1",
+   "new": "2",
+   "note": "ime POPRAVEK Schimetschek stäble -> Stabelz Swan.[?] (trio); haus POPRAVEK 1 -> 2"
+  },
+  {
+   "index": 905,
+   "page": 47,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michely Soon",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Michely Soon -> Krischan Matthe.; haus POPRAVEK 2 -> 69 (cross-val r1/r2/r4/r15)"
+  },
+  {
+   "index": 905,
+   "page": 47,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "69",
+   "note": "ime POPRAVEK Michely Soon -> Krischan Matthe.; haus POPRAVEK 2 -> 69 (cross-val r1/r2/r4/r15)"
+  },
+  {
+   "index": 906,
+   "page": 47,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel..",
+   "new": "Gemeinde.",
+   "note": "ime POPRAVEK Christan Mäthel.. -> Gemeinde. (jasni zapis 'Gemeinde' — občinska vrstica; cf p48-r7); haus POPRAVEK 69 -> 0 (Gemeinde h0: p48-r7 register+črnilo)"
+  },
+  {
+   "index": 906,
+   "page": 47,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "69",
+   "new": "0",
+   "note": "ime POPRAVEK Christan Mäthel.. -> Gemeinde. (jasni zapis 'Gemeinde' — občinska vrstica; cf p48-r7); haus POPRAVEK 69 -> 0 (Gemeinde h0: p48-r7 register+črnilo)"
+  },
+  {
+   "index": 907,
+   "page": 47,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Gemeinden",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Gemeinden -> Krischan Matthe. (v114 'Gemeinden' je pripadal vrstici 896 — sidr premik); haus POPRAVEK 0 -> 3 (cross-val r0)"
+  },
+  {
+   "index": 907,
+   "page": 47,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "0",
+   "new": "3",
+   "note": "ime POPRAVEK Gemeinden -> Krischan Matthe. (v114 'Gemeinden' je pripadal vrstici 896 — sidr premik); haus POPRAVEK 0 -> 3 (cross-val r0)"
+  },
+  {
+   "index": 908,
+   "page": 47,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christan Mäthel",
+   "new": "Tallafschily Swan.[?]",
+   "note": "ime POPRAVEK Christan Mäthel -> Tallafschily Swan.[?] (cf p48-r19 ista forma; S/I glyf-dvom); haus POPRAVEK 0 -> 6 (cross-val p48-r19 črnilo h6)"
+  },
+  {
+   "index": 908,
+   "page": 47,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "0",
+   "new": "6",
+   "note": "ime POPRAVEK Christan Mäthel -> Tallafschily Swan.[?] (cf p48-r19 ista forma; S/I glyf-dvom); haus POPRAVEK 0 -> 6 (cross-val p48-r19 črnilo h6)"
+  },
+  {
+   "index": 909,
+   "page": 47,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christoph. Soon",
+   "new": "Stabelz Swan.[?]",
+   "note": "ime POPRAVEK Christoph. Soon -> Stabelz Swan.[?] (trio); haus POPRAVEK 6 -> 2"
+  },
+  {
+   "index": 909,
+   "page": 47,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "2",
+   "note": "ime POPRAVEK Christoph. Soon -> Stabelz Swan.[?] (trio); haus POPRAVEK 6 -> 2"
+  },
+  {
+   "index": 910,
+   "page": 47,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "69",
+   "note": "razhajanje odprto — črnilo ~'Krischan i. Mmrlbyn.[?]' (2. del neberljiv, velika poteza); haus POPRAVEK 2 -> 69 (Krischan h69 cross-val r1/r2/r4/r14/r15)"
+  },
+  {
+   "index": 910,
+   "page": 47,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"Krischan i. Mmrlbyn.[?]\", v114 ohranjeno]"
+  },
+  {
+   "index": 911,
+   "page": 47,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"\", v114 ohranjeno]"
+  },
+  {
+   "page": 47,
+   "type": "page_observations_v119",
+   "text": "v119 celoviti pass x3 (dvojni sidr) p47: vrednostna plast 1:1 ✓; stevkni popravki r2 283->253, r12 438->436; imenske popravke po x2 auditu. VREDNOSTNA PLAST 1:1 PORAVNANA z v114 (21/21 ujemanj) — F-NA-01 na p47 zadeva SAMO imensko plast. Stevkni popravki: r2 (883) klafter 283->253 (x14: flat-top 5, jasen); r12 (893) 438->436 (x20: ena zanka = 6). r0: jae 97 + kl 993 (Joch|Klafter notacija: visoko=jae, nizko=kl). r14: ertrag 9.-793 ✓. r20 (901): celica PRAZNA ✓ (F-duplikat: 901 se nadal"
+  },
+  {
+   "index": 912,
+   "page": 48,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weidner Mathä.",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe. (trio-ritem cf p47; forma ×10)"
+  },
+  {
+   "index": 912,
+   "page": 48,
+   "row_in_page": 0,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "1904",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 1904 -> (prazno), klafter -> 219; visoko zapisana '1534' v isti celici = opuscen prvi poskus (anmerkung); brez polpasnega pravila (detekcija)"
+  },
+  {
+   "index": 912,
+   "page": 48,
+   "row_in_page": 0,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "219",
+   "note": "vrednost POPRAVEK: jae 1904 -> (prazno), klafter -> 219; visoko zapisana '1534' v isti celici = opuscen prvi poskus (anmerkung); brez polpasnega pravila (detekcija)"
+  },
+  {
+   "index": 912,
+   "page": 48,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: visoko zapisana \"1534\" v isti klafter-celici = opuščen prvi poskus (brez polpasnega pravila); v114 jae 1904 = njegov misread]"
+  },
+  {
+   "page": 48,
+   "row_in_page": 1,
+   "type": "x2_bookkeeping_note",
+   "note": "haus old '3' != register '2'"
+  },
+  {
+   "index": 913,
+   "page": 48,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weidner Mathä.",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe. (par)"
+  },
+  {
+   "index": 913,
+   "page": 48,
+   "row_in_page": 1,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "3",
+   "note": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe. (par) [x3: x2 staro '3' = knjigovodski zdrs, register je imel '2'; črnilo '3' ✓]"
+  },
+  {
+   "index": 913,
+   "page": 48,
+   "row_in_page": 1,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "279",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 279 -> (prazno), klafter -> 12 (279 = misread 219 za en pas nizje)"
+  },
+  {
+   "index": 913,
+   "page": 48,
+   "row_in_page": 1,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "12",
+   "note": "vrednost POPRAVEK: jae 279 -> (prazno), klafter -> 12 (279 = misread 219 za en pas nizje)"
+  },
+  {
+   "index": 914,
+   "page": 48,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schmipa[?]",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Schmipa[?] -> Krischan Matthe. (v115 vstavljena vrstica = črnilovrstica 903; fill); haus POPRAVEK '' -> 3 (cross-val Krischan h3 ×5)"
+  },
+  {
+   "index": 914,
+   "page": 48,
+   "row_in_page": 2,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "3",
+   "note": "ime POPRAVEK Schmipa[?] -> Krischan Matthe. (v115 vstavljena vrstica = črnilovrstica 903; fill); haus POPRAVEK '' -> 3 (cross-val Krischan h3 ×5)"
+  },
+  {
+   "index": 914,
+   "page": 48,
+   "row_in_page": 2,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "12",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 12 -> (prazno), klafter -> 733 (v115-insert pas = 903)"
+  },
+  {
+   "index": 914,
+   "page": 48,
+   "row_in_page": 2,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "733",
+   "note": "vrednost POPRAVEK: jae 12 -> (prazno), klafter -> 733 (v115-insert pas = 903)"
+  },
+  {
+   "index": 915,
+   "page": 48,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weidner Mathä.",
+   "new": "Stabelz Swan.[?]",
+   "note": "ime POPRAVEK Weidner Mathä. -> Stabelz Swan.[?] (Stabelz trio r3/r4/r8); haus POPRAVEK 3 -> 2 (cross-val p47-r5/r11/r13 register h2)"
+  },
+  {
+   "index": 915,
+   "page": 48,
+   "row_in_page": 3,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "3",
+   "new": "2",
+   "note": "ime POPRAVEK Weidner Mathä. -> Stabelz Swan.[?] (Stabelz trio r3/r4/r8); haus POPRAVEK 3 -> 2 (cross-val p47-r5/r11/r13 register h2)"
+  },
+  {
+   "index": 915,
+   "page": 48,
+   "row_in_page": 3,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "733",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 733 -> (prazno), klafter -> 10"
+  },
+  {
+   "index": 915,
+   "page": 48,
+   "row_in_page": 3,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "10",
+   "note": "vrednost POPRAVEK: jae 733 -> (prazno), klafter -> 10"
+  },
+  {
+   "index": 916,
+   "page": 48,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hölby Joan",
+   "new": "Stabelz Swan.[?]",
+   "note": "ime POPRAVEK Hölby Joan -> Stabelz Swan.[?] (par z r3)"
+  },
+  {
+   "index": 916,
+   "page": 48,
+   "row_in_page": 4,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "10",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 10 -> (prazno), klafter -> 439"
+  },
+  {
+   "index": 916,
+   "page": 48,
+   "row_in_page": 4,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "439",
+   "note": "vrednost POPRAVEK: jae 10 -> (prazno), klafter -> 439"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hölby Joan",
+   "new": "Schimilbeck Matthe.[?]",
+   "note": "ime POPRAVEK Hölby Joan -> Schimilbeck Matthe.[?] (Schim- trio r5/r6/r9); haus POPRAVEK 2 -> 1 (cross-val p47 r7/r10/r12)"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "1",
+   "note": "ime POPRAVEK Hölby Joan -> Schimilbeck Matthe.[?] (Schim- trio r5/r6/r9); haus POPRAVEK 2 -> 1 (cross-val p47 r7/r10/r12)"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "439",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 439 -> (prazno), klafter -> 533; ertrag -> fl 2, kr 296 (dvom 9/2; v114 je imel 2.26 za en pas nizje)"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "533",
+   "note": "vrednost POPRAVEK: jae 439 -> (prazno), klafter -> 533; ertrag -> fl 2, kr 296 (dvom 9/2; v114 je imel 2.26 za en pas nizje)"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "2",
+   "note": "vrednost POPRAVEK: jae 439 -> (prazno), klafter -> 533; ertrag -> fl 2, kr 296 (dvom 9/2; v114 je imel 2.26 za en pas nizje)"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "296",
+   "note": "vrednost POPRAVEK: jae 439 -> (prazno), klafter -> 533; ertrag -> fl 2, kr 296 (dvom 9/2; v114 je imel 2.26 za en pas nizje)"
+  },
+  {
+   "index": 917,
+   "page": 48,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: ertrag \"2-296\" (dvom zadnje števke; v114 je imel vrednost za en pas nižje)]"
+  },
+  {
+   "index": 918,
+   "page": 48,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimeck mathä.",
+   "new": "Schimelbeck Matthe.[?]",
+   "note": "ime POPRAVEK Schimeck mathä. -> Schimelbeck Matthe.[?] (forma -lbeck; par z r5)"
+  },
+  {
+   "index": 918,
+   "page": 48,
+   "row_in_page": 6,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "533",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 533 -> (prazno), klafter -> 16; ertrag 2.26 -> (prazno) — pripada 906 (en pas visje)"
+  },
+  {
+   "index": 918,
+   "page": 48,
+   "row_in_page": 6,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "16",
+   "note": "vrednost POPRAVEK: jae 533 -> (prazno), klafter -> 16; ertrag 2.26 -> (prazno) — pripada 906 (en pas visje)"
+  },
+  {
+   "index": 918,
+   "page": 48,
+   "row_in_page": 6,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "2",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 533 -> (prazno), klafter -> 16; ertrag 2.26 -> (prazno) — pripada 906 (en pas visje)"
+  },
+  {
+   "index": 918,
+   "page": 48,
+   "row_in_page": 6,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "26",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 533 -> (prazno), klafter -> 16; ertrag 2.26 -> (prazno) — pripada 906 (en pas visje)"
+  },
+  {
+   "index": 919,
+   "page": 48,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimeck mathä.",
+   "new": "Gemeinde.",
+   "note": "ime POPRAVEK Schimeck mathä. -> Gemeinde. (jasni zapis; cf p47-r15); haus POPRAVEK 1 -> 0 (Gemeinde h0 cross-val p47-r15 register)"
+  },
+  {
+   "index": 919,
+   "page": 48,
+   "row_in_page": 7,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1",
+   "new": "0",
+   "note": "ime POPRAVEK Schimeck mathä. -> Gemeinde. (jasni zapis; cf p47-r15); haus POPRAVEK 1 -> 0 (Gemeinde h0 cross-val p47-r15 register)"
+  },
+  {
+   "index": 919,
+   "page": 48,
+   "row_in_page": 7,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "16",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 16 -> (prazno), klafter -> 29"
+  },
+  {
+   "index": 919,
+   "page": 48,
+   "row_in_page": 7,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "29",
+   "note": "vrednost POPRAVEK: jae 16 -> (prazno), klafter -> 29"
+  },
+  {
+   "index": 920,
+   "page": 48,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Tomcitsch",
+   "new": "Stabelz Swan.[?]",
+   "note": "ime POPRAVEK Tomcitsch -> Stabelz Swan.[?] (trio); haus POPRAVEK 6 -> 2"
+  },
+  {
+   "index": 920,
+   "page": 48,
+   "row_in_page": 8,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "2",
+   "note": "ime POPRAVEK Tomcitsch -> Stabelz Swan.[?] (trio); haus POPRAVEK 6 -> 2"
+  },
+  {
+   "index": 920,
+   "page": 48,
+   "row_in_page": 8,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "29",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 29 -> (prazno), klafter -> 941"
+  },
+  {
+   "index": 920,
+   "page": 48,
+   "row_in_page": 8,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "941",
+   "note": "vrednost POPRAVEK: jae 29 -> (prazno), klafter -> 941"
+  },
+  {
+   "index": 921,
+   "page": 48,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hölby Joan",
+   "new": "Schimilbeck Swan.[?]",
+   "note": "ime POPRAVEK Hölby Joan -> Schimilbeck Swan.[?] (trio; 2. beseda Swan cf p47-r13/r17); haus POPRAVEK 2 -> 1"
+  },
+  {
+   "index": 921,
+   "page": 48,
+   "row_in_page": 9,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "1",
+   "note": "ime POPRAVEK Hölby Joan -> Schimilbeck Swan.[?] (trio; 2. beseda Swan cf p47-r13/r17); haus POPRAVEK 2 -> 1"
+  },
+  {
+   "index": 921,
+   "page": 48,
+   "row_in_page": 9,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "941",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 941 -> (prazno), klafter -> 621"
+  },
+  {
+   "index": 921,
+   "page": 48,
+   "row_in_page": 9,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "621",
+   "note": "vrednost POPRAVEK: jae 941 -> (prazno), klafter -> 621"
+  },
+  {
+   "index": 922,
+   "page": 48,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimeck Joan",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Schimeck Joan -> Krischan Matthe.; haus POPRAVEK 1 -> 3 (cross-val r1/r2)"
+  },
+  {
+   "index": 922,
+   "page": 48,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1",
+   "new": "3",
+   "note": "ime POPRAVEK Schimeck Joan -> Krischan Matthe.; haus POPRAVEK 1 -> 3 (cross-val r1/r2)"
+  },
+  {
+   "index": 922,
+   "page": 48,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "621",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 621 -> (prazno), klafter -> 591"
+  },
+  {
+   "index": 922,
+   "page": 48,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "591",
+   "note": "vrednost POPRAVEK: jae 621 -> (prazno), klafter -> 591"
+  },
+  {
+   "index": 923,
+   "page": 48,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"Peving Mcundo.[?]\", v114 ohranjeno]"
+  },
+  {
+   "index": 923,
+   "page": 48,
+   "row_in_page": 11,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "591",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 591 -> (prazno), klafter -> 565"
+  },
+  {
+   "index": 923,
+   "page": 48,
+   "row_in_page": 11,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "565",
+   "note": "vrednost POPRAVEK: jae 591 -> (prazno), klafter -> 565"
+  },
+  {
+   "index": 924,
+   "page": 48,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Preuing Wenzela",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Preuing Wenzela -> Krischan Matthe.; haus POPRAVEK 63 -> 3 (cross-val r1/r2/r10; v114 '63' = zamik repa)"
+  },
+  {
+   "index": 924,
+   "page": 48,
+   "row_in_page": 12,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "63",
+   "new": "3",
+   "note": "ime POPRAVEK Preuing Wenzela -> Krischan Matthe.; haus POPRAVEK 63 -> 3 (cross-val r1/r2/r10; v114 '63' = zamik repa)"
+  },
+  {
+   "index": 924,
+   "page": 48,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "565",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 565 -> (prazno), klafter -> 1492 (x20: zadnja stevka 2, ne 0)"
+  },
+  {
+   "index": 924,
+   "page": 48,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "1492",
+   "note": "vrednost POPRAVEK: jae 565 -> (prazno), klafter -> 1492 (x20: zadnja stevka 2, ne 0)"
+  },
+  {
+   "index": 925,
+   "page": 48,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weidner Mathä.",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe.; haus POPRAVEK 0 -> 69 (cross-val p47 r1/r2/r4/r14/r15)"
+  },
+  {
+   "index": 925,
+   "page": 48,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "0",
+   "new": "69",
+   "note": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe.; haus POPRAVEK 0 -> 69 (cross-val p47 r1/r2/r4/r14/r15)"
+  },
+  {
+   "index": 925,
+   "page": 48,
+   "row_in_page": 13,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "1490",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 1490 -> (prazno), klafter -> 1269"
+  },
+  {
+   "index": 925,
+   "page": 48,
+   "row_in_page": 13,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "1269",
+   "note": "vrednost POPRAVEK: jae 1490 -> (prazno), klafter -> 1269"
+  },
+  {
+   "index": 926,
+   "page": 48,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Weidner Mathä.",
+   "new": "Krischan Matthe.",
+   "note": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe.; haus POPRAVEK 69 -> 3 (cross-val r1/r2/r10/r12)"
+  },
+  {
+   "index": 926,
+   "page": 48,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "69",
+   "new": "3",
+   "note": "ime POPRAVEK Weidner Mathä. -> Krischan Matthe.; haus POPRAVEK 69 -> 3 (cross-val r1/r2/r10/r12)"
+  },
+  {
+   "index": 926,
+   "page": 48,
+   "row_in_page": 14,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "1269",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 1269 -> (prazno), klafter -> 678"
+  },
+  {
+   "index": 926,
+   "page": 48,
+   "row_in_page": 14,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "678",
+   "note": "vrednost POPRAVEK: jae 1269 -> (prazno), klafter -> 678"
+  },
+  {
+   "index": 927,
+   "page": 48,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hudashan mathä.",
+   "new": "Deleshitzkh Marßfid.[?]",
+   "note": "ime POPRAVEK Hudashan mathä. -> Deleshitzkh Marßfid.[?] (forma ×5); haus POPRAVEK 0 -> 1 (cross-val p44-r0, p45-r8, p46-r11/r12 — Deleshitzkh h1 črnilo vsaclih)"
+  },
+  {
+   "index": 927,
+   "page": 48,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "0",
+   "new": "1",
+   "note": "ime POPRAVEK Hudashan mathä. -> Deleshitzkh Marßfid.[?] (forma ×5); haus POPRAVEK 0 -> 1 (cross-val p44-r0, p45-r8, p46-r11/r12 — Deleshitzkh h1 črnilo vsaclih)"
+  },
+  {
+   "index": 927,
+   "page": 48,
+   "row_in_page": 15,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "678",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 678 -> (prazno), klafter -> 155 (x20/x8: dve jasni petici; v114 185 = misread)"
+  },
+  {
+   "index": 927,
+   "page": 48,
+   "row_in_page": 15,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "155",
+   "note": "vrednost POPRAVEK: jae 678 -> (prazno), klafter -> 155 (x20/x8: dve jasni petici; v114 185 = misread)"
+  },
+  {
+   "index": 928,
+   "page": 48,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Deierlthaler Matz",
+   "new": "Lubreschibek Maathe.[?]",
+   "note": "ime POPRAVEK Deierlthaler Matz -> Lubreschibek Maathe.[?] (forma ×9); haus POPRAVEK 4 -> 12 (cross-val Lubreschibek h12: p45-r2/r7, p46-r6, p49-r5/r6)"
+  },
+  {
+   "index": 928,
+   "page": 48,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "4",
+   "new": "12",
+   "note": "ime POPRAVEK Deierlthaler Matz -> Lubreschibek Maathe.[?] (forma ×9); haus POPRAVEK 4 -> 12 (cross-val Lubreschibek h12: p45-r2/r7, p46-r6, p49-r5/r6)"
+  },
+  {
+   "index": 928,
+   "page": 48,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "185",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 185 -> (prazno), klafter -> 153"
+  },
+  {
+   "index": 928,
+   "page": 48,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "153",
+   "note": "vrednost POPRAVEK: jae 185 -> (prazno), klafter -> 153"
+  },
+  {
+   "index": 929,
+   "page": 48,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schimeck mathä.",
+   "new": "Dragasch Jure.",
+   "note": "ime POPRAVEK Schimeck mathä. -> Dragasch Jure. (forma ×5); haus POPRAVEK 12 -> 1 (črnilo '1/1' jasno; cf p45-r4 h~1)"
+  },
+  {
+   "index": 929,
+   "page": 48,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "12",
+   "new": "1",
+   "note": "ime POPRAVEK Schimeck mathä. -> Dragasch Jure. (forma ×5); haus POPRAVEK 12 -> 1 (črnilo '1/1' jasno; cf p45-r4 h~1)"
+  },
+  {
+   "index": 929,
+   "page": 48,
+   "row_in_page": 17,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "153",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 153 -> (prazno), klafter -> 159 (x20: jasna petica; v114 189 = misread)"
+  },
+  {
+   "index": 929,
+   "page": 48,
+   "row_in_page": 17,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "159",
+   "note": "vrednost POPRAVEK: jae 153 -> (prazno), klafter -> 159 (x20: jasna petica; v114 189 = misread)"
+  },
+  {
+   "index": 930,
+   "page": 48,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pragard Joan",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK Pragard Joan -> Heide Marko. (forma ×5); haus POPRAVEK 6 -> 3 (Heide Marko h3 cross-val ×5)"
+  },
+  {
+   "index": 930,
+   "page": 48,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "3",
+   "note": "ime POPRAVEK Pragard Joan -> Heide Marko. (forma ×5); haus POPRAVEK 6 -> 3 (Heide Marko h3 cross-val ×5)"
+  },
+  {
+   "index": 930,
+   "page": 48,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "189",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 189 -> (prazno), klafter -> 163"
+  },
+  {
+   "index": 930,
+   "page": 48,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "163",
+   "note": "vrednost POPRAVEK: jae 189 -> (prazno), klafter -> 163"
+  },
+  {
+   "index": 931,
+   "page": 48,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pericla Matho.",
+   "new": "Tallafschily Swan.[?]",
+   "note": "ime POPRAVEK Pericla Matho. -> Tallafschily Swan.[?] (cf p47-r17); haus POPRAVEK 8 -> 6 (cross-val p47-r17 črnilo h6)"
+  },
+  {
+   "index": 931,
+   "page": 48,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "8",
+   "new": "6",
+   "note": "ime POPRAVEK Pericla Matho. -> Tallafschily Swan.[?] (cf p47-r17); haus POPRAVEK 8 -> 6 (cross-val p47-r17 črnilo h6)"
+  },
+  {
+   "index": 931,
+   "page": 48,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "163",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 163 -> (prazno), klafter -> 280; ertrag -> fl 2, kr 714 (visi v 920 pasu; v114 2.14 = misread za en pas nizje)"
+  },
+  {
+   "index": 931,
+   "page": 48,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "280",
+   "note": "vrednost POPRAVEK: jae 163 -> (prazno), klafter -> 280; ertrag -> fl 2, kr 714 (visi v 920 pasu; v114 2.14 = misread za en pas nizje)"
+  },
+  {
+   "index": 931,
+   "page": 48,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "2",
+   "note": "vrednost POPRAVEK: jae 163 -> (prazno), klafter -> 280; ertrag -> fl 2, kr 714 (visi v 920 pasu; v114 2.14 = misread za en pas nizje)"
+  },
+  {
+   "index": 931,
+   "page": 48,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "714",
+   "note": "vrednost POPRAVEK: jae 163 -> (prazno), klafter -> 280; ertrag -> fl 2, kr 714 (visi v 920 pasu; v114 2.14 = misread za en pas nizje)"
+  },
+  {
+   "index": 931,
+   "page": 48,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: ertrag \"2-714\" (dvom zadnje števke; v114 je imel vrednost za en pas nižje)]"
+  },
+  {
+   "index": 932,
+   "page": 48,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"\", v114 ohranjeno]"
+  },
+  {
+   "index": 932,
+   "page": 48,
+   "row_in_page": 20,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "280",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 280 -> (prazno; pripada 920), ertrag 2.14 -> (prazno; pripada 920); osireli 5|58 v pasu 921 = opuscen poskus (921 prava vrstica je p49-r0) — anmerkung, polja ostanejo prazna"
+  },
+  {
+   "index": 932,
+   "page": 48,
+   "row_in_page": 20,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "2",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 280 -> (prazno; pripada 920), ertrag 2.14 -> (prazno; pripada 920); osireli 5|58 v pasu 921 = opuscen poskus (921 prava vrstica je p49-r0) — anmerkung, polja ostanejo prazna"
+  },
+  {
+   "index": 932,
+   "page": 48,
+   "row_in_page": 20,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "14",
+   "new": "",
+   "note": "vrednost POPRAVEK: jae 280 -> (prazno; pripada 920), ertrag 2.14 -> (prazno; pripada 920); osireli 5|58 v pasu 921 = opuscen poskus (921 prava vrstica je p49-r0) — anmerkung, polja ostanejo prazna"
+  },
+  {
+   "index": 932,
+   "page": 48,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: jae 5[?] + kl 58 brez imena v pasu 921 brez imena = opuščen poskus (prava 921 = p49-r0); polja ostanejo prazna]"
+  },
+  {
+   "page": 48,
+   "type": "page_observations_v119",
+   "text": "v119 celoviti pass x3 (dvojni sidr) p48: NOVO F-NA-02 — vrednostna plast zamaknjena +1 in v napačni koloni (v114 jae = klafter); polni rebuild 21 vrstic; stevkni popravki 1490->1492, 185->155, 189->159, 2.26->2-296, 2.14->2-714; 901 visoko 1534 = opuščen poskus. NOVO F-NA-02: vrednostna plast p48 je v v114 ZAMAKNJENA +1 (vsaka vrednost en pas nizje) IN v napačni koloni (v114 jae = pravzaprav klafter!). Pravi pasovi: 901={1534 visoko (opuscen prvi poskus), 219 nizko}, 902=12, 903=733, 904=10, 905=439, 906=533+ertrag 2-296, 907=16, 908=29, 909=941, 910=621, 911=591, 912=565, 913=1492, 914=1269, 915=678, 916="
+  },
+  {
+   "index": 933,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"Asbendl dne.[?]\", v114 ohranjeno]"
+  },
+  {
+   "index": 934,
+   "page": 49,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Raguzl Janez",
+   "new": "Dragasch Jure.",
+   "note": "ime POPRAVEK Raguzl Janez -> Dragasch Jure. (forma ×5: i3, p45-r4/r6, p48-r17); razhajanje odprto pri haus: črnilo ~5 (par z i3) vs 8, v114 ohranjeno"
+  },
+  {
+   "index": 934,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"Dragasch Jure.\", v114 ohranjeno]"
+  },
+  {
+   "index": 935,
+   "page": 49,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "",
+   "new": "Heide Marko.",
+   "note": "ime POPRAVEK '' -> Heide Marko. (F2 FILL: v115 preklicana vrstica 923 z imenom v črnilu; forma ×5 — brez [?]); haus POPRAVEK '' -> 3 (F2 fill + cross-val Heide Marko h3 ×5); v115 vrednost 973 ostaja"
+  },
+  {
+   "index": 935,
+   "page": 49,
+   "row_in_page": 2,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "3",
+   "note": "ime POPRAVEK '' -> Heide Marko. (F2 FILL: v115 preklicana vrstica 923 z imenom v črnilu; forma ×5 — brez [?]); haus POPRAVEK '' -> 3 (F2 fill + cross-val Heide Marko h3 ×5); v115 vrednost 973 ostaja"
+  },
+  {
+   "index": 936,
+   "page": 49,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hößle Marie",
+   "new": "Dragasch Jure.",
+   "note": "ime POPRAVEK Hößle Marie -> Dragasch Jure. (par z i1; klafter 11 vrednost = vrednostna plast, ni del imenskega passa); razhajanje odprto pri haus: črnilo ~5 vs 8"
+  },
+  {
+   "index": 936,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"Dragasch Jure.\", v114 ohranjeno]"
+  },
+  {
+   "index": 937,
+   "page": 49,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Dragosch Josef",
+   "new": "Deleshitzkh Marßfid.[?]",
+   "note": "ime POPRAVEK Dragosch Josef -> Deleshitzkh Marßfid.[?] (forma ×5; rdeča prečrta čez vrstico — preklicana?, flag); razhajanje odprto pri haus: črnilo ~1 vs 5"
+  },
+  {
+   "index": 937,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 imenski pass: razhajanje odprto — črnilo ~\"Deleshitzkh Marßfid.[?]\", v114 ohranjeno]"
+  },
+  {
+   "index": 938,
+   "page": 49,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Dolenc Luk Rupf",
+   "new": "Lubreschitskh Maathe.",
+   "note": "ime POPRAVEK Dolenc Luk Rupf -> Lubreschitskh Maathe. (forma; par z r6); haus POPRAVEK 11 -> 12 (cross-val: par i5/i6 črnilo h12 ×2 + reg r6 h12)"
+  },
+  {
+   "index": 938,
+   "page": 49,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "11",
+   "new": "12",
+   "note": "ime POPRAVEK Dolenc Luk Rupf -> Lubreschitskh Maathe. (forma; par z r6); haus POPRAVEK 11 -> 12 (cross-val: par i5/i6 črnilo h12 ×2 + reg r6 h12)"
+  },
+  {
+   "index": 939,
+   "page": 49,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lukasitsch Mathäus",
+   "new": "Lubreschitskh Matthe.",
+   "note": "ime POPRAVEK Lukasitsch Mathäus -> Lubreschitskh Matthe. (forma Lubreschitskh; par z r5; h ✓)"
+  },
+  {
+   "index": 940,
+   "page": 49,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lukasitsch Mathäus",
+   "new": "Peodvin Grany.",
+   "note": "ime POPRAVEK Lukasitsch Mathäus -> Peodvin Grany. (forma ×7); haus POPRAVEK 12 -> 11 (cross-val: Peodvin h11 = p46-r1..r5 register '1 / 11' ×4 + p45-r16)"
+  },
+  {
+   "index": 940,
+   "page": 49,
+   "row_in_page": 7,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "12",
+   "new": "11",
+   "note": "ime POPRAVEK Lukasitsch Mathäus -> Peodvin Grany. (forma ×7); haus POPRAVEK 12 -> 11 (cross-val: Peodvin h11 = p46-r1..r5 register '1 / 11' ×4 + p45-r16)"
+  },
+  {
+   "index": 941,
+   "page": 49,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pessing Georg",
+   "new": "Peodvin Grany.",
+   "note": "ime POPRAVEK Pessing Georg -> Peodvin Grany. (par z r7; parzella 929 črna prečrta + rdeči robni znak — flag)"
+  },
+  {
+   "index": 941,
+   "page": 49,
+   "row_in_page": 8,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "381",
+   "new": "241",
+   "note": "vrednost POPRAVEK 381 -> 241 (x20: 2-4-1; 381 brez glyfne podlage v črnilu)"
+  },
+  {
+   "index": 942,
+   "page": 49,
+   "row_in_page": 9,
+   "type": "v119_x3_halfrow_clear",
+   "field": "owner_original",
+   "old": "Pessing Georg",
+   "new": "",
+   "note": "F5: polpas 929½ prečrtan, brez imena"
+  },
+  {
+   "index": 942,
+   "page": 49,
+   "row_in_page": 9,
+   "type": "v119_x3_halfrow_clear",
+   "field": "haus_no",
+   "old": "11",
+   "new": "",
+   "note": "F5"
+  },
+  {
+   "index": 942,
+   "page": 49,
+   "row_in_page": 9,
+   "type": "v119_x3_halfrow_clear",
+   "field": "klafter",
+   "old": "281",
+   "new": "",
+   "note": "F5"
+  },
+  {
+   "index": 942,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 F5: pozicijsko = polpas 929½ (pravili 516/535) — parzella \"929½\" prečrtana + rdeči znaki, klafter 97 prečrtan, brez imena (930-ovo ime zapisano čez oba polpasna prostora); v114 vsebina (Pessing Georg h11, kl 281) = zamaknjena, snimljena v *_pre_v119]"
+  },
+  {
+   "index": 943,
+   "page": 49,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pessing Georg",
+   "new": "Hunure Mathl.[?]",
+   "note": "ime POPRAVEK Pessing Georg -> Hunure Mathl.[?] (Hunure par r9/r10); razhajanje odprto pri haus: črnilo ~10 vs 11 (notranja poravnava F3), v114 ohranjeno [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 943,
+   "page": 49,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "11",
+   "new": "10",
+   "note": "ime POPRAVEK Pessing Georg -> Hunure Mathl.[?] (Hunure par r9/r10); razhajanje odprto pri haus: črnilo ~10 vs 11 (notranja poravnava F3), v114 ohranjeno [x3 re-sidrano]"
+  },
+  {
+   "index": 943,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: črnilo ~\"Hunure Mathl.[?]\" / haus ~'10' — razhajanje odprto]"
+  },
+  {
+   "index": 943,
+   "page": 49,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "97",
+   "new": "92",
+   "note": "vrednost POPRAVEK (register r10): 97 -> 92 (97 = prečrtani polpas 929½, za en pas visje)"
+  },
+  {
+   "index": 944,
+   "page": 49,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hößle Michel",
+   "new": "Hunure Melli.[?]",
+   "note": "ime POPRAVEK Pessing Georg -> Hunure Melli.[?] (par z r9); razhajanje odprto pri haus: črnilo ~10 vs 11 [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 944,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: črnilo ~\"Hunure Melli.[?]\" / haus ~'10' — razhajanje odprto]"
+  },
+  {
+   "index": 944,
+   "page": 49,
+   "row_in_page": 11,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "92",
+   "new": "821",
+   "note": "vrednost POPRAVEK (register r11): 92 -> 821 (shift +1)"
+  },
+  {
+   "index": 945,
+   "page": 49,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hauser Michel",
+   "new": "Kourtzly Marolin.[?]",
+   "note": "ime POPRAVEK Kunzel[?] Schumacher -> Kourtzly Marolin.[?] + medvrstična nota 'Kmatze Gnel.[?]' (dvom); razhajanje odprto pri haus: črnilo ~5 (par z r12) vs 6 [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 945,
+   "page": 49,
+   "row_in_page": 12,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "10",
+   "new": "5",
+   "note": "ime POPRAVEK Kunzel[?] Schumacher -> Kourtzly Marolin.[?] + medvrstična nota 'Kmatze Gnel.[?]' (dvom); razhajanje odprto pri haus: črnilo ~5 (par z r12) vs 6 [x3 re-sidrano]"
+  },
+  {
+   "index": 945,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: črnilo ~\"Kourtzly Marolin.[?]\" / haus ~'5' — razhajanje odprto]"
+  },
+  {
+   "index": 945,
+   "page": 49,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "821",
+   "new": "56",
+   "note": "vrednost POPRAVEK (register r12): 821 -> 56 (shift +1)"
+  },
+  {
+   "index": 946,
+   "page": 49,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kunzel[?] Schumacher",
+   "new": "Novak Martlin.",
+   "note": "ime POPRAVEK Mandl Andreas -> Novak Martlin. (forma ×6) + medvrstična nota 'Smatze dne.[?]'; h ✓ [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 946,
+   "page": 49,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "5",
+   "note": "ime POPRAVEK Mandl Andreas -> Novak Martlin. (forma ×6) + medvrstična nota 'Smatze dne.[?]'; h ✓ [x3 re-sidrano]"
+  },
+  {
+   "index": 946,
+   "page": 49,
+   "row_in_page": 13,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "56",
+   "new": "295",
+   "note": "vrednost POPRAVEK (register r13): 56 -> 295 (shift +1)"
+  },
+  {
+   "index": 947,
+   "page": 49,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mandl Andreas",
+   "new": "Lubreschiby Maathe.[?]",
+   "note": "ime POPRAVEK Lukasitsch Maria -> Lubreschiby Maathe.[?] (forma ×9); razhajanje odprto pri haus: črnilo ~4[?] (y-glyf) vs 7; klafter 975 ✓ (5-way) [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 947,
+   "page": 49,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "5",
+   "new": "4",
+   "note": "ime POPRAVEK Lukasitsch Maria -> Lubreschiby Maathe.[?] (forma ×9); razhajanje odprto pri haus: črnilo ~4[?] (y-glyf) vs 7; klafter 975 ✓ (5-way) [x3 re-sidrano]"
+  },
+  {
+   "index": 947,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: črnilo ~\"Lubreschiby Maathe.[?]\" / haus ~'4' — razhajanje odprto]"
+  },
+  {
+   "index": 947,
+   "page": 49,
+   "row_in_page": 14,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "295",
+   "new": "975",
+   "note": "vrednost POPRAVEK (register r14): 295 -> 975 (shift +1; ✓ x2 5-way)"
+  },
+  {
+   "index": 948,
+   "page": 49,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lukasitsch Maria",
+   "new": "Novak Martlin.",
+   "note": "ime POPRAVEK Mandl Andreas -> Novak Martlin.; haus POPRAVEK 5 -> 14 (cross-val: p44-r17 'Novak Martlin' črnilo h14; črnilo '1/14' jasno; klafter 556 ✓) [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 948,
+   "page": 49,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "7",
+   "new": "14",
+   "note": "ime POPRAVEK Mandl Andreas -> Novak Martlin.; haus POPRAVEK 5 -> 14 (cross-val: p44-r17 'Novak Martlin' črnilo h14; črnilo '1/14' jasno; klafter 556 ✓) [x3 re-sidrano]"
+  },
+  {
+   "index": 948,
+   "page": 49,
+   "row_in_page": 15,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "975",
+   "new": "556",
+   "note": "vrednost POPRAVEK (register r15): 975 -> 556 (shift +1; ✓)"
+  },
+  {
+   "index": 949,
+   "page": 49,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hornak Andreas",
+   "new": "Tallafschily Jne.[?]",
+   "note": "ime POPRAVEK Lukasitsch Maria -> Tallafschily Jne.[?] (cf p47-r17/p48-r19 'Tallafschily Swan'; 2. beseda Jne/Swan dvom); haus POPRAVEK 7 -> 6 (cross-val Tallafschily h6 ×3); klafter 316 ✓ [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 949,
+   "page": 49,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "14",
+   "new": "6",
+   "note": "ime POPRAVEK Lukasitsch Maria -> Tallafschily Jne.[?] (cf p47-r17/p48-r19 'Tallafschily Swan'; 2. beseda Jne/Swan dvom); haus POPRAVEK 7 -> 6 (cross-val Tallafschily h6 ×3); klafter 316 ✓ [x3 re-sidrano]"
+  },
+  {
+   "index": 949,
+   "page": 49,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "556",
+   "new": "316",
+   "note": "vrednost POPRAVEK (register r16): 556 -> 316 (shift +1; ✓)"
+  },
+  {
+   "index": 950,
+   "page": 49,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Feldkircher Carl",
+   "new": "Novak Martlin. [RED prečrtan] + 'Gmatze dne.[?]'",
+   "note": "razhajanje odprto — 1. vrstica 'Novak Martlin' rdeče prečrtana + 'Gmatze dne.[?]' (preklicani poskus?); h črnilo ~5 vs 14; klafter 606 ✓; v114 ohranjeno [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 950,
+   "page": 49,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "5",
+   "note": "razhajanje odprto — 1. vrstica 'Novak Martlin' rdeče prečrtana + 'Gmatze dne.[?]' (preklicani poskus?); h črnilo ~5 vs 14; klafter 606 ✓; v114 ohranjeno [x3 re-sidrano]"
+  },
+  {
+   "index": 950,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: črnilo ~\"Novak Martlin. [RED prečrtan] + 'Gmatze dne.[?]'\" / haus ~'5' — razhajanje odprto]"
+  },
+  {
+   "index": 950,
+   "page": 49,
+   "row_in_page": 17,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "376",
+   "new": "606",
+   "note": "vrednost POPRAVEK (register r17): 376 -> 606 (shift +1 + misread; ✓)"
+  },
+  {
+   "index": 951,
+   "page": 49,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Mandl Andreas",
+   "new": "Tallafschibyet Jne.[?]",
+   "note": "ime POPRAVEK Feldkircher Carl -> Tallafschibyet Jne.[?] (forma; par z r15); h ✓; klafter 633 ✓ [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 951,
+   "page": 49,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "5",
+   "new": "6",
+   "note": "ime POPRAVEK Feldkircher Carl -> Tallafschibyet Jne.[?] (forma; par z r15); h ✓; klafter 633 ✓ [x3 re-sidrano]"
+  },
+  {
+   "index": 951,
+   "page": 49,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "606",
+   "new": "658",
+   "note": "vrednost POPRAVEK (register r18): 606 -> 658 (shift +1; x20: 6-5-8; x2 '633' = misread)"
+  },
+  {
+   "index": 952,
+   "page": 49,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schaffhauser Carl",
+   "new": "Novak Martlin. [delno prečrtan] + 'Smatze dne.[?]'",
+   "note": "razhajanje odprto — 1. vrstica delno prečrtana + 'Smatze dne.[?]' (kot r16); h ✓ 5; klafter 345 ✓; v114 ohranjeno [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 952,
+   "page": 49,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "5",
+   "note": "razhajanje odprto — 1. vrstica delno prečrtana + 'Smatze dne.[?]' (kot r16); h ✓ 5; klafter 345 ✓; v114 ohranjeno [x3 re-sidrano]"
+  },
+  {
+   "index": 952,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: črnilo ~\"Novak Martlin. [delno prečrtan] + 'Smatze dne.[?]'\" / haus ~'5' — razhajanje odprto]"
+  },
+  {
+   "index": 952,
+   "page": 49,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "658",
+   "new": "398",
+   "note": "vrednost POPRAVEK (register r19): 658 -> 398 (shift +1; x20: 3-9-8; x2 '345' = misread)"
+  },
+  {
+   "index": 953,
+   "page": 49,
+   "row_in_page": 20,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Arnold Hermann",
+   "new": "Abram[?] Amroyan.[?]",
+   "note": "razhajanje odprto — črnilo ~'Abram[?] Amroyan.[?]' (velika poteza z rdečimi elementi, zelo neberljivo; draft 'Albomi G̈ruben'), h ~A[?] vs 6; Fürtrag pas na desni strani [x3: stara vsebina = zamaknjena plast]"
+  },
+  {
+   "index": 953,
+   "page": 49,
+   "row_in_page": 20,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "5",
+   "new": "",
+   "note": "dvom 'A' -> prazno [x3 re-sidrano]"
+  },
+  {
+   "index": 953,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: haus črnilo ~'A' (dvom) — razhajanje odprto]"
+  },
+  {
+   "index": 953,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3: črnilo ~\"Abram[?] Amroyan.[?]\" / haus ~'A' — razhajanje odprto]"
+  },
+  {
+   "index": 953,
+   "page": 49,
+   "row_in_page": 20,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "398",
+   "new": "",
+   "note": "vrednost POPRAVEK (register r20): 398 -> (prazno) — 398 = 939-ova vrednost (shift +1); celica 940 je prazna"
+  },
+  {
+   "index": 954,
+   "page": 49,
+   "row_in_page": 21,
+   "type": "v119_x3_fuertrag_clear",
+   "field": "owner_original",
+   "old": "Ploner Franzigen",
+   "new": "",
+   "note": "F6"
+  },
+  {
+   "index": 954,
+   "page": 49,
+   "row_in_page": 21,
+   "type": "v119_x3_fuertrag_clear",
+   "field": "haus_no",
+   "old": "14",
+   "new": "",
+   "note": "F6"
+  },
+  {
+   "index": 954,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 F6: pozicijsko = Fürtrag pas (pravili 932/970) — \"Fürtrag\" v kultur koloni + jae 7 + klafter 1073 (nesen na naslednji list); brez parcele in imena; v114 \"Ploner Franzigen\" h14 = brez glyfne podlage, snimljeno]"
+  },
+  {
+   "index": 938,
+   "page": 49,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1",
+   "note": "ertrag POPRAVEK (register r5): fl 1, kr 1367 (3/5 dvom); v114 1.264 @r6 = brez glyfne podlage"
+  },
+  {
+   "index": 938,
+   "page": 49,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "1367",
+   "note": "ertrag POPRAVEK (register r5): fl 1, kr 1367 (3/5 dvom); v114 1.264 @r6 = brez glyfne podlage"
+  },
+  {
+   "index": 938,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 ertrag: \"1-1367\" (3/5 dvom); v114 1.264 @927 = brez glyfne podlage, snimljen]"
+  },
+  {
+   "index": 939,
+   "page": 49,
+   "row_in_page": 6,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "1",
+   "new": "",
+   "note": "ertrag POPRAVEK (register r6): 1.264 -> prazno (celica 927 je prazna; red mark + curl)"
+  },
+  {
+   "index": 939,
+   "page": 49,
+   "row_in_page": 6,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "264",
+   "new": "",
+   "note": "ertrag POPRAVEK (register r6): 1.264 -> prazno (celica 927 je prazna; red mark + curl)"
+  },
+  {
+   "index": 949,
+   "page": 49,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1",
+   "note": "ertrag POPRAVEK (register r16): fl 1, kr 853 (x9: 8-5-3; v114 883 = misread 5/8, za en pas nizje)"
+  },
+  {
+   "index": 949,
+   "page": 49,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "853",
+   "note": "ertrag POPRAVEK (register r16): fl 1, kr 853 (x9: 8-5-3; v114 883 = misread 5/8, za en pas nizje)"
+  },
+  {
+   "index": 949,
+   "page": 49,
+   "type": "anmerkung_add",
+   "text": "[v119 x3 ertrag: \"1-853\" (x9); v114 1.883 = misread 5/8, za en pas nižje]"
+  },
+  {
+   "index": 950,
+   "page": 49,
+   "row_in_page": 17,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "1",
+   "new": "",
+   "note": "ertrag POPRAVEK (register r17): 1.883 -> prazno (pripada 936; celica 937 prazna)"
+  },
+  {
+   "index": 950,
+   "page": 49,
+   "row_in_page": 17,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "883",
+   "new": "",
+   "note": "ertrag POPRAVEK (register r17): 1.883 -> prazno (pripada 936; celica 937 prazna)"
+  },
+  {
+   "page": 49,
+   "type": "page_observations_v119",
+   "text": "v119 celoviti pass x3 (dvojni sidr) p49: F-NA-01 REŠEN — 22 pasov (programsko pravila): 921-929, polpas 929½ prečrtan (F5, kl 97), 930-940, Fürtrag pas (F6, jae 7|kl 1073); v114 vrednosti od r10 = +1 zamik + misreada 381/376 — polni rebuild; 938=658, 939=398 (x20; x2 633/345 = misread); register r9=929½, r21=Fürtrag. F-NA-01 REŠEN (x3): v114 vrednostna plast je od r10 naprej ZAMAKNJENA +1 (r_k = pas k-1: r10=97=pas9=929½, r11=92=pas10=930, ... r20=398=pas19=939, r21=prazno=pas20=940) + 2 misreada (r8: 381 za 241; r17: 376 za 316). PRAVI PASOVI: 929=241 (x20 jasen 2-4-1), 929½=97 PREČRTAN (polpas [516,535], rdeči znaki, brez imena — NOVO F5), 930=92, 931=821, 93"
+  }
+ ]
+}

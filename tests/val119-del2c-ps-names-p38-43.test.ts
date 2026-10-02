@@ -38,12 +38,12 @@ describe("val 119 del 2c — gardele vhodov", () => {
     expect(CH.changes.length).toBe(146);
   });
 
-  test("reading_pass plasti: v119-names 545 (485 + 60 po del 2d-x2 p44–p46); v114 184 (244 − 60); v118 60; v115 2; v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 609 (545 + 64 po del 2d-x3); v114 122 (184 − 64); v118 60; v115 0; v86 1795; ditto 207", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(545); // 485 + del 2d-x2 (p44-p46 = 60)
-    expect(n("v114-ps-reread")).toBe(184); // 244 − 60 (del 2d-x2)
+    expect(n("v119-names")).toBe(609); // 485 + del 2d-x2 (p44-p46 = 60) + del 2d-x3 (p47-p49 = 64)
+    expect(n("v114-ps-reread")).toBe(122); // 244 − 60 (2d-x2) − 64 (2d-x3)
     expect(n("v118-names")).toBe(60);
-    expect(n("v115-insert")).toBe(2);
+    expect(n("v115-insert")).toBe(0); // p49-r2 F2 fill -> v119-names (del 2d-x3)
     expect(n("v86-colonial-tiles")).toBe(1795);
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
@@ -358,9 +358,9 @@ describe("val 119 del 2c — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 2c — kaskada (izrecna)", () => {
-  test("KG sha b660c0d1 raznesen (b5d3ae93 ->; timestamp-only regeneracija — vsebina identična, osebni sloj = pass2 PUA artefakt F-PV-03/04); 3269/3477/2427/2773 identično", () => {
+  test("KG sha 62d8cfea raznesen (b5d3ae93 ->; timestamp-only regeneracija — vsebina identična, osebni sloj = pass2 PUA artefakt F-PV-03/04); 3269/3477/2427/2773 identično", () => {
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^b660c0d1/,
+      /^62d8cfea/,
     );
     const kgAny = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as Record<string, unknown>;
     expect((kgAny.nodes as unknown[]).length).toBe(3269);
@@ -376,10 +376,10 @@ describe("val 119 del 2c — kaskada (izrecna)", () => {
     const timeline = readJSON(
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ) as { meta?: Record<string, unknown> };
-    expect(JSON.stringify(timeline)).toContain("b660c0d1");
+    expect(JSON.stringify(timeline)).toContain("62d8cfea");
   });
 
   test("runtime kopija KG v src/data = atlas izhod (ena izhodna resnica)", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^b660c0d1/);
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^62d8cfea/);
   });
 });
