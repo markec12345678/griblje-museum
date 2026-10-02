@@ -1,0 +1,61 @@
+{
+ "meta": {
+  "val": 119, "del": "2e", "page": 50,
+  "scope": "celoviti pass (owner_original + haus_no + jaethe/klafter/ertrag/capital) — agentov vid, 0 VLM klicev",
+  "method": "parzelle-sidr 941-960 + Fürtrag (kan3e X150-620 z4, valseg X700-1145 z6, zz x24/zzv x14 s kolonskimi mejami); TOP0=166.6, STEP=38.85",
+  "structure": "941-960 (20 pasov) + Fürtrag pas (r20, register r20) = 21 pasov = 21 register vrstic; Übertrag NI prisoten nad 941",
+  "columns_p50": "Joch 749-795, Klafter 795-838, Classe 838-871, E.fl 871-923, E.kr 923-946, C.fl 946-1002, C.kr 1002-1029",
+  "vlm_calls": 0,
+  "values_note": "vrednostna plast 1:1 poravnana (jae v JOCH koloni, kl prazna); popravki r10 358->355; ertrag 1-136 pripada r1 (942), v114 ga je dal r2; capital 825@r9, 682@r12, 1263@r9/12/18 so C.fl (v114 jih je dal ekr/ckr/ckr, r18 tud 1265=misread 1263); r20 = Fürtrag '48 Fürtrag' jae 4|kl 386"
+ },
+ "names_audit": {
+  "r0": {"seen_haus": "1/7", "seen_name": "Stallpschibek Matthe[?]", "verdict": "ime POPRAVEK Schiffelbichl Barthol. Lorenz -> Stallpschibek Matthe[?] (Stallpschibek-glyf kot p44/p51; v114 'Schiffelbichl' = ista druzina misread); haus POPRAVEK 1 -> 1/7"},
+  "r1": {"seen_haus": "1/4", "seen_name": "Novak Martin", "verdict": "ime POPRAVEK Schiffelbichl Barthol. Lorenz -> Novak Martin (Novak-glyf jasna; v114 ditto od r0 = napacno)"},
+  "r2": {"seen_haus": "1/4", "seen_name": "Vallafschübl Matthe[?]", "verdict": "ime POPRAVEK Wondl Mathias -> Vallafschübl Matthe[?] (dvom glyfov; razhajanje odprto v anm)"},
+  "r3": {"seen_haus": "1/5", "seen_name": "Kraubgel Sveb[?]", "verdict": "ime POPRAVEK Schiffelbichl Barthol. -> Kraubgel Sveb[?] (dvom); haus POPRAVEK 1/4 -> 1/5"},
+  "r4": {"seen_haus": "1/6", "seen_name": "Stallpschibed Svec[?]", "verdict": "ime POPRAVEK Pavstgl Georg -> Stallpschibed Svec[?] (dvom); haus POPRAVEK 5 -> 1/6"},
+  "r5": {"seen_haus": "1/69", "seen_name": "Weinchan Matthe[?]", "verdict": "ime POPRAVEK Schiffelbichl Barthol. -> Weinchan Matthe[?]; haus POPRAVEK 6 -> 1/69"},
+  "r6": {"seen_haus": "1/3", "seen_name": "Weinchan Matthe[?]", "verdict": "ime POPRAVEK Winkler mathäus -> Weinchan Matthe[?]; haus POPRAVEK 69 -> 1/3"},
+  "r7": {"seen_haus": "1/3", "seen_name": "Weinchan Matthe[?]", "verdict": "ime POPRAVEK Winkler andreas -> Weinchan Matthe[?]; haus 3 -> 1/3"},
+  "r8": {"seen_haus": "1/3", "seen_name": "Weinchan Matthe[?]", "verdict": "ime POPRAVEK Winkler mathäus -> Weinchan Matthe[?]; haus 3 -> 1/3"},
+  "r9": {"seen_haus": "1/19", "seen_name": "Schimey Michael", "verdict": "ime POPRAVEK Pirchiner mathäus -> Schimey Michael (Schimek-glyf, cross-val h-niz); haus POPRAVEK 3 -> 1/19"},
+  "r10": {"seen_haus": "1/10", "seen_name": "Kranvel Michael[?]", "verdict": "ime POPRAVEK Lehning Michael -> Kranvel Michael[?] (dvom forma); haus POPRAVEK 79 -> 1/10"},
+  "r11": {"seen_haus": "1/11", "seen_name": "Pessing Georg", "verdict": "ime POPRAVEK Kranz Michael -> Pessing Georg (cross-val p49 F5/p52/p55)"},
+  "r12": {"seen_haus": "1/11", "seen_name": "Pessing Georg", "verdict": "ime POPRAVEK Pölling Georg -> Pessing Georg"},
+  "r13": {"seen_haus": "1/10", "seen_name": "Kranvel Michael[?]", "verdict": "ime POPRAVEK Pölling Georg -> Kranvel Michael[?]; haus 11 -> 1/10"},
+  "r14": {"seen_haus": "1/10", "seen_name": "Kranvel Michael[?]", "verdict": "ime ✓ Kranz Michael ~ Kranvel Michael[?]; haus 10 -> 1/10"},
+  "r15": {"seen_haus": "1/14", "seen_name": "Novak Martin", "verdict": "ime POPRAVEK Wondl Mathias -> Novak Martin; haus 14 -> 1/14"},
+  "r16": {"seen_haus": "1/6", "seen_name": "Stallpschibek Grad[?]", "verdict": "ime POPRAVEK Wondl Mathias -> Stallpschibek Grad[?] (dvom); haus POPRAVEK 14 -> 1/6"},
+  "r17": {"seen_haus": "1/6", "seen_name": "Stallpschübek Jne[?]", "verdict": "ime POPRAVEK Schiffelbichl Barthol. -> Stallpschübek Jne[?] (dvom); haus 6 -> 1/6"},
+  "r18": {"seen_haus": "1/14", "seen_name": "Novak Martin", "verdict": "ime POPRAVEK Wondl Mathias -> Novak Martin; haus 14 -> 1/14"},
+  "r19": {"seen_haus": "1/5", "seen_name": "Stanly d Sury[?]", "verdict": "ime POPRAVEK Wondl Mathias -> Stanly d Sury[?] (dvom, d = in/terka?); haus POPRAVEK 14 -> 1/5"},
+  "r20": {"seen_haus": "", "seen_name": "", "verdict": "F-FÜRTRAG: pas brez imena; v114 'Pavstgl Lorenz' h5 = fantom (brez glyfne podlage) -> izpraznjeno; kultur '48 Fürsteß' = '48 Fürtrag'"}
+ },
+ "values_audit": {
+  "r0": {"seen_jae": "418", "old_jae": "418", "verdict": "jae ✓ (Joch kolona)"},
+  "r1": {"seen_jae": "816", "old_jae": "816", "seen_ertrag": "1-136", "verdict": "jae ✓; NOVO ertrag 1-136 (v114 ga je imel na r2 = zamik)"},
+  "r2": {"seen_jae": "509", "old_jae": "509", "old_ertrag_fl": "1", "old_ertrag_kr": "- 136", "verdict": "jae ✓; ertrag 1/-136 POCISCEN (pripada r1/942)"},
+  "r3": {"seen_jae": "395", "old_jae": "395", "verdict": "jae ✓"},
+  "r4": {"seen_jae": "353", "old_jae": "353", "verdict": "jae ✓"},
+  "r5": {"seen_jae": "673", "old_jae": "673", "verdict": "jae ✓"},
+  "r6": {"seen_jae": "205", "old_jae": "205", "verdict": "jae ✓"},
+  "r7": {"seen_jae": "81", "old_jae": "81", "verdict": "jae ✓"},
+  "r8": {"seen_jae": "269", "old_jae": "269", "verdict": "jae ✓"},
+  "r9": {"seen_jae": "270", "old_jae": "270", "seen_capital_fl": "825", "old_ertrag_kr": "825", "verdict": "jae ✓; capital 825 = C.fl (v114 ekr=825 = napačna kolona) -> ekr pociscen, cfl 825"},
+  "r10": {"seen_jae": "355", "old_jae": "358", "verdict": "jae POPRAVEK 358 -> 355 (zzv x14: zadnja cifra 5)"},
+  "r11": {"seen_jae": "587", "old_jae": "587", "verdict": "jae ✓ (s popravkom zapisano)"},
+  "r12": {"seen_jae": "125", "old_jae": "125", "seen_capital_fl": "682", "old_capital_kr": "682", "verdict": "jae ✓; capital 682 = C.fl (v114 ckr) -> ckr pociscen, cfl 682"},
+  "r13": {"seen_jae": "104", "old_jae": "104", "verdict": "jae ✓"},
+  "r14": {"seen_jae": "400", "old_jae": "400", "verdict": "jae ✓"},
+  "r15": {"seen_jae": "131", "old_jae": "131", "verdict": "jae ✓"},
+  "r16": {"seen_jae": "442", "old_jae": "442", "verdict": "jae ✓"},
+  "r17": {"seen_jae": "45", "old_jae": "45", "verdict": "jae ✓"},
+  "r18": {"seen_jae": "528", "old_jae": "528", "seen_capital_fl": "1263", "old_capital_kr": "1265", "verdict": "jae ✓; capital 1263 = C.fl (v114 ckr=1265: kolona + cifra misread) -> ckr pociscen, cfl 1263"},
+  "r19": {"seen_jae": "117", "old_jae": "117", "verdict": "jae ✓"},
+  "r20": {"seen_jae": "4", "seen_kl": "386", "old_jae": "", "old_kl": "", "verdict": "Fürtrag: jae 4 | kl 386 NOVO (v114 prazno; v57 Joch 4 = umajeno v anm)"}
+ },
+ "ertrag_audit": {
+  "942": {"seen": "1-136", "verdict": "ertrag 1-136 @942 (zapisano na dnu celice, straddla r2; v114 r2 = zamik +1)"}
+ },
+ "page_observations": "p50: 941-960 + Fürtrag (21 pasov) — Übertrag ni zapisan; Fürtrag '48 Fürtrag' jae 4|kl 386 (v114 r20 fantom 'Pavstgl Lorenz' pociscen); vrednosti v JOCH koloni (Acker/Wald/Hutweide del), klafter prazna; capital 825/682/1263 v C.fl; rdece svinke-verifikacije + rdeci zigzi p944-945"
+}

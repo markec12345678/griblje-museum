@@ -158,8 +158,8 @@ describe("val 90 — reprodukcija in usklajenost (K7, K8)", () => {
 });
 
 describe("val 90 — konfunda F-PV-05 (K9) + opazovalni register (K10)", () => {
-  test("K9 pin: atribucija 100–1599 v jaethe = 323 → 53 (p1–55; val 112: F-PV-07 premestitve + vrednostni popravki; val 119 del 2d-x3: p48 F-NA-02 rebuild — v114 jae = klafter v napačni koloni, jae polja pociscena) / 49 (p56–143; val 90: 242 → val 98: 214 → val 107: 120 → val 108: 49, mehanski premik z F-PV-05 korekcijami in re-readom — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
-    expect(art["K9_konfunda_F-PV-05"].p1_55_val57["jaethe_plain_100_1599"]).toBe(53); // val 108: 323 → val 112: 275 → val 114: 69 → val 119 del 2d-x3: 53 (p48 F-NA-02)
+  test("K9 pin: atribucija 100–1599 v jaethe = 323 → 53 (p1–55; val 112: F-PV-07 premestitve + vrednostni popravki; val 119 del 2d-x3: p48 F-NA-02 rebuild; del 2e: nestanjeno) / 49 (p56–143; val 90: 242 → val 98: 214 → val 107: 120 → val 108: 49, mehanski premik z F-PV-05 korekcijami in re-readom — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
+    expect(art["K9_konfunda_F-PV-05"].p1_55_val57["jaethe_plain_100_1599"]).toBe(53); // val 108: 323 → val 112: 275 → val 114: 69 → 2d-x3: 53 (p48 F-NA-02) → 2e: 53
     expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(49);
   });
 

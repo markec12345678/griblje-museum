@@ -69,7 +69,7 @@ describe("val 115 — gardele in infrastruktura", () => {
     expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
     expect(REG.filter((r) => f(r, "reading_pass") === "v112-ps-reread").length).toBe(265);
     expect(REG.filter((r) => f(r, "reading_pass") === "v113-ps-reread").length).toBe(0);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(122); // val 119 del 2d-x3
+    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(0); // val 119 del 2e: p50-p55 = zadnjih 122
   });
 
   test("changes audit: val 115, 4 vstavitve + 4 page_obs (p49, p48, p40, p34 + obs)", () => {
@@ -209,7 +209,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(pr.ps_parcels.some((p) => p.page === 49 && p.parcel_number === 2)).toBe(false);
   });
 
-  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha 62d8cfea (val 119 del 2d-x3 kaskada)", () => {
+  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha c3932092 (val 119 del 2e kaskada)", () => {
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
@@ -224,10 +224,10 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^62d8cfea/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^c3932092/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 62d8cfea… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha c3932092… (pogodba §22)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
@@ -273,10 +273,11 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     const k9 = (Object.keys(c4) as string[]).find((k) => k.startsWith("K9"));
     expect(k9).toBeDefined();
     const p1 = c4[k9!].p1_55_val57;
-    expect(p1["jaethe_plain_100_1599"]).toBe(53); // val 115: 69 → val 119 del 2d-x3: 53 (p48 jae pocisceni)
-    expect(p1["jaethe_plain_le99"]).toBe(58); // val 115: 62 → val 119 del 2d-x3: 58
-    expect(p1["klafter_plain_le99"]).toBe(177); // val 115: 174 → val 119 del 2d-x3: 177 (p48 klafter rebuild)
-    expect(p1["klafter_plain_100_1599"]).toBe(799); // val 115: 784 → val 119 del 2d-x3: 799 (p48: v114 jae = klafter)
-    expect(p1["both_filled"]).toBe(48); // nespremenjeno
+    expect(p1["jaethe_plain_100_1599"]).toBe(53); // val 115: 69 → val 119 del 2d-x3: 53 (p48 jae pocisceni; @2e nestanjeno)
+    expect(p1["jaethe_plain_le99"]).toBe(62); // val 115: 62 → 2d-x3: 58 → 2e: 62 (p50-p55 majhne jae)
+    expect(p1["klafter_plain_le99"]).toBe(179); // val 115: 174 → 2d-x3: 177 → 2e: 179
+    expect(p1["klafter_plain_100_1599"]).toBe(799); // val 115: 784 → 2d-x3: 799
+    expect(p1["both_filled"]).toBe(52); // 48 → 2e: 52 (p50-p55 jae+kl pari)
+    expect(p1["jaethe_empty"]).toBe(961); // 965 → 2e: 961
   });
 });
