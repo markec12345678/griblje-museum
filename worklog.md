@@ -4958,3 +4958,22 @@ Stage Summary:
 - Val 119 del 3 MERGAN; main @ d0cc96a; PR #130; CI 3/3 zeleno (po 1 popravku dimnih testov)
 - Osebna plast 488 → 981 oseb (v119); 16 AGREE hiš; CH 4 RESOLVED + 12 PARTIALLY_RESOLVED; KG sha 596c1ca7 (prva vsebinska sprememba od val 117); eArheologija 26-0379 V TEKU
 - Naslednje: VLM 2. oči vzorec (NR-14) → F3 medstranska poravnava → register 26-0326 + 26-0379 ob javnih poročilih → hiše 70–78 (PROVISIONAL h72/74/76) ločena odločitev
+
+---
+Task ID: 120-oci2
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 120: 2. oči kontrola vzorca PS imenskega passa (NR-14) — slepa branja 14 strani / 283 vrstic; uporabnik: "odlicno nadaljuj" / "nadaljuj kjer si ostal"
+
+Work Log:
+- Rekonstrukcija: prišli povzetek je zastarel — disk pokazal, da so del 2d-x3 (PR #128), del 2e (PR #129) in del 3 PUA↔PS (PR #130) že mergani; main @ 54a6e52; dejansko nadaljevanje = točka 3 protokola 142 §8 (VLM-subagent 2. oči kontrola vzorca NR-14)
+- Vzorec: prva+zadnja stran vsakega batcha (p17/19, p20/25, p26/31, p32/37, p38/43, p44/49, p50/55) = 14 strani, 283 vrstic (~36 % imenske plasti); 43 DUO segmentov (X 150–1010, ×3, rdeče rK) prek make-dual-v120.py; PIN_TOP0 = komitane konstante p44/49/50/55 + vizualna kalibracija p17–p43 (formula PARZ_START = 281+(pg−17)·20 potrjena na 10 straneh)
+- F-OCI-01: sub-agenti v peskovniku pixel-slepi (Read ne dostavi slik — 4 testne klice, 1 garancija, 3 timeouti) → branja v glavni seji (0 VLM, slepota ohranjena)
+- Slepa branja 42 segmentov JSON (blind/); F-OCI-02: struktura 100 % — parzelle 213/259, št. vrstic 14/14, p49 specialke (F2 923 Heide Marko ✓, polpas 929½ ✓, Fürtrag ✓, fantom r21 prazen ✓), p25/p26 rdeče prečrtane parzelle ✓
+- F-OCI-03: imena ~90 % transkripcijske variante (20+ Kurrent parov: Christan↔Vereichan, Bruckler↔Stubler, Tallafschibek↔Schapschitik …) — črkovalnica sodljiva šele celicno; F-OCI-04: bralski zdrsi na mejah segmentov (p55/p37/p31/p49 +1) zaznani prek vrednostne eksaktnosti, remap 24 vrstic → register 1:1 s tiskanimi parzellami; F-OCI-05 (OPEN): vrednostna atribucija NR-14 (p31 r0 1785, p43 r19 4731, p37 r2 705); F-OCI-06: marginalije (1-385, 1263, 1-853, 3-364, 1-1367 …) potrjene
+- Vgradnja: val120-oci2/ (blind ×42, comparison.json, analysis-v1.json, build-compare/build-analysis-v120.py) + ps-n83/make-dual-v120.py + protokol 143 + KAZALO 143 + README 180. sklop + test val120-oci2-vzorec (10)
+- Register.json + runtime NESPREMENJENI (§22, raziskovalni val); sha register fb439f80 pinciran
+- Testi 1305: 1294 pass / 11 skip / 0 fail; lint čist; tsc nedotaknjen (brez src sprememb)
+
+Stage Summary:
+- Val 120 ZAKLJUČEN (raziskovalni val): 2. oči potrjuje strukturo, parzelle, preklicanja, fantome in marginalije — imenska plast + struktura STOJITA, nič ne spreminjano
+- Naslednje: pasovni vrednostni re-read p3–p55 z bottom-rule anchoringom (F-OCI-05 kandidati p31 r0 / p43 r19 / p37 r2) → celicni-zoom 2. oči po potrebi → hiša 70–78 PROVISIONAL → register 26-0326/26-0379 ob javnih poročilih
