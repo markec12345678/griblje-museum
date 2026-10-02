@@ -327,9 +327,9 @@ describe("generateVillageStory (§18)", () => {
     expect(neznanka[2].text).toContain(`${conflictClaims} konfliktnih trditev`);
   });
 
-  test("contract: village zgodba EVIDENCED (ima C-00622 + source)", () => {
+  test("contract: village zgodba EVIDENCED (ima C-00614 + source; prej C-00622 @622 claimov)", () => {
     expect(story.contract.story_status).toBe("EVIDENCED");
-    expect(story.contract.used_claim_ids).toContain("C-00622");
+    expect(story.contract.used_claim_ids).toContain("C-00614");
     expect(story.contract.used_source_ids.length).toBeGreaterThan(3);
     expect(story.contract.input_entity_ids).toEqual([]);
     expect(story.contract.kg_sha256).toBe(sgf.provenance.kg_sha256);
