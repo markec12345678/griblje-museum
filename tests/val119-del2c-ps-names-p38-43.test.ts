@@ -358,9 +358,9 @@ describe("val 119 del 2c — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 2c — kaskada (izrecna)", () => {
-  test("KG sha c3932092 raznesen (b5d3ae93 -> 62d8cfea @2d-x3 ->; timestamp-only regeneracije — vsebina identična, osebni sloj = pass2 PUA artefakt F-PV-03/04); 3269/3477/2427/2773 identično", () => {
+  test("KG sha b3e9797e raznesen (b5d3ae93 -> 62d8cfea @2d-x3 ->; timestamp-only regeneracije — vsebina identična, osebni sloj = pass2 PUA artefakt F-PV-03/04); 3269/3477/2427/2773 identično", () => {
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^596c1ca7/,
+      /^b3e9797e/,
     );
     const kgAny = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as Record<string, unknown>;
     expect((kgAny.nodes as unknown[]).length).toBe(3762);
@@ -376,10 +376,10 @@ describe("val 119 del 2c — kaskada (izrecna)", () => {
     const timeline = readJSON(
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ) as { meta?: Record<string, unknown> };
-    expect(JSON.stringify(timeline)).toContain("596c1ca7");
+    expect(JSON.stringify(timeline)).toContain("b3e9797e");
   });
 
   test("runtime kopija KG v src/data = atlas izhod (ena izhodna resnica)", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^596c1ca7/);
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^b3e9797e/);
   });
 });

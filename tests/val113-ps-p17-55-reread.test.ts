@@ -94,7 +94,7 @@ describe("val 113 — F-PV-07-SPLIT (zlita notacija Joch|Klafter)", () => {
 
   test("p18: 5 splitov (r4 1|243, r11 1|50, r15 1|28, r16 1|122, r17 1|130) — v57 jih je zlil (1912/30/28/622/620)", () => {
     const exp: [number, string, string, string][] = [
-      [4, "1", "243", "1912"],
+      [4, "", "1243", "1912"], // val 121: vodilna 1 je V kl celici → all-klafter 1243
       [11, "1", "50", "30"],
       [15, "1", "28", "28"],
       [16, "1", "122", "622"],
@@ -145,15 +145,15 @@ describe("val 113 — F-PV-07 premestitve + popravki p17–p24", () => {
     expect(f(rows[18], "klafter")).toBe("352");
   });
 
-  test("p23: premestitve + popravki 217→317, 1087→1081, 1162→1163, 470→770, 705→715; split r14 jae=1", () => {
+  test("p23: premestitve + popravki 217→317 (val 121 OBRNILO: ×16 glif = 2 z zanko → 217), 1087→1081, 1162→1163, 470→770, 705→715; split r14 jae=1", () => {
     const rows = rowsOf(23);
-    expect(f(rows[3], "klafter")).toBe("317");
+    expect(f(rows[3], "klafter")).toBe("217"); // val 121: v113 317 zavržena (×16 celicni zoom)
     expect(f(rows[4], "klafter")).toBe("1081");
     expect(f(rows[5], "klafter")).toBe("1163");
     expect(f(rows[10], "klafter")).toBe("770");
     expect(f(rows[15], "klafter")).toBe("715");
     expect(f(rows[14], "jaethe")).toBe("1");
-    expect(f(rows[14], "klafter")).toBe("");
+    expect(f(rows[14], "klafter")).toBe("1048"); // val 121: razhajanje 1168 vs 1|1048 zaprto (rdeče prečrtana)')
   });
 
   test("p24: brez premestitev (v57 že pravilen stolpec) + popravki 756→736, 677→577, 908→905, 680→630, 546→544, 488→428, 243→343 + ocistka '.'", () => {
@@ -168,10 +168,13 @@ describe("val 113 — F-PV-07 premestitve + popravki p17–p24", () => {
     expect(f(rows[19], "klafter")).toBe("343");
   });
 
-  test("odprta razhajanja izrecno zapisana (anmerkung 'razhajanje … — odprto … val 113') — nič dvignjeno (§4)", () => {
-    const open = REG.filter((r) => f(r, "anmerkung").includes("— odprto") && f(r, "anmerkung").includes("val 113"));
-    expect(open.length).toBeGreaterThanOrEqual(30);
-    for (const r of open) expect(f(r, "anmerkung")).toContain("[razhajanje");
+  test("razhajanja val 113/114 ZAPRTA v val 121 (pasovni re-read) — §4 sledljivost ohranjena", () => {
+    const closed = REG.filter((r) => f(r, "anmerkung").includes("— ZAPRTO val 121"));
+    expect(closed.length).toBeGreaterThanOrEqual(60);
+    for (const r of closed.slice(0, 20)) {
+      const a = f(r, "anmerkung");
+      expect(a.includes("razhajanje") || a.includes("neujemljivo")).toBe(true);
+    }
   });
 
   test("p24: 8 prečrtano-rdečih opomb (revizije)", () => {

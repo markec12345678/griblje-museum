@@ -209,7 +209,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(pr.ps_parcels.some((p) => p.page === 49 && p.parcel_number === 2)).toBe(false);
   });
 
-  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha c3932092 (val 119 del 2e kaskada)", () => {
+  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha b3e9797e (val 119 del 2e kaskada)", () => {
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
@@ -224,10 +224,10 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^596c1ca7/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^b3e9797e/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha c3932092… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha b3e9797e… (pogodba §22)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
@@ -273,11 +273,11 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     const k9 = (Object.keys(c4) as string[]).find((k) => k.startsWith("K9"));
     expect(k9).toBeDefined();
     const p1 = c4[k9!].p1_55_val57;
-    expect(p1["jaethe_plain_100_1599"]).toBe(53); // val 115: 69 → val 119 del 2d-x3: 53 (p48 jae pocisceni; @2e nestanjeno)
-    expect(p1["jaethe_plain_le99"]).toBe(62); // val 115: 62 → 2d-x3: 58 → 2e: 62 (p50-p55 majhne jae)
-    expect(p1["klafter_plain_le99"]).toBe(179); // val 115: 174 → 2d-x3: 177 → 2e: 179
-    expect(p1["klafter_plain_100_1599"]).toBe(799); // val 115: 784 → 2d-x3: 799
-    expect(p1["both_filled"]).toBe(52); // 48 → 2e: 52 (p50-p55 jae+kl pari)
-    expect(p1["jaethe_empty"]).toBe(961); // 965 → 2e: 961
+    expect(p1["jaethe_plain_100_1599"]).toBe(52); // val 115: 69 → val 119 del 2d-x3: 53 (p48 jae pocisceni; @2e nestanjeno)
+    expect(p1["jaethe_plain_le99"]).toBe(65); // val 115: 62 → 2e: 62 → val 121: 65 (74→52, 87→50, 39 … majhne vrednosti)
+    expect(p1["klafter_plain_le99"]).toBe(177); // val 115: 174 → 2e: 179 → val 121: 178 (98→32, 87→50 2026)
+    expect(p1["klafter_plain_100_1599"]).toBe(807); // val 115: 784 → 2d-x3: 799 → val 121: 807
+    expect(p1["both_filled"]).toBe(56); // 48 → 2e: 52 (p50-p55 jae+kl pari)
+    expect(p1["jaethe_empty"]).toBe(959); // 965 → 2e: 961
   });
 });

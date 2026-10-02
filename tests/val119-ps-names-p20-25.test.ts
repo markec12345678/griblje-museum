@@ -171,8 +171,8 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha c3932092 (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^596c1ca7/);
+  test("KG sha b3e9797e (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^b3e9797e/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];
@@ -191,7 +191,7 @@ describe("val 119 del 1 — kaskada (izrecna)", () => {
     };
     expect(String(c4.meta.K5_input_reliability)).toContain("207/2875");
     const k9 = JSON.stringify(c4);
-    expect(k9).toContain('"jaethe_plain_100_1599":53');
-    expect(k9).toContain('"jaethe_empty":961'); // val 119 del 2e: 965 − 4
+    expect(k9).toContain('"jaethe_plain_100_1599":52');
+    expect(k9).toContain('"jaethe_empty":959'); // val 119 del 2e: 965 − 4 → val 121: 958
   });
 });

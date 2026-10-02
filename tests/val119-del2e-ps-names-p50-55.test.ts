@@ -262,10 +262,10 @@ describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", 
 });
 
 describe("val 119 del 2e — kaskada (izrecna)", () => {
-  test("KG sha c3932092: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^596c1ca7/);
+  test("KG sha b3e9797e: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^b3e9797e/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^596c1ca7/,
+      /^b3e9797e/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -304,10 +304,10 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
     const k9key = Object.keys(loose).find((k) => k.startsWith("K9"));
     expect(k9key).toBeDefined();
     const p1 = loose[k9key!].p1_55_val57;
-    expect(p1["both_filled"]).toBe(52); // 48 + 4 (p50-p55 jae + kl pari)
-    expect(p1["jaethe_empty"]).toBe(961);
-    expect(p1["klafter_empty"]).toBe(85);
-    expect(p1["jaethe_plain_100_1599"]).toBe(53);
+    expect(p1["both_filled"]).toBe(56); // 48 + 4 (p50-p55 jae + kl pari)
+    expect(p1["jaethe_empty"]).toBe(959);
+    expect(p1["klafter_empty"]).toBe(84);
+    expect(p1["jaethe_plain_100_1599"]).toBe(52);
     expect(p1["jaethe_plain_gt1599"]).toBe(1);
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
