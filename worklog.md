@@ -4863,3 +4863,21 @@ Work Log:
 Stage Summary:
 - Del 2d-x2 KONČAN lokalno: p44–p46 vgrajeni (60 vrstic), p47–p49 temeljito prebrani ampak drvani v DRAFT zaradi F-NA-01 (register row-alignment)
 - Naslednje (del 2d-x3): celoviti re-read p47–p49 z DVOJNIM sidrom (ime+vrednost skupaj) → popravek obeh plasti + fantomi; nato del 2e (p50–p55); push/PR ko žeton pride
+
+---
+Task ID: 119-del2d-cascade
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2d — kaskada)
+Task: griblje-museum — publikacijska kaskada za val 119 del 2d-PRE + 2d-x2 (user: žeton + "nadaljuj kjer si ostal", nato "nadaljuj")
+
+Work Log:
+- Rekonstrukcija: sejni kontekst spet zastarel (val 113) — worklog + git pokazala 2 lokalna commita (c775f06 del 2d-PRE, fb7758d del 2d-x2) na feat/val119-del2d-pre-issue72-parzelle-anchor z oznako "push blokiran (brez žetona)"; uporabnikov žeton odklenil točko zastoja
+- Lint kontrola (eslint . čist) → PUSH uspešen (obe commita na origin)
+- PR #127 ustvarjen prek GitHub API (naslov + opis: parzelle-sidr metodologija, vgradnja p44–p46, F-NA-01 USTAVITEV p47–p49, F1/F2 potrditve, kaskada, docs 139)
+- CI 3/3 ZELENO (tipi + lint + enotni testi; dimni testi API-jev; Vercel Preview) — brez popravkov, za razliko od del-2b (tsc 7554cac)
+- MERGE @ 1e395d5 (merge commit, po konvenciji repozitorija) → remote veja izbrisana (API 204) → lokalna veja izbrisana → main sinhroniziran
+- Peskovniška motnja med sejo (vsa orodja ~20 klicev down) — po okrevanju nadaljevano točno od CI-polla, brez izgube stanja
+
+Stage Summary:
+- Val 119 del 2d (PRE + x2) MERGAN; main @ 1e395d5; PR #127; vse veje očiščene
+- TRANSCRIBED=0, nič ne dvignjeno; KG vsebina identična (timestamp-only sha); K5 207, K9 69
+- Naslednje: del 2d-x3 = celoviti re-read p47–p49 z DVOJNIM sidrom (ime+vrednost skupaj) → popravek obeh plasti + fantomi (F-NA-01) → nato del 2e (p50–p55) → PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379
