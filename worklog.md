@@ -4941,3 +4941,20 @@ Stage Summary:
 - Metoda B dokumentirana (F-SYNC-01 popavek); 16 AGREE hiš z cross-val dokazi iz del 2b–2e; 8 zastarelih hiš ohranjeno (ps_stale); 4 CH RESOLVED + 12 PARTIALLY_RESOLVED brez brisanja dokazov
 - eArheologija: 26-0379 terenska raziskava V TEKU (okno okt./nov. 2026); 26-0326 še brez javnega poročila
 - Naslednje: VLM 2. oči vzorec (NR-14) → F3 medstranska poravnava → register 26-0326 + 26-0379 ob javnih poročilih → hiše 70–78 (PROVISIONAL h72/74/76) ločena odločitev
+
+---
+Task ID: 119-del3-cascade
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 3 — publikacijska kaskada)
+Task: griblje-museum — publikacijska kaskada za val 119 del 3 (user: "odlicno nadaljuj")
+
+Work Log:
+- Lint čist → PUSH (token) → PR #130 ustvarjen (naslov + opis: F-SYNC-01 odkritje, metoda B, 16 AGREE hiš, vgradnja 981 oseb, kaskada KG 3762/3471, eArheologija 26-0379 v teku)
+- CI 1. tek: "tipi + lint + enotni testi" ZELENO + Vercel Preview ZELENO, "dimni testi API-jev" FAILURE — 4 asercije s starimi števci (story-graph pregled 3.269/3.477, zgodba h40 C-00154, village C-00622, coverage hiše 49 CONFLICT) + DEEPER vzrok: story-engine trdo kodirani ["C-00622"] (val 68) v §18.1 + §18.8
+- Popravek 5c3bbca: story-engine IS_GEMEINDE_OF claim dinamičen iz KG (gemeindeClaimId; C-00614 @614 trditev); api-smoke 4 pini posodobljeni (3762/3471, C-00153, C-00614, 33 CONFLICT + 16 VERIFIED); village contract test C-00614; lokalno: 1295 testov 0 fail, tsc 0, lint 0
+- CI 2. tek: 3/3 ZELENO (tipi+lint+enotni testi; dimni testi API-jev; Vercel Preview)
+- MERGE @ d0cc96a (merge commit) → remote veja izbrisana (204) → lokalna izbrisana → main sinhroniziran
+
+Stage Summary:
+- Val 119 del 3 MERGAN; main @ d0cc96a; PR #130; CI 3/3 zeleno (po 1 popravku dimnih testov)
+- Osebna plast 488 → 981 oseb (v119); 16 AGREE hiš; CH 4 RESOLVED + 12 PARTIALLY_RESOLVED; KG sha 596c1ca7 (prva vsebinska sprememba od val 117); eArheologija 26-0379 V TEKU
+- Naslednje: VLM 2. oči vzorec (NR-14) → F3 medstranska poravnava → register 26-0326 + 26-0379 ob javnih poročilih → hiše 70–78 (PROVISIONAL h72/74/76) ločena odločitev
