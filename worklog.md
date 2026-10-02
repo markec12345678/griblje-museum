@@ -4881,3 +4881,21 @@ Stage Summary:
 - Val 119 del 2d (PRE + x2) MERGAN; main @ 1e395d5; PR #127; vse veje očiščene
 - TRANSCRIBED=0, nič ne dvignjeno; KG vsebina identična (timestamp-only sha); K5 207, K9 69
 - Naslednje: del 2d-x3 = celoviti re-read p47–p49 z DVOJNIM sidrom (ime+vrednost skupaj) → popravek obeh plasti + fantomi (F-NA-01) → nato del 2e (p50–p55) → PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379
+
+---
+Task ID: 119-del2d-x3
+Agent: Z.ai Code (glavna orkestratorska seja, val 119 del 2d-x3)
+Task: griblje-museum — val 119 del 2d-x3: celoviti re-read PS p47–p49 z DVOJNIM SIDROM (ime+vrednost), F-NA-01 rešitev + publikacijska kaskada (user: "nadaljuj kjer si ostal")
+
+Work Log:
+- Rekonstrukcija: main @ f30653c z NEPOTRJENIM del 2d-x3 delom v working tree (prejšnja seja odtekla sredi): readings p47/p48/p49 že celovito prebrani (x3, 0 VLM), build-register-v119-del2d-x3.py že zagnan (changes JSON + register + kaskada c4/KG/story/timeline/coverage = sveži, 14:40–14:41) — NISO bili: docs, testi, pini, commit, publikacija
+- Verifikacija obstoječega dela: register invarianto (2875; v119 609, v114 122, v115 0, v118 60, v86 1795, ditto 207), F5 (r9 polpas 929½ vsa polja prazna + snimke), F6 (r21 Fürtrag prazen + anm jae 7|kl 1073), ertrag (926=1-1367, 936=1-853, 927/937 pociscena), KG sha 62d8cfea (2 RESIDENCE relaciji TP-029 prevezani: R-03433 PER-0164→PER-0177, R-03434 PER-0100→PER-0235), K9 69→53, K5 bloki 2608 — vse konsistentno
+- Pini posodobljeni v 13 testnih datotekah: plasti (545→609, 184→122, v115 2→0), KG sha b660c0d1→62d8cfea (×14), K9 (69→53; gt1599 16→15), razhajanja 55→71, DRAFT→celovito status p47–p49, vsebinski pini p48 r2 (v115 vstavek re-sidran: Krischan Matthe. h3, kl 733) + p49 r2 (F2 fill Heide Marko. h3) + val114 p48/p49 strukturni (F-NA-02/F-NA-01 dokazi zamika)
+- Nov test tests/val119-del2d-x3-ps-names-p47-49.test.ts (12): guardi changes-audita (206 = 57 owner-fix + 44 haus-fix + 71 value-fix + 25 anm + F5 ×3 + F6 ×2 + 3 page_obs + 1 bookkeeping), plasti, readings meta (0 VLM, 21/21/22), p47/p48/p49 ključne vrstice + snimke, K9/K5, KG relacije
+- Docs: protokol 140 (6 sekcij) + KAZALO vnos 140 + README 177. sklop
+- Kaskada: lint čist; 1268 testov: 1257 pass / 11 skip / 0 fail; commit e4471fa → push (token) → PR #128 → CI 1. tek FAILURE ("tipi + lint + enotni testi": TS2352 nevarn cast v novem testu — bun test ni tipoved; tsc lokalno potrdil) → popravek 2ded1d2 (cast prek unknown) → CI 3/3 ZELENO → MERGE @ 89584bf (merge commit) → remote veja izbrisana (204) + lokalna izbrisana → main sinhroniziran
+
+Stage Summary:
+- Val 119 del 2d-x3 MERGAN; main @ 89584bf; PR #128; F-NA-01 ZAPRT (protokol 140)
+- v119-names 545→609 (PS p44–p49 imensko + vrednostno pokrite: 124 vrstic), v114 122, v115 0; razhajanja 71 (vsa anmerkung); TRANSCRIBED=0, 0 VLM; KG vsebinsko stabilna (samo 2 RESIDENCE prevezavi), K5 207, K9 53
+- Naslednje: del 2e = p50–p55 (parzelle-sidr 942+, dvojni sidr metoda) → nato PUA↔PS sinhronizacija (F-PV-03/04) → register 26-0326 + 26-0379 → VLM 2. oči vzorec (NR-14)
