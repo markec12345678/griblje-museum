@@ -4977,3 +4977,17 @@ Work Log:
 Stage Summary:
 - Val 120 ZAKLJUČEN (raziskovalni val): 2. oči potrjuje strukturo, parzelle, preklicanja, fantome in marginalije — imenska plast + struktura STOJITA, nič ne spreminjano
 - Naslednje: pasovni vrednostni re-read p3–p55 z bottom-rule anchoringom (F-OCI-05 kandidati p31 r0 / p43 r19 / p37 r2) → celicni-zoom 2. oči po potrebi → hiša 70–78 PROVISIONAL → register 26-0326/26-0379 ob javnih poročilih
+
+---
+Task ID: 120-cascade
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 120 publikacijska kaskada (PR #131); uporabnik: "odlicno nadaljuj"
+
+Work Log:
+- Kaskada: push feat/val120-oci2-vzorec @ 8deb1bb → PR #131 → CI 3/3 zeleno na PRVEM teku (dimni testi API-jev ✓, Vercel Preview ✓, tipi + lint + enotni testi ✓) → merge @ 8e95ad4 → veja izbrisana (API 204 + lokalno) → main sinhroniziran, delovno drevo čisto
+- Vsebina: 2. oči kontrola vzorca NR-14 — slepa branja 14 strani / 283 vrstic (42 segmentov, DUO X150-1010 ×3, PIN_TOP0 kalibracija); F-OCI-01 sub-agenti pixel-slepi (branja v glavni seji, 0 VLM); F-OCI-02 struktura 100 % (parzelle 213/259, p49 specialke F2/polpas/Fürtrag/fantom, p25/p26 prečrtanja); F-OCI-03 imena ~90 % transkripcijske variante (20+ Kurrent parov); F-OCI-04 bralski zdrsi na mejah segmentov remapirani 24 vrstic → register 1:1; F-OCI-05 OPEN vrednostna atribucija (p31 r0 1785, p43 r19 4731); F-OCI-06 marginalije potrjene
+- Register.json + runtime NESPREMENJENI (§22, sha fb439f80 pinciran); protokol 143 + KAZALO 143 + README 180. sklop; testi val120-oci2-vzorec (10) — 1305 testov: 1294 pass / 11 skip / 0 fail; lint čist
+
+Stage Summary:
+- Val 120 mergan main @ 8e95ad4 (worklog): 2. oči potrjuje imensko plast + strukturo — nič ne spreminjano
+- Naslednje: pasovni vrednostni re-read p3–p55 z bottom-rule anchoringom (F-OCI-05: p31 r0 / p43 r19 / p37 r2) → celicni-zoom 2. oči po potrebi → hiša 70–78 PROVISIONAL → register 26-0326/26-0379 ob javnih poročilih
