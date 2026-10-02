@@ -35,13 +35,13 @@ describe("val 119 del 1 — gardele vhodov", () => {
     expect(CH.changes.length).toBe(99);
   });
 
-  test("reading_pass plasti: v119-names 545 (del 1+2a+2b+2c+2d-x2); v113 0; v114 184; v118-names 60; v115-insert 2; v86 1795", () => {
+  test("reading_pass plasti: v119-names 609 (del 1+2a+2b+2c+2d-x2+2d-x3); v113 0; v114 122; v118-names 60; v115-insert 0; v86 1795", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(545); // del 1 (120) + 2a (120) + 2b (122) + 2c (123) + 2d-x2 (p44-p46 = 60)
+    expect(n("v119-names")).toBe(609); // del 1 (120) + 2a (120) + 2b (122) + 2c (123) + 2d-x2 (p44-p46 = 60) + 2d-x3 (p47-p49 = 64)
     expect(n("v113-ps-reread")).toBe(0);
-    expect(n("v114-ps-reread")).toBe(184); // 244 − 60 (del 2d-x2: p44-p46 -> v119-names)
+    expect(n("v114-ps-reread")).toBe(122); // 184 − 62 − 2 (del 2d-x3: p47-p48 v114 + p49 v114/v115 -> v119-names)
     expect(n("v118-names")).toBe(60);
-    expect(n("v115-insert")).toBe(2); // val 119 del 2c: p40-r13 (v115) prebrana -> v119-names
+    expect(n("v115-insert")).toBe(0); // val 119 del 2d-x3: p49-r2 (v115, F2 fill 'Heide Marko.' h3) prebrana -> v119-names
     expect(n("v86-colonial-tiles")).toBe(1795);
   });
 
@@ -171,8 +171,8 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha b660c0d1 raznesen; PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^b660c0d1/);
+  test("KG sha 62d8cfea (val 119 del 2d-x3 kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^62d8cfea/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];
@@ -183,7 +183,7 @@ describe("val 119 del 1 — kaskada (izrecna)", () => {
     expect(s.length).toBeGreaterThan(0);
   });
 
-  test("pass3 392 parcel + raba 105/142 identično; K5 dito 207; K9 69 nespremenjen", () => {
+  test("pass3 392 parcel + raba 105/142 identično; K5 dito 207; K9 53 (val 119 del 2d-x3: p48 F-NA-02 — v114 jae = klafter v napačni koloni)", () => {
     const pr = readJSON("research-griblje/atlas-1825/parcel-register-1825.json") as Record<string, unknown>;
     expect(pr.ps_parcels_total).toBe(392);
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as {
@@ -191,6 +191,6 @@ describe("val 119 del 1 — kaskada (izrecna)", () => {
     };
     expect(String(c4.meta.K5_input_reliability)).toContain("207/2875");
     const k9 = JSON.stringify(c4);
-    expect(k9).toContain('"jaethe_plain_100_1599":69');
+    expect(k9).toContain('"jaethe_plain_100_1599":53');
   });
 });

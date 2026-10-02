@@ -302,11 +302,11 @@ describe("val 112 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha b660c0d1… (pogodba §22, val 116)", () => {
+  test("kaskadni artefakti držijo isti KG sha 62d8cfea… (pogodba §22, val 116)", () => {
     const { createHash } = require("node:crypto") as typeof import("node:crypto");
     const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
     const kgSha = sha(join(root, "research-griblje/atlas-1825/knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^b660c0d1/);
+    expect(kgSha).toMatch(/^62d8cfea/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

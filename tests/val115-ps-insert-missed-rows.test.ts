@@ -23,8 +23,8 @@
  *
  * KASKADA (izrecna, testno vodena): PS parcele 391 → 392 (+1 p048-j12 brez haus_no); land use
  * None 76 → 77; KG PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi/HAS_PARCEL NESPREMENJENI
- * 3477/2773 (nova parcela brez haus_no = brez vezi; sha b660c0d1); timeline I6 PUA 2035 / PS 392 /
- * raba 173+142; coverage PARTIAL 1066 → 1067; c4 K9 jaethe_plain_100_1599 69 NESPREMENJENO
+ * 3477/2773 (nova parcela brez haus_no = brez vezi; sha 62d8cfea po val 119 del 2d-x3 kaskadi); timeline I6 PUA 2035 / PS 392 /
+ * raba 173+142; coverage PARTIAL 1066 → 1067; c4 K9 jaethe_plain_100_1599 69 → 53 (val 119 del 2d-x3: p48 F-NA-02 rebuild — v114 jae = klafter v napačni koloni)
  * (12/1/2 ≤ 99), druge oblike izrecno pincirane.
  *
  * Iskrenost (§4): TRANSCRIBED = 0; vstavljene vrednosti z aproksimacijami nosijo [?]/~ markerje;
@@ -61,15 +61,15 @@ const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("
 const ATLAS = join(ROOT, "research-griblje", "atlas-1825");
 
 describe("val 115 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (2871 + 4 vstavljene); stare plasti nedotaknjene (139 v88, 1795 v86 po val 116: 1755 + 40 p142, 265 v112, 80 v113 + 184 v114 po val 119 del 2d-x2 (p44–p46 -> v119-names); v115 2 — p34 r20 + p40 r13 prebrani)", () => {
+  test("register: 2875 vrstic (2871 + 4 vstavljene); stare plasti nedotaknjene (139 v88, 1795 v86 po val 116: 1755 + 40 p142, 265 v112, 80 v113 + 122 v114 po val 119 del 2d-x3 (p47–p49 -> v119-names); v115 0 — p49 r2 F2 fill prebrana v del 2d-x3)", () => {
     expect(REG.length).toBe(2875);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v115-insert").length).toBe(2); // val 119 del 2c: p34 r20 + p40 r13 prebrani
+    expect(REG.filter((r) => f(r, "reading_pass") === "v115-insert").length).toBe(0); // val 119 del 2d-x3: p49 r2 (zadnja v115) F2 fill 'Heide Marko.' h3 -> v119-names
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
     expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
     expect(REG.filter((r) => f(r, "reading_pass") === "v112-ps-reread").length).toBe(265);
     expect(REG.filter((r) => f(r, "reading_pass") === "v113-ps-reread").length).toBe(0);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(184); // val 119 del 2c
+    expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(122); // val 119 del 2d-x3
   });
 
   test("changes audit: val 115, 4 vstavitve + 4 page_obs (p49, p48, p40, p34 + obs)", () => {
@@ -142,36 +142,40 @@ describe("val 115 — vsebine vstavljenih vrstic (sidra v114)", () => {
     expect(f(byPage(40)[14], "klafter")).toBe("860");
   });
 
-  test("p48 r2: '12' v Joch koloni (ni prečrtana), ~Schmipa[?] — edina vstavljena z numerično jaethe", () => {
+  test("p48 r2: v115 vstavek RE-SIDRAN v del 2d-x3 (F-NA-02: v114 'jaethe 12' = klafter v napačni koloni; x3: jae pociscen, klafter 733, ime Krischan Matthe. h3)", () => {
     const r = byPage(48)[2];
-    expect(f(r, "reading_pass")).toBe("v115-insert");
+    expect(f(r, "reading_pass")).toBe("v119-names"); // val 119 del 2d-x3: celoviti re-read
     expect(f(r, "sheet_visible")).toBe("III. N.");
     expect(f(r, "no_blatt")).toBe("1");
-    expect(f(r, "owner_original")).toBe("Schmipa[?]");
-    expect(f(r, "jaethe")).toBe("12");
-    expect(f(r, "klafter")).toBe("");
-    expect(f(r, "anmerkung")).toContain("ni prečrtana");
-    // BREZ F-PV-07-SPLIT markerja (jaethe = parcelna številka po F-PV-07)
-    expect(f(r, "anmerkung")).not.toContain("F-PV-07-SPLIT");
-    // sidri: r1 = Weidner p1 (279), r3 = Weidner p3 (733 — v114 mapirano)
-    expect(f(byPage(48)[1], "owner_original")).toBe("Weidner Mathä.");
-    expect(f(byPage(48)[1], "jaethe")).toBe("279");
-    expect(f(byPage(48)[3], "jaethe")).toBe("733");
+    expect(f(r, "owner_original")).toBe("Krischan Matthe."); // x3 names audit (v115 draft '~Schmipa[?]' = nizka zavest)
+    expect(f(r, "haus_no")).toBe("3");
+    expect(f(r, "jaethe")).toBe(""); // F-NA-02: polni rebuild vrednostne plasti p48 — vse jae prazne
+    expect(f(r, "jaethe_pre_v119")).toBe("12"); // snimka: '12' je bila klafter v napačni koloni (prava 912-vrstica p48 r1)
+    expect(f(r, "klafter")).toBe("733");
+    expect(f(r, "anmerkung")).toContain("VSTAVLJENA vrstica p2"); // v115 anmerkung ohranjen (add-only)
+    // sidri (x3): r1 klafter 12 (prej 'jaethe 279' — F-PV-07 misattribution razrešen), r3 klafter 10
+    expect(f(byPage(48)[1], "owner_original")).toBe("Krischan Matthe.");
+    expect(f(byPage(48)[1], "klafter")).toBe("12");
+    expect(f(byPage(48)[3], "owner_original")).toBe("Stabelz Swan.[?]");
+    expect(f(byPage(48)[3], "klafter")).toBe("10");
   });
 
-  test("p49 r2: preklicana '2|973' (Joch|Klafter notacija), kultur Acker + F-PV-07-SPLIT val 115", () => {
+  test("p49 r2: preklicana '2|973' — F2 FILL v del 2d-x3: ime 'Heide Marko.' h3 prebrano v črnilu (forma ×5), vrednost 973 ostaje; F-PV-07-SPLIT val 115", () => {
     const r = byPage(49)[2];
-    expect(f(r, "reading_pass")).toBe("v115-insert");
+    expect(f(r, "reading_pass")).toBe("v119-names"); // val 119 del 2d-x3: F2 fill
     expect(f(r, "sheet_visible")).toBe("II. N.");
     expect(f(r, "kultur")).toBe("Acker");
+    expect(f(r, "owner_original")).toBe("Heide Marko."); // x3: ime v črnilu (cross-val h3 ×5)
+    expect(f(r, "haus_no")).toBe("3");
     expect(f(r, "jaethe")).toBe("2");
     expect(f(r, "klafter")).toBe("973");
+    expect(f(r, "owner_original_pre_v119")).toBe(""); // snimka: v115 je imela prazno ime
     expect(f(r, "anmerkung")).toContain("cela vrednost prečrtana");
     expect(f(r, "anmerkung")).toContain("F-PV-07-SPLIT val 115");
-    // sidri: r1 = Raguzl p1 (277), r3 = Hößle p3 (1|11 — v114 mapirano)
-    expect(f(byPage(49)[1], "owner_original")).toBe("Raguzl Janez");
+    // sidri (x3): r1 = Dragasch Jure. (razhajanje haus 5/8 — v114 ohranjeno), r3 = Dragasch Jure. (ime popravek iz Hößle)
+    expect(f(byPage(49)[1], "owner_original")).toBe("Dragasch Jure.");
     expect(f(byPage(49)[1], "klafter")).toBe("277");
-    expect(f(byPage(49)[3], "owner_original")).toBe("Hößle Marie");
+    expect(f(byPage(49)[3], "owner_original")).toBe("Dragasch Jure.");
     expect(f(byPage(49)[3], "jaethe")).toBe("1");
   });
 
@@ -205,7 +209,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(pr.ps_parcels.some((p) => p.page === 49 && p.parcel_number === 2)).toBe(false);
   });
 
-  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha b660c0d1", () => {
+  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha 62d8cfea (val 119 del 2d-x3 kaskada)", () => {
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
@@ -220,10 +224,10 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^b660c0d1/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^62d8cfea/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha b660c0d1… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha 62d8cfea… (pogodba §22)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
@@ -259,7 +263,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(sg.stats?.relations).toBe(3477);
   });
 
-  test("c4 K9: jaethe_plain_100_1599 69 NESPREMENJENO (12/1/2 ≤ 99); nove oblike izrecno pincirane", () => {
+  test("c4 K9: jaethe_plain_100_1599 69 → 53 (val 119 del 2d-x3: p48 F-NA-02 rebuild — v114 jae = klafter); oblike premaknjene v klafter razrede", () => {
     const c4 = JSON.parse(
       readFileSync(join(ROOT, "research-griblje/ps-n83/band-v86/c4-metrika-v90.json"), "utf8"),
     ) as { K9_konfunda_F_PV_05?: unknown; K9_konfunda_F_PV_05b?: unknown; K9_konfunda_F_PV_05c?: unknown } & Record<
@@ -269,10 +273,10 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     const k9 = (Object.keys(c4) as string[]).find((k) => k.startsWith("K9"));
     expect(k9).toBeDefined();
     const p1 = c4[k9!].p1_55_val57;
-    expect(p1["jaethe_plain_100_1599"]).toBe(69); // val 114: 69 → val 115: 69 (nespremenjeno)
-    expect(p1["jaethe_plain_le99"]).toBe(62); // val 114: 59 → val 115: 62 (+1 p40, +1 p48, +1 p49)
-    expect(p1["klafter_plain_le99"]).toBe(174); // val 114: 172 → val 115: 174 (+1 p34 ~70, +1 p40 65)
-    expect(p1["klafter_plain_100_1599"]).toBe(784); // val 114: 783 → val 115: 784 (+1 p49 973)
-    expect(p1["both_filled"]).toBe(48); // val 114: 46 → val 115: 48 (+1 p40, +1 p49)
+    expect(p1["jaethe_plain_100_1599"]).toBe(53); // val 115: 69 → val 119 del 2d-x3: 53 (p48 jae pocisceni)
+    expect(p1["jaethe_plain_le99"]).toBe(58); // val 115: 62 → val 119 del 2d-x3: 58
+    expect(p1["klafter_plain_le99"]).toBe(177); // val 115: 174 → val 119 del 2d-x3: 177 (p48 klafter rebuild)
+    expect(p1["klafter_plain_100_1599"]).toBe(799); // val 115: 784 → val 119 del 2d-x3: 799 (p48: v114 jae = klafter)
+    expect(p1["both_filled"]).toBe(48); // nespremenjeno
   });
 });

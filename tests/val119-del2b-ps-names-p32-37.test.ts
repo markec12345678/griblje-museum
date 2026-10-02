@@ -37,12 +37,12 @@ describe("val 119 del 2b — gardele vhodov", () => {
     expect(CH.changes.length).toBe(141);
   });
 
-  test("reading_pass plasti: v119-names 545 (po del 2d-x2 p44–p46); v114 184; v118 60; v115 2 (p34 r20 + p40 r13 prebrani); v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 609 (po del 2d-x2+2d-x3); v114 122; v118 60; v115 0 (p49 r2 F2 fill @2d-x3); v86 1795; ditto 207", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(545);
-    expect(n("v114-ps-reread")).toBe(184);
+    expect(n("v119-names")).toBe(609);
+    expect(n("v114-ps-reread")).toBe(122);
     expect(n("v118-names")).toBe(60);
-    expect(n("v115-insert")).toBe(2);
+    expect(n("v115-insert")).toBe(0);
     expect(n("v86-colonial-tiles")).toBe(1795);
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
@@ -333,9 +333,9 @@ describe("val 119 del 2b — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 2b — kaskada (izrecna)", () => {
-  test("KG sha b660c0d1 raznesen (4bb6a974 ->); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+  test("KG sha 62d8cfea raznesen (4bb6a974 ->); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^b660c0d1/,
+      /^62d8cfea/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       stats?: Record<string, number>;
@@ -357,10 +357,10 @@ describe("val 119 del 2b — kaskada (izrecna)", () => {
     const timeline = readJSON(
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ) as { meta?: Record<string, unknown> };
-    expect(JSON.stringify(timeline)).toContain("b660c0d1");
+    expect(JSON.stringify(timeline)).toContain("62d8cfea");
   });
 
   test("runtime kopija KG v src/data = atlas izhod (ena izhodna resnica)", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^b660c0d1/);
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^62d8cfea/);
   });
 });

@@ -23,7 +23,7 @@ function rowsOn(page: number): Reg {
   return REG.filter((r) => r.page === page);
 }
 
-describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 DRAFT po protokolu 139)", () => {
+describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 nadgrajeni v del 2d-x3, protokol 140)", () => {
   test("register: 2875 vrstic; changes 71 = 47 owner + 3 haus + 18 anmerkung + 3 page_obs", () => {
     expect(REG.length).toBe(2875);
     expect(CH.val).toBe("119-del2d");
@@ -36,30 +36,30 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 DR
     expect(CH.changes.length).toBe(71);
   });
 
-  test("reading_pass plasti: v119-names 545 (485 + 60); v114 184 (244 − 60); v118 60; v115 2; v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 609 (545 + 64 po del 2d-x3); v114 122 (184 − 64); v118 60; v115 0; v86 1795; ditto 207", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(545); // 485 + del 2d-x2 (p44-p46 = 60)
-    expect(n("v114-ps-reread")).toBe(184); // 244 − 60 (del 2d-x2)
+    expect(n("v119-names")).toBe(609); // 545 + del 2d-x3 (p47-p49 = 64)
+    expect(n("v114-ps-reread")).toBe(122); // 184 − 64 (del 2d-x3; 62 v114 + 2 v115)
     expect(n("v118-names")).toBe(60);
-    expect(n("v115-insert")).toBe(2);
+    expect(n("v115-insert")).toBe(0); // p49-r2 F2 fill -> v119-names (del 2d-x3)
     expect(n("v86-colonial-tiles")).toBe(1795);
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
 
-  test("0 VLM klicev v vseh 6 readingih (p44-p49); p47-p49 nosita DRAFT-status (protokol 139)", () => {
+  test("0 VLM klicev v vseh 6 readingih (p44-p49); p47-p49 nadgrajeni iz DRAFT v celovito branje (del 2d-x3, protokol 140)", () => {
     for (let pg = 44; pg <= 49; pg++) {
       const rd = readJSON(
         `research-griblje/ps-n83/band-v113/reading-v119d/p${pg}.json`,
       ) as {
-        meta: { vlm_calls: number; register_rows: number; status?: string };
+        meta: { vlm_calls: number; register_rows: number; status?: string; del?: string };
         names_audit: Record<string, unknown>;
       };
       expect(rd.meta.vlm_calls).toBe(0);
       expect(rd.meta.register_rows).toBe(rowsOn(pg).length);
       expect(Object.keys(rd.names_audit).length).toBe(rowsOn(pg).length);
       if (pg >= 47) {
-        expect(String(rd.meta.status)).toContain("DRAFT");
-        expect(String(rd.meta.status)).toContain("NI vgradnje");
+        expect(String(rd.meta.status)).toContain("celovito branje ime+vrednost (x3)");
+        expect(rd.meta.del).toBe("2d-x3");
       } else {
         expect(rd.meta.status).toBeUndefined();
       }
@@ -85,20 +85,20 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 DR
     expect(f(p46[15], "owner_original")).toBe("Krischan Grany.[?]");
   });
 
-  test("snimke pre_v119 + anmerkung add-only: 18 odprtih razhajanj p44–p46 (skupaj 55)", () => {
+  test("snimke pre_v119 + anmerkung add-only: 18 odprtih razhajanj p44–p46 (skupaj 71 po del 2d-x3: +16)", () => {
     const snaps = REG.filter((r) => "owner_original_pre_v119" in r);
     expect(snaps.length).toBeGreaterThanOrEqual(47);
     const withOpen = REG.filter((r) =>
       f(r, "anmerkung").includes("razhajanje odprto"),
     ).length;
-    expect(withOpen).toBe(55); // 37 (del 1+2a+2b+2c) + 18 (2d-x2)
+    expect(withOpen).toBe(71); // 37 (del 1+2a+2b+2c) + 18 (2d-x2) + 16 (2d-x3)
   });
 });
 
 describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
-  test("KG sha b660c0d1 raznesen (745a9cdd ->; timestamp-only regeneracija — vsebina identična, osebni sloj = pass2 PUA artefakt F-PV-03/04); 3269/3477/2427/2773 identično", () => {
+  test("KG sha 62d8cfea raznesen (745a9cdd -> b660c0d1 timestamp-only @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane); 3269/3477/2427/2773 identično", () => {
     const kg = sha256("src/data/knowledge-graph-1825.json").slice(0, 8);
-    expect(kg).toBe("b660c0d1");
+    expect(kg).toBe("62d8cfea");
     const sg = readJSON("src/data/story-graph-1825.json") as {
       entities: unknown[];
       relations: unknown[];
@@ -116,7 +116,7 @@ describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
 
-  test("runtime kopije držijo isti KG sha b660c0d1 (ena izhodna resnica)", () => {
+  test("runtime kopije držijo isti KG sha 62d8cfea (ena izhodna resnica)", () => {
     const a = sha256("src/data/knowledge-graph-1825.json");
     const b = sha256("research-griblje/atlas-1825/knowledge-graph-1825.json");
     expect(a).toBe(b);
