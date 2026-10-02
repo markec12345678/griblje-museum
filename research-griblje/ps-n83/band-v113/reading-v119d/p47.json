@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "val": 119,
+    "del": "2d-x2",
+    "page": 47,
+    "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+    "method": "parzelle-sidr 881–901 (kan3 X150–620, top0=170.5/step 38.85, samonaznane vrstice); trio-ritem Krischan Matthe h3/h69 + Schimitlbeck h1 + Stabelz h2 + Gemeinde h0; rdeče prečrtane parzelle 882/883/885/887 z rdečimi notami ('fiel gst. Grundflag', 'v: f. 1823/1853')",
+    "register_rows": 21,
+    "vlm_calls": 0,
+    "diag_generated": [
+      "kan3-p47-seg0..2 (x4, parzelle-sidr; TOP0 popravljen 209->170.5 po kan2-kontroli)"
+    ],
+    "note": "KRITIČNO: v114 imenska poravnava p47 je od r5 naprej sistematicno zamenjana (r5/r6 swap, nato zamik) — sidr-anchored read popravlja 18 imen + 14 hiš; r20 (parzella 901) = črnilo PRAZNO, v114 'Christan Bräutig' brez glyfne podlage (anm, ohranjeno — precedens p34-r20/p40-r12); vrednostna plast (klafter) za r5+ je morda enako zamaknjena — VREDNOSTNI RE-READ p47 ODPRTO VPRAŠANJE (ni del tega passa)",
+    "status": "DRAFT — NI vgradnje (protokol 139): register row-alignment p47-p49 je lokalno zamenjan (v114 imenska in vrednostna plast drugače zamaknjeni); potreben del 2d-x3 celoviti re-read (ime+vrednost skupaj, dvojni parzelle-sidr)",
+    "register_rows_mapping": "NEUREJENA — glej protokol 139 §2"
+  },
+  "names_audit": {
+    "r0": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "3",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (Krischan-glyf del 2c ×6; forma ×10 na p47/p48)"
+    },
+    "r1": {
+      "seen_haus": "69",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "69",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (parzella 882 rdeče prečrtana + rdeča nota 'fiel gst. Grundflag' — preklicana vrstica, flag)"
+    },
+    "r2": {
+      "seen_haus": "69",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "69",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (883 prečrtana + rdeča nota 'v: f. 1853' — flag)"
+    },
+    "r3": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "2",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Krischan Matthe.; razhajanje odprto pri haus: črnilo ~3 (par z r0 h3) vs 2, v114 ohranjeno"
+    },
+    "r4": {
+      "seen_haus": "69",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "69",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Krischan Matthe. (885 prečrtana + rdeči noti — flag)"
+    },
+    "r5": {
+      "seen_haus": "2",
+      "seen_name": "Stabelz Soan.[?]",
+      "old_haus": "69",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Stabelz Soan.[?] (Stabelz trio r5/r11/r13; 2. beseda dvom Soan/Swan); haus POPRAVEK 69 -> 2 (cross-val: Stabelz h2 = p48 r3/r4/r8 register+črnilo ×4)"
+    },
+    "r6": {
+      "seen_haus": "69",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "2",
+      "old_name": "Michely Soon",
+      "verdict": "ime POPRAVEK Michely Soon -> Krischan Matthe. (887 prečrtana + rdeči noti — flag); haus POPRAVEK 2 -> 69 (Krischan h69 ×5: r1/r2/r4/r15 register + črnilo)"
+    },
+    "r7": {
+      "seen_haus": "1",
+      "seen_name": "Schimitlbeck Matthe.[?]",
+      "old_haus": "69",
+      "old_name": "Kaspar Mäthe",
+      "verdict": "ime POPRAVEK Kaspar Mäthe -> Schimitlbeck Matthe.[?] (Schim- trio r7/r10/r12; roza črta čez vrstico — flag); haus POPRAVEK 69 -> 1 (Schim- h1: p48 r6/r7 register+črnilo)"
+    },
+    "r8": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "1",
+      "old_name": "Schimetschek stäble",
+      "verdict": "ime POPRAVEK Schimetschek stäble -> Krischan Matthe.; haus POPRAVEK 1 -> 3 (Krischan h3: r0 register+črnilo, p48 r1/r2)"
+    },
+    "r9": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "0",
+      "old_name": "Christan stäble",
+      "verdict": "ime POPRAVEK Christan stäble -> Krischan Matthe.; haus POPRAVEK 0 -> 3 (par z r8)"
+    },
+    "r10": {
+      "seen_haus": "1",
+      "seen_name": "Schimibek Matthe.[?]",
+      "old_haus": "0",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Schimibek Matthe.[?] (trio); haus POPRAVEK 0 -> 1 (par z r7/r12)"
+    },
+    "r11": {
+      "seen_haus": "2",
+      "seen_name": "Stabelz Soan.[?]",
+      "old_haus": "1",
+      "old_name": "Schimetschek stäble",
+      "verdict": "ime POPRAVEK Schimetschek stäble -> Stabelz Soan.[?] (trio); haus POPRAVEK 1 -> 2"
+    },
+    "r12": {
+      "seen_haus": "1",
+      "seen_name": "Schimitbek Matthe.[?]",
+      "old_haus": "2",
+      "old_name": "Michely Soon",
+      "verdict": "ime POPRAVEK Michely Soon -> Schimitbek Matthe.[?] (trio); haus POPRAVEK 2 -> 1"
+    },
+    "r13": {
+      "seen_haus": "2",
+      "seen_name": "Stabelz Swan.[?]",
+      "old_haus": "1",
+      "old_name": "Schimetschek stäble",
+      "verdict": "ime POPRAVEK Schimetschek stäble -> Stabelz Swan.[?] (trio); haus POPRAVEK 1 -> 2"
+    },
+    "r14": {
+      "seen_haus": "69",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "2",
+      "old_name": "Michely Soon",
+      "verdict": "ime POPRAVEK Michely Soon -> Krischan Matthe.; haus POPRAVEK 2 -> 69 (cross-val r1/r2/r4/r15)"
+    },
+    "r15": {
+      "seen_haus": "0",
+      "seen_name": "Gemeinde.",
+      "old_haus": "69",
+      "old_name": "Christan Mäthel..",
+      "verdict": "ime POPRAVEK Christan Mäthel.. -> Gemeinde. (jasni zapis 'Gemeinde' — občinska vrstica; cf p48-r7); haus POPRAVEK 69 -> 0 (Gemeinde h0: p48-r7 register+črnilo)"
+    },
+    "r16": {
+      "seen_haus": "3",
+      "seen_name": "Krischan Matthe.",
+      "old_haus": "0",
+      "old_name": "Gemeinden",
+      "verdict": "ime POPRAVEK Gemeinden -> Krischan Matthe. (v114 'Gemeinden' je pripadal vrstici 896 — sidr premik); haus POPRAVEK 0 -> 3 (cross-val r0)"
+    },
+    "r17": {
+      "seen_haus": "6",
+      "seen_name": "Tallafschily Swan.[?]",
+      "old_haus": "0",
+      "old_name": "Christan Mäthel",
+      "verdict": "ime POPRAVEK Christan Mäthel -> Tallafschily Swan.[?] (cf p48-r19 ista forma; S/I glyf-dvom); haus POPRAVEK 0 -> 6 (cross-val p48-r19 črnilo h6)"
+    },
+    "r18": {
+      "seen_haus": "2",
+      "seen_name": "Stabelz Swan.[?]",
+      "old_haus": "6",
+      "old_name": "Christoph. Soon",
+      "verdict": "ime POPRAVEK Christoph. Soon -> Stabelz Swan.[?] (trio); haus POPRAVEK 6 -> 2"
+    },
+    "r19": {
+      "seen_haus": "69",
+      "seen_name": "Krischan i. Mmrlbyn.[?]",
+      "old_haus": "2",
+      "old_name": "Michely Soon",
+      "verdict": "razhajanje odprto — črnilo ~'Krischan i. Mmrlbyn.[?]' (2. del neberljiv, velika poteza); haus POPRAVEK 2 -> 69 (Krischan h69 cross-val r1/r2/r4/r14/r15)"
+    },
+    "r20": {
+      "seen_haus": "",
+      "seen_name": "",
+      "old_haus": "69",
+      "old_name": "Christan Bräutig",
+      "verdict": "razhajanje odprto — črnilovrstna celica parzelle 901 je PRAZNA (kan3 seg2); v114 'Christan Bräutig' h69 brez glyfne podlage (morda prepis vrstice 900); anmerkung + flag, vsebina ohranjena — NE tiho brisanje (precedens p34-r20/p40-r12)"
+    }
+  }
+}

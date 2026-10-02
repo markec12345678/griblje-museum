@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "val": 119,
+    "del": "2d-x2",
+    "page": 49,
+    "scope": "imenski pass (owner_original + haus_no) — agentov vid, 0 VLM klicev",
+    "method": "parzelle-sidr 921–941 (kan3 X150–620, top0=202.0/step 38.85 — POPRAVLJEN top0: findings-170.5 je bil +1 zamaknjen; kan3 + zz x16-wide X140–850 s klafter kolono za 5-smerno poravnavo r13–r20); 5-way (parzelle+ime+haus+klafter+red): 934 kl975, 935 kl556, 936 kl316, 937 kl606, 938 kl633, 939 kl345, 940 = Fürtrag pas",
+    "register_rows": 22,
+    "vlm_calls": 0,
+    "diag_generated": [
+      "kan3-p49-seg0..2 (x4, parzelle-sidr)",
+      "p49-overview-ruler (kalibracija razporeda)",
+      "zz-p49-r13..r19-x16-wide + x24"
+    ],
+    "note": "F2 POTRJEN: reg r2 (v115 preklicana, kl 973) = črnilovrstica 923 'Heide Marko.' h3 — ime+haus fill; F1 POTRJEN: parzelle-sekvenca se konča pri 940, 941 = PRAZNO, reg r21 'Ploner Franzigen' = fantom (anm, ohranjeno); r16/r18 = 'Novak Martlin' rdeče/delno prečrtan + 'Gmatze/Smatze dne.' note (preklicani poskusi — razhajanje odprto); vrednostna plast (klafter/hishe r9-r13) kaže notranjo poravnavo odprto (F3) — haus razhajanja so anm, ne tihe popravke",
+    "status": "DRAFT — NI vgradnje (protokol 139): register row-alignment p47-p49 je lokalno zamenjan (v114 imenska in vrednostna plast drugače zamaknjeni); potreben del 2d-x3 celoviti re-read (ime+vrednost skupaj, dvojni parzelle-sidr)",
+    "register_rows_mapping": "NEUREJENA — glej protokol 139 §2"
+  },
+  "names_audit": {
+    "r0": {
+      "seen_haus": "5",
+      "seen_name": "Asbendl dne.[?]",
+      "old_haus": "5",
+      "old_name": "Leopold Gell",
+      "verdict": "razhajanje odprto — črnilo ~'Asbendl dne.[?]' (nizka zavest; draft k0 'Arguzl dne.'), v57 'Leopold Gell' ohranjeno (F3: notranja poravnava odprta)"
+    },
+    "r1": {
+      "seen_haus": "5",
+      "seen_name": "Dragasch Jure.",
+      "old_haus": "8",
+      "old_name": "Raguzl Janez",
+      "verdict": "ime POPRAVEK Raguzl Janez -> Dragasch Jure. (forma ×5: i3, p45-r4/r6, p48-r17); razhajanje odprto pri haus: črnilo ~5 (par z i3) vs 8, v114 ohranjeno"
+    },
+    "r2": {
+      "seen_haus": "3",
+      "seen_name": "Heide Marko.",
+      "old_haus": "",
+      "old_name": "",
+      "verdict": "ime POPRAVEK '' -> Heide Marko. (F2 FILL: v115 preklicana vrstica 923 z imenom v črnilu; forma ×5 — brez [?]); haus POPRAVEK '' -> 3 (F2 fill + cross-val Heide Marko h3 ×5); v115 vrednost 973 ostaja"
+    },
+    "r3": {
+      "seen_haus": "5",
+      "seen_name": "Dragasch Jure.",
+      "old_haus": "8",
+      "old_name": "Hößle Marie",
+      "verdict": "ime POPRAVEK Hößle Marie -> Dragasch Jure. (par z i1; klafter 11 vrednost = vrednostna plast, ni del imenskega passa); razhajanje odprto pri haus: črnilo ~5 vs 8"
+    },
+    "r4": {
+      "seen_haus": "1",
+      "seen_name": "Deleshitzkh Marßfid.[?]",
+      "old_haus": "5",
+      "old_name": "Dragosch Josef",
+      "verdict": "ime POPRAVEK Dragosch Josef -> Deleshitzkh Marßfid.[?] (forma ×5; rdeča prečrta čez vrstico — preklicana?, flag); razhajanje odprto pri haus: črnilo ~1 vs 5"
+    },
+    "r5": {
+      "seen_haus": "12",
+      "seen_name": "Lubreschitskh Maathe.",
+      "old_haus": "11",
+      "old_name": "Dolenc Luk Rupf",
+      "verdict": "ime POPRAVEK Dolenc Luk Rupf -> Lubreschitskh Maathe. (forma; par z r6); haus POPRAVEK 11 -> 12 (cross-val: par i5/i6 črnilo h12 ×2 + reg r6 h12)"
+    },
+    "r6": {
+      "seen_haus": "12",
+      "seen_name": "Lubreschitskh Matthe.",
+      "old_haus": "12",
+      "old_name": "Lukasitsch Mathäus",
+      "verdict": "ime POPRAVEK Lukasitsch Mathäus -> Lubreschitskh Matthe. (forma Lubreschitskh; par z r5; h ✓)"
+    },
+    "r7": {
+      "seen_haus": "11",
+      "seen_name": "Peodvin Grany.",
+      "old_haus": "12",
+      "old_name": "Lukasitsch Mathäus",
+      "verdict": "ime POPRAVEK Lukasitsch Mathäus -> Peodvin Grany. (forma ×7); haus POPRAVEK 12 -> 11 (cross-val: Peodvin h11 = p46-r1..r5 register '1 / 11' ×4 + p45-r16)"
+    },
+    "r8": {
+      "seen_haus": "11",
+      "seen_name": "Peodvin Grany.",
+      "old_haus": "11",
+      "old_name": "Pessing Georg",
+      "verdict": "ime POPRAVEK Pessing Georg -> Peodvin Grany. (par z r7; parzella 929 črna prečrta + rdeči robni znak — flag)"
+    },
+    "r9": {
+      "seen_haus": "10",
+      "seen_name": "Hunure Mathl.[?]",
+      "old_haus": "11",
+      "old_name": "Pessing Georg",
+      "verdict": "ime POPRAVEK Pessing Georg -> Hunure Mathl.[?] (Hunure par r9/r10); razhajanje odprto pri haus: črnilo ~10 vs 11 (notranja poravnava F3), v114 ohranjeno"
+    },
+    "r10": {
+      "seen_haus": "10",
+      "seen_name": "Hunure Melli.[?]",
+      "old_haus": "11",
+      "old_name": "Pessing Georg",
+      "verdict": "ime POPRAVEK Pessing Georg -> Hunure Melli.[?] (par z r9); razhajanje odprto pri haus: črnilo ~10 vs 11"
+    },
+    "r11": {
+      "seen_haus": "5",
+      "seen_name": "Kourtzly Marolin.[?]",
+      "old_haus": "6",
+      "old_name": "Kunzel[?] Schumacher",
+      "verdict": "ime POPRAVEK Kunzel[?] Schumacher -> Kourtzly Marolin.[?] + medvrstična nota 'Kmatze Gnel.[?]' (dvom); razhajanje odprto pri haus: črnilo ~5 (par z r12) vs 6"
+    },
+    "r12": {
+      "seen_haus": "5",
+      "seen_name": "Novak Martlin.",
+      "old_haus": "5",
+      "old_name": "Mandl Andreas",
+      "verdict": "ime POPRAVEK Mandl Andreas -> Novak Martlin. (forma ×6) + medvrstična nota 'Smatze dne.[?]'; h ✓"
+    },
+    "r13": {
+      "seen_haus": "4",
+      "seen_name": "Lubreschiby Maathe.[?]",
+      "old_haus": "7",
+      "old_name": "Lukasitsch Maria",
+      "verdict": "ime POPRAVEK Lukasitsch Maria -> Lubreschiby Maathe.[?] (forma ×9); razhajanje odprto pri haus: črnilo ~4[?] (y-glyf) vs 7; klafter 975 ✓ (5-way)"
+    },
+    "r14": {
+      "seen_haus": "14",
+      "seen_name": "Novak Martlin.",
+      "old_haus": "5",
+      "old_name": "Mandl Andreas",
+      "verdict": "ime POPRAVEK Mandl Andreas -> Novak Martlin.; haus POPRAVEK 5 -> 14 (cross-val: p44-r17 'Novak Martlin' črnilo h14; črnilo '1/14' jasno; klafter 556 ✓)"
+    },
+    "r15": {
+      "seen_haus": "6",
+      "seen_name": "Tallafschily Jne.[?]",
+      "old_haus": "7",
+      "old_name": "Lukasitsch Maria",
+      "verdict": "ime POPRAVEK Lukasitsch Maria -> Tallafschily Jne.[?] (cf p47-r17/p48-r19 'Tallafschily Swan'; 2. beseda Jne/Swan dvom); haus POPRAVEK 7 -> 6 (cross-val Tallafschily h6 ×3); klafter 316 ✓"
+    },
+    "r16": {
+      "seen_haus": "5",
+      "seen_name": "Novak Martlin. [RED prečrtan] + 'Gmatze dne.[?]'",
+      "old_haus": "14",
+      "old_name": "Hornak Andreas",
+      "verdict": "razhajanje odprto — 1. vrstica 'Novak Martlin' rdeče prečrtana + 'Gmatze dne.[?]' (preklicani poskus?); h črnilo ~5 vs 14; klafter 606 ✓; v114 ohranjeno"
+    },
+    "r17": {
+      "seen_haus": "6",
+      "seen_name": "Tallafschibyet Jne.[?]",
+      "old_haus": "6",
+      "old_name": "Feldkircher Carl",
+      "verdict": "ime POPRAVEK Feldkircher Carl -> Tallafschibyet Jne.[?] (forma; par z r15); h ✓; klafter 633 ✓"
+    },
+    "r18": {
+      "seen_haus": "5",
+      "seen_name": "Novak Martlin. [delno prečrtan] + 'Smatze dne.[?]'",
+      "old_haus": "5",
+      "old_name": "Mandl Andreas",
+      "verdict": "razhajanje odprto — 1. vrstica delno prečrtana + 'Smatze dne.[?]' (kot r16); h ✓ 5; klafter 345 ✓; v114 ohranjeno"
+    },
+    "r19": {
+      "seen_haus": "A",
+      "seen_name": "Abram[?] Amroyan.[?]",
+      "old_haus": "6",
+      "old_name": "Schaffhauser Carl",
+      "verdict": "razhajanje odprto — črnilo ~'Abram[?] Amroyan.[?]' (velika poteza z rdečimi elementi, zelo neberljivo; draft 'Albomi G̈ruben'), h ~A[?] vs 6; Fürtrag pas na desni strani"
+    },
+    "r20": {
+      "seen_haus": "",
+      "seen_name": "",
+      "old_haus": "5",
+      "old_name": "Arnold Hermann",
+      "verdict": "razhajanje odprto — črnilovrstna celica parzelle 941 je PRAZNA (kan3 seg2 + F1 detekcija); v114 'Arnold Hermann' h5 brez glyfne podlage na tej poziciji (morda pripada vrstici 940); anmerkung + flag, vsebina ohranjena"
+    },
+    "r21": {
+      "seen_haus": "",
+      "seen_name": "",
+      "old_haus": "14",
+      "old_name": "Ploner Franzigen",
+      "verdict": "razhajanje odprto — F1 FANTOMSKA vrstica: parzelle-sekvenca se konča pri 940, vrstica brez parcele in črnila, dno strani = prazne celice + Fürtrag; anmerkung + flag, NE tiho brisanje (precedens p34-r20/p40-r12)"
+    }
+  }
+}
