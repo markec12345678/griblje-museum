@@ -4,12 +4,12 @@
  "title": "ATLAS 1825 — Story Graph v1 (pripovedni graf entitet in relacij)",
  "provenance": {
   "built_from": "knowledge-graph-1825.json",
-  "kg_sha256": "62d8cfeafcab7445c09378d7c0e7c91c228f29d9e62968d433c444db1ab2d049",
+  "kg_sha256": "c3932092f7e6db2c68064f3d4108b123c3506ab1885f80574724255bcf7e4dad",
   "kg_val": 108,
   "deterministic": true,
   "generator": "atlas-1825/build-story-graph.py v1 (val 68)",
   "runtime_copy": "src/data/story-graph-1825.json (piše TA skript — prepovedano ročno urejanje, ena izhodna resnica)",
-  "regenerable": "python3 research-griblje/atlas-1825/build-story-graph.py ob KG 108 hash-u 62d8cfeafcab",
+  "regenerable": "python3 research-griblje/atlas-1825/build-story-graph.py ob KG 108 hash-u c3932092f7e6",
   "no_new_claims": "story graf NE uvaja novih trditev — projekcija KG (§42 §25: najprej podatki, šele nato zgodbe)"
  },
  "invariants_enforced": [
@@ -101398,7 +101398,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-10-02T14:41:04Z",
+   "generated_at": "2026-10-02T17:00:51Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -101420,7 +101420,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-10-02T14:41:04Z",
+   "generated_at": "2026-10-02T17:00:51Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -101447,7 +101447,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-10-02T14:41:04Z",
+   "generated_at": "2026-10-02T17:00:51Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -101474,7 +101474,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-10-02T14:41:04Z",
+   "generated_at": "2026-10-02T17:00:51Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }

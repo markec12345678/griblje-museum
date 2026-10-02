@@ -36,10 +36,10 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
     expect(CH.changes.length).toBe(71);
   });
 
-  test("reading_pass plasti: v119-names 609 (545 + 64 po del 2d-x3); v114 122 (184 − 64); v118 60; v115 0; v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0; v86 1795; ditto 207", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(609); // 545 + del 2d-x3 (p47-p49 = 64)
-    expect(n("v114-ps-reread")).toBe(122); // 184 − 64 (del 2d-x3; 62 v114 + 2 v115)
+    expect(n("v119-names")).toBe(731); // 545 + 2d-x3 (64) + 2e (p50-p55 = 122)
+    expect(n("v114-ps-reread")).toBe(0); // 184 − 64 (2d-x3) − 122 (2e: p50-p55 = zadnje v114 vrstice)
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(0); // p49-r2 F2 fill -> v119-names (del 2d-x3)
     expect(n("v86-colonial-tiles")).toBe(1795);
@@ -85,20 +85,20 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
     expect(f(p46[15], "owner_original")).toBe("Krischan Grany.[?]");
   });
 
-  test("snimke pre_v119 + anmerkung add-only: 18 odprtih razhajanj p44–p46 (skupaj 71 po del 2d-x3: +16)", () => {
+  test("snimke pre_v119 + anmerkung add-only: 18 odprtih razhajanj p44–p46 (skupaj 99 po del 2e: +28)", () => {
     const snaps = REG.filter((r) => "owner_original_pre_v119" in r);
     expect(snaps.length).toBeGreaterThanOrEqual(47);
     const withOpen = REG.filter((r) =>
       f(r, "anmerkung").includes("razhajanje odprto"),
     ).length;
-    expect(withOpen).toBe(71); // 37 (del 1+2a+2b+2c) + 18 (2d-x2) + 16 (2d-x3)
+    expect(withOpen).toBe(99); // 37 (del 1+2a+2b+2c) + 18 (2d-x2) + 16 (2d-x3) + 28 (2e)
   });
 });
 
 describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
-  test("KG sha 62d8cfea raznesen (745a9cdd -> b660c0d1 timestamp-only @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane); 3269/3477/2427/2773 identično", () => {
+  test("KG sha c3932092 raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> c3932092 @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
     const kg = sha256("src/data/knowledge-graph-1825.json").slice(0, 8);
-    expect(kg).toBe("62d8cfea");
+    expect(kg).toBe("c3932092");
     const sg = readJSON("src/data/story-graph-1825.json") as {
       entities: unknown[];
       relations: unknown[];
@@ -116,7 +116,7 @@ describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
 
-  test("runtime kopije držijo isti KG sha 62d8cfea (ena izhodna resnica)", () => {
+  test("runtime kopije držijo isti KG sha c3932092 (ena izhodna resnica)", () => {
     const a = sha256("src/data/knowledge-graph-1825.json");
     const b = sha256("research-griblje/atlas-1825/knowledge-graph-1825.json");
     expect(a).toBe(b);

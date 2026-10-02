@@ -65,10 +65,10 @@ describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)
     expect(CH.changes.length).toBe(206);
   });
 
-  test("reading_pass plasti: v119-names 609 (545 + 64); v114 122 (184 − 62); v115 0 (−2: p49 r2); v118 60; v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (122 − 122 @2e: PS p25-p55 pokrite); v115 0; v118 60; v86 1795; ditto 207", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
-    expect(n("v119-names")).toBe(609);
-    expect(n("v114-ps-reread")).toBe(122);
+    expect(n("v119-names")).toBe(731);
+    expect(n("v114-ps-reread")).toBe(0);
     expect(n("v115-insert")).toBe(0);
     expect(n("v118-names")).toBe(60);
     expect(n("v86-colonial-tiles")).toBe(1795);
@@ -208,20 +208,20 @@ describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)
     expect(String(rd.meta.values_note)).toContain("F-NA-01 REŠEN");
   });
 
-  test("snimke *_pre_v119 add-only; razhajanja 71 (37 + 18 + 16)", () => {
-    expect(REG.filter((r) => "owner_original_pre_v119" in r).length).toBe(449);
-    expect(REG.filter((r) => "jaethe_pre_v119" in r).length).toBe(21); // p48 F-NA-02
-    expect(REG.filter((r) => "klafter_pre_v119" in r).length).toBe(35);
+  test("snimke *_pre_v119 add-only; razhajanja 99 (55 + 16 + 28 @2e)", () => {
+    expect(REG.filter((r) => "owner_original_pre_v119" in r).length).toBe(530);
+    expect(REG.filter((r) => "jaethe_pre_v119" in r).length).toBe(26); // 21 (p48 F-NA-02) + 5 @2e
+    expect(REG.filter((r) => "klafter_pre_v119" in r).length).toBe(72); // 35 + 37 @2e
     const withOpen = REG.filter((r) => f(r, "anmerkung").includes("razhajanje odprto")).length;
-    expect(withOpen).toBe(71);
+    expect(withOpen).toBe(99);
   });
 });
 
 describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
-  test("KG sha 62d8cfea: 2 RESIDENCE relaciji TP-029 prevezani na re-sidrane lastnike (R-03433 PER-0164→PER-0177, R-03434 PER-0100→PER-0235); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^62d8cfea/);
+  test("KG sha c3932092 (62d8cfea @2d-x3 -> timestamp-only @2e; 2 RESIDENCE relaciji TP-029 ostajata prevezani: R-03433/R-03434); 3269/3477/2427/2773 identično", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^c3932092/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^62d8cfea/,
+      /^c3932092/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -254,15 +254,15 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
         .digest("hex"),
     );
     expect(c4.meta.K5_input_reliability).toContain("207/2875");
-    expect(c4.meta.K5_input_reliability).toContain("bloki = 2608");
+    expect(c4.meta.K5_input_reliability).toContain("bloki = 2607"); // 2608 − 1 @2e
     const loose = c4 as unknown as Record<string, Record<string, Record<string, number>>>;
     const k9key = Object.keys(loose).find((k) => k.startsWith("K9"));
     expect(k9key).toBeDefined();
     const p1 = loose[k9key!].p1_55_val57;
     expect(p1["jaethe_plain_100_1599"]).toBe(53);
     expect(p1["jaethe_plain_gt1599"]).toBe(1); // p48 1904 = misread opuščenega poskusa 1534
-    expect(p1["jaethe_empty"]).toBe(965);
-    expect(p1["klafter_empty"]).toBe(87);
+    expect(p1["jaethe_empty"]).toBe(961); // 965 − 4 @2e (p50-p55: jae + kl pari)
+    expect(p1["klafter_empty"]).toBe(85); // 87 − 2 @2e
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
 

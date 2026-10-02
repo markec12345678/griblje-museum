@@ -17,7 +17,7 @@
  *    → 25 × v86-review-col-split markerjev (REVIEW ostaja, nič tiho)
  *  - 34 kultur_tile_v86 + 37 owner_tile_v86 variant polj (NIKOLI prepis)
  *  - pass3 NEIZMENJAN (p142 jaethe frakcije niso parcele — 392 ostaja); KG vsebina identična
- *    (samo generated_at → sha 62d8cfea; standardni §22 prehod)
+ *    (samo generated_at → sha 62d8cfea; standardni §22 prehod; val 119 del 2e → c3932092, spet timestamp-only)
  *
  * Iskrenost (§4): TRANSCRIBED = 0 na p142 (nove vrednosti ni); glasovi so komitirani
  * artefakti; PZ/PT integracije izrecno odložene (val 117) z zapisom pravil.
@@ -156,7 +156,7 @@ describe("val 116 — zajeti VLM glasovi (artefakti, komitirani)", () => {
     expect(b98!.review_status).toBe("REVIEW"); // ni dvignjeno — glas je artefakt, ne dvig
   });
 
-  test("KG: vsebina identična (samo generated_at) — PARCEL 2427, vozlišča 3269, vezi 3477; sha 62d8cfea", () => {
+  test("KG: vsebina identična (samo generated_at) — PARCEL 2427, vozlišča 3269, vezi 3477; sha c3932092 (val 119 del 2e; prej 62d8cfea)", () => {
     const kg = JSON.parse(readFileSync(join(ROOT, "src/data/knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;

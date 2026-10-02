@@ -76,8 +76,8 @@ describe("val 114 — gardele in infrastruktura", () => {
     }
   });
 
-  test("reading_pass v114-ps-reread: 122 vrstic (p25–p31 + p33–p39 + p41–p43 ostanejo; p32–p55 po val 119 del 2b+2c+2d-x2+2d-x3; p19 = 20 prevzetih v118-names, val 118)", () => {
-    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(122);
+  test("reading_pass v114-ps-reread: 0 vrstic (p25–p31 + p33–p39 + p41–p43 po delih val 119; p32–p55 po val 119 del 2b+2c+2d-x2+2d-x3+2e; p19 = 20 prevzetih v118-names, val 118)", () => {
+    expect(REG.filter((r) => r["reading_pass"] === "v114-ps-reread").length).toBe(0); // val 119 del 2e: p50-p55 = zadnjih 122
   });
 });
 
@@ -241,10 +241,11 @@ describe("val 114 — F-PV-07 premestitve + SPLIT razcepi", () => {
     expect(f(rows[16], "anmerkung")).toContain("F-PV-07-SPLIT val 114");
   });
 
-  test("p55: 19 premestitev + r17 SPLIT 1|329", () => {
+  test("p55: 19 premestitev + r17 SPLIT 1|329; r0 kl 29→39 (val 119 del 2e re-read)", () => {
     const rows = byPage(55);
     expect(f(rows[0], "jaethe")).toBe("");
-    expect(f(rows[0], "klafter")).toBe("29");
+    expect(f(rows[0], "klafter")).toBe("39"); // val 119 del 2e: 29 → 39 (x20)
+    expect(f(rows[0], "klafter_pre_v119")).toBe("29"); // snimka v114
     expect(f(rows[17], "jaethe")).toBe("1");
     expect(f(rows[17], "klafter")).toBe("329");
     expect(f(rows[17], "anmerkung")).toContain("F-PV-07-SPLIT val 114");
@@ -314,7 +315,7 @@ describe("val 114 — POPRAVEK vrednosti (v57 sistemske napake)", () => {
     expect(f(r47[17], "klafter")).toBe("543");
   });
 
-  test("p50: r1 816, r4 353, r8 269, r13 104, r15 131, r18 528; r20 fantom počiščen", () => {
+  test("p50: r1 816, r4 353, r8 269, r13 104, r15 131, r18 528; r20 = Fürtrag pas (val 119 del 2e: jae 4 | kl 386, fantom-ime počiščen)", () => {
     const rows = byPage(50);
     expect(f(rows[1], "jaethe")).toBe("816");
     expect(f(rows[4], "jaethe")).toBe("353");
@@ -322,13 +323,16 @@ describe("val 114 — POPRAVEK vrednosti (v57 sistemske napake)", () => {
     expect(f(rows[13], "jaethe")).toBe("104");
     expect(f(rows[15], "jaethe")).toBe("131");
     expect(f(rows[18], "jaethe")).toBe("528");
-    expect(f(rows[20], "jaethe")).toBe("");
+    expect(f(rows[20], "jaethe")).toBe("4"); // val 119 del 2e F-FÜRTRAG: pas nosi jae 4 | kl 386
+    expect(f(rows[20], "klafter")).toBe("386");
+    expect(f(rows[20], "owner_original")).toBe("");
     expect(f(rows[20], "anmerkung")).toContain("fantom");
   });
 
-  test("p52: r16 1205, r18 589, r19 '10|7817' -> 245", () => {
+  test("p52: r16 1205→1305 (val 119 del 2e re-read, snimka), r18 589, r19 '10|7817' -> 245", () => {
     const rows = byPage(52);
-    expect(f(rows[16], "klafter")).toBe("1205");
+    expect(f(rows[16], "klafter")).toBe("1305"); // val 119 del 2e: 1205 → 1305 (x20)
+    expect(f(rows[16], "klafter_pre_v119")).toBe("1205"); // snimka v114
     expect(f(rows[18], "klafter")).toBe("589");
     expect(f(rows[19], "jaethe")).toBe("");
     expect(f(rows[19], "klafter")).toBe("245");
@@ -402,9 +406,9 @@ describe("val 114 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 62d8cfea… (pogodba §22; val 116 — samo generated_at, vsebina identična)", () => {
+  test("kaskadni artefakti držijo isti KG sha c3932092… (pogodba §22; val 119 del 2e — timestamp-only, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^62d8cfea/);
+    expect(kgSha).toMatch(/^c3932092/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

@@ -62,7 +62,7 @@ describe("val 118 — gardele vhodov", () => {
     expect(REG.filter((r) => r.reading_pass === "v118-names").length).toBe(60);
     expect(REG.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1795);
     // p19 je nosil v114-ps-reread (val 114: p19, p20, p25–p55 = 667) — 20 vrstic prevzetih
-    expect(REG.filter((r) => r.reading_pass === "v114-ps-reread").length).toBe(122); // 184 − 62 (del 2d-x3: p47/p48) − 2 (p49 v114)
+    expect(REG.filter((r) => r.reading_pass === "v114-ps-reread").length).toBe(0); // 184 − 62 (2d-x3: p47/p48) − 2 (p49) − 122 (2e: p50-p55)
     // p17/p18 sta nosili v113-ps-reread (val 113: p17–p24 brez p19/p20 = 120) — 40 vrstic prevzetih
     expect(REG.filter((r) => r.reading_pass === "v113-ps-reread").length).toBe(0);
     expect(REG.filter((r) => r.reading_pass === "v115-insert").length).toBe(0); // val 119 del 2d-x3: p49 r2 F2 fill -> v119-names
@@ -182,13 +182,13 @@ describe("val 118 — kaskada (izrecna)", () => {
     expect(nodes).toBe(3269);
     expect(edges).toBe(3477);
   });
-  test("KG sha 62d8cfea raznesen v kaskadne artefakte", () => {
+  test("KG sha c3932092 raznesen v kaskadne artefakte", () => {
     for (const f of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ]) {
       const s = readFileSync(join(REPO, f), "utf8");
-      expect(s).toContain("62d8cfea");
+      expect(s).toContain("c3932092");
     }
   });
   test("pass3: PS parcele 392 + land-use identičen (vrednostna projekcija nespremenjena)", () => {

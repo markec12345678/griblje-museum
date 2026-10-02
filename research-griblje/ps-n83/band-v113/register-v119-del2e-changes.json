@@ -1,0 +1,2751 @@
+{
+ "val": "119-del2e",
+ "stats": {
+  "owner_changes": 81,
+  "haus_changes": 38,
+  "value_changes": 89,
+  "anmerkung_adds": 100,
+  "razhajanja": 28,
+  "pages_covered": [
+   "p50",
+   "p51",
+   "p52",
+   "p53",
+   "p54",
+   "p55"
+  ],
+  "rows_covered": 122
+ },
+ "changes": [
+  {
+   "index": 955,
+   "page": 50,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schiffelbichl Barthol. Lorenz",
+   "new": "Stallpschibek Matthe[?]",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. Lorenz -> Stallpschibek Matthe[?] (Stallpschibek-glyf kot p44/p51; v114 'Schiffelbichl' = ista druzina misread); haus POPRAVEK 1 -> 1/7"
+  },
+  {
+   "index": 955,
+   "page": 50,
+   "row_in_page": 0,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1",
+   "new": "1/7",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. Lorenz -> Stallpschibek Matthe[?] (Stallpschibek-glyf kot p44/p51; v114 'Schiffelbichl' = ista druzina misread); haus POPRAVEK 1 -> 1/7"
+  },
+  {
+   "index": 955,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Matthe[?]\", v114 \"Schiffelbichl Barthol. Lorenz\" popravljen]"
+  },
+  {
+   "index": 956,
+   "page": 50,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schiffelbichl Barthol. Lorenz",
+   "new": "Novak Martin",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. Lorenz -> Novak Martin (Novak-glyf jasna; v114 ditto od r0 = napacno)"
+  },
+  {
+   "index": 956,
+   "page": 50,
+   "row_in_page": 1,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1",
+   "note": "jae ✓; NOVO ertrag 1-136 (v114 ga je imel na r2 = zamik)"
+  },
+  {
+   "index": 956,
+   "page": 50,
+   "row_in_page": 1,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "136",
+   "note": "jae ✓; NOVO ertrag 1-136 (v114 ga je imel na r2 = zamik)"
+  },
+  {
+   "index": 957,
+   "page": 50,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wondl Mathias",
+   "new": "Vallafschübl Matthe[?]",
+   "note": "ime POPRAVEK Wondl Mathias -> Vallafschübl Matthe[?] (dvom glyfov; razhajanje odprto v anm)"
+  },
+  {
+   "index": 957,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto v anm)]"
+  },
+  {
+   "index": 957,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Vallafschübl Matthe[?]\", v114 \"Wondl Mathias\" popravljen]"
+  },
+  {
+   "index": 957,
+   "page": 50,
+   "row_in_page": 2,
+   "type": "v119_value_clear",
+   "field": "ertrag_fl",
+   "old": "1",
+   "new": "",
+   "note": "pocisceno ('1' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 957,
+   "page": 50,
+   "row_in_page": 2,
+   "type": "v119_value_clear",
+   "field": "ertrag_kr",
+   "old": "- 136",
+   "new": "",
+   "note": "pocisceno ('- 136' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 958,
+   "page": 50,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schiffelbichl Barthol.",
+   "new": "Kraubgel Sveb[?]",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. -> Kraubgel Sveb[?] (dvom); haus POPRAVEK 1/4 -> 1/5"
+  },
+  {
+   "index": 958,
+   "page": 50,
+   "row_in_page": 3,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/4",
+   "new": "1/5",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. -> Kraubgel Sveb[?] (dvom); haus POPRAVEK 1/4 -> 1/5"
+  },
+  {
+   "index": 958,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Kraubgel Sveb[?]\", v114 \"Schiffelbichl Barthol.\" popravljen]"
+  },
+  {
+   "index": 959,
+   "page": 50,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pavstgl Georg",
+   "new": "Stallpschibed Svec[?]",
+   "note": "ime POPRAVEK Pavstgl Georg -> Stallpschibed Svec[?] (dvom); haus POPRAVEK 5 -> 1/6"
+  },
+  {
+   "index": 959,
+   "page": 50,
+   "row_in_page": 4,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "5",
+   "new": "1/6",
+   "note": "ime POPRAVEK Pavstgl Georg -> Stallpschibed Svec[?] (dvom); haus POPRAVEK 5 -> 1/6"
+  },
+  {
+   "index": 959,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibed Svec[?]\", v114 \"Pavstgl Georg\" popravljen]"
+  },
+  {
+   "index": 960,
+   "page": 50,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schiffelbichl Barthol.",
+   "new": "Weinchan Matthe[?]",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. -> Weinchan Matthe[?]; haus POPRAVEK 6 -> 1/69"
+  },
+  {
+   "index": 960,
+   "page": 50,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "6",
+   "new": "1/69",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. -> Weinchan Matthe[?]; haus POPRAVEK 6 -> 1/69"
+  },
+  {
+   "index": 960,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Weinchan Matthe[?]\", v114 \"Schiffelbichl Barthol.\" popravljen]"
+  },
+  {
+   "index": 961,
+   "page": 50,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Winkler mathäus",
+   "new": "Weinchan Matthe[?]",
+   "note": "ime POPRAVEK Winkler mathäus -> Weinchan Matthe[?]; haus POPRAVEK 69 -> 1/3"
+  },
+  {
+   "index": 961,
+   "page": 50,
+   "row_in_page": 6,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "69",
+   "new": "1/3",
+   "note": "ime POPRAVEK Winkler mathäus -> Weinchan Matthe[?]; haus POPRAVEK 69 -> 1/3"
+  },
+  {
+   "index": 961,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Weinchan Matthe[?]\", v114 \"Winkler mathäus\" popravljen]"
+  },
+  {
+   "index": 962,
+   "page": 50,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Winkler andreas",
+   "new": "Weinchan Matthe[?]",
+   "note": "ime POPRAVEK Winkler andreas -> Weinchan Matthe[?]; haus 3 -> 1/3"
+  },
+  {
+   "index": 962,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Weinchan Matthe[?]\", v114 \"Winkler andreas\" popravljen]"
+  },
+  {
+   "index": 963,
+   "page": 50,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Winkler mathäus",
+   "new": "Weinchan Matthe[?]",
+   "note": "ime POPRAVEK Winkler mathäus -> Weinchan Matthe[?]; haus 3 -> 1/3"
+  },
+  {
+   "index": 963,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Weinchan Matthe[?]\", v114 \"Winkler mathäus\" popravljen]"
+  },
+  {
+   "index": 964,
+   "page": 50,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pirchiner mathäus",
+   "new": "Schimey Michael",
+   "note": "ime POPRAVEK Pirchiner mathäus -> Schimey Michael (Schimek-glyf, cross-val h-niz); haus POPRAVEK 3 -> 1/19"
+  },
+  {
+   "index": 964,
+   "page": 50,
+   "row_in_page": 9,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "3",
+   "new": "1/19",
+   "note": "ime POPRAVEK Pirchiner mathäus -> Schimey Michael (Schimek-glyf, cross-val h-niz); haus POPRAVEK 3 -> 1/19"
+  },
+  {
+   "index": 964,
+   "page": 50,
+   "row_in_page": 9,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "825",
+   "note": "jae ✓; capital 825 = C.fl (v114 ekr=825 = napačna kolona) -> ekr pociscen, cfl 825"
+  },
+  {
+   "index": 964,
+   "page": 50,
+   "row_in_page": 9,
+   "type": "v119_value_clear",
+   "field": "ertrag_kr",
+   "old": "825",
+   "new": "",
+   "note": "pocisceno ('825' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 965,
+   "page": 50,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Lehning Michael",
+   "new": "Kranvel Michael[?]",
+   "note": "ime POPRAVEK Lehning Michael -> Kranvel Michael[?] (dvom forma); haus POPRAVEK 79 -> 1/10"
+  },
+  {
+   "index": 965,
+   "page": 50,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "79",
+   "new": "1/10",
+   "note": "ime POPRAVEK Lehning Michael -> Kranvel Michael[?] (dvom forma); haus POPRAVEK 79 -> 1/10"
+  },
+  {
+   "index": 965,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Kranvel Michael[?]\", v114 \"Lehning Michael\" popravljen]"
+  },
+  {
+   "index": 965,
+   "page": 50,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "358",
+   "new": "355",
+   "note": "jae POPRAVEK 358 -> 355 (zzv x14: zadnja cifra 5)"
+  },
+  {
+   "index": 966,
+   "page": 50,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kranz Michael",
+   "new": "Pessing Georg",
+   "note": "ime POPRAVEK Kranz Michael -> Pessing Georg (cross-val p49 F5/p52/p55)"
+  },
+  {
+   "index": 967,
+   "page": 50,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pölling Georg",
+   "new": "Pessing Georg",
+   "note": "ime POPRAVEK Pölling Georg -> Pessing Georg"
+  },
+  {
+   "index": 967,
+   "page": 50,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "682",
+   "note": "jae ✓; capital 682 = C.fl (v114 ckr) -> ckr pociscen, cfl 682"
+  },
+  {
+   "index": 967,
+   "page": 50,
+   "row_in_page": 12,
+   "type": "v119_value_clear",
+   "field": "capital_kr",
+   "old": "682",
+   "new": "",
+   "note": "pocisceno ('682' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 968,
+   "page": 50,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Pölling Georg",
+   "new": "Kranvel Michael[?]",
+   "note": "ime POPRAVEK Pölling Georg -> Kranvel Michael[?]; haus 11 -> 1/10"
+  },
+  {
+   "index": 968,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Kranvel Michael[?]\", v114 \"Pölling Georg\" popravljen]"
+  },
+  {
+   "index": 970,
+   "page": 50,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Kranz Michael",
+   "new": "Novak Martin",
+   "note": "ime POPRAVEK Wondl Mathias -> Novak Martin; haus 14 -> 1/14"
+  },
+  {
+   "index": 971,
+   "page": 50,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wondl Mathias",
+   "new": "Stallpschibek Grad[?]",
+   "note": "ime POPRAVEK Wondl Mathias -> Stallpschibek Grad[?] (dvom); haus POPRAVEK 14 -> 1/6"
+  },
+  {
+   "index": 971,
+   "page": 50,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "14",
+   "new": "1/6",
+   "note": "ime POPRAVEK Wondl Mathias -> Stallpschibek Grad[?] (dvom); haus POPRAVEK 14 -> 1/6"
+  },
+  {
+   "index": 971,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Grad[?]\", v114 \"Wondl Mathias\" popravljen]"
+  },
+  {
+   "index": 972,
+   "page": 50,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schiffelbichl Barthol.",
+   "new": "Stallpschübek Jne[?]",
+   "note": "ime POPRAVEK Schiffelbichl Barthol. -> Stallpschübek Jne[?] (dvom); haus 6 -> 1/6"
+  },
+  {
+   "index": 972,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschübek Jne[?]\", v114 \"Schiffelbichl Barthol.\" popravljen]"
+  },
+  {
+   "index": 973,
+   "page": 50,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schiffelbichl Barthol.",
+   "new": "Novak Martin",
+   "note": "ime POPRAVEK Wondl Mathias -> Novak Martin; haus 14 -> 1/14"
+  },
+  {
+   "index": 973,
+   "page": 50,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "1263",
+   "note": "jae ✓; capital 1263 = C.fl (v114 ckr=1265: kolona + cifra misread) -> ckr pociscen, cfl 1263"
+  },
+  {
+   "index": 973,
+   "page": 50,
+   "row_in_page": 18,
+   "type": "v119_value_clear",
+   "field": "capital_kr",
+   "old": "1265",
+   "new": "",
+   "note": "pocisceno ('1265' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 974,
+   "page": 50,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Wondl Mathias",
+   "new": "Stanly d Sury[?]",
+   "note": "ime POPRAVEK Wondl Mathias -> Stanly d Sury[?] (dvom, d = in/terka?); haus POPRAVEK 14 -> 1/5"
+  },
+  {
+   "index": 974,
+   "page": 50,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "14",
+   "new": "1/5",
+   "note": "ime POPRAVEK Wondl Mathias -> Stanly d Sury[?] (dvom, d = in/terka?); haus POPRAVEK 14 -> 1/5"
+  },
+  {
+   "index": 974,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stanly d Sury[?]\", v114 \"Wondl Mathias\" popravljen]"
+  },
+  {
+   "index": 975,
+   "page": 50,
+   "row_in_page": 20,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "",
+   "new": "4",
+   "note": "Fürtrag: jae 4 | kl 386 NOVO (v114 prazno; v57 Joch 4 = umajeno v anm)"
+  },
+  {
+   "index": 975,
+   "page": 50,
+   "row_in_page": 20,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "386",
+   "note": "Fürtrag: jae 4 | kl 386 NOVO (v114 prazno; v57 Joch 4 = umajeno v anm)"
+  },
+  {
+   "index": 975,
+   "page": 50,
+   "row_in_page": 20,
+   "type": "v119_e_fuertrag_clear",
+   "field": "owner_original",
+   "old": "Pavstgl Lorenz",
+   "new": "",
+   "note": "F-FÜRTRAG p50"
+  },
+  {
+   "index": 975,
+   "page": 50,
+   "row_in_page": 20,
+   "type": "v119_e_fuertrag_clear",
+   "field": "haus_no",
+   "old": "5",
+   "new": "",
+   "note": "F-FÜRTRAG p50"
+  },
+  {
+   "index": 975,
+   "page": 50,
+   "row_in_page": 20,
+   "type": "v119_e_fuertrag_clear",
+   "field": "kultur",
+   "old": "48 Fürsteß",
+   "new": "Fürtrag",
+   "note": "F-FÜRTRAG p50"
+  },
+  {
+   "index": 975,
+   "page": 50,
+   "type": "anmerkung_add",
+   "text": "[v119 e F-FÜRTRAG: pozicijsko = Fürtrag pas — kultur črnilo \"48 Fürtrag\", jae 4 + klafter 386 (nesen na naslednji list); v114 \"Pavstgl Lorenz\" h5 = fantom, snimljen]"
+  },
+  {
+   "page": 50,
+   "type": "page_observations_v119",
+   "text": "vrednostna plast 1:1 poravnana (jae v JOCH koloni, kl prazna); popravki r10 358->355; ertrag 1-136 pripada r1 (942), v114 ga je dal r2; capital 825@r9, 682@r12, 1263@r9/12/18 so C.fl (v114 jih je dal ekr/ckr/ckr, r18 tud 1265=misread 1263); r20 = Fürtrag '48 Fürtrag' jae 4|kl 386"
+  },
+  {
+   "index": 976,
+   "page": 51,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muckel fman",
+   "new": "Stratzl Johan[?]",
+   "note": "ime POPRAVEK Muckel fman -> Stratzl Johan[?] (dvom); haus POPRAVEK 5 -> 1/5"
+  },
+  {
+   "index": 976,
+   "page": 51,
+   "row_in_page": 0,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "5",
+   "new": "1/5",
+   "note": "ime POPRAVEK Muckel fman -> Stratzl Johan[?] (dvom); haus POPRAVEK 5 -> 1/5"
+  },
+  {
+   "index": 976,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stratzl Johan[?]\", v114 \"Muckel fman\" popravljen]"
+  },
+  {
+   "index": 976,
+   "page": 51,
+   "row_in_page": 0,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "89",
+   "new": "82",
+   "note": "kl POPRAVEK 89 -> 82 (zzv: stara 8 + 2; v114 9 = misread)"
+  },
+  {
+   "index": 977,
+   "page": 51,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muckel fman",
+   "new": "Stallpschibek Franiz[?]",
+   "note": "ime POPRAVEK Muckel fman -> Stallpschibek Franiz[?] (dvom); haus črnilo ~1/6 (dvom) —razhajanje odprto"
+  },
+  {
+   "index": 977,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Franiz[?]\", v114 \"Muckel fman\" popravljen]"
+  },
+  {
+   "index": 977,
+   "page": 51,
+   "row_in_page": 1,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "14",
+   "new": "1442",
+   "note": "kl ✓; capital 1442 = ENO število v C.fl (v114 razdelil 14|42) -> cfl 1442, ckr pociscen"
+  },
+  {
+   "index": 977,
+   "page": 51,
+   "row_in_page": 1,
+   "type": "v119_value_clear",
+   "field": "capital_kr",
+   "old": "42",
+   "new": "",
+   "note": "pocisceno ('42' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 978,
+   "page": 51,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Muffel",
+   "new": "Stallpschibek Moorsl[?]",
+   "note": "ime POPRAVEK Muffelthal Muffel -> Stallpschibek Moorsl[?] (dvom; vrstica preklicana rdeče)"
+  },
+  {
+   "index": 978,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Moorsl[?]\", v114 \"Muffelthal Muffel\" popravljen]"
+  },
+  {
+   "index": 978,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 979,
+   "page": 51,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Muffel[?]",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Muffelthal Muffel[?] -> Stallpschibek Nikolaus[?] (preklicana)"
+  },
+  {
+   "index": 979,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Muffelthal Muffel[?]\" popravljen]"
+  },
+  {
+   "index": 979,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 979,
+   "page": 51,
+   "row_in_page": 3,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "74",
+   "new": "72",
+   "note": "kl POPRAVEK 74 -> 72 (preklicana)"
+  },
+  {
+   "index": 980,
+   "page": 51,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Muffel",
+   "new": "Stallpschibek Wolffa[?]",
+   "note": "ime POPRAVEK Muffelthal Muffel -> Stallpschibek Wolffa[?] (preklicana)"
+  },
+  {
+   "index": 980,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Wolffa[?]\", v114 \"Muffelthal Muffel\" popravljen]"
+  },
+  {
+   "index": 980,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 981,
+   "page": 51,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Muffel[?]",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Muffelthal Muffel[?] -> Stallpschibek Nikolaus[?]; haus črnilo ~1/13 razhajanje odprto"
+  },
+  {
+   "index": 981,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Muffelthal Muffel[?]\" popravljen]"
+  },
+  {
+   "index": 981,
+   "page": 51,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "124",
+   "new": "121",
+   "note": "kl POPRAVEK 124 -> 121"
+  },
+  {
+   "index": 983,
+   "page": 51,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Muffel",
+   "new": "Stallpschibek Malga[?]",
+   "note": "ime POPRAVEK Muffelthal Muffel -> Stallpschibek Malga[?] (preklicana)"
+  },
+  {
+   "index": 983,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Malga[?]\", v114 \"Muffelthal Muffel\" popravljen]"
+  },
+  {
+   "index": 983,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 984,
+   "page": 51,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Muffel",
+   "new": "Stallpschibek Malfel[?]",
+   "note": "ime POPRAVEK Muffelthal Muffel -> Stallpschibek Malfel[?] (preklicana)"
+  },
+  {
+   "index": 984,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Malfel[?]\", v114 \"Muffelthal Muffel\" popravljen]"
+  },
+  {
+   "index": 984,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 984,
+   "page": 51,
+   "row_in_page": 8,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "25",
+   "new": "28",
+   "note": "kl POPRAVEK 25 -> 28 (preklicana)"
+  },
+  {
+   "index": 985,
+   "page": 51,
+   "row_in_page": 9,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Muffel",
+   "new": "Stallpschibek Malga[?]",
+   "note": "ime POPRAVEK Muffelthal Muffel -> Stallpschibek Malga[?] (preklicana)"
+  },
+  {
+   "index": 985,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Malga[?]\", v114 \"Muffelthal Muffel\" popravljen]"
+  },
+  {
+   "index": 985,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 985,
+   "page": 51,
+   "row_in_page": 9,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "10¾",
+   "new": "1084",
+   "note": "jae/kl ✓ (preklicana); ertrag 3-1084 (v114 10¾ = misread ulomka; dvom morda 108¾)"
+  },
+  {
+   "index": 986,
+   "page": 51,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muffelthal Schödel",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Muffelthal Schödel -> Stallpschibek Nikolaus[?]; haus črnilo ~1/13 razhajanje odprto"
+  },
+  {
+   "index": 986,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Muffelthal Schödel\" popravljen]"
+  },
+  {
+   "index": 986,
+   "page": 51,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "207",
+   "new": "101",
+   "note": "jae NOVO 1; kl POPRAVEK 207 -> 101 (preklicana)"
+  },
+  {
+   "index": 987,
+   "page": 51,
+   "row_in_page": 11,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muckel Franz",
+   "new": "Ulrich Georg",
+   "note": "ime POPRAVEK Muckel Franz -> Ulrich Georg (zz x24 jasno; cross-val Ulrich-družina); haus NOVO 1/32"
+  },
+  {
+   "index": 987,
+   "page": 51,
+   "row_in_page": 11,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/32",
+   "note": "ime POPRAVEK Muckel Franz -> Ulrich Georg (zz x24 jasno; cross-val Ulrich-družina); haus NOVO 1/32"
+  },
+  {
+   "index": 987,
+   "page": 51,
+   "row_in_page": 11,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "959",
+   "new": "259",
+   "note": "kl POPRAVEK 959 -> 259"
+  },
+  {
+   "index": 988,
+   "page": 51,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Urick Maria",
+   "new": "Ulrich Miko",
+   "note": "ime POPRAVEK Urick Maria -> Ulrich Miko (cross-val del 2d: Ulrich Miho h68!); haus NOVO 1/68"
+  },
+  {
+   "index": 988,
+   "page": 51,
+   "row_in_page": 12,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/68",
+   "note": "ime POPRAVEK Urick Maria -> Ulrich Miko (cross-val del 2d: Ulrich Miho h68!); haus NOVO 1/68"
+  },
+  {
+   "index": 988,
+   "page": 51,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "36",
+   "note": "kl ✓; ekr 33 pociscen (fantom), ckr 6 pociscen; cfl NOVO 36 (pred 36 sled ~1 — dvom ~136)"
+  },
+  {
+   "index": 988,
+   "page": 51,
+   "row_in_page": 12,
+   "type": "v119_value_clear",
+   "field": "ertrag_kr",
+   "old": "33",
+   "new": "",
+   "note": "pocisceno ('33' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 988,
+   "page": 51,
+   "row_in_page": 12,
+   "type": "v119_value_clear",
+   "field": "capital_kr",
+   "old": "6",
+   "new": "",
+   "note": "pocisceno ('6' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 989,
+   "page": 51,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Chinery Muffel",
+   "new": "Schiney Malga[?]",
+   "note": "ime POPRAVEK Chinery Muffel -> Schiney Malga[?] (dvom); haus NOVO 1/19"
+  },
+  {
+   "index": 989,
+   "page": 51,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/19",
+   "note": "ime POPRAVEK Chinery Muffel -> Schiney Malga[?] (dvom); haus NOVO 1/19"
+  },
+  {
+   "index": 989,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Schiney Malga[?]\", v114 \"Chinery Muffel\" popravljen]"
+  },
+  {
+   "index": 989,
+   "page": 51,
+   "row_in_page": 13,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "453",
+   "new": "433",
+   "note": "kl POPRAVEK 453 -> 433"
+  },
+  {
+   "index": 990,
+   "page": 51,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Chinery Johan",
+   "new": "Schiney Juba[?]",
+   "note": "ime POPRAVEK Chinery Johan -> Schiney Juba[?] (dvom); haus NOVO 1/56"
+  },
+  {
+   "index": 990,
+   "page": 51,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/56",
+   "note": "ime POPRAVEK Chinery Johan -> Schiney Juba[?] (dvom); haus NOVO 1/56"
+  },
+  {
+   "index": 990,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Schiney Juba[?]\", v114 \"Chinery Johan\" popravljen]"
+  },
+  {
+   "index": 991,
+   "page": 51,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Chinery Johan",
+   "new": "Schiney Johan",
+   "note": "ime POPRAVEK Chinery Johan -> Schiney Johan; haus NOVO 1/55"
+  },
+  {
+   "index": 991,
+   "page": 51,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/55",
+   "note": "ime POPRAVEK Chinery Johan -> Schiney Johan; haus NOVO 1/55"
+  },
+  {
+   "index": 991,
+   "page": 51,
+   "row_in_page": 15,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "280",
+   "new": "220",
+   "note": "kl POPRAVEK 280 -> 220"
+  },
+  {
+   "index": 992,
+   "page": 51,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Chinery Muffel",
+   "new": "Schiney Malga[?]",
+   "note": "ime POPRAVEK Chinery Muffel -> Schiney Malga[?]; haus NOVO 1/19"
+  },
+  {
+   "index": 992,
+   "page": 51,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/19",
+   "note": "ime POPRAVEK Chinery Muffel -> Schiney Malga[?]; haus NOVO 1/19"
+  },
+  {
+   "index": 992,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Schiney Malga[?]\", v114 \"Chinery Muffel\" popravljen]"
+  },
+  {
+   "index": 993,
+   "page": 51,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Eidry Muffel",
+   "new": "Lüding Malga[?]",
+   "note": "ime POPRAVEK Eidry Muffel -> Lüding Malga[?] (dvom); haus NOVO 1/50"
+  },
+  {
+   "index": 993,
+   "page": 51,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/50",
+   "note": "ime POPRAVEK Eidry Muffel -> Lüding Malga[?] (dvom); haus NOVO 1/50"
+  },
+  {
+   "index": 993,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Lüding Malga[?]\", v114 \"Eidry Muffel\" popravljen]"
+  },
+  {
+   "index": 994,
+   "page": 51,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Muckel Johan",
+   "new": "Brenk Johan[?]",
+   "note": "ime POPRAVEK Muckel Johan -> Brenk Johan[?] (dvom); haus NOVO 1/51"
+  },
+  {
+   "index": 994,
+   "page": 51,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/51",
+   "note": "ime POPRAVEK Muckel Johan -> Brenk Johan[?] (dvom); haus NOVO 1/51"
+  },
+  {
+   "index": 994,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Brenk Johan[?]\", v114 \"Muckel Johan\" popravljen]"
+  },
+  {
+   "index": 994,
+   "page": 51,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "820",
+   "new": "520",
+   "note": "kl POPRAVEK 820 -> 520; cfl NOVO ~8¼ (dvom ulomka; morda 814)"
+  },
+  {
+   "index": 994,
+   "page": 51,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "8¼",
+   "note": "kl POPRAVEK 820 -> 520; cfl NOVO ~8¼ (dvom ulomka; morda 814)"
+  },
+  {
+   "index": 995,
+   "page": 51,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Darek Johan",
+   "new": "Urick Jakim[?]",
+   "note": "ime POPRAVEK Darek Johan -> Urick Jakim[?] (dvom; ~Ulrich Jakob?); haus NOVO 1/51"
+  },
+  {
+   "index": 995,
+   "page": 51,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/51",
+   "note": "ime POPRAVEK Darek Johan -> Urick Jakim[?] (dvom; ~Ulrich Jakob?); haus NOVO 1/51"
+  },
+  {
+   "index": 995,
+   "page": 51,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Urick Jakim[?]\", v114 \"Darek Johan\" popravljen]"
+  },
+  {
+   "index": 995,
+   "page": 51,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "",
+   "new": "1",
+   "note": "jae NOVO 1 (zapisano nadvisoko); kl ✓; ertrag 3-593 (v114 39½ = misread)"
+  },
+  {
+   "index": 995,
+   "page": 51,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "39½",
+   "new": "593",
+   "note": "jae NOVO 1 (zapisano nadvisoko); kl ✓; ertrag 3-593 (v114 39½ = misread)"
+  },
+  {
+   "page": 51,
+   "type": "page_observations_v119",
+   "text": "vrednosti v KLAFTER koloni (Wiese/Ladwiese del); popravki: r0 89->82, r3 74->72 (preklicana), r5 124->121, r8 25->28 (preklicana), r10 207->101+jae 1 (preklicana), r11 959->259, r13 453->433, r15 280->220, r18 820->520; capital 1442@r1 = C.fl (v114 je razdelil 14|42); ertrag 3-1084@r9 (v114 10¾), 3-593@r19 (v114 39½); jae 1@r10, r19"
+  },
+  {
+   "index": 996,
+   "page": 52,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ludwig Muffel",
+   "new": "Pesding Marlga[?]",
+   "note": "ime POPRAVEK Ludwig Muffel -> Pesding Marlga[?] (dvom; ~Pessing-družina); haus POPRAVEK 1/59 -> 1/50"
+  },
+  {
+   "index": 996,
+   "page": 52,
+   "row_in_page": 0,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/59",
+   "new": "1/50",
+   "note": "ime POPRAVEK Ludwig Muffel -> Pesding Marlga[?] (dvom; ~Pessing-družina); haus POPRAVEK 1/59 -> 1/50"
+  },
+  {
+   "index": 996,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Pesding Marlga[?]\", v114 \"Ludwig Muffel\" popravljen]"
+  },
+  {
+   "index": 996,
+   "page": 52,
+   "row_in_page": 0,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "4",
+   "note": "kl NOVO 4 (majhen glif, dvom 4/6)"
+  },
+  {
+   "index": 997,
+   "page": 52,
+   "row_in_page": 1,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "182",
+   "new": "152",
+   "note": "kl POPRAVEK 182 -> 152"
+  },
+  {
+   "index": 998,
+   "page": 52,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ludwig Muffel",
+   "new": "Schimey Michael",
+   "note": "ime POPRAVEK Ludwig Muffel -> Schimey Michael (cross-val del 2d: Schimek Micha h49!)"
+  },
+  {
+   "index": 999,
+   "page": 52,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Johann Johann",
+   "new": "Schimey Johan",
+   "note": "ime POPRAVEK Johann Johann -> Schimey Johan"
+  },
+  {
+   "index": 1000,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Mareho[?]', v114 'Wenzl. Mühle' ohranjeno]"
+  },
+  {
+   "index": 1001,
+   "page": 52,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "339",
+   "new": "379",
+   "note": "kl POPRAVEK 339 -> 379 (prva cifra 3 zapisana nadvisoko)"
+  },
+  {
+   "index": 1003,
+   "page": 52,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ludwig Johann",
+   "new": "Schimey Johan",
+   "note": "ime POPRAVEK Ludwig Johann -> Schimey Johan; haus 1/55 ✓"
+  },
+  {
+   "index": 1005,
+   "page": 52,
+   "row_in_page": 9,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "109",
+   "new": "1097",
+   "note": "kl ✓; capital 1097 (v114 razdelil 109|5) -> cfl 1097, ckr pociscen (dvom zadnje cifre 1095/1097)"
+  },
+  {
+   "index": 1005,
+   "page": 52,
+   "row_in_page": 9,
+   "type": "v119_value_clear",
+   "field": "capital_kr",
+   "old": "5",
+   "new": "",
+   "note": "pocisceno ('5' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1007,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1009,
+   "page": 52,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Chruschka Michel",
+   "new": "Krischan Georg",
+   "note": "ime POPRAVEK Chruschka Michel -> Krischan Georg (zz x24 jasno); haus POPRAVEK 1/62 -> 1/63"
+  },
+  {
+   "index": 1009,
+   "page": 52,
+   "row_in_page": 13,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/62",
+   "new": "1/63",
+   "note": "ime POPRAVEK Chruschka Michel -> Krischan Georg (zz x24 jasno); haus POPRAVEK 1/62 -> 1/63"
+  },
+  {
+   "index": 1010,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Krischa Maido[?]', v114 'Pirker Mühle' ohranjeno]"
+  },
+  {
+   "index": 1011,
+   "page": 52,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Stallh. Mühle",
+   "new": "Pesding Miade[?]",
+   "note": "ime POPRAVEK Stallh. Mühle -> Pesding Miade[?] (dvom); haus POPRAVEK 1/16 -> 1/14"
+  },
+  {
+   "index": 1011,
+   "page": 52,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/16",
+   "new": "1/14",
+   "note": "ime POPRAVEK Stallh. Mühle -> Pesding Miade[?] (dvom); haus POPRAVEK 1/16 -> 1/14"
+  },
+  {
+   "index": 1011,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Pesding Miade[?]\", v114 \"Stallh. Mühle\" popravljen]"
+  },
+  {
+   "index": 1012,
+   "page": 52,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schmiedtisch Johann",
+   "new": "Stallh Mičo[?]",
+   "note": "ime POPRAVEK Schmiedtisch Johann -> Stallh Mičo[?] (dvom); haus POPRAVEK 1/6 -> 1/16"
+  },
+  {
+   "index": 1012,
+   "page": 52,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/6",
+   "new": "1/16",
+   "note": "ime POPRAVEK Schmiedtisch Johann -> Stallh Mičo[?] (dvom); haus POPRAVEK 1/6 -> 1/16"
+  },
+  {
+   "index": 1012,
+   "page": 52,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallh Mičo[?]\", v114 \"Schmiedtisch Johann\" popravljen]"
+  },
+  {
+   "index": 1012,
+   "page": 52,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "1205",
+   "new": "1305",
+   "note": "kl POPRAVEK 1205 -> 1305"
+  },
+  {
+   "index": 1013,
+   "page": 52,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Hantzel Jhe.",
+   "new": "Stallpschübek Johan",
+   "note": "ime POPRAVEK Hantzel Jhe. -> Stallpschübek Johan; haus POPRAVEK 1/3 -> 1/6"
+  },
+  {
+   "index": 1013,
+   "page": 52,
+   "row_in_page": 17,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/3",
+   "new": "1/6",
+   "note": "ime POPRAVEK Hantzel Jhe. -> Stallpschübek Johan; haus POPRAVEK 1/3 -> 1/6"
+  },
+  {
+   "index": 1014,
+   "page": 52,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Chruschka Wenzela",
+   "new": "Hantzel Jha",
+   "note": "ime POPRAVEK Chruschka Wenzela -> Hantzel Jha; haus POPRAVEK 1/62 -> 1/5"
+  },
+  {
+   "index": 1014,
+   "page": 52,
+   "row_in_page": 18,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "1/62",
+   "new": "1/5",
+   "note": "ime POPRAVEK Chruschka Wenzela -> Hantzel Jha; haus POPRAVEK 1/62 -> 1/5"
+  },
+  {
+   "index": 1015,
+   "page": 52,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "",
+   "new": "Chrischan Miido[?]",
+   "note": "ime NOVO '' -> Chrischan Miido[?] (dvom; v114 owner prazen, kultur 'Insgesamt:' = misread te vrstice); haus NOVO 1/62"
+  },
+  {
+   "index": 1015,
+   "page": 52,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "",
+   "new": "1/62",
+   "note": "ime NOVO '' -> Chrischan Miido[?] (dvom; v114 owner prazen, kultur 'Insgesamt:' = misread te vrstice); haus NOVO 1/62"
+  },
+  {
+   "index": 1015,
+   "page": 52,
+   "row_in_page": 19,
+   "type": "v119_value_clear",
+   "field": "kultur",
+   "old": "Insgesamt:",
+   "new": "",
+   "note": "v114 'Insgesamt:' = misread vrstice 1000"
+  },
+  {
+   "page": 52,
+   "type": "page_observations_v119",
+   "text": "popravki: r1 182->152, r5 339->379 (nadvisoka 3), r16 1205->1305; cfl 1097@r9 (v114 109|5 razdeljeno); kl 4@r0 (majhen glif, dvom 4/6); capital 1001@r17 potrjen ✓"
+  },
+  {
+   "index": 1016,
+   "page": 53,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michel Gorg",
+   "new": "Krischan Georg",
+   "note": "ime POPRAVEK Michel Gorg -> Krischan Georg (Krischan-glyf kot p52); haus razhajanje: črnilo ~1/63, v114 1/65 ohranjeno"
+  },
+  {
+   "index": 1017,
+   "page": 53,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michel Gorg",
+   "new": "Krischan Georg",
+   "note": "ime POPRAVEK Michel Gorg -> Krischan Georg; haus ✓ 1/63"
+  },
+  {
+   "index": 1018,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Perbübich-er Malga[?]' (vdova), v114 'Michl. Mich. Wf.' ohranjeno]"
+  },
+  {
+   "index": 1019,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Bzing Mareho[?]', v114 'Wenzl Wenzl.' ohranjeno]"
+  },
+  {
+   "index": 1019,
+   "page": 53,
+   "row_in_page": 3,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "3",
+   "note": "jae/kl ✓; ertrag 3-568: fl-del '3' je bil v114 dal v classe -> efl 3, ekr 568, classe pociscena"
+  },
+  {
+   "index": 1019,
+   "page": 53,
+   "row_in_page": 3,
+   "type": "v119_value_clear",
+   "field": "classe",
+   "old": "3",
+   "new": "",
+   "note": "pocisceno ('3' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1020,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Vurbuber Malga[?]' (ista vdova kot r2), v114 'Verblibten Wf.' ohranjeno]"
+  },
+  {
+   "index": 1020,
+   "page": 53,
+   "row_in_page": 4,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "1194",
+   "new": "1191",
+   "note": "kl POPRAVEK 1194 -> 1191 (zzv: zadnja cifra 1)"
+  },
+  {
+   "index": 1021,
+   "page": 53,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michel Gorg",
+   "new": "Krischan Georg",
+   "note": "ime POPRAVEK Michel Gorg -> Krischan Georg"
+  },
+  {
+   "index": 1022,
+   "page": 53,
+   "row_in_page": 6,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Michel Gorg",
+   "new": "Krischan Georg",
+   "note": "ime POPRAVEK Michel Gorg -> Krischan Georg"
+  },
+  {
+   "index": 1022,
+   "page": 53,
+   "row_in_page": 6,
+   "type": "v119_value_clear",
+   "field": "ertrag_fl",
+   "old": "1",
+   "new": "",
+   "note": "pocisceno ('1' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1022,
+   "page": 53,
+   "row_in_page": 6,
+   "type": "v119_value_clear",
+   "field": "ertrag_kr",
+   "old": "1377",
+   "new": "",
+   "note": "pocisceno ('1377' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1023,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Johan[?]', v114 'Wenzl Gland' ohranjeno]"
+  },
+  {
+   "index": 1023,
+   "page": 53,
+   "row_in_page": 7,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1",
+   "note": "kl ✓; ertrag NOVO 1-1377"
+  },
+  {
+   "index": 1023,
+   "page": 53,
+   "row_in_page": 7,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "1377",
+   "note": "kl ✓; ertrag NOVO 1-1377"
+  },
+  {
+   "index": 1024,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1025,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Stallh Malga[?]', v114 'Theresia Mitterp.' ohranjeno]"
+  },
+  {
+   "index": 1026,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Pabra[?]', v114 'Wenzl Piberl' ohranjeno (~ista družina Piberl/Pabra)]"
+  },
+  {
+   "index": 1027,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Johan[?]', v114 'Wenzl Piberl' ohranjeno]"
+  },
+  {
+   "index": 1028,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Pabra[?]' (preklicana 1013), v114 'Wenzl Gland' ohranjeno]"
+  },
+  {
+   "index": 1028,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1028,
+   "page": 53,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "",
+   "new": "1",
+   "note": "jae NOVO 1; kl ✓ (preklicana 1013)"
+  },
+  {
+   "index": 1029,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Krischan Miido[?]' (haus ~62/77?), v114 'Michaell Maier' ohranjeno]"
+  },
+  {
+   "index": 1029,
+   "page": 53,
+   "row_in_page": 13,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "51",
+   "new": "31",
+   "note": "kl POPRAVEK 51 -> 31 (zzv: 3 + 1)"
+  },
+  {
+   "index": 1030,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Malfa[?]' (preklicana 1015), v114 'Wenzl Mitterp.' ohranjeno]"
+  },
+  {
+   "index": 1030,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1030,
+   "page": 53,
+   "row_in_page": 14,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "349",
+   "new": "319",
+   "note": "kl POPRAVEK 349 -> 319 (preklicana)"
+  },
+  {
+   "index": 1032,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Malfa[?]' (preklicana 1017), v114 'Wenzl Mitterp.' ohranjeno]"
+  },
+  {
+   "index": 1032,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1032,
+   "page": 53,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "66",
+   "new": "68",
+   "note": "kl POPRAVEK 66 -> 68 (preklicana)"
+  },
+  {
+   "index": 1033,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Juba[?]' (preklicana 1018), v114 'Wenzl Mitterp.' ohranjeno]"
+  },
+  {
+   "index": 1033,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1033,
+   "page": 53,
+   "row_in_page": 17,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "87",
+   "new": "50",
+   "note": "kl ✓ (preklicana 1018)"
+  },
+  {
+   "index": 1034,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Malfa[?]' (preklicana 1019, haus ~219/21-9?), v114 'Wenzl Mitterp.' ohranjeno]"
+  },
+  {
+   "index": 1034,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1034,
+   "page": 53,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "274",
+   "new": "201",
+   "note": "kl ✓ (preklicana; dvom 201/801 — v114 201 ohranjeno)"
+  },
+  {
+   "index": 1035,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Schiney Pabra[?]' (preklicana 1020), v114 'Wenzl Mitterp.' ohranjeno]"
+  },
+  {
+   "index": 1035,
+   "page": 53,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1035,
+   "page": 53,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "76",
+   "new": "74",
+   "note": "kl ✓ (preklicana 1020)"
+  },
+  {
+   "page": 53,
+   "type": "page_observations_v119",
+   "text": "popravki: r4 1194->1191, r13 51->31, r14 349->319 (preklicana), r16 66->68 (preklicana); ertrag 3-568@r3 (v114: ekr 568 + cl 3 razprseno), 1-1377@r7 (v114 r6 = zamik); jae 1@r12 (preklicana); 1009/1013/1015/1017/1018/1019/1020 preklicane"
+  },
+  {
+   "index": 1036,
+   "page": 54,
+   "row_in_page": 0,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Rheinigfutter / Eduard Gaidel",
+   "new": "Abiney Pottna[?]",
+   "note": "ime POPRAVEK Rheinigfutter / Eduard Gaidel -> Abiney Pottna[?] (dvom; preklicana 1021); haus POPRAVEK 18 -> 1/28"
+  },
+  {
+   "index": 1036,
+   "page": 54,
+   "row_in_page": 0,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "18",
+   "new": "1/28",
+   "note": "ime POPRAVEK Rheinigfutter / Eduard Gaidel -> Abiney Pottna[?] (dvom; preklicana 1021); haus POPRAVEK 18 -> 1/28"
+  },
+  {
+   "index": 1036,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Abiney Pottna[?]\", v114 \"Rheinigfutter / Eduard Gaidel\" popravljen]"
+  },
+  {
+   "index": 1036,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1037,
+   "page": 54,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Rheinigfutter",
+   "new": "Ajobatschar Pottra[?]",
+   "note": "ime POPRAVEK Rheinigfutter -> Ajobatschar Pottra[?] (dvom; preklicana 1022); haus ✓ 46"
+  },
+  {
+   "index": 1037,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Ajobatschar Pottra[?]\", v114 \"Rheinigfutter\" popravljen]"
+  },
+  {
+   "index": 1037,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1038,
+   "page": 54,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Fr. Veitl",
+   "new": "St. Veith",
+   "note": "ime POPRAVEK Fr. Veitl -> St. Veith (cerkveni zavod Sv. Vít); haus ✓ 20"
+  },
+  {
+   "index": 1039,
+   "page": 54,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Gemünde",
+   "new": "Gemeinde",
+   "note": "ime POPRAVEK Gemünde -> Gemeinde (pravopisna norma); haus ✓ 21"
+  },
+  {
+   "index": 1040,
+   "page": 54,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "David Poblan",
+   "new": "Ulrich Pottra",
+   "note": "ime POPRAVEK David Poblan -> Ulrich Pottra (zz x24 jasno); haus POPRAVEK 21 -> 61"
+  },
+  {
+   "index": 1040,
+   "page": 54,
+   "row_in_page": 4,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "21",
+   "new": "61",
+   "note": "ime POPRAVEK David Poblan -> Ulrich Pottra (zz x24 jasno); haus POPRAVEK 21 -> 61"
+  },
+  {
+   "index": 1040,
+   "page": 54,
+   "row_in_page": 4,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "10",
+   "note": "kl ✓; ertrag 10-66 (črnilo brez jasne črtice — dvom '1066'); v114 10|6|6 razprseno po ekr/cfl/ckr -> efl 10, ekr 66, cfl/ckr pociscena"
+  },
+  {
+   "index": 1040,
+   "page": 54,
+   "row_in_page": 4,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "10",
+   "new": "66",
+   "note": "kl ✓; ertrag 10-66 (črnilo brez jasne črtice — dvom '1066'); v114 10|6|6 razprseno po ekr/cfl/ckr -> efl 10, ekr 66, cfl/ckr pociscena"
+  },
+  {
+   "index": 1040,
+   "page": 54,
+   "row_in_page": 4,
+   "type": "v119_value_clear",
+   "field": "capital_fl",
+   "old": "6",
+   "new": "",
+   "note": "pocisceno ('6' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1040,
+   "page": 54,
+   "row_in_page": 4,
+   "type": "v119_value_clear",
+   "field": "capital_kr",
+   "old": "6",
+   "new": "",
+   "note": "pocisceno ('6' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1041,
+   "page": 54,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Poiding Georg",
+   "new": "Pessing Georg",
+   "note": "ime POPRAVEK Poiding Georg -> Pessing Georg (cross-val; črnilo ~'Pasling'); haus razhajanje: črnilo ~46, v114 19 ohranjeno"
+  },
+  {
+   "index": 1042,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Cermele Arman[?]', v114 'Johann Wurmer' ohranjeno]"
+  },
+  {
+   "index": 1043,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Onal Naume[?]', v114 'David Wurmer' ohranjeno]"
+  },
+  {
+   "index": 1044,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Onal Naume[?]', v114 'Karl Wurmer' ohranjeno]"
+  },
+  {
+   "index": 1045,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Onal Miko[?]', v114 'Karl Mioß' ohranjeno]"
+  },
+  {
+   "index": 1046,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Onal Maido[?]', v114 'Karl Mioß' ohranjeno]"
+  },
+  {
+   "index": 1047,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Pessing Malfa[?]', v114 'Karl Mioß' ohranjeno]"
+  },
+  {
+   "index": 1048,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Pessing Malfa[?]', v114 'Poiding Wolfgo' ohranjeno]"
+  },
+  {
+   "index": 1049,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Pessing Malfa[?] h50', v114 'Poiding Maja' ohranjeno]"
+  },
+  {
+   "index": 1049,
+   "page": 54,
+   "row_in_page": 13,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "5",
+   "note": "kl ✓; ertrag NOVO 5-843 (v114 r14: efl 5/ekr -/cfl 843 = razprseno)"
+  },
+  {
+   "index": 1049,
+   "page": 54,
+   "row_in_page": 13,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "843",
+   "note": "kl ✓; ertrag NOVO 5-843 (v114 r14: efl 5/ekr -/cfl 843 = razprseno)"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Poiding Wolfgo",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Poiding Wolfgo -> Stallpschibek Nikolaus[?] (x3 re-sidrani rep: stara vsebina = zamaknjena plast); haus POPRAVEK 20 -> 13"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "row_in_page": 14,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "20",
+   "new": "13",
+   "note": "ime POPRAVEK Poiding Wolfgo -> Stallpschibek Nikolaus[?] (x3 re-sidrani rep: stara vsebina = zamaknjena plast); haus POPRAVEK 20 -> 13"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Poiding Wolfgo\" popravljen]"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "row_in_page": 14,
+   "type": "v119_value_fix",
+   "field": "jaethe",
+   "old": "",
+   "new": "1",
+   "note": "REBUILD (F-NA-03): jae NOVO 1, kl NOVO 996 (v114 kl prazno + ertrag/capital smetje); ertrag + capital pociscena"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "row_in_page": 14,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "",
+   "new": "996",
+   "note": "REBUILD (F-NA-03): jae NOVO 1, kl NOVO 996 (v114 kl prazno + ertrag/capital smetje); ertrag + capital pociscena"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "row_in_page": 14,
+   "type": "v119_value_clear",
+   "field": "ertrag_fl",
+   "old": "5",
+   "new": "",
+   "note": "pocisceno ('5' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "row_in_page": 14,
+   "type": "v119_value_clear",
+   "field": "ertrag_kr",
+   "old": "-",
+   "new": "",
+   "note": "pocisceno ('-' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1050,
+   "page": 54,
+   "row_in_page": 14,
+   "type": "v119_value_clear",
+   "field": "capital_fl",
+   "old": "843",
+   "new": "",
+   "note": "pocisceno ('843' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1051,
+   "page": 54,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Schloifpottel Mathäus",
+   "new": "Krischan Wortga[?]",
+   "note": "ime POPRAVEK Schloifpottel Mathäus -> Krischan Wortga[?] (dvom; re-sidrano); haus POPRAVEK 15 -> 3"
+  },
+  {
+   "index": 1051,
+   "page": 54,
+   "row_in_page": 15,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "15",
+   "new": "3",
+   "note": "ime POPRAVEK Schloifpottel Mathäus -> Krischan Wortga[?] (dvom; re-sidrano); haus POPRAVEK 15 -> 3"
+  },
+  {
+   "index": 1051,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Krischan Wortga[?]\", v114 \"Schloifpottel Mathäus\" popravljen]"
+  },
+  {
+   "index": 1051,
+   "page": 54,
+   "row_in_page": 15,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "996",
+   "new": "113",
+   "note": "REBUILD: kl NOVO 113 (v114 1|996 = P1035 zamik)"
+  },
+  {
+   "index": 1052,
+   "page": 54,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Christoph Wolfgo",
+   "new": "Onal Maido[?]",
+   "note": "ime POPRAVEK Christoph Wolfgo -> Onal Maido[?] (dvom; re-sidrano); haus POPRAVEK 22 -> 16"
+  },
+  {
+   "index": 1052,
+   "page": 54,
+   "row_in_page": 16,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "22",
+   "new": "16",
+   "note": "ime POPRAVEK Christoph Wolfgo -> Onal Maido[?] (dvom; re-sidrano); haus POPRAVEK 22 -> 16"
+  },
+  {
+   "index": 1052,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Onal Maido[?]\", v114 \"Christoph Wolfgo\" popravljen]"
+  },
+  {
+   "index": 1052,
+   "page": 54,
+   "row_in_page": 16,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "145",
+   "new": "969",
+   "note": "REBUILD: kl POPRAVEK 145 -> 969 (145 = dup P1033, brez podlage za P1037)"
+  },
+  {
+   "index": 1053,
+   "page": 54,
+   "row_in_page": 17,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Karl Mioß",
+   "new": "Onal Naume[?]",
+   "note": "ime POPRAVEK Karl Mioß -> Onal Naume[?] (zz x24; re-sidrano); haus ✓ 17"
+  },
+  {
+   "index": 1053,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Onal Naume[?]\", v114 \"Karl Mioß\" popravljen]"
+  },
+  {
+   "index": 1053,
+   "page": 54,
+   "row_in_page": 17,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "969",
+   "new": "74",
+   "note": "REBUILD: kl POPRAVEK 969 -> 74 (969 = P1037 zamik)"
+  },
+  {
+   "index": 1054,
+   "page": 54,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "David Wurmer",
+   "new": "Onal Naume[?]",
+   "note": "ime POPRAVEK David Wurmer -> Onal Naume[?] (re-sidrano); haus ✓ 17"
+  },
+  {
+   "index": 1054,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Onal Naume[?]\", v114 \"David Wurmer\" popravljen]"
+  },
+  {
+   "index": 1054,
+   "page": 54,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "716",
+   "new": "908",
+   "note": "REBUILD: kl POPRAVEK 716 -> 908 (716 = fantom, brez glyfne podlage)"
+  },
+  {
+   "index": 1055,
+   "page": 54,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Karl Wurmer",
+   "new": "Onal Maido[?]",
+   "note": "ime POPRAVEK Karl Wurmer -> Onal Maido[?] (re-sidrano); haus POPRAVEK 17 -> 15"
+  },
+  {
+   "index": 1055,
+   "page": 54,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "17",
+   "new": "15",
+   "note": "ime POPRAVEK Karl Wurmer -> Onal Maido[?] (re-sidrano); haus POPRAVEK 17 -> 15"
+  },
+  {
+   "index": 1055,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Onal Maido[?]\", v114 \"Karl Wurmer\" popravljen]"
+  },
+  {
+   "index": 1055,
+   "page": 54,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "425",
+   "new": "283",
+   "note": "REBUILD: kl POPRAVEK 425 -> 283 (425 = fantom; 283 = P1040 zamik v r20); capital 1265 = C.fl (v114 ckr=1263: kolona + cifra)"
+  },
+  {
+   "index": 1055,
+   "page": 54,
+   "row_in_page": 19,
+   "type": "v119_value_fix",
+   "field": "capital_fl",
+   "old": "",
+   "new": "1265",
+   "note": "REBUILD: kl POPRAVEK 425 -> 283 (425 = fantom; 283 = P1040 zamik v r20); capital 1265 = C.fl (v114 ckr=1263: kolona + cifra)"
+  },
+  {
+   "index": 1056,
+   "page": 54,
+   "row_in_page": 20,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "283",
+   "new": "",
+   "note": "FÜRTRAG REBUILD: kl 283 + cfl 1263 pociscena (P1040 zamik); jae/kl ostanejo prazne (črnilo 8|1165 prečrtano, rdeče 7|943) — dokumentirano v anmerkung"
+  },
+  {
+   "index": 1056,
+   "page": 54,
+   "row_in_page": 20,
+   "type": "v119_value_clear",
+   "field": "capital_fl",
+   "old": "1263",
+   "new": "",
+   "note": "pocisceno ('1263' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1056,
+   "page": 54,
+   "row_in_page": 20,
+   "type": "v119_e_fuertrag_clear",
+   "field": "owner_original",
+   "old": "Karl Mioß",
+   "new": "",
+   "note": "F-FÜRTRAG p54 (F-NA-03 rebuild)"
+  },
+  {
+   "index": 1056,
+   "page": 54,
+   "row_in_page": 20,
+   "type": "v119_e_fuertrag_clear",
+   "field": "haus_no",
+   "old": "15",
+   "new": "",
+   "note": "F-FÜRTRAG p54 (F-NA-03 rebuild)"
+  },
+  {
+   "index": 1056,
+   "page": 54,
+   "type": "anmerkung_add",
+   "text": "[v119 e F-FÜRTRAG (F-NA-03): pozicijsko = Fürtrag pas — črnilo jae 8 + klafter 1165 prečrtano, rdeče popravek 7|943; v114 \"Karl Mioß\" h15 + 283|1263 = zamaknjena plast P1040 (re-sidrana na r19), snimljeno]"
+  },
+  {
+   "page": 54,
+   "type": "page_observations_v119",
+   "text": "vrednosti r0-r13 1:1 ✓; rep rebuild: r14 1|996, r15 113, r16 969, r17 74, r18 908, r19 283+cfl 1265, r20 Fürtrag pociscen; ertrag 5-843@r13 (v114 r14 razprseno efl 5/ekr -/cfl 843); ertrag 10-66@r4 (v114 ekr 10 + cfl 6 + ckr 6 razprseno); 1021/1022 preklicani"
+  },
+  {
+   "index": 1057,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Omal Humen[?]', v114 'Andreas Krumpe' ohranjeno]"
+  },
+  {
+   "index": 1057,
+   "page": 55,
+   "row_in_page": 0,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "29",
+   "new": "39",
+   "note": "kl POPRAVEK 29 -> 39 (zzv jasno)"
+  },
+  {
+   "index": 1058,
+   "page": 55,
+   "row_in_page": 1,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Andreas Krumpe",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Andreas Krumpe -> Stallpschibek Nikolaus[?]; haus ✓ 13"
+  },
+  {
+   "index": 1058,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Andreas Krumpe\" popravljen]"
+  },
+  {
+   "index": 1059,
+   "page": 55,
+   "row_in_page": 2,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Andreas Krumpe",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Andreas Krumpe -> Stallpschibek Nikolaus[?]; haus ✓ 13"
+  },
+  {
+   "index": 1059,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Andreas Krumpe\" popravljen]"
+  },
+  {
+   "index": 1059,
+   "page": 55,
+   "row_in_page": 2,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "870",
+   "new": "517",
+   "note": "kl POPRAVEK 870 -> 517 (zzv: 5-1-7)"
+  },
+  {
+   "index": 1060,
+   "page": 55,
+   "row_in_page": 3,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Andreas Krumpe",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Andreas Krumpe -> Stallpschibek Nikolaus[?]; haus ✓ 13"
+  },
+  {
+   "index": 1060,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Andreas Krumpe\" popravljen]"
+  },
+  {
+   "index": 1061,
+   "page": 55,
+   "row_in_page": 4,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Andreas Krumpe",
+   "new": "Stallpschibek Nikolaus[?]",
+   "note": "ime POPRAVEK Andreas Krumpe -> Stallpschibek Nikolaus[?] (preklicana 1045 + rdeca margin-opomba); haus ✓ 13"
+  },
+  {
+   "index": 1061,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Stallpschibek Nikolaus[?]\", v114 \"Andreas Krumpe\" popravljen]"
+  },
+  {
+   "index": 1061,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1061,
+   "page": 55,
+   "row_in_page": 4,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "769",
+   "new": "164",
+   "note": "kl POPRAVEK 769 -> 164 (preklicana; dvom 164/764); ertrag 1|00 pociscen (fantom)"
+  },
+  {
+   "index": 1061,
+   "page": 55,
+   "row_in_page": 4,
+   "type": "v119_value_clear",
+   "field": "ertrag_fl",
+   "old": "1",
+   "new": "",
+   "note": "pocisceno ('1' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1061,
+   "page": 55,
+   "row_in_page": 4,
+   "type": "v119_value_clear",
+   "field": "ertrag_kr",
+   "old": "00",
+   "new": "",
+   "note": "pocisceno ('00' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1062,
+   "page": 55,
+   "row_in_page": 5,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Mahle",
+   "new": "Heide Marko",
+   "note": "ime POPRAVEK Heinrich Mahle -> Heide Marko (cross-val del 2d: Heide Marko h3 x5!; preklicana 1046); haus POPRAVEK 9 -> 3"
+  },
+  {
+   "index": 1062,
+   "page": 55,
+   "row_in_page": 5,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "9",
+   "new": "3",
+   "note": "ime POPRAVEK Heinrich Mahle -> Heide Marko (cross-val del 2d: Heide Marko h3 x5!; preklicana 1046); haus POPRAVEK 9 -> 3"
+  },
+  {
+   "index": 1062,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1062,
+   "page": 55,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1",
+   "note": "kl ✓ (preklicana); ertrag NOVO ~1-600 (dvom 1-1600)"
+  },
+  {
+   "index": 1062,
+   "page": 55,
+   "row_in_page": 5,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "600",
+   "note": "kl ✓ (preklicana); ertrag NOVO ~1-600 (dvom 1-1600)"
+  },
+  {
+   "index": 1063,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1063,
+   "page": 55,
+   "row_in_page": 6,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "739",
+   "new": "139",
+   "note": "kl POPRAVEK 739 -> 139 (preklicana; zzv)"
+  },
+  {
+   "index": 1064,
+   "page": 55,
+   "row_in_page": 7,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Mahle",
+   "new": "Heide Marko",
+   "note": "ime POPRAVEK Heinrich Mahle -> Heide Marko (cross-val h3); haus ✓ 3"
+  },
+  {
+   "index": 1064,
+   "page": 55,
+   "row_in_page": 7,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "2",
+   "new": "",
+   "note": "kl ✓; ertrag ~'—239' (fl-del prazen/črtica; v114 efl 2 = iz '239') -> ekr 239, efl pociscen (dvom)"
+  },
+  {
+   "index": 1064,
+   "page": 55,
+   "row_in_page": 7,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "239",
+   "note": "kl ✓; ertrag ~'—239' (fl-del prazen/črtica; v114 efl 2 = iz '239') -> ekr 239, efl pociscen (dvom)"
+  },
+  {
+   "index": 1065,
+   "page": 55,
+   "row_in_page": 8,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "De Leur that Bapst",
+   "new": "Deleschibek Malga[?]",
+   "note": "ime POPRAVEK De Leur that Bapst -> Deleschibek Malga[?] (dvom; ~del 2d 'Deleshitzkh'); haus ✓ 10"
+  },
+  {
+   "index": 1065,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Deleschibek Malga[?]\", v114 \"De Leur that Bapst\" popravljen]"
+  },
+  {
+   "index": 1066,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Luttenitsch Malga[?]', v114 'Lorentzthal Mergl' ohranjeno]"
+  },
+  {
+   "index": 1066,
+   "page": 55,
+   "row_in_page": 9,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "765",
+   "new": "763",
+   "note": "kl POPRAVEK 765 -> 763 (dvom 3/5); capital 1|463 = ertrag 1-463 @r10 zamik -> cfl/ckr pociscena"
+  },
+  {
+   "index": 1066,
+   "page": 55,
+   "row_in_page": 9,
+   "type": "v119_value_clear",
+   "field": "capital_fl",
+   "old": "1",
+   "new": "",
+   "note": "pocisceno ('1' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1066,
+   "page": 55,
+   "row_in_page": 9,
+   "type": "v119_value_clear",
+   "field": "capital_kr",
+   "old": "463",
+   "new": "",
+   "note": "pocisceno ('463' = brez glyfne podlage / zamaknjena plast)"
+  },
+  {
+   "index": 1067,
+   "page": 55,
+   "row_in_page": 10,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Mahle",
+   "new": "Heide Marko",
+   "note": "ime POPRAVEK Heinrich Mahle -> Heide Marko (cross-val; preklicana 1051); haus POPRAVEK 2 -> 3"
+  },
+  {
+   "index": 1067,
+   "page": 55,
+   "row_in_page": 10,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "2",
+   "new": "3",
+   "note": "ime POPRAVEK Heinrich Mahle -> Heide Marko (cross-val; preklicana 1051); haus POPRAVEK 2 -> 3"
+  },
+  {
+   "index": 1067,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "index": 1067,
+   "page": 55,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "231",
+   "new": "831",
+   "note": "kl POPRAVEK 231 -> 831 (preklicana; zzv); ertrag NOVO 1-463"
+  },
+  {
+   "index": 1067,
+   "page": 55,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "ertrag_fl",
+   "old": "",
+   "new": "1",
+   "note": "kl POPRAVEK 231 -> 831 (preklicana; zzv); ertrag NOVO 1-463"
+  },
+  {
+   "index": 1067,
+   "page": 55,
+   "row_in_page": 10,
+   "type": "v119_value_fix",
+   "field": "ertrag_kr",
+   "old": "",
+   "new": "463",
+   "note": "kl POPRAVEK 231 -> 831 (preklicana; zzv); ertrag NOVO 1-463"
+  },
+  {
+   "index": 1069,
+   "page": 55,
+   "row_in_page": 12,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Mahle",
+   "new": "Heide Marko",
+   "note": "ime POPRAVEK Heinrich Mahle -> Heide Marko (cross-val); haus POPRAVEK 0 -> 3"
+  },
+  {
+   "index": 1069,
+   "page": 55,
+   "row_in_page": 12,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "0",
+   "new": "3",
+   "note": "ime POPRAVEK Heinrich Mahle -> Heide Marko (cross-val); haus POPRAVEK 0 -> 3"
+  },
+  {
+   "index": 1069,
+   "page": 55,
+   "row_in_page": 12,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "102",
+   "new": "703",
+   "note": "kl POPRAVEK 102 -> 703 (zzv)"
+  },
+  {
+   "index": 1070,
+   "page": 55,
+   "row_in_page": 13,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "De Leur that Bapst",
+   "new": "Deleschibek Malga[?]",
+   "note": "ime POPRAVEK De Leur that Bapst -> Deleschibek Malga[?] (dvom); haus ✓ 1"
+  },
+  {
+   "index": 1070,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Deleschibek Malga[?]\", v114 \"De Leur that Bapst\" popravljen]"
+  },
+  {
+   "index": 1071,
+   "page": 55,
+   "row_in_page": 14,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Leuring Jurey",
+   "new": "Pessing Georg",
+   "note": "ime POPRAVEK Leuring Jurey -> Pessing Georg (cross-val p50/p52!); haus ✓ 11"
+  },
+  {
+   "index": 1071,
+   "page": 55,
+   "row_in_page": 14,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "769",
+   "new": "961",
+   "note": "kl POPRAVEK 769 -> 961 (zzv)"
+  },
+  {
+   "index": 1072,
+   "page": 55,
+   "row_in_page": 15,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Heinrich Mergl",
+   "new": "Kranvel Michael[?]",
+   "note": "ime POPRAVEK Heinrich Mergl -> Kranvel Michael[?] (cross-val p50 951!); haus ✓ 10"
+  },
+  {
+   "index": 1072,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Kranvel Michael[?]\", v114 \"Heinrich Mergl\" popravljen]"
+  },
+  {
+   "index": 1073,
+   "page": 55,
+   "row_in_page": 16,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Leuring Mergl",
+   "new": "Pessing Malga[?]",
+   "note": "ime POPRAVEK Leuring Mergl -> Pessing Malga[?] (cross-val ~p52 981); haus ✓ 50"
+  },
+  {
+   "index": 1073,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Pessing Malga[?]\", v114 \"Leuring Mergl\" popravljen]"
+  },
+  {
+   "index": 1074,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e imenski pass: razhajanje odprto: črnilo ~'Urich Pabbo[?]' (~Ulrich Pottra p54?), v114 'Heinrich Palle' ohranjeno]"
+  },
+  {
+   "index": 1075,
+   "page": 55,
+   "row_in_page": 18,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Juran e",
+   "new": "Gemeinde",
+   "note": "ime POPRAVEK Juran e -> Gemeinde; haus ostane prazen"
+  },
+  {
+   "index": 1075,
+   "page": 55,
+   "row_in_page": 18,
+   "type": "v119_value_fix",
+   "field": "klafter",
+   "old": "18",
+   "new": "48",
+   "note": "kl POPRAVEK 18 -> 48 (zzv)"
+  },
+  {
+   "index": 1076,
+   "page": 55,
+   "row_in_page": 19,
+   "type": "v119_owner_fix",
+   "field": "owner_original",
+   "old": "Ihanz Jurey",
+   "new": "Schiney Johan[?]",
+   "note": "ime POPRAVEK Ihanz Jurey -> Schiney Johan[?] (cross-val p51 976 h55!; preklicana 1060); haus POPRAVEK 85 -> 55"
+  },
+  {
+   "index": 1076,
+   "page": 55,
+   "row_in_page": 19,
+   "type": "v119_haus_fix",
+   "field": "haus_no",
+   "old": "85",
+   "new": "55",
+   "note": "ime POPRAVEK Ihanz Jurey -> Schiney Johan[?] (cross-val p51 976 h55!; preklicana 1060); haus POPRAVEK 85 -> 55"
+  },
+  {
+   "index": 1076,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: ime dvom — črnilo ~\"Schiney Johan[?]\", v114 \"Ihanz Jurey\" popravljen]"
+  },
+  {
+   "index": 1076,
+   "page": 55,
+   "type": "anmerkung_add",
+   "text": "[v119 e: parzella preklicana (rdeč prečrt v črnilu)"
+  },
+  {
+   "page": 55,
+   "type": "page_observations_v119",
+   "text": "popravki: r0 29->39, r2 870->517, r6 739->139 (preklicana), r9 765->763, r10 231->831 (preklicana), r12 102->703, r14 769->961, r18 18->48; ertrag 1-600@r5 (dvom 1-1600), '—239'@r7 (dvom), 1-463@r10 (v114 je dal r9 capital 1|463); 1045/1046/1047/1051/1060 preklicani"
+  }
+ ]
+}

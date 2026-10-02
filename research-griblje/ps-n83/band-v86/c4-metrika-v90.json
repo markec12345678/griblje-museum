@@ -4,7 +4,7 @@
   "generated_by": "build-c4-metrika-v90.py",
   "method": "C4 metrika: izčrpna deterministična preverba konvencij na sidrih val 61 (K1–K6) + reprodukcija C4 val 86b (K7) + usklajenost vnosov (K8) + konfunda F-PV-05 (K9) + opazovalni register (K10); NIČ VLM, NIČ spleta; NIČ sprememb podatkov (§4/§22)",
   "inputs": {
-   "register.json": "8be2735f1a3a2296fec6aac9e8328d4418b8fba06f079e2e60a42c7e55a9768d",
+   "register.json": "fb439f80ce1591abea330d6d74e30a6dc814bc81bb5799aa38f0c9ee6786c699",
    "totals-reread.json": "5866a457d2cd102267bcf37f3cf8b87d19fcb58aa5aa2f035f41f9b828fe31aa",
    "f11-fuertrag-v86.json": "af3375298e2ea41fa65992f3d125812a7fa5bfaf56f4ec8b1ff85ec3357dc702"
   },
@@ -20,7 +20,7 @@
    "K8_anchor_equals_chain": 12,
    "K8_anchor_equals_red": 1
   },
-  "K5_input_reliability": "NEZANESLJIV VHOD — owner_was_ditto označen samo na 207/2875 vrstic (7.2 %), bloki = 2608 (povprečno 1.1 vrstic/blok); holdingi (Jaethe) iz trenutnega registra NE rekonstruirani → K5 je NEDEDOKAZLJIVO z obstoječimi podatki, ne ovraženo; odločilno šele po imenskem re-readu (kvota)",
+  "K5_input_reliability": "NEZANESLJIV VHOD — owner_was_ditto označen samo na 207/2875 vrstic (7.2 %), bloki = 2607 (povprečno 1.1 vrstic/blok); holdingi (Jaethe) iz trenutnega registra NE rekonstruirani → K5 je NEDEDOKAZLJIVO z obstoječimi podatki, ne ovraženo; odločilno šele po imenskem re-readu (kvota)",
   "verdict": "KONVENCIJA \"vsota tekoče strani\" (val 61 §2.2 confirmed) ARITMETIČNO NEPOTRJENA — ne ustreza na nobenem od 13 sidrih; metrika ostaja TO-DECODE; odločilna kontrola = re-read p1–55 stolpcev (F-PV-05) po 86b 2. delu"
  },
  "konvencije_sidra": [
@@ -367,9 +367,9 @@
    "crossed": true,
    "red_line": "7|943",
    "rows": 21,
-   "K1_page_sum_excl": 10254,
+   "K1_page_sum_excl": 10064,
    "K1_match": false,
-   "K2_page_sum_incl": 10254,
+   "K2_page_sum_incl": 10064,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -379,11 +379,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 12143,
-    "page_sum_excl": 10254,
-    "page_sum_incl": 10254,
+    "page_sum_excl": 10064,
+    "page_sum_incl": 10064,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": -1889
+    "diff_excl": -2079
    },
    "K6_match": false,
    "agent_notes": "števec 52 ✓; vrednost 8|1165 ✓; rdeča 7|943 (VLM '7 9948' — staknjeno)"
@@ -544,17 +544,17 @@
  ],
  "K9_konfunda_F-PV-05": {
   "p1_55_val57": {
-   "both_filled": 48,
-   "jaethe_empty": 965,
+   "both_filled": 52,
+   "jaethe_empty": 961,
    "jaethe_gt1599_plain": 1,
    "jaethe_plain_100_1599": 53,
    "jaethe_plain_gt1599": 1,
-   "jaethe_plain_le99": 58,
-   "klafter_empty": 87,
+   "jaethe_plain_le99": 62,
+   "klafter_empty": 85,
    "klafter_gt1599_plain": 14,
    "klafter_plain_100_1599": 799,
    "klafter_plain_gt1599": 14,
-   "klafter_plain_le99": 177
+   "klafter_plain_le99": 179
   },
   "p56_143_v82_plus_sloji": {
    "any_jk_format": 6,
