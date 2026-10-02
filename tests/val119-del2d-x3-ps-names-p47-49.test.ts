@@ -247,7 +247,7 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
         inputs: Record<string, string>;
         K5_input_reliability: string;
       };
-    } & Record<string, Record<string, { p1_55_val57: Record<string, number> }>>;
+    };
     expect(c4.meta.inputs["register.json"]).toBe(
       createHash("sha256")
         .update(readFileSync(join(REPO, "research-griblje/ps-n83/register.json")))
@@ -255,10 +255,10 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
     );
     expect(c4.meta.K5_input_reliability).toContain("207/2875");
     expect(c4.meta.K5_input_reliability).toContain("bloki = 2608");
-    const k9key = Object.keys(c4).find((k) => k.startsWith("K9"));
+    const loose = c4 as unknown as Record<string, Record<string, Record<string, number>>>;
+    const k9key = Object.keys(loose).find((k) => k.startsWith("K9"));
     expect(k9key).toBeDefined();
-    const p1 = (c4 as Record<string, Record<string, Record<string, number>>>)[k9key!]
-      .p1_55_val57;
+    const p1 = loose[k9key!].p1_55_val57;
     expect(p1["jaethe_plain_100_1599"]).toBe(53);
     expect(p1["jaethe_plain_gt1599"]).toBe(1); // p48 1904 = misread opuščenega poskusa 1534
     expect(p1["jaethe_empty"]).toBe(965);
