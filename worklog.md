@@ -5013,3 +5013,21 @@ Stage Summary:
 - Val 121 VGRADJEN: vrednostna plast PS = največji posamezni popravek od val 113 (89 kl + 6 jae); F-OCI-05 ZAPRT (protokol 144); NR-14 ostaja za imena (črkovalnica)
 - KG vsebinsko identična (b3e9797e); TRANSCRIBED=0; register sha fb439f80 → novi (vgradnja)
 - Naslednje: hiša 70–78 (PROVISIONAL h72/74/76) → p3–p16 vrednostni sweep (nizka prioriteta) → register 26-0326/26-0379 ob javnih poročilih → črkovalna sodba imen (NR-14)
+
+---
+Task ID: 121-cascade
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 121 publikacijska kaskada (PR #132)
+
+Work Log:
+- PUSH (token) fd5d65b → PR #132 ustvarjen (naslov + opis: F-OCI-05 zaprtje, 91 popravkov, 26 NOVA, metoda, kaskada, §4)
+- CI 1. tek: FAILURE — "Enotni testi": val121 test hardkodiran ROOT ("/home/z/griblje-museum") → ENOENT register.json @ /home/runner/… (CI checkout pot); popravek e131b53: relativne poti kot v ostalih testih
+- CI 2. tek: 3/3 ZELENO (tipi + lint + enotni testi ✓; dimni testi API-jev ✓; Vercel Preview ✓)
+- MERGE @ cfa453a3 (merge commit) → remote veja izbrisana (204) → lokalna izbrisana → main sinhroniziran; delovno drevo čisto
+- crops/ (1 GB PNG) iz .gitignore — regenerabilni iz raw strani; val121-valbands/README.md dokumentira regeneracijo
+
+Stage Summary:
+- Val 121 MERGAN; main @ cfa453a3; PR #132; CI 3/3 zeleno (1 popravek testa: hardkodirana pot)
+- Vrednostna plast PS: 89 kl + 6 jae popravkov + 5 potrditev + 4 ohranitve; F-OCI-05 ZAPRT (protokol 144); 26 NOVA napak
+- K9 p1–55: 56/959/84; KG b3e9797e (vsebinsko identična); TRANSCRIBED=0
+- Naslednje: hiša 70–78 (PROVISIONAL h72/74/76) → p3–p16 vrednostni sweep (nizka prioriteta) → register 26-0326/26-0379 ob javnih poročilih → črkovalna sodba imen (NR-14)
