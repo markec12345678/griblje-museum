@@ -1,0 +1,4403 @@
+{
+ "val": "126",
+ "date": "2026-10-09",
+ "issue": "#42 §4/§14",
+ "title": "ANALYSIS v8 — NR-14 sodba + pass2 re-run na v125 stanju (F-V125-01 zaprt)",
+ "inputs": [
+  "ps-n83/register.json (2.876 vrstic; sinhronizacija uporablja samo p3–p55 = 1.078)",
+  "pua-n83/register.json (98 vpisov, val 51+57)",
+  "atlas-1825/analysis-v1.json (val 58 A_pua_vs_ps = primerjalna baza)",
+  "ps-n83/analysis-v7.json (val 119-del3 razredi = kontinuitetni stolpec class_v119)",
+  "atlas-1825/nr14-variant-map-1825.json (NR-14 sodba, val 126)",
+  "atlas-1825/person-owner-register-1825.json / house-register-1825.json / conflict-register-1825.json (val 119-del3 pre-state)"
+ ],
+ "method": {
+  "sim_concat": "1:1 replika val 58 token_sim (F-SYNC-01: LCS nad zlepljenim nizom) — kontinuiteta",
+  "sim_surname": "metoda B, NESPREMENJENA od val 119 del 3 (prvi token PS = priimek; max LCS; exact-token flag)",
+  "sim_any": "max LCS nad vsemi token pari (dokumentacija, ne vodi razreda)",
+  "pragovi": "AGREE ≥0.7; PARTIAL ≥0.5 IN exact token; sicer MISMATCH",
+  "nr14": "token-točne zamenjave po nr14-variant-map-1825.json (V1–V5; V6 = NFKD ſ→s avtomatika) → normalized_nr14; flag-only, NOT_MERGED",
+  "no_guessing": "nobeno ime ni združeno; vsa nesoglasja ostajajo v CH konfliktih",
+  "scope": "PS p3–p55 (val 119/123/125 kakovostna plast); p56–143 PROVISIONAL izključeno (F-SYNC-04)"
+ },
+ "A_pua_vs_ps_v126": {
+  "houses": 51,
+  "class_v58": {
+   "MISMATCH": 49,
+   "FUZZY": 2
+  },
+  "class_v119": {
+   "MISMATCH": 33,
+   "AGREE": 16,
+   "PARTIAL": 2
+  },
+  "class_v126": {
+   "MISMATCH": 33,
+   "AGREE": 16,
+   "PARTIAL": 2
+  },
+  "agree_houses": [
+   5,
+   18,
+   26,
+   27,
+   29,
+   30,
+   36,
+   37,
+   41,
+   42,
+   44,
+   51,
+   61,
+   62,
+   64,
+   69
+  ],
+  "partial_houses": [
+   43,
+   66
+  ],
+  "improved_vs_v58": 16,
+  "changed_vs_v119_houses": [],
+  "rows": [
+   {
+    "house": 0,
+    "pua_owner": "Commenda Fischerwies",
+    "pua_entries": 1,
+    "ps_first": "Gemeinde",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Gemeinde",
+      "pages": [
+       3,
+       4,
+       12,
+       41,
+       51
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Baron Gustitsch.[?]",
+      "pages": [
+       41
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Gemeinde.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 2
+     }
+    ],
+    "n_distinct": 3,
+    "sim_concat_first": 0.37,
+    "sim_concat_best": 0.37,
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Gemeinde",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.37,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     3,
+     4,
+     12,
+     41,
+     47,
+     48,
+     51
+    ]
+   },
+   {
+    "house": 1,
+    "pua_owner": "Mellachitsch Waise Leopold von / Ungaritsch gewesene Mellachitsch.",
+    "pua_entries": 4,
+    "ps_first": "Barbara Muster",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Barbara Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Wier Grunigman",
+      "pages": [
+       35
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleshitzkh Außin.[?]",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleshitzkh Marßfid.[?]",
+      "pages": [
+       45,
+       48
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Schimitlbeck Matthe.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimibek Matthe.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimitbek Matthe.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimilbeck Matthe.[?]",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimelbeck Matthe.[?]",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimilbeck Swan.[?]",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dragasch Jure.",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleschibek Malga[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 12,
+    "sim_concat_first": 0.143,
+    "sim_concat_best": 0.324,
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Wier Grunigman",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.143,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     11,
+     35,
+     45,
+     47,
+     48,
+     55
+    ]
+   },
+   {
+    "house": 2,
+    "pua_owner": "Hiebetz Johann Bauersleute / zu Grübln",
+    "pua_entries": 2,
+    "ps_first": "Krischan Matthe.",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Krischan Matthe.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Stabelz Soan.[?]",
+      "pages": [
+       47
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Stabelz Swan.[?]",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 5
+     }
+    ],
+    "n_distinct": 3,
+    "sim_concat_first": 0.304,
+    "sim_concat_best": 0.326,
+    "sim_surname": 0.429,
+    "sim_any": 0.6,
+    "best_ps_name": "Stabelz Soan.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.326,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     47,
+     48
+    ]
+   },
+   {
+    "house": 3,
+    "pua_owner": "Draschisch Jörgen Lorenz / und Begusche / Gänßlin in Adelsberg",
+    "pua_entries": 4,
+    "ps_first": "Dragasch Jure.",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Dragasch Jure.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Heide Marko.",
+      "pages": [
+       45,
+       48,
+       49
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Olschewski Mathäus",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Matthe.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 9
+     },
+     {
+      "name": "Weidner Mathä.",
+      "pages": [
+       48
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Weinchan Matthe[?]",
+      "pages": [
+       50
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Krischan Wortga[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Heide Marko",
+      "pages": [
+       55
+      ],
+      "rows": 4
+     }
+    ],
+    "n_distinct": 8,
+    "sim_concat_first": 0.29,
+    "sim_concat_best": 0.312,
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Dragasch Jure.",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.381,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     45,
+     47,
+     48,
+     49,
+     50,
+     54,
+     55
+    ]
+   },
+   {
+    "house": 4,
+    "pua_owner": "Dragosch, Maria, bauerin, zu Dragosch / gemindt. Holzschildk.",
+    "pua_entries": 2,
+    "ps_first": "Novak Mihelc",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Novak Mihelc",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novach Martinl[?]",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lubreschiby Maathe.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.237,
+    "sim_concat_best": 0.308,
+    "sim_surname": 0.455,
+    "sim_any": 0.545,
+    "best_ps_name": "Lubreschiby Maathe.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.237,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     14,
+     28,
+     45,
+     49
+    ]
+   },
+   {
+    "house": 5,
+    "pua_owner": "Dragosch, georg, bauer, zu Dragosch / gemindt. Holzschildk.",
+    "pua_entries": 2,
+    "ps_first": "Haischan[?] Mathä",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Haischan[?] Mathä",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leopold Gell",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleshitzkh Marßfid.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kourtzly Marolin.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin.",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin. [RED prečrtan] + 'Gmatze dne.[?]'",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martlin. [delno prečrtan] + 'Smatze dne.[?]'",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dragasch Jure",
+      "pages": [
+       55
+      ],
+      "rows": 2
+     }
+    ],
+    "n_distinct": 8,
+    "sim_concat_first": 0.271,
+    "sim_concat_best": 0.349,
+    "sim_surname": 0.875,
+    "sim_any": 0.875,
+    "best_ps_name": "Dragasch Jure",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.333,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     27,
+     49,
+     55
+    ]
+   },
+   {
+    "house": 6,
+    "pua_owner": "Husitsch Barbara des Grädlers / Ehefrau",
+    "pua_entries": 5,
+    "ps_first": "Lorbltcher Hauffl",
+    "ps_stand": "Bauer",
+    "ps_distinct": [
+     {
+      "name": "Lorbltcher Hauffl",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stoffel Michael",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Baron Helfenburg",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tallapeschibek Dras.[?]",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leutnerl Eva",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ottopoldt Georg",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stefflpeckh Georg",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tallafschily Swan.[?]",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Tallafschily Jne.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tallafschibyet Jne.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stallpschübek Jne[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martin",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Gemeinde",
+      "pages": [
+       53
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 13,
+    "sim_concat_first": 0.327,
+    "sim_concat_best": 0.353,
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Baron Helfenburg",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.327,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     4,
+     5,
+     6,
+     45,
+     47,
+     48,
+     49,
+     50,
+     53
+    ]
+   },
+   {
+    "house": 7,
+    "pua_owner": "Sankovitsch Walf.",
+    "pua_entries": 4,
+    "ps_first": "Leibniz Mathäus",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Leibniz Mathäus",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "L. Dintar Matej",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deuwaldich Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lauhaldich Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Zellhamisch Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lubreschibek Maathe.[?]",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 6,
+    "sim_concat_first": 0.345,
+    "sim_concat_best": 0.452,
+    "sim_surname": 0.455,
+    "sim_any": 0.455,
+    "best_ps_name": "Zellhamisch Mathl.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.345,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     5,
+     14,
+     33,
+     45
+    ]
+   },
+   {
+    "house": 8,
+    "pua_owner": "Maurerisch Johann Bäckersleute / zu Waidhofen",
+    "pua_entries": 2,
+    "ps_first": "Gemeinde",
+    "ps_stand": "bauer",
+    "ps_distinct": [
+     {
+      "name": "Gemeinde",
+      "pages": [
+       6
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Jakobschitsch Mathä[?]",
+      "pages": [
+       28
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Schaffschick Mathä.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Dragasch Jure.",
+      "pages": [
+       45,
+       49
+      ],
+      "rows": 3
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.255,
+    "sim_concat_best": 0.286,
+    "sim_surname": 0.444,
+    "sim_any": 0.444,
+    "best_ps_name": "Dragasch Jure.",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.255,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     6,
+     28,
+     43,
+     45,
+     49
+    ]
+   },
+   {
+    "house": 9,
+    "pua_owner": "Jakoffitschek / Hans Bauer hiesig",
+    "pua_entries": 1,
+    "ps_first": "Jakobschitsch Mathä[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Jakobschitsch Mathä[?]",
+      "pages": [
+       28
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Gummersbach",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 2,
+    "sim_concat_first": 0.478,
+    "sim_concat_best": 0.478,
+    "sim_surname": 0.692,
+    "sim_any": 0.692,
+    "best_ps_name": "Jakobschitsch Mathä[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.273,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     28,
+     45
+    ]
+   },
+   {
+    "house": 10,
+    "pua_owner": "Jakoffitschek / Maria Bauerin hiesig",
+    "pua_entries": 2,
+    "ps_first": "Stefflpeckh Agath. Wilh.",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Stefflpeckh Agath. Wilh.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Michael.",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hunure Mathl.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hunure Melli.[?]",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pessing Georg",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kranz Michael",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Novak Martin",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deleschibek Malga[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kranvel Michael[?]",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 9,
+    "sim_concat_first": 0.314,
+    "sim_concat_best": 0.34,
+    "sim_surname": 0.615,
+    "sim_any": 0.615,
+    "best_ps_name": "Pessing Georg",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.238,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     45,
+     49,
+     50,
+     55
+    ]
+   },
+   {
+    "house": 11,
+    "pua_owner": "Peter P[?] Häuslbesitzer zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Pölling Georg",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Pölling Georg",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peodvin Grany.",
+      "pages": [
+       45,
+       49
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Pessing Georg",
+      "pages": [
+       50,
+       55
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Kranvel Michael[?]",
+      "pages": [
+       50
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.308,
+    "sim_concat_best": 0.41,
+    "sim_surname": 0.333,
+    "sim_any": 0.545,
+    "best_ps_name": "Peodvin Grany.",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.308,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     6,
+     45,
+     49,
+     50,
+     55
+    ]
+   },
+   {
+    "house": 12,
+    "pua_owner": "Liechtensth. Murgi",
+    "pua_entries": 1,
+    "ps_first": "Lubreschibek Maathe.[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Lubreschibek Maathe.[?]",
+      "pages": [
+       45,
+       48
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Lubreschitskh Maathe.",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lubreschitskh Matthe.",
+      "pages": [
+       49
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lorentzthal Mergl",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.412,
+    "sim_concat_best": 0.5,
+    "sim_surname": 0.583,
+    "sim_any": 0.583,
+    "best_ps_name": "Lubreschitskh Maathe.",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.25,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     45,
+     48,
+     49,
+     55
+    ]
+   },
+   {
+    "house": 16,
+    "pua_owner": "Michael Leidner zu Grübln",
+    "pua_entries": 2,
+    "ps_first": "Pedian Matrlh[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Pedian Matrlh[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Feldt Mäda",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimatz Mathes",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Morath Maurize",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brusnigg Georg",
+      "pages": [
+       9
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Poldi Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poldy Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Eidlald Pirkh",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schmiedt Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimetz Michel.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Karl Mioß",
+      "pages": [
+       54
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Poiding Wolfgo",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poiding Maja",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Onal Maido[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Onal Naume[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 15,
+    "sim_concat_first": 0.294,
+    "sim_concat_best": 0.343,
+    "sim_surname": 0.462,
+    "sim_any": 0.462,
+    "best_ps_name": "Pedian Matrlh[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.303,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     4,
+     5,
+     9,
+     23,
+     43,
+     54
+    ]
+   },
+   {
+    "house": 17,
+    "pua_owner": "Lorenz Leidner zu Grübln",
+    "pua_entries": 2,
+    "ps_first": "Eidlald Wurfl",
+    "ps_stand": "1832",
+    "ps_distinct": [
+     {
+      "name": "Eidlald Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Johann Wurmer",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "David Wurmer",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Karl Wurmer",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Onal Naume[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Andreas Krumpe",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 6,
+    "sim_concat_first": 0.364,
+    "sim_concat_best": 0.364,
+    "sim_surname": 0.429,
+    "sim_any": 0.429,
+    "best_ps_name": "Eidlald Wurfl",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.364,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     9,
+     54,
+     55
+    ]
+   },
+   {
+    "house": 18,
+    "pua_owner": "Schim von Pater Bardeleßky / [nečitljivo]",
+    "pua_entries": 1,
+    "ps_first": "Schimay Jeklr[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Schimay Jeklr[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Breugl Georg",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hrabotar Georg",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hrabotlar Georg",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Michel.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 5,
+    "sim_concat_first": 0.409,
+    "sim_concat_best": 0.409,
+    "sim_surname": 0.833,
+    "sim_any": 0.833,
+    "best_ps_name": "Schimay Jeklr[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.279,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     4,
+     5,
+     8,
+     34
+    ]
+   },
+   {
+    "house": 19,
+    "pua_owner": "Schim von Wirth Bardeleßky",
+    "pua_entries": 1,
+    "ps_first": "Thomas Malfg",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Thomas Malfg",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pessing Georg",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 2,
+    "sim_concat_first": 0.242,
+    "sim_concat_best": 0.242,
+    "sim_surname": 0.364,
+    "sim_any": 0.364,
+    "best_ps_name": "Thomas Malfg",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.242,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     21,
+     54
+    ]
+   },
+   {
+    "house": 20,
+    "pua_owner": "Johann Michael Rieger, Besitzer zu Grübln",
+    "pua_entries": 2,
+    "ps_first": "Dekleva Matija",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Dekleva Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Deuwaldich Mathl.[?]",
+      "pages": [
+       33,
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Mathä.[?]",
+      "pages": [
+       36
+      ],
+      "rows": 1
+     },
+     {
+      "name": "St. Veith",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.167,
+    "sim_concat_best": 0.28,
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Mathä.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.255,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     14,
+     33,
+     35,
+     36,
+     54
+    ]
+   },
+   {
+    "house": 21,
+    "pua_owner": "Sankowitsch Joseph",
+    "pua_entries": 2,
+    "ps_first": "Urich Peter",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Urich Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Gemeinde",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 2,
+    "sim_concat_first": 0.296,
+    "sim_concat_best": 0.296,
+    "sim_surname": 0.375,
+    "sim_any": 0.375,
+    "best_ps_name": "Urich Peter",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.296,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     5,
+     54
+    ]
+   },
+   {
+    "house": 22,
+    "pua_owner": "Brincz Marfil Louise Wittibin.",
+    "pua_entries": 3,
+    "ps_first": "Müller Johann",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Müller Johann",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Michl Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mittig Jofam",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müllner Johann",
+      "pages": [
+       36
+      ],
+      "rows": 4
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.263,
+    "sim_concat_best": 0.27,
+    "sim_surname": 0.571,
+    "sim_any": 0.571,
+    "best_ps_name": "Mittig Jofam",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.263,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     9,
+     12,
+     13,
+     36
+    ]
+   },
+   {
+    "house": 24,
+    "pua_owner": "Brincz Marjan",
+    "pua_entries": 2,
+    "ps_first": "Ring Michael",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Ring Michael",
+      "pages": [
+       26,
+       27,
+       28,
+       29,
+       30,
+       31
+      ],
+      "rows": 8
+     },
+     {
+      "name": "Ring Michl",
+      "pages": [
+       27,
+       31
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Michael.",
+      "pages": [
+       36,
+       37,
+       38,
+       39
+      ],
+      "rows": 9
+     }
+    ],
+    "n_distinct": 3,
+    "sim_concat_first": 0.435,
+    "sim_concat_best": 0.435,
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michael",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.25,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     36,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 25,
+    "pua_owner": "Brincz Wendel",
+    "pua_entries": 1,
+    "ps_first": "Ring Michl",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Ring Michl",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Mito",
+      "pages": [
+       27,
+       28,
+       29
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Ring Mito[?]",
+      "pages": [
+       31
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Mito.[?]",
+      "pages": [
+       36,
+       37
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Michl.[?]",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 7
+     }
+    ],
+    "n_distinct": 5,
+    "sim_concat_first": 0.476,
+    "sim_concat_best": 0.476,
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michl",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.3,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     26,
+     27,
+     28,
+     29,
+     31,
+     36,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 26,
+    "pua_owner": "Brincz Johann Bauer zu Grübln",
+    "pua_entries": 2,
+    "ps_first": "Bring Michael[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Bring Michael[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Feldt Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Malfg",
+      "pages": [
+       17,
+       19
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Johann",
+      "pages": [
+       26,
+       27,
+       29,
+       30
+      ],
+      "rows": 10
+     },
+     {
+      "name": "Ring Mito",
+      "pages": [
+       29
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Georg",
+      "pages": [
+       29
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Johann.",
+      "pages": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39
+      ],
+      "rows": 9
+     }
+    ],
+    "n_distinct": 7,
+    "sim_concat_first": 0.486,
+    "sim_concat_best": 0.514,
+    "sim_surname": 0.727,
+    "sim_any": 0.727,
+    "best_ps_name": "Bring Michael[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.114,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     3,
+     5,
+     17,
+     19,
+     26,
+     27,
+     29,
+     30,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 27,
+    "pua_owner": "Malleßthak [?] Han Bauw [?] Han Güßla [?]",
+    "pua_entries": 1,
+    "ps_first": "Hoschlar Peter",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Hoschlar Peter",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Christan Piber",
+      "pages": [
+       17
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Maleschitz Johann",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mullerkorn Johann",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malleitsch Johann",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Matschitsch Johann",
+      "pages": [
+       29
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Mattheitsch Johann",
+      "pages": [
+       30
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Mulschitsch Johann.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malwischly Johann",
+      "pages": [
+       35
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Mallwitsch Johann",
+      "pages": [
+       37
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malwischly Johann.[?]",
+      "pages": [
+       37
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malleschick Johann.[?]",
+      "pages": [
+       38,
+       39
+      ],
+      "rows": 5
+     }
+    ],
+    "n_distinct": 12,
+    "sim_concat_first": 0.222,
+    "sim_concat_best": 0.564,
+    "sim_surname": 0.737,
+    "sim_any": 0.737,
+    "best_ps_name": "Malleitsch Johann",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.222,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     16,
+     17,
+     24,
+     26,
+     27,
+     29,
+     30,
+     34,
+     35,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 28,
+    "pua_owner": "Brincz Maria Bäuerin zu Grübln",
+    "pua_entries": 3,
+    "ps_first": "Ring Michl",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Ring Michl",
+      "pages": [
+       26
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ring Mito",
+      "pages": [
+       29,
+       30
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Michl.",
+      "pages": [
+       34,
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ring Milo.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Michl.[?]",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 13
+     }
+    ],
+    "n_distinct": 5,
+    "sim_concat_first": 0.343,
+    "sim_concat_best": 0.353,
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michl",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.343,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     26,
+     29,
+     30,
+     34,
+     35,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 29,
+    "pua_owner": "Milleg Hanu Bauw [?] Han Grübla [?]",
+    "pua_entries": 2,
+    "ps_first": "Milleg Hans[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Milleg Hans[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Feldt Margreth",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Thomaz Manha",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mullag Emanuel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Malleitsch[?] Johann",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Mathä",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mally Leonhard",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müllag Johann",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müller Daniel",
+      "pages": [
+       29
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Müller Johann",
+      "pages": [
+       29,
+       30
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Müller Hannes",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Müllner Samuel",
+      "pages": [
+       36
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Müllner Samuel.",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Vilip[?]züanjanky",
+      "pages": [
+       38
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 14,
+    "sim_concat_first": 0.545,
+    "sim_concat_best": 0.545,
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Milleg Hans[?]",
+    "best_exact_token": true,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.222,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     3,
+     5,
+     15,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     36,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 30,
+    "pua_owner": "Tillak Philipp bürgerl. zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Tillah Walfja",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Tillah Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Sagmeister Michl",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Caputa[?] Michel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kreuker Mäthel[?]",
+      "pages": [
+       27
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stuker Mathl[?]",
+      "pages": [
+       29,
+       30
+      ],
+      "rows": 9
+     },
+     {
+      "name": "Dappler, Mathl.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Dappler Mathl.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Bruckler Mathl.[?]",
+      "pages": [
+       37,
+       38,
+       39
+      ],
+      "rows": 12
+     }
+    ],
+    "n_distinct": 8,
+    "sim_concat_first": 0.35,
+    "sim_concat_best": 0.35,
+    "sim_surname": 0.833,
+    "sim_any": 0.833,
+    "best_ps_name": "Tillah Walfja",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.35,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     15,
+     24,
+     26,
+     27,
+     29,
+     30,
+     34,
+     35,
+     37,
+     38,
+     39
+    ]
+   },
+   {
+    "house": 32,
+    "pua_owner": "Breitwiesch Mattl / Söllner zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Wolitz Gregor",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Wolitz Gregor",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Johan",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pechy Georg",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hoch Georg",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ulrich Georg.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ulrich Georg.",
+      "pages": [
+       35
+      ],
+      "rows": 2
+     }
+    ],
+    "n_distinct": 6,
+    "sim_concat_first": 0.279,
+    "sim_concat_best": 0.333,
+    "sim_surname": 0.471,
+    "sim_any": 0.471,
+    "best_ps_name": "Ulrich Georg.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.279,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     13,
+     21,
+     23,
+     31,
+     34,
+     35
+    ]
+   },
+   {
+    "house": 33,
+    "pua_owner": "Pfarrer Johann Leopold Kaulßgütlle",
+    "pua_entries": 1,
+    "ps_first": "Beckhlach Wurfl",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Beckhlach Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Regina Yourn",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 2,
+    "sim_concat_first": 0.273,
+    "sim_concat_best": 0.273,
+    "sim_surname": 0.308,
+    "sim_any": 0.364,
+    "best_ps_name": "Regina Yourn",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.273,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     9,
+     20
+    ]
+   },
+   {
+    "house": 34,
+    "pua_owner": "Krischan / Marla / Bauerin / zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Eidlald Wurfl",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Eidlald Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Tillah Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fitsch Malfg",
+      "pages": [
+       17,
+       18
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Christof Matz",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Villa[?] Rothmayer",
+      "pages": [
+       20
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stüllach.[?] Michel.",
+      "pages": [
+       33
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Stüllach.[?] Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Stüllach Mathl.[?]",
+      "pages": [
+       35
+      ],
+      "rows": 2
+     }
+    ],
+    "n_distinct": 8,
+    "sim_concat_first": 0.3,
+    "sim_concat_best": 0.41,
+    "sim_surname": 0.571,
+    "sim_any": 0.6,
+    "best_ps_name": "Fitsch Malfg",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.3,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     9,
+     15,
+     17,
+     18,
+     20,
+     33,
+     35
+    ]
+   },
+   {
+    "house": 36,
+    "pua_owner": "Krischan / Marla / Bauerin / zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Fillal Putlrd[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Fillal Putlrd[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krishnar Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Bratula Mihael",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Priškar Mathej",
+      "pages": [
+       10
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Barthol Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lendandl Matjai",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lapshary Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kreuthaler Walth",
+      "pages": [
+       16
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Christan Malfg",
+      "pages": [
+       17,
+       18,
+       19
+      ],
+      "rows": 12
+     },
+     {
+      "name": "Christan Mache",
+      "pages": [
+       20
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Thomas Johan",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schlomnitz Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kruescher Peter",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Johann",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 14,
+    "sim_concat_first": 0.25,
+    "sim_concat_best": 0.537,
+    "sim_surname": 0.75,
+    "sim_any": 0.75,
+    "best_ps_name": "Krishnar Wurfl",
+    "best_exact_token": false,
+    "class_v58": "FUZZY",
+    "sim_v58": 0.537,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     4,
+     9,
+     10,
+     11,
+     13,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     23,
+     24,
+     26
+    ]
+   },
+   {
+    "house": 37,
+    "pua_owner": "Krischan / Peter / Bauer in Grübln",
+    "pua_entries": 2,
+    "ps_first": "Krishnar Peter",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Krishnar Peter",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Priškar Jelen",
+      "pages": [
+       10
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Fridrich Peter",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kovickan Peter",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Piber",
+      "pages": [
+       17,
+       18,
+       19
+      ],
+      "rows": 16
+     },
+     {
+      "name": "Kristan Peter",
+      "pages": [
+       20
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Kruescher Peter",
+      "pages": [
+       24
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 7,
+    "sim_concat_first": 0.564,
+    "sim_concat_best": 0.579,
+    "sim_surname": 0.8,
+    "sim_any": 1.0,
+    "best_ps_name": "Kristan Peter",
+    "best_exact_token": true,
+    "class_v58": "FUZZY",
+    "sim_v58": 0.564,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     9,
+     10,
+     11,
+     13,
+     17,
+     18,
+     19,
+     20,
+     24
+    ]
+   },
+   {
+    "house": 40,
+    "pua_owner": "Pfarrer Rupert Sautter hiesig",
+    "pua_entries": 1,
+    "ps_first": "Peter Muster",
+    "ps_stand": "Landl. Gutsh.",
+    "ps_distinct": [
+     {
+      "name": "Peter Muster",
+      "pages": [
+       11
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Matthäus Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fidriz Martha",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poldi Muster",
+      "pages": [
+       12
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Benedikt Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlicz Mihajl",
+      "pages": [
+       13
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ederling Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Paulah Mutha",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Peter Malfg",
+      "pages": [
+       21
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Röding Andre",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Röding georg",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Röding marthe",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig georg",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig matthl",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pobezy Michel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pichler[?] Mathl[?]",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Prinz Michl",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pöching. Mathl.[?]",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
+    ],
+    "n_distinct": 20,
+    "sim_concat_first": 0.432,
+    "sim_concat_best": 0.432,
+    "sim_surname": 0.545,
+    "sim_any": 0.615,
+    "best_ps_name": "Peter Muster",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.432,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     21,
+     25,
+     26,
+     31,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 41,
+    "pua_owner": "Pöchinger Georg Leinwand Fabrikant",
+    "pua_entries": 1,
+    "ps_first": "Pesian Georg[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Pesian Georg[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fidriz Georg",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peinig Georg",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Poldi Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Pavlicz Gregor",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavčič Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling grozj",
+      "pages": [
+       15
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Georg Gorgy",
+      "pages": [
+       19
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Peter Grang",
+      "pages": [
+       21
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Peter Malfg",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Michel Grang",
+      "pages": [
+       21
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pobezy Georg",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pichler[?] Georg",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pöching. Gorgy.[?]",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
+    ],
+    "n_distinct": 16,
+    "sim_concat_first": 0.381,
+    "sim_concat_best": 0.512,
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Georg Gorgy",
+    "best_exact_token": true,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.356,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     4,
+     11,
+     12,
+     13,
+     14,
+     15,
+     19,
+     21,
+     26,
+     31,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 42,
+    "pua_owner": "Pöchinger Malfa Leinwand Fabrikant",
+    "pua_entries": 1,
+    "ps_first": "Peter Muster",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Peter Muster",
+      "pages": [
+       11
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Poldi Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlicz Mihajl",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Matija",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig Matthl.",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Rödig matthi",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pöching. Mathel.[?]",
+      "pages": [
+       32
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Pöching. Mathl.[?]",
+      "pages": [
+       33
+      ],
+      "rows": 3
+     }
+    ],
+    "n_distinct": 9,
+    "sim_concat_first": 0.286,
+    "sim_concat_best": 0.465,
+    "sim_surname": 0.875,
+    "sim_any": 0.875,
+    "best_ps_name": "Pöching. Mathel.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.286,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     25,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 43,
+    "pua_owner": "Grübler Maria Leutnerin zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Ulrich Peter",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Ulrich Peter",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shumey Michael",
+      "pages": [
+       6
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Shumey Joan",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kunsthof Wenzl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Barbara Muster",
+      "pages": [
+       11
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Hansp[?] Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brusla Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Pavšič Janez",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leischar Gregor",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Bresniko",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavolle stich",
+      "pages": [
+       25
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brulla Michl[?]",
+      "pages": [
+       26,
+       32
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Brulla Mich.[?]",
+      "pages": [
+       32
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brulla Maria.",
+      "pages": [
+       33
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 14,
+    "sim_concat_first": 0.4,
+    "sim_concat_best": 0.429,
+    "sim_surname": 0.5,
+    "sim_any": 1.0,
+    "best_ps_name": "Brulla Maria.",
+    "best_exact_token": true,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.4,
+    "class_v119": "PARTIAL",
+    "class_v126": "PARTIAL",
+    "ps_pages": [
+     6,
+     9,
+     11,
+     12,
+     13,
+     14,
+     16,
+     25,
+     26,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 44,
+    "pua_owner": "Husitsch Maria Bauersleute / zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Matthäus Muster",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Matthäus Muster",
+      "pages": [
+       11
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hausleith Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Husarlt Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Mache",
+      "pages": [
+       17
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Husitsch Maria",
+      "pages": [
+       17,
+       18
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Husitsch Maria[?]",
+      "pages": [
+       19,
+       20
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Hantschitsch Marth",
+      "pages": [
+       24
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Poschinger Joseph",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 8,
+    "sim_concat_first": 0.391,
+    "sim_concat_best": 0.578,
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Husitsch Maria",
+    "best_exact_token": true,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.391,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     11,
+     16,
+     17,
+     18,
+     19,
+     20,
+     24,
+     26
+    ]
+   },
+   {
+    "house": 46,
+    "pua_owner": "Lahodathar / Wittib Lahodatharin",
+    "pua_entries": 1,
+    "ps_first": "Strauß Georg",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Strauß Georg",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kristof Muster",
+      "pages": [
+       12
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Michelkorn Peter[?]",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ajobatschar Pottra[?]",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.263,
+    "sim_concat_best": 0.444,
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Ajobatschar Pottra[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.263,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     7,
+     12,
+     26,
+     54
+    ]
+   },
+   {
+    "house": 47,
+    "pua_owner": "Widow Katharina Brandl in Grübln / Gütlerin",
+    "pua_entries": 1,
+    "ps_first": "(R)abitscher Marbl",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "(R)abitscher Marbl",
+      "pages": [
+       7
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Strauß Georg",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ursch Peter",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hrabotlar Marha",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlahotshar Georg",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlahotshar Mathej",
+      "pages": [
+       10
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Khristofer Muster",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlebšatar Miha",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hahnsdorfer Alosche",
+      "pages": [
+       23
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Habschider Marth",
+      "pages": [
+       24,
+       25
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Michelkorn Michel",
+      "pages": [
+       26
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hladnikhar[?] Marko",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
+    ],
+    "n_distinct": 12,
+    "sim_concat_first": 0.314,
+    "sim_concat_best": 0.346,
+    "sim_surname": 0.526,
+    "sim_any": 0.526,
+    "best_ps_name": "Hlahotshar Georg",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.314,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     7,
+     8,
+     10,
+     12,
+     14,
+     23,
+     24,
+     25,
+     26,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 48,
+    "pua_owner": "Höchsthaler Georg bürgerl. Hofg'sitzl.",
+    "pua_entries": 1,
+    "ps_first": "(R)abitscher Georg",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "(R)abitscher Georg",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Khristofer Gnoy",
+      "pages": [
+       12
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hampel Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hahnsdorfer Georg",
+      "pages": [
+       23
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Habschider Georg",
+      "pages": [
+       24,
+       25
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Blakutscher Georg[?]",
+      "pages": [
+       28
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hladnikhar[?] Georg.",
+      "pages": [
+       32,
+       33
+      ],
+      "rows": 4
+     }
+    ],
+    "n_distinct": 7,
+    "sim_concat_first": 0.383,
+    "sim_concat_best": 0.426,
+    "sim_surname": 0.476,
+    "sim_any": 1.0,
+    "best_ps_name": "Habschider Georg",
+    "best_exact_token": true,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.383,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     7,
+     12,
+     14,
+     23,
+     24,
+     25,
+     28,
+     32,
+     33
+    ]
+   },
+   {
+    "house": 51,
+    "pua_owner": "Urich Pattle / Bauer zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Ursch Petro[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Ursch Petro[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Urich Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shumey Peter",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Sinaucy Peter",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Michl Peter",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ulrich Johan",
+      "pages": [
+       21
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Uranek Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Parbna.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Heinrich Palle",
+      "pages": [
+       55
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 9,
+    "sim_concat_first": 0.412,
+    "sim_concat_best": 0.556,
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Urich Peter",
+    "best_exact_token": true,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.353,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     4,
+     5,
+     6,
+     8,
+     16,
+     21,
+     23,
+     43,
+     55
+    ]
+   },
+   {
+    "house": 58,
+    "pua_owner": "Stipanitsch Jakob Brauhaußgütler",
+    "pua_entries": 1,
+    "ps_first": "Pogacar Michl",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Pogacar Michl",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavlicz Janez",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hlebšatar Janez",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schlomnitz Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 4,
+    "sim_concat_first": 0.341,
+    "sim_concat_best": 0.341,
+    "sim_surname": 0.444,
+    "sim_any": 0.444,
+    "best_ps_name": "Pavlicz Janez",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.341,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     4,
+     13,
+     14,
+     23
+    ]
+   },
+   {
+    "house": 60,
+    "pua_owner": "Penzig Stuffe Leuthold zu Grüble",
+    "pua_entries": 3,
+    "ps_first": "Schello Gay[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Schello Gay[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Mhelhadapes[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shello Gay[?]/Mhell Gay[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kirschan Georg",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schellko Joseph",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schellko Josef",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Miklavčič Lovrenc",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pauling Walfja",
+      "pages": [
+       15
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Husarlt Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Gorgy",
+      "pages": [
+       17
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schelle Augusta",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schelle Jank[?]",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     }
+    ],
+    "n_distinct": 12,
+    "sim_concat_first": 0.263,
+    "sim_concat_best": 0.333,
+    "sim_surname": 0.462,
+    "sim_any": 0.462,
+    "best_ps_name": "Pauling Walfja",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.244,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     3,
+     5,
+     6,
+     14,
+     15,
+     16,
+     17,
+     23,
+     31
+    ]
+   },
+   {
+    "house": 61,
+    "pua_owner": "Tillak Nikla bürgerl. zu Grübln",
+    "pua_entries": 2,
+    "ps_first": "Krbitschan Mahs[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Krbitschan Mahs[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fillah Mäda[?]",
+      "pages": [
+       3
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Feldt Mäda",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Etrich Peter",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Shumey Peter",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Straupf Georg",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Brusnigg Georg",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Eidlald Pirkh",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lovschan Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tschak Mihlo",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Jerala Miha",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Tillach Michl.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Ulrich Pottra",
+      "pages": [
+       54
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 13,
+    "sim_concat_first": 0.2,
+    "sim_concat_best": 0.368,
+    "sim_surname": 0.769,
+    "sim_any": 0.769,
+    "best_ps_name": "Tillach Michl.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.171,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     3,
+     5,
+     6,
+     8,
+     9,
+     13,
+     14,
+     43,
+     54
+    ]
+   },
+   {
+    "house": 62,
+    "pua_owner": "Brinczhan / Witwe Brinczhan Gütlin",
+    "pua_entries": 2,
+    "ps_first": "Kirschan Georg[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Kirschan Georg[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kirschan Mihel[?]",
+      "pages": [
+       3
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Kirschan Mäda[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kirschan Mäda",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Urich Georg",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kovickan Miha",
+      "pages": [
+       13
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Križnar Jurij",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pernig Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Lenciklar Mihlo",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Christan Mache",
+      "pages": [
+       17,
+       18,
+       20
+      ],
+      "rows": 7
+     },
+     {
+      "name": "Christan Gorgy",
+      "pages": [
+       18
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Matho[?]",
+      "pages": [
+       19
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Malfg",
+      "pages": [
+       19
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Michl.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 14,
+    "sim_concat_first": 0.381,
+    "sim_concat_best": 0.476,
+    "sim_surname": 0.706,
+    "sim_any": 0.706,
+    "best_ps_name": "Krischan Michl.[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.293,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     3,
+     5,
+     13,
+     14,
+     16,
+     17,
+     18,
+     19,
+     20,
+     43
+    ]
+   },
+   {
+    "house": 63,
+    "pua_owner": "Brincz Maria Leutnerin zu Grübln",
+    "pua_entries": 1,
+    "ps_first": "Kirschan Georg[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Kirschan Georg[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fring Masko[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Braupf Hanns",
+      "pages": [
+       8
+      ],
+      "rows": 5
+     },
+     {
+      "name": "Kovick Mihel",
+      "pages": [
+       13
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Javornik Martin",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leischar Gregor",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Gorgy",
+      "pages": [
+       18,
+       19,
+       20
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 8,
+    "sim_concat_first": 0.341,
+    "sim_concat_best": 0.39,
+    "sim_surname": 0.545,
+    "sim_any": 0.545,
+    "best_ps_name": "Fring Masko[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.256,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     3,
+     4,
+     8,
+     13,
+     14,
+     16,
+     18,
+     19,
+     20,
+     43
+    ]
+   },
+   {
+    "house": 64,
+    "pua_owner": "Veritscher Wirts Leibkinds Gsöll",
+    "pua_entries": 1,
+    "ps_first": "Urban Pankrazgall",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Urban Pankrazgall",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kerbitacher Masfa[?]",
+      "pages": [
+       4
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Herbstuter Wurfl",
+      "pages": [
+       9
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pavšič Miha",
+      "pages": [
+       14
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kreutthaler Walth",
+      "pages": [
+       16
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Puchey Georg",
+      "pages": [
+       31
+      ],
+      "rows": 2
+     }
+    ],
+    "n_distinct": 6,
+    "sim_concat_first": 0.267,
+    "sim_concat_best": 0.4,
+    "sim_surname": 0.762,
+    "sim_any": 0.762,
+    "best_ps_name": "Kerbitacher Masfa[?]",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.267,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     4,
+     9,
+     14,
+     16,
+     31
+    ]
+   },
+   {
+    "house": 65,
+    "pua_owner": "Widhann Georg häusler und Gärtner",
+    "pua_entries": 1,
+    "ps_first": "Bring Mäda[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Bring Mäda[?]",
+      "pages": [
+       3
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Prian Masko[?]",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimeczkhanl",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimec Ivan",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Bering Manko",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ring Martho.[?]",
+      "pages": [
+       36
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimetz Leon.[?]",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 7,
+    "sim_concat_first": 0.316,
+    "sim_concat_best": 0.316,
+    "sim_surname": 0.545,
+    "sim_any": 0.545,
+    "best_ps_name": "Bering Manko",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.238,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     3,
+     4,
+     7,
+     8,
+     16,
+     36,
+     43
+    ]
+   },
+   {
+    "house": 66,
+    "pua_owner": "Widhann Georg häusler und Gärtner",
+    "pua_entries": 2,
+    "ps_first": "Kirschan Georg[?]",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Kirschan Georg[?]",
+      "pages": [
+       3,
+       4
+      ],
+      "rows": 4
+     },
+     {
+      "name": "Blomuscher Franz",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Fellner Michl",
+      "pages": [
+       6
+      ],
+      "rows": 1
+     },
+     {
+      "name": "V. Hronzginen",
+      "pages": [
+       8
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Georg.[?]",
+      "pages": [
+       36
+      ],
+      "rows": 2
+     }
+    ],
+    "n_distinct": 5,
+    "sim_concat_first": 0.429,
+    "sim_concat_best": 0.429,
+    "sim_surname": 0.533,
+    "sim_any": 1.0,
+    "best_ps_name": "Kirschan Georg[?]",
+    "best_exact_token": true,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.326,
+    "class_v119": "PARTIAL",
+    "class_v126": "PARTIAL",
+    "ps_pages": [
+     3,
+     4,
+     6,
+     8,
+     36
+    ]
+   },
+   {
+    "house": 68,
+    "pua_owner": "Rappare Wirthsleuths hiesig",
+    "pua_entries": 2,
+    "ps_first": "Muth Peter",
+    "ps_stand": "~",
+    "ps_distinct": [
+     {
+      "name": "Muth Peter",
+      "pages": [
+       23
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hoch Mito[?]",
+      "pages": [
+       31
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Michel.[?]",
+      "pages": [
+       34,
+       35
+      ],
+      "rows": 3
+     },
+     {
+      "name": "Ulrich Mich.[?]",
+      "pages": [
+       34
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Ulrich Michl",
+      "pages": [
+       43
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 5,
+    "sim_concat_first": 0.294,
+    "sim_concat_best": 0.294,
+    "sim_surname": 0.375,
+    "sim_any": 0.375,
+    "best_ps_name": "Muth Peter",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.324,
+    "class_v119": "MISMATCH",
+    "class_v126": "MISMATCH",
+    "ps_pages": [
+     23,
+     31,
+     34,
+     35,
+     43
+    ]
+   },
+   {
+    "house": 69,
+    "pua_owner": "Christian Brandl in Grübln / Bauer",
+    "pua_entries": 3,
+    "ps_first": "Schimey Wenzel",
+    "ps_stand": null,
+    "ps_distinct": [
+     {
+      "name": "Schimey Wenzel",
+      "pages": [
+       4
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Pawitsch Mathäus",
+      "pages": [
+       5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Leischar Gregor",
+      "pages": [
+       16
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Hirschegger Walburg",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Linden matte",
+      "pages": [
+       45
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Krischan Matthe.",
+      "pages": [
+       47,
+       48
+      ],
+      "rows": 6
+     },
+     {
+      "name": "Michely Soon",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Christan Bräutig",
+      "pages": [
+       47
+      ],
+      "rows": 1
+     }
+    ],
+    "n_distinct": 8,
+    "sim_concat_first": 0.244,
+    "sim_concat_best": 0.605,
+    "sim_surname": 0.941,
+    "sim_any": 0.941,
+    "best_ps_name": "Christan Bräutig",
+    "best_exact_token": false,
+    "class_v58": "MISMATCH",
+    "sim_v58": 0.244,
+    "class_v119": "AGREE",
+    "class_v126": "AGREE",
+    "ps_pages": [
+     4,
+     5,
+     16,
+     45,
+     47,
+     48
+    ]
+   }
+  ]
+ },
+ "nr14_adjudication": {
+  "map": "atlas-1825/nr14-variant-map-1825.json",
+  "pairs": [
+   "V1 Rabitscher/Rabutschar",
+   "V2 Georg/Grogy",
+   "V3 Pödigz/Poiding",
+   "V4 Schimecz/Schimez",
+   "V5 Mihual/Michual",
+   "V6 Marusa/Maruſa"
+  ],
+  "rejected": [
+   "Marls",
+   "Rabatschar",
+   "Schimz",
+   "Schimez P…a (2. beseda)"
+  ],
+  "in_register_variant_groups": 0,
+  "variant_groups": [],
+  "statement": "NR-14 sodba zaprta za p7 (protokol 148 §2): Rabitscher≡Rabutschar, Georg≡Grogy, Pödigz≡Poiding (v125), Schimecz≡Schimez (UNDECIDED kanon za grupiranje), Mihual≡Michual, Maruſa≡Marusa (NFKD); zavrnjene forme: Marls, Rabatschar, Schimz, Schimez P…a 2. beseda. Merjeno: 0 variantnih grup v register — forme že kanonizirane na strani; karta = pravilna baza za p56–143 osebni re-read (val 127+)."
+ },
+ "findings": [
+  {
+   "id": "F-SYNC-01",
+   "status": "DOCUMENTED",
+   "statement": "kontinuiteta (val 119 del 3): sim_concat = replika val 58 metode; metoda B primarna."
+  },
+  {
+   "id": "F-SYNC-02",
+   "status": "DOCUMENTED",
+   "statement": "Na v125 stanju (metoda B): 16 AGREE (hiše [5, 18, 26, 27, 29, 30, 36, 37, 41, 42, 44, 51, 61, 62, 64, 69]), 2 PARTIAL (hiše [43, 66]), 33 MISMATCH; brez hiš z razredno spremembo vs. val 119 del 3."
+  },
+  {
+   "id": "F-SYNC-03",
+   "status": "DOCUMENTED",
+   "statement": "kontinuiteta (val 119 del 3): sim_any lažno soglasje prek danega imena — razred vodi sim_surname (+ exact token za PARTIAL)."
+  },
+  {
+   "id": "F-SYNC-04",
+   "status": "DOCUMENTED",
+   "statement": "Sinhronizacija uporablja izključno PS p3–p55 (1.078 vrstic); PS p56–143 (1.798 vrstic) ostaja PROVISIONAL (F-PV-04/NR-14) in ni vstopila v osebno plast; hišne PROVISIONAL plasti h72/74/76 (val 122) izrecno zaščitene (3 hiš: 72, 74, 76). Razširitev scope-a sledi z re-read serijo val 127+ (6 strani/val)."
+  },
+  {
+   "id": "F-SYNC-05",
+   "status": "DOCUMENTED",
+   "statement": "0 hiš ima owners.ps_stale po v125 hišnih popravkih (brez) — dokaz ohranjen, owners.ps = None, KG OWNER_OF PS povezava se ne ustvarja (ni join missa)."
+  },
+  {
+   "id": "F-SYNC-06",
+   "status": "DOCUMENTED",
+   "statement": "NR-14 vgradnja: vse osebe nosijo normalized_nr14 (+ nr14_variants pri aplikiranih parih); variantne grupe = flag-only (NOT_MERGED). Merjeno stanje: 0 variantnih grup v register. F-V125-01 ZAPRT — person-owner-register + house-register owners.ps zdaj odražata v123/v125 (H-035 pages brez p7 po stari hiši 35; p7 lastniki na hišah 53/49/55/48/45/46/47)."
+  }
+ ],
+ "doctrine_impact": [
+  "F9 (PUA pripravljalno vs PS končno stanje) OSTAJA okvir — CH statusi ponovno izvedeni na v125 imenih.",
+  "NR-14 črkovalna sodba je zaprta kot MAŠINOBERLJIVA karta — p56–143 re-read serija (val 127+) bere z enakimi ključi; identiteta oseb ostaja eksplicitna (nič mergeov).",
+  "KG osebni sloj vsebinsko SPREMENJEN (prvič od val 122): v125 p7 osebe vstopajo; PROVISIONAL p56–143 ostaja zunaj (F-SYNC-04) — RG-009/010/011 ostajajo OPEN do p65/69/115/122 re-reada."
+ ]
+}

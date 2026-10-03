@@ -204,7 +204,7 @@ describe("val 121 — pasovni vrednostni re-read (F-OCI-05 zaprtje)", () => {
     }
   });
 
-  it("kaskada: c4 K9 (both_filled 56, jaethe_empty 959, klafter_empty 84) + KG sha ab418c75 v vseh artefaktih", () => {
+  it("kaskada: c4 K9 (both_filled 56, jaethe_empty 959, klafter_empty 84) + KG sha 1e49de43 v vseh artefaktih", () => {
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as any;
     const k9key = Object.keys(c4).find((k) => k.startsWith("K9"))!;
     const p1 = c4[k9key].p1_55_val57;
@@ -212,9 +212,9 @@ describe("val 121 — pasovni vrednostni re-read (F-OCI-05 zaprtje)", () => {
     expect(p1["jaethe_empty"]).toBe(960);
     expect(p1["klafter_empty"]).toBe(84);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
-    expect(kgSha).toMatch(/^ab418c75/);
+    expect(kgSha).toMatch(/^1e49de43/);
     const timeline = readJSON("src/data/timeline-1825-1830.json");
-    expect(JSON.stringify(timeline)).toContain("ab418c75");
+    expect(JSON.stringify(timeline)).toContain("1e49de43");
   });
 
   it("0 VLM: readings-v121.meta očitno izrecen", () => {

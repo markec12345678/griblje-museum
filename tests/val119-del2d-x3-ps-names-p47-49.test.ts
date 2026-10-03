@@ -218,10 +218,10 @@ describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)
 });
 
 describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
-  test("KG sha ab418c75 (ab418c75 @2e -> val 119 del 3 PUA↔PS sync: osebna plast 488→981; RESIDENCE TP-029 zdaj 4 per-name osebe: R-03425..R-03428); 3762/3471/2427/2773", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^ab418c75/);
+  test("KG sha 1e49de43 (1e49de43 @2e -> val 119 del 3 PUA↔PS sync: osebna plast 488→982; RESIDENCE TP-029 zdaj 4 per-name osebe: R-03425..R-03428); 3762/3471/2427/2773", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^1e49de43/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^ab418c75/,
+      /^1e49de43/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -230,7 +230,7 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
       edge_stats: Record<string, number>;
       invariant_violations: unknown[];
     };
-    expect(kg.nodes.length).toBe(3764);
+    expect(kg.nodes.length).toBe(3765);
     expect(kg.edges.length).toBe(3473);
     expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2775);
@@ -273,7 +273,7 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
       relations: unknown[];
       stats?: { entities?: number; relations?: number };
     };
-    expect(sg.entities.length).toBe(3764);
+    expect(sg.entities.length).toBe(3765);
     expect(sg.relations.length).toBe(3473);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("src/data/timeline-1825-1830.json") as {

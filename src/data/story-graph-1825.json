@@ -4,12 +4,12 @@
  "title": "ATLAS 1825 — Story Graph v1 (pripovedni graf entitet in relacij)",
  "provenance": {
   "built_from": "knowledge-graph-1825.json",
-  "kg_sha256": "ab418c75abaf6bc0d76c0472242b9fcf1f849ed7a6f287a073d1235b0c15e8e7",
+  "kg_sha256": "1e49de4358052544a696a2a55712cea99402237ea65f8b4e80ed8fea2aa1b43e",
   "kg_val": 122,
   "deterministic": true,
   "generator": "atlas-1825/build-story-graph.py v1 (val 68)",
   "runtime_copy": "src/data/story-graph-1825.json (piše TA skript — prepovedano ročno urejanje, ena izhodna resnica)",
-  "regenerable": "python3 research-griblje/atlas-1825/build-story-graph.py ob KG 122 hash-u ab418c75abaf",
+  "regenerable": "python3 research-griblje/atlas-1825/build-story-graph.py ob KG 122 hash-u 1e49de435805",
   "no_new_claims": "story graf NE uvaja novih trditev — projekcija KG (§42 §25: najprej podatki, šele nato zgodbe)"
  },
  "invariants_enforced": [
@@ -35,14 +35,14 @@
   "rule": "Vsaka generirana zgodba MORA voditi evidence-first verigo: story → claims → sources. Zgodba brez povezav = NE-OBJAVLJENA."
  },
  "stats": {
-  "entities": 3764,
+  "entities": 3765,
   "entities_by_type": {
    "BP": 100,
    "EVENT": 3,
    "HOUSE": 169,
    "MAP_OBJECT": 34,
    "PARCEL": 2427,
-   "PERSON": 981,
+   "PERSON": 982,
    "SOURCE": 13,
    "TOPONYM": 37
   },
@@ -8934,21 +8934,6 @@
    "node_id": "PER-0447",
    "node_type": "PERSON",
    "type_label": "oseba",
-   "label": "Lappary Marbl",
-   "evidence_status": "SINGLE_SOURCE",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "name_original": "Lappary Marbl",
-   "person_type": "owner(ps)",
-   "possible_duplicate": true,
-   "merge_decision": "NOT_MERGED",
-   "degree": 1
-  },
-  {
-   "node_id": "PER-0448",
-   "node_type": "PERSON",
-   "type_label": "oseba",
    "label": "Dekleva Matija",
    "evidence_status": "SINGLE_SOURCE",
    "source_ids": [
@@ -8958,10 +8943,10 @@
    "person_type": "owner(ps)",
    "possible_duplicate": false,
    "merge_decision": null,
-   "degree": 0
+   "degree": 1
   },
   {
-   "node_id": "PER-0449",
+   "node_id": "PER-0448",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Deuwaldich Mathl.[?]",
@@ -8976,7 +8961,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0450",
+   "node_id": "PER-0449",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mathä.[?]",
@@ -8991,7 +8976,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0451",
+   "node_id": "PER-0450",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "St. Veith",
@@ -9006,7 +8991,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0452",
+   "node_id": "PER-0451",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Urich Peter",
@@ -9021,7 +9006,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0453",
+   "node_id": "PER-0452",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Gemeinde",
@@ -9036,7 +9021,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0454",
+   "node_id": "PER-0453",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müller Johann",
@@ -9051,7 +9036,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0455",
+   "node_id": "PER-0454",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Michl Gnoy",
@@ -9066,7 +9051,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0456",
+   "node_id": "PER-0455",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mittig Jofam",
@@ -9081,7 +9066,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0457",
+   "node_id": "PER-0456",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müllner Johann",
@@ -9096,7 +9081,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0458",
+   "node_id": "PER-0457",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bring Mase[?]",
@@ -9111,7 +9096,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0459",
+   "node_id": "PER-0458",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Hans",
@@ -9126,7 +9111,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0460",
+   "node_id": "PER-0459",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brünig[?] Mathä[?]",
@@ -9141,7 +9126,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0461",
+   "node_id": "PER-0460",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mathä",
@@ -9156,7 +9141,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0462",
+   "node_id": "PER-0461",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mathä.[?]",
@@ -9171,7 +9156,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0463",
+   "node_id": "PER-0462",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michael",
@@ -9186,7 +9171,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0464",
+   "node_id": "PER-0463",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michl",
@@ -9201,7 +9186,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0465",
+   "node_id": "PER-0464",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michael.",
@@ -9216,7 +9201,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0466",
+   "node_id": "PER-0465",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michl",
@@ -9231,7 +9216,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0467",
+   "node_id": "PER-0466",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mito",
@@ -9246,7 +9231,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0468",
+   "node_id": "PER-0467",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mito[?]",
@@ -9261,7 +9246,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0469",
+   "node_id": "PER-0468",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mito.[?]",
@@ -9276,7 +9261,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0470",
+   "node_id": "PER-0469",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michl.[?]",
@@ -9291,7 +9276,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0471",
+   "node_id": "PER-0470",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bring Michael[?]",
@@ -9306,7 +9291,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0472",
+   "node_id": "PER-0471",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Feldt Peter",
@@ -9321,22 +9306,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0473",
-   "node_type": "PERSON",
-   "type_label": "oseba",
-   "label": "(K)hanzl Valen",
-   "evidence_status": "SINGLE_SOURCE",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "name_original": "(K)hanzl Valen",
-   "person_type": "owner(ps)",
-   "possible_duplicate": false,
-   "merge_decision": null,
-   "degree": 0
-  },
-  {
-   "node_id": "PER-0474",
+   "node_id": "PER-0472",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Malfg",
@@ -9351,7 +9321,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0475",
+   "node_id": "PER-0473",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Johann",
@@ -9366,7 +9336,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0476",
+   "node_id": "PER-0474",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mito",
@@ -9381,7 +9351,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0477",
+   "node_id": "PER-0475",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Georg",
@@ -9396,7 +9366,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0478",
+   "node_id": "PER-0476",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Johann.",
@@ -9411,7 +9381,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0479",
+   "node_id": "PER-0477",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hoschlar Peter",
@@ -9426,7 +9396,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0480",
+   "node_id": "PER-0478",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Piber",
@@ -9441,7 +9411,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0481",
+   "node_id": "PER-0479",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Maleschitz Johann",
@@ -9456,7 +9426,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0482",
+   "node_id": "PER-0480",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mullerkorn Johann",
@@ -9471,7 +9441,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0483",
+   "node_id": "PER-0481",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Malleitsch Johann",
@@ -9486,7 +9456,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0484",
+   "node_id": "PER-0482",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Matschitsch Johann",
@@ -9501,7 +9471,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0485",
+   "node_id": "PER-0483",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mattheitsch Johann",
@@ -9516,7 +9486,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0486",
+   "node_id": "PER-0484",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mulschitsch Johann.[?]",
@@ -9531,7 +9501,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0487",
+   "node_id": "PER-0485",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Malwischly Johann",
@@ -9546,7 +9516,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0488",
+   "node_id": "PER-0486",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mallwitsch Johann",
@@ -9561,7 +9531,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0489",
+   "node_id": "PER-0487",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Malwischly Johann.[?]",
@@ -9576,7 +9546,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0490",
+   "node_id": "PER-0488",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Malleschick Johann.[?]",
@@ -9591,7 +9561,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0491",
+   "node_id": "PER-0489",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michl",
@@ -9606,7 +9576,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0492",
+   "node_id": "PER-0490",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mito",
@@ -9621,7 +9591,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0493",
+   "node_id": "PER-0491",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michl.",
@@ -9636,7 +9606,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0494",
+   "node_id": "PER-0492",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Milo.[?]",
@@ -9651,7 +9621,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0495",
+   "node_id": "PER-0493",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michl.[?]",
@@ -9666,7 +9636,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0496",
+   "node_id": "PER-0494",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Milleg Hans[?]",
@@ -9681,7 +9651,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0497",
+   "node_id": "PER-0495",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Feldt Margreth",
@@ -9696,7 +9666,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0498",
+   "node_id": "PER-0496",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Thomaz Manha",
@@ -9711,7 +9681,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0499",
+   "node_id": "PER-0497",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mullag Emanuel",
@@ -9726,7 +9696,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0500",
+   "node_id": "PER-0498",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Malleitsch[?] Johann",
@@ -9741,7 +9711,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0501",
+   "node_id": "PER-0499",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mathä",
@@ -9756,7 +9726,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0502",
+   "node_id": "PER-0500",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mally Leonhard",
@@ -9771,7 +9741,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0503",
+   "node_id": "PER-0501",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müllag Johann",
@@ -9786,7 +9756,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0504",
+   "node_id": "PER-0502",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müller Daniel",
@@ -9801,7 +9771,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0505",
+   "node_id": "PER-0503",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müller Johann",
@@ -9816,7 +9786,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0506",
+   "node_id": "PER-0504",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müller Hannes",
@@ -9831,7 +9801,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0507",
+   "node_id": "PER-0505",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müllner Samuel",
@@ -9846,7 +9816,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0508",
+   "node_id": "PER-0506",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müllner Samuel.",
@@ -9861,7 +9831,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0509",
+   "node_id": "PER-0507",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Vilip[?]züanjanky",
@@ -9876,7 +9846,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0510",
+   "node_id": "PER-0508",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillah Walfja",
@@ -9891,7 +9861,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0511",
+   "node_id": "PER-0509",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Sagmeister Michl",
@@ -9906,7 +9876,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0512",
+   "node_id": "PER-0510",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Caputa[?] Michel",
@@ -9921,7 +9891,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0513",
+   "node_id": "PER-0511",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kreuker Mäthel[?]",
@@ -9936,7 +9906,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0514",
+   "node_id": "PER-0512",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stuker Mathl[?]",
@@ -9951,7 +9921,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0515",
+   "node_id": "PER-0513",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Dappler, Mathl.[?]",
@@ -9966,7 +9936,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0516",
+   "node_id": "PER-0514",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Dappler Mathl.[?]",
@@ -9981,7 +9951,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0517",
+   "node_id": "PER-0515",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bruckler Mathl.[?]",
@@ -9996,7 +9966,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0518",
+   "node_id": "PER-0516",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirichan Mäda[?]",
@@ -10011,7 +9981,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0519",
+   "node_id": "PER-0517",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schuchardt Wenzl",
@@ -10026,7 +9996,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0520",
+   "node_id": "PER-0518",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kristof Muster",
@@ -10041,7 +10011,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0521",
+   "node_id": "PER-0519",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Striedel Marth",
@@ -10056,7 +10026,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0522",
+   "node_id": "PER-0520",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Mathä.[?]",
@@ -10071,7 +10041,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0523",
+   "node_id": "PER-0521",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Witschan Martin.[?]",
@@ -10086,7 +10056,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0524",
+   "node_id": "PER-0522",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Witschan Miche.[?]",
@@ -10101,7 +10071,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0525",
+   "node_id": "PER-0523",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Marko.[?]",
@@ -10116,7 +10086,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0526",
+   "node_id": "PER-0524",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wolitz Gregor",
@@ -10131,7 +10101,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0527",
+   "node_id": "PER-0525",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Johan",
@@ -10146,7 +10116,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0528",
+   "node_id": "PER-0526",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pechy Georg",
@@ -10161,7 +10131,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0529",
+   "node_id": "PER-0527",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hoch Georg",
@@ -10176,7 +10146,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0530",
+   "node_id": "PER-0528",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Georg.[?]",
@@ -10191,7 +10161,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0531",
+   "node_id": "PER-0529",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Georg.",
@@ -10206,7 +10176,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0532",
+   "node_id": "PER-0530",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Beckhlach Wurfl",
@@ -10221,7 +10191,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0533",
+   "node_id": "PER-0531",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Regina Yourn",
@@ -10236,7 +10206,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0534",
+   "node_id": "PER-0532",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Eidlald Wurfl",
@@ -10251,7 +10221,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0535",
+   "node_id": "PER-0533",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillah Walfja",
@@ -10266,7 +10236,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0536",
+   "node_id": "PER-0534",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fitsch Malfg",
@@ -10281,7 +10251,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0537",
+   "node_id": "PER-0535",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christof Matz",
@@ -10296,7 +10266,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0538",
+   "node_id": "PER-0536",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Villa[?] Rothmayer",
@@ -10311,7 +10281,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0539",
+   "node_id": "PER-0537",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stüllach.[?] Michel.",
@@ -10326,7 +10296,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0540",
+   "node_id": "PER-0538",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stüllach.[?] Mathl.[?]",
@@ -10341,7 +10311,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0541",
+   "node_id": "PER-0539",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stüllach Mathl.[?]",
@@ -10356,22 +10326,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0542",
-   "node_type": "PERSON",
-   "type_label": "oseba",
-   "label": "Schimez Hanl",
-   "evidence_status": "SINGLE_SOURCE",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "name_original": "Schimez Hanl",
-   "person_type": "owner(ps)",
-   "possible_duplicate": false,
-   "merge_decision": null,
-   "degree": 1
-  },
-  {
-   "node_id": "PER-0543",
+   "node_id": "PER-0540",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Thörring Wenzl",
@@ -10383,10 +10338,10 @@
    "person_type": "owner(ps)",
    "possible_duplicate": false,
    "merge_decision": null,
-   "degree": 0
+   "degree": 1
   },
   {
-   "node_id": "PER-0544",
+   "node_id": "PER-0541",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillach Peter",
@@ -10401,7 +10356,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0545",
+   "node_id": "PER-0542",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fellah Peter",
@@ -10416,7 +10371,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0546",
+   "node_id": "PER-0543",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fitsch Piber",
@@ -10431,7 +10386,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0547",
+   "node_id": "PER-0544",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Albert",
@@ -10446,7 +10401,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0548",
+   "node_id": "PER-0545",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Peter",
@@ -10461,7 +10416,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0549",
+   "node_id": "PER-0546",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kristan Peter",
@@ -10476,7 +10431,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0550",
+   "node_id": "PER-0547",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schlomnitz Johan",
@@ -10491,7 +10446,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0551",
+   "node_id": "PER-0548",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Killach Mathl.[?]",
@@ -10506,7 +10461,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0552",
+   "node_id": "PER-0549",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillach Peter.[?]",
@@ -10521,7 +10476,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0553",
+   "node_id": "PER-0550",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fillal Putlrd[?]",
@@ -10536,7 +10491,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0554",
+   "node_id": "PER-0551",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krishnar Wurfl",
@@ -10551,7 +10506,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0555",
+   "node_id": "PER-0552",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bratula Mihael",
@@ -10566,7 +10521,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0556",
+   "node_id": "PER-0553",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Priškar Mathej",
@@ -10581,7 +10536,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0557",
+   "node_id": "PER-0554",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Barthol Muster",
@@ -10596,7 +10551,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0558",
+   "node_id": "PER-0555",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lendandl Matjai",
@@ -10611,7 +10566,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0559",
+   "node_id": "PER-0556",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lapshary Mihlo",
@@ -10626,7 +10581,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0560",
+   "node_id": "PER-0557",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kreuthaler Walth",
@@ -10641,7 +10596,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0561",
+   "node_id": "PER-0558",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Malfg",
@@ -10656,7 +10611,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0562",
+   "node_id": "PER-0559",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Mache",
@@ -10671,7 +10626,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0563",
+   "node_id": "PER-0560",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Thomas Johan",
@@ -10686,7 +10641,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0564",
+   "node_id": "PER-0561",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schlomnitz Peter",
@@ -10701,7 +10656,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0565",
+   "node_id": "PER-0562",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kruescher Peter",
@@ -10716,7 +10671,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0566",
+   "node_id": "PER-0563",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Johann",
@@ -10731,7 +10686,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0567",
+   "node_id": "PER-0564",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krishnar Peter",
@@ -10746,7 +10701,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0568",
+   "node_id": "PER-0565",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Priškar Jelen",
@@ -10761,7 +10716,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0569",
+   "node_id": "PER-0566",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fridrich Peter",
@@ -10776,7 +10731,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0570",
+   "node_id": "PER-0567",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kovickan Peter",
@@ -10791,7 +10746,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0571",
+   "node_id": "PER-0568",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Piber",
@@ -10806,7 +10761,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0572",
+   "node_id": "PER-0569",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kristan Peter",
@@ -10821,7 +10776,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0573",
+   "node_id": "PER-0570",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kruescher Peter",
@@ -10836,7 +10791,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0574",
+   "node_id": "PER-0571",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimerz[?] Gnoy",
@@ -10851,7 +10806,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0575",
+   "node_id": "PER-0572",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Urbas Gregor",
@@ -10866,7 +10821,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0576",
+   "node_id": "PER-0573",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Georg",
@@ -10881,7 +10836,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0577",
+   "node_id": "PER-0574",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Johann Georg",
@@ -10896,7 +10851,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0578",
+   "node_id": "PER-0575",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Georg.",
@@ -10911,7 +10866,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0579",
+   "node_id": "PER-0576",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Wenzl",
@@ -10926,7 +10881,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0580",
+   "node_id": "PER-0577",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimerz Georg",
@@ -10941,7 +10896,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0581",
+   "node_id": "PER-0578",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimerz Martha",
@@ -10956,7 +10911,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0582",
+   "node_id": "PER-0579",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimerz[?] Marko[?]",
@@ -10971,7 +10926,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0583",
+   "node_id": "PER-0580",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Martho",
@@ -10986,7 +10941,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0584",
+   "node_id": "PER-0581",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Marthe",
@@ -11001,7 +10956,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0585",
+   "node_id": "PER-0582",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Mache[?]",
@@ -11016,7 +10971,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0586",
+   "node_id": "PER-0583",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Muster",
@@ -11031,7 +10986,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0587",
+   "node_id": "PER-0584",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Matthäus Muster",
@@ -11046,7 +11001,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0588",
+   "node_id": "PER-0585",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fidriz Martha",
@@ -11061,7 +11016,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0589",
+   "node_id": "PER-0586",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Poldi Muster",
@@ -11076,7 +11031,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0590",
+   "node_id": "PER-0587",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Benedikt Muster",
@@ -11091,7 +11046,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0591",
+   "node_id": "PER-0588",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavlicz Mihajl",
@@ -11106,7 +11061,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0592",
+   "node_id": "PER-0589",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ederling Matija",
@@ -11121,7 +11076,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0593",
+   "node_id": "PER-0590",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavšič Matija",
@@ -11136,7 +11091,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0594",
+   "node_id": "PER-0591",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Paulah Mutha",
@@ -11151,7 +11106,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0595",
+   "node_id": "PER-0592",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pauling Walfja",
@@ -11166,7 +11121,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0596",
+   "node_id": "PER-0593",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Malfg",
@@ -11181,7 +11136,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0597",
+   "node_id": "PER-0594",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Röding Andre",
@@ -11196,7 +11151,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0598",
+   "node_id": "PER-0595",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Röding georg",
@@ -11211,7 +11166,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0599",
+   "node_id": "PER-0596",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Röding marthe",
@@ -11226,7 +11181,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0600",
+   "node_id": "PER-0597",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Rödig georg",
@@ -11241,7 +11196,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0601",
+   "node_id": "PER-0598",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Rödig matthl",
@@ -11256,7 +11211,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0602",
+   "node_id": "PER-0599",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pobezy Michel",
@@ -11271,7 +11226,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0603",
+   "node_id": "PER-0600",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pichler[?] Mathl[?]",
@@ -11286,7 +11241,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0604",
+   "node_id": "PER-0601",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Prinz Michl",
@@ -11301,7 +11256,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0605",
+   "node_id": "PER-0602",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Mathl.[?]",
@@ -11316,7 +11271,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0606",
+   "node_id": "PER-0603",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pesian Georg[?]",
@@ -11331,7 +11286,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0607",
+   "node_id": "PER-0604",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Muster",
@@ -11346,7 +11301,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0608",
+   "node_id": "PER-0605",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fidriz Georg",
@@ -11361,7 +11316,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0609",
+   "node_id": "PER-0606",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peinig Georg",
@@ -11376,7 +11331,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0610",
+   "node_id": "PER-0607",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Poldi Gnoy",
@@ -11391,7 +11346,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0611",
+   "node_id": "PER-0608",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavlicz Gregor",
@@ -11406,7 +11361,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0612",
+   "node_id": "PER-0609",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavšič Jurij",
@@ -11421,7 +11376,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0613",
+   "node_id": "PER-0610",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavčič Jurij",
@@ -11436,7 +11391,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0614",
+   "node_id": "PER-0611",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pauling grozj",
@@ -11451,7 +11406,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0615",
+   "node_id": "PER-0612",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Georg Gorgy",
@@ -11466,7 +11421,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0616",
+   "node_id": "PER-0613",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Grang",
@@ -11481,7 +11436,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0617",
+   "node_id": "PER-0614",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Malfg",
@@ -11496,7 +11451,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0618",
+   "node_id": "PER-0615",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Michel Grang",
@@ -11511,7 +11466,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0619",
+   "node_id": "PER-0616",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pobezy Georg",
@@ -11526,7 +11481,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0620",
+   "node_id": "PER-0617",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pichler[?] Georg",
@@ -11541,7 +11496,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0621",
+   "node_id": "PER-0618",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Gorgy.[?]",
@@ -11556,7 +11511,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0622",
+   "node_id": "PER-0619",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peter Muster",
@@ -11571,7 +11526,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0623",
+   "node_id": "PER-0620",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Poldi Muster",
@@ -11586,7 +11541,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0624",
+   "node_id": "PER-0621",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavlicz Mihajl",
@@ -11601,7 +11556,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0625",
+   "node_id": "PER-0622",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavšič Matija",
@@ -11616,7 +11571,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0626",
+   "node_id": "PER-0623",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pauling Walfja",
@@ -11631,7 +11586,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0627",
+   "node_id": "PER-0624",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Rödig Matthl.",
@@ -11646,7 +11601,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0628",
+   "node_id": "PER-0625",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Rödig matthi",
@@ -11661,7 +11616,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0629",
+   "node_id": "PER-0626",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Mathel.[?]",
@@ -11676,7 +11631,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0630",
+   "node_id": "PER-0627",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Mathl.[?]",
@@ -11691,7 +11646,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0631",
+   "node_id": "PER-0628",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Peter",
@@ -11706,7 +11661,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0632",
+   "node_id": "PER-0629",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Shumey Michael",
@@ -11721,7 +11676,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0633",
+   "node_id": "PER-0630",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Shumey Joan",
@@ -11736,7 +11691,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0634",
+   "node_id": "PER-0631",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kunsthof Wenzl",
@@ -11751,7 +11706,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0635",
+   "node_id": "PER-0632",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Barbara Muster",
@@ -11766,7 +11721,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0636",
+   "node_id": "PER-0633",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hansp[?] Gnoy",
@@ -11781,7 +11736,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0637",
+   "node_id": "PER-0634",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brusla Mihlo",
@@ -11796,7 +11751,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0638",
+   "node_id": "PER-0635",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavšič Janez",
@@ -11811,7 +11766,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0639",
+   "node_id": "PER-0636",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Leischar Gregor",
@@ -11826,7 +11781,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0640",
+   "node_id": "PER-0637",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bresniko",
@@ -11841,7 +11796,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0641",
+   "node_id": "PER-0638",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavolle stich",
@@ -11856,7 +11811,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0642",
+   "node_id": "PER-0639",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brulla Michl[?]",
@@ -11871,7 +11826,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0643",
+   "node_id": "PER-0640",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brulla Mich.[?]",
@@ -11886,7 +11841,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0644",
+   "node_id": "PER-0641",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brulla Maria.",
@@ -11901,7 +11856,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0645",
+   "node_id": "PER-0642",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Matthäus Muster",
@@ -11916,7 +11871,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0646",
+   "node_id": "PER-0643",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hausleith Manko",
@@ -11931,7 +11886,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0647",
+   "node_id": "PER-0644",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Husarlt Manko",
@@ -11946,7 +11901,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0648",
+   "node_id": "PER-0645",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Mache",
@@ -11961,7 +11916,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0649",
+   "node_id": "PER-0646",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Husitsch Maria",
@@ -11976,7 +11931,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0650",
+   "node_id": "PER-0647",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Husitsch Maria[?]",
@@ -11991,7 +11946,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0651",
+   "node_id": "PER-0648",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hantschitsch Marth",
@@ -12006,7 +11961,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0652",
+   "node_id": "PER-0649",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Poschinger Joseph",
@@ -12021,7 +11976,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0653",
+   "node_id": "PER-0650",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Strauß Georg",
@@ -12036,7 +11991,22 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0654",
+   "node_id": "PER-0651",
+   "node_type": "PERSON",
+   "type_label": "oseba",
+   "label": "(R)abitscher Georg",
+   "evidence_status": "SINGLE_SOURCE",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "name_original": "(R)abitscher Georg",
+   "person_type": "owner(ps)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "degree": 0
+  },
+  {
+   "node_id": "PER-0652",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöllitzer Mathej",
@@ -12051,7 +12021,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0655",
+   "node_id": "PER-0653",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hlahotshar Mathej",
@@ -12066,7 +12036,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0656",
+   "node_id": "PER-0654",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Preßker Georg",
@@ -12081,7 +12051,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0657",
+   "node_id": "PER-0655",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krause Georg",
@@ -12096,7 +12066,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0658",
+   "node_id": "PER-0656",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krause Gorgy",
@@ -12111,7 +12081,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0659",
+   "node_id": "PER-0657",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lopretz Michl",
@@ -12126,7 +12096,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0660",
+   "node_id": "PER-0658",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Loppretz Michl",
@@ -12141,7 +12111,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0661",
+   "node_id": "PER-0659",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stangl Georg",
@@ -12156,7 +12126,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0662",
+   "node_id": "PER-0660",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Strauß Georgy.[?]",
@@ -12171,7 +12141,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0663",
+   "node_id": "PER-0661",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Strauß Georg",
@@ -12186,7 +12156,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0664",
+   "node_id": "PER-0662",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kristof Muster",
@@ -12201,7 +12171,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0665",
+   "node_id": "PER-0663",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Michelkorn Peter[?]",
@@ -12216,7 +12186,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0666",
+   "node_id": "PER-0664",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ajobatschar Pottra[?]",
@@ -12231,7 +12201,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0667",
+   "node_id": "PER-0665",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "(R)abitscher Marbl",
@@ -12246,7 +12216,22 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0668",
+   "node_id": "PER-0666",
+   "node_type": "PERSON",
+   "type_label": "oseba",
+   "label": "Strauß Georg",
+   "evidence_status": "SINGLE_SOURCE",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "name_original": "Strauß Georg",
+   "person_type": "owner(ps)",
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
+   "degree": 0
+  },
+  {
+   "node_id": "PER-0667",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ursch Peter",
@@ -12261,7 +12246,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0669",
+   "node_id": "PER-0668",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hrabotlar Marha",
@@ -12276,7 +12261,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0670",
+   "node_id": "PER-0669",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hlahotshar Georg",
@@ -12291,7 +12276,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0671",
+   "node_id": "PER-0670",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hlahotshar Mathej",
@@ -12306,7 +12291,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0672",
+   "node_id": "PER-0671",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Khristofer Muster",
@@ -12321,7 +12306,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0673",
+   "node_id": "PER-0672",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hlebšatar Miha",
@@ -12336,7 +12321,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0674",
+   "node_id": "PER-0673",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hahnsdorfer Alosche",
@@ -12351,7 +12336,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0675",
+   "node_id": "PER-0674",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Habschider Marth",
@@ -12366,7 +12351,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0676",
+   "node_id": "PER-0675",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Michelkorn Michel",
@@ -12381,7 +12366,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0677",
+   "node_id": "PER-0676",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hladnikhar[?] Marko",
@@ -12396,7 +12381,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0678",
+   "node_id": "PER-0677",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "(R)abitscher Georg",
@@ -12406,12 +12391,12 @@
    ],
    "name_original": "(R)abitscher Georg",
    "person_type": "owner(ps)",
-   "possible_duplicate": false,
-   "merge_decision": null,
+   "possible_duplicate": true,
+   "merge_decision": "NOT_MERGED",
    "degree": 1
   },
   {
-   "node_id": "PER-0679",
+   "node_id": "PER-0678",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Khristofer Gnoy",
@@ -12426,7 +12411,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0680",
+   "node_id": "PER-0679",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hampel Jurij",
@@ -12441,7 +12426,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0681",
+   "node_id": "PER-0680",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hahnsdorfer Georg",
@@ -12456,7 +12441,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0682",
+   "node_id": "PER-0681",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Habschider Georg",
@@ -12471,7 +12456,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0683",
+   "node_id": "PER-0682",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Blakutscher Georg[?]",
@@ -12486,7 +12471,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0684",
+   "node_id": "PER-0683",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hladnikhar[?] Georg.",
@@ -12501,6 +12486,21 @@
    "degree": 0
   },
   {
+   "node_id": "PER-0684",
+   "node_type": "PERSON",
+   "type_label": "oseba",
+   "label": "Schimecz Mihual",
+   "evidence_status": "SINGLE_SOURCE",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "name_original": "Schimecz Mihual",
+   "person_type": "owner(ps)",
+   "possible_duplicate": false,
+   "merge_decision": null,
+   "degree": 1
+  },
+  {
    "node_id": "PER-0685",
    "node_type": "PERSON",
    "type_label": "oseba",
@@ -12513,7 +12513,7 @@
    "person_type": "owner(ps)",
    "possible_duplicate": false,
    "merge_decision": null,
-   "degree": 1
+   "degree": 0
   },
   {
    "node_id": "PER-0686",
@@ -12594,12 +12594,12 @@
    "node_id": "PER-0691",
    "node_type": "PERSON",
    "type_label": "oseba",
-   "label": "Poiding Matthl",
+   "label": "Pödigz Marusa",
    "evidence_status": "SINGLE_SOURCE",
    "source_ids": [
     "SRC-PS"
    ],
-   "name_original": "Poiding Matthl",
+   "name_original": "Pödigz Marusa",
    "person_type": "owner(ps)",
    "possible_duplicate": false,
    "merge_decision": null,
@@ -12924,6 +12924,21 @@
    "node_id": "PER-0713",
    "node_type": "PERSON",
    "type_label": "oseba",
+   "label": "Pödigz Hanl",
+   "evidence_status": "SINGLE_SOURCE",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "name_original": "Pödigz Hanl",
+   "person_type": "owner(ps)",
+   "possible_duplicate": false,
+   "merge_decision": null,
+   "degree": 0
+  },
+  {
+   "node_id": "PER-0714",
+   "node_type": "PERSON",
+   "type_label": "oseba",
    "label": "Pustig Johan",
    "evidence_status": "SINGLE_SOURCE",
    "source_ids": [
@@ -12936,7 +12951,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0714",
+   "node_id": "PER-0715",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schlomnitz Johan",
@@ -12951,7 +12966,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0715",
+   "node_id": "PER-0716",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Rudischer Georg",
@@ -12966,7 +12981,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0716",
+   "node_id": "PER-0717",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lappary Marbl",
@@ -12976,12 +12991,12 @@
    ],
    "name_original": "Lappary Marbl",
    "person_type": "owner(ps)",
-   "possible_duplicate": true,
-   "merge_decision": "NOT_MERGED",
+   "possible_duplicate": false,
+   "merge_decision": null,
    "degree": 1
   },
   {
-   "node_id": "PER-0717",
+   "node_id": "PER-0718",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lappary Mihel",
@@ -12996,7 +13011,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0718",
+   "node_id": "PER-0719",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lapajner Andre",
@@ -13011,7 +13026,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0719",
+   "node_id": "PER-0720",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lapajner Mike",
@@ -13026,7 +13041,22 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0720",
+   "node_id": "PER-0721",
+   "node_type": "PERSON",
+   "type_label": "oseba",
+   "label": "Schimez Hanl",
+   "evidence_status": "SINGLE_SOURCE",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "name_original": "Schimez Hanl",
+   "person_type": "owner(ps)",
+   "possible_duplicate": false,
+   "merge_decision": null,
+   "degree": 1
+  },
+  {
+   "node_id": "PER-0722",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Jacob",
@@ -13038,10 +13068,10 @@
    "person_type": "owner(ps)",
    "possible_duplicate": false,
    "merge_decision": null,
-   "degree": 1
+   "degree": 0
   },
   {
-   "node_id": "PER-0721",
+   "node_id": "PER-0723",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Urbas Janez",
@@ -13056,7 +13086,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0722",
+   "node_id": "PER-0724",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Thimaz John",
@@ -13071,7 +13101,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0723",
+   "node_id": "PER-0725",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Thomas Johan",
@@ -13086,7 +13116,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0724",
+   "node_id": "PER-0726",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Shimerz Johan",
@@ -13101,7 +13131,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0725",
+   "node_id": "PER-0727",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schlomnitz Johan",
@@ -13116,7 +13146,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0726",
+   "node_id": "PER-0728",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimetz Leon.[?]",
@@ -13131,7 +13161,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0727",
+   "node_id": "PER-0729",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schiney Johan[?]",
@@ -13146,7 +13176,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0728",
+   "node_id": "PER-0730",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimay Peter",
@@ -13161,7 +13191,22 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0729",
+   "node_id": "PER-0731",
+   "node_type": "PERSON",
+   "type_label": "oseba",
+   "label": "Schimez P…a",
+   "evidence_status": "SINGLE_SOURCE",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "name_original": "Schimez P…a",
+   "person_type": "owner(ps)",
+   "possible_duplicate": false,
+   "merge_decision": null,
+   "degree": 0
+  },
+  {
+   "node_id": "PER-0732",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimer Peter",
@@ -13176,7 +13221,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0730",
+   "node_id": "PER-0733",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Škofic Jakob",
@@ -13191,7 +13236,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0731",
+   "node_id": "PER-0734",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Thimaz Johan",
@@ -13206,7 +13251,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0732",
+   "node_id": "PER-0735",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Shimerz Johan",
@@ -13221,7 +13266,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0733",
+   "node_id": "PER-0736",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schlomnitz Peter",
@@ -13236,7 +13281,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0734",
+   "node_id": "PER-0737",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimetz Peter.[?]",
@@ -13251,7 +13296,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0735",
+   "node_id": "PER-0738",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Križnar Matija",
@@ -13266,7 +13311,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0736",
+   "node_id": "PER-0739",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pogacar Michl",
@@ -13281,7 +13326,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0737",
+   "node_id": "PER-0740",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavlicz Janez",
@@ -13296,7 +13341,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0738",
+   "node_id": "PER-0741",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hlebšatar Janez",
@@ -13311,7 +13356,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0739",
+   "node_id": "PER-0742",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schlomnitz Peter",
@@ -13326,7 +13371,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0740",
+   "node_id": "PER-0743",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pechl[?] Joann",
@@ -13341,7 +13386,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0741",
+   "node_id": "PER-0744",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pedian Svian[?]",
@@ -13356,7 +13401,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0742",
+   "node_id": "PER-0745",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lappartt Mike",
@@ -13371,7 +13416,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0743",
+   "node_id": "PER-0746",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Poders Ivan",
@@ -13386,7 +13431,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0744",
+   "node_id": "PER-0747",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavšič Janez",
@@ -13401,7 +13446,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0745",
+   "node_id": "PER-0748",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schello Gay[?]",
@@ -13416,7 +13461,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0746",
+   "node_id": "PER-0749",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Mhelhadapes[?]",
@@ -13431,7 +13476,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0747",
+   "node_id": "PER-0750",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Shello Gay[?]/Mhell Gay[?]",
@@ -13446,7 +13491,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0748",
+   "node_id": "PER-0751",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirschan Georg",
@@ -13461,7 +13506,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0749",
+   "node_id": "PER-0752",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schellko Joseph",
@@ -13476,7 +13521,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0750",
+   "node_id": "PER-0753",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schellko Josef",
@@ -13491,7 +13536,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0751",
+   "node_id": "PER-0754",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Miklavčič Lovrenc",
@@ -13506,7 +13551,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0752",
+   "node_id": "PER-0755",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pauling Walfja",
@@ -13521,7 +13566,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0753",
+   "node_id": "PER-0756",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Husarlt Manko",
@@ -13536,7 +13581,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0754",
+   "node_id": "PER-0757",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Gorgy",
@@ -13551,7 +13596,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0755",
+   "node_id": "PER-0758",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schelle Augusta",
@@ -13566,7 +13611,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0756",
+   "node_id": "PER-0759",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schelle Jank[?]",
@@ -13581,7 +13626,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0757",
+   "node_id": "PER-0760",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krbitschan Mahs[?]",
@@ -13596,7 +13641,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0758",
+   "node_id": "PER-0761",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fillah Mäda[?]",
@@ -13611,7 +13656,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0759",
+   "node_id": "PER-0762",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Feldt Mäda",
@@ -13626,7 +13671,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0760",
+   "node_id": "PER-0763",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Etrich Peter",
@@ -13641,7 +13686,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0761",
+   "node_id": "PER-0764",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Shumey Peter",
@@ -13656,7 +13701,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0762",
+   "node_id": "PER-0765",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Straupf Georg",
@@ -13671,7 +13716,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0763",
+   "node_id": "PER-0766",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brusnigg Georg",
@@ -13686,7 +13731,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0764",
+   "node_id": "PER-0767",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Eidlald Pirkh",
@@ -13701,7 +13746,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0765",
+   "node_id": "PER-0768",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lovschan Mihlo",
@@ -13716,7 +13761,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0766",
+   "node_id": "PER-0769",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tschak Mihlo",
@@ -13731,7 +13776,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0767",
+   "node_id": "PER-0770",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Jerala Miha",
@@ -13746,7 +13791,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0768",
+   "node_id": "PER-0771",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillach Michl.[?]",
@@ -13761,7 +13806,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0769",
+   "node_id": "PER-0772",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Pottra",
@@ -13776,7 +13821,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0770",
+   "node_id": "PER-0773",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirschan Georg[?]",
@@ -13791,7 +13836,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0771",
+   "node_id": "PER-0774",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirschan Mihel[?]",
@@ -13806,7 +13851,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0772",
+   "node_id": "PER-0775",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirschan Mäda[?]",
@@ -13821,7 +13866,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0773",
+   "node_id": "PER-0776",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirschan Mäda",
@@ -13836,7 +13881,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0774",
+   "node_id": "PER-0777",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Urich Georg",
@@ -13851,7 +13896,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0775",
+   "node_id": "PER-0778",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kovickan Miha",
@@ -13866,7 +13911,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0776",
+   "node_id": "PER-0779",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Križnar Jurij",
@@ -13881,7 +13926,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0777",
+   "node_id": "PER-0780",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pernig Manko",
@@ -13896,7 +13941,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0778",
+   "node_id": "PER-0781",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lenciklar Mihlo",
@@ -13911,7 +13956,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0779",
+   "node_id": "PER-0782",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Mache",
@@ -13926,7 +13971,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0780",
+   "node_id": "PER-0783",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Gorgy",
@@ -13941,7 +13986,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0781",
+   "node_id": "PER-0784",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Matho[?]",
@@ -13956,7 +14001,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0782",
+   "node_id": "PER-0785",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Malfg",
@@ -13971,7 +14016,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0783",
+   "node_id": "PER-0786",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Michl.[?]",
@@ -13986,7 +14031,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0784",
+   "node_id": "PER-0787",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirschan Georg[?]",
@@ -14001,7 +14046,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0785",
+   "node_id": "PER-0788",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fring Masko[?]",
@@ -14016,22 +14061,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0786",
-   "node_type": "PERSON",
-   "type_label": "oseba",
-   "label": "Poiding Hanl",
-   "evidence_status": "SINGLE_SOURCE",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "name_original": "Poiding Hanl",
-   "person_type": "owner(ps)",
-   "possible_duplicate": false,
-   "merge_decision": null,
-   "degree": 0
-  },
-  {
-   "node_id": "PER-0787",
+   "node_id": "PER-0789",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Braupf Hanns",
@@ -14046,7 +14076,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0788",
+   "node_id": "PER-0790",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kovick Mihel",
@@ -14061,7 +14091,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0789",
+   "node_id": "PER-0791",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Javornik Martin",
@@ -14076,7 +14106,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0790",
+   "node_id": "PER-0792",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Leischar Gregor",
@@ -14091,7 +14121,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0791",
+   "node_id": "PER-0793",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Gorgy",
@@ -14106,7 +14136,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0792",
+   "node_id": "PER-0794",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -14121,7 +14151,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0793",
+   "node_id": "PER-0795",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Urban Pankrazgall",
@@ -14136,7 +14166,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0794",
+   "node_id": "PER-0796",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kerbitacher Masfa[?]",
@@ -14151,7 +14181,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0795",
+   "node_id": "PER-0797",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Herbstuter Wurfl",
@@ -14166,7 +14196,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0796",
+   "node_id": "PER-0798",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavšič Miha",
@@ -14181,7 +14211,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0797",
+   "node_id": "PER-0799",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kreutthaler Walth",
@@ -14196,7 +14226,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0798",
+   "node_id": "PER-0800",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Puchey Georg",
@@ -14211,7 +14241,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0799",
+   "node_id": "PER-0801",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bring Mäda[?]",
@@ -14226,7 +14256,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0800",
+   "node_id": "PER-0802",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Prian Masko[?]",
@@ -14241,7 +14271,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0801",
+   "node_id": "PER-0803",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimeczkhanl",
@@ -14256,7 +14286,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0802",
+   "node_id": "PER-0804",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimec Ivan",
@@ -14271,7 +14301,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0803",
+   "node_id": "PER-0805",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bering Manko",
@@ -14286,7 +14316,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0804",
+   "node_id": "PER-0806",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Martho.[?]",
@@ -14301,7 +14331,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0805",
+   "node_id": "PER-0807",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimetz Leon.[?]",
@@ -14316,7 +14346,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0806",
+   "node_id": "PER-0808",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kirschan Georg[?]",
@@ -14331,7 +14361,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0807",
+   "node_id": "PER-0809",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Blomuscher Franz",
@@ -14346,7 +14376,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0808",
+   "node_id": "PER-0810",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Fellner Michl",
@@ -14361,7 +14391,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0809",
+   "node_id": "PER-0811",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "V. Hronzginen",
@@ -14376,7 +14406,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0810",
+   "node_id": "PER-0812",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -14391,7 +14421,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0811",
+   "node_id": "PER-0813",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hrabotar Marha",
@@ -14406,7 +14436,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0812",
+   "node_id": "PER-0814",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavlicz Georg[?]",
@@ -14421,7 +14451,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0813",
+   "node_id": "PER-0815",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavlič Georg",
@@ -14436,7 +14466,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0814",
+   "node_id": "PER-0816",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pavlic Georg",
@@ -14451,7 +14481,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0815",
+   "node_id": "PER-0817",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pachegg Georg",
@@ -14466,7 +14496,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0816",
+   "node_id": "PER-0818",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Paching Georg",
@@ -14481,7 +14511,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0817",
+   "node_id": "PER-0819",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Puchey Georg.",
@@ -14496,7 +14526,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0818",
+   "node_id": "PER-0820",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Muth Peter",
@@ -14511,7 +14541,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0819",
+   "node_id": "PER-0821",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hoch Mito[?]",
@@ -14526,7 +14556,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0820",
+   "node_id": "PER-0822",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Michel.[?]",
@@ -14541,7 +14571,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0821",
+   "node_id": "PER-0823",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Mich.[?]",
@@ -14556,7 +14586,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0822",
+   "node_id": "PER-0824",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Michl",
@@ -14571,7 +14601,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0823",
+   "node_id": "PER-0825",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimey Wenzel",
@@ -14586,7 +14616,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0824",
+   "node_id": "PER-0826",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pawitsch Mathäus",
@@ -14601,7 +14631,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0825",
+   "node_id": "PER-0827",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Leischar Gregor",
@@ -14616,7 +14646,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0826",
+   "node_id": "PER-0828",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hirschegger Walburg",
@@ -14631,7 +14661,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0827",
+   "node_id": "PER-0829",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Linden matte",
@@ -14646,7 +14676,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0828",
+   "node_id": "PER-0830",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Matthe.",
@@ -14661,7 +14691,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0829",
+   "node_id": "PER-0831",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Michely Soon",
@@ -14676,7 +14706,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0830",
+   "node_id": "PER-0832",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Christan Bräutig",
@@ -14691,22 +14721,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0831",
-   "node_type": "PERSON",
-   "type_label": "oseba",
-   "label": "Peders Marbl",
-   "evidence_status": "SINGLE_SOURCE",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "name_original": "Peders Marbl",
-   "person_type": "owner(ps)",
-   "possible_duplicate": false,
-   "merge_decision": null,
-   "degree": 1
-  },
-  {
-   "node_id": "PER-0832",
+   "node_id": "PER-0833",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Preßker Georg",
@@ -14718,10 +14733,10 @@
    "person_type": "owner(ps)",
    "possible_duplicate": true,
    "merge_decision": "NOT_MERGED",
-   "degree": 0
+   "degree": 1
   },
   {
-   "node_id": "PER-0833",
+   "node_id": "PER-0834",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pauling Walfja",
@@ -14736,7 +14751,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0834",
+   "node_id": "PER-0835",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ponter, Mathl.[?]",
@@ -14751,7 +14766,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0835",
+   "node_id": "PER-0836",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Peter",
@@ -14766,7 +14781,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0836",
+   "node_id": "PER-0837",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Shumey Peter",
@@ -14781,7 +14796,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0837",
+   "node_id": "PER-0838",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Parbna.[?]",
@@ -14796,7 +14811,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0838",
+   "node_id": "PER-0839",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pečnik Mathej",
@@ -14811,7 +14826,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0839",
+   "node_id": "PER-0840",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Priškar Jelen",
@@ -14826,7 +14841,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0840",
+   "node_id": "PER-0841",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brulla Maria.[?]",
@@ -14841,7 +14856,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0841",
+   "node_id": "PER-0842",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ponter, Mathl.[?]",
@@ -14856,7 +14871,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0842",
+   "node_id": "PER-0843",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ponter, Gorgy.[?]",
@@ -14871,7 +14886,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0843",
+   "node_id": "PER-0844",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pölling Wolf",
@@ -14886,7 +14901,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0844",
+   "node_id": "PER-0845",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ponter, Mathl.[?]",
@@ -14901,7 +14916,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0845",
+   "node_id": "PER-0846",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ponter, Martin.[?]",
@@ -14916,7 +14931,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0846",
+   "node_id": "PER-0847",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ravella, Michl",
@@ -14931,7 +14946,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0847",
+   "node_id": "PER-0848",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Rudolf Mihael",
@@ -14946,7 +14961,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0848",
+   "node_id": "PER-0849",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hlahotshar Georg",
@@ -14961,7 +14976,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0849",
+   "node_id": "PER-0850",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Bratula Mihael",
@@ -14976,7 +14991,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0850",
+   "node_id": "PER-0851",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brullat Michl",
@@ -14991,7 +15006,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0851",
+   "node_id": "PER-0852",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Straußfing Georg",
@@ -15006,7 +15021,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0852",
+   "node_id": "PER-0853",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hanefl Georg",
@@ -15021,7 +15036,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0853",
+   "node_id": "PER-0854",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Urich Mäda",
@@ -15036,7 +15051,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0854",
+   "node_id": "PER-0855",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pölling Joan",
@@ -15051,7 +15066,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0855",
+   "node_id": "PER-0856",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Deleshitzkh Marßfid.[?]",
@@ -15066,7 +15081,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0856",
+   "node_id": "PER-0857",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Novak Michael.",
@@ -15081,7 +15096,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0857",
+   "node_id": "PER-0858",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Baronial Zallant.[?]",
@@ -15096,7 +15111,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0858",
+   "node_id": "PER-0859",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peodvin Grany.",
@@ -15111,7 +15126,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0859",
+   "node_id": "PER-0860",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schaffschick Mathl.[?]",
@@ -15126,7 +15141,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0860",
+   "node_id": "PER-0861",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lubreschibek Maathe.[?]",
@@ -15141,7 +15156,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0861",
+   "node_id": "PER-0862",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brulla Michl.[?]",
@@ -15156,7 +15171,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0862",
+   "node_id": "PER-0863",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tallafschibek Nicholay.[?]",
@@ -15171,7 +15186,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0863",
+   "node_id": "PER-0864",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hnall Scomne.[?]",
@@ -15186,7 +15201,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0864",
+   "node_id": "PER-0865",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Novak Martlin.",
@@ -15201,7 +15216,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0865",
+   "node_id": "PER-0866",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimick Peter.[?]",
@@ -15216,7 +15231,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0866",
+   "node_id": "PER-0867",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimek Peter.",
@@ -15231,7 +15246,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0867",
+   "node_id": "PER-0868",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hnall Miho.",
@@ -15246,7 +15261,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0868",
+   "node_id": "PER-0869",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tallafschibek Nübelz.[?]",
@@ -15261,7 +15276,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0869",
+   "node_id": "PER-0870",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Huischan Matthe.[?]",
@@ -15276,7 +15291,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0870",
+   "node_id": "PER-0871",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching Michael",
@@ -15291,7 +15306,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0871",
+   "node_id": "PER-0872",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching Michl.[?]",
@@ -15306,7 +15321,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0872",
+   "node_id": "PER-0873",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Leppanig (Michl)",
@@ -15321,7 +15336,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0873",
+   "node_id": "PER-0874",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müllner Johann",
@@ -15336,7 +15351,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0874",
+   "node_id": "PER-0875",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Mathä.[?]",
@@ -15351,7 +15366,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0875",
+   "node_id": "PER-0876",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schönig (Simon)",
@@ -15366,7 +15381,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0876",
+   "node_id": "PER-0877",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michael.",
@@ -15381,7 +15396,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0877",
+   "node_id": "PER-0878",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Michl.[?]",
@@ -15396,7 +15411,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0878",
+   "node_id": "PER-0879",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Müllner Samuel.",
@@ -15411,7 +15426,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0879",
+   "node_id": "PER-0880",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Heide Marko.",
@@ -15426,7 +15441,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0880",
+   "node_id": "PER-0881",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wunderling",
@@ -15441,7 +15456,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0881",
+   "node_id": "PER-0882",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Georg.[?]",
@@ -15456,7 +15471,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0882",
+   "node_id": "PER-0883",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Grany.[?]",
@@ -15471,7 +15486,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0883",
+   "node_id": "PER-0884",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lubreschibek Draastho.[?]",
@@ -15486,7 +15501,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0884",
+   "node_id": "PER-0885",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching Johann.",
@@ -15501,7 +15516,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0885",
+   "node_id": "PER-0886",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Gorgy.[?]",
@@ -15516,7 +15531,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0886",
+   "node_id": "PER-0887",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Mathel.[?]",
@@ -15531,7 +15546,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0887",
+   "node_id": "PER-0888",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brulla Michl.[?]",
@@ -15546,7 +15561,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0888",
+   "node_id": "PER-0889",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimek Micha.[?]",
@@ -15561,7 +15576,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0889",
+   "node_id": "PER-0890",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Dragasch (Jure)",
@@ -15576,7 +15591,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0890",
+   "node_id": "PER-0891",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Dragasch (Jurij)",
@@ -15591,7 +15606,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0891",
+   "node_id": "PER-0892",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Mathel.[?]",
@@ -15606,7 +15621,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0892",
+   "node_id": "PER-0893",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Peter.[?]",
@@ -15621,7 +15636,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0893",
+   "node_id": "PER-0894",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Peodvin Swan.[?]",
@@ -15636,7 +15651,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0894",
+   "node_id": "PER-0895",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schellko Joseph.",
@@ -15651,7 +15666,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0895",
+   "node_id": "PER-0896",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -15666,7 +15681,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0896",
+   "node_id": "PER-0897",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillach Michl.[?]",
@@ -15681,7 +15696,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0897",
+   "node_id": "PER-0898",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -15696,7 +15711,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0898",
+   "node_id": "PER-0899",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Gorgy.[?]",
@@ -15711,7 +15726,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0899",
+   "node_id": "PER-0900",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Veritschan Mathl.[?]",
@@ -15726,7 +15741,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0900",
+   "node_id": "PER-0901",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Dorothea.[?]",
@@ -15741,7 +15756,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0901",
+   "node_id": "PER-0902",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Martho.[?]",
@@ -15756,7 +15771,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0902",
+   "node_id": "PER-0903",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -15771,7 +15786,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0903",
+   "node_id": "PER-0904",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Michl.",
@@ -15786,7 +15801,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0904",
+   "node_id": "PER-0905",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Miho.",
@@ -15801,7 +15816,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0905",
+   "node_id": "PER-0906",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tallafschibek Draelte.[?]",
@@ -15816,7 +15831,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0906",
+   "node_id": "PER-0907",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Jannowitz",
@@ -15831,7 +15846,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0907",
+   "node_id": "PER-0908",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kranvel Michael[?]",
@@ -15846,7 +15861,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0908",
+   "node_id": "PER-0909",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Piberl",
@@ -15861,7 +15876,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0909",
+   "node_id": "PER-0910",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching. Georgy.[?]",
@@ -15876,7 +15891,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0910",
+   "node_id": "PER-0911",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pirker Mühle",
@@ -15891,7 +15906,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0911",
+   "node_id": "PER-0912",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pesding Miade[?]",
@@ -15906,7 +15921,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0912",
+   "node_id": "PER-0913",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Khall Marie.[?]",
@@ -15921,7 +15936,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0913",
+   "node_id": "PER-0914",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Mitterp.",
@@ -15936,7 +15951,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0914",
+   "node_id": "PER-0915",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallh. Mühle",
@@ -15951,7 +15966,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0915",
+   "node_id": "PER-0916",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallh. W. Mühle",
@@ -15966,7 +15981,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0916",
+   "node_id": "PER-0917",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallh Mičo[?]",
@@ -15981,7 +15996,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0917",
+   "node_id": "PER-0918",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Khall Johanne.[?]",
@@ -15996,7 +16011,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0918",
+   "node_id": "PER-0919",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimetz Peter.[?]",
@@ -16011,7 +16026,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0919",
+   "node_id": "PER-0920",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Piberl",
@@ -16026,7 +16041,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0920",
+   "node_id": "PER-0921",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimey Michael",
@@ -16041,7 +16056,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0921",
+   "node_id": "PER-0922",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schiney Malga[?]",
@@ -16056,7 +16071,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0922",
+   "node_id": "PER-0923",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Mitterp.",
@@ -16071,7 +16086,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0923",
+   "node_id": "PER-0924",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pöching Michl.[?]",
@@ -16086,7 +16101,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0924",
+   "node_id": "PER-0925",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Abiney Pottna[?]",
@@ -16101,7 +16116,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0925",
+   "node_id": "PER-0926",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Weinchan Matthe[?]",
@@ -16116,7 +16131,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0926",
+   "node_id": "PER-0927",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Georg",
@@ -16131,7 +16146,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0927",
+   "node_id": "PER-0928",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Novak Martin",
@@ -16146,7 +16161,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0928",
+   "node_id": "PER-0929",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Vallafschübl Matthe[?]",
@@ -16161,7 +16176,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0929",
+   "node_id": "PER-0930",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimetz Michael.",
@@ -16176,7 +16191,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0930",
+   "node_id": "PER-0931",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimey Michael",
@@ -16191,7 +16206,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0931",
+   "node_id": "PER-0932",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Kraubgel Sveb[?]",
@@ -16206,7 +16221,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0932",
+   "node_id": "PER-0933",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stanly d Sury[?]",
@@ -16221,7 +16236,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0933",
+   "node_id": "PER-0934",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stratzl Johan[?]",
@@ -16236,7 +16251,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0934",
+   "node_id": "PER-0935",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Hantzel Jha",
@@ -16251,7 +16266,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0935",
+   "node_id": "PER-0936",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Lüding Malga[?]",
@@ -16266,7 +16281,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0936",
+   "node_id": "PER-0937",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Pesding Marlga[?]",
@@ -16281,7 +16296,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0937",
+   "node_id": "PER-0938",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Brenk Johan[?]",
@@ -16296,7 +16311,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0938",
+   "node_id": "PER-0939",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Urick Jakim[?]",
@@ -16311,7 +16326,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0939",
+   "node_id": "PER-0940",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Luppraz Maria.[?]",
@@ -16326,7 +16341,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0940",
+   "node_id": "PER-0941",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schiney Johan",
@@ -16341,7 +16356,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0941",
+   "node_id": "PER-0942",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimey Johan",
@@ -16356,7 +16371,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0942",
+   "node_id": "PER-0943",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Gland",
@@ -16371,7 +16386,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0943",
+   "node_id": "PER-0944",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schiney Juba[?]",
@@ -16386,7 +16401,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0944",
+   "node_id": "PER-0945",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schimey Johan",
@@ -16401,7 +16416,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0945",
+   "node_id": "PER-0946",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Piberl",
@@ -16416,7 +16431,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0946",
+   "node_id": "PER-0947",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallpschibed Svec[?]",
@@ -16431,7 +16446,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0947",
+   "node_id": "PER-0948",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallpschibek Grad[?]",
@@ -16446,7 +16461,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0948",
+   "node_id": "PER-0949",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallpschübek Johan",
@@ -16461,7 +16476,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0949",
+   "node_id": "PER-0950",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillach Michl.[?]",
@@ -16476,7 +16491,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0950",
+   "node_id": "PER-0951",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillach Maria.[?]",
@@ -16491,7 +16506,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0951",
+   "node_id": "PER-0952",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallh. Mühle",
@@ -16506,7 +16521,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0952",
+   "node_id": "PER-0953",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Michl.[?]",
@@ -16521,7 +16536,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0953",
+   "node_id": "PER-0954",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -16536,7 +16551,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0954",
+   "node_id": "PER-0955",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Maria.[?]",
@@ -16551,7 +16566,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0955",
+   "node_id": "PER-0956",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Chrischan Miido[?]",
@@ -16566,7 +16581,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0956",
+   "node_id": "PER-0957",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -16581,7 +16596,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0957",
+   "node_id": "PER-0958",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl. Mühle",
@@ -16596,7 +16611,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0958",
+   "node_id": "PER-0959",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Honschak georg",
@@ -16611,7 +16626,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0959",
+   "node_id": "PER-0960",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg",
@@ -16626,7 +16641,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0960",
+   "node_id": "PER-0961",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Veritschan Mathl.[?]",
@@ -16641,7 +16656,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0961",
+   "node_id": "PER-0962",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Michl. Mich. Wf.",
@@ -16656,7 +16671,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0962",
+   "node_id": "PER-0963",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Verblibten Wf.",
@@ -16671,7 +16686,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0963",
+   "node_id": "PER-0964",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Jakob.[?]",
@@ -16686,7 +16701,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0964",
+   "node_id": "PER-0965",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ring Martho.[?]",
@@ -16701,7 +16716,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0965",
+   "node_id": "PER-0966",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg",
@@ -16716,7 +16731,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0966",
+   "node_id": "PER-0967",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Wenzl.",
@@ -16731,7 +16746,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0967",
+   "node_id": "PER-0968",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg.[?]",
@@ -16746,7 +16761,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0968",
+   "node_id": "PER-0969",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Georg",
@@ -16761,7 +16776,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0969",
+   "node_id": "PER-0970",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Ulrich Miko",
@@ -16776,7 +16791,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0970",
+   "node_id": "PER-0971",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Weinchan Matthe[?]",
@@ -16791,7 +16806,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0971",
+   "node_id": "PER-0972",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Stallpschibek Matthe[?]",
@@ -16806,7 +16821,7 @@
    "degree": 0
   },
   {
-   "node_id": "PER-0972",
+   "node_id": "PER-0973",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Deleshitzkh Marßfid.[?]",
@@ -16821,7 +16836,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0973",
+   "node_id": "PER-0974",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Tillach Miko.[?]",
@@ -16836,7 +16851,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0974",
+   "node_id": "PER-0975",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Miko.[?]",
@@ -16851,7 +16866,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0975",
+   "node_id": "PER-0976",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Krischan Grany.[?]",
@@ -16866,7 +16881,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0976",
+   "node_id": "PER-0977",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Michaell Maier",
@@ -16881,7 +16896,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0977",
+   "node_id": "PER-0978",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Wenzl Gland",
@@ -16896,7 +16911,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0978",
+   "node_id": "PER-0979",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Theresia Mitterp.",
@@ -16911,7 +16926,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0979",
+   "node_id": "PER-0980",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Matjaž Marnel",
@@ -16926,7 +16941,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0980",
+   "node_id": "PER-0981",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Schöffpoltzy Joan",
@@ -16941,7 +16956,7 @@
    "degree": 1
   },
   {
-   "node_id": "PER-0981",
+   "node_id": "PER-0982",
    "node_type": "PERSON",
    "type_label": "oseba",
    "label": "Gemeinde",
@@ -58879,7 +58894,7 @@
    "relation_id": "R-00168",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0452",
+   "from_entity": "PER-0451",
    "to_entity": "HOUSE:H-021",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -58899,7 +58914,7 @@
    "relation_id": "R-00169",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0454",
+   "from_entity": "PER-0453",
    "to_entity": "HOUSE:H-022",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -58919,7 +58934,7 @@
    "relation_id": "R-00170",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0458",
+   "from_entity": "PER-0457",
    "to_entity": "HOUSE:H-023",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -58936,7 +58951,7 @@
    "relation_id": "R-00171",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0463",
+   "from_entity": "PER-0462",
    "to_entity": "HOUSE:H-024",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -58956,7 +58971,7 @@
    "relation_id": "R-00172",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0466",
+   "from_entity": "PER-0465",
    "to_entity": "HOUSE:H-025",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -58976,7 +58991,7 @@
    "relation_id": "R-00173",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0471",
+   "from_entity": "PER-0470",
    "to_entity": "HOUSE:H-026",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -58996,7 +59011,7 @@
    "relation_id": "R-00174",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0479",
+   "from_entity": "PER-0477",
    "to_entity": "HOUSE:H-027",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59016,7 +59031,7 @@
    "relation_id": "R-00175",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0491",
+   "from_entity": "PER-0489",
    "to_entity": "HOUSE:H-028",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59036,7 +59051,7 @@
    "relation_id": "R-00176",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0496",
+   "from_entity": "PER-0494",
    "to_entity": "HOUSE:H-029",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59056,7 +59071,7 @@
    "relation_id": "R-00177",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0510",
+   "from_entity": "PER-0508",
    "to_entity": "HOUSE:H-030",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59076,7 +59091,7 @@
    "relation_id": "R-00178",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0518",
+   "from_entity": "PER-0516",
    "to_entity": "HOUSE:H-031",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59093,7 +59108,7 @@
    "relation_id": "R-00179",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0526",
+   "from_entity": "PER-0524",
    "to_entity": "HOUSE:H-032",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59113,7 +59128,7 @@
    "relation_id": "R-00180",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0532",
+   "from_entity": "PER-0530",
    "to_entity": "HOUSE:H-033",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59133,7 +59148,7 @@
    "relation_id": "R-00181",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0534",
+   "from_entity": "PER-0532",
    "to_entity": "HOUSE:H-034",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59153,7 +59168,7 @@
    "relation_id": "R-00182",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0542",
+   "from_entity": "PER-0540",
    "to_entity": "HOUSE:H-035",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59170,7 +59185,7 @@
    "relation_id": "R-00183",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0553",
+   "from_entity": "PER-0550",
    "to_entity": "HOUSE:H-036",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59190,7 +59205,7 @@
    "relation_id": "R-00184",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0567",
+   "from_entity": "PER-0564",
    "to_entity": "HOUSE:H-037",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59210,7 +59225,7 @@
    "relation_id": "R-00185",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0574",
+   "from_entity": "PER-0571",
    "to_entity": "HOUSE:H-038",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59227,7 +59242,7 @@
    "relation_id": "R-00186",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0579",
+   "from_entity": "PER-0576",
    "to_entity": "HOUSE:H-039",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59244,7 +59259,7 @@
    "relation_id": "R-00187",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0586",
+   "from_entity": "PER-0583",
    "to_entity": "HOUSE:H-040",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59264,7 +59279,7 @@
    "relation_id": "R-00188",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0606",
+   "from_entity": "PER-0603",
    "to_entity": "HOUSE:H-041",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59284,7 +59299,7 @@
    "relation_id": "R-00189",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0622",
+   "from_entity": "PER-0619",
    "to_entity": "HOUSE:H-042",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59304,7 +59319,7 @@
    "relation_id": "R-00190",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0631",
+   "from_entity": "PER-0628",
    "to_entity": "HOUSE:H-043",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59324,7 +59339,7 @@
    "relation_id": "R-00191",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0645",
+   "from_entity": "PER-0642",
    "to_entity": "HOUSE:H-044",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59344,7 +59359,7 @@
    "relation_id": "R-00192",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0653",
+   "from_entity": "PER-0650",
    "to_entity": "HOUSE:H-045",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59361,7 +59376,7 @@
    "relation_id": "R-00193",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0663",
+   "from_entity": "PER-0661",
    "to_entity": "HOUSE:H-046",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59381,7 +59396,7 @@
    "relation_id": "R-00194",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0667",
+   "from_entity": "PER-0665",
    "to_entity": "HOUSE:H-047",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59401,7 +59416,7 @@
    "relation_id": "R-00195",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0678",
+   "from_entity": "PER-0677",
    "to_entity": "HOUSE:H-048",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59421,7 +59436,7 @@
    "relation_id": "R-00196",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0685",
+   "from_entity": "PER-0684",
    "to_entity": "HOUSE:H-049",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59509,7 +59524,7 @@
    "relation_id": "R-00201",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0716",
+   "from_entity": "PER-0717",
    "to_entity": "HOUSE:H-054",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59526,7 +59541,7 @@
    "relation_id": "R-00202",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0720",
+   "from_entity": "PER-0721",
    "to_entity": "HOUSE:H-055",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59543,7 +59558,7 @@
    "relation_id": "R-00203",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0728",
+   "from_entity": "PER-0730",
    "to_entity": "HOUSE:H-056",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59560,7 +59575,7 @@
    "relation_id": "R-00204",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0735",
+   "from_entity": "PER-0738",
    "to_entity": "HOUSE:H-057",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59577,7 +59592,7 @@
    "relation_id": "R-00205",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0736",
+   "from_entity": "PER-0739",
    "to_entity": "HOUSE:H-058",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59597,7 +59612,7 @@
    "relation_id": "R-00206",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0740",
+   "from_entity": "PER-0743",
    "to_entity": "HOUSE:H-059",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59614,7 +59629,7 @@
    "relation_id": "R-00207",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0745",
+   "from_entity": "PER-0748",
    "to_entity": "HOUSE:H-060",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59634,7 +59649,7 @@
    "relation_id": "R-00208",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0757",
+   "from_entity": "PER-0760",
    "to_entity": "HOUSE:H-061",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59654,7 +59669,7 @@
    "relation_id": "R-00209",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0770",
+   "from_entity": "PER-0773",
    "to_entity": "HOUSE:H-062",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59674,7 +59689,7 @@
    "relation_id": "R-00210",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0784",
+   "from_entity": "PER-0787",
    "to_entity": "HOUSE:H-063",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59694,7 +59709,7 @@
    "relation_id": "R-00211",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0793",
+   "from_entity": "PER-0795",
    "to_entity": "HOUSE:H-064",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59714,7 +59729,7 @@
    "relation_id": "R-00212",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0799",
+   "from_entity": "PER-0801",
    "to_entity": "HOUSE:H-065",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59734,7 +59749,7 @@
    "relation_id": "R-00213",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0806",
+   "from_entity": "PER-0808",
    "to_entity": "HOUSE:H-066",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59754,7 +59769,7 @@
    "relation_id": "R-00214",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0811",
+   "from_entity": "PER-0813",
    "to_entity": "HOUSE:H-067",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59771,7 +59786,7 @@
    "relation_id": "R-00215",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0818",
+   "from_entity": "PER-0820",
    "to_entity": "HOUSE:H-068",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59791,7 +59806,7 @@
    "relation_id": "R-00216",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0823",
+   "from_entity": "PER-0825",
    "to_entity": "HOUSE:H-069",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59811,7 +59826,7 @@
    "relation_id": "R-00217",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0831",
+   "from_entity": "PER-0833",
    "to_entity": "HOUSE:H-080",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59828,7 +59843,7 @@
    "relation_id": "R-00218",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0835",
+   "from_entity": "PER-0836",
    "to_entity": "HOUSE:H-081",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59845,7 +59860,7 @@
    "relation_id": "R-00219",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0838",
+   "from_entity": "PER-0839",
    "to_entity": "HOUSE:H-082",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59862,7 +59877,7 @@
    "relation_id": "R-00220",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0839",
+   "from_entity": "PER-0840",
    "to_entity": "HOUSE:H-087",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59879,7 +59894,7 @@
    "relation_id": "R-00221",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0840",
+   "from_entity": "PER-0841",
    "to_entity": "HOUSE:H-113",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59896,7 +59911,7 @@
    "relation_id": "R-00222",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0841",
+   "from_entity": "PER-0842",
    "to_entity": "HOUSE:H-140",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59913,7 +59928,7 @@
    "relation_id": "R-00223",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0842",
+   "from_entity": "PER-0843",
    "to_entity": "HOUSE:H-141",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59930,7 +59945,7 @@
    "relation_id": "R-00224",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0843",
+   "from_entity": "PER-0844",
    "to_entity": "HOUSE:H-142",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59947,7 +59962,7 @@
    "relation_id": "R-00225",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0846",
+   "from_entity": "PER-0847",
    "to_entity": "HOUSE:H-143",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59964,7 +59979,7 @@
    "relation_id": "R-00226",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0847",
+   "from_entity": "PER-0848",
    "to_entity": "HOUSE:H-144",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59981,7 +59996,7 @@
    "relation_id": "R-00227",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0848",
+   "from_entity": "PER-0849",
    "to_entity": "HOUSE:H-147",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -59998,7 +60013,7 @@
    "relation_id": "R-00228",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0849",
+   "from_entity": "PER-0850",
    "to_entity": "HOUSE:H-149",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60015,7 +60030,7 @@
    "relation_id": "R-00229",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0850",
+   "from_entity": "PER-0851",
    "to_entity": "HOUSE:H-162",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60032,7 +60047,7 @@
    "relation_id": "R-00230",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0852",
+   "from_entity": "PER-0853",
    "to_entity": "HOUSE:H-165",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60049,7 +60064,7 @@
    "relation_id": "R-00231",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0853",
+   "from_entity": "PER-0854",
    "to_entity": "HOUSE:H-168",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60066,7 +60081,7 @@
    "relation_id": "R-00232",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0854",
+   "from_entity": "PER-0855",
    "to_entity": "HOUSE:H-529",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60083,7 +60098,7 @@
    "relation_id": "R-00233",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0855",
+   "from_entity": "PER-0856",
    "to_entity": "HOUSE:H-1-1",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60100,7 +60115,7 @@
    "relation_id": "R-00234",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0856",
+   "from_entity": "PER-0857",
    "to_entity": "HOUSE:H-1-10.",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60117,7 +60132,7 @@
    "relation_id": "R-00235",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0857",
+   "from_entity": "PER-0858",
    "to_entity": "HOUSE:H-1-100",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60134,7 +60149,7 @@
    "relation_id": "R-00236",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0858",
+   "from_entity": "PER-0859",
    "to_entity": "HOUSE:H-1-11",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60151,7 +60166,7 @@
    "relation_id": "R-00237",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0859",
+   "from_entity": "PER-0860",
    "to_entity": "HOUSE:H-1-12",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60168,7 +60183,7 @@
    "relation_id": "R-00238",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0861",
+   "from_entity": "PER-0862",
    "to_entity": "HOUSE:H-1-13",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60185,7 +60200,7 @@
    "relation_id": "R-00239",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0863",
+   "from_entity": "PER-0864",
    "to_entity": "HOUSE:H-1-14",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60202,7 +60217,7 @@
    "relation_id": "R-00240",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0865",
+   "from_entity": "PER-0866",
    "to_entity": "HOUSE:H-1-18",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60219,7 +60234,7 @@
    "relation_id": "R-00241",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0868",
+   "from_entity": "PER-0869",
    "to_entity": "HOUSE:H-1-19",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60236,7 +60251,7 @@
    "relation_id": "R-00242",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0869",
+   "from_entity": "PER-0870",
    "to_entity": "HOUSE:H-1-2",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60253,7 +60268,7 @@
    "relation_id": "R-00243",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0870",
+   "from_entity": "PER-0871",
    "to_entity": "HOUSE:H-1-20",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60270,7 +60285,7 @@
    "relation_id": "R-00244",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0871",
+   "from_entity": "PER-0872",
    "to_entity": "HOUSE:H-1-21",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60287,7 +60302,7 @@
    "relation_id": "R-00245",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0873",
+   "from_entity": "PER-0874",
    "to_entity": "HOUSE:H-1-22",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60304,7 +60319,7 @@
    "relation_id": "R-00246",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0874",
+   "from_entity": "PER-0875",
    "to_entity": "HOUSE:H-1-23",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60321,7 +60336,7 @@
    "relation_id": "R-00247",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0876",
+   "from_entity": "PER-0877",
    "to_entity": "HOUSE:H-1-24",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60338,7 +60353,7 @@
    "relation_id": "R-00248",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0877",
+   "from_entity": "PER-0878",
    "to_entity": "HOUSE:H-1-25",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60355,7 +60370,7 @@
    "relation_id": "R-00249",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0878",
+   "from_entity": "PER-0879",
    "to_entity": "HOUSE:H-1-29",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60372,7 +60387,7 @@
    "relation_id": "R-00250",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0879",
+   "from_entity": "PER-0880",
    "to_entity": "HOUSE:H-1-3",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60389,7 +60404,7 @@
    "relation_id": "R-00251",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0880",
+   "from_entity": "PER-0881",
    "to_entity": "HOUSE:H-1-31",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60406,7 +60421,7 @@
    "relation_id": "R-00252",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0881",
+   "from_entity": "PER-0882",
    "to_entity": "HOUSE:H-1-32",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60423,7 +60438,7 @@
    "relation_id": "R-00253",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0883",
+   "from_entity": "PER-0884",
    "to_entity": "HOUSE:H-1-4",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60440,7 +60455,7 @@
    "relation_id": "R-00254",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0884",
+   "from_entity": "PER-0885",
    "to_entity": "HOUSE:H-1-40",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60457,7 +60472,7 @@
    "relation_id": "R-00255",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0885",
+   "from_entity": "PER-0886",
    "to_entity": "HOUSE:H-1-41",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60474,7 +60489,7 @@
    "relation_id": "R-00256",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0886",
+   "from_entity": "PER-0887",
    "to_entity": "HOUSE:H-1-42",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60491,7 +60506,7 @@
    "relation_id": "R-00257",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0887",
+   "from_entity": "PER-0888",
    "to_entity": "HOUSE:H-1-43",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60508,7 +60523,7 @@
    "relation_id": "R-00258",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0889",
+   "from_entity": "PER-0890",
    "to_entity": "HOUSE:H-1-5",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60525,7 +60540,7 @@
    "relation_id": "R-00259",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0891",
+   "from_entity": "PER-0892",
    "to_entity": "HOUSE:H-1-50",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60542,7 +60557,7 @@
    "relation_id": "R-00260",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0892",
+   "from_entity": "PER-0893",
    "to_entity": "HOUSE:H-1-51",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60559,7 +60574,7 @@
    "relation_id": "R-00261",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0893",
+   "from_entity": "PER-0894",
    "to_entity": "HOUSE:H-1-53",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60576,7 +60591,7 @@
    "relation_id": "R-00262",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0894",
+   "from_entity": "PER-0895",
    "to_entity": "HOUSE:H-1-60",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60593,7 +60608,7 @@
    "relation_id": "R-00263",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0895",
+   "from_entity": "PER-0896",
    "to_entity": "HOUSE:H-1-61",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60610,7 +60625,7 @@
    "relation_id": "R-00264",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0897",
+   "from_entity": "PER-0898",
    "to_entity": "HOUSE:H-1-63",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60627,7 +60642,7 @@
    "relation_id": "R-00265",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0898",
+   "from_entity": "PER-0899",
    "to_entity": "HOUSE:H-1-64",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60644,7 +60659,7 @@
    "relation_id": "R-00266",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0900",
+   "from_entity": "PER-0901",
    "to_entity": "HOUSE:H-1-65",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60661,7 +60676,7 @@
    "relation_id": "R-00267",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0902",
+   "from_entity": "PER-0903",
    "to_entity": "HOUSE:H-1-66",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60678,7 +60693,7 @@
    "relation_id": "R-00268",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0903",
+   "from_entity": "PER-0904",
    "to_entity": "HOUSE:H-1-68",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60695,7 +60710,7 @@
    "relation_id": "R-00269",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0905",
+   "from_entity": "PER-0906",
    "to_entity": "HOUSE:H-1-8",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60712,7 +60727,7 @@
    "relation_id": "R-00270",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0906",
+   "from_entity": "PER-0907",
    "to_entity": "HOUSE:H-1-9",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60729,7 +60744,7 @@
    "relation_id": "R-00271",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0907",
+   "from_entity": "PER-0908",
    "to_entity": "HOUSE:H-1-10",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60746,7 +60761,7 @@
    "relation_id": "R-00272",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0909",
+   "from_entity": "PER-0910",
    "to_entity": "HOUSE:H-1-11",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60763,7 +60778,7 @@
    "relation_id": "R-00273",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0910",
+   "from_entity": "PER-0911",
    "to_entity": "HOUSE:H-1-14",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60780,7 +60795,7 @@
    "relation_id": "R-00274",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0912",
+   "from_entity": "PER-0913",
    "to_entity": "HOUSE:H-1-15",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60797,7 +60812,7 @@
    "relation_id": "R-00275",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0914",
+   "from_entity": "PER-0915",
    "to_entity": "HOUSE:H-1-16",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60814,7 +60829,7 @@
    "relation_id": "R-00276",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0917",
+   "from_entity": "PER-0918",
    "to_entity": "HOUSE:H-1-17",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60831,7 +60846,7 @@
    "relation_id": "R-00277",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0918",
+   "from_entity": "PER-0919",
    "to_entity": "HOUSE:H-1-18",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60848,7 +60863,7 @@
    "relation_id": "R-00278",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0920",
+   "from_entity": "PER-0921",
    "to_entity": "HOUSE:H-1-19",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60865,7 +60880,7 @@
    "relation_id": "R-00279",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0925",
+   "from_entity": "PER-0926",
    "to_entity": "HOUSE:H-1-3",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60882,7 +60897,7 @@
    "relation_id": "R-00280",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0927",
+   "from_entity": "PER-0928",
    "to_entity": "HOUSE:H-1-4",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60899,7 +60914,7 @@
    "relation_id": "R-00281",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0929",
+   "from_entity": "PER-0930",
    "to_entity": "HOUSE:H-1-49",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60916,7 +60931,7 @@
    "relation_id": "R-00282",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0939",
+   "from_entity": "PER-0940",
    "to_entity": "HOUSE:H-1-54",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60933,7 +60948,7 @@
    "relation_id": "R-00283",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0940",
+   "from_entity": "PER-0941",
    "to_entity": "HOUSE:H-1-55",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60950,7 +60965,7 @@
    "relation_id": "R-00284",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0943",
+   "from_entity": "PER-0944",
    "to_entity": "HOUSE:H-1-56",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60967,7 +60982,7 @@
    "relation_id": "R-00285",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0946",
+   "from_entity": "PER-0947",
    "to_entity": "HOUSE:H-1-6",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -60984,7 +60999,7 @@
    "relation_id": "R-00286",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0949",
+   "from_entity": "PER-0950",
    "to_entity": "HOUSE:H-1-61",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61001,7 +61016,7 @@
    "relation_id": "R-00287",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0952",
+   "from_entity": "PER-0953",
    "to_entity": "HOUSE:H-1-62",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61018,7 +61033,7 @@
    "relation_id": "R-00288",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0956",
+   "from_entity": "PER-0957",
    "to_entity": "HOUSE:H-1-63",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61035,7 +61050,7 @@
    "relation_id": "R-00289",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0960",
+   "from_entity": "PER-0961",
    "to_entity": "HOUSE:H-1-64",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61052,7 +61067,7 @@
    "relation_id": "R-00290",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0963",
+   "from_entity": "PER-0964",
    "to_entity": "HOUSE:H-1-65",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61069,7 +61084,7 @@
    "relation_id": "R-00291",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0967",
+   "from_entity": "PER-0968",
    "to_entity": "HOUSE:H-1-66",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61086,7 +61101,7 @@
    "relation_id": "R-00292",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0972",
+   "from_entity": "PER-0973",
    "to_entity": "HOUSE:H-11-1",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61103,7 +61118,7 @@
    "relation_id": "R-00293",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0973",
+   "from_entity": "PER-0974",
    "to_entity": "HOUSE:H-11-61",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61120,7 +61135,7 @@
    "relation_id": "R-00294",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0974",
+   "from_entity": "PER-0975",
    "to_entity": "HOUSE:H-11-62",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61137,7 +61152,7 @@
    "relation_id": "R-00295",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0975",
+   "from_entity": "PER-0976",
    "to_entity": "HOUSE:H-11-63",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61154,7 +61169,7 @@
    "relation_id": "R-00296",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0976",
+   "from_entity": "PER-0977",
    "to_entity": "HOUSE:H-16-17",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61171,7 +61186,7 @@
    "relation_id": "R-00297",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0977",
+   "from_entity": "PER-0978",
    "to_entity": "HOUSE:H-18-17",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61188,7 +61203,7 @@
    "relation_id": "R-00298",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0978",
+   "from_entity": "PER-0979",
    "to_entity": "HOUSE:H-39-36",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61205,7 +61220,7 @@
    "relation_id": "R-00299",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0979",
+   "from_entity": "PER-0980",
    "to_entity": "HOUSE:H-9.",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61222,7 +61237,7 @@
    "relation_id": "R-00300",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0980",
+   "from_entity": "PER-0981",
    "to_entity": "HOUSE:H-C",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -61239,7 +61254,7 @@
    "relation_id": "R-00301",
    "relation_type": "OWNER_OF",
    "narrative_label": "je dokumentiran kot lastnik",
-   "from_entity": "PER-0981",
+   "from_entity": "PER-0982",
    "to_entity": "HOUSE:H-k",
    "date_period": "1825 (PS končni)",
    "source_ids": [
@@ -108027,7 +108042,7 @@
    "relation_id": "R-03426",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "narrative_label": "ima dokumentirano bivanje pri",
-   "from_entity": "PER-0638",
+   "from_entity": "PER-0635",
    "to_entity": "TP-030",
    "date_period": "1825 (PS, ne-lokalna sekcija F12)",
    "source_ids": [
@@ -108738,7 +108753,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-10-03T14:27:49Z",
+   "generated_at": "2026-10-03T16:07:56Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -108760,7 +108775,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-10-03T14:27:49Z",
+   "generated_at": "2026-10-03T16:07:56Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -108787,7 +108802,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-10-03T14:27:49Z",
+   "generated_at": "2026-10-03T16:07:56Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -108814,7 +108829,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-10-03T14:27:49Z",
+   "generated_at": "2026-10-03T16:07:56Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }

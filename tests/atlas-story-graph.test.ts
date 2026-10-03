@@ -74,10 +74,10 @@ describe("story-graph: projekcija KG (nič novih trditev)", () => {
     expect(graph.provenance.kg_sha256).toMatch(/^[a-f0-9]{64}$/);
   });
 
-  test("entitete po vrsti ujemajo KG (3.762 skupaj — val 119 del 3: PERSON 981)", () => {
+  test("entitete po vrsti ujemajo KG (3.762 skupaj — val 119 del 3: PERSON 982)", () => {
     const by = graph.stats.entities_by_type;
     expect(by["PARCEL"]).toBe(2427); // val 98: 2933 → val 107: 2770 → val 112: 2711 → val 114: 2426 → val 115: 2427
-    expect(by["PERSON"]).toBe(981); // val 119 del 3 sync: 98 PUA + 656 PS v119 + 227 PT; prej 488
+    expect(by["PERSON"]).toBe(982); // val 119 del 3 sync: 98 PUA + 657 PS v119 + 227 PT; prej 488
     expect(by["HOUSE"]).toBe(169);
     expect(by["BP"]).toBe(100);
     expect(by["TOPONYM"]).toBe(37);
@@ -217,8 +217,8 @@ describe("story-graph: lib — sosednost (vhod za Story Engine §16)", () => {
 });
 
 describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
-  test("storyEntities po vrsti + limit (PERSON 981 @ val 119 del 3)", () => {
-    expect(storyEntities("PERSON", 5000).length).toBe(981);
+  test("storyEntities po vrsti + limit (PERSON 982 @ val 119 del 3)", () => {
+    expect(storyEntities("PERSON", 5000).length).toBe(982);
     expect(storyEntities("HOUSE").length).toBe(169); // manj kot limit → vse
     expect(storyEntities("PERSON").length).toBe(200); // default limit kapira
     expect(storyEntities("EVENT", 10).length).toBe(3);
@@ -252,7 +252,7 @@ describe("story-graph: lib — entitete, relacije, iskanje, resolver", () => {
     const ov = storyGraphOverview();
     expect(ov.ok).toBe(true);
     expect(ov.val).toBe(68);
-    expect(ov.stats.entities).toBe(3764); // val 119 del 3 sync: 981 oseb (prej 3269 @ val 115; 3553 @ val 112; 3612 @ val 107; 3775 @ val 98)
+    expect(ov.stats.entities).toBe(3765); // val 119 del 3 sync: 982 oseb (prej 3269 @ val 115; 3553 @ val 112; 3612 @ val 107; 3775 @ val 98)
     expect(ov.stats.story_atoms).toBe(4);
     const contract = ov.story_engine_contract as { required_fields: string[] };
     for (const f of ["story_id", "input_entity_ids", "used_claim_ids", "used_source_ids", "generation_timestamp", "prompt_version", "story_status"]) {

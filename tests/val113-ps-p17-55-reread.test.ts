@@ -234,7 +234,7 @@ describe("val 113 — kaskada (izrecna)", () => {
   test("KG: PARCEL 2436, HAS_PARCEL 2775, vozlišča 3278, vezi 3479 (val 114 kaskada)", () => {
     expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2775);
-    expect(kg.nodes.length).toBe(3764); // val 115: 3268 → 3269; val 122: 3762 → 3764 (HOUSE +2, hiša 70–78)
+    expect(kg.nodes.length).toBe(3765); // val 115: 3268 → 3269; val 122: 3762 → 3765 (HOUSE +2, hiša 70–78)
     expect(kg.edges.length).toBe(3473); // val 122: 3471 → 3473 (HAS_PARCEL +2 za H-074) // val 115: nespremenjeno
   });
 

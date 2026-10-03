@@ -1,0 +1,114 @@
+{
+ "map_id": "NR-14",
+ "val": "126",
+ "date": "2026-10-09",
+ "issue": "#42 §4/§14",
+ "title": "NR-14 ČRKOVALNA SODBA — izenačitev črkovalnih variant (p7 + pravila za p56–143 re-read)",
+ "decision": "KEEP register forme; karta = FLAG-ONLY izenačitev (nobeno ime ni prepisano, nobena oseba združena). Izpeljani ključ normalized_nr14 omogoča variantno grupiranje oseb (nr14_variant_group) brez mergea — odločitev o identiteti osebe ostane eksplicitna (§5).",
+ "method": {
+  "norm": "norm_concat (1:1 z build-sync: NFKD, odstrani ne-črke, lower) — U+017F ſ (long-s) se pod NFKD samodejno razgradi v 's' → Maruſa ≡ Marusa na nivoju norm (dokumentirano, brez posebnega para)",
+  "substitution": "token-točna zamenjava na normaliziranem tokenu (brez predponskih iger — konzervativno; 'Schimeczkhanl' en token se NE razčleni na koren+priimek)",
+  "flag_only": "normalized_nr14 = norm po zamenjavah; nr14_variant_group flag SAMO ko dve osebi delita normalized_nr14, ne pa normalized — NOT_MERGED ostaja",
+  "no_guessing": "neodločeni pari (canonical_status UNDECIDED) imajo determinističen kanon (leksikografsko prvi) SAMO za grupiranje"
+ },
+ "variant_pairs": [
+  {
+   "pair_id": "V1",
+   "kind": "priimek",
+   "forms": ["Rabitscher", "Rabutschar"],
+   "canonical": "Rabitscher",
+   "canonical_status": "REGISTER-FORMA (sodba: kanon za grupiranje; surova rokopisna forma je Rabutschar)",
+   "evidence": "v125 ×12–24: r7/r16/r17 'Rabutschar Marbl', r13/r14 'Rabutschar Grogy' (Nro 94+95 = isti lastnik, dve parceli); register forme '(R)abitscher' po kobildi r14 — vodilni 'R' ostaja negotov ((R))",
+   "substitution": "rabutschar -> rabitscher",
+   "source_rows": "p7 r7/r13/r14/r16/r17 (protokol 148 §2)"
+  },
+  {
+   "pair_id": "V2",
+   "kind": "osebno ime",
+   "forms": ["Georg", "Grogy"],
+   "canonical": "Georg",
+   "canonical_status": "REGISTER-FORMA (sodba: kanon; rokopisna Kurrent forma je Grogy)",
+   "evidence": "v125 ×12–24: r8/r15/r19 'Strauß Grogy', r13/r14 'Rabutschar Grogy' — 'Grogy' je konsistentna Kurrent izpeljava imena Georg (y za vokal, cf. 'Grogy' brez t-prečk; klasična Kurrent praksa)",
+   "substitution": "grogy -> georg",
+   "source_rows": "p7 r8/r13/r14/r15/r18/r19 (protokol 148 §2)"
+  },
+  {
+   "pair_id": "V3",
+   "kind": "priimek-koren",
+   "forms": ["Pödigz", "Poiding"],
+   "canonical": "Pödigz",
+   "canonical_status": "ROKOPISNA SODBA v125 (zoom ×12: P-d-i-g-z, brez 'ng') — rešeno v val 125 na p7",
+   "evidence": "v125 r1 'Pödigz Hanl' (ne 'Poiding Hanl'), r9/r12 'Pödigz Maruſa' (ne 'Poiding Matthl') — isti koren cf. r9/r12 črkovno identična (ultra ×20)",
+   "caveat": "p20–p55 v119 forme 'Poiding Hanß/Maria/Wolfgo/Maja' so nastale PRED lekcijo F-V125 (celicni zoomi) — ostajajo register forme, koren-par potrjen samo na p7; morebitna izenačitev p20–55 = ločena sodba prihodnjega celicnega re-reada (NI tihega prepisa)",
+   "substitution": "poiding -> podigz",
+   "source_rows": "p7 r1/r9/r12 (protokol 148 §2)"
+  },
+  {
+   "pair_id": "V4",
+   "kind": "priimek-koren",
+   "forms": ["Schimecz", "Schimez"],
+   "canonical": "Schimecz",
+   "canonical_status": "UNDECIDED (kanon za grupiranje = leksikografsko prvi; ni rokopisne sodbe o cz/z)",
+   "evidence": "p7 ena roka, dve forme: r0 'Schimeczkhanl' (enobesedno, KEEP ×2 v125) in r10 'Schimez Hanl' / r5 'Schimecz Mihual' (v125) — cz/z variabilnost znotraj iste strani",
+   "caveat": "token-točna zamenjava ne razčleni enobesednega 'Schimeczkhanl'; p56–143 re-read mora pri Schimez/Schimecz korenu beležiti obe forme",
+   "substitution": "schimez -> schimecz",
+   "source_rows": "p7 r0/r5/r10/r11 (protokol 148 §2)"
+  },
+  {
+   "pair_id": "V5",
+   "kind": "osebno ime",
+   "forms": ["Mihual", "Michual"],
+   "canonical": "Mihual",
+   "canonical_status": "ROKOPISNA SODBA (h-descender zanka, cf. v125 'Mi⟨h⟩ual' ≈ Michael)",
+   "evidence": "v125 r5: 2. beseda Mi⟨h⟩ual — descender zanka → h/f sodba; v124 knjižna forma 'Schimz Mihual' pravilna v sadržaji",
+   "substitution": "michual -> mihual",
+   "source_rows": "p7 r5 (protokol 148 §2)"
+  },
+  {
+   "pair_id": "V6",
+   "kind": "osebno ime (avtomatika)",
+   "forms": ["Marusa", "Maruſa"],
+   "canonical": "Marusa",
+   "canonical_status": "NORM-AVTOMATIKA (U+017F ſ → NFKD → 's'); brez eksplicitne zamenjave",
+   "evidence": "v125 r9/r12 'Pödigz Maruſa' — long-s z descender zanko; register forma 'Pödigz Marusa'; Maruša ≈ Marija",
+   "substitution": "(brez — norm že pokriva)",
+   "source_rows": "p7 r9/r12 (protokol 148 §2)"
+  }
+ ],
+ "rejected_forms": [
+  {
+   "form": "Marls",
+   "context": "p7 r9/r12 v124 knjižna forma",
+   "reason": "NI črkovalna varianta — napaka branja v124 (long-s z descender zanko ne more biti 'ls'; ni r-ramena na 3. mestu); popravljeno v v125 na 'Marusa'",
+   "source": "protokol 148 §2"
+  },
+  {
+   "form": "Rabatschar",
+   "context": "p7 r18 v124 hitro branje",
+   "reason": "ovržena v v125 — rokopis r18 je 'Strauß Grogy' (napačna oseba v obeh virih v57/v124); forma Rabatschar ne ustreza nobenemu rokopisnemu mestu",
+   "source": "protokol 148 §2"
+  },
+  {
+   "form": "Schimz",
+   "context": "p7 r5 v124 knjižna forma",
+   "reason": "knjižna kontrakcija brez rokopisne podlage za izpust črk — rokopis 'Schimecz Mihual'; forma ostane dokumentirana kot zgodovinski knjižni vir, NI sodobna varianta",
+   "source": "protokol 148 §2"
+  },
+  {
+   "form": "Schimez P…a (2. beseda)",
+   "context": "p7 r11 stisnjena vrstica Nro 92",
+   "reason": "nečitljiva tudi pri ×14 — brez izenačitve (… = nečitljiva sredina); ostaja izrecni dvom",
+   "source": "protokol 148 §2"
+  }
+ ],
+ "register_effect_v126": {
+  "statement": "Vgradnja v person-owner-register (build-sync-v126.py): vsaka oseba dobi normalized_nr14 + nr14_variants (aplikirani pari); variantna grupa flag SAMO pri deljenem normalized_nr14 z različnim normalized. Merjeno stanje val 126: 0 variantnih grup v register (forme že kanonizirane na strani) — karta = pravilna baza za p56–143 osebni re-read (val 127+) in zaščita pred lažnimi mergei.",
+  "in_register_variant_groups": 0,
+  "measured_on": "person-owner-register val 119-del3 stanje (981 oseb) + p56–143 PROVISIONAL rows izključene (F-SYNC-04)"
+ },
+ "scope_note": "NR-14 (negative result register) je PARTIAL: celostranski re-read p56–143 ni pokril imenske plasti (soglasje 19,6 %) — rešitev po analysis-v4 next_reads = pasovni/zoom re-read s kolonskimi sidri (vzorec val 80/81/86). Ta karta sodi črkovalna pravila; sam re-read je večvalna serija (val 127+, 6 strani/val po vzorcu val 119 del 1–2e).",
+ "provenance": {
+  "method": "0 VLM — sodba na dokumentiranih v125 celicnih zoomih ×12–24 (crops-v125 regenerabilni)",
+  "inputs": ["research-griblje/val124-anchor/readings-v125.json", "research-griblje/148-val125-fv124-01-imenska-hisna-plast-p7.md", "research-griblje/atlas-1825/negative-result-register-1825.json NR-14"]
+ }
+}

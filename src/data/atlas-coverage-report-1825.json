@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "ab418c75abaf6bc0d76c0472242b9fcf1f849ed7a6f287a073d1235b0c15e8e7",
+  "kg_sha256": "1e49de4358052544a696a2a55712cea99402237ea65f8b4e80ed8fea2aa1b43e",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -217,9 +217,9 @@
   {
    "category_id": "owners",
    "title": "Lastniki 1825 (owner osebe: PUA + PS)",
-   "total": 981,
+   "total": 982,
    "VERIFIED": 140,
-   "PARTIAL": 691,
+   "PARTIAL": 692,
    "CONFLICT": 150,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -228,7 +228,7 @@
     "REVIEW-CONFLICT": 150,
     "VERIFIED-2x": 45,
     "STABLE": 95,
-    "SINGLE_SOURCE": 656
+    "SINGLE_SOURCE": 657
    },
    "mapping_rule": "VERIFIED-2x/STABLE→VERIFIED; REVIEW/SINGLE_SOURCE→PARTIAL; REVIEW-CONFLICT→CONFLICT",
    "evidence": [
@@ -239,9 +239,9 @@
   {
    "category_id": "persons",
    "title": "Osebe / akterji 1825 (vse osebe registra)",
-   "total": 981,
+   "total": 982,
    "VERIFIED": 140,
-   "PARTIAL": 691,
+   "PARTIAL": 692,
    "CONFLICT": 150,
    "UNKNOWN": 0,
    "NOT_FOUND": 0,
@@ -250,7 +250,7 @@
     "REVIEW-CONFLICT": 150,
     "VERIFIED-2x": 45,
     "STABLE": 95,
-    "SINGLE_SOURCE": 656
+    "SINGLE_SOURCE": 657
    },
    "mapping_rule": "VERIFIED-2x/STABLE→VERIFIED; REVIEW/SINGLE_SOURCE→PARTIAL; REVIEW-CONFLICT→CONFLICT; merge prepovedan brez dokaza (161 possible_duplicates NI združenih, §5)",
    "evidence": [
@@ -552,11 +552,11 @@
   {
    "category_id": "unknowns",
    "title": "Neznanke — prečni pregled (izrecno štetje, brez procentov)",
-   "total": 3535,
+   "total": 3536,
    "VERIFIED": 0,
    "PARTIAL": 0,
    "CONFLICT": 0,
-   "UNKNOWN": 3535,
+   "UNKNOWN": 3536,
    "NOT_FOUND": 0,
    "native": {
     "aggregate": [
@@ -577,7 +577,7 @@
      },
      {
       "item": "osebe possible_duplicates (NI združenih, §5)",
-      "count": 418,
+      "count": 419,
       "category": "persons"
      },
      {

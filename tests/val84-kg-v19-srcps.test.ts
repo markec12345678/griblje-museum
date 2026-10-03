@@ -64,11 +64,11 @@ describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradn
     expect(JSON.stringify(kg.nodes)).not.toContain("PARTIAL 55/143");
   });
 
-  test("števci in ID-ji (val 122: 3764/3473/614/11/4, PERSON 981; PS parcele 432→930→779→735→676→577→391→392 = izrecna projekcija + F-PV-05/07/SPLIT korekcije + vstavljena vrstica, ne zdrs)", () => {
+  test("števci in ID-ji (val 122: 3765/3473/614/11/4, PERSON 982; PS parcele 432→930→779→735→676→577→391→392 = izrecna projekcija + F-PV-05/07/SPLIT korekcije + vstavljena vrstica, ne zdrs)", () => {
     expect(kg.node_stats).toEqual({
-      SOURCE: 13, HOUSE: 169, PERSON: 981, PARCEL: 2427, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
+      SOURCE: 13, HOUSE: 169, PERSON: 982, PARCEL: 2427, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
     });
-    expect(kg.nodes.length).toBe(3764); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 → val 115: 3269
+    expect(kg.nodes.length).toBe(3765); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 → val 115: 3269
     expect(kg.edges.length).toBe(3473); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
     expect(kg.claims.length).toBe(614);
     expect(kg.research_gaps.length).toBe(11); // val 122: +3 iskrene OWNER join miss vrzeli (F-SYNC-04)

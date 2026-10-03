@@ -13,7 +13,7 @@
  *
  * Varovalke (§22 pogodba): add-only anmerkung, pre_v123 polja, K9 p1–55
  * nespremenjen (56/960/84 — samo vrednost→vrednost popravki), KG vsebinsko
- * identična (3764/3473, timestamp-only sha prehod 8345868a→ab418c75).
+ * identična (3765/3473, timestamp-only sha prehod 8345868a→1e49de43).
  */
 import { describe, expect, test } from "bun:test";
 import { createHash } from "node:crypto";
@@ -161,14 +161,14 @@ describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
     expect(withPre.length).toBe(27);
   });
 
-  test("kaskada: KG vsebinsko identična (3764/3473), timestamp-only sha prehod 8345868a→ab418c75", () => {
+  test("kaskada: KG vsebinsko identična (3765/3473), timestamp-only sha prehod 8345868a→1e49de43", () => {
     const kg = JSON.parse(
       readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8"),
     ) as { nodes: unknown[]; edges: unknown[] };
-    expect(kg.nodes.length).toBe(3764);
+    expect(kg.nodes.length).toBe(3765);
     expect(kg.edges.length).toBe(3473);
     const sha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(sha.startsWith("ab418c75")).toBe(true);
+    expect(sha.startsWith("1e49de43")).toBe(true);
   });
 
   test("kaskada §22: story/timeline/coverage/runtime držijo isti KG sha", () => {
