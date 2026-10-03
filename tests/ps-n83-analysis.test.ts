@@ -253,7 +253,7 @@ describe("val 82 — PS N83 transkripcija DOKONČANA (p56–143, analysis-v3)", 
 
   it("varovalka: p1–55 vrstice v registru NESPREMENJENE od val 82 (števec + re-read korekcije 38/39/45; val 111–114 popravki + val 115: +4 vstavljene vrstice)", () => {
     const old = psRegister.filter((r) => r.page <= 55);
-    expect(old.length).toBe(1077); // val 115: 1073 + 4 vstavljene (p34/p40/p48/p49)
+    expect(old.length).toBe(1078); // val 115: 1077 + 1 vstavljena (val 115: p34/p40/p48/p49; val 124: p7 Nro 92)
     const patched = psRegister.filter((r) => r.name_review === "reread-2026-10-corrected");
     expect(patched.map((r) => r.haus_no).sort()).toEqual(["38", "39", "45"]);
   });
@@ -478,7 +478,7 @@ describe("val 83 — PS N83 neodvisen re-read p56–143 (2. prehod, analysis-v4)
       readFileSync(join(RG, "atlas-1825", "source-coverage-1825.json"), "utf8"),
     ) as { val: number; sources: { source_id: string; note: string }[]; transcription: { PS: { rows: number; passes: number } } };
     expect(sc.val).toBe(108); // val 108 regeneracija (re-read 14 strani)
-    expect(sc.transcription.PS.rows).toBe(2875); // val 115: 2871 + 4 vstavljene
+    expect(sc.transcription.PS.rows).toBe(2876); // val 115: 2871 + 4 vstavljene
     expect(sc.transcription.PS.passes).toBe(3);
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
     expect(ps.note).toContain("val 83");

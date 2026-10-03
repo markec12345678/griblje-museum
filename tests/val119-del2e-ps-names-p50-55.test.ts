@@ -51,7 +51,7 @@ function rowsOn(page: number): Reg {
 
 describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", () => {
   test("register: 2875 vrstic; changes 316 = 79 owner-fix + 36 haus-fix + 67 value-fix + 23 value-clear + 100 anmerkung + 5 fürtrag-clear + 6 page_obs", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     expect(CH.val).toBe("119-del2e");
     expect(CH.stats.owner_changes).toBe(81); // 79 owner-fix + 2 fürtrag-clear
     expect(CH.stats.haus_changes).toBe(38); // 36 + 2
@@ -71,14 +71,14 @@ describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", 
     expect(CH.changes.length).toBe(316);
   });
 
-  test("reading_pass plasti: v119-names 731 (609 + 122); v114 0 (122 − 122: PS p25–p55 POKRITE); v115 0; v118 60; v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 731 (609 + 122); v114 0 (122 − 122: PS p25–p55 POKRITE); v115 0; v118 60; v86 1795; ditto 208", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
     expect(n("v119-names")).toBe(731);
     expect(n("v114-ps-reread")).toBe(0);
     expect(n("v115-insert")).toBe(0);
     expect(n("v118-names")).toBe(60);
     expect(n("v86-colonial-tiles")).toBe(1795);
-    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
+    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
     expect(REG.every((r) => r.review_status !== "TRANSCRIBED")).toBe(true);
   });
 
@@ -262,10 +262,10 @@ describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", 
 });
 
 describe("val 119 del 2e — kaskada (izrecna)", () => {
-  test("KG sha fc23ab10: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^fc23ab10/);
+  test("KG sha ee3ac862: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^ee3ac862/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^fc23ab10/,
+      /^ee3ac862/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -286,7 +286,7 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
     expect(r434).toBeDefined();
   });
 
-  test("c4-metrika regenerirana: register sha sledi; K5 dito 207 (bloki 2607); K9 p1-55 both_filled 48→52, jaethe_empty 965→961, klafter_empty 87→85, 100_1599 53 (nestanjena)", () => {
+  test("c4-metrika regenerirana: register sha sledi; K5 dito 208 (bloki 2607); K9 p1-55 both_filled 48→52, jaethe_empty 965→961, klafter_empty 87→85, 100_1599 53 (nestanjena)", () => {
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as {
       meta: {
         inputs: Record<string, string>;
@@ -298,18 +298,18 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
         .update(readFileSync(join(REPO, "research-griblje/ps-n83/register.json")))
         .digest("hex"),
     );
-    expect(c4.meta.K5_input_reliability).toContain("207/2875");
+    expect(c4.meta.K5_input_reliability).toContain("208/2876");
     expect(c4.meta.K5_input_reliability).toContain("bloki = 2607");
     const loose = c4 as unknown as Record<string, Record<string, Record<string, number>>>;
     const k9key = Object.keys(loose).find((k) => k.startsWith("K9"));
     expect(k9key).toBeDefined();
     const p1 = loose[k9key!].p1_55_val57;
     expect(p1["both_filled"]).toBe(56); // 48 + 4 (p50-p55 jae + kl pari)
-    expect(p1["jaethe_empty"]).toBe(959);
+    expect(p1["jaethe_empty"]).toBe(960);
     expect(p1["klafter_empty"]).toBe(84);
     expect(p1["jaethe_plain_100_1599"]).toBe(52);
     expect(p1["jaethe_plain_gt1599"]).toBe(1);
-    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
+    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
   });
 
   test("story-graph/timeline/coverage kaskada: 3269/3477; timeline kg_sha256 = KG sha (ena izhodna resnica); coverage vsebinsko identičen", () => {

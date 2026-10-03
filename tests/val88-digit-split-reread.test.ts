@@ -141,8 +141,8 @@ describe("val 88 — množice in tally (139 = 139 = 139)", () => {
 });
 
 describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + oznake)", () => {
-  test("register 2.875 vrstic (val 115: +4 vstavljene); točno 139 z v88 polji", () => {
-    expect(register).toHaveLength(2875);
+  test("register 2.876 vrstic (val 115: +4 vstavljene); točno 139 z v88 polji", () => {
+    expect(register).toHaveLength(2876);
     const v88rows = register.filter(
       (r) => r["v88_status"] !== undefined || r["jaethe_v88"] !== undefined || r["klafter_v88"] !== undefined || String(r["jk_review"] ?? "").startsWith("v88")
     );
@@ -153,9 +153,13 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
     // val 115: 4 vstavljene vrstice (globalni indeksi 647, 761, 912, 932 — band-v113/register-v115-changes.json)
     // premaknejo vse kasnejše globalne indekse registra; ta preslikava vrne TRENUTNI indeks iz v88-era gi
     const gi115 = (gi: number): number =>
-      gi >= 932 ? gi + 4 : gi >= 912 ? gi + 3 : gi >= 761 ? gi + 2 : gi >= 647 ? gi + 1 : gi;
+      gi >= 932 ? gi + 4 : gi >= 912 ? gi + 3 : gi >= 761 ? gi + 2 : gi >= 647 ? gi + 1 : gi; // val 115 vstavitve
+    const gi124 = (gi: number): number => {
+      const g = gi115(gi);
+      return g >= 93 ? g + 1 : g; // val 124: +1 vstavljena vrstica pri 93 (p7 Nro 92 — F-V123-01 dvojni anchor)
+    };
     for (const c of changes.changes) {
-      const r = register[gi115(c.global_idx)];
+      const r = register[gi124(c.global_idx)];
       if (c.type === "v88_resolution") {
         expect(String(r.jaethe), `gi${c.global_idx} jaethe`).toBe(String(c.new!.jaethe));
         expect(String(r.klafter), `gi${c.global_idx} klafter`).toBe(String(c.new!.klafter));
@@ -173,9 +177,13 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
   test("pravilo vrednosti: '|' = izraziti j|k; sicer klafter:=v88 + jaethe='' (F-PV-05 page-level)", () => {
     const gi115 = (gi: number): number =>
       gi >= 932 ? gi + 4 : gi >= 912 ? gi + 3 : gi >= 761 ? gi + 2 : gi >= 647 ? gi + 1 : gi; // val 115 vstavitve
+    const gi124 = (gi: number): number => {
+      const g = gi115(gi);
+      return g >= 93 ? g + 1 : g; // val 124: +1 vstavljena vrstica pri 93 (p7 Nro 92 — F-V123-01 dvojni anchor)
+    }; // val 115 vstavitve
     for (const a of adjudication.adjudications) {
       if (a.status === "U") continue;
-      const r = register[gi115(a.global_idx)];
+      const r = register[gi124(a.global_idx)];
       if (a.v88!.includes("|")) {
         const [j, k] = a.v88!.split("|");
         expect(String(r.jaethe), `gi${a.global_idx}`).toBe(j);
@@ -192,10 +200,14 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
   test("UNRESOLVED (gi 1226 p63 r13, gi 2384 p121 r0): vrednosti = pass1 + opomba, brez v88_status", () => {
     const gi115 = (gi: number): number =>
       gi >= 932 ? gi + 4 : gi >= 912 ? gi + 3 : gi >= 761 ? gi + 2 : gi >= 647 ? gi + 1 : gi; // val 115 vstavitve
+    const gi124 = (gi: number): number => {
+      const g = gi115(gi);
+      return g >= 93 ? g + 1 : g; // val 124: +1 vstavljena vrstica pri 93 (p7 Nro 92 — F-V123-01 dvojni anchor)
+    }; // val 115 vstavitve
     const us = adjudication.adjudications.filter((a) => a.status === "U");
     expect(us.map((a) => a.global_idx).sort()).toEqual([1226, 2384]);
     for (const a of us) {
-      const r = register[gi115(a.global_idx)];
+      const r = register[gi124(a.global_idx)];
       expect(String(r.jaethe), `gi${a.global_idx}`).toBe(String(r.jaethe_pass1_v82));
       expect(String(r.klafter), `gi${a.global_idx}`).toBe(String(r.klafter_pass1_v82));
       expect(String(r.v88_note)).toContain("nejasen");
@@ -231,7 +243,7 @@ describe("val 88 — §4/§22 disciplina (brez tihе kaskade)", () => {
 
   test("KG nosi val 112 stanje (kaskada) — j|k vrednosti ostajajo izven KG polj", () => {
     // val 88 je bil KG puščal na v86 stanju (6fb6fae8); val 89 §5 projekcija (b4f5011c); val 98 86b del 2 (2b16acad); val 107 86b del 3 (9f856d28); val 112 F-PV-07 p5/p7/p12 (5ae52bd8)
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^fc23ab10/); // val 119 del 2e (val 2d-x3 je bil 62d8cfea, val 114 376e2b27)
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^ee3ac862/); // val 119 del 2e (val 2d-x3 je bil 62d8cfea, val 114 376e2b27)
   });
 
   test("parcelni register nosi projekcija 143/143 + F-PV-05/07 korekcije (val 112: 735 → 676); negative register ostaja 14", () => {

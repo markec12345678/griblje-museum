@@ -48,7 +48,7 @@ const p3 = reg.filter((r) => r.page === 3);
 
 describe("val 111 — p3 vgradnja območij (F-PV-07)", () => {
   test("register: 2875 vrstic (val 115: +4 vstavljene), 139 v88 guard nedotaknjen", () => {
-    expect(reg.length).toBe(2875);
+    expect(reg.length).toBe(2876);
     const v88 = reg.filter(
       (r) => (r as { v88_status?: string }).v88_status !== undefined ||
              (r as { jk_review?: string }).jk_review === "v88-digit-split-UNRESOLVED",

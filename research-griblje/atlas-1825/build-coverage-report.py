@@ -664,7 +664,8 @@ source_coverage = {
     "sources": src_list,
     "transcription": {
         "PUA": {"pages": 49, "rows": len(pua), "passes": 2},
-        "PS": {"pages": 143, "rows": 2875, "passes": 3, "note": ("p1–55: val 57 pass1 + val 61 crop re-read; p56–143: val 82 pass1 + "
+        # val 124: 2875 + 1 vstavljena p7 (Nro 92, F-V123-01 dvojni anchor); prej val 115: 2871 + 4
+        "PS": {"pages": 143, "rows": 2876, "passes": 3, "note": ("p1–55: val 57 pass1 + val 61 crop re-read; p56–143: val 82 pass1 + "
              "val 83 celostranski neodvisen re-read; val 86 kolonski tile-i (kompozit z glavo stolpcev, x2) = 2. prehod na 40 straneh "
              "(p56–94 + p121; 808 vrstic — kvota 429, obnovljivo z tile-read-v86.mts): F-PV-05 (sistemski pomik J→K) VGRADJENA — "
              "287 jk popravkov + 43 arbitraž + 3 N|K razdelitve, vsak popravek s snimko jaethe/klafter_pass1_v82 + jk_review; "

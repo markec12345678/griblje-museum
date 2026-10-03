@@ -24,7 +24,7 @@ function rowsOn(page: number): Reg {
 
 describe("val 119 del 1 — gardele vhodov", () => {
   test("register: 2875 vrstic; changes 99 = 47 owner + 14 haus + 28 anmerkung + 4 ditto + 6 page_obs", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     expect(CH.val).toBe("119-del1");
     expect(CH.stats.owner_fixes).toBe(47);
     expect(CH.stats.haus_fixes).toBe(14);
@@ -171,8 +171,8 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha fc23ab10 (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^fc23ab10/);
+  test("KG sha ee3ac862 (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^ee3ac862/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];
@@ -183,15 +183,15 @@ describe("val 119 del 1 — kaskada (izrecna)", () => {
     expect(s.length).toBeGreaterThan(0);
   });
 
-  test("pass3 392 parcel + raba 105/142 identično; K5 dito 207; K9 53 (val 119 del 2d-x3: p48 F-NA-02 — v114 jae = klafter v napačni koloni)", () => {
+  test("pass3 392 parcel + raba 105/142 identično; K5 dito 208; K9 53 (val 119 del 2d-x3: p48 F-NA-02 — v114 jae = klafter v napačni koloni)", () => {
     const pr = readJSON("research-griblje/atlas-1825/parcel-register-1825.json") as Record<string, unknown>;
     expect(pr.ps_parcels_total).toBe(392);
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as {
       meta: Record<string, unknown>;
     };
-    expect(String(c4.meta.K5_input_reliability)).toContain("207/2875");
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876");
     const k9 = JSON.stringify(c4);
     expect(k9).toContain('"jaethe_plain_100_1599":52');
-    expect(k9).toContain('"jaethe_empty":959'); // val 119 del 2e: 965 − 4 → val 121: 958
+    expect(k9).toContain('"jaethe_empty":960'); // val 119 del 2e: 965 − 4 → val 121: 958 → val 124: 959 + 1 (vstavljena p7 Nro 92)
   });
 });

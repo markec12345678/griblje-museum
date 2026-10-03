@@ -116,8 +116,8 @@ describe("val 86 — pilot pravilnosti (F-PV-06 pouk: glava = sidro stolpcev)", 
 });
 
 describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review oznake)", () => {
-  test("register 2.875 vrstic (val 115: +4 vstavljene); 1.795 v86-colonial-tiles (p56–142: val 86 + 98 + 107 + val 116 p142), p1–55 + p143 nedotaknjeni", () => {
-    expect(register).toHaveLength(2875);
+  test("register 2.876 vrstic (val 115: +4 vstavljene); 1.795 v86-colonial-tiles (p56–142: val 86 + 98 + 107 + val 116 p142), p1–55 + p143 nedotaknjeni", () => {
+    expect(register).toHaveLength(2876);
     const v86 = register.filter((r) => r.reading_pass === "v86-colonial-tiles");
     expect(v86).toHaveLength(1795); // val 115 je bil 1755 → val 116: +40 (p142 zaključek 2. prehoda)
     expect(v86.every((r) => (r.page as number) >= 56 && (r.page as number) <= 142)).toBe(true);
@@ -256,7 +256,7 @@ describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodo
       val: number; transcription: { PS: { rows: number; passes: number; note: string } };
     };
     expect(sc.val).toBe(108); // val 108 regeneracija (re-read 14 strani)
-    expect(sc.transcription.PS.rows).toBe(2875); // val 115: 2871 + 4 vstavljene
+    expect(sc.transcription.PS.rows).toBe(2876); // val 115: 2871 + 4 vstavljene
     expect(sc.transcription.PS.passes).toBe(3);
     expect(sc.transcription.PS.note).toContain("F-PV-05");
     expect(sc.transcription.PS.note).toContain("nič tiho prepisano");
