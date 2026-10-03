@@ -18,6 +18,7 @@ const house = JSON.parse(readFileSync(join(RG, "house-register-1825.json"), "utf
     pua_ps_name_sim_v119?: { class: string; best_ps_name: string; sim_surname: number } | null;
     conflict_ids: string[];
     owners: Record<string, unknown>; bp_refs: { bp: number }[]; notes: string | null;
+    ps_absence?: { rows: number; verdict: string; val: number };
   }[];
 };
 const bp = JSON.parse(readFileSync(join(RG, "bp-house-reconciliation-1825.json"), "utf8")) as {
@@ -106,13 +107,15 @@ describe("val 59 — ATLAS 1825 PASS 2 (sinhroniziran @ val 119 del 3)", () => {
         expect(house.houses.find((x) => x.house_no_1825 === hn)).toBeUndefined();
       }
       // val 122 (ločena odločitev, protokol 145): 72 ima owners.ps PROVISIONAL; 74/76 nova vnosa
+      const psOf = (h: (typeof house.houses)[number]) =>
+        h.owners.ps as { layer?: string; rows?: number } | null;
       const h72 = house.houses.find((x) => x.house_no_1825 === "72");
-      expect(h72!.owners.ps?.layer).toBe("PROVISIONAL");
-      expect(h72!.owners.ps?.rows).toBe(2);
+      expect(psOf(h72!)?.layer).toBe("PROVISIONAL");
+      expect(psOf(h72!)?.rows).toBe(2);
       for (const hn of ["74", "76"]) {
         const h = house.houses.find((x) => x.house_no_1825 === hn);
         expect(h).toBeDefined();
-        expect(h!.owners.ps?.layer).toBe("PROVISIONAL");
+        expect(psOf(h!)?.layer).toBe("PROVISIONAL");
         expect(h!.notes).toContain("val 122");
       }
     });
