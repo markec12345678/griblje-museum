@@ -5080,3 +5080,24 @@ Stage Summary:
 - Vrednostna plast p3–p16: 27 FIX + 7 DISPUTE odprto + F-V123-01 (p7 strukturno, 0 popravkov) + 13 strani opazb; K9 56/959/84 stabilen
 - KG vsebinsko identična (fc23ab10); osebna plast nespremenjena (F-SYNC-04)
 - Naslednje: F-V123-01 dvojni anchor p7 → 6 DISPUTE zoomi → NR-14 črkovalna sodba + p56–143 osebni re-read → register 26-0326/26-0379 → F-H122-01
+
+---
+Task ID: 124-cascade
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 124 publikacijska kaskada (PR #135) — F-V123-01 rešen: p7 dvojni anchor (ime+vrednost) + 7 DISPUTE razrešitev
+
+Work Log:
+- Kontekst rekonstruiran iz git log + worklog (prehodni povzetek zastarel — ustavljen na val 119 del 2d; dejansko stanje main @ f5dd456 = val 123 zaključen); najdena OBSTOJEČA veja feat/val124-fv123-01-dvojni-anchor-p7 z NE-commitano vgradnjo prejšnje seje (build-register-v124.py + readings/changes + register/KG/c4/story/timeline/coverage kaskada že izvedena, 0 commitov)
+- Vgradnja preverjena vrstico-po-vrstico proti HEAD: 2875→2876 (+1 vstavljena p7 Nro 92), p7 21→22 vrstic, 7 popravkov r4–r10 + 3 re-sidranja repa (224→321, 945→262, 297→397) + Nro 92 re-sidro (kl 52→54, haus 26→56) + EXTRA ditto vrstica (kl 110) + ertrag_kr 1 -381 r3→r4 + fantom premik r20→r21; dispute: 4 FIX + 3 POTRJENE + bonus p11 r15 382→582
+- KG preverjena: vsebinsko IDENTIČNA (3764/3473, node/edge stats identični, timestamp-only prehod fc23ab10→ee3ac862); c4 delta minimalna (K9 jaethe_empty 959→960, klafter_plain_le99 177→178, K5 dito 207/2875→208/2876 — EXTRA je ditto)
+- Dopolnjeno v tej seji: analysis-v5/v6 regenerirana (varovalki v builderjih 2875→2876) + neskrbljen duplikat src/data/coverage-report-1825.json izbrisan + build-coverage-report.py rows 2875→2876 + source-coverage regenerirana
+- Testi: 67 failov → izrecen prehod: mehanski (2875→2876, fc23ab10→ee3ac862, 959→960, 177→178, 207→208, v112 265→264, 1077→1078; 26 datotek) + posebni: val 88 gi115→gi124 preslikava (+1 @93, 3 definicije), val 112 changes indeksi ≥93 +1 + p7 test prepisan (22 vrstic, EXTRA r20, fantom r21, moved 59→58), val 123 dispute/F-V123-01 testi preklopljeni na rešene sodbe (disputa sledi vrednosti: anmerkungi r13/15/16 → r14/16/17), val 85/86 toHaveLength, val 119 del1 K9 JSON-string pin; +17 novih varovalk tests/val124 (p7 zaporedje 1:1 z oljnim zaporedjem, GUARD snimke, Nro 92 + EXTRA gardele, dispute sodbe, c4/KG/kaskada/source-coverage/timeline)
+- Končno stanje: 1358 testov: 1347 pass / 11 skip / 0 fail; lint + tsc čisti
+- Docs: protokol 147 + KAZALO 147 + README 184. sklop
+- Kaskada: commit 5c841d5 → PUSH (token) → PR #135 → CI 3/3 ZELENO V PRVEM TEKU (drugič zapored) → MERGE @ b7f6fc2 (merge commit) → remote veja izbrisana (204) → lokalna izbrisana → main sinhroniziran; delovno drevo čisto
+
+Stage Summary:
+- Val 124 MERGAN; main @ b7f6fc2; PR #135; CI 3/3 zeleno v prvem teku
+- F-V123-01 ZAPRT: v57/v82 bralec preskočil udarjeno 54 (Nro 85) → vrednosti eno vrstico nizko; dvojni anchor ime+vrednost rekonstruiral celotno p7 (22 vrstic); register 2876; KG ee3ac862 (timestamp-only); K9 56/960/84
+- 7 DISPUTE val 123 ZAPRTI (4 FIX + 3 POTRJENE) + 2 bonus najdbi; F-V124-01 ODPRT (p7 imenska/hišna plast — ločen val) + kultur_p7
+- Naslednje: F-V124-01 imenska plast p7 → NR-14 črkovalna sodba + p56–143 osebni re-read → register 26-0326/26-0379 → F-H122-01
