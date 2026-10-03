@@ -9,7 +9,7 @@
  *        vrednosti v JOCH koloni (Acker/Wald/Hutweide del); popravki r0 418 ✓, ertrag 1-136 @r1
  *   p51: 961–980 + Übertrag (kl 1263) + Fürtrag 5|547 (prečrtan); vrednosti v KLAFTER koloni
  *        (Wiese/Ladwiese del); popravki r0 89→82, r11 959→259, r13 453→433, r18 820→520
- *   p52: 981–1000 + Fürtrag 6|1217; cfl 1097 @r9; capital 1001 @r17 potrjen; v114 'Insgesamt:'
+ *   p52: 982–1000 + Fürtrag 6|1217; cfl 1097 @r9; capital 1001 @r17 potrjen; v114 'Insgesamt:'
  *        @r19 = misread vrstice 1000 → kultur počiščen
  *   p53: 1001–1020 + Fürtrag 9|1027 (prečrtan); ertrag 3-568 @r3, 1-1377 @r7; popravki r4
  *        1194→1191, r13 51→31, r14 349→319 (preklicana), r16 66→68 (preklicana)
@@ -262,10 +262,10 @@ describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", 
 });
 
 describe("val 119 del 2e — kaskada (izrecna)", () => {
-  test("KG sha ab418c75: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^ab418c75/);
+  test("KG sha 1e49de43: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^1e49de43/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^ab418c75/,
+      /^1e49de43/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -274,7 +274,7 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
       edge_stats: Record<string, number>;
       invariant_violations: unknown[];
     };
-    expect(kg.nodes.length).toBe(3764);
+    expect(kg.nodes.length).toBe(3765);
     expect(kg.edges.length).toBe(3473);
     expect(kg.node_stats.PARCEL).toBe(2427);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2775);
@@ -317,7 +317,7 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
       entities: unknown[];
       relations: unknown[];
     };
-    expect(sg.entities.length).toBe(3764);
+    expect(sg.entities.length).toBe(3765);
     expect(sg.relations.length).toBe(3473);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("src/data/timeline-1825-1830.json") as {

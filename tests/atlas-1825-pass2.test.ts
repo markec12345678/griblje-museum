@@ -36,9 +36,9 @@ const persons = JSON.parse(readFileSync(join(RG, "person-owner-register-1825.jso
              possible_duplicate?: boolean; merge_decision?: string; reason?: string }[];
 };
 
-describe("val 59 — ATLAS 1825 PASS 2 (sinhroniziran @ val 119 del 3)", () => {
-  it("val/pass označena (#42) — pass2 artefakti nosijo val 119 del 3 sync oznako", () => {
-    expect(house.val).toBe("119-del3");
+describe("val 59 — ATLAS 1825 PASS 2 (sinhroniziran @ val 126)", () => {
+  it("val/pass označena (#42) — pass2 artefakti nosijo val 126 sync oznako (NR-14 sodba + F-V125-01)", () => {
+    expect(house.val).toBe("126");
     expect(String(house.pass)).toContain("sync");
   });
 
@@ -51,12 +51,12 @@ describe("val 59 — ATLAS 1825 PASS 2 (sinhroniziran @ val 119 del 3)", () => {
       expect(types.has("external_ref")).toBe(true);
     });
 
-    it("evidence statusi pokrivajo vse hiše (ni praznega statusa) — val 119 del 3 landscape", () => {
+    it("evidence statusi pokrivajo vse hiše (ni praznega statusa) — val 126 landscape", () => {
       const allowed = ["AGREE", "PARTIAL", "CONFLICT", "SINGLE_SOURCE", "UNKNOWN", "UNKNOWN_SEMANTICS"];
       expect(house.houses.every((h) => allowed.includes(h.evidence_status))).toBe(true);
       expect(house.coverage["AGREE"]).toBe(16);
       expect(house.coverage["CONFLICT"]).toBe(33);
-      expect(house.coverage["SINGLE_SOURCE"]).toBe(32);
+      expect(house.coverage["SINGLE_SOURCE"]).toBe(34); // val 126: top-level coverage preštet (stale 32 od val 122 — per-house realnost 34)
       expect(house.coverage["PARTIAL"]).toBe(13);
       expect(house.coverage["UNKNOWN_SEMANTICS"]).toBe(73);
     });
@@ -182,16 +182,16 @@ describe("val 59 — ATLAS 1825 PASS 2 (sinhroniziran @ val 119 del 3)", () => {
   });
 
   describe("§5 person/owner register", () => {
-    it("981 oseb (98 PUA + 656 PS + 227 PT), 418 possible_duplicate, vsi NOT_MERGED — val 119 del 3 sync", () => {
-      expect(persons.persons_total).toBe(981);
-      expect(persons.possible_duplicates).toBe(418);
+    it("982 oseb (98 PUA + 657 PS + 227 PT), 419 possible_duplicate, vsi NOT_MERGED — val 119 del 3 sync", () => {
+      expect(persons.persons_total).toBe(982);
+      expect(persons.possible_duplicates).toBe(419);
       const flagged = persons.persons.filter((p) => p.possible_duplicate);
       expect(flagged.every((p) => p.merge_decision === "NOT_MERGED" && p.reason)).toBe(true);
       const types = persons.persons.reduce<Record<string, number>>((acc, p) => {
         acc[p.person_type] = (acc[p.person_type] ?? 0) + 1; return acc;
       }, {});
       expect(types["owner(pua)"]).toBe(98);
-      expect(types["owner(ps)"]).toBe(656);
+      expect(types["owner(ps)"]).toBe(657);
       expect(types["owner_variant(pt)"]).toBe(227);
       // owner(ps) vnosi nosijo seznam strani (p3–p55) — hiša 44 Husitsch Maria
       const hm = persons.persons.find((p) => p.name_original === "Husitsch Maria" && p.person_type === "owner(ps)");

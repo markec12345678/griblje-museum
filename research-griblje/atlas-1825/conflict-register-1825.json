@@ -1,5 +1,5 @@
 {
- "val": "119-del3",
+ "val": "126",
  "pass": 2,
  "issue": "#42 §14",
  "title": "CONFLICT REGISTER 1825 — centralni register (nič skritega z mergeom)",
@@ -9,7 +9,7 @@
   "ps": "ps-n83/register.json (1.073 vrstic, 55/143 strani, val 57) + ps-n83/analysis-v1.json (val 58)",
   "bp_matrix": "raw-web-val57-2026-10/bp-house-matrix.json (100 vrstic, val 57)",
   "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)",
-  "sync": "atlas-1825/build-sync-v119-del3.py (val 119 del 3, 0 VLM)"
+  "sync": "atlas-1825/build-sync-v126.py (val 126, 0 VLM)"
  },
  "coverage": {
   "bp_house_binding": 54,
@@ -1251,8 +1251,9 @@
    "source_b": "PS N83 s. [4, 12, 29, 41, 47, 48, 51, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 3 distinct imen pri hiši; best 'Gemeinde' sim_surname 0.5 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 3 distinct imen pri hiši; best 'Gemeinde' sim_surname 0.5 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 3 distinct imen pri hiši; best 'Gemeinde' sim_surname 0.5 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-001-01",
@@ -1281,8 +1282,9 @@
    "source_b": "PS N83 s. [11, 35, 45, 47, 48, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 12 distinct imen pri hiši; best 'Wier Grunigman' sim_surname 0.667 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 12 distinct imen pri hiši; best 'Wier Grunigman' sim_surname 0.667 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 12 distinct imen pri hiši; best 'Wier Grunigman' sim_surname 0.667 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-002-01",
@@ -1307,8 +1309,9 @@
    "source_b": "PS N83 s. [45, 47, 48, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 3 distinct imen pri hiši; best 'Stabelz Soan.[?]' sim_surname 0.429 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 3 distinct imen pri hiši; best 'Stabelz Soan.[?]' sim_surname 0.429 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 3 distinct imen pri hiši; best 'Stabelz Soan.[?]' sim_surname 0.429 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-003-01",
@@ -1338,8 +1341,9 @@
    "source_b": "PS N83 s. [45, 47, 48, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 8 distinct imen pri hiši; best 'Dragasch Jure.' sim_surname 0.667 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 8 distinct imen pri hiši; best 'Dragasch Jure.' sim_surname 0.667 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 8 distinct imen pri hiši; best 'Dragasch Jure.' sim_surname 0.667 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-004-01",
@@ -1366,8 +1370,9 @@
    "source_b": "PS N83 s. [14, 28, 45, 48] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Lubreschiby Maathe.[?]' sim_surname 0.455 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Lubreschiby Maathe.[?]' sim_surname 0.455 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Lubreschiby Maathe.[?]' sim_surname 0.455 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-005-01",
@@ -1393,8 +1398,9 @@
    "source_b": "PS N83 s. [27, 49, 50, 51, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Dragasch Jure', sim_surname 0.875, metoda B); first-owner 'Haischan[?] Mathä' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Dragasch Jure', sim_surname 0.875, metoda B); first-owner 'Haischan[?] Mathä' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Dragasch Jure', sim_surname 0.875, metoda B); first-owner 'Haischan[?] Mathä' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-006-01",
@@ -1426,8 +1432,9 @@
    "source_b": "PS N83 s. [4, 5, 6, 45, 47, 48, 49, 50, 53] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 13 distinct imen pri hiši; best 'Baron Helfenburg' sim_surname 0.5 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 13 distinct imen pri hiši; best 'Baron Helfenburg' sim_surname 0.5 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 13 distinct imen pri hiši; best 'Baron Helfenburg' sim_surname 0.5 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-007-01",
@@ -1454,8 +1461,9 @@
    "source_b": "PS N83 s. [5, 14, 33, 45, 49] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 6 distinct imen pri hiši; best 'Zellhamisch Mathl.[?]' sim_surname 0.455 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 6 distinct imen pri hiši; best 'Zellhamisch Mathl.[?]' sim_surname 0.455 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 6 distinct imen pri hiši; best 'Zellhamisch Mathl.[?]' sim_surname 0.455 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-008-01",
@@ -1483,8 +1491,9 @@
    "source_b": "PS N83 s. [6, 28, 43, 45, 48, 49] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Dragasch Jure.' sim_surname 0.444 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Dragasch Jure.' sim_surname 0.444 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Dragasch Jure.' sim_surname 0.444 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-009-01",
@@ -1509,8 +1518,9 @@
    "source_b": "PS N83 s. [28, 45, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Jakobschitsch Mathä[?]' sim_surname 0.692 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 2 distinct imen pri hiši; best 'Jakobschitsch Mathä[?]' sim_surname 0.692 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Jakobschitsch Mathä[?]' sim_surname 0.692 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-010-01",
@@ -1537,8 +1547,9 @@
    "source_b": "PS N83 s. [25, 45, 49, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 9 distinct imen pri hiši; best 'Pessing Georg' sim_surname 0.615 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 9 distinct imen pri hiši; best 'Pessing Georg' sim_surname 0.615 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 9 distinct imen pri hiši; best 'Pessing Georg' sim_surname 0.615 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-011-01",
@@ -1566,8 +1577,9 @@
    "source_b": "PS N83 s. [6, 45, 49, 50, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Peodvin Grany.' sim_surname 0.333 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Peodvin Grany.' sim_surname 0.333 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Peodvin Grany.' sim_surname 0.333 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-012-01",
@@ -1594,8 +1606,9 @@
    "source_b": "PS N83 s. [28, 32, 45, 48, 49, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Lubreschitskh Maathe.' sim_surname 0.583 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Lubreschitskh Maathe.' sim_surname 0.583 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Lubreschitskh Maathe.' sim_surname 0.583 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-016-01",
@@ -1624,8 +1637,9 @@
    "source_b": "PS N83 s. [4, 5, 9, 23, 43, 54] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 15 distinct imen pri hiši; best 'Pedian Matrlh[?]' sim_surname 0.462 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 15 distinct imen pri hiši; best 'Pedian Matrlh[?]' sim_surname 0.462 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 15 distinct imen pri hiši; best 'Pedian Matrlh[?]' sim_surname 0.462 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-017-01",
@@ -1651,8 +1665,9 @@
    "source_b": "PS N83 s. [9, 54, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 6 distinct imen pri hiši; best 'Eidlald Wurfl' sim_surname 0.429 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 6 distinct imen pri hiši; best 'Eidlald Wurfl' sim_surname 0.429 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 6 distinct imen pri hiši; best 'Eidlald Wurfl' sim_surname 0.429 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-018-01",
@@ -1679,8 +1694,9 @@
    "source_b": "PS N83 s. [5, 8, 34, 54] (končno stanje 1825, PARTIAL 55/143)",
    "status": "RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PS first-owner 'Schimay Jeklr[?]' potjuje PUA vpis (sim_surname 0.833, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.279 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PS first-owner 'Schimay Jeklr[?]' potjuje PUA vpis (sim_surname 0.833, metoda B) — zgodovinski razredi val 58 (MISMATCH) in val 119 (AGREE) ohranjena v dokazih",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PS first-owner 'Schimay Jeklr[?]' potjuje PUA vpis (sim_surname 0.833, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.279 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01"
   },
   {
    "conflict_id": "CH-019-01",
@@ -1705,8 +1721,9 @@
    "source_b": "PS N83 s. [21, 54] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Thomas Malfg' sim_surname 0.364 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 2 distinct imen pri hiši; best 'Thomas Malfg' sim_surname 0.364 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Thomas Malfg' sim_surname 0.364 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-020-01",
@@ -1717,14 +1734,13 @@
    },
    "source_a": "PUA N83 (pripravljalno stanje, val 51/57)",
    "claim_b": {
-    "owner": "Lappary Marbl",
-    "sim_concat": 0.255,
+    "owner": "Dekleva Matija",
+    "sim_concat": 0.167,
     "sim_surname": 0.6,
     "sim_any": 0.6,
     "best_ps_name": "Ring Mathä.[?]",
-    "n_distinct": 5,
+    "n_distinct": 4,
     "pages": [
-     7,
      14,
      33,
      35,
@@ -1735,8 +1751,9 @@
    "source_b": "PS N83 s. [7, 14, 28, 33, 35, 36, 37, 39, 54] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Ring Mathä.[?]' sim_surname 0.6 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Ring Mathä.[?]' sim_surname 0.6 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Ring Mathä.[?]' sim_surname 0.6 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-021-01",
@@ -1761,8 +1778,9 @@
    "source_b": "PS N83 s. [5, 54] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Urich Peter' sim_surname 0.375 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 2 distinct imen pri hiši; best 'Urich Peter' sim_surname 0.375 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Urich Peter' sim_surname 0.375 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-022-01",
@@ -1789,8 +1807,9 @@
    "source_b": "PS N83 s. [9, 12, 13, 30, 36, 54] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Mittig Jofam' sim_surname 0.571 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Mittig Jofam' sim_surname 0.571 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Mittig Jofam' sim_surname 0.571 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-024-01",
@@ -1823,8 +1842,9 @@
    "source_b": "PS N83 s. [18, 27, 28, 29, 30, 31, 36, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 3 distinct imen pri hiši; best 'Ring Michael' sim_surname 0.6 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 3 distinct imen pri hiši; best 'Ring Michael' sim_surname 0.6 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 3 distinct imen pri hiši; best 'Ring Michael' sim_surname 0.6 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-025-01",
@@ -1856,8 +1876,9 @@
    "source_b": "PS N83 s. [27, 28, 29, 31, 36, 37, 38] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Ring Michl' sim_surname 0.6 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 5 distinct imen pri hiši; best 'Ring Michl' sim_surname 0.6 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Ring Michl' sim_surname 0.6 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-026-01",
@@ -1873,11 +1894,10 @@
     "sim_surname": 0.727,
     "sim_any": 0.727,
     "best_ps_name": "Bring Michael[?]",
-    "n_distinct": 8,
+    "n_distinct": 7,
     "pages": [
      3,
      5,
-     7,
      17,
      19,
      26,
@@ -1895,8 +1915,9 @@
    "source_b": "PS N83 s. [5, 7, 18, 19, 26, 27, 29, 30, 34, 35, 36, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
    "status": "RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PS first-owner 'Bring Michael[?]' potjuje PUA vpis (sim_surname 0.727, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.114 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PS first-owner 'Bring Michael[?]' potjuje PUA vpis (sim_surname 0.727, metoda B) — zgodovinski razredi val 58 (MISMATCH) in val 119 (AGREE) ohranjena v dokazih",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PS first-owner 'Bring Michael[?]' potjuje PUA vpis (sim_surname 0.727, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.114 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01"
   },
   {
    "conflict_id": "CH-027-01",
@@ -1931,8 +1952,9 @@
    "source_b": "PS N83 s. [16, 17, 18, 24, 26, 27, 29, 30, 34, 35, 37, 38] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Malleitsch Johann', sim_surname 0.737, metoda B); first-owner 'Hoschlar Peter' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Malleitsch Johann', sim_surname 0.737, metoda B); first-owner 'Hoschlar Peter' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Malleitsch Johann', sim_surname 0.737, metoda B); first-owner 'Hoschlar Peter' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-028-01",
@@ -1963,8 +1985,9 @@
    "source_b": "PS N83 s. [26, 29, 30, 34, 35, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Ring Michl' sim_surname 0.6 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 5 distinct imen pri hiši; best 'Ring Michl' sim_surname 0.6 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Ring Michl' sim_surname 0.6 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-029-01",
@@ -2000,8 +2023,9 @@
    "source_b": "PS N83 s. [5, 15, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
    "status": "RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PS first-owner 'Milleg Hans[?]' potjuje PUA vpis (sim_surname 1.0, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.222 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PS first-owner 'Milleg Hans[?]' potjuje PUA vpis (sim_surname 1.0, metoda B) — zgodovinski razredi val 58 (MISMATCH) in val 119 (AGREE) ohranjena v dokazih",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PS first-owner 'Milleg Hans[?]' potjuje PUA vpis (sim_surname 1.0, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.222 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01"
   },
   {
    "conflict_id": "CH-030-01",
@@ -2035,8 +2059,9 @@
    "source_b": "PS N83 s. [15, 21, 24, 26, 27, 29, 30, 34, 35, 37, 38, 39] (končno stanje 1825, PARTIAL 55/143)",
    "status": "RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PS first-owner 'Tillah Walfja' potjuje PUA vpis (sim_surname 0.833, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.35 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PS first-owner 'Tillah Walfja' potjuje PUA vpis (sim_surname 0.833, metoda B) — zgodovinski razredi val 58 (MISMATCH) in val 119 (AGREE) ohranjena v dokazih",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PS first-owner 'Tillah Walfja' potjuje PUA vpis (sim_surname 0.833, metoda B) — prvotna predpostavka različnih imen ne drži več; val 58 sim 0.35 (MISMATCH) je bil artefakt zamika vrstic (F-NA-01/02/03) + metode F-SYNC-01"
   },
   {
    "conflict_id": "CH-032-01",
@@ -2065,8 +2090,9 @@
    "source_b": "PS N83 s. [13, 21, 23, 31, 34, 35] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 6 distinct imen pri hiši; best 'Ulrich Georg.[?]' sim_surname 0.471 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 6 distinct imen pri hiši; best 'Ulrich Georg.[?]' sim_surname 0.471 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 6 distinct imen pri hiši; best 'Ulrich Georg.[?]' sim_surname 0.471 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-033-01",
@@ -2091,8 +2117,9 @@
    "source_b": "PS N83 s. [9, 20, 27] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Regina Yourn' sim_surname 0.308 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 2 distinct imen pri hiši; best 'Regina Yourn' sim_surname 0.308 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 2 distinct imen pri hiši; best 'Regina Yourn' sim_surname 0.308 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-034-01",
@@ -2122,8 +2149,9 @@
    "source_b": "PS N83 s. [9, 15, 17, 20, 33, 35] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 8 distinct imen pri hiši; best 'Fitsch Malfg' sim_surname 0.571 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 8 distinct imen pri hiši; best 'Fitsch Malfg' sim_surname 0.571 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 8 distinct imen pri hiši; best 'Fitsch Malfg' sim_surname 0.571 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-036-01",
@@ -2160,8 +2188,9 @@
    "source_b": "PS N83 s. [9, 10, 11, 13, 16, 17, 19, 20, 21, 23, 26, 36] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Krishnar Wurfl', sim_surname 0.75, metoda B); first-owner 'Fillal Putlrd[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "FUZZY (delna podobnost imen)"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Krishnar Wurfl', sim_surname 0.75, metoda B); first-owner 'Fillal Putlrd[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "FUZZY (delna podobnost imen)",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Krishnar Wurfl', sim_surname 0.75, metoda B); first-owner 'Fillal Putlrd[?]' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-037-01",
@@ -2193,8 +2222,9 @@
    "source_b": "PS N83 s. [9, 10, 11, 13, 17, 19, 20, 24] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Kristan Peter', sim_surname 0.8, metoda B); first-owner 'Krishnar Peter' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "FUZZY (delna podobnost imen)"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Kristan Peter', sim_surname 0.8, metoda B); first-owner 'Krishnar Peter' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "FUZZY (delna podobnost imen)",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Kristan Peter', sim_surname 0.8, metoda B); first-owner 'Krishnar Peter' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-040-01",
@@ -2228,8 +2258,9 @@
    "source_b": "PS N83 s. [11, 12, 13, 14, 15, 21, 25, 26, 31, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 20 distinct imen pri hiši; best 'Peter Muster' sim_surname 0.545 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 20 distinct imen pri hiši; best 'Peter Muster' sim_surname 0.545 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 20 distinct imen pri hiši; best 'Peter Muster' sim_surname 0.545 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-041-01",
@@ -2264,8 +2295,9 @@
    "source_b": "PS N83 s. [4, 11, 12, 13, 14, 15, 21, 26, 31, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Georg Gorgy', sim_surname 1.0, metoda B); first-owner 'Pesian Georg[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Georg Gorgy', sim_surname 1.0, metoda B); first-owner 'Pesian Georg[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Georg Gorgy', sim_surname 1.0, metoda B); first-owner 'Pesian Georg[?]' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-042-01",
@@ -2296,8 +2328,9 @@
    "source_b": "PS N83 s. [11, 12, 13, 14, 15, 25, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Pöching. Mathel.[?]', sim_surname 0.875, metoda B); first-owner 'Peter Muster' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Pöching. Mathel.[?]', sim_surname 0.875, metoda B); first-owner 'Peter Muster' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Pöching. Mathel.[?]', sim_surname 0.875, metoda B); first-owner 'Peter Muster' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-043-01",
@@ -2331,8 +2364,9 @@
    "source_b": "PS N83 s. [6, 9, 11, 12, 13, 14, 16, 25, 26, 33] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 14 distinct imen pri hiši; best 'Brulla Maria.' sim_surname 0.5 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 14 distinct imen pri hiši; best 'Brulla Maria.' sim_surname 0.5 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 14 distinct imen pri hiši; best 'Brulla Maria.' sim_surname 0.5 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-044-01",
@@ -2363,8 +2397,9 @@
    "source_b": "PS N83 s. [11, 16, 17, 18, 19, 20, 24, 26] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Husitsch Maria', sim_surname 1.0, metoda B); first-owner 'Matthäus Muster' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Husitsch Maria', sim_surname 1.0, metoda B); first-owner 'Matthäus Muster' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Husitsch Maria', sim_surname 1.0, metoda B); first-owner 'Matthäus Muster' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-046-01",
@@ -2391,8 +2426,9 @@
    "source_b": "PS N83 s. [7, 12, 26, 32, 54] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Ajobatschar Pottra[?]' sim_surname 0.667 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Ajobatschar Pottra[?]' sim_surname 0.667 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Ajobatschar Pottra[?]' sim_surname 0.667 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-047-01",
@@ -2408,7 +2444,7 @@
     "sim_surname": 0.526,
     "sim_any": 0.526,
     "best_ps_name": "Hlahotshar Georg",
-    "n_distinct": 11,
+    "n_distinct": 12,
     "pages": [
      7,
      8,
@@ -2426,8 +2462,9 @@
    "source_b": "PS N83 s. [7, 8, 10, 12, 14, 23, 24, 25, 26, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 11 distinct imen pri hiši; best 'Hlahotshar Georg' sim_surname 0.526 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 12 distinct imen pri hiši; best 'Hlahotshar Georg' sim_surname 0.526 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 11 distinct imen pri hiši; best 'Hlahotshar Georg' sim_surname 0.526 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-048-01",
@@ -2459,8 +2496,9 @@
    "source_b": "PS N83 s. [7, 12, 14, 23, 24, 25, 28, 32, 33] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 7 distinct imen pri hiši; best 'Habschider Georg' sim_surname 0.476 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 7 distinct imen pri hiši; best 'Habschider Georg' sim_surname 0.476 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 7 distinct imen pri hiši; best 'Habschider Georg' sim_surname 0.476 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-051-01",
@@ -2492,8 +2530,9 @@
    "source_b": "PS N83 s. [4, 5, 6, 8, 16, 21, 23, 43, 55] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Urich Peter', sim_surname 1.0, metoda B); first-owner 'Ursch Petro[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Urich Peter', sim_surname 1.0, metoda B); first-owner 'Ursch Petro[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Urich Peter', sim_surname 1.0, metoda B); first-owner 'Ursch Petro[?]' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-058-01",
@@ -2520,8 +2559,9 @@
    "source_b": "PS N83 s. [4, 13, 14, 23] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Pavlicz Janez' sim_surname 0.444 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 4 distinct imen pri hiši; best 'Pavlicz Janez' sim_surname 0.444 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 4 distinct imen pri hiši; best 'Pavlicz Janez' sim_surname 0.444 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-060-01",
@@ -2553,8 +2593,9 @@
    "source_b": "PS N83 s. [5, 6, 14, 15, 16, 17, 23, 31] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 12 distinct imen pri hiši; best 'Pauling Walfja' sim_surname 0.462 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 12 distinct imen pri hiši; best 'Pauling Walfja' sim_surname 0.462 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 12 distinct imen pri hiši; best 'Pauling Walfja' sim_surname 0.462 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-061-01",
@@ -2586,8 +2627,9 @@
    "source_b": "PS N83 s. [5, 6, 8, 9, 13, 14, 19, 43] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Tillach Michl.[?]', sim_surname 0.769, metoda B); first-owner 'Krbitschan Mahs[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Tillach Michl.[?]', sim_surname 0.769, metoda B); first-owner 'Krbitschan Mahs[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Tillach Michl.[?]', sim_surname 0.769, metoda B); first-owner 'Krbitschan Mahs[?]' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-062-01",
@@ -2620,8 +2662,9 @@
    "source_b": "PS N83 s. [5, 13, 14, 16, 17, 18, 19, 20, 43] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Krischan Michl.[?]', sim_surname 0.706, metoda B); first-owner 'Kirschan Georg[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Krischan Michl.[?]', sim_surname 0.706, metoda B); first-owner 'Kirschan Georg[?]' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Krischan Michl.[?]', sim_surname 0.706, metoda B); first-owner 'Kirschan Georg[?]' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-063-01",
@@ -2637,11 +2680,10 @@
     "sim_surname": 0.545,
     "sim_any": 0.545,
     "best_ps_name": "Fring Masko[?]",
-    "n_distinct": 9,
+    "n_distinct": 8,
     "pages": [
      3,
      4,
-     7,
      8,
      13,
      14,
@@ -2655,8 +2697,9 @@
    "source_b": "PS N83 s. [7, 8, 13, 14, 16, 18, 20, 48] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 9 distinct imen pri hiši; best 'Fring Masko[?]' sim_surname 0.545 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 8 distinct imen pri hiši; best 'Fring Masko[?]' sim_surname 0.545 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 9 distinct imen pri hiši; best 'Fring Masko[?]' sim_surname 0.545 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-064-01",
@@ -2684,8 +2727,9 @@
    "source_b": "PS N83 s. [4, 9, 14, 16, 20, 26, 31, 36] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Kerbitacher Masfa[?]', sim_surname 0.762, metoda B); first-owner 'Urban Pankrazgall' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Kerbitacher Masfa[?]', sim_surname 0.762, metoda B); first-owner 'Urban Pankrazgall' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Kerbitacher Masfa[?]', sim_surname 0.762, metoda B); first-owner 'Urban Pankrazgall' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CH-065-01",
@@ -2715,8 +2759,9 @@
    "source_b": "PS N83 s. [7, 8, 16, 36, 43] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 7 distinct imen pri hiši; best 'Bering Manko' sim_surname 0.545 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 7 distinct imen pri hiši; best 'Bering Manko' sim_surname 0.545 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 7 distinct imen pri hiši; best 'Bering Manko' sim_surname 0.545 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-066-01",
@@ -2744,8 +2789,9 @@
    "source_b": "PS N83 s. [4, 6, 8, 17, 36] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Kirschan Georg[?]' sim_surname 0.533 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 5 distinct imen pri hiši; best 'Kirschan Georg[?]' sim_surname 0.533 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Kirschan Georg[?]' sim_surname 0.533 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-068-01",
@@ -2773,8 +2819,9 @@
    "source_b": "PS N83 s. [17, 23, 30, 31, 34, 35, 43] (končno stanje 1825, PARTIAL 55/143)",
    "status": "OPEN",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Muth Peter' sim_surname 0.375 — nesoglasje ostaja (F9)",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126 re-run: 5 distinct imen pri hiši; best 'Muth Peter' sim_surname 0.375 — nesoglasje ostaja (F9)",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3 re-read: 5 distinct imen pri hiši; best 'Muth Peter' sim_surname 0.375 — nesoglasje ostaja (F9)"
   },
   {
    "conflict_id": "CH-069-01",
@@ -2803,8 +2850,9 @@
    "source_b": "PS N83 s. [4, 5, 16, 43, 45, 47, 48, 50] (končno stanje 1825, PARTIAL 55/143)",
    "status": "PARTIALLY_RESOLVED",
    "what_would_resolve": "PS p56–p143 + preverjanje, ali je PUA vpis nadomeščen s pfand/prehodom (cf. p12 »Auf pfandbeyern 1801«)",
-   "note": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Christan Bräutig', sim_surname 0.941, metoda B); first-owner 'Schimey Wenzel' ostaja drugačno stanje — obe trditvi ohranjeni",
-   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni"
+   "note": "val 126: PUA lastnik potrjen med PS so-živečimi hiše ('Christan Bräutig', sim_surname 0.941, metoda B); first-owner 'Schimey Wenzel' ostaja drugačno stanje — obe trditvi ohranjeni",
+   "note_pass2": "različni lastniški stanji (F9): PUA pripravljalno vs PS končno — obe trditvi ohranjeni",
+   "note_v119": "val 119 del 3: PUA lastnik potrjen med PS so-živečimi hiše ('Christan Bräutig', sim_surname 0.941, metoda B); first-owner 'Schimey Wenzel' ostaja drugačno stanje — obe trditvi ohranjeni"
   },
   {
    "conflict_id": "CF-F1",

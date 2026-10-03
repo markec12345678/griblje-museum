@@ -304,17 +304,17 @@ describe("val 112 — kaskada (izrecna)", () => {
     };
     expect(kg.node_stats.PARCEL).toBe(2427); // val 115: 2426 → 2427
     expect(kg.edge_stats.HAS_PARCEL).toBe(2775); // val 115: nespremenjeno
-    expect(kg.nodes.length).toBe(3764); // val 115: 3268 → 3269
+    expect(kg.nodes.length).toBe(3765); // val 115: 3268 → 3269
     expect(kg.edges.length).toBe(3473); // val 115: nespremenjeno
     expect(kg.claims.length).toBe(614);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha ab418c75… (pogodba §22, val 119 del 2e)", () => {
+  test("kaskadni artefakti držijo isti KG sha 1e49de43… (pogodba §22, val 119 del 2e)", () => {
     const { createHash } = require("node:crypto") as typeof import("node:crypto");
     const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
     const kgSha = sha(join(root, "research-griblje/atlas-1825/knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^ab418c75/);
+    expect(kgSha).toMatch(/^1e49de43/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

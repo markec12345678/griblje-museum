@@ -32,8 +32,8 @@
  *
  * KASKADA (izrecna): c4 v90 regenerirana (K9 p1–55 jaethe_empty 959→960,
  * klafter_plain_le99 177→178, both_filled 56 nespremenjen; K5 dito 208/2876 —
- * EXTRA vrstica je ditto) → KG vsebinsko IDENTIČNA (3764/3473; builder ne bere
- * vrednostnega sloja; sha fc23ab10 → ab418c75, timestamp-only) → story → timeline
+ * EXTRA vrstica je ditto) → KG vsebinsko IDENTIČNA (3765/3473; builder ne bere
+ * vrednostnega sloja; sha fc23ab10 → 1e49de43, timestamp-only) → story → timeline
  * → coverage PASS 8 (§24 14/14) → source-coverage rows 2876 → runtime src/data
  * sinhronizirana; analysis-v5/v6 regenerirana (varovalki 2875→2876).
  *
@@ -233,18 +233,18 @@ describe("val 124 — kaskada (izrecna, §22)", () => {
     expect(String(c4.meta.K5_input_reliability)).toContain("208/2876"); // EXTRA = ditto
   });
 
-  test("KG vsebinsko IDENTIČNA (3764/3473) — builder ne bere vrednostnega sloja; sha fc23ab10 → ab418c75 (timestamp-only)", () => {
+  test("KG vsebinsko IDENTIČNA (3765/3473) — builder ne bere vrednostnega sloja; sha fc23ab10 → 1e49de43 (timestamp-only)", () => {
     const kg = JSON.parse(
       readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8"),
     ) as { nodes: unknown[]; edges: unknown[]; node_stats: Record<string, number> };
-    expect(kg.nodes.length).toBe(3764);
+    expect(kg.nodes.length).toBe(3765);
     expect(kg.edges.length).toBe(3473);
     expect(kg.node_stats["PARCEL"]).toBe(2427);
     expect(kg.node_stats["HOUSE"]).toBe(169);
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^ab418c75/);
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^1e49de43/);
   });
 
-  test("kaskadni artefakti + runtime kopije držijo isti KG sha ab418c75…", () => {
+  test("kaskadni artefakti + runtime kopije držijo isti KG sha 1e49de43…", () => {
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
@@ -253,10 +253,10 @@ describe("val 124 — kaskada (izrecna, §22)", () => {
       "src/data/timeline-1825-1830.json",
     ]) {
       const raw = readFileSync(join(ROOT, p), "utf8");
-      expect(raw.includes("ab418c75"), p).toBe(true);
+      expect(raw.includes("1e49de43"), p).toBe(true);
     }
     // runtime KG kopija = atlas izhod (ena izhodna resnica — byte identična)
-    expect(sha256(join(ROOT, "src/data/knowledge-graph-1825.json"))).toMatch(/^ab418c75/);
+    expect(sha256(join(ROOT, "src/data/knowledge-graph-1825.json"))).toMatch(/^1e49de43/);
   });
 
   test("source-coverage: PS rows 2876 (val 124 prehod tudi v builderju build-coverage-report.py)", () => {

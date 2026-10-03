@@ -9,7 +9,7 @@
  *  - H-070, H-071: ps_absence NEGATIVE-DECISIVE (celotna pokritost 143/143).
  *  - NR-05: val122_decision (negativ odločilen za 6, dokumentirani 3).
  *  - KG v2.5: HOUSE 167→169, HAS_PARCEL 2773→2775 (PS-p065-j1, PS-p069-j1);
- *    osebna plast NESPREMENJENA (F-SYNC-04) — PERSON 981, OWNER_OF 246.
+ *    osebna plast NESPREMENJENA (F-SYNC-04) — PERSON 982, OWNER_OF 246.
  */
 import { describe, expect, it } from "bun:test";
 import { createHash } from "node:crypto";
@@ -133,13 +133,13 @@ describe("val 122 — hiša 70–78: ločena odločitev (uveljavitev)", () => {
     expect(d.sospored).toContain("hiša 73");
   });
 
-  it("KG v2.5 (val 122): HOUSE 169, HAS_PARCEL 2775, vozlišča 3764, vezi 3473, vrzeli 11 (+3 iskrene OWNER join miss), KG-F14; osebna plast stabilna (PERSON 981, OWNER_OF 246)", () => {
+  it("KG v2.5 (val 122): HOUSE 169, HAS_PARCEL 2775, vozlišča 3765, vezi 3473, vrzeli 11 (+3 iskrene OWNER join miss), KG-F14; osebna plast stabilna (PERSON 982, OWNER_OF 246)", () => {
     expect(KG.title).toBe("knowledge-graph-1825 v2.5");
     expect(KG.val).toBe(122);
     expect(KG.node_stats.HOUSE).toBe(169);
-    expect(KG.node_stats.PERSON).toBe(981);
+    expect(KG.node_stats.PERSON).toBe(982);
     expect(KG.node_stats.PARCEL).toBe(2427);
-    expect(KG.nodes.length).toBe(3764);
+    expect(KG.nodes.length).toBe(3765);
     expect(KG.edges.length).toBe(3473);
     expect(KG.edge_stats.HAS_PARCEL).toBe(2775);
     expect(KG.edge_stats.OWNER_OF).toBe(246);
@@ -172,9 +172,9 @@ describe("val 122 — hiša 70–78: ločena odločitev (uveljavitev)", () => {
     }
   });
 
-  it("kaskada (§22): story/timeline/coverage držijo KG ab418c75; runtime kopije = arhiv", () => {
+  it("kaskada (§22): story/timeline/coverage držijo KG 1e49de43; runtime kopije = arhiv", () => {
     const kgSha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha.startsWith("ab418c75")).toBe(true);
+    expect(kgSha.startsWith("1e49de43")).toBe(true);
     expect(STORY.provenance.kg_sha256).toBe(kgSha);
     expect(STORY.provenance.kg_val).toBe(122);
     expect(TIMELINE.provenance.kg_sha256).toBe(kgSha);

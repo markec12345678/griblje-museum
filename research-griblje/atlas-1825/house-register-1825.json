@@ -1,6 +1,6 @@
 {
- "val": "119-del3",
- "pass": "sync (PUA↔PS v119)",
+ "val": "126",
+ "pass": "sync (PUA↔PS v126 + NR-14 sodba, F-V125-01)",
  "issue": "#42 §2",
  "title": "HOUSE REGISTER 1825 — hiše Gribelj, združen pregled PUA/PS/PT/A01",
  "method": {
@@ -19,19 +19,21 @@
    "UNKNOWN_SEMANTICS": "sestavljen '1 / N' sklic (F12 TO-DECODE)"
   },
   "ps_coverage_warning": "PS bloki za hiše 70–78 (vključno Zollamt h.70) čakajo p56–p143",
-  "v119_sync_note": "val 119 del 3: pua_ps_name_sim = sim_concat_first (kontinuiteta val 58); pua_ps_name_sim_v119 = metoda B; evidence_status re-izveden po metodi B; owners.ps_distinct = nova add-only plast"
+  "v119_sync_note": "val 119 del 3: pua_ps_name_sim = sim_concat_first (kontinuiteta val 58); pua_ps_name_sim_v119 = metoda B; evidence_status re-izveden po metodi B; owners.ps_distinct = nova add-only plast",
+  "v126_sync_note": "val 126: owners.ps/ps_distinct/parcel_refs re-izvedeni na v125 stanju; pua_ps_name_sim_v126 = metoda B (v119 stolpec ohranjen); PROVISIONAL plasti h72/74/76 zaščitene (3 hiš); owners.ps_stale mehanizem ohranjen — v125 hišni popravki premaknili lastnike (npr. H-035 p7 → hiša 55)"
  },
  "provenance": {
   "pua": "pua-n83/register.json (98 vpisov, val 51+57)",
   "pt": "pt-n83/register.json (100 vrstic, val 53) + pt-n83/reconciliation.json (val 54+56+57)",
-  "ps": "ps-n83/register.json (1.077 vrstic p3–p55, val 119 del 1–2e dvojni sidr)",
+  "ps": "ps-n83/register.json (1.078 vrstic p3–p55, val 119/123/125 dvojni sidr + Nro 92)",
   "bp_matrix": "raw-web-val57-2026-10/bp-house-matrix.json (100 vrstic, val 57)",
   "a01": "src/data/cadastre-a01.json (56 stavb, val 52+54+56)",
-  "sync": "atlas-1825/build-sync-v119-del3.py (val 119 del 3, 0 VLM)"
+  "sync": "atlas-1825/build-sync-v126.py (val 126, 0 VLM)",
+  "nr14": "atlas-1825/nr14-variant-map-1825.json (val 126 sodba, 0 VLM)"
  },
  "coverage": {
   "CONFLICT": 33,
-  "SINGLE_SOURCE": 32,
+  "SINGLE_SOURCE": 34,
   "AGREE": 16,
   "PARTIAL": 13,
   "UNKNOWN_SEMANTICS": 73
@@ -130,6 +132,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 3
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Gemeinde",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
    }
   },
   {
@@ -168,6 +179,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Gemeinde",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.5,
     "sim_any": 0.5,
     "best_ps_name": "Gemeinde",
@@ -372,6 +392,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 12
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Wier Grunigman",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 12
    }
   },
   {
@@ -475,6 +504,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.429,
+    "sim_any": 0.6,
+    "best_ps_name": "Stabelz Soan.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.429,
     "sim_any": 0.6,
     "best_ps_name": "Stabelz Soan.[?]",
@@ -652,6 +690,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 8
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Dragasch Jure.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 8
    }
   },
   {
@@ -743,6 +790,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.455,
+    "sim_any": 0.545,
+    "best_ps_name": "Lubreschiby Maathe.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.455,
     "sim_any": 0.545,
     "best_ps_name": "Lubreschiby Maathe.[?]",
@@ -878,6 +934,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.875,
+    "sim_any": 0.875,
+    "best_ps_name": "Dragasch Jure",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 8
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.875,
     "sim_any": 0.875,
     "best_ps_name": "Dragasch Jure",
@@ -1110,6 +1175,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 13
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.5,
+    "sim_any": 0.5,
+    "best_ps_name": "Baron Helfenburg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 13
    }
   },
   {
@@ -1244,6 +1318,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 6
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.455,
+    "sim_any": 0.455,
+    "best_ps_name": "Zellhamisch Mathl.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 6
    }
   },
   {
@@ -1367,6 +1450,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 4
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.444,
+    "sim_any": 0.444,
+    "best_ps_name": "Dragasch Jure.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
    }
   },
   {
@@ -1448,6 +1540,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.692,
+    "sim_any": 0.692,
+    "best_ps_name": "Jakobschitsch Mathä[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.692,
     "sim_any": 0.692,
     "best_ps_name": "Jakobschitsch Mathä[?]",
@@ -1619,6 +1720,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 9
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.615,
+    "sim_any": 0.615,
+    "best_ps_name": "Pessing Georg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 9
    }
   },
   {
@@ -1734,6 +1844,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 4
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.333,
+    "sim_any": 0.545,
+    "best_ps_name": "Peodvin Grany.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
    }
   },
   {
@@ -1815,6 +1934,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.583,
+    "sim_any": 0.583,
+    "best_ps_name": "Lubreschitskh Maathe.",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.583,
     "sim_any": 0.583,
     "best_ps_name": "Lubreschitskh Maathe.",
@@ -2235,6 +2363,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 15
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.462,
+    "sim_any": 0.462,
+    "best_ps_name": "Pedian Matrlh[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 15
    }
   },
   {
@@ -2361,6 +2498,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 6
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.429,
+    "sim_any": 0.429,
+    "best_ps_name": "Eidlald Wurfl",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 6
    }
   },
   {
@@ -2471,6 +2617,15 @@
     "exact_token": false,
     "class": "AGREE",
     "n_distinct": 5
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.833,
+    "sim_any": 0.833,
+    "best_ps_name": "Schimay Jeklr[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 5
    }
   },
   {
@@ -2557,6 +2712,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 2
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.364,
+    "sim_any": 0.364,
+    "best_ps_name": "Thomas Malfg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
    }
   },
   {
@@ -2586,17 +2750,16 @@
      }
     ],
     "ps": {
-     "owner_original": "Lappary Marbl",
+     "owner_original": "Dekleva Matija",
      "stand": null,
      "pages": [
-      7,
       14,
       33,
       35,
       36,
       54
      ],
-     "rows": 7,
+     "rows": 6,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -2618,13 +2781,6 @@
     },
     "a01": null,
     "ps_distinct": [
-     {
-      "name": "Lappary Marbl",
-      "pages": [
-       7
-      ],
-      "rows": 1
-     },
      {
       "name": "Dekleva Matija",
       "pages": [
@@ -2656,7 +2812,7 @@
      }
     ]
    },
-   "pua_ps_name_sim": 0.255,
+   "pua_ps_name_sim": 0.167,
    "bp_refs": [
     {
      "bp": 37,
@@ -2669,9 +2825,8 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 68,
-    "ps_rows": 7,
+    "ps_rows": 6,
     "ps_kultur": {
-     "Lehngut Hfl.": 1,
      "Žitno": 1,
      "Wiese": 1,
      "Acker": 1,
@@ -2692,6 +2847,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 5
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Mathä.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
    }
   },
   {
@@ -2789,6 +2953,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.375,
+    "sim_any": 0.375,
+    "best_ps_name": "Urich Peter",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.375,
     "sim_any": 0.375,
     "best_ps_name": "Urich Peter",
@@ -2896,6 +3069,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.571,
+    "sim_any": 0.571,
+    "best_ps_name": "Mittig Jofam",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.571,
     "sim_any": 0.571,
     "best_ps_name": "Mittig Jofam",
@@ -3102,6 +3284,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 3
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michael",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 3
    }
   },
   {
@@ -3212,6 +3403,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 5
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michl",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 5
    }
   },
   {
@@ -3246,7 +3446,6 @@
      "pages": [
       3,
       5,
-      7,
       17,
       19,
       26,
@@ -3260,7 +3459,7 @@
       38,
       39
      ],
-     "rows": 26,
+     "rows": 25,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -3288,13 +3487,6 @@
       "name": "Feldt Peter",
       "pages": [
        5
-      ],
-      "rows": 1
-     },
-     {
-      "name": "(K)hanzl Valen",
-      "pages": [
-       7
       ],
       "rows": 1
      },
@@ -3353,10 +3545,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 49,
-    "ps_rows": 26,
+    "ps_rows": 25,
     "ps_kultur": {
      "Acker": 12,
-     "Lehngut": 1,
      "Wiese": 1,
      "Wiesen": 2,
      "Gübel": 1,
@@ -3381,6 +3572,15 @@
     "exact_token": false,
     "class": "AGREE",
     "n_distinct": 8
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.727,
+    "sim_any": 0.727,
+    "best_ps_name": "Bring Michael[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 7
    }
   },
   {
@@ -3558,6 +3758,15 @@
     "exact_token": false,
     "class": "AGREE",
     "n_distinct": 12
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.737,
+    "sim_any": 0.737,
+    "best_ps_name": "Malleitsch Johann",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 12
    }
   },
   {
@@ -3727,6 +3936,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.6,
+    "sim_any": 0.6,
+    "best_ps_name": "Ring Michl",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 5
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.6,
     "sim_any": 0.6,
     "best_ps_name": "Ring Michl",
@@ -3943,6 +4161,15 @@
     "exact_token": true,
     "class": "AGREE",
     "n_distinct": 14
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Milleg Hans[?]",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 14
    }
   },
   {
@@ -4095,6 +4322,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.833,
+    "sim_any": 0.833,
+    "best_ps_name": "Tillah Walfja",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 8
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.833,
     "sim_any": 0.833,
     "best_ps_name": "Tillah Walfja",
@@ -4362,6 +4598,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 6
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.471,
+    "sim_any": 0.471,
+    "best_ps_name": "Ulrich Georg.[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 6
    }
   },
   {
@@ -4427,6 +4672,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.308,
+    "sim_any": 0.364,
+    "best_ps_name": "Regina Yourn",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 2
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.308,
     "sim_any": 0.364,
     "best_ps_name": "Regina Yourn",
@@ -4575,6 +4829,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 8
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.571,
+    "sim_any": 0.6,
+    "best_ps_name": "Fitsch Malfg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 8
    }
   },
   {
@@ -4585,10 +4848,9 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schimez Hanl",
-     "stand": null,
+     "owner_original": "Thörring Wenzl",
+     "stand": "1832",
      "pages": [
-      7,
       9,
       10,
       16,
@@ -4599,7 +4861,7 @@
       35,
       36
      ],
-     "rows": 14,
+     "rows": 13,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -4617,13 +4879,6 @@
     },
     "a01": null,
     "ps_distinct": [
-     {
-      "name": "Schimez Hanl",
-      "pages": [
-       7
-      ],
-      "rows": 1
-     },
      {
       "name": "Thörring Wenzl",
       "pages": [
@@ -4706,9 +4961,8 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 14,
+    "ps_rows": 13,
     "ps_kultur": {
-     "Lehngut": 1,
      "Lohholz": 1,
      "Acker": 7,
      "Rohr": 1,
@@ -4950,6 +5204,15 @@
     "exact_token": false,
     "class": "AGREE",
     "n_distinct": 14
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.75,
+    "sim_any": 0.75,
+    "best_ps_name": "Krishnar Wurfl",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 14
    }
   },
   {
@@ -5095,6 +5358,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.8,
+    "sim_any": 1.0,
+    "best_ps_name": "Kristan Peter",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 7
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.8,
     "sim_any": 1.0,
     "best_ps_name": "Kristan Peter",
@@ -5588,6 +5860,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 20
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.545,
+    "sim_any": 0.615,
+    "best_ps_name": "Peter Muster",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 20
    }
   },
   {
@@ -5835,6 +6116,15 @@
     "exact_token": true,
     "class": "AGREE",
     "n_distinct": 16
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Georg Gorgy",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 16
    }
   },
   {
@@ -5958,6 +6248,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.875,
+    "sim_any": 0.875,
+    "best_ps_name": "Pöching. Mathel.[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 9
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.875,
     "sim_any": 0.875,
     "best_ps_name": "Pöching. Mathel.[?]",
@@ -6157,6 +6456,15 @@
     "exact_token": true,
     "class": "PARTIAL",
     "n_distinct": 14
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.5,
+    "sim_any": 1.0,
+    "best_ps_name": "Brulla Maria.",
+    "exact_token": true,
+    "class": "PARTIAL",
+    "n_distinct": 14
    }
   },
   {
@@ -6316,6 +6624,15 @@
     "exact_token": true,
     "class": "AGREE",
     "n_distinct": 8
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Husitsch Maria",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 8
    }
   },
   {
@@ -6338,7 +6655,7 @@
       26,
       32
      ],
-     "rows": 17,
+     "rows": 18,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -6373,6 +6690,13 @@
        12
       ],
       "rows": 3
+     },
+     {
+      "name": "(R)abitscher Georg",
+      "pages": [
+       7
+      ],
+      "rows": 1
      },
      {
       "name": "Pöllitzer Mathej",
@@ -6469,9 +6793,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 17,
+    "ps_rows": 18,
     "ps_kultur": {
-     "Wiese": 3,
+     "Wiese": 4,
      "Lehngut Hfl.": 1,
      "Acker": 8,
      "Gartn": 1,
@@ -6569,6 +6893,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 4
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.667,
+    "sim_any": 0.667,
+    "best_ps_name": "Ajobatschar Pottra[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
    }
   },
   {
@@ -6615,7 +6948,14 @@
       "pages": [
        7
       ],
-      "rows": 4
+      "rows": 3
+     },
+     {
+      "name": "Strauß Georg",
+      "pages": [
+       7
+      ],
+      "rows": 1
      },
      {
       "name": "Ursch Peter",
@@ -6698,9 +7038,9 @@
     "ps_rows": 21,
     "ps_kultur": {
      "Acker": 8,
-     "Lehngut Hfl.": 2,
-     "Wiese": 7,
+     "Lehngut Hfl.": 3,
      "Wald": 2,
+     "Wiese": 6,
      "Žitno": 1,
      "Ried": 1
     }
@@ -6717,6 +7057,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 11
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.526,
+    "sim_any": 0.526,
+    "best_ps_name": "Hlahotshar Georg",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 12
    }
   },
   {
@@ -6859,6 +7208,15 @@
     "exact_token": true,
     "class": "MISMATCH",
     "n_distinct": 7
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.476,
+    "sim_any": 1.0,
+    "best_ps_name": "Habschider Georg",
+    "exact_token": true,
+    "class": "MISMATCH",
+    "n_distinct": 7
    }
   },
   {
@@ -6869,15 +7227,16 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Thomaz Majzel",
+     "owner_original": "Schimecz Mihual",
      "stand": null,
      "pages": [
+      7,
       15,
       21,
       22,
       43
      ],
-     "rows": 8,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -6894,6 +7253,13 @@
     },
     "a01": null,
     "ps_distinct": [
+     {
+      "name": "Schimecz Mihual",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
      {
       "name": "Thomaz Majzel",
       "pages": [
@@ -6940,8 +7306,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 8,
+    "ps_rows": 9,
     "ps_kultur": {
+     "Lehngut Hfl.": 1,
      "Acker": 6,
      "Wiesen": 2
     }
@@ -7002,7 +7369,7 @@
       "rows": 1
      },
      {
-      "name": "Poiding Matthl",
+      "name": "Pödigz Marusa",
       "pages": [
        7
       ],
@@ -7251,6 +7618,15 @@
     "exact_token": true,
     "class": "AGREE",
     "n_distinct": 9
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 1.0,
+    "sim_any": 1.0,
+    "best_ps_name": "Urich Peter",
+    "exact_token": true,
+    "class": "AGREE",
+    "n_distinct": 9
    }
   },
   {
@@ -7313,10 +7689,11 @@
      "stand": "~",
      "pages": [
       6,
+      7,
       22,
       23
      ],
-     "rows": 7,
+     "rows": 8,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -7340,6 +7717,13 @@
        6
       ],
       "rows": 2
+     },
+     {
+      "name": "Pödigz Hanl",
+      "pages": [
+       7
+      ],
+      "rows": 1
      },
      {
       "name": "Pustig Johan",
@@ -7373,10 +7757,11 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 7,
+    "ps_rows": 8,
     "ps_kultur": {
      "Grund Garten": 1,
      "Hutweide Hof": 1,
+     "Lehngut Hfl.": 1,
      "Acker": 2,
      "Wiesen": 1,
      "Wiese": 1,
@@ -7401,7 +7786,7 @@
       22,
       23
      ],
-     "rows": 8,
+     "rows": 9,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -7424,7 +7809,7 @@
       "pages": [
        7
       ],
-      "rows": 2
+      "rows": 3
      },
      {
       "name": "Lappary Mihel",
@@ -7463,10 +7848,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 8,
+    "ps_rows": 9,
     "ps_kultur": {
+     "Lehngut Hfl.": 2,
      "Wiesen": 2,
-     "Lehngut Hfl.": 1,
      "Gartn Gartn": 1,
      "Acker": 2,
      "Wiese": 1,
@@ -7484,9 +7869,10 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Schimer Jacob",
+     "owner_original": "Schimez Hanl",
      "stand": null,
      "pages": [
+      7,
       8,
       13,
       15,
@@ -7498,7 +7884,7 @@
       43,
       55
      ],
-     "rows": 12,
+     "rows": 13,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -7518,6 +7904,13 @@
     },
     "a01": null,
     "ps_distinct": [
+     {
+      "name": "Schimez Hanl",
+      "pages": [
+       7
+      ],
+      "rows": 1
+     },
      {
       "name": "Schimer Jacob",
       "pages": [
@@ -7591,8 +7984,9 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 12,
+    "ps_rows": 13,
     "ps_kultur": {
+     "Lehngut": 1,
      "Wald": 2,
      "Acker": 7,
      "Wiese": 1,
@@ -7615,6 +8009,7 @@
      "stand": "~",
      "pages": [
       5,
+      7,
       8,
       14,
       15,
@@ -7622,7 +8017,7 @@
       24,
       43
      ],
-     "rows": 12,
+     "rows": 13,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
@@ -7632,6 +8027,13 @@
       "name": "Schimay Peter",
       "pages": [
        5
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Schimez P…a",
+      "pages": [
+       7
       ],
       "rows": 1
      },
@@ -7683,9 +8085,10 @@
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 12,
+    "ps_rows": 13,
     "ps_kultur": {
      "Acker": 5,
+     "Lehngut": 1,
      "Wald": 1,
      "Žitno": 1,
      "Wiese": 2,
@@ -7815,6 +8218,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.444,
+    "sim_any": 0.444,
+    "best_ps_name": "Pavlicz Janez",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 4
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.444,
     "sim_any": 0.444,
     "best_ps_name": "Pavlicz Janez",
@@ -8110,6 +8522,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 12
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.462,
+    "sim_any": 0.462,
+    "best_ps_name": "Pauling Walfja",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 12
    }
   },
   {
@@ -8301,6 +8722,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.769,
+    "sim_any": 0.769,
+    "best_ps_name": "Tillach Michl.[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 13
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.769,
     "sim_any": 0.769,
     "best_ps_name": "Tillach Michl.[?]",
@@ -8501,6 +8931,15 @@
     "exact_token": false,
     "class": "AGREE",
     "n_distinct": 14
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.706,
+    "sim_any": 0.706,
+    "best_ps_name": "Krischan Michl.[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 14
    }
   },
   {
@@ -8526,7 +8965,6 @@
      "pages": [
       3,
       4,
-      7,
       8,
       13,
       14,
@@ -8536,7 +8974,7 @@
       20,
       43
      ],
-     "rows": 19,
+     "rows": 18,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -8569,13 +9007,6 @@
       "name": "Fring Masko[?]",
       "pages": [
        4
-      ],
-      "rows": 1
-     },
-     {
-      "name": "Poiding Hanl",
-      "pages": [
-       7
       ],
       "rows": 1
      },
@@ -8642,11 +9073,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 32,
-    "ps_rows": 19,
+    "ps_rows": 18,
     "ps_kultur": {
      "Abhang[?]": 1,
      "Acker": 8,
-     "Lehngut Hfl.": 1,
      "Wald": 2,
      "Grund / Garten": 2,
      "Acker / Grund": 1,
@@ -8668,6 +9098,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 9
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.545,
+    "sim_any": 0.545,
+    "best_ps_name": "Fring Masko[?]",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 8
    }
   },
   {
@@ -8789,6 +9228,15 @@
     "exact_token": false,
     "class": "AGREE",
     "n_distinct": 6
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.762,
+    "sim_any": 0.762,
+    "best_ps_name": "Kerbitacher Masfa[?]",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 6
    }
   },
   {
@@ -8820,7 +9268,7 @@
       36,
       43
      ],
-     "rows": 8,
+     "rows": 7,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": {
@@ -8871,7 +9319,7 @@
       "pages": [
        7
       ],
-      "rows": 2
+      "rows": 1
      },
      {
       "name": "Schimec Ivan",
@@ -8928,11 +9376,10 @@
    ],
    "parcel_refs": {
     "pua_parcels_total": 53,
-    "ps_rows": 8,
+    "ps_rows": 7,
     "ps_kultur": {
      "Acker": 2,
      "Lhaid[?]": 1,
-     "Lehngut Hfl.": 1,
      "Wald": 1,
      "Rohr": 1,
      "Riedl": 1,
@@ -8945,6 +9392,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.545,
+    "sim_any": 0.545,
+    "best_ps_name": "Bering Manko",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 7
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.545,
     "sim_any": 0.545,
     "best_ps_name": "Bering Manko",
@@ -9086,6 +9542,15 @@
    "notes": null,
    "pua_ps_name_sim_v119": {
     "method": "token surname-first LCS (F-SYNC-01 popavek)",
+    "sim_surname": 0.533,
+    "sim_any": 1.0,
+    "best_ps_name": "Kirschan Georg[?]",
+    "exact_token": true,
+    "class": "PARTIAL",
+    "n_distinct": 5
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
     "sim_surname": 0.533,
     "sim_any": 1.0,
     "best_ps_name": "Kirschan Georg[?]",
@@ -9296,6 +9761,15 @@
     "exact_token": false,
     "class": "MISMATCH",
     "n_distinct": 5
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.375,
+    "sim_any": 0.375,
+    "best_ps_name": "Muth Peter",
+    "exact_token": false,
+    "class": "MISMATCH",
+    "n_distinct": 5
    }
   },
   {
@@ -9437,6 +9911,15 @@
     "exact_token": false,
     "class": "AGREE",
     "n_distinct": 8
+   },
+   "pua_ps_name_sim_v126": {
+    "method": "token surname-first LCS (metoda B, nespremenjena od val 119 del 3)",
+    "sim_surname": 0.941,
+    "sim_any": 0.941,
+    "best_ps_name": "Christan Bräutig",
+    "exact_token": false,
+    "class": "AGREE",
+    "n_distinct": 8
    }
   },
   {
@@ -9545,7 +10028,8 @@
      ],
      "rows": 2,
      "coverage": "PROVISIONAL plast (vse vrstice p56–143; v86-colonial-tiles — F-PV-04/NR-14; val 122 uveljavitev)",
-     "layer": "PROVISIONAL"
+     "layer": "PROVISIONAL",
+     "sync_note": "val 126: PROVISIONAL plast nespremenjena (F-SYNC-04 — p56–143 izključeno iz osebne sinhronizacije do re-read serije val 127+; NR-14 karta pripravljena)"
     },
     "pt": null,
     "a01": null,
@@ -9588,7 +10072,8 @@
      ],
      "rows": 4,
      "coverage": "PROVISIONAL plast (vse vrstice p56–143; v86-colonial-tiles — F-PV-04/NR-14; val 122 uveljavitev)",
-     "layer": "PROVISIONAL"
+     "layer": "PROVISIONAL",
+     "sync_note": "val 126: PROVISIONAL plast nespremenjena (F-SYNC-04 — p56–143 izključeno iz osebne sinhronizacije do re-read serije val 127+; NR-14 karta pripravljena)"
     },
     "ps_distinct": [
      {
@@ -9643,7 +10128,8 @@
      ],
      "rows": 1,
      "coverage": "PROVISIONAL plast (vse vrstice p56–143; v86-colonial-tiles — F-PV-04/NR-14; val 122 uveljavitev)",
-     "layer": "PROVISIONAL"
+     "layer": "PROVISIONAL",
+     "sync_note": "val 126: PROVISIONAL plast nespremenjena (F-SYNC-04 — p56–143 izključeno iz osebne sinhronizacije do re-read serije val 127+; NR-14 karta pripravljena)"
     },
     "ps_distinct": [
      {
@@ -9708,27 +10194,19 @@
    "owners": {
     "pua": null,
     "ps": {
-     "owner_original": "Peders Marbl",
+     "owner_original": "Preßker Georg",
      "stand": null,
      "pages": [
-      7,
       10,
       15,
       34
      ],
-     "rows": 4,
+     "rows": 3,
      "coverage": "PARTIAL (55/143 strani)"
     },
     "pt": null,
     "a01": null,
     "ps_distinct": [
-     {
-      "name": "Peders Marbl",
-      "pages": [
-       7
-      ],
-      "rows": 1
-     },
      {
       "name": "Preßker Georg",
       "pages": [
@@ -9756,9 +10234,8 @@
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 4,
+    "ps_rows": 3,
     "ps_kultur": {
-     "Lehngut Hfl.": 1,
      "Acker": 3
     }
    },

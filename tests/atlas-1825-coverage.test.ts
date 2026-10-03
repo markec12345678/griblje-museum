@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na aktualni KG (ab418c75, val 119 del 3 PUA↔PS sync — osebna plast 488→981) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("ab418c75")).toBe(true); // val 119 del 3 sync (val 119 del 2e: c3932092; val 2d-x3: 62d8cfea; val 114: 376e2b27; val 112: 5ae52bd8; val 108: 9f856d28)
+  test("provenanca kaže na aktualni KG (1e49de43, val 119 del 3 PUA↔PS sync — osebna plast 488→982) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("1e49de43")).toBe(true); // val 119 del 3 sync (val 119 del 2e: c3932092; val 2d-x3: 62d8cfea; val 114: 376e2b27; val 112: 5ae52bd8; val 108: 9f856d28)
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -179,13 +179,13 @@ describe("quality_gate — številčne resnice iz registrov", () => {
     expect(c.VERIFIED).toBe(0);
   });
 
-  test("osebe = lastniki: 981 (98 PUA + 656 PS v119 + 227 PT), 418 possible_duplicates NI združenih (§5) — val 119 del 3 sync", () => {
+  test("osebe = lastniki: 982 (98 PUA + 657 PS v119 + 227 PT), 419 possible_duplicates NI združenih (§5) — val 119 del 3 sync", () => {
     for (const id of ["owners", "persons"]) {
       const c = byId(id);
-      expect(c.total).toBe(981);
+      expect(c.total).toBe(982);
       expect(c.VERIFIED).toBe(140); // VERIFIED-2x 45 + STABLE 95 (PUA/PT nedotaknjena)
       expect(c.CONFLICT).toBe(150);
-      expect(c.PARTIAL).toBe(691);
+      expect(c.PARTIAL).toBe(692); // +1: v125 p7 Nro 92 (Schimez P…a h56) SINGLE_SOURCE claim
     }
     const note = byId("persons").note ?? "";
     expect(note).toContain("en register");
@@ -369,10 +369,10 @@ describe("lib/atlas-coverage (API plast)", () => {
 /* ----------------------- uskladjenost z KG v1.4 ----------------------- */
 
 describe("uskladjenost z KG v1.4", () => {
-  test("node_stats sovpadajo s kategorijami (hiše/osebe/parcele/toponimi/BP) — PERSON 981 (val 119 del 3 sync)", () => {
+  test("node_stats sovpadajo s kategorijami (hiše/osebe/parcele/toponimi/BP) — PERSON 982 (val 119 del 3 sync)", () => {
     const kgf = kg as unknown as { node_stats: Record<string, number>; provenance: { kg_sha256?: string } };
     expect(kgf.node_stats.HOUSE).toBe(169);
-    expect(kgf.node_stats.PERSON).toBe(981); // 98 PUA + 656 PS (v119) + 227 PT; prej 488 (val 59 pass2)
+    expect(kgf.node_stats.PERSON).toBe(982); // 98 PUA + 657 PS (v119) + 227 PT; prej 488 (val 59 pass2)
     expect(kgf.node_stats.PARCEL).toBe(2427); // val 108: 2770 → … → val 114: 2426 → val 115: 2427
     expect(kgf.node_stats.BP).toBe(100);
     expect(kgf.node_stats.TOPONYM).toBe(37);

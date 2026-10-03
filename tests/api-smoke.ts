@@ -459,10 +459,10 @@ ok(
 /* --- 5i. /api/atlas/story-graph — PASS 6 pripovedni graf (val 68, #42 §21) --- */
 const sgOverview = await getJson("/api/atlas/story-graph");
 ok(
-  "atlas story-graph: pregled — 3.762 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 119 del 3 sync: osebna plast 981; prej 3.269 @ val 115)",
+  "atlas story-graph: pregled — 3.765 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 126 NR-14 sodba + pass2 re-run: osebna plast 982; prej 3.762 @ val 119 del 3)",
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
-    sgOverview.body?.stats?.entities === 3764 &&
+    sgOverview.body?.stats?.entities === 3765 &&
     sgOverview.body?.stats?.relations === 3473 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
@@ -491,8 +491,8 @@ ok(
 
 const sgPersons = await getJson("/api/atlas/story-graph?type=PERSON&limit=5000");
 ok(
-  "atlas story-graph: 981 oseb (projekcija KG — val 119 del 3 PUA↔PS sync, prej 488 pass2)",
-  sgPersons.status === 200 && sgPersons.body?.count === 981,
+  "atlas story-graph: 982 oseb (projekcija KG — val 126 NR-14 sodba + pass2 re-run, prej 981 @ val 119 del 3)",
+  sgPersons.status === 200 && sgPersons.body?.count === 982,
   `count=${sgPersons.body?.count}`
 );
 

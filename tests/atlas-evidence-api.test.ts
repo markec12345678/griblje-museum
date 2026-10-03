@@ -93,7 +93,7 @@ describe("atlas-evidence resolver [val 64]", () => {
     const ov = overview();
     expect(ov.title).toBe("knowledge-graph-1825 v2.5");
     expect(ov.stats.nodes.HOUSE).toBe(169);
-    expect(ov.stats.nodes.PERSON).toBe(981); // val 119 del 3 sync (prej 488 pass2)
+    expect(ov.stats.nodes.PERSON).toBe(982); // val 119 del 3 sync (prej 488 pass2)
     expect(ov.stats.edges.OWNER_OF).toBe(246); // val 119 del 3: 254→246 (8 zastarelih PS OWNER_OF prek ps_stale)
     expect(ov.stats.claims.CONFLICT).toBe(127); // val 119 del 3: 128→127
     expect(ov.research_gaps.length).toBe(11); // val 122: +3 OWNER join miss (F-SYNC-04)

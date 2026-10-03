@@ -1,6 +1,6 @@
 /**
  * Val 119 del 3 — PUA↔PS osebna sinhronizacija (F-PV-03/04 okvir) + register eArheologija živa preverba.
- * Varovalke: analysis-v7 (metoda B), person-owner 981, house-register AGREE 16,
+ * Varovalke: analysis-v7 (metoda B), person-owner 982, house-register AGREE 16,
  * conflict-register CH statusi, KG vsebinska sprememba (prvič od val 117),
  * eArheologija 26-0379 "v teku".
  */
@@ -60,14 +60,14 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
     expect(r3.best_exact_token).toBe(false);
   });
 
-  test("person-owner register: 981 oseb = 98 PUA (nedotaknjeno) + 656 PS v119 + 227 PT (nedotaknjeno); 418 NOT_MERGED", () => {
-    expect(persons.persons_total).toBe(981);
+  test("person-owner register: 982 oseb = 98 PUA (nedotaknjeno) + 657 PS v119 + 227 PT (nedotaknjeno); 419 NOT_MERGED", () => {
+    expect(persons.persons_total).toBe(982);
     const types: Record<string, number> = {};
     for (const p of persons.persons) {
       types[p.person_type] = (types[p.person_type] ?? 0) + 1;
     }
-    expect(types).toEqual({ "owner(pua)": 98, "owner(ps)": 656, "owner_variant(pt)": 227 });
-    expect(persons.possible_duplicates).toBe(418);
+    expect(types).toEqual({ "owner(pua)": 98, "owner(ps)": 657, "owner_variant(pt)": 227 });
+    expect(persons.possible_duplicates).toBe(419);
     // owner(ps) = per (hiša, ime) s stranmi — h1 Barbara Muster prva pojavnost
     const barbara = persons.persons.find(
       (p: any) => p.name_original === "Barbara Muster" && p.person_type === "owner(ps)",
@@ -84,7 +84,7 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
     expect(house.houses_total).toBe(169);
     expect(house.coverage).toEqual({
       CONFLICT: 33,
-      SINGLE_SOURCE: 32,
+      SINGLE_SOURCE: 34, // val 126: top-level coverage preštet (stale 32 od val 122)
       AGREE: 16,
       PARTIAL: 13,
       UNKNOWN_SEMANTICS: 73,
@@ -125,17 +125,17 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
     expect(ch.every((c: any) => c.note_pass2 || c.status === "OPEN")).toBe(true);
   });
 
-  test("KG vsebinsko SPREMENJEN (prvič od val 117, zadnja vsebina val 122): 3764 vozlišč / 3473 vezi / 614 trditev, PERSON 981, invariante čiste", () => {
-    expect(kg.node_stats.PERSON).toBe(981);
-    expect(kg.nodes.length).toBe(3764);
+  test("KG vsebinsko SPREMENJEN (prvič od val 117, zadnja vsebina val 122): 3765 vozlišč / 3473 vezi / 614 trditev, PERSON 982, invariante čiste", () => {
+    expect(kg.node_stats.PERSON).toBe(982);
+    expect(kg.nodes.length).toBe(3765);
     expect(kg.edges.length).toBe(3473);
     expect(kg.claims.length).toBe(614);
     expect(kg.edge_stats.OWNER_OF).toBe(246);
     expect(kg.edge_stats.RESIDENCE_DOCUMENTED_AT).toBe(12);
     expect(kg.edge_stats.HAS_PARCEL).toBe(2775); // nedotaknjeno
     expect(kg.invariant_violations).toEqual([]);
-    // osebni sloj: PER-0586 = Peter Muster (owner(ps) v119), PER-0059 = PUA Sautter
-    const per586 = kg.nodes.find((n: any) => n.node_id === "PER-0586");
+    // osebni sloj: PER-0583 = Peter Muster (owner(ps) v119), PER-0059 = PUA Sautter
+    const per586 = kg.nodes.find((n: any) => n.node_id === "PER-0583");
     expect(per586.name_original).toBe("Peter Muster");
     expect(per586.person_type).toBe("owner(ps)");
     const per59 = kg.nodes.find((n: any) => n.node_id === "PER-0059");
@@ -148,11 +148,11 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
     );
   });
 
-  test("kaskada: story-graph 3764/3473; timeline kg_sha256 = KG sha (ena izhodna resnica); coverage houses VER 16", () => {
+  test("kaskada: story-graph 3765/3473; timeline kg_sha256 = KG sha (ena izhodna resnica); coverage houses VER 16", () => {
     const sg = readJSON("research-griblje/atlas-1825/story-graph-1825.json");
-    expect(sg.stats.entities).toBe(3764);
+    expect(sg.stats.entities).toBe(3765);
     expect(sg.stats.relations).toBe(3473);
-    expect(sg.stats.entities_by_type.PERSON).toBe(981);
+    expect(sg.stats.entities_by_type.PERSON).toBe(982);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("research-griblje/atlas-1825/timeline-1825-1830.json") as {
       provenance?: { kg_sha256?: string };
@@ -162,7 +162,7 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
     const houses = cov.quality_gate.find((c: any) => c.category_id === "houses");
     expect(houses.VERIFIED).toBe(16);
     const personsCat = cov.quality_gate.find((c: any) => c.category_id === "persons");
-    expect(personsCat.total).toBe(981);
+    expect(personsCat.total).toBe(982);
   });
 });
 

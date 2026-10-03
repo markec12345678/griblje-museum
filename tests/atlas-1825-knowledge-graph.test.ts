@@ -22,7 +22,7 @@ describe("knowledge-graph-1825 v2.5 [val 122]", () => {
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3764); // val 119 del 3 sync: PERSON 488→981 (98 PUA + 656 PS v119 + 227 PT); val 115: 3269
+    expect(kg.nodes.length).toBe(3765); // val 119 del 3 sync: PERSON 488→982 (98 PUA + 657 PS v119 + 227 PT); val 115: 3269
     expect(kg.edges.length).toBe(3473); // OWNER_OF 254→246 (8 zastarelih PS OWNER_OF hiš prek ps_stale), RESIDENCE 10→12
     expect(kg.claims.length).toBe(614);
     expect(kg.research_gaps.length).toBe(11); // val 122: +3 iskrene OWNER join miss vrzeli (H-072/74/76 — F-SYNC-04, pričakovano)
@@ -30,11 +30,11 @@ describe("knowledge-graph-1825 v2.5 [val 122]", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("node tipi: SOURCE 13 / HOUSE 169 / PERSON 981 / PARCEL 2427 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 122: hiša 70–78, HOUSE +2)", () => {
+  test("node tipi: SOURCE 13 / HOUSE 169 / PERSON 982 / PARCEL 2427 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 122: hiša 70–78, HOUSE +2)", () => {
     expect(kg.node_stats).toEqual({
       SOURCE: 13,
       HOUSE: 169,
-      PERSON: 981,
+      PERSON: 982,
       PARCEL: 2427,
       BP: 100,
       TOPONYM: 37,
@@ -64,14 +64,14 @@ describe("knowledge-graph-1825 v2.5 [val 122]", () => {
     }
   });
 
-  test("§11 INVARIANTA: osebe nikoli mergeane (possible_duplicate ohranja NOT_MERGED) — 981 (val 119 del 3)", () => {
+  test("§11 INVARIANTA: osebe nikoli mergeane (possible_duplicate ohranja NOT_MERGED) — 982 (val 119 del 3)", () => {
     const persons = kg.nodes.filter((n) => n.node_type === "PERSON");
-    expect(persons.length).toBe(981);
+    expect(persons.length).toBe(982);
     for (const p of persons) {
       expect(p.merge_decision == null || p.merge_decision === "NOT_MERGED").toBe(true);
     }
     const dupCount = persons.filter((p) => p.possible_duplicate).length;
-    expect(dupCount).toBe(418); // val 119 del 3: 656 PS oseb → več identnih normaliziranih imen čez hiše (dito/pattern-fill družine); prej 161
+    expect(dupCount).toBe(419); // val 119 del 3: 657 PS oseb → več identnih normaliziranih imen čez hiše (dito/pattern-fill družine); prej 161
   });
 
   test("referenčna integriteta: vse edge/claim referenče kažejo na obstoječe node id-je", () => {

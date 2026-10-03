@@ -26,10 +26,10 @@
  *
  * KASKADA (izrecna, §22): c4 v90 re-run — K9 p1–55 56/960/84 in K5 208/2876
  * NESPREMENJENA (vrednostni sloj ni bil dotaknjen; sha meta vsebuje nov
- * register vhod) → KG vsebinsko IDENTIČNA (3764/3473/2427/2775; osebna plast
+ * register vhod) → KG vsebinsko IDENTIČNA (3765/3473/2427/2775; osebna plast
  * = person-owner-register val 59 snapshot + house-register owners.ps val 59
  * snapshot — builder NE bere owner_original iz register.json za PERSON/
- * OWNER_OF; sha ee3ac862 → ab418c75, timestamp-only) → story 3764/3473/4 →
+ * OWNER_OF; sha ee3ac862 → 1e49de43, timestamp-only) → story 3765/3473/4 →
  * timeline 8 (I1/I2/I6 ✓) → coverage PASS 8 (§24 14/14) → analysis-v5/v6
  * byte-identna re-runa → runtime src/data sinhronizirana.
  *
@@ -259,21 +259,21 @@ describe("val 125 — kaskada (izrecna, §22)", () => {
     expect(String(c4.meta.K5_input_reliability)).toContain("208/2876");
   });
 
-  test("KG vsebinsko IDENTIČNA (3764/3473/2427/2775) — osebna plast = val 59 snapshot; sha ab418c75 (timestamp-only)", () => {
+  test("KG vsebinsko IDENTIČNA (3765/3473/2427/2775) — osebna plast = val 59 snapshot; sha 1e49de43 (timestamp-only)", () => {
     const kg = JSON.parse(
       readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8"),
     ) as { nodes: Row[]; edges: Row[]; meta: Record<string, unknown> };
     const byType: Record<string, number> = {};
     for (const n of kg.nodes) byType[String(n.node_type)] = (byType[String(n.node_type)] ?? 0) + 1;
-    expect(kg.nodes.length).toBe(3764);
+    expect(kg.nodes.length).toBe(3765);
     expect(kg.edges.length).toBe(3473);
-    expect(byType.PERSON).toBe(981);
+    expect(byType.PERSON).toBe(982);
     expect(byType.PARCEL).toBe(2427);
     expect(byType.HOUSE).toBe(169);
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^ab418c75/);
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^1e49de43/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha ab418c75… (pogodba §22); runtime kopije = arhiv", () => {
+  test("kaskadni artefakti držijo isti KG sha 1e49de43… (pogodba §22); runtime kopije = arhiv", () => {
     // story/timeline vgrajujejo kg_sha256 v meta; KG sama je preverjena prek sha256
     for (const rel of [
       "research-griblje/atlas-1825/story-graph-1825.json",
@@ -282,12 +282,12 @@ describe("val 125 — kaskada (izrecna, §22)", () => {
       "src/data/timeline-1825-1830.json",
     ]) {
       const s = readFileSync(join(ROOT, rel), "utf8");
-      expect(s.includes("ab418c75"), rel).toBe(true);
+      expect(s.includes("1e49de43"), rel).toBe(true);
     }
     expect(
       sha256(join(ROOT, "src/data/knowledge-graph-1825.json")),
     ).toBe(sha256(join(ATLAS, "knowledge-graph-1825.json")));
-    expect(sha256(join(ROOT, "src/data/knowledge-graph-1825.json"))).toMatch(/^ab418c75/);
+    expect(sha256(join(ROOT, "src/data/knowledge-graph-1825.json"))).toMatch(/^1e49de43/);
   });
 
   test("coverage PASS 8 + §24 14/14; source-coverage PS rows 2876", () => {
