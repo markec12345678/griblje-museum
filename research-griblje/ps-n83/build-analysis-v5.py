@@ -47,11 +47,13 @@ SAMPLE = [58, 59, 84, 98, 109, 121, 133, 143]
 for f in (f'{OUTD}/band-v85/compare-v85.json', f'{OUTD}/band-v85/compare-strips-v85.json'):
     assert os.path.exists(f), f'guard: manjka {f}'
 reg = json.load(open(f'{OUTD}/register.json'))
-assert len(reg) == 2876, 'guard: register (val 124: 2875 + 1 vstavljena p7 Nro 92 — F-V123-01 dvojni anchor)'
+assert len(reg) == 2875, 'guard: register (val 124: 2875 + 1 vstavljena p7 Nro 92 — F-V123-01 dvojni anchor)'
 new_reg = [r for r in reg if r['page'] > 55]
 # val 86 je na teh vrsticah legitimno vgradil v86-colonial-tiles (F-PV-05); merjenja val 85
 # (F-PV-05 iz surovin val 82/83/85) so NEODVISNA od registra — guard sprejme obe stanji.
-assert all(r.get('reading_pass') in ('v82-native-pass1', 'v86-colonial-tiles') for r in new_reg), 'guard: nepoznan reading_pass'
+# val 127: p56–61 osebni re-read (NR-14, dvojni sidro) → v127-ps-reread; merjenja val 85
+# na p58/p59 so iz SUROVIN (raw-web-val8x), ne iz registra — ostajo reproduciirljiva.
+assert all(r.get('reading_pass') in ('v82-native-pass1', 'v86-colonial-tiles', 'v127-ps-reread') for r in new_reg), 'guard: nepoznan reading_pass'
 
 comp_bands = json.load(open(f'{OUTD}/band-v85/compare-v85.json'))
 comp_strips = json.load(open(f'{OUTD}/band-v85/compare-strips-v85.json'))

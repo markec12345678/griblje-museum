@@ -118,12 +118,18 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
     }
   });
 
-  test("v88 = vir resnice: 137 RESOLVED + 2 UNRESOLVED vrednostno NESPREMENJENIH z delom 3", () => {
+  test("v88 = vir resnice: 136 RESOLVED + 2 UNRESOLVED — val 127: 4 p59 vrednosti preštete s snimkami", () => {
     const resolved = register.filter((r) => r.jk_review === "v88-digit-split-RESOLVED");
     const unresolved = register.filter((r) => r.jk_review === "v88-digit-split-UNRESOLVED");
-    expect(resolved.length).toBe(137);
+    expect(resolved.length).toBe(136); // val 127: −1 (p59 Stiftung fragment odstranjen)
     expect(unresolved.length).toBe(2);
     for (const r of resolved) {
+      if (r.reading_pass === "v127-ps-reread") {
+        // val 127: p56–61 osebni re-read — vrednosti preštete (dvojni sidro kstack);
+        // v88 glasovi v *_v88, staro stanje v *_pre_v127 (nič tihega prepisovanja)
+        expect(r.klafter_v88 !== undefined || r.jaethe_v88 !== undefined).toBe(true);
+        continue;
+      }
       expect(String(r.jaethe)).toBe(String(r.jaethe_v88));
       expect(String(r.klafter)).toBe(String(r.klafter_v88));
     }
@@ -137,7 +143,7 @@ describe("val 107 — 86b del 3: vgradnja po pravilih val 86/98 na novih straneh
     expect(chg3.owner_variant_new).toBe(552);
     expect(chg3.tally["kultur_variant"]).toBe(506);
     expect(register.filter((r) => "owner_tile_v86" in r)).toHaveLength(1652); // 153 + 910 + 552 + 37 (val 116, p142)
-    expect(register.filter((r) => "kultur_tile_v86" in r)).toHaveLength(1436); // 1402 + 34 (val 116, p142)
+    expect(register.filter((r) => "kultur_tile_v86" in r)).toHaveLength(1435); // 1436 − 1 (val 127: p59 fantom je nosil kultur_tile_v86)
     const variantPages = register
       .filter((r) => "owner_tile_v86" in r)
       .map((r) => r.page as number);

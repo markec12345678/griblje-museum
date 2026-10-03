@@ -44,7 +44,7 @@ function rowsOn(page: number): Reg {
 
 describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)", () => {
   test("register: 2875 vrstic; changes 206 = 57 owner + 44 haus + 71 value + 25 anmerkung + 3 halfrow + 2 fuertrag + 3 page_obs + 1 bookkeeping", () => {
-    expect(REG.length).toBe(2876);
+    expect(REG.length).toBe(2875); // val 127: p59 fantom −1
     expect(CH.val).toBe("119-del2d-x3");
     expect(CH.stats.owner_changes).toBe(59);
     expect(CH.stats.haus_changes).toBe(46);
@@ -65,13 +65,13 @@ describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)
     expect(CH.changes.length).toBe(206);
   });
 
-  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (122 − 122 @2e: PS p25-p55 pokrite); v115 0; v118 60; v86 1795; ditto 208", () => {
+  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (122 − 122 @2e: PS p25-p55 pokrite); v115 0; v118 60; v86 1675 (val 127: p56–61 → v127-ps-reread); ditto 208", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
     expect(n("v119-names")).toBe(731);
     expect(n("v114-ps-reread")).toBe(0);
     expect(n("v115-insert")).toBe(0);
     expect(n("v118-names")).toBe(60);
-    expect(n("v86-colonial-tiles")).toBe(1795);
+    expect(n("v86-colonial-tiles")).toBe(1675); // val 127: 1795 − 120
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
     expect(REG.every((r) => r.review_status !== "TRANSCRIBED")).toBe(true);
   });
@@ -254,8 +254,8 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
         .update(readFileSync(join(REPO, "research-griblje/ps-n83/register.json")))
         .digest("hex"),
     );
-    expect(c4.meta.K5_input_reliability).toContain("208/2876");
-    expect(c4.meta.K5_input_reliability).toContain("bloki = 2607"); // 2608 − 1 @2e
+    expect(c4.meta.K5_input_reliability).toContain("208/2875"); // val 127: 2876 − 1 (p59 fantom)
+    expect(c4.meta.K5_input_reliability).toContain("bloki = 2606"); // 2607 − 1 (val 127: p59 fantom)
     const loose = c4 as unknown as Record<string, Record<string, Record<string, number>>>;
     const k9key = Object.keys(loose).find((k) => k.startsWith("K9"));
     expect(k9key).toBeDefined();

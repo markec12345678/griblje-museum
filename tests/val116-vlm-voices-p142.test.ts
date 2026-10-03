@@ -39,9 +39,9 @@ const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 const byPage = (pg: number) => REG.filter((r) => r["page"] === pg);
 
 describe("val 116 — p142 zaključek 2. prehoda (pravila 1:1 val 86)", () => {
-  test("register: 2875 vrstic; v86-colonial-tiles 1795 (1755 + 40 p142); v82-native-pass1 3 (p143)", () => {
-    expect(REG.length).toBe(2876);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1795);
+  test("register: 2875 vrstic (val 127: p59 fantom −1); v86-colonial-tiles 1675 (val 127: p56–61 → v127-ps-reread); v82-native-pass1 3 (p143)", () => {
+    expect(REG.length).toBe(2875);
+    expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1675); // val 116: 1795 → val 127: −120 (p56–61 → v127-ps-reread)
     expect(REG.filter((r) => f(r, "reading_pass") === "v82-native-pass1").length).toBe(3);
   });
 
@@ -61,7 +61,7 @@ describe("val 116 — p142 zaključek 2. prehoda (pravila 1:1 val 86)", () => {
     expect(p142.filter((r) => "kultur_tile_v86" in r).length).toBe(34);
     expect(p142.filter((r) => "owner_tile_v86" in r).length).toBe(37);
     // globalno
-    expect(REG.filter((r) => "kultur_tile_v86" in r).length).toBe(1436);
+    expect(REG.filter((r) => "kultur_tile_v86" in r).length).toBe(1435); // val 127: 1436 - 1 (p59 fantom)
     expect(REG.filter((r) => "owner_tile_v86" in r).length).toBe(1652);
     // kultur polje (pas1 vrednost) NI prepisano nikjer na p142
     for (const r of p142) expect(f(r, "kultur")).toBe(f(r, "kultur"));

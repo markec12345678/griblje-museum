@@ -48,7 +48,7 @@ REG.forEach((r, i) => {
 
 describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
   test("register nespremenjen po številu vrstic (2875) in straneh 141 (p3–p143)", () => {
-    expect(REG.length).toBe(2876);
+    expect(REG.length).toBe(2875); // val 127: p59 fantom −1
     expect(new Set(REG.map((r) => Number(r.page))).size).toBe(141);
   });
 

@@ -23,8 +23,8 @@ function rowsOn(page: number): Reg {
 }
 
 describe("val 119 del 1 — gardele vhodov", () => {
-  test("register: 2875 vrstic; changes 99 = 47 owner + 14 haus + 28 anmerkung + 4 ditto + 6 page_obs", () => {
-    expect(REG.length).toBe(2876);
+  test("register: 2875 vrstic (val 127: p59 fantom −1); changes 99 = 47 owner + 14 haus + 28 anmerkung + 4 ditto + 6 page_obs", () => {
+    expect(REG.length).toBe(2875);
     expect(CH.val).toBe("119-del1");
     expect(CH.stats.owner_fixes).toBe(47);
     expect(CH.stats.haus_fixes).toBe(14);
@@ -35,14 +35,14 @@ describe("val 119 del 1 — gardele vhodov", () => {
     expect(CH.changes.length).toBe(99);
   });
 
-  test("reading_pass plasti: v119-names 731 (del 1+2a+2b+2c+2d-x2+2d-x3+2e); v113 0; v114 0; v118-names 60; v115-insert 0; v86 1795", () => {
+  test("reading_pass plasti: v119-names 731 (del 1+2a+2b+2c+2d-x2+2d-x3+2e); v113 0; v114 0; v118-names 60; v115-insert 0; v86 1675 (val 127: p56–61 → v127-ps-reread)", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
     expect(n("v119-names")).toBe(731); // del 1 (120) + 2a (120) + 2b (122) + 2c (123) + 2d-x2 (60) + 2d-x3 (64) + 2e (p50-p55 = 122)
     expect(n("v113-ps-reread")).toBe(0);
     expect(n("v114-ps-reread")).toBe(0); // 184 − 62 − 2 (2d-x3) − 122 (2e: p50-p55 = zadnje v114 vrstice)
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(0); // val 119 del 2d-x3: p49-r2 (v115, F2 fill 'Heide Marko.' h3) prebrana -> v119-names
-    expect(n("v86-colonial-tiles")).toBe(1795);
+    expect(n("v86-colonial-tiles")).toBe(1675); // val 127: 1795 − 120
   });
 
   test("0 VLM klicev v vseh 6 readingih", () => {
@@ -189,7 +189,7 @@ describe("val 119 del 1 — kaskada (izrecna)", () => {
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as {
       meta: Record<string, unknown>;
     };
-    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876");
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2875"); // val 127: 2876 − 1 (p59 fantom)
     const k9 = JSON.stringify(c4);
     expect(k9).toContain('"jaethe_plain_100_1599":52');
     expect(k9).toContain('"jaethe_empty":960'); // val 119 del 2e: 965 − 4 → val 121: 958 → val 124: 959 + 1 (vstavljena p7 Nro 92)

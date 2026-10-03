@@ -88,9 +88,9 @@ REG.forEach((r, i) => {
 const p7 = REG.slice(firsts[7], firsts[7] + 22);
 
 describe("val 125 — gardele vhodov (F-V124-01 imenska + hišna plast p7)", () => {
-  test("register: 2876 vrstic (nespremenjeno — brez novih vrstic v v125)", () => {
-    expect(REG.length).toBe(2876);
-    expect(CHANGES.total_pre).toBe(2876);
+  test("register: 2875 vrstic (val 127: p59 fantom −1 po v125 — brez novih vrstic v v125)", () => {
+    expect(REG.length).toBe(2875); // val 127: 2876 − 1 (p59 fantom)
+    expect(CHANGES.total_pre).toBe(2876); // val 125 artefakt (zgodovinsko stanje)
     expect(CHANGES.total_post).toBe(2876);
   });
 
@@ -256,7 +256,7 @@ describe("val 125 — kaskada (izrecna, §22)", () => {
     expect(k9.jaethe_empty).toBe(960);
     expect(k9.klafter_empty).toBe(84);
     expect(k9.klafter_plain_le99).toBe(178);
-    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876");
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2875"); // val 127: 2876 − 1 (p59 fantom)
   });
 
   test("KG vsebinsko IDENTIČNA (3765/3473/2427/2775) — osebna plast = val 59 snapshot; sha 1e49de43 (timestamp-only)", () => {

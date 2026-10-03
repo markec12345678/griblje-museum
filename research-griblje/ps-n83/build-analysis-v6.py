@@ -32,7 +32,7 @@ BD = f'{REPO}/research-griblje/raw-web-val86-2026-10'
 for f in (f'{OUTD}/band-v86/compare-tiles-v86.json', f'{OUTD}/band-v86/register-v86-changes.json', f'{OUTD}/band-v86/register-v86b-changes.json'):
     assert os.path.exists(f), f'guard: manjka {f}'
 reg = json.load(open(f'{OUTD}/register.json'))
-assert len(reg) == 2876, 'guard: register (val 124: 2875 + 1 vstavljena p7 Nro 92 — F-V123-01 dvojni anchor)'
+assert len(reg) == 2875, 'guard: register (val 124: 2875 + 1 vstavljena p7 Nro 92 — F-V123-01 dvojni anchor)'
 v86 = [r for r in reg if r.get('reading_pass') == 'v86-colonial-tiles']
 assert all(r['page'] >= 56 and r['page'] <= 142 for r in v86), 'guard: v86 obseg'
 # pokritost = strani z vsaj enim kultur tile branjem (deterministično iz vlm-v86/)
@@ -43,8 +43,10 @@ for _f in os.listdir(BDv):
     if _f.endswith('.json') and '-t-kultur' in _f and 'ERROR' not in json.load(open(f'{BDv}/{_f}')):
         _kc[int(_f[1:4])] += 1
 cov_pages = sorted(p for p, n in _kc.items() if n == 4)
-exp_rows = sum(1 for r in reg if r['page'] in cov_pages)
-assert len(v86) == exp_rows, f'guard: v86 vrstic {len(v86)} != pokritost {exp_rows}'
+# val 127: p56–61 prešteté na v127-ps-reread (osebni re-read) — izvzete iz v86 pokritosti
+V127_PAGES = {56, 57, 58, 59, 60, 61}
+exp_rows = sum(1 for r in reg if r['page'] in cov_pages and r['page'] not in V127_PAGES)
+assert len(v86) == exp_rows, f'guard: v86 vrstic {len(v86)} != pokritost minus v127 strani {exp_rows}'
 assert all(r.get('reading_pass') != 'v86-colonial-tiles' for r in reg if r['page'] < 56 or r['page'] == 143), 'guard: p<56/p143 nedotaknjeni'
 
 comp = json.load(open(f'{OUTD}/band-v86/compare-tiles-v86.json'))

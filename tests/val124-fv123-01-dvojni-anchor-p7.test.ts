@@ -87,8 +87,8 @@ REG.forEach((r, i) => {
 const p7 = REG.slice(firsts[7], firsts[7] + 22);
 
 describe("val 124 — gardele vhodov (p7 dvojni anchor, F-V123-01)", () => {
-  test("register: 2876 vrstic (val 124: 2875 + 1 vstavljena p7 Nro 92; prej val 115: 2871 + 4); v125: 1 vrstica v124-dvojni-anchor (r20; r11 → v125-names-houses)", () => {
-    expect(REG.length).toBe(2876);
+  test("register: 2875 vrstic (val 127: p59 fantom −1 po v125); v125: 1 vrstica v124-dvojni-anchor (r20; r11 → v125-names-houses)", () => {
+    expect(REG.length).toBe(2875); // val 124: 2876 → val 127: −1 (p59 fantom)
     expect(REG.filter((r) => r.reading_pass === "v124-dvojni-anchor").length).toBe(1); // EXTRA r20 (val 125: r11 → v125-names-houses)
   });
 
@@ -230,7 +230,7 @@ describe("val 124 — kaskada (izrecna, §22)", () => {
     expect(k9["jaethe_empty"]).toBe(960); // +1 vstavljena (jae prazno, kl 54)
     expect(k9["klafter_empty"]).toBe(84);
     expect(k9["klafter_plain_le99"]).toBe(178); // +1 (54 ud.)
-    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876"); // EXTRA = ditto
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2875"); // val 127: 2876 − 1 (p59 fantom; EXTRA = ditto)
   });
 
   test("KG vsebinsko IDENTIČNA (3765/3473) — builder ne bere vrednostnega sloja; sha fc23ab10 → 1e49de43 (timestamp-only)", () => {
