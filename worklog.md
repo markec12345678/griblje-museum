@@ -5101,3 +5101,26 @@ Stage Summary:
 - F-V123-01 ZAPRT: v57/v82 bralec preskočil udarjeno 54 (Nro 85) → vrednosti eno vrstico nizko; dvojni anchor ime+vrednost rekonstruiral celotno p7 (22 vrstic); register 2876; KG ee3ac862 (timestamp-only); K9 56/960/84
 - 7 DISPUTE val 123 ZAPRTI (4 FIX + 3 POTRJENE) + 2 bonus najdbi; F-V124-01 ODPRT (p7 imenska/hišna plast — ločen val) + kultur_p7
 - Naslednje: F-V124-01 imenska plast p7 → NR-14 črkovalna sodba + p56–143 osebni re-read → register 26-0326/26-0379 → F-H122-01
+
+---
+Task ID: 125-cascade
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 125 publikacijska kaskada (PR #136) — F-V124-01 rešen: p7 imenska + hišna plast (NR-14 celicni zoomi, 0 VLM)
+
+Work Log:
+- Kontekst rekonstruiran iz git log + worklog: main @ 145ea13 (val 124 mergan); naslednja točka protokola 147 §8 = F-V124-01 (p7 imenska/hišna plast)
+- Metoda: make-zoom-v125.py (posamezne celice ×12–24 + označeni traki; grid val 121/124: top0_lin 160.25, mean_off 1.86, cal OK brez pina); NOVI geometrijski nauk F-V125: imena/hiše/Nro so BOTTOM-anchor (baseline na spodnjem pravilu pasu — nasprotje vrednostnemu sloju TOP-anchor); lastništvo pasu potrjeno z Nro sidri (Nro + hiša + ime na istem pravilu); stisnjena Nro 92 zapisana VISOKO v pasu
+- IMENSKA PLAST (7 strukturnih popravkov v57, build-register-v125.py GUARD + snimke owner_original_pre_v125): r1 'Poiding Hanl'→'Pödigz Hanl' (gz≠ng); r5 'Schimeczkhanl'→'Schimecz Mihual' (DVE besedi — v57 jih je bral skupaj; r0 ostaja pravi enobesedni); r9+r12 'Poiding Matthl'→'Pödigz Marusa' (rokopis 'Maruſa' — long-s z descender zanko, BREZ t-prečk → 'Matthl' nemogoče; zapisa identična r9-w2≈r12-w2 ultra ×20); r11 '(K)hanzl Valen'→'Schimez P…a' (stisnjeno; 1. beseda = koren cf. r10, 2. nečitljiva); r13 'Peders Marbl'→'(R)abitscher Georg' (rokopis 'Rabutschar Grogy' = ISTA OSEBA kot r14, Nro 94+95 — person-key stabilnost); r18 '(R)abitscher Marbl'→'Strauß Georg' (rokopis 'Strauß Grogy' Nro 99 = isti lastnik kot r19; tako v57 kot hitro branje v124 napačni)
+- HIŠNA PLAST: 9 popravkov (r1 63→53, r2 20→54, r5 65→49, r10 35→55, r13 80→48, r14 48→45, r15 45→47, r18 47→46, r19 46→45; digitcmp ×24) + r21 fantom '48' = v112 artefakt → '' (celica prazna) + r20 EXTRA hiša PRAZNA (ni zapisana — v124 'neberljiva' korigirano); F-V124-01 ZAPRT
+- Builder: idempotenten (dopolnilni tek popravil r20 anmerkung-only zaključek; rp v125-names-houses samo na 13 vrsticah s poljskimi spremembami; r20 ostaja v124-dvojni-anchor)
+- Kaskada: c4 K9 p1–55 56/960/84 + le99 178 + K5 208/2876 NESPREMENJENA (0 vrednostnih sprememb; meta nosi nov register vhod-sha) → KG vsebinsko IDENTIČNA 3764/3473/2427/2775 (osebna plast = person-owner-register + house-register owners.ps val 59 snapshot — builder ne bere owner_original za PERSON/OWNER_OF; sha ee3ac862→ab418c75 timestamp-only) → story 3764/3473/4 → timeline 8 (I1/I2/I6 ✓) → coverage PASS 8 (§24 14/14) → source-coverage PS rows 2876 → analysis-v5/v6 byte-identna re-runa → runtime src/data sinhronizirana
+- Testi: 31 failov → izrecen prehod: KG sha ab418c75 v 20 datotekah + v112-ps-reread 264→252 (val112/114/115) + jaethe_pre_v112 snimke 58→47 + v124-dvojni-anchor 2→1 (r11→v125) + val123 F-V123-01 r11 rp; +25 novih varovalk tests/val125 (GUARD snimke ×17, person-key stabilnost r13=r14 + r18=r19, hišno zaporedje 1:1, rp plasti, kaskada ab418c75, F-V125-01/NR-14 flagi)
+- Končno stanje: 1383 testov: 1372 pass / 11 skip / 0 fail; lint + tsc čisti
+- Docs: protokol 148 + KAZALO 148 + README 185. sklop
+- Kaskada: commit 50adf55 → PUSH (token) → PR #136 → CI 3/3 ZELENO V PRVEM TEKU (tretjič zapored) → MERGE @ fbedaff (merge commit) → remote veja izbrisana (204) → lokalna izbrisana → main sinhroniziran; delovno drevo čisto
+
+Stage Summary:
+- Val 125 MERGAN; main @ fbedaff; PR #136; CI 3/3 zeleno v prvem teku
+- F-V124-01 ZAPRT: 7 strukturnih imenskih popravkov v57 (2 NAPAČNI OSEBI: r13, r18) + 9 hišnih popravkov + fantom artefakt; register 2876 (0 novih vrstic); 0 vrednostnih sprememb; K9/K5 stabilna; KG ab418c75 timestamp-only
+- F-V125-01 ODPRT (person-owner-register + house-register owners.ps = val 59 snapshot — uskladitev s pass2 re-runom šele PO NR-14; H-035 pages vključuje p7 po stari hiši 35) + NR-14 variante p7 (Georg/Grogy, Rabitscher/Rabutschar, Maruſa, Mihual, Schimez P…a) + kultur_p7
+- Naslednje: NR-14 črkovalna sodba + p56–143 osebni re-read (+ pass2 re-run) → kultur re-sidro p7 → register 26-0326/26-0379 → F-H122-01
