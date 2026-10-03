@@ -61,7 +61,7 @@ const byPage = (p: number) => reg.filter((r) => r.page === p);
 
 describe("val 112 — gardele in infrastruktura", () => {
   test("register: 2875 vrstic (val 115: +4 vstavljene), 139 v88, 1795 v86-colonial-tiles — nedotaknjeno (val 116: p142 +40)", () => {
-    expect(reg.length).toBe(2875);
+    expect(reg.length).toBe(2876);
     expect(reg.filter((r) => (r as { v88_status?: string }).v88_status !== undefined || (r as { jk_review?: string }).jk_review === "v88-digit-split-UNRESOLVED").length).toBe(139);
     expect(reg.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
   });
@@ -92,7 +92,7 @@ describe("val 112 — gardele in infrastruktura", () => {
   });
 
   test("reading_pass: 265 vrstic v112-ps-reread + p3 obdrži v111 (21)", () => {
-    expect(reg.filter((r) => r.reading_pass === "v112-ps-reread").length).toBe(265);
+    expect(reg.filter((r) => r.reading_pass === "v112-ps-reread").length).toBe(264);
     expect(reg.filter((r) => r.reading_pass === "v111-ps-reread").length).toBe(21);
     // pokrite strani = p3(v111) + p4–p16 brez p3-duplikatov
     const covered = new Set(reg.filter((r) => r.reading_pass === "v112-ps-reread").map((r) => r.page));
@@ -156,15 +156,20 @@ describe("val 112 — F-PV-07 premestitve p5/p7/p12 (59)", () => {
     expect(p5[0].anmerkung).toContain("dvojna vrednost 913 + 543[?]");
   });
 
-  test("p7: 20 premestitev + r20 fantom-Fürtrag počiščen (owner brisan)", () => {
+  test("p7: 20 premestitev + r20 fantom-Fürtrag počiščen (owner brisan); val 124: 22 vrstic (vstavljena Nro 92 r11 + EXTRA r20, fantom zdaj r21)", () => {
     const p7 = byPage(7);
-    expect(p7.length).toBe(21);
+    expect(p7.length).toBe(22); // val 124 F-V123-01: 21 → 22 (vstavljena vrstica Nro 92 + EXTRA iz ločene stare r19)
     for (const r of p7) {
       expect(r.jaethe ?? "").toBe("");
     }
+    // val 124: EXTRA vrstica (ditto-Strauß, brez Nro) na r20; fantom-Fürtrag premaknjen na r21
     expect(p7[20].owner_original ?? "").toBe("");
-    expect(p7[20].anmerkung).toContain("fantomski rep");
-    expect(p7[20].anmerkung).toContain("Furtrag 2|687 prečrtan -> rdeče 1140");
+    expect(p7[20].klafter).toBe("110");
+    expect(p7[20].anmerkung).toContain("v124 NOVA VRSTICA");
+    expect(p7[20].anmerkung).toContain("EXTRA vrstica IZVEN Nro sekvence");
+    expect(p7[21].owner_original ?? "").toBe("");
+    expect(p7[21].anmerkung).toContain("fantomski rep");
+    expect(p7[21].anmerkung).toContain("Furtrag 2|687 prečrtan -> rdeče 1140");
   });
 
   test("p12: 19 premestitev (r16 klafter '-' nadomeščen)", () => {
@@ -177,11 +182,11 @@ describe("val 112 — F-PV-07 premestitve p5/p7/p12 (59)", () => {
     expect(p12[16].klafter.length).toBeGreaterThan(0);
   });
 
-  test("snimke jaethe_pre_v112 na premestitvah (sledljivost)", () => {
+  test("snimke jaethe_pre_v112 na premestitvah (sledljivost); val 124: 59 → 58 (stara r11 '(K)hanzl Valen' nadomeščena z v124-dvojni-anchor vrstico Nro 92)", () => {
     const moved = reg.filter(
       (r) => r.reading_pass === "v112-ps-reread" && (r as unknown as { jaethe_pre_v112?: string }).jaethe_pre_v112 !== undefined,
     );
-    expect(moved.length).toBe(59);
+    expect(moved.length).toBe(58); // val 124 F-V123-01: stara p7 r11 (v112 premestitev) zamenjana z vstavljeno vrstico (rp v124-dvojni-anchor)
     for (const r of moved.slice(0, 5)) {
       const snap = (r as unknown as { jaethe_pre_v112: string }).jaethe_pre_v112;
       expect(snap.length).toBeGreaterThan(0);
@@ -247,11 +252,14 @@ describe("val 112 — vrednostni audit p4 + p6 + p8–p16 (92 popravkov)", () =>
     expect((byPage(16)[14] as unknown as { klafter_pre_v112?: string }).klafter_pre_v112).toBe("1852");
   });
 
-  test("vsak vrednostni popravek ima snimko <field>_pre_v112 (sledljivost §4)", () => {
+  test("vsak vrednostni popravek ima snimko <field>_pre_v112 (sledljivost §4); val 124: indeksi ≥ 93 premaknjeni +1 (vstavljena p7 Nro 92)", () => {
     const fixes = changes.changes.filter((c) => c.type === "v112_value_fix");
     expect(fixes.length).toBeGreaterThan(90);
+    // val 124 F-V123-01: vstavljena vrstica pri indeksu 93 (p7 Nro 92) — spremembe v112 z indeksi ≥ 93
+    // kažejo na PRE-v124 indekse; preslikava vrne trenutni indeks registra
+    const gi124 = (i: number): number => (i >= 93 ? i + 1 : i);
     for (const f of fixes.slice(0, 30)) {
-      const r = reg[f.index] as unknown as Record<string, unknown>;
+      const r = reg[gi124(f.index)] as unknown as Record<string, unknown>;
       const snapKey = `${f.field}_pre_v112`;
       expect(r[snapKey], `r${f.index} ${f.field}`).toBeDefined();
     }
@@ -302,11 +310,11 @@ describe("val 112 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha fc23ab10… (pogodba §22, val 119 del 2e)", () => {
+  test("kaskadni artefakti držijo isti KG sha ee3ac862… (pogodba §22, val 119 del 2e)", () => {
     const { createHash } = require("node:crypto") as typeof import("node:crypto");
     const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
     const kgSha = sha(join(root, "research-griblje/atlas-1825/knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^fc23ab10/);
+    expect(kgSha).toMatch(/^ee3ac862/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",

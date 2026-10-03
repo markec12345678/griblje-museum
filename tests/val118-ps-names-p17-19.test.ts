@@ -38,7 +38,7 @@ function readJSON(rel: string): Record<string, unknown> {
 
 describe("val 118 — gardele vhodov", () => {
   test("register 2875 vrstic (vstavljanja ni)", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
   });
   test("reading JSON p17/p18/p19: meta 0 VLM + scope", () => {
     for (const [pg, fname] of [[17, "p17.json"], [18, "p18.json"], [19, "p19.json"]] as const) {
@@ -182,13 +182,13 @@ describe("val 118 — kaskada (izrecna)", () => {
     expect(nodes).toBe(3764);
     expect(edges).toBe(3473);
   });
-  test("KG sha fc23ab10 raznesen v kaskadne artefakte", () => {
+  test("KG sha ee3ac862 raznesen v kaskadne artefakte", () => {
     for (const f of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ]) {
       const s = readFileSync(join(REPO, f), "utf8");
-      expect(s).toContain("fc23ab10");
+      expect(s).toContain("ee3ac862");
     }
   });
   test("pass3: PS parcele 392 + land-use identičen (vrednostna projekcija nespremenjena)", () => {
@@ -205,7 +205,7 @@ describe("val 118 — kaskada (izrecna)", () => {
     const c4 = JSON.parse(
       readFileSync(join(REPO, "research-griblje/ps-n83/band-v86/c4-metrika-v90.json"), "utf8"),
     ) as { meta: Record<string, unknown> };
-    expect(String(c4.meta.K5_input_reliability)).toContain("207/2875"); // val 119 del 2c: 222 - 7 - 7 - 1 (p40-r1 ditto ovržen)
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876"); // val 119 del 2c: 222 - 7 - 7 - 1 (p40-r1 ditto ovržen)
   });
   test("timeline I6 (2035, 392) + raba (173, 142) nespremenjena", () => {
     const tl = readJSON("research-griblje/atlas-1825/timeline-1825-1830.json");

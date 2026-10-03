@@ -48,9 +48,9 @@ describe("val 121 — pasovni vrednostni re-read (F-OCI-05 zaprtje)", () => {
   });
 
   it("register: 2875 vrstic; plasti nespremenjene; v121 sledi v anmerkung", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     expect(REG.filter((r) => r.reading_pass === "v119-names").length).toBe(731);
-    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
+    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
     const v121 = REG.filter((r) => (r.anmerkung || "").includes("v121"));
     expect(v121.length).toBeGreaterThanOrEqual(95);
   });
@@ -204,17 +204,17 @@ describe("val 121 — pasovni vrednostni re-read (F-OCI-05 zaprtje)", () => {
     }
   });
 
-  it("kaskada: c4 K9 (both_filled 56, jaethe_empty 959, klafter_empty 84) + KG sha fc23ab10 v vseh artefaktih", () => {
+  it("kaskada: c4 K9 (both_filled 56, jaethe_empty 959, klafter_empty 84) + KG sha ee3ac862 v vseh artefaktih", () => {
     const c4 = readJSON("research-griblje/ps-n83/band-v86/c4-metrika-v90.json") as any;
     const k9key = Object.keys(c4).find((k) => k.startsWith("K9"))!;
     const p1 = c4[k9key].p1_55_val57;
     expect(p1["both_filled"]).toBe(56);
-    expect(p1["jaethe_empty"]).toBe(959);
+    expect(p1["jaethe_empty"]).toBe(960);
     expect(p1["klafter_empty"]).toBe(84);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
-    expect(kgSha).toMatch(/^fc23ab10/);
+    expect(kgSha).toMatch(/^ee3ac862/);
     const timeline = readJSON("src/data/timeline-1825-1830.json");
-    expect(JSON.stringify(timeline)).toContain("fc23ab10");
+    expect(JSON.stringify(timeline)).toContain("ee3ac862");
   });
 
   it("0 VLM: readings-v121.meta očitno izrecen", () => {

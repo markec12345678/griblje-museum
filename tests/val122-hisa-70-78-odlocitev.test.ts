@@ -58,7 +58,7 @@ describe("val 122 — hiša 70–78: ločena odločitev (uveljavitev)", () => {
         r.reading_pass in Object.fromEntries([...QUALITY_PASSES].map((p) => [p, 1])),
     );
     expect(hits.length).toBe(0);
-    expect(PS_REG.length).toBe(2875); // val 121 stanje — register NI bil dotaknjen
+    expect(PS_REG.length).toBe(2876); // val 121 stanje — register NI bil dotaknjen
   });
 
   it("H-070/H-071: ps_absence NEGATIVE-DECISIVE (0 vrstic čez 2.875); ps ostaja null", () => {
@@ -172,9 +172,9 @@ describe("val 122 — hiša 70–78: ločena odločitev (uveljavitev)", () => {
     }
   });
 
-  it("kaskada (§22): story/timeline/coverage držijo KG fc23ab10; runtime kopije = arhiv", () => {
+  it("kaskada (§22): story/timeline/coverage držijo KG ee3ac862; runtime kopije = arhiv", () => {
     const kgSha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha.startsWith("fc23ab10")).toBe(true);
+    expect(kgSha.startsWith("ee3ac862")).toBe(true);
     expect(STORY.provenance.kg_sha256).toBe(kgSha);
     expect(STORY.provenance.kg_val).toBe(122);
     expect(TIMELINE.provenance.kg_sha256).toBe(kgSha);

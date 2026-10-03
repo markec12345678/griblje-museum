@@ -163,7 +163,7 @@ describe("val 84 — register negativnih rezultatov + source-coverage", () => {
     };
     expect(sc.val).toBe(108);
     expect(sc.transcription.PS.pages).toBe(143);
-    expect(sc.transcription.PS.rows).toBe(2875); // val 115: 2871 + 4 vstavljene
+    expect(sc.transcription.PS.rows).toBe(2876); // val 115: 2871 + 4 vstavljene
     expect(sc.transcription.PS.passes).toBe(3); // val 86 2. prehod (kolonski tile-i) — vsebina bloka nespremenjena od val 86
     const ps = sc.sources.find((s) => s.source_id === "SRC-PS")!;
     expect(ps.status).toBe("VERIFIED");

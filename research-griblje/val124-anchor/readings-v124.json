@@ -1,0 +1,88 @@
+{
+  "val": 124,
+  "title": "F-V123-01 p7 dvojni-anchor re-read (ime+vrednost) + 6 DISPUTE razrešitev (celicni zoomi ×12–24)",
+  "scope": "p7 strukturni popravek (21 → 22 vrstic: vstavljena vrstica Nro 92 + EXTRA vrstica 110 + fantom premaknjen na Fürtrag); p10/p11/p12/p13/p14 dispute razrešitve; 0 VLM",
+  "method": "dvojni anchor ime+vrednost (metoda val 119 del 2d-x3): (1) desna stran ima 21 tiskanih pravil (158..932) = 20 pasov + 1 VSTAVLJENA ozka vrstica 585–603; leva stran ima 20 pravil (202..935) + stisnjeno vrstico 587–603 brez lastnega pravila; (2) vrednosti pišejo CEZ pasovo zgornje pravilo (top-anchor) — dodelitev po večini črnila (ink centroid); (3) imena/hiše/kultur = v57 bralec jebral po vrsticah 1:1 (brez preskoka), vrednosti pa s PRESKOKOM udarjene 54 pri vrstici 5 (Nro 85) — od tod zamik vrednosti za eno vrstico od r4 naprej; (4) digitcmp primerjave oblik števk iz iste strani (val 121 metoda)",
+  "key_finding": "F-V123-01 REŠEN: v82/v57 bralec je PRESKOKIL udarjeno 54 (vrstica 5, Nro 85, Lappary Marbl) in nato vrednosti bral eno vrstico nizko do konca strani; vstavljena vrstica (Nro 92, Haus 56, stisnjena na levi, tiskano pravilo 585–603 na desni) je svojo vrednost 54 (ud.) dala registrski vrstici r10 (Schimez Hanl), katere prava vrednost je 56. 6 odstopanj (19/49, 103/138, 36/56, 224/321?, 945/262, 297/397) = kombinacija zamika + števkovih variant. Rep 187/58/110 = vrstice 19/20/21 (Nro 99, 100, EXTRA brez Nro) — 1:1 po zamiku.",
+  "p7_structural": {
+    "geometry": {
+      "left_rules": [202, 240, 278, 318, 355, 395, 434, 472, 510, 549, 587, 626, 664, 703, 742, 780, 818, 857, 896, 935],
+      "right_rules": [158, 201, 239, 277, 317, 353, 393, 432, 471, 509, 547, 585, 603, 625, 662, 701, 739, 777, 815, 854, 893, 932, 956],
+      "insert_band": "585–603 (desna tiskana/prisotna pravila, leva stisnjena vrstica brez pravila)",
+      "nro_92_struck": "Nro 91, 92, 93, 94 rdeče prečrtani (kontekst prodaj 1814 'v. 1814 gekauft an Schimeczkhanl')"
+    },
+    "line_table": [
+      {"line": 1,  "nro": "81",  "name_book": "Schimeczkhanl",   "haus": "65", "value_book": "774",        "struck": false},
+      {"line": 2,  "nro": "82",  "name_book": "Pödigz Hanl",     "haus": "53", "value_book": "187",        "struck": false},
+      {"line": 3,  "nro": "83",  "name_book": "Lappary Marbl",   "haus": "54", "value_book": "283",        "struck": false},
+      {"line": 4,  "nro": "84",  "name_book": "Lappary Marbl",   "haus": "54", "value_book": "160",        "struck": false},
+      {"line": 5,  "nro": "85",  "name_book": "Lappary Marbl",   "haus": "54", "value_book": "54",         "struck": true,  "note": "PRESKOČENA v v57 vrednostnem branju — jedro F-V123-01"},
+      {"line": 6,  "nro": "86",  "name_book": "Schimz Mihual",   "haus": "49", "value_book": "241",        "struck": false, "note": "ime: v57 'Schimeczkhanl' — F-V124-01 imenska plast"},
+      {"line": 7,  "nro": "87",  "name_book": "Lappary Mihel",   "haus": "54", "value_book": "49",         "struck": false},
+      {"line": 8,  "nro": "88",  "name_book": "Rabitschar Marbl","haus": "47", "value_book": "31",         "struck": false},
+      {"line": 9,  "nro": "89",  "name_book": "Strauß Grogy",    "haus": "45", "value_book": "169",        "struck": false},
+      {"line": 10, "nro": "90",  "name_book": "Pödigz Marls",    "haus": "50", "value_book": "138",        "struck": true},
+      {"line": 11, "nro": "91",  "name_book": "Schimez Hanl",    "haus": "55", "value_book": "56",         "struck": false, "note": "Nro 91 prečrtan (prodaja 1814), vrstica ostane podatkovna"},
+      {"line": 12, "nro": "92",  "name_book": "Schimz P…a (nečitljivo; v57 '(K)hanzl Valen')", "haus": "56", "value_book": "54", "struck": true, "note": "VSTAVLJENA VRSTICA: stisnjena na levi (587–603), tiskano pravilo na desni"},
+      {"line": 13, "nro": "93",  "name_book": "Pödigz Matthl?",  "haus": "50", "value_book": "52",         "struck": true},
+      {"line": 14, "nro": "94",  "name_book": "Pödigz Marls?/Peders?", "haus": "48", "value_book": "44",   "struck": true},
+      {"line": 15, "nro": "95",  "name_book": "Rabutschar Grogy","haus": "45", "value_book": "321",        "struck": true},
+      {"line": 16, "nro": "96",  "name_book": "Strauß Grogy",    "haus": "47", "value_book": "315",        "struck": false},
+      {"line": 17, "nro": "97",  "name_book": "Rabutschar Marbl","haus": "47", "value_book": "262",        "struck": true},
+      {"line": 18, "nro": "98",  "name_book": "Rabatschar Marbl","haus": "47", "value_book": "397",        "struck": true},
+      {"line": 19, "nro": "99",  "name_book": "Rabatschar Marbl","haus": "46", "value_book": "187",        "struck": false},
+      {"line": 20, "nro": "100", "name_book": "Strauß Grogy",    "haus": "45", "value_book": "58",         "struck": true},
+      {"line": 21, "nro": "—",   "name_book": "(ditto Strauß — brez lastnega imena)", "haus": "?", "value_book": "110", "struck": true, "note": "EXTRA vrstica IZVEN Nro sekvence (896–935 / 893–932)"},
+      {"line": "FUR", "nro": "—", "name_book": "Fürtrag", "haus": "—", "value_book": "2|687 -> rdeče 1140; podstolpec 7|373 + 1|1147", "struck": true}
+    ],
+    "value_fixes": [
+      {"r": 4,  "pre": "241", "post": "54",  "line": 5,  "note": "preskočena udarjena 54; v123 'dodatno 54'"},
+      {"r": 5,  "pre": "19",  "post": "241", "line": 6,  "note": "v82 variant 4→1 od vrstice 7"},
+      {"r": 6,  "pre": "31",  "post": "49",  "line": 7},
+      {"r": 7,  "pre": "169", "post": "31",  "line": 8},
+      {"r": 8,  "pre": "103", "post": "169", "line": 9},
+      {"r": 9,  "pre": "36",  "post": "138", "line": 10, "note": "v82 variant 5→3 od vrstice 11"},
+      {"r": 10, "pre": "54",  "post": "56",  "line": 11, "note": "54 = vstavljene vrstice vrednost, potegnjena eno vrstico višje"}
+    ],
+    "new_rows": [
+      {"insert_at": 11, "line": 12, "identity_from": "old r11", "name": "(K)hanzl Valen", "haus": "56 (prej 26 — 2↔5 varianta, popravljeno po knjigi)", "klafter": "54", "note": "vstavljena vrstica Nro 92; ime v57 ohranjeno z oklepaji (nečitljiva stisnjena pisava — F-V124-01)"}
+    ],
+    "value_reanchors": [
+      {"r": 14, "pre": "224", "post": "321", "line": 15, "note": "isti celici, zdaj pravilno sidrana; zoom ×18: 3-2-1, udarjeno"},
+      {"r": 16, "pre": "945", "post": "262", "line": 17, "note": "945 = nemogoč variant (nobena številka ne ustreza); zoom ×18: 2-6-2, udarjeno; prva številka 2/3 dvoumna — 262 po soglasju z v123 oljnim zaporedjem"},
+      {"r": 17, "pre": "297", "post": "397", "line": 18, "note": "2→3 varianta; zoom: 3-9-7, udarjeno"}
+    ],
+    "moves": [
+      {"field": "ertrag_kr", "value": "1 -381", "from_r": 3, "to_r": 4, "note": "rdeča kapitalna opomba stoji ob vrstici 5 (Nro 85) — v123 page_obs 'p7 b4 1-381'"},
+      {"field": "anmerkung", "from_r": 20, "to_r": 21, "note": "fantomski rep (Fürtrag 2|687 → 1140, podstolpec 7|373 + 1|1147) = nova r21"}
+    ],
+    "new_extra_row": {
+      "r": 20, "line": 21,
+      "note": "EXTRA vrstica IZVEN Nro sekvence: ditto-Strauß (brez lastnega imena), vrednost 110 (udarjeno); v112 'r19 trojna oznaka' se nanaša na ta pas + Fürtrag; hiša neberljiva — F-V124-01"
+    },
+    "identity_unchanged": "imena/wohnort/stand/kultur/anmerkung (razen eksplicitno naštetega) OSTANEJO na svojih mestih — v57 jih je bral po vrsticah 1:1 brez preskoka; premakne se SAMO vrednostni sloj + 1 nova vrstica + fantom"
+  },
+  "disputes_resolved": [
+    {"page": 10, "r": 18, "reg": "1038", "seen": "1038", "decision": "POTRJENA — brez popravka", "evidence": "tretja številka = 3 (odprt zgornji lok; cf. r5 1148 = zaprti lok 8, digitcmp); dispute val 123 zaprt"},
+    {"page": 11, "r": 3,  "reg": "79", "seen": "99", "decision": "FIX 79 → 99", "evidence": "prva številka ima zaprto zanko + rep = 9 (7 brez zanke — cf. r17 čista 78; 8 brez repe — cf. r8 280); druga = 9"},
+    {"page": 11, "r": 20, "reg": "211", "seen": "211", "decision": "POTRJENA — brez popravka", "evidence": "211 v svojem pasu (top-anchor pravilo 938); 185 v pasu r21 (pravilo 976) — v123 'neujemljiv par' razpadel s pravilno pasovo atribucijo"},
+    {"page": 11, "r": 21, "reg": "185", "seen": "185", "decision": "POTRJENA — brez popravka", "evidence": "185 (udarjeno) v pasu r21 + svinenik; Fürtrag 2|798 → rdeče 81 ločeno"},
+    {"page": 12, "r": 17, "reg": "82", "seen": "53", "decision": "FIX 82 → 53", "evidence": "5 = raven vrh (cf. 650 ista stran), 3 = dve skodeli; '426' = artefakt detekcije; '— 20' v E. coni = ločen zapis (potrjeno)"},
+    {"page": 13, "r": 17, "reg": "112", "seen": "182", "decision": "FIX 112 → 182", "evidence": "srednja številka = 8 (dvojna zanka), ne 1"},
+    {"page": 14, "r": 0,  "reg": "687", "seen": "187", "decision": "FIX 687 → 187", "evidence": "prva = 1 (vertikala brez spodnje zanke, ≠ 6); srednja = 8 (okrogel vrh, ≠ 5 raven vrh cf. 53/650); zadnja = 7"}
+  ],
+  "bonus_finds": [
+    {"page": 11, "r": 15, "reg": "382", "seen": "582", "decision": "FIX 382 → 582", "evidence": "raven vrh = 5 (v123 '5 = flat top (ne 3)'); nova najdba zunaj disput — pasovni re-read p11"},
+    {"page": 11, "r": 17, "reg": "78", "seen": "78", "decision": "POTRJENA — brez popravka", "evidence": "7 brez zanke (zoom ×18) — nizko-ločljivostni '98' ovržen"}
+  ],
+  "open_flags": {
+    "F-V124-01": "p7 imenska/hišna plast: v57 imenske napačne brale (r5 'Schimeczkhanl' knjiga 'Schimz Mihual'; r13 'Peders Marbl' knjiga 'Pödigz …'); hišna odstopanja (r1 63/53, r2 20/54, r5 65/49, r10 35/55, r13 80/48, r14 48/45, r15 45/47, r19 48/45); vstavljena vrstica ime nečitljivo; EXTRA vrstica brez Nro/hiše — ločen val (NR-14 + hišna plast), NIČ popravkov v v124",
+    "kultur_p7": "kulturni nizi p7 (dvovrstični 'Lehngut Hfl.' čez pravila) niso bili re-sidrani v v124 — ločen prehod; obstoječi v112 zapisi ostajajo"
+  },
+  "metrics_delta": {
+    "register_rows": "2875 → 2876 (+1 vstavljena vrstica p7)",
+    "p7_rows": "21 → 22 (20 podatkovnih + EXTRA + fantom → 21 podatkovnih + EXTRA + fantom)",
+    "K9_p1_55": "both 56 (nespremenjen), jaeEmpty 959 → 960 (+1 vrstica), klEmpty 84 (nespremenjen)"
+  },
+  "honesty": "0 VLM; vsa branja = agentski vid na programsko generiranih izrezkih (regenerabilni, .gitignore crops/); vse spremembe z GUARD deklarirano-staro ≟ register; dvoumne ostajajo odprte (262 prva številka 2/3 — sprejeta po soglasju z v123; EXTRA vrstica hiša neberljiva)"
+}

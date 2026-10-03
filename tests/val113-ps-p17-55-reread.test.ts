@@ -41,7 +41,7 @@ const f = (r: Record<string, unknown>, k: string) => String(r[k] ?? "");
 
 describe("val 113 — gardele in infrastruktura", () => {
   test("register: 2875 vrstic (val 115: +4 vstavljene p34/p40/p48/p49), 139 v88, 1795 v86-colonial-tiles — nedotaknjeno (val 116: p142 +40)", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
     expect(v88.length).toBe(139);
     const v86 = REG.filter((r) => r["reading_pass"] === "v86-colonial-tiles");

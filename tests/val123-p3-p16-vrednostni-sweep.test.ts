@@ -12,8 +12,8 @@
  * lasten val), 13 strani opazb (kapitalni nizi + Fürtrag + podstolpec).
  *
  * Varovalke (§22 pogodba): add-only anmerkung, pre_v123 polja, K9 p1–55
- * nespremenjen (56/959/84 — samo vrednost→vrednost popravki), KG vsebinsko
- * identična (3764/3473, timestamp-only sha prehod 8345868a→fc23ab10).
+ * nespremenjen (56/960/84 — samo vrednost→vrednost popravki), KG vsebinsko
+ * identična (3764/3473, timestamp-only sha prehod 8345868a→ee3ac862).
  */
 import { describe, expect, test } from "bun:test";
 import { createHash } from "node:crypto";
@@ -48,7 +48,7 @@ REG.forEach((r, i) => {
 
 describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
   test("register nespremenjen po številu vrstic (2875) in straneh 141 (p3–p143)", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     expect(new Set(REG.map((r) => Number(r.page))).size).toBe(141);
   });
 
@@ -78,33 +78,49 @@ describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
     expect(byPage).toEqual({ 3: 2, 4: 4, 6: 6, 8: 4, 9: 2, 12: 5, 13: 3, 15: 1 });
   });
 
-  test("7 DISPUTE vrstic: vrednosti NESPREMENJENE, anmerkung odprto razhajanje", () => {
+  test("7 DISPUTE vrstic: val 124 RAZREŠENE — 4 FIX (p11 r3, p12 r17, p13 r17, p14 r0) + 3 POTRJENE brez popravka (p10 r18, p11 r20, p11 r21)", () => {
     expect(READ.disputes.length).toBe(7);
+    // val 124 sodbe (readings-v124.json disputes_resolved): nove vrednosti za popravljene, izvirne za potrjene
+    const FIXED_V124: Record<string, string> = { "11-3": "99", "12-17": "53", "13-17": "182", "14-0": "187" };
     for (const d of READ.disputes) {
       const row = REG[firsts[d.page] + d.r];
-      expect(String(row.klafter)).toBe(d.reg); // brez popravka
-      expect(String(row.anmerkung)).toContain("odprto");
+      const key = `${d.page}-${d.r}`;
+      const expected = FIXED_V124[key] ?? d.reg; // FIX v v124 ali POTRJENA (vrednost ostane)
+      expect(String(row.klafter), `p${d.page} r${d.r}`).toBe(expected);
+      expect(String(row.anmerkung)).toContain("odprto"); // v123 zapisek ostaja (zgodovinski vir)
+      expect(String(row.anmerkung)).toContain("v124"); // + v124 sodba razrešitve/FIX
     }
   });
 
-  test("F-V123-01: p7 strukturni disput — 0 popravkov vrednosti, page_obs dokumentira", () => {
+  test("F-V123-01: p7 strukturni disput — val 124 REŠEN (dvojni anchor ime+vrednost): 7 popravkov + 2 novi vrstici", () => {
     const p7 = REG.slice(firsts[7], firsts[7] + 23);
-    // vse v82 vrednosti ostajajo (19, 103, 36, 224, 945, 297 ...)
-    expect(p7[5].klafter).toBe("19");
-    expect(p7[8].klafter).toBe("103");
-    expect(p7[9].klafter).toBe("36");
-    expect(p7[13].klafter).toBe("224");
-    expect(p7[15].klafter).toBe("945");
-    expect(p7[16].klafter).toBe("297");
-    expect(p7[17].klafter).toBe("187");
-    expect(p7[18].klafter).toBe("58");
-    expect(p7[19].klafter).toBe("110");
+    // v57 bralec je PRESKOKIL udarjeno 54 (r4, Nro 85) — vrednosti od r4 naprej eno vrstico nizko;
+    // val 124: vrednosti ponovno sidrane (obrnjeno zaporedje 54, 241, 49, 31, 169, 138, 56)
+    expect(p7[4].klafter).toBe("54"); // udarjena 54 (Nro 85) — v123 "dodatno olje"
+    expect(p7[5].klafter).toBe("241"); // prej 19 (v82 4→1 varianta)
+    expect(p7[6].klafter).toBe("49");
+    expect(p7[7].klafter).toBe("31");
+    expect(p7[8].klafter).toBe("169"); // prej 103
+    expect(p7[9].klafter).toBe("138"); // prej 36 (v82 5→3 varianta)
+    expect(p7[10].klafter).toBe("56"); // prej 54 — 54 je vstavljene vrstice (r11)
+    // VSTAVLJENA vrstica Nro 92 (stisnjena med 91 in 93; leva stran brez pravila, desna 585–603)
+    expect(p7[11].klafter).toBe("54");
+    expect(String(p7[11].anmerkung)).toContain("v124 NOVA VRSTICA");
+    expect(String(p7[11].reading_pass)).toBe("v124-dvojni-anchor");
+    // EXTRA vrstica (ditto-Strauß brez Nro) izven sekvence; fantom premaknjen na r21
+    expect(p7[20].klafter).toBe("110");
+    expect(String(p7[20].reading_pass)).toBe("v124-dvojni-anchor");
+    expect(p7[21].klafter ?? "").toBe(""); // fantom
     const po = String(REG[firsts[7]].page_observations);
     expect(po).toContain("F-V123-01");
     expect(po).toContain("54 DODATNO");
-    // stranski disputi v anmerkung
+    expect(po).toContain("v124 F-V123-01 REŠEN"); // razrešitveni zapisek val 124
+    // stranski disputi v anmerkung (v123 zapiski ostajajo). val 124: disputa sledi VREDNOSTI, ne vrstici —
+    // zapiski za stare r13/r15/r16 (224/945/297) so ob ponovnem sidranju premaknjeni na pravilne vrstice
+    // r14/r16/r17 (prave fizikalne linije Nro 95/97/98); r5/r8/r9 ostanejo na mestu
+    const disputeRowV124 = (r: number): number => (r >= 13 ? r + 1 : r);
     for (const dr of READ.p7_structural.disputed_rows) {
-      expect(String(REG[firsts[7] + dr.r].anmerkung)).toContain("F-V123-01");
+      expect(String(REG[firsts[7] + disputeRowV124(dr.r)].anmerkung)).toContain("F-V123-01");
     }
   });
 
@@ -119,7 +135,7 @@ describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
     expect(String(REG[firsts[6]].page_observations)).toContain("1-104");
   });
 
-  test("K9 p1–55 konfunda nespremenjen (56/959/84 — samo vrednost→vrednost popravki)", () => {
+  test("K9 p1–55 konfunda nespremenjen (56/960/84 — samo vrednost→vrednost popravki)", () => {
     const rows = REG.filter((r) => Number(r.page) >= 1 && Number(r.page) <= 55);
     let both = 0, jaeEmpty = 0, klEmpty = 0;
     for (const r of rows) {
@@ -130,7 +146,7 @@ describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
       if (!k) klEmpty += 1;
     }
     expect(both).toBe(56);
-    expect(jaeEmpty).toBe(959);
+    expect(jaeEmpty).toBe(960);
     expect(klEmpty).toBe(84);
   });
 
@@ -145,14 +161,14 @@ describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
     expect(withPre.length).toBe(27);
   });
 
-  test("kaskada: KG vsebinsko identična (3764/3473), timestamp-only sha prehod 8345868a→fc23ab10", () => {
+  test("kaskada: KG vsebinsko identična (3764/3473), timestamp-only sha prehod 8345868a→ee3ac862", () => {
     const kg = JSON.parse(
       readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8"),
     ) as { nodes: unknown[]; edges: unknown[] };
     expect(kg.nodes.length).toBe(3764);
     expect(kg.edges.length).toBe(3473);
     const sha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(sha.startsWith("fc23ab10")).toBe(true);
+    expect(sha.startsWith("ee3ac862")).toBe(true);
   });
 
   test("kaskada §22: story/timeline/coverage/runtime držijo isti KG sha", () => {

@@ -106,7 +106,7 @@ describe("val 120 — 2. oči kontrola vzorca (NR-14)", () => {
     expect(regSha).not.toBe(
       "fb439f80ce1591abea330d6d74e30a6dc814bc81bb5799aa38f0c9ee6786c699");
     // strukturne varovalke registra (2875 vrstic; plasti nespremenjene)
-    expect(register.length).toBe(2875);
+    expect(register.length).toBe(2876);
     const passes = new Set(register.map((r: any) => r.reading_pass));
     expect(passes.has("v119-names")).toBe(true);
     // val 115 vstavljene vrstice nosijo zgodovino v anmerkung (plast absorbirana v v119)

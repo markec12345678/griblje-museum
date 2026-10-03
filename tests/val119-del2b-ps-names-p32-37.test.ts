@@ -25,7 +25,7 @@ function rowsOn(page: number): Reg {
 
 describe("val 119 del 2b — gardele vhodov", () => {
   test("register: 2875 vrstic; changes 141 = 107 owner + 19 haus + 2 anmerkung + 7 ditto + 6 page_obs", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     expect(CH.val).toBe("119-del2b");
     expect(CH.stats.owner_fixes).toBe(107);
     expect(CH.stats.haus_fixes).toBe(19);
@@ -37,14 +37,14 @@ describe("val 119 del 2b — gardele vhodov", () => {
     expect(CH.changes.length).toBe(141);
   });
 
-  test("reading_pass plasti: v119-names 731 (po del 2d-x2+2d-x3+2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0 (p49 r2 F2 fill @2d-x3); v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 731 (po del 2d-x2+2d-x3+2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0 (p49 r2 F2 fill @2d-x3); v86 1795; ditto 208", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
     expect(n("v119-names")).toBe(731);
     expect(n("v114-ps-reread")).toBe(0);
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(0);
     expect(n("v86-colonial-tiles")).toBe(1795);
-    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
+    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
   });
 
   test("0 VLM klicev v vseh 6 readingih (p32-p37); register_rows = 20/21/21/20/20/20", () => {
@@ -333,9 +333,9 @@ describe("val 119 del 2b — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 2b — kaskada (izrecna)", () => {
-  test("KG sha fc23ab10 raznesen (4bb6a974 -> 62d8cfea @2d-x3 ->); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+  test("KG sha ee3ac862 raznesen (4bb6a974 -> 62d8cfea @2d-x3 ->); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^fc23ab10/,
+      /^ee3ac862/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       stats?: Record<string, number>;
@@ -348,19 +348,19 @@ describe("val 119 del 2b — kaskada (izrecna)", () => {
     expect(edges).toBe(3473);
   });
 
-  test("pass3: 392 PS parcel + raba 105-38-3-12-6-7+142 identično; K5 dito 207; K9 69 nespremenjen", () => {
+  test("pass3: 392 PS parcel + raba 105-38-3-12-6-7+142 identično; K5 dito 208; K9 69 nespremenjen", () => {
     const c4 = readJSON(
       "research-griblje/ps-n83/band-v86/c4-metrika-v90.json",
     ) as { meta: Record<string, unknown> };
-    expect(String(c4.meta.K5_input_reliability)).toContain("207/2875");
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876");
     expect(String(c4.meta.K5_input_reliability)).not.toContain("215/2875");
     const timeline = readJSON(
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ) as { meta?: Record<string, unknown> };
-    expect(JSON.stringify(timeline)).toContain("fc23ab10");
+    expect(JSON.stringify(timeline)).toContain("ee3ac862");
   });
 
   test("runtime kopija KG v src/data = atlas izhod (ena izhodna resnica)", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^fc23ab10/);
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^ee3ac862/);
   });
 });

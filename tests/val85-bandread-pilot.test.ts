@@ -236,14 +236,14 @@ describe("val 85 — najdbe", () => {
 });
 
 describe("val 85 — poštenost §4 + §22 (nič ne beži v runtime)", () => {
-  test("register.json 2.875 vrstic (val 115: 2871 + 4 vstavljene p34/p40/p48/p49); val 86 + 98 + 107 vgradnja: 1.795 v86-colonial-tiles (val 116: +40 p142) + 3 v82-native-pass1 (p143)", () => {
-    expect(register).toHaveLength(2875);
+  test("register.json 2.876 vrstic (val 115: 2871 + 4 vstavljene p34/p40/p48/p49); val 86 + 98 + 107 vgradnja: 1.795 v86-colonial-tiles (val 116: +40 p142) + 3 v82-native-pass1 (p143)", () => {
+    expect(register).toHaveLength(2876);
     expect(register.filter((r) => r.reading_pass === "v82-native-pass1")).toHaveLength(3); // val 98: 689 → val 107: 43 → val 116: 3 (p142 prešla v v86)
     expect(register.filter((r) => r.reading_pass === "v86-colonial-tiles")).toHaveLength(1795); // val 98: 1109 → val 107: 1755 → val 116: 1795 (+40 p142)
   });
 
-  test("KG v2.4 (val 119 del 2e kaskada): sha fc23ab10… + metapodatki", () => {
-    expect(kgSha.startsWith("fc23ab10")).toBe(true); // val 119 del 2e KG (timestamp-only; val 2d-x3 je bil 62d8cfea, val 114 376e2b27, val 112 5ae52bd8, val 108 v2.4 (9f856d28), val 89 v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad))
+  test("KG v2.4 (val 119 del 2e kaskada): sha ee3ac862… + metapodatki", () => {
+    expect(kgSha.startsWith("ee3ac862")).toBe(true); // val 119 del 2e KG (timestamp-only; val 2d-x3 je bil 62d8cfea, val 114 376e2b27, val 112 5ae52bd8, val 108 v2.4 (9f856d28), val 89 v2.1 (b4f5011c), val 86 v2.0 (6fb6fae8), val 98 v2.2 (2b16acad))
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as { val: number; title: string };
     expect(kg.val).toBe(122); // val 122: hiša 70–78 ločena odločitev
     expect(kg.title).toBe("knowledge-graph-1825 v2.5");

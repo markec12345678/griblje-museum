@@ -25,7 +25,7 @@ function rowsOn(page: number): Reg {
 
 describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 nadgrajeni v del 2d-x3, protokol 140)", () => {
   test("register: 2875 vrstic; changes 71 = 47 owner + 3 haus + 18 anmerkung + 3 page_obs", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     expect(CH.val).toBe("119-del2d");
     expect(CH.stats.owner_fixes).toBe(47);
     expect(CH.stats.haus_fixes).toBe(3);
@@ -36,14 +36,14 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
     expect(CH.changes.length).toBe(71);
   });
 
-  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0; v86 1795; ditto 207", () => {
+  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0; v86 1795; ditto 208", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
     expect(n("v119-names")).toBe(731); // 545 + 2d-x3 (64) + 2e (p50-p55 = 122)
     expect(n("v114-ps-reread")).toBe(0); // 184 − 64 (2d-x3) − 122 (2e: p50-p55 = zadnje v114 vrstice)
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(0); // p49-r2 F2 fill -> v119-names (del 2d-x3)
     expect(n("v86-colonial-tiles")).toBe(1795);
-    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
+    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
   });
 
   test("0 VLM klicev v vseh 6 readingih (p44-p49); p47-p49 nadgrajeni iz DRAFT v celovito branje (del 2d-x3, protokol 140)", () => {
@@ -96,9 +96,9 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
 });
 
 describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
-  test("KG sha fc23ab10 raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> fc23ab10 @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
+  test("KG sha ee3ac862 raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> ee3ac862 @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
     const kg = sha256("src/data/knowledge-graph-1825.json").slice(0, 8);
-    expect(kg).toBe("fc23ab10");
+    expect(kg).toBe("ee3ac862");
     const sg = readJSON("src/data/story-graph-1825.json") as {
       entities: unknown[];
       relations: unknown[];
@@ -107,16 +107,16 @@ describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
     expect(sg.relations.length).toBe(3473);
   });
 
-  test("pass3: PS vir nespremenjen; K5 dito 207; K9 69 nespremenjen", () => {
+  test("pass3: PS vir nespremenjen; K5 dito 208; K9 69 nespremenjen", () => {
     const parcels = REG.filter((r) => f(r, "source") === "SI AS 176/N/N83/s/PS");
-    expect(parcels.length).toBe(2875); // celoten register = PS vir (392 parcel + rabovna plast)
+    expect(parcels.length).toBe(2876); // celoten register = PS vir (392 parcel + rabovna plast)
     const metrika = readJSON(
       "research-griblje/ps-n83/band-v86/c4-metrika-v90.json",
     ) as { k5_ditto?: number; k9?: number };
-    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
+    expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
   });
 
-  test("runtime kopije držijo isti KG sha fc23ab10 (ena izhodna resnica)", () => {
+  test("runtime kopije držijo isti KG sha ee3ac862 (ena izhodna resnica)", () => {
     const a = sha256("src/data/knowledge-graph-1825.json");
     const b = sha256("research-griblje/atlas-1825/knowledge-graph-1825.json");
     expect(a).toBe(b);

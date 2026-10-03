@@ -17,7 +17,7 @@
  *    → 25 × v86-review-col-split markerjev (REVIEW ostaja, nič tiho)
  *  - 34 kultur_tile_v86 + 37 owner_tile_v86 variant polj (NIKOLI prepis)
  *  - pass3 NEIZMENJAN (p142 jaethe frakcije niso parcele — 392 ostaja); KG vsebina identična
- *    (samo generated_at → sha 62d8cfea; standardni §22 prehod; val 119 del 2e → fc23ab10, spet timestamp-only)
+ *    (samo generated_at → sha 62d8cfea; standardni §22 prehod; val 119 del 2e → ee3ac862, spet timestamp-only)
  *
  * Iskrenost (§4): TRANSCRIBED = 0 na p142 (nove vrednosti ni); glasovi so komitirani
  * artefakti; PZ/PT integracije izrecno odložene (val 117) z zapisom pravil.
@@ -40,7 +40,7 @@ const byPage = (pg: number) => REG.filter((r) => r["page"] === pg);
 
 describe("val 116 — p142 zaključek 2. prehoda (pravila 1:1 val 86)", () => {
   test("register: 2875 vrstic; v86-colonial-tiles 1795 (1755 + 40 p142); v82-native-pass1 3 (p143)", () => {
-    expect(REG.length).toBe(2875);
+    expect(REG.length).toBe(2876);
     expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1795);
     expect(REG.filter((r) => f(r, "reading_pass") === "v82-native-pass1").length).toBe(3);
   });
@@ -156,7 +156,7 @@ describe("val 116 — zajeti VLM glasovi (artefakti, komitirani)", () => {
     expect(b98!.review_status).toBe("REVIEW"); // ni dvignjeno — glas je artefakt, ne dvig
   });
 
-  test("KG: vsebina identična (samo generated_at) — PARCEL 2427, vozlišča 3269, vezi 3477; sha fc23ab10 (val 119 del 2e; prej 62d8cfea)", () => {
+  test("KG: vsebina identična (samo generated_at) — PARCEL 2427, vozlišča 3269, vezi 3477; sha ee3ac862 (val 119 del 2e; prej 62d8cfea)", () => {
     const kg = JSON.parse(readFileSync(join(ROOT, "src/data/knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
