@@ -35,8 +35,8 @@ const kgSha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
 
 describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradnja)", () => {
   test("naslov + val + KG-F10 (RESOLVED-V84)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.4"); // val 107: naslov povišan (86b del 3), SRC-PS vozlišče vsebine ohranjene
-    expect(kg.val).toBe(108); // val 107 rebuild (vsebina vozlišč val 84/86 ohranjena)
+    expect(kg.title).toBe("knowledge-graph-1825 v2.5"); // val 107: naslov povišan (86b del 3), SRC-PS vozlišče vsebine ohranjene
+    expect(kg.val).toBe(122); // val 122 rebuild (KG v2.5 — hiša 70–78; vsebina vozlišč val 84/86 ohranjena)
     const f10 = kg.findings.find((f) => f.finding_id === "KG-F10")!;
     expect(f10).toBeDefined();
     expect(f10.val).toBe(84);
@@ -64,18 +64,18 @@ describe("val 84/86 — KG: SRC-PS vozlišče po val 82/83 + v2.0 (val 86 vgradn
     expect(JSON.stringify(kg.nodes)).not.toContain("PARTIAL 55/143");
   });
 
-  test("števci in ID-ji (val 119 del 3 sync: 3762/3471/614/8/4, PERSON 981; PS parcele 432→930→779→735→676→577→391→392 = izrecna projekcija + F-PV-05/07/SPLIT korekcije + vstavljena vrstica, ne zdrs)", () => {
+  test("števci in ID-ji (val 122: 3764/3473/614/11/4, PERSON 981; PS parcele 432→930→779→735→676→577→391→392 = izrecna projekcija + F-PV-05/07/SPLIT korekcije + vstavljena vrstica, ne zdrs)", () => {
     expect(kg.node_stats).toEqual({
-      SOURCE: 13, HOUSE: 167, PERSON: 981, PARCEL: 2427, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
+      SOURCE: 13, HOUSE: 169, PERSON: 981, PARCEL: 2427, BP: 100, TOPONYM: 37, EVENT: 3, MAP_OBJECT: 34,
     });
-    expect(kg.nodes.length).toBe(3762); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 → val 115: 3269
-    expect(kg.edges.length).toBe(3471); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
+    expect(kg.nodes.length).toBe(3764); // val 98: 3775 → val 107: 3612 → val 112: 3553 → val 113: 3454 → val 114: 3268 → val 115: 3269
+    expect(kg.edges.length).toBe(3473); // val 98: 3859 → … → val 114: 3477 → val 115: 3477 (nova parcela brez haus_no = brez HAS_PARCEL vezi)
     expect(kg.claims.length).toBe(614);
-    expect(kg.research_gaps.length).toBe(8);
+    expect(kg.research_gaps.length).toBe(11); // val 122: +3 iskrene OWNER join miss vrzeli (F-SYNC-04)
     expect(kg.story_atoms.map((a) => a.story_id)).toEqual(["SA-001", "SA-002", "SA-003", "SA-004"]);
     // ID stabilnost: prvi/zadnji relation + claim
     expect(kg.edges[0].relation_id).toBe("R-00001");
-    expect(kg.edges.at(-1)!.relation_id).toBe("R-03471"); // val 98: R-03859 → … → val 114: R-03477 → val 115: R-03477 → val 119 del 3: R-03471 (OWNER_OF 254→246, RESIDENCE 10→12)
+    expect(kg.edges.at(-1)!.relation_id).toBe("R-03473"); // val 98: R-03859 → … → val 114: R-03477 → val 119 del 3: R-03471 → val 122: R-03473 (HOUSE +2, HAS_PARCEL +2)
     expect(kg.claims[0].claim_id).toBe("C-00001");
     expect(kg.claims.at(-1)!.claim_id).toBe("C-00614");
   });
@@ -106,7 +106,7 @@ describe("val 84 — kaskada story_id (§22): pinned kg_sha256 = sha256 izhodneg
     const runtime = JSON.parse(readFileSync(resolve(REPO, "src/data/story-graph-1825.json"), "utf8")) as {
       provenance: { kg_val: number; kg_sha256: string };
     };
-    expect(archive.provenance.kg_val).toBe(108); // val 108 kaskada (§22; pri valu 84 je bilo 84)
+    expect(archive.provenance.kg_val).toBe(122); // val 122 kaskada (§22; pri valu 84 je bilo 84)
     expect(archive.provenance.kg_sha256).toBe(kgSha);
     expect(runtime.provenance).toEqual(archive.provenance);
   });

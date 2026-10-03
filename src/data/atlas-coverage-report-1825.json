@@ -23,7 +23,7 @@
    "research-griblje/pt-n83/register.json",
    "research-griblje/pua-n83/register.json"
   ],
-  "kg_sha256": "b3e9797e576b5ee6d7832af55387dd4179d8671daa90fc55bee91e5c54be0e73",
+  "kg_sha256": "8345868a12f89b7b800263725f743aacc8e0d6e96fd44e4b9daaa1da5e4040ec",
   "runtime_copy": "src/data/atlas-coverage-report-1825.json",
   "note": "ročno urejanje prepovedano — builder piše edino resnico"
  },
@@ -58,15 +58,15 @@
   {
    "category_id": "houses",
    "title": "Register hiš 1825",
-   "total": 167,
+   "total": 169,
    "VERIFIED": 16,
-   "PARTIAL": 45,
+   "PARTIAL": 47,
    "CONFLICT": 33,
    "UNKNOWN": 73,
    "NOT_FOUND": 0,
    "native": {
     "CONFLICT": 33,
-    "SINGLE_SOURCE": 32,
+    "SINGLE_SOURCE": 34,
     "AGREE": 16,
     "PARTIAL": 13,
     "UNKNOWN_SEMANTICS": 73

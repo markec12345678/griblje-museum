@@ -179,16 +179,16 @@ describe("val 118 — kaskada (izrecna)", () => {
     expect(kg.node_stats).toBeTruthy();
     const nodes = (kg.nodes as Array<Record<string, unknown>>).length;
     const edges = (kg.edges as Array<Record<string, unknown>>).length;
-    expect(nodes).toBe(3762);
-    expect(edges).toBe(3471);
+    expect(nodes).toBe(3764);
+    expect(edges).toBe(3473);
   });
-  test("KG sha b3e9797e raznesen v kaskadne artefakte", () => {
+  test("KG sha 8345868a raznesen v kaskadne artefakte", () => {
     for (const f of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ]) {
       const s = readFileSync(join(REPO, f), "utf8");
-      expect(s).toContain("b3e9797e");
+      expect(s).toContain("8345868a");
     }
   });
   test("pass3: PS parcele 392 + land-use identičen (vrednostna projekcija nespremenjena)", () => {

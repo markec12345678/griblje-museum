@@ -286,9 +286,9 @@ describe("generateVillageStory (§18)", () => {
     expect(story.sections[9].title).toContain("Neznanke");
   });
 
-  test("številke prihajajo iz grafa: 167 hiš, 981 oseb, 2427 parcel, 34 objektov, 5 listov (val 119 del 3 sync)", () => {
+  test("številke prihajajo iz grafa: 169 hiš, 981 oseb, 2427 parcel, 34 objektov, 5 listov (val 119 del 3 sync)", () => {
     const allText = story.sections.flatMap((s) => s.items.map((i) => i.text)).join(" ");
-    expect(allText).toContain("167 hiš");
+    expect(allText).toContain("169 hiš");
     expect(allText).toContain("981 oseb");
     expect(allText).toContain("2427 parcel");
     expect(allText).toContain("34 MAP_OBJECT");

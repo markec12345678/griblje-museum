@@ -221,13 +221,13 @@ describe("val 86 — vgradnja v register.json (precedens val 61: snimke + review
 
 describe("val 86 — §22 kaskada (KG → story/timeline/coverage; val 89 posodobitev števcev)", () => {
   test("KG v2.3: naslov + val 107 + invariante čiste + ID-ji (3.553/3.717; PARCEL 2.711 — val 108 je bil 2.770/3.072/3.612/3.776)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
-    expect(kg.val).toBe(108);
+    expect(kg.title).toBe("knowledge-graph-1825 v2.5");
+    expect(kg.val).toBe(122);
     expect(kg.invariant_violations).toEqual([]);
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3762); // val 108: 3612 → … → val 114: 3268 → val 115: 3269
+    expect(nodes).toBe(3764); // val 108: 3612 → … → val 114: 3268 → val 115: 3269
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3471); // val 108: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
+    expect(edges).toBe(3473); // val 108: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
     expect(kg.findings.some((f) => f.finding_id === "KG-F11" && f.val === 98)).toBe(true);
   });
 

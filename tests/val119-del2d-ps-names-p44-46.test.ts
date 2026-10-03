@@ -96,15 +96,15 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
 });
 
 describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
-  test("KG sha b3e9797e raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> b3e9797e @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
+  test("KG sha 8345868a raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> 8345868a @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
     const kg = sha256("src/data/knowledge-graph-1825.json").slice(0, 8);
-    expect(kg).toBe("b3e9797e");
+    expect(kg).toBe("8345868a");
     const sg = readJSON("src/data/story-graph-1825.json") as {
       entities: unknown[];
       relations: unknown[];
     };
-    expect(sg.entities.length).toBe(3762);
-    expect(sg.relations.length).toBe(3471);
+    expect(sg.entities.length).toBe(3764);
+    expect(sg.relations.length).toBe(3473);
   });
 
   test("pass3: PS vir nespremenjen; K5 dito 207; K9 69 nespremenjen", () => {
@@ -116,7 +116,7 @@ describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(207);
   });
 
-  test("runtime kopije držijo isti KG sha b3e9797e (ena izhodna resnica)", () => {
+  test("runtime kopije držijo isti KG sha 8345868a (ena izhodna resnica)", () => {
     const a = sha256("src/data/knowledge-graph-1825.json");
     const b = sha256("research-griblje/atlas-1825/knowledge-graph-1825.json");
     expect(a).toBe(b);

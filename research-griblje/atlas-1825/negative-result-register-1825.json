@@ -68,6 +68,27 @@
     "pages": "s. 3-143 (celoten register, polje haus_no)",
     "result": "razčlenjeno: 72 → p65 (2 vrstic); 74 → p65/69/122 (4 vrstic); 76 → p115 (1 vrstic) — dokumentirane; 70, 71, 73, 75, 77, 78 → 0 vrstic v celotnem PS",
     "verdict": "DELO OSVEŽENO — negativ ostaja za [70, 71, 73, 75, 77, 78]; hiše [72, 74, 76] — izven izpita vala 60 (73–78) — so sedaj dokumentirane (PS p56–143)"
+   },
+   "val122_decision": {
+    "val": 122,
+    "protocol": "research-griblje/145-val122-hisa-70-78-odlocitev.md",
+    "negative_final": [
+     "70",
+     "71",
+     "73",
+     "75",
+     "77",
+     "78"
+    ],
+    "negative_basis": "celotna pokritost PS (143/143, 2.875 vrstic) + PUA + PT + A01; 0 vrstic; nadgradi val 89 'DELO OSVEŽENO' (takrat še 'delna PS pokritost') na ODLOČILEN",
+    "documented_provisional": {
+     "72": "H-072 owners.ps (2 vrstici p65, Wolfsloch Wolfgey) — PROVISIONAL",
+     "74": "H-074 NOV vnos (4 vrstice p65/69/122) — PROVISIONAL",
+     "76": "H-076 NOV vnos (1 vrstica p115, Gritsch Mihlo) — PROVISIONAL"
+    },
+    "house_register": "houses_total 167 → 169 (H-074, H-076; H-072 owners.ps; H-070/H-071 ps_absence)",
+    "osebna_plast": "NESPREMENJENA (F-SYNC-04: PROVISIONAL lastniki ne vstopajo v person-owner-register)",
+    "sospored": "hiša 73: negativ potrjen tudi z val 99 (issue #100 — F0000212 ≈ št. 73 = INFERRED; SEM + Šopek 1937–39 re-verified)"
    }
   },
   {

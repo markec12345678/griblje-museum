@@ -159,14 +159,14 @@ describe("val 98 — prehod števcev (izrecen, testno voden)", () => {
   });
 
   test("KG v2.3: PARCEL 2.711, HAS_PARCEL 3.013, vozlišča 3.553, vezi 3.717, invariante čiste (val 108: 2.770/3.072/3.612/3.776; val 98: 2.933/3.155/3.775/3.859)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
-    expect(kg.val).toBe(108);
+    expect(kg.title).toBe("knowledge-graph-1825 v2.5");
+    expect(kg.val).toBe(122);
     expect(kg.node_stats.PARCEL).toBe(2427); // val 108: 2770 → … → val 114: 2426 → val 115: 2427
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2773); // val 108: 3072 → val 112: 3013 → val 113: 2914 → val 114: 2773
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2775); // val 108: 3072 → val 112: 3013 → val 113: 2914 → val 114: 2773
     const nodes = Object.values(kg.node_stats).reduce((a, b) => a + b, 0);
-    expect(nodes).toBe(3762); // val 108: 3612 → … → val 114: 3268 → val 115: 3269
+    expect(nodes).toBe(3764); // val 108: 3612 → … → val 114: 3268 → val 115: 3269
     const edges = Object.values(kg.edge_stats).reduce((a, b) => a + b, 0);
-    expect(edges).toBe(3471); // val 108: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
+    expect(edges).toBe(3473); // val 108: 3776 → val 112: 3717 → val 113: 3618 → val 114: 3477
     expect(kg.invariant_violations).toEqual([]);
   });
 
@@ -182,8 +182,8 @@ describe("val 98 — prehod števcev (izrecen, testno voden)", () => {
     expect(f11!.status).toContain("p110–142 tile-i ob kvoti");
   });
 
-  test("kaskada: runtime kopije držijo isti KG sha b3e9797e… (val 119 del 2e; prej 62d8cfea @2d-x3, val 114 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
-    expect(kgSha).toMatch(/^b3e9797e/);
+  test("kaskada: runtime kopije držijo isti KG sha 8345868a… (val 119 del 2e; prej 62d8cfea @2d-x3, val 114 376e2b27, val 112 5ae52bd8, val 108 9f856d28)", () => {
+    expect(kgSha).toMatch(/^8345868a/);
     for (const p of [
       join(process.cwd(), "src", "data", "knowledge-graph-1825.json"),
       join(process.cwd(), "src", "data", "story-graph-1825.json"),

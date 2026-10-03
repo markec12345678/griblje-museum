@@ -218,10 +218,10 @@ describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)
 });
 
 describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
-  test("KG sha b3e9797e (b3e9797e @2e -> val 119 del 3 PUA↔PS sync: osebna plast 488→981; RESIDENCE TP-029 zdaj 4 per-name osebe: R-03425..R-03428); 3762/3471/2427/2773", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^b3e9797e/);
+  test("KG sha 8345868a (8345868a @2e -> val 119 del 3 PUA↔PS sync: osebna plast 488→981; RESIDENCE TP-029 zdaj 4 per-name osebe: R-03425..R-03428); 3762/3471/2427/2773", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^8345868a/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^b3e9797e/,
+      /^8345868a/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -230,10 +230,10 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
       edge_stats: Record<string, number>;
       invariant_violations: unknown[];
     };
-    expect(kg.nodes.length).toBe(3762);
-    expect(kg.edges.length).toBe(3471);
+    expect(kg.nodes.length).toBe(3764);
+    expect(kg.edges.length).toBe(3473);
     expect(kg.node_stats.PARCEL).toBe(2427);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2775);
     expect(kg.invariant_violations).toEqual([]);
     // val 119 del 3: wohnort Zagorje vrstice se sedaj vežejo na per-name osebe iz tiste (page,haus) —
     // Lubreschibek Maathe. / Heide Marko. / Krischan Matthe. / Weidner Mathä. (v119 imena; prej 2 hišni osebi PER-0177/PER-0235)
@@ -273,8 +273,8 @@ describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
       relations: unknown[];
       stats?: { entities?: number; relations?: number };
     };
-    expect(sg.entities.length).toBe(3762);
-    expect(sg.relations.length).toBe(3471);
+    expect(sg.entities.length).toBe(3764);
+    expect(sg.relations.length).toBe(3473);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("src/data/timeline-1825-1830.json") as {
       provenance?: { kg_sha256?: string };

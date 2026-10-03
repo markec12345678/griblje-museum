@@ -81,7 +81,7 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
   });
 
   test("house-register: coverage 16 AGREE / 33 CONFLICT / 45 PARTIAL / 73 UNKNOWN_SEMANTICS; h40 CONFLICT + sim 0.432", () => {
-    expect(house.houses_total).toBe(167);
+    expect(house.houses_total).toBe(169);
     expect(house.coverage).toEqual({
       CONFLICT: 33,
       SINGLE_SOURCE: 32,
@@ -125,14 +125,14 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
     expect(ch.every((c: any) => c.note_pass2 || c.status === "OPEN")).toBe(true);
   });
 
-  test("KG vsebinsko SPREMENJEN (prvič od val 117): 3762 vozlišč / 3471 vezi / 614 trditev, PERSON 981, invariante čiste", () => {
+  test("KG vsebinsko SPREMENJEN (prvič od val 117, zadnja vsebina val 122): 3764 vozlišč / 3473 vezi / 614 trditev, PERSON 981, invariante čiste", () => {
     expect(kg.node_stats.PERSON).toBe(981);
-    expect(kg.nodes.length).toBe(3762);
-    expect(kg.edges.length).toBe(3471);
+    expect(kg.nodes.length).toBe(3764);
+    expect(kg.edges.length).toBe(3473);
     expect(kg.claims.length).toBe(614);
     expect(kg.edge_stats.OWNER_OF).toBe(246);
     expect(kg.edge_stats.RESIDENCE_DOCUMENTED_AT).toBe(12);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2773); // nedotaknjeno
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2775); // nedotaknjeno
     expect(kg.invariant_violations).toEqual([]);
     // osebni sloj: PER-0586 = Peter Muster (owner(ps) v119), PER-0059 = PUA Sautter
     const per586 = kg.nodes.find((n: any) => n.node_id === "PER-0586");
@@ -148,10 +148,10 @@ describe("val 119 del 3 — PUA↔PS sinhronizacija (F-SYNC)", () => {
     );
   });
 
-  test("kaskada: story-graph 3762/3471; timeline kg_sha256 = KG sha (ena izhodna resnica); coverage houses VER 16", () => {
+  test("kaskada: story-graph 3764/3473; timeline kg_sha256 = KG sha (ena izhodna resnica); coverage houses VER 16", () => {
     const sg = readJSON("research-griblje/atlas-1825/story-graph-1825.json");
-    expect(sg.stats.entities).toBe(3762);
-    expect(sg.stats.relations).toBe(3471);
+    expect(sg.stats.entities).toBe(3764);
+    expect(sg.stats.relations).toBe(3473);
     expect(sg.stats.entities_by_type.PERSON).toBe(981);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("research-griblje/atlas-1825/timeline-1825-1830.json") as {

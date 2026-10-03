@@ -1,7 +1,7 @@
 {
- "val": 108,
- "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno) + KG v2.3 (val 107, 86b del 3: tile 3. glas zaključen na p110–120+p122–141 — PS parcele 898→779 po F-PV-05 korekcijah na izvoru, owner variante p63–141, v88 nedotaknjeno, p142 obnovljivo ob kvoti — 1 tile) + KG v2.4 (val 108: direktni re-read 79 FRESH markerjev + poln pregled 14 strani p95–137 — odkrit P1 off-by-one od p98 r5 naprej + col-split spoji; PS parcele 779→735, v88 nedotaknjeno)",
- "title": "knowledge-graph-1825 v2.4",
+ "val": 122,
+ "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno) + KG v2.3 (val 107, 86b del 3: tile 3. glas zaključen na p110–120+p122–141 — PS parcele 898→779 po F-PV-05 korekcijah na izvoru, owner variante p63–141, v88 nedotaknjeno, p142 obnovljivo ob kvoti — 1 tile) + KG v2.4 (val 108: direktni re-read 79 FRESH markerjev + poln pregled 14 strani p95–137 — odkrit P1 off-by-one od p98 r5 naprej + col-split spoji; PS parcele 779→735, v88 nedotaknjeno) + KG v2.5 (val 122: hiša 70–78 ločena odločitev — H-074/H-076 nova HOUSE vozlišča iz PROVISIONAL plasti p56–143 (NR-05 zaprt za 74/76), H-072 owners.ps; HAS_PARCEL +2 (PS-p065-j1, PS-p069-j1) — tiha vrzel KG builderja pri manjkajoči hiši odpravljena; osebna plast nespremenjena, F-SYNC-04)",
+ "title": "knowledge-graph-1825 v2.5",
  "findings": [
   {
    "finding_id": "KG-F01",
@@ -92,6 +92,13 @@
    "statement": "KG v2.3 (86b del 3): kolonski tile-i (kompozit z glavo, F-PV-06) 2. prehod zaključen na p110–120 + p122–141 (+31 strani, +646 vrstic s reading_pass v86-colonial-tiles → 1.755 od 2.871); vgradnja 1:1 pravila val 86/98 (page-level F-PV-05, snimke *_pass1_v82): 117 v86-tiles-jk + 36 v86-tiles-arbitrated + 1 v86-pass2-split + 56 novih digit-split REVIEW + 14 col-split + 116 izrecnih N|K + 201 kept-k-k + 59 no-value + 30 page-not-qualified na novih straneh; owner_tile_v86 variante 552 (skupaj 1.615), kultur_tile_v86 506 (skupaj 1.402); digit_mismatch 98; v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p1–55 + p143 nedotaknjeno; p142 ostaja obnovljivo ob kvoti (1 tile — p142-t-kultur2, trdo 429; fail-fast page pravilo p142 drži v82-native-pass1). PS parcele v parcelnem registru 898 → 779 (F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Quad. Kläfter; brez kultur zapisa 104 → 92; raba: explicit 461 → 438, UNKNOWN 333 → 249). Nodes/edges/claims/ID-ji stabilni; kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage regenerirani.",
    "status": "RESOLVED-V107 (odprta: p142-t-kultur2 ob kvoti; F-PV-04 pasovni re-read; F11 REVIEW raven; F-PV-03)",
    "provenance": "research-griblje/raw-web-val86-2026-10/ (tile-read-v98.mts, vlm-v86/ 695/696 tile-ov; p113-t-kultur0 + p126-t-kultur0 reparerana iz .raw — literal newline v stringih) + ps-n83/band-v86/register-v107-changes.json + build-register-v107.py (val 107)"
+  },
+  {
+   "finding_id": "KG-F14",
+   "val": 122,
+   "statement": "KG v2.5 (val 122, hiša 70–78 ločena odločitev — protokol 144 §6.1 izvedena): house-register 167 → 169 — H-074 in H-076 nova HOUSE vozlišča (dokaz izključno PS p56–143, reading_pass v86-colonial-tiles = PROVISIONAL plast, F-PV-04/NR-14; NR-05 negativ za 74/76 ZAPRT — val 60 negativ je odražalo le pokritost p3–p55), H-072 owners.ps vgrajen (2 vrstici p65, Wolfsloch Wolfgey; imenska napetost PUA Strauß Khonrad vs PS Wolfsloch Wolfgey dokumentirana, NE razrešena — §4), H-070/H-071 ps_absence NEGATIVE-DECISIVE (celotna pokritost). Consequence: HAS_PARCEL vezi za PS parceli h74 (PS-p065-j1, PS-p069-j1) sedaj nastanejo — tiha vrzel KG builderja ('continue' pri manjkajoči hiši) od val 89 odpravljena. Osebna plast NESPREMENJENA (F-SYNC-04: PROVISIONAL lastniki ne vstopajo v person-owner-register; PERSON 981, OWNER_OF števci stabilni). Negativ za [70,71,73,75,77,78] ODLOČILEN (NR-05 val122_decision). Opažba (izven dosega vala 122): 13 pre-obstoječih podvojenih H-1-* house_id parov ('1 / N' vs '1/N' notacija, val 119 del 3) → 167 HOUSE vnosov = 154 unikatnih ID-jev; KG serializacija ohranja obe vozlišči.",
+   "status": "RESOLVED-V122 (odprta: črkovalna sodba imen NR-14; PROVISIONAL lastniki h72/74/76 čakajo p56–143 re-read)",
+   "provenance": "research-griblje/atlas-1825/build-houses-v122.py (val 122, 0 VLM) + ps-n83/register.json (2.875 vrstic, val 121 stanje)"
   }
  ],
  "provenance": {
@@ -248,7 +255,7 @@
     "total": 167,
     "breakdown": {
      "CONFLICT": 33,
-     "SINGLE_SOURCE": 32,
+     "SINGLE_SOURCE": 34,
      "AGREE": 16,
      "PARTIAL": 13,
      "UNKNOWN_SEMANTICS": 73
@@ -326,7 +333,7 @@
  },
  "node_stats": {
   "SOURCE": 13,
-  "HOUSE": 167,
+  "HOUSE": 169,
   "PERSON": 981,
   "PARCEL": 2427,
   "BP": 100,
@@ -340,7 +347,7 @@
   "OWNER_OF": 246,
   "OWNER_VARIANT_OF": 224,
   "BP_BOUND_TO_HOUSE": 119,
-  "HAS_PARCEL": 2773,
+  "HAS_PARCEL": 2775,
   "RESIDENCE_DOCUMENTED_AT": 12,
   "AFFECTS_HOUSE": 3,
   "DOCUMENTED_IN": 38,
@@ -356,7 +363,7 @@
   "UNCERTAIN": 40,
   "FOUND": 2,
   "TRANSCRIBED": 2502,
-  "TRANSCRIBED_PROVISIONAL": 271,
+  "TRANSCRIBED_PROVISIONAL": 273,
   "VERIFIED_FORM": 26,
   "PROVISIONAL_MULTI — first word UNRESOLVED": 1
  },
@@ -1663,7 +1670,7 @@
     }
    ],
    "evidence_status": "SINGLE_SOURCE",
-   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+   "notes": "val 122 (protokol 145): PS p3–p143 ponovno pregledan (2.875 vrstic) — 0 vrstic z haus_no 70 → negativ ZDAJ ODLOČILEN (celotna pokritost; do val 121 samo delna). PUA ostaja edini vir (Zollamt b. H. Neuradl in Gröbln (PUA p47 e95)). Stara opomba 'PS blok te hiše čaka p56–p143' zamenjana (PS prebran 143/143 od val 82; BRALSKI zdrsi so bile remapirane v val 120, vrednosti v val 121)."
   },
   {
    "node_id": "HOUSE:H-071",
@@ -1673,7 +1680,7 @@
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "evidence_status": "SINGLE_SOURCE",
-   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+   "notes": "val 122 (protokol 145): PS p3–p143 ponovno pregledan (2.875 vrstic) — 0 vrstic z haus_no 71 → negativ ZDAJ ODLOČILEN (celotna pokritost; do val 121 samo delna). PUA ostaja edini vir (Stauger Matho Bauersleibgäbler [?] (PUA p42 e86, REVIEW)). Stara opomba 'PS blok te hiše čaka p56–p143' zamenjana (PS prebran 143/143 od val 82; BRALSKI zdrsi so bile remapirane v val 120, vrednosti v val 121)."
   },
   {
    "node_id": "HOUSE:H-072",
@@ -1683,7 +1690,27 @@
    "pua_ps_name_sim": null,
    "bp_refs": [],
    "evidence_status": "SINGLE_SOURCE",
-   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+   "notes": "val 122 (ločena odločitev, protokol 145): owners.ps vgrajen iz PROVISIONAL plasti (2 vrstici p65, Wolfsloch Wolfgey, Acker; v86-colonial-tiles). Imenska napetost PUA (Strauß Khonrad bauer zu Grübln, VERIFIED-2x) vs PS (Wolfsloch Wolfgey) NI razrešena (§4) — metoda B sim se NE izračuna (definirana samo nad p3–p55; pua_ps_name_sim polja ostanejo null iz kontinuitete). Stara opomba 'PS blok te hiše čaka p56–p143' zamenjana (PS prebran 143/143 od val 82). Osebna plast NESPREMENJENA (F-SYNC-04)."
+  },
+  {
+   "node_id": "HOUSE:H-074",
+   "node_type": "HOUSE",
+   "house_no_1825": "74",
+   "house_no_type": "gruble_house",
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "evidence_status": "SINGLE_SOURCE",
+   "notes": "val 122 (ločena odločitev, protokol 145): NOV vnos — hiša 74 dokumentirana izključno v PS PROVISIONAL plasti (4 vrstice: p65 ×2 Tillek Wolfgey, p69 Heidrich Peter, p122 Kauc Miheljz; v86-colonial-tiles). NR-05 negativ za 74 ZAPRT — val 60 'ne obstaja v nobenem viru' je odražalo le pokritost p3–p55. 2 PS parceli (PS-p065-j1, PS-p069-j1) → KG HAS_PARCEL vezi sedaj nastanejo (tiha vrzel KG builderja val 89–121: `continue` pri manjkajoči hiši — odpravljena). Imena različna med stranmi (sukcesija/so-živeči, PROVISIONAL). Osebna plast NESPREMENJENA (F-SYNC-04)."
+  },
+  {
+   "node_id": "HOUSE:H-076",
+   "node_type": "HOUSE",
+   "house_no_1825": "76",
+   "house_no_type": "gruble_house",
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "evidence_status": "SINGLE_SOURCE",
+   "notes": "val 122 (ločena odločitev, protokol 145): NOV vnos — hiša 76 dokumentirana izključno v PS PROVISIONAL plasti (1 vrstica p115, Gritsch Mihlo, brez kultur/jaethe/klafter — vrstica hišne oznake; v86-colonial-tiles). NR-05 negativ za 76 ZAPRT (razlog kot pri 74). 0 PS parcel (F-PV-05). Osebna plast NESPREMENJENA (F-SYNC-04)."
   },
   {
    "node_id": "HOUSE:H-079",
@@ -95760,7 +95787,7 @@
   },
   {
    "relation_id": "R-03219",
-   "from_entity": "HOUSE:H-058",
+   "from_entity": "HOUSE:H-074",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p065-j1",
    "date_period": "1825 (PS)",
@@ -95773,6 +95800,19 @@
   },
   {
    "relation_id": "R-03220",
+   "from_entity": "HOUSE:H-058",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p065-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03221",
    "from_entity": "HOUSE:H-014",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p066-j796",
@@ -95785,7 +95825,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03221",
+   "relation_id": "R-03222",
    "from_entity": "HOUSE:H-066",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p066-j4",
@@ -95798,7 +95838,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03222",
+   "relation_id": "R-03223",
    "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p066-j1",
@@ -95811,7 +95851,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03223",
+   "relation_id": "R-03224",
    "from_entity": "HOUSE:H-028",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p068-j1",
@@ -95824,7 +95864,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03224",
+   "relation_id": "R-03225",
    "from_entity": "HOUSE:H-039",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p068-j1",
@@ -95837,7 +95877,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03225",
+   "relation_id": "R-03226",
    "from_entity": "HOUSE:H-041",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p068-j1",
@@ -95850,7 +95890,20 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03226",
+   "relation_id": "R-03227",
+   "from_entity": "HOUSE:H-074",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p069-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03228",
    "from_entity": "HOUSE:H-030",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p069-j1",
@@ -95863,7 +95916,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03227",
+   "relation_id": "R-03229",
    "from_entity": "HOUSE:H-054",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p069-j2",
@@ -95876,7 +95929,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03228",
+   "relation_id": "R-03230",
    "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p069-j1",
@@ -95889,7 +95942,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03229",
+   "relation_id": "R-03231",
    "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p070-j2",
@@ -95902,7 +95955,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03230",
+   "relation_id": "R-03232",
    "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p071-j3",
@@ -95915,7 +95968,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03231",
+   "relation_id": "R-03233",
    "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p071-j1",
@@ -95928,7 +95981,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03232",
+   "relation_id": "R-03234",
    "from_entity": "HOUSE:H-004",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p071-j1",
@@ -95941,7 +95994,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03233",
+   "relation_id": "R-03235",
    "from_entity": "HOUSE:H-029",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p073-j1",
@@ -95954,7 +96007,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03234",
+   "relation_id": "R-03236",
    "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p073-j1",
@@ -95967,7 +96020,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03235",
+   "relation_id": "R-03237",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p073-j1",
@@ -95980,7 +96033,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03236",
+   "relation_id": "R-03238",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p074-j1",
@@ -95993,7 +96046,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03237",
+   "relation_id": "R-03239",
    "from_entity": "HOUSE:H-068",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p075-j2",
@@ -96006,7 +96059,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03238",
+   "relation_id": "R-03240",
    "from_entity": "HOUSE:H-066",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p075-j1",
@@ -96019,7 +96072,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03239",
+   "relation_id": "R-03241",
    "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p075-j1",
@@ -96032,34 +96085,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03240",
-   "from_entity": "HOUSE:H-031",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p076-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03241",
-   "from_entity": "HOUSE:H-033",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p076-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03242",
-   "from_entity": "HOUSE:H-033",
+   "from_entity": "HOUSE:H-031",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p076-j1",
    "date_period": "1825 (PS)",
@@ -96072,6 +96099,32 @@
   },
   {
    "relation_id": "R-03243",
+   "from_entity": "HOUSE:H-033",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p076-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03244",
+   "from_entity": "HOUSE:H-033",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p076-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03245",
    "from_entity": "HOUSE:H-025",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p078-j2",
@@ -96084,34 +96137,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03244",
-   "from_entity": "HOUSE:H-016",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p078-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03245",
-   "from_entity": "HOUSE:H-149",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p078-j2",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03246",
-   "from_entity": "HOUSE:H-018",
+   "from_entity": "HOUSE:H-016",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p078-j1",
    "date_period": "1825 (PS)",
@@ -96124,6 +96151,32 @@
   },
   {
    "relation_id": "R-03247",
+   "from_entity": "HOUSE:H-149",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p078-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03248",
+   "from_entity": "HOUSE:H-018",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p078-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03249",
    "from_entity": "HOUSE:H-061",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p078-j4",
@@ -96136,7 +96189,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03248",
+   "relation_id": "R-03250",
    "from_entity": "HOUSE:H-061",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p078-j3",
@@ -96149,7 +96202,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03249",
+   "relation_id": "R-03251",
    "from_entity": "HOUSE:H-035",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p079-j2",
@@ -96162,7 +96215,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03250",
+   "relation_id": "R-03252",
    "from_entity": "HOUSE:H-018",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p079-j2",
@@ -96175,7 +96228,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03251",
+   "relation_id": "R-03253",
    "from_entity": "HOUSE:H-011",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p079-j1",
@@ -96188,7 +96241,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03252",
+   "relation_id": "R-03254",
    "from_entity": "HOUSE:H-026",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p079-j1",
@@ -96201,7 +96254,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03253",
+   "relation_id": "R-03255",
    "from_entity": "HOUSE:H-162",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p080-j1",
@@ -96214,7 +96267,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03254",
+   "relation_id": "R-03256",
    "from_entity": "HOUSE:H-031",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p080-j1",
@@ -96227,7 +96280,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03255",
+   "relation_id": "R-03257",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p084-j1037",
@@ -96240,7 +96293,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03256",
+   "relation_id": "R-03258",
    "from_entity": "HOUSE:H-042",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p085-j1",
@@ -96253,7 +96306,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03257",
+   "relation_id": "R-03259",
    "from_entity": "HOUSE:H-016",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p085-j1",
@@ -96266,7 +96319,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03258",
+   "relation_id": "R-03260",
    "from_entity": "HOUSE:H-008",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p086-j1",
@@ -96279,7 +96332,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03259",
+   "relation_id": "R-03261",
    "from_entity": "HOUSE:H-012",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p086-j1",
@@ -96292,7 +96345,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03260",
+   "relation_id": "R-03262",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p088-j9",
@@ -96305,7 +96358,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03261",
+   "relation_id": "R-03263",
    "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p088-j917",
@@ -96318,7 +96371,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03262",
+   "relation_id": "R-03264",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p089-j7797",
@@ -96331,7 +96384,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03263",
+   "relation_id": "R-03265",
    "from_entity": "HOUSE:H-065",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p090-j1",
@@ -96344,7 +96397,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03264",
+   "relation_id": "R-03266",
    "from_entity": "HOUSE:H-066",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p090-j1",
@@ -96357,7 +96410,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03265",
+   "relation_id": "R-03267",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p090-j2",
@@ -96370,36 +96423,10 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03266",
-   "from_entity": "HOUSE:H-001",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p090-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03267",
-   "from_entity": "HOUSE:H-003",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p090-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03268",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p091-j1",
+   "to_entity": "PARCEL:PS-p090-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -96410,9 +96437,9 @@
   },
   {
    "relation_id": "R-03269",
-   "from_entity": "HOUSE:H-001",
+   "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p091-j1",
+   "to_entity": "PARCEL:PS-p090-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -96436,6 +96463,32 @@
   },
   {
    "relation_id": "R-03271",
+   "from_entity": "HOUSE:H-001",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p091-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03272",
+   "from_entity": "HOUSE:H-001",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p091-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03273",
    "from_entity": "HOUSE:H-082",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p091-j10",
@@ -96448,34 +96501,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03272",
-   "from_entity": "HOUSE:H-032",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p092-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03273",
-   "from_entity": "HOUSE:H-019",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p092-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03274",
-   "from_entity": "HOUSE:H-019",
+   "from_entity": "HOUSE:H-032",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p092-j1",
    "date_period": "1825 (PS)",
@@ -96501,7 +96528,7 @@
   },
   {
    "relation_id": "R-03276",
-   "from_entity": "HOUSE:H-003",
+   "from_entity": "HOUSE:H-019",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p092-j1",
    "date_period": "1825 (PS)",
@@ -96514,7 +96541,7 @@
   },
   {
    "relation_id": "R-03277",
-   "from_entity": "HOUSE:H-051",
+   "from_entity": "HOUSE:H-019",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p092-j1",
    "date_period": "1825 (PS)",
@@ -96527,9 +96554,9 @@
   },
   {
    "relation_id": "R-03278",
-   "from_entity": "HOUSE:H-015",
+   "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p092-j2",
+   "to_entity": "PARCEL:PS-p092-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -96540,7 +96567,7 @@
   },
   {
    "relation_id": "R-03279",
-   "from_entity": "HOUSE:H-015",
+   "from_entity": "HOUSE:H-051",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p092-j1",
    "date_period": "1825 (PS)",
@@ -96553,6 +96580,32 @@
   },
   {
    "relation_id": "R-03280",
+   "from_entity": "HOUSE:H-015",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p092-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03281",
+   "from_entity": "HOUSE:H-015",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p092-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03282",
    "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p095-j2",
@@ -96565,34 +96618,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03281",
-   "from_entity": "HOUSE:H-064",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p095-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03282",
-   "from_entity": "HOUSE:H-006",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p095-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03283",
-   "from_entity": "HOUSE:H-024",
+   "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p095-j1",
    "date_period": "1825 (PS)",
@@ -96605,6 +96632,32 @@
   },
   {
    "relation_id": "R-03284",
+   "from_entity": "HOUSE:H-006",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p095-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03285",
+   "from_entity": "HOUSE:H-024",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p095-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03286",
    "from_entity": "HOUSE:H-007",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p096-j2",
@@ -96617,7 +96670,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03285",
+   "relation_id": "R-03287",
    "from_entity": "HOUSE:H-067",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p096-j2",
@@ -96630,7 +96683,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03286",
+   "relation_id": "R-03288",
    "from_entity": "HOUSE:H-065",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p096-j1",
@@ -96643,7 +96696,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03287",
+   "relation_id": "R-03289",
    "from_entity": "HOUSE:H-040",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p097-j2",
@@ -96656,7 +96709,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03288",
+   "relation_id": "R-03290",
    "from_entity": "HOUSE:H-040",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p097-j1",
@@ -96669,7 +96722,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03289",
+   "relation_id": "R-03291",
    "from_entity": "HOUSE:H-033",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p097-j1",
@@ -96682,7 +96735,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03290",
+   "relation_id": "R-03292",
    "from_entity": "HOUSE:H-032",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p098-j9",
@@ -96695,7 +96748,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03291",
+   "relation_id": "R-03293",
    "from_entity": "HOUSE:H-036",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p098-j9",
@@ -96708,36 +96761,10 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03292",
-   "from_entity": "HOUSE:H-024",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p098-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03293",
-   "from_entity": "HOUSE:H-024",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p098-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03294",
-   "from_entity": "HOUSE:H-042",
+   "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p099-j1",
+   "to_entity": "PARCEL:PS-p098-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -96748,9 +96775,9 @@
   },
   {
    "relation_id": "R-03295",
-   "from_entity": "HOUSE:H-025",
+   "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p099-j1",
+   "to_entity": "PARCEL:PS-p098-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -96761,7 +96788,7 @@
   },
   {
    "relation_id": "R-03296",
-   "from_entity": "HOUSE:H-047",
+   "from_entity": "HOUSE:H-042",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p099-j1",
    "date_period": "1825 (PS)",
@@ -96774,7 +96801,7 @@
   },
   {
    "relation_id": "R-03297",
-   "from_entity": "HOUSE:H-021",
+   "from_entity": "HOUSE:H-025",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p099-j1",
    "date_period": "1825 (PS)",
@@ -96787,9 +96814,9 @@
   },
   {
    "relation_id": "R-03298",
-   "from_entity": "HOUSE:H-020",
+   "from_entity": "HOUSE:H-047",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p100-j1",
+   "to_entity": "PARCEL:PS-p099-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -96800,9 +96827,9 @@
   },
   {
    "relation_id": "R-03299",
-   "from_entity": "HOUSE:H-020",
+   "from_entity": "HOUSE:H-021",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p100-j1",
+   "to_entity": "PARCEL:PS-p099-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -96813,7 +96840,7 @@
   },
   {
    "relation_id": "R-03300",
-   "from_entity": "HOUSE:H-069",
+   "from_entity": "HOUSE:H-020",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p100-j1",
    "date_period": "1825 (PS)",
@@ -96826,7 +96853,7 @@
   },
   {
    "relation_id": "R-03301",
-   "from_entity": "HOUSE:H-069",
+   "from_entity": "HOUSE:H-020",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p100-j1",
    "date_period": "1825 (PS)",
@@ -96839,7 +96866,7 @@
   },
   {
    "relation_id": "R-03302",
-   "from_entity": "HOUSE:H-043",
+   "from_entity": "HOUSE:H-069",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p100-j1",
    "date_period": "1825 (PS)",
@@ -96852,7 +96879,7 @@
   },
   {
    "relation_id": "R-03303",
-   "from_entity": "HOUSE:H-041",
+   "from_entity": "HOUSE:H-069",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p100-j1",
    "date_period": "1825 (PS)",
@@ -96865,7 +96892,7 @@
   },
   {
    "relation_id": "R-03304",
-   "from_entity": "HOUSE:H-042",
+   "from_entity": "HOUSE:H-043",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p100-j1",
    "date_period": "1825 (PS)",
@@ -96878,6 +96905,32 @@
   },
   {
    "relation_id": "R-03305",
+   "from_entity": "HOUSE:H-041",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p100-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03306",
+   "from_entity": "HOUSE:H-042",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p100-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03307",
    "from_entity": "HOUSE:H-149",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p102-j1",
@@ -96890,7 +96943,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03306",
+   "relation_id": "R-03308",
    "from_entity": "HOUSE:H-063",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p102-j2",
@@ -96903,7 +96956,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03307",
+   "relation_id": "R-03309",
    "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p102-j1",
@@ -96916,7 +96969,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03308",
+   "relation_id": "R-03310",
    "from_entity": "HOUSE:H-026",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p102-j1",
@@ -96929,7 +96982,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03309",
+   "relation_id": "R-03311",
    "from_entity": "HOUSE:H-018",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p103-j1",
@@ -96942,34 +96995,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03310",
-   "from_entity": "HOUSE:H-047",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p103-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03311",
-   "from_entity": "HOUSE:H-025",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p103-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03312",
-   "from_entity": "HOUSE:H-028",
+   "from_entity": "HOUSE:H-047",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p103-j1",
    "date_period": "1825 (PS)",
@@ -96982,7 +97009,7 @@
   },
   {
    "relation_id": "R-03313",
-   "from_entity": "HOUSE:H-003",
+   "from_entity": "HOUSE:H-025",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p103-j1",
    "date_period": "1825 (PS)",
@@ -96995,6 +97022,32 @@
   },
   {
    "relation_id": "R-03314",
+   "from_entity": "HOUSE:H-028",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p103-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03315",
+   "from_entity": "HOUSE:H-003",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p103-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03316",
    "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p104-j2",
@@ -97007,7 +97060,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03315",
+   "relation_id": "R-03317",
    "from_entity": "HOUSE:H-047",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p104-j2",
@@ -97020,7 +97073,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03316",
+   "relation_id": "R-03318",
    "from_entity": "HOUSE:H-035",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p104-j1",
@@ -97033,7 +97086,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03317",
+   "relation_id": "R-03319",
    "from_entity": "HOUSE:H-049",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p104-j3",
@@ -97046,7 +97099,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03318",
+   "relation_id": "R-03320",
    "from_entity": "HOUSE:H-063",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p105-j2",
@@ -97059,7 +97112,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03319",
+   "relation_id": "R-03321",
    "from_entity": "HOUSE:H-014",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p105-j1",
@@ -97072,7 +97125,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03320",
+   "relation_id": "R-03322",
    "from_entity": "HOUSE:H-065",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p105-j1",
@@ -97085,7 +97138,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03321",
+   "relation_id": "R-03323",
    "from_entity": "HOUSE:H-066",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p105-j1",
@@ -97098,7 +97151,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03322",
+   "relation_id": "R-03324",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p106-j1",
@@ -97111,7 +97164,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03323",
+   "relation_id": "R-03325",
    "from_entity": "HOUSE:H-053",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p106-j1",
@@ -97124,7 +97177,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03324",
+   "relation_id": "R-03326",
    "from_entity": "HOUSE:H-056",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p107-j1",
@@ -97137,7 +97190,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03325",
+   "relation_id": "R-03327",
    "from_entity": "HOUSE:H-045",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p107-j1",
@@ -97150,7 +97203,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03326",
+   "relation_id": "R-03328",
    "from_entity": "HOUSE:H-047",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p107-j3",
@@ -97163,7 +97216,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03327",
+   "relation_id": "R-03329",
    "from_entity": "HOUSE:H-047",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p107-j1",
@@ -97176,7 +97229,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03328",
+   "relation_id": "R-03330",
    "from_entity": "HOUSE:H-016",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p107-j1",
@@ -97189,7 +97242,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03329",
+   "relation_id": "R-03331",
    "from_entity": "HOUSE:H-063",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p107-j1",
@@ -97202,7 +97255,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03330",
+   "relation_id": "R-03332",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p108-j1",
@@ -97215,7 +97268,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03331",
+   "relation_id": "R-03333",
    "from_entity": "HOUSE:H-030",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p108-j1",
@@ -97228,7 +97281,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03332",
+   "relation_id": "R-03334",
    "from_entity": "HOUSE:H-026",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p108-j1",
@@ -97241,7 +97294,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03333",
+   "relation_id": "R-03335",
    "from_entity": "HOUSE:H-027",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p108-j1",
@@ -97254,7 +97307,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03334",
+   "relation_id": "R-03336",
    "from_entity": "HOUSE:H-035",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p109-j1",
@@ -97267,7 +97320,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03335",
+   "relation_id": "R-03337",
    "from_entity": "HOUSE:H-036",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p109-j1",
@@ -97280,7 +97333,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03336",
+   "relation_id": "R-03338",
    "from_entity": "HOUSE:H-063",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p109-j1",
@@ -97293,7 +97346,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03337",
+   "relation_id": "R-03339",
    "from_entity": "HOUSE:H-043",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p109-j1",
@@ -97306,7 +97359,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03338",
+   "relation_id": "R-03340",
    "from_entity": "HOUSE:H-055",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p109-j1",
@@ -97319,7 +97372,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03339",
+   "relation_id": "R-03341",
    "from_entity": "HOUSE:H-025",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p109-j1",
@@ -97332,36 +97385,10 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03340",
+   "relation_id": "R-03342",
    "from_entity": "HOUSE:H-020",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p109-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03341",
-   "from_entity": "HOUSE:H-026",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p110-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03342",
-   "from_entity": "HOUSE:H-056",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p110-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -97385,6 +97412,32 @@
   },
   {
    "relation_id": "R-03344",
+   "from_entity": "HOUSE:H-056",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p110-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03345",
+   "from_entity": "HOUSE:H-026",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p110-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03346",
    "from_entity": "HOUSE:H-027",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p111-j1",
@@ -97397,7 +97450,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03345",
+   "relation_id": "R-03347",
    "from_entity": "HOUSE:H-028",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p111-j1",
@@ -97410,7 +97463,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03346",
+   "relation_id": "R-03348",
    "from_entity": "HOUSE:H-061",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p111-j2",
@@ -97423,7 +97476,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03347",
+   "relation_id": "R-03349",
    "from_entity": "HOUSE:H-035",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p112-j1",
@@ -97436,7 +97489,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03348",
+   "relation_id": "R-03350",
    "from_entity": "HOUSE:H-016",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1",
@@ -97449,7 +97502,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03349",
+   "relation_id": "R-03351",
    "from_entity": "HOUSE:H-018",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1",
@@ -97462,7 +97515,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03350",
+   "relation_id": "R-03352",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p113-j1",
@@ -97475,7 +97528,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03351",
+   "relation_id": "R-03353",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j6",
@@ -97488,7 +97541,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03352",
+   "relation_id": "R-03354",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1",
@@ -97501,7 +97554,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03353",
+   "relation_id": "R-03355",
    "from_entity": "HOUSE:H-064",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1",
@@ -97514,7 +97567,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03354",
+   "relation_id": "R-03356",
    "from_entity": "HOUSE:H-062",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1",
@@ -97527,7 +97580,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03355",
+   "relation_id": "R-03357",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p114-j1",
@@ -97540,7 +97593,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03356",
+   "relation_id": "R-03358",
    "from_entity": "HOUSE:H-149",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
@@ -97553,34 +97606,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03357",
-   "from_entity": "HOUSE:H-001",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p116-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03358",
-   "from_entity": "HOUSE:H-003",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p116-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03359",
-   "from_entity": "HOUSE:H-013",
+   "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
    "date_period": "1825 (PS)",
@@ -97593,7 +97620,7 @@
   },
   {
    "relation_id": "R-03360",
-   "from_entity": "HOUSE:H-069",
+   "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p116-j1",
    "date_period": "1825 (PS)",
@@ -97606,6 +97633,32 @@
   },
   {
    "relation_id": "R-03361",
+   "from_entity": "HOUSE:H-013",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p116-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03362",
+   "from_entity": "HOUSE:H-069",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p116-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03363",
    "from_entity": "HOUSE:H-024",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -97618,7 +97671,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03362",
+   "relation_id": "R-03364",
    "from_entity": "HOUSE:H-050",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -97631,7 +97684,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03363",
+   "relation_id": "R-03365",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -97644,7 +97697,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03364",
+   "relation_id": "R-03366",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -97657,34 +97710,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03365",
-   "from_entity": "HOUSE:H-010",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p117-j2",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03366",
-   "from_entity": "HOUSE:H-017",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p117-j2",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03367",
-   "from_entity": "HOUSE:H-013",
+   "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j2",
    "date_period": "1825 (PS)",
@@ -97697,6 +97724,32 @@
   },
   {
    "relation_id": "R-03368",
+   "from_entity": "HOUSE:H-017",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p117-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03369",
+   "from_entity": "HOUSE:H-013",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p117-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03370",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -97709,7 +97762,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03369",
+   "relation_id": "R-03371",
    "from_entity": "HOUSE:H-007",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p117-j1",
@@ -97722,7 +97775,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03370",
+   "relation_id": "R-03372",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p118-j1",
@@ -97735,7 +97788,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03371",
+   "relation_id": "R-03373",
    "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p118-j1",
@@ -97748,7 +97801,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03372",
+   "relation_id": "R-03374",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p118-j2",
@@ -97761,34 +97814,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03373",
-   "from_entity": "HOUSE:H-069",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p119-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03374",
-   "from_entity": "HOUSE:H-049",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p119-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03375",
-   "from_entity": "HOUSE:H-056",
+   "from_entity": "HOUSE:H-069",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p119-j1",
    "date_period": "1825 (PS)",
@@ -97803,7 +97830,7 @@
    "relation_id": "R-03376",
    "from_entity": "HOUSE:H-049",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p119-j3",
+   "to_entity": "PARCEL:PS-p119-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -97814,6 +97841,32 @@
   },
   {
    "relation_id": "R-03377",
+   "from_entity": "HOUSE:H-056",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p119-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03378",
+   "from_entity": "HOUSE:H-049",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p119-j3",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03379",
    "from_entity": "HOUSE:H-059",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j1",
@@ -97826,33 +97879,33 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03378",
-   "from_entity": "HOUSE:H-055",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03379",
-   "from_entity": "HOUSE:H-055",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03380",
+   "from_entity": "HOUSE:H-055",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p120-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03381",
+   "from_entity": "HOUSE:H-055",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p120-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03382",
    "from_entity": "HOUSE:H-056",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j2",
@@ -97865,7 +97918,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03381",
+   "relation_id": "R-03383",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j9",
@@ -97878,7 +97931,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03382",
+   "relation_id": "R-03384",
    "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j1",
@@ -97891,7 +97944,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03383",
+   "relation_id": "R-03385",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j5",
@@ -97904,7 +97957,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03384",
+   "relation_id": "R-03386",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j4",
@@ -97917,7 +97970,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03385",
+   "relation_id": "R-03387",
    "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j4",
@@ -97930,7 +97983,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03386",
+   "relation_id": "R-03388",
    "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j2",
@@ -97943,7 +97996,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03387",
+   "relation_id": "R-03389",
    "from_entity": "HOUSE:H-015",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j2",
@@ -97956,7 +98009,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03388",
+   "relation_id": "R-03390",
    "from_entity": "HOUSE:H-017",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j3",
@@ -97969,7 +98022,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03389",
+   "relation_id": "R-03391",
    "from_entity": "HOUSE:H-056",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j1",
@@ -97982,7 +98035,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03390",
+   "relation_id": "R-03392",
    "from_entity": "HOUSE:H-055",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p120-j1",
@@ -97995,33 +98048,33 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03391",
-   "from_entity": "HOUSE:H-049",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j2",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03392",
-   "from_entity": "HOUSE:H-049",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p120-j2",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03393",
+   "from_entity": "HOUSE:H-049",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p120-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03394",
+   "from_entity": "HOUSE:H-049",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p120-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03395",
    "from_entity": "HOUSE:H-051",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j11",
@@ -98034,7 +98087,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03394",
+   "relation_id": "R-03396",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j1",
@@ -98047,7 +98100,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03395",
+   "relation_id": "R-03397",
    "from_entity": "HOUSE:H-008",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j1",
@@ -98060,7 +98113,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03396",
+   "relation_id": "R-03398",
    "from_entity": "HOUSE:H-010",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p121-j1",
@@ -98073,34 +98126,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03397",
-   "from_entity": "HOUSE:H-001",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p122-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03398",
-   "from_entity": "HOUSE:H-002",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p122-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03399",
-   "from_entity": "HOUSE:H-008",
+   "from_entity": "HOUSE:H-001",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
    "date_period": "1825 (PS)",
@@ -98126,7 +98153,7 @@
   },
   {
    "relation_id": "R-03401",
-   "from_entity": "HOUSE:H-003",
+   "from_entity": "HOUSE:H-008",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
    "date_period": "1825 (PS)",
@@ -98139,7 +98166,7 @@
   },
   {
    "relation_id": "R-03402",
-   "from_entity": "HOUSE:H-005",
+   "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p122-j1",
    "date_period": "1825 (PS)",
@@ -98152,9 +98179,9 @@
   },
   {
    "relation_id": "R-03403",
-   "from_entity": "HOUSE:H-002",
+   "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p124-j1",
+   "to_entity": "PARCEL:PS-p122-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -98165,9 +98192,9 @@
   },
   {
    "relation_id": "R-03404",
-   "from_entity": "HOUSE:H-002",
+   "from_entity": "HOUSE:H-005",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p124-j1",
+   "to_entity": "PARCEL:PS-p122-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -98178,7 +98205,7 @@
   },
   {
    "relation_id": "R-03405",
-   "from_entity": "HOUSE:H-003",
+   "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
    "date_period": "1825 (PS)",
@@ -98191,9 +98218,9 @@
   },
   {
    "relation_id": "R-03406",
-   "from_entity": "HOUSE:H-056",
+   "from_entity": "HOUSE:H-002",
    "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p124-j2",
+   "to_entity": "PARCEL:PS-p124-j1",
    "date_period": "1825 (PS)",
    "source_ids": [
     "SRC-PS"
@@ -98204,7 +98231,7 @@
   },
   {
    "relation_id": "R-03407",
-   "from_entity": "HOUSE:H-065",
+   "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
    "date_period": "1825 (PS)",
@@ -98217,6 +98244,32 @@
   },
   {
    "relation_id": "R-03408",
+   "from_entity": "HOUSE:H-056",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p124-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03409",
+   "from_entity": "HOUSE:H-065",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p124-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03410",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p124-j1",
@@ -98229,7 +98282,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03409",
+   "relation_id": "R-03411",
    "from_entity": "HOUSE:H-003",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p125-j1",
@@ -98242,34 +98295,8 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03410",
-   "from_entity": "HOUSE:H-006",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p126-j1",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
-   "relation_id": "R-03411",
-   "from_entity": "HOUSE:H-006",
-   "relation_type": "HAS_PARCEL",
-   "to_entity": "PARCEL:PS-p126-j2",
-   "date_period": "1825 (PS)",
-   "source_ids": [
-    "SRC-PS"
-   ],
-   "evidence_status": "TRANSCRIBED_PROVISIONAL",
-   "confidence": "medium",
-   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
-  },
-  {
    "relation_id": "R-03412",
-   "from_entity": "HOUSE:H-019",
+   "from_entity": "HOUSE:H-006",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p126-j1",
    "date_period": "1825 (PS)",
@@ -98282,6 +98309,32 @@
   },
   {
    "relation_id": "R-03413",
+   "from_entity": "HOUSE:H-006",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p126-j2",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03414",
+   "from_entity": "HOUSE:H-019",
+   "relation_type": "HAS_PARCEL",
+   "to_entity": "PARCEL:PS-p126-j1",
+   "date_period": "1825 (PS)",
+   "source_ids": [
+    "SRC-PS"
+   ],
+   "evidence_status": "TRANSCRIBED_PROVISIONAL",
+   "confidence": "medium",
+   "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
+  },
+  {
+   "relation_id": "R-03415",
    "from_entity": "HOUSE:H-032",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p126-j1",
@@ -98294,7 +98347,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03414",
+   "relation_id": "R-03416",
    "from_entity": "HOUSE:H-052",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p127-j3",
@@ -98307,7 +98360,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03415",
+   "relation_id": "R-03417",
    "from_entity": "HOUSE:H-006",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p131-j1",
@@ -98320,7 +98373,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03416",
+   "relation_id": "R-03418",
    "from_entity": "HOUSE:H-087",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p139-j4",
@@ -98333,7 +98386,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03417",
+   "relation_id": "R-03419",
    "from_entity": "HOUSE:H-165",
    "relation_type": "HAS_PARCEL",
    "to_entity": "PARCEL:PS-p139-j17",
@@ -98346,7 +98399,7 @@
    "notes": "cross_ref_to_pua UNKNOWN (F14); branja PROVISIONAL (F-PV-04/NR-14)"
   },
   {
-   "relation_id": "R-03418",
+   "relation_id": "R-03420",
    "from_entity": "PER-0027",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-032",
@@ -98359,7 +98412,7 @@
    "notes": "residence_original: Zogwitsche."
   },
   {
-   "relation_id": "R-03419",
+   "relation_id": "R-03421",
    "from_entity": "PER-0028",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-032",
@@ -98372,7 +98425,7 @@
    "notes": "residence_original: Zogwitsche"
   },
   {
-   "relation_id": "R-03420",
+   "relation_id": "R-03422",
    "from_entity": "PER-0030",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-033",
@@ -98385,7 +98438,7 @@
    "notes": "residence_original: zu Schönboden"
   },
   {
-   "relation_id": "R-03421",
+   "relation_id": "R-03423",
    "from_entity": "PER-0047",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-036",
@@ -98398,7 +98451,7 @@
    "notes": "residence_original: zu Grublh. in Höchsthal."
   },
   {
-   "relation_id": "R-03422",
+   "relation_id": "R-03424",
    "from_entity": "PER-0068",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-035",
@@ -98411,7 +98464,7 @@
    "notes": "residence_original: Gräving."
   },
   {
-   "relation_id": "R-03423",
+   "relation_id": "R-03425",
    "from_entity": "PER-0074",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-034",
@@ -98424,7 +98477,7 @@
    "notes": "residence_original: zu Waidhofen"
   },
   {
-   "relation_id": "R-03424",
+   "relation_id": "R-03426",
    "from_entity": "PER-0638",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-030",
@@ -98437,7 +98490,7 @@
    "notes": "wohnort: Gradiše"
   },
   {
-   "relation_id": "R-03425",
+   "relation_id": "R-03427",
    "from_entity": "PER-0402",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-029",
@@ -98450,7 +98503,7 @@
    "notes": "wohnort: Zagorje"
   },
   {
-   "relation_id": "R-03426",
+   "relation_id": "R-03428",
    "from_entity": "PER-0345",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-029",
@@ -98463,7 +98516,7 @@
    "notes": "wohnort: Zagorje"
   },
   {
-   "relation_id": "R-03427",
+   "relation_id": "R-03429",
    "from_entity": "PER-0347",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-029",
@@ -98476,7 +98529,7 @@
    "notes": "wohnort: Zagorje"
   },
   {
-   "relation_id": "R-03428",
+   "relation_id": "R-03430",
    "from_entity": "PER-0348",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-029",
@@ -98489,7 +98542,7 @@
    "notes": "wohnort: Zagorje"
   },
   {
-   "relation_id": "R-03429",
+   "relation_id": "R-03431",
    "from_entity": "PER-0386",
    "relation_type": "RESIDENCE_DOCUMENTED_AT",
    "to_entity": "TP-031",
@@ -98502,7 +98555,7 @@
    "notes": "wohnort: Dragole"
   },
   {
-   "relation_id": "R-03430",
+   "relation_id": "R-03432",
    "from_entity": "EVT-001",
    "relation_type": "AFFECTS_HOUSE",
    "to_entity": "HOUSE:H-043",
@@ -98518,7 +98571,7 @@
    ]
   },
   {
-   "relation_id": "R-03431",
+   "relation_id": "R-03433",
    "from_entity": "EVT-001",
    "relation_type": "AFFECTS_HOUSE",
    "to_entity": "HOUSE:H-045",
@@ -98534,7 +98587,7 @@
    ]
   },
   {
-   "relation_id": "R-03432",
+   "relation_id": "R-03434",
    "from_entity": "EVT-001",
    "relation_type": "AFFECTS_HOUSE",
    "to_entity": "HOUSE:H-046",
@@ -98550,7 +98603,7 @@
    ]
   },
   {
-   "relation_id": "R-03433",
+   "relation_id": "R-03435",
    "from_entity": "EVT-002",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98562,7 +98615,7 @@
    "confidence": "low"
   },
   {
-   "relation_id": "R-03434",
+   "relation_id": "R-03436",
    "from_entity": "EVT-003",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -98574,7 +98627,7 @@
    "confidence": "high"
   },
   {
-   "relation_id": "R-03435",
+   "relation_id": "R-03437",
    "from_entity": "TP-002",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-A01",
@@ -98586,7 +98639,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03436",
+   "relation_id": "R-03438",
    "from_entity": "TP-003",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-SIAS176",
@@ -98598,7 +98651,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03437",
+   "relation_id": "R-03439",
    "from_entity": "TP-004",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98610,7 +98663,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03438",
+   "relation_id": "R-03440",
    "from_entity": "TP-005",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98622,7 +98675,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03439",
+   "relation_id": "R-03441",
    "from_entity": "TP-006",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98634,7 +98687,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03440",
+   "relation_id": "R-03442",
    "from_entity": "TP-007",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98646,7 +98699,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03441",
+   "relation_id": "R-03443",
    "from_entity": "TP-008",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98658,7 +98711,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03442",
+   "relation_id": "R-03444",
    "from_entity": "TP-009",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98670,7 +98723,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03443",
+   "relation_id": "R-03445",
    "from_entity": "TP-010",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98682,7 +98735,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03444",
+   "relation_id": "R-03446",
    "from_entity": "TP-011",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98694,7 +98747,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03445",
+   "relation_id": "R-03447",
    "from_entity": "TP-012",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98706,7 +98759,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03446",
+   "relation_id": "R-03448",
    "from_entity": "TP-013",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98718,7 +98771,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03447",
+   "relation_id": "R-03449",
    "from_entity": "TP-014",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98730,7 +98783,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03448",
+   "relation_id": "R-03450",
    "from_entity": "TP-015",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98742,7 +98795,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03449",
+   "relation_id": "R-03451",
    "from_entity": "TP-016",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98754,7 +98807,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03450",
+   "relation_id": "R-03452",
    "from_entity": "TP-017",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98766,7 +98819,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03451",
+   "relation_id": "R-03453",
    "from_entity": "TP-018",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98778,7 +98831,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03452",
+   "relation_id": "R-03454",
    "from_entity": "TP-019",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98790,7 +98843,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03453",
+   "relation_id": "R-03455",
    "from_entity": "TP-020",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98802,7 +98855,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03454",
+   "relation_id": "R-03456",
    "from_entity": "TP-021",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98814,7 +98867,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03455",
+   "relation_id": "R-03457",
    "from_entity": "TP-022",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98826,7 +98879,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03456",
+   "relation_id": "R-03458",
    "from_entity": "TP-023",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PR",
@@ -98838,7 +98891,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03457",
+   "relation_id": "R-03459",
    "from_entity": "TP-024",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -98850,7 +98903,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03458",
+   "relation_id": "R-03460",
    "from_entity": "TP-025",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -98862,7 +98915,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03459",
+   "relation_id": "R-03461",
    "from_entity": "TP-026",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -98874,7 +98927,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03460",
+   "relation_id": "R-03462",
    "from_entity": "TP-027",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -98886,7 +98939,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03461",
+   "relation_id": "R-03463",
    "from_entity": "TP-028",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PG",
@@ -98898,7 +98951,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03462",
+   "relation_id": "R-03464",
    "from_entity": "TP-029",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PS",
@@ -98910,7 +98963,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03463",
+   "relation_id": "R-03465",
    "from_entity": "TP-030",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PS",
@@ -98922,7 +98975,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03464",
+   "relation_id": "R-03466",
    "from_entity": "TP-031",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PS",
@@ -98934,7 +98987,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03465",
+   "relation_id": "R-03467",
    "from_entity": "TP-032",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -98946,7 +98999,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03466",
+   "relation_id": "R-03468",
    "from_entity": "TP-033",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -98958,7 +99011,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03467",
+   "relation_id": "R-03469",
    "from_entity": "TP-034",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -98970,7 +99023,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03468",
+   "relation_id": "R-03470",
    "from_entity": "TP-035",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -98982,7 +99035,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03469",
+   "relation_id": "R-03471",
    "from_entity": "TP-036",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-PUA",
@@ -98994,7 +99047,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03470",
+   "relation_id": "R-03472",
    "from_entity": "TP-037",
    "relation_type": "DOCUMENTED_IN",
    "to_entity": "SRC-A05",
@@ -99006,7 +99059,7 @@
    "confidence": "medium"
   },
   {
-   "relation_id": "R-03471",
+   "relation_id": "R-03473",
    "from_entity": "TP-001",
    "relation_type": "IS_GEMEINDE_OF",
    "to_entity": "TP-003",
@@ -108433,7 +108486,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-10-02T23:22:58Z",
+   "generated_at": "2026-10-03T05:35:31Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -108455,7 +108508,7 @@
    ],
    "confidence": "medium",
    "evidence_status": "CONFLICT",
-   "generated_at": "2026-10-02T23:22:58Z",
+   "generated_at": "2026-10-03T05:35:31Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -108482,7 +108535,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED",
-   "generated_at": "2026-10-02T23:22:58Z",
+   "generated_at": "2026-10-03T05:35:31Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   },
@@ -108509,7 +108562,7 @@
    ],
    "confidence": "high",
    "evidence_status": "VERIFIED_FORM",
-   "generated_at": "2026-10-02T23:22:58Z",
+   "generated_at": "2026-10-03T05:35:31Z",
    "generator": "atlas-1825/build-knowledge-graph.py v1 (deterministično)",
    "provenance_note": "story_id + input entities + claim IDs + source IDs = Story Provenance arhitektura (issue #43 §7)"
   }
@@ -108606,6 +108659,42 @@
     "PUA/PS register"
    ],
    "current_result": "register-join ni našel person node-a (F16 p11 struktura / register drift)",
+   "next_source": "re-read strani @300dpi + ponovna gradnja registrov",
+   "status": "OPEN",
+   "tied_to": "F16"
+  },
+  {
+   "gap_id": "RG-009",
+   "missing_relation": "HOUSE 72 → OWNER (join miss {'house': '72', 'source': 'PS', 'name': 'Wolfsloch Wolfgey'})",
+   "searched_sources": [
+    "person-owner-register",
+    "PUA/PS register"
+   ],
+   "current_result": "owners.ps lastnik brez PERSON vozlišča — pričakovano: PROVISIONAL plast p56–143 izključena iz osebne plasti (F-SYNC-04, val 119 del 3); rešitev = p56–143 osebni re-read (NR-14 okvir; val 122 odločitev hiša 70–78)",
+   "next_source": "re-read strani @300dpi + ponovna gradnja registrov",
+   "status": "OPEN",
+   "tied_to": "F16"
+  },
+  {
+   "gap_id": "RG-010",
+   "missing_relation": "HOUSE 74 → OWNER (join miss {'house': '74', 'source': 'PS', 'name': 'Tillek Wolfgey'})",
+   "searched_sources": [
+    "person-owner-register",
+    "PUA/PS register"
+   ],
+   "current_result": "owners.ps lastnik brez PERSON vozlišča — pričakovano: PROVISIONAL plast p56–143 izključena iz osebne plasti (F-SYNC-04, val 119 del 3); rešitev = p56–143 osebni re-read (NR-14 okvir; val 122 odločitev hiša 70–78)",
+   "next_source": "re-read strani @300dpi + ponovna gradnja registrov",
+   "status": "OPEN",
+   "tied_to": "F16"
+  },
+  {
+   "gap_id": "RG-011",
+   "missing_relation": "HOUSE 76 → OWNER (join miss {'house': '76', 'source': 'PS', 'name': 'Gritsch Mihlo'})",
+   "searched_sources": [
+    "person-owner-register",
+    "PUA/PS register"
+   ],
+   "current_result": "owners.ps lastnik brez PERSON vozlišča — pričakovano: PROVISIONAL plast p56–143 izključena iz osebne plasti (F-SYNC-04, val 119 del 3); rešitev = p56–143 osebni re-read (NR-14 okvir; val 122 odločitev hiša 70–78)",
    "next_source": "re-read strani @300dpi + ponovna gradnja registrov",
    "status": "OPEN",
    "tied_to": "F16"

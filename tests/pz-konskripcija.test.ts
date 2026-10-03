@@ -458,8 +458,8 @@ describe("val 109/117 — PZ PASS 8/8b dokumentna resnica [373419]", () => {
 
 describe("val 77/86 — KG v2.0 + zgodba vasi", () => {
   test("KG v2.1: SRC-PZ TRANSCRIBED_PARTIAL (val 77) + KG-F09 val 77 + KG-F10 val 84; števci stabilni", () => {
-    expect(kg.val).toBe(108);
-    expect(kg.title).toContain("v2.4");
+    expect(kg.val).toBe(122);
+    expect(kg.title).toContain("v2.5");
     const srcPz = kg.nodes.find((n) => n.node_id === "SRC-PZ");
     expect(srcPz).toBeDefined();
     expect(srcPz!.coverage).toContain("TRANSCRIBED_PARTIAL");

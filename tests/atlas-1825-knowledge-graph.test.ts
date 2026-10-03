@@ -10,30 +10,30 @@ import { resolve } from "node:path";
 const BASE = resolve(import.meta.dir, "..", "research-griblje", "atlas-1825");
 const kg = JSON.parse(readFileSync(resolve(BASE, "knowledge-graph-1825.json"), "utf8"));
 
-describe("knowledge-graph-1825 v2.4 [val 108]", () => {
+describe("knowledge-graph-1825 v2.5 [val 122]", () => {
   test("struktura + velikosti (varovalke)", () => {
-    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
+    expect(kg.title).toBe("knowledge-graph-1825 v2.5");
     expect(kg.findings.map((f: { finding_id: string }) => f.finding_id)).toEqual([
-      "KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08", "KG-F09", "KG-F10", "KG-F11", "KG-F13", "KG-F12",
-    ]); // KG-F08 (val 72): GEOREF v2 — MO koordinate preko similaritete po reki Kolpi; KG-F09 (val 77): PZ Konskripcija PASS 2; KG-F10 (val 84): SRC-PS vozlišče po val 82/83; KG-F11 (val 98): 86b del 2 — tile 3. glas p95–109; KG-F12 (val 108): 86b del 3 — tile 3. glas zaključen p110–141
+      "KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08", "KG-F09", "KG-F10", "KG-F11", "KG-F13", "KG-F12", "KG-F14",
+    ]); // KG-F08 (val 72): GEOREF v2 — MO koordinate preko similaritete po reki Kolpi; KG-F09 (val 77): PZ Konskripcija PASS 2; KG-F10 (val 84): SRC-PS vozlišče po val 82/83; KG-F11 (val 98): 86b del 2 — tile 3. glas p95–109; KG-F12 (val 108): 86b del 3 — tile 3. glas zaključen p110–141; KG-F14 (val 122): hiša 70–78 ločena odločitev
     // KG-F02: popravljen SRC katalog — PT = uodid 373416 (ne 227668 = A02)
     const pt = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PT");
     expect(pt.uodid).toBe(373416);
     expect(pt.vac_details_url).toContain("id=373416");
     const pua = kg.nodes.find((n: { node_id: string }) => n.node_id === "SRC-PUA");
     expect(pua.uodid).toBe(373417);
-    expect(kg.nodes.length).toBe(3762); // val 119 del 3 sync: PERSON 488→981 (98 PUA + 656 PS v119 + 227 PT); val 115: 3269
-    expect(kg.edges.length).toBe(3471); // OWNER_OF 254→246 (8 zastarelih PS OWNER_OF hiš prek ps_stale), RESIDENCE 10→12
+    expect(kg.nodes.length).toBe(3764); // val 119 del 3 sync: PERSON 488→981 (98 PUA + 656 PS v119 + 227 PT); val 115: 3269
+    expect(kg.edges.length).toBe(3473); // OWNER_OF 254→246 (8 zastarelih PS OWNER_OF hiš prek ps_stale), RESIDENCE 10→12
     expect(kg.claims.length).toBe(614);
-    expect(kg.research_gaps.length).toBe(8);
+    expect(kg.research_gaps.length).toBe(11); // val 122: +3 iskrene OWNER join miss vrzeli (H-072/74/76 — F-SYNC-04, pričakovano)
     expect(kg.story_atoms.length).toBe(4);
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("node tipi: SOURCE 13 / HOUSE 167 / PERSON 981 / PARCEL 2427 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 119 del 3: osebna plast PUA↔PS sync)", () => {
+  test("node tipi: SOURCE 13 / HOUSE 169 / PERSON 981 / PARCEL 2427 / BP 100 / TOPONYM 37 / EVENT 3 / MAP_OBJECT 34 (val 122: hiša 70–78, HOUSE +2)", () => {
     expect(kg.node_stats).toEqual({
       SOURCE: 13,
-      HOUSE: 167,
+      HOUSE: 169,
       PERSON: 981,
       PARCEL: 2427,
       BP: 100,
