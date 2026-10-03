@@ -218,10 +218,10 @@ describe("val 119 del 2d-x3 — gardele vhodov (p47–p49 vgradnja, dvojni sidr)
 });
 
 describe("val 119 del 2d-x3 — kaskada (izrecna)", () => {
-  test("KG sha 8345868a (8345868a @2e -> val 119 del 3 PUA↔PS sync: osebna plast 488→981; RESIDENCE TP-029 zdaj 4 per-name osebe: R-03425..R-03428); 3762/3471/2427/2773", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^8345868a/);
+  test("KG sha fc23ab10 (fc23ab10 @2e -> val 119 del 3 PUA↔PS sync: osebna plast 488→981; RESIDENCE TP-029 zdaj 4 per-name osebe: R-03425..R-03428); 3762/3471/2427/2773", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^fc23ab10/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^8345868a/,
+      /^fc23ab10/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];

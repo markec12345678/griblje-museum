@@ -1,0 +1,559 @@
+{
+ "changes": [
+  {
+   "page": 3,
+   "rreg": 3,
+   "kind": "FIX",
+   "haus": "62",
+   "owner": "Kirschan Mihel[?]",
+   "kl": [
+    "769",
+    "762"
+   ],
+   "verdict": "FIX 769->762 (zadnja stevilka = 2 [zanka+val base, prim. 62/r19], ne 9 [primerjava 409/729])"
+  },
+  {
+   "page": 3,
+   "rreg": 8,
+   "kind": "FIX",
+   "haus": "61",
+   "owner": "Fillah Mäda[?]",
+   "kl": [
+    "488",
+    "485"
+   ],
+   "verdict": "FIX 488->485 (zadnja = 5 [flat top, prim. 325], ne 8 [prim. 758/802])"
+  },
+  {
+   "page": 4,
+   "rreg": 29,
+   "kind": "FIX",
+   "haus": "18",
+   "owner": "Schimay Jeklr[?]",
+   "kl": [
+    "944",
+    "946"
+   ],
+   "verdict": "FIX 944->946 (vir zdaj prebran: struck olje [9-4-6]; zapira val 112 \"brez vidnega vira\")"
+  },
+  {
+   "page": 4,
+   "rreg": 30,
+   "kind": "FIX",
+   "haus": "59",
+   "owner": "Pedian Svian[?]",
+   "kl": [
+    "293",
+    "205"
+   ],
+   "verdict": "FIX 293->205 (vir zdaj prebran: struck olje 205 [0 brez descenderja, 5 flat-top])"
+  },
+  {
+   "page": 4,
+   "rreg": 31,
+   "kind": "FIX",
+   "haus": "65",
+   "owner": "Prian Masko[?]",
+   "kl": [
+    "194",
+    "198"
+   ],
+   "verdict": "FIX 194->198 (vir zdaj prebran: struck olje 198 [8 dvojna zanka, prim. r17 194=4])"
+  },
+  {
+   "page": 4,
+   "rreg": 32,
+   "kind": "FIX",
+   "haus": "36",
+   "owner": "Fillal Putlrd[?]",
+   "kl": [
+    "46",
+    "42"
+   ],
+   "verdict": "FIX 46->42 (vir zdaj prebran: struck olje 42 [2 val base, prim. p3 62])"
+  },
+  {
+   "page": 6,
+   "rreg": 68,
+   "kind": "FIX",
+   "haus": "43",
+   "owner": "Shumey Michael",
+   "kl": [
+    "403",
+    "408"
+   ],
+   "verdict": "FIX 403->408 (zadnja = 8 [dvojna zanka], ne 3)"
+  },
+  {
+   "page": 6,
+   "rreg": 69,
+   "kind": "FIX",
+   "haus": "43",
+   "owner": "Shumey Michael",
+   "kl": [
+    "203",
+    "205"
+   ],
+   "verdict": "FIX 203->205 (zadnja = 5 [flat top], ne 3 [prim. 36/389])"
+  },
+  {
+   "page": 6,
+   "rreg": 71,
+   "kind": "FIX",
+   "haus": "529",
+   "owner": "Pölling Joan",
+   "kl": [
+    "136",
+    "126"
+   ],
+   "verdict": "FIX 136->126 (srednja = 2 [zanka+val base], ne 3)"
+  },
+  {
+   "page": 6,
+   "rreg": 72,
+   "kind": "FIX",
+   "haus": "53",
+   "owner": "Shumey Joan",
+   "kl": [
+    "190",
+    "180"
+   ],
+   "verdict": "FIX 190->180 (srednja = 8 [dvojna zanka brez descenderja], ne 9)"
+  },
+  {
+   "page": 6,
+   "rreg": 74,
+   "kind": "FIX",
+   "haus": "6",
+   "owner": "Baron Helfenburg",
+   "kl": [
+    "794",
+    "798"
+   ],
+   "verdict": "FIX 794->798 (zadnja = 8 [dvojna zanka], ne 4)"
+  },
+  {
+   "page": 6,
+   "rreg": 78,
+   "kind": "FIX",
+   "haus": "142",
+   "owner": "Pölling Wolf",
+   "kl": [
+    "110",
+    "170"
+   ],
+   "verdict": "FIX 110->170 (srednja = 7 [vodoravni top + descender], prim. r18 170 — identicna oblika)"
+  },
+  {
+   "page": 8,
+   "rreg": 105,
+   "kind": "FIX",
+   "haus": "63",
+   "owner": "Braupf Hanns",
+   "kl": [
+    "42",
+    "62"
+   ],
+   "verdict": "FIX 42->62 (prva = 6 [zanka+vrat], ne 4)"
+  },
+  {
+   "page": 8,
+   "rreg": 106,
+   "kind": "FIX",
+   "haus": "63",
+   "owner": "Braupf Hanns",
+   "kl": [
+    "348",
+    "365"
+   ],
+   "verdict": "FIX 348->365 (6 [zanka+vrat] in 5 [flat top], ne 4/8)"
+  },
+  {
+   "page": 8,
+   "rreg": 112,
+   "kind": "FIX",
+   "haus": "55",
+   "owner": "Schimer Jacob",
+   "kl": [
+    "464",
+    "451"
+   ],
+   "verdict": "FIX 464->451 (5 [flat top] in 1 [zastavica], ne 6/4)"
+  },
+  {
+   "page": 8,
+   "rreg": 113,
+   "kind": "FIX",
+   "haus": "56",
+   "owner": "Schimer Peter",
+   "kl": [
+    "461",
+    "460"
+   ],
+   "verdict": "FIX 461->460 (zadnja = 0 [majhna oval], ne 1)"
+  },
+  {
+   "page": 9,
+   "rreg": 134,
+   "kind": "FIX",
+   "haus": "31",
+   "owner": "Schuchardt Wenzl",
+   "kl": [
+    "258",
+    "358"
+   ],
+   "verdict": "FIX 258->358 (prva = 3 [dve skodeli], ne 2)"
+  },
+  {
+   "page": 9,
+   "rreg": 136,
+   "kind": "FIX",
+   "haus": "43",
+   "owner": "Kunsthof Wenzl",
+   "kl": [
+    "228",
+    "234"
+   ],
+   "verdict": "FIX 228->234 (3 [dve skodeli] in 4 [odprt top], ne 2/8)"
+  },
+  {
+   "page": 12,
+   "rreg": 186,
+   "kind": "FIX",
+   "haus": "46",
+   "owner": "Kristof Muster",
+   "kl": [
+    "297",
+    "294"
+   ],
+   "verdict": "FIX 297->294 (zadnja = 4 [odprt top + precka, prim. 554], ne 7)"
+  },
+  {
+   "page": 12,
+   "rreg": 188,
+   "kind": "FIX",
+   "haus": "31",
+   "owner": "Kristof Muster",
+   "kl": [
+    "494",
+    "490"
+   ],
+   "verdict": "FIX 494->490 (zadnja = 0 [oval, prim. 470], ne 4)"
+  },
+  {
+   "page": 12,
+   "rreg": 190,
+   "kind": "FIX",
+   "haus": "41",
+   "owner": "Poldi Gnoy",
+   "kl": [
+    "376",
+    "364"
+   ],
+   "verdict": "FIX 376->364 (6 [zanka+vrat] in 4, ne 7/6)"
+  },
+  {
+   "page": 12,
+   "rreg": 194,
+   "kind": "FIX",
+   "haus": "40",
+   "owner": "Poldi Muster",
+   "kl": [
+    "374",
+    "314"
+   ],
+   "verdict": "FIX 374->314 (srednja = 1 [zastavica brez horizontalnega topa], ne 7 [prim. 279/470])"
+  },
+  {
+   "page": 12,
+   "rreg": 199,
+   "kind": "FIX",
+   "haus": "43",
+   "owner": "Hansp[?] Gnoy",
+   "kl": [
+    "260",
+    "360"
+   ],
+   "verdict": "FIX 260->360 (prva = 3 [dve skodeli], ne 2)"
+  },
+  {
+   "page": 13,
+   "rreg": 207,
+   "kind": "FIX",
+   "haus": "63",
+   "owner": "Kovick Mihel",
+   "kl": [
+    "404",
+    "401"
+   ],
+   "verdict": "FIX 404->401 (zadnja = 1 [zastavica+vertikala], ne 4)"
+  },
+  {
+   "page": 13,
+   "rreg": 211,
+   "kind": "FIX",
+   "haus": "36",
+   "owner": "Lendandl Matjai",
+   "kl": [
+    "275",
+    "215"
+   ],
+   "verdict": "FIX 275->215 (srednja = 1 [zastavica], ne 7)"
+  },
+  {
+   "page": 13,
+   "rreg": 220,
+   "kind": "FIX",
+   "haus": "43",
+   "owner": "Brusla Mihlo",
+   "kl": [
+    "1005",
+    "405"
+   ],
+   "verdict": "FIX 1005->405 (tri stevilke 4-0-5 [h-oblika 4]; v82 je vpeljal vodilni 1 iz vratu 4)"
+  },
+  {
+   "page": 15,
+   "rreg": 246,
+   "kind": "FIX",
+   "haus": "34",
+   "owner": "Tillah Walfja",
+   "kl": [
+    "658",
+    "656"
+   ],
+   "verdict": "FIX 658->656 (zadnja = 6 [odprt top + zanka+vrat], ne 8; podstolpec \"1\" — F-PV-07)"
+  },
+  {
+   "page": 10,
+   "rreg": 161,
+   "kind": "DISPUTE",
+   "haus": "144",
+   "owner": "Rudolf Mihael",
+   "kl": [
+    "1038",
+    "1088[?]"
+   ],
+   "verdict": "DISPUTE 1038 vs 1088[?] (tretja stevilka 3/8 dvoumna pod rdecim udarcem) — odprto v123"
+  },
+  {
+   "page": 11,
+   "rreg": 166,
+   "kind": "DISPUTE",
+   "haus": "1",
+   "owner": "Barbara Muster",
+   "kl": [
+    "79",
+    "89/99[?]"
+   ],
+   "verdict": "DISPUTE 79 vs 89/99[?] (prva stevilka ima zanko — ni 7; 8 z odprto spodnjo zanko ali 9) — odprto v123"
+  },
+  {
+   "page": 11,
+   "rreg": 183,
+   "kind": "DISPUTE",
+   "haus": "39",
+   "owner": "Schimerz Georg",
+   "kl": [
+    "211",
+    "185 (udarjeno)"
+   ],
+   "verdict": "DISPUTE 211 vs 185 (olje udarjeno; 185 = register r21) — odprto v123"
+  },
+  {
+   "page": 11,
+   "rreg": 184,
+   "kind": "DISPUTE",
+   "haus": "43",
+   "owner": "Barbara Muster",
+   "kl": [
+    "185",
+    "prazna celica"
+   ],
+   "verdict": "DISPUTE 185 vs prazno (olja ni; 185 stoji v pasu r20) — odprto v123"
+  },
+  {
+   "page": 12,
+   "rreg": 203,
+   "kind": "DISPUTE",
+   "haus": "0",
+   "owner": "Gemeinde",
+   "kl": [
+    "82",
+    "53/426[?]"
+   ],
+   "verdict": "DISPUTE 82 vs 53/426[?] (eksponiranje dvoumno med trakom in zoomom) — odprto v123"
+  },
+  {
+   "page": 13,
+   "rreg": 223,
+   "kind": "DISPUTE",
+   "haus": "36",
+   "owner": "Lapshary Mihlo",
+   "kl": [
+    "112",
+    "182[?]"
+   ],
+   "verdict": "DISPUTE 112 vs 182[?] (srednja stevilka 1/8 dvoumna) — odprto v123"
+  },
+  {
+   "page": 14,
+   "rreg": 226,
+   "kind": "DISPUTE",
+   "haus": "43",
+   "owner": "Pavšič Janez",
+   "kl": [
+    "687",
+    "157/187[?]"
+   ],
+   "verdict": "DISPUTE 687 vs 157/187[?] (prva stevilka 1/6 dvoumna) — odprto v123"
+  },
+  {
+   "page": 7,
+   "rreg": 82,
+   "kind": "PAGE_OBS",
+   "note": "F-V123-01"
+  },
+  {
+   "page": 7,
+   "rreg": 87,
+   "kind": "DISPUTE",
+   "haus": "65",
+   "kl": [
+    "19",
+    "49"
+   ],
+   "verdict": "F-V123-01"
+  },
+  {
+   "page": 7,
+   "rreg": 90,
+   "kind": "DISPUTE",
+   "haus": "45",
+   "kl": [
+    "103",
+    "138"
+   ],
+   "verdict": "F-V123-01"
+  },
+  {
+   "page": 7,
+   "rreg": 91,
+   "kind": "DISPUTE",
+   "haus": "50",
+   "kl": [
+    "36",
+    "56"
+   ],
+   "verdict": "F-V123-01"
+  },
+  {
+   "page": 7,
+   "rreg": 95,
+   "kind": "DISPUTE",
+   "haus": "80",
+   "kl": [
+    "224",
+    "321?"
+   ],
+   "verdict": "F-V123-01"
+  },
+  {
+   "page": 7,
+   "rreg": 97,
+   "kind": "DISPUTE",
+   "haus": "45",
+   "kl": [
+    "945",
+    "262"
+   ],
+   "verdict": "F-V123-01"
+  },
+  {
+   "page": 7,
+   "rreg": 98,
+   "kind": "DISPUTE",
+   "haus": "47",
+   "kl": [
+    "297",
+    "397"
+   ],
+   "verdict": "F-V123-01"
+  },
+  {
+   "page": 4,
+   "rreg": 21,
+   "kind": "PAGE_OBS",
+   "note": "r5: kapitalni niz \"845\" v E. coni — neražčlenjen; r13: kapitalni niz \"234\" v E. "
+  },
+  {
+   "page": 6,
+   "rreg": 61,
+   "kind": "PAGE_OBS",
+   "note": "r11: kapitalni niz \"1-104\"; Fürtrag \"4|88\" prečrtan rdeče -> rdeče \"2|585\""
+  },
+  {
+   "page": 7,
+   "rreg": 82,
+   "kind": "PAGE_OBS",
+   "note": "b4: kapitalni niz \"1-381\"; b20: podstolpec \"7\" + olje \"373\" (udarjeno) + \"1|1147"
+  },
+  {
+   "page": 8,
+   "rreg": 103,
+   "kind": "PAGE_OBS",
+   "note": "r19: kapitalni niz \"2|659\" v E. coni; Eintrag/Fürtrag \"3|1941\" -> \"1|454\" -> 682"
+  },
+  {
+   "page": 9,
+   "rreg": 123,
+   "kind": "PAGE_OBS",
+   "note": "r5: kapitalni niz \"1-477\"; Fürtrag \"6|471\" prečrtan rdeče"
+  },
+  {
+   "page": 10,
+   "rreg": 143,
+   "kind": "PAGE_OBS",
+   "note": "r2: kapitalni niz \"135\"; r15: kapitalni niz \"511\"; r19: svinenik \"3|49½\" (refine"
+  },
+  {
+   "page": 11,
+   "rreg": 163,
+   "kind": "PAGE_OBS",
+   "note": "glava: \"44\" (kl cona) + \"105\" (E. cona) nad r0 — sympagmaticno; r20: svinenik \"2"
+  },
+  {
+   "page": 12,
+   "rreg": 186,
+   "kind": "PAGE_OBS",
+   "note": "r9: kapitalni niz \"1209\" v E. coni; r16: \"—\" + \"20\" v E. coni; Fürtrag \"4|296[?]"
+  },
+  {
+   "page": 13,
+   "rreg": 206,
+   "kind": "PAGE_OBS",
+   "note": "r14: kapitalni niz \"1093\" v E. coni; Fürtrag \"4|451\" prečrtan rdeče"
+  },
+  {
+   "page": 14,
+   "rreg": 226,
+   "kind": "PAGE_OBS",
+   "note": "r2: kapitalni niz \"135\" v E. coni; r15: kapitalni niz \"511[?]\" v E. coni; Fürtra"
+  },
+  {
+   "page": 15,
+   "rreg": 246,
+   "kind": "PAGE_OBS",
+   "note": "r16: kapitalni niz \"906\" v E. coni; r18: \"— 65\" + \"546\" v E./K. conah; Fürtrag \""
+  },
+  {
+   "page": 16,
+   "rreg": 266,
+   "kind": "PAGE_OBS",
+   "note": "r18: kapitalni niz \"748\" v E. coni; Fürtrag \"5|811\" prečrtan rdeče; r11: podstol"
+  }
+ ],
+ "count_fix": 27,
+ "count_dispute": 13,
+ "count_page_obs": 13
+}

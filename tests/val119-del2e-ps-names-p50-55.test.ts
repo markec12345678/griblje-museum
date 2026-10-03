@@ -262,10 +262,10 @@ describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", 
 });
 
 describe("val 119 del 2e — kaskada (izrecna)", () => {
-  test("KG sha 8345868a: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^8345868a/);
+  test("KG sha fc23ab10: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^fc23ab10/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^8345868a/,
+      /^fc23ab10/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];

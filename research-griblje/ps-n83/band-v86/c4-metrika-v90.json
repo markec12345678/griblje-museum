@@ -4,7 +4,7 @@
   "generated_by": "build-c4-metrika-v90.py",
   "method": "C4 metrika: izčrpna deterministična preverba konvencij na sidrih val 61 (K1–K6) + reprodukcija C4 val 86b (K7) + usklajenost vnosov (K8) + konfunda F-PV-05 (K9) + opazovalni register (K10); NIČ VLM, NIČ spleta; NIČ sprememb podatkov (§4/§22)",
   "inputs": {
-   "register.json": "136ef101ac33445dc384e8b22ba3505aa90d474334d10a6f93795484a202ef73",
+   "register.json": "2996697550c20bd6c1311d8c4b0250004cc5daed72c57f4f5c1c935e8bac996b",
    "totals-reread.json": "5866a457d2cd102267bcf37f3cf8b87d19fcb58aa5aa2f035f41f9b828fe31aa",
    "f11-fuertrag-v86.json": "af3375298e2ea41fa65992f3d125812a7fa5bfaf56f4ec8b1ff85ec3357dc702"
   },
@@ -87,9 +87,9 @@
    "crossed": true,
    "red_line": "2|1551",
    "rows": 20,
-   "K1_page_sum_excl": 6981,
+   "K1_page_sum_excl": 7002,
    "K1_match": false,
-   "K2_page_sum_incl": 6981,
+   "K2_page_sum_incl": 7002,
    "K2_match": false,
    "K3_segment_hits": [],
    "K3_n_hits": 0,
@@ -99,11 +99,11 @@
    "K5_n_hits": 0,
    "K6_red": {
     "red_qkl": 4751,
-    "page_sum_excl": 6981,
-    "page_sum_incl": 6981,
+    "page_sum_excl": 7002,
+    "page_sum_incl": 7002,
     "match_excl": false,
     "match_incl": false,
-    "diff_excl": 2230
+    "diff_excl": 2251
    },
    "K6_match": false,
    "agent_notes": "števec 10 potrjen; vrednost 4|7986 dobesedno (ANOMALIJA: QKl 7986 > 1599 edina v verigi; zadnja štefka negotova, alt '4|798'); rdeča 2|1551"
