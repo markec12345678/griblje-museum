@@ -5031,3 +5031,27 @@ Stage Summary:
 - Vrednostna plast PS: 89 kl + 6 jae popravkov + 5 potrditev + 4 ohranitve; F-OCI-05 ZAPRT (protokol 144); 26 NOVA napak
 - K9 p1–55: 56/959/84; KG b3e9797e (vsebinsko identična); TRANSCRIBED=0
 - Naslednje: hiša 70–78 (PROVISIONAL h72/74/76) → p3–p16 vrednostni sweep (nizka prioriteta) → register 26-0326/26-0379 ob javnih poročilih → črkovalna sodba imen (NR-14)
+
+---
+Task ID: 122-cascade
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 122 publikacijska kaskada (PR #133) — hiša 70–78: ločena odločitev
+
+Work Log:
+- Kontekst rekonstruiran iz git log + worklog (prehodni povzetek zastarel — ustavljen na val 119 del 2d; dejansko stanje main @ 9f0a2ed = val 121 zaključen)
+- Zgradba build-houses-v122.py (fail-fast + idempotentno): varovalke izhodišča (167, točne vrstice h72/74/76, 0 vrstic kvalitetne plasti p3–p55, 13 pre-obstoječih podvojenih H-1-* ID parov kot številčna varovalka, parcelne posledice h74=2/h72,h76=0 F-PV-05)
+- Vgradnja: house-register 167→169 (H-074 NOV, H-076 NOV, H-072 owners.ps layer=PROVISIONAL, H-070/H-071 ps_absence NEGATIVE-DECISIVE + zamenjane zastarele opombe); NR-05 val122_decision (add-only, val89_recheck ohranjen)
+- KG v2.5: meta + KG-F14 + izboljšano sporočilo OWNER join miss vrzeli (F-SYNC-04 kontekst namesto F16 drift); rebuild: 3764/3473, HOUSE 169, HAS_PARCEL 2775, vrzeli 11 (tiha vrzel builderja odpravljena); sha med sejo fe7b271c → 8345868a po premiku ps_distinct na shemo H-080 (pred committom)
+- Kaskada: story 3764/3473/4 → timeline 8 (I1 441 ✓ I2 0,086 % ✓ I6 ✓) → coverage PASS 8 (hiše 169 = 16 VER / 47 PART / 33 CONF / 73 UNK; §24 14/14) → runtime src/data sinhronizirana
+- c4 kontrola: K9 p1–55 56/959/84 nespremenjen (register ni bil dotaknjen)
+- Testi: 55 failov po vgradnji (pričakovani zastareli pini) → izrecen prehod v 24 testnih datotekah + 1 tsc popravek (ps_absence/owners.ps kastiranje) + 2 api-smoke pina (HOUSE/coverage — dimni testi ne tečejo pod bun test tests/); 2 napačna preklopa regexa (val116 PZ 45 glasov, val114 167 moves, PUA VERIFIED 45) zaznana in povrnjena; 1329 testov: 1318 pass / 11 skip / 0 fail; tsc + lint čisti
+- Docs: protokol 145 + KAZALO 145 (+ nazaj dopolnjena manjkajoča 143/144) + README 182. sklop
+- PUSH cd31211 → PR #133; CI 1. tek: FAILURE tsc (TS2339 ps_absence) → ab2d127; CI 2. tek: FAILURE dimni testi (api-smoke zastareli pini 167) → c585c47; CI 3. tek: 3/3 ZELENO
+- MERGE @ 6e3a444d → remote veja izbrisana (204) → lokalna izbrisana → main sinhroniziran; delovno drevo čisto
+
+Stage Summary:
+- Val 122 MERGAN; main @ 6e3a444d; PR #133; CI 3/3 zeleno (2 popravka: tsc tipi + api-smoke pini)
+- Hiša 70–78 ODLOČITEV IZVEDENA: house-register 167→169; NR-05 zaprt (negativ odločilen za 6, dokumentirani PROVISIONAL 3); KG v2.5 8345868a (vsebinska sprememba: +2 HOUSE, +2 HAS_PARCEL, +3 vrzeli, KG-F14)
+- Osebna plast NESPREMENJENA (F-SYNC-04); kvalitetna plast p3–p55 NEDOTAKNJENA; K9 56/959/84
+- F-H122-01 DOCUMENTED: 13 podvojenih H-1-* ID parov — disambiguacija čaka lasten val
+- Naslednje: p3–p16 vrednostni sweep (nizka prioriteta) → register 26-0326/26-0379 ob javnih poročilih → NR-14 črkovalna sodba + p56–143 osebni re-read → F-H122-01
