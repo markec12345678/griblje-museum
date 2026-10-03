@@ -258,12 +258,12 @@ describe("val 82 — PS N83 transkripcija DOKONČANA (p56–143, analysis-v3)", 
     expect(patched.map((r) => r.haus_no).sort()).toEqual(["38", "39", "45"]);
   });
 
-  it("varovalka: p56–143 = 1.755 vrstic v86-colonial-tiles (val 86 + 98 + 107 2. prehod) + 43 v82-native-pass1 (PROVISIONAL)", () => {
+  it("varovalka: p56–143 = 1.797 vrstic — v86 1.675 + v82-native 3 + v127-ps-reread 119 (val 127: p56–61 osebni re-read)", () => {
     const fresh = psRegister.filter((r) => r.page > 55);
-    expect(fresh.length).toBe(1798);
+    expect(fresh.length).toBe(1797); // val 127: p59 fantom odstranjen
     const v86 = fresh.filter((r) => r.reading_pass === "v86-colonial-tiles");
     const v82 = fresh.filter((r) => r.reading_pass === "v82-native-pass1");
-    expect(v86.length).toBe(1795); // p56–142 (kolonski tile-i, 4/4 pasovi; val 86: 808 + val 98: 301 + val 107: 646 + val 116: 40 p142)
+    expect(v86.length).toBe(1675); // val 127: p56–61 (120 starih v86 vrstic: 119 + 1 p59 fantom) prešteté na v127-ps-reread; v86 ostane p62–142
     expect(v82.length).toBe(3); // p143 (rdeči povzetek) — val 116: p142 prešlo v v86
     expect(v86.every((r) => r.page >= 56 && r.page <= 142)).toBe(true);
     expect(analysisV3.method.reading_honesty).toContain("PROVISIONAL");

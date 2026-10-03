@@ -60,10 +60,10 @@ const changes = JSON.parse(
 const byPage = (p: number) => reg.filter((r) => r.page === p);
 
 describe("val 112 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (val 115: +4 vstavljene), 139 v88, 1795 v86-colonial-tiles — nedotaknjeno (val 116: p142 +40)", () => {
-    expect(reg.length).toBe(2876);
-    expect(reg.filter((r) => (r as { v88_status?: string }).v88_status !== undefined || (r as { jk_review?: string }).jk_review === "v88-digit-split-UNRESOLVED").length).toBe(139);
-    expect(reg.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
+  test("register: 2875 vrstic (val 127: p59 fantom −1), 138 v88, 1675 v86-colonial-tiles (val 127: p56–61 → v127-ps-reread)", () => {
+    expect(reg.length).toBe(2875);
+    expect(reg.filter((r) => (r as { v88_status?: string }).v88_status !== undefined || (r as { jk_review?: string }).jk_review === "v88-digit-split-UNRESOLVED").length).toBe(138); // val 127: 139 − 1 (p59 Stiftung fragment)
+    expect(reg.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1675); // val 116: 1795 → val 127: −120 (p56–61 → v127-ps-reread)
   });
 
   test("changes audit: val 112, 270 sprememb, tally ujemajo", () => {

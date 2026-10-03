@@ -141,12 +141,12 @@ describe("val 88 — množice in tally (139 = 139 = 139)", () => {
 });
 
 describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + oznake)", () => {
-  test("register 2.876 vrstic (val 115: +4 vstavljene); točno 139 z v88 polji", () => {
-    expect(register).toHaveLength(2876);
+  test("register 2.875 vrstic (val 127: p59 fantom −1); 138 z v88 polji (136 + 2)", () => {
+    expect(register).toHaveLength(2875); // val 127: 2876 − 1 (p59 fantom)
     const v88rows = register.filter(
       (r) => r["v88_status"] !== undefined || r["jaethe_v88"] !== undefined || r["klafter_v88"] !== undefined || String(r["jk_review"] ?? "").startsWith("v88")
     );
-    expect(v88rows).toHaveLength(139);
+    expect(v88rows).toHaveLength(138); // val 127: 139 − 1 (p59 Stiftung fragment z v88 poljem odstranjen; 2. fragment je bil explicit-jk-kept)
   });
 
   test("vsak resolved: register = new (changes), status ujema, snimki pass1 ohranjeni", () => {
@@ -158,8 +158,28 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
       const g = gi115(gi);
       return g >= 93 ? g + 1 : g; // val 124: +1 vstavljena vrstica pri 93 (p7 Nro 92 — F-V123-01 dvojni anchor)
     };
+    // val 127: p59 fantom (val 126 indeks 1157 = Stiftung fragment 'Hudales Matija') odstranjen
+    // → vsi indeksi ≥ 1158 se premaknejo za −1
+    const gi127 = (g: number): number => (g >= 1158 ? g - 1 : g);
     for (const c of changes.changes) {
-      const r = register[gi124(c.global_idx)];
+      const g127 = gi127(gi124(c.global_idx));
+      if (g127 === 1157) {
+        // val 127: ta v88 cilj (p59 Stiftung fragment, v88-era gi 1152) je odstranjen iz registra;
+        // vsebina dokumentirana v page_observations_v127 (p59); sodba ostaja v changes auditu
+        expect(c.type).toBe("v88_resolution");
+        continue;
+      }
+      const r = register[g127];
+      if (r.reading_pass === "v127-ps-reread") {
+        // val 127: p56–61 osebni re-read — vrednostna plast preštetá (dvojni sidro kstack);
+        // v88 sodba ostaja v adjudication, glasovi v *_v88, pass1 snimki nedotaknjeni
+        expect(String(r.jaethe_v88), `gi${c.global_idx} jv88 ohranjen`).toBe(String(c.new!.jaethe));
+        expect(String(r.klafter_v88), `gi${c.global_idx} kv88 ohranjen`).toBe(String(c.new!.klafter));
+        expect(String(r.jaethe_pass1_v82), `gi${c.global_idx} p1 snimka`).toBe(String(c.old!.jaethe));
+        expect(String(r.klafter_pass1_v82), `gi${c.global_idx} k snimka`).toBe(String(c.old!.klafter));
+        expect(String(r.v88_status), `gi${c.global_idx} status`).toBe(c.status!);
+        continue;
+      }
       if (c.type === "v88_resolution") {
         expect(String(r.jaethe), `gi${c.global_idx} jaethe`).toBe(String(c.new!.jaethe));
         expect(String(r.klafter), `gi${c.global_idx} klafter`).toBe(String(c.new!.klafter));
@@ -181,9 +201,19 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
       const g = gi115(gi);
       return g >= 93 ? g + 1 : g; // val 124: +1 vstavljena vrstica pri 93 (p7 Nro 92 — F-V123-01 dvojni anchor)
     }; // val 115 vstavitve
+    const gi127 = (g: number): number => (g >= 1158 ? g - 1 : g); // val 127: p59 fantom (−1)
     for (const a of adjudication.adjudications) {
       if (a.status === "U") continue;
-      const r = register[gi124(a.global_idx)];
+      const g127 = gi127(gi124(a.global_idx));
+      if (g127 === 1157) continue; // val 127: p59 Stiftung fragment (v88-era gi 1152) odstranjen — page_observations_v127
+      const r = register[g127];
+      if (r.reading_pass === "v127-ps-reread") {
+        // val 127: vrednostna plast preštetá — v88 glasovi ostajajo v *_v88 poljih (nič tihega)
+        const [ej, ek] = a.v88!.includes("|") ? a.v88!.split("|") : ["", a.v88 as string];
+        expect(String(r.jaethe_v88), `gi${a.global_idx} jv88`).toBe(ej);
+        expect(String(r.klafter_v88), `gi${a.global_idx} kv88`).toBe(ek);
+        continue;
+      }
       if (a.v88!.includes("|")) {
         const [j, k] = a.v88!.split("|");
         expect(String(r.jaethe), `gi${a.global_idx}`).toBe(j);
@@ -204,10 +234,11 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
       const g = gi115(gi);
       return g >= 93 ? g + 1 : g; // val 124: +1 vstavljena vrstica pri 93 (p7 Nro 92 — F-V123-01 dvojni anchor)
     }; // val 115 vstavitve
+    const gi127 = (g: number): number => (g >= 1158 ? g - 1 : g); // val 127: p59 fantom (−1)
     const us = adjudication.adjudications.filter((a) => a.status === "U");
     expect(us.map((a) => a.global_idx).sort()).toEqual([1226, 2384]);
     for (const a of us) {
-      const r = register[gi124(a.global_idx)];
+      const r = register[gi127(gi124(a.global_idx))];
       expect(String(r.jaethe), `gi${a.global_idx}`).toBe(String(r.jaethe_pass1_v82));
       expect(String(r.klafter), `gi${a.global_idx}`).toBe(String(r.klafter_pass1_v82));
       expect(String(r.v88_note)).toContain("nejasen");
@@ -222,7 +253,7 @@ describe("val 88 — vgradnja v register.json (precedens val 61/86: snimke + ozn
       const m = String(r.jk_review ?? "");
       if (m.startsWith("v88")) cnt.set(m, (cnt.get(m) ?? 0) + 1);
     }
-    expect(cnt.get("v88-digit-split-RESOLVED")).toBe(137);
+    expect(cnt.get("v88-digit-split-RESOLVED")).toBe(136); // val 127: −1 (p59 Stiftung fragment odstranjen)
     expect(cnt.get("v88-digit-split-UNRESOLVED")).toBe(2);
     // val 98 (86b del 2): 7 novih part-2 digit-split markerjev (p95–109, čaka re-read vzorec val 88);
     // vseh 139 part-1 markerjev je še vedno promoviranih

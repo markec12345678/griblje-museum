@@ -25,7 +25,7 @@ function rowsOn(page: number): Reg {
 
 describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 nadgrajeni v del 2d-x3, protokol 140)", () => {
   test("register: 2875 vrstic; changes 71 = 47 owner + 3 haus + 18 anmerkung + 3 page_obs", () => {
-    expect(REG.length).toBe(2876);
+    expect(REG.length).toBe(2875); // val 127: p59 fantom −1
     expect(CH.val).toBe("119-del2d");
     expect(CH.stats.owner_fixes).toBe(47);
     expect(CH.stats.haus_fixes).toBe(3);
@@ -36,13 +36,13 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
     expect(CH.changes.length).toBe(71);
   });
 
-  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0; v86 1795; ditto 208", () => {
+  test("reading_pass plasti: v119-names 731 (609 + 122 po del 2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0; v86 1675 (val 127: p56–61 → v127-ps-reread); ditto 208", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
     expect(n("v119-names")).toBe(731); // 545 + 2d-x3 (64) + 2e (p50-p55 = 122)
     expect(n("v114-ps-reread")).toBe(0); // 184 − 64 (2d-x3) − 122 (2e: p50-p55 = zadnje v114 vrstice)
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(0); // p49-r2 F2 fill -> v119-names (del 2d-x3)
-    expect(n("v86-colonial-tiles")).toBe(1795);
+    expect(n("v86-colonial-tiles")).toBe(1675); // val 127: 1795 − 120
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
   });
 
@@ -109,7 +109,7 @@ describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
 
   test("pass3: PS vir nespremenjen; K5 dito 208; K9 69 nespremenjen", () => {
     const parcels = REG.filter((r) => f(r, "source") === "SI AS 176/N/N83/s/PS");
-    expect(parcels.length).toBe(2876); // celoten register = PS vir (392 parcel + rabovna plast)
+    expect(parcels.length).toBe(2875); // celoten register = PS vir (392 parcel + rabovna plast); val 127: −1 fantom
     const metrika = readJSON(
       "research-griblje/ps-n83/band-v86/c4-metrika-v90.json",
     ) as { k5_ditto?: number; k9?: number };

@@ -58,7 +58,7 @@ describe("val 122 — hiša 70–78: ločena odločitev (uveljavitev)", () => {
         r.reading_pass in Object.fromEntries([...QUALITY_PASSES].map((p) => [p, 1])),
     );
     expect(hits.length).toBe(0);
-    expect(PS_REG.length).toBe(2876); // val 121 stanje — register NI bil dotaknjen
+    expect(PS_REG.length).toBe(2875); // val 127: p59 fantom −1 (hiše 70–78 = p3–p55, neupliv)
   });
 
   it("H-070/H-071: ps_absence NEGATIVE-DECISIVE (0 vrstic čez 2.875); ps ostaja null", () => {

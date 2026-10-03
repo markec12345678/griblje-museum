@@ -79,7 +79,7 @@ describe("val 90 — meta + disciplina §4", () => {
   test("K5 izrecno označen kot NEDEDOKAZLJIVO (dito 208/2.876 = 7,2 %; bloki ~1,1 vrstic; val 115: +4 vstavljene vrstice)", () => {
     expect(art.meta.K5_input_reliability).toContain("NEZANESLJIV VHOD");
     expect(art.meta.K5_input_reliability).toContain("NEDEDOKAZLJIVO");
-    expect(art.meta.K5_input_reliability).toContain("208/2876");
+    expect(art.meta.K5_input_reliability).toContain("208/2875"); // val 127: 2876 − 1 (p59 fantom)
   });
 });
 
@@ -160,17 +160,17 @@ describe("val 90 — reprodukcija in usklajenost (K7, K8)", () => {
 describe("val 90 — konfunda F-PV-05 (K9) + opazovalni register (K10)", () => {
   test("K9 pin: atribucija 100–1599 v jaethe = 323 → 53 (p1–55; val 112: F-PV-07 premestitve + vrednostni popravki; val 119 del 2d-x3: p48 F-NA-02 rebuild; del 2e: nestanjeno) / 49 (p56–143; val 90: 242 → val 98: 214 → val 107: 120 → val 108: 49, mehanski premik z F-PV-05 korekcijami in re-readom — vzorec val 88 §4) — vsotno NEUTRALNA", () => {
     expect(art["K9_konfunda_F-PV-05"].p1_55_val57["jaethe_plain_100_1599"]).toBe(52); // val 108: 323 → 114: 69 → 2d-x3: 53 → 2e: 53 → val 121: 52 (p21 r10 kl 457 set, p51 r2 288 …)
-    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(49);
+    expect(art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji["jaethe_plain_100_1599"]).toBe(48); // val 127: 49 − 1 (p59 fantom nosil jae 100–1599)
   });
 
   test("K9 pin: vsotno-relevantni razredi majhni (gt1599 25/60; jk_format 0/6 — val 112 normalizacija)", () => {
     const p1 = art["K9_konfunda_F-PV-05"].p1_55_val57;
     const p2 = art["K9_konfunda_F-PV-05"].p56_143_v82_plus_sloji;
     expect((p1["jaethe_plain_gt1599"] ?? 0) + (p1["klafter_plain_gt1599"] ?? 0)).toBe(10); // val 108: 29 → 112: 25 → 114: 16 → 2d-x3: 15 → val 121: 10 (velike napacne vrednosti popravljene: 2245→245, 9116→474, 1874→1313 …; NOVE gt1599: 7144, 1977, 1487, 1445)
-    expect((p2["jaethe_plain_gt1599"] ?? 0) + (p2["klafter_plain_gt1599"] ?? 0)).toBe(60); // val 98: 69 → val 107: 70 → val 108: 60 → val 114: 60 (p56–143 nedotaknjeno)
+    expect((p2["jaethe_plain_gt1599"] ?? 0) + (p2["klafter_plain_gt1599"] ?? 0)).toBe(57); // val 108: 60 → val 127: −3 (p59 fantom + 2 prečrtane kl v j|k format)
     // val 112: edini j|k-format na p1–55 ('10.92', p10 r0) normaliziran na 1092 → razred izgine (0)
     expect(p1["any_jk_format"] ?? 0).toBe(0); // val 108: 1 → val 112: 0
-    expect(p2["any_jk_format"]).toBe(6); // val 108 re-read razrešil jk formate
+    expect(p2["any_jk_format"]).toBe(14); // val 108: 6 → val 127: +8 (kl artefakti ±znakov = Joche 1, zdaj j|k format val 88)
   });
 
   test("K10: anchor 3998 (2|798) na dveh straneh [11, 35]; p56 glas p1 == p5 anchor", () => {

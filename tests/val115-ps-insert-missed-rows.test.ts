@@ -61,12 +61,12 @@ const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("
 const ATLAS = join(ROOT, "research-griblje", "atlas-1825");
 
 describe("val 115 — gardele in infrastruktura", () => {
-  test("register: 2875 vrstic (2871 + 4 vstavljene); stare plasti nedotaknjene (139 v88, 1795 v86 po val 116: 1755 + 40 p142, 252 v112 (val 125: −12 p7), 80 v113 + 122 v114 po val 119 del 2d-x3 (p47–p49 -> v119-names); v115 0 — p49 r2 F2 fill prebrana v del 2d-x3)", () => {
-    expect(REG.length).toBe(2876);
+  test("register: 2875 vrstic (val 127: p59 fantom −1); stare plasti (138 v88, 1675 v86 — val 127: p56–61 → v127-ps-reread, 252 v112, 0 v113, 0 v114)", () => {
+    expect(REG.length).toBe(2875);
     expect(REG.filter((r) => f(r, "reading_pass") === "v115-insert").length).toBe(0); // val 119 del 2d-x3: p49 r2 (zadnja v115) F2 fill 'Heide Marko.' h3 -> v119-names
     const v88 = REG.filter((r) => "v88_status" in r || r["jk_review"] === "v88-digit-split-UNRESOLVED");
-    expect(v88.length).toBe(139);
-    expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1795); // val 116: 1755 + 40 (p142)
+    expect(v88.length).toBe(138); // val 127: 139 − 1 (p59 Stiftung fragment)
+    expect(REG.filter((r) => f(r, "reading_pass") === "v86-colonial-tiles").length).toBe(1675); // val 116: 1795 → val 127: −120 (p56–61 → v127-ps-reread)
     expect(REG.filter((r) => f(r, "reading_pass") === "v112-ps-reread").length).toBe(252); // val 125: 264 − 12 p7
     expect(REG.filter((r) => f(r, "reading_pass") === "v113-ps-reread").length).toBe(0);
     expect(REG.filter((r) => f(r, "reading_pass") === "v114-ps-reread").length).toBe(0); // val 119 del 2e: p50-p55 = zadnjih 122

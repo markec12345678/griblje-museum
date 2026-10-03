@@ -24,8 +24,8 @@ function rowsOn(page: number): Reg {
 }
 
 describe("val 119 del 2b — gardele vhodov", () => {
-  test("register: 2875 vrstic; changes 141 = 107 owner + 19 haus + 2 anmerkung + 7 ditto + 6 page_obs", () => {
-    expect(REG.length).toBe(2876);
+  test("register: 2875 vrstic (val 127: p59 fantom −1); changes 141 = 107 owner + 19 haus + 2 anmerkung + 7 ditto + 6 page_obs", () => {
+    expect(REG.length).toBe(2875);
     expect(CH.val).toBe("119-del2b");
     expect(CH.stats.owner_fixes).toBe(107);
     expect(CH.stats.haus_fixes).toBe(19);
@@ -37,13 +37,13 @@ describe("val 119 del 2b — gardele vhodov", () => {
     expect(CH.changes.length).toBe(141);
   });
 
-  test("reading_pass plasti: v119-names 731 (po del 2d-x2+2d-x3+2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0 (p49 r2 F2 fill @2d-x3); v86 1795; ditto 208", () => {
+  test("reading_pass plasti: v119-names 731 (po del 2d-x2+2d-x3+2e); v114 0 (PS p25-p55 pokrite @2e); v118 60; v115 0 (p49 r2 F2 fill @2d-x3); v86 1675 (val 127: p56–61 → v127-ps-reread); ditto 208", () => {
     const n = (p: string) => REG.filter((r) => r.reading_pass === p).length;
     expect(n("v119-names")).toBe(731);
     expect(n("v114-ps-reread")).toBe(0);
     expect(n("v118-names")).toBe(60);
     expect(n("v115-insert")).toBe(0);
-    expect(n("v86-colonial-tiles")).toBe(1795);
+    expect(n("v86-colonial-tiles")).toBe(1675); // val 127: 1795 − 120
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
   });
 
@@ -352,7 +352,7 @@ describe("val 119 del 2b — kaskada (izrecna)", () => {
     const c4 = readJSON(
       "research-griblje/ps-n83/band-v86/c4-metrika-v90.json",
     ) as { meta: Record<string, unknown> };
-    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876");
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2875"); // val 127: 2876 − 1 (p59 fantom)
     expect(String(c4.meta.K5_input_reliability)).not.toContain("215/2875");
     const timeline = readJSON(
       "research-griblje/atlas-1825/timeline-1825-1830.json",

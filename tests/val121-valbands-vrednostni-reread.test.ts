@@ -48,7 +48,7 @@ describe("val 121 — pasovni vrednostni re-read (F-OCI-05 zaprtje)", () => {
   });
 
   it("register: 2875 vrstic; plasti nespremenjene; v121 sledi v anmerkung", () => {
-    expect(REG.length).toBe(2876);
+    expect(REG.length).toBe(2875); // val 127: p59 fantom −1
     expect(REG.filter((r) => r.reading_pass === "v119-names").length).toBe(731);
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
     const v121 = REG.filter((r) => (r.anmerkung || "").includes("v121"));

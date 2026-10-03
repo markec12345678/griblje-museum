@@ -5146,3 +5146,26 @@ Stage Summary:
 - NR-14 črkovalna sodba ZAPRTA za p7 (karta V1–V6 + 4 zavrnjene, flag-only, 0 mergeov); F-V125-01 ZAPRT (osebna plast 982 = 98 PUA + 657 PS v125 + 227 PT; H-035 dokaz); KG vsebinsko SPREMENJEN prvič od val 122 (sha 1e49de43); razredi metode B nespremenjeni (kontinuiteta)
 - Merjeno: 0 variantnih grup v register (forme kanonizirane) — karta = pravilna baza p56–143 re-read serije; RG-009/010/011 ostajajo OPEN do p65/69/115/122 re-reada (F-SYNC-04)
 - Naslednje: p56–143 osebni re-read serija val 127+ (6 strani/val, dvojni sidr po vzorcu val 119 del 2; p65 → RG-009/010, p115 → RG-011) → kultur re-sidro p7 → register 26-0326/26-0379 → F-H122-01
+
+---
+Task ID: 127-cascade
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 127: p56–61 osebni re-read (NR-14 okvir, dvojni sidro) + publikacijska kaskada; uporabnik: "nadaljuj kjer si ostal"
+
+Work Log:
+- Kontekst rekonstruiran iz git + disk: prišli povzetek je bil zastarel (trdil "p56–p59 seg0 prebrano"); disk pokazal celotno branje p56–61 ŽE IZVEDENO (protokol + apply-val127-reread.py + register 2875 + c4/f11 re-run) — nadaljevanje = verifikacija, popravki in kaskada objave
+- POMENBEN POPRAVEK #1 (format): apply skripta je vrednosti z Joche 1 zapisala s presledkom ('1 944') — graditelja c4/f11 sta jih razčlenila kot concat števk (1944 namesto 1·1600+944 = 2544); preklop na j|k format val 88 ('1|944'): 9 vrednosti (p56 1|1348, p58 1|56/1|944/1|174/1|1075, p59 1|1246/1|690, p60 1|44/1|160); re-apply iz čistega HEAD stanja (reproduciirljivo, diff = točno 9 vrstic); f11 p58 QKL 8918→15318 (+4×1600) aritmetično preverjeno
+- POMENBEN POPRAVEK #2 (preslikava p59): posebni primer v apply skripti je preglasil snap_src snimke z scaffold vrednostmi (newvals ov≠nv logika); fizična P1140 = stari r18 (kl 261) → novi r19 (260, snimki pravilno: 'Pavlič Miha'/'261'); Stabler Marlfa? (P1139) = VSTAVLJENA vrstica (old_i −1, čist scaffolding brez pre polj in markerjev — precedens v115 inserts); stari r19/r20 (Stiftung fragmenta) brez vrstičnih snimk — vsebina v page_observations_v127
+- BUILD-ANALYSIS gardi: v5 guard sprejme v127-ps-reread (merjenja iz surovin); v6 pokritost izključi V127_PAGES {56..61}; analysis-v5/v6 byte-identna re-runa
+- Prehod pinov (54 fail → 0): 2876→2875 (val 82/85/86/88/111–125 gardele), v86 1795→1675 (−120: p56–61 → v127-ps-reread), v88 139→138/137→136 (p59 Stiftung fragment z v88 poljem odstranjen), kultur_tile 1436→1435, corrected 727→629 (−98), K5 208/2876→208/2875 + bloki 2607→2606, K9 p56–143 49→48/60→57/6→14 (j|k), val88 gi127 preslikava (p59 fantom −1 od indeksa 1158; gi 1152 = odstranjen cilj, page_observations_v127), negativni varoval del2c obrnjen (not 208/2876)
+- NOVI tests/val127-p56-61-osebni-reread.test.ts (26 varovalk): struktura (p59 20 vrstic + Stabler insert + p61 združitev/vstavitve), dvojni sidro točno (p56 1491/568/94/154/842/554, p57 232/320, p58 577/549, p59 469/982, p60 1|160/444/130/61, p61 226/311/67/51/35/329/748/1450), kl artefakti + snimke ('+56'→'1|56' ...), imenske družine (Mainig Jattla ×4 h18, Strauß Grogy, Stabler ×3, Wobathan? Mauds? h47, Gwindler ×3, flag-only [?] razen Gemeind ×2), wohnort 'Gruble [?]', kultur NIKOLI prepisan (0 kultur_pre), v88 prekrivanje (4 preštete + 8 identičnih + UNRESOLVED [63,121]), kaskada (c4 sha/K5/K9, f11 p58 15318, KG 3765 + runtime sha, osebna plast 982 zaščitena)
+- OŠTEVILČENJE: protokol 149 je bil že val 126 → preimenovan v research-griblje/150-val127-p56-61-osebni-reread.md (+ referenčni popravki v skripti/testu)
+- Docs: protokol 150 (+ j|k format + p59 preslikava popravek zapisana) + KAZALO 150 + README 187. sklop
+- Testi: 1425 testov: 1414 pass / 11 skip / 0 fail (2× zapored čisto); lint + tsc čisti
+- Kaskada objave: commit → PUSH (token) → PR → CI → merge → veje očiščene → worklog
+
+Stage Summary:
+- Val 127 = PRVI val serije p56–143 osebnega re-reada (NR-14 okvir): 119 vrstic v127-ps-reread, register 2875, 0 VLM
+- Struktura p59/p61 razrešena (fantom + 2 manjkajoči vrstici); kl artefakti p58 v j|k formatu; imenske družine flag-only z [?]
+- KG/runtime NESPREMENJENI (osebna plast = val 126 snapshot, 982 oseb); RG-009/010/011 ostajajo OPEN (F-SYNC-04)
+- Naslednje: val 128 = p62–66 (+ kstack pass p56–58; p65 → RG-009/010) → p65–143 serija → kultur re-sidro p7 → register 26-0326/26-0379 → F-H122-01

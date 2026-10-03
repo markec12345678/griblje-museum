@@ -47,13 +47,13 @@ const changes = JSON.parse(
 const p3 = reg.filter((r) => r.page === 3);
 
 describe("val 111 — p3 vgradnja območij (F-PV-07)", () => {
-  test("register: 2875 vrstic (val 115: +4 vstavljene), 139 v88 guard nedotaknjen", () => {
-    expect(reg.length).toBe(2876);
+  test("register: 2875 vrstic (val 127: p59 fantom −1), 138 v88 guard", () => {
+    expect(reg.length).toBe(2875);
     const v88 = reg.filter(
       (r) => (r as { v88_status?: string }).v88_status !== undefined ||
              (r as { jk_review?: string }).jk_review === "v88-digit-split-UNRESOLVED",
     ).length;
-    expect(v88).toBe(139);
+    expect(v88).toBe(138); // val 127: 139 − 1 (p59 Stiftung fragment z v88 poljem odstranjen)
   });
 
   test("p3: 21 vrstic, vse z reading_pass v111-ps-reread", () => {

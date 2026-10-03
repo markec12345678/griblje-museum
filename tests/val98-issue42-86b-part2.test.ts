@@ -93,12 +93,18 @@ describe("val 98 — 86b del 2: vgradnja po pravilih val 86 na novih straneh", (
     }
   });
 
-  test("v88 = vir resnice: vseh 139 vrstic vrednostno NESPREMENJENIH z delom 2", () => {
+  test("v88 = vir resnice: 138 vrstic (136 RESOLVED + 2 UNRESOLVED) — val 127: 4 p59 vrednosti preštete s snimkami", () => {
     const resolved = register.filter((r) => r.jk_review === "v88-digit-split-RESOLVED");
     const unresolved = register.filter((r) => r.jk_review === "v88-digit-split-UNRESOLVED");
-    expect(resolved.length).toBe(137);
+    expect(resolved.length).toBe(136); // val 127: −1 (p59 Stiftung fragment odstranjen)
     expect(unresolved.length).toBe(2);
     for (const r of resolved) {
+      if (r.reading_pass === "v127-ps-reread") {
+        // val 127: p56–61 osebni re-read — vrednosti preštete (dvojni sidro kstack);
+        // v88 glasovi v *_v88, staro stanje v *_pre_v127 (nič tihega prepisovanja)
+        expect(r.klafter_v88 !== undefined || r.jaethe_v88 !== undefined).toBe(true);
+        continue;
+      }
       expect(String(r.jaethe)).toBe(String(r.jaethe_v88));
       expect(String(r.klafter)).toBe(String(r.klafter_v88));
     }

@@ -37,8 +37,8 @@ function readJSON(rel: string): Record<string, unknown> {
 }
 
 describe("val 118 — gardele vhodov", () => {
-  test("register 2875 vrstic (vstavljanja ni)", () => {
-    expect(REG.length).toBe(2876);
+  test("register 2875 vrstic (vstavljanja ni; val 127: p59 fantom -1)", () => {
+    expect(REG.length).toBe(2875);
   });
   test("reading JSON p17/p18/p19: meta 0 VLM + scope", () => {
     for (const [pg, fname] of [[17, "p17.json"], [18, "p18.json"], [19, "p19.json"]] as const) {
@@ -60,7 +60,7 @@ describe("val 118 — gardele vhodov", () => {
   });
   test("reading_pass v118-names na 60 vrsticah; plasti prevzete iz v113 (p17/p18: 120->80) in v114 (p19: 667->647)", () => {
     expect(REG.filter((r) => r.reading_pass === "v118-names").length).toBe(60);
-    expect(REG.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1795);
+    expect(REG.filter((r) => r.reading_pass === "v86-colonial-tiles").length).toBe(1675); // val 127: 1795 − 120 (p56–61 → v127-ps-reread)
     // p19 je nosil v114-ps-reread (val 114: p19, p20, p25–p55 = 667) — 20 vrstic prevzetih
     expect(REG.filter((r) => r.reading_pass === "v114-ps-reread").length).toBe(0); // 184 − 62 (2d-x3: p47/p48) − 2 (p49) − 122 (2e: p50-p55)
     // p17/p18 sta nosili v113-ps-reread (val 113: p17–p24 brez p19/p20 = 120) — 40 vrstic prevzetih
@@ -205,7 +205,7 @@ describe("val 118 — kaskada (izrecna)", () => {
     const c4 = JSON.parse(
       readFileSync(join(REPO, "research-griblje/ps-n83/band-v86/c4-metrika-v90.json"), "utf8"),
     ) as { meta: Record<string, unknown> };
-    expect(String(c4.meta.K5_input_reliability)).toContain("208/2876"); // val 119 del 2c: 222 - 7 - 7 - 1 (p40-r1 ditto ovržen)
+    expect(String(c4.meta.K5_input_reliability)).toContain("208/2875"); // val 127: 2876 − 1 (p59 fantom)
   });
   test("timeline I6 (2035, 392) + raba (173, 142) nespremenjena", () => {
     const tl = readJSON("research-griblje/atlas-1825/timeline-1825-1830.json");
