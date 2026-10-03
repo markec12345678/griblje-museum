@@ -5169,3 +5169,16 @@ Stage Summary:
 - Struktura p59/p61 razrešena (fantom + 2 manjkajoči vrstici); kl artefakti p58 v j|k formatu; imenske družine flag-only z [?]
 - KG/runtime NESPREMENJENI (osebna plast = val 126 snapshot, 982 oseb); RG-009/010/011 ostajajo OPEN (F-SYNC-04)
 - Naslednje: val 128 = p62–66 (+ kstack pass p56–58; p65 → RG-009/010) → p65–143 serija → kultur re-sidro p7 → register 26-0326/26-0379 → F-H122-01
+
+---
+Task ID: 127-cascade (dopolnitev — kaskada objave)
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: val 127 publikacijska kaskada (PR #138)
+
+Work Log:
+- Kaskada: commit 180335d → PUSH (token) → PR #138 → CI 3/3 ZELENO V PRVEM TEKU (Vercel + tipi/lint/enotni + dimni) → MERGE @ 870c637 → remote veja izbrisana (204) → lokalna izbrisana → main sinhroniziran; delovno drevo čisto
+
+Stage Summary:
+- Val 127 MERGAN; main @ 870c637; PR #138; CI 3/3 zeleno v prvem teku (četrtič zapored)
+- p56–61 osebni re-read ZAPRT (119 vrstic v127-ps-reread; register 2875); struktura p59/p61 razrešena; 0 VLM; 0 sprememb KG/runtime
+- Naslednje: val 128 = p62–66 (+ kstack pass p56–58; p65 → RG-009/010) → p65–143 serija → kultur re-sidro p7 → register 26-0326/26-0379 → F-H122-01
