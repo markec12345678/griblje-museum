@@ -43,7 +43,7 @@ describe("val 59 — ATLAS 1825 PASS 2 (sinhroniziran @ val 119 del 3)", () => {
 
   describe("§2 house register", () => {
     it("94 gruble hiš + sestavljeni sklici, vsi z house_id", () => {
-      expect(house.houses_total).toBe(167);
+      expect(house.houses_total).toBe(169);
       expect(house.houses.every((h) => h.house_id && h.house_no_1825)).toBe(true);
       const types = new Set(house.houses.map((h) => h.house_no_type));
       expect(types.has("gruble_house")).toBe(true);
@@ -96,15 +96,24 @@ describe("val 59 — ATLAS 1825 PASS 2 (sinhroniziran @ val 119 del 3)", () => {
       expect(h70!.notes).toContain("70");
     });
 
-    it("hiše 71-72 (PUA Zollamt okolica) imajo opombo o čakanju p56-143; 73-78 NE obstajajo v virih", () => {
-      for (const hn of ["71", "72"]) {
+    it("hiša 71 opomba: negativ ODLOČILEN (val 122); 73/75/77/78 NE obstajajo; 72 PS PROVISIONAL; 74/76 novi vnosi (val 122)", () => {
+      const h71 = house.houses.find((x) => x.house_no_1825 === "71");
+      expect(h71).toBeDefined();
+      expect(h71!.notes).toContain("ODLOČILEN");
+      expect(h71!.ps_absence).toBeDefined();
+      // 73/75/77/78: noben vir (PUA brez vpisa, PS 0 vrstic čez 143/143, PT brez veze) → NI v registru
+      for (const hn of ["73", "75", "77", "78"]) {
+        expect(house.houses.find((x) => x.house_no_1825 === hn)).toBeUndefined();
+      }
+      // val 122 (ločena odločitev, protokol 145): 72 ima owners.ps PROVISIONAL; 74/76 nova vnosa
+      const h72 = house.houses.find((x) => x.house_no_1825 === "72");
+      expect(h72!.owners.ps?.layer).toBe("PROVISIONAL");
+      expect(h72!.owners.ps?.rows).toBe(2);
+      for (const hn of ["74", "76"]) {
         const h = house.houses.find((x) => x.house_no_1825 === hn);
         expect(h).toBeDefined();
-        expect(h!.notes).toContain("p56–p143");
-      }
-      // 73-78: noben vir (PUA brez vpisa, PS vrzel 70-78, PT brez veze) → NI v registru
-      for (const hn of ["73", "74", "75", "76", "77", "78"]) {
-        expect(house.houses.find((x) => x.house_no_1825 === hn)).toBeUndefined();
+        expect(h!.owners.ps?.layer).toBe("PROVISIONAL");
+        expect(h!.notes).toContain("val 122");
       }
     });
   });

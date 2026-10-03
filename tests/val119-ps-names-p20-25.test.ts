@@ -171,14 +171,14 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha b3e9797e (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^b3e9797e/);
+  test("KG sha 8345868a (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^8345868a/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];
     };
-    expect(kg.nodes.length).toBe(3762);
-    expect(kg.edges.length).toBe(3471);
+    expect(kg.nodes.length).toBe(3764);
+    expect(kg.edges.length).toBe(3473);
     const s = readFileSync(join(REPO, "src/data/story-graph-1825.json"), "utf8");
     expect(s.length).toBeGreaterThan(0);
   });

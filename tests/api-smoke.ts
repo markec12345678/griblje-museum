@@ -462,8 +462,8 @@ ok(
   "atlas story-graph: pregled — 3.762 entitet + 4 atomi + pogodba Story Engine (#42 §21/§22; val 119 del 3 sync: osebna plast 981; prej 3.269 @ val 115)",
   sgOverview.status === 200 &&
     sgOverview.body?.ok === true &&
-    sgOverview.body?.stats?.entities === 3762 &&
-    sgOverview.body?.stats?.relations === 3471 &&
+    sgOverview.body?.stats?.entities === 3764 &&
+    sgOverview.body?.stats?.relations === 3473 &&
     sgOverview.body?.stats?.story_atoms === 4 &&
     Array.isArray(sgOverview.body?.story_engine_contract?.required_fields),
   `status=${sgOverview.status} entities=${sgOverview.body?.stats?.entities}`

@@ -102,8 +102,8 @@ describe("quality_gate — §23 struktura", () => {
     expect(rep.invariants_enforced[4]).toContain("I5");
   });
 
-  test("provenanca kaže na aktualni KG (b3e9797e, val 119 del 3 PUA↔PS sync — osebna plast 488→981) in runtime kopijo", () => {
-    expect(rep.provenance.kg_sha256.startsWith("b3e9797e")).toBe(true); // val 119 del 3 sync (val 119 del 2e: c3932092; val 2d-x3: 62d8cfea; val 114: 376e2b27; val 112: 5ae52bd8; val 108: 9f856d28)
+  test("provenanca kaže na aktualni KG (8345868a, val 119 del 3 PUA↔PS sync — osebna plast 488→981) in runtime kopijo", () => {
+    expect(rep.provenance.kg_sha256.startsWith("8345868a")).toBe(true); // val 119 del 3 sync (val 119 del 2e: c3932092; val 2d-x3: 62d8cfea; val 114: 376e2b27; val 112: 5ae52bd8; val 108: 9f856d28)
     expect(rep.provenance.runtime_copy).toBe("src/data/atlas-coverage-report-1825.json");
     expect(rep.provenance.built_from.length).toBe(14);
   });
@@ -128,9 +128,9 @@ describe("quality_gate — številčne resnice iz registrov", () => {
 
   test("hiše: 167 (16 AGREE→VER / 33 CONFLICT / 45 PARTIAL / 73 UNKNOWN — val 119 del 3 metoda B)", () => {
     const c = byId("houses");
-    expect(c.total).toBe(167);
+    expect(c.total).toBe(169);
     expect(c.CONFLICT).toBe(33);
-    expect(c.PARTIAL).toBe(45); // PARTIAL 13 + SINGLE_SOURCE 32
+    expect(c.PARTIAL).toBe(47); // PARTIAL 13 + SINGLE_SOURCE 32
     expect(c.UNKNOWN).toBe(73);
     expect(c.VERIFIED).toBe(16); // AGREE hiše (val 119 del 3: PUA+PS priimek ≥0.7)
   });
@@ -340,7 +340,7 @@ describe("lib/atlas-coverage (API plast)", () => {
   test("kategorija: houses (detail + mapping_rule)", () => {
     const c = coverageCategory("houses");
     expect(c).not.toBeNull();
-    expect(c!.total).toBe(167);
+    expect(c!.total).toBe(169);
     expect(c!.mapping_rule).toContain("SINGLE_SOURCE");
   });
 
@@ -371,7 +371,7 @@ describe("lib/atlas-coverage (API plast)", () => {
 describe("uskladjenost z KG v1.4", () => {
   test("node_stats sovpadajo s kategorijami (hiše/osebe/parcele/toponimi/BP) — PERSON 981 (val 119 del 3 sync)", () => {
     const kgf = kg as unknown as { node_stats: Record<string, number>; provenance: { kg_sha256?: string } };
-    expect(kgf.node_stats.HOUSE).toBe(167);
+    expect(kgf.node_stats.HOUSE).toBe(169);
     expect(kgf.node_stats.PERSON).toBe(981); // 98 PUA + 656 PS (v119) + 227 PT; prej 488 (val 59 pass2)
     expect(kgf.node_stats.PARCEL).toBe(2427); // val 108: 2770 → … → val 114: 2426 → val 115: 2427
     expect(kgf.node_stats.BP).toBe(100);

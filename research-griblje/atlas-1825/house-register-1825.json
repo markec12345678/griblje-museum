@@ -36,7 +36,7 @@
   "PARTIAL": 13,
   "UNKNOWN_SEMANTICS": 73
  },
- "houses_total": 167,
+ "houses_total": 169,
  "houses": [
   {
    "house_id": "H-000",
@@ -9473,7 +9473,14 @@
     "ps_kultur": {}
    },
    "conflict_ids": [],
-   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+   "notes": "val 122 (protokol 145): PS p3–p143 ponovno pregledan (2.875 vrstic) — 0 vrstic z haus_no 70 → negativ ZDAJ ODLOČILEN (celotna pokritost; do val 121 samo delna). PUA ostaja edini vir (Zollamt b. H. Neuradl in Gröbln (PUA p47 e95)). Stara opomba 'PS blok te hiše čaka p56–p143' zamenjana (PS prebran 143/143 od val 82; BRALSKI zdrsi so bile remapirane v val 120, vrednosti v val 121).",
+   "ps_absence": {
+    "rows": 0,
+    "pages_covered": "p3–p143 (2.875 vrstic, 143/143 strani)",
+    "verdict": "NEGATIVE-DECISIVE",
+    "val": 122,
+    "note": "celotna pokritost PS (od val 82) + re-readi val 108–121; do val 121 odloženo kot 'delna pokritost'"
+   }
   },
   {
    "house_id": "H-071",
@@ -9504,7 +9511,14 @@
     "ps_kultur": {}
    },
    "conflict_ids": [],
-   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+   "notes": "val 122 (protokol 145): PS p3–p143 ponovno pregledan (2.875 vrstic) — 0 vrstic z haus_no 71 → negativ ZDAJ ODLOČILEN (celotna pokritost; do val 121 samo delna). PUA ostaja edini vir (Stauger Matho Bauersleibgäbler [?] (PUA p42 e86, REVIEW)). Stara opomba 'PS blok te hiše čaka p56–p143' zamenjana (PS prebran 143/143 od val 82; BRALSKI zdrsi so bile remapirane v val 120, vrednosti v val 121).",
+   "ps_absence": {
+    "rows": 0,
+    "pages_covered": "p3–p143 (2.875 vrstic, 143/143 strani)",
+    "verdict": "NEGATIVE-DECISIVE",
+    "val": 122,
+    "note": "celotna pokritost PS (od val 82) + re-readi val 108–121; do val 121 odloženo kot 'delna pokritost'"
+   }
   },
   {
    "house_id": "H-072",
@@ -9523,7 +9537,82 @@
       "annotation_original": null
      }
     ],
-    "ps": null,
+    "ps": {
+     "owner_original": "Wolfsloch Wolfgey",
+     "stand": null,
+     "pages": [
+      65
+     ],
+     "rows": 2,
+     "coverage": "PROVISIONAL plast (vse vrstice p56–143; v86-colonial-tiles — F-PV-04/NR-14; val 122 uveljavitev)",
+     "layer": "PROVISIONAL"
+    },
+    "pt": null,
+    "a01": null,
+    "ps_distinct": [
+     {
+      "name": "Wolfsloch Wolfgey",
+      "pages": [
+       65
+      ],
+      "rows": 2
+     }
+    ]
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 2,
+    "ps_kultur": {
+     "Acker": 2
+    }
+   },
+   "conflict_ids": [],
+   "notes": "val 122 (ločena odločitev, protokol 145): owners.ps vgrajen iz PROVISIONAL plasti (2 vrstici p65, Wolfsloch Wolfgey, Acker; v86-colonial-tiles). Imenska napetost PUA (Strauß Khonrad bauer zu Grübln, VERIFIED-2x) vs PS (Wolfsloch Wolfgey) NI razrešena (§4) — metoda B sim se NE izračuna (definirana samo nad p3–p55; pua_ps_name_sim polja ostanejo null iz kontinuitete). Stara opomba 'PS blok te hiše čaka p56–p143' zamenjana (PS prebran 143/143 od val 82). Osebna plast NESPREMENJENA (F-SYNC-04)."
+  },
+  {
+   "house_id": "H-074",
+   "house_no_1825": "74",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Tillek Wolfgey",
+     "stand": null,
+     "pages": [
+      65,
+      69,
+      122
+     ],
+     "rows": 4,
+     "coverage": "PROVISIONAL plast (vse vrstice p56–143; v86-colonial-tiles — F-PV-04/NR-14; val 122 uveljavitev)",
+     "layer": "PROVISIONAL"
+    },
+    "ps_distinct": [
+     {
+      "name": "Tillek Wolfgey",
+      "pages": [
+       65
+      ],
+      "rows": 2
+     },
+     {
+      "name": "Heidrich Peter",
+      "pages": [
+       69
+      ],
+      "rows": 1
+     },
+     {
+      "name": "Kauc Miheljz",
+      "pages": [
+       122
+      ],
+      "rows": 1
+     }
+    ],
     "pt": null,
     "a01": null
    },
@@ -9531,11 +9620,52 @@
    "bp_refs": [],
    "parcel_refs": {
     "pua_parcels_total": 0,
-    "ps_rows": 0,
+    "ps_rows": 4,
+    "ps_kultur": {
+     "Acker": 3
+    }
+   },
+   "conflict_ids": [],
+   "notes": "val 122 (ločena odločitev, protokol 145): NOV vnos — hiša 74 dokumentirana izključno v PS PROVISIONAL plasti (4 vrstice: p65 ×2 Tillek Wolfgey, p69 Heidrich Peter, p122 Kauc Miheljz; v86-colonial-tiles). NR-05 negativ za 74 ZAPRT — val 60 'ne obstaja v nobenem viru' je odražalo le pokritost p3–p55. 2 PS parceli (PS-p065-j1, PS-p069-j1) → KG HAS_PARCEL vezi sedaj nastanejo (tiha vrzel KG builderja val 89–121: `continue` pri manjkajoči hiši — odpravljena). Imena različna med stranmi (sukcesija/so-živeči, PROVISIONAL). Osebna plast NESPREMENJENA (F-SYNC-04)."
+  },
+  {
+   "house_id": "H-076",
+   "house_no_1825": "76",
+   "house_no_type": "gruble_house",
+   "evidence_status": "SINGLE_SOURCE",
+   "owners": {
+    "pua": null,
+    "ps": {
+     "owner_original": "Gritsch Mihlo",
+     "stand": null,
+     "pages": [
+      115
+     ],
+     "rows": 1,
+     "coverage": "PROVISIONAL plast (vse vrstice p56–143; v86-colonial-tiles — F-PV-04/NR-14; val 122 uveljavitev)",
+     "layer": "PROVISIONAL"
+    },
+    "ps_distinct": [
+     {
+      "name": "Gritsch Mihlo",
+      "pages": [
+       115
+      ],
+      "rows": 1
+     }
+    ],
+    "pt": null,
+    "a01": null
+   },
+   "pua_ps_name_sim": null,
+   "bp_refs": [],
+   "parcel_refs": {
+    "pua_parcels_total": 0,
+    "ps_rows": 1,
     "ps_kultur": {}
    },
    "conflict_ids": [],
-   "notes": "PS blok te hiše čaka p56–p143 (vrzel 70–78 v prebranem delu)"
+   "notes": "val 122 (ločena odločitev, protokol 145): NOV vnos — hiša 76 dokumentirana izključno v PS PROVISIONAL plasti (1 vrstica p115, Gritsch Mihlo, brez kultur/jaethe/klafter — vrstica hišne oznake; v86-colonial-tiles). NR-05 negativ za 76 ZAPRT (razlog kot pri 74). 0 PS parcel (F-PV-05). Osebna plast NESPREMENJENA (F-SYNC-04)."
   },
   {
    "house_id": "H-079",

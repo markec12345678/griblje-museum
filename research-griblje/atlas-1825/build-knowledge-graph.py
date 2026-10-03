@@ -658,8 +658,13 @@ def main():
 
     # ---------- RESEARCH GAPS iz join diagnostike ----------
     for m in owner_gap_hits:
+        note = ("register-join ni našel person node-a (F16 p11 struktura / register drift)"
+                if "source" not in m else
+                "owners.ps lastnik brez PERSON vozlišča — pričakovano: PROVISIONAL plast "
+                "p56–143 izključena iz osebne plasti (F-SYNC-04, val 119 del 3); rešitev = "
+                "p56–143 osebni re-read (NR-14 okvir; val 122 odločitev hiša 70–78)")
         G.gap(f"HOUSE {m['house']} → OWNER (join miss {m})", ["person-owner-register", "PUA/PS register"],
-              "register-join ni našel person node-a (F16 p11 struktura / register drift)",
+              note,
               "re-read strani @300dpi + ponovna gradnja registrov", tied_to="F16")
 
     # ---------- INVARIANTI (§11) ----------
@@ -718,9 +723,9 @@ def main():
     }
 
     out = {
-        "val": 108,
-        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno) + KG v2.3 (val 107, 86b del 3: tile 3. glas zaključen na p110–120+p122–141 — PS parcele 898→779 po F-PV-05 korekcijah na izvoru, owner variante p63–141, v88 nedotaknjeno, p142 obnovljivo ob kvoti — 1 tile) + KG v2.4 (val 108: direktni re-read 79 FRESH markerjev + poln pregled 14 strani p95–137 — odkrit P1 off-by-one od p98 r5 naprej + col-split spoji; PS parcele 779→735, v88 nedotaknjeno)",
-        "title": "knowledge-graph-1825 v2.4",
+        "val": 122,
+        "issue": "#43 §1 KG + #42 §4/§14 + KG v1.9 (SRC-PS vozlišče po val 82/83) + KG v2.0 (val 86: F-PV-05 J→K vgradnja, kolonski tile-i 2. prehod p56–94+121) + KG v2.1 (val 89: parcelni register 143/143 projekcija — PS parcele 432→930, evidence_status TRANSCRIBED_PARTIAL→TRANSCRIBED_PROVISIONAL) + KG v2.2 (val 98, 86b del 2: tile 3. glas na novih straneh p95–109 — PS parcele 930→898 po F-PV-05 korekcijah na izvoru, owner variante p63–109, v88 nedotaknjeno) + KG v2.3 (val 107, 86b del 3: tile 3. glas zaključen na p110–120+p122–141 — PS parcele 898→779 po F-PV-05 korekcijah na izvoru, owner variante p63–141, v88 nedotaknjeno, p142 obnovljivo ob kvoti — 1 tile) + KG v2.4 (val 108: direktni re-read 79 FRESH markerjev + poln pregled 14 strani p95–137 — odkrit P1 off-by-one od p98 r5 naprej + col-split spoji; PS parcele 779→735, v88 nedotaknjeno) + KG v2.5 (val 122: hiša 70–78 ločena odločitev — H-074/H-076 nova HOUSE vozlišča iz PROVISIONAL plasti p56–143 (NR-05 zaprt za 74/76), H-072 owners.ps; HAS_PARCEL +2 (PS-p065-j1, PS-p069-j1) — tiha vrzel KG builderja pri manjkajoči hiši odpravljena; osebna plast nespremenjena, F-SYNC-04)",
+        "title": "knowledge-graph-1825 v2.5",
         "findings": [
             {
                 "finding_id": "KG-F01",
@@ -811,6 +816,13 @@ def main():
                 "statement": "KG v2.3 (86b del 3): kolonski tile-i (kompozit z glavo, F-PV-06) 2. prehod zaključen na p110–120 + p122–141 (+31 strani, +646 vrstic s reading_pass v86-colonial-tiles → 1.755 od 2.871); vgradnja 1:1 pravila val 86/98 (page-level F-PV-05, snimke *_pass1_v82): 117 v86-tiles-jk + 36 v86-tiles-arbitrated + 1 v86-pass2-split + 56 novih digit-split REVIEW + 14 col-split + 116 izrecnih N|K + 201 kept-k-k + 59 no-value + 30 page-not-qualified na novih straneh; owner_tile_v86 variante 552 (skupaj 1.615), kultur_tile_v86 506 (skupaj 1.402); digit_mismatch 98; v88 (139 vrstic) vrednostno NESPREMENJENO (vir resnice); p1–55 + p143 nedotaknjeno; p142 ostaja obnovljivo ob kvoti (1 tile — p142-t-kultur2, trdo 429; fail-fast page pravilo p142 drži v82-native-pass1). PS parcele v parcelnem registru 898 → 779 (F-PV-05 korekcije premaknejo vrednosti iz Jaethe v Quad. Kläfter; brez kultur zapisa 104 → 92; raba: explicit 461 → 438, UNKNOWN 333 → 249). Nodes/edges/claims/ID-ji stabilni; kg_sha256 se spremeni (§22 pogodba) → story-graph/timeline/coverage regenerirani.",
                 "status": "RESOLVED-V107 (odprta: p142-t-kultur2 ob kvoti; F-PV-04 pasovni re-read; F11 REVIEW raven; F-PV-03)",
                 "provenance": "research-griblje/raw-web-val86-2026-10/ (tile-read-v98.mts, vlm-v86/ 695/696 tile-ov; p113-t-kultur0 + p126-t-kultur0 reparerana iz .raw — literal newline v stringih) + ps-n83/band-v86/register-v107-changes.json + build-register-v107.py (val 107)",
+            },
+            {
+                "finding_id": "KG-F14",
+                "val": 122,
+                "statement": "KG v2.5 (val 122, hiša 70–78 ločena odločitev — protokol 144 §6.1 izvedena): house-register 167 → 169 — H-074 in H-076 nova HOUSE vozlišča (dokaz izključno PS p56–143, reading_pass v86-colonial-tiles = PROVISIONAL plast, F-PV-04/NR-14; NR-05 negativ za 74/76 ZAPRT — val 60 negativ je odražalo le pokritost p3–p55), H-072 owners.ps vgrajen (2 vrstici p65, Wolfsloch Wolfgey; imenska napetost PUA Strauß Khonrad vs PS Wolfsloch Wolfgey dokumentirana, NE razrešena — §4), H-070/H-071 ps_absence NEGATIVE-DECISIVE (celotna pokritost). Consequence: HAS_PARCEL vezi za PS parceli h74 (PS-p065-j1, PS-p069-j1) sedaj nastanejo — tiha vrzel KG builderja ('continue' pri manjkajoči hiši) od val 89 odpravljena. Osebna plast NESPREMENJENA (F-SYNC-04: PROVISIONAL lastniki ne vstopajo v person-owner-register; PERSON 981, OWNER_OF števci stabilni). Negativ za [70,71,73,75,77,78] ODLOČILEN (NR-05 val122_decision). Opažba (izven dosega vala 122): 13 pre-obstoječih podvojenih H-1-* house_id parov ('1 / N' vs '1/N' notacija, val 119 del 3) → 167 HOUSE vnosov = 154 unikatnih ID-jev; KG serializacija ohranja obe vozlišči.",
+                "status": "RESOLVED-V122 (odprta: črkovalna sodba imen NR-14; PROVISIONAL lastniki h72/74/76 čakajo p56–143 re-read)",
+                "provenance": "research-griblje/atlas-1825/build-houses-v122.py (val 122, 0 VLM) + ps-n83/register.json (2.875 vrstic, val 121 stanje)",
             },
         ],
         "provenance": {

@@ -358,13 +358,13 @@ describe("val 119 del 2c — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 2c — kaskada (izrecna)", () => {
-  test("KG sha b3e9797e raznesen (b5d3ae93 -> 62d8cfea @2d-x3 ->; timestamp-only regeneracije — vsebina identična, osebni sloj = pass2 PUA artefakt F-PV-03/04); 3269/3477/2427/2773 identično", () => {
+  test("KG sha 8345868a raznesen (b5d3ae93 -> 62d8cfea @2d-x3 ->; timestamp-only regeneracije — vsebina identična, osebni sloj = pass2 PUA artefakt F-PV-03/04); 3269/3477/2427/2773 identično", () => {
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^b3e9797e/,
+      /^8345868a/,
     );
     const kgAny = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as Record<string, unknown>;
-    expect((kgAny.nodes as unknown[]).length).toBe(3762);
-    expect((kgAny.edges as unknown[]).length).toBe(3471);
+    expect((kgAny.nodes as unknown[]).length).toBe(3764);
+    expect((kgAny.edges as unknown[]).length).toBe(3473);
   });
 
   test("pass3: 392 PS parcel + raba 105-38-3-12-6-7+142 identično; K5 dito 207; K9 69 nespremenjen", () => {
@@ -376,10 +376,10 @@ describe("val 119 del 2c — kaskada (izrecna)", () => {
     const timeline = readJSON(
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ) as { meta?: Record<string, unknown> };
-    expect(JSON.stringify(timeline)).toContain("b3e9797e");
+    expect(JSON.stringify(timeline)).toContain("8345868a");
   });
 
   test("runtime kopija KG v src/data = atlas izhod (ena izhodna resnica)", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^b3e9797e/);
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^8345868a/);
   });
 });

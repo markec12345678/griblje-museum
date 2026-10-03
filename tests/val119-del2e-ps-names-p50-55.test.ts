@@ -262,10 +262,10 @@ describe("val 119 del 2e — gardele vhodov (p50–p55 vgradnja, dvojni sidr)", 
 });
 
 describe("val 119 del 2e — kaskada (izrecna)", () => {
-  test("KG sha b3e9797e: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^b3e9797e/);
+  test("KG sha 8345868a: vsebina IDENTIČNA po del 2e (timestamp-only; builder bere samo wohnort — owner/haus/vrednostne spremembe ne posegajo v GRAF); 3269/3477/2427/2773 identično", () => {
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^8345868a/);
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^b3e9797e/,
+      /^8345868a/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
@@ -274,10 +274,10 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
       edge_stats: Record<string, number>;
       invariant_violations: unknown[];
     };
-    expect(kg.nodes.length).toBe(3762);
-    expect(kg.edges.length).toBe(3471);
+    expect(kg.nodes.length).toBe(3764);
+    expect(kg.edges.length).toBe(3473);
     expect(kg.node_stats.PARCEL).toBe(2427);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2775);
     expect(kg.invariant_violations).toEqual([]);
     // RESIDENCE relaciji TP-029 iz del 2d-x3 ostajata prevezani
     const r433 = kg.edges.find((e) => e.relation_id === "R-03433");
@@ -317,8 +317,8 @@ describe("val 119 del 2e — kaskada (izrecna)", () => {
       entities: unknown[];
       relations: unknown[];
     };
-    expect(sg.entities.length).toBe(3762);
-    expect(sg.relations.length).toBe(3471);
+    expect(sg.entities.length).toBe(3764);
+    expect(sg.relations.length).toBe(3473);
     const kgSha = sha256("src/data/knowledge-graph-1825.json");
     const tl = readJSON("src/data/timeline-1825-1830.json") as {
       provenance?: { kg_sha256?: string };

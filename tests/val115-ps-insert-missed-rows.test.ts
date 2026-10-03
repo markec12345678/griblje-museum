@@ -209,7 +209,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(pr.ps_parcels.some((p) => p.page === 49 && p.parcel_number === 2)).toBe(false);
   });
 
-  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha b3e9797e (val 119 del 2e kaskada)", () => {
+  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha 8345868a (val 119 del 2e kaskada)", () => {
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
@@ -218,16 +218,16 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
       invariant_violations: unknown[];
     };
     expect(kg.node_stats.PARCEL).toBe(2427);
-    expect(kg.edge_stats.HAS_PARCEL).toBe(2773);
-    expect(kg.nodes.length).toBe(3762);
-    expect(kg.edges.length).toBe(3471);
+    expect(kg.edge_stats.HAS_PARCEL).toBe(2775);
+    expect(kg.nodes.length).toBe(3764);
+    expect(kg.edges.length).toBe(3473);
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^b3e9797e/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^8345868a/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha b3e9797e… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha 8345868a… (pogodba §22)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
@@ -259,8 +259,8 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     const sg = JSON.parse(readFileSync(join(ROOT, "src/data/story-graph-1825.json"), "utf8")) as {
       stats?: { entities?: number; relations?: number };
     };
-    expect(sg.stats?.entities).toBe(3762);
-    expect(sg.stats?.relations).toBe(3471);
+    expect(sg.stats?.entities).toBe(3764);
+    expect(sg.stats?.relations).toBe(3473);
   });
 
   test("c4 K9: jaethe_plain_100_1599 69 → 53 (val 119 del 2d-x3: p48 F-NA-02 rebuild — v114 jae = klafter); oblike premaknjene v klafter razrede", () => {

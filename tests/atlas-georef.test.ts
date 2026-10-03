@@ -229,12 +229,14 @@ describe("georef v2 — konsistentnost podatkovnih slojev", () => {
       findings: { finding_id: string; val: number; status: string }[];
       nodes: { node_id: string; node_type: string; lat?: number; lng?: number; georef_status?: string }[];
     };
-    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
-    expect(kg.val).toBe(108);
-    expect(kg.findings.at(-1)!.finding_id).toBe("KG-F12"); // val 107 (86b del 3) — KG-F10/F11/F13 ohranjene
-    expect(kg.findings.at(-2)!.finding_id).toBe("KG-F13"); // val 108 (re-read 14 strani)
-    expect(kg.findings.at(-3)!.finding_id).toBe("KG-F11");
-    expect(kg.findings.at(-4)!.status).toContain("RESOLVED-V84"); // KG-F10 (val 84) ohranjen na mestu 10
+    expect(kg.title).toBe("knowledge-graph-1825 v2.5");
+    expect(kg.val).toBe(122);
+    expect(kg.findings.at(-1)!.finding_id).toBe("KG-F14"); // val 122 (hiša 70–78) — KG-F10/F11/F13/F12 ohranjene
+    expect(kg.findings.at(-2)!.finding_id).toBe("KG-F12"); // val 107/108 (86b del 3 / re-read)
+    expect(kg.findings.at(-3)!.finding_id).toBe("KG-F13"); // val 108 (re-read 14 strani)
+    expect(kg.findings.at(-4)!.finding_id).toBe("KG-F11");
+    expect(kg.findings.at(-5)!.finding_id).toBe("KG-F10");
+    expect(kg.findings.at(-5)!.status).toContain("RESOLVED-V84"); // KG-F10 (val 84) ohranjen na mestu 10
     const moA01 = kg.nodes.filter((n) => n.node_id.startsWith("MO:MO-A01-"));
     expect(moA01.length).toBe(24);
     for (const n of moA01) {

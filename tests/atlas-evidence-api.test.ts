@@ -91,13 +91,13 @@ describe("atlas-evidence resolver [val 64]", () => {
 
   test("overview (§10): brez umetnega procenta, vse ključne strukture", () => {
     const ov = overview();
-    expect(ov.title).toBe("knowledge-graph-1825 v2.4");
-    expect(ov.stats.nodes.HOUSE).toBe(167);
+    expect(ov.title).toBe("knowledge-graph-1825 v2.5");
+    expect(ov.stats.nodes.HOUSE).toBe(169);
     expect(ov.stats.nodes.PERSON).toBe(981); // val 119 del 3 sync (prej 488 pass2)
     expect(ov.stats.edges.OWNER_OF).toBe(246); // val 119 del 3: 254→246 (8 zastarelih PS OWNER_OF prek ps_stale)
     expect(ov.stats.claims.CONFLICT).toBe(127); // val 119 del 3: 128→127
-    expect(ov.research_gaps.length).toBe(8);
-    expect(ov.findings.map((f) => f.finding_id)).toEqual(["KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08", "KG-F09", "KG-F10", "KG-F11", "KG-F13", "KG-F12"]); // val 107: +KG-F12; val 108: +KG-F13 (re-read 14 strani)
+    expect(ov.research_gaps.length).toBe(11); // val 122: +3 OWNER join miss (F-SYNC-04)
+    expect(ov.findings.map((f) => f.finding_id)).toEqual(["KG-F01", "KG-F02", "KG-F03", "KG-F04", "KG-F05", "KG-F06", "KG-F07", "KG-F08", "KG-F09", "KG-F10", "KG-F11", "KG-F13", "KG-F12", "KG-F14"]); // val 107: +KG-F12; val 108: +KG-F13; val 122: +KG-F14 (hiša 70–78)
     expect(JSON.stringify(ov.coverage)).toContain("brez umetnega skupnega procenta");
   });
 

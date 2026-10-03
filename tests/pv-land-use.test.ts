@@ -165,8 +165,8 @@ describe("PV 1825: integracija v KG v2.0 + engine + coverage", () => {
   };
 
   test("KG v2.3 (val 108): SRC-PV = TRANSCRIBED 1/1; ID-ji/stanja stabilni", () => {
-    expect(kg.val).toBe(108);
-    expect(kg.title).toBe("knowledge-graph-1825 v2.4");
+    expect(kg.val).toBe(122);
+    expect(kg.title).toBe("knowledge-graph-1825 v2.5");
     const pvNode = kg.nodes.find((n) => n.node_id === "SRC-PV")!;
     expect(pvNode.coverage).toContain("TRANSCRIBED 1/1");
     expect(pvNode.coverage).toContain("val 74");
