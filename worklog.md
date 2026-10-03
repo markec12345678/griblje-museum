@@ -5055,3 +5055,28 @@ Stage Summary:
 - Osebna plast NESPREMENJENA (F-SYNC-04); kvalitetna plast p3–p55 NEDOTAKNJENA; K9 56/959/84
 - F-H122-01 DOCUMENTED: 13 podvojenih H-1-* ID parov — disambiguacija čaka lasten val
 - Naslednje: p3–p16 vrednostni sweep (nizka prioriteta) → register 26-0326/26-0379 ob javnih poročilih → NR-14 črkovalna sodba + p56–143 osebni re-read → F-H122-01
+
+---
+Task ID: 123-cascade
+Agent: Z.ai Code (glavna orkestratorska seja)
+Task: griblje-museum — val 123 publikacijska kaskada (PR #134) — p3–p16 vrednostni sweep
+
+Work Log:
+- Kontekst rekonstruiran iz git log + worklog + protokol 145 §6 (prehodni povzetek zastarel; dejansko stanje main @ 895ef1d = val 122 zaključen); naslednja točka = p3–p16 vrednostni sweep (nizka prioriteta, brez flagov)
+- Veja feat/val123-p3-p16-vrednostni-sweep; grid kalibracija: vse 14 strani OK (mean_off ≤ 5.5 px, brez NEEDS-CAL)
+- Orodja: make-valbands-v121.py (vseg ×6 / bands ×4 / zz) + NOV val123-sweep/celltool.py (tight celični izrezki ×10–15 z r{r} + register vrednostjo, import snap_grid); 40 vseg + 13 bands izrezkov; disk prostor reševalen (val121 crops 1 GB regenerabilen izbrisan)
+- Branja v glavni seji (0 VLM): 267 vrstic na 13 straneh (p5 = val 121); kalibracija na čistih celicah + digitcmp primerjave oblik števk iz iste strani
+- Vgradnja (build-register-v123.py, GUARD deklarirano-staro ≟ register): 27 FIX (p3 ×2, p4 ×4, p6 ×6, p8 ×4, p9 ×2, p12 ×5, p13 ×3, p15 ×1) + klafter_pre_v123 polja + anmerkung notes; 7 DISPUTE (brez popravkov); p7 strukturni disput F-V123-01 (page_obs + 6 stranskih disput anmerkung); 12 strani opazb (kapitalni nizi, Fürtrag, podstolpec)
+- Ključne najdbe: p4 ×4 ZAPRIJE val 112 "brez vidnega vira" (vir = rdeče udarjene vrednosti zdaj prebrane: 946/205/198/42; r15 473 soglasje); p12 sistematična v82 zamenjava 4/7/0; p13 r14 1005→405 (vodilni 1 iz vratu 4); p3 r3 769→762 = ODLOČITEV val 111 dileme 9/2; p15 r0 "1|656" podstolpec F-PV-07
+- F-V123-01: p7 programska detekcija olja = 22 pozicij za 21 vrstic (dodatno udarjeno olje 54; 6 odstopanj; rep 1:1; 14/20 zaporednih ujemanj) — popravek = dvojni anchor lasten val, 0 popravkov p7
+- Kaskada: c4 v90 (K9 p1–55 56/959/84 nespremenjen — samo vrednost→vrednost) → KG rebuild (3764/3473/614 — vsebinsko identična, sha 8345868a→fc23ab10 timestamp-only) → story 3764/3473/4 → timeline 8 (I1/I2/I6 ✓) → coverage PASS 8 (§24 14/14) → runtime src/data sinhronizirana
+- Testi: 24 zastarelih pinov (KG sha 8345868a v 18 datotekah + val 111 p3 ×3) → izrecen prehod fc23ab10 z zgodovinskimi opombami; val 111 p3 testi posodobljeni (r3 = 762 v123 odločitev z override mapo v 1:1 testu, vsota 6916→6906, vir reading JSON nespremenjen); +12 varovalk tests/val123; 1341 testov: 1330 pass / 11 skip / 0 fail; lint + tsc čisti
+- Docs: protokol 146 + KAZALO 146 (nazaj dopolnjena manjkajoča 144/145!) + README 183. sklop
+- PUSH 7a8c943 → PR #134; CI 1. tek: 3/3 ZELENO (prvič v valih brez popravkov!); MERGE @ f5dd456 → remote veja izbrisana (204) → lokalna izbrisana → main sinhroniziran; delovno drevo čisto
+- worklog commit na main
+
+Stage Summary:
+- Val 123 MERGAN; main @ f5dd456; PR #134; CI 3/3 zeleno v PRVEM teku
+- Vrednostna plast p3–p16: 27 FIX + 7 DISPUTE odprto + F-V123-01 (p7 strukturno, 0 popravkov) + 13 strani opazb; K9 56/959/84 stabilen
+- KG vsebinsko identična (fc23ab10); osebna plast nespremenjena (F-SYNC-04)
+- Naslednje: F-V123-01 dvojni anchor p7 → 6 DISPUTE zoomi → NR-14 črkovalna sodba + p56–143 osebni re-read → register 26-0326/26-0379 → F-H122-01
