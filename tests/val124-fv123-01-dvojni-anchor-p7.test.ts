@@ -33,7 +33,7 @@
  * KASKADA (izrecna): c4 v90 regenerirana (K9 p1–55 jaethe_empty 959→960,
  * klafter_plain_le99 177→178, both_filled 56 nespremenjen; K5 dito 208/2876 —
  * EXTRA vrstica je ditto) → KG vsebinsko IDENTIČNA (3764/3473; builder ne bere
- * vrednostnega sloja; sha fc23ab10 → ee3ac862, timestamp-only) → story → timeline
+ * vrednostnega sloja; sha fc23ab10 → ab418c75, timestamp-only) → story → timeline
  * → coverage PASS 8 (§24 14/14) → source-coverage rows 2876 → runtime src/data
  * sinhronizirana; analysis-v5/v6 regenerirana (varovalki 2875→2876).
  *
@@ -87,9 +87,9 @@ REG.forEach((r, i) => {
 const p7 = REG.slice(firsts[7], firsts[7] + 22);
 
 describe("val 124 — gardele vhodov (p7 dvojni anchor, F-V123-01)", () => {
-  test("register: 2876 vrstic (val 124: 2875 + 1 vstavljena p7 Nro 92; prej val 115: 2871 + 4)", () => {
+  test("register: 2876 vrstic (val 124: 2875 + 1 vstavljena p7 Nro 92; prej val 115: 2871 + 4); v125: 1 vrstica v124-dvojni-anchor (r20; r11 → v125-names-houses)", () => {
     expect(REG.length).toBe(2876);
-    expect(REG.filter((r) => r.reading_pass === "v124-dvojni-anchor").length).toBe(2); // Nro 92 + EXTRA
+    expect(REG.filter((r) => r.reading_pass === "v124-dvojni-anchor").length).toBe(1); // EXTRA r20 (val 125: r11 → v125-names-houses)
   });
 
   test("changes audit: val 124, 16 sprememb, tally 2875 → 2876", () => {
@@ -138,14 +138,15 @@ describe("val 124 — gardele vhodov (p7 dvojni anchor, F-V123-01)", () => {
     expect(book.slice(0, 21)).toEqual(p7.slice(0, 21).map((r) => String(r.klafter)));
   });
 
-  test("vstavljena vrstica Nro 92 (r11): kl 54 ud., hiša 56, ime v57 ohranjeno, rp v124-dvojni-anchor", () => {
+  test("vstavljena vrstica Nro 92 (r11): kl 54 ud., hiša 56, ime v125 'Schimez P…a' (v57 '(K)hanzl Valen' ovržena — F-V124-01), rp v125-names-houses", () => {
     const r = p7[11];
     expect(r.klafter).toBe("54");
     expect(String(r.haus_no)).toBe("56");
-    expect(String(r.owner_original)).toBe("(K)hanzl Valen"); // nečitljivo → F-V124-01
-    expect(String(r.reading_pass)).toBe("v124-dvojni-anchor");
+    expect(String(r.owner_original)).toBe("Schimez P…a"); // val 125 F-V124-01: stisnjeno ime — 1. beseda Schimez-koren, 2. nečitljiva
+    expect(String(r.reading_pass)).toBe("v125-names-houses");
     expect(String(r.anmerkung)).toContain("v124 NOVA VRSTICA");
     expect(String(r.anmerkung)).toContain("585–603");
+    expect(String(r.anmerkung)).toContain("v125"); // ime popravek
   });
 
   test("EXTRA vrstica (r20): ditto-Strauß brez Nro, kl 110 ud., hiša neberljiva, owner_was_ditto", () => {
@@ -171,9 +172,9 @@ describe("val 124 — gardele vhodov (p7 dvojni anchor, F-V123-01)", () => {
     expect(String(p7[4].anmerkung)).toContain("1 -381");
   });
 
-  test("identiteta nespremenjena: imena/wohnort/kultur ostajajo 1:1 (v57 jebral brez preskoka) — F-V124-01 ločen val", () => {
-    // vstavljena vrstica je EDINA s spremenjenim imenskim kontekstom (stara r11 je bila
-    // nepravilno sidrana: hiša 26→56); ostali owner_original na p7 = nespremenjeni
+  test("identiteta: v124 je imensko ostala nespremenjena (CHANGES owner=0); val 125 F-V124-01 je popravil 7 imen — glej tests/val125", () => {
+    // val 125 je rešil F-V124-01 (r1/r5/r9/r11/r12/r13/r18) — ta test drži v124 revizijo
+    // audit datoteke; register stanje od v125 testira tests/val125-fv124-01-imenska-hisna-plast-p7.test.ts
     const nameChanges = CHANGES.changes.filter((c) => c.field === "owner_original" || c.field === "owner");
     expect(nameChanges.length).toBe(0);
     expect(READ.open_flags["F-V124-01"]).toContain("NIČ popravkov v v124");
@@ -232,7 +233,7 @@ describe("val 124 — kaskada (izrecna, §22)", () => {
     expect(String(c4.meta.K5_input_reliability)).toContain("208/2876"); // EXTRA = ditto
   });
 
-  test("KG vsebinsko IDENTIČNA (3764/3473) — builder ne bere vrednostnega sloja; sha fc23ab10 → ee3ac862 (timestamp-only)", () => {
+  test("KG vsebinsko IDENTIČNA (3764/3473) — builder ne bere vrednostnega sloja; sha fc23ab10 → ab418c75 (timestamp-only)", () => {
     const kg = JSON.parse(
       readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8"),
     ) as { nodes: unknown[]; edges: unknown[]; node_stats: Record<string, number> };
@@ -240,10 +241,10 @@ describe("val 124 — kaskada (izrecna, §22)", () => {
     expect(kg.edges.length).toBe(3473);
     expect(kg.node_stats["PARCEL"]).toBe(2427);
     expect(kg.node_stats["HOUSE"]).toBe(169);
-    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^ee3ac862/);
+    expect(sha256(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^ab418c75/);
   });
 
-  test("kaskadni artefakti + runtime kopije držijo isti KG sha ee3ac862…", () => {
+  test("kaskadni artefakti + runtime kopije držijo isti KG sha ab418c75…", () => {
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
@@ -252,10 +253,10 @@ describe("val 124 — kaskada (izrecna, §22)", () => {
       "src/data/timeline-1825-1830.json",
     ]) {
       const raw = readFileSync(join(ROOT, p), "utf8");
-      expect(raw.includes("ee3ac862"), p).toBe(true);
+      expect(raw.includes("ab418c75"), p).toBe(true);
     }
     // runtime KG kopija = atlas izhod (ena izhodna resnica — byte identična)
-    expect(sha256(join(ROOT, "src/data/knowledge-graph-1825.json"))).toMatch(/^ee3ac862/);
+    expect(sha256(join(ROOT, "src/data/knowledge-graph-1825.json"))).toMatch(/^ab418c75/);
   });
 
   test("source-coverage: PS rows 2876 (val 124 prehod tudi v builderju build-coverage-report.py)", () => {

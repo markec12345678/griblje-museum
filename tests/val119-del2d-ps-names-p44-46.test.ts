@@ -96,9 +96,9 @@ describe("val 119 del 2d-x2 — gardele vhodov (p44–p46 vgradnja; p47–p49 na
 });
 
 describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
-  test("KG sha ee3ac862 raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> ee3ac862 @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
+  test("KG sha ab418c75 raznesen (745a9cdd -> b660c0d1 @2d-x2; -> 62d8cfea @2d-x3: 2 RESIDENCE relacije TP-029 prevezane; -> ab418c75 @2e: timestamp-only); 3269/3477/2427/2773 identično", () => {
     const kg = sha256("src/data/knowledge-graph-1825.json").slice(0, 8);
-    expect(kg).toBe("ee3ac862");
+    expect(kg).toBe("ab418c75");
     const sg = readJSON("src/data/story-graph-1825.json") as {
       entities: unknown[];
       relations: unknown[];
@@ -116,7 +116,7 @@ describe("val 119 del 2d-x2 — kaskada (izrecna)", () => {
     expect(REG.filter((r) => r.owner_was_ditto === true).length).toBe(208);
   });
 
-  test("runtime kopije držijo isti KG sha ee3ac862 (ena izhodna resnica)", () => {
+  test("runtime kopije držijo isti KG sha ab418c75 (ena izhodna resnica)", () => {
     const a = sha256("src/data/knowledge-graph-1825.json");
     const b = sha256("research-griblje/atlas-1825/knowledge-graph-1825.json");
     expect(a).toBe(b);

@@ -182,13 +182,13 @@ describe("val 118 — kaskada (izrecna)", () => {
     expect(nodes).toBe(3764);
     expect(edges).toBe(3473);
   });
-  test("KG sha ee3ac862 raznesen v kaskadne artefakte", () => {
+  test("KG sha ab418c75 raznesen v kaskadne artefakte", () => {
     for (const f of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ]) {
       const s = readFileSync(join(REPO, f), "utf8");
-      expect(s).toContain("ee3ac862");
+      expect(s).toContain("ab418c75");
     }
   });
   test("pass3: PS parcele 392 + land-use identičen (vrednostna projekcija nespremenjena)", () => {

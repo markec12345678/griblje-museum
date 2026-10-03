@@ -333,9 +333,9 @@ describe("val 119 del 2b — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 2b — kaskada (izrecna)", () => {
-  test("KG sha ee3ac862 raznesen (4bb6a974 -> 62d8cfea @2d-x3 ->); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+  test("KG sha ab418c75 raznesen (4bb6a974 -> 62d8cfea @2d-x3 ->); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
     expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(
-      /^ee3ac862/,
+      /^ab418c75/,
     );
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       stats?: Record<string, number>;
@@ -357,10 +357,10 @@ describe("val 119 del 2b — kaskada (izrecna)", () => {
     const timeline = readJSON(
       "research-griblje/atlas-1825/timeline-1825-1830.json",
     ) as { meta?: Record<string, unknown> };
-    expect(JSON.stringify(timeline)).toContain("ee3ac862");
+    expect(JSON.stringify(timeline)).toContain("ab418c75");
   });
 
   test("runtime kopija KG v src/data = atlas izhod (ena izhodna resnica)", () => {
-    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^ee3ac862/);
+    expect(sha256("src/data/knowledge-graph-1825.json")).toMatch(/^ab418c75/);
   });
 });

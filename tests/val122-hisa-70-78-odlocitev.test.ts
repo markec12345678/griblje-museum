@@ -172,9 +172,9 @@ describe("val 122 — hiša 70–78: ločena odločitev (uveljavitev)", () => {
     }
   });
 
-  it("kaskada (§22): story/timeline/coverage držijo KG ee3ac862; runtime kopije = arhiv", () => {
+  it("kaskada (§22): story/timeline/coverage držijo KG ab418c75; runtime kopije = arhiv", () => {
     const kgSha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha.startsWith("ee3ac862")).toBe(true);
+    expect(kgSha.startsWith("ab418c75")).toBe(true);
     expect(STORY.provenance.kg_sha256).toBe(kgSha);
     expect(STORY.provenance.kg_val).toBe(122);
     expect(TIMELINE.provenance.kg_sha256).toBe(kgSha);
