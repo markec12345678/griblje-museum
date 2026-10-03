@@ -1,0 +1,55 @@
+{
+  "val": 125,
+  "title": "F-V124-01 REŠEN: p7 imenska + hišna plast (NR-14 celicni zoomi ×12–24, 0 VLM)",
+  "scope": "p7 = 22 vrstic (20 podatkovnih Nro 81–100 + EXTRA + fantom Fürtrag): 7 strukturnih imenskih popravkov v57 + 9 hišnih popravkov + 1 hišni artefakt (fantom '48') + hišni zaključek EXTRA vrstice (celica prazna); 0 popravkov vrednostnega sloja (v124 zaključen)",
+  "method": "NR-14 celicni branje (metoda val 120/124): posamezne celice ×12–24 + označeni traki (rdeče = grid tops, zeleno = zaznana tiskana pravila, modro = Nro sidra); make-zoom-v125.py (grid val 121/124: top0_lin=160.25, n=22, mean_off 1.86 — cal OK brez pina). GEOMETRIJA: imena/hiše/Nro so BOTTOM-anchor (baseline na spodnjem pravilu pasu; ime-pisujoči prečka svoje spodnje pravilo — nasprotje vrednostnemu sloju, ki je TOP-anchor); stisnjena vrstica Nro 92 (r11) zapisana VISOKO v pasu (brez levega pravila). Lastništvo pasu potrjeno s Nro sidri (Nro + hiša + ime na ISTEM pravilu, znotraj pasu). Digitcmp oblike števk iz iste strani (metoda val 121/124).",
+  "key_findings": [
+    "F-V124-01 IME (r5): v57 'Schimeczkhanl' je BRAL SKUPAJ dve besedi — rokopis 'Schimecz Mihual' (2. beseda Mi⟨h⟩ual ≈ Michael; cf. r0, kjer je enobesedni 'Schimeczkhanl' pravilen). Knjiga v124 'Schimz Mihual' — pravilna v sadržaju, odmaknjena v črkovanju.",
+    "F-V124-01 IME (r9+r12): v57 'Poiding Matthl' ovržena na OBEH vrsticah — rokopis 'Pödigz Maruſa' (long-s z descender zanko; BREZ t-prečk → 'Matthl' nemogoče; Maruša ≈ Marija). Zapisa r9/r12 črkovno identična (ultra ×20: r9-w2 ≈ r12-w2). Knjiga v124 'Marls' — ovržena (ni r-ramena na 3. mestu... = varianta, sodba NR-14).",
+    "F-V124-01 IME (r13): v57 'Peders Marbl' je NAPAČNA OSEBA — rokopis jasno 'Rabutschar Grogy' = ista oseba kot r14 (Nro 94 + 95, dve parceli istega lastnika). Forma v register po kobildi r14 '(R)abitscher Georg'; surova Kurrent oblika dokumentirana. Knjiga v124 'Pödigz Marls?/Peders?' — ovržena.",
+    "F-V124-01 IME (r18): v57 '(R)abitscher Marbl' IN hitro branje v124 ('Rabatschar Marbl') obe napačni — rokopis jasno 'Strauß Grogy' (Nro 99; isti lastnik kot r19 = Nro 100). Forma v register po kobildi r15/r19 'Strauß Georg'.",
+    "F-V124-01 IME (r11, stisnjena vrstica Nro 92): v57 '(K)hanzl Valen' OVRŽENA — rokopis 1. beseda = Schimez-koren (cf. r10 'Schimez Hanl'), 2. beseda P-a-?-?-a nečitljiva tudi pri ×14. Zapis 'Schimez P…a' (… = nečitljivo sredino).",
+    "F-V124-01 IME (r1): 'Poiding Hanl' → 'Pödigz Hanl' — rokopis P-d-i-g-z, brez 'ng' (isti koren kot r9/r12).",
+    "F-V124-01 HIŠE: 9 popravkov (r1 63→53, r2 20→54, r5 65→49, r10 35→55, r13 80→48, r14 48→45, r15 45→47, r18 47→46, r19 46→45) + r21 fantom '48' = v112 ARTEFAKT (celica prazna → ''). r20 EXTRA: hiša PRAZNA (ni zapisana — ne 'neberljiva').",
+    "VREDNOSTNI sloj NESPREMENJEN (v124 dvojni-anchor zaključen) — 0 klafter/jaethe popravkov; K9/K5 metastanje."
+  ],
+  "p7_adjudication": {
+    "note": "r = register index (22 vrstic); ime/hiša = rokopis pri ×12–24; sodba = v125 odločitev; 'varianta' = črkovalna razlika brez strukturne napake → register forma ostane, NR-14 bo izenačila",
+    "rows": [
+      {"r": 0, "nro": "81", "ime_book": "Schimeczkhanl", "ime_seen": "Schimeczkhanl", "haus": "65", "sodba": "KEEP×2"},
+      {"r": 1, "nro": "82", "ime_book": "Poiding Hanl", "ime_seen": "Pödigz Hanl", "haus": "53", "sodba": "FIX ime (gz≠ng) + FIX hiša 63→53"},
+      {"r": 2, "nro": "83", "ime_book": "Lappary Marbl", "ime_seen": "Lappary Marbl", "haus": "54", "sodba": "KEEP ime + FIX hiša 20→54"},
+      {"r": 3, "nro": "84", "ime_book": "Lappary Marbl", "ime_seen": "Lappary Marbl (polno zapisano)", "haus": "54", "sodba": "KEEP×2"},
+      {"r": 4, "nro": "85", "ime_book": "Lappary Marbl", "ime_seen": "Lappary Marbl", "haus": "54", "sodba": "KEEP×2 (vrstica v124 preskočena 54 — zdaj sidrana)"},
+      {"r": 5, "nro": "86", "ime_book": "Schimeczkhanl", "ime_seen": "Schimecz Mihual", "haus": "49", "sodba": "FIX ime (2 besedi) + FIX hiša 65→49"},
+      {"r": 6, "nro": "87", "ime_book": "Lappary Mihel", "ime_seen": "Lappary Mihel", "haus": "54", "sodba": "KEEP×2"},
+      {"r": 7, "nro": "88", "ime_book": "(R)abitscher Marbl", "ime_seen": "Rabutschar Marbl", "haus": "47", "sodba": "KEEP×2 (varianta → NR-14)"},
+      {"r": 8, "nro": "89", "ime_book": "Strauß Georg", "ime_seen": "Strauß Grogy", "haus": "45", "sodba": "KEEP×2 (varianta)"},
+      {"r": 9, "nro": "90", "ime_book": "Poiding Matthl", "ime_seen": "Pödigz Maruſa", "haus": "50", "sodba": "FIX ime (struktura) + KEEP hiša"},
+      {"r": 10, "nro": "91", "ime_book": "Schimez Hanl", "ime_seen": "Schimez Hanl", "haus": "55", "sodba": "KEEP ime + FIX hiša 35→55"},
+      {"r": 11, "nro": "92", "ime_book": "(K)hanzl Valen", "ime_seen": "Schimez P…a (stisnjeno, visoko v pasu)", "haus": "56", "sodba": "FIX ime (v57 ovržena) + KEEP hiša"},
+      {"r": 12, "nro": "93", "ime_book": "Poiding Matthl", "ime_seen": "Pödigz Maruſa", "haus": "50", "sodba": "FIX ime (struktura) + KEEP hiša"},
+      {"r": 13, "nro": "94", "ime_book": "Peders Marbl", "ime_seen": "Rabutschar Grogy", "haus": "48", "sodba": "FIX ime (struktura — napačna oseba) + FIX hiša 80→48"},
+      {"r": 14, "nro": "95", "ime_book": "(R)abitscher Georg", "ime_seen": "Rabutschar Grogy", "haus": "45", "sodba": "KEEP ime (varianta) + FIX hiša 48→45"},
+      {"r": 15, "nro": "96", "ime_book": "Strauß Georg", "ime_seen": "Strauß Grogy", "haus": "47", "sodba": "KEEP ime (varianta) + FIX hiša 45→47"},
+      {"r": 16, "nro": "97", "ime_book": "(R)abitscher Marbl", "ime_seen": "Rabutschar Marbl", "haus": "47", "sodba": "KEEP×2 (varianta)"},
+      {"r": 17, "nro": "98", "ime_book": "(R)abitscher Marbl", "ime_seen": "Rabutschar Marbl", "haus": "47", "sodba": "KEEP×2 (varianta)"},
+      {"r": 18, "nro": "99", "ime_book": "(R)abitscher Marbl", "ime_seen": "Strauß Grogy", "haus": "46", "sodba": "FIX ime (struktura — napačna oseba) + FIX hiša 47→46"},
+      {"r": 19, "nro": "100", "ime_book": "Strauß Georg", "ime_seen": "Strauß Grogy", "haus": "45", "sodba": "KEEP ime (varianta) + FIX hiša 46→45"},
+      {"r": 20, "nro": "—", "ime_book": "(ditto-Strauß)", "ime_seen": "brez lastnega imena (zamah)", "haus": "", "sodba": "KEEP + hiša PRAZNA (ni zapisana) — anmerkung zaključek"},
+      {"r": 21, "nro": "—", "ime_book": "(fantom Fürtrag)", "ime_seen": "Fürtrag (brez imena)", "haus": "", "sodba": "KEEP + FIX hiša '48'→'' (v112 artefakt)"}
+    ]
+  },
+  "cascade": {
+    "expected": "vrednostni sloj nespremenjen → c4 v90 (K9/K5) vsebinsko identična; KG: osebna plast = person-owner-register (val 59 snapshot) + house-register owners.ps (val 59 snapshot) — builder NE bere owner_original iz register.json za PERSON/OWNER_OF → vsebinsko identična (timestamp-only sha); story/timeline/coverage/source-coverage identični; analysis-v5/v6 byte-identna re-runa (varovalki 2876).",
+    "register_rows": 2876,
+    "value_changes": 0,
+    "name_changes": 7,
+    "house_changes": 10
+  },
+  "open_flags": {
+    "F-V125-01": "person-owner-register + house-register owners.ps = val 59 snapshot (PARTIAL 55/143 epoha) — ne odražajo v125 imenskih/hišnih popravkov (npr. H-035 'Schimez Hanl' pages vključuje p7 po stari hiši 35; zdaj r10 = hiša 55). Uskladitev = pass2 re-run šele PO NR-14 črkovalni sodbi (en prehod, ne dva).",
+    "NR-14": "črkovalne variante p7 za izenačitev: Rabitscher/Rabutschar (r7/r14/r16/r17), Georg/Grogy (r8/r14/r15/r18/r19), Maruſa-Marusa-Marls (r9/r12), Mihual-Michual (r5), Schimez P…a 2. beseda (r11), Pödigz-Poiding koren (r1/r9/r12 rešeno v v125).",
+    "kultur_p7": "dvovrstični 'Lehngut Hfl.' nizi čez pravila NISO re-sidrani v v125 — ostaja ločen prehod (v124 flag)."
+  }
+}

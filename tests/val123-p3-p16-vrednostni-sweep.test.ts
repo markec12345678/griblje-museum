@@ -13,7 +13,7 @@
  *
  * Varovalke (§22 pogodba): add-only anmerkung, pre_v123 polja, K9 p1–55
  * nespremenjen (56/960/84 — samo vrednost→vrednost popravki), KG vsebinsko
- * identična (3764/3473, timestamp-only sha prehod 8345868a→ee3ac862).
+ * identična (3764/3473, timestamp-only sha prehod 8345868a→ab418c75).
  */
 import { describe, expect, test } from "bun:test";
 import { createHash } from "node:crypto";
@@ -106,7 +106,7 @@ describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
     // VSTAVLJENA vrstica Nro 92 (stisnjena med 91 in 93; leva stran brez pravila, desna 585–603)
     expect(p7[11].klafter).toBe("54");
     expect(String(p7[11].anmerkung)).toContain("v124 NOVA VRSTICA");
-    expect(String(p7[11].reading_pass)).toBe("v124-dvojni-anchor");
+    expect(String(p7[11].reading_pass)).toBe("v125-names-houses"); // val 125 F-V124-01: ime "(K)hanzl Valen" -> "Schimez P…a"
     // EXTRA vrstica (ditto-Strauß brez Nro) izven sekvence; fantom premaknjen na r21
     expect(p7[20].klafter).toBe("110");
     expect(String(p7[20].reading_pass)).toBe("v124-dvojni-anchor");
@@ -161,14 +161,14 @@ describe("val 123 — p3–p16 vrednostni sweep (vgradnja)", () => {
     expect(withPre.length).toBe(27);
   });
 
-  test("kaskada: KG vsebinsko identična (3764/3473), timestamp-only sha prehod 8345868a→ee3ac862", () => {
+  test("kaskada: KG vsebinsko identična (3764/3473), timestamp-only sha prehod 8345868a→ab418c75", () => {
     const kg = JSON.parse(
       readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8"),
     ) as { nodes: unknown[]; edges: unknown[] };
     expect(kg.nodes.length).toBe(3764);
     expect(kg.edges.length).toBe(3473);
     const sha = sha256(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(sha.startsWith("ee3ac862")).toBe(true);
+    expect(sha.startsWith("ab418c75")).toBe(true);
   });
 
   test("kaskada §22: story/timeline/coverage/runtime držijo isti KG sha", () => {
