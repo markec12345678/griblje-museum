@@ -71,9 +71,10 @@ describe("val 111 — p3 vgradnja območij (F-PV-07)", () => {
     expect(p3[16].klafter).toBe("");
   });
 
-  test("vrednosti 1:1 z reading JSON (v111 glas = vir)", () => {
+  test("vrednosti 1:1 z reading JSON (v111 glas = vir; v123 sweep je odločil r3 769→762 in r8 488→485)", () => {
+    const v123Overrides: Record<string, string> = { "3": "762", "8": "485" };
     for (const [i, rinfo] of Object.entries(reading.rows)) {
-      const expectK = rinfo.k.replace("[?]", "").trim();
+      const expectK = v123Overrides[i] ?? rinfo.k.replace("[?]", "").trim();
       expect(p3[Number(i)].klafter).toBe(expectK);
     }
   });
@@ -84,9 +85,10 @@ describe("val 111 — p3 vgradnja območij (F-PV-07)", () => {
     expect(p3[20].klafter).toBe("96"); // val57 qm 46
   });
 
-  test("r3 = 769 (zadnja števka 9/2 neodločena — ni izmisljive korekcije)", () => {
-    expect(p3[3].klafter).toBe("769");
-    expect(reading.rows["3"].k).toBe("769[?]");
+  test("r3 = 762 (v123 sweep je ODLOČIL 9/2 dilemo z val 121 digitcmp metodo: zanka+val base = 2, prim. 62 r19; 9 pri 409/729 ima descender)", () => {
+    expect(p3[3].klafter).toBe("762");
+    expect(p3[3].anmerkung).toContain("v123: ∅|769 -> ∅|762");
+    expect(reading.rows["3"].k).toBe("769[?]"); // v111 glas ostaja zgodovinski vir
   });
 
   test("anmerkung add-only: r0 prečrtana, r11 prej zapis prečrtan, r14 rdeče prečrtanja", () => {
@@ -108,10 +110,10 @@ describe("val 111 — p3 vgradnja območij (F-PV-07)", () => {
     expect(p3[0].page_observations).toContain("F-PV-07");
   });
 
-  test("vsotna kontrola: vsota r1–r20 = 6916 QK (C4-vzorec, neodločena hipoteza)", () => {
+  test("vsotna kontrola: vsota r1–r20 = 6906 QK (6916 val 111 − 10 v123: r3 −7, r8 −3)", () => {
     const sum = p3.slice(1).reduce((a, r) => a + Number(r.klafter || 0), 0);
-    expect(sum).toBe(6916);
-    expect(reading.meta.sum_control.delta).toBe(2221);
+    expect(sum).toBe(6906);
+    expect(reading.meta.sum_control.delta).toBe(2221); // zgodovinski vir nespremenjen
   });
 });
 

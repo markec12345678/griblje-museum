@@ -171,8 +171,8 @@ describe("val 119 del 1 — iskrenost (§4)", () => {
 });
 
 describe("val 119 del 1 — kaskada (izrecna)", () => {
-  test("KG sha 8345868a (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
-    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^8345868a/);
+  test("KG sha fc23ab10 (62d8cfea @2d-x3 -> timestamp-only @2e kaskada; 2 RESIDENCE relacije TP-029 prevezane na re-sidrane lastnike ostajajo); PARCEL 2427 / HAS_PARCEL 2773 / 3269 / 3477 identično", () => {
+    expect(sha256("research-griblje/atlas-1825/knowledge-graph-1825.json")).toMatch(/^fc23ab10/);
     const kg = readJSON("research-griblje/atlas-1825/knowledge-graph-1825.json") as {
       nodes: unknown[];
       edges: unknown[];

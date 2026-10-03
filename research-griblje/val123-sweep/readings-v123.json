@@ -1,0 +1,358 @@
+{
+ "val": 123,
+ "title": "p3-p16 vrednostni sweep (jae+kl), pasovna metoda val 121 (bottom-rule anchoring, snap_grid)",
+ "scope": "p3, p4, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16 (p5 ze val 121); 267 vrstic",
+ "fixes": [
+  {
+   "page": 3,
+   "r": 3,
+   "old": "769",
+   "new": "762",
+   "verdict": "FIX 769->762 (zadnja stevilka = 2 [zanka+val base, prim. 62/r19], ne 9 [primerjava 409/729])"
+  },
+  {
+   "page": 3,
+   "r": 8,
+   "old": "488",
+   "new": "485",
+   "verdict": "FIX 488->485 (zadnja = 5 [flat top, prim. 325], ne 8 [prim. 758/802])"
+  },
+  {
+   "page": 4,
+   "r": 8,
+   "old": "944",
+   "new": "946",
+   "verdict": "FIX 944->946 (vir zdaj prebran: struck olje [9-4-6]; zapira val 112 \"brez vidnega vira\")"
+  },
+  {
+   "page": 4,
+   "r": 9,
+   "old": "293",
+   "new": "205",
+   "verdict": "FIX 293->205 (vir zdaj prebran: struck olje 205 [0 brez descenderja, 5 flat-top])"
+  },
+  {
+   "page": 4,
+   "r": 10,
+   "old": "194",
+   "new": "198",
+   "verdict": "FIX 194->198 (vir zdaj prebran: struck olje 198 [8 dvojna zanka, prim. r17 194=4])"
+  },
+  {
+   "page": 4,
+   "r": 11,
+   "old": "46",
+   "new": "42",
+   "verdict": "FIX 46->42 (vir zdaj prebran: struck olje 42 [2 val base, prim. p3 62])"
+  },
+  {
+   "page": 6,
+   "r": 7,
+   "old": "403",
+   "new": "408",
+   "verdict": "FIX 403->408 (zadnja = 8 [dvojna zanka], ne 3)"
+  },
+  {
+   "page": 6,
+   "r": 8,
+   "old": "203",
+   "new": "205",
+   "verdict": "FIX 203->205 (zadnja = 5 [flat top], ne 3 [prim. 36/389])"
+  },
+  {
+   "page": 6,
+   "r": 10,
+   "old": "136",
+   "new": "126",
+   "verdict": "FIX 136->126 (srednja = 2 [zanka+val base], ne 3)"
+  },
+  {
+   "page": 6,
+   "r": 11,
+   "old": "190",
+   "new": "180",
+   "verdict": "FIX 190->180 (srednja = 8 [dvojna zanka brez descenderja], ne 9)"
+  },
+  {
+   "page": 6,
+   "r": 13,
+   "old": "794",
+   "new": "798",
+   "verdict": "FIX 794->798 (zadnja = 8 [dvojna zanka], ne 4)"
+  },
+  {
+   "page": 6,
+   "r": 17,
+   "old": "110",
+   "new": "170",
+   "verdict": "FIX 110->170 (srednja = 7 [vodoravni top + descender], prim. r18 170 — identicna oblika)"
+  },
+  {
+   "page": 8,
+   "r": 2,
+   "old": "42",
+   "new": "62",
+   "verdict": "FIX 42->62 (prva = 6 [zanka+vrat], ne 4)"
+  },
+  {
+   "page": 8,
+   "r": 3,
+   "old": "348",
+   "new": "365",
+   "verdict": "FIX 348->365 (6 [zanka+vrat] in 5 [flat top], ne 4/8)"
+  },
+  {
+   "page": 8,
+   "r": 9,
+   "old": "464",
+   "new": "451",
+   "verdict": "FIX 464->451 (5 [flat top] in 1 [zastavica], ne 6/4)"
+  },
+  {
+   "page": 8,
+   "r": 10,
+   "old": "461",
+   "new": "460",
+   "verdict": "FIX 461->460 (zadnja = 0 [majhna oval], ne 1)"
+  },
+  {
+   "page": 9,
+   "r": 11,
+   "old": "258",
+   "new": "358",
+   "verdict": "FIX 258->358 (prva = 3 [dve skodeli], ne 2)"
+  },
+  {
+   "page": 9,
+   "r": 13,
+   "old": "228",
+   "new": "234",
+   "verdict": "FIX 228->234 (3 [dve skodeli] in 4 [odprt top], ne 2/8)"
+  },
+  {
+   "page": 12,
+   "r": 0,
+   "old": "297",
+   "new": "294",
+   "verdict": "FIX 297->294 (zadnja = 4 [odprt top + precka, prim. 554], ne 7)"
+  },
+  {
+   "page": 12,
+   "r": 2,
+   "old": "494",
+   "new": "490",
+   "verdict": "FIX 494->490 (zadnja = 0 [oval, prim. 470], ne 4)"
+  },
+  {
+   "page": 12,
+   "r": 4,
+   "old": "376",
+   "new": "364",
+   "verdict": "FIX 376->364 (6 [zanka+vrat] in 4, ne 7/6)"
+  },
+  {
+   "page": 12,
+   "r": 8,
+   "old": "374",
+   "new": "314",
+   "verdict": "FIX 374->314 (srednja = 1 [zastavica brez horizontalnega topa], ne 7 [prim. 279/470])"
+  },
+  {
+   "page": 12,
+   "r": 13,
+   "old": "260",
+   "new": "360",
+   "verdict": "FIX 260->360 (prva = 3 [dve skodeli], ne 2)"
+  },
+  {
+   "page": 13,
+   "r": 1,
+   "old": "404",
+   "new": "401",
+   "verdict": "FIX 404->401 (zadnja = 1 [zastavica+vertikala], ne 4)"
+  },
+  {
+   "page": 13,
+   "r": 5,
+   "old": "275",
+   "new": "215",
+   "verdict": "FIX 275->215 (srednja = 1 [zastavica], ne 7)"
+  },
+  {
+   "page": 13,
+   "r": 14,
+   "old": "1005",
+   "new": "405",
+   "verdict": "FIX 1005->405 (tri stevilke 4-0-5 [h-oblika 4]; v82 je vpeljal vodilni 1 iz vratu 4)"
+  },
+  {
+   "page": 15,
+   "r": 0,
+   "old": "658",
+   "new": "656",
+   "verdict": "FIX 658->656 (zadnja = 6 [odprt top + zanka+vrat], ne 8; podstolpec \"1\" — F-PV-07)"
+  }
+ ],
+ "disputes": [
+  {
+   "page": 10,
+   "r": 18,
+   "reg": "1038",
+   "seen": "1088[?]",
+   "verdict": "DISPUTE 1038 vs 1088[?] (tretja stevilka 3/8 dvoumna pod rdecim udarcem) — odprto v123"
+  },
+  {
+   "page": 11,
+   "r": 3,
+   "reg": "79",
+   "seen": "89/99[?]",
+   "verdict": "DISPUTE 79 vs 89/99[?] (prva stevilka ima zanko — ni 7; 8 z odprto spodnjo zanko ali 9) — odprto v123"
+  },
+  {
+   "page": 11,
+   "r": 20,
+   "reg": "211",
+   "seen": "185 (udarjeno)",
+   "verdict": "DISPUTE 211 vs 185 (olje udarjeno; 185 = register r21) — odprto v123"
+  },
+  {
+   "page": 11,
+   "r": 21,
+   "reg": "185",
+   "seen": "prazna celica",
+   "verdict": "DISPUTE 185 vs prazno (olja ni; 185 stoji v pasu r20) — odprto v123"
+  },
+  {
+   "page": 12,
+   "r": 17,
+   "reg": "82",
+   "seen": "53/426[?]",
+   "verdict": "DISPUTE 82 vs 53/426[?] (eksponiranje dvoumno med trakom in zoomom) — odprto v123"
+  },
+  {
+   "page": 13,
+   "r": 17,
+   "reg": "112",
+   "seen": "182[?]",
+   "verdict": "DISPUTE 112 vs 182[?] (srednja stevilka 1/8 dvoumna) — odprto v123"
+  },
+  {
+   "page": 14,
+   "r": 0,
+   "reg": "687",
+   "seen": "157/187[?]",
+   "verdict": "DISPUTE 687 vs 157/187[?] (prva stevilka 1/6 dvoumna) — odprto v123"
+  }
+ ],
+ "p7_structural": {
+  "page": 7,
+  "finding": "F-V123-01 STRUKTURNI DISPUT p7: vrednostno olje na strani se ne poravnava 1:1 z registrom. Oljno zaporedje (top-aligned na pravilih, programsko potrjeno): 774, 187, 283, 160, [54 DODATNO, udarjeno], 241, 49, 31, 169, 138, 56, 54(udarjeno), 52(udarjeno), 44, 321?(udarjeno), 315(udarjeno), 262(udarjeno), 397(udarjeno), 187(udarjeno), 58(udarjeno), 110(udarjeno), 7|373(udarjeno, podstolpec) + Furtrag 2|687->rdece 1140. Register: 774, 187, 283, 160, 241, 19, 31, 169, 103, 36, 54, 52, 44, 224, 315, 945, 297, 187, 58, 110, fantom. 14/20 zaporednih ujemanj; 6 odstopanj (19/49, 103/138, 36/56, 224/321?, 945/262, 297/397) + dodatno olje 54 + 7|373. Hipoteza: v82 bralec je preskokil dodatni 54 in sredino pripsal eno pasove zgodaj; rep (187/58/110) pa je 1:1 — popravek zahteva dvojni anchor (ime+vrednost) na celotni strani, lasten val. BREZ popravkov v v123.",
+  "disputed_rows": [
+   {
+    "r": 5,
+    "reg": "19",
+    "seen": "49"
+   },
+   {
+    "r": 8,
+    "reg": "103",
+    "seen": "138"
+   },
+   {
+    "r": 9,
+    "reg": "36",
+    "seen": "56"
+   },
+   {
+    "r": 13,
+    "reg": "224",
+    "seen": "321?"
+   },
+   {
+    "r": 15,
+    "reg": "945",
+    "seen": "262"
+   },
+   {
+    "r": 16,
+    "reg": "297",
+    "seen": "397"
+   }
+  ]
+ },
+ "observations": {
+  "4": [
+   "r5: kapitalni niz \"845\" v E. coni — neražčlenjen",
+   "r13: kapitalni niz \"234\" v E. coni",
+   "Eintrag \"4|927\" + desno \"1336\""
+  ],
+  "6": [
+   "r11: kapitalni niz \"1-104\"",
+   "Fürtrag \"4|88\" prečrtan rdeče -> rdeče \"2|585\""
+  ],
+  "7": [
+   "b4: kapitalni niz \"1-381\"",
+   "b20: podstolpec \"7\" + olje \"373\" (udarjeno) + \"1|1147\" v E. coni",
+   "F-V123-01 (glej p7_structural)"
+  ],
+  "8": [
+   "r19: kapitalni niz \"2|659\" v E. coni",
+   "Eintrag/Fürtrag \"3|1941\" -> \"1|454\" -> 682 (že val 112)"
+  ],
+  "9": [
+   "r5: kapitalni niz \"1-477\"",
+   "Fürtrag \"6|471\" prečrtan rdeče"
+  ],
+  "10": [
+   "r2: kapitalni niz \"135\"",
+   "r15: kapitalni niz \"511\"",
+   "r19: svinenik \"3|49½\" (refine val 112 \"3|49[?]\")",
+   "Fürtrag \"4|803\" prečrtan rdeče"
+  ],
+  "11": [
+   "glava: \"44\" (kl cona) + \"105\" (E. cona) nad r0 — sympagmaticno",
+   "r20: svinenik \"2|777\" (že val 112)",
+   "Fürtrag \"2|798\" prečrtan rdeče -> rdeče \"81\""
+  ],
+  "12": [
+   "r9: kapitalni niz \"1209\" v E. coni",
+   "r16: \"—\" + \"20\" v E. coni",
+   "Fürtrag \"4|296[?]\" prečrtan rdeče"
+  ],
+  "13": [
+   "r14: kapitalni niz \"1093\" v E. coni",
+   "Fürtrag \"4|451\" prečrtan rdeče"
+  ],
+  "14": [
+   "r2: kapitalni niz \"135\" v E. coni",
+   "r15: kapitalni niz \"511[?]\" v E. coni",
+   "Fürtrag \"6|449[?]\" prečrtan rdeče"
+  ],
+  "15": [
+   "r16: kapitalni niz \"906\" v E. coni",
+   "r18: \"— 65\" + \"546\" v E./K. conah",
+   "Fürtrag \"7|1288\" prečrtan rdeče",
+   "r0: podstolpec \"1\" (F-PV-07)"
+  ],
+  "16": [
+   "r18: kapitalni niz \"748\" v E. coni",
+   "Fürtrag \"5|811\" prečrtan rdeče",
+   "r11: podstolpec \"1\" (F-PV-07)"
+  ]
+ },
+ "ok_pages_summary": {
+  "3": "19/21 OK (2 FIX; r16 fantomski pas potrjen: olje 214+1-602 v pasu, vrednost 214 = r17)",
+  "4": "16/20 OK (4 FIX — vse zaprejo val 112 \"brez vira\"; r15 473 vir zdaj potrjen)",
+  "6": "15/21 OK (6 FIX)",
+  "7": "STRUKTURNI DISPUT F-V123-01 — brez sodb",
+  "8": "16/20 OK (4 FIX; r14 prazna potrjena; r19 ostaja val 112 odložena odločitev)",
+  "9": "18/20 OK (2 FIX; r16 jae=1+kl=1219 potrjena)",
+  "10": "19/20 OK (1 DISPUTE r18)",
+  "11": "17/23 OK (1 FIX, 3 DISPUTE, r22 fantom že val 112; r12 prazna potrjena)",
+  "12": "14/20 OK (5 FIX, 1 DISPUTE)",
+  "13": "17/20 OK (3 FIX, 1 DISPUTE)",
+  "14": "19/20 OK (1 DISPUTE r0)",
+  "15": "19/20 OK (1 FIX r0 s podstolpcem)",
+  "16": "20/20 OK"
+ }
+}

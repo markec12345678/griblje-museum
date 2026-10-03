@@ -209,7 +209,7 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(pr.ps_parcels.some((p) => p.page === 49 && p.parcel_number === 2)).toBe(false);
   });
 
-  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha 8345868a (val 119 del 2e kaskada)", () => {
+  test("KG: PARCEL 2426 → 2427, vozlišča 3268 → 3269, vezi 3477 + HAS_PARCEL 2773 NESPREMENJENA (nova parcela brez haus_no); sha fc23ab10 (val 119 del 2e kaskada)", () => {
     const kg = JSON.parse(readFileSync(join(ATLAS, "knowledge-graph-1825.json"), "utf8")) as {
       node_stats: Record<string, number>;
       edge_stats: Record<string, number>;
@@ -224,10 +224,10 @@ describe("val 115 — kaskada (izrecna, testno vodena)", () => {
     expect(kg.invariant_violations).toEqual([]);
     // edina sprememba = nov PARCEL node; ni novih vezi
     expect(kg.nodes.some((n) => n.node_id === "PARCEL:PS-p048-j12")).toBe(true);
-    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^8345868a/);
+    expect(sha(join(ATLAS, "knowledge-graph-1825.json"))).toMatch(/^fc23ab10/);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 8345868a… (pogodba §22)", () => {
+  test("kaskadni artefakti držijo isti KG sha fc23ab10… (pogodba §22)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",

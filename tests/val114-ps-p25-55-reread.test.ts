@@ -407,9 +407,9 @@ describe("val 114 — kaskada (izrecna)", () => {
     expect(kg.invariant_violations).toEqual([]);
   });
 
-  test("kaskadni artefakti držijo isti KG sha 8345868a… (pogodba §22; val 119 del 2e — timestamp-only, vsebina identična)", () => {
+  test("kaskadni artefakti držijo isti KG sha fc23ab10… (pogodba §22; val 119 del 2e — timestamp-only, vsebina identična)", () => {
     const kgSha = sha(join(ATLAS, "knowledge-graph-1825.json"));
-    expect(kgSha).toMatch(/^8345868a/);
+    expect(kgSha).toMatch(/^fc23ab10/);
     for (const p of [
       "research-griblje/atlas-1825/story-graph-1825.json",
       "research-griblje/atlas-1825/timeline-1825-1830.json",
