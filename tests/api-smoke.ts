@@ -328,7 +328,7 @@ ok(
   "atlas evidence: pregled grafa — stats + coverage + research gaps (#43 §10)",
   atlasOverview.status === 200 &&
     atlasOverview.body?.ok === true &&
-    atlasOverview.body?.stats?.nodes?.HOUSE === 167 &&
+    atlasOverview.body?.stats?.nodes?.HOUSE === 169 &&
     Array.isArray(atlasOverview.body?.research_gaps),
   `status=${atlasOverview.status}`
 );
@@ -639,9 +639,9 @@ ok(
   `status=${covOverview.status} categories=${covOverview.body?.summary?.categories}`
 );
 ok(
-  "atlas coverage: hiše 167 (33 CONFLICT / 73 UNKNOWN — brez procentov, #43 §10; val 119 del 3: +16 AGREE→VER)",
+  "atlas coverage: hiše 169 (33 CONFLICT / 73 UNKNOWN — brez procentov, #43 §10; val 119 del 3: +16 AGREE→VER; val 122: +2 PROVISIONAL hiši)",
   covOverview.status === 200 &&
-    covHouses?.total === 167 &&
+    covHouses?.total === 169 &&
     covHouses?.CONFLICT === 33 &&
     covHouses?.UNKNOWN === 73 &&
     covHouses?.VERIFIED === 16 &&
